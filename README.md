@@ -37,11 +37,11 @@ test | a directory contains resource files for test of several PDB entries
 
 ## Software requirements
 
-- **Java 8** or later.
-- **Apache Maven (mvn)**, used to install external libraries.
-- **Git (git)**, used to install external libraries.
-- **mmCIF Dictionary Suite**, optionally used to generate XML Schema from the wwPDB Validation Information Dictionary.
-- **PostgreSQL**, optionally used to import XML contents to relational database.
+- [**Java 8**](https://java.com/en/) or later.
+- [**Apache Maven (mvn)**](https://maven.apache.org), used to install external libraries.
+- [**Git (git)**](https://git-scm.com), used to install external libraries.
+- [**[mmCIF Dictionary Suite**](http://mmcif.wwpdb.org/docs/software-resources.html), optionally used to generate XML Schema from the wwPDB Validation Information Dictionary.
+- [**PostgreSQL**](https://www.postgresql.org), optionally used to import XML contents to relational database.
 
 ## Release notes
 
