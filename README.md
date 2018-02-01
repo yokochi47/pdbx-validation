@@ -20,9 +20,9 @@ File path | Document
 [schema/mmcif_ddl.dic](https://github.com/yokochi47/pdbx-validation/blob/master/schema/mmcif_ddl_v2.2.0.dic) | extended mmCIF DDL Core Dictionary (dubbed v2.2.0)
 [resource/mmcif_pdbx_v50.dic](http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic) | current mmCIF/PDBx Dictionary
 [resource/wwpdb_validation_v002.xsd](http://wwpdb.org/validation/schema/wwpdb_validation_v002.xsd) | current XML Schema for wwPDB validation information
-scripts | a directory contains scripts invoked by the 'run_all.sh' script
-stylesheet | a directory contains XSL style sheets for generation of alternative wwPDB validation information
-test | a directory contains resource files for test of several PDB entries
+[scripts](https://github.com/yokochi47/pdbx-validation/blob/master/scripts) | a directory contains scripts invoked by the 'run_all.sh' script
+[stylesheet](https://github.com/yokochi47/pdbx-validation/blob/master/styleseet) | a directory contains XSL style sheets for generation of alternative wwPDB validation information
+[test](https://github.com/yokochi47/pdbx-validation/blob/master/test) | a directory contains resource files for test of several PDB entries
 
 ## Example of PDBML-validation: mmCIF-compatible validation information
 
