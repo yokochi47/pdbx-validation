@@ -1,0 +1,661 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+COPYRIGHT
+*****************************************************************
+Copyright 2014,2016 EMBL - European Bioinformatics Institute
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing,
+software distributed under the License is distributed on
+an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+KIND, either express or implied. See the License for the
+specific language governing permissions and limitations
+under the License.
+*****************************************************************
+
+This is a XML schema for checking entry-specific validation
+XML documents from wwPDB. 
+
+versions published:
+v1      2014/02/20  http://wwpdb.org/validation/schema/wwpdb_validation_v1.xsd
+v002    2016/02/25	http://wwpdb.org/validation/schema/wwpdb_validation_v002.xsd
+
+$Author: aleks $
+$Revision: 27947 $
+*****************************************************************
+-->
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:simpleType name="atom_trace_distance_type">
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="normal"/>
+            <xsd:enumeration value="abnormal"/>
+            <xsd:enumeration value="long"/>
+            <xsd:enumeration value="short"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:simpleType name="BfactorType">
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="PARTIAL"/>
+            <xsd:enumeration value="FULL"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:simpleType name="YesString">
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="yes"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:simpleType name="TrueString">
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="true"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:simpleType name="NotAvailable">
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="NotAvailable"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:simpleType name="floatORunavailable">
+        <xsd:union memberTypes="xsd:decimal NotAvailable"/>
+    </xsd:simpleType>
+    <xsd:element name="wwPDB-validation-information">
+        <xsd:complexType mixed="true">
+            <xsd:sequence>
+                <xsd:element name="Entry" minOccurs="1" maxOccurs="1">
+                    <xsd:complexType>
+                        <xsd:sequence>
+                            <xsd:choice>
+                                <xsd:element name="chemical_shift_list" minOccurs="0" maxOccurs="unbounded">
+                                    <xsd:complexType>
+                                        <xsd:sequence>
+                                            <xsd:choice minOccurs="0" maxOccurs="unbounded">
+                                                <xsd:element name="unmapped_chemical_shift">
+                                                    <xsd:complexType>
+                                                        <xsd:attribute name="chain" type="xsd:string" use="required"/>
+                                                        <xsd:attribute name="rescode" type="xsd:string" use="required"/>
+                                                        <xsd:attribute name="resnum" type="xsd:string" use="required"/>
+                                                        <xsd:attribute name="atom" type="xsd:string" use="required"/>
+                                                        <xsd:attribute name="value" type="xsd:string" use="required"/>
+                                                        <xsd:attribute name="error" type="xsd:string" use="optional"/>
+                                                        <xsd:attribute name="ambiguity" type="xsd:string" use="optional"/>
+                                                        <xsd:attribute name="diagnostic" type="xsd:string" use="required"/>
+                                                    </xsd:complexType>
+                                                </xsd:element>
+                                                <xsd:element name="unparsed_chemical_shift">
+                                                    <xsd:complexType>
+                                                        <xsd:attribute name="id" type="xsd:string" use="optional"/>
+                                                        <xsd:attribute name="chain" type="xsd:string" use="required"/>
+                                                        <xsd:attribute name="rescode" type="xsd:string" use="required"/>
+                                                        <xsd:attribute name="resnum" type="xsd:string" use="required"/>
+                                                        <xsd:attribute name="atom" type="xsd:string" use="required"/>
+                                                        <xsd:attribute name="value" type="xsd:string" use="required"/>
+                                                        <xsd:attribute name="error" type="xsd:string" use="optional"/>
+                                                        <xsd:attribute name="ambiguity" type="xsd:string" use="optional"/>
+                                                        <xsd:attribute name="diagnostic" type="xsd:string" use="required"/>
+                                                    </xsd:complexType>
+                                                </xsd:element>
+                                                <xsd:element name="missing_nmrstar_tag">
+                                                    <xsd:complexType>
+                                                        <xsd:attribute name="nmrstar_tag_description" type="xsd:string" use="required"/>
+                                                        <xsd:attribute name="nmrstar_tag" type="xsd:string" use="required"/>
+                                                    </xsd:complexType>
+                                                </xsd:element>
+                                                <xsd:element name="random_coil_index">
+                                                    <xsd:complexType>
+                                                        <xsd:attribute name="chain" type="xsd:string" use="required"/>
+                                                        <xsd:attribute name="rescode" type="xsd:string" use="required"/>
+                                                        <xsd:attribute name="resnum" type="xsd:string" use="required"/>
+                                                        <xsd:attribute name="value" type="xsd:decimal" use="required"/>
+                                                    </xsd:complexType>
+                                                </xsd:element>
+                                                <xsd:element name="chemical_shift_outlier">
+                                                    <xsd:complexType>
+                                                        <xsd:attribute name="chain" type="xsd:string" use="required"/>
+                                                        <xsd:attribute name="rescode" type="xsd:string" use="required"/>
+                                                        <xsd:attribute name="resnum" type="xsd:string" use="required"/>
+                                                        <xsd:attribute name="atom" type="xsd:string" use="required"/>
+                                                        <xsd:attribute name="value" type="xsd:decimal" use="required"/>
+                                                        <xsd:attribute name="zscore" type="xsd:decimal" use="required"/>
+                                                        <xsd:attribute name="prediction" type="xsd:decimal" use="required"/>
+                                                        <xsd:attribute name="method" type="xsd:string" use="required"/>
+                                                   </xsd:complexType>
+                                                </xsd:element>
+                                                <xsd:element name="referencing_offset">
+                                                    <xsd:complexType>
+                                                        <xsd:attribute name="atom" type="xsd:string" use="required"/>
+                                                        <xsd:attribute name="uncertainty" type="xsd:decimal" use="required"/>
+                                                        <xsd:attribute name="precision" type="xsd:decimal" use="optional"/>
+                                                        <xsd:attribute name="value" type="xsd:decimal" use="required"/>
+                                                        <xsd:attribute name="number_of_measurements" type="xsd:integer" use="required"/>
+                                                    </xsd:complexType>
+                                                </xsd:element>
+                                                <xsd:element name="assignment_completeness_well_defined">
+                                                    <xsd:complexType>
+                                                        <xsd:attribute name="number_of_assigned_shifts" type="xsd:integer" use="required"/>
+                                                        <xsd:attribute name="number_of_unassigned_shifts" type="xsd:integer" use="required"/>
+                                                        <xsd:attribute name="number_of_shifts" type="xsd:integer" use="required"/>
+                                                        <xsd:attribute name="type" type="xsd:string" use="required"/>
+                                                        <xsd:attribute name="element" type="xsd:string" use="optional"/>
+                                                    </xsd:complexType>
+                                                </xsd:element>
+                                                <xsd:element name="assignment_completeness_full_length">
+                                                    <xsd:complexType>
+                                                        <xsd:attribute name="number_of_assigned_shifts" type="xsd:integer" use="required"/>
+                                                        <xsd:attribute name="number_of_unassigned_shifts" type="xsd:integer" use="required"/>
+                                                        <xsd:attribute name="number_of_shifts" type="xsd:integer" use="required"/>
+                                                        <xsd:attribute name="type" type="xsd:string" use="required"/>
+                                                        <xsd:attribute name="element" type="xsd:string" use="optional"/>
+                                                    </xsd:complexType>
+                                                </xsd:element>
+                                            </xsd:choice>
+                                        </xsd:sequence>
+                                        <xsd:attribute name="file_id" type="xsd:integer" use="required"/>
+                                        <xsd:attribute name="file_name" type="xsd:string" use="required"/>
+                                        <xsd:attribute name="block_name" type="xsd:string" use="required"/>
+                                        <xsd:attribute name="list_id" type="xsd:string" use="required"/>
+                                        <xsd:attribute name="type" type="xsd:string" use="required"/>
+                                        <xsd:attribute name="number_of_errors_while_mapping" type="xsd:integer" use="required"/>
+                                        <xsd:attribute name="number_of_warnings_while_mapping" type="xsd:integer" use="required"/>
+                                        <xsd:attribute name="number_of_mapped_shifts" type="xsd:integer" use="required"/>
+                                        <xsd:attribute name="number_of_parsed_shifts" type="xsd:integer" use="required"/>
+                                        <xsd:attribute name="total_number_of_shifts" type="xsd:integer" use="required"/>
+                                        <xsd:attribute name="number_of_unparsed_shifts" type="xsd:integer" use="required"/>
+                                    </xsd:complexType>
+                                </xsd:element>
+                            </xsd:choice>
+                        </xsd:sequence>
+                        <xsd:attribute name="percentilebins" type="xsd:string" use="optional"/>
+                        <xsd:attribute name="CCP4version" type="xsd:string" use="optional"/>
+                        <!-- 20 chars -->
+                        <xsd:attribute name="DataAnisotropy" type="xsd:decimal" use="optional"/>
+                        <!-- -->
+                        <xsd:attribute name="CA_ONLY" type="xsd:string" use="optional"/>
+                        <xsd:attribute name="protein-DNA-RNA-entities" type="xsd:string" use="optional"/>
+                        <!-- 5 chars -->
+                        <xsd:attribute name="B_factor_type" type="BfactorType" use="optional"/>
+                        <!-- 10 chars -->
+                        <xsd:attribute name="XMLcreationDate" type="xsd:string" use="optional"/>
+                        <!-- 30 chars -->
+                        <xsd:attribute name="pdbid" type="xsd:string" use="optional"/>
+                        <!-- 10 chars -->
+                        <xsd:attribute name="DataCompleteness" type="xsd:decimal" use="optional"/>
+                        <!-- -->
+                        <xsd:attribute name="DCC_R" type="xsd:decimal" use="optional"/>
+                        <!-- -->
+                        <xsd:attribute name="DCC_Rfree" type="floatORunavailable" use="optional"/>
+                        <!-- -->
+                        <xsd:attribute name="DCC_refinement_program" type="xsd:string" use="optional"/>
+                        <!-- 20 chars -->
+                        <xsd:attribute name="num-free-reflections" type="xsd:integer" use="optional"/>
+                        <!-- -->
+                        <xsd:attribute name="percent-free-reflections" type="xsd:decimal" use="optional"/>
+                        <!-- -->
+                        <xsd:attribute name="EDS_R" type="xsd:decimal" use="optional"/>
+                        <!-- -->
+                        <xsd:attribute name="EDS_resolution" type="xsd:decimal" use="optional"/>
+                        <!-- -->
+                        <xsd:attribute name="EDS_resolution_low" type="xsd:decimal" use="optional"/>
+                        <!-- -->
+                        <xsd:attribute name="resol-high-from-reflectionsfile" type="xsd:decimal" use="optional"/>
+                        <!-- -->
+                        <xsd:attribute name="resol-low-from-reflectionsfile" type="xsd:decimal" use="optional"/>
+                        <!-- -->
+                        <xsd:attribute name="no-percentile-property" type="TrueString" use="optional"/>
+                        <!-- -->
+                        <xsd:attribute name="Fo_Fc_correlation" type="xsd:decimal" use="optional"/>
+                        <!-- -->
+                        <xsd:attribute name="IoverSigma" type="xsd:string" use="optional"/>
+                        <!-- 20 chars -->
+                        <xsd:attribute name="PDB-revision-number" type="xsd:decimal" use="required"/>
+                        <!-- -->
+                        <xsd:attribute name="PDB-deposition-date" type="xsd:string" use="optional"/>
+                        <!-- -->
+                        <xsd:attribute name="PDB-revision-date" type="xsd:string" use="optional"/>
+                        <!-- -->
+                        <xsd:attribute name="PDB-resolution" type="floatORunavailable" use="optional"/>
+                        <!-- -->
+                        <xsd:attribute name="PDB-resolution-low" type="floatORunavailable" use="optional"/>
+                        <!-- -->
+                        <xsd:attribute name="PDB-R" type="floatORunavailable" use="optional"/>
+                        <!-- -->
+                        <xsd:attribute name="PDB-Rfree" type="floatORunavailable" use="optional"/>
+                        <!-- -->
+                        <xsd:attribute name="RNAsuiteness" type="xsd:decimal" use="optional"/>
+                        <!-- -->
+                        <xsd:attribute name="RefmacVersion" type="xsd:string" use="optional"/>
+                        <!-- 10 chars -->
+                        <xsd:attribute name="RestypesNotcheckedForBondAngleGeometry" type="xsd:string" use="optional"/>
+                        <!-- unpredictable... 50 chars -->
+                        <xsd:attribute name="no-ligands-for-mogul" type="xsd:string" use="optional"/>
+                        <!-- 5 chars -->
+                        <xsd:attribute name="TransNCS" type="xsd:string" use="optional"/>
+                        <!-- 200 chars -->
+                        <xsd:attribute name="TwinL" type="xsd:decimal" use="optional"/>
+                        <!-- -->
+                        <xsd:attribute name="TwinL2" type="xsd:decimal" use="optional"/>
+                        <!-- -->
+                        <xsd:attribute name="TwinFraction" type="xsd:string" use="optional"/>
+                        <!-- unpredictable... 50 chars -->
+                        <xsd:attribute name="WilsonBaniso" type="xsd:string" use="optional"/>
+                        <!-- 40 chars -->
+                        <xsd:attribute name="WilsonBestimate" type="xsd:decimal" use="optional"/>
+                        <!-- -->
+                        <xsd:attribute name="absolute-percentile-DCC_Rfree" type="xsd:decimal" use="optional"/>
+                        <!-- -->
+                        <xsd:attribute name="absolute-percentile-RNAsuiteness" type="xsd:decimal" use="optional"/>
+                        <!-- -->
+                        <xsd:attribute name="absolute-percentile-clashscore" type="xsd:decimal" use="optional"/>
+                        <!-- -->
+                        <xsd:attribute name="absolute-percentile-percent-RSRZ-outliers" type="xsd:decimal" use="optional"/>
+                        <!-- -->
+                        <xsd:attribute name="absolute-percentile-percent-rama-outliers" type="xsd:decimal" use="optional"/>
+                        <!-- -->
+                        <xsd:attribute name="absolute-percentile-percent-rota-outliers" type="xsd:decimal" use="optional"/>
+                        <!-- -->
+                        <xsd:attribute name="absolute-percentile-percent-calpha-angle-outliers" type="xsd:decimal" use="optional"/>
+                        <!-- -->
+                        <xsd:attribute name="absolute-percentile-chemical_shift_completeness" type="xsd:decimal" use="optional"/>
+                        <!-- -->
+                        <xsd:attribute name="relative-percentile-DCC_Rfree" type="xsd:decimal" use="optional"/>
+                        <!-- -->
+                        <xsd:attribute name="relative-percentile-RNAsuiteness" type="xsd:decimal" use="optional"/>
+                        <!-- -->
+                        <xsd:attribute name="relative-percentile-clashscore" type="xsd:decimal" use="optional"/>
+                        <!-- -->
+                        <xsd:attribute name="relative-percentile-percent-RSRZ-outliers" type="xsd:decimal" use="optional"/>
+                        <!-- -->
+                        <xsd:attribute name="relative-percentile-percent-rama-outliers" type="xsd:decimal" use="optional"/>
+                        <!-- -->
+                        <xsd:attribute name="relative-percentile-percent-rota-outliers" type="xsd:decimal" use="optional"/>
+                        <!-- -->
+                        <xsd:attribute name="relative-percentile-percent-calpha-angle-outliers" type="xsd:decimal" use="optional"/>
+                        <!-- -->
+                        <xsd:attribute name="relative-percentile-chemical_shift_completeness" type="xsd:decimal" use="optional"/>
+                        <!-- -->
+                        <xsd:attribute name="numPDBids-absolute-percentile-percent-rota-outliers" type="xsd:integer" use="optional"/>
+                        <!-- -->
+                        <xsd:attribute name="numPDBids-relative-percentile-percent-rota-outliers" type="xsd:integer" use="optional"/>
+                        <!-- -->
+                        <xsd:attribute name="low-resol-relative-percentile-percent-calpha-angle-outliers" type="xsd:decimal" use="optional"/>
+                        <!-- -->
+                        <xsd:attribute name="high-resol-relative-percentile-percent-calpha-angle-outliers" type="xsd:decimal" use="optional"/>
+                        <!-- -->
+                        <xsd:attribute name="low-resol-relative-percentile-percent-rota-outliers" type="xsd:decimal" use="optional"/>
+                        <!-- -->
+                        <xsd:attribute name="high-resol-relative-percentile-percent-rota-outliers" type="xsd:decimal" use="optional"/>
+                        <!-- -->
+                        <xsd:attribute name="numPDBids-absolute-percentile-clashscore" type="xsd:integer" use="optional"/>
+                        <!-- -->
+                        <xsd:attribute name="numPDBids-relative-percentile-clashscore" type="xsd:integer" use="optional"/>
+                        <!-- -->
+                        <xsd:attribute name="low-resol-relative-percentile-clashscore" type="xsd:decimal" use="optional"/>
+                        <!-- -->
+                        <xsd:attribute name="high-resol-relative-percentile-clashscore" type="xsd:decimal" use="optional"/>
+                        <!-- -->
+                        <xsd:attribute name="numPDBids-absolute-percentile-DCC_Rfree" type="xsd:integer" use="optional"/>
+                        <!-- -->
+                        <xsd:attribute name="numPDBids-relative-percentile-DCC_Rfree" type="xsd:integer" use="optional"/>
+                        <!-- -->
+                        <xsd:attribute name="low-resol-relative-percentile-DCC_Rfree" type="xsd:decimal" use="optional"/>
+                        <!-- -->
+                        <xsd:attribute name="high-resol-relative-percentile-DCC_Rfree" type="xsd:decimal" use="optional"/>
+                        <!-- -->
+                        <xsd:attribute name="numPDBids-absolute-percentile-percent-RSRZ-outliers" type="xsd:integer" use="optional"/>
+                        <!-- -->
+                        <xsd:attribute name="numPDBids-relative-percentile-percent-RSRZ-outliers" type="xsd:integer" use="optional"/>
+                        <!-- -->
+                        <xsd:attribute name="low-resol-relative-percentile-percent-RSRZ-outliers" type="xsd:decimal" use="optional"/>
+                        <!-- -->
+                        <xsd:attribute name="high-resol-relative-percentile-percent-RSRZ-outliers" type="xsd:decimal" use="optional"/>
+                        <!-- -->
+                        <xsd:attribute name="numPDBids-absolute-percentile-percent-rama-outliers" type="xsd:integer" use="optional"/>
+                        <!-- -->
+                        <xsd:attribute name="numPDBids-relative-percentile-percent-rama-outliers" type="xsd:integer" use="optional"/>
+                        <!-- -->
+                        <xsd:attribute name="low-resol-relative-percentile-percent-rama-outliers" type="xsd:decimal" use="optional"/>
+                        <!-- -->
+                        <xsd:attribute name="high-resol-relative-percentile-percent-rama-outliers" type="xsd:decimal" use="optional"/>
+                        <!-- -->
+                        <xsd:attribute name="numPDBids-absolute-percentile-RNAsuiteness" type="xsd:integer" use="optional"/>
+                        <!-- -->
+                        <xsd:attribute name="numPDBids-relative-percentile-RNAsuiteness" type="xsd:integer" use="optional"/>
+                        <!-- -->
+                        <xsd:attribute name="numPDBids-absolute-percentile-percent-calpha-angle-outliers" type="xsd:integer" use="optional"/>
+                        <!-- -->
+                        <xsd:attribute name="numPDBids-relative-percentile-percent-calpha-angle-outliers" type="xsd:integer" use="optional"/>
+                        <!-- -->
+                        <xsd:attribute name="numPDBids-absolute-percentile-chemical_shift_completeness" type="xsd:integer" use="optional"/>
+                        <!-- -->
+                        <xsd:attribute name="numPDBids-relative-percentile-chemical_shift_completeness" type="xsd:integer" use="optional"/>
+                        <!-- -->
+                        <xsd:attribute name="low-resol-relative-percentile-RNAsuiteness" type="xsd:decimal" use="optional"/>
+                        <!-- -->
+                        <xsd:attribute name="high-resol-relative-percentile-RNAsuiteness" type="xsd:decimal" use="optional"/>
+                        <!-- -->
+                        <xsd:attribute name="coordinatesInputFilename" type="xsd:string" use="optional"/>
+                        <!-- unpredictable... 30 chars -->
+                        <xsd:attribute name="reflectionsInputFilename" type="xsd:string" use="optional"/>
+                        <!-- unpredictable... 30 chars -->
+                        <xsd:attribute name="chemicalshiftsInputFilename" type="xsd:string" use="optional"/>
+                        <!-- unpredictable... 30 chars -->
+                        <xsd:attribute name="acentric_outliers" type="xsd:decimal" use="optional"/>
+                        <xsd:attribute name="attemptedValidationSteps" type="xsd:string" use="required"/>
+                        <!-- 100 chars -->
+                        <xsd:attribute name="xtriage_input_columns" type="xsd:string" use="optional"/>
+                        <!-- 50 chars -->
+                        <xsd:attribute name="babinet_b" type="xsd:decimal" use="optional"/>
+                        <xsd:attribute name="babinet_k" type="xsd:decimal" use="optional"/>
+                        <xsd:attribute name="bulk_solvent_b" type="xsd:decimal" use="optional"/>
+                        <xsd:attribute name="bulk_solvent_k" type="xsd:decimal" use="optional"/>
+                        <xsd:attribute name="centric_outliers" type="xsd:decimal" use="optional"/>
+                        <xsd:attribute name="clashscore" type="xsd:decimal" use="optional"/>
+                        <xsd:attribute name="clashscore-full-length" type="xsd:decimal" use="optional"/>
+                        <xsd:attribute name="num-H-reduce" type="xsd:decimal" use="optional"/>
+                        <xsd:attribute name="numMillerIndices" type="xsd:decimal" use="optional"/>
+                        <xsd:attribute name="percent-RSRZ-outliers" type="xsd:decimal" use="optional"/>
+                        <xsd:attribute name="percent-rama-outliers" type="xsd:decimal" use="optional"/>
+                        <xsd:attribute name="percent-rota-outliers" type="xsd:decimal" use="optional"/>
+                        <xsd:attribute name="percent-calpha-angle-outliers" type="xsd:decimal" use="optional"/>
+                        <xsd:attribute name="percent-rama-outliers-full-length" type="xsd:decimal" use="optional"/>
+                        <xsd:attribute name="percent-rota-outliers-full-length" type="xsd:decimal" use="optional"/>
+                        <xsd:attribute name="percent-calpha-angle-outliers-full-length" type="xsd:decimal" use="optional"/>
+                        <xsd:attribute name="angles_rmsz" type="xsd:decimal" use="optional"/>
+                        <xsd:attribute name="bonds_rmsz" type="xsd:decimal" use="optional"/>
+                        <xsd:attribute name="num_bonds_rmsz" type="xsd:integer" use="optional"/>
+                        <xsd:attribute name="num_angles_rmsz" type="xsd:integer" use="optional"/>
+                        <xsd:attribute name="nmr_models_consistency_flag" type="xsd:string" use="optional"/>
+                        <xsd:attribute name="cyrange_error" type="xsd:string" use="optional"/>
+                        <xsd:attribute name="cyrange_version" type="xsd:string" use="optional"/>
+                        <xsd:attribute name="nmrclust_error" type="xsd:string" use="optional"/>
+                        <xsd:attribute name="nmrclust_version" type="xsd:string" use="optional"/>
+                        <xsd:attribute name="nmrclust_representative_model" type="xsd:integer" use="optional"/>
+                        <xsd:attribute name="medoid_model" type="xsd:integer" use="optional"/>
+                        <xsd:attribute name="nmrclust_number_of_outliers" type="xsd:integer" use="optional"/>
+                        <xsd:attribute name="nmrclust_number_of_models" type="xsd:integer" use="optional"/>
+                        <xsd:attribute name="nmrclust_number_of_clusters" type="xsd:integer" use="optional"/>
+                        <xsd:attribute name="cyrange_number_of_domains" type="xsd:integer" use="optional"/>
+                        <xsd:attribute name="chemical_shift_completeness" type="xsd:decimal" use="optional"/>
+                        <xsd:attribute name="chemical_shift_completeness_full_length" type="xsd:decimal" use="optional"/>
+                        <xsd:attribute name="panav_version" type="xsd:string" use="optional"/>
+                        <xsd:attribute name="rci_version" type="xsd:string" use="optional"/>
+                        <xsd:attribute name="shiftchecker_version" type="xsd:string" use="optional"/>
+                        <!-- -->
+                    </xsd:complexType>
+                </xsd:element>
+                <!-- Entry ends -->
+                <xsd:choice minOccurs="0" maxOccurs="unbounded">
+                    <xsd:element name="Model">
+                        <xsd:complexType>
+                            <xsd:attribute name="model" type="xsd:integer" use="optional"/>
+                            <xsd:attribute name="nmrclust_cluster_id" type="xsd:string" use="optional"/>
+                            <xsd:attribute name="nmrclust_representative" type="xsd:string" use="optional"/>
+                        </xsd:complexType>
+                    </xsd:element>
+                    <!-- Model ends -->
+                    <xsd:element name="cyrange_domain">
+                        <xsd:complexType>
+                            <xsd:attribute name="domain" type="xsd:integer" use="required"/>
+                            <xsd:attribute name="number_of_gaps" type="xsd:integer" use="required"/>
+                            <xsd:attribute name="number_of_residues" type="xsd:integer" use="required"/>
+                            <xsd:attribute name="percentage_of_core" type="xsd:decimal" use="required"/>
+                            <xsd:attribute name="rmsd" type="xsd:decimal" use="required"/>
+                            <xsd:attribute name="medoid_model" type="xsd:integer" use="required"/>
+                            <xsd:attribute name="medoid_rmsd" type="xsd:decimal" use="required"/>
+                            <xsd:attribute name="residue_string" type="xsd:string" use="optional"/>
+                        </xsd:complexType>
+                    </xsd:element>
+                    <!-- cyrange_domain ends -->
+                    <xsd:element name="ModelledSubgroup">
+                        <xsd:complexType>
+                            <xsd:sequence>
+                                <xsd:choice minOccurs="0" maxOccurs="unbounded">
+                                    <xsd:element name="mog-ring-outlier" minOccurs="0" maxOccurs="unbounded">
+                                        <xsd:complexType>
+                                            <xsd:attribute name="atoms" type="xsd:string" use="required"/>
+                                            <!-- unpredictable... 50 chars -->
+                                            <xsd:attribute name="mean" type="xsd:decimal" use="required"/>
+                                            <xsd:attribute name="mindiff" type="xsd:decimal" use="required"/>
+                                            <xsd:attribute name="stdev" type="xsd:decimal" use="required"/>
+                                            <xsd:attribute name="numobs" type="xsd:decimal" use="required"/>
+                                        </xsd:complexType>
+                                    </xsd:element>
+                                    <xsd:element name="mog-angle-outlier" minOccurs="0" maxOccurs="unbounded">
+                                        <xsd:complexType>
+                                            <xsd:attribute name="atoms" type="xsd:string" use="required"/>
+                                            <!-- 15 chars -->
+                                            <xsd:attribute name="mean" type="xsd:decimal" use="required"/>
+                                            <xsd:attribute name="stdev" type="xsd:decimal" use="required"/>
+                                            <xsd:attribute name="numobs" type="xsd:decimal" use="required"/>
+                                            <xsd:attribute name="Zscore" type="xsd:decimal" use="required"/>
+                                            <xsd:attribute name="mindiff" type="xsd:decimal" use="required"/>
+                                            <xsd:attribute name="obsval" type="xsd:decimal" use="required"/>
+                                        </xsd:complexType>
+                                    </xsd:element>
+                                    <xsd:element name="mog-torsion-outlier" minOccurs="0" maxOccurs="unbounded">
+                                        <xsd:complexType>
+                                            <xsd:attribute name="atoms" type="xsd:string" use="required"/>
+                                            <!-- 20 chars -->
+                                            <xsd:attribute name="mean" type="xsd:decimal" use="required"/>
+                                            <xsd:attribute name="mindiff" type="xsd:decimal" use="required"/>
+                                            <xsd:attribute name="numobs" type="xsd:decimal" use="required"/>
+                                            <xsd:attribute name="stdev" type="xsd:decimal" use="required"/>
+                                            <xsd:attribute name="obsval" type="xsd:decimal" use="required"/>
+                                        </xsd:complexType>
+                                    </xsd:element>
+                                    <xsd:element name="mog-bond-outlier" minOccurs="0" maxOccurs="unbounded">
+                                        <xsd:complexType>
+                                            <xsd:attribute name="atoms" type="xsd:string" use="required"/>
+                                            <!-- 10 chars -->
+                                            <xsd:attribute name="mean" type="xsd:decimal" use="required"/>
+                                            <xsd:attribute name="stdev" type="xsd:decimal" use="required"/>
+                                            <xsd:attribute name="numobs" type="xsd:decimal" use="required"/>
+                                            <xsd:attribute name="Zscore" type="xsd:decimal" use="required"/>
+                                            <xsd:attribute name="mindiff" type="xsd:decimal" use="required"/>
+                                            <xsd:attribute name="obsval" type="xsd:decimal" use="required"/>
+                                        </xsd:complexType>
+                                    </xsd:element>
+                                    <xsd:element name="chiral-outlier" minOccurs="0" maxOccurs="unbounded">
+                                        <xsd:complexType>
+                                            <xsd:attribute name="problem" type="xsd:string" use="optional"/>
+                                            <!-- 10 chars -->
+                                            <xsd:attribute name="atom" type="xsd:string" use="optional"/>
+                                            <!-- 5 chars -->
+                                        </xsd:complexType>
+                                    </xsd:element>
+                                    <xsd:element name="plane-outlier" minOccurs="0" maxOccurs="unbounded">
+                                        <xsd:complexType>
+                                            <xsd:attribute name="omega" type="xsd:string" use="optional"/>
+                                            <!-- 5 chars TODO -->
+                                            <xsd:attribute name="improper" type="xsd:string" use="optional"/>
+                                            <!-- 5 chars TODO -->
+                                            <xsd:attribute name="planeRMSD" type="xsd:decimal" use="optional"/>
+                                            <xsd:attribute name="type" type="xsd:string" use="required"/>
+                                            <!-- 15 chars -->
+                                        </xsd:complexType>
+                                    </xsd:element>
+                                    <xsd:element name="bond-outlier" minOccurs="0" maxOccurs="unbounded">
+                                        <xsd:complexType>
+                                            <xsd:attribute name="atom0" type="xsd:string" use="required"/>
+                                            <!-- 5 chars -->
+                                            <xsd:attribute name="atom1" type="xsd:string" use="required"/>
+                                            <!-- 5 chars -->
+                                            <xsd:attribute name="mean" type="xsd:decimal" use="required"/>
+                                            <xsd:attribute name="stdev" type="xsd:decimal" use="required"/>
+                                            <xsd:attribute name="obs" type="xsd:decimal" use="required"/>
+                                            <xsd:attribute name="z" type="xsd:decimal" use="required"/>
+                                            <xsd:attribute name="link" type="YesString" use="optional"/>
+                                        </xsd:complexType>
+                                    </xsd:element>
+                                    <xsd:element name="angle-outlier" minOccurs="0" maxOccurs="unbounded">
+                                        <xsd:complexType>
+                                            <xsd:attribute name="atom0" type="xsd:string" use="required"/>
+                                            <!-- 5 chars -->
+                                            <xsd:attribute name="atom1" type="xsd:string" use="required"/>
+                                            <!-- 5 chars -->
+                                            <xsd:attribute name="atom2" type="xsd:string" use="required"/>
+                                            <!-- 5 chars -->
+                                            <xsd:attribute name="mean" type="xsd:decimal" use="required"/>
+                                            <xsd:attribute name="stdev" type="xsd:decimal" use="required"/>
+                                            <xsd:attribute name="obs" type="xsd:decimal" use="required"/>
+                                            <xsd:attribute name="z" type="xsd:decimal" use="required"/>
+                                            <xsd:attribute name="link" type="YesString" use="optional"/>
+                                        </xsd:complexType>
+                                    </xsd:element>
+                                    <xsd:element name="symm-clash" minOccurs="0" maxOccurs="unbounded">
+                                        <xsd:complexType>
+                                            <xsd:attribute name="atom" type="xsd:string" use="required"/>
+                                            <!-- 5 chars -->
+                                            <xsd:attribute name="symop" type="xsd:string" use="required"/>
+                                            <!-- 15 chars -->
+                                            <xsd:attribute name="scid" type="xsd:integer" use="required"/>
+                                            <xsd:attribute name="clashmag" type="xsd:decimal" use="required"/>
+                                            <xsd:attribute name="dist" type="xsd:decimal" use="required"/>
+                                        </xsd:complexType>
+                                    </xsd:element>
+                                    <xsd:element name="clash" minOccurs="0" maxOccurs="unbounded">
+                                        <xsd:complexType>
+                                            <xsd:attribute name="atom" type="xsd:string" use="required"/>
+                                            <!-- 5 chars -->
+                                            <xsd:attribute name="cid" type="xsd:integer" use="required"/>
+                                            <xsd:attribute name="clashmag" type="xsd:decimal" use="required"/>
+                                            <xsd:attribute name="dist" type="xsd:decimal" use="required"/>
+                                        </xsd:complexType>
+                                    </xsd:element>
+                                </xsd:choice>
+                            </xsd:sequence>
+                            <xsd:attribute name="ligand_num_clashes" type="xsd:integer" use="optional"/>
+                            <xsd:attribute name="ligand_num_symm_clashes" type="xsd:integer" use="optional"/>
+                            <xsd:attribute name="ligand_clashes_outlier" type="xsd:string" use="optional"/>
+                            <!-- 5 chars -->
+                            <xsd:attribute name="ligand_chirality_outlier" type="xsd:string" use="optional"/>
+                            <!-- 5 chars -->
+                            <xsd:attribute name="cis_peptide" type="xsd:string" use="optional"/>
+                            <xsd:attribute name="chain" type="xsd:string" use="required"/>
+                            <!-- 5 chars -->
+                            <xsd:attribute name="resnum" type="xsd:string" use="required"/>
+                            <!-- 10 chars -->
+                            <xsd:attribute name="resname" type="xsd:string" use="required"/>
+                            <!-- 5 chars -->
+                            <xsd:attribute name="model" type="xsd:string" use="required"/>
+                            <!-- 10 chars -->
+                            <xsd:attribute name="altcode" type="xsd:string" use="required"/>
+                            <!-- 3 chars -->
+                            <xsd:attribute name="icode" type="xsd:string" use="required"/>
+                            <!-- 3 chars -->
+                            <xsd:attribute name="ent" type="xsd:string" use="required"/>
+                            <!-- 5 chars -->
+                            <xsd:attribute name="said" type="xsd:string" use="required"/>
+                            <!-- 5 chars -->
+                            <xsd:attribute name="seq" type="xsd:string" use="required"/>
+                            <!-- 10 chars -->
+                            <xsd:attribute name="NatomsEDS" type="xsd:integer" use="optional"/>
+                            <!-- -->
+                            <xsd:attribute name="cyrange_domain_id" type="xsd:integer" use="optional"/>
+                            <!-- -->
+                            <xsd:attribute name="validate" type="xsd:string" use="optional"/>
+                            <!-- -->
+                            <xsd:attribute name="rsr" type="xsd:decimal" use="optional"/>
+                            <!-- -->
+                            <xsd:attribute name="rscc" type="xsd:decimal" use="optional"/>
+                            <!-- -->
+                            <xsd:attribute name="rsrz" type="xsd:decimal" use="optional"/>
+                            <!-- -->
+                            <xsd:attribute name="owab" type="xsd:decimal" use="optional"/>
+                            <!-- -->
+                            <xsd:attribute name="avgoccu" type="xsd:decimal" use="optional"/>
+                            <!-- -->
+                            <xsd:attribute name="lig_rsrz_nbr_id" type="xsd:string" use="optional"/>
+                            <!-- -->
+                            <xsd:attribute name="ligRSRnbrMean" type="xsd:decimal" use="optional"/>
+                            <!-- -->
+                            <xsd:attribute name="ligRSRnbrStdev" type="xsd:decimal" use="optional"/>
+                            <!-- -->
+                            <xsd:attribute name="ligRSRnumnbrs" type="xsd:integer" use="optional"/>
+                            <!-- -->
+                            <xsd:attribute name="ligRSRZ" type="xsd:decimal" use="optional"/>
+                            <!-- -->
+                            <xsd:attribute name="num-H-reduce" type="xsd:decimal" use="optional"/>
+                            <!-- -->
+                            <xsd:attribute name="rama" type="xsd:string" use="optional"/>
+                            <!-- 10 chars -->
+                            <xsd:attribute name="rota" type="xsd:string" use="optional"/>
+                            <!-- 10 chars -->
+                            <xsd:attribute name="phi" type="xsd:decimal" use="optional"/>
+                            <!-- -->
+                            <xsd:attribute name="psi" type="xsd:decimal" use="optional"/>
+                            <!-- -->
+                            <xsd:attribute name="mogul-ignore" type="xsd:string" use="optional"/>
+                            <!-- 5 chars -->
+                            <xsd:attribute name="flippable-sidechain" type="xsd:string" use="optional"/>
+                            <!-- 5 chars -->
+                            <xsd:attribute name="RNAscore" type="xsd:decimal" use="optional"/>
+                            <!-- -->
+                            <xsd:attribute name="RNAsuite" type="xsd:string" use="optional"/>
+                            <!-- 15 chars -->
+                            <xsd:attribute name="RNApucker" type="xsd:string" use="optional"/>
+                            <!-- 10 chars -->
+                            <xsd:attribute name="calpha_angle_status" type="xsd:string" use="optional"/>
+                            <!-- 8 chars -->
+                            <xsd:attribute name="delta" type="xsd:decimal" use="optional"/>
+                            <xsd:attribute name="gamma" type="xsd:decimal" use="optional"/>
+                            <xsd:attribute name="trace_atom_distance_status" type="atom_trace_distance_type" use="optional"/>
+                            <!-- 10 chars -->
+                            <xsd:attribute name="trace_atom_distance_error" type="xsd:decimal" use="optional"/>
+                            <xsd:attribute name="mogul_angles_rmsz" type="xsd:decimal" use="optional"/>
+                            <xsd:attribute name="mogul_bonds_rmsz" type="xsd:decimal" use="optional"/>
+                            <xsd:attribute name="mogul_rmsz_numangles" type="xsd:integer" use="optional"/>
+                            <xsd:attribute name="mogul_rmsz_numbonds" type="xsd:integer" use="optional"/>
+                            <xsd:attribute name="ligand_geometry_outlier" type="YesString" use="optional"/>
+                            <xsd:attribute name="ligand_density_outlier" type="YesString" use="optional"/>
+                        </xsd:complexType>
+                    </xsd:element>
+                    <!-- ModelledSubgroup ends -->
+                </xsd:choice>
+                <xsd:element name="ModelledEntityInstance" minOccurs="0" maxOccurs="unbounded">
+                    <xsd:complexType>
+                        <xsd:attribute name="absolute_RSRZ_percentile" type="floatORunavailable" use="optional"/>
+                        <xsd:attribute name="relative_RSRZ_percentile" type="floatORunavailable" use="optional"/>
+                        <xsd:attribute name="absolute_rama_percentile" type="xsd:decimal" use="optional"/>
+                        <xsd:attribute name="relative_rama_percentile" type="xsd:decimal" use="optional"/>
+                        <xsd:attribute name="absolute_sidechain_percentile" type="xsd:decimal" use="optional"/>
+                        <xsd:attribute name="relative_sidechain_percentile" type="xsd:decimal" use="optional"/>
+                        <xsd:attribute name="angles_rmsz" type="xsd:decimal" use="optional"/>
+                        <xsd:attribute name="bonds_rmsz" type="xsd:decimal" use="optional"/>
+                        <xsd:attribute name="num_bonds_rmsz" type="xsd:integer" use="optional"/>
+                        <xsd:attribute name="num_angles_rmsz" type="xsd:integer" use="optional"/>
+                        <xsd:attribute name="chain" type="xsd:string" use="required"/>
+                        <!-- 5 chars -->
+                        <xsd:attribute name="model" type="xsd:string" use="required"/>
+                        <!-- 10 chars -->
+                        <xsd:attribute name="said" type="xsd:string" use="required"/>
+                        <!-- 5 chars -->
+                        <xsd:attribute name="ent" type="xsd:string" use="required"/>
+                        <!-- 5 chars -->
+                    </xsd:complexType>
+                </xsd:element>
+                <!-- ModelledEntityInstance -->
+                <xsd:element name="programs" minOccurs="1" maxOccurs="1">
+                    <xsd:complexType>
+                        <xsd:sequence>
+                            <xsd:element name="program" minOccurs="1" maxOccurs="unbounded">
+                                <xsd:complexType>
+                                    <xsd:attribute name="name" type="xsd:string" use="required"/>
+                                    <!-- 20 chars -->
+                                    <xsd:attribute name="properties" type="xsd:string" use="required"/>
+                                    <!-- unpredictable... 100 chars -->
+                                    <xsd:attribute name="version" type="xsd:string" use="required"/>
+                                    <!-- 20 chars -->
+                                </xsd:complexType>
+                            </xsd:element>
+                        </xsd:sequence>
+                    </xsd:complexType>
+                </xsd:element>
+                <!-- programs ends -->
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    <!--wwPDB-validation-information ends-->
+</xsd:schema>

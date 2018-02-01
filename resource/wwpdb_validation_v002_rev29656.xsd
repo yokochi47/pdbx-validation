@@ -1,0 +1,2864 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:annotation><xsd:documentation xml:lang="en">
+<pre>
+COPYRIGHT
+*****************************************************************
+Copyright 2014-2017 EMBL - European Bioinformatics Institute
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing,
+software distributed under the License is distributed on
+an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+KIND, either express or implied. See the License for the
+specific language governing permissions and limitations
+under the License.
+*****************************************************************
+
+This is a XML schema for checking entry-specific validation
+XML documents from wwPDB. 
+
+versions published:
+v1      2014/02/20  http://wwpdb.org/validation/schema/wwpdb_validation_v1.xsd
+v002    2016/02/25  http://wwpdb.org/validation/schema/wwpdb_validation_v002.xsd
+
+$Author: aleks $
+$Revision: 29656 $
+*****************************************************************
+</pre>
+    </xsd:documentation></xsd:annotation>
+
+    <xsd:element name="wwPDB-validation-information">
+        <xsd:complexType> 
+            <xsd:sequence>
+                <xsd:element ref="Entry" minOccurs="1" maxOccurs="1"/>
+                <xsd:choice minOccurs="0" maxOccurs="unbounded">
+                    <xsd:element ref="Model"/>
+                    <xsd:element ref="ModelledSubgroup" minOccurs="1"/>
+                </xsd:choice>
+                <xsd:element ref="cyrange_domain" minOccurs="0" maxOccurs="unbounded"/>
+                <xsd:element ref="ModelledEntityInstance" minOccurs="0" maxOccurs="unbounded"/>
+                <xsd:element ref="programs" minOccurs="1" maxOccurs="1"/>                    
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    <!--wwPDB-validation-information ends-->
+    
+    <!-- separate elements and attributes that are then referenced - this avoids duplication and over indentation-->
+    <xsd:element name="Entry">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            Entry contains most information that has a single value for the structure analyzed and in the run.
+        </xsd:documentation></xsd:annotation>
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:choice>
+                    <xsd:element ref="chemical_shift_list" minOccurs="0" maxOccurs="unbounded"/>
+                </xsd:choice>
+            </xsd:sequence>
+
+            <!-- general attributes -->
+            <xsd:attribute ref="pdbid" use="optional"/>
+            <xsd:attribute ref="PDB-deposition-date" use="optional"/>
+            <xsd:attribute ref="PDB-revision-number" use="optional"/>
+            <xsd:attribute ref="PDB-revision-date" use="optional"/>
+            <xsd:attribute ref="PDB-resolution" use="optional"/>
+            <xsd:attribute ref="PDB-resolution-low" use="optional"/>
+            <xsd:attribute ref="PDB-R" use="optional"/>
+            <xsd:attribute ref="PDB-Rfree" use="optional"/>
+            <xsd:attribute ref="protein-DNA-RNA-entities" use="optional"/>
+            <xsd:attribute ref="CA_ONLY" use="optional"/>
+
+            <!-- validation pipeline related attributes-->
+            <xsd:attribute ref="XMLcreationDate" use="optional"/>
+            <xsd:attribute ref="coordinatesInputFilename" use="optional"/>
+            <xsd:attribute ref="reflectionsInputFilename" use="optional"/>
+            <xsd:attribute ref="chemicalshiftsInputFilename" use="optional"/>
+            <xsd:attribute ref="attemptedValidationSteps" use="required"/>
+
+            <!-- Mogul related attributes-->
+            <xsd:attribute ref="no-ligands-for-mogul" use="optional"/>
+
+            <!-- MolProbity related attributes-->
+            <xsd:attribute ref="RestypesNotcheckedForBondAngleGeometry" use="optional"/>
+            <xsd:attribute ref="angles_rmsz" use="optional"/>
+            <xsd:attribute ref="bonds_rmsz" use="optional"/>
+            <xsd:attribute ref="num_bonds_rmsz" use="optional"/>
+            <xsd:attribute ref="num_angles_rmsz" use="optional"/>
+            <xsd:attribute ref="num-H-reduce" use="optional"/>
+            <xsd:attribute ref="clashscore" use="optional"/>
+            <xsd:attribute ref="clashscore-full-length" use="optional"/>
+            <xsd:attribute ref="RNAsuiteness" use="optional"/>
+            <xsd:attribute ref="percent-rama-outliers" use="optional"/>
+            <xsd:attribute ref="percent-rama-outliers-full-length" use="optional"/>
+            <xsd:attribute ref="percent-rota-outliers" use="optional"/>
+            <xsd:attribute ref="percent-rota-outliers-full-length" use="optional"/>
+
+            <!-- X-ray related attributes -->                      
+            <xsd:attribute ref="CCP4version" use="optional"/>
+            <xsd:attribute ref="resol-high-from-reflectionsfile" use="optional"/>
+            <xsd:attribute ref="resol-low-from-reflectionsfile" use="optional"/>
+            <xsd:attribute ref="xtriage_input_columns" use="optional"/>
+            <xsd:attribute ref="acentric_outliers" use="optional"/>
+            <xsd:attribute ref="centric_outliers" use="optional"/>
+            <xsd:attribute ref="IoverSigma" use="optional"/>
+            <xsd:attribute ref="numMillerIndices" use="optional"/>
+            <xsd:attribute ref="WilsonBestimate" use="optional"/>
+            <xsd:attribute ref="WilsonBaniso" use="optional"/>
+            <xsd:attribute ref="DataAnisotropy" use="optional"/>
+            <xsd:attribute ref="TransNCS" use="optional"/>
+            <xsd:attribute ref="TwinL" use="optional"/>
+            <xsd:attribute ref="TwinL2" use="optional"/>
+            <xsd:attribute ref="TwinFraction" use="optional"/>
+            <xsd:attribute ref="B_factor_type" use="optional"/>
+            <xsd:attribute ref="DataCompleteness" use="optional"/>
+            <xsd:attribute ref="DCC_R" use="optional"/>
+            <xsd:attribute ref="DCC_Rfree" use="optional"/>
+            <xsd:attribute ref="DCC_refinement_program" use="optional"/>
+            <xsd:attribute ref="num-free-reflections" use="optional"/>
+            <xsd:attribute ref="percent-free-reflections" use="optional"/>
+            <xsd:attribute ref="RefmacVersion" use="optional"/>
+            <xsd:attribute ref="EDS_R" use="optional"/>
+            <xsd:attribute ref="EDS_resolution" use="optional"/>
+            <xsd:attribute ref="EDS_resolution_low" use="optional"/>
+            <xsd:attribute ref="Fo_Fc_correlation" use="optional"/>
+            <xsd:attribute ref="babinet_b" use="optional"/>
+            <xsd:attribute ref="babinet_k" use="optional"/>
+            <xsd:attribute ref="bulk_solvent_b" use="optional"/>
+            <xsd:attribute ref="bulk_solvent_k" use="optional"/>
+            <xsd:attribute ref="percent-RSRZ-outliers" use="optional"/>
+
+            <!-- NMR related attributes -->
+            <xsd:attribute ref="nmr_models_consistency_flag" use="optional"/>
+            <xsd:attribute ref="cyrange_error" use="optional"/>
+            <xsd:attribute ref="cyrange_version" use="optional"/>
+            <xsd:attribute ref="nmrclust_error" use="optional"/>
+            <xsd:attribute ref="nmrclust_version" use="optional"/>
+            <xsd:attribute ref="nmrclust_representative_model" use="optional"/>
+            <xsd:attribute ref="medoid_model" use="optional"/>
+            <xsd:attribute ref="nmrclust_number_of_outliers" use="optional"/>
+            <xsd:attribute ref="nmrclust_number_of_models" use="optional"/>
+            <xsd:attribute ref="nmrclust_number_of_clusters" use="optional"/>
+            <xsd:attribute ref="cyrange_number_of_domains" use="optional"/>
+            <xsd:attribute ref="chemical_shift_completeness" use="optional"/>
+            <xsd:attribute ref="chemical_shift_completeness_full_length" use="optional"/>
+            <xsd:attribute ref="panav_version" use="optional"/>
+            <xsd:attribute ref="rci_version" use="optional"/>
+            <xsd:attribute ref="shiftchecker_version" use="optional"/>
+ 
+            <!-- percentile related attributes: -->
+            <xsd:attribute ref="percentilebins" use="optional"/>
+            <xsd:attribute ref="no-percentile-property" use="optional"/>
+            <xsd:attribute ref="absolute-percentile-RNAsuiteness" use="optional"/>
+            <xsd:attribute ref="numPDBids-absolute-percentile-RNAsuiteness" use="optional"/>
+            <xsd:attribute ref="relative-percentile-RNAsuiteness" use="optional"/>
+            <xsd:attribute ref="numPDBids-relative-percentile-RNAsuiteness" use="optional"/>
+            <xsd:attribute ref="low-resol-relative-percentile-RNAsuiteness" use="optional"/>
+            <xsd:attribute ref="high-resol-relative-percentile-RNAsuiteness" use="optional"/>
+            <xsd:attribute ref="absolute-percentile-clashscore" use="optional"/>
+            <xsd:attribute ref="numPDBids-absolute-percentile-clashscore" use="optional"/>
+            <xsd:attribute ref="relative-percentile-clashscore" use="optional"/>
+            <xsd:attribute ref="numPDBids-relative-percentile-clashscore" use="optional"/>
+            <xsd:attribute ref="low-resol-relative-percentile-clashscore" use="optional"/>
+            <xsd:attribute ref="high-resol-relative-percentile-clashscore" use="optional"/>
+            <xsd:attribute ref="absolute-percentile-percent-rama-outliers" use="optional"/>
+            <xsd:attribute ref="numPDBids-absolute-percentile-percent-rama-outliers" use="optional"/>
+            <xsd:attribute ref="relative-percentile-percent-rama-outliers" use="optional"/>
+            <xsd:attribute ref="numPDBids-relative-percentile-percent-rama-outliers" use="optional"/>
+            <xsd:attribute ref="low-resol-relative-percentile-percent-rama-outliers" use="optional"/>
+            <xsd:attribute ref="high-resol-relative-percentile-percent-rama-outliers" use="optional"/>
+            <xsd:attribute ref="absolute-percentile-percent-rota-outliers" use="optional"/>
+            <xsd:attribute ref="numPDBids-absolute-percentile-percent-rota-outliers" use="optional"/>
+            <xsd:attribute ref="relative-percentile-percent-rota-outliers" use="optional"/>
+            <xsd:attribute ref="numPDBids-relative-percentile-percent-rota-outliers" use="optional"/>
+            <xsd:attribute ref="low-resol-relative-percentile-percent-rota-outliers" use="optional"/>
+            <xsd:attribute ref="high-resol-relative-percentile-percent-rota-outliers" use="optional"/>
+            <xsd:attribute ref="absolute-percentile-DCC_Rfree" use="optional"/>
+            <xsd:attribute ref="numPDBids-absolute-percentile-DCC_Rfree" use="optional"/>
+            <xsd:attribute ref="relative-percentile-DCC_Rfree" use="optional"/>
+            <xsd:attribute ref="numPDBids-relative-percentile-DCC_Rfree" use="optional"/>
+            <xsd:attribute ref="low-resol-relative-percentile-DCC_Rfree" use="optional"/>
+            <xsd:attribute ref="high-resol-relative-percentile-DCC_Rfree" use="optional"/>
+            <xsd:attribute ref="absolute-percentile-percent-RSRZ-outliers" use="optional"/>
+            <xsd:attribute ref="numPDBids-absolute-percentile-percent-RSRZ-outliers" use="optional"/>
+            <xsd:attribute ref="relative-percentile-percent-RSRZ-outliers" use="optional"/>
+            <xsd:attribute ref="numPDBids-relative-percentile-percent-RSRZ-outliers" use="optional"/>
+            <xsd:attribute ref="low-resol-relative-percentile-percent-RSRZ-outliers" use="optional"/>
+            <xsd:attribute ref="high-resol-relative-percentile-percent-RSRZ-outliers" use="optional"/>
+
+        </xsd:complexType>
+    </xsd:element>
+    <!-- Entry ends -->
+
+    <xsd:element name="Model">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            A "Model" is one of the structures that are described by a PDB entry. 
+            Most NMR entries as well as some entries determined by other experimental techniques, 
+            contain an ensemble of models (structures). For most NMR entries, the models should be 
+            chemically identical - i.e., contain the exact same atoms, and will only differ
+            in the cartesian coordinates of constituent atoms. For older NMR entries, and 
+            for non-NMR entries, this is not enforced. 
+        </xsd:documentation></xsd:annotation>
+        
+        <xsd:complexType>
+            <xsd:attribute name="model" type="xsd:integer" use="optional">
+                <xsd:annotation><xsd:documentation xml:lang="en">
+                    The integer identifier of a Model. 
+                </xsd:documentation></xsd:annotation>
+            </xsd:attribute>
+            
+            <xsd:attribute name="nmrclust_cluster_id" type="xsd:string" use="optional">
+                <xsd:annotation><xsd:documentation xml:lang="en">
+                    NMRClust software is used to compare models in NMR entries. It clusters 
+                    similar models. Each model in an NMR entry, therefore, can have an "nmrclust_cluster_id" 
+                    indicating to which cluster the given model belongs if this value is integer. 
+                    If the value is "outlier" - the given model is sufficiently different 
+                    from other models in the ensemble.
+                </xsd:documentation></xsd:annotation>
+            </xsd:attribute>
+            
+            <xsd:attribute name="nmrclust_representative" type="xsd:string" use="optional">
+                <xsd:annotation><xsd:documentation xml:lang="en">
+                    A flag (with allowed values "True" and "False" indicating if the given 
+                    model is also the representative model of the cluster to which it belongs.  
+                </xsd:documentation></xsd:annotation>
+            </xsd:attribute>
+            
+        </xsd:complexType>
+    </xsd:element>
+    <!-- Model ends -->
+
+    <xsd:element name="ModelledSubgroup">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            A "ModelledSubgroup" is an individual occurence of a residue. If there are alternate atoms in the residue
+           each alternate and any alternate atoms is a separate ModelledSubgroup. If there are multiple models 
+           then each of these is a separate subgroup.
+        </xsd:documentation></xsd:annotation>
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:choice minOccurs="0" maxOccurs="unbounded">
+                    <xsd:element ref="bond-outlier" minOccurs="0"/>
+                    <xsd:element ref="angle-outlier" minOccurs="0"/>
+                    <xsd:element ref="chiral-outlier" minOccurs="0"/>
+                    <xsd:element ref="plane-outlier" minOccurs="0"/>
+                    <xsd:element ref="clash" minOccurs="0"/>
+                    <xsd:element ref="symm-clash" minOccurs="0"/>
+                    <xsd:element ref="mog-bond-outlier" minOccurs="0"/>
+                    <xsd:element ref="mog-angle-outlier" minOccurs="0"/>
+                    <xsd:element ref="mog-torsion-outlier" minOccurs="0"/>
+                    <xsd:element ref="mog-ring-outlier" minOccurs="0"/>
+                </xsd:choice>
+            </xsd:sequence>
+            
+            <xsd:attribute ref="chain" use="required"/>
+            <xsd:attribute ref="resnum" use="required"/> 
+            <xsd:attribute ref="resname" use="required"/> <!-- 5 chars -->
+            <xsd:attribute ref="model" use="required"/> <!-- 10 chars -->
+            <xsd:attribute ref="altcode" use="required"/> <!-- 3 chars -->
+            <xsd:attribute ref="icode" use="required"/> <!-- 3 chars -->
+            <xsd:attribute ref="ent" use="required"/> <!-- 5 chars -->
+            <xsd:attribute ref="said" use="required"/> <!-- 5 chars -->
+            <xsd:attribute ref="seq" use="required"/> <!-- 10 chars -->
+            
+            <xsd:attribute ref="ligand_num_clashes" use="optional"/>
+            <xsd:attribute ref="ligand_num_symm_clashes" use="optional"/>
+            <xsd:attribute ref="ligand_clashes_outlier" use="optional"/> <!-- 5 chars -->
+            <xsd:attribute ref="ligand_chirality_outlier" use="optional"/> <!-- 5 chars -->
+            <xsd:attribute ref="cis_peptide" use="optional"/>
+            <xsd:attribute ref="NatomsEDS" use="optional"/>
+            <xsd:attribute ref="cyrange_domain_id" use="optional"/>
+            <xsd:attribute ref="validate" use="optional"/>
+            <xsd:attribute ref="rsr" use="optional"/>
+            <xsd:attribute ref="rscc" use="optional"/>
+            <xsd:attribute ref="rsrz" use="optional"/>
+            <xsd:attribute ref="owab" use="optional"/>
+            <xsd:attribute ref="avgoccu" use="optional"/>
+            <xsd:attribute ref="lig_rsrz_nbr_id" use="optional"/>
+            <xsd:attribute ref="ligRSRnbrMean" use="optional"/>
+            <xsd:attribute ref="ligRSRnbrStdev" use="optional"/>
+            <xsd:attribute ref="ligRSRnumnbrs" use="optional"/>
+            <xsd:attribute ref="ligRSRZ" use="optional"/>
+            <xsd:attribute ref="num-H-reduce" use="optional"/>
+            <xsd:attribute ref="rama" use="optional"/> <!-- 10 chars -->
+            <xsd:attribute ref="rota" use="optional"/> <!-- 10 chars -->
+            <xsd:attribute ref="phi" use="optional"/>
+            <xsd:attribute ref="psi" use="optional"/>
+            <xsd:attribute ref="mogul-ignore" use="optional"/> <!-- 5 chars -->
+            <xsd:attribute ref="flippable-sidechain" use="optional"/> <!-- 5 chars -->
+            <xsd:attribute ref="RNAscore" use="optional"/>
+            <xsd:attribute ref="RNAsuite" use="optional"/> <!-- 15 chars -->
+            <xsd:attribute ref="RNApucker" use="optional"/> <!-- 10 chars -->
+            <xsd:attribute ref="mogul_angles_rmsz" use="optional"/>
+            <xsd:attribute ref="mogul_bonds_rmsz" use="optional"/>
+            <xsd:attribute ref="mogul_rmsz_numangles" use="optional"/>
+            <xsd:attribute ref="mogul_rmsz_numbonds" use="optional"/>
+            <xsd:attribute ref="ligand_geometry_outlier" use="optional"/>
+            <xsd:attribute ref="ligand_density_outlier" use="optional"/>
+        </xsd:complexType>
+    </xsd:element>
+    <!-- ModelledSubgroup ends -->
+
+    <xsd:element name="cyrange_domain">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            Cyrange software is used to identify well-defined regions of protein structures
+            in NMR ensembles. The well-defined region may contain more than one well-defined 
+            core or domain, which are not well defined with respect to each other. 
+            Each of these individual cores/domains is described as a "cyrange_domain".
+        </xsd:documentation></xsd:annotation>
+        <xsd:complexType>
+            <xsd:attribute ref="domain" use="required"/>
+            <xsd:attribute ref="number_of_gaps" use="required"/>
+            <xsd:attribute ref="number_of_residues" use="required"/>
+            <xsd:attribute ref="percentage_of_core" use="required"/>
+            <xsd:attribute ref="rmsd" use="required"/>
+            <xsd:attribute ref="medoid_model" use="required"/>
+            <xsd:attribute ref="medoid_rmsd" use="required"/>
+            <xsd:attribute ref="residue_string" use="optional"/>
+        </xsd:complexType>
+    </xsd:element>
+    <!-- cyrange_domain ends -->
+    
+    <xsd:element name="ModelledEntityInstance">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            Each separate chain in the structure is a "ModelledEntityInstance". In the case of multiple models each 
+            individual model is a "ModelledEntityInstance" on its own.
+        </xsd:documentation></xsd:annotation>
+        <xsd:complexType>
+            <xsd:attribute ref="absolute_RSRZ_percentile" use="optional"/>
+            <xsd:attribute ref="relative_RSRZ_percentile" use="optional"/>
+            <xsd:attribute ref="absolute_rama_percentile" use="optional"/>
+            <xsd:attribute ref="relative_rama_percentile" use="optional"/>
+            <xsd:attribute ref="absolute_sidechain_percentile" use="optional"/>
+            <xsd:attribute ref="relative_sidechain_percentile" use="optional"/>
+            <xsd:attribute ref="angles_rmsz" use="optional"/>
+            <xsd:attribute ref="bonds_rmsz" use="optional"/>
+            <xsd:attribute ref="num_bonds_rmsz" use="optional"/>
+            <xsd:attribute ref="num_angles_rmsz" use="optional"/>
+            <xsd:attribute ref="chain" use="required"/>
+            <xsd:attribute ref="model" use="required"/> <!-- 10 chars -->
+            <xsd:attribute ref="said" use="required"/> <!-- 5 chars -->
+            <xsd:attribute ref="ent" use="required"/> <!-- 5 chars -->
+        </xsd:complexType>
+    </xsd:element>
+    <!-- ModelledEntityInstance -->
+    
+    <xsd:element name="chemical_shift_list">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            NMR entries are normally linked to one or more assigned chemical shift lists. 
+            A typical reason for containing multiple chemical shift lists would be differing 
+            experimental conditions or samples.
+        </xsd:documentation></xsd:annotation>
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:choice minOccurs="0" maxOccurs="unbounded">
+                    <xsd:element name="unmapped_chemical_shift"/>
+                    <xsd:element name="unparsed_chemical_shift"/>
+                    <xsd:element name="missing_nmrstar_tag"/>
+                    <xsd:element name="random_coil_index"/>
+                    <xsd:element name="chemical_shift_outlier"/>
+                    <xsd:element name="referencing_offset"/>
+                    <xsd:element name="assignment_completeness_well_defined"/>
+                    <xsd:element name="assignment_completeness_full_length"/>
+                </xsd:choice>
+            </xsd:sequence>
+            <xsd:attribute ref="file_id" use="required"/>
+            <xsd:attribute ref="file_name" use="required"/>
+            <xsd:attribute ref="block_name" use="required"/>
+            <xsd:attribute ref="list_id" use="required"/>
+            <xsd:attribute ref="type" use="required"/>
+            <xsd:attribute ref="number_of_errors_while_mapping" use="required"/>
+            <xsd:attribute ref="number_of_warnings_while_mapping" use="required"/>
+            <xsd:attribute ref="number_of_mapped_shifts" use="required"/>
+            <xsd:attribute ref="number_of_parsed_shifts" use="required"/>
+            <xsd:attribute ref="total_number_of_shifts" use="required"/>
+            <xsd:attribute ref="number_of_unparsed_shifts" use="required"/>
+        </xsd:complexType>
+    </xsd:element>
+    <!-- end of chemical_shift_list element -->
+
+    <!-- chemical shift_shift_list child elements  -->
+    <xsd:element name="unmapped_chemical_shift">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            Each assigned chemical shift should map to one or more nuclei of the studied 
+            biological macromolecule or complex. In preliminary reports and for some older entries, 
+            this mapping is not always accurate and some chemical shifts can therefore be "unmapped". 
+            It implies, that the chemical shift was parsed, but not mapped to any nucleus expected 
+            from the molecular description. It may result for instance from typos or 
+            from an incomplete molecular description. Details are given in the free text "diagnostic" attribute.
+        </xsd:documentation></xsd:annotation>
+        <xsd:complexType>
+            <xsd:attribute ref="chain" use="required"/>
+            <xsd:attribute ref="rescode" use="required"/>
+            <xsd:attribute ref="resnum" use="required"/>
+            <xsd:attribute ref="atom" use="required"/>
+            <xsd:attribute ref="value" use="required"/>
+            <xsd:attribute ref="error" use="optional"/>
+            <xsd:attribute ref="ambiguity" use="optional"/>
+            <xsd:attribute ref="diagnostic" use="required"/>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="unparsed_chemical_shift">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            An unparsed chemical shift implies that some expected values were missing or did not
+            conform to expected format: e.g., non-numeric value of a shift measurement
+            or missing chain/entity identifier.
+        </xsd:documentation></xsd:annotation>
+        <xsd:complexType>
+            <xsd:attribute name="id" type="xsd:string" use="optional">
+                <xsd:annotation><xsd:documentation xml:lang="en">
+                    ID of the chemical shift as parsed in the chemical shifts file.
+                </xsd:documentation></xsd:annotation>
+            </xsd:attribute>
+            <xsd:attribute ref="chain" use="required"/>
+            <xsd:attribute ref="rescode" use="required"/>
+            <xsd:attribute ref="resnum" use="required"/>
+            <xsd:attribute ref="atom" use="required"/>
+            <xsd:attribute ref="value" use="required"/>
+            <xsd:attribute ref="error" use="optional"/>
+            <xsd:attribute ref="ambiguity" use="optional"/>
+            <xsd:attribute ref="diagnostic" use="required"/>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="missing_nmrstar_tag">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            The chemical shifts must be supplied in NMR-STAR 3.1 format. In order for the 
+            shifts to be mapped to the molecular structure, certain values (data items or 
+            tags) must be provided.
+        </xsd:documentation></xsd:annotation>
+        <xsd:complexType>
+            <xsd:attribute name="nmrstar_tag_description" type="xsd:string" use="required">
+                <xsd:annotation><xsd:documentation xml:lang="en">
+                    Description of the missing but required data item (tag).
+                </xsd:documentation></xsd:annotation>
+            </xsd:attribute>
+            <xsd:attribute name="nmrstar_tag" type="xsd:string" use="required">
+                <xsd:annotation><xsd:documentation xml:lang="en">
+                    The name of the missing data item (tag).
+                </xsd:documentation></xsd:annotation>
+            </xsd:attribute>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="random_coil_index">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            The Random Coil Index (RCI) is calculated for each residue from the protein sequence 
+            and assigned chemical shifts. Via an empirical formula the RCI correlates with disorder propensity
+            of the residue. 
+        </xsd:documentation></xsd:annotation>
+        <xsd:complexType>
+            <xsd:attribute ref="chain" use="required"/>
+            <xsd:attribute ref="rescode" use="required"/>
+            <xsd:attribute ref="resnum" use="required"/>
+            <xsd:attribute ref="value" use="required"/>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="chemical_shift_outlier">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            BMRB compiled statistics of assigned chemical shifts, against which a given value is checked.
+            A value is deemed an outlier if it is 5 standard deviation away from the expected mean.
+        </xsd:documentation></xsd:annotation>
+        <xsd:complexType>
+            <xsd:attribute ref="chain" use="required"/>
+            <xsd:attribute ref="rescode" use="required"/>
+            <xsd:attribute ref="resnum" use="required"/>
+            <xsd:attribute ref="atom" use="required"/>
+            <xsd:attribute ref="value" use="required"/>
+            <xsd:attribute ref="zscore" use="required"/>
+            <xsd:attribute name="prediction" type="xsd:decimal" use="required">
+                <xsd:annotation><xsd:documentation xml:lang="en">
+                    The mean value of the chemical shift expected from the BMRB statistics
+                </xsd:documentation></xsd:annotation>
+            </xsd:attribute>
+            <xsd:attribute name="method" type="xsd:string" use="required">
+                <xsd:annotation><xsd:documentation xml:lang="en">
+                    Method to determine the expected value and standard deviation. 
+                    At present this is limited to BMRB statistics.
+                </xsd:documentation></xsd:annotation>
+            </xsd:attribute>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="referencing_offset">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            PANAV software is used to calculate suggested referencing correction for each
+            chemical shift list.
+        </xsd:documentation></xsd:annotation>
+        <xsd:complexType>
+            <xsd:attribute ref="atom" use="required"/>
+            <xsd:attribute name="uncertainty" type="xsd:decimal" use="required">
+                <xsd:annotation><xsd:documentation xml:lang="en">
+                    Default uncertainty of the prediction, set to 0.05 ppm for protons 
+                    and 0.5 ppm for 13C and 15N nuclei.
+                </xsd:documentation></xsd:annotation>
+            </xsd:attribute>
+            <xsd:attribute name="precision" type="xsd:decimal" use="optional">
+                <xsd:annotation><xsd:documentation xml:lang="en">
+                    Precision of the suggested correction, as estimated by jack-knifing
+                    algorithm.
+                </xsd:documentation></xsd:annotation>
+            </xsd:attribute>
+            <xsd:attribute ref="value" use="required"/>
+            <xsd:attribute name="number_of_measurements" type="xsd:integer" use="required">
+                <xsd:annotation><xsd:documentation xml:lang="en">
+                    How many chemical shift values for this kind of nucleus are reported 
+                    in the chemical shift list.
+                </xsd:documentation></xsd:annotation>
+            </xsd:attribute>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="assignment_completeness_well_defined">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            For the well-defined regions of the structure, what is the completeness of chemical
+            shift assignments for the typically assigned nuclei.
+        </xsd:documentation></xsd:annotation>
+        <xsd:complexType>
+            <xsd:attribute ref="number_of_assigned_shifts" use="required"/>
+            <xsd:attribute ref="number_of_unassigned_shifts" use="required"/>
+            <xsd:attribute ref="number_of_shifts" use="required"/>
+            <xsd:attribute name="type" type="xsd:string" use="required">
+                <xsd:annotation><xsd:documentation xml:lang="en">
+                    "Type" refers to a subset of assignments: overall, backbone, aliphatic 
+                    sidechain, aromatic protein rings, nucleic acid base and ribose or 
+                    deoxyribose ring.
+                </xsd:documentation></xsd:annotation>
+            </xsd:attribute>
+            <xsd:attribute ref="element" use="optional"/>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="assignment_completeness_full_length">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            For the complete structure, what is the completeness of chemical
+            shift assignments for the typically assigned nuclei.
+        </xsd:documentation></xsd:annotation>
+        <xsd:complexType>
+            <xsd:attribute ref="number_of_assigned_shifts" use="required"/>
+            <xsd:attribute ref="number_of_unassigned_shifts" use="required"/>
+            <xsd:attribute ref="number_of_shifts" use="required"/>
+            <xsd:attribute name="type" type="xsd:string" use="required">
+                <xsd:annotation><xsd:documentation xml:lang="en">
+                    "Type" refers to a subset of assignments: overall, backbone, aliphatic 
+                    sidechain, aromatic protein rings, nucleic acid base and ribose or 
+                    deoxyribose ring.
+                </xsd:documentation></xsd:annotation>
+            </xsd:attribute>
+            <xsd:attribute ref="element" use="optional"/>
+        </xsd:complexType>
+    </xsd:element>
+    <!-- chemical shift_shift_list child elements (end) -->
+    
+    <!-- programs and program starts -->
+    <xsd:element name="programs">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            A list of programs used by the validation pipeline.
+        </xsd:documentation></xsd:annotation>
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="program" minOccurs="1" maxOccurs="unbounded"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="program">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            An individual program used by the validation pipeline.
+            Normally this corresponds to a "step" but not always.
+        </xsd:documentation></xsd:annotation>
+        <xsd:complexType>
+            <xsd:attribute name="name" type="xsd:string" use="required">
+                <xsd:annotation><xsd:documentation xml:lang="en">
+                    The name of the program. 
+                    For example: name="mogul".
+                </xsd:documentation></xsd:annotation>
+            </xsd:attribute>
+            <xsd:attribute name="properties" type="xsd:string" use="required"> 
+                <xsd:annotation><xsd:documentation xml:lang="en">
+                    This aims to provide a comma seperate list of the xml attributes/elements that program supplied.
+                    The list is in an arbitrary order that can vary.
+                    Example: properties="mogul_rmsz_numangles,mogul_angles_rmsz,mogul-torsion-outlier,mogul-angle-outlier,mogul-bond-outlier,mogul_bonds_rmsz,mogul-ring-outlier,mogul_rmsz_numbonds".
+                    Note that the cross-referencing is not currently consistent as names can vary for instance
+                    properties list includes "mogul-angle-outlier" but the attribute is "mog-angle-outlier". 
+                </xsd:documentation></xsd:annotation>
+            </xsd:attribute>
+            <xsd:attribute name="version" type="xsd:string" use="required">
+                <xsd:annotation><xsd:documentation xml:lang="en">
+                    Version string for the program. Format program dependent.
+                    Example: version="1.7.2 (RC1), CSD as538be (2017)"
+                </xsd:documentation></xsd:annotation>
+            </xsd:attribute>
+        </xsd:complexType>
+    </xsd:element>
+    <!-- programs and program ends -->
+
+    <xsd:element name="bond-outlier">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            Bond outlier for standard amino acid or nucleic acid in comparison to the
+            Engh and Huber EH99 parameters, Parkinson et al. parameter set. 
+            It involves two atoms. The obs, mean, stdev will all be in Angstroms units.
+            Example: &lt;bond-outlier atom0="C" atom1="OXT" mean="1.229" obs="1.327" stdev="0.019" z="5.16"/&gt;
+        </xsd:documentation></xsd:annotation>
+        <xsd:complexType>
+            <xsd:attribute ref="atom0" use="required"/> <!-- 5 chars -->
+            <xsd:attribute ref="atom1" use="required"/> <!-- 5 chars -->
+            <xsd:attribute ref="mean" use="required"/>
+            <xsd:attribute ref="stdev" use="required"/>
+            <xsd:attribute ref="obs" use="required"/>
+            <xsd:attribute ref="z" use="required"/>
+            <xsd:attribute ref="link" use="optional"/>
+        </xsd:complexType>
+    </xsd:element>
+    
+    <xsd:element name="angle-outlier">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            Bond angle outlier for standard amino acid or nucleic acid in comparison to the
+            Engh and Huber EH99 parameters, Parkinson et al. parameter set.
+            It involves three atoms. The obsval, mean, mindiff, stdev will all be in degrees.
+            Example: &lt; atom0="C" atom1="N" atom2="CA" link="yes" mean="121.700" obs="139.881" stdev="2.500" z="7.27"/&gt;
+        </xsd:documentation></xsd:annotation>
+        <xsd:complexType>
+            <xsd:attribute ref="atom0" use="required"/> <!-- 5 chars -->
+            <xsd:attribute ref="atom1" use="required"/> <!-- 5 chars -->
+            <xsd:attribute ref="atom2" use="required"/> <!-- 5 chars -->
+            <xsd:attribute ref="mean" use="required"/>
+            <xsd:attribute ref="stdev" use="required"/>
+            <xsd:attribute ref="obs" use="required"/>
+            <xsd:attribute ref="z" use="required"/>
+            <xsd:attribute ref="link" use="optional"/>
+        </xsd:complexType>
+    </xsd:element>
+
+     <xsd:element name="chiral-outlier">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            Indicates there is a problem in the chirality compared to that expected with an atom in the residue.
+            Chiral centres for all compounds occurring in the PDB are described in the chemical component dictionary. 
+            Chirality can be assessed in a number of ways, including calculation of the chiral volume, 
+            e.g. for the Calpha of amino acids this is 2.6 or -2.6 Angstrom cubed for L or D configurations, respectively. 
+            If the sign of the computed volume is incorrect, the handedness is wrong. 
+            If the absolute volume is less than 0.7Å3 , the chiral centre has been modelled as a 
+            planar moiety which is very likely to be erroneous. Chirality deviations are summarised per chain. 
+        </xsd:documentation></xsd:annotation>
+        <xsd:complexType>
+            <xsd:attribute ref="atom" use="required"/>
+            <xsd:attribute name="problem" use="required">
+                <xsd:annotation><xsd:documentation xml:lang="en">
+                    The type of chiral problem that the atom has.
+                    either "WRONG HAND" or "PLANAR"
+                </xsd:documentation></xsd:annotation>
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:enumeration value="WRONG HAND"/>
+                        <xsd:enumeration value="PLANAR"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:attribute>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="plane-outlier">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+             Indicates that there is a problem with planarity of group defined in the standard_geometry.cif for amino 
+              acids/proteins or nucleic acid.
+             Calculated by the Validation-pack program. Examples:
+             &lt;plane-outlier improper="-13.96" type="mainchain"/&gt;
+             &lt;plane-outlier omega="-145.49" type="peptide"/&gt;
+             &lt;plane-outlier planeRMSD="0.17" type="sidechain"/&gt;
+        </xsd:documentation></xsd:annotation>
+        <xsd:complexType>
+            <xsd:attribute name="type" use="required"> <!-- 15 chars -->
+                 <xsd:annotation><xsd:documentation xml:lang="en">
+                    The type of chiral problem that the atom has. One of:
+                    (A) "mainchain": The N atom of an amino acid residue is expected to be in the same plane as the Calpha, 
+                        C, and O atoms of the previous residue. If the improper torsion angle of these atoms is more than 10 
+                        degrees, this is flagged as a planarity deviation. From mmcif item "_pdbx_validate_main_chain_plane".
+                    (B) "peptide": A deviation is flagged if the omega torsion angle of a peptide group differs by more than 30 
+                        degrees from the values expected for a proper cis or trans conformation (0 degrees and 180 degrees, 
+                        respectively). For mmcif item: "_pdbx_validate_peptide_omega".
+                    (C) "sidechain": Certain groups of atoms in protein sidechains and nucleotide bases are expected to be in 
+                        the same plane. An atom's deviation from planarity is calculated by fitting a plane through these atoms
+                        and then calculating distance of individual atom from the plane. Expected value of such distances have
+                        been pre-calculated from data analysis (wwPDB, 2012). If an atom is modelled to be more than six times 
+                        farther than the pre-calculated value, the residue is flagged to have a sidechain planarity deviation. 
+                        From mmcif item "_pdbx_validate_planes".
+                </xsd:documentation></xsd:annotation>
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:enumeration value="mainchain"/>
+                        <xsd:enumeration value="peptide"/>
+                        <xsd:enumeration value="sidechain"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:attribute>
+            <xsd:attribute name="improper" type="xsd:decimal" use="optional"> 
+                <xsd:annotation><xsd:documentation xml:lang="en">
+                    For a type="mainchain" outlier, the improper torsion angle in degrees.
+                </xsd:documentation></xsd:annotation>
+            </xsd:attribute>
+            <xsd:attribute name="omega" type="xsd:decimal" use="optional"> 
+                <xsd:annotation><xsd:documentation xml:lang="en">
+                     For a type="peptide" outlier, the omega torsion angle in degrees.
+               </xsd:documentation></xsd:annotation>
+            </xsd:attribute>
+            <xsd:attribute name="planeRMSD" type="xsd:decimal" use="optional">
+                <xsd:annotation><xsd:documentation xml:lang="en">
+                     For a type="sidechain" outlier, the root mean squared deviation from the mean plane in Angstroms.
+               </xsd:documentation></xsd:annotation>
+             </xsd:attribute>
+        </xsd:complexType>
+    </xsd:element>
+   
+    <xsd:element name="clash">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            A MolProbity all-atom clash outlier within the residue. Note that hydrogen atoms are added to the model
+            and optimized by the reduce program. Outliers often involve these added hydrogen atoms.
+            Example: &lt;clash atom="HB3" cid="7" clashmag="0.44" dist="2.57"/&gt;
+        </xsd:documentation></xsd:annotation>
+        <xsd:complexType>
+            <xsd:attribute ref="atom" use="required"/>
+            <xsd:attribute name="cid" type="xsd:integer" use="required">
+                <xsd:annotation><xsd:documentation xml:lang="en">
+                    An identifier that cross references the other atom in the clash. The two atoms in the clash
+                    will have the same unique cid.
+                </xsd:documentation></xsd:annotation>
+            </xsd:attribute>
+            <xsd:attribute name="clashmag" type="xsd:decimal" use="required">
+                <xsd:annotation><xsd:documentation xml:lang="en">
+                    The "magnitude" of the clash in Angstroms assessed by MolProbity. The MolProbity "magnitude" of a clash 
+                    is defined as the difference between the observed interatomic distance and the sum of the van der Waals 
+                    radii of the atoms involved.
+                </xsd:documentation></xsd:annotation>
+            </xsd:attribute>
+            <xsd:attribute ref="dist" use="required"/>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="symm-clash">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            A symmetry-related clash identified by Validation-pack. Symmetry related clashes are too-close
+            contacts between two atoms across a crystallographic symmetry contact.  
+            Only relevant to crystallographic structures.  
+            Example: &lt;symm-clash atom="O" clashmag="0.79" dist="1.41" scid="0" symop="2_657"/&gt;
+            From mmcif item "_pdbx_validate_symm_contact".
+        </xsd:documentation></xsd:annotation>
+        <xsd:complexType>
+            <xsd:attribute ref="atom" use="required"/>
+            <xsd:attribute name="symop" type="xsd:string" use="required"><!-- 15 chars -->
+                <xsd:annotation><xsd:documentation xml:lang="en">
+                    The symmetry operator for the atom in the contact.
+                    The 1_555 notation is crystallographic shorthand to describe a particular symmetry operator 
+                    (the number before the underscore) and any required translation (the three numbers following 
+                    the underscore). Symmetry operators are defined by the space group and the translations are 
+                    given for the three-unit cell axis (a, b, and c) where 5 indicates no translation and numbers
+                    higher or lower signify the number of unit cell translations in the positive or negative direction.
+                    For example, 4_565 indicates the use of symmetry operator 4 followed by a one-unit cell translation
+                    in the positive b direction. 
+                    One of the atoms in the contact will have symop="1_555" that indicates the identity operator.
+                </xsd:documentation></xsd:annotation>
+            </xsd:attribute>
+            <xsd:attribute name="scid" type="xsd:integer" use="required">
+                <xsd:annotation><xsd:documentation xml:lang="en">
+                    An identifier that cross references the other atom in the clash. The two atoms in the clash
+                    will have the same unique scid.
+                </xsd:documentation></xsd:annotation>
+            </xsd:attribute>
+            <xsd:attribute name="clashmag" type="xsd:decimal" use="required">
+                <xsd:annotation><xsd:documentation xml:lang="en">
+                    The "magnitude" of the clash in Angstroms assessed by Validation-pack.
+                    In this case, the "magnitude" of a clash is defined as 2.2 Angstrom 
+                    (or 1.6 Angstrom if either atom is a hydrogen atom) minus the interatomic distance.
+                </xsd:documentation></xsd:annotation>
+            </xsd:attribute>
+            <xsd:attribute ref="dist" use="required"/>
+        </xsd:complexType>
+    </xsd:element>
+ 
+    <xsd:element name="mog-bond-outlier">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            Bond outlier for ligand or modified amino acid/nucleic acid identified by the Mogul program.
+            It will involve two atoms. The obsval, mean, mindiff, stdev will all be in Angstroms units.
+            The Mogul program (Bruno et al., 2004) works by comparing the ligand geometry
+            with preferred molecular geometries derived from high-quality, small-molecule structures in 
+            the Cambridge Structural Database (CSD)
+            Example: &lt;mog-bond-outlier Zscore="2.25" atoms="C1,C6" mean="1.53" mindiff="0.00" numobs="128" obsval="1.56" stdev="0.01"/&gt;
+        </xsd:documentation></xsd:annotation>
+        <xsd:complexType>
+            <xsd:attribute ref="atoms" use="required"/> <!-- 10 chars -->
+            <xsd:attribute ref="obsval" use="required"/> 
+            <xsd:attribute ref="mean" use="required"/> 
+            <xsd:attribute ref="stdev" use="required"/>  
+            <xsd:attribute ref="numobs" use="required"/>
+            <xsd:attribute ref="Zscore" use="required"/>
+            <xsd:attribute ref="mindiff" use="required"/>
+        </xsd:complexType>
+    </xsd:element>
+    
+    <xsd:element name="mog-angle-outlier">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            Bond angle outlier for ligand or modified amino acid/nucleic acid identified by the Mogul program.
+            It involves three atoms. The obsval, mean, mindiff, stdev will all be in degrees.
+            The Mogul program (Bruno et al., 2004) works by comparing the ligand geometry
+            with preferred molecular geometries derived from high-quality, small-molecule structures in 
+            the Cambridge Structural Database (CSD).
+        </xsd:documentation></xsd:annotation>
+        <xsd:complexType>
+            <xsd:attribute ref="atoms" use="required"/> <!-- 15 chars, example: atoms="C11,C10,C9" -->
+            <xsd:attribute ref="obsval" use="required"/> <!-- example: obsval="123.89" -->
+            <xsd:attribute ref="mean" use="required"/>  <!-- example: mean="127.31" -->
+            <xsd:attribute ref="stdev" use="required"/>
+            <xsd:attribute ref="numobs" use="required"/>
+            <xsd:attribute ref="Zscore" use="required"/>
+            <xsd:attribute ref="mindiff" use="required"/>
+        </xsd:complexType>
+    </xsd:element>
+     
+    <xsd:element name="mog-torsion-outlier">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            Torsion angle outlier for ligand or modified amino acid/nucleic acid identified by the Mogul program.
+            It will involve four atoms. The obsval, mean, mindiff, stdev will all be in degrees.
+            The Mogul program (Bruno et al., 2004) works by comparing the ligand geometry
+            with preferred molecular geometries derived from high-quality, small-molecule structures in 
+            the Cambridge Structural Database (CSD).
+        </xsd:documentation></xsd:annotation>
+        <xsd:complexType>
+            <xsd:attribute ref="atoms" use="required"/> <!-- 20 chars -->
+            <xsd:attribute ref="obsval" use="required"/>
+            <xsd:attribute ref="mean" use="required"/>
+            <xsd:attribute ref="mindiff" use="required"/>
+            <xsd:attribute ref="numobs" use="required"/>
+            <xsd:attribute ref="stdev" use="required"/>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="mog-ring-outlier">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            Unusual ring conformation identified by Mogul. Mogul finds similar ring and works out the
+            rmsd deviation of the ring torsion angles compared to the CSD similar rings.
+            Each ring involves five or six atoms.
+            The Mogul program (Bruno et al., 2004) works by comparing the ligand geometry
+            with preferred molecular geometries derived from high-quality, small-molecule structures in 
+            the Cambridge Structural Database (CSD).
+        </xsd:documentation></xsd:annotation>
+        <xsd:complexType>
+            <xsd:attribute ref="atoms" use="required"/> <!-- unpredictable... 50 chars -->
+            <xsd:attribute ref="mean" use="required"/>
+            <xsd:attribute ref="mindiff" use="required"/>
+            <xsd:attribute ref="stdev" use="required"/>
+            <xsd:attribute ref="numobs" use="required"/>
+        </xsd:complexType>
+    </xsd:element>
+       
+
+    <!-- simpleType -->
+    <xsd:simpleType name="BfactorType">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            String for B_factor_type either "PARTIAL" or "FULL".
+        </xsd:documentation></xsd:annotation>
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="PARTIAL"/>
+            <xsd:enumeration value="FULL"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="YesString">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            The string "yes".
+        </xsd:documentation></xsd:annotation>
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="yes"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="NotAvailable">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            The string "NotAvailable".
+        </xsd:documentation></xsd:annotation>
+         <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="NotAvailable"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="floatORunavailable">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            Either a decimal number or the string "NotAvailable".
+        </xsd:documentation></xsd:annotation>
+        <xsd:union memberTypes="xsd:decimal NotAvailable"/>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="percentage">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            A percentage, Normally percent proportion of the total number. Between 0% and 100%.
+        </xsd:documentation></xsd:annotation>
+        <xsd:restriction base="xsd:float">
+            <xsd:minInclusive value="0."/>
+            <xsd:maxInclusive value="100."/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="percentile_rank">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            Structures are judged in comparison to previously deposited PDB entries. 
+            The comparison is carried out by calculation of the percentile rank, i.e. the percentage of entries 
+            that are equal or poorer than this structure in terms of a quality indicator.
+            Percentile ranks range from 0 (the worst) to 100 (the best).
+        </xsd:documentation></xsd:annotation>
+        <xsd:restriction base="xsd:float">
+            <xsd:minInclusive value="0."/>
+            <xsd:maxInclusive value="100."/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="atom_name">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            An atom name from cif item _atom_site.label_atom_id and _chem_comp_atom.atom_id.
+            Currently limited to 4 characters.
+        </xsd:documentation></xsd:annotation>
+        <xsd:restriction base="xsd:string">
+            <xsd:minLength value="1"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+   <!-- attributes referenced elsewhere -->
+   <!-- general attributes -->
+    <xsd:attribute name="pdbid" type="xsd:string">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            An identifier for the structure.
+            For released or annotated structures this will be the PDB ID currently 4 characters, for example "1CBS".
+            For reports produced during initial depositon process a deposition ID will be given instead, for example "D_1000219513".
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+    
+    <xsd:attribute name="PDB-deposition-date" type="xsd:string">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            Date in yyyy-mm-dd format when structure was deposited to the PDB.
+            Obtained from mmCIF table _database_PDB_rev item _database_PDB_rev.date_original 
+            Reports produced by the validation server or during the initial depositon process should not have this item.
+            If there is a difficulty parsing the item then "unknown" will be given.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute> 
+ 
+    <xsd:attribute name="PDB-revision-number" type="xsd:decimal">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            The last highest number that appears in mmCIF item _database_PDB_rev.num.
+            Data items in the DATABASE_PDB_REV category record details about the history of the data block as archived by the Protein Data Bank (PDB).
+            If the input mmCIF coordinate file lacks the information then a value of -1 is supplied.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute> 
+    
+    <xsd:attribute name="PDB-revision-date" type="xsd:string">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            Date in yyyy-mm-dd format when the structure was last revised by PDB.
+            Obtained from mmCIF table _database_PDB_rev item _database_PDB_rev.date
+            Reports produced by the validation server or during the initial depositon process should not have this item.
+            If there is a difficulty parsing the item then "unknown" will be given.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute> 
+    
+    <xsd:attribute name="PDB-resolution" type="floatORunavailable">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            For X-ray entries: data high resolution diffraction limit in Angstroms as reported in the input mmCIF file,
+            normally taken from mmcif item _refine.ls_d_res_high or if this is not found _reflns.d_resolution_high. 
+            For EM entries: The final resolution, in Angstroms, of the 3d reconstruction as reported in the input mmCIF file,
+            taken from _em_3d_reconstruction.resolution.
+            If not available then item will be absent or set to "NotAvailable".
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute> 
+    
+    <xsd:attribute name="PDB-resolution-low" type="floatORunavailable">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            For X-ray entries: lower data resolution diffraction limit, in Angstroms, as reported in the input mmCIF file,
+            normally taken from mmcif item _refine.ls_d_res_high or if this is not found _reflns.d_resolution_high.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+    
+    <xsd:attribute name="PDB-R" type="floatORunavailable">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            The residual R-factor reported in the input mmCIF file. 
+            The value will be taken from mmcif item _refine.ls_R_factor_all or if this not found _refine.ls_R_factor_obs or if this is not 
+            found _refine.ls_R_factor_R_work.
+            The R-factor is measure of the agreement between the crystallographic model and the 
+            experimental X-ray diffraction data. 
+            If not available then item will be absent or set to "NotAvailable".
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+    
+    <xsd:attribute name="PDB-Rfree" type="floatORunavailable">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            The residual R-factor for free reflections in the refinement reported in the input mmCIF file.
+            The value will be taken from mmcif item _refine.ls_R_factor_R_free.
+            If not available then item will be absent or set to "NotAvailable".
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+
+    <xsd:attribute name="protein-DNA-RNA-entities" type="xsd:string">
+       <xsd:annotation><xsd:documentation xml:lang="en">
+            Comma separated list of the _entity.id's for the molecular entities that are present in the structure
+            and have _entity_poly.type indicating that they are protein, RNA or DNA: that is in the list
+            'polypeptide(L)', 'polypeptide(D)', 'polyribonucleotide, 'polydeoxyribonucleotide'  or
+            'polydeoxyribonucleotide/polyribonucleotide hybrid'.
+            Normally the entity.id's are integer numbers but not necessarily so. 
+            Example protein-DNA-RNA-entities="1,2,3"
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute> 
+    <!-- 5 chars -->
+
+    <xsd:attribute name="CA_ONLY" type="YesString">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            The structure is a Calpha only model.
+            Currently implementation uses test that the structure has more than 30 atoms 
+            with the name CA and that number of atoms with name CA is greater than 1/3 of the total number of atoms.
+            Currently test only applied in the EDS step so will be only set for X-ray structures.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+    
+    <!-- validation pipeline related attributes-->
+    <xsd:attribute name="XMLcreationDate" type="xsd:string">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            The date, time and time-zone that the validation XML file was created. 
+            The string will be formatted like "Feb  7, 2017 -- 12:32 pm GMT".
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute> 
+    <!-- 30 chars -->
+
+    <xsd:attribute name="coordinatesInputFilename" type="xsd:string">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            The filename for the input mmCIF coordinate file given to the validation pipeline.
+            Not reported for runs at the annotation or release stage. 
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+    <!-- unpredictable... 30 chars -->
+
+    <xsd:attribute name="reflectionsInputFilename" type="xsd:string">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            The filename for the input mmCIF format reflection file given to the validation pipeline.
+            Not reported for runs at the annotation or release stage. 
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+    <!-- unpredictable... 30 chars -->
+
+    <xsd:attribute name="chemicalshiftsInputFilename" type="xsd:string">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            The filename for the input chemical shifts file given to the validation pipeline.
+            Not reported for runs at the annotation or release stage. 
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+    <!-- unpredictable... 30 chars -->
+
+    <xsd:attribute name="attemptedValidationSteps" type="xsd:string">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            The steps that were attempted by the validation pipeline software. 
+            A step typically involves running a 3rd party validation tool, for instance "mogul"
+            Each step that was successfully completed will result in a program element in the programs list.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+    <!-- 100 chars -->
+
+    <!-- Mogul related attributes-->
+    <xsd:attribute name="no-ligands-for-mogul" type="YesString">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            This will be set to "yes" when there were no ligands or modified residues found in the structure
+            and consequently Mogul has not been run.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+    <!-- 5 chars -->
+
+    <!-- MolProbity related attributes-->
+    <xsd:attribute name="RestypesNotcheckedForBondAngleGeometry" type="xsd:string">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            This is a comma separated list of the residue types whose bond lengths and bond angles have 
+            not been checked against "standard geometry" using the MolProbity dangle program.
+            Standard geometry parameters are taken from Engh and Huber (2001) and Parkinson et al. (1996)
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+    <!-- unpredictable... 50 chars -->
+    
+    <xsd:attribute name="angles_rmsz" type="xsd:decimal">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            The overall root mean square of the Z-score for deviations of bond angles in comparison to 
+            "standard geometry" made using the MolProbity dangle program.
+            Standard geometry parameters are taken from Engh and Huber (2001) and Parkinson et al. (1996).
+            This value is for all chains in the structure.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+    
+    <xsd:attribute name="bonds_rmsz" type="xsd:decimal">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            The overall root mean square of the Z-score for deviations of bond lengths in comparison to 
+            "standard geometry" made using the MolProbity dangle program.
+            Standard geometry parameters are taken from Engh and Huber (2001) and Parkinson et al. (1996).
+            This value is for all chains in the structure.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+    
+    <xsd:attribute name="num_bonds_rmsz" type="xsd:integer">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            The number of bond lengths compared to "standard geometry" made using the MolProbity dangle program.
+            Standard geometry parameters are taken from Engh and Huber (2001) and Parkinson et al. (1996).
+            This value is for all chains in the structure.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+    
+    <xsd:attribute name="num_angles_rmsz" type="xsd:integer">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            The number of bond angless compared to "standard geometry" made using the MolProbity dangle program.
+            Standard geometry parameters are taken from Engh and Huber (2001) and Parkinson et al. (1996).
+            This value is for all chains in the structure.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+
+    <xsd:attribute name="num-H-reduce" type="xsd:decimal">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            This is the number of hydrogen atoms added and optimized by the MolProbity reduce program as part of the
+            all-atom clashscore.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+    
+    <xsd:attribute name="clashscore" type="xsd:decimal">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            This score is derived from the number of pairs of atoms in the model that are unusually close to each other. 
+            It is calculated by the MolProbity program and expressed as the number or such clashes per thousand atoms.
+            For structures determined by NMR the clashscore value here will only consider atom pairs in the 
+            well-defined (core) residues from ensemble analysis.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+    
+    <xsd:attribute name="clashscore-full-length" type="xsd:decimal">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            Only given for structures determined by NMR. The MolProbity clash score for all atom pairs.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+
+    <xsd:attribute name="RNAsuiteness" type="xsd:decimal">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+           The MolProbity conformer-match quality parameter for RNA structures.
+           Low values are worse.
+           Example: RNAsuiteness="0.89"
+           Specific to structures that contain RNA polymers.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+
+    <xsd:attribute name="percent-rama-outliers" type="percentage">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            The MolProbity Ramachandran outlier score (a percentage).
+            A residue is considered to be a Ramachandran plot outlier if the combination of its phi and 
+            psi torsion angles is unusual, as assessed by MolProbity. 
+            The Ramachandran outlier score for an entry is calculated as the percentage 
+            of Ramachandran outliers with respect to the total number of residues in the entry 
+            for which the outlier assessment is available.
+            Example: percent-rama-outliers="0.00"
+            Specific to structures that contain protein chains.
+            For NMR structures only the  well-defined (core) residues from ensemble analysis will be considered.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+
+    <xsd:attribute name="percent-rama-outliers-full-length" type="percentage">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            Only given for structures determined by NMR. The MolProbity Ramachandran outlier score
+            for all atoms in the structure rather than just the well-defined (core) residues.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+
+    <xsd:attribute name="percent-rota-outliers" type="percentage">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            The MolProbity sidechain outlier score (a percentage).
+            Protein sidechains mostly adopt certain (combinations of) preferred torsion angle values 
+            (called rotamers or rotameric conformers), much like their backbone torsion angles 
+            (as assessed in the Ramachandran analysis). MolProbity considers the sidechain conformation 
+            of a residue to be an outlier if its set of torsion angles is not similar to any preferred 
+            combination. The sidechain outlier score is calculated as the percentage of residues 
+            with an unusual sidechain conformation with respect to the total number of residues for 
+            which the assessment is available.
+            Example: percent-rota-outliers="2.44".
+            Specific to structure that contain protein chains and have sidechains modelled.
+            For NMR structures only the  well-defined (core) residues from ensemble analysis will be considered.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+
+    <xsd:attribute name="percent-rota-outliers-full-length" type="percentage">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            Only given for structures determined by NMR. The MolProbity sidechain outlier score
+            for all atoms in the structure rather than just the well-defined (core) residues.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+
+    <!-- X-ray related attributes -->                      
+    <xsd:attribute name="CCP4version" type="xsd:string">
+       <xsd:annotation><xsd:documentation xml:lang="en">
+            The version of CCP4 suite programs used in the analysis.
+            Example: CCP4version="6.5.0".
+            X-ray entry specific, obtained from the eds step. 
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+    <!-- 20 chars -->
+
+    <xsd:attribute name="resol-high-from-reflectionsfile" type="xsd:decimal">
+         <xsd:annotation><xsd:documentation xml:lang="en">
+            The data high resolution diffraction limit, in Angstroms, obtained from cif item 
+            _reflns.d_resolution_high.
+            X-ray entry specific.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute> 
+
+    <xsd:attribute name="resol-low-from-reflectionsfile" type="xsd:decimal">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            The data low resolution diffraction limit, in Angstroms, obtained from cif item 
+            _reflns.d_resolution_low.
+            X-ray entry specific.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute> 
+
+    <xsd:attribute name="xtriage_input_columns" type="xsd:string">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            The mmCIF item names of the _refln columns used as input to the Xtriage program.
+            Example xtriage_input_columns="F_meas_au,F_meas_sigma_au".
+            X-ray entry specific, calculated by Phenix Xtriage program.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+    <!-- 50 chars -->
+
+    <xsd:attribute name="acentric_outliers" type="xsd:integer">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            The number of acentric reflections that Xtriage identifies as outliers on the basis 
+            of Wilson statistics. Note that if pseudo translational symmetry is present, 
+            a large number of 'outliers' will be present.
+            Example: acentric_outliers="1".
+            X-ray entry specific, calculated by Phenix Xtriage program.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+
+    <xsd:attribute name="centric_outliers" type="xsd:decimal">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            The number of centric reflections that Xtriage identifies as outliers.
+            Example: centric_outliers="5".
+            X-ray entry specific, calculated by Phenix Xtriage program.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+
+
+    <xsd:attribute name="IoverSigma" type="xsd:string">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            Each reflection has an intensity (I) and an uncertainty in measurement 
+            (sigma(I)), so I/sigma(I) is the signal-to-noise ratio. This
+            ratio decreases at higher resolution. &lt;I/sigma(I)&gt; is the mean of individual I/sigma(I)
+            values. Value for outer resolution shell is given in parentheses. In case
+            structure factor amplitudes are deposited, Xtriage estimates the intensities
+            first and then calculates this metric. When intensities are available in the
+            deposited file, these are converted to amplitudes and then back to intensity
+            estimate before calculating the metric.  
+            Example IoverSigma="3.77(1.79A)".
+            X-ray entry specific, calculated by Phenix Xtriage program.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute> 
+    <!-- 20 chars -->
+
+    <xsd:attribute name="numMillerIndices" type="xsd:integer">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            The number of Miller Indices reported by the Xtriage program. This should be the same as the
+            number of _refln in the input structure factor file.
+            Example: numMillerIndices="14678"
+            X-ray entry specific, calculated by Phenix Xtriage program.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+
+
+    <xsd:attribute name="WilsonBestimate" type="xsd:decimal">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            An estimate of the overall B-value of the structure, calculated from the diffraction data. 
+            Units Angstroms squared.
+            It serves as an indicator of the degree of order in the crystal and the value is usually 
+            not hugely different from the average B-value calculated from the model.
+            Example: WilsonBestimate="14.785"
+            X-ray entry specific, calculated by Phenix Xtriage program.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+
+    <xsd:attribute name="WilsonBaniso" type="xsd:string">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            Result of absolute likelihood based Wilson scaling, 
+            The anisotropic B value of the data is determined using a likelihood based approach. 
+            The resulting B tensor is reported, the 3 diagonal values are given first, followed
+            by the 3 off diagonal values.
+            A large spread in (especially the diagonal) values indicates anisotropy. 
+            Example: WilsonBaniso="[16.802,17.606,11.032,0.000,0.000,0.000]" 
+            X-ray entry specific, calculated by Phenix Xtriage program.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+    <!-- 40 chars -->
+
+    <xsd:attribute name="DataAnisotropy" type="xsd:decimal">
+       <xsd:annotation><xsd:documentation xml:lang="en">
+            The ratio (Bmax ‑ Bmin) / Bmean where Bmax, Bmin and Bmean are computed from the B-values 
+            associated with the principal axes of the anisotropic thermal ellipsoid. 
+            This ratio is usually less than 0.5; for only 1% of PDB entries it is more than 1.0 (Read et al., 2011).
+            Example: DataAnisotropy="0.434".
+            X-ray entry specific, obtained from the Xtriage program.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+
+    <xsd:attribute name="TransNCS" type="xsd:string">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            A sentence giving the result of Xtriage’s analysis on translational NCS.
+            Example: TransNCS="The largest off-origin peak in the Patterson function is 8.82% of the height of the origin peak. No significant pseudotranslation is detected."
+            X-ray entry specific, obtained from the Xtriage program.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+    <!-- 200 chars -->
+
+    <xsd:attribute name="TwinL" type="xsd:decimal">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            Padilla and Yeates twinning parameter &lt;|L|&gt;. 
+            Theoretical values is 0.5 in the untwinned case, and 0.375 in the perfectly twinned case.
+            Example: TwinL="0.495".
+            X-ray entry specific, obtained from the Xtriage program.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+
+    <xsd:attribute name="TwinL2" type="xsd:decimal">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            Padilla and Yeates twinning parameter &lt;|L**2|&gt;. 
+            Theoretical values is 0.333 in the untwinned case, and 0.2 in the perfectly twinned case.
+            Example: TwinL2="0.312".
+            X-ray entry specific, obtained from the Xtriage program.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+
+    <xsd:attribute name="TwinFraction" type="xsd:string">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            Estimated twinning fraction for operators as identified by Xtriage. A semicolon separated
+            list of operators with fractions is givens 
+            Example: TwinFraction="h,h-k,h-l:0.477;-h,-h+k,-l:0.020;-h,-k,-h+l:0.017".
+            X-ray entry specific, obtained from the Xtriage program.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+    <!-- unpredictable... 50 chars -->
+
+
+    <xsd:attribute name="B_factor_type" type="BfactorType">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            Whether the B factor is FULL or PARTIAL. Normally B factors are FULL.
+            Example: B_factor_type="FULL".
+            X-ray entry specific, obtained from the DCC program.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute> 
+    <!-- 10 chars -->
+
+    <xsd:attribute name="DataCompleteness" type="percentage">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            The number of expected diffraction spots is a function of data resolution and the space group. 
+            This metric describes the number of recorded reflections as a percentage of the number expected. 
+            Example: "DataCompleteness="95.71""
+            X-ray entry specific, obtained from the REFMAC program, during the EDS calculation.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute> 
+
+    <xsd:attribute name="DCC_R" type="xsd:decimal">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            The overall R-factor from a DCC recalculation of an electron density map.
+            Example: DCC_R="0.18".
+            Currently value is rounded to 2 decimal places.
+            X-ray entry specific, obtained from the DCC program.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute> 
+
+    <xsd:attribute name="DCC_Rfree" type="floatORunavailable">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            The free R-factor from a DCC recalculation of the electron density maps for the deposited
+            coordinates and structure factors.
+            Example: DCC_Rfree="0.19".
+            Currently value is rounded to 2 decimal places.
+            X-ray entry specific, obtained from the DCC program.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute> 
+
+    <xsd:attribute name="DCC_refinement_program" type="xsd:string">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            The program used by DCC to perform the recaluclation of the electron density maps.
+            Currently one of "CNS", "REFMAC" or "PHENIX".
+            Example: DCC_refinement_program="CNS".
+            X-ray entry specific, obtained from the DCC program.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute> 
+    <!-- 20 chars -->
+
+    <xsd:attribute name="num-free-reflections" type="xsd:integer">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            The number of reflections in the free set as defined in the input structure factor file supplied to the validation pipeline. 
+            example: num-free-reflections="1479".
+            X-ray entry specific, obtained from the DCC program.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute> 
+
+    <xsd:attribute name="percent-free-reflections" type="percentage">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            The percentage reflections in the free set as defined in the input structure factor file supplied to the validation pipeline. 
+            Example: percent-free-reflections="10.17".
+            X-ray entry specific, obtained from the DCC program.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute> 
+
+    <xsd:attribute name="RefmacVersion" type="xsd:string">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+           Version of the REFMAC program used in the EDS step.                               
+           Example: RefmacVersion="5.8.0135".
+           X-ray entry specific, obtained in the eds step from REFMAC calculation.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+    <!-- 10 chars -->
+
+    <xsd:attribute name="EDS_R" type="xsd:decimal">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            The overall R factor from the EDS REFMAC calculation (no free set is used in this).
+            Example: EDS_R="0.18".
+            Currently value is rounded to 2 decimal places.
+            X-ray entry specific, obtained in the eds step from REFMAC calculation.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute> 
+
+    <xsd:attribute name="EDS_resolution" type="xsd:decimal">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            The data high resolution diffraction limit, in Angstroms, found in the input structure factor file.
+            Example: EDS_resolution="1.80".
+            X-ray entry specific, obtained in the eds step.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute> 
+
+    <xsd:attribute name="EDS_resolution_low" type="xsd:decimal">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            The data low resolution diffraction limit, in Angstroms, found in the input structure factor file.
+            Example: EDS_resolution_low="14.93".
+            X-ray entry specific, obtained in the eds step.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute> 
+    <xsd:attribute name="Fo_Fc_correlation" type="xsd:decimal">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            Fo,Fc correlation: The difference between the observed structure factors (Fo) and the 
+            calculated structure factors (Fc) measures the correlation between the model and the i
+            experimental data. 
+            Example: EDS_resolution_low="14.93".
+            X-ray entry specific, obtained in the eds step from REFMAC calculation.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute> 
+
+    <xsd:attribute name="babinet_b" type="xsd:decimal">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            REFMAC scaling parameter as reported in log output line starting 'bulk solvent: scale'.
+            Example: babinet_b="141.456".
+            X-ray entry specific, obtained in the eds step from REFMAC calculation.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+
+    <xsd:attribute name="babinet_k" type="xsd:decimal">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            REFMAC scaling parameter as reported in log output line starting 'bulk solvent: scale'.
+            Example: babinet_k="0.156" 
+            X-ray entry specific, obtained in the eds step from REFMAC calculation.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+
+    <xsd:attribute name="bulk_solvent_b" type="xsd:decimal">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            REFMAC scaling parameter as reported in log output line starting 
+            'Partial structure    1: scale.'
+            Example: bulk_solvent_b="72.956" 
+            X-ray entry specific, obtained in the eds step from REFMAC calculation.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+
+    <xsd:attribute name="bulk_solvent_k" type="xsd:decimal">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            REFMAC scaling parameter as reported in log output line starting 
+            'Partial structure    1: scale.'
+            Example: bulk_solvent_k="0.401"
+            X-ray entry specific, obtained in the eds step from REFMAC calculation.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+
+    <xsd:attribute name="percent-RSRZ-outliers" type="percentage">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            The proportion of residues that are RSRZ outliers reported as a percentage.
+            An RSRZ outlier is a residue that has an RSRZ greater than 2.
+            For a description of the how RSRZ provides a measure of the fit between the model and electron 
+            density, see: https://wwpdb.org/validation/2016/XrayValidationReportHelp#fit_model_data.
+            Example: percent-RSRZ-outliers="3.88"
+            X-ray entry specific, obtained in the eds step from REFMAC calculated electron density map.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+
+
+    <!-- Entry NMR related attributes (start)-->
+    <xsd:attribute name="nmr_models_consistency_flag" type="xsd:string">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            A flag indicating if all models in the NMR ensemble contain the exact 
+            same atoms ("True") or if the models differ in this respect ("False").
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+    
+    <xsd:attribute name="cyrange_error" type="xsd:string">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            Diagnostic message from the wrapper of Cyrange software which identifies the 
+            well-defined cores (domains) of NMR protein structures.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+    
+    <xsd:attribute name="cyrange_version" type="xsd:string">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            Reference for the Cyrange software.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+    
+    <xsd:attribute name="nmrclust_error" type="xsd:string">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            Diagnostic message from the wrapper of NMRClust software which clusters NMR models.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+    
+    <xsd:attribute name="nmrclust_version" type="xsd:string">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            Reference for the NMRClust software.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+    
+    <xsd:attribute name="nmrclust_representative_model" type="xsd:integer">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            Overall representative model of the NMR ensemble as identified by NMRClust. 
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+    
+    <xsd:attribute name="medoid_model" type="xsd:integer">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            For each Cyrange well-defined core ("cyrange_domain") the id of the model which is most 
+            similar to other models as measured by pairwise RMSDs over the domain. 
+            For the whole entry ("Entry"), the medoid model of the largest core is taken as an overall
+            representative of the structure.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+    
+    <xsd:attribute name="nmrclust_number_of_outliers" type="xsd:integer">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            Number of models that do not belong to any cluster as deemed by NMRClust.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+    
+    <xsd:attribute name="nmrclust_number_of_models" type="xsd:integer">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            Number of models analysed by NMRClust - should in almost all cases be the
+            same as the number of models in the NMR ensemble.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+    
+    <xsd:attribute name="nmrclust_number_of_clusters" type="xsd:integer">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            Total number of clusters in the NMR ensemble identified by NMRClust.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+    
+    <xsd:attribute name="cyrange_number_of_domains" type="xsd:integer">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            Total number of well-defined cores (domains) identified by Cyrange
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+    
+    <xsd:attribute name="chemical_shift_completeness" type="xsd:decimal">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            Overall completeness of the chemical shift assignments for the well-defined 
+            regions of the structure.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+    
+    <xsd:attribute name="chemical_shift_completeness_full_length" type="xsd:decimal">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            Overall completeness of the chemical shift assignments for the full 
+            macromolecule or complex as suggested by the molecular description of an entry
+            (whether some portion of it is modelled or not).
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+    
+    <xsd:attribute name="panav_version" type="xsd:string">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            Reference for the PANAV software.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+    
+    <xsd:attribute name="rci_version" type="xsd:string">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            Version and reference of the RCI software
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+    
+    <xsd:attribute name="shiftchecker_version" type="xsd:string">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            Version of the software for chemical shift outlier detection - currently 
+            same as revision number of the validation pipeline.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+    <!-- Entry NMR related attributes (end)-->
+
+    <!-- Entry percentile related attributes: -->
+    <xsd:attribute name="percentilebins" type="xsd:string">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            The percentile bins that this structure would contribute to in a recalculation of
+            percentile. The string is a comma separated list.
+            Example: percentilebins="all,1.8,xray": An X-ray entry with a resolution of 1.8 Angstroms, 
+            that would contribute to bins all structures, what ever bin 1.8 Angstrom resolution is in and 
+            the all xray bin.
+            Example #2: percentilebins="all,em": An EM entry that would contribute to all and em structures bins.
+            Example #3: percentilebins="all,nmr": A NMR entry hat would contribute to all and nmr structures bins.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+    
+    <xsd:attribute name="no-percentile-property" type="xsd:boolean">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            Will be set to "true" if no property was found to do percentile analysis on. 
+            Please note that currently due to a bug that this attribute is "true" erronously for NMR structures.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute> 
+    
+    <xsd:attribute name="absolute-percentile-RNAsuiteness" type="percentile_rank">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            The "all" percentile rank for the property RNAsuiteness 
+            (the MolProbity conformer-match quality parameter for RNA structures).
+            The comparison will be to:
+            * For X-ray structures: the set of all structures determined by X-ray crystallography ...
+            * For NMR and EM structures: the set of all PDB structures 
+            ... deposited, up to the date included in the program name="percentiles" version, 
+            where the RNAsuiteness was successfully calculated.
+            Example: absolute-percentile-RNAsuiteness="99.7"
+            Specific to entries that contain RNA polymers (and have a RNAsuiteness attribute).
+            Produced by the percentiles step of the validation pipeline software.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+
+    <xsd:attribute name="numPDBids-absolute-percentile-RNAsuiteness" type="xsd:integer">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            The number of PDB depositions used in the comparison when calculating the attribute 
+            "absolute-percentile-RNAsuiteness".
+            Example: numPDBids-absolute-percentile-RNAsuiteness="2435".
+            Specific to entries that contain RNA polymers (and have a RNAsuiteness attribute).
+            Produced by the percentiles step of the validation pipeline software.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+
+    <xsd:attribute name="relative-percentile-RNAsuiteness" type="percentile_rank">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            The "relative" percentile rank for the property RNAsuiteness 
+            (the MolProbity conformer-match quality parameter for RNA structures).
+            The comparison will be to:
+            * For X-ray structures: the subset of structures structures determined by X-ray crystallography,
+              that have a similar resolution ("PDB-resolution") to this entry, ...
+            * For structures determined by NMR: the subset of structures determined by NMR ...  
+            * For structures determined by EM: the subset of structures determined by EM ...  
+            ... deposited up to the date included in the program name="percentiles" version and
+            where the RNAsuiteness was successfully calculated.
+            Example: absolute-percentile-RNAsuiteness="99.7"
+            Specific to entries that contain RNA polymers (and have a RNAsuiteness attribute).
+            Produced by the percentiles step of the validation pipeline software.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+
+    <xsd:attribute name="numPDBids-relative-percentile-RNAsuiteness" type="xsd:integer">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            The number of PDB depositions used in the comparison when calculating the attribute 
+            "relative-percentile-RNAsuiteness".
+            Example: numPDBids-absolute-percentile-RNAsuiteness="2435".
+            Specific to entries that contain RNA polymers (and have a RNAsuiteness attribute).
+            Produced by the percentiles step of the validation pipeline software.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+
+    <xsd:attribute name="low-resol-relative-percentile-RNAsuiteness" type="xsd:decimal">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            The resolution bin limit in Angstroms for PDB depositions used in the comparison when calculating 
+            the attribute "relative-percentile-RNAsuiteness". 
+            Note that the "low-resol-relative-percentile-RNAsuiteness" value is numerically greater than the 
+            corresponding high value.
+            Example: low-resol-relative-percentile-RNAsuiteness="2.6".
+            Specific to entries that contain RNA polymers (and have a RNAsuiteness attribute),
+            and have been determined by X-ray crystallography.
+            Produced by the percentiles step of the validation pipeline software.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+
+    <xsd:attribute name="high-resol-relative-percentile-RNAsuiteness" type="xsd:decimal">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            The resolution bin limit in Angstroms for PDB depositions used in the comparison when calculating 
+            the attribute "relative-percentile-RNAsuiteness". 
+            Note that the "high-resol-relative-percentile-RNAsuiteness" value is numerically smaller than the 
+            corresponding low value.
+            Example: high-resol-relative-percentile-RNAsuiteness="2.6".
+            Specific to entries that contain RNA polymers (and have a RNAsuiteness attribute),
+            and have been determined by X-ray crystallography.
+            Produced by the percentiles step of the validation pipeline software.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+
+    <xsd:attribute name="absolute-percentile-clashscore" type="percentile_rank">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            The "all" percentile rank for the property clashscore 
+            (the MolProbity all-atom too-close contacts parameter).
+            The comparison will be to:
+            * For X-ray structures: the set of all structures determined by X-ray crystallography ...
+            * For NMR and EM structures: the set of all PDB structures 
+            ... deposited, up to the date included in the program name="percentiles" version, 
+            where the clashscore was successfully calculated.
+            Example: absolute-percentile-clashscore="71.6"
+            Only calculated if clashscore is available.
+            Produced by the percentiles step of the validation pipeline software.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+
+    <xsd:attribute name="numPDBids-absolute-percentile-clashscore" type="xsd:integer">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            The number of PDB depositions used in the comparison when calculating the attribute 
+            "absolute-percentile-clashscore"
+            Example:  numPDBids-absolute-percentile-clashscore="112137"
+            Produced by the percentiles step of the validation pipeline software.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+
+    <xsd:attribute name="relative-percentile-clashscore" type="percentile_rank">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            The "relative" percentile rank for the property clashscore
+            (the MolProbity all-atom too-close contacts parameter).
+            The comparison will be to:
+            * For X-ray structures: the subset of structures structures determined by X-ray crystallography,
+              that have a similar resolution ("PDB-resolution") to this entry, ...
+            * For structures determined by NMR: the subset of structures determined by NMR ...  
+            * For structures determined by EM: the subset of structures determined by EM ...  
+            ... deposited up to the date included in the program name="percentiles" version and
+            where the clashscore was successfully calculated.
+            Example: relative-percentile-clashscore="64.4"
+            Only calculated if clashscore is available.
+            Produced by the percentiles step of the validation pipeline software.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+
+    <xsd:attribute name="numPDBids-relative-percentile-clashscore" type="xsd:integer">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+             The number of PDB depositions used in the comparison when calculating the attribute 
+            "relative-percentile-clashscore"
+            Example: numPDBids-relative-percentile-clashscore="5742".
+            Produced by the percentiles step of the validation pipeline software.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+
+    <xsd:attribute name="low-resol-relative-percentile-clashscore" type="xsd:decimal">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            The resolution bin limit in Angstroms for PDB depositions used in the comparison when calculating 
+            the attribute "relative-percentile-clashscore". 
+            Note that the "low-resol-relative-percentile-clashscore" value is numerically greater than the 
+            corresponding high value.
+            Example: low-resol-relative-percentile-clashscore="1.8".
+            Specific to that have a clashscore attribute and have been determined by X-ray crystallography.
+            Produced by the percentiles step of the validation pipeline software.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+
+    <xsd:attribute name="high-resol-relative-percentile-clashscore" type="xsd:decimal">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            The resolution bin limit in Angstroms for PDB depositions used in the comparison when calculating 
+            the attribute "relative-percentile-clashscore". 
+            Note that the "high-resol-relative-percentile-clashscore" value is numerically smaller than the 
+            corresponding low value.
+            Example: high-resol-relative-percentile-clashscore="1.8".
+            Specific to that have a clashscore attribute and have been determined by X-ray crystallography.
+            Produced by the percentiles step of the validation pipeline software.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+
+    <xsd:attribute name="absolute-percentile-percent-rama-outliers" type="percentile_rank">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+           The "all" percentile rank for the property percent-rama-outliers
+            (the MolProbity Ramachandran outlier score).
+            The comparison will be to:
+            * For X-ray structures: the set of all structures determined by X-ray crystallography ...
+            * For NMR and EM structures: the set of all PDB structures
+            ... deposited, up to the date included in the program name="percentiles" version,
+            where the percent-rama-outliers was successfully calculated.
+            Example: absolute-percentile-percent-rama-outliers="100.0"
+            Produced by the percentiles step of the validation pipeline software.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+
+    <xsd:attribute name="numPDBids-absolute-percentile-percent-rama-outliers" type="xsd:integer">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            The number of PDB depositions used in the comparison when calculating the attribute 
+            "absolute-percentile-percent-rama-outliers" 
+            Example: numPDBids-absolute-percentile-percent-rama-outliers="110173".
+            Produced by the percentiles step of the validation pipeline software.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+
+    <xsd:attribute name="relative-percentile-percent-rama-outliers" type="percentile_rank">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            The "relative" percentile rank for the property percent-rama-outliers
+            (the MolProbity Ramachandran outlier score).
+            The comparison will be to:
+            * For X-ray structures: the subset of structures structures determined by X-ray crystallography,
+              that have a similar resolution ("PDB-resolution") to this entry, ...
+            * For structures determined by NMR: the subset of structures determined by NMR ...  
+            * For structures determined by EM: the subset of structures determined by EM ...  
+            ... deposited up to the date included in the program name="percentiles" version and
+            where the percent-rama-outliers was successfully calculated.
+            Example: relative-percentile-percent-rama-outliers="100.0".
+            Produced by the percentiles step of the validation pipeline software.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+
+    <xsd:attribute name="numPDBids-relative-percentile-percent-rama-outliers" type="xsd:integer">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            The number of PDB depositions used in the comparison when calculating the attribute 
+            "relative-percentile-percent-rama-outliers"
+            Example: numPDBids-relative-percentile-percent-rama-outliers="5676".
+            Produced by the percentiles step of the validation pipeline software.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+
+    <xsd:attribute name="low-resol-relative-percentile-percent-rama-outliers" type="xsd:decimal">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            The resolution bin limit in Angstroms for PDB depositions used in the comparison when calculating 
+            the attribute "relative-percentile-percent-rama-outliers". 
+            Note that the "low-resol-relative-percentile-percent-rama-outliers" value is numerically greater than the 
+            corresponding high value.
+            Example: low-resol-relative-percentile-percent-rama-outliers="1.8".
+            Specific to that have a percent-rama-outliers attribute and have been determined by X-ray crystallography.
+            Produced by the percentiles step of the validation pipeline software.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+
+    <xsd:attribute name="high-resol-relative-percentile-percent-rama-outliers" type="xsd:decimal">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            The resolution bin limit in Angstroms for PDB depositions used in the comparison when calculating 
+            the attribute "relative-percentile-percent-rama-outliers". 
+            Note that the "high-resol-relative-percentile-percent-rama-outliers" value is numerically smaller than the 
+            corresponding low value.
+            Example: high-resol-relative-percentile-percent-rama-outliers="1.8".
+            Specific to structures that have a percent-rama-outliers attribute and have been determined by X-ray crystallography.
+            Produced by the percentiles step of the validation pipeline software.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+
+    <xsd:attribute name="absolute-percentile-percent-rota-outliers" type="percentile_rank">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            The "all" percentile rank for the property percent-rota-outliers 
+            (the MolProbity sidechain outlier score).
+            The comparison will be to:
+            * For X-ray structures: the set of all structures determined by X-ray crystallography ...
+            * For NMR and EM structures: the set of all PDB structures 
+            ... deposited, up to the date included in the program name="percentiles" version, 
+            where the percent-rota-outliers was successfully calculated.
+            Example: absolute-percentile-percent-rota-outliers="54.2"
+            Only calculated if percent-rota-outliers is available.
+            Produced by the percentiles step of the validation pipeline software.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+
+    <xsd:attribute name="numPDBids-absolute-percentile-percent-rota-outliers" type="xsd:integer">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            The number of PDB depositions used in the comparison when calculating the attribute
+            "absolute-percentile-percent-rota-outliers"
+            Example:  numPDBids-absolute-percentile-percent-rota-outliers="112137"
+            Produced by the percentiles step of the validation pipeline software.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+
+    <xsd:attribute name="relative-percentile-percent-rota-outliers" type="percentile_rank">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            The "relative" percentile rank for the property percent-rota-outliers
+            (the MolProbity sidechain outlier score).
+            The comparison will be to:
+            * For X-ray structures: the subset of structures structures determined by X-ray crystallography,
+              that have a similar resolution ("PDB-resolution") to this entry, ...
+            * For structures determined by NMR: the subset of structures determined by NMR ...
+            * For structures determined by EM: the subset of structures determined by EM ...
+            ... deposited up to the date included in the program name="percentiles" version and
+            where the percent-rota-outliers was successfully calculated.
+            Example: relative-percentile-percent-rota-outliers="64.4"
+            Only calculated if percent-rota-outliers is available.
+            Produced by the percentiles step of the validation pipeline software.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+
+    <xsd:attribute name="numPDBids-relative-percentile-percent-rota-outliers" type="xsd:integer">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+             The number of PDB depositions used in the comparison when calculating the attribute 
+            "relative-percentile-percent-rota-outliers"
+            Example: numPDBids-relative-percentile-percent-rota-outliers="5742".
+            Produced by the percentiles step of the validation pipeline software.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+
+    <xsd:attribute name="low-resol-relative-percentile-percent-rota-outliers" type="xsd:decimal">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            The resolution bin limit in Angstroms for PDB depositions used in the comparison when calculating 
+            the attribute "relative-percentile-percent-rota-outliers". 
+            Note that the "low-resol-relative-percentile-percent-rota-outliers" value is numerically greater than the 
+            corresponding high value.
+            Example: low-resol-relative-percentile-percent-rota-outliers="1.8".
+            Specific to that have a percent-rota-outliers attribute and have been determined by X-ray crystallography.
+            Produced by the percentiles step of the validation pipeline software.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+
+    <xsd:attribute name="high-resol-relative-percentile-percent-rota-outliers" type="xsd:decimal">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            The resolution bin limit in Angstroms for PDB depositions used in the comparison when calculating 
+            the attribute "relative-percentile-percent-rota-outliers". 
+            Note that the "high-resol-relative-percentile-percent-rota-outliers" value is numerically smaller than the 
+            corresponding low value.
+            Example: high-resol-relative-percentile-percent-rota-outliers="1.8".
+            Specific to that have a percent-rota-outliers attribute and have been determined by X-ray crystallography.
+            Produced by the percentiles step of the validation pipeline software.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+
+    <xsd:attribute name="absolute-percentile-DCC_Rfree" type="percentile_rank">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            The "all" percentile rank for the property DCC_Rfree (the free R-factor from a DCC recalculation 
+            of the electron density maps for the deposited coordinates and structure factors).
+            The comparison will be to the set of all structures determined by X-ray crystallography
+            deposited, up to the date included in the program name="percentiles" version, 
+            where the DCC_Rfree was successfully calculated.
+            Example: absolute-percentile-DCC_Rfree="90.6".
+            X-ray entry specific, produced by the percentiles step of the validation pipeline software.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+
+    <xsd:attribute name="numPDBids-absolute-percentile-DCC_Rfree" type="xsd:integer">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            The number of PDB depositions used in the comparison when calculating the attribute 
+            "absolute-percentile-DCC_Rfree".
+            Example: numPDBids-absolute-percentile-DCC_Rfree="100719". 
+            X-ray entry specific, produced by the percentiles step of the validation pipeline software.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+
+    <xsd:attribute name="relative-percentile-DCC_Rfree" type="percentile_rank">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            The "similar" percentile rank for the property DCC_Rfree (the free R-factor from a DCC recalculation 
+            of the electron density maps for the deposited coordinates and structure factors).
+            The comparison will be to the subset of structures determined by X-ray crystallography
+            deposited, up to the date included in the program name="percentiles" version, 
+            where the DCC_Rfree was successfully calculated that have a similar resolution ("PDB-resolution").
+            Example: relative-percentile-DCC_Rfree="92.9".
+            X-ray entry specific, produced by the percentiles step of the validation pipeline software.
+       </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+
+    <xsd:attribute name="numPDBids-relative-percentile-DCC_Rfree" type="xsd:integer">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            The number of PDB depositions used in the comparison when calculating the attribute 
+            "relative-percentile-DCC_Rfree".
+            Example: numPDBids-relative-percentile-DCC_Rfree="4827". 
+            X-ray entry specific, produced by the percentiles step of the validation pipeline software.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+    <xsd:attribute name="low-resol-relative-percentile-DCC_Rfree" type="xsd:decimal">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            The resolution bin limit in Angstroms for PDB depositions used in the comparison when calculating 
+            the attribute "relative-percentile-DCC_Rfree". 
+            Note that the "low-resol-relative-percentile-DCC_Rfree" value is numerically greater than the 
+            corresponding high value.
+            Example: low-resol-relative-percentile-DCC_Rfree="10.0"
+            X-ray entry specific, produced by the percentiles step of the validation pipeline software.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+
+    <xsd:attribute name="high-resol-relative-percentile-DCC_Rfree" type="xsd:decimal">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            The resolution bin limit in Angstroms for PDB depositions used in the comparison when calculating 
+            the attribute "relative-percentile-DCC_Rfree". 
+            Note that the "high-resol-relative-percentile-DCC_Rfree" value is numerically smaller than the 
+            corresponding low-* value.
+            Example: high-resol-relative-percentile-DCC_Rfree="3.7"
+            X-ray entry specific, produced by the percentiles step of the validation pipeline software.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+
+    <xsd:attribute name="absolute-percentile-percent-RSRZ-outliers" type="percentile_rank">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            The "all" percentile rank for the property percent-RSRZ-outliers 
+            (The proportion of residues that are RSRZ outliers reported as a percentage).
+            The comparison will be to the set of all structures determined by X-ray crystallography
+            deposited, up to the date included in the program name="percentiles" version, 
+            where the percent-RSRZ-outliers was successfully calculated.
+            Example: absolute_RSRZ_percentile="83.82"
+            N.B. this is the chain/model equivalent of the overall (all chain) category "absolute-percentile-percent-RSRZ-outliers"
+            X-ray entry specific, produced by the percentiles step of the validation pipeline software.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+
+    <xsd:attribute name="numPDBids-absolute-percentile-percent-RSRZ-outliers" type="xsd:integer">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            The number of PDB depositions used in the comparison when calculating the attribute 
+            "absolute-percentile-percent-RSRZ-outliers".
+            Example: numPDBids-absolute-percentile-percent-RSRZ-outliers="101464".
+            X-ray entry specific, produced by the percentiles step of the validation pipeline software.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+
+    <xsd:attribute name="relative-percentile-percent-RSRZ-outliers" type="percentile_rank">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            The "similar" percentile rank for the property percent-RSRZ-outliers
+            (The proportion of residues that are RSRZ outliers reported as a percentage).
+            The comparison will be to the subset of structures determined by X-ray crystallography
+            deposited, up to the date included in the program name="percentiles" version, 
+            where the percent-RSRZ-outliers was successfully calculated that have a similar resolution ("PDB-resolution").
+            Example: relative-percentile-percent-RSRZ-outliers="100.0".
+            X-ray entry specific, produced by the percentiles step of the validation pipeline software.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+
+    <xsd:attribute name="numPDBids-relative-percentile-percent-RSRZ-outliers" type="xsd:integer">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            The number of PDB depositions used in the comparison when calculating the attribute 
+            "relative-percentile-percent-RSRZ-outliers".
+            Example: numPDBids-relative-percentile-percent-RSRZ-outliers="4906"
+            X-ray entry specific, produced by the percentiles step of the validation pipeline software.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+
+    <xsd:attribute name="low-resol-relative-percentile-percent-RSRZ-outliers" type="xsd:decimal">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            The resolution bin limit in Angstroms for PDB depositions used in the comparison when calculating 
+            the attribute "relative-percentile-percent-RSRZ-outliers". 
+            Note that the "low-resol-relative-percentile-percent-RSRZ-outliers" value is numerically greater than the 
+            corresponding high value.
+            Example: low-resol-relative-percentile-percent-RSRZ-outliers="1.8".
+            X-ray entry specific, produced by the percentiles step of the validation pipeline software.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+
+    <xsd:attribute name="high-resol-relative-percentile-percent-RSRZ-outliers" type="xsd:decimal">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            The resolution bin limit in Angstroms for PDB depositions used in the comparison when calculating 
+            the attribute "relative-percentile-percent-RSRZ-outliers". 
+            Note that the "high-resol-relative-percentile-percent-RSRZ-outliers" value is numerically smaller than the 
+            corresponding low-* value.
+            Example: high-resol-relative-percentile-percent-RSRZ-outliers="1.8".
+            X-ray entry specific, produced by the percentiles step of the validation pipeline software.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+    <!-- Entry percentile related attributes (end) -->
+
+    <!-- NMR chemical shift attibutes -->
+    <xsd:attribute name="value" type="xsd:decimal">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            Value in ppm of a chemical shift
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+
+    <xsd:attribute name="error" type="xsd:string">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            Uncertainty on a chemical shift value - usually not available
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+
+    <xsd:attribute name="ambiguity" type="xsd:string">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            Ambiguity of the chemical shift assignment as per NMR-STAR V3.1 dictionary.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+
+    <xsd:attribute name="diagnostic" type="xsd:string">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            Diagnostic text message when a chemical shift was not parsed or not mapped to structure.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+
+    <xsd:attribute name="number_of_assigned_shifts" type="xsd:integer">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            Number of typically assigned nuclei of a given "type" (e.g., backbone) and 
+            "element" (13C) in the structure that have a chemical shift assignment.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+
+    <xsd:attribute name="number_of_unassigned_shifts" type="xsd:integer">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            Number of typically assigned nuclei of a given "type" (e.g., backbone) and 
+            "element" (13C)in the structure that lack a chemical shift assignment
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+
+    <xsd:attribute name="number_of_shifts" type="xsd:integer">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            Total number of typically assigned nuclei of a given "type" (e.g., backbone) and 
+            "element" (13C)in the structure irrespective of assignment.
+            It should be a sum of "number_of_unassigned_shifts" and "number_of_assigned_shifts" 
+            for the same type and element.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+
+    <xsd:attribute name="element" type="xsd:string">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            The chemical element (isotope) for which the assignment completeness is calculated.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+    <!-- NMR chemical shift child element attibutes (end) -->
+
+    <!-- NMR chemical shift direct attibutes -->
+    <xsd:attribute name="file_id" type="xsd:integer">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            An integer identifier of a chemical shifts file.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+    
+    <xsd:attribute name="file_name" type="xsd:string">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            The name of the chemical shifts file supplied to the validation pipeline.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+    
+    <xsd:attribute name="block_name" type="xsd:string">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            Label of the section that actually contains chemical shifts.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+    
+    <xsd:attribute name="list_id" type="xsd:string">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            Identifier of the chemical shift list in the file.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+    
+    <xsd:attribute name="type" type="xsd:string">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            A flag indicating if the chemical shift list contains all the required data items
+            i.e., NMR-STAR 3.1 tags ("full") or if any data items are missing ("partial").
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+    
+    <xsd:attribute name="number_of_errors_while_mapping" type="xsd:integer">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            Number of chemical shifts that could not be mapped to structure.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+    
+    <xsd:attribute name="number_of_warnings_while_mapping" type="xsd:integer">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            Currently not used. Reserved for ambiguous mappings.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+    
+    <xsd:attribute name="number_of_mapped_shifts" type="xsd:integer">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            Number of chemical shifts successfully mapped to the structure.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+    
+    <xsd:attribute name="number_of_parsed_shifts" type="xsd:integer">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            Number of chemical shifts successfully parsed.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+    
+    <xsd:attribute name="total_number_of_shifts" type="xsd:integer">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            Total number of records in the chemical shift list.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+    
+    <xsd:attribute name="number_of_unparsed_shifts" type="xsd:integer">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            Number of chemical shifts that could not be parsed.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+    <!-- NMR chemical shift direct attibutes (end) -->
+
+    
+    <xsd:attribute name="atom" type="atom_name">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            An atom name from cif item _atom_site.label_atom_id and _chem_comp_atom.atom_id.
+            Currently limited to 4 characters.
+            Example: atom="NE2"
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+
+    <xsd:attribute name="atom0" type="atom_name">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            An atom name for the first atom in a bond or angle outlier.
+            Atom names are from cif item _atom_site.label_atom_id and _chem_comp_atom.atom_id.
+            Currently limited to 4 characters.
+            Example: atom="NE2"
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+
+    <xsd:attribute name="atom1" type="atom_name">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            An atom name for the second atom in a bond or angle outlier.
+            Atom names are from cif item _atom_site.label_atom_id and _chem_comp_atom.atom_id.
+            Currently limited to 4 characters.
+            Example: atom="CE2"
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+
+    <xsd:attribute name="atom2" type="atom_name">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            An atom name for third atom in an angle outlier.
+            Atom names are from cif item _atom_site.label_atom_id and _chem_comp_atom.atom_id.
+            Currently limited to 4 characters.
+            Example: atom="NE2"
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+    
+    <xsd:attribute name="atoms" type="xsd:string">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            A comma seperated list of atom names.
+            Example: atoms="O5,C1,C2"
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+
+    <xsd:attribute name="obs" type="xsd:decimal">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            The observed value for the bond length or bond angle, 
+            that is the value found in the structure being analyzed for the atoms involved.
+            Units depend on the parameter being analyzed.
+            Example: obsval="126.83"
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+
+    <xsd:attribute name="obsval" type="xsd:decimal">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            The observed value for the bond length or bond angle or torsion angle, 
+            that is the value found in the structure being analyzed for the atoms involved.
+            Units depend on the parameter being analyzed.
+            Example: obsval="126.83"
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+
+    <xsd:attribute name="mean" type="xsd:decimal">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+             The "ideal" value of the bond length or bond angle or torsion angle.
+             Source is mean value from Engh and Huber EH99 parameters, Parkinson et al. parameter set or Mogul analysis 
+             of CSD structures that have a similar local chemistry.
+             Units depend on the parameter being analyzed.
+              Example: mean="124.51"
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+
+    <xsd:attribute name="stdev" type="xsd:decimal">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+             The standard deviation for the bond length or bond angle or torsion angle.
+             Source is standard deviation found from Engh and Huber EH99 parameters, Parkinson et al. parameter set 
+             or Mogul analysis of CSD structures that have a similar local chemistry.
+             Units depend on the parameter being analyzed.
+             Example: stdev="1.12"
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+
+    <xsd:attribute name="numobs" type="xsd:integer">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            The number of observations found for bond length or bond angle or torsion angle in the Mogul analysis.
+            Example: numobs="87" 
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+
+    <xsd:attribute name="Zscore" type="xsd:decimal">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            The Zscore of the deviation of the bond length or bond angle in the model compared to Mogul expected values
+            and standard deviation.
+            A Z score is generally defined as the difference between an observed value an expected or average value,
+            divided by the standard deviations of the latter.
+            Units depend on the parameter being analyzed.
+            Example: Zscore="-2.40"
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+
+    <xsd:attribute name="zscore" type="xsd:decimal">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            The Zscore of the deviation of the bond length or bond angle in the model compared to Mogul expected values
+            and standard deviation.
+            A Z score is generally defined as the difference between an observed value an expected or average value,
+            divided by the standard deviations of the latter.
+            Units depend on the parameter being analyzed.
+            Example: Zscore="-2.40"
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+
+    <xsd:attribute name="z" type="xsd:decimal">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            The Zscore of the deviation of the bond length or bond angle in the model compared to ideal values.
+            A Z score is generally defined as the difference between an observed value an expected or average value,
+            divided by the standard deviations of the latter.
+            Units depend on the parameter being analyzed.
+            Example: z="7.27"
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+
+    <xsd:attribute name="mindiff" type="xsd:decimal">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            The difference to the nearest value of the bond length or bond angle or torsion angle found in 
+            the Mogul analysis.
+            Units depend on the parameter being analyzed.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+
+    <xsd:attribute name="link" type="YesString">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            The bond or bond angle involves one or atom that is in another residue.
+            Example: link="yes"
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+ 
+    <xsd:attribute name="dist" type="xsd:decimal">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            The distance in Angstroms between two atoms involved a clash.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+
+    <!-- common residue specifier attributes? (start)-->
+    <xsd:attribute name="chain" type="xsd:string"> 
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            The chain identifier for the residue or chain obtained from cif item _atom_site.auth_asym_id.
+            Currently this is limited to 5 characters. 
+            Example: chain="A"
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+
+    <xsd:attribute name="resnum" type="xsd:integer">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            The residue number aka sequence id for a residue. 
+            Obtainned from _atom_site.auth_seq_id 
+            Example: resnum="8"
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+
+    <xsd:attribute name="rescode" type="xsd:string">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            The "residue type", this is the name of the chemical component from the PDB chemical component dictionary.
+            Obtained from _atom_site.auth_comp_id
+            Example rescode="GLY"
+            (Only used in NMR specific definitions same as "resname".)
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+
+    <xsd:attribute name="resname" type="xsd:string"> <!-- 5 chars -->
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            The "residue type", this is the name of the chemical component from the PDB chemical component dictionary.
+            Obtained from _atom_site.auth_comp_id
+            Example resname="GLY"
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+
+    <xsd:attribute name="model" type="xsd:string"> 
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            Model identifier. Normally an integer but can be a string of up to 10 characters 
+            If the structure does not have multiple models then model will be "1".
+            Example: model="1".
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+
+    <xsd:attribute name="altcode" type="xsd:string">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            This attribute will be set if the ModelledSubgroup has atoms with the alternate position indicator set.
+            Normally one character but can be up to 3.  Example altcode="A"
+            Obtained from _atom_site.label_alt_id 
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+
+    <xsd:attribute name="icode" type="xsd:string"> <!-- 3 chars -->
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            Insertion code for residue from _atom_site.pdbx_PDB_ins_code 
+            Example: icode=" "
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+
+    <xsd:attribute name="ent" type="xsd:string"> <!-- 5 chars -->
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            The entity id for the residue or chain. This is from item _atom_site.label_entity_id that is a pointer to _entity.id in the ENTITY category. 
+            Example: ent="3".
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+    <!-- common residue specifier attributes? (end)-->
+
+    <!-- ModelledSubgroup attributes (start)-->
+    <xsd:attribute name="said" type="xsd:string"> <!-- 5 chars -->
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            The_atom_site.label_asym_id label for the residue.  Normally this is the same as the chain.
+            Example: said="A"
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+
+    <xsd:attribute name="seq" type="xsd:string"> <!-- 10 chars -->
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            From cif item _atom_site.label_seq_id "a pointer to _entity_poly_seq.num"
+            Example: seq="20" for a residue in a polymer
+            Example: seq="." for a non-polymeric residue eg ligand or water.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+
+     <xsd:attribute name="ligand_clashes_outlier" type="YesString"> 
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            If the residue is a ligand and involved in clashes this will be set to yes:
+            Example: ligand_clashes_outlier="yes".
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+   
+    <xsd:attribute name="ligand_num_clashes" type="xsd:integer">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            If the residue is a ligand and involved in clashes then this will be the number of 
+            MolProbity All-atom clashes for the subgroup.
+            Example: ligand_num_clashes="7" l
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+
+    <xsd:attribute name="ligand_num_symm_clashes" type="xsd:integer">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            If the residue is a ligand and involved in clashes then this will be the number of 
+            symmetry related ("symm-clash") clashes identified by Validation-pack
+            Example: ligand_num_symm_clashes="1"
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+
+    <xsd:attribute name="ligand_chirality_outlier" type="YesString"> 
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            Will be set to "yes" if the residue is a ligand and has a chiral atom problem compared to 
+            the PDB chemical component definition.
+            Example: ligand_chirality_outlier="yes".
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+
+    <xsd:attribute name="cis_peptide" type="YesString">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            This residue is linked to the next residue by a peptide bond that has a cis rather than trans
+            conformation. 
+            Example: cis_peptide="yes"
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+
+    <xsd:attribute name="NatomsEDS" type="xsd:integer">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            The number atoms in the residue that the EDS software returns.
+            X-ray specific produce by the EDS step.
+            Example NatomsEDS="8".
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+
+    <xsd:attribute name="cyrange_domain_id" type="xsd:integer">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            Identifier of the well-defined core (domain) to which the residue belongs, 
+            as determined by Cyrange.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+
+    <xsd:attribute name="validate" type="xsd:string">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            A flag for NMR entries to indicate if a residue should be included in calculating the 
+            overall entry scores ("True") or if it should be excluded from such calculations ("False").
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+
+    <xsd:attribute name="rsr" type="xsd:decimal">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            Real Space R-value (RSR) for the residue from the EDS generated map.
+            Example: rsr="0.106"
+            X-ray specific produce by the EDS step.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+
+    <xsd:attribute name="rscc" type="xsd:decimal">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+			The real space correlation coefficient for the instance. This is an alternative to RSR for assessing how well
+            the residue's calculated electron density map matches the EDS electron density map calculated from the
+            experimental diffraction data. A value above 0.95 normally indicates a very
+            good fit. RSCC around 0.90 are generally OK. A poor fit results in a value around or below 0.80.
+            Example: rscc="0.950"
+            X-ray specific produce by the EDS step.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+
+    <xsd:attribute name="rsrz" type="xsd:decimal">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            RSR Z-score (RSRZ) is a normalisation of RSR specific to a residue type and a resolution bin. 
+            RSRZ is calculated only for standard amino acids and nucleotides in protein, DNA and RNA chains. 
+            A residue is considered an RSRZ outlier if its RSRZ value is greater than 2.
+            Example: rsrz="-0.453"
+            X-ray specific produce by the EDS step.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+
+    <xsd:attribute name="owab" type="xsd:decimal">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            The Occupancy-Weighted Average B (OWAB) value per residue (in units Angstroms squared). 
+            This value is calculated by multiplying the B factor for each atom in the residue by its occupancy and 
+            then averaging this value over all atoms in the residue.
+            Example: owab="31.210"
+            X-ray specific produce by the EDS step.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+
+    <xsd:attribute name="avgoccu" type="xsd:decimal">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            The average occupancy for the residue. Hydrogen atoms are excluded from consideration.
+            Example: avgoccu="1.000"
+            X-ray specific produce by the EDS step.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+
+    <xsd:attribute name="ligRSRZ" type="xsd:decimal">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            This is the Local Ligand Density Fit (LLDF) for a ligand. LLDF compares the RSR of the non-standard residue 
+            to the mean and standard deviation of RSR for the neighbouring polymeric standard amino acids or nucleotides.
+            Neighbouring polymeric residues are identified, as any standard amino acid or nucleotide that lies within 
+            5.0 Angstrom distance of the ligand or non standard residue, using the NCONT program from CCP4. 
+            The mean and standard deviation of RSR values is then calculated for these neighbouring residues and 
+            this is compared to the RSR value of the non-standard residue to calculate a Z-score. 
+            If there are less than two neighbouring residues within 5.0 Å of the instance then LLDF cannot be calculated.  
+            Example: ligRSRZ="1.24"
+            X-ray specific produce by the EDS step.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+
+    <xsd:attribute name="lig_rsrz_nbr_id" type="xsd:string">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            A unique integer key for each LLDF calculation identifying the neighbouring polymeric residues for the residue
+            identified as being with 5.0 Angstrom distance of the ligand or non standard residue. 
+            If a residue is involved in two or more LLDF calculations then there will be a comma separated list.
+            Example: lig_rsrz_nbr_id="1"
+            Example: lig_rsrz_nbr_id="1,2"
+            X-ray specific produce by the EDS step.
+       </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+
+    <xsd:attribute name="ligRSRnbrMean" type="xsd:decimal">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            LLDF calculation: the mean RSR value for the residues within 5.0 Angstrom distance of the ligand. 
+            Currently the value is rounded to two decimal places so it would not be possible to actually use it practially.
+            Example: ligRSRnbrMean="0.08" 
+            X-ray specific produce by the EDS step.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+
+    <xsd:attribute name="ligRSRnbrStdev" type="xsd:decimal">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            LLDF calculation: the mean RSR value for the residues within 5.0 Angstrom distance of the ligand. 
+            Currently the value is rounded to two decimal places so it would not be possible to actually use it practially.
+            Example: ligRSRnbrStdev="0.01"
+            X-ray specific produce by the EDS step.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+
+    <xsd:attribute name="ligRSRnumnbrs" type="xsd:integer">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            LLDF calculation: the number of residues identified within 5.0 Angstrom distance of the ligand used in the calculation
+            Example: ligRSRnumnbrs="23"
+            X-ray specific produce by the EDS step.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+
+    <xsd:attribute name="rama"> <!-- 10 chars -->
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            MolProbity Ramachandran plot classification for this residue one of "Favored", "Allowed" or "OUTLIER".
+            Example: rama="Favored"
+            Protein and polypeptide specific produced by the molprobity step.
+        </xsd:documentation></xsd:annotation>
+        <xsd:simpleType>
+            <xsd:restriction base="xsd:string">
+                <xsd:enumeration value="Favored"/> 
+                <xsd:enumeration value="Allowed"/>
+                <xsd:enumeration value="OUTLIER"/>
+            </xsd:restriction>
+        </xsd:simpleType>
+    </xsd:attribute>
+
+    <xsd:attribute name="phi" type="xsd:decimal">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            The phi torsion angle for the residue in degrees. 
+            Example: phi="-131.0".
+            Protein and polypeptide specific produced by the molprobity step.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+
+    <xsd:attribute name="psi" type="xsd:decimal">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            The psi torsion angle for the residue in degrees. 
+            Example: psi="151.6".
+            Protein and polypeptide specific produced by the molprobity step.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+
+    <xsd:attribute name="rota" type="xsd:string"> <!-- 10 chars -->
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            For proteins the MolProbity classification of the side conformation from the chi dihedral angles.
+            For proline the ring pucker is classified as "Cg_endo", "Cg_exo" or "OUTLIER"
+            Examples of common observed classifications:
+                rota="mt"
+                rota="t"
+                rota="OUTLIER"
+                rota="m"
+                rota="p"
+                rota="m-20"
+                rota="m-85"
+                rota="tp"
+                rota="t80"
+                rota="mt-10"
+                rota="Cg_endo"
+                rota="Cg_exo"
+            Protein and polypeptide specific produced by the molprobity step.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+
+    <xsd:attribute name="flippable-sidechain"> 
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            MolProbity identifies side chains of asparagine, glutamine and histidine that can be be rotated ("flipped") 
+            to make optimal hydrogen bonds, improving its contacts with its neighbours, without affecting their fit to 
+            the experimental electron density.
+            These residues will have flippable-sidechain="1".
+            Protein and polypeptide specific produced by the molprobity step.
+        </xsd:documentation></xsd:annotation>
+        <xsd:simpleType>
+            <xsd:restriction base="xsd:string">
+                <xsd:enumeration value="1"/> 
+            </xsd:restriction>
+        </xsd:simpleType>
+    </xsd:attribute>
+
+    <xsd:attribute name="RNAscore" type="xsd:decimal">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            MolProbity RNA match quality parameter "suiteness". 
+            The suiteness is a measure of how well the detailed local backbone conformation fits one of the most 
+            commonly observed (and thus presumably most favorable) conformational clusters. 
+            Varies between 1.0 meaning a good match to a commonly observed cluster to 0.0 meaning an outlier.
+            Example: RNAscore="0.84"
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+
+    <xsd:attribute name="RNAsuite"> <!-- 15 chars -->
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            MolProbity RNAsuite conformation analysis.
+            RNA specific produced by the molprobity step.
+        </xsd:documentation></xsd:annotation>
+        <xsd:simpleType>
+            <xsd:restriction base="xsd:string">
+                <xsd:enumeration value="NonRotameric"/> 
+                <xsd:enumeration value="NotAvailable"/>
+                <xsd:enumeration value="Rotameric"/>
+                <xsd:enumeration value="Triaged/NotBinned"/>
+            </xsd:restriction>
+        </xsd:simpleType>
+    </xsd:attribute>
+
+    <xsd:attribute name="RNApucker" type="xsd:string"> <!-- 10 chars -->
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            Placeholder for reporting RNA pucker problem from MolProbity.
+            Not actually used at present, due to bug?
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+
+   <xsd:attribute name="mogul-ignore" type="YesString"> 
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            This will be set to "yes" if the residue is ignored for Mogul validation of bond geometry. 
+            For instance monoatomic ions such as sodium resname="NA" will have mogul-ignore="yes".
+            Produced by the mogul step.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+
+    <xsd:attribute name="mogul_angles_rmsz" type="xsd:decimal">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            The root-mean-square value of the Z-scores of bond angles for the residue in degrees.
+            Example: angles_rmsz="0.71".
+            Mogul identifies structures with a similar bond angle in CSD small molecule crystal structure.
+            The Z-score is the deviation of the observed angle from the mean found in the Mogul survey
+            divided by the Mogul standard deviation.
+            The individual Z-scores are then combined to calculate a root-mean-square value.
+            Produced by the mogul step.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+
+    <xsd:attribute name="mogul_bonds_rmsz" type="xsd:decimal">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            The root-mean-square value of the Z-scores of bond lengths for the residue in Angstroms.
+            Example: bonds_rmsz="0.47".
+            Mogul identifies structures with a similar bond length in CSD small molecule crystal structure.
+            The Z-score is the deviation of the observed length from the mean found in the Mogul survey
+            divided by the Mogul standard deviation.
+            The individual Z-scores are then combined to calculate a root-mean-square value.
+            Produced by the mogul step.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+
+    <xsd:attribute name="mogul_rmsz_numangles" type="xsd:integer">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            The number of bond angles from the residue that are used in the calculation of "mogul_angles_rmsz".
+            Example: mogul_rmsz_numangles="26"
+            Produced by the mogul step.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+
+    <xsd:attribute name="mogul_rmsz_numbonds" type="xsd:integer">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            The number of bond lengths from the residue that are used in the calculation of "mogul_lengths_rmsz".
+            Example: mogul_rmsz_numlengths="16"
+            Produced by the mogul step.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+
+    <xsd:attribute name="ligand_geometry_outlier" type="YesString">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            This will be set to "yes" if that more than 40% of bonds, angles, torsions, and rings 
+            are found in the Mogul analysis to be outliers. 
+            Produced by the mogul step.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+
+    <xsd:attribute name="ligand_density_outlier" type="YesString">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            This will be set to "yes" if EDS finds that the ligand has an issue with electron density fit.
+            is used where the residue has Real-Space R-value (RSR) exceeding 0.5 or a Local Ligand Density Fit value 
+            (LLDF) is greater than 2. 
+            Note that the LLDF calculation is still under development and the methods and criterion for identifying outlier
+            will be refined following analysis of a large test set of ligands.
+            X-ray specific produce by the EDS step.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+    <!-- ModelledSubgroup attributes (end)-->
+
+    <!-- cyrange_domain attributes (start)-->
+    <xsd:attribute name="domain" type="xsd:integer">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            Identifier of the well-defined core
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+    
+    <xsd:attribute name="number_of_gaps" type="xsd:integer">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            Number of omissions from the contiguous protein chain within the individual 
+            well-defined core (domain).
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+    
+    <xsd:attribute name="number_of_residues" type="xsd:integer">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            Number of residues composing the individual well-defined core (domain).
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+    
+    <xsd:attribute name="percentage_of_core" type="xsd:decimal">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            What fraction the individual core contributes to the total well-defined 
+            portion of the protein.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+    
+    <xsd:attribute name="rmsd" type="xsd:decimal">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            Average pairwise backbone RMSD of the individual well-defined core (domain) 
+            over the ensemble.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+    
+    <xsd:attribute name="medoid_rmsd" type="xsd:decimal">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            Average RMSD between the medoid model and other members of the ensemble. 
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+    
+    <xsd:attribute name="residue_string" type="xsd:string">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            Simplified description of the residue composition of the individual 
+            well-defined core (domain).
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+    <!-- cyrange_domain attributes (end)-->
+ 
+    <!-- ModelledEntityInstance attributes (start)-->
+    <xsd:attribute name="absolute_RSRZ_percentile" type="floatORunavailable">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            The "all" percentile rank for the property percent-RSRZ-outliers for the chain/model
+            (The proportion of residues that are RSRZ outliers reported as a percentage).
+            The comparison will be to the set of all structures determined by X-ray crystallography
+            deposited, up to the date included in the program name="percentiles" version,
+            where the percent-RSRZ-outliers was successfully calculated.
+            Example: absolute_RSRZ_percentile="39.90"
+            N.B. this is the chain/model equivalent of the overall (all chain) category "absolute-percentile-percent-RSRZ-outliers"
+            X-ray entry specific, produced by the percentiles step of the validation pipeline software.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+
+    <xsd:attribute name="relative_RSRZ_percentile" type="floatORunavailable">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            The "similar" percentile rank for the property percent-RSRZ-outliers for the chain/model
+            (The proportion of residues that are RSRZ outliers reported as a percentage).
+            The comparison will be to the subset of structures determined by X-ray crystallography
+            deposited, up to the date included in the program name="percentiles" version, 
+            where the percent-RSRZ-outliers was successfully calculated that have a similar resolution ("PDB-resolution").
+            Example: relative_RSRZ_percentile="34.81"
+            N.B. this is the chain/model equivalent of the overall (all chain) category "absolute-percentile-percent-RSRZ-outliers"
+            X-ray entry specific, produced by the percentiles step of the validation pipeline software.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+
+    <xsd:attribute name="absolute_rama_percentile" type="xsd:decimal">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            The "all" percentile rank for the property percent-rama-outliers for the chain/model 
+            (the MolProbity Ramachandran outlier score).
+            The comparison will be to:
+            * For X-ray structures: the set of all structures determined by X-ray crystallography ...
+            * For NMR and EM structures: the set of all PDB structures
+            ... deposited, up to the date included in the program name="percentiles" version,
+            where the percent-rama-outliers was successfully calculated.
+            Example: absolute_rama_percentile="9.27"
+            N.B. this is the chain/model equivalent of the overall (all chain) category "absolute-percentile-percent-rama-outliers"
+            Produced by the percentiles step of the validation pipeline software.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+
+    <xsd:attribute name="relative_rama_percentile" type="xsd:decimal">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            The "relative" percentile rank for the property percent-rama-outliers for the chain/model
+            (the MolProbity Ramachandran outlier score).
+            The comparison will be to:
+            * For X-ray structures: the subset of structures structures determined by X-ray crystallography,
+              that have a similar resolution ("PDB-resolution") to this entry, ...
+            * For structures determined by NMR: the subset of structures determined by NMR ...  
+            * For structures determined by EM: the subset of structures determined by EM ...  
+            ... deposited up to the date included in the program name="percentiles" version and
+            where the percent-rama-outliers was successfully calculated.
+            Example: relative_rama_percentile="47.81"
+            N.B. this is the chain/model equivalent of the overall (all chain) category "relative-percentile-percent-rama-outliers"
+            Produced by the percentiles step of the validation pipeline software.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+
+    <xsd:attribute name="absolute_sidechain_percentile" type="xsd:decimal">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            The "all" percentile score for the chain/model based on the percentage of sidechain outliers for the chain/model.
+            (the MolProbity sidechain outlier score).
+            The comparison will be to:
+            * For X-ray structures: the set of all structures determined by X-ray crystallography ...
+            * For NMR and EM structures: the set of all PDB structures 
+            ... deposited, up to the date included in the program name="percentiles" version, 
+            where the percent-rota-outliers was successfully calculated.
+            Example: absolute_sidechain_percentile="54.16"              
+            Only calculated if percent-rota-outliers is available.
+            N.B. this is the chain/model equivalent of the overall (all chain) category "absolute-percentile-percent-rota-outliers"
+            Produced by the percentiles step of the validation pipeline software.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+
+    <xsd:attribute name="relative_sidechain_percentile" type="xsd:decimal">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            The "relative" percentile rank for the property percent-rota-outliers for this chain/model.
+            (the MolProbity sidechain outlier score).
+            The comparison will be to:
+            * For X-ray structures: the subset of structures structures determined by X-ray crystallography,
+              that have a similar resolution ("PDB-resolution") to this entry, ...
+            * For structures determined by NMR: the subset of structures determined by NMR ...
+            * For structures determined by EM: the subset of structures determined by EM ...
+            ... deposited up to the date included in the program name="percentiles" version and
+            where the percent-rota-outliers was successfully calculated.
+            Example: relative_sidechain_percentile="1.44".
+            Only calculated if percent-rota-outliers is available.
+            N.B. this is the chain/model equivalent of the overall (all chain) category "relative-percentile-percent-rota-outliers"
+            Produced by the percentiles step of the validation pipeline software.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+    <!-- ModelledEntityInstance attributes (end)-->
+
+ 
+
+</xsd:schema>
