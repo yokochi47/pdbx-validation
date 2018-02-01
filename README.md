@@ -1,6 +1,6 @@
 # pdbx-validation
 
-The pdb-validation is a generation tool for alternative wwPDB validation information, which includes mmCIF-compatible validation information (PDBML-validation), RDF version of validation information (wwPDB/RDF-validation) and its ontologies, wwPDB Validation Information Dictionary, derived XML Schema for the PDBML-validation and Ontology for the wwPDB/RDF-validation.
+The pdb-validation is a generation tool for alternative [wwPDB validation information](https://www.wwpdb.org/validation/validation-reports), which includes mmCIF-compatible validation information (PDBML-validation), RDF version of validation information (wwPDB/RDF-validation) and its ontologies, wwPDB Validation Information Dictionary, derived XML Schema for the PDBML-validation and Ontology for the wwPDB/RDF-validation.
 
 ## Usage
 
@@ -14,17 +14,17 @@ The pdb-validation is a generation tool for alternative wwPDB validation informa
 
 File path | Document
 --------- | --------
-[schema/mmcif_pdbx_validation_v0.dic](https://github.com/yokochi47/pdbx-validation/blob/master/schema/mmcif_pdbx_validation_v0.289.dic) | wwPDB Validation Information Dictionary
+[schema/mmcif_pdbx_validation_v0.dic](https://github.com/yokochi47/pdbx-validation/blob/master/schema/mmcif_pdbx_validation_v0.289.dic) | current wwPDB Validation Information Dictionary
 [schema/pdbx-validation-v0.xsd](https://github.com/yokochi47/pdbx-validation/blob/master/schema/pdbx-validation-v0.289.xsd) | derived XML Schema for PDBML-validation
 [schema/pdbx-validation-v0.html](https://github.com/yokochi47/pdbx-validation/blob/master/schema/pdbx-validation-v0.html) | HTML expression of the XML Schema for PDBML-validation
-[schema/mmcif_ddl.dic](https://github.com/yokochi47/pdbx-validation/blob/master/schema/mmcif_ddl_v2.2.0.dic) | extended mmCIF DDL Core Dictionary (dubbed v2.2.0)
-[resource/mmcif_pdbx_v50.dic](http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic) | current mmCIF/PDBx Dictionary
+[schema/mmcif_ddl.dic](https://github.com/yokochi47/pdbx-validation/blob/master/schema/mmcif_ddl_v2.2.0.dic) | extended mmCIF DDL Core Dictionary (dubbed as v2.2.0)
+[resource/mmcif_pdbx_v50.dic](http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic) | current PDBx/mmCIF Dictionary
 [resource/wwpdb_validation_v002.xsd](http://wwpdb.org/validation/schema/wwpdb_validation_v002.xsd) | current XML Schema for wwPDB validation information
 [scripts](https://github.com/yokochi47/pdbx-validation/blob/master/scripts) | a directory contains scripts invoked by the 'run_all.sh' script
-[stylesheet](https://github.com/yokochi47/pdbx-validation/blob/master/styleseet) | a directory contains XSL style sheets for generation of alternative wwPDB validation information
+[stylesheet](https://github.com/yokochi47/pdbx-validation/blob/master/stylesheet) | a directory contains XSL style sheets for generation of alternative wwPDB validation information
 [test](https://github.com/yokochi47/pdbx-validation/blob/master/test) | a directory contains resource files for test of several PDB entries
 
-## Example of PDBML-validation: mmCIF-compatible validation information
+## Examples of PDBML-validation: mmCIF-compatible validation information
 
 - PDB ID: [5B1L](https://pdbj.org/mine/summary/5b1l), Exptl. method: X-RAY DIFFRACTION
 [5b1l-validation.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/pdbml-validation/5b1l-validation.xml)
