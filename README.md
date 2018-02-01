@@ -26,13 +26,13 @@ test | a directory contains resource files for test of several PDB entries
 
 ## Example of PDBML-validation: mmCIF-compatible validation information
 
-- PDB ID: [5B1L](https://pdbj.org/mine/summary/5b1l), X-RAY DIFFRACTION
+- PDB ID: [5B1L](https://pdbj.org/mine/summary/5b1l), Exptl. method: X-RAY DIFFRACTION
 [5b1l-validation.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/pdbml-validation/5b1l-validation.xml)
 
-- PDB ID: [5U9B](https://pdbj.org/mine/summary/5u9b), SOLUTION NMR
+- PDB ID: [5U9B](https://pdbj.org/mine/summary/5u9b), Exptl. method: SOLUTION NMR
 [5u9b-validation.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/pdbml-validation/5u9b-validation.xml)
 
-- PDB ID: [5H0S](https://pdbj.org/mine/summary/5h0s), X-RAY DIFFRACTION
+- PDB ID: [5H0S](https://pdbj.org/mine/summary/5h0s), Exptl. method: ELECTRON MISCROSCOPY 
 [5h0s-validation.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/pdbml-validation/5h0s-validation.xml)
 
 ## Software requirements
