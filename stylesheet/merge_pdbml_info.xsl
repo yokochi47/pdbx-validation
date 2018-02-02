@@ -12,7 +12,7 @@
   <xsl:strip-space elements="*"/>
 
   <xsl:variable name="entry_id"><xsl:value-of select="/PDBxv:datablock/PDBxv:entryCategory/PDBxv:entry/@id"/></xsl:variable>
-  <xsl:variable name="datablock_name"><xsl:value-of select="concat($entry_id,'-validation')"/></xsl:variable>
+  <xsl:variable name="datablock_name"><xsl:value-of select="concat($entry_id,'-validation-full')"/></xsl:variable>
 
   <xsl:variable name="pdb_id"><xsl:value-of select="$info_alt/PDBxv:datablock/PDBxv:entryCategory/PDBxv:entry/@id"/></xsl:variable>
 

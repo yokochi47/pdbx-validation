@@ -14,7 +14,7 @@
   <xsl:strip-space elements="*"/>
 
   <xsl:variable name="entry_id"><xsl:value-of select="/PDBx:datablock/PDBx:entryCategory/PDBx:entry/@id"/></xsl:variable>
-  <xsl:variable name="datablock_name"><xsl:value-of select="concat($entry_id,'-validation')"/></xsl:variable>
+  <xsl:variable name="datablock_name"><xsl:value-of select="concat(/PDBx:datablock/@datablockName,'-ext')"/></xsl:variable>
 
   <xsl:variable name="pdb_id"><xsl:value-of select="$info/wwPDB-validation-information/Entry/@pdbid"/></xsl:variable>
   <xsl:variable name="xml_creation_date"><xsl:value-of select="$info/wwPDB-validation-information/Entry/@XMLcreationDate"/></xsl:variable>

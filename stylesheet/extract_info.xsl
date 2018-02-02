@@ -14,7 +14,7 @@
   <xsl:variable name="pdb_id"><xsl:value-of select="/wwPDB-validation-information/Entry/@pdbid"/></xsl:variable>
 
   <xsl:variable name="entry_id"><xsl:value-of select="$pdbml_ext/PDBxv:datablock/PDBxv:entryCategory/PDBxv:entry/@id"/></xsl:variable>
-  <xsl:variable name="datablock_name"><xsl:value-of select="concat($entry_id,'-validation')"/></xsl:variable>
+  <xsl:variable name="datablock_name"><xsl:value-of select="concat($entry_id,'-validation-alt')"/></xsl:variable>
 
   <!-- experimental method -->
 

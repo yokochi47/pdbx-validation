@@ -31,7 +31,7 @@
   &lt;xsl:strip-space elements="*"/&gt;
 
   &lt;xsl:variable name="entry_id"&gt;&lt;xsl:value-of select="/PDBx:datablock/PDBx:entryCategory/PDBx:entry/@id"/&gt;&lt;/xsl:variable&gt;
-  &lt;xsl:variable name="datablock_name"&gt;&lt;xsl:value-of select="concat($entry_id,'-validation')"/&gt;&lt;/xsl:variable&gt;
+  &lt;xsl:variable name="datablock_name"&gt;&lt;xsl:value-of select="concat(/PDBx:datablock/@datablockName,'-ext')"/&gt;&lt;/xsl:variable&gt;
 
   &lt;xsl:variable name="pdb_id"&gt;&lt;xsl:value-of select="$info/wwPDB-validation-information/Entry/@pdbid"/&gt;&lt;/xsl:variable&gt;
   &lt;xsl:variable name="xml_creation_date"&gt;&lt;xsl:value-of select="$info/wwPDB-validation-information/Entry/@XMLcreationDate"/&gt;&lt;/xsl:variable&gt;

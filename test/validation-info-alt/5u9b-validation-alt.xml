@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PDBxv:datablock xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                  xmlns:PDBxv="http://pdbml.pdb.org/schema/pdbx-validation-v0.xsd"
-                 datablockName="5U9B-validation"
+                 datablockName="5U9B-validation-alt"
                  xsi:schemaLocation="http://pdbml.pdb.org/schema/pdbx-validation-v0.xsd pdbx-validation-v0.xsd">
    <PDBxv:entryCategory>
       <PDBxv:entry id="5U9B"/>

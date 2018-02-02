@@ -31,7 +31,7 @@
   &lt;xsl:strip-space elements="*"/&gt;
 
   &lt;xsl:variable name="entry_id"&gt;&lt;xsl:value-of select="/PDBxv:datablock/PDBxv:entryCategory/PDBxv:entry/@id"/&gt;&lt;/xsl:variable&gt;
-  &lt;xsl:variable name="datablock_name"&gt;&lt;xsl:value-of select="concat($entry_id,'-validation')"/&gt;&lt;/xsl:variable&gt;
+  &lt;xsl:variable name="datablock_name"&gt;&lt;xsl:value-of select="concat($entry_id,'-validation-full')"/&gt;&lt;/xsl:variable&gt;
 
   &lt;xsl:variable name="pdb_id"&gt;&lt;xsl:value-of select="$info_alt/PDBxv:datablock/PDBxv:entryCategory/PDBxv:entry/@id"/&gt;&lt;/xsl:variable&gt;
 
