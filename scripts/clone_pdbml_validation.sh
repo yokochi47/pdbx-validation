@@ -40,12 +40,8 @@ fi
 XML_DIR=pdbml-validation
 FILE_EXT_DIGEST=-validation-full
 
-if [ ! -d $XML_DIR ] ; then
- ./scripts/merge_pdbml_info.sh
-fi
-
 XSD_SCHEMA=schema/pdbx-validation-v0.xsd
-DB_SCHEMA=schema/pdbx-validation-v0.schema
+DB_SCHEMA=schema/pdbx-validation-v0.sql
 
 java -classpath $XSD2PGSCHEMA xsd2pgschema --xsd $XSD_SCHEMA --ddl $DB_SCHEMA --no-rel --doc-key --no-key
 
@@ -59,6 +55,10 @@ case $ans in
  *) echo stopped.
   exit 1;;
 esac
+
+if [ ! -d $XML_DIR ] ; then
+ ./scripts/merge_pdbml_info.sh
+fi
 
 psql -d $DB_NAME -U $DB_USER -f $DB_SCHEMA --quiet
 

@@ -40,12 +40,8 @@ fi
 XML_DIR=validation_info
 FILE_EXT_DIGEST=_validation
 
-if [ ! -d $XML_DIR ] ; then
- ./scripts/update_validation.sh
-fi
-
 XSD_SCHEMA=resource/wwpdb_validation_v002.xsd
-DB_SCHEMA=resource/wwpdb_validation_v002.schema
+DB_SCHEMA=resource/wwpdb_validation_v002.sql
 
 java -classpath $XSD2PGSCHEMA xsd2pgschema --xsd $XSD_SCHEMA --ddl $DB_SCHEMA --no-rel --doc-key --no-key
 
@@ -59,6 +55,10 @@ case $ans in
  *) echo stopped.
   exit 1;;
 esac
+
+if [ ! -d $XML_DIR ] ; then
+ ./scripts/update_validation.sh
+fi
 
 psql -d $DB_NAME -U $DB_USER -f $DB_SCHEMA --quiet
 
