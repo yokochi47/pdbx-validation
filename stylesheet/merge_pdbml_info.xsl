@@ -5,8 +5,8 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xmlns:PDBxv="http://pdbml.pdb.org/schema/pdbx-validation-v0.xsd">
 
-  <xsl:param name="info_ext_file" required="yes"/>
-  <xsl:param name="info_ext" select="document($info_ext_file)"/>
+  <xsl:param name="info_alt_file" required="yes"/>
+  <xsl:param name="info_alt" select="document($info_alt_file)"/>
 
   <xsl:output method="xml" indent="yes"/>
   <xsl:strip-space elements="*"/>
@@ -14,10 +14,22 @@
   <xsl:variable name="entry_id"><xsl:value-of select="/PDBxv:datablock/PDBxv:entryCategory/PDBxv:entry/@id"/></xsl:variable>
   <xsl:variable name="datablock_name"><xsl:value-of select="concat($entry_id,'-validation')"/></xsl:variable>
 
+  <xsl:variable name="pdb_id"><xsl:value-of select="$info_alt/PDBxv:datablock/PDBxv:entryCategory/PDBxv:entry/@id"/></xsl:variable>
+
   <xsl:template match="/">
+
+    <xsl:if test="$entry_id!=$pdb_id">
+      <xsl:call-template name="error_handler">
+        <xsl:with-param name="terminate">yes</xsl:with-param>
+        <xsl:with-param name="error_message">
+Unmatched entry ID in both documents (<xsl:value-of select="$entry_id"/> and <xsl:value-of select="$pdb_id"/>).
+        </xsl:with-param>
+      </xsl:call-template>
+    </xsl:if>
+
     <PDBxv:datablock datablockName="{$datablock_name}" xsi:schemaLocation="http://pdbml.pdb.org/schema/pdbx-validation-v0.xsd pdbx-validation-v0.xsd">
       <xsl:apply-templates select="PDBxv:datablock/*[not(local-name()='pdbx_validate_rmsd_angleCategory' or local-name()='pdbx_validate_rmsd_bondCategory' or local-name()='pdbx_validate_close_contactCategory' or local-name()='pdbx_validate_symm_contactCategory')]"/>
-      <xsl:apply-templates select="$info_ext/PDBxv:datablock/*[not(local-name()='entryCategory' or local-name()='pdbx_validate_rmsd_angleCategory' or local-name()='pdbx_validate_rmsd_bondCategory' or local-name()='pdbx_validate_close_contactCategory' or local-name()='pdbx_validate_symm_contactCategory')]"/>
+      <xsl:apply-templates select="$info_alt/PDBxv:datablock/*[not(local-name()='entryCategory' or local-name()='pdbx_validate_rmsd_angleCategory' or local-name()='pdbx_validate_rmsd_bondCategory' or local-name()='pdbx_validate_close_contactCategory' or local-name()='pdbx_validate_symm_contactCategory')]"/>
 
       <xsl:call-template name="merge_pdbx_validate_rmsd_angle"/>
 
@@ -1470,53 +1482,72 @@
     <xsl:copy/>
   </xsl:template>
 
+  <xsl:template name="error_handler">
+    <xsl:param name="error_message"/>
+    <xsl:param name="terminate">no</xsl:param>
+    <xsl:choose>
+      <xsl:when test="$terminate='yes'">
+        <xsl:message terminate="yes">
+          <xsl:text>ERROR in merge_pdbml_info.xsl: </xsl:text>
+          <xsl:value-of select="$error_message"/>
+        </xsl:message>
+      </xsl:when>
+      <xsl:otherwise>
+        <span style="font-weight: bold; color: red">
+          <xsl:text>ERROR: </xsl:text>
+          <xsl:value-of select="$error_message"/>
+        </span>
+      </xsl:otherwise>
+    </xsl:choose>
+  </xsl:template>
+
   <xsl:template name="merge_pdbx_validate_rmsd_angle">
-    <xsl:if test="PDBxv:datablock/PDBxv:pdbx_validate_rmsd_angleCategory or $info_ext/PDBxv:datablock/PDBxv:pdbx_validate_rmsd_angleCategory">
+    <xsl:if test="PDBxv:datablock/PDBxv:pdbx_validate_rmsd_angleCategory or $info_alt/PDBxv:datablock/PDBxv:pdbx_validate_rmsd_angleCategory">
       <xsl:element name="PDBxv:pdbx_validate_rmsd_angleCategory">
         <xsl:if test="PDBxv:datablock/PDBxv:pdbx_validate_rmsd_angleCategory">
           <xsl:apply-templates select="PDBxv:datablock/PDBxv:pdbx_validate_rmsd_angleCategory/*" mode="category-element"/>
         </xsl:if>
-        <xsl:if test="$info_ext/PDBxv:datablock/PDBxv:pdbx_validate_rmsd_angleCategory">
-          <xsl:apply-templates select="$info_ext/PDBxv:datablock/PDBxv:pdbx_validate_rmsd_angleCategory/*" mode="category-element"/>
+        <xsl:if test="$info_alt/PDBxv:datablock/PDBxv:pdbx_validate_rmsd_angleCategory">
+          <xsl:apply-templates select="$info_alt/PDBxv:datablock/PDBxv:pdbx_validate_rmsd_angleCategory/*" mode="category-element"/>
         </xsl:if>
       </xsl:element>
     </xsl:if>
   </xsl:template>
 
   <xsl:template name="merge_pdbx_validate_rmsd_bond">
-    <xsl:if test="PDBxv:datablock/PDBxv:pdbx_validate_rmsd_bondCategory or $info_ext/PDBxv:datablock/PDBxv:pdbx_validate_rmsd_bondCategory">
+    <xsl:if test="PDBxv:datablock/PDBxv:pdbx_validate_rmsd_bondCategory or $info_alt/PDBxv:datablock/PDBxv:pdbx_validate_rmsd_bondCategory">
       <xsl:element name="PDBxv:pdbx_validate_rmsd_bondCategory">
         <xsl:if test="PDBxv:datablock/PDBxv:pdbx_validate_rmsd_bondCategory">
           <xsl:apply-templates select="PDBxv:datablock/PDBxv:pdbx_validate_rmsd_bondCategory/*" mode="category-element"/>
         </xsl:if>
-        <xsl:if test="$info_ext/PDBxv:datablock/PDBxv:pdbx_validate_rmsd_bondCategory">
-          <xsl:apply-templates select="$info_ext/PDBxv:datablock/PDBxv:pdbx_validate_rmsd_bondCategory/*" mode="category-element"/>
+        <xsl:if test="$info_alt/PDBxv:datablock/PDBxv:pdbx_validate_rmsd_bondCategory">
+          <xsl:apply-templates select="$info_alt/PDBxv:datablock/PDBxv:pdbx_validate_rmsd_bondCategory/*" mode="category-element"/>
         </xsl:if>
       </xsl:element>
     </xsl:if>
   </xsl:template>
 
   <xsl:template name="merge_pdbx_validate_close_contact">
-    <xsl:if test="PDBxv:datablock/PDBxv:pdbx_validate_close_contactCategory or $info_ext/PDBxv:datablock/PDBxv:pdbx_validate_close_contactCategory">
+    <xsl:if test="PDBxv:datablock/PDBxv:pdbx_validate_close_contactCategory or $info_alt/PDBxv:datablock/PDBxv:pdbx_validate_close_contactCategory">
       <xsl:element name="PDBxv:pdbx_validate_close_contactCategory">
         <xsl:if test="PDBxv:datablock/PDBxv:pdbx_validate_close_contactCategory">
           <xsl:apply-templates select="PDBxv:datablock/PDBxv:pdbx_validate_close_contactCategory/*" mode="category-element"/>
         </xsl:if>
-        <xsl:if test="$info_ext/PDBxv:datablock/PDBxv:pdbx_validate_close_contactCategory">
-          <xsl:apply-templates select="$info_ext/PDBxv:datablock/PDBxv:pdbx_validate_close_contactCategory/*" mode="category-element"/>
+        <xsl:if test="$info_alt/PDBxv:datablock/PDBxv:pdbx_validate_close_contactCategory">
+          <xsl:apply-templates select="$info_alt/PDBxv:datablock/PDBxv:pdbx_validate_close_contactCategory/*" mode="category-element"/>
         </xsl:if>
       </xsl:element>
     </xsl:if>
   </xsl:template>
 
   <xsl:template name="merge_pdbx_validate_symm_contact">
-    <xsl:if test="PDBxv:datablock/PDBxv:pdbx_validate_symm_contactCategory or $info_ext/PDBxv:datablock/PDBxv:pdbx_validate_symm_contactCategory">
+    <xsl:if test="PDBxv:datablock/PDBxv:pdbx_validate_symm_contactCategory or $info_alt/PDBxv:datablock/PDBxv:pdbx_validate_symm_contactCategory">
       <xsl:element name="PDBxv:pdbx_validate_symm_contactCategory">
         <xsl:if test="PDBxv:datablock/PDBxv:pdbx_validate_symm_contactCategory">
           <xsl:apply-templates select="PDBxv:datablock/PDBxv:pdbx_validate_symm_contactCategory/*" mode="category-element"/>
         </xsl:if>
-        <xsl:if test="$info_ext/PDBxv:datablock/PDBxv:pdbx_validate_symm_contactCategory">
-          <xsl:apply-templates select="$info_ext/PDBxv:datablock/PDBxv:pdbx_validate_symm_contactCategory/*" mode="category-element"/>
+        <xsl:if test="$info_alt/PDBxv:datablock/PDBxv:pdbx_validate_symm_contactCategory">
+          <xsl:apply-templates select="$info_alt/PDBxv:datablock/PDBxv:pdbx_validate_symm_contactCategory/*" mode="category-element"/>
         </xsl:if>
       </xsl:element>
     </xsl:if>

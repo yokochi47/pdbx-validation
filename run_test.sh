@@ -43,11 +43,15 @@ fi
 
 WORK_DIR=test
 
+PDBML_EXT=pdbml-ext
+VALID_INFO_ALT=validation-info-alt
+PDBML_VALID=pdbml-validation
+
 PDBIDS=("5b1l" "5u9b" "5h0s")
 
-mkdir -p $WORK_DIR/pdbml_ext
-mkdir -p $WORK_DIR/validation_info_ext
-mkdir -p $WORK_DIR/pdbml-validation
+mkdir -p $WORK_DIR/$PDBML_EXT
+mkdir -p $WORK_DIR/$VALID_INFO_ALT
+mkdir -p $WORK_DIR/$PDBML_VALID
 
 for pdbid in ${PDBIDS[@]} ; do
 
@@ -56,9 +60,9 @@ for pdbid in ${PDBIDS[@]} ; do
  exptl_method=`java -jar $SAXON -s:$pdbml_file -xsl:stylesheet/exptl_method.xsl`
 
  echo
- echo Processing PDB ID: ${pdbid^^}, "Exerimental method: "$exptl_method" ..."
+ echo Processing PDB ID: ${pdbid^^}, "Exptl. method: "$exptl_method" ..."
 
- pdbml_ext_file=$WORK_DIR/pdbml_ext/$pdbid-validation.xml
+ pdbml_ext_file=$WORK_DIR/$PDBML_EXT/$pdbid-noatom-ext.xml
  info_file=../$WORK_DIR/validation_info/$pdbid"_validation.xml"
 
  java -jar $SAXON -s:$pdbml_file -xsl:$EXT_PDBML_XSL -o:$pdbml_ext_file info_file=$info_file
@@ -80,47 +84,47 @@ for pdbid in ${PDBIDS[@]} ; do
  fi
 
  info_file=$WORK_DIR/validation_info/$pdbid"_validation.xml"
- info_ext_file=$WORK_DIR/validation_info_ext/$pdbid-validation.xml
+ info_alt_file=$WORK_DIR/$VALID_INFO_ALT/$pdbid-validation-alt.xml
  pdbml_ext_file=../$pdbml_ext_file # add relative path (../) from directory contains target styleseet
 
- java -jar $SAXON -s:$info_file -xsl:$EXT_INFO_XSL -o:$info_ext_file pdbml_ext_file=$pdbml_ext_file
+ java -jar $SAXON -s:$info_file -xsl:$EXT_INFO_XSL -o:$info_alt_file pdbml_ext_file=$pdbml_ext_file
 
  if [ $? = 0 ] ; then
-  echo " extracted: "$info_ext_file
+  echo " extracted: "$info_alt_file
  else
   echo aborted.
   exit 1
  fi
 
- java -classpath $XSD2PGSCHEMA xmlvalidator --xsd $PDBX_VALIDATION_XSD --xml $info_ext_file > /dev/null
+ java -classpath $XSD2PGSCHEMA xmlvalidator --xsd $PDBX_VALIDATION_XSD --xml $info_alt_file > /dev/null
 
  if [ $? != 0 ] ; then
   echo aborted.
   exit 1
  else
-  echo " validated: "$info_ext_file
+  echo " validated: "$info_alt_file
  fi
 
- pdbml_ext_file=$WORK_DIR/pdbml_ext/$pdbid-validation.xml
- info_ext_file=../$info_ext_file # add relative path (../) from directory contains target stylesheet
- pdbml_validation_file=$WORK_DIR/pdbml-validation/$pdbid-validation.xml
+ pdbml_ext_file=$WORK_DIR/$PDBML_EXT/$pdbid-noatom-ext.xml
+ info_alt_file=../$info_alt_file # add relative path (../) from directory contains target stylesheet
+ pdbml_valid_file=$WORK_DIR/$PDBML_VALID/$pdbid-validation-full.xml
 
- java -jar $SAXON -s:$pdbml_ext_file -xsl:$MERGE_PDBML_INFO_XSL -o:$pdbml_validation_file info_ext_file=$info_ext_file
+ java -jar $SAXON -s:$pdbml_ext_file -xsl:$MERGE_PDBML_INFO_XSL -o:$pdbml_valid_file info_alt_file=$info_alt_file
 
  if [ $? = 0 ] ; then
-  echo " merged   : "$pdbml_validation_file
+  echo " merged   : "$pdbml_valid_file
  else
   echo aborted.
   exit 1
  fi
 
- java -classpath $XSD2PGSCHEMA xmlvalidator --xsd $PDBX_VALIDATION_XSD --xml $pdbml_validation_file > /dev/null
+ java -classpath $XSD2PGSCHEMA xmlvalidator --xsd $PDBX_VALIDATION_XSD --xml $pdbml_valid_file > /dev/null
 
  if [ $? != 0 ] ; then
   echo aborted.
   exit 1
  else
-  echo " validated: "$pdbml_validation_file
+  echo " validated: "$pdbml_valid_file
  fi
 
 done

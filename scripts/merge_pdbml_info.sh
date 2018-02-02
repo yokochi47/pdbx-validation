@@ -6,14 +6,14 @@ if [ $MAXPROCS = 0 ] ; then
  MAXPROCS=1
 fi
 
-VALIDATE_OPT=
+VALID_OPT=
 
 ARGV=`getopt --long -o "v" "$@"`
 eval set -- "$ARGV"
 while true ; do
  case "$1" in
  -v)
-  VALIDATE_OPT=$1
+  VALID_OPT=$1
  ;;
  *)
   break
@@ -52,32 +52,32 @@ if [ ! -e $MRG_PDBML_INFO_XSL ] ; then
 
 fi
 
-PDBML_EXT_DIR=pdbml_ext
+PDBML_EXT=pdbml-ext
 
-if [ ! -d $PDBML_EXT_DIR ] ; then
+if [ ! -d $PDBML_EXT ] ; then
  ./scripts/extract_pdbml.sh
 fi
 
-VALID_INFO_EXT=validation_info_ext
+VALID_INFO_ALT=validation-info-alt
 
-if [ ! -d $VALID_INFO_EXT ] ; then
+if [ ! -d $VALID_INFO_ALT ] ; then
  ./scripts/extract_info.sh
 fi
 
-PDBML_VALIDATION=pdbml-validation
+PDBML_VALID=pdbml-validation
 
-mkdir -p $PDBML_VALIDATION
+mkdir -p $PDBML_VALID
 
 echo
 echo Merging PDBML and wwPDB Validation Information...
 
 pdbml_file_list=pdbml_file_list
 
-find $PDBML_EXT_DIR -name '*.xml' > $pdbml_file_list
+find $PDBML_EXT -name '*.xml' > $pdbml_file_list
 
 for proc_id in `seq 1 $MAXPROCS` ; do
 
- ./scripts/merge_pdbml_info_worker.sh -d $PDBML_VALIDATION -e $VALID_INFO_EXT -l $pdbml_file_list -n $proc_id"of"$MAXPROCS $VALIDATE_OPT &
+ ./scripts/merge_pdbml_info_worker.sh -d $PDBML_VALID -e $VALID_INFO_ALT -l $pdbml_file_list -n $proc_id"of"$MAXPROCS $VALID_OPT &
 
 done
 
@@ -92,5 +92,5 @@ echo
 
 rm -f $pdbml_file_list
 
-echo $PDBML_VALIDATION is update.
+echo $PDBML_VALID is update.
 

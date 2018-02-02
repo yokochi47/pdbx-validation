@@ -6,14 +6,14 @@ if [ $MAXPROCS = 0 ] ; then
  MAXPROCS=1
 fi
 
-VALIDATE_OPT=
+VALID_OPT=
 
 ARGV=`getopt --long -o "v" "$@"`
 eval set -- "$ARGV"
 while true ; do
  case "$1" in
  -v)
-  VALIDATE_OPT=$1
+  VALID_OPT=$1
  ;;
  *)
   break
@@ -52,19 +52,19 @@ echo Generated $EXT_PDBML_XSL
 
 fi
 
-PDBML_EXT=pdbml_ext
+PDBML_EXT=pdbml-ext
 
 mkdir -p $PDBML_EXT
 
-PDBML_DIR=pdbml
+PDBML=pdbml
 
-if [ ! -d $PDBML_DIR ] ; then
+if [ ! -d $PDBML ] ; then
  ./scripts/update_pdbml.sh
 fi
 
-VALID_INFO_DIR=validation_info
+VALID_INFO=validation_info
 
-if [ ! -d $VALID_INFO_DIR ] ; then
+if [ ! -d $VALID_INFO ] ; then
  ./scripts/update_validation.sh
 fi
 
@@ -73,11 +73,11 @@ echo Extracting PDBML...
 
 pdbml_file_list=pdbml_file_list
 
-find $PDBML_DIR -name '*.xml' > $pdbml_file_list
+find $PDBML -name '*.xml' > $pdbml_file_list
 
 for proc_id in `seq 1 $MAXPROCS` ; do
 
- ./scripts/extract_pdbml_worker.sh -d $PDBML_EXT -e $VALID_INFO_DIR -l $pdbml_file_list -n $proc_id"of"$MAXPROCS $VALIDATE_OPT &
+ ./scripts/extract_pdbml_worker.sh -d $PDBML_EXT -e $VALID_INFO -l $pdbml_file_list -n $proc_id"of"$MAXPROCS $VALID_OPT &
 
 done
 

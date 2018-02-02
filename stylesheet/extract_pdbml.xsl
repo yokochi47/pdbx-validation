@@ -16,6 +16,7 @@
   <xsl:variable name="entry_id"><xsl:value-of select="/PDBx:datablock/PDBx:entryCategory/PDBx:entry/@id"/></xsl:variable>
   <xsl:variable name="datablock_name"><xsl:value-of select="concat($entry_id,'-validation')"/></xsl:variable>
 
+  <xsl:variable name="pdb_id"><xsl:value-of select="$info/wwPDB-validation-information/Entry/@pdbid"/></xsl:variable>
   <xsl:variable name="xml_creation_date"><xsl:value-of select="$info/wwPDB-validation-information/Entry/@XMLcreationDate"/></xsl:variable>
 
   <xsl:variable name="validation_created_year"><xsl:value-of select="substring($xml_creation_date,9,4)"/></xsl:variable>
@@ -51,6 +52,16 @@ Month name, <xsl:value-of select="$month_name"/>, is not listed in XSLT code.
   <xsl:variable name="nmr_models_consistency_flag"><xsl:value-of select="$info/wwPDB-validation-information/Entry/@nmr_models_consistency_flag"/></xsl:variable>
 
   <xsl:template match="/">
+
+    <xsl:if test="$entry_id!=$pdb_id">
+      <xsl:call-template name="error_handler">
+        <xsl:with-param name="terminate">yes</xsl:with-param>
+        <xsl:with-param name="error_message">
+Unmatched entry ID in both documents (<xsl:value-of select="$entry_id"/> and <xsl:value-of select="$pdb_id"/>).
+        </xsl:with-param>
+      </xsl:call-template>
+    </xsl:if>
+
     <PDBxv:datablock datablockName="{$datablock_name}" xsi:schemaLocation="http://pdbml.pdb.org/schema/pdbx-validation-v0.xsd pdbx-validation-v0.xsd">
       <xsl:apply-templates select="PDBx:datablock/*"/>
     </PDBxv:datablock>

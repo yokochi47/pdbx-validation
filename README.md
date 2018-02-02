@@ -1,6 +1,6 @@
 # pdbx-validation
 
-The pdb-validation is a generation tool for alternative [wwPDB validation information](https://www.wwpdb.org/validation/validation-reports), which includes mmCIF-compatible validation information (PDBML-validation), RDF version of validation information (wwPDB/RDF-validation) and its ontologies, wwPDB Validation Information Dictionary, derived XML Schema for the PDBML-validation and Ontology for the wwPDB/RDF-validation.
+The pdb-validation is a generation tool for alternative [wwPDB validation information](https://www.wwpdb.org/validation/validation-reports), which includes [PDBx/mmCIF](http://mmcif.wwpdb.org/) compatible validation information (PDBML-validation), RDF version of validation information (PDB/RDF-validation) and its ontologies, wwPDB Validation Information Dictionary, derived XML Schema for the PDBML-validation and Ontology for the PDB/RDF-validation.
 
 ## Usage
 
@@ -27,13 +27,13 @@ File path | Document
 ## Examples of PDBML-validation: mmCIF-compatible validation information
 
 - PDB ID: [5B1L](https://pdbj.org/mine/summary/5b1l), Exptl. method: X-RAY DIFFRACTION
-[5b1l-validation.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/pdbml-validation/5b1l-validation.xml)
+[5b1l-validation-full.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/pdbml-validation/5b1l-validation-full.xml)
 
 - PDB ID: [5U9B](https://pdbj.org/mine/summary/5u9b), Exptl. method: SOLUTION NMR
-[5u9b-validation.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/pdbml-validation/5u9b-validation.xml)
+[5u9b-validation-full.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/pdbml-validation/5u9b-validation-full.xml)
 
 - PDB ID: [5H0S](https://pdbj.org/mine/summary/5h0s), Exptl. method: ELECTRON MISCROSCOPY 
-[5h0s-validation.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/pdbml-validation/5h0s-validation.xml)
+[5h0s-validation-full.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/pdbml-validation/5h0s-validation-full.xml)
 
 ## Software requirements
 
@@ -45,5 +45,6 @@ File path | Document
 
 ## Release notes
 
+**Feb 02, 2018**: Released v0.0.2, Changed directory names and file extension of PDBML-validation. Implemented consistency checker about entry ID in XSL stylesheet.
 **Feb 01, 2018**: Released v0.0.1, Generate PDBML-validation from PDBML-noatom and wwPDB Validation Information.
 

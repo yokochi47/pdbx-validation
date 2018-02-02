@@ -33,6 +33,7 @@
   &lt;xsl:variable name="entry_id"&gt;&lt;xsl:value-of select="/PDBx:datablock/PDBx:entryCategory/PDBx:entry/@id"/&gt;&lt;/xsl:variable&gt;
   &lt;xsl:variable name="datablock_name"&gt;&lt;xsl:value-of select="concat($entry_id,'-validation')"/&gt;&lt;/xsl:variable&gt;
 
+  &lt;xsl:variable name="pdb_id"&gt;&lt;xsl:value-of select="$info/wwPDB-validation-information/Entry/@pdbid"/&gt;&lt;/xsl:variable&gt;
   &lt;xsl:variable name="xml_creation_date"&gt;&lt;xsl:value-of select="$info/wwPDB-validation-information/Entry/@XMLcreationDate"/&gt;&lt;/xsl:variable&gt;
 
   &lt;xsl:variable name="validation_created_year"&gt;&lt;xsl:value-of select="substring($xml_creation_date,9,4)"/&gt;&lt;/xsl:variable&gt;
@@ -68,6 +69,16 @@ Month name, &lt;xsl:value-of select="$month_name"/&gt;, is not listed in XSLT co
   &lt;xsl:variable name="nmr_models_consistency_flag"&gt;&lt;xsl:value-of select="$info/wwPDB-validation-information/Entry/@nmr_models_consistency_flag"/&gt;&lt;/xsl:variable&gt;
 
   &lt;xsl:template match="/"&gt;
+
+    &lt;xsl:if test="$entry_id!=$pdb_id"&gt;
+      &lt;xsl:call-template name="error_handler"&gt;
+        &lt;xsl:with-param name="terminate"&gt;yes&lt;/xsl:with-param&gt;
+        &lt;xsl:with-param name="error_message"&gt;
+Unmatched entry ID in both documents (&lt;xsl:value-of select="$entry_id"/&gt; and &lt;xsl:value-of select="$pdb_id"/&gt;).
+        &lt;/xsl:with-param&gt;
+      &lt;/xsl:call-template&gt;
+    &lt;/xsl:if&gt;
+
     &lt;PDBxv:datablock datablockName="{$datablock_name}" xsi:schemaLocation="http://pdbml.pdb.org/schema/pdbx-validation-v0.xsd pdbx-validation-v0.xsd"&gt;
       &lt;xsl:apply-templates select="PDBx:datablock/*"/&gt;
     &lt;/PDBxv:datablock&gt;

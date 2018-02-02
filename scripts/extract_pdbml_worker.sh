@@ -7,8 +7,8 @@ PDBX_VALIDATION_XSD=schema/pdbx-validation-v0.xsd
 
 EXT_PDBML_XSL=stylesheet/extract_pdbml.xsl
 
-WORK_DIR=pdbml_ext
-VALID_INFO_DIR=validation_info
+WORK_DIR=pdbml-ext
+VALID_INFO=validation_info
 
 FILE_LIST=pdbml_file_list
 
@@ -23,7 +23,7 @@ while true ; do
   shift
  ;;
  -e)
-  VALID_INFO_DIR=$2
+  VALID_INFO=$2
   shift
  ;;
  -l)
@@ -65,8 +65,8 @@ do
  if [ $proc_id_mod = $PROC_ID ] ; then
 
   pdbid=`basename $pdbml_file -noatom.xml`
-  pdbml_ext_file=$WORK_DIR/$pdbid-validation.xml
-  info_file=$VALID_INFO_DIR/$pdbid"_validation.xml"
+  pdbml_ext_file=$WORK_DIR/$pdbid-noatom-ext.xml
+  info_file=$VALID_INFO/$pdbid"_validation.xml"
   err_file=$WORK_DIR/extract_pdbml_$pdbid.err
 
   if [ -e $info_file ] && ( [ ! -e $pdbml_ext_file ] || [ -e $err_file ] ); then

@@ -6,14 +6,14 @@ if [ $MAXPROCS = 0 ] ; then
  MAXPROCS=1
 fi
 
-VALIDATE_OPT=
+VALID_OPT=
 
 ARGV=`getopt --long -o "v" "$@"`
 eval set -- "$ARGV"
 while true ; do
  case "$1" in
  -v)
-  VALIDATE_OPT=$1
+  VALID_OPT=$1
  ;;
  *)
   break
@@ -29,19 +29,19 @@ if [ ! -e $SAXON ] || [ ! -e $XSD2PGSCHEMA ] ; then
  ./scripts/update_extlibs.sh
 fi
 
-VALID_INFO_EXT=validation_info_ext
+VALID_INFO_ALT=validation-info-alt
 
-mkdir -p $VALID_INFO_EXT
+mkdir -p $VALID_INFO_ALT
 
-VALID_INFO_DIR=validation_info
+VALID_INFO=validation_info
 
-if [ ! -d $VALID_INFO_DIR ] ; then
+if [ ! -d $VALID_INFO ] ; then
  ./scripts/update_validation.sh
 fi
 
-PDBML_EXT_DIR=pdbml_ext
+PDBML_EXT=pdbml-ext
 
-if [ ! -d $PDBML_EXT_DIR ] ; then
+if [ ! -d $PDBML_EXT ] ; then
  ./scripts/extract_pdbml.sh
 fi
 
@@ -50,11 +50,11 @@ echo Extracting wwPDB Validation Information...
 
 info_file_list=info_file_list
 
-find $VALID_INFO_DIR -name '*.xml' > $info_file_list
+find $VALID_INFO -name '*.xml' > $info_file_list
 
 for proc_id in `seq 1 $MAXPROCS` ; do
 
- ./scripts/extract_info_worker.sh -d $VALID_INFO_EXT -e $PDBML_EXT_DIR -l $info_file_list -n $proc_id"of"$MAXPROCS $VALIDATE_OPT &
+ ./scripts/extract_info_worker.sh -d $VALID_INFO_ALT -e $PDBML_EXT -l $info_file_list -n $proc_id"of"$MAXPROCS $VALID_OPT &
 
 done
 
@@ -69,5 +69,5 @@ echo
 
 rm -f $info_file_list
 
-echo $VALID_INFO_EXT is update.
+echo $VALID_INFO_ALT is update.
 

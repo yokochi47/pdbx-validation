@@ -7,8 +7,8 @@ PDBX_VALIDATION_XSD=schema/pdbx-validation-v0.xsd
 
 EXT_INFO_XSL=stylesheet/extract_info.xsl
 
-WORK_DIR=validation_info_ext
-PDBML_EXT_DIR=pdbml_ext
+WORK_DIR=validation-info-alt
+PDBML_EXT=pdbml-ext
 
 FILE_LIST=info_file_list
 
@@ -23,7 +23,7 @@ while true ; do
   shift
  ;;
  -e)
-  PDBML_EXT_DIR=$2
+  PDBML_EXT=$2
   shift
  ;;
  -l)
@@ -65,13 +65,13 @@ do
  if [ $proc_id_mod = $PROC_ID ] ; then
 
   pdbid=`basename $valid_file _validation.xml`
-  info_ext_file=$WORK_DIR/$pdbid-validation.xml
-  pdbml_ext_file=$PDBML_EXT_DIR/$pdbid-validation.xml
+  info_alt_file=$WORK_DIR/$pdbid-validation-alt.xml
+  pdbml_ext_file=$PDBML_EXT/$pdbid-noatom-ext.xml
   err_file=$WORK_DIR/extract_info_$pdbid.err
 
-  if [ -e $pdbml_ext_file ] && ( [ ! -e $info_ext_file ] || [ -e $err_file ] ) ; then
+  if [ -e $pdbml_ext_file ] && ( [ ! -e $info_alt_file ] || [ -e $err_file ] ) ; then
 
-   java -jar $SAXON -s:$valid_file -xsl:$EXT_VALID_XSL -o:$info_ext_file pdbml_ext_file=../$pdbml_ext_file 2> $err_file
+   java -jar $SAXON -s:$valid_file -xsl:$EXT_VALID_XSL -o:$info_alt_file pdbml_ext_file=../$pdbml_ext_file 2> $err_file
 
    if [ $? = 0 ] ; then
     rm -f $err_file
@@ -82,7 +82,7 @@ do
 
    if [ $VALIDATE ] ; then
 
-    java -classpath $XSD2PGSCHEMA xmlvalidator --xsd $PDBX_VALIDATION_XSD --xml $info_ext_file > /dev/null 2> $err_file
+    java -classpath $XSD2PGSCHEMA xmlvalidator --xsd $PDBX_VALIDATION_XSD --xml $info_alt_file > /dev/null 2> $err_file
 
     if [ $? = 0 ] ; then
      rm -f $err_file

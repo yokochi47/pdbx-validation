@@ -11,6 +11,8 @@
   <xsl:output method="xml" indent="yes"/>
   <xsl:strip-space elements="*"/>
 
+  <xsl:variable name="pdb_id"><xsl:value-of select="/wwPDB-validation-information/Entry/@pdbid"/></xsl:variable>
+
   <xsl:variable name="entry_id"><xsl:value-of select="$pdbml_ext/PDBxv:datablock/PDBxv:entryCategory/PDBxv:entry/@id"/></xsl:variable>
   <xsl:variable name="datablock_name"><xsl:value-of select="concat($entry_id,'-validation')"/></xsl:variable>
 
@@ -145,6 +147,15 @@
   <!-- Level 1 -->
 
   <xsl:template match="/">
+
+    <xsl:if test="$entry_id!=$pdb_id">
+      <xsl:call-template name="error_handler">
+        <xsl:with-param name="terminate">yes</xsl:with-param>
+        <xsl:with-param name="error_message">
+Unmatched entry ID in both documents (<xsl:value-of select="$entry_id"/> and <xsl:value-of select="$pdb_id"/>).
+        </xsl:with-param>
+      </xsl:call-template>
+    </xsl:if>
 
     <xsl:if test="$x-ray=false() and $nmr=false() and $em=false()">
       <xsl:call-template name="error_handler">
@@ -2109,7 +2120,7 @@ Unmatched components exist in residue_string, <xsl:value-of select="position()"/
     <xsl:choose>
       <xsl:when test="$terminate='yes'">
         <xsl:message terminate="yes">
-          <xsl:text>ERROR in extract_validation.xsl: </xsl:text>
+          <xsl:text>ERROR in extract_info.xsl: </xsl:text>
           <xsl:value-of select="$error_message"/>
         </xsl:message>
       </xsl:when>

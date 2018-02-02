@@ -38,7 +38,7 @@ if [ ! -e $XSD2PGSCHEMA ] ; then
 fi
 
 XML_DIR=pdbml-validation
-FILE_EXT_DIGEST=-validation
+FILE_EXT_DIGEST=-validation-full
 
 if [ ! -d $XML_DIR ] ; then
  ./scripts/merge_pdbml_info.sh

@@ -24,8 +24,8 @@
 
   <xsl2:template match="/xsd:schema">
     <xsl2:text disable-output-escaping="yes">
-  &lt;xsl:param name="info_ext_file" required="yes"/&gt;
-  &lt;xsl:param name="info_ext" select="document($info_ext_file)"/&gt;
+  &lt;xsl:param name="info_alt_file" required="yes"/&gt;
+  &lt;xsl:param name="info_alt" select="document($info_alt_file)"/&gt;
 
   &lt;xsl:output method="xml" indent="yes"/&gt;
   &lt;xsl:strip-space elements="*"/&gt;
@@ -33,7 +33,19 @@
   &lt;xsl:variable name="entry_id"&gt;&lt;xsl:value-of select="/PDBxv:datablock/PDBxv:entryCategory/PDBxv:entry/@id"/&gt;&lt;/xsl:variable&gt;
   &lt;xsl:variable name="datablock_name"&gt;&lt;xsl:value-of select="concat($entry_id,'-validation')"/&gt;&lt;/xsl:variable&gt;
 
+  &lt;xsl:variable name="pdb_id"&gt;&lt;xsl:value-of select="$info_alt/PDBxv:datablock/PDBxv:entryCategory/PDBxv:entry/@id"/&gt;&lt;/xsl:variable&gt;
+
   &lt;xsl:template match="/"&gt;
+
+    &lt;xsl:if test="$entry_id!=$pdb_id"&gt;
+      &lt;xsl:call-template name="error_handler"&gt;
+        &lt;xsl:with-param name="terminate"&gt;yes&lt;/xsl:with-param&gt;
+        &lt;xsl:with-param name="error_message"&gt;
+Unmatched entry ID in both documents (&lt;xsl:value-of select="$entry_id"/&gt; and &lt;xsl:value-of select="$pdb_id"/&gt;).
+        &lt;/xsl:with-param&gt;
+      &lt;/xsl:call-template&gt;
+    &lt;/xsl:if&gt;
+
     &lt;PDBxv:datablock datablockName="{$datablock_name}" xsi:schemaLocation="http://pdbml.pdb.org/schema/pdbx-validation-v0.xsd pdbx-validation-v0.xsd"&gt;
       &lt;xsl:apply-templates select="PDBxv:datablock/*[not(</xsl2:text>
 
@@ -43,7 +55,7 @@
     </xsl2:for-each>
 
     <xsl2:text disable-output-escaping="yes">)]"/&gt;
-      &lt;xsl:apply-templates select="$info_ext/PDBxv:datablock/*[not(local-name()='entryCategory' or </xsl2:text>
+      &lt;xsl:apply-templates select="$info_alt/PDBxv:datablock/*[not(local-name()='entryCategory' or </xsl2:text>
 
     <xsl2:for-each select="tokenize($merge_categories,' ')">
       <xsl2:text disable-output-escaping="yes">local-name()='</xsl2:text><xsl2:value-of select="."/><xsl2:text disable-output-escaping="yes">Category'</xsl2:text>
@@ -87,18 +99,37 @@
   &lt;xsl:template match="@*" mode="data-item"&gt;
     &lt;xsl:copy/&gt;
   &lt;/xsl:template&gt;
+
+  &lt;xsl:template name="error_handler"&gt;
+    &lt;xsl:param name="error_message"/&gt;
+    &lt;xsl:param name="terminate"&gt;no&lt;/xsl:param&gt;
+    &lt;xsl:choose&gt;
+      &lt;xsl:when test="$terminate='yes'"&gt;
+        &lt;xsl:message terminate="yes"&gt;
+          &lt;xsl:text&gt;ERROR in merge_pdbml_info.xsl: &lt;/xsl:text&gt;
+          &lt;xsl:value-of select="$error_message"/&gt;
+        &lt;/xsl:message&gt;
+      &lt;/xsl:when&gt;
+      &lt;xsl:otherwise&gt;
+        &lt;span style="font-weight: bold; color: red"&gt;
+          &lt;xsl:text&gt;ERROR: &lt;/xsl:text&gt;
+          &lt;xsl:value-of select="$error_message"/&gt;
+        &lt;/span&gt;
+      &lt;/xsl:otherwise&gt;
+    &lt;/xsl:choose&gt;
+  &lt;/xsl:template&gt;
 </xsl2:text>
 
     <xsl2:for-each select="tokenize($merge_categories,' ')">
       <xsl2:text disable-output-escaping="yes">
   &lt;xsl:template name="merge_</xsl2:text><xsl2:value-of select="."/><xsl2:text disable-output-escaping="yes">"&gt;
-    &lt;xsl:if test="PDBxv:datablock/PDBxv:</xsl2:text><xsl2:value-of select="."/><xsl2:text disable-output-escaping="yes">Category or $info_ext/PDBxv:datablock/PDBxv:</xsl2:text><xsl2:value-of select="."/><xsl2:text disable-output-escaping="yes">Category"&gt;
+    &lt;xsl:if test="PDBxv:datablock/PDBxv:</xsl2:text><xsl2:value-of select="."/><xsl2:text disable-output-escaping="yes">Category or $info_alt/PDBxv:datablock/PDBxv:</xsl2:text><xsl2:value-of select="."/><xsl2:text disable-output-escaping="yes">Category"&gt;
       &lt;xsl:element name="PDBxv:</xsl2:text><xsl2:value-of select="."/><xsl2:text disable-output-escaping="yes">Category"&gt;
         &lt;xsl:if test="PDBxv:datablock/PDBxv:</xsl2:text><xsl2:value-of select="."/><xsl2:text disable-output-escaping="yes">Category"&gt;
           &lt;xsl:apply-templates select="PDBxv:datablock/PDBxv:</xsl2:text><xsl2:value-of select="."/><xsl2:text disable-output-escaping="yes">Category/*" mode="category-element"/&gt;
         &lt;/xsl:if&gt;
-        &lt;xsl:if test="$info_ext/PDBxv:datablock/PDBxv:</xsl2:text><xsl2:value-of select="."/><xsl2:text disable-output-escaping="yes">Category"&gt;
-          &lt;xsl:apply-templates select="$info_ext/PDBxv:datablock/PDBxv:</xsl2:text><xsl2:value-of select="."/><xsl2:text disable-output-escaping="yes">Category/*" mode="category-element"/&gt;
+        &lt;xsl:if test="$info_alt/PDBxv:datablock/PDBxv:</xsl2:text><xsl2:value-of select="."/><xsl2:text disable-output-escaping="yes">Category"&gt;
+          &lt;xsl:apply-templates select="$info_alt/PDBxv:datablock/PDBxv:</xsl2:text><xsl2:value-of select="."/><xsl2:text disable-output-escaping="yes">Category/*" mode="category-element"/&gt;
         &lt;/xsl:if&gt;
       &lt;/xsl:element&gt;
     &lt;/xsl:if&gt;

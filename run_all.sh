@@ -19,9 +19,9 @@ done
 ./scripts/update_pdbml.sh
 ./scripts/update_validation.sh
 
-PDBML_EXT=pdbml_ext
-VALID_INFO_EXT=validation_info_ext
-PDBML_VALIDATION=pdbml-validation
+PDBML_EXT=pdbml-ext
+VALID_INFO_ALT=validation-info-alt
+PDBML_VALID=pdbml-validation
 
 if [ -d $PDBML_EXT ] ; then
 
@@ -37,7 +37,7 @@ else
 
 fi
 
-if [ -d $VALID_INFO_EXT ] ; then
+if [ -d $VALID_INFO_ALT ] ; then
 
  ./scripts/extract_info.sh $VALIDATE_OPT
 
@@ -46,19 +46,19 @@ else
  ./scripts/extract_info.sh
 
  if [ ! -z $VALIDATE_OPT ] ; then
-  ./scripts/validate_all.sh -d $VALID_INFO_EXT
+  ./scripts/validate_all.sh -d $VALID_INFO_ALT
  fi
 
 fi
 
-if [ -d $PDBML_VALIDATION ] ; then
+if [ -d $PDBML_VALID ] ; then
 
  ./scripts/merge_pdbml_info.sh -v
 
 else
 
  ./scripts/merge_pdbml_info.sh
- ./scripts/validate_all.sh -d $PDBML_VALIDATION
+ ./scripts/validate_all.sh -d $PDBML_VALID
 
 fi
 
