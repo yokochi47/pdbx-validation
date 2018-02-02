@@ -52,7 +52,7 @@ if [ ! -e $MRG_PDBML_INFO_XSL ] ; then
  fi
 
  echo
- echo Generated $EXT_PDBML_XSL
+ echo Generated: $EXT_PDBML_XSL
 
 fi
 

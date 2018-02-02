@@ -15,9 +15,14 @@ fi
 
 XSD2EXT_PDBML_XSL=stylesheet/xsd2extract_pdbml.xsl
 EXT_PDBML_XSL=stylesheet/extract_pdbml.xsl
+
 EXT_INFO_XSL=stylesheet/extract_info.xsl
+
 XSD2MERGE_PDBML_INFO_XSL=stylesheet/xsd2merge_pdbml_info.xsl
 MERGE_PDBML_INFO_XSL=stylesheet/merge_pdbml_info.xsl
+
+PDBXV2PDBMLV2RDF_XSL=stylesheet/pdbxv2pdbmlv2rdf.xsl
+PDBMLV2RDF_XSL=stylesheet/pdbmlv2rdf.xsl
 
 if [ ! -e $EXT_PDBML_XSL ] ; then
 
@@ -45,17 +50,32 @@ if [ ! -e $MERGE_PDBML_INFO_XSL ] ; then
 
 fi
 
+if [ ! -e $PDBMLV2RDF_XSL ] ; then
+
+ java -jar $SAXON -s:$PDBX_VALIDATION_XSD -xsl:$PDBXV2PDBMLV2RDF_XSL -o:$PDBMLV2RDF_XSL
+
+ if [ $? = 0 ] ; then
+  echo Generated: $PDBMLV2RDF_XSL
+ else
+  echo aborted.
+  exit 1
+ fi
+
+fi
+
 WORK_DIR=test
 
 PDBML_EXT=pdbml-ext
 VALID_INFO_ALT=validation-info-alt
 PDBML_VALID=pdbml-validation
+RDF_VALID=rdf-validation
 
 PDBIDS=("5b1l" "5u9b" "5h0s")
 
 mkdir -p $WORK_DIR/$PDBML_EXT
 mkdir -p $WORK_DIR/$VALID_INFO_ALT
 mkdir -p $WORK_DIR/$PDBML_VALID
+mkdir -p $WORK_DIR/$RDF_VALID
 
 for pdbid in ${PDBIDS[@]} ; do
 
@@ -129,6 +149,17 @@ for pdbid in ${PDBIDS[@]} ; do
   exit 1
  else
   echo " validated: "$pdbml_valid_file
+ fi
+
+ rdf_valid_file=$WORK_DIR/$RDF_VALID/$pdbid-validation.rdf
+
+ java -jar $SAXON -s:$pdbml_valid_file -xsl:$PDBMLV2RDF_XSL -o:$rdf_valid_file
+
+ if [ $? = 0 ] ; then
+  echo " generated: "$rdf_valid_file
+ else
+  echo aborted.
+  exit 1
  fi
 
 done

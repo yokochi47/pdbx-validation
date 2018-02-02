@@ -71,9 +71,9 @@ fi
 
 # Generate wwPDB/OWL-validation
 
-XSD2OWL_XSL=../stylesheet/xsd2owl.xsl
+PDBXV2OWL_XSL=../stylesheet/pdbxv2owl.xsl
 
-java -jar $SAXON -s:$DICT_PREFIX-v$DICT_MAJOR_VER.xsd -xsl:$XSD2OWL_XSL -o:$DICT_PREFIX-v$DICT_VER.owl
+java -jar $SAXON -s:$DICT_PREFIX-v$DICT_MAJOR_VER.xsd -xsl:$PDBXV2OWL_XSL -o:$DICT_PREFIX-v$DICT_VER.owl
 
 rm -f $DICT_PREFIX-v$DICT_MAJOR_VER.owl
 

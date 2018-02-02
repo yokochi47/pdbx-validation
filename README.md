@@ -27,13 +27,19 @@ File path | Document
 [stylesheet](https://github.com/yokochi47/pdbx-validation/blob/master/stylesheet) | a directory contains XSL style sheets for generation of alternative wwPDB validation information
 [test](https://github.com/yokochi47/pdbx-validation/blob/master/test) | a directory contains resource files for test of several PDB entries
 
-## Examples of PDBML-validation
+## Examples of alternative wwPDB validation information
 
-- PDB ID: [5B1L](https://pdbj.org/mine/summary/5b1l), Exptl. method: X-RAY DIFFRACTION, PDBML-validation: [5b1l-validation-full.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/pdbml-validation/5b1l-validation-full.xml)
+- PDB ID: [5B1L](https://pdbj.org/mine/summary/5b1l), Exptl. method: X-RAY DIFFRACTION
+	- PDBML-validation: [5b1l-validation-full.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/pdbml-validation/5b1l-validation-full.xml)
+	- wwPDB/RDF-validation: [5b1l-validation.rdf](https://github.com/yokochi47/pdbx-validation/blob/master/test/rdf-validation/5b1l-validation.rdf)
 
-- PDB ID: [5U9B](https://pdbj.org/mine/summary/5u9b), Exptl. method: SOLUTION NMR, PDBML-validation: [5u9b-validation-full.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/pdbml-validation/5u9b-validation-full.xml)
+- PDB ID: [5U9B](https://pdbj.org/mine/summary/5u9b), Exptl. method: SOLUTION NMR
+	- PDBML-validation: [5u9b-validation-full.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/pdbml-validation/5u9b-validation-full.xml)
+	- wwPDB/RDF-validation: [5u9b-validation.rdf](https://github.com/yokochi47/pdbx-validation/blob/master/test/rdf-validation/5u9b-validation.rdf)
 
-- PDB ID: [5H0S](https://pdbj.org/mine/summary/5h0s), Exptl. method: ELECTRON MICROSCOPY, PDBML-validation: [5h0s-validation-full.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/pdbml-validation/5h0s-validation-full.xml)
+- PDB ID: [5H0S](https://pdbj.org/mine/summary/5h0s), Exptl. method: ELECTRON MICROSCOPY
+	- PDBML-validation: [5h0s-validation-full.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/pdbml-validation/5h0s-validation-full.xml)
+	- wwPDB/RDF-validation: [5h0s-validation.rdf](https://github.com/yokochi47/pdbx-validation/blob/master/test/rdf-validation/5h0s-validation.rdf)
 
 ## Software requirements
 
@@ -53,6 +59,7 @@ File path | Document
 	- Append current PDBx Ontology (pdbx-v50.owl) in resource directory.
 	- Append PostgreSQL DDL for wwPDB validation (resource/wwpdb_validation_v002.sql) information and PDBML-validation (schema/pdbx-validation-v0.sql).
 	- Added wwPDB/OWL-validation, ontology for wwPDB/RDF-validation.
+	- Added script 'scripts/translate_to_rdf.sh' for generation of wwPDB/RDF-validation.
 - **Feb 01, 2018**: Released v0.0.1
 	- Generate PDBML-validation from PDBML-noatom and wwPDB Validation Information.
 

@@ -62,6 +62,8 @@ else
 
 fi
 
+./scripts/translate_to_rdf.sh
+
 echo
 echo Done.
 
