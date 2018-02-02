@@ -24,7 +24,7 @@ File path | Document
 [stylesheet](https://github.com/yokochi47/pdbx-validation/blob/master/stylesheet) | a directory contains XSL style sheets for generation of alternative wwPDB validation information
 [test](https://github.com/yokochi47/pdbx-validation/blob/master/test) | a directory contains resource files for test of several PDB entries
 
-## Examples of PDBML-validation: mmCIF-compatible validation information
+## Examples of PDBML-validation
 
 - PDB ID: [5B1L](https://pdbj.org/mine/summary/5b1l), Exptl. method: X-RAY DIFFRACTION, PDBML-validation: [5b1l-validation-full.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/pdbml-validation/5b1l-validation-full.xml)
 
