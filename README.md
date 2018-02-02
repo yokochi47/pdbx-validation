@@ -4,10 +4,10 @@ The pdbx-validation is a generation tool for alternative [wwPDB validation infor
 
 ## Usage
 
-- To generate alternative wwPDB validation information documents for several PDB IDs,<br />
+- To generate the PDBML-validation of some PDB entries,<br />
  `./run_test.sh`
 
-- To generate and update whole PDB entries,<br />
+- To update the PDBML-validation of the entire PDB entry,<br />
  `./run_all.sh`
 
 - Here is map of the program.<br />
