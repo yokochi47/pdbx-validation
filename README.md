@@ -43,10 +43,10 @@ File path | Document
 ## Release notes
 
 - **Feb 02, 2018**: Released v0.0.2
--- Changed directory names and file extension of PDBML-validation.
--- Implemented consistency checker about entry ID in XSL stylesheet.
--- Avoid XSLT error for entries used other experimental method such as NUTRON DIFFRACTION.
--- Added 'clean_all.sh' script.
+	- Changed directory names and file extension of PDBML-validation.
+	- Implemented consistency checker about entry ID in XSL stylesheet.
+	- Avoid XSLT error for entries used other experimental method such as NUTRON DIFFRACTION.
+	- Added 'clean_all.sh' script.
 - **Feb 01, 2018**: Released v0.0.1
--- Generate PDBML-validation from PDBML-noatom and wwPDB Validation Information.
+	- Generate PDBML-validation from PDBML-noatom and wwPDB Validation Information.
 
