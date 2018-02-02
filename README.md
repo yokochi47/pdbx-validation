@@ -49,8 +49,8 @@ File path | Document
 	- Implemented consistency checker about entry ID in XSL style sheet.
 	- Avoid XSLT error for entries used other experimental method such as NEUTRON DIFFRACTION.
 	- Added 'clean_all.sh' script.
-        - Append current PDBx Ontology (pdbx-v50.owl) in resource directory.
-        - Append PostgreSQL DDL for wwPDB validation (resource/wwpdb_validation_v002.sql) information and PDBML-validation (schema/pdbx-validation-v0.sql).
+	- Append current PDBx Ontology (pdbx-v50.owl) in resource directory.
+	- Append PostgreSQL DDL for wwPDB validation (resource/wwpdb_validation_v002.sql) information and PDBML-validation (schema/pdbx-validation-v0.sql).
 - **Feb 01, 2018**: Released v0.0.1
 	- Generate PDBML-validation from PDBML-noatom and wwPDB Validation Information.
 
