@@ -61,20 +61,32 @@ rm -f $DICT_PREFIX-v$DICT_MAJOR_VER.xsd
 
 ln -s $DICT_PREFIX-v$DICT_VER.xsd $DICT_PREFIX-v$DICT_MAJOR_VER.xsd
 
-echo Generated $DICT_PREFIX-v$DICT_MAJOR_VER.xsd
+echo Generated: $DICT_PREFIX-v$DICT_MAJOR_VER.xsd
 
-# Generate HTML document
+SAXON=../extlibs/saxon9he.jar
 
-SAXON_JAR_FILE=../extlibs/saxon9he.jar
-
-if [ ! -e $SAXON_JAR_FILE ] ; then
+if [ ! -e $SAXON ] ; then
  (cd ..; ./scripts/update_extlibs.sh)
 fi
 
+# Generate wwPDB/OWL-validation
+
+XSD2OWL_XSL=../stylesheet/xsd2owl.xsl
+
+java -jar $SAXON -s:$DICT_PREFIX-v$DICT_MAJOR_VER.xsd -xsl:$XSD2OWL_XSL -o:$DICT_PREFIX-v$DICT_VER.owl
+
+rm -f $DICT_PREFIX-v$DICT_MAJOR_VER.owl
+
+ln -s $DICT_PREFIX-v$DICT_VER.owl $DICT_PREFIX-v$DICT_MAJOR_VER.owl
+
+echo Generated: $DICT_PREFIX-v$DICT_MAJOR_VER.owl
+
+# Generate HTML representation of PDBML-validation Schema
+
 XS3P_XSLT_CODE=../stylesheet/xs3p.xsl
 
-java -jar $SAXON_JAR_FILE -s:$DICT_PREFIX-v$DICT_MAJOR_VER.xsd -xsl:$XS3P_XSLT_CODE -o:$DICT_PREFIX-v$DICT_MAJOR_VER.html
+java -jar $SAXON -s:$DICT_PREFIX-v$DICT_MAJOR_VER.xsd -xsl:$XS3P_XSLT_CODE -o:$DICT_PREFIX-v$DICT_MAJOR_VER.html
 
-echo Generated $DICT_PREFIX-v$DICT_MAJOR_VER.html
+echo Generated: $DICT_PREFIX-v$DICT_MAJOR_VER.html
 
 
