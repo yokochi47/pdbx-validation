@@ -29,6 +29,12 @@ if [ ! -e $SAXON ] || [ ! -e $XSD2PGSCHEMA ] ; then
  ./scripts/update_extlibs.sh
 fi
 
+PDBX_VALIDATION_XSD=schema/pdbx-validation-v0.xsd
+
+if [ ! -e $PDBX_VALIDATION_XSD ] ; then
+ (cd schema; ./update_schema.sh)
+fi
+
 VALID_INFO_ALT=validation-info-alt
 
 mkdir -p $VALID_INFO_ALT

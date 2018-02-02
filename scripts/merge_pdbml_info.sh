@@ -31,6 +31,10 @@ fi
 
 PDBX_VALIDATION_XSD=schema/pdbx-validation-v0.xsd
 
+if [ ! -e $PDBX_VALIDATION_XSD ] ; then
+ (cd schema; ./update_schema.sh)
+fi
+
 XSD2MRG_PDBML_INFO_XSL=stylesheet/xsd2merge_pdbml_info.xsl
 XSD2MRG_PDBML_INFO_XSL_ERR=xsd2merge_pdbml_info.err
 

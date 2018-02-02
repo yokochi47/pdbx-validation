@@ -20,9 +20,10 @@
 
   <xsl:variable name="exptl_method"><xsl:value-of select="$pdbml_ext/PDBxv:datablock/PDBxv:exptlCategory/PDBxv:exptl/@method"/></xsl:variable>
 
-  <xsl:variable name="x-ray"><xsl:value-of select="contains($exptl_method,'X-RAY')"/></xsl:variable>
+  <xsl:variable name="x-ray"><xsl:value-of select="contains($exptl_method,'DIFFRACTION') and not(contains($exptl_method,'NEUTRON'))"/></xsl:variable>
   <xsl:variable name="nmr"><xsl:value-of select="contains($exptl_method,'NMR')"/></xsl:variable>
   <xsl:variable name="em"><xsl:value-of select="$exptl_method='ELECTRON MICROSCOPY'"/></xsl:variable>
+  <xsl:variable name="other"><xsl:value-of select="$x-ray=false() and $nmr=false() and $em=false()"/></xsl:variable>
 
   <!-- percentile conditions id -->
 
@@ -153,15 +154,6 @@
         <xsl:with-param name="terminate">yes</xsl:with-param>
         <xsl:with-param name="error_message">
 Unmatched entry ID in both documents (<xsl:value-of select="$entry_id"/> and <xsl:value-of select="$pdb_id"/>).
-        </xsl:with-param>
-      </xsl:call-template>
-    </xsl:if>
-
-    <xsl:if test="$x-ray=false() and $nmr=false() and $em=false()">
-      <xsl:call-template name="error_handler">
-        <xsl:with-param name="terminate">yes</xsl:with-param>
-        <xsl:with-param name="error_message">
-Experimental method, <xsl:value-of select="$exptl_method"/>, is not listed in XSLT code.
         </xsl:with-param>
       </xsl:call-template>
     </xsl:if>
@@ -970,12 +962,11 @@ chemical shift list type, <xsl:value-of select="@type"/>, is not listed in XSLT 
       <xsl:if test="@relative-percentile-RNAsuiteness">
         <PDBxv:pdbx_percentile_conditions id="{$last_cond_rel_rna}">
           <xsl:element name="PDBxv:number_entries_total"><xsl:value-of select="@numPDBids-relative-percentile-RNAsuiteness"/></xsl:element>
-          <xsl:if test="$x-ray=true()">
+          <xsl:if test="@high-resol-relative-percentile-RNAsuiteness">
             <xsl:element name="PDBxv:ls_d_res_high"><xsl:value-of select="@high-resol-relative-percentile-RNAsuiteness"/></xsl:element>
-            <xsl:element name="PDBxv:ls_d_res_low"><xsl:value-of select="@low-resol-relative-percentile-RNAsuiteness"/></xsl:element>
           </xsl:if>
-          <xsl:if test="$em=true() and @high-resol-relative-percentile-RNAsuiteness">
-            <xsl:element name="PDBxv:ls_d_res_high"><xsl:value-of select="@high-resol-relative-percentile-RNAsuiteness"/></xsl:element>
+          <xsl:if test="@low-resol-relative-percentile-RNAsuiteness">
+            <xsl:element name="PDBxv:ls_d_res_low"><xsl:value-of select="@low-resol-relative-percentile-RNAsuiteness"/></xsl:element>
           </xsl:if>
         </PDBxv:pdbx_percentile_conditions>
       </xsl:if>
@@ -989,12 +980,11 @@ chemical shift list type, <xsl:value-of select="@type"/>, is not listed in XSLT 
       <xsl:if test="@relative-percentile-clashscore">
         <PDBxv:pdbx_percentile_conditions id="{$last_cond_rel_clash}">
           <xsl:element name="PDBxv:number_entries_total"><xsl:value-of select="@numPDBids-relative-percentile-clashscore"/></xsl:element>
-          <xsl:if test="$x-ray=true()">
+          <xsl:if test="@high-resol-relative-percentile-clashscore">
             <xsl:element name="PDBxv:ls_d_res_high"><xsl:value-of select="@high-resol-relative-percentile-clashscore"/></xsl:element>
-            <xsl:element name="PDBxv:ls_d_res_low"><xsl:value-of select="@low-resol-relative-percentile-clashscore"/></xsl:element>
           </xsl:if>
-          <xsl:if test="$em=true() and @high-resol-relative-percentile-clashscore">
-            <xsl:element name="PDBxv:ls_d_res_high"><xsl:value-of select="@high-resol-relative-percentile-clashscore"/></xsl:element>
+          <xsl:if test="@low-resol-relative-percentile-clashscore">
+            <xsl:element name="PDBxv:ls_d_res_low"><xsl:value-of select="@low-resol-relative-percentile-clashscore"/></xsl:element>
           </xsl:if>
         </PDBxv:pdbx_percentile_conditions>
       </xsl:if>
@@ -1008,12 +998,11 @@ chemical shift list type, <xsl:value-of select="@type"/>, is not listed in XSLT 
       <xsl:if test="@relative-percentile-percent-rama-outliers">
         <PDBxv:pdbx_percentile_conditions id="{$last_cond_rel_rama}">
           <xsl:element name="PDBxv:number_entries_total"><xsl:value-of select="@numPDBids-relative-percentile-percent-rama-outliers"/></xsl:element>
-          <xsl:if test="$x-ray=true()">
+          <xsl:if test="@high-resol-relative-percentile-percent-rama-outliers">
             <xsl:element name="PDBxv:ls_d_res_high"><xsl:value-of select="@high-resol-relative-percentile-percent-rama-outliers"/></xsl:element>
-            <xsl:element name="PDBxv:ls_d_res_low"><xsl:value-of select="@low-resol-relative-percentile-percent-rama-outliers"/></xsl:element>
           </xsl:if>
-          <xsl:if test="$em=true() and @high-resol-relative-percentile-percent-rama-outliers">
-            <xsl:element name="PDBxv:ls_d_res_high"><xsl:value-of select="@high-resol-relative-percentile-percent-rama-outliers"/></xsl:element>
+          <xsl:if test="@low-resol-relative-percentile-percent-rama-outliers">
+            <xsl:element name="PDBxv:ls_d_res_low"><xsl:value-of select="@low-resol-relative-percentile-percent-rama-outliers"/></xsl:element>
           </xsl:if>
         </PDBxv:pdbx_percentile_conditions>
       </xsl:if>
@@ -1027,12 +1016,11 @@ chemical shift list type, <xsl:value-of select="@type"/>, is not listed in XSLT 
       <xsl:if test="@relative-percentile-percent-rota-outliers">
         <PDBxv:pdbx_percentile_conditions id="{$last_cond_rel_rota}">
           <xsl:element name="PDBxv:number_entries_total"><xsl:value-of select="@numPDBids-relative-percentile-percent-rota-outliers"/></xsl:element>
-          <xsl:if test="$x-ray=true()">
+          <xsl:if test="@high-resol-relative-percentile-percent-rota-outliers">
             <xsl:element name="PDBxv:ls_d_res_high"><xsl:value-of select="@high-resol-relative-percentile-percent-rota-outliers"/></xsl:element>
-            <xsl:element name="PDBxv:ls_d_res_low"><xsl:value-of select="@low-resol-relative-percentile-percent-rota-outliers"/></xsl:element>
           </xsl:if>
-          <xsl:if test="$em=true() and @high-resol-relative-percentile-percent-rota-outliers">
-            <xsl:element name="PDBxv:ls_d_res_high"><xsl:value-of select="@high-resol-relative-percentile-percent-rota-outliers"/></xsl:element>
+          <xsl:if test="@low-resol-relative-percentile-percent-rota-outliers">
+            <xsl:element name="PDBxv:ls_d_res_low"><xsl:value-of select="@low-resol-relative-percentile-percent-rota-outliers"/></xsl:element>
           </xsl:if>
         </PDBxv:pdbx_percentile_conditions>
       </xsl:if>
@@ -1046,12 +1034,11 @@ chemical shift list type, <xsl:value-of select="@type"/>, is not listed in XSLT 
       <xsl:if test="@relative-percentile-DCC_Rfree">
         <PDBxv:pdbx_percentile_conditions id="{$last_cond_rel_rfree}">
           <xsl:element name="PDBxv:number_entries_total"><xsl:value-of select="@numPDBids-relative-percentile-DCC_Rfree"/></xsl:element>
-          <xsl:if test="$x-ray=true()">
+          <xsl:if test="@high-resol-relative-percentile-DCC_Rfree">
             <xsl:element name="PDBxv:ls_d_res_high"><xsl:value-of select="@high-resol-relative-percentile-DCC_Rfree"/></xsl:element>
-            <xsl:element name="PDBxv:ls_d_res_low"><xsl:value-of select="@low-resol-relative-percentile-DCC_Rfree"/></xsl:element>
           </xsl:if>
-          <xsl:if test="$em=true() and @high-resol-relative-percentile-DCC_Rfree">
-            <xsl:element name="PDBxv:ls_d_res_high"><xsl:value-of select="@high-resol-relative-percentile-DCC_Rfree"/></xsl:element>
+          <xsl:if test="@low-resol-relative-percentile-DCC_Rfree">
+            <xsl:element name="PDBxv:ls_d_res_low"><xsl:value-of select="@low-resol-relative-percentile-DCC_Rfree"/></xsl:element>
           </xsl:if>
         </PDBxv:pdbx_percentile_conditions>
       </xsl:if>
@@ -1065,12 +1052,11 @@ chemical shift list type, <xsl:value-of select="@type"/>, is not listed in XSLT 
       <xsl:if test="@relative-percentile-percent-RSRZ-outliers">
         <PDBxv:pdbx_percentile_conditions id="{$last_cond_rel_rsrz}">
           <xsl:element name="PDBxv:number_entries_total"><xsl:value-of select="@numPDBids-relative-percentile-percent-RSRZ-outliers"/></xsl:element>
-          <xsl:if test="$x-ray=true()">
+          <xsl:if test="@high-resol-relative-percentile-percent-RSRZ-outliers">
             <xsl:element name="PDBxv:ls_d_res_high"><xsl:value-of select="@high-resol-relative-percentile-percent-RSRZ-outliers"/></xsl:element>
-            <xsl:element name="PDBxv:ls_d_res_low"><xsl:value-of select="@low-resol-relative-percentile-percent-RSRZ-outliers"/></xsl:element>
           </xsl:if>
-          <xsl:if test="$em=true() and @high-resol-relative-percentile-percent-RSRZ-outliers">
-            <xsl:element name="PDBxv:ls_d_res_high"><xsl:value-of select="@high-resol-relative-percentile-percent-RSRZ-outliers"/></xsl:element>
+          <xsl:if test="@low-resol-relative-percentile-percent-RSRZ-outliers">
+            <xsl:element name="PDBxv:ls_d_res_low"><xsl:value-of select="@low-resol-relative-percentile-percent-RSRZ-outliers"/></xsl:element>
           </xsl:if>
         </PDBxv:pdbx_percentile_conditions>
       </xsl:if>
