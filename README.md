@@ -1,6 +1,6 @@
 # pdbx-validation
 
-The pdb-validation is a generation tool for alternative [wwPDB validation information](https://www.wwpdb.org/validation/validation-reports), which includes [PDBx/mmCIF](http://mmcif.wwpdb.org/) compatible validation information (PDBML-validation), RDF version of validation information (PDB/RDF-validation) and its ontologies, wwPDB Validation Information Dictionary, derived XML Schema for the PDBML-validation and Ontology for the PDB/RDF-validation.
+The pdb-validation is a generation tool for alternative [wwPDB validation information](https://www.wwpdb.org/validation/validation-reports), which includes [PDBx/mmCIF](http://mmcif.wwpdb.org/) compatible validation information (**PDBML-validationi**), RDF version of validation information (**PDB/RDF-validation**) and its ontologies, wwPDB Validation Information Dictionary, derived XML Schema for the PDBML-validation and Ontology for the PDB/RDF-validation.
 
 ## Usage
 
