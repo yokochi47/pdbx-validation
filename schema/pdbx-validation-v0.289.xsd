@@ -10816,7 +10816,7 @@ Twin fractions determined by REFMAC.
                         </xsd:documentation>
                      </xsd:annotation>
                   </xsd:element>
-                  <xsd:element name="twin_fraction_xtriage" minOccurs="0" maxOccurs="1" nillable="true" type="xsd:decimal">
+                  <xsd:element name="twin_fraction_xtriage" minOccurs="0" maxOccurs="1" nillable="true" type="xsd:string">
                      <xsd:annotation>
                         <xsd:documentation xml:lang="en">
 The twin fraction determined by Xtriage.
@@ -16536,6 +16536,12 @@ The percentile rank of the validation metric defined.
                         <xsd:union>
                            <xsd:simpleType>
                               <xsd:restriction base="xsd:decimal">
+                                 <xsd:minInclusive value="0.0" />
+                                 <xsd:maxInclusive value="0.0" />
+                              </xsd:restriction>
+                           </xsd:simpleType>
+                           <xsd:simpleType>
+                              <xsd:restriction base="xsd:decimal">
                                  <xsd:minExclusive value="0.0" />
                                  <xsd:maxExclusive value="100.0" />
                               </xsd:restriction>
@@ -16683,6 +16689,12 @@ The percentile rank of the validation metric defined.
                      </xsd:annotation>
                      <xsd:simpleType>
                         <xsd:union>
+                           <xsd:simpleType>
+                              <xsd:restriction base="xsd:decimal">
+                                 <xsd:minInclusive value="0.0" />
+                                 <xsd:maxInclusive value="0.0" />
+                              </xsd:restriction>
+                           </xsd:simpleType>
                            <xsd:simpleType>
                               <xsd:restriction base="xsd:decimal">
                                  <xsd:minExclusive value="0.0" />

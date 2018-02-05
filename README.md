@@ -5,7 +5,7 @@ The pdbx-validation is a generation tool for alternative [wwPDB validation infor
 ## Usage
 
 - To generate the PDBML-validation of some PDB entries,<br />
- `./run_test.sh`
+ `./run_test.sh 5b1l 5u9b 5h0s ... `
 
 - To update the PDBML-validation of the entire PDB entry,<br />
  `./run_all.sh`
@@ -51,15 +51,20 @@ File path | Document
 
 ## Release notes
 
+- **Feb 05, 2018**: Released v0.0.3
+	- Update wwPDB Validation Information Dictionary.
+	- Update 'extract_info.xsl' style sheet which caused validation errors.
+	- Update 'run_test.sh' script which allows to add PDB IDs.
+
 - **Feb 02, 2018**: Released v0.0.2
-	- Changed directory names and file extension of PDBML-validation.
-	- Implemented consistency checker about entry ID in XSL style sheet.
+	- Change directory names and file extension of PDBML-validation.
+	- Implement consistency checker about entry ID in XSL style sheet.
 	- Avoid XSLT error for entries used other experimental method such as NEUTRON DIFFRACTION.
-	- Added 'clean_all.sh' script.
+	- Add 'clean_all.sh' script.
 	- Append current PDBx Ontology (pdbx-v50.owl) in resource directory.
 	- Append PostgreSQL DDL for wwPDB validation (resource/wwpdb_validation_v002.sql) information and PDBML-validation (schema/pdbx-validation-v0.sql).
-	- Added wwPDB/OWL-validation, ontology for wwPDB/RDF-validation.
-	- Added script 'scripts/translate_to_rdf.sh' for generation of wwPDB/RDF-validation.
+	- Add wwPDB/OWL-validation, ontology for wwPDB/RDF-validation.
+	- Add script 'scripts/translate_to_rdf.sh' for generation of wwPDB/RDF-validation.
 - **Feb 01, 2018**: Released v0.0.1
 	- Generate PDBML-validation from PDBML-noatom and wwPDB Validation Information.
 

@@ -70,16 +70,41 @@ VALID_INFO_ALT=validation-info-alt
 PDBML_VALID=pdbml-validation
 RDF_VALID=rdf-validation
 
-PDBIDS=("5b1l" "5u9b" "5h0s")
+for arg ; do
+
+ pdbid=${arg,,}
+
+ if [[ $pdbid =~ [0-9][0-9a-z]{3} ]] ; then
+
+   pdbml_file=$WORK_DIR/pdbml/$pdbid-noatom.xml
+   info_file=$WORK_DIR/validation_info/$pdbid"_validation.xml"
+
+   if [ ! -e $pdbml_file ] ; then
+
+    wget ftp://ftp.wwpdb.org/pub/pdb/data/structures/all/XML-noatom/$pdbid-noatom.xml.gz -P $WORK_DIR/pdbml
+    gunzip $pdbml_file.gz
+
+   fi
+
+   if [ ! -e $info_file ] ; then
+
+    wget ftp://ftp.wwpdb.org/pub/pdb/validation_reports/${pdbid:1:2}/$pdbid/$pdbid"_validation.xml.gz" -P $WORK_DIR/validation_info
+    gunzip $info_file.gz
+
+   fi
+
+ fi
+
+done
 
 mkdir -p $WORK_DIR/$PDBML_EXT
 mkdir -p $WORK_DIR/$VALID_INFO_ALT
 mkdir -p $WORK_DIR/$PDBML_VALID
 mkdir -p $WORK_DIR/$RDF_VALID
 
-for pdbid in ${PDBIDS[@]} ; do
+for pdbml_file in $WORK_DIR/pdbml/*.xml ; do
 
- pdbml_file=$WORK_DIR/pdbml/$pdbid"-noatom.xml"
+ pdbid=`basename $pdbml_file -noatom.xml`
 
  exptl_method=`java -jar $SAXON -s:$pdbml_file -xsl:stylesheet/exptl_method.xsl`
 
