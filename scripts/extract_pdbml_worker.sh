@@ -80,7 +80,7 @@ do
     exit 1
    fi
 
-   if [ $VALIDATE ] ; then
+   if [ $VALIDATE = 'true' ] ; then
 
     java -classpath $XSD2PGSCHEMA xmlvalidator --xsd $PDBX_VALIDATION_XSD --xml $pdbml_ext_file > /dev/null 2> $err_file
 
