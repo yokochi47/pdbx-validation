@@ -1149,7 +1149,9 @@ chemical shift list type, <xsl:value-of select="@type"/>, is not listed in XSLT 
           <xsl:if test="@bulk_solvent_b">
             <xsl:element name="PDBxv:B_solvent"><xsl:value-of select="@bulk_solvent_b"/></xsl:element>
           </xsl:if>
-          <xsl:element name="PDBxv:B_wilson"><xsl:value-of select="@WilsonBestimate"/></xsl:element>
+          <xsl:if test="@WilsonBestimate">
+            <xsl:element name="PDBxv:B_wilson"><xsl:value-of select="@WilsonBestimate"/></xsl:element>
+          </xsl:if>
           <xsl:element name="PDBxv:DCC_version"><xsl:value-of select="$dcc_version"/></xsl:element>
           <xsl:if test="@IoverSigma">
             <xsl:element name="PDBxv:I_over_sigI_resh"><xsl:value-of select="substring-before(@IoverSigma,'(')"/></xsl:element>
@@ -1160,8 +1162,12 @@ chemical shift list type, <xsl:value-of select="@type"/>, is not listed in XSLT 
           <xsl:if test="@bulk_solvent_k">
             <xsl:element name="PDBxv:K_solvent"><xsl:value-of select="@bulk_solvent_k"/></xsl:element>
           </xsl:if>
-          <xsl:element name="PDBxv:Padilla-Yeates_L2_mean"><xsl:value-of select="@TwinL"/></xsl:element>
-          <xsl:element name="PDBxv:Padilla-Yeates_L_mean"><xsl:value-of select="@TwinL2"/></xsl:element>
+          <xsl:if test="@TwinL">
+            <xsl:element name="PDBxv:Padilla-Yeates_L_mean"><xsl:value-of select="@TwinL"/></xsl:element>
+          </xsl:if>
+          <xsl:if test="@TwinL2">
+            <xsl:element name="PDBxv:Padilla-Yeates_L2_mean"><xsl:value-of select="@TwinL2"/></xsl:element>
+          </xsl:if>
           <xsl:element name="PDBxv:R_value_R_work"><xsl:value-of select="@DCC_R"/></xsl:element>
           <xsl:if test="@DCC_Rfree and @DCC_Rfree!='NotAvailable'">
             <xsl:element name="PDBxv:R_value_R_free"><xsl:value-of select="@DCC_Rfree"/></xsl:element>
@@ -1199,8 +1205,12 @@ Unmatched components exist in WilsonBaniso, <xsl:value-of select="position()"/>,
               </xsl:choose>
             </xsl:for-each>
           </xsl:if>
-          <xsl:element name="PDBxv:anisotropy"><xsl:value-of select="@DataAnisotropy"/></xsl:element>
-          <xsl:element name="PDBxv:error"><xsl:value-of select="@TransNCS"/></xsl:element>
+          <xsl:if test="@DataAnisotropy">
+            <xsl:element name="PDBxv:anisotropy"><xsl:value-of select="@DataAnisotropy"/></xsl:element>
+          </xsl:if>
+          <xsl:if test="@TransNCS">
+            <xsl:element name="PDBxv:error"><xsl:value-of select="@TransNCS"/></xsl:element>
+          </xsl:if>
           <xsl:element name="PDBxv:iso_B_value_type"><xsl:value-of select="lower-case(@B_factor_type)"/></xsl:element>
           <xsl:element name="PDBxv:ls_d_res_high"><xsl:value-of select="@PDB-resolution"/></xsl:element>
           <xsl:if test="@EDS_resolution">
@@ -1209,8 +1219,12 @@ Unmatched components exist in WilsonBaniso, <xsl:value-of select="position()"/>,
           <xsl:if test="@EDS_resolution_low">
             <xsl:element name="PDBxv:ls_d_res_low_sf"><xsl:value-of select="@EDS_resolution_low"/></xsl:element>
           </xsl:if>
-          <xsl:element name="PDBxv:reflns_outlier_acentric"><xsl:value-of select="@acentric_outliers"/></xsl:element>
-          <xsl:element name="PDBxv:reflns_outlier_centric"><xsl:value-of select="@centric_outliers"/></xsl:element>
+          <xsl:if test="@acentric_outliers">
+            <xsl:element name="PDBxv:reflns_outlier_acentric"><xsl:value-of select="@acentric_outliers"/></xsl:element>
+          </xsl:if>
+          <xsl:if test="@centric_outliers">
+            <xsl:element name="PDBxv:reflns_outlier_centric"><xsl:value-of select="@centric_outliers"/></xsl:element>
+          </xsl:if>
           <xsl:if test="@TwinFraction">
             <xsl:variable name="twin_operator">
               <xsl:for-each select="tokenize(normalize-space(@TwinFraction),';')">
