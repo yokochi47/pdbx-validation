@@ -2520,7 +2520,7 @@ CREATE TABLE pdbx_dcc_density (
 	"twin_Rfactor" DECIMAL ,
 	twin_by_xtriage TEXT ,
 	twin_fraction TEXT ,
-	twin_fraction_xtriage DECIMAL ,
+	twin_fraction_xtriage TEXT ,
 	twin_operator TEXT ,
 	twin_operator_xtriage TEXT ,
 	twin_type TEXT ,
