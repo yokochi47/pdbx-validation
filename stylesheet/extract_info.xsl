@@ -1077,7 +1077,7 @@ chemical shift list type, <xsl:value-of select="@type"/>, is not listed in XSLT 
 
   <xsl:template name="pdbx_percentile_entity_view">
 
-    <xsl:if test="@absolute_RSRZ_percentile">
+    <xsl:if test="@absolute_RSRZ_percentile and @absolute_RSRZ_percentile!='NotAvailable'">
       <PDBxv:pdbx_percentile_entity_view conditions_id="{$last_cond_abs_rsrz}" type="RSRZ_outliers_percent">
         <xsl:attribute name="label_asym_id"><xsl:value-of select="@said"/></xsl:attribute>
         <xsl:attribute name="PDB_model_num"><xsl:value-of select="@model"/></xsl:attribute>
@@ -1087,7 +1087,7 @@ chemical shift list type, <xsl:value-of select="@type"/>, is not listed in XSLT 
       </PDBxv:pdbx_percentile_entity_view>
     </xsl:if>
 
-    <xsl:if test="@relative_RSRZ_percentile">
+    <xsl:if test="@relative_RSRZ_percentile and @relative_RSRZ_percentile!='NotAvailable'">
       <PDBxv:pdbx_percentile_entity_view conditions_id="{$last_cond_rel_rsrz}" type="RSRZ_outliers_percent">
         <xsl:attribute name="label_asym_id"><xsl:value-of select="@said"/></xsl:attribute>
         <xsl:attribute name="PDB_model_num"><xsl:value-of select="@model"/></xsl:attribute>
@@ -1097,7 +1097,7 @@ chemical shift list type, <xsl:value-of select="@type"/>, is not listed in XSLT 
       </PDBxv:pdbx_percentile_entity_view>
     </xsl:if>
 
-    <xsl:if test="@absolute_rama_percentile">
+    <xsl:if test="@absolute_rama_percentile and @absolute_rama_percentile!='NotAvailable'">
       <PDBxv:pdbx_percentile_entity_view conditions_id="{$last_cond_abs_rama}" type="Ramachandran_outlier_percent">
         <xsl:attribute name="label_asym_id"><xsl:value-of select="@said"/></xsl:attribute>
         <xsl:attribute name="PDB_model_num"><xsl:value-of select="@model"/></xsl:attribute>
@@ -1107,7 +1107,7 @@ chemical shift list type, <xsl:value-of select="@type"/>, is not listed in XSLT 
       </PDBxv:pdbx_percentile_entity_view>
     </xsl:if>
 
-    <xsl:if test="@relative_rama_percentile">
+    <xsl:if test="@relative_rama_percentile and @relative_rama_percentile!='NotAvailable'">
       <PDBxv:pdbx_percentile_entity_view conditions_id="{$last_cond_rel_rama}" type="Ramachandran_outlier_percent">
         <xsl:attribute name="label_asym_id"><xsl:value-of select="@said"/></xsl:attribute>
         <xsl:attribute name="PDB_model_num"><xsl:value-of select="@model"/></xsl:attribute>
@@ -1117,7 +1117,7 @@ chemical shift list type, <xsl:value-of select="@type"/>, is not listed in XSLT 
       </PDBxv:pdbx_percentile_entity_view>
     </xsl:if>
 
-    <xsl:if test="@absolute_sidechain_percentile">
+    <xsl:if test="@absolute_sidechain_percentile and @absolute_sidechain_percentile!='NotAvailable'">
       <PDBxv:pdbx_percentile_entity_view conditions_id="{$last_cond_abs_rota}" type="rotamer_outliers_percent">
         <xsl:attribute name="label_asym_id"><xsl:value-of select="@said"/></xsl:attribute>
         <xsl:attribute name="PDB_model_num"><xsl:value-of select="@model"/></xsl:attribute>
@@ -1127,7 +1127,7 @@ chemical shift list type, <xsl:value-of select="@type"/>, is not listed in XSLT 
       </PDBxv:pdbx_percentile_entity_view>
     </xsl:if>
 
-    <xsl:if test="@relative_sidechain_percentile">
+    <xsl:if test="@relative_sidechain_percentile and @relative_sidechain_percentile!='NotAvailable'">
       <PDBxv:pdbx_percentile_entity_view conditions_id="{$last_cond_rel_rota}" type="rotamer_outliers_percent">
         <xsl:attribute name="label_asym_id"><xsl:value-of select="@said"/></xsl:attribute>
         <xsl:attribute name="PDB_model_num"><xsl:value-of select="@model"/></xsl:attribute>
