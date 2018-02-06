@@ -27,6 +27,10 @@
 
   <!-- percentile conditions id -->
 
+  <xsl:variable name="no_percentile">
+    <xsl:if test="@no-percentile-property='true' and ../ModelledEntityInstance">true</xsl:if>
+  </xsl:variable>
+
   <xsl:variable name="last_cond_abs_rna">
     <xsl:choose>
       <xsl:when test="/wwPDB-validation-information/Entry/@absolute-percentile-RNAsuiteness">1</xsl:when>
@@ -58,6 +62,7 @@
   <xsl:variable name="last_cond_abs_rama">
     <xsl:choose>
       <xsl:when test="/wwPDB-validation-information/Entry/@absolute-percentile-percent-rama-outliers"><xsl:value-of select="$last_cond_rel_clash+1"/></xsl:when>
+      <xsl:when test="$no_percentile='true' and /wwPDB-validation-information/ModelledEntityInstance[@absolute_rama_percentile and @absolute_rama_percentile!='NotAvailable']"><xsl:value-of select="$last_cond_rel_clash+1"/></xsl:when>
       <xsl:otherwise><xsl:value-of select="$last_cond_rel_clash"/></xsl:otherwise>
     </xsl:choose>
   </xsl:variable>
@@ -65,6 +70,7 @@
   <xsl:variable name="last_cond_rel_rama">
     <xsl:choose>
       <xsl:when test="/wwPDB-validation-information/Entry/@relative-percentile-percent-rama-outliers"><xsl:value-of select="$last_cond_abs_rama+1"/></xsl:when>
+      <xsl:when test="$no_percentile='true' and /wwPDB-validation-information/ModelledEntityInstance[@relative_rama_percentile and @relative_rama_percentile!='NotAvailable']"><xsl:value-of select="$last_cond_abs_rama+1"/></xsl:when>
       <xsl:otherwise><xsl:value-of select="$last_cond_abs_rama"/></xsl:otherwise>
     </xsl:choose>
   </xsl:variable>
@@ -72,6 +78,7 @@
   <xsl:variable name="last_cond_abs_rota">
     <xsl:choose>
       <xsl:when test="/wwPDB-validation-information/Entry/@absolute-percentile-percent-rota-outliers"><xsl:value-of select="$last_cond_rel_rama+1"/></xsl:when>
+      <xsl:when test="$no_percentile='true' and /wwPDB-validation-information/ModelledEntityInstance[@absolute_sidechain_percentile and @absolute_sidechain_percentile!='NotAvailable']"><xsl:value-of select="$last_cond_rel_rama+1"/></xsl:when>
       <xsl:otherwise><xsl:value-of select="$last_cond_rel_rama"/></xsl:otherwise>
     </xsl:choose>
   </xsl:variable>
@@ -79,6 +86,7 @@
   <xsl:variable name="last_cond_rel_rota">
     <xsl:choose>
       <xsl:when test="/wwPDB-validation-information/Entry/@relative-percentile-percent-rota-outliers"><xsl:value-of select="$last_cond_abs_rota+1"/></xsl:when>
+      <xsl:when test="$no_percentile='true' and /wwPDB-validation-information/ModelledEntityInstance[@relative_sidechain_percentile and @relative_sidechain_percentile!='NotAvailable']"><xsl:value-of select="$last_cond_abs_rota+1"/></xsl:when>  
       <xsl:otherwise><xsl:value-of select="$last_cond_abs_rota"/></xsl:otherwise>
     </xsl:choose>
   </xsl:variable>
@@ -100,6 +108,7 @@
   <xsl:variable name="last_cond_abs_rsrz">
     <xsl:choose>
       <xsl:when test="/wwPDB-validation-information/Entry/@absolute-percentile-percent-RSRZ-outliers"><xsl:value-of select="$last_cond_rel_rfree+1"/></xsl:when>
+      <xsl:when test="$no_percentile='true' and /wwPDB-validation-information/ModelledEntityInstance[@absolute_RSRZ_percentile and @absolute_RSRZ_percentile!='NotAvailable']"><xsl:value-of select="$last_cond_rel_rfree+1"/></xsl:when>  
       <xsl:otherwise><xsl:value-of select="$last_cond_rel_rfree"/></xsl:otherwise>
     </xsl:choose>
   </xsl:variable>
@@ -107,6 +116,7 @@
   <xsl:variable name="last_cond_rel_rsrz">
     <xsl:choose>
       <xsl:when test="/wwPDB-validation-information/Entry/@relative-percentile-percent-RSRZ-outliers"><xsl:value-of select="$last_cond_abs_rsrz+1"/></xsl:when>
+      <xsl:when test="$no_percentile='true' and /wwPDB-validation-information/ModelledEntityInstance[@relative_RSRZ_percentile and @relative_RSRZ_percentile!='NotAvailable']"><xsl:value-of select="$last_cond_abs_rsrz+1"/></xsl:when>   
       <xsl:otherwise><xsl:value-of select="$last_cond_abs_rsrz"/></xsl:otherwise>
     </xsl:choose>
   </xsl:variable>
@@ -1000,41 +1010,60 @@ chemical shift list type, <xsl:value-of select="@type"/>, is not listed in XSLT 
         </PDBxv:pdbx_percentile_conditions>
       </xsl:if>
 
-      <xsl:if test="@absolute-percentile-percent-rama-outliers">
-        <PDBxv:pdbx_percentile_conditions id="{$last_cond_abs_rama}">
-          <xsl:element name="PDBxv:number_entries_total"><xsl:value-of select="@numPDBids-absolute-percentile-percent-rama-outliers"/></xsl:element>
-        </PDBxv:pdbx_percentile_conditions>
-      </xsl:if>
+      <xsl:choose>
+        <xsl:when test="@absolute-percentile-percent-rama-outliers">
+          <PDBxv:pdbx_percentile_conditions id="{$last_cond_abs_rama}">
+            <xsl:element name="PDBxv:number_entries_total"><xsl:value-of select="@numPDBids-absolute-percentile-percent-rama-outliers"/></xsl:element>
+          </PDBxv:pdbx_percentile_conditions>
+        </xsl:when>
+        <xsl:when test="$no_percentile='true' and /wwPDB-validation-information/ModelledEntityInstance[@absolute_rama_percentile and @absolute_rama_percentile!='NotAvailable']">
+          <PDBxv:pdbx_percentile_conditions id="{$last_cond_abs_rama}"/>
+        </xsl:when>
+      </xsl:choose>
 
-      <xsl:if test="@relative-percentile-percent-rama-outliers">
-        <PDBxv:pdbx_percentile_conditions id="{$last_cond_rel_rama}">
-          <xsl:element name="PDBxv:number_entries_total"><xsl:value-of select="@numPDBids-relative-percentile-percent-rama-outliers"/></xsl:element>
-          <xsl:if test="@high-resol-relative-percentile-percent-rama-outliers">
-            <xsl:element name="PDBxv:ls_d_res_high"><xsl:value-of select="@high-resol-relative-percentile-percent-rama-outliers"/></xsl:element>
-          </xsl:if>
-          <xsl:if test="@low-resol-relative-percentile-percent-rama-outliers">
-            <xsl:element name="PDBxv:ls_d_res_low"><xsl:value-of select="@low-resol-relative-percentile-percent-rama-outliers"/></xsl:element>
-          </xsl:if>
-        </PDBxv:pdbx_percentile_conditions>
-      </xsl:if>
+      <xsl:choose>
+        <xsl:when test="@relative-percentile-percent-rama-outliers">
+          <PDBxv:pdbx_percentile_conditions id="{$last_cond_rel_rama}">
+            <xsl:element name="PDBxv:number_entries_total"><xsl:value-of select="@numPDBids-relative-percentile-percent-rama-outliers"/></xsl:element>
+            <xsl:if test="@high-resol-relative-percentile-percent-rama-outliers">
+              <xsl:element name="PDBxv:ls_d_res_high"><xsl:value-of select="@high-resol-relative-percentile-percent-rama-outliers"/></xsl:element>
+            </xsl:if>
+            <xsl:if test="@low-resol-relative-percentile-percent-rama-outliers">
+              <xsl:element name="PDBxv:ls_d_res_low"><xsl:value-of select="@low-resol-relative-percentile-percent-rama-outliers"/></xsl:element>
+            </xsl:if>
+          </PDBxv:pdbx_percentile_conditions>
+        </xsl:when>
+        <xsl:when test="$no_percentile='true' and /wwPDB-validation-information/ModelledEntityInstance[@relative_rama_percentile and @relative_rama_percentile!='NotAvailable']">
+          <PDBxv:pdbx_percentile_conditions id="{$last_cond_rel_rama}"/>
+        </xsl:when>
+      </xsl:choose>
 
-      <xsl:if test="@absolute-percentile-percent-rota-outliers">
-        <PDBxv:pdbx_percentile_conditions id="{$last_cond_abs_rota}">
-          <xsl:element name="PDBxv:number_entries_total"><xsl:value-of select="@numPDBids-absolute-percentile-percent-rota-outliers"/></xsl:element>
-        </PDBxv:pdbx_percentile_conditions>
-      </xsl:if>
+      <xsl:choose>
+        <xsl:when test="@absolute-percentile-percent-rota-outliers">
+          <PDBxv:pdbx_percentile_conditions id="{$last_cond_abs_rota}">
+            <xsl:element name="PDBxv:number_entries_total"><xsl:value-of select="@numPDBids-absolute-percentile-percent-rota-outliers"/></xsl:element>
+          </PDBxv:pdbx_percentile_conditions>
+        </xsl:when>
+        <xsl:when test="$no_percentile='true' and /wwPDB-validation-information/ModelledEntityInstance[@absolute_sidechain_percentile and @absolute_sidechain_percentile!='NotAvailable']">
+          <PDBxv:pdbx_percentile_conditions id="{$last_cond_abs_rota}"/>
+        </xsl:when>
+      </xsl:choose>
 
-      <xsl:if test="@relative-percentile-percent-rota-outliers">
-        <PDBxv:pdbx_percentile_conditions id="{$last_cond_rel_rota}">
-          <xsl:element name="PDBxv:number_entries_total"><xsl:value-of select="@numPDBids-relative-percentile-percent-rota-outliers"/></xsl:element>
-          <xsl:if test="@high-resol-relative-percentile-percent-rota-outliers">
-            <xsl:element name="PDBxv:ls_d_res_high"><xsl:value-of select="@high-resol-relative-percentile-percent-rota-outliers"/></xsl:element>
-          </xsl:if>
-          <xsl:if test="@low-resol-relative-percentile-percent-rota-outliers">
-            <xsl:element name="PDBxv:ls_d_res_low"><xsl:value-of select="@low-resol-relative-percentile-percent-rota-outliers"/></xsl:element>
-          </xsl:if>
-        </PDBxv:pdbx_percentile_conditions>
-      </xsl:if>
+      <xsl:choose>
+        <xsl:when test="@relative-percentile-percent-rota-outliers">
+          <PDBxv:pdbx_percentile_conditions id="{$last_cond_rel_rota}">
+            <xsl:element name="PDBxv:number_entries_total"><xsl:value-of select="@numPDBids-relative-percentile-percent-rota-outliers"/></xsl:element>
+            <xsl:if test="@high-resol-relative-percentile-percent-rota-outliers">
+              <xsl:element name="PDBxv:ls_d_res_high"><xsl:value-of select="@high-resol-relative-percentile-percent-rota-outliers"/></xsl:element>
+            </xsl:if>
+            <xsl:if test="@low-resol-relative-percentile-percent-rota-outliers">
+              <xsl:element name="PDBxv:ls_d_res_low"><xsl:value-of select="@low-resol-relative-percentile-percent-rota-outliers"/></xsl:element>
+            </xsl:if>
+          </PDBxv:pdbx_percentile_conditions>
+        </xsl:when>
+        <xsl:when test="$no_percentile='true' and /wwPDB-validation-information/ModelledEntityInstance[@relative_sidechain_percentile and @relative_sidechain_percentile!='NotAvailable']">
+        </xsl:when>
+      </xsl:choose>
 
       <xsl:if test="@absolute-percentile-DCC_Rfree">
         <PDBxv:pdbx_percentile_conditions id="{$last_cond_abs_rfree}">
@@ -1054,23 +1083,33 @@ chemical shift list type, <xsl:value-of select="@type"/>, is not listed in XSLT 
         </PDBxv:pdbx_percentile_conditions>
       </xsl:if>
 
-      <xsl:if test="@absolute-percentile-percent-RSRZ-outliers">
-        <PDBxv:pdbx_percentile_conditions id="{$last_cond_abs_rsrz}">
-          <xsl:element name="PDBxv:number_entries_total"><xsl:value-of select="@numPDBids-absolute-percentile-percent-RSRZ-outliers"/></xsl:element>
-        </PDBxv:pdbx_percentile_conditions>
-      </xsl:if>
+      <xsl:choose>
+        <xsl:when test="@absolute-percentile-percent-RSRZ-outliers">
+          <PDBxv:pdbx_percentile_conditions id="{$last_cond_abs_rsrz}">
+            <xsl:element name="PDBxv:number_entries_total"><xsl:value-of select="@numPDBids-absolute-percentile-percent-RSRZ-outliers"/></xsl:element>
+          </PDBxv:pdbx_percentile_conditions>
+        </xsl:when>
+        <xsl:when test="$no_percentile='true' and /wwPDB-validation-information/ModelledEntityInstance[@absolute_RSRZ_percentile and @absolute_RSRZ_percentile!='NotAvailable']">
+          <PDBxv:pdbx_percentile_conditions id="{$last_cond_abs_rsrz}"/>
+        </xsl:when>
+      </xsl:choose>
 
-      <xsl:if test="@relative-percentile-percent-RSRZ-outliers">
-        <PDBxv:pdbx_percentile_conditions id="{$last_cond_rel_rsrz}">
-          <xsl:element name="PDBxv:number_entries_total"><xsl:value-of select="@numPDBids-relative-percentile-percent-RSRZ-outliers"/></xsl:element>
-          <xsl:if test="@high-resol-relative-percentile-percent-RSRZ-outliers">
-            <xsl:element name="PDBxv:ls_d_res_high"><xsl:value-of select="@high-resol-relative-percentile-percent-RSRZ-outliers"/></xsl:element>
-          </xsl:if>
-          <xsl:if test="@low-resol-relative-percentile-percent-RSRZ-outliers">
-            <xsl:element name="PDBxv:ls_d_res_low"><xsl:value-of select="@low-resol-relative-percentile-percent-RSRZ-outliers"/></xsl:element>
-          </xsl:if>
-        </PDBxv:pdbx_percentile_conditions>
-      </xsl:if>
+      <xsl:choose>
+        <xsl:when test="@relative-percentile-percent-RSRZ-outliers">
+          <PDBxv:pdbx_percentile_conditions id="{$last_cond_rel_rsrz}">
+            <xsl:element name="PDBxv:number_entries_total"><xsl:value-of select="@numPDBids-relative-percentile-percent-RSRZ-outliers"/></xsl:element>
+            <xsl:if test="@high-resol-relative-percentile-percent-RSRZ-outliers">
+              <xsl:element name="PDBxv:ls_d_res_high"><xsl:value-of select="@high-resol-relative-percentile-percent-RSRZ-outliers"/></xsl:element>
+            </xsl:if>
+            <xsl:if test="@low-resol-relative-percentile-percent-RSRZ-outliers">
+              <xsl:element name="PDBxv:ls_d_res_low"><xsl:value-of select="@low-resol-relative-percentile-percent-RSRZ-outliers"/></xsl:element>
+            </xsl:if>
+          </PDBxv:pdbx_percentile_conditions>
+        </xsl:when>
+        <xsl:when test="$no_percentile='true' and /wwPDB-validation-information/ModelledEntityInstance[@absolute_RSRZ_percentile and @absolute_RSRZ_percentile!='NotAvailable']">
+          <PDBxv:pdbx_percentile_conditions id="{$last_cond_rel_rsrz}"/>
+        </xsl:when>
+      </xsl:choose>
 
     </PDBxv:pdbx_percentile_conditionsCategory>
   </xsl:template>
@@ -1317,7 +1356,7 @@ Unmatched components exist in WilsonBaniso, <xsl:value-of select="position()"/>,
               </xsl:otherwise>
             </xsl:choose>
           </xsl:element>
-          <xsl:if test="$nmr=true()">
+          <xsl:if test="@percent-rama-outliers and $nmr=true()">
             <xsl:element name="PDBxv:Ramachandran_outlier_percent_nmr_well_formed"><xsl:value-of select="@percent-rama-outliers"/></xsl:element>
           </xsl:if>
         </xsl:if>
@@ -1331,7 +1370,7 @@ Unmatched components exist in WilsonBaniso, <xsl:value-of select="position()"/>,
             </xsl:otherwise>
           </xsl:choose>
         </xsl:element>
-        <xsl:if test="$nmr=true()">
+        <xsl:if test="@clashscore and $nmr=true()">
           <xsl:element name="PDBxv:all_atom_clashscore_nmr_well_formed"><xsl:value-of select="@clashscore"/></xsl:element>
         </xsl:if>
         <xsl:if test="@angles_rmsz">
@@ -1351,7 +1390,7 @@ Unmatched components exist in WilsonBaniso, <xsl:value-of select="position()"/>,
               </xsl:otherwise>
             </xsl:choose>
           </xsl:element>
-          <xsl:if test="$nmr=true()">
+          <xsl:if test="@percent-rota-outliers and $nmr=true()">
             <xsl:element name="PDBxv:rotamer_outliers_percent_nmr_well_formed"><xsl:value-of select="@percent-rota-outliers"/></xsl:element>
           </xsl:if>
         </xsl:if>
@@ -1535,7 +1574,7 @@ Unmatched components exist in WilsonBaniso, <xsl:value-of select="position()"/>,
         </xsl:if>
         <xsl:element name="PDBxv:phi"><xsl:value-of select="@phi"/></xsl:element>
         <xsl:element name="PDBxv:psi"><xsl:value-of select="@psi"/></xsl:element>
-        <xsl:if test="plane-outlier/@omega">
+        <xsl:if test="count(plane-outlier/@omega)=1">
           <xsl:element name="PDBxv:omega"><xsl:value-of select="plane-outlier/@omega"/></xsl:element>
         </xsl:if>
         <xsl:if test="@rama">
@@ -1920,7 +1959,7 @@ xsd:decimal
         <xsl:element name="PDBxv:PDB_ins_code_2"><xsl:value-of select="../@icode"/></xsl:element>
         <xsl:element name="PDBxv:PDB_ins_code_3"><xsl:value-of select="../@icode"/></xsl:element>
       </xsl:if>
-      <xsl:for-each select="tokenize(normalize-space(@atoms),',')">
+      <xsl:for-each select="tokenize(replace(replace(normalize-space(@atoms),',,',','),',$',''),',')">
         <xsl:choose>
           <xsl:when test="position()=1">
             <xsl:element name="PDBxv:auth_atom_id_1"><xsl:value-of select="."/></xsl:element>
@@ -1966,7 +2005,7 @@ Unmatched components exist in atoms, <xsl:value-of select="position()"/>, found 
         <xsl:element name="PDBxv:PDB_ins_code_1"><xsl:value-of select="../@icode"/></xsl:element>
         <xsl:element name="PDBxv:PDB_ins_code_2"><xsl:value-of select="../@icode"/></xsl:element>
       </xsl:if>
-      <xsl:for-each select="tokenize(normalize-space(@atoms),',')">
+      <xsl:for-each select="tokenize(replace(replace(normalize-space(@atoms),',,',','),',$',''),',')">
         <xsl:choose>
           <xsl:when test="position()=1">
             <xsl:element name="PDBxv:auth_atom_id_1"><xsl:value-of select="."/></xsl:element>
@@ -2025,7 +2064,7 @@ Unmatched components exist in atoms, <xsl:value-of select="position()"/>, found 
         <xsl:value-of select="../@icode"/>
       </xsl:if>
     </xsl:variable>
-    <xsl:for-each select="tokenize(normalize-space(@atoms),',')">
+    <xsl:for-each select="tokenize(replace(replace(normalize-space(@atoms),',,',','),',$',''),',')">
       <PDBxv:pdbx_validate_rmsd_rings_atom ring_id="{$ring_id}">
         <xsl:attribute name="id"><xsl:value-of select="position()"/></xsl:attribute>
         <xsl:element name="PDBxv:PDB_model_num"><xsl:value-of select="$PDB_model_num"/></xsl:element>
@@ -2078,7 +2117,7 @@ Unmatched components exist in atoms, <xsl:value-of select="position()"/>, found 
         <xsl:value-of select="../@icode"/>
       </xsl:if>
     </xsl:variable>
-    <xsl:for-each select="tokenize(normalize-space(@atoms),',')">
+    <xsl:for-each select="tokenize(replace(replace(normalize-space(@atoms),',,',','),',$',''),',')">
       <PDBxv:pdbx_validate_rmsd_torsions_atom torsion_id="{$torsion_id}">
         <xsl:attribute name="id"><xsl:value-of select="position()"/></xsl:attribute>
         <xsl:element name="PDBxv:PDB_model_num"><xsl:value-of select="$PDB_model_num"/></xsl:element>
@@ -2130,11 +2169,11 @@ Unmatched components exist in atoms, <xsl:value-of select="position()"/>, found 
       <xsl:attribute name="dom_id"><xsl:value-of select="$dom_id"/></xsl:attribute>
       <xsl:attribute name="component_id"><xsl:value-of select="position()"/></xsl:attribute>
 
-      <xsl:for-each select="tokenize(normalize-space(.),'-')">
+      <xsl:for-each select="tokenize(replace(normalize-space(.),':-',':_'),'-')"> <!-- rescue A:-1-A:-1 case -->
         <xsl:choose>
           <xsl:when test="position()=1">
             <xsl:variable name="beg_auth_asym_id"><xsl:value-of select="substring-before(.,':')"/></xsl:variable>
-            <xsl:variable name="beg_auth_seq_id"><xsl:value-of select="substring-after(.,':')"/></xsl:variable>
+            <xsl:variable name="beg_auth_seq_id"><xsl:value-of select="translate(substring-after(.,':'),'_','-')"/></xsl:variable> <!-- retrieve A:-1 from A:_1 -->
             <xsl:element name="PDBxv:beg_auth_asym_id"><xsl:value-of select="$beg_auth_asym_id"/></xsl:element>
             <xsl:element name="PDBxv:beg_auth_seq_id"><xsl:value-of select="$beg_auth_seq_id"/></xsl:element>
             <xsl:element name="PDBxv:beg_auth_comp_id">
@@ -2143,7 +2182,7 @@ Unmatched components exist in atoms, <xsl:value-of select="position()"/>, found 
           </xsl:when>
           <xsl:when test="position()=2">
             <xsl:variable name="end_auth_asym_id"><xsl:value-of select="substring-before(.,':')"/></xsl:variable>
-            <xsl:variable name="end_auth_seq_id"><xsl:value-of select="substring-after(.,':')"/></xsl:variable>
+            <xsl:variable name="end_auth_seq_id"><xsl:value-of select="translate(substring-after(.,':'),'_','-')"/></xsl:variable>
             <xsl:element name="PDBxv:end_auth_asym_id"><xsl:value-of select="$end_auth_asym_id"/></xsl:element>
             <xsl:element name="PDBxv:end_auth_seq_id"><xsl:value-of select="$end_auth_seq_id"/></xsl:element>
             <xsl:element name="PDBxv:end_auth_comp_id">

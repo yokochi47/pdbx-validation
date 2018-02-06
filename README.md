@@ -51,12 +51,20 @@ File path | Document
 
 ## Release notes
 
-- **Feb 05, 2018**: Released v0.0.3
+- **Feb 6, 2018**: Release v0.0.4
+	- Update wwPDB Validation Information Dictionary.
+	- Add null value check for pdbx_dcc_geometry.*_nmr_well_formed data items.
+	- Support @no-percentile-property="true" case for pdbx_percentile_entity_view.
+	- Reject multiple omega values for struct_mon_prot.omega since multi conformer occurs.
+	- Fix parser for @residue_string where negative auth_seq_id prevents delimitation such as "A:-1-A:-1".
+	- Fix parser for @atoms that involves null atom name such as "C5,,C6,", "C6,,N1,,C2,".
+
+- **Feb 5, 2018**: Release v0.0.3
 	- Update wwPDB Validation Information Dictionary.
 	- Update 'extract_info.xsl' style sheet which caused validation errors.
 	- Update 'run_test.sh' script which allows to add PDB IDs.
 
-- **Feb 02, 2018**: Released v0.0.2
+- **Feb 2, 2018**: Release v0.0.2
 	- Change directory names and file extension of PDBML-validation.
 	- Implement consistency checker about entry ID in XSL style sheet.
 	- Avoid XSLT error for entries used other experimental method such as NEUTRON DIFFRACTION.
@@ -65,6 +73,6 @@ File path | Document
 	- Append PostgreSQL DDL for wwPDB validation (resource/wwpdb_validation_v002.sql) information and PDBML-validation (schema/pdbx-validation-v0.sql).
 	- Add wwPDB/OWL-validation, ontology for wwPDB/RDF-validation.
 	- Add script 'scripts/translate_to_rdf.sh' for generation of wwPDB/RDF-validation.
-- **Feb 01, 2018**: Released v0.0.1
+- **Feb 1, 2018**: Release v0.0.1
 	- Generate PDBML-validation from PDBML-noatom and wwPDB Validation Information.
 

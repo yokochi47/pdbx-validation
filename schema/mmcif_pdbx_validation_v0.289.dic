@@ -1,7 +1,7 @@
 ###########################################################################
 #
 # File:  mmcif_pdbx_validation.dic
-# Date:  Mon Feb  5 11:25:08 JST 2018
+# Date:  Tue Feb  6 11:02:28 JST 2018
 #
 # Created from files noted:
 #        mmcif_pdbx_v50.dic   - PDB Exchange Data Dictionary (V5.289)
@@ -180,13 +180,14 @@ data_mmcif_pdbx_validation.dic
   + Extend '_pdbx_dcc_mapman.entry_id' (replaced _pdbx_dcc_mapman.pdbid) ,
   + Extend '_pdbx_dcc_rscc_mapman_overall.entry_id' (replaced _pdbx_dcc_rscc_mapman_overall.pdbid) ,
 ;
-  0.289   2018-02-05
+  0.289   2018-02-06
 ;
   (changes: MY)
   + Update to PDB Exchange Data Dictionary V5.289.
   + Change item type of _pdbx_dcc_density.twin_operator_xtriage from text to text.
   + Change item type of _pdbx_dcc_density.twin_fraction_xtriage from float to float-list defined.
   + Update range limits for _pdbx_percentile_view.rank and _pdbx_percentile_entity_view.rank.
+  + Change mandatory code of _pdbx_percentile_conditions.number_entries_total for the case that /wwPDB-validation-information/Entry/@no-percentile-property='true'.
 ;
 
 
@@ -56777,7 +56778,7 @@ save__pdbx_percentile_conditions.number_entries_total
 ;
     _item.name                  '_pdbx_percentile_conditions.number_entries_total'
     _item.category_id             pdbx_percentile_conditions
-    _item.mandatory_code          yes
+    _item.mandatory_code          no # for the case that /wwPDB-validation-information/Entry/@no-percentile-property='true'.
     loop_
     _item_range.maximum
     _item_range.minimum           .   1
@@ -56801,7 +56802,7 @@ save__pdbx_percentile_conditions.number_entries_total
     '/wwPDB-validation-information/Entry/@numPDBids-relative-percent-rota-outliers'                     wwpdb_validation.xsd    002
     '/wwPDB-validation-information/Entry/@numPDBids-relative-percentile-percent-RSRZ-outliers'          wwpdb_validation.xsd    002
     '/wwPDB-validation-information/Entry/@numPDBids-relative-percentile-percent-rama-outliers'          wwpdb_validation.xsd    002
-    '/wwPDB-validation-information/Entry/@numPDBids-relative-percentile-percent-rota-outliers'         wwpdb_validation.xsd    002
+    '/wwPDB-validation-information/Entry/@numPDBids-relative-percentile-percent-rota-outliers'          wwpdb_validation.xsd    002
 save_
 
 save__pdbx_percentile_conditions.ls_d_res_high
