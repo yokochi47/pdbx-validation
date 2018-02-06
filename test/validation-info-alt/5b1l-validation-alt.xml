@@ -516,8 +516,8 @@
          <PDBxv:I_over_sigI_resh>3.02</PDBxv:I_over_sigI_resh>
          <PDBxv:K_babinet>0.264</PDBxv:K_babinet>
          <PDBxv:K_solvent>0.317</PDBxv:K_solvent>
-         <PDBxv:Padilla-Yeates_L2_mean>0.471</PDBxv:Padilla-Yeates_L2_mean>
-         <PDBxv:Padilla-Yeates_L_mean>0.298</PDBxv:Padilla-Yeates_L_mean>
+         <PDBxv:Padilla-Yeates_L_mean>0.471</PDBxv:Padilla-Yeates_L_mean>
+         <PDBxv:Padilla-Yeates_L2_mean>0.298</PDBxv:Padilla-Yeates_L2_mean>
          <PDBxv:R_value_R_work>0.20</PDBxv:R_value_R_work>
          <PDBxv:R_value_R_free>0.24</PDBxv:R_value_R_free>
          <PDBxv:Rfree-Rwork>0.04</PDBxv:Rfree-Rwork>

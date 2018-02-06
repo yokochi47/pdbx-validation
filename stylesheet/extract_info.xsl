@@ -28,7 +28,7 @@
   <!-- percentile conditions id -->
 
   <xsl:variable name="no_percentile">
-    <xsl:if test="@no-percentile-property='true' and ../ModelledEntityInstance">true</xsl:if>
+    <xsl:if test="/wwPDB-validation-information/Entry/@no-percentile-property='true' and /wwPDB-validation-information/ModelledEntityInstance">true</xsl:if>
   </xsl:variable>
 
   <xsl:variable name="last_cond_abs_rna">
@@ -1062,6 +1062,7 @@ chemical shift list type, <xsl:value-of select="@type"/>, is not listed in XSLT 
           </PDBxv:pdbx_percentile_conditions>
         </xsl:when>
         <xsl:when test="$no_percentile='true' and /wwPDB-validation-information/ModelledEntityInstance[@relative_sidechain_percentile and @relative_sidechain_percentile!='NotAvailable']">
+          <PDBxv:pdbx_percentile_conditions id="{$last_cond_rel_rota}"/>
         </xsl:when>
       </xsl:choose>
 
