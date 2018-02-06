@@ -81,15 +81,13 @@ for arg ; do
 
    if [ ! -e $pdbml_file ] ; then
 
-    wget ftp://ftp.wwpdb.org/pub/pdb/data/structures/all/XML-noatom/$pdbid-noatom.xml.gz -P $WORK_DIR/pdbml
-    gunzip $pdbml_file.gz
+    wget ftp://ftp.wwpdb.org/pub/pdb/data/structures/all/XML-noatom/$pdbid-noatom.xml.gz -P $WORK_DIR/pdbml; gunzip $pdbml_file.gz
 
    fi
 
    if [ ! -e $info_file ] ; then
 
-    wget ftp://ftp.wwpdb.org/pub/pdb/validation_reports/${pdbid:1:2}/$pdbid/$pdbid"_validation.xml.gz" -P $WORK_DIR/validation_info
-    gunzip $info_file.gz
+    wget ftp://ftp.wwpdb.org/pub/pdb/validation_reports/${pdbid:1:2}/$pdbid/$pdbid"_validation.xml.gz" -P $WORK_DIR/validation_info; gunzip $info_file.gz
 
    fi
 

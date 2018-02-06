@@ -27,10 +27,6 @@
 
   <!-- percentile conditions id -->
 
-  <xsl:variable name="no_percentile">
-    <xsl:if test="/wwPDB-validation-information/Entry/@no-percentile-property='true' and /wwPDB-validation-information/ModelledEntityInstance">true</xsl:if>
-  </xsl:variable>
-
   <xsl:variable name="last_cond_abs_rna">
     <xsl:choose>
       <xsl:when test="/wwPDB-validation-information/Entry/@absolute-percentile-RNAsuiteness">1</xsl:when>
@@ -62,7 +58,7 @@
   <xsl:variable name="last_cond_abs_rama">
     <xsl:choose>
       <xsl:when test="/wwPDB-validation-information/Entry/@absolute-percentile-percent-rama-outliers"><xsl:value-of select="$last_cond_rel_clash+1"/></xsl:when>
-      <xsl:when test="$no_percentile='true' and /wwPDB-validation-information/ModelledEntityInstance[@absolute_rama_percentile and @absolute_rama_percentile!='NotAvailable']"><xsl:value-of select="$last_cond_rel_clash+1"/></xsl:when>
+      <xsl:when test="/wwPDB-validation-information/ModelledEntityInstance[@absolute_rama_percentile and @absolute_rama_percentile!='NotAvailable']"><xsl:value-of select="$last_cond_rel_clash+1"/></xsl:when>
       <xsl:otherwise><xsl:value-of select="$last_cond_rel_clash"/></xsl:otherwise>
     </xsl:choose>
   </xsl:variable>
@@ -70,7 +66,7 @@
   <xsl:variable name="last_cond_rel_rama">
     <xsl:choose>
       <xsl:when test="/wwPDB-validation-information/Entry/@relative-percentile-percent-rama-outliers"><xsl:value-of select="$last_cond_abs_rama+1"/></xsl:when>
-      <xsl:when test="$no_percentile='true' and /wwPDB-validation-information/ModelledEntityInstance[@relative_rama_percentile and @relative_rama_percentile!='NotAvailable']"><xsl:value-of select="$last_cond_abs_rama+1"/></xsl:when>
+      <xsl:when test="/wwPDB-validation-information/ModelledEntityInstance[@relative_rama_percentile and @relative_rama_percentile!='NotAvailable']"><xsl:value-of select="$last_cond_abs_rama+1"/></xsl:when>
       <xsl:otherwise><xsl:value-of select="$last_cond_abs_rama"/></xsl:otherwise>
     </xsl:choose>
   </xsl:variable>
@@ -78,7 +74,7 @@
   <xsl:variable name="last_cond_abs_rota">
     <xsl:choose>
       <xsl:when test="/wwPDB-validation-information/Entry/@absolute-percentile-percent-rota-outliers"><xsl:value-of select="$last_cond_rel_rama+1"/></xsl:when>
-      <xsl:when test="$no_percentile='true' and /wwPDB-validation-information/ModelledEntityInstance[@absolute_sidechain_percentile and @absolute_sidechain_percentile!='NotAvailable']"><xsl:value-of select="$last_cond_rel_rama+1"/></xsl:when>
+      <xsl:when test="/wwPDB-validation-information/ModelledEntityInstance[@absolute_sidechain_percentile and @absolute_sidechain_percentile!='NotAvailable']"><xsl:value-of select="$last_cond_rel_rama+1"/></xsl:when>
       <xsl:otherwise><xsl:value-of select="$last_cond_rel_rama"/></xsl:otherwise>
     </xsl:choose>
   </xsl:variable>
@@ -86,7 +82,7 @@
   <xsl:variable name="last_cond_rel_rota">
     <xsl:choose>
       <xsl:when test="/wwPDB-validation-information/Entry/@relative-percentile-percent-rota-outliers"><xsl:value-of select="$last_cond_abs_rota+1"/></xsl:when>
-      <xsl:when test="$no_percentile='true' and /wwPDB-validation-information/ModelledEntityInstance[@relative_sidechain_percentile and @relative_sidechain_percentile!='NotAvailable']"><xsl:value-of select="$last_cond_abs_rota+1"/></xsl:when>  
+      <xsl:when test="/wwPDB-validation-information/ModelledEntityInstance[@relative_sidechain_percentile and @relative_sidechain_percentile!='NotAvailable']"><xsl:value-of select="$last_cond_abs_rota+1"/></xsl:when>  
       <xsl:otherwise><xsl:value-of select="$last_cond_abs_rota"/></xsl:otherwise>
     </xsl:choose>
   </xsl:variable>
@@ -108,7 +104,7 @@
   <xsl:variable name="last_cond_abs_rsrz">
     <xsl:choose>
       <xsl:when test="/wwPDB-validation-information/Entry/@absolute-percentile-percent-RSRZ-outliers"><xsl:value-of select="$last_cond_rel_rfree+1"/></xsl:when>
-      <xsl:when test="$no_percentile='true' and /wwPDB-validation-information/ModelledEntityInstance[@absolute_RSRZ_percentile and @absolute_RSRZ_percentile!='NotAvailable']"><xsl:value-of select="$last_cond_rel_rfree+1"/></xsl:when>  
+      <xsl:when test="/wwPDB-validation-information/ModelledEntityInstance[@absolute_RSRZ_percentile and @absolute_RSRZ_percentile!='NotAvailable']"><xsl:value-of select="$last_cond_rel_rfree+1"/></xsl:when>  
       <xsl:otherwise><xsl:value-of select="$last_cond_rel_rfree"/></xsl:otherwise>
     </xsl:choose>
   </xsl:variable>
@@ -116,7 +112,7 @@
   <xsl:variable name="last_cond_rel_rsrz">
     <xsl:choose>
       <xsl:when test="/wwPDB-validation-information/Entry/@relative-percentile-percent-RSRZ-outliers"><xsl:value-of select="$last_cond_abs_rsrz+1"/></xsl:when>
-      <xsl:when test="$no_percentile='true' and /wwPDB-validation-information/ModelledEntityInstance[@relative_RSRZ_percentile and @relative_RSRZ_percentile!='NotAvailable']"><xsl:value-of select="$last_cond_abs_rsrz+1"/></xsl:when>   
+      <xsl:when test="/wwPDB-validation-information/ModelledEntityInstance[@relative_RSRZ_percentile and @relative_RSRZ_percentile!='NotAvailable']"><xsl:value-of select="$last_cond_abs_rsrz+1"/></xsl:when>   
       <xsl:otherwise><xsl:value-of select="$last_cond_abs_rsrz"/></xsl:otherwise>
     </xsl:choose>
   </xsl:variable>
@@ -1016,7 +1012,7 @@ chemical shift list type, <xsl:value-of select="@type"/>, is not listed in XSLT 
             <xsl:element name="PDBxv:number_entries_total"><xsl:value-of select="@numPDBids-absolute-percentile-percent-rama-outliers"/></xsl:element>
           </PDBxv:pdbx_percentile_conditions>
         </xsl:when>
-        <xsl:when test="$no_percentile='true' and /wwPDB-validation-information/ModelledEntityInstance[@absolute_rama_percentile and @absolute_rama_percentile!='NotAvailable']">
+        <xsl:when test="/wwPDB-validation-information/ModelledEntityInstance[@absolute_rama_percentile and @absolute_rama_percentile!='NotAvailable']">
           <PDBxv:pdbx_percentile_conditions id="{$last_cond_abs_rama}"/>
         </xsl:when>
       </xsl:choose>
@@ -1033,7 +1029,7 @@ chemical shift list type, <xsl:value-of select="@type"/>, is not listed in XSLT 
             </xsl:if>
           </PDBxv:pdbx_percentile_conditions>
         </xsl:when>
-        <xsl:when test="$no_percentile='true' and /wwPDB-validation-information/ModelledEntityInstance[@relative_rama_percentile and @relative_rama_percentile!='NotAvailable']">
+        <xsl:when test="/wwPDB-validation-information/ModelledEntityInstance[@relative_rama_percentile and @relative_rama_percentile!='NotAvailable']">
           <PDBxv:pdbx_percentile_conditions id="{$last_cond_rel_rama}"/>
         </xsl:when>
       </xsl:choose>
@@ -1044,7 +1040,7 @@ chemical shift list type, <xsl:value-of select="@type"/>, is not listed in XSLT 
             <xsl:element name="PDBxv:number_entries_total"><xsl:value-of select="@numPDBids-absolute-percentile-percent-rota-outliers"/></xsl:element>
           </PDBxv:pdbx_percentile_conditions>
         </xsl:when>
-        <xsl:when test="$no_percentile='true' and /wwPDB-validation-information/ModelledEntityInstance[@absolute_sidechain_percentile and @absolute_sidechain_percentile!='NotAvailable']">
+        <xsl:when test="/wwPDB-validation-information/ModelledEntityInstance[@absolute_sidechain_percentile and @absolute_sidechain_percentile!='NotAvailable']">
           <PDBxv:pdbx_percentile_conditions id="{$last_cond_abs_rota}"/>
         </xsl:when>
       </xsl:choose>
@@ -1061,7 +1057,7 @@ chemical shift list type, <xsl:value-of select="@type"/>, is not listed in XSLT 
             </xsl:if>
           </PDBxv:pdbx_percentile_conditions>
         </xsl:when>
-        <xsl:when test="$no_percentile='true' and /wwPDB-validation-information/ModelledEntityInstance[@relative_sidechain_percentile and @relative_sidechain_percentile!='NotAvailable']">
+        <xsl:when test="/wwPDB-validation-information/ModelledEntityInstance[@relative_sidechain_percentile and @relative_sidechain_percentile!='NotAvailable']">
           <PDBxv:pdbx_percentile_conditions id="{$last_cond_rel_rota}"/>
         </xsl:when>
       </xsl:choose>
@@ -1090,7 +1086,7 @@ chemical shift list type, <xsl:value-of select="@type"/>, is not listed in XSLT 
             <xsl:element name="PDBxv:number_entries_total"><xsl:value-of select="@numPDBids-absolute-percentile-percent-RSRZ-outliers"/></xsl:element>
           </PDBxv:pdbx_percentile_conditions>
         </xsl:when>
-        <xsl:when test="$no_percentile='true' and /wwPDB-validation-information/ModelledEntityInstance[@absolute_RSRZ_percentile and @absolute_RSRZ_percentile!='NotAvailable']">
+        <xsl:when test="/wwPDB-validation-information/ModelledEntityInstance[@absolute_RSRZ_percentile and @absolute_RSRZ_percentile!='NotAvailable']">
           <PDBxv:pdbx_percentile_conditions id="{$last_cond_abs_rsrz}"/>
         </xsl:when>
       </xsl:choose>
@@ -1107,7 +1103,7 @@ chemical shift list type, <xsl:value-of select="@type"/>, is not listed in XSLT 
             </xsl:if>
           </PDBxv:pdbx_percentile_conditions>
         </xsl:when>
-        <xsl:when test="$no_percentile='true' and /wwPDB-validation-information/ModelledEntityInstance[@absolute_RSRZ_percentile and @absolute_RSRZ_percentile!='NotAvailable']">
+        <xsl:when test="/wwPDB-validation-information/ModelledEntityInstance[@absolute_RSRZ_percentile and @absolute_RSRZ_percentile!='NotAvailable']">
           <PDBxv:pdbx_percentile_conditions id="{$last_cond_rel_rsrz}"/>
         </xsl:when>
       </xsl:choose>
