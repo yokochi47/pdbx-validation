@@ -1357,16 +1357,18 @@ Unmatched components exist in WilsonBaniso, <xsl:value-of select="position()"/>,
             <xsl:element name="PDBxv:Ramachandran_outlier_percent_nmr_well_formed"><xsl:value-of select="@percent-rama-outliers"/></xsl:element>
           </xsl:if>
         </xsl:if>
-        <xsl:element name="PDBxv:all_atom_clashscore">
-          <xsl:choose>
-            <xsl:when test="$nmr=true()">
-              <xsl:value-of select="@clashscore-full-length"/>
-            </xsl:when>
-            <xsl:otherwise>
-              <xsl:value-of select="@clashscore"/>
-            </xsl:otherwise>
-          </xsl:choose>
-        </xsl:element>
+        <xsl:if test="@clashscore or ($nmr=true() and @clashscore-full-length)">
+          <xsl:element name="PDBxv:all_atom_clashscore">
+            <xsl:choose>
+              <xsl:when test="$nmr=true()">
+                <xsl:value-of select="@clashscore-full-length"/>
+              </xsl:when>
+              <xsl:otherwise>
+                <xsl:value-of select="@clashscore"/>
+              </xsl:otherwise>
+            </xsl:choose>
+          </xsl:element>
+        </xsl:if>
         <xsl:if test="@clashscore and $nmr=true()">
           <xsl:element name="PDBxv:all_atom_clashscore_nmr_well_formed"><xsl:value-of select="@clashscore"/></xsl:element>
         </xsl:if>

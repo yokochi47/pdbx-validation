@@ -51,6 +51,9 @@ File path | Document
 
 ## Release notes
 
+- **Feb 7, 2018**: Release v0.0.5
+	- Add null value check for pdbx_dcc_geometry.all_atom_clashscore data item.
+
 - **Feb 6, 2018**: Release v0.0.4
 	- Update wwPDB Validation Information Dictionary.
 	- Add null value check for pdbx_dcc_geometry.*_nmr_well_formed data items.
