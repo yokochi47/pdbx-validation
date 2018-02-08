@@ -32,6 +32,7 @@ if [ $weekday -ge 1 ] && [ $weekday -le 4 ] ; then
  rm -f $rsync_log
 
  rsync -avz --delete ftp.pdbj.org::ftp_data/structures/divided/$SRC_DIR/ $SRC_DIR
+
 fi
 
 xml_file_total=pdbml_file_total

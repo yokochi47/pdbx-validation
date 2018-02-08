@@ -16,7 +16,7 @@ rsync_log=rsync_log
 
 if [ $weekday -ge 1 ] && [ $weekday -le 4 ] ; then
 
- rsync -rlpt -v -z --delete --dry-run ftp.pdbj.org::ftp/validation_reports . | grep xml.gz | cut -d '/' -f 3 > $rsync_log
+ rsync -rlpt -v -z --delete --dry-run ftp.pdbj.org::ftp/$SRC_DIR . | grep xml.gz | cut -d '/' -f 3 > $rsync_log
 
  while read pdb_id
  do
@@ -31,7 +31,8 @@ if [ $weekday -ge 1 ] && [ $weekday -le 4 ] ; then
 
  rm -f $rsync_log
 
- rsync -rlpt -v -z --delete ftp.pdbj.org::ftp/validation_reports .
+ rsync -rlpt -v -z --delete ftp.pdbj.org::ftp/$SRC_DIR .
+
 fi
 
 xml_file_total=validation_file_total
