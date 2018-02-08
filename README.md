@@ -51,7 +51,7 @@ File path | Document
 ## Release notes
 
 - **Feb 8, 2018**: Release v0.0.6
-	- Fixed scripts: merge_pdbml_info_worker.sh and validate_all.sh
+	- Fix scripts: merge_pdbml_info_worker.sh and validate_all.sh
 
 - **Feb 7, 2018**: Release v0.0.5
 	- Add null value check for pdbx_dcc_geometry.all_atom_clashscore data item.
