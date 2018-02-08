@@ -64,8 +64,6 @@ fi
 
 date -u +"%b %d, %Y" > /tmp/pdb-validation-last
 
-XML_DIR=validation_info
-
 xml_file_list=xml_file_list
 
 mkdir -p $XML_DIR
