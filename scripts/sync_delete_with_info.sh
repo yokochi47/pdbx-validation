@@ -12,7 +12,7 @@ id_list=id_list
 
 if [ -d $XML_DIR ] ; then
 
- find $XML_DIR -name '*.xml' | cut -d '/' -f 2 | cut -d '-' -f 1 > $id_list
+ find $XML_DIR -name '*.xml' | cut -d '/' -f 2 | cut -d '_' -f 1 > $id_list
 
  while read pdb_id ; do
   if [ ! -e $SRC_DIR/${pdb_id:1:2}/$pdb_id/$pdb_id"_validation.xml.gz" ] ; then
