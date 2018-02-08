@@ -16,7 +16,7 @@ if [ -d $XML_DIR ] ; then
 
  while read pdb_id ; do
   if [ ! -e $SRC_DIR/${pdb_id:1:2}/$pdb_id-noatom.xml.gz ] ; then
-   echo delete $XML_DIR/$pdb_id-noatom.xml
+   echo deleting $XML_DIR/$pdb_id-noatom.xml
    rm -f $XML_DIR/$pdb_id-noatom.xml
   fi
  done < $id_list
@@ -29,7 +29,7 @@ if [ -d $PDBML_EXT ] ; then
 
  while read pdb_id ; do
   if [ ! -e $SRC_DIR/${pdb_id:1:2}/$pdb_id-noatom.xml.gz ] ; then
-   echo delete $PDBML_EXT/$pdb_id-noatom-ext.xml
+   echo deleting $PDBML_EXT/$pdb_id-noatom-ext.xml
    rm -f $PDBML_EXT/$pdb_id-noatom-ext.xml
   fi
   done < $id_list
@@ -42,7 +42,7 @@ if [ -d $VALID_INFO_ALT ] ; then
 
  while read pdb_id ; do
   if [ ! -e $SRC_DIR/${pdb_id:1:2}/$pdb_id-noatom.xml.gz ] ; then
-   echo delete $VALID_INFO_ALT/$pdb_id-validation-alt.xml
+   echo deleting $VALID_INFO_ALT/$pdb_id-validation-alt.xml
    rm -f $VALID_INFO_ALT/$pdb_id-validation-alt.xml
   fi
  done < $id_list
@@ -55,7 +55,7 @@ if [ -d $PDBML_VALID ] ; then
 
  while read pdb_id ; do
   if [ ! -e $SRC_DIR/${pdb_id:1:2}/$pdb_id-noatom.xml.gz ] ; then
-   echo delete $PDBML_VALID/$pdb_id-validation-full.xml
+   echo deleting $PDBML_VALID/$pdb_id-validation-full.xml
    rm -f $PDBML_VALID/$pdb_id-validation-full.xml
   fi
  done < $id_list
@@ -68,7 +68,7 @@ if [ -d $RDF_VALID ] ; then
 
  while read pdb_id ; do
   if [ ! -e $SRC_DIR/${pdb_id:1:2}/$pdb_id-noatom.xml.gz ] ; then
-   echo $RDF_VALID/$pdb_id-validation.rdf
+   echo deleting $RDF_VALID/$pdb_id-validation.rdf
    rm -f $RDF_VALID/$pdb_id-validation.rdf
   fi
  done < $id_list
