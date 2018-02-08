@@ -42,7 +42,7 @@ if [ $weekday -ge 1 ] && [ $weekday -le 4 ] ; then
   done < $rsync_log
  fi
 
- if [ -d $RDF_VALIT ] ; then
+ if [ -d $RDF_VALID ] ; then
   while read pdb_id ; do
    rm -f $RDF_VALID/$pdb_id-validation.rdf
   done < $rsync_log
