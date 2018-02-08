@@ -6,7 +6,27 @@ SRC_DIR=XML-noatom
 
 weekday=`date -u +"%w"`
 
+PDBML_EXT=pdbml-ext
+VALID_INFO_ALT=validation-info-alt
+PDBML_VALID=pdbml-validation
+RDF_VALID=rdf-validation
+
+rsync_log=rsync_log
+
 if [ $weekday -ge 1 ] && [ $weekday -le 4 ] ; then
+
+ rsync -avz --delete --dry-run ftp.pdbj.org::ftp_data/structures/divided/$SRC_DIR/ $SRC_DIR | grep xml.gz | cut -d '/' -f 2 | cut -d '-' -f 1 > $rsync_log
+
+ while read pdb_id
+ do
+  rm -f $PDBML_EXT/$pdb_id-noatom-ext.xml
+  rm -f $VALID_INFO_ALT/$pdb_id-validation-alt.xml
+  rm -f $PDBML_VALID/$pdb_id-validation-full.xml
+  rm -f $RDF_VALID/$pdb_id-validation.rdf
+ done < $rsync_log
+
+ rm -f $rsync_log
+
  rsync -avz --delete ftp.pdbj.org::ftp_data/structures/divided/$SRC_DIR/ $SRC_DIR
 fi
 
