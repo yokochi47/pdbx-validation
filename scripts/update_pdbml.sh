@@ -6,6 +6,7 @@ SRC_DIR=XML-noatom
 
 weekday=`date -u +"%w"`
 
+XML_DIR=pdbml
 PDBML_EXT=pdbml-ext
 VALID_INFO_ALT=validation-info-alt
 PDBML_VALID=pdbml-validation
@@ -19,10 +20,13 @@ if [ $weekday -ge 1 ] && [ $weekday -le 4 ] ; then
 
  while read pdb_id
  do
+
+  rm -f $XML_DIR/$pdb_id-noatom.xml
   rm -f $PDBML_EXT/$pdb_id-noatom-ext.xml
   rm -f $VALID_INFO_ALT/$pdb_id-validation-alt.xml
   rm -f $PDBML_VALID/$pdb_id-validation-full.xml
   rm -f $RDF_VALID/$pdb_id-validation.rdf
+
  done < $rsync_log
 
  rm -f $rsync_log
@@ -45,7 +49,7 @@ if [ $updated = 0 ] || [ ! -e $xml_file_total ] ; then
  total=`find $SRC_DIR/* -name '*.xml.gz' | wc -l`
 
  if [ $total = $last ] ; then
-  
+
   echo $DB_NAME is update.
   exit 0
 
@@ -58,8 +62,6 @@ if [ $updated = 0 ] || [ ! -e $xml_file_total ] ; then
 fi
 
 date -u +"%b %d, %Y" > /tmp/pdbml-last
-
-XML_DIR=pdbml
 
 xml_file_list=xml_file_list
 

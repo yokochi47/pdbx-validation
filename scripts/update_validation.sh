@@ -6,6 +6,7 @@ SRC_DIR=validation_reports
 
 weekday=`date -u +"%w"`
 
+XML_DIR=validation_info
 PDBML_EXT=pdbml-ext
 VALID_INFO_ALT=validation-info-alt
 PDBML_VALID=pdbml-validation
@@ -19,10 +20,13 @@ if [ $weekday -ge 1 ] && [ $weekday -le 4 ] ; then
 
  while read pdb_id
  do
+
+  rm -f $XML_DIR/$pdb_id"_validation.xml"
   rm -f $PDBML_EXT/$pdb_id-noatom-ext.xml
   rm -f $VALID_INFO_ALT/$pdb_id-validation-alt.xml
   rm -f $PDBML_VALID/$pdb_id-validation-full.xml
   rm -f $RDF_VALID/$pdb_id-validation.rdf
+
  done < $rsync_log
 
  rm -f $rsync_log
@@ -47,7 +51,7 @@ if [ $updated = 0 ] || [ ! -e $xml_file_total ] ; then
  total=`find $SRC_DIR -regextype posix-egrep -regex '.*/[0-9][0-9[a-z]{3}_validation.xml.gz' | wc -l`
 
  if [ $total = $last ] ; then
-  
+
   echo $DB_NAME is update.
 
  else
