@@ -51,8 +51,8 @@ if [ ! -e $EXT_PDBML_XSL ] ; then
   exit 1
  fi
 
-echo
-echo Generated: $EXT_PDBML_XSL
+ echo
+ echo Generated: $EXT_PDBML_XSL
 
 fi
 
