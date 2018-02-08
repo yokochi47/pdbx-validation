@@ -64,7 +64,7 @@ do
 
  if [ $proc_id_mod = $PROC_ID ] ; then
 
-  pdbid=`basename $pdbml_ext_file -validation.xml`
+  pdbid=`basename $pdbml_ext_file -noatom-ext.xml`
   info_alt_file=$VALID_INFO_ALT/$pdbid-validation-alt.xml
   pdbml_valid_file=$WORK_DIR/$pdbid-validation-full.xml
   err_file=$WORK_DIR/merge_pdbml_info_$pdbid.err

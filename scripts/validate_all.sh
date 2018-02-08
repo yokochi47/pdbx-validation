@@ -6,7 +6,7 @@ ARGV=`getopt --long -o "d:" "$@"`
 eval set -- "$ARGV"
 while true ; do
  case "$1" in
- -v)
+ -d)
   XML_DIR=$1
   shift
  ;;
