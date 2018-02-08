@@ -52,7 +52,7 @@ File path | Document
 
 - **Feb 8, 2018**: Release v0.0.6
 	- Fix scripts: merge_pdbml_info_worker.sh and validate_all.sh
-	- Fix update scripts (update_pdbml.sh and update_validation.sh) to support deleted PDB entries.
+	- Fix update scripts (update_pdbml.sh and update_validation.sh) to support deleted or revised PDB entries.
 
 - **Feb 7, 2018**: Release v0.0.5
 	- Add null value check for pdbx_dcc_geometry.all_atom_clashscore data item.
