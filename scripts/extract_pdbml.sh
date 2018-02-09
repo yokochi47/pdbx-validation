@@ -72,29 +72,37 @@ if [ ! -d $VALID_INFO ] ; then
  ./scripts/update_validation.sh
 fi
 
-echo
-echo Extracting PDBML...
+last=`find $PDBML_EXT -name '*.xml'`
+err=`find $PDBML_EXT -name '*.err'`
+total=`find $PDBML -name '*.xml'`
 
-pdbml_file_list=pdbml_file_list
+if [ $err != 0 ] || [ $total != $last ] ; then
 
-find $PDBML -name '*.xml' > $pdbml_file_list
+ echo
+ echo Extracting PDBML...
 
-for proc_id in `seq 1 $MAXPROCS` ; do
+ pdbml_file_list=pdbml_file_list
 
- ./scripts/extract_pdbml_worker.sh -d $PDBML_EXT -e $VALID_INFO -l $pdbml_file_list -n $proc_id"of"$MAXPROCS $VALID_OPT &
+ find $PDBML -name '*.xml' > $pdbml_file_list
 
-done
+ for proc_id in `seq 1 $MAXPROCS` ; do
 
-if [ $? != 0 ] ; then
- echo "$0 aborted."
- exit 1
+  ./scripts/extract_pdbml_worker.sh -d $PDBML_EXT -e $VALID_INFO -l $pdbml_file_list -n $proc_id"of"$MAXPROCS $VALID_OPT &
+
+ done
+
+ if [ $? != 0 ] ; then
+  echo "$0 aborted."
+  exit 1
+ fi
+
+ wait
+
+ echo
+
+ rm -f $pdbml_file_list
+
 fi
-
-wait
-
-echo
-
-rm -f $pdbml_file_list
 
 echo $PDBML_EXT is up-to-date.
 

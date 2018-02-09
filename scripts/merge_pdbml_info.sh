@@ -72,29 +72,37 @@ PDBML_VALID=pdbml-validation
 
 mkdir -p $PDBML_VALID
 
-echo
-echo Merging PDBML and wwPDB Validation Information...
+last=`find $PDBML_VALID -name '*.xml'`
+err=`find $PDBML_VALID -name '*.err'`
+total=`find $PDBML_EXT -name '*.xml'`
 
-pdbml_file_list=pdbml_file_list
+if [ $err != 0 ] || [ $total != $last ] ; then
 
-find $PDBML_EXT -name '*.xml' > $pdbml_file_list
+ echo
+ echo Merging PDBML and wwPDB Validation Information...
 
-for proc_id in `seq 1 $MAXPROCS` ; do
+ pdbml_file_list=pdbml_file_list
 
- ./scripts/merge_pdbml_info_worker.sh -d $PDBML_VALID -e $VALID_INFO_ALT -l $pdbml_file_list -n $proc_id"of"$MAXPROCS $VALID_OPT &
+ find $PDBML_EXT -name '*.xml' > $pdbml_file_list
 
-done
+ for proc_id in `seq 1 $MAXPROCS` ; do
 
-if [ $? != 0 ] ; then
- echo "$0 aborted."
- exit 1
+  ./scripts/merge_pdbml_info_worker.sh -d $PDBML_VALID -e $VALID_INFO_ALT -l $pdbml_file_list -n $proc_id"of"$MAXPROCS $VALID_OPT &
+
+ done
+
+ if [ $? != 0 ] ; then
+  echo "$0 aborted."
+  exit 1
+ fi
+
+ wait
+
+ echo
+
+ rm -f $pdbml_file_list
+
 fi
-
-wait
-
-echo
-
-rm -f $pdbml_file_list
 
 echo $PDBML_VALID is up-to-date.
 

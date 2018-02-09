@@ -49,29 +49,37 @@ RDF_VALID=rdf-validation
 
 mkdir -p $RDF_VALID
 
-echo
-echo Translating PDBML-validation to wwPDB/RDF-validation...
+last=`find $RDF_VALID -name '*.rdf'`
+err=`find $RDF_VALID -name '*.err'`
+total=`find $PDBML_VALID -name '*.xml'`
 
-pdbml_file_list=pdbml_file_list
+if [ $err != 0 ] || [ $total != $last ] ; then
 
-find $PDBML_VALID -name '*.xml' > $pdbml_file_list
+ echo
+ echo Translating PDBML-validation to wwPDB/RDF-validation...
 
-for proc_id in `seq 1 $MAXPROCS` ; do
+ pdbml_file_list=pdbml_file_list
 
- ./scripts/translate_to_rdf_worker.sh -d $RDF_VALID -l $pdbml_file_list -n $proc_id"of"$MAXPROCS $VALID_OPT &
+ find $PDBML_VALID -name '*.xml' > $pdbml_file_list
 
-done
+ for proc_id in `seq 1 $MAXPROCS` ; do
 
-if [ $? != 0 ] ; then
- echo "$0 aborted."
- exit 1
+  ./scripts/translate_to_rdf_worker.sh -d $RDF_VALID -l $pdbml_file_list -n $proc_id"of"$MAXPROCS $VALID_OPT &
+
+ done
+
+ if [ $? != 0 ] ; then
+  echo "$0 aborted."
+  exit 1
+ fi
+
+ wait
+
+ echo
+
+ rm -f $pdbml_file_list
+
 fi
-
-wait
-
-echo
-
-rm -f $pdbml_file_list
 
 echo $RDF_VALID is update.
 

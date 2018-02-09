@@ -68,7 +68,7 @@ do
    fi
 
    if [ $proc_id_mod = 0 ] ; then
-    echo -n "\rDone "$((proc_id + 1)) of $total ...
+    echo -e -n "\rDone "$((proc_id + 1)) of $total ...
    fi
 
   fi

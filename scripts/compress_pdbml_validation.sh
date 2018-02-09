@@ -14,24 +14,31 @@ echo Compressing PDBML-validation...
 
 mkdir -p $PDBML_VALID_GZ
 
-pdbml_file_list=pdbml_file_list
+last=`find $PDBML_VALID_GZ/* -name '*.xml.gz'`
+total=`find $PDBML_VALID -name '*.xml'`
 
-find $PDBML_VALID -name '*.xml' > $pdbml_file_list
+if [ $total != $last ] ; then
 
-while read xml_file
-do
+ pdbml_file_list=pdbml_file_list
 
- pdb_id=`basename $xml_file -validation-full.xml`
- div_dir=$PDBML_VALID_GZ/${pdb_id:1:2}
+ find $PDBML_VALID -name '*.xml' > $pdbml_file_list
 
- mkdir -p $div_dir
+ while read xml_file
+ do
 
- cp -f $xml_file $div_dir
- gzip $div_dir/$pdb_id-validation-full.xml
+  pdb_id=`basename $xml_file -validation-full.xml`
+  div_dir=$PDBML_VALID_GZ/${pdb_id:1:2}
 
-done < $pdbml_file_list
+  mkdir -p $div_dir
 
-rm -f $pdbml_file_list
+  cp -f $xml_file $div_dir
+  gzip $div_dir/$pdb_id-validation-full.xml
+
+ done < $pdbml_file_list
+
+ rm -f $pdbml_file_list
+
+fi
 
 echo $DB_NAME" ("$PDBML_VALID_GZ") is up-to-date."
 

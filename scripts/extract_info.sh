@@ -51,29 +51,37 @@ if [ ! -d $PDBML_EXT ] ; then
  ./scripts/extract_pdbml.sh
 fi
 
-echo
-echo Extracting wwPDB Validation Information...
+last=`find $VALID_INFO_ALT -name '*.xml'`
+err=`find $VALID_INFO_ALT -name '*.err'`
+total=`find $VALID_INFO -name '*.xml'`
 
-info_file_list=info_file_list
+if [ $err != 0 ] || [ $total != $last ] ; then
 
-find $VALID_INFO -name '*.xml' > $info_file_list
+ echo
+ echo Extracting wwPDB Validation Information...
 
-for proc_id in `seq 1 $MAXPROCS` ; do
+ info_file_list=info_file_list
 
- ./scripts/extract_info_worker.sh -d $VALID_INFO_ALT -e $PDBML_EXT -l $info_file_list -n $proc_id"of"$MAXPROCS $VALID_OPT &
+ find $VALID_INFO -name '*.xml' > $info_file_list
 
-done
+ for proc_id in `seq 1 $MAXPROCS` ; do
 
-if [ $? != 0 ] ; then
- echo "$0 aborted."
- exit 1
+  ./scripts/extract_info_worker.sh -d $VALID_INFO_ALT -e $PDBML_EXT -l $info_file_list -n $proc_id"of"$MAXPROCS $VALID_OPT &
+
+ done
+
+ if [ $? != 0 ] ; then
+  echo "$0 aborted."
+  exit 1
+ fi
+
+ wait
+
+ echo
+
+ rm -f $info_file_list
+
 fi
-
-wait
-
-echo
-
-rm -f $info_file_list
 
 echo $VALID_INFO_ALT is up-to-date.
 

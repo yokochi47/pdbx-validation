@@ -14,24 +14,31 @@ echo Compressing wwPDB/RDF-validation...
 
 mkdir -p $RDF_VALID_GZ
 
-rdf_file_list=rdf_file_list
+last=`find $RDF_VALID_GZ/* -regextype posix-egrep -regex '.*/[0-9][0-9a-z]{3}-validation.rdf.gz'`
+total=`find $RDF_VALID -name '*.rdf'`
 
-find $RDF_VALID -name '*.rdf' > $rdf_file_list
+if [ $total != $last ] ; then
 
-while read rdf_file
-do
+ rdf_file_list=rdf_file_list
 
- pdb_id=`basename $rdf_file -validation.rdf`
- div_dir=$RDF_VALID_GZ/${pdb_id:1:2}/$pdb_id
+ find $RDF_VALID -name '*.rdf' > $rdf_file_list
 
- mkdir -p $div_dir
+ while read rdf_file
+ do
 
- cp -f $rdf_file $div_dir
- gzip $div_dir/$pdb_id-validation.rdf
+  pdb_id=`basename $rdf_file -validation.rdf`
+  div_dir=$RDF_VALID_GZ/${pdb_id:1:2}/$pdb_id
 
-done < $rdf_file_list
+  mkdir -p $div_dir
 
-rm -f $rdf_file_list
+  cp -f $rdf_file $div_dir
+  gzip $div_dir/$pdb_id-validation.rdf
+
+ done < $rdf_file_list
+
+ rm -f $rdf_file_list
+
+fi
 
 echo $DB_NAME" ("$RDF_VALID_GZ") is up-to-date."
 

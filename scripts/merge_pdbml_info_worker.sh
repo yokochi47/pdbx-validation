@@ -88,14 +88,14 @@ do
     if [ $? = 0 ] ; then
      rm -f $err_file
      if [ $proc_id_mod = 0 ] ; then
-      echo -n "\rDone "$((proc_id + 1)) of $total ...
+      echo -e -n "\rDone "$((proc_id + 1)) of $total ...
      fi
     else
      cat $err_file
     fi
 
    elif [ $proc_id_mod = 0 ] ; then
-    echo -n "\rDone "$((proc_id + 1)) of $total ...
+    echo -e -n "\rDone "$((proc_id + 1)) of $total ...
    fi
 
   fi
