@@ -34,7 +34,7 @@ if [ -d $PDBML_EXT ] ; then
    echo deleting $PDBML_EXT/$pdb_id-noatom-ext.xml
    rm -f $PDBML_EXT/$pdb_id-noatom-ext.xml
   fi
-  done < $id_list
+ done < $id_list
 
 fi
 
@@ -74,6 +74,7 @@ if [ -d $RDF_VALID ] ; then
    rm -f $RDF_VALID/$pdb_id-validation.rdf
   fi
  done < $id_list
+
 fi
 
 if [ -d $PDBML_VALID_GZ ] ; then
