@@ -74,7 +74,7 @@ fi
 
 last=`find $PDBML_EXT -name '*.xml' | wc -l`
 err=`find $PDBML_EXT -name '*.err' | wc -l`
-total=`find $PDBML -name '*.xml' | wc -l`
+total=`find $VALID_INFO -name '*.xml' | wc -l`
 
 if [ $err != 0 ] || [ $total != $last ] ; then
 
