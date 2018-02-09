@@ -56,6 +56,7 @@ PROC_ID=`echo $PROC_INFO | cut -d 'o' -f 1`
 PROC_ID=`expr $PROC_ID - 1`
 
 proc_id=0
+total=`wc -l $FILE_LIST`
 
 while read pdbml_file
 do
@@ -86,13 +87,15 @@ do
 
     if [ $? = 0 ] ; then
      rm -f $err_file
-     echo -n .
+     if [ $proc_id = 0 ] ; then
+      echo -n "\rdone "$((proc_id + 1)) of $total ...
+     fi
     else
      cat $err_file
     fi
 
-   else
-     echo -n .
+   elif [ $proc_id = 0 ] then
+    echo -n "\rdone "$((proc_id + 1)) of $total ...
    fi
 
   fi
