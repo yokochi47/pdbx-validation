@@ -23,7 +23,9 @@ PDBML_EXT=pdbml-ext
 VALID_INFO_ALT=validation-info-alt
 PDBML_VALID=pdbml-validation
 
-if [ -d $PDBML_EXT ] ; then
+total=`ls $PDBML_EXT | wc -l`
+
+if [ -d $PDBML_EXT ] && [ $total > 100000 ] ; then
 
  ./scripts/extract_pdbml.sh $VALIDATE_OPT
 
@@ -37,7 +39,9 @@ else
 
 fi
 
-if [ -d $VALID_INFO_ALT ] ; then
+total=`ls $VALID_INFO_ALT | wc -l`
+
+if [ -d $VALID_INFO_ALT ] && [ $total > 100000 ] ; then
 
  ./scripts/extract_info.sh $VALIDATE_OPT
 
@@ -51,7 +55,9 @@ else
 
 fi
 
-if [ -d $PDBML_VALID ] ; then
+total=`ls $PDBML_VALID | wc -l`
+
+if [ -d $PDBML_VALID ] && [ $total > 100000 ] ; then
 
  ./scripts/merge_pdbml_info.sh -v
 

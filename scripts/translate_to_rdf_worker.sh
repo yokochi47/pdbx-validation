@@ -52,9 +52,9 @@ do
 
  if [ $proc_id_mod = $PROC_ID ] ; then
 
-  pdbid=`basename $pdbml_valid_file -validation-full.xml`
-  rdf_valid_file=$WORK_DIR/$pdbid-validation.rdf
-  err_file=$WORK_DIR/translate_to_rdf_$pdbid.err
+  pdb_id=`basename $pdbml_valid_file -validation-full.xml`
+  rdf_valid_file=$WORK_DIR/$pdb_id-validation.rdf
+  err_file=$WORK_DIR/translate_to_rdf_$pdb_id.err
 
   if [ ! -e $pdbml_valid_file ] || [ -e $err_file ]; then
 
@@ -68,7 +68,7 @@ do
    fi
 
    if [ $proc_id = 0 ] ; then
-    echo -n "\rdone "$((proc_id + 1)) of $total ...
+    echo -n "\rDone "$((proc_id + 1)) of $total ...
    fi
 
   fi

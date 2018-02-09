@@ -65,10 +65,10 @@ do
 
  if [ $proc_id_mod = $PROC_ID ] ; then
 
-  pdbid=`basename $valid_file _validation.xml`
-  info_alt_file=$WORK_DIR/$pdbid-validation-alt.xml
-  pdbml_ext_file=$PDBML_EXT/$pdbid-noatom-ext.xml
-  err_file=$WORK_DIR/extract_info_$pdbid.err
+  pdb_id=`basename $valid_file _validation.xml`
+  info_alt_file=$WORK_DIR/$pdb_id-validation-alt.xml
+  pdbml_ext_file=$PDBML_EXT/$pdb_id-noatom-ext.xml
+  err_file=$WORK_DIR/extract_info_$pdb_id.err
 
   if [ -e $pdbml_ext_file ] && ( [ ! -e $info_alt_file ] || [ -e $err_file ] ) ; then
 
@@ -88,14 +88,14 @@ do
     if [ $? = 0 ] ; then
      rm -f $err_file
      if [ $proc_id = 0 ] ; then
-      echo -n "\rdone "$((proc_id + 1)) of $total ...
+      echo -n "\rDone "$((proc_id + 1)) of $total ...
      fi
     else
      cat $err_file
     fi
 
    elif [ $proc_id = 0 ] ; then
-    echo -n "\rdone "$((proc_id + 1)) of $total ...
+    echo -n "\rDone "$((proc_id + 1)) of $total ...
    fi
 
   fi

@@ -75,5 +75,5 @@ echo
 
 rm -f $info_file_list
 
-echo $VALID_INFO_ALT is update.
+echo $VALID_INFO_ALT is up-to-date.
 

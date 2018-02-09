@@ -96,5 +96,5 @@ echo
 
 rm -f $pdbml_file_list
 
-echo $PDBML_VALID is update.
+echo $PDBML_VALID is up-to-date.
 

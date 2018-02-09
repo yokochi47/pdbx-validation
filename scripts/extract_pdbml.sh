@@ -96,5 +96,5 @@ echo
 
 rm -f $pdbml_file_list
 
-echo $PDBML_EXT is update.
+echo $PDBML_EXT is up-to-date.
 
