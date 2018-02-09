@@ -50,13 +50,13 @@ if [ $weekday -ge 1 ] && [ $weekday -le 4 ] ; then
   done < $rsync_log
  fi
 
- if [ -d $PDBML_VALID_GZ ] ; the
+ if [ -d $PDBML_VALID_GZ ] ; then
   while read pdb_id ; do
    rm -f $PDBML_VALID_GZ/${pdb_id:1:2}/$pdb_id-validation-full.xml.gz
-   done < $rsync_log
+  done < $rsync_log
  fi
 
- if [ -d $RDF_VALID_GZ ] ; the
+ if [ -d $RDF_VALID_GZ ] ; then
   while read pdb_id ; do
    rm -f $RDF_VALID_GZ/${pdb_id:1:2}/$pdb_id/$pdb_id-validation.rdf.gz
    rmdir --ignore-fail-on-non-empty $RDF_VALID_GZ/${pdb_id:1:2}/$pdb_id
