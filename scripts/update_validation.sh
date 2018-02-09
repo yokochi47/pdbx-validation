@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DB_NAME="wwPDB Validation Information"
+DB_NAME="wwPDB Validation Report"
 
 SRC_DIR=validation_reports
 
