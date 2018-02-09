@@ -85,8 +85,7 @@ if [ $updated = 0 ] || [ ! -e $xml_file_total ] ; then
 
  if [ $total = $last ] ; then
 
-  echo $DB_NAME is update.
-  exit 0
+  echo $DB_NAME ($SRC_DIR) is up-to-date.
 
  else
 
@@ -98,28 +97,28 @@ fi
 
 date -u +"%b %d, %Y" > /tmp/pdbml-last
 
-xml_file_list=xml_file_list
+gz_file_list=xml_file_list
 
 mkdir -p $XML_DIR
 
 cd $XML_DIR
 
-find ../$SRC_DIR/* -name '*.xml.gz' > $xml_file_list
+find ../$SRC_DIR/* -name '*.xml.gz' > $gz_file_list
 
-while read xml_file
+while read gz_file
 do
 
- BASENAME=`basename $xml_file .gz`
+ xml_file=`basename $gz_file .gz`
 
- if [ ! -e $BASENAME ] ; then
-  cp $xml_file .
+ if [ ! -e $xml_file ] ; then
+  cp $gz_file .
  fi
 
-done < $xml_file_list
+done < $gz_file_list
 
-rm -f $xml_file_list
+rm -f $gz_file_list
 
 find . -type f -iname "*.gz" -exec gunzip {} +
 
-echo $DB_NAME is unzipped.
+echo $DB_NAME ($XML_DIR) is up-to-date.
 
