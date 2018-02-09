@@ -11,6 +11,8 @@ PDBML_EXT=pdbml-ext
 VALID_INFO_ALT=validation-info-alt
 PDBML_VALID=pdbml-validation
 RDF_VALID=rdf-validation
+PDBML_VALID_GZ=XML-validation
+RDF_VALID_GZ=RDF-validation
 
 rsync_log=rsync_log
 
@@ -45,6 +47,19 @@ if [ $weekday -ge 1 ] && [ $weekday -le 4 ] ; then
  if [ -d $RDF_VALID ] ; then
   while read pdb_id ; do
    rm -f $RDF_VALID/$pdb_id-validation.rdf
+  done < $rsync_log
+ fi
+
+ if [ -d $PDBML_VALID_GZ ] ; the
+  while read pdb_id ; do
+   rm -f $PDBML_VALID_GZ/${pdb_id:1:2}/$pdb_id-validation-full.xml.gz
+   done < $rsync_log
+ fi
+
+ if [ -d $RDF_VALID_GZ ] ; the
+  while read pdb_id ; do
+   rm -f $RDF_VALID_GZ/${pdb_id:1:2}/$pdb_id/$pdb_id-validation.rdf.gz
+   rmdir --ignore-fail-on-non-empty $RDF_VALID_GZ/${pdb_id:1:2}/$pdb_id
   done < $rsync_log
  fi
 

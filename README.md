@@ -50,6 +50,9 @@ File path | Document
 
 ## Release notes
 
+- **Feb 9, 2018**: Release v0.0.7
+	- Add gzip compression scripts: compress_pdbml_validation.sh and compress_rdf_validation.sh
+
 - **Feb 8, 2018**: Release v0.0.6
 	- Fix scripts: merge_pdbml_info_worker.sh and validate_all.sh
 	- Fix update_pdbml.sh and update_validation.sh scripts to support deleted or revised PDB entries.

@@ -70,6 +70,12 @@ fi
 
 ./scripts/translate_to_rdf.sh
 
+./scripts/sync_delete_with_pdbml.sh
+./scripts/sync_delete_with_info.sh
+
+./scripts/compress_pdbml_validation.sh
+./scripts/compress_rdf_validation.sh
+
 echo
-echo Done.
+echo Everything is up-to-date.
 
