@@ -88,6 +88,16 @@ if [ $updated = 0 ] || [ ! -e $xml_file_total ] ; then
 
   echo $DB_NAME" ("$SRC_DIR") is up-to-date."
 
+  if [ -d $XML_DIR ] ; then
+
+   unzipped=`find $XML_DIR -name '*.xml' | wc -l`
+
+   if [ $total = $unzipped ] ; then
+    exit 0
+   fi
+
+  fi
+
  else
 
    echo $total > $xml_file_total
@@ -109,9 +119,9 @@ find ../$SRC_DIR -regextype posix-egrep -regex '.*/[0-9][0-9a-z]{3}_validation.x
 while read gz_file
 do
 
- xml_fiole=`basename $gz_file .gz`
+ xml_file=`basename $gz_file .gz`
 
- if [ ! -e $xml_fiole ] ; then
+ if [ ! -e $xml_file ] ; then
   cp $gz_file .
  fi
 

@@ -40,7 +40,7 @@ if [ $weekday -ge 1 ] && [ $weekday -le 4 ] ; then
 
  if [ -d $PDBML_VALID ] ; then
   while read pdb_id ; do
-  rm -f $PDBML_VALID/$pdb_id-validation-full.xml
+   rm -f $PDBML_VALID/$pdb_id-validation-full.xml
   done < $rsync_log
  fi
 
@@ -87,6 +87,16 @@ if [ $updated = 0 ] || [ ! -e $xml_file_total ] ; then
 
   echo $DB_NAME" ("$SRC_DIR") is up-to-date."
 
+  if [ -d $XML_DIR ] ; then
+
+   unzipped=`find $XML_DIR -name '*.xml' | wc -l`
+
+   if [ $total = $unzipped ] ; then
+    exit 0
+   fi
+
+  fi
+
  else
 
    echo $total > $xml_file_total
@@ -97,7 +107,7 @@ fi
 
 date -u +"%b %d, %Y" > /tmp/pdbml-last
 
-gz_file_list=xml_file_list
+gz_file_list=gz_file_list
 
 mkdir -p $XML_DIR
 
