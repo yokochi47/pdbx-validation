@@ -1,5 +1,7 @@
 #!/bin/bash
 
+DB_NAME="PDBML-validation"
+
 PDBML_VALID=pdbml-validation
 PDBML_VALID_GZ=XML-validation
 
@@ -31,5 +33,5 @@ done < $pdbml_file_list
 
 rm -f $pdbml_file_list
 
-echo Done.
+echo $DB_NAME" ("$PDBML_VALID_GZ") is up-to-date."
 

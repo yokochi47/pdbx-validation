@@ -1,5 +1,7 @@
 #!/bin/bash
 
+DB_NAME="wwPDB/RDF-validation"
+
 RDF_VALID=rdf-validation
 RDF_VALID_GZ=RDF-validation
 
@@ -31,5 +33,5 @@ done < $rdf_file_list
 
 rm -f $rdf_file_list
 
-echo Done.
+echo $DB_NAME" ("$RDF_VALID_GZ") is up-to-date."
 
