@@ -94,7 +94,7 @@ do
      cat $err_file
     fi
 
-   elif [ $proc_id = 0 ] then
+   elif [ $proc_id = 0 ] ; then
     echo -n "\rDone "$((proc_id + 1)) of $total ...
    fi
 
