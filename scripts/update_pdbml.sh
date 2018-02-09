@@ -85,7 +85,7 @@ if [ $updated = 0 ] || [ ! -e $xml_file_total ] ; then
 
  if [ $total = $last ] ; then
 
-  echo $DB_NAME ($SRC_DIR) is up-to-date.
+  echo $DB_NAME" ("$SRC_DIR") is up-to-date."
 
  else
 
@@ -120,5 +120,5 @@ rm -f $gz_file_list
 
 find . -type f -iname "*.gz" -exec gunzip {} +
 
-echo $DB_NAME ($XML_DIR) is up-to-date.
+echo $DB_NAME" ("$XML_DIR") is up-to-date."
 
