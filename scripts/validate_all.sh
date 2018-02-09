@@ -7,7 +7,7 @@ eval set -- "$ARGV"
 while true ; do
  case "$1" in
  -d)
-  XML_DIR=$1
+  XML_DIR=$2
   shift
  ;;
  *)
