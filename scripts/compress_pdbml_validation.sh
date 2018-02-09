@@ -14,8 +14,8 @@ echo Compressing PDBML-validation...
 
 mkdir -p $PDBML_VALID_GZ
 
-last=`find $PDBML_VALID_GZ/* -name '*.xml.gz'`
-total=`find $PDBML_VALID -name '*.xml'`
+last=`find $PDBML_VALID_GZ/* -name '*.xml.gz' | wc -l`
+total=`find $PDBML_VALID -name '*.xml' | wc -l`
 
 if [ $total != $last ] ; then
 

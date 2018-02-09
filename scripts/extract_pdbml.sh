@@ -72,9 +72,9 @@ if [ ! -d $VALID_INFO ] ; then
  ./scripts/update_validation.sh
 fi
 
-last=`find $PDBML_EXT -name '*.xml'`
-err=`find $PDBML_EXT -name '*.err'`
-total=`find $PDBML -name '*.xml'`
+last=`find $PDBML_EXT -name '*.xml' | wc -l`
+err=`find $PDBML_EXT -name '*.err' | wc -l`
+total=`find $PDBML -name '*.xml' | wc -l`
 
 if [ $err != 0 ] || [ $total != $last ] ; then
 

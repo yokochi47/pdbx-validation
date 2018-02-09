@@ -14,8 +14,8 @@ echo Compressing wwPDB/RDF-validation...
 
 mkdir -p $RDF_VALID_GZ
 
-last=`find $RDF_VALID_GZ/* -regextype posix-egrep -regex '.*/[0-9][0-9a-z]{3}-validation.rdf.gz'`
-total=`find $RDF_VALID -name '*.rdf'`
+last=`find $RDF_VALID_GZ/* -regextype posix-egrep -regex '.*/[0-9][0-9a-z]{3}-validation.rdf.gz' | wc -l`
+total=`find $RDF_VALID -name '*.rdf' | wc -l`
 
 if [ $total != $last ] ; then
 

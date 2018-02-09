@@ -51,9 +51,9 @@ if [ ! -d $PDBML_EXT ] ; then
  ./scripts/extract_pdbml.sh
 fi
 
-last=`find $VALID_INFO_ALT -name '*.xml'`
-err=`find $VALID_INFO_ALT -name '*.err'`
-total=`find $VALID_INFO -name '*.xml'`
+last=`find $VALID_INFO_ALT -name '*.xml' | wc -l`
+err=`find $VALID_INFO_ALT -name '*.err' | wc -l`
+total=`find $VALID_INFO -name '*.xml' | wc -l`
 
 if [ $err != 0 ] || [ $total != $last ] ; then
 

@@ -72,9 +72,9 @@ PDBML_VALID=pdbml-validation
 
 mkdir -p $PDBML_VALID
 
-last=`find $PDBML_VALID -name '*.xml'`
-err=`find $PDBML_VALID -name '*.err'`
-total=`find $PDBML_EXT -name '*.xml'`
+last=`find $PDBML_VALID -name '*.xml' | wc -l`
+err=`find $PDBML_VALID -name '*.err' | wc -l`
+total=`find $PDBML_EXT -name '*.xml' | wc -l`
 
 if [ $err != 0 ] || [ $total != $last ] ; then
 

@@ -49,9 +49,9 @@ RDF_VALID=rdf-validation
 
 mkdir -p $RDF_VALID
 
-last=`find $RDF_VALID -name '*.rdf'`
-err=`find $RDF_VALID -name '*.err'`
-total=`find $PDBML_VALID -name '*.xml'`
+last=`find $RDF_VALID -name '*.rdf' | wc -l`
+err=`find $RDF_VALID -name '*.err' | wc -l`
+total=`find $PDBML_VALID -name '*.xml' | wc -l`
 
 if [ $err != 0 ] || [ $total != $last ] ; then
 
