@@ -1,6 +1,7 @@
 #!/bin/bash
 
 DB_NAME="wwPDB Validation Report"
+ALT_NAME="wwPDB Validation Information"
 
 SRC_DIR=validation_reports
 
@@ -120,5 +121,5 @@ rm -f $gz_file_list
 
 find . -type f -iname "*.gz" -exec gunzip {} +
 
-echo $DB_NAME" ("$XML_DIR") is up-to-date."
+echo Unzipped $ALT_NAME" ("$XML_DIR") is up-to-date."
 

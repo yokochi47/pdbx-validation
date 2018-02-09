@@ -120,5 +120,5 @@ rm -f $gz_file_list
 
 find . -type f -iname "*.gz" -exec gunzip {} +
 
-echo $DB_NAME" ("$XML_DIR") is up-to-date."
+echo Unzipped $DB_NAME" ("$XML_DIR") is up-to-date."
 
