@@ -54,9 +54,10 @@ do
 
   pdb_id=`basename $pdbml_valid_file -validation-full.xml`
   rdf_valid_file=$WORK_DIR/$pdb_id-validation.rdf
+  rdf_gz_valid_file=$WORK_DIR/${pdb_id:1:2}/$pdb_id/$pdb_id-validation.rdf.gz
   err_file=$WORK_DIR/translate_to_rdf_$pdb_id.err
 
-  if [ ! -e $rdf_valid_file ] || [ -e $err_file ] ; then
+  if ( [ ! -e $rdf_valid_file ] && [ ! -e $rdf_gz_valid_file ] ) || [ -e $err_file ] ; then
 
    java -jar $SAXON -s:$pdbml_valid_file -xsl:$PDBMLV2RDF_XSL -o:$rdf_valid_file 2> $err_file
 

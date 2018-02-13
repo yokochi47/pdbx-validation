@@ -68,9 +68,10 @@ do
   pdb_id=`basename $pdbml_ext_file -noatom-ext.xml`
   info_alt_file=$VALID_INFO_ALT/$pdb_id-validation-alt.xml
   pdbml_valid_file=$WORK_DIR/$pdb_id-validation-full.xml
+  pdbml_gz_valid_file=$WORK_DIR/${pdb_id:1:2}/$pdb_id-validation-full.xml.gz
   err_file=$WORK_DIR/merge_pdbml_info_$pdb_id.err
 
-  if [ -e $info_alt_file ] && ( [ ! -e $pdbml_valid_file ] || [ -e $err_file ] ); then
+  if [ -e $info_alt_file ] && ( ( [ ! -e $pdbml_valid_file ] && [ ! -e $pdbml_gz_valid_file ] ) || [ -e $err_file ] ); then
 
    java -jar $SAXON -s:$pdbml_ext_file -xsl:$MRG_PDBML_INFO_XSL -o:$pdbml_valid_file info_alt_file=../$info_alt_file 2> $err_file
 
