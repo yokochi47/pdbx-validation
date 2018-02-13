@@ -1,5 +1,11 @@
 #!/bin/bash
 
+MAXPROCS=`cat /proc/cpuinfo 2> /dev/null | grep 'cpu cores' | wc -l`
+
+if [ $MAXPROCS = 0 ] ; then
+ MAXPROCS=1
+fi
+
 DB_NAME="wwPDB/RDF-validation"
 
 RDF_VALID=RDF-validation
@@ -15,20 +21,18 @@ rdf_file_list=rdf_file_list
 
 find $RDF_VALID -name '*.rdf' > $rdf_file_list
 
-while read rdf_file
-do
+for proc_id in `seq 1 $MAXPROCS` ; do
 
- pdb_id=`basename $rdf_file -validation.rdf`
- div_dir=$RDF_VALID/${pdb_id:1:2}/$pdb_id
+ ./scripts/compress_rdf_validation_worker.sh -d $RDF_VALID -l $rdf_file_list -n $proc_id"of"$MAXPROCS &
 
- if [ ! -d $div_dir ] ; then
-  mkdir -p $div_dir
- fi
+done
 
- mv -f $rdf_file $div_dir
- gzip $div_dir/$pdb_id-validation.rdf
+if [ $? != 0 ] ; then
+ echo "$0 aborted."
+ exit 1
+fi
 
-done < $rdf_file_list
+wait
 
 rm -f $rdf_file_list
 

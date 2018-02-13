@@ -1,10 +1,16 @@
 #!/bin/bash
 
+MAXPROCS=`cat /proc/cpuinfo 2> /dev/null | grep 'cpu cores' | wc -l`
+
+if [ $MAXPROCS = 0 ] ; then
+ MAXPROCS=1
+fi
+
 DB_NAME="PDBML-validation"
 
-PDBML_VALID=XML-validation
+XML_VALID=XML-validation
 
-if [ ! -d $PDBML_VALID ] ; then
+if [ ! -d $XML_VALID ] ; then
  ./scripts/merge_pdbml_info.sh
 fi
 
@@ -13,24 +19,22 @@ echo Compressing PDBML-validation...
 
 pdbml_file_list=pdbml_file_list
 
-find $PDBML_VALID -name '*.xml' > $pdbml_file_list
+find $XML_VALID -name '*.xml' > $pdbml_file_list
 
-while read xml_file
-do
+for proc_id in `seq 1 $MAXPROCS` ; do
 
- pdb_id=`basename $xml_file -validation-full.xml`
- div_dir=$PDBML_VALID/${pdb_id:1:2}
+ ./scripts/compress_pdbml_validation_worker.sh -d $XML_VALID -l $pdbml_file_list -n $proc_id"of"$MAXPROCS &
 
- if [ ! -d $div_dir ] ; then
-  mkdir -p $div_dir
- fi
+done
 
- mv -f $xml_file $div_dir
- gzip $div_dir/$pdb_id-validation-full.xml
+if [ $? != 0 ] ; then
+ echo "$0 aborted."
+ exit 1
+fi
 
-done < $pdbml_file_list
+wait
 
 rm -f $pdbml_file_list
 
-echo $DB_NAME" ("$PDBML_VALID") is up-to-date."
+echo $DB_NAME" ("$XML_VALID") is up-to-date."
 
