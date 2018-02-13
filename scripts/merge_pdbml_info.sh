@@ -68,12 +68,12 @@ if [ ! -d $VALID_INFO_ALT ] ; then
  ./scripts/extract_info.sh
 fi
 
-PDBML_VALID=pdbml-validation
+XML_VALID=XML-validation
 
-mkdir -p $PDBML_VALID
+mkdir -p $XML_VALID
 
-last=`find $PDBML_VALID -name '*.xml' | wc -l`
-err=`find $PDBML_VALID -name '*.err' | wc -l`
+last=`find $XML_VALID -name '*.xml' | wc -l`
+err=`find $XML_VALID -name '*.err' | wc -l`
 total=`find $PDBML_EXT -name '*.xml' | wc -l`
 
 if [ $err != 0 ] || [ $total != $last ] ; then
@@ -87,7 +87,7 @@ if [ $err != 0 ] || [ $total != $last ] ; then
 
  for proc_id in `seq 1 $MAXPROCS` ; do
 
-  ./scripts/merge_pdbml_info_worker.sh -d $PDBML_VALID -e $VALID_INFO_ALT -l $pdbml_file_list -n $proc_id"of"$MAXPROCS $VALID_OPT &
+  ./scripts/merge_pdbml_info_worker.sh -d $XML_VALID -e $VALID_INFO_ALT -l $pdbml_file_list -n $proc_id"of"$MAXPROCS $VALID_OPT &
 
  done
 
@@ -104,5 +104,5 @@ if [ $err != 0 ] || [ $total != $last ] ; then
 
 fi
 
-echo $PDBML_VALID is up-to-date.
+echo $XML_VALID is up-to-date.
 

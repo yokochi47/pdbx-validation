@@ -37,7 +37,8 @@ if [ ! -e $XSD2PGSCHEMA ] ; then
  ./scripts/update_extlibs.sh
 fi
 
-XML_DIR=pdbml-validation
+XML_DIR=XML-validation
+PDBML_DIR=pdbml-validation
 FILE_EXT_DIGEST=-validation-full
 
 XSD_SCHEMA=schema/pdbx-validation-v0.xsd
@@ -56,9 +57,26 @@ case $ans in
   exit 1;;
 esac
 
-if [ ! -d $XML_DIR ] ; then
- ./scripts/merge_pdbml_info.sh
-fi
+gz_file_list=gz_file_list
+
+mkdir -p $PDBML_DIR
+
+find $XML_DIR/* -name '*.xml.gz' > $gz_file_list
+
+while read gz_file
+do
+
+ xml_file=`basename $gz_file .gz`
+
+ if [ ! -e $PDBML_DIR/$xml_file ] ; then
+  cp $gz_file $PDBML_DIR
+ fi
+
+done < $gz_file_list
+
+rm -f $gz_file_list
+
+find $PDBML_DIR -type f -iname "*.gz" -exec gunzip {} +
 
 psql -d $DB_NAME -U $DB_USER -f $DB_SCHEMA --quiet
 

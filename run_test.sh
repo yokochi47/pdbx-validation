@@ -67,8 +67,8 @@ WORK_DIR=test
 
 PDBML_EXT=pdbml-ext
 VALID_INFO_ALT=validation-info-alt
-PDBML_VALID=pdbml-validation
-RDF_VALID=rdf-validation
+XML_VALID=XML-validation
+RDF_VALID=DF-validation
 
 for arg ; do
 
@@ -97,7 +97,7 @@ done
 
 mkdir -p $WORK_DIR/$PDBML_EXT
 mkdir -p $WORK_DIR/$VALID_INFO_ALT
-mkdir -p $WORK_DIR/$PDBML_VALID
+mkdir -p $WORK_DIR/$XML_VALID
 mkdir -p $WORK_DIR/$RDF_VALID
 
 for pdbml_file in $WORK_DIR/pdbml/*.xml ; do
@@ -154,7 +154,7 @@ for pdbml_file in $WORK_DIR/pdbml/*.xml ; do
 
  pdbml_ext_file=$WORK_DIR/$PDBML_EXT/$pdbid-noatom-ext.xml
  info_alt_file=../$info_alt_file # add relative path (../) from directory contains target stylesheet
- pdbml_valid_file=$WORK_DIR/$PDBML_VALID/$pdbid-validation-full.xml
+ pdbml_valid_file=$WORK_DIR/$XML_VALID/$pdbid-validation-full.xml
 
  java -jar $SAXON -s:$pdbml_ext_file -xsl:$MERGE_PDBML_INFO_XSL -o:$pdbml_valid_file info_alt_file=$info_alt_file
 

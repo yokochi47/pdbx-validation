@@ -9,10 +9,8 @@ weekday=`date -u +"%w"`
 XML_DIR=pdbml
 PDBML_EXT=pdbml-ext
 VALID_INFO_ALT=validation-info-alt
-PDBML_VALID=pdbml-validation
-RDF_VALID=rdf-validation
-PDBML_VALID_GZ=XML-validation
-RDF_VALID_GZ=RDF-validation
+XML_VALID=XML-validation
+RDF_VALID=RDF-validation
 
 rsync_log=rsync_log
 
@@ -38,9 +36,9 @@ if [ $weekday -ge 1 ] && [ $weekday -le 4 ] ; then
   done < $rsync_log
  fi
 
- if [ -d $PDBML_VALID ] ; then
+ if [ -d $XML_VALID ] ; then
   while read pdb_id ; do
-   rm -f $PDBML_VALID/$pdb_id-validation-full.xml
+   rm -f $XML_VALID/$pdb_id-validation-full.xml
   done < $rsync_log
  fi
 
@@ -50,16 +48,16 @@ if [ $weekday -ge 1 ] && [ $weekday -le 4 ] ; then
   done < $rsync_log
  fi
 
- if [ -d $PDBML_VALID_GZ ] ; then
+ if [ -d $XML_VALID ] ; then
   while read pdb_id ; do
-   rm -f $PDBML_VALID_GZ/${pdb_id:1:2}/$pdb_id-validation-full.xml.gz
+   rm -f $XML_VALID/${pdb_id:1:2}/$pdb_id-validation-full.xml.gz
   done < $rsync_log
  fi
 
- if [ -d $RDF_VALID_GZ ] ; then
+ if [ -d $RDF_VALID ] ; then
   while read pdb_id ; do
-   rm -f $RDF_VALID_GZ/${pdb_id:1:2}/$pdb_id/$pdb_id-validation.rdf.gz
-   rmdir --ignore-fail-on-non-empty $RDF_VALID_GZ/${pdb_id:1:2}/$pdb_id
+   rm -f $RDF_VALID/${pdb_id:1:2}/$pdb_id/$pdb_id-validation.rdf.gz
+   rmdir --ignore-fail-on-non-empty $RDF_VALID/${pdb_id:1:2}/$pdb_id
   done < $rsync_log
  fi
 
@@ -111,24 +109,22 @@ gz_file_list=gz_file_list
 
 mkdir -p $XML_DIR
 
-cd $XML_DIR
-
-find ../$SRC_DIR/* -name '*.xml.gz' > $gz_file_list
+find $SRC_DIR/* -name '*.xml.gz' > $gz_file_list
 
 while read gz_file
 do
 
  xml_file=`basename $gz_file .gz`
 
- if [ ! -e $xml_file ] ; then
-  cp $gz_file .
+ if [ ! -e $XML_DIR/$xml_file ] ; then
+  cp $gz_file $XML_DIR
  fi
 
 done < $gz_file_list
 
 rm -f $gz_file_list
 
-find . -type f -iname "*.gz" -exec gunzip {} +
+find $XML_DIR -type f -iname "*.gz" -exec gunzip {} +
 
 echo Unzipped $DB_NAME" ("$XML_DIR") is up-to-date."
 

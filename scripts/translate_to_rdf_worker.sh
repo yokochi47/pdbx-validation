@@ -4,7 +4,7 @@ SAXON=extlibs/saxon9he.jar
 
 PDBMLV2RDF_XSL=stylesheet/pdbmlv2rdf.xsl
 
-WORK_DIR=rdf-validation
+WORK_DIR=RDF-validation
 
 FILE_LIST=pdbml_file_list
 

@@ -21,7 +21,7 @@ done
 
 PDBML_EXT=pdbml-ext
 VALID_INFO_ALT=validation-info-alt
-PDBML_VALID=pdbml-validation
+XML_VALID=XML-validation
 
 total=`ls $PDBML_EXT | wc -l`
 
@@ -55,16 +55,16 @@ else
 
 fi
 
-total=`ls $PDBML_VALID | wc -l`
+total=`ls $XML_VALID | wc -l`
 
-if [ -d $PDBML_VALID ] && [ $total -gt 100000 ] ; then
+if [ -d $XML_VALID ] && [ $total -gt 100000 ] ; then
 
  ./scripts/merge_pdbml_info.sh -v
 
 else
 
  ./scripts/merge_pdbml_info.sh
- ./scripts/validate_all.sh -d $PDBML_VALID
+ ./scripts/validate_all.sh -d $XML_VALID
 
 fi
 

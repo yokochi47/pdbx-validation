@@ -5,10 +5,8 @@ SRC_DIR=validation_reports
 XML_DIR=validation_info
 PDBML_EXT=pdbml-ext
 VALID_INFO_ALT=validation-info-alt
-PDBML_VALID=pdbml-validation
-RDF_VALID=rdf-validation
-PDBML_VALID_GZ=XML-validation
-RDF_VALID_GZ=RDF-validation
+XML_VALID=XML-validation
+RDF_VALID=RDF-validation
 
 pdb_id_list=pdb_id_list
 
@@ -51,14 +49,14 @@ if [ -d $VALID_INFO_ALT ] ; then
 
 fi
 
-if [ -d $PDBML_VALID ] ; then
+if [ -d $XML_VALID ] ; then
 
- find $PDBML_VALID -name '*.xml' | cut -d '/' -f 2 | cut -d '-' -f 1 > $pdb_id_list
+ find $XML_VALID -name '*.xml' | cut -d '/' -f 2 | cut -d '-' -f 1 > $pdb_id_list
 
  while read pdb_id ; do
   if [ ! -e $SRC_DIR/${pdb_id:1:2}/$pdb_id/$pdb_id"_validation.xml.gz" ] ; then
-   echo deleting $PDBML_VALID/$pdb_id-validation-full.xml
-   rm -f $PDBML_VALID/$pdb_id-validation-full.xml
+   echo deleting $XML_VALID/$pdb_id-validation-full.xml
+   rm -f $XML_VALID/$pdb_id-validation-full.xml
   fi
  done < $pdb_id_list
 
@@ -77,28 +75,28 @@ if [ -d $RDF_VALID ] ; then
 
 fi
 
-if [ -d $PDBML_VALID_GZ ] ; then
+if [ -d $XML_VALID ] ; then
 
- find $PDBML_VALID_GZ -name '*.xml.gz' | cut -d '/' -f 3 | cut -d '-' -f 1 > $pdb_id_list
+ find $XML_VALID -name '*.xml.gz' | cut -d '/' -f 3 | cut -d '-' -f 1 > $pdb_id_list
 
  while read pdb_id ; do
   if [ ! -e $SRC_DIR/${pdb_id:1:2}/$pdb_id/$pdb_id"_validation.xml.gz" ] ; then
-   echo deleting $PDBML_VALID_GZ/${pdb_id:1:2}/$pdb_id-validation-full.xml.gz
-   rm -f $PDBML_VALID_GZ/${pdb_id:1:2}/$pdb_id-validation-full.xml.gz
+   echo deleting $XML_VALID/${pdb_id:1:2}/$pdb_id-validation-full.xml.gz
+   rm -f $XML_VALID/${pdb_id:1:2}/$pdb_id-validation-full.xml.gz
   fi
  done < $pdb_id_list
 
 fi
 
-if [ -d $RDF_VALID_GZ ] ; then
+if [ -d $RDF_VALID ] ; then
 
- find $RDF_VALID_GZ -name '*.rdf.gz' | cut -d '/' -f 4 | cut -d '-' -f 1 > $pdb_id_list
+ find $RDF_VALID -name '*.rdf.gz' | cut -d '/' -f 4 | cut -d '-' -f 1 > $pdb_id_list
 
  while read pdb_id ; do
   if [ ! -e $SRC_DIR/${pdb_id:1:2}/$pdb_id/$pdb_id"_validation.xml.gz" ] ; then
-   echo deleting $RDF_VALID_GZ/${pdb_id:1:2}/$pdb_id/$pdb_id-validation.rdf.gz
-   rm -f $RDF_VALID_GZ/${pdb_id:1:2}/$pdb_id/$pdb_id-validation.rdf.gz
-   rmdir --ignore-fail-on-non-empty $RDF_VALID_GZ/${pdb_id:1:2}/$pdb_id
+   echo deleting $RDF_VALID/${pdb_id:1:2}/$pdb_id/$pdb_id-validation.rdf.gz
+   rm -f $RDF_VALID/${pdb_id:1:2}/$pdb_id/$pdb_id-validation.rdf.gz
+   rmdir --ignore-fail-on-non-empty $RDF_VALID/${pdb_id:1:2}/$pdb_id
   fi
  done < $pdb_id_list
 

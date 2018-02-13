@@ -39,19 +39,19 @@ if [ ! -e $PDBMLV2RDF_XSL ] ; then
 
 fi
 
-PDBML_VALID=pdbml-validation
+XML_VALID=XML-validation
 
-if [ ! -d $PDBML_VALID ] ; then
+if [ ! -d $XML_VALID ] ; then
  ./scripts/merge_pdbml_info.sh
 fi
 
-RDF_VALID=rdf-validation
+RDF_VALID=RDF-validation
 
 mkdir -p $RDF_VALID
 
 last=`find $RDF_VALID -name '*.rdf' | wc -l`
 err=`find $RDF_VALID -name '*.err' | wc -l`
-total=`find $PDBML_VALID -name '*.xml' | wc -l`
+total=`find $XML_VALID -name '*.xml' | wc -l`
 
 if [ $err != 0 ] || [ $total != $last ] ; then
 
@@ -60,7 +60,7 @@ if [ $err != 0 ] || [ $total != $last ] ; then
 
  pdbml_file_list=pdbml_file_list
 
- find $PDBML_VALID -name '*.xml' > $pdbml_file_list
+ find $XML_VALID -name '*.xml' > $pdbml_file_list
 
  for proc_id in `seq 1 $MAXPROCS` ; do
 

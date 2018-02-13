@@ -7,7 +7,7 @@ PDBX_VALIDATION_XSD=schema/pdbx-validation-v0.xsd
 
 MRG_PDBML_INFO_XSL=stylesheet/merge_pdbml_info.xsl
 
-WORK_DIR=pdbml-validation
+WORK_DIR=XML-validation
 VALID_INFO_ALT=validation-info-alt
 
 FILE_LIST=pdbml_file_list
