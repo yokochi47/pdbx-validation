@@ -68,7 +68,7 @@ WORK_DIR=test
 PDBML_EXT=pdbml-ext
 VALID_INFO_ALT=validation-info-alt
 XML_VALID=XML-validation
-RDF_VALID=DF-validation
+RDF_VALID=RDF-validation
 
 for arg ; do
 
