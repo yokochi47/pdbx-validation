@@ -53,6 +53,7 @@ File path | Document
 - **Feb 13, 2018**: Release v0.0.8
 	- Change directory: from pdbml-validtion to XML-validation, which contains compressed PDBML-validation.
 	- Change directory: from rdf-validation to RDF-validation, which contains compressed wwPDB/RDF-validation.
+	- Add source URL in PDBML-validation Schema pointing PDBx/mmCIF dictionary browser.
 
 - **Feb 9, 2018**: Release v0.0.7
 	- Add gzip compression scripts: compress_pdbml_validation.sh and compress_rdf_validation.sh

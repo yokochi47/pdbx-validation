@@ -55,19 +55,23 @@ pattern=3,4s/$DICT_PREFIX.xsd/$DICT_PREFIX-v$DICT_MAJOR_VER.xsd/
 
 sed '2,6d' $DICT_PREFIX-v$DICT_VER.xsd | sed $pattern > $DICT_PREFIX.xsd~
 
-mv $DICT_PREFIX.xsd~ $DICT_PREFIX-v$DICT_VER.xsd
-
-rm -f $DICT_PREFIX-v$DICT_MAJOR_VER.xsd
-
-ln -s $DICT_PREFIX-v$DICT_VER.xsd $DICT_PREFIX-v$DICT_MAJOR_VER.xsd
-
-echo Generated: $DICT_PREFIX-v$DICT_MAJOR_VER.xsd
-
 SAXON=../extlibs/saxon9he.jar
 
 if [ ! -e $SAXON ] ; then
  (cd ..; ./scripts/update_extlibs.sh)
 fi
+
+APPEND_SOURCE_XSL=../stylesheet/append_source.xsl
+
+pdbx_xsd_file=../resource/pdbx-v50.xsd
+
+java -jar $SAXON -s:$DICT_PREFIX.xsd~ -xsl:$APPEND_SOURCE_XSL -o:$DICT_PREFIX-v$DICT_VER.xsd pdbx_xsd_file=$pdbx_xsd_file
+
+rm -f $DICT_PREFIX.xsd~ $DICT_PREFIX-v$DICT_MAJOR_VER.xsd
+
+ln -s $DICT_PREFIX-v$DICT_VER.xsd $DICT_PREFIX-v$DICT_MAJOR_VER.xsd
+
+echo Generated: $DICT_PREFIX-v$DICT_MAJOR_VER.xsd
 
 # Generate wwPDB/OWL-validation
 
