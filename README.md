@@ -50,7 +50,7 @@ File path | Document
 
 ## Release notes
 
-- **Feb 13, 2018**] Release v0.0.8
+- **Feb 13, 2018**: Release v0.0.8
 	- Change directory: from pdbml-validtion to XML-validation, which contains compressed PDBML-validation.
 	- Change directory: from rdf-validation to RDF-validation, which contains compressed wwPDB/RDF-validation.
 
