@@ -73,13 +73,23 @@ ln -s $DICT_PREFIX-v$DICT_VER.xsd $DICT_PREFIX-v$DICT_MAJOR_VER.xsd
 
 echo Generated: $DICT_PREFIX-v$DICT_MAJOR_VER.xsd
 
+# Convert tagmap.csv to tagmap.xml
+
+TAGMAP2XML_XSL=../stylesheet/tagmap2xml.xsl
+tagmap_csv_file=../schema/tagmap.csv
+tagmap_xml_file=tagmap.xml
+
+java -jar $SAXON -it:main -xsl:$TAGMAP2XML_XSL -o:$tagmap_xml_file tagmap_csv_file=$tagmap_csv_file
+
 # Generate wwPDB/OWL-validation
 
 PDBXV2OWL_XSL=../stylesheet/pdbxv2owl.xsl
 
 pdbx_owl_file=../resource/pdbx-v50.owl
 
-java -jar $SAXON -s:$DICT_PREFIX-v$DICT_MAJOR_VER.xsd -xsl:$PDBXV2OWL_XSL -o:$DICT_PREFIX-v$DICT_VER.owl pdbx_owl_file=$pdbx_owl_file
+tagmap_xml_file=../schema/$tagmap_xml_file
+
+java -jar $SAXON -s:$DICT_PREFIX-v$DICT_MAJOR_VER.xsd -xsl:$PDBXV2OWL_XSL -o:$DICT_PREFIX-v$DICT_VER.owl pdbx_owl_file=$pdbx_owl_file tagmap_xml_file=$tagmap_xml_file
 
 rm -f $DICT_PREFIX-v$DICT_MAJOR_VER.owl
 
@@ -94,5 +104,4 @@ XS3P_XSLT_CODE=../stylesheet/xs3p.xsl
 java -jar $SAXON -s:$DICT_PREFIX-v$DICT_MAJOR_VER.xsd -xsl:$XS3P_XSLT_CODE -o:$DICT_PREFIX-v$DICT_MAJOR_VER.html
 
 echo Generated: $DICT_PREFIX-v$DICT_MAJOR_VER.html
-
 

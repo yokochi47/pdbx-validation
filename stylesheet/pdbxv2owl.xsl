@@ -18,6 +18,9 @@
   <xsl:param name="pdbx_owl_file" required="yes"/>
   <xsl:param name="pdbx_owl" select="document($pdbx_owl_file)"/>
 
+  <xsl:param name="tagmap_xml_file" required="yes"/>
+  <xsl:param name="tagmap_xml" select="document($tagmap_xml_file)"/>
+
   <xsl:output method="xml" indent="yes"/>
   <xsl:strip-space elements="*"/>
 
@@ -34,7 +37,8 @@
        xmlns:owl="http://www.w3.org/2002/07/owl#"
        xmlns:dc="http://purl.org/dc/elements/1.1/"
        xmlns:dcterms="http://purl.org/dc/terms/"
-       xmlns:PDBo="https://rdf.wwpdb.org/schema/pdbx-v50.owl#">
+       xmlns:PDBo="https://rdf.wwpdb.org/schema/pdbx-v50.owl#"
+       xmlns:BMRBo="http://bmrbpub.protein.osaka-u.ac.jp/schema/mmcif_nmr-star.owl#">
 
       <owl:Ontology rdf:about="https://rdf.wwpdb.org/schema/pdbx-validation-v0.owl">
 	<rdfs:label>wwPDB/OWL-validation</rdfs:label>
@@ -465,6 +469,9 @@
   <xsl:template name="category_item">
     <xsl:param name="category"/>
     <xsl:variable name="id"><xsl:value-of select="concat($category,'.',@name)"/></xsl:variable>
+    <xsl:variable name="nmr-star_item">
+      <xsl:if test="$tagmap_xml/pdbx-to-nmr-star/pdbx-item[@id=$id]"><xsl:value-of select="$tagmap_xml/pdbx-to-nmr-star/pdbx-item[@id=$id][1]"/></xsl:if>
+    </xsl:variable>
     <xsl:choose>
       <xsl:when test="count(.//xsd:enumeration) = 0">
 	<!-- basic types -->
@@ -478,6 +485,9 @@
 	  <xsl:apply-templates select="./xsd:annotation"/>
           <xsl:if test="$pdbx_owl/rdf:RDF/owl:DatatypeProperty[@rdf:ID=$id]">
             <owl:equivalentProperty rdf:resource="PDBo:{$id}"/>
+          </xsl:if>
+          <xsl:if test="$nmr-star_item!=''">
+            <owl:equivalentProperty rdf:resource="BMRBo:{$nmr-star_item}"/>
           </xsl:if>
 	</owl:DatatypeProperty>
       </xsl:when>
@@ -499,6 +509,9 @@
 	  <xsl:apply-templates select="./xsd:annotation"/>
           <xsl:if test="$pdbx_owl/rdf:RDF/owl:DatatypeProperty[@rdf:ID=$id]">
             <owl:equivalentProperty rdf:resource="PDBo:{$id}"/>
+          </xsl:if>
+          <xsl:if test="$nmr-star_item!=''">
+            <owl:equivalentProperty rdf:resource="BMRBo:{$nmr-star_item}"/>
           </xsl:if>
 	</owl:DatatypeProperty>
       </xsl:otherwise>
