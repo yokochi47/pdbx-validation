@@ -12,7 +12,8 @@
    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-   xmlns:owl="http://www.w3.org/2002/07/owl#">
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   exclude-result-prefixes="xsd xsi">
 
   <xsl:output method="xml" indent="yes"/>
   <xsl:strip-space elements="*"/>
@@ -25,8 +26,6 @@
     <rdf:RDF
        xml:base="https://rdf.wwpdb.org/schema/pdbx-v50.owl"
        xmlns:xml="http://www.w3.org/XML/1998/namespace"
-       xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
        xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
        xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -36,6 +35,9 @@
       <owl:Ontology rdf:about="https://rdf.wwpdb.org/schema/pdbx-v50.owl">
 	<rdfs:label>PDBx ontology</rdfs:label>
 	<rdfs:comment>The PDBx OWL ontology translated from the PDBML schema.</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic"/>
+        <rdfs:seeAlso rdf:resource="http://mmcif.wwpdb.org/schema/pdbx-v50.xsd"/>
+        <owl:versionIRI rdf:resource="https://rdf.wwpdb.org/schema/pdbx-v50.owl/5.290"/>
       </owl:Ontology>
 
       <owl:Class rdf:ID="Category">
@@ -276,7 +278,8 @@
   <!-- basic category types -->
   <xsl:template match="xsd:element" mode="category_element">
     <xsl:variable name="category"><xsl:value-of select="@name"/></xsl:variable>
-    <owl:Class rdf:ID="{@name}Category">
+    <xsl:variable name="category_id"><xsl:value-of select="concat($category,'Category')"/></xsl:variable>
+    <owl:Class rdf:ID="{$category_id}">
       <rdfs:subClassOf>
 	<owl:Class>
 	  <owl:intersectionOf rdf:parseType="Collection">
@@ -289,8 +292,8 @@
       </rdfs:subClassOf>
     </owl:Class>
 
-    <owl:Class rdf:ID="{@name}">
-      <rdfs:label><xsl:value-of select="@name"/></rdfs:label>
+    <owl:Class rdf:ID="{$category}">
+      <rdfs:label><xsl:value-of select="$category"/></rdfs:label>
       <xsl:apply-templates select="../../xsd:annotation"/>
       <rdfs:subClassOf>
 	<owl:Class>
@@ -306,47 +309,47 @@
       </rdfs:subClassOf>
     </owl:Class>
 
-    <owl:InverseFunctionalProperty rdf:ID="has_{@name}Category">
-      <rdfs:label><xsl:value-of select="@name"/>Category</rdfs:label>
+    <owl:InverseFunctionalProperty rdf:ID="has_{$category_id}">
+      <rdfs:label><xsl:value-of select="$category_id"/></rdfs:label>
       <rdfs:comment>
 	This property indicates that datablock
-	has a category holder <xsl:value-of select="@name"/>Category.
+	has a category holder <xsl:value-of select="$category_id"/>.
       </rdfs:comment>
       <rdfs:subPropertyOf rdf:resource="#hasCategory"/>
-      <rdfs:seeAlso rdf:resource="#{@name}"/>
+      <rdfs:seeAlso rdf:resource="#{$category}"/>
     </owl:InverseFunctionalProperty>
 
-    <owl:InverseFunctionalProperty rdf:ID="has_{@name}">
-      <rdfs:label><xsl:value-of select="@name"/>Category</rdfs:label>
+    <owl:InverseFunctionalProperty rdf:ID="has_{$category}">
+      <rdfs:label><xsl:value-of select="$category_id"/></rdfs:label>
       <rdfs:comment>
-	This property indicates that <xsl:value-of select="@name"/>Category.
-	has a category <xsl:value-of select="@name"/>.
+	This property indicates that <xsl:value-of select="$category_id"/>.
+	has a category <xsl:value-of select="$category"/>.
       </rdfs:comment>
       <rdfs:subPropertyOf rdf:resource="#hasCategoryElement"/>
-      <rdfs:seeAlso rdf:resource="#{@name}"/>
-      <rdfs:domain rdf:resource="#{@name}Category"/>
-      <rdfs:range rdf:resource="#{@name}"/>
+      <rdfs:seeAlso rdf:resource="#{$category}"/>
+      <rdfs:domain rdf:resource="#{$category_id}"/>
+      <rdfs:range rdf:resource="#{$category}"/>
     </owl:InverseFunctionalProperty>
 
-    <owl:DatatypeProperty rdf:ID="{@name}Item">
-      <rdfs:label><xsl:value-of select="@name"/>Item</rdfs:label>
-      <rdfs:comment>Abstract Datatype property for <xsl:value-of select="@name"/> items.</rdfs:comment>
+    <owl:DatatypeProperty rdf:ID="{$category}Item">
+      <rdfs:label><xsl:value-of select="$category"/>Item</rdfs:label>
+      <rdfs:comment>Abstract Datatype property for <xsl:value-of select="$category"/> items.</rdfs:comment>
       <rdfs:subPropertyOf rdf:resource="#categoryItem"/>
-      <rdfs:domain rdf:resource="#{@name}"/>
+      <rdfs:domain rdf:resource="#{$category}"/>
     </owl:DatatypeProperty>
 
-    <owl:ObjectProperty rdf:ID="reference_to_{@name}">
-      <rdfs:label>reference_to_<xsl:value-of select="@name"/></rdfs:label>
-      <rdfs:comment>cross-reference to <xsl:value-of select="@name"/></rdfs:comment>
+    <owl:ObjectProperty rdf:ID="reference_to_{$category}">
+      <rdfs:label>reference_to_<xsl:value-of select="$category"/></rdfs:label>
+      <rdfs:comment>cross-reference to <xsl:value-of select="$category"/></rdfs:comment>
       <rdfs:subPropertyOf rdf:resource="#reference_to"/>
-      <rdfs:range rdf:resource="#{@name}"/>
+      <rdfs:range rdf:resource="#{$category}"/>
     </owl:ObjectProperty>
 
-    <owl:ObjectProperty rdf:ID="referenced_by_{@name}">
-      <rdfs:label>referenced_by_<xsl:value-of select="@name"/></rdfs:label>
-      <rdfs:comment>cross-reference from <xsl:value-of select="@name"/></rdfs:comment>
+    <owl:ObjectProperty rdf:ID="referenced_by_{$category}">
+      <rdfs:label>referenced_by_<xsl:value-of select="$category"/></rdfs:label>
+      <rdfs:comment>cross-reference from <xsl:value-of select="$category"/></rdfs:comment>
       <rdfs:subPropertyOf rdf:resource="#referenced_by"/>
-      <rdfs:range rdf:resource="#{@name}"/>
+      <rdfs:range rdf:resource="#{$category}"/>
     </owl:ObjectProperty>
 
     <xsl:for-each select="./xsd:complexType/xsd:all/*|./xsd:complexType/xsd:attribute">
@@ -358,30 +361,31 @@
 
   <xsl:template name="category_item_restriction">
     <xsl:param name="category"/>
+    <xsl:variable name="resource"><xsl:value-of select="concat('#',$category,'.',@name)"/></xsl:variable>
     <xsl:choose>
       <xsl:when test="@use='required'">
 	<owl:Restriction>
-	  <owl:onProperty rdf:resource="#{$category}.{@name}"/>
+	  <owl:onProperty rdf:resource="{$resource}"/>
 	  <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
 	</owl:Restriction>
       </xsl:when>
       <xsl:when test="@use='optional'">
 	<owl:Restriction>
-	  <owl:onProperty rdf:resource="#{$category}.{@name}"/>
+	  <owl:onProperty rdf:resource="{$resource}"/>
 	  <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">0</owl:minCardinality>
 	</owl:Restriction>
 	<owl:Restriction>
-	  <owl:onProperty rdf:resource="#{$category}.{@name}"/>
+	  <owl:onProperty rdf:resource="{$resource}"/>
 	  <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
 	</owl:Restriction>
       </xsl:when>
       <xsl:otherwise>
 	<owl:Restriction>
-	  <owl:onProperty rdf:resource="#{$category}.{@name}"/>
+	  <owl:onProperty rdf:resource="{$resource}"/>
 	  <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger"><xsl:value-of select="@minOccurs"/></owl:minCardinality>
 	</owl:Restriction>
 	<owl:Restriction>
-	  <owl:onProperty rdf:resource="#{$category}.{@name}"/>
+	  <owl:onProperty rdf:resource="{$resource}"/>
 	  <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger"><xsl:value-of select="@maxOccurs"/></owl:maxCardinality>
 	</owl:Restriction>
       </xsl:otherwise>
@@ -390,22 +394,23 @@
 
   <xsl:template name="category_item">
     <xsl:param name="category"/>
+    <xsl:variable name="id"><xsl:value-of select="concat($category,'.',@name)"/></xsl:variable>
     <xsl:choose>
       <xsl:when test="count(.//xsd:enumeration) = 0">
 	<!-- basic types -->
 	<xsl:variable name="datatype1" select="substring-after(@type,':')"/>
 	<xsl:variable name="datatype2" select="substring-after(./xsd:complexType/xsd:simpleContent/xsd:extension/@base,':')"/>
 	<xsl:variable name="datatype3" select="substring-after(./xsd:simpleType[1]/xsd:restriction/@base,':')"/>
-	<owl:DatatypeProperty rdf:ID="{$category}.{@name}">
+	<owl:DatatypeProperty rdf:ID="{$id}">
 	  <rdfs:subPropertyOf rdf:resource="#{$category}Item"/>
 	  <rdfs:range rdf:resource="&xsd;{concat($datatype1,$datatype2,$datatype3)}"/>
-	  <rdfs:label><xsl:value-of select="concat($category,'.',@name)"/></rdfs:label>
+	  <rdfs:label><xsl:value-of select="$id"/></rdfs:label>
 	  <xsl:apply-templates select="./xsd:annotation"/>
 	</owl:DatatypeProperty>
       </xsl:when>
       <xsl:otherwise>
 	<xsl:variable name="datatype"><xsl:value-of select="substring-after(.//@base,':')"/></xsl:variable>
-	<owl:DatatypeProperty rdf:ID="{$category}.{@name}">
+	<owl:DatatypeProperty rdf:ID="{$id}">
 	  <rdfs:subPropertyOf rdf:resource="#{$category}Item"/>
 	  <rdfs:domain rdf:resource="#{$category}"/>
 	  <rdfs:range>

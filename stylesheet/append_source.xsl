@@ -33,14 +33,14 @@
     <xsl:if test="$name!='datablockType'">
       <xsd:complexType name="{$name}">
         <xsl:call-template name="category_type">
-          <xsl:with-param name="name"><xsl:value-of select="$name"/></xsl:with-param>
+          <xsl:with-param name="category"><xsl:value-of select="$name"/></xsl:with-param>
         </xsl:call-template>
       </xsd:complexType>
     </xsl:if>
   </xsl:template>
 
   <xsl:template name="category_type">
-    <xsl:param name="name"/>
+    <xsl:param name="category"/>
     <xsl:for-each select="xsd:annotation[1]">
       <xsd:annotation>
         <xsl:call-template name="collect_attrs"/>
@@ -48,8 +48,8 @@
           <xsl:variable name="content"><xsl:value-of select="."/></xsl:variable>
           <xsd:documentation>
             <xsl:call-template name="collect_attrs"/>
-            <xsl:if test="$pdbx_xsd/xsd:schema/xsd:complexType[@name='datablockType']/xsd:all/xsd:element[replace(@type,'PDBx:','')=$name]">
-              <xsl:attribute name="source"><xsl:value-of select="concat($category_source_url,replace($name,'Type$',''),'.html')"/></xsl:attribute>
+            <xsl:if test="$pdbx_xsd/xsd:schema/xsd:complexType[@name='datablockType']/xsd:all/xsd:element[replace(@type,'PDBx:','')=$category]">
+              <xsl:attribute name="source"><xsl:value-of select="concat($category_source_url,replace($category,'Type$',''),'.html')"/></xsl:attribute>
             </xsl:if>
             <xsl:value-of select="$content"/>
           </xsd:documentation>
@@ -67,16 +67,16 @@
                   <xsd:all>
                     <xsl:for-each select="xsd:complexType[1]/xsd:all[1]/xsd:element">
                       <xsl:call-template name="data_item">
-                        <xsl:with-param name="category"><xsl:value-of select="$name"/></xsl:with-param>
-                        <xsl:with-param name="name"><xsl:value-of select="@name"/></xsl:with-param>
+                        <xsl:with-param name="category"><xsl:value-of select="$category"/></xsl:with-param>
+                        <xsl:with-param name="item"><xsl:value-of select="@name"/></xsl:with-param>
                       </xsl:call-template>
                     </xsl:for-each>
                   </xsd:all>
                 </xsl:if>
                 <xsl:for-each select="xsd:complexType[1]/xsd:attribute">
                   <xsl:call-template name="key_item">
-                    <xsl:with-param name="category"><xsl:value-of select="$name"/></xsl:with-param>
-                    <xsl:with-param name="name"><xsl:value-of select="@name"/></xsl:with-param>
+                    <xsl:with-param name="category"><xsl:value-of select="$category"/></xsl:with-param>
+                    <xsl:with-param name="item"><xsl:value-of select="@name"/></xsl:with-param>
                   </xsl:call-template>
                 </xsl:for-each>
               </xsd:complexType>
@@ -95,7 +95,7 @@
 
   <xsl:template name="data_item">
     <xsl:param name="category"/>
-    <xsl:param name="name"/>
+    <xsl:param name="item"/>
     <xsd:element>
       <xsl:call-template name="collect_attrs"/>
       <xsl:for-each select="xsd:annotation[1]">
@@ -105,8 +105,8 @@
             <xsl:variable name="content"><xsl:value-of select="."/></xsl:variable>
             <xsd:documentation>
               <xsl:call-template name="collect_attrs"/>
-              <xsl:if test="$pdbx_xsd/xsd:schema/xsd:complexType[@name=$category]/xsd:sequence/xsd:element/xsd:complexType/xsd:all/xsd:element[@name=$name]">
-                <xsl:attribute name="source"><xsl:value-of select="concat($data_item_source_url,replace($category,'Type$',''),'.',$name,'.html')"/></xsl:attribute>
+              <xsl:if test="$pdbx_xsd/xsd:schema/xsd:complexType[@name=$category]/xsd:sequence/xsd:element/xsd:complexType/xsd:all/xsd:element[@name=$item]">
+                <xsl:attribute name="source"><xsl:value-of select="concat($data_item_source_url,replace($category,'Type$',''),'.',$item,'.html')"/></xsl:attribute>
               </xsl:if>
               <xsl:value-of select="$content"/>
             </xsd:documentation>
@@ -119,7 +119,7 @@
 
   <xsl:template name="key_item">
     <xsl:param name="category"/>
-    <xsl:param name="name"/>
+    <xsl:param name="item"/>
     <xsd:attribute>
       <xsl:call-template name="collect_attrs"/>
       <xsl:for-each select="xsd:annotation[1]">
@@ -129,8 +129,8 @@
             <xsl:variable name="content"><xsl:value-of select="."/></xsl:variable>
             <xsd:documentation>
               <xsl:call-template name="collect_attrs"/>
-              <xsl:if test="$pdbx_xsd/xsd:schema/xsd:complexType[@name=$category]/xsd:sequence/xsd:element/xsd:complexType/xsd:attribute[@name=$name]">
-                <xsl:attribute name="source"><xsl:value-of select="concat($data_item_source_url,replace($category,'Type$',''),'.',$name,'.html')"/></xsl:attribute>
+              <xsl:if test="$pdbx_xsd/xsd:schema/xsd:complexType[@name=$category]/xsd:sequence/xsd:element/xsd:complexType/xsd:attribute[@name=$item]">
+                <xsl:attribute name="source"><xsl:value-of select="concat($data_item_source_url,replace($category,'Type$',''),'.',$item,'.html')"/></xsl:attribute>
               </xsl:if>
               <xsl:value-of select="$content"/>
             </xsd:documentation>

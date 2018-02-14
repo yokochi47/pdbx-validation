@@ -77,7 +77,9 @@ echo Generated: $DICT_PREFIX-v$DICT_MAJOR_VER.xsd
 
 PDBXV2OWL_XSL=../stylesheet/pdbxv2owl.xsl
 
-java -jar $SAXON -s:$DICT_PREFIX-v$DICT_MAJOR_VER.xsd -xsl:$PDBXV2OWL_XSL -o:$DICT_PREFIX-v$DICT_VER.owl
+pdbx_owl_file=../resource/pdbx-v50.owl
+
+java -jar $SAXON -s:$DICT_PREFIX-v$DICT_MAJOR_VER.xsd -xsl:$PDBXV2OWL_XSL -o:$DICT_PREFIX-v$DICT_VER.owl pdbx_owl_file=$pdbx_owl_file
 
 rm -f $DICT_PREFIX-v$DICT_MAJOR_VER.owl
 
