@@ -50,7 +50,7 @@ File path | Document
 
 ## Release notes
 
-- **Feb 14, 2018**; Release v0.0.9
+- **Feb 14, 2018**: Release v0.0.9
 	- Add ontology relationship between wwPDB/OWL-validation and PDBx ontology via owl:sameAs, owl:equivalentClass and owl:equivalentProperty.
 
 - **Feb 13, 2018**: Release v0.0.8
