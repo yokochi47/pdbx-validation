@@ -95,7 +95,6 @@ if [ -d $RDF_VALID ] ; then
  while read pdb_id ; do
   if [ ! -e $SRC_DIR/${pdb_id:1:2}/$pdb_id/$pdb_id"_validation.xml.gz" ] ; then
    echo deleting $RDF_VALID/${pdb_id:1:2}/$pdb_id/$pdb_id-validation.rdf.gz
-   rm -f $RDF_VALID/${pdb_id:1:2}/$pdb_id/$pdb_id-validation.rdf.gz
    rm -rf $RDF_VALID/${pdb_id:1:2}/$pdb_id
   fi
  done < $pdb_id_list
