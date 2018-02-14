@@ -81,6 +81,11 @@ if [ $err != 0 ] || [ $total != $last ] ; then
 
  rm -f $info_file_list
 
+else
+
+ echo $VALID_INFO_ALT is up-to-date.
+ exit 2
+
 fi
 
 echo $VALID_INFO_ALT is up-to-date.

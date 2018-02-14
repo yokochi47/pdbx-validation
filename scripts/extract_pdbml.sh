@@ -102,6 +102,11 @@ if [ $err != 0 ] || [ $total != $last ] ; then
 
  rm -f $pdbml_file_list
 
+else
+
+ echo $PDBML_EXT is up-to-date.
+ exit 2
+
 fi
 
 echo $PDBML_EXT is up-to-date.

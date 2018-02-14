@@ -81,5 +81,5 @@ if [ $err != 0 ] || [ $total != $last ] ; then
 
 fi
 
-echo $RDF_VALID is update.
+echo $RDF_VALID is up-to-date.
 
