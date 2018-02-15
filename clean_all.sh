@@ -16,7 +16,7 @@ if [ `which DictToSdb` ] && [ `which Dict2XMLSchema` ] && [ `which Dict2XMLSchem
  (cd schema; ./update_schema.sh)
 fi
 
-rm -f *_list *_total
+rm -f *_list *_total url_mirror
 
 rm -rf extlibs
 
