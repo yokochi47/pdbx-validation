@@ -3,7 +3,7 @@
 SAXON=../extlibs/saxon9he.jar
 
 if [ ! -e $SAXON ] ; then
- (cd ..; ./scripts/update_extlibs.sh)
+ ( cd ..; ./scripts/update_extlibs.sh )
 fi
 
 PDBX_XSD=pdbx-v50.xsd

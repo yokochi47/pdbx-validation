@@ -32,7 +32,7 @@ fi
 PDBX_VALIDATION_XSD=schema/pdbx-validation-v0.xsd
 
 if [ ! -e $PDBX_VALIDATION_XSD ] ; then
- (cd schema; ./update_schema.sh)
+ ( cd schema; ./update_schema.sh )
 fi
 
 VALID_INFO_ALT=validation-info-alt

@@ -58,7 +58,7 @@ sed '2,6d' $DICT_PREFIX-v$DICT_VER.xsd | sed $pattern > $DICT_PREFIX.xsd~
 SAXON=../extlibs/saxon9he.jar
 
 if [ ! -e $SAXON ] ; then
- (cd ..; ./scripts/update_extlibs.sh)
+ ( cd ..; ./scripts/update_extlibs.sh )
 fi
 
 APPEND_SOURCE_XSL=../stylesheet/append_source.xsl

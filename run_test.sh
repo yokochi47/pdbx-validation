@@ -10,7 +10,7 @@ fi
 PDBX_VALIDATION_XSD=schema/pdbx-validation-v0.xsd
 
 if [ ! -e $PDBX_VALIDATION_XSD ] ; then
- (cd schema; ./update_schema.sh)
+ ( cd schema; ./update_schema.sh )
 fi
 
 XSD2EXT_PDBML_XSL=stylesheet/xsd2extract_pdbml.xsl

@@ -13,7 +13,7 @@ case $ans in
 esac
 
 if [ `which DictToSdb` ] && [ `which Dict2XMLSchema` ] && [ `which Dict2XMLSchema` ]; then
- (cd schema; ./update_schema.sh)
+ ( cd schema; ./update_schema.sh )
 fi
 
 rm -f *_list *_total url_mirror

@@ -15,7 +15,7 @@ fi
 PDBX_VALIDATION_XSD=schema/pdbx-validation-v0.xsd
 
 if [ ! -e $PDBX_VALIDATION_XSD ] ; then
- (cd schema; ./update_schema.sh)
+ ( cd schema; ./update_schema.sh )
 fi
 
 PDBXV2PDBMLV2RDF_XSL=stylesheet/pdbxv2pdbmlv2rdf.xsl
