@@ -254,7 +254,6 @@
 "entity_src_nat","strain","Entity_natural_src","Strain",1,
 "entity_src_nat","tissue","Entity_natural_src","Tissue",1,
 "entity_src_nat","tissue_fraction","Entity_common_name","Type",1,
-"entry","id","Assembly","Entry_ID",1,
 "exptl","method","Entry_experimental_methods","ID",5,
 "exptl","method","Entry_experimental_methods","Method",1,
 "exptl","method","Entry_experimental_methods","Subtype",1,

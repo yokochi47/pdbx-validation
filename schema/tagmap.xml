@@ -255,7 +255,6 @@
    <pdbx-item id="entity_src_nat.strain" trans_func="1">entity_natural_src.strain</pdbx-item>
    <pdbx-item id="entity_src_nat.tissue" trans_func="1">entity_natural_src.tissue</pdbx-item>
    <pdbx-item id="entity_src_nat.tissue_fraction" trans_func="1">entity_common_name.type</pdbx-item>
-   <pdbx-item id="entry.id" trans_func="1">assembly.entry_id</pdbx-item>
    <pdbx-item id="exptl.method" trans_func="5">entry_experimental_methods.id</pdbx-item>
    <pdbx-item id="exptl.method" trans_func="1">entry_experimental_methods.method</pdbx-item>
    <pdbx-item id="exptl.method" trans_func="1">entry_experimental_methods.subtype</pdbx-item>
