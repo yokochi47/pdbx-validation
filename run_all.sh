@@ -17,7 +17,16 @@ while true ; do
 done
 
 ./scripts/update_pdbml.sh
+
+if [ $? != 0 ] ; then
+ exit $?
+fi
+
 ./scripts/update_validation.sh
+
+if [ $? != 0 ] ; then
+ exit $?
+fi
 
 PDBML_EXT=pdbml-ext
 VALID_INFO_ALT=validation-info-alt

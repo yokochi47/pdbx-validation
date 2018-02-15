@@ -54,6 +54,7 @@ File path | Document
 	- Add ontology relationship between wwPDB/OWL-validation and PDBx ontology.
 	- Add ontology relationship between wwPDB/OWL-validation and BMRB/OWL.
 	- Update ontology mapping between PDBx/mmCIF and NMR-STAR data items.
+	- PDB mirror server is selectable from rsync.rcsb.org, ftp.pdbj.org, rsync.ebi.ac.uk based on network response.
 
 - **Feb 13, 2018**: Release v0.0.8
 	- Change directory: from pdbml-validtion to XML-validation, which contains compressed PDBML-validation.

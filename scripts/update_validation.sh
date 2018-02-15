@@ -13,11 +13,88 @@ VALID_INFO_ALT=validation-info-alt
 XML_VALID=XML-validation
 RDF_VALID=RDF-validation
 
+PDB_MIRRORS=("rsync.rcsb.org" "ftp.pdbj.org" "rsync.ebi.ac.uk")
+RSYNC_PORTS=("--port=33444" "" "")
+RSYNC_BASE_DIRS=("ftp" "ftp" "pub/databases/pdb")
+
+if [ ! -e url_mirror ] ; then
+
+ printf "    PDB mirror sites\t\t delay [ms]\n"
+ echo "-------------------------------------------"
+
+ PDB_MIRROR=${PDB_MIRRORS[0]}
+
+ delay=10000
+ i=1
+
+ for url in ${PDB_MIRRORS[@]}
+ do
+
+  time=`ping -c 1 -w 10 $url | grep 'avg' | cut -d '=' -f 2 | cut -d '/' -f 2`
+
+  if [ $? = "0" ] ; then
+
+   printf "[%d] %s\t\t%6.1f\n" $i $url $time
+
+   cmp=`echo "$time > $delay" | bc`
+
+   if [ $cmp = "0" ] ; then
+    PDB_MIRROR=$url
+    delay=$time
+   fi
+
+  else
+   echo $url: timed out.
+  fi
+
+  let i++
+
+ done
+
+ echo
+ echo "$PDB_MIRROR is selected as the default server. OK (1/2/3/n [y]) ? "
+
+ read ans
+
+ case $ans in
+  n*|N*)
+   echo stopped.
+   exit 1;;
+  1) PDB_MIRROR=${PDB_MIRRORS[0]};;
+  2) PDB_MIRROR=${PDB_MIRRORS[1]};;
+  3) PDB_MIRROR=${PDB_MIRRORS[2]};;
+  *) ;;
+ esac
+
+ echo $PDB_MIRROR > url_mirror
+
+else
+
+ PDB_MIRROR=`cat url_mirror`
+
+fi
+
+case $PDB_MIRROR in
+ rsync.rcsb.org)
+  RSYNC_PORT=${RSYNC_PORTS[0]}
+  RSYNC_BASE_DIR=${RSYNC_BASE_DIRS[0]};;
+ ftp.pdbj.org)
+  RSYNC_PORT=${RSYNC_PORTS[1]}
+  RSYNC_BASE_DIR=${RSYNC_BASE_DIRS[1]};;
+ rsync.ebi.ac.uk)
+  RSYNC_PORT=${RSYNC_PORTS[2]}
+  RSYNC_BASE_DIR=${RSYNC_BASE_DIRS[2]};;
+ *)
+  echo $PDB_MIRROR: undefined PDB mirror server.
+  rm -f url_miror
+  exit 1;;
+esac
+
 rsync_log=rsync_log
 
 if [ $weekday -ge 1 ] && [ $weekday -le 4 ] ; then
 
- rsync -rlpt -v -z --delete --dry-run ftp.pdbj.org::ftp/$SRC_DIR . | grep xml.gz | cut -d '/' -f 3 > $rsync_log
+ rsync -rlpt -v -z --delete --dry-run $RSYNC_PORT $PDB_MIRROR::$RSYNC_BASE_DIR/$SRC_DIR . | grep xml.gz | cut -d '/' -f 3 > $rsync_log
 
  if [ -d $XML_DIR ] ; then
   while read pdb_id ; do
@@ -63,7 +140,7 @@ if [ $weekday -ge 1 ] && [ $weekday -le 4 ] ; then
 
  rm -f $rsync_log
 
- rsync -rlpt -v -z --delete ftp.pdbj.org::ftp/$SRC_DIR .
+ rsync -rlpt -v -z --delete $RSYNC_PORT $PDB_MIRROR::$RSYNC_BASE_DIR/$SRC_DIR .
 
 fi
 
