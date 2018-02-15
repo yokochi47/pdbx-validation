@@ -652,4 +652,5 @@
    <pdbx-item id="struct_keywords.text" trans_func="1">struct_keywords.text</pdbx-item>
    <pdbx-item id="pdbx_audit_author.name" trans_func="1">entry_author.pdbx_name</pdbx-item>
    <pdbx-item id="citation_author.name" trans_func="1">citation_author.pdbx_name</pdbx-item>
+   <pdbx-item id="entry.id" trans_func="1">entry.assigned_pdb_id</pdbx-item>
 </pdbx-to-nmr-star>

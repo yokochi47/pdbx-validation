@@ -603,3 +603,4 @@
 "struct_keywords","text","Struct_keywords","Text",1,
 "pdbx_audit_author","name","Entry_author","PDBX_name",1,
 "citation_author","name","Citation_author","PDBX_name",1,
+"entry","id","Entry","assigned_pdb_id",1,
