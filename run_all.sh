@@ -31,6 +31,7 @@ fi
 PDBML_EXT=pdbml-ext
 VALID_INFO_ALT=validation-info-alt
 XML_VALID=XML-validation
+RDF_VALID=RDF-validation
 
 total=`ls $PDBML_EXT | wc -l`
 
@@ -71,7 +72,7 @@ else
 
 fi
 
-if [ $ext_pdbml_exit_code = 0 ] || [ $ext_info_exit_code = 0 ] ; then
+if [ $ext_pdbml_exit_code = 0 ] || [ $ext_info_exit_code = 0 ] || [ ! -d $XML_VALID ] || [ ! -d $RDF_VALID ] ; then
 
  total=`ls $XML_VALID | wc -l`
 
