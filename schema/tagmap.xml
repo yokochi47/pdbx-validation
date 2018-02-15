@@ -1,655 +1,665 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <pdbx-to-nmr-star>
-   <pdbx-item id="atom_site.cartn_x" trans_func="1">atom_site.cartn_x</pdbx-item>
-   <pdbx-item id="atom_site.cartn_x_esd" trans_func="1">atom_site.cartn_x_esd</pdbx-item>
-   <pdbx-item id="atom_site.cartn_y" trans_func="1">atom_site.cartn_y</pdbx-item>
-   <pdbx-item id="atom_site.cartn_y_esd" trans_func="1">atom_site.cartn_y_esd</pdbx-item>
-   <pdbx-item id="atom_site.cartn_z" trans_func="1">atom_site.cartn_z</pdbx-item>
-   <pdbx-item id="atom_site.cartn_z_esd" trans_func="1">atom_site.cartn_z_esd</pdbx-item>
-   <pdbx-item id="atom_site.auth_asym_id" trans_func="1">atom_site.auth_asym_id</pdbx-item>
-   <pdbx-item id="atom_site.auth_atom_id" trans_func="1">atom_site.auth_atom_id</pdbx-item>
-   <pdbx-item id="atom_site.auth_comp_id" trans_func="1">atom_site.auth_comp_id</pdbx-item>
-   <pdbx-item id="atom_site.auth_seq_id" trans_func="1">atom_site.auth_seq_id</pdbx-item>
-   <pdbx-item id="atom_site.details" trans_func="1">atom_site.details</pdbx-item>
-   <pdbx-item id="atom_site.footnote_id" trans_func="1">atom_site.footnote_id</pdbx-item>
-   <pdbx-item id="atom_site.id" trans_func="1">atom_site.id</pdbx-item>
-   <pdbx-item id="atom_site.label_asym_id" trans_func="1">atom_site.pdbx_label_asym_id</pdbx-item>
-   <pdbx-item id="atom_site.label_atom_id" trans_func="1">atom_site.label_atom_id</pdbx-item>
-   <pdbx-item id="atom_site.label_comp_id" trans_func="1">atom_site.label_comp_id</pdbx-item>
-   <pdbx-item id="atom_site.label_entity_id" trans_func="1">atom_site.label_entity_id</pdbx-item>
-   <pdbx-item id="atom_site.label_seq_id" trans_func="1">atom_site.label_comp_index_id</pdbx-item>
-   <pdbx-item id="atom_site.occupancy" trans_func="1">atom_site.occupancy</pdbx-item>
-   <pdbx-item id="atom_site.occupancy_esd" trans_func="1">atom_site.occupancy_esd</pdbx-item>
-   <pdbx-item id="atom_site.pdbx_pdb_model_num" trans_func="1">atom_site.model_id</pdbx-item>
-   <pdbx-item id="atom_site.pdbx_pdb_residue_name" trans_func="1">atom_site.pdbx_label_comp_id</pdbx-item>
-   <pdbx-item id="atom_site.pdbx_pdb_residue_no" trans_func="1">atom_site.pdbx_label_seq_id</pdbx-item>
-   <pdbx-item id="atom_site.pdbx_formal_charge" trans_func="1">atom_site.pdbx_formal_charge</pdbx-item>
-   <pdbx-item id="atom_site.type_symbol" trans_func="1">atom_site.type_symbol</pdbx-item>
-   <pdbx-item id="audit.update_record" trans_func="1">audit.update_record</pdbx-item>
-   <pdbx-item id="pdbx_audit_author.name" trans_func="-15">entry_author.family_name</pdbx-item>
-   <pdbx-item id="pdbx_audit_author.name" trans_func="-15">entry_author.family_title</pdbx-item>
-   <pdbx-item id="pdbx_audit_author.name" trans_func="-15">entry_author.first_initial</pdbx-item>
-   <pdbx-item id="pdbx_audit_author.name" trans_func="-15">entry_author.given_name</pdbx-item>
-   <pdbx-item id="pdbx_audit_author.name" trans_func="-15">entry_author.middle_initials</pdbx-item>
-   <pdbx-item id="pdbx_audit_author.pdbx_ordinal" trans_func="1">entry_author.ordinal</pdbx-item>
-   <pdbx-item id="audit_contact_author.email" trans_func="1">contact_person.email_address</pdbx-item>
-   <pdbx-item id="audit_contact_author.fax" trans_func="1">contact_person.fax_number</pdbx-item>
-   <pdbx-item id="audit_contact_author.phone" trans_func="1">contact_person.phone_number</pdbx-item>
-   <pdbx-item id="chem_comp.formula" trans_func="1">chem_comp.formula</pdbx-item>
-   <pdbx-item id="chem_comp.formula_weight" trans_func="1">chem_comp.formula_weight</pdbx-item>
-   <pdbx-item id="chem_comp.id" trans_func="1">chem_comp.id</pdbx-item>
-   <pdbx-item id="chem_comp.id" trans_func="1">chem_comp.pdb_code</pdbx-item>
-   <pdbx-item id="chem_comp.id" trans_func="1">chem_comp.sf_framecode</pdbx-item>
-   <pdbx-item id="chem_comp.id" trans_func="1001">entity.name</pdbx-item>
-   <pdbx-item id="chem_comp.id" trans_func="1001">entity.sf_framecode</pdbx-item>
-   <pdbx-item id="chem_comp.id" trans_func="1001">entity.nonpolymer_comp_id</pdbx-item>
-   <pdbx-item id="chem_comp.id" trans_func="1001">entity_comp_index.comp_id</pdbx-item>
-   <pdbx-item id="chem_comp.id" trans_func="1001">entity_poly_seq.mon_id</pdbx-item>
-   <pdbx-item id="chem_comp.model_details" trans_func="1">chem_comp.model_details</pdbx-item>
-   <pdbx-item id="chem_comp.model_erf" trans_func="1">chem_comp.model_erf</pdbx-item>
-   <pdbx-item id="chem_comp.model_source" trans_func="1">chem_comp.model_source</pdbx-item>
-   <pdbx-item id="chem_comp.mon_nstd_class" trans_func="1">chem_comp.mon_nstd_class</pdbx-item>
-   <pdbx-item id="chem_comp.mon_nstd_details" trans_func="1">chem_comp.mon_nstd_details</pdbx-item>
-   <pdbx-item id="chem_comp.mon_nstd_flag" trans_func="10">chem_comp.mon_nstd_flag</pdbx-item>
-   <pdbx-item id="chem_comp.mon_nstd_parent" trans_func="1">chem_comp.mon_nstd_parent</pdbx-item>
-   <pdbx-item id="chem_comp.mon_nstd_parent_comp_id" trans_func="1">chem_comp.mon_nstd_parent_comp_id</pdbx-item>
-   <pdbx-item id="chem_comp.name" trans_func="1">chem_comp.name</pdbx-item>
-   <pdbx-item id="chem_comp.number_atoms_all" trans_func="1">chem_comp.number_atoms_all</pdbx-item>
-   <pdbx-item id="chem_comp.number_atoms_nh" trans_func="1">chem_comp.number_atoms_nh</pdbx-item>
-   <pdbx-item id="chem_comp.one_letter_code" trans_func="1">chem_comp.one_letter_code</pdbx-item>
-   <pdbx-item id="chem_comp.pdbx_ambiguous_flag" trans_func="10">chem_comp.ambiguous_flag</pdbx-item>
-   <pdbx-item id="chem_comp.pdbx_formal_charge" trans_func="1">chem_comp.formal_charge</pdbx-item>
-   <pdbx-item id="chem_comp.pdbx_ideal_coordinate_details" trans_func="1">chem_comp.ideal_coordinates_details</pdbx-item>
-   <pdbx-item id="chem_comp.pdbx_ideal_coordinates_missing_flag" trans_func="10">chem_comp.ideal_coordinates_missing_flag</pdbx-item>
-   <pdbx-item id="chem_comp.pdbx_initial_date" trans_func="1">chem_comp.initial_date</pdbx-item>
-   <pdbx-item id="chem_comp.pdbx_model_coordinate_details" trans_func="1">chem_comp.model_coordinates_details</pdbx-item>
-   <pdbx-item id="chem_comp.pdbx_model_coordinates_db_code" trans_func="1">chem_comp.model_coordinates_db_code</pdbx-item>
-   <pdbx-item id="chem_comp.pdbx_model_coordinates_missing_flag" trans_func="10">chem_comp.model_coordinates_missing_flag</pdbx-item>
-   <pdbx-item id="chem_comp.pdbx_modified_date" trans_func="1">chem_comp.modified_date</pdbx-item>
-   <pdbx-item id="chem_comp.pdbx_processing_site" trans_func="1">chem_comp.processing_site</pdbx-item>
-   <pdbx-item id="chem_comp.pdbx_release_status" trans_func="1">chem_comp.release_status</pdbx-item>
-   <pdbx-item id="chem_comp.pdbx_replaced_by" trans_func="1">chem_comp.replaced_by</pdbx-item>
-   <pdbx-item id="chem_comp.pdbx_replaces" trans_func="1">chem_comp.replaces</pdbx-item>
-   <pdbx-item id="chem_comp.pdbx_subcomponent_list" trans_func="1">chem_comp.subcomponent_list</pdbx-item>
-   <pdbx-item id="chem_comp.pdbx_synonyms" trans_func="1">chem_comp.synonyms</pdbx-item>
-   <pdbx-item id="chem_comp.three_letter_code" trans_func="1">chem_comp.three_letter_code</pdbx-item>
-   <pdbx-item id="chem_comp.type" trans_func="1">chem_comp.type</pdbx-item>
-   <pdbx-item id="chem_comp.type" trans_func="1001">entity.type</pdbx-item>
-   <pdbx-item id="chem_comp_angle.atom_id_1" trans_func="7">chem_comp_angle.atom_id_1</pdbx-item>
-   <pdbx-item id="chem_comp_angle.atom_id_2" trans_func="7">chem_comp_angle.atom_id_2</pdbx-item>
-   <pdbx-item id="chem_comp_angle.atom_id_3" trans_func="7">chem_comp_angle.atom_id_3</pdbx-item>
-   <pdbx-item id="chem_comp_angle.comp_id" trans_func="7">chem_comp_angle.comp_id</pdbx-item>
-   <pdbx-item id="chem_comp_atom.atom_id" trans_func="7">chem_comp_atom.atom_id</pdbx-item>
-   <pdbx-item id="chem_comp_atom.atom_id" trans_func="7">chem_comp_atom.pdb_atom_id</pdbx-item>
-   <pdbx-item id="chem_comp_atom.charge" trans_func="7">chem_comp_atom.charge</pdbx-item>
-   <pdbx-item id="chem_comp_atom.comp_id" trans_func="7">chem_comp_atom.comp_id</pdbx-item>
-   <pdbx-item id="chem_comp_atom.model_cartn_x" trans_func="1">chem_comp_atom.model_cartn_x</pdbx-item>
-   <pdbx-item id="chem_comp_atom.model_cartn_x_esd" trans_func="1">chem_comp_atom.model_cartn_x_esd</pdbx-item>
-   <pdbx-item id="chem_comp_atom.model_cartn_y" trans_func="1">chem_comp_atom.model_cartn_y</pdbx-item>
-   <pdbx-item id="chem_comp_atom.model_cartn_y_esd" trans_func="1">chem_comp_atom.model_cartn_y_esd</pdbx-item>
-   <pdbx-item id="chem_comp_atom.model_cartn_z" trans_func="1">chem_comp_atom.model_cartn_z</pdbx-item>
-   <pdbx-item id="chem_comp_atom.model_cartn_z_esd" trans_func="1">chem_comp_atom.model_cartn_z_esd</pdbx-item>
-   <pdbx-item id="chem_comp_atom.partial_charge" trans_func="1">chem_comp_atom.partial_charge</pdbx-item>
-   <pdbx-item id="chem_comp_atom.pdbx_alt_atom_id" trans_func="1">chem_comp_atom.alt_atom_id</pdbx-item>
-   <pdbx-item id="chem_comp_atom.pdbx_aromatic_flag" trans_func="10">chem_comp_atom.aromatic_flag</pdbx-item>
-   <pdbx-item id="chem_comp_atom.pdbx_leaving_atom_flag" trans_func="10">chem_comp_atom.leaving_atom_flag</pdbx-item>
-   <pdbx-item id="chem_comp_atom.pdbx_model_cartn_x_ideal" trans_func="1">chem_comp_atom.model_cartn_x_ideal</pdbx-item>
-   <pdbx-item id="chem_comp_atom.pdbx_model_cartn_y_ideal" trans_func="1">chem_comp_atom.model_cartn_y_ideal</pdbx-item>
-   <pdbx-item id="chem_comp_atom.pdbx_model_cartn_z_ideal" trans_func="1">chem_comp_atom.model_cartn_z_ideal</pdbx-item>
-   <pdbx-item id="chem_comp_atom.pdbx_ordinal" trans_func="1">chem_comp_atom.pdbx_ordinal</pdbx-item>
-   <pdbx-item id="chem_comp_atom.pdbx_stereo_config" trans_func="1">chem_comp_atom.stereo_config</pdbx-item>
-   <pdbx-item id="chem_comp_atom.substruct_code" trans_func="1">chem_comp_atom.substruct_code</pdbx-item>
-   <pdbx-item id="chem_comp_atom.type_symbol" trans_func="7">chem_comp_atom.type_symbol</pdbx-item>
-   <pdbx-item id="chem_comp_bond.atom_id_1" trans_func="7">chem_comp_bond.atom_id_1</pdbx-item>
-   <pdbx-item id="chem_comp_bond.atom_id_2" trans_func="7">chem_comp_bond.atom_id_2</pdbx-item>
-   <pdbx-item id="chem_comp_bond.comp_id" trans_func="7">chem_comp_bond.comp_id</pdbx-item>
-   <pdbx-item id="chem_comp_bond.pdbx_aromatic_flag" trans_func="10">chem_comp_bond.aromatic_flag</pdbx-item>
-   <pdbx-item id="chem_comp_bond.pdbx_ordinal" trans_func="1">chem_comp_bond.ordinal</pdbx-item>
-   <pdbx-item id="chem_comp_bond.pdbx_stereo_config" trans_func="1">chem_comp_bond.stereo_config</pdbx-item>
-   <pdbx-item id="chem_comp_bond.value_order" trans_func="7">chem_comp_bond.value_order</pdbx-item>
-   <pdbx-item id="chem_comp_tor.atom_id_1" trans_func="7">chem_comp_tor.atom_id_1</pdbx-item>
-   <pdbx-item id="chem_comp_tor.atom_id_2" trans_func="7">chem_comp_tor.atom_id_2</pdbx-item>
-   <pdbx-item id="chem_comp_tor.atom_id_3" trans_func="7">chem_comp_tor.atom_id_3</pdbx-item>
-   <pdbx-item id="chem_comp_tor.atom_id_4" trans_func="7">chem_comp_tor.atom_id_4</pdbx-item>
-   <pdbx-item id="chem_comp_tor.comp_id" trans_func="7">chem_comp_tor.comp_id</pdbx-item>
-   <pdbx-item id="chem_comp_tor.id" trans_func="7">chem_comp_tor.id</pdbx-item>
-   <pdbx-item id="citation.book_id_isbn" trans_func="3">citation.book_isbn</pdbx-item>
-   <pdbx-item id="citation.book_publisher" trans_func="1">citation.book_publisher</pdbx-item>
-   <pdbx-item id="citation.book_publisher_city" trans_func="3">citation.book_publisher_city</pdbx-item>
-   <pdbx-item id="citation.book_title" trans_func="3">citation.book_title</pdbx-item>
-   <pdbx-item id="citation.database_id_medline" trans_func="3">citation.medline_ui_code</pdbx-item>
-   <pdbx-item id="citation.details" trans_func="3">citation.details</pdbx-item>
-   <pdbx-item id="citation.id" trans_func="3">citation.id</pdbx-item>
-   <pdbx-item id="citation.journal_abbrev" trans_func="3">citation.journal_abbrev</pdbx-item>
-   <pdbx-item id="citation.journal_full" trans_func="3">citation.journal_name_full</pdbx-item>
-   <pdbx-item id="citation.journal_id_astm" trans_func="3">citation.journal_astm</pdbx-item>
-   <pdbx-item id="citation.journal_id_csd" trans_func="1">citation.journal_csd</pdbx-item>
-   <pdbx-item id="citation.journal_id_issn" trans_func="3">citation.journal_issn</pdbx-item>
-   <pdbx-item id="citation.journal_issue" trans_func="3">citation.journal_issue</pdbx-item>
-   <pdbx-item id="citation.journal_volume" trans_func="3">citation.journal_volume</pdbx-item>
-   <pdbx-item id="citation.page_first" trans_func="3">citation.page_first</pdbx-item>
-   <pdbx-item id="citation.page_last" trans_func="3">citation.page_last</pdbx-item>
-   <pdbx-item id="citation.pdbx_database_id_doi" trans_func="1">citation.doi</pdbx-item>
-   <pdbx-item id="citation.pdbx_database_id_pubmed" trans_func="1">citation.pubmed_id</pdbx-item>
-   <pdbx-item id="citation.title" trans_func="3">citation.title</pdbx-item>
-   <pdbx-item id="citation.year" trans_func="3">citation.year</pdbx-item>
-   <pdbx-item id="citation_author.citation_id" trans_func="3">citation_author.citation_id</pdbx-item>
-   <pdbx-item id="citation_author.name" trans_func="-15">citation_author.family_name</pdbx-item>
-   <pdbx-item id="citation_author.name" trans_func="-15">citation_author.family_title</pdbx-item>
-   <pdbx-item id="citation_author.name" trans_func="-15">citation_author.first_initial</pdbx-item>
-   <pdbx-item id="citation_author.name" trans_func="-15">citation_author.given_name</pdbx-item>
-   <pdbx-item id="citation_author.name" trans_func="-15">citation_author.middle_initials</pdbx-item>
-   <pdbx-item id="citation_author.ordinal" trans_func="3">citation_author.ordinal</pdbx-item>
-   <pdbx-item id="citation_editor.citation_id" trans_func="3">citation_editor.citation_id</pdbx-item>
-   <pdbx-item id="citation_editor.name" trans_func="-15">citation_editor.family_name</pdbx-item>
-   <pdbx-item id="citation_editor.name" trans_func="-15">citation_editor.family_title</pdbx-item>
-   <pdbx-item id="citation_editor.name" trans_func="-15">citation_editor.first_initial</pdbx-item>
-   <pdbx-item id="citation_editor.name" trans_func="-15">citation_editor.given_name</pdbx-item>
-   <pdbx-item id="citation_editor.name" trans_func="-15">citation_editor.middle_initials</pdbx-item>
-   <pdbx-item id="citation_editor.ordinal" trans_func="3">citation_editor.ordinal</pdbx-item>
-   <pdbx-item id="database_2.database_code" trans_func="1">related_entries.database_accession_code</pdbx-item>
-   <pdbx-item id="database_2.database_id" trans_func="1">related_entries.database_name</pdbx-item>
-   <pdbx-item id="entity.details" trans_func="3">entity.details</pdbx-item>
-   <pdbx-item id="entity.formula_weight" trans_func="3">entity.formula_weight</pdbx-item>
-   <pdbx-item id="entity.id" trans_func="4">entity.id</pdbx-item>
-   <pdbx-item id="entity.pdbx_description" trans_func="2">entity.name</pdbx-item>
-   <pdbx-item id="entity.pdbx_description" trans_func="2">entity.sf_framecode</pdbx-item>
-   <pdbx-item id="entity.pdbx_ec" trans_func="1">entity.ec_number</pdbx-item>
-   <pdbx-item id="entity.pdbx_formula_weight_exptl" trans_func="3">entity.formula_weight_exptl</pdbx-item>
-   <pdbx-item id="entity.pdbx_fragment" trans_func="3">entity.fragment</pdbx-item>
-   <pdbx-item id="entity.pdbx_mutation" trans_func="3">entity.mutation</pdbx-item>
-   <pdbx-item id="entity.pdbx_parent_entity_id" trans_func="3">entity.parent_entity_id</pdbx-item>
-   <pdbx-item id="entity.pdbx_target_id" trans_func="3">entity.parent_entity_id</pdbx-item>
-   <pdbx-item id="entity.src_method" trans_func="3">entity.src_method</pdbx-item>
-   <pdbx-item id="entity.src_method" trans_func="3">entity_experimental_src.production_method</pdbx-item>
-   <pdbx-item id="entity.type" trans_func="3">entity.type</pdbx-item>
-   <pdbx-item id="entity_keywords.entity_id" trans_func="3">entity_keyword.entity_id</pdbx-item>
-   <pdbx-item id="entity_keywords.text" trans_func="3">entity_keyword.keyword</pdbx-item>
-   <pdbx-item id="entity_name_com.entity_id" trans_func="3">entity_common_name.entity_id</pdbx-item>
-   <pdbx-item id="entity_name_com.name" trans_func="3">entity_common_name.name</pdbx-item>
-   <pdbx-item id="entity_name_sys.entity_id" trans_func="3">entity_systematic_name.entity_id</pdbx-item>
-   <pdbx-item id="entity_name_sys.name" trans_func="3">entity_systematic_name.name</pdbx-item>
-   <pdbx-item id="entity_poly.entity_id" trans_func="4">entity.id</pdbx-item>
-   <pdbx-item id="entity_poly.nstd_chirality" trans_func="3">entity.nstd_chirality</pdbx-item>
-   <pdbx-item id="entity_poly.nstd_linkage" trans_func="3">entity.nstd_linkage</pdbx-item>
-   <pdbx-item id="entity_poly.nstd_monomer" trans_func="3">entity.nstd_monomer</pdbx-item>
-   <pdbx-item id="entity_poly.number_of_monomers" trans_func="3">entity.number_of_monomers</pdbx-item>
-   <pdbx-item id="entity_poly.pdbx_seq_one_letter_code" trans_func="3">entity.polymer_seq_one_letter_code</pdbx-item>
-   <pdbx-item id="entity_poly.pdbx_seq_one_letter_code_can" trans_func="3">entity.polymer_seq_one_letter_code_can</pdbx-item>
-   <pdbx-item id="entity_poly.pdbx_strand_id" trans_func="3">entity.polymer_strand_id</pdbx-item>
-   <pdbx-item id="entity_poly.type" trans_func="3">entity.polymer_type</pdbx-item>
-   <pdbx-item id="entity_poly.type_details" trans_func="3">entity.polymer_type_details</pdbx-item>
-   <pdbx-item id="entity_poly_seq.entity_id" trans_func="3">entity_comp_index.entity_id</pdbx-item>
-   <pdbx-item id="entity_poly_seq.entity_id" trans_func="3">entity_poly_seq.entity_id</pdbx-item>
-   <pdbx-item id="entity_poly_seq.mon_id" trans_func="3">entity_comp_index.comp_id</pdbx-item>
-   <pdbx-item id="entity_poly_seq.mon_id" trans_func="3">entity_poly_seq.mon_id</pdbx-item>
-   <pdbx-item id="entity_poly_seq.num" trans_func="3">entity_comp_index.id</pdbx-item>
-   <pdbx-item id="entity_poly_seq.num" trans_func="3">entity_poly_seq.num</pdbx-item>
-   <pdbx-item id="entity_src_gen.entity_id" trans_func="1">entity_experimental_src.entity_id</pdbx-item>
-   <pdbx-item id="entity_src_gen.entity_id" trans_func="1">entity_natural_src.entity_id</pdbx-item>
-   <pdbx-item id="entity_src_gen.gene_src_common_name" trans_func="1">entity_natural_src.organism_name_common</pdbx-item>
-   <pdbx-item id="entity_src_gen.gene_src_common_name" trans_func="50">entity_natural_src_list.id</pdbx-item>
-   <pdbx-item id="entity_src_gen.gene_src_dev_stage" trans_func="1">entity_natural_src.dev_stage</pdbx-item>
-   <pdbx-item id="entity_src_gen.gene_src_genus" trans_func="1">entity_natural_src.genus</pdbx-item>
-   <pdbx-item id="entity_src_gen.gene_src_species" trans_func="1">entity_natural_src.species</pdbx-item>
-   <pdbx-item id="entity_src_gen.gene_src_strain" trans_func="1">entity_natural_src.strain</pdbx-item>
-   <pdbx-item id="entity_src_gen.gene_src_tissue" trans_func="1">entity_natural_src.tissue</pdbx-item>
-   <pdbx-item id="entity_src_gen.gene_src_tissue_fraction" trans_func="1">entity_common_name.type</pdbx-item>
-   <pdbx-item id="entity_src_gen.host_org_common_name" trans_func="1">entity_experimental_src.host_org_name_common</pdbx-item>
-   <pdbx-item id="entity_src_gen.host_org_common_name" trans_func="50">entity_experimental_src_list.id</pdbx-item>
-   <pdbx-item id="entity_src_gen.host_org_details" trans_func="1">entity_experimental_src.host_org_details</pdbx-item>
-   <pdbx-item id="entity_src_gen.host_org_genus" trans_func="1">entity_experimental_src.host_org_genus</pdbx-item>
-   <pdbx-item id="entity_src_gen.host_org_species" trans_func="1">entity_experimental_src.host_org_species</pdbx-item>
-   <pdbx-item id="entity_src_gen.pdbx_description" trans_func="1">entity_experimental_src.details</pdbx-item>
-   <pdbx-item id="entity_src_gen.pdbx_gene_src_atcc" trans_func="1">entity_natural_src.atcc_number</pdbx-item>
-   <pdbx-item id="entity_src_gen.pdbx_gene_src_cell" trans_func="1">entity_natural_src.cell_type</pdbx-item>
-   <pdbx-item id="entity_src_gen.pdbx_gene_src_cell_line" trans_func="1">entity_natural_src.cell_line</pdbx-item>
-   <pdbx-item id="entity_src_gen.pdbx_gene_src_cellular_location" trans_func="1">entity_natural_src.cellular_location</pdbx-item>
-   <pdbx-item id="entity_src_gen.pdbx_gene_src_fragment" trans_func="1">entity_natural_src.fragment</pdbx-item>
-   <pdbx-item id="entity_src_gen.pdbx_gene_src_gene" trans_func="1">entity_natural_src.gene_mnemonic</pdbx-item>
-   <pdbx-item id="entity_src_gen.pdbx_gene_src_ncbi_taxonomy_id" trans_func="1">entity_natural_src.ncbi_taxonomy_id</pdbx-item>
-   <pdbx-item id="entity_src_gen.pdbx_gene_src_organ" trans_func="1">entity_natural_src.organ</pdbx-item>
-   <pdbx-item id="entity_src_gen.pdbx_gene_src_organelle" trans_func="1">entity_natural_src.organelle</pdbx-item>
-   <pdbx-item id="entity_src_gen.pdbx_gene_src_plasmid" trans_func="1">entity_natural_src.plasmid</pdbx-item>
-   <pdbx-item id="entity_src_gen.pdbx_gene_src_plasmid_name" trans_func="1">entity_natural_src.plasmid</pdbx-item>
-   <pdbx-item id="entity_src_gen.pdbx_gene_src_scientific_name" trans_func="1">entity_natural_src.organism_name_scientific</pdbx-item>
-   <pdbx-item id="entity_src_gen.pdbx_gene_src_scientific_name" trans_func="50">entity_natural_src_list.id</pdbx-item>
-   <pdbx-item id="entity_src_gen.pdbx_gene_src_variant" trans_func="1">entity_natural_src.variant</pdbx-item>
-   <pdbx-item id="entity_src_gen.pdbx_host_org_atcc" trans_func="1">entity_experimental_src.host_org_atcc_number</pdbx-item>
-   <pdbx-item id="entity_src_gen.pdbx_host_org_cell" trans_func="1">entity_experimental_src.host_org_cell_type</pdbx-item>
-   <pdbx-item id="entity_src_gen.pdbx_host_org_cell_line" trans_func="1">entity_experimental_src.host_org_cell_line</pdbx-item>
-   <pdbx-item id="entity_src_gen.pdbx_host_org_cellular_location" trans_func="1">entity_experimental_src.host_org_cellular_location</pdbx-item>
-   <pdbx-item id="entity_src_gen.pdbx_host_org_culture_collection" trans_func="1">entity_experimental_src.host_org_culture_collection</pdbx-item>
-   <pdbx-item id="entity_src_gen.pdbx_host_org_gene" trans_func="1">entity_experimental_src.host_org_gene</pdbx-item>
-   <pdbx-item id="entity_src_gen.pdbx_host_org_ncbi_taxonomy_id" trans_func="1">entity_experimental_src.host_org_ncbi_taxonomy_id</pdbx-item>
-   <pdbx-item id="entity_src_gen.pdbx_host_org_organ" trans_func="1">entity_experimental_src.host_org_organ</pdbx-item>
-   <pdbx-item id="entity_src_gen.pdbx_host_org_organelle" trans_func="1">entity_experimental_src.host_org_organelle</pdbx-item>
-   <pdbx-item id="entity_src_gen.pdbx_host_org_scientific_name" trans_func="2">entity_experimental_src.host_org_scientific_name</pdbx-item>
-   <pdbx-item id="entity_src_gen.pdbx_host_org_scientific_name" trans_func="50">entity_experimental_src_list.id</pdbx-item>
-   <pdbx-item id="entity_src_gen.pdbx_host_org_strain" trans_func="1">entity_experimental_src.host_org_strain</pdbx-item>
-   <pdbx-item id="entity_src_gen.pdbx_host_org_tissue" trans_func="1">entity_experimental_src.host_org_tissue</pdbx-item>
-   <pdbx-item id="entity_src_gen.pdbx_host_org_tissue_fraction" trans_func="1">entity_experimental_src.host_org_tissue_fraction</pdbx-item>
-   <pdbx-item id="entity_src_gen.pdbx_host_org_variant" trans_func="1">entity_experimental_src.host_org_variant</pdbx-item>
-   <pdbx-item id="entity_src_gen.pdbx_host_org_vector" trans_func="2">entity_experimental_src.vector_name</pdbx-item>
-   <pdbx-item id="entity_src_gen.pdbx_host_org_vector_type" trans_func="1">entity_experimental_src.vector_type</pdbx-item>
-   <pdbx-item id="entity_src_gen.plasmid_details" trans_func="1">entity_experimental_src.vector_details</pdbx-item>
-   <pdbx-item id="entity_src_gen.plasmid_name" trans_func="1">entity_experimental_src.vector_name</pdbx-item>
-   <pdbx-item id="entity_src_nat.common_name" trans_func="1">entity_natural_src.organism_name_common</pdbx-item>
-   <pdbx-item id="entity_src_nat.details" trans_func="1">entity_natural_src.details</pdbx-item>
-   <pdbx-item id="entity_src_nat.entity_id" trans_func="1">entity_natural_src.entity_id</pdbx-item>
-   <pdbx-item id="entity_src_nat.genus" trans_func="1">entity_natural_src.genus</pdbx-item>
-   <pdbx-item id="entity_src_nat.pdbx_atcc" trans_func="1">entity_natural_src.atcc_number</pdbx-item>
-   <pdbx-item id="entity_src_nat.pdbx_cell" trans_func="1">entity_natural_src.cell_type</pdbx-item>
-   <pdbx-item id="entity_src_nat.pdbx_cell_line" trans_func="1">entity_natural_src.cell_line</pdbx-item>
-   <pdbx-item id="entity_src_nat.pdbx_cellular_location" trans_func="1">entity_natural_src.cellular_location</pdbx-item>
-   <pdbx-item id="entity_src_nat.pdbx_fragment" trans_func="1">entity_natural_src.fragment</pdbx-item>
-   <pdbx-item id="entity_src_nat.pdbx_ncbi_taxonomy_id" trans_func="1">entity_natural_src.ncbi_taxonomy_id</pdbx-item>
-   <pdbx-item id="entity_src_nat.pdbx_organ" trans_func="1">entity_natural_src.organ</pdbx-item>
-   <pdbx-item id="entity_src_nat.pdbx_organelle" trans_func="1">entity_natural_src.organelle</pdbx-item>
-   <pdbx-item id="entity_src_nat.pdbx_organism_scientific" trans_func="2">entity_natural_src.organism_name_scientific</pdbx-item>
-   <pdbx-item id="entity_src_nat.pdbx_plasmid_details" trans_func="1">entity_natural_src.plasmid_details</pdbx-item>
-   <pdbx-item id="entity_src_nat.pdbx_plasmid_name" trans_func="1">entity_natural_src.plasmid</pdbx-item>
-   <pdbx-item id="entity_src_nat.pdbx_secretion" trans_func="1">entity_natural_src.secretion</pdbx-item>
-   <pdbx-item id="entity_src_nat.pdbx_variant" trans_func="1">entity_natural_src.variant</pdbx-item>
-   <pdbx-item id="entity_src_nat.species" trans_func="1">entity_natural_src.species</pdbx-item>
-   <pdbx-item id="entity_src_nat.strain" trans_func="1">entity_natural_src.strain</pdbx-item>
-   <pdbx-item id="entity_src_nat.tissue" trans_func="1">entity_natural_src.tissue</pdbx-item>
-   <pdbx-item id="entity_src_nat.tissue_fraction" trans_func="1">entity_common_name.type</pdbx-item>
-   <pdbx-item id="exptl.method" trans_func="5">entry_experimental_methods.id</pdbx-item>
-   <pdbx-item id="exptl.method" trans_func="1">entry_experimental_methods.method</pdbx-item>
-   <pdbx-item id="exptl.method" trans_func="1">entry_experimental_methods.subtype</pdbx-item>
-   <pdbx-item id="journal.coden_astm" trans_func="3">citation.journal_astm</pdbx-item>
-   <pdbx-item id="journal.entry_id" trans_func="1">citation.entry_id</pdbx-item>
-   <pdbx-item id="journal.issue" trans_func="3">citation.journal_issue</pdbx-item>
-   <pdbx-item id="journal.name_full" trans_func="3">citation.journal_name_full</pdbx-item>
-   <pdbx-item id="journal.page_first" trans_func="3">citation.page_first</pdbx-item>
-   <pdbx-item id="journal.page_last" trans_func="3">citation.page_last</pdbx-item>
-   <pdbx-item id="journal.volume" trans_func="3">citation.journal_volume</pdbx-item>
-   <pdbx-item id="journal.year" trans_func="3">citation.year</pdbx-item>
-   <pdbx-item id="pdbx_sg_project.full_name_of_center" trans_func="1">sg_project.full_name_of_center</pdbx-item>
-   <pdbx-item id="pdbx_sg_project.id" trans_func="1">sg_project.sg_project_id</pdbx-item>
-   <pdbx-item id="pdbx_sg_project.initial_of_center" trans_func="1">sg_project.initial_of_center</pdbx-item>
-   <pdbx-item id="pdbx_sg_project.project_name" trans_func="1">sg_project.project_name</pdbx-item>
-   <pdbx-item id="pdbx_chem_comp_descriptor.comp_id" trans_func="1">chem_comp_descriptor.comp_id</pdbx-item>
-   <pdbx-item id="pdbx_chem_comp_descriptor.descriptor" trans_func="1">chem_comp_descriptor.descriptor</pdbx-item>
-   <pdbx-item id="pdbx_chem_comp_descriptor.program" trans_func="1">chem_comp_descriptor.program</pdbx-item>
-   <pdbx-item id="pdbx_chem_comp_descriptor.program_version" trans_func="1">chem_comp_descriptor.program_version</pdbx-item>
-   <pdbx-item id="pdbx_chem_comp_descriptor.type" trans_func="1">chem_comp_descriptor.type</pdbx-item>
-   <pdbx-item id="pdbx_chem_comp_feature.comp_id" trans_func="1">pdbx_chem_comp_feature.comp_id</pdbx-item>
-   <pdbx-item id="pdbx_chem_comp_feature.source" trans_func="1">pdbx_chem_comp_feature.source</pdbx-item>
-   <pdbx-item id="pdbx_chem_comp_feature.support" trans_func="1">pdbx_chem_comp_feature.support</pdbx-item>
-   <pdbx-item id="pdbx_chem_comp_feature.type" trans_func="1">pdbx_chem_comp_feature.type</pdbx-item>
-   <pdbx-item id="pdbx_chem_comp_feature.value" trans_func="1">pdbx_chem_comp_feature.value</pdbx-item>
-   <pdbx-item id="pdbx_chem_comp_identifier.comp_id" trans_func="1">chem_comp_identifier.comp_id</pdbx-item>
-   <pdbx-item id="pdbx_chem_comp_identifier.identifier" trans_func="1">chem_comp_identifier.identifier</pdbx-item>
-   <pdbx-item id="pdbx_chem_comp_identifier.program" trans_func="1">chem_comp_identifier.program</pdbx-item>
-   <pdbx-item id="pdbx_chem_comp_identifier.program_version" trans_func="1">chem_comp_identifier.program_version</pdbx-item>
-   <pdbx-item id="pdbx_chem_comp_identifier.type" trans_func="1">chem_comp_identifier.type</pdbx-item>
-   <pdbx-item id="pdbx_contact_author.address_1" trans_func="1">contact_person.address_1</pdbx-item>
-   <pdbx-item id="pdbx_contact_author.address_2" trans_func="1">contact_person.address_2</pdbx-item>
-   <pdbx-item id="pdbx_contact_author.address_3" trans_func="1">contact_person.address_3</pdbx-item>
-   <pdbx-item id="pdbx_contact_author.city" trans_func="1">contact_person.city</pdbx-item>
-   <pdbx-item id="pdbx_contact_author.country" trans_func="1">contact_person.country</pdbx-item>
-   <pdbx-item id="pdbx_contact_author.email" trans_func="1">contact_person.email_address</pdbx-item>
-   <pdbx-item id="pdbx_contact_author.fax" trans_func="1">contact_person.fax_number</pdbx-item>
-   <pdbx-item id="pdbx_contact_author.id" trans_func="1">contact_person.id</pdbx-item>
-   <pdbx-item id="pdbx_contact_author.identifier_orcid" trans_func="1">contact_person.orcid</pdbx-item>
-   <pdbx-item id="pdbx_contact_author.name_first" trans_func="1">contact_person.given_name</pdbx-item>
-   <pdbx-item id="pdbx_contact_author.name_last" trans_func="1">contact_person.family_name</pdbx-item>
-   <pdbx-item id="pdbx_contact_author.name_mi" trans_func="1">contact_person.middle_initials</pdbx-item>
-   <pdbx-item id="pdbx_contact_author.name_salutation" trans_func="1">contact_person.name_salutation</pdbx-item>
-   <pdbx-item id="pdbx_contact_author.organization_type" trans_func="1">contact_person.organization_type</pdbx-item>
-   <pdbx-item id="pdbx_contact_author.phone" trans_func="1">contact_person.phone_number</pdbx-item>
-   <pdbx-item id="pdbx_contact_author.postal_code" trans_func="1">contact_person.postal_code</pdbx-item>
-   <pdbx-item id="pdbx_contact_author.role" trans_func="1">contact_person.role</pdbx-item>
-   <pdbx-item id="pdbx_contact_author.state_province" trans_func="1">contact_person.state_province</pdbx-item>
-   <pdbx-item id="pdbx_database_status.sg_entry" trans_func="10">entry_interview.structural_genomics</pdbx-item>
-   <pdbx-item id="pdbx_database_status.date_hold_chemical_shifts" trans_func="1">entry.date_hold_chemical_shifts</pdbx-item>
-   <pdbx-item id="pdbx_database_status.date_hold_coordinates" trans_func="1">entry.date_hold_coordinates</pdbx-item>
-   <pdbx-item id="pdbx_database_status.date_hold_nmr_constraints" trans_func="1">entry.date_hold_nmr_constraints</pdbx-item>
-   <pdbx-item id="pdbx_database_status.date_manuscript" trans_func="1">entry.date_manuscript</pdbx-item>
-   <pdbx-item id="pdbx_database_status.date_nmr_constraints" trans_func="1">entry.date_nmr_constraints</pdbx-item>
-   <pdbx-item id="pdbx_database_status.date_submitted" trans_func="1">entry.pdb_date_submitted</pdbx-item>
-   <pdbx-item id="pdbx_database_status.dep_release_code_chemical_shifts"
+   <pdbx-item name="atom_site.cartn_x" trans_func="1">atom_site.cartn_x</pdbx-item>
+   <pdbx-item name="atom_site.cartn_x_esd" trans_func="1">atom_site.cartn_x_esd</pdbx-item>
+   <pdbx-item name="atom_site.cartn_y" trans_func="1">atom_site.cartn_y</pdbx-item>
+   <pdbx-item name="atom_site.cartn_y_esd" trans_func="1">atom_site.cartn_y_esd</pdbx-item>
+   <pdbx-item name="atom_site.cartn_z" trans_func="1">atom_site.cartn_z</pdbx-item>
+   <pdbx-item name="atom_site.cartn_z_esd" trans_func="1">atom_site.cartn_z_esd</pdbx-item>
+   <pdbx-item name="atom_site.auth_asym_id" trans_func="1">atom_site.auth_asym_id</pdbx-item>
+   <pdbx-item name="atom_site.auth_atom_id" trans_func="1">atom_site.auth_atom_id</pdbx-item>
+   <pdbx-item name="atom_site.auth_comp_id" trans_func="1">atom_site.auth_comp_id</pdbx-item>
+   <pdbx-item name="atom_site.auth_seq_id" trans_func="1">atom_site.auth_seq_id</pdbx-item>
+   <pdbx-item name="atom_site.details" trans_func="1">atom_site.details</pdbx-item>
+   <pdbx-item name="atom_site.footnote_id" trans_func="1">atom_site.footnote_id</pdbx-item>
+   <pdbx-item name="atom_site.id" trans_func="1">atom_site.id</pdbx-item>
+   <pdbx-item name="atom_site.label_asym_id" trans_func="1">atom_site.pdbx_label_asym_id</pdbx-item>
+   <pdbx-item name="atom_site.label_atom_id" trans_func="1">atom_site.label_atom_id</pdbx-item>
+   <pdbx-item name="atom_site.label_comp_id" trans_func="1">atom_site.label_comp_id</pdbx-item>
+   <pdbx-item name="atom_site.label_entity_id" trans_func="1">atom_site.label_entity_id</pdbx-item>
+   <pdbx-item name="atom_site.label_seq_id" trans_func="1">atom_site.label_comp_index_id</pdbx-item>
+   <pdbx-item name="atom_site.occupancy" trans_func="1">atom_site.occupancy</pdbx-item>
+   <pdbx-item name="atom_site.occupancy_esd" trans_func="1">atom_site.occupancy_esd</pdbx-item>
+   <pdbx-item name="atom_site.pdbx_pdb_model_num" trans_func="1">atom_site.model_id</pdbx-item>
+   <pdbx-item name="atom_site.pdbx_pdb_residue_name" trans_func="1">atom_site.pdbx_label_comp_id</pdbx-item>
+   <pdbx-item name="atom_site.pdbx_pdb_residue_no" trans_func="1">atom_site.pdbx_label_seq_id</pdbx-item>
+   <pdbx-item name="atom_site.pdbx_formal_charge" trans_func="1">atom_site.pdbx_formal_charge</pdbx-item>
+   <pdbx-item name="atom_site.type_symbol" trans_func="1">atom_site.type_symbol</pdbx-item>
+   <pdbx-item name="audit.update_record" trans_func="1">audit.update_record</pdbx-item>
+   <pdbx-item name="pdbx_audit_author.name" trans_func="-15">entry_author.family_name</pdbx-item>
+   <pdbx-item name="pdbx_audit_author.name" trans_func="-15">entry_author.family_title</pdbx-item>
+   <pdbx-item name="pdbx_audit_author.name" trans_func="-15">entry_author.first_initial</pdbx-item>
+   <pdbx-item name="pdbx_audit_author.name" trans_func="-15">entry_author.given_name</pdbx-item>
+   <pdbx-item name="pdbx_audit_author.name" trans_func="-15">entry_author.middle_initials</pdbx-item>
+   <pdbx-item name="pdbx_audit_author.pdbx_ordinal" trans_func="1">entry_author.ordinal</pdbx-item>
+   <pdbx-item name="audit_contact_author.email" trans_func="1">contact_person.email_address</pdbx-item>
+   <pdbx-item name="audit_contact_author.fax" trans_func="1">contact_person.fax_number</pdbx-item>
+   <pdbx-item name="audit_contact_author.phone" trans_func="1">contact_person.phone_number</pdbx-item>
+   <pdbx-item name="chem_comp.formula" trans_func="1">chem_comp.formula</pdbx-item>
+   <pdbx-item name="chem_comp.formula_weight" trans_func="1">chem_comp.formula_weight</pdbx-item>
+   <pdbx-item name="chem_comp.id" trans_func="1">chem_comp.id</pdbx-item>
+   <pdbx-item name="chem_comp.id" trans_func="1">chem_comp.pdb_code</pdbx-item>
+   <pdbx-item name="chem_comp.id" trans_func="1">chem_comp.sf_framecode</pdbx-item>
+   <pdbx-item name="chem_comp.id" trans_func="1001">entity.name</pdbx-item>
+   <pdbx-item name="chem_comp.id" trans_func="1001">entity.sf_framecode</pdbx-item>
+   <pdbx-item name="chem_comp.id" trans_func="1001">entity.nonpolymer_comp_id</pdbx-item>
+   <pdbx-item name="chem_comp.id" trans_func="1001">entity_comp_index.comp_id</pdbx-item>
+   <pdbx-item name="chem_comp.id" trans_func="1001">entity_poly_seq.mon_id</pdbx-item>
+   <pdbx-item name="chem_comp.model_details" trans_func="1">chem_comp.model_details</pdbx-item>
+   <pdbx-item name="chem_comp.model_erf" trans_func="1">chem_comp.model_erf</pdbx-item>
+   <pdbx-item name="chem_comp.model_source" trans_func="1">chem_comp.model_source</pdbx-item>
+   <pdbx-item name="chem_comp.mon_nstd_class" trans_func="1">chem_comp.mon_nstd_class</pdbx-item>
+   <pdbx-item name="chem_comp.mon_nstd_details" trans_func="1">chem_comp.mon_nstd_details</pdbx-item>
+   <pdbx-item name="chem_comp.mon_nstd_flag" trans_func="10">chem_comp.mon_nstd_flag</pdbx-item>
+   <pdbx-item name="chem_comp.mon_nstd_parent" trans_func="1">chem_comp.mon_nstd_parent</pdbx-item>
+   <pdbx-item name="chem_comp.mon_nstd_parent_comp_id" trans_func="1">chem_comp.mon_nstd_parent_comp_id</pdbx-item>
+   <pdbx-item name="chem_comp.name" trans_func="1">chem_comp.name</pdbx-item>
+   <pdbx-item name="chem_comp.number_atoms_all" trans_func="1">chem_comp.number_atoms_all</pdbx-item>
+   <pdbx-item name="chem_comp.number_atoms_nh" trans_func="1">chem_comp.number_atoms_nh</pdbx-item>
+   <pdbx-item name="chem_comp.one_letter_code" trans_func="1">chem_comp.one_letter_code</pdbx-item>
+   <pdbx-item name="chem_comp.pdbx_ambiguous_flag" trans_func="10">chem_comp.ambiguous_flag</pdbx-item>
+   <pdbx-item name="chem_comp.pdbx_formal_charge" trans_func="1">chem_comp.formal_charge</pdbx-item>
+   <pdbx-item name="chem_comp.pdbx_ideal_coordinate_details" trans_func="1">chem_comp.ideal_coordinates_details</pdbx-item>
+   <pdbx-item name="chem_comp.pdbx_ideal_coordinates_missing_flag" trans_func="10">chem_comp.ideal_coordinates_missing_flag</pdbx-item>
+   <pdbx-item name="chem_comp.pdbx_initial_date" trans_func="1">chem_comp.initial_date</pdbx-item>
+   <pdbx-item name="chem_comp.pdbx_model_coordinate_details" trans_func="1">chem_comp.model_coordinates_details</pdbx-item>
+   <pdbx-item name="chem_comp.pdbx_model_coordinates_db_code" trans_func="1">chem_comp.model_coordinates_db_code</pdbx-item>
+   <pdbx-item name="chem_comp.pdbx_model_coordinates_missing_flag" trans_func="10">chem_comp.model_coordinates_missing_flag</pdbx-item>
+   <pdbx-item name="chem_comp.pdbx_modified_date" trans_func="1">chem_comp.modified_date</pdbx-item>
+   <pdbx-item name="chem_comp.pdbx_processing_site" trans_func="1">chem_comp.processing_site</pdbx-item>
+   <pdbx-item name="chem_comp.pdbx_release_status" trans_func="1">chem_comp.release_status</pdbx-item>
+   <pdbx-item name="chem_comp.pdbx_replaced_by" trans_func="1">chem_comp.replaced_by</pdbx-item>
+   <pdbx-item name="chem_comp.pdbx_replaces" trans_func="1">chem_comp.replaces</pdbx-item>
+   <pdbx-item name="chem_comp.pdbx_subcomponent_list" trans_func="1">chem_comp.subcomponent_list</pdbx-item>
+   <pdbx-item name="chem_comp.pdbx_synonyms" trans_func="1">chem_comp.synonyms</pdbx-item>
+   <pdbx-item name="chem_comp.three_letter_code" trans_func="1">chem_comp.three_letter_code</pdbx-item>
+   <pdbx-item name="chem_comp.type" trans_func="1">chem_comp.type</pdbx-item>
+   <pdbx-item name="chem_comp.type" trans_func="1001">entity.type</pdbx-item>
+   <pdbx-item name="chem_comp_angle.atom_id_1" trans_func="7">chem_comp_angle.atom_id_1</pdbx-item>
+   <pdbx-item name="chem_comp_angle.atom_id_2" trans_func="7">chem_comp_angle.atom_id_2</pdbx-item>
+   <pdbx-item name="chem_comp_angle.atom_id_3" trans_func="7">chem_comp_angle.atom_id_3</pdbx-item>
+   <pdbx-item name="chem_comp_angle.comp_id" trans_func="7">chem_comp_angle.comp_id</pdbx-item>
+   <pdbx-item name="chem_comp_atom.atom_id" trans_func="7">chem_comp_atom.atom_id</pdbx-item>
+   <pdbx-item name="chem_comp_atom.atom_id" trans_func="7">chem_comp_atom.pdb_atom_id</pdbx-item>
+   <pdbx-item name="chem_comp_atom.charge" trans_func="7">chem_comp_atom.charge</pdbx-item>
+   <pdbx-item name="chem_comp_atom.comp_id" trans_func="7">chem_comp_atom.comp_id</pdbx-item>
+   <pdbx-item name="chem_comp_atom.model_cartn_x" trans_func="1">chem_comp_atom.model_cartn_x</pdbx-item>
+   <pdbx-item name="chem_comp_atom.model_cartn_x_esd" trans_func="1">chem_comp_atom.model_cartn_x_esd</pdbx-item>
+   <pdbx-item name="chem_comp_atom.model_cartn_y" trans_func="1">chem_comp_atom.model_cartn_y</pdbx-item>
+   <pdbx-item name="chem_comp_atom.model_cartn_y_esd" trans_func="1">chem_comp_atom.model_cartn_y_esd</pdbx-item>
+   <pdbx-item name="chem_comp_atom.model_cartn_z" trans_func="1">chem_comp_atom.model_cartn_z</pdbx-item>
+   <pdbx-item name="chem_comp_atom.model_cartn_z_esd" trans_func="1">chem_comp_atom.model_cartn_z_esd</pdbx-item>
+   <pdbx-item name="chem_comp_atom.partial_charge" trans_func="1">chem_comp_atom.partial_charge</pdbx-item>
+   <pdbx-item name="chem_comp_atom.pdbx_alt_atom_id" trans_func="1">chem_comp_atom.alt_atom_id</pdbx-item>
+   <pdbx-item name="chem_comp_atom.pdbx_aromatic_flag" trans_func="10">chem_comp_atom.aromatic_flag</pdbx-item>
+   <pdbx-item name="chem_comp_atom.pdbx_leaving_atom_flag" trans_func="10">chem_comp_atom.leaving_atom_flag</pdbx-item>
+   <pdbx-item name="chem_comp_atom.pdbx_model_cartn_x_ideal" trans_func="1">chem_comp_atom.model_cartn_x_ideal</pdbx-item>
+   <pdbx-item name="chem_comp_atom.pdbx_model_cartn_y_ideal" trans_func="1">chem_comp_atom.model_cartn_y_ideal</pdbx-item>
+   <pdbx-item name="chem_comp_atom.pdbx_model_cartn_z_ideal" trans_func="1">chem_comp_atom.model_cartn_z_ideal</pdbx-item>
+   <pdbx-item name="chem_comp_atom.pdbx_ordinal" trans_func="1">chem_comp_atom.pdbx_ordinal</pdbx-item>
+   <pdbx-item name="chem_comp_atom.pdbx_stereo_config" trans_func="1">chem_comp_atom.stereo_config</pdbx-item>
+   <pdbx-item name="chem_comp_atom.substruct_code" trans_func="1">chem_comp_atom.substruct_code</pdbx-item>
+   <pdbx-item name="chem_comp_atom.type_symbol" trans_func="7">chem_comp_atom.type_symbol</pdbx-item>
+   <pdbx-item name="chem_comp_bond.atom_id_1" trans_func="7">chem_comp_bond.atom_id_1</pdbx-item>
+   <pdbx-item name="chem_comp_bond.atom_id_2" trans_func="7">chem_comp_bond.atom_id_2</pdbx-item>
+   <pdbx-item name="chem_comp_bond.comp_id" trans_func="7">chem_comp_bond.comp_id</pdbx-item>
+   <pdbx-item name="chem_comp_bond.pdbx_aromatic_flag" trans_func="10">chem_comp_bond.aromatic_flag</pdbx-item>
+   <pdbx-item name="chem_comp_bond.pdbx_ordinal" trans_func="1">chem_comp_bond.ordinal</pdbx-item>
+   <pdbx-item name="chem_comp_bond.pdbx_stereo_config" trans_func="1">chem_comp_bond.stereo_config</pdbx-item>
+   <pdbx-item name="chem_comp_bond.value_order" trans_func="7">chem_comp_bond.value_order</pdbx-item>
+   <pdbx-item name="chem_comp_tor.atom_id_1" trans_func="7">chem_comp_tor.atom_id_1</pdbx-item>
+   <pdbx-item name="chem_comp_tor.atom_id_2" trans_func="7">chem_comp_tor.atom_id_2</pdbx-item>
+   <pdbx-item name="chem_comp_tor.atom_id_3" trans_func="7">chem_comp_tor.atom_id_3</pdbx-item>
+   <pdbx-item name="chem_comp_tor.atom_id_4" trans_func="7">chem_comp_tor.atom_id_4</pdbx-item>
+   <pdbx-item name="chem_comp_tor.comp_id" trans_func="7">chem_comp_tor.comp_id</pdbx-item>
+   <pdbx-item name="chem_comp_tor.id" trans_func="7">chem_comp_tor.id</pdbx-item>
+   <pdbx-item name="citation.book_id_isbn" trans_func="3">citation.book_isbn</pdbx-item>
+   <pdbx-item name="citation.book_publisher" trans_func="1">citation.book_publisher</pdbx-item>
+   <pdbx-item name="citation.book_publisher_city" trans_func="3">citation.book_publisher_city</pdbx-item>
+   <pdbx-item name="citation.book_title" trans_func="3">citation.book_title</pdbx-item>
+   <pdbx-item name="citation.database_id_medline" trans_func="3">citation.medline_ui_code</pdbx-item>
+   <pdbx-item name="citation.details" trans_func="3">citation.details</pdbx-item>
+   <pdbx-item name="citation.id" trans_func="3">citation.id</pdbx-item>
+   <pdbx-item name="citation.journal_abbrev" trans_func="3">citation.journal_abbrev</pdbx-item>
+   <pdbx-item name="citation.journal_full" trans_func="3">citation.journal_name_full</pdbx-item>
+   <pdbx-item name="citation.journal_id_astm" trans_func="3">citation.journal_astm</pdbx-item>
+   <pdbx-item name="citation.journal_id_csd" trans_func="1">citation.journal_csd</pdbx-item>
+   <pdbx-item name="citation.journal_id_issn" trans_func="3">citation.journal_issn</pdbx-item>
+   <pdbx-item name="citation.journal_issue" trans_func="3">citation.journal_issue</pdbx-item>
+   <pdbx-item name="citation.journal_volume" trans_func="3">citation.journal_volume</pdbx-item>
+   <pdbx-item name="citation.page_first" trans_func="3">citation.page_first</pdbx-item>
+   <pdbx-item name="citation.page_last" trans_func="3">citation.page_last</pdbx-item>
+   <pdbx-item name="citation.pdbx_database_id_doi" trans_func="1">citation.doi</pdbx-item>
+   <pdbx-item name="citation.pdbx_database_id_pubmed" trans_func="1">citation.pubmed_id</pdbx-item>
+   <pdbx-item name="citation.title" trans_func="3">citation.title</pdbx-item>
+   <pdbx-item name="citation.year" trans_func="3">citation.year</pdbx-item>
+   <pdbx-item name="citation_author.citation_id" trans_func="3">citation_author.citation_id</pdbx-item>
+   <pdbx-item name="citation_author.name" trans_func="-15">citation_author.family_name</pdbx-item>
+   <pdbx-item name="citation_author.name" trans_func="-15">citation_author.family_title</pdbx-item>
+   <pdbx-item name="citation_author.name" trans_func="-15">citation_author.first_initial</pdbx-item>
+   <pdbx-item name="citation_author.name" trans_func="-15">citation_author.given_name</pdbx-item>
+   <pdbx-item name="citation_author.name" trans_func="-15">citation_author.middle_initials</pdbx-item>
+   <pdbx-item name="citation_author.ordinal" trans_func="3">citation_author.ordinal</pdbx-item>
+   <pdbx-item name="citation_editor.citation_id" trans_func="3">citation_editor.citation_id</pdbx-item>
+   <pdbx-item name="citation_editor.name" trans_func="-15">citation_editor.family_name</pdbx-item>
+   <pdbx-item name="citation_editor.name" trans_func="-15">citation_editor.family_title</pdbx-item>
+   <pdbx-item name="citation_editor.name" trans_func="-15">citation_editor.first_initial</pdbx-item>
+   <pdbx-item name="citation_editor.name" trans_func="-15">citation_editor.given_name</pdbx-item>
+   <pdbx-item name="citation_editor.name" trans_func="-15">citation_editor.middle_initials</pdbx-item>
+   <pdbx-item name="citation_editor.ordinal" trans_func="3">citation_editor.ordinal</pdbx-item>
+   <pdbx-item name="database_2.database_code" trans_func="1">related_entries.database_accession_code</pdbx-item>
+   <pdbx-item name="database_2.database_id" trans_func="1">related_entries.database_name</pdbx-item>
+   <pdbx-item name="entity.details" trans_func="3">entity.details</pdbx-item>
+   <pdbx-item name="entity.formula_weight" trans_func="3">entity.formula_weight</pdbx-item>
+   <pdbx-item name="entity.id" trans_func="4">entity.id</pdbx-item>
+   <pdbx-item name="entity.pdbx_description" trans_func="2">entity.name</pdbx-item>
+   <pdbx-item name="entity.pdbx_description" trans_func="2">entity.sf_framecode</pdbx-item>
+   <pdbx-item name="entity.pdbx_ec" trans_func="1">entity.ec_number</pdbx-item>
+   <pdbx-item name="entity.pdbx_formula_weight_exptl" trans_func="3">entity.formula_weight_exptl</pdbx-item>
+   <pdbx-item name="entity.pdbx_fragment" trans_func="3">entity.fragment</pdbx-item>
+   <pdbx-item name="entity.pdbx_mutation" trans_func="3">entity.mutation</pdbx-item>
+   <pdbx-item name="entity.pdbx_parent_entity_id" trans_func="3">entity.parent_entity_id</pdbx-item>
+   <pdbx-item name="entity.pdbx_target_id" trans_func="3">entity.parent_entity_id</pdbx-item>
+   <pdbx-item name="entity.src_method" trans_func="3">entity.src_method</pdbx-item>
+   <pdbx-item name="entity.src_method" trans_func="3">entity_experimental_src.production_method</pdbx-item>
+   <pdbx-item name="entity.type" trans_func="3">entity.type</pdbx-item>
+   <pdbx-item name="entity_keywords.entity_id" trans_func="3">entity_keyword.entity_id</pdbx-item>
+   <pdbx-item name="entity_keywords.text" trans_func="3">entity_keyword.keyword</pdbx-item>
+   <pdbx-item name="entity_name_com.entity_id" trans_func="3">entity_common_name.entity_id</pdbx-item>
+   <pdbx-item name="entity_name_com.name" trans_func="3">entity_common_name.name</pdbx-item>
+   <pdbx-item name="entity_name_sys.entity_id" trans_func="3">entity_systematic_name.entity_id</pdbx-item>
+   <pdbx-item name="entity_name_sys.name" trans_func="3">entity_systematic_name.name</pdbx-item>
+   <pdbx-item name="entity_poly.entity_id" trans_func="4">entity.id</pdbx-item>
+   <pdbx-item name="entity_poly.nstd_chirality" trans_func="3">entity.nstd_chirality</pdbx-item>
+   <pdbx-item name="entity_poly.nstd_linkage" trans_func="3">entity.nstd_linkage</pdbx-item>
+   <pdbx-item name="entity_poly.nstd_monomer" trans_func="3">entity.nstd_monomer</pdbx-item>
+   <pdbx-item name="entity_poly.number_of_monomers" trans_func="3">entity.number_of_monomers</pdbx-item>
+   <pdbx-item name="entity_poly.pdbx_seq_one_letter_code" trans_func="3">entity.polymer_seq_one_letter_code</pdbx-item>
+   <pdbx-item name="entity_poly.pdbx_seq_one_letter_code_can" trans_func="3">entity.polymer_seq_one_letter_code_can</pdbx-item>
+   <pdbx-item name="entity_poly.pdbx_strand_id" trans_func="3">entity.polymer_strand_id</pdbx-item>
+   <pdbx-item name="entity_poly.type" trans_func="3">entity.polymer_type</pdbx-item>
+   <pdbx-item name="entity_poly.type_details" trans_func="3">entity.polymer_type_details</pdbx-item>
+   <pdbx-item name="entity_poly_seq.entity_id" trans_func="3">entity_comp_index.entity_id</pdbx-item>
+   <pdbx-item name="entity_poly_seq.entity_id" trans_func="3">entity_poly_seq.entity_id</pdbx-item>
+   <pdbx-item name="entity_poly_seq.mon_id" trans_func="3">entity_comp_index.comp_id</pdbx-item>
+   <pdbx-item name="entity_poly_seq.mon_id" trans_func="3">entity_poly_seq.mon_id</pdbx-item>
+   <pdbx-item name="entity_poly_seq.num" trans_func="3">entity_comp_index.id</pdbx-item>
+   <pdbx-item name="entity_poly_seq.num" trans_func="3">entity_poly_seq.num</pdbx-item>
+   <pdbx-item name="entity_src_gen.entity_id" trans_func="1">entity_experimental_src.entity_id</pdbx-item>
+   <pdbx-item name="entity_src_gen.entity_id" trans_func="1">entity_natural_src.entity_id</pdbx-item>
+   <pdbx-item name="entity_src_gen.gene_src_common_name" trans_func="1">entity_natural_src.organism_name_common</pdbx-item>
+   <pdbx-item name="entity_src_gen.gene_src_common_name" trans_func="50">entity_natural_src_list.id</pdbx-item>
+   <pdbx-item name="entity_src_gen.gene_src_dev_stage" trans_func="1">entity_natural_src.dev_stage</pdbx-item>
+   <pdbx-item name="entity_src_gen.gene_src_genus" trans_func="1">entity_natural_src.genus</pdbx-item>
+   <pdbx-item name="entity_src_gen.gene_src_species" trans_func="1">entity_natural_src.species</pdbx-item>
+   <pdbx-item name="entity_src_gen.gene_src_strain" trans_func="1">entity_natural_src.strain</pdbx-item>
+   <pdbx-item name="entity_src_gen.gene_src_tissue" trans_func="1">entity_natural_src.tissue</pdbx-item>
+   <pdbx-item name="entity_src_gen.gene_src_tissue_fraction" trans_func="1">entity_common_name.type</pdbx-item>
+   <pdbx-item name="entity_src_gen.host_org_common_name" trans_func="1">entity_experimental_src.host_org_name_common</pdbx-item>
+   <pdbx-item name="entity_src_gen.host_org_common_name" trans_func="50">entity_experimental_src_list.id</pdbx-item>
+   <pdbx-item name="entity_src_gen.host_org_details" trans_func="1">entity_experimental_src.host_org_details</pdbx-item>
+   <pdbx-item name="entity_src_gen.host_org_genus" trans_func="1">entity_experimental_src.host_org_genus</pdbx-item>
+   <pdbx-item name="entity_src_gen.host_org_species" trans_func="1">entity_experimental_src.host_org_species</pdbx-item>
+   <pdbx-item name="entity_src_gen.pdbx_description" trans_func="1">entity_experimental_src.details</pdbx-item>
+   <pdbx-item name="entity_src_gen.pdbx_gene_src_atcc" trans_func="1">entity_natural_src.atcc_number</pdbx-item>
+   <pdbx-item name="entity_src_gen.pdbx_gene_src_cell" trans_func="1">entity_natural_src.cell_type</pdbx-item>
+   <pdbx-item name="entity_src_gen.pdbx_gene_src_cell_line" trans_func="1">entity_natural_src.cell_line</pdbx-item>
+   <pdbx-item name="entity_src_gen.pdbx_gene_src_cellular_location" trans_func="1">entity_natural_src.cellular_location</pdbx-item>
+   <pdbx-item name="entity_src_gen.pdbx_gene_src_fragment" trans_func="1">entity_natural_src.fragment</pdbx-item>
+   <pdbx-item name="entity_src_gen.pdbx_gene_src_gene" trans_func="1">entity_natural_src.gene_mnemonic</pdbx-item>
+   <pdbx-item name="entity_src_gen.pdbx_gene_src_ncbi_taxonomy_id" trans_func="1">entity_natural_src.ncbi_taxonomy_id</pdbx-item>
+   <pdbx-item name="entity_src_gen.pdbx_gene_src_organ" trans_func="1">entity_natural_src.organ</pdbx-item>
+   <pdbx-item name="entity_src_gen.pdbx_gene_src_organelle" trans_func="1">entity_natural_src.organelle</pdbx-item>
+   <pdbx-item name="entity_src_gen.pdbx_gene_src_plasmid" trans_func="1">entity_natural_src.plasmid</pdbx-item>
+   <pdbx-item name="entity_src_gen.pdbx_gene_src_plasmid_name" trans_func="1">entity_natural_src.plasmid</pdbx-item>
+   <pdbx-item name="entity_src_gen.pdbx_gene_src_scientific_name" trans_func="1">entity_natural_src.organism_name_scientific</pdbx-item>
+   <pdbx-item name="entity_src_gen.pdbx_gene_src_scientific_name" trans_func="50">entity_natural_src_list.id</pdbx-item>
+   <pdbx-item name="entity_src_gen.pdbx_gene_src_variant" trans_func="1">entity_natural_src.variant</pdbx-item>
+   <pdbx-item name="entity_src_gen.pdbx_host_org_atcc" trans_func="1">entity_experimental_src.host_org_atcc_number</pdbx-item>
+   <pdbx-item name="entity_src_gen.pdbx_host_org_cell" trans_func="1">entity_experimental_src.host_org_cell_type</pdbx-item>
+   <pdbx-item name="entity_src_gen.pdbx_host_org_cell_line" trans_func="1">entity_experimental_src.host_org_cell_line</pdbx-item>
+   <pdbx-item name="entity_src_gen.pdbx_host_org_cellular_location" trans_func="1">entity_experimental_src.host_org_cellular_location</pdbx-item>
+   <pdbx-item name="entity_src_gen.pdbx_host_org_culture_collection" trans_func="1">entity_experimental_src.host_org_culture_collection</pdbx-item>
+   <pdbx-item name="entity_src_gen.pdbx_host_org_gene" trans_func="1">entity_experimental_src.host_org_gene</pdbx-item>
+   <pdbx-item name="entity_src_gen.pdbx_host_org_ncbi_taxonomy_id" trans_func="1">entity_experimental_src.host_org_ncbi_taxonomy_id</pdbx-item>
+   <pdbx-item name="entity_src_gen.pdbx_host_org_organ" trans_func="1">entity_experimental_src.host_org_organ</pdbx-item>
+   <pdbx-item name="entity_src_gen.pdbx_host_org_organelle" trans_func="1">entity_experimental_src.host_org_organelle</pdbx-item>
+   <pdbx-item name="entity_src_gen.pdbx_host_org_scientific_name" trans_func="2">entity_experimental_src.host_org_scientific_name</pdbx-item>
+   <pdbx-item name="entity_src_gen.pdbx_host_org_scientific_name" trans_func="50">entity_experimental_src_list.id</pdbx-item>
+   <pdbx-item name="entity_src_gen.pdbx_host_org_strain" trans_func="1">entity_experimental_src.host_org_strain</pdbx-item>
+   <pdbx-item name="entity_src_gen.pdbx_host_org_tissue" trans_func="1">entity_experimental_src.host_org_tissue</pdbx-item>
+   <pdbx-item name="entity_src_gen.pdbx_host_org_tissue_fraction" trans_func="1">entity_experimental_src.host_org_tissue_fraction</pdbx-item>
+   <pdbx-item name="entity_src_gen.pdbx_host_org_variant" trans_func="1">entity_experimental_src.host_org_variant</pdbx-item>
+   <pdbx-item name="entity_src_gen.pdbx_host_org_vector" trans_func="2">entity_experimental_src.vector_name</pdbx-item>
+   <pdbx-item name="entity_src_gen.pdbx_host_org_vector_type" trans_func="1">entity_experimental_src.vector_type</pdbx-item>
+   <pdbx-item name="entity_src_gen.plasmid_details" trans_func="1">entity_experimental_src.vector_details</pdbx-item>
+   <pdbx-item name="entity_src_gen.plasmid_name" trans_func="1">entity_experimental_src.vector_name</pdbx-item>
+   <pdbx-item name="entity_src_nat.common_name" trans_func="1">entity_natural_src.organism_name_common</pdbx-item>
+   <pdbx-item name="entity_src_nat.details" trans_func="1">entity_natural_src.details</pdbx-item>
+   <pdbx-item name="entity_src_nat.entity_id" trans_func="1">entity_natural_src.entity_id</pdbx-item>
+   <pdbx-item name="entity_src_nat.genus" trans_func="1">entity_natural_src.genus</pdbx-item>
+   <pdbx-item name="entity_src_nat.pdbx_atcc" trans_func="1">entity_natural_src.atcc_number</pdbx-item>
+   <pdbx-item name="entity_src_nat.pdbx_cell" trans_func="1">entity_natural_src.cell_type</pdbx-item>
+   <pdbx-item name="entity_src_nat.pdbx_cell_line" trans_func="1">entity_natural_src.cell_line</pdbx-item>
+   <pdbx-item name="entity_src_nat.pdbx_cellular_location" trans_func="1">entity_natural_src.cellular_location</pdbx-item>
+   <pdbx-item name="entity_src_nat.pdbx_fragment" trans_func="1">entity_natural_src.fragment</pdbx-item>
+   <pdbx-item name="entity_src_nat.pdbx_ncbi_taxonomy_id" trans_func="1">entity_natural_src.ncbi_taxonomy_id</pdbx-item>
+   <pdbx-item name="entity_src_nat.pdbx_organ" trans_func="1">entity_natural_src.organ</pdbx-item>
+   <pdbx-item name="entity_src_nat.pdbx_organelle" trans_func="1">entity_natural_src.organelle</pdbx-item>
+   <pdbx-item name="entity_src_nat.pdbx_organism_scientific" trans_func="2">entity_natural_src.organism_name_scientific</pdbx-item>
+   <pdbx-item name="entity_src_nat.pdbx_plasmid_details" trans_func="1">entity_natural_src.plasmid_details</pdbx-item>
+   <pdbx-item name="entity_src_nat.pdbx_plasmid_name" trans_func="1">entity_natural_src.plasmid</pdbx-item>
+   <pdbx-item name="entity_src_nat.pdbx_secretion" trans_func="1">entity_natural_src.secretion</pdbx-item>
+   <pdbx-item name="entity_src_nat.pdbx_variant" trans_func="1">entity_natural_src.variant</pdbx-item>
+   <pdbx-item name="entity_src_nat.species" trans_func="1">entity_natural_src.species</pdbx-item>
+   <pdbx-item name="entity_src_nat.strain" trans_func="1">entity_natural_src.strain</pdbx-item>
+   <pdbx-item name="entity_src_nat.tissue" trans_func="1">entity_natural_src.tissue</pdbx-item>
+   <pdbx-item name="entity_src_nat.tissue_fraction" trans_func="1">entity_common_name.type</pdbx-item>
+   <pdbx-item name="exptl.method" trans_func="5">entry_experimental_methods.id</pdbx-item>
+   <pdbx-item name="exptl.method" trans_func="1">entry_experimental_methods.method</pdbx-item>
+   <pdbx-item name="exptl.method" trans_func="1">entry_experimental_methods.subtype</pdbx-item>
+   <pdbx-item name="journal.coden_astm" trans_func="3">citation.journal_astm</pdbx-item>
+   <pdbx-item name="journal.entry_id" trans_func="1">citation.entry_id</pdbx-item>
+   <pdbx-item name="journal.issue" trans_func="3">citation.journal_issue</pdbx-item>
+   <pdbx-item name="journal.name_full" trans_func="3">citation.journal_name_full</pdbx-item>
+   <pdbx-item name="journal.page_first" trans_func="3">citation.page_first</pdbx-item>
+   <pdbx-item name="journal.page_last" trans_func="3">citation.page_last</pdbx-item>
+   <pdbx-item name="journal.volume" trans_func="3">citation.journal_volume</pdbx-item>
+   <pdbx-item name="journal.year" trans_func="3">citation.year</pdbx-item>
+   <pdbx-item name="pdbx_sg_project.full_name_of_center" trans_func="1">sg_project.full_name_of_center</pdbx-item>
+   <pdbx-item name="pdbx_sg_project.id" trans_func="1">sg_project.sg_project_id</pdbx-item>
+   <pdbx-item name="pdbx_sg_project.initial_of_center" trans_func="1">sg_project.initial_of_center</pdbx-item>
+   <pdbx-item name="pdbx_sg_project.project_name" trans_func="1">sg_project.project_name</pdbx-item>
+   <pdbx-item name="pdbx_chem_comp_descriptor.comp_id" trans_func="1">chem_comp_descriptor.comp_id</pdbx-item>
+   <pdbx-item name="pdbx_chem_comp_descriptor.descriptor" trans_func="1">chem_comp_descriptor.descriptor</pdbx-item>
+   <pdbx-item name="pdbx_chem_comp_descriptor.program" trans_func="1">chem_comp_descriptor.program</pdbx-item>
+   <pdbx-item name="pdbx_chem_comp_descriptor.program_version" trans_func="1">chem_comp_descriptor.program_version</pdbx-item>
+   <pdbx-item name="pdbx_chem_comp_descriptor.type" trans_func="1">chem_comp_descriptor.type</pdbx-item>
+   <pdbx-item name="pdbx_chem_comp_feature.comp_id" trans_func="1">pdbx_chem_comp_feature.comp_id</pdbx-item>
+   <pdbx-item name="pdbx_chem_comp_feature.source" trans_func="1">pdbx_chem_comp_feature.source</pdbx-item>
+   <pdbx-item name="pdbx_chem_comp_feature.support" trans_func="1">pdbx_chem_comp_feature.support</pdbx-item>
+   <pdbx-item name="pdbx_chem_comp_feature.type" trans_func="1">pdbx_chem_comp_feature.type</pdbx-item>
+   <pdbx-item name="pdbx_chem_comp_feature.value" trans_func="1">pdbx_chem_comp_feature.value</pdbx-item>
+   <pdbx-item name="pdbx_chem_comp_identifier.comp_id" trans_func="1">chem_comp_identifier.comp_id</pdbx-item>
+   <pdbx-item name="pdbx_chem_comp_identifier.identifier" trans_func="1">chem_comp_identifier.identifier</pdbx-item>
+   <pdbx-item name="pdbx_chem_comp_identifier.program" trans_func="1">chem_comp_identifier.program</pdbx-item>
+   <pdbx-item name="pdbx_chem_comp_identifier.program_version" trans_func="1">chem_comp_identifier.program_version</pdbx-item>
+   <pdbx-item name="pdbx_chem_comp_identifier.type" trans_func="1">chem_comp_identifier.type</pdbx-item>
+   <pdbx-item name="pdbx_contact_author.address_1" trans_func="1">contact_person.address_1</pdbx-item>
+   <pdbx-item name="pdbx_contact_author.address_2" trans_func="1">contact_person.address_2</pdbx-item>
+   <pdbx-item name="pdbx_contact_author.address_3" trans_func="1">contact_person.address_3</pdbx-item>
+   <pdbx-item name="pdbx_contact_author.city" trans_func="1">contact_person.city</pdbx-item>
+   <pdbx-item name="pdbx_contact_author.country" trans_func="1">contact_person.country</pdbx-item>
+   <pdbx-item name="pdbx_contact_author.email" trans_func="1">contact_person.email_address</pdbx-item>
+   <pdbx-item name="pdbx_contact_author.fax" trans_func="1">contact_person.fax_number</pdbx-item>
+   <pdbx-item name="pdbx_contact_author.id" trans_func="1">contact_person.id</pdbx-item>
+   <pdbx-item name="pdbx_contact_author.identifier_orcid" trans_func="1">contact_person.orcid</pdbx-item>
+   <pdbx-item name="pdbx_contact_author.name_first" trans_func="1">contact_person.given_name</pdbx-item>
+   <pdbx-item name="pdbx_contact_author.name_last" trans_func="1">contact_person.family_name</pdbx-item>
+   <pdbx-item name="pdbx_contact_author.name_mi" trans_func="1">contact_person.middle_initials</pdbx-item>
+   <pdbx-item name="pdbx_contact_author.name_salutation" trans_func="1">contact_person.name_salutation</pdbx-item>
+   <pdbx-item name="pdbx_contact_author.organization_type" trans_func="1">contact_person.organization_type</pdbx-item>
+   <pdbx-item name="pdbx_contact_author.phone" trans_func="1">contact_person.phone_number</pdbx-item>
+   <pdbx-item name="pdbx_contact_author.postal_code" trans_func="1">contact_person.postal_code</pdbx-item>
+   <pdbx-item name="pdbx_contact_author.role" trans_func="1">contact_person.role</pdbx-item>
+   <pdbx-item name="pdbx_contact_author.state_province" trans_func="1">contact_person.state_province</pdbx-item>
+   <pdbx-item name="pdbx_database_status.sg_entry" trans_func="10">entry_interview.structural_genomics</pdbx-item>
+   <pdbx-item name="pdbx_database_status.date_hold_chemical_shifts" trans_func="1">entry.date_hold_chemical_shifts</pdbx-item>
+   <pdbx-item name="pdbx_database_status.date_hold_coordinates" trans_func="1">entry.date_hold_coordinates</pdbx-item>
+   <pdbx-item name="pdbx_database_status.date_hold_nmr_constraints" trans_func="1">entry.date_hold_nmr_constraints</pdbx-item>
+   <pdbx-item name="pdbx_database_status.date_manuscript" trans_func="1">entry.date_manuscript</pdbx-item>
+   <pdbx-item name="pdbx_database_status.date_nmr_constraints" trans_func="1">entry.date_nmr_constraints</pdbx-item>
+   <pdbx-item name="pdbx_database_status.date_submitted" trans_func="1">entry.pdb_date_submitted</pdbx-item>
+   <pdbx-item name="pdbx_database_status.dep_release_code_chemical_shifts"
               trans_func="1">entry.dep_release_code_chemical_shifts</pdbx-item>
-   <pdbx-item id="pdbx_database_status.dep_release_code_coordinates" trans_func="1">entry.dep_release_code_coordinates</pdbx-item>
-   <pdbx-item id="pdbx_database_status.dep_release_code_nmr_constraints"
+   <pdbx-item name="pdbx_database_status.dep_release_code_coordinates" trans_func="1">entry.dep_release_code_coordinates</pdbx-item>
+   <pdbx-item name="pdbx_database_status.dep_release_code_nmr_constraints"
               trans_func="1">entry.dep_release_code_nmr_constraints</pdbx-item>
-   <pdbx-item id="pdbx_database_status.dep_release_code_sequence" trans_func="1">entry.dep_release_code_sequence</pdbx-item>
-   <pdbx-item id="pdbx_database_status.deposit_site" trans_func="1">entry.pdb_deposit_site</pdbx-item>
-   <pdbx-item id="pdbx_database_status.entry_id" trans_func="1">entry.id</pdbx-item>
-   <pdbx-item id="pdbx_database_status.pdbx_annotator" trans_func="1">entry.rcsb_annotator</pdbx-item>
-   <pdbx-item id="pdbx_database_status.process_site" trans_func="1">entry.pdb_process_site</pdbx-item>
-   <pdbx-item id="pdbx_database_status.recvd_author_approval" trans_func="10">entry.recvd_author_approval</pdbx-item>
-   <pdbx-item id="pdbx_database_status.recvd_coordinates" trans_func="10">entry.recvd_coordinates</pdbx-item>
-   <pdbx-item id="pdbx_database_status.recvd_deposit_form" trans_func="1">entry.recvd_deposit_form</pdbx-item>
-   <pdbx-item id="pdbx_database_status.recvd_initial_deposition_date" trans_func="1">entry.accession_date</pdbx-item>
-   <pdbx-item id="pdbx_database_status.recvd_initial_deposition_date" trans_func="1">entry.recvd_initial_deposition_date</pdbx-item>
-   <pdbx-item id="pdbx_database_status.recvd_initial_deposition_date" trans_func="1">entry.submission_date</pdbx-item>
-   <pdbx-item id="pdbx_database_status.recvd_manuscript" trans_func="10">entry.recvd_manuscript</pdbx-item>
-   <pdbx-item id="pdbx_database_status.recvd_nmr_constraints" trans_func="10">entry.recvd_nmr_constraints</pdbx-item>
-   <pdbx-item id="pdbx_database_status.status_code" trans_func="1">entry.status_code</pdbx-item>
-   <pdbx-item id="pdbx_depui_upload.diagnostic_message" trans_func="1">upload_data.data_file_sf_category</pdbx-item>
-   <pdbx-item id="pdbx_depui_upload.file_name" trans_func="1">upload_data.data_file_name</pdbx-item>
-   <pdbx-item id="pdbx_depui_upload.file_type" trans_func="1">upload_data.data_file_syntax</pdbx-item>
-   <pdbx-item id="pdbx_depui_upload.ordinal" trans_func="1">upload_data.data_file_id</pdbx-item>
-   <pdbx-item id="pdbx_entity_name.entity_id" trans_func="3">entity_common_name.entity_id</pdbx-item>
-   <pdbx-item id="pdbx_entity_name.name" trans_func="3">entity_common_name.name</pdbx-item>
-   <pdbx-item id="pdbx_entity_name.name_type" trans_func="3">entity_common_name.type</pdbx-item>
-   <pdbx-item id="pdbx_entity_nonpoly.comp_id" trans_func="2">entity.name</pdbx-item>
-   <pdbx-item id="pdbx_entity_nonpoly.comp_id" trans_func="2">entity.sf_framecode</pdbx-item>
-   <pdbx-item id="pdbx_entity_nonpoly.entity_id" trans_func="1">entity.id</pdbx-item>
-   <pdbx-item id="pdbx_entity_nonpoly.name" trans_func="1">entity.name</pdbx-item>
-   <pdbx-item id="pdbx_entity_nonpoly.name" trans_func="1">entity.sf_framecode</pdbx-item>
-   <pdbx-item id="pdbx_entity_src_syn.details" trans_func="1">entity_experimental_src.details</pdbx-item>
-   <pdbx-item id="pdbx_entity_src_syn.entity_id" trans_func="1">entity_experimental_src.entity_id</pdbx-item>
-   <pdbx-item id="pdbx_entity_src_syn.entity_id" trans_func="1">entity_natural_src.entity_id</pdbx-item>
-   <pdbx-item id="pdbx_entity_src_syn.entity_id" trans_func="50">entity_experimental_src_list.id</pdbx-item>
-   <pdbx-item id="pdbx_entity_src_syn.ncbi_taxonomy_id" trans_func="1">entity_natural_src.ncbi_taxonomy_id</pdbx-item>
-   <pdbx-item id="pdbx_entity_src_syn.organism_common_name" trans_func="1">entity_natural_src.organism_name_common</pdbx-item>
-   <pdbx-item id="pdbx_entity_src_syn.organism_scientific" trans_func="1">entity_natural_src.organism_name_scientific</pdbx-item>
-   <pdbx-item id="pdbx_nmr_assigned_chem_shift_list.chem_shift_13c_err"
+   <pdbx-item name="pdbx_database_status.dep_release_code_sequence" trans_func="1">entry.dep_release_code_sequence</pdbx-item>
+   <pdbx-item name="pdbx_database_status.deposit_site" trans_func="1">entry.pdb_deposit_site</pdbx-item>
+   <pdbx-item name="pdbx_database_status.entry_id" trans_func="1">entry.id</pdbx-item>
+   <pdbx-item name="pdbx_database_status.pdbx_annotator" trans_func="1">entry.rcsb_annotator</pdbx-item>
+   <pdbx-item name="pdbx_database_status.process_site" trans_func="1">entry.pdb_process_site</pdbx-item>
+   <pdbx-item name="pdbx_database_status.recvd_author_approval" trans_func="10">entry.recvd_author_approval</pdbx-item>
+   <pdbx-item name="pdbx_database_status.recvd_coordinates" trans_func="10">entry.recvd_coordinates</pdbx-item>
+   <pdbx-item name="pdbx_database_status.recvd_deposit_form" trans_func="1">entry.recvd_deposit_form</pdbx-item>
+   <pdbx-item name="pdbx_database_status.recvd_initial_deposition_date"
+              trans_func="1">entry.accession_date</pdbx-item>
+   <pdbx-item name="pdbx_database_status.recvd_initial_deposition_date"
+              trans_func="1">entry.recvd_initial_deposition_date</pdbx-item>
+   <pdbx-item name="pdbx_database_status.recvd_initial_deposition_date"
+              trans_func="1">entry.submission_date</pdbx-item>
+   <pdbx-item name="pdbx_database_status.recvd_manuscript" trans_func="10">entry.recvd_manuscript</pdbx-item>
+   <pdbx-item name="pdbx_database_status.recvd_nmr_constraints" trans_func="10">entry.recvd_nmr_constraints</pdbx-item>
+   <pdbx-item name="pdbx_database_status.status_code" trans_func="1">entry.status_code</pdbx-item>
+   <pdbx-item name="pdbx_depui_upload.diagnostic_message" trans_func="1">upload_data.data_file_sf_category</pdbx-item>
+   <pdbx-item name="pdbx_depui_upload.file_name" trans_func="1">upload_data.data_file_name</pdbx-item>
+   <pdbx-item name="pdbx_depui_upload.file_type" trans_func="1">upload_data.data_file_syntax</pdbx-item>
+   <pdbx-item name="pdbx_depui_upload.ordinal" trans_func="1">upload_data.data_file_id</pdbx-item>
+   <pdbx-item name="pdbx_entity_name.entity_id" trans_func="3">entity_common_name.entity_id</pdbx-item>
+   <pdbx-item name="pdbx_entity_name.name" trans_func="3">entity_common_name.name</pdbx-item>
+   <pdbx-item name="pdbx_entity_name.name_type" trans_func="3">entity_common_name.type</pdbx-item>
+   <pdbx-item name="pdbx_entity_nonpoly.comp_id" trans_func="2">entity.name</pdbx-item>
+   <pdbx-item name="pdbx_entity_nonpoly.comp_id" trans_func="2">entity.sf_framecode</pdbx-item>
+   <pdbx-item name="pdbx_entity_nonpoly.entity_id" trans_func="1">entity.id</pdbx-item>
+   <pdbx-item name="pdbx_entity_nonpoly.name" trans_func="1">entity.name</pdbx-item>
+   <pdbx-item name="pdbx_entity_nonpoly.name" trans_func="1">entity.sf_framecode</pdbx-item>
+   <pdbx-item name="pdbx_entity_src_syn.details" trans_func="1">entity_experimental_src.details</pdbx-item>
+   <pdbx-item name="pdbx_entity_src_syn.entity_id" trans_func="1">entity_experimental_src.entity_id</pdbx-item>
+   <pdbx-item name="pdbx_entity_src_syn.entity_id" trans_func="1">entity_natural_src.entity_id</pdbx-item>
+   <pdbx-item name="pdbx_entity_src_syn.entity_id" trans_func="50">entity_experimental_src_list.id</pdbx-item>
+   <pdbx-item name="pdbx_entity_src_syn.ncbi_taxonomy_id" trans_func="1">entity_natural_src.ncbi_taxonomy_id</pdbx-item>
+   <pdbx-item name="pdbx_entity_src_syn.organism_common_name" trans_func="1">entity_natural_src.organism_name_common</pdbx-item>
+   <pdbx-item name="pdbx_entity_src_syn.organism_scientific" trans_func="1">entity_natural_src.organism_name_scientific</pdbx-item>
+   <pdbx-item name="pdbx_nmr_assigned_chem_shift_list.chem_shift_13c_err"
               trans_func="1">assigned_chem_shift_list.chem_shift_13c_err</pdbx-item>
-   <pdbx-item id="pdbx_nmr_assigned_chem_shift_list.chem_shift_15n_err"
+   <pdbx-item name="pdbx_nmr_assigned_chem_shift_list.chem_shift_15n_err"
               trans_func="1">assigned_chem_shift_list.chem_shift_15n_err</pdbx-item>
-   <pdbx-item id="pdbx_nmr_assigned_chem_shift_list.chem_shift_19f_err"
+   <pdbx-item name="pdbx_nmr_assigned_chem_shift_list.chem_shift_19f_err"
               trans_func="1">assigned_chem_shift_list.chem_shift_19f_err</pdbx-item>
-   <pdbx-item id="pdbx_nmr_assigned_chem_shift_list.chem_shift_1h_err" trans_func="1">assigned_chem_shift_list.chem_shift_1h_err</pdbx-item>
-   <pdbx-item id="pdbx_nmr_assigned_chem_shift_list.chem_shift_2h_err" trans_func="1">assigned_chem_shift_list.chem_shift_2h_err</pdbx-item>
-   <pdbx-item id="pdbx_nmr_assigned_chem_shift_list.chem_shift_31p_err"
+   <pdbx-item name="pdbx_nmr_assigned_chem_shift_list.chem_shift_1h_err"
+              trans_func="1">assigned_chem_shift_list.chem_shift_1h_err</pdbx-item>
+   <pdbx-item name="pdbx_nmr_assigned_chem_shift_list.chem_shift_2h_err"
+              trans_func="1">assigned_chem_shift_list.chem_shift_2h_err</pdbx-item>
+   <pdbx-item name="pdbx_nmr_assigned_chem_shift_list.chem_shift_31p_err"
               trans_func="1">assigned_chem_shift_list.chem_shift_31p_err</pdbx-item>
-   <pdbx-item id="pdbx_nmr_assigned_chem_shift_list.chem_shift_reference_id"
+   <pdbx-item name="pdbx_nmr_assigned_chem_shift_list.chem_shift_reference_id"
               trans_func="1">assigned_chem_shift_list.chem_shift_reference_id</pdbx-item>
-   <pdbx-item id="pdbx_nmr_assigned_chem_shift_list.conditions_id" trans_func="1">assigned_chem_shift_list.sample_condition_list_id</pdbx-item>
-   <pdbx-item id="pdbx_nmr_assigned_chem_shift_list.conditions_id" trans_func="1">sample_condition_list.id</pdbx-item>
-   <pdbx-item id="pdbx_nmr_assigned_chem_shift_list.conditions_label" trans_func="1">assigned_chem_shift_list.sample_condition_list_label</pdbx-item>
-   <pdbx-item id="pdbx_nmr_assigned_chem_shift_list.data_file_name" trans_func="1">assigned_chem_shift_list.data_file_name</pdbx-item>
-   <pdbx-item id="pdbx_nmr_assigned_chem_shift_list.details" trans_func="1">assigned_chem_shift_list.details</pdbx-item>
-   <pdbx-item id="pdbx_nmr_assigned_chem_shift_list.entry_id" trans_func="1">assigned_chem_shift_list.entry_id</pdbx-item>
-   <pdbx-item id="pdbx_nmr_assigned_chem_shift_list.error_derivation_method"
+   <pdbx-item name="pdbx_nmr_assigned_chem_shift_list.conditions_id" trans_func="1">assigned_chem_shift_list.sample_condition_list_id</pdbx-item>
+   <pdbx-item name="pdbx_nmr_assigned_chem_shift_list.conditions_id" trans_func="1">sample_condition_list.id</pdbx-item>
+   <pdbx-item name="pdbx_nmr_assigned_chem_shift_list.conditions_label"
+              trans_func="1">assigned_chem_shift_list.sample_condition_list_label</pdbx-item>
+   <pdbx-item name="pdbx_nmr_assigned_chem_shift_list.data_file_name" trans_func="1">assigned_chem_shift_list.data_file_name</pdbx-item>
+   <pdbx-item name="pdbx_nmr_assigned_chem_shift_list.details" trans_func="1">assigned_chem_shift_list.details</pdbx-item>
+   <pdbx-item name="pdbx_nmr_assigned_chem_shift_list.entry_id" trans_func="1">assigned_chem_shift_list.entry_id</pdbx-item>
+   <pdbx-item name="pdbx_nmr_assigned_chem_shift_list.error_derivation_method"
               trans_func="1">assigned_chem_shift_list.error_derivation_method</pdbx-item>
-   <pdbx-item id="pdbx_nmr_assigned_chem_shift_list.id" trans_func="1">assigned_chem_shift_list.id</pdbx-item>
-   <pdbx-item id="pdbx_nmr_assigned_chem_shift_list.label" trans_func="1">assigned_chem_shift_list.sf_framecode</pdbx-item>
-   <pdbx-item id="pdbx_nmr_chem_shift_experiment.assigned_chem_shift_list_id"
+   <pdbx-item name="pdbx_nmr_assigned_chem_shift_list.id" trans_func="1">assigned_chem_shift_list.id</pdbx-item>
+   <pdbx-item name="pdbx_nmr_assigned_chem_shift_list.label" trans_func="1">assigned_chem_shift_list.sf_framecode</pdbx-item>
+   <pdbx-item name="pdbx_nmr_chem_shift_experiment.assigned_chem_shift_list_id"
               trans_func="1">chem_shift_experiment.assigned_chem_shift_list_id</pdbx-item>
-   <pdbx-item id="pdbx_nmr_chem_shift_experiment.entry_id" trans_func="1">chem_shift_experiment.entry_id</pdbx-item>
-   <pdbx-item id="pdbx_nmr_chem_shift_experiment.experiment_id" trans_func="1">chem_shift_experiment.experiment_id</pdbx-item>
-   <pdbx-item id="pdbx_nmr_chem_shift_experiment.experiment_name" trans_func="1">chem_shift_experiment.experiment_name</pdbx-item>
-   <pdbx-item id="pdbx_nmr_chem_shift_experiment.sample_state" trans_func="1">chem_shift_experiment.sample_state</pdbx-item>
-   <pdbx-item id="pdbx_nmr_chem_shift_experiment.solution_id" trans_func="1">chem_shift_experiment.sample_id</pdbx-item>
-   <pdbx-item id="pdbx_nmr_chem_shift_ref.atom_group" trans_func="1">chem_shift_ref.atom_group</pdbx-item>
-   <pdbx-item id="pdbx_nmr_chem_shift_ref.atom_isotope_number" trans_func="1">chem_shift_ref.atom_isotope_number</pdbx-item>
-   <pdbx-item id="pdbx_nmr_chem_shift_ref.atom_type" trans_func="1">chem_shift_ref.atom_type</pdbx-item>
-   <pdbx-item id="pdbx_nmr_chem_shift_ref.chem_shift_reference_id" trans_func="1">chem_shift_ref.chem_shift_reference_id</pdbx-item>
-   <pdbx-item id="pdbx_nmr_chem_shift_ref.chem_shift_units" trans_func="1">chem_shift_ref.chem_shift_units</pdbx-item>
-   <pdbx-item id="pdbx_nmr_chem_shift_ref.chem_shift_val" trans_func="1">chem_shift_ref.chem_shift_val</pdbx-item>
-   <pdbx-item id="pdbx_nmr_chem_shift_ref.correction_val" trans_func="1">chem_shift_ref.correction_val</pdbx-item>
-   <pdbx-item id="pdbx_nmr_chem_shift_ref.entry_id" trans_func="1">chem_shift_ref.entry_id</pdbx-item>
-   <pdbx-item id="pdbx_nmr_chem_shift_ref.external_ref_axis" trans_func="1">chem_shift_ref.external_ref_axis</pdbx-item>
-   <pdbx-item id="pdbx_nmr_chem_shift_ref.external_ref_loc" trans_func="1">chem_shift_ref.external_ref_loc</pdbx-item>
-   <pdbx-item id="pdbx_nmr_chem_shift_ref.external_ref_sample_geometry"
+   <pdbx-item name="pdbx_nmr_chem_shift_experiment.entry_id" trans_func="1">chem_shift_experiment.entry_id</pdbx-item>
+   <pdbx-item name="pdbx_nmr_chem_shift_experiment.experiment_id" trans_func="1">chem_shift_experiment.experiment_id</pdbx-item>
+   <pdbx-item name="pdbx_nmr_chem_shift_experiment.experiment_name" trans_func="1">chem_shift_experiment.experiment_name</pdbx-item>
+   <pdbx-item name="pdbx_nmr_chem_shift_experiment.sample_state" trans_func="1">chem_shift_experiment.sample_state</pdbx-item>
+   <pdbx-item name="pdbx_nmr_chem_shift_experiment.solution_id" trans_func="1">chem_shift_experiment.sample_id</pdbx-item>
+   <pdbx-item name="pdbx_nmr_chem_shift_ref.atom_group" trans_func="1">chem_shift_ref.atom_group</pdbx-item>
+   <pdbx-item name="pdbx_nmr_chem_shift_ref.atom_isotope_number" trans_func="1">chem_shift_ref.atom_isotope_number</pdbx-item>
+   <pdbx-item name="pdbx_nmr_chem_shift_ref.atom_type" trans_func="1">chem_shift_ref.atom_type</pdbx-item>
+   <pdbx-item name="pdbx_nmr_chem_shift_ref.chem_shift_reference_id" trans_func="1">chem_shift_ref.chem_shift_reference_id</pdbx-item>
+   <pdbx-item name="pdbx_nmr_chem_shift_ref.chem_shift_units" trans_func="1">chem_shift_ref.chem_shift_units</pdbx-item>
+   <pdbx-item name="pdbx_nmr_chem_shift_ref.chem_shift_val" trans_func="1">chem_shift_ref.chem_shift_val</pdbx-item>
+   <pdbx-item name="pdbx_nmr_chem_shift_ref.correction_val" trans_func="1">chem_shift_ref.correction_val</pdbx-item>
+   <pdbx-item name="pdbx_nmr_chem_shift_ref.entry_id" trans_func="1">chem_shift_ref.entry_id</pdbx-item>
+   <pdbx-item name="pdbx_nmr_chem_shift_ref.external_ref_axis" trans_func="1">chem_shift_ref.external_ref_axis</pdbx-item>
+   <pdbx-item name="pdbx_nmr_chem_shift_ref.external_ref_loc" trans_func="1">chem_shift_ref.external_ref_loc</pdbx-item>
+   <pdbx-item name="pdbx_nmr_chem_shift_ref.external_ref_sample_geometry"
               trans_func="1">chem_shift_ref.external_ref_sample_geometry</pdbx-item>
-   <pdbx-item id="pdbx_nmr_chem_shift_ref.indirect_shift_ratio" trans_func="1">chem_shift_ref.indirect_shift_ratio</pdbx-item>
-   <pdbx-item id="pdbx_nmr_chem_shift_ref.mol_common_name" trans_func="1">chem_shift_ref.mol_common_name</pdbx-item>
-   <pdbx-item id="pdbx_nmr_chem_shift_ref.rank" trans_func="1">chem_shift_ref.rank</pdbx-item>
-   <pdbx-item id="pdbx_nmr_chem_shift_ref.ref_correction_type" trans_func="1">chem_shift_ref.ref_correction_type</pdbx-item>
-   <pdbx-item id="pdbx_nmr_chem_shift_ref.ref_method" trans_func="1">chem_shift_ref.ref_method</pdbx-item>
-   <pdbx-item id="pdbx_nmr_chem_shift_ref.ref_type" trans_func="1">chem_shift_ref.ref_type</pdbx-item>
-   <pdbx-item id="pdbx_nmr_chem_shift_ref.solvent" trans_func="1">chem_shift_ref.solvent</pdbx-item>
-   <pdbx-item id="pdbx_nmr_chem_shift_reference.carbon_shifts_flag" trans_func="1">chem_shift_reference.carbon_shifts_flag</pdbx-item>
-   <pdbx-item id="pdbx_nmr_chem_shift_reference.details" trans_func="1">chem_shift_reference.details</pdbx-item>
-   <pdbx-item id="pdbx_nmr_chem_shift_reference.entry_id" trans_func="1">chem_shift_reference.entry_id</pdbx-item>
-   <pdbx-item id="pdbx_nmr_chem_shift_reference.id" trans_func="1">chem_shift_reference.id</pdbx-item>
-   <pdbx-item id="pdbx_nmr_chem_shift_reference.label" trans_func="1">chem_shift_reference.sf_framecode</pdbx-item>
-   <pdbx-item id="pdbx_nmr_chem_shift_reference.nitrogen_shifts_flag" trans_func="1">chem_shift_reference.nitrogen_shifts_flag</pdbx-item>
-   <pdbx-item id="pdbx_nmr_chem_shift_reference.other_shifts_flag" trans_func="1">chem_shift_reference.other_shifts_flag</pdbx-item>
-   <pdbx-item id="pdbx_nmr_chem_shift_reference.phosphorus_shifts_flag"
+   <pdbx-item name="pdbx_nmr_chem_shift_ref.indirect_shift_ratio" trans_func="1">chem_shift_ref.indirect_shift_ratio</pdbx-item>
+   <pdbx-item name="pdbx_nmr_chem_shift_ref.mol_common_name" trans_func="1">chem_shift_ref.mol_common_name</pdbx-item>
+   <pdbx-item name="pdbx_nmr_chem_shift_ref.rank" trans_func="1">chem_shift_ref.rank</pdbx-item>
+   <pdbx-item name="pdbx_nmr_chem_shift_ref.ref_correction_type" trans_func="1">chem_shift_ref.ref_correction_type</pdbx-item>
+   <pdbx-item name="pdbx_nmr_chem_shift_ref.ref_method" trans_func="1">chem_shift_ref.ref_method</pdbx-item>
+   <pdbx-item name="pdbx_nmr_chem_shift_ref.ref_type" trans_func="1">chem_shift_ref.ref_type</pdbx-item>
+   <pdbx-item name="pdbx_nmr_chem_shift_ref.solvent" trans_func="1">chem_shift_ref.solvent</pdbx-item>
+   <pdbx-item name="pdbx_nmr_chem_shift_reference.carbon_shifts_flag" trans_func="1">chem_shift_reference.carbon_shifts_flag</pdbx-item>
+   <pdbx-item name="pdbx_nmr_chem_shift_reference.details" trans_func="1">chem_shift_reference.details</pdbx-item>
+   <pdbx-item name="pdbx_nmr_chem_shift_reference.entry_id" trans_func="1">chem_shift_reference.entry_id</pdbx-item>
+   <pdbx-item name="pdbx_nmr_chem_shift_reference.id" trans_func="1">chem_shift_reference.id</pdbx-item>
+   <pdbx-item name="pdbx_nmr_chem_shift_reference.label" trans_func="1">chem_shift_reference.sf_framecode</pdbx-item>
+   <pdbx-item name="pdbx_nmr_chem_shift_reference.nitrogen_shifts_flag"
+              trans_func="1">chem_shift_reference.nitrogen_shifts_flag</pdbx-item>
+   <pdbx-item name="pdbx_nmr_chem_shift_reference.other_shifts_flag" trans_func="1">chem_shift_reference.other_shifts_flag</pdbx-item>
+   <pdbx-item name="pdbx_nmr_chem_shift_reference.phosphorus_shifts_flag"
               trans_func="1">chem_shift_reference.phosphorus_shifts_flag</pdbx-item>
-   <pdbx-item id="pdbx_nmr_chem_shift_reference.proton_shifts_flag" trans_func="1">chem_shift_reference.proton_shifts_flag</pdbx-item>
-   <pdbx-item id="pdbx_nmr_chem_shift_software.assigned_chem_shift_list_id"
+   <pdbx-item name="pdbx_nmr_chem_shift_reference.proton_shifts_flag" trans_func="1">chem_shift_reference.proton_shifts_flag</pdbx-item>
+   <pdbx-item name="pdbx_nmr_chem_shift_software.assigned_chem_shift_list_id"
               trans_func="1">chem_shift_software.assigned_chem_shift_list_id</pdbx-item>
-   <pdbx-item id="pdbx_nmr_chem_shift_software.entry_id" trans_func="1">chem_shift_software.entry_id</pdbx-item>
-   <pdbx-item id="pdbx_nmr_chem_shift_software.software_id" trans_func="1">chem_shift_software.software_id</pdbx-item>
-   <pdbx-item id="pdbx_nmr_chem_shift_software.software_label" trans_func="1">software.sf_framecode</pdbx-item>
-   <pdbx-item id="pdbx_nmr_constraint_file.constraint_filename" trans_func="1">constraint_file.constraint_filename</pdbx-item>
-   <pdbx-item id="pdbx_nmr_constraint_file.constraint_number" trans_func="1">constraint_file.constraint_number</pdbx-item>
-   <pdbx-item id="pdbx_nmr_constraint_file.constraint_subtype" trans_func="1">constraint_file.constraint_subtype</pdbx-item>
-   <pdbx-item id="pdbx_nmr_constraint_file.constraint_type" trans_func="1">constraint_file.constraint_type</pdbx-item>
-   <pdbx-item id="pdbx_nmr_constraint_file.entry_id" trans_func="1">constraint_file.entry_id</pdbx-item>
-   <pdbx-item id="pdbx_nmr_constraint_file.id" trans_func="1">constraint_file.id</pdbx-item>
-   <pdbx-item id="pdbx_nmr_constraint_file.software_name" trans_func="1">constraint_file.software_name</pdbx-item>
-   <pdbx-item id="pdbx_nmr_constraint_file.software_ordinal" trans_func="1">constraint_file.software_id</pdbx-item>
-   <pdbx-item id="pdbx_nmr_constraints.na_alpha-angle_constraints_total_count"
+   <pdbx-item name="pdbx_nmr_chem_shift_software.entry_id" trans_func="1">chem_shift_software.entry_id</pdbx-item>
+   <pdbx-item name="pdbx_nmr_chem_shift_software.software_id" trans_func="1">chem_shift_software.software_id</pdbx-item>
+   <pdbx-item name="pdbx_nmr_chem_shift_software.software_label" trans_func="1">software.sf_framecode</pdbx-item>
+   <pdbx-item name="pdbx_nmr_constraint_file.constraint_filename" trans_func="1">constraint_file.constraint_filename</pdbx-item>
+   <pdbx-item name="pdbx_nmr_constraint_file.constraint_number" trans_func="1">constraint_file.constraint_number</pdbx-item>
+   <pdbx-item name="pdbx_nmr_constraint_file.constraint_subtype" trans_func="1">constraint_file.constraint_subtype</pdbx-item>
+   <pdbx-item name="pdbx_nmr_constraint_file.constraint_type" trans_func="1">constraint_file.constraint_type</pdbx-item>
+   <pdbx-item name="pdbx_nmr_constraint_file.entry_id" trans_func="1">constraint_file.entry_id</pdbx-item>
+   <pdbx-item name="pdbx_nmr_constraint_file.id" trans_func="1">constraint_file.id</pdbx-item>
+   <pdbx-item name="pdbx_nmr_constraint_file.software_name" trans_func="1">constraint_file.software_name</pdbx-item>
+   <pdbx-item name="pdbx_nmr_constraint_file.software_ordinal" trans_func="1">constraint_file.software_id</pdbx-item>
+   <pdbx-item name="pdbx_nmr_constraints.na_alpha-angle_constraints_total_count"
               trans_func="1">constraint_stat_list.na_alpha_angle_tot_num</pdbx-item>
-   <pdbx-item id="pdbx_nmr_constraints.na_beta-angle_constraints_total_count"
+   <pdbx-item name="pdbx_nmr_constraints.na_beta-angle_constraints_total_count"
               trans_func="1">constraint_stat_list.na_beta_angle_tot_num</pdbx-item>
-   <pdbx-item id="pdbx_nmr_constraints.na_chi-angle_constraints_total_count"
+   <pdbx-item name="pdbx_nmr_constraints.na_chi-angle_constraints_total_count"
               trans_func="1">constraint_stat_list.na_chi_angle_tot_num</pdbx-item>
-   <pdbx-item id="pdbx_nmr_constraints.na_delta-angle_constraints_total_count"
+   <pdbx-item name="pdbx_nmr_constraints.na_delta-angle_constraints_total_count"
               trans_func="1">constraint_stat_list.na_delta_angle_tot_num</pdbx-item>
-   <pdbx-item id="pdbx_nmr_constraints.na_epsilon-angle_constraints_total_count"
+   <pdbx-item name="pdbx_nmr_constraints.na_epsilon-angle_constraints_total_count"
               trans_func="1">constraint_stat_list.na_epsilon_angle_tot_num</pdbx-item>
-   <pdbx-item id="pdbx_nmr_constraints.na_gamma-angle_constraints_total_count"
+   <pdbx-item name="pdbx_nmr_constraints.na_gamma-angle_constraints_total_count"
               trans_func="1">constraint_stat_list.na_gamma_angle_tot_num</pdbx-item>
-   <pdbx-item id="pdbx_nmr_constraints.na_other-angle_constraints_total_count"
+   <pdbx-item name="pdbx_nmr_constraints.na_other-angle_constraints_total_count"
               trans_func="1">constraint_stat_list.na_other_angle_tot_num</pdbx-item>
-   <pdbx-item id="pdbx_nmr_constraints.na_sugar_pucker_constraints_total_count"
+   <pdbx-item name="pdbx_nmr_constraints.na_sugar_pucker_constraints_total_count"
               trans_func="1">constraint_stat_list.na_sugar_pucker_tot_num</pdbx-item>
-   <pdbx-item id="pdbx_nmr_constraints.noe_constraints_total" trans_func="1">constraint_stat_list.noe_tot_num</pdbx-item>
-   <pdbx-item id="pdbx_nmr_constraints.noe_interentity_total_count" trans_func="1">constraint_stat_list.noe_interentity_tot_num</pdbx-item>
-   <pdbx-item id="pdbx_nmr_constraints.noe_interproton_distance_evaluation"
+   <pdbx-item name="pdbx_nmr_constraints.noe_constraints_total" trans_func="1">constraint_stat_list.noe_tot_num</pdbx-item>
+   <pdbx-item name="pdbx_nmr_constraints.noe_interentity_total_count" trans_func="1">constraint_stat_list.noe_interentity_tot_num</pdbx-item>
+   <pdbx-item name="pdbx_nmr_constraints.noe_interproton_distance_evaluation"
               trans_func="1">constraint_stat_list.roe_interproton_dist_evaluation</pdbx-item>
-   <pdbx-item id="pdbx_nmr_constraints.noe_intraresidue_total_count" trans_func="1">constraint_stat_list.noe_intraresidue_tot_num</pdbx-item>
-   <pdbx-item id="pdbx_nmr_constraints.noe_long_range_total_count" trans_func="1">constraint_stat_list.noe_long_range_tot_num</pdbx-item>
-   <pdbx-item id="pdbx_nmr_constraints.noe_medium_range_total_count" trans_func="1">constraint_stat_list.noe_medium_range_tot_num</pdbx-item>
-   <pdbx-item id="pdbx_nmr_constraints.noe_motional_averaging_correction"
+   <pdbx-item name="pdbx_nmr_constraints.noe_intraresidue_total_count" trans_func="1">constraint_stat_list.noe_intraresidue_tot_num</pdbx-item>
+   <pdbx-item name="pdbx_nmr_constraints.noe_long_range_total_count" trans_func="1">constraint_stat_list.noe_long_range_tot_num</pdbx-item>
+   <pdbx-item name="pdbx_nmr_constraints.noe_medium_range_total_count" trans_func="1">constraint_stat_list.noe_medium_range_tot_num</pdbx-item>
+   <pdbx-item name="pdbx_nmr_constraints.noe_motional_averaging_correction"
               trans_func="1">constraint_stat_list.roe_dist_averaging_method</pdbx-item>
-   <pdbx-item id="pdbx_nmr_constraints.noe_pseudoatom_corrections" trans_func="1">constraint_stat_list.noe_pseudoatom_corrections</pdbx-item>
-   <pdbx-item id="pdbx_nmr_constraints.noe_sequential_total_count" trans_func="1">constraint_stat_list.noe_sequential_tot_num</pdbx-item>
-   <pdbx-item id="pdbx_nmr_constraints.disulfide_bond_constraints_total_count"
+   <pdbx-item name="pdbx_nmr_constraints.noe_pseudoatom_corrections" trans_func="1">constraint_stat_list.noe_pseudoatom_corrections</pdbx-item>
+   <pdbx-item name="pdbx_nmr_constraints.noe_sequential_total_count" trans_func="1">constraint_stat_list.noe_sequential_tot_num</pdbx-item>
+   <pdbx-item name="pdbx_nmr_constraints.disulfide_bond_constraints_total_count"
               trans_func="1">constraint_stat_list.constr_def_ss_bonds_tot_num</pdbx-item>
-   <pdbx-item id="pdbx_nmr_constraints.hydrogen_bond_constraints_total_count"
+   <pdbx-item name="pdbx_nmr_constraints.hydrogen_bond_constraints_total_count"
               trans_func="1">constraint_stat_list.constr_def_h_bonds_tot_num</pdbx-item>
-   <pdbx-item id="pdbx_nmr_constraints.protein_chi_angle_constraints_total_count"
+   <pdbx-item name="pdbx_nmr_constraints.protein_chi_angle_constraints_total_count"
               trans_func="1">constraint_stat_list.protein_chi_one_angle_tot_num</pdbx-item>
-   <pdbx-item id="pdbx_nmr_constraints.protein_other_angle_constraints_total_count"
+   <pdbx-item name="pdbx_nmr_constraints.protein_other_angle_constraints_total_count"
               trans_func="1">constraint_stat_list.protein_other_angle_tot_num</pdbx-item>
-   <pdbx-item id="pdbx_nmr_constraints.protein_phi_angle_constraints_total_count"
+   <pdbx-item name="pdbx_nmr_constraints.protein_phi_angle_constraints_total_count"
               trans_func="1">constraint_stat_list.protein_phi_angle_tot_num</pdbx-item>
-   <pdbx-item id="pdbx_nmr_constraints.protein_psi_angle_constraints_total_count"
+   <pdbx-item name="pdbx_nmr_constraints.protein_psi_angle_constraints_total_count"
               trans_func="1">constraint_stat_list.protein_psi_angle_tot_num</pdbx-item>
-   <pdbx-item id="pdbx_nmr_details.entry_id" trans_func="1">experiment_list.entry_id</pdbx-item>
-   <pdbx-item id="pdbx_nmr_details.text" trans_func="1">experiment_list.details</pdbx-item>
-   <pdbx-item id="pdbx_nmr_ensemble.average_constraint_violations_per_residue"
+   <pdbx-item name="pdbx_nmr_details.entry_id" trans_func="1">experiment_list.entry_id</pdbx-item>
+   <pdbx-item name="pdbx_nmr_details.text" trans_func="1">experiment_list.details</pdbx-item>
+   <pdbx-item name="pdbx_nmr_ensemble.average_constraint_violations_per_residue"
               trans_func="1">constraint_stat_list.constr_violations_per_residue_avg</pdbx-item>
-   <pdbx-item id="pdbx_nmr_ensemble.average_constraints_per_residue" trans_func="1">constraint_stat_list.constraints_per_residue_avg</pdbx-item>
-   <pdbx-item id="pdbx_nmr_ensemble.average_distance_constraint_violation"
+   <pdbx-item name="pdbx_nmr_ensemble.average_constraints_per_residue" trans_func="1">constraint_stat_list.constraints_per_residue_avg</pdbx-item>
+   <pdbx-item name="pdbx_nmr_ensemble.average_distance_constraint_violation"
               trans_func="1">constraint_stat_list_ens.dist_constraint_violation_avg</pdbx-item>
-   <pdbx-item id="pdbx_nmr_ensemble.average_torsion_angle_constraint_violation"
+   <pdbx-item name="pdbx_nmr_ensemble.average_torsion_angle_constraint_violation"
               trans_func="1">constraint_stat_list_ens.dihedral_const_violat_avg</pdbx-item>
-   <pdbx-item id="pdbx_nmr_ensemble.conformer_selection_criteria" trans_func="1">conformer_stat_list.conformer_selection_criteria</pdbx-item>
-   <pdbx-item id="pdbx_nmr_ensemble.conformers_calculated_total_number"
+   <pdbx-item name="pdbx_nmr_ensemble.conformer_selection_criteria" trans_func="1">conformer_stat_list.conformer_selection_criteria</pdbx-item>
+   <pdbx-item name="pdbx_nmr_ensemble.conformers_calculated_total_number"
               trans_func="1">conformer_stat_list.conformer_calculated_total_num</pdbx-item>
-   <pdbx-item id="pdbx_nmr_ensemble.conformers_submitted_total_number" trans_func="1">conformer_stat_list.conformer_submitted_total_num</pdbx-item>
-   <pdbx-item id="pdbx_nmr_ensemble.distance_constraint_violation_method"
+   <pdbx-item name="pdbx_nmr_ensemble.conformers_submitted_total_number"
+              trans_func="1">conformer_stat_list.conformer_submitted_total_num</pdbx-item>
+   <pdbx-item name="pdbx_nmr_ensemble.distance_constraint_violation_method"
               trans_func="1">constraint_stat_list.dist_constr_violat_stat_calc_method</pdbx-item>
-   <pdbx-item id="pdbx_nmr_ensemble.entry_id" trans_func="1">conformer_stat_list.entry_id</pdbx-item>
-   <pdbx-item id="pdbx_nmr_ensemble.maximum_distance_constraint_violation"
+   <pdbx-item name="pdbx_nmr_ensemble.entry_id" trans_func="1">conformer_stat_list.entry_id</pdbx-item>
+   <pdbx-item name="pdbx_nmr_ensemble.maximum_distance_constraint_violation"
               trans_func="1">constraint_stat_list_ens.dist_constraint_violation_max</pdbx-item>
-   <pdbx-item id="pdbx_nmr_ensemble.maximum_lower_distance_constraint_violation"
+   <pdbx-item name="pdbx_nmr_ensemble.maximum_lower_distance_constraint_violation"
               trans_func="1">constraint_stat_list_ens.lower_dist_constr_violat_max</pdbx-item>
-   <pdbx-item id="pdbx_nmr_ensemble.maximum_torsion_angle_constraint_violation"
+   <pdbx-item name="pdbx_nmr_ensemble.maximum_torsion_angle_constraint_violation"
               trans_func="1">constraint_stat_list_ens.dihedral_const_violat_max</pdbx-item>
-   <pdbx-item id="pdbx_nmr_ensemble.maximum_upper_distance_constraint_violation"
+   <pdbx-item name="pdbx_nmr_ensemble.maximum_upper_distance_constraint_violation"
               trans_func="1">constraint_stat_list_ens.upper_dist_constr_violat_max</pdbx-item>
-   <pdbx-item id="pdbx_nmr_ensemble.representative_conformer" trans_func="1">conformer_stat_list.representative_conformer</pdbx-item>
-   <pdbx-item id="pdbx_nmr_ensemble.torsion_angle_constraint_violation_method"
+   <pdbx-item name="pdbx_nmr_ensemble.representative_conformer" trans_func="1">conformer_stat_list.representative_conformer</pdbx-item>
+   <pdbx-item name="pdbx_nmr_ensemble.torsion_angle_constraint_violation_method"
               trans_func="1">constraint_stat_list_ens.dihedral_const_stat_calc_meth</pdbx-item>
-   <pdbx-item id="pdbx_nmr_ensemble_rms.bond_angle_rms_dev" trans_func="1">conformer_stat_list_ens.bond_angle_rmsd</pdbx-item>
-   <pdbx-item id="pdbx_nmr_ensemble_rms.bond_angle_rms_dev_error" trans_func="1">conformer_stat_list_ens.bond_angle_rmsd_err</pdbx-item>
-   <pdbx-item id="pdbx_nmr_ensemble_rms.coord_average_rmsd_method" trans_func="1">conformer_stat_list_ens.atm_coord_avg_rmsd_calc_method</pdbx-item>
-   <pdbx-item id="pdbx_nmr_ensemble_rms.covalent_bond_rms_dev" trans_func="1">conformer_stat_list_ens.covalent_bond_rmsd</pdbx-item>
-   <pdbx-item id="pdbx_nmr_ensemble_rms.covalent_bond_rms_dev_error" trans_func="1">conformer_stat_list_ens.covalent_bond_rmsd_err</pdbx-item>
-   <pdbx-item id="pdbx_nmr_ensemble_rms.dihedral_angles_rms_dev" trans_func="1">conformer_stat_list_ens.dihedral_angle_rmsd</pdbx-item>
-   <pdbx-item id="pdbx_nmr_ensemble_rms.dihedral_angles_rms_dev_error" trans_func="1">conformer_stat_list_ens.dihedral_angle_rmsd_err</pdbx-item>
-   <pdbx-item id="pdbx_nmr_ensemble_rms.distance_rms_dev" trans_func="1">constraint_stat_list_ens.all_dist_rmsd</pdbx-item>
-   <pdbx-item id="pdbx_nmr_ensemble_rms.distance_rms_dev_error" trans_func="1">constraint_stat_list_ens.all_dist_rmsd_err</pdbx-item>
-   <pdbx-item id="pdbx_nmr_ensemble_rms.improper_torsion_angle_rms_dev"
+   <pdbx-item name="pdbx_nmr_ensemble_rms.bond_angle_rms_dev" trans_func="1">conformer_stat_list_ens.bond_angle_rmsd</pdbx-item>
+   <pdbx-item name="pdbx_nmr_ensemble_rms.bond_angle_rms_dev_error" trans_func="1">conformer_stat_list_ens.bond_angle_rmsd_err</pdbx-item>
+   <pdbx-item name="pdbx_nmr_ensemble_rms.coord_average_rmsd_method" trans_func="1">conformer_stat_list_ens.atm_coord_avg_rmsd_calc_method</pdbx-item>
+   <pdbx-item name="pdbx_nmr_ensemble_rms.covalent_bond_rms_dev" trans_func="1">conformer_stat_list_ens.covalent_bond_rmsd</pdbx-item>
+   <pdbx-item name="pdbx_nmr_ensemble_rms.covalent_bond_rms_dev_error" trans_func="1">conformer_stat_list_ens.covalent_bond_rmsd_err</pdbx-item>
+   <pdbx-item name="pdbx_nmr_ensemble_rms.dihedral_angles_rms_dev" trans_func="1">conformer_stat_list_ens.dihedral_angle_rmsd</pdbx-item>
+   <pdbx-item name="pdbx_nmr_ensemble_rms.dihedral_angles_rms_dev_error"
+              trans_func="1">conformer_stat_list_ens.dihedral_angle_rmsd_err</pdbx-item>
+   <pdbx-item name="pdbx_nmr_ensemble_rms.distance_rms_dev" trans_func="1">constraint_stat_list_ens.all_dist_rmsd</pdbx-item>
+   <pdbx-item name="pdbx_nmr_ensemble_rms.distance_rms_dev_error" trans_func="1">constraint_stat_list_ens.all_dist_rmsd_err</pdbx-item>
+   <pdbx-item name="pdbx_nmr_ensemble_rms.improper_torsion_angle_rms_dev"
               trans_func="1">conformer_stat_list_ens.improper_torsion_angle_rmsd</pdbx-item>
-   <pdbx-item id="pdbx_nmr_ensemble_rms.improper_torsion_angle_rms_dev_error"
+   <pdbx-item name="pdbx_nmr_ensemble_rms.improper_torsion_angle_rms_dev_error"
               trans_func="1">conformer_stat_list_ens.improper_torsion_angle_rmsd_err</pdbx-item>
-   <pdbx-item id="pdbx_nmr_ensemble_rms.peptide_planarity_rms_dev" trans_func="1">conformer_stat_list_ens.peptide_planarity_rmsd</pdbx-item>
-   <pdbx-item id="pdbx_nmr_ensemble_rms.peptide_planarity_rms_dev_error"
+   <pdbx-item name="pdbx_nmr_ensemble_rms.peptide_planarity_rms_dev" trans_func="1">conformer_stat_list_ens.peptide_planarity_rmsd</pdbx-item>
+   <pdbx-item name="pdbx_nmr_ensemble_rms.peptide_planarity_rms_dev_error"
               trans_func="1">conformer_stat_list_ens.peptide_planarity_rmsd_err</pdbx-item>
-   <pdbx-item id="pdbx_nmr_exptl.conditions_id" trans_func="1">experiment.sample_condition_list_id</pdbx-item>
-   <pdbx-item id="pdbx_nmr_exptl.experiment_id" trans_func="1">experiment.id</pdbx-item>
-   <pdbx-item id="pdbx_nmr_exptl.sample_state" trans_func="1">experiment.sample_state</pdbx-item>
-   <pdbx-item id="pdbx_nmr_exptl.solution_id" trans_func="1">experiment.sample_id</pdbx-item>
-   <pdbx-item id="pdbx_nmr_exptl.spectrometer_id" trans_func="1">experiment.nmr_spectrometer_id</pdbx-item>
-   <pdbx-item id="pdbx_nmr_exptl.type" trans_func="1">experiment.name</pdbx-item>
-   <pdbx-item id="pdbx_nmr_exptl_sample.component" trans_func="1">sample_component.mol_common_name</pdbx-item>
-   <pdbx-item id="pdbx_nmr_exptl_sample.concentration" trans_func="1">sample_component.concentration_val</pdbx-item>
-   <pdbx-item id="pdbx_nmr_exptl_sample.concentration_err" trans_func="1">sample_component.concentration_val_err</pdbx-item>
-   <pdbx-item id="pdbx_nmr_exptl_sample.concentration_range" trans_func="-22">sample_component.concentration_val_max</pdbx-item>
-   <pdbx-item id="pdbx_nmr_exptl_sample.concentration_range" trans_func="-22">sample_component.concentration_val_min</pdbx-item>
-   <pdbx-item id="pdbx_nmr_exptl_sample.concentration_units" trans_func="1">sample_component.concentration_val_units</pdbx-item>
-   <pdbx-item id="pdbx_nmr_exptl_sample.isotopic_labeling" trans_func="1">sample_component.isotopic_labeling</pdbx-item>
-   <pdbx-item id="pdbx_nmr_exptl_sample.solution_id" trans_func="1">sample_component.sample_id</pdbx-item>
-   <pdbx-item id="pdbx_nmr_exptl_sample_conditions.conditions_id" trans_func="1">sample_condition_variable.sample_condition_list_id</pdbx-item>
-   <pdbx-item id="pdbx_nmr_exptl_sample_conditions.conditions_id" trans_func="1">sample_condition_list.id</pdbx-item>
-   <pdbx-item id="pdbx_nmr_exptl_sample_conditions.ionic_strength" trans_func="-22">sample_condition_variable.type</pdbx-item>
-   <pdbx-item id="pdbx_nmr_exptl_sample_conditions.ionic_strength" trans_func="-22">sample_condition_variable.val</pdbx-item>
-   <pdbx-item id="pdbx_nmr_exptl_sample_conditions.ionic_strength_err"
+   <pdbx-item name="pdbx_nmr_exptl.conditions_id" trans_func="1">experiment.sample_condition_list_id</pdbx-item>
+   <pdbx-item name="pdbx_nmr_exptl.experiment_id" trans_func="1">experiment.id</pdbx-item>
+   <pdbx-item name="pdbx_nmr_exptl.sample_state" trans_func="1">experiment.sample_state</pdbx-item>
+   <pdbx-item name="pdbx_nmr_exptl.solution_id" trans_func="1">experiment.sample_id</pdbx-item>
+   <pdbx-item name="pdbx_nmr_exptl.spectrometer_id" trans_func="1">experiment.nmr_spectrometer_id</pdbx-item>
+   <pdbx-item name="pdbx_nmr_exptl.type" trans_func="1">experiment.name</pdbx-item>
+   <pdbx-item name="pdbx_nmr_exptl_sample.component" trans_func="1">sample_component.mol_common_name</pdbx-item>
+   <pdbx-item name="pdbx_nmr_exptl_sample.concentration" trans_func="1">sample_component.concentration_val</pdbx-item>
+   <pdbx-item name="pdbx_nmr_exptl_sample.concentration_err" trans_func="1">sample_component.concentration_val_err</pdbx-item>
+   <pdbx-item name="pdbx_nmr_exptl_sample.concentration_range" trans_func="-22">sample_component.concentration_val_max</pdbx-item>
+   <pdbx-item name="pdbx_nmr_exptl_sample.concentration_range" trans_func="-22">sample_component.concentration_val_min</pdbx-item>
+   <pdbx-item name="pdbx_nmr_exptl_sample.concentration_units" trans_func="1">sample_component.concentration_val_units</pdbx-item>
+   <pdbx-item name="pdbx_nmr_exptl_sample.isotopic_labeling" trans_func="1">sample_component.isotopic_labeling</pdbx-item>
+   <pdbx-item name="pdbx_nmr_exptl_sample.solution_id" trans_func="1">sample_component.sample_id</pdbx-item>
+   <pdbx-item name="pdbx_nmr_exptl_sample_conditions.conditions_id" trans_func="1">sample_condition_variable.sample_condition_list_id</pdbx-item>
+   <pdbx-item name="pdbx_nmr_exptl_sample_conditions.conditions_id" trans_func="1">sample_condition_list.id</pdbx-item>
+   <pdbx-item name="pdbx_nmr_exptl_sample_conditions.ionic_strength" trans_func="-22">sample_condition_variable.type</pdbx-item>
+   <pdbx-item name="pdbx_nmr_exptl_sample_conditions.ionic_strength" trans_func="-22">sample_condition_variable.val</pdbx-item>
+   <pdbx-item name="pdbx_nmr_exptl_sample_conditions.ionic_strength_err"
               trans_func="-22">sample_condition_variable.val_err</pdbx-item>
-   <pdbx-item id="pdbx_nmr_exptl_sample_conditions.ionic_strength_units"
+   <pdbx-item name="pdbx_nmr_exptl_sample_conditions.ionic_strength_units"
               trans_func="-22">sample_condition_variable.val_units</pdbx-item>
-   <pdbx-item id="pdbx_nmr_exptl_sample_conditions.label" trans_func="1">sample_condition_list.sf_framecode</pdbx-item>
-   <pdbx-item id="pdbx_nmr_exptl_sample_conditions.ph" trans_func="-22">sample_condition_variable.type</pdbx-item>
-   <pdbx-item id="pdbx_nmr_exptl_sample_conditions.ph" trans_func="-22">sample_condition_variable.val</pdbx-item>
-   <pdbx-item id="pdbx_nmr_exptl_sample_conditions.ph_err" trans_func="-22">sample_condition_variable.val_err</pdbx-item>
-   <pdbx-item id="pdbx_nmr_exptl_sample_conditions.ph_units" trans_func="-22">sample_condition_variable.val_units</pdbx-item>
-   <pdbx-item id="pdbx_nmr_exptl_sample_conditions.pressure" trans_func="-22">sample_condition_variable.type</pdbx-item>
-   <pdbx-item id="pdbx_nmr_exptl_sample_conditions.pressure" trans_func="-22">sample_condition_variable.val</pdbx-item>
-   <pdbx-item id="pdbx_nmr_exptl_sample_conditions.pressure_err" trans_func="-22">sample_condition_variable.val_err</pdbx-item>
-   <pdbx-item id="pdbx_nmr_exptl_sample_conditions.pressure_units" trans_func="-22">sample_condition_variable.val_units</pdbx-item>
-   <pdbx-item id="pdbx_nmr_exptl_sample_conditions.temperature" trans_func="-22">sample_condition_variable.type</pdbx-item>
-   <pdbx-item id="pdbx_nmr_exptl_sample_conditions.temperature" trans_func="-22">sample_condition_variable.val</pdbx-item>
-   <pdbx-item id="pdbx_nmr_exptl_sample_conditions.temperature_err" trans_func="-22">sample_condition_variable.val_err</pdbx-item>
-   <pdbx-item id="pdbx_nmr_exptl_sample_conditions.temperature_units"
+   <pdbx-item name="pdbx_nmr_exptl_sample_conditions.label" trans_func="1">sample_condition_list.sf_framecode</pdbx-item>
+   <pdbx-item name="pdbx_nmr_exptl_sample_conditions.ph" trans_func="-22">sample_condition_variable.type</pdbx-item>
+   <pdbx-item name="pdbx_nmr_exptl_sample_conditions.ph" trans_func="-22">sample_condition_variable.val</pdbx-item>
+   <pdbx-item name="pdbx_nmr_exptl_sample_conditions.ph_err" trans_func="-22">sample_condition_variable.val_err</pdbx-item>
+   <pdbx-item name="pdbx_nmr_exptl_sample_conditions.ph_units" trans_func="-22">sample_condition_variable.val_units</pdbx-item>
+   <pdbx-item name="pdbx_nmr_exptl_sample_conditions.pressure" trans_func="-22">sample_condition_variable.type</pdbx-item>
+   <pdbx-item name="pdbx_nmr_exptl_sample_conditions.pressure" trans_func="-22">sample_condition_variable.val</pdbx-item>
+   <pdbx-item name="pdbx_nmr_exptl_sample_conditions.pressure_err" trans_func="-22">sample_condition_variable.val_err</pdbx-item>
+   <pdbx-item name="pdbx_nmr_exptl_sample_conditions.pressure_units" trans_func="-22">sample_condition_variable.val_units</pdbx-item>
+   <pdbx-item name="pdbx_nmr_exptl_sample_conditions.temperature" trans_func="-22">sample_condition_variable.type</pdbx-item>
+   <pdbx-item name="pdbx_nmr_exptl_sample_conditions.temperature" trans_func="-22">sample_condition_variable.val</pdbx-item>
+   <pdbx-item name="pdbx_nmr_exptl_sample_conditions.temperature_err"
+              trans_func="-22">sample_condition_variable.val_err</pdbx-item>
+   <pdbx-item name="pdbx_nmr_exptl_sample_conditions.temperature_units"
               trans_func="-22">sample_condition_variable.val_units</pdbx-item>
-   <pdbx-item id="pdbx_nmr_refine.details" trans_func="1">conformer_family_refinement.refine_details</pdbx-item>
-   <pdbx-item id="pdbx_nmr_refine.details" trans_func="1">rep_conf_refinement.refine_details</pdbx-item>
-   <pdbx-item id="pdbx_nmr_refine.entry_id" trans_func="1">entry.id</pdbx-item>
-   <pdbx-item id="pdbx_nmr_refine.method" trans_func="1">conformer_family_refinement.refine_method</pdbx-item>
-   <pdbx-item id="pdbx_nmr_refine.method" trans_func="1">rep_conf_refinement.refine_method</pdbx-item>
-   <pdbx-item id="pdbx_nmr_representative.conformer_id" trans_func="1">conformer_stat_list.representative_conformer</pdbx-item>
-   <pdbx-item id="pdbx_nmr_representative.entry_id" trans_func="1">conformer_stat_list.entry_id</pdbx-item>
-   <pdbx-item id="pdbx_nmr_representative.selection_criteria" trans_func="1">conformer_stat_list.rep_conformer_selection_criteria</pdbx-item>
-   <pdbx-item id="pdbx_nmr_sample_details.contents" trans_func="1">sample.details</pdbx-item>
-   <pdbx-item id="pdbx_nmr_sample_details.solution_id" trans_func="1">sample.id</pdbx-item>
-   <pdbx-item id="pdbx_nmr_sample_details.solvent_system" trans_func="1">sample.solvent_system</pdbx-item>
-   <pdbx-item id="pdbx_nmr_sample_details.type" trans_func="1">sample.type</pdbx-item>
-   <pdbx-item id="pdbx_nmr_software.authors" trans_func="1">vendor.name</pdbx-item>
-   <pdbx-item id="pdbx_nmr_software.authors" trans_func="5">software.id</pdbx-item>
-   <pdbx-item id="pdbx_nmr_software.classification" trans_func="1">task.task</pdbx-item>
-   <pdbx-item id="pdbx_nmr_software.classification" trans_func="5">task.software_id</pdbx-item>
-   <pdbx-item id="pdbx_nmr_software.details" trans_func="1">software.details</pdbx-item>
-   <pdbx-item id="pdbx_nmr_software.details" trans_func="1">spectral_peak_list.text_data_format</pdbx-item>
-   <pdbx-item id="pdbx_nmr_software.name" trans_func="1">software.name</pdbx-item>
-   <pdbx-item id="pdbx_nmr_software.name" trans_func="5">vendor.software_id</pdbx-item>
-   <pdbx-item id="pdbx_nmr_software.name" trans_func="1">software.sf_framecode</pdbx-item>
-   <pdbx-item id="pdbx_nmr_software.ordinal" trans_func="1">software.id</pdbx-item>
-   <pdbx-item id="pdbx_nmr_software.version" trans_func="1">software.version</pdbx-item>
-   <pdbx-item id="pdbx_nmr_spectral_dim.atom_isotope_number" trans_func="1">spectral_dim.atom_isotope_number</pdbx-item>
-   <pdbx-item id="pdbx_nmr_spectral_dim.atom_type" trans_func="1">spectral_dim.atom_type</pdbx-item>
-   <pdbx-item id="pdbx_nmr_spectral_dim.center_frequency_offset" trans_func="1">spectral_dim.center_frequency_offset</pdbx-item>
-   <pdbx-item id="pdbx_nmr_spectral_dim.encoded_source_dimension_id" trans_func="1">spectral_dim.encoded_reduced_dimension_id</pdbx-item>
-   <pdbx-item id="pdbx_nmr_spectral_dim.encoding_code" trans_func="1">spectral_dim.encoding_code</pdbx-item>
-   <pdbx-item id="pdbx_nmr_spectral_dim.entry_id" trans_func="1">spectral_dim.entry_id</pdbx-item>
-   <pdbx-item id="pdbx_nmr_spectral_dim.id" trans_func="1">spectral_dim.id</pdbx-item>
-   <pdbx-item id="pdbx_nmr_spectral_dim.magnetization_linkage_id" trans_func="1">spectral_dim.magnetization_linkage_id</pdbx-item>
-   <pdbx-item id="pdbx_nmr_spectral_dim.spectral_peak_list_id" trans_func="1">spectral_dim.spectral_peak_list_id</pdbx-item>
-   <pdbx-item id="pdbx_nmr_spectral_dim.spectral_region" trans_func="1">spectral_dim.spectral_region</pdbx-item>
-   <pdbx-item id="pdbx_nmr_spectral_dim.sweep_width" trans_func="1">spectral_dim.sweep_width</pdbx-item>
-   <pdbx-item id="pdbx_nmr_spectral_dim.sweep_width_units" trans_func="1">spectral_dim.sweep_width_units</pdbx-item>
-   <pdbx-item id="pdbx_nmr_spectral_dim.under_sampling_type" trans_func="1">spectral_dim.under_sampling_type</pdbx-item>
-   <pdbx-item id="pdbx_nmr_spectral_peak_list.conditions_id" trans_func="1">spectral_peak_list.sample_condition_list_id</pdbx-item>
-   <pdbx-item id="pdbx_nmr_spectral_peak_list.data_file_name" trans_func="1">spectral_peak_list.data_file_name</pdbx-item>
-   <pdbx-item id="pdbx_nmr_spectral_peak_list.details" trans_func="1">spectral_peak_list.details</pdbx-item>
-   <pdbx-item id="pdbx_nmr_spectral_peak_list.entry_id" trans_func="1">spectral_peak_list.entry_id</pdbx-item>
-   <pdbx-item id="pdbx_nmr_spectral_peak_list.experiment_id" trans_func="1">spectral_peak_list.experiment_id</pdbx-item>
-   <pdbx-item id="pdbx_nmr_spectral_peak_list.id" trans_func="1">spectral_peak_list.id</pdbx-item>
-   <pdbx-item id="pdbx_nmr_spectral_peak_list.number_of_spectral_dimensions"
+   <pdbx-item name="pdbx_nmr_refine.details" trans_func="1">conformer_family_refinement.refine_details</pdbx-item>
+   <pdbx-item name="pdbx_nmr_refine.details" trans_func="1">rep_conf_refinement.refine_details</pdbx-item>
+   <pdbx-item name="pdbx_nmr_refine.entry_id" trans_func="1">entry.id</pdbx-item>
+   <pdbx-item name="pdbx_nmr_refine.method" trans_func="1">conformer_family_refinement.refine_method</pdbx-item>
+   <pdbx-item name="pdbx_nmr_refine.method" trans_func="1">rep_conf_refinement.refine_method</pdbx-item>
+   <pdbx-item name="pdbx_nmr_representative.conformer_id" trans_func="1">conformer_stat_list.representative_conformer</pdbx-item>
+   <pdbx-item name="pdbx_nmr_representative.entry_id" trans_func="1">conformer_stat_list.entry_id</pdbx-item>
+   <pdbx-item name="pdbx_nmr_representative.selection_criteria" trans_func="1">conformer_stat_list.rep_conformer_selection_criteria</pdbx-item>
+   <pdbx-item name="pdbx_nmr_sample_details.contents" trans_func="1">sample.details</pdbx-item>
+   <pdbx-item name="pdbx_nmr_sample_details.solution_id" trans_func="1">sample.id</pdbx-item>
+   <pdbx-item name="pdbx_nmr_sample_details.solvent_system" trans_func="1">sample.solvent_system</pdbx-item>
+   <pdbx-item name="pdbx_nmr_sample_details.type" trans_func="1">sample.type</pdbx-item>
+   <pdbx-item name="pdbx_nmr_software.authors" trans_func="1">vendor.name</pdbx-item>
+   <pdbx-item name="pdbx_nmr_software.authors" trans_func="5">software.id</pdbx-item>
+   <pdbx-item name="pdbx_nmr_software.classification" trans_func="1">task.task</pdbx-item>
+   <pdbx-item name="pdbx_nmr_software.classification" trans_func="5">task.software_id</pdbx-item>
+   <pdbx-item name="pdbx_nmr_software.details" trans_func="1">software.details</pdbx-item>
+   <pdbx-item name="pdbx_nmr_software.details" trans_func="1">spectral_peak_list.text_data_format</pdbx-item>
+   <pdbx-item name="pdbx_nmr_software.name" trans_func="1">software.name</pdbx-item>
+   <pdbx-item name="pdbx_nmr_software.name" trans_func="5">vendor.software_id</pdbx-item>
+   <pdbx-item name="pdbx_nmr_software.name" trans_func="1">software.sf_framecode</pdbx-item>
+   <pdbx-item name="pdbx_nmr_software.ordinal" trans_func="1">software.id</pdbx-item>
+   <pdbx-item name="pdbx_nmr_software.version" trans_func="1">software.version</pdbx-item>
+   <pdbx-item name="pdbx_nmr_spectral_dim.atom_isotope_number" trans_func="1">spectral_dim.atom_isotope_number</pdbx-item>
+   <pdbx-item name="pdbx_nmr_spectral_dim.atom_type" trans_func="1">spectral_dim.atom_type</pdbx-item>
+   <pdbx-item name="pdbx_nmr_spectral_dim.center_frequency_offset" trans_func="1">spectral_dim.center_frequency_offset</pdbx-item>
+   <pdbx-item name="pdbx_nmr_spectral_dim.encoded_source_dimension_id" trans_func="1">spectral_dim.encoded_reduced_dimension_id</pdbx-item>
+   <pdbx-item name="pdbx_nmr_spectral_dim.encoding_code" trans_func="1">spectral_dim.encoding_code</pdbx-item>
+   <pdbx-item name="pdbx_nmr_spectral_dim.entry_id" trans_func="1">spectral_dim.entry_id</pdbx-item>
+   <pdbx-item name="pdbx_nmr_spectral_dim.id" trans_func="1">spectral_dim.id</pdbx-item>
+   <pdbx-item name="pdbx_nmr_spectral_dim.magnetization_linkage_id" trans_func="1">spectral_dim.magnetization_linkage_id</pdbx-item>
+   <pdbx-item name="pdbx_nmr_spectral_dim.spectral_peak_list_id" trans_func="1">spectral_dim.spectral_peak_list_id</pdbx-item>
+   <pdbx-item name="pdbx_nmr_spectral_dim.spectral_region" trans_func="1">spectral_dim.spectral_region</pdbx-item>
+   <pdbx-item name="pdbx_nmr_spectral_dim.sweep_width" trans_func="1">spectral_dim.sweep_width</pdbx-item>
+   <pdbx-item name="pdbx_nmr_spectral_dim.sweep_width_units" trans_func="1">spectral_dim.sweep_width_units</pdbx-item>
+   <pdbx-item name="pdbx_nmr_spectral_dim.under_sampling_type" trans_func="1">spectral_dim.under_sampling_type</pdbx-item>
+   <pdbx-item name="pdbx_nmr_spectral_peak_list.conditions_id" trans_func="1">spectral_peak_list.sample_condition_list_id</pdbx-item>
+   <pdbx-item name="pdbx_nmr_spectral_peak_list.data_file_name" trans_func="1">spectral_peak_list.data_file_name</pdbx-item>
+   <pdbx-item name="pdbx_nmr_spectral_peak_list.details" trans_func="1">spectral_peak_list.details</pdbx-item>
+   <pdbx-item name="pdbx_nmr_spectral_peak_list.entry_id" trans_func="1">spectral_peak_list.entry_id</pdbx-item>
+   <pdbx-item name="pdbx_nmr_spectral_peak_list.experiment_id" trans_func="1">spectral_peak_list.experiment_id</pdbx-item>
+   <pdbx-item name="pdbx_nmr_spectral_peak_list.id" trans_func="1">spectral_peak_list.id</pdbx-item>
+   <pdbx-item name="pdbx_nmr_spectral_peak_list.number_of_spectral_dimensions"
               trans_func="1">spectral_peak_list.number_of_spectral_dimensions</pdbx-item>
-   <pdbx-item id="pdbx_nmr_spectral_peak_list.solution_id" trans_func="1">spectral_peak_list.sample_id</pdbx-item>
-   <pdbx-item id="pdbx_nmr_spectral_peak_list.text_data_format" trans_func="1">software.details</pdbx-item>
-   <pdbx-item id="pdbx_nmr_spectral_peak_list.text_data_format" trans_func="1">spectral_peak_list.text_data_format</pdbx-item>
-   <pdbx-item id="pdbx_nmr_spectral_peak_software.entry_id" trans_func="1">spectral_peak_software.entry_id</pdbx-item>
-   <pdbx-item id="pdbx_nmr_spectral_peak_software.software_id" trans_func="1">spectral_peak_software.software_id</pdbx-item>
-   <pdbx-item id="pdbx_nmr_spectral_peak_software.spectral_peak_list_id"
+   <pdbx-item name="pdbx_nmr_spectral_peak_list.solution_id" trans_func="1">spectral_peak_list.sample_id</pdbx-item>
+   <pdbx-item name="pdbx_nmr_spectral_peak_list.text_data_format" trans_func="1">software.details</pdbx-item>
+   <pdbx-item name="pdbx_nmr_spectral_peak_list.text_data_format" trans_func="1">spectral_peak_list.text_data_format</pdbx-item>
+   <pdbx-item name="pdbx_nmr_spectral_peak_software.entry_id" trans_func="1">spectral_peak_software.entry_id</pdbx-item>
+   <pdbx-item name="pdbx_nmr_spectral_peak_software.software_id" trans_func="1">spectral_peak_software.software_id</pdbx-item>
+   <pdbx-item name="pdbx_nmr_spectral_peak_software.spectral_peak_list_id"
               trans_func="1">spectral_peak_software.spectral_peak_list_id</pdbx-item>
-   <pdbx-item id="pdbx_nmr_spectrometer.details" trans_func="1">nmr_spectrometer.details</pdbx-item>
-   <pdbx-item id="pdbx_nmr_spectrometer.field_strength" trans_func="1">nmr_spectrometer.field_strength</pdbx-item>
-   <pdbx-item id="pdbx_nmr_spectrometer.field_strength" trans_func="1">nmr_spectrometer_view.field_strength</pdbx-item>
-   <pdbx-item id="pdbx_nmr_spectrometer.manufacturer" trans_func="1">nmr_spectrometer.manufacturer</pdbx-item>
-   <pdbx-item id="pdbx_nmr_spectrometer.manufacturer" trans_func="1">nmr_spectrometer_view.manufacturer</pdbx-item>
-   <pdbx-item id="pdbx_nmr_spectrometer.model" trans_func="1">nmr_spectrometer.model</pdbx-item>
-   <pdbx-item id="pdbx_nmr_spectrometer.model" trans_func="1">nmr_spectrometer_view.model</pdbx-item>
-   <pdbx-item id="pdbx_nmr_spectrometer.name" trans_func="1">nmr_spectrometer.sf_framecode</pdbx-item>
-   <pdbx-item id="pdbx_nmr_spectrometer.spectrometer_id" trans_func="1">nmr_spectrometer.id</pdbx-item>
-   <pdbx-item id="pdbx_nmr_spectrometer.spectrometer_id" trans_func="1">nmr_spectrometer_view.id</pdbx-item>
-   <pdbx-item id="pdbx_nmr_systematic_chem_shift_offset.assigned_chem_shift_list_id"
+   <pdbx-item name="pdbx_nmr_spectrometer.details" trans_func="1">nmr_spectrometer.details</pdbx-item>
+   <pdbx-item name="pdbx_nmr_spectrometer.field_strength" trans_func="1">nmr_spectrometer.field_strength</pdbx-item>
+   <pdbx-item name="pdbx_nmr_spectrometer.field_strength" trans_func="1">nmr_spectrometer_view.field_strength</pdbx-item>
+   <pdbx-item name="pdbx_nmr_spectrometer.manufacturer" trans_func="1">nmr_spectrometer.manufacturer</pdbx-item>
+   <pdbx-item name="pdbx_nmr_spectrometer.manufacturer" trans_func="1">nmr_spectrometer_view.manufacturer</pdbx-item>
+   <pdbx-item name="pdbx_nmr_spectrometer.model" trans_func="1">nmr_spectrometer.model</pdbx-item>
+   <pdbx-item name="pdbx_nmr_spectrometer.model" trans_func="1">nmr_spectrometer_view.model</pdbx-item>
+   <pdbx-item name="pdbx_nmr_spectrometer.name" trans_func="1">nmr_spectrometer.sf_framecode</pdbx-item>
+   <pdbx-item name="pdbx_nmr_spectrometer.spectrometer_id" trans_func="1">nmr_spectrometer.id</pdbx-item>
+   <pdbx-item name="pdbx_nmr_spectrometer.spectrometer_id" trans_func="1">nmr_spectrometer_view.id</pdbx-item>
+   <pdbx-item name="pdbx_nmr_systematic_chem_shift_offset.assigned_chem_shift_list_id"
               trans_func="1">systematic_chem_shift_offset.assigned_chem_shift_list_id</pdbx-item>
-   <pdbx-item id="pdbx_nmr_systematic_chem_shift_offset.atom_isotope_number"
+   <pdbx-item name="pdbx_nmr_systematic_chem_shift_offset.atom_isotope_number"
               trans_func="1">systematic_chem_shift_offset.atom_isotope_number</pdbx-item>
-   <pdbx-item id="pdbx_nmr_systematic_chem_shift_offset.atom_type" trans_func="1">systematic_chem_shift_offset.atom_type</pdbx-item>
-   <pdbx-item id="pdbx_nmr_systematic_chem_shift_offset.entry_id" trans_func="1">systematic_chem_shift_offset.entry_id</pdbx-item>
-   <pdbx-item id="pdbx_nmr_systematic_chem_shift_offset.type" trans_func="1">systematic_chem_shift_offset.type</pdbx-item>
-   <pdbx-item id="pdbx_nmr_systematic_chem_shift_offset.val" trans_func="1">systematic_chem_shift_offset.val</pdbx-item>
-   <pdbx-item id="pdbx_nmr_systematic_chem_shift_offset.val_err" trans_func="1">systematic_chem_shift_offset.val_err</pdbx-item>
-   <pdbx-item id="pdbx_nonpoly_scheme.asym_id" trans_func="1">pdbx_nonpoly_scheme.asym_id</pdbx-item>
-   <pdbx-item id="pdbx_nonpoly_scheme.asym_id" trans_func="45">pdbx_nonpoly_scheme.entity_assembly_id</pdbx-item>
-   <pdbx-item id="pdbx_nonpoly_scheme.asym_id" trans_func="50">pdbx_nonpoly_scheme.assembly_id</pdbx-item>
-   <pdbx-item id="pdbx_nonpoly_scheme.auth_mon_id" trans_func="1">pdbx_nonpoly_scheme.auth_mon_id</pdbx-item>
-   <pdbx-item id="pdbx_nonpoly_scheme.auth_seq_num" trans_func="1">pdbx_nonpoly_scheme.auth_seq_num</pdbx-item>
-   <pdbx-item id="pdbx_nonpoly_scheme.entity_id" trans_func="1">pdbx_nonpoly_scheme.entity_id</pdbx-item>
-   <pdbx-item id="pdbx_nonpoly_scheme.mon_id" trans_func="1">pdbx_nonpoly_scheme.comp_id</pdbx-item>
-   <pdbx-item id="pdbx_nonpoly_scheme.mon_id" trans_func="1">pdbx_nonpoly_scheme.mon_id</pdbx-item>
-   <pdbx-item id="pdbx_nonpoly_scheme.pdb_ins_code" trans_func="1">pdbx_nonpoly_scheme.pdb_ins_code</pdbx-item>
-   <pdbx-item id="pdbx_nonpoly_scheme.pdb_mon_id" trans_func="1">pdbx_nonpoly_scheme.pdb_mon_id</pdbx-item>
-   <pdbx-item id="pdbx_nonpoly_scheme.pdb_seq_num" trans_func="1">pdbx_nonpoly_scheme.comp_index_id</pdbx-item>
-   <pdbx-item id="pdbx_nonpoly_scheme.pdb_seq_num" trans_func="1">pdbx_nonpoly_scheme.pdb_seq_num</pdbx-item>
-   <pdbx-item id="pdbx_nonpoly_scheme.pdb_strand_id" trans_func="1">pdbx_nonpoly_scheme.pdb_strand_id</pdbx-item>
-   <pdbx-item id="pdbx_poly_seq_scheme.asym_id" trans_func="1">pdbx_poly_seq_scheme.asym_id</pdbx-item>
-   <pdbx-item id="pdbx_poly_seq_scheme.asym_id" trans_func="50">pdbx_poly_seq_scheme.assembly_id</pdbx-item>
-   <pdbx-item id="pdbx_poly_seq_scheme.asym_id" trans_func="45">pdbx_poly_seq_scheme.entity_assembly_id</pdbx-item>
-   <pdbx-item id="pdbx_poly_seq_scheme.auth_mon_id" trans_func="1">pdbx_poly_seq_scheme.auth_mon_id</pdbx-item>
-   <pdbx-item id="pdbx_poly_seq_scheme.auth_seq_num" trans_func="1">pdbx_poly_seq_scheme.auth_seq_num</pdbx-item>
-   <pdbx-item id="pdbx_poly_seq_scheme.entity_id" trans_func="1">pdbx_poly_seq_scheme.entity_id</pdbx-item>
-   <pdbx-item id="pdbx_poly_seq_scheme.hetero" trans_func="10">pdbx_poly_seq_scheme.hetero</pdbx-item>
-   <pdbx-item id="pdbx_poly_seq_scheme.mon_id" trans_func="1">pdbx_poly_seq_scheme.comp_id</pdbx-item>
-   <pdbx-item id="pdbx_poly_seq_scheme.mon_id" trans_func="1">pdbx_poly_seq_scheme.mon_id</pdbx-item>
-   <pdbx-item id="pdbx_poly_seq_scheme.pdb_ins_code" trans_func="1">pdbx_poly_seq_scheme.pdb_ins_code</pdbx-item>
-   <pdbx-item id="pdbx_poly_seq_scheme.pdb_mon_id" trans_func="1">pdbx_poly_seq_scheme.pdb_mon_id</pdbx-item>
-   <pdbx-item id="pdbx_poly_seq_scheme.pdb_seq_num" trans_func="1">pdbx_poly_seq_scheme.pdb_seq_num</pdbx-item>
-   <pdbx-item id="pdbx_poly_seq_scheme.pdb_strand_id" trans_func="1">pdbx_poly_seq_scheme.pdb_chain_id</pdbx-item>
-   <pdbx-item id="pdbx_poly_seq_scheme.seq_id" trans_func="2">pdbx_poly_seq_scheme.comp_index_id</pdbx-item>
-   <pdbx-item id="pdbx_poly_seq_scheme.seq_id" trans_func="2">pdbx_poly_seq_scheme.seq_id</pdbx-item>
-   <pdbx-item id="struct.entry_id" trans_func="1">entry.id</pdbx-item>
-   <pdbx-item id="struct.pdbx_casp_flag" trans_func="1">entry.casp_target</pdbx-item>
-   <pdbx-item id="struct.pdbx_descriptor" trans_func="1">assembly.name</pdbx-item>
-   <pdbx-item id="struct.pdbx_model_details" trans_func="1">conformer_stat_list.rep_conformer_selection_criteria</pdbx-item>
-   <pdbx-item id="struct.pdbx_model_details" trans_func="1">conformer_stat_list.representative_conformer</pdbx-item>
-   <pdbx-item id="struct.title" trans_func="1">entry.title</pdbx-item>
-   <pdbx-item id="struct_asym.details" trans_func="1">entity_assembly.details</pdbx-item>
-   <pdbx-item id="struct_asym.entity_id" trans_func="1">entity_assembly.entity_id</pdbx-item>
-   <pdbx-item id="struct_asym.id" trans_func="45">entity_assembly.id</pdbx-item>
-   <pdbx-item id="struct_asym.id" trans_func="1">entity_assembly.asym_id</pdbx-item>
-   <pdbx-item id="struct_keywords.entry_id" trans_func="1">struct_keywords.entry_id</pdbx-item>
-   <pdbx-item id="struct_keywords.pdbx_keywords" trans_func="1">struct_keywords.keywords</pdbx-item>
-   <pdbx-item id="struct_keywords.text" trans_func="1">struct_keywords.keywords</pdbx-item>
-   <pdbx-item id="struct_keywords.text" trans_func="1">struct_keywords.text</pdbx-item>
-   <pdbx-item id="pdbx_audit_author.name" trans_func="1">entry_author.pdbx_name</pdbx-item>
-   <pdbx-item id="citation_author.name" trans_func="1">citation_author.pdbx_name</pdbx-item>
-   <pdbx-item id="entry.id" trans_func="1">entry.assigned_pdb_id</pdbx-item>
+   <pdbx-item name="pdbx_nmr_systematic_chem_shift_offset.atom_type" trans_func="1">systematic_chem_shift_offset.atom_type</pdbx-item>
+   <pdbx-item name="pdbx_nmr_systematic_chem_shift_offset.entry_id" trans_func="1">systematic_chem_shift_offset.entry_id</pdbx-item>
+   <pdbx-item name="pdbx_nmr_systematic_chem_shift_offset.type" trans_func="1">systematic_chem_shift_offset.type</pdbx-item>
+   <pdbx-item name="pdbx_nmr_systematic_chem_shift_offset.val" trans_func="1">systematic_chem_shift_offset.val</pdbx-item>
+   <pdbx-item name="pdbx_nmr_systematic_chem_shift_offset.val_err" trans_func="1">systematic_chem_shift_offset.val_err</pdbx-item>
+   <pdbx-item name="pdbx_nonpoly_scheme.asym_id" trans_func="1">pdbx_nonpoly_scheme.asym_id</pdbx-item>
+   <pdbx-item name="pdbx_nonpoly_scheme.asym_id" trans_func="45">pdbx_nonpoly_scheme.entity_assembly_id</pdbx-item>
+   <pdbx-item name="pdbx_nonpoly_scheme.asym_id" trans_func="50">pdbx_nonpoly_scheme.assembly_id</pdbx-item>
+   <pdbx-item name="pdbx_nonpoly_scheme.auth_mon_id" trans_func="1">pdbx_nonpoly_scheme.auth_mon_id</pdbx-item>
+   <pdbx-item name="pdbx_nonpoly_scheme.auth_seq_num" trans_func="1">pdbx_nonpoly_scheme.auth_seq_num</pdbx-item>
+   <pdbx-item name="pdbx_nonpoly_scheme.entity_id" trans_func="1">pdbx_nonpoly_scheme.entity_id</pdbx-item>
+   <pdbx-item name="pdbx_nonpoly_scheme.mon_id" trans_func="1">pdbx_nonpoly_scheme.comp_id</pdbx-item>
+   <pdbx-item name="pdbx_nonpoly_scheme.mon_id" trans_func="1">pdbx_nonpoly_scheme.mon_id</pdbx-item>
+   <pdbx-item name="pdbx_nonpoly_scheme.pdb_ins_code" trans_func="1">pdbx_nonpoly_scheme.pdb_ins_code</pdbx-item>
+   <pdbx-item name="pdbx_nonpoly_scheme.pdb_mon_id" trans_func="1">pdbx_nonpoly_scheme.pdb_mon_id</pdbx-item>
+   <pdbx-item name="pdbx_nonpoly_scheme.pdb_seq_num" trans_func="1">pdbx_nonpoly_scheme.comp_index_id</pdbx-item>
+   <pdbx-item name="pdbx_nonpoly_scheme.pdb_seq_num" trans_func="1">pdbx_nonpoly_scheme.pdb_seq_num</pdbx-item>
+   <pdbx-item name="pdbx_nonpoly_scheme.pdb_strand_id" trans_func="1">pdbx_nonpoly_scheme.pdb_strand_id</pdbx-item>
+   <pdbx-item name="pdbx_poly_seq_scheme.asym_id" trans_func="1">pdbx_poly_seq_scheme.asym_id</pdbx-item>
+   <pdbx-item name="pdbx_poly_seq_scheme.asym_id" trans_func="50">pdbx_poly_seq_scheme.assembly_id</pdbx-item>
+   <pdbx-item name="pdbx_poly_seq_scheme.asym_id" trans_func="45">pdbx_poly_seq_scheme.entity_assembly_id</pdbx-item>
+   <pdbx-item name="pdbx_poly_seq_scheme.auth_mon_id" trans_func="1">pdbx_poly_seq_scheme.auth_mon_id</pdbx-item>
+   <pdbx-item name="pdbx_poly_seq_scheme.auth_seq_num" trans_func="1">pdbx_poly_seq_scheme.auth_seq_num</pdbx-item>
+   <pdbx-item name="pdbx_poly_seq_scheme.entity_id" trans_func="1">pdbx_poly_seq_scheme.entity_id</pdbx-item>
+   <pdbx-item name="pdbx_poly_seq_scheme.hetero" trans_func="10">pdbx_poly_seq_scheme.hetero</pdbx-item>
+   <pdbx-item name="pdbx_poly_seq_scheme.mon_id" trans_func="1">pdbx_poly_seq_scheme.comp_id</pdbx-item>
+   <pdbx-item name="pdbx_poly_seq_scheme.mon_id" trans_func="1">pdbx_poly_seq_scheme.mon_id</pdbx-item>
+   <pdbx-item name="pdbx_poly_seq_scheme.pdb_ins_code" trans_func="1">pdbx_poly_seq_scheme.pdb_ins_code</pdbx-item>
+   <pdbx-item name="pdbx_poly_seq_scheme.pdb_mon_id" trans_func="1">pdbx_poly_seq_scheme.pdb_mon_id</pdbx-item>
+   <pdbx-item name="pdbx_poly_seq_scheme.pdb_seq_num" trans_func="1">pdbx_poly_seq_scheme.pdb_seq_num</pdbx-item>
+   <pdbx-item name="pdbx_poly_seq_scheme.pdb_strand_id" trans_func="1">pdbx_poly_seq_scheme.pdb_chain_id</pdbx-item>
+   <pdbx-item name="pdbx_poly_seq_scheme.seq_id" trans_func="2">pdbx_poly_seq_scheme.comp_index_id</pdbx-item>
+   <pdbx-item name="pdbx_poly_seq_scheme.seq_id" trans_func="2">pdbx_poly_seq_scheme.seq_id</pdbx-item>
+   <pdbx-item name="struct.entry_id" trans_func="1">entry.id</pdbx-item>
+   <pdbx-item name="struct.pdbx_casp_flag" trans_func="1">entry.casp_target</pdbx-item>
+   <pdbx-item name="struct.pdbx_descriptor" trans_func="1">assembly.name</pdbx-item>
+   <pdbx-item name="struct.pdbx_model_details" trans_func="1">conformer_stat_list.rep_conformer_selection_criteria</pdbx-item>
+   <pdbx-item name="struct.pdbx_model_details" trans_func="1">conformer_stat_list.representative_conformer</pdbx-item>
+   <pdbx-item name="struct.title" trans_func="1">entry.title</pdbx-item>
+   <pdbx-item name="struct_asym.details" trans_func="1">entity_assembly.details</pdbx-item>
+   <pdbx-item name="struct_asym.entity_id" trans_func="1">entity_assembly.entity_id</pdbx-item>
+   <pdbx-item name="struct_asym.id" trans_func="45">entity_assembly.id</pdbx-item>
+   <pdbx-item name="struct_asym.id" trans_func="1">entity_assembly.asym_id</pdbx-item>
+   <pdbx-item name="struct_keywords.entry_id" trans_func="1">struct_keywords.entry_id</pdbx-item>
+   <pdbx-item name="struct_keywords.pdbx_keywords" trans_func="1">struct_keywords.keywords</pdbx-item>
+   <pdbx-item name="struct_keywords.text" trans_func="1">struct_keywords.keywords</pdbx-item>
+   <pdbx-item name="struct_keywords.text" trans_func="1">struct_keywords.text</pdbx-item>
+   <pdbx-item name="pdbx_audit_author.name" trans_func="1">entry_author.pdbx_name</pdbx-item>
+   <pdbx-item name="citation_author.name" trans_func="1">citation_author.pdbx_name</pdbx-item>
+   <pdbx-item name="entry.id" trans_func="1">entry.assigned_pdb_id</pdbx-item>
 </pdbx-to-nmr-star>
