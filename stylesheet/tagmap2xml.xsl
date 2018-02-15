@@ -46,8 +46,8 @@
             <xsl:with-param name="col">5</xsl:with-param>
           </xsl:call-template>
         </xsl:variable>
-        <xsl:if test="not(starts-with($trans_func,'-')) and $pdbx_category!='' and $pdbx_item!='' and $nmr-star_category!='' and $nmr-star_item!=''">
-          <pdbx-item id="{$pdbx_category}.{$pdbx_item}">
+        <xsl:if test="$pdbx_category!='' and $pdbx_item!='' and $nmr-star_category!='' and $nmr-star_item!=''">
+          <pdbx-item id="{$pdbx_category}.{$pdbx_item}" trans_func="{$trans_func}">
             <xsl:value-of select="concat($nmr-star_category,'.',$nmr-star_item)"/>
           </pdbx-item>
         </xsl:if>

@@ -470,7 +470,7 @@
     <xsl:param name="category"/>
     <xsl:variable name="id"><xsl:value-of select="concat($category,'.',@name)"/></xsl:variable>
     <xsl:variable name="nmr-star_item">
-      <xsl:if test="$tagmap_xml/pdbx-to-nmr-star/pdbx-item[@id=$id]"><xsl:value-of select="$tagmap_xml/pdbx-to-nmr-star/pdbx-item[@id=$id][1]"/></xsl:if>
+      <xsl:if test="$tagmap_xml/pdbx-to-nmr-star/pdbx-item[@id=$id and not(starts-with(@trans_func,'-'))]"><xsl:value-of select="$tagmap_xml/pdbx-to-nmr-star/pdbx-item[@id=$id and not(starts-with(@trans_func,'-'))][1]"/></xsl:if>
     </xsl:variable>
     <xsl:choose>
       <xsl:when test="count(.//xsd:enumeration) = 0">

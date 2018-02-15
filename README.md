@@ -50,9 +50,10 @@ File path | Document
 
 ## Release notes
 
-- **Feb 14, 2018**: Release v0.0.9
+- **Feb 15, 2018**: Release v0.0.9
 	- Add ontology relationship between wwPDB/OWL-validation and PDBx ontology.
 	- Add ontology relationship between wwPDB/OWL-validation and BMRB/OWL.
+	- Update ontology mapping between PDBx/mmCIF and NMR-STAR data items.
 
 - **Feb 13, 2018**: Release v0.0.8
 	- Change directory: from pdbml-validtion to XML-validation, which contains compressed PDBML-validation.
