@@ -32,13 +32,13 @@ if [ ! -e url_mirror ] ; then
 
   time=`ping -c 1 -w 10 $url | grep 'avg' | cut -d '=' -f 2 | cut -d '/' -f 2`
 
-  if [ $? = "0" ] ; then
+  if [ $? = 0 ] ; then
 
    printf "[%d] %s\t\t%6.1f\n" $i $url $time
 
    cmp=`echo "$time > $delay" | bc`
 
-   if [ $cmp = "0" ] ; then
+   if [ $cmp = 0 ] ; then
     PDB_MIRROR=$url
     delay=$time
    fi
@@ -85,7 +85,7 @@ case $PDB_MIRROR in
   RSYNC_PORT=${RSYNC_PORTS[2]}
   RSYNC_BASE_DIR=${RSYNC_BASE_DIRS[2]};;
  *)
-  echo $PDB_MIRROR: undefined PDB mirror server.
+  echo $PDB_MIRROR: undefined PDB mirror site.
   rm -f url_miror
   exit 1;;
 esac
