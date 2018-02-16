@@ -4,6 +4,16 @@
             targetNamespace="http://pdbml.pdb.org/schema/pdbx-validation-v0.xsd"
             elementFormDefault="qualified"
             attributeFormDefault="unqualified">
+   <xsd:annotation>
+      <xsd:appinfo>PDBML-validation Schema v0.290</xsd:appinfo>
+      <xsd:documentation source="http://pdbml.pdb.org/schema/pdbx-validation-v0.xsd"
+                         xml:lang="en">
+
+PDBXML-validation Schema translated from wwPDB Validation Information Dictionary v0.290, which is backward compatible with the PDBx/mmCIF Dictionary v5.290:
+ http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
+
+      </xsd:documentation>
+   </xsd:annotation>
    <xsd:complexType name="diffrnType">
       <xsd:annotation>
          <xsd:documentation xml:lang="en"

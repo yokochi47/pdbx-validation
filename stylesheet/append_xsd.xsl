@@ -22,6 +22,15 @@
        xmlns:PDBxv="http://pdbml.pdb.org/schema/pdbx-validation-v0.xsd"
        targetNamespace="http://pdbml.pdb.org/schema/pdbx-validation-v0.xsd"
        elementFormDefault="qualified" attributeFormDefault="unqualified">
+      <xsd:annotation>
+        <xsd:appinfo>PDBML-validation Schema v0.290</xsd:appinfo>
+        <xsd:documentation source="http://pdbml.pdb.org/schema/pdbx-validation-v0.xsd" xml:lang="en">
+
+PDBXML-validation Schema translated from wwPDB Validation Information Dictionary v0.290, which is backward compatible with the PDBx/mmCIF Dictionary v5.290:
+ http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
+
+        </xsd:documentation>
+      </xsd:annotation>
       <xsl:apply-templates mode="category"/>
       <xsl:call-template name="datablock_type"/>
       <xsl:call-template name="datablock_element"/>

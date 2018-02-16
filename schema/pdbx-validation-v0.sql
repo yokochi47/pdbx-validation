@@ -32,6 +32,12 @@
 --    0 any elements, 0 any attributes
 --
 
+--
+-- PDBML-validation Schema v0.290
+-- PDBXML-validation Schema translated from wwPDB Validation Information Dictionary v0.290, which is backward compatible with the PDBx/mmCIF Dictionary v5.290: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
+-- URI-reference = http://pdbml.pdb.org/schema/pdbx-validation-v0.xsd
+--
+
 DROP TABLE IF EXISTS symmetry_equiv CASCADE;
 DROP TABLE IF EXISTS symmetry CASCADE;
 DROP TABLE IF EXISTS struct_site_view CASCADE;
@@ -280,15 +286,15 @@ CREATE TABLE diffrn (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
 	ambient_environment TEXT ,
-	ambient_pressure DECIMAL CHECK ( ambient_pressure > 0.0 ) ,
+	ambient_pressure DECIMAL CHECK ( ambient_pressure >= 0 ) ,
 	ambient_pressure_esd DECIMAL ,
-	ambient_pressure_gt DECIMAL CHECK ( ambient_pressure_gt > 0.0 ) ,
-	ambient_pressure_lt DECIMAL CHECK ( ambient_pressure_lt > 0.0 ) ,
-	ambient_temp DECIMAL CHECK ( ambient_temp >= 0.0 AND ambient_temp <= 0.0 ) ,
+	ambient_pressure_gt DECIMAL CHECK ( ambient_pressure_gt >= 0 ) ,
+	ambient_pressure_lt DECIMAL CHECK ( ambient_pressure_lt >= 0 ) ,
+	ambient_temp DECIMAL CHECK ( ambient_temp >= 0 ) ,
 	ambient_temp_details TEXT ,
 	ambient_temp_esd DECIMAL ,
-	ambient_temp_gt DECIMAL CHECK ( ambient_temp_gt > 0.0 ) ,
-	ambient_temp_lt DECIMAL CHECK ( ambient_temp_lt > 0.0 ) ,
+	ambient_temp_gt DECIMAL CHECK ( ambient_temp_gt >= 0 ) ,
+	ambient_temp_lt DECIMAL CHECK ( ambient_temp_lt >= 0 ) ,
 	crystal_id TEXT ,
 	crystal_support TEXT ,
 	crystal_treatment TEXT ,
@@ -307,7 +313,7 @@ CREATE TABLE diffrn (
 CREATE TABLE diffrn_scale_group (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
-	"I_net" DECIMAL CHECK ( "I_net" >= 0.0 AND "I_net" <= 0.0 ) ,
+	"I_net" DECIMAL CHECK ( "I_net" >= 0 ) ,
 -- ATTRIBUTE
 	code TEXT NOT NULL 
 );
@@ -353,10 +359,10 @@ CREATE TABLE entity (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
 	details TEXT ,
-	formula_weight DECIMAL CHECK ( formula_weight >= 1.0 AND formula_weight <= 1.0 ) ,
+	formula_weight DECIMAL CHECK ( formula_weight >= 1 ) ,
 	pdbx_description TEXT ,
 	pdbx_ec TEXT ,
-	pdbx_formula_weight_exptl DECIMAL CHECK ( pdbx_formula_weight_exptl >= 1.0 AND pdbx_formula_weight_exptl <= 1.0 ) ,
+	pdbx_formula_weight_exptl DECIMAL CHECK ( pdbx_formula_weight_exptl >= 1 ) ,
 	pdbx_formula_weight_exptl_method ENUM_entity_pdbx_formula_weight_exptl_method ,
 	pdbx_fragment TEXT ,
 	pdbx_modification TEXT ,
@@ -390,7 +396,7 @@ CREATE TABLE entity_poly (
 	nstd_chirality ENUM_entity_poly_nstd_chirality ,
 	nstd_linkage ENUM_entity_poly_nstd_linkage ,
 	nstd_monomer ENUM_entity_poly_nstd_monomer ,
-	number_of_monomers INTEGER CHECK ( number_of_monomers >= 1 AND number_of_monomers <= 1 ) ,
+	number_of_monomers INTEGER CHECK ( number_of_monomers >= 1 ) ,
 	pdbx_seq_one_letter_code TEXT ,
 	pdbx_seq_one_letter_code_can TEXT ,
 	pdbx_seq_one_letter_code_sample TEXT ,
@@ -420,7 +426,7 @@ CREATE TABLE entity_poly_seq (
 -- ATTRIBUTE
 	mon_id TEXT NOT NULL ,
 -- ATTRIBUTE
-	num INTEGER CHECK ( num >= 1 AND num <= 1 ) NOT NULL 
+	num INTEGER CHECK ( num >= 1 ) NOT NULL 
 );
 
 --
@@ -494,12 +500,12 @@ CREATE TABLE pdbx_nmr_assigned_chem_shift_list (
 	data_file_name TEXT ,
 	label TEXT ,
 	nmr_star_consistency_flag ENUM_pdbx_nmr_assigned_chem_shift_list_nmr_star_consistency_fla ,
-	number_chem_shifts INTEGER CHECK ( number_chem_shifts >= 0 AND number_chem_shifts <= 0 ) ,
-	number_map_errors INTEGER CHECK ( number_map_errors >= 0 AND number_map_errors <= 0 ) ,
-	number_map_warnings INTEGER CHECK ( number_map_warnings >= 0 AND number_map_warnings <= 0 ) ,
-	number_mapped_chem_shifts INTEGER CHECK ( number_mapped_chem_shifts >= 0 AND number_mapped_chem_shifts <= 0 ) ,
-	number_parsed_chem_shifts INTEGER CHECK ( number_parsed_chem_shifts >= 0 AND number_parsed_chem_shifts <= 0 ) ,
-	number_unparsed_chem_shifts INTEGER CHECK ( number_unparsed_chem_shifts >= 0 AND number_unparsed_chem_shifts <= 0 ) ,
+	number_chem_shifts INTEGER CHECK ( number_chem_shifts >= 0 ) ,
+	number_map_errors INTEGER CHECK ( number_map_errors >= 0 ) ,
+	number_map_warnings INTEGER CHECK ( number_map_warnings >= 0 ) ,
+	number_mapped_chem_shifts INTEGER CHECK ( number_mapped_chem_shifts >= 0 ) ,
+	number_parsed_chem_shifts INTEGER CHECK ( number_parsed_chem_shifts >= 0 ) ,
+	number_unparsed_chem_shifts INTEGER CHECK ( number_unparsed_chem_shifts >= 0 ) ,
 -- ATTRIBUTE
 	id INTEGER NOT NULL 
 );
@@ -515,7 +521,7 @@ CREATE TABLE pdbx_percentile_conditions (
 	document_id TEXT ,
 	ls_d_res_high DECIMAL ,
 	ls_d_res_low DECIMAL ,
-	number_entries_total INTEGER CHECK ( number_entries_total >= 1 AND number_entries_total <= 1 ) ,
+	number_entries_total INTEGER CHECK ( number_entries_total >= 1 ) ,
 -- ATTRIBUTE
 	id INTEGER NOT NULL 
 );
@@ -655,7 +661,7 @@ CREATE TABLE pdbx_struct_nmr_ens_dom (
 	distance_rms_dev_medoid DECIMAL ,
 	error TEXT ,
 	medoid_model_number INTEGER ,
-	number_of_gaps INTEGER CHECK ( number_of_gaps >= 0 AND number_of_gaps <= 0 ) ,
+	number_of_gaps INTEGER CHECK ( number_of_gaps >= 0 ) ,
 	number_of_monomers INTEGER CHECK ( number_of_monomers > 0 ) ,
 -- ATTRIBUTE
 	id INTEGER NOT NULL 
@@ -699,7 +705,7 @@ CREATE TABLE pdbx_validate_rmsd_ring (
 	auth_asym_id TEXT ,
 	auth_comp_id TEXT ,
 	auth_seq_id TEXT ,
-	dihedral_angle_standard_deviation DECIMAL CHECK ( dihedral_angle_standard_deviation >= 0.0 AND dihedral_angle_standard_deviation <= 0.0 ) ,
+	dihedral_angle_standard_deviation DECIMAL CHECK ( dihedral_angle_standard_deviation >= 0 ) ,
 	dihedral_angle_target_value DECIMAL ,
 	label_alt_id TEXT ,
 -- ATTRIBUTE
@@ -720,7 +726,7 @@ CREATE TABLE pdbx_validate_rmsd_torsion (
 	auth_asym_id TEXT ,
 	auth_comp_id TEXT ,
 	auth_seq_id TEXT ,
-	dihedral_angle_standard_deviation DECIMAL CHECK ( dihedral_angle_standard_deviation >= 0.0 AND dihedral_angle_standard_deviation <= 0.0 ) ,
+	dihedral_angle_standard_deviation DECIMAL CHECK ( dihedral_angle_standard_deviation >= 0 ) ,
 	dihedral_angle_target_value DECIMAL ,
 	dihedral_angle_value DECIMAL ,
 	label_alt_id TEXT ,
@@ -759,20 +765,20 @@ CREATE TABLE "phasing_MAD_expt" (
 CREATE TABLE phasing_set (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
-	cell_angle_alpha DECIMAL CHECK ( cell_angle_alpha >= 0.0 AND cell_angle_alpha <= 0.0 ) ,
-	cell_angle_beta DECIMAL CHECK ( cell_angle_beta >= 0.0 AND cell_angle_beta <= 0.0 ) ,
-	cell_angle_gamma DECIMAL CHECK ( cell_angle_gamma >= 0.0 AND cell_angle_gamma <= 0.0 ) ,
-	cell_length_a DECIMAL CHECK ( cell_length_a >= 0.0 AND cell_length_a <= 0.0 ) ,
-	cell_length_b DECIMAL CHECK ( cell_length_b >= 0.0 AND cell_length_b <= 0.0 ) ,
-	cell_length_c DECIMAL CHECK ( cell_length_c >= 0.0 AND cell_length_c <= 0.0 ) ,
+	cell_angle_alpha DECIMAL CHECK ( cell_angle_alpha >= 0 AND cell_angle_alpha <= 180 ) ,
+	cell_angle_beta DECIMAL CHECK ( cell_angle_beta >= 0 AND cell_angle_beta <= 180 ) ,
+	cell_angle_gamma DECIMAL CHECK ( cell_angle_gamma >= 0 AND cell_angle_gamma <= 180 ) ,
+	cell_length_a DECIMAL CHECK ( cell_length_a >= 0 ) ,
+	cell_length_b DECIMAL CHECK ( cell_length_b >= 0 ) ,
+	cell_length_c DECIMAL CHECK ( cell_length_c >= 0 ) ,
 	detector_specific TEXT ,
 	detector_type TEXT ,
-	pdbx_d_res_high DECIMAL CHECK ( pdbx_d_res_high >= 0.0 AND pdbx_d_res_high <= 0.0 ) ,
-	pdbx_d_res_low DECIMAL CHECK ( pdbx_d_res_low >= 0.0 AND pdbx_d_res_low <= 0.0 ) ,
+	pdbx_d_res_high DECIMAL CHECK ( pdbx_d_res_high >= 0 ) ,
+	pdbx_d_res_low DECIMAL CHECK ( pdbx_d_res_low >= 0 ) ,
 	pdbx_temp_details TEXT ,
 	radiation_source_specific TEXT ,
-	radiation_wavelength DECIMAL CHECK ( radiation_wavelength >= 0.0 AND radiation_wavelength <= 0.0 ) ,
-	temp DECIMAL CHECK ( temp >= 0.0 AND temp <= 0.0 ) ,
+	radiation_wavelength DECIMAL CHECK ( radiation_wavelength >= 0 ) ,
+	temp DECIMAL CHECK ( temp >= 0 ) ,
 -- ATTRIBUTE
 	id TEXT NOT NULL 
 );
@@ -787,11 +793,11 @@ CREATE TABLE phasing_set (
 CREATE TABLE "phasing_MIR_der" (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
-	"R_cullis_acentric" DECIMAL CHECK ( "R_cullis_acentric" >= 0.0 AND "R_cullis_acentric" <= 0.0 ) ,
-	"R_cullis_anomalous" DECIMAL CHECK ( "R_cullis_anomalous" >= 0.0 AND "R_cullis_anomalous" <= 0.0 ) ,
-	"R_cullis_centric" DECIMAL CHECK ( "R_cullis_centric" >= 0.0 AND "R_cullis_centric" <= 0.0 ) ,
-	d_res_high DECIMAL CHECK ( d_res_high >= 0.0 AND d_res_high <= 0.0 ) ,
-	d_res_low DECIMAL CHECK ( d_res_low >= 0.0 AND d_res_low <= 0.0 ) ,
+	"R_cullis_acentric" DECIMAL CHECK ( "R_cullis_acentric" >= 0 ) ,
+	"R_cullis_anomalous" DECIMAL CHECK ( "R_cullis_anomalous" >= 0 ) ,
+	"R_cullis_centric" DECIMAL CHECK ( "R_cullis_centric" >= 0 ) ,
+	d_res_high DECIMAL CHECK ( d_res_high >= 0 ) ,
+	d_res_low DECIMAL CHECK ( d_res_low >= 0 ) ,
 	der_set_id TEXT ,
 	details TEXT ,
 	native_set_id TEXT ,
@@ -808,11 +814,11 @@ CREATE TABLE "phasing_MIR_der" (
 	pdbx_loc_centric DECIMAL ,
 	pdbx_power DECIMAL ,
 	pdbx_reflns INTEGER ,
-	power_acentric DECIMAL CHECK ( power_acentric >= 0.0 AND power_acentric <= 0.0 ) ,
-	power_centric DECIMAL CHECK ( power_centric >= 0.0 AND power_centric <= 0.0 ) ,
-	reflns_acentric INTEGER CHECK ( reflns_acentric >= 0 AND reflns_acentric <= 0 ) ,
-	reflns_anomalous INTEGER CHECK ( reflns_anomalous >= 0 AND reflns_anomalous <= 0 ) ,
-	reflns_centric INTEGER CHECK ( reflns_centric >= 0 AND reflns_centric <= 0 ) ,
+	power_acentric DECIMAL CHECK ( power_acentric >= 0 ) ,
+	power_centric DECIMAL CHECK ( power_centric >= 0 ) ,
+	reflns_acentric INTEGER CHECK ( reflns_acentric >= 0 ) ,
+	reflns_anomalous INTEGER CHECK ( reflns_anomalous >= 0 ) ,
+	reflns_centric INTEGER CHECK ( reflns_centric >= 0 ) ,
 	reflns_criteria TEXT ,
 -- ATTRIBUTE
 	id TEXT NOT NULL 
@@ -853,7 +859,7 @@ CREATE TABLE struct_biol (
 	details TEXT ,
 	pdbx_aggregation_state ENUM_struct_biol_pdbx_aggregation_state ,
 	pdbx_assembly_method TEXT ,
-	pdbx_formula_weight DECIMAL CHECK ( pdbx_formula_weight >= 1.0 AND pdbx_formula_weight <= 1.0 ) ,
+	pdbx_formula_weight DECIMAL CHECK ( pdbx_formula_weight >= 1 ) ,
 	pdbx_formula_weight_method TEXT ,
 	pdbx_parent_biol_id TEXT ,
 -- ATTRIBUTE
@@ -1049,7 +1055,7 @@ CREATE TABLE diffrn_attenuator (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
 	material TEXT ,
-	scale DECIMAL CHECK ( scale >= 1.0 AND scale <= 1.0 ) ,
+	scale DECIMAL CHECK ( scale >= 1 ) ,
 -- ATTRIBUTE
 	code TEXT NOT NULL 
 );
@@ -1064,10 +1070,10 @@ CREATE TABLE diffrn_attenuator (
 CREATE TABLE diffrn_detector (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
-	area_resol_mean DECIMAL CHECK ( area_resol_mean > 0.0 ) ,
+	area_resol_mean DECIMAL CHECK ( area_resol_mean >= 0 ) ,
 	details TEXT ,
 	detector TEXT ,
-	dtime DECIMAL CHECK ( dtime > 0.0 ) ,
+	dtime DECIMAL CHECK ( dtime >= 0 ) ,
 	pdbx_collection_date TEXT ,
 	pdbx_collection_time_total DECIMAL ,
 	pdbx_frames_total INTEGER ,
@@ -1165,8 +1171,8 @@ CREATE TABLE diffrn_radiation (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
 	collimation TEXT ,
-	filter_edge DECIMAL CHECK ( filter_edge >= 0.0 AND filter_edge <= 0.0 ) ,
-	inhomogeneity DECIMAL CHECK ( inhomogeneity >= 0.0 AND inhomogeneity <= 0.0 ) ,
+	filter_edge DECIMAL CHECK ( filter_edge >= 0 ) ,
+	inhomogeneity DECIMAL CHECK ( inhomogeneity >= 0 ) ,
 	monochromator TEXT ,
 	pdbx_analyzer TEXT ,
 	pdbx_diffrn_protocol TEXT ,
@@ -1174,8 +1180,8 @@ CREATE TABLE diffrn_radiation (
 	pdbx_scattering_type ENUM_diffrn_radiation_pdbx_scattering_type ,
 	pdbx_wavelength TEXT ,
 	pdbx_wavelength_list TEXT ,
-	polarisn_norm DECIMAL CHECK ( polarisn_norm >= 0.0 AND polarisn_norm <= 0.0 ) ,
-	polarisn_ratio DECIMAL CHECK ( polarisn_ratio >= 0.0 AND polarisn_ratio <= 0.0 ) ,
+	polarisn_norm DECIMAL CHECK ( polarisn_norm >= 0 ) ,
+	polarisn_ratio DECIMAL CHECK ( polarisn_ratio >= 0 ) ,
 	probe ENUM_diffrn_radiation_probe ,
 	type TEXT ,
 	wavelength_id TEXT ,
@@ -1194,8 +1200,8 @@ CREATE TABLE diffrn_radiation (
 CREATE TABLE diffrn_radiation_wavelength (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
-	wavelength DECIMAL CHECK ( wavelength >= 0.0 AND wavelength <= 0.0 ) ,
-	wt DECIMAL CHECK ( wt >= 0.0 AND wt <= 0.0 ) ,
+	wavelength DECIMAL CHECK ( wavelength >= 0 ) ,
+	wt DECIMAL CHECK ( wt >= 0 AND wt <= 1 ) ,
 -- ATTRIBUTE
 	id TEXT NOT NULL 
 );
@@ -1222,29 +1228,29 @@ CREATE TABLE diffrn_refln (
 	angle_theta DECIMAL ,
 	attenuator_code TEXT ,
 	class_code TEXT ,
-	counts_bg_1 INTEGER CHECK ( counts_bg_1 >= 0 AND counts_bg_1 <= 0 ) ,
-	counts_bg_2 INTEGER CHECK ( counts_bg_2 >= 0 AND counts_bg_2 <= 0 ) ,
-	counts_net INTEGER CHECK ( counts_net >= 0 AND counts_net <= 0 ) ,
-	counts_peak INTEGER CHECK ( counts_peak >= 0 AND counts_peak <= 0 ) ,
-	counts_total INTEGER CHECK ( counts_total >= 0 AND counts_total <= 0 ) ,
-	detect_slit_horiz DECIMAL CHECK ( detect_slit_horiz >= 0.0 AND detect_slit_horiz <= 0.0 ) ,
-	detect_slit_vert DECIMAL CHECK ( detect_slit_vert >= 0.0 AND detect_slit_vert <= 0.0 ) ,
-	elapsed_time DECIMAL CHECK ( elapsed_time >= 0.0 AND elapsed_time <= 0.0 ) ,
+	counts_bg_1 INTEGER CHECK ( counts_bg_1 >= 0 ) ,
+	counts_bg_2 INTEGER CHECK ( counts_bg_2 >= 0 ) ,
+	counts_net INTEGER CHECK ( counts_net >= 0 ) ,
+	counts_peak INTEGER CHECK ( counts_peak >= 0 ) ,
+	counts_total INTEGER CHECK ( counts_total >= 0 ) ,
+	detect_slit_horiz DECIMAL CHECK ( detect_slit_horiz >= 0 AND detect_slit_horiz <= 90 ) ,
+	detect_slit_vert DECIMAL CHECK ( detect_slit_vert >= 0 AND detect_slit_vert <= 90 ) ,
+	elapsed_time DECIMAL CHECK ( elapsed_time >= 0 ) ,
 	index_h INTEGER ,
 	index_k INTEGER ,
 	index_l INTEGER ,
-	intensity_net DECIMAL CHECK ( intensity_net >= 0 AND intensity_net <= 0 ) ,
-	intensity_sigma DECIMAL CHECK ( intensity_sigma >= 0 AND intensity_sigma <= 0 ) ,
-	intensity_u DECIMAL CHECK ( intensity_u > 0.0 ) ,
+	intensity_net DECIMAL CHECK ( intensity_net >= 0 ) ,
+	intensity_sigma DECIMAL CHECK ( intensity_sigma >= 0 ) ,
+	intensity_u DECIMAL CHECK ( intensity_u >= 0 ) ,
 	scale_group_code TEXT ,
 	scan_mode ENUM_diffrn_refln_scan_mode ,
 	scan_mode_backgd ENUM_diffrn_refln_scan_mode_backgd ,
 	scan_rate DECIMAL ,
 	scan_time_backgd DECIMAL ,
-	scan_width DECIMAL CHECK ( scan_width >= 0.0 AND scan_width <= 0.0 ) ,
-	sint_over_lambda DECIMAL CHECK ( sint_over_lambda >= 0.0 AND sint_over_lambda <= 0.0 ) ,
+	scan_width DECIMAL CHECK ( scan_width >= 0 AND scan_width <= 90 ) ,
+	sint_over_lambda DECIMAL CHECK ( sint_over_lambda >= 0 ) ,
 	standard_code TEXT ,
-	wavelength DECIMAL CHECK ( wavelength >= 0.0 AND wavelength <= 0.0 ) ,
+	wavelength DECIMAL CHECK ( wavelength >= 0 ) ,
 	wavelength_id TEXT ,
 -- ATTRIBUTE
 	diffrn_id TEXT NOT NULL ,
@@ -1262,16 +1268,16 @@ CREATE TABLE diffrn_refln (
 CREATE TABLE diffrn_reflns (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
-	"av_R_equivalents" DECIMAL CHECK ( "av_R_equivalents" >= 0.0 AND "av_R_equivalents" <= 0.0 ) ,
-	"av_sigmaI_over_netI" DECIMAL CHECK ( "av_sigmaI_over_netI" >= 0.0 AND "av_sigmaI_over_netI" <= 0.0 ) ,
-	"av_unetI_over_netI" DECIMAL CHECK ( "av_unetI_over_netI" > 0.0 ) ,
+	"av_R_equivalents" DECIMAL CHECK ( "av_R_equivalents" >= 0 ) ,
+	"av_sigmaI_over_netI" DECIMAL CHECK ( "av_sigmaI_over_netI" >= 0 ) ,
+	"av_unetI_over_netI" DECIMAL CHECK ( "av_unetI_over_netI" >= 0 ) ,
 	limit_h_max INTEGER ,
 	limit_h_min INTEGER ,
 	limit_k_max INTEGER ,
 	limit_k_min INTEGER ,
 	limit_l_max INTEGER ,
 	limit_l_min INTEGER ,
-	number INTEGER CHECK ( number >= 0 AND number <= 0 ) ,
+	number INTEGER CHECK ( number >= 0 ) ,
 	"pdbx_Rmerge_I_obs" DECIMAL ,
 	"pdbx_Rsym_value" DECIMAL ,
 	pdbx_chi_squared DECIMAL ,
@@ -1283,8 +1289,8 @@ CREATE TABLE diffrn_reflns (
 	pdbx_redundancy DECIMAL ,
 	pdbx_rejects INTEGER ,
 	reduction_process TEXT ,
-	theta_max DECIMAL CHECK ( theta_max >= 0.0 AND theta_max <= 0.0 ) ,
-	theta_min DECIMAL CHECK ( theta_min >= 0.0 AND theta_min <= 0.0 ) ,
+	theta_max DECIMAL CHECK ( theta_max >= 0 AND theta_max <= 90 ) ,
+	theta_min DECIMAL CHECK ( theta_min >= 0 AND theta_min <= 90 ) ,
 	transf_matrix11 DECIMAL ,
 	transf_matrix12 DECIMAL ,
 	transf_matrix13 DECIMAL ,
@@ -1308,13 +1314,13 @@ CREATE TABLE diffrn_reflns (
 CREATE TABLE diffrn_reflns_class (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
-	"av_R_eq" DECIMAL CHECK ( "av_R_eq" > 0.0 ) ,
-	"av_sgI_over_I" DECIMAL CHECK ( "av_sgI_over_I" > 0.0 ) ,
-	"av_uI_over_I" DECIMAL CHECK ( "av_uI_over_I" > 0.0 ) ,
-	d_res_high DECIMAL CHECK ( d_res_high > 0.0 ) ,
-	d_res_low DECIMAL CHECK ( d_res_low > 0.0 ) ,
+	"av_R_eq" DECIMAL CHECK ( "av_R_eq" >= 0 ) ,
+	"av_sgI_over_I" DECIMAL CHECK ( "av_sgI_over_I" >= 0 ) ,
+	"av_uI_over_I" DECIMAL CHECK ( "av_uI_over_I" >= 0 ) ,
+	d_res_high DECIMAL CHECK ( d_res_high >= 0 ) ,
+	d_res_low DECIMAL CHECK ( d_res_low >= 0 ) ,
 	description TEXT ,
-	number INTEGER CHECK ( number > 0 ) ,
+	number INTEGER CHECK ( number >= 0 ) ,
 -- ATTRIBUTE
 	code TEXT NOT NULL 
 );
@@ -1340,7 +1346,7 @@ CREATE TABLE diffrn_source (
 	power DECIMAL ,
 	size TEXT ,
 	source TEXT ,
-	"take-off_angle" DECIMAL CHECK ( "take-off_angle" >= 90.0 AND "take-off_angle" <= 90.0 ) ,
+	"take-off_angle" DECIMAL CHECK ( "take-off_angle" >= 0 AND "take-off_angle" <= 90 ) ,
 	target ENUM_diffrn_source_target ,
 	type TEXT ,
 	voltage DECIMAL ,
@@ -1377,11 +1383,11 @@ CREATE TABLE diffrn_standard_refln (
 CREATE TABLE diffrn_standards (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
-	decay_ DECIMAL CHECK ( decay_ < 100.0 ) ,
-	interval_count INTEGER CHECK ( interval_count >= 0 AND interval_count <= 0 ) ,
-	interval_time DECIMAL CHECK ( interval_time >= 0 AND interval_time <= 0 ) ,
-	number INTEGER CHECK ( number >= 0 AND number <= 0 ) ,
-	scale_sigma DECIMAL CHECK ( scale_sigma >= 0.0 AND scale_sigma <= 0.0 ) ,
+	decay_ DECIMAL CHECK ( decay_ <= 100 ) ,
+	interval_count INTEGER CHECK ( interval_count >= 0 ) ,
+	interval_time DECIMAL CHECK ( interval_time >= 0 ) ,
+	number INTEGER CHECK ( number >= 0 ) ,
+	scale_sigma DECIMAL CHECK ( scale_sigma >= 0 ) ,
 -- ATTRIBUTE
 	diffrn_id TEXT NOT NULL 
 );
@@ -1427,7 +1433,7 @@ CREATE TABLE em_3d_crystal_entity (
 	length_b DECIMAL CHECK ( length_b > 0.0 ) ,
 	length_c DECIMAL CHECK ( length_c > 0.0 ) ,
 	space_group_name TEXT ,
-	space_group_num INTEGER CHECK ( space_group_num >= 1 AND space_group_num <= 1 ) ,
+	space_group_num INTEGER CHECK ( space_group_num >= 1 AND space_group_num <= 230 ) ,
 -- ATTRIBUTE
 	id TEXT NOT NULL ,
 -- ATTRIBUTE
@@ -1624,7 +1630,7 @@ CREATE TABLE em_diffraction_shell (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
 	em_diffraction_stats_id TEXT ,
-	fourier_space_coverage DECIMAL CHECK ( fourier_space_coverage >= 100.0 AND fourier_space_coverage <= 100.0 ) ,
+	fourier_space_coverage DECIMAL CHECK ( fourier_space_coverage > 0 AND fourier_space_coverage <= 100 ) ,
 	high_resolution DECIMAL CHECK ( high_resolution > 0.0 ) ,
 	low_resolution DECIMAL CHECK ( low_resolution > 0.0 ) ,
 	multiplicity DECIMAL CHECK ( multiplicity > 0.0 ) ,
@@ -1645,16 +1651,16 @@ CREATE TABLE em_diffraction_stats (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
 	details TEXT ,
-	fourier_space_coverage DECIMAL CHECK ( fourier_space_coverage >= 100.0 AND fourier_space_coverage <= 100.0 ) ,
+	fourier_space_coverage DECIMAL CHECK ( fourier_space_coverage > 0 AND fourier_space_coverage <= 100 ) ,
 	high_resolution DECIMAL CHECK ( high_resolution > 0.0 ) ,
 	image_processing_id TEXT ,
 	num_intensities_measured TEXT ,
 	num_structure_factors TEXT ,
-	overall_phase_error DECIMAL CHECK ( overall_phase_error > 0.0 AND overall_phase_error < 180.0 ) ,
+	overall_phase_error DECIMAL CHECK ( overall_phase_error >= 0 AND overall_phase_error < 180 ) ,
 	overall_phase_residual DECIMAL CHECK ( overall_phase_residual > 0.0 AND overall_phase_residual < 180.0 ) ,
 	phase_error_rejection_criteria TEXT ,
-	r_merge DECIMAL CHECK ( r_merge >= 100.0 AND r_merge <= 100.0 ) ,
-	r_sym DECIMAL CHECK ( r_sym >= 100.0 AND r_sym <= 100.0 ) ,
+	r_merge DECIMAL CHECK ( r_merge > 0 AND r_merge <= 100 ) ,
+	r_sym DECIMAL CHECK ( r_sym > 0 AND r_sym <= 100 ) ,
 -- ATTRIBUTE
 	id TEXT NOT NULL 
 );
@@ -1776,7 +1782,7 @@ CREATE TABLE em_experiment (
 CREATE TABLE em_helical_entity (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
-	angular_rotation_per_subunit DECIMAL CHECK ( angular_rotation_per_subunit >= 180.0 AND angular_rotation_per_subunit <= 180.0 ) ,
+	angular_rotation_per_subunit DECIMAL CHECK ( angular_rotation_per_subunit > -180 AND angular_rotation_per_subunit <= 180 ) ,
 	axial_rise_per_subunit DECIMAL CHECK ( axial_rise_per_subunit > 0.0 ) ,
 	axial_symmetry TEXT ,
 	details TEXT ,
@@ -1884,7 +1890,7 @@ CREATE TABLE em_imaging (
 	accelerating_voltage INTEGER CHECK ( accelerating_voltage > 0 ) ,
 	alignment_procedure ENUM_em_imaging_alignment_procedure ,
 	astigmatism TEXT ,
-	c2_aperture_diameter DECIMAL CHECK ( c2_aperture_diameter >= 150 AND c2_aperture_diameter <= 150 ) ,
+	c2_aperture_diameter DECIMAL CHECK ( c2_aperture_diameter >= 10 AND c2_aperture_diameter <= 150 ) ,
 	calibrated_defocus_max DECIMAL CHECK ( calibrated_defocus_max > -20000 AND calibrated_defocus_max < 20000 ) ,
 	calibrated_defocus_min DECIMAL ,
 	calibrated_magnification INTEGER CHECK ( calibrated_magnification > 1 ) ,
@@ -1898,7 +1904,7 @@ CREATE TABLE em_imaging (
 	illumination_mode ENUM_em_imaging_illumination_mode ,
 	microscope_model ENUM_em_imaging_microscope_model ,
 	mode ENUM_em_imaging_mode ,
-	nominal_cs DECIMAL CHECK ( nominal_cs >= 10 AND nominal_cs <= 10 ) ,
+	nominal_cs DECIMAL CHECK ( nominal_cs >= 0 AND nominal_cs <= 10 ) ,
 	nominal_defocus_max DECIMAL ,
 	nominal_defocus_min DECIMAL ,
 	nominal_magnification INTEGER CHECK ( nominal_magnification > 1000 AND nominal_magnification < 500000 ) ,
@@ -1930,7 +1936,7 @@ CREATE TABLE em_imaging_optics (
 	chr_aberration_corrector TEXT ,
 	energyfilter_lower TEXT ,
 	energyfilter_name TEXT ,
-	energyfilter_slit_width DECIMAL CHECK ( energyfilter_slit_width >= 1000.0 AND energyfilter_slit_width <= 1000.0 ) ,
+	energyfilter_slit_width DECIMAL CHECK ( energyfilter_slit_width >= 0 AND energyfilter_slit_width <= 1000 ) ,
 	energyfilter_upper TEXT ,
 	phase_plate TEXT ,
 	sph_aberration_corrector TEXT ,
@@ -2138,7 +2144,7 @@ CREATE TABLE em_vitrification (
 	cryogen_name ENUM_em_vitrification_cryogen_name ,
 	details TEXT ,
 	entry_id TEXT ,
-	humidity DECIMAL CHECK ( humidity >= 100.0 AND humidity <= 100.0 ) ,
+	humidity DECIMAL CHECK ( humidity >= 0 AND humidity <= 100 ) ,
 	instrument ENUM_em_vitrification_instrument ,
 	method TEXT ,
 	temp DECIMAL ,
@@ -2232,12 +2238,12 @@ CREATE TYPE ENUM_exptl_method AS ENUM ( 'X-RAY DIFFRACTION', 'NEUTRON DIFFRACTIO
 CREATE TABLE exptl (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
-	absorpt_coefficient_mu DECIMAL CHECK ( absorpt_coefficient_mu >= 0.0 AND absorpt_coefficient_mu <= 0.0 ) ,
-	"absorpt_correction_T_max" DECIMAL CHECK ( "absorpt_correction_T_max" >= 0.0 AND "absorpt_correction_T_max" <= 0.0 ) ,
-	"absorpt_correction_T_min" DECIMAL CHECK ( "absorpt_correction_T_min" >= 0.0 AND "absorpt_correction_T_min" <= 0.0 ) ,
+	absorpt_coefficient_mu DECIMAL CHECK ( absorpt_coefficient_mu >= 0 ) ,
+	"absorpt_correction_T_max" DECIMAL CHECK ( "absorpt_correction_T_max" >= 0 AND "absorpt_correction_T_max" <= 1 ) ,
+	"absorpt_correction_T_min" DECIMAL CHECK ( "absorpt_correction_T_min" >= 0 AND "absorpt_correction_T_min" <= 1 ) ,
 	absorpt_correction_type ENUM_exptl_absorpt_correction_type ,
 	absorpt_process_details TEXT ,
-	crystals_number INTEGER CHECK ( crystals_number >= 1 AND crystals_number <= 1 ) ,
+	crystals_number INTEGER CHECK ( crystals_number >= 1 ) ,
 	details TEXT ,
 	method_details TEXT ,
 -- ATTRIBUTE
@@ -2598,8 +2604,8 @@ CREATE TABLE pdbx_dcc_density (
 	"real_space_R_overall" DECIMAL ,
 	reflection_status_archived TEXT ,
 	reflection_status_used TEXT ,
-	reflns_outlier_acentric INTEGER CHECK ( reflns_outlier_acentric >= 0 AND reflns_outlier_acentric <= 0 ) ,
-	reflns_outlier_centric INTEGER CHECK ( reflns_outlier_centric >= 0 AND reflns_outlier_centric <= 0 ) ,
+	reflns_outlier_acentric INTEGER CHECK ( reflns_outlier_acentric >= 0 ) ,
+	reflns_outlier_centric INTEGER CHECK ( reflns_outlier_centric >= 0 ) ,
 	reflns_twin TEXT ,
 	solvent_content DECIMAL ,
 	"space_group_name_H-M" TEXT ,
@@ -3088,10 +3094,10 @@ CREATE TYPE ENUM_pdbx_helical_symmetry_dyad_axis AS ENUM ( 'no', 'yes' );
 CREATE TABLE pdbx_helical_symmetry (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
-	circular_symmetry INTEGER CHECK ( circular_symmetry >= 1 AND circular_symmetry <= 1 ) ,
+	circular_symmetry INTEGER CHECK ( circular_symmetry >= 1 ) ,
 	dyad_axis ENUM_pdbx_helical_symmetry_dyad_axis ,
-	n_subunits_divisor INTEGER CHECK ( n_subunits_divisor >= 1 AND n_subunits_divisor <= 1 ) ,
-	number_of_operations INTEGER CHECK ( number_of_operations >= 1 AND number_of_operations <= 1 ) ,
+	n_subunits_divisor INTEGER CHECK ( n_subunits_divisor >= 1 ) ,
+	number_of_operations INTEGER CHECK ( number_of_operations >= 1 ) ,
 	rise_per_n_subunits DECIMAL ,
 	rotation_per_n_subunits DECIMAL ,
 -- ATTRIBUTE
@@ -3138,12 +3144,12 @@ CREATE TABLE pdbx_nmr_chem_shift_annotation (
 CREATE TABLE pdbx_nmr_chem_shift_completeness (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
-	number_assigned_chem_shifts INTEGER CHECK ( number_assigned_chem_shifts >= 0 AND number_assigned_chem_shifts <= 0 ) ,
-	number_assigned_chem_shifts_well_formed INTEGER CHECK ( number_assigned_chem_shifts_well_formed >= 0 AND number_assigned_chem_shifts_well_formed <= 0 ) ,
-	number_target_shifts INTEGER CHECK ( number_target_shifts >= 0 AND number_target_shifts <= 0 ) ,
-	number_target_shifts_well_formed INTEGER CHECK ( number_target_shifts_well_formed >= 0 AND number_target_shifts_well_formed <= 0 ) ,
-	number_unassigned_chem_shifts INTEGER CHECK ( number_unassigned_chem_shifts >= 0 AND number_unassigned_chem_shifts <= 0 ) ,
-	number_unassigned_chem_shifts_well_formed INTEGER CHECK ( number_unassigned_chem_shifts_well_formed >= 0 AND number_unassigned_chem_shifts_well_formed <= 0 ) ,
+	number_assigned_chem_shifts INTEGER CHECK ( number_assigned_chem_shifts >= 0 ) ,
+	number_assigned_chem_shifts_well_formed INTEGER CHECK ( number_assigned_chem_shifts_well_formed >= 0 ) ,
+	number_target_shifts INTEGER CHECK ( number_target_shifts >= 0 ) ,
+	number_target_shifts_well_formed INTEGER CHECK ( number_target_shifts_well_formed >= 0 ) ,
+	number_unassigned_chem_shifts INTEGER CHECK ( number_unassigned_chem_shifts >= 0 ) ,
+	number_unassigned_chem_shifts_well_formed INTEGER CHECK ( number_unassigned_chem_shifts_well_formed >= 0 ) ,
 -- ATTRIBUTE
 	atom_group TEXT NOT NULL ,
 -- ATTRIBUTE
@@ -3164,7 +3170,7 @@ CREATE TABLE pdbx_nmr_chem_shift_re_offset (
 	correction_val DECIMAL ,
 	correction_val_err DECIMAL ,
 	correction_val_esd DECIMAL ,
-	number_chem_shifts INTEGER CHECK ( number_chem_shifts >= 0 AND number_chem_shifts <= 0 ) ,
+	number_chem_shifts INTEGER CHECK ( number_chem_shifts >= 0 ) ,
 -- ATTRIBUTE
 	atom_type TEXT NOT NULL ,
 -- ATTRIBUTE
@@ -3588,7 +3594,7 @@ CREATE TABLE pdbx_percentile_entity_view (
 	document_id TEXT ,
 	auth_asym_id TEXT ,
 	entity_id TEXT ,
-	rank DECIMAL CHECK ( rank >= 100.0 AND rank <= 100.0 ) ,
+	rank DECIMAL CHECK ( rank >= 0 AND rank <= 100 ) ,
 -- ATTRIBUTE
 	"PDB_model_num" INTEGER NOT NULL ,
 -- ATTRIBUTE
@@ -3624,7 +3630,7 @@ CREATE TYPE ENUM_pdbx_percentile_view_type AS ENUM ( 'R_value_R_free', 'RNA_suit
 CREATE TABLE pdbx_percentile_view (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
-	rank DECIMAL CHECK ( rank >= 100.0 AND rank <= 100.0 ) ,
+	rank DECIMAL CHECK ( rank >= 0 AND rank <= 100 ) ,
 -- ATTRIBUTE
 	conditions_id INTEGER NOT NULL ,
 -- ATTRIBUTE
@@ -3866,7 +3872,7 @@ CREATE TABLE pdbx_point_symmetry (
 	document_id TEXT ,
 	"H-M_notation" TEXT ,
 	"Schoenflies_symbol" ENUM_pdbx_point_symmetry_Schoenflies_symbol ,
-	circular_symmetry INTEGER CHECK ( circular_symmetry >= 1 AND circular_symmetry <= 1 ) ,
+	circular_symmetry INTEGER CHECK ( circular_symmetry >= 1 ) ,
 -- ATTRIBUTE
 	entry_id TEXT NOT NULL 
 );
@@ -4108,7 +4114,7 @@ CREATE TABLE pdbx_soln_scatter (
 	source_beamline_instrument TEXT ,
 	source_class TEXT ,
 	source_type TEXT ,
-	temperature DECIMAL CHECK ( temperature >= 0.0 AND temperature <= 0.0 ) ,
+	temperature DECIMAL CHECK ( temperature >= 0 ) ,
 	type ENUM_pdbx_soln_scatter_type ,
 -- ATTRIBUTE
 	entry_id TEXT NOT NULL ,
@@ -4427,10 +4433,10 @@ CREATE TABLE pdbx_struct_msym_gen (
 CREATE TABLE pdbx_struct_nmr_ens_clust (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
-	clusters_total_number INTEGER CHECK ( clusters_total_number >= 0 AND clusters_total_number <= 0 ) ,
+	clusters_total_number INTEGER CHECK ( clusters_total_number >= 0 ) ,
 	conformers_total_number INTEGER CHECK ( conformers_total_number > 0 ) ,
 	error TEXT ,
-	outliers_total_number INTEGER CHECK ( outliers_total_number >= 0 AND outliers_total_number <= 0 ) ,
+	outliers_total_number INTEGER CHECK ( outliers_total_number >= 0 ) ,
 -- ATTRIBUTE
 	entry_id TEXT NOT NULL 
 );
@@ -4683,7 +4689,7 @@ CREATE TABLE pdbx_validate_chiral (
 	auth_seq_id TEXT ,
 	details TEXT ,
 	label_alt_id TEXT ,
-	omega DECIMAL CHECK ( omega >= -180.0 AND omega <= -180.0 ) ,
+	omega DECIMAL CHECK ( omega >= -180 AND omega <= 180 ) ,
 -- ATTRIBUTE
 	id INTEGER NOT NULL 
 );
@@ -4784,7 +4790,7 @@ CREATE TABLE pdbx_validate_peptide_omega (
 	auth_seq_id_2 TEXT ,
 	label_alt_id_1 TEXT ,
 	label_alt_id_2 TEXT ,
-	omega DECIMAL CHECK ( omega >= -180.0 AND omega <= -180.0 ) ,
+	omega DECIMAL CHECK ( omega >= -180 AND omega <= 180 ) ,
 -- ATTRIBUTE
 	id INTEGER NOT NULL 
 );
@@ -4854,7 +4860,7 @@ CREATE TABLE pdbx_validate_rmsd_angle (
 	"PDB_ins_code_3" TEXT ,
 	"PDB_model_num" INTEGER ,
 	angle_deviation DECIMAL ,
-	angle_standard_deviation DECIMAL CHECK ( angle_standard_deviation >= 0.0 AND angle_standard_deviation <= 0.0 ) ,
+	angle_standard_deviation DECIMAL CHECK ( angle_standard_deviation >= 0 ) ,
 	angle_target_value DECIMAL ,
 	angle_value DECIMAL ,
 	auth_asym_id_1 TEXT ,
@@ -4899,9 +4905,9 @@ CREATE TABLE pdbx_validate_rmsd_bond (
 	auth_seq_id_1 TEXT ,
 	auth_seq_id_2 TEXT ,
 	bond_deviation DECIMAL ,
-	bond_standard_deviation DECIMAL CHECK ( bond_standard_deviation >= 0.0 AND bond_standard_deviation <= 0.0 ) ,
-	bond_target_value DECIMAL CHECK ( bond_target_value >= 0.0 AND bond_target_value <= 0.0 ) ,
-	bond_value DECIMAL CHECK ( bond_value >= 0.0 AND bond_value <= 0.0 ) ,
+	bond_standard_deviation DECIMAL CHECK ( bond_standard_deviation >= 0 ) ,
+	bond_target_value DECIMAL CHECK ( bond_target_value >= 0 ) ,
+	bond_value DECIMAL CHECK ( bond_value >= 0 ) ,
 	label_alt_id_1 TEXT ,
 	label_alt_id_2 TEXT ,
 	linker_flag TEXT ,
@@ -5000,8 +5006,8 @@ CREATE TABLE pdbx_validate_torsion (
 	auth_comp_id TEXT ,
 	auth_seq_id TEXT ,
 	label_alt_id TEXT ,
-	phi DECIMAL CHECK ( phi >= -180.0 AND phi <= -180.0 ) ,
-	psi DECIMAL CHECK ( psi >= -180.0 AND psi <= -180.0 ) ,
+	phi DECIMAL CHECK ( phi >= -180 AND phi <= 180 ) ,
+	psi DECIMAL CHECK ( psi >= -180 AND psi <= 180 ) ,
 -- ATTRIBUTE
 	id INTEGER NOT NULL 
 );
@@ -5155,17 +5161,17 @@ CREATE TABLE "phasing_MAD_set" (
 CREATE TABLE "phasing_MIR" (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
-	"FOM" DECIMAL CHECK ( "FOM" >= 0.0 AND "FOM" <= 0.0 ) ,
-	"FOM_acentric" DECIMAL CHECK ( "FOM_acentric" >= 0.0 AND "FOM_acentric" <= 0.0 ) ,
-	"FOM_centric" DECIMAL CHECK ( "FOM_centric" >= 0.0 AND "FOM_centric" <= 0.0 ) ,
-	d_res_high DECIMAL CHECK ( d_res_high >= 0.0 AND d_res_high <= 0.0 ) ,
-	d_res_low DECIMAL CHECK ( d_res_low >= 0.0 AND d_res_low <= 0.0 ) ,
+	"FOM" DECIMAL CHECK ( "FOM" >= 0 ) ,
+	"FOM_acentric" DECIMAL CHECK ( "FOM_acentric" >= 0 ) ,
+	"FOM_centric" DECIMAL CHECK ( "FOM_centric" >= 0 ) ,
+	d_res_high DECIMAL CHECK ( d_res_high >= 0 ) ,
+	d_res_low DECIMAL CHECK ( d_res_low >= 0 ) ,
 	details TEXT ,
 	method TEXT ,
 	pdbx_number_derivatives INTEGER ,
-	reflns INTEGER CHECK ( reflns >= 0 AND reflns <= 0 ) ,
-	reflns_acentric INTEGER CHECK ( reflns_acentric >= 0 AND reflns_acentric <= 0 ) ,
-	reflns_centric INTEGER CHECK ( reflns_centric >= 0 AND reflns_centric <= 0 ) ,
+	reflns INTEGER CHECK ( reflns >= 0 ) ,
+	reflns_acentric INTEGER CHECK ( reflns_acentric >= 0 ) ,
+	reflns_centric INTEGER CHECK ( reflns_centric >= 0 ) ,
 	reflns_criterion TEXT ,
 -- ATTRIBUTE
 	entry_id TEXT NOT NULL 
@@ -5214,11 +5220,11 @@ CREATE TABLE "phasing_MIR_der_refln" (
 CREATE TABLE "phasing_MIR_der_shell" (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
-	"R_cullis" DECIMAL CHECK ( "R_cullis" >= 0.0 AND "R_cullis" <= 0.0 ) ,
-	"R_kraut" DECIMAL CHECK ( "R_kraut" >= 0.0 AND "R_kraut" <= 0.0 ) ,
-	fom DECIMAL CHECK ( fom >= 0.0 AND fom <= 0.0 ) ,
-	ha_ampl DECIMAL CHECK ( ha_ampl >= 0.0 AND ha_ampl <= 0.0 ) ,
-	loc DECIMAL CHECK ( loc >= 0.0 AND loc <= 0.0 ) ,
+	"R_cullis" DECIMAL CHECK ( "R_cullis" >= 0 ) ,
+	"R_kraut" DECIMAL CHECK ( "R_kraut" >= 0 ) ,
+	fom DECIMAL CHECK ( fom >= 0 ) ,
+	ha_ampl DECIMAL CHECK ( ha_ampl >= 0 ) ,
+	loc DECIMAL CHECK ( loc >= 0 ) ,
 	"pdbx_R_cullis_acentric" DECIMAL ,
 	"pdbx_R_cullis_centric" DECIMAL ,
 	"pdbx_R_kraut_acentric" DECIMAL ,
@@ -5232,12 +5238,12 @@ CREATE TABLE "phasing_MIR_der_shell" (
 	pdbx_reflns_acentric INTEGER ,
 	pdbx_reflns_centric DECIMAL ,
 	phase DECIMAL ,
-	power DECIMAL CHECK ( power >= 0.0 AND power <= 0.0 ) ,
-	reflns INTEGER CHECK ( reflns >= 0 AND reflns <= 0 ) ,
+	power DECIMAL CHECK ( power >= 0 ) ,
+	reflns INTEGER CHECK ( reflns >= 0 ) ,
 -- ATTRIBUTE
-	d_res_high DECIMAL CHECK ( d_res_high >= 0.0 AND d_res_high <= 0.0 ) NOT NULL ,
+	d_res_high DECIMAL CHECK ( d_res_high >= 0 ) NOT NULL ,
 -- ATTRIBUTE
-	d_res_low DECIMAL CHECK ( d_res_low >= 0.0 AND d_res_low <= 0.0 ) NOT NULL ,
+	d_res_low DECIMAL CHECK ( d_res_low >= 0 ) NOT NULL ,
 -- ATTRIBUTE
 	der_id TEXT NOT NULL 
 );
@@ -5268,7 +5274,7 @@ CREATE TABLE "phasing_MIR_der_site" (
 	fract_y_esd DECIMAL ,
 	fract_z DECIMAL ,
 	fract_z_esd DECIMAL ,
-	occupancy DECIMAL CHECK ( occupancy >= 0.0 AND occupancy <= 0.0 ) ,
+	occupancy DECIMAL CHECK ( occupancy >= 0 ) ,
 	occupancy_anom DECIMAL ,
 	occupancy_anom_su DECIMAL ,
 	occupancy_iso DECIMAL ,
@@ -5289,12 +5295,12 @@ CREATE TABLE "phasing_MIR_der_site" (
 CREATE TABLE "phasing_MIR_shell" (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
-	"FOM" DECIMAL CHECK ( "FOM" >= 0.0 AND "FOM" <= 0.0 ) ,
-	"FOM_acentric" DECIMAL CHECK ( "FOM_acentric" >= 0.0 AND "FOM_acentric" <= 0.0 ) ,
-	"FOM_centric" DECIMAL CHECK ( "FOM_centric" >= 0.0 AND "FOM_centric" <= 0.0 ) ,
-	"R_cullis" DECIMAL CHECK ( "R_cullis" >= 0.0 AND "R_cullis" <= 0.0 ) ,
-	"R_kraut" DECIMAL CHECK ( "R_kraut" >= 0.0 AND "R_kraut" <= 0.0 ) ,
-	loc DECIMAL CHECK ( loc >= 0.0 AND loc <= 0.0 ) ,
+	"FOM" DECIMAL CHECK ( "FOM" >= 0 ) ,
+	"FOM_acentric" DECIMAL CHECK ( "FOM_acentric" >= 0 ) ,
+	"FOM_centric" DECIMAL CHECK ( "FOM_centric" >= 0 ) ,
+	"R_cullis" DECIMAL CHECK ( "R_cullis" >= 0 ) ,
+	"R_kraut" DECIMAL CHECK ( "R_kraut" >= 0 ) ,
+	loc DECIMAL CHECK ( loc >= 0 ) ,
 	mean_phase DECIMAL ,
 	"pdbx_R_cullis_acentric" DECIMAL ,
 	"pdbx_R_cullis_centric" DECIMAL ,
@@ -5304,15 +5310,15 @@ CREATE TABLE "phasing_MIR_shell" (
 	pdbx_loc_centric DECIMAL ,
 	pdbx_power_acentric DECIMAL ,
 	pdbx_power_centric DECIMAL ,
-	power DECIMAL CHECK ( power >= 0.0 AND power <= 0.0 ) ,
-	reflns INTEGER CHECK ( reflns >= 0 AND reflns <= 0 ) ,
-	reflns_acentric INTEGER CHECK ( reflns_acentric >= 0 AND reflns_acentric <= 0 ) ,
-	reflns_anomalous INTEGER CHECK ( reflns_anomalous >= 0 AND reflns_anomalous <= 0 ) ,
-	reflns_centric INTEGER CHECK ( reflns_centric >= 0 AND reflns_centric <= 0 ) ,
+	power DECIMAL CHECK ( power >= 0 ) ,
+	reflns INTEGER CHECK ( reflns >= 0 ) ,
+	reflns_acentric INTEGER CHECK ( reflns_acentric >= 0 ) ,
+	reflns_anomalous INTEGER CHECK ( reflns_anomalous >= 0 ) ,
+	reflns_centric INTEGER CHECK ( reflns_centric >= 0 ) ,
 -- ATTRIBUTE
-	d_res_high DECIMAL CHECK ( d_res_high >= 0.0 AND d_res_high <= 0.0 ) NOT NULL ,
+	d_res_high DECIMAL CHECK ( d_res_high >= 0 ) NOT NULL ,
 -- ATTRIBUTE
-	d_res_low DECIMAL CHECK ( d_res_low >= 0.0 AND d_res_low <= 0.0 ) NOT NULL 
+	d_res_low DECIMAL CHECK ( d_res_low >= 0 ) NOT NULL 
 );
 
 --
@@ -5410,62 +5416,62 @@ CREATE TABLE refine (
 	diff_density_min_esd DECIMAL ,
 	diff_density_rms DECIMAL ,
 	diff_density_rms_esd DECIMAL ,
-	"ls_R_Fsqd_factor_obs" DECIMAL CHECK ( "ls_R_Fsqd_factor_obs" >= 0.0 AND "ls_R_Fsqd_factor_obs" <= 0.0 ) ,
-	"ls_R_I_factor_obs" DECIMAL CHECK ( "ls_R_I_factor_obs" >= 0.0 AND "ls_R_I_factor_obs" <= 0.0 ) ,
-	"ls_R_factor_R_free" DECIMAL CHECK ( "ls_R_factor_R_free" >= 0.0 AND "ls_R_factor_R_free" <= 0.0 ) ,
+	"ls_R_Fsqd_factor_obs" DECIMAL CHECK ( "ls_R_Fsqd_factor_obs" >= 0 ) ,
+	"ls_R_I_factor_obs" DECIMAL CHECK ( "ls_R_I_factor_obs" >= 0 ) ,
+	"ls_R_factor_R_free" DECIMAL CHECK ( "ls_R_factor_R_free" >= 0 ) ,
 	"ls_R_factor_R_free_error" DECIMAL ,
 	"ls_R_factor_R_free_error_details" TEXT ,
-	"ls_R_factor_R_work" DECIMAL CHECK ( "ls_R_factor_R_work" >= 0.0 AND "ls_R_factor_R_work" <= 0.0 ) ,
-	"ls_R_factor_all" DECIMAL CHECK ( "ls_R_factor_all" >= 0.0 AND "ls_R_factor_all" <= 0.0 ) ,
-	"ls_R_factor_gt" DECIMAL CHECK ( "ls_R_factor_gt" > 0.0 ) ,
-	"ls_R_factor_obs" DECIMAL CHECK ( "ls_R_factor_obs" >= 0.0 AND "ls_R_factor_obs" <= 0.0 ) ,
-	"ls_abs_structure_Flack" DECIMAL CHECK ( "ls_abs_structure_Flack" >= 0.0 AND "ls_abs_structure_Flack" <= 0.0 ) ,
+	"ls_R_factor_R_work" DECIMAL CHECK ( "ls_R_factor_R_work" >= 0 ) ,
+	"ls_R_factor_all" DECIMAL CHECK ( "ls_R_factor_all" >= 0 ) ,
+	"ls_R_factor_gt" DECIMAL CHECK ( "ls_R_factor_gt" >= 0 ) ,
+	"ls_R_factor_obs" DECIMAL CHECK ( "ls_R_factor_obs" >= 0 ) ,
+	"ls_abs_structure_Flack" DECIMAL CHECK ( "ls_abs_structure_Flack" >= 0 AND "ls_abs_structure_Flack" <= 1 ) ,
 	"ls_abs_structure_Flack_esd" DECIMAL ,
-	"ls_abs_structure_Rogers" DECIMAL CHECK ( "ls_abs_structure_Rogers" >= -1.0 AND "ls_abs_structure_Rogers" <= -1.0 ) ,
+	"ls_abs_structure_Rogers" DECIMAL CHECK ( "ls_abs_structure_Rogers" >= -1 AND "ls_abs_structure_Rogers" <= 1 ) ,
 	"ls_abs_structure_Rogers_esd" DECIMAL ,
 	ls_abs_structure_details TEXT ,
-	ls_d_res_high DECIMAL CHECK ( ls_d_res_high >= 0.0 AND ls_d_res_high <= 0.0 ) ,
-	ls_d_res_low DECIMAL CHECK ( ls_d_res_low >= 0.0 AND ls_d_res_low <= 0.0 ) ,
+	ls_d_res_high DECIMAL CHECK ( ls_d_res_high >= 0 ) ,
+	ls_d_res_low DECIMAL CHECK ( ls_d_res_low >= 0 ) ,
 	ls_extinction_coef DECIMAL ,
 	ls_extinction_coef_esd DECIMAL ,
 	ls_extinction_expression TEXT ,
 	ls_extinction_method TEXT ,
-	ls_goodness_of_fit_all DECIMAL CHECK ( ls_goodness_of_fit_all >= 0.0 AND ls_goodness_of_fit_all <= 0.0 ) ,
+	ls_goodness_of_fit_all DECIMAL CHECK ( ls_goodness_of_fit_all >= 0 ) ,
 	ls_goodness_of_fit_all_esd DECIMAL ,
-	ls_goodness_of_fit_gt DECIMAL CHECK ( ls_goodness_of_fit_gt > 0.0 ) ,
-	ls_goodness_of_fit_obs DECIMAL CHECK ( ls_goodness_of_fit_obs >= 0.0 AND ls_goodness_of_fit_obs <= 0.0 ) ,
+	ls_goodness_of_fit_gt DECIMAL CHECK ( ls_goodness_of_fit_gt >= 0 ) ,
+	ls_goodness_of_fit_obs DECIMAL CHECK ( ls_goodness_of_fit_obs >= 0 ) ,
 	ls_goodness_of_fit_obs_esd DECIMAL ,
-	ls_goodness_of_fit_ref DECIMAL CHECK ( ls_goodness_of_fit_ref > 0.0 ) ,
+	ls_goodness_of_fit_ref DECIMAL CHECK ( ls_goodness_of_fit_ref >= 0 ) ,
 	ls_hydrogen_treatment ENUM_refine_ls_hydrogen_treatment ,
 	ls_matrix_type ENUM_refine_ls_matrix_type ,
-	ls_number_constraints INTEGER CHECK ( ls_number_constraints >= 0 AND ls_number_constraints <= 0 ) ,
-	ls_number_parameters INTEGER CHECK ( ls_number_parameters >= 0 AND ls_number_parameters <= 0 ) ,
-	"ls_number_reflns_R_free" INTEGER CHECK ( "ls_number_reflns_R_free" >= 0 AND "ls_number_reflns_R_free" <= 0 ) ,
-	"ls_number_reflns_R_work" INTEGER CHECK ( "ls_number_reflns_R_work" >= 0 AND "ls_number_reflns_R_work" <= 0 ) ,
-	ls_number_reflns_all INTEGER CHECK ( ls_number_reflns_all >= 0 AND ls_number_reflns_all <= 0 ) ,
-	ls_number_reflns_obs INTEGER CHECK ( ls_number_reflns_obs >= 0 AND ls_number_reflns_obs <= 0 ) ,
-	ls_number_restraints INTEGER CHECK ( ls_number_restraints >= 0 AND ls_number_restraints <= 0 ) ,
+	ls_number_constraints INTEGER CHECK ( ls_number_constraints >= 0 ) ,
+	ls_number_parameters INTEGER CHECK ( ls_number_parameters >= 0 ) ,
+	"ls_number_reflns_R_free" INTEGER CHECK ( "ls_number_reflns_R_free" >= 0 ) ,
+	"ls_number_reflns_R_work" INTEGER CHECK ( "ls_number_reflns_R_work" >= 0 ) ,
+	ls_number_reflns_all INTEGER CHECK ( ls_number_reflns_all >= 0 ) ,
+	ls_number_reflns_obs INTEGER CHECK ( ls_number_reflns_obs >= 0 ) ,
+	ls_number_restraints INTEGER CHECK ( ls_number_restraints >= 0 ) ,
 	"ls_percent_reflns_R_free" DECIMAL ,
 	ls_percent_reflns_obs DECIMAL ,
 	ls_redundancy_reflns_all DECIMAL ,
 	ls_redundancy_reflns_obs DECIMAL ,
-	"ls_restrained_S_all" DECIMAL CHECK ( "ls_restrained_S_all" >= 0.0 AND "ls_restrained_S_all" <= 0.0 ) ,
-	"ls_restrained_S_obs" DECIMAL CHECK ( "ls_restrained_S_obs" >= 0.0 AND "ls_restrained_S_obs" <= 0.0 ) ,
-	ls_shift_over_esd_max DECIMAL CHECK ( ls_shift_over_esd_max >= 0.0 AND ls_shift_over_esd_max <= 0.0 ) ,
-	ls_shift_over_esd_mean DECIMAL CHECK ( ls_shift_over_esd_mean >= 0.0 AND ls_shift_over_esd_mean <= 0.0 ) ,
-	ls_shift_over_su_max DECIMAL CHECK ( ls_shift_over_su_max > 0.0 ) ,
-	ls_shift_over_su_max_lt DECIMAL CHECK ( ls_shift_over_su_max_lt > 0.0 ) ,
-	ls_shift_over_su_mean DECIMAL CHECK ( ls_shift_over_su_mean > 0.0 ) ,
-	ls_shift_over_su_mean_lt DECIMAL CHECK ( ls_shift_over_su_mean_lt > 0.0 ) ,
+	"ls_restrained_S_all" DECIMAL CHECK ( "ls_restrained_S_all" >= 0 ) ,
+	"ls_restrained_S_obs" DECIMAL CHECK ( "ls_restrained_S_obs" >= 0 ) ,
+	ls_shift_over_esd_max DECIMAL CHECK ( ls_shift_over_esd_max >= 0 ) ,
+	ls_shift_over_esd_mean DECIMAL CHECK ( ls_shift_over_esd_mean >= 0 ) ,
+	ls_shift_over_su_max DECIMAL CHECK ( ls_shift_over_su_max >= 0 ) ,
+	ls_shift_over_su_max_lt DECIMAL CHECK ( ls_shift_over_su_max_lt >= 0 ) ,
+	ls_shift_over_su_mean DECIMAL CHECK ( ls_shift_over_su_mean >= 0 ) ,
+	ls_shift_over_su_mean_lt DECIMAL CHECK ( ls_shift_over_su_mean_lt >= 0 ) ,
 	ls_structure_factor_coef ENUM_refine_ls_structure_factor_coef ,
-	"ls_wR_factor_R_free" DECIMAL CHECK ( "ls_wR_factor_R_free" >= 0.0 AND "ls_wR_factor_R_free" <= 0.0 ) ,
-	"ls_wR_factor_R_work" DECIMAL CHECK ( "ls_wR_factor_R_work" >= 0.0 AND "ls_wR_factor_R_work" <= 0.0 ) ,
-	"ls_wR_factor_all" DECIMAL CHECK ( "ls_wR_factor_all" >= 0.0 AND "ls_wR_factor_all" <= 0.0 ) ,
-	"ls_wR_factor_obs" DECIMAL CHECK ( "ls_wR_factor_obs" >= 0.0 AND "ls_wR_factor_obs" <= 0.0 ) ,
+	"ls_wR_factor_R_free" DECIMAL CHECK ( "ls_wR_factor_R_free" >= 0 ) ,
+	"ls_wR_factor_R_work" DECIMAL CHECK ( "ls_wR_factor_R_work" >= 0 ) ,
+	"ls_wR_factor_all" DECIMAL CHECK ( "ls_wR_factor_all" >= 0 ) ,
+	"ls_wR_factor_obs" DECIMAL CHECK ( "ls_wR_factor_obs" >= 0 ) ,
 	ls_weighting_details TEXT ,
 	ls_weighting_scheme ENUM_refine_ls_weighting_scheme ,
-	occupancy_max DECIMAL CHECK ( occupancy_max >= 0.0 AND occupancy_max <= 0.0 ) ,
-	occupancy_min DECIMAL CHECK ( occupancy_min >= 0.0 AND occupancy_min <= 0.0 ) ,
+	occupancy_max DECIMAL CHECK ( occupancy_max >= 0 ) ,
+	occupancy_min DECIMAL CHECK ( occupancy_min >= 0 ) ,
 	"overall_FOM_free_R_set" DECIMAL ,
 	"overall_FOM_work_R_set" DECIMAL ,
 	"overall_SU_B" DECIMAL ,
@@ -5496,10 +5502,10 @@ CREATE TABLE refine (
 	pdbx_overall_phase_error DECIMAL ,
 	"pdbx_pd_Fsqrd_R_factor" DECIMAL CHECK ( "pdbx_pd_Fsqrd_R_factor" > 0.0 ) ,
 	"pdbx_pd_Marquardt_correlation_coeff" DECIMAL ,
-	pdbx_pd_ls_matrix_band_width INTEGER CHECK ( pdbx_pd_ls_matrix_band_width >= 0 AND pdbx_pd_ls_matrix_band_width <= 0 ) ,
-	pdbx_pd_meas_number_of_points INTEGER CHECK ( pdbx_pd_meas_number_of_points >= 0 AND pdbx_pd_meas_number_of_points <= 0 ) ,
-	pdbx_pd_number_of_points INTEGER CHECK ( pdbx_pd_number_of_points >= 0 AND pdbx_pd_number_of_points <= 0 ) ,
-	pdbx_pd_number_of_powder_patterns INTEGER CHECK ( pdbx_pd_number_of_powder_patterns >= 0 AND pdbx_pd_number_of_powder_patterns <= 0 ) ,
+	pdbx_pd_ls_matrix_band_width INTEGER CHECK ( pdbx_pd_ls_matrix_band_width >= 0 ) ,
+	pdbx_pd_meas_number_of_points INTEGER CHECK ( pdbx_pd_meas_number_of_points >= 0 ) ,
+	pdbx_pd_number_of_points INTEGER CHECK ( pdbx_pd_number_of_points >= 0 ) ,
+	pdbx_pd_number_of_powder_patterns INTEGER CHECK ( pdbx_pd_number_of_powder_patterns >= 0 ) ,
 	"pdbx_pd_proc_ls_prof_R_factor" DECIMAL ,
 	"pdbx_pd_proc_ls_prof_wR_factor" DECIMAL ,
 	"pdbx_real_space_R" DECIMAL ,
@@ -5557,11 +5563,11 @@ CREATE TABLE refine_analyze (
 	"Luzzati_sigma_a_free_details" TEXT ,
 	"Luzzati_sigma_a_obs" DECIMAL ,
 	"Luzzati_sigma_a_obs_details" TEXT ,
-	"RG_d_res_high" DECIMAL CHECK ( "RG_d_res_high" >= 0.0 AND "RG_d_res_high" <= 0.0 ) ,
-	"RG_d_res_low" DECIMAL CHECK ( "RG_d_res_low" >= 0.0 AND "RG_d_res_low" <= 0.0 ) ,
-	"RG_free" DECIMAL CHECK ( "RG_free" >= 0.0 AND "RG_free" <= 0.0 ) ,
-	"RG_free_work_ratio" DECIMAL CHECK ( "RG_free_work_ratio" >= 0.0 AND "RG_free_work_ratio" <= 0.0 ) ,
-	"RG_work" DECIMAL CHECK ( "RG_work" >= 0.0 AND "RG_work" <= 0.0 ) ,
+	"RG_d_res_high" DECIMAL CHECK ( "RG_d_res_high" >= 0 ) ,
+	"RG_d_res_low" DECIMAL CHECK ( "RG_d_res_low" >= 0 ) ,
+	"RG_free" DECIMAL CHECK ( "RG_free" >= 0 ) ,
+	"RG_free_work_ratio" DECIMAL CHECK ( "RG_free_work_ratio" >= 0 ) ,
+	"RG_work" DECIMAL CHECK ( "RG_work" >= 0 ) ,
 	number_disordered_residues DECIMAL ,
 	occupancy_sum_hydrogen DECIMAL ,
 	occupancy_sum_non_hydrogen DECIMAL ,
@@ -5582,8 +5588,8 @@ CREATE TABLE refine_analyze (
 CREATE TABLE refine_funct_minimized (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
-	number_terms INTEGER CHECK ( number_terms >= 0 AND number_terms <= 0 ) ,
-	residual DECIMAL CHECK ( residual >= 0.0 AND residual <= 0.0 ) ,
+	number_terms INTEGER CHECK ( number_terms >= 0 ) ,
+	residual DECIMAL CHECK ( residual >= 0 ) ,
 	weight DECIMAL ,
 -- ATTRIBUTE
 	pdbx_refine_id TEXT NOT NULL ,
@@ -5601,19 +5607,19 @@ CREATE TABLE refine_funct_minimized (
 CREATE TABLE refine_hist (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
-	"R_factor_R_free" DECIMAL CHECK ( "R_factor_R_free" >= 0.0 AND "R_factor_R_free" <= 0.0 ) ,
-	"R_factor_R_work" DECIMAL CHECK ( "R_factor_R_work" >= 0.0 AND "R_factor_R_work" <= 0.0 ) ,
-	"R_factor_all" DECIMAL CHECK ( "R_factor_all" >= 0.0 AND "R_factor_all" <= 0.0 ) ,
-	"R_factor_obs" DECIMAL CHECK ( "R_factor_obs" >= 0.0 AND "R_factor_obs" <= 0.0 ) ,
-	d_res_high DECIMAL CHECK ( d_res_high >= 0.0 AND d_res_high <= 0.0 ) ,
-	d_res_low DECIMAL CHECK ( d_res_low >= 0.0 AND d_res_low <= 0.0 ) ,
+	"R_factor_R_free" DECIMAL CHECK ( "R_factor_R_free" >= 0 ) ,
+	"R_factor_R_work" DECIMAL CHECK ( "R_factor_R_work" >= 0 ) ,
+	"R_factor_all" DECIMAL CHECK ( "R_factor_all" >= 0 ) ,
+	"R_factor_obs" DECIMAL CHECK ( "R_factor_obs" >= 0 ) ,
+	d_res_high DECIMAL CHECK ( d_res_high >= 0 ) ,
+	d_res_low DECIMAL CHECK ( d_res_low >= 0 ) ,
 	details TEXT ,
-	number_atoms_solvent INTEGER CHECK ( number_atoms_solvent >= 0 AND number_atoms_solvent <= 0 ) ,
-	number_atoms_total INTEGER CHECK ( number_atoms_total >= 0 AND number_atoms_total <= 0 ) ,
-	"number_reflns_R_free" INTEGER CHECK ( "number_reflns_R_free" >= 0 AND "number_reflns_R_free" <= 0 ) ,
-	"number_reflns_R_work" INTEGER CHECK ( "number_reflns_R_work" >= 0 AND "number_reflns_R_work" <= 0 ) ,
-	number_reflns_all INTEGER CHECK ( number_reflns_all >= 0 AND number_reflns_all <= 0 ) ,
-	number_reflns_obs INTEGER CHECK ( number_reflns_obs >= 0 AND number_reflns_obs <= 0 ) ,
+	number_atoms_solvent INTEGER CHECK ( number_atoms_solvent >= 0 ) ,
+	number_atoms_total INTEGER CHECK ( number_atoms_total >= 0 ) ,
+	"number_reflns_R_free" INTEGER CHECK ( "number_reflns_R_free" >= 0 ) ,
+	"number_reflns_R_work" INTEGER CHECK ( "number_reflns_R_work" >= 0 ) ,
+	number_reflns_all INTEGER CHECK ( number_reflns_all >= 0 ) ,
+	number_reflns_obs INTEGER CHECK ( number_reflns_obs >= 0 ) ,
 	"pdbx_B_iso_mean_ligand" DECIMAL ,
 	"pdbx_B_iso_mean_solvent" DECIMAL ,
 	pdbx_number_atoms_carb INTEGER ,
@@ -5639,13 +5645,13 @@ CREATE TABLE refine_hist (
 CREATE TABLE refine_ls_class (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
-	"R_Fsqd_factor" DECIMAL CHECK ( "R_Fsqd_factor" > 0.0 ) ,
-	"R_I_factor" DECIMAL CHECK ( "R_I_factor" > 0.0 ) ,
-	"R_factor_all" DECIMAL CHECK ( "R_factor_all" > 0.0 ) ,
-	"R_factor_gt" DECIMAL CHECK ( "R_factor_gt" > 0.0 ) ,
-	d_res_high DECIMAL CHECK ( d_res_high > 0.0 ) ,
-	d_res_low DECIMAL CHECK ( d_res_low > 0.0 ) ,
-	"wR_factor_all" DECIMAL CHECK ( "wR_factor_all" > 0.0 ) ,
+	"R_Fsqd_factor" DECIMAL CHECK ( "R_Fsqd_factor" >= 0 ) ,
+	"R_I_factor" DECIMAL CHECK ( "R_I_factor" >= 0 ) ,
+	"R_factor_all" DECIMAL CHECK ( "R_factor_all" >= 0 ) ,
+	"R_factor_gt" DECIMAL CHECK ( "R_factor_gt" >= 0 ) ,
+	d_res_high DECIMAL CHECK ( d_res_high >= 0 ) ,
+	d_res_low DECIMAL CHECK ( d_res_low >= 0 ) ,
+	"wR_factor_all" DECIMAL CHECK ( "wR_factor_all" >= 0 ) ,
 -- ATTRIBUTE
 	code TEXT NOT NULL 
 );
@@ -5661,11 +5667,11 @@ CREATE TABLE refine_ls_restr (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
 	criterion TEXT ,
-	dev_ideal DECIMAL CHECK ( dev_ideal >= 0.0 AND dev_ideal <= 0.0 ) ,
-	dev_ideal_target DECIMAL CHECK ( dev_ideal_target >= 0.0 AND dev_ideal_target <= 0.0 ) ,
-	number INTEGER CHECK ( number >= 0 AND number <= 0 ) ,
+	dev_ideal DECIMAL CHECK ( dev_ideal >= 0 ) ,
+	dev_ideal_target DECIMAL CHECK ( dev_ideal_target >= 0 ) ,
+	number INTEGER CHECK ( number >= 0 ) ,
 	pdbx_restraint_function TEXT ,
-	rejects INTEGER CHECK ( rejects >= 0 AND rejects <= 0 ) ,
+	rejects INTEGER CHECK ( rejects >= 0 ) ,
 	weight DECIMAL ,
 -- ATTRIBUTE
 	pdbx_refine_id TEXT NOT NULL ,
@@ -5693,8 +5699,8 @@ CREATE TABLE refine_ls_restr_ncs (
 	pdbx_rms DECIMAL ,
 	pdbx_type TEXT ,
 	pdbx_weight DECIMAL ,
-	"rms_dev_B_iso" DECIMAL CHECK ( "rms_dev_B_iso" >= 0.0 AND "rms_dev_B_iso" <= 0.0 ) ,
-	rms_dev_position DECIMAL CHECK ( rms_dev_position >= 0.0 AND rms_dev_position <= 0.0 ) ,
+	"rms_dev_B_iso" DECIMAL CHECK ( "rms_dev_B_iso" >= 0 ) ,
+	rms_dev_position DECIMAL CHECK ( rms_dev_position >= 0 ) ,
 	"weight_B_iso" DECIMAL ,
 	weight_position DECIMAL ,
 -- ATTRIBUTE
@@ -5711,8 +5717,8 @@ CREATE TABLE refine_ls_restr_ncs (
 CREATE TABLE refine_ls_restr_type (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
-	distance_cutoff_high DECIMAL CHECK ( distance_cutoff_high >= 0.0 AND distance_cutoff_high <= 0.0 ) ,
-	distance_cutoff_low DECIMAL CHECK ( distance_cutoff_low >= 0.0 AND distance_cutoff_low <= 0.0 ) ,
+	distance_cutoff_high DECIMAL CHECK ( distance_cutoff_high >= 0 ) ,
+	distance_cutoff_low DECIMAL CHECK ( distance_cutoff_low >= 0 ) ,
 -- ATTRIBUTE
 	type TEXT NOT NULL 
 );
@@ -5727,16 +5733,16 @@ CREATE TABLE refine_ls_restr_type (
 CREATE TABLE refine_ls_shell (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
-	"R_factor_R_free" DECIMAL CHECK ( "R_factor_R_free" >= 0.0 AND "R_factor_R_free" <= 0.0 ) ,
+	"R_factor_R_free" DECIMAL CHECK ( "R_factor_R_free" >= 0 ) ,
 	"R_factor_R_free_error" DECIMAL ,
-	"R_factor_R_work" DECIMAL CHECK ( "R_factor_R_work" >= 0.0 AND "R_factor_R_work" <= 0.0 ) ,
-	"R_factor_all" DECIMAL CHECK ( "R_factor_all" >= 0.0 AND "R_factor_all" <= 0.0 ) ,
-	"R_factor_obs" DECIMAL CHECK ( "R_factor_obs" >= 0.0 AND "R_factor_obs" <= 0.0 ) ,
-	d_res_low DECIMAL CHECK ( d_res_low >= 0.0 AND d_res_low <= 0.0 ) ,
-	"number_reflns_R_free" INTEGER CHECK ( "number_reflns_R_free" >= 0 AND "number_reflns_R_free" <= 0 ) ,
-	"number_reflns_R_work" INTEGER CHECK ( "number_reflns_R_work" >= 0 AND "number_reflns_R_work" <= 0 ) ,
-	number_reflns_all INTEGER CHECK ( number_reflns_all >= 0 AND number_reflns_all <= 0 ) ,
-	number_reflns_obs INTEGER CHECK ( number_reflns_obs >= 0 AND number_reflns_obs <= 0 ) ,
+	"R_factor_R_work" DECIMAL CHECK ( "R_factor_R_work" >= 0 ) ,
+	"R_factor_all" DECIMAL CHECK ( "R_factor_all" >= 0 ) ,
+	"R_factor_obs" DECIMAL CHECK ( "R_factor_obs" >= 0 ) ,
+	d_res_low DECIMAL CHECK ( d_res_low >= 0 ) ,
+	"number_reflns_R_free" INTEGER CHECK ( "number_reflns_R_free" >= 0 ) ,
+	"number_reflns_R_work" INTEGER CHECK ( "number_reflns_R_work" >= 0 ) ,
+	number_reflns_all INTEGER CHECK ( number_reflns_all >= 0 ) ,
+	number_reflns_obs INTEGER CHECK ( number_reflns_obs >= 0 ) ,
 	pdbx_fsc_free DECIMAL ,
 	pdbx_fsc_work DECIMAL ,
 	pdbx_phase_error DECIMAL ,
@@ -5745,12 +5751,12 @@ CREATE TABLE refine_ls_shell (
 	percent_reflns_obs DECIMAL ,
 	redundancy_reflns_all DECIMAL ,
 	redundancy_reflns_obs DECIMAL ,
-	"wR_factor_R_free" DECIMAL CHECK ( "wR_factor_R_free" >= 0.0 AND "wR_factor_R_free" <= 0.0 ) ,
-	"wR_factor_R_work" DECIMAL CHECK ( "wR_factor_R_work" >= 0.0 AND "wR_factor_R_work" <= 0.0 ) ,
-	"wR_factor_all" DECIMAL CHECK ( "wR_factor_all" >= 0.0 AND "wR_factor_all" <= 0.0 ) ,
-	"wR_factor_obs" DECIMAL CHECK ( "wR_factor_obs" >= 0.0 AND "wR_factor_obs" <= 0.0 ) ,
+	"wR_factor_R_free" DECIMAL CHECK ( "wR_factor_R_free" >= 0 ) ,
+	"wR_factor_R_work" DECIMAL CHECK ( "wR_factor_R_work" >= 0 ) ,
+	"wR_factor_all" DECIMAL CHECK ( "wR_factor_all" >= 0 ) ,
+	"wR_factor_obs" DECIMAL CHECK ( "wR_factor_obs" >= 0 ) ,
 -- ATTRIBUTE
-	d_res_high DECIMAL CHECK ( d_res_high >= 0.0 AND d_res_high <= 0.0 ) NOT NULL ,
+	d_res_high DECIMAL CHECK ( d_res_high >= 0 ) NOT NULL ,
 -- ATTRIBUTE
 	pdbx_refine_id TEXT NOT NULL 
 );
@@ -5769,7 +5775,7 @@ CREATE TABLE refine_occupancy (
 	document_id TEXT ,
 	details TEXT ,
 	treatment ENUM_refine_occupancy_treatment ,
-	value DECIMAL CHECK ( value >= 0.0 AND value <= 0.0 ) ,
+	value DECIMAL CHECK ( value >= 0 AND value <= 1 ) ,
 -- ATTRIBUTE
 	class TEXT NOT NULL ,
 -- ATTRIBUTE
@@ -5811,13 +5817,13 @@ CREATE TABLE refln (
 	"F_squared_sigma" DECIMAL ,
 	class_code TEXT ,
 	crystal_id TEXT ,
-	d_spacing DECIMAL CHECK ( d_spacing > 0.0 ) ,
-	fom DECIMAL CHECK ( fom >= 0.0 AND fom <= 0.0 ) ,
+	d_spacing DECIMAL CHECK ( d_spacing >= 0 ) ,
+	fom DECIMAL CHECK ( fom >= 0 ) ,
 	include_status ENUM_refln_include_status ,
 	intensity_calc DECIMAL ,
 	intensity_meas DECIMAL ,
 	intensity_sigma DECIMAL ,
-	mean_path_length_tbar DECIMAL CHECK ( mean_path_length_tbar > 0.0 ) ,
+	mean_path_length_tbar DECIMAL CHECK ( mean_path_length_tbar >= 0 ) ,
 	"pdbx_DELFWT" DECIMAL ,
 	"pdbx_DELPHWT" DECIMAL ,
 	"pdbx_FWT" DECIMAL ,
@@ -5849,11 +5855,11 @@ CREATE TABLE refln (
 	phase_meas DECIMAL ,
 	refinement_status ENUM_refln_refinement_status ,
 	scale_group_code TEXT ,
-	sint_over_lambda DECIMAL CHECK ( sint_over_lambda >= 0.0 AND sint_over_lambda <= 0.0 ) ,
+	sint_over_lambda DECIMAL CHECK ( sint_over_lambda >= 0 ) ,
 	status ENUM_refln_status ,
-	symmetry_epsilon INTEGER CHECK ( symmetry_epsilon >= 1 AND symmetry_epsilon <= 1 ) ,
-	symmetry_multiplicity INTEGER CHECK ( symmetry_multiplicity >= 1 AND symmetry_multiplicity <= 1 ) ,
-	wavelength DECIMAL CHECK ( wavelength >= 0.0 AND wavelength <= 0.0 ) ,
+	symmetry_epsilon INTEGER CHECK ( symmetry_epsilon >= 1 AND symmetry_epsilon <= 48 ) ,
+	symmetry_multiplicity INTEGER CHECK ( symmetry_multiplicity >= 1 AND symmetry_multiplicity <= 48 ) ,
+	wavelength DECIMAL CHECK ( wavelength >= 0 ) ,
 	wavelength_id TEXT ,
 -- ATTRIBUTE
 	index_h INTEGER NOT NULL ,
@@ -5895,12 +5901,12 @@ CREATE TABLE reflns (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
 	"B_iso_Wilson_estimate" DECIMAL ,
-	"Friedel_coverage" DECIMAL CHECK ( "Friedel_coverage" >= 1.0 AND "Friedel_coverage" <= 1.0 ) ,
+	"Friedel_coverage" DECIMAL CHECK ( "Friedel_coverage" >= 0 AND "Friedel_coverage" <= 1 ) ,
 	"R_free_details" TEXT ,
-	"Rmerge_F_all" DECIMAL CHECK ( "Rmerge_F_all" >= 0.0 AND "Rmerge_F_all" <= 0.0 ) ,
-	"Rmerge_F_obs" DECIMAL CHECK ( "Rmerge_F_obs" >= 0.0 AND "Rmerge_F_obs" <= 0.0 ) ,
-	d_resolution_high DECIMAL CHECK ( d_resolution_high >= 0.0 AND d_resolution_high <= 0.0 ) ,
-	d_resolution_low DECIMAL CHECK ( d_resolution_low >= 0.0 AND d_resolution_low <= 0.0 ) ,
+	"Rmerge_F_all" DECIMAL CHECK ( "Rmerge_F_all" >= 0 ) ,
+	"Rmerge_F_obs" DECIMAL CHECK ( "Rmerge_F_obs" >= 0 ) ,
+	d_resolution_high DECIMAL CHECK ( d_resolution_high >= 0 ) ,
+	d_resolution_low DECIMAL CHECK ( d_resolution_low >= 0 ) ,
 	data_reduction_details TEXT ,
 	data_reduction_method TEXT ,
 	details TEXT ,
@@ -5911,9 +5917,9 @@ CREATE TABLE reflns (
 	limit_k_min INTEGER ,
 	limit_l_max INTEGER ,
 	limit_l_min INTEGER ,
-	number_all INTEGER CHECK ( number_all >= 0 AND number_all <= 0 ) ,
-	number_gt INTEGER CHECK ( number_gt > 0 ) ,
-	number_obs INTEGER CHECK ( number_obs >= 0 AND number_obs <= 0 ) ,
+	number_all INTEGER CHECK ( number_all >= 0 ) ,
+	number_gt INTEGER CHECK ( number_gt >= 0 ) ,
+	number_obs INTEGER CHECK ( number_obs >= 0 ) ,
 	observed_criterion TEXT ,
 	"observed_criterion_F_max" DECIMAL ,
 	"observed_criterion_F_min" DECIMAL ,
@@ -5921,7 +5927,7 @@ CREATE TABLE reflns (
 	"observed_criterion_I_min" DECIMAL ,
 	"observed_criterion_sigma_F" DECIMAL ,
 	"observed_criterion_sigma_I" DECIMAL ,
-	"pdbx_CC_half" DECIMAL CHECK ( "pdbx_CC_half" >= 1 AND "pdbx_CC_half" <= 1 ) ,
+	"pdbx_CC_half" DECIMAL CHECK ( "pdbx_CC_half" >= -1 AND "pdbx_CC_half" <= 1 ) ,
 	"pdbx_R_split" DECIMAL ,
 	"pdbx_Rmerge_I_all" DECIMAL ,
 	"pdbx_Rmerge_I_obs" DECIMAL ,
@@ -5930,8 +5936,8 @@ CREATE TABLE reflns (
 	"pdbx_Rsym_value" DECIMAL ,
 	pdbx_chi_squared DECIMAL ,
 	pdbx_d_opt DECIMAL ,
-	pdbx_d_res_high_opt DECIMAL CHECK ( pdbx_d_res_high_opt >= 0.0 AND pdbx_d_res_high_opt <= 0.0 ) ,
-	pdbx_d_res_low_opt DECIMAL CHECK ( pdbx_d_res_low_opt >= 0.0 AND pdbx_d_res_low_opt <= 0.0 ) ,
+	pdbx_d_res_high_opt DECIMAL CHECK ( pdbx_d_res_high_opt >= 0 ) ,
+	pdbx_d_res_low_opt DECIMAL CHECK ( pdbx_d_res_low_opt >= 0 ) ,
 	pdbx_d_res_opt_method TEXT ,
 	pdbx_diffrn_id TEXT ,
 	"pdbx_netI_over_av_sigmaI" DECIMAL ,
@@ -5941,7 +5947,7 @@ CREATE TABLE reflns (
 	"pdbx_res_netI_over_av_sigmaI_2" DECIMAL ,
 	"pdbx_res_netI_over_sigmaI_2" DECIMAL ,
 	pdbx_scaling_rejects INTEGER ,
-	percent_possible_obs DECIMAL CHECK ( percent_possible_obs >= 0.0 AND percent_possible_obs <= 0.0 ) ,
+	percent_possible_obs DECIMAL CHECK ( percent_possible_obs >= 0 AND percent_possible_obs <= 100 ) ,
 	phase_calculation_details TEXT ,
 	threshold_expression TEXT ,
 -- ATTRIBUTE
@@ -5958,16 +5964,16 @@ CREATE TABLE reflns (
 CREATE TABLE reflns_class (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
-	"R_Fsqd_factor" DECIMAL CHECK ( "R_Fsqd_factor" > 0.0 ) ,
-	"R_I_factor" DECIMAL CHECK ( "R_I_factor" > 0.0 ) ,
-	"R_factor_all" DECIMAL CHECK ( "R_factor_all" > 0.0 ) ,
-	"R_factor_gt" DECIMAL CHECK ( "R_factor_gt" > 0.0 ) ,
-	d_res_high DECIMAL CHECK ( d_res_high > 0.0 ) ,
-	d_res_low DECIMAL CHECK ( d_res_low > 0.0 ) ,
+	"R_Fsqd_factor" DECIMAL CHECK ( "R_Fsqd_factor" >= 0 ) ,
+	"R_I_factor" DECIMAL CHECK ( "R_I_factor" >= 0 ) ,
+	"R_factor_all" DECIMAL CHECK ( "R_factor_all" >= 0 ) ,
+	"R_factor_gt" DECIMAL CHECK ( "R_factor_gt" >= 0 ) ,
+	d_res_high DECIMAL CHECK ( d_res_high >= 0 ) ,
+	d_res_low DECIMAL CHECK ( d_res_low >= 0 ) ,
 	description TEXT ,
-	number_gt INTEGER CHECK ( number_gt > 0 ) ,
-	number_total INTEGER CHECK ( number_total > 0 ) ,
-	"wR_factor_all" DECIMAL CHECK ( "wR_factor_all" > 0.0 ) ,
+	number_gt INTEGER CHECK ( number_gt >= 0 ) ,
+	number_total INTEGER CHECK ( number_total >= 0 ) ,
+	"wR_factor_all" DECIMAL CHECK ( "wR_factor_all" >= 0 ) ,
 -- ATTRIBUTE
 	code TEXT NOT NULL 
 );
@@ -5982,9 +5988,9 @@ CREATE TABLE reflns_class (
 CREATE TABLE reflns_scale (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
-	"meas_F" DECIMAL CHECK ( "meas_F" >= 0.0 AND "meas_F" <= 0.0 ) ,
-	"meas_F_squared" DECIMAL CHECK ( "meas_F_squared" >= 0.0 AND "meas_F_squared" <= 0.0 ) ,
-	meas_intensity DECIMAL CHECK ( meas_intensity >= 0.0 AND meas_intensity <= 0.0 ) ,
+	"meas_F" DECIMAL CHECK ( "meas_F" >= 0 ) ,
+	"meas_F_squared" DECIMAL CHECK ( "meas_F_squared" >= 0 ) ,
+	meas_intensity DECIMAL CHECK ( meas_intensity >= 0 ) ,
 -- ATTRIBUTE
 	group_code TEXT NOT NULL 
 );
@@ -5999,40 +6005,40 @@ CREATE TABLE reflns_scale (
 CREATE TABLE reflns_shell (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
-	"Rmerge_F_all" DECIMAL CHECK ( "Rmerge_F_all" >= 0.0 AND "Rmerge_F_all" <= 0.0 ) ,
-	"Rmerge_F_gt" DECIMAL CHECK ( "Rmerge_F_gt" > 0.0 ) ,
-	"Rmerge_F_obs" DECIMAL CHECK ( "Rmerge_F_obs" >= 0.0 AND "Rmerge_F_obs" <= 0.0 ) ,
-	"Rmerge_I_all" DECIMAL CHECK ( "Rmerge_I_all" >= 0.0 AND "Rmerge_I_all" <= 0.0 ) ,
-	"Rmerge_I_gt" DECIMAL CHECK ( "Rmerge_I_gt" > 0.0 ) ,
-	"Rmerge_I_obs" DECIMAL CHECK ( "Rmerge_I_obs" >= 0.0 AND "Rmerge_I_obs" <= 0.0 ) ,
-	d_res_high DECIMAL CHECK ( d_res_high >= 0.0 AND d_res_high <= 0.0 ) ,
-	d_res_low DECIMAL CHECK ( d_res_low >= 0.0 AND d_res_low <= 0.0 ) ,
+	"Rmerge_F_all" DECIMAL CHECK ( "Rmerge_F_all" >= 0 ) ,
+	"Rmerge_F_gt" DECIMAL CHECK ( "Rmerge_F_gt" >= 0 ) ,
+	"Rmerge_F_obs" DECIMAL CHECK ( "Rmerge_F_obs" >= 0 ) ,
+	"Rmerge_I_all" DECIMAL CHECK ( "Rmerge_I_all" >= 0 ) ,
+	"Rmerge_I_gt" DECIMAL CHECK ( "Rmerge_I_gt" >= 0 ) ,
+	"Rmerge_I_obs" DECIMAL CHECK ( "Rmerge_I_obs" >= 0 ) ,
+	d_res_high DECIMAL CHECK ( d_res_high >= 0 ) ,
+	d_res_low DECIMAL CHECK ( d_res_low >= 0 ) ,
 	"meanI_over_sigI_all" DECIMAL ,
 	"meanI_over_sigI_gt" DECIMAL ,
 	"meanI_over_sigI_obs" DECIMAL ,
 	"meanI_over_uI_all" DECIMAL ,
 	"meanI_over_uI_gt" DECIMAL ,
 	number_measured_all INTEGER ,
-	number_measured_gt INTEGER CHECK ( number_measured_gt > 0 ) ,
+	number_measured_gt INTEGER CHECK ( number_measured_gt >= 0 ) ,
 	number_measured_obs INTEGER ,
-	number_possible INTEGER CHECK ( number_possible >= 0 AND number_possible <= 0 ) ,
+	number_possible INTEGER CHECK ( number_possible >= 0 ) ,
 	number_unique_all INTEGER ,
-	number_unique_gt INTEGER CHECK ( number_unique_gt > 0 ) ,
+	number_unique_gt INTEGER CHECK ( number_unique_gt >= 0 ) ,
 	number_unique_obs INTEGER ,
-	"pdbx_CC_half" DECIMAL CHECK ( "pdbx_CC_half" >= 1 AND "pdbx_CC_half" <= 1 ) ,
-	"pdbx_R_split" DECIMAL CHECK ( "pdbx_R_split" >= 0 AND "pdbx_R_split" <= 0 ) ,
+	"pdbx_CC_half" DECIMAL CHECK ( "pdbx_CC_half" >= -1 AND "pdbx_CC_half" <= 1 ) ,
+	"pdbx_R_split" DECIMAL CHECK ( "pdbx_R_split" >= 0 ) ,
 	"pdbx_Rpim_I_all" DECIMAL CHECK ( "pdbx_Rpim_I_all" > 0.0 ) ,
 	"pdbx_Rrim_I_all" DECIMAL CHECK ( "pdbx_Rrim_I_all" > 0.0 ) ,
-	"pdbx_Rsym_value" DECIMAL CHECK ( "pdbx_Rsym_value" >= 0.0 AND "pdbx_Rsym_value" <= 0.0 ) ,
+	"pdbx_Rsym_value" DECIMAL CHECK ( "pdbx_Rsym_value" >= 0 ) ,
 	pdbx_chi_squared DECIMAL ,
 	pdbx_diffrn_id TEXT ,
 	"pdbx_netI_over_sigmaI_all" DECIMAL ,
 	"pdbx_netI_over_sigmaI_obs" DECIMAL ,
 	pdbx_redundancy DECIMAL ,
 	pdbx_rejects INTEGER ,
-	percent_possible_all DECIMAL CHECK ( percent_possible_all >= 0.0 AND percent_possible_all <= 0.0 ) ,
-	percent_possible_gt DECIMAL CHECK ( percent_possible_gt >= 100.0 AND percent_possible_gt <= 100.0 ) ,
-	percent_possible_obs DECIMAL CHECK ( percent_possible_obs >= 0.0 AND percent_possible_obs <= 0.0 ) ,
+	percent_possible_all DECIMAL CHECK ( percent_possible_all >= 0 ) ,
+	percent_possible_gt DECIMAL CHECK ( percent_possible_gt >= 0 AND percent_possible_gt <= 100 ) ,
+	percent_possible_obs DECIMAL CHECK ( percent_possible_obs >= 0 AND percent_possible_obs <= 100 ) ,
 -- ATTRIBUTE
 	pdbx_ordinal INTEGER NOT NULL 
 );
@@ -6049,7 +6055,7 @@ CREATE TYPE ENUM_space_group_crystal_system AS ENUM ( 'triclinic', 'monoclinic',
 CREATE TABLE space_group (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
-	"IT_number" INTEGER CHECK ( "IT_number" >= 230 AND "IT_number" <= 230 ) ,
+	"IT_number" INTEGER CHECK ( "IT_number" >= 1 AND "IT_number" <= 230 ) ,
 	crystal_system ENUM_space_group_crystal_system ,
 	"name_H-M_alt" TEXT ,
 	"name_Hall" TEXT ,
@@ -6087,7 +6093,7 @@ CREATE TABLE struct (
 	document_id TEXT ,
 	"pdbx_CASP_flag" ENUM_struct_pdbx_CASP_flag ,
 	pdbx_descriptor TEXT ,
-	pdbx_formula_weight DECIMAL CHECK ( pdbx_formula_weight >= 1.0 AND pdbx_formula_weight <= 1.0 ) ,
+	pdbx_formula_weight DECIMAL CHECK ( pdbx_formula_weight >= 1 ) ,
 	pdbx_formula_weight_method TEXT ,
 	pdbx_model_details TEXT ,
 	pdbx_model_type_details TEXT ,
