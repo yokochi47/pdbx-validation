@@ -17,7 +17,7 @@
 -- Statistics of schema:
 --  Generated 236 tables (3159 fields), 0 attr groups, 0 model groups in total
 --   Namespaces:
---    http://www.w3.org/2001/XMLSchema-instance (xsi), http://www.w3.org/2001/XMLSchema (xsd), http://pdbml.pdb.org/schema/pdbx-validation-v0.xsd (PDBxv)
+--    http://www.w3.org/2001/XMLSchema (xsd), http://pdbml.pdb.org/schema/pdbx-validation-v0.xsd (PDBxv)
 --   Schema locations:
 --    schema/pdbx-validation-v0.xsd
 --   Table types:
