@@ -54,8 +54,7 @@ do
    mkdir -p $div_dir
   fi
 
-  mv -f $rdf_file $div_dir
-  gzip $div_dir/$pdb_id-validation.rdf
+  mv -f $rdf_file $div_dir && gzip $div_dir/$pdb_id-validation.rdf
 
  fi
 

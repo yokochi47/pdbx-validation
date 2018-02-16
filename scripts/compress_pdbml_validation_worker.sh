@@ -54,8 +54,7 @@ do
    mkdir -p $div_dir
   fi
 
-  mv -f $xml_file $div_dir
-  gzip $div_dir/$pdb_id-validation-full.xml
+  mv -f $xml_file $div_dir && gzip $div_dir/$pdb_id-validation-full.xml
 
  fi
 

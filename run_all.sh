@@ -16,17 +16,9 @@ while true ; do
  shift
 done
 
-./scripts/update_pdbml.sh
+./scripts/update_pdbml.sh || exit $?
 
-if [ $? != 0 ] ; then
- exit $?
-fi
-
-./scripts/update_validation.sh
-
-if [ $? != 0 ] ; then
- exit $?
-fi
+./scripts/update_validation.sh || exit $?
 
 PDBML_EXT=pdbml-ext
 VALID_INFO_ALT=validation-info-alt
@@ -34,11 +26,12 @@ XML_VALID=XML-validation
 RDF_VALID=RDF-validation
 
 total=`ls $PDBML_EXT | wc -l`
+huge_number=100000
 
 ext_pdbml_exit_code=0
 ext_info_exit_code=0
 
-if [ -d $PDBML_EXT ] && [ $total -gt 100000 ] ; then
+if [ -d $PDBML_EXT ] && [ $total -gt $huge_number ] ; then
 
  ./scripts/extract_pdbml.sh $VALIDATE_OPT
  ext_pdbml_exit_code=$?
@@ -56,7 +49,7 @@ fi
 
 total=`ls $VALID_INFO_ALT | wc -l`
 
-if [ -d $VALID_INFO_ALT ] && [ $total -gt 100000 ] ; then
+if [ -d $VALID_INFO_ALT ] && [ $total -gt $huge_number ] ; then
 
  ./scripts/extract_info.sh $VALIDATE_OPT
  ext_info_exit_code=$?
@@ -76,7 +69,7 @@ if [ $ext_pdbml_exit_code = 0 ] || [ $ext_info_exit_code = 0 ] || [ ! -d $XML_VA
 
  total=`ls $XML_VALID | wc -l`
 
- if [ -d $XML_VALID ] && [ $total -gt 100000 ] ; then
+ if [ -d $XML_VALID ] && [ $total -gt $huge_number ] ; then
 
   ./scripts/merge_pdbml_info.sh -v
 
@@ -89,8 +82,11 @@ if [ $ext_pdbml_exit_code = 0 ] || [ $ext_info_exit_code = 0 ] || [ ! -d $XML_VA
 
  ./scripts/translate_to_rdf.sh
 
- ./scripts/sync_delete_with_pdbml.sh
- ./scripts/sync_delete_with_info.sh
+# update_pdbml.sh has already removed.
+# ./scripts/sync_delete_with_pdbml.sh
+
+# update_validation.sh has already removed.
+# ./scripts/sync_delete_with_info.sh
 
  ./scripts/compress_pdbml_validation.sh
  ./scripts/compress_rdf_validation.sh
