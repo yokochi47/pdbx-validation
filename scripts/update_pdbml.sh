@@ -51,7 +51,7 @@ if [ ! -e url_mirror ] ; then
  done
 
  echo
- echo "$PDB_MIRROR is selected as the default server. OK (1/2/3/n [y]) ? "
+ echo "$PDB_MIRROR is selected by default. OK (1/2/3/n [y]) ? "
 
  read ans
 
