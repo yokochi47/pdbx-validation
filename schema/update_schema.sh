@@ -3,7 +3,6 @@
 if [ ! `which DictToSdb` ] || [ ! `which Dict2XMLSchema` ] || [ ! `which Dict2XMLSchema` ]; then
 
  echo "Please install MMCIF Dictionary Suite (http://sw-tools.pdb.org/)."
-
  exit 1
 
 fi
@@ -21,7 +20,6 @@ DictToSdb -ddlFile $DDL_FILE -dictFile $DICT_FILE -dictSdbFile $DICT_PREFIX.sdb 
 if [ -e $DICT_FILE-parser.log ] ; then
 
  echo
-
  head $DICT_FILE-parser.log
 
  exit 1
@@ -31,7 +29,6 @@ fi
 if [ -e $DICT_FILE-diag.log ] ; then
 
  echo
-
  head $DICT_FILE-diag.log
 
  exit 1
