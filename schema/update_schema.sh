@@ -58,11 +58,11 @@ if [ ! -e $SAXON ] ; then
  ( cd ..; ./scripts/update_extlibs.sh )
 fi
 
-APPEND_SOURCE_XSL=../stylesheet/append_source.xsl
+APPEND_XSD_XSL=../stylesheet/append_xsd.xsl
 
 pdbx_xsd_file=../resource/pdbx-v50.xsd
 
-java -jar $SAXON -s:$DICT_PREFIX.xsd~ -xsl:$APPEND_SOURCE_XSL -o:$DICT_PREFIX-v$DICT_VER.xsd pdbx_xsd_file=$pdbx_xsd_file
+java -jar $SAXON -s:$DICT_PREFIX.xsd~ -xsl:$APPEND_XSD_XSL -o:$DICT_PREFIX-v$DICT_VER.xsd pdbx_xsd_file=$pdbx_xsd_file
 
 rm -f $DICT_PREFIX.xsd~ $DICT_PREFIX-v$DICT_MAJOR_VER.xsd
 

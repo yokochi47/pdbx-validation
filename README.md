@@ -50,6 +50,10 @@ File path | Document
 
 ## Release notes
 
+--**Feb 16, 2018**: Release v0.1.0
+	- Revise PDBML-validation Schema using xsd:minInclusive and xsd:maxExclusive without xsd:union.
+	- Fix wwPDB/OWL-validation lacking XSD data type definition.
+
 - **Feb 15, 2018**: Release v0.0.9
 	- Add ontology relationship between wwPDB/OWL-validation and PDBx ontology.
 	- Add ontology relationship between wwPDB/OWL-validation and BMRB/OWL.
