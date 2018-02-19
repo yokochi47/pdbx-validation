@@ -12,7 +12,7 @@
 PDBXML-validation Schema translated from wwPDB Validation Information Dictionary v0.290, which is backward compatible with the PDBx/mmCIF Dictionary v5.290:
  http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
 
-      </xsd:documentation>
+        </xsd:documentation>
    </xsd:annotation>
    <xsd:complexType name="diffrnType">
       <xsd:annotation>

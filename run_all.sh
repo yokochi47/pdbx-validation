@@ -42,7 +42,7 @@ else
  ext_pdbml_exit_code=$?
 
  if [ ! -z $VALIDATE_OPT ] ; then
-  ./scripts/validate_all.sh -d $PDBML_EXT
+  ./scripts/validate_all_xml.sh -d $PDBML_EXT
  fi
 
 fi
@@ -60,7 +60,7 @@ else
  ext_info_exit_code=$?
 
  if [ ! -z $VALIDATE_OPT ] ; then
-  ./scripts/validate_all.sh -d $VALID_INFO_ALT
+  ./scripts/validate_all_xml.sh -d $VALID_INFO_ALT
  fi
 
 fi
@@ -76,9 +76,12 @@ if [ $ext_pdbml_exit_code = 0 ] || [ $ext_info_exit_code = 0 ] || [ ! -d $XML_VA
  else
 
   ./scripts/merge_pdbml_info.sh
-  ./scripts/validate_all.sh -d $XML_VALID
+  ./scripts/validate_all_xml.sh -d $XML_VALID
 
  fi
+
+# XML Schema validation for all compressed PDBML-validation
+# ./scripts/validate_all_gz.sh
 
  ./scripts/translate_to_rdf.sh
 

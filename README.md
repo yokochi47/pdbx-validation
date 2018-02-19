@@ -53,6 +53,7 @@ File path | Document
 - **Feb 16, 2018**: Release v0.1.0
 	- Revise PDBML-validation Schema using xsd:minInclusive and xsd:maxExclusive without xsd:union.
 	- Fix wwPDB/OWL-validation lacking XSD data type definition.
+	- Add validate_all_gz.sh script to perform XML Schema validation of compressed PDBML-validation.
 
 - **Feb 15, 2018**: Release v0.0.9
 	- Add ontology relationship between wwPDB/OWL-validation and PDBx ontology.
