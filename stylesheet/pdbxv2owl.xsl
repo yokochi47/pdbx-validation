@@ -29,7 +29,7 @@
 &lt;?xml-stylesheet type="text/xsl" href="https://rdf.wwpdb.org/schema/pdbxowl.xsl"?&gt;
 </xsl:text>
     <rdf:RDF
-       xml:base="https://rdf.wwpdb.org/schema/pdbx-validation-v0.owl"
+       xml:base="https://rdf.wwpdb.org/schema/pdbx-validation-v1.owl"
        xmlns:xml="http://www.w3.org/XML/1998/namespace"
        xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
        xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
@@ -39,12 +39,12 @@
        xmlns:PDBo="https://rdf.wwpdb.org/schema/pdbx-v50.owl#"
        xmlns:BMRBo="http://bmrbpub.protein.osaka-u.ac.jp/schema/mmcif_nmr-star.owl#">
 
-      <owl:Ontology rdf:about="https://rdf.wwpdb.org/schema/pdbx-validation-v0.owl">
+      <owl:Ontology rdf:about="https://rdf.wwpdb.org/schema/pdbx-validation-v1.owl">
 	<rdfs:label>wwPDB/OWL-validation</rdfs:label>
 	<rdfs:comment xml:lang="en">The OWL ontology for wwPDB/RDF-validation.</rdfs:comment>
-        <rdfs:seeAlso rdf:resource="https://rdf.wwpdb.org/schema/pdbx-validation-v0.dic"/>
-        <rdfs:seeAlso rdf:resource="https://rdf.wwpdb.org/schema/pdbx-validation-v0.xsd"/>
-        <owl:versionIRI rdf:resource="https://rdf.wwpdb.org/schema/pdbx-validation-v0.owl/0.290"/>
+        <rdfs:seeAlso rdf:resource="https://rdf.wwpdb.org/schema/pdbx-validation-v1.dic"/>
+        <rdfs:seeAlso rdf:resource="https://rdf.wwpdb.org/schema/pdbx-validation-v1.xsd"/>
+        <owl:versionIRI rdf:resource="https://rdf.wwpdb.org/schema/pdbx-validation-v1.owl/1.290"/>
       </owl:Ontology>
 
       <owl:Class rdf:ID="Category">

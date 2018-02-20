@@ -12,7 +12,7 @@ if [ ! -e $SAXON ] ; then
  ./scripts/update_extlibs.sh
 fi
 
-PDBX_VALIDATION_XSD=schema/pdbx-validation-v0.xsd
+PDBX_VALIDATION_XSD=schema/pdbx-validation-v1.xsd
 
 if [ ! -e $PDBX_VALIDATION_XSD ] ; then
  ( cd schema; ./update_schema.sh )

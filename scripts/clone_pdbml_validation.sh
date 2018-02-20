@@ -39,8 +39,8 @@ fi
 XML_DIR=XML-validation
 FILE_EXT_DIGEST=-validation-full
 
-XSD_SCHEMA=schema/pdbx-validation-v0.xsd
-DB_SCHEMA=schema/pdbx-validation-v0.sql
+XSD_SCHEMA=schema/pdbx-validation-v1.xsd
+DB_SCHEMA=schema/pdbx-validation-v1.sql
 
 java -classpath $XSD2PGSCHEMA xsd2pgschema --xsd $XSD_SCHEMA --ddl $DB_SCHEMA --no-rel --doc-key --no-key
 

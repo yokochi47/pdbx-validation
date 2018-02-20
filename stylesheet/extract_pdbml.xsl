@@ -4,7 +4,7 @@
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xmlns:PDBx="http://pdbml.pdb.org/schema/pdbx-v50.xsd"
-  xmlns:PDBxv="http://pdbml.pdb.org/schema/pdbx-validation-v0.xsd"
+  xmlns:PDBxv="http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd"
   exclude-result-prefixes="PDBx">
 
   <xsl:param name="info_file" required="yes"/>
@@ -62,7 +62,7 @@ Unmatched entry ID in both documents (<xsl:value-of select="$entry_id"/> and <xs
       </xsl:call-template>
     </xsl:if>
 
-    <PDBxv:datablock datablockName="{$datablock_name}" xsi:schemaLocation="http://pdbml.pdb.org/schema/pdbx-validation-v0.xsd pdbx-validation-v0.xsd">
+    <PDBxv:datablock datablockName="{$datablock_name}" xsi:schemaLocation="http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd pdbx-validation-v1.xsd">
       <xsl:apply-templates select="PDBx:datablock/*"/>
     </PDBxv:datablock>
   </xsl:template>

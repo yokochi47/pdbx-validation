@@ -3,7 +3,7 @@
   version="2.0"
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xmlns:PDBxv="http://pdbml.pdb.org/schema/pdbx-validation-v0.xsd">
+  xmlns:PDBxv="http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd">
 
   <xsl:param name="pdbml_ext_file" required="yes"/>
   <xsl:param name="pdbml_ext" select="document($pdbml_ext_file)"/>
@@ -164,7 +164,7 @@ Unmatched entry ID in both documents (<xsl:value-of select="$entry_id"/> and <xs
       </xsl:call-template>
     </xsl:if>
 
-    <PDBxv:datablock datablockName="{$datablock_name}" xsi:schemaLocation="http://pdbml.pdb.org/schema/pdbx-validation-v0.xsd pdbx-validation-v0.xsd">
+    <PDBxv:datablock datablockName="{$datablock_name}" xsi:schemaLocation="http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd pdbx-validation-v1.xsd">
       <PDBxv:entryCategory>
         <PDBxv:entry id="{$entry_id}"/>
       </PDBxv:entryCategory>

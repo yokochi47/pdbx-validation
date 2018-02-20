@@ -13,7 +13,7 @@
   version="1.0"
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xmlns:PDBxv="http://pdbml.pdb.org/schema/pdbx-validation-v0.xsd"&gt;
+  xmlns:PDBxv="http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd"&gt;
 </xsl2:text>
     <xsl2:apply-templates/>
     <xsl2:text disable-output-escaping="yes">
@@ -46,7 +46,7 @@ Unmatched entry ID in both documents (&lt;xsl:value-of select="$entry_id"/&gt; a
       &lt;/xsl:call-template&gt;
     &lt;/xsl:if&gt;
 
-    &lt;PDBxv:datablock datablockName="{$datablock_name}" xsi:schemaLocation="http://pdbml.pdb.org/schema/pdbx-validation-v0.xsd pdbx-validation-v0.xsd"&gt;
+    &lt;PDBxv:datablock datablockName="{$datablock_name}" xsi:schemaLocation="http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd pdbx-validation-v1.xsd"&gt;
       &lt;xsl:apply-templates select="PDBxv:datablock/*[not(</xsl2:text>
 
     <xsl2:for-each select="tokenize($merge_categories,' ')">

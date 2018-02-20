@@ -8,49 +8,49 @@ if [ ! `which DictToSdb` ] || [ ! `which Dict2XMLSchema` ] || [ ! `which Dict2XM
 fi
 
 DDL_FILE=mmcif_ddl.dic
-DICT_FILE=mmcif_pdbx_validation.dic
+DIC_FILE=mmcif_pdbx_validation.dic
 
-DICT_PREFIX=pdbx-validation
+DIC_PREFIX=pdbx-validation
 NAME_SPACE=PDBxv
 
-rm -f $DICT_FILE-parser.log $DICT_FILE-diag.log
+rm -f $DIC_FILE-parser.log $DIC_FILE-diag.log
 
-DictToSdb -ddlFile $DDL_FILE -dictFile $DICT_FILE -dictSdbFile $DICT_PREFIX.sdb -ec
+DictToSdb -ddlFile $DDL_FILE -dictFile $DIC_FILE -dictSdbFile $DIC_PREFIX.sdb -ec
 
-if [ -e $DICT_FILE-parser.log ] ; then
+if [ -e $DIC_FILE-parser.log ] ; then
 
  echo
- head $DICT_FILE-parser.log
+ head $DIC_FILE-parser.log
 
  exit 1
 
 fi
 
-if [ -e $DICT_FILE-diag.log ] ; then
+if [ -e $DIC_FILE-diag.log ] ; then
 
  echo
- head $DICT_FILE-diag.log
+ head $DIC_FILE-diag.log
 
  exit 1
 
 fi
 
-DictObjFileCreator -dictSdbFile $DICT_PREFIX.sdb -o $DICT_PREFIX.odb
-Dict2XMLSchema -dictName $DICT_FILE -df $DICT_PREFIX.odb -ns $NAME_SPACE -prefix $DICT_PREFIX
+DictObjFileCreator -dictSdbFile $DIC_PREFIX.sdb -o $DIC_PREFIX.odb
+Dict2XMLSchema -dictName $DIC_FILE -df $DIC_PREFIX.odb -ns $NAME_SPACE -prefix $DIC_PREFIX
 
-rm -f $DICT_PREFIX.sdb $DICT_PREFIX.odb
+rm -f $DIC_PREFIX.sdb $DIC_PREFIX.odb
 
-if [ -e $DICT_FILE ] ; then
+if [ -e $DIC_FILE ] ; then
 
- arg=(`grep dictionary.version $DICT_FILE`)
- DICT_VER=${arg[1]}
- DICT_MAJOR_VER=${DICT_VER%%.*}
+ arg=(`grep dictionary.version $DIC_FILE`)
+ DIC_VER=${arg[1]}
+ DIC_MAJOR_VER=${DIC_VER%%.*}
 
 fi
 
-pattern=3,4s/$DICT_PREFIX.xsd/$DICT_PREFIX-v$DICT_MAJOR_VER.xsd/
+pattern=3,4s/$DIC_PREFIX.xsd/$DIC_PREFIX-v$DIC_MAJOR_VER.xsd/
 
-sed '2,6d' $DICT_PREFIX-v$DICT_VER.xsd | sed $pattern > $DICT_PREFIX.xsd~
+sed '2,6d' $DIC_PREFIX-v$DIC_VER.xsd | sed $pattern > $DIC_PREFIX.xsd~
 
 SAXON=../extlibs/saxon9he.jar
 
@@ -62,13 +62,13 @@ APPEND_XSD_XSL=../stylesheet/append_xsd.xsl
 
 pdbx_xsd_file=../resource/pdbx-v50.xsd
 
-java -jar $SAXON -s:$DICT_PREFIX.xsd~ -xsl:$APPEND_XSD_XSL -o:$DICT_PREFIX-v$DICT_VER.xsd pdbx_xsd_file=$pdbx_xsd_file
+java -jar $SAXON -s:$DIC_PREFIX.xsd~ -xsl:$APPEND_XSD_XSL -o:$DIC_PREFIX-v$DIC_VER.xsd pdbx_xsd_file=$pdbx_xsd_file
 
-rm -f $DICT_PREFIX.xsd~ $DICT_PREFIX-v$DICT_MAJOR_VER.xsd
+rm -f $DIC_PREFIX.xsd~ $DIC_PREFIX-v$DIC_MAJOR_VER.xsd
 
-ln -s $DICT_PREFIX-v$DICT_VER.xsd $DICT_PREFIX-v$DICT_MAJOR_VER.xsd
+ln -s $DIC_PREFIX-v$DIC_VER.xsd $DIC_PREFIX-v$DIC_MAJOR_VER.xsd
 
-echo Generated: $DICT_PREFIX-v$DICT_MAJOR_VER.xsd
+echo Generated: $DIC_PREFIX-v$DIC_MAJOR_VER.xsd
 
 # Convert tagmap.csv to tagmap.xml
 
@@ -86,19 +86,19 @@ pdbx_owl_file=../resource/pdbx-v50.owl
 
 tagmap_xml_file=../schema/$tagmap_xml_file
 
-java -jar $SAXON -s:$DICT_PREFIX-v$DICT_MAJOR_VER.xsd -xsl:$PDBXV2OWL_XSL -o:$DICT_PREFIX-v$DICT_VER.owl pdbx_owl_file=$pdbx_owl_file tagmap_xml_file=$tagmap_xml_file
+java -jar $SAXON -s:$DIC_PREFIX-v$DIC_MAJOR_VER.xsd -xsl:$PDBXV2OWL_XSL -o:$DIC_PREFIX-v$DIC_VER.owl pdbx_owl_file=$pdbx_owl_file tagmap_xml_file=$tagmap_xml_file
 
-rm -f $DICT_PREFIX-v$DICT_MAJOR_VER.owl
+rm -f $DIC_PREFIX-v$DIC_MAJOR_VER.owl
 
-ln -s $DICT_PREFIX-v$DICT_VER.owl $DICT_PREFIX-v$DICT_MAJOR_VER.owl
+ln -s $DIC_PREFIX-v$DIC_VER.owl $DIC_PREFIX-v$DIC_MAJOR_VER.owl
 
-echo Generated: $DICT_PREFIX-v$DICT_MAJOR_VER.owl
+echo Generated: $DIC_PREFIX-v$DIC_MAJOR_VER.owl
 
 # Generate HTML representation of PDBML-validation Schema
 
 XS3P_XSLT_CODE=../stylesheet/xs3p.xsl
 
-java -jar $SAXON -s:$DICT_PREFIX-v$DICT_MAJOR_VER.xsd -xsl:$XS3P_XSLT_CODE -o:$DICT_PREFIX-v$DICT_MAJOR_VER.html
+java -jar $SAXON -s:$DIC_PREFIX-v$DIC_MAJOR_VER.xsd -xsl:$XS3P_XSLT_CODE -o:$DIC_PREFIX-v$DIC_MAJOR_VER.html
 
-echo Generated: $DICT_PREFIX-v$DICT_MAJOR_VER.html
+echo Generated: $DIC_PREFIX-v$DIC_MAJOR_VER.html
 

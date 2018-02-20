@@ -3,7 +3,7 @@
 SAXON=extlibs/saxon9he.jar
 XSD2PGSCHEMA=extlibs/xsd2pgschema.jar
 
-PDBX_VALIDATION_XSD=schema/pdbx-validation-v0.xsd
+PDBX_VALIDATION_XSD=schema/pdbx-validation-v1.xsd
 
 EXT_PDBML_XSL=stylesheet/extract_pdbml.xsl
 

@@ -14,9 +14,9 @@ The pdbx-validation is a generation tool for alternative [wwPDB validation infor
 
 File path | Document
 --------- | --------
-[schema/mmcif_pdbx_validation_v0.dic](https://github.com/yokochi47/pdbx-validation/blob/master/schema/mmcif_pdbx_validation_v0.290.dic) | wwPDB Validation Information Dictionary (v0.290)
-[schema/pdbx-validation-v0.xsd](https://github.com/yokochi47/pdbx-validation/blob/master/schema/pdbx-validation-v0.290.xsd) | PDBML-validation Schema (v0.290)
-[schema/pdbx-validation-v0.owl](https://github.com/yokochi47/pdbx-validation/blob/master/schema/pdbx-validation-v0.290.owl) | wwPDB/OWL-validation (v0.290)
+[schema/mmcif_pdbx_validation_v1.dic](https://github.com/yokochi47/pdbx-validation/blob/master/schema/mmcif_pdbx_validation_v1.290.dic) | wwPDB Validation Information Dictionary (v1.290)
+[schema/pdbx-validation-v1.xsd](https://github.com/yokochi47/pdbx-validation/blob/master/schema/pdbx-validation-v1.290.xsd) | PDBML-validation Schema (v1.290)
+[schema/pdbx-validation-v1.owl](https://github.com/yokochi47/pdbx-validation/blob/master/schema/pdbx-validation-v1.290.owl) | wwPDB/OWL-validation (v1.290)
 [schema/mmcif_ddl.dic](https://github.com/yokochi47/pdbx-validation/blob/master/schema/mmcif_ddl_v2.2.0.dic) | extended mmCIF DDL Core Dictionary (dubbed as v2.2.0)
 [resource/mmcif_pdbx_v50.dic](http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic) | current PDBx/mmCIF Dictionary (v5.290)
 [resource/pdbx-v50.xsd](http://mmcif.wwpdb.org/schema/pdbx-v50.xsd) | current PDBML Schema (v5.290)
@@ -49,6 +49,9 @@ File path | Document
 - [**PostgreSQL**](https://www.postgresql.org), optionally used to import XML contents to relational database.
 
 ## Release notes
+
+- **Feb 20, 2018**: Release v1.0.0
+	- Changed dictionary version from v0 to v1.
 
 - **Feb 16, 2018**: Release v0.1.0
 	- Revise PDBML-validation Schema using xsd:minInclusive and xsd:maxExclusive without xsd:union.
