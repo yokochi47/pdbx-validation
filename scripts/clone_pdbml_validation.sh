@@ -37,7 +37,6 @@ if [ ! -e $XSD2PGSCHEMA ] ; then
 fi
 
 XML_DIR=XML-validation
-PDBML_DIR=pdbml-validation
 FILE_EXT_DIGEST=-validation-full
 
 XSD_SCHEMA=schema/pdbx-validation-v0.xsd
@@ -56,27 +55,6 @@ case $ans in
   exit 1;;
 esac
 
-gz_file_list=gz_file_list
-
-mkdir -p $PDBML_DIR
-
-find $XML_DIR/* -name '*.xml.gz' > $gz_file_list
-
-while read gz_file
-do
-
- xml_file=`basename $gz_file .gz`
-
- if [ ! -e $PDBML_DIR/$xml_file ] ; then
-  cp $gz_file $PDBML_DIR
- fi
-
-done < $gz_file_list
-
-rm -f $gz_file_list
-
-find $PDBML_DIR -type f -iname "*.gz" -exec gunzip {} +
-
 psql -d $DB_NAME -U $DB_USER -f $DB_SCHEMA --quiet
 
 WORK_DIR=pg_work
@@ -91,7 +69,7 @@ mkdir -p $ERR_DIR
 
 err_file=$ERR_DIR/all_err
 
-java -classpath $XSD2PGSCHEMA xml2pgcsv --xsd $XSD_SCHEMA --xml $XML_DIR --csv-dir $CSV_DIR --no-rel --doc-key --no-valid --xml-file-ext-digest $FILE_EXT_DIGEST --db-name $DB_NAME --db-user $DB_USER 2> $err_file
+java -classpath $XSD2PGSCHEMA xml2pgcsv --xsd $XSD_SCHEMA --xml $XML_DIR/[0-9a-z]{2} --xml-file-ext gz --csv-dir $CSV_DIR --no-rel --doc-key --no-valid --xml-file-ext-digest $FILE_EXT_DIGEST --db-name $DB_NAME --db-user $DB_USER 2> $err_file
 
 if [ $? = 0 ] && [ ! -s $err_file ] ; then
  rm -f $err_file
