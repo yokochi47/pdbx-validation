@@ -25,8 +25,9 @@ VALID_INFO_ALT=validation-info-alt
 XML_VALID=XML-validation
 RDF_VALID=RDF-validation
 
-total=`ls $PDBML_EXT | wc -l`
 huge_number=100000
+
+total=`ls $PDBML_EXT 2> /dev/null | wc -l`
 
 ext_pdbml_exit_code=0
 ext_info_exit_code=0
@@ -47,7 +48,7 @@ else
 
 fi
 
-total=`ls $VALID_INFO_ALT | wc -l`
+total=`ls $VALID_INFO_ALT 2> /dev/null | wc -l`
 
 if [ -d $VALID_INFO_ALT ] && [ $total -gt $huge_number ] ; then
 
@@ -67,7 +68,7 @@ fi
 
 if [ $ext_pdbml_exit_code = 0 ] || [ $ext_info_exit_code = 0 ] || [ ! -d $XML_VALID ] || [ ! -d $RDF_VALID ] ; then
 
- total=`ls $XML_VALID | wc -l`
+ total=`ls $XML_VALID 2> /dev/null | wc -l`
 
  if [ -d $XML_VALID ] && [ $total -gt $huge_number ] ; then
 
