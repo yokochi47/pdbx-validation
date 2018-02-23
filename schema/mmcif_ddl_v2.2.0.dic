@@ -305,7 +305,7 @@ data_mmcif_ddl.dic
 ;
        2.2.0   2017-11-20
 ;      Changes: (Masashi Yokochi, PDBj-BMRB) -
-       + Renam _pdbx_item_enumeration_details.item_name to _pdbx_item_enumeration_details.name (V5).
+       + Rename _pdbx_item_enumeration_details.item_name to _pdbx_item_enumeration_details.name (V5).
        + Add _pdbx_item_external_ref category by mixing _item_alias and _item_linked propeties
          for description of data item relationship across separated dictionaries, whereas parent
          data item is located in external dictionary defined.
