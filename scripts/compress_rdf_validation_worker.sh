@@ -51,6 +51,9 @@ do
   div_dir=$WORK_DIR/${pdb_id:1:2}/$pdb_id
 
   if [ ! -d $div_dir ] ; then
+   if [ -e $div_dir ] ; then
+    rm -f $div_dir
+   fi
    mkdir -p $div_dir
   fi
 
