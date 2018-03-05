@@ -6241,8 +6241,8 @@ to obtain the recorded images.
                      </xsd:annotation>
                      <xsd:simpleType>
                         <xsd:restriction base="xsd:decimal">
-                           <xsd:minExclusive value="-20000"/>
-                           <xsd:maxExclusive value="20000"/>
+                           <xsd:minExclusive value="-30000"/>
+                           <xsd:maxExclusive value="30000"/>
                         </xsd:restriction>
                      </xsd:simpleType>
                   </xsd:element>
