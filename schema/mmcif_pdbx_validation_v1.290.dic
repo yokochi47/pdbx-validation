@@ -1,7 +1,7 @@
 ###########################################################################
 #
 # File:  mmcif_pdbx_validation.dic
-# Date:  Mon Mar  5 09:48:03 JST 2018
+# Date:  Tue Mar  6 09:47:27 JST 2018
 #
 # Created from files noted:
 #        mmcif_pdbx_v50.dic   - PDB Exchange Data Dictionary (V5.290)
@@ -222,11 +222,12 @@ data_mmcif_pdbx_validation.dic
 >     + Switch to closed enumeration for _pdbx_audit_support.funding_organization.
 >     + Change type of _pdbx_depui_validation_status_flags.adp_outliers_zero to text
 ;
-  1.290   2018-03-05
+  1.290   2018-03-06
 ;
   (changes: MY)
   + Update from prototype (v0 series) to production (v1 series).
   + Update range limits for _em_imaging.calibrated_defocus_max.
+  + Update range limits for _em_imaging.c2_aperture_diameter.
 ;
 
 #
@@ -49016,8 +49017,8 @@ save__em_imaging.c2_aperture_diameter
     loop_
      _item_range.minimum
      _item_range.maximum
-                                10  10
-                                10 150
+                                 1   1
+                                 1 150
                                150 150
 save_
 

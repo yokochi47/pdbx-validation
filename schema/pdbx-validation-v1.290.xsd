@@ -6222,7 +6222,7 @@ C2 lens aperture diameter, in mm
                      </xsd:annotation>
                      <xsd:simpleType>
                         <xsd:restriction base="xsd:decimal">
-                           <xsd:minInclusive value="10"/>
+                           <xsd:minInclusive value="1"/>
                            <xsd:maxInclusive value="150"/>
                         </xsd:restriction>
                      </xsd:simpleType>

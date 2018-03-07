@@ -1,7 +1,7 @@
 ###########################################################################
 #
 # File:  mmcif_pdbx_validation.dic
-# Date:  Fri Feb  9 13:03:01 JST 2018
+# Date:  Tue Mar  6 09:47:27 JST 2018
 #
 # Created from files noted:
 #        mmcif_pdbx_v50.dic   - PDB Exchange Data Dictionary (V5.290)
@@ -207,7 +207,7 @@ data_mmcif_pdbx_validation.dic
   + Update range limits for _pdbx_percentile_view.rank and _pdbx_percentile_entity_view.rank.
   + Change mandatory code of _pdbx_percentile_conditions.number_entries_total for the case that /wwPDB-validation-information/Entry/@no-percentile-property='true'.
 ;
-  0.290   2018-02-09
+  0.290   2018-03-06
 ;
   (changes: MY)
   + Update to PDB Exchange Data Dictionary V5.290.
@@ -221,6 +221,8 @@ data_mmcif_pdbx_validation.dic
 >     + Add _em_imaging_optics.energyfilter_slit_width
 >     + Switch to closed enumeration for _pdbx_audit_support.funding_organization.
 >     + Change type of _pdbx_depui_validation_status_flags.adp_outliers_zero to text
+  + Update range limits for _em_imaging.calibrated_defocus_max.
+  + Update range limits for _em_imaging.c2_aperture_diameter.
 ;
 
 #
@@ -48836,8 +48838,8 @@ save__em_imaging.calibrated_defocus_max
     _item_type.code               float
     _item_units.code              nanometers
     _item_examples.case           5000
-    _item_range.minimum         -20000
-    _item_range.maximum          20000
+    _item_range.minimum         -30000
+    _item_range.maximum          30000
 
 save_
 
@@ -49010,8 +49012,8 @@ save__em_imaging.c2_aperture_diameter
     loop_
      _item_range.minimum
      _item_range.maximum
-                                10  10
-                                10 150
+                                 1   1
+                                 1 150
                                150 150
 save_
 
