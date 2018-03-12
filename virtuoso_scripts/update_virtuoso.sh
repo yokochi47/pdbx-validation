@@ -3,7 +3,7 @@
 source ./scripts/env.sh
 source ./virtuoso_scripts/virtuoso_env.sh
 
-MAXPROCS=`ehoc "scale=0; $MAXPROCS / 2.5" | bc`
+MAXPROCS=`echo "scale=0; $MAXPROCS / 2.5" | bc`
 
 if [ $MAXPROCS = 0 ] ; then
  MAXPROCS=1
