@@ -3,6 +3,12 @@
 source ./scripts/env.sh
 source ./virtuoso_scripts/virtuoso_env.sh
 
+MAXPROCS=`ehoc "scale=0; $MAXPROCS / 2.5" | bc`
+
+if [ $MAXPROCS = 0 ] ; then
+ MAXPROCS=1
+fi
+
 DB_NAME=pdb-validation
 
 rm -f /tmp/pdb-validation-virtuoso-last
