@@ -21,7 +21,7 @@ if [ $? != 0 ] ; then
 
 fi
 
-./virtuoso_scripts/start_virtuoso.sh
+./start_virtuoso.sh
 
 if [ $? != 0 ] ; then
  exit 1
@@ -159,7 +159,7 @@ if [ $? != 0 ] ; then
  exit 1
 fi
 
-date -u +"%b %d, %Y" > /tmp/pdb-validation-virtuoso-last
+date -u +"%b %d, %Y" > /tmp/pdb-virtuoso-last
 
 echo "RDF->VIRTUOSO (prefix:"$DB_NAME") is completed."
 
