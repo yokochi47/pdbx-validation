@@ -27,7 +27,7 @@ if [ $? != 0 ] ; then
 
 fi
 
-./start_virtuoso.sh
+./virtuoso_scripts/start_virtuoso.sh
 
 if [ $? != 0 ] ; then
  exit 1

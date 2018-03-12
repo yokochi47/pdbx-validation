@@ -5,7 +5,7 @@ result=ask_graph_existance.result
 
 echo "ASK { GRAPH <$1> { ?s ?p ?o . } }" > $sparql
 
-./scripts/run_sparql.sh -s yes -q $sparql > $result
+./virtuoso_scripts/run_sparql.sh -s yes -q $sparql > $result
 
 if [ $? != 0 ] ; then
  echo "Couldn't connect server."
