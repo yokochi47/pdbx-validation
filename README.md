@@ -48,6 +48,7 @@ File path | Document
 - [**Git (git)**](https://git-scm.com), used to install external libraries.
 - [**mmCIF Dictionary Suite**](http://mmcif.wwpdb.org/docs/software-resources.html), optionally used to generate XML Schema from the wwPDB Validation Information Dictionary.
 - [**PostgreSQL**](https://www.postgresql.org), optionally used to import XML contents to relational database.
+- [**Virtuoso**](https://www.openlinksw.com/wiki/main/Main), oprionally used as SPARQL endpoint of wwPDB/RDF-validation.
 
 ## Release notes
 
