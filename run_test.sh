@@ -1,28 +1,14 @@
 #!/bin/bash
 
-SAXON=extlibs/saxon9he.jar
-XSD2PGSCHEMA=extlibs/xsd2pgschema.jar
+source ./scripts/env.sh
 
 if [ ! -e $SAXON ] || [ ! -e $XSD2PGSCHEMA ] ; then
  ./scripts/update_extlibs.sh
 fi
 
-PDBX_VALIDATION_XSD=schema/pdbx-validation-v1.xsd
-
 if [ ! -e $PDBX_VALIDATION_XSD ] ; then
  ( cd schema; ./update_schema.sh )
 fi
-
-XSD2EXT_PDBML_XSL=stylesheet/xsd2extract_pdbml.xsl
-EXT_PDBML_XSL=stylesheet/extract_pdbml.xsl
-
-EXT_INFO_XSL=stylesheet/extract_info.xsl
-
-XSD2MERGE_PDBML_INFO_XSL=stylesheet/xsd2merge_pdbml_info.xsl
-MERGE_PDBML_INFO_XSL=stylesheet/merge_pdbml_info.xsl
-
-PDBXV2PDBMLV2RDF_XSL=stylesheet/pdbxv2pdbmlv2rdf.xsl
-PDBMLV2RDF_XSL=stylesheet/pdbmlv2rdf.xsl
 
 if [ ! -e $EXT_PDBML_XSL ] ; then
 
@@ -64,11 +50,6 @@ if [ ! -e $PDBMLV2RDF_XSL ] ; then
 fi
 
 WORK_DIR=test
-
-PDBML_EXT=pdbml-ext
-VALID_INFO_ALT=validation-info-alt
-XML_VALID=XML-validation
-RDF_VALID=RDF-validation
 
 for arg ; do
 

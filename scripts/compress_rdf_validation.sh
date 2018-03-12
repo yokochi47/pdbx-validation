@@ -1,14 +1,8 @@
 #!/bin/bash
 
-MAXPROCS=`cat /proc/cpuinfo 2> /dev/null | grep 'cpu cores' | wc -l`
-
-if [ $MAXPROCS = 0 ] ; then
- MAXPROCS=1
-fi
+source ./scripts/env.sh
 
 DB_NAME="wwPDB/RDF-validation"
-
-RDF_VALID=RDF-validation
 
 if [ ! -d $RDF_VALID ] ; then
  ./scripts/translate_to_rdf.sh

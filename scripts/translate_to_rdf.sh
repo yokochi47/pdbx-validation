@@ -1,36 +1,25 @@
 #!/bin/bash
 
-MAXPROCS=`cat /proc/cpuinfo 2> /dev/null | grep 'cpu cores' | wc -l`
-
-if [ $MAXPROCS = 0 ] ; then
- MAXPROCS=1
-fi
-
-SAXON=extlibs/saxon9he.jar
+source ./scripts/env.sh
 
 if [ ! -e $SAXON ] ; then
  ./scripts/update_extlibs.sh
 fi
 
-PDBX_VALIDATION_XSD=schema/pdbx-validation-v1.xsd
-
 if [ ! -e $PDBX_VALIDATION_XSD ] ; then
  ( cd schema; ./update_schema.sh )
 fi
 
-PDBXV2PDBMLV2RDF_XSL=stylesheet/pdbxv2pdbmlv2rdf.xsl
-PDBXV2PDBMLV2RDF_XSL_ERR=pdbxv2pdbmlv2rdf.err
-
-PDBMLV2RDF_XSL=stylesheet/pdbmlv2rdf.xsl
+err=pdbxv2pdbmlv2rdf.err
 
 if [ ! -e $PDBMLV2RDF_XSL ] ; then
 
- java -jar $SAXON -s:$PDBX_VALIDATION_XSD -xsl:$PDBXV2PDBMLV2RDF_XSL -o:$PDBMLV2RDF_XSL 2> $PDBXV2PDBMLV2RDF_XSL_ERR
+ java -jar $SAXON -s:$PDBX_VALIDATION_XSD -xsl:$PDBXV2PDBMLV2RDF_XSL -o:$PDBMLV2RDF_XSL 2> $err
 
  if [ $? = 0 ] ; then
-  rm -f $PDBXV2PDBMLV2RDF_XSL_ERR
+  rm -f $err
  else
-  cat $PDBXV2PDBMLV2RDF_XSL_ERR
+  cat $err
   exit 1
  fi
 
@@ -39,13 +28,9 @@ if [ ! -e $PDBMLV2RDF_XSL ] ; then
 
 fi
 
-XML_VALID=XML-validation
-
 if [ ! -d $XML_VALID ] ; then
  ./scripts/merge_pdbml_info.sh
 fi
-
-RDF_VALID=RDF-validation
 
 mkdir -p $RDF_VALID
 

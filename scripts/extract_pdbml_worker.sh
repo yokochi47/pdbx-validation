@@ -1,29 +1,18 @@
 #!/bin/bash
 
-SAXON=extlibs/saxon9he.jar
-XSD2PGSCHEMA=extlibs/xsd2pgschema.jar
+source ./scripts/env.sh
 
-PDBX_VALIDATION_XSD=schema/pdbx-validation-v1.xsd
-
-EXT_PDBML_XSL=stylesheet/extract_pdbml.xsl
-
-WORK_DIR=pdbml-ext
-VALID_INFO=validation_info
-
-FILE_LIST=pdbml_file_list
+WORK_DIR=
+FILE_LIST=
 
 VALIDATE=false
 
-ARGV=`getopt --long -o "d:e:l:n:v" "$@"`
+ARGV=`getopt --long -o "d:l:n:v" "$@"`
 eval set -- "$ARGV"
 while true ; do
  case "$1" in
  -d)
   WORK_DIR=$2
-  shift
- ;;
- -e)
-  VALID_INFO=$2
   shift
  ;;
  -l)

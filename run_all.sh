@@ -1,5 +1,7 @@
 #!/bin/bash
 
+source ./scripts/env.sh
+
 VALIDATE_OPT=
 
 ARGV=`getopt --long -o "v" "$@"`
@@ -19,11 +21,6 @@ done
 ./scripts/update_pdbml.sh || exit $?
 
 ./scripts/update_validation.sh || exit $?
-
-PDBML_EXT=pdbml-ext
-VALID_INFO_ALT=validation-info-alt
-XML_VALID=XML-validation
-RDF_VALID=RDF-validation
 
 huge_number=100000
 

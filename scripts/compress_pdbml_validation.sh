@@ -1,14 +1,8 @@
 #!/bin/bash
 
-MAXPROCS=`cat /proc/cpuinfo 2> /dev/null | grep 'cpu cores' | wc -l`
-
-if [ $MAXPROCS = 0 ] ; then
- MAXPROCS=1
-fi
+source ./scripts/env.sh
 
 DB_NAME="PDBML-validation"
-
-XML_VALID=XML-validation
 
 if [ ! -d $XML_VALID ] ; then
  ./scripts/merge_pdbml_info.sh

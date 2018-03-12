@@ -1,10 +1,6 @@
 #!/bin/bash
 
-MAXPROCS=`cat /proc/cpuinfo 2> /dev/null | grep 'cpu cores' | wc -l`
-
-if [ $MAXPROCS = 0 ] ; then
- MAXPROCS=1
-fi
+source ./scripts/env.sh
 
 VALID_OPT=
 
@@ -22,32 +18,24 @@ while true ; do
  shift
 done
 
-SAXON=extlibs/saxon9he.jar
-XSD2PGSCHEMA=extlibs/xsd2pgschema.jar
-
 if [ ! -e $SAXON ] || [ ! -e $XSD2PGSCHEMA ] ; then
  ./scripts/update_extlibs.sh
 fi
-
-PDBX_VALIDATION_XSD=schema/pdbx-validation-v1.xsd
 
 if [ ! -e $PDBX_VALIDATION_XSD ] ; then
  ( cd schema; ./update_schema.sh )
 fi
 
-XSD2MRG_PDBML_INFO_XSL=stylesheet/xsd2merge_pdbml_info.xsl
-XSD2MRG_PDBML_INFO_XSL_ERR=xsd2merge_pdbml_info.err
-
-MRG_PDBML_INFO_XSL=stylesheet/merge_pdbml_info.xsl
+err=xsd2merge_pdbml_info.err
 
 if [ ! -e $MRG_PDBML_INFO_XSL ] ; then
 
- java -jar $SAXON -s:$PDBX_VALIDATION_XSD -xsl:$XSD2MRG_PDBML_INFO_XSL -o:$MRG_PDBML_INFO_XSL 2> $XSD2MRG_PDBML_INFO_XSL_ERR
+ java -jar $SAXON -s:$PDBX_VALIDATION_XSD -xsl:$XSD2MRG_PDBML_INFO_XSL -o:$MRG_PDBML_INFO_XSL 2> $err
 
  if [ $? = 0 ] ; then
-  rm -f $XSD2MRG_PDBML_INFO_XSL_ERR
+  rm -f $err
  else
-  cat $XSD2MRG_PDBML_INFO_XSL_ERR
+  cat $err
   exit 1
  fi
 
@@ -56,19 +44,13 @@ if [ ! -e $MRG_PDBML_INFO_XSL ] ; then
 
 fi
 
-PDBML_EXT=pdbml-ext
-
 if [ ! -d $PDBML_EXT ] ; then
  ./scripts/extract_pdbml.sh
 fi
 
-VALID_INFO_ALT=validation-info-alt
-
 if [ ! -d $VALID_INFO_ALT ] ; then
  ./scripts/extract_info.sh
 fi
-
-XML_VALID=XML-validation
 
 mkdir -p $XML_VALID
 
@@ -87,7 +69,7 @@ if [ $err != 0 ] || [ $total != $last ] ; then
 
  for proc_id in `seq 1 $MAXPROCS` ; do
 
-  ./scripts/merge_pdbml_info_worker.sh -d $XML_VALID -e $VALID_INFO_ALT -l $pdbml_file_list -n $proc_id"of"$MAXPROCS $VALID_OPT &
+  ./scripts/merge_pdbml_info_worker.sh -d $XML_VALID -l $pdbml_file_list -n $proc_id"of"$MAXPROCS $VALID_OPT &
 
  done
 

@@ -1,12 +1,9 @@
 #!/bin/bash
 
-SRC_DIR=validation_reports
+source ./scripts/env.sh
 
-XML_DIR=validation_info
-PDBML_EXT=pdbml-ext
-VALID_INFO_ALT=validation-info-alt
-XML_VALID=XML-validation
-RDF_VALID=RDF-validation
+SRC_DIR=$VALID_REPORT
+XML_DIR=$VALID_INFO
 
 pdb_id_list=pdb_id_list
 

@@ -1,17 +1,13 @@
 #!/bin/bash
 
+source ./scripts/env.sh
+
 DB_NAME="wwPDB Validation Report"
 ALT_NAME="wwPDB Validation Information"
 
-SRC_DIR=validation_reports
+SRC_DIR=$VALID_REPORT
 
 weekday=`date -u +"%w"`
-
-XML_DIR=validation_info
-PDBML_EXT=pdbml-ext
-VALID_INFO_ALT=validation-info-alt
-XML_VALID=XML-validation
-RDF_VALID=RDF-validation
 
 PDB_MIRRORS=("rsync.rcsb.org" "ftp.pdbj.org" "rsync.ebi.ac.uk")
 RSYNC_PORTS=("--port=33444" "" "")

@@ -1,5 +1,7 @@
 #!/bin/bash
 
+source ./scripts/env.sh
+
 if [ ! `which psql` ] ; then
 
  echo "psql: command not found..."
@@ -30,17 +32,15 @@ if [ $? != 0 ] ; then
 
 fi
 
-XSD2PGSCHEMA=extlibs/xsd2pgschema.jar
-
 if [ ! -e $XSD2PGSCHEMA ] ; then
  ./scripts/update_extlibs.sh
 fi
 
-XML_DIR=validation_info
+XML_DIR=$VALID_INFO
 FILE_EXT_DIGEST=_validation
 
-XSD_SCHEMA=resource/wwpdb_validation_v002.xsd
-DB_SCHEMA=resource/wwpdb_validation_v002.sql
+XSD_SCHEMA=$WWPDB_VALIDATION_XSD
+DB_SCHEMA=$WWPDB_VALIDATION_SQL
 
 java -classpath $XSD2PGSCHEMA xsd2pgschema --xsd $XSD_SCHEMA --ddl $DB_SCHEMA --no-rel --doc-key --no-key
 

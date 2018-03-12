@@ -1,12 +1,9 @@
 #!/bin/bash
 
-SRC_DIR=XML-noatom
+source ./scripts/env.sh
 
-XML_DIR=pdbml
-PDBML_EXT=pdbml-ext
-VALID_INFO_ALT=validation-info-alt
-XML_VALID=XML-validation
-RDF_VALID=RDF-validation
+SRC_DIR=$PDBML_NOATOM
+XML_DIR=$PDBML
 
 pdb_id_list=pdb_id_list
 

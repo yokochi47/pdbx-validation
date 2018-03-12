@@ -1,12 +1,9 @@
 #!/bin/bash
 
-SAXON=extlibs/saxon9he.jar
+source ./scripts/env.sh
 
-PDBMLV2RDF_XSL=stylesheet/pdbmlv2rdf.xsl
-
-WORK_DIR=RDF-validation
-
-FILE_LIST=pdbml_file_list
+WORK_DIR=
+FILE_LIST=
 
 ARGV=`getopt --long -o "d:l:n:" "$@"`
 eval set -- "$ARGV"

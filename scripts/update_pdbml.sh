@@ -1,16 +1,12 @@
 #!/bin/bash
 
+source ./scripts/env.sh
+
 DB_NAME=PDBML-noatom
 
-SRC_DIR=XML-noatom
+SRC_DIR=$PDBML_NOATOM
 
 weekday=`date -u +"%w"`
-
-XML_DIR=pdbml
-PDBML_EXT=pdbml-ext
-VALID_INFO_ALT=validation-info-alt
-XML_VALID=XML-validation
-RDF_VALID=RDF-validation
 
 PDB_MIRRORS=("rsync.rcsb.org" "ftp.pdbj.org" "rsync.ebi.ac.uk")
 RSYNC_PORTS=("--port=33444" "" "")

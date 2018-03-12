@@ -1,8 +1,7 @@
 #!/bin/bash
 
-WORK_DIR=XML-validation
-
-FILE_LIST=pdbml_file_list
+WORK_DIR=
+FILE_LIST=
 
 ARGV=`getopt --long -o "d:l:n:" "$@"`
 eval set -- "$ARGV"
