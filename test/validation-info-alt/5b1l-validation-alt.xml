@@ -4059,6 +4059,7 @@
          <PDBxv:auth_comp_id>CL</PDBxv:auth_comp_id>
          <PDBxv:auth_seq_id>301</PDBxv:auth_seq_id>
          <PDBxv:Biso_mean>36.250</PDBxv:Biso_mean>
+         <PDBxv:LLDFZ>2.85</PDBxv:LLDFZ>
          <PDBxv:LLDFZ_outlier_flag>Y</PDBxv:LLDFZ_outlier_flag>
          <PDBxv:LLDF_name>3</PDBxv:LLDF_name>
          <PDBxv:LLDF_number_residues_total>7</PDBxv:LLDF_number_residues_total>
@@ -5323,6 +5324,7 @@
          <PDBxv:auth_comp_id>MN</PDBxv:auth_comp_id>
          <PDBxv:auth_seq_id>301</PDBxv:auth_seq_id>
          <PDBxv:Biso_mean>35.980</PDBxv:Biso_mean>
+         <PDBxv:LLDFZ>0.61</PDBxv:LLDFZ>
          <PDBxv:LLDF_name>1</PDBxv:LLDF_name>
          <PDBxv:LLDF_number_residues_total>9</PDBxv:LLDF_number_residues_total>
          <PDBxv:LLDF_sigma>0.02</PDBxv:LLDF_sigma>
@@ -9159,6 +9161,7 @@
          <PDBxv:auth_comp_id>CL</PDBxv:auth_comp_id>
          <PDBxv:auth_seq_id>301</PDBxv:auth_seq_id>
          <PDBxv:Biso_mean>35.560</PDBxv:Biso_mean>
+         <PDBxv:LLDFZ>-1.29</PDBxv:LLDFZ>
          <PDBxv:LLDF_name>0</PDBxv:LLDF_name>
          <PDBxv:LLDF_number_residues_total>7</PDBxv:LLDF_number_residues_total>
          <PDBxv:LLDF_sigma>0.02</PDBxv:LLDF_sigma>
@@ -12015,6 +12018,7 @@
          <PDBxv:auth_comp_id>MN</PDBxv:auth_comp_id>
          <PDBxv:auth_seq_id>305</PDBxv:auth_seq_id>
          <PDBxv:Biso_mean>67.690</PDBxv:Biso_mean>
+         <PDBxv:LLDFZ>-4.50</PDBxv:LLDFZ>
          <PDBxv:LLDF_name>2</PDBxv:LLDF_name>
          <PDBxv:LLDF_number_residues_total>6</PDBxv:LLDF_number_residues_total>
          <PDBxv:LLDF_sigma>0.02</PDBxv:LLDF_sigma>
