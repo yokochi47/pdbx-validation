@@ -5,6 +5,7 @@ source ./scripts/env.sh
 DB_NAME=PDBML-noatom
 
 SRC_DIR=$PDBML_NOATOM
+XML_DIR=$PDBML
 
 weekday=`date -u +"%w"`
 

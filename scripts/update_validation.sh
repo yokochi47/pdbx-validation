@@ -6,6 +6,7 @@ DB_NAME="wwPDB Validation Report"
 ALT_NAME="wwPDB Validation Information"
 
 SRC_DIR=$VALID_REPORT
+XML_DIR=$VALID_INFO
 
 weekday=`date -u +"%w"`
 
