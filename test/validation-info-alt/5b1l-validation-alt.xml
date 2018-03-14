@@ -4063,6 +4063,7 @@
          <PDBxv:LLDFZ_outlier_flag>Y</PDBxv:LLDFZ_outlier_flag>
          <PDBxv:LLDF_name>3</PDBxv:LLDF_name>
          <PDBxv:LLDF_number_residues_total>7</PDBxv:LLDF_number_residues_total>
+         <PDBxv:LLDF>0.11</PDBxv:LLDF>
          <PDBxv:LLDF_sigma>0.01</PDBxv:LLDF_sigma>
          <PDBxv:RSCC>0.995</PDBxv:RSCC>
          <PDBxv:RSR>0.125</PDBxv:RSR>
@@ -5327,6 +5328,7 @@
          <PDBxv:LLDFZ>0.61</PDBxv:LLDFZ>
          <PDBxv:LLDF_name>1</PDBxv:LLDF_name>
          <PDBxv:LLDF_number_residues_total>9</PDBxv:LLDF_number_residues_total>
+         <PDBxv:LLDF>0.14</PDBxv:LLDF>
          <PDBxv:LLDF_sigma>0.02</PDBxv:LLDF_sigma>
          <PDBxv:RSCC>0.995</PDBxv:RSCC>
          <PDBxv:RSR>0.152</PDBxv:RSR>
@@ -9164,6 +9166,7 @@
          <PDBxv:LLDFZ>-1.29</PDBxv:LLDFZ>
          <PDBxv:LLDF_name>0</PDBxv:LLDF_name>
          <PDBxv:LLDF_number_residues_total>7</PDBxv:LLDF_number_residues_total>
+         <PDBxv:LLDF>0.12</PDBxv:LLDF>
          <PDBxv:LLDF_sigma>0.02</PDBxv:LLDF_sigma>
          <PDBxv:RSCC>0.988</PDBxv:RSCC>
          <PDBxv:RSR>0.093</PDBxv:RSR>
@@ -12021,6 +12024,7 @@
          <PDBxv:LLDFZ>-4.50</PDBxv:LLDFZ>
          <PDBxv:LLDF_name>2</PDBxv:LLDF_name>
          <PDBxv:LLDF_number_residues_total>6</PDBxv:LLDF_number_residues_total>
+         <PDBxv:LLDF>0.12</PDBxv:LLDF>
          <PDBxv:LLDF_sigma>0.02</PDBxv:LLDF_sigma>
          <PDBxv:RSCC>0.946</PDBxv:RSCC>
          <PDBxv:RSR>0.045</PDBxv:RSR>
