@@ -52,10 +52,11 @@ File path | Document
 
 ## Release notes
 
-- **Mar 13, 2018**: Release v1.1.0
+- **Mar 14, 2018**: Release v1.1.0
 	- Added RDF uploader scripts, virtuoso_scripts.
 	- Update wwPDB Validation Information Dictionary from v0.290 to 0.291.
 	- Fix translation of _pdbx_dcc_map.LLDFZ from @ligRSRZ.
+	- Fix translation of _pdbx_dcc_map.LLDF from @ligRSRnbrMean.
 
 - **Feb 20, 2018**: Release v1.0.0
 	- Changed dictionary version from v0 to v1.

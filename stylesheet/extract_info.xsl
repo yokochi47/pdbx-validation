@@ -1462,6 +1462,9 @@ Unmatched components exist in WilsonBaniso, <xsl:value-of select="position()"/>,
         <xsl:if test="@ligRSRnumnbrs">
           <xsl:element name="PDBxv:LLDF_number_residues_total"><xsl:value-of select="@ligRSRnumnbrs"/></xsl:element>
         </xsl:if>
+        <xsl:if test="@ligRSRnbrMean">
+          <xsl:element name="PDBxv:LLDF"><xsl:value-of select="@ligRSRnbrMean"/></xsl:element>
+        </xsl:if>
         <xsl:if test="@ligRSRnbrStdev">
           <xsl:element name="PDBxv:LLDF_sigma"><xsl:value-of select="@ligRSRnbrStdev"/></xsl:element>
         </xsl:if>
@@ -1477,7 +1480,6 @@ Unmatched components exist in WilsonBaniso, <xsl:value-of select="position()"/>,
 <PDBxv:Biso_mean_main_chain> xsd:decimal </PDBxv:Biso_mean_main_chain> [0..1]
 <PDBxv:Biso_mean_phosphate_group> xsd:decimal </PDBxv:Biso_mean_phosphate_group> [0..1]
 <PDBxv:Biso_mean_side_chain> xsd:decimal </PDBxv:Biso_mean_side_chain> [0..1]
-<PDBxv:LLDF> xsd:decimal </PDBxv:LLDF> [0..1]
 <PDBxv:RSCC_main_chain> xsd:decimal </PDBxv:RSCC_main_chain> [0..1]
 <PDBxv:RSCC_phosphate_group> xsd:decimal </PDBxv:RSCC_phosphate_group> [0..1]
 <PDBxv:RSCC_side_chain> xsd:decimal </PDBxv:RSCC_side_chain> [0..1]
