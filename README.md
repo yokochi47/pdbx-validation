@@ -14,32 +14,32 @@ The pdbx-validation is a generation tool for alternative [wwPDB validation infor
 
 File path | Document
 --------- | --------
-[schema/mmcif_pdbx_validation_v1.dic](https://github.com/yokochi47/pdbx-validation/blob/production/schema/mmcif_pdbx_validation_v1.291.dic) | wwPDB Validation Information Dictionary (v1.291)
-[schema/pdbx-validation-v1.xsd](https://github.com/yokochi47/pdbx-validation/blob/production/schema/pdbx-validation-v1.291.xsd) | PDBML-validation Schema (v1.291)
-[schema/pdbx-validation-v1.owl](https://github.com/yokochi47/pdbx-validation/blob/production/schema/pdbx-validation-v1.291.owl) | wwPDB/OWL-validation (v1.291)
-[schema/mmcif_ddl.dic](https://github.com/yokochi47/pdbx-validation/blob/production/schema/mmcif_ddl_v2.2.0.dic) | extended mmCIF DDL Core Dictionary (dubbed as v2.2.0)
+[schema/mmcif_pdbx_validation_v1.dic](https://github.com/yokochi47/pdbx-validation/blob/master/schema/mmcif_pdbx_validation_v1.291.dic) | wwPDB Validation Information Dictionary (v1.291)
+[schema/pdbx-validation-v1.xsd](https://github.com/yokochi47/pdbx-validation/blob/master/schema/pdbx-validation-v1.291.xsd) | PDBML-validation Schema (v1.291)
+[schema/pdbx-validation-v1.owl](https://github.com/yokochi47/pdbx-validation/blob/master/schema/pdbx-validation-v1.291.owl) | wwPDB/OWL-validation (v1.291)
+[schema/mmcif_ddl.dic](https://github.com/yokochi47/pdbx-validation/blob/master/schema/mmcif_ddl_v2.2.0.dic) | extended mmCIF DDL Core Dictionary (dubbed as v2.2.0)
 [resource/mmcif_pdbx_v50.dic](http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic) | current PDBx/mmCIF Dictionary (v5.291)
 [resource/pdbx-v50.xsd](http://mmcif.wwpdb.org/schema/pdbx-v50.xsd) | current PDBML Schema (v5.291)
 [resource/pdbx-v50.owl](https://rdf.wwpdb.org/schema/pdbx-v50.owl) | current PDBx ontology, ontology for wwPDB/RDF (v5.291)
 [resource/wwpdb_validation_v002.xsd](http://wwpdb.org/validation/schema/wwpdb_validation_v002.xsd) | current XML Schema for wwPDB validation information (v002, rev30291)
-[scripts](https://github.com/yokochi47/pdbx-validation/blob/production/scripts) | a directory contains scripts invoked by the 'run_all.sh' script
-[virtuoso_scripts](https://github.com/yokochi47/pdbx-validation/blob/production/virtuoso_scripts) | a directory contains scripts for uploading wwPDB/RDF-validation to local SPARQL endpoint
-[stylesheet](https://github.com/yokochi47/pdbx-validation/blob/production/stylesheet) | a directory contains XSL style sheets for generation of alternative wwPDB validation information
-[test](https://github.com/yokochi47/pdbx-validation/blob/production/test) | a directory contains resource files for test on several PDB entries
+[scripts](https://github.com/yokochi47/pdbx-validation/blob/master/scripts) | a directory contains scripts invoked by the 'run_all.sh' script
+[virtuoso_scripts](https://github.com/yokochi47/pdbx-validation/blob/master/virtuoso_scripts) | a directory contains scripts for uploading wwPDB/RDF-validation to local SPARQL endpoint
+[stylesheet](https://github.com/yokochi47/pdbx-validation/blob/master/stylesheet) | a directory contains XSL style sheets for generation of alternative wwPDB validation information
+[test](https://github.com/yokochi47/pdbx-validation/blob/master/test) | a directory contains resource files for test on several PDB entries
 
 ## Examples of alternative wwPDB validation information
 
 - PDB ID: [5B1L](https://pdbj.org/mine/summary/5b1l), Exptl. method: X-RAY DIFFRACTION
-	- PDBML-validation: [5b1l-validation-full.xml](https://github.com/yokochi47/pdbx-validation/blob/production/test/XML-validation/5b1l-validation-full.xml)
-	- wwPDB/RDF-validation: [5b1l-validation.rdf](https://github.com/yokochi47/pdbx-validation/blob/production/test/RDF-validation/5b1l-validation.rdf)
+	- PDBML-validation: [5b1l-validation-full.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/XML-validation/5b1l-validation-full.xml)
+	- wwPDB/RDF-validation: [5b1l-validation.rdf](https://github.com/yokochi47/pdbx-validation/blob/master/test/RDF-validation/5b1l-validation.rdf)
 
 - PDB ID: [5U9B](https://pdbj.org/mine/summary/5u9b), Exptl. method: SOLUTION NMR
-	- PDBML-validation: [5u9b-validation-full.xml](https://github.com/yokochi47/pdbx-validation/blob/production/test/XML-validation/5u9b-validation-full.xml)
-	- wwPDB/RDF-validation: [5u9b-validation.rdf](https://github.com/yokochi47/pdbx-validation/blob/production/test/RDF-validation/5u9b-validation.rdf)
+	- PDBML-validation: [5u9b-validation-full.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/XML-validation/5u9b-validation-full.xml)
+	- wwPDB/RDF-validation: [5u9b-validation.rdf](https://github.com/yokochi47/pdbx-validation/blob/master/test/RDF-validation/5u9b-validation.rdf)
 
 - PDB ID: [5H0S](https://pdbj.org/mine/summary/5h0s), Exptl. method: ELECTRON MICROSCOPY
-	- PDBML-validation: [5h0s-validation-full.xml](https://github.com/yokochi47/pdbx-validation/blob/production/test/XML-validation/5h0s-validation-full.xml)
-	- wwPDB/RDF-validation: [5h0s-validation.rdf](https://github.com/yokochi47/pdbx-validation/blob/production/test/RDF-validation/5h0s-validation.rdf)
+	- PDBML-validation: [5h0s-validation-full.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/XML-validation/5h0s-validation-full.xml)
+	- wwPDB/RDF-validation: [5h0s-validation.rdf](https://github.com/yokochi47/pdbx-validation/blob/master/test/RDF-validation/5h0s-validation.rdf)
 
 ## Software requirements
 
