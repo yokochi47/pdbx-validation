@@ -28,9 +28,9 @@ fi
 
 err=xsd2merge_pdbml_info.err
 
-if [ ! -e $MRG_PDBML_INFO_XSL ] ; then
+if [ ! -e $MERGE_PDBML_INFO_XSL ] ; then
 
- java -jar $SAXON -s:$PDBX_VALIDATION_XSD -xsl:$XSD2MRG_PDBML_INFO_XSL -o:$MRG_PDBML_INFO_XSL 2> $err
+ java -jar $SAXON -s:$PDBX_VALIDATION_XSD -xsl:$XSD2MERGE_PDBML_INFO_XSL -o:$MERGE_PDBML_INFO_XSL 2> $err
 
  if [ $? = 0 ] ; then
   rm -f $err
