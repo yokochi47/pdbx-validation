@@ -34,7 +34,7 @@ rm -rf \$\{project.basedir\}
 
 cd $EXTLIBS
 
-git clone https://git.code.sf.net/p/xsd2pgschema/code xsd2pgschema-code
+git clone git://git.code.sf.net/p/xsd2pgschema/code xsd2pgschema-code
 
 cd xsd2pgschema-code
 
