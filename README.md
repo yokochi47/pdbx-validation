@@ -52,6 +52,9 @@ File path | Document
 
 ## Release notes
 
+- **Mar 23, 2018**: Release v1.2.0
+	- Update PostgreSQL data migration scripts, in which differential update is enabled.
+
 - **Mar 14, 2018**: Release v1.1.0
 	- Added RDF uploader scripts, virtuoso_scripts.
 	- Update wwPDB Validation Information Dictionary from v0.290 to 0.291.

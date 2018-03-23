@@ -2,6 +2,8 @@
 
 source ./scripts/env.sh
 
+sync_update=true
+
 if [ ! `which psql` ] ; then
 
  echo "psql: command not found..."
@@ -55,25 +57,49 @@ case $ans in
   exit 1;;
 esac
 
-psql -d $DB_NAME -U $DB_USER -f $DB_SCHEMA --quiet
+relations=`psql -d $DB_NAME -U $DB_USER -c "\d" | wc -l`
+
+if [ $sync_update != "true" ] || [ $relations -eq 0 ] ; then
+ psql -d $DB_NAME -U $DB_USER -f $DB_SCHEMA --quiet
+fi
 
 WORK_DIR=pg_work
-CSV_DIR=$WORK_DIR/csv
+
+if [ $sync_update != "true" ] ; then
+ CSV_DIR=$WORK_DIR/csv
+else
+ MD5_DIR=chk_sum_pgsql
+fi
+
 ERR_DIR=$WORK_DIR/err
 
 rm -rf $WORK_DIR
 
 mkdir -p $WORK_DIR
-mkdir -p $CSV_DIR
+
+if [ $sync_update != "true" ] ; then
+ mkdir -p $CSV_DIR
+fi
+
 mkdir -p $ERR_DIR
 
 err_file=$ERR_DIR/all_err
 
-java -classpath $XSD2PGSCHEMA xml2pgcsv --xsd $XSD_SCHEMA --xml $XML_DIR/[0-9a-z]{2} --xml-file-ext gz --csv-dir $CSV_DIR --no-rel --doc-key --no-valid --xml-file-ext-digest $FILE_EXT_DIGEST --db-name $DB_NAME --db-user $DB_USER 2> $err_file
+if [ $sync_update != "true" ] ; then
+
+ java -classpath $XSD2PGSCHEMA xml2pgcsv --xsd $XSD_SCHEMA --xml $XML_DIR/[0-9a-z]{2} --xml-file-ext gz --csv-dir $CSV_DIR --no-rel --doc-key --no-valid --xml-file-ext-digest $FILE_EXT_DIGEST --db-name $DB_NAME --db-user $DB_USER 2> $err_file
+
+else
+
+ java -classpath $XSD2PGSCHEMA xml2pgsql --xsd $XSD_SCHEMA --xml $XML_DIR/[0-9a-z]{2} --xml-file-ext gz --sync $MD5_DIR --no-rel --doc-key --no-valid --xml-file-ext-digest $FILE_EXT_DIGEST --db-name $DB_NAME --db-user $DB_USER 2> $err_file
+
+fi
 
 if [ $? = 0 ] && [ ! -s $err_file ] ; then
  rm -f $err_file
- rm -rf $CSV_DIR
+ if [ $sync_update != "true" ] ; then
+  rm -rf $CSV_DIR
+ fi
 else
  echo "$0 aborted."
  exit 1
