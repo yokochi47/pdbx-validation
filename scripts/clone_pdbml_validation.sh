@@ -67,10 +67,9 @@ WORK_DIR=pg_work
 
 if [ $sync_update != "true" ] ; then
  CSV_DIR=$WORK_DIR/csv
-else
- MD5_DIR=chk_sum_pgsql
 fi
 
+MD5_DIR=chk_sum_pgsql
 ERR_DIR=$WORK_DIR/err
 
 rm -rf $WORK_DIR
@@ -87,7 +86,7 @@ err_file=$ERR_DIR/all_err
 
 if [ $sync_update != "true" ] ; then
 
- java -classpath $XSD2PGSCHEMA xml2pgcsv --xsd $XSD_SCHEMA --xml $XML_DIR/[0-9a-z]{2} --xml-file-ext gz --csv-dir $CSV_DIR --no-rel --doc-key --no-valid --xml-file-ext-digest $FILE_EXT_DIGEST --db-name $DB_NAME --db-user $DB_USER 2> $err_file
+ java -classpath $XSD2PGSCHEMA xml2pgcsv --xsd $XSD_SCHEMA --xml $XML_DIR/[0-9a-z]{2} --xml-file-ext gz --csv-dir $CSV_DIR --sync $MD5_DIR --no-rel --doc-key --no-valid --xml-file-ext-digest $FILE_EXT_DIGEST --db-name $DB_NAME --db-user $DB_USER 2> $err_file
 
 else
 
