@@ -66,6 +66,7 @@ fi
 WORK_DIR=pg_work
 
 if [ $sync_update != "true" ] ; then
+ sync_update=false
  CSV_DIR=$WORK_DIR/csv
 fi
 

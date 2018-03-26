@@ -64,6 +64,7 @@ fi
 relations=`psql -d $DB_NAME -U $DB_USER -c "\d" | wc -l`
 
 if [ $sync_update != "true" ] || [ $relations -eq 0 ] ; then
+ sync_update=false
  psql -d $DB_NAME -U $DB_USER -f $DB_SCHEMA --quiet
 fi
 
