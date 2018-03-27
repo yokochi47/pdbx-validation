@@ -38,70 +38,253 @@
 -- URI-reference = http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd
 --
 
+DROP TABLE IF EXISTS diffrn_attenuator CASCADE;
+DROP TABLE IF EXISTS diffrn_detector CASCADE;
+DROP TABLE IF EXISTS diffrn_measurement CASCADE;
+DROP TABLE IF EXISTS diffrn_orient_matrix CASCADE;
+DROP TABLE IF EXISTS diffrn_orient_refln CASCADE;
+DROP TABLE IF EXISTS diffrn_radiation CASCADE;
+DROP TABLE IF EXISTS diffrn_radiation_wavelength CASCADE;
+DROP TABLE IF EXISTS diffrn_refln CASCADE;
+DROP TABLE IF EXISTS diffrn_reflns CASCADE;
+DROP TABLE IF EXISTS diffrn_reflns_class CASCADE;
+DROP TABLE IF EXISTS diffrn_source CASCADE;
+DROP TABLE IF EXISTS diffrn_standard_refln CASCADE;
+DROP TABLE IF EXISTS diffrn_standards CASCADE;
+DROP TABLE IF EXISTS em_2d_crystal_entity CASCADE;
+DROP TABLE IF EXISTS em_3d_crystal_entity CASCADE;
+DROP TABLE IF EXISTS em_3d_fitting CASCADE;
+DROP TABLE IF EXISTS em_3d_fitting_list CASCADE;
+DROP TABLE IF EXISTS em_3d_reconstruction CASCADE;
+DROP TABLE IF EXISTS em_buffer CASCADE;
+DROP TABLE IF EXISTS em_buffer_component CASCADE;
+DROP TABLE IF EXISTS em_crystal_formation CASCADE;
+DROP TABLE IF EXISTS em_ctf_correction CASCADE;
+DROP TABLE IF EXISTS em_diffraction CASCADE;
+DROP TABLE IF EXISTS em_diffraction_shell CASCADE;
+DROP TABLE IF EXISTS em_diffraction_stats CASCADE;
+DROP TABLE IF EXISTS em_embedding CASCADE;
+DROP TABLE IF EXISTS em_entity_assembly_molwt CASCADE;
+DROP TABLE IF EXISTS em_entity_assembly_naturalsource CASCADE;
+DROP TABLE IF EXISTS em_entity_assembly_recombinant CASCADE;
+DROP TABLE IF EXISTS em_experiment CASCADE;
+DROP TABLE IF EXISTS em_helical_entity CASCADE;
+DROP TABLE IF EXISTS em_image_processing CASCADE;
+DROP TABLE IF EXISTS em_image_recording CASCADE;
+DROP TABLE IF EXISTS em_image_scans CASCADE;
+DROP TABLE IF EXISTS em_imaging CASCADE;
+DROP TABLE IF EXISTS em_imaging_optics CASCADE;
+DROP TABLE IF EXISTS em_particle_selection CASCADE;
+DROP TABLE IF EXISTS em_single_particle_entity CASCADE;
+DROP TABLE IF EXISTS em_software CASCADE;
+DROP TABLE IF EXISTS em_specimen CASCADE;
+DROP TABLE IF EXISTS em_staining CASCADE;
+DROP TABLE IF EXISTS em_virus_entity CASCADE;
+DROP TABLE IF EXISTS em_virus_natural_host CASCADE;
+DROP TABLE IF EXISTS em_virus_shell CASCADE;
+DROP TABLE IF EXISTS em_vitrification CASCADE;
+DROP TABLE IF EXISTS em_volume_selection CASCADE;
+DROP TABLE IF EXISTS entity_name_com CASCADE;
+DROP TABLE IF EXISTS entity_name_sys CASCADE;
+DROP TABLE IF EXISTS entry_link CASCADE;
+DROP TABLE IF EXISTS exptl CASCADE;
+DROP TABLE IF EXISTS ndb_struct_conf_na CASCADE;
+DROP TABLE IF EXISTS ndb_struct_na_base_pair CASCADE;
+DROP TABLE IF EXISTS ndb_struct_na_base_pair_step CASCADE;
+DROP TABLE IF EXISTS pdbx_audit_author CASCADE;
+DROP TABLE IF EXISTS pdbx_audit_revision_details CASCADE;
+DROP TABLE IF EXISTS pdbx_audit_revision_group CASCADE;
+DROP TABLE IF EXISTS pdbx_bond_distance_limits CASCADE;
+DROP TABLE IF EXISTS pdbx_coordinate_model CASCADE;
+DROP TABLE IF EXISTS pdbx_database_status CASCADE;
+DROP TABLE IF EXISTS pdbx_dcc_density CASCADE;
+DROP TABLE IF EXISTS pdbx_dcc_density_corr CASCADE;
+DROP TABLE IF EXISTS pdbx_dcc_entity_geometry CASCADE;
+DROP TABLE IF EXISTS pdbx_dcc_geometry CASCADE;
+DROP TABLE IF EXISTS pdbx_dcc_map CASCADE;
+DROP TABLE IF EXISTS pdbx_dcc_map_overall CASCADE;
+DROP TABLE IF EXISTS pdbx_dcc_mapman CASCADE;
+DROP TABLE IF EXISTS pdbx_dcc_mon_geometry CASCADE;
+DROP TABLE IF EXISTS pdbx_dcc_rscc_mapman CASCADE;
+DROP TABLE IF EXISTS pdbx_dcc_rscc_mapman_overall CASCADE;
+DROP TABLE IF EXISTS pdbx_diffrn_reflns_shell CASCADE;
+DROP TABLE IF EXISTS pdbx_distant_solvent_atoms CASCADE;
+DROP TABLE IF EXISTS pdbx_domain_range CASCADE;
+DROP TABLE IF EXISTS pdbx_entity_assembly CASCADE;
+DROP TABLE IF EXISTS pdbx_entity_descriptor CASCADE;
+DROP TABLE IF EXISTS pdbx_entity_nonpoly CASCADE;
+DROP TABLE IF EXISTS pdbx_entity_poly_comp_link_list CASCADE;
+DROP TABLE IF EXISTS pdbx_entry_details CASCADE;
+DROP TABLE IF EXISTS pdbx_helical_symmetry CASCADE;
+DROP TABLE IF EXISTS pdbx_missing_nmr_star_item CASCADE;
+DROP TABLE IF EXISTS pdbx_nmr_chem_shift_annotation CASCADE;
+DROP TABLE IF EXISTS pdbx_nmr_chem_shift_completeness CASCADE;
+DROP TABLE IF EXISTS pdbx_nmr_chem_shift_re_offset CASCADE;
+DROP TABLE IF EXISTS pdbx_nmr_constraints CASCADE;
+DROP TABLE IF EXISTS pdbx_nmr_details CASCADE;
+DROP TABLE IF EXISTS pdbx_nmr_ensemble CASCADE;
+DROP TABLE IF EXISTS pdbx_nmr_ensemble_rms CASCADE;
+DROP TABLE IF EXISTS pdbx_nmr_exptl CASCADE;
+DROP TABLE IF EXISTS pdbx_nmr_exptl_sample CASCADE;
+DROP TABLE IF EXISTS pdbx_nmr_exptl_sample_conditions CASCADE;
+DROP TABLE IF EXISTS pdbx_nmr_force_constants CASCADE;
+DROP TABLE IF EXISTS pdbx_nmr_refine CASCADE;
+DROP TABLE IF EXISTS pdbx_nmr_representative CASCADE;
+DROP TABLE IF EXISTS pdbx_nmr_software CASCADE;
+DROP TABLE IF EXISTS pdbx_nmr_spectrometer CASCADE;
+DROP TABLE IF EXISTS pdbx_nmr_unmapped_chem_shift CASCADE;
+DROP TABLE IF EXISTS pdbx_nmr_unparsed_chem_shift CASCADE;
+DROP TABLE IF EXISTS pdbx_nonpoly_scheme CASCADE;
+DROP TABLE IF EXISTS pdbx_percentile_entity_view CASCADE;
+DROP TABLE IF EXISTS pdbx_percentile_list CASCADE;
+DROP TABLE IF EXISTS pdbx_percentile_view CASCADE;
+DROP TABLE IF EXISTS "pdbx_phasing_MAD_set" CASCADE;
+DROP TABLE IF EXISTS "pdbx_phasing_MAD_set_shell" CASCADE;
+DROP TABLE IF EXISTS "pdbx_phasing_MAD_set_site" CASCADE;
+DROP TABLE IF EXISTS "pdbx_phasing_MAD_shell" CASCADE;
+DROP TABLE IF EXISTS "pdbx_phasing_MR" CASCADE;
+DROP TABLE IF EXISTS pdbx_phasing_dm CASCADE;
+DROP TABLE IF EXISTS pdbx_phasing_dm_shell CASCADE;
+DROP TABLE IF EXISTS pdbx_point_symmetry CASCADE;
+DROP TABLE IF EXISTS pdbx_poly_seq_scheme CASCADE;
+DROP TABLE IF EXISTS pdbx_re_refinement CASCADE;
+DROP TABLE IF EXISTS pdbx_refine CASCADE;
+DROP TABLE IF EXISTS pdbx_refine_component CASCADE;
+DROP TABLE IF EXISTS pdbx_refine_tls_group CASCADE;
+DROP TABLE IF EXISTS pdbx_reflns_twin CASCADE;
+DROP TABLE IF EXISTS pdbx_sequence_range CASCADE;
+DROP TABLE IF EXISTS pdbx_soln_scatter CASCADE;
+DROP TABLE IF EXISTS pdbx_soln_scatter_model CASCADE;
+DROP TABLE IF EXISTS pdbx_struct_assembly_gen CASCADE;
+DROP TABLE IF EXISTS pdbx_struct_assembly_prop CASCADE;
+DROP TABLE IF EXISTS pdbx_struct_asym_gen CASCADE;
+DROP TABLE IF EXISTS pdbx_struct_chem_comp_diagnostics CASCADE;
+DROP TABLE IF EXISTS pdbx_struct_conn_angle CASCADE;
+DROP TABLE IF EXISTS pdbx_struct_group_component_range CASCADE;
+DROP TABLE IF EXISTS pdbx_struct_group_components CASCADE;
+DROP TABLE IF EXISTS pdbx_struct_info CASCADE;
+DROP TABLE IF EXISTS pdbx_struct_legacy_oper_list CASCADE;
+DROP TABLE IF EXISTS pdbx_struct_mod_residue CASCADE;
+DROP TABLE IF EXISTS pdbx_struct_msym_gen CASCADE;
+DROP TABLE IF EXISTS pdbx_struct_nmr_ens_clust CASCADE;
+DROP TABLE IF EXISTS pdbx_struct_nmr_ens_clust_gen CASCADE;
+DROP TABLE IF EXISTS pdbx_struct_nmr_ens_dom_lim CASCADE;
+DROP TABLE IF EXISTS pdbx_struct_oper_list CASCADE;
+DROP TABLE IF EXISTS pdbx_struct_ref_seq_deletion CASCADE;
+DROP TABLE IF EXISTS pdbx_struct_ref_seq_insertion CASCADE;
+DROP TABLE IF EXISTS pdbx_struct_sheet_hbond CASCADE;
+DROP TABLE IF EXISTS pdbx_struct_special_symmetry CASCADE;
+DROP TABLE IF EXISTS pdbx_unobs_or_zero_occ_atoms CASCADE;
+DROP TABLE IF EXISTS pdbx_unobs_or_zero_occ_residues CASCADE;
+DROP TABLE IF EXISTS pdbx_validate_chiral CASCADE;
+DROP TABLE IF EXISTS pdbx_validate_close_contact CASCADE;
+DROP TABLE IF EXISTS pdbx_validate_main_chain_plane CASCADE;
+DROP TABLE IF EXISTS pdbx_validate_nmr_chem_shift CASCADE;
+DROP TABLE IF EXISTS pdbx_validate_peptide_omega CASCADE;
+DROP TABLE IF EXISTS pdbx_validate_planes_atom CASCADE;
+DROP TABLE IF EXISTS pdbx_validate_polymer_linkage CASCADE;
+DROP TABLE IF EXISTS pdbx_validate_rmsd_angle CASCADE;
+DROP TABLE IF EXISTS pdbx_validate_rmsd_bond CASCADE;
+DROP TABLE IF EXISTS pdbx_validate_rmsd_rings_atom CASCADE;
+DROP TABLE IF EXISTS pdbx_validate_rmsd_torsions_atom CASCADE;
+DROP TABLE IF EXISTS pdbx_validate_symm_contact CASCADE;
+DROP TABLE IF EXISTS pdbx_validate_torsion CASCADE;
+DROP TABLE IF EXISTS pdbx_validation_software CASCADE;
+DROP TABLE IF EXISTS phasing CASCADE;
+DROP TABLE IF EXISTS "phasing_MAD" CASCADE;
+DROP TABLE IF EXISTS "phasing_MAD_clust" CASCADE;
+DROP TABLE IF EXISTS "phasing_MAD_ratio" CASCADE;
+DROP TABLE IF EXISTS "phasing_MAD_set" CASCADE;
+DROP TABLE IF EXISTS "phasing_MIR" CASCADE;
+DROP TABLE IF EXISTS "phasing_MIR_der_refln" CASCADE;
+DROP TABLE IF EXISTS "phasing_MIR_der_shell" CASCADE;
+DROP TABLE IF EXISTS "phasing_MIR_der_site" CASCADE;
+DROP TABLE IF EXISTS "phasing_MIR_shell" CASCADE;
+DROP TABLE IF EXISTS phasing_averaging CASCADE;
+DROP TABLE IF EXISTS phasing_isomorphous CASCADE;
+DROP TABLE IF EXISTS phasing_set_refln CASCADE;
+DROP TABLE IF EXISTS refine CASCADE;
+DROP TABLE IF EXISTS "refine_B_iso" CASCADE;
+DROP TABLE IF EXISTS refine_analyze CASCADE;
+DROP TABLE IF EXISTS refine_funct_minimized CASCADE;
+DROP TABLE IF EXISTS refine_hist CASCADE;
+DROP TABLE IF EXISTS refine_ls_class CASCADE;
+DROP TABLE IF EXISTS refine_ls_restr CASCADE;
+DROP TABLE IF EXISTS refine_ls_restr_ncs CASCADE;
+DROP TABLE IF EXISTS refine_ls_restr_type CASCADE;
+DROP TABLE IF EXISTS refine_ls_shell CASCADE;
+DROP TABLE IF EXISTS refine_occupancy CASCADE;
+DROP TABLE IF EXISTS refln CASCADE;
+DROP TABLE IF EXISTS refln_sys_abs CASCADE;
+DROP TABLE IF EXISTS reflns CASCADE;
+DROP TABLE IF EXISTS reflns_class CASCADE;
+DROP TABLE IF EXISTS reflns_scale CASCADE;
+DROP TABLE IF EXISTS reflns_shell CASCADE;
+DROP TABLE IF EXISTS space_group CASCADE;
+DROP TABLE IF EXISTS space_group_symop CASCADE;
+DROP TABLE IF EXISTS struct CASCADE;
+DROP TABLE IF EXISTS struct_biol_view CASCADE;
+DROP TABLE IF EXISTS struct_conf CASCADE;
+DROP TABLE IF EXISTS struct_conn CASCADE;
+DROP TABLE IF EXISTS struct_conn_type CASCADE;
+DROP TABLE IF EXISTS struct_mon_details CASCADE;
+DROP TABLE IF EXISTS struct_mon_nucl CASCADE;
+DROP TABLE IF EXISTS struct_mon_prot CASCADE;
+DROP TABLE IF EXISTS struct_mon_prot_cis CASCADE;
+DROP TABLE IF EXISTS struct_ncs_dom_lim CASCADE;
+DROP TABLE IF EXISTS struct_ncs_ens_gen CASCADE;
+DROP TABLE IF EXISTS struct_ref_seq_dif CASCADE;
+DROP TABLE IF EXISTS struct_sheet_hbond CASCADE;
+DROP TABLE IF EXISTS struct_sheet_order CASCADE;
+DROP TABLE IF EXISTS struct_sheet_range CASCADE;
+DROP TABLE IF EXISTS struct_sheet_topology CASCADE;
+DROP TABLE IF EXISTS struct_site_gen CASCADE;
+DROP TABLE IF EXISTS struct_site_view CASCADE;
+DROP TABLE IF EXISTS symmetry CASCADE;
+DROP TABLE IF EXISTS symmetry_equiv CASCADE;
+DROP TABLE IF EXISTS diffrn_scale_group CASCADE;
+DROP TABLE IF EXISTS pdbx_domain CASCADE;
+DROP TABLE IF EXISTS pdbx_refine_tls CASCADE;
+DROP TABLE IF EXISTS pdbx_struct_assembly CASCADE;
+DROP TABLE IF EXISTS pdbx_struct_nmr_ens_dom CASCADE;
+DROP TABLE IF EXISTS pdbx_validate_planes CASCADE;
+DROP TABLE IF EXISTS pdbx_validate_rmsd_ring CASCADE;
+DROP TABLE IF EXISTS pdbx_validate_rmsd_torsion CASCADE;
+DROP TABLE IF EXISTS struct_asym CASCADE;
+DROP TABLE IF EXISTS struct_conf_type CASCADE;
+DROP TABLE IF EXISTS struct_ncs_dom CASCADE;
+DROP TABLE IF EXISTS struct_ncs_oper CASCADE;
+DROP TABLE IF EXISTS struct_ref_seq CASCADE;
+DROP TABLE IF EXISTS entity_poly_seq CASCADE;
+DROP TABLE IF EXISTS pdbx_audit_revision_history CASCADE;
+DROP TABLE IF EXISTS pdbx_percentile_conditions CASCADE;
+DROP TABLE IF EXISTS pdbx_struct_entity_inst CASCADE;
+DROP TABLE IF EXISTS pdbx_struct_group_list CASCADE;
+DROP TABLE IF EXISTS struct_biol CASCADE;
+DROP TABLE IF EXISTS struct_ref CASCADE;
+DROP TABLE IF EXISTS struct_site CASCADE;
+DROP TABLE IF EXISTS entity_poly CASCADE;
+DROP TABLE IF EXISTS "phasing_MAD_expt" CASCADE;
+DROP TABLE IF EXISTS "phasing_MIR_der" CASCADE;
+DROP TABLE IF EXISTS struct_ncs_ens CASCADE;
+DROP TABLE IF EXISTS struct_sheet CASCADE;
+DROP TABLE IF EXISTS em_entity_assembly CASCADE;
+DROP TABLE IF EXISTS pdbx_nmr_assigned_chem_shift_list CASCADE;
+DROP TABLE IF EXISTS phasing_set CASCADE;
+DROP TABLE IF EXISTS diffrn CASCADE;
+DROP TABLE IF EXISTS entity CASCADE;
+DROP TABLE IF EXISTS entry CASCADE;
 
 --
--- (quoted from diffrnType)
--- Data items in the DIFFRN category record details about the diffraction data and their measurement. Example 1 - based on PDB entry 5HVP and laboratory records for the structure corresponding to PDB entry 5HVP. <PDBxv:diffrnCategory> <PDBxv:diffrn id="Set1"> <PDBxv:ambient_environment> Mother liquor from the reservoir of the vapor diffusion experiment, mounted in room air</PDBxv:ambient_environment> <PDBxv:ambient_temp>293.0</PDBxv:ambient_temp> <PDBxv:crystal_support> 0.7 mm glass capillary, sealed with dental wax</PDBxv:crystal_support> <PDBxv:crystal_treatment> Equilibrated in rotating anode radiation enclosure for 18 hours prior to beginning of data collection</PDBxv:crystal_treatment> </PDBxv:diffrn> </PDBxv:diffrnCategory> Example 2 - based on data set TOZ of Willis, Beckwith & Tozer [(1991). Acta Cryst. C47, 2276-2277]. <PDBxv:diffrnCategory> <PDBxv:diffrn id="d1"> <PDBxv:ambient_temp>293</PDBxv:ambient_temp> <PDBxv:details> \q scan width (1.0 + 0.14tan\q)\&#37;, \q scan rate 1.2\&#37; per min. Background counts for 5 sec on each side every scan.</PDBxv:details> </PDBxv:diffrn> </PDBxv:diffrnCategory>
--- URI-reference = http://pdbml.pdb.org/dictionaries/mmcif_pdbx_v50.dic/Categories/diffrn.html
+-- (quoted from entryType)
+-- There is only one item in the ENTRY category, attribute id in category entry. This data item gives a name to this entry and is indirectly a key to the categories (such as CELL, GEOM, EXPTL) that describe information pertinent to the entire data block. Example 1 - based on PDB entry 5HVP and laboratory records for the structure corresponding to PDB entry 5HVP. <PDBxv:entryCategory> <PDBxv:entry id="5HVP"></PDBxv:entry> </PDBxv:entryCategory> Example 2 - based on data set TOZ of Willis, Beckwith & Tozer [Acta Cryst. (1991), C47, 2276-2277]. <PDBxv:entryCategory> <PDBxv:entry id="TOZ"></PDBxv:entry> </PDBxv:entryCategory>
+-- URI-reference = http://pdbml.pdb.org/dictionaries/mmcif_pdbx_v50.dic/Categories/entry.html
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), schema location: schema/pdbx-validation-v1.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
-CREATE TABLE diffrn (
+CREATE TABLE entry (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
-	ambient_environment TEXT ,
-	ambient_pressure DECIMAL CHECK ( ambient_pressure >= 0 ) ,
-	ambient_pressure_esd DECIMAL ,
-	ambient_pressure_gt DECIMAL CHECK ( ambient_pressure_gt >= 0 ) ,
-	ambient_pressure_lt DECIMAL CHECK ( ambient_pressure_lt >= 0 ) ,
-	ambient_temp DECIMAL CHECK ( ambient_temp >= 0 ) ,
-	ambient_temp_details TEXT ,
-	ambient_temp_esd DECIMAL ,
-	ambient_temp_gt DECIMAL CHECK ( ambient_temp_gt >= 0 ) ,
-	ambient_temp_lt DECIMAL CHECK ( ambient_temp_lt >= 0 ) ,
-	crystal_id TEXT ,
-	crystal_support TEXT ,
-	crystal_treatment TEXT ,
-	details TEXT ,
--- ATTRIBUTE
-	id TEXT NOT NULL 
-);
-
---
--- (quoted from diffrn_scale_groupType)
--- Data items in the DIFFRN_SCALE_GROUP category record details of the scaling factors applied to place all intensities in the reflection lists on a common scale. Scaling groups might, for example, correspond to each film in a multi-film data set or each crystal in a multi-crystal data set. Example 1 - based on CAD-4 diffractometer data obtained for Yb(S-C5H4N)2(THF)4. <PDBxv:diffrn_scale_groupCategory> <PDBxv:diffrn_scale_group code="A24"> <PDBxv:I_net>1.021</PDBxv:I_net> </PDBxv:diffrn_scale_group> </PDBxv:diffrn_scale_groupCategory>
--- URI-reference = http://pdbml.pdb.org/dictionaries/mmcif_pdbx_v50.dic/Categories/diffrn_scale_group.html
--- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), schema location: schema/pdbx-validation-v1.xsd
--- type: admin child, content: true, list: false, bridge: false, virtual: false
---
-CREATE TABLE diffrn_scale_group (
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
-	"I_net" DECIMAL CHECK ( "I_net" >= 0 ) ,
--- ATTRIBUTE
-	code TEXT NOT NULL 
-);
-
---
--- (quoted from em_entity_assemblyType)
--- Data items in the EM_ENTITY_ASSEMBLY category record details about each component of the complex. Example 1 - based on PDB entry 1C2W <PDBxv:em_entity_assemblyCategory> <PDBxv:em_entity_assembly id="1"> <PDBxv:name>50S Ribosomal Subunit</PDBxv:name> <PDBxv:parent_id>0</PDBxv:parent_id> <PDBxv:type>RIBOSOME</PDBxv:type> </PDBxv:em_entity_assembly> </PDBxv:em_entity_assemblyCategory> Example 2 - based on PDB entry 3IY7 <PDBxv:em_entity_assemblyCategory> <PDBxv:em_entity_assembly id="1"> <PDBxv:name>Fab fragment from MAb F interacting with feline panleukopenia virus (FPV)</PDBxv:name> <PDBxv:parent_id>0</PDBxv:parent_id> <PDBxv:type>COMPLEX</PDBxv:type> </PDBxv:em_entity_assembly> <PDBxv:em_entity_assembly id="2"> <PDBxv:name>feline panleukopenia virus</PDBxv:name> <PDBxv:parent_id>1</PDBxv:parent_id> <PDBxv:synonym>FPV</PDBxv:synonym> <PDBxv:type>VIRUS</PDBxv:type> </PDBxv:em_entity_assembly> <PDBxv:em_entity_assembly id="3"> <PDBxv:name>Fab fragment from Mab F</PDBxv:name> <PDBxv:parent_id>1</PDBxv:parent_id> <PDBxv:synonym>Fab</PDBxv:synonym> <PDBxv:type>COMPLEX</PDBxv:type> </PDBxv:em_entity_assembly> </PDBxv:em_entity_assemblyCategory>
--- URI-reference = http://pdbml.pdb.org/dictionaries/mmcif_pdbx_v50.dic/Categories/em_entity_assembly.html
--- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), schema location: schema/pdbx-validation-v1.xsd
--- type: admin child, content: true, list: false, bridge: false, virtual: false
---
-DROP TYPE IF EXISTS ENUM_em_entity_assembly_source;
-CREATE TYPE ENUM_em_entity_assembly_source AS ENUM ( 'NATURAL', 'RECOMBINANT', 'MULTIPLE SOURCES' );
-CREATE TABLE em_entity_assembly (
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
-	details TEXT ,
-	entity_id_list TEXT ,
-	name TEXT ,
-	oligomeric_details TEXT ,
-	parent_id TEXT ,
-	source ENUM_em_entity_assembly_source ,
-	synonym TEXT ,
-	type TEXT ,
 -- ATTRIBUTE
 	id TEXT NOT NULL 
 );
@@ -140,104 +323,28 @@ CREATE TABLE entity (
 );
 
 --
--- (quoted from entity_polyType)
--- Data items in the ENTITY_POLY category record details about the polymer, such as the type of the polymer, the number of monomers and whether it has nonstandard features. Example 1 - based on PDB entry 5HVP and laboratory records for the structure corresponding to PDB entry 5HVP. <PDBxv:entity_polyCategory> <PDBxv:entity_poly entity_id="1"> <PDBxv:nstd_chirality>no</PDBxv:nstd_chirality> <PDBxv:nstd_linkage>no</PDBxv:nstd_linkage> <PDBxv:nstd_monomer>no</PDBxv:nstd_monomer> <PDBxv:type>polypeptide(L)</PDBxv:type> <PDBxv:type_details xsi:nil="true" /> </PDBxv:entity_poly> </PDBxv:entity_polyCategory>
--- URI-reference = http://pdbml.pdb.org/dictionaries/mmcif_pdbx_v50.dic/Categories/entity_poly.html
+-- (quoted from diffrnType)
+-- Data items in the DIFFRN category record details about the diffraction data and their measurement. Example 1 - based on PDB entry 5HVP and laboratory records for the structure corresponding to PDB entry 5HVP. <PDBxv:diffrnCategory> <PDBxv:diffrn id="Set1"> <PDBxv:ambient_environment> Mother liquor from the reservoir of the vapor diffusion experiment, mounted in room air</PDBxv:ambient_environment> <PDBxv:ambient_temp>293.0</PDBxv:ambient_temp> <PDBxv:crystal_support> 0.7 mm glass capillary, sealed with dental wax</PDBxv:crystal_support> <PDBxv:crystal_treatment> Equilibrated in rotating anode radiation enclosure for 18 hours prior to beginning of data collection</PDBxv:crystal_treatment> </PDBxv:diffrn> </PDBxv:diffrnCategory> Example 2 - based on data set TOZ of Willis, Beckwith & Tozer [(1991). Acta Cryst. C47, 2276-2277]. <PDBxv:diffrnCategory> <PDBxv:diffrn id="d1"> <PDBxv:ambient_temp>293</PDBxv:ambient_temp> <PDBxv:details> \q scan width (1.0 + 0.14tan\q)\&#37;, \q scan rate 1.2\&#37; per min. Background counts for 5 sec on each side every scan.</PDBxv:details> </PDBxv:diffrn> </PDBxv:diffrnCategory>
+-- URI-reference = http://pdbml.pdb.org/dictionaries/mmcif_pdbx_v50.dic/Categories/diffrn.html
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), schema location: schema/pdbx-validation-v1.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
-DROP TYPE IF EXISTS ENUM_entity_poly_nstd_chirality;
-CREATE TYPE ENUM_entity_poly_nstd_chirality AS ENUM ( 'no', 'n', 'yes', 'y' );
-DROP TYPE IF EXISTS ENUM_entity_poly_nstd_linkage;
-CREATE TYPE ENUM_entity_poly_nstd_linkage AS ENUM ( 'no', 'n', 'yes', 'y' );
-DROP TYPE IF EXISTS ENUM_entity_poly_nstd_monomer;
-CREATE TYPE ENUM_entity_poly_nstd_monomer AS ENUM ( 'no', 'n', 'yes', 'y' );
-DROP TYPE IF EXISTS ENUM_entity_poly_type;
-CREATE TYPE ENUM_entity_poly_type AS ENUM ( 'polypeptide(D)', 'polypeptide(L)', 'polydeoxyribonucleotide', 'polyribonucleotide', 'polysaccharide(D)', 'polysaccharide(L)', 'polydeoxyribonucleotide/polyribonucleotide hybrid', 'cyclic-pseudo-peptide', 'peptide nucleic acid', 'other' );
-CREATE TABLE entity_poly (
+CREATE TABLE diffrn (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
-	nstd_chirality ENUM_entity_poly_nstd_chirality ,
-	nstd_linkage ENUM_entity_poly_nstd_linkage ,
-	nstd_monomer ENUM_entity_poly_nstd_monomer ,
-	number_of_monomers INTEGER CHECK ( number_of_monomers >= 1 ) ,
-	pdbx_seq_one_letter_code TEXT ,
-	pdbx_seq_one_letter_code_can TEXT ,
-	pdbx_seq_one_letter_code_sample TEXT ,
-	pdbx_strand_id TEXT ,
-	pdbx_target_identifier TEXT ,
-	type ENUM_entity_poly_type ,
-	type_details TEXT ,
--- ATTRIBUTE
-	entity_id TEXT NOT NULL 
-);
-
---
--- (quoted from entity_poly_seqType)
--- Data items in the ENTITY_POLY_SEQ category specify the sequence of monomers in a polymer. Allowance is made for the possibility of microheterogeneity in a sample by allowing a given sequence number to be correlated with more than one monomer ID. The corresponding ATOM_SITE entries should reflect this heterogeneity. Example 1 - based on PDB entry 5HVP and laboratory records for the structure corresponding to PDB entry 5HVP. <PDBxv:entity_poly_seqCategory> <PDBxv:entity_poly_seq entity_id="1" mon_id="PRO" num="1"></PDBxv:entity_poly_seq> <PDBxv:entity_poly_seq entity_id="1" mon_id="GLN" num="2"></PDBxv:entity_poly_seq> <PDBxv:entity_poly_seq entity_id="1" mon_id="ILE" num="3"></PDBxv:entity_poly_seq> <PDBxv:entity_poly_seq entity_id="1" mon_id="THR" num="4"></PDBxv:entity_poly_seq> <PDBxv:entity_poly_seq entity_id="1" mon_id="LEU" num="5"></PDBxv:entity_poly_seq> <PDBxv:entity_poly_seq entity_id="1" mon_id="TRP" num="6"></PDBxv:entity_poly_seq> <PDBxv:entity_poly_seq entity_id="1" mon_id="GLN" num="7"></PDBxv:entity_poly_seq> <PDBxv:entity_poly_seq entity_id="1" mon_id="ARG" num="8"></PDBxv:entity_poly_seq> <PDBxv:entity_poly_seq entity_id="1" mon_id="PRO" num="9"></PDBxv:entity_poly_seq> <PDBxv:entity_poly_seq entity_id="1" mon_id="LEU" num="10"></PDBxv:entity_poly_seq> <PDBxv:entity_poly_seq entity_id="1" mon_id="VAL" num="11"></PDBxv:entity_poly_seq> <PDBxv:entity_poly_seq entity_id="1" mon_id="THR" num="12"></PDBxv:entity_poly_seq> <PDBxv:entity_poly_seq entity_id="1" mon_id="ILE" num="13"></PDBxv:entity_poly_seq> <PDBxv:entity_poly_seq entity_id="1" mon_id="LYS" num="14"></PDBxv:entity_poly_seq> <PDBxv:entity_poly_seq entity_id="1" mon_id="ILE" num="15"></PDBxv:entity_poly_seq> <PDBxv:entity_poly_seq entity_id="1" mon_id="GLY" num="16"></PDBxv:entity_poly_seq> <PDBxv:entity_poly_seq entity_id="1" mon_id="GLY" num="17"></PDBxv:entity_poly_seq> <PDBxv:entity_poly_seq entity_id="1" mon_id="GLN" num="18"></PDBxv:entity_poly_seq> <PDBxv:entity_poly_seq entity_id="1" mon_id="LEU" num="19"></PDBxv:entity_poly_seq> <PDBxv:entity_poly_seq entity_id="1" mon_id="LYS" num="20"></PDBxv:entity_poly_seq> <PDBxv:entity_poly_seq entity_id="1" mon_id="GLU" num="21"></PDBxv:entity_poly_seq> <PDBxv:entity_poly_seq entity_id="1" mon_id="ALA" num="22"></PDBxv:entity_poly_seq> <PDBxv:entity_poly_seq entity_id="1" mon_id="LEU" num="23"></PDBxv:entity_poly_seq> <PDBxv:entity_poly_seq entity_id="1" mon_id="LEU" num="24"></PDBxv:entity_poly_seq> <PDBxv:entity_poly_seq entity_id="1" mon_id="ASP" num="25"></PDBxv:entity_poly_seq> </PDBxv:entity_poly_seqCategory>
--- URI-reference = http://pdbml.pdb.org/dictionaries/mmcif_pdbx_v50.dic/Categories/entity_poly_seq.html
--- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), schema location: schema/pdbx-validation-v1.xsd
--- type: admin child, content: true, list: false, bridge: false, virtual: false
---
-DROP TYPE IF EXISTS ENUM_entity_poly_seq_hetero;
-CREATE TYPE ENUM_entity_poly_seq_hetero AS ENUM ( 'no', 'n', 'yes', 'y' );
-CREATE TABLE entity_poly_seq (
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
-	hetero ENUM_entity_poly_seq_hetero ,
--- ATTRIBUTE
-	entity_id TEXT NOT NULL ,
--- ATTRIBUTE
-	mon_id TEXT NOT NULL ,
--- ATTRIBUTE
-	num INTEGER CHECK ( num >= 1 ) NOT NULL 
-);
-
---
--- (quoted from entryType)
--- There is only one item in the ENTRY category, attribute id in category entry. This data item gives a name to this entry and is indirectly a key to the categories (such as CELL, GEOM, EXPTL) that describe information pertinent to the entire data block. Example 1 - based on PDB entry 5HVP and laboratory records for the structure corresponding to PDB entry 5HVP. <PDBxv:entryCategory> <PDBxv:entry id="5HVP"></PDBxv:entry> </PDBxv:entryCategory> Example 2 - based on data set TOZ of Willis, Beckwith & Tozer [Acta Cryst. (1991), C47, 2276-2277]. <PDBxv:entryCategory> <PDBxv:entry id="TOZ"></PDBxv:entry> </PDBxv:entryCategory>
--- URI-reference = http://pdbml.pdb.org/dictionaries/mmcif_pdbx_v50.dic/Categories/entry.html
--- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), schema location: schema/pdbx-validation-v1.xsd
--- type: admin child, content: true, list: false, bridge: false, virtual: false
---
-CREATE TABLE entry (
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
--- ATTRIBUTE
-	id TEXT NOT NULL 
-);
-
---
--- (quoted from pdbx_audit_revision_historyType)
--- Data items in the PDBX_AUDIT_REVISION_HISTORY category record the revision history for a data entry. Example 1 - <PDBxv:pdbx_audit_revision_historyCategory> <PDBxv:pdbx_audit_revision_history data_content_type="Structure model" ordinal="1"> <PDBxv:major_revision>1</PDBxv:major_revision> <PDBxv:minor_revision>0</PDBxv:minor_revision> <PDBxv:revision_date>2017-03-01</PDBxv:revision_date> </PDBxv:pdbx_audit_revision_history> <PDBxv:pdbx_audit_revision_history data_content_type="Structure model" ordinal="2"> <PDBxv:major_revision>1</PDBxv:major_revision> <PDBxv:minor_revision>1</PDBxv:minor_revision> <PDBxv:revision_date>2017-03-08</PDBxv:revision_date> </PDBxv:pdbx_audit_revision_history> </PDBxv:pdbx_audit_revision_historyCategory>
--- URI-reference = http://pdbml.pdb.org/dictionaries/mmcif_pdbx_v50.dic/Categories/pdbx_audit_revision_history.html
--- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), schema location: schema/pdbx-validation-v1.xsd
--- type: admin child, content: true, list: false, bridge: false, virtual: false
---
-DROP TYPE IF EXISTS ENUM_pdbx_audit_revision_history_data_content_type;
-CREATE TYPE ENUM_pdbx_audit_revision_history_data_content_type AS ENUM ( 'Structure model', 'NMR restraints', 'NMR shifts', 'Structure factors' );
-CREATE TABLE pdbx_audit_revision_history (
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
-	major_revision INTEGER ,
-	minor_revision INTEGER ,
-	revision_date DATE ,
--- ATTRIBUTE
-	data_content_type ENUM_pdbx_audit_revision_history_data_content_type NOT NULL ,
--- ATTRIBUTE
-	ordinal INTEGER NOT NULL 
-);
-
---
--- (quoted from pdbx_domainType)
--- Data items in the PDBX_DOMAIN category record information about domain definitions. A domain need not correspond to a completely polypeptide chain; it can be composed of one or more segments in a single chain, or by segments from more than one chain. Example 1 - <PDBxv:pdbx_domainCategory> <PDBxv:pdbx_domain id="d1"> <PDBxv:details>Chains A, B</PDBxv:details> </PDBxv:pdbx_domain> <PDBxv:pdbx_domain id="d2"> <PDBxv:details>Asym_id D Residues 1-134</PDBxv:details> </PDBxv:pdbx_domain> </PDBxv:pdbx_domainCategory>
--- URI-reference = http://pdbml.pdb.org/dictionaries/mmcif_pdbx_v50.dic/Categories/pdbx_domain.html
--- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), schema location: schema/pdbx-validation-v1.xsd
--- type: admin child, content: true, list: false, bridge: false, virtual: false
---
-CREATE TABLE pdbx_domain (
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	ambient_environment TEXT ,
+	ambient_pressure DECIMAL CHECK ( ambient_pressure >= 0 ) ,
+	ambient_pressure_esd DECIMAL ,
+	ambient_pressure_gt DECIMAL CHECK ( ambient_pressure_gt >= 0 ) ,
+	ambient_pressure_lt DECIMAL CHECK ( ambient_pressure_lt >= 0 ) ,
+	ambient_temp DECIMAL CHECK ( ambient_temp >= 0 ) ,
+	ambient_temp_details TEXT ,
+	ambient_temp_esd DECIMAL ,
+	ambient_temp_gt DECIMAL CHECK ( ambient_temp_gt >= 0 ) ,
+	ambient_temp_lt DECIMAL CHECK ( ambient_temp_lt >= 0 ) ,
+	crystal_id TEXT ,
+	crystal_support TEXT ,
+	crystal_treatment TEXT ,
 	details TEXT ,
 -- ATTRIBUTE
 	id TEXT NOT NULL 
@@ -275,6 +382,228 @@ CREATE TABLE pdbx_nmr_assigned_chem_shift_list (
 );
 
 --
+-- (quoted from phasing_setType)
+-- Data items in the PHASING_SET category record details about the data sets used in a phasing experiment. A given data set may be used in a number of different ways; for instance, a single data set could be used both as an isomorphous derivative and as a component of a multiple-wavelength calculation. This category establishes identifiers for each data set and permits the archiving of a subset of experimental information for each data set (cell constants, wavelength, temperature etc.). This and related categories of data items are provided so that derivative intensity and phase information can be stored in the same data block as the information for the refined structure. If all the possible experimental information for each data set (raw data sets, crystal growth conditions etc.) is to be archived, these data items should be recorded in a separate data block. Example 1 - based on laboratory records for an Hg/Pt derivative of protein NS1. <PDBxv:phasing_setCategory> <PDBxv:phasing_set id="NS1-96"> <PDBxv:cell_angle_alpha>90.0</PDBxv:cell_angle_alpha> <PDBxv:cell_angle_beta>90.0</PDBxv:cell_angle_beta> <PDBxv:cell_angle_gamma>90.0</PDBxv:cell_angle_gamma> <PDBxv:cell_length_a>38.63</PDBxv:cell_length_a> <PDBxv:cell_length_b>38.63</PDBxv:cell_length_b> <PDBxv:cell_length_c>82.88</PDBxv:cell_length_c> <PDBxv:detector_specific>RXII</PDBxv:detector_specific> <PDBxv:detector_type>image plate</PDBxv:detector_type> <PDBxv:radiation_wavelength>1.5145</PDBxv:radiation_wavelength> </PDBxv:phasing_set> </PDBxv:phasing_setCategory>
+-- URI-reference = http://pdbml.pdb.org/dictionaries/mmcif_pdbx_v50.dic/Categories/phasing_set.html
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), schema location: schema/pdbx-validation-v1.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE phasing_set (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+	cell_angle_alpha DECIMAL CHECK ( cell_angle_alpha >= 0 AND cell_angle_alpha <= 180 ) ,
+	cell_angle_beta DECIMAL CHECK ( cell_angle_beta >= 0 AND cell_angle_beta <= 180 ) ,
+	cell_angle_gamma DECIMAL CHECK ( cell_angle_gamma >= 0 AND cell_angle_gamma <= 180 ) ,
+	cell_length_a DECIMAL CHECK ( cell_length_a >= 0 ) ,
+	cell_length_b DECIMAL CHECK ( cell_length_b >= 0 ) ,
+	cell_length_c DECIMAL CHECK ( cell_length_c >= 0 ) ,
+	detector_specific TEXT ,
+	detector_type TEXT ,
+	pdbx_d_res_high DECIMAL CHECK ( pdbx_d_res_high >= 0 ) ,
+	pdbx_d_res_low DECIMAL CHECK ( pdbx_d_res_low >= 0 ) ,
+	pdbx_temp_details TEXT ,
+	radiation_source_specific TEXT ,
+	radiation_wavelength DECIMAL CHECK ( radiation_wavelength >= 0 ) ,
+	temp DECIMAL CHECK ( temp >= 0 ) ,
+-- ATTRIBUTE
+	id TEXT NOT NULL 
+);
+
+--
+-- (quoted from em_entity_assemblyType)
+-- Data items in the EM_ENTITY_ASSEMBLY category record details about each component of the complex. Example 1 - based on PDB entry 1C2W <PDBxv:em_entity_assemblyCategory> <PDBxv:em_entity_assembly id="1"> <PDBxv:name>50S Ribosomal Subunit</PDBxv:name> <PDBxv:parent_id>0</PDBxv:parent_id> <PDBxv:type>RIBOSOME</PDBxv:type> </PDBxv:em_entity_assembly> </PDBxv:em_entity_assemblyCategory> Example 2 - based on PDB entry 3IY7 <PDBxv:em_entity_assemblyCategory> <PDBxv:em_entity_assembly id="1"> <PDBxv:name>Fab fragment from MAb F interacting with feline panleukopenia virus (FPV)</PDBxv:name> <PDBxv:parent_id>0</PDBxv:parent_id> <PDBxv:type>COMPLEX</PDBxv:type> </PDBxv:em_entity_assembly> <PDBxv:em_entity_assembly id="2"> <PDBxv:name>feline panleukopenia virus</PDBxv:name> <PDBxv:parent_id>1</PDBxv:parent_id> <PDBxv:synonym>FPV</PDBxv:synonym> <PDBxv:type>VIRUS</PDBxv:type> </PDBxv:em_entity_assembly> <PDBxv:em_entity_assembly id="3"> <PDBxv:name>Fab fragment from Mab F</PDBxv:name> <PDBxv:parent_id>1</PDBxv:parent_id> <PDBxv:synonym>Fab</PDBxv:synonym> <PDBxv:type>COMPLEX</PDBxv:type> </PDBxv:em_entity_assembly> </PDBxv:em_entity_assemblyCategory>
+-- URI-reference = http://pdbml.pdb.org/dictionaries/mmcif_pdbx_v50.dic/Categories/em_entity_assembly.html
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), schema location: schema/pdbx-validation-v1.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+DROP TYPE IF EXISTS ENUM_em_entity_assembly_source;
+CREATE TYPE ENUM_em_entity_assembly_source AS ENUM ( 'NATURAL', 'RECOMBINANT', 'MULTIPLE SOURCES' );
+CREATE TABLE em_entity_assembly (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+	details TEXT ,
+	entity_id_list TEXT ,
+	name TEXT ,
+	oligomeric_details TEXT ,
+	parent_id TEXT ,
+	source ENUM_em_entity_assembly_source ,
+	synonym TEXT ,
+	type TEXT ,
+-- ATTRIBUTE
+	id TEXT NOT NULL 
+);
+
+--
+-- (quoted from struct_sheetType)
+-- Data items in the STRUCT_SHEET category record details about the beta-sheets. Example 1 - simple beta-barrel. N O N O N O N O N O N O 10--11--12--13--14--15--16--17--18--19--20 strand_a N O N O N O N O N O / \ / \ / \ / \ / \ N O N O N O N O N O N O 30--31--32--33--34--35--36--37--38--39--40 strand_b N O N O N O N O N O / \ / \ / \ / \ / \ N O N O N O N O N O N O 50--51--52--53--54--55--56--57--58--59--60 strand_c N O N O N O N O N O / \ / \ / \ / \ / \ N O N O N O N O N O N O 70--71--72--73--74--75--76--77--78--79--80 strand_d N O N O N O N O N O / \ / \ / \ / \ / \ N O N O N O N O N O N O 90--91--92--93--94--95--96--97--98--99-100 strand_e N O N O N O N O N O / \ / \ / \ / \ / \ N O N O N O N O N O N O 110-111-112-113-114-115-116-117-118-119-120 strand_f N O N O N O N O N O / \ / \ / \ / \ / \ N O N O N O N O N O N O 130-131-132-133-134-135-136-137-138-139-140 strand_g N O N O N O N O N O / \ / \ / \ / \ / \ N O N O N O N O N O N O 150-151-152-153-154-155-156-157-158-159-160 strand_h N O N O N O N O N O / \ / \ / \ / \ / \ <PDBxv:struct_sheetCategory> <PDBxv:struct_sheet id="sheet_1"> <PDBxv:details xsi:nil="true" /> <PDBxv:number_strands>8</PDBxv:number_strands> <PDBxv:type>beta-barrel</PDBxv:type> </PDBxv:struct_sheet> </PDBxv:struct_sheetCategory> Example 2 - five stranded mixed-sense sheet with one two-piece strand. N O N O N O N O -10--11--12--13--14--15--16--17--18-> strand_a N O N O N O N O N O | | | | | | | | | | O N O N O N O N O N <-119-118-117-116-115-114-113-112-111-110- strand_b O N O N O N O N O N \ / \ / \ / \ / \ O N O N O N O N O N O N <-41--40--39--38--37--36--35--34--33--32--31--30- strand_c O N O N O N O N O N O N | | | | | | | | | | | | N O N O N O N O N O N O strand_d1 -50--51--52-> -90--91--92--93--95--95--96--97-> strand_d2 N O N O N O N O N O | | | | | | | | | | | | O N O N O N O N O N O N <-80--79--78--77--76--75--74--73--72--71--70- strand_e O N O N O N O N O N <PDBxv:struct_sheetCategory> <PDBxv:struct_sheet id="sheet_2"> <PDBxv:details>strand_d is in two pieces</PDBxv:details> <PDBxv:number_strands>5</PDBxv:number_strands> <PDBxv:type>five stranded, mixed-sense</PDBxv:type> </PDBxv:struct_sheet> </PDBxv:struct_sheetCategory>
+-- URI-reference = http://pdbml.pdb.org/dictionaries/mmcif_pdbx_v50.dic/Categories/struct_sheet.html
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), schema location: schema/pdbx-validation-v1.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE struct_sheet (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+	details TEXT ,
+	number_strands INTEGER ,
+	type TEXT ,
+-- ATTRIBUTE
+	id TEXT NOT NULL 
+);
+
+--
+-- (quoted from entity_polyType)
+-- Data items in the ENTITY_POLY category record details about the polymer, such as the type of the polymer, the number of monomers and whether it has nonstandard features. Example 1 - based on PDB entry 5HVP and laboratory records for the structure corresponding to PDB entry 5HVP. <PDBxv:entity_polyCategory> <PDBxv:entity_poly entity_id="1"> <PDBxv:nstd_chirality>no</PDBxv:nstd_chirality> <PDBxv:nstd_linkage>no</PDBxv:nstd_linkage> <PDBxv:nstd_monomer>no</PDBxv:nstd_monomer> <PDBxv:type>polypeptide(L)</PDBxv:type> <PDBxv:type_details xsi:nil="true" /> </PDBxv:entity_poly> </PDBxv:entity_polyCategory>
+-- URI-reference = http://pdbml.pdb.org/dictionaries/mmcif_pdbx_v50.dic/Categories/entity_poly.html
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), schema location: schema/pdbx-validation-v1.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+DROP TYPE IF EXISTS ENUM_entity_poly_nstd_chirality;
+CREATE TYPE ENUM_entity_poly_nstd_chirality AS ENUM ( 'no', 'n', 'yes', 'y' );
+DROP TYPE IF EXISTS ENUM_entity_poly_nstd_linkage;
+CREATE TYPE ENUM_entity_poly_nstd_linkage AS ENUM ( 'no', 'n', 'yes', 'y' );
+DROP TYPE IF EXISTS ENUM_entity_poly_nstd_monomer;
+CREATE TYPE ENUM_entity_poly_nstd_monomer AS ENUM ( 'no', 'n', 'yes', 'y' );
+DROP TYPE IF EXISTS ENUM_entity_poly_type;
+CREATE TYPE ENUM_entity_poly_type AS ENUM ( 'polypeptide(D)', 'polypeptide(L)', 'polydeoxyribonucleotide', 'polyribonucleotide', 'polysaccharide(D)', 'polysaccharide(L)', 'polydeoxyribonucleotide/polyribonucleotide hybrid', 'cyclic-pseudo-peptide', 'peptide nucleic acid', 'other' );
+CREATE TABLE entity_poly (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+	nstd_chirality ENUM_entity_poly_nstd_chirality ,
+	nstd_linkage ENUM_entity_poly_nstd_linkage ,
+	nstd_monomer ENUM_entity_poly_nstd_monomer ,
+	number_of_monomers INTEGER CHECK ( number_of_monomers >= 1 ) ,
+	pdbx_seq_one_letter_code TEXT ,
+	pdbx_seq_one_letter_code_can TEXT ,
+	pdbx_seq_one_letter_code_sample TEXT ,
+	pdbx_strand_id TEXT ,
+	pdbx_target_identifier TEXT ,
+	type ENUM_entity_poly_type ,
+	type_details TEXT ,
+-- ATTRIBUTE
+	entity_id TEXT NOT NULL 
+);
+
+--
+-- (quoted from phasing_MAD_exptType)
+-- Data items in the PHASING_MAD_EXPT category record details about a MAD phasing experiment, such as the number of experiments that were clustered together to produce a set of phases or the statistics for those phases. Example 1 - based on a paper by Shapiro et al. [Nature (London) (1995), 374, 327-337]. <PDBxv:phasing_MAD_exptCategory> <PDBxv:phasing_MAD_expt id="1"> <PDBxv:R_normal_all>0.063</PDBxv:R_normal_all> <PDBxv:R_normal_anom_scat>0.451</PDBxv:R_normal_anom_scat> <PDBxv:delta_delta_phi>58.5</PDBxv:delta_delta_phi> <PDBxv:delta_phi_sigma>20.3</PDBxv:delta_phi_sigma> <PDBxv:mean_fom>0.88</PDBxv:mean_fom> <PDBxv:number_clust>2</PDBxv:number_clust> </PDBxv:phasing_MAD_expt> <PDBxv:phasing_MAD_expt id="2"> <PDBxv:R_normal_all>0.051</PDBxv:R_normal_all> <PDBxv:R_normal_anom_scat>0.419</PDBxv:R_normal_anom_scat> <PDBxv:delta_delta_phi>36.8</PDBxv:delta_delta_phi> <PDBxv:delta_phi_sigma>18.2</PDBxv:delta_phi_sigma> <PDBxv:mean_fom>0.93</PDBxv:mean_fom> <PDBxv:number_clust>1</PDBxv:number_clust> </PDBxv:phasing_MAD_expt> </PDBxv:phasing_MAD_exptCategory>
+-- URI-reference = http://pdbml.pdb.org/dictionaries/mmcif_pdbx_v50.dic/Categories/phasing_MAD_expt.html
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), schema location: schema/pdbx-validation-v1.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "phasing_MAD_expt" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+	"R_normal_all" DECIMAL ,
+	"R_normal_anom_scat" DECIMAL ,
+	delta_delta_phi DECIMAL ,
+	delta_phi DECIMAL ,
+	delta_phi_sigma DECIMAL ,
+	mean_fom DECIMAL ,
+	number_clust INTEGER ,
+-- ATTRIBUTE
+	id TEXT NOT NULL 
+);
+
+--
+-- (quoted from phasing_MIR_derType)
+-- Data items in the PHASING_MIR_DER category record details about individual derivatives used in the phasing of the structure when methods involving isomorphous replacement are involved. A derivative in this context does not necessarily equate with a data set; for instance, the same data set could be used to one resolution limit as an isomorphous scatterer and to a different resolution (and with a different sigma cutoff) as an anomalous scatterer. These would be treated as two distinct derivatives, although both derivatives would point to the same data sets via attribute der_set_id in category phasing_MIR_der and attribute native_set_id in category phasing_MIR_der. Example 1 - based on a paper by Zanotti et al. [J. Biol. Chem. (1993), 268, 10728-10738]. <PDBxv:phasing_MIR_derCategory> <PDBxv:phasing_MIR_der id="KAu(CN)2"> <PDBxv:details>major site interpreted in difference Patterson</PDBxv:details> <PDBxv:number_of_sites>3</PDBxv:number_of_sites> </PDBxv:phasing_MIR_der> <PDBxv:phasing_MIR_der id="K2HgI4"> <PDBxv:details>sites found in cross-difference Fourier</PDBxv:details> <PDBxv:number_of_sites>6</PDBxv:number_of_sites> </PDBxv:phasing_MIR_der> <PDBxv:phasing_MIR_der id="K3IrCl6"> <PDBxv:details>sites found in cross-difference Fourier</PDBxv:details> <PDBxv:number_of_sites>2</PDBxv:number_of_sites> </PDBxv:phasing_MIR_der> <PDBxv:phasing_MIR_der id="All"> <PDBxv:details>data for all three derivatives combined</PDBxv:details> <PDBxv:number_of_sites>11</PDBxv:number_of_sites> </PDBxv:phasing_MIR_der> </PDBxv:phasing_MIR_derCategory>
+-- URI-reference = http://pdbml.pdb.org/dictionaries/mmcif_pdbx_v50.dic/Categories/phasing_MIR_der.html
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), schema location: schema/pdbx-validation-v1.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "phasing_MIR_der" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+	"R_cullis_acentric" DECIMAL CHECK ( "R_cullis_acentric" >= 0 ) ,
+	"R_cullis_anomalous" DECIMAL CHECK ( "R_cullis_anomalous" >= 0 ) ,
+	"R_cullis_centric" DECIMAL CHECK ( "R_cullis_centric" >= 0 ) ,
+	d_res_high DECIMAL CHECK ( d_res_high >= 0 ) ,
+	d_res_low DECIMAL CHECK ( d_res_low >= 0 ) ,
+	der_set_id TEXT ,
+	details TEXT ,
+	native_set_id TEXT ,
+	number_of_sites INTEGER ,
+	"pdbx_R_cullis" DECIMAL ,
+	"pdbx_R_kraut" DECIMAL ,
+	"pdbx_R_kraut_acentric" DECIMAL ,
+	"pdbx_R_kraut_centric" DECIMAL ,
+	pdbx_fom DECIMAL ,
+	pdbx_fom_acentric DECIMAL ,
+	pdbx_fom_centric DECIMAL ,
+	pdbx_loc DECIMAL ,
+	pdbx_loc_acentric DECIMAL ,
+	pdbx_loc_centric DECIMAL ,
+	pdbx_power DECIMAL ,
+	pdbx_reflns INTEGER ,
+	power_acentric DECIMAL CHECK ( power_acentric >= 0 ) ,
+	power_centric DECIMAL CHECK ( power_centric >= 0 ) ,
+	reflns_acentric INTEGER CHECK ( reflns_acentric >= 0 ) ,
+	reflns_anomalous INTEGER CHECK ( reflns_anomalous >= 0 ) ,
+	reflns_centric INTEGER CHECK ( reflns_centric >= 0 ) ,
+	reflns_criteria TEXT ,
+-- ATTRIBUTE
+	id TEXT NOT NULL 
+);
+
+--
+-- (quoted from struct_ncs_ensType)
+-- Data items in the STRUCT_NCS_ENS category record information about ensembles of domains related by noncrystallographic symmetry. The point group of the ensemble when taken as a whole may be specified, as well as any special aspects of the ensemble that require description. Example 1 - based on laboratory records for the collagen-like peptide, HYP-. <PDBxv:struct_ncs_ensCategory> <PDBxv:struct_ncs_ens id="en1"> <PDBxv:details> The ensemble represents the pseudo-twofold symmetry between domains d1 and d2.</PDBxv:details> </PDBxv:struct_ncs_ens> </PDBxv:struct_ncs_ensCategory>
+-- URI-reference = http://pdbml.pdb.org/dictionaries/mmcif_pdbx_v50.dic/Categories/struct_ncs_ens.html
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), schema location: schema/pdbx-validation-v1.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE struct_ncs_ens (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+	details TEXT ,
+	point_group TEXT ,
+-- ATTRIBUTE
+	id TEXT NOT NULL 
+);
+
+--
+-- (quoted from entity_poly_seqType)
+-- Data items in the ENTITY_POLY_SEQ category specify the sequence of monomers in a polymer. Allowance is made for the possibility of microheterogeneity in a sample by allowing a given sequence number to be correlated with more than one monomer ID. The corresponding ATOM_SITE entries should reflect this heterogeneity. Example 1 - based on PDB entry 5HVP and laboratory records for the structure corresponding to PDB entry 5HVP. <PDBxv:entity_poly_seqCategory> <PDBxv:entity_poly_seq entity_id="1" mon_id="PRO" num="1"></PDBxv:entity_poly_seq> <PDBxv:entity_poly_seq entity_id="1" mon_id="GLN" num="2"></PDBxv:entity_poly_seq> <PDBxv:entity_poly_seq entity_id="1" mon_id="ILE" num="3"></PDBxv:entity_poly_seq> <PDBxv:entity_poly_seq entity_id="1" mon_id="THR" num="4"></PDBxv:entity_poly_seq> <PDBxv:entity_poly_seq entity_id="1" mon_id="LEU" num="5"></PDBxv:entity_poly_seq> <PDBxv:entity_poly_seq entity_id="1" mon_id="TRP" num="6"></PDBxv:entity_poly_seq> <PDBxv:entity_poly_seq entity_id="1" mon_id="GLN" num="7"></PDBxv:entity_poly_seq> <PDBxv:entity_poly_seq entity_id="1" mon_id="ARG" num="8"></PDBxv:entity_poly_seq> <PDBxv:entity_poly_seq entity_id="1" mon_id="PRO" num="9"></PDBxv:entity_poly_seq> <PDBxv:entity_poly_seq entity_id="1" mon_id="LEU" num="10"></PDBxv:entity_poly_seq> <PDBxv:entity_poly_seq entity_id="1" mon_id="VAL" num="11"></PDBxv:entity_poly_seq> <PDBxv:entity_poly_seq entity_id="1" mon_id="THR" num="12"></PDBxv:entity_poly_seq> <PDBxv:entity_poly_seq entity_id="1" mon_id="ILE" num="13"></PDBxv:entity_poly_seq> <PDBxv:entity_poly_seq entity_id="1" mon_id="LYS" num="14"></PDBxv:entity_poly_seq> <PDBxv:entity_poly_seq entity_id="1" mon_id="ILE" num="15"></PDBxv:entity_poly_seq> <PDBxv:entity_poly_seq entity_id="1" mon_id="GLY" num="16"></PDBxv:entity_poly_seq> <PDBxv:entity_poly_seq entity_id="1" mon_id="GLY" num="17"></PDBxv:entity_poly_seq> <PDBxv:entity_poly_seq entity_id="1" mon_id="GLN" num="18"></PDBxv:entity_poly_seq> <PDBxv:entity_poly_seq entity_id="1" mon_id="LEU" num="19"></PDBxv:entity_poly_seq> <PDBxv:entity_poly_seq entity_id="1" mon_id="LYS" num="20"></PDBxv:entity_poly_seq> <PDBxv:entity_poly_seq entity_id="1" mon_id="GLU" num="21"></PDBxv:entity_poly_seq> <PDBxv:entity_poly_seq entity_id="1" mon_id="ALA" num="22"></PDBxv:entity_poly_seq> <PDBxv:entity_poly_seq entity_id="1" mon_id="LEU" num="23"></PDBxv:entity_poly_seq> <PDBxv:entity_poly_seq entity_id="1" mon_id="LEU" num="24"></PDBxv:entity_poly_seq> <PDBxv:entity_poly_seq entity_id="1" mon_id="ASP" num="25"></PDBxv:entity_poly_seq> </PDBxv:entity_poly_seqCategory>
+-- URI-reference = http://pdbml.pdb.org/dictionaries/mmcif_pdbx_v50.dic/Categories/entity_poly_seq.html
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), schema location: schema/pdbx-validation-v1.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+DROP TYPE IF EXISTS ENUM_entity_poly_seq_hetero;
+CREATE TYPE ENUM_entity_poly_seq_hetero AS ENUM ( 'no', 'n', 'yes', 'y' );
+CREATE TABLE entity_poly_seq (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+	hetero ENUM_entity_poly_seq_hetero ,
+-- ATTRIBUTE
+	entity_id TEXT NOT NULL ,
+-- ATTRIBUTE
+	mon_id TEXT NOT NULL ,
+-- ATTRIBUTE
+	num INTEGER CHECK ( num >= 1 ) NOT NULL 
+);
+
+--
+-- (quoted from pdbx_audit_revision_historyType)
+-- Data items in the PDBX_AUDIT_REVISION_HISTORY category record the revision history for a data entry. Example 1 - <PDBxv:pdbx_audit_revision_historyCategory> <PDBxv:pdbx_audit_revision_history data_content_type="Structure model" ordinal="1"> <PDBxv:major_revision>1</PDBxv:major_revision> <PDBxv:minor_revision>0</PDBxv:minor_revision> <PDBxv:revision_date>2017-03-01</PDBxv:revision_date> </PDBxv:pdbx_audit_revision_history> <PDBxv:pdbx_audit_revision_history data_content_type="Structure model" ordinal="2"> <PDBxv:major_revision>1</PDBxv:major_revision> <PDBxv:minor_revision>1</PDBxv:minor_revision> <PDBxv:revision_date>2017-03-08</PDBxv:revision_date> </PDBxv:pdbx_audit_revision_history> </PDBxv:pdbx_audit_revision_historyCategory>
+-- URI-reference = http://pdbml.pdb.org/dictionaries/mmcif_pdbx_v50.dic/Categories/pdbx_audit_revision_history.html
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), schema location: schema/pdbx-validation-v1.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+DROP TYPE IF EXISTS ENUM_pdbx_audit_revision_history_data_content_type;
+CREATE TYPE ENUM_pdbx_audit_revision_history_data_content_type AS ENUM ( 'Structure model', 'NMR restraints', 'NMR shifts', 'Structure factors' );
+CREATE TABLE pdbx_audit_revision_history (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+	major_revision INTEGER ,
+	minor_revision INTEGER ,
+	revision_date DATE ,
+-- ATTRIBUTE
+	data_content_type ENUM_pdbx_audit_revision_history_data_content_type NOT NULL ,
+-- ATTRIBUTE
+	ordinal INTEGER NOT NULL 
+);
+
+--
 -- (quoted from pdbx_percentile_conditionsType)
 -- Data items in the PDBX_PERCENTILE_CONDITIONS category describe conditions to calculate percentile rank representations of each validation metric in the wwPDB validation report. For example, relative evaluation for X-ray structure is obtained by by compareing other X-ray structures having similar resolution. If there are no conditions by default, absolute evaluation is calculated based on all available PDB structures determined by the same methodology. Example 1 - <PDBxv:pdbx_percentile_conditionsCategory> <PDBxv:pdbx_percentile_conditions id="1"> <PDBxv:ls_d_res_high xsi:nil="true" /> <PDBxv:ls_d_res_low xsi:nil="true" /> <PDBxv:number_entries_total>101464</PDBxv:number_entries_total> </PDBxv:pdbx_percentile_conditions> <PDBxv:pdbx_percentile_conditions id="2"> <PDBxv:ls_d_res_high>1.9</PDBxv:ls_d_res_high> <PDBxv:ls_d_res_low>1.9</PDBxv:ls_d_res_low> <PDBxv:number_entries_total>5100</PDBxv:number_entries_total> </PDBxv:pdbx_percentile_conditions> </PDBxv:pdbx_percentile_conditionsCategory>
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), schema location: schema/pdbx-validation-v1.xsd
@@ -288,6 +617,149 @@ CREATE TABLE pdbx_percentile_conditions (
 	number_entries_total INTEGER CHECK ( number_entries_total >= 1 ) ,
 -- ATTRIBUTE
 	id INTEGER NOT NULL 
+);
+
+--
+-- (quoted from pdbx_struct_entity_instType)
+-- Data items in the PDBX_STRUCT_ENTITY_INST category record details about the structural elements in the deposited entry. The entity instance is a method neutral identifier for the observed molecular entities in the deposited coordinate set. Example 1 - <PDBxv:pdbx_struct_entity_instCategory> <PDBxv:pdbx_struct_entity_inst id="A"> <PDBxv:details>one monomer of the dimeric enzyme</PDBxv:details> <PDBxv:entity_id>1</PDBxv:entity_id> </PDBxv:pdbx_struct_entity_inst> <PDBxv:pdbx_struct_entity_inst id="B"> <PDBxv:details>one monomer of the dimeric enzyme</PDBxv:details> <PDBxv:entity_id>1</PDBxv:entity_id> </PDBxv:pdbx_struct_entity_inst> </PDBxv:pdbx_struct_entity_instCategory>
+-- URI-reference = http://pdbml.pdb.org/dictionaries/mmcif_pdbx_v50.dic/Categories/pdbx_struct_entity_inst.html
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), schema location: schema/pdbx-validation-v1.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE pdbx_struct_entity_inst (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+	details TEXT ,
+	entity_id TEXT ,
+-- ATTRIBUTE
+	id TEXT NOT NULL 
+);
+
+--
+-- (quoted from pdbx_struct_group_listType)
+-- Data items in the PDBX_STRUCT_GROUP_LIST define groups of related components or atoms. Example 1 - <PDBxv:pdbx_struct_group_listCategory> <PDBxv:pdbx_struct_group_list struct_group_id="1"> <PDBxv:description> Decaplanin is a tricyclic glycopeptide. The scaffold is a heptapeptide with the configuration D-D-L-D-D-L-L, glycosylated by a monosaccharide and a disaccharide</PDBxv:description> <PDBxv:group_enumeration_type>component</PDBxv:group_enumeration_type> <PDBxv:name>DECAPLANIN</PDBxv:name> <PDBxv:type>MolecularComplex</PDBxv:type> </PDBxv:pdbx_struct_group_list> </PDBxv:pdbx_struct_group_listCategory>
+-- URI-reference = http://pdbml.pdb.org/dictionaries/mmcif_pdbx_v50.dic/Categories/pdbx_struct_group_list.html
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), schema location: schema/pdbx-validation-v1.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+DROP TYPE IF EXISTS ENUM_pdbx_struct_group_list_group_enumeration_type;
+CREATE TYPE ENUM_pdbx_struct_group_list_group_enumeration_type AS ENUM ( 'atom', 'component', 'component_range' );
+DROP TYPE IF EXISTS ENUM_pdbx_struct_group_list_type;
+CREATE TYPE ENUM_pdbx_struct_group_list_type AS ENUM ( 'Molecular Complex', 'Heterogen Complex', 'TLS group', 'NCS group' );
+CREATE TABLE pdbx_struct_group_list (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+	description TEXT ,
+	group_enumeration_type ENUM_pdbx_struct_group_list_group_enumeration_type ,
+	name TEXT ,
+	selection TEXT ,
+	selection_details TEXT ,
+	type ENUM_pdbx_struct_group_list_type ,
+-- ATTRIBUTE
+	struct_group_id TEXT NOT NULL 
+);
+
+--
+-- (quoted from struct_biolType)
+-- Data items in the STRUCT_BIOL category record details about the structural elements that form each structure of biological significance. A given crystal structure may contain many different biological structures. A given structural component in the asymmetric unit may be part of more than one biological unit. A given biological structure may involve crystallographic symmetry. For instance, in a structure of a lysozyme-FAB structure, the light- and heavy-chain components of the FAB could be one biological unit, while the two chains of the FAB and the lysozyme could constitute a second biological unit. Example 1 - based on PDB entry 5HVP and laboratory records for the structure corresponding to PDB entry 5HVP. <PDBxv:struct_biolCategory> <PDBxv:struct_biol id="1"> <PDBxv:details> significant deviations from twofold symmetry exist in this dimeric enzyme</PDBxv:details> </PDBxv:struct_biol> <PDBxv:struct_biol id="2"> <PDBxv:details> The drug binds to this enzyme in two roughly twofold symmetric modes. Hence this biological unit (2) is roughly twofold symmetric to biological unit (3). Disorder in the protein chain indicated with alternative ID 1 should be used with this biological unit.</PDBxv:details> </PDBxv:struct_biol> <PDBxv:struct_biol id="3"> <PDBxv:details> The drug binds to this enzyme in two roughly twofold symmetric modes. Hence this biological unit (3) is roughly twofold symmetric to biological unit (2). Disorder in the protein chain indicated with alternative ID 2 should be used with this biological unit.</PDBxv:details> </PDBxv:struct_biol> </PDBxv:struct_biolCategory>
+-- URI-reference = http://pdbml.pdb.org/dictionaries/mmcif_pdbx_v50.dic/Categories/struct_biol.html
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), schema location: schema/pdbx-validation-v1.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+DROP TYPE IF EXISTS ENUM_struct_biol_pdbx_aggregation_state;
+CREATE TYPE ENUM_struct_biol_pdbx_aggregation_state AS ENUM ( 'MONOMER', 'DIMER', 'TRIMER', 'TETRAMER', 'HEXAMER', 'MORE' );
+CREATE TABLE struct_biol (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+	details TEXT ,
+	pdbx_aggregation_state ENUM_struct_biol_pdbx_aggregation_state ,
+	pdbx_assembly_method TEXT ,
+	pdbx_formula_weight DECIMAL CHECK ( pdbx_formula_weight >= 1 ) ,
+	pdbx_formula_weight_method TEXT ,
+	pdbx_parent_biol_id TEXT ,
+-- ATTRIBUTE
+	id TEXT NOT NULL 
+);
+
+--
+-- (quoted from struct_refType)
+-- Data items in the STRUCT_REF category allow the author of a data block to relate the entities or biological units described in the data block to information archived in external databases. For references to the sequence of a polymer, the value of the data item attribute seq_align in category struct_ref is used to indicate whether the correspondence between the sequence of the entity or biological unit in the data block and the sequence in the referenced database entry is 'complete' or 'partial'. If this value is 'partial', the region (or regions) of the alignment may be delimited using data items in the STRUCT_REF_SEQ category. Similarly, the value of attribute seq_dif in category struct_ref is used to indicate whether the two sequences contain point differences. If the value is 'yes', the differences may be identified and annotated using data items in the STRUCT_REF_SEQ_DIF category. Example 1 - based on PDB entry 5HVP and laboratory records for the structure corresponding to PDB entry 5HVP. <PDBxv:struct_refCategory> <PDBxv:struct_ref id="1"> <PDBxv:biol_id xsi:nil="true" /> <PDBxv:db_code>12345</PDBxv:db_code> <PDBxv:db_name>Genbank</PDBxv:db_name> <PDBxv:details xsi:nil="true" /> <PDBxv:entity_id>1</PDBxv:entity_id> <PDBxv:seq_align>entire</PDBxv:seq_align> <PDBxv:seq_dif>yes</PDBxv:seq_dif> </PDBxv:struct_ref> <PDBxv:struct_ref id="2"> <PDBxv:biol_id>2</PDBxv:biol_id> <PDBxv:db_code>1ABC</PDBxv:db_code> <PDBxv:db_name>PDB</PDBxv:db_name> <PDBxv:details> The structure of the closely related compound, isobutyryl-pepstatin (pepstatin A) in complex with rhizopuspepsin</PDBxv:details> <PDBxv:entity_id xsi:nil="true" /> <PDBxv:seq_align xsi:nil="true" /> <PDBxv:seq_dif xsi:nil="true" /> </PDBxv:struct_ref> </PDBxv:struct_refCategory>
+-- URI-reference = http://pdbml.pdb.org/dictionaries/mmcif_pdbx_v50.dic/Categories/struct_ref.html
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), schema location: schema/pdbx-validation-v1.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+DROP TYPE IF EXISTS ENUM_struct_ref_seq_align;
+CREATE TYPE ENUM_struct_ref_seq_align AS ENUM ( 'complete', 'partial' );
+DROP TYPE IF EXISTS ENUM_struct_ref_seq_dif;
+CREATE TYPE ENUM_struct_ref_seq_dif AS ENUM ( 'no', 'n', 'yes', 'y' );
+CREATE TABLE struct_ref (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+	biol_id TEXT ,
+	db_code TEXT ,
+	db_name TEXT ,
+	details TEXT ,
+	entity_id TEXT ,
+	pdbx_align_begin TEXT ,
+	pdbx_align_end TEXT ,
+	pdbx_db_accession TEXT ,
+	pdbx_db_isoform TEXT ,
+	pdbx_seq_one_letter_code TEXT ,
+	seq_align ENUM_struct_ref_seq_align ,
+	seq_dif ENUM_struct_ref_seq_dif ,
+-- ATTRIBUTE
+	id TEXT NOT NULL 
+);
+
+--
+-- (quoted from struct_siteType)
+-- Data items in the STRUCT_SITE category record details about portions of the structure that contribute to structurally relevant sites (e.g. active sites, substrate-binding subsites, metal-coordination sites). Example 1 - based on PDB entry 5HVP and laboratory records for the structure corresponding to PDB entry 5HVP. <PDBxv:struct_siteCategory> <PDBxv:struct_site id="P2 site C"> <PDBxv:details> residues with a contact &lt; 3.7 \&#37;A to an atom in the P2 moiety of the inhibitor in the conformation with _struct_asym.id = C</PDBxv:details> </PDBxv:struct_site> <PDBxv:struct_site id="P2 site D"> <PDBxv:details> residues with a contact &lt; 3.7 \&#37;A to an atom in the P1 moiety of the inhibitor in the conformation with _struct_asym.id = D</PDBxv:details> </PDBxv:struct_site> </PDBxv:struct_siteCategory>
+-- URI-reference = http://pdbml.pdb.org/dictionaries/mmcif_pdbx_v50.dic/Categories/struct_site.html
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), schema location: schema/pdbx-validation-v1.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE struct_site (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+	details TEXT ,
+	pdbx_auth_asym_id TEXT ,
+	pdbx_auth_comp_id TEXT ,
+	pdbx_auth_ins_code TEXT ,
+	pdbx_auth_seq_id TEXT ,
+	pdbx_evidence_code TEXT ,
+	pdbx_num_residues INTEGER ,
+-- ATTRIBUTE
+	id TEXT NOT NULL 
+);
+
+--
+-- (quoted from diffrn_scale_groupType)
+-- Data items in the DIFFRN_SCALE_GROUP category record details of the scaling factors applied to place all intensities in the reflection lists on a common scale. Scaling groups might, for example, correspond to each film in a multi-film data set or each crystal in a multi-crystal data set. Example 1 - based on CAD-4 diffractometer data obtained for Yb(S-C5H4N)2(THF)4. <PDBxv:diffrn_scale_groupCategory> <PDBxv:diffrn_scale_group code="A24"> <PDBxv:I_net>1.021</PDBxv:I_net> </PDBxv:diffrn_scale_group> </PDBxv:diffrn_scale_groupCategory>
+-- URI-reference = http://pdbml.pdb.org/dictionaries/mmcif_pdbx_v50.dic/Categories/diffrn_scale_group.html
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), schema location: schema/pdbx-validation-v1.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE diffrn_scale_group (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+	"I_net" DECIMAL CHECK ( "I_net" >= 0 ) ,
+-- ATTRIBUTE
+	code TEXT NOT NULL 
+);
+
+--
+-- (quoted from pdbx_domainType)
+-- Data items in the PDBX_DOMAIN category record information about domain definitions. A domain need not correspond to a completely polypeptide chain; it can be composed of one or more segments in a single chain, or by segments from more than one chain. Example 1 - <PDBxv:pdbx_domainCategory> <PDBxv:pdbx_domain id="d1"> <PDBxv:details>Chains A, B</PDBxv:details> </PDBxv:pdbx_domain> <PDBxv:pdbx_domain id="d2"> <PDBxv:details>Asym_id D Residues 1-134</PDBxv:details> </PDBxv:pdbx_domain> </PDBxv:pdbx_domainCategory>
+-- URI-reference = http://pdbml.pdb.org/dictionaries/mmcif_pdbx_v50.dic/Categories/pdbx_domain.html
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), schema location: schema/pdbx-validation-v1.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE pdbx_domain (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+	details TEXT ,
+-- ATTRIBUTE
+	id TEXT NOT NULL 
 );
 
 --
@@ -370,46 +842,6 @@ CREATE TABLE pdbx_struct_assembly (
 	oligomeric_details TEXT ,
 -- ATTRIBUTE
 	id TEXT NOT NULL 
-);
-
---
--- (quoted from pdbx_struct_entity_instType)
--- Data items in the PDBX_STRUCT_ENTITY_INST category record details about the structural elements in the deposited entry. The entity instance is a method neutral identifier for the observed molecular entities in the deposited coordinate set. Example 1 - <PDBxv:pdbx_struct_entity_instCategory> <PDBxv:pdbx_struct_entity_inst id="A"> <PDBxv:details>one monomer of the dimeric enzyme</PDBxv:details> <PDBxv:entity_id>1</PDBxv:entity_id> </PDBxv:pdbx_struct_entity_inst> <PDBxv:pdbx_struct_entity_inst id="B"> <PDBxv:details>one monomer of the dimeric enzyme</PDBxv:details> <PDBxv:entity_id>1</PDBxv:entity_id> </PDBxv:pdbx_struct_entity_inst> </PDBxv:pdbx_struct_entity_instCategory>
--- URI-reference = http://pdbml.pdb.org/dictionaries/mmcif_pdbx_v50.dic/Categories/pdbx_struct_entity_inst.html
--- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), schema location: schema/pdbx-validation-v1.xsd
--- type: admin child, content: true, list: false, bridge: false, virtual: false
---
-CREATE TABLE pdbx_struct_entity_inst (
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
-	details TEXT ,
-	entity_id TEXT ,
--- ATTRIBUTE
-	id TEXT NOT NULL 
-);
-
---
--- (quoted from pdbx_struct_group_listType)
--- Data items in the PDBX_STRUCT_GROUP_LIST define groups of related components or atoms. Example 1 - <PDBxv:pdbx_struct_group_listCategory> <PDBxv:pdbx_struct_group_list struct_group_id="1"> <PDBxv:description> Decaplanin is a tricyclic glycopeptide. The scaffold is a heptapeptide with the configuration D-D-L-D-D-L-L, glycosylated by a monosaccharide and a disaccharide</PDBxv:description> <PDBxv:group_enumeration_type>component</PDBxv:group_enumeration_type> <PDBxv:name>DECAPLANIN</PDBxv:name> <PDBxv:type>MolecularComplex</PDBxv:type> </PDBxv:pdbx_struct_group_list> </PDBxv:pdbx_struct_group_listCategory>
--- URI-reference = http://pdbml.pdb.org/dictionaries/mmcif_pdbx_v50.dic/Categories/pdbx_struct_group_list.html
--- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), schema location: schema/pdbx-validation-v1.xsd
--- type: admin child, content: true, list: false, bridge: false, virtual: false
---
-DROP TYPE IF EXISTS ENUM_pdbx_struct_group_list_group_enumeration_type;
-CREATE TYPE ENUM_pdbx_struct_group_list_group_enumeration_type AS ENUM ( 'atom', 'component', 'component_range' );
-DROP TYPE IF EXISTS ENUM_pdbx_struct_group_list_type;
-CREATE TYPE ENUM_pdbx_struct_group_list_type AS ENUM ( 'Molecular Complex', 'Heterogen Complex', 'TLS group', 'NCS group' );
-CREATE TABLE pdbx_struct_group_list (
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
-	description TEXT ,
-	group_enumeration_type ENUM_pdbx_struct_group_list_group_enumeration_type ,
-	name TEXT ,
-	selection TEXT ,
-	selection_details TEXT ,
-	type ENUM_pdbx_struct_group_list_type ,
--- ATTRIBUTE
-	struct_group_id TEXT NOT NULL 
 );
 
 --
@@ -499,96 +931,6 @@ CREATE TABLE pdbx_validate_rmsd_torsion (
 );
 
 --
--- (quoted from phasing_MAD_exptType)
--- Data items in the PHASING_MAD_EXPT category record details about a MAD phasing experiment, such as the number of experiments that were clustered together to produce a set of phases or the statistics for those phases. Example 1 - based on a paper by Shapiro et al. [Nature (London) (1995), 374, 327-337]. <PDBxv:phasing_MAD_exptCategory> <PDBxv:phasing_MAD_expt id="1"> <PDBxv:R_normal_all>0.063</PDBxv:R_normal_all> <PDBxv:R_normal_anom_scat>0.451</PDBxv:R_normal_anom_scat> <PDBxv:delta_delta_phi>58.5</PDBxv:delta_delta_phi> <PDBxv:delta_phi_sigma>20.3</PDBxv:delta_phi_sigma> <PDBxv:mean_fom>0.88</PDBxv:mean_fom> <PDBxv:number_clust>2</PDBxv:number_clust> </PDBxv:phasing_MAD_expt> <PDBxv:phasing_MAD_expt id="2"> <PDBxv:R_normal_all>0.051</PDBxv:R_normal_all> <PDBxv:R_normal_anom_scat>0.419</PDBxv:R_normal_anom_scat> <PDBxv:delta_delta_phi>36.8</PDBxv:delta_delta_phi> <PDBxv:delta_phi_sigma>18.2</PDBxv:delta_phi_sigma> <PDBxv:mean_fom>0.93</PDBxv:mean_fom> <PDBxv:number_clust>1</PDBxv:number_clust> </PDBxv:phasing_MAD_expt> </PDBxv:phasing_MAD_exptCategory>
--- URI-reference = http://pdbml.pdb.org/dictionaries/mmcif_pdbx_v50.dic/Categories/phasing_MAD_expt.html
--- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), schema location: schema/pdbx-validation-v1.xsd
--- type: admin child, content: true, list: false, bridge: false, virtual: false
---
-CREATE TABLE "phasing_MAD_expt" (
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
-	"R_normal_all" DECIMAL ,
-	"R_normal_anom_scat" DECIMAL ,
-	delta_delta_phi DECIMAL ,
-	delta_phi DECIMAL ,
-	delta_phi_sigma DECIMAL ,
-	mean_fom DECIMAL ,
-	number_clust INTEGER ,
--- ATTRIBUTE
-	id TEXT NOT NULL 
-);
-
---
--- (quoted from phasing_setType)
--- Data items in the PHASING_SET category record details about the data sets used in a phasing experiment. A given data set may be used in a number of different ways; for instance, a single data set could be used both as an isomorphous derivative and as a component of a multiple-wavelength calculation. This category establishes identifiers for each data set and permits the archiving of a subset of experimental information for each data set (cell constants, wavelength, temperature etc.). This and related categories of data items are provided so that derivative intensity and phase information can be stored in the same data block as the information for the refined structure. If all the possible experimental information for each data set (raw data sets, crystal growth conditions etc.) is to be archived, these data items should be recorded in a separate data block. Example 1 - based on laboratory records for an Hg/Pt derivative of protein NS1. <PDBxv:phasing_setCategory> <PDBxv:phasing_set id="NS1-96"> <PDBxv:cell_angle_alpha>90.0</PDBxv:cell_angle_alpha> <PDBxv:cell_angle_beta>90.0</PDBxv:cell_angle_beta> <PDBxv:cell_angle_gamma>90.0</PDBxv:cell_angle_gamma> <PDBxv:cell_length_a>38.63</PDBxv:cell_length_a> <PDBxv:cell_length_b>38.63</PDBxv:cell_length_b> <PDBxv:cell_length_c>82.88</PDBxv:cell_length_c> <PDBxv:detector_specific>RXII</PDBxv:detector_specific> <PDBxv:detector_type>image plate</PDBxv:detector_type> <PDBxv:radiation_wavelength>1.5145</PDBxv:radiation_wavelength> </PDBxv:phasing_set> </PDBxv:phasing_setCategory>
--- URI-reference = http://pdbml.pdb.org/dictionaries/mmcif_pdbx_v50.dic/Categories/phasing_set.html
--- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), schema location: schema/pdbx-validation-v1.xsd
--- type: admin child, content: true, list: false, bridge: false, virtual: false
---
-CREATE TABLE phasing_set (
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
-	cell_angle_alpha DECIMAL CHECK ( cell_angle_alpha >= 0 AND cell_angle_alpha <= 180 ) ,
-	cell_angle_beta DECIMAL CHECK ( cell_angle_beta >= 0 AND cell_angle_beta <= 180 ) ,
-	cell_angle_gamma DECIMAL CHECK ( cell_angle_gamma >= 0 AND cell_angle_gamma <= 180 ) ,
-	cell_length_a DECIMAL CHECK ( cell_length_a >= 0 ) ,
-	cell_length_b DECIMAL CHECK ( cell_length_b >= 0 ) ,
-	cell_length_c DECIMAL CHECK ( cell_length_c >= 0 ) ,
-	detector_specific TEXT ,
-	detector_type TEXT ,
-	pdbx_d_res_high DECIMAL CHECK ( pdbx_d_res_high >= 0 ) ,
-	pdbx_d_res_low DECIMAL CHECK ( pdbx_d_res_low >= 0 ) ,
-	pdbx_temp_details TEXT ,
-	radiation_source_specific TEXT ,
-	radiation_wavelength DECIMAL CHECK ( radiation_wavelength >= 0 ) ,
-	temp DECIMAL CHECK ( temp >= 0 ) ,
--- ATTRIBUTE
-	id TEXT NOT NULL 
-);
-
---
--- (quoted from phasing_MIR_derType)
--- Data items in the PHASING_MIR_DER category record details about individual derivatives used in the phasing of the structure when methods involving isomorphous replacement are involved. A derivative in this context does not necessarily equate with a data set; for instance, the same data set could be used to one resolution limit as an isomorphous scatterer and to a different resolution (and with a different sigma cutoff) as an anomalous scatterer. These would be treated as two distinct derivatives, although both derivatives would point to the same data sets via attribute der_set_id in category phasing_MIR_der and attribute native_set_id in category phasing_MIR_der. Example 1 - based on a paper by Zanotti et al. [J. Biol. Chem. (1993), 268, 10728-10738]. <PDBxv:phasing_MIR_derCategory> <PDBxv:phasing_MIR_der id="KAu(CN)2"> <PDBxv:details>major site interpreted in difference Patterson</PDBxv:details> <PDBxv:number_of_sites>3</PDBxv:number_of_sites> </PDBxv:phasing_MIR_der> <PDBxv:phasing_MIR_der id="K2HgI4"> <PDBxv:details>sites found in cross-difference Fourier</PDBxv:details> <PDBxv:number_of_sites>6</PDBxv:number_of_sites> </PDBxv:phasing_MIR_der> <PDBxv:phasing_MIR_der id="K3IrCl6"> <PDBxv:details>sites found in cross-difference Fourier</PDBxv:details> <PDBxv:number_of_sites>2</PDBxv:number_of_sites> </PDBxv:phasing_MIR_der> <PDBxv:phasing_MIR_der id="All"> <PDBxv:details>data for all three derivatives combined</PDBxv:details> <PDBxv:number_of_sites>11</PDBxv:number_of_sites> </PDBxv:phasing_MIR_der> </PDBxv:phasing_MIR_derCategory>
--- URI-reference = http://pdbml.pdb.org/dictionaries/mmcif_pdbx_v50.dic/Categories/phasing_MIR_der.html
--- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), schema location: schema/pdbx-validation-v1.xsd
--- type: admin child, content: true, list: false, bridge: false, virtual: false
---
-CREATE TABLE "phasing_MIR_der" (
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
-	"R_cullis_acentric" DECIMAL CHECK ( "R_cullis_acentric" >= 0 ) ,
-	"R_cullis_anomalous" DECIMAL CHECK ( "R_cullis_anomalous" >= 0 ) ,
-	"R_cullis_centric" DECIMAL CHECK ( "R_cullis_centric" >= 0 ) ,
-	d_res_high DECIMAL CHECK ( d_res_high >= 0 ) ,
-	d_res_low DECIMAL CHECK ( d_res_low >= 0 ) ,
-	der_set_id TEXT ,
-	details TEXT ,
-	native_set_id TEXT ,
-	number_of_sites INTEGER ,
-	"pdbx_R_cullis" DECIMAL ,
-	"pdbx_R_kraut" DECIMAL ,
-	"pdbx_R_kraut_acentric" DECIMAL ,
-	"pdbx_R_kraut_centric" DECIMAL ,
-	pdbx_fom DECIMAL ,
-	pdbx_fom_acentric DECIMAL ,
-	pdbx_fom_centric DECIMAL ,
-	pdbx_loc DECIMAL ,
-	pdbx_loc_acentric DECIMAL ,
-	pdbx_loc_centric DECIMAL ,
-	pdbx_power DECIMAL ,
-	pdbx_reflns INTEGER ,
-	power_acentric DECIMAL CHECK ( power_acentric >= 0 ) ,
-	power_centric DECIMAL CHECK ( power_centric >= 0 ) ,
-	reflns_acentric INTEGER CHECK ( reflns_acentric >= 0 ) ,
-	reflns_anomalous INTEGER CHECK ( reflns_anomalous >= 0 ) ,
-	reflns_centric INTEGER CHECK ( reflns_centric >= 0 ) ,
-	reflns_criteria TEXT ,
--- ATTRIBUTE
-	id TEXT NOT NULL 
-);
-
---
 -- (quoted from struct_asymType)
 -- Data items in the STRUCT_ASYM category record details about the structural elements in the asymmetric unit. Example 1 - based on PDB entry 5HVP and laboratory records for the structure corresponding to PDB entry 5HVP. <PDBxv:struct_asymCategory> <PDBxv:struct_asym id="A"> <PDBxv:details>one monomer of the dimeric enzyme</PDBxv:details> <PDBxv:entity_id>1</PDBxv:entity_id> </PDBxv:struct_asym> <PDBxv:struct_asym id="B"> <PDBxv:details>one monomer of the dimeric enzyme</PDBxv:details> <PDBxv:entity_id>1</PDBxv:entity_id> </PDBxv:struct_asym> <PDBxv:struct_asym id="C"> <PDBxv:details>one partially occupied position for the inhibitor</PDBxv:details> <PDBxv:entity_id>2</PDBxv:entity_id> </PDBxv:struct_asym> <PDBxv:struct_asym id="D"> <PDBxv:details>one partially occupied position for the inhibitor</PDBxv:details> <PDBxv:entity_id>2</PDBxv:entity_id> </PDBxv:struct_asym> </PDBxv:struct_asymCategory>
 -- URI-reference = http://pdbml.pdb.org/dictionaries/mmcif_pdbx_v50.dic/Categories/struct_asym.html
@@ -609,28 +951,6 @@ CREATE TABLE struct_asym (
 );
 
 --
--- (quoted from struct_biolType)
--- Data items in the STRUCT_BIOL category record details about the structural elements that form each structure of biological significance. A given crystal structure may contain many different biological structures. A given structural component in the asymmetric unit may be part of more than one biological unit. A given biological structure may involve crystallographic symmetry. For instance, in a structure of a lysozyme-FAB structure, the light- and heavy-chain components of the FAB could be one biological unit, while the two chains of the FAB and the lysozyme could constitute a second biological unit. Example 1 - based on PDB entry 5HVP and laboratory records for the structure corresponding to PDB entry 5HVP. <PDBxv:struct_biolCategory> <PDBxv:struct_biol id="1"> <PDBxv:details> significant deviations from twofold symmetry exist in this dimeric enzyme</PDBxv:details> </PDBxv:struct_biol> <PDBxv:struct_biol id="2"> <PDBxv:details> The drug binds to this enzyme in two roughly twofold symmetric modes. Hence this biological unit (2) is roughly twofold symmetric to biological unit (3). Disorder in the protein chain indicated with alternative ID 1 should be used with this biological unit.</PDBxv:details> </PDBxv:struct_biol> <PDBxv:struct_biol id="3"> <PDBxv:details> The drug binds to this enzyme in two roughly twofold symmetric modes. Hence this biological unit (3) is roughly twofold symmetric to biological unit (2). Disorder in the protein chain indicated with alternative ID 2 should be used with this biological unit.</PDBxv:details> </PDBxv:struct_biol> </PDBxv:struct_biolCategory>
--- URI-reference = http://pdbml.pdb.org/dictionaries/mmcif_pdbx_v50.dic/Categories/struct_biol.html
--- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), schema location: schema/pdbx-validation-v1.xsd
--- type: admin child, content: true, list: false, bridge: false, virtual: false
---
-DROP TYPE IF EXISTS ENUM_struct_biol_pdbx_aggregation_state;
-CREATE TYPE ENUM_struct_biol_pdbx_aggregation_state AS ENUM ( 'MONOMER', 'DIMER', 'TRIMER', 'TETRAMER', 'HEXAMER', 'MORE' );
-CREATE TABLE struct_biol (
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
-	details TEXT ,
-	pdbx_aggregation_state ENUM_struct_biol_pdbx_aggregation_state ,
-	pdbx_assembly_method TEXT ,
-	pdbx_formula_weight DECIMAL CHECK ( pdbx_formula_weight >= 1 ) ,
-	pdbx_formula_weight_method TEXT ,
-	pdbx_parent_biol_id TEXT ,
--- ATTRIBUTE
-	id TEXT NOT NULL 
-);
-
---
 -- (quoted from struct_conf_typeType)
 -- Data items in the STRUCT_CONF_TYPE category record details about the criteria used to identify backbone conformations of a segment of polymer. Example 1 - based on PDB entry 5HVP and laboratory records for the structure corresponding to PDB entry 5HVP. <PDBxv:struct_conf_typeCategory> <PDBxv:struct_conf_type id="HELX_RH_AL_P"> <PDBxv:criteria>author judgement</PDBxv:criteria> <PDBxv:reference xsi:nil="true" /> </PDBxv:struct_conf_type> <PDBxv:struct_conf_type id="STRN_P"> <PDBxv:criteria>author judgement</PDBxv:criteria> <PDBxv:reference xsi:nil="true" /> </PDBxv:struct_conf_type> <PDBxv:struct_conf_type id="TURN_TY1_P"> <PDBxv:criteria>author judgement</PDBxv:criteria> <PDBxv:reference xsi:nil="true" /> </PDBxv:struct_conf_type> <PDBxv:struct_conf_type id="TURN_TY1P_P"> <PDBxv:criteria>author judgement</PDBxv:criteria> <PDBxv:reference xsi:nil="true" /> </PDBxv:struct_conf_type> <PDBxv:struct_conf_type id="TURN_TY2_P"> <PDBxv:criteria>author judgement</PDBxv:criteria> <PDBxv:reference xsi:nil="true" /> </PDBxv:struct_conf_type> <PDBxv:struct_conf_type id="TURN_TY2P_P"> <PDBxv:criteria>author judgement</PDBxv:criteria> <PDBxv:reference xsi:nil="true" /> </PDBxv:struct_conf_type> </PDBxv:struct_conf_typeCategory>
 -- URI-reference = http://pdbml.pdb.org/dictionaries/mmcif_pdbx_v50.dic/Categories/struct_conf_type.html
@@ -646,22 +966,6 @@ CREATE TABLE struct_conf_type (
 	reference TEXT ,
 -- ATTRIBUTE
 	id ENUM_struct_conf_type_id NOT NULL 
-);
-
---
--- (quoted from struct_ncs_ensType)
--- Data items in the STRUCT_NCS_ENS category record information about ensembles of domains related by noncrystallographic symmetry. The point group of the ensemble when taken as a whole may be specified, as well as any special aspects of the ensemble that require description. Example 1 - based on laboratory records for the collagen-like peptide, HYP-. <PDBxv:struct_ncs_ensCategory> <PDBxv:struct_ncs_ens id="en1"> <PDBxv:details> The ensemble represents the pseudo-twofold symmetry between domains d1 and d2.</PDBxv:details> </PDBxv:struct_ncs_ens> </PDBxv:struct_ncs_ensCategory>
--- URI-reference = http://pdbml.pdb.org/dictionaries/mmcif_pdbx_v50.dic/Categories/struct_ncs_ens.html
--- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), schema location: schema/pdbx-validation-v1.xsd
--- type: admin child, content: true, list: false, bridge: false, virtual: false
---
-CREATE TABLE struct_ncs_ens (
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
-	details TEXT ,
-	point_group TEXT ,
--- ATTRIBUTE
-	id TEXT NOT NULL 
 );
 
 --
@@ -712,36 +1016,6 @@ CREATE TABLE struct_ncs_oper (
 );
 
 --
--- (quoted from struct_refType)
--- Data items in the STRUCT_REF category allow the author of a data block to relate the entities or biological units described in the data block to information archived in external databases. For references to the sequence of a polymer, the value of the data item attribute seq_align in category struct_ref is used to indicate whether the correspondence between the sequence of the entity or biological unit in the data block and the sequence in the referenced database entry is 'complete' or 'partial'. If this value is 'partial', the region (or regions) of the alignment may be delimited using data items in the STRUCT_REF_SEQ category. Similarly, the value of attribute seq_dif in category struct_ref is used to indicate whether the two sequences contain point differences. If the value is 'yes', the differences may be identified and annotated using data items in the STRUCT_REF_SEQ_DIF category. Example 1 - based on PDB entry 5HVP and laboratory records for the structure corresponding to PDB entry 5HVP. <PDBxv:struct_refCategory> <PDBxv:struct_ref id="1"> <PDBxv:biol_id xsi:nil="true" /> <PDBxv:db_code>12345</PDBxv:db_code> <PDBxv:db_name>Genbank</PDBxv:db_name> <PDBxv:details xsi:nil="true" /> <PDBxv:entity_id>1</PDBxv:entity_id> <PDBxv:seq_align>entire</PDBxv:seq_align> <PDBxv:seq_dif>yes</PDBxv:seq_dif> </PDBxv:struct_ref> <PDBxv:struct_ref id="2"> <PDBxv:biol_id>2</PDBxv:biol_id> <PDBxv:db_code>1ABC</PDBxv:db_code> <PDBxv:db_name>PDB</PDBxv:db_name> <PDBxv:details> The structure of the closely related compound, isobutyryl-pepstatin (pepstatin A) in complex with rhizopuspepsin</PDBxv:details> <PDBxv:entity_id xsi:nil="true" /> <PDBxv:seq_align xsi:nil="true" /> <PDBxv:seq_dif xsi:nil="true" /> </PDBxv:struct_ref> </PDBxv:struct_refCategory>
--- URI-reference = http://pdbml.pdb.org/dictionaries/mmcif_pdbx_v50.dic/Categories/struct_ref.html
--- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), schema location: schema/pdbx-validation-v1.xsd
--- type: admin child, content: true, list: false, bridge: false, virtual: false
---
-DROP TYPE IF EXISTS ENUM_struct_ref_seq_align;
-CREATE TYPE ENUM_struct_ref_seq_align AS ENUM ( 'complete', 'partial' );
-DROP TYPE IF EXISTS ENUM_struct_ref_seq_dif;
-CREATE TYPE ENUM_struct_ref_seq_dif AS ENUM ( 'no', 'n', 'yes', 'y' );
-CREATE TABLE struct_ref (
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
-	biol_id TEXT ,
-	db_code TEXT ,
-	db_name TEXT ,
-	details TEXT ,
-	entity_id TEXT ,
-	pdbx_align_begin TEXT ,
-	pdbx_align_end TEXT ,
-	pdbx_db_accession TEXT ,
-	pdbx_db_isoform TEXT ,
-	pdbx_seq_one_letter_code TEXT ,
-	seq_align ENUM_struct_ref_seq_align ,
-	seq_dif ENUM_struct_ref_seq_dif ,
--- ATTRIBUTE
-	id TEXT NOT NULL 
-);
-
---
 -- (quoted from struct_ref_seqType)
 -- Data items in the STRUCT_REF_SEQ category provide a mechanism for indicating and annotating a region (or regions) of alignment between the sequence of an entity or biological unit described in the data block and the sequence in the referenced database entry. Example 1 - based on the sequence alignment of CHER from M. xantus (36 to 288) and CHER from S. typhimurium (18 to 276). <PDBxv:struct_ref_seqCategory> <PDBxv:struct_ref_seq align_id="alg1"> <PDBxv:db_align_beg>18</PDBxv:db_align_beg> <PDBxv:db_align_end>276</PDBxv:db_align_end> <PDBxv:details> The alignment contains 3 gaps larger than 2 residues</PDBxv:details> <PDBxv:ref_id>seqdb1</PDBxv:ref_id> <PDBxv:seq_align_beg>36</PDBxv:seq_align_beg> <PDBxv:seq_align_end>288</PDBxv:seq_align_end> </PDBxv:struct_ref_seq> </PDBxv:struct_ref_seqCategory>
 -- URI-reference = http://pdbml.pdb.org/dictionaries/mmcif_pdbx_v50.dic/Categories/struct_ref_seq.html
@@ -768,44 +1042,6 @@ CREATE TABLE struct_ref_seq (
 	seq_align_end INTEGER ,
 -- ATTRIBUTE
 	align_id TEXT NOT NULL 
-);
-
---
--- (quoted from struct_sheetType)
--- Data items in the STRUCT_SHEET category record details about the beta-sheets. Example 1 - simple beta-barrel. N O N O N O N O N O N O 10--11--12--13--14--15--16--17--18--19--20 strand_a N O N O N O N O N O / \ / \ / \ / \ / \ N O N O N O N O N O N O 30--31--32--33--34--35--36--37--38--39--40 strand_b N O N O N O N O N O / \ / \ / \ / \ / \ N O N O N O N O N O N O 50--51--52--53--54--55--56--57--58--59--60 strand_c N O N O N O N O N O / \ / \ / \ / \ / \ N O N O N O N O N O N O 70--71--72--73--74--75--76--77--78--79--80 strand_d N O N O N O N O N O / \ / \ / \ / \ / \ N O N O N O N O N O N O 90--91--92--93--94--95--96--97--98--99-100 strand_e N O N O N O N O N O / \ / \ / \ / \ / \ N O N O N O N O N O N O 110-111-112-113-114-115-116-117-118-119-120 strand_f N O N O N O N O N O / \ / \ / \ / \ / \ N O N O N O N O N O N O 130-131-132-133-134-135-136-137-138-139-140 strand_g N O N O N O N O N O / \ / \ / \ / \ / \ N O N O N O N O N O N O 150-151-152-153-154-155-156-157-158-159-160 strand_h N O N O N O N O N O / \ / \ / \ / \ / \ <PDBxv:struct_sheetCategory> <PDBxv:struct_sheet id="sheet_1"> <PDBxv:details xsi:nil="true" /> <PDBxv:number_strands>8</PDBxv:number_strands> <PDBxv:type>beta-barrel</PDBxv:type> </PDBxv:struct_sheet> </PDBxv:struct_sheetCategory> Example 2 - five stranded mixed-sense sheet with one two-piece strand. N O N O N O N O -10--11--12--13--14--15--16--17--18-> strand_a N O N O N O N O N O | | | | | | | | | | O N O N O N O N O N <-119-118-117-116-115-114-113-112-111-110- strand_b O N O N O N O N O N \ / \ / \ / \ / \ O N O N O N O N O N O N <-41--40--39--38--37--36--35--34--33--32--31--30- strand_c O N O N O N O N O N O N | | | | | | | | | | | | N O N O N O N O N O N O strand_d1 -50--51--52-> -90--91--92--93--95--95--96--97-> strand_d2 N O N O N O N O N O | | | | | | | | | | | | O N O N O N O N O N O N <-80--79--78--77--76--75--74--73--72--71--70- strand_e O N O N O N O N O N <PDBxv:struct_sheetCategory> <PDBxv:struct_sheet id="sheet_2"> <PDBxv:details>strand_d is in two pieces</PDBxv:details> <PDBxv:number_strands>5</PDBxv:number_strands> <PDBxv:type>five stranded, mixed-sense</PDBxv:type> </PDBxv:struct_sheet> </PDBxv:struct_sheetCategory>
--- URI-reference = http://pdbml.pdb.org/dictionaries/mmcif_pdbx_v50.dic/Categories/struct_sheet.html
--- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), schema location: schema/pdbx-validation-v1.xsd
--- type: admin child, content: true, list: false, bridge: false, virtual: false
---
-CREATE TABLE struct_sheet (
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
-	details TEXT ,
-	number_strands INTEGER ,
-	type TEXT ,
--- ATTRIBUTE
-	id TEXT NOT NULL 
-);
-
---
--- (quoted from struct_siteType)
--- Data items in the STRUCT_SITE category record details about portions of the structure that contribute to structurally relevant sites (e.g. active sites, substrate-binding subsites, metal-coordination sites). Example 1 - based on PDB entry 5HVP and laboratory records for the structure corresponding to PDB entry 5HVP. <PDBxv:struct_siteCategory> <PDBxv:struct_site id="P2 site C"> <PDBxv:details> residues with a contact &lt; 3.7 \&#37;A to an atom in the P2 moiety of the inhibitor in the conformation with _struct_asym.id = C</PDBxv:details> </PDBxv:struct_site> <PDBxv:struct_site id="P2 site D"> <PDBxv:details> residues with a contact &lt; 3.7 \&#37;A to an atom in the P1 moiety of the inhibitor in the conformation with _struct_asym.id = D</PDBxv:details> </PDBxv:struct_site> </PDBxv:struct_siteCategory>
--- URI-reference = http://pdbml.pdb.org/dictionaries/mmcif_pdbx_v50.dic/Categories/struct_site.html
--- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), schema location: schema/pdbx-validation-v1.xsd
--- type: admin child, content: true, list: false, bridge: false, virtual: false
---
-CREATE TABLE struct_site (
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
-	details TEXT ,
-	pdbx_auth_asym_id TEXT ,
-	pdbx_auth_comp_id TEXT ,
-	pdbx_auth_ins_code TEXT ,
-	pdbx_auth_seq_id TEXT ,
-	pdbx_evidence_code TEXT ,
-	pdbx_num_residues INTEGER ,
--- ATTRIBUTE
-	id TEXT NOT NULL 
 );
 
 --
@@ -1585,7 +1821,7 @@ CREATE TYPE ENUM_em_image_recording_detector_mode AS ENUM ( 'COUNTING', 'INTEGRA
 CREATE TABLE em_image_recording (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
-	average_exposure_time DECIMAL CHECK ( average_exposure_time > 0.0 AND average_exposure_time < 60.0 ) ,
+	average_exposure_time DECIMAL CHECK ( average_exposure_time > 0.0 AND average_exposure_time < 240.0 ) ,
 	avg_electron_dose_per_image DECIMAL CHECK ( avg_electron_dose_per_image > 0.0 ) ,
 	details TEXT ,
 	detector_mode ENUM_em_image_recording_detector_mode ,
@@ -6521,253 +6757,253 @@ CREATE TABLE symmetry_equiv (
 
 --ALTER TABLE struct_site ADD CONSTRAINT UNQ_struct_site UNIQUE ( id );
 
---ALTER TABLE diffrn_detector ADD CONSTRAINT KR_diffrnKeyref_0_0_0_0 FOREIGN KEY ( diffrn_id ) REFERENCES diffrn ( id ) NOT VALID;
+--ALTER TABLE diffrn_detector ADD CONSTRAINT KR_diffrnKeyref_0_0_0_0 FOREIGN KEY ( diffrn_id ) REFERENCES diffrn ( id ) ON DELETE CASCADE NOT VALID;
 
---ALTER TABLE diffrn_measurement ADD CONSTRAINT KR_diffrnKeyref_0_0_1_0 FOREIGN KEY ( diffrn_id ) REFERENCES diffrn ( id ) NOT VALID;
+--ALTER TABLE diffrn_measurement ADD CONSTRAINT KR_diffrnKeyref_0_0_1_0 FOREIGN KEY ( diffrn_id ) REFERENCES diffrn ( id ) ON DELETE CASCADE NOT VALID;
 
---ALTER TABLE diffrn_orient_matrix ADD CONSTRAINT KR_diffrnKeyref_0_0_2_0 FOREIGN KEY ( diffrn_id ) REFERENCES diffrn ( id ) NOT VALID;
+--ALTER TABLE diffrn_orient_matrix ADD CONSTRAINT KR_diffrnKeyref_0_0_2_0 FOREIGN KEY ( diffrn_id ) REFERENCES diffrn ( id ) ON DELETE CASCADE NOT VALID;
 
---ALTER TABLE diffrn_orient_refln ADD CONSTRAINT KR_diffrnKeyref_0_0_3_0 FOREIGN KEY ( diffrn_id ) REFERENCES diffrn ( id ) NOT VALID;
+--ALTER TABLE diffrn_orient_refln ADD CONSTRAINT KR_diffrnKeyref_0_0_3_0 FOREIGN KEY ( diffrn_id ) REFERENCES diffrn ( id ) ON DELETE CASCADE NOT VALID;
 
---ALTER TABLE diffrn_radiation ADD CONSTRAINT KR_diffrnKeyref_0_0_4_0 FOREIGN KEY ( diffrn_id ) REFERENCES diffrn ( id ) NOT VALID;
+--ALTER TABLE diffrn_radiation ADD CONSTRAINT KR_diffrnKeyref_0_0_4_0 FOREIGN KEY ( diffrn_id ) REFERENCES diffrn ( id ) ON DELETE CASCADE NOT VALID;
 
---ALTER TABLE diffrn_refln ADD CONSTRAINT KR_diffrnKeyref_0_0_5_0 FOREIGN KEY ( diffrn_id ) REFERENCES diffrn ( id ) NOT VALID;
+--ALTER TABLE diffrn_refln ADD CONSTRAINT KR_diffrnKeyref_0_0_5_0 FOREIGN KEY ( diffrn_id ) REFERENCES diffrn ( id ) ON DELETE CASCADE NOT VALID;
 
---ALTER TABLE diffrn_reflns ADD CONSTRAINT KR_diffrnKeyref_0_0_6_0 FOREIGN KEY ( diffrn_id ) REFERENCES diffrn ( id ) NOT VALID;
+--ALTER TABLE diffrn_reflns ADD CONSTRAINT KR_diffrnKeyref_0_0_6_0 FOREIGN KEY ( diffrn_id ) REFERENCES diffrn ( id ) ON DELETE CASCADE NOT VALID;
 
---ALTER TABLE diffrn_source ADD CONSTRAINT KR_diffrnKeyref_0_0_7_0 FOREIGN KEY ( diffrn_id ) REFERENCES diffrn ( id ) NOT VALID;
+--ALTER TABLE diffrn_source ADD CONSTRAINT KR_diffrnKeyref_0_0_7_0 FOREIGN KEY ( diffrn_id ) REFERENCES diffrn ( id ) ON DELETE CASCADE NOT VALID;
 
---ALTER TABLE diffrn_standard_refln ADD CONSTRAINT KR_diffrnKeyref_0_0_8_0 FOREIGN KEY ( diffrn_id ) REFERENCES diffrn ( id ) NOT VALID;
+--ALTER TABLE diffrn_standard_refln ADD CONSTRAINT KR_diffrnKeyref_0_0_8_0 FOREIGN KEY ( diffrn_id ) REFERENCES diffrn ( id ) ON DELETE CASCADE NOT VALID;
 
---ALTER TABLE diffrn_standards ADD CONSTRAINT KR_diffrnKeyref_0_0_9_0 FOREIGN KEY ( diffrn_id ) REFERENCES diffrn ( id ) NOT VALID;
+--ALTER TABLE diffrn_standards ADD CONSTRAINT KR_diffrnKeyref_0_0_9_0 FOREIGN KEY ( diffrn_id ) REFERENCES diffrn ( id ) ON DELETE CASCADE NOT VALID;
 
---ALTER TABLE pdbx_diffrn_reflns_shell ADD CONSTRAINT KR_diffrnKeyref_0_0_10_0 FOREIGN KEY ( diffrn_id ) REFERENCES diffrn ( id ) NOT VALID;
+--ALTER TABLE pdbx_diffrn_reflns_shell ADD CONSTRAINT KR_diffrnKeyref_0_0_10_0 FOREIGN KEY ( diffrn_id ) REFERENCES diffrn ( id ) ON DELETE CASCADE NOT VALID;
 
---ALTER TABLE diffrn_refln ADD CONSTRAINT KR_diffrn_scale_groupKeyref_0_0_0_0 FOREIGN KEY ( scale_group_code ) REFERENCES diffrn_scale_group ( code ) NOT VALID;
+--ALTER TABLE diffrn_refln ADD CONSTRAINT KR_diffrn_scale_groupKeyref_0_0_0_0 FOREIGN KEY ( scale_group_code ) REFERENCES diffrn_scale_group ( code ) ON DELETE CASCADE NOT VALID;
 
---ALTER TABLE em_entity_assembly_molwt ADD CONSTRAINT KR_em_entity_assemblyKeyref_0_0_0_0 FOREIGN KEY ( entity_assembly_id ) REFERENCES em_entity_assembly ( id ) NOT VALID;
+--ALTER TABLE em_entity_assembly_molwt ADD CONSTRAINT KR_em_entity_assemblyKeyref_0_0_0_0 FOREIGN KEY ( entity_assembly_id ) REFERENCES em_entity_assembly ( id ) ON DELETE CASCADE NOT VALID;
 
---ALTER TABLE em_entity_assembly_naturalsource ADD CONSTRAINT KR_em_entity_assemblyKeyref_0_0_1_0 FOREIGN KEY ( entity_assembly_id ) REFERENCES em_entity_assembly ( id ) NOT VALID;
+--ALTER TABLE em_entity_assembly_naturalsource ADD CONSTRAINT KR_em_entity_assemblyKeyref_0_0_1_0 FOREIGN KEY ( entity_assembly_id ) REFERENCES em_entity_assembly ( id ) ON DELETE CASCADE NOT VALID;
 
---ALTER TABLE em_entity_assembly_recombinant ADD CONSTRAINT KR_em_entity_assemblyKeyref_0_0_2_0 FOREIGN KEY ( entity_assembly_id ) REFERENCES em_entity_assembly ( id ) NOT VALID;
+--ALTER TABLE em_entity_assembly_recombinant ADD CONSTRAINT KR_em_entity_assemblyKeyref_0_0_2_0 FOREIGN KEY ( entity_assembly_id ) REFERENCES em_entity_assembly ( id ) ON DELETE CASCADE NOT VALID;
 
---ALTER TABLE em_virus_entity ADD CONSTRAINT KR_em_entity_assemblyKeyref_0_0_3_0 FOREIGN KEY ( entity_assembly_id ) REFERENCES em_entity_assembly ( id ) NOT VALID;
+--ALTER TABLE em_virus_entity ADD CONSTRAINT KR_em_entity_assemblyKeyref_0_0_3_0 FOREIGN KEY ( entity_assembly_id ) REFERENCES em_entity_assembly ( id ) ON DELETE CASCADE NOT VALID;
 
---ALTER TABLE em_virus_natural_host ADD CONSTRAINT KR_em_entity_assemblyKeyref_0_0_4_0 FOREIGN KEY ( entity_assembly_id ) REFERENCES em_entity_assembly ( id ) NOT VALID;
+--ALTER TABLE em_virus_natural_host ADD CONSTRAINT KR_em_entity_assemblyKeyref_0_0_4_0 FOREIGN KEY ( entity_assembly_id ) REFERENCES em_entity_assembly ( id ) ON DELETE CASCADE NOT VALID;
 
---ALTER TABLE em_virus_shell ADD CONSTRAINT KR_em_entity_assemblyKeyref_0_0_5_0 FOREIGN KEY ( entity_assembly_id ) REFERENCES em_entity_assembly ( id ) NOT VALID;
+--ALTER TABLE em_virus_shell ADD CONSTRAINT KR_em_entity_assemblyKeyref_0_0_5_0 FOREIGN KEY ( entity_assembly_id ) REFERENCES em_entity_assembly ( id ) ON DELETE CASCADE NOT VALID;
 
---ALTER TABLE entity_name_com ADD CONSTRAINT KR_entityKeyref_0_0_0_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) NOT VALID;
+--ALTER TABLE entity_name_com ADD CONSTRAINT KR_entityKeyref_0_0_0_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) ON DELETE CASCADE NOT VALID;
 
---ALTER TABLE entity_name_sys ADD CONSTRAINT KR_entityKeyref_0_0_1_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) NOT VALID;
+--ALTER TABLE entity_name_sys ADD CONSTRAINT KR_entityKeyref_0_0_1_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) ON DELETE CASCADE NOT VALID;
 
---ALTER TABLE entity_poly ADD CONSTRAINT KR_entityKeyref_0_0_2_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) NOT VALID;
+--ALTER TABLE entity_poly ADD CONSTRAINT KR_entityKeyref_0_0_2_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) ON DELETE CASCADE NOT VALID;
 
---ALTER TABLE pdbx_entity_assembly ADD CONSTRAINT KR_entityKeyref_0_0_3_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) NOT VALID;
+--ALTER TABLE pdbx_entity_assembly ADD CONSTRAINT KR_entityKeyref_0_0_3_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) ON DELETE CASCADE NOT VALID;
 
---ALTER TABLE pdbx_entity_descriptor ADD CONSTRAINT KR_entityKeyref_0_0_4_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) NOT VALID;
+--ALTER TABLE pdbx_entity_descriptor ADD CONSTRAINT KR_entityKeyref_0_0_4_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) ON DELETE CASCADE NOT VALID;
 
---ALTER TABLE pdbx_entity_nonpoly ADD CONSTRAINT KR_entityKeyref_0_0_5_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) NOT VALID;
+--ALTER TABLE pdbx_entity_nonpoly ADD CONSTRAINT KR_entityKeyref_0_0_5_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) ON DELETE CASCADE NOT VALID;
 
---ALTER TABLE struct_asym ADD CONSTRAINT KR_entityKeyref_0_0_6_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) NOT VALID;
+--ALTER TABLE struct_asym ADD CONSTRAINT KR_entityKeyref_0_0_6_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) ON DELETE CASCADE NOT VALID;
 
---ALTER TABLE struct_ref ADD CONSTRAINT KR_entityKeyref_0_0_7_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) NOT VALID;
+--ALTER TABLE struct_ref ADD CONSTRAINT KR_entityKeyref_0_0_7_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) ON DELETE CASCADE NOT VALID;
 
---ALTER TABLE entity_poly_seq ADD CONSTRAINT KR_entity_polyKeyref_0_0_0_0 FOREIGN KEY ( entity_id ) REFERENCES entity_poly ( entity_id ) NOT VALID;
+--ALTER TABLE entity_poly_seq ADD CONSTRAINT KR_entity_polyKeyref_0_0_0_0 FOREIGN KEY ( entity_id ) REFERENCES entity_poly ( entity_id ) ON DELETE CASCADE NOT VALID;
 
---ALTER TABLE pdbx_entity_poly_comp_link_list ADD CONSTRAINT KR_entity_poly_seqKeyref_0_0_0_0_0 FOREIGN KEY ( entity_id ) REFERENCES entity_poly_seq ( entity_id ) NOT VALID;
+--ALTER TABLE pdbx_entity_poly_comp_link_list ADD CONSTRAINT KR_entity_poly_seqKeyref_0_0_0_0_0 FOREIGN KEY ( entity_id ) REFERENCES entity_poly_seq ( entity_id ) ON DELETE CASCADE NOT VALID;
 
---ALTER TABLE pdbx_entity_poly_comp_link_list ADD CONSTRAINT KR_entity_poly_seqKeyref_0_0_0_0_1 FOREIGN KEY ( comp_id_1 ) REFERENCES entity_poly_seq ( mon_id ) NOT VALID;
+--ALTER TABLE pdbx_entity_poly_comp_link_list ADD CONSTRAINT KR_entity_poly_seqKeyref_0_0_0_0_1 FOREIGN KEY ( comp_id_1 ) REFERENCES entity_poly_seq ( mon_id ) ON DELETE CASCADE NOT VALID;
 
---ALTER TABLE pdbx_entity_poly_comp_link_list ADD CONSTRAINT KR_entity_poly_seqKeyref_0_0_0_0_2 FOREIGN KEY ( entity_comp_num_1 ) REFERENCES entity_poly_seq ( num ) NOT VALID;
+--ALTER TABLE pdbx_entity_poly_comp_link_list ADD CONSTRAINT KR_entity_poly_seqKeyref_0_0_0_0_2 FOREIGN KEY ( entity_comp_num_1 ) REFERENCES entity_poly_seq ( num ) ON DELETE CASCADE NOT VALID;
 
---ALTER TABLE pdbx_poly_seq_scheme ADD CONSTRAINT KR_entity_poly_seqKeyref_0_0_1_0_0 FOREIGN KEY ( entity_id ) REFERENCES entity_poly_seq ( entity_id ) NOT VALID;
+--ALTER TABLE pdbx_poly_seq_scheme ADD CONSTRAINT KR_entity_poly_seqKeyref_0_0_1_0_0 FOREIGN KEY ( entity_id ) REFERENCES entity_poly_seq ( entity_id ) ON DELETE CASCADE NOT VALID;
 
---ALTER TABLE pdbx_poly_seq_scheme ADD CONSTRAINT KR_entity_poly_seqKeyref_0_0_1_0_1 FOREIGN KEY ( mon_id ) REFERENCES entity_poly_seq ( mon_id ) NOT VALID;
+--ALTER TABLE pdbx_poly_seq_scheme ADD CONSTRAINT KR_entity_poly_seqKeyref_0_0_1_0_1 FOREIGN KEY ( mon_id ) REFERENCES entity_poly_seq ( mon_id ) ON DELETE CASCADE NOT VALID;
 
---ALTER TABLE pdbx_poly_seq_scheme ADD CONSTRAINT KR_entity_poly_seqKeyref_0_0_1_0_2 FOREIGN KEY ( seq_id ) REFERENCES entity_poly_seq ( num ) NOT VALID;
+--ALTER TABLE pdbx_poly_seq_scheme ADD CONSTRAINT KR_entity_poly_seqKeyref_0_0_1_0_2 FOREIGN KEY ( seq_id ) REFERENCES entity_poly_seq ( num ) ON DELETE CASCADE NOT VALID;
 
---ALTER TABLE em_3d_fitting ADD CONSTRAINT KR_entryKeyref_0_0_0_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) NOT VALID;
+--ALTER TABLE em_3d_fitting ADD CONSTRAINT KR_entryKeyref_0_0_0_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) ON DELETE CASCADE NOT VALID;
 
---ALTER TABLE em_3d_reconstruction ADD CONSTRAINT KR_entryKeyref_0_0_1_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) NOT VALID;
+--ALTER TABLE em_3d_reconstruction ADD CONSTRAINT KR_entryKeyref_0_0_1_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) ON DELETE CASCADE NOT VALID;
 
---ALTER TABLE em_experiment ADD CONSTRAINT KR_entryKeyref_0_0_2_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) NOT VALID;
+--ALTER TABLE em_experiment ADD CONSTRAINT KR_entryKeyref_0_0_2_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) ON DELETE CASCADE NOT VALID;
 
---ALTER TABLE em_image_scans ADD CONSTRAINT KR_entryKeyref_0_0_3_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) NOT VALID;
+--ALTER TABLE em_image_scans ADD CONSTRAINT KR_entryKeyref_0_0_3_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) ON DELETE CASCADE NOT VALID;
 
---ALTER TABLE em_imaging ADD CONSTRAINT KR_entryKeyref_0_0_4_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) NOT VALID;
+--ALTER TABLE em_imaging ADD CONSTRAINT KR_entryKeyref_0_0_4_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) ON DELETE CASCADE NOT VALID;
 
---ALTER TABLE em_vitrification ADD CONSTRAINT KR_entryKeyref_0_0_5_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) NOT VALID;
+--ALTER TABLE em_vitrification ADD CONSTRAINT KR_entryKeyref_0_0_5_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) ON DELETE CASCADE NOT VALID;
 
---ALTER TABLE entry_link ADD CONSTRAINT KR_entryKeyref_0_0_6_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) NOT VALID;
+--ALTER TABLE entry_link ADD CONSTRAINT KR_entryKeyref_0_0_6_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) ON DELETE CASCADE NOT VALID;
 
---ALTER TABLE exptl ADD CONSTRAINT KR_entryKeyref_0_0_7_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) NOT VALID;
+--ALTER TABLE exptl ADD CONSTRAINT KR_entryKeyref_0_0_7_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) ON DELETE CASCADE NOT VALID;
 
---ALTER TABLE ndb_struct_conf_na ADD CONSTRAINT KR_entryKeyref_0_0_8_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) NOT VALID;
+--ALTER TABLE ndb_struct_conf_na ADD CONSTRAINT KR_entryKeyref_0_0_8_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) ON DELETE CASCADE NOT VALID;
 
---ALTER TABLE pdbx_database_status ADD CONSTRAINT KR_entryKeyref_0_0_9_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) NOT VALID;
+--ALTER TABLE pdbx_database_status ADD CONSTRAINT KR_entryKeyref_0_0_9_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) ON DELETE CASCADE NOT VALID;
 
---ALTER TABLE pdbx_dcc_density ADD CONSTRAINT KR_entryKeyref_0_0_10_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) NOT VALID;
+--ALTER TABLE pdbx_dcc_density ADD CONSTRAINT KR_entryKeyref_0_0_10_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) ON DELETE CASCADE NOT VALID;
 
---ALTER TABLE pdbx_dcc_geometry ADD CONSTRAINT KR_entryKeyref_0_0_11_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) NOT VALID;
+--ALTER TABLE pdbx_dcc_geometry ADD CONSTRAINT KR_entryKeyref_0_0_11_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) ON DELETE CASCADE NOT VALID;
 
---ALTER TABLE pdbx_dcc_map_overall ADD CONSTRAINT KR_entryKeyref_0_0_12_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) NOT VALID;
+--ALTER TABLE pdbx_dcc_map_overall ADD CONSTRAINT KR_entryKeyref_0_0_12_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) ON DELETE CASCADE NOT VALID;
 
---ALTER TABLE pdbx_dcc_mapman ADD CONSTRAINT KR_entryKeyref_0_0_13_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) NOT VALID;
+--ALTER TABLE pdbx_dcc_mapman ADD CONSTRAINT KR_entryKeyref_0_0_13_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) ON DELETE CASCADE NOT VALID;
 
---ALTER TABLE pdbx_dcc_rscc_mapman_overall ADD CONSTRAINT KR_entryKeyref_0_0_14_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) NOT VALID;
+--ALTER TABLE pdbx_dcc_rscc_mapman_overall ADD CONSTRAINT KR_entryKeyref_0_0_14_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) ON DELETE CASCADE NOT VALID;
 
---ALTER TABLE pdbx_entry_details ADD CONSTRAINT KR_entryKeyref_0_0_15_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) NOT VALID;
+--ALTER TABLE pdbx_entry_details ADD CONSTRAINT KR_entryKeyref_0_0_15_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) ON DELETE CASCADE NOT VALID;
 
---ALTER TABLE pdbx_helical_symmetry ADD CONSTRAINT KR_entryKeyref_0_0_16_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) NOT VALID;
+--ALTER TABLE pdbx_helical_symmetry ADD CONSTRAINT KR_entryKeyref_0_0_16_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) ON DELETE CASCADE NOT VALID;
 
---ALTER TABLE pdbx_nmr_constraints ADD CONSTRAINT KR_entryKeyref_0_0_17_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) NOT VALID;
+--ALTER TABLE pdbx_nmr_constraints ADD CONSTRAINT KR_entryKeyref_0_0_17_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) ON DELETE CASCADE NOT VALID;
 
---ALTER TABLE pdbx_nmr_details ADD CONSTRAINT KR_entryKeyref_0_0_18_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) NOT VALID;
+--ALTER TABLE pdbx_nmr_details ADD CONSTRAINT KR_entryKeyref_0_0_18_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) ON DELETE CASCADE NOT VALID;
 
---ALTER TABLE pdbx_nmr_ensemble ADD CONSTRAINT KR_entryKeyref_0_0_19_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) NOT VALID;
+--ALTER TABLE pdbx_nmr_ensemble ADD CONSTRAINT KR_entryKeyref_0_0_19_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) ON DELETE CASCADE NOT VALID;
 
---ALTER TABLE pdbx_nmr_ensemble_rms ADD CONSTRAINT KR_entryKeyref_0_0_20_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) NOT VALID;
+--ALTER TABLE pdbx_nmr_ensemble_rms ADD CONSTRAINT KR_entryKeyref_0_0_20_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) ON DELETE CASCADE NOT VALID;
 
---ALTER TABLE pdbx_nmr_force_constants ADD CONSTRAINT KR_entryKeyref_0_0_21_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) NOT VALID;
+--ALTER TABLE pdbx_nmr_force_constants ADD CONSTRAINT KR_entryKeyref_0_0_21_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) ON DELETE CASCADE NOT VALID;
 
---ALTER TABLE pdbx_nmr_refine ADD CONSTRAINT KR_entryKeyref_0_0_22_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) NOT VALID;
+--ALTER TABLE pdbx_nmr_refine ADD CONSTRAINT KR_entryKeyref_0_0_22_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) ON DELETE CASCADE NOT VALID;
 
---ALTER TABLE pdbx_nmr_representative ADD CONSTRAINT KR_entryKeyref_0_0_23_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) NOT VALID;
+--ALTER TABLE pdbx_nmr_representative ADD CONSTRAINT KR_entryKeyref_0_0_23_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) ON DELETE CASCADE NOT VALID;
 
---ALTER TABLE pdbx_percentile_list ADD CONSTRAINT KR_entryKeyref_0_0_24_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) NOT VALID;
+--ALTER TABLE pdbx_percentile_list ADD CONSTRAINT KR_entryKeyref_0_0_24_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) ON DELETE CASCADE NOT VALID;
 
---ALTER TABLE pdbx_percentile_view ADD CONSTRAINT KR_entryKeyref_0_0_25_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) NOT VALID;
+--ALTER TABLE pdbx_percentile_view ADD CONSTRAINT KR_entryKeyref_0_0_25_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) ON DELETE CASCADE NOT VALID;
 
---ALTER TABLE pdbx_point_symmetry ADD CONSTRAINT KR_entryKeyref_0_0_26_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) NOT VALID;
+--ALTER TABLE pdbx_point_symmetry ADD CONSTRAINT KR_entryKeyref_0_0_26_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) ON DELETE CASCADE NOT VALID;
 
---ALTER TABLE pdbx_refine ADD CONSTRAINT KR_entryKeyref_0_0_27_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) NOT VALID;
+--ALTER TABLE pdbx_refine ADD CONSTRAINT KR_entryKeyref_0_0_27_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) ON DELETE CASCADE NOT VALID;
 
---ALTER TABLE pdbx_soln_scatter ADD CONSTRAINT KR_entryKeyref_0_0_28_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) NOT VALID;
+--ALTER TABLE pdbx_soln_scatter ADD CONSTRAINT KR_entryKeyref_0_0_28_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) ON DELETE CASCADE NOT VALID;
 
---ALTER TABLE pdbx_struct_nmr_ens_clust ADD CONSTRAINT KR_entryKeyref_0_0_29_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) NOT VALID;
+--ALTER TABLE pdbx_struct_nmr_ens_clust ADD CONSTRAINT KR_entryKeyref_0_0_29_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) ON DELETE CASCADE NOT VALID;
 
---ALTER TABLE "phasing_MAD" ADD CONSTRAINT KR_entryKeyref_0_0_30_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) NOT VALID;
+--ALTER TABLE "phasing_MAD" ADD CONSTRAINT KR_entryKeyref_0_0_30_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) ON DELETE CASCADE NOT VALID;
 
---ALTER TABLE "phasing_MIR" ADD CONSTRAINT KR_entryKeyref_0_0_31_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) NOT VALID;
+--ALTER TABLE "phasing_MIR" ADD CONSTRAINT KR_entryKeyref_0_0_31_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) ON DELETE CASCADE NOT VALID;
 
---ALTER TABLE phasing_averaging ADD CONSTRAINT KR_entryKeyref_0_0_32_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) NOT VALID;
+--ALTER TABLE phasing_averaging ADD CONSTRAINT KR_entryKeyref_0_0_32_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) ON DELETE CASCADE NOT VALID;
 
---ALTER TABLE phasing_isomorphous ADD CONSTRAINT KR_entryKeyref_0_0_33_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) NOT VALID;
+--ALTER TABLE phasing_isomorphous ADD CONSTRAINT KR_entryKeyref_0_0_33_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) ON DELETE CASCADE NOT VALID;
 
---ALTER TABLE refine ADD CONSTRAINT KR_entryKeyref_0_0_34_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) NOT VALID;
+--ALTER TABLE refine ADD CONSTRAINT KR_entryKeyref_0_0_34_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) ON DELETE CASCADE NOT VALID;
 
---ALTER TABLE refine_analyze ADD CONSTRAINT KR_entryKeyref_0_0_35_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) NOT VALID;
+--ALTER TABLE refine_analyze ADD CONSTRAINT KR_entryKeyref_0_0_35_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) ON DELETE CASCADE NOT VALID;
 
---ALTER TABLE reflns ADD CONSTRAINT KR_entryKeyref_0_0_36_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) NOT VALID;
+--ALTER TABLE reflns ADD CONSTRAINT KR_entryKeyref_0_0_36_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) ON DELETE CASCADE NOT VALID;
 
---ALTER TABLE struct ADD CONSTRAINT KR_entryKeyref_0_0_37_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) NOT VALID;
+--ALTER TABLE struct ADD CONSTRAINT KR_entryKeyref_0_0_37_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) ON DELETE CASCADE NOT VALID;
 
---ALTER TABLE struct_mon_details ADD CONSTRAINT KR_entryKeyref_0_0_38_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) NOT VALID;
+--ALTER TABLE struct_mon_details ADD CONSTRAINT KR_entryKeyref_0_0_38_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) ON DELETE CASCADE NOT VALID;
 
---ALTER TABLE symmetry ADD CONSTRAINT KR_entryKeyref_0_0_39_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) NOT VALID;
+--ALTER TABLE symmetry ADD CONSTRAINT KR_entryKeyref_0_0_39_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) ON DELETE CASCADE NOT VALID;
 
---ALTER TABLE pdbx_audit_revision_details ADD CONSTRAINT KR_pdbx_audit_revision_historyKeyref_0_0_0_0_0 FOREIGN KEY ( data_content_type ) REFERENCES pdbx_audit_revision_history ( data_content_type ) NOT VALID;
+--ALTER TABLE pdbx_audit_revision_details ADD CONSTRAINT KR_pdbx_audit_revision_historyKeyref_0_0_0_0_0 FOREIGN KEY ( data_content_type ) REFERENCES pdbx_audit_revision_history ( data_content_type ) ON DELETE CASCADE NOT VALID;
 
---ALTER TABLE pdbx_audit_revision_details ADD CONSTRAINT KR_pdbx_audit_revision_historyKeyref_0_0_0_0_1 FOREIGN KEY ( revision_ordinal ) REFERENCES pdbx_audit_revision_history ( ordinal ) NOT VALID;
+--ALTER TABLE pdbx_audit_revision_details ADD CONSTRAINT KR_pdbx_audit_revision_historyKeyref_0_0_0_0_1 FOREIGN KEY ( revision_ordinal ) REFERENCES pdbx_audit_revision_history ( ordinal ) ON DELETE CASCADE NOT VALID;
 
---ALTER TABLE pdbx_audit_revision_group ADD CONSTRAINT KR_pdbx_audit_revision_historyKeyref_0_0_1_0_0 FOREIGN KEY ( data_content_type ) REFERENCES pdbx_audit_revision_history ( data_content_type ) NOT VALID;
+--ALTER TABLE pdbx_audit_revision_group ADD CONSTRAINT KR_pdbx_audit_revision_historyKeyref_0_0_1_0_0 FOREIGN KEY ( data_content_type ) REFERENCES pdbx_audit_revision_history ( data_content_type ) ON DELETE CASCADE NOT VALID;
 
---ALTER TABLE pdbx_audit_revision_group ADD CONSTRAINT KR_pdbx_audit_revision_historyKeyref_0_0_1_0_1 FOREIGN KEY ( revision_ordinal ) REFERENCES pdbx_audit_revision_history ( ordinal ) NOT VALID;
+--ALTER TABLE pdbx_audit_revision_group ADD CONSTRAINT KR_pdbx_audit_revision_historyKeyref_0_0_1_0_1 FOREIGN KEY ( revision_ordinal ) REFERENCES pdbx_audit_revision_history ( ordinal ) ON DELETE CASCADE NOT VALID;
 
---ALTER TABLE pdbx_domain_range ADD CONSTRAINT KR_pdbx_domainKeyref_0_0_0_0 FOREIGN KEY ( domain_id ) REFERENCES pdbx_domain ( id ) NOT VALID;
+--ALTER TABLE pdbx_domain_range ADD CONSTRAINT KR_pdbx_domainKeyref_0_0_0_0 FOREIGN KEY ( domain_id ) REFERENCES pdbx_domain ( id ) ON DELETE CASCADE NOT VALID;
 
---ALTER TABLE pdbx_missing_nmr_star_item ADD CONSTRAINT KR_pdbx_nmr_assigned_chem_shift_listKeyref_0_0_0_0 FOREIGN KEY ( list_id ) REFERENCES pdbx_nmr_assigned_chem_shift_list ( id ) NOT VALID;
+--ALTER TABLE pdbx_missing_nmr_star_item ADD CONSTRAINT KR_pdbx_nmr_assigned_chem_shift_listKeyref_0_0_0_0 FOREIGN KEY ( list_id ) REFERENCES pdbx_nmr_assigned_chem_shift_list ( id ) ON DELETE CASCADE NOT VALID;
 
---ALTER TABLE pdbx_nmr_chem_shift_annotation ADD CONSTRAINT KR_pdbx_nmr_assigned_chem_shift_listKeyref_0_0_1_0 FOREIGN KEY ( list_id ) REFERENCES pdbx_nmr_assigned_chem_shift_list ( id ) NOT VALID;
+--ALTER TABLE pdbx_nmr_chem_shift_annotation ADD CONSTRAINT KR_pdbx_nmr_assigned_chem_shift_listKeyref_0_0_1_0 FOREIGN KEY ( list_id ) REFERENCES pdbx_nmr_assigned_chem_shift_list ( id ) ON DELETE CASCADE NOT VALID;
 
---ALTER TABLE pdbx_nmr_chem_shift_completeness ADD CONSTRAINT KR_pdbx_nmr_assigned_chem_shift_listKeyref_0_0_2_0 FOREIGN KEY ( list_id ) REFERENCES pdbx_nmr_assigned_chem_shift_list ( id ) NOT VALID;
+--ALTER TABLE pdbx_nmr_chem_shift_completeness ADD CONSTRAINT KR_pdbx_nmr_assigned_chem_shift_listKeyref_0_0_2_0 FOREIGN KEY ( list_id ) REFERENCES pdbx_nmr_assigned_chem_shift_list ( id ) ON DELETE CASCADE NOT VALID;
 
---ALTER TABLE pdbx_nmr_chem_shift_re_offset ADD CONSTRAINT KR_pdbx_nmr_assigned_chem_shift_listKeyref_0_0_3_0 FOREIGN KEY ( list_id ) REFERENCES pdbx_nmr_assigned_chem_shift_list ( id ) NOT VALID;
+--ALTER TABLE pdbx_nmr_chem_shift_re_offset ADD CONSTRAINT KR_pdbx_nmr_assigned_chem_shift_listKeyref_0_0_3_0 FOREIGN KEY ( list_id ) REFERENCES pdbx_nmr_assigned_chem_shift_list ( id ) ON DELETE CASCADE NOT VALID;
 
---ALTER TABLE pdbx_nmr_unmapped_chem_shift ADD CONSTRAINT KR_pdbx_nmr_assigned_chem_shift_listKeyref_0_0_4_0 FOREIGN KEY ( list_id ) REFERENCES pdbx_nmr_assigned_chem_shift_list ( id ) NOT VALID;
+--ALTER TABLE pdbx_nmr_unmapped_chem_shift ADD CONSTRAINT KR_pdbx_nmr_assigned_chem_shift_listKeyref_0_0_4_0 FOREIGN KEY ( list_id ) REFERENCES pdbx_nmr_assigned_chem_shift_list ( id ) ON DELETE CASCADE NOT VALID;
 
---ALTER TABLE pdbx_nmr_unparsed_chem_shift ADD CONSTRAINT KR_pdbx_nmr_assigned_chem_shift_listKeyref_0_0_5_0 FOREIGN KEY ( list_id ) REFERENCES pdbx_nmr_assigned_chem_shift_list ( id ) NOT VALID;
+--ALTER TABLE pdbx_nmr_unparsed_chem_shift ADD CONSTRAINT KR_pdbx_nmr_assigned_chem_shift_listKeyref_0_0_5_0 FOREIGN KEY ( list_id ) REFERENCES pdbx_nmr_assigned_chem_shift_list ( id ) ON DELETE CASCADE NOT VALID;
 
---ALTER TABLE pdbx_validate_nmr_chem_shift ADD CONSTRAINT KR_pdbx_nmr_assigned_chem_shift_listKeyref_0_0_6_0 FOREIGN KEY ( list_id ) REFERENCES pdbx_nmr_assigned_chem_shift_list ( id ) NOT VALID;
+--ALTER TABLE pdbx_validate_nmr_chem_shift ADD CONSTRAINT KR_pdbx_nmr_assigned_chem_shift_listKeyref_0_0_6_0 FOREIGN KEY ( list_id ) REFERENCES pdbx_nmr_assigned_chem_shift_list ( id ) ON DELETE CASCADE NOT VALID;
 
---ALTER TABLE pdbx_percentile_entity_view ADD CONSTRAINT KR_pdbx_percentile_conditionsKeyref_0_0_0_0 FOREIGN KEY ( conditions_id ) REFERENCES pdbx_percentile_conditions ( id ) NOT VALID;
+--ALTER TABLE pdbx_percentile_entity_view ADD CONSTRAINT KR_pdbx_percentile_conditionsKeyref_0_0_0_0 FOREIGN KEY ( conditions_id ) REFERENCES pdbx_percentile_conditions ( id ) ON DELETE CASCADE NOT VALID;
 
---ALTER TABLE pdbx_percentile_view ADD CONSTRAINT KR_pdbx_percentile_conditionsKeyref_0_0_1_0 FOREIGN KEY ( conditions_id ) REFERENCES pdbx_percentile_conditions ( id ) NOT VALID;
+--ALTER TABLE pdbx_percentile_view ADD CONSTRAINT KR_pdbx_percentile_conditionsKeyref_0_0_1_0 FOREIGN KEY ( conditions_id ) REFERENCES pdbx_percentile_conditions ( id ) ON DELETE CASCADE NOT VALID;
 
---ALTER TABLE pdbx_refine_tls_group ADD CONSTRAINT KR_pdbx_refine_tlsKeyref_0_0_0_0 FOREIGN KEY ( refine_tls_id ) REFERENCES pdbx_refine_tls ( id ) NOT VALID;
+--ALTER TABLE pdbx_refine_tls_group ADD CONSTRAINT KR_pdbx_refine_tlsKeyref_0_0_0_0 FOREIGN KEY ( refine_tls_id ) REFERENCES pdbx_refine_tls ( id ) ON DELETE CASCADE NOT VALID;
 
---ALTER TABLE pdbx_struct_assembly_gen ADD CONSTRAINT KR_pdbx_struct_assemblyKeyref_0_0_0_0 FOREIGN KEY ( assembly_id ) REFERENCES pdbx_struct_assembly ( id ) NOT VALID;
+--ALTER TABLE pdbx_struct_assembly_gen ADD CONSTRAINT KR_pdbx_struct_assemblyKeyref_0_0_0_0 FOREIGN KEY ( assembly_id ) REFERENCES pdbx_struct_assembly ( id ) ON DELETE CASCADE NOT VALID;
 
---ALTER TABLE pdbx_struct_asym_gen ADD CONSTRAINT KR_pdbx_struct_entity_instKeyref_0_0_0_0 FOREIGN KEY ( entity_inst_id ) REFERENCES pdbx_struct_entity_inst ( id ) NOT VALID;
+--ALTER TABLE pdbx_struct_asym_gen ADD CONSTRAINT KR_pdbx_struct_entity_instKeyref_0_0_0_0 FOREIGN KEY ( entity_inst_id ) REFERENCES pdbx_struct_entity_inst ( id ) ON DELETE CASCADE NOT VALID;
 
---ALTER TABLE pdbx_struct_msym_gen ADD CONSTRAINT KR_pdbx_struct_entity_instKeyref_0_0_1_0 FOREIGN KEY ( entity_inst_id ) REFERENCES pdbx_struct_entity_inst ( id ) NOT VALID;
+--ALTER TABLE pdbx_struct_msym_gen ADD CONSTRAINT KR_pdbx_struct_entity_instKeyref_0_0_1_0 FOREIGN KEY ( entity_inst_id ) REFERENCES pdbx_struct_entity_inst ( id ) ON DELETE CASCADE NOT VALID;
 
---ALTER TABLE pdbx_struct_group_component_range ADD CONSTRAINT KR_pdbx_struct_group_listKeyref_0_0_0_0 FOREIGN KEY ( struct_group_id ) REFERENCES pdbx_struct_group_list ( struct_group_id ) NOT VALID;
+--ALTER TABLE pdbx_struct_group_component_range ADD CONSTRAINT KR_pdbx_struct_group_listKeyref_0_0_0_0 FOREIGN KEY ( struct_group_id ) REFERENCES pdbx_struct_group_list ( struct_group_id ) ON DELETE CASCADE NOT VALID;
 
---ALTER TABLE pdbx_struct_group_components ADD CONSTRAINT KR_pdbx_struct_group_listKeyref_0_0_1_0 FOREIGN KEY ( struct_group_id ) REFERENCES pdbx_struct_group_list ( struct_group_id ) NOT VALID;
+--ALTER TABLE pdbx_struct_group_components ADD CONSTRAINT KR_pdbx_struct_group_listKeyref_0_0_1_0 FOREIGN KEY ( struct_group_id ) REFERENCES pdbx_struct_group_list ( struct_group_id ) ON DELETE CASCADE NOT VALID;
 
---ALTER TABLE pdbx_struct_nmr_ens_dom_lim ADD CONSTRAINT KR_pdbx_struct_nmr_ens_domKeyref_0_0_0_0 FOREIGN KEY ( dom_id ) REFERENCES pdbx_struct_nmr_ens_dom ( id ) NOT VALID;
+--ALTER TABLE pdbx_struct_nmr_ens_dom_lim ADD CONSTRAINT KR_pdbx_struct_nmr_ens_domKeyref_0_0_0_0 FOREIGN KEY ( dom_id ) REFERENCES pdbx_struct_nmr_ens_dom ( id ) ON DELETE CASCADE NOT VALID;
 
---ALTER TABLE pdbx_validate_planes_atom ADD CONSTRAINT KR_pdbx_validate_planesKeyref_0_0_0_0 FOREIGN KEY ( plane_id ) REFERENCES pdbx_validate_planes ( id ) NOT VALID;
+--ALTER TABLE pdbx_validate_planes_atom ADD CONSTRAINT KR_pdbx_validate_planesKeyref_0_0_0_0 FOREIGN KEY ( plane_id ) REFERENCES pdbx_validate_planes ( id ) ON DELETE CASCADE NOT VALID;
 
---ALTER TABLE pdbx_validate_rmsd_rings_atom ADD CONSTRAINT KR_pdbx_validate_rmsd_ringKeyref_0_0_0_0 FOREIGN KEY ( ring_id ) REFERENCES pdbx_validate_rmsd_ring ( id ) NOT VALID;
+--ALTER TABLE pdbx_validate_rmsd_rings_atom ADD CONSTRAINT KR_pdbx_validate_rmsd_ringKeyref_0_0_0_0 FOREIGN KEY ( ring_id ) REFERENCES pdbx_validate_rmsd_ring ( id ) ON DELETE CASCADE NOT VALID;
 
---ALTER TABLE pdbx_validate_rmsd_torsions_atom ADD CONSTRAINT KR_pdbx_validate_rmsd_torsionKeyref_0_0_0_0 FOREIGN KEY ( torsion_id ) REFERENCES pdbx_validate_rmsd_torsion ( id ) NOT VALID;
+--ALTER TABLE pdbx_validate_rmsd_torsions_atom ADD CONSTRAINT KR_pdbx_validate_rmsd_torsionKeyref_0_0_0_0 FOREIGN KEY ( torsion_id ) REFERENCES pdbx_validate_rmsd_torsion ( id ) ON DELETE CASCADE NOT VALID;
 
---ALTER TABLE "phasing_MAD_clust" ADD CONSTRAINT KR_phasing_MAD_exptKeyref_0_0_0_0 FOREIGN KEY ( expt_id ) REFERENCES "phasing_MAD_expt" ( id ) NOT VALID;
+--ALTER TABLE "phasing_MAD_clust" ADD CONSTRAINT KR_phasing_MAD_exptKeyref_0_0_0_0 FOREIGN KEY ( expt_id ) REFERENCES "phasing_MAD_expt" ( id ) ON DELETE CASCADE NOT VALID;
 
---ALTER TABLE "phasing_MAD_ratio" ADD CONSTRAINT KR_phasing_MAD_exptKeyref_0_0_1_0 FOREIGN KEY ( expt_id ) REFERENCES "phasing_MAD_expt" ( id ) NOT VALID;
+--ALTER TABLE "phasing_MAD_ratio" ADD CONSTRAINT KR_phasing_MAD_exptKeyref_0_0_1_0 FOREIGN KEY ( expt_id ) REFERENCES "phasing_MAD_expt" ( id ) ON DELETE CASCADE NOT VALID;
 
---ALTER TABLE "phasing_MAD_set" ADD CONSTRAINT KR_phasing_MAD_exptKeyref_0_0_2_0 FOREIGN KEY ( expt_id ) REFERENCES "phasing_MAD_expt" ( id ) NOT VALID;
+--ALTER TABLE "phasing_MAD_set" ADD CONSTRAINT KR_phasing_MAD_exptKeyref_0_0_2_0 FOREIGN KEY ( expt_id ) REFERENCES "phasing_MAD_expt" ( id ) ON DELETE CASCADE NOT VALID;
 
---ALTER TABLE "phasing_MIR_der_refln" ADD CONSTRAINT KR_phasing_MIR_derKeyref_0_0_0_0 FOREIGN KEY ( der_id ) REFERENCES "phasing_MIR_der" ( id ) NOT VALID;
+--ALTER TABLE "phasing_MIR_der_refln" ADD CONSTRAINT KR_phasing_MIR_derKeyref_0_0_0_0 FOREIGN KEY ( der_id ) REFERENCES "phasing_MIR_der" ( id ) ON DELETE CASCADE NOT VALID;
 
---ALTER TABLE "phasing_MIR_der_shell" ADD CONSTRAINT KR_phasing_MIR_derKeyref_0_0_1_0 FOREIGN KEY ( der_id ) REFERENCES "phasing_MIR_der" ( id ) NOT VALID;
+--ALTER TABLE "phasing_MIR_der_shell" ADD CONSTRAINT KR_phasing_MIR_derKeyref_0_0_1_0 FOREIGN KEY ( der_id ) REFERENCES "phasing_MIR_der" ( id ) ON DELETE CASCADE NOT VALID;
 
---ALTER TABLE "phasing_MIR_der_site" ADD CONSTRAINT KR_phasing_MIR_derKeyref_0_0_2_0 FOREIGN KEY ( der_id ) REFERENCES "phasing_MIR_der" ( id ) NOT VALID;
+--ALTER TABLE "phasing_MIR_der_site" ADD CONSTRAINT KR_phasing_MIR_derKeyref_0_0_2_0 FOREIGN KEY ( der_id ) REFERENCES "phasing_MIR_der" ( id ) ON DELETE CASCADE NOT VALID;
 
---ALTER TABLE "phasing_MAD_set" ADD CONSTRAINT KR_phasing_setKeyref_0_0_0_0 FOREIGN KEY ( set_id ) REFERENCES phasing_set ( id ) NOT VALID;
+--ALTER TABLE "phasing_MAD_set" ADD CONSTRAINT KR_phasing_setKeyref_0_0_0_0 FOREIGN KEY ( set_id ) REFERENCES phasing_set ( id ) ON DELETE CASCADE NOT VALID;
 
---ALTER TABLE "phasing_MIR_der" ADD CONSTRAINT KR_phasing_setKeyref_0_0_1_0 FOREIGN KEY ( der_set_id ) REFERENCES phasing_set ( id ) NOT VALID;
+--ALTER TABLE "phasing_MIR_der" ADD CONSTRAINT KR_phasing_setKeyref_0_0_1_0 FOREIGN KEY ( der_set_id ) REFERENCES phasing_set ( id ) ON DELETE CASCADE NOT VALID;
 
---ALTER TABLE "phasing_MIR_der_refln" ADD CONSTRAINT KR_phasing_setKeyref_0_0_2_0 FOREIGN KEY ( set_id ) REFERENCES phasing_set ( id ) NOT VALID;
+--ALTER TABLE "phasing_MIR_der_refln" ADD CONSTRAINT KR_phasing_setKeyref_0_0_2_0 FOREIGN KEY ( set_id ) REFERENCES phasing_set ( id ) ON DELETE CASCADE NOT VALID;
 
---ALTER TABLE phasing_set_refln ADD CONSTRAINT KR_phasing_setKeyref_0_0_3_0 FOREIGN KEY ( set_id ) REFERENCES phasing_set ( id ) NOT VALID;
+--ALTER TABLE phasing_set_refln ADD CONSTRAINT KR_phasing_setKeyref_0_0_3_0 FOREIGN KEY ( set_id ) REFERENCES phasing_set ( id ) ON DELETE CASCADE NOT VALID;
 
---ALTER TABLE pdbx_coordinate_model ADD CONSTRAINT KR_struct_asymKeyref_0_0_0_0 FOREIGN KEY ( asym_id ) REFERENCES struct_asym ( id ) NOT VALID;
+--ALTER TABLE pdbx_coordinate_model ADD CONSTRAINT KR_struct_asymKeyref_0_0_0_0 FOREIGN KEY ( asym_id ) REFERENCES struct_asym ( id ) ON DELETE CASCADE NOT VALID;
 
---ALTER TABLE pdbx_entity_assembly ADD CONSTRAINT KR_struct_biolKeyref_0_0_0_0 FOREIGN KEY ( biol_id ) REFERENCES struct_biol ( id ) NOT VALID;
+--ALTER TABLE pdbx_entity_assembly ADD CONSTRAINT KR_struct_biolKeyref_0_0_0_0 FOREIGN KEY ( biol_id ) REFERENCES struct_biol ( id ) ON DELETE CASCADE NOT VALID;
 
---ALTER TABLE struct_biol_view ADD CONSTRAINT KR_struct_biolKeyref_0_0_1_0 FOREIGN KEY ( biol_id ) REFERENCES struct_biol ( id ) NOT VALID;
+--ALTER TABLE struct_biol_view ADD CONSTRAINT KR_struct_biolKeyref_0_0_1_0 FOREIGN KEY ( biol_id ) REFERENCES struct_biol ( id ) ON DELETE CASCADE NOT VALID;
 
---ALTER TABLE struct_conf ADD CONSTRAINT KR_struct_conf_typeKeyref_0_0_0_0 FOREIGN KEY ( conf_type_id ) REFERENCES struct_conf_type ( id ) NOT VALID;
+--ALTER TABLE struct_conf ADD CONSTRAINT KR_struct_conf_typeKeyref_0_0_0_0 FOREIGN KEY ( conf_type_id ) REFERENCES struct_conf_type ( id ) ON DELETE CASCADE NOT VALID;
 
---ALTER TABLE struct_ncs_dom_lim ADD CONSTRAINT KR_struct_ncs_domKeyref_1_0_0_0_0 FOREIGN KEY ( dom_id ) REFERENCES struct_ncs_dom ( id ) NOT VALID;
+--ALTER TABLE struct_ncs_dom_lim ADD CONSTRAINT KR_struct_ncs_domKeyref_1_0_0_0_0 FOREIGN KEY ( dom_id ) REFERENCES struct_ncs_dom ( id ) ON DELETE CASCADE NOT VALID;
 
---ALTER TABLE struct_ncs_dom_lim ADD CONSTRAINT KR_struct_ncs_domKeyref_1_0_0_0_1 FOREIGN KEY ( pdbx_ens_id ) REFERENCES struct_ncs_dom ( pdbx_ens_id ) NOT VALID;
+--ALTER TABLE struct_ncs_dom_lim ADD CONSTRAINT KR_struct_ncs_domKeyref_1_0_0_0_1 FOREIGN KEY ( pdbx_ens_id ) REFERENCES struct_ncs_dom ( pdbx_ens_id ) ON DELETE CASCADE NOT VALID;
 
---ALTER TABLE struct_ncs_dom ADD CONSTRAINT KR_struct_ncs_ensKeyref_0_0_0_0 FOREIGN KEY ( pdbx_ens_id ) REFERENCES struct_ncs_ens ( id ) NOT VALID;
+--ALTER TABLE struct_ncs_dom ADD CONSTRAINT KR_struct_ncs_ensKeyref_0_0_0_0 FOREIGN KEY ( pdbx_ens_id ) REFERENCES struct_ncs_ens ( id ) ON DELETE CASCADE NOT VALID;
 
---ALTER TABLE struct_ncs_ens_gen ADD CONSTRAINT KR_struct_ncs_ensKeyref_0_0_1_0 FOREIGN KEY ( ens_id ) REFERENCES struct_ncs_ens ( id ) NOT VALID;
+--ALTER TABLE struct_ncs_ens_gen ADD CONSTRAINT KR_struct_ncs_ensKeyref_0_0_1_0 FOREIGN KEY ( ens_id ) REFERENCES struct_ncs_ens ( id ) ON DELETE CASCADE NOT VALID;
 
---ALTER TABLE struct_ncs_ens_gen ADD CONSTRAINT KR_struct_ncs_operKeyref_0_0_0_0 FOREIGN KEY ( oper_id ) REFERENCES struct_ncs_oper ( id ) NOT VALID;
+--ALTER TABLE struct_ncs_ens_gen ADD CONSTRAINT KR_struct_ncs_operKeyref_0_0_0_0 FOREIGN KEY ( oper_id ) REFERENCES struct_ncs_oper ( id ) ON DELETE CASCADE NOT VALID;
 
---ALTER TABLE struct_ref_seq ADD CONSTRAINT KR_struct_refKeyref_0_0_0_0 FOREIGN KEY ( ref_id ) REFERENCES struct_ref ( id ) NOT VALID;
+--ALTER TABLE struct_ref_seq ADD CONSTRAINT KR_struct_refKeyref_0_0_0_0 FOREIGN KEY ( ref_id ) REFERENCES struct_ref ( id ) ON DELETE CASCADE NOT VALID;
 
---ALTER TABLE struct_ref_seq_dif ADD CONSTRAINT KR_struct_ref_seqKeyref_0_0_0_0 FOREIGN KEY ( align_id ) REFERENCES struct_ref_seq ( align_id ) NOT VALID;
+--ALTER TABLE struct_ref_seq_dif ADD CONSTRAINT KR_struct_ref_seqKeyref_0_0_0_0 FOREIGN KEY ( align_id ) REFERENCES struct_ref_seq ( align_id ) ON DELETE CASCADE NOT VALID;
 
---ALTER TABLE pdbx_struct_sheet_hbond ADD CONSTRAINT KR_struct_sheetKeyref_0_0_0_0 FOREIGN KEY ( sheet_id ) REFERENCES struct_sheet ( id ) NOT VALID;
+--ALTER TABLE pdbx_struct_sheet_hbond ADD CONSTRAINT KR_struct_sheetKeyref_0_0_0_0 FOREIGN KEY ( sheet_id ) REFERENCES struct_sheet ( id ) ON DELETE CASCADE NOT VALID;
 
---ALTER TABLE struct_sheet_hbond ADD CONSTRAINT KR_struct_sheetKeyref_0_0_1_0 FOREIGN KEY ( sheet_id ) REFERENCES struct_sheet ( id ) NOT VALID;
+--ALTER TABLE struct_sheet_hbond ADD CONSTRAINT KR_struct_sheetKeyref_0_0_1_0 FOREIGN KEY ( sheet_id ) REFERENCES struct_sheet ( id ) ON DELETE CASCADE NOT VALID;
 
---ALTER TABLE struct_sheet_order ADD CONSTRAINT KR_struct_sheetKeyref_0_0_2_0 FOREIGN KEY ( sheet_id ) REFERENCES struct_sheet ( id ) NOT VALID;
+--ALTER TABLE struct_sheet_order ADD CONSTRAINT KR_struct_sheetKeyref_0_0_2_0 FOREIGN KEY ( sheet_id ) REFERENCES struct_sheet ( id ) ON DELETE CASCADE NOT VALID;
 
---ALTER TABLE struct_sheet_range ADD CONSTRAINT KR_struct_sheetKeyref_0_0_3_0 FOREIGN KEY ( sheet_id ) REFERENCES struct_sheet ( id ) NOT VALID;
+--ALTER TABLE struct_sheet_range ADD CONSTRAINT KR_struct_sheetKeyref_0_0_3_0 FOREIGN KEY ( sheet_id ) REFERENCES struct_sheet ( id ) ON DELETE CASCADE NOT VALID;
 
---ALTER TABLE struct_sheet_topology ADD CONSTRAINT KR_struct_sheetKeyref_0_0_4_0 FOREIGN KEY ( sheet_id ) REFERENCES struct_sheet ( id ) NOT VALID;
+--ALTER TABLE struct_sheet_topology ADD CONSTRAINT KR_struct_sheetKeyref_0_0_4_0 FOREIGN KEY ( sheet_id ) REFERENCES struct_sheet ( id ) ON DELETE CASCADE NOT VALID;
 
---ALTER TABLE struct_site_gen ADD CONSTRAINT KR_struct_siteKeyref_0_0_0_0 FOREIGN KEY ( site_id ) REFERENCES struct_site ( id ) NOT VALID;
+--ALTER TABLE struct_site_gen ADD CONSTRAINT KR_struct_siteKeyref_0_0_0_0 FOREIGN KEY ( site_id ) REFERENCES struct_site ( id ) ON DELETE CASCADE NOT VALID;
 
---ALTER TABLE struct_site_view ADD CONSTRAINT KR_struct_siteKeyref_0_0_1_0 FOREIGN KEY ( site_id ) REFERENCES struct_site ( id ) NOT VALID;
+--ALTER TABLE struct_site_view ADD CONSTRAINT KR_struct_siteKeyref_0_0_1_0 FOREIGN KEY ( site_id ) REFERENCES struct_site ( id ) ON DELETE CASCADE NOT VALID;
 
