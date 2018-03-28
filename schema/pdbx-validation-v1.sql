@@ -27,7 +27,7 @@
 --   User keys:
 --    236 document keys, 0 serial keys, 0 xpath keys
 --   Contents:
---    402 attributes, 2521 elements, 0 simple contents
+--    402 attributes (0 in-place document keys), 2521 elements (0 in-place document keys), 0 simple contents
 --   Wild cards:
 --    0 any elements, 0 any attributes
 --
