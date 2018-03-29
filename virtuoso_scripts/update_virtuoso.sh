@@ -27,11 +27,9 @@ if [ $? != 0 ] ; then
 
 fi
 
-./virtuoso_scripts/start_virtuoso.sh
+./virtuoso_scripts/start_virtuoso.sh || exit 1
 
-if [ $? != 0 ] ; then
- exit 1
-fi
+sleep 180
 
 GRAPH_URI=http://rdf.wwpdb.org/$DB_NAME
 
@@ -62,11 +60,7 @@ case $ans in
     exit 1;;
 esac
 
-isql $VIRTUOSO_DB_PORT $VIRTUOSO_DB_USER $VIRTUOSO_DB_PASS exec="status();"
-
-if [ $? != 0 ] ; then
- exit 1
-fi
+isql $VIRTUOSO_DB_PORT $VIRTUOSO_DB_USER $VIRTUOSO_DB_PASS exec="status();" || exit 1
 
 rm -rf $RDF_VALID_LINK
 mkdir -p $RDF_VALID_LINK
@@ -159,11 +153,7 @@ else
 
 fi
 
-isql $VIRTUOSO_DB_PORT $VIRTUOSO_DB_USER $VIRTUOSO_DB_PASS exec="checkpoint;"
-
-if [ $? != 0 ] ; then
- exit 1
-fi
+isql $VIRTUOSO_DB_PORT $VIRTUOSO_DB_USER $VIRTUOSO_DB_PASS exec="checkpoint;" || exit 1
 
 date -u +"%b %d, %Y" > /tmp/pdb-virtuoso-last
 
