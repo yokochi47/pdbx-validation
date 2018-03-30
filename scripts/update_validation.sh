@@ -99,12 +99,6 @@ if [ $weekday -ge 1 ] && [ $weekday -le 4 ] ; then
   done < $rsync_log
  fi
 
- if [ -d $PDBML_EXT ] ; then
-  while read pdb_id ; do
-   rm -f $PDBML_EXT/$pdb_id-noatom-ext.xml
-  done < $rsync_log
- fi
-
  if [ -d $VALID_INFO_ALT ] ; then
   while read pdb_id ; do
    rm -f $VALID_INFO_ALT/$pdb_id-validation-alt.xml
