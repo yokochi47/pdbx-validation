@@ -28393,8 +28393,9 @@ Details of any error or warning messages.
                      </xsd:annotation>
                   </xsd:element>
                   <xsd:element name="medoid_model_number"
-                               minOccurs="1"
+                               minOccurs="0"
                                maxOccurs="1"
+                               nillable="true"
                                type="xsd:integer">
                      <xsd:annotation>
                         <xsd:documentation xml:lang="en">
