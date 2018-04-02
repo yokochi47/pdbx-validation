@@ -52,6 +52,9 @@ File path | Document
 
 ## Release notes
 
+- **Apr 2, 2018**: Release v1.2.1
+	- Fix stylesheet to handle null RSR value, null medoid model number.
+
 - **Mar 23, 2018**: Release v1.2.0
 	- Update PostgreSQL data migration scripts, in which differential update is enabled.
 	- Update wwPDB Validation Information Dictionary from v0.291 to 0.292.

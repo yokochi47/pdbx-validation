@@ -1468,8 +1468,12 @@ Unmatched components exist in WilsonBaniso, <xsl:value-of select="position()"/>,
         <xsl:if test="@ligRSRnbrStdev">
           <xsl:element name="PDBxv:LLDF_sigma"><xsl:value-of select="@ligRSRnbrStdev"/></xsl:element>
         </xsl:if>
-        <xsl:element name="PDBxv:RSCC"><xsl:value-of select="@rscc"/></xsl:element>
-        <xsl:element name="PDBxv:RSR"><xsl:value-of select="@rsr"/></xsl:element>
+        <xsl:if test="@rscc">
+          <xsl:element name="PDBxv:RSCC"><xsl:value-of select="@rscc"/></xsl:element>
+        </xsl:if>
+        <xsl:if test="@rsr">
+          <xsl:element name="PDBxv:RSR"><xsl:value-of select="@rsr"/></xsl:element>
+        </xsl:if>
         <xsl:if test="@rsrz">
           <xsl:element name="PDBxv:RSRZ"><xsl:value-of select="@rsrz"/></xsl:element>
         </xsl:if>
@@ -2152,9 +2156,13 @@ Unmatched components exist in atoms, <xsl:value-of select="position()"/>, found 
   <xsl:template name="pdbx_struct_nmr_ens_dom">
     <PDBxv:pdbx_struct_nmr_ens_dom>
       <xsl:attribute name="id"><xsl:value-of select="@domain"/></xsl:attribute>
-      <xsl:element name="PDBxv:medoid_model_number"><xsl:value-of select="@medoid_model"/></xsl:element>
+      <xsl:if test="@medoid_model">
+        <xsl:element name="PDBxv:medoid_model_number"><xsl:value-of select="@medoid_model"/></xsl:element>
+      </xsl:if>
       <xsl:element name="PDBxv:distance_rms_dev"><xsl:value-of select="@rmsd"/></xsl:element>
-      <xsl:element name="PDBxv:distance_rms_dev_medoid"><xsl:value-of select="@medoid_rmsd"/></xsl:element>
+      <xsl:if test="@medoid_rmsd">
+        <xsl:element name="PDBxv:distance_rms_dev_medoid"><xsl:value-of select="@medoid_rmsd"/></xsl:element>
+      </xsl:if>
       <xsl:element name="PDBxv:number_of_gaps"><xsl:value-of select="@number_of_gaps"/></xsl:element>
       <xsl:element name="PDBxv:number_of_monomers"><xsl:value-of select="@number_of_residues"/></xsl:element>
       <xsl:if test="../Entry/@cyrange_error and ../Entry/@cyrange_error!='success'">

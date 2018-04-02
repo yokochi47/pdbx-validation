@@ -1,7 +1,7 @@
 ###########################################################################
 #
 # File:  mmcif_pdbx_validation.dic
-# Date:  Fri Mar 23 15:55:48 JST 2018
+# Date:  Mon Apr  2 09:51:49 JST 2018
 #
 # Created from files noted:
 #        mmcif_pdbx_v50.dic   - PDB Exchange Data Dictionary (V5.292)
@@ -238,12 +238,14 @@ data_mmcif_pdbx_validation.dic
 >     + Add RNA-Puzzles to _pdbx_database_status.methods_development_category enumeration
 >     + Add _pdbx_audit_support.details
 ;
-  1.292   2018-03-23
+  1.292   2018-04-02
 ;
   (changes: MY)
 >     + Add "MAXIMUM LIKELIHOOD" to _emd_angle_assignment.type enumeration
 >     + Extend range for _em_image_recording.average_exposure_time
 >     + Update diffrn_source category deposition related enumerations
+      + Change mandatory code of _pdbx_struct_nmr_ens_dom.medoid_model_number,
+        _pdbx_struct_nmr_ens_dom.distance_rms_dev_medoid
 ;
 
 #
@@ -59205,7 +59207,7 @@ save__pdbx_struct_nmr_ens_dom.medoid_model_number
 ;
     _item.name                  '_pdbx_struct_nmr_ens_dom.medoid_model_number'
     _item.category_id             pdbx_struct_nmr_ens_dom
-    _item.mandatory_code          yes
+    _item.mandatory_code          no
     _item_type.code               int
     _pdbx_item_external_ref.child_name  '_pdbx_struct_nmr_ens_dom.medoid_model_number'
     _pdbx_item_external_ref.parent_name '_atom_site.pdbx_PDB_model_num'
