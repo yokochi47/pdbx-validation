@@ -2,14 +2,14 @@
 
 source ./scripts/env.sh
 
-VALIDATE_OPT=
+VALID_OPT=
 
 ARGV=`getopt --long -o "v" "$@"`
 eval set -- "$ARGV"
 while true ; do
  case "$1" in
  -v)
-  VALIDATE_OPT=$1
+  VALID_OPT=$1
  ;;
  *)
   break
@@ -31,7 +31,7 @@ ext_info_exit_code=0
 
 if [ -d $PDBML_EXT ] && [ $total -gt $huge_number ] ; then
 
- ./scripts/extract_pdbml.sh $VALIDATE_OPT
+ ./scripts/extract_pdbml.sh $VALID_OPT
  ext_pdbml_exit_code=$?
 
 else
@@ -39,7 +39,7 @@ else
  ./scripts/extract_pdbml.sh
  ext_pdbml_exit_code=$?
 
- if [ ! -z $VALIDATE_OPT ] ; then
+ if [ ! -z $VALID_OPT ] ; then
   ./scripts/validate_all_xml.sh -d $PDBML_EXT
  fi
 
@@ -49,7 +49,7 @@ total=`ls $VALID_INFO_ALT 2> /dev/null | wc -l`
 
 if [ -d $VALID_INFO_ALT ] && [ $total -gt $huge_number ] ; then
 
- ./scripts/extract_info.sh $VALIDATE_OPT
+ ./scripts/extract_info.sh $VALID_OPT
  ext_info_exit_code=$?
 
 else
@@ -57,7 +57,7 @@ else
  ./scripts/extract_info.sh
  ext_info_exit_code=$?
 
- if [ ! -z $VALIDATE_OPT ] ; then
+ if [ ! -z $VALID_OPT ] ; then
   ./scripts/validate_all_xml.sh -d $VALID_INFO_ALT
  fi
 
