@@ -52,8 +52,9 @@ File path | Document
 
 ## Release notes
 
-- **Apr 2, 2018**: Release v1.2.1
+- **Apr 5, 2018**: Release v1.2.1
 	- Fix stylesheet to handle null RSR value, null medoid model number.
+	- Enable differential XML Schema validation of compressed PDBML-validation.
 
 - **Mar 23, 2018**: Release v1.2.0
 	- Update PostgreSQL data migration scripts, in which differential update is enabled.
