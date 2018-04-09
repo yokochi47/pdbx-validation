@@ -45,10 +45,10 @@ File path | Document
 
 Bulk download service using rsync protocol is available for the alternative wwPDB validation information.
 
-- PDBML-validation:
+- PDBML-validation:<br />
  `% rsync -av --delete rsync://bmrbpub.protein.osaka-u.ac.jp/pdbml-valid .`
 
-- wwPDB/RDF-validation:
+- wwPDB/RDF-validation:<br />
  `% rsync -av --delete rsync://bmrbpub.protein.osaka-u.ac.jp/wwpdb-rdf-valid .`
 
 ## Software requirements
