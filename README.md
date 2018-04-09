@@ -41,6 +41,16 @@ File path | Document
 	- PDBML-validation: [5h0s-validation-full.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/XML-validation/5h0s-validation-full.xml)
 	- wwPDB/RDF-validation: [5h0s-validation.rdf](https://github.com/yokochi47/pdbx-validation/blob/master/test/RDF-validation/5h0s-validation.rdf)
 
+## Bulk download service of alternative wwPDB validation information
+
+Bulk download service using rsync protocol is available for the alternative wwPDB validation information.
+
+- PDBML-validation:
+ `% rsync -av --delete rsync://bmrbpub.protein.osaka-u.ac.jp/pdbml-valid .`
+
+- wwPDB/RDF-validation:
+ `% rsync -av --delete rsync://bmrbpub.protein.osaka-u.ac.jp/wwpdb-rdf-valid .`
+
 ## Software requirements
 
 - [**Java 8**](https://java.com/en/) or later.
@@ -51,6 +61,9 @@ File path | Document
 - [**Virtuoso**](https://www.openlinksw.com/wiki/main/Main), oprionally used as SPARQL endpoint of wwPDB/RDF-validation.
 
 ## Release notes
+
+- **Apr 9, 2018**: Release v1.2.2
+	- Add description of bulk download service of the alternative wwPDB validation information.
 
 - **Apr 5, 2018**: Release v1.2.1
 	- Fix stylesheet to handle null RSR value, null medoid model number.
