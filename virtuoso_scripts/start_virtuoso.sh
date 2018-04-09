@@ -62,13 +62,13 @@ iter=1
 
 while true ; do
 
- sleep 60
+ sleep 300
 
  isql $VIRTUOSO_DB_PORT $VIRTUOSO_DB_USER $VIRTUOSO_DB_PASS exec="status();" &> /dev/null
 
  if [ $? = 0 ] ; then
   break
- elif [ $iter > 30 ] ; then
+ elif [ $iter > 6 ] ; then
   echo Failed.
   break
  fi
