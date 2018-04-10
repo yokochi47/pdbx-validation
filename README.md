@@ -43,13 +43,19 @@ File path | Document
 
 ## Bulk download service of alternative wwPDB validation information
 
-Bulk download service using rsync protocol is available for the alternative wwPDB validation information.
+- Bulk download via HTTP protocol
 
-- PDBML-validation:<br />
- `% rsync -av --delete rsync://bmrbpub.protein.osaka-u.ac.jp/pdbml-valid .`
+	- [PDBML-validation](http://bmrbpub.protein.osaka-u.ac.jp/archive/pdbml-valid/)
 
-- wwPDB/RDF-validation:<br />
- `% rsync -av --delete rsync://bmrbpub.protein.osaka-u.ac.jp/wwpdb-rdf-valid .`
+	- [wwPDB/RDF-validation](http://bmrbpub.protein.osaka-u.ac.jp/archive/wwpdb-rdf-valid/)
+
+- Bulk download via rsync protocol
+
+	- PDBML-validation:<br />
+	 `% rsync -av --delete rsync://bmrbpub.protein.osaka-u.ac.jp/pdbml-valid .`
+
+	- wwPDB/RDF-validation:<br />
+	 `% rsync -av --delete rsync://bmrbpub.protein.osaka-u.ac.jp/wwpdb-rdf-valid .`
 
 ## Software requirements
 
