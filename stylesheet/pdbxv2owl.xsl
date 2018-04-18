@@ -44,7 +44,7 @@
 	<rdfs:comment xml:lang="en">The OWL ontology for wwPDB/RDF-validation.</rdfs:comment>
         <rdfs:seeAlso rdf:resource="https://rdf.wwpdb.org/schema/pdbx-validation-v1.dic"/>
         <rdfs:seeAlso rdf:resource="https://rdf.wwpdb.org/schema/pdbx-validation-v1.xsd"/>
-        <owl:versionIRI rdf:resource="https://rdf.wwpdb.org/schema/pdbx-validation-v1.owl/1.291"/>
+        <owl:versionIRI rdf:resource="https://rdf.wwpdb.org/schema/pdbx-validation-v1.owl/1.293"/>
       </owl:Ontology>
 
       <owl:Class rdf:ID="Category">
