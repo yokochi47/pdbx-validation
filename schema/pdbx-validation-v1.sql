@@ -4,6 +4,7 @@
 --  https://sourceforge.net/projects/xsd2pgschema/
 --
 -- Schema modeling options:
+--  explicit named schema: false
 --  relational extension: false
 --  wild card extension: true
 --  case sensitive name: true
@@ -33,8 +34,8 @@
 --
 
 --
--- PDBML-validation Schema v1.291
--- PDBXML-validation Schema translated from wwPDB Validation Information Dictionary v1.291, which is backward compatible with the PDBx/mmCIF Dictionary v5.291: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
+-- PDBML-validation Schema v1.293
+-- PDBXML-validation Schema translated from wwPDB Validation Information Dictionary v1.293, which is backward compatible with the PDBx/mmCIF Dictionary v5.293: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
 -- URI-reference = http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd
 --
 

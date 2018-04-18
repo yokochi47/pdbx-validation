@@ -4,6 +4,7 @@
 --  https://sourceforge.net/projects/xsd2pgschema/
 --
 -- Schema modeling options:
+--  explicit named schema: false
 --  relational extension: false
 --  wild card extension: true
 --  case sensitive name: true
