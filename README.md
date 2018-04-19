@@ -57,6 +57,8 @@ File path | Document
 	- wwPDB/RDF-validation:<br />
 	 `% rsync -av --delete rsync://bmrbpub.protein.osaka-u.ac.jp/wwpdb-rdf-valid .`
 
+- [SPARQL endpoint for wwPDB/RDF-validation](http://bmrbpub.protein.osaka-u.ac.jp/examples.html)
+
 ## Software requirements
 
 - [**Java 8**](https://java.com/en/) or later.
