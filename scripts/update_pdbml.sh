@@ -86,57 +86,71 @@ case $PDB_MIRROR in
   exit 1;;
 esac
 
-rsync_log=rsync_log
+if [ ! -e $XSD2PGSCHEMA ] ; then
+ ./scripts/update_extlibs.sh
+fi
 
 if [ $weekday -ge 1 ] && [ $weekday -le 4 ] ; then
 
- rsync -avz --delete --dry-run $RSYNC_PORT $PDB_MIRROR::$RSYNC_BASE_DIR/$SRC_DIR/ $SRC_DIR | grep xml.gz | cut -d '/' -f 2 | cut -d '-' -f 1 > $rsync_log
+ rsync -avz --delete $RSYNC_PORT $PDB_MIRROR::$RSYNC_BASE_DIR/$SRC_DIR/ $SRC_DIR
+
+ MD5_DIR=chk_sum_pdbml_noatom
+ FILE_EXT_DIGEST=-noatom
+
+ chk_sum_log=pdbml_noatom_log
+
+ java -classpath $XSD2PGSCHEMA chksumstat --xml $SRC_DIR/[0-9a-z]{2} --xml-file-ext gz --sync $MD5_DIR --xml-file-ext-digest $FILE_EXT_DIGEST --update --verbose > $chk_sum_log
 
  if [ -d $XML_DIR ] ; then
   while read pdb_id ; do
+   [ -z "$pdb_id" ] || [[ "$pdb_id" =~ ^#.* ]] && continue
    rm -f $XML_DIR/$pdb_id-noatom.xml
-  done < $rsync_log
+  done < $chk_sum_log
  fi
 
  if [ -d $PDBML_EXT ] ; then
   while read pdb_id ; do
+   [ -z "$pdb_id" ] || [[ "$pdb_id" =~ ^#.* ]] && continue
    rm -f $PDBML_EXT/$pdb_id-noatom-ext.xml
-  done < $rsync_log
+  done < $chk_sum_log
  fi
 
  if [ -d $VALID_INFO_ALT ] ; then
   while read pdb_id ; do
+   [ -z "$pdb_id" ] || [[ "$pdb_id" =~ ^#.* ]] && continue
    rm -f $VALID_INFO_ALT/$pdb_id-validation-alt.xml
-  done < $rsync_log
+  done < $chk_sum_log
  fi
 
  if [ -d $XML_VALID ] ; then
   while read pdb_id ; do
+   [ -z "$pdb_id" ] || [[ "$pdb_id" =~ ^#.* ]] && continue
    rm -f $XML_VALID/$pdb_id-validation-full.xml
-  done < $rsync_log
+  done < $chk_sum_log
  fi
 
  if [ -d $RDF_VALID ] ; then
   while read pdb_id ; do
+   [ -z "$pdb_id" ] || [[ "$pdb_id" =~ ^#.* ]] && continue
    rm -f $RDF_VALID/$pdb_id-validation.rdf
-  done < $rsync_log
+  done < $chk_sum_log
  fi
 
  if [ -d $XML_VALID ] ; then
   while read pdb_id ; do
+   [ -z "$pdb_id" ] || [[ "$pdb_id" =~ ^#.* ]] && continue
    rm -f $XML_VALID/${pdb_id:1:2}/$pdb_id-validation-full.xml.gz
-  done < $rsync_log
+  done < $chk_sum_log
  fi
 
  if [ -d $RDF_VALID ] ; then
   while read pdb_id ; do
+   [ -z "$pdb_id" ] || [[ "$pdb_id" =~ ^#.* ]] && continue
    rm -rf $RDF_VALID/${pdb_id:1:2}/$pdb_id
-  done < $rsync_log
+  done < $chk_sum_log
  fi
 
- rm -f $rsync_log
-
- rsync -avz --delete $RSYNC_PORT $PDB_MIRROR::$RSYNC_BASE_DIR/$SRC_DIR/ $SRC_DIR
+ rm -f $chk_sum_log
 
 fi
 
