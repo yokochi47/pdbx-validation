@@ -9,14 +9,14 @@
 --  wild card extension: true
 --  case sensitive name: true
 --  no name collision: true
---  appended document key: true
+--  appended document key: false
 --  appended serial key: false
 --  appended xpath key: false
 --  retained constraint of primary/foreign key: false
 --  retrieved field annotation: false
 --
 -- Statistics of schema:
---  Generated 236 tables (3159 fields), 0 attr groups, 0 model groups in total
+--  Generated 236 tables (2923 fields), 0 attr groups, 0 model groups in total
 --   Namespaces:
 --    http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), http://www.w3.org/2001/XMLSchema (xsd)
 --   Schema locations:
@@ -26,9 +26,9 @@
 --   System keys:
 --    0 primary keys (0 unique constraints), 0 foreign keys (125 key references), 0 nested keys
 --   User keys:
---    236 document keys, 0 serial keys, 0 xpath keys
+--    191 document keys, 0 serial keys, 0 xpath keys
 --   Contents:
---    402 attributes (0 in-place document keys), 2521 elements (0 in-place document keys), 0 simple contents
+--    402 attributes (40 in-place document keys), 2521 elements (5 in-place document keys), 0 simple contents
 --   Wild cards:
 --    0 any elements, 0 any attributes
 --
@@ -284,10 +284,8 @@ DROP TABLE IF EXISTS entry CASCADE;
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE entry (
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
--- ATTRIBUTE
-	id TEXT NOT NULL 
+-- ATTRIBUTE, IN-PLACE DOCUMENT KEY
+	id TEXT NOT NULL
 );
 
 --
@@ -305,7 +303,7 @@ DROP TYPE IF EXISTS ENUM_entity_type;
 CREATE TYPE ENUM_entity_type AS ENUM ( 'polymer', 'non-polymer', 'macrolide', 'water' );
 CREATE TABLE entity (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	details TEXT ,
 	formula_weight DECIMAL CHECK ( formula_weight >= 1 ) ,
 	pdbx_description TEXT ,
@@ -320,7 +318,7 @@ CREATE TABLE entity (
 	src_method ENUM_entity_src_method ,
 	type ENUM_entity_type ,
 -- ATTRIBUTE
-	id TEXT NOT NULL 
+	id TEXT NOT NULL
 );
 
 --
@@ -332,7 +330,7 @@ CREATE TABLE entity (
 --
 CREATE TABLE diffrn (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	ambient_environment TEXT ,
 	ambient_pressure DECIMAL CHECK ( ambient_pressure >= 0 ) ,
 	ambient_pressure_esd DECIMAL ,
@@ -348,7 +346,7 @@ CREATE TABLE diffrn (
 	crystal_treatment TEXT ,
 	details TEXT ,
 -- ATTRIBUTE
-	id TEXT NOT NULL 
+	id TEXT NOT NULL
 );
 
 --
@@ -362,7 +360,7 @@ DROP TYPE IF EXISTS ENUM_pdbx_nmr_assigned_chem_shift_list_nmr_star_consistency_
 CREATE TYPE ENUM_pdbx_nmr_assigned_chem_shift_list_nmr_star_consistency_fla AS ENUM ( 'Y', 'N' );
 CREATE TABLE pdbx_nmr_assigned_chem_shift_list (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	"chem_shift_13C_err" DECIMAL ,
 	"chem_shift_15N_err" DECIMAL ,
 	"chem_shift_19F_err" DECIMAL ,
@@ -379,7 +377,7 @@ CREATE TABLE pdbx_nmr_assigned_chem_shift_list (
 	number_parsed_chem_shifts INTEGER CHECK ( number_parsed_chem_shifts >= 0 ) ,
 	number_unparsed_chem_shifts INTEGER CHECK ( number_unparsed_chem_shifts >= 0 ) ,
 -- ATTRIBUTE
-	id INTEGER NOT NULL 
+	id INTEGER NOT NULL
 );
 
 --
@@ -391,7 +389,7 @@ CREATE TABLE pdbx_nmr_assigned_chem_shift_list (
 --
 CREATE TABLE phasing_set (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	cell_angle_alpha DECIMAL CHECK ( cell_angle_alpha >= 0 AND cell_angle_alpha <= 180 ) ,
 	cell_angle_beta DECIMAL CHECK ( cell_angle_beta >= 0 AND cell_angle_beta <= 180 ) ,
 	cell_angle_gamma DECIMAL CHECK ( cell_angle_gamma >= 0 AND cell_angle_gamma <= 180 ) ,
@@ -407,7 +405,7 @@ CREATE TABLE phasing_set (
 	radiation_wavelength DECIMAL CHECK ( radiation_wavelength >= 0 ) ,
 	temp DECIMAL CHECK ( temp >= 0 ) ,
 -- ATTRIBUTE
-	id TEXT NOT NULL 
+	id TEXT NOT NULL
 );
 
 --
@@ -421,7 +419,7 @@ DROP TYPE IF EXISTS ENUM_em_entity_assembly_source;
 CREATE TYPE ENUM_em_entity_assembly_source AS ENUM ( 'NATURAL', 'RECOMBINANT', 'MULTIPLE SOURCES' );
 CREATE TABLE em_entity_assembly (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	details TEXT ,
 	entity_id_list TEXT ,
 	name TEXT ,
@@ -431,7 +429,7 @@ CREATE TABLE em_entity_assembly (
 	synonym TEXT ,
 	type TEXT ,
 -- ATTRIBUTE
-	id TEXT NOT NULL 
+	id TEXT NOT NULL
 );
 
 --
@@ -443,12 +441,12 @@ CREATE TABLE em_entity_assembly (
 --
 CREATE TABLE struct_sheet (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	details TEXT ,
 	number_strands INTEGER ,
 	type TEXT ,
 -- ATTRIBUTE
-	id TEXT NOT NULL 
+	id TEXT NOT NULL
 );
 
 --
@@ -468,7 +466,7 @@ DROP TYPE IF EXISTS ENUM_entity_poly_type;
 CREATE TYPE ENUM_entity_poly_type AS ENUM ( 'polypeptide(D)', 'polypeptide(L)', 'polydeoxyribonucleotide', 'polyribonucleotide', 'polysaccharide(D)', 'polysaccharide(L)', 'polydeoxyribonucleotide/polyribonucleotide hybrid', 'cyclic-pseudo-peptide', 'peptide nucleic acid', 'other' );
 CREATE TABLE entity_poly (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	nstd_chirality ENUM_entity_poly_nstd_chirality ,
 	nstd_linkage ENUM_entity_poly_nstd_linkage ,
 	nstd_monomer ENUM_entity_poly_nstd_monomer ,
@@ -481,7 +479,7 @@ CREATE TABLE entity_poly (
 	type ENUM_entity_poly_type ,
 	type_details TEXT ,
 -- ATTRIBUTE
-	entity_id TEXT NOT NULL 
+	entity_id TEXT NOT NULL
 );
 
 --
@@ -493,7 +491,7 @@ CREATE TABLE entity_poly (
 --
 CREATE TABLE "phasing_MAD_expt" (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	"R_normal_all" DECIMAL ,
 	"R_normal_anom_scat" DECIMAL ,
 	delta_delta_phi DECIMAL ,
@@ -502,7 +500,7 @@ CREATE TABLE "phasing_MAD_expt" (
 	mean_fom DECIMAL ,
 	number_clust INTEGER ,
 -- ATTRIBUTE
-	id TEXT NOT NULL 
+	id TEXT NOT NULL
 );
 
 --
@@ -514,7 +512,7 @@ CREATE TABLE "phasing_MAD_expt" (
 --
 CREATE TABLE "phasing_MIR_der" (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	"R_cullis_acentric" DECIMAL CHECK ( "R_cullis_acentric" >= 0 ) ,
 	"R_cullis_anomalous" DECIMAL CHECK ( "R_cullis_anomalous" >= 0 ) ,
 	"R_cullis_centric" DECIMAL CHECK ( "R_cullis_centric" >= 0 ) ,
@@ -543,7 +541,7 @@ CREATE TABLE "phasing_MIR_der" (
 	reflns_centric INTEGER CHECK ( reflns_centric >= 0 ) ,
 	reflns_criteria TEXT ,
 -- ATTRIBUTE
-	id TEXT NOT NULL 
+	id TEXT NOT NULL
 );
 
 --
@@ -555,11 +553,11 @@ CREATE TABLE "phasing_MIR_der" (
 --
 CREATE TABLE struct_ncs_ens (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	details TEXT ,
 	point_group TEXT ,
 -- ATTRIBUTE
-	id TEXT NOT NULL 
+	id TEXT NOT NULL
 );
 
 --
@@ -573,14 +571,14 @@ DROP TYPE IF EXISTS ENUM_entity_poly_seq_hetero;
 CREATE TYPE ENUM_entity_poly_seq_hetero AS ENUM ( 'no', 'n', 'yes', 'y' );
 CREATE TABLE entity_poly_seq (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	hetero ENUM_entity_poly_seq_hetero ,
 -- ATTRIBUTE
 	entity_id TEXT NOT NULL ,
 -- ATTRIBUTE
 	mon_id TEXT NOT NULL ,
 -- ATTRIBUTE
-	num INTEGER CHECK ( num >= 1 ) NOT NULL 
+	num INTEGER CHECK ( num >= 1 ) NOT NULL
 );
 
 --
@@ -594,14 +592,14 @@ DROP TYPE IF EXISTS ENUM_pdbx_audit_revision_history_data_content_type;
 CREATE TYPE ENUM_pdbx_audit_revision_history_data_content_type AS ENUM ( 'Structure model', 'NMR restraints', 'NMR shifts', 'Structure factors' );
 CREATE TABLE pdbx_audit_revision_history (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	major_revision INTEGER ,
 	minor_revision INTEGER ,
 	revision_date DATE ,
 -- ATTRIBUTE
 	data_content_type ENUM_pdbx_audit_revision_history_data_content_type NOT NULL ,
 -- ATTRIBUTE
-	ordinal INTEGER NOT NULL 
+	ordinal INTEGER NOT NULL
 );
 
 --
@@ -612,12 +610,12 @@ CREATE TABLE pdbx_audit_revision_history (
 --
 CREATE TABLE pdbx_percentile_conditions (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	ls_d_res_high DECIMAL ,
 	ls_d_res_low DECIMAL ,
 	number_entries_total INTEGER CHECK ( number_entries_total >= 1 ) ,
 -- ATTRIBUTE
-	id INTEGER NOT NULL 
+	id INTEGER NOT NULL
 );
 
 --
@@ -629,11 +627,11 @@ CREATE TABLE pdbx_percentile_conditions (
 --
 CREATE TABLE pdbx_struct_entity_inst (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	details TEXT ,
 	entity_id TEXT ,
 -- ATTRIBUTE
-	id TEXT NOT NULL 
+	id TEXT NOT NULL
 );
 
 --
@@ -649,7 +647,7 @@ DROP TYPE IF EXISTS ENUM_pdbx_struct_group_list_type;
 CREATE TYPE ENUM_pdbx_struct_group_list_type AS ENUM ( 'Molecular Complex', 'Heterogen Complex', 'TLS group', 'NCS group' );
 CREATE TABLE pdbx_struct_group_list (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	description TEXT ,
 	group_enumeration_type ENUM_pdbx_struct_group_list_group_enumeration_type ,
 	name TEXT ,
@@ -657,7 +655,7 @@ CREATE TABLE pdbx_struct_group_list (
 	selection_details TEXT ,
 	type ENUM_pdbx_struct_group_list_type ,
 -- ATTRIBUTE
-	struct_group_id TEXT NOT NULL 
+	struct_group_id TEXT NOT NULL
 );
 
 --
@@ -671,7 +669,7 @@ DROP TYPE IF EXISTS ENUM_struct_biol_pdbx_aggregation_state;
 CREATE TYPE ENUM_struct_biol_pdbx_aggregation_state AS ENUM ( 'MONOMER', 'DIMER', 'TRIMER', 'TETRAMER', 'HEXAMER', 'MORE' );
 CREATE TABLE struct_biol (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	details TEXT ,
 	pdbx_aggregation_state ENUM_struct_biol_pdbx_aggregation_state ,
 	pdbx_assembly_method TEXT ,
@@ -679,7 +677,7 @@ CREATE TABLE struct_biol (
 	pdbx_formula_weight_method TEXT ,
 	pdbx_parent_biol_id TEXT ,
 -- ATTRIBUTE
-	id TEXT NOT NULL 
+	id TEXT NOT NULL
 );
 
 --
@@ -695,7 +693,7 @@ DROP TYPE IF EXISTS ENUM_struct_ref_seq_dif;
 CREATE TYPE ENUM_struct_ref_seq_dif AS ENUM ( 'no', 'n', 'yes', 'y' );
 CREATE TABLE struct_ref (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	biol_id TEXT ,
 	db_code TEXT ,
 	db_name TEXT ,
@@ -709,7 +707,7 @@ CREATE TABLE struct_ref (
 	seq_align ENUM_struct_ref_seq_align ,
 	seq_dif ENUM_struct_ref_seq_dif ,
 -- ATTRIBUTE
-	id TEXT NOT NULL 
+	id TEXT NOT NULL
 );
 
 --
@@ -721,7 +719,7 @@ CREATE TABLE struct_ref (
 --
 CREATE TABLE struct_site (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	details TEXT ,
 	pdbx_auth_asym_id TEXT ,
 	pdbx_auth_comp_id TEXT ,
@@ -730,7 +728,7 @@ CREATE TABLE struct_site (
 	pdbx_evidence_code TEXT ,
 	pdbx_num_residues INTEGER ,
 -- ATTRIBUTE
-	id TEXT NOT NULL 
+	id TEXT NOT NULL
 );
 
 --
@@ -742,10 +740,10 @@ CREATE TABLE struct_site (
 --
 CREATE TABLE diffrn_scale_group (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	"I_net" DECIMAL CHECK ( "I_net" >= 0 ) ,
 -- ATTRIBUTE
-	code TEXT NOT NULL 
+	code TEXT NOT NULL
 );
 
 --
@@ -757,10 +755,10 @@ CREATE TABLE diffrn_scale_group (
 --
 CREATE TABLE pdbx_domain (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	details TEXT ,
 -- ATTRIBUTE
-	id TEXT NOT NULL 
+	id TEXT NOT NULL
 );
 
 --
@@ -774,7 +772,7 @@ DROP TYPE IF EXISTS ENUM_pdbx_refine_tls_method;
 CREATE TYPE ENUM_pdbx_refine_tls_method AS ENUM ( 'refined', 'fitted' );
 CREATE TABLE pdbx_refine_tls (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	"L11" DECIMAL ,
 	"L11_esd" DECIMAL ,
 	"L12" DECIMAL ,
@@ -824,7 +822,7 @@ CREATE TABLE pdbx_refine_tls (
 	origin_z DECIMAL ,
 	pdbx_refine_id TEXT ,
 -- ATTRIBUTE
-	id TEXT NOT NULL 
+	id TEXT NOT NULL
 );
 
 --
@@ -836,13 +834,13 @@ CREATE TABLE pdbx_refine_tls (
 --
 CREATE TABLE pdbx_struct_assembly (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	details TEXT ,
 	method_details TEXT ,
 	oligomeric_count INTEGER ,
 	oligomeric_details TEXT ,
 -- ATTRIBUTE
-	id TEXT NOT NULL 
+	id TEXT NOT NULL
 );
 
 --
@@ -853,7 +851,7 @@ CREATE TABLE pdbx_struct_assembly (
 --
 CREATE TABLE pdbx_struct_nmr_ens_dom (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	distance_rms_dev DECIMAL ,
 	distance_rms_dev_medoid DECIMAL ,
 	error TEXT ,
@@ -861,7 +859,7 @@ CREATE TABLE pdbx_struct_nmr_ens_dom (
 	number_of_gaps INTEGER CHECK ( number_of_gaps >= 0 ) ,
 	number_of_monomers INTEGER CHECK ( number_of_monomers > 0 ) ,
 -- ATTRIBUTE
-	id INTEGER NOT NULL 
+	id INTEGER NOT NULL
 );
 
 --
@@ -875,7 +873,7 @@ DROP TYPE IF EXISTS ENUM_pdbx_validate_planes_type;
 CREATE TYPE ENUM_pdbx_validate_planes_type AS ENUM ( 'MAIN_CHAIN', 'SIDE_CHAIN', 'MAIN CHAIN', 'SIDE CHAIN' );
 CREATE TABLE pdbx_validate_planes (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	"PDB_ins_code" TEXT ,
 	"PDB_model_num" INTEGER ,
 	auth_asym_id TEXT ,
@@ -885,7 +883,7 @@ CREATE TABLE pdbx_validate_planes (
 	rmsd DECIMAL ,
 	type ENUM_pdbx_validate_planes_type ,
 -- ATTRIBUTE
-	id INTEGER NOT NULL 
+	id INTEGER NOT NULL
 );
 
 --
@@ -896,7 +894,7 @@ CREATE TABLE pdbx_validate_planes (
 --
 CREATE TABLE pdbx_validate_rmsd_ring (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	"PDB_ins_code" TEXT ,
 	"PDB_model_num" INTEGER ,
 	auth_asym_id TEXT ,
@@ -906,7 +904,7 @@ CREATE TABLE pdbx_validate_rmsd_ring (
 	dihedral_angle_target_value DECIMAL ,
 	label_alt_id TEXT ,
 -- ATTRIBUTE
-	id INTEGER NOT NULL 
+	id INTEGER NOT NULL
 );
 
 --
@@ -917,7 +915,7 @@ CREATE TABLE pdbx_validate_rmsd_ring (
 --
 CREATE TABLE pdbx_validate_rmsd_torsion (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	"PDB_ins_code" TEXT ,
 	"PDB_model_num" INTEGER ,
 	auth_asym_id TEXT ,
@@ -928,7 +926,7 @@ CREATE TABLE pdbx_validate_rmsd_torsion (
 	dihedral_angle_value DECIMAL ,
 	label_alt_id TEXT ,
 -- ATTRIBUTE
-	id INTEGER NOT NULL 
+	id INTEGER NOT NULL
 );
 
 --
@@ -942,13 +940,13 @@ DROP TYPE IF EXISTS ENUM_struct_asym_pdbx_blank_PDB_chainid_flag;
 CREATE TYPE ENUM_struct_asym_pdbx_blank_PDB_chainid_flag AS ENUM ( 'Y', 'N' );
 CREATE TABLE struct_asym (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	details TEXT ,
 	entity_id TEXT ,
 	"pdbx_blank_PDB_chainid_flag" ENUM_struct_asym_pdbx_blank_PDB_chainid_flag ,
 	pdbx_modified TEXT ,
 -- ATTRIBUTE
-	id TEXT NOT NULL 
+	id TEXT NOT NULL
 );
 
 --
@@ -962,11 +960,11 @@ DROP TYPE IF EXISTS ENUM_struct_conf_type_id;
 CREATE TYPE ENUM_struct_conf_type_id AS ENUM ( 'HELX_P', 'HELX_OT_P', 'HELX_RH_P', 'HELX_RH_OT_P', 'HELX_RH_AL_P', 'HELX_RH_GA_P', 'HELX_RH_OM_P', 'HELX_RH_PI_P', 'HELX_RH_27_P', 'HELX_RH_3T_P', 'HELX_RH_PP_P', 'HELX_LH_P', 'HELX_LH_OT_P', 'HELX_LH_AL_P', 'HELX_LH_GA_P', 'HELX_LH_OM_P', 'HELX_LH_PI_P', 'HELX_LH_27_P', 'HELX_LH_3T_P', 'HELX_LH_PP_P', 'HELX_N', 'HELX_OT_N', 'HELX_RH_N', 'HELX_RH_OT_N', 'HELX_RH_A_N', 'HELX_RH_B_N', 'HELX_RH_Z_N', 'HELX_LH_N', 'HELX_LH_OT_N', 'HELX_LH_A_N', 'HELX_LH_B_N', 'HELX_LH_Z_N', 'TURN_P', 'TURN_OT_P', 'TURN_TY1_P', 'TURN_TY1P_P', 'TURN_TY2_P', 'TURN_TY2P_P', 'TURN_TY3_P', 'TURN_TY3P_P', 'STRN' );
 CREATE TABLE struct_conf_type (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	criteria TEXT ,
 	reference TEXT ,
 -- ATTRIBUTE
-	id ENUM_struct_conf_type_id NOT NULL 
+	id ENUM_struct_conf_type_id NOT NULL
 );
 
 --
@@ -978,12 +976,12 @@ CREATE TABLE struct_conf_type (
 --
 CREATE TABLE struct_ncs_dom (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	details TEXT ,
 -- ATTRIBUTE
 	id TEXT NOT NULL ,
 -- ATTRIBUTE
-	pdbx_ens_id TEXT NOT NULL 
+	pdbx_ens_id TEXT NOT NULL
 );
 
 --
@@ -997,7 +995,7 @@ DROP TYPE IF EXISTS ENUM_struct_ncs_oper_code;
 CREATE TYPE ENUM_struct_ncs_oper_code AS ENUM ( 'given', 'generate' );
 CREATE TABLE struct_ncs_oper (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	code ENUM_struct_ncs_oper_code ,
 	details TEXT ,
 	matrix11 DECIMAL ,
@@ -1013,7 +1011,7 @@ CREATE TABLE struct_ncs_oper (
 	vector2 DECIMAL ,
 	vector3 DECIMAL ,
 -- ATTRIBUTE
-	id TEXT NOT NULL 
+	id TEXT NOT NULL
 );
 
 --
@@ -1025,7 +1023,7 @@ CREATE TABLE struct_ncs_oper (
 --
 CREATE TABLE struct_ref_seq (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	db_align_beg INTEGER ,
 	db_align_end INTEGER ,
 	details TEXT ,
@@ -1042,7 +1040,7 @@ CREATE TABLE struct_ref_seq (
 	seq_align_beg INTEGER ,
 	seq_align_end INTEGER ,
 -- ATTRIBUTE
-	align_id TEXT NOT NULL 
+	align_id TEXT NOT NULL
 );
 
 --
@@ -1054,11 +1052,11 @@ CREATE TABLE struct_ref_seq (
 --
 CREATE TABLE diffrn_attenuator (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	material TEXT ,
 	scale DECIMAL CHECK ( scale >= 1 ) ,
 -- ATTRIBUTE
-	code TEXT NOT NULL 
+	code TEXT NOT NULL
 );
 
 --
@@ -1070,7 +1068,7 @@ CREATE TABLE diffrn_attenuator (
 --
 CREATE TABLE diffrn_detector (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	area_resol_mean DECIMAL CHECK ( area_resol_mean >= 0 ) ,
 	details TEXT ,
 	detector TEXT ,
@@ -1080,7 +1078,7 @@ CREATE TABLE diffrn_detector (
 	pdbx_frames_total INTEGER ,
 	type TEXT ,
 -- ATTRIBUTE
-	diffrn_id TEXT NOT NULL 
+	diffrn_id TEXT NOT NULL
 );
 
 --
@@ -1092,7 +1090,7 @@ CREATE TABLE diffrn_detector (
 --
 CREATE TABLE diffrn_measurement (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	details TEXT ,
 	device TEXT ,
 	device_details TEXT ,
@@ -1100,7 +1098,7 @@ CREATE TABLE diffrn_measurement (
 	method TEXT ,
 	specimen_support TEXT ,
 -- ATTRIBUTE
-	diffrn_id TEXT NOT NULL 
+	diffrn_id TEXT NOT NULL
 );
 
 --
@@ -1112,7 +1110,7 @@ CREATE TABLE diffrn_measurement (
 --
 CREATE TABLE diffrn_orient_matrix (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	"UB11" DECIMAL ,
 	"UB12" DECIMAL ,
 	"UB13" DECIMAL ,
@@ -1124,7 +1122,7 @@ CREATE TABLE diffrn_orient_matrix (
 	"UB33" DECIMAL ,
 	type TEXT ,
 -- ATTRIBUTE
-	diffrn_id TEXT NOT NULL 
+	diffrn_id TEXT NOT NULL
 );
 
 --
@@ -1136,7 +1134,7 @@ CREATE TABLE diffrn_orient_matrix (
 --
 CREATE TABLE diffrn_orient_refln (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	angle_chi DECIMAL ,
 	angle_kappa DECIMAL ,
 	angle_omega DECIMAL ,
@@ -1150,7 +1148,7 @@ CREATE TABLE diffrn_orient_refln (
 -- ATTRIBUTE
 	index_k INTEGER NOT NULL ,
 -- ATTRIBUTE
-	index_l INTEGER NOT NULL 
+	index_l INTEGER NOT NULL
 );
 
 --
@@ -1170,7 +1168,7 @@ DROP TYPE IF EXISTS ENUM_diffrn_radiation_xray_symbol;
 CREATE TYPE ENUM_diffrn_radiation_xray_symbol AS ENUM ( 'K-L~3~', 'K-L~2~', 'K-M~3~', 'K-L~2,3~' );
 CREATE TABLE diffrn_radiation (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	collimation TEXT ,
 	filter_edge DECIMAL CHECK ( filter_edge >= 0 ) ,
 	inhomogeneity DECIMAL CHECK ( inhomogeneity >= 0 ) ,
@@ -1188,7 +1186,7 @@ CREATE TABLE diffrn_radiation (
 	wavelength_id TEXT ,
 	xray_symbol ENUM_diffrn_radiation_xray_symbol ,
 -- ATTRIBUTE
-	diffrn_id TEXT NOT NULL 
+	diffrn_id TEXT NOT NULL
 );
 
 --
@@ -1200,11 +1198,11 @@ CREATE TABLE diffrn_radiation (
 --
 CREATE TABLE diffrn_radiation_wavelength (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	wavelength DECIMAL CHECK ( wavelength >= 0 ) ,
 	wt DECIMAL CHECK ( wt >= 0 AND wt <= 1 ) ,
 -- ATTRIBUTE
-	id TEXT NOT NULL 
+	id TEXT NOT NULL
 );
 
 --
@@ -1220,7 +1218,7 @@ DROP TYPE IF EXISTS ENUM_diffrn_refln_scan_mode_backgd;
 CREATE TYPE ENUM_diffrn_refln_scan_mode_backgd AS ENUM ( 'st', 'mo' );
 CREATE TABLE diffrn_refln (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	angle_chi DECIMAL ,
 	angle_kappa DECIMAL ,
 	angle_omega DECIMAL ,
@@ -1256,7 +1254,7 @@ CREATE TABLE diffrn_refln (
 -- ATTRIBUTE
 	diffrn_id TEXT NOT NULL ,
 -- ATTRIBUTE
-	id TEXT NOT NULL 
+	id TEXT NOT NULL
 );
 
 --
@@ -1268,7 +1266,7 @@ CREATE TABLE diffrn_refln (
 --
 CREATE TABLE diffrn_reflns (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	"av_R_equivalents" DECIMAL CHECK ( "av_R_equivalents" >= 0 ) ,
 	"av_sigmaI_over_netI" DECIMAL CHECK ( "av_sigmaI_over_netI" >= 0 ) ,
 	"av_unetI_over_netI" DECIMAL CHECK ( "av_unetI_over_netI" >= 0 ) ,
@@ -1302,7 +1300,7 @@ CREATE TABLE diffrn_reflns (
 	transf_matrix32 DECIMAL ,
 	transf_matrix33 DECIMAL ,
 -- ATTRIBUTE
-	diffrn_id TEXT NOT NULL 
+	diffrn_id TEXT NOT NULL
 );
 
 --
@@ -1314,7 +1312,7 @@ CREATE TABLE diffrn_reflns (
 --
 CREATE TABLE diffrn_reflns_class (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	"av_R_eq" DECIMAL CHECK ( "av_R_eq" >= 0 ) ,
 	"av_sgI_over_I" DECIMAL CHECK ( "av_sgI_over_I" >= 0 ) ,
 	"av_uI_over_I" DECIMAL CHECK ( "av_uI_over_I" >= 0 ) ,
@@ -1323,7 +1321,7 @@ CREATE TABLE diffrn_reflns_class (
 	description TEXT ,
 	number INTEGER CHECK ( number >= 0 ) ,
 -- ATTRIBUTE
-	code TEXT NOT NULL 
+	code TEXT NOT NULL
 );
 
 --
@@ -1337,7 +1335,7 @@ DROP TYPE IF EXISTS ENUM_diffrn_source_target;
 CREATE TYPE ENUM_diffrn_source_target AS ENUM ( 'H', 'He', 'Li', 'Be', 'B', 'C', 'N', 'O', 'F', 'Ne', 'Na', 'Mg', 'Al', 'Si', 'P', 'S', 'Cl', 'Ar', 'K', 'Ca', 'Sc', 'Ti', 'V', 'Cr', 'Mn', 'Fe', 'Co', 'Ni', 'Cu', 'Zn', 'Ga', 'Ge', 'As', 'Se', 'Br', 'Kr', 'Rb', 'Sr', 'Y', 'Zr', 'Nb', 'Mo', 'Tc', 'Ru', 'Rh', 'Pd', 'Ag', 'Cd', 'In', 'Sn', 'Sb', 'Te', 'I', 'Xe', 'Cs', 'Ba', 'La', 'Ce', 'Pr', 'Nd', 'Pm', 'Sm', 'Eu', 'Gd', 'Tb', 'Dy', 'Ho', 'Er', 'Tm', 'Yb', 'Lu', 'Hf', 'Ta', 'W', 'Re', 'Os', 'Ir', 'Pt', 'Au', 'Hg', 'Tl', 'Pb', 'Bi', 'Po', 'At', 'Rn', 'Fr', 'Ra', 'Ac', 'Th', 'Pa', 'U', 'Np', 'Pu', 'Am', 'Cm', 'Bk', 'Cf', 'Es', 'Fm', 'Md', 'No', 'Lr' );
 CREATE TABLE diffrn_source (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	current DECIMAL ,
 	details TEXT ,
 	pdbx_synchrotron_beamline TEXT ,
@@ -1352,7 +1350,7 @@ CREATE TABLE diffrn_source (
 	type TEXT ,
 	voltage DECIMAL ,
 -- ATTRIBUTE
-	diffrn_id TEXT NOT NULL 
+	diffrn_id TEXT NOT NULL
 );
 
 --
@@ -1364,14 +1362,14 @@ CREATE TABLE diffrn_source (
 --
 CREATE TABLE diffrn_standard_refln (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	index_h INTEGER ,
 	index_k INTEGER ,
 	index_l INTEGER ,
 -- ATTRIBUTE
 	code TEXT NOT NULL ,
 -- ATTRIBUTE
-	diffrn_id TEXT NOT NULL 
+	diffrn_id TEXT NOT NULL
 );
 
 --
@@ -1383,14 +1381,14 @@ CREATE TABLE diffrn_standard_refln (
 --
 CREATE TABLE diffrn_standards (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	decay_ DECIMAL CHECK ( decay_ <= 100 ) ,
 	interval_count INTEGER CHECK ( interval_count >= 0 ) ,
 	interval_time DECIMAL CHECK ( interval_time >= 0 ) ,
 	number INTEGER CHECK ( number >= 0 ) ,
 	scale_sigma DECIMAL CHECK ( scale_sigma >= 0 ) ,
 -- ATTRIBUTE
-	diffrn_id TEXT NOT NULL 
+	diffrn_id TEXT NOT NULL
 );
 
 --
@@ -1404,7 +1402,7 @@ DROP TYPE IF EXISTS ENUM_em_2d_crystal_entity_space_group_name_H_M;
 CREATE TYPE ENUM_em_2d_crystal_entity_space_group_name_H_M AS ENUM ( 'P 1', 'P 2', 'P 1 2', 'P 1 21', 'C 1 2', 'P 2 2 2', 'P 2 2 21', 'P 2 21 21', 'C 2 2 2', 'P 4', 'P 4 2 2', 'P 4 21 2', 'P 3', 'P 3 1 2', 'P 3 2 1', 'P 6', 'P 6 2 2' );
 CREATE TABLE em_2d_crystal_entity (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	angle_gamma DECIMAL CHECK ( angle_gamma > 0.0 AND angle_gamma < 180.0 ) ,
 	c_sampling_length DECIMAL CHECK ( c_sampling_length > 0.0 ) ,
 	length_a DECIMAL CHECK ( length_a > 0.0 ) ,
@@ -1414,7 +1412,7 @@ CREATE TABLE em_2d_crystal_entity (
 -- ATTRIBUTE
 	id TEXT NOT NULL ,
 -- ATTRIBUTE
-	image_processing_id TEXT NOT NULL 
+	image_processing_id TEXT NOT NULL
 );
 
 --
@@ -1426,7 +1424,7 @@ CREATE TABLE em_2d_crystal_entity (
 --
 CREATE TABLE em_3d_crystal_entity (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	angle_alpha DECIMAL CHECK ( angle_alpha > 0.0 AND angle_alpha < 180.0 ) ,
 	angle_beta DECIMAL CHECK ( angle_beta > 0.0 AND angle_beta < 180.0 ) ,
 	angle_gamma DECIMAL CHECK ( angle_gamma > 0.0 AND angle_gamma < 180.0 ) ,
@@ -1438,7 +1436,7 @@ CREATE TABLE em_3d_crystal_entity (
 -- ATTRIBUTE
 	id TEXT NOT NULL ,
 -- ATTRIBUTE
-	image_processing_id TEXT NOT NULL 
+	image_processing_id TEXT NOT NULL
 );
 
 --
@@ -1453,18 +1451,16 @@ CREATE TYPE ENUM_em_3d_fitting_ref_protocol AS ENUM ( 'RIGID BODY FIT', 'FLEXIBL
 DROP TYPE IF EXISTS ENUM_em_3d_fitting_ref_space;
 CREATE TYPE ENUM_em_3d_fitting_ref_space AS ENUM ( 'REAL', 'RECIPROCAL' );
 CREATE TABLE em_3d_fitting (
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
 	details TEXT ,
 	method TEXT ,
 	overall_b_value DECIMAL ,
 	ref_protocol ENUM_em_3d_fitting_ref_protocol ,
 	ref_space ENUM_em_3d_fitting_ref_space ,
 	target_criteria TEXT ,
--- ATTRIBUTE
+-- ATTRIBUTE, IN-PLACE DOCUMENT KEY
 	entry_id TEXT NOT NULL ,
 -- ATTRIBUTE
-	id TEXT NOT NULL 
+	id TEXT NOT NULL
 );
 
 --
@@ -1476,7 +1472,7 @@ CREATE TABLE em_3d_fitting (
 --
 CREATE TABLE em_3d_fitting_list (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	details TEXT ,
 	pdb_chain_id TEXT ,
 	pdb_chain_residue_range TEXT ,
@@ -1484,7 +1480,7 @@ CREATE TABLE em_3d_fitting_list (
 -- ATTRIBUTE
 	_3d_fitting_id TEXT NOT NULL ,
 -- ATTRIBUTE
-	id TEXT NOT NULL 
+	id TEXT NOT NULL
 );
 
 --
@@ -1499,12 +1495,11 @@ CREATE TYPE ENUM_em_3d_reconstruction_refinement_type AS ENUM ( 'HALF-MAPS REFIN
 DROP TYPE IF EXISTS ENUM_em_3d_reconstruction_symmetry_type;
 CREATE TYPE ENUM_em_3d_reconstruction_symmetry_type AS ENUM ( 'POINT', 'HELICAL', '2D CRYSTAL', '3D CRYSTAL' );
 CREATE TABLE em_3d_reconstruction (
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
 	actual_pixel_size DECIMAL ,
 	algorithm TEXT ,
 	citation_id TEXT ,
 	details TEXT ,
+-- IN-PLACE DOCUMENT KEY
 	entry_id TEXT ,
 	euler_angles_details TEXT ,
 	magnification_calibration TEXT ,
@@ -1519,7 +1514,7 @@ CREATE TABLE em_3d_reconstruction (
 -- ATTRIBUTE
 	id TEXT NOT NULL ,
 -- ATTRIBUTE
-	image_processing_id TEXT NOT NULL 
+	image_processing_id TEXT NOT NULL
 );
 
 --
@@ -1531,14 +1526,14 @@ CREATE TABLE em_3d_reconstruction (
 --
 CREATE TABLE em_buffer (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	details TEXT ,
 	name TEXT ,
 	"pH" DECIMAL ,
 -- ATTRIBUTE
 	id TEXT NOT NULL ,
 -- ATTRIBUTE
-	specimen_id TEXT NOT NULL 
+	specimen_id TEXT NOT NULL
 );
 
 --
@@ -1550,7 +1545,7 @@ CREATE TABLE em_buffer (
 --
 CREATE TABLE em_buffer_component (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	concentration DECIMAL CHECK ( concentration > 0.0 ) ,
 	concentration_units TEXT ,
 	formula TEXT ,
@@ -1558,7 +1553,7 @@ CREATE TABLE em_buffer_component (
 -- ATTRIBUTE
 	buffer_id TEXT NOT NULL ,
 -- ATTRIBUTE
-	id TEXT NOT NULL 
+	id TEXT NOT NULL
 );
 
 --
@@ -1572,7 +1567,7 @@ DROP TYPE IF EXISTS ENUM_em_crystal_formation_time_unit;
 CREATE TYPE ENUM_em_crystal_formation_time_unit AS ENUM ( 'MINUTE', 'HOUR', 'DAY', 'MONTH', 'YEAR' );
 CREATE TABLE em_crystal_formation (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	atmosphere TEXT ,
 	details TEXT ,
 	instrument TEXT ,
@@ -1583,7 +1578,7 @@ CREATE TABLE em_crystal_formation (
 	time TEXT ,
 	time_unit ENUM_em_crystal_formation_time_unit ,
 -- ATTRIBUTE
-	id TEXT NOT NULL 
+	id TEXT NOT NULL
 );
 
 --
@@ -1595,12 +1590,12 @@ CREATE TABLE em_crystal_formation (
 --
 CREATE TABLE em_ctf_correction (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	details TEXT ,
 	em_image_processing_id TEXT ,
 	type TEXT ,
 -- ATTRIBUTE
-	id TEXT NOT NULL 
+	id TEXT NOT NULL
 );
 
 --
@@ -1612,12 +1607,12 @@ CREATE TABLE em_ctf_correction (
 --
 CREATE TABLE em_diffraction (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	camera_length DECIMAL CHECK ( camera_length > 0.0 ) ,
 	imaging_id TEXT ,
 	tilt_angle_list TEXT ,
 -- ATTRIBUTE
-	id TEXT NOT NULL 
+	id TEXT NOT NULL
 );
 
 --
@@ -1629,7 +1624,7 @@ CREATE TABLE em_diffraction (
 --
 CREATE TABLE em_diffraction_shell (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	em_diffraction_stats_id TEXT ,
 	fourier_space_coverage DECIMAL CHECK ( fourier_space_coverage > 0 AND fourier_space_coverage <= 100 ) ,
 	high_resolution DECIMAL CHECK ( high_resolution > 0.0 ) ,
@@ -1638,7 +1633,7 @@ CREATE TABLE em_diffraction_shell (
 	num_structure_factors TEXT ,
 	phase_residual DECIMAL CHECK ( phase_residual > 0.0 AND phase_residual < 180.0 ) ,
 -- ATTRIBUTE
-	id TEXT NOT NULL 
+	id TEXT NOT NULL
 );
 
 --
@@ -1650,7 +1645,7 @@ CREATE TABLE em_diffraction_shell (
 --
 CREATE TABLE em_diffraction_stats (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	details TEXT ,
 	fourier_space_coverage DECIMAL CHECK ( fourier_space_coverage > 0 AND fourier_space_coverage <= 100 ) ,
 	high_resolution DECIMAL CHECK ( high_resolution > 0.0 ) ,
@@ -1663,7 +1658,7 @@ CREATE TABLE em_diffraction_stats (
 	r_merge DECIMAL CHECK ( r_merge > 0 AND r_merge <= 100 ) ,
 	r_sym DECIMAL CHECK ( r_sym > 0 AND r_sym <= 100 ) ,
 -- ATTRIBUTE
-	id TEXT NOT NULL 
+	id TEXT NOT NULL
 );
 
 --
@@ -1675,12 +1670,12 @@ CREATE TABLE em_diffraction_stats (
 --
 CREATE TABLE em_embedding (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	details TEXT ,
 	material TEXT ,
 	specimen_id TEXT ,
 -- ATTRIBUTE
-	id TEXT NOT NULL 
+	id TEXT NOT NULL
 );
 
 --
@@ -1696,14 +1691,14 @@ DROP TYPE IF EXISTS ENUM_em_entity_assembly_molwt_units;
 CREATE TYPE ENUM_em_entity_assembly_molwt_units AS ENUM ( 'MEGADALTONS', 'KILODALTONS/NANOMETER' );
 CREATE TABLE em_entity_assembly_molwt (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	experimental_flag ENUM_em_entity_assembly_molwt_experimental_flag ,
 	units ENUM_em_entity_assembly_molwt_units ,
 	value DECIMAL CHECK ( value > 0.0 ) ,
 -- ATTRIBUTE
 	entity_assembly_id TEXT NOT NULL ,
 -- ATTRIBUTE
-	id TEXT NOT NULL 
+	id TEXT NOT NULL
 );
 
 --
@@ -1715,7 +1710,7 @@ CREATE TABLE em_entity_assembly_molwt (
 --
 CREATE TABLE em_entity_assembly_naturalsource (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	cell TEXT ,
 	cellular_location TEXT ,
 	ncbi_tax_id TEXT ,
@@ -1727,7 +1722,7 @@ CREATE TABLE em_entity_assembly_naturalsource (
 -- ATTRIBUTE
 	entity_assembly_id TEXT NOT NULL ,
 -- ATTRIBUTE
-	id TEXT NOT NULL 
+	id TEXT NOT NULL
 );
 
 --
@@ -1739,7 +1734,7 @@ CREATE TABLE em_entity_assembly_naturalsource (
 --
 CREATE TABLE em_entity_assembly_recombinant (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	cell TEXT ,
 	ncbi_tax_id TEXT ,
 	organism TEXT ,
@@ -1748,7 +1743,7 @@ CREATE TABLE em_entity_assembly_recombinant (
 -- ATTRIBUTE
 	entity_assembly_id TEXT NOT NULL ,
 -- ATTRIBUTE
-	id TEXT NOT NULL 
+	id TEXT NOT NULL
 );
 
 --
@@ -1763,14 +1758,12 @@ CREATE TYPE ENUM_em_experiment_aggregation_state AS ENUM ( '2D ARRAY', '3D ARRAY
 DROP TYPE IF EXISTS ENUM_em_experiment_reconstruction_method;
 CREATE TYPE ENUM_em_experiment_reconstruction_method AS ENUM ( 'SINGLE PARTICLE', 'HELICAL', 'CRYSTALLOGRAPHY', 'SUBTOMOGRAM AVERAGING', 'TOMOGRAPHY' );
 CREATE TABLE em_experiment (
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
 	aggregation_state ENUM_em_experiment_aggregation_state ,
 	entity_assembly_id TEXT ,
 	id TEXT ,
 	reconstruction_method ENUM_em_experiment_reconstruction_method ,
--- ATTRIBUTE
-	entry_id TEXT NOT NULL 
+-- ATTRIBUTE, IN-PLACE DOCUMENT KEY
+	entry_id TEXT NOT NULL
 );
 
 --
@@ -1782,7 +1775,7 @@ CREATE TABLE em_experiment (
 --
 CREATE TABLE em_helical_entity (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	angular_rotation_per_subunit DECIMAL CHECK ( angular_rotation_per_subunit > -180 AND angular_rotation_per_subunit <= 180 ) ,
 	axial_rise_per_subunit DECIMAL CHECK ( axial_rise_per_subunit > 0.0 ) ,
 	axial_symmetry TEXT ,
@@ -1790,7 +1783,7 @@ CREATE TABLE em_helical_entity (
 -- ATTRIBUTE
 	id TEXT NOT NULL ,
 -- ATTRIBUTE
-	image_processing_id TEXT NOT NULL 
+	image_processing_id TEXT NOT NULL
 );
 
 --
@@ -1802,12 +1795,12 @@ CREATE TABLE em_helical_entity (
 --
 CREATE TABLE em_image_processing (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	details TEXT ,
 -- ATTRIBUTE
 	id TEXT NOT NULL ,
 -- ATTRIBUTE
-	image_recording_id TEXT NOT NULL 
+	image_recording_id TEXT NOT NULL
 );
 
 --
@@ -1821,7 +1814,7 @@ DROP TYPE IF EXISTS ENUM_em_image_recording_detector_mode;
 CREATE TYPE ENUM_em_image_recording_detector_mode AS ENUM ( 'COUNTING', 'INTEGRATING', 'SUPER-RESOLUTION', 'OTHER' );
 CREATE TABLE em_image_recording (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	average_exposure_time DECIMAL CHECK ( average_exposure_time > 0.0 AND average_exposure_time < 240.0 ) ,
 	avg_electron_dose_per_image DECIMAL CHECK ( avg_electron_dose_per_image > 0.0 ) ,
 	details TEXT ,
@@ -1833,7 +1826,7 @@ CREATE TABLE em_image_recording (
 -- ATTRIBUTE
 	id TEXT NOT NULL ,
 -- ATTRIBUTE
-	imaging_id TEXT NOT NULL 
+	imaging_id TEXT NOT NULL
 );
 
 --
@@ -1846,12 +1839,11 @@ CREATE TABLE em_image_recording (
 DROP TYPE IF EXISTS ENUM_em_image_scans_scanner_model;
 CREATE TYPE ENUM_em_image_scans_scanner_model AS ENUM ( 'ZEISS SCAI', 'EMIL 10', 'OPTRONICS', 'PERKIN ELMER', 'TEMSCAN', 'EIKONIX IEEE 488', 'NIKON COOLSCAN', 'NIKON SUPER COOLSCAN 9000', 'IMAGE SCIENCE PATCHWORK DENSITOMETER', 'PRIMESCAN', 'OTHER' );
 CREATE TABLE em_image_scans (
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
 	citation_id TEXT ,
 	details TEXT ,
 	dimension_height TEXT ,
 	dimension_width TEXT ,
+-- IN-PLACE DOCUMENT KEY
 	entry_id TEXT ,
 	frames_per_image TEXT ,
 	number_digital_images INTEGER ,
@@ -1863,7 +1855,7 @@ CREATE TABLE em_image_scans (
 -- ATTRIBUTE
 	id TEXT NOT NULL ,
 -- ATTRIBUTE
-	image_recording_id TEXT NOT NULL 
+	image_recording_id TEXT NOT NULL
 );
 
 --
@@ -1886,8 +1878,6 @@ CREATE TYPE ENUM_em_imaging_mode AS ENUM ( 'BRIGHT FIELD', 'DARK FIELD', 'DIFFRA
 DROP TYPE IF EXISTS ENUM_em_imaging_specimen_holder_model;
 CREATE TYPE ENUM_em_imaging_specimen_holder_model AS ENUM ( 'GATAN 626 SINGLE TILT LIQUID NITROGEN CRYO TRANSFER HOLDER', 'GATAN CT3500 SINGLE TILT LIQUID NITROGEN CRYO TRANSFER HOLDER', 'GATAN CT3500TR SINGLE TILT ROTATION LIQUID NITROGEN CRYO TRANSF', 'GATAN 910 MULTI-SPECIMEN SINGLE TILT CRYO TRANSFER HOLDER', 'GATAN 914 HIGH TILT LIQUID NITROGEN CRYO TRANSFER TOMOGRAPHY HO', 'GATAN 915 DOUBLE TILT LIQUID NITROGEN CRYO TRANSFER HOLDER', 'GATAN UHRST 3500 SINGLE TILT ULTRA HIGH RESOLUTION NITROGEN COO', 'GATAN CHDT 3504 DOUBLE TILT HIGH RESOLUTION NITROGEN COOLING HO', 'GATAN HC 3500 SINGLE TILT HEATING/NITROGEN COOLING HOLDER', 'GATAN HCHST 3008 SINGLE TILT HIGH RESOLUTION HELIUM COOLING HOL', 'GATAN ULTST ULTRA LOW TEMPERATURE SINGLE TILT HELIUM COOLING HO', 'GATAN HCHDT 3010 DOUBLE TILT HIGH RESOLUTION HELIUM COOLING HOL', 'GATAN ULTDT ULTRA LOW TEMPERATURE DOUBLE TILT HELIUM COOLING HO', 'FEI TITAN KRIOS AUTOGRID HOLDER', 'GATAN HELIUM', 'GATAN LIQUID NITROGEN', 'HOME BUILD', 'JEOL', 'JEOL 3200FSC CRYOHOLDER', 'PHILIPS ROTATION HOLDER', 'SIDE ENTRY, EUCENTRIC', 'FISCHIONE INSTRUMENTS DUAL AXIS TOMOGRAPHY HOLDER', 'OTHER' );
 CREATE TABLE em_imaging (
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
 	accelerating_voltage INTEGER CHECK ( accelerating_voltage > 0 ) ,
 	alignment_procedure ENUM_em_imaging_alignment_procedure ,
 	astigmatism TEXT ,
@@ -1918,10 +1908,10 @@ CREATE TABLE em_imaging (
 	temperature DECIMAL ,
 	tilt_angle_max DECIMAL ,
 	tilt_angle_min DECIMAL ,
--- ATTRIBUTE
+-- ATTRIBUTE, IN-PLACE DOCUMENT KEY
 	entry_id TEXT NOT NULL ,
 -- ATTRIBUTE
-	id TEXT NOT NULL 
+	id TEXT NOT NULL
 );
 
 --
@@ -1933,7 +1923,7 @@ CREATE TABLE em_imaging (
 --
 CREATE TABLE em_imaging_optics (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	chr_aberration_corrector TEXT ,
 	energyfilter_lower TEXT ,
 	energyfilter_name TEXT ,
@@ -1944,7 +1934,7 @@ CREATE TABLE em_imaging_optics (
 -- ATTRIBUTE
 	id TEXT NOT NULL ,
 -- ATTRIBUTE
-	imaging_id TEXT NOT NULL 
+	imaging_id TEXT NOT NULL
 );
 
 --
@@ -1956,7 +1946,7 @@ CREATE TABLE em_imaging_optics (
 --
 CREATE TABLE em_particle_selection (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	details TEXT ,
 	method TEXT ,
 	num_particles_selected TEXT ,
@@ -1964,7 +1954,7 @@ CREATE TABLE em_particle_selection (
 -- ATTRIBUTE
 	id TEXT NOT NULL ,
 -- ATTRIBUTE
-	image_processing_id TEXT NOT NULL 
+	image_processing_id TEXT NOT NULL
 );
 
 --
@@ -1975,14 +1965,13 @@ CREATE TABLE em_particle_selection (
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE em_single_particle_entity (
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+-- IN-PLACE DOCUMENT KEY
 	entry_id TEXT ,
 	point_symmetry TEXT ,
 -- ATTRIBUTE
 	id TEXT NOT NULL ,
 -- ATTRIBUTE
-	image_processing_id TEXT NOT NULL 
+	image_processing_id TEXT NOT NULL
 );
 
 --
@@ -1996,7 +1985,7 @@ DROP TYPE IF EXISTS ENUM_em_software_category;
 CREATE TYPE ENUM_em_software_category AS ENUM ( 'IMAGE ACQUISITION', 'PARTICLE SELECTION', 'VOLUME SELECTION', 'CLASSIFICATION', 'MASKING', 'RECONSTRUCTION', 'INITIAL EULER ASSIGNMENT', 'FINAL EULER ASSIGNMENT', 'CTF CORRECTION', 'LAYERLINE INDEXING', 'DIFFRACTION INDEXING', 'MODEL FITTING', 'MODEL REFINEMENT', 'SERIES ALIGNMENT', 'MOLECULAR REPLACEMENT', 'LATTICE DISTORTION CORRECTION', 'SYMMETRY DETERMINATION', 'CRYSTALLOGRAPHY MERGING', 'OTHER' );
 CREATE TABLE em_software (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	category ENUM_em_software_category ,
 	details TEXT ,
 	fitting_id TEXT ,
@@ -2005,7 +1994,7 @@ CREATE TABLE em_software (
 	name TEXT ,
 	version TEXT ,
 -- ATTRIBUTE
-	id TEXT NOT NULL 
+	id TEXT NOT NULL
 );
 
 --
@@ -2025,7 +2014,7 @@ DROP TYPE IF EXISTS ENUM_em_specimen_vitrification_applied;
 CREATE TYPE ENUM_em_specimen_vitrification_applied AS ENUM ( 'YES', 'NO' );
 CREATE TABLE em_specimen (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	concentration DECIMAL CHECK ( concentration > 0.0 ) ,
 	details TEXT ,
 	embedding_applied ENUM_em_specimen_embedding_applied ,
@@ -2035,7 +2024,7 @@ CREATE TABLE em_specimen (
 -- ATTRIBUTE
 	experiment_id TEXT NOT NULL ,
 -- ATTRIBUTE
-	id TEXT NOT NULL 
+	id TEXT NOT NULL
 );
 
 --
@@ -2049,13 +2038,13 @@ DROP TYPE IF EXISTS ENUM_em_staining_type;
 CREATE TYPE ENUM_em_staining_type AS ENUM ( 'NEGATIVE', 'POSITIVE', 'NONE' );
 CREATE TABLE em_staining (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	details TEXT ,
 	material TEXT ,
 	specimen_id TEXT ,
 	type ENUM_em_staining_type ,
 -- ATTRIBUTE
-	id TEXT NOT NULL 
+	id TEXT NOT NULL
 );
 
 --
@@ -2075,7 +2064,7 @@ DROP TYPE IF EXISTS ENUM_em_virus_entity_virus_type;
 CREATE TYPE ENUM_em_virus_entity_virus_type AS ENUM ( 'VIRION', 'SATELLITE', 'PRION', 'VIROID', 'VIRUS-LIKE PARTICLE' );
 CREATE TABLE em_virus_entity (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	details TEXT ,
 	empty ENUM_em_virus_entity_empty ,
 	enveloped ENUM_em_virus_entity_enveloped ,
@@ -2085,7 +2074,7 @@ CREATE TABLE em_virus_entity (
 -- ATTRIBUTE
 	entity_assembly_id TEXT NOT NULL ,
 -- ATTRIBUTE
-	id TEXT NOT NULL 
+	id TEXT NOT NULL
 );
 
 --
@@ -2097,14 +2086,14 @@ CREATE TABLE em_virus_entity (
 --
 CREATE TABLE em_virus_natural_host (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	ncbi_tax_id TEXT ,
 	organism TEXT ,
 	strain TEXT ,
 -- ATTRIBUTE
 	entity_assembly_id TEXT NOT NULL ,
 -- ATTRIBUTE
-	id TEXT NOT NULL 
+	id TEXT NOT NULL
 );
 
 --
@@ -2116,14 +2105,14 @@ CREATE TABLE em_virus_natural_host (
 --
 CREATE TABLE em_virus_shell (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	diameter DECIMAL CHECK ( diameter > 0.0 ) ,
 	name TEXT ,
 	triangulation TEXT ,
 -- ATTRIBUTE
 	entity_assembly_id TEXT NOT NULL ,
 -- ATTRIBUTE
-	id TEXT NOT NULL 
+	id TEXT NOT NULL
 );
 
 --
@@ -2138,12 +2127,11 @@ CREATE TYPE ENUM_em_vitrification_cryogen_name AS ENUM ( 'HELIUM', 'NITROGEN', '
 DROP TYPE IF EXISTS ENUM_em_vitrification_instrument;
 CREATE TYPE ENUM_em_vitrification_instrument AS ENUM ( 'EMS-002 RAPID IMMERSION FREEZER', 'FEI VITROBOT MARK I', 'FEI VITROBOT MARK II', 'FEI VITROBOT MARK III', 'FEI VITROBOT MARK IV', 'GATAN CRYOPLUNGE 3', 'HOMEMADE PLUNGER', 'LEICA PLUNGER', 'LEICA EM GP', 'LEICA EM CPC', 'LEICA KF80', 'REICHERT-JUNG PLUNGER', 'SPOTITON', 'ZEISS PLUNGE FREEZER CRYOBOX' );
 CREATE TABLE em_vitrification (
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
 	chamber_temperature DECIMAL ,
 	citation_id TEXT ,
 	cryogen_name ENUM_em_vitrification_cryogen_name ,
 	details TEXT ,
+-- IN-PLACE DOCUMENT KEY
 	entry_id TEXT ,
 	humidity DECIMAL CHECK ( humidity >= 0 AND humidity <= 100 ) ,
 	instrument ENUM_em_vitrification_instrument ,
@@ -2153,7 +2141,7 @@ CREATE TABLE em_vitrification (
 -- ATTRIBUTE
 	id TEXT NOT NULL ,
 -- ATTRIBUTE
-	specimen_id TEXT NOT NULL 
+	specimen_id TEXT NOT NULL
 );
 
 --
@@ -2165,7 +2153,7 @@ CREATE TABLE em_vitrification (
 --
 CREATE TABLE em_volume_selection (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	details TEXT ,
 	method TEXT ,
 	num_tomograms TEXT ,
@@ -2174,7 +2162,7 @@ CREATE TABLE em_volume_selection (
 -- ATTRIBUTE
 	id TEXT NOT NULL ,
 -- ATTRIBUTE
-	image_processing_id TEXT NOT NULL 
+	image_processing_id TEXT NOT NULL
 );
 
 --
@@ -2186,10 +2174,10 @@ CREATE TABLE em_volume_selection (
 --
 CREATE TABLE entity_name_com (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	name TEXT ,
 -- ATTRIBUTE
-	entity_id TEXT NOT NULL 
+	entity_id TEXT NOT NULL
 );
 
 --
@@ -2201,11 +2189,11 @@ CREATE TABLE entity_name_com (
 --
 CREATE TABLE entity_name_sys (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	name TEXT ,
 	system TEXT ,
 -- ATTRIBUTE
-	entity_id TEXT NOT NULL 
+	entity_id TEXT NOT NULL
 );
 
 --
@@ -2216,13 +2204,11 @@ CREATE TABLE entity_name_sys (
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE entry_link (
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
 	details TEXT ,
--- ATTRIBUTE
+-- ATTRIBUTE, IN-PLACE DOCUMENT KEY
 	entry_id TEXT NOT NULL ,
 -- ATTRIBUTE
-	id TEXT NOT NULL 
+	id TEXT NOT NULL
 );
 
 --
@@ -2237,8 +2223,6 @@ CREATE TYPE ENUM_exptl_absorpt_correction_type AS ENUM ( 'analytical', 'cylinder
 DROP TYPE IF EXISTS ENUM_exptl_method;
 CREATE TYPE ENUM_exptl_method AS ENUM ( 'X-RAY DIFFRACTION', 'NEUTRON DIFFRACTION', 'FIBER DIFFRACTION', 'ELECTRON CRYSTALLOGRAPHY', 'ELECTRON MICROSCOPY', 'SOLUTION NMR', 'SOLID-STATE NMR', 'SOLUTION SCATTERING', 'POWDER DIFFRACTION', 'INFRARED SPECTROSCOPY', 'EPR', 'FLUORESCENCE TRANSFER', 'THEORETICAL MODEL' );
 CREATE TABLE exptl (
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
 	absorpt_coefficient_mu DECIMAL CHECK ( absorpt_coefficient_mu >= 0 ) ,
 	"absorpt_correction_T_max" DECIMAL CHECK ( "absorpt_correction_T_max" >= 0 AND "absorpt_correction_T_max" <= 1 ) ,
 	"absorpt_correction_T_min" DECIMAL CHECK ( "absorpt_correction_T_min" >= 0 AND "absorpt_correction_T_min" <= 1 ) ,
@@ -2247,10 +2231,10 @@ CREATE TABLE exptl (
 	crystals_number INTEGER CHECK ( crystals_number >= 1 ) ,
 	details TEXT ,
 	method_details TEXT ,
--- ATTRIBUTE
+-- ATTRIBUTE, IN-PLACE DOCUMENT KEY
 	entry_id TEXT NOT NULL ,
 -- ATTRIBUTE
-	method ENUM_exptl_method NOT NULL 
+	method ENUM_exptl_method NOT NULL
 );
 
 --
@@ -2263,13 +2247,11 @@ CREATE TABLE exptl (
 DROP TYPE IF EXISTS ENUM_ndb_struct_conf_na_feature;
 CREATE TYPE ENUM_ndb_struct_conf_na_feature AS ENUM ( 'double helix', 'a-form double helix', 'b-form double helix', 'z-form double helix', 'other right-handed double helix', 'triple helix', 'quadruple helix', 'parallel strands', 'internal loop', 'bulge loop', 'tetraloop', 'hairpin loop', 'two-way junction', 'three-way junction', 'four-way junction', 'mismatched base pair' );
 CREATE TABLE ndb_struct_conf_na (
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
 	feature_count INTEGER ,
--- ATTRIBUTE
+-- ATTRIBUTE, IN-PLACE DOCUMENT KEY
 	entry_id TEXT NOT NULL ,
 -- ATTRIBUTE
-	feature ENUM_ndb_struct_conf_na_feature NOT NULL 
+	feature ENUM_ndb_struct_conf_na_feature NOT NULL
 );
 
 --
@@ -2281,7 +2263,7 @@ CREATE TABLE ndb_struct_conf_na (
 --
 CREATE TABLE ndb_struct_na_base_pair (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	buckle DECIMAL ,
 	hbond_type_12 INTEGER ,
 	hbond_type_28 INTEGER ,
@@ -2315,7 +2297,7 @@ CREATE TABLE ndb_struct_na_base_pair (
 -- ATTRIBUTE
 	j_symmetry TEXT NOT NULL ,
 -- ATTRIBUTE
-	model_number INTEGER NOT NULL 
+	model_number INTEGER NOT NULL
 );
 
 --
@@ -2327,7 +2309,7 @@ CREATE TABLE ndb_struct_na_base_pair (
 --
 CREATE TABLE ndb_struct_na_base_pair_step (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	helical_rise DECIMAL ,
 	helical_twist DECIMAL ,
 	"i_PDB_ins_code_1" TEXT ,
@@ -2387,7 +2369,7 @@ CREATE TABLE ndb_struct_na_base_pair_step (
 -- ATTRIBUTE
 	j_symmetry_2 TEXT NOT NULL ,
 -- ATTRIBUTE
-	model_number INTEGER NOT NULL 
+	model_number INTEGER NOT NULL
 );
 
 --
@@ -2399,11 +2381,11 @@ CREATE TABLE ndb_struct_na_base_pair_step (
 --
 CREATE TABLE pdbx_audit_author (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	address TEXT ,
 	name TEXT ,
 -- ATTRIBUTE
-	ordinal INTEGER NOT NULL 
+	ordinal INTEGER NOT NULL
 );
 
 --
@@ -2421,7 +2403,7 @@ DROP TYPE IF EXISTS ENUM_pdbx_audit_revision_details_data_content_type;
 CREATE TYPE ENUM_pdbx_audit_revision_details_data_content_type AS ENUM ( 'Structure model', 'NMR restraints', 'NMR shifts', 'Structure factors' );
 CREATE TABLE pdbx_audit_revision_details (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	description TEXT ,
 	provider ENUM_pdbx_audit_revision_details_provider ,
 	type ENUM_pdbx_audit_revision_details_type ,
@@ -2430,7 +2412,7 @@ CREATE TABLE pdbx_audit_revision_details (
 -- ATTRIBUTE
 	ordinal INTEGER NOT NULL ,
 -- ATTRIBUTE
-	revision_ordinal INTEGER NOT NULL 
+	revision_ordinal INTEGER NOT NULL
 );
 
 --
@@ -2446,14 +2428,14 @@ DROP TYPE IF EXISTS ENUM_pdbx_audit_revision_group_data_content_type;
 CREATE TYPE ENUM_pdbx_audit_revision_group_data_content_type AS ENUM ( 'Structure model', 'NMR restraints', 'NMR shifts', 'Structure factors' );
 CREATE TABLE pdbx_audit_revision_group (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	"group" ENUM_pdbx_audit_revision_group_group ,
 -- ATTRIBUTE
 	data_content_type ENUM_pdbx_audit_revision_group_data_content_type NOT NULL ,
 -- ATTRIBUTE
 	ordinal INTEGER NOT NULL ,
 -- ATTRIBUTE
-	revision_ordinal INTEGER NOT NULL 
+	revision_ordinal INTEGER NOT NULL
 );
 
 --
@@ -2465,13 +2447,13 @@ CREATE TABLE pdbx_audit_revision_group (
 --
 CREATE TABLE pdbx_bond_distance_limits (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	lower_limit DECIMAL ,
 	upper_limit DECIMAL ,
 -- ATTRIBUTE
 	atom_type_1 TEXT NOT NULL ,
 -- ATTRIBUTE
-	atom_type_2 TEXT NOT NULL 
+	atom_type_2 TEXT NOT NULL
 );
 
 --
@@ -2485,10 +2467,10 @@ DROP TYPE IF EXISTS ENUM_pdbx_coordinate_model_type;
 CREATE TYPE ENUM_pdbx_coordinate_model_type AS ENUM ( 'CA ATOMS ONLY', 'P ATOMS ONLY' );
 CREATE TABLE pdbx_coordinate_model (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	type ENUM_pdbx_coordinate_model_type ,
 -- ATTRIBUTE
-	asym_id TEXT NOT NULL 
+	asym_id TEXT NOT NULL
 );
 
 --
@@ -2517,8 +2499,6 @@ CREATE TYPE ENUM_pdbx_database_status_status_code_mr AS ENUM ( 'PROC', 'WAIT', '
 DROP TYPE IF EXISTS ENUM_pdbx_database_status_status_code_sf;
 CREATE TYPE ENUM_pdbx_database_status_status_code_sf AS ENUM ( 'PROC', 'WAIT', 'REL', 'HOLD', 'HPUB', 'OBS', 'WDRN', 'AUTH', 'POLC', 'REPL', 'RMVD' );
 CREATE TABLE pdbx_database_status (
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
 	"SG_entry" ENUM_pdbx_database_status_SG_entry ,
 	deposit_site ENUM_pdbx_database_status_deposit_site ,
 	methods_development_category ENUM_pdbx_database_status_methods_development_category ,
@@ -2530,8 +2510,8 @@ CREATE TABLE pdbx_database_status (
 	status_code_mr ENUM_pdbx_database_status_status_code_mr ,
 	status_code_sf ENUM_pdbx_database_status_status_code_sf ,
 	validation_created_date DATE ,
--- ATTRIBUTE
-	entry_id TEXT NOT NULL 
+-- ATTRIBUTE, IN-PLACE DOCUMENT KEY
+	entry_id TEXT NOT NULL
 );
 
 --
@@ -2542,8 +2522,6 @@ CREATE TABLE pdbx_database_status (
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_dcc_density (
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
 	"B_babinet" DECIMAL ,
 	"B_solvent" DECIMAL ,
 	"B_wilson" DECIMAL ,
@@ -2623,8 +2601,8 @@ CREATE TABLE pdbx_dcc_density (
 	unit_cell TEXT ,
 	wavelength DECIMAL ,
 	working_set_count INTEGER ,
--- ATTRIBUTE
-	entry_id TEXT NOT NULL 
+-- ATTRIBUTE, IN-PLACE DOCUMENT KEY
+	entry_id TEXT NOT NULL
 );
 
 --
@@ -2636,7 +2614,7 @@ CREATE TABLE pdbx_dcc_density (
 --
 CREATE TABLE pdbx_dcc_density_corr (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	correlation DECIMAL ,
 	"correlation_coeff_Fo_to_Fc" DECIMAL ,
 	details TEXT ,
@@ -2651,7 +2629,7 @@ CREATE TABLE pdbx_dcc_density_corr (
 	program TEXT ,
 	"real_space_R" DECIMAL ,
 -- ATTRIBUTE
-	ordinal INTEGER NOT NULL 
+	ordinal INTEGER NOT NULL
 );
 
 --
@@ -2662,7 +2640,7 @@ CREATE TABLE pdbx_dcc_density_corr (
 --
 CREATE TABLE pdbx_dcc_entity_geometry (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	angle_overall_rmsz DECIMAL ,
 	auth_asym_id TEXT ,
 	bond_overall_rmsz DECIMAL ,
@@ -2670,7 +2648,7 @@ CREATE TABLE pdbx_dcc_entity_geometry (
 -- ATTRIBUTE
 	"PDB_model_num" INTEGER NOT NULL ,
 -- ATTRIBUTE
-	label_asym_id TEXT NOT NULL 
+	label_asym_id TEXT NOT NULL
 );
 
 --
@@ -2681,8 +2659,6 @@ CREATE TABLE pdbx_dcc_entity_geometry (
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_dcc_geometry (
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
 	"RNA_suiteness_score" DECIMAL ,
 	"Ramachandran_allowed_number" INTEGER ,
 	"Ramachandran_allowed_percent" DECIMAL ,
@@ -2715,8 +2691,8 @@ CREATE TABLE pdbx_dcc_geometry (
 	rotamer_outliers_number INTEGER ,
 	rotamer_outliers_percent DECIMAL ,
 	rotamer_outliers_percent_nmr_well_formed DECIMAL ,
--- ATTRIBUTE
-	entry_id TEXT NOT NULL 
+-- ATTRIBUTE, IN-PLACE DOCUMENT KEY
+	entry_id TEXT NOT NULL
 );
 
 --
@@ -2730,7 +2706,7 @@ DROP TYPE IF EXISTS ENUM_pdbx_dcc_map_LLDFZ_outlier_flag;
 CREATE TYPE ENUM_pdbx_dcc_map_LLDFZ_outlier_flag AS ENUM ( 'Y', 'N' );
 CREATE TABLE pdbx_dcc_map (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	"Biso_mean" DECIMAL ,
 	"Biso_mean_main_chain" DECIMAL ,
 	"Biso_mean_phosphate_group" DECIMAL ,
@@ -2788,7 +2764,7 @@ CREATE TABLE pdbx_dcc_map (
 	"weighted_RSR" DECIMAL ,
 	"weighted_RSRZ" DECIMAL ,
 -- ATTRIBUTE
-	id INTEGER NOT NULL 
+	id INTEGER NOT NULL
 );
 
 --
@@ -2798,11 +2774,9 @@ CREATE TABLE pdbx_dcc_map (
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_dcc_map_overall (
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
 	"RSRZ_outliers_percent" DECIMAL ,
--- ATTRIBUTE
-	entry_id TEXT NOT NULL 
+-- ATTRIBUTE, IN-PLACE DOCUMENT KEY
+	entry_id TEXT NOT NULL
 );
 
 --
@@ -2813,11 +2787,9 @@ CREATE TABLE pdbx_dcc_map_overall (
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_dcc_mapman (
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
 	details TEXT ,
--- ATTRIBUTE
-	entry_id TEXT NOT NULL 
+-- ATTRIBUTE, IN-PLACE DOCUMENT KEY
+	entry_id TEXT NOT NULL
 );
 
 --
@@ -2830,7 +2802,7 @@ DROP TYPE IF EXISTS ENUM_pdbx_dcc_mon_geometry_LLDFZ_outlier_flag;
 CREATE TYPE ENUM_pdbx_dcc_mon_geometry_LLDFZ_outlier_flag AS ENUM ( 'Y', 'N' );
 CREATE TABLE pdbx_dcc_mon_geometry (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	"LLDFZ_outlier_flag" ENUM_pdbx_dcc_mon_geometry_LLDFZ_outlier_flag ,
 	"PDB_ins_code" TEXT ,
 	"PDB_model_num" INTEGER ,
@@ -2841,7 +2813,7 @@ CREATE TABLE pdbx_dcc_mon_geometry (
 	bond_overall_rmsz DECIMAL ,
 	label_alt_id TEXT ,
 -- ATTRIBUTE
-	id INTEGER NOT NULL 
+	id INTEGER NOT NULL
 );
 
 --
@@ -2853,7 +2825,7 @@ CREATE TABLE pdbx_dcc_mon_geometry (
 --
 CREATE TABLE pdbx_dcc_rscc_mapman (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	"Biso_mean" DECIMAL ,
 	auth_asym_id TEXT ,
 	auth_comp_id TEXT ,
@@ -2868,7 +2840,7 @@ CREATE TABLE pdbx_dcc_rscc_mapman (
 	"real_space_Zscore" DECIMAL ,
 	"weighted_real_space_R" DECIMAL ,
 -- ATTRIBUTE
-	id INTEGER NOT NULL 
+	id INTEGER NOT NULL
 );
 
 --
@@ -2879,14 +2851,12 @@ CREATE TABLE pdbx_dcc_rscc_mapman (
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_dcc_rscc_mapman_overall (
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
 	correlation DECIMAL ,
 	correlation_sigma DECIMAL ,
 	"real_space_R" DECIMAL ,
 	"real_space_R_sigma" DECIMAL ,
--- ATTRIBUTE
-	entry_id TEXT NOT NULL 
+-- ATTRIBUTE, IN-PLACE DOCUMENT KEY
+	entry_id TEXT NOT NULL
 );
 
 --
@@ -2898,7 +2868,7 @@ CREATE TABLE pdbx_dcc_rscc_mapman_overall (
 --
 CREATE TABLE pdbx_diffrn_reflns_shell (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	"Rmerge_I_obs" DECIMAL ,
 	"Rsym_value" DECIMAL ,
 	chi_squared DECIMAL ,
@@ -2911,7 +2881,7 @@ CREATE TABLE pdbx_diffrn_reflns_shell (
 -- ATTRIBUTE
 	d_res_low DECIMAL NOT NULL ,
 -- ATTRIBUTE
-	diffrn_id TEXT NOT NULL 
+	diffrn_id TEXT NOT NULL
 );
 
 --
@@ -2923,7 +2893,7 @@ CREATE TABLE pdbx_diffrn_reflns_shell (
 --
 CREATE TABLE pdbx_distant_solvent_atoms (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	"PDB_ins_code" TEXT ,
 	"PDB_model_num" INTEGER ,
 	auth_asym_id TEXT ,
@@ -2938,7 +2908,7 @@ CREATE TABLE pdbx_distant_solvent_atoms (
 	neighbor_ligand_distance DECIMAL ,
 	neighbor_macromolecule_distance DECIMAL ,
 -- ATTRIBUTE
-	id INTEGER NOT NULL 
+	id INTEGER NOT NULL
 );
 
 --
@@ -2950,7 +2920,7 @@ CREATE TABLE pdbx_distant_solvent_atoms (
 --
 CREATE TABLE pdbx_domain_range (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	beg_auth_asym_id TEXT ,
 	beg_auth_comp_id TEXT ,
 	beg_auth_seq_id TEXT ,
@@ -2974,7 +2944,7 @@ CREATE TABLE pdbx_domain_range (
 -- ATTRIBUTE
 	end_label_comp_id TEXT NOT NULL ,
 -- ATTRIBUTE
-	end_label_seq_id INTEGER NOT NULL 
+	end_label_seq_id INTEGER NOT NULL
 );
 
 --
@@ -2986,13 +2956,13 @@ CREATE TABLE pdbx_domain_range (
 --
 CREATE TABLE pdbx_entity_assembly (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	biol_id TEXT ,
 	num_copies INTEGER ,
 -- ATTRIBUTE
 	entity_id TEXT NOT NULL ,
 -- ATTRIBUTE
-	id TEXT NOT NULL 
+	id TEXT NOT NULL
 );
 
 --
@@ -3006,14 +2976,14 @@ DROP TYPE IF EXISTS ENUM_pdbx_entity_descriptor_type;
 CREATE TYPE ENUM_pdbx_entity_descriptor_type AS ENUM ( 'LINUCS', 'IUPAC', 'IUPAC Abbreviated' );
 CREATE TABLE pdbx_entity_descriptor (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	descriptor TEXT ,
 	entity_id TEXT ,
 	program TEXT ,
 	program_version TEXT ,
 	type ENUM_pdbx_entity_descriptor_type ,
 -- ATTRIBUTE
-	ordinal INTEGER NOT NULL 
+	ordinal INTEGER NOT NULL
 );
 
 --
@@ -3025,11 +2995,11 @@ CREATE TABLE pdbx_entity_descriptor (
 --
 CREATE TABLE pdbx_entity_nonpoly (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	comp_id TEXT ,
 	name TEXT ,
 -- ATTRIBUTE
-	entity_id TEXT NOT NULL 
+	entity_id TEXT NOT NULL
 );
 
 --
@@ -3047,7 +3017,7 @@ DROP TYPE IF EXISTS ENUM_pdbx_entity_poly_comp_link_list_value_order;
 CREATE TYPE ENUM_pdbx_entity_poly_comp_link_list_value_order AS ENUM ( 'sing', 'doub', 'trip', 'quad', 'arom', 'poly', 'delo', 'pi' );
 CREATE TABLE pdbx_entity_poly_comp_link_list (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	atom_id_1 TEXT ,
 	atom_id_2 TEXT ,
 	atom_stereo_config_1 ENUM_pdbx_entity_poly_comp_link_list_atom_stereo_config_1 ,
@@ -3062,7 +3032,7 @@ CREATE TABLE pdbx_entity_poly_comp_link_list (
 	leaving_atom_id_2 TEXT ,
 	value_order ENUM_pdbx_entity_poly_comp_link_list_value_order ,
 -- ATTRIBUTE
-	link_id INTEGER NOT NULL 
+	link_id INTEGER NOT NULL
 );
 
 --
@@ -3073,14 +3043,12 @@ CREATE TABLE pdbx_entity_poly_comp_link_list (
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_entry_details (
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
 	compound_details TEXT ,
 	nonpolymer_details TEXT ,
 	sequence_details TEXT ,
 	source_details TEXT ,
--- ATTRIBUTE
-	entry_id TEXT NOT NULL 
+-- ATTRIBUTE, IN-PLACE DOCUMENT KEY
+	entry_id TEXT NOT NULL
 );
 
 --
@@ -3093,16 +3061,14 @@ CREATE TABLE pdbx_entry_details (
 DROP TYPE IF EXISTS ENUM_pdbx_helical_symmetry_dyad_axis;
 CREATE TYPE ENUM_pdbx_helical_symmetry_dyad_axis AS ENUM ( 'no', 'yes' );
 CREATE TABLE pdbx_helical_symmetry (
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
 	circular_symmetry INTEGER CHECK ( circular_symmetry >= 1 ) ,
 	dyad_axis ENUM_pdbx_helical_symmetry_dyad_axis ,
 	n_subunits_divisor INTEGER CHECK ( n_subunits_divisor >= 1 ) ,
 	number_of_operations INTEGER CHECK ( number_of_operations >= 1 ) ,
 	rise_per_n_subunits DECIMAL ,
 	rotation_per_n_subunits DECIMAL ,
--- ATTRIBUTE
-	entry_id TEXT NOT NULL 
+-- ATTRIBUTE, IN-PLACE DOCUMENT KEY
+	entry_id TEXT NOT NULL
 );
 
 --
@@ -3113,11 +3079,11 @@ CREATE TABLE pdbx_helical_symmetry (
 --
 CREATE TABLE pdbx_missing_nmr_star_item (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	description TEXT ,
 	id INTEGER ,
 	list_id INTEGER ,
-	name TEXT 
+	name TEXT
 );
 
 --
@@ -3128,12 +3094,12 @@ CREATE TABLE pdbx_missing_nmr_star_item (
 --
 CREATE TABLE pdbx_nmr_chem_shift_annotation (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	auth_asym_id TEXT ,
 	auth_comp_id TEXT ,
 	auth_seq_id TEXT ,
 	list_id INTEGER ,
-	random_coil_index DECIMAL 
+	random_coil_index DECIMAL
 );
 
 --
@@ -3144,7 +3110,7 @@ CREATE TABLE pdbx_nmr_chem_shift_annotation (
 --
 CREATE TABLE pdbx_nmr_chem_shift_completeness (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	number_assigned_chem_shifts INTEGER CHECK ( number_assigned_chem_shifts >= 0 ) ,
 	number_assigned_chem_shifts_well_formed INTEGER CHECK ( number_assigned_chem_shifts_well_formed >= 0 ) ,
 	number_target_shifts INTEGER CHECK ( number_target_shifts >= 0 ) ,
@@ -3156,7 +3122,7 @@ CREATE TABLE pdbx_nmr_chem_shift_completeness (
 -- ATTRIBUTE
 	atom_type TEXT NOT NULL ,
 -- ATTRIBUTE
-	list_id INTEGER NOT NULL 
+	list_id INTEGER NOT NULL
 );
 
 --
@@ -3167,7 +3133,7 @@ CREATE TABLE pdbx_nmr_chem_shift_completeness (
 --
 CREATE TABLE pdbx_nmr_chem_shift_re_offset (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	correction_val DECIMAL ,
 	correction_val_err DECIMAL ,
 	correction_val_esd DECIMAL ,
@@ -3175,7 +3141,7 @@ CREATE TABLE pdbx_nmr_chem_shift_re_offset (
 -- ATTRIBUTE
 	atom_type TEXT NOT NULL ,
 -- ATTRIBUTE
-	list_id INTEGER NOT NULL 
+	list_id INTEGER NOT NULL
 );
 
 --
@@ -3186,8 +3152,6 @@ CREATE TABLE pdbx_nmr_chem_shift_re_offset (
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_nmr_constraints (
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
 	"NA_alpha-angle_constraints_total_count" INTEGER ,
 	"NA_beta-angle_constraints_total_count" INTEGER ,
 	"NA_chi-angle_constraints_total_count" INTEGER ,
@@ -3211,8 +3175,8 @@ CREATE TABLE pdbx_nmr_constraints (
 	protein_other_angle_constraints_total_count INTEGER ,
 	protein_phi_angle_constraints_total_count INTEGER ,
 	protein_psi_angle_constraints_total_count INTEGER ,
--- ATTRIBUTE
-	entry_id TEXT NOT NULL 
+-- ATTRIBUTE, IN-PLACE DOCUMENT KEY
+	entry_id TEXT NOT NULL
 );
 
 --
@@ -3223,11 +3187,9 @@ CREATE TABLE pdbx_nmr_constraints (
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_nmr_details (
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
 	text TEXT ,
--- ATTRIBUTE
-	entry_id TEXT NOT NULL 
+-- ATTRIBUTE, IN-PLACE DOCUMENT KEY
+	entry_id TEXT NOT NULL
 );
 
 --
@@ -3240,8 +3202,6 @@ CREATE TABLE pdbx_nmr_details (
 DROP TYPE IF EXISTS ENUM_pdbx_nmr_ensemble_atom_consistency_flag;
 CREATE TYPE ENUM_pdbx_nmr_ensemble_atom_consistency_flag AS ENUM ( 'Y', 'N' );
 CREATE TABLE pdbx_nmr_ensemble (
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
 	atom_consistency_flag ENUM_pdbx_nmr_ensemble_atom_consistency_flag ,
 	average_constraint_violations_per_residue INTEGER ,
 	average_constraints_per_residue INTEGER ,
@@ -3257,8 +3217,8 @@ CREATE TABLE pdbx_nmr_ensemble (
 	maximum_upper_distance_constraint_violation DECIMAL ,
 	representative_conformer INTEGER CHECK ( representative_conformer > 0 ) ,
 	torsion_angle_constraint_violation_method TEXT ,
--- ATTRIBUTE
-	entry_id TEXT NOT NULL 
+-- ATTRIBUTE, IN-PLACE DOCUMENT KEY
+	entry_id TEXT NOT NULL
 );
 
 --
@@ -3271,8 +3231,6 @@ CREATE TABLE pdbx_nmr_ensemble (
 DROP TYPE IF EXISTS ENUM_pdbx_nmr_ensemble_rms_atom_type;
 CREATE TYPE ENUM_pdbx_nmr_ensemble_rms_atom_type AS ENUM ( 'backbone heavy atoms', 'side chain heavy atoms', 'all heavy atoms', 'all atoms', 'all backbone atoms' );
 CREATE TABLE pdbx_nmr_ensemble_rms (
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
 	atom_type ENUM_pdbx_nmr_ensemble_rms_atom_type ,
 	bond_angle_rms_dev DECIMAL ,
 	bond_angle_rms_dev_error DECIMAL ,
@@ -3291,8 +3249,8 @@ CREATE TABLE pdbx_nmr_ensemble_rms (
 	peptide_planarity_rms_dev_error DECIMAL ,
 	residue_range_begin INTEGER ,
 	residue_range_end INTEGER ,
--- ATTRIBUTE
-	entry_id TEXT NOT NULL 
+-- ATTRIBUTE, IN-PLACE DOCUMENT KEY
+	entry_id TEXT NOT NULL
 );
 
 --
@@ -3306,7 +3264,7 @@ DROP TYPE IF EXISTS ENUM_pdbx_nmr_exptl_sample_state;
 CREATE TYPE ENUM_pdbx_nmr_exptl_sample_state AS ENUM ( 'isotropic', 'anisotropic' );
 CREATE TABLE pdbx_nmr_exptl (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	sample_state ENUM_pdbx_nmr_exptl_sample_state ,
 	spectrometer_id INTEGER ,
 	type TEXT ,
@@ -3315,7 +3273,7 @@ CREATE TABLE pdbx_nmr_exptl (
 -- ATTRIBUTE
 	experiment_id TEXT NOT NULL ,
 -- ATTRIBUTE
-	solution_id TEXT NOT NULL 
+	solution_id TEXT NOT NULL
 );
 
 --
@@ -3329,7 +3287,7 @@ DROP TYPE IF EXISTS ENUM_pdbx_nmr_exptl_sample_concentration_units;
 CREATE TYPE ENUM_pdbx_nmr_exptl_sample_concentration_units AS ENUM ( '%', 'mM', 'mg/mL', 'nM', 'pM', 'M', 'g/L', 'ug/mL', 'mg/L', 'mg/uL', 'ug/uL', 'uM', 'v/v', 'w/v', 'w/w', '% w/v', '% w/w', '% v/v', 'saturated', 'na' );
 CREATE TABLE pdbx_nmr_exptl_sample (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	concentration DECIMAL CHECK ( concentration > 0.0 ) ,
 	concentration_range TEXT ,
 	concentration_units ENUM_pdbx_nmr_exptl_sample_concentration_units ,
@@ -3337,7 +3295,7 @@ CREATE TABLE pdbx_nmr_exptl_sample (
 -- ATTRIBUTE
 	component TEXT NOT NULL ,
 -- ATTRIBUTE
-	solution_id TEXT NOT NULL 
+	solution_id TEXT NOT NULL
 );
 
 --
@@ -3355,7 +3313,7 @@ DROP TYPE IF EXISTS ENUM_pdbx_nmr_exptl_sample_conditions_temperature_units;
 CREATE TYPE ENUM_pdbx_nmr_exptl_sample_conditions_temperature_units AS ENUM ( 'K', 'C', 'Not defined' );
 CREATE TABLE pdbx_nmr_exptl_sample_conditions (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	details TEXT ,
 	ionic_strength TEXT ,
 	ionic_strength_err DECIMAL ,
@@ -3371,7 +3329,7 @@ CREATE TABLE pdbx_nmr_exptl_sample_conditions (
 	temperature_err DECIMAL ,
 	temperature_units ENUM_pdbx_nmr_exptl_sample_conditions_temperature_units ,
 -- ATTRIBUTE
-	conditions_id TEXT NOT NULL 
+	conditions_id TEXT NOT NULL
 );
 
 --
@@ -3408,8 +3366,6 @@ CREATE TYPE ENUM_pdbx_nmr_force_constants_non_bonded_inter_van_der_Waals_te AS E
 DROP TYPE IF EXISTS ENUM_pdbx_nmr_force_constants_non_bonded_inter_van_der_Waals_te;
 CREATE TYPE ENUM_pdbx_nmr_force_constants_non_bonded_inter_van_der_Waals_te AS ENUM ( 'kcal/mol/A**4', 'kJ/mol/nm**4', 'other' );
 CREATE TABLE pdbx_nmr_force_constants (
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
 	covalent_geom_angles_term DECIMAL ,
 	covalent_geom_angles_term_units ENUM_pdbx_nmr_force_constants_covalent_geom_angles_term_units ,
 	covalent_geom_bond_term DECIMAL ,
@@ -3436,8 +3392,8 @@ CREATE TABLE pdbx_nmr_force_constants (
 	"non-bonded_inter_van_der_Waals_term" DECIMAL ,
 	"non-bonded_inter_van_der_Waals_term_type" ENUM_pdbx_nmr_force_constants_non_bonded_inter_van_der_Waals_te ,
 	"non-bonded_inter_van_der_Waals_term_units" ENUM_pdbx_nmr_force_constants_non_bonded_inter_van_der_Waals_te ,
--- ATTRIBUTE
-	entry_id TEXT NOT NULL 
+-- ATTRIBUTE, IN-PLACE DOCUMENT KEY
+	entry_id TEXT NOT NULL
 );
 
 --
@@ -3448,14 +3404,12 @@ CREATE TABLE pdbx_nmr_force_constants (
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_nmr_refine (
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
 	details TEXT ,
 	method TEXT ,
--- ATTRIBUTE
+-- ATTRIBUTE, IN-PLACE DOCUMENT KEY
 	entry_id TEXT NOT NULL ,
 -- ATTRIBUTE
-	software_ordinal INTEGER NOT NULL 
+	software_ordinal INTEGER NOT NULL
 );
 
 --
@@ -3466,12 +3420,10 @@ CREATE TABLE pdbx_nmr_refine (
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_nmr_representative (
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
 	conformer_id TEXT ,
 	selection_criteria TEXT ,
--- ATTRIBUTE
-	entry_id TEXT NOT NULL 
+-- ATTRIBUTE, IN-PLACE DOCUMENT KEY
+	entry_id TEXT NOT NULL
 );
 
 --
@@ -3483,13 +3435,13 @@ CREATE TABLE pdbx_nmr_representative (
 --
 CREATE TABLE pdbx_nmr_software (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	authors TEXT ,
 	classification TEXT ,
 	name TEXT ,
 	version TEXT ,
 -- ATTRIBUTE
-	ordinal INTEGER NOT NULL 
+	ordinal INTEGER NOT NULL
 );
 
 --
@@ -3501,14 +3453,14 @@ CREATE TABLE pdbx_nmr_software (
 --
 CREATE TABLE pdbx_nmr_spectrometer (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	details TEXT ,
 	field_strength DECIMAL ,
 	manufacturer TEXT ,
 	model TEXT ,
 	type TEXT ,
 -- ATTRIBUTE
-	spectrometer_id TEXT NOT NULL 
+	spectrometer_id TEXT NOT NULL
 );
 
 --
@@ -3521,7 +3473,7 @@ DROP TYPE IF EXISTS ENUM_pdbx_nmr_unmapped_chem_shift_ambiguity_code;
 CREATE TYPE ENUM_pdbx_nmr_unmapped_chem_shift_ambiguity_code AS ENUM ( '1', '2', '3', '4', '5', '6', '9' );
 CREATE TABLE pdbx_nmr_unmapped_chem_shift (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	ambiguity_code ENUM_pdbx_nmr_unmapped_chem_shift_ambiguity_code ,
 	auth_asym_id TEXT ,
 	auth_atom_id TEXT ,
@@ -3531,7 +3483,7 @@ CREATE TABLE pdbx_nmr_unmapped_chem_shift (
 	id INTEGER ,
 	list_id INTEGER ,
 	val DECIMAL ,
-	val_err DECIMAL 
+	val_err DECIMAL
 );
 
 --
@@ -3544,7 +3496,7 @@ DROP TYPE IF EXISTS ENUM_pdbx_nmr_unparsed_chem_shift_ambiguity_code;
 CREATE TYPE ENUM_pdbx_nmr_unparsed_chem_shift_ambiguity_code AS ENUM ( '1', '2', '3', '4', '5', '6', '9' );
 CREATE TABLE pdbx_nmr_unparsed_chem_shift (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	ambiguity_code ENUM_pdbx_nmr_unparsed_chem_shift_ambiguity_code ,
 	auth_asym_id TEXT ,
 	auth_atom_id TEXT ,
@@ -3555,7 +3507,7 @@ CREATE TABLE pdbx_nmr_unparsed_chem_shift (
 	id INTEGER ,
 	list_id INTEGER ,
 	val DECIMAL ,
-	val_err DECIMAL 
+	val_err DECIMAL
 );
 
 --
@@ -3567,7 +3519,7 @@ CREATE TABLE pdbx_nmr_unparsed_chem_shift (
 --
 CREATE TABLE pdbx_nonpoly_scheme (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	auth_mon_id TEXT ,
 	auth_seq_num TEXT ,
 	entity_id TEXT ,
@@ -3579,7 +3531,7 @@ CREATE TABLE pdbx_nonpoly_scheme (
 -- ATTRIBUTE
 	asym_id TEXT NOT NULL ,
 -- ATTRIBUTE
-	ndb_seq_num TEXT NOT NULL 
+	ndb_seq_num TEXT NOT NULL
 );
 
 --
@@ -3592,7 +3544,7 @@ DROP TYPE IF EXISTS ENUM_pdbx_percentile_entity_view_type;
 CREATE TYPE ENUM_pdbx_percentile_entity_view_type AS ENUM ( 'RSRZ_outliers_percent', 'Ramachandran_outlier_percent', 'rotamer_outliers_percent' );
 CREATE TABLE pdbx_percentile_entity_view (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	auth_asym_id TEXT ,
 	entity_id TEXT ,
 	rank DECIMAL CHECK ( rank >= 0 AND rank <= 100 ) ,
@@ -3603,7 +3555,7 @@ CREATE TABLE pdbx_percentile_entity_view (
 -- ATTRIBUTE
 	label_asym_id TEXT NOT NULL ,
 -- ATTRIBUTE
-	type ENUM_pdbx_percentile_entity_view_type NOT NULL 
+	type ENUM_pdbx_percentile_entity_view_type NOT NULL
 );
 
 --
@@ -3613,11 +3565,9 @@ CREATE TABLE pdbx_percentile_entity_view (
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_percentile_list (
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
 	name TEXT ,
--- ATTRIBUTE
-	entry_id TEXT NOT NULL 
+-- ATTRIBUTE, IN-PLACE DOCUMENT KEY
+	entry_id TEXT NOT NULL
 );
 
 --
@@ -3629,15 +3579,13 @@ CREATE TABLE pdbx_percentile_list (
 DROP TYPE IF EXISTS ENUM_pdbx_percentile_view_type;
 CREATE TYPE ENUM_pdbx_percentile_view_type AS ENUM ( 'R_value_R_free', 'RNA_suiteness_score', 'all_atom_clashscore', 'RSRZ_outliers_percent', 'Ramachandran_outlier_percent', 'rotamer_outliers_percent' );
 CREATE TABLE pdbx_percentile_view (
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
 	rank DECIMAL CHECK ( rank >= 0 AND rank <= 100 ) ,
 -- ATTRIBUTE
 	conditions_id INTEGER NOT NULL ,
--- ATTRIBUTE
+-- ATTRIBUTE, IN-PLACE DOCUMENT KEY
 	entry_id TEXT NOT NULL ,
 -- ATTRIBUTE
-	type ENUM_pdbx_percentile_view_type NOT NULL 
+	type ENUM_pdbx_percentile_view_type NOT NULL
 );
 
 --
@@ -3649,7 +3597,7 @@ CREATE TABLE pdbx_percentile_view (
 --
 CREATE TABLE "pdbx_phasing_MAD_set" (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	"R_cullis" DECIMAL ,
 	"R_cullis_acentric" DECIMAL ,
 	"R_cullis_centric" DECIMAL ,
@@ -3672,7 +3620,7 @@ CREATE TABLE "pdbx_phasing_MAD_set" (
 	reflns_acentric INTEGER ,
 	reflns_centric INTEGER ,
 -- ATTRIBUTE
-	id TEXT NOT NULL 
+	id TEXT NOT NULL
 );
 
 --
@@ -3684,7 +3632,7 @@ CREATE TABLE "pdbx_phasing_MAD_set" (
 --
 CREATE TABLE "pdbx_phasing_MAD_set_shell" (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	"R_cullis" DECIMAL ,
 	"R_cullis_acentric" DECIMAL ,
 	"R_cullis_centric" DECIMAL ,
@@ -3708,7 +3656,7 @@ CREATE TABLE "pdbx_phasing_MAD_set_shell" (
 -- ATTRIBUTE
 	d_res_low DECIMAL NOT NULL ,
 -- ATTRIBUTE
-	id TEXT NOT NULL 
+	id TEXT NOT NULL
 );
 
 --
@@ -3720,7 +3668,7 @@ CREATE TABLE "pdbx_phasing_MAD_set_shell" (
 --
 CREATE TABLE "pdbx_phasing_MAD_set_site" (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	"Cartn_x" DECIMAL ,
 	"Cartn_x_esd" DECIMAL ,
 	"Cartn_y" DECIMAL ,
@@ -3741,7 +3689,7 @@ CREATE TABLE "pdbx_phasing_MAD_set_site" (
 	occupancy_iso DECIMAL ,
 	set_id TEXT ,
 -- ATTRIBUTE
-	id TEXT NOT NULL 
+	id TEXT NOT NULL
 );
 
 --
@@ -3753,7 +3701,7 @@ CREATE TABLE "pdbx_phasing_MAD_set_site" (
 --
 CREATE TABLE "pdbx_phasing_MAD_shell" (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	"R_cullis" DECIMAL ,
 	"R_cullis_acentric" DECIMAL ,
 	"R_cullis_centric" DECIMAL ,
@@ -3775,7 +3723,7 @@ CREATE TABLE "pdbx_phasing_MAD_shell" (
 -- ATTRIBUTE
 	d_res_high DECIMAL NOT NULL ,
 -- ATTRIBUTE
-	d_res_low DECIMAL NOT NULL 
+	d_res_low DECIMAL NOT NULL
 );
 
 --
@@ -3786,8 +3734,6 @@ CREATE TABLE "pdbx_phasing_MAD_shell" (
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE "pdbx_phasing_MR" (
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
 	"R_factor" DECIMAL ,
 	"R_rigid_body" DECIMAL ,
 	"correlation_coeff_Fo_to_Fc" DECIMAL ,
@@ -3807,8 +3753,8 @@ CREATE TABLE "pdbx_phasing_MR" (
 	"sigma_F_translation" DECIMAL ,
 	"sigma_I_rotation" DECIMAL ,
 	"sigma_I_translation" DECIMAL ,
--- ATTRIBUTE
-	entry_id TEXT NOT NULL 
+-- ATTRIBUTE, IN-PLACE DOCUMENT KEY
+	entry_id TEXT NOT NULL
 );
 
 --
@@ -3819,8 +3765,6 @@ CREATE TABLE "pdbx_phasing_MR" (
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_phasing_dm (
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
 	delta_phi_final DECIMAL ,
 	delta_phi_initial DECIMAL ,
 	fom DECIMAL ,
@@ -3831,8 +3775,8 @@ CREATE TABLE pdbx_phasing_dm (
 	reflns INTEGER ,
 	reflns_acentric INTEGER ,
 	reflns_centric INTEGER ,
--- ATTRIBUTE
-	entry_id TEXT NOT NULL 
+-- ATTRIBUTE, IN-PLACE DOCUMENT KEY
+	entry_id TEXT NOT NULL
 );
 
 --
@@ -3844,7 +3788,7 @@ CREATE TABLE pdbx_phasing_dm (
 --
 CREATE TABLE pdbx_phasing_dm_shell (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	delta_phi_final DECIMAL ,
 	delta_phi_initial DECIMAL ,
 	fom DECIMAL ,
@@ -3856,7 +3800,7 @@ CREATE TABLE pdbx_phasing_dm_shell (
 -- ATTRIBUTE
 	d_res_high DECIMAL NOT NULL ,
 -- ATTRIBUTE
-	d_res_low DECIMAL NOT NULL 
+	d_res_low DECIMAL NOT NULL
 );
 
 --
@@ -3869,13 +3813,11 @@ CREATE TABLE pdbx_phasing_dm_shell (
 DROP TYPE IF EXISTS ENUM_pdbx_point_symmetry_Schoenflies_symbol;
 CREATE TYPE ENUM_pdbx_point_symmetry_Schoenflies_symbol AS ENUM ( 'I', 'O', 'T', 'C', 'D' );
 CREATE TABLE pdbx_point_symmetry (
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
 	"H-M_notation" TEXT ,
 	"Schoenflies_symbol" ENUM_pdbx_point_symmetry_Schoenflies_symbol ,
 	circular_symmetry INTEGER CHECK ( circular_symmetry >= 1 ) ,
--- ATTRIBUTE
-	entry_id TEXT NOT NULL 
+-- ATTRIBUTE, IN-PLACE DOCUMENT KEY
+	entry_id TEXT NOT NULL
 );
 
 --
@@ -3889,7 +3831,7 @@ DROP TYPE IF EXISTS ENUM_pdbx_poly_seq_scheme_hetero;
 CREATE TYPE ENUM_pdbx_poly_seq_scheme_hetero AS ENUM ( 'no', 'n', 'yes', 'y' );
 CREATE TABLE pdbx_poly_seq_scheme (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	auth_mon_id TEXT ,
 	auth_seq_num TEXT ,
 	hetero ENUM_pdbx_poly_seq_scheme_hetero ,
@@ -3905,7 +3847,7 @@ CREATE TABLE pdbx_poly_seq_scheme (
 -- ATTRIBUTE
 	mon_id TEXT NOT NULL ,
 -- ATTRIBUTE
-	seq_id INTEGER NOT NULL 
+	seq_id INTEGER NOT NULL
 );
 
 --
@@ -3916,12 +3858,10 @@ CREATE TABLE pdbx_poly_seq_scheme (
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_re_refinement (
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
 	citation_id TEXT ,
 	details TEXT ,
--- ATTRIBUTE
-	entry_id TEXT NOT NULL 
+-- ATTRIBUTE, IN-PLACE DOCUMENT KEY
+	entry_id TEXT NOT NULL
 );
 
 --
@@ -3932,8 +3872,6 @@ CREATE TABLE pdbx_re_refinement (
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_refine (
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
 	"R_factor_all_4sig_cutoff" DECIMAL ,
 	"R_factor_all_no_cutoff" DECIMAL ,
 	"R_factor_obs_4sig_cutoff" DECIMAL ,
@@ -3948,10 +3886,10 @@ CREATE TABLE pdbx_refine (
 	"free_R_val_test_set_size_perc_no_cutoff" DECIMAL ,
 	number_reflns_obs_4sig_cutoff DECIMAL ,
 	number_reflns_obs_no_cutoff DECIMAL ,
--- ATTRIBUTE
+-- ATTRIBUTE, IN-PLACE DOCUMENT KEY
 	entry_id TEXT NOT NULL ,
 -- ATTRIBUTE
-	pdbx_refine_id TEXT NOT NULL 
+	pdbx_refine_id TEXT NOT NULL
 );
 
 --
@@ -3963,7 +3901,7 @@ CREATE TABLE pdbx_refine (
 --
 CREATE TABLE pdbx_refine_component (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	"B_iso" DECIMAL ,
 	"B_iso_main_chain" DECIMAL ,
 	"B_iso_side_chain" DECIMAL ,
@@ -3994,7 +3932,7 @@ CREATE TABLE pdbx_refine_component (
 -- ATTRIBUTE
 	label_comp_id TEXT NOT NULL ,
 -- ATTRIBUTE
-	label_seq_id INTEGER NOT NULL 
+	label_seq_id INTEGER NOT NULL
 );
 
 --
@@ -4006,7 +3944,7 @@ CREATE TABLE pdbx_refine_component (
 --
 CREATE TABLE pdbx_refine_tls_group (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	beg_auth_asym_id TEXT ,
 	beg_auth_seq_id TEXT ,
 	beg_label_asym_id TEXT ,
@@ -4020,7 +3958,7 @@ CREATE TABLE pdbx_refine_tls_group (
 	selection TEXT ,
 	selection_details TEXT ,
 -- ATTRIBUTE
-	id TEXT NOT NULL 
+	id TEXT NOT NULL
 );
 
 --
@@ -4034,7 +3972,7 @@ DROP TYPE IF EXISTS ENUM_pdbx_reflns_twin_type;
 CREATE TYPE ENUM_pdbx_reflns_twin_type AS ENUM ( 'merohedral', 'hemihedral', 'non-merohedral', 'pseudo-merohedral', 'epitaxial', 'tetartohedral' );
 CREATE TABLE pdbx_reflns_twin (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	domain_id TEXT ,
 	fraction DECIMAL ,
 	"mean_F_square_over_mean_F2" DECIMAL ,
@@ -4045,7 +3983,7 @@ CREATE TABLE pdbx_reflns_twin (
 -- ATTRIBUTE
 	diffrn_id TEXT NOT NULL ,
 -- ATTRIBUTE
-	operator TEXT NOT NULL 
+	operator TEXT NOT NULL
 );
 
 --
@@ -4057,7 +3995,7 @@ CREATE TABLE pdbx_reflns_twin (
 --
 CREATE TABLE pdbx_sequence_range (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	beg_auth_asym_id TEXT ,
 	beg_auth_comp_id TEXT ,
 	beg_auth_seq_id TEXT ,
@@ -4081,7 +4019,7 @@ CREATE TABLE pdbx_sequence_range (
 -- ATTRIBUTE
 	end_label_seq_id INTEGER NOT NULL ,
 -- ATTRIBUTE
-	seq_range_id TEXT NOT NULL 
+	seq_range_id TEXT NOT NULL
 );
 
 --
@@ -4094,8 +4032,6 @@ CREATE TABLE pdbx_sequence_range (
 DROP TYPE IF EXISTS ENUM_pdbx_soln_scatter_type;
 CREATE TYPE ENUM_pdbx_soln_scatter_type AS ENUM ( 'x-ray', 'neutron', 'modelling' );
 CREATE TABLE pdbx_soln_scatter (
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
 	buffer_name TEXT ,
 	concentration_range TEXT ,
 	data_analysis_software_list TEXT ,
@@ -4117,10 +4053,10 @@ CREATE TABLE pdbx_soln_scatter (
 	source_type TEXT ,
 	temperature DECIMAL CHECK ( temperature >= 0 ) ,
 	type ENUM_pdbx_soln_scatter_type ,
--- ATTRIBUTE
+-- ATTRIBUTE, IN-PLACE DOCUMENT KEY
 	entry_id TEXT NOT NULL ,
 -- ATTRIBUTE
-	id TEXT NOT NULL 
+	id TEXT NOT NULL
 );
 
 --
@@ -4132,7 +4068,7 @@ CREATE TABLE pdbx_soln_scatter (
 --
 CREATE TABLE pdbx_soln_scatter_model (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	conformer_selection_criteria TEXT ,
 	details TEXT ,
 	entry_fitting_list TEXT ,
@@ -4145,7 +4081,7 @@ CREATE TABLE pdbx_soln_scatter_model (
 -- ATTRIBUTE
 	id TEXT NOT NULL ,
 -- ATTRIBUTE
-	scatter_id TEXT NOT NULL 
+	scatter_id TEXT NOT NULL
 );
 
 --
@@ -4157,7 +4093,7 @@ CREATE TABLE pdbx_soln_scatter_model (
 --
 CREATE TABLE pdbx_struct_assembly_gen (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	auth_asym_id_list TEXT ,
 	entity_inst_id TEXT ,
 -- ATTRIBUTE
@@ -4165,7 +4101,7 @@ CREATE TABLE pdbx_struct_assembly_gen (
 -- ATTRIBUTE
 	asym_id_list TEXT NOT NULL ,
 -- ATTRIBUTE
-	oper_expression TEXT NOT NULL 
+	oper_expression TEXT NOT NULL
 );
 
 --
@@ -4179,13 +4115,13 @@ DROP TYPE IF EXISTS ENUM_pdbx_struct_assembly_prop_type;
 CREATE TYPE ENUM_pdbx_struct_assembly_prop_type AS ENUM ( 'ABSA (A^2)', 'SSA (A^2)', 'MORE' );
 CREATE TABLE pdbx_struct_assembly_prop (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	details TEXT ,
 	value TEXT ,
 -- ATTRIBUTE
 	biol_id TEXT NOT NULL ,
 -- ATTRIBUTE
-	type ENUM_pdbx_struct_assembly_prop_type NOT NULL 
+	type ENUM_pdbx_struct_assembly_prop_type NOT NULL
 );
 
 --
@@ -4197,12 +4133,12 @@ CREATE TABLE pdbx_struct_assembly_prop (
 --
 CREATE TABLE pdbx_struct_asym_gen (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	asym_id TEXT ,
 -- ATTRIBUTE
 	entity_inst_id TEXT NOT NULL ,
 -- ATTRIBUTE
-	oper_expression TEXT NOT NULL 
+	oper_expression TEXT NOT NULL
 );
 
 --
@@ -4216,7 +4152,7 @@ DROP TYPE IF EXISTS ENUM_pdbx_struct_chem_comp_diagnostics_type;
 CREATE TYPE ENUM_pdbx_struct_chem_comp_diagnostics_type AS ENUM ( 'MISSING_ATOM', 'STEREOCHEMISTRY', 'VALENCE', 'GEOMETRY', 'LABELING', 'OTHER' );
 CREATE TABLE pdbx_struct_chem_comp_diagnostics (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	asym_id TEXT ,
 	auth_comp_id TEXT ,
 	auth_seq_id TEXT ,
@@ -4226,7 +4162,7 @@ CREATE TABLE pdbx_struct_chem_comp_diagnostics (
 	seq_num INTEGER ,
 	type ENUM_pdbx_struct_chem_comp_diagnostics_type ,
 -- ATTRIBUTE
-	ordinal INTEGER NOT NULL 
+	ordinal INTEGER NOT NULL
 );
 
 --
@@ -4238,7 +4174,7 @@ CREATE TABLE pdbx_struct_chem_comp_diagnostics (
 --
 CREATE TABLE pdbx_struct_conn_angle (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	"ptnr1_PDB_ins_code" TEXT ,
 	ptnr1_auth_alt_id TEXT ,
 	ptnr1_auth_asym_id TEXT ,
@@ -4278,7 +4214,7 @@ CREATE TABLE pdbx_struct_conn_angle (
 	value DECIMAL ,
 	value_esd DECIMAL ,
 -- ATTRIBUTE
-	id TEXT NOT NULL 
+	id TEXT NOT NULL
 );
 
 --
@@ -4290,7 +4226,7 @@ CREATE TABLE pdbx_struct_conn_angle (
 --
 CREATE TABLE pdbx_struct_group_component_range (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	"PDB_model_num" INTEGER ,
 	"beg_PDB_ins_code" TEXT ,
 	beg_auth_asym_id TEXT ,
@@ -4310,7 +4246,7 @@ CREATE TABLE pdbx_struct_group_component_range (
 	end_label_seq_id INTEGER ,
 	struct_group_id TEXT ,
 -- ATTRIBUTE
-	ordinal INTEGER NOT NULL 
+	ordinal INTEGER NOT NULL
 );
 
 --
@@ -4322,7 +4258,7 @@ CREATE TABLE pdbx_struct_group_component_range (
 --
 CREATE TABLE pdbx_struct_group_components (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	"PDB_ins_code" TEXT ,
 	"PDB_model_num" INTEGER ,
 	auth_asym_id TEXT ,
@@ -4334,7 +4270,7 @@ CREATE TABLE pdbx_struct_group_components (
 	label_seq_id INTEGER ,
 	struct_group_id TEXT ,
 -- ATTRIBUTE
-	ordinal INTEGER NOT NULL 
+	ordinal INTEGER NOT NULL
 );
 
 --
@@ -4348,12 +4284,12 @@ DROP TYPE IF EXISTS ENUM_pdbx_struct_info_type;
 CREATE TYPE ENUM_pdbx_struct_info_type AS ENUM ( 'nonpolymer_zero_occupancy_flag', 'polymer_zero_occupancy_flag', 'multiple_model_flag', 'multiple_model_details', 'nonpolymer_details', 'missing atoms in alternate conformations' );
 CREATE TABLE pdbx_struct_info (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	details TEXT ,
 -- ATTRIBUTE
 	type ENUM_pdbx_struct_info_type NOT NULL ,
 -- ATTRIBUTE
-	value TEXT NOT NULL 
+	value TEXT NOT NULL
 );
 
 --
@@ -4365,7 +4301,7 @@ CREATE TABLE pdbx_struct_info (
 --
 CREATE TABLE pdbx_struct_legacy_oper_list (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	matrix11 DECIMAL ,
 	matrix12 DECIMAL ,
 	matrix13 DECIMAL ,
@@ -4380,7 +4316,7 @@ CREATE TABLE pdbx_struct_legacy_oper_list (
 	vector2 DECIMAL ,
 	vector3 DECIMAL ,
 -- ATTRIBUTE
-	id INTEGER NOT NULL 
+	id INTEGER NOT NULL
 );
 
 --
@@ -4392,7 +4328,7 @@ CREATE TABLE pdbx_struct_legacy_oper_list (
 --
 CREATE TABLE pdbx_struct_mod_residue (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	"PDB_ins_code" TEXT ,
 	"PDB_model_num" INTEGER ,
 	auth_asym_id TEXT ,
@@ -4404,7 +4340,7 @@ CREATE TABLE pdbx_struct_mod_residue (
 	label_seq_id INTEGER ,
 	parent_comp_id TEXT ,
 -- ATTRIBUTE
-	id INTEGER NOT NULL 
+	id INTEGER NOT NULL
 );
 
 --
@@ -4416,13 +4352,13 @@ CREATE TABLE pdbx_struct_mod_residue (
 --
 CREATE TABLE pdbx_struct_msym_gen (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 -- ATTRIBUTE
 	entity_inst_id TEXT NOT NULL ,
 -- ATTRIBUTE
 	msym_id TEXT NOT NULL ,
 -- ATTRIBUTE
-	oper_expression TEXT NOT NULL 
+	oper_expression TEXT NOT NULL
 );
 
 --
@@ -4432,14 +4368,12 @@ CREATE TABLE pdbx_struct_msym_gen (
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_struct_nmr_ens_clust (
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
 	clusters_total_number INTEGER CHECK ( clusters_total_number >= 0 ) ,
 	conformers_total_number INTEGER CHECK ( conformers_total_number > 0 ) ,
 	error TEXT ,
 	outliers_total_number INTEGER CHECK ( outliers_total_number >= 0 ) ,
--- ATTRIBUTE
-	entry_id TEXT NOT NULL 
+-- ATTRIBUTE, IN-PLACE DOCUMENT KEY
+	entry_id TEXT NOT NULL
 );
 
 --
@@ -4452,11 +4386,11 @@ DROP TYPE IF EXISTS ENUM_pdbx_struct_nmr_ens_clust_gen_medoid_conformer;
 CREATE TYPE ENUM_pdbx_struct_nmr_ens_clust_gen_medoid_conformer AS ENUM ( 'Y', 'N' );
 CREATE TABLE pdbx_struct_nmr_ens_clust_gen (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	cluster_id TEXT ,
 	medoid_conformer ENUM_pdbx_struct_nmr_ens_clust_gen_medoid_conformer ,
 -- ATTRIBUTE
-	"PDB_model_num" INTEGER NOT NULL 
+	"PDB_model_num" INTEGER NOT NULL
 );
 
 --
@@ -4467,7 +4401,7 @@ CREATE TABLE pdbx_struct_nmr_ens_clust_gen (
 --
 CREATE TABLE pdbx_struct_nmr_ens_dom_lim (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	beg_auth_asym_id TEXT ,
 	beg_auth_comp_id TEXT ,
 	beg_auth_seq_id TEXT ,
@@ -4477,7 +4411,7 @@ CREATE TABLE pdbx_struct_nmr_ens_dom_lim (
 -- ATTRIBUTE
 	component_id INTEGER NOT NULL ,
 -- ATTRIBUTE
-	dom_id INTEGER NOT NULL 
+	dom_id INTEGER NOT NULL
 );
 
 --
@@ -4491,7 +4425,7 @@ DROP TYPE IF EXISTS ENUM_pdbx_struct_oper_list_type;
 CREATE TYPE ENUM_pdbx_struct_oper_list_type AS ENUM ( 'identity operation', 'point symmetry operation', 'helical symmetry operation', 'crystal symmetry operation', '3D crystal symmetry operation', '2D crystal symmetry operation', 'transform to point frame', 'transform to helical frame', 'transform to crystal frame', 'transform to 2D crystal frame', 'transform to 3D crystal frame', 'build point asymmetric unit', 'build helical asymmetric unit', 'build 2D crystal asymmetric unit', 'build 3D crystal asymmetric unit' );
 CREATE TABLE pdbx_struct_oper_list (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	matrix11 DECIMAL ,
 	matrix12 DECIMAL ,
 	matrix13 DECIMAL ,
@@ -4508,7 +4442,7 @@ CREATE TABLE pdbx_struct_oper_list (
 	vector2 DECIMAL ,
 	vector3 DECIMAL ,
 -- ATTRIBUTE
-	id TEXT NOT NULL 
+	id TEXT NOT NULL
 );
 
 --
@@ -4520,7 +4454,7 @@ CREATE TABLE pdbx_struct_oper_list (
 --
 CREATE TABLE pdbx_struct_ref_seq_deletion (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	asym_id TEXT ,
 	comp_id TEXT ,
 	db_code TEXT ,
@@ -4528,7 +4462,7 @@ CREATE TABLE pdbx_struct_ref_seq_deletion (
 	db_seq_id INTEGER ,
 	details TEXT ,
 -- ATTRIBUTE
-	id TEXT NOT NULL 
+	id TEXT NOT NULL
 );
 
 --
@@ -4540,7 +4474,7 @@ CREATE TABLE pdbx_struct_ref_seq_deletion (
 --
 CREATE TABLE pdbx_struct_ref_seq_insertion (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	"PDB_ins_code" TEXT ,
 	asym_id TEXT ,
 	auth_asym_id TEXT ,
@@ -4551,7 +4485,7 @@ CREATE TABLE pdbx_struct_ref_seq_insertion (
 	details TEXT ,
 	seq_id INTEGER ,
 -- ATTRIBUTE
-	id TEXT NOT NULL 
+	id TEXT NOT NULL
 );
 
 --
@@ -4563,7 +4497,7 @@ CREATE TABLE pdbx_struct_ref_seq_insertion (
 --
 CREATE TABLE pdbx_struct_sheet_hbond (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	"range_1_PDB_ins_code" TEXT ,
 	range_1_auth_asym_id TEXT ,
 	range_1_auth_atom_id TEXT ,
@@ -4587,7 +4521,7 @@ CREATE TABLE pdbx_struct_sheet_hbond (
 -- ATTRIBUTE
 	range_id_2 TEXT NOT NULL ,
 -- ATTRIBUTE
-	sheet_id TEXT NOT NULL 
+	sheet_id TEXT NOT NULL
 );
 
 --
@@ -4599,7 +4533,7 @@ CREATE TABLE pdbx_struct_sheet_hbond (
 --
 CREATE TABLE pdbx_struct_special_symmetry (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	"PDB_ins_code" TEXT ,
 	"PDB_model_num" INTEGER ,
 	auth_asym_id TEXT ,
@@ -4610,7 +4544,7 @@ CREATE TABLE pdbx_struct_special_symmetry (
 	label_comp_id TEXT ,
 	label_seq_id INTEGER ,
 -- ATTRIBUTE
-	id INTEGER NOT NULL 
+	id INTEGER NOT NULL
 );
 
 --
@@ -4626,7 +4560,7 @@ DROP TYPE IF EXISTS ENUM_pdbx_unobs_or_zero_occ_atoms_polymer_flag;
 CREATE TYPE ENUM_pdbx_unobs_or_zero_occ_atoms_polymer_flag AS ENUM ( 'Y', 'N' );
 CREATE TABLE pdbx_unobs_or_zero_occ_atoms (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	"PDB_ins_code" TEXT ,
 	"PDB_model_num" INTEGER ,
 	auth_asym_id TEXT ,
@@ -4641,7 +4575,7 @@ CREATE TABLE pdbx_unobs_or_zero_occ_atoms (
 	occupancy_flag ENUM_pdbx_unobs_or_zero_occ_atoms_occupancy_flag ,
 	polymer_flag ENUM_pdbx_unobs_or_zero_occ_atoms_polymer_flag ,
 -- ATTRIBUTE
-	id INTEGER NOT NULL 
+	id INTEGER NOT NULL
 );
 
 --
@@ -4657,7 +4591,7 @@ DROP TYPE IF EXISTS ENUM_pdbx_unobs_or_zero_occ_residues_polymer_flag;
 CREATE TYPE ENUM_pdbx_unobs_or_zero_occ_residues_polymer_flag AS ENUM ( 'Y', 'N' );
 CREATE TABLE pdbx_unobs_or_zero_occ_residues (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	"PDB_ins_code" TEXT ,
 	"PDB_model_num" INTEGER ,
 	auth_asym_id TEXT ,
@@ -4669,7 +4603,7 @@ CREATE TABLE pdbx_unobs_or_zero_occ_residues (
 	occupancy_flag ENUM_pdbx_unobs_or_zero_occ_residues_occupancy_flag ,
 	polymer_flag ENUM_pdbx_unobs_or_zero_occ_residues_polymer_flag ,
 -- ATTRIBUTE
-	id INTEGER NOT NULL 
+	id INTEGER NOT NULL
 );
 
 --
@@ -4681,7 +4615,7 @@ CREATE TABLE pdbx_unobs_or_zero_occ_residues (
 --
 CREATE TABLE pdbx_validate_chiral (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	"PDB_ins_code" TEXT ,
 	"PDB_model_num" INTEGER ,
 	auth_asym_id TEXT ,
@@ -4692,7 +4626,7 @@ CREATE TABLE pdbx_validate_chiral (
 	label_alt_id TEXT ,
 	omega DECIMAL CHECK ( omega >= -180 AND omega <= 180 ) ,
 -- ATTRIBUTE
-	id INTEGER NOT NULL 
+	id INTEGER NOT NULL
 );
 
 --
@@ -4704,7 +4638,7 @@ CREATE TABLE pdbx_validate_chiral (
 --
 CREATE TABLE pdbx_validate_close_contact (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	"PDB_ins_code_1" TEXT ,
 	"PDB_ins_code_2" TEXT ,
 	"PDB_model_num" INTEGER ,
@@ -4723,7 +4657,7 @@ CREATE TABLE pdbx_validate_close_contact (
 	symm_as_xyz_1 TEXT ,
 	symm_as_xyz_2 TEXT ,
 -- ATTRIBUTE
-	id INTEGER NOT NULL 
+	id INTEGER NOT NULL
 );
 
 --
@@ -4735,7 +4669,7 @@ CREATE TABLE pdbx_validate_close_contact (
 --
 CREATE TABLE pdbx_validate_main_chain_plane (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	"PDB_ins_code" TEXT ,
 	"PDB_model_num" INTEGER ,
 	auth_asym_id TEXT ,
@@ -4744,7 +4678,7 @@ CREATE TABLE pdbx_validate_main_chain_plane (
 	improper_torsion_angle DECIMAL ,
 	label_alt_id TEXT ,
 -- ATTRIBUTE
-	id INTEGER NOT NULL 
+	id INTEGER NOT NULL
 );
 
 --
@@ -4755,7 +4689,7 @@ CREATE TABLE pdbx_validate_main_chain_plane (
 --
 CREATE TABLE pdbx_validate_nmr_chem_shift (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	"Zscore" DECIMAL ,
 	auth_asym_id TEXT ,
 	auth_atom_id TEXT ,
@@ -4767,7 +4701,7 @@ CREATE TABLE pdbx_validate_nmr_chem_shift (
 -- ATTRIBUTE
 	id INTEGER NOT NULL ,
 -- ATTRIBUTE
-	list_id INTEGER NOT NULL 
+	list_id INTEGER NOT NULL
 );
 
 --
@@ -4779,7 +4713,7 @@ CREATE TABLE pdbx_validate_nmr_chem_shift (
 --
 CREATE TABLE pdbx_validate_peptide_omega (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	"PDB_ins_code_1" TEXT ,
 	"PDB_ins_code_2" TEXT ,
 	"PDB_model_num" INTEGER ,
@@ -4793,7 +4727,7 @@ CREATE TABLE pdbx_validate_peptide_omega (
 	label_alt_id_2 TEXT ,
 	omega DECIMAL CHECK ( omega >= -180 AND omega <= 180 ) ,
 -- ATTRIBUTE
-	id INTEGER NOT NULL 
+	id INTEGER NOT NULL
 );
 
 --
@@ -4805,7 +4739,7 @@ CREATE TABLE pdbx_validate_peptide_omega (
 --
 CREATE TABLE pdbx_validate_planes_atom (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	"PDB_ins_code" TEXT ,
 	"PDB_model_num" INTEGER ,
 	atom_deviation DECIMAL ,
@@ -4815,7 +4749,7 @@ CREATE TABLE pdbx_validate_planes_atom (
 	auth_seq_id TEXT ,
 	plane_id INTEGER ,
 -- ATTRIBUTE
-	id INTEGER NOT NULL 
+	id INTEGER NOT NULL
 );
 
 --
@@ -4827,7 +4761,7 @@ CREATE TABLE pdbx_validate_planes_atom (
 --
 CREATE TABLE pdbx_validate_polymer_linkage (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	"PDB_ins_code_1" TEXT ,
 	"PDB_ins_code_2" TEXT ,
 	"PDB_model_num" INTEGER ,
@@ -4843,7 +4777,7 @@ CREATE TABLE pdbx_validate_polymer_linkage (
 	label_alt_id_1 TEXT ,
 	label_alt_id_2 TEXT ,
 -- ATTRIBUTE
-	id INTEGER NOT NULL 
+	id INTEGER NOT NULL
 );
 
 --
@@ -4855,7 +4789,7 @@ CREATE TABLE pdbx_validate_polymer_linkage (
 --
 CREATE TABLE pdbx_validate_rmsd_angle (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	"PDB_ins_code_1" TEXT ,
 	"PDB_ins_code_2" TEXT ,
 	"PDB_ins_code_3" TEXT ,
@@ -4881,7 +4815,7 @@ CREATE TABLE pdbx_validate_rmsd_angle (
 	label_alt_id_3 TEXT ,
 	linker_flag TEXT ,
 -- ATTRIBUTE
-	id INTEGER NOT NULL 
+	id INTEGER NOT NULL
 );
 
 --
@@ -4893,7 +4827,7 @@ CREATE TABLE pdbx_validate_rmsd_angle (
 --
 CREATE TABLE pdbx_validate_rmsd_bond (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	"PDB_ins_code_1" TEXT ,
 	"PDB_ins_code_2" TEXT ,
 	"PDB_model_num" INTEGER ,
@@ -4913,7 +4847,7 @@ CREATE TABLE pdbx_validate_rmsd_bond (
 	label_alt_id_2 TEXT ,
 	linker_flag TEXT ,
 -- ATTRIBUTE
-	id INTEGER NOT NULL 
+	id INTEGER NOT NULL
 );
 
 --
@@ -4924,7 +4858,7 @@ CREATE TABLE pdbx_validate_rmsd_bond (
 --
 CREATE TABLE pdbx_validate_rmsd_rings_atom (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	"PDB_ins_code" TEXT ,
 	"PDB_model_num" INTEGER ,
 	auth_asym_id TEXT ,
@@ -4935,7 +4869,7 @@ CREATE TABLE pdbx_validate_rmsd_rings_atom (
 -- ATTRIBUTE
 	id INTEGER NOT NULL ,
 -- ATTRIBUTE
-	ring_id INTEGER NOT NULL 
+	ring_id INTEGER NOT NULL
 );
 
 --
@@ -4946,7 +4880,7 @@ CREATE TABLE pdbx_validate_rmsd_rings_atom (
 --
 CREATE TABLE pdbx_validate_rmsd_torsions_atom (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	"PDB_ins_code" TEXT ,
 	"PDB_model_num" INTEGER ,
 	auth_asym_id TEXT ,
@@ -4957,7 +4891,7 @@ CREATE TABLE pdbx_validate_rmsd_torsions_atom (
 -- ATTRIBUTE
 	id INTEGER NOT NULL ,
 -- ATTRIBUTE
-	torsion_id INTEGER NOT NULL 
+	torsion_id INTEGER NOT NULL
 );
 
 --
@@ -4969,7 +4903,7 @@ CREATE TABLE pdbx_validate_rmsd_torsions_atom (
 --
 CREATE TABLE pdbx_validate_symm_contact (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	"PDB_ins_code_1" TEXT ,
 	"PDB_ins_code_2" TEXT ,
 	"PDB_model_num" INTEGER ,
@@ -4988,7 +4922,7 @@ CREATE TABLE pdbx_validate_symm_contact (
 	site_symmetry_1 TEXT ,
 	site_symmetry_2 TEXT ,
 -- ATTRIBUTE
-	id INTEGER NOT NULL 
+	id INTEGER NOT NULL
 );
 
 --
@@ -5000,7 +4934,7 @@ CREATE TABLE pdbx_validate_symm_contact (
 --
 CREATE TABLE pdbx_validate_torsion (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	"PDB_ins_code" TEXT ,
 	"PDB_model_num" INTEGER ,
 	auth_asym_id TEXT ,
@@ -5010,7 +4944,7 @@ CREATE TABLE pdbx_validate_torsion (
 	phi DECIMAL CHECK ( phi >= -180 AND phi <= 180 ) ,
 	psi DECIMAL CHECK ( psi >= -180 AND psi <= 180 ) ,
 -- ATTRIBUTE
-	id INTEGER NOT NULL 
+	id INTEGER NOT NULL
 );
 
 --
@@ -5021,13 +4955,13 @@ CREATE TABLE pdbx_validate_torsion (
 --
 CREATE TABLE pdbx_validation_software (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	classification TEXT ,
 	details TEXT ,
 	name TEXT ,
 	version TEXT ,
 -- ATTRIBUTE
-	ordinal INTEGER NOT NULL 
+	ordinal INTEGER NOT NULL
 );
 
 --
@@ -5039,9 +4973,9 @@ CREATE TABLE pdbx_validation_software (
 --
 CREATE TABLE phasing (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 -- ATTRIBUTE
-	method TEXT NOT NULL 
+	method TEXT NOT NULL
 );
 
 --
@@ -5052,8 +4986,6 @@ CREATE TABLE phasing (
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE "phasing_MAD" (
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
 	details TEXT ,
 	method TEXT ,
 	"pdbx_R_cullis" DECIMAL ,
@@ -5078,8 +5010,8 @@ CREATE TABLE "phasing_MAD" (
 	pdbx_reflns INTEGER ,
 	pdbx_reflns_acentric INTEGER ,
 	pdbx_reflns_centric INTEGER ,
--- ATTRIBUTE
-	entry_id TEXT NOT NULL 
+-- ATTRIBUTE, IN-PLACE DOCUMENT KEY
+	entry_id TEXT NOT NULL
 );
 
 --
@@ -5091,12 +5023,12 @@ CREATE TABLE "phasing_MAD" (
 --
 CREATE TABLE "phasing_MAD_clust" (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	number_set INTEGER ,
 -- ATTRIBUTE
 	expt_id TEXT NOT NULL ,
 -- ATTRIBUTE
-	id TEXT NOT NULL 
+	id TEXT NOT NULL
 );
 
 --
@@ -5108,7 +5040,7 @@ CREATE TABLE "phasing_MAD_clust" (
 --
 CREATE TABLE "phasing_MAD_ratio" (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	d_res_high DECIMAL ,
 	d_res_low DECIMAL ,
 	ratio_one_wl DECIMAL ,
@@ -5121,7 +5053,7 @@ CREATE TABLE "phasing_MAD_ratio" (
 -- ATTRIBUTE
 	wavelength_1 DECIMAL NOT NULL ,
 -- ATTRIBUTE
-	wavelength_2 DECIMAL NOT NULL 
+	wavelength_2 DECIMAL NOT NULL
 );
 
 --
@@ -5133,7 +5065,7 @@ CREATE TABLE "phasing_MAD_ratio" (
 --
 CREATE TABLE "phasing_MAD_set" (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	d_res_high DECIMAL ,
 	d_res_low DECIMAL ,
 	f_double_prime DECIMAL ,
@@ -5149,7 +5081,7 @@ CREATE TABLE "phasing_MAD_set" (
 -- ATTRIBUTE
 	set_id TEXT NOT NULL ,
 -- ATTRIBUTE
-	wavelength DECIMAL NOT NULL 
+	wavelength DECIMAL NOT NULL
 );
 
 --
@@ -5160,8 +5092,6 @@ CREATE TABLE "phasing_MAD_set" (
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE "phasing_MIR" (
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
 	"FOM" DECIMAL CHECK ( "FOM" >= 0 ) ,
 	"FOM_acentric" DECIMAL CHECK ( "FOM_acentric" >= 0 ) ,
 	"FOM_centric" DECIMAL CHECK ( "FOM_centric" >= 0 ) ,
@@ -5174,8 +5104,8 @@ CREATE TABLE "phasing_MIR" (
 	reflns_acentric INTEGER CHECK ( reflns_acentric >= 0 ) ,
 	reflns_centric INTEGER CHECK ( reflns_centric >= 0 ) ,
 	reflns_criterion TEXT ,
--- ATTRIBUTE
-	entry_id TEXT NOT NULL 
+-- ATTRIBUTE, IN-PLACE DOCUMENT KEY
+	entry_id TEXT NOT NULL
 );
 
 --
@@ -5187,7 +5117,7 @@ CREATE TABLE "phasing_MIR" (
 --
 CREATE TABLE "phasing_MIR_der_refln" (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	"F_calc" DECIMAL ,
 	"F_calc_au" DECIMAL ,
 	"F_meas" DECIMAL ,
@@ -5208,7 +5138,7 @@ CREATE TABLE "phasing_MIR_der_refln" (
 -- ATTRIBUTE
 	index_l INTEGER NOT NULL ,
 -- ATTRIBUTE
-	set_id TEXT NOT NULL 
+	set_id TEXT NOT NULL
 );
 
 --
@@ -5220,7 +5150,7 @@ CREATE TABLE "phasing_MIR_der_refln" (
 --
 CREATE TABLE "phasing_MIR_der_shell" (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	"R_cullis" DECIMAL CHECK ( "R_cullis" >= 0 ) ,
 	"R_kraut" DECIMAL CHECK ( "R_kraut" >= 0 ) ,
 	fom DECIMAL CHECK ( fom >= 0 ) ,
@@ -5246,7 +5176,7 @@ CREATE TABLE "phasing_MIR_der_shell" (
 -- ATTRIBUTE
 	d_res_low DECIMAL CHECK ( d_res_low >= 0 ) NOT NULL ,
 -- ATTRIBUTE
-	der_id TEXT NOT NULL 
+	der_id TEXT NOT NULL
 );
 
 --
@@ -5258,7 +5188,7 @@ CREATE TABLE "phasing_MIR_der_shell" (
 --
 CREATE TABLE "phasing_MIR_der_site" (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	"B_iso" DECIMAL ,
 	"B_iso_esd" DECIMAL ,
 	"Cartn_x" DECIMAL ,
@@ -5283,7 +5213,7 @@ CREATE TABLE "phasing_MIR_der_site" (
 -- ATTRIBUTE
 	der_id TEXT NOT NULL ,
 -- ATTRIBUTE
-	id TEXT NOT NULL 
+	id TEXT NOT NULL
 );
 
 --
@@ -5295,7 +5225,7 @@ CREATE TABLE "phasing_MIR_der_site" (
 --
 CREATE TABLE "phasing_MIR_shell" (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	"FOM" DECIMAL CHECK ( "FOM" >= 0 ) ,
 	"FOM_acentric" DECIMAL CHECK ( "FOM_acentric" >= 0 ) ,
 	"FOM_centric" DECIMAL CHECK ( "FOM_centric" >= 0 ) ,
@@ -5319,7 +5249,7 @@ CREATE TABLE "phasing_MIR_shell" (
 -- ATTRIBUTE
 	d_res_high DECIMAL CHECK ( d_res_high >= 0 ) NOT NULL ,
 -- ATTRIBUTE
-	d_res_low DECIMAL CHECK ( d_res_low >= 0 ) NOT NULL 
+	d_res_low DECIMAL CHECK ( d_res_low >= 0 ) NOT NULL
 );
 
 --
@@ -5330,12 +5260,10 @@ CREATE TABLE "phasing_MIR_shell" (
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE phasing_averaging (
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
 	details TEXT ,
 	method TEXT ,
--- ATTRIBUTE
-	entry_id TEXT NOT NULL 
+-- ATTRIBUTE, IN-PLACE DOCUMENT KEY
+	entry_id TEXT NOT NULL
 );
 
 --
@@ -5346,13 +5274,11 @@ CREATE TABLE phasing_averaging (
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE phasing_isomorphous (
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
 	details TEXT ,
 	method TEXT ,
 	parent TEXT ,
--- ATTRIBUTE
-	entry_id TEXT NOT NULL 
+-- ATTRIBUTE, IN-PLACE DOCUMENT KEY
+	entry_id TEXT NOT NULL
 );
 
 --
@@ -5364,7 +5290,7 @@ CREATE TABLE phasing_isomorphous (
 --
 CREATE TABLE phasing_set_refln (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	"F_meas" DECIMAL ,
 	"F_meas_au" DECIMAL ,
 	"F_meas_sigma" DECIMAL ,
@@ -5376,7 +5302,7 @@ CREATE TABLE phasing_set_refln (
 -- ATTRIBUTE
 	index_l INTEGER NOT NULL ,
 -- ATTRIBUTE
-	set_id TEXT NOT NULL 
+	set_id TEXT NOT NULL
 );
 
 --
@@ -5397,8 +5323,6 @@ CREATE TYPE ENUM_refine_ls_weighting_scheme AS ENUM ( 'sigma', 'unit', 'calc' );
 DROP TYPE IF EXISTS ENUM_refine_pdbx_TLS_residual_ADP_flag;
 CREATE TYPE ENUM_refine_pdbx_TLS_residual_ADP_flag AS ENUM ( 'LIKELY RESIDUAL', 'UNVERIFIED' );
 CREATE TABLE refine (
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
 	"B_iso_max" DECIMAL ,
 	"B_iso_mean" DECIMAL ,
 	"B_iso_min" DECIMAL ,
@@ -5519,10 +5443,10 @@ CREATE TABLE refine (
 	solvent_model_details TEXT ,
 	solvent_model_param_bsol DECIMAL ,
 	solvent_model_param_ksol DECIMAL ,
--- ATTRIBUTE
+-- ATTRIBUTE, IN-PLACE DOCUMENT KEY
 	entry_id TEXT NOT NULL ,
 -- ATTRIBUTE
-	pdbx_refine_id TEXT NOT NULL 
+	pdbx_refine_id TEXT NOT NULL
 );
 
 --
@@ -5536,14 +5460,14 @@ DROP TYPE IF EXISTS ENUM_refine_B_iso_treatment;
 CREATE TYPE ENUM_refine_B_iso_treatment AS ENUM ( 'fixed', 'isotropic', 'anisotropic' );
 CREATE TABLE "refine_B_iso" (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	details TEXT ,
 	treatment ENUM_refine_B_iso_treatment ,
 	value DECIMAL ,
 -- ATTRIBUTE
 	class TEXT NOT NULL ,
 -- ATTRIBUTE
-	pdbx_refine_id TEXT NOT NULL 
+	pdbx_refine_id TEXT NOT NULL
 );
 
 --
@@ -5554,8 +5478,6 @@ CREATE TABLE "refine_B_iso" (
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE refine_analyze (
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
 	"Luzzati_coordinate_error_free" DECIMAL ,
 	"Luzzati_coordinate_error_obs" DECIMAL ,
 	"Luzzati_d_res_low_free" DECIMAL ,
@@ -5573,10 +5495,10 @@ CREATE TABLE refine_analyze (
 	occupancy_sum_hydrogen DECIMAL ,
 	occupancy_sum_non_hydrogen DECIMAL ,
 	"pdbx_Luzzati_d_res_high_obs" DECIMAL ,
--- ATTRIBUTE
+-- ATTRIBUTE, IN-PLACE DOCUMENT KEY
 	entry_id TEXT NOT NULL ,
 -- ATTRIBUTE
-	pdbx_refine_id TEXT NOT NULL 
+	pdbx_refine_id TEXT NOT NULL
 );
 
 --
@@ -5588,14 +5510,14 @@ CREATE TABLE refine_analyze (
 --
 CREATE TABLE refine_funct_minimized (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	number_terms INTEGER CHECK ( number_terms >= 0 ) ,
 	residual DECIMAL CHECK ( residual >= 0 ) ,
 	weight DECIMAL ,
 -- ATTRIBUTE
 	pdbx_refine_id TEXT NOT NULL ,
 -- ATTRIBUTE
-	type TEXT NOT NULL 
+	type TEXT NOT NULL
 );
 
 --
@@ -5607,7 +5529,7 @@ CREATE TABLE refine_funct_minimized (
 --
 CREATE TABLE refine_hist (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	"R_factor_R_free" DECIMAL CHECK ( "R_factor_R_free" >= 0 ) ,
 	"R_factor_R_work" DECIMAL CHECK ( "R_factor_R_work" >= 0 ) ,
 	"R_factor_all" DECIMAL CHECK ( "R_factor_all" >= 0 ) ,
@@ -5633,7 +5555,7 @@ CREATE TABLE refine_hist (
 -- ATTRIBUTE
 	cycle_id TEXT NOT NULL ,
 -- ATTRIBUTE
-	pdbx_refine_id TEXT NOT NULL 
+	pdbx_refine_id TEXT NOT NULL
 );
 
 --
@@ -5645,7 +5567,7 @@ CREATE TABLE refine_hist (
 --
 CREATE TABLE refine_ls_class (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	"R_Fsqd_factor" DECIMAL CHECK ( "R_Fsqd_factor" >= 0 ) ,
 	"R_I_factor" DECIMAL CHECK ( "R_I_factor" >= 0 ) ,
 	"R_factor_all" DECIMAL CHECK ( "R_factor_all" >= 0 ) ,
@@ -5654,7 +5576,7 @@ CREATE TABLE refine_ls_class (
 	d_res_low DECIMAL CHECK ( d_res_low >= 0 ) ,
 	"wR_factor_all" DECIMAL CHECK ( "wR_factor_all" >= 0 ) ,
 -- ATTRIBUTE
-	code TEXT NOT NULL 
+	code TEXT NOT NULL
 );
 
 --
@@ -5666,7 +5588,7 @@ CREATE TABLE refine_ls_class (
 --
 CREATE TABLE refine_ls_restr (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	criterion TEXT ,
 	dev_ideal DECIMAL CHECK ( dev_ideal >= 0 ) ,
 	dev_ideal_target DECIMAL CHECK ( dev_ideal_target >= 0 ) ,
@@ -5677,7 +5599,7 @@ CREATE TABLE refine_ls_restr (
 -- ATTRIBUTE
 	pdbx_refine_id TEXT NOT NULL ,
 -- ATTRIBUTE
-	type TEXT NOT NULL 
+	type TEXT NOT NULL
 );
 
 --
@@ -5689,7 +5611,7 @@ CREATE TABLE refine_ls_restr (
 --
 CREATE TABLE refine_ls_restr_ncs (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	dom_id TEXT ,
 	ncs_model_details TEXT ,
 	pdbx_asym_id TEXT ,
@@ -5705,7 +5627,7 @@ CREATE TABLE refine_ls_restr_ncs (
 	"weight_B_iso" DECIMAL ,
 	weight_position DECIMAL ,
 -- ATTRIBUTE
-	pdbx_ordinal INTEGER NOT NULL 
+	pdbx_ordinal INTEGER NOT NULL
 );
 
 --
@@ -5717,11 +5639,11 @@ CREATE TABLE refine_ls_restr_ncs (
 --
 CREATE TABLE refine_ls_restr_type (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	distance_cutoff_high DECIMAL CHECK ( distance_cutoff_high >= 0 ) ,
 	distance_cutoff_low DECIMAL CHECK ( distance_cutoff_low >= 0 ) ,
 -- ATTRIBUTE
-	type TEXT NOT NULL 
+	type TEXT NOT NULL
 );
 
 --
@@ -5733,7 +5655,7 @@ CREATE TABLE refine_ls_restr_type (
 --
 CREATE TABLE refine_ls_shell (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	"R_factor_R_free" DECIMAL CHECK ( "R_factor_R_free" >= 0 ) ,
 	"R_factor_R_free_error" DECIMAL ,
 	"R_factor_R_work" DECIMAL CHECK ( "R_factor_R_work" >= 0 ) ,
@@ -5759,7 +5681,7 @@ CREATE TABLE refine_ls_shell (
 -- ATTRIBUTE
 	d_res_high DECIMAL CHECK ( d_res_high >= 0 ) NOT NULL ,
 -- ATTRIBUTE
-	pdbx_refine_id TEXT NOT NULL 
+	pdbx_refine_id TEXT NOT NULL
 );
 
 --
@@ -5773,14 +5695,14 @@ DROP TYPE IF EXISTS ENUM_refine_occupancy_treatment;
 CREATE TYPE ENUM_refine_occupancy_treatment AS ENUM ( 'fix', 'ref' );
 CREATE TABLE refine_occupancy (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	details TEXT ,
 	treatment ENUM_refine_occupancy_treatment ,
 	value DECIMAL CHECK ( value >= 0 AND value <= 1 ) ,
 -- ATTRIBUTE
 	class TEXT NOT NULL ,
 -- ATTRIBUTE
-	pdbx_refine_id TEXT NOT NULL 
+	pdbx_refine_id TEXT NOT NULL
 );
 
 --
@@ -5798,7 +5720,7 @@ DROP TYPE IF EXISTS ENUM_refln_status;
 CREATE TYPE ENUM_refln_status AS ENUM ( 'o', '<', '-', 'x', 'h', 'l', 'f' );
 CREATE TABLE refln (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	"A_calc" DECIMAL ,
 	"A_calc_au" DECIMAL ,
 	"A_meas" DECIMAL ,
@@ -5867,7 +5789,7 @@ CREATE TABLE refln (
 -- ATTRIBUTE
 	index_k INTEGER NOT NULL ,
 -- ATTRIBUTE
-	index_l INTEGER NOT NULL 
+	index_l INTEGER NOT NULL
 );
 
 --
@@ -5879,7 +5801,7 @@ CREATE TABLE refln (
 --
 CREATE TABLE refln_sys_abs (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	"I" DECIMAL ,
 	"I_over_sigmaI" DECIMAL ,
 	"sigmaI" DECIMAL ,
@@ -5888,7 +5810,7 @@ CREATE TABLE refln_sys_abs (
 -- ATTRIBUTE
 	index_k INTEGER NOT NULL ,
 -- ATTRIBUTE
-	index_l INTEGER NOT NULL 
+	index_l INTEGER NOT NULL
 );
 
 --
@@ -5899,8 +5821,6 @@ CREATE TABLE refln_sys_abs (
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE reflns (
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
 	"B_iso_Wilson_estimate" DECIMAL ,
 	"Friedel_coverage" DECIMAL CHECK ( "Friedel_coverage" >= 0 AND "Friedel_coverage" <= 1 ) ,
 	"R_free_details" TEXT ,
@@ -5911,6 +5831,7 @@ CREATE TABLE reflns (
 	data_reduction_details TEXT ,
 	data_reduction_method TEXT ,
 	details TEXT ,
+-- IN-PLACE DOCUMENT KEY
 	entry_id TEXT ,
 	limit_h_max INTEGER ,
 	limit_h_min INTEGER ,
@@ -5952,7 +5873,7 @@ CREATE TABLE reflns (
 	phase_calculation_details TEXT ,
 	threshold_expression TEXT ,
 -- ATTRIBUTE
-	pdbx_ordinal INTEGER NOT NULL 
+	pdbx_ordinal INTEGER NOT NULL
 );
 
 --
@@ -5964,7 +5885,7 @@ CREATE TABLE reflns (
 --
 CREATE TABLE reflns_class (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	"R_Fsqd_factor" DECIMAL CHECK ( "R_Fsqd_factor" >= 0 ) ,
 	"R_I_factor" DECIMAL CHECK ( "R_I_factor" >= 0 ) ,
 	"R_factor_all" DECIMAL CHECK ( "R_factor_all" >= 0 ) ,
@@ -5976,7 +5897,7 @@ CREATE TABLE reflns_class (
 	number_total INTEGER CHECK ( number_total >= 0 ) ,
 	"wR_factor_all" DECIMAL CHECK ( "wR_factor_all" >= 0 ) ,
 -- ATTRIBUTE
-	code TEXT NOT NULL 
+	code TEXT NOT NULL
 );
 
 --
@@ -5988,12 +5909,12 @@ CREATE TABLE reflns_class (
 --
 CREATE TABLE reflns_scale (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	"meas_F" DECIMAL CHECK ( "meas_F" >= 0 ) ,
 	"meas_F_squared" DECIMAL CHECK ( "meas_F_squared" >= 0 ) ,
 	meas_intensity DECIMAL CHECK ( meas_intensity >= 0 ) ,
 -- ATTRIBUTE
-	group_code TEXT NOT NULL 
+	group_code TEXT NOT NULL
 );
 
 --
@@ -6005,7 +5926,7 @@ CREATE TABLE reflns_scale (
 --
 CREATE TABLE reflns_shell (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	"Rmerge_F_all" DECIMAL CHECK ( "Rmerge_F_all" >= 0 ) ,
 	"Rmerge_F_gt" DECIMAL CHECK ( "Rmerge_F_gt" >= 0 ) ,
 	"Rmerge_F_obs" DECIMAL CHECK ( "Rmerge_F_obs" >= 0 ) ,
@@ -6041,7 +5962,7 @@ CREATE TABLE reflns_shell (
 	percent_possible_gt DECIMAL CHECK ( percent_possible_gt >= 0 AND percent_possible_gt <= 100 ) ,
 	percent_possible_obs DECIMAL CHECK ( percent_possible_obs >= 0 AND percent_possible_obs <= 100 ) ,
 -- ATTRIBUTE
-	pdbx_ordinal INTEGER NOT NULL 
+	pdbx_ordinal INTEGER NOT NULL
 );
 
 --
@@ -6055,13 +5976,13 @@ DROP TYPE IF EXISTS ENUM_space_group_crystal_system;
 CREATE TYPE ENUM_space_group_crystal_system AS ENUM ( 'triclinic', 'monoclinic', 'orthorhombic', 'tetragonal', 'trigonal', 'hexagonal', 'cubic' );
 CREATE TABLE space_group (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	"IT_number" INTEGER CHECK ( "IT_number" >= 1 AND "IT_number" <= 230 ) ,
 	crystal_system ENUM_space_group_crystal_system ,
 	"name_H-M_alt" TEXT ,
 	"name_Hall" TEXT ,
 -- ATTRIBUTE
-	id TEXT NOT NULL 
+	id TEXT NOT NULL
 );
 
 --
@@ -6073,11 +5994,11 @@ CREATE TABLE space_group (
 --
 CREATE TABLE space_group_symop (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	operation_xyz TEXT ,
 	sg_id TEXT ,
 -- ATTRIBUTE
-	id TEXT NOT NULL 
+	id TEXT NOT NULL
 );
 
 --
@@ -6090,8 +6011,6 @@ CREATE TABLE space_group_symop (
 DROP TYPE IF EXISTS ENUM_struct_pdbx_CASP_flag;
 CREATE TYPE ENUM_struct_pdbx_CASP_flag AS ENUM ( 'Y', 'N' );
 CREATE TABLE struct (
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
 	"pdbx_CASP_flag" ENUM_struct_pdbx_CASP_flag ,
 	pdbx_descriptor TEXT ,
 	pdbx_formula_weight DECIMAL CHECK ( pdbx_formula_weight >= 1 ) ,
@@ -6099,8 +6018,8 @@ CREATE TABLE struct (
 	pdbx_model_details TEXT ,
 	pdbx_model_type_details TEXT ,
 	title TEXT ,
--- ATTRIBUTE
-	entry_id TEXT NOT NULL 
+-- ATTRIBUTE, IN-PLACE DOCUMENT KEY
+	entry_id TEXT NOT NULL
 );
 
 --
@@ -6112,7 +6031,7 @@ CREATE TABLE struct (
 --
 CREATE TABLE struct_biol_view (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	details TEXT ,
 	rot_matrix11 DECIMAL ,
 	rot_matrix12 DECIMAL ,
@@ -6126,7 +6045,7 @@ CREATE TABLE struct_biol_view (
 -- ATTRIBUTE
 	biol_id TEXT NOT NULL ,
 -- ATTRIBUTE
-	id TEXT NOT NULL 
+	id TEXT NOT NULL
 );
 
 --
@@ -6138,7 +6057,7 @@ CREATE TABLE struct_biol_view (
 --
 CREATE TABLE struct_conf (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	beg_auth_asym_id TEXT ,
 	beg_auth_comp_id TEXT ,
 	beg_auth_seq_id TEXT ,
@@ -6159,7 +6078,7 @@ CREATE TABLE struct_conf (
 	"pdbx_beg_PDB_ins_code" TEXT ,
 	"pdbx_end_PDB_ins_code" TEXT ,
 -- ATTRIBUTE
-	id TEXT NOT NULL 
+	id TEXT NOT NULL
 );
 
 --
@@ -6175,7 +6094,7 @@ DROP TYPE IF EXISTS ENUM_struct_conn_pdbx_value_order;
 CREATE TYPE ENUM_struct_conn_pdbx_value_order AS ENUM ( 'sing', 'doub', 'trip', 'quad' );
 CREATE TABLE struct_conn (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	conn_type_id TEXT ,
 	details TEXT ,
 	"pdbx_PDB_id" TEXT ,
@@ -6223,7 +6142,7 @@ CREATE TABLE struct_conn (
 	ptnr2_role TEXT ,
 	ptnr2_symmetry TEXT ,
 -- ATTRIBUTE
-	id TEXT NOT NULL 
+	id TEXT NOT NULL
 );
 
 --
@@ -6237,11 +6156,11 @@ DROP TYPE IF EXISTS ENUM_struct_conn_type_id;
 CREATE TYPE ENUM_struct_conn_type_id AS ENUM ( 'covale', 'disulf', 'hydrog', 'metalc', 'mismat', 'saltbr', 'modres', 'covale_base', 'covale_sugar', 'covale_phosphate' );
 CREATE TABLE struct_conn_type (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	criteria TEXT ,
 	reference TEXT ,
 -- ATTRIBUTE
-	id ENUM_struct_conn_type_id NOT NULL 
+	id ENUM_struct_conn_type_id NOT NULL
 );
 
 --
@@ -6252,13 +6171,11 @@ CREATE TABLE struct_conn_type (
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE struct_mon_details (
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
 	"RSCC" TEXT ,
 	"RSR" TEXT ,
 	prot_cis DECIMAL ,
--- ATTRIBUTE
-	entry_id TEXT NOT NULL 
+-- ATTRIBUTE, IN-PLACE DOCUMENT KEY
+	entry_id TEXT NOT NULL
 );
 
 --
@@ -6274,7 +6191,7 @@ DROP TYPE IF EXISTS ENUM_struct_mon_nucl_pdbx_RNA_suite;
 CREATE TYPE ENUM_struct_mon_nucl_pdbx_RNA_suite AS ENUM ( 'NonRotameric', 'Rotameric', 'Triaged/NotBinned' );
 CREATE TABLE struct_mon_nucl (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	"P" DECIMAL ,
 	"RSCC_all" DECIMAL ,
 	"RSCC_base" DECIMAL ,
@@ -6319,7 +6236,7 @@ CREATE TABLE struct_mon_nucl (
 	taum DECIMAL ,
 	zeta DECIMAL ,
 -- ATTRIBUTE
-	pdbx_id TEXT NOT NULL 
+	pdbx_id TEXT NOT NULL
 );
 
 --
@@ -6335,7 +6252,7 @@ DROP TYPE IF EXISTS ENUM_struct_mon_prot_pdbx_flippable_side_chain;
 CREATE TYPE ENUM_struct_mon_prot_pdbx_flippable_side_chain AS ENUM ( 'Y', 'N' );
 CREATE TABLE struct_mon_prot (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	"RSCC_all" DECIMAL ,
 	"RSCC_main" DECIMAL ,
 	"RSCC_side" DECIMAL ,
@@ -6365,7 +6282,7 @@ CREATE TABLE struct_mon_prot (
 	phi DECIMAL ,
 	psi DECIMAL ,
 -- ATTRIBUTE
-	pdbx_id TEXT NOT NULL 
+	pdbx_id TEXT NOT NULL
 );
 
 --
@@ -6377,7 +6294,7 @@ CREATE TABLE struct_mon_prot (
 --
 CREATE TABLE struct_mon_prot_cis (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	auth_asym_id TEXT ,
 	auth_comp_id TEXT ,
 	auth_seq_id TEXT ,
@@ -6396,7 +6313,7 @@ CREATE TABLE struct_mon_prot_cis (
 	pdbx_label_seq_id_2 INTEGER ,
 	pdbx_omega_angle TEXT ,
 -- ATTRIBUTE
-	pdbx_id TEXT NOT NULL 
+	pdbx_id TEXT NOT NULL
 );
 
 --
@@ -6408,7 +6325,7 @@ CREATE TABLE struct_mon_prot_cis (
 --
 CREATE TABLE struct_ncs_dom_lim (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	beg_auth_asym_id TEXT ,
 	beg_auth_comp_id TEXT ,
 	beg_auth_seq_id TEXT ,
@@ -6430,7 +6347,7 @@ CREATE TABLE struct_ncs_dom_lim (
 -- ATTRIBUTE
 	pdbx_component_id INTEGER NOT NULL ,
 -- ATTRIBUTE
-	pdbx_ens_id TEXT NOT NULL 
+	pdbx_ens_id TEXT NOT NULL
 );
 
 --
@@ -6442,7 +6359,7 @@ CREATE TABLE struct_ncs_dom_lim (
 --
 CREATE TABLE struct_ncs_ens_gen (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 -- ATTRIBUTE
 	dom_id_1 TEXT NOT NULL ,
 -- ATTRIBUTE
@@ -6450,7 +6367,7 @@ CREATE TABLE struct_ncs_ens_gen (
 -- ATTRIBUTE
 	ens_id TEXT NOT NULL ,
 -- ATTRIBUTE
-	oper_id TEXT NOT NULL 
+	oper_id TEXT NOT NULL
 );
 
 --
@@ -6462,7 +6379,7 @@ CREATE TABLE struct_ncs_ens_gen (
 --
 CREATE TABLE struct_ref_seq_dif (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	align_id TEXT ,
 	db_mon_id TEXT ,
 	details TEXT ,
@@ -6476,7 +6393,7 @@ CREATE TABLE struct_ref_seq_dif (
 	pdbx_seq_db_seq_num TEXT ,
 	seq_num INTEGER ,
 -- ATTRIBUTE
-	pdbx_ordinal INTEGER NOT NULL 
+	pdbx_ordinal INTEGER NOT NULL
 );
 
 --
@@ -6488,7 +6405,7 @@ CREATE TABLE struct_ref_seq_dif (
 --
 CREATE TABLE struct_sheet_hbond (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	"pdbx_range_1_beg_PDB_ins_code" TEXT ,
 	pdbx_range_1_beg_auth_asym_id TEXT ,
 	pdbx_range_1_beg_auth_comp_id TEXT ,
@@ -6526,7 +6443,7 @@ CREATE TABLE struct_sheet_hbond (
 -- ATTRIBUTE
 	range_id_2 TEXT NOT NULL ,
 -- ATTRIBUTE
-	sheet_id TEXT NOT NULL 
+	sheet_id TEXT NOT NULL
 );
 
 --
@@ -6540,7 +6457,7 @@ DROP TYPE IF EXISTS ENUM_struct_sheet_order_sense;
 CREATE TYPE ENUM_struct_sheet_order_sense AS ENUM ( 'parallel', 'anti-parallel' );
 CREATE TABLE struct_sheet_order (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	"offset" INTEGER ,
 	sense ENUM_struct_sheet_order_sense ,
 -- ATTRIBUTE
@@ -6548,7 +6465,7 @@ CREATE TABLE struct_sheet_order (
 -- ATTRIBUTE
 	range_id_2 TEXT NOT NULL ,
 -- ATTRIBUTE
-	sheet_id TEXT NOT NULL 
+	sheet_id TEXT NOT NULL
 );
 
 --
@@ -6560,7 +6477,7 @@ CREATE TABLE struct_sheet_order (
 --
 CREATE TABLE struct_sheet_range (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	beg_auth_asym_id TEXT ,
 	beg_auth_comp_id TEXT ,
 	beg_auth_seq_id TEXT ,
@@ -6579,7 +6496,7 @@ CREATE TABLE struct_sheet_range (
 -- ATTRIBUTE
 	id TEXT NOT NULL ,
 -- ATTRIBUTE
-	sheet_id TEXT NOT NULL 
+	sheet_id TEXT NOT NULL
 );
 
 --
@@ -6593,7 +6510,7 @@ DROP TYPE IF EXISTS ENUM_struct_sheet_topology_sense;
 CREATE TYPE ENUM_struct_sheet_topology_sense AS ENUM ( 'parallel', 'anti-parallel' );
 CREATE TABLE struct_sheet_topology (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	"offset" INTEGER ,
 	sense ENUM_struct_sheet_topology_sense ,
 -- ATTRIBUTE
@@ -6601,7 +6518,7 @@ CREATE TABLE struct_sheet_topology (
 -- ATTRIBUTE
 	range_id_2 TEXT NOT NULL ,
 -- ATTRIBUTE
-	sheet_id TEXT NOT NULL 
+	sheet_id TEXT NOT NULL
 );
 
 --
@@ -6613,7 +6530,7 @@ CREATE TABLE struct_sheet_topology (
 --
 CREATE TABLE struct_site_gen (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	auth_asym_id TEXT ,
 	auth_atom_id TEXT ,
 	auth_comp_id TEXT ,
@@ -6630,7 +6547,7 @@ CREATE TABLE struct_site_gen (
 -- ATTRIBUTE
 	id TEXT NOT NULL ,
 -- ATTRIBUTE
-	site_id TEXT NOT NULL 
+	site_id TEXT NOT NULL
 );
 
 --
@@ -6642,7 +6559,7 @@ CREATE TABLE struct_site_gen (
 --
 CREATE TABLE struct_site_view (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	details TEXT ,
 	rot_matrix11 DECIMAL ,
 	rot_matrix12 DECIMAL ,
@@ -6655,7 +6572,7 @@ CREATE TABLE struct_site_view (
 	rot_matrix33 DECIMAL ,
 	site_id TEXT ,
 -- ATTRIBUTE
-	id TEXT NOT NULL 
+	id TEXT NOT NULL
 );
 
 --
@@ -6668,15 +6585,13 @@ CREATE TABLE struct_site_view (
 DROP TYPE IF EXISTS ENUM_symmetry_cell_setting;
 CREATE TYPE ENUM_symmetry_cell_setting AS ENUM ( 'triclinic', 'monoclinic', 'orthorhombic', 'tetragonal', 'rhombohedral', 'trigonal', 'hexagonal', 'cubic' );
 CREATE TABLE symmetry (
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
 	"Int_Tables_number" INTEGER ,
 	cell_setting ENUM_symmetry_cell_setting ,
 	"pdbx_full_space_group_name_H-M" TEXT ,
 	"space_group_name_H-M" TEXT ,
 	"space_group_name_Hall" TEXT ,
--- ATTRIBUTE
-	entry_id TEXT NOT NULL 
+-- ATTRIBUTE, IN-PLACE DOCUMENT KEY
+	entry_id TEXT NOT NULL
 );
 
 --
@@ -6688,10 +6603,10 @@ CREATE TABLE symmetry (
 --
 CREATE TABLE symmetry_equiv (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	entry_id TEXT ,
 	pos_as_xyz TEXT ,
 -- ATTRIBUTE
-	id TEXT NOT NULL 
+	id TEXT NOT NULL
 );
 
 --ALTER TABLE diffrn ADD CONSTRAINT UNQ_diffrn UNIQUE ( id );
@@ -6704,11 +6619,7 @@ CREATE TABLE symmetry_equiv (
 
 --ALTER TABLE entity_poly ADD CONSTRAINT UNQ_entity_poly UNIQUE ( entity_id );
 
---ALTER TABLE entity_poly_seq ADD CONSTRAINT UNQ_entity_poly_seq UNIQUE ( entity_id, mon_id, num );
-
 --ALTER TABLE entry ADD CONSTRAINT UNQ_entry UNIQUE ( id );
-
---ALTER TABLE pdbx_audit_revision_history ADD CONSTRAINT UNQ_pdbx_audit_revision_history UNIQUE ( data_content_type, ordinal );
 
 --ALTER TABLE pdbx_domain ADD CONSTRAINT UNQ_pdbx_domain UNIQUE ( id );
 
@@ -6743,8 +6654,6 @@ CREATE TABLE symmetry_equiv (
 --ALTER TABLE struct_biol ADD CONSTRAINT UNQ_struct_biol UNIQUE ( id );
 
 --ALTER TABLE struct_conf_type ADD CONSTRAINT UNQ_struct_conf_type UNIQUE ( id );
-
---ALTER TABLE struct_ncs_dom ADD CONSTRAINT UNQ_struct_ncs_dom UNIQUE ( id, pdbx_ens_id );
 
 --ALTER TABLE struct_ncs_ens ADD CONSTRAINT UNQ_struct_ncs_ens UNIQUE ( id );
 

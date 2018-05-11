@@ -65,7 +65,7 @@ DROP TABLE IF EXISTS program CASCADE;
 
 --
 -- Each assigned chemical shift should map to one or more nuclei of the studied biological macromolecule or complex. In preliminary reports and for some older entries, this mapping is not always accurate and some chemical shifts can therefore be "unmapped". It implies, that the chemical shift was parsed, but not mapped to any nucleus expected from the molecular description. It may result for instance from typos or from an incomplete molecular description. Details are given in the free text "diagnostic" attribute.
--- xmlns: null, schema location: resource/wwpdb_validation_v002.xsd
+-- xmlns: no namespace, schema location: resource/wwpdb_validation_v002.xsd
 -- type: root child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE unmapped_chemical_shift (
@@ -84,12 +84,12 @@ CREATE TABLE unmapped_chemical_shift (
 -- ATTRIBUTE
 	ambiguity TEXT ,
 -- ATTRIBUTE
-	diagnostic TEXT 
+	diagnostic TEXT
 );
 
 --
 -- An unparsed chemical shift implies that some expected values were missing or did not conform to expected format: e.g., non-numeric value of a shift measurement or missing chain/entity identifier.
--- xmlns: null, schema location: resource/wwpdb_validation_v002.xsd
+-- xmlns: no namespace, schema location: resource/wwpdb_validation_v002.xsd
 -- type: root child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE unparsed_chemical_shift (
@@ -110,12 +110,12 @@ CREATE TABLE unparsed_chemical_shift (
 -- ATTRIBUTE
 	ambiguity TEXT ,
 -- ATTRIBUTE
-	diagnostic TEXT 
+	diagnostic TEXT
 );
 
 --
 -- The chemical shifts must be supplied in NMR-STAR 3.1 format. In order for the shifts to be mapped to the molecular structure, certain values (data items or tags) must be provided.
--- xmlns: null, schema location: resource/wwpdb_validation_v002.xsd
+-- xmlns: no namespace, schema location: resource/wwpdb_validation_v002.xsd
 -- type: root child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE missing_nmrstar_tag (
@@ -124,12 +124,12 @@ CREATE TABLE missing_nmrstar_tag (
 -- ATTRIBUTE
 	nmrstar_tag_description TEXT NOT NULL ,
 -- ATTRIBUTE
-	nmrstar_tag TEXT NOT NULL 
+	nmrstar_tag TEXT NOT NULL
 );
 
 --
 -- The Random Coil Index (RCI) is calculated for each residue from the protein sequence and assigned chemical shifts. Via an empirical formula the RCI correlates with disorder propensity of the residue.
--- xmlns: null, schema location: resource/wwpdb_validation_v002.xsd
+-- xmlns: no namespace, schema location: resource/wwpdb_validation_v002.xsd
 -- type: root child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE random_coil_index (
@@ -142,12 +142,12 @@ CREATE TABLE random_coil_index (
 -- ATTRIBUTE
 	resnum INTEGER ,
 -- ATTRIBUTE
-	value DECIMAL 
+	value DECIMAL
 );
 
 --
 -- BMRB compiled statistics of assigned chemical shifts, against which a given value is checked. A value is deemed an outlier if it is 5 standard deviation away from the expected mean.
--- xmlns: null, schema location: resource/wwpdb_validation_v002.xsd
+-- xmlns: no namespace, schema location: resource/wwpdb_validation_v002.xsd
 -- type: root child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE chemical_shift_outlier (
@@ -166,12 +166,12 @@ CREATE TABLE chemical_shift_outlier (
 -- ATTRIBUTE
 	prediction DECIMAL NOT NULL ,
 -- ATTRIBUTE
-	method TEXT NOT NULL 
+	method TEXT NOT NULL
 );
 
 --
 -- PANAV software is used to calculate suggested referencing correction for each chemical shift list.
--- xmlns: null, schema location: resource/wwpdb_validation_v002.xsd
+-- xmlns: no namespace, schema location: resource/wwpdb_validation_v002.xsd
 -- type: root child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE referencing_offset (
@@ -184,12 +184,12 @@ CREATE TABLE referencing_offset (
 -- ATTRIBUTE
 	value DECIMAL ,
 -- ATTRIBUTE
-	number_of_measurements INTEGER NOT NULL 
+	number_of_measurements INTEGER NOT NULL
 );
 
 --
 -- For the well-defined regions of the structure, what is the completeness of chemical shift assignments for the typically assigned nuclei.
--- xmlns: null, schema location: resource/wwpdb_validation_v002.xsd
+-- xmlns: no namespace, schema location: resource/wwpdb_validation_v002.xsd
 -- type: root child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE assignment_completeness_well_defined (
@@ -204,12 +204,12 @@ CREATE TABLE assignment_completeness_well_defined (
 -- ATTRIBUTE
 	type TEXT NOT NULL ,
 -- ATTRIBUTE
-	element TEXT 
+	element TEXT
 );
 
 --
 -- For the complete structure, what is the completeness of chemical shift assignments for the typically assigned nuclei.
--- xmlns: null, schema location: resource/wwpdb_validation_v002.xsd
+-- xmlns: no namespace, schema location: resource/wwpdb_validation_v002.xsd
 -- type: root child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE assignment_completeness_full_length (
@@ -224,12 +224,12 @@ CREATE TABLE assignment_completeness_full_length (
 -- ATTRIBUTE
 	type TEXT NOT NULL ,
 -- ATTRIBUTE
-	element TEXT 
+	element TEXT
 );
 
 --
 -- NMR entries are normally linked to one or more assigned chemical shift lists. A typical reason for containing multiple chemical shift lists would be differing experimental conditions or samples.
--- xmlns: null, schema location: resource/wwpdb_validation_v002.xsd
+-- xmlns: no namespace, schema location: resource/wwpdb_validation_v002.xsd
 -- type: root child, content: true, list: true, bridge: false, virtual: false
 --
 CREATE TABLE chemical_shift_list (
@@ -256,12 +256,12 @@ CREATE TABLE chemical_shift_list (
 -- ATTRIBUTE
 	total_number_of_shifts INTEGER ,
 -- ATTRIBUTE
-	number_of_unparsed_shifts INTEGER 
+	number_of_unparsed_shifts INTEGER
 );
 
 --
 -- Entry contains most information that has a single value for the structure analyzed and in the run.
--- xmlns: null, schema location: resource/wwpdb_validation_v002.xsd
+-- xmlns: no namespace, schema location: resource/wwpdb_validation_v002.xsd
 -- type: root child, content: true, list: true, bridge: false, virtual: false
 --
 CREATE TABLE "Entry" (
@@ -442,12 +442,12 @@ CREATE TABLE "Entry" (
 -- ATTRIBUTE
 	"low-resol-relative-percentile-percent-RSRZ-outliers" DECIMAL ,
 -- ATTRIBUTE
-	"high-resol-relative-percentile-percent-RSRZ-outliers" DECIMAL 
+	"high-resol-relative-percentile-percent-RSRZ-outliers" DECIMAL
 );
 
 --
 -- A "Model" is one of the structures that are described by a PDB entry. Most NMR entries as well as some entries determined by other experimental techniques, contain an ensemble of models (structures). For most NMR entries, the models should be chemically identical - i.e., contain the exact same atoms, and will only differ in the cartesian coordinates of constituent atoms. For older NMR entries, and for non-NMR entries, this is not enforced.
--- xmlns: null, schema location: resource/wwpdb_validation_v002.xsd
+-- xmlns: no namespace, schema location: resource/wwpdb_validation_v002.xsd
 -- type: root child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE "Model" (
@@ -458,12 +458,12 @@ CREATE TABLE "Model" (
 -- ATTRIBUTE
 	nmrclust_cluster_id TEXT ,
 -- ATTRIBUTE
-	nmrclust_representative TEXT 
+	nmrclust_representative TEXT
 );
 
 --
 -- Bond outlier for standard amino acid or nucleic acid in comparison to the Engh and Huber EH99 parameters, Parkinson et al. parameter set. It involves two atoms. The obs, mean, stdev will all be in Angstroms units. Example: <bond-outlier atom0="C" atom1="OXT" mean="1.229" obs="1.327" stdev="0.019" z="5.16"/>
--- xmlns: null, schema location: resource/wwpdb_validation_v002.xsd
+-- xmlns: no namespace, schema location: resource/wwpdb_validation_v002.xsd
 -- type: root child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE "bond-outlier" (
@@ -476,12 +476,12 @@ CREATE TABLE "bond-outlier" (
 -- ATTRIBUTE
 	obs DECIMAL ,
 -- ATTRIBUTE
-	z DECIMAL 
+	z DECIMAL
 );
 
 --
 -- Bond angle outlier for standard amino acid or nucleic acid in comparison to the Engh and Huber EH99 parameters, Parkinson et al. parameter set. It involves three atoms. The obsval, mean, mindiff, stdev will all be in degrees. Example: < atom0="C" atom1="N" atom2="CA" link="yes" mean="121.700" obs="139.881" stdev="2.500" z="7.27"/>
--- xmlns: null, schema location: resource/wwpdb_validation_v002.xsd
+-- xmlns: no namespace, schema location: resource/wwpdb_validation_v002.xsd
 -- type: root child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE "angle-outlier" (
@@ -494,12 +494,12 @@ CREATE TABLE "angle-outlier" (
 -- ATTRIBUTE
 	obs DECIMAL ,
 -- ATTRIBUTE
-	z DECIMAL 
+	z DECIMAL
 );
 
 --
 -- Indicates there is a problem in the chirality compared to that expected with an atom in the residue. Chiral centres for all compounds occurring in the PDB are described in the chemical component dictionary. Chirality can be assessed in a number of ways, including calculation of the chiral volume, e.g. for the Calpha of amino acids this is 2.6 or -2.6 Angstrom cubed for L or D configurations, respectively. If the sign of the computed volume is incorrect, the handedness is wrong. If the absolute volume is less than 0.7Å3 , the chiral centre has been modelled as a planar moiety which is very likely to be erroneous. Chirality deviations are summarised per chain.
--- xmlns: null, schema location: resource/wwpdb_validation_v002.xsd
+-- xmlns: no namespace, schema location: resource/wwpdb_validation_v002.xsd
 -- type: root child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_chiral_outlier_problem;
@@ -508,12 +508,12 @@ CREATE TABLE "chiral-outlier" (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
 -- ATTRIBUTE
-	problem ENUM_chiral_outlier_problem NOT NULL 
+	problem ENUM_chiral_outlier_problem NOT NULL
 );
 
 --
 -- Indicates that there is a problem with planarity of group defined in the standard_geometry.cif for amino acids/proteins or nucleic acid. Calculated by the Validation-pack program. Examples: <plane-outlier improper="-13.96" type="mainchain"/> <plane-outlier omega="-145.49" type="peptide"/> <plane-outlier planeRMSD="0.17" type="sidechain"/>
--- xmlns: null, schema location: resource/wwpdb_validation_v002.xsd
+-- xmlns: no namespace, schema location: resource/wwpdb_validation_v002.xsd
 -- type: root child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_plane_outlier_type;
@@ -528,12 +528,12 @@ CREATE TABLE "plane-outlier" (
 -- ATTRIBUTE
 	omega DECIMAL ,
 -- ATTRIBUTE
-	"planeRMSD" DECIMAL 
+	"planeRMSD" DECIMAL
 );
 
 --
 -- A MolProbity all-atom clash outlier within the residue. Note that hydrogen atoms are added to the model and optimized by the reduce program. Outliers often involve these added hydrogen atoms. Example: <clash atom="HB3" cid="7" clashmag="0.44" dist="2.57"/>
--- xmlns: null, schema location: resource/wwpdb_validation_v002.xsd
+-- xmlns: no namespace, schema location: resource/wwpdb_validation_v002.xsd
 -- type: root child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE clash (
@@ -544,12 +544,12 @@ CREATE TABLE clash (
 -- ATTRIBUTE
 	clashmag DECIMAL NOT NULL ,
 -- ATTRIBUTE
-	dist DECIMAL 
+	dist DECIMAL
 );
 
 --
 -- A symmetry-related clash identified by Validation-pack. Symmetry related clashes are too-close contacts between two atoms across a crystallographic symmetry contact. Only relevant to crystallographic structures. Example: <symm-clash atom="O" clashmag="0.79" dist="1.41" scid="0" symop="2_657"/> From mmcif item "_pdbx_validate_symm_contact".
--- xmlns: null, schema location: resource/wwpdb_validation_v002.xsd
+-- xmlns: no namespace, schema location: resource/wwpdb_validation_v002.xsd
 -- type: root child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE "symm-clash" (
@@ -562,12 +562,12 @@ CREATE TABLE "symm-clash" (
 -- ATTRIBUTE
 	clashmag DECIMAL NOT NULL ,
 -- ATTRIBUTE
-	dist DECIMAL 
+	dist DECIMAL
 );
 
 --
 -- Bond outlier for ligand or modified amino acid/nucleic acid identified by the Mogul program. It will involve two atoms. The obsval, mean, mindiff, stdev will all be in Angstroms units. The Mogul program (Bruno et al., 2004) works by comparing the ligand geometry with preferred molecular geometries derived from high-quality, small-molecule structures in the Cambridge Structural Database (CSD) Example: <mog-bond-outlier Zscore="2.25" atoms="C1,C6" mean="1.53" mindiff="0.00" numobs="128" obsval="1.56" stdev="0.01"/>
--- xmlns: null, schema location: resource/wwpdb_validation_v002.xsd
+-- xmlns: no namespace, schema location: resource/wwpdb_validation_v002.xsd
 -- type: root child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE "mog-bond-outlier" (
@@ -586,12 +586,12 @@ CREATE TABLE "mog-bond-outlier" (
 -- ATTRIBUTE
 	"Zscore" DECIMAL ,
 -- ATTRIBUTE
-	mindiff DECIMAL 
+	mindiff DECIMAL
 );
 
 --
 -- Bond angle outlier for ligand or modified amino acid/nucleic acid identified by the Mogul program. It involves three atoms. The obsval, mean, mindiff, stdev will all be in degrees. The Mogul program (Bruno et al., 2004) works by comparing the ligand geometry with preferred molecular geometries derived from high-quality, small-molecule structures in the Cambridge Structural Database (CSD).
--- xmlns: null, schema location: resource/wwpdb_validation_v002.xsd
+-- xmlns: no namespace, schema location: resource/wwpdb_validation_v002.xsd
 -- type: root child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE "mog-angle-outlier" (
@@ -610,12 +610,12 @@ CREATE TABLE "mog-angle-outlier" (
 -- ATTRIBUTE
 	"Zscore" DECIMAL ,
 -- ATTRIBUTE
-	mindiff DECIMAL 
+	mindiff DECIMAL
 );
 
 --
 -- Torsion angle outlier for ligand or modified amino acid/nucleic acid identified by the Mogul program. It will involve four atoms. The obsval, mean, mindiff, stdev will all be in degrees. The Mogul program (Bruno et al., 2004) works by comparing the ligand geometry with preferred molecular geometries derived from high-quality, small-molecule structures in the Cambridge Structural Database (CSD).
--- xmlns: null, schema location: resource/wwpdb_validation_v002.xsd
+-- xmlns: no namespace, schema location: resource/wwpdb_validation_v002.xsd
 -- type: root child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE "mog-torsion-outlier" (
@@ -632,12 +632,12 @@ CREATE TABLE "mog-torsion-outlier" (
 -- ATTRIBUTE
 	numobs INTEGER ,
 -- ATTRIBUTE
-	stdev DECIMAL 
+	stdev DECIMAL
 );
 
 --
 -- Unusual ring conformation identified by Mogul. Mogul finds similar ring and works out the rmsd deviation of the ring torsion angles compared to the CSD similar rings. Each ring involves five or six atoms. The Mogul program (Bruno et al., 2004) works by comparing the ligand geometry with preferred molecular geometries derived from high-quality, small-molecule structures in the Cambridge Structural Database (CSD).
--- xmlns: null, schema location: resource/wwpdb_validation_v002.xsd
+-- xmlns: no namespace, schema location: resource/wwpdb_validation_v002.xsd
 -- type: root child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE "mog-ring-outlier" (
@@ -652,12 +652,12 @@ CREATE TABLE "mog-ring-outlier" (
 -- ATTRIBUTE
 	stdev DECIMAL ,
 -- ATTRIBUTE
-	numobs INTEGER 
+	numobs INTEGER
 );
 
 --
 -- A "ModelledSubgroup" is an individual occurence of a residue. If there are alternate atoms in the residue each alternate and any alternate atoms is a separate ModelledSubgroup. If there are multiple models then each of these is a separate subgroup.
--- xmlns: null, schema location: resource/wwpdb_validation_v002.xsd
+-- xmlns: no namespace, schema location: resource/wwpdb_validation_v002.xsd
 -- type: root child, content: true, list: true, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_ModelledSubgroup_rama;
@@ -742,12 +742,12 @@ CREATE TABLE "ModelledSubgroup" (
 -- ATTRIBUTE
 	mogul_rmsz_numangles INTEGER ,
 -- ATTRIBUTE
-	mogul_rmsz_numbonds INTEGER 
+	mogul_rmsz_numbonds INTEGER
 );
 
 --
 -- Cyrange software is used to identify well-defined regions of protein structures in NMR ensembles. The well-defined region may contain more than one well-defined core or domain, which are not well defined with respect to each other. Each of these individual cores/domains is described as a "cyrange_domain".
--- xmlns: null, schema location: resource/wwpdb_validation_v002.xsd
+-- xmlns: no namespace, schema location: resource/wwpdb_validation_v002.xsd
 -- type: root child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE cyrange_domain (
@@ -768,12 +768,12 @@ CREATE TABLE cyrange_domain (
 -- ATTRIBUTE
 	medoid_rmsd DECIMAL ,
 -- ATTRIBUTE
-	residue_string TEXT 
+	residue_string TEXT
 );
 
 --
 -- Each separate chain in the structure is a "ModelledEntityInstance". In the case of multiple models each individual model is a "ModelledEntityInstance" on its own.
--- xmlns: null, schema location: resource/wwpdb_validation_v002.xsd
+-- xmlns: no namespace, schema location: resource/wwpdb_validation_v002.xsd
 -- type: root child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE "ModelledEntityInstance" (
@@ -802,12 +802,12 @@ CREATE TABLE "ModelledEntityInstance" (
 -- ATTRIBUTE
 	said TEXT ,
 -- ATTRIBUTE
-	ent TEXT 
+	ent TEXT
 );
 
 --
 -- An individual program used by the validation pipeline. Normally this corresponds to a "step" but not always.
--- xmlns: null, schema location: resource/wwpdb_validation_v002.xsd
+-- xmlns: no namespace, schema location: resource/wwpdb_validation_v002.xsd
 -- type: root child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE program (
@@ -818,6 +818,6 @@ CREATE TABLE program (
 -- ATTRIBUTE
 	properties TEXT NOT NULL ,
 -- ATTRIBUTE
-	version TEXT NOT NULL 
+	version TEXT NOT NULL
 );
 
