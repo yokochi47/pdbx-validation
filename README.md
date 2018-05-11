@@ -70,8 +70,9 @@ File path | Document
 
 ## Release notes
 
-- **May 1, 2018**: Release v1.3.0
+- **May 11, 2018**: Release v1.3.0
 	- More efficient udpate scripts using check sum.
+	- Fix PostgreSQL data migration scripts.
 
 - **Apr 18, 2018**: Release v1.2.3
 	- Update wwPDB Validation Information Dictionary from v1.292 to 1.293.
