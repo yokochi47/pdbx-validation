@@ -9,11 +9,11 @@
 --  wild card extension: true
 --  case sensitive name: true
 --  no name collision: true
---  appended document key: false
---  appended serial key: false
---  appended xpath key: false
---  retained constraint of primary/foreign key: false
---  retrieved field annotation: false
+--  append document key: false
+--  append serial key: false
+--  append xpath key: false
+--  retain constraint of primary/foreign key: false
+--  retrieve field annotation: false
 --
 -- Statistics of schema:
 --  Generated 236 tables (2923 fields), 0 attr groups, 0 model groups in total
