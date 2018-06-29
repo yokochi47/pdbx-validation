@@ -37,14 +37,14 @@
        xmlns:dc="http://purl.org/dc/elements/1.1/"
        xmlns:dcterms="http://purl.org/dc/terms/"
        xmlns:PDBo="https://rdf.wwpdb.org/schema/pdbx-v50.owl#"
-       xmlns:BMRBo="http://bmrbpub.protein.osaka-u.ac.jp/schema/mmcif_nmr-star.owl#">
+       xmlns:BMRBo="https://bmrbpub.pdbj.org/schema/mmcif_nmr-star.owl#">
 
       <owl:Ontology rdf:about="https://rdf.wwpdb.org/schema/pdbx-validation-v1.owl">
 	<rdfs:label>wwPDB/OWL-validation</rdfs:label>
 	<rdfs:comment xml:lang="en">The OWL ontology for wwPDB/RDF-validation.</rdfs:comment>
         <rdfs:seeAlso rdf:resource="https://rdf.wwpdb.org/schema/pdbx-validation-v1.dic"/>
         <rdfs:seeAlso rdf:resource="https://rdf.wwpdb.org/schema/pdbx-validation-v1.xsd"/>
-        <owl:versionIRI rdf:resource="https://rdf.wwpdb.org/schema/pdbx-validation-v1.owl/1.295"/>
+        <owl:versionIRI rdf:resource="https://rdf.wwpdb.org/schema/pdbx-validation-v1.owl/1.296"/>
       </owl:Ontology>
 
       <owl:Class rdf:ID="Category">

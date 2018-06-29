@@ -14,14 +14,14 @@ The pdbx-validation is a generation tool for alternative [wwPDB validation infor
 
 File path | Document
 --------- | --------
-[schema/mmcif_pdbx_validation_v1.dic](https://github.com/yokochi47/pdbx-validation/blob/master/schema/mmcif_pdbx_validation_v1.295.dic) | wwPDB Validation Information Dictionary (v1.295)
-[schema/pdbx-validation-v1.xsd](https://github.com/yokochi47/pdbx-validation/blob/master/schema/pdbx-validation-v1.295.xsd) | PDBML-validation Schema (v1.295)
-[schema/pdbx-validation-v1.owl](https://github.com/yokochi47/pdbx-validation/blob/master/schema/pdbx-validation-v1.295.owl) | wwPDB/OWL-validation (v1.295)
+[schema/mmcif_pdbx_validation_v1.dic](https://github.com/yokochi47/pdbx-validation/blob/master/schema/mmcif_pdbx_validation_v1.296.dic) | wwPDB Validation Information Dictionary (v1.296)
+[schema/pdbx-validation-v1.xsd](https://github.com/yokochi47/pdbx-validation/blob/master/schema/pdbx-validation-v1.296.xsd) | PDBML-validation Schema (v1.296)
+[schema/pdbx-validation-v1.owl](https://github.com/yokochi47/pdbx-validation/blob/master/schema/pdbx-validation-v1.296.owl) | wwPDB/OWL-validation (v1.296)
 [schema/mmcif_ddl.dic](https://github.com/yokochi47/pdbx-validation/blob/master/schema/mmcif_ddl_v2.2.0.dic) | extended mmCIF DDL Core Dictionary (dubbed as v2.2.0)
-[resource/mmcif_pdbx_v50.dic](http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic) | current PDBx/mmCIF Dictionary (v5.295)
-[resource/pdbx-v50.xsd](http://mmcif.wwpdb.org/schema/pdbx-v50.xsd) | current PDBML Schema (v5.295)
-[resource/pdbx-v50.owl](https://rdf.wwpdb.org/schema/pdbx-v50.owl) | current PDBx ontology, ontology for wwPDB/RDF (v5.295)
-[resource/wwpdb_validation_v002.xsd](http://wwpdb.org/validation/schema/wwpdb_validation_v002.xsd) | current XML Schema for wwPDB validation information (v002, rev30291)
+[resource/mmcif_pdbx_v50.dic](http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic) | current PDBx/mmCIF Dictionary (v5.296)
+[resource/pdbx-v50.xsd](http://mmcif.wwpdb.org/schema/pdbx-v50.xsd) | current PDBML Schema (v5.296)
+[resource/pdbx-v50.owl](https://rdf.wwpdb.org/schema/pdbx-v50.owl) | current PDBx ontology, ontology for wwPDB/RDF (v5.296)
+[resource/wwpdb_validation_v002.xsd](https://wwpdb.org/validation/schema/wwpdb_validation_v002.xsd) | current XML Schema for wwPDB validation information (v002, rev30291)
 [scripts](https://github.com/yokochi47/pdbx-validation/blob/master/scripts) | a directory contains scripts invoked by the 'run_all.sh' script
 [virtuoso_scripts](https://github.com/yokochi47/pdbx-validation/blob/master/virtuoso_scripts) | a directory contains scripts for uploading wwPDB/RDF-validation to local SPARQL endpoint
 [stylesheet](https://github.com/yokochi47/pdbx-validation/blob/master/stylesheet) | a directory contains XSL style sheets for generation of alternative wwPDB validation information
@@ -45,30 +45,34 @@ File path | Document
 
 - Bulk download via HTTP protocol
 
-	- [PDBML-validation](http://bmrbpub.protein.osaka-u.ac.jp/archive/pdbml-valid/)
+	- [PDBML-validation](https://bmrbpub.pdbj.org/archive/pdbml-valid/)
 
-	- [wwPDB/RDF-validation](http://bmrbpub.protein.osaka-u.ac.jp/archive/wwpdb-rdf-valid/)
+	- [wwPDB/RDF-validation](https://bmrbpub.pdbj.org/archive/wwpdb-rdf-valid/)
 
 - Bulk download via rsync protocol
 
 	- PDBML-validation:<br />
-	 `% rsync -av --delete rsync://bmrbpub.protein.osaka-u.ac.jp/pdbml-valid .`
+	 `% rsync -av --delete rsync://bmrbpub.pdbj.org/pdbml-valid .`
 
 	- wwPDB/RDF-validation:<br />
-	 `% rsync -av --delete rsync://bmrbpub.protein.osaka-u.ac.jp/wwpdb-rdf-valid .`
+	 `% rsync -av --delete rsync://bmrbpub.pdbj.org/wwpdb-rdf-valid .`
 
-- [SPARQL endpoint for wwPDB/RDF-validation](http://bmrbpub.protein.osaka-u.ac.jp/examples.html)
+- [SPARQL endpoint for wwPDB/RDF-validation](https://bmrbpub.pdbj.org/examples.html)
 
 ## Software requirements
 
 - [**Java 8**](https://java.com/en/) or later.
 - [**Apache Maven (mvn)**](https://maven.apache.org), used to install external libraries.
 - [**Git (git)**](https://git-scm.com), used to install external libraries.
-- [**mmCIF Dictionary Suite**](http://mmcif.wwpdb.org/docs/software-resources.html), optionally used to generate XML Schema from the wwPDB Validation Information Dictionary.
+- [**mmCIF Dictionary Suite**](http://mmcif.wwpdb.org/), optionally used to generate XML Schema from the wwPDB Validation Information Dictionary.
 - [**PostgreSQL**](https://www.postgresql.org), optionally used to import XML contents to relational database.
 - [**Virtuoso**](https://www.openlinksw.com/wiki/main/Main), oprionally used as SPARQL endpoint of wwPDB/RDF-validation.
 
 ## Release notes
+
+- **Jun 29, 2018**: Release v1.3.3
+	- Update wwPDB Validation Information Dictionary from v1.295 to 1.296.
+	- Changed domain name of bulk download service (from bmrbpub.protein.osaka-u.ac.jp to bmrbpub.pdbj.org).
 
 - **Jun 13, 2018**: Release v1.3.2
 	- Update wwPDB Validation Information Dictionary from v1.294 to 1.295.
