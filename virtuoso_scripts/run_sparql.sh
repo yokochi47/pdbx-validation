@@ -5,7 +5,7 @@ show_usage() {
  echo "Usage: $0 -q QUERY_FILE -f FORMAT -e LOCATION -l LIMIT -s SILENT"
  echo " -q QUERY_FILE : SPARQL query file."
  echo " -f FORMAT     : Output format (HTML, Spreadsheet, XML, JSON, Javascript, NTriples, RDF/XML, CSV (default) or TSV)."
- echo " -e (loc|pub)  : localhost (loc) or bmrbpub.protein.osaka-u.ac.jp (pub)."
+ echo " -e (loc|pub)  : localhost (loc) or bmrbpub.pdbj.org (pub)."
  echo " -l (on|off)   : Turn on (default) or off LIMIT clause in SPARQL."
  echo " -s (yes|no)   : Silent mode of curl command (default:no)."
 
@@ -24,7 +24,7 @@ FORMATS_FULL=("text/html" "application/vnd.ms-excel" "application/sparql-results
 FORMATS_ABBREV=("HTML" "Spreadsheet" "XML" "JSON" "Javascript" "NTriples" "RDF/XML" "CSV" "TSV")
 
 URL_LOC=http://localhost:8890/sparql
-URL_PUB=http://bmrbpub.protein.osaka-u.ac.jp/search/rdf
+URL_PUB=https://bmrbpub.pdbj.org/search/rdf
 
 QUERY_FILE=$1
 OUTPUT_FORMAT="text/csv"
