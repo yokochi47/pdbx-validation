@@ -21,7 +21,7 @@ which isql &> /dev/null
 if [ $? != 0 ] ; then
 
  echo "isql: command not found..."
- echo "Please install Virtuoso (https://www.openlinksw.com/wiki/main/Main)."
+ echo "Please install Virtuoso (https://virtuoso.openlinksw.com/)."
 
  exit 1
 
@@ -31,7 +31,7 @@ fi
 
 sleep 180
 
-GRAPH_URI=http://rdf.wwpdb.org/$DB_NAME
+GRAPH_URI=https://rdf.wwpdb.org/$DB_NAME
 
 graph_exist=`./virtuoso_scripts/ask_graph_existance.sh $GRAPH_URI`
 
