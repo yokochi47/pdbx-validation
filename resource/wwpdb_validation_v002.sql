@@ -502,7 +502,7 @@ CREATE TABLE "angle-outlier" (
 -- xmlns: no namespace, schema location: resource/wwpdb_validation_v002.xsd
 -- type: root child, content: true, list: false, bridge: false, virtual: false
 --
-DROP TYPE IF EXISTS ENUM_chiral_outlier_problem;
+DROP TYPE IF EXISTS ENUM_chiral_outlier_problem CASCADE;
 CREATE TYPE ENUM_chiral_outlier_problem AS ENUM ( 'WRONG HAND', 'PLANAR' );
 CREATE TABLE "chiral-outlier" (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
@@ -516,7 +516,7 @@ CREATE TABLE "chiral-outlier" (
 -- xmlns: no namespace, schema location: resource/wwpdb_validation_v002.xsd
 -- type: root child, content: true, list: false, bridge: false, virtual: false
 --
-DROP TYPE IF EXISTS ENUM_plane_outlier_type;
+DROP TYPE IF EXISTS ENUM_plane_outlier_type CASCADE;
 CREATE TYPE ENUM_plane_outlier_type AS ENUM ( 'mainchain', 'peptide', 'sidechain' );
 CREATE TABLE "plane-outlier" (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
@@ -660,11 +660,11 @@ CREATE TABLE "mog-ring-outlier" (
 -- xmlns: no namespace, schema location: resource/wwpdb_validation_v002.xsd
 -- type: root child, content: true, list: true, bridge: false, virtual: false
 --
-DROP TYPE IF EXISTS ENUM_ModelledSubgroup_rama;
+DROP TYPE IF EXISTS ENUM_ModelledSubgroup_rama CASCADE;
 CREATE TYPE ENUM_ModelledSubgroup_rama AS ENUM ( 'Favored', 'Allowed', 'OUTLIER' );
-DROP TYPE IF EXISTS ENUM_ModelledSubgroup_flippable_sidechain;
+DROP TYPE IF EXISTS ENUM_ModelledSubgroup_flippable_sidechain CASCADE;
 CREATE TYPE ENUM_ModelledSubgroup_flippable_sidechain AS ENUM ( '1' );
-DROP TYPE IF EXISTS ENUM_ModelledSubgroup_RNAsuite;
+DROP TYPE IF EXISTS ENUM_ModelledSubgroup_RNAsuite CASCADE;
 CREATE TYPE ENUM_ModelledSubgroup_RNAsuite AS ENUM ( 'NonRotameric', 'NotAvailable', 'Rotameric', 'Triaged/NotBinned' );
 CREATE TABLE "ModelledSubgroup" (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)

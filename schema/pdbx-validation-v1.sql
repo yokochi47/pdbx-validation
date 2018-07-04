@@ -295,11 +295,11 @@ CREATE TABLE entry (
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), schema location: schema/pdbx-validation-v1.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
-DROP TYPE IF EXISTS ENUM_entity_pdbx_formula_weight_exptl_method;
+DROP TYPE IF EXISTS ENUM_entity_pdbx_formula_weight_exptl_method CASCADE;
 CREATE TYPE ENUM_entity_pdbx_formula_weight_exptl_method AS ENUM ( 'MASS SPEC' );
-DROP TYPE IF EXISTS ENUM_entity_src_method;
+DROP TYPE IF EXISTS ENUM_entity_src_method CASCADE;
 CREATE TYPE ENUM_entity_src_method AS ENUM ( 'nat', 'man', 'syn' );
-DROP TYPE IF EXISTS ENUM_entity_type;
+DROP TYPE IF EXISTS ENUM_entity_type CASCADE;
 CREATE TYPE ENUM_entity_type AS ENUM ( 'polymer', 'non-polymer', 'macrolide', 'water' );
 CREATE TABLE entity (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
@@ -356,7 +356,7 @@ CREATE TABLE diffrn (
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), schema location: schema/pdbx-validation-v1.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
-DROP TYPE IF EXISTS ENUM_pdbx_nmr_assigned_chem_shift_list_nmr_star_consistency_fla;
+DROP TYPE IF EXISTS ENUM_pdbx_nmr_assigned_chem_shift_list_nmr_star_consistency_fla CASCADE;
 CREATE TYPE ENUM_pdbx_nmr_assigned_chem_shift_list_nmr_star_consistency_fla AS ENUM ( 'Y', 'N' );
 CREATE TABLE pdbx_nmr_assigned_chem_shift_list (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
@@ -415,7 +415,7 @@ CREATE TABLE phasing_set (
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), schema location: schema/pdbx-validation-v1.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
-DROP TYPE IF EXISTS ENUM_em_entity_assembly_source;
+DROP TYPE IF EXISTS ENUM_em_entity_assembly_source CASCADE;
 CREATE TYPE ENUM_em_entity_assembly_source AS ENUM ( 'NATURAL', 'RECOMBINANT', 'MULTIPLE SOURCES' );
 CREATE TABLE em_entity_assembly (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
@@ -456,13 +456,13 @@ CREATE TABLE struct_sheet (
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), schema location: schema/pdbx-validation-v1.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
-DROP TYPE IF EXISTS ENUM_entity_poly_nstd_chirality;
+DROP TYPE IF EXISTS ENUM_entity_poly_nstd_chirality CASCADE;
 CREATE TYPE ENUM_entity_poly_nstd_chirality AS ENUM ( 'no', 'n', 'yes', 'y' );
-DROP TYPE IF EXISTS ENUM_entity_poly_nstd_linkage;
+DROP TYPE IF EXISTS ENUM_entity_poly_nstd_linkage CASCADE;
 CREATE TYPE ENUM_entity_poly_nstd_linkage AS ENUM ( 'no', 'n', 'yes', 'y' );
-DROP TYPE IF EXISTS ENUM_entity_poly_nstd_monomer;
+DROP TYPE IF EXISTS ENUM_entity_poly_nstd_monomer CASCADE;
 CREATE TYPE ENUM_entity_poly_nstd_monomer AS ENUM ( 'no', 'n', 'yes', 'y' );
-DROP TYPE IF EXISTS ENUM_entity_poly_type;
+DROP TYPE IF EXISTS ENUM_entity_poly_type CASCADE;
 CREATE TYPE ENUM_entity_poly_type AS ENUM ( 'polypeptide(D)', 'polypeptide(L)', 'polydeoxyribonucleotide', 'polyribonucleotide', 'polysaccharide(D)', 'polysaccharide(L)', 'polydeoxyribonucleotide/polyribonucleotide hybrid', 'cyclic-pseudo-peptide', 'peptide nucleic acid', 'other' );
 CREATE TABLE entity_poly (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
@@ -567,7 +567,7 @@ CREATE TABLE struct_ncs_ens (
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), schema location: schema/pdbx-validation-v1.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
-DROP TYPE IF EXISTS ENUM_entity_poly_seq_hetero;
+DROP TYPE IF EXISTS ENUM_entity_poly_seq_hetero CASCADE;
 CREATE TYPE ENUM_entity_poly_seq_hetero AS ENUM ( 'no', 'n', 'yes', 'y' );
 CREATE TABLE entity_poly_seq (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
@@ -588,7 +588,7 @@ CREATE TABLE entity_poly_seq (
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), schema location: schema/pdbx-validation-v1.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
-DROP TYPE IF EXISTS ENUM_pdbx_audit_revision_history_data_content_type;
+DROP TYPE IF EXISTS ENUM_pdbx_audit_revision_history_data_content_type CASCADE;
 CREATE TYPE ENUM_pdbx_audit_revision_history_data_content_type AS ENUM ( 'Structure model', 'NMR restraints', 'NMR shifts', 'Structure factors' );
 CREATE TABLE pdbx_audit_revision_history (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
@@ -641,9 +641,9 @@ CREATE TABLE pdbx_struct_entity_inst (
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), schema location: schema/pdbx-validation-v1.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
-DROP TYPE IF EXISTS ENUM_pdbx_struct_group_list_group_enumeration_type;
+DROP TYPE IF EXISTS ENUM_pdbx_struct_group_list_group_enumeration_type CASCADE;
 CREATE TYPE ENUM_pdbx_struct_group_list_group_enumeration_type AS ENUM ( 'atom', 'component', 'component_range' );
-DROP TYPE IF EXISTS ENUM_pdbx_struct_group_list_type;
+DROP TYPE IF EXISTS ENUM_pdbx_struct_group_list_type CASCADE;
 CREATE TYPE ENUM_pdbx_struct_group_list_type AS ENUM ( 'Molecular Complex', 'Heterogen Complex', 'TLS group', 'NCS group' );
 CREATE TABLE pdbx_struct_group_list (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
@@ -665,7 +665,7 @@ CREATE TABLE pdbx_struct_group_list (
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), schema location: schema/pdbx-validation-v1.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
-DROP TYPE IF EXISTS ENUM_struct_biol_pdbx_aggregation_state;
+DROP TYPE IF EXISTS ENUM_struct_biol_pdbx_aggregation_state CASCADE;
 CREATE TYPE ENUM_struct_biol_pdbx_aggregation_state AS ENUM ( 'MONOMER', 'DIMER', 'TRIMER', 'TETRAMER', 'HEXAMER', 'MORE' );
 CREATE TABLE struct_biol (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
@@ -687,9 +687,9 @@ CREATE TABLE struct_biol (
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), schema location: schema/pdbx-validation-v1.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
-DROP TYPE IF EXISTS ENUM_struct_ref_seq_align;
+DROP TYPE IF EXISTS ENUM_struct_ref_seq_align CASCADE;
 CREATE TYPE ENUM_struct_ref_seq_align AS ENUM ( 'complete', 'partial' );
-DROP TYPE IF EXISTS ENUM_struct_ref_seq_dif;
+DROP TYPE IF EXISTS ENUM_struct_ref_seq_dif CASCADE;
 CREATE TYPE ENUM_struct_ref_seq_dif AS ENUM ( 'no', 'n', 'yes', 'y' );
 CREATE TABLE struct_ref (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
@@ -768,7 +768,7 @@ CREATE TABLE pdbx_domain (
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), schema location: schema/pdbx-validation-v1.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
-DROP TYPE IF EXISTS ENUM_pdbx_refine_tls_method;
+DROP TYPE IF EXISTS ENUM_pdbx_refine_tls_method CASCADE;
 CREATE TYPE ENUM_pdbx_refine_tls_method AS ENUM ( 'refined', 'fitted' );
 CREATE TABLE pdbx_refine_tls (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
@@ -869,7 +869,7 @@ CREATE TABLE pdbx_struct_nmr_ens_dom (
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), schema location: schema/pdbx-validation-v1.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
-DROP TYPE IF EXISTS ENUM_pdbx_validate_planes_type;
+DROP TYPE IF EXISTS ENUM_pdbx_validate_planes_type CASCADE;
 CREATE TYPE ENUM_pdbx_validate_planes_type AS ENUM ( 'MAIN_CHAIN', 'SIDE_CHAIN', 'MAIN CHAIN', 'SIDE CHAIN' );
 CREATE TABLE pdbx_validate_planes (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
@@ -936,7 +936,7 @@ CREATE TABLE pdbx_validate_rmsd_torsion (
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), schema location: schema/pdbx-validation-v1.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
-DROP TYPE IF EXISTS ENUM_struct_asym_pdbx_blank_PDB_chainid_flag;
+DROP TYPE IF EXISTS ENUM_struct_asym_pdbx_blank_PDB_chainid_flag CASCADE;
 CREATE TYPE ENUM_struct_asym_pdbx_blank_PDB_chainid_flag AS ENUM ( 'Y', 'N' );
 CREATE TABLE struct_asym (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
@@ -956,7 +956,7 @@ CREATE TABLE struct_asym (
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), schema location: schema/pdbx-validation-v1.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
-DROP TYPE IF EXISTS ENUM_struct_conf_type_id;
+DROP TYPE IF EXISTS ENUM_struct_conf_type_id CASCADE;
 CREATE TYPE ENUM_struct_conf_type_id AS ENUM ( 'HELX_P', 'HELX_OT_P', 'HELX_RH_P', 'HELX_RH_OT_P', 'HELX_RH_AL_P', 'HELX_RH_GA_P', 'HELX_RH_OM_P', 'HELX_RH_PI_P', 'HELX_RH_27_P', 'HELX_RH_3T_P', 'HELX_RH_PP_P', 'HELX_LH_P', 'HELX_LH_OT_P', 'HELX_LH_AL_P', 'HELX_LH_GA_P', 'HELX_LH_OM_P', 'HELX_LH_PI_P', 'HELX_LH_27_P', 'HELX_LH_3T_P', 'HELX_LH_PP_P', 'HELX_N', 'HELX_OT_N', 'HELX_RH_N', 'HELX_RH_OT_N', 'HELX_RH_A_N', 'HELX_RH_B_N', 'HELX_RH_Z_N', 'HELX_LH_N', 'HELX_LH_OT_N', 'HELX_LH_A_N', 'HELX_LH_B_N', 'HELX_LH_Z_N', 'TURN_P', 'TURN_OT_P', 'TURN_TY1_P', 'TURN_TY1P_P', 'TURN_TY2_P', 'TURN_TY2P_P', 'TURN_TY3_P', 'TURN_TY3P_P', 'STRN' );
 CREATE TABLE struct_conf_type (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
@@ -991,7 +991,7 @@ CREATE TABLE struct_ncs_dom (
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), schema location: schema/pdbx-validation-v1.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
-DROP TYPE IF EXISTS ENUM_struct_ncs_oper_code;
+DROP TYPE IF EXISTS ENUM_struct_ncs_oper_code CASCADE;
 CREATE TYPE ENUM_struct_ncs_oper_code AS ENUM ( 'given', 'generate' );
 CREATE TABLE struct_ncs_oper (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
@@ -1158,13 +1158,13 @@ CREATE TABLE diffrn_orient_refln (
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), schema location: schema/pdbx-validation-v1.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
-DROP TYPE IF EXISTS ENUM_diffrn_radiation_pdbx_monochromatic_or_laue_m_l;
+DROP TYPE IF EXISTS ENUM_diffrn_radiation_pdbx_monochromatic_or_laue_m_l CASCADE;
 CREATE TYPE ENUM_diffrn_radiation_pdbx_monochromatic_or_laue_m_l AS ENUM ( 'M', 'L' );
-DROP TYPE IF EXISTS ENUM_diffrn_radiation_pdbx_scattering_type;
+DROP TYPE IF EXISTS ENUM_diffrn_radiation_pdbx_scattering_type CASCADE;
 CREATE TYPE ENUM_diffrn_radiation_pdbx_scattering_type AS ENUM ( 'x-ray', 'neutron', 'electron' );
-DROP TYPE IF EXISTS ENUM_diffrn_radiation_probe;
+DROP TYPE IF EXISTS ENUM_diffrn_radiation_probe CASCADE;
 CREATE TYPE ENUM_diffrn_radiation_probe AS ENUM ( 'x-ray', 'neutron', 'electron', 'gamma' );
-DROP TYPE IF EXISTS ENUM_diffrn_radiation_xray_symbol;
+DROP TYPE IF EXISTS ENUM_diffrn_radiation_xray_symbol CASCADE;
 CREATE TYPE ENUM_diffrn_radiation_xray_symbol AS ENUM ( 'K-L~3~', 'K-L~2~', 'K-M~3~', 'K-L~2,3~' );
 CREATE TABLE diffrn_radiation (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
@@ -1212,9 +1212,9 @@ CREATE TABLE diffrn_radiation_wavelength (
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), schema location: schema/pdbx-validation-v1.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
-DROP TYPE IF EXISTS ENUM_diffrn_refln_scan_mode;
+DROP TYPE IF EXISTS ENUM_diffrn_refln_scan_mode CASCADE;
 CREATE TYPE ENUM_diffrn_refln_scan_mode AS ENUM ( 'om', 'ot', 'q' );
-DROP TYPE IF EXISTS ENUM_diffrn_refln_scan_mode_backgd;
+DROP TYPE IF EXISTS ENUM_diffrn_refln_scan_mode_backgd CASCADE;
 CREATE TYPE ENUM_diffrn_refln_scan_mode_backgd AS ENUM ( 'st', 'mo' );
 CREATE TABLE diffrn_refln (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
@@ -1331,7 +1331,7 @@ CREATE TABLE diffrn_reflns_class (
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), schema location: schema/pdbx-validation-v1.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
-DROP TYPE IF EXISTS ENUM_diffrn_source_target;
+DROP TYPE IF EXISTS ENUM_diffrn_source_target CASCADE;
 CREATE TYPE ENUM_diffrn_source_target AS ENUM ( 'H', 'He', 'Li', 'Be', 'B', 'C', 'N', 'O', 'F', 'Ne', 'Na', 'Mg', 'Al', 'Si', 'P', 'S', 'Cl', 'Ar', 'K', 'Ca', 'Sc', 'Ti', 'V', 'Cr', 'Mn', 'Fe', 'Co', 'Ni', 'Cu', 'Zn', 'Ga', 'Ge', 'As', 'Se', 'Br', 'Kr', 'Rb', 'Sr', 'Y', 'Zr', 'Nb', 'Mo', 'Tc', 'Ru', 'Rh', 'Pd', 'Ag', 'Cd', 'In', 'Sn', 'Sb', 'Te', 'I', 'Xe', 'Cs', 'Ba', 'La', 'Ce', 'Pr', 'Nd', 'Pm', 'Sm', 'Eu', 'Gd', 'Tb', 'Dy', 'Ho', 'Er', 'Tm', 'Yb', 'Lu', 'Hf', 'Ta', 'W', 'Re', 'Os', 'Ir', 'Pt', 'Au', 'Hg', 'Tl', 'Pb', 'Bi', 'Po', 'At', 'Rn', 'Fr', 'Ra', 'Ac', 'Th', 'Pa', 'U', 'Np', 'Pu', 'Am', 'Cm', 'Bk', 'Cf', 'Es', 'Fm', 'Md', 'No', 'Lr' );
 CREATE TABLE diffrn_source (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
@@ -1398,7 +1398,7 @@ CREATE TABLE diffrn_standards (
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), schema location: schema/pdbx-validation-v1.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
-DROP TYPE IF EXISTS ENUM_em_2d_crystal_entity_space_group_name_H_M;
+DROP TYPE IF EXISTS ENUM_em_2d_crystal_entity_space_group_name_H_M CASCADE;
 CREATE TYPE ENUM_em_2d_crystal_entity_space_group_name_H_M AS ENUM ( 'P 1', 'P 2', 'P 1 2', 'P 1 21', 'C 1 2', 'P 2 2 2', 'P 2 2 21', 'P 2 21 21', 'C 2 2 2', 'P 4', 'P 4 2 2', 'P 4 21 2', 'P 3', 'P 3 1 2', 'P 3 2 1', 'P 6', 'P 6 2 2' );
 CREATE TABLE em_2d_crystal_entity (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
@@ -1446,9 +1446,9 @@ CREATE TABLE em_3d_crystal_entity (
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), schema location: schema/pdbx-validation-v1.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
-DROP TYPE IF EXISTS ENUM_em_3d_fitting_ref_protocol;
+DROP TYPE IF EXISTS ENUM_em_3d_fitting_ref_protocol CASCADE;
 CREATE TYPE ENUM_em_3d_fitting_ref_protocol AS ENUM ( 'RIGID BODY FIT', 'FLEXIBLE FIT', 'BACKBONE TRACE', 'AB INITIO MODEL', 'OTHER' );
-DROP TYPE IF EXISTS ENUM_em_3d_fitting_ref_space;
+DROP TYPE IF EXISTS ENUM_em_3d_fitting_ref_space CASCADE;
 CREATE TYPE ENUM_em_3d_fitting_ref_space AS ENUM ( 'REAL', 'RECIPROCAL' );
 CREATE TABLE em_3d_fitting (
 	details TEXT ,
@@ -1490,9 +1490,9 @@ CREATE TABLE em_3d_fitting_list (
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), schema location: schema/pdbx-validation-v1.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
-DROP TYPE IF EXISTS ENUM_em_3d_reconstruction_refinement_type;
+DROP TYPE IF EXISTS ENUM_em_3d_reconstruction_refinement_type CASCADE;
 CREATE TYPE ENUM_em_3d_reconstruction_refinement_type AS ENUM ( 'HALF-MAPS REFINED AGAINST SAME DATA', 'HALF-MAPS REFINED INDEPENDENTLY', 'HALF-MAPS REFINED WITH FREQUENCY RANGE OMITTED', 'HALF-MAPS REFINED INDEPENDENTLY WITH FREQUENCY RANGE OMITTED', 'OTHER' );
-DROP TYPE IF EXISTS ENUM_em_3d_reconstruction_symmetry_type;
+DROP TYPE IF EXISTS ENUM_em_3d_reconstruction_symmetry_type CASCADE;
 CREATE TYPE ENUM_em_3d_reconstruction_symmetry_type AS ENUM ( 'POINT', 'HELICAL', '2D CRYSTAL', '3D CRYSTAL' );
 CREATE TABLE em_3d_reconstruction (
 	actual_pixel_size DECIMAL ,
@@ -1563,7 +1563,7 @@ CREATE TABLE em_buffer_component (
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), schema location: schema/pdbx-validation-v1.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
-DROP TYPE IF EXISTS ENUM_em_crystal_formation_time_unit;
+DROP TYPE IF EXISTS ENUM_em_crystal_formation_time_unit CASCADE;
 CREATE TYPE ENUM_em_crystal_formation_time_unit AS ENUM ( 'MINUTE', 'HOUR', 'DAY', 'MONTH', 'YEAR' );
 CREATE TABLE em_crystal_formation (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
@@ -1685,9 +1685,9 @@ CREATE TABLE em_embedding (
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), schema location: schema/pdbx-validation-v1.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
-DROP TYPE IF EXISTS ENUM_em_entity_assembly_molwt_experimental_flag;
+DROP TYPE IF EXISTS ENUM_em_entity_assembly_molwt_experimental_flag CASCADE;
 CREATE TYPE ENUM_em_entity_assembly_molwt_experimental_flag AS ENUM ( 'YES', 'NO' );
-DROP TYPE IF EXISTS ENUM_em_entity_assembly_molwt_units;
+DROP TYPE IF EXISTS ENUM_em_entity_assembly_molwt_units CASCADE;
 CREATE TYPE ENUM_em_entity_assembly_molwt_units AS ENUM ( 'MEGADALTONS', 'KILODALTONS/NANOMETER' );
 CREATE TABLE em_entity_assembly_molwt (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
@@ -1753,9 +1753,9 @@ CREATE TABLE em_entity_assembly_recombinant (
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), schema location: schema/pdbx-validation-v1.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
-DROP TYPE IF EXISTS ENUM_em_experiment_aggregation_state;
+DROP TYPE IF EXISTS ENUM_em_experiment_aggregation_state CASCADE;
 CREATE TYPE ENUM_em_experiment_aggregation_state AS ENUM ( '2D ARRAY', '3D ARRAY', 'HELICAL ARRAY', 'FILAMENT', 'PARTICLE', 'TISSUE', 'CELL' );
-DROP TYPE IF EXISTS ENUM_em_experiment_reconstruction_method;
+DROP TYPE IF EXISTS ENUM_em_experiment_reconstruction_method CASCADE;
 CREATE TYPE ENUM_em_experiment_reconstruction_method AS ENUM ( 'SINGLE PARTICLE', 'HELICAL', 'CRYSTALLOGRAPHY', 'SUBTOMOGRAM AVERAGING', 'TOMOGRAPHY' );
 CREATE TABLE em_experiment (
 	aggregation_state ENUM_em_experiment_aggregation_state ,
@@ -1810,7 +1810,7 @@ CREATE TABLE em_image_processing (
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), schema location: schema/pdbx-validation-v1.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
-DROP TYPE IF EXISTS ENUM_em_image_recording_detector_mode;
+DROP TYPE IF EXISTS ENUM_em_image_recording_detector_mode CASCADE;
 CREATE TYPE ENUM_em_image_recording_detector_mode AS ENUM ( 'COUNTING', 'INTEGRATING', 'SUPER-RESOLUTION', 'OTHER' );
 CREATE TABLE em_image_recording (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
@@ -1836,7 +1836,7 @@ CREATE TABLE em_image_recording (
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), schema location: schema/pdbx-validation-v1.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
-DROP TYPE IF EXISTS ENUM_em_image_scans_scanner_model;
+DROP TYPE IF EXISTS ENUM_em_image_scans_scanner_model CASCADE;
 CREATE TYPE ENUM_em_image_scans_scanner_model AS ENUM ( 'ZEISS SCAI', 'EMIL 10', 'OPTRONICS', 'PERKIN ELMER', 'TEMSCAN', 'EIKONIX IEEE 488', 'NIKON COOLSCAN', 'NIKON SUPER COOLSCAN 9000', 'IMAGE SCIENCE PATCHWORK DENSITOMETER', 'PRIMESCAN', 'OTHER' );
 CREATE TABLE em_image_scans (
 	citation_id TEXT ,
@@ -1865,17 +1865,17 @@ CREATE TABLE em_image_scans (
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), schema location: schema/pdbx-validation-v1.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
-DROP TYPE IF EXISTS ENUM_em_imaging_alignment_procedure;
+DROP TYPE IF EXISTS ENUM_em_imaging_alignment_procedure CASCADE;
 CREATE TYPE ENUM_em_imaging_alignment_procedure AS ENUM ( 'NONE', 'BASIC', 'ZEMLIN TABLEAU', 'COMA FREE', 'OTHER' );
-DROP TYPE IF EXISTS ENUM_em_imaging_cryogen;
+DROP TYPE IF EXISTS ENUM_em_imaging_cryogen CASCADE;
 CREATE TYPE ENUM_em_imaging_cryogen AS ENUM ( 'NITROGEN', 'HELIUM' );
-DROP TYPE IF EXISTS ENUM_em_imaging_illumination_mode;
+DROP TYPE IF EXISTS ENUM_em_imaging_illumination_mode CASCADE;
 CREATE TYPE ENUM_em_imaging_illumination_mode AS ENUM ( 'FLOOD BEAM', 'SPOT SCAN', 'OTHER' );
-DROP TYPE IF EXISTS ENUM_em_imaging_microscope_model;
+DROP TYPE IF EXISTS ENUM_em_imaging_microscope_model CASCADE;
 CREATE TYPE ENUM_em_imaging_microscope_model AS ENUM ( 'FEI MORGAGNI', 'FEI POLARA 300', 'FEI TALOS ARCTICA', 'FEI TECNAI 10', 'FEI TECNAI 12', 'FEI TECNAI 20', 'FEI TECNAI F20', 'FEI TECNAI F30', 'FEI TECNAI ARCTICA', 'FEI TECNAI SPHERA', 'FEI TECNAI SPIRIT', 'FEI TITAN', 'FEI TITAN KRIOS', 'FEI/PHILIPS CM10', 'FEI/PHILIPS CM12', 'FEI/PHILIPS CM120T', 'FEI/PHILIPS CM200FEG', 'FEI/PHILIPS CM200FEG/SOPHIE', 'FEI/PHILIPS CM200FEG/ST', 'FEI/PHILIPS CM200FEG/UT', 'FEI/PHILIPS CM200T', 'FEI/PHILIPS CM300FEG/HE', 'FEI/PHILIPS CM300FEG/ST', 'FEI/PHILIPS CM300FEG/T', 'FEI/PHILIPS EM400', 'FEI/PHILIPS EM420', 'HITACHI EF2000', 'HITACHI EF3000', 'HITACHI H7600', 'HITACHI HF2000', 'HITACHI HF3000', 'HITACHI H-9500SD', 'JEOL 100B', 'JEOL 100CX', 'JEOL 1010', 'JEOL 1200', 'JEOL 1200EX', 'JEOL 1200EXII', 'JEOL 1230', 'JEOL 1400', 'JEOL 2000EX', 'JEOL 2000EXII', 'JEOL 2010', 'JEOL 2010F', 'JEOL 2010HT', 'JEOL 2010HC', 'JEOL 2010UHR', 'JEOL 2011', 'JEOL 2100', 'JEOL 2100F', 'JEOL 2200FS', 'JEOL 2200FSC', 'JEOL 3000SFF', 'JEOL 3100FEF', 'JEOL 3100FFC', 'JEOL 3200FS', 'JEOL 3200FSC', 'JEOL KYOTO-3000SFF', 'JEOL 4000', 'JEOL 4000EX', 'JEOL CRYO ARM 200', 'JEOL CRYO ARM 300', 'SIEMENS SULEIKA', 'ZEISS LEO912', 'ZEISS LIBRA120PLUS' );
-DROP TYPE IF EXISTS ENUM_em_imaging_mode;
+DROP TYPE IF EXISTS ENUM_em_imaging_mode CASCADE;
 CREATE TYPE ENUM_em_imaging_mode AS ENUM ( 'BRIGHT FIELD', 'DARK FIELD', 'DIFFRACTION', 'OTHER' );
-DROP TYPE IF EXISTS ENUM_em_imaging_specimen_holder_model;
+DROP TYPE IF EXISTS ENUM_em_imaging_specimen_holder_model CASCADE;
 CREATE TYPE ENUM_em_imaging_specimen_holder_model AS ENUM ( 'GATAN 626 SINGLE TILT LIQUID NITROGEN CRYO TRANSFER HOLDER', 'GATAN CT3500 SINGLE TILT LIQUID NITROGEN CRYO TRANSFER HOLDER', 'GATAN CT3500TR SINGLE TILT ROTATION LIQUID NITROGEN CRYO TRANSF', 'GATAN 910 MULTI-SPECIMEN SINGLE TILT CRYO TRANSFER HOLDER', 'GATAN 914 HIGH TILT LIQUID NITROGEN CRYO TRANSFER TOMOGRAPHY HO', 'GATAN 915 DOUBLE TILT LIQUID NITROGEN CRYO TRANSFER HOLDER', 'GATAN UHRST 3500 SINGLE TILT ULTRA HIGH RESOLUTION NITROGEN COO', 'GATAN CHDT 3504 DOUBLE TILT HIGH RESOLUTION NITROGEN COOLING HO', 'GATAN HC 3500 SINGLE TILT HEATING/NITROGEN COOLING HOLDER', 'GATAN HCHST 3008 SINGLE TILT HIGH RESOLUTION HELIUM COOLING HOL', 'GATAN ULTST ULTRA LOW TEMPERATURE SINGLE TILT HELIUM COOLING HO', 'GATAN HCHDT 3010 DOUBLE TILT HIGH RESOLUTION HELIUM COOLING HOL', 'GATAN ULTDT ULTRA LOW TEMPERATURE DOUBLE TILT HELIUM COOLING HO', 'FEI TITAN KRIOS AUTOGRID HOLDER', 'GATAN HELIUM', 'GATAN LIQUID NITROGEN', 'HOME BUILD', 'JEOL', 'JEOL 3200FSC CRYOHOLDER', 'PHILIPS ROTATION HOLDER', 'SIDE ENTRY, EUCENTRIC', 'FISCHIONE INSTRUMENTS DUAL AXIS TOMOGRAPHY HOLDER', 'OTHER' );
 CREATE TABLE em_imaging (
 	accelerating_voltage INTEGER CHECK ( accelerating_voltage > 0 ) ,
@@ -1981,7 +1981,7 @@ CREATE TABLE em_single_particle_entity (
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), schema location: schema/pdbx-validation-v1.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
-DROP TYPE IF EXISTS ENUM_em_software_category;
+DROP TYPE IF EXISTS ENUM_em_software_category CASCADE;
 CREATE TYPE ENUM_em_software_category AS ENUM ( 'IMAGE ACQUISITION', 'PARTICLE SELECTION', 'VOLUME SELECTION', 'CLASSIFICATION', 'MASKING', 'RECONSTRUCTION', 'INITIAL EULER ASSIGNMENT', 'FINAL EULER ASSIGNMENT', 'CTF CORRECTION', 'LAYERLINE INDEXING', 'DIFFRACTION INDEXING', 'MODEL FITTING', 'MODEL REFINEMENT', 'SERIES ALIGNMENT', 'MOLECULAR REPLACEMENT', 'LATTICE DISTORTION CORRECTION', 'SYMMETRY DETERMINATION', 'CRYSTALLOGRAPHY MERGING', 'OTHER' );
 CREATE TABLE em_software (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
@@ -2004,13 +2004,13 @@ CREATE TABLE em_software (
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), schema location: schema/pdbx-validation-v1.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
-DROP TYPE IF EXISTS ENUM_em_specimen_embedding_applied;
+DROP TYPE IF EXISTS ENUM_em_specimen_embedding_applied CASCADE;
 CREATE TYPE ENUM_em_specimen_embedding_applied AS ENUM ( 'YES', 'NO' );
-DROP TYPE IF EXISTS ENUM_em_specimen_shadowing_applied;
+DROP TYPE IF EXISTS ENUM_em_specimen_shadowing_applied CASCADE;
 CREATE TYPE ENUM_em_specimen_shadowing_applied AS ENUM ( 'YES', 'NO' );
-DROP TYPE IF EXISTS ENUM_em_specimen_staining_applied;
+DROP TYPE IF EXISTS ENUM_em_specimen_staining_applied CASCADE;
 CREATE TYPE ENUM_em_specimen_staining_applied AS ENUM ( 'YES', 'NO' );
-DROP TYPE IF EXISTS ENUM_em_specimen_vitrification_applied;
+DROP TYPE IF EXISTS ENUM_em_specimen_vitrification_applied CASCADE;
 CREATE TYPE ENUM_em_specimen_vitrification_applied AS ENUM ( 'YES', 'NO' );
 CREATE TABLE em_specimen (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
@@ -2034,7 +2034,7 @@ CREATE TABLE em_specimen (
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), schema location: schema/pdbx-validation-v1.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
-DROP TYPE IF EXISTS ENUM_em_staining_type;
+DROP TYPE IF EXISTS ENUM_em_staining_type CASCADE;
 CREATE TYPE ENUM_em_staining_type AS ENUM ( 'NEGATIVE', 'POSITIVE', 'NONE' );
 CREATE TABLE em_staining (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
@@ -2054,13 +2054,13 @@ CREATE TABLE em_staining (
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), schema location: schema/pdbx-validation-v1.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
-DROP TYPE IF EXISTS ENUM_em_virus_entity_empty;
+DROP TYPE IF EXISTS ENUM_em_virus_entity_empty CASCADE;
 CREATE TYPE ENUM_em_virus_entity_empty AS ENUM ( 'YES', 'NO' );
-DROP TYPE IF EXISTS ENUM_em_virus_entity_enveloped;
+DROP TYPE IF EXISTS ENUM_em_virus_entity_enveloped CASCADE;
 CREATE TYPE ENUM_em_virus_entity_enveloped AS ENUM ( 'YES', 'NO' );
-DROP TYPE IF EXISTS ENUM_em_virus_entity_virus_isolate;
+DROP TYPE IF EXISTS ENUM_em_virus_entity_virus_isolate CASCADE;
 CREATE TYPE ENUM_em_virus_entity_virus_isolate AS ENUM ( 'STRAIN', 'SEROTYPE', 'SEROCOMPLEX', 'SUBSPECIES', 'SPECIES', 'OTHER' );
-DROP TYPE IF EXISTS ENUM_em_virus_entity_virus_type;
+DROP TYPE IF EXISTS ENUM_em_virus_entity_virus_type CASCADE;
 CREATE TYPE ENUM_em_virus_entity_virus_type AS ENUM ( 'VIRION', 'SATELLITE', 'PRION', 'VIROID', 'VIRUS-LIKE PARTICLE' );
 CREATE TABLE em_virus_entity (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
@@ -2122,9 +2122,9 @@ CREATE TABLE em_virus_shell (
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), schema location: schema/pdbx-validation-v1.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
-DROP TYPE IF EXISTS ENUM_em_vitrification_cryogen_name;
+DROP TYPE IF EXISTS ENUM_em_vitrification_cryogen_name CASCADE;
 CREATE TYPE ENUM_em_vitrification_cryogen_name AS ENUM ( 'HELIUM', 'NITROGEN', 'PROPANE', 'ETHANE', 'ETHANE-PROPANE', 'METHANE', 'FREON 22', 'FREON 12', 'OTHER' );
-DROP TYPE IF EXISTS ENUM_em_vitrification_instrument;
+DROP TYPE IF EXISTS ENUM_em_vitrification_instrument CASCADE;
 CREATE TYPE ENUM_em_vitrification_instrument AS ENUM ( 'EMS-002 RAPID IMMERSION FREEZER', 'FEI VITROBOT MARK I', 'FEI VITROBOT MARK II', 'FEI VITROBOT MARK III', 'FEI VITROBOT MARK IV', 'GATAN CRYOPLUNGE 3', 'HOMEMADE PLUNGER', 'LEICA PLUNGER', 'LEICA EM GP', 'LEICA EM CPC', 'LEICA KF80', 'REICHERT-JUNG PLUNGER', 'SPOTITON', 'ZEISS PLUNGE FREEZER CRYOBOX' );
 CREATE TABLE em_vitrification (
 	chamber_temperature DECIMAL ,
@@ -2218,9 +2218,9 @@ CREATE TABLE entry_link (
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), schema location: schema/pdbx-validation-v1.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
-DROP TYPE IF EXISTS ENUM_exptl_absorpt_correction_type;
+DROP TYPE IF EXISTS ENUM_exptl_absorpt_correction_type CASCADE;
 CREATE TYPE ENUM_exptl_absorpt_correction_type AS ENUM ( 'analytical', 'cylinder', 'empirical', 'gaussian', 'integration', 'multi-scan', 'none', 'numerical', 'psi-scan', 'refdelf', 'sphere' );
-DROP TYPE IF EXISTS ENUM_exptl_method;
+DROP TYPE IF EXISTS ENUM_exptl_method CASCADE;
 CREATE TYPE ENUM_exptl_method AS ENUM ( 'X-RAY DIFFRACTION', 'NEUTRON DIFFRACTION', 'FIBER DIFFRACTION', 'ELECTRON CRYSTALLOGRAPHY', 'ELECTRON MICROSCOPY', 'SOLUTION NMR', 'SOLID-STATE NMR', 'SOLUTION SCATTERING', 'POWDER DIFFRACTION', 'INFRARED SPECTROSCOPY', 'EPR', 'FLUORESCENCE TRANSFER', 'THEORETICAL MODEL' );
 CREATE TABLE exptl (
 	absorpt_coefficient_mu DECIMAL CHECK ( absorpt_coefficient_mu >= 0 ) ,
@@ -2244,7 +2244,7 @@ CREATE TABLE exptl (
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), schema location: schema/pdbx-validation-v1.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
-DROP TYPE IF EXISTS ENUM_ndb_struct_conf_na_feature;
+DROP TYPE IF EXISTS ENUM_ndb_struct_conf_na_feature CASCADE;
 CREATE TYPE ENUM_ndb_struct_conf_na_feature AS ENUM ( 'double helix', 'a-form double helix', 'b-form double helix', 'z-form double helix', 'other right-handed double helix', 'triple helix', 'quadruple helix', 'parallel strands', 'internal loop', 'bulge loop', 'tetraloop', 'hairpin loop', 'two-way junction', 'three-way junction', 'four-way junction', 'mismatched base pair' );
 CREATE TABLE ndb_struct_conf_na (
 	feature_count INTEGER ,
@@ -2395,11 +2395,11 @@ CREATE TABLE pdbx_audit_author (
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), schema location: schema/pdbx-validation-v1.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
-DROP TYPE IF EXISTS ENUM_pdbx_audit_revision_details_provider;
+DROP TYPE IF EXISTS ENUM_pdbx_audit_revision_details_provider CASCADE;
 CREATE TYPE ENUM_pdbx_audit_revision_details_provider AS ENUM ( 'repository', 'author' );
-DROP TYPE IF EXISTS ENUM_pdbx_audit_revision_details_type;
+DROP TYPE IF EXISTS ENUM_pdbx_audit_revision_details_type CASCADE;
 CREATE TYPE ENUM_pdbx_audit_revision_details_type AS ENUM ( 'Initial release', 'Coordinate replacement', 'Obsolete' );
-DROP TYPE IF EXISTS ENUM_pdbx_audit_revision_details_data_content_type;
+DROP TYPE IF EXISTS ENUM_pdbx_audit_revision_details_data_content_type CASCADE;
 CREATE TYPE ENUM_pdbx_audit_revision_details_data_content_type AS ENUM ( 'Structure model', 'NMR restraints', 'NMR shifts', 'Structure factors' );
 CREATE TABLE pdbx_audit_revision_details (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
@@ -2422,9 +2422,9 @@ CREATE TABLE pdbx_audit_revision_details (
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), schema location: schema/pdbx-validation-v1.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
-DROP TYPE IF EXISTS ENUM_pdbx_audit_revision_group_group;
+DROP TYPE IF EXISTS ENUM_pdbx_audit_revision_group_group CASCADE;
 CREATE TYPE ENUM_pdbx_audit_revision_group_group AS ENUM ( 'Advisory', 'Atomic model', 'Author supporting evidence', 'Data collection', 'Data processing', 'Database references', 'Derived calculations', 'Experimental data', 'Experimental preparation', 'Initial release', 'Non-polymer description', 'Other', 'Polymer sequence', 'Refinement description', 'Structure summary', 'Source and taxonomy', 'Version format compliance' );
-DROP TYPE IF EXISTS ENUM_pdbx_audit_revision_group_data_content_type;
+DROP TYPE IF EXISTS ENUM_pdbx_audit_revision_group_data_content_type CASCADE;
 CREATE TYPE ENUM_pdbx_audit_revision_group_data_content_type AS ENUM ( 'Structure model', 'NMR restraints', 'NMR shifts', 'Structure factors' );
 CREATE TABLE pdbx_audit_revision_group (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
@@ -2463,7 +2463,7 @@ CREATE TABLE pdbx_bond_distance_limits (
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), schema location: schema/pdbx-validation-v1.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
-DROP TYPE IF EXISTS ENUM_pdbx_coordinate_model_type;
+DROP TYPE IF EXISTS ENUM_pdbx_coordinate_model_type CASCADE;
 CREATE TYPE ENUM_pdbx_coordinate_model_type AS ENUM ( 'CA ATOMS ONLY', 'P ATOMS ONLY' );
 CREATE TABLE pdbx_coordinate_model (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
@@ -2480,23 +2480,23 @@ CREATE TABLE pdbx_coordinate_model (
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), schema location: schema/pdbx-validation-v1.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
-DROP TYPE IF EXISTS ENUM_pdbx_database_status_SG_entry;
+DROP TYPE IF EXISTS ENUM_pdbx_database_status_SG_entry CASCADE;
 CREATE TYPE ENUM_pdbx_database_status_SG_entry AS ENUM ( 'Y', 'N' );
-DROP TYPE IF EXISTS ENUM_pdbx_database_status_deposit_site;
+DROP TYPE IF EXISTS ENUM_pdbx_database_status_deposit_site CASCADE;
 CREATE TYPE ENUM_pdbx_database_status_deposit_site AS ENUM ( 'NDB', 'RCSB', 'PDBE', 'PDBJ', 'BMRB', 'BNL' );
-DROP TYPE IF EXISTS ENUM_pdbx_database_status_methods_development_category;
+DROP TYPE IF EXISTS ENUM_pdbx_database_status_methods_development_category CASCADE;
 CREATE TYPE ENUM_pdbx_database_status_methods_development_category AS ENUM ( 'CAPRI', 'CASP', 'CASD-NMR', 'FoldIt', 'GPCR Dock', 'D3R', 'RNA-Puzzles' );
-DROP TYPE IF EXISTS ENUM_pdbx_database_status_pdb_format_compatible;
+DROP TYPE IF EXISTS ENUM_pdbx_database_status_pdb_format_compatible CASCADE;
 CREATE TYPE ENUM_pdbx_database_status_pdb_format_compatible AS ENUM ( 'Y', 'N' );
-DROP TYPE IF EXISTS ENUM_pdbx_database_status_process_site;
+DROP TYPE IF EXISTS ENUM_pdbx_database_status_process_site CASCADE;
 CREATE TYPE ENUM_pdbx_database_status_process_site AS ENUM ( 'NDB', 'RCSB', 'PDBE', 'PDBJ', 'BNL' );
-DROP TYPE IF EXISTS ENUM_pdbx_database_status_status_code;
+DROP TYPE IF EXISTS ENUM_pdbx_database_status_status_code CASCADE;
 CREATE TYPE ENUM_pdbx_database_status_status_code AS ENUM ( 'PROC', 'WAIT', 'REL', 'HOLD', 'HPUB', 'REFI', 'OBS', 'WDRN', 'AUTH', 'POLC', 'REPL', 'AUCO', 'TRSF', 'RMVD', 'DEL', 'REV', 'UPD', 'BIB' );
-DROP TYPE IF EXISTS ENUM_pdbx_database_status_status_code_cs;
+DROP TYPE IF EXISTS ENUM_pdbx_database_status_status_code_cs CASCADE;
 CREATE TYPE ENUM_pdbx_database_status_status_code_cs AS ENUM ( 'PROC', 'WAIT', 'AUTH', 'POLC', 'REPL', 'REL', 'HOLD', 'HPUB', 'OBS', 'RMVD', 'WDRN' );
-DROP TYPE IF EXISTS ENUM_pdbx_database_status_status_code_mr;
+DROP TYPE IF EXISTS ENUM_pdbx_database_status_status_code_mr CASCADE;
 CREATE TYPE ENUM_pdbx_database_status_status_code_mr AS ENUM ( 'PROC', 'WAIT', 'REL', 'HOLD', 'HPUB', 'OBS', 'WDRN', 'AUTH', 'POLC', 'REPL', 'RMVD' );
-DROP TYPE IF EXISTS ENUM_pdbx_database_status_status_code_sf;
+DROP TYPE IF EXISTS ENUM_pdbx_database_status_status_code_sf CASCADE;
 CREATE TYPE ENUM_pdbx_database_status_status_code_sf AS ENUM ( 'PROC', 'WAIT', 'REL', 'HOLD', 'HPUB', 'OBS', 'WDRN', 'AUTH', 'POLC', 'REPL', 'RMVD' );
 CREATE TABLE pdbx_database_status (
 	"SG_entry" ENUM_pdbx_database_status_SG_entry ,
@@ -2702,7 +2702,7 @@ CREATE TABLE pdbx_dcc_geometry (
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), schema location: schema/pdbx-validation-v1.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
-DROP TYPE IF EXISTS ENUM_pdbx_dcc_map_LLDFZ_outlier_flag;
+DROP TYPE IF EXISTS ENUM_pdbx_dcc_map_LLDFZ_outlier_flag CASCADE;
 CREATE TYPE ENUM_pdbx_dcc_map_LLDFZ_outlier_flag AS ENUM ( 'Y', 'N' );
 CREATE TABLE pdbx_dcc_map (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
@@ -2798,7 +2798,7 @@ CREATE TABLE pdbx_dcc_mapman (
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), schema location: schema/pdbx-validation-v1.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
-DROP TYPE IF EXISTS ENUM_pdbx_dcc_mon_geometry_LLDFZ_outlier_flag;
+DROP TYPE IF EXISTS ENUM_pdbx_dcc_mon_geometry_LLDFZ_outlier_flag CASCADE;
 CREATE TYPE ENUM_pdbx_dcc_mon_geometry_LLDFZ_outlier_flag AS ENUM ( 'Y', 'N' );
 CREATE TABLE pdbx_dcc_mon_geometry (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
@@ -2972,7 +2972,7 @@ CREATE TABLE pdbx_entity_assembly (
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), schema location: schema/pdbx-validation-v1.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
-DROP TYPE IF EXISTS ENUM_pdbx_entity_descriptor_type;
+DROP TYPE IF EXISTS ENUM_pdbx_entity_descriptor_type CASCADE;
 CREATE TYPE ENUM_pdbx_entity_descriptor_type AS ENUM ( 'LINUCS', 'IUPAC', 'IUPAC Abbreviated' );
 CREATE TABLE pdbx_entity_descriptor (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
@@ -3009,11 +3009,11 @@ CREATE TABLE pdbx_entity_nonpoly (
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), schema location: schema/pdbx-validation-v1.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
-DROP TYPE IF EXISTS ENUM_pdbx_entity_poly_comp_link_list_atom_stereo_config_1;
+DROP TYPE IF EXISTS ENUM_pdbx_entity_poly_comp_link_list_atom_stereo_config_1 CASCADE;
 CREATE TYPE ENUM_pdbx_entity_poly_comp_link_list_atom_stereo_config_1 AS ENUM ( 'R', 'S', 'N' );
-DROP TYPE IF EXISTS ENUM_pdbx_entity_poly_comp_link_list_atom_stereo_config_2;
+DROP TYPE IF EXISTS ENUM_pdbx_entity_poly_comp_link_list_atom_stereo_config_2 CASCADE;
 CREATE TYPE ENUM_pdbx_entity_poly_comp_link_list_atom_stereo_config_2 AS ENUM ( 'R', 'S', 'N' );
-DROP TYPE IF EXISTS ENUM_pdbx_entity_poly_comp_link_list_value_order;
+DROP TYPE IF EXISTS ENUM_pdbx_entity_poly_comp_link_list_value_order CASCADE;
 CREATE TYPE ENUM_pdbx_entity_poly_comp_link_list_value_order AS ENUM ( 'sing', 'doub', 'trip', 'quad', 'arom', 'poly', 'delo', 'pi' );
 CREATE TABLE pdbx_entity_poly_comp_link_list (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
@@ -3058,7 +3058,7 @@ CREATE TABLE pdbx_entry_details (
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), schema location: schema/pdbx-validation-v1.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
-DROP TYPE IF EXISTS ENUM_pdbx_helical_symmetry_dyad_axis;
+DROP TYPE IF EXISTS ENUM_pdbx_helical_symmetry_dyad_axis CASCADE;
 CREATE TYPE ENUM_pdbx_helical_symmetry_dyad_axis AS ENUM ( 'no', 'yes' );
 CREATE TABLE pdbx_helical_symmetry (
 	circular_symmetry INTEGER CHECK ( circular_symmetry >= 1 ) ,
@@ -3199,7 +3199,7 @@ CREATE TABLE pdbx_nmr_details (
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), schema location: schema/pdbx-validation-v1.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
-DROP TYPE IF EXISTS ENUM_pdbx_nmr_ensemble_atom_consistency_flag;
+DROP TYPE IF EXISTS ENUM_pdbx_nmr_ensemble_atom_consistency_flag CASCADE;
 CREATE TYPE ENUM_pdbx_nmr_ensemble_atom_consistency_flag AS ENUM ( 'Y', 'N' );
 CREATE TABLE pdbx_nmr_ensemble (
 	atom_consistency_flag ENUM_pdbx_nmr_ensemble_atom_consistency_flag ,
@@ -3228,7 +3228,7 @@ CREATE TABLE pdbx_nmr_ensemble (
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), schema location: schema/pdbx-validation-v1.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
-DROP TYPE IF EXISTS ENUM_pdbx_nmr_ensemble_rms_atom_type;
+DROP TYPE IF EXISTS ENUM_pdbx_nmr_ensemble_rms_atom_type CASCADE;
 CREATE TYPE ENUM_pdbx_nmr_ensemble_rms_atom_type AS ENUM ( 'backbone heavy atoms', 'side chain heavy atoms', 'all heavy atoms', 'all atoms', 'all backbone atoms' );
 CREATE TABLE pdbx_nmr_ensemble_rms (
 	atom_type ENUM_pdbx_nmr_ensemble_rms_atom_type ,
@@ -3260,7 +3260,7 @@ CREATE TABLE pdbx_nmr_ensemble_rms (
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), schema location: schema/pdbx-validation-v1.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
-DROP TYPE IF EXISTS ENUM_pdbx_nmr_exptl_sample_state;
+DROP TYPE IF EXISTS ENUM_pdbx_nmr_exptl_sample_state CASCADE;
 CREATE TYPE ENUM_pdbx_nmr_exptl_sample_state AS ENUM ( 'isotropic', 'anisotropic' );
 CREATE TABLE pdbx_nmr_exptl (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
@@ -3283,7 +3283,7 @@ CREATE TABLE pdbx_nmr_exptl (
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), schema location: schema/pdbx-validation-v1.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
-DROP TYPE IF EXISTS ENUM_pdbx_nmr_exptl_sample_concentration_units;
+DROP TYPE IF EXISTS ENUM_pdbx_nmr_exptl_sample_concentration_units CASCADE;
 CREATE TYPE ENUM_pdbx_nmr_exptl_sample_concentration_units AS ENUM ( '%', 'mM', 'mg/mL', 'nM', 'pM', 'M', 'g/L', 'ug/mL', 'mg/L', 'mg/uL', 'ug/uL', 'uM', 'v/v', 'w/v', 'w/w', '% w/v', '% w/w', '% v/v', 'saturated', 'na' );
 CREATE TABLE pdbx_nmr_exptl_sample (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
@@ -3305,11 +3305,11 @@ CREATE TABLE pdbx_nmr_exptl_sample (
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), schema location: schema/pdbx-validation-v1.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
-DROP TYPE IF EXISTS ENUM_pdbx_nmr_exptl_sample_conditions_ionic_strength_units;
+DROP TYPE IF EXISTS ENUM_pdbx_nmr_exptl_sample_conditions_ionic_strength_units CASCADE;
 CREATE TYPE ENUM_pdbx_nmr_exptl_sample_conditions_ionic_strength_units AS ENUM ( 'M', 'mM', 'Not defined' );
-DROP TYPE IF EXISTS ENUM_pdbx_nmr_exptl_sample_conditions_pH_units;
+DROP TYPE IF EXISTS ENUM_pdbx_nmr_exptl_sample_conditions_pH_units CASCADE;
 CREATE TYPE ENUM_pdbx_nmr_exptl_sample_conditions_pH_units AS ENUM ( 'pH', 'pD', 'pH*', 'Not defined' );
-DROP TYPE IF EXISTS ENUM_pdbx_nmr_exptl_sample_conditions_temperature_units;
+DROP TYPE IF EXISTS ENUM_pdbx_nmr_exptl_sample_conditions_temperature_units CASCADE;
 CREATE TYPE ENUM_pdbx_nmr_exptl_sample_conditions_temperature_units AS ENUM ( 'K', 'C', 'Not defined' );
 CREATE TABLE pdbx_nmr_exptl_sample_conditions (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
@@ -3339,31 +3339,31 @@ CREATE TABLE pdbx_nmr_exptl_sample_conditions (
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), schema location: schema/pdbx-validation-v1.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
-DROP TYPE IF EXISTS ENUM_pdbx_nmr_force_constants_covalent_geom_angles_term_units;
+DROP TYPE IF EXISTS ENUM_pdbx_nmr_force_constants_covalent_geom_angles_term_units CASCADE;
 CREATE TYPE ENUM_pdbx_nmr_force_constants_covalent_geom_angles_term_units AS ENUM ( 'kcal/mol/rad**2', 'kJ/mol/rad**2', 'other' );
-DROP TYPE IF EXISTS ENUM_pdbx_nmr_force_constants_covalent_geom_bond_term_units;
+DROP TYPE IF EXISTS ENUM_pdbx_nmr_force_constants_covalent_geom_bond_term_units CASCADE;
 CREATE TYPE ENUM_pdbx_nmr_force_constants_covalent_geom_bond_term_units AS ENUM ( 'kcal/mol/A**2', 'kJ/mol/nm**2', 'other' );
-DROP TYPE IF EXISTS ENUM_pdbx_nmr_force_constants_covalent_geom_impropers_term_unit;
+DROP TYPE IF EXISTS ENUM_pdbx_nmr_force_constants_covalent_geom_impropers_term_unit CASCADE;
 CREATE TYPE ENUM_pdbx_nmr_force_constants_covalent_geom_impropers_term_unit AS ENUM ( 'kcal/mol/rad**2', 'kJ/mol/rad**2', 'other' );
-DROP TYPE IF EXISTS ENUM_pdbx_nmr_force_constants_exptl_13C_shift_term_units;
+DROP TYPE IF EXISTS ENUM_pdbx_nmr_force_constants_exptl_13C_shift_term_units CASCADE;
 CREATE TYPE ENUM_pdbx_nmr_force_constants_exptl_13C_shift_term_units AS ENUM ( 'kcal/mol/ppm**2', 'kJ/mol/ppm**2', 'other' );
-DROP TYPE IF EXISTS ENUM_pdbx_nmr_force_constants_exptl_1H_shift_term_units;
+DROP TYPE IF EXISTS ENUM_pdbx_nmr_force_constants_exptl_1H_shift_term_units CASCADE;
 CREATE TYPE ENUM_pdbx_nmr_force_constants_exptl_1H_shift_term_units AS ENUM ( 'kcal/mol/ppm**2', 'kJ/mol/ppm**2', 'other' );
-DROP TYPE IF EXISTS ENUM_pdbx_nmr_force_constants_exptl_D_isotope_shift_term_units;
+DROP TYPE IF EXISTS ENUM_pdbx_nmr_force_constants_exptl_D_isotope_shift_term_units CASCADE;
 CREATE TYPE ENUM_pdbx_nmr_force_constants_exptl_D_isotope_shift_term_units AS ENUM ( 'kcal/mol/ppb**2', 'kJ/mol/ppb**2', 'other' );
-DROP TYPE IF EXISTS ENUM_pdbx_nmr_force_constants_exptl_J_coupling_term_units;
+DROP TYPE IF EXISTS ENUM_pdbx_nmr_force_constants_exptl_J_coupling_term_units CASCADE;
 CREATE TYPE ENUM_pdbx_nmr_force_constants_exptl_J_coupling_term_units AS ENUM ( 'kcal/mol/Hz**2', 'kJ/mol/Hz**2', 'other' );
-DROP TYPE IF EXISTS ENUM_pdbx_nmr_force_constants_exptl_dipolar_coupling_term_units;
+DROP TYPE IF EXISTS ENUM_pdbx_nmr_force_constants_exptl_dipolar_coupling_term_units CASCADE;
 CREATE TYPE ENUM_pdbx_nmr_force_constants_exptl_dipolar_coupling_term_units AS ENUM ( 'kcal/mol/Hz**2', 'kJ/mol/Hz**2', 'other' );
-DROP TYPE IF EXISTS ENUM_pdbx_nmr_force_constants_exptl_distance_term_units;
+DROP TYPE IF EXISTS ENUM_pdbx_nmr_force_constants_exptl_distance_term_units CASCADE;
 CREATE TYPE ENUM_pdbx_nmr_force_constants_exptl_distance_term_units AS ENUM ( 'kcal/mol/A**2', 'kJ/mol/nm**2', 'other' );
-DROP TYPE IF EXISTS ENUM_pdbx_nmr_force_constants_exptl_torsion_angles_term_units;
+DROP TYPE IF EXISTS ENUM_pdbx_nmr_force_constants_exptl_torsion_angles_term_units CASCADE;
 CREATE TYPE ENUM_pdbx_nmr_force_constants_exptl_torsion_angles_term_units AS ENUM ( 'kcal/mol/rad**2', 'kJ/mol/rad**2', 'author' );
-DROP TYPE IF EXISTS ENUM_pdbx_nmr_force_constants_non_bonded_inter_radius_of_gyrati;
+DROP TYPE IF EXISTS ENUM_pdbx_nmr_force_constants_non_bonded_inter_radius_of_gyrati CASCADE;
 CREATE TYPE ENUM_pdbx_nmr_force_constants_non_bonded_inter_radius_of_gyrati AS ENUM ( 'kcal/mol/ A**2', 'kJ/mol/ nm**4', 'other' );
-DROP TYPE IF EXISTS ENUM_pdbx_nmr_force_constants_non_bonded_inter_van_der_Waals_te;
+DROP TYPE IF EXISTS ENUM_pdbx_nmr_force_constants_non_bonded_inter_van_der_Waals_te CASCADE;
 CREATE TYPE ENUM_pdbx_nmr_force_constants_non_bonded_inter_van_der_Waals_te AS ENUM ( 'quartic', 'other' );
-DROP TYPE IF EXISTS ENUM_pdbx_nmr_force_constants_non_bonded_inter_van_der_Waals_te;
+DROP TYPE IF EXISTS ENUM_pdbx_nmr_force_constants_non_bonded_inter_van_der_Waals_te CASCADE;
 CREATE TYPE ENUM_pdbx_nmr_force_constants_non_bonded_inter_van_der_Waals_te AS ENUM ( 'kcal/mol/A**4', 'kJ/mol/nm**4', 'other' );
 CREATE TABLE pdbx_nmr_force_constants (
 	covalent_geom_angles_term DECIMAL ,
@@ -3469,7 +3469,7 @@ CREATE TABLE pdbx_nmr_spectrometer (
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), schema location: schema/pdbx-validation-v1.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
-DROP TYPE IF EXISTS ENUM_pdbx_nmr_unmapped_chem_shift_ambiguity_code;
+DROP TYPE IF EXISTS ENUM_pdbx_nmr_unmapped_chem_shift_ambiguity_code CASCADE;
 CREATE TYPE ENUM_pdbx_nmr_unmapped_chem_shift_ambiguity_code AS ENUM ( '1', '2', '3', '4', '5', '6', '9' );
 CREATE TABLE pdbx_nmr_unmapped_chem_shift (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
@@ -3492,7 +3492,7 @@ CREATE TABLE pdbx_nmr_unmapped_chem_shift (
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), schema location: schema/pdbx-validation-v1.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
-DROP TYPE IF EXISTS ENUM_pdbx_nmr_unparsed_chem_shift_ambiguity_code;
+DROP TYPE IF EXISTS ENUM_pdbx_nmr_unparsed_chem_shift_ambiguity_code CASCADE;
 CREATE TYPE ENUM_pdbx_nmr_unparsed_chem_shift_ambiguity_code AS ENUM ( '1', '2', '3', '4', '5', '6', '9' );
 CREATE TABLE pdbx_nmr_unparsed_chem_shift (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
@@ -3540,7 +3540,7 @@ CREATE TABLE pdbx_nonpoly_scheme (
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), schema location: schema/pdbx-validation-v1.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
-DROP TYPE IF EXISTS ENUM_pdbx_percentile_entity_view_type;
+DROP TYPE IF EXISTS ENUM_pdbx_percentile_entity_view_type CASCADE;
 CREATE TYPE ENUM_pdbx_percentile_entity_view_type AS ENUM ( 'RSRZ_outliers_percent', 'Ramachandran_outlier_percent', 'rotamer_outliers_percent' );
 CREATE TABLE pdbx_percentile_entity_view (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
@@ -3576,7 +3576,7 @@ CREATE TABLE pdbx_percentile_list (
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), schema location: schema/pdbx-validation-v1.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
-DROP TYPE IF EXISTS ENUM_pdbx_percentile_view_type;
+DROP TYPE IF EXISTS ENUM_pdbx_percentile_view_type CASCADE;
 CREATE TYPE ENUM_pdbx_percentile_view_type AS ENUM ( 'R_value_R_free', 'RNA_suiteness_score', 'all_atom_clashscore', 'RSRZ_outliers_percent', 'Ramachandran_outlier_percent', 'rotamer_outliers_percent' );
 CREATE TABLE pdbx_percentile_view (
 	rank DECIMAL CHECK ( rank >= 0 AND rank <= 100 ) ,
@@ -3810,7 +3810,7 @@ CREATE TABLE pdbx_phasing_dm_shell (
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), schema location: schema/pdbx-validation-v1.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
-DROP TYPE IF EXISTS ENUM_pdbx_point_symmetry_Schoenflies_symbol;
+DROP TYPE IF EXISTS ENUM_pdbx_point_symmetry_Schoenflies_symbol CASCADE;
 CREATE TYPE ENUM_pdbx_point_symmetry_Schoenflies_symbol AS ENUM ( 'I', 'O', 'T', 'C', 'D' );
 CREATE TABLE pdbx_point_symmetry (
 	"H-M_notation" TEXT ,
@@ -3827,7 +3827,7 @@ CREATE TABLE pdbx_point_symmetry (
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), schema location: schema/pdbx-validation-v1.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
-DROP TYPE IF EXISTS ENUM_pdbx_poly_seq_scheme_hetero;
+DROP TYPE IF EXISTS ENUM_pdbx_poly_seq_scheme_hetero CASCADE;
 CREATE TYPE ENUM_pdbx_poly_seq_scheme_hetero AS ENUM ( 'no', 'n', 'yes', 'y' );
 CREATE TABLE pdbx_poly_seq_scheme (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
@@ -3968,7 +3968,7 @@ CREATE TABLE pdbx_refine_tls_group (
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), schema location: schema/pdbx-validation-v1.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
-DROP TYPE IF EXISTS ENUM_pdbx_reflns_twin_type;
+DROP TYPE IF EXISTS ENUM_pdbx_reflns_twin_type CASCADE;
 CREATE TYPE ENUM_pdbx_reflns_twin_type AS ENUM ( 'merohedral', 'hemihedral', 'non-merohedral', 'pseudo-merohedral', 'epitaxial', 'tetartohedral' );
 CREATE TABLE pdbx_reflns_twin (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
@@ -4029,7 +4029,7 @@ CREATE TABLE pdbx_sequence_range (
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), schema location: schema/pdbx-validation-v1.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
-DROP TYPE IF EXISTS ENUM_pdbx_soln_scatter_type;
+DROP TYPE IF EXISTS ENUM_pdbx_soln_scatter_type CASCADE;
 CREATE TYPE ENUM_pdbx_soln_scatter_type AS ENUM ( 'x-ray', 'neutron', 'modelling' );
 CREATE TABLE pdbx_soln_scatter (
 	buffer_name TEXT ,
@@ -4111,7 +4111,7 @@ CREATE TABLE pdbx_struct_assembly_gen (
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), schema location: schema/pdbx-validation-v1.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
-DROP TYPE IF EXISTS ENUM_pdbx_struct_assembly_prop_type;
+DROP TYPE IF EXISTS ENUM_pdbx_struct_assembly_prop_type CASCADE;
 CREATE TYPE ENUM_pdbx_struct_assembly_prop_type AS ENUM ( 'ABSA (A^2)', 'SSA (A^2)', 'MORE' );
 CREATE TABLE pdbx_struct_assembly_prop (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
@@ -4148,7 +4148,7 @@ CREATE TABLE pdbx_struct_asym_gen (
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), schema location: schema/pdbx-validation-v1.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
-DROP TYPE IF EXISTS ENUM_pdbx_struct_chem_comp_diagnostics_type;
+DROP TYPE IF EXISTS ENUM_pdbx_struct_chem_comp_diagnostics_type CASCADE;
 CREATE TYPE ENUM_pdbx_struct_chem_comp_diagnostics_type AS ENUM ( 'MISSING_ATOM', 'STEREOCHEMISTRY', 'VALENCE', 'GEOMETRY', 'LABELING', 'OTHER' );
 CREATE TABLE pdbx_struct_chem_comp_diagnostics (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
@@ -4280,7 +4280,7 @@ CREATE TABLE pdbx_struct_group_components (
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), schema location: schema/pdbx-validation-v1.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
-DROP TYPE IF EXISTS ENUM_pdbx_struct_info_type;
+DROP TYPE IF EXISTS ENUM_pdbx_struct_info_type CASCADE;
 CREATE TYPE ENUM_pdbx_struct_info_type AS ENUM ( 'nonpolymer_zero_occupancy_flag', 'polymer_zero_occupancy_flag', 'multiple_model_flag', 'multiple_model_details', 'nonpolymer_details', 'missing atoms in alternate conformations' );
 CREATE TABLE pdbx_struct_info (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
@@ -4382,7 +4382,7 @@ CREATE TABLE pdbx_struct_nmr_ens_clust (
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), schema location: schema/pdbx-validation-v1.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
-DROP TYPE IF EXISTS ENUM_pdbx_struct_nmr_ens_clust_gen_medoid_conformer;
+DROP TYPE IF EXISTS ENUM_pdbx_struct_nmr_ens_clust_gen_medoid_conformer CASCADE;
 CREATE TYPE ENUM_pdbx_struct_nmr_ens_clust_gen_medoid_conformer AS ENUM ( 'Y', 'N' );
 CREATE TABLE pdbx_struct_nmr_ens_clust_gen (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
@@ -4421,7 +4421,7 @@ CREATE TABLE pdbx_struct_nmr_ens_dom_lim (
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), schema location: schema/pdbx-validation-v1.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
-DROP TYPE IF EXISTS ENUM_pdbx_struct_oper_list_type;
+DROP TYPE IF EXISTS ENUM_pdbx_struct_oper_list_type CASCADE;
 CREATE TYPE ENUM_pdbx_struct_oper_list_type AS ENUM ( 'identity operation', 'point symmetry operation', 'helical symmetry operation', 'crystal symmetry operation', '3D crystal symmetry operation', '2D crystal symmetry operation', 'transform to point frame', 'transform to helical frame', 'transform to crystal frame', 'transform to 2D crystal frame', 'transform to 3D crystal frame', 'build point asymmetric unit', 'build helical asymmetric unit', 'build 2D crystal asymmetric unit', 'build 3D crystal asymmetric unit' );
 CREATE TABLE pdbx_struct_oper_list (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
@@ -4554,9 +4554,9 @@ CREATE TABLE pdbx_struct_special_symmetry (
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), schema location: schema/pdbx-validation-v1.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
-DROP TYPE IF EXISTS ENUM_pdbx_unobs_or_zero_occ_atoms_occupancy_flag;
+DROP TYPE IF EXISTS ENUM_pdbx_unobs_or_zero_occ_atoms_occupancy_flag CASCADE;
 CREATE TYPE ENUM_pdbx_unobs_or_zero_occ_atoms_occupancy_flag AS ENUM ( '1', '0' );
-DROP TYPE IF EXISTS ENUM_pdbx_unobs_or_zero_occ_atoms_polymer_flag;
+DROP TYPE IF EXISTS ENUM_pdbx_unobs_or_zero_occ_atoms_polymer_flag CASCADE;
 CREATE TYPE ENUM_pdbx_unobs_or_zero_occ_atoms_polymer_flag AS ENUM ( 'Y', 'N' );
 CREATE TABLE pdbx_unobs_or_zero_occ_atoms (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
@@ -4585,9 +4585,9 @@ CREATE TABLE pdbx_unobs_or_zero_occ_atoms (
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), schema location: schema/pdbx-validation-v1.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
-DROP TYPE IF EXISTS ENUM_pdbx_unobs_or_zero_occ_residues_occupancy_flag;
+DROP TYPE IF EXISTS ENUM_pdbx_unobs_or_zero_occ_residues_occupancy_flag CASCADE;
 CREATE TYPE ENUM_pdbx_unobs_or_zero_occ_residues_occupancy_flag AS ENUM ( '1', '0' );
-DROP TYPE IF EXISTS ENUM_pdbx_unobs_or_zero_occ_residues_polymer_flag;
+DROP TYPE IF EXISTS ENUM_pdbx_unobs_or_zero_occ_residues_polymer_flag CASCADE;
 CREATE TYPE ENUM_pdbx_unobs_or_zero_occ_residues_polymer_flag AS ENUM ( 'Y', 'N' );
 CREATE TABLE pdbx_unobs_or_zero_occ_residues (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
@@ -5312,15 +5312,15 @@ CREATE TABLE phasing_set_refln (
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), schema location: schema/pdbx-validation-v1.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
-DROP TYPE IF EXISTS ENUM_refine_ls_hydrogen_treatment;
+DROP TYPE IF EXISTS ENUM_refine_ls_hydrogen_treatment CASCADE;
 CREATE TYPE ENUM_refine_ls_hydrogen_treatment AS ENUM ( 'refall', 'refxyz', 'refU', 'noref', 'constr', 'mixed', 'undef' );
-DROP TYPE IF EXISTS ENUM_refine_ls_matrix_type;
+DROP TYPE IF EXISTS ENUM_refine_ls_matrix_type CASCADE;
 CREATE TYPE ENUM_refine_ls_matrix_type AS ENUM ( 'full', 'fullcycle', 'atomblock', 'userblock', 'diagonal', 'sparse' );
-DROP TYPE IF EXISTS ENUM_refine_ls_structure_factor_coef;
+DROP TYPE IF EXISTS ENUM_refine_ls_structure_factor_coef CASCADE;
 CREATE TYPE ENUM_refine_ls_structure_factor_coef AS ENUM ( 'F', 'Fsqd', 'Inet' );
-DROP TYPE IF EXISTS ENUM_refine_ls_weighting_scheme;
+DROP TYPE IF EXISTS ENUM_refine_ls_weighting_scheme CASCADE;
 CREATE TYPE ENUM_refine_ls_weighting_scheme AS ENUM ( 'sigma', 'unit', 'calc' );
-DROP TYPE IF EXISTS ENUM_refine_pdbx_TLS_residual_ADP_flag;
+DROP TYPE IF EXISTS ENUM_refine_pdbx_TLS_residual_ADP_flag CASCADE;
 CREATE TYPE ENUM_refine_pdbx_TLS_residual_ADP_flag AS ENUM ( 'LIKELY RESIDUAL', 'UNVERIFIED' );
 CREATE TABLE refine (
 	"B_iso_max" DECIMAL ,
@@ -5456,7 +5456,7 @@ CREATE TABLE refine (
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), schema location: schema/pdbx-validation-v1.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
-DROP TYPE IF EXISTS ENUM_refine_B_iso_treatment;
+DROP TYPE IF EXISTS ENUM_refine_B_iso_treatment CASCADE;
 CREATE TYPE ENUM_refine_B_iso_treatment AS ENUM ( 'fixed', 'isotropic', 'anisotropic' );
 CREATE TABLE "refine_B_iso" (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
@@ -5691,7 +5691,7 @@ CREATE TABLE refine_ls_shell (
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), schema location: schema/pdbx-validation-v1.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
-DROP TYPE IF EXISTS ENUM_refine_occupancy_treatment;
+DROP TYPE IF EXISTS ENUM_refine_occupancy_treatment CASCADE;
 CREATE TYPE ENUM_refine_occupancy_treatment AS ENUM ( 'fix', 'ref' );
 CREATE TABLE refine_occupancy (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
@@ -5712,11 +5712,11 @@ CREATE TABLE refine_occupancy (
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), schema location: schema/pdbx-validation-v1.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
-DROP TYPE IF EXISTS ENUM_refln_include_status;
+DROP TYPE IF EXISTS ENUM_refln_include_status CASCADE;
 CREATE TYPE ENUM_refln_include_status AS ENUM ( 'o', '<', '-', 'x', 'h', 'l' );
-DROP TYPE IF EXISTS ENUM_refln_refinement_status;
+DROP TYPE IF EXISTS ENUM_refln_refinement_status CASCADE;
 CREATE TYPE ENUM_refln_refinement_status AS ENUM ( 'incl', 'excl', 'extn' );
-DROP TYPE IF EXISTS ENUM_refln_status;
+DROP TYPE IF EXISTS ENUM_refln_status CASCADE;
 CREATE TYPE ENUM_refln_status AS ENUM ( 'o', '<', '-', 'x', 'h', 'l', 'f' );
 CREATE TABLE refln (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
@@ -5972,7 +5972,7 @@ CREATE TABLE reflns_shell (
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), schema location: schema/pdbx-validation-v1.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
-DROP TYPE IF EXISTS ENUM_space_group_crystal_system;
+DROP TYPE IF EXISTS ENUM_space_group_crystal_system CASCADE;
 CREATE TYPE ENUM_space_group_crystal_system AS ENUM ( 'triclinic', 'monoclinic', 'orthorhombic', 'tetragonal', 'trigonal', 'hexagonal', 'cubic' );
 CREATE TABLE space_group (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
@@ -6008,7 +6008,7 @@ CREATE TABLE space_group_symop (
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), schema location: schema/pdbx-validation-v1.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
-DROP TYPE IF EXISTS ENUM_struct_pdbx_CASP_flag;
+DROP TYPE IF EXISTS ENUM_struct_pdbx_CASP_flag CASCADE;
 CREATE TYPE ENUM_struct_pdbx_CASP_flag AS ENUM ( 'Y', 'N' );
 CREATE TABLE struct (
 	"pdbx_CASP_flag" ENUM_struct_pdbx_CASP_flag ,
@@ -6088,9 +6088,9 @@ CREATE TABLE struct_conf (
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), schema location: schema/pdbx-validation-v1.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
-DROP TYPE IF EXISTS ENUM_struct_conn_pdbx_leaving_atom_flag;
+DROP TYPE IF EXISTS ENUM_struct_conn_pdbx_leaving_atom_flag CASCADE;
 CREATE TYPE ENUM_struct_conn_pdbx_leaving_atom_flag AS ENUM ( 'both', 'one', 'none' );
-DROP TYPE IF EXISTS ENUM_struct_conn_pdbx_value_order;
+DROP TYPE IF EXISTS ENUM_struct_conn_pdbx_value_order CASCADE;
 CREATE TYPE ENUM_struct_conn_pdbx_value_order AS ENUM ( 'sing', 'doub', 'trip', 'quad' );
 CREATE TABLE struct_conn (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
@@ -6152,7 +6152,7 @@ CREATE TABLE struct_conn (
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), schema location: schema/pdbx-validation-v1.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
-DROP TYPE IF EXISTS ENUM_struct_conn_type_id;
+DROP TYPE IF EXISTS ENUM_struct_conn_type_id CASCADE;
 CREATE TYPE ENUM_struct_conn_type_id AS ENUM ( 'covale', 'disulf', 'hydrog', 'metalc', 'mismat', 'saltbr', 'modres', 'covale_base', 'covale_sugar', 'covale_phosphate' );
 CREATE TABLE struct_conn_type (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
@@ -6185,9 +6185,9 @@ CREATE TABLE struct_mon_details (
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), schema location: schema/pdbx-validation-v1.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
-DROP TYPE IF EXISTS ENUM_struct_mon_nucl_pdbx_RNA_pucker_outlier_flag;
+DROP TYPE IF EXISTS ENUM_struct_mon_nucl_pdbx_RNA_pucker_outlier_flag CASCADE;
 CREATE TYPE ENUM_struct_mon_nucl_pdbx_RNA_pucker_outlier_flag AS ENUM ( 'Y', 'N' );
-DROP TYPE IF EXISTS ENUM_struct_mon_nucl_pdbx_RNA_suite;
+DROP TYPE IF EXISTS ENUM_struct_mon_nucl_pdbx_RNA_suite CASCADE;
 CREATE TYPE ENUM_struct_mon_nucl_pdbx_RNA_suite AS ENUM ( 'NonRotameric', 'Rotameric', 'Triaged/NotBinned' );
 CREATE TABLE struct_mon_nucl (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
@@ -6246,9 +6246,9 @@ CREATE TABLE struct_mon_nucl (
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), schema location: schema/pdbx-validation-v1.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
-DROP TYPE IF EXISTS ENUM_struct_mon_prot_pdbx_Ramachandran_region;
+DROP TYPE IF EXISTS ENUM_struct_mon_prot_pdbx_Ramachandran_region CASCADE;
 CREATE TYPE ENUM_struct_mon_prot_pdbx_Ramachandran_region AS ENUM ( 'Favored', 'Allowed', 'OUTLIER' );
-DROP TYPE IF EXISTS ENUM_struct_mon_prot_pdbx_flippable_side_chain;
+DROP TYPE IF EXISTS ENUM_struct_mon_prot_pdbx_flippable_side_chain CASCADE;
 CREATE TYPE ENUM_struct_mon_prot_pdbx_flippable_side_chain AS ENUM ( 'Y', 'N' );
 CREATE TABLE struct_mon_prot (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
@@ -6453,7 +6453,7 @@ CREATE TABLE struct_sheet_hbond (
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), schema location: schema/pdbx-validation-v1.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
-DROP TYPE IF EXISTS ENUM_struct_sheet_order_sense;
+DROP TYPE IF EXISTS ENUM_struct_sheet_order_sense CASCADE;
 CREATE TYPE ENUM_struct_sheet_order_sense AS ENUM ( 'parallel', 'anti-parallel' );
 CREATE TABLE struct_sheet_order (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
@@ -6506,7 +6506,7 @@ CREATE TABLE struct_sheet_range (
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), schema location: schema/pdbx-validation-v1.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
-DROP TYPE IF EXISTS ENUM_struct_sheet_topology_sense;
+DROP TYPE IF EXISTS ENUM_struct_sheet_topology_sense CASCADE;
 CREATE TYPE ENUM_struct_sheet_topology_sense AS ENUM ( 'parallel', 'anti-parallel' );
 CREATE TABLE struct_sheet_topology (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
@@ -6582,7 +6582,7 @@ CREATE TABLE struct_site_view (
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), schema location: schema/pdbx-validation-v1.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
-DROP TYPE IF EXISTS ENUM_symmetry_cell_setting;
+DROP TYPE IF EXISTS ENUM_symmetry_cell_setting CASCADE;
 CREATE TYPE ENUM_symmetry_cell_setting AS ENUM ( 'triclinic', 'monoclinic', 'orthorhombic', 'tetragonal', 'rhombohedral', 'trigonal', 'hexagonal', 'cubic' );
 CREATE TABLE symmetry (
 	"Int_Tables_number" INTEGER ,
