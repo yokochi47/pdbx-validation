@@ -13,7 +13,7 @@ if [ ! `which psql` ] ; then
 
 fi
 
-DB_NAME=pdbml_validation_clone
+DB_NAME=pdbml_valid_clone
 DB_USER=$USER
 
 echo
