@@ -61,7 +61,7 @@ if [ ! -d $XML_DIR ] ; then
  ./scripts/update_validation.sh
 fi
 
-MD5_DIR=chk_sum_valid_info
+MD5_DIR=chk_sum_psql_valid_info
 
 relations=`psql -d $DB_NAME -U $DB_USER -c "\d" | wc -l`
 

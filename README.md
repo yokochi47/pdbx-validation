@@ -70,9 +70,10 @@ File path | Document
 
 ## Release notes
 
-- **Jun 29, 2018**: Release v1.3.3
+- **Jul 10, 2018**: Release v1.3.3
 	- Update wwPDB Validation Information Dictionary from v1.295 to 1.296.
-	- Changed domain name of bulk download service (from bmrbpub.protein.osaka-u.ac.jp to bmrbpub.pdbj.org).
+	- Change domain name of bulk download service (from bmrbpub.protein.osaka-u.ac.jp to bmrbpub.pdbj.org).
+	- Revise PostgreSQL data migration scripts.
 
 - **Jun 13, 2018**: Release v1.3.2
 	- Update wwPDB Validation Information Dictionary from v1.294 to 1.295.
