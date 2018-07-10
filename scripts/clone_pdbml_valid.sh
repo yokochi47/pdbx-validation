@@ -57,7 +57,7 @@ case $ans in
   exit 1;;
 esac
 
-MD5_DIR=chk_sum_pdbml_valid
+MD5_DIR=chk_sum_psql_pdbml_valid
 
 relations=`psql -d $DB_NAME -U $DB_USER -c "\d" | wc -l`
 
@@ -88,11 +88,11 @@ err_file=$ERR_DIR/all_err
 
 if [ $sync_update != "true" ] ; then
 
- java -classpath $XSD2PGSCHEMA xml2pgtsv --xsd $XSD_SCHEMA --xml $XML_DIR/[0-9a-z]{2} --xml-file-ext gz --work-dir $DATA_DIR --sync $MD5_DIR --no-rel --inplace-doc-key-name entry_id --inplace-doc-key-name entry.id --doc-key-if-no-inplace --doc-key-name entry_id --no-valid --xml-file-ext-digest $FILE_EXT_DIGEST --db-name $DB_NAME --db-user $DB_USER 2> $err_file
+ java -Xms16000m -Xmx16000m -classpath $XSD2PGSCHEMA xml2pgtsv --xsd $XSD_SCHEMA --xml $XML_DIR/[0-9a-z]{2} --xml-file-ext gz --work-dir $DATA_DIR --sync $MD5_DIR --no-rel --inplace-doc-key-name entry_id --inplace-doc-key-name entry.id --doc-key-if-no-inplace --doc-key-name entry_id --no-valid --xml-file-ext-digest $FILE_EXT_DIGEST --db-name $DB_NAME --db-user $DB_USER 2> $err_file
 
 else
 
- java -classpath $XSD2PGSCHEMA xml2pgsql --xsd $XSD_SCHEMA --xml $XML_DIR/[0-9a-z]{2} --xml-file-ext gz --sync $MD5_DIR --no-rel --inplace-doc-key-name entry_id --inplace-doc-key-name entry.id --doc-key-if-no-inplace --doc-key-name entry_id --no-valid --xml-file-ext-digest $FILE_EXT_DIGEST --db-name $DB_NAME --db-user $DB_USER 2> $err_file
+ java -Xms16000m -Xmx16000m -classpath $XSD2PGSCHEMA xml2pgsql --xsd $XSD_SCHEMA --xml $XML_DIR/[0-9a-z]{2} --xml-file-ext gz --sync $MD5_DIR --no-rel --inplace-doc-key-name entry_id --inplace-doc-key-name entry.id --doc-key-if-no-inplace --doc-key-name entry_id --no-valid --xml-file-ext-digest $FILE_EXT_DIGEST --db-name $DB_NAME --db-user $DB_USER 2> $err_file
 
 fi
 
