@@ -9,7 +9,7 @@ if [ ! -d $XML_VALID ] ; then
 fi
 
 echo
-echo Compressing PDBML-validation...
+echo Compressing $DB_NAME...
 
 pdbml_file_list=pdbml_file_list
 
