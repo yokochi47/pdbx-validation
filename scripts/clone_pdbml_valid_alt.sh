@@ -13,7 +13,7 @@ if [ ! `which psql` ] ; then
 
 fi
 
-DB_NAME=pdbml_valid_clone
+DB_NAME=pdbml_valid_alt_clone
 DB_USER=$USER
 
 echo
@@ -38,12 +38,12 @@ if [ ! -e $XSD2PGSCHEMA ] ; then
  ./scripts/update_extlibs.sh
 fi
 
-if [ ! -d $XML_VALID ] ; then
- ./scripts/merge_pdbml_info.sh
+if [ ! -d $VALID_INFO_ALT ] ; then
+ ./scripts/extract_info.sh
 fi
 
-XML_DIR=$XML_VALID
-FILE_EXT_DIGEST=-validation-full
+XML_DIR=$VALID_INFO_ALT
+FILE_EXT_DIGEST=-validation-alt
 
 XSD_SCHEMA=$PDBX_VALIDATION_XSD
 DB_SCHEMA=$PDBX_VALIDATION_SQL
@@ -61,7 +61,7 @@ case $ans in
   exit 1;;
 esac
 
-MD5_DIR=chk_sum_psql_pdbml_valid
+MD5_DIR=chk_sum_psql_pdbml_valid_alt
 
 relations=`psql -d $DB_NAME -U $DB_USER -c "\d" | wc -l`
 
@@ -92,11 +92,11 @@ err_file=$ERR_DIR/all_err
 
 if [ $sync_update != "true" ] ; then
 
- java -Xms16000m -Xmx16000m -classpath $XSD2PGSCHEMA xml2pgtsv --xsd $XSD_SCHEMA --xml $XML_DIR/[0-9a-z]{2} --xml-file-ext gz --work-dir $DATA_DIR --sync $MD5_DIR --no-rel --inplace-doc-key-name entry_id --inplace-doc-key-name entry.id --doc-key-if-no-inplace --doc-key-name entry_id --upper-case-doc-key --no-valid --xml-file-ext-digest $FILE_EXT_DIGEST --db-name $DB_NAME --db-user $DB_USER 2> $err_file
+ java -classpath $XSD2PGSCHEMA xml2pgtsv --xsd $XSD_SCHEMA --xml $XML_DIR --work-dir $DATA_DIR --sync $MD5_DIR --no-rel --inplace-doc-key-name entry_id --inplace-doc-key-name entry.id --doc-key-if-no-inplace --doc-key-name entry_id --upper-case-doc-key --no-valid --xml-file-ext-digest $FILE_EXT_DIGEST --db-name $DB_NAME --db-user $DB_USER 2> $err_file
 
 else
 
- java -Xms16000m -Xmx16000m -classpath $XSD2PGSCHEMA xml2pgsql --xsd $XSD_SCHEMA --xml $XML_DIR/[0-9a-z]{2} --xml-file-ext gz --sync $MD5_DIR --no-rel --inplace-doc-key-name entry_id --inplace-doc-key-name entry.id --doc-key-if-no-inplace --doc-key-name entry_id --upper-case-doc-key --no-valid --xml-file-ext-digest $FILE_EXT_DIGEST --db-name $DB_NAME --db-user $DB_USER 2> $err_file
+ java -classpath $XSD2PGSCHEMA xml2pgsql --xsd $XSD_SCHEMA --xml $XML_DIR --sync $MD5_DIR --no-rel --inplace-doc-key-name entry_id --inplace-doc-key-name entry.id --doc-key-if-no-inplace --doc-key-name entry_id --upper-case-doc-key --no-valid --xml-file-ext-digest $FILE_EXT_DIGEST --db-name $DB_NAME --db-user $DB_USER 2> $err_file
 
 fi
 

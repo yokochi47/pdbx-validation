@@ -9,7 +9,7 @@ if [ ! -d $RDF_VALID ] ; then
 fi
 
 echo
-echo Compressing wwPDB/RDF-validation...
+echo Compressing $DB_NAME...
 
 rdf_file_list=rdf_file_list
 

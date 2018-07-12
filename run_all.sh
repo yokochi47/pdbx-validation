@@ -90,6 +90,7 @@ if [ $ext_pdbml_exit_code = 0 ] || [ $ext_info_exit_code = 0 ] || [ $xml_total -
 # update_validation.sh has already removed.
 # ./scripts/sync_delete_with_info.sh
 
+ ./scripts/compress_pdbml_validation_alt.sh
  ./scripts/compress_pdbml_validation.sh
  ./scripts/compress_rdf_validation.sh
 

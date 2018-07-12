@@ -70,6 +70,11 @@ File path | Document
 
 ## Release notes
 
+- **Jul 12, 2018**: Release v1.3.4
+	- Change check sum directory name from chk_sum_pdbx_valid to chk_sum_pdbml_valid.
+	- Add PDBML-validation-alt, which is lighter PDBML-validation archive by omitting PDBML-noatom content.
+	- Add PostgreSQL data migration script for PDBML-validation-alt.
+
 - **Jul 10, 2018**: Release v1.3.3
 	- Update wwPDB Validation Information Dictionary from v1.295 to 1.296.
 	- Change domain name of bulk download service (from bmrbpub.protein.osaka-u.ac.jp to bmrbpub.pdbj.org).
