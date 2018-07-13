@@ -16,9 +16,10 @@ PDBML=pdbml
 PDBML_EXT=pdbml-ext
 VALID_INFO=validation_info
 VALID_INFO_ALT=validation-info-alt
-XML_VALID_ALT=XML-validation-alt
 XML_VALID=XML-validation
 RDF_VALID=RDF-validation
+XML_VALID_ALT=XML-validation-alt
+RDF_VALID_ALT=RDF-validation-alt
 
 WWPDB_VALIDATION_XSD=resource/wwpdb_validation_v002.xsd
 WWPDB_VALIDATION_SQL=resource/wwpdb_validation_v002.sql
