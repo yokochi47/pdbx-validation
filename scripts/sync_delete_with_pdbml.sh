@@ -72,6 +72,19 @@ if [ -d $XML_VALID ] ; then
 
 fi
 
+if [ -d $RDF_VALID_ALT ] ; then
+
+ find $RDF_VALID_ALT -name '*.rdf' | cut -d '/' -f 2 | cut -d '-' -f 1 > $pdb_id_list
+
+ while read pdb_id ; do
+  if [ ! -e $SRC_DIR/${pdb_id:1:2}/$pdb_id-noatom.xml.gz ] ; then
+   echo deleting $RDF_VALID_ALT/$pdb_id-validation-alt.rdf
+   rm -f $RDF_VALID_ALT/$pdb_id-validation.rdf
+  fi
+ done < $pdb_id_list
+
+fi
+
 if [ -d $RDF_VALID ] ; then
 
  find $RDF_VALID -name '*.rdf' | cut -d '/' -f 2 | cut -d '-' -f 1 > $pdb_id_list
@@ -106,6 +119,19 @@ if [ -d $XML_VALID ] ; then
   if [ ! -e $SRC_DIR/${pdb_id:1:2}/$pdb_id-noatom.xml.gz ] ; then
    echo deleting $XML_VALID/${pdb_id:1:2}/$pdb_id-validation-full.xml.gz
    rm -f $XML_VALID/${pdb_id:1:2}/$pdb_id-validation-full.xml.gz
+  fi
+ done < $pdb_id_list
+
+fi
+
+if [ -d $RDF_VALID_ALT ] ; then
+
+ find $RDF_VALID_ALT -name '*.rdf.gz' | cut -d '/' -f 4 | cut -d '-' -f 1 > $pdb_id_list
+
+ while read pdb_id ; do
+  if [ ! -e $SRC_DIR/${pdb_id:1:2}/$pdb_id-noatom.xml.gz ] ; then
+   echo deleting $RDF_VALID_ALT/${pdb_id:1:2}/$pdb_id/$pdb_id-validation-alt.rdf.gz
+   rm -rf $RDF_VALID_ALT/${pdb_id:1:2}/$pdb_id
   fi
  done < $pdb_id_list
 

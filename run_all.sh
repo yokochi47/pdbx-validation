@@ -83,6 +83,7 @@ if [ $ext_pdbml_exit_code = 0 ] || [ $ext_info_exit_code = 0 ] || [ $xml_total -
 # ./scripts/validate_all_gz.sh
 
  ./scripts/translate_to_rdf.sh
+ ./scripts/translate_to_rdf_alt.sh # wwPDB/RDF-validation-alt
 
 # update_pdbml.sh has already removed.
 # ./scripts/sync_delete_with_pdbml.sh
@@ -90,9 +91,11 @@ if [ $ext_pdbml_exit_code = 0 ] || [ $ext_info_exit_code = 0 ] || [ $xml_total -
 # update_validation.sh has already removed.
 # ./scripts/sync_delete_with_info.sh
 
- ./scripts/compress_pdbml_validation_alt.sh
  ./scripts/compress_pdbml_validation.sh
  ./scripts/compress_rdf_validation.sh
+
+ ./scripts/compress_pdbml_validation_alt.sh # PDBML-validation-alt
+ ./scripts/compress_rdf_validation_alt.sh # wwPDB/RDF-validation-alt
 
 fi
 
