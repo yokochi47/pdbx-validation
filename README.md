@@ -81,7 +81,7 @@ File path | Document
 
 ## Release notes
 
-- **Jul 12, 2018**: Release v1.3.4
+- **Jul 17, 2018**: Release v1.3.4
 	- Change check sum directory name from chk_sum_pdbx_valid to chk_sum_pdbml_valid.
 	- Add PDBML-validation-alt, which is a light version of PDBML-validation by omitting PDBML-noatom content.
 	- Add wwPDB/validation-alt, which is a light version of wwPDB/RDF-validation by omitting PDBML-noatom content.
