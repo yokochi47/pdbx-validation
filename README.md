@@ -1,13 +1,13 @@
 ﻿# pdbx-validation
 
-The pdbx-validation is a generation tool for alternative [wwPDB validation information](https://www.wwpdb.org/validation/validation-reports), which includes [PDBx/mmCIF](http://mmcif.wwpdb.org/) compatible version of validation information (**PDBML-validation**), RDF version of validation information (**wwPDB/RDF-validation**) and a series of ontologies, **wwPDB Validation Information Dictionary**, **PDBML-validation Schema** and **wwPDB/OWL-validation**.
+The pdbx-validation is a generation tool for alternative [wwPDB validation reports](https://www.wwpdb.org/validation/validation-reports), which includes [PDBx/mmCIF](http://mmcif.wwpdb.org/) compatible version of validation information (**PDBML-validation**), RDF version of validation information (**wwPDB/RDF-validation**) and a series of ontologies, **wwPDB Validation Information Dictionary**, **PDBML-validation Schema** and **wwPDB/OWL-validation**.
 
 ## Usage
 
-- To generate the alternative wwPDB validation information of some PDB entries,<br />
+- To generate the wwPDB validation information of some PDB entries,<br />
  `./run_test.sh 5b1l 5u9b 5h0s ... `
 
-- To update the alternative wwPDB validation information of the entire PDB entry,<br />
+- To update the wwPDB validation information of the entire PDB entry,<br />
  `./run_all.sh`
 
 - Here is a map of the program.<br />
@@ -24,10 +24,10 @@ File path | Document
 [resource/wwpdb_validation_v002.xsd](https://wwpdb.org/validation/schema/wwpdb_validation_v002.xsd) | current XML Schema for wwPDB validation information (v002, rev30291)
 [scripts](https://github.com/yokochi47/pdbx-validation/blob/master/scripts) | a directory contains scripts invoked by the 'run_all.sh' script
 [virtuoso_scripts](https://github.com/yokochi47/pdbx-validation/blob/master/virtuoso_scripts) | a directory contains scripts for uploading wwPDB/RDF-validation to local SPARQL endpoint
-[stylesheet](https://github.com/yokochi47/pdbx-validation/blob/master/stylesheet) | a directory contains XSL style sheets for generation of alternative wwPDB validation information
+[stylesheet](https://github.com/yokochi47/pdbx-validation/blob/master/stylesheet) | a directory contains XSL style sheets for generation of alternative wwPDB validation reports
 [test](https://github.com/yokochi47/pdbx-validation/blob/master/test) | a directory contains resource files for test on several PDB entries
 
-## Examples of alternative wwPDB validation information
+## Examples of alternative wwPDB validation reports
 
 - PDB ID: [5B1L](https://pdbj.org/mine/summary/5b1l), Exptl. method: X-RAY DIFFRACTION
 	- PDBML-validation: [5b1l-validation-full.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/XML-validation/5b1l-validation-full.xml)
@@ -41,21 +41,32 @@ File path | Document
 	- PDBML-validation: [5h0s-validation-full.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/XML-validation/5h0s-validation-full.xml)
 	- wwPDB/RDF-validation: [5h0s-validation.rdf](https://github.com/yokochi47/pdbx-validation/blob/master/test/RDF-validation/5h0s-validation.rdf)
 
-## Bulk download service of alternative wwPDB validation information
+## Bulk download service of alternative wwPDB validation reports
 
 - Bulk download via HTTP protocol
 
 	- [PDBML-validation](https://bmrbpub.pdbj.org/archive/pdbml-valid/)
+	- [PDBML-validation-alt (light version)](https://bmrbpub.pdbj.org/archive/pdbml-valid-alt/)
 
 	- [wwPDB/RDF-validation](https://bmrbpub.pdbj.org/archive/wwpdb-rdf-valid/)
+	- [wwPDB/RDF-validation-alt (light version)](https://bmrbpub.pdbj.org/archive/wwpdb-rdf-valid-alt/)
+
 
 - Bulk download via rsync protocol
 
 	- PDBML-validation:<br />
 	 `% rsync -av --delete rsync://bmrbpub.pdbj.org/pdbml-valid .`
 
+	- PDBML-validation-alt (light version):<br />
+	 `% rsync -av --delete rsync://bmrbpub.pdbj.org/pdbml-valid-alt .`
+
 	- wwPDB/RDF-validation:<br />
 	 `% rsync -av --delete rsync://bmrbpub.pdbj.org/wwpdb-rdf-valid .`
+
+	- wwPDB/RDF-validation-alt (light version):<br />
+	 `% rsync -av --delete rsync://bmrbpub.pdbj.org/wwpdb-rdf-valid-alt .`
+
+- [PDBML-validation-alt PostgreSQL 10 dump file](https://bmrbpub.pdbj.org/resources.html)
 
 - [SPARQL endpoint for wwPDB/RDF-validation-alt](https://bmrbpub.pdbj.org/examples.html)
 
@@ -72,8 +83,8 @@ File path | Document
 
 - **Jul 12, 2018**: Release v1.3.4
 	- Change check sum directory name from chk_sum_pdbx_valid to chk_sum_pdbml_valid.
-	- Add PDBML-validation-alt, which is light version of PDBML-validation archive by omitting PDBML-noatom content.
-	- Add wwPDB/validation-alt, which is light version of wwPDB/RDF-validation archive by omitting PDBML-noatom content.
+	- Add PDBML-validation-alt, which is a light version of PDBML-validation by omitting PDBML-noatom content.
+	- Add wwPDB/validation-alt, which is a light version of wwPDB/RDF-validation by omitting PDBML-noatom content.
 	- Add PostgreSQL data migration script for PDBML-validation-alt.
 	- Add Virtuoso data upload script for wwPDB/RDF-validation-alt.
 
@@ -96,7 +107,7 @@ File path | Document
 	- Update wwPDB Validation Information Dictionary from v1.292 to 1.293.
 
 - **Apr 9, 2018**: Release v1.2.2
-	- Add description of bulk download service of the alternative wwPDB validation information.
+	- Add description of bulk download service of the alternative wwPDB validation reports.
 
 - **Apr 5, 2018**: Release v1.2.1
 	- Fix stylesheet to handle null RSR value, null medoid model number.
