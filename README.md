@@ -81,12 +81,13 @@ File path | Document
 
 ## Release notes
 
-- **Jul 17, 2018**: Release v1.3.4
+- **Jul 18, 2018**: Release v1.3.4
 	- Change check sum directory name from chk_sum_pdbx_valid to chk_sum_pdbml_valid.
 	- Add PDBML-validation-alt, which is a light version of PDBML-validation by omitting PDBML-noatom content.
 	- Add wwPDB/validation-alt, which is a light version of wwPDB/RDF-validation by omitting PDBML-noatom content.
 	- Add PostgreSQL data migration script for PDBML-validation-alt.
 	- Add Virtuoso data upload script for wwPDB/RDF-validation-alt.
+	- Add PostgreSQL data migration script for PDBML-noatom.
 
 - **Jul 10, 2018**: Release v1.3.3
 	- Update wwPDB Validation Information Dictionary from v1.295 to 1.296.
