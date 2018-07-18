@@ -18,10 +18,10 @@ File path | Document
 [schema/pdbx-validation-v1.xsd](https://github.com/yokochi47/pdbx-validation/blob/master/schema/pdbx-validation-v1.296.xsd) | PDBML-validation Schema (v1.296)
 [schema/pdbx-validation-v1.owl](https://github.com/yokochi47/pdbx-validation/blob/master/schema/pdbx-validation-v1.296.owl) | wwPDB/OWL-validation (v1.296)
 [schema/mmcif_ddl.dic](https://github.com/yokochi47/pdbx-validation/blob/master/schema/mmcif_ddl_v2.2.0.dic) | extended mmCIF DDL Core Dictionary (dubbed as v2.2.0)
-[resource/mmcif_pdbx_v50.dic](http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic) | current PDBx/mmCIF Dictionary (v5.296)
-[resource/pdbx-v50.xsd](http://mmcif.wwpdb.org/schema/pdbx-v50.xsd) | current PDBML Schema (v5.296)
-[resource/pdbx-v50.owl](https://rdf.wwpdb.org/schema/pdbx-v50.owl) | current PDBx ontology, ontology for wwPDB/RDF (v5.296)
-[resource/wwpdb_validation_v002.xsd](https://wwpdb.org/validation/schema/wwpdb_validation_v002.xsd) | current XML Schema for wwPDB validation information (v002, rev30291)
+[resource/mmcif_pdbx_v50.dic](http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic) | PDBx/mmCIF Dictionary (v5.296)
+[resource/pdbx-v50.xsd](http://mmcif.wwpdb.org/schema/pdbx-v50.xsd) | PDBML Schema (v5.296)
+[resource/pdbx-v50.owl](https://rdf.wwpdb.org/schema/pdbx-v50.owl) | PDBx ontology, ontology for wwPDB/RDF (v5.296)
+[resource/wwpdb_validation_v002.xsd](https://wwpdb.org/validation/schema/wwpdb_validation_v002.xsd) | XML Schema for wwPDB validation reports (v002, rev30291)
 [scripts](https://github.com/yokochi47/pdbx-validation/blob/master/scripts) | a directory contains scripts invoked by the 'run_all.sh' script
 [virtuoso_scripts](https://github.com/yokochi47/pdbx-validation/blob/master/virtuoso_scripts) | a directory contains scripts for uploading wwPDB/RDF-validation to local SPARQL endpoint
 [stylesheet](https://github.com/yokochi47/pdbx-validation/blob/master/stylesheet) | a directory contains XSL style sheets for generation of alternative wwPDB validation reports
@@ -81,12 +81,13 @@ File path | Document
 
 ## Release notes
 
-- **Jul 17, 2018**: Release v1.3.4
+- **Jul 18, 2018**: Release v1.3.4
 	- Change check sum directory name from chk_sum_pdbx_valid to chk_sum_pdbml_valid.
 	- Add PDBML-validation-alt, which is a light version of PDBML-validation by omitting PDBML-noatom content.
 	- Add wwPDB/validation-alt, which is a light version of wwPDB/RDF-validation by omitting PDBML-noatom content.
 	- Add PostgreSQL data migration script for PDBML-validation-alt.
 	- Add Virtuoso data upload script for wwPDB/RDF-validation-alt.
+	- Add PostgreSQL data migration script for PDBML-noatom.
 
 - **Jul 10, 2018**: Release v1.3.3
 	- Update wwPDB Validation Information Dictionary from v1.295 to 1.296.

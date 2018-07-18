@@ -21,6 +21,9 @@ RDF_VALID=RDF-validation
 XML_VALID_ALT=XML-validation-alt
 RDF_VALID_ALT=RDF-validation-alt
 
+PDBML_XSD=resource/pdbx-v50.xsd
+PDBML_SQL=resource/pdbx-v50.sql
+
 WWPDB_VALIDATION_XSD=resource/wwpdb_validation_v002.xsd
 WWPDB_VALIDATION_SQL=resource/wwpdb_validation_v002.sql
 
