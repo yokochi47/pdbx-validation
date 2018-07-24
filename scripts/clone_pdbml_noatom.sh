@@ -8,7 +8,6 @@ if [ ! `which psql` ] ; then
 
  echo "psql: command not found..."
  echo "Please install PostgreSQL (https://www.postgresql.org/)."
-
  exit 1
 
 fi
@@ -125,7 +124,6 @@ else
 
  echo
  echo -e "${red}$errs errors were detected. Please check the log files for more details.${normal}"
-
  exit 1
 
 fi

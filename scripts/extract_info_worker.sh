@@ -61,14 +61,9 @@ do
 
   if [ -e $pdbml_ext_file ] && ( [ ! -e $info_alt_file ] || [ -e $err_file ] ) ; then
 
-   java -jar $SAXON -s:$valid_file -xsl:$EXT_INFO_XSL -o:$info_alt_file pdbml_ext_file=../$pdbml_ext_file 2> $err_file
+   java -jar $SAXON -s:$valid_file -xsl:$EXT_INFO_XSL -o:$info_alt_file pdbml_ext_file=../$pdbml_ext_file 2> $err_file || ( cat $err_file; exit 1 )
 
-   if [ $? = 0 ] ; then
-    rm -f $err_file
-   else
-    cat $err_file
-    exit 1
-   fi
+   rm -f $err_file
 
    if [ $VALIDATE = 'true' ] ; then
 

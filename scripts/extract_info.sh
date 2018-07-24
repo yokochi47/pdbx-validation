@@ -56,8 +56,10 @@ if [ $err != 0 ] || [ $total != $last ] ; then
  done
 
  if [ $? != 0 ] ; then
+
   echo "$0 aborted."
   exit 1
+
  fi
 
  wait

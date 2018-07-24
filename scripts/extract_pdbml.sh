@@ -30,14 +30,9 @@ err=xsd2extract_pdbml.err
 
 if [ ! -e $EXT_PDBML_XSL ] ; then
 
- java -jar $SAXON -s:$PDBX_VALIDATION_XSD -xsl:$XSD2EXT_PDBML_XSL -o:$EXT_PDBML_XSL 2> $err
+ java -jar $SAXON -s:$PDBX_VALIDATION_XSD -xsl:$XSD2EXT_PDBML_XSL -o:$EXT_PDBML_XSL 2> $err || ( cat $err; exit 1 )
 
- if [ $? = 0 ] ; then
-  rm -f $err
- else
-  cat $err
-  exit 1
- fi
+ rm -f $err
 
  echo
  echo Generated: $EXT_PDBML_XSL
@@ -74,8 +69,10 @@ if [ $err != 0 ] || [ $total != $last ] ; then
  done
 
  if [ $? != 0 ] ; then
+
   echo "$0 aborted."
   exit 1
+
  fi
 
  wait
