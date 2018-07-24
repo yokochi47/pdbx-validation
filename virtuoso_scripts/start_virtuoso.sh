@@ -8,7 +8,6 @@ if [ $? != 0 ] ; then
 
  echo "isql: command not found..."
  echo "Please install Virtuoso (https://www.openlinksw.com/wiki/main/Main)."
-
  exit 1
 
 fi
@@ -35,7 +34,6 @@ if [ $? = 0 ] ; then
  isql $VIRTUOSO_DB_PORT $VIRTUOSO_DB_USER $VIRTUOSO_DB_PASS exec='grant execute on "DB.DBA.SPARQL_SINV_IMP" to "SPARQL";'
 
  echo "virtuoso is already running."
-
  exit 0
 
 fi
@@ -45,18 +43,12 @@ VIRTUOSO_DATA_DIR=$VIRTUOSO_HOME/var/lib/virtuoso/db
 echo "start virtuoso (local)"
 cd $VIRTUOSO_DATA_DIR; virtuoso-t
 
-pid=`pidof virtuoso-t`
+pid=`pidof virtuoso-t` || exit 1
 
-if [ $? = 0 ] ; then
+oom_score_adj=`cat /proc/$pid/oom_score_adj`
 
- oom_score_adj=`cat /proc/$pid/oom_score_adj`
-
- echo "pid:           "$pid
- echo "oom_score_adj: "$oom_score_adj
-
-else
- exit 1
-fi
+echo "pid:           "$pid
+echo "oom_score_adj: "$oom_score_adj
 
 iter=1
 
