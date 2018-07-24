@@ -21,7 +21,6 @@ if [ -e $DIC_FILE-parser.log ] ; then
 
  echo
  head $DIC_FILE-parser.log
-
  exit 1
 
 fi
@@ -30,7 +29,6 @@ if [ -e $DIC_FILE-diag.log ] ; then
 
  echo
  head $DIC_FILE-diag.log
-
  exit 1
 
 fi

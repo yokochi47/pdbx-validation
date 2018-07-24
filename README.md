@@ -31,15 +31,21 @@ File path | Document
 
 - PDB ID: [5B1L](https://pdbj.org/mine/summary/5b1l), Exptl. method: X-RAY DIFFRACTION
 	- PDBML-validation: [5b1l-validation-full.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/XML-validation/5b1l-validation-full.xml)
+	- PDBML-validation-alt: [5b1l-validation-alt.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/XML-validation-alt/5b1l-validation-alt.xml)
 	- wwPDB/RDF-validation: [5b1l-validation.rdf](https://github.com/yokochi47/pdbx-validation/blob/master/test/RDF-validation/5b1l-validation.rdf)
+	- wwPDB/RDF-validation-alt: [5b1l-validation-alt.rdf](https://github.com/yokochi47/pdbx-validation/blob/master/test/RDF-validation-alt/5b1l-validation-alt.rdf)
 
 - PDB ID: [5U9B](https://pdbj.org/mine/summary/5u9b), Exptl. method: SOLUTION NMR
 	- PDBML-validation: [5u9b-validation-full.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/XML-validation/5u9b-validation-full.xml)
+	- PDBML-validation-alt: [5u9b-validation-alt.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/XML-validation-alt/5u9b-validation-alt.xml)
 	- wwPDB/RDF-validation: [5u9b-validation.rdf](https://github.com/yokochi47/pdbx-validation/blob/master/test/RDF-validation/5u9b-validation.rdf)
+	- wwPDB/RDF-validation-alt: [5u9b-validation-alt.rdf](https://github.com/yokochi47/pdbx-validation/blob/master/test/RDF-validation-alt/5u9b-validation-alt.rdf)
 
 - PDB ID: [5H0S](https://pdbj.org/mine/summary/5h0s), Exptl. method: ELECTRON MICROSCOPY
 	- PDBML-validation: [5h0s-validation-full.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/XML-validation/5h0s-validation-full.xml)
+	- PDBML-validation: [5h0s-validation-alt.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/XML-validation-alt/5h0s-validation-alt.xml)
 	- wwPDB/RDF-validation: [5h0s-validation.rdf](https://github.com/yokochi47/pdbx-validation/blob/master/test/RDF-validation/5h0s-validation.rdf)
+	- wwPDB/RDF-validation-alt: [5h0s-validation-alt.rdf](https://github.com/yokochi47/pdbx-validation/blob/master/test/RDF-validation-alt/5h0s-validation-alt.rdf)
 
 ## Bulk download service of alternative wwPDB validation reports
 
@@ -50,7 +56,6 @@ File path | Document
 
 	- [wwPDB/RDF-validation](https://bmrbpub.pdbj.org/archive/wwpdb-rdf-valid/)
 	- [wwPDB/RDF-validation-alt (light version)](https://bmrbpub.pdbj.org/archive/wwpdb-rdf-valid-alt/)
-
 
 - Bulk download via rsync protocol
 

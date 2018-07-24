@@ -22,8 +22,10 @@ for proc_id in `seq 1 $MAXPROCS` ; do
 done
 
 if [ $? != 0 ] ; then
+
  echo "$0 aborted."
  exit 1
+
 fi
 
 wait

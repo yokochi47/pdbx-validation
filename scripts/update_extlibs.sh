@@ -4,7 +4,6 @@ if [ ! `which mvn` ] ; then
 
  echo "mvn: command not found..."
  echo "Please install Apache Maven (https://maven.apache.org)."
-
  exit 1
 
 fi
@@ -13,7 +12,6 @@ if [ ! `which git` ] ; then
 
  echo "git: commnd not found..."
  echo "Please install Git (https://git-scm.com)."
-
  exit 1
 
 fi

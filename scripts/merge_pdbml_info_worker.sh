@@ -62,14 +62,9 @@ do
 
   if [ -e $info_alt_file ] && ( ( [ ! -e $pdbml_valid_file ] && [ ! -e $pdbml_gz_valid_file ] ) || [ -e $err_file ] ); then
 
-   java -jar $SAXON -s:$pdbml_ext_file -xsl:$MERGE_PDBML_INFO_XSL -o:$pdbml_valid_file info_alt_file=../$info_alt_file 2> $err_file
+   java -jar $SAXON -s:$pdbml_ext_file -xsl:$MERGE_PDBML_INFO_XSL -o:$pdbml_valid_file info_alt_file=../$info_alt_file 2> $err_file || ( cat $err_file; exit 1 )
 
-   if [ $? = 0 ] ; then
-    rm -f $err_file
-   else
-    cat $err_file
-    exit 1
-   fi
+   rm -f $err_file
 
    if [ $VALIDATE = 'true' ] ; then
 
