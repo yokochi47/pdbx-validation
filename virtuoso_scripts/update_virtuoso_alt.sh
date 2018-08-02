@@ -11,7 +11,7 @@ fi
 
 DB_NAME=pdb-validation-alt
 
-rm -f /tmp/pdb-validation-alt-virtuoso-last
+rm -f /tmp/pdbxv-alt-virtuoso-last
 
 init=false
 change=`find $RDF_VALID_ALT -name '*.rdf.gz' -mtime -4 | wc -l`
@@ -114,7 +114,7 @@ wait
 
 isql $VIRTUOSO_DB_PORT $VIRTUOSO_DB_USER $VIRTUOSO_DB_PASS exec="checkpoint;" || exit 1
 
-date -u +"%b %d, %Y" > /tmp/pdb-virtuoso-last
+date -u +"%b %d, %Y" > /tmp/pdbxv-alt-virtuoso-last
 
 echo "RDF->VIRTUOSO (prefix:"$DB_NAME") is completed."
 
