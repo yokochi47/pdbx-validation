@@ -16,19 +16,19 @@
 --  retrieve field annotation: false
 --
 -- Statistics of schema:
---  Generated 549 tables (6672 fields), 0 attr groups, 0 model groups in total
+--  Generated 548 tables (6669 fields), 0 attr groups, 0 model groups in total
 --   Namespaces:
 --    http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), http://www.w3.org/2001/XMLSchema (xsd)
 --   Schema locations:
 --    resource/pdbx-v50.xsd
 --   Table types:
---    0 root, 0 root children, 0 admin roots, 549 admin children
+--    0 root, 0 root children, 0 admin roots, 548 admin children
 --   System keys:
 --    0 primary keys (0 unique constraints), 0 foreign keys (329 key references), 0 nested keys (0 as attribute)
 --   User keys:
---    549 document keys, 0 serial keys, 0 xpath keys
+--    548 document keys, 0 serial keys, 0 xpath keys
 --   Contents:
---    1004 attributes (0 in-place document keys), 5119 elements (0 in-place document keys), 0 simple contents (0 as attribute, 0 as conditional attribute)
+--    1002 attributes (0 in-place document keys), 5119 elements (0 in-place document keys), 0 simple contents (0 as attribute, 0 as conditional attribute)
 --   Wild cards:
 --    0 any elements, 0 any attributes
 --
@@ -210,7 +210,6 @@ DROP TABLE IF EXISTS pdbx_chem_comp_model_reference CASCADE;
 DROP TABLE IF EXISTS pdbx_chem_comp_nonstandard CASCADE;
 DROP TABLE IF EXISTS pdbx_chem_comp_subcomponent_entity_list CASCADE;
 DROP TABLE IF EXISTS pdbx_chem_comp_subcomponent_struct_conn CASCADE;
-DROP TABLE IF EXISTS pdbx_chem_comp_synonyms CASCADE;
 DROP TABLE IF EXISTS pdbx_chem_comp_upload_depositor_info CASCADE;
 DROP TABLE IF EXISTS pdbx_columninfo CASCADE;
 DROP TABLE IF EXISTS pdbx_connect CASCADE;
@@ -6533,21 +6532,6 @@ CREATE TABLE pdbx_chem_comp_subcomponent_struct_conn (
 	type ENUM_pdbx_chem_comp_subcomponent_struct_conn_type ,
 -- ATTRIBUTE
 	id INTEGER NOT NULL
-);
-
---
--- (quoted from pdbx_chem_comp_synonymsType)
--- PDBX_CHEM_COMP_SYNONYMS holds chemical name and synonym correspondences.
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
--- type: admin child, content: true, list: false, bridge: false, virtual: false
---
-CREATE TABLE pdbx_chem_comp_synonyms (
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
--- ATTRIBUTE
-	name TEXT NOT NULL ,
--- ATTRIBUTE
-	synonym TEXT NOT NULL
 );
 
 --
