@@ -1,7 +1,7 @@
 ###########################################################################
 #
 # File:  mmcif_pdbx_validation.dic
-# Date:  Wed Jun 13 14:51:20 JST 2018
+# Date:  Tue Jul 24 15:10:00 JST 2018
 #
 # Created from files noted:
 #        mmcif_pdbx_v50.dic   - PDB Exchange Data Dictionary (V5.297)
@@ -267,14 +267,14 @@ data_mmcif_pdbx_validation.dic
 >       _em_imaging.nominal_cs
 >     + Change units for emd_fiducial_markers.diameter, _em_fiducial_markers.diameter
 >     + Change units, range, and mandatory flag for
->       _em_focused_ion_beam.dose_rate and 
+>       _em_focused_ion_beam.dose_rate and
 >       _emd_sectioning_focused_ion_beam.dose_rate
 >     + Add 'JEOL 3100FEF' to em_imaging.microscope_model
 ;
   1.296   2018-06-29
 ;
 >     + Update point_group regular expression type
->     + Add beamline 'SACLA BEAMLINE BL2' and 'APS BEAMLINE 34-ID' 
+>     + Add beamline 'SACLA BEAMLINE BL2' and 'APS BEAMLINE 34-ID'
 >       to _diffrn_source.type enumeration
 >     + Change context of _citation_author.identifier_ORCID to make public
 >     + Extend enumerations with _pdbx_audit_support.funding_organization
@@ -3505,278 +3505,278 @@ save__diffrn_source.type
     _pdbx_item_enumeration.name
     _pdbx_item_enumeration.value
     _pdbx_item_enumeration.detail
-     "_diffrn_source.type"  "AichiSR BEAMLINE BL2S1"                         SYNCHROTRON  
-     "_diffrn_source.type"  "Agilent SuperNova"                              "SEALED TUBE"  
-     "_diffrn_source.type"  "ALBA BEAMLINE XALOC"                            SYNCHROTRON  
-     "_diffrn_source.type"  "ALS BEAMLINE 4.2.2"                             SYNCHROTRON  
-     "_diffrn_source.type"  "ALS BEAMLINE 5.0.1"                             SYNCHROTRON  
-     "_diffrn_source.type"  "ALS BEAMLINE 5.0.2"                             SYNCHROTRON  
-     "_diffrn_source.type"  "ALS BEAMLINE 5.0.3"                             SYNCHROTRON  
-     "_diffrn_source.type"  "ALS BEAMLINE 8.2.1"                             SYNCHROTRON  
-     "_diffrn_source.type"  "ALS BEAMLINE 8.2.2"                             SYNCHROTRON  
-     "_diffrn_source.type"  "ALS BEAMLINE 8.3.1"                             SYNCHROTRON  
-     "_diffrn_source.type"  "ALS BEAMLINE 12.3.1"                            SYNCHROTRON  
-     "_diffrn_source.type"  "APS BEAMLINE 5ID-B"                             SYNCHROTRON  
-     "_diffrn_source.type"  "APS BEAMLINE 1-BM-C"                            SYNCHROTRON  
-     "_diffrn_source.type"  "APS BEAMLINE 8-BM"                              SYNCHROTRON  
-     "_diffrn_source.type"  "APS BEAMLINE 14-BM-C"                           SYNCHROTRON  
-     "_diffrn_source.type"  "APS BEAMLINE 14-BM-D"                           SYNCHROTRON  
-     "_diffrn_source.type"  "APS BEAMLINE 14-ID-B"                           SYNCHROTRON  
-     "_diffrn_source.type"  "APS BEAMLINE 17-BM"                             SYNCHROTRON  
-     "_diffrn_source.type"  "APS BEAMLINE 17-ID"                             SYNCHROTRON  
-     "_diffrn_source.type"  "APS BEAMLINE 18-ID"                             SYNCHROTRON  
-     "_diffrn_source.type"  "APS BEAMLINE 19-BM"                             SYNCHROTRON  
-     "_diffrn_source.type"  "APS BEAMLINE 19-ID"                             SYNCHROTRON  
-     "_diffrn_source.type"  "APS BEAMLINE 21-ID-D"                           SYNCHROTRON  
-     "_diffrn_source.type"  "APS BEAMLINE 21-ID-E"                           SYNCHROTRON  
-     "_diffrn_source.type"  "APS BEAMLINE 21-ID-F"                           SYNCHROTRON  
-     "_diffrn_source.type"  "APS BEAMLINE 21-ID-G"                           SYNCHROTRON  
-     "_diffrn_source.type"  "APS BEAMLINE 22-BM"                             SYNCHROTRON  
-     "_diffrn_source.type"  "APS BEAMLINE 22-ID"                             SYNCHROTRON  
-     "_diffrn_source.type"  "APS BEAMLINE 23-BM-B"                           SYNCHROTRON  
-     "_diffrn_source.type"  "APS BEAMLINE 23-ID-B"                           SYNCHROTRON  
-     "_diffrn_source.type"  "APS BEAMLINE 23-ID-D"                           SYNCHROTRON  
-     "_diffrn_source.type"  "APS BEAMLINE 24-ID-C"                           SYNCHROTRON  
-     "_diffrn_source.type"  "APS BEAMLINE 24-ID-E"                           SYNCHROTRON  
-     "_diffrn_source.type"  "APS BEAMLINE 31-ID"                             SYNCHROTRON  
-     "_diffrn_source.type"  "APS BEAMLINE 32-ID"                             SYNCHROTRON  
+     "_diffrn_source.type"  "AichiSR BEAMLINE BL2S1"                         SYNCHROTRON
+     "_diffrn_source.type"  "Agilent SuperNova"                              "SEALED TUBE"
+     "_diffrn_source.type"  "ALBA BEAMLINE XALOC"                            SYNCHROTRON
+     "_diffrn_source.type"  "ALS BEAMLINE 4.2.2"                             SYNCHROTRON
+     "_diffrn_source.type"  "ALS BEAMLINE 5.0.1"                             SYNCHROTRON
+     "_diffrn_source.type"  "ALS BEAMLINE 5.0.2"                             SYNCHROTRON
+     "_diffrn_source.type"  "ALS BEAMLINE 5.0.3"                             SYNCHROTRON
+     "_diffrn_source.type"  "ALS BEAMLINE 8.2.1"                             SYNCHROTRON
+     "_diffrn_source.type"  "ALS BEAMLINE 8.2.2"                             SYNCHROTRON
+     "_diffrn_source.type"  "ALS BEAMLINE 8.3.1"                             SYNCHROTRON
+     "_diffrn_source.type"  "ALS BEAMLINE 12.3.1"                            SYNCHROTRON
+     "_diffrn_source.type"  "APS BEAMLINE 5ID-B"                             SYNCHROTRON
+     "_diffrn_source.type"  "APS BEAMLINE 1-BM-C"                            SYNCHROTRON
+     "_diffrn_source.type"  "APS BEAMLINE 8-BM"                              SYNCHROTRON
+     "_diffrn_source.type"  "APS BEAMLINE 14-BM-C"                           SYNCHROTRON
+     "_diffrn_source.type"  "APS BEAMLINE 14-BM-D"                           SYNCHROTRON
+     "_diffrn_source.type"  "APS BEAMLINE 14-ID-B"                           SYNCHROTRON
+     "_diffrn_source.type"  "APS BEAMLINE 17-BM"                             SYNCHROTRON
+     "_diffrn_source.type"  "APS BEAMLINE 17-ID"                             SYNCHROTRON
+     "_diffrn_source.type"  "APS BEAMLINE 18-ID"                             SYNCHROTRON
+     "_diffrn_source.type"  "APS BEAMLINE 19-BM"                             SYNCHROTRON
+     "_diffrn_source.type"  "APS BEAMLINE 19-ID"                             SYNCHROTRON
+     "_diffrn_source.type"  "APS BEAMLINE 21-ID-D"                           SYNCHROTRON
+     "_diffrn_source.type"  "APS BEAMLINE 21-ID-E"                           SYNCHROTRON
+     "_diffrn_source.type"  "APS BEAMLINE 21-ID-F"                           SYNCHROTRON
+     "_diffrn_source.type"  "APS BEAMLINE 21-ID-G"                           SYNCHROTRON
+     "_diffrn_source.type"  "APS BEAMLINE 22-BM"                             SYNCHROTRON
+     "_diffrn_source.type"  "APS BEAMLINE 22-ID"                             SYNCHROTRON
+     "_diffrn_source.type"  "APS BEAMLINE 23-BM-B"                           SYNCHROTRON
+     "_diffrn_source.type"  "APS BEAMLINE 23-ID-B"                           SYNCHROTRON
+     "_diffrn_source.type"  "APS BEAMLINE 23-ID-D"                           SYNCHROTRON
+     "_diffrn_source.type"  "APS BEAMLINE 24-ID-C"                           SYNCHROTRON
+     "_diffrn_source.type"  "APS BEAMLINE 24-ID-E"                           SYNCHROTRON
+     "_diffrn_source.type"  "APS BEAMLINE 31-ID"                             SYNCHROTRON
+     "_diffrn_source.type"  "APS BEAMLINE 32-ID"                             SYNCHROTRON
      "_diffrn_source.type"  "APS BEAMLINE 34-ID"                             SYNCHROTRON
-     "_diffrn_source.type"  "AUSTRALIAN SYNCHROTRON BEAMLINE MX1"            SYNCHROTRON  
-     "_diffrn_source.type"  "AUSTRALIAN SYNCHROTRON BEAMLINE MX2"            SYNCHROTRON  
-     "_diffrn_source.type"  "BESSY BEAMLINE 14.1"                            SYNCHROTRON  
-     "_diffrn_source.type"  "BESSY BEAMLINE 14.2"                            SYNCHROTRON  
-     "_diffrn_source.type"  "BESSY BEAMLINE 14.3"                            SYNCHROTRON  
-     "_diffrn_source.type"  "BRUKER AXS MICROSTAR"                           "ROTATING ANODE"  
-     "_diffrn_source.type"  "BRUKER AXS MICROSTAR-H"                         "ROTATING ANODE"  
-     "_diffrn_source.type"  "BRUKER D8 QUEST"                                "SEALED TUBE"  
-     "_diffrn_source.type"  "BRUKER IMUS MICROFOCUS"                         "SEALED TUBE"  
-     "_diffrn_source.type"  "BRUKER METALJET"                                "LIQUID ANODE"  
+     "_diffrn_source.type"  "AUSTRALIAN SYNCHROTRON BEAMLINE MX1"            SYNCHROTRON
+     "_diffrn_source.type"  "AUSTRALIAN SYNCHROTRON BEAMLINE MX2"            SYNCHROTRON
+     "_diffrn_source.type"  "BESSY BEAMLINE 14.1"                            SYNCHROTRON
+     "_diffrn_source.type"  "BESSY BEAMLINE 14.2"                            SYNCHROTRON
+     "_diffrn_source.type"  "BESSY BEAMLINE 14.3"                            SYNCHROTRON
+     "_diffrn_source.type"  "BRUKER AXS MICROSTAR"                           "ROTATING ANODE"
+     "_diffrn_source.type"  "BRUKER AXS MICROSTAR-H"                         "ROTATING ANODE"
+     "_diffrn_source.type"  "BRUKER D8 QUEST"                                "SEALED TUBE"
+     "_diffrn_source.type"  "BRUKER IMUS MICROFOCUS"                         "SEALED TUBE"
+     "_diffrn_source.type"  "BRUKER METALJET"                                "LIQUID ANODE"
      "_diffrn_source.type"  "BRUKER TURBO X-RAY SOURCE"                      "ROTATING ANODE"
-     "_diffrn_source.type"  "BRUKER X8 PROTEUM"                              "ROTATING ANODE"     
-     "_diffrn_source.type"  "BSRF BEAMLINE 1W2B"                             SYNCHROTRON  
-     "_diffrn_source.type"  "BSRF BEAMLINE 3W1A"                             SYNCHROTRON  
-     "_diffrn_source.type"  "CAMD BEAMLINE GCPCC"                            SYNCHROTRON  
-     "_diffrn_source.type"  "CHESS BEAMLINE A1"                              SYNCHROTRON  
-     "_diffrn_source.type"  "CHESS BEAMLINE F1"                              SYNCHROTRON  
-     "_diffrn_source.type"  "CHESS BEAMLINE F2"                              SYNCHROTRON  
-     "_diffrn_source.type"  "CHESS BEAMLINE F3"                              SYNCHROTRON  
-     "_diffrn_source.type"  "CLSI BEAMLINE 08B1-1"                           SYNCHROTRON  
-     "_diffrn_source.type"  "CLSI BEAMLINE 08ID-1"                           SYNCHROTRON  
-     "_diffrn_source.type"  "Cu FINE FOCUS"                                  "ROTATING ANODE"  
-     "_diffrn_source.type"  "DIAMOND BEAMLINE I02"                           SYNCHROTRON  
-     "_diffrn_source.type"  "DIAMOND BEAMLINE I03"                           SYNCHROTRON  
-     "_diffrn_source.type"  "DIAMOND BEAMLINE I04"                           SYNCHROTRON  
-     "_diffrn_source.type"  "DIAMOND BEAMLINE I04-1"                         SYNCHROTRON  
-     "_diffrn_source.type"  "DIAMOND BEAMLINE I23"                           SYNCHROTRON  
-     "_diffrn_source.type"  "DIAMOND BEAMLINE I24"                           SYNCHROTRON  
-     "_diffrn_source.type"  "ELETTRA BEAMLINE 5.2R"                          SYNCHROTRON  
-     "_diffrn_source.type"  "ELLIOTT GX-3"                                   "ROTATING ANODE"  
-     "_diffrn_source.type"  "ELLIOTT GX-13"                                  "ROTATING ANODE"  
-     "_diffrn_source.type"  "ELLIOTT GX-18"                                  "ROTATING ANODE"  
-     "_diffrn_source.type"  "ELLIOTT GX-20"                                  "ROTATING ANODE"  
-     "_diffrn_source.type"  "ELLIOTT GX-21"                                  "ROTATING ANODE"  
-     "_diffrn_source.type"  "ELLIOTT GX-6"                                   "ROTATING ANODE"  
-     "_diffrn_source.type"  "EMBL/DESY, HAMBURG BEAMLINE BW7A"               SYNCHROTRON  
-     "_diffrn_source.type"  "EMBL/DESY, HAMBURG BEAMLINE BW7B"               SYNCHROTRON  
-     "_diffrn_source.type"  "EMBL/DESY, HAMBURG BEAMLINE X11"                SYNCHROTRON  
-     "_diffrn_source.type"  "EMBL/DESY, HAMBURG BEAMLINE X12"                SYNCHROTRON  
-     "_diffrn_source.type"  "EMBL/DESY, HAMBURG BEAMLINE X13"                SYNCHROTRON  
-     "_diffrn_source.type"  "EMBL/DESY, HAMBURG BEAMLINE X31"                SYNCHROTRON  
+     "_diffrn_source.type"  "BRUKER X8 PROTEUM"                              "ROTATING ANODE"
+     "_diffrn_source.type"  "BSRF BEAMLINE 1W2B"                             SYNCHROTRON
+     "_diffrn_source.type"  "BSRF BEAMLINE 3W1A"                             SYNCHROTRON
+     "_diffrn_source.type"  "CAMD BEAMLINE GCPCC"                            SYNCHROTRON
+     "_diffrn_source.type"  "CHESS BEAMLINE A1"                              SYNCHROTRON
+     "_diffrn_source.type"  "CHESS BEAMLINE F1"                              SYNCHROTRON
+     "_diffrn_source.type"  "CHESS BEAMLINE F2"                              SYNCHROTRON
+     "_diffrn_source.type"  "CHESS BEAMLINE F3"                              SYNCHROTRON
+     "_diffrn_source.type"  "CLSI BEAMLINE 08B1-1"                           SYNCHROTRON
+     "_diffrn_source.type"  "CLSI BEAMLINE 08ID-1"                           SYNCHROTRON
+     "_diffrn_source.type"  "Cu FINE FOCUS"                                  "ROTATING ANODE"
+     "_diffrn_source.type"  "DIAMOND BEAMLINE I02"                           SYNCHROTRON
+     "_diffrn_source.type"  "DIAMOND BEAMLINE I03"                           SYNCHROTRON
+     "_diffrn_source.type"  "DIAMOND BEAMLINE I04"                           SYNCHROTRON
+     "_diffrn_source.type"  "DIAMOND BEAMLINE I04-1"                         SYNCHROTRON
+     "_diffrn_source.type"  "DIAMOND BEAMLINE I23"                           SYNCHROTRON
+     "_diffrn_source.type"  "DIAMOND BEAMLINE I24"                           SYNCHROTRON
+     "_diffrn_source.type"  "ELETTRA BEAMLINE 5.2R"                          SYNCHROTRON
+     "_diffrn_source.type"  "ELLIOTT GX-3"                                   "ROTATING ANODE"
+     "_diffrn_source.type"  "ELLIOTT GX-13"                                  "ROTATING ANODE"
+     "_diffrn_source.type"  "ELLIOTT GX-18"                                  "ROTATING ANODE"
+     "_diffrn_source.type"  "ELLIOTT GX-20"                                  "ROTATING ANODE"
+     "_diffrn_source.type"  "ELLIOTT GX-21"                                  "ROTATING ANODE"
+     "_diffrn_source.type"  "ELLIOTT GX-6"                                   "ROTATING ANODE"
+     "_diffrn_source.type"  "EMBL/DESY, HAMBURG BEAMLINE BW7A"               SYNCHROTRON
+     "_diffrn_source.type"  "EMBL/DESY, HAMBURG BEAMLINE BW7B"               SYNCHROTRON
+     "_diffrn_source.type"  "EMBL/DESY, HAMBURG BEAMLINE X11"                SYNCHROTRON
+     "_diffrn_source.type"  "EMBL/DESY, HAMBURG BEAMLINE X12"                SYNCHROTRON
+     "_diffrn_source.type"  "EMBL/DESY, HAMBURG BEAMLINE X13"                SYNCHROTRON
+     "_diffrn_source.type"  "EMBL/DESY, HAMBURG BEAMLINE X31"                SYNCHROTRON
      "_diffrn_source.type"  "ENRAF-NONIUS FR571"                             "ROTATING ANODE"
-     "_diffrn_source.type"  "ENRAF-NONIUS FR590"                             "ROTATING ANODE"       
-     "_diffrn_source.type"  "ENRAF-NONIUS FR591"                             "ROTATING ANODE"  
+     "_diffrn_source.type"  "ENRAF-NONIUS FR590"                             "ROTATING ANODE"
+     "_diffrn_source.type"  "ENRAF-NONIUS FR591"                             "ROTATING ANODE"
      "_diffrn_source.type"  "ESRF BEAMLINE BM02"                             SYNCHROTRON
-     "_diffrn_source.type"  "ESRF BEAMLINE BM1A"                             SYNCHROTRON  
-     "_diffrn_source.type"  "ESRF BEAMLINE BM14"                             SYNCHROTRON  
-     "_diffrn_source.type"  "ESRF BEAMLINE BM16"                             SYNCHROTRON  
-     "_diffrn_source.type"  "ESRF BEAMLINE BM26"                             SYNCHROTRON  
-     "_diffrn_source.type"  "ESRF BEAMLINE BM30A"                            SYNCHROTRON  
-     "_diffrn_source.type"  "ESRF BEAMLINE ID09"                             SYNCHROTRON  
-     "_diffrn_source.type"  "ESRF BEAMLINE ID13"                             SYNCHROTRON  
-     "_diffrn_source.type"  "ESRF BEAMLINE ID14-1"                           SYNCHROTRON  
-     "_diffrn_source.type"  "ESRF BEAMLINE ID14-2"                           SYNCHROTRON  
-     "_diffrn_source.type"  "ESRF BEAMLINE ID14-3"                           SYNCHROTRON  
-     "_diffrn_source.type"  "ESRF BEAMLINE ID14-4"                           SYNCHROTRON  
-     "_diffrn_source.type"  "ESRF BEAMLINE ID2"                              SYNCHROTRON  
-     "_diffrn_source.type"  "ESRF BEAMLINE ID23-1"                           SYNCHROTRON  
-     "_diffrn_source.type"  "ESRF BEAMLINE ID23-2"                           SYNCHROTRON  
-     "_diffrn_source.type"  "ESRF BEAMLINE ID27"                             SYNCHROTRON  
-     "_diffrn_source.type"  "ESRF BEAMLINE ID29"                             SYNCHROTRON  
-     "_diffrn_source.type"  "ESRF BEAMLINE ID30B"                            SYNCHROTRON  
-     "_diffrn_source.type"  "ESRF BEAMLINE MASSIF-1"                         SYNCHROTRON  
-     "_diffrn_source.type"  "ESRF BEAMLINE MASSIF-2"                         SYNCHROTRON  
-     "_diffrn_source.type"  "ESRF BEAMLINE MASSIF-3"                         SYNCHROTRON  
-     "_diffrn_source.type"  "EUROPEAN XFEL BEAMLINE FXE"                     "FREE ELECTRON LASER" 
-     "_diffrn_source.type"  "EUROPEAN XFEL BEAMLINE SPB/SFX"                 "FREE ELECTRON LASER" 
-     "_diffrn_source.type"  "Excillum MetalJet D2+ 70 kV"                    "LIQUID ANODE"  
-     "_diffrn_source.type"  "Excillum MetalJet D2+ 160 kV"                   "LIQUID ANODE"  
-     "_diffrn_source.type"  "FRM II BEAMLINE ANTARES"                        "NUCLEAR REACTOR"  
-     "_diffrn_source.type"  "FRM II BEAMLINE BIODIFF"                        "NUCLEAR REACTOR"  
-     "_diffrn_source.type"  "KURCHATOV SNC BEAMLINE K4.4"                    SYNCHROTRON  
-     "_diffrn_source.type"  "ILL BEAMLINE D11"                               "NUCLEAR REACTOR"  
-     "_diffrn_source.type"  "ILL BEAMLINE D16"                               "NUCLEAR REACTOR"  
-     "_diffrn_source.type"  "ILL BEAMLINE D19"                               "NUCLEAR REACTOR"  
-     "_diffrn_source.type"  "ILL BEAMLINE D22"                               "NUCLEAR REACTOR"  
-     "_diffrn_source.type"  "ILL BEAMLINE D33"                               "NUCLEAR REACTOR"  
-     "_diffrn_source.type"  "ILL BEAMLINE H142"                              "NUCLEAR REACTOR"  
-     "_diffrn_source.type"  "ILL BEAMLINE LADI"                              "NUCLEAR REACTOR"  
-     "_diffrn_source.type"  "ILL BEAMLINE LADI III"                          "NUCLEAR REACTOR"  
-     "_diffrn_source.type"  "J-PARC MLF BEAMLINE BL-03"                      "SPALLATION SOURCE"  
-     "_diffrn_source.type"  "JRR-3M BEAMLINE 1G-A"                           "NUCLEAR REACTOR"  
-     "_diffrn_source.type"  "JRR-3M BEAMLINE 1G-B"                           "NUCLEAR REACTOR"  
-     "_diffrn_source.type"  "JRR-3M BEAMLINE 1G-C"                           "NUCLEAR REACTOR"  
-     "_diffrn_source.type"  "LANSCE BEAMLINE BL03"                           "NUCLEAR REACTOR"  
-     "_diffrn_source.type"  "LANSCE BEAMLINE PCS"                            "NUCLEAR REACTOR"  
-     "_diffrn_source.type"  "LNLS BEAMLINE D02A-SAXS2"                       SYNCHROTRON  
-     "_diffrn_source.type"  "LNLS BEAMLINE D03B-MX1"                         SYNCHROTRON  
-     "_diffrn_source.type"  "LNLS BEAMLINE D11A-SAXS1"                       SYNCHROTRON  
-     "_diffrn_source.type"  "LNLS BEAMLINE W01B-MX2"                         SYNCHROTRON  
-     "_diffrn_source.type"  "LURE BEAMLINE DW21B"                            SYNCHROTRON  
-     "_diffrn_source.type"  "LURE BEAMLINE DW32"                             SYNCHROTRON  
-     "_diffrn_source.type"  "LURE BEAMLINE D41A"                             SYNCHROTRON  
+     "_diffrn_source.type"  "ESRF BEAMLINE BM1A"                             SYNCHROTRON
+     "_diffrn_source.type"  "ESRF BEAMLINE BM14"                             SYNCHROTRON
+     "_diffrn_source.type"  "ESRF BEAMLINE BM16"                             SYNCHROTRON
+     "_diffrn_source.type"  "ESRF BEAMLINE BM26"                             SYNCHROTRON
+     "_diffrn_source.type"  "ESRF BEAMLINE BM30A"                            SYNCHROTRON
+     "_diffrn_source.type"  "ESRF BEAMLINE ID09"                             SYNCHROTRON
+     "_diffrn_source.type"  "ESRF BEAMLINE ID13"                             SYNCHROTRON
+     "_diffrn_source.type"  "ESRF BEAMLINE ID14-1"                           SYNCHROTRON
+     "_diffrn_source.type"  "ESRF BEAMLINE ID14-2"                           SYNCHROTRON
+     "_diffrn_source.type"  "ESRF BEAMLINE ID14-3"                           SYNCHROTRON
+     "_diffrn_source.type"  "ESRF BEAMLINE ID14-4"                           SYNCHROTRON
+     "_diffrn_source.type"  "ESRF BEAMLINE ID2"                              SYNCHROTRON
+     "_diffrn_source.type"  "ESRF BEAMLINE ID23-1"                           SYNCHROTRON
+     "_diffrn_source.type"  "ESRF BEAMLINE ID23-2"                           SYNCHROTRON
+     "_diffrn_source.type"  "ESRF BEAMLINE ID27"                             SYNCHROTRON
+     "_diffrn_source.type"  "ESRF BEAMLINE ID29"                             SYNCHROTRON
+     "_diffrn_source.type"  "ESRF BEAMLINE ID30B"                            SYNCHROTRON
+     "_diffrn_source.type"  "ESRF BEAMLINE MASSIF-1"                         SYNCHROTRON
+     "_diffrn_source.type"  "ESRF BEAMLINE MASSIF-2"                         SYNCHROTRON
+     "_diffrn_source.type"  "ESRF BEAMLINE MASSIF-3"                         SYNCHROTRON
+     "_diffrn_source.type"  "EUROPEAN XFEL BEAMLINE FXE"                     "FREE ELECTRON LASER"
+     "_diffrn_source.type"  "EUROPEAN XFEL BEAMLINE SPB/SFX"                 "FREE ELECTRON LASER"
+     "_diffrn_source.type"  "Excillum MetalJet D2+ 70 kV"                    "LIQUID ANODE"
+     "_diffrn_source.type"  "Excillum MetalJet D2+ 160 kV"                   "LIQUID ANODE"
+     "_diffrn_source.type"  "FRM II BEAMLINE ANTARES"                        "NUCLEAR REACTOR"
+     "_diffrn_source.type"  "FRM II BEAMLINE BIODIFF"                        "NUCLEAR REACTOR"
+     "_diffrn_source.type"  "KURCHATOV SNC BEAMLINE K4.4"                    SYNCHROTRON
+     "_diffrn_source.type"  "ILL BEAMLINE D11"                               "NUCLEAR REACTOR"
+     "_diffrn_source.type"  "ILL BEAMLINE D16"                               "NUCLEAR REACTOR"
+     "_diffrn_source.type"  "ILL BEAMLINE D19"                               "NUCLEAR REACTOR"
+     "_diffrn_source.type"  "ILL BEAMLINE D22"                               "NUCLEAR REACTOR"
+     "_diffrn_source.type"  "ILL BEAMLINE D33"                               "NUCLEAR REACTOR"
+     "_diffrn_source.type"  "ILL BEAMLINE H142"                              "NUCLEAR REACTOR"
+     "_diffrn_source.type"  "ILL BEAMLINE LADI"                              "NUCLEAR REACTOR"
+     "_diffrn_source.type"  "ILL BEAMLINE LADI III"                          "NUCLEAR REACTOR"
+     "_diffrn_source.type"  "J-PARC MLF BEAMLINE BL-03"                      "SPALLATION SOURCE"
+     "_diffrn_source.type"  "JRR-3M BEAMLINE 1G-A"                           "NUCLEAR REACTOR"
+     "_diffrn_source.type"  "JRR-3M BEAMLINE 1G-B"                           "NUCLEAR REACTOR"
+     "_diffrn_source.type"  "JRR-3M BEAMLINE 1G-C"                           "NUCLEAR REACTOR"
+     "_diffrn_source.type"  "LANSCE BEAMLINE BL03"                           "NUCLEAR REACTOR"
+     "_diffrn_source.type"  "LANSCE BEAMLINE PCS"                            "NUCLEAR REACTOR"
+     "_diffrn_source.type"  "LNLS BEAMLINE D02A-SAXS2"                       SYNCHROTRON
+     "_diffrn_source.type"  "LNLS BEAMLINE D03B-MX1"                         SYNCHROTRON
+     "_diffrn_source.type"  "LNLS BEAMLINE D11A-SAXS1"                       SYNCHROTRON
+     "_diffrn_source.type"  "LNLS BEAMLINE W01B-MX2"                         SYNCHROTRON
+     "_diffrn_source.type"  "LURE BEAMLINE DW21B"                            SYNCHROTRON
+     "_diffrn_source.type"  "LURE BEAMLINE DW32"                             SYNCHROTRON
+     "_diffrn_source.type"  "LURE BEAMLINE D41A"                             SYNCHROTRON
      "_diffrn_source.type"  MACSCIENCE                                       .
      "_diffrn_source.type"  "MACSCIENCE M06X"                                "ROTATING ANODE"
      "_diffrn_source.type"  "MACSCIENCE M12X"                                "ROTATING ANODE"
-     "_diffrn_source.type"  "MACSCIENCE M18X"                                "ROTATING ANODE"     
-     "_diffrn_source.type"  "MAX II BEAMLINE I711"                           SYNCHROTRON  
-     "_diffrn_source.type"  "MAX II BEAMLINE I911-2"                         SYNCHROTRON  
-     "_diffrn_source.type"  "MAX II BEAMLINE I911-3"                         SYNCHROTRON  
-     "_diffrn_source.type"  "MAX II BEAMLINE I911-5"                         SYNCHROTRON  
-     "_diffrn_source.type"  "MAX IV BEAMLINE BioMAX"                         SYNCHROTRON  
-     "_diffrn_source.type"  "MPG/DESY, HAMBURG BEAMLINE BW6"                 SYNCHROTRON  
-     "_diffrn_source.type"  "NFPSS BEAMLINE BL17B"                           SYNCHROTRON  
-     "_diffrn_source.type"  "NFPSS BEAMLINE BL18U"                           SYNCHROTRON  
-     "_diffrn_source.type"  "NFPSS BEAMLINE BL19U1"                          SYNCHROTRON  
-     "_diffrn_source.type"  "NSLS BEAMLINE X1A"                              SYNCHROTRON  
-     "_diffrn_source.type"  "NSLS BEAMLINE X3A"                              SYNCHROTRON  
-     "_diffrn_source.type"  "NSLS BEAMLINE X4A"                              SYNCHROTRON  
-     "_diffrn_source.type"  "NSLS BEAMLINE X4C"                              SYNCHROTRON  
-     "_diffrn_source.type"  "NSLS BEAMLINE X6A"                              SYNCHROTRON  
-     "_diffrn_source.type"  "NSLS BEAMLINE X7B"                              SYNCHROTRON  
-     "_diffrn_source.type"  "NSLS BEAMLINE X8C"                              SYNCHROTRON  
-     "_diffrn_source.type"  "NSLS BEAMLINE X9A"                              SYNCHROTRON  
-     "_diffrn_source.type"  "NSLS BEAMLINE X9B"                              SYNCHROTRON  
-     "_diffrn_source.type"  "NSLS BEAMLINE X12B"                             SYNCHROTRON  
-     "_diffrn_source.type"  "NSLS BEAMLINE X12C"                             SYNCHROTRON  
-     "_diffrn_source.type"  "NSLS BEAMLINE X17B1"                            SYNCHROTRON  
-     "_diffrn_source.type"  "NSLS BEAMLINE X25"                              SYNCHROTRON  
-     "_diffrn_source.type"  "NSLS BEAMLINE X26C"                             SYNCHROTRON  
-     "_diffrn_source.type"  "NSLS BEAMLINE X29A"                             SYNCHROTRON  
-     "_diffrn_source.type"  "NSLS-II BEAMLINE 17-ID-1"                       SYNCHROTRON  
-     "_diffrn_source.type"  "NSLS-II BEAMLINE 17-ID-2"                       SYNCHROTRON  
-     "_diffrn_source.type"  "NSLS-II BEAMLINE 19-ID"                         SYNCHROTRON  
-     "_diffrn_source.type"  "NSRL BEAMLINE U7B"                              SYNCHROTRON  
-     "_diffrn_source.type"  "NSRRC BEAMLINE BL13B1"                          SYNCHROTRON  
-     "_diffrn_source.type"  "NSRRC BEAMLINE BL13C1"                          SYNCHROTRON  
-     "_diffrn_source.type"  "NSRRC BEAMLINE BL15A1"                          SYNCHROTRON  
-     "_diffrn_source.type"  "NSRRC BEAMLINE BL17A"                           SYNCHROTRON  
-     "_diffrn_source.type"  "NSRRC BEAMLINE BL17B2"                          SYNCHROTRON  
-     "_diffrn_source.type"  "NSRRC BEAMLINE TPS 05A"                         SYNCHROTRON  
-     "_diffrn_source.type"  "ORNL High Flux Isotope Reactor BEAMLINE CG4D"   "NUCLEAR REACTOR"  
-     "_diffrn_source.type"  "ORNL Spallation Neutron Source BEAMLINE MANDI"  "NUCLEAR REACTOR"  
-     "_diffrn_source.type"  "OXFORD DIFFRACTION ENHANCE ULTRA"               "SEALED TUBE"  
-     "_diffrn_source.type"  "OXFORD DIFFRACTION GEMINI"                      "SEALED TUBE"  
+     "_diffrn_source.type"  "MACSCIENCE M18X"                                "ROTATING ANODE"
+     "_diffrn_source.type"  "MAX II BEAMLINE I711"                           SYNCHROTRON
+     "_diffrn_source.type"  "MAX II BEAMLINE I911-2"                         SYNCHROTRON
+     "_diffrn_source.type"  "MAX II BEAMLINE I911-3"                         SYNCHROTRON
+     "_diffrn_source.type"  "MAX II BEAMLINE I911-5"                         SYNCHROTRON
+     "_diffrn_source.type"  "MAX IV BEAMLINE BioMAX"                         SYNCHROTRON
+     "_diffrn_source.type"  "MPG/DESY, HAMBURG BEAMLINE BW6"                 SYNCHROTRON
+     "_diffrn_source.type"  "NFPSS BEAMLINE BL17B"                           SYNCHROTRON
+     "_diffrn_source.type"  "NFPSS BEAMLINE BL18U"                           SYNCHROTRON
+     "_diffrn_source.type"  "NFPSS BEAMLINE BL19U1"                          SYNCHROTRON
+     "_diffrn_source.type"  "NSLS BEAMLINE X1A"                              SYNCHROTRON
+     "_diffrn_source.type"  "NSLS BEAMLINE X3A"                              SYNCHROTRON
+     "_diffrn_source.type"  "NSLS BEAMLINE X4A"                              SYNCHROTRON
+     "_diffrn_source.type"  "NSLS BEAMLINE X4C"                              SYNCHROTRON
+     "_diffrn_source.type"  "NSLS BEAMLINE X6A"                              SYNCHROTRON
+     "_diffrn_source.type"  "NSLS BEAMLINE X7B"                              SYNCHROTRON
+     "_diffrn_source.type"  "NSLS BEAMLINE X8C"                              SYNCHROTRON
+     "_diffrn_source.type"  "NSLS BEAMLINE X9A"                              SYNCHROTRON
+     "_diffrn_source.type"  "NSLS BEAMLINE X9B"                              SYNCHROTRON
+     "_diffrn_source.type"  "NSLS BEAMLINE X12B"                             SYNCHROTRON
+     "_diffrn_source.type"  "NSLS BEAMLINE X12C"                             SYNCHROTRON
+     "_diffrn_source.type"  "NSLS BEAMLINE X17B1"                            SYNCHROTRON
+     "_diffrn_source.type"  "NSLS BEAMLINE X25"                              SYNCHROTRON
+     "_diffrn_source.type"  "NSLS BEAMLINE X26C"                             SYNCHROTRON
+     "_diffrn_source.type"  "NSLS BEAMLINE X29A"                             SYNCHROTRON
+     "_diffrn_source.type"  "NSLS-II BEAMLINE 17-ID-1"                       SYNCHROTRON
+     "_diffrn_source.type"  "NSLS-II BEAMLINE 17-ID-2"                       SYNCHROTRON
+     "_diffrn_source.type"  "NSLS-II BEAMLINE 19-ID"                         SYNCHROTRON
+     "_diffrn_source.type"  "NSRL BEAMLINE U7B"                              SYNCHROTRON
+     "_diffrn_source.type"  "NSRRC BEAMLINE BL13B1"                          SYNCHROTRON
+     "_diffrn_source.type"  "NSRRC BEAMLINE BL13C1"                          SYNCHROTRON
+     "_diffrn_source.type"  "NSRRC BEAMLINE BL15A1"                          SYNCHROTRON
+     "_diffrn_source.type"  "NSRRC BEAMLINE BL17A"                           SYNCHROTRON
+     "_diffrn_source.type"  "NSRRC BEAMLINE BL17B2"                          SYNCHROTRON
+     "_diffrn_source.type"  "NSRRC BEAMLINE TPS 05A"                         SYNCHROTRON
+     "_diffrn_source.type"  "ORNL High Flux Isotope Reactor BEAMLINE CG4D"   "NUCLEAR REACTOR"
+     "_diffrn_source.type"  "ORNL Spallation Neutron Source BEAMLINE MANDI"  "NUCLEAR REACTOR"
+     "_diffrn_source.type"  "OXFORD DIFFRACTION ENHANCE ULTRA"               "SEALED TUBE"
+     "_diffrn_source.type"  "OXFORD DIFFRACTION GEMINI"                      "SEALED TUBE"
      "_diffrn_source.type"  "OXFORD DIFFRACTION NOVA"                        "SEALED TUBE"
-     "_diffrn_source.type"  "OXFORD DIFFRACTION SUPERNOVA"                   "SEALED TUBE"       
-     "_diffrn_source.type"  "PAL/PLS BEAMLINE 4A"                            SYNCHROTRON  
-     "_diffrn_source.type"  "PAL/PLS BEAMLINE 5C (4A)"                       SYNCHROTRON  
-     "_diffrn_source.type"  "PAL/PLS BEAMLINE 6B"                            SYNCHROTRON  
-     "_diffrn_source.type"  "PAL/PLS BEAMLINE 6C1"                           SYNCHROTRON  
-     "_diffrn_source.type"  "PAL/PLS BEAMLINE 6D"                            SYNCHROTRON  
-     "_diffrn_source.type"  "PAL/PLS BEAMLINE 7A (6B, 6C1)"                  SYNCHROTRON  
-     "_diffrn_source.type"  "PAL/PLS BEAMLINE 11C"                           SYNCHROTRON  
-     "_diffrn_source.type"  "PAL-XFEL BEAMLINE CSI"                          "FREE ELECTRON LASER" 
-     "_diffrn_source.type"  "PAL-XFEL BEAMLINE FXS"                          "FREE ELECTRON LASER" 
-     "_diffrn_source.type"  "PETRA II, DESY BEAMLINE PETRA1"                 SYNCHROTRON  
-     "_diffrn_source.type"  "PETRA III, EMBL c/o DESY BEAMLINE P13 (MX1)"    SYNCHROTRON  
-     "_diffrn_source.type"  "PETRA III, EMBL c/o DESY BEAMLINE P14 (MX2)"    SYNCHROTRON  
-     "_diffrn_source.type"  "PETRA III, DESY BEAMLINE P11"                   SYNCHROTRON  
-     "_diffrn_source.type"  "PHOTON FACTORY BEAMLINE AR-NE3A"                SYNCHROTRON  
-     "_diffrn_source.type"  "PHOTON FACTORY BEAMLINE AR-NW12A"               SYNCHROTRON  
-     "_diffrn_source.type"  "PHOTON FACTORY BEAMLINE AR-NW14A"               SYNCHROTRON  
-     "_diffrn_source.type"  "PHOTON FACTORY BEAMLINE BL-1A"                  SYNCHROTRON  
-     "_diffrn_source.type"  "PHOTON FACTORY BEAMLINE BL-5A"                  SYNCHROTRON  
-     "_diffrn_source.type"  "PHOTON FACTORY BEAMLINE BL-6A"                  SYNCHROTRON  
-     "_diffrn_source.type"  "PHOTON FACTORY BEAMLINE BL-6B"                  SYNCHROTRON  
-     "_diffrn_source.type"  "PHOTON FACTORY BEAMLINE BL-17A"                 SYNCHROTRON  
-     "_diffrn_source.type"  "PHOTON FACTORY BEAMLINE BL-18B"                 SYNCHROTRON  
-     "_diffrn_source.type"  RIGAKU                                           "ROTATING ANODE"  
+     "_diffrn_source.type"  "OXFORD DIFFRACTION SUPERNOVA"                   "SEALED TUBE"
+     "_diffrn_source.type"  "PAL/PLS BEAMLINE 4A"                            SYNCHROTRON
+     "_diffrn_source.type"  "PAL/PLS BEAMLINE 5C (4A)"                       SYNCHROTRON
+     "_diffrn_source.type"  "PAL/PLS BEAMLINE 6B"                            SYNCHROTRON
+     "_diffrn_source.type"  "PAL/PLS BEAMLINE 6C1"                           SYNCHROTRON
+     "_diffrn_source.type"  "PAL/PLS BEAMLINE 6D"                            SYNCHROTRON
+     "_diffrn_source.type"  "PAL/PLS BEAMLINE 7A (6B, 6C1)"                  SYNCHROTRON
+     "_diffrn_source.type"  "PAL/PLS BEAMLINE 11C"                           SYNCHROTRON
+     "_diffrn_source.type"  "PAL-XFEL BEAMLINE CSI"                          "FREE ELECTRON LASER"
+     "_diffrn_source.type"  "PAL-XFEL BEAMLINE FXS"                          "FREE ELECTRON LASER"
+     "_diffrn_source.type"  "PETRA II, DESY BEAMLINE PETRA1"                 SYNCHROTRON
+     "_diffrn_source.type"  "PETRA III, EMBL c/o DESY BEAMLINE P13 (MX1)"    SYNCHROTRON
+     "_diffrn_source.type"  "PETRA III, EMBL c/o DESY BEAMLINE P14 (MX2)"    SYNCHROTRON
+     "_diffrn_source.type"  "PETRA III, DESY BEAMLINE P11"                   SYNCHROTRON
+     "_diffrn_source.type"  "PHOTON FACTORY BEAMLINE AR-NE3A"                SYNCHROTRON
+     "_diffrn_source.type"  "PHOTON FACTORY BEAMLINE AR-NW12A"               SYNCHROTRON
+     "_diffrn_source.type"  "PHOTON FACTORY BEAMLINE AR-NW14A"               SYNCHROTRON
+     "_diffrn_source.type"  "PHOTON FACTORY BEAMLINE BL-1A"                  SYNCHROTRON
+     "_diffrn_source.type"  "PHOTON FACTORY BEAMLINE BL-5A"                  SYNCHROTRON
+     "_diffrn_source.type"  "PHOTON FACTORY BEAMLINE BL-6A"                  SYNCHROTRON
+     "_diffrn_source.type"  "PHOTON FACTORY BEAMLINE BL-6B"                  SYNCHROTRON
+     "_diffrn_source.type"  "PHOTON FACTORY BEAMLINE BL-17A"                 SYNCHROTRON
+     "_diffrn_source.type"  "PHOTON FACTORY BEAMLINE BL-18B"                 SYNCHROTRON
+     "_diffrn_source.type"  RIGAKU                                           "ROTATING ANODE"
      "_diffrn_source.type"  "RIGAKU FR-D"                                    "ROTATING ANODE"
-     "_diffrn_source.type"  "RIGAKU FR-E"                                    "ROTATING ANODE"       
+     "_diffrn_source.type"  "RIGAKU FR-E"                                    "ROTATING ANODE"
      "_diffrn_source.type"  "RIGAKU FR-E+"                                   "ROTATING ANODE"
-     "_diffrn_source.type"  "RIGAKU FR-E DW"                                 "ROTATING ANODE"  
-     "_diffrn_source.type"  "RIGAKU FR-E SUPERBRIGHT"                        "ROTATING ANODE"  
-     "_diffrn_source.type"  "RIGAKU FR-E+ DW"                                "ROTATING ANODE"  
-     "_diffrn_source.type"  "RIGAKU FR-E+ SUPERBRIGHT"                       "ROTATING ANODE"  
-     "_diffrn_source.type"  "RIGAKU FR-X"                                    "ROTATING ANODE"  
-     "_diffrn_source.type"  "RIGAKU MICROMAX-002"                            "ROTATING ANODE"  
-     "_diffrn_source.type"  "RIGAKU MICROMAX-002+"                           "ROTATING ANODE"  
-     "_diffrn_source.type"  "RIGAKU MICROMAX-003"                            "ROTATING ANODE"  
-     "_diffrn_source.type"  "RIGAKU MICROMAX-007"                            "ROTATING ANODE"  
+     "_diffrn_source.type"  "RIGAKU FR-E DW"                                 "ROTATING ANODE"
+     "_diffrn_source.type"  "RIGAKU FR-E SUPERBRIGHT"                        "ROTATING ANODE"
+     "_diffrn_source.type"  "RIGAKU FR-E+ DW"                                "ROTATING ANODE"
+     "_diffrn_source.type"  "RIGAKU FR-E+ SUPERBRIGHT"                       "ROTATING ANODE"
+     "_diffrn_source.type"  "RIGAKU FR-X"                                    "ROTATING ANODE"
+     "_diffrn_source.type"  "RIGAKU MICROMAX-002"                            "ROTATING ANODE"
+     "_diffrn_source.type"  "RIGAKU MICROMAX-002+"                           "ROTATING ANODE"
+     "_diffrn_source.type"  "RIGAKU MICROMAX-003"                            "ROTATING ANODE"
+     "_diffrn_source.type"  "RIGAKU MICROMAX-007"                            "ROTATING ANODE"
      "_diffrn_source.type"  "RIGAKU MICROMAX-007 HF"                         "ROTATING ANODE"
-     "_diffrn_source.type"  "RIGAKU R-AXIS"                                  "ROTATING ANODE"       
-     "_diffrn_source.type"  "RIGAKU R-AXIS II"                               "ROTATING ANODE"     
+     "_diffrn_source.type"  "RIGAKU R-AXIS"                                  "ROTATING ANODE"
+     "_diffrn_source.type"  "RIGAKU R-AXIS II"                               "ROTATING ANODE"
      "_diffrn_source.type"  "RIGAKU R-AXIS IV"                               "ROTATING ANODE"
-     "_diffrn_source.type"  "RIGAKU RU200"                                   "ROTATING ANODE"  
-     "_diffrn_source.type"  "RIGAKU RU300"                                   "ROTATING ANODE"  
-     "_diffrn_source.type"  "RIGAKU RUH2R"                                   "ROTATING ANODE"  
-     "_diffrn_source.type"  "RIGAKU RUH3R"                                   "ROTATING ANODE"  
-     "_diffrn_source.type"  "RIGAKU ULTRAX 18"                               "ROTATING ANODE"  
-     "_diffrn_source.type"  "RRCAT INDUS-2 BEAMLINE PX-BL21"                 SYNCHROTRON  
+     "_diffrn_source.type"  "RIGAKU RU200"                                   "ROTATING ANODE"
+     "_diffrn_source.type"  "RIGAKU RU300"                                   "ROTATING ANODE"
+     "_diffrn_source.type"  "RIGAKU RUH2R"                                   "ROTATING ANODE"
+     "_diffrn_source.type"  "RIGAKU RUH3R"                                   "ROTATING ANODE"
+     "_diffrn_source.type"  "RIGAKU ULTRAX 18"                               "ROTATING ANODE"
+     "_diffrn_source.type"  "RRCAT INDUS-2 BEAMLINE PX-BL21"                 SYNCHROTRON
      "_diffrn_source.type"  "SACLA BEAMLINE BL2"                             "FREE ELECTRON LASER"
-     "_diffrn_source.type"  "SACLA BEAMLINE BL3"                             "FREE ELECTRON LASER"  
-     "_diffrn_source.type"  "SAGA-LS BEAMLINE BL07"                          SYNCHROTRON  
+     "_diffrn_source.type"  "SACLA BEAMLINE BL3"                             "FREE ELECTRON LASER"
+     "_diffrn_source.type"  "SAGA-LS BEAMLINE BL07"                          SYNCHROTRON
      "_diffrn_source.type"  SIEMENS                                          "ROTATING ANODE"
-     "_diffrn_source.type"  "SLAC LCLS BEAMLINE AMO"                         "FREE ELECTRON LASER"  
-     "_diffrn_source.type"  "SLAC LCLS BEAMLINE CXI"                         "FREE ELECTRON LASER"  
-     "_diffrn_source.type"  "SLAC LCLS BEAMLINE MFX"                         "FREE ELECTRON LASER"  
-     "_diffrn_source.type"  "SLAC LCLS BEAMLINE XPP"                         "FREE ELECTRON LASER"  
-     "_diffrn_source.type"  "SLS BEAMLINE X06DA"                             SYNCHROTRON  
-     "_diffrn_source.type"  "SLS BEAMLINE X06SA"                             SYNCHROTRON  
-     "_diffrn_source.type"  "SLS BEAMLINE X10SA"                             SYNCHROTRON  
-     "_diffrn_source.type"  "SOLEIL BEAMLINE PROXIMA 1"                      SYNCHROTRON  
-     "_diffrn_source.type"  "SOLEIL BEAMLINE PROXIMA 2"                      SYNCHROTRON  
-     "_diffrn_source.type"  "SOLEIL BEAMLINE CRISTAL"                        SYNCHROTRON  
-     "_diffrn_source.type"  "SPRING-8 BEAMLINE BL12B2"                       SYNCHROTRON  
-     "_diffrn_source.type"  "SPRING-8 BEAMLINE BL24XU"                       SYNCHROTRON  
-     "_diffrn_source.type"  "SPRING-8 BEAMLINE BL26B1"                       SYNCHROTRON  
-     "_diffrn_source.type"  "SPRING-8 BEAMLINE BL26B2"                       SYNCHROTRON  
-     "_diffrn_source.type"  "SPRING-8 BEAMLINE BL32B2"                       SYNCHROTRON  
-     "_diffrn_source.type"  "SPRING-8 BEAMLINE BL32XU"                       SYNCHROTRON  
-     "_diffrn_source.type"  "SPRING-8 BEAMLINE BL38B1"                       SYNCHROTRON  
-     "_diffrn_source.type"  "SPRING-8 BEAMLINE BL40B2"                       SYNCHROTRON  
-     "_diffrn_source.type"  "SPRING-8 BEAMLINE BL41XU"                       SYNCHROTRON  
-     "_diffrn_source.type"  "SPRING-8 BEAMLINE BL44B2"                       SYNCHROTRON  
-     "_diffrn_source.type"  "SPRING-8 BEAMLINE BL44XU"                       SYNCHROTRON  
-     "_diffrn_source.type"  "SPRING-8 BEAMLINE BL45PX"                       SYNCHROTRON  
-     "_diffrn_source.type"  "SPRING-8 BEAMLINE BL45XU"                       SYNCHROTRON  
-     "_diffrn_source.type"  "SLRI BEAMLINE BL7.2W"                           SYNCHROTRON  
-     "_diffrn_source.type"  "SRS BEAMLINE PX7.2"                             SYNCHROTRON  
-     "_diffrn_source.type"  "SRS BEAMLINE PX9.5"                             SYNCHROTRON  
-     "_diffrn_source.type"  "SRS BEAMLINE PX9.6"                             SYNCHROTRON  
-     "_diffrn_source.type"  "SRS BEAMLINE PX10.1"                            SYNCHROTRON  
-     "_diffrn_source.type"  "SRS BEAMLINE PX14.1"                            SYNCHROTRON  
+     "_diffrn_source.type"  "SLAC LCLS BEAMLINE AMO"                         "FREE ELECTRON LASER"
+     "_diffrn_source.type"  "SLAC LCLS BEAMLINE CXI"                         "FREE ELECTRON LASER"
+     "_diffrn_source.type"  "SLAC LCLS BEAMLINE MFX"                         "FREE ELECTRON LASER"
+     "_diffrn_source.type"  "SLAC LCLS BEAMLINE XPP"                         "FREE ELECTRON LASER"
+     "_diffrn_source.type"  "SLS BEAMLINE X06DA"                             SYNCHROTRON
+     "_diffrn_source.type"  "SLS BEAMLINE X06SA"                             SYNCHROTRON
+     "_diffrn_source.type"  "SLS BEAMLINE X10SA"                             SYNCHROTRON
+     "_diffrn_source.type"  "SOLEIL BEAMLINE PROXIMA 1"                      SYNCHROTRON
+     "_diffrn_source.type"  "SOLEIL BEAMLINE PROXIMA 2"                      SYNCHROTRON
+     "_diffrn_source.type"  "SOLEIL BEAMLINE CRISTAL"                        SYNCHROTRON
+     "_diffrn_source.type"  "SPRING-8 BEAMLINE BL12B2"                       SYNCHROTRON
+     "_diffrn_source.type"  "SPRING-8 BEAMLINE BL24XU"                       SYNCHROTRON
+     "_diffrn_source.type"  "SPRING-8 BEAMLINE BL26B1"                       SYNCHROTRON
+     "_diffrn_source.type"  "SPRING-8 BEAMLINE BL26B2"                       SYNCHROTRON
+     "_diffrn_source.type"  "SPRING-8 BEAMLINE BL32B2"                       SYNCHROTRON
+     "_diffrn_source.type"  "SPRING-8 BEAMLINE BL32XU"                       SYNCHROTRON
+     "_diffrn_source.type"  "SPRING-8 BEAMLINE BL38B1"                       SYNCHROTRON
+     "_diffrn_source.type"  "SPRING-8 BEAMLINE BL40B2"                       SYNCHROTRON
+     "_diffrn_source.type"  "SPRING-8 BEAMLINE BL41XU"                       SYNCHROTRON
+     "_diffrn_source.type"  "SPRING-8 BEAMLINE BL44B2"                       SYNCHROTRON
+     "_diffrn_source.type"  "SPRING-8 BEAMLINE BL44XU"                       SYNCHROTRON
+     "_diffrn_source.type"  "SPRING-8 BEAMLINE BL45PX"                       SYNCHROTRON
+     "_diffrn_source.type"  "SPRING-8 BEAMLINE BL45XU"                       SYNCHROTRON
+     "_diffrn_source.type"  "SLRI BEAMLINE BL7.2W"                           SYNCHROTRON
+     "_diffrn_source.type"  "SRS BEAMLINE PX7.2"                             SYNCHROTRON
+     "_diffrn_source.type"  "SRS BEAMLINE PX9.5"                             SYNCHROTRON
+     "_diffrn_source.type"  "SRS BEAMLINE PX9.6"                             SYNCHROTRON
+     "_diffrn_source.type"  "SRS BEAMLINE PX10.1"                            SYNCHROTRON
+     "_diffrn_source.type"  "SRS BEAMLINE PX14.1"                            SYNCHROTRON
      "_diffrn_source.type"  "SRS BEAMLINE PX14.2"                            SYNCHROTRON
-     "_diffrn_source.type"  "SSRF BEAMLINE BL17U"                           SYNCHROTRON       
-     "_diffrn_source.type"  "SSRF BEAMLINE BL17U1"                           SYNCHROTRON  
-     "_diffrn_source.type"  "SSRF BEAMLINE BL17B1"                           SYNCHROTRON  
-     "_diffrn_source.type"  "SSRF BEAMLINE BL18U1"                           SYNCHROTRON  
-     "_diffrn_source.type"  "SSRF BEAMLINE BL19U1"                           SYNCHROTRON  
-     "_diffrn_source.type"  "SSRL BEAMLINE BL1-5"                            SYNCHROTRON  
-     "_diffrn_source.type"  "SSRL BEAMLINE BL4-2"                            SYNCHROTRON  
-     "_diffrn_source.type"  "SSRL BEAMLINE BL7-1"                            SYNCHROTRON  
-     "_diffrn_source.type"  "SSRL BEAMLINE BL9-1"                            SYNCHROTRON  
-     "_diffrn_source.type"  "SSRL BEAMLINE BL9-2"                            SYNCHROTRON  
-     "_diffrn_source.type"  "SSRL BEAMLINE BL9-3"                            SYNCHROTRON  
-     "_diffrn_source.type"  "SSRL BEAMLINE BL11-1"                           SYNCHROTRON  
-     "_diffrn_source.type"  "SSRL BEAMLINE BL11-3"                           SYNCHROTRON  
-     "_diffrn_source.type"  "SSRL BEAMLINE BL12-2"                           SYNCHROTRON  
-     "_diffrn_source.type"  "SSRL BEAMLINE BL14-1"                           SYNCHROTRON  
-     "_diffrn_source.type"  "SwissFEL ARAMIS BEAMLINE ESA"                   "FREE ELECTRON LASER"  
-     "_diffrn_source.type"  "SwissFEL ARAMIS BEAMLINE ESB"                   "FREE ELECTRON LASER"  
-     "_diffrn_source.type"  "SwissFEL ARAMIS BEAMLINE ESC"                   "FREE ELECTRON LASER"  
-     "_diffrn_source.type"  "Xenocs GeniX 3D Cu HF"                          "SEALED TUBE"  
-     "_diffrn_source.type"  OTHER                                            .  
+     "_diffrn_source.type"  "SSRF BEAMLINE BL17U"                            SYNCHROTRON
+     "_diffrn_source.type"  "SSRF BEAMLINE BL17U1"                           SYNCHROTRON
+     "_diffrn_source.type"  "SSRF BEAMLINE BL17B1"                           SYNCHROTRON
+     "_diffrn_source.type"  "SSRF BEAMLINE BL18U1"                           SYNCHROTRON
+     "_diffrn_source.type"  "SSRF BEAMLINE BL19U1"                           SYNCHROTRON
+     "_diffrn_source.type"  "SSRL BEAMLINE BL1-5"                            SYNCHROTRON
+     "_diffrn_source.type"  "SSRL BEAMLINE BL4-2"                            SYNCHROTRON
+     "_diffrn_source.type"  "SSRL BEAMLINE BL7-1"                            SYNCHROTRON
+     "_diffrn_source.type"  "SSRL BEAMLINE BL9-1"                            SYNCHROTRON
+     "_diffrn_source.type"  "SSRL BEAMLINE BL9-2"                            SYNCHROTRON
+     "_diffrn_source.type"  "SSRL BEAMLINE BL9-3"                            SYNCHROTRON
+     "_diffrn_source.type"  "SSRL BEAMLINE BL11-1"                           SYNCHROTRON
+     "_diffrn_source.type"  "SSRL BEAMLINE BL11-3"                           SYNCHROTRON
+     "_diffrn_source.type"  "SSRL BEAMLINE BL12-2"                           SYNCHROTRON
+     "_diffrn_source.type"  "SSRL BEAMLINE BL14-1"                           SYNCHROTRON
+     "_diffrn_source.type"  "SwissFEL ARAMIS BEAMLINE ESA"                   "FREE ELECTRON LASER"
+     "_diffrn_source.type"  "SwissFEL ARAMIS BEAMLINE ESB"                   "FREE ELECTRON LASER"
+     "_diffrn_source.type"  "SwissFEL ARAMIS BEAMLINE ESC"                   "FREE ELECTRON LASER"
+     "_diffrn_source.type"  "Xenocs GeniX 3D Cu HF"                          "SEALED TUBE"
+     "_diffrn_source.type"  OTHER                                            .
    #
 save_
 
@@ -24139,235 +24139,235 @@ save__diffrn_source.pdbx_synchrotron_beamline
     _pdbx_item_enumeration.name
     _pdbx_item_enumeration.value
     _pdbx_item_enumeration.detail
-     "_diffrn_source.pdbx_synchrotron_beamline"  1-BM-C          .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  1G-A            .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  1G-B            .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  1G-C            .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  08B1-1          .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  08ID-1          .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  11C             .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  12.3.1          .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  12.3.1-PX       .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  12.3.1-SAXS     .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  14.1            .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  14.2            .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  14.3            .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  14-BM-C         .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  14-BM-D         .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  14-BM-D         .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  14-ID-B         .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  17-BM           .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  17-ID           .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  17-ID-1         .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  17-ID-2         .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  18-ID           .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  19-BM           .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  19-ID           .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  1W2B            .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  21-ID-D         .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  21-ID-E         .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  21-ID-F         .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  21-ID-G         .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  22-BM           .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  22-ID           .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  23-BM-B         .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  23-ID-B         .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  23-ID-D         .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  24-ID-C         .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  24-ID-E         .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  31-ID           .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  32-ID           .  
+     "_diffrn_source.pdbx_synchrotron_beamline"  1-BM-C          .
+     "_diffrn_source.pdbx_synchrotron_beamline"  1G-A            .
+     "_diffrn_source.pdbx_synchrotron_beamline"  1G-B            .
+     "_diffrn_source.pdbx_synchrotron_beamline"  1G-C            .
+     "_diffrn_source.pdbx_synchrotron_beamline"  08B1-1          .
+     "_diffrn_source.pdbx_synchrotron_beamline"  08ID-1          .
+     "_diffrn_source.pdbx_synchrotron_beamline"  11C             .
+     "_diffrn_source.pdbx_synchrotron_beamline"  12.3.1          .
+     "_diffrn_source.pdbx_synchrotron_beamline"  12.3.1-PX       .
+     "_diffrn_source.pdbx_synchrotron_beamline"  12.3.1-SAXS     .
+     "_diffrn_source.pdbx_synchrotron_beamline"  14.1            .
+     "_diffrn_source.pdbx_synchrotron_beamline"  14.2            .
+     "_diffrn_source.pdbx_synchrotron_beamline"  14.3            .
+     "_diffrn_source.pdbx_synchrotron_beamline"  14-BM-C         .
+     "_diffrn_source.pdbx_synchrotron_beamline"  14-BM-D         .
+     "_diffrn_source.pdbx_synchrotron_beamline"  14-BM-D         .
+     "_diffrn_source.pdbx_synchrotron_beamline"  14-ID-B         .
+     "_diffrn_source.pdbx_synchrotron_beamline"  17-BM           .
+     "_diffrn_source.pdbx_synchrotron_beamline"  17-ID           .
+     "_diffrn_source.pdbx_synchrotron_beamline"  17-ID-1         .
+     "_diffrn_source.pdbx_synchrotron_beamline"  17-ID-2         .
+     "_diffrn_source.pdbx_synchrotron_beamline"  18-ID           .
+     "_diffrn_source.pdbx_synchrotron_beamline"  19-BM           .
+     "_diffrn_source.pdbx_synchrotron_beamline"  19-ID           .
+     "_diffrn_source.pdbx_synchrotron_beamline"  1W2B            .
+     "_diffrn_source.pdbx_synchrotron_beamline"  21-ID-D         .
+     "_diffrn_source.pdbx_synchrotron_beamline"  21-ID-E         .
+     "_diffrn_source.pdbx_synchrotron_beamline"  21-ID-F         .
+     "_diffrn_source.pdbx_synchrotron_beamline"  21-ID-G         .
+     "_diffrn_source.pdbx_synchrotron_beamline"  22-BM           .
+     "_diffrn_source.pdbx_synchrotron_beamline"  22-ID           .
+     "_diffrn_source.pdbx_synchrotron_beamline"  23-BM-B         .
+     "_diffrn_source.pdbx_synchrotron_beamline"  23-ID-B         .
+     "_diffrn_source.pdbx_synchrotron_beamline"  23-ID-D         .
+     "_diffrn_source.pdbx_synchrotron_beamline"  24-ID-C         .
+     "_diffrn_source.pdbx_synchrotron_beamline"  24-ID-E         .
+     "_diffrn_source.pdbx_synchrotron_beamline"  31-ID           .
+     "_diffrn_source.pdbx_synchrotron_beamline"  32-ID           .
      "_diffrn_source.pdbx_synchrotron_beamline"  34-ID           .
-     "_diffrn_source.pdbx_synchrotron_beamline"  3W1A            .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  4.2.2           .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  4A              .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  5.0.1           .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  5.0.2           .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  5.0.3           .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  5.2R            .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  "5C (4A)"       .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  5ID-B           .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  6B              .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  6C1             .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  6D              .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  "7A (6B, 6C1)"  .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  8.2.1           .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  8.2.2           .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  8.3.1           .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  8-BM            .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  A1              .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  AMO             .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  ANTARES         .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  AR-NE3A         .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  AR-NW12A        .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  AR-NW14A        .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  BIODIFF         .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  BioMAX          .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  BL03            .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  BL07            .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  BL-03           .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  BL11-1          .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  BL11-3          .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  BL12-2          .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  BL12B2          .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  BL13B1          .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  BL13C1          .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  BL14-1          .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  BL1-5           .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  BL15A           .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  BL15A1          .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  BL-17A          .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  BL17A           .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  BL17B           .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  BL17B1          .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  BL17B2          .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  BL17U           .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  BL17U1          .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  BL18U           .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  BL18U1          .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  BL19U1          .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  BL-18B          .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  BL-1A           .  
+     "_diffrn_source.pdbx_synchrotron_beamline"  3W1A            .
+     "_diffrn_source.pdbx_synchrotron_beamline"  4.2.2           .
+     "_diffrn_source.pdbx_synchrotron_beamline"  4A              .
+     "_diffrn_source.pdbx_synchrotron_beamline"  5.0.1           .
+     "_diffrn_source.pdbx_synchrotron_beamline"  5.0.2           .
+     "_diffrn_source.pdbx_synchrotron_beamline"  5.0.3           .
+     "_diffrn_source.pdbx_synchrotron_beamline"  5.2R            .
+     "_diffrn_source.pdbx_synchrotron_beamline"  "5C (4A)"       .
+     "_diffrn_source.pdbx_synchrotron_beamline"  5ID-B           .
+     "_diffrn_source.pdbx_synchrotron_beamline"  6B              .
+     "_diffrn_source.pdbx_synchrotron_beamline"  6C1             .
+     "_diffrn_source.pdbx_synchrotron_beamline"  6D              .
+     "_diffrn_source.pdbx_synchrotron_beamline"  "7A (6B, 6C1)"  .
+     "_diffrn_source.pdbx_synchrotron_beamline"  8.2.1           .
+     "_diffrn_source.pdbx_synchrotron_beamline"  8.2.2           .
+     "_diffrn_source.pdbx_synchrotron_beamline"  8.3.1           .
+     "_diffrn_source.pdbx_synchrotron_beamline"  8-BM            .
+     "_diffrn_source.pdbx_synchrotron_beamline"  A1              .
+     "_diffrn_source.pdbx_synchrotron_beamline"  AMO             .
+     "_diffrn_source.pdbx_synchrotron_beamline"  ANTARES         .
+     "_diffrn_source.pdbx_synchrotron_beamline"  AR-NE3A         .
+     "_diffrn_source.pdbx_synchrotron_beamline"  AR-NW12A        .
+     "_diffrn_source.pdbx_synchrotron_beamline"  AR-NW14A        .
+     "_diffrn_source.pdbx_synchrotron_beamline"  BIODIFF         .
+     "_diffrn_source.pdbx_synchrotron_beamline"  BioMAX          .
+     "_diffrn_source.pdbx_synchrotron_beamline"  BL03            .
+     "_diffrn_source.pdbx_synchrotron_beamline"  BL07            .
+     "_diffrn_source.pdbx_synchrotron_beamline"  BL-03           .
+     "_diffrn_source.pdbx_synchrotron_beamline"  BL11-1          .
+     "_diffrn_source.pdbx_synchrotron_beamline"  BL11-3          .
+     "_diffrn_source.pdbx_synchrotron_beamline"  BL12-2          .
+     "_diffrn_source.pdbx_synchrotron_beamline"  BL12B2          .
+     "_diffrn_source.pdbx_synchrotron_beamline"  BL13B1          .
+     "_diffrn_source.pdbx_synchrotron_beamline"  BL13C1          .
+     "_diffrn_source.pdbx_synchrotron_beamline"  BL14-1          .
+     "_diffrn_source.pdbx_synchrotron_beamline"  BL1-5           .
+     "_diffrn_source.pdbx_synchrotron_beamline"  BL15A           .
+     "_diffrn_source.pdbx_synchrotron_beamline"  BL15A1          .
+     "_diffrn_source.pdbx_synchrotron_beamline"  BL-17A          .
+     "_diffrn_source.pdbx_synchrotron_beamline"  BL17A           .
+     "_diffrn_source.pdbx_synchrotron_beamline"  BL17B           .
+     "_diffrn_source.pdbx_synchrotron_beamline"  BL17B1          .
+     "_diffrn_source.pdbx_synchrotron_beamline"  BL17B2          .
+     "_diffrn_source.pdbx_synchrotron_beamline"  BL17U           .
+     "_diffrn_source.pdbx_synchrotron_beamline"  BL17U1          .
+     "_diffrn_source.pdbx_synchrotron_beamline"  BL18U           .
+     "_diffrn_source.pdbx_synchrotron_beamline"  BL18U1          .
+     "_diffrn_source.pdbx_synchrotron_beamline"  BL19U1          .
+     "_diffrn_source.pdbx_synchrotron_beamline"  BL-18B          .
+     "_diffrn_source.pdbx_synchrotron_beamline"  BL-1A           .
      "_diffrn_source.pdbx_synchrotron_beamline"  BL2             .
-     "_diffrn_source.pdbx_synchrotron_beamline"  BL24XU          .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  BL26B1          .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  BL26B2          .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  BL2S1           .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  BL3             .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  BL32B2          .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  BL32XU          .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  BL38B1          .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  BL40B2          .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  BL41XU          .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  BL4-2           .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  BL44B2          .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  BL44XU          .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  BL45PX          .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  BL45XU          .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  BL-5A           .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  BL6-2           .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  BL-6A           .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  BL-6B           .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  BL7-1           .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  BL7-3           .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  BL7.2W          .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  BL9-1           .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  BL9-2           .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  BL9-3           .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  BM02            .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  BM14            .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  BM16            .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  BM1A            .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  BM26            .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  BM30A           .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  BW6             .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  BW7A            .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  BW7B            .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  CG4D            .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  CRISTAL         .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  CSI             .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  CXI             .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  D02A-SAXS2      .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  D03B-MX1        .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  D11             .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  D11A-SAXS1      .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  D16             .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  D19             .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  D22             .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  D33             .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  DW21B           .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  DW32            .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  D41A            .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  ESA             .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  ESB             .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  ESC             .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  F1              .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  F2              .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  F3              .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  FXE             .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  FXS             .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  GCPCC           .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  I02             .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  I03             .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  I04             .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  I04-1           .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  I23             .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  I24             .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  I711            .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  I911-1          .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  I911-2          .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  I911-3          .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  I911-4          .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  I911-5          .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  ID09            .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  ID13            .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  ID14-1          .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  ID14-2          .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  ID14-2          .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  ID14-3          .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  ID14-4          .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  ID2             .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  ID23-1          .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  ID23-2          .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  ID27            .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  ID29            .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  ID30B           .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  K4.4            .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  LADI            .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  "LADI III"      .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  MANDI           .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  MASSIF-1        .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  MASSIF-2        .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  MASSIF-3        .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  MFX             .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  MX1             .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  MX2             .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  P11             .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  "P13 (MX1)"     .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  "P14 (MX2)"     .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  PCS             .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  PETRA1          .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  "PROXIMA 1"     .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  "PROXIMA 2"     .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  PX10.1          .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  PX10.1          .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  PX14.1          .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  PX14.2          .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  PX7.2           .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  PX7.2           .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  PX7.2           .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  PX9.5           .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  PX9.6           .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  PX-BL21         .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  SPB/SFX         .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  "TPS 05A"       .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  U7B             .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  W01B-MX2        .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  X06DA           .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  X06SA           .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  X10SA           .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  X11             .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  X12             .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  X12B            .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  X12C            .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  X13             .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  X17B1           .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  X1A             .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  X25             .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  X26C            .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  X29A            .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  X31             .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  X3A             .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  X3B             .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  X4A             .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  X4C             .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  X6A             .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  X7B             .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  X8C             .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  X9A             .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  X9B             .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  XALOC           .  
-     "_diffrn_source.pdbx_synchrotron_beamline"  XPP             .  
+     "_diffrn_source.pdbx_synchrotron_beamline"  BL24XU          .
+     "_diffrn_source.pdbx_synchrotron_beamline"  BL26B1          .
+     "_diffrn_source.pdbx_synchrotron_beamline"  BL26B2          .
+     "_diffrn_source.pdbx_synchrotron_beamline"  BL2S1           .
+     "_diffrn_source.pdbx_synchrotron_beamline"  BL3             .
+     "_diffrn_source.pdbx_synchrotron_beamline"  BL32B2          .
+     "_diffrn_source.pdbx_synchrotron_beamline"  BL32XU          .
+     "_diffrn_source.pdbx_synchrotron_beamline"  BL38B1          .
+     "_diffrn_source.pdbx_synchrotron_beamline"  BL40B2          .
+     "_diffrn_source.pdbx_synchrotron_beamline"  BL41XU          .
+     "_diffrn_source.pdbx_synchrotron_beamline"  BL4-2           .
+     "_diffrn_source.pdbx_synchrotron_beamline"  BL44B2          .
+     "_diffrn_source.pdbx_synchrotron_beamline"  BL44XU          .
+     "_diffrn_source.pdbx_synchrotron_beamline"  BL45PX          .
+     "_diffrn_source.pdbx_synchrotron_beamline"  BL45XU          .
+     "_diffrn_source.pdbx_synchrotron_beamline"  BL-5A           .
+     "_diffrn_source.pdbx_synchrotron_beamline"  BL6-2           .
+     "_diffrn_source.pdbx_synchrotron_beamline"  BL-6A           .
+     "_diffrn_source.pdbx_synchrotron_beamline"  BL-6B           .
+     "_diffrn_source.pdbx_synchrotron_beamline"  BL7-1           .
+     "_diffrn_source.pdbx_synchrotron_beamline"  BL7-3           .
+     "_diffrn_source.pdbx_synchrotron_beamline"  BL7.2W          .
+     "_diffrn_source.pdbx_synchrotron_beamline"  BL9-1           .
+     "_diffrn_source.pdbx_synchrotron_beamline"  BL9-2           .
+     "_diffrn_source.pdbx_synchrotron_beamline"  BL9-3           .
+     "_diffrn_source.pdbx_synchrotron_beamline"  BM02            .
+     "_diffrn_source.pdbx_synchrotron_beamline"  BM14            .
+     "_diffrn_source.pdbx_synchrotron_beamline"  BM16            .
+     "_diffrn_source.pdbx_synchrotron_beamline"  BM1A            .
+     "_diffrn_source.pdbx_synchrotron_beamline"  BM26            .
+     "_diffrn_source.pdbx_synchrotron_beamline"  BM30A           .
+     "_diffrn_source.pdbx_synchrotron_beamline"  BW6             .
+     "_diffrn_source.pdbx_synchrotron_beamline"  BW7A            .
+     "_diffrn_source.pdbx_synchrotron_beamline"  BW7B            .
+     "_diffrn_source.pdbx_synchrotron_beamline"  CG4D            .
+     "_diffrn_source.pdbx_synchrotron_beamline"  CRISTAL         .
+     "_diffrn_source.pdbx_synchrotron_beamline"  CSI             .
+     "_diffrn_source.pdbx_synchrotron_beamline"  CXI             .
+     "_diffrn_source.pdbx_synchrotron_beamline"  D02A-SAXS2      .
+     "_diffrn_source.pdbx_synchrotron_beamline"  D03B-MX1        .
+     "_diffrn_source.pdbx_synchrotron_beamline"  D11             .
+     "_diffrn_source.pdbx_synchrotron_beamline"  D11A-SAXS1      .
+     "_diffrn_source.pdbx_synchrotron_beamline"  D16             .
+     "_diffrn_source.pdbx_synchrotron_beamline"  D19             .
+     "_diffrn_source.pdbx_synchrotron_beamline"  D22             .
+     "_diffrn_source.pdbx_synchrotron_beamline"  D33             .
+     "_diffrn_source.pdbx_synchrotron_beamline"  DW21B           .
+     "_diffrn_source.pdbx_synchrotron_beamline"  DW32            .
+     "_diffrn_source.pdbx_synchrotron_beamline"  D41A            .
+     "_diffrn_source.pdbx_synchrotron_beamline"  ESA             .
+     "_diffrn_source.pdbx_synchrotron_beamline"  ESB             .
+     "_diffrn_source.pdbx_synchrotron_beamline"  ESC             .
+     "_diffrn_source.pdbx_synchrotron_beamline"  F1              .
+     "_diffrn_source.pdbx_synchrotron_beamline"  F2              .
+     "_diffrn_source.pdbx_synchrotron_beamline"  F3              .
+     "_diffrn_source.pdbx_synchrotron_beamline"  FXE             .
+     "_diffrn_source.pdbx_synchrotron_beamline"  FXS             .
+     "_diffrn_source.pdbx_synchrotron_beamline"  GCPCC           .
+     "_diffrn_source.pdbx_synchrotron_beamline"  I02             .
+     "_diffrn_source.pdbx_synchrotron_beamline"  I03             .
+     "_diffrn_source.pdbx_synchrotron_beamline"  I04             .
+     "_diffrn_source.pdbx_synchrotron_beamline"  I04-1           .
+     "_diffrn_source.pdbx_synchrotron_beamline"  I23             .
+     "_diffrn_source.pdbx_synchrotron_beamline"  I24             .
+     "_diffrn_source.pdbx_synchrotron_beamline"  I711            .
+     "_diffrn_source.pdbx_synchrotron_beamline"  I911-1          .
+     "_diffrn_source.pdbx_synchrotron_beamline"  I911-2          .
+     "_diffrn_source.pdbx_synchrotron_beamline"  I911-3          .
+     "_diffrn_source.pdbx_synchrotron_beamline"  I911-4          .
+     "_diffrn_source.pdbx_synchrotron_beamline"  I911-5          .
+     "_diffrn_source.pdbx_synchrotron_beamline"  ID09            .
+     "_diffrn_source.pdbx_synchrotron_beamline"  ID13            .
+     "_diffrn_source.pdbx_synchrotron_beamline"  ID14-1          .
+     "_diffrn_source.pdbx_synchrotron_beamline"  ID14-2          .
+     "_diffrn_source.pdbx_synchrotron_beamline"  ID14-2          .
+     "_diffrn_source.pdbx_synchrotron_beamline"  ID14-3          .
+     "_diffrn_source.pdbx_synchrotron_beamline"  ID14-4          .
+     "_diffrn_source.pdbx_synchrotron_beamline"  ID2             .
+     "_diffrn_source.pdbx_synchrotron_beamline"  ID23-1          .
+     "_diffrn_source.pdbx_synchrotron_beamline"  ID23-2          .
+     "_diffrn_source.pdbx_synchrotron_beamline"  ID27            .
+     "_diffrn_source.pdbx_synchrotron_beamline"  ID29            .
+     "_diffrn_source.pdbx_synchrotron_beamline"  ID30B           .
+     "_diffrn_source.pdbx_synchrotron_beamline"  K4.4            .
+     "_diffrn_source.pdbx_synchrotron_beamline"  LADI            .
+     "_diffrn_source.pdbx_synchrotron_beamline"  "LADI III"      .
+     "_diffrn_source.pdbx_synchrotron_beamline"  MANDI           .
+     "_diffrn_source.pdbx_synchrotron_beamline"  MASSIF-1        .
+     "_diffrn_source.pdbx_synchrotron_beamline"  MASSIF-2        .
+     "_diffrn_source.pdbx_synchrotron_beamline"  MASSIF-3        .
+     "_diffrn_source.pdbx_synchrotron_beamline"  MFX             .
+     "_diffrn_source.pdbx_synchrotron_beamline"  MX1             .
+     "_diffrn_source.pdbx_synchrotron_beamline"  MX2             .
+     "_diffrn_source.pdbx_synchrotron_beamline"  P11             .
+     "_diffrn_source.pdbx_synchrotron_beamline"  "P13 (MX1)"     .
+     "_diffrn_source.pdbx_synchrotron_beamline"  "P14 (MX2)"     .
+     "_diffrn_source.pdbx_synchrotron_beamline"  PCS             .
+     "_diffrn_source.pdbx_synchrotron_beamline"  PETRA1          .
+     "_diffrn_source.pdbx_synchrotron_beamline"  "PROXIMA 1"     .
+     "_diffrn_source.pdbx_synchrotron_beamline"  "PROXIMA 2"     .
+     "_diffrn_source.pdbx_synchrotron_beamline"  PX10.1          .
+     "_diffrn_source.pdbx_synchrotron_beamline"  PX10.1          .
+     "_diffrn_source.pdbx_synchrotron_beamline"  PX14.1          .
+     "_diffrn_source.pdbx_synchrotron_beamline"  PX14.2          .
+     "_diffrn_source.pdbx_synchrotron_beamline"  PX7.2           .
+     "_diffrn_source.pdbx_synchrotron_beamline"  PX7.2           .
+     "_diffrn_source.pdbx_synchrotron_beamline"  PX7.2           .
+     "_diffrn_source.pdbx_synchrotron_beamline"  PX9.5           .
+     "_diffrn_source.pdbx_synchrotron_beamline"  PX9.6           .
+     "_diffrn_source.pdbx_synchrotron_beamline"  PX-BL21         .
+     "_diffrn_source.pdbx_synchrotron_beamline"  SPB/SFX         .
+     "_diffrn_source.pdbx_synchrotron_beamline"  "TPS 05A"       .
+     "_diffrn_source.pdbx_synchrotron_beamline"  U7B             .
+     "_diffrn_source.pdbx_synchrotron_beamline"  W01B-MX2        .
+     "_diffrn_source.pdbx_synchrotron_beamline"  X06DA           .
+     "_diffrn_source.pdbx_synchrotron_beamline"  X06SA           .
+     "_diffrn_source.pdbx_synchrotron_beamline"  X10SA           .
+     "_diffrn_source.pdbx_synchrotron_beamline"  X11             .
+     "_diffrn_source.pdbx_synchrotron_beamline"  X12             .
+     "_diffrn_source.pdbx_synchrotron_beamline"  X12B            .
+     "_diffrn_source.pdbx_synchrotron_beamline"  X12C            .
+     "_diffrn_source.pdbx_synchrotron_beamline"  X13             .
+     "_diffrn_source.pdbx_synchrotron_beamline"  X17B1           .
+     "_diffrn_source.pdbx_synchrotron_beamline"  X1A             .
+     "_diffrn_source.pdbx_synchrotron_beamline"  X25             .
+     "_diffrn_source.pdbx_synchrotron_beamline"  X26C            .
+     "_diffrn_source.pdbx_synchrotron_beamline"  X29A            .
+     "_diffrn_source.pdbx_synchrotron_beamline"  X31             .
+     "_diffrn_source.pdbx_synchrotron_beamline"  X3A             .
+     "_diffrn_source.pdbx_synchrotron_beamline"  X3B             .
+     "_diffrn_source.pdbx_synchrotron_beamline"  X4A             .
+     "_diffrn_source.pdbx_synchrotron_beamline"  X4C             .
+     "_diffrn_source.pdbx_synchrotron_beamline"  X6A             .
+     "_diffrn_source.pdbx_synchrotron_beamline"  X7B             .
+     "_diffrn_source.pdbx_synchrotron_beamline"  X8C             .
+     "_diffrn_source.pdbx_synchrotron_beamline"  X9A             .
+     "_diffrn_source.pdbx_synchrotron_beamline"  X9B             .
+     "_diffrn_source.pdbx_synchrotron_beamline"  XALOC           .
+     "_diffrn_source.pdbx_synchrotron_beamline"  XPP             .
    #
 save_
 
@@ -24389,57 +24389,57 @@ save__diffrn_source.pdbx_synchrotron_site
     _pdbx_item_enumeration.name
     _pdbx_item_enumeration.value
     _pdbx_item_enumeration.detail
-      "_diffrn_source.pdbx_synchrotron_site"  AichiSR                           .  
-      "_diffrn_source.pdbx_synchrotron_site"  ALBA                              .  
-      "_diffrn_source.pdbx_synchrotron_site"  ALS                               .  
-      "_diffrn_source.pdbx_synchrotron_site"  APS                               .  
-      "_diffrn_source.pdbx_synchrotron_site"  "Australian Synchrotron"          .  
-      "_diffrn_source.pdbx_synchrotron_site"  BESSY                             .  
-      "_diffrn_source.pdbx_synchrotron_site"  BSRF                              .  
-      "_diffrn_source.pdbx_synchrotron_site"  CAMD                              .  
-      "_diffrn_source.pdbx_synchrotron_site"  CHESS                             .  
-      "_diffrn_source.pdbx_synchrotron_site"  CLSI                              .  
-      "_diffrn_source.pdbx_synchrotron_site"  Diamond                           .  
-      "_diffrn_source.pdbx_synchrotron_site"  ELETTRA                           .  
-      "_diffrn_source.pdbx_synchrotron_site"  "EMBL/DESY, HAMBURG"              .  
-      "_diffrn_source.pdbx_synchrotron_site"  ESRF                              .  
-      "_diffrn_source.pdbx_synchrotron_site"  'European XFEL'                   .  
-      "_diffrn_source.pdbx_synchrotron_site"  "FRM II"                          .  
+      "_diffrn_source.pdbx_synchrotron_site"  AichiSR                           .
+      "_diffrn_source.pdbx_synchrotron_site"  ALBA                              .
+      "_diffrn_source.pdbx_synchrotron_site"  ALS                               .
+      "_diffrn_source.pdbx_synchrotron_site"  APS                               .
+      "_diffrn_source.pdbx_synchrotron_site"  "Australian Synchrotron"          .
+      "_diffrn_source.pdbx_synchrotron_site"  BESSY                             .
+      "_diffrn_source.pdbx_synchrotron_site"  BSRF                              .
+      "_diffrn_source.pdbx_synchrotron_site"  CAMD                              .
+      "_diffrn_source.pdbx_synchrotron_site"  CHESS                             .
+      "_diffrn_source.pdbx_synchrotron_site"  CLSI                              .
+      "_diffrn_source.pdbx_synchrotron_site"  Diamond                           .
+      "_diffrn_source.pdbx_synchrotron_site"  ELETTRA                           .
+      "_diffrn_source.pdbx_synchrotron_site"  "EMBL/DESY, HAMBURG"              .
+      "_diffrn_source.pdbx_synchrotron_site"  ESRF                              .
+      "_diffrn_source.pdbx_synchrotron_site"  'European XFEL'                   .
+      "_diffrn_source.pdbx_synchrotron_site"  "FRM II"                          .
       "_diffrn_source.pdbx_synchrotron_site"  "KURCHATOV SNC"                   .
-      "_diffrn_source.pdbx_synchrotron_site"  "JPARC MLF"                       .  
-      "_diffrn_source.pdbx_synchrotron_site"  JRR-3M                            .  
-      "_diffrn_source.pdbx_synchrotron_site"  KCSRNT                            .  
-      "_diffrn_source.pdbx_synchrotron_site"  ILL                               .  
-      "_diffrn_source.pdbx_synchrotron_site"  LANSCE                            .  
-      "_diffrn_source.pdbx_synchrotron_site"  LNLS                              .  
-      "_diffrn_source.pdbx_synchrotron_site"  LURE                              .  
-      "_diffrn_source.pdbx_synchrotron_site"  "MAX II"                          .  
-      "_diffrn_source.pdbx_synchrotron_site"  "MAX IV"                          .  
-      "_diffrn_source.pdbx_synchrotron_site"  "MPG/DESY, HAMBURG"               .  
-      "_diffrn_source.pdbx_synchrotron_site"  NFPSS                             .  
-      "_diffrn_source.pdbx_synchrotron_site"  NSLS                              .  
-      "_diffrn_source.pdbx_synchrotron_site"  NSLS-II                           .  
-      "_diffrn_source.pdbx_synchrotron_site"  NSRL                              .  
-      "_diffrn_source.pdbx_synchrotron_site"  NSRRC                             .  
-      "_diffrn_source.pdbx_synchrotron_site"  "ORNL High Flux Isotope Reactor"  .  
-      "_diffrn_source.pdbx_synchrotron_site"  "ORNL Spallation Neutron Source"  .  
-      "_diffrn_source.pdbx_synchrotron_site"  PAL/PLS                           .  
-      "_diffrn_source.pdbx_synchrotron_site"  PAL-XFEL                          .  
-      "_diffrn_source.pdbx_synchrotron_site"  "PETRA II, DESY"                  .  
-      "_diffrn_source.pdbx_synchrotron_site"  "PETRA III, EMBL c/o DESY"        .  
-      "_diffrn_source.pdbx_synchrotron_site"  "PETRA III, DESY"                 .  
-      "_diffrn_source.pdbx_synchrotron_site"  "Photon Factory"                  .  
-      "_diffrn_source.pdbx_synchrotron_site"  "RRCAT INDUS-2"                   .  
-      "_diffrn_source.pdbx_synchrotron_site"  SACLA                             .  
-      "_diffrn_source.pdbx_synchrotron_site"  SAGA-LS                           .  
-      "_diffrn_source.pdbx_synchrotron_site"  "SLAC LCLS"                       .  
-      "_diffrn_source.pdbx_synchrotron_site"  SLRI                              .  
-      "_diffrn_source.pdbx_synchrotron_site"  SLS                               .  
-      "_diffrn_source.pdbx_synchrotron_site"  SOLEIL                            .  
-      "_diffrn_source.pdbx_synchrotron_site"  SPring-8                          .  
-      "_diffrn_source.pdbx_synchrotron_site"  SRS                               .  
-      "_diffrn_source.pdbx_synchrotron_site"  SSRF                              .  
-      "_diffrn_source.pdbx_synchrotron_site"  SSRL                              .  
+      "_diffrn_source.pdbx_synchrotron_site"  "JPARC MLF"                       .
+      "_diffrn_source.pdbx_synchrotron_site"  JRR-3M                            .
+      "_diffrn_source.pdbx_synchrotron_site"  KCSRNT                            .
+      "_diffrn_source.pdbx_synchrotron_site"  ILL                               .
+      "_diffrn_source.pdbx_synchrotron_site"  LANSCE                            .
+      "_diffrn_source.pdbx_synchrotron_site"  LNLS                              .
+      "_diffrn_source.pdbx_synchrotron_site"  LURE                              .
+      "_diffrn_source.pdbx_synchrotron_site"  "MAX II"                          .
+      "_diffrn_source.pdbx_synchrotron_site"  "MAX IV"                          .
+      "_diffrn_source.pdbx_synchrotron_site"  "MPG/DESY, HAMBURG"               .
+      "_diffrn_source.pdbx_synchrotron_site"  NFPSS                             .
+      "_diffrn_source.pdbx_synchrotron_site"  NSLS                              .
+      "_diffrn_source.pdbx_synchrotron_site"  NSLS-II                           .
+      "_diffrn_source.pdbx_synchrotron_site"  NSRL                              .
+      "_diffrn_source.pdbx_synchrotron_site"  NSRRC                             .
+      "_diffrn_source.pdbx_synchrotron_site"  "ORNL High Flux Isotope Reactor"  .
+      "_diffrn_source.pdbx_synchrotron_site"  "ORNL Spallation Neutron Source"  .
+      "_diffrn_source.pdbx_synchrotron_site"  PAL/PLS                           .
+      "_diffrn_source.pdbx_synchrotron_site"  PAL-XFEL                          .
+      "_diffrn_source.pdbx_synchrotron_site"  "PETRA II, DESY"                  .
+      "_diffrn_source.pdbx_synchrotron_site"  "PETRA III, EMBL c/o DESY"        .
+      "_diffrn_source.pdbx_synchrotron_site"  "PETRA III, DESY"                 .
+      "_diffrn_source.pdbx_synchrotron_site"  "Photon Factory"                  .
+      "_diffrn_source.pdbx_synchrotron_site"  "RRCAT INDUS-2"                   .
+      "_diffrn_source.pdbx_synchrotron_site"  SACLA                             .
+      "_diffrn_source.pdbx_synchrotron_site"  SAGA-LS                           .
+      "_diffrn_source.pdbx_synchrotron_site"  "SLAC LCLS"                       .
+      "_diffrn_source.pdbx_synchrotron_site"  SLRI                              .
+      "_diffrn_source.pdbx_synchrotron_site"  SLS                               .
+      "_diffrn_source.pdbx_synchrotron_site"  SOLEIL                            .
+      "_diffrn_source.pdbx_synchrotron_site"  SPring-8                          .
+      "_diffrn_source.pdbx_synchrotron_site"  SRS                               .
+      "_diffrn_source.pdbx_synchrotron_site"  SSRF                              .
+      "_diffrn_source.pdbx_synchrotron_site"  SSRL                              .
       "_diffrn_source.pdbx_synchrotron_site"  "SwissFEL ARAMIS"                 .
 save_
 
