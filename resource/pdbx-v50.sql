@@ -16,41 +16,130 @@
 --  retrieve field annotation: false
 --
 -- Statistics of schema:
---  Generated 548 tables (6669 fields), 0 attr groups, 0 model groups in total
+--  Generated 898 tables (7760 fields), 0 attr groups, 0 model groups in total
 --   Namespaces:
 --    http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), http://www.w3.org/2001/XMLSchema (xsd)
 --   Schema locations:
 --    resource/pdbx-v50.xsd
 --   Table types:
---    0 root, 0 root children, 0 admin roots, 548 admin children
+--    0 root, 0 root children, 0 admin roots, 898 admin children
 --   System keys:
---    0 primary keys (0 unique constraints), 0 foreign keys (329 key references), 0 nested keys (0 as attribute)
+--    0 primary keys (0 unique constraints), 0 foreign keys (334 key references), 0 nested keys (0 as attribute)
 --   User keys:
---    548 document keys, 0 serial keys, 0 xpath keys
+--    898 document keys, 0 serial keys, 0 xpath keys
 --   Contents:
---    1002 attributes (0 in-place document keys), 5119 elements (0 in-place document keys), 0 simple contents (0 as attribute, 0 as conditional attribute)
+--    1352 attributes (0 in-place document keys), 4743 elements (0 in-place document keys), 345 simple contents (0 as attribute, 0 as conditional attribute)
 --   Wild cards:
 --    0 any elements, 0 any attributes
 --
 
+DROP TABLE IF EXISTS "B_equiv_geom_mean_esd" CASCADE;
+DROP TABLE IF EXISTS "B_iso_or_equiv" CASCADE;
+DROP TABLE IF EXISTS "B_iso_or_equiv_esd" CASCADE;
+DROP TABLE IF EXISTS "Cartn_x" CASCADE;
+DROP TABLE IF EXISTS "Cartn_x_esd" CASCADE;
+DROP TABLE IF EXISTS "Cartn_y" CASCADE;
+DROP TABLE IF EXISTS "Cartn_y_esd" CASCADE;
+DROP TABLE IF EXISTS "Cartn_z" CASCADE;
+DROP TABLE IF EXISTS "Cartn_z_esd" CASCADE;
+DROP TABLE IF EXISTS "U_equiv_geom_mean_esd" CASCADE;
+DROP TABLE IF EXISTS "U_iso_or_equiv_esd" CASCADE;
+DROP TABLE IF EXISTS "aniso_B11" CASCADE;
+DROP TABLE IF EXISTS "aniso_B11_esd" CASCADE;
+DROP TABLE IF EXISTS "aniso_B12" CASCADE;
+DROP TABLE IF EXISTS "aniso_B12_esd" CASCADE;
+DROP TABLE IF EXISTS "aniso_B13" CASCADE;
+DROP TABLE IF EXISTS "aniso_B13_esd" CASCADE;
+DROP TABLE IF EXISTS "aniso_B22" CASCADE;
+DROP TABLE IF EXISTS "aniso_B22_esd" CASCADE;
+DROP TABLE IF EXISTS "aniso_B23" CASCADE;
+DROP TABLE IF EXISTS "aniso_B23_esd" CASCADE;
+DROP TABLE IF EXISTS "aniso_B33" CASCADE;
+DROP TABLE IF EXISTS "aniso_B33_esd" CASCADE;
+DROP TABLE IF EXISTS "aniso_U11" CASCADE;
+DROP TABLE IF EXISTS "aniso_U11_esd" CASCADE;
+DROP TABLE IF EXISTS "aniso_U12" CASCADE;
+DROP TABLE IF EXISTS "aniso_U12_esd" CASCADE;
+DROP TABLE IF EXISTS "aniso_U13" CASCADE;
+DROP TABLE IF EXISTS "aniso_U13_esd" CASCADE;
+DROP TABLE IF EXISTS "aniso_U22" CASCADE;
+DROP TABLE IF EXISTS "aniso_U22_esd" CASCADE;
+DROP TABLE IF EXISTS "aniso_U23" CASCADE;
+DROP TABLE IF EXISTS "aniso_U23_esd" CASCADE;
+DROP TABLE IF EXISTS "aniso_U33" CASCADE;
+DROP TABLE IF EXISTS "aniso_U33_esd" CASCADE;
 DROP TABLE IF EXISTS atom_site CASCADE;
+DROP TABLE IF EXISTS "B11" CASCADE;
+DROP TABLE IF EXISTS "B11_esd" CASCADE;
+DROP TABLE IF EXISTS "B12" CASCADE;
+DROP TABLE IF EXISTS "B12_esd" CASCADE;
+DROP TABLE IF EXISTS "B13" CASCADE;
+DROP TABLE IF EXISTS "B13_esd" CASCADE;
+DROP TABLE IF EXISTS "B22" CASCADE;
+DROP TABLE IF EXISTS "B22_esd" CASCADE;
+DROP TABLE IF EXISTS "B23" CASCADE;
+DROP TABLE IF EXISTS "B23_esd" CASCADE;
+DROP TABLE IF EXISTS "B33" CASCADE;
+DROP TABLE IF EXISTS "B33_esd" CASCADE;
+DROP TABLE IF EXISTS "U11" CASCADE;
+DROP TABLE IF EXISTS "U11_esd" CASCADE;
+DROP TABLE IF EXISTS "U12" CASCADE;
+DROP TABLE IF EXISTS "U12_esd" CASCADE;
+DROP TABLE IF EXISTS "U13" CASCADE;
+DROP TABLE IF EXISTS "U13_esd" CASCADE;
+DROP TABLE IF EXISTS "U22" CASCADE;
+DROP TABLE IF EXISTS "U22_esd" CASCADE;
+DROP TABLE IF EXISTS "U23" CASCADE;
+DROP TABLE IF EXISTS "U23_esd" CASCADE;
+DROP TABLE IF EXISTS "U33" CASCADE;
+DROP TABLE IF EXISTS "U33_esd" CASCADE;
 DROP TABLE IF EXISTS atom_site_anisotrop CASCADE;
 DROP TABLE IF EXISTS atom_sites CASCADE;
 DROP TABLE IF EXISTS atom_sites_alt_gen CASCADE;
 DROP TABLE IF EXISTS atom_sites_footnote CASCADE;
+DROP TABLE IF EXISTS scat_length_neutron CASCADE;
 DROP TABLE IF EXISTS audit_author CASCADE;
 DROP TABLE IF EXISTS audit_conform CASCADE;
 DROP TABLE IF EXISTS audit_contact_author CASCADE;
 DROP TABLE IF EXISTS audit_link CASCADE;
+DROP TABLE IF EXISTS angle_alpha_esd CASCADE;
+DROP TABLE IF EXISTS angle_beta_esd CASCADE;
+DROP TABLE IF EXISTS angle_gamma_esd CASCADE;
+DROP TABLE IF EXISTS length_a_esd CASCADE;
+DROP TABLE IF EXISTS length_b_esd CASCADE;
+DROP TABLE IF EXISTS length_c_esd CASCADE;
+DROP TABLE IF EXISTS reciprocal_angle_alpha_esd CASCADE;
+DROP TABLE IF EXISTS reciprocal_angle_beta_esd CASCADE;
+DROP TABLE IF EXISTS reciprocal_angle_gamma_esd CASCADE;
+DROP TABLE IF EXISTS reciprocal_length_a_esd CASCADE;
+DROP TABLE IF EXISTS reciprocal_length_b_esd CASCADE;
+DROP TABLE IF EXISTS reciprocal_length_c_esd CASCADE;
+DROP TABLE IF EXISTS volume_esd CASCADE;
 DROP TABLE IF EXISTS cell CASCADE;
+DROP TABLE IF EXISTS pressure CASCADE;
+DROP TABLE IF EXISTS pressure_esd CASCADE;
+DROP TABLE IF EXISTS temp_esd CASCADE;
 DROP TABLE IF EXISTS cell_measurement CASCADE;
 DROP TABLE IF EXISTS cell_measurement_refln CASCADE;
 DROP TABLE IF EXISTS chem_comp_angle CASCADE;
+DROP TABLE IF EXISTS "model_Cartn_x" CASCADE;
+DROP TABLE IF EXISTS "model_Cartn_x_esd" CASCADE;
+DROP TABLE IF EXISTS "model_Cartn_y" CASCADE;
+DROP TABLE IF EXISTS "model_Cartn_y_esd" CASCADE;
+DROP TABLE IF EXISTS "model_Cartn_z" CASCADE;
+DROP TABLE IF EXISTS "model_Cartn_z_esd" CASCADE;
+DROP TABLE IF EXISTS "pdbx_model_Cartn_x_ideal" CASCADE;
+DROP TABLE IF EXISTS "pdbx_model_Cartn_y_ideal" CASCADE;
+DROP TABLE IF EXISTS "pdbx_model_Cartn_z_ideal" CASCADE;
 DROP TABLE IF EXISTS chem_comp_bond CASCADE;
+DROP TABLE IF EXISTS volume_three CASCADE;
+DROP TABLE IF EXISTS volume_three_esd CASCADE;
 DROP TABLE IF EXISTS chem_comp_chir CASCADE;
+DROP TABLE IF EXISTS dev CASCADE;
 DROP TABLE IF EXISTS chem_comp_chir_atom CASCADE;
 DROP TABLE IF EXISTS chem_comp_link CASCADE;
 DROP TABLE IF EXISTS chem_comp_plane CASCADE;
+DROP TABLE IF EXISTS dist_esd CASCADE;
 DROP TABLE IF EXISTS chem_comp_plane_atom CASCADE;
 DROP TABLE IF EXISTS chem_comp_tor CASCADE;
 DROP TABLE IF EXISTS chem_comp_tor_value CASCADE;
@@ -62,6 +151,8 @@ DROP TABLE IF EXISTS chem_link_plane CASCADE;
 DROP TABLE IF EXISTS chem_link_plane_atom CASCADE;
 DROP TABLE IF EXISTS chem_link_tor CASCADE;
 DROP TABLE IF EXISTS chem_link_tor_value CASCADE;
+DROP TABLE IF EXISTS temperature_decomposition_esd CASCADE;
+DROP TABLE IF EXISTS temperature_sublimation_esd CASCADE;
 DROP TABLE IF EXISTS chemical CASCADE;
 DROP TABLE IF EXISTS chemical_conn_bond CASCADE;
 DROP TABLE IF EXISTS chemical_formula CASCADE;
@@ -75,16 +166,30 @@ DROP TABLE IF EXISTS "database_PDB_matrix" CASCADE;
 DROP TABLE IF EXISTS "database_PDB_remark" CASCADE;
 DROP TABLE IF EXISTS "database_PDB_rev_record" CASCADE;
 DROP TABLE IF EXISTS "database_PDB_tvect" CASCADE;
+DROP TABLE IF EXISTS ambient_pressure_esd CASCADE;
+DROP TABLE IF EXISTS ambient_temp_esd CASCADE;
 DROP TABLE IF EXISTS diffrn_attenuator CASCADE;
+DROP TABLE IF EXISTS pdbx_collection_time_total CASCADE;
 DROP TABLE IF EXISTS diffrn_detector CASCADE;
 DROP TABLE IF EXISTS diffrn_measurement CASCADE;
 DROP TABLE IF EXISTS diffrn_orient_matrix CASCADE;
+DROP TABLE IF EXISTS angle_chi CASCADE;
+DROP TABLE IF EXISTS angle_kappa CASCADE;
+DROP TABLE IF EXISTS angle_omega CASCADE;
+DROP TABLE IF EXISTS angle_phi CASCADE;
+DROP TABLE IF EXISTS angle_psi CASCADE;
+DROP TABLE IF EXISTS angle_theta CASCADE;
 DROP TABLE IF EXISTS diffrn_orient_refln CASCADE;
 DROP TABLE IF EXISTS diffrn_radiation CASCADE;
 DROP TABLE IF EXISTS diffrn_radiation_wavelength CASCADE;
+DROP TABLE IF EXISTS scan_rate CASCADE;
+DROP TABLE IF EXISTS scan_time_backgd CASCADE;
 DROP TABLE IF EXISTS diffrn_refln CASCADE;
 DROP TABLE IF EXISTS diffrn_reflns CASCADE;
 DROP TABLE IF EXISTS diffrn_reflns_class CASCADE;
+DROP TABLE IF EXISTS current CASCADE;
+DROP TABLE IF EXISTS power CASCADE;
+DROP TABLE IF EXISTS voltage CASCADE;
 DROP TABLE IF EXISTS diffrn_source CASCADE;
 DROP TABLE IF EXISTS diffrn_standard_refln CASCADE;
 DROP TABLE IF EXISTS diffrn_standards CASCADE;
@@ -93,12 +198,16 @@ DROP TABLE IF EXISTS em_2d_projection_selection CASCADE;
 DROP TABLE IF EXISTS em_3d_crystal_entity CASCADE;
 DROP TABLE IF EXISTS em_3d_fitting CASCADE;
 DROP TABLE IF EXISTS em_3d_fitting_list CASCADE;
+DROP TABLE IF EXISTS resolution CASCADE;
 DROP TABLE IF EXISTS em_3d_reconstruction CASCADE;
 DROP TABLE IF EXISTS em_admin CASCADE;
+DROP TABLE IF EXISTS mol_wt_exp CASCADE;
+DROP TABLE IF EXISTS mol_wt_theo CASCADE;
 DROP TABLE IF EXISTS em_assembly CASCADE;
 DROP TABLE IF EXISTS em_author_list CASCADE;
 DROP TABLE IF EXISTS em_buffer CASCADE;
 DROP TABLE IF EXISTS em_buffer_component CASCADE;
+DROP TABLE IF EXISTS temperature CASCADE;
 DROP TABLE IF EXISTS em_crystal_formation CASCADE;
 DROP TABLE IF EXISTS em_ctf_correction CASCADE;
 DROP TABLE IF EXISTS em_db_reference CASCADE;
@@ -118,15 +227,33 @@ DROP TABLE IF EXISTS em_experiment CASCADE;
 DROP TABLE IF EXISTS em_fiducial_markers CASCADE;
 DROP TABLE IF EXISTS em_figure_depositor_info CASCADE;
 DROP TABLE IF EXISTS em_final_classification CASCADE;
+DROP TABLE IF EXISTS duration CASCADE;
+DROP TABLE IF EXISTS final_thickness CASCADE;
+DROP TABLE IF EXISTS initial_thickness CASCADE;
 DROP TABLE IF EXISTS em_focused_ion_beam CASCADE;
 DROP TABLE IF EXISTS em_fsc_curve CASCADE;
+DROP TABLE IF EXISTS time CASCADE;
 DROP TABLE IF EXISTS em_grid_pretreatment CASCADE;
 DROP TABLE IF EXISTS em_helical_entity CASCADE;
 DROP TABLE IF EXISTS em_high_pressure_freezing CASCADE;
 DROP TABLE IF EXISTS em_image_processing CASCADE;
 DROP TABLE IF EXISTS em_image_recording CASCADE;
+DROP TABLE IF EXISTS sampling_size CASCADE;
 DROP TABLE IF EXISTS em_image_scans CASCADE;
+DROP TABLE IF EXISTS calibrated_defocus_min CASCADE;
+DROP TABLE IF EXISTS detector_distance CASCADE;
+DROP TABLE IF EXISTS electron_dose CASCADE;
+DROP TABLE IF EXISTS energy_window CASCADE;
+DROP TABLE IF EXISTS nominal_defocus_max CASCADE;
+DROP TABLE IF EXISTS nominal_defocus_min CASCADE;
+DROP TABLE IF EXISTS recording_temperature_maximum CASCADE;
+DROP TABLE IF EXISTS recording_temperature_minimum CASCADE;
+DROP TABLE IF EXISTS residual_tilt CASCADE;
+DROP TABLE IF EXISTS tilt_angle_max CASCADE;
+DROP TABLE IF EXISTS tilt_angle_min CASCADE;
 DROP TABLE IF EXISTS em_imaging CASCADE;
+DROP TABLE IF EXISTS energyfilter_lower CASCADE;
+DROP TABLE IF EXISTS energyfilter_upper CASCADE;
 DROP TABLE IF EXISTS em_imaging_optics CASCADE;
 DROP TABLE IF EXISTS em_interpret_figure CASCADE;
 DROP TABLE IF EXISTS em_layer_lines CASCADE;
@@ -136,6 +263,7 @@ DROP TABLE IF EXISTS em_map_depositor_info CASCADE;
 DROP TABLE IF EXISTS em_mask_depositor_info CASCADE;
 DROP TABLE IF EXISTS em_obsolete CASCADE;
 DROP TABLE IF EXISTS em_particle_selection CASCADE;
+DROP TABLE IF EXISTS sample_concentration CASCADE;
 DROP TABLE IF EXISTS em_sample_preparation CASCADE;
 DROP TABLE IF EXISTS em_sample_support CASCADE;
 DROP TABLE IF EXISTS em_shadowing CASCADE;
@@ -153,6 +281,8 @@ DROP TABLE IF EXISTS em_ultramicrotomy CASCADE;
 DROP TABLE IF EXISTS em_virus_entity CASCADE;
 DROP TABLE IF EXISTS em_virus_natural_host CASCADE;
 DROP TABLE IF EXISTS em_virus_shell CASCADE;
+DROP TABLE IF EXISTS chamber_temperature CASCADE;
+DROP TABLE IF EXISTS temp CASCADE;
 DROP TABLE IF EXISTS em_vitrification CASCADE;
 DROP TABLE IF EXISTS em_volume_selection CASCADE;
 DROP TABLE IF EXISTS entity_keywords CASCADE;
@@ -163,13 +293,32 @@ DROP TABLE IF EXISTS entity_src_gen CASCADE;
 DROP TABLE IF EXISTS entity_src_nat CASCADE;
 DROP TABLE IF EXISTS entry_link CASCADE;
 DROP TABLE IF EXISTS exptl CASCADE;
+DROP TABLE IF EXISTS density_meas_esd CASCADE;
+DROP TABLE IF EXISTS density_meas_temp_esd CASCADE;
+DROP TABLE IF EXISTS pdbx_crystal_diffrn_lifetime CASCADE;
+DROP TABLE IF EXISTS pdbx_crystal_diffrn_limit CASCADE;
+DROP TABLE IF EXISTS pdbx_crystal_direction_1 CASCADE;
+DROP TABLE IF EXISTS pdbx_crystal_direction_2 CASCADE;
+DROP TABLE IF EXISTS pdbx_crystal_direction_3 CASCADE;
+DROP TABLE IF EXISTS pdbx_mosaicity CASCADE;
+DROP TABLE IF EXISTS pdbx_mosaicity_esd CASCADE;
+DROP TABLE IF EXISTS diffr_chi CASCADE;
+DROP TABLE IF EXISTS diffr_kappa CASCADE;
+DROP TABLE IF EXISTS diffr_phi CASCADE;
+DROP TABLE IF EXISTS diffr_psi CASCADE;
 DROP TABLE IF EXISTS exptl_crystal_face CASCADE;
 DROP TABLE IF EXISTS exptl_crystal_grow CASCADE;
 DROP TABLE IF EXISTS exptl_crystal_grow_comp CASCADE;
 DROP TABLE IF EXISTS geom CASCADE;
+DROP TABLE IF EXISTS value CASCADE;
+DROP TABLE IF EXISTS value_esd CASCADE;
 DROP TABLE IF EXISTS geom_angle CASCADE;
 DROP TABLE IF EXISTS geom_bond CASCADE;
 DROP TABLE IF EXISTS geom_contact CASCADE;
+DROP TABLE IF EXISTS "angle_DHA_esd" CASCADE;
+DROP TABLE IF EXISTS "dist_DA_esd" CASCADE;
+DROP TABLE IF EXISTS "dist_DH_esd" CASCADE;
+DROP TABLE IF EXISTS "dist_HA_esd" CASCADE;
 DROP TABLE IF EXISTS geom_hbond CASCADE;
 DROP TABLE IF EXISTS geom_torsion CASCADE;
 DROP TABLE IF EXISTS journal CASCADE;
@@ -181,6 +330,12 @@ DROP TABLE IF EXISTS ndb_struct_na_base_pair CASCADE;
 DROP TABLE IF EXISTS ndb_struct_na_base_pair_step CASCADE;
 DROP TABLE IF EXISTS "pdbx_SG_project" CASCADE;
 DROP TABLE IF EXISTS pdbx_atlas CASCADE;
+DROP TABLE IF EXISTS "U_tls11" CASCADE;
+DROP TABLE IF EXISTS "U_tls12" CASCADE;
+DROP TABLE IF EXISTS "U_tls13" CASCADE;
+DROP TABLE IF EXISTS "U_tls22" CASCADE;
+DROP TABLE IF EXISTS "U_tls23" CASCADE;
+DROP TABLE IF EXISTS "U_tls33" CASCADE;
 DROP TABLE IF EXISTS pdbx_atom_site_aniso_tls CASCADE;
 DROP TABLE IF EXISTS pdbx_audit CASCADE;
 DROP TABLE IF EXISTS pdbx_audit_author CASCADE;
@@ -190,6 +345,8 @@ DROP TABLE IF EXISTS pdbx_audit_revision_details CASCADE;
 DROP TABLE IF EXISTS pdbx_audit_revision_group CASCADE;
 DROP TABLE IF EXISTS pdbx_audit_revision_item CASCADE;
 DROP TABLE IF EXISTS pdbx_audit_support CASCADE;
+DROP TABLE IF EXISTS lower_limit CASCADE;
+DROP TABLE IF EXISTS upper_limit CASCADE;
 DROP TABLE IF EXISTS pdbx_bond_distance_limits CASCADE;
 DROP TABLE IF EXISTS pdbx_buffer_components CASCADE;
 DROP TABLE IF EXISTS pdbx_chem_comp_atom_edit CASCADE;
@@ -221,6 +378,12 @@ DROP TABLE IF EXISTS pdbx_contact_author CASCADE;
 DROP TABLE IF EXISTS pdbx_coord CASCADE;
 DROP TABLE IF EXISTS pdbx_coordinate_model CASCADE;
 DROP TABLE IF EXISTS pdbx_crystal_alignment CASCADE;
+DROP TABLE IF EXISTS alpha CASCADE;
+DROP TABLE IF EXISTS alpha_tolerance CASCADE;
+DROP TABLE IF EXISTS beta CASCADE;
+DROP TABLE IF EXISTS beta_tolerance CASCADE;
+DROP TABLE IF EXISTS gamma CASCADE;
+DROP TABLE IF EXISTS gamma_tolerance CASCADE;
 DROP TABLE IF EXISTS pdbx_data_processing_cell CASCADE;
 DROP TABLE IF EXISTS pdbx_data_processing_detector CASCADE;
 DROP TABLE IF EXISTS pdbx_data_processing_reflns CASCADE;
@@ -252,6 +415,8 @@ DROP TABLE IF EXISTS pdbx_depui_status_flags CASCADE;
 DROP TABLE IF EXISTS pdbx_depui_upload CASCADE;
 DROP TABLE IF EXISTS pdbx_depui_validation_status_flags CASCADE;
 DROP TABLE IF EXISTS pdbx_diffrn_reflns_shell CASCADE;
+DROP TABLE IF EXISTS neighbor_ligand_distance CASCADE;
+DROP TABLE IF EXISTS neighbor_macromolecule_distance CASCADE;
 DROP TABLE IF EXISTS pdbx_distant_solvent_atoms CASCADE;
 DROP TABLE IF EXISTS pdbx_domain_range CASCADE;
 DROP TABLE IF EXISTS pdbx_drug_info CASCADE;
@@ -275,17 +440,37 @@ DROP TABLE IF EXISTS pdbx_entity_poly_na_type CASCADE;
 DROP TABLE IF EXISTS pdbx_entity_poly_protein_class CASCADE;
 DROP TABLE IF EXISTS pdbx_entity_prod_protocol CASCADE;
 DROP TABLE IF EXISTS pdbx_entity_src_gen_character CASCADE;
+DROP TABLE IF EXISTS column_temperature CASCADE;
+DROP TABLE IF EXISTS column_volume CASCADE;
+DROP TABLE IF EXISTS flow_rate CASCADE;
+DROP TABLE IF EXISTS sample_volume CASCADE;
+DROP TABLE IF EXISTS volume_pooled_fractions CASCADE;
+DROP TABLE IF EXISTS yield_pooled_fractions CASCADE;
 DROP TABLE IF EXISTS pdbx_entity_src_gen_chrom CASCADE;
 DROP TABLE IF EXISTS pdbx_entity_src_gen_clone_ligation CASCADE;
 DROP TABLE IF EXISTS pdbx_entity_src_gen_clone_recombination CASCADE;
 DROP TABLE IF EXISTS pdbx_entity_src_gen_depositor_info CASCADE;
+DROP TABLE IF EXISTS culture_temperature CASCADE;
+DROP TABLE IF EXISTS culture_time CASCADE;
+DROP TABLE IF EXISTS culture_volume CASCADE;
+DROP TABLE IF EXISTS inducer_concentration CASCADE;
+DROP TABLE IF EXISTS induction_temperature CASCADE;
+DROP TABLE IF EXISTS induction_timepoint CASCADE;
+DROP TABLE IF EXISTS multiplicity_of_infection CASCADE;
 DROP TABLE IF EXISTS pdbx_entity_src_gen_express_timepoint CASCADE;
+DROP TABLE IF EXISTS protein_volume CASCADE;
+DROP TABLE IF EXISTS protein_yield CASCADE;
 DROP TABLE IF EXISTS pdbx_entity_src_gen_fract CASCADE;
+DROP TABLE IF EXISTS buffer_volume CASCADE;
 DROP TABLE IF EXISTS pdbx_entity_src_gen_lysis CASCADE;
 DROP TABLE IF EXISTS pdbx_entity_src_gen_prod_digest CASCADE;
 DROP TABLE IF EXISTS pdbx_entity_src_gen_prod_other_parameter CASCADE;
 DROP TABLE IF EXISTS pdbx_entity_src_gen_prod_pcr CASCADE;
+DROP TABLE IF EXISTS cleavage_temperature CASCADE;
+DROP TABLE IF EXISTS cleavage_time CASCADE;
 DROP TABLE IF EXISTS pdbx_entity_src_gen_proteolysis CASCADE;
+DROP TABLE IF EXISTS protein_concentration CASCADE;
+DROP TABLE IF EXISTS storage_temperature CASCADE;
 DROP TABLE IF EXISTS pdbx_entity_src_gen_pure CASCADE;
 DROP TABLE IF EXISTS pdbx_entity_src_gen_refold CASCADE;
 DROP TABLE IF EXISTS pdbx_entity_src_syn CASCADE;
@@ -301,6 +486,8 @@ DROP TABLE IF EXISTS pdbx_feature_domain CASCADE;
 DROP TABLE IF EXISTS pdbx_feature_entry CASCADE;
 DROP TABLE IF EXISTS pdbx_feature_monomer CASCADE;
 DROP TABLE IF EXISTS pdbx_feature_sequence_range CASCADE;
+DROP TABLE IF EXISTS rise_per_n_subunits CASCADE;
+DROP TABLE IF EXISTS rotation_per_n_subunits CASCADE;
 DROP TABLE IF EXISTS pdbx_helical_symmetry CASCADE;
 DROP TABLE IF EXISTS pdbx_helical_symmetry_depositor_info CASCADE;
 DROP TABLE IF EXISTS pdbx_hybrid CASCADE;
@@ -325,7 +512,25 @@ DROP TABLE IF EXISTS pdbx_nmr_computing CASCADE;
 DROP TABLE IF EXISTS pdbx_nmr_constraint_file CASCADE;
 DROP TABLE IF EXISTS pdbx_nmr_constraints CASCADE;
 DROP TABLE IF EXISTS pdbx_nmr_details CASCADE;
+DROP TABLE IF EXISTS average_distance_constraint_violation CASCADE;
+DROP TABLE IF EXISTS average_torsion_angle_constraint_violation CASCADE;
+DROP TABLE IF EXISTS maximum_distance_constraint_violation CASCADE;
+DROP TABLE IF EXISTS maximum_lower_distance_constraint_violation CASCADE;
+DROP TABLE IF EXISTS maximum_torsion_angle_constraint_violation CASCADE;
+DROP TABLE IF EXISTS maximum_upper_distance_constraint_violation CASCADE;
 DROP TABLE IF EXISTS pdbx_nmr_ensemble CASCADE;
+DROP TABLE IF EXISTS bond_angle_rms_dev CASCADE;
+DROP TABLE IF EXISTS bond_angle_rms_dev_error CASCADE;
+DROP TABLE IF EXISTS covalent_bond_rms_dev CASCADE;
+DROP TABLE IF EXISTS covalent_bond_rms_dev_error CASCADE;
+DROP TABLE IF EXISTS dihedral_angles_rms_dev CASCADE;
+DROP TABLE IF EXISTS dihedral_angles_rms_dev_error CASCADE;
+DROP TABLE IF EXISTS distance_rms_dev CASCADE;
+DROP TABLE IF EXISTS distance_rms_dev_error CASCADE;
+DROP TABLE IF EXISTS improper_torsion_angle_rms_dev CASCADE;
+DROP TABLE IF EXISTS improper_torsion_angle_rms_dev_error CASCADE;
+DROP TABLE IF EXISTS peptide_planarity_rms_dev CASCADE;
+DROP TABLE IF EXISTS peptide_planarity_rms_dev_error CASCADE;
 DROP TABLE IF EXISTS pdbx_nmr_ensemble_rms CASCADE;
 DROP TABLE IF EXISTS pdbx_nmr_exptl CASCADE;
 DROP TABLE IF EXISTS pdbx_nmr_exptl_sample CASCADE;
@@ -381,6 +586,51 @@ DROP TABLE IF EXISTS pdbx_refine CASCADE;
 DROP TABLE IF EXISTS pdbx_refine_aux_file CASCADE;
 DROP TABLE IF EXISTS pdbx_refine_component CASCADE;
 DROP TABLE IF EXISTS pdbx_refine_ls_restr_ncs CASCADE;
+DROP TABLE IF EXISTS "L11" CASCADE;
+DROP TABLE IF EXISTS "L11_esd" CASCADE;
+DROP TABLE IF EXISTS "L12" CASCADE;
+DROP TABLE IF EXISTS "L12_esd" CASCADE;
+DROP TABLE IF EXISTS "L13" CASCADE;
+DROP TABLE IF EXISTS "L13_esd" CASCADE;
+DROP TABLE IF EXISTS "L22" CASCADE;
+DROP TABLE IF EXISTS "L22_esd" CASCADE;
+DROP TABLE IF EXISTS "L23" CASCADE;
+DROP TABLE IF EXISTS "L23_esd" CASCADE;
+DROP TABLE IF EXISTS "L33" CASCADE;
+DROP TABLE IF EXISTS "L33_esd" CASCADE;
+DROP TABLE IF EXISTS "S11" CASCADE;
+DROP TABLE IF EXISTS "S11_esd" CASCADE;
+DROP TABLE IF EXISTS "S12" CASCADE;
+DROP TABLE IF EXISTS "S12_esd" CASCADE;
+DROP TABLE IF EXISTS "S13" CASCADE;
+DROP TABLE IF EXISTS "S13_esd" CASCADE;
+DROP TABLE IF EXISTS "S21" CASCADE;
+DROP TABLE IF EXISTS "S21_esd" CASCADE;
+DROP TABLE IF EXISTS "S22" CASCADE;
+DROP TABLE IF EXISTS "S22_esd" CASCADE;
+DROP TABLE IF EXISTS "S23" CASCADE;
+DROP TABLE IF EXISTS "S23_esd" CASCADE;
+DROP TABLE IF EXISTS "S31" CASCADE;
+DROP TABLE IF EXISTS "S31_esd" CASCADE;
+DROP TABLE IF EXISTS "S32" CASCADE;
+DROP TABLE IF EXISTS "S32_esd" CASCADE;
+DROP TABLE IF EXISTS "S33" CASCADE;
+DROP TABLE IF EXISTS "S33_esd" CASCADE;
+DROP TABLE IF EXISTS "T11" CASCADE;
+DROP TABLE IF EXISTS "T11_esd" CASCADE;
+DROP TABLE IF EXISTS "T12" CASCADE;
+DROP TABLE IF EXISTS "T12_esd" CASCADE;
+DROP TABLE IF EXISTS "T13" CASCADE;
+DROP TABLE IF EXISTS "T13_esd" CASCADE;
+DROP TABLE IF EXISTS "T22" CASCADE;
+DROP TABLE IF EXISTS "T22_esd" CASCADE;
+DROP TABLE IF EXISTS "T23" CASCADE;
+DROP TABLE IF EXISTS "T23_esd" CASCADE;
+DROP TABLE IF EXISTS "T33" CASCADE;
+DROP TABLE IF EXISTS "T33_esd" CASCADE;
+DROP TABLE IF EXISTS origin_x CASCADE;
+DROP TABLE IF EXISTS origin_y CASCADE;
+DROP TABLE IF EXISTS origin_z CASCADE;
 DROP TABLE IF EXISTS pdbx_refine_tls_group CASCADE;
 DROP TABLE IF EXISTS pdbx_reflns_twin CASCADE;
 DROP TABLE IF EXISTS pdbx_related_exp_data_set CASCADE;
@@ -393,8 +643,23 @@ DROP TABLE IF EXISTS pdbx_seq_map_depositor_info CASCADE;
 DROP TABLE IF EXISTS pdbx_sequence_annotation CASCADE;
 DROP TABLE IF EXISTS pdbx_sequence_pattern CASCADE;
 DROP TABLE IF EXISTS pdbx_sequence_range CASCADE;
+DROP TABLE IF EXISTS pdbx_serial_crystallography_data_reduction CASCADE;
+DROP TABLE IF EXISTS pdbx_serial_crystallography_measurement CASCADE;
+DROP TABLE IF EXISTS pdbx_serial_crystallography_sample_delivery CASCADE;
+DROP TABLE IF EXISTS pdbx_serial_crystallography_sample_delivery_fixed_target CASCADE;
+DROP TABLE IF EXISTS pdbx_serial_crystallography_sample_delivery_injection CASCADE;
+DROP TABLE IF EXISTS concentration_range CASCADE;
+DROP TABLE IF EXISTS max_mean_cross_sectional_radii_gyration CASCADE;
+DROP TABLE IF EXISTS max_mean_cross_sectional_radii_gyration_esd CASCADE;
+DROP TABLE IF EXISTS mean_guiner_radius CASCADE;
+DROP TABLE IF EXISTS mean_guiner_radius_esd CASCADE;
+DROP TABLE IF EXISTS min_mean_cross_sectional_radii_gyration CASCADE;
+DROP TABLE IF EXISTS min_mean_cross_sectional_radii_gyration_esd CASCADE;
 DROP TABLE IF EXISTS pdbx_soln_scatter CASCADE;
 DROP TABLE IF EXISTS pdbx_soln_scatter_model CASCADE;
+DROP TABLE IF EXISTS "pre_Cartn_x" CASCADE;
+DROP TABLE IF EXISTS "pre_Cartn_y" CASCADE;
+DROP TABLE IF EXISTS "pre_Cartn_z" CASCADE;
 DROP TABLE IF EXISTS pdbx_solvent_atom_site_mapping CASCADE;
 DROP TABLE IF EXISTS pdbx_solvent_info CASCADE;
 DROP TABLE IF EXISTS pdbx_source CASCADE;
@@ -437,17 +702,27 @@ DROP TABLE IF EXISTS pdbx_trna_info CASCADE;
 DROP TABLE IF EXISTS pdbx_unobs_or_zero_occ_atoms CASCADE;
 DROP TABLE IF EXISTS pdbx_unobs_or_zero_occ_residues CASCADE;
 DROP TABLE IF EXISTS pdbx_unpair CASCADE;
+DROP TABLE IF EXISTS angle CASCADE;
+DROP TABLE IF EXISTS angle_deviation CASCADE;
 DROP TABLE IF EXISTS pdbx_val_angle CASCADE;
+DROP TABLE IF EXISTS bond CASCADE;
+DROP TABLE IF EXISTS bond_deviation CASCADE;
 DROP TABLE IF EXISTS pdbx_val_bond CASCADE;
 DROP TABLE IF EXISTS pdbx_val_chiral CASCADE;
 DROP TABLE IF EXISTS pdbx_val_contact CASCADE;
 DROP TABLE IF EXISTS pdbx_val_sym_contact CASCADE;
 DROP TABLE IF EXISTS pdbx_validate_chiral CASCADE;
+DROP TABLE IF EXISTS dist CASCADE;
 DROP TABLE IF EXISTS pdbx_validate_close_contact CASCADE;
+DROP TABLE IF EXISTS improper_torsion_angle CASCADE;
 DROP TABLE IF EXISTS pdbx_validate_main_chain_plane CASCADE;
 DROP TABLE IF EXISTS pdbx_validate_peptide_omega CASCADE;
+DROP TABLE IF EXISTS rmsd CASCADE;
+DROP TABLE IF EXISTS atom_deviation CASCADE;
 DROP TABLE IF EXISTS pdbx_validate_planes_atom CASCADE;
 DROP TABLE IF EXISTS pdbx_validate_polymer_linkage CASCADE;
+DROP TABLE IF EXISTS angle_target_value CASCADE;
+DROP TABLE IF EXISTS angle_value CASCADE;
 DROP TABLE IF EXISTS pdbx_validate_rmsd_angle CASCADE;
 DROP TABLE IF EXISTS pdbx_validate_rmsd_bond CASCADE;
 DROP TABLE IF EXISTS pdbx_validate_symm_contact CASCADE;
@@ -464,8 +739,17 @@ DROP TABLE IF EXISTS "phasing_MAD_clust" CASCADE;
 DROP TABLE IF EXISTS "phasing_MAD_ratio" CASCADE;
 DROP TABLE IF EXISTS "phasing_MAD_set" CASCADE;
 DROP TABLE IF EXISTS "phasing_MIR" CASCADE;
+DROP TABLE IF EXISTS "F_calc" CASCADE;
+DROP TABLE IF EXISTS "F_calc_au" CASCADE;
+DROP TABLE IF EXISTS "F_meas" CASCADE;
+DROP TABLE IF EXISTS "F_meas_au" CASCADE;
+DROP TABLE IF EXISTS "F_meas_sigma" CASCADE;
+DROP TABLE IF EXISTS "F_meas_sigma_au" CASCADE;
+DROP TABLE IF EXISTS phase_calc CASCADE;
 DROP TABLE IF EXISTS "phasing_MIR_der_refln" CASCADE;
 DROP TABLE IF EXISTS "phasing_MIR_der_shell" CASCADE;
+DROP TABLE IF EXISTS "B_iso" CASCADE;
+DROP TABLE IF EXISTS "B_iso_esd" CASCADE;
 DROP TABLE IF EXISTS "phasing_MIR_der_site" CASCADE;
 DROP TABLE IF EXISTS "phasing_MIR_shell" CASCADE;
 DROP TABLE IF EXISTS phasing_averaging CASCADE;
@@ -475,8 +759,26 @@ DROP TABLE IF EXISTS publ CASCADE;
 DROP TABLE IF EXISTS publ_author CASCADE;
 DROP TABLE IF EXISTS publ_body CASCADE;
 DROP TABLE IF EXISTS publ_manuscript_incl CASCADE;
+DROP TABLE IF EXISTS "B_iso_max" CASCADE;
+DROP TABLE IF EXISTS "B_iso_mean" CASCADE;
+DROP TABLE IF EXISTS "B_iso_min" CASCADE;
+DROP TABLE IF EXISTS diff_density_max CASCADE;
+DROP TABLE IF EXISTS diff_density_max_esd CASCADE;
+DROP TABLE IF EXISTS diff_density_min CASCADE;
+DROP TABLE IF EXISTS diff_density_min_esd CASCADE;
+DROP TABLE IF EXISTS diff_density_rms CASCADE;
+DROP TABLE IF EXISTS diff_density_rms_esd CASCADE;
+DROP TABLE IF EXISTS pdbx_solvent_ion_probe_radii CASCADE;
+DROP TABLE IF EXISTS pdbx_solvent_shrinkage_radii CASCADE;
+DROP TABLE IF EXISTS pdbx_solvent_vdw_probe_radii CASCADE;
 DROP TABLE IF EXISTS refine CASCADE;
 DROP TABLE IF EXISTS "refine_B_iso" CASCADE;
+DROP TABLE IF EXISTS "Luzzati_coordinate_error_free" CASCADE;
+DROP TABLE IF EXISTS "Luzzati_coordinate_error_obs" CASCADE;
+DROP TABLE IF EXISTS "Luzzati_d_res_low_free" CASCADE;
+DROP TABLE IF EXISTS "Luzzati_d_res_low_obs" CASCADE;
+DROP TABLE IF EXISTS "Luzzati_sigma_a_free" CASCADE;
+DROP TABLE IF EXISTS "Luzzati_sigma_a_obs" CASCADE;
 DROP TABLE IF EXISTS refine_analyze CASCADE;
 DROP TABLE IF EXISTS refine_funct_minimized CASCADE;
 DROP TABLE IF EXISTS refine_hist CASCADE;
@@ -486,8 +788,29 @@ DROP TABLE IF EXISTS refine_ls_restr_ncs CASCADE;
 DROP TABLE IF EXISTS refine_ls_restr_type CASCADE;
 DROP TABLE IF EXISTS refine_ls_shell CASCADE;
 DROP TABLE IF EXISTS refine_occupancy CASCADE;
+DROP TABLE IF EXISTS "A_calc" CASCADE;
+DROP TABLE IF EXISTS "A_calc_au" CASCADE;
+DROP TABLE IF EXISTS "A_meas" CASCADE;
+DROP TABLE IF EXISTS "A_meas_au" CASCADE;
+DROP TABLE IF EXISTS "B_calc" CASCADE;
+DROP TABLE IF EXISTS "B_calc_au" CASCADE;
+DROP TABLE IF EXISTS "B_meas" CASCADE;
+DROP TABLE IF EXISTS "B_meas_au" CASCADE;
+DROP TABLE IF EXISTS "F_squared_calc" CASCADE;
+DROP TABLE IF EXISTS "F_squared_meas" CASCADE;
+DROP TABLE IF EXISTS "F_squared_sigma" CASCADE;
+DROP TABLE IF EXISTS "pdbx_F_calc_part_solvent" CASCADE;
+DROP TABLE IF EXISTS "pdbx_F_calc_with_solvent" CASCADE;
+DROP TABLE IF EXISTS pdbx_phase_calc_part_solvent CASCADE;
+DROP TABLE IF EXISTS pdbx_phase_calc_with_solvent CASCADE;
+DROP TABLE IF EXISTS phase_meas CASCADE;
 DROP TABLE IF EXISTS refln CASCADE;
+DROP TABLE IF EXISTS "I" CASCADE;
+DROP TABLE IF EXISTS "sigmaI" CASCADE;
 DROP TABLE IF EXISTS refln_sys_abs CASCADE;
+DROP TABLE IF EXISTS "B_iso_Wilson_estimate" CASCADE;
+DROP TABLE IF EXISTS "pdbx_res_netI_over_av_sigmaI_2" CASCADE;
+DROP TABLE IF EXISTS "pdbx_res_netI_over_sigmaI_2" CASCADE;
 DROP TABLE IF EXISTS reflns CASCADE;
 DROP TABLE IF EXISTS reflns_class CASCADE;
 DROP TABLE IF EXISTS reflns_scale CASCADE;
@@ -500,10 +823,35 @@ DROP TABLE IF EXISTS struct_biol_gen CASCADE;
 DROP TABLE IF EXISTS struct_biol_keywords CASCADE;
 DROP TABLE IF EXISTS struct_biol_view CASCADE;
 DROP TABLE IF EXISTS struct_conf CASCADE;
+DROP TABLE IF EXISTS pdbx_dist_value CASCADE;
 DROP TABLE IF EXISTS struct_conn CASCADE;
 DROP TABLE IF EXISTS struct_keywords CASCADE;
+DROP TABLE IF EXISTS prot_cis CASCADE;
 DROP TABLE IF EXISTS struct_mon_details CASCADE;
+DROP TABLE IF EXISTS "P" CASCADE;
+DROP TABLE IF EXISTS chi1 CASCADE;
+DROP TABLE IF EXISTS chi2 CASCADE;
+DROP TABLE IF EXISTS delta CASCADE;
+DROP TABLE IF EXISTS epsilon CASCADE;
+DROP TABLE IF EXISTS nu0 CASCADE;
+DROP TABLE IF EXISTS nu1 CASCADE;
+DROP TABLE IF EXISTS nu2 CASCADE;
+DROP TABLE IF EXISTS nu3 CASCADE;
+DROP TABLE IF EXISTS nu4 CASCADE;
+DROP TABLE IF EXISTS tau0 CASCADE;
+DROP TABLE IF EXISTS tau1 CASCADE;
+DROP TABLE IF EXISTS tau2 CASCADE;
+DROP TABLE IF EXISTS tau3 CASCADE;
+DROP TABLE IF EXISTS tau4 CASCADE;
+DROP TABLE IF EXISTS taum CASCADE;
+DROP TABLE IF EXISTS zeta CASCADE;
 DROP TABLE IF EXISTS struct_mon_nucl CASCADE;
+DROP TABLE IF EXISTS chi3 CASCADE;
+DROP TABLE IF EXISTS chi4 CASCADE;
+DROP TABLE IF EXISTS chi5 CASCADE;
+DROP TABLE IF EXISTS omega CASCADE;
+DROP TABLE IF EXISTS phi CASCADE;
+DROP TABLE IF EXISTS psi CASCADE;
 DROP TABLE IF EXISTS struct_mon_prot CASCADE;
 DROP TABLE IF EXISTS struct_mon_prot_cis CASCADE;
 DROP TABLE IF EXISTS struct_ncs_dom_lim CASCADE;
@@ -518,6 +866,8 @@ DROP TABLE IF EXISTS struct_site_keywords CASCADE;
 DROP TABLE IF EXISTS struct_site_view CASCADE;
 DROP TABLE IF EXISTS symmetry CASCADE;
 DROP TABLE IF EXISTS symmetry_equiv CASCADE;
+DROP TABLE IF EXISTS "B" CASCADE;
+DROP TABLE IF EXISTS "Ro" CASCADE;
 DROP TABLE IF EXISTS valence_param CASCADE;
 DROP TABLE IF EXISTS valence_ref CASCADE;
 DROP TABLE IF EXISTS atom_sites_alt_ens CASCADE;
@@ -728,26 +1078,17 @@ CREATE TABLE exptl_crystal (
 	"density_Matthews" DECIMAL ,
 	density_diffrn DECIMAL CHECK ( density_diffrn >= 0.0 ) ,
 	density_meas DECIMAL CHECK ( density_meas >= 0.0 ) ,
-	density_meas_esd DECIMAL ,
 	density_meas_gt DECIMAL CHECK ( density_meas_gt >= 0.0 ) ,
 	density_meas_lt DECIMAL CHECK ( density_meas_lt >= 0.0 ) ,
 	density_meas_temp DECIMAL CHECK ( density_meas_temp >= 0.0 ) ,
-	density_meas_temp_esd DECIMAL ,
 	density_meas_temp_gt DECIMAL CHECK ( density_meas_temp_gt >= 0.0 ) ,
 	density_meas_temp_lt DECIMAL CHECK ( density_meas_temp_lt >= 0.0 ) ,
 	density_method TEXT ,
 	density_percent_sol DECIMAL CHECK ( density_percent_sol >= 0.0 ) ,
 	description TEXT ,
-	pdbx_crystal_diffrn_lifetime DECIMAL ,
-	pdbx_crystal_diffrn_limit DECIMAL ,
-	pdbx_crystal_direction_1 DECIMAL ,
-	pdbx_crystal_direction_2 DECIMAL ,
-	pdbx_crystal_direction_3 DECIMAL ,
 	pdbx_crystal_image ENUM_exptl_crystal_pdbx_crystal_image ,
 	pdbx_crystal_image_format TEXT ,
 	pdbx_crystal_image_url TEXT ,
-	pdbx_mosaicity DECIMAL ,
-	pdbx_mosaicity_esd DECIMAL ,
 	"pdbx_x-ray_image" ENUM_exptl_crystal_pdbx_x_ray_image ,
 	"pdbx_x-ray_image_type" TEXT ,
 	preparation TEXT ,
@@ -770,18 +1111,17 @@ CREATE TABLE diffrn (
 	document_id TEXT ,
 	ambient_environment TEXT ,
 	ambient_pressure DECIMAL CHECK ( ambient_pressure >= 0.0 ) ,
-	ambient_pressure_esd DECIMAL ,
 	ambient_pressure_gt DECIMAL CHECK ( ambient_pressure_gt >= 0.0 ) ,
 	ambient_pressure_lt DECIMAL CHECK ( ambient_pressure_lt >= 0.0 ) ,
 	ambient_temp DECIMAL CHECK ( ambient_temp >= 0.0 ) ,
 	ambient_temp_details TEXT ,
-	ambient_temp_esd DECIMAL ,
 	ambient_temp_gt DECIMAL CHECK ( ambient_temp_gt >= 0.0 ) ,
 	ambient_temp_lt DECIMAL CHECK ( ambient_temp_lt >= 0.0 ) ,
 	crystal_id TEXT ,
 	crystal_support TEXT ,
 	crystal_treatment TEXT ,
 	details TEXT ,
+	pdbx_serial_crystal_experiment TEXT ,
 -- ATTRIBUTE
 	id TEXT NOT NULL
 );
@@ -934,7 +1274,6 @@ CREATE TABLE atom_type (
 	scat_dispersion_imag DECIMAL ,
 	scat_dispersion_real DECIMAL ,
 	scat_dispersion_source TEXT ,
-	scat_length_neutron TEXT ,
 	scat_source TEXT ,
 	scat_versus_stol_list TEXT ,
 -- ATTRIBUTE
@@ -962,12 +1301,6 @@ CREATE TABLE chem_comp_atom (
 	document_id TEXT ,
 	alt_atom_id TEXT ,
 	charge INTEGER CHECK ( charge >= -8 AND charge <= 8 ) ,
-	"model_Cartn_x" DECIMAL ,
-	"model_Cartn_x_esd" DECIMAL ,
-	"model_Cartn_y" DECIMAL ,
-	"model_Cartn_y_esd" DECIMAL ,
-	"model_Cartn_z" DECIMAL ,
-	"model_Cartn_z_esd" DECIMAL ,
 	partial_charge DECIMAL ,
 	pdbx_align INTEGER ,
 	pdbx_alt_atom_id TEXT ,
@@ -978,9 +1311,6 @@ CREATE TABLE chem_comp_atom (
 	pdbx_component_entity_id INTEGER ,
 	pdbx_component_id INTEGER ,
 	pdbx_leaving_atom_flag ENUM_chem_comp_atom_pdbx_leaving_atom_flag ,
-	"pdbx_model_Cartn_x_ideal" DECIMAL ,
-	"pdbx_model_Cartn_y_ideal" DECIMAL ,
-	"pdbx_model_Cartn_z_ideal" DECIMAL ,
 	pdbx_ordinal INTEGER ,
 	pdbx_polymer_type ENUM_chem_comp_atom_pdbx_polymer_type ,
 	pdbx_ref_id TEXT ,
@@ -1609,53 +1939,8 @@ CREATE TYPE ENUM_pdbx_refine_tls_method AS ENUM ( 'refined', 'fitted' );
 CREATE TABLE pdbx_refine_tls (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
-	"L11" DECIMAL ,
-	"L11_esd" DECIMAL ,
-	"L12" DECIMAL ,
-	"L12_esd" DECIMAL ,
-	"L13" DECIMAL ,
-	"L13_esd" DECIMAL ,
-	"L22" DECIMAL ,
-	"L22_esd" DECIMAL ,
-	"L23" DECIMAL ,
-	"L23_esd" DECIMAL ,
-	"L33" DECIMAL ,
-	"L33_esd" DECIMAL ,
-	"S11" DECIMAL ,
-	"S11_esd" DECIMAL ,
-	"S12" DECIMAL ,
-	"S12_esd" DECIMAL ,
-	"S13" DECIMAL ,
-	"S13_esd" DECIMAL ,
-	"S21" DECIMAL ,
-	"S21_esd" DECIMAL ,
-	"S22" DECIMAL ,
-	"S22_esd" DECIMAL ,
-	"S23" DECIMAL ,
-	"S23_esd" DECIMAL ,
-	"S31" DECIMAL ,
-	"S31_esd" DECIMAL ,
-	"S32" DECIMAL ,
-	"S32_esd" DECIMAL ,
-	"S33" DECIMAL ,
-	"S33_esd" DECIMAL ,
-	"T11" DECIMAL ,
-	"T11_esd" DECIMAL ,
-	"T12" DECIMAL ,
-	"T12_esd" DECIMAL ,
-	"T13" DECIMAL ,
-	"T13_esd" DECIMAL ,
-	"T22" DECIMAL ,
-	"T22_esd" DECIMAL ,
-	"T23" DECIMAL ,
-	"T23_esd" DECIMAL ,
-	"T33" DECIMAL ,
-	"T33_esd" DECIMAL ,
 	details TEXT ,
 	method ENUM_pdbx_refine_tls_method ,
-	origin_x DECIMAL ,
-	origin_y DECIMAL ,
-	origin_z DECIMAL ,
 	pdbx_refine_id TEXT ,
 -- ATTRIBUTE
 	id TEXT NOT NULL
@@ -1895,9 +2180,6 @@ CREATE TABLE pdbx_entity_src_gen_express (
 	"N_terminal_seq_tag" TEXT ,
 	culture_additives TEXT ,
 	culture_base_media TEXT ,
-	culture_temperature DECIMAL ,
-	culture_time DECIMAL ,
-	culture_volume DECIMAL ,
 	date TEXT ,
 	end_construct_id TEXT ,
 	harvesting_details TEXT ,
@@ -1911,11 +2193,7 @@ CREATE TABLE pdbx_entity_src_gen_express (
 	host_org_tissue TEXT ,
 	host_org_variant TEXT ,
 	inducer TEXT ,
-	inducer_concentration DECIMAL ,
 	induction_details TEXT ,
-	induction_temperature DECIMAL ,
-	induction_timepoint DECIMAL ,
-	multiplicity_of_infection DECIMAL ,
 	next_step_id INTEGER ,
 	plasmid_id TEXT ,
 	promoter_type TEXT ,
@@ -2036,7 +2314,6 @@ CREATE TABLE pdbx_validate_planes (
 	auth_comp_id TEXT ,
 	auth_seq_id TEXT ,
 	label_alt_id TEXT ,
-	rmsd DECIMAL ,
 	type ENUM_pdbx_validate_planes_type ,
 -- ATTRIBUTE
 	id INTEGER NOT NULL
@@ -2136,6 +2413,496 @@ CREATE TABLE struct_ref_seq (
 );
 
 --
+-- The standard uncertainty (estimated standard deviation) of attribute B_equiv_geom_mean in category atom_site.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "B_equiv_geom_mean_esd" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = '8pi2_angstroms_squared' ) NOT NULL
+);
+
+--
+-- Isotropic atomic displacement parameter, or equivalent isotropic atomic displacement parameter, B~eq~, calculated from the anisotropic displacement parameters. B~eq~ = (1/3) sum~i~[sum~j~(B^ij^ A~i~ A~j~ a*~i~ a*~j~)] A = the real space cell lengths a* = the reciprocal space cell lengths B^ij^ = 8 pi^2^ U^ij^ Ref: Fischer, R. X. & Tillmanns, E. (1988). Acta Cryst. C44, 775-776. The IUCr Commission on Nomenclature recommends against the use of B for reporting atomic displacement parameters. U, being directly proportional to B, is preferred. Note - The particular type of ADP stored in this item is qualified by item attribute pdbx_adp_type. in category refine
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "B_iso_or_equiv" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = '8pi2_angstroms_squared' ) NOT NULL
+);
+
+--
+-- The standard uncertainty (estimated standard deviation) of attribute B_iso_or_equiv in category atom_site.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "B_iso_or_equiv_esd" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = '8pi2_angstroms_squared' ) NOT NULL
+);
+
+--
+-- The x atom-site coordinate in angstroms specified according to a set of orthogonal Cartesian axes related to the cell axes as specified by the description given in attribute Cartn_transform_axes in category atom_sites.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "Cartn_x" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'angstroms' ) NOT NULL
+);
+
+--
+-- The standard uncertainty (estimated standard deviation) of attribute Cartn_x in category atom_site.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "Cartn_x_esd" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'angstroms' ) NOT NULL
+);
+
+--
+-- The y atom-site coordinate in angstroms specified according to a set of orthogonal Cartesian axes related to the cell axes as specified by the description given in attribute Cartn_transform_axes in category atom_sites.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "Cartn_y" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'angstroms' ) NOT NULL
+);
+
+--
+-- The standard uncertainty (estimated standard deviation) of attribute Cartn_y in category atom_site.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "Cartn_y_esd" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'angstroms' ) NOT NULL
+);
+
+--
+-- The z atom-site coordinate in angstroms specified according to a set of orthogonal Cartesian axes related to the cell axes as specified by the description given in attribute Cartn_transform_axes in category atom_sites.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "Cartn_z" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'angstroms' ) NOT NULL
+);
+
+--
+-- The standard uncertainty (estimated standard deviation) of attribute Cartn_z in category atom_site.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "Cartn_z_esd" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'angstroms' ) NOT NULL
+);
+
+--
+-- The standard uncertainty (estimated standard deviation) of attribute U_equiv_geom_mean in category atom_site.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "U_equiv_geom_mean_esd" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'angstroms_squared' ) NOT NULL
+);
+
+--
+-- The standard uncertainty (estimated standard deviation) of attribute U_iso_or_equiv in category atom_site.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "U_iso_or_equiv_esd" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'angstroms_squared' ) NOT NULL
+);
+
+--
+-- The [1][1] element of the anisotropic atomic displacement matrix B, which appears in the structure-factor term as: T = exp{-1/4 sum~i~[sum~j~(B^ij^ h~i~ h~j~ a*~i~ a*~j~)]} h = the Miller indices a* = the reciprocal space cell lengths These matrix elements may appear with atomic coordinates in the ATOM_SITE category, or they may appear in the separate ATOM_SITE_ANISOTROP category, but they may not appear in both places. Similarly, anisotropic displacements may appear as either B's or U's, but not as both. The unique elements of the real symmetric matrix are entered by row. The IUCr Commission on Nomenclature recommends against the use of B for reporting atomic displacement parameters. U, being directly proportional to B, is preferred.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "aniso_B11" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = '8pi2_angstroms_squared' ) NOT NULL
+);
+
+--
+-- The standard uncertainty (estimated standard deviation) of attribute aniso_B[1][1] in category atom_site.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "aniso_B11_esd" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = '8pi2_angstroms_squared' ) NOT NULL
+);
+
+--
+-- The [1][2] element of the anisotropic atomic displacement matrix B, which appears in the structure-factor term as: T = exp{-1/4 sum~i~[sum~j~(B^ij^ h~i~ h~j~ a*~i~ a*~j~)]} h = the Miller indices a* = the reciprocal space cell lengths These matrix elements may appear with atomic coordinates in the ATOM_SITE category, or they may appear in the separate ATOM_SITE_ANISOTROP category, but they may not appear in both places. Similarly, anisotropic displacements may appear as either B's or U's, but not as both. The unique elements of the real symmetric matrix are entered by row. The IUCr Commission on Nomenclature recommends against the use of B for reporting atomic displacement parameters. U, being directly proportional to B, is preferred.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "aniso_B12" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = '8pi2_angstroms_squared' ) NOT NULL
+);
+
+--
+-- The standard uncertainty (estimated standard deviation) of attribute aniso_B[1][2] in category atom_site.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "aniso_B12_esd" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = '8pi2_angstroms_squared' ) NOT NULL
+);
+
+--
+-- The [1][3] element of the anisotropic atomic displacement matrix B, which appears in the structure-factor term as: T = exp{-1/4 sum~i~[sum~j~(B^ij^ h~i~ h~j~ a*~i~ a*~j~)]} h = the Miller indices a* = the reciprocal space cell lengths These matrix elements may appear with atomic coordinates in the ATOM_SITE category, or they may appear in the separate ATOM_SITE_ANISOTROP category, but they may not appear in both places. Similarly, anisotropic displacements may appear as either B's or U's, but not as both. The unique elements of the real symmetric matrix are entered by row. The IUCr Commission on Nomenclature recommends against the use of B for reporting atomic displacement parameters. U, being directly proportional to B, is preferred.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "aniso_B13" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = '8pi2_angstroms_squared' ) NOT NULL
+);
+
+--
+-- The standard uncertainty (estimated standard deviation) of attribute aniso_B[1][3] in category atom_site.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "aniso_B13_esd" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = '8pi2_angstroms_squared' ) NOT NULL
+);
+
+--
+-- The [2][2] element of the anisotropic atomic displacement matrix B, which appears in the structure-factor term as: T = exp{-1/4 sum~i~[sum~j~(B^ij^ h~i~ h~j~ a*~i~ a*~j~)]} h = the Miller indices a* = the reciprocal space cell lengths These matrix elements may appear with atomic coordinates in the ATOM_SITE category, or they may appear in the separate ATOM_SITE_ANISOTROP category, but they may not appear in both places. Similarly, anisotropic displacements may appear as either B's or U's, but not as both. The unique elements of the real symmetric matrix are entered by row. The IUCr Commission on Nomenclature recommends against the use of B for reporting atomic displacement parameters. U, being directly proportional to B, is preferred.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "aniso_B22" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = '8pi2_angstroms_squared' ) NOT NULL
+);
+
+--
+-- The standard uncertainty (estimated standard deviation) of attribute aniso_B[2][2] in category atom_site.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "aniso_B22_esd" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = '8pi2_angstroms_squared' ) NOT NULL
+);
+
+--
+-- The [2][3] element of the anisotropic atomic displacement matrix B, which appears in the structure-factor term as: T = exp{-1/4 sum~i~[sum~j~(B^ij^ h~i~ h~j~ a*~i~ a*~j~)]} h = the Miller indices a* = the reciprocal space cell lengths These matrix elements may appear with atomic coordinates in the ATOM_SITE category, or they may appear in the separate ATOM_SITE_ANISOTROP category, but they may not appear in both places. Similarly, anisotropic displacements may appear as either B's or U's, but not as both. The unique elements of the real symmetric matrix are entered by row. The IUCr Commission on Nomenclature recommends against the use of B for reporting atomic displacement parameters. U, being directly proportional to B, is preferred.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "aniso_B23" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = '8pi2_angstroms_squared' ) NOT NULL
+);
+
+--
+-- The standard uncertainty (estimated standard deviation) of attribute aniso_B[2][3] in category atom_site.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "aniso_B23_esd" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = '8pi2_angstroms_squared' ) NOT NULL
+);
+
+--
+-- The [3][3] element of the anisotropic atomic displacement matrix B, which appears in the structure-factor term as: T = exp{-1/4 sum~i~[sum~j~(B^ij^ h~i~ h~j~ a*~i~ a*~j~)]} h = the Miller indices a* = the reciprocal space cell lengths These matrix elements may appear with atomic coordinates in the ATOM_SITE category, or they may appear in the separate ATOM_SITE_ANISOTROP category, but they may not appear in both places. Similarly, anisotropic displacements may appear as either B's or U's, but not as both. The unique elements of the real symmetric matrix are entered by row. The IUCr Commission on Nomenclature recommends against the use of B for reporting atomic displacement parameters. U, being directly proportional to B, is preferred.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "aniso_B33" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = '8pi2_angstroms_squared' ) NOT NULL
+);
+
+--
+-- The standard uncertainty (estimated standard deviation) of attribute aniso_B[3][3] in category atom_site.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "aniso_B33_esd" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = '8pi2_angstroms_squared' ) NOT NULL
+);
+
+--
+-- The [1][1] element of the standard anisotropic atomic displacement matrix U, which appears in the structure-factor term as: T = exp{-2 pi^2^ sum~i~[sum~j~(U^ij^ h~i~ h~j~ a*~i~ a*~j~)]} h = the Miller indices a* = the reciprocal space cell lengths These matrix elements may appear with atomic coordinates in the ATOM_SITE category, or they may appear in the separate ATOM_SITE_ANISOTROP category, but they may not appear in both places. Similarly, anisotropic displacements may appear as either B's or U's, but not as both. The unique elements of the real symmetric matrix are entered by row.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "aniso_U11" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'angstroms_squared' ) NOT NULL
+);
+
+--
+-- The standard uncertainty (estimated standard deviation) of attribute aniso_U[1][1] in category atom_site.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "aniso_U11_esd" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'angstroms_squared' ) NOT NULL
+);
+
+--
+-- The [1][2] element of the standard anisotropic atomic displacement matrix U, which appears in the structure-factor term as: T = exp{-2 pi^2^ sum~i~[sum~j~(U^ij^ h~i~ h~j~ a*~i~ a*~j~)]} h = the Miller indices a* = the reciprocal space cell lengths These matrix elements may appear with atomic coordinates in the ATOM_SITE category, or they may appear in the separate ATOM_SITE_ANISOTROP category, but they may not appear in both places. Similarly, anisotropic displacements may appear as either B's or U's, but not as both. The unique elements of the real symmetric matrix are entered by row.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "aniso_U12" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'angstroms_squared' ) NOT NULL
+);
+
+--
+-- The standard uncertainty (estimated standard deviation) of attribute aniso_U[1][2] in category atom_site.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "aniso_U12_esd" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'angstroms_squared' ) NOT NULL
+);
+
+--
+-- The [1][3] element of the standard anisotropic atomic displacement matrix U, which appears in the structure-factor term as: T = exp{-2 pi^2^ sum~i~[sum~j~(U^ij^ h~i~ h~j~ a*~i~ a*~j~)]} h = the Miller indices a* = the reciprocal space cell lengths These matrix elements may appear with atomic coordinates in the ATOM_SITE category, or they may appear in the separate ATOM_SITE_ANISOTROP category, but they may not appear in both places. Similarly, anisotropic displacements may appear as either B's or U's, but not as both. The unique elements of the real symmetric matrix are entered by row.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "aniso_U13" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'angstroms_squared' ) NOT NULL
+);
+
+--
+-- The standard uncertainty (estimated standard deviation) of attribute aniso_U[1][3] in category atom_site.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "aniso_U13_esd" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'angstroms_squared' ) NOT NULL
+);
+
+--
+-- The [2][2] element of the standard anisotropic atomic displacement matrix U, which appears in the structure-factor term as: T = exp{-2 pi^2^ sum~i~[sum~j~(U^ij^ h~i~ h~j~ a*~i~ a*~j~)]} h = the Miller indices a* = the reciprocal space cell lengths These matrix elements may appear with atomic coordinates in the ATOM_SITE category, or they may appear in the separate ATOM_SITE_ANISOTROP category, but they may not appear in both places. Similarly, anisotropic displacements may appear as either B's or U's, but not as both. The unique elements of the real symmetric matrix are entered by row.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "aniso_U22" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'angstroms_squared' ) NOT NULL
+);
+
+--
+-- The standard uncertainty (estimated standard deviation) of attribute aniso_U[2][2] in category atom_site.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "aniso_U22_esd" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'angstroms_squared' ) NOT NULL
+);
+
+--
+-- The [2][3] element of the standard anisotropic atomic displacement matrix U, which appears in the structure-factor term as: T = exp{-2 pi^2^ sum~i~[sum~j~(U^ij^ h~i~ h~j~ a*~i~ a*~j~)]} h = the Miller indices a* = the reciprocal space cell lengths These matrix elements may appear with atomic coordinates in the ATOM_SITE category, or they may appear in the separate ATOM_SITE_ANISOTROP category, but they may not appear in both places. Similarly, anisotropic displacements may appear as either B's or U's, but not as both. The unique elements of the real symmetric matrix are entered by row.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "aniso_U23" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'angstroms_squared' ) NOT NULL
+);
+
+--
+-- The standard uncertainty (estimated standard deviation) of attribute aniso_U[2][3] in category atom_site.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "aniso_U23_esd" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'angstroms_squared' ) NOT NULL
+);
+
+--
+-- The [3][3] element of the standard anisotropic atomic displacement matrix U, which appears in the structure-factor term as: T = exp{-2 pi^2^ sum~i~[sum~j~(U^ij^ h~i~ h~j~ a*~i~ a*~j~)]} h = the Miller indices a* = the reciprocal space cell lengths These matrix elements may appear with atomic coordinates in the ATOM_SITE category, or they may appear in the separate ATOM_SITE_ANISOTROP category, but they may not appear in both places. Similarly, anisotropic displacements may appear as either B's or U's, but not as both. The unique elements of the real symmetric matrix are entered by row.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "aniso_U33" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'angstroms_squared' ) NOT NULL
+);
+
+--
+-- The standard uncertainty (estimated standard deviation) of attribute aniso_U[3][3] in category atom_site.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "aniso_U33_esd" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'angstroms_squared' ) NOT NULL
+);
+
+--
 -- (quoted from atom_siteType)
 -- Data items in the ATOM_SITE category record details about the atom sites in a macromolecular crystal structure, such as the positional coordinates, atomic displacement parameters, magnetic moments and directions. The data items for describing anisotropic atomic displacement factors are only used if the corresponding items are not given in the ATOM_SITE_ANISOTROP category. Example 1 - based on PDB entry 5HVP and laboratory records for the structure corresponding to PDB entry 5HVP. <PDBx:atom_siteCategory> <PDBx:atom_site id="1"> <PDBx:B_iso_or_equiv>17.93</PDBx:B_iso_or_equiv> <PDBx:Cartn_x>25.369</PDBx:Cartn_x> <PDBx:Cartn_y>30.691</PDBx:Cartn_y> <PDBx:Cartn_z>11.795</PDBx:Cartn_z> <PDBx:auth_seq_id>11</PDBx:auth_seq_id> <PDBx:footnote_id xsi:nil="true" /> <PDBx:group_PDB>ATOM</PDBx:group_PDB> <PDBx:label_alt_id xsi:nil="true" /> <PDBx:label_asym_id>A</PDBx:label_asym_id> <PDBx:label_atom_id>N</PDBx:label_atom_id> <PDBx:label_comp_id>VAL</PDBx:label_comp_id> <PDBx:label_seq_id>11</PDBx:label_seq_id> <PDBx:occupancy>1.00</PDBx:occupancy> <PDBx:type_symbol>N</PDBx:type_symbol> </PDBx:atom_site> <PDBx:atom_site id="2"> <PDBx:B_iso_or_equiv>17.75</PDBx:B_iso_or_equiv> <PDBx:Cartn_x>25.970</PDBx:Cartn_x> <PDBx:Cartn_y>31.965</PDBx:Cartn_y> <PDBx:Cartn_z>12.332</PDBx:Cartn_z> <PDBx:auth_seq_id>11</PDBx:auth_seq_id> <PDBx:footnote_id xsi:nil="true" /> <PDBx:group_PDB>ATOM</PDBx:group_PDB> <PDBx:label_alt_id xsi:nil="true" /> <PDBx:label_asym_id>A</PDBx:label_asym_id> <PDBx:label_atom_id>CA</PDBx:label_atom_id> <PDBx:label_comp_id>VAL</PDBx:label_comp_id> <PDBx:label_seq_id>11</PDBx:label_seq_id> <PDBx:occupancy>1.00</PDBx:occupancy> <PDBx:type_symbol>C</PDBx:type_symbol> </PDBx:atom_site> <PDBx:atom_site id="3"> <PDBx:B_iso_or_equiv>17.83</PDBx:B_iso_or_equiv> <PDBx:Cartn_x>25.569</PDBx:Cartn_x> <PDBx:Cartn_y>32.010</PDBx:Cartn_y> <PDBx:Cartn_z>13.808</PDBx:Cartn_z> <PDBx:auth_seq_id>11</PDBx:auth_seq_id> <PDBx:footnote_id xsi:nil="true" /> <PDBx:group_PDB>ATOM</PDBx:group_PDB> <PDBx:label_alt_id xsi:nil="true" /> <PDBx:label_asym_id>A</PDBx:label_asym_id> <PDBx:label_atom_id>C</PDBx:label_atom_id> <PDBx:label_comp_id>VAL</PDBx:label_comp_id> <PDBx:label_seq_id>11</PDBx:label_seq_id> <PDBx:occupancy>1.00</PDBx:occupancy> <PDBx:type_symbol>C</PDBx:type_symbol> </PDBx:atom_site> <PDBx:atom_site id="4"> <PDBx:B_iso_or_equiv>17.53</PDBx:B_iso_or_equiv> <PDBx:Cartn_x>24.735</PDBx:Cartn_x> <PDBx:Cartn_y>31.190</PDBx:Cartn_y> <PDBx:Cartn_z>14.167</PDBx:Cartn_z> <PDBx:auth_seq_id>11</PDBx:auth_seq_id> <PDBx:footnote_id xsi:nil="true" /> <PDBx:group_PDB>ATOM</PDBx:group_PDB> <PDBx:label_alt_id xsi:nil="true" /> <PDBx:label_asym_id>A</PDBx:label_asym_id> <PDBx:label_atom_id>O</PDBx:label_atom_id> <PDBx:label_comp_id>VAL</PDBx:label_comp_id> <PDBx:label_seq_id>11</PDBx:label_seq_id> <PDBx:occupancy>1.00</PDBx:occupancy> <PDBx:type_symbol>O</PDBx:type_symbol> </PDBx:atom_site> <PDBx:atom_site id="5"> <PDBx:B_iso_or_equiv>17.66</PDBx:B_iso_or_equiv> <PDBx:Cartn_x>25.379</PDBx:Cartn_x> <PDBx:Cartn_y>33.146</PDBx:Cartn_y> <PDBx:Cartn_z>11.540</PDBx:Cartn_z> <PDBx:auth_seq_id>11</PDBx:auth_seq_id> <PDBx:footnote_id xsi:nil="true" /> <PDBx:group_PDB>ATOM</PDBx:group_PDB> <PDBx:label_alt_id xsi:nil="true" /> <PDBx:label_asym_id>A</PDBx:label_asym_id> <PDBx:label_atom_id>CB</PDBx:label_atom_id> <PDBx:label_comp_id>VAL</PDBx:label_comp_id> <PDBx:label_seq_id>11</PDBx:label_seq_id> <PDBx:occupancy>1.00</PDBx:occupancy> <PDBx:type_symbol>C</PDBx:type_symbol> </PDBx:atom_site> <PDBx:atom_site id="6"> <PDBx:B_iso_or_equiv>18.86</PDBx:B_iso_or_equiv> <PDBx:Cartn_x>25.584</PDBx:Cartn_x> <PDBx:Cartn_y>33.034</PDBx:Cartn_y> <PDBx:Cartn_z>10.030</PDBx:Cartn_z> <PDBx:auth_seq_id>11</PDBx:auth_seq_id> <PDBx:footnote_id xsi:nil="true" /> <PDBx:group_PDB>ATOM</PDBx:group_PDB> <PDBx:label_alt_id xsi:nil="true" /> <PDBx:label_asym_id>A</PDBx:label_asym_id> <PDBx:label_atom_id>CG1</PDBx:label_atom_id> <PDBx:label_comp_id>VAL</PDBx:label_comp_id> <PDBx:label_seq_id>11</PDBx:label_seq_id> <PDBx:occupancy>1.00</PDBx:occupancy> <PDBx:type_symbol>C</PDBx:type_symbol> </PDBx:atom_site> <PDBx:atom_site id="7"> <PDBx:B_iso_or_equiv>17.12</PDBx:B_iso_or_equiv> <PDBx:Cartn_x>23.933</PDBx:Cartn_x> <PDBx:Cartn_y>33.309</PDBx:Cartn_y> <PDBx:Cartn_z>11.872</PDBx:Cartn_z> <PDBx:auth_seq_id>11</PDBx:auth_seq_id> <PDBx:footnote_id xsi:nil="true" /> <PDBx:group_PDB>ATOM</PDBx:group_PDB> <PDBx:label_alt_id xsi:nil="true" /> <PDBx:label_asym_id>A</PDBx:label_asym_id> <PDBx:label_atom_id>CG2</PDBx:label_atom_id> <PDBx:label_comp_id>VAL</PDBx:label_comp_id> <PDBx:label_seq_id>11</PDBx:label_seq_id> <PDBx:occupancy>1.00</PDBx:occupancy> <PDBx:type_symbol>C</PDBx:type_symbol> </PDBx:atom_site> <PDBx:atom_site id="8"> <PDBx:B_iso_or_equiv>18.97</PDBx:B_iso_or_equiv> <PDBx:Cartn_x>26.095</PDBx:Cartn_x> <PDBx:Cartn_y>32.930</PDBx:Cartn_y> <PDBx:Cartn_z>14.590</PDBx:Cartn_z> <PDBx:auth_seq_id>12</PDBx:auth_seq_id> <PDBx:footnote_id>4</PDBx:footnote_id> <PDBx:group_PDB>ATOM</PDBx:group_PDB> <PDBx:label_alt_id xsi:nil="true" /> <PDBx:label_asym_id>A</PDBx:label_asym_id> <PDBx:label_atom_id>N</PDBx:label_atom_id> <PDBx:label_comp_id>THR</PDBx:label_comp_id> <PDBx:label_seq_id>12</PDBx:label_seq_id> <PDBx:occupancy>1.00</PDBx:occupancy> <PDBx:type_symbol>N</PDBx:type_symbol> </PDBx:atom_site> <PDBx:atom_site id="9"> <PDBx:B_iso_or_equiv>19.80</PDBx:B_iso_or_equiv> <PDBx:Cartn_x>25.734</PDBx:Cartn_x> <PDBx:Cartn_y>32.995</PDBx:Cartn_y> <PDBx:Cartn_z>16.032</PDBx:Cartn_z> <PDBx:auth_seq_id>12</PDBx:auth_seq_id> <PDBx:footnote_id>4</PDBx:footnote_id> <PDBx:group_PDB>ATOM</PDBx:group_PDB> <PDBx:label_alt_id xsi:nil="true" /> <PDBx:label_asym_id>A</PDBx:label_asym_id> <PDBx:label_atom_id>CA</PDBx:label_atom_id> <PDBx:label_comp_id>THR</PDBx:label_comp_id> <PDBx:label_seq_id>12</PDBx:label_seq_id> <PDBx:occupancy>1.00</PDBx:occupancy> <PDBx:type_symbol>C</PDBx:type_symbol> </PDBx:atom_site> <PDBx:atom_site id="10"> <PDBx:B_iso_or_equiv>20.92</PDBx:B_iso_or_equiv> <PDBx:Cartn_x>24.695</PDBx:Cartn_x> <PDBx:Cartn_y>34.106</PDBx:Cartn_y> <PDBx:Cartn_z>16.113</PDBx:Cartn_z> <PDBx:auth_seq_id>12</PDBx:auth_seq_id> <PDBx:footnote_id>4</PDBx:footnote_id> <PDBx:group_PDB>ATOM</PDBx:group_PDB> <PDBx:label_alt_id xsi:nil="true" /> <PDBx:label_asym_id>A</PDBx:label_asym_id> <PDBx:label_atom_id>C</PDBx:label_atom_id> <PDBx:label_comp_id>THR</PDBx:label_comp_id> <PDBx:label_seq_id>12</PDBx:label_seq_id> <PDBx:occupancy>1.00</PDBx:occupancy> <PDBx:type_symbol>C</PDBx:type_symbol> </PDBx:atom_site> <PDBx:atom_site id="11"> <PDBx:B_iso_or_equiv>21.84</PDBx:B_iso_or_equiv> <PDBx:Cartn_x>24.869</PDBx:Cartn_x> <PDBx:Cartn_y>35.118</PDBx:Cartn_y> <PDBx:Cartn_z>15.421</PDBx:Cartn_z> <PDBx:auth_seq_id>12</PDBx:auth_seq_id> <PDBx:footnote_id>4</PDBx:footnote_id> <PDBx:group_PDB>ATOM</PDBx:group_PDB> <PDBx:label_alt_id xsi:nil="true" /> <PDBx:label_asym_id>A</PDBx:label_asym_id> <PDBx:label_atom_id>O</PDBx:label_atom_id> <PDBx:label_comp_id>THR</PDBx:label_comp_id> <PDBx:label_seq_id>12</PDBx:label_seq_id> <PDBx:occupancy>1.00</PDBx:occupancy> <PDBx:type_symbol>O</PDBx:type_symbol> </PDBx:atom_site> <PDBx:atom_site id="12"> <PDBx:B_iso_or_equiv>20.51</PDBx:B_iso_or_equiv> <PDBx:Cartn_x>26.911</PDBx:Cartn_x> <PDBx:Cartn_y>33.346</PDBx:Cartn_y> <PDBx:Cartn_z>17.018</PDBx:Cartn_z> <PDBx:auth_seq_id>12</PDBx:auth_seq_id> <PDBx:footnote_id>4</PDBx:footnote_id> <PDBx:group_PDB>ATOM</PDBx:group_PDB> <PDBx:label_alt_id xsi:nil="true" /> <PDBx:label_asym_id>A</PDBx:label_asym_id> <PDBx:label_atom_id>CB</PDBx:label_atom_id> <PDBx:label_comp_id>THR</PDBx:label_comp_id> <PDBx:label_seq_id>12</PDBx:label_seq_id> <PDBx:occupancy>1.00</PDBx:occupancy> <PDBx:type_symbol>C</PDBx:type_symbol> </PDBx:atom_site> <PDBx:atom_site id="13"> <PDBx:B_iso_or_equiv>20.29</PDBx:B_iso_or_equiv> <PDBx:Cartn_x>27.946</PDBx:Cartn_x> <PDBx:Cartn_y>33.921</PDBx:Cartn_y> <PDBx:Cartn_z>16.183</PDBx:Cartn_z> <PDBx:auth_seq_id>12</PDBx:auth_seq_id> <PDBx:footnote_id>4</PDBx:footnote_id> <PDBx:group_PDB>ATOM</PDBx:group_PDB> <PDBx:label_alt_id>3</PDBx:label_alt_id> <PDBx:label_asym_id>A</PDBx:label_asym_id> <PDBx:label_atom_id>OG1</PDBx:label_atom_id> <PDBx:label_comp_id>THR</PDBx:label_comp_id> <PDBx:label_seq_id>12</PDBx:label_seq_id> <PDBx:occupancy>0.50</PDBx:occupancy> <PDBx:type_symbol>O</PDBx:type_symbol> </PDBx:atom_site> <PDBx:atom_site id="14"> <PDBx:B_iso_or_equiv>20.59</PDBx:B_iso_or_equiv> <PDBx:Cartn_x>27.769</PDBx:Cartn_x> <PDBx:Cartn_y>32.142</PDBx:Cartn_y> <PDBx:Cartn_z>17.103</PDBx:Cartn_z> <PDBx:auth_seq_id>12</PDBx:auth_seq_id> <PDBx:footnote_id>4</PDBx:footnote_id> <PDBx:group_PDB>ATOM</PDBx:group_PDB> <PDBx:label_alt_id>4</PDBx:label_alt_id> <PDBx:label_asym_id>A</PDBx:label_asym_id> <PDBx:label_atom_id>OG1</PDBx:label_atom_id> <PDBx:label_comp_id>THR</PDBx:label_comp_id> <PDBx:label_seq_id>12</PDBx:label_seq_id> <PDBx:occupancy>0.50</PDBx:occupancy> <PDBx:type_symbol>O</PDBx:type_symbol> </PDBx:atom_site> <PDBx:atom_site id="15"> <PDBx:B_iso_or_equiv>20.47</PDBx:B_iso_or_equiv> <PDBx:Cartn_x>27.418</PDBx:Cartn_x> <PDBx:Cartn_y>32.181</PDBx:Cartn_y> <PDBx:Cartn_z>17.878</PDBx:Cartn_z> <PDBx:auth_seq_id>12</PDBx:auth_seq_id> <PDBx:footnote_id>4</PDBx:footnote_id> <PDBx:group_PDB>ATOM</PDBx:group_PDB> <PDBx:label_alt_id>3</PDBx:label_alt_id> <PDBx:label_asym_id>A</PDBx:label_asym_id> <PDBx:label_atom_id>CG2</PDBx:label_atom_id> <PDBx:label_comp_id>THR</PDBx:label_comp_id> <PDBx:label_seq_id>12</PDBx:label_seq_id> <PDBx:occupancy>0.50</PDBx:occupancy> <PDBx:type_symbol>C</PDBx:type_symbol> </PDBx:atom_site> <PDBx:atom_site id="16"> <PDBx:B_iso_or_equiv>20.00</PDBx:B_iso_or_equiv> <PDBx:Cartn_x>26.489</PDBx:Cartn_x> <PDBx:Cartn_y>33.778</PDBx:Cartn_y> <PDBx:Cartn_z>18.426</PDBx:Cartn_z> <PDBx:auth_seq_id>12</PDBx:auth_seq_id> <PDBx:footnote_id>4</PDBx:footnote_id> <PDBx:group_PDB>ATOM</PDBx:group_PDB> <PDBx:label_alt_id>4</PDBx:label_alt_id> <PDBx:label_asym_id>A</PDBx:label_asym_id> <PDBx:label_atom_id>CG2</PDBx:label_atom_id> <PDBx:label_comp_id>THR</PDBx:label_comp_id> <PDBx:label_seq_id>12</PDBx:label_seq_id> <PDBx:occupancy>0.50</PDBx:occupancy> <PDBx:type_symbol>C</PDBx:type_symbol> </PDBx:atom_site> <PDBx:atom_site id="17"> <PDBx:B_iso_or_equiv>22.08</PDBx:B_iso_or_equiv> <PDBx:Cartn_x>23.664</PDBx:Cartn_x> <PDBx:Cartn_y>33.855</PDBx:Cartn_y> <PDBx:Cartn_z>16.884</PDBx:Cartn_z> <PDBx:auth_seq_id>13</PDBx:auth_seq_id> <PDBx:footnote_id xsi:nil="true" /> <PDBx:group_PDB>ATOM</PDBx:group_PDB> <PDBx:label_alt_id xsi:nil="true" /> <PDBx:label_asym_id>A</PDBx:label_asym_id> <PDBx:label_atom_id>N</PDBx:label_atom_id> <PDBx:label_comp_id>ILE</PDBx:label_comp_id> <PDBx:label_seq_id>13</PDBx:label_seq_id> <PDBx:occupancy>1.00</PDBx:occupancy> <PDBx:type_symbol>N</PDBx:type_symbol> </PDBx:atom_site> <PDBx:atom_site id="18"> <PDBx:B_iso_or_equiv>23.44</PDBx:B_iso_or_equiv> <PDBx:Cartn_x>22.623</PDBx:Cartn_x> <PDBx:Cartn_y>34.850</PDBx:Cartn_y> <PDBx:Cartn_z>17.093</PDBx:Cartn_z> <PDBx:auth_seq_id>13</PDBx:auth_seq_id> <PDBx:footnote_id xsi:nil="true" /> <PDBx:group_PDB>ATOM</PDBx:group_PDB> <PDBx:label_alt_id xsi:nil="true" /> <PDBx:label_asym_id>A</PDBx:label_asym_id> <PDBx:label_atom_id>CA</PDBx:label_atom_id> <PDBx:label_comp_id>ILE</PDBx:label_comp_id> <PDBx:label_seq_id>13</PDBx:label_seq_id> <PDBx:occupancy>1.00</PDBx:occupancy> <PDBx:type_symbol>C</PDBx:type_symbol> </PDBx:atom_site> <PDBx:atom_site id="19"> <PDBx:B_iso_or_equiv>25.77</PDBx:B_iso_or_equiv> <PDBx:Cartn_x>22.657</PDBx:Cartn_x> <PDBx:Cartn_y>35.113</PDBx:Cartn_y> <PDBx:Cartn_z>18.610</PDBx:Cartn_z> <PDBx:auth_seq_id>13</PDBx:auth_seq_id> <PDBx:footnote_id xsi:nil="true" /> <PDBx:group_PDB>ATOM</PDBx:group_PDB> <PDBx:label_alt_id xsi:nil="true" /> <PDBx:label_asym_id>A</PDBx:label_asym_id> <PDBx:label_atom_id>C</PDBx:label_atom_id> <PDBx:label_comp_id>ILE</PDBx:label_comp_id> <PDBx:label_seq_id>13</PDBx:label_seq_id> <PDBx:occupancy>1.00</PDBx:occupancy> <PDBx:type_symbol>C</PDBx:type_symbol> </PDBx:atom_site> <PDBx:atom_site id="20"> <PDBx:B_iso_or_equiv>26.28</PDBx:B_iso_or_equiv> <PDBx:Cartn_x>23.123</PDBx:Cartn_x> <PDBx:Cartn_y>34.250</PDBx:Cartn_y> <PDBx:Cartn_z>19.406</PDBx:Cartn_z> <PDBx:auth_seq_id>13</PDBx:auth_seq_id> <PDBx:footnote_id xsi:nil="true" /> <PDBx:group_PDB>ATOM</PDBx:group_PDB> <PDBx:label_alt_id xsi:nil="true" /> <PDBx:label_asym_id>A</PDBx:label_asym_id> <PDBx:label_atom_id>O</PDBx:label_atom_id> <PDBx:label_comp_id>ILE</PDBx:label_comp_id> <PDBx:label_seq_id>13</PDBx:label_seq_id> <PDBx:occupancy>1.00</PDBx:occupancy> <PDBx:type_symbol>O</PDBx:type_symbol> </PDBx:atom_site> <PDBx:atom_site id="21"> <PDBx:B_iso_or_equiv>22.67</PDBx:B_iso_or_equiv> <PDBx:Cartn_x>21.236</PDBx:Cartn_x> <PDBx:Cartn_y>34.463</PDBx:Cartn_y> <PDBx:Cartn_z>16.492</PDBx:Cartn_z> <PDBx:auth_seq_id>13</PDBx:auth_seq_id> <PDBx:footnote_id xsi:nil="true" /> <PDBx:group_PDB>ATOM</PDBx:group_PDB> <PDBx:label_alt_id xsi:nil="true" /> <PDBx:label_asym_id>A</PDBx:label_asym_id> <PDBx:label_atom_id>CB</PDBx:label_atom_id> <PDBx:label_comp_id>ILE</PDBx:label_comp_id> <PDBx:label_seq_id>13</PDBx:label_seq_id> <PDBx:occupancy>1.00</PDBx:occupancy> <PDBx:type_symbol>C</PDBx:type_symbol> </PDBx:atom_site> <PDBx:atom_site id="22"> <PDBx:B_iso_or_equiv>22.14</PDBx:B_iso_or_equiv> <PDBx:Cartn_x>20.478</PDBx:Cartn_x> <PDBx:Cartn_y>33.469</PDBx:Cartn_y> <PDBx:Cartn_z>17.371</PDBx:Cartn_z> <PDBx:auth_seq_id>13</PDBx:auth_seq_id> <PDBx:footnote_id xsi:nil="true" /> <PDBx:group_PDB>ATOM</PDBx:group_PDB> <PDBx:label_alt_id xsi:nil="true" /> <PDBx:label_asym_id>A</PDBx:label_asym_id> <PDBx:label_atom_id>CG1</PDBx:label_atom_id> <PDBx:label_comp_id>ILE</PDBx:label_comp_id> <PDBx:label_seq_id>13</PDBx:label_seq_id> <PDBx:occupancy>1.00</PDBx:occupancy> <PDBx:type_symbol>C</PDBx:type_symbol> </PDBx:atom_site> <PDBx:atom_site id="23"> <PDBx:B_iso_or_equiv>21.75</PDBx:B_iso_or_equiv> <PDBx:Cartn_x>21.357</PDBx:Cartn_x> <PDBx:Cartn_y>33.986</PDBx:Cartn_y> <PDBx:Cartn_z>15.016</PDBx:Cartn_z> <PDBx:auth_seq_id>13</PDBx:auth_seq_id> <PDBx:footnote_id xsi:nil="true" /> <PDBx:group_PDB>ATOM</PDBx:group_PDB> <PDBx:label_alt_id xsi:nil="true" /> <PDBx:label_asym_id>A</PDBx:label_asym_id> <PDBx:label_atom_id>CG2</PDBx:label_atom_id> <PDBx:label_comp_id>ILE</PDBx:label_comp_id> <PDBx:label_seq_id>13</PDBx:label_seq_id> <PDBx:occupancy>1.00</PDBx:occupancy> <PDBx:type_symbol>C</PDBx:type_symbol> </PDBx:atom_site> <PDBx:atom_site id="101"> <PDBx:B_iso_or_equiv>17.27</PDBx:B_iso_or_equiv> <PDBx:Cartn_x>4.171</PDBx:Cartn_x> <PDBx:Cartn_y>29.012</PDBx:Cartn_y> <PDBx:Cartn_z>7.116</PDBx:Cartn_z> <PDBx:auth_seq_id>300</PDBx:auth_seq_id> <PDBx:footnote_id>1</PDBx:footnote_id> <PDBx:group_PDB>HETATM</PDBx:group_PDB> <PDBx:label_alt_id>1</PDBx:label_alt_id> <PDBx:label_asym_id>C</PDBx:label_asym_id> <PDBx:label_atom_id>C1</PDBx:label_atom_id> <PDBx:label_comp_id>APS</PDBx:label_comp_id> <PDBx:label_seq_id xsi:nil="true" /> <PDBx:occupancy>0.58</PDBx:occupancy> <PDBx:type_symbol>C</PDBx:type_symbol> </PDBx:atom_site> <PDBx:atom_site id="102"> <PDBx:B_iso_or_equiv>16.95</PDBx:B_iso_or_equiv> <PDBx:Cartn_x>4.949</PDBx:Cartn_x> <PDBx:Cartn_y>27.758</PDBx:Cartn_y> <PDBx:Cartn_z>6.793</PDBx:Cartn_z> <PDBx:auth_seq_id>300</PDBx:auth_seq_id> <PDBx:footnote_id>1</PDBx:footnote_id> <PDBx:group_PDB>HETATM</PDBx:group_PDB> <PDBx:label_alt_id>1</PDBx:label_alt_id> <PDBx:label_asym_id>C</PDBx:label_asym_id> <PDBx:label_atom_id>C2</PDBx:label_atom_id> <PDBx:label_comp_id>APS</PDBx:label_comp_id> <PDBx:label_seq_id xsi:nil="true" /> <PDBx:occupancy>0.58</PDBx:occupancy> <PDBx:type_symbol>C</PDBx:type_symbol> </PDBx:atom_site> <PDBx:atom_site id="103"> <PDBx:B_iso_or_equiv>16.85</PDBx:B_iso_or_equiv> <PDBx:Cartn_x>4.800</PDBx:Cartn_x> <PDBx:Cartn_y>26.678</PDBx:Cartn_y> <PDBx:Cartn_z>7.393</PDBx:Cartn_z> <PDBx:auth_seq_id>300</PDBx:auth_seq_id> <PDBx:footnote_id>1</PDBx:footnote_id> <PDBx:group_PDB>HETATM</PDBx:group_PDB> <PDBx:label_alt_id>1</PDBx:label_alt_id> <PDBx:label_asym_id>C</PDBx:label_asym_id> <PDBx:label_atom_id>O3</PDBx:label_atom_id> <PDBx:label_comp_id>APS</PDBx:label_comp_id> <PDBx:label_seq_id xsi:nil="true" /> <PDBx:occupancy>0.58</PDBx:occupancy> <PDBx:type_symbol>O</PDBx:type_symbol> </PDBx:atom_site> <PDBx:atom_site id="104"> <PDBx:B_iso_or_equiv>16.43</PDBx:B_iso_or_equiv> <PDBx:Cartn_x>5.930</PDBx:Cartn_x> <PDBx:Cartn_y>27.841</PDBx:Cartn_y> <PDBx:Cartn_z>5.869</PDBx:Cartn_z> <PDBx:auth_seq_id>300</PDBx:auth_seq_id> <PDBx:footnote_id>1</PDBx:footnote_id> <PDBx:group_PDB>HETATM</PDBx:group_PDB> <PDBx:label_alt_id>1</PDBx:label_alt_id> <PDBx:label_asym_id>C</PDBx:label_asym_id> <PDBx:label_atom_id>N4</PDBx:label_atom_id> <PDBx:label_comp_id>APS</PDBx:label_comp_id> <PDBx:label_seq_id xsi:nil="true" /> <PDBx:occupancy>0.58</PDBx:occupancy> <PDBx:type_symbol>N</PDBx:type_symbol> </PDBx:atom_site> </PDBx:atom_siteCategory>
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
@@ -2161,45 +2928,10 @@ CREATE TABLE atom_site (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
 	"B_equiv_geom_mean" DECIMAL CHECK ( "B_equiv_geom_mean" >= 0.0 ) ,
-	"B_equiv_geom_mean_esd" DECIMAL ,
-	"B_iso_or_equiv" DECIMAL ,
-	"B_iso_or_equiv_esd" DECIMAL ,
-	"Cartn_x" DECIMAL ,
-	"Cartn_x_esd" DECIMAL ,
-	"Cartn_y" DECIMAL ,
-	"Cartn_y_esd" DECIMAL ,
-	"Cartn_z" DECIMAL ,
-	"Cartn_z_esd" DECIMAL ,
 	"U_equiv_geom_mean" DECIMAL CHECK ( "U_equiv_geom_mean" >= 0.0 AND "U_equiv_geom_mean" <= 10.0 ) ,
-	"U_equiv_geom_mean_esd" DECIMAL ,
 	"U_iso_or_equiv" DECIMAL CHECK ( "U_iso_or_equiv" >= 0.0 AND "U_iso_or_equiv" <= 10.0 ) ,
-	"U_iso_or_equiv_esd" DECIMAL ,
 	"Wyckoff_symbol" TEXT ,
 	adp_type ENUM_atom_site_adp_type ,
-	"aniso_B11" DECIMAL ,
-	"aniso_B11_esd" DECIMAL ,
-	"aniso_B12" DECIMAL ,
-	"aniso_B12_esd" DECIMAL ,
-	"aniso_B13" DECIMAL ,
-	"aniso_B13_esd" DECIMAL ,
-	"aniso_B22" DECIMAL ,
-	"aniso_B22_esd" DECIMAL ,
-	"aniso_B23" DECIMAL ,
-	"aniso_B23_esd" DECIMAL ,
-	"aniso_B33" DECIMAL ,
-	"aniso_B33_esd" DECIMAL ,
-	"aniso_U11" DECIMAL ,
-	"aniso_U11_esd" DECIMAL ,
-	"aniso_U12" DECIMAL ,
-	"aniso_U12_esd" DECIMAL ,
-	"aniso_U13" DECIMAL ,
-	"aniso_U13_esd" DECIMAL ,
-	"aniso_U22" DECIMAL ,
-	"aniso_U22_esd" DECIMAL ,
-	"aniso_U23" DECIMAL ,
-	"aniso_U23_esd" DECIMAL ,
-	"aniso_U33" DECIMAL ,
-	"aniso_U33_esd" DECIMAL ,
 	aniso_ratio DECIMAL CHECK ( aniso_ratio >= 1.0 ) ,
 	attached_hydrogens INTEGER CHECK ( attached_hydrogens >= 0 AND attached_hydrogens <= 8 ) ,
 	auth_asym_id TEXT ,
@@ -2261,6 +2993,342 @@ CREATE TABLE atom_site (
 );
 
 --
+-- The [1][1] element of the anisotropic atomic displacement matrix B, which appears in the structure-factor term as: T = exp{-1/4 sum~i~[sum~j~(B^ij^ h~i~ h~j~ a*~i~ a*~j~)]} h = the Miller indices a* = the reciprocal space cell lengths These matrix elements may appear with atomic coordinates in the ATOM_SITE category, or they may appear in the separate ATOM_SITE_ANISOTROP category, but they may not appear in both places. Similarly, anisotropic displacements may appear as either B's or U's, but not as both. The unique elements of the real symmetric matrix are entered by row. The IUCr Commission on Nomenclature recommends against the use of B for reporting atomic displacement parameters. U, being directly proportional to B, is preferred.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "B11" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = '8pi2_angstroms_squared' ) NOT NULL
+);
+
+--
+-- The standard uncertainty (estimated standard deviation) of attribute B[1][1] in category atom_site_anisotrop.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "B11_esd" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = '8pi2_angstroms_squared' ) NOT NULL
+);
+
+--
+-- The [1][2] element of the anisotropic atomic displacement matrix B, which appears in the structure-factor term as: T = exp{-1/4 sum~i~[sum~j~(B^ij^ h~i~ h~j~ a*~i~ a*~j~)]} h = the Miller indices a* = the reciprocal space cell lengths These matrix elements may appear with atomic coordinates in the ATOM_SITE category, or they may appear in the separate ATOM_SITE_ANISOTROP category, but they may not appear in both places. Similarly, anisotropic displacements may appear as either B's or U's, but not as both. The unique elements of the real symmetric matrix are entered by row. The IUCr Commission on Nomenclature recommends against the use of B for reporting atomic displacement parameters. U, being directly proportional to B, is preferred.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "B12" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = '8pi2_angstroms_squared' ) NOT NULL
+);
+
+--
+-- The standard uncertainty (estimated standard deviation) of attribute B[1][2] in category atom_site_anisotrop.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "B12_esd" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = '8pi2_angstroms_squared' ) NOT NULL
+);
+
+--
+-- The [1][3] element of the anisotropic atomic displacement matrix B, which appears in the structure-factor term as: T = exp{-1/4 sum~i~[sum~j~(B^ij^ h~i~ h~j~ a*~i~ a*~j~)]} h = the Miller indices a* = the reciprocal space cell lengths These matrix elements may appear with atomic coordinates in the ATOM_SITE category, or they may appear in the separate ATOM_SITE_ANISOTROP category, but they may not appear in both places. Similarly, anisotropic displacements may appear as either B's or U's, but not as both. The unique elements of the real symmetric matrix are entered by row. The IUCr Commission on Nomenclature recommends against the use of B for reporting atomic displacement parameters. U, being directly proportional to B, is preferred.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "B13" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = '8pi2_angstroms_squared' ) NOT NULL
+);
+
+--
+-- The standard uncertainty (estimated standard deviation) of attribute B[1][3] in category atom_site_anisotrop.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "B13_esd" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = '8pi2_angstroms_squared' ) NOT NULL
+);
+
+--
+-- The [2][2] element of the anisotropic atomic displacement matrix B, which appears in the structure-factor term as: T = exp{-1/4 sum~i~[sum~j~(B^ij^ h~i~ h~j~ a*~i~ a*~j~)]} h = the Miller indices a* = the reciprocal space cell lengths These matrix elements may appear with atomic coordinates in the ATOM_SITE category, or they may appear in the separate ATOM_SITE_ANISOTROP category, but they may not appear in both places. Similarly, anisotropic displacements may appear as either B's or U's, but not as both. The unique elements of the real symmetric matrix are entered by row. The IUCr Commission on Nomenclature recommends against the use of B for reporting atomic displacement parameters. U, being directly proportional to B, is preferred.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "B22" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = '8pi2_angstroms_squared' ) NOT NULL
+);
+
+--
+-- The standard uncertainty (estimated standard deviation) of attribute B[2][2] in category atom_site_anisotrop.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "B22_esd" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = '8pi2_angstroms_squared' ) NOT NULL
+);
+
+--
+-- The [2][3] element of the anisotropic atomic displacement matrix B, which appears in the structure-factor term as: T = exp{-1/4 sum~i~[sum~j~(B^ij^ h~i~ h~j~ a*~i~ a*~j~)]} h = the Miller indices a* = the reciprocal space cell lengths These matrix elements may appear with atomic coordinates in the ATOM_SITE category, or they may appear in the separate ATOM_SITE_ANISOTROP category, but they may not appear in both places. Similarly, anisotropic displacements may appear as either B's or U's, but not as both. The unique elements of the real symmetric matrix are entered by row. The IUCr Commission on Nomenclature recommends against the use of B for reporting atomic displacement parameters. U, being directly proportional to B, is preferred.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "B23" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = '8pi2_angstroms_squared' ) NOT NULL
+);
+
+--
+-- The standard uncertainty (estimated standard deviation) of attribute B[2][3] in category atom_site_anisotrop.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "B23_esd" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = '8pi2_angstroms_squared' ) NOT NULL
+);
+
+--
+-- The [3][3] element of the anisotropic atomic displacement matrix B, which appears in the structure-factor term as: T = exp{-1/4 sum~i~[sum~j~(B^ij^ h~i~ h~j~ a*~i~ a*~j~)]} h = the Miller indices a* = the reciprocal space cell lengths These matrix elements may appear with atomic coordinates in the ATOM_SITE category, or they may appear in the separate ATOM_SITE_ANISOTROP category, but they may not appear in both places. Similarly, anisotropic displacements may appear as either B's or U's, but not as both. The unique elements of the real symmetric matrix are entered by row. The IUCr Commission on Nomenclature recommends against the use of B for reporting atomic displacement parameters. U, being directly proportional to B, is preferred.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "B33" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = '8pi2_angstroms_squared' ) NOT NULL
+);
+
+--
+-- The standard uncertainty (estimated standard deviation) of attribute B[3][3] in category atom_site_anisotrop.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "B33_esd" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = '8pi2_angstroms_squared' ) NOT NULL
+);
+
+--
+-- The [1][1] element of the standard anisotropic atomic displacement matrix U, which appears in the structure-factor term as: T = exp{-2 pi^2^ sum~i~[sum~j~(U^ij^ h~i~ h~j~ a*~i~ a*~j~)]} h = the Miller indices a* = the reciprocal space cell lengths These matrix elements may appear with atomic coordinates in the ATOM_SITE category, or they may appear in the separate ATOM_SITE_ANISOTROP category, but they may not appear in both places. Similarly, anisotropic displacements may appear as either B's or U's, but not as both. The unique elements of the real symmetric matrix are entered by row.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "U11" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'angstroms_squared' ) NOT NULL
+);
+
+--
+-- The standard uncertainty (estimated standard deviation) of attribute U[1][1] in category atom_site_anisotrop.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "U11_esd" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'angstroms_squared' ) NOT NULL
+);
+
+--
+-- The [1][2] element of the standard anisotropic atomic displacement matrix U, which appears in the structure-factor term as: T = exp{-2 pi^2^ sum~i~[sum~j~(U^ij^ h~i~ h~j~ a*~i~ a*~j~)]} h = the Miller indices a* = the reciprocal space cell lengths These matrix elements may appear with atomic coordinates in the ATOM_SITE category, or they may appear in the separate ATOM_SITE_ANISOTROP category, but they may not appear in both places. Similarly, anisotropic displacements may appear as either B's or U's, but not as both. The unique elements of the real symmetric matrix are entered by row.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "U12" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'angstroms_squared' ) NOT NULL
+);
+
+--
+-- The standard uncertainty (estimated standard deviation) of attribute U[1][2] in category atom_site_anisotrop.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "U12_esd" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'angstroms_squared' ) NOT NULL
+);
+
+--
+-- The [1][3] element of the standard anisotropic atomic displacement matrix U, which appears in the structure-factor term as: T = exp{-2 pi^2^ sum~i~[sum~j~(U^ij^ h~i~ h~j~ a*~i~ a*~j~)]} h = the Miller indices a* = the reciprocal space cell lengths These matrix elements may appear with atomic coordinates in the ATOM_SITE category, or they may appear in the separate ATOM_SITE_ANISOTROP category, but they may not appear in both places. Similarly, anisotropic displacements may appear as either B's or U's, but not as both. The unique elements of the real symmetric matrix are entered by row.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "U13" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'angstroms_squared' ) NOT NULL
+);
+
+--
+-- The standard uncertainty (estimated standard deviation) of attribute U[1][3] in category atom_site_anisotrop.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "U13_esd" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'angstroms_squared' ) NOT NULL
+);
+
+--
+-- The [2][2] element of the standard anisotropic atomic displacement matrix U, which appears in the structure-factor term as: T = exp{-2 pi^2^ sum~i~[sum~j~(U^ij^ h~i~ h~j~ a*~i~ a*~j~)]} h = the Miller indices a* = the reciprocal space cell lengths These matrix elements may appear with atomic coordinates in the ATOM_SITE category, or they may appear in the separate ATOM_SITE_ANISOTROP category, but they may not appear in both places. Similarly, anisotropic displacements may appear as either B's or U's, but not as both. The unique elements of the real symmetric matrix are entered by row.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "U22" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'angstroms_squared' ) NOT NULL
+);
+
+--
+-- The standard uncertainty (estimated standard deviation) of attribute U[2][2] in category atom_site_anisotrop.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "U22_esd" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'angstroms_squared' ) NOT NULL
+);
+
+--
+-- The [2][3] element of the standard anisotropic atomic displacement matrix U, which appears in the structure-factor term as: T = exp{-2 pi^2^ sum~i~[sum~j~(U^ij^ h~i~ h~j~ a*~i~ a*~j~)]} h = the Miller indices a* = the reciprocal space cell lengths These matrix elements may appear with atomic coordinates in the ATOM_SITE category, or they may appear in the separate ATOM_SITE_ANISOTROP category, but they may not appear in both places. Similarly, anisotropic displacements may appear as either B's or U's, but not as both. The unique elements of the real symmetric matrix are entered by row.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "U23" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'angstroms_squared' ) NOT NULL
+);
+
+--
+-- The standard uncertainty (estimated standard deviation) of attribute U[2][3] in category atom_site_anisotrop.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "U23_esd" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'angstroms_squared' ) NOT NULL
+);
+
+--
+-- The [3][3] element of the standard anisotropic atomic displacement matrix U, which appears in the structure-factor term as: T = exp{-2 pi^2^ sum~i~[sum~j~(U^ij^ h~i~ h~j~ a*~i~ a*~j~)]} h = the Miller indices a* = the reciprocal space cell lengths These matrix elements may appear with atomic coordinates in the ATOM_SITE category, or they may appear in the separate ATOM_SITE_ANISOTROP category, but they may not appear in both places. Similarly, anisotropic displacements may appear as either B's or U's, but not as both. The unique elements of the real symmetric matrix are entered by row.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "U33" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'angstroms_squared' ) NOT NULL
+);
+
+--
+-- The standard uncertainty (estimated standard deviation) of attribute U[3][3] in category atom_site_anisotrop.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "U33_esd" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'angstroms_squared' ) NOT NULL
+);
+
+--
 -- (quoted from atom_site_anisotropType)
 -- Data items in the ATOM_SITE_ANISOTROP category record details about anisotropic displacement parameters. If the ATOM_SITE_ANISOTROP category is used for storing these data, the corresponding ATOM_SITE data items are not used. Example 1 - based on NDB structure BDL005 of Holbrook, Dickerson & Kim [Acta Cryst. (1985), B41, 255-262]. <PDBx:atom_site_anisotropCategory> <PDBx:atom_site_anisotrop id="1"> <PDBx:U11>8642</PDBx:U11> <PDBx:U12>4866</PDBx:U12> <PDBx:U13>7299</PDBx:U13> <PDBx:U22>-342</PDBx:U22> <PDBx:U23>-258</PDBx:U23> <PDBx:U33>-1427</PDBx:U33> <PDBx:type_symbol>O</PDBx:type_symbol> </PDBx:atom_site_anisotrop> <PDBx:atom_site_anisotrop id="2"> <PDBx:U11>5174</PDBx:U11> <PDBx:U12>4871</PDBx:U12> <PDBx:U13>6243</PDBx:U13> <PDBx:U22>-1885</PDBx:U22> <PDBx:U23>-2051</PDBx:U23> <PDBx:U33>-1377</PDBx:U33> <PDBx:type_symbol>C</PDBx:type_symbol> </PDBx:atom_site_anisotrop> <PDBx:atom_site_anisotrop id="3"> <PDBx:U11>6202</PDBx:U11> <PDBx:U12>5020</PDBx:U12> <PDBx:U13>4395</PDBx:U13> <PDBx:U22>-1130</PDBx:U22> <PDBx:U23>-556</PDBx:U23> <PDBx:U33>-632</PDBx:U33> <PDBx:type_symbol>C</PDBx:type_symbol> </PDBx:atom_site_anisotrop> <PDBx:atom_site_anisotrop id="4"> <PDBx:U11>4224</PDBx:U11> <PDBx:U12>4700</PDBx:U12> <PDBx:U13>5046</PDBx:U13> <PDBx:U22>1105</PDBx:U22> <PDBx:U23>-161</PDBx:U23> <PDBx:U33>345</PDBx:U33> <PDBx:type_symbol>O</PDBx:type_symbol> </PDBx:atom_site_anisotrop> <PDBx:atom_site_anisotrop id="5"> <PDBx:U11>8684</PDBx:U11> <PDBx:U12>4688</PDBx:U12> <PDBx:U13>4171</PDBx:U13> <PDBx:U22>-1850</PDBx:U22> <PDBx:U23>-433</PDBx:U23> <PDBx:U33>-292</PDBx:U33> <PDBx:type_symbol>C</PDBx:type_symbol> </PDBx:atom_site_anisotrop> <PDBx:atom_site_anisotrop id="6"> <PDBx:U11>11226</PDBx:U11> <PDBx:U12>5255</PDBx:U12> <PDBx:U13>3532</PDBx:U13> <PDBx:U22>-341</PDBx:U22> <PDBx:U23>2685</PDBx:U23> <PDBx:U33>1328</PDBx:U33> <PDBx:type_symbol>O</PDBx:type_symbol> </PDBx:atom_site_anisotrop> <PDBx:atom_site_anisotrop id="7"> <PDBx:U11>10214</PDBx:U11> <PDBx:U12>2428</PDBx:U12> <PDBx:U13>5614</PDBx:U13> <PDBx:U22>-2610</PDBx:U22> <PDBx:U23>-1940</PDBx:U23> <PDBx:U33>902</PDBx:U33> <PDBx:type_symbol>C</PDBx:type_symbol> </PDBx:atom_site_anisotrop> <PDBx:atom_site_anisotrop id="8"> <PDBx:U11>4590</PDBx:U11> <PDBx:U12>3488</PDBx:U12> <PDBx:U13>5827</PDBx:U13> <PDBx:U22>751</PDBx:U22> <PDBx:U23>-770</PDBx:U23> <PDBx:U33>986</PDBx:U33> <PDBx:type_symbol>C</PDBx:type_symbol> </PDBx:atom_site_anisotrop> <PDBx:atom_site_anisotrop id="9"> <PDBx:U11>5014</PDBx:U11> <PDBx:U12>4434</PDBx:U12> <PDBx:U13>3447</PDBx:U13> <PDBx:U22>-17</PDBx:U22> <PDBx:U23>-1593</PDBx:U23> <PDBx:U33>539</PDBx:U33> <PDBx:type_symbol>N</PDBx:type_symbol> </PDBx:atom_site_anisotrop> </PDBx:atom_site_anisotropCategory>
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
@@ -2269,30 +3337,6 @@ CREATE TABLE atom_site (
 CREATE TABLE atom_site_anisotrop (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
-	"B11" DECIMAL ,
-	"B11_esd" DECIMAL ,
-	"B12" DECIMAL ,
-	"B12_esd" DECIMAL ,
-	"B13" DECIMAL ,
-	"B13_esd" DECIMAL ,
-	"B22" DECIMAL ,
-	"B22_esd" DECIMAL ,
-	"B23" DECIMAL ,
-	"B23_esd" DECIMAL ,
-	"B33" DECIMAL ,
-	"B33_esd" DECIMAL ,
-	"U11" DECIMAL ,
-	"U11_esd" DECIMAL ,
-	"U12" DECIMAL ,
-	"U12_esd" DECIMAL ,
-	"U13" DECIMAL ,
-	"U13_esd" DECIMAL ,
-	"U22" DECIMAL ,
-	"U22_esd" DECIMAL ,
-	"U23" DECIMAL ,
-	"U23_esd" DECIMAL ,
-	"U33" DECIMAL ,
-	"U33_esd" DECIMAL ,
 	"pdbx_PDB_atom_name" TEXT ,
 	"pdbx_PDB_ins_code" TEXT ,
 	"pdbx_PDB_model_num" INTEGER ,
@@ -2396,6 +3440,20 @@ CREATE TABLE atom_sites_footnote (
 );
 
 --
+-- The bound coherent scattering length in femtometres for the atom type at the isotopic composition used for the diffraction experiment.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE scat_length_neutron (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content TEXT ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'femtometres' ) NOT NULL
+);
+
+--
 -- (quoted from audit_authorType)
 -- Data items in the AUDIT_AUTHOR category record details about the author(s) of the data block. Example 1 - based on PDB entry 5HVP and laboratory records for the structure corresponding to PDB entry 5HVP. <PDBx:audit_authorCategory> <PDBx:audit_author pdbx_ordinal="1"> <PDBx:address> Department of Biophysical Chemistry Merck Research Laboratories P. O. Box 2000, Ry80M203 Rahway, New Jersey 07065 USA</PDBx:address> <PDBx:name>Fitzgerald, Paula M.D.</PDBx:name> </PDBx:audit_author> <PDBx:audit_author pdbx_ordinal="2"> <PDBx:address> Department of Biophysical Chemistry Merck Research Laboratories P. O. Box 2000, Ry80M203 Rahway, New Jersey 07065 USA</PDBx:address> <PDBx:name>McKeever, Brian M.</PDBx:name> </PDBx:audit_author> <PDBx:audit_author pdbx_ordinal="3"> <PDBx:address> Department of Biophysical Chemistry Merck Research Laboratories P. O. Box 2000, Ry80M203 Rahway, New Jersey 07065 USA</PDBx:address> <PDBx:name>Van Middlesworth, J.F.</PDBx:name> </PDBx:audit_author> <PDBx:audit_author pdbx_ordinal="4"> <PDBx:address> Department of Biophysical Chemistry Merck Research Laboratories P. O. Box 2000, Ry80M203 Rahway, New Jersey 07065 USA</PDBx:address> <PDBx:name>Springer, James P.</PDBx:name> </PDBx:audit_author> </PDBx:audit_authorCategory>
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
@@ -2460,6 +3518,188 @@ CREATE TABLE audit_link (
 );
 
 --
+-- The standard uncertainty (estimated standard deviation) of attribute angle_alpha in category cell.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE angle_alpha_esd (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'degrees' ) NOT NULL
+);
+
+--
+-- The standard uncertainty (estimated standard deviation) of attribute angle_beta in category cell.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE angle_beta_esd (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'degrees' ) NOT NULL
+);
+
+--
+-- The standard uncertainty (estimated standard deviation) of attribute angle_gamma in category cell.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE angle_gamma_esd (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'degrees' ) NOT NULL
+);
+
+--
+-- The standard uncertainty (estimated standard deviation) of attribute length_a in category cell.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE length_a_esd (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'angstroms' ) NOT NULL
+);
+
+--
+-- The standard uncertainty (estimated standard deviation) of attribute length_b in category cell.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE length_b_esd (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'angstroms' ) NOT NULL
+);
+
+--
+-- The standard uncertainty (estimated standard deviation) of attribute length_c in category cell.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE length_c_esd (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'angstroms' ) NOT NULL
+);
+
+--
+-- The estimated standard deviation of attribute reciprocal_angle_alpha in category cell.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE reciprocal_angle_alpha_esd (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'degrees' ) NOT NULL
+);
+
+--
+-- The estimated standard deviation of attribute reciprocal_angle_beta in category cell.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE reciprocal_angle_beta_esd (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'degrees' ) NOT NULL
+);
+
+--
+-- The estimated standard deviation of attribute reciprocal_angle_gamma in category cell.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE reciprocal_angle_gamma_esd (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'degrees' ) NOT NULL
+);
+
+--
+-- The estimated standard deviation of attribute reciprocal_length_a in category cell.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE reciprocal_length_a_esd (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'reciprocal_angstroms' ) NOT NULL
+);
+
+--
+-- The estimated standard deviation of attribute reciprocal_length_b in category cell.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE reciprocal_length_b_esd (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'reciprocal_angstroms' ) NOT NULL
+);
+
+--
+-- The estimated standard deviation of attribute reciprocal_length_c in category cell.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE reciprocal_length_c_esd (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'reciprocal_angstroms' ) NOT NULL
+);
+
+--
+-- The standard uncertainty (estimated standard deviation) of attribute volume in category cell.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE volume_esd (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'angstroms_cubed' ) NOT NULL
+);
+
+--
 -- (quoted from cellType)
 -- Data items in the CELL category record details about the crystallographic cell parameters. Example 1 - based on PDB entry 5HVP and laboratory records for the structure corresponding to PDB entry 5HVP. <PDBx:cellCategory> <PDBx:cell entry_id="5HVP"> <PDBx:angle_alpha>90.00</PDBx:angle_alpha> <PDBx:angle_beta>90.00</PDBx:angle_beta> <PDBx:angle_gamma>90.00</PDBx:angle_gamma> <PDBx:details> The cell parameters were refined every twenty frames during data integration. The cell lengths given are the mean of 55 such refinements; the esds given are the root mean square deviations of these 55 observations from that mean.</PDBx:details> <PDBx:length_a>58.39</PDBx:length_a> <PDBx:length_a_esd>0.05</PDBx:length_a_esd> <PDBx:length_b>86.70</PDBx:length_b> <PDBx:length_b_esd>0.12</PDBx:length_b_esd> <PDBx:length_c>46.27</PDBx:length_c> <PDBx:length_c_esd>0.06</PDBx:length_c_esd> <PDBx:volume>234237</PDBx:volume> </PDBx:cell> </PDBx:cellCategory> Example 2 - based on data set TOZ of Willis, Beckwith & Tozer [Acta Cryst. (1991), C47, 2276-2277]. <PDBx:cellCategory> <PDBx:cell entry_id="1TOZ"> <PDBx:angle_alpha>90.0</PDBx:angle_alpha> <PDBx:angle_beta>90.0</PDBx:angle_beta> <PDBx:angle_gamma>90.0</PDBx:angle_gamma> <PDBx:length_a>5.959</PDBx:length_a> <PDBx:length_a_esd>0.001</PDBx:length_a_esd> <PDBx:length_b>14.956</PDBx:length_b> <PDBx:length_b_esd>0.001</PDBx:length_b_esd> <PDBx:length_c>19.737</PDBx:length_c> <PDBx:length_c_esd>0.003</PDBx:length_c_esd> <PDBx:volume>1759.0</PDBx:volume> <PDBx:volume_esd>0.3</PDBx:volume_esd> </PDBx:cell> </PDBx:cellCategory>
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
@@ -2470,36 +3710,65 @@ CREATE TABLE cell (
 	document_id TEXT ,
 	"Z_PDB" INTEGER CHECK ( "Z_PDB" >= 1 ) ,
 	angle_alpha DECIMAL CHECK ( angle_alpha >= 0.0 AND angle_alpha <= 180.0 ) ,
-	angle_alpha_esd DECIMAL ,
 	angle_beta DECIMAL CHECK ( angle_beta >= 0.0 AND angle_beta <= 180.0 ) ,
-	angle_beta_esd DECIMAL ,
 	angle_gamma DECIMAL CHECK ( angle_gamma >= 0.0 AND angle_gamma <= 180.0 ) ,
-	angle_gamma_esd DECIMAL ,
 	details TEXT ,
 	"formula_units_Z" INTEGER CHECK ( "formula_units_Z" >= 1 ) ,
 	length_a DECIMAL CHECK ( length_a >= 0.0 ) ,
-	length_a_esd DECIMAL ,
 	length_b DECIMAL CHECK ( length_b >= 0.0 ) ,
-	length_b_esd DECIMAL ,
 	length_c DECIMAL CHECK ( length_c >= 0.0 ) ,
-	length_c_esd DECIMAL ,
 	pdbx_unique_axis TEXT ,
 	reciprocal_angle_alpha DECIMAL CHECK ( reciprocal_angle_alpha >= 0.0 AND reciprocal_angle_alpha <= 180.0 ) ,
-	reciprocal_angle_alpha_esd DECIMAL ,
 	reciprocal_angle_beta DECIMAL CHECK ( reciprocal_angle_beta >= 0.0 AND reciprocal_angle_beta <= 180.0 ) ,
-	reciprocal_angle_beta_esd DECIMAL ,
 	reciprocal_angle_gamma DECIMAL CHECK ( reciprocal_angle_gamma >= 0.0 AND reciprocal_angle_gamma <= 180.0 ) ,
-	reciprocal_angle_gamma_esd DECIMAL ,
 	reciprocal_length_a DECIMAL CHECK ( reciprocal_length_a >= 0.0 ) ,
-	reciprocal_length_a_esd DECIMAL ,
 	reciprocal_length_b DECIMAL CHECK ( reciprocal_length_b >= 0.0 ) ,
-	reciprocal_length_b_esd DECIMAL ,
 	reciprocal_length_c DECIMAL CHECK ( reciprocal_length_c >= 0.0 ) ,
-	reciprocal_length_c_esd DECIMAL ,
 	volume DECIMAL CHECK ( volume >= 0.0 ) ,
-	volume_esd DECIMAL ,
 -- ATTRIBUTE
 	entry_id TEXT NOT NULL
+);
+
+--
+-- The pressure in kilopascals at which the unit-cell parameters were measured (not the pressure at which the sample was synthesized).
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE pressure (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'kilopascals' ) NOT NULL
+);
+
+--
+-- The standard uncertainty (estimated standard deviation) of attribute pressure in category cell_measurement.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE pressure_esd (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'kilopascals' ) NOT NULL
+);
+
+--
+-- The standard uncertainty (estimated standard deviation) of attribute temp in category cell_measurement.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE temp_esd (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'kelvins' ) NOT NULL
 );
 
 --
@@ -2511,12 +3780,9 @@ CREATE TABLE cell (
 CREATE TABLE cell_measurement (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
-	pressure DECIMAL ,
-	pressure_esd DECIMAL ,
 	radiation TEXT ,
 	reflns_used INTEGER ,
 	temp DECIMAL CHECK ( temp >= 0.0 ) ,
-	temp_esd DECIMAL ,
 	theta_max DECIMAL CHECK ( theta_max >= 0.0 AND theta_max <= 90.0 ) ,
 	theta_min DECIMAL CHECK ( theta_min >= 0.0 AND theta_min <= 90.0 ) ,
 	wavelength DECIMAL CHECK ( wavelength >= 0.0 ) ,
@@ -2566,6 +3832,132 @@ CREATE TABLE chem_comp_angle (
 );
 
 --
+-- The x component of the coordinates for this atom in this component specified as orthogonal angstroms. The choice of reference axis frame for the coordinates is arbitrary. The set of coordinates input for the entity here is intended to correspond to the atomic model used to generate restraints for structure refinement, not to atom sites in the ATOM_SITE list.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "model_Cartn_x" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'angstroms' ) NOT NULL
+);
+
+--
+-- The standard uncertainty (estimated standard deviation) of attribute model_Cartn_x in category chem_comp_atom.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "model_Cartn_x_esd" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'angstroms' ) NOT NULL
+);
+
+--
+-- The y component of the coordinates for this atom in this component specified as orthogonal angstroms. The choice of reference axis frame for the coordinates is arbitrary. The set of coordinates input for the entity here is intended to correspond to the atomic model used to generate restraints for structure refinement, not to atom sites in the ATOM_SITE list.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "model_Cartn_y" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'angstroms' ) NOT NULL
+);
+
+--
+-- The standard uncertainty (estimated standard deviation) of attribute model_Cartn_y in category chem_comp_atom.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "model_Cartn_y_esd" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'angstroms' ) NOT NULL
+);
+
+--
+-- The z component of the coordinates for this atom in this component specified as orthogonal angstroms. The choice of reference axis frame for the coordinates is arbitrary. The set of coordinates input for the entity here is intended to correspond to the atomic model used to generate restraints for structure refinement, not to atom sites in the ATOM_SITE list.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "model_Cartn_z" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'angstroms' ) NOT NULL
+);
+
+--
+-- The standard uncertainty (estimated standard deviation) of attribute model_Cartn_z in category chem_comp_atom.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "model_Cartn_z_esd" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'angstroms' ) NOT NULL
+);
+
+--
+-- An alternative x component of the coordinates for this atom in this component specified as orthogonal angstroms.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "pdbx_model_Cartn_x_ideal" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'angstroms' ) NOT NULL
+);
+
+--
+-- An alternative y component of the coordinates for this atom in this component specified as orthogonal angstroms.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "pdbx_model_Cartn_y_ideal" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'angstroms' ) NOT NULL
+);
+
+--
+-- An alternative z component of the coordinates for this atom in this component specified as orthogonal angstroms.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "pdbx_model_Cartn_z_ideal" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'angstroms' ) NOT NULL
+);
+
+--
 -- (quoted from chem_comp_bondType)
 -- Data items in the CHEM_COMP_BOND category record details about the bonds between atoms in a chemical component. Target values may be specified as bond orders, as a distance between the two atoms, or both. Example 1 - based on PDB entry 5HVP and laboratory records for the structure corresponding to PDB entry 5HVP. <PDBx:chem_comp_bondCategory> <PDBx:chem_comp_bond atom_id_1="N" atom_id_2="CA" comp_id="phe"> <PDBx:value_order>sing</PDBx:value_order> </PDBx:chem_comp_bond> <PDBx:chem_comp_bond atom_id_1="CA" atom_id_2="C" comp_id="phe"> <PDBx:value_order>sing</PDBx:value_order> </PDBx:chem_comp_bond> <PDBx:chem_comp_bond atom_id_1="C" atom_id_2="O" comp_id="phe"> <PDBx:value_order>doub</PDBx:value_order> </PDBx:chem_comp_bond> <PDBx:chem_comp_bond atom_id_1="CB" atom_id_2="CA" comp_id="phe"> <PDBx:value_order>sing</PDBx:value_order> </PDBx:chem_comp_bond> <PDBx:chem_comp_bond atom_id_1="CB" atom_id_2="CG" comp_id="phe"> <PDBx:value_order>sing</PDBx:value_order> </PDBx:chem_comp_bond> <PDBx:chem_comp_bond atom_id_1="CG" atom_id_2="CD1" comp_id="phe"> <PDBx:value_order>arom</PDBx:value_order> </PDBx:chem_comp_bond> <PDBx:chem_comp_bond atom_id_1="CD1" atom_id_2="CE1" comp_id="phe"> <PDBx:value_order>arom</PDBx:value_order> </PDBx:chem_comp_bond> <PDBx:chem_comp_bond atom_id_1="CE1" atom_id_2="CZ" comp_id="phe"> <PDBx:value_order>arom</PDBx:value_order> </PDBx:chem_comp_bond> <PDBx:chem_comp_bond atom_id_1="CZ" atom_id_2="CE2" comp_id="phe"> <PDBx:value_order>arom</PDBx:value_order> </PDBx:chem_comp_bond> <PDBx:chem_comp_bond atom_id_1="CE2" atom_id_2="CD2" comp_id="phe"> <PDBx:value_order>arom</PDBx:value_order> </PDBx:chem_comp_bond> <PDBx:chem_comp_bond atom_id_1="CD2" atom_id_2="CG" comp_id="phe"> <PDBx:value_order>arom</PDBx:value_order> </PDBx:chem_comp_bond> <PDBx:chem_comp_bond atom_id_1="N" atom_id_2="CA" comp_id="val"> <PDBx:value_order>sing</PDBx:value_order> </PDBx:chem_comp_bond> <PDBx:chem_comp_bond atom_id_1="CA" atom_id_2="C" comp_id="val"> <PDBx:value_order>sing</PDBx:value_order> </PDBx:chem_comp_bond> <PDBx:chem_comp_bond atom_id_1="C" atom_id_2="O" comp_id="val"> <PDBx:value_order>doub</PDBx:value_order> </PDBx:chem_comp_bond> <PDBx:chem_comp_bond atom_id_1="CB" atom_id_2="CA" comp_id="val"> <PDBx:value_order>sing</PDBx:value_order> </PDBx:chem_comp_bond> <PDBx:chem_comp_bond atom_id_1="CB" atom_id_2="CG1" comp_id="val"> <PDBx:value_order>sing</PDBx:value_order> </PDBx:chem_comp_bond> <PDBx:chem_comp_bond atom_id_1="CB" atom_id_2="CG2" comp_id="val"> <PDBx:value_order>sing</PDBx:value_order> </PDBx:chem_comp_bond> </PDBx:chem_comp_bondCategory>
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
@@ -2595,6 +3987,34 @@ CREATE TABLE chem_comp_bond (
 );
 
 --
+-- The chiral volume, V~c~, for chiral centres that involve a chiral atom bonded to three non-hydrogen atoms and one hydrogen atom. V~c~ = V1 * (V2 X V3) V1 = the vector distance from the atom specified by attribute atom_id in category chem_comp_chir to the first atom in the CHEM_COMP_CHIR_ATOM list V2 = the vector distance from the atom specified by attribute atom_id in category chem_comp_chir to the second atom in the CHEM_COMP_CHIR_ATOM list V3 = the vector distance from the atom specified by attribute atom_id in category chem_comp_chir to the third atom in the CHEM_COMP_CHIR_ATOM list * = the vector dot product X = the vector cross product
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE volume_three (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'angstroms_cubed' ) NOT NULL
+);
+
+--
+-- The standard uncertainty (estimated standard deviation) of attribute volume_three in category chem_comp_chir.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE volume_three_esd (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'angstroms_cubed' ) NOT NULL
+);
+
+--
 -- (quoted from chem_comp_chirType)
 -- Data items in the CHEM_COMP_CHIR category provide details about the chiral centres in a chemical component. The atoms bonded to the chiral atom are specified in the CHEM_COMP_CHIR_ATOM category. Example 1 - based on PDB entry 5HVP and laboratory records for the structure corresponding to PDB entry 5HVP. <PDBx:chem_comp_chirCategory> <PDBx:chem_comp_chir comp_id="phe" id="phe1"> <PDBx:atom_id>CA</PDBx:atom_id> </PDBx:chem_comp_chir> <PDBx:chem_comp_chir comp_id="val" id="val1"> <PDBx:atom_id>CA</PDBx:atom_id> </PDBx:chem_comp_chir> </PDBx:chem_comp_chirCategory>
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
@@ -2612,12 +4032,24 @@ CREATE TABLE chem_comp_chir (
 	number_atoms_all INTEGER ,
 	number_atoms_nh INTEGER ,
 	volume_flag ENUM_chem_comp_chir_volume_flag ,
-	volume_three DECIMAL ,
-	volume_three_esd DECIMAL ,
 -- ATTRIBUTE
 	comp_id TEXT NOT NULL ,
 -- ATTRIBUTE
 	id TEXT NOT NULL
+);
+
+--
+-- The standard uncertainty (estimated standard deviation) of the position of this atom from the plane defined by all of the atoms in the plane.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE dev (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'angstroms' ) NOT NULL
 );
 
 --
@@ -2629,7 +4061,6 @@ CREATE TABLE chem_comp_chir (
 CREATE TABLE chem_comp_chir_atom (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
-	dev DECIMAL ,
 -- ATTRIBUTE
 	atom_id TEXT NOT NULL ,
 -- ATTRIBUTE
@@ -2672,6 +4103,20 @@ CREATE TABLE chem_comp_plane (
 );
 
 --
+-- This data item is the standard deviation of the out-of-plane distance for this atom.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE dist_esd (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'angstroms' ) NOT NULL
+);
+
+--
 -- (quoted from chem_comp_plane_atomType)
 -- Data items in the CHEM_COMP_PLANE_ATOM category enumerate the atoms in a plane within a chemical component. Example 1 - based on PDB entry 5HVP and laboratory records for the structure corresponding to PDB entry 5HVP. <PDBx:chem_comp_plane_atomCategory> <PDBx:chem_comp_plane_atom atom_id="CB" comp_id="phe" plane_id="phe1"></PDBx:chem_comp_plane_atom> <PDBx:chem_comp_plane_atom atom_id="CG" comp_id="phe" plane_id="phe1"></PDBx:chem_comp_plane_atom> <PDBx:chem_comp_plane_atom atom_id="CD1" comp_id="phe" plane_id="phe1"></PDBx:chem_comp_plane_atom> <PDBx:chem_comp_plane_atom atom_id="CE1" comp_id="phe" plane_id="phe1"></PDBx:chem_comp_plane_atom> <PDBx:chem_comp_plane_atom atom_id="CZ" comp_id="phe" plane_id="phe1"></PDBx:chem_comp_plane_atom> <PDBx:chem_comp_plane_atom atom_id="CE2" comp_id="phe" plane_id="phe1"></PDBx:chem_comp_plane_atom> <PDBx:chem_comp_plane_atom atom_id="CD2" comp_id="phe" plane_id="phe1"></PDBx:chem_comp_plane_atom> </PDBx:chem_comp_plane_atomCategory>
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
@@ -2680,7 +4125,6 @@ CREATE TABLE chem_comp_plane (
 CREATE TABLE chem_comp_plane_atom (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
-	dist_esd DECIMAL ,
 -- ATTRIBUTE
 	atom_id TEXT NOT NULL ,
 -- ATTRIBUTE
@@ -2808,8 +4252,6 @@ CREATE TABLE chem_link_chir (
 	number_atoms_all INTEGER ,
 	number_atoms_nh INTEGER ,
 	volume_flag ENUM_chem_link_chir_volume_flag ,
-	volume_three DECIMAL ,
-	volume_three_esd DECIMAL ,
 -- ATTRIBUTE
 	id TEXT NOT NULL ,
 -- ATTRIBUTE
@@ -2828,7 +4270,6 @@ CREATE TABLE chem_link_chir_atom (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
 	atom_comp_id ENUM_chem_link_chir_atom_atom_comp_id ,
-	dev DECIMAL ,
 -- ATTRIBUTE
 	atom_id TEXT NOT NULL ,
 -- ATTRIBUTE
@@ -2919,6 +4360,34 @@ CREATE TABLE chem_link_tor_value (
 );
 
 --
+-- The estimated standard deviation of attribute temperature_decomposition in category chemical.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE temperature_decomposition_esd (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'kelvins' ) NOT NULL
+);
+
+--
+-- The estimated standard deviation of attribute temperature_sublimation in category chemical.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE temperature_sublimation_esd (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'kelvins' ) NOT NULL
+);
+
+--
 -- (quoted from chemicalType)
 -- Data items in the CHEMICAL category would not in general be used in a macromolecular CIF. See instead the ENTITY data items. Data items in the CHEMICAL category record details about the composition and chemical properties of the compounds. The formula data items must agree with those that specify the density, unit-cell and Z values. Example 1 - based on data set 9597gaus of Alyea, Ferguson & Kannan [Acta Cryst. (1996), C52, 765-767]. <PDBx:chemicalCategory> <PDBx:chemical entry_id="9597gaus"> <PDBx:name_systematic>trans-bis(tricyclohexylphosphine)tetracarbonylmolybdenum(0)</PDBx:name_systematic> </PDBx:chemical> </PDBx:chemicalCategory>
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
@@ -2942,11 +4411,9 @@ CREATE TABLE chemical (
 	properties_biological TEXT ,
 	properties_physical TEXT ,
 	temperature_decomposition DECIMAL CHECK ( temperature_decomposition >= 0.0 ) ,
-	temperature_decomposition_esd DECIMAL ,
 	temperature_decomposition_gt DECIMAL CHECK ( temperature_decomposition_gt >= 0.0 ) ,
 	temperature_decomposition_lt DECIMAL CHECK ( temperature_decomposition_lt >= 0.0 ) ,
 	temperature_sublimation DECIMAL CHECK ( temperature_sublimation >= 0.0 ) ,
-	temperature_sublimation_esd DECIMAL ,
 	temperature_sublimation_gt DECIMAL CHECK ( temperature_sublimation_gt >= 0.0 ) ,
 	temperature_sublimation_lt DECIMAL CHECK ( temperature_sublimation_lt >= 0.0 ) ,
 -- ATTRIBUTE
@@ -3193,6 +4660,34 @@ CREATE TABLE "database_PDB_tvect" (
 );
 
 --
+-- The estimated standard deviation of attribute ambient_pressure in category diffrn.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE ambient_pressure_esd (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'kilopascals' ) NOT NULL
+);
+
+--
+-- The standard uncertainty (estimated standard deviation) of attribute ambient_temp in category diffrn.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE ambient_temp_esd (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'kelvins' ) NOT NULL
+);
+
+--
 -- (quoted from diffrn_attenuatorType)
 -- Data items in the DIFFRN_ATTENUATOR category record details about the diffraction attenuator scales employed. Example 2 - based on data set TOZ of Willis, Beckwith & Tozer [Acta Cryst. (1991), C47, 2276-2277]. <PDBx:diffrn_attenuatorCategory> <PDBx:diffrn_attenuator code="1"> <PDBx:scale>16.976</PDBx:scale> </PDBx:diffrn_attenuator> </PDBx:diffrn_attenuatorCategory>
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
@@ -3205,6 +4700,20 @@ CREATE TABLE diffrn_attenuator (
 	scale DECIMAL CHECK ( scale >= 1.0 ) ,
 -- ATTRIBUTE
 	code TEXT NOT NULL
+);
+
+--
+-- The total number of seconds required to measure this data set. 120.0
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE pdbx_collection_time_total (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'seconds' ) NOT NULL
 );
 
 --
@@ -3221,8 +4730,8 @@ CREATE TABLE diffrn_detector (
 	detector TEXT ,
 	dtime DECIMAL CHECK ( dtime >= 0.0 ) ,
 	pdbx_collection_date TEXT ,
-	pdbx_collection_time_total DECIMAL ,
 	pdbx_frames_total INTEGER ,
+	pdbx_frequency DECIMAL CHECK ( pdbx_frequency >= 0.0 ) ,
 	type TEXT ,
 -- ATTRIBUTE
 	diffrn_id TEXT NOT NULL
@@ -3272,6 +4781,90 @@ CREATE TABLE diffrn_orient_matrix (
 );
 
 --
+-- Diffractometer angle chi of a reflection used to define the orientation matrix in degrees. See attribute UB[][] in category diffrn_orient_matrix and the Miller indices in the DIFFRN_ORIENT_REFLN category.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE angle_chi (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'degrees' ) NOT NULL
+);
+
+--
+-- Diffractometer angle kappa of a reflection used to define the orientation matrix in degrees. See attribute UB[][] in category diffrn_orient_matrix and the Miller indices in the DIFFRN_ORIENT_REFLN category.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE angle_kappa (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'degrees' ) NOT NULL
+);
+
+--
+-- Diffractometer angle omega of a reflection used to define the orientation matrix in degrees. See attribute UB[][] in category diffrn_orient_matrix and the Miller indices in the DIFFRN_ORIENT_REFLN category.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE angle_omega (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'degrees' ) NOT NULL
+);
+
+--
+-- Diffractometer angle phi of a reflection used to define the orientation matrix in degrees. See attribute UB[][] in category diffrn_orient_matrix and the Miller indices in the DIFFRN_ORIENT_REFLN category.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE angle_phi (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'degrees' ) NOT NULL
+);
+
+--
+-- Diffractometer angle psi of a reflection used to define the orientation matrix in degrees. See attribute UB[][] in category diffrn_orient_matrix and the Miller indices in the DIFFRN_ORIENT_REFLN category.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE angle_psi (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'degrees' ) NOT NULL
+);
+
+--
+-- Diffractometer angle theta of a reflection used to define the orientation matrix in degrees. See attribute UB[][] in category diffrn_orient_matrix and the Miller indices in the DIFFRN_ORIENT_REFLN category.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE angle_theta (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'degrees' ) NOT NULL
+);
+
+--
 -- (quoted from diffrn_orient_reflnType)
 -- Data items in the DIFFRN_ORIENT_REFLN category record details about the reflections that define the orientation matrix used in the measurement of the diffraction intensities. Example 1 - based on CAD-4 diffractometer data obtained for Yb(S-C5H4N)2(THF)4. <PDBx:diffrn_orient_reflnCategory> <PDBx:diffrn_orient_refln diffrn_id="myset1" index_h="2" index_k="0" index_l="2"> <PDBx:angle_chi>-28.45</PDBx:angle_chi> <PDBx:angle_kappa>-11.32</PDBx:angle_kappa> <PDBx:angle_omega>5.33</PDBx:angle_omega> <PDBx:angle_phi>101.78</PDBx:angle_phi> <PDBx:angle_psi>0.00</PDBx:angle_psi> <PDBx:angle_theta>10.66</PDBx:angle_theta> </PDBx:diffrn_orient_refln> </PDBx:diffrn_orient_reflnCategory>
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
@@ -3280,12 +4873,6 @@ CREATE TABLE diffrn_orient_matrix (
 CREATE TABLE diffrn_orient_refln (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
-	angle_chi DECIMAL ,
-	angle_kappa DECIMAL ,
-	angle_omega DECIMAL ,
-	angle_phi DECIMAL ,
-	angle_psi DECIMAL ,
-	angle_theta DECIMAL ,
 -- ATTRIBUTE
 	diffrn_id TEXT NOT NULL ,
 -- ATTRIBUTE
@@ -3349,6 +4936,34 @@ CREATE TABLE diffrn_radiation_wavelength (
 );
 
 --
+-- The rate of scanning a reflection in degrees per minute to measure the intensity.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE scan_rate (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'degrees_per_minute' ) NOT NULL
+);
+
+--
+-- The time spent measuring each background in seconds.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE scan_time_backgd (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'seconds' ) NOT NULL
+);
+
+--
 -- (quoted from diffrn_reflnType)
 -- Data items in the DIFFRN_REFLN category record details about the intensities in the diffraction data set identified by attribute diffrn_id. in category diffrn_refln The DIFFRN_REFLN data items refer to individual intensity measurements and must be included in looped lists. The DIFFRN_REFLNS data items specify the parameters that apply to all intensity measurements in the particular diffraction data set identified by attribute diffrn_id in category diffrn_reflns. Example 1 - based on CAD-4 diffractometer data obtained for Yb(S-C5H4N)2(THF)4 for data set 'set1' reflection 1102. <PDBx:diffrn_reflnCategory> <PDBx:diffrn_refln diffrn_id="set1" id="1102"> <PDBx:angle_chi>32.21</PDBx:angle_chi> <PDBx:angle_kappa>20.12</PDBx:angle_kappa> <PDBx:angle_omega>11.54</PDBx:angle_omega> <PDBx:angle_phi>176.02</PDBx:angle_phi> <PDBx:angle_psi>0.00</PDBx:angle_psi> <PDBx:angle_theta>23.08</PDBx:angle_theta> <PDBx:attenuator_code>Ni.005</PDBx:attenuator_code> <PDBx:counts_bg_1>22</PDBx:counts_bg_1> <PDBx:counts_bg_2>25</PDBx:counts_bg_2> <PDBx:counts_net>3450</PDBx:counts_net> <PDBx:counts_peak>321</PDBx:counts_peak> <PDBx:counts_total>3499</PDBx:counts_total> <PDBx:detect_slit_horiz>0.04</PDBx:detect_slit_horiz> <PDBx:detect_slit_vert>0.02</PDBx:detect_slit_vert> <PDBx:elapsed_time>1.00</PDBx:elapsed_time> <PDBx:index_h>4</PDBx:index_h> <PDBx:index_k>0</PDBx:index_k> <PDBx:index_l>2</PDBx:index_l> <PDBx:intensity_net>202.56</PDBx:intensity_net> <PDBx:intensity_sigma>2.18</PDBx:intensity_sigma> <PDBx:scale_group_code>A24</PDBx:scale_group_code> <PDBx:scan_mode>om</PDBx:scan_mode> <PDBx:scan_mode_backgd>mo</PDBx:scan_mode_backgd> <PDBx:scan_rate>1.2</PDBx:scan_rate> <PDBx:scan_time_backgd>900.00</PDBx:scan_time_backgd> <PDBx:scan_width>1.0</PDBx:scan_width> <PDBx:sint_over_lambda>0.25426</PDBx:sint_over_lambda> <PDBx:standard_code>1</PDBx:standard_code> <PDBx:wavelength>1.54184</PDBx:wavelength> <PDBx:wavelength_id>Cu1fixed</PDBx:wavelength_id> </PDBx:diffrn_refln> </PDBx:diffrn_reflnCategory>
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
@@ -3361,12 +4976,6 @@ CREATE TYPE ENUM_diffrn_refln_scan_mode_backgd AS ENUM ( 'st', 'mo' );
 CREATE TABLE diffrn_refln (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
-	angle_chi DECIMAL ,
-	angle_kappa DECIMAL ,
-	angle_omega DECIMAL ,
-	angle_phi DECIMAL ,
-	angle_psi DECIMAL ,
-	angle_theta DECIMAL ,
 	attenuator_code TEXT ,
 	class_code TEXT ,
 	counts_bg_1 INTEGER CHECK ( counts_bg_1 >= 0 ) ,
@@ -3386,8 +4995,6 @@ CREATE TABLE diffrn_refln (
 	scale_group_code TEXT ,
 	scan_mode ENUM_diffrn_refln_scan_mode ,
 	scan_mode_backgd ENUM_diffrn_refln_scan_mode_backgd ,
-	scan_rate DECIMAL ,
-	scan_time_backgd DECIMAL ,
 	scan_width DECIMAL CHECK ( scan_width >= 0.0 AND scan_width <= 90.0 ) ,
 	sint_over_lambda DECIMAL CHECK ( sint_over_lambda >= 0.0 ) ,
 	standard_code TEXT ,
@@ -3465,6 +5072,48 @@ CREATE TABLE diffrn_reflns_class (
 );
 
 --
+-- The current in milliamperes at which the radiation source was operated.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE current (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'milliamperes' ) NOT NULL
+);
+
+--
+-- The power in kilowatts at which the radiation source was operated.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE power (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'kilowatts' ) NOT NULL
+);
+
+--
+-- The voltage in kilovolts at which the radiation source was operated.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE voltage (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'kilovolts' ) NOT NULL
+);
+
+--
 -- (quoted from diffrn_sourceType)
 -- Data items in the DIFFRN_SOURCE category record details of the source of radiation used in the diffraction experiment. Example 1 - based on PDB entry 5HVP and laboratory records for the structure corresponding to PDB entry 5HVP. <PDBx:diffrn_sourceCategory> <PDBx:diffrn_source diffrn_id="s1"> <PDBx:current>180</PDBx:current> <PDBx:power>50</PDBx:power> <PDBx:size>8mm x 0.4 mm broad-focus</PDBx:size> <PDBx:source>rotating anode</PDBx:source> <PDBx:type>Rigaku RU-200</PDBx:type> </PDBx:diffrn_source> </PDBx:diffrn_sourceCategory>
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
@@ -3475,7 +5124,6 @@ CREATE TYPE ENUM_diffrn_source_target AS ENUM ( 'H', 'He', 'Li', 'Be', 'B', 'C',
 CREATE TABLE diffrn_source (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
-	current DECIMAL ,
 	details TEXT ,
 	pdbx_source_specific_beamline TEXT ,
 	pdbx_synchrotron_beamline TEXT ,
@@ -3483,13 +5131,11 @@ CREATE TABLE diffrn_source (
 	pdbx_synchrotron_y_n TEXT ,
 	pdbx_wavelength TEXT ,
 	pdbx_wavelength_list TEXT ,
-	power DECIMAL ,
 	size TEXT ,
 	source TEXT ,
 	"take-off_angle" DECIMAL CHECK ( "take-off_angle" >= 0.00 AND "take-off_angle" <= 90.0 ) ,
 	target ENUM_diffrn_source_target ,
 	type TEXT ,
-	voltage DECIMAL ,
 -- ATTRIBUTE
 	diffrn_id TEXT NOT NULL
 );
@@ -3643,6 +5289,20 @@ CREATE TABLE em_3d_fitting_list (
 );
 
 --
+-- The final resolution (in Angstroms)of the 3D reconstruction. 8.9 10.0
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE resolution (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'angstroms' ) NOT NULL
+);
+
+--
 -- (quoted from em_3d_reconstructionType)
 -- Data items in the EM_3D_RECONSTRUCTION category record details of the 3D reconstruction procedure from 2D projections. Example 1 - based on PDB entry 1DYL and laboratory records for the structure corresponding to PDB entry 1DYL <PDBx:em_3d_reconstructionCategory> <PDBx:em_3d_reconstruction id="1"> <PDBx:actual_pixel_size>2.52</PDBx:actual_pixel_size> <PDBx:ctf_correction_method xsi:nil="true" /> <PDBx:details xsi:nil="true" /> <PDBx:entry_id>1DYL</PDBx:entry_id> <PDBx:method>CROSS-COMMON LINES</PDBx:method> <PDBx:nominal_pixel_size>2.64</PDBx:nominal_pixel_size> <PDBx:resolution>9</PDBx:resolution> <PDBx:resolution_method xsi:nil="true" /> </PDBx:em_3d_reconstruction> </PDBx:em_3d_reconstructionCategory>
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
@@ -3671,7 +5331,6 @@ CREATE TABLE em_3d_reconstruction (
 	num_class_averages INTEGER CHECK ( num_class_averages >= 0 ) ,
 	num_particles INTEGER CHECK ( num_particles >= 0 ) ,
 	refinement_type ENUM_em_3d_reconstruction_refinement_type ,
-	resolution DECIMAL ,
 	resolution_method TEXT ,
 	software TEXT ,
 	symmetry_type ENUM_em_3d_reconstruction_symmetry_type ,
@@ -3712,6 +5371,34 @@ CREATE TABLE em_admin (
 );
 
 --
+-- The value (in megadaltons) of the experimentally determined molecular weight of the assembly. 3.5
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE mol_wt_exp (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'megadaltons' ) NOT NULL
+);
+
+--
+-- The value (in megadaltons) of the theoretically determined molecular weight of the assembly. 3.5
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE mol_wt_theo (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'megadaltons' ) NOT NULL
+);
+
+--
 -- (quoted from em_assemblyType)
 -- Data items in the EM_ASSEMBLY category record details about the imaged EM sample. Example 1 - based on PDB entry 1DYL and laboratory records for the structure corresponding to PDB entry 1DYL <PDBx:em_assemblyCategory> <PDBx:em_assembly entry_id="1DYL" id="1"> <PDBx:aggregation_state>PARTICLE</PDBx:aggregation_state> <PDBx:composition>virus</PDBx:composition> <PDBx:details xsi:nil="true" /> <PDBx:mol_wt_exp xsi:nil="true" /> <PDBx:mol_wt_method xsi:nil="true" /> <PDBx:mol_wt_theo xsi:nil="true" /> <PDBx:name>virus</PDBx:name> <PDBx:num_components>1</PDBx:num_components> </PDBx:em_assembly> </PDBx:em_assemblyCategory>
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
@@ -3725,9 +5412,7 @@ CREATE TABLE em_assembly (
 	aggregation_state ENUM_em_assembly_aggregation_state ,
 	composition TEXT ,
 	details TEXT ,
-	mol_wt_exp DECIMAL ,
 	mol_wt_method TEXT ,
-	mol_wt_theo DECIMAL ,
 	name TEXT ,
 	num_components INTEGER ,
 -- ATTRIBUTE
@@ -3788,6 +5473,20 @@ CREATE TABLE em_buffer_component (
 );
 
 --
+-- The value of the temperature in degrees Kelvin used for growing the crystals. 298
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE temperature (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content TEXT ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'kelvins' ) NOT NULL
+);
+
+--
 -- (quoted from em_crystal_formationType)
 -- Description of growth of a 2D, 3D, or helical crystal array.
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
@@ -3804,7 +5503,6 @@ CREATE TABLE em_crystal_formation (
 	lipid_mixture TEXT ,
 	lipid_protein_ratio DECIMAL CHECK ( lipid_protein_ratio >= 0.0 ) ,
 	specimen_id TEXT ,
-	temperature TEXT ,
 	time TEXT ,
 	time_unit ENUM_em_crystal_formation_time_unit ,
 -- ATTRIBUTE
@@ -4191,6 +5889,48 @@ CREATE TABLE em_final_classification (
 );
 
 --
+-- Milling time in seconds (is seconds most appropriate unit?)
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE duration (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content TEXT ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'seconds' ) NOT NULL
+);
+
+--
+-- Final sample thickness
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE final_thickness (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content TEXT ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'nanometers' ) NOT NULL
+);
+
+--
+-- Initial sample thickness
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE initial_thickness (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content TEXT ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'nanometers' ) NOT NULL
+);
+
+--
 -- (quoted from em_focused_ion_beamType)
 -- Description of sectioning by focused_ion_beam
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
@@ -4202,14 +5942,9 @@ CREATE TABLE em_focused_ion_beam (
 	current DECIMAL CHECK ( current >= 0.001 AND current <= 20 ) ,
 	details TEXT ,
 	dose_rate INTEGER CHECK ( dose_rate >= 0 ) ,
-	duration TEXT ,
 	em_tomography_specimen_id TEXT ,
-	final_thickness TEXT ,
-	initial_thickness TEXT ,
 	instrument TEXT ,
 	ion TEXT ,
-	temperature TEXT ,
-	voltage TEXT ,
 -- ATTRIBUTE
 	id TEXT NOT NULL
 );
@@ -4230,6 +5965,20 @@ CREATE TABLE em_fsc_curve (
 );
 
 --
+-- Time period for glow discharge of the em grid, in seconds
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE time (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content TEXT ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'seconds' ) NOT NULL
+);
+
+--
 -- (quoted from em_grid_pretreatmentType)
 -- Data items describing glow discharge pretreatment for an EM grid Example 1 <PDBx:em_grid_pretreatmentCategory> <PDBx:em_grid_pretreatment id="1"> <PDBx:sample_support_id>1</PDBx:sample_support_id> <PDBx:time>12</PDBx:time> <PDBx:type>GLOW DISCHARGE</PDBx:type> </PDBx:em_grid_pretreatment> </PDBx:em_grid_pretreatmentCategory>
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
@@ -4243,7 +5992,6 @@ CREATE TABLE em_grid_pretreatment (
 	atmosphere TEXT ,
 	pressure DECIMAL CHECK ( pressure >= 0.0 ) ,
 	sample_support_id TEXT ,
-	time TEXT ,
 	type ENUM_em_grid_pretreatment_type ,
 -- ATTRIBUTE
 	id TEXT NOT NULL
@@ -4331,6 +6079,20 @@ CREATE TABLE em_image_recording (
 );
 
 --
+-- The sampling step size (microns) set on the scanner.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE sampling_size (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'microns' ) NOT NULL
+);
+
+--
 -- (quoted from em_image_scansType)
 -- Data items in the EM_IMAGE_SCANS category record details of the image scanning device (microdensitometer) and parameters for digitization of the image. Example 1 - based on PDB entry 1DYL and laboratory records for the structure corresponding to PDB entry 1DYL <PDBx:em_image_scansCategory> <PDBx:em_image_scans id="2"> <PDBx:details xsi:nil="true" /> <PDBx:entry_id>1DYL</PDBx:entry_id> <PDBx:number_digital_images>48</PDBx:number_digital_images> <PDBx:od_range xsi:nil="true" /> <PDBx:quant_bit_size xsi:nil="true" /> <PDBx:sampling_size xsi:nil="true" /> <PDBx:scanner_model xsi:nil="true" /> </PDBx:em_image_scans> </PDBx:em_image_scansCategory>
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
@@ -4350,13 +6112,166 @@ CREATE TABLE em_image_scans (
 	number_digital_images INTEGER ,
 	od_range DECIMAL ,
 	quant_bit_size INTEGER ,
-	sampling_size DECIMAL ,
 	scanner_model ENUM_em_image_scans_scanner_model ,
 	used_frames_per_image TEXT ,
 -- ATTRIBUTE
 	id TEXT NOT NULL ,
 -- ATTRIBUTE
 	image_recording_id TEXT NOT NULL
+);
+
+--
+-- The minimum defocus value of the objective lens (in nanometers) used to obtain the recorded images. 1200
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE calibrated_defocus_min (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'nanometers' ) NOT NULL
+);
+
+--
+-- The camera length (in millimeters). The camera length is the product of the objective focal length and the combined magnification of the intermediate and projector lenses when the microscope is operated in the diffraction mode.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE detector_distance (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'millimetres' ) NOT NULL
+);
+
+--
+-- The electron dose received by the specimen (electrons per square angstrom). 0.9
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE electron_dose (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'electrons_angstrom_squared' ) NOT NULL
+);
+
+--
+-- The energy filter range in electron volts (eV)set by spectrometer. 0 - 15
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE energy_window (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content TEXT ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'electron_volts' ) NOT NULL
+);
+
+--
+-- The maximum defocus value of the objective lens (in nanometers) used to obtain the recorded images. 5000
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE nominal_defocus_max (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'nanometers' ) NOT NULL
+);
+
+--
+-- The minimum defocus value of the objective lens (in nanometers) used to obtain the recorded images. 1200
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE nominal_defocus_min (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'nanometers' ) NOT NULL
+);
+
+--
+-- The specimen temperature maximum (degrees Kelvin) for the duration of imaging.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE recording_temperature_maximum (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'kelvins' ) NOT NULL
+);
+
+--
+-- The specimen temperature minimum (degrees Kelvin) for the duration of imaging.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE recording_temperature_minimum (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'kelvins' ) NOT NULL
+);
+
+--
+-- residual tilt of the electron beam
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE residual_tilt (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'milliradians' ) NOT NULL
+);
+
+--
+-- The maximum angle at which the specimen was tilted to obtain recorded images. 70
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE tilt_angle_max (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'degrees' ) NOT NULL
+);
+
+--
+-- The minimum angle at which the specimen was tilted to obtain recorded images. -70
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE tilt_angle_min (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'degrees' ) NOT NULL
 );
 
 --
@@ -4385,42 +6300,58 @@ CREATE TABLE em_imaging (
 	astigmatism TEXT ,
 	c2_aperture_diameter DECIMAL CHECK ( c2_aperture_diameter >= 10 AND c2_aperture_diameter <= 150 ) ,
 	calibrated_defocus_max DECIMAL CHECK ( calibrated_defocus_max >= -30000 AND calibrated_defocus_max <= 30000 ) ,
-	calibrated_defocus_min DECIMAL ,
 	calibrated_magnification INTEGER CHECK ( calibrated_magnification >= 1 ) ,
 	citation_id TEXT ,
 	cryogen ENUM_em_imaging_cryogen ,
 	date DATE ,
 	details TEXT ,
-	detector_distance DECIMAL ,
 	detector_id TEXT ,
 	electron_beam_tilt_params TEXT ,
-	electron_dose DECIMAL ,
 	electron_source TEXT ,
 	energy_filter TEXT ,
-	energy_window TEXT ,
 	illumination_mode ENUM_em_imaging_illumination_mode ,
 	microscope_id TEXT ,
 	microscope_model ENUM_em_imaging_microscope_model ,
 	mode ENUM_em_imaging_mode ,
 	nominal_cs DECIMAL CHECK ( nominal_cs >= 0 AND nominal_cs <= 20 ) ,
-	nominal_defocus_max DECIMAL ,
-	nominal_defocus_min DECIMAL ,
 	nominal_magnification INTEGER CHECK ( nominal_magnification >= 1000 AND nominal_magnification <= 500000 ) ,
-	recording_temperature_maximum DECIMAL ,
-	recording_temperature_minimum DECIMAL ,
-	residual_tilt DECIMAL ,
 	sample_support_id TEXT ,
 	scans_id TEXT ,
 	specimen_holder_model ENUM_em_imaging_specimen_holder_model ,
 	specimen_holder_type TEXT ,
 	specimen_id TEXT ,
-	temperature DECIMAL ,
-	tilt_angle_max DECIMAL ,
-	tilt_angle_min DECIMAL ,
 -- ATTRIBUTE
 	entry_id TEXT NOT NULL ,
 -- ATTRIBUTE
 	id TEXT NOT NULL
+);
+
+--
+-- The energy filter range lower value in electron volts (eV) set by spectrometer. 0
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE energyfilter_lower (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content TEXT ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'electron_volts' ) NOT NULL
+);
+
+--
+-- The energy filter range upper value in electron volts (eV) set by spectrometer. 15
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE energyfilter_upper (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content TEXT ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'electron_volts' ) NOT NULL
 );
 
 --
@@ -4433,10 +6364,8 @@ CREATE TABLE em_imaging_optics (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
 	chr_aberration_corrector TEXT ,
-	energyfilter_lower TEXT ,
 	energyfilter_name TEXT ,
 	energyfilter_slit_width DECIMAL CHECK ( energyfilter_slit_width >= 0.0 AND energyfilter_slit_width <= 1000.0 ) ,
-	energyfilter_upper TEXT ,
 	phase_plate TEXT ,
 	sph_aberration_corrector TEXT ,
 -- ATTRIBUTE
@@ -4650,6 +6579,20 @@ CREATE TABLE em_particle_selection (
 );
 
 --
+-- The value of the concentration (mg per milliliter) of the complex in the sample. 1.35
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE sample_concentration (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'mg_per_ml' ) NOT NULL
+);
+
+--
 -- (quoted from em_sample_preparationType)
 -- Data items in the EM_SAMPLE_PREPARATION category record details of sample conditions prior to and upon loading onto grid support. Example 1 - based on PDB entry 1DYL and laboratory records for the structure corresponding to PDB entry 1DYL <PDBx:em_sample_preparationCategory> <PDBx:em_sample_preparation entry_id="1DYL" id="1"> <PDBx:_2d_crystal_grow_id xsi:nil="true" /> <PDBx:buffer_id>1</PDBx:buffer_id> <PDBx:ph>7.6</PDBx:ph> <PDBx:sample_concentration>5</PDBx:sample_concentration> <PDBx:support_id>1</PDBx:support_id> </PDBx:em_sample_preparation> </PDBx:em_sample_preparationCategory>
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
@@ -4663,7 +6606,6 @@ CREATE TABLE em_sample_preparation (
 	details TEXT ,
 	entity_assembly_id TEXT ,
 	ph DECIMAL ,
-	sample_concentration DECIMAL ,
 	support_id TEXT ,
 -- ATTRIBUTE
 	entry_id TEXT NOT NULL ,
@@ -4938,9 +6880,7 @@ CREATE TABLE em_ultramicrotomy (
 	document_id TEXT ,
 	details TEXT ,
 	em_tomography_specimen_id TEXT ,
-	final_thickness TEXT ,
 	instrument TEXT ,
-	temperature TEXT ,
 -- ATTRIBUTE
 	id TEXT NOT NULL
 );
@@ -5014,6 +6954,34 @@ CREATE TABLE em_virus_shell (
 );
 
 --
+-- The temperature (in degrees Kelvin) of the sample just prior to vitrification. 298
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE chamber_temperature (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'kelvins' ) NOT NULL
+);
+
+--
+-- The vitrification temperature (in degrees Kelvin), e.g., temperature of the plunge instrument cryogen bath. 90
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE temp (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'kelvins' ) NOT NULL
+);
+
+--
 -- (quoted from em_vitrificationType)
 -- Data items in the EM_VITRIFICATION category record details about the method and cryogen used in rapid freezing of the sample on the grid prior to its insertion in the electron microscope Example 1 - based on PDB entry 1DYL and laboratory records for the structure corresponding to PDB entry 1DYL <PDBx:em_vitrificationCategory> <PDBx:em_vitrification id="1"> <PDBx:cryogen_name>ETHANE</PDBx:cryogen_name> <PDBx:details> SAMPLES WERE PREPARED AS THIN LAYERS OF VITREOUS ICE AND MAINTAINED AT NEAR LIQUID NITROGEN TEMPERATURE IN THE ELECTRON MICROSCOPE WITH A GATAN 626-0300 CRYOTRANSFER HOLDER.</PDBx:details> <PDBx:entry_id>1DYL</PDBx:entry_id> <PDBx:humidity>90</PDBx:humidity> <PDBx:instrument xsi:nil="true" /> <PDBx:method>PLUNGE VITRIFICATION</PDBx:method> <PDBx:sample_preparation_id>1</PDBx:sample_preparation_id> <PDBx:temp>95</PDBx:temp> <PDBx:time_resolved_state xsi:nil="true" /> </PDBx:em_vitrification> </PDBx:em_vitrificationCategory>
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
@@ -5026,7 +6994,6 @@ CREATE TYPE ENUM_em_vitrification_instrument AS ENUM ( 'EMS-002 RAPID IMMERSION 
 CREATE TABLE em_vitrification (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
-	chamber_temperature DECIMAL ,
 	citation_id TEXT ,
 	cryogen_name ENUM_em_vitrification_cryogen_name ,
 	details TEXT ,
@@ -5035,7 +7002,6 @@ CREATE TABLE em_vitrification (
 	instrument ENUM_em_vitrification_instrument ,
 	method TEXT ,
 	sample_preparation_id TEXT ,
-	temp DECIMAL ,
 	time_resolved_state TEXT ,
 -- ATTRIBUTE
 	id TEXT NOT NULL ,
@@ -5284,6 +7250,188 @@ CREATE TABLE exptl (
 );
 
 --
+-- The estimated standard deviation of attribute density_meas in category exptl_crystal.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE density_meas_esd (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'megagrams_per_cubic_metre' ) NOT NULL
+);
+
+--
+-- The estimated standard deviation of attribute density_meas_temp in category exptl_crystal.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE density_meas_temp_esd (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'kelvins' ) NOT NULL
+);
+
+--
+-- The measured diffraction limit for this crystal.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE pdbx_crystal_diffrn_lifetime (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'hours' ) NOT NULL
+);
+
+--
+-- The measured diffraction limit for this crystal.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE pdbx_crystal_diffrn_limit (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'angstroms' ) NOT NULL
+);
+
+--
+-- The crystal size along the first measured direction in millimeters.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE pdbx_crystal_direction_1 (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'millimetres' ) NOT NULL
+);
+
+--
+-- The crystal size along the second measured direction in millimeters.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE pdbx_crystal_direction_2 (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'millimetres' ) NOT NULL
+);
+
+--
+-- The crystal size along the third measured direction in millimeters.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE pdbx_crystal_direction_3 (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'millimetres' ) NOT NULL
+);
+
+--
+-- The of the distribution of mis-orientation angles specified in degrees of all the unit cells in the crystal. Lower mosaicity indicates better ordered crystals.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE pdbx_mosaicity (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'degrees' ) NOT NULL
+);
+
+--
+-- The uncertainty in the mosaicity estimate for the crystal.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE pdbx_mosaicity_esd (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'degrees' ) NOT NULL
+);
+
+--
+-- The chi diffractometer setting angle in degrees for a specific crystal face associated with attribute perp_dist in category exptl_crystal_face.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE diffr_chi (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'degrees' ) NOT NULL
+);
+
+--
+-- The kappa diffractometer setting angle in degrees for a specific crystal face associated with attribute perp_dist in category exptl_crystal_face.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE diffr_kappa (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'degrees' ) NOT NULL
+);
+
+--
+-- The phi diffractometer setting angle in degrees for a specific crystal face associated with attribute perp_dist in category exptl_crystal_face.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE diffr_phi (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'degrees' ) NOT NULL
+);
+
+--
+-- The psi diffractometer setting angle in degrees for a specific crystal face associated with attribute perp_dist in category exptl_crystal_face.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE diffr_psi (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'degrees' ) NOT NULL
+);
+
+--
 -- (quoted from exptl_crystal_faceType)
 -- Data items in the EXPTL_CRYSTAL_FACE category record details of the crystal faces. Example 1 - based on laboratory records for Yb(S-C5H4N)2(THF)4 for the 100 face of crystal xstl1. <PDBx:exptl_crystal_faceCategory> <PDBx:exptl_crystal_face crystal_id="xstl1" index_h="1" index_k="0" index_l="0"> <PDBx:diffr_chi>42.56</PDBx:diffr_chi> <PDBx:diffr_kappa>30.23</PDBx:diffr_kappa> <PDBx:diffr_phi>-125.56</PDBx:diffr_phi> <PDBx:diffr_psi>-0.34</PDBx:diffr_psi> <PDBx:perp_dist>0.025</PDBx:perp_dist> </PDBx:exptl_crystal_face> </PDBx:exptl_crystal_faceCategory>
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
@@ -5292,10 +7440,6 @@ CREATE TABLE exptl (
 CREATE TABLE exptl_crystal_face (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
-	diffr_chi DECIMAL ,
-	diffr_kappa DECIMAL ,
-	diffr_phi DECIMAL ,
-	diffr_psi DECIMAL ,
 	perp_dist DECIMAL CHECK ( perp_dist >= 0.0 ) ,
 -- ATTRIBUTE
 	crystal_id TEXT NOT NULL ,
@@ -5325,12 +7469,10 @@ CREATE TABLE exptl_crystal_grow (
 	pdbx_details TEXT ,
 	"pdbx_pH_range" TEXT ,
 	pressure DECIMAL CHECK ( pressure >= 0.0 ) ,
-	pressure_esd DECIMAL ,
 	seeding TEXT ,
 	seeding_ref TEXT ,
 	temp DECIMAL CHECK ( temp >= 0.0 ) ,
 	temp_details TEXT ,
-	temp_esd DECIMAL ,
 	time TEXT ,
 -- ATTRIBUTE
 	crystal_id TEXT NOT NULL
@@ -5377,6 +7519,34 @@ CREATE TABLE geom (
 );
 
 --
+-- Angle in degrees defined by the three sites _geom_angle.atom_site_id_1, _geom_angle.atom_site_id_2 and attribute atom_site_id_3 in category geom_angle.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE value (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'degrees' ) NOT NULL
+);
+
+--
+-- The standard uncertainty (estimated standard deviation) of attribute value in category geom_angle.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE value_esd (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'degrees' ) NOT NULL
+);
+
+--
 -- (quoted from geom_angleType)
 -- Data items in the GEOM_ANGLE category record details about the bond angles as calculated from the contents of the ATOM, CELL and SYMMETRY data. Example 1 - based on data set TOZ of Willis, Beckwith & Tozer [Acta Cryst. (1991), C47, 2276-2277]. <PDBx:geom_angleCategory> <PDBx:geom_angle atom_site_id_1="C2" atom_site_id_2="O1" atom_site_id_3="C5" site_symmetry_1="1_555" site_symmetry_2="1_555" site_symmetry_3="1_555"> <PDBx:publ_flag>yes</PDBx:publ_flag> <PDBx:value>111.6</PDBx:value> <PDBx:value_esd>0.2</PDBx:value_esd> </PDBx:geom_angle> <PDBx:geom_angle atom_site_id_1="O1" atom_site_id_2="C2" atom_site_id_3="C3" site_symmetry_1="1_555" site_symmetry_2="1_555" site_symmetry_3="1_555"> <PDBx:publ_flag>yes</PDBx:publ_flag> <PDBx:value>110.9</PDBx:value> <PDBx:value_esd>0.2</PDBx:value_esd> </PDBx:geom_angle> <PDBx:geom_angle atom_site_id_1="O1" atom_site_id_2="C2" atom_site_id_3="O21" site_symmetry_1="1_555" site_symmetry_2="1_555" site_symmetry_3="1_555"> <PDBx:publ_flag>yes</PDBx:publ_flag> <PDBx:value>122.2</PDBx:value> <PDBx:value_esd>0.3</PDBx:value_esd> </PDBx:geom_angle> <PDBx:geom_angle atom_site_id_1="C3" atom_site_id_2="C2" atom_site_id_3="O21" site_symmetry_1="1_555" site_symmetry_2="1_555" site_symmetry_3="1_555"> <PDBx:publ_flag>yes</PDBx:publ_flag> <PDBx:value>127.0</PDBx:value> <PDBx:value_esd>0.3</PDBx:value_esd> </PDBx:geom_angle> <PDBx:geom_angle atom_site_id_1="C2" atom_site_id_2="C3" atom_site_id_3="N4" site_symmetry_1="1_555" site_symmetry_2="1_555" site_symmetry_3="1_555"> <PDBx:publ_flag>yes</PDBx:publ_flag> <PDBx:value>101.3</PDBx:value> <PDBx:value_esd>0.2</PDBx:value_esd> </PDBx:geom_angle> <PDBx:geom_angle atom_site_id_1="C2" atom_site_id_2="C3" atom_site_id_3="C31" site_symmetry_1="1_555" site_symmetry_2="1_555" site_symmetry_3="1_555"> <PDBx:publ_flag>yes</PDBx:publ_flag> <PDBx:value>111.3</PDBx:value> <PDBx:value_esd>0.2</PDBx:value_esd> </PDBx:geom_angle> <PDBx:geom_angle atom_site_id_1="C2" atom_site_id_2="C3" atom_site_id_3="H3" site_symmetry_1="1_555" site_symmetry_2="1_555" site_symmetry_3="1_555"> <PDBx:publ_flag>no</PDBx:publ_flag> <PDBx:value>107</PDBx:value> <PDBx:value_esd>1</PDBx:value_esd> </PDBx:geom_angle> <PDBx:geom_angle atom_site_id_1="N4" atom_site_id_2="C3" atom_site_id_3="C31" site_symmetry_1="1_555" site_symmetry_2="1_555" site_symmetry_3="1_555"> <PDBx:publ_flag>yes</PDBx:publ_flag> <PDBx:value>116.7</PDBx:value> <PDBx:value_esd>0.2</PDBx:value_esd> </PDBx:geom_angle> </PDBx:geom_angleCategory>
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
@@ -5419,8 +7589,6 @@ CREATE TABLE geom_angle (
 	"pdbx_atom_site_PDB_ins_code_2" TEXT ,
 	"pdbx_atom_site_PDB_ins_code_3" TEXT ,
 	publ_flag ENUM_geom_angle_publ_flag ,
-	value DECIMAL ,
-	value_esd DECIMAL ,
 -- ATTRIBUTE
 	atom_site_id_1 TEXT NOT NULL ,
 -- ATTRIBUTE
@@ -5465,7 +7633,6 @@ CREATE TABLE geom_bond (
 	atom_site_label_seq_id_1 INTEGER ,
 	atom_site_label_seq_id_2 INTEGER ,
 	dist DECIMAL CHECK ( dist >= 0.0 ) ,
-	dist_esd DECIMAL ,
 	"pdbx_PDB_model_num" INTEGER ,
 	"pdbx_atom_site_PDB_ins_code_1" TEXT ,
 	"pdbx_atom_site_PDB_ins_code_2" TEXT ,
@@ -5511,7 +7678,6 @@ CREATE TABLE geom_contact (
 	atom_site_label_seq_id_1 INTEGER ,
 	atom_site_label_seq_id_2 INTEGER ,
 	dist DECIMAL CHECK ( dist >= 0.0 ) ,
-	dist_esd DECIMAL ,
 	"pdbx_PDB_model_num" INTEGER ,
 	"pdbx_atom_site_PDB_ins_code_1" TEXT ,
 	"pdbx_atom_site_PDB_ins_code_2" TEXT ,
@@ -5527,6 +7693,62 @@ CREATE TABLE geom_contact (
 );
 
 --
+-- The standard uncertainty (estimated standard deviation) of attribute angle_DHA in category geom_hbond.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "angle_DHA_esd" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'angstroms' ) NOT NULL
+);
+
+--
+-- The standard uncertainty (estimated standard deviation) in angstroms of attribute dist_DA in category geom_hbond.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "dist_DA_esd" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'angstroms' ) NOT NULL
+);
+
+--
+-- The standard uncertainty (estimated standard deviation) in angstroms of attribute dist_DH in category geom_hbond.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "dist_DH_esd" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'angstroms' ) NOT NULL
+);
+
+--
+-- The standard uncertainty (estimated standard deviation) in angstroms of attribute dist_HA in category geom_hbond.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "dist_HA_esd" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'angstroms' ) NOT NULL
+);
+
+--
 -- (quoted from geom_hbondType)
 -- Data items in the GEOM_HBOND category record details about hydrogen bonds as calculated from the contents of the ATOM, CELL and SYMMETRY data. Example 1 - based on C~14~H~13~ClN~2~O.H~2~O, reported by Palmer, Puddle & Lisgarten [Acta Cryst. (1993), C49, 1777-1779]. <PDBx:geom_hbondCategory> <PDBx:geom_hbond atom_site_id_A="OW" atom_site_id_D="N6" atom_site_id_H="HN6"> <PDBx:angle_DHA>169.6</PDBx:angle_DHA> <PDBx:dist_DA>2.801</PDBx:dist_DA> <PDBx:dist_DH>0.888</PDBx:dist_DH> <PDBx:dist_HA>1.921</PDBx:dist_HA> <PDBx:publ_flag>yes</PDBx:publ_flag> </PDBx:geom_hbond> <PDBx:geom_hbond atom_site_id_A="O7" atom_site_id_D="OW" atom_site_id_H="HO2"> <PDBx:angle_DHA>153.5</PDBx:angle_DHA> <PDBx:dist_DA>2.793</PDBx:dist_DA> <PDBx:dist_DH>0.917</PDBx:dist_DH> <PDBx:dist_HA>1.923</PDBx:dist_HA> <PDBx:publ_flag>yes</PDBx:publ_flag> </PDBx:geom_hbond> <PDBx:geom_hbond atom_site_id_A="N10" atom_site_id_D="OW" atom_site_id_H="HO1"> <PDBx:angle_DHA>179.7</PDBx:angle_DHA> <PDBx:dist_DA>2.842</PDBx:dist_DA> <PDBx:dist_DH>0.894</PDBx:dist_DH> <PDBx:dist_HA>1.886</PDBx:dist_HA> <PDBx:publ_flag>yes</PDBx:publ_flag> </PDBx:geom_hbond> </PDBx:geom_hbondCategory>
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
@@ -5538,7 +7760,6 @@ CREATE TABLE geom_hbond (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
 	"angle_DHA" DECIMAL CHECK ( "angle_DHA" >= 0.0 ) ,
-	"angle_DHA_esd" DECIMAL ,
 	"atom_site_auth_asym_id_A" TEXT ,
 	"atom_site_auth_asym_id_D" TEXT ,
 	"atom_site_auth_asym_id_H" TEXT ,
@@ -5567,11 +7788,8 @@ CREATE TABLE geom_hbond (
 	"atom_site_label_seq_id_D" INTEGER ,
 	"atom_site_label_seq_id_H" INTEGER ,
 	"dist_DA" DECIMAL CHECK ( "dist_DA" >= 0.0 ) ,
-	"dist_DA_esd" DECIMAL ,
 	"dist_DH" DECIMAL CHECK ( "dist_DH" >= 0.0 ) ,
-	"dist_DH_esd" DECIMAL ,
 	"dist_HA" DECIMAL CHECK ( "dist_HA" >= 0.0 ) ,
-	"dist_HA_esd" DECIMAL ,
 	publ_flag ENUM_geom_hbond_publ_flag ,
 -- ATTRIBUTE
 	"atom_site_id_A" TEXT NOT NULL ,
@@ -5640,8 +7858,6 @@ CREATE TABLE geom_torsion (
 	"pdbx_atom_site_PDB_ins_code_3" TEXT ,
 	"pdbx_atom_site_PDB_ins_code_4" TEXT ,
 	publ_flag ENUM_geom_torsion_publ_flag ,
-	value DECIMAL ,
-	value_esd DECIMAL ,
 -- ATTRIBUTE
 	atom_site_id_1 TEXT NOT NULL ,
 -- ATTRIBUTE
@@ -5932,6 +8148,90 @@ CREATE TABLE pdbx_atlas (
 );
 
 --
+-- The [1][1] element of the TLS contribution to the atomic displacement matrix U. The unique elements of the real symmetric matrix are entered by row.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "U_tls11" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'angstroms_squared' ) NOT NULL
+);
+
+--
+-- The [1][2] element of the TLS contribution to the atomic displacement matrix U. The unique elements of the real symmetric matrix are entered by row.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "U_tls12" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'angstroms_squared' ) NOT NULL
+);
+
+--
+-- The [1][3] element of the TLS contribution to the atomic displacement matrix U. The unique elements of the real symmetric matrix are entered by row.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "U_tls13" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'angstroms_squared' ) NOT NULL
+);
+
+--
+-- The [2][2] element of the TLS contribution to the atomic displacement matrix U. The unique elements of the real symmetric matrix are entered by row.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "U_tls22" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'angstroms_squared' ) NOT NULL
+);
+
+--
+-- The [2][3] element of the TLS contribution to the atomic displacement matrix U. The unique elements of the real symmetric matrix are entered by row.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "U_tls23" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'angstroms_squared' ) NOT NULL
+);
+
+--
+-- The [3][3] element of the TLS contribution to the atomic displacement matrix U. The unique elements of the real symmetric matrix are entered by row.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "U_tls33" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'angstroms_squared' ) NOT NULL
+);
+
+--
 -- (quoted from pdbx_atom_site_aniso_tlsType)
 -- Data items in the PDBX_ATOM_SITE_ANISO_TLS category record details about the TLS contribution to anisotropic displacement parameters. Example 1 <PDBx:pdbx_atom_site_aniso_tlsCategory> <PDBx:pdbx_atom_site_aniso_tls id="1" tls_group_id="1"> <PDBx:U_tls11>2541</PDBx:U_tls11> <PDBx:U_tls12>676</PDBx:U_tls12> <PDBx:U_tls13>-827</PDBx:U_tls13> <PDBx:U_tls22>2835</PDBx:U_tls22> <PDBx:U_tls23>341</PDBx:U_tls23> <PDBx:U_tls33>3175</PDBx:U_tls33> <PDBx:auth_asym_id>A</PDBx:auth_asym_id> <PDBx:auth_atom_id>CB</PDBx:auth_atom_id> <PDBx:auth_comp_id>SER</PDBx:auth_comp_id> <PDBx:auth_seq_id>8</PDBx:auth_seq_id> <PDBx:type_symbol>C</PDBx:type_symbol> </PDBx:pdbx_atom_site_aniso_tls> <PDBx:pdbx_atom_site_aniso_tls id="2" tls_group_id="1"> <PDBx:U_tls11>3708</PDBx:U_tls11> <PDBx:U_tls12>633</PDBx:U_tls12> <PDBx:U_tls13>-724</PDBx:U_tls13> <PDBx:U_tls22>3876</PDBx:U_tls22> <PDBx:U_tls23>342</PDBx:U_tls23> <PDBx:U_tls33>4181</PDBx:U_tls33> <PDBx:auth_asym_id>A</PDBx:auth_asym_id> <PDBx:auth_atom_id>OG</PDBx:auth_atom_id> <PDBx:auth_comp_id>SER</PDBx:auth_comp_id> <PDBx:auth_seq_id>8</PDBx:auth_seq_id> <PDBx:type_symbol>O</PDBx:type_symbol> </PDBx:pdbx_atom_site_aniso_tls> <PDBx:pdbx_atom_site_aniso_tls id="3" tls_group_id="1"> <PDBx:U_tls11>7054</PDBx:U_tls11> <PDBx:U_tls12>619</PDBx:U_tls12> <PDBx:U_tls13>-966</PDBx:U_tls13> <PDBx:U_tls22>7457</PDBx:U_tls22> <PDBx:U_tls23>344</PDBx:U_tls23> <PDBx:U_tls33>7553</PDBx:U_tls33> <PDBx:auth_asym_id>A</PDBx:auth_asym_id> <PDBx:auth_atom_id>C</PDBx:auth_atom_id> <PDBx:auth_comp_id>SER</PDBx:auth_comp_id> <PDBx:auth_seq_id>8</PDBx:auth_seq_id> <PDBx:type_symbol>C</PDBx:type_symbol> </PDBx:pdbx_atom_site_aniso_tls> <PDBx:pdbx_atom_site_aniso_tls id="4" tls_group_id="1"> <PDBx:U_tls11>6837</PDBx:U_tls11> <PDBx:U_tls12>567</PDBx:U_tls12> <PDBx:U_tls13>-974</PDBx:U_tls13> <PDBx:U_tls22>7210</PDBx:U_tls22> <PDBx:U_tls23>341</PDBx:U_tls23> <PDBx:U_tls33>7184</PDBx:U_tls33> <PDBx:auth_asym_id>A</PDBx:auth_asym_id> <PDBx:auth_atom_id>O</PDBx:auth_atom_id> <PDBx:auth_comp_id>SER</PDBx:auth_comp_id> <PDBx:auth_seq_id>8</PDBx:auth_seq_id> <PDBx:type_symbol>O</PDBx:type_symbol> </PDBx:pdbx_atom_site_aniso_tls> <PDBx:pdbx_atom_site_aniso_tls id="5" tls_group_id="1"> <PDBx:U_tls11>5792</PDBx:U_tls11> <PDBx:U_tls12>538</PDBx:U_tls12> <PDBx:U_tls13>-778</PDBx:U_tls13> <PDBx:U_tls22>6180</PDBx:U_tls22> <PDBx:U_tls23>290</PDBx:U_tls23> <PDBx:U_tls33>6271</PDBx:U_tls33> <PDBx:auth_asym_id>A</PDBx:auth_asym_id> <PDBx:auth_atom_id>N</PDBx:auth_atom_id> <PDBx:auth_comp_id>SER</PDBx:auth_comp_id> <PDBx:auth_seq_id>8</PDBx:auth_seq_id> <PDBx:type_symbol>N</PDBx:type_symbol> </PDBx:pdbx_atom_site_aniso_tls> <PDBx:pdbx_atom_site_aniso_tls id="6" tls_group_id="1"> <PDBx:U_tls11>8440</PDBx:U_tls11> <PDBx:U_tls12>616</PDBx:U_tls12> <PDBx:U_tls13>-861</PDBx:U_tls13> <PDBx:U_tls22>8771</PDBx:U_tls22> <PDBx:U_tls23>331</PDBx:U_tls23> <PDBx:U_tls33>8935</PDBx:U_tls33> <PDBx:auth_asym_id>A</PDBx:auth_asym_id> <PDBx:auth_atom_id>CA</PDBx:auth_atom_id> <PDBx:auth_comp_id>SER</PDBx:auth_comp_id> <PDBx:auth_seq_id>8</PDBx:auth_seq_id> <PDBx:type_symbol>C</PDBx:type_symbol> </PDBx:pdbx_atom_site_aniso_tls> </PDBx:pdbx_atom_site_aniso_tlsCategory>
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
@@ -5941,12 +8241,6 @@ CREATE TABLE pdbx_atom_site_aniso_tls (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
 	"PDB_ins_code" TEXT ,
-	"U_tls11" DECIMAL ,
-	"U_tls12" DECIMAL ,
-	"U_tls13" DECIMAL ,
-	"U_tls22" DECIMAL ,
-	"U_tls23" DECIMAL ,
-	"U_tls33" DECIMAL ,
 	auth_asym_id TEXT ,
 	auth_atom_id TEXT ,
 	auth_comp_id TEXT ,
@@ -6116,6 +8410,34 @@ CREATE TABLE pdbx_audit_support (
 );
 
 --
+-- The lower bond distance limit.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE lower_limit (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'angstroms' ) NOT NULL
+);
+
+--
+-- The upper bond distance limit.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE upper_limit (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'angstroms' ) NOT NULL
+);
+
+--
 -- (quoted from pdbx_bond_distance_limitsType)
 -- This category provides a table of upper and lower distance limits used as criteria in determining covalent bonds. The table is organized by atom type pairs. Example 1 - Abbreviated bond distance limit table <PDBx:pdbx_bond_distance_limitsCategory> <PDBx:pdbx_bond_distance_limits atom_type_1="N" atom_type_2="Ag"> <PDBx:lower_limit>1.85</PDBx:lower_limit> <PDBx:upper_limit>2.70</PDBx:upper_limit> </PDBx:pdbx_bond_distance_limits> <PDBx:pdbx_bond_distance_limits atom_type_1="O" atom_type_2="Ag"> <PDBx:lower_limit>1.85</PDBx:lower_limit> <PDBx:upper_limit>2.70</PDBx:upper_limit> </PDBx:pdbx_bond_distance_limits> <PDBx:pdbx_bond_distance_limits atom_type_1="S" atom_type_2="Ag"> <PDBx:lower_limit>2.00</PDBx:lower_limit> <PDBx:upper_limit>3.00</PDBx:upper_limit> </PDBx:pdbx_bond_distance_limits> <PDBx:pdbx_bond_distance_limits atom_type_1="Al" atom_type_2="H"> <PDBx:lower_limit>1.35</PDBx:lower_limit> <PDBx:upper_limit>1.65</PDBx:upper_limit> </PDBx:pdbx_bond_distance_limits> <PDBx:pdbx_bond_distance_limits atom_type_1="As" atom_type_2="H"> <PDBx:lower_limit>1.20</PDBx:lower_limit> <PDBx:upper_limit>1.60</PDBx:upper_limit> </PDBx:pdbx_bond_distance_limits> <PDBx:pdbx_bond_distance_limits atom_type_1="N" atom_type_2="Au"> <PDBx:lower_limit>1.80</PDBx:lower_limit> <PDBx:upper_limit>2.80</PDBx:upper_limit> </PDBx:pdbx_bond_distance_limits> <PDBx:pdbx_bond_distance_limits atom_type_1="O" atom_type_2="Au"> <PDBx:lower_limit>1.80</PDBx:lower_limit> <PDBx:upper_limit>2.80</PDBx:upper_limit> </PDBx:pdbx_bond_distance_limits> <PDBx:pdbx_bond_distance_limits atom_type_1="S" atom_type_2="Au"> <PDBx:lower_limit>1.80</PDBx:lower_limit> <PDBx:upper_limit>3.00</PDBx:upper_limit> </PDBx:pdbx_bond_distance_limits> <PDBx:pdbx_bond_distance_limits atom_type_1="B" atom_type_2="B"> <PDBx:lower_limit>1.45</PDBx:lower_limit> <PDBx:upper_limit>1.95</PDBx:upper_limit> </PDBx:pdbx_bond_distance_limits> <PDBx:pdbx_bond_distance_limits atom_type_1="C" atom_type_2="B"> <PDBx:lower_limit>1.20</PDBx:lower_limit> <PDBx:upper_limit>1.85</PDBx:upper_limit> </PDBx:pdbx_bond_distance_limits> <PDBx:pdbx_bond_distance_limits atom_type_1="F" atom_type_2="B"> <PDBx:lower_limit>1.20</PDBx:lower_limit> <PDBx:upper_limit>1.75</PDBx:upper_limit> </PDBx:pdbx_bond_distance_limits> </PDBx:pdbx_bond_distance_limitsCategory>
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
@@ -6124,8 +8446,6 @@ CREATE TABLE pdbx_audit_support (
 CREATE TABLE pdbx_bond_distance_limits (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
-	lower_limit DECIMAL ,
-	upper_limit DECIMAL ,
 -- ATTRIBUTE
 	atom_type_1 TEXT NOT NULL ,
 -- ATTRIBUTE
@@ -6368,9 +8688,6 @@ CREATE TABLE pdbx_chem_comp_model_atom (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
 	charge INTEGER CHECK ( charge >= -8 AND charge <= 8 ) ,
-	"model_Cartn_x" DECIMAL ,
-	"model_Cartn_y" DECIMAL ,
-	"model_Cartn_z" DECIMAL ,
 	ordinal_id INTEGER ,
 	type_symbol TEXT ,
 -- ATTRIBUTE
@@ -6786,6 +9103,90 @@ CREATE TABLE pdbx_crystal_alignment (
 );
 
 --
+-- Unit cell angle alpha. 90.0
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE alpha (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'degrees' ) NOT NULL
+);
+
+--
+-- Tolerance in unit cell angle alpha. 0.04
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE alpha_tolerance (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'degrees' ) NOT NULL
+);
+
+--
+-- Unit cell angle beta. 90.0
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE beta (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'degrees' ) NOT NULL
+);
+
+--
+-- Tolerance in unit cell angle beta. 0.04
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE beta_tolerance (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'degrees' ) NOT NULL
+);
+
+--
+-- Unit cell angle gamma. 90.0
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE gamma (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'degrees' ) NOT NULL
+);
+
+--
+-- Tolerance in unit cell angle gamma. 0.04
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE gamma_tolerance (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'degrees' ) NOT NULL
+);
+
+--
 -- (quoted from pdbx_data_processing_cellType)
 -- Crystallographic cell specifications used in data processing.
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
@@ -6796,16 +9197,10 @@ CREATE TABLE pdbx_data_processing_cell (
 	document_id TEXT ,
 	a DECIMAL CHECK ( a >= 0.0 ) ,
 	a_tolerance DECIMAL CHECK ( a_tolerance >= 0.0 ) ,
-	alpha DECIMAL ,
-	alpha_tolerance DECIMAL ,
 	b DECIMAL CHECK ( b >= 0.0 ) ,
 	b_tolerance DECIMAL CHECK ( b_tolerance >= 0.0 ) ,
-	beta DECIMAL ,
-	beta_tolerance DECIMAL ,
 	c DECIMAL CHECK ( c >= 0.0 ) ,
 	c_tolerance DECIMAL CHECK ( c_tolerance >= 0.0 ) ,
-	gamma DECIMAL ,
-	gamma_tolerance DECIMAL ,
 	mosaicity DECIMAL CHECK ( mosaicity >= 0.0 ) ,
 	resolution_range TEXT ,
 	space_group TEXT ,
@@ -7740,6 +10135,34 @@ CREATE TABLE pdbx_diffrn_reflns_shell (
 );
 
 --
+-- Distance to closest neighboring ligand or solvent atom.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE neighbor_ligand_distance (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'angstroms' ) NOT NULL
+);
+
+--
+-- Distance to closest neighboring macromolecule atom.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE neighbor_macromolecule_distance (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'angstroms' ) NOT NULL
+);
+
+--
 -- (quoted from pdbx_distant_solvent_atomsType)
 -- Data items in the PDBX_DISTANT_SOLVENT_ATOMS category list the solvent atoms remote from any macromolecule. Example 1 <PDBx:pdbx_distant_solvent_atomsCategory> <PDBx:pdbx_distant_solvent_atoms id="1"> <PDBx:PDB_ins_code xsi:nil="true" /> <PDBx:PDB_model_num>1</PDBx:PDB_model_num> <PDBx:auth_asym_id>W</PDBx:auth_asym_id> <PDBx:auth_atom_id>O</PDBx:auth_atom_id> <PDBx:auth_comp_id>HOH</PDBx:auth_comp_id> <PDBx:auth_seq_id>412</PDBx:auth_seq_id> <PDBx:label_alt_id xsi:nil="true" /> <PDBx:neighbor_ligand_distance xsi:nil="true" /> <PDBx:neighbor_macromolecule_distance>7.3</PDBx:neighbor_macromolecule_distance> </PDBx:pdbx_distant_solvent_atoms> <PDBx:pdbx_distant_solvent_atoms id="2"> <PDBx:PDB_ins_code xsi:nil="true" /> <PDBx:PDB_model_num>1</PDBx:PDB_model_num> <PDBx:auth_asym_id>W</PDBx:auth_asym_id> <PDBx:auth_atom_id>O</PDBx:auth_atom_id> <PDBx:auth_comp_id>HOH</PDBx:auth_comp_id> <PDBx:auth_seq_id>413</PDBx:auth_seq_id> <PDBx:label_alt_id xsi:nil="true" /> <PDBx:neighbor_ligand_distance xsi:nil="true" /> <PDBx:neighbor_macromolecule_distance>8.4</PDBx:neighbor_macromolecule_distance> </PDBx:pdbx_distant_solvent_atoms> <PDBx:pdbx_distant_solvent_atoms id="3"> <PDBx:PDB_ins_code xsi:nil="true" /> <PDBx:PDB_model_num>1</PDBx:PDB_model_num> <PDBx:auth_asym_id>W</PDBx:auth_asym_id> <PDBx:auth_atom_id>O</PDBx:auth_atom_id> <PDBx:auth_comp_id>HOH</PDBx:auth_comp_id> <PDBx:auth_seq_id>414</PDBx:auth_seq_id> <PDBx:label_alt_id xsi:nil="true" /> <PDBx:neighbor_ligand_distance xsi:nil="true" /> <PDBx:neighbor_macromolecule_distance>7.2</PDBx:neighbor_macromolecule_distance> </PDBx:pdbx_distant_solvent_atoms> <PDBx:pdbx_distant_solvent_atoms id="4"> <PDBx:PDB_ins_code xsi:nil="true" /> <PDBx:PDB_model_num>1</PDBx:PDB_model_num> <PDBx:auth_asym_id>W</PDBx:auth_asym_id> <PDBx:auth_atom_id>O</PDBx:auth_atom_id> <PDBx:auth_comp_id>HOH</PDBx:auth_comp_id> <PDBx:auth_seq_id>415</PDBx:auth_seq_id> <PDBx:label_alt_id xsi:nil="true" /> <PDBx:neighbor_ligand_distance xsi:nil="true" /> <PDBx:neighbor_macromolecule_distance>8.3</PDBx:neighbor_macromolecule_distance> </PDBx:pdbx_distant_solvent_atoms> </PDBx:pdbx_distant_solvent_atomsCategory>
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
@@ -7759,8 +10182,6 @@ CREATE TABLE pdbx_distant_solvent_atoms (
 	label_atom_id TEXT ,
 	label_comp_id TEXT ,
 	label_seq_id INTEGER ,
-	neighbor_ligand_distance DECIMAL ,
-	neighbor_macromolecule_distance DECIMAL ,
 -- ATTRIBUTE
 	id INTEGER NOT NULL
 );
@@ -8197,6 +10618,90 @@ CREATE TABLE pdbx_entity_src_gen_character (
 );
 
 --
+-- The temperature in degrees celsius at which this column was run.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE column_temperature (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'celsius' ) NOT NULL
+);
+
+--
+-- The volume of the column used in this step.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE column_volume (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'milliliters' ) NOT NULL
+);
+
+--
+-- The rate at which the equilibration buffer flowed through the column.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE flow_rate (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'ml_per_min' ) NOT NULL
+);
+
+--
+-- The volume of protein solution run on the column.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE sample_volume (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'milliliters' ) NOT NULL
+);
+
+--
+-- The total volume of all the fractions pooled to give the purified protein solution.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE volume_pooled_fractions (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'milliliters' ) NOT NULL
+);
+
+--
+-- The yield in milligrams of protein recovered in the pooled fractions.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE yield_pooled_fractions (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'milligrams' ) NOT NULL
+);
+
+--
 -- (quoted from pdbx_entity_src_gen_chromType)
 -- This category contains details for the chromatographic steps used in the purification of the protein.
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
@@ -8205,25 +10710,18 @@ CREATE TABLE pdbx_entity_src_gen_character (
 CREATE TABLE pdbx_entity_src_gen_chrom (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
-	column_temperature DECIMAL ,
 	column_type TEXT ,
-	column_volume DECIMAL ,
 	date TEXT ,
 	elution_buffer_id TEXT ,
 	elution_protocol TEXT ,
 	end_construct_id TEXT ,
 	equilibration_buffer_id TEXT ,
-	flow_rate DECIMAL ,
 	next_step_id INTEGER ,
 	post_treatment TEXT ,
 	robot_id TEXT ,
 	sample_conc_method TEXT ,
-	sample_concentration DECIMAL ,
 	sample_prep_details TEXT ,
-	sample_volume DECIMAL ,
-	volume_pooled_fractions DECIMAL ,
 	yield_method TEXT ,
-	yield_pooled_fractions DECIMAL ,
 -- ATTRIBUTE
 	entity_id TEXT NOT NULL ,
 -- ATTRIBUTE
@@ -8244,8 +10742,6 @@ CREATE TABLE pdbx_entity_src_gen_clone_ligation (
 	cleavage_enzymes TEXT ,
 	details TEXT ,
 	ligation_enzymes TEXT ,
-	temperature DECIMAL ,
-	time INTEGER ,
 -- ATTRIBUTE
 	entity_id TEXT NOT NULL ,
 -- ATTRIBUTE
@@ -8307,6 +10803,104 @@ CREATE TABLE pdbx_entity_src_gen_depositor_info (
 );
 
 --
+-- The temperature in degrees celsius at which the expression host was allowed to grow prior to induction/transformation/transfection.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE culture_temperature (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'celsius' ) NOT NULL
+);
+
+--
+-- The time in hours for which the expression host was allowed to grow prior to induction/transformation/transfection.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE culture_time (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'hours' ) NOT NULL
+);
+
+--
+-- The volume of media in milliliters in which the expression host was grown.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE culture_volume (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'milliliters' ) NOT NULL
+);
+
+--
+-- Concentration of the inducing agent.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE inducer_concentration (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'mg_per_ml' ) NOT NULL
+);
+
+--
+-- The temperature in celsius at which the induced/transformed/transfected cells were grown.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE induction_temperature (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'celsius' ) NOT NULL
+);
+
+--
+-- The time in hours after induction/transformation/transfection at which the optical density of the culture was measured.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE induction_timepoint (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'hours' ) NOT NULL
+);
+
+--
+-- The multiplicity of infection for genes introduced by transfection, eg. for baculovirus-based expression.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE multiplicity_of_infection (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'arbitrary' ) NOT NULL
+);
+
+--
 -- (quoted from pdbx_entity_src_gen_express_timepointType)
 -- This category contains details for OD time series used to monitor a given EXPRESSION step used in the overall protein production process.
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
@@ -8328,6 +10922,34 @@ CREATE TABLE pdbx_entity_src_gen_express_timepoint (
 );
 
 --
+-- The volume of the fraction containing the protein.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE protein_volume (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'milliliters' ) NOT NULL
+);
+
+--
+-- The yield in milligrams of protein from the fractionation.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE protein_yield (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'milligrams' ) NOT NULL
+);
+
+--
 -- (quoted from pdbx_entity_src_gen_fractType)
 -- This category contains details for the fraction steps used in the overall protein production process. Examples of fractionation steps are centrifugation and magnetic bead pull-down purification.
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
@@ -8346,17 +10968,28 @@ CREATE TABLE pdbx_entity_src_gen_fract (
 	method ENUM_pdbx_entity_src_gen_fract_method ,
 	next_step_id INTEGER ,
 	protein_location ENUM_pdbx_entity_src_gen_fract_protein_location ,
-	protein_volume DECIMAL ,
-	protein_yield DECIMAL ,
 	protein_yield_method TEXT ,
 	robot_id TEXT ,
-	temperature DECIMAL ,
 -- ATTRIBUTE
 	entity_id TEXT NOT NULL ,
 -- ATTRIBUTE
 	entry_id TEXT NOT NULL ,
 -- ATTRIBUTE
 	step_id INTEGER NOT NULL
+);
+
+--
+-- The volume in milliliters of buffer in which the lysis was performed.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE buffer_volume (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'milliliters' ) NOT NULL
 );
 
 --
@@ -8371,15 +11004,12 @@ CREATE TABLE pdbx_entity_src_gen_lysis (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
 	buffer_id TEXT ,
-	buffer_volume DECIMAL ,
 	date TEXT ,
 	details TEXT ,
 	end_construct_id TEXT ,
 	method ENUM_pdbx_entity_src_gen_lysis_method ,
 	next_step_id INTEGER ,
 	robot_id TEXT ,
-	temperature DECIMAL ,
-	time DECIMAL ,
 -- ATTRIBUTE
 	entity_id TEXT NOT NULL ,
 -- ATTRIBUTE
@@ -8461,6 +11091,34 @@ CREATE TABLE pdbx_entity_src_gen_prod_pcr (
 );
 
 --
+-- The temperature in degrees celsius at which the cleavage was performed.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE cleavage_temperature (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'celsius' ) NOT NULL
+);
+
+--
+-- The time in minutes for the cleavage reaction
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE cleavage_time (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'minutes' ) NOT NULL
+);
+
+--
 -- (quoted from pdbx_entity_src_gen_proteolysisType)
 -- This category contains details for the protein purification tag removal steps used in the overall protein production process
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
@@ -8470,8 +11128,6 @@ CREATE TABLE pdbx_entity_src_gen_proteolysis (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
 	cleavage_buffer_id TEXT ,
-	cleavage_temperature DECIMAL ,
-	cleavage_time DECIMAL ,
 	date TEXT ,
 	details TEXT ,
 	end_construct_id TEXT ,
@@ -8488,6 +11144,34 @@ CREATE TABLE pdbx_entity_src_gen_proteolysis (
 );
 
 --
+-- The final concentration of the protein.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE protein_concentration (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'mg_per_ml' ) NOT NULL
+);
+
+--
+-- The temperature in degrees celsius at which the protein was stored.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE storage_temperature (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'celsius' ) NOT NULL
+);
+
+--
 -- (quoted from pdbx_entity_src_gen_pureType)
 -- This category contains details for the final purified protein product. Note that this category does not contain the amino acid sequence of the protein. The sequence will be found in the ENTITY_POLY_SEQ entry with matching entity_id. Only one PDBX_ENTITY_SRC_GEN_PURE category is allowed per entity, hence there is no step_id for this category.
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
@@ -8501,12 +11185,9 @@ CREATE TABLE pdbx_entity_src_gen_pure (
 	conc_device_id TEXT ,
 	date TEXT ,
 	product_id TEXT ,
-	protein_concentration DECIMAL ,
 	protein_oligomeric_state INTEGER ,
 	protein_purity DECIMAL ,
-	protein_yield DECIMAL ,
 	storage_buffer_id TEXT ,
-	storage_temperature DECIMAL ,
 	summary TEXT ,
 -- ATTRIBUTE
 	entity_id TEXT NOT NULL ,
@@ -8533,8 +11214,6 @@ CREATE TABLE pdbx_entity_src_gen_refold (
 	refold_buffer_id TEXT ,
 	robot_id TEXT ,
 	storage_buffer_id TEXT ,
-	temperature DECIMAL ,
-	time DECIMAL ,
 -- ATTRIBUTE
 	entity_id TEXT NOT NULL ,
 -- ATTRIBUTE
@@ -8816,6 +11495,34 @@ CREATE TABLE pdbx_feature_sequence_range (
 );
 
 --
+-- Angular rotation (degrees) in N subunits
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE rise_per_n_subunits (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'angstroms' ) NOT NULL
+);
+
+--
+-- Angular rotation (degrees) in N subunits
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE rotation_per_n_subunits (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'degrees' ) NOT NULL
+);
+
+--
 -- (quoted from pdbx_helical_symmetryType)
 -- Data items in the PDBX_HELICAL_SYMMETRY category record details about the helical symmetry group associated with this entry. Example 1 - <PDBx:pdbx_helical_symmetryCategory> <PDBx:pdbx_helical_symmetry entry_id="1ABC"> <PDBx:circular_symmetry>1</PDBx:circular_symmetry> <PDBx:dyad_axis>no</PDBx:dyad_axis> <PDBx:n_subunits_divisor>1</PDBx:n_subunits_divisor> <PDBx:number_of_operations>35</PDBx:number_of_operations> <PDBx:rise_per_n_subunits>6.10</PDBx:rise_per_n_subunits> <PDBx:rotation_per_n_subunits>131.84</PDBx:rotation_per_n_subunits> </PDBx:pdbx_helical_symmetry> </PDBx:pdbx_helical_symmetryCategory>
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
@@ -8830,8 +11537,6 @@ CREATE TABLE pdbx_helical_symmetry (
 	dyad_axis ENUM_pdbx_helical_symmetry_dyad_axis ,
 	n_subunits_divisor INTEGER CHECK ( n_subunits_divisor >= 1 ) ,
 	number_of_operations INTEGER CHECK ( number_of_operations >= 1 ) ,
-	rise_per_n_subunits DECIMAL ,
-	rotation_per_n_subunits DECIMAL ,
 -- ATTRIBUTE
 	entry_id TEXT NOT NULL
 );
@@ -8853,8 +11558,6 @@ CREATE TABLE pdbx_helical_symmetry_depositor_info (
 	dyad_axis ENUM_pdbx_helical_symmetry_depositor_info_dyad_axis ,
 	n_subunits_divisor INTEGER CHECK ( n_subunits_divisor >= 1 ) ,
 	number_of_operations INTEGER CHECK ( number_of_operations >= 1 ) ,
-	rise_per_n_subunits DECIMAL ,
-	rotation_per_n_subunits DECIMAL ,
 	status_flag ENUM_pdbx_helical_symmetry_depositor_info_status_flag ,
 -- ATTRIBUTE
 	entry_id TEXT NOT NULL
@@ -9379,6 +12082,90 @@ CREATE TABLE pdbx_nmr_details (
 );
 
 --
+-- The average distance restraint violation for the ensemble. 0.11
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE average_distance_constraint_violation (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'angstroms' ) NOT NULL
+);
+
+--
+-- The average torsion angle constraint violation for the ensemble. 2.4
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE average_torsion_angle_constraint_violation (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'degrees' ) NOT NULL
+);
+
+--
+-- The maximum distance constraint violation for the ensemble. 0.4
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE maximum_distance_constraint_violation (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'angstroms' ) NOT NULL
+);
+
+--
+-- The maximum lower distance constraint violation for the ensemble. 0.3
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE maximum_lower_distance_constraint_violation (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'angstroms' ) NOT NULL
+);
+
+--
+-- The maximum torsion angle constraint violation for the ensemble. 4
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE maximum_torsion_angle_constraint_violation (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'degrees' ) NOT NULL
+);
+
+--
+-- The maximum upper distance constraint violation for the ensemble. 0.4
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE maximum_upper_distance_constraint_violation (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'angstroms' ) NOT NULL
+);
+
+--
 -- (quoted from pdbx_nmr_ensembleType)
 -- This category contains the information that describes the ensemble of deposited structures. If only an average structure has been deposited skip this section. This example uses the data from the MCP-1 study. <PDBx:pdbx_nmr_ensembleCategory> <PDBx:pdbx_nmr_ensemble entry_id="1ABC"> <PDBx:conformer_selection_criteria>structures with the least restraint violations</PDBx:conformer_selection_criteria> <PDBx:conformers_calculated_total_number>40</PDBx:conformers_calculated_total_number> <PDBx:conformers_submitted_total_number>20</PDBx:conformers_submitted_total_number> <PDBx:representative_conformer>1</PDBx:representative_conformer> </PDBx:pdbx_nmr_ensemble> </PDBx:pdbx_nmr_ensembleCategory>
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
@@ -9389,20 +12176,182 @@ CREATE TABLE pdbx_nmr_ensemble (
 	document_id TEXT ,
 	average_constraint_violations_per_residue INTEGER ,
 	average_constraints_per_residue INTEGER ,
-	average_distance_constraint_violation DECIMAL ,
-	average_torsion_angle_constraint_violation DECIMAL ,
 	conformer_selection_criteria TEXT ,
 	conformers_calculated_total_number INTEGER CHECK ( conformers_calculated_total_number >= 0 ) ,
 	conformers_submitted_total_number INTEGER CHECK ( conformers_submitted_total_number >= 0 ) ,
 	distance_constraint_violation_method TEXT ,
-	maximum_distance_constraint_violation DECIMAL ,
-	maximum_lower_distance_constraint_violation DECIMAL ,
-	maximum_torsion_angle_constraint_violation DECIMAL ,
-	maximum_upper_distance_constraint_violation DECIMAL ,
 	representative_conformer INTEGER CHECK ( representative_conformer >= 0 ) ,
 	torsion_angle_constraint_violation_method TEXT ,
 -- ATTRIBUTE
 	entry_id TEXT NOT NULL
+);
+
+--
+-- The bond angle rmsd to the target values for the ensemble. 0.60
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE bond_angle_rms_dev (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'degrees' ) NOT NULL
+);
+
+--
+-- The error in the bond angle rmsd. 0.01
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE bond_angle_rms_dev_error (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'degrees' ) NOT NULL
+);
+
+--
+-- The covalent bond rmsd to the target value for the ensemble. 0.0066
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE covalent_bond_rms_dev (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'angstroms' ) NOT NULL
+);
+
+--
+-- The error in the covalent bond rmsd. 0.0001
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE covalent_bond_rms_dev_error (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'angstroms' ) NOT NULL
+);
+
+--
+-- The dihedral angle rmsd to the target values for the ensemble. 0.66
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE dihedral_angles_rms_dev (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'degrees' ) NOT NULL
+);
+
+--
+-- The error of the rmsd dihedral angles. 0.07
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE dihedral_angles_rms_dev_error (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'degrees' ) NOT NULL
+);
+
+--
+-- The distance rmsd to the mean structure for the ensemble of structures. 0.22
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE distance_rms_dev (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'angstroms' ) NOT NULL
+);
+
+--
+-- The error in the distance rmsd. 0.07
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE distance_rms_dev_error (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'angstroms' ) NOT NULL
+);
+
+--
+-- The improper torsion angle rmsd to the target values for the ensemble. 0.64
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE improper_torsion_angle_rms_dev (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'degrees' ) NOT NULL
+);
+
+--
+-- The error in the improper torsion angle rmsd. 0.04
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE improper_torsion_angle_rms_dev_error (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'degrees' ) NOT NULL
+);
+
+--
+-- The peptide planarity rmsd. 0.11
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE peptide_planarity_rms_dev (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'angstroms' ) NOT NULL
+);
+
+--
+-- The error in the peptide planarity rmsd. 0.05
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE peptide_planarity_rms_dev_error (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'angstroms' ) NOT NULL
 );
 
 --
@@ -9417,21 +12366,9 @@ CREATE TABLE pdbx_nmr_ensemble_rms (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
 	atom_type ENUM_pdbx_nmr_ensemble_rms_atom_type ,
-	bond_angle_rms_dev DECIMAL ,
-	bond_angle_rms_dev_error DECIMAL ,
 	chain_range_begin TEXT ,
 	chain_range_end TEXT ,
 	coord_average_rmsd_method TEXT ,
-	covalent_bond_rms_dev DECIMAL ,
-	covalent_bond_rms_dev_error DECIMAL ,
-	dihedral_angles_rms_dev DECIMAL ,
-	dihedral_angles_rms_dev_error DECIMAL ,
-	distance_rms_dev DECIMAL ,
-	distance_rms_dev_error DECIMAL ,
-	improper_torsion_angle_rms_dev DECIMAL ,
-	improper_torsion_angle_rms_dev_error DECIMAL ,
-	peptide_planarity_rms_dev DECIMAL ,
-	peptide_planarity_rms_dev_error DECIMAL ,
 	residue_range_begin INTEGER ,
 	residue_range_end INTEGER ,
 -- ATTRIBUTE
@@ -10733,6 +13670,636 @@ CREATE TABLE pdbx_refine_ls_restr_ncs (
 );
 
 --
+-- The [1][1] element of the libration tensor L. This should be given in the same coordinate frame as the corresponding anisotropic displacement parameters.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "L11" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'degrees_squared' ) NOT NULL
+);
+
+--
+-- The estimated standard deviation of attribute L[1][1] in category pdbx_refine_tls.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "L11_esd" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'degrees_squared' ) NOT NULL
+);
+
+--
+-- The [1][2] element of the libration tensor L. This should be given in the same coordinate frame as the corresponding anisotropic displacement parameters.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "L12" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'degrees_squared' ) NOT NULL
+);
+
+--
+-- The estimated standard deviation of attribute L[1][2] in category pdbx_refine_tls.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "L12_esd" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'degrees_squared' ) NOT NULL
+);
+
+--
+-- The [1][3] element of the libration tensor L. This should be given in the same coordinate frame as the corresponding anisotropic displacement parameters.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "L13" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'degrees_squared' ) NOT NULL
+);
+
+--
+-- The estimated standard deviation of attribute L[1][3] in category pdbx_refine_tls.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "L13_esd" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'degrees_squared' ) NOT NULL
+);
+
+--
+-- The [2][2] element of the libration tensor L. This should be given in the same coordinate frame as the corresponding anisotropic displacement parameters.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "L22" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'degrees_squared' ) NOT NULL
+);
+
+--
+-- The estimated standard deviation of attribute L[2][2] in category pdbx_refine_tls.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "L22_esd" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'degrees_squared' ) NOT NULL
+);
+
+--
+-- The [2][3] element of the libration tensor L. This should be given in the same coordinate frame as the corresponding anisotropic displacement parameters.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "L23" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'degrees_squared' ) NOT NULL
+);
+
+--
+-- The estimated standard deviation of attribute L[2][3] in category pdbx_refine_tls.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "L23_esd" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'degrees_squared' ) NOT NULL
+);
+
+--
+-- The [3][3] element of the libration tensor L. This should be given in the same coordinate frame as the corresponding anisotropic displacement parameters.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "L33" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'degrees_squared' ) NOT NULL
+);
+
+--
+-- The estimated standard deviation of attribute L[3][3] in category pdbx_refine_tls.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "L33_esd" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'degrees_squared' ) NOT NULL
+);
+
+--
+-- The [1][1] element of the screw-rotation tensor S. This should be given in the same coordinate frame as the corresponding anisotropic displacement parameters. The trace of S is indeterminate by crystallography, and should be set to zero.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "S11" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'angstroms_degrees' ) NOT NULL
+);
+
+--
+-- The estimated standard deviation of attribute S[1][1] in category pdbx_refine_tls.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "S11_esd" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'angstroms_degrees' ) NOT NULL
+);
+
+--
+-- The [1][2] element of the screw-rotation tensor S. This should be given in the same coordinate frame as the corresponding anisotropic displacement parameters. If the origin is omitted, it is assumed to be the centre of reaction of the group, in which case S must be symmetric
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "S12" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'angstroms_degrees' ) NOT NULL
+);
+
+--
+-- The estimated standard deviation of attribute S[1][2] in category pdbx_refine_tls.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "S12_esd" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'angstroms_degrees' ) NOT NULL
+);
+
+--
+-- The [1][3] element of the screw-rotation tensor S. This should be given in the same coordinate frame as the corresponding anisotropic displacement parameters. If the origin is omitted, it is assumed to be the centre of reaction of the group, in which case S must be symmetric
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "S13" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'angstroms_degrees' ) NOT NULL
+);
+
+--
+-- The estimated standard deviation of attribute S[1][3] in category pdbx_refine_tls.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "S13_esd" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'angstroms_degrees' ) NOT NULL
+);
+
+--
+-- The [2][1] element of the screw-rotation tensor S. This should be given in the same coordinate frame as the corresponding anisotropic displacement parameters. If the origin is omitted, it is assumed to be the centre of reaction of the group, in which case S must be symmetric
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "S21" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'angstroms_degrees' ) NOT NULL
+);
+
+--
+-- The estimated standard deviation of attribute S[2][1] in category pdbx_refine_tls.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "S21_esd" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'angstroms_degrees' ) NOT NULL
+);
+
+--
+-- The [2][2] element of the screw-rotation tensor S. This should be given in the same coordinate frame as the corresponding anisotropic displacement parameters. The trace of S is indeterminate by crystallography, and should be set to zero.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "S22" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'angstroms_degrees' ) NOT NULL
+);
+
+--
+-- The estimated standard deviation of attribute S[2][2] in category pdbx_refine_tls.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "S22_esd" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'angstroms_degrees' ) NOT NULL
+);
+
+--
+-- The [2][3] element of the screw-rotation tensor S. This should be given in the same coordinate frame as the corresponding anisotropic displacement parameters. If the origin is omitted, it is assumed to be the centre of reaction of the group, in which case S must be symmetric
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "S23" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'angstroms_degrees' ) NOT NULL
+);
+
+--
+-- The estimated standard deviation of attribute S[2][3] in category pdbx_refine_tls.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "S23_esd" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'angstroms_degrees' ) NOT NULL
+);
+
+--
+-- The [3][1] element of the screw-rotation tensor S. This should be given in the same coordinate frame as the corresponding anisotropic displacement parameters. If the origin is omitted, it is assumed to be the centre of reaction of the group, in which case S must be symmetric
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "S31" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'angstroms_degrees' ) NOT NULL
+);
+
+--
+-- The estimated standard deviation of attribute S[3][1] in category pdbx_refine_tls.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "S31_esd" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'angstroms_degrees' ) NOT NULL
+);
+
+--
+-- The [3][2] element of the screw-rotation tensor S. This should be given in the same coordinate frame as the corresponding anisotropic displacement parameters. If the origin is omitted, it is assumed to be the centre of reaction of the group, in which case S must be symmetric
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "S32" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'angstroms_degrees' ) NOT NULL
+);
+
+--
+-- The estimated standard deviation of attribute S[3][2] in category pdbx_refine_tls.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "S32_esd" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'angstroms_degrees' ) NOT NULL
+);
+
+--
+-- The [3][3] element of the screw-rotation tensor S. This should be given in the same coordinate frame as the corresponding anisotropic displacement parameters. The trace of S is indeterminate by crystallography, and should be set to zero.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "S33" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'angstroms_degrees' ) NOT NULL
+);
+
+--
+-- The estimated standard deviation of attribute S[3][3] in category pdbx_refine_tls.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "S33_esd" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'angstroms_degrees' ) NOT NULL
+);
+
+--
+-- The [1][1] element of the translation tensor T. This should be given in the same coordinate frame and units as the corresponding anisotropic displacement parameters.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "T11" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'angstroms_squared' ) NOT NULL
+);
+
+--
+-- The estimated standard deviation of attribute T[1][1] in category pdbx_refine_tls.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "T11_esd" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'angstroms_squared' ) NOT NULL
+);
+
+--
+-- The [1][2] element of the translation tensor T. This should be given in the same coordinate frame and units as the corresponding anisotropic displacement parameters.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "T12" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'angstroms_squared' ) NOT NULL
+);
+
+--
+-- The estimated standard deviation of attribute T[1][2] in category pdbx_refine_tls.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "T12_esd" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'angstroms_squared' ) NOT NULL
+);
+
+--
+-- The [1][3] element of the translation tensor T. This should be given in the same coordinate frame and units as the corresponding anisotropic displacement parameters.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "T13" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'angstroms_squared' ) NOT NULL
+);
+
+--
+-- The estimated standard deviation of attribute T[1][3] in category pdbx_refine_tls.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "T13_esd" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'angstroms_squared' ) NOT NULL
+);
+
+--
+-- The [2][2] element of the translation tensor T. This should be given in the same coordinate frame and units as the corresponding anisotropic displacement parameters.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "T22" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'angstroms_squared' ) NOT NULL
+);
+
+--
+-- The estimated standard deviation of attribute T[2][2] in category pdbx_refine_tls.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "T22_esd" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'angstroms_squared' ) NOT NULL
+);
+
+--
+-- The [2][3] element of the translation tensor T. This should be given in the same coordinate frame and units as the corresponding anisotropic displacement parameters.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "T23" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'angstroms_squared' ) NOT NULL
+);
+
+--
+-- The estimated standard deviation of attribute T[2][3] in category pdbx_refine_tls.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "T23_esd" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'angstroms_squared' ) NOT NULL
+);
+
+--
+-- The [3][3] element of the translation tensor T. This should be given in the same coordinate frame and units as the corresponding anisotropic displacement parameters.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "T33" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'angstroms_squared' ) NOT NULL
+);
+
+--
+-- The estimated standard deviation of attribute T[3][3] in category pdbx_refine_tls.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "T33_esd" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'angstroms_squared' ) NOT NULL
+);
+
+--
+-- The x coordinate in angstroms of the origin to which the TLS parameters are referred, specified according to a set of orthogonal Cartesian axes related to the cell axes as given in attribute Cartn_transform_axes. in category atom_sites If the origin is omitted, it is assumed to be the centre of reaction of the group, in which case S must be symmetric
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE origin_x (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'angstroms' ) NOT NULL
+);
+
+--
+-- The y coordinate in angstroms of the origin to which the TLS parameters are referred, specified according to a set of orthogonal Cartesian axes related to the cell axes as given in attribute Cartn_transform_axes. in category atom_sites If the origin is omitted, it is assumed to be the centre of reaction of the group, in which case S must be symmetric
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE origin_y (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'angstroms' ) NOT NULL
+);
+
+--
+-- The z coordinate in angstroms of the origin to which the TLS parameters are referred, specified according to a set of orthogonal Cartesian axes related to the cell axes as given in attribute Cartn_transform_axes. in category atom_sites If the origin is omitted, it is assumed to be the centre of reaction of the group, in which case S must be symmetric
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE origin_z (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'angstroms' ) NOT NULL
+);
+
+--
 -- (quoted from pdbx_refine_tls_groupType)
 -- Data items in the PDBX_REFINE_TLS_GROUP category record details about a fragment of a TLS group. Properties of the TLS group are recorded in PDBX_REFINE_TLS
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
@@ -11013,6 +14580,215 @@ CREATE TABLE pdbx_sequence_range (
 );
 
 --
+-- (quoted from pdbx_serial_crystallography_data_reductionType)
+-- Data items in the PDBX_SERIAL_CRYSTALLOGRAPHY_DATA_REDUCTION category record details about data processing that are unique to XFEL experiments. These will compliment data recorded in category pdbx_diffrn_merge_stat. Example 1 <PDBx:pdbx_serial_crystallography_data_reductionCategory> <PDBx:pdbx_serial_crystallography_data_reduction diffrn_id="1"> <PDBx:crystal_hits>1797503</PDBx:crystal_hits> <PDBx:frames_indexed>578620</PDBx:frames_indexed> <PDBx:frames_total>7324430</PDBx:frames_total> </PDBx:pdbx_serial_crystallography_data_reduction> </PDBx:pdbx_serial_crystallography_data_reductionCategory>
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE pdbx_serial_crystallography_data_reduction (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+	crystal_hits INTEGER CHECK ( crystal_hits >= 0 ) ,
+	droplet_hits INTEGER CHECK ( droplet_hits >= 0 ) ,
+	frame_hits INTEGER CHECK ( frame_hits >= 0 ) ,
+	frames_failed_index INTEGER CHECK ( frames_failed_index >= 0 ) ,
+	frames_indexed INTEGER CHECK ( frames_indexed >= 0 ) ,
+	frames_total INTEGER CHECK ( frames_total >= 0 ) ,
+	lattices_indexed INTEGER CHECK ( lattices_indexed >= 0 ) ,
+	xfel_pulse_events INTEGER CHECK ( xfel_pulse_events >= 0 ) ,
+	xfel_run_numbers TEXT ,
+-- ATTRIBUTE
+	diffrn_id TEXT NOT NULL
+);
+
+--
+-- (quoted from pdbx_serial_crystallography_measurementType)
+-- Data items in the PDBX_SERIAL_CRYSTALLOGRAPHY_MEASUREMENT category record details the beam that is impinging on the sample Example 1 <PDBx:pdbx_serial_crystallography_measurementCategory> <PDBx:pdbx_serial_crystallography_measurement diffrn_id="1"> <PDBx:collection_time_total>16.95</PDBx:collection_time_total> <PDBx:focal_spot_size>1.8</PDBx:focal_spot_size> <PDBx:photons_per_pulse>0.17</PDBx:photons_per_pulse> <PDBx:pulse_duration>45</PDBx:pulse_duration> </PDBx:pdbx_serial_crystallography_measurement> </PDBx:pdbx_serial_crystallography_measurementCategory>
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE pdbx_serial_crystallography_measurement (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+	collection_time_total DECIMAL CHECK ( collection_time_total >= 0.0 ) ,
+	collimation TEXT ,
+	focal_spot_size DECIMAL CHECK ( focal_spot_size >= 0.0 ) ,
+	photons_per_pulse DECIMAL CHECK ( photons_per_pulse >= 0.0 ) ,
+	pulse_duration DECIMAL CHECK ( pulse_duration >= 0.0 ) ,
+	pulse_energy DECIMAL CHECK ( pulse_energy >= 0.0 ) ,
+	pulse_photon_energy DECIMAL CHECK ( pulse_photon_energy >= 0.0 ) ,
+	source_distance DECIMAL CHECK ( source_distance >= 0.0 ) ,
+	source_size DECIMAL CHECK ( source_size >= 0.0 ) ,
+	xfel_pulse_repetition_rate DECIMAL CHECK ( xfel_pulse_repetition_rate >= 0.0 ) ,
+-- ATTRIBUTE
+	diffrn_id TEXT NOT NULL
+);
+
+--
+-- (quoted from pdbx_serial_crystallography_sample_deliveryType)
+-- Data items in the PDBX_SERIAL_CRYSTALLOGRAPHY_SAMPLE_DELIVERY category record general details about the sample delivery Example 1 <PDBx:pdbx_serial_crystallography_sample_deliveryCategory> <PDBx:pdbx_serial_crystallography_sample_delivery diffrn_id="1"> <PDBx:description>LCP injector</PDBx:description> </PDBx:pdbx_serial_crystallography_sample_delivery> </PDBx:pdbx_serial_crystallography_sample_deliveryCategory>
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+DROP TYPE IF EXISTS ENUM_pdbx_serial_crystallography_sample_delivery_method CASCADE;
+CREATE TYPE ENUM_pdbx_serial_crystallography_sample_delivery_method AS ENUM ( 'fixed target', 'injection', 'gas dynamic virtual nozzle' );
+CREATE TABLE pdbx_serial_crystallography_sample_delivery (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+	description TEXT ,
+	method ENUM_pdbx_serial_crystallography_sample_delivery_method ,
+-- ATTRIBUTE
+	diffrn_id TEXT NOT NULL
+);
+
+--
+-- (quoted from pdbx_serial_crystallography_sample_delivery_fixed_targetType)
+-- Data items in the PDBX_SERIAL_CRYSTALLOGRAPHY_SAMPLE_DELIVERY_FIXED_TARGET category record details about sample delivery using a fixed taget. Example 1 <PDBx:pdbx_serial_crystallography_sample_delivery_fixed_targetCategory> <PDBx:pdbx_serial_crystallography_sample_delivery_fixed_target diffrn_id="1"> <PDBx:crystals_per_unit>7</PDBx:crystals_per_unit> <PDBx:sample_holding>mesh</PDBx:sample_holding> <PDBx:support_base>goniometer</PDBx:support_base> </PDBx:pdbx_serial_crystallography_sample_delivery_fixed_target> </PDBx:pdbx_serial_crystallography_sample_delivery_fixed_targetCategory>
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE pdbx_serial_crystallography_sample_delivery_fixed_target (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+	crystals_per_unit INTEGER CHECK ( crystals_per_unit >= 0 ) ,
+	description TEXT ,
+	details TEXT ,
+	motion_control TEXT ,
+	sample_dehydration_prevention TEXT ,
+	sample_holding TEXT ,
+	sample_solvent TEXT ,
+	sample_unit_size DECIMAL CHECK ( sample_unit_size >= 0.0 ) ,
+	support_base TEXT ,
+	velocity_horizontal DECIMAL CHECK ( velocity_horizontal >= 0.0 ) ,
+	velocity_vertical DECIMAL CHECK ( velocity_vertical >= 0.0 ) ,
+-- ATTRIBUTE
+	diffrn_id TEXT NOT NULL
+);
+
+--
+-- (quoted from pdbx_serial_crystallography_sample_delivery_injectionType)
+-- Data items in the PDBX_SERIAL_CRYSTALLOGRAPHY_SAMPLE_DELIVERY_INJECTION category record details about sample delivery by injection Example 1 <PDBx:pdbx_serial_crystallography_sample_delivery_injectionCategory> <PDBx:pdbx_serial_crystallography_sample_delivery_injection diffrn_id="1"> <PDBx:carrier_solvent>liquid</PDBx:carrier_solvent> <PDBx:description>microextrusion injector</PDBx:description> <PDBx:flow_rate>0.22</PDBx:flow_rate> <PDBx:injector_diameter>50</PDBx:injector_diameter> </PDBx:pdbx_serial_crystallography_sample_delivery_injection> </PDBx:pdbx_serial_crystallography_sample_delivery_injectionCategory>
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE pdbx_serial_crystallography_sample_delivery_injection (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+	carrier_solvent TEXT ,
+	crystal_concentration DECIMAL CHECK ( crystal_concentration >= 0.0 ) ,
+	description TEXT ,
+	filter_size DECIMAL CHECK ( filter_size >= 0.0 ) ,
+	flow_rate DECIMAL CHECK ( flow_rate >= 0.0 ) ,
+	injector_diameter DECIMAL CHECK ( injector_diameter >= 0.0 ) ,
+	injector_nozzle TEXT ,
+	injector_pressure DECIMAL CHECK ( injector_pressure >= 0.0 ) ,
+	injector_temperature DECIMAL CHECK ( injector_temperature >= 100.0 AND injector_temperature <= 370.0 ) ,
+	jet_diameter DECIMAL CHECK ( jet_diameter >= 0.0 ) ,
+	power_by TEXT ,
+	preparation TEXT ,
+-- ATTRIBUTE
+	diffrn_id TEXT NOT NULL
+);
+
+--
+-- The concentration range (mg/mL) of the complex in the sample used in the solution scattering experiment to determine the mean radius of structural elongation. 0.7 - 14
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE concentration_range (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content TEXT ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'mg_per_ml' ) NOT NULL
+);
+
+--
+-- The maximum mean radius of structural elongation of the sample. In a given solute-solvent contrast, the radius of gyration R_G is a measure of structural elongation if the internal inhomogeneity of scattering densities has no effect. Guiner analysis at low Q give the R_G and the forward scattering at zero angle I(0). lnl(Q) = lnl(0) - R_G^2Q^2/3 where Q = 4(pi)sin(theta/lamda) 2theta = scattering angle lamda = wavelength The above expression is valid in a QR_G range for extended rod-like particles. The relative I(0)/c values ( where c = sample concentration) for sample measurements in a constant buffer for a single sample data session, gives the relative masses of the protein(s) studied when referenced against a standard. see: O.Glatter & O.Kratky, (1982). Editors of "Small angle X-ray Scattering, Academic Press, New York. O.Kratky. (1963). X-ray small angle scattering with substances of biological interest in diluted solutions. Prog. Biophys. Chem., 13, 105-173. G.D.Wignall & F.S.Bates, (1987). The small-angle approximation of X-ray and neutron scatter from rigid rods of non-uniform cross section and finite length. J.Appl. Crystallog., 18, 452-460. If the structure is elongated, the mean radius of gyration of the cross-sectional structure R_XS and the mean cross sectional intensity at zero angle [I(Q).Q]_Q->0 is obtained from ln[I(Q).Q] = ln[l(Q).(Q)]_Q->0 - ((R_XS)^2Q^2)/2
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE max_mean_cross_sectional_radii_gyration (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'nanometres' ) NOT NULL
+);
+
+--
+-- The estimated standard deviation for the minimum mean radius of structural elongation of the sample. In a given solute-solvent contrast, the radius of gyration R_G is a measure of structural elongation if the internal inhomogeneity of scattering densities has no effect. Guiner analysis at low Q give the R_G and the forward scattering at zero angle I(0). lnl(Q) = lnl(0) - R_G^2Q^2/3 where Q = 4(pi)sin(theta/lamda) 2theta = scattering angle lamda = wavelength The above expression is valid in a QR_G range for extended rod-like particles. The relative I(0)/c values ( where c = sample concentration) for sample measurements in a constant buffer for a single sample data session, gives the relative masses of the protein(s) studied when referenced against a standard. see: O.Glatter & O.Kratky, (1982). Editors of "Small angle X-ray Scattering, Academic Press, New York. O.Kratky. (1963). X-ray small angle scattering with substances of biological interest in diluted solutions. Prog. Biophys. Chem., 13, 105-173. G.D.Wignall & F.S.Bates, (1987). The small-angle approximation of X-ray and neutron scatter from rigid rods of non-uniform cross section and finite length. J.Appl. Crystallog., 18, 452-460. If the structure is elongated, the mean radius of gyration of the cross-sectional structure R_XS and the mean cross sectional intensity at zero angle [I(Q).Q]_Q->0 is obtained from ln[I(Q).Q] = ln[l(Q).(Q)]_Q->0 - ((R_XS)^2Q^2)/2
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE max_mean_cross_sectional_radii_gyration_esd (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'nanometres' ) NOT NULL
+);
+
+--
+-- The mean radius of structural elongation of the sample. In a given solute-solvent contrast, the radius of gyration R_G is a measure of structural elongation if the internal inhomogeneity of scattering densities has no effect. Guiner analysis at low Q gives the R_G and the forward scattering at zero angle I(0). lnl(Q) = lnl(0) - R_G^2Q^2/3 where Q = 4(pi)sin(theta/lamda) 2theta = scattering angle lamda = wavelength The above expression is valid in a QR_G range for extended rod-like particles. The relative I(0)/c values ( where c = sample concentration) for sample measurements in a constant buffer for a single sample data session, gives the relative masses of the protein(s) studied when referenced against a standard. see: O.Glatter & O.Kratky, (1982). Editors of "Small angle X-ray Scattering, Academic Press, New York. O.Kratky. (1963). X-ray small angle scattering with substances of biological interest in diluted solutions. Prog. Biophys. Chem., 13, 105-173. G.D.Wignall & F.S.Bates, (1987). The small-angle approximation of X-ray and neutron scatter from rigid rods of non-uniform cross section and finite length. J.Appl. Crystallog., 18, 452-460. If the structure is elongated, the mean radius of gyration of the cross-sectional structure R_XS and the mean cross sectional intensity at zero angle [I(Q).Q]_Q->0 is obtained from ln[I(Q).Q] = ln[l(Q).(Q)]_Q->0 - ((R_XS)^2Q^2)/2
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE mean_guiner_radius (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'nanometres' ) NOT NULL
+);
+
+--
+-- The estimated standard deviation for the mean radius of structural elongation of the sample. In a given solute-solvent contrast, the radius of gyration R_G is a measure of structural elongation if the internal inhomogeneity of scattering densities has no effect. Guiner analysis at low Q give the R_G and the forward scattering at zero angle I(0). lnl(Q) = lnl(0) - R_G^2Q^2/3 where Q = 4(pi)sin(theta/lamda) 2theta = scattering angle lamda = wavelength The above expression is valid in a QR_G range for extended rod-like particles. The relative I(0)/c values ( where c = sample concentration) for sample measurements in a constant buffer for a single sample data session, gives the relative masses of the protein(s) studied when referenced against a standard. see: O.Glatter & O.Kratky, (1982). Editors of "Small angle X-ray Scattering, Academic Press, New York. O.Kratky. (1963). X-ray small angle scattering with substances of biological interest in diluted solutions. Prog. Biophys. Chem., 13, 105-173. G.D.Wignall & F.S.Bates, (1987). The small-angle approximation of X-ray and neutron scatter from rigid rods of non-uniform cross section and finite length. J.Appl. Crystallog., 18, 452-460. If the structure is elongated, the mean radius of gyration of the cross-sectional structure R_XS and the mean cross sectional intensity at zero angle [I(Q).Q]_Q->0 is obtained from ln[I(Q).Q] = ln[l(Q).(Q)]_Q->0 - ((R_XS)^2Q^2)/2
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE mean_guiner_radius_esd (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'nanometres' ) NOT NULL
+);
+
+--
+-- The minimum mean radius of structural elongation of the sample. In a given solute-solvent contrast, the radius of gyration R_G is a measure of structural elongation if the internal inhomogeneity of scattering densities has no effect. Guiner analysis at low Q give the R_G and the forward scattering at zero angle I(0). lnl(Q) = lnl(0) - R_G^2Q^2/3 where Q = 4(pi)sin(theta/lamda) 2theta = scattering angle lamda = wavelength The above expression is valid in a QR_G range for extended rod-like particles. The relative I(0)/c values ( where c = sample concentration) for sample measurements in a constant buffer for a single sample data session, gives the relative masses of the protein(s) studied when referenced against a standard. see: O.Glatter & O.Kratky, (1982). Editors of "Small angle X-ray Scattering, Academic Press, New York. O.Kratky. (1963). X-ray small angle scattering with substances of biological interest in diluted solutions. Prog. Biophys. Chem., 13, 105-173. G.D.Wignall & F.S.Bates, (1987). The small-angle approximation of X-ray and neutron scatter from rigid rods of non-uniform cross section and finite length. J.Appl. Crystallog., 18, 452-460. If the structure is elongated, the mean radius of gyration of the cross-sectional structure R_XS and the mean cross sectional intensity at zero angle [I(Q).Q]_Q->0 is obtained from ln[I(Q).Q] = ln[l(Q).(Q)]_Q->0 - ((R_XS)^2Q^2)/2
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE min_mean_cross_sectional_radii_gyration (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'nanometres' ) NOT NULL
+);
+
+--
+-- The estimated standard deviation for the minimum mean radius of structural elongation of the sample. In a given solute-solvent contrast, the radius of gyration R_G is a measure of structural elongation if the internal inhomogeneity of scattering densities has no effect. Guiner analysis at low Q give the R_G and the forward scattering at zero angle I(0). lnl(Q) = lnl(0) - R_G^2Q^2/3 where Q = 4(pi)sin(theta/lamda) 2theta = scattering angle lamda = wavelength The above expression is valid in a QR_G range for extended rod-like particles. The relative I(0)/c values ( where c = sample concentration) for sample measurements in a constant buffer for a single sample data session, gives the relative masses of the protein(s) studied when referenced against a standard. see: O.Glatter & O.Kratky, (1982). Editors of "Small angle X-ray Scattering, Academic Press, New York. O.Kratky. (1963). X-ray small angle scattering with substances of biological interest in diluted solutions. Prog. Biophys. Chem., 13, 105-173. G.D.Wignall & F.S.Bates, (1987). The small-angle approximation of X-ray and neutron scatter from rigid rods of non-uniform cross section and finite length. J.Appl. Crystallog., 18, 452-460. If the structure is elongated, the mean radius of gyration of the cross-sectional structure R_XS and the mean cross sectional intensity at zero angle [I(Q).Q]_Q->0 is obtained from ln[I(Q).Q] = ln[l(Q).(Q)]_Q->0 - ((R_XS)^2Q^2)/2
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE min_mean_cross_sectional_radii_gyration_esd (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'nanometres' ) NOT NULL
+);
+
+--
 -- (quoted from pdbx_soln_scatterType)
 -- Data items in the PDBX_SOLN_SCATTER category record details about a solution scattering experiment Example 1 - based on PDB entry 1HAQ <PDBx:pdbx_soln_scatterCategory> <PDBx:pdbx_soln_scatter entry_id="1HAQ" id="1"> <PDBx:buffer_name>tris</PDBx:buffer_name> <PDBx:concentration_range>0.7 - 14</PDBx:concentration_range> <PDBx:detector_specific xsi:nil="true" /> <PDBx:detector_type>500-channel quadrant</PDBx:detector_type> <PDBx:max_mean_cross_sectional_radii_gyration>1.7</PDBx:max_mean_cross_sectional_radii_gyration> <PDBx:max_mean_cross_sectional_radii_gyration_esd>0.1</PDBx:max_mean_cross_sectional_radii_gyration_esd> <PDBx:mean_guiner_radius>11.1</PDBx:mean_guiner_radius> <PDBx:mean_guiner_radius_esd>0.4</PDBx:mean_guiner_radius_esd> <PDBx:min_mean_cross_sectional_radii_gyration>4.4</PDBx:min_mean_cross_sectional_radii_gyration> <PDBx:min_mean_cross_sectional_radii_gyration_esd>0.2</PDBx:min_mean_cross_sectional_radii_gyration_esd> <PDBx:num_time_frames>10</PDBx:num_time_frames> <PDBx:protein_length>40</PDBx:protein_length> <PDBx:sample_pH xsi:nil="true" /> <PDBx:source_beamline>2.1</PDBx:source_beamline> <PDBx:source_beamline_instrument xsi:nil="true" /> <PDBx:source_class>synchrotron</PDBx:source_class> <PDBx:source_type>SRS BEAMLINE 2.1</PDBx:source_type> <PDBx:temperature>288</PDBx:temperature> <PDBx:type>x-ray</PDBx:type> </PDBx:pdbx_soln_scatter> <PDBx:pdbx_soln_scatter entry_id="1HAQ" id="2"> <PDBx:buffer_name>PBS in 99.9&#37; D2O</PDBx:buffer_name> <PDBx:concentration_range>0.4 - 9.6</PDBx:concentration_range> <PDBx:detector_specific xsi:nil="true" /> <PDBx:detector_type>area</PDBx:detector_type> <PDBx:max_mean_cross_sectional_radii_gyration>1.51</PDBx:max_mean_cross_sectional_radii_gyration> <PDBx:max_mean_cross_sectional_radii_gyration_esd>0.06</PDBx:max_mean_cross_sectional_radii_gyration_esd> <PDBx:mean_guiner_radius>11.3</PDBx:mean_guiner_radius> <PDBx:mean_guiner_radius_esd>0.4</PDBx:mean_guiner_radius_esd> <PDBx:min_mean_cross_sectional_radii_gyration>3.9</PDBx:min_mean_cross_sectional_radii_gyration> <PDBx:min_mean_cross_sectional_radii_gyration_esd>0.2</PDBx:min_mean_cross_sectional_radii_gyration_esd> <PDBx:num_time_frames xsi:nil="true" /> <PDBx:protein_length>37.0 - 39.0</PDBx:protein_length> <PDBx:sample_pH xsi:nil="true" /> <PDBx:source_beamline xsi:nil="true" /> <PDBx:source_beamline_instrument>D11, D22</PDBx:source_beamline_instrument> <PDBx:source_class>neutron source</PDBx:source_class> <PDBx:source_type>ILL</PDBx:source_type> <PDBx:temperature xsi:nil="true" /> <PDBx:type>neutron</PDBx:type> </PDBx:pdbx_soln_scatter> <PDBx:pdbx_soln_scatter entry_id="1HAQ" id="3"> <PDBx:buffer_name>PBS in 99.9&#37; D2O</PDBx:buffer_name> <PDBx:concentration_range>3.7, 6.1</PDBx:concentration_range> <PDBx:detector_specific xsi:nil="true" /> <PDBx:detector_type>AREA (TIME-OF-FLIGHT)</PDBx:detector_type> <PDBx:max_mean_cross_sectional_radii_gyration xsi:nil="true" /> <PDBx:max_mean_cross_sectional_radii_gyration_esd xsi:nil="true" /> <PDBx:mean_guiner_radius>11.7</PDBx:mean_guiner_radius> <PDBx:mean_guiner_radius_esd>0.5</PDBx:mean_guiner_radius_esd> <PDBx:min_mean_cross_sectional_radii_gyration xsi:nil="true" /> <PDBx:min_mean_cross_sectional_radii_gyration_esd xsi:nil="true" /> <PDBx:num_time_frames xsi:nil="true" /> <PDBx:protein_length>40.0</PDBx:protein_length> <PDBx:sample_pH xsi:nil="true" /> <PDBx:source_beamline>Pulsed Neutron</PDBx:source_beamline> <PDBx:source_beamline_instrument>LOQ</PDBx:source_beamline_instrument> <PDBx:source_class>neutron source</PDBx:source_class> <PDBx:source_type>ISIS</PDBx:source_type> <PDBx:temperature xsi:nil="true" /> <PDBx:type>neutron</PDBx:type> </PDBx:pdbx_soln_scatter> </PDBx:pdbx_soln_scatterCategory>
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
@@ -11024,17 +14800,10 @@ CREATE TABLE pdbx_soln_scatter (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
 	buffer_name TEXT ,
-	concentration_range TEXT ,
 	data_analysis_software_list TEXT ,
 	data_reduction_software_list TEXT ,
 	detector_specific TEXT ,
 	detector_type TEXT ,
-	max_mean_cross_sectional_radii_gyration DECIMAL ,
-	max_mean_cross_sectional_radii_gyration_esd DECIMAL ,
-	mean_guiner_radius DECIMAL ,
-	mean_guiner_radius_esd DECIMAL ,
-	min_mean_cross_sectional_radii_gyration DECIMAL ,
-	min_mean_cross_sectional_radii_gyration_esd DECIMAL ,
 	num_time_frames INTEGER ,
 	protein_length TEXT ,
 	"sample_pH" DECIMAL ,
@@ -11075,6 +14844,48 @@ CREATE TABLE pdbx_soln_scatter_model (
 );
 
 --
+-- The prior x atom-site coordinate of the solvent position in angstroms.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "pre_Cartn_x" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'angstroms' ) NOT NULL
+);
+
+--
+-- The prior y atom-site coordinate of the solvent position in angstroms.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "pre_Cartn_y" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'angstroms' ) NOT NULL
+);
+
+--
+-- The prior z atom-site coordinate of the solvent position in angstroms.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "pre_Cartn_z" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'angstroms' ) NOT NULL
+);
+
+--
 -- (quoted from pdbx_solvent_atom_site_mappingType)
 -- Data items in the PDBX_SOLVENT_ATOM_SITE_MAPPING category records mapping information between solvent atoms before and after symmetry repositioning. Example - <PDBx:pdbx_solvent_atom_site_mappingCategory> <PDBx:pdbx_solvent_atom_site_mapping id="1"> <PDBx:Cartn_x xsi:nil="true" /> <PDBx:Cartn_y xsi:nil="true" /> <PDBx:Cartn_z xsi:nil="true" /> <PDBx:auth_alt_id xsi:nil="true" /> <PDBx:auth_asym_id xsi:nil="true" /> <PDBx:auth_atom_id xsi:nil="true" /> <PDBx:auth_comp_id xsi:nil="true" /> <PDBx:auth_seq_id xsi:nil="true" /> <PDBx:label_alt_id xsi:nil="true" /> <PDBx:label_asym_id xsi:nil="true" /> <PDBx:label_atom_id xsi:nil="true" /> <PDBx:label_comp_id xsi:nil="true" /> <PDBx:label_seq_id xsi:nil="true" /> <PDBx:pre_Cartn_x xsi:nil="true" /> <PDBx:pre_Cartn_y xsi:nil="true" /> <PDBx:pre_Cartn_z xsi:nil="true" /> <PDBx:pre_auth_alt_id xsi:nil="true" /> <PDBx:pre_auth_asym_id xsi:nil="true" /> <PDBx:pre_auth_atom_id xsi:nil="true" /> <PDBx:pre_auth_comp_id xsi:nil="true" /> <PDBx:pre_auth_seq_id xsi:nil="true" /> </PDBx:pdbx_solvent_atom_site_mapping> </PDBx:pdbx_solvent_atom_site_mappingCategory>
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
@@ -11083,9 +14894,6 @@ CREATE TABLE pdbx_soln_scatter_model (
 CREATE TABLE pdbx_solvent_atom_site_mapping (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
-	"Cartn_x" DECIMAL ,
-	"Cartn_y" DECIMAL ,
-	"Cartn_z" DECIMAL ,
 	"PDB_ins_code" TEXT ,
 	auth_alt_id TEXT ,
 	auth_asym_id TEXT ,
@@ -11098,9 +14906,6 @@ CREATE TABLE pdbx_solvent_atom_site_mapping (
 	label_comp_id TEXT ,
 	label_seq_id INTEGER ,
 	occupancy DECIMAL ,
-	"pre_Cartn_x" DECIMAL ,
-	"pre_Cartn_y" DECIMAL ,
-	"pre_Cartn_z" DECIMAL ,
 	"pre_PDB_ins_code" TEXT ,
 	pre_auth_alt_id TEXT ,
 	pre_auth_asym_id TEXT ,
@@ -11431,8 +15236,6 @@ CREATE TABLE pdbx_struct_conn_angle (
 	ptnr3_label_comp_id TEXT ,
 	ptnr3_label_seq_id INTEGER ,
 	ptnr3_symmetry TEXT ,
-	value DECIMAL ,
-	value_esd DECIMAL ,
 -- ATTRIBUTE
 	id TEXT NOT NULL
 );
@@ -12104,6 +15907,34 @@ CREATE TABLE pdbx_unpair (
 );
 
 --
+-- Value of the angle deviating by more than 6*RMSD from the expected dictionary value.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE angle (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'degrees' ) NOT NULL
+);
+
+--
+-- Value of the deviation (in degrees) from 6*RMSD for the angle bounded by the three sites from the expected dictionary value
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE angle_deviation (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'degrees' ) NOT NULL
+);
+
+--
 -- (quoted from pdbx_val_angleType)
 -- The PDBX_VAL_ANGLE category lists the covalent bond angles in this entry deviating by greater than 6*sigma from standard values. This is a completely derived category. Do not edit.
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
@@ -12112,8 +15943,6 @@ CREATE TABLE pdbx_unpair (
 CREATE TABLE pdbx_val_angle (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
-	angle DECIMAL ,
-	angle_deviation DECIMAL ,
 	"auth_PDB_insert_id_1" TEXT ,
 	"auth_PDB_insert_id_2" TEXT ,
 	"auth_PDB_insert_id_3" TEXT ,
@@ -12150,6 +15979,34 @@ CREATE TABLE pdbx_val_angle (
 );
 
 --
+-- The value of the bond distance deviating by more than 6*RMSD from the standard dictionary value.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE bond (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'angstroms' ) NOT NULL
+);
+
+--
+-- The value of the deviation from ideal for the defined covalent bond for the two atoms defined.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE bond_deviation (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'angstroms' ) NOT NULL
+);
+
+--
 -- (quoted from pdbx_val_bondType)
 -- The PDBX_VAL_BOND category lists the covalent bond angles in this entry deviating by greater than 6*sigma from standard values. This is a completely derived category. Do not edit.
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
@@ -12168,8 +16025,6 @@ CREATE TABLE pdbx_val_bond (
 	auth_comp_id_2 TEXT ,
 	auth_seq_id_1 TEXT ,
 	auth_seq_id_2 TEXT ,
-	bond DECIMAL ,
-	bond_deviation DECIMAL ,
 	label_alt_id_1 TEXT ,
 	label_alt_id_2 TEXT ,
 	label_asym_id_1 TEXT ,
@@ -12305,6 +16160,20 @@ CREATE TABLE pdbx_validate_chiral (
 );
 
 --
+-- The value of the close contact for the two atoms defined.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE dist (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'angstroms' ) NOT NULL
+);
+
+--
 -- (quoted from pdbx_validate_close_contactType)
 -- Data items in the PDBX_VALIDATE_CLOSE_CONTACT category list the atoms within the entry that are in close contact with regard the distances expected from either covalent bonding or closest approach by van der Waals contacts. Contacts within the asymmetric unit are considered. For those contacts not involving hydrogen a limit of 2.2 Angstroms is used. For contacts involving a hydrogen atom a cutoff of 1.6 Angstroms is used. Example 1 <PDBx:pdbx_validate_close_contactCategory> <PDBx:pdbx_validate_close_contact id="1"> <PDBx:PDB_ins_code_1 xsi:nil="true" /> <PDBx:PDB_ins_code_2 xsi:nil="true" /> <PDBx:PDB_model_num>1</PDBx:PDB_model_num> <PDBx:auth_asym_id_1>B</PDBx:auth_asym_id_1> <PDBx:auth_asym_id_2>B</PDBx:auth_asym_id_2> <PDBx:auth_atom_id_1 xsi:nil="true" /> <PDBx:auth_atom_id_2 xsi:nil="true" /> <PDBx:auth_comp_id_1>VAL</PDBx:auth_comp_id_1> <PDBx:auth_comp_id_2>ARG</PDBx:auth_comp_id_2> <PDBx:auth_seq_id_1>36</PDBx:auth_seq_id_1> <PDBx:auth_seq_id_2>108</PDBx:auth_seq_id_2> <PDBx:dist>2.16</PDBx:dist> <PDBx:label_alt_id_1 xsi:nil="true" /> <PDBx:label_alt_id_2 xsi:nil="true" /> </PDBx:pdbx_validate_close_contact> <PDBx:pdbx_validate_close_contact id="2"> <PDBx:PDB_ins_code_1 xsi:nil="true" /> <PDBx:PDB_ins_code_2 xsi:nil="true" /> <PDBx:PDB_model_num>1</PDBx:PDB_model_num> <PDBx:auth_asym_id_1>B</PDBx:auth_asym_id_1> <PDBx:auth_asym_id_2>B</PDBx:auth_asym_id_2> <PDBx:auth_atom_id_1 xsi:nil="true" /> <PDBx:auth_atom_id_2 xsi:nil="true" /> <PDBx:auth_comp_id_1>ARG</PDBx:auth_comp_id_1> <PDBx:auth_comp_id_2>VAL</PDBx:auth_comp_id_2> <PDBx:auth_seq_id_1>108</PDBx:auth_seq_id_1> <PDBx:auth_seq_id_2>36</PDBx:auth_seq_id_2> <PDBx:dist>2.16</PDBx:dist> <PDBx:label_alt_id_1 xsi:nil="true" /> <PDBx:label_alt_id_2 xsi:nil="true" /> </PDBx:pdbx_validate_close_contact> </PDBx:pdbx_validate_close_contactCategory>
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
@@ -12324,13 +16193,26 @@ CREATE TABLE pdbx_validate_close_contact (
 	auth_comp_id_2 TEXT ,
 	auth_seq_id_1 TEXT ,
 	auth_seq_id_2 TEXT ,
-	dist DECIMAL ,
 	label_alt_id_1 TEXT ,
 	label_alt_id_2 TEXT ,
 	symm_as_xyz_1 TEXT ,
 	symm_as_xyz_2 TEXT ,
 -- ATTRIBUTE
 	id INTEGER NOT NULL
+);
+
+--
+-- The value for the torsion angle C(i-1) - CA(i-1) - N(i) - O(i-1)
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE improper_torsion_angle (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'degrees' ) NOT NULL
 );
 
 --
@@ -12347,7 +16229,6 @@ CREATE TABLE pdbx_validate_main_chain_plane (
 	auth_asym_id TEXT ,
 	auth_comp_id TEXT ,
 	auth_seq_id TEXT ,
-	improper_torsion_angle DECIMAL ,
 	label_alt_id TEXT ,
 -- ATTRIBUTE
 	id INTEGER NOT NULL
@@ -12379,6 +16260,34 @@ CREATE TABLE pdbx_validate_peptide_omega (
 );
 
 --
+-- The value of the overall deviation from ideal plane for the atoms defining the plane.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE rmsd (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'angstroms_squared' ) NOT NULL
+);
+
+--
+-- The deviation from the plane per atom
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE atom_deviation (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'angstroms_squared' ) NOT NULL
+);
+
+--
 -- (quoted from pdbx_validate_planes_atomType)
 -- Data items in the PDBX_VALIDATE_PLANES_ATOM category list the residues that contain unexpected deviations from planes centers. Example 1 <PDBx:pdbx_validate_planes_atomCategory> <PDBx:pdbx_validate_planes_atom id="1"> <PDBx:PDB_ins_code xsi:nil="true" /> <PDBx:PDB_model_num>1</PDBx:PDB_model_num> <PDBx:atom_deviation>0.003</PDBx:atom_deviation> <PDBx:auth_asym_id>DG</PDBx:auth_asym_id> <PDBx:auth_atom_id>N1</PDBx:auth_atom_id> <PDBx:auth_comp_id>A</PDBx:auth_comp_id> <PDBx:auth_seq_id>3</PDBx:auth_seq_id> <PDBx:plane_id>1</PDBx:plane_id> </PDBx:pdbx_validate_planes_atom> <PDBx:pdbx_validate_planes_atom id="2"> <PDBx:PDB_ins_code xsi:nil="true" /> <PDBx:PDB_model_num>1</PDBx:PDB_model_num> <PDBx:atom_deviation>0.011</PDBx:atom_deviation> <PDBx:auth_asym_id>DG</PDBx:auth_asym_id> <PDBx:auth_atom_id>C2</PDBx:auth_atom_id> <PDBx:auth_comp_id>A</PDBx:auth_comp_id> <PDBx:auth_seq_id>3</PDBx:auth_seq_id> <PDBx:plane_id>1</PDBx:plane_id> </PDBx:pdbx_validate_planes_atom> <PDBx:pdbx_validate_planes_atom id="3"> <PDBx:PDB_ins_code xsi:nil="true" /> <PDBx:PDB_model_num>1</PDBx:PDB_model_num> <PDBx:atom_deviation>0.074</PDBx:atom_deviation> <PDBx:auth_asym_id>DG</PDBx:auth_asym_id> <PDBx:auth_atom_id>N2</PDBx:auth_atom_id> <PDBx:auth_comp_id>A</PDBx:auth_comp_id> <PDBx:auth_seq_id>3</PDBx:auth_seq_id> <PDBx:plane_id>1</PDBx:plane_id> </PDBx:pdbx_validate_planes_atom> <PDBx:pdbx_validate_planes_atom id="4"> <PDBx:PDB_ins_code xsi:nil="true" /> <PDBx:PDB_model_num>1</PDBx:PDB_model_num> <PDBx:atom_deviation>0.005</PDBx:atom_deviation> <PDBx:auth_asym_id>DG</PDBx:auth_asym_id> <PDBx:auth_atom_id>N3</PDBx:auth_atom_id> <PDBx:auth_comp_id>A</PDBx:auth_comp_id> <PDBx:auth_seq_id>3</PDBx:auth_seq_id> <PDBx:plane_id>1</PDBx:plane_id> </PDBx:pdbx_validate_planes_atom> <PDBx:pdbx_validate_planes_atom id="5"> <PDBx:PDB_ins_code xsi:nil="true" /> <PDBx:PDB_model_num>1</PDBx:PDB_model_num> <PDBx:atom_deviation>0.010</PDBx:atom_deviation> <PDBx:auth_asym_id>DG</PDBx:auth_asym_id> <PDBx:auth_atom_id>C4</PDBx:auth_atom_id> <PDBx:auth_comp_id>A</PDBx:auth_comp_id> <PDBx:auth_seq_id>3</PDBx:auth_seq_id> <PDBx:plane_id>1</PDBx:plane_id> </PDBx:pdbx_validate_planes_atom> <PDBx:pdbx_validate_planes_atom id="6"> <PDBx:PDB_ins_code xsi:nil="true" /> <PDBx:PDB_model_num>1</PDBx:PDB_model_num> <PDBx:atom_deviation>0.029</PDBx:atom_deviation> <PDBx:auth_asym_id>DG</PDBx:auth_asym_id> <PDBx:auth_atom_id>C5</PDBx:auth_atom_id> <PDBx:auth_comp_id>A</PDBx:auth_comp_id> <PDBx:auth_seq_id>3</PDBx:auth_seq_id> <PDBx:plane_id>1</PDBx:plane_id> </PDBx:pdbx_validate_planes_atom> <PDBx:pdbx_validate_planes_atom id="7"> <PDBx:PDB_ins_code xsi:nil="true" /> <PDBx:PDB_model_num>1</PDBx:PDB_model_num> <PDBx:atom_deviation>0.039</PDBx:atom_deviation> <PDBx:auth_asym_id>DG</PDBx:auth_asym_id> <PDBx:auth_atom_id>C6</PDBx:auth_atom_id> <PDBx:auth_comp_id>A</PDBx:auth_comp_id> <PDBx:auth_seq_id>3</PDBx:auth_seq_id> <PDBx:plane_id>1</PDBx:plane_id> </PDBx:pdbx_validate_planes_atom> <PDBx:pdbx_validate_planes_atom id="8"> <PDBx:PDB_ins_code xsi:nil="true" /> <PDBx:PDB_model_num>1</PDBx:PDB_model_num> <PDBx:atom_deviation>0.074</PDBx:atom_deviation> <PDBx:auth_asym_id>DG</PDBx:auth_asym_id> <PDBx:auth_atom_id>O6</PDBx:auth_atom_id> <PDBx:auth_comp_id>A</PDBx:auth_comp_id> <PDBx:auth_seq_id>3</PDBx:auth_seq_id> <PDBx:plane_id>1</PDBx:plane_id> </PDBx:pdbx_validate_planes_atom> <PDBx:pdbx_validate_planes_atom id="9"> <PDBx:PDB_ins_code xsi:nil="true" /> <PDBx:PDB_model_num>1</PDBx:PDB_model_num> <PDBx:atom_deviation>0.050</PDBx:atom_deviation> <PDBx:auth_asym_id>DG</PDBx:auth_asym_id> <PDBx:auth_atom_id>N7</PDBx:auth_atom_id> <PDBx:auth_comp_id>A</PDBx:auth_comp_id> <PDBx:auth_seq_id>3</PDBx:auth_seq_id> <PDBx:plane_id>1</PDBx:plane_id> </PDBx:pdbx_validate_planes_atom> <PDBx:pdbx_validate_planes_atom id="10"> <PDBx:PDB_ins_code xsi:nil="true" /> <PDBx:PDB_model_num>1</PDBx:PDB_model_num> <PDBx:atom_deviation>0.129</PDBx:atom_deviation> <PDBx:auth_asym_id>DG</PDBx:auth_asym_id> <PDBx:auth_atom_id>C8</PDBx:auth_atom_id> <PDBx:auth_comp_id>A</PDBx:auth_comp_id> <PDBx:auth_seq_id>3</PDBx:auth_seq_id> <PDBx:plane_id>1</PDBx:plane_id> </PDBx:pdbx_validate_planes_atom> <PDBx:pdbx_validate_planes_atom id="11"> <PDBx:PDB_ins_code xsi:nil="true" /> <PDBx:PDB_model_num>1</PDBx:PDB_model_num> <PDBx:atom_deviation>0.033</PDBx:atom_deviation> <PDBx:auth_asym_id>DG</PDBx:auth_asym_id> <PDBx:auth_atom_id>N9</PDBx:auth_atom_id> <PDBx:auth_comp_id>A</PDBx:auth_comp_id> <PDBx:auth_seq_id>3</PDBx:auth_seq_id> <PDBx:plane_id>1</PDBx:plane_id> </PDBx:pdbx_validate_planes_atom> <PDBx:pdbx_validate_planes_atom id="12"> <PDBx:PDB_ins_code xsi:nil="true" /> <PDBx:PDB_model_num>1</PDBx:PDB_model_num> <PDBx:atom_deviation>0.147</PDBx:atom_deviation> <PDBx:auth_asym_id>DG</PDBx:auth_asym_id> <PDBx:auth_atom_id>C1&apos;</PDBx:auth_atom_id> <PDBx:auth_comp_id>A</PDBx:auth_comp_id> <PDBx:auth_seq_id>3</PDBx:auth_seq_id> <PDBx:plane_id>1</PDBx:plane_id> </PDBx:pdbx_validate_planes_atom> <PDBx:pdbx_validate_planes_atom id="1"> <PDBx:PDB_ins_code xsi:nil="true" /> <PDBx:PDB_model_num>1</PDBx:PDB_model_num> <PDBx:atom_deviation>0.069</PDBx:atom_deviation> <PDBx:auth_asym_id>DT</PDBx:auth_asym_id> <PDBx:auth_atom_id>N1</PDBx:auth_atom_id> <PDBx:auth_comp_id>A</PDBx:auth_comp_id> <PDBx:auth_seq_id>4</PDBx:auth_seq_id> <PDBx:plane_id>2</PDBx:plane_id> </PDBx:pdbx_validate_planes_atom> </PDBx:pdbx_validate_planes_atomCategory>
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
@@ -12389,7 +16298,6 @@ CREATE TABLE pdbx_validate_planes_atom (
 	document_id TEXT ,
 	"PDB_ins_code" TEXT ,
 	"PDB_model_num" INTEGER ,
-	atom_deviation DECIMAL ,
 	auth_asym_id TEXT ,
 	auth_atom_id TEXT ,
 	auth_comp_id TEXT ,
@@ -12419,11 +16327,38 @@ CREATE TABLE pdbx_validate_polymer_linkage (
 	auth_comp_id_2 TEXT ,
 	auth_seq_id_1 TEXT ,
 	auth_seq_id_2 TEXT ,
-	dist DECIMAL ,
 	label_alt_id_1 TEXT ,
 	label_alt_id_2 TEXT ,
 -- ATTRIBUTE
 	id INTEGER NOT NULL
+);
+
+--
+-- The target value of the bond angle
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE angle_target_value (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'degrees' ) NOT NULL
+);
+
+--
+-- The value of the bond angle
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE angle_value (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'degrees' ) NOT NULL
 );
 
 --
@@ -12439,10 +16374,7 @@ CREATE TABLE pdbx_validate_rmsd_angle (
 	"PDB_ins_code_2" TEXT ,
 	"PDB_ins_code_3" TEXT ,
 	"PDB_model_num" INTEGER ,
-	angle_deviation DECIMAL ,
 	angle_standard_deviation DECIMAL CHECK ( angle_standard_deviation >= 0.0 ) ,
-	angle_target_value DECIMAL ,
-	angle_value DECIMAL ,
 	auth_asym_id_1 TEXT ,
 	auth_asym_id_2 TEXT ,
 	auth_asym_id_3 TEXT ,
@@ -12483,7 +16415,6 @@ CREATE TABLE pdbx_validate_rmsd_bond (
 	auth_comp_id_2 TEXT ,
 	auth_seq_id_1 TEXT ,
 	auth_seq_id_2 TEXT ,
-	bond_deviation DECIMAL ,
 	bond_standard_deviation DECIMAL CHECK ( bond_standard_deviation >= 0.0 ) ,
 	bond_target_value DECIMAL CHECK ( bond_target_value >= 0.0 ) ,
 	bond_value DECIMAL CHECK ( bond_value >= 0.0 ) ,
@@ -12514,7 +16445,6 @@ CREATE TABLE pdbx_validate_symm_contact (
 	auth_comp_id_2 TEXT ,
 	auth_seq_id_1 TEXT ,
 	auth_seq_id_2 TEXT ,
-	dist DECIMAL ,
 	label_alt_id_1 TEXT ,
 	label_alt_id_2 TEXT ,
 	site_symmetry_1 TEXT ,
@@ -12624,8 +16554,6 @@ CREATE TABLE pdbx_virtual_angle (
 	atom_site_label_seq_id_1 INTEGER ,
 	atom_site_label_seq_id_2 INTEGER ,
 	atom_site_label_seq_id_3 INTEGER ,
-	value DECIMAL ,
-	value_esd DECIMAL ,
 -- ATTRIBUTE
 	atom_site_id_1 TEXT NOT NULL ,
 -- ATTRIBUTE
@@ -12670,7 +16598,6 @@ CREATE TABLE pdbx_virtual_bond (
 	atom_site_label_seq_id_1 INTEGER ,
 	atom_site_label_seq_id_2 INTEGER ,
 	dist DECIMAL CHECK ( dist >= 0.0 ) ,
-	dist_esd DECIMAL ,
 -- ATTRIBUTE
 	atom_site_id_1 TEXT NOT NULL ,
 -- ATTRIBUTE
@@ -12728,8 +16655,6 @@ CREATE TABLE pdbx_virtual_torsion (
 	atom_site_label_seq_id_2 INTEGER ,
 	atom_site_label_seq_id_3 INTEGER ,
 	atom_site_label_seq_id_4 INTEGER ,
-	value DECIMAL ,
-	value_esd DECIMAL ,
 -- ATTRIBUTE
 	atom_site_id_1 TEXT NOT NULL ,
 -- ATTRIBUTE
@@ -12910,6 +16835,104 @@ CREATE TABLE "phasing_MIR" (
 );
 
 --
+-- The calculated value of the structure factor for this derivative, in electrons.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "F_calc" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'electrons' ) NOT NULL
+);
+
+--
+-- The calculated value of the structure factor for this derivative, in arbitrary units.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "F_calc_au" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'arbitrary' ) NOT NULL
+);
+
+--
+-- The measured value of the structure factor for this derivative, in electrons.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "F_meas" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'electrons' ) NOT NULL
+);
+
+--
+-- The measured value of the structure factor for this derivative, in arbitrary units.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "F_meas_au" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'arbitrary' ) NOT NULL
+);
+
+--
+-- The standard uncertainty (estimated standard deviation) of attribute F_meas in category phasing_MIR_der_refln, in electrons.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "F_meas_sigma" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'electrons' ) NOT NULL
+);
+
+--
+-- The standard uncertainty (estimated standard deviation) of attribute F_meas_au in category phasing_MIR_der_refln, in arbitrary units.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "F_meas_sigma_au" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'arbitrary' ) NOT NULL
+);
+
+--
+-- The calculated value of the structure-factor phase based on the heavy-atom model for this derivative in degrees.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE phase_calc (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'degrees' ) NOT NULL
+);
+
+--
 -- (quoted from phasing_MIR_der_reflnType)
 -- Data items in the PHASING_MIR_DER_REFLN category record details about the calculated structure factors obtained in an MIR phasing experiment. This list may contain information from a number of different derivatives; attribute der_id in category phasing_MIR_der_refln indicates to which derivative a given record corresponds. (A derivative in this context does not necessarily equate with a data set; see the definition of the PHASING_MIR_DER category for a discussion of the meaning of derivative.) It is not necessary for the data items describing the measured value of F to appear in this list, as they will be given in the PHASING_SET_REFLN category. However, these items can also be listed here for completeness. Example 1 - based on laboratory records for the 6,1,25 reflection of an Hg/Pt derivative of protein NS1. <PDBx:phasing_MIR_der_reflnCategory> <PDBx:phasing_MIR_der_refln der_id="HGPT1" index_h="6" index_k="1" index_l="25" set_id="NS1-96"> <PDBx:F_calc_au>106.66</PDBx:F_calc_au> <PDBx:F_meas_au>204.67</PDBx:F_meas_au> <PDBx:F_meas_sigma>6.21</PDBx:F_meas_sigma> <PDBx:HL_A_iso>-3.15</PDBx:HL_A_iso> <PDBx:HL_B_iso>-0.76</PDBx:HL_B_iso> <PDBx:HL_C_iso>0.65</PDBx:HL_C_iso> <PDBx:HL_D_iso>0.23</PDBx:HL_D_iso> <PDBx:phase_calc>194.48</PDBx:phase_calc> </PDBx:phasing_MIR_der_refln> </PDBx:phasing_MIR_der_reflnCategory>
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
@@ -12918,17 +16941,10 @@ CREATE TABLE "phasing_MIR" (
 CREATE TABLE "phasing_MIR_der_refln" (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
-	"F_calc" DECIMAL ,
-	"F_calc_au" DECIMAL ,
-	"F_meas" DECIMAL ,
-	"F_meas_au" DECIMAL ,
-	"F_meas_sigma" DECIMAL ,
-	"F_meas_sigma_au" DECIMAL ,
 	"HL_A_iso" DECIMAL ,
 	"HL_B_iso" DECIMAL ,
 	"HL_C_iso" DECIMAL ,
 	"HL_D_iso" DECIMAL ,
-	phase_calc DECIMAL ,
 -- ATTRIBUTE
 	der_id TEXT NOT NULL ,
 -- ATTRIBUTE
@@ -12979,6 +16995,34 @@ CREATE TABLE "phasing_MIR_der_shell" (
 );
 
 --
+-- Isotropic displacement parameter for this heavy-atom site in this derivative.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "B_iso" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'angstroms' ) NOT NULL
+);
+
+--
+-- The standard uncertainty (estimated standard deviation) of attribute B_iso in category phasing_MIR_der_site.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "B_iso_esd" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'angstroms' ) NOT NULL
+);
+
+--
 -- (quoted from phasing_MIR_der_siteType)
 -- Data items in the PHASING_MIR_DER_SITE category record details about the heavy-atom sites in an MIR phasing experiment. This list may contain information from a number of different derivatives; attribute der_id in category phasing_MIR_der_site indicates to which derivative a given record corresponds. (A derivative in this context does not necessarily equate with a data set; see the definition of the PHASING_MIR_DER category for a discussion of the meaning of derivative.) Example 1 - based on a paper by Zanotti et al. [J. Biol. Chem. (1993), 268, 10728-10738] with occupancies converted from electrons to fractional. <PDBx:phasing_MIR_der_siteCategory> <PDBx:phasing_MIR_der_site der_id="KAu(CN)2" id="1"> <PDBx:B_iso>33.0</PDBx:B_iso> <PDBx:atom_type_symbol>Au</PDBx:atom_type_symbol> <PDBx:fract_x>0.082</PDBx:fract_x> <PDBx:fract_y>0.266</PDBx:fract_y> <PDBx:fract_z>0.615</PDBx:fract_z> <PDBx:occupancy>0.40</PDBx:occupancy> </PDBx:phasing_MIR_der_site> <PDBx:phasing_MIR_der_site der_id="KAu(CN)2" id="2"> <PDBx:B_iso>25.9</PDBx:B_iso> <PDBx:atom_type_symbol>Au</PDBx:atom_type_symbol> <PDBx:fract_x>0.607</PDBx:fract_x> <PDBx:fract_y>0.217</PDBx:fract_y> <PDBx:fract_z>0.816</PDBx:fract_z> <PDBx:occupancy>0.03</PDBx:occupancy> </PDBx:phasing_MIR_der_site> <PDBx:phasing_MIR_der_site der_id="KAu(CN)2" id="3"> <PDBx:B_iso>15.7</PDBx:B_iso> <PDBx:atom_type_symbol>Au</PDBx:atom_type_symbol> <PDBx:fract_x>0.263</PDBx:fract_x> <PDBx:fract_y>0.782</PDBx:fract_y> <PDBx:fract_z>0.906</PDBx:fract_z> <PDBx:occupancy>0.02</PDBx:occupancy> </PDBx:phasing_MIR_der_site> <PDBx:phasing_MIR_der_site der_id="K2HgI4" id="1"> <PDBx:B_iso>33.7</PDBx:B_iso> <PDBx:atom_type_symbol>Hg</PDBx:atom_type_symbol> <PDBx:fract_x>0.048</PDBx:fract_x> <PDBx:fract_y>0.286</PDBx:fract_y> <PDBx:fract_z>0.636</PDBx:fract_z> <PDBx:occupancy>0.63</PDBx:occupancy> </PDBx:phasing_MIR_der_site> <PDBx:phasing_MIR_der_site der_id="K2HgI4" id="2"> <PDBx:B_iso>36.7</PDBx:B_iso> <PDBx:atom_type_symbol>Hg</PDBx:atom_type_symbol> <PDBx:fract_x>0.913</PDBx:fract_x> <PDBx:fract_y>0.768</PDBx:fract_y> <PDBx:fract_z>0.889</PDBx:fract_z> <PDBx:occupancy>0.34</PDBx:occupancy> </PDBx:phasing_MIR_der_site> <PDBx:phasing_MIR_der_site der_id="K2HgI4" id="3"> <PDBx:B_iso>24.2</PDBx:B_iso> <PDBx:atom_type_symbol>Hg</PDBx:atom_type_symbol> <PDBx:fract_x>0.974</PDBx:fract_x> <PDBx:fract_y>0.455</PDBx:fract_y> <PDBx:fract_z>0.974</PDBx:fract_z> <PDBx:occupancy>0.23</PDBx:occupancy> </PDBx:phasing_MIR_der_site> <PDBx:phasing_MIR_der_site der_id="K2HgI4" id="4"> <PDBx:B_iso>14.7</PDBx:B_iso> <PDBx:atom_type_symbol>Hg</PDBx:atom_type_symbol> <PDBx:fract_x>0.903</PDBx:fract_x> <PDBx:fract_y>0.836</PDBx:fract_y> <PDBx:fract_z>0.859</PDBx:fract_z> <PDBx:occupancy>0.28</PDBx:occupancy> </PDBx:phasing_MIR_der_site> <PDBx:phasing_MIR_der_site der_id="K2HgI4" id="5"> <PDBx:B_iso>6.4</PDBx:B_iso> <PDBx:atom_type_symbol>Hg</PDBx:atom_type_symbol> <PDBx:fract_x>0.489</PDBx:fract_x> <PDBx:fract_y>0.200</PDBx:fract_y> <PDBx:fract_z>0.885</PDBx:fract_z> <PDBx:occupancy>0.07</PDBx:occupancy> </PDBx:phasing_MIR_der_site> <PDBx:phasing_MIR_der_site der_id="K2HgI4" id="6"> <PDBx:B_iso>32.9</PDBx:B_iso> <PDBx:atom_type_symbol>Hg</PDBx:atom_type_symbol> <PDBx:fract_x>0.162</PDBx:fract_x> <PDBx:fract_y>0.799</PDBx:fract_y> <PDBx:fract_z>0.889</PDBx:fract_z> <PDBx:occupancy>0.07</PDBx:occupancy> </PDBx:phasing_MIR_der_site> <PDBx:phasing_MIR_der_site der_id="K3IrCl6" id="1"> <PDBx:B_iso>40.8</PDBx:B_iso> <PDBx:atom_type_symbol>Ir</PDBx:atom_type_symbol> <PDBx:fract_x>0.209</PDBx:fract_x> <PDBx:fract_y>0.739</PDBx:fract_y> <PDBx:fract_z>0.758</PDBx:fract_z> <PDBx:occupancy>0.26</PDBx:occupancy> </PDBx:phasing_MIR_der_site> <PDBx:phasing_MIR_der_site der_id="K3IrCl6" id="2"> <PDBx:B_iso>24.9</PDBx:B_iso> <PDBx:atom_type_symbol>Ir</PDBx:atom_type_symbol> <PDBx:fract_x>0.279</PDBx:fract_x> <PDBx:fract_y>0.613</PDBx:fract_y> <PDBx:fract_z>0.752</PDBx:fract_z> <PDBx:occupancy>0.05</PDBx:occupancy> </PDBx:phasing_MIR_der_site> </PDBx:phasing_MIR_der_siteCategory>
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
@@ -12987,14 +17031,6 @@ CREATE TABLE "phasing_MIR_der_shell" (
 CREATE TABLE "phasing_MIR_der_site" (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
-	"B_iso" DECIMAL ,
-	"B_iso_esd" DECIMAL ,
-	"Cartn_x" DECIMAL ,
-	"Cartn_x_esd" DECIMAL ,
-	"Cartn_y" DECIMAL ,
-	"Cartn_y_esd" DECIMAL ,
-	"Cartn_z" DECIMAL ,
-	"Cartn_z_esd" DECIMAL ,
 	atom_type_symbol TEXT ,
 	details TEXT ,
 	fract_x DECIMAL ,
@@ -13089,10 +17125,6 @@ CREATE TABLE phasing_isomorphous (
 CREATE TABLE phasing_set_refln (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
-	"F_meas" DECIMAL ,
-	"F_meas_au" DECIMAL ,
-	"F_meas_sigma" DECIMAL ,
-	"F_meas_sigma_au" DECIMAL ,
 -- ATTRIBUTE
 	index_h INTEGER NOT NULL ,
 -- ATTRIBUTE
@@ -13204,6 +17236,174 @@ CREATE TABLE publ_manuscript_incl (
 );
 
 --
+-- The maximum isotropic displacement parameter (B value) found in the coordinate set.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "B_iso_max" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'angstroms_squared' ) NOT NULL
+);
+
+--
+-- The mean isotropic displacement parameter (B value) for the coordinate set.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "B_iso_mean" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'angstroms_squared' ) NOT NULL
+);
+
+--
+-- The minimum isotropic displacement parameter (B value) found in the coordinate set.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "B_iso_min" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'angstroms_squared' ) NOT NULL
+);
+
+--
+-- The maximum value of the electron density in the final difference Fourier map.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE diff_density_max (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'electrons_per_angstroms_cubed' ) NOT NULL
+);
+
+--
+-- The standard uncertainty (estimated standard deviation) of attribute diff_density_max in category refine.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE diff_density_max_esd (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'electrons_per_angstroms_cubed' ) NOT NULL
+);
+
+--
+-- The minimum value of the electron density in the final difference Fourier map.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE diff_density_min (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'electrons_per_angstroms_cubed' ) NOT NULL
+);
+
+--
+-- The standard uncertainty (estimated standard deviation) of attribute diff_density_min in category refine.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE diff_density_min_esd (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'electrons_per_angstroms_cubed' ) NOT NULL
+);
+
+--
+-- The root-mean-square-deviation of the electron density in the final difference Fourier map. This value is measured with respect to the arithmetic mean density and is derived from summations over each grid point in the asymmetric unit of the cell. This quantity is useful for assessing the significance of the values of _refine.diff_density_min and _refine.diff_density_max, and also for defining suitable contour levels.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE diff_density_rms (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'electrons_per_angstroms_cubed' ) NOT NULL
+);
+
+--
+-- The standard uncertainty (estimated standard deviation) of attribute diff_density_rms in category refine.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE diff_density_rms_esd (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'electrons_per_angstroms_cubed' ) NOT NULL
+);
+
+--
+-- For bulk solvent mask calculation, the amount that the ionic radii of atoms, which can be ions, are increased used.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE pdbx_solvent_ion_probe_radii (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'angstroms' ) NOT NULL
+);
+
+--
+-- For bulk solvent mask calculation, amount mask is shrunk after taking away atoms with new radii and a constant value assigned to this new region.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE pdbx_solvent_shrinkage_radii (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'angstroms' ) NOT NULL
+);
+
+--
+-- For bulk solvent mask calculation, the value by which the vdw radii of non-ion atoms (like carbon) are increased and used.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE pdbx_solvent_vdw_probe_radii (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'angstroms' ) NOT NULL
+);
+
+--
 -- (quoted from refineType)
 -- Data items in the REFINE category record details about the structure-refinement parameters. Example 1 - based on PDB entry 5HVP and laboratory records for the structure corresponding to PDB entry 5HVP. <PDBx:refineCategory> <PDBx:refine entry_id="5HVP" pdbx_refine_id="X-ray"> <PDBx:ls_R_factor_obs>0.176</PDBx:ls_R_factor_obs> <PDBx:ls_number_parameters>7032</PDBx:ls_number_parameters> <PDBx:ls_number_reflns_obs>12901</PDBx:ls_number_reflns_obs> <PDBx:ls_number_restraints>6609</PDBx:ls_number_restraints> <PDBx:ls_weighting_details> Sigdel model of Konnert-Hendrickson: Sigdel: Afsig + Bfsig*(sin(theta)/lambda-1/6) Afsig = 22.0, Bfsig = -150.0 at beginning of refinement Afsig = 15.5, Bfsig = -50.0 at end of refinement</PDBx:ls_weighting_details> <PDBx:ls_weighting_scheme>calc</PDBx:ls_weighting_scheme> </PDBx:refine> </PDBx:refineCategory> Example 2 - based on data set TOZ of Willis, Beckwith & Tozer [Acta Cryst. (1991), C47, 2276-2277]. <PDBx:refineCategory> <PDBx:refine entry_id="TOZ" pdbx_refine_id="X-ray"> <PDBx:details>sfls:_F_calc_weight_full_matrix</PDBx:details> <PDBx:diff_density_max>.131</PDBx:diff_density_max> <PDBx:diff_density_min>-.108</PDBx:diff_density_min> <PDBx:ls_R_factor_all>.038</PDBx:ls_R_factor_all> <PDBx:ls_R_factor_obs>.034</PDBx:ls_R_factor_obs> <PDBx:ls_abs_structure_Flack>0</PDBx:ls_abs_structure_Flack> <PDBx:ls_abs_structure_details> The absolute configuration was assigned to agree with the known chirality at C3 arising from its precursor l-leucine.</PDBx:ls_abs_structure_details> <PDBx:ls_extinction_coef>3514</PDBx:ls_extinction_coef> <PDBx:ls_extinction_expression> Larson, A. C. (1970). &quot;Crystallographic Computing&quot;, edited by F. R. Ahmed. Eq. (22) p. 292. Copenhagen: Munksgaard.</PDBx:ls_extinction_expression> <PDBx:ls_extinction_method>Zachariasen</PDBx:ls_extinction_method> <PDBx:ls_goodness_of_fit_all>1.462</PDBx:ls_goodness_of_fit_all> <PDBx:ls_goodness_of_fit_obs>1.515</PDBx:ls_goodness_of_fit_obs> <PDBx:ls_hydrogen_treatment>refxyz except H332B noref</PDBx:ls_hydrogen_treatment> <PDBx:ls_matrix_type>full</PDBx:ls_matrix_type> <PDBx:ls_number_constraints>0</PDBx:ls_number_constraints> <PDBx:ls_number_parameters>272</PDBx:ls_number_parameters> <PDBx:ls_number_reflns_obs>1408</PDBx:ls_number_reflns_obs> <PDBx:ls_number_restraints>0</PDBx:ls_number_restraints> <PDBx:ls_shift_over_esd_max>.535</PDBx:ls_shift_over_esd_max> <PDBx:ls_shift_over_esd_mean>.044</PDBx:ls_shift_over_esd_mean> <PDBx:ls_structure_factor_coef>F</PDBx:ls_structure_factor_coef> <PDBx:ls_wR_factor_all>.044</PDBx:ls_wR_factor_all> <PDBx:ls_wR_factor_obs>.042</PDBx:ls_wR_factor_obs> <PDBx:ls_weighting_details>w=1/(\s^2^(F)+0.0004F^2^)</PDBx:ls_weighting_details> <PDBx:ls_weighting_scheme>calc</PDBx:ls_weighting_scheme> </PDBx:refine> </PDBx:refineCategory>
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
@@ -13222,24 +17422,9 @@ CREATE TYPE ENUM_refine_pdbx_TLS_residual_ADP_flag AS ENUM ( 'LIKELY RESIDUAL', 
 CREATE TABLE refine (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
-	"B_iso_max" DECIMAL ,
-	"B_iso_mean" DECIMAL ,
-	"B_iso_min" DECIMAL ,
-	"aniso_B11" DECIMAL ,
-	"aniso_B12" DECIMAL ,
-	"aniso_B13" DECIMAL ,
-	"aniso_B22" DECIMAL ,
-	"aniso_B23" DECIMAL ,
-	"aniso_B33" DECIMAL ,
 	"correlation_coeff_Fo_to_Fc" DECIMAL ,
 	"correlation_coeff_Fo_to_Fc_free" DECIMAL ,
 	details TEXT ,
-	diff_density_max DECIMAL ,
-	diff_density_max_esd DECIMAL ,
-	diff_density_min DECIMAL ,
-	diff_density_min_esd DECIMAL ,
-	diff_density_rms DECIMAL ,
-	diff_density_rms_esd DECIMAL ,
 	"ls_R_Fsqd_factor_obs" DECIMAL CHECK ( "ls_R_Fsqd_factor_obs" >= 0.0 ) ,
 	"ls_R_I_factor_obs" DECIMAL CHECK ( "ls_R_I_factor_obs" >= 0.0 ) ,
 	"ls_R_factor_R_free" DECIMAL CHECK ( "ls_R_factor_R_free" >= 0.0 ) ,
@@ -13335,9 +17520,6 @@ CREATE TABLE refine (
 	"pdbx_pd_proc_ls_prof_R_factor" DECIMAL ,
 	"pdbx_pd_proc_ls_prof_wR_factor" DECIMAL ,
 	"pdbx_real_space_R" DECIMAL ,
-	pdbx_solvent_ion_probe_radii DECIMAL ,
-	pdbx_solvent_shrinkage_radii DECIMAL ,
-	pdbx_solvent_vdw_probe_radii DECIMAL ,
 	pdbx_starting_model TEXT ,
 	pdbx_stereochem_target_val_spec_case TEXT ,
 	pdbx_stereochemistry_target_values TEXT ,
@@ -13366,11 +17548,94 @@ CREATE TABLE "refine_B_iso" (
 	pdbx_residue_num TEXT ,
 	pdbx_strand TEXT ,
 	treatment ENUM_refine_B_iso_treatment ,
-	value DECIMAL ,
 -- ATTRIBUTE
 	class TEXT NOT NULL ,
 -- ATTRIBUTE
 	pdbx_refine_id TEXT NOT NULL
+);
+
+--
+-- The estimated coordinate error obtained from the plot of the R value versus sin(theta)/lambda for the reflections treated as a test set during refinement. Ref: Luzzati, V. (1952). Traitement statistique des erreurs dans la determination des structures cristallines. Acta Cryst. 5, 802-810.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "Luzzati_coordinate_error_free" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'angstroms' ) NOT NULL
+);
+
+--
+-- The estimated coordinate error obtained from the plot of the R value versus sin(theta)/lambda for reflections classified as observed. Ref: Luzzati, V. (1952). Traitement statistique des erreurs dans la determination des structures cristallines. Acta Cryst. 5, 802-810.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "Luzzati_coordinate_error_obs" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'angstroms' ) NOT NULL
+);
+
+--
+-- The value of the low-resolution cutoff used in constructing the Luzzati plot for reflections treated as a test set during refinement. Ref: Luzzati, V. (1952). Traitement statistique des erreurs dans la determination des structures cristallines. Acta Cryst. 5, 802-810.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "Luzzati_d_res_low_free" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'angstroms' ) NOT NULL
+);
+
+--
+-- The value of the low-resolution cutoff used in constructing the Luzzati plot for reflections classified as observed. Ref: Luzzati, V. (1952). Traitement statistique des erreurs dans la determination des structures cristallines. Acta Cryst. 5, 802-810.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "Luzzati_d_res_low_obs" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'angstroms' ) NOT NULL
+);
+
+--
+-- The value of sigma~a~ used in constructing the Luzzati plot for the reflections treated as a test set during refinement. Details of the estimation of sigma~a~ can be specified in attribute Luzzati_sigma_a_free_details. in category refine_analyze Ref: Luzzati, V. (1952). Traitement statistique des erreurs dans la determination des structures cristallines. Acta Cryst. 5, 802-810.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "Luzzati_sigma_a_free" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'angstroms' ) NOT NULL
+);
+
+--
+-- The value of sigma~a~ used in constructing the Luzzati plot for reflections classified as observed. Details of the estimation of sigma~a~ can be specified in attribute Luzzati_sigma_a_obs_details. in category refine_analyze Ref: Luzzati, V. (1952). Traitement statistique des erreurs dans la determination des structures cristallines. Acta Cryst. 5, 802-810.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "Luzzati_sigma_a_obs" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'angstroms' ) NOT NULL
 );
 
 --
@@ -13382,13 +17647,7 @@ CREATE TABLE "refine_B_iso" (
 CREATE TABLE refine_analyze (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
-	"Luzzati_coordinate_error_free" DECIMAL ,
-	"Luzzati_coordinate_error_obs" DECIMAL ,
-	"Luzzati_d_res_low_free" DECIMAL ,
-	"Luzzati_d_res_low_obs" DECIMAL ,
-	"Luzzati_sigma_a_free" DECIMAL ,
 	"Luzzati_sigma_a_free_details" TEXT ,
-	"Luzzati_sigma_a_obs" DECIMAL ,
 	"Luzzati_sigma_a_obs_details" TEXT ,
 	"RG_d_res_high" DECIMAL CHECK ( "RG_d_res_high" >= 0.0 ) ,
 	"RG_d_res_low" DECIMAL CHECK ( "RG_d_res_low" >= 0.0 ) ,
@@ -13604,6 +17863,230 @@ CREATE TABLE refine_occupancy (
 );
 
 --
+-- The calculated value of structure-factor component A in electrons. A = |F|cos(phase)
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "A_calc" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'electrons' ) NOT NULL
+);
+
+--
+-- The calculated value of structure-factor component A in arbitrary units. A = |F|cos(phase)
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "A_calc_au" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'arbitrary' ) NOT NULL
+);
+
+--
+-- The measured value of structure-factor component A in electrons. A = |F|cos(phase)
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "A_meas" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'electrons' ) NOT NULL
+);
+
+--
+-- The measured value of structure-factor component A in arbitrary units. A = |F|cos(phase)
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "A_meas_au" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'arbitrary' ) NOT NULL
+);
+
+--
+-- The calculated value of structure-factor component B in electrons. B = |F|sin(phase)
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "B_calc" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'electrons' ) NOT NULL
+);
+
+--
+-- The calculated value of structure-factor component B in arbitrary units. B = |F|sin(phase)
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "B_calc_au" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'arbitrary' ) NOT NULL
+);
+
+--
+-- The measured value of structure-factor component B in electrons. B = |F|sin(phase)
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "B_meas" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'electrons' ) NOT NULL
+);
+
+--
+-- The measured value of structure-factor component B in arbitrary units. B = |F|sin(phase)
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "B_meas_au" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'arbitrary' ) NOT NULL
+);
+
+--
+-- The calculated value of the squared structure factor in electrons squared.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "F_squared_calc" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'electrons_squared' ) NOT NULL
+);
+
+--
+-- The measured value of the squared structure factor in electrons squared.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "F_squared_meas" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'electrons_squared' ) NOT NULL
+);
+
+--
+-- The standard uncertainty (derived from measurement) of the squared structure factor in electrons squared.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "F_squared_sigma" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'electrons_squared' ) NOT NULL
+);
+
+--
+-- The calculated value of the structure factor in arbitrary units reflecting only the contribution of the solvent model.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "pdbx_F_calc_part_solvent" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'arbitrary' ) NOT NULL
+);
+
+--
+-- The calculated value of the structure factor in arbitrary units including the contribution of the solvent model.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "pdbx_F_calc_with_solvent" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'arbitrary' ) NOT NULL
+);
+
+--
+-- The calculated structure-factor phase in degrees reflecting only the contribution of the solvent model.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE pdbx_phase_calc_part_solvent (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'degrees' ) NOT NULL
+);
+
+--
+-- The calculated structure-factor phase in degrees including the contribution of the solvent model.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE pdbx_phase_calc_with_solvent (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'degrees' ) NOT NULL
+);
+
+--
+-- The measured structure-factor phase in degrees.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE phase_meas (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'degrees' ) NOT NULL
+);
+
+--
 -- (quoted from reflnType)
 -- Data items in the REFLN category record details about the reflection data used to determine the ATOM_SITE data items. The REFLN data items refer to individual reflections and must be included in looped lists. The REFLNS data items specify the parameters that apply to all reflections. The REFLNS data items are not looped. Example 1 - based on data set fetod of Todres, Yanovsky, Ermekov & Struchkov [Acta Cryst. (1993), C49, 1352-1354]. <PDBx:reflnCategory> <PDBx:refln index_h="2" index_k="0" index_l="0"> <PDBx:F_squared_calc>85.57</PDBx:F_squared_calc> <PDBx:F_squared_meas>58.90</PDBx:F_squared_meas> <PDBx:F_squared_sigma>1.45</PDBx:F_squared_sigma> <PDBx:status>o</PDBx:status> </PDBx:refln> <PDBx:refln index_h="3" index_k="0" index_l="0"> <PDBx:F_squared_calc>15718.18</PDBx:F_squared_calc> <PDBx:F_squared_meas>15631.06</PDBx:F_squared_meas> <PDBx:F_squared_sigma>30.40</PDBx:F_squared_sigma> <PDBx:status>o</PDBx:status> </PDBx:refln> <PDBx:refln index_h="4" index_k="0" index_l="0"> <PDBx:F_squared_calc>55613.11</PDBx:F_squared_calc> <PDBx:F_squared_meas>49840.09</PDBx:F_squared_meas> <PDBx:F_squared_sigma>61.86</PDBx:F_squared_sigma> <PDBx:status>o</PDBx:status> </PDBx:refln> <PDBx:refln index_h="5" index_k="0" index_l="0"> <PDBx:F_squared_calc>246.85</PDBx:F_squared_calc> <PDBx:F_squared_meas>241.86</PDBx:F_squared_meas> <PDBx:F_squared_sigma>10.02</PDBx:F_squared_sigma> <PDBx:status>o</PDBx:status> </PDBx:refln> <PDBx:refln index_h="6" index_k="0" index_l="0"> <PDBx:F_squared_calc>82.16</PDBx:F_squared_calc> <PDBx:F_squared_meas>69.97</PDBx:F_squared_meas> <PDBx:F_squared_sigma>1.93</PDBx:F_squared_sigma> <PDBx:status>o</PDBx:status> </PDBx:refln> <PDBx:refln index_h="7" index_k="0" index_l="0"> <PDBx:F_squared_calc>1133.62</PDBx:F_squared_calc> <PDBx:F_squared_meas>947.79</PDBx:F_squared_meas> <PDBx:F_squared_sigma>11.78</PDBx:F_squared_sigma> <PDBx:status>o</PDBx:status> </PDBx:refln> <PDBx:refln index_h="8" index_k="0" index_l="0"> <PDBx:F_squared_calc>2558.04</PDBx:F_squared_calc> <PDBx:F_squared_meas>2453.33</PDBx:F_squared_meas> <PDBx:F_squared_sigma>20.44</PDBx:F_squared_sigma> <PDBx:status>o</PDBx:status> </PDBx:refln> <PDBx:refln index_h="9" index_k="0" index_l="0"> <PDBx:F_squared_calc>283.88</PDBx:F_squared_calc> <PDBx:F_squared_meas>393.66</PDBx:F_squared_meas> <PDBx:F_squared_sigma>7.79</PDBx:F_squared_sigma> <PDBx:status>o</PDBx:status> </PDBx:refln> <PDBx:refln index_h="10" index_k="0" index_l="0"> <PDBx:F_squared_calc>283.70</PDBx:F_squared_calc> <PDBx:F_squared_meas>171.98</PDBx:F_squared_meas> <PDBx:F_squared_sigma>4.26</PDBx:F_squared_sigma> <PDBx:status>o</PDBx:status> </PDBx:refln> </PDBx:reflnCategory>
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
@@ -13618,23 +18101,6 @@ CREATE TYPE ENUM_refln_status AS ENUM ( 'o', '<', '-', 'x', 'h', 'l', 'f' );
 CREATE TABLE refln (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
-	"A_calc" DECIMAL ,
-	"A_calc_au" DECIMAL ,
-	"A_meas" DECIMAL ,
-	"A_meas_au" DECIMAL ,
-	"B_calc" DECIMAL ,
-	"B_calc_au" DECIMAL ,
-	"B_meas" DECIMAL ,
-	"B_meas_au" DECIMAL ,
-	"F_calc" DECIMAL ,
-	"F_calc_au" DECIMAL ,
-	"F_meas" DECIMAL ,
-	"F_meas_au" DECIMAL ,
-	"F_meas_sigma" DECIMAL ,
-	"F_meas_sigma_au" DECIMAL ,
-	"F_squared_calc" DECIMAL ,
-	"F_squared_meas" DECIMAL ,
-	"F_squared_sigma" DECIMAL ,
 	class_code TEXT ,
 	crystal_id TEXT ,
 	d_spacing DECIMAL CHECK ( d_spacing >= 0.0 ) ,
@@ -13647,8 +18113,6 @@ CREATE TABLE refln (
 	"pdbx_DELFWT" DECIMAL ,
 	"pdbx_DELPHWT" DECIMAL ,
 	"pdbx_FWT" DECIMAL ,
-	"pdbx_F_calc_part_solvent" DECIMAL ,
-	"pdbx_F_calc_with_solvent" DECIMAL ,
 	"pdbx_F_minus" DECIMAL ,
 	"pdbx_F_minus_sigma" DECIMAL ,
 	"pdbx_F_plus" DECIMAL ,
@@ -13671,13 +18135,9 @@ CREATE TABLE refln (
 	"pdbx_fiber_F_meas_au" DECIMAL ,
 	pdbx_fiber_coordinate DECIMAL ,
 	pdbx_fiber_layer INTEGER ,
-	pdbx_phase_calc_part_solvent DECIMAL ,
-	pdbx_phase_calc_with_solvent DECIMAL ,
 	pdbx_phase_cycle DECIMAL ,
 	pdbx_r_free_flag INTEGER ,
 	pdbx_sin_phase_calc DECIMAL ,
-	phase_calc DECIMAL ,
-	phase_meas DECIMAL ,
 	refinement_status ENUM_refln_refinement_status ,
 	scale_group_code TEXT ,
 	sint_over_lambda DECIMAL CHECK ( sint_over_lambda >= 0.0 ) ,
@@ -13695,6 +18155,34 @@ CREATE TABLE refln (
 );
 
 --
+-- The measured value of the intensity in arbitrary units.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "I" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'arbitrary' ) NOT NULL
+);
+
+--
+-- The standard uncertainty (estimated standard deviation) of attribute I in category refln_sys_abs in arbitrary units.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "sigmaI" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'arbitrary' ) NOT NULL
+);
+
+--
 -- (quoted from refln_sys_absType)
 -- Data items in the REFLN_SYS_ABS category record details about the reflection data that should be systematically absent, given the designated space group. Example 1 - hypothetical example. <PDBx:refln_sys_absCategory> <PDBx:refln_sys_abs index_h="0" index_k="3" index_l="0"> <PDBx:I>28.32</PDBx:I> <PDBx:I_over_sigmaI>1.23</PDBx:I_over_sigmaI> <PDBx:sigmaI>22.95</PDBx:sigmaI> </PDBx:refln_sys_abs> <PDBx:refln_sys_abs index_h="0" index_k="5" index_l="0"> <PDBx:I>14.11</PDBx:I> <PDBx:I_over_sigmaI>0.86</PDBx:I_over_sigmaI> <PDBx:sigmaI>16.38</PDBx:sigmaI> </PDBx:refln_sys_abs> <PDBx:refln_sys_abs index_h="0" index_k="7" index_l="0"> <PDBx:I>114.81</PDBx:I> <PDBx:I_over_sigmaI>5.67</PDBx:I_over_sigmaI> <PDBx:sigmaI>20.22</PDBx:sigmaI> </PDBx:refln_sys_abs> <PDBx:refln_sys_abs index_h="0" index_k="9" index_l="0"> <PDBx:I>32.99</PDBx:I> <PDBx:I_over_sigmaI>1.35</PDBx:I_over_sigmaI> <PDBx:sigmaI>24.51</PDBx:sigmaI> </PDBx:refln_sys_abs> </PDBx:refln_sys_absCategory>
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
@@ -13703,15 +18191,55 @@ CREATE TABLE refln (
 CREATE TABLE refln_sys_abs (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
-	"I" DECIMAL ,
 	"I_over_sigmaI" DECIMAL ,
-	"sigmaI" DECIMAL ,
 -- ATTRIBUTE
 	index_h INTEGER NOT NULL ,
 -- ATTRIBUTE
 	index_k INTEGER NOT NULL ,
 -- ATTRIBUTE
 	index_l INTEGER NOT NULL
+);
+
+--
+-- The value of the overall isotropic displacement parameter estimated from the slope of the Wilson plot.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "B_iso_Wilson_estimate" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'angstroms_squared' ) NOT NULL
+);
+
+--
+-- Resolution (angstrom) for reflections with <I>/<sigma(I)> = 2.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "pdbx_res_netI_over_av_sigmaI_2" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'angstroms' ) NOT NULL
+);
+
+--
+-- Resolution (angstroms) for reflections with <I/sigma(I)> = 2.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "pdbx_res_netI_over_sigmaI_2" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'angstroms' ) NOT NULL
 );
 
 --
@@ -13723,7 +18251,6 @@ CREATE TABLE refln_sys_abs (
 CREATE TABLE reflns (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
-	"B_iso_Wilson_estimate" DECIMAL ,
 	"Friedel_coverage" DECIMAL CHECK ( "Friedel_coverage" >= 0.0 AND "Friedel_coverage" <= 1.0 ) ,
 	"R_free_details" TEXT ,
 	"Rmerge_F_all" DECIMAL CHECK ( "Rmerge_F_all" >= 0.0 ) ,
@@ -13772,8 +18299,6 @@ CREATE TABLE reflns (
 	pdbx_number_measured_all INTEGER ,
 	pdbx_redundancy DECIMAL ,
 	pdbx_redundancy_reflns_obs DECIMAL ,
-	"pdbx_res_netI_over_av_sigmaI_2" DECIMAL ,
-	"pdbx_res_netI_over_sigmaI_2" DECIMAL ,
 	pdbx_scaling_rejects INTEGER ,
 	percent_possible_obs DECIMAL CHECK ( percent_possible_obs >= 0.0 AND percent_possible_obs <= 100.0 ) ,
 	phase_calculation_details TEXT ,
@@ -14071,6 +18596,20 @@ CREATE TABLE struct_conf (
 );
 
 --
+-- Distance value for this contact.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE pdbx_dist_value (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'angstroms' ) NOT NULL
+);
+
+--
 -- (quoted from struct_connType)
 -- Data items in the STRUCT_CONN category record details about the connections between portions of the structure. These can be hydrogen bonds, salt bridges, disulfide bridges and so on. The STRUCT_CONN_TYPE records define the criteria used to identify these connections. Example 1 - based on PDB entry 5HVP and laboratory records for the structure corresponding to PDB entry 5HVP. <PDBx:struct_connCategory> <PDBx:struct_conn id="C1"> <PDBx:conn_type_id>saltbr</PDBx:conn_type_id> <PDBx:details xsi:nil="true" /> <PDBx:ptnr1_label_asym_id>A</PDBx:ptnr1_label_asym_id> <PDBx:ptnr1_label_atom_id>NZ1</PDBx:ptnr1_label_atom_id> <PDBx:ptnr1_label_comp_id>ARG</PDBx:ptnr1_label_comp_id> <PDBx:ptnr1_label_seq_id>87</PDBx:ptnr1_label_seq_id> <PDBx:ptnr1_role>positive</PDBx:ptnr1_role> <PDBx:ptnr1_symmetry>1_555</PDBx:ptnr1_symmetry> <PDBx:ptnr2_label_asym_id>A</PDBx:ptnr2_label_asym_id> <PDBx:ptnr2_label_atom_id>OE1</PDBx:ptnr2_label_atom_id> <PDBx:ptnr2_label_comp_id>GLU</PDBx:ptnr2_label_comp_id> <PDBx:ptnr2_label_seq_id>92</PDBx:ptnr2_label_seq_id> <PDBx:ptnr2_role>negative</PDBx:ptnr2_role> <PDBx:ptnr2_symmetry>1_555</PDBx:ptnr2_symmetry> </PDBx:struct_conn> <PDBx:struct_conn id="C2"> <PDBx:conn_type_id>hydrog</PDBx:conn_type_id> <PDBx:details xsi:nil="true" /> <PDBx:ptnr1_label_asym_id>B</PDBx:ptnr1_label_asym_id> <PDBx:ptnr1_label_atom_id>N</PDBx:ptnr1_label_atom_id> <PDBx:ptnr1_label_comp_id>ARG</PDBx:ptnr1_label_comp_id> <PDBx:ptnr1_label_seq_id>287</PDBx:ptnr1_label_seq_id> <PDBx:ptnr1_role>donor</PDBx:ptnr1_role> <PDBx:ptnr1_symmetry>1_555</PDBx:ptnr1_symmetry> <PDBx:ptnr2_label_asym_id>B</PDBx:ptnr2_label_asym_id> <PDBx:ptnr2_label_atom_id>O</PDBx:ptnr2_label_atom_id> <PDBx:ptnr2_label_comp_id>GLY</PDBx:ptnr2_label_comp_id> <PDBx:ptnr2_label_seq_id>292</PDBx:ptnr2_label_seq_id> <PDBx:ptnr2_role>acceptor</PDBx:ptnr2_role> <PDBx:ptnr2_symmetry>1_555</PDBx:ptnr2_symmetry> </PDBx:struct_conn> </PDBx:struct_connCategory>
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
@@ -14086,7 +18625,6 @@ CREATE TABLE struct_conn (
 	conn_type_id TEXT ,
 	details TEXT ,
 	"pdbx_PDB_id" TEXT ,
-	pdbx_dist_value DECIMAL ,
 	pdbx_leaving_atom_flag ENUM_struct_conn_pdbx_leaving_atom_flag ,
 	"pdbx_ptnr1_PDB_ins_code" TEXT ,
 	pdbx_ptnr1_auth_alt_id TEXT ,
@@ -14154,6 +18692,20 @@ CREATE TABLE struct_keywords (
 );
 
 --
+-- An ideal cis peptide bond would have an omega torsion angle of zero. This data item gives the value in degrees by which the observed torsion angle can differ from 0.0 and still be considered cis. 30.0
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE prot_cis (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'degrees' ) NOT NULL
+);
+
+--
 -- (quoted from struct_mon_detailsType)
 -- Data items in the STRUCT_MON_DETAILS category record details about specifics of calculations summarized in data items in the STRUCT_MON_PROT and STRUCT_MON_NUCL categories. These can include the coefficients used in map calculations, the radii used for including points in a calculation and so on.
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
@@ -14164,9 +18716,246 @@ CREATE TABLE struct_mon_details (
 	document_id TEXT ,
 	"RSCC" TEXT ,
 	"RSR" TEXT ,
-	prot_cis DECIMAL ,
 -- ATTRIBUTE
 	entry_id TEXT NOT NULL
+);
+
+--
+-- P is the phase angle of pseudorotation for five-membered rings. For ribose and deoxyribose sugars in nucleic acids (tau4 +tau1)-(tau3+tau0) P = ATAN (-------------------------) 2tau2 (sin 36+sin 72) If tau2 is <0, then P=P+180 degree (Altona & Sundaralingam, 1972). Ref: Altona, C. & Sundaralingam, M. (1972). J. Am. Chem. Soc. 94, 8205-8212.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "P" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'degrees' ) NOT NULL
+);
+
+--
+-- The value in degrees of the sugar-base torsion angle chi1 (O4'-C1'-N1-C2).
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE chi1 (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'degrees' ) NOT NULL
+);
+
+--
+-- The value in degrees of the sugar-base torsion angle chi2 (O4'-C1'-N9-C4).
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE chi2 (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'degrees' ) NOT NULL
+);
+
+--
+-- The value in degrees of the backbone torsion angle delta (C5'-C4'-C3'-O3').
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE delta (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'degrees' ) NOT NULL
+);
+
+--
+-- The value in degrees of the backbone torsion angle epsilon (C4'-C3'-O3'-P).
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE epsilon (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'degrees' ) NOT NULL
+);
+
+--
+-- The value in degrees of the sugar torsion angle nu0 (C4'-O4'-C1'-C2').
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE nu0 (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'degrees' ) NOT NULL
+);
+
+--
+-- The value in degrees of the sugar torsion angle nu1 (O4'-C1'-C2'-C3').
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE nu1 (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'degrees' ) NOT NULL
+);
+
+--
+-- The value in degrees of the sugar torsion angle nu2 (C1'-C2'-C3'-C4').
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE nu2 (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'degrees' ) NOT NULL
+);
+
+--
+-- The value in degrees of the sugar torsion angle nu3 (C2'-C3'-C4'-O4').
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE nu3 (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'degrees' ) NOT NULL
+);
+
+--
+-- The value in degrees of the sugar torsion angle nu4 (C3'-C4'-O4'-C1').
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE nu4 (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'degrees' ) NOT NULL
+);
+
+--
+-- The value in degrees of the sugar torsion angle tau0 (C4'-O4'-C1'-C2').
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE tau0 (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'degrees' ) NOT NULL
+);
+
+--
+-- The value in degrees of the sugar torsion angle tau1 (O4'-C1'-C2'-C3').
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE tau1 (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'degrees' ) NOT NULL
+);
+
+--
+-- The value in degrees of the sugar torsion angle tau2 (C1'-C2'-C3'-C4').
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE tau2 (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'degrees' ) NOT NULL
+);
+
+--
+-- The value in degrees of the sugar torsion angle tau3 (C2'-C3'-C4'-O4').
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE tau3 (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'degrees' ) NOT NULL
+);
+
+--
+-- The value in degrees of the sugar torsion angle tau4 (C3'-C4'-O4'-C1').
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE tau4 (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'degrees' ) NOT NULL
+);
+
+--
+-- The maximum amplitude of puckering. This is derived from the pseudorotation value P and the torsion angles in the ribose ring. Tau2= Taum cosP Tau3= Taum cos(P+144) Tau4= Taum cos(P+288) Tau0= Taum cos(P+ 72) Tau1= Taum cos(P+216)
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE taum (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'degrees' ) NOT NULL
+);
+
+--
+-- The value in degrees of the backbone torsion angle zeta (C3'-O3'-P-O5').
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE zeta (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'degrees' ) NOT NULL
 );
 
 --
@@ -14178,7 +18967,6 @@ CREATE TABLE struct_mon_details (
 CREATE TABLE struct_mon_nucl (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
-	"P" DECIMAL ,
 	"RSCC_all" DECIMAL ,
 	"RSCC_base" DECIMAL ,
 	"RSCC_phos" DECIMAL ,
@@ -14187,33 +18975,14 @@ CREATE TABLE struct_mon_nucl (
 	"RSR_base" DECIMAL ,
 	"RSR_phos" DECIMAL ,
 	"RSR_sugar" DECIMAL ,
-	alpha DECIMAL ,
 	auth_asym_id TEXT ,
 	auth_comp_id TEXT ,
 	auth_seq_id TEXT ,
-	beta DECIMAL ,
-	chi1 DECIMAL ,
-	chi2 DECIMAL ,
-	delta DECIMAL ,
 	details DECIMAL ,
-	epsilon DECIMAL ,
-	gamma DECIMAL ,
 	"mean_B_all" DECIMAL ,
 	"mean_B_base" DECIMAL ,
 	"mean_B_phos" DECIMAL ,
 	"mean_B_sugar" DECIMAL ,
-	nu0 DECIMAL ,
-	nu1 DECIMAL ,
-	nu2 DECIMAL ,
-	nu3 DECIMAL ,
-	nu4 DECIMAL ,
-	tau0 DECIMAL ,
-	tau1 DECIMAL ,
-	tau2 DECIMAL ,
-	tau3 DECIMAL ,
-	tau4 DECIMAL ,
-	taum DECIMAL ,
-	zeta DECIMAL ,
 -- ATTRIBUTE
 	label_alt_id TEXT NOT NULL ,
 -- ATTRIBUTE
@@ -14222,6 +18991,90 @@ CREATE TABLE struct_mon_nucl (
 	label_comp_id TEXT NOT NULL ,
 -- ATTRIBUTE
 	label_seq_id INTEGER NOT NULL
+);
+
+--
+-- The value in degrees of the side-chain torsion angle chi3, for those residues containing such an angle.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE chi3 (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'degrees' ) NOT NULL
+);
+
+--
+-- The value in degrees of the side-chain torsion angle chi4, for those residues containing such an angle.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE chi4 (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'degrees' ) NOT NULL
+);
+
+--
+-- The value in degrees of the side-chain torsion angle chi5, for those residues containing such an angle.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE chi5 (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'degrees' ) NOT NULL
+);
+
+--
+-- The value in degrees of the main-chain torsion angle omega.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE omega (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'degrees' ) NOT NULL
+);
+
+--
+-- The value in degrees of the main-chain torsion angle phi.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE phi (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'degrees' ) NOT NULL
+);
+
+--
+-- The value in degrees of the main-chain torsion angle psi.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE psi (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'degrees' ) NOT NULL
 );
 
 --
@@ -14242,18 +19095,10 @@ CREATE TABLE struct_mon_prot (
 	auth_asym_id TEXT ,
 	auth_comp_id TEXT ,
 	auth_seq_id TEXT ,
-	chi1 DECIMAL ,
-	chi2 DECIMAL ,
-	chi3 DECIMAL ,
-	chi4 DECIMAL ,
-	chi5 DECIMAL ,
 	details DECIMAL ,
 	"mean_B_all" DECIMAL ,
 	"mean_B_main" DECIMAL ,
 	"mean_B_side" DECIMAL ,
-	omega DECIMAL ,
-	phi DECIMAL ,
-	psi DECIMAL ,
 -- ATTRIBUTE
 	label_alt_id TEXT NOT NULL ,
 -- ATTRIBUTE
@@ -14596,6 +19441,34 @@ CREATE TABLE symmetry_equiv (
 );
 
 --
+-- The bond-valence parameter B used in the expression s = exp[(Ro - R)/B] where s is the valence of a bond of length R.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "B" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'angstroms' ) NOT NULL
+);
+
+--
+-- The bond-valence parameter Ro used in the expression s = exp[(Ro - R)/B] where s is the valence of a bond of length R.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE "Ro" (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- SIMPLE CONTENT
+	content DECIMAL ,
+-- ATTRIBUTE
+	units TEXT CHECK ( units = 'angstroms' ) NOT NULL
+);
+
+--
 -- (quoted from valence_paramType)
 -- Data items in the VALENCE_PARAM category define the parameters used for calculating bond valences from bond lengths. In addition to the parameters, a pointer is given to the reference (in VALENCE_REF) from which the bond-valence parameters were taken. Example 1 - a bond-valence parameter list with accompanying references. <PDBx:valence_paramCategory> <PDBx:valence_param atom_1="Cu" atom_1_valence="2" atom_2="O" atom_2_valence="-2"> <PDBx:B>0.37</PDBx:B> <PDBx:Ro>1.679</PDBx:Ro> <PDBx:details xsi:nil="true" /> <PDBx:ref_id>a</PDBx:ref_id> </PDBx:valence_param> <PDBx:valence_param atom_1="Cu" atom_1_valence="2" atom_2="O" atom_2_valence="-2"> <PDBx:B>0.37</PDBx:B> <PDBx:Ro>1.649</PDBx:Ro> <PDBx:details xsi:nil="true" /> <PDBx:ref_id>j</PDBx:ref_id> </PDBx:valence_param> <PDBx:valence_param atom_1="Cu" atom_1_valence="2" atom_2="N" atom_2_valence="-3"> <PDBx:B>0.37</PDBx:B> <PDBx:Ro>1.64</PDBx:Ro> <PDBx:details>2-coordinate N</PDBx:details> <PDBx:ref_id>m</PDBx:ref_id> </PDBx:valence_param> <PDBx:valence_param atom_1="Cu" atom_1_valence="2" atom_2="N" atom_2_valence="-3"> <PDBx:B>0.37</PDBx:B> <PDBx:Ro>1.76</PDBx:Ro> <PDBx:details>3-coordinate N</PDBx:details> <PDBx:ref_id>m</PDBx:ref_id> </PDBx:valence_param> </PDBx:valence_paramCategory> <PDBx:valence_refCategory> <PDBx:valence_ref id="a"> <PDBx:reference>Brown &amp; Altermatt (1985), Acta Cryst. B41, 244-247</PDBx:reference> </PDBx:valence_ref> <PDBx:valence_ref id="j"> <PDBx:reference>Liu &amp; Thorp (1993), Inorg. Chem. 32, 4102-4205</PDBx:reference> </PDBx:valence_ref> <PDBx:valence_ref id="m"> <PDBx:reference>See, Krause &amp; Strub (1998), Inorg. Chem. 37, 5369-5375</PDBx:reference> </PDBx:valence_ref> </PDBx:valence_refCategory>
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
@@ -14604,8 +19477,6 @@ CREATE TABLE symmetry_equiv (
 CREATE TABLE valence_param (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
-	"B" DECIMAL ,
-	"Ro" DECIMAL ,
 	details TEXT ,
 	id TEXT ,
 	ref_id TEXT ,
@@ -14846,6 +19717,16 @@ CREATE TABLE valence_ref (
 --ALTER TABLE diffrn_standards ADD CONSTRAINT KR_diffrnKeyref_0_0_9_0 FOREIGN KEY ( diffrn_id ) REFERENCES diffrn ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
 --ALTER TABLE pdbx_diffrn_reflns_shell ADD CONSTRAINT KR_diffrnKeyref_0_0_10_0 FOREIGN KEY ( diffrn_id ) REFERENCES diffrn ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
+
+--ALTER TABLE pdbx_serial_crystallography_data_reduction ADD CONSTRAINT KR_diffrnKeyref_0_0_11_0 FOREIGN KEY ( diffrn_id ) REFERENCES diffrn ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
+
+--ALTER TABLE pdbx_serial_crystallography_measurement ADD CONSTRAINT KR_diffrnKeyref_0_0_12_0 FOREIGN KEY ( diffrn_id ) REFERENCES diffrn ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
+
+--ALTER TABLE pdbx_serial_crystallography_sample_delivery ADD CONSTRAINT KR_diffrnKeyref_0_0_13_0 FOREIGN KEY ( diffrn_id ) REFERENCES diffrn ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
+
+--ALTER TABLE pdbx_serial_crystallography_sample_delivery_fixed_target ADD CONSTRAINT KR_diffrnKeyref_0_0_14_0 FOREIGN KEY ( diffrn_id ) REFERENCES diffrn ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
+
+--ALTER TABLE pdbx_serial_crystallography_sample_delivery_injection ADD CONSTRAINT KR_diffrnKeyref_0_0_15_0 FOREIGN KEY ( diffrn_id ) REFERENCES diffrn ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
 --ALTER TABLE diffrn_refln ADD CONSTRAINT KR_diffrn_scale_groupKeyref_0_0_0_0 FOREIGN KEY ( scale_group_code ) REFERENCES diffrn_scale_group ( code ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
