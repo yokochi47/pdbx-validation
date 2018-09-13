@@ -30,7 +30,7 @@ err=xsd2extract_pdbml.err
 
 if [ ! -e $EXT_PDBML_XSL ] ; then
 
- java -jar $SAXON -s:$PDBX_VALIDATION_XSD -xsl:$XSD2EXT_PDBML_XSL -o:$EXT_PDBML_XSL 2> $err || ( cat $err; exit 1 )
+ java -jar $SAXON -s:$PDBX_VALIDATION_XSD -xsl:$XSD2EXT_PDBML_XSL -o:$EXT_PDBML_XSL 2> $err || cat $err && exit 1
 
  rm -f $err
 
