@@ -82,21 +82,21 @@ if [ $graph_exist = 1 ] ; then
  VIRTUOSO_EXEC_COM="log_enable(3,1); SPARQL CLEAR GRAPH <$GRAPH_URI>;"
  echo $VIRTUOSO_EXEC_COM
 
- isql $VIRTUOSO_DB_PORT $VIRTUOSO_DB_USER $VIRTUOSO_DB_PASS exec="$VIRTUOSO_EXEC_COM" 2> $err || ( cat $err; exit 1 )
+ isql $VIRTUOSO_DB_PORT $VIRTUOSO_DB_USER $VIRTUOSO_DB_PASS exec="$VIRTUOSO_EXEC_COM" 2> $err || cat $err && exit 1
 
  VIRTUOSO_EXEC_COM="log_enable(3,1); DELETE FROM rdf_quad WHERE g = iri_to_id ('$GRAPH_URI');"
  echo $VIRTUOSO_EXEC_COM
 
- isql $VIRTUOSO_DB_PORT $VIRTUOSO_DB_USER $VIRTUOSO_DB_PASS exec="$VIRTUOSO_EXEC_COM" 2> $err || ( cat $err; exit 1 )
+ isql $VIRTUOSO_DB_PORT $VIRTUOSO_DB_USER $VIRTUOSO_DB_PASS exec="$VIRTUOSO_EXEC_COM" 2> $err || cat $err && exit 1
 
 fi
 
 VIRTUOSO_EXEC_COM="ld_dir('$PWD', '*.rdf.gz', '$GRAPH_URI');"
 echo $VIRTUOSO_EXEC_COM
 
-isql $VIRTUOSO_DB_PORT $VIRTUOSO_DB_USER $VIRTUOSO_DB_PASS exec="$VIRTUOSO_EXEC_COM" 2> $err || ( cat $err; exit 1 )
+isql $VIRTUOSO_DB_PORT $VIRTUOSO_DB_USER $VIRTUOSO_DB_PASS exec="$VIRTUOSO_EXEC_COM" 2> $err || cat $err && exit 1
 
-grep Error $err &> /dev/null || ( cat $err; exit 1 )
+grep Error $err &> /dev/null || cat $err && exit 1
 
 rm -f $err
 
