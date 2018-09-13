@@ -24,7 +24,7 @@ if [ ! -z $db_user ] ; then
  DB_USER=$db_user
 fi
 
-psql -U $DB_USER -l | grep $DB_NAME > /dev/null || echo "database \"$DB_NAME\" does not exist." && exit 1
+psql -U $DB_USER -l | grep $DB_NAME > /dev/null || ( echo "database \"$DB_NAME\" does not exist." && exit 1 )
 
 if [ ! -e $XSD2PGSCHEMA ] ; then
  ./scripts/update_extlibs.sh
@@ -98,7 +98,7 @@ if [ $? = 0 ] && [ ! -s $err_file ] ; then
   rm -rf $DATA_DIR
  fi
 else
- echo "$0 aborted."
+ echo $0 aborted.
  exit 1
 fi
 
