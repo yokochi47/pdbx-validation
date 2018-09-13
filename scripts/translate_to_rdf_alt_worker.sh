@@ -56,7 +56,7 @@ do
 
   if ( [ ! -e $rdf_valid_file ] && [ ! -e $rdf_gz_valid_file ] ) || [ -e $err_file ] ; then
 
-   java -jar $SAXON -s:$pdbml_valid_file -xsl:$PDBMLV2RDF_XSL -o:$rdf_valid_file 2> $err_file || cat $err_file && exit 1
+   java -jar $SAXON -s:$pdbml_valid_file -xsl:$PDBMLV2RDF_XSL -o:$rdf_valid_file 2> $err_file || ( cat $err_file && exit 1 )
 
    rm -f $err_file
 

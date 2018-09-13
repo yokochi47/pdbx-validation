@@ -27,7 +27,7 @@ done
 
 if [ $? != 0 ] ; then
 
- echo "$0 aborted."
+ echo $0 aborted.
  exit 1
 
 fi

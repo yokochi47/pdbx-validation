@@ -30,7 +30,7 @@ err=xsd2merge_pdbml_info.err
 
 if [ ! -e $MERGE_PDBML_INFO_XSL ] ; then
 
- java -jar $SAXON -s:$PDBX_VALIDATION_XSD -xsl:$XSD2MERGE_PDBML_INFO_XSL -o:$MERGE_PDBML_INFO_XSL 2> $err || cat $err && exit 1
+ java -jar $SAXON -s:$PDBX_VALIDATION_XSD -xsl:$XSD2MERGE_PDBML_INFO_XSL -o:$MERGE_PDBML_INFO_XSL 2> $err || ( cat $err && exit 1 )
 
  rm -f $err
 
@@ -70,7 +70,7 @@ if [ $err != 0 ] || [ $total != $last ] ; then
 
  if [ $? != 0 ] ; then
 
-  echo "$0 aborted."
+  echo $0 aborted.
   exit 1
 
  fi
