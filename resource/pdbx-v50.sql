@@ -12,7 +12,7 @@
 --  append document key: true
 --  append serial key: false
 --  append xpath key: false
---  retain constraint of primary/foreign key: false
+--  retain constraint: false
 --  retrieve field annotation: false
 --
 -- Statistics of schema:
@@ -24,13 +24,15 @@
 --   Table types:
 --    0 root, 0 root children, 0 admin roots, 898 admin children
 --   System keys:
---    0 primary keys (0 unique constraints), 0 foreign keys (334 key references), 0 nested keys (0 as attribute)
+--    0 primary keys (0 unique constraints), 0 foreign keys, 0 nested keys (0 as attribute)
 --   User keys:
 --    898 document keys, 0 serial keys, 0 xpath keys
 --   Contents:
 --    1352 attributes (0 in-place document keys), 4743 elements (0 in-place document keys), 345 simple contents (0 as attribute, 0 as conditional attribute)
 --   Wild cards:
 --    0 any elements, 0 any attributes
+--   Constraints:
+--    1 unique constraints from xsd:unique, 553 unique constraints from xsd:key, 334 foreign key constraints from xsd:keyref
 --
 
 DROP TABLE IF EXISTS "B_equiv_geom_mean_esd" CASCADE;
@@ -19504,769 +19506,2667 @@ CREATE TABLE valence_ref (
 	id TEXT NOT NULL
 );
 
---ALTER TABLE atom_sites_alt ADD CONSTRAINT UNQ_atom_sites_alt UNIQUE ( id );
+-- (derived from xsd:unique[@name='struct_asymUnique_1'])
+--ALTER TABLE struct_asym ADD CONSTRAINT UNQ_struct_asym UNIQUE ( document_id, entity_id, id );
 
---ALTER TABLE atom_sites_alt_ens ADD CONSTRAINT UNQ_atom_sites_alt_ens UNIQUE ( id );
+-- (derived from xsd:key[@name='atom_siteKey_0'])
+--ALTER TABLE atom_site ADD CONSTRAINT UNQ_atom_site UNIQUE ( document_id, id );
 
---ALTER TABLE atom_type ADD CONSTRAINT UNQ_atom_type UNIQUE ( symbol );
+-- (derived from xsd:key[@name='atom_site_anisotropKey_0'])
+--ALTER TABLE atom_site_anisotrop ADD CONSTRAINT UNQ_atom_site_anisotrop UNIQUE ( document_id, id );
 
---ALTER TABLE audit ADD CONSTRAINT UNQ_audit UNIQUE ( revision_id );
+-- (derived from xsd:key[@name='atom_sitesKey_0'])
+--ALTER TABLE atom_sites ADD CONSTRAINT UNQ_atom_sites UNIQUE ( document_id, entry_id );
 
---ALTER TABLE chem_comp ADD CONSTRAINT UNQ_chem_comp UNIQUE ( id );
+-- (derived from xsd:key[@name='atom_sites_altKey_0'])
+--ALTER TABLE atom_sites_alt ADD CONSTRAINT UNQ_atom_sites_alt UNIQUE ( document_id, id );
 
---ALTER TABLE chem_link ADD CONSTRAINT UNQ_chem_link UNIQUE ( id );
+-- (derived from xsd:key[@name='atom_sites_alt_ensKey_0'])
+--ALTER TABLE atom_sites_alt_ens ADD CONSTRAINT UNQ_atom_sites_alt_ens UNIQUE ( document_id, id );
 
---ALTER TABLE chemical_conn_atom ADD CONSTRAINT UNQ_chemical_conn_atom UNIQUE ( number );
+-- (derived from xsd:key[@name='atom_sites_alt_genKey_0'])
+--ALTER TABLE atom_sites_alt_gen ADD CONSTRAINT UNQ_atom_sites_alt_gen UNIQUE ( document_id, alt_id, ens_id );
 
---ALTER TABLE citation ADD CONSTRAINT UNQ_citation UNIQUE ( id );
+-- (derived from xsd:key[@name='atom_sites_footnoteKey_0'])
+--ALTER TABLE atom_sites_footnote ADD CONSTRAINT UNQ_atom_sites_footnote UNIQUE ( document_id, id );
 
---ALTER TABLE "database_PDB_rev" ADD CONSTRAINT UNQ_database_PDB_rev UNIQUE ( num );
+-- (derived from xsd:key[@name='atom_typeKey_0'])
+--ALTER TABLE atom_type ADD CONSTRAINT UNQ_atom_type UNIQUE ( document_id, symbol );
 
---ALTER TABLE diffrn ADD CONSTRAINT UNQ_diffrn UNIQUE ( id );
+-- (derived from xsd:key[@name='auditKey_0'])
+--ALTER TABLE audit ADD CONSTRAINT UNQ_audit UNIQUE ( document_id, revision_id );
 
---ALTER TABLE diffrn_scale_group ADD CONSTRAINT UNQ_diffrn_scale_group UNIQUE ( code );
+-- (derived from xsd:key[@name='audit_authorKey_0'])
+--ALTER TABLE audit_author ADD CONSTRAINT UNQ_audit_author UNIQUE ( document_id, pdbx_ordinal );
 
---ALTER TABLE em_entity_assembly ADD CONSTRAINT UNQ_em_entity_assembly UNIQUE ( id );
+-- (derived from xsd:key[@name='audit_conformKey_0'])
+--ALTER TABLE audit_conform ADD CONSTRAINT UNQ_audit_conform UNIQUE ( document_id, dict_name, dict_version );
 
---ALTER TABLE em_tomography_specimen ADD CONSTRAINT UNQ_em_tomography_specimen UNIQUE ( id );
+-- (derived from xsd:key[@name='audit_contact_authorKey_0'])
+--ALTER TABLE audit_contact_author ADD CONSTRAINT UNQ_audit_contact_author UNIQUE ( document_id, name );
 
---ALTER TABLE entity ADD CONSTRAINT UNQ_entity UNIQUE ( id );
+-- (derived from xsd:key[@name='audit_linkKey_0'])
+--ALTER TABLE audit_link ADD CONSTRAINT UNQ_audit_link UNIQUE ( document_id, block_code, block_description );
 
---ALTER TABLE entity_poly ADD CONSTRAINT UNQ_entity_poly UNIQUE ( entity_id );
+-- (derived from xsd:key[@name='cellKey_0'])
+--ALTER TABLE cell ADD CONSTRAINT UNQ_cell UNIQUE ( document_id, entry_id );
 
---ALTER TABLE entry ADD CONSTRAINT UNQ_entry UNIQUE ( id );
+-- (derived from xsd:key[@name='cell_measurementKey_0'])
+--ALTER TABLE cell_measurement ADD CONSTRAINT UNQ_cell_measurement UNIQUE ( document_id, entry_id );
 
---ALTER TABLE exptl_crystal ADD CONSTRAINT UNQ_exptl_crystal UNIQUE ( id );
+-- (derived from xsd:key[@name='cell_measurement_reflnKey_0'])
+--ALTER TABLE cell_measurement_refln ADD CONSTRAINT UNQ_cell_measurement_refln UNIQUE ( document_id, index_h, index_k, index_l );
 
---ALTER TABLE pdbx_buffer ADD CONSTRAINT UNQ_pdbx_buffer UNIQUE ( id );
+-- (derived from xsd:key[@name='chem_compKey_0'])
+--ALTER TABLE chem_comp ADD CONSTRAINT UNQ_chem_comp UNIQUE ( document_id, id );
 
---ALTER TABLE pdbx_chem_comp_import ADD CONSTRAINT UNQ_pdbx_chem_comp_import UNIQUE ( comp_id );
+-- (derived from xsd:key[@name='chem_comp_angleKey_0'])
+--ALTER TABLE chem_comp_angle ADD CONSTRAINT UNQ_chem_comp_angle UNIQUE ( document_id, atom_id_1, atom_id_2, atom_id_3, comp_id );
 
---ALTER TABLE pdbx_chem_comp_model ADD CONSTRAINT UNQ_pdbx_chem_comp_model UNIQUE ( id );
+-- (derived from xsd:key[@name='chem_comp_atomKey_0'])
+--ALTER TABLE chem_comp_atom ADD CONSTRAINT UNQ_chem_comp_atom UNIQUE ( document_id, atom_id, comp_id );
 
---ALTER TABLE pdbx_construct ADD CONSTRAINT UNQ_pdbx_construct UNIQUE ( id );
+-- (derived from xsd:key[@name='chem_comp_bondKey_0'])
+--ALTER TABLE chem_comp_bond ADD CONSTRAINT UNQ_chem_comp_bond UNIQUE ( document_id, atom_id_1, atom_id_2, comp_id );
 
---ALTER TABLE pdbx_deposit_group ADD CONSTRAINT UNQ_pdbx_deposit_group UNIQUE ( group_id );
+-- (derived from xsd:key[@name='chem_comp_chirKey_0'])
+--ALTER TABLE chem_comp_chir ADD CONSTRAINT UNQ_chem_comp_chir UNIQUE ( document_id, comp_id, id );
 
---ALTER TABLE pdbx_domain ADD CONSTRAINT UNQ_pdbx_domain UNIQUE ( id );
+-- (derived from xsd:key[@name='chem_comp_chir_atomKey_0'])
+--ALTER TABLE chem_comp_chir_atom ADD CONSTRAINT UNQ_chem_comp_chir_atom UNIQUE ( document_id, atom_id, chir_id, comp_id );
 
---ALTER TABLE pdbx_linked_entity ADD CONSTRAINT UNQ_pdbx_linked_entity UNIQUE ( linked_entity_id );
+-- (derived from xsd:key[@name='chem_comp_linkKey_0'])
+--ALTER TABLE chem_comp_link ADD CONSTRAINT UNQ_chem_comp_link UNIQUE ( document_id, link_id );
 
---ALTER TABLE pdbx_reference_linked_entity ADD CONSTRAINT UNQ_pdbx_reference_linked_entity UNIQUE ( id );
+-- (derived from xsd:key[@name='chem_comp_planeKey_0'])
+--ALTER TABLE chem_comp_plane ADD CONSTRAINT UNQ_chem_comp_plane UNIQUE ( document_id, comp_id, id );
 
---ALTER TABLE pdbx_reference_molecule ADD CONSTRAINT UNQ_pdbx_reference_molecule UNIQUE ( prd_id );
+-- (derived from xsd:key[@name='chem_comp_plane_atomKey_0'])
+--ALTER TABLE chem_comp_plane_atom ADD CONSTRAINT UNQ_chem_comp_plane_atom UNIQUE ( document_id, atom_id, comp_id, plane_id );
 
---ALTER TABLE pdbx_reference_molecule_family ADD CONSTRAINT UNQ_pdbx_reference_molecule_family UNIQUE ( family_prd_id );
+-- (derived from xsd:key[@name='chem_comp_torKey_0'])
+--ALTER TABLE chem_comp_tor ADD CONSTRAINT UNQ_chem_comp_tor UNIQUE ( document_id, comp_id, id );
 
---ALTER TABLE pdbx_refine_tls ADD CONSTRAINT UNQ_pdbx_refine_tls UNIQUE ( id );
+-- (derived from xsd:key[@name='chem_comp_tor_valueKey_0'])
+--ALTER TABLE chem_comp_tor_value ADD CONSTRAINT UNQ_chem_comp_tor_value UNIQUE ( document_id, comp_id, tor_id );
 
---ALTER TABLE pdbx_struct_assembly ADD CONSTRAINT UNQ_pdbx_struct_assembly UNIQUE ( id );
+-- (derived from xsd:key[@name='chem_linkKey_0'])
+--ALTER TABLE chem_link ADD CONSTRAINT UNQ_chem_link UNIQUE ( document_id, id );
 
---ALTER TABLE pdbx_struct_assembly_depositor_info ADD CONSTRAINT UNQ_pdbx_struct_assembly_depositor_info UNIQUE ( id );
+-- (derived from xsd:key[@name='chem_link_angleKey_0'])
+--ALTER TABLE chem_link_angle ADD CONSTRAINT UNQ_chem_link_angle UNIQUE ( document_id, atom_id_1, atom_id_2, atom_id_3, link_id );
 
---ALTER TABLE pdbx_struct_entity_inst ADD CONSTRAINT UNQ_pdbx_struct_entity_inst UNIQUE ( id );
+-- (derived from xsd:key[@name='chem_link_bondKey_0'])
+--ALTER TABLE chem_link_bond ADD CONSTRAINT UNQ_chem_link_bond UNIQUE ( document_id, atom_id_1, atom_id_2, link_id );
 
---ALTER TABLE pdbx_struct_group_list ADD CONSTRAINT UNQ_pdbx_struct_group_list UNIQUE ( struct_group_id );
+-- (derived from xsd:key[@name='chem_link_chirKey_0'])
+--ALTER TABLE chem_link_chir ADD CONSTRAINT UNQ_chem_link_chir UNIQUE ( document_id, id, link_id );
 
---ALTER TABLE pdbx_struct_ref_seq_feature ADD CONSTRAINT UNQ_pdbx_struct_ref_seq_feature UNIQUE ( feature_id );
+-- (derived from xsd:key[@name='chem_link_chir_atomKey_0'])
+--ALTER TABLE chem_link_chir_atom ADD CONSTRAINT UNQ_chem_link_chir_atom UNIQUE ( document_id, atom_id, chir_id );
 
---ALTER TABLE pdbx_validate_planes ADD CONSTRAINT UNQ_pdbx_validate_planes UNIQUE ( id );
+-- (derived from xsd:key[@name='chem_link_planeKey_0'])
+--ALTER TABLE chem_link_plane ADD CONSTRAINT UNQ_chem_link_plane UNIQUE ( document_id, id, link_id );
 
---ALTER TABLE pdbx_view_category ADD CONSTRAINT UNQ_pdbx_view_category UNIQUE ( category_id );
+-- (derived from xsd:key[@name='chem_link_plane_atomKey_0'])
+--ALTER TABLE chem_link_plane_atom ADD CONSTRAINT UNQ_chem_link_plane_atom UNIQUE ( document_id, atom_id, plane_id );
 
---ALTER TABLE pdbx_view_category_group ADD CONSTRAINT UNQ_pdbx_view_category_group UNIQUE ( view_group_id );
+-- (derived from xsd:key[@name='chem_link_torKey_0'])
+--ALTER TABLE chem_link_tor ADD CONSTRAINT UNQ_chem_link_tor UNIQUE ( document_id, id, link_id );
 
---ALTER TABLE "phasing_MAD_expt" ADD CONSTRAINT UNQ_phasing_MAD_expt UNIQUE ( id );
+-- (derived from xsd:key[@name='chem_link_tor_valueKey_0'])
+--ALTER TABLE chem_link_tor_value ADD CONSTRAINT UNQ_chem_link_tor_value UNIQUE ( document_id, tor_id );
 
---ALTER TABLE "phasing_MIR_der" ADD CONSTRAINT UNQ_phasing_MIR_der UNIQUE ( id );
+-- (derived from xsd:key[@name='chemicalKey_0'])
+--ALTER TABLE chemical ADD CONSTRAINT UNQ_chemical UNIQUE ( document_id, entry_id );
 
---ALTER TABLE phasing_set ADD CONSTRAINT UNQ_phasing_set UNIQUE ( id );
+-- (derived from xsd:key[@name='chemical_conn_atomKey_0'])
+--ALTER TABLE chemical_conn_atom ADD CONSTRAINT UNQ_chemical_conn_atom UNIQUE ( document_id, number );
 
---ALTER TABLE struct_asym ADD CONSTRAINT UNQ_struct_asym UNIQUE ( id );
+-- (derived from xsd:key[@name='chemical_conn_bondKey_0'])
+--ALTER TABLE chemical_conn_bond ADD CONSTRAINT UNQ_chemical_conn_bond UNIQUE ( document_id, atom_1, atom_2 );
 
---ALTER TABLE struct_biol ADD CONSTRAINT UNQ_struct_biol UNIQUE ( id );
+-- (derived from xsd:key[@name='chemical_formulaKey_0'])
+--ALTER TABLE chemical_formula ADD CONSTRAINT UNQ_chemical_formula UNIQUE ( document_id, entry_id );
 
---ALTER TABLE struct_conf_type ADD CONSTRAINT UNQ_struct_conf_type UNIQUE ( id );
+-- (derived from xsd:key[@name='citationKey_0'])
+--ALTER TABLE citation ADD CONSTRAINT UNQ_citation UNIQUE ( document_id, id );
 
---ALTER TABLE struct_conn_type ADD CONSTRAINT UNQ_struct_conn_type UNIQUE ( id );
+-- (derived from xsd:key[@name='citation_authorKey_0'])
+--ALTER TABLE citation_author ADD CONSTRAINT UNQ_citation_author UNIQUE ( document_id, citation_id, name, ordinal );
 
---ALTER TABLE struct_ncs_ens ADD CONSTRAINT UNQ_struct_ncs_ens UNIQUE ( id );
+-- (derived from xsd:key[@name='citation_editorKey_0'])
+--ALTER TABLE citation_editor ADD CONSTRAINT UNQ_citation_editor UNIQUE ( document_id, citation_id, name );
 
---ALTER TABLE struct_ncs_oper ADD CONSTRAINT UNQ_struct_ncs_oper UNIQUE ( id );
+-- (derived from xsd:key[@name='computingKey_0'])
+--ALTER TABLE computing ADD CONSTRAINT UNQ_computing UNIQUE ( document_id, entry_id );
 
---ALTER TABLE struct_ref ADD CONSTRAINT UNQ_struct_ref UNIQUE ( id );
+-- (derived from xsd:key[@name='databaseKey_0'])
+--ALTER TABLE database ADD CONSTRAINT UNQ_database UNIQUE ( document_id, entry_id );
 
---ALTER TABLE struct_ref_seq ADD CONSTRAINT UNQ_struct_ref_seq UNIQUE ( align_id );
+-- (derived from xsd:key[@name='database_2Key_0'])
+--ALTER TABLE database_2 ADD CONSTRAINT UNQ_database_2 UNIQUE ( document_id, database_code, database_id );
 
---ALTER TABLE struct_sheet ADD CONSTRAINT UNQ_struct_sheet UNIQUE ( id );
+-- (derived from xsd:key[@name='database_PDB_caveatKey_0'])
+--ALTER TABLE "database_PDB_caveat" ADD CONSTRAINT UNQ_database_PDB_caveat UNIQUE ( document_id, id );
 
---ALTER TABLE struct_site ADD CONSTRAINT UNQ_struct_site UNIQUE ( id );
+-- (derived from xsd:key[@name='database_PDB_matrixKey_0'])
+--ALTER TABLE "database_PDB_matrix" ADD CONSTRAINT UNQ_database_PDB_matrix UNIQUE ( document_id, entry_id );
 
+-- (derived from xsd:key[@name='database_PDB_remarkKey_0'])
+--ALTER TABLE "database_PDB_remark" ADD CONSTRAINT UNQ_database_PDB_remark UNIQUE ( document_id, id );
+
+-- (derived from xsd:key[@name='database_PDB_revKey_0'])
+--ALTER TABLE "database_PDB_rev" ADD CONSTRAINT UNQ_database_PDB_rev UNIQUE ( document_id, num );
+
+-- (derived from xsd:key[@name='database_PDB_rev_recordKey_0'])
+--ALTER TABLE "database_PDB_rev_record" ADD CONSTRAINT UNQ_database_PDB_rev_record UNIQUE ( document_id, rev_num, type );
+
+-- (derived from xsd:key[@name='database_PDB_tvectKey_0'])
+--ALTER TABLE "database_PDB_tvect" ADD CONSTRAINT UNQ_database_PDB_tvect UNIQUE ( document_id, id );
+
+-- (derived from xsd:key[@name='diffrnKey_0'])
+--ALTER TABLE diffrn ADD CONSTRAINT UNQ_diffrn UNIQUE ( document_id, id );
+
+-- (derived from xsd:key[@name='diffrn_attenuatorKey_0'])
+--ALTER TABLE diffrn_attenuator ADD CONSTRAINT UNQ_diffrn_attenuator UNIQUE ( document_id, code );
+
+-- (derived from xsd:key[@name='diffrn_detectorKey_0'])
+--ALTER TABLE diffrn_detector ADD CONSTRAINT UNQ_diffrn_detector UNIQUE ( document_id, diffrn_id );
+
+-- (derived from xsd:key[@name='diffrn_measurementKey_0'])
+--ALTER TABLE diffrn_measurement ADD CONSTRAINT UNQ_diffrn_measurement UNIQUE ( document_id, diffrn_id );
+
+-- (derived from xsd:key[@name='diffrn_orient_matrixKey_0'])
+--ALTER TABLE diffrn_orient_matrix ADD CONSTRAINT UNQ_diffrn_orient_matrix UNIQUE ( document_id, diffrn_id );
+
+-- (derived from xsd:key[@name='diffrn_orient_reflnKey_0'])
+--ALTER TABLE diffrn_orient_refln ADD CONSTRAINT UNQ_diffrn_orient_refln UNIQUE ( document_id, diffrn_id, index_h, index_k, index_l );
+
+-- (derived from xsd:key[@name='diffrn_radiationKey_0'])
+--ALTER TABLE diffrn_radiation ADD CONSTRAINT UNQ_diffrn_radiation UNIQUE ( document_id, diffrn_id );
+
+-- (derived from xsd:key[@name='diffrn_radiation_wavelengthKey_0'])
+--ALTER TABLE diffrn_radiation_wavelength ADD CONSTRAINT UNQ_diffrn_radiation_wavelength UNIQUE ( document_id, id );
+
+-- (derived from xsd:key[@name='diffrn_reflnKey_0'])
+--ALTER TABLE diffrn_refln ADD CONSTRAINT UNQ_diffrn_refln UNIQUE ( document_id, diffrn_id, id );
+
+-- (derived from xsd:key[@name='diffrn_reflnsKey_0'])
+--ALTER TABLE diffrn_reflns ADD CONSTRAINT UNQ_diffrn_reflns UNIQUE ( document_id, diffrn_id );
+
+-- (derived from xsd:key[@name='diffrn_reflns_classKey_0'])
+--ALTER TABLE diffrn_reflns_class ADD CONSTRAINT UNQ_diffrn_reflns_class UNIQUE ( document_id, code );
+
+-- (derived from xsd:key[@name='diffrn_scale_groupKey_0'])
+--ALTER TABLE diffrn_scale_group ADD CONSTRAINT UNQ_diffrn_scale_group UNIQUE ( document_id, code );
+
+-- (derived from xsd:key[@name='diffrn_sourceKey_0'])
+--ALTER TABLE diffrn_source ADD CONSTRAINT UNQ_diffrn_source UNIQUE ( document_id, diffrn_id );
+
+-- (derived from xsd:key[@name='diffrn_standard_reflnKey_0'])
+--ALTER TABLE diffrn_standard_refln ADD CONSTRAINT UNQ_diffrn_standard_refln UNIQUE ( document_id, code, diffrn_id );
+
+-- (derived from xsd:key[@name='diffrn_standardsKey_0'])
+--ALTER TABLE diffrn_standards ADD CONSTRAINT UNQ_diffrn_standards UNIQUE ( document_id, diffrn_id );
+
+-- (derived from xsd:key[@name='em_2d_crystal_entityKey_0'])
+--ALTER TABLE em_2d_crystal_entity ADD CONSTRAINT UNQ_em_2d_crystal_entity UNIQUE ( document_id, id, image_processing_id );
+
+-- (derived from xsd:key[@name='em_2d_projection_selectionKey_0'])
+--ALTER TABLE em_2d_projection_selection ADD CONSTRAINT UNQ_em_2d_projection_selection UNIQUE ( document_id, entry_id );
+
+-- (derived from xsd:key[@name='em_3d_crystal_entityKey_0'])
+--ALTER TABLE em_3d_crystal_entity ADD CONSTRAINT UNQ_em_3d_crystal_entity UNIQUE ( document_id, id, image_processing_id );
+
+-- (derived from xsd:key[@name='em_3d_fittingKey_0'])
+--ALTER TABLE em_3d_fitting ADD CONSTRAINT UNQ_em_3d_fitting UNIQUE ( document_id, entry_id, id );
+
+-- (derived from xsd:key[@name='em_3d_fitting_listKey_0'])
+--ALTER TABLE em_3d_fitting_list ADD CONSTRAINT UNQ_em_3d_fitting_list UNIQUE ( document_id, _3d_fitting_id, id );
+
+-- (derived from xsd:key[@name='em_3d_reconstructionKey_0'])
+--ALTER TABLE em_3d_reconstruction ADD CONSTRAINT UNQ_em_3d_reconstruction UNIQUE ( document_id, id, image_processing_id );
+
+-- (derived from xsd:key[@name='em_adminKey_0'])
+--ALTER TABLE em_admin ADD CONSTRAINT UNQ_em_admin UNIQUE ( document_id, entry_id );
+
+-- (derived from xsd:key[@name='em_assemblyKey_0'])
+--ALTER TABLE em_assembly ADD CONSTRAINT UNQ_em_assembly UNIQUE ( document_id, entry_id, id );
+
+-- (derived from xsd:key[@name='em_author_listKey_0'])
+--ALTER TABLE em_author_list ADD CONSTRAINT UNQ_em_author_list UNIQUE ( document_id, ordinal );
+
+-- (derived from xsd:key[@name='em_bufferKey_0'])
+--ALTER TABLE em_buffer ADD CONSTRAINT UNQ_em_buffer UNIQUE ( document_id, id, specimen_id );
+
+-- (derived from xsd:key[@name='em_buffer_componentKey_0'])
+--ALTER TABLE em_buffer_component ADD CONSTRAINT UNQ_em_buffer_component UNIQUE ( document_id, buffer_id, id );
+
+-- (derived from xsd:key[@name='em_crystal_formationKey_0'])
+--ALTER TABLE em_crystal_formation ADD CONSTRAINT UNQ_em_crystal_formation UNIQUE ( document_id, id );
+
+-- (derived from xsd:key[@name='em_ctf_correctionKey_0'])
+--ALTER TABLE em_ctf_correction ADD CONSTRAINT UNQ_em_ctf_correction UNIQUE ( document_id, id );
+
+-- (derived from xsd:key[@name='em_db_referenceKey_0'])
+--ALTER TABLE em_db_reference ADD CONSTRAINT UNQ_em_db_reference UNIQUE ( document_id, id );
+
+-- (derived from xsd:key[@name='em_db_reference_auxiliaryKey_0'])
+--ALTER TABLE em_db_reference_auxiliary ADD CONSTRAINT UNQ_em_db_reference_auxiliary UNIQUE ( document_id, id );
+
+-- (derived from xsd:key[@name='em_depositor_infoKey_0'])
+--ALTER TABLE em_depositor_info ADD CONSTRAINT UNQ_em_depositor_info UNIQUE ( document_id, entry_id );
+
+-- (derived from xsd:key[@name='em_depuiKey_0'])
+--ALTER TABLE em_depui ADD CONSTRAINT UNQ_em_depui UNIQUE ( document_id, entry_id );
+
+-- (derived from xsd:key[@name='em_detectorKey_0'])
+--ALTER TABLE em_detector ADD CONSTRAINT UNQ_em_detector UNIQUE ( document_id, entry_id, id );
+
+-- (derived from xsd:key[@name='em_diffractionKey_0'])
+--ALTER TABLE em_diffraction ADD CONSTRAINT UNQ_em_diffraction UNIQUE ( document_id, id );
+
+-- (derived from xsd:key[@name='em_diffraction_shellKey_0'])
+--ALTER TABLE em_diffraction_shell ADD CONSTRAINT UNQ_em_diffraction_shell UNIQUE ( document_id, id );
+
+-- (derived from xsd:key[@name='em_diffraction_statsKey_0'])
+--ALTER TABLE em_diffraction_stats ADD CONSTRAINT UNQ_em_diffraction_stats UNIQUE ( document_id, id );
+
+-- (derived from xsd:key[@name='em_embeddingKey_0'])
+--ALTER TABLE em_embedding ADD CONSTRAINT UNQ_em_embedding UNIQUE ( document_id, id );
+
+-- (derived from xsd:key[@name='em_entity_assemblyKey_0'])
+--ALTER TABLE em_entity_assembly ADD CONSTRAINT UNQ_em_entity_assembly UNIQUE ( document_id, id );
+
+-- (derived from xsd:key[@name='em_entity_assembly_molwtKey_0'])
+--ALTER TABLE em_entity_assembly_molwt ADD CONSTRAINT UNQ_em_entity_assembly_molwt UNIQUE ( document_id, entity_assembly_id, id );
+
+-- (derived from xsd:key[@name='em_entity_assembly_naturalsourceKey_0'])
+--ALTER TABLE em_entity_assembly_naturalsource ADD CONSTRAINT UNQ_em_entity_assembly_naturalsource UNIQUE ( document_id, entity_assembly_id, id );
+
+-- (derived from xsd:key[@name='em_entity_assembly_recombinantKey_0'])
+--ALTER TABLE em_entity_assembly_recombinant ADD CONSTRAINT UNQ_em_entity_assembly_recombinant UNIQUE ( document_id, entity_assembly_id, id );
+
+-- (derived from xsd:key[@name='em_euler_angle_assignmentKey_0'])
+--ALTER TABLE em_euler_angle_assignment ADD CONSTRAINT UNQ_em_euler_angle_assignment UNIQUE ( document_id, id );
+
+-- (derived from xsd:key[@name='em_experimentKey_0'])
+--ALTER TABLE em_experiment ADD CONSTRAINT UNQ_em_experiment UNIQUE ( document_id, entry_id );
+
+-- (derived from xsd:key[@name='em_fiducial_markersKey_0'])
+--ALTER TABLE em_fiducial_markers ADD CONSTRAINT UNQ_em_fiducial_markers UNIQUE ( document_id, id );
+
+-- (derived from xsd:key[@name='em_figure_depositor_infoKey_0'])
+--ALTER TABLE em_figure_depositor_info ADD CONSTRAINT UNQ_em_figure_depositor_info UNIQUE ( document_id, id );
+
+-- (derived from xsd:key[@name='em_final_classificationKey_0'])
+--ALTER TABLE em_final_classification ADD CONSTRAINT UNQ_em_final_classification UNIQUE ( document_id, id );
+
+-- (derived from xsd:key[@name='em_focused_ion_beamKey_0'])
+--ALTER TABLE em_focused_ion_beam ADD CONSTRAINT UNQ_em_focused_ion_beam UNIQUE ( document_id, id );
+
+-- (derived from xsd:key[@name='em_fsc_curveKey_0'])
+--ALTER TABLE em_fsc_curve ADD CONSTRAINT UNQ_em_fsc_curve UNIQUE ( document_id, id );
+
+-- (derived from xsd:key[@name='em_grid_pretreatmentKey_0'])
+--ALTER TABLE em_grid_pretreatment ADD CONSTRAINT UNQ_em_grid_pretreatment UNIQUE ( document_id, id );
+
+-- (derived from xsd:key[@name='em_helical_entityKey_0'])
+--ALTER TABLE em_helical_entity ADD CONSTRAINT UNQ_em_helical_entity UNIQUE ( document_id, id, image_processing_id );
+
+-- (derived from xsd:key[@name='em_high_pressure_freezingKey_0'])
+--ALTER TABLE em_high_pressure_freezing ADD CONSTRAINT UNQ_em_high_pressure_freezing UNIQUE ( document_id, id );
+
+-- (derived from xsd:key[@name='em_image_processingKey_0'])
+--ALTER TABLE em_image_processing ADD CONSTRAINT UNQ_em_image_processing UNIQUE ( document_id, id, image_recording_id );
+
+-- (derived from xsd:key[@name='em_image_recordingKey_0'])
+--ALTER TABLE em_image_recording ADD CONSTRAINT UNQ_em_image_recording UNIQUE ( document_id, id, imaging_id );
+
+-- (derived from xsd:key[@name='em_image_scansKey_0'])
+--ALTER TABLE em_image_scans ADD CONSTRAINT UNQ_em_image_scans UNIQUE ( document_id, id, image_recording_id );
+
+-- (derived from xsd:key[@name='em_imagingKey_0'])
+--ALTER TABLE em_imaging ADD CONSTRAINT UNQ_em_imaging UNIQUE ( document_id, entry_id, id );
+
+-- (derived from xsd:key[@name='em_imaging_opticsKey_0'])
+--ALTER TABLE em_imaging_optics ADD CONSTRAINT UNQ_em_imaging_optics UNIQUE ( document_id, id, imaging_id );
+
+-- (derived from xsd:key[@name='em_interpret_figureKey_0'])
+--ALTER TABLE em_interpret_figure ADD CONSTRAINT UNQ_em_interpret_figure UNIQUE ( document_id, id );
+
+-- (derived from xsd:key[@name='em_layer_linesKey_0'])
+--ALTER TABLE em_layer_lines ADD CONSTRAINT UNQ_em_layer_lines UNIQUE ( document_id, experiment_id, id );
+
+-- (derived from xsd:key[@name='em_layer_lines_depositor_infoKey_0'])
+--ALTER TABLE em_layer_lines_depositor_info ADD CONSTRAINT UNQ_em_layer_lines_depositor_info UNIQUE ( document_id, id );
+
+-- (derived from xsd:key[@name='em_mapKey_0'])
+--ALTER TABLE em_map ADD CONSTRAINT UNQ_em_map UNIQUE ( document_id, entry_id, id );
+
+-- (derived from xsd:key[@name='em_map_depositor_infoKey_0'])
+--ALTER TABLE em_map_depositor_info ADD CONSTRAINT UNQ_em_map_depositor_info UNIQUE ( document_id, entry_id, id );
+
+-- (derived from xsd:key[@name='em_mask_depositor_infoKey_0'])
+--ALTER TABLE em_mask_depositor_info ADD CONSTRAINT UNQ_em_mask_depositor_info UNIQUE ( document_id, id );
+
+-- (derived from xsd:key[@name='em_obsoleteKey_0'])
+--ALTER TABLE em_obsolete ADD CONSTRAINT UNQ_em_obsolete UNIQUE ( document_id, id );
+
+-- (derived from xsd:key[@name='em_particle_selectionKey_0'])
+--ALTER TABLE em_particle_selection ADD CONSTRAINT UNQ_em_particle_selection UNIQUE ( document_id, id, image_processing_id );
+
+-- (derived from xsd:key[@name='em_sample_preparationKey_0'])
+--ALTER TABLE em_sample_preparation ADD CONSTRAINT UNQ_em_sample_preparation UNIQUE ( document_id, entry_id, id );
+
+-- (derived from xsd:key[@name='em_sample_supportKey_0'])
+--ALTER TABLE em_sample_support ADD CONSTRAINT UNQ_em_sample_support UNIQUE ( document_id, id, specimen_id );
+
+-- (derived from xsd:key[@name='em_shadowingKey_0'])
+--ALTER TABLE em_shadowing ADD CONSTRAINT UNQ_em_shadowing UNIQUE ( document_id, id, specimen_id );
+
+-- (derived from xsd:key[@name='em_single_particle_entityKey_0'])
+--ALTER TABLE em_single_particle_entity ADD CONSTRAINT UNQ_em_single_particle_entity UNIQUE ( document_id, id, image_processing_id );
+
+-- (derived from xsd:key[@name='em_softwareKey_0'])
+--ALTER TABLE em_software ADD CONSTRAINT UNQ_em_software UNIQUE ( document_id, id );
+
+-- (derived from xsd:key[@name='em_specimenKey_0'])
+--ALTER TABLE em_specimen ADD CONSTRAINT UNQ_em_specimen UNIQUE ( document_id, experiment_id, id );
+
+-- (derived from xsd:key[@name='em_stainingKey_0'])
+--ALTER TABLE em_staining ADD CONSTRAINT UNQ_em_staining UNIQUE ( document_id, id );
+
+-- (derived from xsd:key[@name='em_start_modelKey_0'])
+--ALTER TABLE em_start_model ADD CONSTRAINT UNQ_em_start_model UNIQUE ( document_id, id, image_processing_id );
+
+-- (derived from xsd:key[@name='em_structure_factorsKey_0'])
+--ALTER TABLE em_structure_factors ADD CONSTRAINT UNQ_em_structure_factors UNIQUE ( document_id, experiment_id, id );
+
+-- (derived from xsd:key[@name='em_structure_factors_depositor_infoKey_0'])
+--ALTER TABLE em_structure_factors_depositor_info ADD CONSTRAINT UNQ_em_structure_factors_depositor_info UNIQUE ( document_id, id );
+
+-- (derived from xsd:key[@name='em_supersedeKey_0'])
+--ALTER TABLE em_supersede ADD CONSTRAINT UNQ_em_supersede UNIQUE ( document_id, id );
+
+-- (derived from xsd:key[@name='em_support_filmKey_0'])
+--ALTER TABLE em_support_film ADD CONSTRAINT UNQ_em_support_film UNIQUE ( document_id, id );
+
+-- (derived from xsd:key[@name='em_tomographyKey_0'])
+--ALTER TABLE em_tomography ADD CONSTRAINT UNQ_em_tomography UNIQUE ( document_id, id, imaging_id );
+
+-- (derived from xsd:key[@name='em_tomography_specimenKey_0'])
+--ALTER TABLE em_tomography_specimen ADD CONSTRAINT UNQ_em_tomography_specimen UNIQUE ( document_id, id );
+
+-- (derived from xsd:key[@name='em_ultramicrotomyKey_0'])
+--ALTER TABLE em_ultramicrotomy ADD CONSTRAINT UNQ_em_ultramicrotomy UNIQUE ( document_id, id );
+
+-- (derived from xsd:key[@name='em_virus_entityKey_0'])
+--ALTER TABLE em_virus_entity ADD CONSTRAINT UNQ_em_virus_entity UNIQUE ( document_id, entity_assembly_id, id );
+
+-- (derived from xsd:key[@name='em_virus_natural_hostKey_0'])
+--ALTER TABLE em_virus_natural_host ADD CONSTRAINT UNQ_em_virus_natural_host UNIQUE ( document_id, entity_assembly_id, id );
+
+-- (derived from xsd:key[@name='em_virus_shellKey_0'])
+--ALTER TABLE em_virus_shell ADD CONSTRAINT UNQ_em_virus_shell UNIQUE ( document_id, entity_assembly_id, id );
+
+-- (derived from xsd:key[@name='em_vitrificationKey_0'])
+--ALTER TABLE em_vitrification ADD CONSTRAINT UNQ_em_vitrification UNIQUE ( document_id, id, specimen_id );
+
+-- (derived from xsd:key[@name='em_volume_selectionKey_0'])
+--ALTER TABLE em_volume_selection ADD CONSTRAINT UNQ_em_volume_selection UNIQUE ( document_id, id, image_processing_id );
+
+-- (derived from xsd:key[@name='entityKey_0'])
+--ALTER TABLE entity ADD CONSTRAINT UNQ_entity UNIQUE ( document_id, id );
+
+-- (derived from xsd:key[@name='entity_keywordsKey_0'])
+--ALTER TABLE entity_keywords ADD CONSTRAINT UNQ_entity_keywords UNIQUE ( document_id, entity_id );
+
+-- (derived from xsd:key[@name='entity_linkKey_0'])
+--ALTER TABLE entity_link ADD CONSTRAINT UNQ_entity_link UNIQUE ( document_id, link_id );
+
+-- (derived from xsd:key[@name='entity_name_comKey_0'])
+--ALTER TABLE entity_name_com ADD CONSTRAINT UNQ_entity_name_com UNIQUE ( document_id, entity_id );
+
+-- (derived from xsd:key[@name='entity_name_sysKey_0'])
+--ALTER TABLE entity_name_sys ADD CONSTRAINT UNQ_entity_name_sys UNIQUE ( document_id, entity_id );
+
+-- (derived from xsd:key[@name='entity_polyKey_0'])
+--ALTER TABLE entity_poly ADD CONSTRAINT UNQ_entity_poly UNIQUE ( document_id, entity_id );
+
+-- (derived from xsd:key[@name='entity_poly_seqKey_0'])
+--ALTER TABLE entity_poly_seq ADD CONSTRAINT UNQ_entity_poly_seq UNIQUE ( document_id, entity_id, mon_id, num );
+
+-- (derived from xsd:key[@name='entity_src_genKey_0'])
+--ALTER TABLE entity_src_gen ADD CONSTRAINT UNQ_entity_src_gen UNIQUE ( document_id, entity_id, pdbx_src_id );
+
+-- (derived from xsd:key[@name='entity_src_natKey_0'])
+--ALTER TABLE entity_src_nat ADD CONSTRAINT UNQ_entity_src_nat UNIQUE ( document_id, entity_id, pdbx_src_id );
+
+-- (derived from xsd:key[@name='entryKey_0'])
+--ALTER TABLE entry ADD CONSTRAINT UNQ_entry UNIQUE ( document_id, id );
+
+-- (derived from xsd:key[@name='entry_linkKey_0'])
+--ALTER TABLE entry_link ADD CONSTRAINT UNQ_entry_link UNIQUE ( document_id, entry_id, id );
+
+-- (derived from xsd:key[@name='exptlKey_0'])
+--ALTER TABLE exptl ADD CONSTRAINT UNQ_exptl UNIQUE ( document_id, entry_id, method );
+
+-- (derived from xsd:key[@name='exptl_crystalKey_0'])
+--ALTER TABLE exptl_crystal ADD CONSTRAINT UNQ_exptl_crystal UNIQUE ( document_id, id );
+
+-- (derived from xsd:key[@name='exptl_crystal_faceKey_0'])
+--ALTER TABLE exptl_crystal_face ADD CONSTRAINT UNQ_exptl_crystal_face UNIQUE ( document_id, crystal_id, index_h, index_k, index_l );
+
+-- (derived from xsd:key[@name='exptl_crystal_growKey_0'])
+--ALTER TABLE exptl_crystal_grow ADD CONSTRAINT UNQ_exptl_crystal_grow UNIQUE ( document_id, crystal_id );
+
+-- (derived from xsd:key[@name='exptl_crystal_grow_compKey_0'])
+--ALTER TABLE exptl_crystal_grow_comp ADD CONSTRAINT UNQ_exptl_crystal_grow_comp UNIQUE ( document_id, crystal_id, id );
+
+-- (derived from xsd:key[@name='geomKey_0'])
+--ALTER TABLE geom ADD CONSTRAINT UNQ_geom UNIQUE ( document_id, entry_id );
+
+-- (derived from xsd:key[@name='geom_angleKey_0'])
+--ALTER TABLE geom_angle ADD CONSTRAINT UNQ_geom_angle UNIQUE ( document_id, atom_site_id_1, atom_site_id_2, atom_site_id_3, site_symmetry_1, site_symmetry_2, site_symmetry_3 );
+
+-- (derived from xsd:key[@name='geom_bondKey_0'])
+--ALTER TABLE geom_bond ADD CONSTRAINT UNQ_geom_bond UNIQUE ( document_id, atom_site_id_1, atom_site_id_2, site_symmetry_1, site_symmetry_2 );
+
+-- (derived from xsd:key[@name='geom_contactKey_0'])
+--ALTER TABLE geom_contact ADD CONSTRAINT UNQ_geom_contact UNIQUE ( document_id, atom_site_id_1, atom_site_id_2, site_symmetry_1, site_symmetry_2 );
+
+-- (derived from xsd:key[@name='geom_hbondKey_0'])
+--ALTER TABLE geom_hbond ADD CONSTRAINT UNQ_geom_hbond UNIQUE ( document_id, "atom_site_id_A", "atom_site_id_D", "atom_site_id_H", "site_symmetry_A", "site_symmetry_D", "site_symmetry_H" );
+
+-- (derived from xsd:key[@name='geom_torsionKey_0'])
+--ALTER TABLE geom_torsion ADD CONSTRAINT UNQ_geom_torsion UNIQUE ( document_id, atom_site_id_1, atom_site_id_2, atom_site_id_3, atom_site_id_4, site_symmetry_1, site_symmetry_2, site_symmetry_3, site_symmetry_4 );
+
+-- (derived from xsd:key[@name='journalKey_0'])
+--ALTER TABLE journal ADD CONSTRAINT UNQ_journal UNIQUE ( document_id, entry_id );
+
+-- (derived from xsd:key[@name='journal_indexKey_0'])
+--ALTER TABLE journal_index ADD CONSTRAINT UNQ_journal_index UNIQUE ( document_id, term, type );
+
+-- (derived from xsd:key[@name='ndb_original_ndb_coordinatesKey_0'])
+--ALTER TABLE ndb_original_ndb_coordinates ADD CONSTRAINT UNQ_ndb_original_ndb_coordinates UNIQUE ( document_id, coord_section );
+
+-- (derived from xsd:key[@name='ndb_struct_conf_naKey_0'])
+--ALTER TABLE ndb_struct_conf_na ADD CONSTRAINT UNQ_ndb_struct_conf_na UNIQUE ( document_id, entry_id, feature );
+
+-- (derived from xsd:key[@name='ndb_struct_feature_naKey_0'])
+--ALTER TABLE ndb_struct_feature_na ADD CONSTRAINT UNQ_ndb_struct_feature_na UNIQUE ( document_id, entry_id, feature );
+
+-- (derived from xsd:key[@name='ndb_struct_na_base_pairKey_0'])
+--ALTER TABLE ndb_struct_na_base_pair ADD CONSTRAINT UNQ_ndb_struct_na_base_pair UNIQUE ( document_id, i_label_asym_id, i_label_comp_id, i_label_seq_id, i_symmetry, j_label_asym_id, j_label_comp_id, j_label_seq_id, j_symmetry, model_number );
+
+-- (derived from xsd:key[@name='ndb_struct_na_base_pair_stepKey_0'])
+--ALTER TABLE ndb_struct_na_base_pair_step ADD CONSTRAINT UNQ_ndb_struct_na_base_pair_step UNIQUE ( document_id, i_label_asym_id_1, i_label_asym_id_2, i_label_comp_id_1, i_label_comp_id_2, i_label_seq_id_1, i_label_seq_id_2, i_symmetry_1, i_symmetry_2, j_label_asym_id_1, j_label_asym_id_2, j_label_comp_id_1, j_label_comp_id_2, j_label_seq_id_1, j_label_seq_id_2, j_symmetry_1, j_symmetry_2, model_number );
+
+-- (derived from xsd:key[@name='pdbx_SG_projectKey_0'])
+--ALTER TABLE "pdbx_SG_project" ADD CONSTRAINT UNQ_pdbx_SG_project UNIQUE ( document_id, id );
+
+-- (derived from xsd:key[@name='pdbx_atlasKey_0'])
+--ALTER TABLE pdbx_atlas ADD CONSTRAINT UNQ_pdbx_atlas UNIQUE ( document_id, entry_id, page_id );
+
+-- (derived from xsd:key[@name='pdbx_atom_site_aniso_tlsKey_0'])
+--ALTER TABLE pdbx_atom_site_aniso_tls ADD CONSTRAINT UNQ_pdbx_atom_site_aniso_tls UNIQUE ( document_id, id, tls_group_id );
+
+-- (derived from xsd:key[@name='pdbx_auditKey_0'])
+--ALTER TABLE pdbx_audit ADD CONSTRAINT UNQ_pdbx_audit UNIQUE ( document_id, entry_id );
+
+-- (derived from xsd:key[@name='pdbx_audit_authorKey_0'])
+--ALTER TABLE pdbx_audit_author ADD CONSTRAINT UNQ_pdbx_audit_author UNIQUE ( document_id, ordinal );
+
+-- (derived from xsd:key[@name='pdbx_audit_conform_extensionKey_0'])
+--ALTER TABLE pdbx_audit_conform_extension ADD CONSTRAINT UNQ_pdbx_audit_conform_extension UNIQUE ( document_id, extension_dict_name, extension_dict_version );
+
+-- (derived from xsd:key[@name='pdbx_audit_revision_categoryKey_0'])
+--ALTER TABLE pdbx_audit_revision_category ADD CONSTRAINT UNQ_pdbx_audit_revision_category UNIQUE ( document_id, data_content_type, ordinal, revision_ordinal );
+
+-- (derived from xsd:key[@name='pdbx_audit_revision_detailsKey_0'])
+--ALTER TABLE pdbx_audit_revision_details ADD CONSTRAINT UNQ_pdbx_audit_revision_details UNIQUE ( document_id, data_content_type, ordinal, revision_ordinal );
+
+-- (derived from xsd:key[@name='pdbx_audit_revision_groupKey_0'])
+--ALTER TABLE pdbx_audit_revision_group ADD CONSTRAINT UNQ_pdbx_audit_revision_group UNIQUE ( document_id, data_content_type, ordinal, revision_ordinal );
+
+-- (derived from xsd:key[@name='pdbx_audit_revision_historyKey_0'])
+--ALTER TABLE pdbx_audit_revision_history ADD CONSTRAINT UNQ_pdbx_audit_revision_history UNIQUE ( document_id, data_content_type, ordinal );
+
+-- (derived from xsd:key[@name='pdbx_audit_revision_itemKey_0'])
+--ALTER TABLE pdbx_audit_revision_item ADD CONSTRAINT UNQ_pdbx_audit_revision_item UNIQUE ( document_id, data_content_type, ordinal, revision_ordinal );
+
+-- (derived from xsd:key[@name='pdbx_audit_supportKey_0'])
+--ALTER TABLE pdbx_audit_support ADD CONSTRAINT UNQ_pdbx_audit_support UNIQUE ( document_id, ordinal );
+
+-- (derived from xsd:key[@name='pdbx_bond_distance_limitsKey_0'])
+--ALTER TABLE pdbx_bond_distance_limits ADD CONSTRAINT UNQ_pdbx_bond_distance_limits UNIQUE ( document_id, atom_type_1, atom_type_2 );
+
+-- (derived from xsd:key[@name='pdbx_bufferKey_0'])
+--ALTER TABLE pdbx_buffer ADD CONSTRAINT UNQ_pdbx_buffer UNIQUE ( document_id, id );
+
+-- (derived from xsd:key[@name='pdbx_buffer_componentsKey_0'])
+--ALTER TABLE pdbx_buffer_components ADD CONSTRAINT UNQ_pdbx_buffer_components UNIQUE ( document_id, buffer_id, id );
+
+-- (derived from xsd:key[@name='pdbx_chem_comp_atom_editKey_0'])
+--ALTER TABLE pdbx_chem_comp_atom_edit ADD CONSTRAINT UNQ_pdbx_chem_comp_atom_edit UNIQUE ( document_id, ordinal );
+
+-- (derived from xsd:key[@name='pdbx_chem_comp_atom_featureKey_0'])
+--ALTER TABLE pdbx_chem_comp_atom_feature ADD CONSTRAINT UNQ_pdbx_chem_comp_atom_feature UNIQUE ( document_id, atom_id, comp_id, feature_type );
+
+-- (derived from xsd:key[@name='pdbx_chem_comp_auditKey_0'])
+--ALTER TABLE pdbx_chem_comp_audit ADD CONSTRAINT UNQ_pdbx_chem_comp_audit UNIQUE ( document_id, action_type, comp_id, date );
+
+-- (derived from xsd:key[@name='pdbx_chem_comp_bond_editKey_0'])
+--ALTER TABLE pdbx_chem_comp_bond_edit ADD CONSTRAINT UNQ_pdbx_chem_comp_bond_edit UNIQUE ( document_id, atom_id_1, atom_id_2, comp_id, edit_op );
+
+-- (derived from xsd:key[@name='pdbx_chem_comp_depositor_infoKey_0'])
+--ALTER TABLE pdbx_chem_comp_depositor_info ADD CONSTRAINT UNQ_pdbx_chem_comp_depositor_info UNIQUE ( document_id, ordinal );
+
+-- (derived from xsd:key[@name='pdbx_chem_comp_descriptorKey_0'])
+--ALTER TABLE pdbx_chem_comp_descriptor ADD CONSTRAINT UNQ_pdbx_chem_comp_descriptor UNIQUE ( document_id, comp_id, program, program_version, type );
+
+-- (derived from xsd:key[@name='pdbx_chem_comp_featureKey_0'])
+--ALTER TABLE pdbx_chem_comp_feature ADD CONSTRAINT UNQ_pdbx_chem_comp_feature UNIQUE ( document_id, comp_id, source, type, value );
+
+-- (derived from xsd:key[@name='pdbx_chem_comp_identifierKey_0'])
+--ALTER TABLE pdbx_chem_comp_identifier ADD CONSTRAINT UNQ_pdbx_chem_comp_identifier UNIQUE ( document_id, comp_id, program, program_version, type );
+
+-- (derived from xsd:key[@name='pdbx_chem_comp_importKey_0'])
+--ALTER TABLE pdbx_chem_comp_import ADD CONSTRAINT UNQ_pdbx_chem_comp_import UNIQUE ( document_id, comp_id );
+
+-- (derived from xsd:key[@name='pdbx_chem_comp_instance_depositor_infoKey_0'])
+--ALTER TABLE pdbx_chem_comp_instance_depositor_info ADD CONSTRAINT UNQ_pdbx_chem_comp_instance_depositor_info UNIQUE ( document_id, ordinal );
+
+-- (derived from xsd:key[@name='pdbx_chem_comp_modelKey_0'])
+--ALTER TABLE pdbx_chem_comp_model ADD CONSTRAINT UNQ_pdbx_chem_comp_model UNIQUE ( document_id, id );
+
+-- (derived from xsd:key[@name='pdbx_chem_comp_model_atomKey_0'])
+--ALTER TABLE pdbx_chem_comp_model_atom ADD CONSTRAINT UNQ_pdbx_chem_comp_model_atom UNIQUE ( document_id, atom_id, model_id );
+
+-- (derived from xsd:key[@name='pdbx_chem_comp_model_auditKey_0'])
+--ALTER TABLE pdbx_chem_comp_model_audit ADD CONSTRAINT UNQ_pdbx_chem_comp_model_audit UNIQUE ( document_id, action_type, date, model_id );
+
+-- (derived from xsd:key[@name='pdbx_chem_comp_model_bondKey_0'])
+--ALTER TABLE pdbx_chem_comp_model_bond ADD CONSTRAINT UNQ_pdbx_chem_comp_model_bond UNIQUE ( document_id, atom_id_1, atom_id_2, model_id );
+
+-- (derived from xsd:key[@name='pdbx_chem_comp_model_descriptorKey_0'])
+--ALTER TABLE pdbx_chem_comp_model_descriptor ADD CONSTRAINT UNQ_pdbx_chem_comp_model_descriptor UNIQUE ( document_id, model_id, type );
+
+-- (derived from xsd:key[@name='pdbx_chem_comp_model_featureKey_0'])
+--ALTER TABLE pdbx_chem_comp_model_feature ADD CONSTRAINT UNQ_pdbx_chem_comp_model_feature UNIQUE ( document_id, feature_name, model_id );
+
+-- (derived from xsd:key[@name='pdbx_chem_comp_model_referenceKey_0'])
+--ALTER TABLE pdbx_chem_comp_model_reference ADD CONSTRAINT UNQ_pdbx_chem_comp_model_reference UNIQUE ( document_id, db_code, db_name, model_id );
+
+-- (derived from xsd:key[@name='pdbx_chem_comp_nonstandardKey_0'])
+--ALTER TABLE pdbx_chem_comp_nonstandard ADD CONSTRAINT UNQ_pdbx_chem_comp_nonstandard UNIQUE ( document_id, comp_id, type );
+
+-- (derived from xsd:key[@name='pdbx_chem_comp_subcomponent_entity_listKey_0'])
+--ALTER TABLE pdbx_chem_comp_subcomponent_entity_list ADD CONSTRAINT UNQ_pdbx_chem_comp_subcomponent_entity_list UNIQUE ( document_id, id );
+
+-- (derived from xsd:key[@name='pdbx_chem_comp_subcomponent_struct_connKey_0'])
+--ALTER TABLE pdbx_chem_comp_subcomponent_struct_conn ADD CONSTRAINT UNQ_pdbx_chem_comp_subcomponent_struct_conn UNIQUE ( document_id, id );
+
+-- (derived from xsd:key[@name='pdbx_chem_comp_upload_depositor_infoKey_0'])
+--ALTER TABLE pdbx_chem_comp_upload_depositor_info ADD CONSTRAINT UNQ_pdbx_chem_comp_upload_depositor_info UNIQUE ( document_id, ordinal );
+
+-- (derived from xsd:key[@name='pdbx_columninfoKey_0'])
+--ALTER TABLE pdbx_columninfo ADD CONSTRAINT UNQ_pdbx_columninfo UNIQUE ( document_id, columnname, tablename );
+
+-- (derived from xsd:key[@name='pdbx_connectKey_0'])
+--ALTER TABLE pdbx_connect ADD CONSTRAINT UNQ_pdbx_connect UNIQUE ( document_id, res_name );
+
+-- (derived from xsd:key[@name='pdbx_connect_atomKey_0'])
+--ALTER TABLE pdbx_connect_atom ADD CONSTRAINT UNQ_pdbx_connect_atom UNIQUE ( document_id, atom_name, connect_to, res_name );
+
+-- (derived from xsd:key[@name='pdbx_connect_modificationKey_0'])
+--ALTER TABLE pdbx_connect_modification ADD CONSTRAINT UNQ_pdbx_connect_modification UNIQUE ( document_id, res_name );
+
+-- (derived from xsd:key[@name='pdbx_connect_typeKey_0'])
+--ALTER TABLE pdbx_connect_type ADD CONSTRAINT UNQ_pdbx_connect_type UNIQUE ( document_id, res_name );
+
+-- (derived from xsd:key[@name='pdbx_constructKey_0'])
+--ALTER TABLE pdbx_construct ADD CONSTRAINT UNQ_pdbx_construct UNIQUE ( document_id, id );
+
+-- (derived from xsd:key[@name='pdbx_construct_featureKey_0'])
+--ALTER TABLE pdbx_construct_feature ADD CONSTRAINT UNQ_pdbx_construct_feature UNIQUE ( document_id, construct_id, id );
+
+-- (derived from xsd:key[@name='pdbx_contact_authorKey_0'])
+--ALTER TABLE pdbx_contact_author ADD CONSTRAINT UNQ_pdbx_contact_author UNIQUE ( document_id, id );
+
+-- (derived from xsd:key[@name='pdbx_coordKey_0'])
+--ALTER TABLE pdbx_coord ADD CONSTRAINT UNQ_pdbx_coord UNIQUE ( document_id, entry_id );
+
+-- (derived from xsd:key[@name='pdbx_coordinate_modelKey_0'])
+--ALTER TABLE pdbx_coordinate_model ADD CONSTRAINT UNQ_pdbx_coordinate_model UNIQUE ( document_id, asym_id );
+
+-- (derived from xsd:key[@name='pdbx_crystal_alignmentKey_0'])
+--ALTER TABLE pdbx_crystal_alignment ADD CONSTRAINT UNQ_pdbx_crystal_alignment UNIQUE ( document_id, crystal_id );
+
+-- (derived from xsd:key[@name='pdbx_data_processing_cellKey_0'])
+--ALTER TABLE pdbx_data_processing_cell ADD CONSTRAINT UNQ_pdbx_data_processing_cell UNIQUE ( document_id, entry_id );
+
+-- (derived from xsd:key[@name='pdbx_data_processing_detectorKey_0'])
+--ALTER TABLE pdbx_data_processing_detector ADD CONSTRAINT UNQ_pdbx_data_processing_detector UNIQUE ( document_id, entry_id );
+
+-- (derived from xsd:key[@name='pdbx_data_processing_reflnsKey_0'])
+--ALTER TABLE pdbx_data_processing_reflns ADD CONSTRAINT UNQ_pdbx_data_processing_reflns UNIQUE ( document_id, entry_id );
+
+-- (derived from xsd:key[@name='pdbx_data_processing_statusKey_0'])
+--ALTER TABLE pdbx_data_processing_status ADD CONSTRAINT UNQ_pdbx_data_processing_status UNIQUE ( document_id, status, task_name );
+
+-- (derived from xsd:key[@name='pdbx_database_PDB_masterKey_0'])
+--ALTER TABLE "pdbx_database_PDB_master" ADD CONSTRAINT UNQ_pdbx_database_PDB_master UNIQUE ( document_id, entry_id );
+
+-- (derived from xsd:key[@name='pdbx_database_PDB_obs_sprKey_0'])
+--ALTER TABLE "pdbx_database_PDB_obs_spr" ADD CONSTRAINT UNQ_pdbx_database_PDB_obs_spr UNIQUE ( document_id, pdb_id, replace_pdb_id );
+
+-- (derived from xsd:key[@name='pdbx_database_messageKey_0'])
+--ALTER TABLE pdbx_database_message ADD CONSTRAINT UNQ_pdbx_database_message UNIQUE ( document_id, entry_id, message_id );
+
+-- (derived from xsd:key[@name='pdbx_database_pdb_omitKey_0'])
+--ALTER TABLE pdbx_database_pdb_omit ADD CONSTRAINT UNQ_pdbx_database_pdb_omit UNIQUE ( document_id, entry_id, record_name );
+
+-- (derived from xsd:key[@name='pdbx_database_procKey_0'])
+--ALTER TABLE pdbx_database_proc ADD CONSTRAINT UNQ_pdbx_database_proc UNIQUE ( document_id, cycle_id, entry_id );
+
+-- (derived from xsd:key[@name='pdbx_database_relatedKey_0'])
+--ALTER TABLE pdbx_database_related ADD CONSTRAINT UNQ_pdbx_database_related UNIQUE ( document_id, content_type, db_id, db_name );
+
+-- (derived from xsd:key[@name='pdbx_database_remarkKey_0'])
+--ALTER TABLE pdbx_database_remark ADD CONSTRAINT UNQ_pdbx_database_remark UNIQUE ( document_id, id );
+
+-- (derived from xsd:key[@name='pdbx_database_statusKey_0'])
+--ALTER TABLE pdbx_database_status ADD CONSTRAINT UNQ_pdbx_database_status UNIQUE ( document_id, entry_id );
+
+-- (derived from xsd:key[@name='pdbx_database_status_historyKey_0'])
+--ALTER TABLE pdbx_database_status_history ADD CONSTRAINT UNQ_pdbx_database_status_history UNIQUE ( document_id, entry_id, ordinal );
+
+-- (derived from xsd:key[@name='pdbx_dbrefKey_0'])
+--ALTER TABLE pdbx_dbref ADD CONSTRAINT UNQ_pdbx_dbref UNIQUE ( document_id, begin_res_number, chain_id, database_name, end_res_number, pdb_id_code );
+
+-- (derived from xsd:key[@name='pdbx_dcc_densityKey_0'])
+--ALTER TABLE pdbx_dcc_density ADD CONSTRAINT UNQ_pdbx_dcc_density UNIQUE ( document_id, pdbid );
+
+-- (derived from xsd:key[@name='pdbx_dcc_density_corrKey_0'])
+--ALTER TABLE pdbx_dcc_density_corr ADD CONSTRAINT UNQ_pdbx_dcc_density_corr UNIQUE ( document_id, ordinal );
+
+-- (derived from xsd:key[@name='pdbx_dcc_geometryKey_0'])
+--ALTER TABLE pdbx_dcc_geometry ADD CONSTRAINT UNQ_pdbx_dcc_geometry UNIQUE ( document_id, pdbid );
+
+-- (derived from xsd:key[@name='pdbx_dcc_mapKey_0'])
+--ALTER TABLE pdbx_dcc_map ADD CONSTRAINT UNQ_pdbx_dcc_map UNIQUE ( document_id, id );
+
+-- (derived from xsd:key[@name='pdbx_dcc_mapmanKey_0'])
+--ALTER TABLE pdbx_dcc_mapman ADD CONSTRAINT UNQ_pdbx_dcc_mapman UNIQUE ( document_id, pdbid );
+
+-- (derived from xsd:key[@name='pdbx_dcc_rscc_mapmanKey_0'])
+--ALTER TABLE pdbx_dcc_rscc_mapman ADD CONSTRAINT UNQ_pdbx_dcc_rscc_mapman UNIQUE ( document_id, id );
+
+-- (derived from xsd:key[@name='pdbx_dcc_rscc_mapman_overallKey_0'])
+--ALTER TABLE pdbx_dcc_rscc_mapman_overall ADD CONSTRAINT UNQ_pdbx_dcc_rscc_mapman_overall UNIQUE ( document_id, pdbid );
+
+-- (derived from xsd:key[@name='pdbx_deposit_groupKey_0'])
+--ALTER TABLE pdbx_deposit_group ADD CONSTRAINT UNQ_pdbx_deposit_group UNIQUE ( document_id, group_id );
+
+-- (derived from xsd:key[@name='pdbx_deposit_group_indexKey_0'])
+--ALTER TABLE pdbx_deposit_group_index ADD CONSTRAINT UNQ_pdbx_deposit_group_index UNIQUE ( document_id, group_id, ordinal_id );
+
+-- (derived from xsd:key[@name='pdbx_deposition_message_file_referenceKey_0'])
+--ALTER TABLE pdbx_deposition_message_file_reference ADD CONSTRAINT UNQ_pdbx_deposition_message_file_reference UNIQUE ( document_id, ordinal );
+
+-- (derived from xsd:key[@name='pdbx_deposition_message_infoKey_0'])
+--ALTER TABLE pdbx_deposition_message_info ADD CONSTRAINT UNQ_pdbx_deposition_message_info UNIQUE ( document_id, ordinal );
+
+-- (derived from xsd:key[@name='pdbx_depui_entity_featuresKey_0'])
+--ALTER TABLE pdbx_depui_entity_features ADD CONSTRAINT UNQ_pdbx_depui_entity_features UNIQUE ( document_id, dep_dataset_id, entity_id, type );
+
+-- (derived from xsd:key[@name='pdbx_depui_entity_status_flagsKey_0'])
+--ALTER TABLE pdbx_depui_entity_status_flags ADD CONSTRAINT UNQ_pdbx_depui_entity_status_flags UNIQUE ( document_id, dep_dataset_id, entity_id );
+
+-- (derived from xsd:key[@name='pdbx_depui_entry_detailsKey_0'])
+--ALTER TABLE pdbx_depui_entry_details ADD CONSTRAINT UNQ_pdbx_depui_entry_details UNIQUE ( document_id, dep_dataset_id );
+
+-- (derived from xsd:key[@name='pdbx_depui_status_flagsKey_0'])
+--ALTER TABLE pdbx_depui_status_flags ADD CONSTRAINT UNQ_pdbx_depui_status_flags UNIQUE ( document_id, dep_dataset_id );
+
+-- (derived from xsd:key[@name='pdbx_depui_uploadKey_0'])
+--ALTER TABLE pdbx_depui_upload ADD CONSTRAINT UNQ_pdbx_depui_upload UNIQUE ( document_id, ordinal );
+
+-- (derived from xsd:key[@name='pdbx_depui_validation_status_flagsKey_0'])
+--ALTER TABLE pdbx_depui_validation_status_flags ADD CONSTRAINT UNQ_pdbx_depui_validation_status_flags UNIQUE ( document_id, dep_dataset_id );
+
+-- (derived from xsd:key[@name='pdbx_diffrn_reflns_shellKey_0'])
+--ALTER TABLE pdbx_diffrn_reflns_shell ADD CONSTRAINT UNQ_pdbx_diffrn_reflns_shell UNIQUE ( document_id, d_res_high, d_res_low, diffrn_id );
+
+-- (derived from xsd:key[@name='pdbx_distant_solvent_atomsKey_0'])
+--ALTER TABLE pdbx_distant_solvent_atoms ADD CONSTRAINT UNQ_pdbx_distant_solvent_atoms UNIQUE ( document_id, id );
+
+-- (derived from xsd:key[@name='pdbx_domainKey_0'])
+--ALTER TABLE pdbx_domain ADD CONSTRAINT UNQ_pdbx_domain UNIQUE ( document_id, id );
+
+-- (derived from xsd:key[@name='pdbx_domain_rangeKey_0'])
+--ALTER TABLE pdbx_domain_range ADD CONSTRAINT UNQ_pdbx_domain_range UNIQUE ( document_id, beg_label_alt_id, beg_label_asym_id, beg_label_comp_id, beg_label_seq_id, domain_id, end_label_alt_id, end_label_asym_id, end_label_comp_id, end_label_seq_id );
+
+-- (derived from xsd:key[@name='pdbx_drug_infoKey_0'])
+--ALTER TABLE pdbx_drug_info ADD CONSTRAINT UNQ_pdbx_drug_info UNIQUE ( document_id, id, name );
+
+-- (derived from xsd:key[@name='pdbx_entity_assemblyKey_0'])
+--ALTER TABLE pdbx_entity_assembly ADD CONSTRAINT UNQ_pdbx_entity_assembly UNIQUE ( document_id, entity_id, id );
+
+-- (derived from xsd:key[@name='pdbx_entity_descriptorKey_0'])
+--ALTER TABLE pdbx_entity_descriptor ADD CONSTRAINT UNQ_pdbx_entity_descriptor UNIQUE ( document_id, ordinal );
+
+-- (derived from xsd:key[@name='pdbx_entity_func_bind_modeKey_0'])
+--ALTER TABLE pdbx_entity_func_bind_mode ADD CONSTRAINT UNQ_pdbx_entity_func_bind_mode UNIQUE ( document_id, domain_id, entity_id, id );
+
+-- (derived from xsd:key[@name='pdbx_entity_func_enzymeKey_0'])
+--ALTER TABLE pdbx_entity_func_enzyme ADD CONSTRAINT UNQ_pdbx_entity_func_enzyme UNIQUE ( document_id, bind_mode_id );
+
+-- (derived from xsd:key[@name='pdbx_entity_func_otherKey_0'])
+--ALTER TABLE pdbx_entity_func_other ADD CONSTRAINT UNQ_pdbx_entity_func_other UNIQUE ( document_id, bind_mode_id );
+
+-- (derived from xsd:key[@name='pdbx_entity_func_regulatoryKey_0'])
+--ALTER TABLE pdbx_entity_func_regulatory ADD CONSTRAINT UNQ_pdbx_entity_func_regulatory UNIQUE ( document_id, bind_mode_id );
+
+-- (derived from xsd:key[@name='pdbx_entity_func_structuralKey_0'])
+--ALTER TABLE pdbx_entity_func_structural ADD CONSTRAINT UNQ_pdbx_entity_func_structural UNIQUE ( document_id, bind_mode_id );
+
+-- (derived from xsd:key[@name='pdbx_entity_instance_featureKey_0'])
+--ALTER TABLE pdbx_entity_instance_feature ADD CONSTRAINT UNQ_pdbx_entity_instance_feature UNIQUE ( document_id, ordinal );
+
+-- (derived from xsd:key[@name='pdbx_entity_nameKey_0'])
+--ALTER TABLE pdbx_entity_name ADD CONSTRAINT UNQ_pdbx_entity_name UNIQUE ( document_id, entity_id, name, name_type );
+
+-- (derived from xsd:key[@name='pdbx_entity_name_instanceKey_0'])
+--ALTER TABLE pdbx_entity_name_instance ADD CONSTRAINT UNQ_pdbx_entity_name_instance UNIQUE ( document_id, entity_id, name, pdb_id );
+
+-- (derived from xsd:key[@name='pdbx_entity_name_taxonomyKey_0'])
+--ALTER TABLE pdbx_entity_name_taxonomy ADD CONSTRAINT UNQ_pdbx_entity_name_taxonomy UNIQUE ( document_id, id, name );
+
+-- (derived from xsd:key[@name='pdbx_entity_name_taxonomy_treeKey_0'])
+--ALTER TABLE pdbx_entity_name_taxonomy_tree ADD CONSTRAINT UNQ_pdbx_entity_name_taxonomy_tree UNIQUE ( document_id, id, parent_id );
+
+-- (derived from xsd:key[@name='pdbx_entity_nonpolyKey_0'])
+--ALTER TABLE pdbx_entity_nonpoly ADD CONSTRAINT UNQ_pdbx_entity_nonpoly UNIQUE ( document_id, entity_id );
+
+-- (derived from xsd:key[@name='pdbx_entity_poly_comp_link_listKey_0'])
+--ALTER TABLE pdbx_entity_poly_comp_link_list ADD CONSTRAINT UNQ_pdbx_entity_poly_comp_link_list UNIQUE ( document_id, link_id );
+
+-- (derived from xsd:key[@name='pdbx_entity_poly_domainKey_0'])
+--ALTER TABLE pdbx_entity_poly_domain ADD CONSTRAINT UNQ_pdbx_entity_poly_domain UNIQUE ( document_id, entity_id, id );
+
+-- (derived from xsd:key[@name='pdbx_entity_poly_na_nonstandardKey_0'])
+--ALTER TABLE pdbx_entity_poly_na_nonstandard ADD CONSTRAINT UNQ_pdbx_entity_poly_na_nonstandard UNIQUE ( document_id, entity_id, feature );
+
+-- (derived from xsd:key[@name='pdbx_entity_poly_na_typeKey_0'])
+--ALTER TABLE pdbx_entity_poly_na_type ADD CONSTRAINT UNQ_pdbx_entity_poly_na_type UNIQUE ( document_id, entity_id, type );
+
+-- (derived from xsd:key[@name='pdbx_entity_poly_protein_classKey_0'])
+--ALTER TABLE pdbx_entity_poly_protein_class ADD CONSTRAINT UNQ_pdbx_entity_poly_protein_class UNIQUE ( document_id, class, entity_id );
+
+-- (derived from xsd:key[@name='pdbx_entity_prod_protocolKey_0'])
+--ALTER TABLE pdbx_entity_prod_protocol ADD CONSTRAINT UNQ_pdbx_entity_prod_protocol UNIQUE ( document_id, entity_id, entry_id, protocol_type );
+
+-- (derived from xsd:key[@name='pdbx_entity_src_gen_characterKey_0'])
+--ALTER TABLE pdbx_entity_src_gen_character ADD CONSTRAINT UNQ_pdbx_entity_src_gen_character UNIQUE ( document_id, entity_id, entry_id, step_id );
+
+-- (derived from xsd:key[@name='pdbx_entity_src_gen_chromKey_0'])
+--ALTER TABLE pdbx_entity_src_gen_chrom ADD CONSTRAINT UNQ_pdbx_entity_src_gen_chrom UNIQUE ( document_id, entity_id, entry_id, step_id );
+
+-- (derived from xsd:key[@name='pdbx_entity_src_gen_cloneKey_0'])
+--ALTER TABLE pdbx_entity_src_gen_clone ADD CONSTRAINT UNQ_pdbx_entity_src_gen_clone UNIQUE ( document_id, entity_id, entry_id, step_id );
+
+-- (derived from xsd:key[@name='pdbx_entity_src_gen_clone_ligationKey_0'])
+--ALTER TABLE pdbx_entity_src_gen_clone_ligation ADD CONSTRAINT UNQ_pdbx_entity_src_gen_clone_ligation UNIQUE ( document_id, entity_id, entry_id, step_id );
+
+-- (derived from xsd:key[@name='pdbx_entity_src_gen_clone_recombinationKey_0'])
+--ALTER TABLE pdbx_entity_src_gen_clone_recombination ADD CONSTRAINT UNQ_pdbx_entity_src_gen_clone_recombination UNIQUE ( document_id, entity_id, entry_id, step_id );
+
+-- (derived from xsd:key[@name='pdbx_entity_src_gen_depositor_infoKey_0'])
+--ALTER TABLE pdbx_entity_src_gen_depositor_info ADD CONSTRAINT UNQ_pdbx_entity_src_gen_depositor_info UNIQUE ( document_id, src_id );
+
+-- (derived from xsd:key[@name='pdbx_entity_src_gen_expressKey_0'])
+--ALTER TABLE pdbx_entity_src_gen_express ADD CONSTRAINT UNQ_pdbx_entity_src_gen_express UNIQUE ( document_id, entity_id, entry_id, step_id );
+
+-- (derived from xsd:key[@name='pdbx_entity_src_gen_express_timepointKey_0'])
+--ALTER TABLE pdbx_entity_src_gen_express_timepoint ADD CONSTRAINT UNQ_pdbx_entity_src_gen_express_timepoint UNIQUE ( document_id, entity_id, entry_id, serial, step_id );
+
+-- (derived from xsd:key[@name='pdbx_entity_src_gen_fractKey_0'])
+--ALTER TABLE pdbx_entity_src_gen_fract ADD CONSTRAINT UNQ_pdbx_entity_src_gen_fract UNIQUE ( document_id, entity_id, entry_id, step_id );
+
+-- (derived from xsd:key[@name='pdbx_entity_src_gen_lysisKey_0'])
+--ALTER TABLE pdbx_entity_src_gen_lysis ADD CONSTRAINT UNQ_pdbx_entity_src_gen_lysis UNIQUE ( document_id, entity_id, entry_id, step_id );
+
+-- (derived from xsd:key[@name='pdbx_entity_src_gen_prod_digestKey_0'])
+--ALTER TABLE pdbx_entity_src_gen_prod_digest ADD CONSTRAINT UNQ_pdbx_entity_src_gen_prod_digest UNIQUE ( document_id, entity_id, entry_id, step_id );
+
+-- (derived from xsd:key[@name='pdbx_entity_src_gen_prod_otherKey_0'])
+--ALTER TABLE pdbx_entity_src_gen_prod_other ADD CONSTRAINT UNQ_pdbx_entity_src_gen_prod_other UNIQUE ( document_id, entity_id, entry_id, step_id );
+
+-- (derived from xsd:key[@name='pdbx_entity_src_gen_prod_other_parameterKey_0'])
+--ALTER TABLE pdbx_entity_src_gen_prod_other_parameter ADD CONSTRAINT UNQ_pdbx_entity_src_gen_prod_other_parameter UNIQUE ( document_id, entity_id, entry_id, parameter, step_id );
+
+-- (derived from xsd:key[@name='pdbx_entity_src_gen_prod_pcrKey_0'])
+--ALTER TABLE pdbx_entity_src_gen_prod_pcr ADD CONSTRAINT UNQ_pdbx_entity_src_gen_prod_pcr UNIQUE ( document_id, entity_id, entry_id, step_id );
+
+-- (derived from xsd:key[@name='pdbx_entity_src_gen_proteolysisKey_0'])
+--ALTER TABLE pdbx_entity_src_gen_proteolysis ADD CONSTRAINT UNQ_pdbx_entity_src_gen_proteolysis UNIQUE ( document_id, entity_id, entry_id, step_id );
+
+-- (derived from xsd:key[@name='pdbx_entity_src_gen_pureKey_0'])
+--ALTER TABLE pdbx_entity_src_gen_pure ADD CONSTRAINT UNQ_pdbx_entity_src_gen_pure UNIQUE ( document_id, entity_id, entry_id, step_id );
+
+-- (derived from xsd:key[@name='pdbx_entity_src_gen_refoldKey_0'])
+--ALTER TABLE pdbx_entity_src_gen_refold ADD CONSTRAINT UNQ_pdbx_entity_src_gen_refold UNIQUE ( document_id, entity_id, entry_id, step_id );
+
+-- (derived from xsd:key[@name='pdbx_entity_src_synKey_0'])
+--ALTER TABLE pdbx_entity_src_syn ADD CONSTRAINT UNQ_pdbx_entity_src_syn UNIQUE ( document_id, entity_id, pdbx_src_id );
+
+-- (derived from xsd:key[@name='pdbx_entry_detailsKey_0'])
+--ALTER TABLE pdbx_entry_details ADD CONSTRAINT UNQ_pdbx_entry_details UNIQUE ( document_id, entry_id );
+
+-- (derived from xsd:key[@name='pdbx_exptl_crystal_cryo_treatmentKey_0'])
+--ALTER TABLE pdbx_exptl_crystal_cryo_treatment ADD CONSTRAINT UNQ_pdbx_exptl_crystal_cryo_treatment UNIQUE ( document_id, crystal_id );
+
+-- (derived from xsd:key[@name='pdbx_exptl_crystal_grow_compKey_0'])
+--ALTER TABLE pdbx_exptl_crystal_grow_comp ADD CONSTRAINT UNQ_pdbx_exptl_crystal_grow_comp UNIQUE ( document_id, comp_id, crystal_id );
+
+-- (derived from xsd:key[@name='pdbx_exptl_crystal_grow_solKey_0'])
+--ALTER TABLE pdbx_exptl_crystal_grow_sol ADD CONSTRAINT UNQ_pdbx_exptl_crystal_grow_sol UNIQUE ( document_id, crystal_id, sol_id );
+
+-- (derived from xsd:key[@name='pdbx_exptl_pdKey_0'])
+--ALTER TABLE pdbx_exptl_pd ADD CONSTRAINT UNQ_pdbx_exptl_pd UNIQUE ( document_id, entry_id );
+
+-- (derived from xsd:key[@name='pdbx_family_group_indexKey_0'])
+--ALTER TABLE pdbx_family_group_index ADD CONSTRAINT UNQ_pdbx_family_group_index UNIQUE ( document_id, family_prd_id, id );
+
+-- (derived from xsd:key[@name='pdbx_family_prd_auditKey_0'])
+--ALTER TABLE pdbx_family_prd_audit ADD CONSTRAINT UNQ_pdbx_family_prd_audit UNIQUE ( document_id, action_type, date, family_prd_id );
+
+-- (derived from xsd:key[@name='pdbx_feature_assemblyKey_0'])
+--ALTER TABLE pdbx_feature_assembly ADD CONSTRAINT UNQ_pdbx_feature_assembly UNIQUE ( document_id, id );
+
+-- (derived from xsd:key[@name='pdbx_feature_domainKey_0'])
+--ALTER TABLE pdbx_feature_domain ADD CONSTRAINT UNQ_pdbx_feature_domain UNIQUE ( document_id, id );
+
+-- (derived from xsd:key[@name='pdbx_feature_entryKey_0'])
+--ALTER TABLE pdbx_feature_entry ADD CONSTRAINT UNQ_pdbx_feature_entry UNIQUE ( document_id, id );
+
+-- (derived from xsd:key[@name='pdbx_feature_monomerKey_0'])
+--ALTER TABLE pdbx_feature_monomer ADD CONSTRAINT UNQ_pdbx_feature_monomer UNIQUE ( document_id, id );
+
+-- (derived from xsd:key[@name='pdbx_feature_sequence_rangeKey_0'])
+--ALTER TABLE pdbx_feature_sequence_range ADD CONSTRAINT UNQ_pdbx_feature_sequence_range UNIQUE ( document_id, id );
+
+-- (derived from xsd:key[@name='pdbx_helical_symmetryKey_0'])
+--ALTER TABLE pdbx_helical_symmetry ADD CONSTRAINT UNQ_pdbx_helical_symmetry UNIQUE ( document_id, entry_id );
+
+-- (derived from xsd:key[@name='pdbx_helical_symmetry_depositor_infoKey_0'])
+--ALTER TABLE pdbx_helical_symmetry_depositor_info ADD CONSTRAINT UNQ_pdbx_helical_symmetry_depositor_info UNIQUE ( document_id, entry_id );
+
+-- (derived from xsd:key[@name='pdbx_hybridKey_0'])
+--ALTER TABLE pdbx_hybrid ADD CONSTRAINT UNQ_pdbx_hybrid UNIQUE ( document_id, id );
+
+-- (derived from xsd:key[@name='pdbx_inhibitor_infoKey_0'])
+--ALTER TABLE pdbx_inhibitor_info ADD CONSTRAINT UNQ_pdbx_inhibitor_info UNIQUE ( document_id, id );
+
+-- (derived from xsd:key[@name='pdbx_ion_infoKey_0'])
+--ALTER TABLE pdbx_ion_info ADD CONSTRAINT UNQ_pdbx_ion_info UNIQUE ( document_id, id );
+
+-- (derived from xsd:key[@name='pdbx_linked_entityKey_0'])
+--ALTER TABLE pdbx_linked_entity ADD CONSTRAINT UNQ_pdbx_linked_entity UNIQUE ( document_id, linked_entity_id );
+
+-- (derived from xsd:key[@name='pdbx_linked_entity_instance_listKey_0'])
+--ALTER TABLE pdbx_linked_entity_instance_list ADD CONSTRAINT UNQ_pdbx_linked_entity_instance_list UNIQUE ( document_id, asym_id, instance_id, linked_entity_id );
+
+-- (derived from xsd:key[@name='pdbx_linked_entity_link_listKey_0'])
+--ALTER TABLE pdbx_linked_entity_link_list ADD CONSTRAINT UNQ_pdbx_linked_entity_link_list UNIQUE ( document_id, link_id, linked_entity_id );
+
+-- (derived from xsd:key[@name='pdbx_linked_entity_listKey_0'])
+--ALTER TABLE pdbx_linked_entity_list ADD CONSTRAINT UNQ_pdbx_linked_entity_list UNIQUE ( document_id, component_id, entity_id, linked_entity_id );
+
+-- (derived from xsd:key[@name='pdbx_missing_atom_nonpolyKey_0'])
+--ALTER TABLE pdbx_missing_atom_nonpoly ADD CONSTRAINT UNQ_pdbx_missing_atom_nonpoly UNIQUE ( document_id, id );
+
+-- (derived from xsd:key[@name='pdbx_missing_atom_polyKey_0'])
+--ALTER TABLE pdbx_missing_atom_poly ADD CONSTRAINT UNQ_pdbx_missing_atom_poly UNIQUE ( document_id, id );
+
+-- (derived from xsd:key[@name='pdbx_missing_residue_listKey_0'])
+--ALTER TABLE pdbx_missing_residue_list ADD CONSTRAINT UNQ_pdbx_missing_residue_list UNIQUE ( document_id, pdb_chain_id, pdb_residue_name, pdb_residue_number );
+
+-- (derived from xsd:key[@name='pdbx_moleculeKey_0'])
+--ALTER TABLE pdbx_molecule ADD CONSTRAINT UNQ_pdbx_molecule UNIQUE ( document_id, asym_id, instance_id, prd_id );
+
+-- (derived from xsd:key[@name='pdbx_molecule_featuresKey_0'])
+--ALTER TABLE pdbx_molecule_features ADD CONSTRAINT UNQ_pdbx_molecule_features UNIQUE ( document_id, prd_id );
+
+-- (derived from xsd:key[@name='pdbx_molecule_features_depositor_infoKey_0'])
+--ALTER TABLE pdbx_molecule_features_depositor_info ADD CONSTRAINT UNQ_pdbx_molecule_features_depositor_info UNIQUE ( document_id, entity_id );
+
+-- (derived from xsd:key[@name='pdbx_na_strand_infoKey_0'])
+--ALTER TABLE pdbx_na_strand_info ADD CONSTRAINT UNQ_pdbx_na_strand_info UNIQUE ( document_id, id );
+
+-- (derived from xsd:key[@name='pdbx_na_struct_keywdsKey_0'])
+--ALTER TABLE pdbx_na_struct_keywds ADD CONSTRAINT UNQ_pdbx_na_struct_keywds UNIQUE ( document_id, entry_id );
+
+-- (derived from xsd:key[@name='pdbx_nmr_assigned_chem_shift_listKey_0'])
+--ALTER TABLE pdbx_nmr_assigned_chem_shift_list ADD CONSTRAINT UNQ_pdbx_nmr_assigned_chem_shift_list UNIQUE ( document_id, entry_id, id );
+
+-- (derived from xsd:key[@name='pdbx_nmr_chem_shift_experimentKey_0'])
+--ALTER TABLE pdbx_nmr_chem_shift_experiment ADD CONSTRAINT UNQ_pdbx_nmr_chem_shift_experiment UNIQUE ( document_id, assigned_chem_shift_list_id, entry_id, experiment_id );
+
+-- (derived from xsd:key[@name='pdbx_nmr_chem_shift_refKey_0'])
+--ALTER TABLE pdbx_nmr_chem_shift_ref ADD CONSTRAINT UNQ_pdbx_nmr_chem_shift_ref UNIQUE ( document_id, atom_isotope_number, atom_type, chem_shift_reference_id, entry_id, mol_common_name );
+
+-- (derived from xsd:key[@name='pdbx_nmr_chem_shift_referenceKey_0'])
+--ALTER TABLE pdbx_nmr_chem_shift_reference ADD CONSTRAINT UNQ_pdbx_nmr_chem_shift_reference UNIQUE ( document_id, entry_id, id );
+
+-- (derived from xsd:key[@name='pdbx_nmr_chem_shift_softwareKey_0'])
+--ALTER TABLE pdbx_nmr_chem_shift_software ADD CONSTRAINT UNQ_pdbx_nmr_chem_shift_software UNIQUE ( document_id, assigned_chem_shift_list_id, entry_id, software_id );
+
+-- (derived from xsd:key[@name='pdbx_nmr_computingKey_0'])
+--ALTER TABLE pdbx_nmr_computing ADD CONSTRAINT UNQ_pdbx_nmr_computing UNIQUE ( document_id, entry_id );
+
+-- (derived from xsd:key[@name='pdbx_nmr_constraint_fileKey_0'])
+--ALTER TABLE pdbx_nmr_constraint_file ADD CONSTRAINT UNQ_pdbx_nmr_constraint_file UNIQUE ( document_id, constraint_filename, constraint_subtype, constraint_type, entry_id );
+
+-- (derived from xsd:key[@name='pdbx_nmr_constraintsKey_0'])
+--ALTER TABLE pdbx_nmr_constraints ADD CONSTRAINT UNQ_pdbx_nmr_constraints UNIQUE ( document_id, entry_id );
+
+-- (derived from xsd:key[@name='pdbx_nmr_detailsKey_0'])
+--ALTER TABLE pdbx_nmr_details ADD CONSTRAINT UNQ_pdbx_nmr_details UNIQUE ( document_id, entry_id );
+
+-- (derived from xsd:key[@name='pdbx_nmr_ensembleKey_0'])
+--ALTER TABLE pdbx_nmr_ensemble ADD CONSTRAINT UNQ_pdbx_nmr_ensemble UNIQUE ( document_id, entry_id );
+
+-- (derived from xsd:key[@name='pdbx_nmr_ensemble_rmsKey_0'])
+--ALTER TABLE pdbx_nmr_ensemble_rms ADD CONSTRAINT UNQ_pdbx_nmr_ensemble_rms UNIQUE ( document_id, entry_id );
+
+-- (derived from xsd:key[@name='pdbx_nmr_exptlKey_0'])
+--ALTER TABLE pdbx_nmr_exptl ADD CONSTRAINT UNQ_pdbx_nmr_exptl UNIQUE ( document_id, conditions_id, experiment_id, solution_id );
+
+-- (derived from xsd:key[@name='pdbx_nmr_exptl_sampleKey_0'])
+--ALTER TABLE pdbx_nmr_exptl_sample ADD CONSTRAINT UNQ_pdbx_nmr_exptl_sample UNIQUE ( document_id, component, solution_id );
+
+-- (derived from xsd:key[@name='pdbx_nmr_exptl_sample_conditionsKey_0'])
+--ALTER TABLE pdbx_nmr_exptl_sample_conditions ADD CONSTRAINT UNQ_pdbx_nmr_exptl_sample_conditions UNIQUE ( document_id, conditions_id );
+
+-- (derived from xsd:key[@name='pdbx_nmr_force_constantsKey_0'])
+--ALTER TABLE pdbx_nmr_force_constants ADD CONSTRAINT UNQ_pdbx_nmr_force_constants UNIQUE ( document_id, entry_id );
+
+-- (derived from xsd:key[@name='pdbx_nmr_refineKey_0'])
+--ALTER TABLE pdbx_nmr_refine ADD CONSTRAINT UNQ_pdbx_nmr_refine UNIQUE ( document_id, entry_id, software_ordinal );
+
+-- (derived from xsd:key[@name='pdbx_nmr_representativeKey_0'])
+--ALTER TABLE pdbx_nmr_representative ADD CONSTRAINT UNQ_pdbx_nmr_representative UNIQUE ( document_id, entry_id );
+
+-- (derived from xsd:key[@name='pdbx_nmr_sample_detailsKey_0'])
+--ALTER TABLE pdbx_nmr_sample_details ADD CONSTRAINT UNQ_pdbx_nmr_sample_details UNIQUE ( document_id, solution_id );
+
+-- (derived from xsd:key[@name='pdbx_nmr_softwareKey_0'])
+--ALTER TABLE pdbx_nmr_software ADD CONSTRAINT UNQ_pdbx_nmr_software UNIQUE ( document_id, ordinal );
+
+-- (derived from xsd:key[@name='pdbx_nmr_software_taskKey_0'])
+--ALTER TABLE pdbx_nmr_software_task ADD CONSTRAINT UNQ_pdbx_nmr_software_task UNIQUE ( document_id, entry_id, software_ordinal, task );
+
+-- (derived from xsd:key[@name='pdbx_nmr_spectral_dimKey_0'])
+--ALTER TABLE pdbx_nmr_spectral_dim ADD CONSTRAINT UNQ_pdbx_nmr_spectral_dim UNIQUE ( document_id, atom_type, entry_id, id, spectral_peak_list_id, spectral_region );
+
+-- (derived from xsd:key[@name='pdbx_nmr_spectral_peak_listKey_0'])
+--ALTER TABLE pdbx_nmr_spectral_peak_list ADD CONSTRAINT UNQ_pdbx_nmr_spectral_peak_list UNIQUE ( document_id, entry_id, id );
+
+-- (derived from xsd:key[@name='pdbx_nmr_spectral_peak_softwareKey_0'])
+--ALTER TABLE pdbx_nmr_spectral_peak_software ADD CONSTRAINT UNQ_pdbx_nmr_spectral_peak_software UNIQUE ( document_id, entry_id, software_id, spectral_peak_list_id );
+
+-- (derived from xsd:key[@name='pdbx_nmr_spectrometerKey_0'])
+--ALTER TABLE pdbx_nmr_spectrometer ADD CONSTRAINT UNQ_pdbx_nmr_spectrometer UNIQUE ( document_id, spectrometer_id );
+
+-- (derived from xsd:key[@name='pdbx_nmr_systematic_chem_shift_offsetKey_0'])
+--ALTER TABLE pdbx_nmr_systematic_chem_shift_offset ADD CONSTRAINT UNQ_pdbx_nmr_systematic_chem_shift_offset UNIQUE ( document_id, ordinal );
+
+-- (derived from xsd:key[@name='pdbx_nmr_uploadKey_0'])
+--ALTER TABLE pdbx_nmr_upload ADD CONSTRAINT UNQ_pdbx_nmr_upload UNIQUE ( document_id, data_file_id, entry_id );
+
+-- (derived from xsd:key[@name='pdbx_nonpoly_schemeKey_0'])
+--ALTER TABLE pdbx_nonpoly_scheme ADD CONSTRAINT UNQ_pdbx_nonpoly_scheme UNIQUE ( document_id, asym_id, ndb_seq_num );
+
+-- (derived from xsd:key[@name='pdbx_nonstandard_listKey_0'])
+--ALTER TABLE pdbx_nonstandard_list ADD CONSTRAINT UNQ_pdbx_nonstandard_list UNIQUE ( document_id, id, label_asym_id, label_seq_id );
+
+-- (derived from xsd:key[@name='pdbx_pdb_compndKey_0'])
+--ALTER TABLE pdbx_pdb_compnd ADD CONSTRAINT UNQ_pdbx_pdb_compnd UNIQUE ( document_id, id );
+
+-- (derived from xsd:key[@name='pdbx_pdb_sourceKey_0'])
+--ALTER TABLE pdbx_pdb_source ADD CONSTRAINT UNQ_pdbx_pdb_source UNIQUE ( document_id, id );
+
+-- (derived from xsd:key[@name='pdbx_phasing_MAD_setKey_0'])
+--ALTER TABLE "pdbx_phasing_MAD_set" ADD CONSTRAINT UNQ_pdbx_phasing_MAD_set UNIQUE ( document_id, id );
+
+-- (derived from xsd:key[@name='pdbx_phasing_MAD_set_shellKey_0'])
+--ALTER TABLE "pdbx_phasing_MAD_set_shell" ADD CONSTRAINT UNQ_pdbx_phasing_MAD_set_shell UNIQUE ( document_id, d_res_high, d_res_low, id );
+
+-- (derived from xsd:key[@name='pdbx_phasing_MAD_set_siteKey_0'])
+--ALTER TABLE "pdbx_phasing_MAD_set_site" ADD CONSTRAINT UNQ_pdbx_phasing_MAD_set_site UNIQUE ( document_id, id );
+
+-- (derived from xsd:key[@name='pdbx_phasing_MAD_shellKey_0'])
+--ALTER TABLE "pdbx_phasing_MAD_shell" ADD CONSTRAINT UNQ_pdbx_phasing_MAD_shell UNIQUE ( document_id, d_res_high, d_res_low );
+
+-- (derived from xsd:key[@name='pdbx_phasing_MRKey_0'])
+--ALTER TABLE "pdbx_phasing_MR" ADD CONSTRAINT UNQ_pdbx_phasing_MR UNIQUE ( document_id, entry_id );
+
+-- (derived from xsd:key[@name='pdbx_phasing_dmKey_0'])
+--ALTER TABLE pdbx_phasing_dm ADD CONSTRAINT UNQ_pdbx_phasing_dm UNIQUE ( document_id, entry_id );
+
+-- (derived from xsd:key[@name='pdbx_phasing_dm_shellKey_0'])
+--ALTER TABLE pdbx_phasing_dm_shell ADD CONSTRAINT UNQ_pdbx_phasing_dm_shell UNIQUE ( document_id, d_res_high, d_res_low );
+
+-- (derived from xsd:key[@name='pdbx_point_symmetryKey_0'])
+--ALTER TABLE pdbx_point_symmetry ADD CONSTRAINT UNQ_pdbx_point_symmetry UNIQUE ( document_id, entry_id );
+
+-- (derived from xsd:key[@name='pdbx_point_symmetry_depositor_infoKey_0'])
+--ALTER TABLE pdbx_point_symmetry_depositor_info ADD CONSTRAINT UNQ_pdbx_point_symmetry_depositor_info UNIQUE ( document_id, entry_id );
+
+-- (derived from xsd:key[@name='pdbx_poly_seq_schemeKey_0'])
+--ALTER TABLE pdbx_poly_seq_scheme ADD CONSTRAINT UNQ_pdbx_poly_seq_scheme UNIQUE ( document_id, asym_id, entity_id, mon_id, seq_id );
+
+-- (derived from xsd:key[@name='pdbx_post_process_detailsKey_0'])
+--ALTER TABLE pdbx_post_process_details ADD CONSTRAINT UNQ_pdbx_post_process_details UNIQUE ( document_id, entry_id );
+
+-- (derived from xsd:key[@name='pdbx_post_process_statusKey_0'])
+--ALTER TABLE pdbx_post_process_status ADD CONSTRAINT UNQ_pdbx_post_process_status UNIQUE ( document_id, cycle_id, entry_id );
+
+-- (derived from xsd:key[@name='pdbx_prd_auditKey_0'])
+--ALTER TABLE pdbx_prd_audit ADD CONSTRAINT UNQ_pdbx_prd_audit UNIQUE ( document_id, action_type, date, prd_id );
+
+-- (derived from xsd:key[@name='pdbx_prerelease_seqKey_0'])
+--ALTER TABLE pdbx_prerelease_seq ADD CONSTRAINT UNQ_pdbx_prerelease_seq UNIQUE ( document_id, entity_id );
+
+-- (derived from xsd:key[@name='pdbx_protein_infoKey_0'])
+--ALTER TABLE pdbx_protein_info ADD CONSTRAINT UNQ_pdbx_protein_info UNIQUE ( document_id, id );
+
+-- (derived from xsd:key[@name='pdbx_re_refinementKey_0'])
+--ALTER TABLE pdbx_re_refinement ADD CONSTRAINT UNQ_pdbx_re_refinement UNIQUE ( document_id, entry_id );
+
+-- (derived from xsd:key[@name='pdbx_reference_entity_linkKey_0'])
+--ALTER TABLE pdbx_reference_entity_link ADD CONSTRAINT UNQ_pdbx_reference_entity_link UNIQUE ( document_id, link_id, prd_id );
+
+-- (derived from xsd:key[@name='pdbx_reference_entity_listKey_0'])
+--ALTER TABLE pdbx_reference_entity_list ADD CONSTRAINT UNQ_pdbx_reference_entity_list UNIQUE ( document_id, component_id, prd_id, ref_entity_id );
+
+-- (derived from xsd:key[@name='pdbx_reference_entity_nonpolyKey_0'])
+--ALTER TABLE pdbx_reference_entity_nonpoly ADD CONSTRAINT UNQ_pdbx_reference_entity_nonpoly UNIQUE ( document_id, prd_id, ref_entity_id );
+
+-- (derived from xsd:key[@name='pdbx_reference_entity_polyKey_0'])
+--ALTER TABLE pdbx_reference_entity_poly ADD CONSTRAINT UNQ_pdbx_reference_entity_poly UNIQUE ( document_id, prd_id, ref_entity_id );
+
+-- (derived from xsd:key[@name='pdbx_reference_entity_poly_linkKey_0'])
+--ALTER TABLE pdbx_reference_entity_poly_link ADD CONSTRAINT UNQ_pdbx_reference_entity_poly_link UNIQUE ( document_id, component_id, link_id, prd_id, ref_entity_id );
+
+-- (derived from xsd:key[@name='pdbx_reference_entity_poly_seqKey_0'])
+--ALTER TABLE pdbx_reference_entity_poly_seq ADD CONSTRAINT UNQ_pdbx_reference_entity_poly_seq UNIQUE ( document_id, hetero, mon_id, num, prd_id, ref_entity_id );
+
+-- (derived from xsd:key[@name='pdbx_reference_entity_sequenceKey_0'])
+--ALTER TABLE pdbx_reference_entity_sequence ADD CONSTRAINT UNQ_pdbx_reference_entity_sequence UNIQUE ( document_id, prd_id, ref_entity_id );
+
+-- (derived from xsd:key[@name='pdbx_reference_entity_src_natKey_0'])
+--ALTER TABLE pdbx_reference_entity_src_nat ADD CONSTRAINT UNQ_pdbx_reference_entity_src_nat UNIQUE ( document_id, ordinal, prd_id, ref_entity_id );
+
+-- (derived from xsd:key[@name='pdbx_reference_entity_subcomponentsKey_0'])
+--ALTER TABLE pdbx_reference_entity_subcomponents ADD CONSTRAINT UNQ_pdbx_reference_entity_subcomponents UNIQUE ( document_id, prd_id, seq );
+
+-- (derived from xsd:key[@name='pdbx_reference_linked_entityKey_0'])
+--ALTER TABLE pdbx_reference_linked_entity ADD CONSTRAINT UNQ_pdbx_reference_linked_entity UNIQUE ( document_id, id );
+
+-- (derived from xsd:key[@name='pdbx_reference_linked_entity_comp_linkKey_0'])
+--ALTER TABLE pdbx_reference_linked_entity_comp_link ADD CONSTRAINT UNQ_pdbx_reference_linked_entity_comp_link UNIQUE ( document_id, link_id, linked_entity_id );
+
+-- (derived from xsd:key[@name='pdbx_reference_linked_entity_comp_listKey_0'])
+--ALTER TABLE pdbx_reference_linked_entity_comp_list ADD CONSTRAINT UNQ_pdbx_reference_linked_entity_comp_list UNIQUE ( document_id, linked_entity_id, list_id );
+
+-- (derived from xsd:key[@name='pdbx_reference_linked_entity_linkKey_0'])
+--ALTER TABLE pdbx_reference_linked_entity_link ADD CONSTRAINT UNQ_pdbx_reference_linked_entity_link UNIQUE ( document_id, link_id, linked_entity_id );
+
+-- (derived from xsd:key[@name='pdbx_reference_moleculeKey_0'])
+--ALTER TABLE pdbx_reference_molecule ADD CONSTRAINT UNQ_pdbx_reference_molecule UNIQUE ( document_id, prd_id );
+
+-- (derived from xsd:key[@name='pdbx_reference_molecule_annotationKey_0'])
+--ALTER TABLE pdbx_reference_molecule_annotation ADD CONSTRAINT UNQ_pdbx_reference_molecule_annotation UNIQUE ( document_id, family_prd_id, ordinal );
+
+-- (derived from xsd:key[@name='pdbx_reference_molecule_detailsKey_0'])
+--ALTER TABLE pdbx_reference_molecule_details ADD CONSTRAINT UNQ_pdbx_reference_molecule_details UNIQUE ( document_id, family_prd_id, ordinal );
+
+-- (derived from xsd:key[@name='pdbx_reference_molecule_familyKey_0'])
+--ALTER TABLE pdbx_reference_molecule_family ADD CONSTRAINT UNQ_pdbx_reference_molecule_family UNIQUE ( document_id, family_prd_id );
+
+-- (derived from xsd:key[@name='pdbx_reference_molecule_featuresKey_0'])
+--ALTER TABLE pdbx_reference_molecule_features ADD CONSTRAINT UNQ_pdbx_reference_molecule_features UNIQUE ( document_id, family_prd_id, ordinal, prd_id );
+
+-- (derived from xsd:key[@name='pdbx_reference_molecule_listKey_0'])
+--ALTER TABLE pdbx_reference_molecule_list ADD CONSTRAINT UNQ_pdbx_reference_molecule_list UNIQUE ( document_id, family_prd_id, prd_id );
+
+-- (derived from xsd:key[@name='pdbx_reference_molecule_related_structuresKey_0'])
+--ALTER TABLE pdbx_reference_molecule_related_structures ADD CONSTRAINT UNQ_pdbx_reference_molecule_related_structures UNIQUE ( document_id, family_prd_id, ordinal );
+
+-- (derived from xsd:key[@name='pdbx_reference_molecule_synonymsKey_0'])
+--ALTER TABLE pdbx_reference_molecule_synonyms ADD CONSTRAINT UNQ_pdbx_reference_molecule_synonyms UNIQUE ( document_id, family_prd_id, ordinal, prd_id );
+
+-- (derived from xsd:key[@name='pdbx_reference_publication_listKey_0'])
+--ALTER TABLE pdbx_reference_publication_list ADD CONSTRAINT UNQ_pdbx_reference_publication_list UNIQUE ( document_id, publication_abbrev );
+
+-- (derived from xsd:key[@name='pdbx_refineKey_0'])
+--ALTER TABLE pdbx_refine ADD CONSTRAINT UNQ_pdbx_refine UNIQUE ( document_id, entry_id, pdbx_refine_id );
+
+-- (derived from xsd:key[@name='pdbx_refine_aux_fileKey_0'])
+--ALTER TABLE pdbx_refine_aux_file ADD CONSTRAINT UNQ_pdbx_refine_aux_file UNIQUE ( document_id, pdbx_refine_id, serial_no );
+
+-- (derived from xsd:key[@name='pdbx_refine_componentKey_0'])
+--ALTER TABLE pdbx_refine_component ADD CONSTRAINT UNQ_pdbx_refine_component UNIQUE ( document_id, label_alt_id, label_asym_id, label_comp_id, label_seq_id );
+
+-- (derived from xsd:key[@name='pdbx_refine_ls_restr_ncsKey_0'])
+--ALTER TABLE pdbx_refine_ls_restr_ncs ADD CONSTRAINT UNQ_pdbx_refine_ls_restr_ncs UNIQUE ( document_id, dom_id );
+
+-- (derived from xsd:key[@name='pdbx_refine_tlsKey_0'])
+--ALTER TABLE pdbx_refine_tls ADD CONSTRAINT UNQ_pdbx_refine_tls UNIQUE ( document_id, id );
+
+-- (derived from xsd:key[@name='pdbx_refine_tls_groupKey_0'])
+--ALTER TABLE pdbx_refine_tls_group ADD CONSTRAINT UNQ_pdbx_refine_tls_group UNIQUE ( document_id, id );
+
+-- (derived from xsd:key[@name='pdbx_reflns_twinKey_0'])
+--ALTER TABLE pdbx_reflns_twin ADD CONSTRAINT UNQ_pdbx_reflns_twin UNIQUE ( document_id, crystal_id, diffrn_id, operator );
+
+-- (derived from xsd:key[@name='pdbx_related_exp_data_setKey_0'])
+--ALTER TABLE pdbx_related_exp_data_set ADD CONSTRAINT UNQ_pdbx_related_exp_data_set UNIQUE ( document_id, ordinal );
+
+-- (derived from xsd:key[@name='pdbx_remediation_atom_site_mappingKey_0'])
+--ALTER TABLE pdbx_remediation_atom_site_mapping ADD CONSTRAINT UNQ_pdbx_remediation_atom_site_mapping UNIQUE ( document_id, id );
+
+-- (derived from xsd:key[@name='pdbx_rmch_outlierKey_0'])
+--ALTER TABLE pdbx_rmch_outlier ADD CONSTRAINT UNQ_pdbx_rmch_outlier UNIQUE ( document_id, id );
+
+-- (derived from xsd:key[@name='pdbx_rms_devs_cov_by_monomerKey_0'])
+--ALTER TABLE pdbx_rms_devs_cov_by_monomer ADD CONSTRAINT UNQ_pdbx_rms_devs_cov_by_monomer UNIQUE ( document_id, id );
+
+-- (derived from xsd:key[@name='pdbx_rms_devs_covalentKey_0'])
+--ALTER TABLE pdbx_rms_devs_covalent ADD CONSTRAINT UNQ_pdbx_rms_devs_covalent UNIQUE ( document_id, entry_id );
+
+-- (derived from xsd:key[@name='pdbx_robot_systemKey_0'])
+--ALTER TABLE pdbx_robot_system ADD CONSTRAINT UNQ_pdbx_robot_system UNIQUE ( document_id, id );
+
+-- (derived from xsd:key[@name='pdbx_seq_map_depositor_infoKey_0'])
+--ALTER TABLE pdbx_seq_map_depositor_info ADD CONSTRAINT UNQ_pdbx_seq_map_depositor_info UNIQUE ( document_id, auth_asym_id, entity_id );
+
+-- (derived from xsd:key[@name='pdbx_sequence_annotationKey_0'])
+--ALTER TABLE pdbx_sequence_annotation ADD CONSTRAINT UNQ_pdbx_sequence_annotation UNIQUE ( document_id, pdb_chain_id );
+
+-- (derived from xsd:key[@name='pdbx_sequence_patternKey_0'])
+--ALTER TABLE pdbx_sequence_pattern ADD CONSTRAINT UNQ_pdbx_sequence_pattern UNIQUE ( document_id, label_asym_id, sequence_pattern );
+
+-- (derived from xsd:key[@name='pdbx_sequence_rangeKey_0'])
+--ALTER TABLE pdbx_sequence_range ADD CONSTRAINT UNQ_pdbx_sequence_range UNIQUE ( document_id, beg_label_alt_id, beg_label_asym_id, beg_label_comp_id, beg_label_seq_id, end_label_alt_id, end_label_asym_id, end_label_comp_id, end_label_seq_id, seq_range_id );
+
+-- (derived from xsd:key[@name='pdbx_serial_crystallography_data_reductionKey_0'])
+--ALTER TABLE pdbx_serial_crystallography_data_reduction ADD CONSTRAINT UNQ_pdbx_serial_crystallography_data_reduction UNIQUE ( document_id, diffrn_id );
+
+-- (derived from xsd:key[@name='pdbx_serial_crystallography_measurementKey_0'])
+--ALTER TABLE pdbx_serial_crystallography_measurement ADD CONSTRAINT UNQ_pdbx_serial_crystallography_measurement UNIQUE ( document_id, diffrn_id );
+
+-- (derived from xsd:key[@name='pdbx_serial_crystallography_sample_deliveryKey_0'])
+--ALTER TABLE pdbx_serial_crystallography_sample_delivery ADD CONSTRAINT UNQ_pdbx_serial_crystallography_sample_delivery UNIQUE ( document_id, diffrn_id );
+
+-- (derived from xsd:key[@name='pdbx_serial_crystallography_sample_delivery_fixed_targetKey_0'])
+--ALTER TABLE pdbx_serial_crystallography_sample_delivery_fixed_target ADD CONSTRAINT UNQ_pdbx_serial_crystallography_sample_delivery_fixed_target UNIQUE ( document_id, diffrn_id );
+
+-- (derived from xsd:key[@name='pdbx_serial_crystallography_sample_delivery_injectionKey_0'])
+--ALTER TABLE pdbx_serial_crystallography_sample_delivery_injection ADD CONSTRAINT UNQ_pdbx_serial_crystallography_sample_delivery_injection UNIQUE ( document_id, diffrn_id );
+
+-- (derived from xsd:key[@name='pdbx_soln_scatterKey_0'])
+--ALTER TABLE pdbx_soln_scatter ADD CONSTRAINT UNQ_pdbx_soln_scatter UNIQUE ( document_id, entry_id, id );
+
+-- (derived from xsd:key[@name='pdbx_soln_scatter_modelKey_0'])
+--ALTER TABLE pdbx_soln_scatter_model ADD CONSTRAINT UNQ_pdbx_soln_scatter_model UNIQUE ( document_id, id, scatter_id );
+
+-- (derived from xsd:key[@name='pdbx_solvent_atom_site_mappingKey_0'])
+--ALTER TABLE pdbx_solvent_atom_site_mapping ADD CONSTRAINT UNQ_pdbx_solvent_atom_site_mapping UNIQUE ( document_id, id );
+
+-- (derived from xsd:key[@name='pdbx_solvent_infoKey_0'])
+--ALTER TABLE pdbx_solvent_info ADD CONSTRAINT UNQ_pdbx_solvent_info UNIQUE ( document_id, id );
+
+-- (derived from xsd:key[@name='pdbx_sourceKey_0'])
+--ALTER TABLE pdbx_source ADD CONSTRAINT UNQ_pdbx_source UNIQUE ( document_id, src_method );
+
+-- (derived from xsd:key[@name='pdbx_stereochemistryKey_0'])
+--ALTER TABLE pdbx_stereochemistry ADD CONSTRAINT UNQ_pdbx_stereochemistry UNIQUE ( document_id, id );
+
+-- (derived from xsd:key[@name='pdbx_struct_assemblyKey_0'])
+--ALTER TABLE pdbx_struct_assembly ADD CONSTRAINT UNQ_pdbx_struct_assembly UNIQUE ( document_id, id );
+
+-- (derived from xsd:key[@name='pdbx_struct_assembly_auth_classificationKey_0'])
+--ALTER TABLE pdbx_struct_assembly_auth_classification ADD CONSTRAINT UNQ_pdbx_struct_assembly_auth_classification UNIQUE ( document_id, assembly_id );
+
+-- (derived from xsd:key[@name='pdbx_struct_assembly_auth_evidenceKey_0'])
+--ALTER TABLE pdbx_struct_assembly_auth_evidence ADD CONSTRAINT UNQ_pdbx_struct_assembly_auth_evidence UNIQUE ( document_id, assembly_id, id );
+
+-- (derived from xsd:key[@name='pdbx_struct_assembly_auth_evidence_depositor_infoKey_0'])
+--ALTER TABLE pdbx_struct_assembly_auth_evidence_depositor_info ADD CONSTRAINT UNQ_pdbx_struct_assembly_auth_evidence_depositor_info UNIQUE ( document_id, assembly_id, id );
+
+-- (derived from xsd:key[@name='pdbx_struct_assembly_depositor_infoKey_0'])
+--ALTER TABLE pdbx_struct_assembly_depositor_info ADD CONSTRAINT UNQ_pdbx_struct_assembly_depositor_info UNIQUE ( document_id, id );
+
+-- (derived from xsd:key[@name='pdbx_struct_assembly_genKey_0'])
+--ALTER TABLE pdbx_struct_assembly_gen ADD CONSTRAINT UNQ_pdbx_struct_assembly_gen UNIQUE ( document_id, assembly_id, asym_id_list, oper_expression );
+
+-- (derived from xsd:key[@name='pdbx_struct_assembly_gen_depositor_infoKey_0'])
+--ALTER TABLE pdbx_struct_assembly_gen_depositor_info ADD CONSTRAINT UNQ_pdbx_struct_assembly_gen_depositor_info UNIQUE ( document_id, id );
+
+-- (derived from xsd:key[@name='pdbx_struct_assembly_propKey_0'])
+--ALTER TABLE pdbx_struct_assembly_prop ADD CONSTRAINT UNQ_pdbx_struct_assembly_prop UNIQUE ( document_id, biol_id, type );
+
+-- (derived from xsd:key[@name='pdbx_struct_assembly_prop_depositor_infoKey_0'])
+--ALTER TABLE pdbx_struct_assembly_prop_depositor_info ADD CONSTRAINT UNQ_pdbx_struct_assembly_prop_depositor_info UNIQUE ( document_id, biol_id, type );
+
+-- (derived from xsd:key[@name='pdbx_struct_asym_genKey_0'])
+--ALTER TABLE pdbx_struct_asym_gen ADD CONSTRAINT UNQ_pdbx_struct_asym_gen UNIQUE ( document_id, entity_inst_id, oper_expression );
+
+-- (derived from xsd:key[@name='pdbx_struct_biol_funcKey_0'])
+--ALTER TABLE pdbx_struct_biol_func ADD CONSTRAINT UNQ_pdbx_struct_biol_func UNIQUE ( document_id, biol_id, id );
+
+-- (derived from xsd:key[@name='pdbx_struct_chem_comp_diagnosticsKey_0'])
+--ALTER TABLE pdbx_struct_chem_comp_diagnostics ADD CONSTRAINT UNQ_pdbx_struct_chem_comp_diagnostics UNIQUE ( document_id, ordinal );
+
+-- (derived from xsd:key[@name='pdbx_struct_chem_comp_featureKey_0'])
+--ALTER TABLE pdbx_struct_chem_comp_feature ADD CONSTRAINT UNQ_pdbx_struct_chem_comp_feature UNIQUE ( document_id, ordinal );
+
+-- (derived from xsd:key[@name='pdbx_struct_conn_angleKey_0'])
+--ALTER TABLE pdbx_struct_conn_angle ADD CONSTRAINT UNQ_pdbx_struct_conn_angle UNIQUE ( document_id, id );
+
+-- (derived from xsd:key[@name='pdbx_struct_entity_instKey_0'])
+--ALTER TABLE pdbx_struct_entity_inst ADD CONSTRAINT UNQ_pdbx_struct_entity_inst UNIQUE ( document_id, id );
+
+-- (derived from xsd:key[@name='pdbx_struct_group_component_rangeKey_0'])
+--ALTER TABLE pdbx_struct_group_component_range ADD CONSTRAINT UNQ_pdbx_struct_group_component_range UNIQUE ( document_id, ordinal );
+
+-- (derived from xsd:key[@name='pdbx_struct_group_componentsKey_0'])
+--ALTER TABLE pdbx_struct_group_components ADD CONSTRAINT UNQ_pdbx_struct_group_components UNIQUE ( document_id, ordinal );
+
+-- (derived from xsd:key[@name='pdbx_struct_group_listKey_0'])
+--ALTER TABLE pdbx_struct_group_list ADD CONSTRAINT UNQ_pdbx_struct_group_list UNIQUE ( document_id, struct_group_id );
+
+-- (derived from xsd:key[@name='pdbx_struct_infoKey_0'])
+--ALTER TABLE pdbx_struct_info ADD CONSTRAINT UNQ_pdbx_struct_info UNIQUE ( document_id, type, value );
+
+-- (derived from xsd:key[@name='pdbx_struct_legacy_oper_listKey_0'])
+--ALTER TABLE pdbx_struct_legacy_oper_list ADD CONSTRAINT UNQ_pdbx_struct_legacy_oper_list UNIQUE ( document_id, id );
+
+-- (derived from xsd:key[@name='pdbx_struct_linkKey_0'])
+--ALTER TABLE pdbx_struct_link ADD CONSTRAINT UNQ_pdbx_struct_link UNIQUE ( document_id, id );
+
+-- (derived from xsd:key[@name='pdbx_struct_mod_residueKey_0'])
+--ALTER TABLE pdbx_struct_mod_residue ADD CONSTRAINT UNQ_pdbx_struct_mod_residue UNIQUE ( document_id, id );
+
+-- (derived from xsd:key[@name='pdbx_struct_msym_genKey_0'])
+--ALTER TABLE pdbx_struct_msym_gen ADD CONSTRAINT UNQ_pdbx_struct_msym_gen UNIQUE ( document_id, entity_inst_id, msym_id, oper_expression );
+
+-- (derived from xsd:key[@name='pdbx_struct_ncs_virus_genKey_0'])
+--ALTER TABLE pdbx_struct_ncs_virus_gen ADD CONSTRAINT UNQ_pdbx_struct_ncs_virus_gen UNIQUE ( document_id, id );
+
+-- (derived from xsd:key[@name='pdbx_struct_oper_listKey_0'])
+--ALTER TABLE pdbx_struct_oper_list ADD CONSTRAINT UNQ_pdbx_struct_oper_list UNIQUE ( document_id, id );
+
+-- (derived from xsd:key[@name='pdbx_struct_oper_list_depositor_infoKey_0'])
+--ALTER TABLE pdbx_struct_oper_list_depositor_info ADD CONSTRAINT UNQ_pdbx_struct_oper_list_depositor_info UNIQUE ( document_id, id );
+
+-- (derived from xsd:key[@name='pdbx_struct_pack_genKey_0'])
+--ALTER TABLE pdbx_struct_pack_gen ADD CONSTRAINT UNQ_pdbx_struct_pack_gen UNIQUE ( document_id, asym_id, id, symmetry );
+
+-- (derived from xsd:key[@name='pdbx_struct_ref_seq_deletionKey_0'])
+--ALTER TABLE pdbx_struct_ref_seq_deletion ADD CONSTRAINT UNQ_pdbx_struct_ref_seq_deletion UNIQUE ( document_id, id );
+
+-- (derived from xsd:key[@name='pdbx_struct_ref_seq_depositor_infoKey_0'])
+--ALTER TABLE pdbx_struct_ref_seq_depositor_info ADD CONSTRAINT UNQ_pdbx_struct_ref_seq_depositor_info UNIQUE ( document_id, ref_id );
+
+-- (derived from xsd:key[@name='pdbx_struct_ref_seq_dif_depositor_infoKey_0'])
+--ALTER TABLE pdbx_struct_ref_seq_dif_depositor_info ADD CONSTRAINT UNQ_pdbx_struct_ref_seq_dif_depositor_info UNIQUE ( document_id, ordinal );
+
+-- (derived from xsd:key[@name='pdbx_struct_ref_seq_featureKey_0'])
+--ALTER TABLE pdbx_struct_ref_seq_feature ADD CONSTRAINT UNQ_pdbx_struct_ref_seq_feature UNIQUE ( document_id, feature_id );
+
+-- (derived from xsd:key[@name='pdbx_struct_ref_seq_feature_propKey_0'])
+--ALTER TABLE pdbx_struct_ref_seq_feature_prop ADD CONSTRAINT UNQ_pdbx_struct_ref_seq_feature_prop UNIQUE ( document_id, feature_id, property_id );
+
+-- (derived from xsd:key[@name='pdbx_struct_ref_seq_insertionKey_0'])
+--ALTER TABLE pdbx_struct_ref_seq_insertion ADD CONSTRAINT UNQ_pdbx_struct_ref_seq_insertion UNIQUE ( document_id, id );
+
+-- (derived from xsd:key[@name='pdbx_struct_sheet_hbondKey_0'])
+--ALTER TABLE pdbx_struct_sheet_hbond ADD CONSTRAINT UNQ_pdbx_struct_sheet_hbond UNIQUE ( document_id, range_id_1, range_id_2, sheet_id );
+
+-- (derived from xsd:key[@name='pdbx_struct_special_symmetryKey_0'])
+--ALTER TABLE pdbx_struct_special_symmetry ADD CONSTRAINT UNQ_pdbx_struct_special_symmetry UNIQUE ( document_id, id );
+
+-- (derived from xsd:key[@name='pdbx_sugar_phosphate_geometryKey_0'])
+--ALTER TABLE pdbx_sugar_phosphate_geometry ADD CONSTRAINT UNQ_pdbx_sugar_phosphate_geometry UNIQUE ( document_id, id );
+
+-- (derived from xsd:key[@name='pdbx_summary_flagsKey_0'])
+--ALTER TABLE pdbx_summary_flags ADD CONSTRAINT UNQ_pdbx_summary_flags UNIQUE ( document_id, entry_id, flag_id );
+
+-- (derived from xsd:key[@name='pdbx_supporting_exp_data_setKey_0'])
+--ALTER TABLE pdbx_supporting_exp_data_set ADD CONSTRAINT UNQ_pdbx_supporting_exp_data_set UNIQUE ( document_id, ordinal );
+
+-- (derived from xsd:key[@name='pdbx_tableinfoKey_0'])
+--ALTER TABLE pdbx_tableinfo ADD CONSTRAINT UNQ_pdbx_tableinfo UNIQUE ( document_id, tablename );
+
+-- (derived from xsd:key[@name='pdbx_trna_infoKey_0'])
+--ALTER TABLE pdbx_trna_info ADD CONSTRAINT UNQ_pdbx_trna_info UNIQUE ( document_id, id );
+
+-- (derived from xsd:key[@name='pdbx_unobs_or_zero_occ_atomsKey_0'])
+--ALTER TABLE pdbx_unobs_or_zero_occ_atoms ADD CONSTRAINT UNQ_pdbx_unobs_or_zero_occ_atoms UNIQUE ( document_id, id );
+
+-- (derived from xsd:key[@name='pdbx_unobs_or_zero_occ_residuesKey_0'])
+--ALTER TABLE pdbx_unobs_or_zero_occ_residues ADD CONSTRAINT UNQ_pdbx_unobs_or_zero_occ_residues UNIQUE ( document_id, id );
+
+-- (derived from xsd:key[@name='pdbx_unpairKey_0'])
+--ALTER TABLE pdbx_unpair ADD CONSTRAINT UNQ_pdbx_unpair UNIQUE ( document_id, chain_id );
+
+-- (derived from xsd:key[@name='pdbx_val_angleKey_0'])
+--ALTER TABLE pdbx_val_angle ADD CONSTRAINT UNQ_pdbx_val_angle UNIQUE ( document_id, id );
+
+-- (derived from xsd:key[@name='pdbx_val_bondKey_0'])
+--ALTER TABLE pdbx_val_bond ADD CONSTRAINT UNQ_pdbx_val_bond UNIQUE ( document_id, id );
+
+-- (derived from xsd:key[@name='pdbx_val_chiralKey_0'])
+--ALTER TABLE pdbx_val_chiral ADD CONSTRAINT UNQ_pdbx_val_chiral UNIQUE ( document_id, id );
+
+-- (derived from xsd:key[@name='pdbx_val_contactKey_0'])
+--ALTER TABLE pdbx_val_contact ADD CONSTRAINT UNQ_pdbx_val_contact UNIQUE ( document_id, id );
+
+-- (derived from xsd:key[@name='pdbx_val_sym_contactKey_0'])
+--ALTER TABLE pdbx_val_sym_contact ADD CONSTRAINT UNQ_pdbx_val_sym_contact UNIQUE ( document_id, id );
+
+-- (derived from xsd:key[@name='pdbx_validate_chiralKey_0'])
+--ALTER TABLE pdbx_validate_chiral ADD CONSTRAINT UNQ_pdbx_validate_chiral UNIQUE ( document_id, id );
+
+-- (derived from xsd:key[@name='pdbx_validate_close_contactKey_0'])
+--ALTER TABLE pdbx_validate_close_contact ADD CONSTRAINT UNQ_pdbx_validate_close_contact UNIQUE ( document_id, id );
+
+-- (derived from xsd:key[@name='pdbx_validate_main_chain_planeKey_0'])
+--ALTER TABLE pdbx_validate_main_chain_plane ADD CONSTRAINT UNQ_pdbx_validate_main_chain_plane UNIQUE ( document_id, id );
+
+-- (derived from xsd:key[@name='pdbx_validate_peptide_omegaKey_0'])
+--ALTER TABLE pdbx_validate_peptide_omega ADD CONSTRAINT UNQ_pdbx_validate_peptide_omega UNIQUE ( document_id, id );
+
+-- (derived from xsd:key[@name='pdbx_validate_planesKey_0'])
+--ALTER TABLE pdbx_validate_planes ADD CONSTRAINT UNQ_pdbx_validate_planes UNIQUE ( document_id, id );
+
+-- (derived from xsd:key[@name='pdbx_validate_planes_atomKey_0'])
+--ALTER TABLE pdbx_validate_planes_atom ADD CONSTRAINT UNQ_pdbx_validate_planes_atom UNIQUE ( document_id, id );
+
+-- (derived from xsd:key[@name='pdbx_validate_polymer_linkageKey_0'])
+--ALTER TABLE pdbx_validate_polymer_linkage ADD CONSTRAINT UNQ_pdbx_validate_polymer_linkage UNIQUE ( document_id, id );
+
+-- (derived from xsd:key[@name='pdbx_validate_rmsd_angleKey_0'])
+--ALTER TABLE pdbx_validate_rmsd_angle ADD CONSTRAINT UNQ_pdbx_validate_rmsd_angle UNIQUE ( document_id, id );
+
+-- (derived from xsd:key[@name='pdbx_validate_rmsd_bondKey_0'])
+--ALTER TABLE pdbx_validate_rmsd_bond ADD CONSTRAINT UNQ_pdbx_validate_rmsd_bond UNIQUE ( document_id, id );
+
+-- (derived from xsd:key[@name='pdbx_validate_symm_contactKey_0'])
+--ALTER TABLE pdbx_validate_symm_contact ADD CONSTRAINT UNQ_pdbx_validate_symm_contact UNIQUE ( document_id, id );
+
+-- (derived from xsd:key[@name='pdbx_validate_torsionKey_0'])
+--ALTER TABLE pdbx_validate_torsion ADD CONSTRAINT UNQ_pdbx_validate_torsion UNIQUE ( document_id, id );
+
+-- (derived from xsd:key[@name='pdbx_versionKey_0'])
+--ALTER TABLE pdbx_version ADD CONSTRAINT UNQ_pdbx_version UNIQUE ( document_id, entry_id, major_version, minor_version, revision_type );
+
+-- (derived from xsd:key[@name='pdbx_view_categoryKey_0'])
+--ALTER TABLE pdbx_view_category ADD CONSTRAINT UNQ_pdbx_view_category UNIQUE ( document_id, category_id );
+
+-- (derived from xsd:key[@name='pdbx_view_category_groupKey_0'])
+--ALTER TABLE pdbx_view_category_group ADD CONSTRAINT UNQ_pdbx_view_category_group UNIQUE ( document_id, view_group_id );
+
+-- (derived from xsd:key[@name='pdbx_view_itemKey_0'])
+--ALTER TABLE pdbx_view_item ADD CONSTRAINT UNQ_pdbx_view_item UNIQUE ( document_id, item_name );
+
+-- (derived from xsd:key[@name='pdbx_virtual_angleKey_0'])
+--ALTER TABLE pdbx_virtual_angle ADD CONSTRAINT UNQ_pdbx_virtual_angle UNIQUE ( document_id, atom_site_id_1, atom_site_id_2, atom_site_id_3, model_id, site_symmetry_1, site_symmetry_2, site_symmetry_3 );
+
+-- (derived from xsd:key[@name='pdbx_virtual_bondKey_0'])
+--ALTER TABLE pdbx_virtual_bond ADD CONSTRAINT UNQ_pdbx_virtual_bond UNIQUE ( document_id, atom_site_id_1, atom_site_id_2, model_id, site_symmetry_1, site_symmetry_2 );
+
+-- (derived from xsd:key[@name='pdbx_virtual_torsionKey_0'])
+--ALTER TABLE pdbx_virtual_torsion ADD CONSTRAINT UNQ_pdbx_virtual_torsion UNIQUE ( document_id, atom_site_id_1, atom_site_id_2, atom_site_id_3, atom_site_id_4, model_id, site_symmetry_1, site_symmetry_2, site_symmetry_3, site_symmetry_4 );
+
+-- (derived from xsd:key[@name='pdbx_xplor_fileKey_0'])
+--ALTER TABLE pdbx_xplor_file ADD CONSTRAINT UNQ_pdbx_xplor_file UNIQUE ( document_id, pdbx_refine_id, serial_no );
+
+-- (derived from xsd:key[@name='phasingKey_0'])
+--ALTER TABLE phasing ADD CONSTRAINT UNQ_phasing UNIQUE ( document_id, method );
+
+-- (derived from xsd:key[@name='phasing_MADKey_0'])
+--ALTER TABLE "phasing_MAD" ADD CONSTRAINT UNQ_phasing_MAD UNIQUE ( document_id, entry_id );
+
+-- (derived from xsd:key[@name='phasing_MAD_clustKey_0'])
+--ALTER TABLE "phasing_MAD_clust" ADD CONSTRAINT UNQ_phasing_MAD_clust UNIQUE ( document_id, expt_id, id );
+
+-- (derived from xsd:key[@name='phasing_MAD_exptKey_0'])
+--ALTER TABLE "phasing_MAD_expt" ADD CONSTRAINT UNQ_phasing_MAD_expt UNIQUE ( document_id, id );
+
+-- (derived from xsd:key[@name='phasing_MAD_ratioKey_0'])
+--ALTER TABLE "phasing_MAD_ratio" ADD CONSTRAINT UNQ_phasing_MAD_ratio UNIQUE ( document_id, clust_id, expt_id, wavelength_1, wavelength_2 );
+
+-- (derived from xsd:key[@name='phasing_MAD_setKey_0'])
+--ALTER TABLE "phasing_MAD_set" ADD CONSTRAINT UNQ_phasing_MAD_set UNIQUE ( document_id, clust_id, expt_id, set_id, wavelength );
+
+-- (derived from xsd:key[@name='phasing_MIRKey_0'])
+--ALTER TABLE "phasing_MIR" ADD CONSTRAINT UNQ_phasing_MIR UNIQUE ( document_id, entry_id );
+
+-- (derived from xsd:key[@name='phasing_MIR_derKey_0'])
+--ALTER TABLE "phasing_MIR_der" ADD CONSTRAINT UNQ_phasing_MIR_der UNIQUE ( document_id, id );
+
+-- (derived from xsd:key[@name='phasing_MIR_der_reflnKey_0'])
+--ALTER TABLE "phasing_MIR_der_refln" ADD CONSTRAINT UNQ_phasing_MIR_der_refln UNIQUE ( document_id, der_id, index_h, index_k, index_l, set_id );
+
+-- (derived from xsd:key[@name='phasing_MIR_der_shellKey_0'])
+--ALTER TABLE "phasing_MIR_der_shell" ADD CONSTRAINT UNQ_phasing_MIR_der_shell UNIQUE ( document_id, d_res_high, d_res_low, der_id );
+
+-- (derived from xsd:key[@name='phasing_MIR_der_siteKey_0'])
+--ALTER TABLE "phasing_MIR_der_site" ADD CONSTRAINT UNQ_phasing_MIR_der_site UNIQUE ( document_id, der_id, id );
+
+-- (derived from xsd:key[@name='phasing_MIR_shellKey_0'])
+--ALTER TABLE "phasing_MIR_shell" ADD CONSTRAINT UNQ_phasing_MIR_shell UNIQUE ( document_id, d_res_high, d_res_low );
+
+-- (derived from xsd:key[@name='phasing_averagingKey_0'])
+--ALTER TABLE phasing_averaging ADD CONSTRAINT UNQ_phasing_averaging UNIQUE ( document_id, entry_id );
+
+-- (derived from xsd:key[@name='phasing_isomorphousKey_0'])
+--ALTER TABLE phasing_isomorphous ADD CONSTRAINT UNQ_phasing_isomorphous UNIQUE ( document_id, entry_id );
+
+-- (derived from xsd:key[@name='phasing_setKey_0'])
+--ALTER TABLE phasing_set ADD CONSTRAINT UNQ_phasing_set UNIQUE ( document_id, id );
+
+-- (derived from xsd:key[@name='phasing_set_reflnKey_0'])
+--ALTER TABLE phasing_set_refln ADD CONSTRAINT UNQ_phasing_set_refln UNIQUE ( document_id, index_h, index_k, index_l, set_id );
+
+-- (derived from xsd:key[@name='publKey_0'])
+--ALTER TABLE publ ADD CONSTRAINT UNQ_publ UNIQUE ( document_id, entry_id );
+
+-- (derived from xsd:key[@name='publ_authorKey_0'])
+--ALTER TABLE publ_author ADD CONSTRAINT UNQ_publ_author UNIQUE ( document_id, name );
+
+-- (derived from xsd:key[@name='publ_bodyKey_0'])
+--ALTER TABLE publ_body ADD CONSTRAINT UNQ_publ_body UNIQUE ( document_id, element, label );
+
+-- (derived from xsd:key[@name='publ_manuscript_inclKey_0'])
+--ALTER TABLE publ_manuscript_incl ADD CONSTRAINT UNQ_publ_manuscript_incl UNIQUE ( document_id, entry_id );
+
+-- (derived from xsd:key[@name='refineKey_0'])
+--ALTER TABLE refine ADD CONSTRAINT UNQ_refine UNIQUE ( document_id, entry_id, pdbx_refine_id );
+
+-- (derived from xsd:key[@name='refine_B_isoKey_0'])
+--ALTER TABLE "refine_B_iso" ADD CONSTRAINT UNQ_refine_B_iso UNIQUE ( document_id, class, pdbx_refine_id );
+
+-- (derived from xsd:key[@name='refine_analyzeKey_0'])
+--ALTER TABLE refine_analyze ADD CONSTRAINT UNQ_refine_analyze UNIQUE ( document_id, entry_id, pdbx_refine_id );
+
+-- (derived from xsd:key[@name='refine_funct_minimizedKey_0'])
+--ALTER TABLE refine_funct_minimized ADD CONSTRAINT UNQ_refine_funct_minimized UNIQUE ( document_id, pdbx_refine_id, type );
+
+-- (derived from xsd:key[@name='refine_histKey_0'])
+--ALTER TABLE refine_hist ADD CONSTRAINT UNQ_refine_hist UNIQUE ( document_id, cycle_id, pdbx_refine_id );
+
+-- (derived from xsd:key[@name='refine_ls_classKey_0'])
+--ALTER TABLE refine_ls_class ADD CONSTRAINT UNQ_refine_ls_class UNIQUE ( document_id, code );
+
+-- (derived from xsd:key[@name='refine_ls_restrKey_0'])
+--ALTER TABLE refine_ls_restr ADD CONSTRAINT UNQ_refine_ls_restr UNIQUE ( document_id, pdbx_refine_id, type );
+
+-- (derived from xsd:key[@name='refine_ls_restr_ncsKey_0'])
+--ALTER TABLE refine_ls_restr_ncs ADD CONSTRAINT UNQ_refine_ls_restr_ncs UNIQUE ( document_id, pdbx_ordinal );
+
+-- (derived from xsd:key[@name='refine_ls_restr_typeKey_0'])
+--ALTER TABLE refine_ls_restr_type ADD CONSTRAINT UNQ_refine_ls_restr_type UNIQUE ( document_id, type );
+
+-- (derived from xsd:key[@name='refine_ls_shellKey_0'])
+--ALTER TABLE refine_ls_shell ADD CONSTRAINT UNQ_refine_ls_shell UNIQUE ( document_id, d_res_high, pdbx_refine_id );
+
+-- (derived from xsd:key[@name='refine_occupancyKey_0'])
+--ALTER TABLE refine_occupancy ADD CONSTRAINT UNQ_refine_occupancy UNIQUE ( document_id, class, pdbx_refine_id );
+
+-- (derived from xsd:key[@name='reflnKey_0'])
+--ALTER TABLE refln ADD CONSTRAINT UNQ_refln UNIQUE ( document_id, index_h, index_k, index_l );
+
+-- (derived from xsd:key[@name='refln_sys_absKey_0'])
+--ALTER TABLE refln_sys_abs ADD CONSTRAINT UNQ_refln_sys_abs UNIQUE ( document_id, index_h, index_k, index_l );
+
+-- (derived from xsd:key[@name='reflnsKey_0'])
+--ALTER TABLE reflns ADD CONSTRAINT UNQ_reflns UNIQUE ( document_id, pdbx_ordinal );
+
+-- (derived from xsd:key[@name='reflns_classKey_0'])
+--ALTER TABLE reflns_class ADD CONSTRAINT UNQ_reflns_class UNIQUE ( document_id, code );
+
+-- (derived from xsd:key[@name='reflns_scaleKey_0'])
+--ALTER TABLE reflns_scale ADD CONSTRAINT UNQ_reflns_scale UNIQUE ( document_id, group_code );
+
+-- (derived from xsd:key[@name='reflns_shellKey_0'])
+--ALTER TABLE reflns_shell ADD CONSTRAINT UNQ_reflns_shell UNIQUE ( document_id, pdbx_ordinal );
+
+-- (derived from xsd:key[@name='softwareKey_0'])
+--ALTER TABLE software ADD CONSTRAINT UNQ_software UNIQUE ( document_id, pdbx_ordinal );
+
+-- (derived from xsd:key[@name='space_groupKey_0'])
+--ALTER TABLE space_group ADD CONSTRAINT UNQ_space_group UNIQUE ( document_id, id );
+
+-- (derived from xsd:key[@name='space_group_symopKey_0'])
+--ALTER TABLE space_group_symop ADD CONSTRAINT UNQ_space_group_symop UNIQUE ( document_id, id );
+
+-- (derived from xsd:key[@name='structKey_0'])
+--ALTER TABLE struct ADD CONSTRAINT UNQ_struct UNIQUE ( document_id, entry_id );
+
+-- (derived from xsd:key[@name='struct_asymKey_0'])
+--ALTER TABLE struct_asym ADD CONSTRAINT UNQ_struct_asym UNIQUE ( document_id, id );
+
+-- (derived from xsd:key[@name='struct_biolKey_0'])
+--ALTER TABLE struct_biol ADD CONSTRAINT UNQ_struct_biol UNIQUE ( document_id, id );
+
+-- (derived from xsd:key[@name='struct_biol_genKey_0'])
+--ALTER TABLE struct_biol_gen ADD CONSTRAINT UNQ_struct_biol_gen UNIQUE ( document_id, asym_id, biol_id, symmetry );
+
+-- (derived from xsd:key[@name='struct_biol_keywordsKey_0'])
+--ALTER TABLE struct_biol_keywords ADD CONSTRAINT UNQ_struct_biol_keywords UNIQUE ( document_id, biol_id, text );
+
+-- (derived from xsd:key[@name='struct_biol_viewKey_0'])
+--ALTER TABLE struct_biol_view ADD CONSTRAINT UNQ_struct_biol_view UNIQUE ( document_id, biol_id, id );
+
+-- (derived from xsd:key[@name='struct_confKey_0'])
+--ALTER TABLE struct_conf ADD CONSTRAINT UNQ_struct_conf UNIQUE ( document_id, id );
+
+-- (derived from xsd:key[@name='struct_conf_typeKey_0'])
+--ALTER TABLE struct_conf_type ADD CONSTRAINT UNQ_struct_conf_type UNIQUE ( document_id, id );
+
+-- (derived from xsd:key[@name='struct_connKey_0'])
+--ALTER TABLE struct_conn ADD CONSTRAINT UNQ_struct_conn UNIQUE ( document_id, id );
+
+-- (derived from xsd:key[@name='struct_conn_typeKey_0'])
+--ALTER TABLE struct_conn_type ADD CONSTRAINT UNQ_struct_conn_type UNIQUE ( document_id, id );
+
+-- (derived from xsd:key[@name='struct_keywordsKey_0'])
+--ALTER TABLE struct_keywords ADD CONSTRAINT UNQ_struct_keywords UNIQUE ( document_id, entry_id );
+
+-- (derived from xsd:key[@name='struct_mon_detailsKey_0'])
+--ALTER TABLE struct_mon_details ADD CONSTRAINT UNQ_struct_mon_details UNIQUE ( document_id, entry_id );
+
+-- (derived from xsd:key[@name='struct_mon_nuclKey_0'])
+--ALTER TABLE struct_mon_nucl ADD CONSTRAINT UNQ_struct_mon_nucl UNIQUE ( document_id, label_alt_id, label_asym_id, label_comp_id, label_seq_id );
+
+-- (derived from xsd:key[@name='struct_mon_protKey_0'])
+--ALTER TABLE struct_mon_prot ADD CONSTRAINT UNQ_struct_mon_prot UNIQUE ( document_id, label_alt_id, label_asym_id, label_comp_id, label_seq_id );
+
+-- (derived from xsd:key[@name='struct_mon_prot_cisKey_0'])
+--ALTER TABLE struct_mon_prot_cis ADD CONSTRAINT UNQ_struct_mon_prot_cis UNIQUE ( document_id, pdbx_id );
+
+-- (derived from xsd:key[@name='struct_ncs_domKey_0'])
+--ALTER TABLE struct_ncs_dom ADD CONSTRAINT UNQ_struct_ncs_dom UNIQUE ( document_id, id, pdbx_ens_id );
+
+-- (derived from xsd:key[@name='struct_ncs_dom_limKey_0'])
+--ALTER TABLE struct_ncs_dom_lim ADD CONSTRAINT UNQ_struct_ncs_dom_lim UNIQUE ( document_id, dom_id, pdbx_component_id, pdbx_ens_id );
+
+-- (derived from xsd:key[@name='struct_ncs_ensKey_0'])
+--ALTER TABLE struct_ncs_ens ADD CONSTRAINT UNQ_struct_ncs_ens UNIQUE ( document_id, id );
+
+-- (derived from xsd:key[@name='struct_ncs_ens_genKey_0'])
+--ALTER TABLE struct_ncs_ens_gen ADD CONSTRAINT UNQ_struct_ncs_ens_gen UNIQUE ( document_id, dom_id_1, dom_id_2, ens_id, oper_id );
+
+-- (derived from xsd:key[@name='struct_ncs_operKey_0'])
+--ALTER TABLE struct_ncs_oper ADD CONSTRAINT UNQ_struct_ncs_oper UNIQUE ( document_id, id );
+
+-- (derived from xsd:key[@name='struct_refKey_0'])
+--ALTER TABLE struct_ref ADD CONSTRAINT UNQ_struct_ref UNIQUE ( document_id, id );
+
+-- (derived from xsd:key[@name='struct_ref_seqKey_0'])
+--ALTER TABLE struct_ref_seq ADD CONSTRAINT UNQ_struct_ref_seq UNIQUE ( document_id, align_id );
+
+-- (derived from xsd:key[@name='struct_ref_seq_difKey_0'])
+--ALTER TABLE struct_ref_seq_dif ADD CONSTRAINT UNQ_struct_ref_seq_dif UNIQUE ( document_id, pdbx_ordinal );
+
+-- (derived from xsd:key[@name='struct_sheetKey_0'])
+--ALTER TABLE struct_sheet ADD CONSTRAINT UNQ_struct_sheet UNIQUE ( document_id, id );
+
+-- (derived from xsd:key[@name='struct_sheet_hbondKey_0'])
+--ALTER TABLE struct_sheet_hbond ADD CONSTRAINT UNQ_struct_sheet_hbond UNIQUE ( document_id, range_id_1, range_id_2, sheet_id );
+
+-- (derived from xsd:key[@name='struct_sheet_orderKey_0'])
+--ALTER TABLE struct_sheet_order ADD CONSTRAINT UNQ_struct_sheet_order UNIQUE ( document_id, range_id_1, range_id_2, sheet_id );
+
+-- (derived from xsd:key[@name='struct_sheet_rangeKey_0'])
+--ALTER TABLE struct_sheet_range ADD CONSTRAINT UNQ_struct_sheet_range UNIQUE ( document_id, id, sheet_id );
+
+-- (derived from xsd:key[@name='struct_sheet_topologyKey_0'])
+--ALTER TABLE struct_sheet_topology ADD CONSTRAINT UNQ_struct_sheet_topology UNIQUE ( document_id, range_id_1, range_id_2, sheet_id );
+
+-- (derived from xsd:key[@name='struct_siteKey_0'])
+--ALTER TABLE struct_site ADD CONSTRAINT UNQ_struct_site UNIQUE ( document_id, id );
+
+-- (derived from xsd:key[@name='struct_site_genKey_0'])
+--ALTER TABLE struct_site_gen ADD CONSTRAINT UNQ_struct_site_gen UNIQUE ( document_id, id, site_id );
+
+-- (derived from xsd:key[@name='struct_site_keywordsKey_0'])
+--ALTER TABLE struct_site_keywords ADD CONSTRAINT UNQ_struct_site_keywords UNIQUE ( document_id, site_id, text );
+
+-- (derived from xsd:key[@name='struct_site_viewKey_0'])
+--ALTER TABLE struct_site_view ADD CONSTRAINT UNQ_struct_site_view UNIQUE ( document_id, id );
+
+-- (derived from xsd:key[@name='symmetryKey_0'])
+--ALTER TABLE symmetry ADD CONSTRAINT UNQ_symmetry UNIQUE ( document_id, entry_id );
+
+-- (derived from xsd:key[@name='symmetry_equivKey_0'])
+--ALTER TABLE symmetry_equiv ADD CONSTRAINT UNQ_symmetry_equiv UNIQUE ( document_id, id );
+
+-- (derived from xsd:key[@name='valence_paramKey_0'])
+--ALTER TABLE valence_param ADD CONSTRAINT UNQ_valence_param UNIQUE ( document_id, atom_1, atom_1_valence, atom_2, atom_2_valence );
+
+-- (derived from xsd:key[@name='valence_refKey_0'])
+--ALTER TABLE valence_ref ADD CONSTRAINT UNQ_valence_ref UNIQUE ( document_id, id );
+
+-- (derived from xsd:keyref[@name='atom_sites_altKeyref_0_0_0_0'])
 --ALTER TABLE atom_sites_alt_gen ADD CONSTRAINT KR_atom_sites_altKeyref_0_0_0_0 FOREIGN KEY ( alt_id ) REFERENCES atom_sites_alt ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='atom_sites_altKeyref_0_0_1_0'])
 --ALTER TABLE pdbx_atom_site_aniso_tls ADD CONSTRAINT KR_atom_sites_altKeyref_0_0_1_0 FOREIGN KEY ( label_alt_id ) REFERENCES atom_sites_alt ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='atom_sites_alt_ensKeyref_0_0_0_0'])
 --ALTER TABLE atom_sites_alt_gen ADD CONSTRAINT KR_atom_sites_alt_ensKeyref_0_0_0_0 FOREIGN KEY ( ens_id ) REFERENCES atom_sites_alt_ens ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='atom_typeKeyref_0_0_0_0'])
 --ALTER TABLE atom_site ADD CONSTRAINT KR_atom_typeKeyref_0_0_0_0 FOREIGN KEY ( type_symbol ) REFERENCES atom_type ( symbol ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='atom_typeKeyref_0_0_1_0'])
 --ALTER TABLE atom_site_anisotrop ADD CONSTRAINT KR_atom_typeKeyref_0_0_1_0 FOREIGN KEY ( type_symbol ) REFERENCES atom_type ( symbol ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='atom_typeKeyref_0_0_2_0'])
 --ALTER TABLE chemical_conn_atom ADD CONSTRAINT KR_atom_typeKeyref_0_0_2_0 FOREIGN KEY ( type_symbol ) REFERENCES atom_type ( symbol ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='auditKeyref_0_0_0_0'])
 --ALTER TABLE pdbx_audit ADD CONSTRAINT KR_auditKeyref_0_0_0_0 FOREIGN KEY ( current_version ) REFERENCES audit ( revision_id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='chem_compKeyref_0_0_0_0'])
 --ALTER TABLE atom_site ADD CONSTRAINT KR_chem_compKeyref_0_0_0_0 FOREIGN KEY ( label_comp_id ) REFERENCES chem_comp ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='chem_compKeyref_0_0_1_0'])
 --ALTER TABLE chem_comp_atom ADD CONSTRAINT KR_chem_compKeyref_0_0_1_0 FOREIGN KEY ( comp_id ) REFERENCES chem_comp ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='chem_compKeyref_0_0_2_0'])
 --ALTER TABLE chem_comp_bond ADD CONSTRAINT KR_chem_compKeyref_0_0_2_0 FOREIGN KEY ( comp_id ) REFERENCES chem_comp ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='chem_compKeyref_0_0_3_0'])
 --ALTER TABLE chem_comp_chir ADD CONSTRAINT KR_chem_compKeyref_0_0_3_0 FOREIGN KEY ( comp_id ) REFERENCES chem_comp ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='chem_compKeyref_0_0_4_0'])
 --ALTER TABLE chem_comp_chir_atom ADD CONSTRAINT KR_chem_compKeyref_0_0_4_0 FOREIGN KEY ( comp_id ) REFERENCES chem_comp ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='chem_compKeyref_0_0_5_0'])
 --ALTER TABLE chem_comp_plane ADD CONSTRAINT KR_chem_compKeyref_0_0_5_0 FOREIGN KEY ( comp_id ) REFERENCES chem_comp ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='chem_compKeyref_0_0_6_0'])
 --ALTER TABLE chem_comp_plane_atom ADD CONSTRAINT KR_chem_compKeyref_0_0_6_0 FOREIGN KEY ( comp_id ) REFERENCES chem_comp ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='chem_compKeyref_0_0_7_0'])
 --ALTER TABLE entity_poly_seq ADD CONSTRAINT KR_chem_compKeyref_0_0_7_0 FOREIGN KEY ( mon_id ) REFERENCES chem_comp ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='chem_compKeyref_0_0_8_0'])
 --ALTER TABLE pdbx_chem_comp_audit ADD CONSTRAINT KR_chem_compKeyref_0_0_8_0 FOREIGN KEY ( comp_id ) REFERENCES chem_comp ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='chem_compKeyref_0_0_9_0'])
 --ALTER TABLE pdbx_chem_comp_descriptor ADD CONSTRAINT KR_chem_compKeyref_0_0_9_0 FOREIGN KEY ( comp_id ) REFERENCES chem_comp ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='chem_compKeyref_0_0_10_0'])
 --ALTER TABLE pdbx_chem_comp_feature ADD CONSTRAINT KR_chem_compKeyref_0_0_10_0 FOREIGN KEY ( comp_id ) REFERENCES chem_comp ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='chem_compKeyref_0_0_11_0'])
 --ALTER TABLE pdbx_chem_comp_identifier ADD CONSTRAINT KR_chem_compKeyref_0_0_11_0 FOREIGN KEY ( comp_id ) REFERENCES chem_comp ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='chem_compKeyref_0_0_12_0'])
 --ALTER TABLE pdbx_chem_comp_import ADD CONSTRAINT KR_chem_compKeyref_0_0_12_0 FOREIGN KEY ( comp_id ) REFERENCES chem_comp ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='chem_compKeyref_0_0_13_0'])
 --ALTER TABLE pdbx_chem_comp_nonstandard ADD CONSTRAINT KR_chem_compKeyref_0_0_13_0 FOREIGN KEY ( comp_id ) REFERENCES chem_comp ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='chem_compKeyref_0_0_14_0'])
 --ALTER TABLE pdbx_chem_comp_subcomponent_entity_list ADD CONSTRAINT KR_chem_compKeyref_0_0_14_0 FOREIGN KEY ( parent_comp_id ) REFERENCES chem_comp ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='chem_compKeyref_0_0_15_0'])
 --ALTER TABLE pdbx_distant_solvent_atoms ADD CONSTRAINT KR_chem_compKeyref_0_0_15_0 FOREIGN KEY ( auth_comp_id ) REFERENCES chem_comp ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='chem_compKeyref_0_0_16_0'])
 --ALTER TABLE pdbx_unobs_or_zero_occ_atoms ADD CONSTRAINT KR_chem_compKeyref_0_0_16_0 FOREIGN KEY ( auth_comp_id ) REFERENCES chem_comp ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='chem_compKeyref_0_0_17_0'])
 --ALTER TABLE pdbx_unobs_or_zero_occ_residues ADD CONSTRAINT KR_chem_compKeyref_0_0_17_0 FOREIGN KEY ( auth_comp_id ) REFERENCES chem_comp ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='chem_comp_atomKeyref_1_0_0_0'])
 --ALTER TABLE chem_comp_angle ADD CONSTRAINT KR_chem_comp_atomKeyref_1_0_0_0_0 FOREIGN KEY ( atom_id_1 ) REFERENCES chem_comp_atom ( atom_id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='chem_comp_atomKeyref_1_0_0_0'])
 --ALTER TABLE chem_comp_angle ADD CONSTRAINT KR_chem_comp_atomKeyref_1_0_0_0_1 FOREIGN KEY ( comp_id ) REFERENCES chem_comp_atom ( comp_id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='chem_comp_atomKeyref_1_0_1_0'])
 --ALTER TABLE chem_comp_bond ADD CONSTRAINT KR_chem_comp_atomKeyref_1_0_1_0_0 FOREIGN KEY ( atom_id_1 ) REFERENCES chem_comp_atom ( atom_id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='chem_comp_atomKeyref_1_0_1_0'])
 --ALTER TABLE chem_comp_bond ADD CONSTRAINT KR_chem_comp_atomKeyref_1_0_1_0_1 FOREIGN KEY ( comp_id ) REFERENCES chem_comp_atom ( comp_id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='chem_comp_atomKeyref_1_0_1_1'])
 --ALTER TABLE chem_comp_bond ADD CONSTRAINT KR_chem_comp_atomKeyref_1_0_1_1_0 FOREIGN KEY ( atom_id_2 ) REFERENCES chem_comp_atom ( atom_id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='chem_comp_atomKeyref_1_0_1_1'])
 --ALTER TABLE chem_comp_bond ADD CONSTRAINT KR_chem_comp_atomKeyref_1_0_1_1_1 FOREIGN KEY ( comp_id ) REFERENCES chem_comp_atom ( comp_id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='chem_comp_atomKeyref_1_0_2_0'])
 --ALTER TABLE chem_comp_tor ADD CONSTRAINT KR_chem_comp_atomKeyref_1_0_2_0_0 FOREIGN KEY ( atom_id_1 ) REFERENCES chem_comp_atom ( atom_id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='chem_comp_atomKeyref_1_0_2_0'])
 --ALTER TABLE chem_comp_tor ADD CONSTRAINT KR_chem_comp_atomKeyref_1_0_2_0_1 FOREIGN KEY ( comp_id ) REFERENCES chem_comp_atom ( comp_id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='chem_comp_atomKeyref_1_0_3_0'])
 --ALTER TABLE pdbx_chem_comp_atom_feature ADD CONSTRAINT KR_chem_comp_atomKeyref_1_0_3_0_0 FOREIGN KEY ( atom_id ) REFERENCES chem_comp_atom ( atom_id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='chem_comp_atomKeyref_1_0_3_0'])
 --ALTER TABLE pdbx_chem_comp_atom_feature ADD CONSTRAINT KR_chem_comp_atomKeyref_1_0_3_0_1 FOREIGN KEY ( comp_id ) REFERENCES chem_comp_atom ( comp_id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='chem_linkKeyref_0_0_0_0'])
 --ALTER TABLE chem_comp_link ADD CONSTRAINT KR_chem_linkKeyref_0_0_0_0 FOREIGN KEY ( link_id ) REFERENCES chem_link ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='chem_linkKeyref_0_0_1_0'])
 --ALTER TABLE chem_link_angle ADD CONSTRAINT KR_chem_linkKeyref_0_0_1_0 FOREIGN KEY ( link_id ) REFERENCES chem_link ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='chem_linkKeyref_0_0_2_0'])
 --ALTER TABLE chem_link_bond ADD CONSTRAINT KR_chem_linkKeyref_0_0_2_0 FOREIGN KEY ( link_id ) REFERENCES chem_link ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='chem_linkKeyref_0_0_3_0'])
 --ALTER TABLE chem_link_chir ADD CONSTRAINT KR_chem_linkKeyref_0_0_3_0 FOREIGN KEY ( link_id ) REFERENCES chem_link ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='chem_linkKeyref_0_0_4_0'])
 --ALTER TABLE chem_link_plane ADD CONSTRAINT KR_chem_linkKeyref_0_0_4_0 FOREIGN KEY ( link_id ) REFERENCES chem_link ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='chem_linkKeyref_0_0_5_0'])
 --ALTER TABLE chem_link_tor ADD CONSTRAINT KR_chem_linkKeyref_0_0_5_0 FOREIGN KEY ( link_id ) REFERENCES chem_link ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='chem_linkKeyref_0_0_6_0'])
 --ALTER TABLE entity_link ADD CONSTRAINT KR_chem_linkKeyref_0_0_6_0 FOREIGN KEY ( link_id ) REFERENCES chem_link ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='chemical_conn_atomKeyref_0_0_0_0'])
 --ALTER TABLE chemical_conn_bond ADD CONSTRAINT KR_chemical_conn_atomKeyref_0_0_0_0 FOREIGN KEY ( atom_1 ) REFERENCES chemical_conn_atom ( number ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='chemical_conn_atomKeyref_0_0_0_1'])
 --ALTER TABLE chemical_conn_bond ADD CONSTRAINT KR_chemical_conn_atomKeyref_0_0_0_1 FOREIGN KEY ( atom_2 ) REFERENCES chemical_conn_atom ( number ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='citationKeyref_0_0_0_0'])
 --ALTER TABLE citation_author ADD CONSTRAINT KR_citationKeyref_0_0_0_0 FOREIGN KEY ( citation_id ) REFERENCES citation ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='citationKeyref_0_0_1_0'])
 --ALTER TABLE citation_editor ADD CONSTRAINT KR_citationKeyref_0_0_1_0 FOREIGN KEY ( citation_id ) REFERENCES citation ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='database_PDB_revKeyref_0_0_0_0'])
 --ALTER TABLE "database_PDB_rev_record" ADD CONSTRAINT KR_database_PDB_revKeyref_0_0_0_0 FOREIGN KEY ( rev_num ) REFERENCES "database_PDB_rev" ( num ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='diffrnKeyref_0_0_0_0'])
 --ALTER TABLE diffrn_detector ADD CONSTRAINT KR_diffrnKeyref_0_0_0_0 FOREIGN KEY ( diffrn_id ) REFERENCES diffrn ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='diffrnKeyref_0_0_1_0'])
 --ALTER TABLE diffrn_measurement ADD CONSTRAINT KR_diffrnKeyref_0_0_1_0 FOREIGN KEY ( diffrn_id ) REFERENCES diffrn ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='diffrnKeyref_0_0_2_0'])
 --ALTER TABLE diffrn_orient_matrix ADD CONSTRAINT KR_diffrnKeyref_0_0_2_0 FOREIGN KEY ( diffrn_id ) REFERENCES diffrn ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='diffrnKeyref_0_0_3_0'])
 --ALTER TABLE diffrn_orient_refln ADD CONSTRAINT KR_diffrnKeyref_0_0_3_0 FOREIGN KEY ( diffrn_id ) REFERENCES diffrn ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='diffrnKeyref_0_0_4_0'])
 --ALTER TABLE diffrn_radiation ADD CONSTRAINT KR_diffrnKeyref_0_0_4_0 FOREIGN KEY ( diffrn_id ) REFERENCES diffrn ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='diffrnKeyref_0_0_5_0'])
 --ALTER TABLE diffrn_refln ADD CONSTRAINT KR_diffrnKeyref_0_0_5_0 FOREIGN KEY ( diffrn_id ) REFERENCES diffrn ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='diffrnKeyref_0_0_6_0'])
 --ALTER TABLE diffrn_reflns ADD CONSTRAINT KR_diffrnKeyref_0_0_6_0 FOREIGN KEY ( diffrn_id ) REFERENCES diffrn ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='diffrnKeyref_0_0_7_0'])
 --ALTER TABLE diffrn_source ADD CONSTRAINT KR_diffrnKeyref_0_0_7_0 FOREIGN KEY ( diffrn_id ) REFERENCES diffrn ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='diffrnKeyref_0_0_8_0'])
 --ALTER TABLE diffrn_standard_refln ADD CONSTRAINT KR_diffrnKeyref_0_0_8_0 FOREIGN KEY ( diffrn_id ) REFERENCES diffrn ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='diffrnKeyref_0_0_9_0'])
 --ALTER TABLE diffrn_standards ADD CONSTRAINT KR_diffrnKeyref_0_0_9_0 FOREIGN KEY ( diffrn_id ) REFERENCES diffrn ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='diffrnKeyref_0_0_10_0'])
 --ALTER TABLE pdbx_diffrn_reflns_shell ADD CONSTRAINT KR_diffrnKeyref_0_0_10_0 FOREIGN KEY ( diffrn_id ) REFERENCES diffrn ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='diffrnKeyref_0_0_11_0'])
 --ALTER TABLE pdbx_serial_crystallography_data_reduction ADD CONSTRAINT KR_diffrnKeyref_0_0_11_0 FOREIGN KEY ( diffrn_id ) REFERENCES diffrn ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='diffrnKeyref_0_0_12_0'])
 --ALTER TABLE pdbx_serial_crystallography_measurement ADD CONSTRAINT KR_diffrnKeyref_0_0_12_0 FOREIGN KEY ( diffrn_id ) REFERENCES diffrn ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='diffrnKeyref_0_0_13_0'])
 --ALTER TABLE pdbx_serial_crystallography_sample_delivery ADD CONSTRAINT KR_diffrnKeyref_0_0_13_0 FOREIGN KEY ( diffrn_id ) REFERENCES diffrn ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='diffrnKeyref_0_0_14_0'])
 --ALTER TABLE pdbx_serial_crystallography_sample_delivery_fixed_target ADD CONSTRAINT KR_diffrnKeyref_0_0_14_0 FOREIGN KEY ( diffrn_id ) REFERENCES diffrn ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='diffrnKeyref_0_0_15_0'])
 --ALTER TABLE pdbx_serial_crystallography_sample_delivery_injection ADD CONSTRAINT KR_diffrnKeyref_0_0_15_0 FOREIGN KEY ( diffrn_id ) REFERENCES diffrn ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='diffrn_scale_groupKeyref_0_0_0_0'])
 --ALTER TABLE diffrn_refln ADD CONSTRAINT KR_diffrn_scale_groupKeyref_0_0_0_0 FOREIGN KEY ( scale_group_code ) REFERENCES diffrn_scale_group ( code ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='em_entity_assemblyKeyref_0_0_0_0'])
 --ALTER TABLE em_entity_assembly_molwt ADD CONSTRAINT KR_em_entity_assemblyKeyref_0_0_0_0 FOREIGN KEY ( entity_assembly_id ) REFERENCES em_entity_assembly ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='em_entity_assemblyKeyref_0_0_1_0'])
 --ALTER TABLE em_entity_assembly_naturalsource ADD CONSTRAINT KR_em_entity_assemblyKeyref_0_0_1_0 FOREIGN KEY ( entity_assembly_id ) REFERENCES em_entity_assembly ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='em_entity_assemblyKeyref_0_0_2_0'])
 --ALTER TABLE em_entity_assembly_recombinant ADD CONSTRAINT KR_em_entity_assemblyKeyref_0_0_2_0 FOREIGN KEY ( entity_assembly_id ) REFERENCES em_entity_assembly ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='em_entity_assemblyKeyref_0_0_3_0'])
 --ALTER TABLE em_virus_entity ADD CONSTRAINT KR_em_entity_assemblyKeyref_0_0_3_0 FOREIGN KEY ( entity_assembly_id ) REFERENCES em_entity_assembly ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='em_entity_assemblyKeyref_0_0_4_0'])
 --ALTER TABLE em_virus_natural_host ADD CONSTRAINT KR_em_entity_assemblyKeyref_0_0_4_0 FOREIGN KEY ( entity_assembly_id ) REFERENCES em_entity_assembly ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='em_entity_assemblyKeyref_0_0_5_0'])
 --ALTER TABLE em_virus_shell ADD CONSTRAINT KR_em_entity_assemblyKeyref_0_0_5_0 FOREIGN KEY ( entity_assembly_id ) REFERENCES em_entity_assembly ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='em_tomography_specimenKeyref_0_0_0_0'])
 --ALTER TABLE em_fiducial_markers ADD CONSTRAINT KR_em_tomography_specimenKeyref_0_0_0_0 FOREIGN KEY ( em_tomography_specimen_id ) REFERENCES em_tomography_specimen ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='em_tomography_specimenKeyref_0_0_1_0'])
 --ALTER TABLE em_focused_ion_beam ADD CONSTRAINT KR_em_tomography_specimenKeyref_0_0_1_0 FOREIGN KEY ( em_tomography_specimen_id ) REFERENCES em_tomography_specimen ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='em_tomography_specimenKeyref_0_0_2_0'])
 --ALTER TABLE em_high_pressure_freezing ADD CONSTRAINT KR_em_tomography_specimenKeyref_0_0_2_0 FOREIGN KEY ( em_tomography_specimen_id ) REFERENCES em_tomography_specimen ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='em_tomography_specimenKeyref_0_0_3_0'])
 --ALTER TABLE em_ultramicrotomy ADD CONSTRAINT KR_em_tomography_specimenKeyref_0_0_3_0 FOREIGN KEY ( em_tomography_specimen_id ) REFERENCES em_tomography_specimen ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='entityKeyref_0_0_0_0'])
 --ALTER TABLE atom_site ADD CONSTRAINT KR_entityKeyref_0_0_0_0 FOREIGN KEY ( label_entity_id ) REFERENCES entity ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='entityKeyref_0_0_1_0'])
 --ALTER TABLE entity_keywords ADD CONSTRAINT KR_entityKeyref_0_0_1_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='entityKeyref_0_0_2_0'])
 --ALTER TABLE entity_link ADD CONSTRAINT KR_entityKeyref_0_0_2_0 FOREIGN KEY ( entity_id_1 ) REFERENCES entity ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='entityKeyref_0_0_2_1'])
 --ALTER TABLE entity_link ADD CONSTRAINT KR_entityKeyref_0_0_2_1 FOREIGN KEY ( entity_id_2 ) REFERENCES entity ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='entityKeyref_0_0_3_0'])
 --ALTER TABLE entity_name_com ADD CONSTRAINT KR_entityKeyref_0_0_3_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='entityKeyref_0_0_4_0'])
 --ALTER TABLE entity_name_sys ADD CONSTRAINT KR_entityKeyref_0_0_4_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='entityKeyref_0_0_5_0'])
 --ALTER TABLE entity_poly ADD CONSTRAINT KR_entityKeyref_0_0_5_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='entityKeyref_0_0_6_0'])
 --ALTER TABLE entity_src_gen ADD CONSTRAINT KR_entityKeyref_0_0_6_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='entityKeyref_0_0_7_0'])
 --ALTER TABLE entity_src_nat ADD CONSTRAINT KR_entityKeyref_0_0_7_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='entityKeyref_0_0_8_0'])
 --ALTER TABLE pdbx_entity_assembly ADD CONSTRAINT KR_entityKeyref_0_0_8_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='entityKeyref_0_0_9_0'])
 --ALTER TABLE pdbx_entity_descriptor ADD CONSTRAINT KR_entityKeyref_0_0_9_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='entityKeyref_0_0_10_0'])
 --ALTER TABLE pdbx_entity_func_bind_mode ADD CONSTRAINT KR_entityKeyref_0_0_10_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='entityKeyref_0_0_11_0'])
 --ALTER TABLE pdbx_entity_name ADD CONSTRAINT KR_entityKeyref_0_0_11_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='entityKeyref_0_0_12_0'])
 --ALTER TABLE pdbx_entity_nonpoly ADD CONSTRAINT KR_entityKeyref_0_0_12_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='entityKeyref_0_0_13_0'])
 --ALTER TABLE pdbx_entity_poly_domain ADD CONSTRAINT KR_entityKeyref_0_0_13_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='entityKeyref_0_0_14_0'])
 --ALTER TABLE pdbx_entity_poly_na_nonstandard ADD CONSTRAINT KR_entityKeyref_0_0_14_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='entityKeyref_0_0_15_0'])
 --ALTER TABLE pdbx_entity_poly_na_type ADD CONSTRAINT KR_entityKeyref_0_0_15_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='entityKeyref_0_0_16_0'])
 --ALTER TABLE pdbx_entity_poly_protein_class ADD CONSTRAINT KR_entityKeyref_0_0_16_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='entityKeyref_0_0_17_0'])
 --ALTER TABLE pdbx_entity_prod_protocol ADD CONSTRAINT KR_entityKeyref_0_0_17_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='entityKeyref_0_0_18_0'])
 --ALTER TABLE pdbx_entity_src_gen_character ADD CONSTRAINT KR_entityKeyref_0_0_18_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='entityKeyref_0_0_19_0'])
 --ALTER TABLE pdbx_entity_src_gen_chrom ADD CONSTRAINT KR_entityKeyref_0_0_19_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='entityKeyref_0_0_20_0'])
 --ALTER TABLE pdbx_entity_src_gen_clone ADD CONSTRAINT KR_entityKeyref_0_0_20_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='entityKeyref_0_0_21_0'])
 --ALTER TABLE pdbx_entity_src_gen_express ADD CONSTRAINT KR_entityKeyref_0_0_21_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='entityKeyref_0_0_22_0'])
 --ALTER TABLE pdbx_entity_src_gen_fract ADD CONSTRAINT KR_entityKeyref_0_0_22_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='entityKeyref_0_0_23_0'])
 --ALTER TABLE pdbx_entity_src_gen_lysis ADD CONSTRAINT KR_entityKeyref_0_0_23_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='entityKeyref_0_0_24_0'])
 --ALTER TABLE pdbx_entity_src_gen_prod_digest ADD CONSTRAINT KR_entityKeyref_0_0_24_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='entityKeyref_0_0_25_0'])
 --ALTER TABLE pdbx_entity_src_gen_prod_other ADD CONSTRAINT KR_entityKeyref_0_0_25_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='entityKeyref_0_0_26_0'])
 --ALTER TABLE pdbx_entity_src_gen_prod_pcr ADD CONSTRAINT KR_entityKeyref_0_0_26_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='entityKeyref_0_0_27_0'])
 --ALTER TABLE pdbx_entity_src_gen_proteolysis ADD CONSTRAINT KR_entityKeyref_0_0_27_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='entityKeyref_0_0_28_0'])
 --ALTER TABLE pdbx_entity_src_gen_pure ADD CONSTRAINT KR_entityKeyref_0_0_28_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='entityKeyref_0_0_29_0'])
 --ALTER TABLE pdbx_entity_src_gen_refold ADD CONSTRAINT KR_entityKeyref_0_0_29_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='entityKeyref_0_0_30_0'])
 --ALTER TABLE pdbx_entity_src_syn ADD CONSTRAINT KR_entityKeyref_0_0_30_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='entityKeyref_0_0_31_0'])
 --ALTER TABLE pdbx_linked_entity_list ADD CONSTRAINT KR_entityKeyref_0_0_31_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='entityKeyref_0_0_32_0'])
 --ALTER TABLE pdbx_prerelease_seq ADD CONSTRAINT KR_entityKeyref_0_0_32_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='entityKeyref_0_0_33_0'])
 --ALTER TABLE struct_asym ADD CONSTRAINT KR_entityKeyref_0_0_33_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='entityKeyref_0_0_34_0'])
 --ALTER TABLE struct_ref ADD CONSTRAINT KR_entityKeyref_0_0_34_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='entity_polyKeyref_0_0_0_0'])
 --ALTER TABLE entity_poly_seq ADD CONSTRAINT KR_entity_polyKeyref_0_0_0_0 FOREIGN KEY ( entity_id ) REFERENCES entity_poly ( entity_id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='entity_poly_seqKeyref_0_0_0_0'])
 --ALTER TABLE pdbx_entity_poly_comp_link_list ADD CONSTRAINT KR_entity_poly_seqKeyref_0_0_0_0_0 FOREIGN KEY ( entity_id ) REFERENCES entity_poly_seq ( entity_id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='entity_poly_seqKeyref_0_0_0_0'])
 --ALTER TABLE pdbx_entity_poly_comp_link_list ADD CONSTRAINT KR_entity_poly_seqKeyref_0_0_0_0_1 FOREIGN KEY ( comp_id_1 ) REFERENCES entity_poly_seq ( mon_id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='entity_poly_seqKeyref_0_0_0_0'])
 --ALTER TABLE pdbx_entity_poly_comp_link_list ADD CONSTRAINT KR_entity_poly_seqKeyref_0_0_0_0_2 FOREIGN KEY ( entity_comp_num_1 ) REFERENCES entity_poly_seq ( num ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='entity_poly_seqKeyref_0_0_1_0'])
 --ALTER TABLE pdbx_poly_seq_scheme ADD CONSTRAINT KR_entity_poly_seqKeyref_0_0_1_0_0 FOREIGN KEY ( entity_id ) REFERENCES entity_poly_seq ( entity_id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='entity_poly_seqKeyref_0_0_1_0'])
 --ALTER TABLE pdbx_poly_seq_scheme ADD CONSTRAINT KR_entity_poly_seqKeyref_0_0_1_0_1 FOREIGN KEY ( mon_id ) REFERENCES entity_poly_seq ( mon_id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='entity_poly_seqKeyref_0_0_1_0'])
 --ALTER TABLE pdbx_poly_seq_scheme ADD CONSTRAINT KR_entity_poly_seqKeyref_0_0_1_0_2 FOREIGN KEY ( seq_id ) REFERENCES entity_poly_seq ( num ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='entryKeyref_0_0_0_0'])
 --ALTER TABLE atom_sites ADD CONSTRAINT KR_entryKeyref_0_0_0_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='entryKeyref_0_0_1_0'])
 --ALTER TABLE cell ADD CONSTRAINT KR_entryKeyref_0_0_1_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='entryKeyref_0_0_2_0'])
 --ALTER TABLE cell_measurement ADD CONSTRAINT KR_entryKeyref_0_0_2_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='entryKeyref_0_0_3_0'])
 --ALTER TABLE chemical ADD CONSTRAINT KR_entryKeyref_0_0_3_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='entryKeyref_0_0_4_0'])
 --ALTER TABLE chemical_formula ADD CONSTRAINT KR_entryKeyref_0_0_4_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='entryKeyref_0_0_5_0'])
 --ALTER TABLE computing ADD CONSTRAINT KR_entryKeyref_0_0_5_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='entryKeyref_0_0_6_0'])
 --ALTER TABLE database ADD CONSTRAINT KR_entryKeyref_0_0_6_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='entryKeyref_0_0_7_0'])
 --ALTER TABLE "database_PDB_matrix" ADD CONSTRAINT KR_entryKeyref_0_0_7_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='entryKeyref_0_0_8_0'])
 --ALTER TABLE em_2d_projection_selection ADD CONSTRAINT KR_entryKeyref_0_0_8_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='entryKeyref_0_0_9_0'])
 --ALTER TABLE em_3d_fitting ADD CONSTRAINT KR_entryKeyref_0_0_9_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='entryKeyref_0_0_10_0'])
 --ALTER TABLE em_3d_reconstruction ADD CONSTRAINT KR_entryKeyref_0_0_10_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='entryKeyref_0_0_11_0'])
 --ALTER TABLE em_admin ADD CONSTRAINT KR_entryKeyref_0_0_11_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='entryKeyref_0_0_12_0'])
 --ALTER TABLE em_assembly ADD CONSTRAINT KR_entryKeyref_0_0_12_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='entryKeyref_0_0_13_0'])
 --ALTER TABLE em_depositor_info ADD CONSTRAINT KR_entryKeyref_0_0_13_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='entryKeyref_0_0_14_0'])
 --ALTER TABLE em_detector ADD CONSTRAINT KR_entryKeyref_0_0_14_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='entryKeyref_0_0_15_0'])
 --ALTER TABLE em_experiment ADD CONSTRAINT KR_entryKeyref_0_0_15_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='entryKeyref_0_0_16_0'])
 --ALTER TABLE em_image_scans ADD CONSTRAINT KR_entryKeyref_0_0_16_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='entryKeyref_0_0_17_0'])
 --ALTER TABLE em_imaging ADD CONSTRAINT KR_entryKeyref_0_0_17_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='entryKeyref_0_0_18_0'])
 --ALTER TABLE em_map ADD CONSTRAINT KR_entryKeyref_0_0_18_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='entryKeyref_0_0_19_0'])
 --ALTER TABLE em_map_depositor_info ADD CONSTRAINT KR_entryKeyref_0_0_19_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='entryKeyref_0_0_20_0'])
 --ALTER TABLE em_sample_preparation ADD CONSTRAINT KR_entryKeyref_0_0_20_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='entryKeyref_0_0_21_0'])
 --ALTER TABLE em_vitrification ADD CONSTRAINT KR_entryKeyref_0_0_21_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='entryKeyref_0_0_22_0'])
 --ALTER TABLE entry_link ADD CONSTRAINT KR_entryKeyref_0_0_22_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='entryKeyref_0_0_23_0'])
 --ALTER TABLE exptl ADD CONSTRAINT KR_entryKeyref_0_0_23_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='entryKeyref_0_0_24_0'])
 --ALTER TABLE geom ADD CONSTRAINT KR_entryKeyref_0_0_24_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='entryKeyref_0_0_25_0'])
 --ALTER TABLE journal ADD CONSTRAINT KR_entryKeyref_0_0_25_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='entryKeyref_0_0_26_0'])
 --ALTER TABLE ndb_struct_conf_na ADD CONSTRAINT KR_entryKeyref_0_0_26_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='entryKeyref_0_0_27_0'])
 --ALTER TABLE ndb_struct_feature_na ADD CONSTRAINT KR_entryKeyref_0_0_27_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='entryKeyref_0_0_28_0'])
 --ALTER TABLE pdbx_atlas ADD CONSTRAINT KR_entryKeyref_0_0_28_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='entryKeyref_0_0_29_0'])
 --ALTER TABLE pdbx_audit ADD CONSTRAINT KR_entryKeyref_0_0_29_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='entryKeyref_0_0_30_0'])
 --ALTER TABLE pdbx_construct ADD CONSTRAINT KR_entryKeyref_0_0_30_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='entryKeyref_0_0_31_0'])
 --ALTER TABLE pdbx_construct_feature ADD CONSTRAINT KR_entryKeyref_0_0_31_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='entryKeyref_0_0_32_0'])
 --ALTER TABLE pdbx_coord ADD CONSTRAINT KR_entryKeyref_0_0_32_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='entryKeyref_0_0_33_0'])
 --ALTER TABLE pdbx_data_processing_cell ADD CONSTRAINT KR_entryKeyref_0_0_33_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='entryKeyref_0_0_34_0'])
 --ALTER TABLE pdbx_data_processing_detector ADD CONSTRAINT KR_entryKeyref_0_0_34_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='entryKeyref_0_0_35_0'])
 --ALTER TABLE pdbx_data_processing_reflns ADD CONSTRAINT KR_entryKeyref_0_0_35_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='entryKeyref_0_0_36_0'])
 --ALTER TABLE "pdbx_database_PDB_master" ADD CONSTRAINT KR_entryKeyref_0_0_36_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='entryKeyref_0_0_37_0'])
 --ALTER TABLE pdbx_database_message ADD CONSTRAINT KR_entryKeyref_0_0_37_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='entryKeyref_0_0_38_0'])
 --ALTER TABLE pdbx_database_proc ADD CONSTRAINT KR_entryKeyref_0_0_38_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='entryKeyref_0_0_39_0'])
 --ALTER TABLE pdbx_database_status ADD CONSTRAINT KR_entryKeyref_0_0_39_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='entryKeyref_0_0_40_0'])
 --ALTER TABLE pdbx_database_status_history ADD CONSTRAINT KR_entryKeyref_0_0_40_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='entryKeyref_0_0_41_0'])
 --ALTER TABLE pdbx_entity_prod_protocol ADD CONSTRAINT KR_entryKeyref_0_0_41_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='entryKeyref_0_0_42_0'])
 --ALTER TABLE pdbx_entity_src_gen_character ADD CONSTRAINT KR_entryKeyref_0_0_42_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='entryKeyref_0_0_43_0'])
 --ALTER TABLE pdbx_entity_src_gen_chrom ADD CONSTRAINT KR_entryKeyref_0_0_43_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='entryKeyref_0_0_44_0'])
 --ALTER TABLE pdbx_entity_src_gen_clone ADD CONSTRAINT KR_entryKeyref_0_0_44_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='entryKeyref_0_0_45_0'])
 --ALTER TABLE pdbx_entity_src_gen_express ADD CONSTRAINT KR_entryKeyref_0_0_45_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='entryKeyref_0_0_46_0'])
 --ALTER TABLE pdbx_entity_src_gen_fract ADD CONSTRAINT KR_entryKeyref_0_0_46_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='entryKeyref_0_0_47_0'])
 --ALTER TABLE pdbx_entity_src_gen_lysis ADD CONSTRAINT KR_entryKeyref_0_0_47_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='entryKeyref_0_0_48_0'])
 --ALTER TABLE pdbx_entity_src_gen_prod_digest ADD CONSTRAINT KR_entryKeyref_0_0_48_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='entryKeyref_0_0_49_0'])
 --ALTER TABLE pdbx_entity_src_gen_prod_other ADD CONSTRAINT KR_entryKeyref_0_0_49_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='entryKeyref_0_0_50_0'])
 --ALTER TABLE pdbx_entity_src_gen_prod_pcr ADD CONSTRAINT KR_entryKeyref_0_0_50_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='entryKeyref_0_0_51_0'])
 --ALTER TABLE pdbx_entity_src_gen_proteolysis ADD CONSTRAINT KR_entryKeyref_0_0_51_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='entryKeyref_0_0_52_0'])
 --ALTER TABLE pdbx_entity_src_gen_pure ADD CONSTRAINT KR_entryKeyref_0_0_52_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='entryKeyref_0_0_53_0'])
 --ALTER TABLE pdbx_entity_src_gen_refold ADD CONSTRAINT KR_entryKeyref_0_0_53_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='entryKeyref_0_0_54_0'])
 --ALTER TABLE pdbx_entry_details ADD CONSTRAINT KR_entryKeyref_0_0_54_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='entryKeyref_0_0_55_0'])
 --ALTER TABLE pdbx_exptl_pd ADD CONSTRAINT KR_entryKeyref_0_0_55_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='entryKeyref_0_0_56_0'])
 --ALTER TABLE pdbx_helical_symmetry ADD CONSTRAINT KR_entryKeyref_0_0_56_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='entryKeyref_0_0_57_0'])
 --ALTER TABLE pdbx_helical_symmetry_depositor_info ADD CONSTRAINT KR_entryKeyref_0_0_57_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='entryKeyref_0_0_58_0'])
 --ALTER TABLE pdbx_na_struct_keywds ADD CONSTRAINT KR_entryKeyref_0_0_58_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='entryKeyref_0_0_59_0'])
 --ALTER TABLE pdbx_nmr_computing ADD CONSTRAINT KR_entryKeyref_0_0_59_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='entryKeyref_0_0_60_0'])
 --ALTER TABLE pdbx_nmr_constraints ADD CONSTRAINT KR_entryKeyref_0_0_60_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='entryKeyref_0_0_61_0'])
 --ALTER TABLE pdbx_nmr_details ADD CONSTRAINT KR_entryKeyref_0_0_61_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='entryKeyref_0_0_62_0'])
 --ALTER TABLE pdbx_nmr_ensemble ADD CONSTRAINT KR_entryKeyref_0_0_62_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='entryKeyref_0_0_63_0'])
 --ALTER TABLE pdbx_nmr_ensemble_rms ADD CONSTRAINT KR_entryKeyref_0_0_63_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='entryKeyref_0_0_64_0'])
 --ALTER TABLE pdbx_nmr_force_constants ADD CONSTRAINT KR_entryKeyref_0_0_64_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='entryKeyref_0_0_65_0'])
 --ALTER TABLE pdbx_nmr_refine ADD CONSTRAINT KR_entryKeyref_0_0_65_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='entryKeyref_0_0_66_0'])
 --ALTER TABLE pdbx_nmr_representative ADD CONSTRAINT KR_entryKeyref_0_0_66_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='entryKeyref_0_0_67_0'])
 --ALTER TABLE pdbx_point_symmetry ADD CONSTRAINT KR_entryKeyref_0_0_67_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='entryKeyref_0_0_68_0'])
 --ALTER TABLE pdbx_point_symmetry_depositor_info ADD CONSTRAINT KR_entryKeyref_0_0_68_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='entryKeyref_0_0_69_0'])
 --ALTER TABLE pdbx_post_process_details ADD CONSTRAINT KR_entryKeyref_0_0_69_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='entryKeyref_0_0_70_0'])
 --ALTER TABLE pdbx_post_process_status ADD CONSTRAINT KR_entryKeyref_0_0_70_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='entryKeyref_0_0_71_0'])
 --ALTER TABLE pdbx_refine ADD CONSTRAINT KR_entryKeyref_0_0_71_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='entryKeyref_0_0_72_0'])
 --ALTER TABLE pdbx_rms_devs_covalent ADD CONSTRAINT KR_entryKeyref_0_0_72_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='entryKeyref_0_0_73_0'])
 --ALTER TABLE pdbx_soln_scatter ADD CONSTRAINT KR_entryKeyref_0_0_73_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='entryKeyref_0_0_74_0'])
 --ALTER TABLE pdbx_summary_flags ADD CONSTRAINT KR_entryKeyref_0_0_74_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='entryKeyref_0_0_75_0'])
 --ALTER TABLE pdbx_version ADD CONSTRAINT KR_entryKeyref_0_0_75_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='entryKeyref_0_0_76_0'])
 --ALTER TABLE "phasing_MAD" ADD CONSTRAINT KR_entryKeyref_0_0_76_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='entryKeyref_0_0_77_0'])
 --ALTER TABLE "phasing_MIR" ADD CONSTRAINT KR_entryKeyref_0_0_77_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='entryKeyref_0_0_78_0'])
 --ALTER TABLE phasing_averaging ADD CONSTRAINT KR_entryKeyref_0_0_78_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='entryKeyref_0_0_79_0'])
 --ALTER TABLE phasing_isomorphous ADD CONSTRAINT KR_entryKeyref_0_0_79_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='entryKeyref_0_0_80_0'])
 --ALTER TABLE publ ADD CONSTRAINT KR_entryKeyref_0_0_80_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='entryKeyref_0_0_81_0'])
 --ALTER TABLE publ_manuscript_incl ADD CONSTRAINT KR_entryKeyref_0_0_81_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='entryKeyref_0_0_82_0'])
 --ALTER TABLE refine ADD CONSTRAINT KR_entryKeyref_0_0_82_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='entryKeyref_0_0_83_0'])
 --ALTER TABLE refine_analyze ADD CONSTRAINT KR_entryKeyref_0_0_83_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='entryKeyref_0_0_84_0'])
 --ALTER TABLE reflns ADD CONSTRAINT KR_entryKeyref_0_0_84_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='entryKeyref_0_0_85_0'])
 --ALTER TABLE struct ADD CONSTRAINT KR_entryKeyref_0_0_85_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='entryKeyref_0_0_86_0'])
 --ALTER TABLE struct_keywords ADD CONSTRAINT KR_entryKeyref_0_0_86_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='entryKeyref_0_0_87_0'])
 --ALTER TABLE struct_mon_details ADD CONSTRAINT KR_entryKeyref_0_0_87_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='entryKeyref_0_0_88_0'])
 --ALTER TABLE symmetry ADD CONSTRAINT KR_entryKeyref_0_0_88_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='exptl_crystalKeyref_0_0_0_0'])
 --ALTER TABLE diffrn ADD CONSTRAINT KR_exptl_crystalKeyref_0_0_0_0 FOREIGN KEY ( crystal_id ) REFERENCES exptl_crystal ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='exptl_crystalKeyref_0_0_1_0'])
 --ALTER TABLE exptl_crystal_face ADD CONSTRAINT KR_exptl_crystalKeyref_0_0_1_0 FOREIGN KEY ( crystal_id ) REFERENCES exptl_crystal ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='exptl_crystalKeyref_0_0_2_0'])
 --ALTER TABLE exptl_crystal_grow ADD CONSTRAINT KR_exptl_crystalKeyref_0_0_2_0 FOREIGN KEY ( crystal_id ) REFERENCES exptl_crystal ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='exptl_crystalKeyref_0_0_3_0'])
 --ALTER TABLE exptl_crystal_grow_comp ADD CONSTRAINT KR_exptl_crystalKeyref_0_0_3_0 FOREIGN KEY ( crystal_id ) REFERENCES exptl_crystal ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='exptl_crystalKeyref_0_0_4_0'])
 --ALTER TABLE pdbx_exptl_crystal_cryo_treatment ADD CONSTRAINT KR_exptl_crystalKeyref_0_0_4_0 FOREIGN KEY ( crystal_id ) REFERENCES exptl_crystal ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='exptl_crystalKeyref_0_0_5_0'])
 --ALTER TABLE pdbx_exptl_crystal_grow_comp ADD CONSTRAINT KR_exptl_crystalKeyref_0_0_5_0 FOREIGN KEY ( crystal_id ) REFERENCES exptl_crystal ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='exptl_crystalKeyref_0_0_6_0'])
 --ALTER TABLE pdbx_exptl_crystal_grow_sol ADD CONSTRAINT KR_exptl_crystalKeyref_0_0_6_0 FOREIGN KEY ( crystal_id ) REFERENCES exptl_crystal ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='pdbx_audit_revision_historyKeyref_0_0_0_0'])
 --ALTER TABLE pdbx_audit_revision_category ADD CONSTRAINT KR_pdbx_audit_revision_historyKeyref_0_0_0_0_0 FOREIGN KEY ( data_content_type ) REFERENCES pdbx_audit_revision_history ( data_content_type ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='pdbx_audit_revision_historyKeyref_0_0_0_0'])
 --ALTER TABLE pdbx_audit_revision_category ADD CONSTRAINT KR_pdbx_audit_revision_historyKeyref_0_0_0_0_1 FOREIGN KEY ( revision_ordinal ) REFERENCES pdbx_audit_revision_history ( ordinal ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='pdbx_audit_revision_historyKeyref_0_0_1_0'])
 --ALTER TABLE pdbx_audit_revision_details ADD CONSTRAINT KR_pdbx_audit_revision_historyKeyref_0_0_1_0_0 FOREIGN KEY ( data_content_type ) REFERENCES pdbx_audit_revision_history ( data_content_type ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='pdbx_audit_revision_historyKeyref_0_0_1_0'])
 --ALTER TABLE pdbx_audit_revision_details ADD CONSTRAINT KR_pdbx_audit_revision_historyKeyref_0_0_1_0_1 FOREIGN KEY ( revision_ordinal ) REFERENCES pdbx_audit_revision_history ( ordinal ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='pdbx_audit_revision_historyKeyref_0_0_2_0'])
 --ALTER TABLE pdbx_audit_revision_group ADD CONSTRAINT KR_pdbx_audit_revision_historyKeyref_0_0_2_0_0 FOREIGN KEY ( data_content_type ) REFERENCES pdbx_audit_revision_history ( data_content_type ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='pdbx_audit_revision_historyKeyref_0_0_2_0'])
 --ALTER TABLE pdbx_audit_revision_group ADD CONSTRAINT KR_pdbx_audit_revision_historyKeyref_0_0_2_0_1 FOREIGN KEY ( revision_ordinal ) REFERENCES pdbx_audit_revision_history ( ordinal ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='pdbx_audit_revision_historyKeyref_0_0_3_0'])
 --ALTER TABLE pdbx_audit_revision_item ADD CONSTRAINT KR_pdbx_audit_revision_historyKeyref_0_0_3_0_0 FOREIGN KEY ( data_content_type ) REFERENCES pdbx_audit_revision_history ( data_content_type ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='pdbx_audit_revision_historyKeyref_0_0_3_0'])
 --ALTER TABLE pdbx_audit_revision_item ADD CONSTRAINT KR_pdbx_audit_revision_historyKeyref_0_0_3_0_1 FOREIGN KEY ( revision_ordinal ) REFERENCES pdbx_audit_revision_history ( ordinal ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='pdbx_bufferKeyref_0_0_0_0'])
 --ALTER TABLE pdbx_buffer_components ADD CONSTRAINT KR_pdbx_bufferKeyref_0_0_0_0 FOREIGN KEY ( buffer_id ) REFERENCES pdbx_buffer ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='pdbx_bufferKeyref_0_0_1_0'])
 --ALTER TABLE pdbx_entity_src_gen_chrom ADD CONSTRAINT KR_pdbx_bufferKeyref_0_0_1_0 FOREIGN KEY ( elution_buffer_id ) REFERENCES pdbx_buffer ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='pdbx_bufferKeyref_0_0_1_1'])
 --ALTER TABLE pdbx_entity_src_gen_chrom ADD CONSTRAINT KR_pdbx_bufferKeyref_0_0_1_1 FOREIGN KEY ( equilibration_buffer_id ) REFERENCES pdbx_buffer ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='pdbx_bufferKeyref_0_0_2_0'])
 --ALTER TABLE pdbx_entity_src_gen_lysis ADD CONSTRAINT KR_pdbx_bufferKeyref_0_0_2_0 FOREIGN KEY ( buffer_id ) REFERENCES pdbx_buffer ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='pdbx_bufferKeyref_0_0_3_0'])
 --ALTER TABLE pdbx_entity_src_gen_pure ADD CONSTRAINT KR_pdbx_bufferKeyref_0_0_3_0 FOREIGN KEY ( storage_buffer_id ) REFERENCES pdbx_buffer ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='pdbx_bufferKeyref_0_0_4_0'])
 --ALTER TABLE pdbx_entity_src_gen_refold ADD CONSTRAINT KR_pdbx_bufferKeyref_0_0_4_0 FOREIGN KEY ( denature_buffer_id ) REFERENCES pdbx_buffer ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='pdbx_bufferKeyref_0_0_4_1'])
 --ALTER TABLE pdbx_entity_src_gen_refold ADD CONSTRAINT KR_pdbx_bufferKeyref_0_0_4_1 FOREIGN KEY ( refold_buffer_id ) REFERENCES pdbx_buffer ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='pdbx_bufferKeyref_0_0_4_2'])
 --ALTER TABLE pdbx_entity_src_gen_refold ADD CONSTRAINT KR_pdbx_bufferKeyref_0_0_4_2 FOREIGN KEY ( storage_buffer_id ) REFERENCES pdbx_buffer ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='pdbx_chem_comp_importKeyref_0_0_0_0'])
 --ALTER TABLE pdbx_chem_comp_atom_edit ADD CONSTRAINT KR_pdbx_chem_comp_importKeyref_0_0_0_0 FOREIGN KEY ( comp_id ) REFERENCES pdbx_chem_comp_import ( comp_id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='pdbx_chem_comp_importKeyref_0_0_1_0'])
 --ALTER TABLE pdbx_chem_comp_bond_edit ADD CONSTRAINT KR_pdbx_chem_comp_importKeyref_0_0_1_0 FOREIGN KEY ( comp_id ) REFERENCES pdbx_chem_comp_import ( comp_id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='pdbx_chem_comp_modelKeyref_0_0_0_0'])
 --ALTER TABLE pdbx_chem_comp_model_atom ADD CONSTRAINT KR_pdbx_chem_comp_modelKeyref_0_0_0_0 FOREIGN KEY ( model_id ) REFERENCES pdbx_chem_comp_model ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='pdbx_chem_comp_modelKeyref_0_0_1_0'])
 --ALTER TABLE pdbx_chem_comp_model_descriptor ADD CONSTRAINT KR_pdbx_chem_comp_modelKeyref_0_0_1_0 FOREIGN KEY ( model_id ) REFERENCES pdbx_chem_comp_model ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='pdbx_chem_comp_modelKeyref_0_0_2_0'])
 --ALTER TABLE pdbx_chem_comp_model_feature ADD CONSTRAINT KR_pdbx_chem_comp_modelKeyref_0_0_2_0 FOREIGN KEY ( model_id ) REFERENCES pdbx_chem_comp_model ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='pdbx_chem_comp_modelKeyref_0_0_3_0'])
 --ALTER TABLE pdbx_chem_comp_model_reference ADD CONSTRAINT KR_pdbx_chem_comp_modelKeyref_0_0_3_0 FOREIGN KEY ( model_id ) REFERENCES pdbx_chem_comp_model ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='pdbx_constructKeyref_0_0_0_0'])
 --ALTER TABLE pdbx_construct_feature ADD CONSTRAINT KR_pdbx_constructKeyref_0_0_0_0 FOREIGN KEY ( construct_id ) REFERENCES pdbx_construct ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='pdbx_constructKeyref_0_0_1_0'])
 --ALTER TABLE pdbx_entity_src_gen_express ADD CONSTRAINT KR_pdbx_constructKeyref_0_0_1_0 FOREIGN KEY ( plasmid_id ) REFERENCES pdbx_construct ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='pdbx_constructKeyref_0_0_2_0'])
 --ALTER TABLE pdbx_entity_src_gen_prod_pcr ADD CONSTRAINT KR_pdbx_constructKeyref_0_0_2_0 FOREIGN KEY ( forward_primer_id ) REFERENCES pdbx_construct ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='pdbx_constructKeyref_0_0_2_1'])
 --ALTER TABLE pdbx_entity_src_gen_prod_pcr ADD CONSTRAINT KR_pdbx_constructKeyref_0_0_2_1 FOREIGN KEY ( reverse_primer_id ) REFERENCES pdbx_construct ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='pdbx_deposit_groupKeyref_0_0_0_0'])
 --ALTER TABLE pdbx_deposit_group_index ADD CONSTRAINT KR_pdbx_deposit_groupKeyref_0_0_0_0 FOREIGN KEY ( group_id ) REFERENCES pdbx_deposit_group ( group_id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='pdbx_domainKeyref_0_0_0_0'])
 --ALTER TABLE pdbx_domain_range ADD CONSTRAINT KR_pdbx_domainKeyref_0_0_0_0 FOREIGN KEY ( domain_id ) REFERENCES pdbx_domain ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='pdbx_domainKeyref_0_0_1_0'])
 --ALTER TABLE pdbx_feature_domain ADD CONSTRAINT KR_pdbx_domainKeyref_0_0_1_0 FOREIGN KEY ( domain_id ) REFERENCES pdbx_domain ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='pdbx_entity_src_gen_cloneKeyref_0_0_0_0'])
 --ALTER TABLE pdbx_entity_src_gen_clone_ligation ADD CONSTRAINT KR_pdbx_entity_src_gen_cloneKeyref_0_0_0_0_0 FOREIGN KEY ( entity_id ) REFERENCES pdbx_entity_src_gen_clone ( entity_id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='pdbx_entity_src_gen_cloneKeyref_0_0_0_0'])
 --ALTER TABLE pdbx_entity_src_gen_clone_ligation ADD CONSTRAINT KR_pdbx_entity_src_gen_cloneKeyref_0_0_0_0_1 FOREIGN KEY ( entry_id ) REFERENCES pdbx_entity_src_gen_clone ( entry_id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='pdbx_entity_src_gen_cloneKeyref_0_0_0_0'])
 --ALTER TABLE pdbx_entity_src_gen_clone_ligation ADD CONSTRAINT KR_pdbx_entity_src_gen_cloneKeyref_0_0_0_0_2 FOREIGN KEY ( step_id ) REFERENCES pdbx_entity_src_gen_clone ( step_id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='pdbx_entity_src_gen_cloneKeyref_0_0_1_0'])
 --ALTER TABLE pdbx_entity_src_gen_clone_recombination ADD CONSTRAINT KR_pdbx_entity_src_gen_cloneKeyref_0_0_1_0_0 FOREIGN KEY ( entity_id ) REFERENCES pdbx_entity_src_gen_clone ( entity_id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='pdbx_entity_src_gen_cloneKeyref_0_0_1_0'])
 --ALTER TABLE pdbx_entity_src_gen_clone_recombination ADD CONSTRAINT KR_pdbx_entity_src_gen_cloneKeyref_0_0_1_0_1 FOREIGN KEY ( entry_id ) REFERENCES pdbx_entity_src_gen_clone ( entry_id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='pdbx_entity_src_gen_cloneKeyref_0_0_1_0'])
 --ALTER TABLE pdbx_entity_src_gen_clone_recombination ADD CONSTRAINT KR_pdbx_entity_src_gen_cloneKeyref_0_0_1_0_2 FOREIGN KEY ( step_id ) REFERENCES pdbx_entity_src_gen_clone ( step_id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='pdbx_entity_src_gen_expressKeyref_0_0_0_0'])
 --ALTER TABLE pdbx_entity_src_gen_express_timepoint ADD CONSTRAINT KR_pdbx_entity_src_gen_expressKeyref_0_0_0_0_0 FOREIGN KEY ( entity_id ) REFERENCES pdbx_entity_src_gen_express ( entity_id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='pdbx_entity_src_gen_expressKeyref_0_0_0_0'])
 --ALTER TABLE pdbx_entity_src_gen_express_timepoint ADD CONSTRAINT KR_pdbx_entity_src_gen_expressKeyref_0_0_0_0_1 FOREIGN KEY ( entry_id ) REFERENCES pdbx_entity_src_gen_express ( entry_id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='pdbx_entity_src_gen_expressKeyref_0_0_0_0'])
 --ALTER TABLE pdbx_entity_src_gen_express_timepoint ADD CONSTRAINT KR_pdbx_entity_src_gen_expressKeyref_0_0_0_0_2 FOREIGN KEY ( step_id ) REFERENCES pdbx_entity_src_gen_express ( step_id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='pdbx_entity_src_gen_prod_otherKeyref_0_0_0_0'])
 --ALTER TABLE pdbx_entity_src_gen_prod_other_parameter ADD CONSTRAINT KR_pdbx_entity_src_gen_prod_otherKeyref_0_0_0_0_0 FOREIGN KEY ( entity_id ) REFERENCES pdbx_entity_src_gen_prod_other ( entity_id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='pdbx_entity_src_gen_prod_otherKeyref_0_0_0_0'])
 --ALTER TABLE pdbx_entity_src_gen_prod_other_parameter ADD CONSTRAINT KR_pdbx_entity_src_gen_prod_otherKeyref_0_0_0_0_1 FOREIGN KEY ( entry_id ) REFERENCES pdbx_entity_src_gen_prod_other ( entry_id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='pdbx_entity_src_gen_prod_otherKeyref_0_0_0_0'])
 --ALTER TABLE pdbx_entity_src_gen_prod_other_parameter ADD CONSTRAINT KR_pdbx_entity_src_gen_prod_otherKeyref_0_0_0_0_2 FOREIGN KEY ( step_id ) REFERENCES pdbx_entity_src_gen_prod_other ( step_id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='pdbx_linked_entityKeyref_0_0_0_0'])
 --ALTER TABLE pdbx_linked_entity_instance_list ADD CONSTRAINT KR_pdbx_linked_entityKeyref_0_0_0_0 FOREIGN KEY ( linked_entity_id ) REFERENCES pdbx_linked_entity ( linked_entity_id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='pdbx_linked_entityKeyref_0_0_1_0'])
 --ALTER TABLE pdbx_linked_entity_list ADD CONSTRAINT KR_pdbx_linked_entityKeyref_0_0_1_0 FOREIGN KEY ( linked_entity_id ) REFERENCES pdbx_linked_entity ( linked_entity_id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='pdbx_linked_entity_listKeyref_0_0_0_0'])
 --ALTER TABLE pdbx_linked_entity_link_list ADD CONSTRAINT KR_pdbx_linked_entity_listKeyref_0_0_0_0_0 FOREIGN KEY ( component_1 ) REFERENCES pdbx_linked_entity_list ( component_id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='pdbx_linked_entity_listKeyref_0_0_0_0'])
 --ALTER TABLE pdbx_linked_entity_link_list ADD CONSTRAINT KR_pdbx_linked_entity_listKeyref_0_0_0_0_1 FOREIGN KEY ( entity_id_1 ) REFERENCES pdbx_linked_entity_list ( entity_id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='pdbx_linked_entity_listKeyref_0_0_0_0'])
 --ALTER TABLE pdbx_linked_entity_link_list ADD CONSTRAINT KR_pdbx_linked_entity_listKeyref_0_0_0_0_2 FOREIGN KEY ( linked_entity_id ) REFERENCES pdbx_linked_entity_list ( linked_entity_id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='pdbx_reference_entity_listKeyref_3_0_0_0'])
 --ALTER TABLE pdbx_reference_entity_poly_link ADD CONSTRAINT KR_pdbx_reference_entity_listKeyref_3_0_0_0_0 FOREIGN KEY ( component_id ) REFERENCES pdbx_reference_entity_list ( component_id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='pdbx_reference_entity_listKeyref_3_0_0_0'])
 --ALTER TABLE pdbx_reference_entity_poly_link ADD CONSTRAINT KR_pdbx_reference_entity_listKeyref_3_0_0_0_1 FOREIGN KEY ( prd_id ) REFERENCES pdbx_reference_entity_list ( prd_id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='pdbx_reference_entity_listKeyref_3_0_0_0'])
 --ALTER TABLE pdbx_reference_entity_poly_link ADD CONSTRAINT KR_pdbx_reference_entity_listKeyref_3_0_0_0_2 FOREIGN KEY ( ref_entity_id ) REFERENCES pdbx_reference_entity_list ( ref_entity_id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='pdbx_reference_entity_polyKeyref_0_0_0_0'])
 --ALTER TABLE pdbx_reference_entity_poly_link ADD CONSTRAINT KR_pdbx_reference_entity_polyKeyref_0_0_0_0_0 FOREIGN KEY ( prd_id ) REFERENCES pdbx_reference_entity_poly ( prd_id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='pdbx_reference_entity_polyKeyref_0_0_0_0'])
 --ALTER TABLE pdbx_reference_entity_poly_link ADD CONSTRAINT KR_pdbx_reference_entity_polyKeyref_0_0_0_0_1 FOREIGN KEY ( ref_entity_id ) REFERENCES pdbx_reference_entity_poly ( ref_entity_id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='pdbx_reference_entity_polyKeyref_0_0_1_0'])
 --ALTER TABLE pdbx_reference_entity_poly_seq ADD CONSTRAINT KR_pdbx_reference_entity_polyKeyref_0_0_1_0_0 FOREIGN KEY ( prd_id ) REFERENCES pdbx_reference_entity_poly ( prd_id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='pdbx_reference_entity_polyKeyref_0_0_1_0'])
 --ALTER TABLE pdbx_reference_entity_poly_seq ADD CONSTRAINT KR_pdbx_reference_entity_polyKeyref_0_0_1_0_1 FOREIGN KEY ( ref_entity_id ) REFERENCES pdbx_reference_entity_poly ( ref_entity_id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='pdbx_reference_linked_entityKeyref_0_0_0_0'])
 --ALTER TABLE pdbx_reference_linked_entity_comp_list ADD CONSTRAINT KR_pdbx_reference_linked_entityKeyref_0_0_0_0 FOREIGN KEY ( linked_entity_id ) REFERENCES pdbx_reference_linked_entity ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='pdbx_reference_linked_entity_comp_listKeyref_0_0_0_0'])
 --ALTER TABLE pdbx_reference_linked_entity_comp_link ADD CONSTRAINT KR_pdbx_reference_linked_entity_comp_listKeyref_0_0_0_0_0 FOREIGN KEY ( linked_entity_id ) REFERENCES pdbx_reference_linked_entity_comp_list ( linked_entity_id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='pdbx_reference_linked_entity_comp_listKeyref_0_0_0_0'])
 --ALTER TABLE pdbx_reference_linked_entity_comp_link ADD CONSTRAINT KR_pdbx_reference_linked_entity_comp_listKeyref_0_0_0_0_1 FOREIGN KEY ( list_id_1 ) REFERENCES pdbx_reference_linked_entity_comp_list ( list_id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='pdbx_reference_linked_entity_comp_listKeyref_0_0_1_0'])
 --ALTER TABLE pdbx_reference_linked_entity_link ADD CONSTRAINT KR_pdbx_reference_linked_entity_comp_listKeyref_0_0_1_0_0 FOREIGN KEY ( linked_entity_id ) REFERENCES pdbx_reference_linked_entity_comp_list ( linked_entity_id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='pdbx_reference_linked_entity_comp_listKeyref_0_0_1_0'])
 --ALTER TABLE pdbx_reference_linked_entity_link ADD CONSTRAINT KR_pdbx_reference_linked_entity_comp_listKeyref_0_0_1_0_1 FOREIGN KEY ( from_list_id ) REFERENCES pdbx_reference_linked_entity_comp_list ( list_id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='pdbx_reference_moleculeKeyref_0_0_0_0'])
 --ALTER TABLE pdbx_prd_audit ADD CONSTRAINT KR_pdbx_reference_moleculeKeyref_0_0_0_0 FOREIGN KEY ( prd_id ) REFERENCES pdbx_reference_molecule ( prd_id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='pdbx_reference_moleculeKeyref_0_0_1_0'])
 --ALTER TABLE pdbx_reference_entity_list ADD CONSTRAINT KR_pdbx_reference_moleculeKeyref_0_0_1_0 FOREIGN KEY ( prd_id ) REFERENCES pdbx_reference_molecule ( prd_id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='pdbx_reference_moleculeKeyref_0_0_2_0'])
 --ALTER TABLE pdbx_reference_entity_subcomponents ADD CONSTRAINT KR_pdbx_reference_moleculeKeyref_0_0_2_0 FOREIGN KEY ( prd_id ) REFERENCES pdbx_reference_molecule ( prd_id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='pdbx_reference_molecule_familyKeyref_0_0_0_0'])
 --ALTER TABLE pdbx_family_prd_audit ADD CONSTRAINT KR_pdbx_reference_molecule_familyKeyref_0_0_0_0 FOREIGN KEY ( family_prd_id ) REFERENCES pdbx_reference_molecule_family ( family_prd_id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='pdbx_reference_molecule_familyKeyref_0_0_1_0'])
 --ALTER TABLE pdbx_reference_molecule_list ADD CONSTRAINT KR_pdbx_reference_molecule_familyKeyref_0_0_1_0 FOREIGN KEY ( family_prd_id ) REFERENCES pdbx_reference_molecule_family ( family_prd_id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='pdbx_reference_molecule_listKeyref_0_0_0_0'])
 --ALTER TABLE pdbx_reference_molecule_features ADD CONSTRAINT KR_pdbx_reference_molecule_listKeyref_0_0_0_0_0 FOREIGN KEY ( family_prd_id ) REFERENCES pdbx_reference_molecule_list ( family_prd_id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='pdbx_reference_molecule_listKeyref_0_0_0_0'])
 --ALTER TABLE pdbx_reference_molecule_features ADD CONSTRAINT KR_pdbx_reference_molecule_listKeyref_0_0_0_0_1 FOREIGN KEY ( prd_id ) REFERENCES pdbx_reference_molecule_list ( prd_id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='pdbx_reference_molecule_listKeyref_0_0_1_0'])
 --ALTER TABLE pdbx_reference_molecule_synonyms ADD CONSTRAINT KR_pdbx_reference_molecule_listKeyref_0_0_1_0_0 FOREIGN KEY ( family_prd_id ) REFERENCES pdbx_reference_molecule_list ( family_prd_id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='pdbx_reference_molecule_listKeyref_0_0_1_0'])
 --ALTER TABLE pdbx_reference_molecule_synonyms ADD CONSTRAINT KR_pdbx_reference_molecule_listKeyref_0_0_1_0_1 FOREIGN KEY ( prd_id ) REFERENCES pdbx_reference_molecule_list ( prd_id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='pdbx_refine_tlsKeyref_0_0_0_0'])
 --ALTER TABLE pdbx_atom_site_aniso_tls ADD CONSTRAINT KR_pdbx_refine_tlsKeyref_0_0_0_0 FOREIGN KEY ( tls_group_id ) REFERENCES pdbx_refine_tls ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='pdbx_refine_tlsKeyref_0_0_1_0'])
 --ALTER TABLE pdbx_refine_tls_group ADD CONSTRAINT KR_pdbx_refine_tlsKeyref_0_0_1_0 FOREIGN KEY ( refine_tls_id ) REFERENCES pdbx_refine_tls ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='pdbx_struct_assemblyKeyref_0_0_0_0'])
 --ALTER TABLE pdbx_struct_assembly_auth_classification ADD CONSTRAINT KR_pdbx_struct_assemblyKeyref_0_0_0_0 FOREIGN KEY ( assembly_id ) REFERENCES pdbx_struct_assembly ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='pdbx_struct_assemblyKeyref_0_0_1_0'])
 --ALTER TABLE pdbx_struct_assembly_auth_evidence ADD CONSTRAINT KR_pdbx_struct_assemblyKeyref_0_0_1_0 FOREIGN KEY ( assembly_id ) REFERENCES pdbx_struct_assembly ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='pdbx_struct_assemblyKeyref_0_0_2_0'])
 --ALTER TABLE pdbx_struct_assembly_gen ADD CONSTRAINT KR_pdbx_struct_assemblyKeyref_0_0_2_0 FOREIGN KEY ( assembly_id ) REFERENCES pdbx_struct_assembly ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='pdbx_struct_assembly_depositor_infoKeyref_0_0_0_0'])
 --ALTER TABLE pdbx_struct_assembly_auth_evidence_depositor_info ADD CONSTRAINT KR_pdbx_struct_assembly_depositor_infoKeyref_0_0_0_0 FOREIGN KEY ( assembly_id ) REFERENCES pdbx_struct_assembly_depositor_info ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='pdbx_struct_assembly_depositor_infoKeyref_0_0_1_0'])
 --ALTER TABLE pdbx_struct_assembly_gen_depositor_info ADD CONSTRAINT KR_pdbx_struct_assembly_depositor_infoKeyref_0_0_1_0 FOREIGN KEY ( assembly_id ) REFERENCES pdbx_struct_assembly_depositor_info ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='pdbx_struct_entity_instKeyref_0_0_0_0'])
 --ALTER TABLE pdbx_struct_asym_gen ADD CONSTRAINT KR_pdbx_struct_entity_instKeyref_0_0_0_0 FOREIGN KEY ( entity_inst_id ) REFERENCES pdbx_struct_entity_inst ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='pdbx_struct_entity_instKeyref_0_0_1_0'])
 --ALTER TABLE pdbx_struct_msym_gen ADD CONSTRAINT KR_pdbx_struct_entity_instKeyref_0_0_1_0 FOREIGN KEY ( entity_inst_id ) REFERENCES pdbx_struct_entity_inst ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='pdbx_struct_group_listKeyref_0_0_0_0'])
 --ALTER TABLE pdbx_struct_group_component_range ADD CONSTRAINT KR_pdbx_struct_group_listKeyref_0_0_0_0 FOREIGN KEY ( struct_group_id ) REFERENCES pdbx_struct_group_list ( struct_group_id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='pdbx_struct_group_listKeyref_0_0_1_0'])
 --ALTER TABLE pdbx_struct_group_components ADD CONSTRAINT KR_pdbx_struct_group_listKeyref_0_0_1_0 FOREIGN KEY ( struct_group_id ) REFERENCES pdbx_struct_group_list ( struct_group_id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='pdbx_struct_ref_seq_featureKeyref_0_0_0_0'])
 --ALTER TABLE pdbx_struct_ref_seq_feature_prop ADD CONSTRAINT KR_pdbx_struct_ref_seq_featureKeyref_0_0_0_0 FOREIGN KEY ( feature_id ) REFERENCES pdbx_struct_ref_seq_feature ( feature_id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='pdbx_validate_planesKeyref_0_0_0_0'])
 --ALTER TABLE pdbx_validate_planes_atom ADD CONSTRAINT KR_pdbx_validate_planesKeyref_0_0_0_0 FOREIGN KEY ( plane_id ) REFERENCES pdbx_validate_planes ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='pdbx_view_categoryKeyref_0_0_0_0'])
 --ALTER TABLE pdbx_view_item ADD CONSTRAINT KR_pdbx_view_categoryKeyref_0_0_0_0 FOREIGN KEY ( category_id ) REFERENCES pdbx_view_category ( category_id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='pdbx_view_category_groupKeyref_0_0_0_0'])
 --ALTER TABLE pdbx_view_category ADD CONSTRAINT KR_pdbx_view_category_groupKeyref_0_0_0_0 FOREIGN KEY ( view_group_id ) REFERENCES pdbx_view_category_group ( view_group_id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='phasing_MAD_exptKeyref_0_0_0_0'])
 --ALTER TABLE "phasing_MAD_clust" ADD CONSTRAINT KR_phasing_MAD_exptKeyref_0_0_0_0 FOREIGN KEY ( expt_id ) REFERENCES "phasing_MAD_expt" ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='phasing_MAD_exptKeyref_0_0_1_0'])
 --ALTER TABLE "phasing_MAD_ratio" ADD CONSTRAINT KR_phasing_MAD_exptKeyref_0_0_1_0 FOREIGN KEY ( expt_id ) REFERENCES "phasing_MAD_expt" ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='phasing_MAD_exptKeyref_0_0_2_0'])
 --ALTER TABLE "phasing_MAD_set" ADD CONSTRAINT KR_phasing_MAD_exptKeyref_0_0_2_0 FOREIGN KEY ( expt_id ) REFERENCES "phasing_MAD_expt" ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='phasing_MIR_derKeyref_0_0_0_0'])
 --ALTER TABLE "phasing_MIR_der_refln" ADD CONSTRAINT KR_phasing_MIR_derKeyref_0_0_0_0 FOREIGN KEY ( der_id ) REFERENCES "phasing_MIR_der" ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='phasing_MIR_derKeyref_0_0_1_0'])
 --ALTER TABLE "phasing_MIR_der_shell" ADD CONSTRAINT KR_phasing_MIR_derKeyref_0_0_1_0 FOREIGN KEY ( der_id ) REFERENCES "phasing_MIR_der" ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='phasing_MIR_derKeyref_0_0_2_0'])
 --ALTER TABLE "phasing_MIR_der_site" ADD CONSTRAINT KR_phasing_MIR_derKeyref_0_0_2_0 FOREIGN KEY ( der_id ) REFERENCES "phasing_MIR_der" ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='phasing_setKeyref_0_0_0_0'])
 --ALTER TABLE "phasing_MAD_set" ADD CONSTRAINT KR_phasing_setKeyref_0_0_0_0 FOREIGN KEY ( set_id ) REFERENCES phasing_set ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='phasing_setKeyref_0_0_1_0'])
 --ALTER TABLE "phasing_MIR_der" ADD CONSTRAINT KR_phasing_setKeyref_0_0_1_0 FOREIGN KEY ( der_set_id ) REFERENCES phasing_set ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='phasing_setKeyref_0_0_2_0'])
 --ALTER TABLE "phasing_MIR_der_refln" ADD CONSTRAINT KR_phasing_setKeyref_0_0_2_0 FOREIGN KEY ( set_id ) REFERENCES phasing_set ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='phasing_setKeyref_0_0_3_0'])
 --ALTER TABLE phasing_set_refln ADD CONSTRAINT KR_phasing_setKeyref_0_0_3_0 FOREIGN KEY ( set_id ) REFERENCES phasing_set ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='struct_asymKeyref_1_0_0_0'])
 --ALTER TABLE pdbx_coordinate_model ADD CONSTRAINT KR_struct_asymKeyref_1_0_0_0 FOREIGN KEY ( asym_id ) REFERENCES struct_asym ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='struct_asymKeyref_1_0_1_0'])
 --ALTER TABLE pdbx_linked_entity_instance_list ADD CONSTRAINT KR_struct_asymKeyref_1_0_1_0 FOREIGN KEY ( asym_id ) REFERENCES struct_asym ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='struct_asymKeyref_1_0_2_0'])
 --ALTER TABLE pdbx_molecule ADD CONSTRAINT KR_struct_asymKeyref_1_0_2_0 FOREIGN KEY ( asym_id ) REFERENCES struct_asym ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='struct_asymKeyref_1_0_3_0'])
 --ALTER TABLE pdbx_struct_ncs_virus_gen ADD CONSTRAINT KR_struct_asymKeyref_1_0_3_0 FOREIGN KEY ( asym_id ) REFERENCES struct_asym ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='struct_asymKeyref_1_0_4_0'])
 --ALTER TABLE struct_biol_gen ADD CONSTRAINT KR_struct_asymKeyref_1_0_4_0 FOREIGN KEY ( asym_id ) REFERENCES struct_asym ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='struct_biolKeyref_0_0_0_0'])
 --ALTER TABLE pdbx_entity_assembly ADD CONSTRAINT KR_struct_biolKeyref_0_0_0_0 FOREIGN KEY ( biol_id ) REFERENCES struct_biol ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='struct_biolKeyref_0_0_1_0'])
 --ALTER TABLE pdbx_feature_assembly ADD CONSTRAINT KR_struct_biolKeyref_0_0_1_0 FOREIGN KEY ( assembly_id ) REFERENCES struct_biol ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='struct_biolKeyref_0_0_2_0'])
 --ALTER TABLE pdbx_struct_biol_func ADD CONSTRAINT KR_struct_biolKeyref_0_0_2_0 FOREIGN KEY ( biol_id ) REFERENCES struct_biol ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='struct_biolKeyref_0_0_3_0'])
 --ALTER TABLE struct_biol_gen ADD CONSTRAINT KR_struct_biolKeyref_0_0_3_0 FOREIGN KEY ( biol_id ) REFERENCES struct_biol ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='struct_biolKeyref_0_0_4_0'])
 --ALTER TABLE struct_biol_keywords ADD CONSTRAINT KR_struct_biolKeyref_0_0_4_0 FOREIGN KEY ( biol_id ) REFERENCES struct_biol ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='struct_biolKeyref_0_0_5_0'])
 --ALTER TABLE struct_biol_view ADD CONSTRAINT KR_struct_biolKeyref_0_0_5_0 FOREIGN KEY ( biol_id ) REFERENCES struct_biol ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='struct_conf_typeKeyref_0_0_0_0'])
 --ALTER TABLE struct_conf ADD CONSTRAINT KR_struct_conf_typeKeyref_0_0_0_0 FOREIGN KEY ( conf_type_id ) REFERENCES struct_conf_type ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='struct_conn_typeKeyref_0_0_0_0'])
 --ALTER TABLE struct_conn ADD CONSTRAINT KR_struct_conn_typeKeyref_0_0_0_0 FOREIGN KEY ( conn_type_id ) REFERENCES struct_conn_type ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='struct_ncs_domKeyref_2_0_0_0'])
 --ALTER TABLE struct_ncs_dom_lim ADD CONSTRAINT KR_struct_ncs_domKeyref_2_0_0_0_0 FOREIGN KEY ( dom_id ) REFERENCES struct_ncs_dom ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='struct_ncs_domKeyref_2_0_0_0'])
 --ALTER TABLE struct_ncs_dom_lim ADD CONSTRAINT KR_struct_ncs_domKeyref_2_0_0_0_1 FOREIGN KEY ( pdbx_ens_id ) REFERENCES struct_ncs_dom ( pdbx_ens_id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='struct_ncs_ensKeyref_0_0_0_0'])
 --ALTER TABLE struct_ncs_dom ADD CONSTRAINT KR_struct_ncs_ensKeyref_0_0_0_0 FOREIGN KEY ( pdbx_ens_id ) REFERENCES struct_ncs_ens ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='struct_ncs_ensKeyref_0_0_1_0'])
 --ALTER TABLE struct_ncs_ens_gen ADD CONSTRAINT KR_struct_ncs_ensKeyref_0_0_1_0 FOREIGN KEY ( ens_id ) REFERENCES struct_ncs_ens ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='struct_ncs_operKeyref_0_0_0_0'])
 --ALTER TABLE pdbx_struct_ncs_virus_gen ADD CONSTRAINT KR_struct_ncs_operKeyref_0_0_0_0 FOREIGN KEY ( oper_id ) REFERENCES struct_ncs_oper ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='struct_ncs_operKeyref_0_0_1_0'])
 --ALTER TABLE struct_ncs_ens_gen ADD CONSTRAINT KR_struct_ncs_operKeyref_0_0_1_0 FOREIGN KEY ( oper_id ) REFERENCES struct_ncs_oper ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='struct_refKeyref_0_0_0_0'])
 --ALTER TABLE struct_ref_seq ADD CONSTRAINT KR_struct_refKeyref_0_0_0_0 FOREIGN KEY ( ref_id ) REFERENCES struct_ref ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='struct_ref_seqKeyref_0_0_0_0'])
 --ALTER TABLE struct_ref_seq_dif ADD CONSTRAINT KR_struct_ref_seqKeyref_0_0_0_0 FOREIGN KEY ( align_id ) REFERENCES struct_ref_seq ( align_id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='struct_sheetKeyref_0_0_0_0'])
 --ALTER TABLE pdbx_struct_sheet_hbond ADD CONSTRAINT KR_struct_sheetKeyref_0_0_0_0 FOREIGN KEY ( sheet_id ) REFERENCES struct_sheet ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='struct_sheetKeyref_0_0_1_0'])
 --ALTER TABLE struct_sheet_hbond ADD CONSTRAINT KR_struct_sheetKeyref_0_0_1_0 FOREIGN KEY ( sheet_id ) REFERENCES struct_sheet ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='struct_sheetKeyref_0_0_2_0'])
 --ALTER TABLE struct_sheet_order ADD CONSTRAINT KR_struct_sheetKeyref_0_0_2_0 FOREIGN KEY ( sheet_id ) REFERENCES struct_sheet ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='struct_sheetKeyref_0_0_3_0'])
 --ALTER TABLE struct_sheet_range ADD CONSTRAINT KR_struct_sheetKeyref_0_0_3_0 FOREIGN KEY ( sheet_id ) REFERENCES struct_sheet ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='struct_sheetKeyref_0_0_4_0'])
 --ALTER TABLE struct_sheet_topology ADD CONSTRAINT KR_struct_sheetKeyref_0_0_4_0 FOREIGN KEY ( sheet_id ) REFERENCES struct_sheet ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='struct_siteKeyref_0_0_0_0'])
 --ALTER TABLE struct_site_gen ADD CONSTRAINT KR_struct_siteKeyref_0_0_0_0 FOREIGN KEY ( site_id ) REFERENCES struct_site ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='struct_siteKeyref_0_0_1_0'])
 --ALTER TABLE struct_site_keywords ADD CONSTRAINT KR_struct_siteKeyref_0_0_1_0 FOREIGN KEY ( site_id ) REFERENCES struct_site ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
+-- (derived from xsd:keyref[@name='struct_siteKeyref_0_0_2_0'])
 --ALTER TABLE struct_site_view ADD CONSTRAINT KR_struct_siteKeyref_0_0_2_0 FOREIGN KEY ( site_id ) REFERENCES struct_site ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
