@@ -46,6 +46,8 @@ if [ -e $DIC_FILE ] ; then
 
 fi
 
+sed -i -e "s/xsd:integer/xsd:int/g" $DIC_PREFIX-v$DIC_VER.xsd
+
 pattern=3,4s/$DIC_PREFIX.xsd/$DIC_PREFIX-v$DIC_MAJOR_VER.xsd/
 
 sed '2,6d' $DIC_PREFIX-v$DIC_VER.xsd | sed $pattern > $DIC_PREFIX.xsd~

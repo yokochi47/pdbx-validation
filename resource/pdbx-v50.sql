@@ -14,6 +14,8 @@
 --  append xpath key: false
 --  retain constraint: false
 --  retrieve field annotation: false
+--  map integer numbers to: signed int 32 bits
+--  map decimal numbers to: big decimal
 --
 -- Statistics of schema:
 --  Generated 898 tables (7760 fields), 0 attr groups, 0 model groups in total
@@ -1430,7 +1432,7 @@ CREATE TABLE em_tomography_specimen (
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_audit_revision_history_data_content_type CASCADE;
-CREATE TYPE ENUM_pdbx_audit_revision_history_data_content_type AS ENUM ( 'Structure model', 'NMR restraints', 'NMR shifts', 'Structure factors' );
+CREATE TYPE ENUM_pdbx_audit_revision_history_data_content_type AS ENUM ( 'Structure model', 'NMR restraints', 'NMR shifts', 'Structure factors', 'Chemical component' );
 CREATE TABLE pdbx_audit_revision_history (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
@@ -8313,7 +8315,7 @@ CREATE TABLE pdbx_audit_conform_extension (
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_audit_revision_category_data_content_type CASCADE;
-CREATE TYPE ENUM_pdbx_audit_revision_category_data_content_type AS ENUM ( 'Structure model', 'NMR restraints', 'NMR shifts', 'Structure factors' );
+CREATE TYPE ENUM_pdbx_audit_revision_category_data_content_type AS ENUM ( 'Structure model', 'NMR restraints', 'NMR shifts', 'Structure factors', 'Chemical component' );
 CREATE TABLE pdbx_audit_revision_category (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
@@ -8337,7 +8339,7 @@ CREATE TYPE ENUM_pdbx_audit_revision_details_provider AS ENUM ( 'repository', 'a
 DROP TYPE IF EXISTS ENUM_pdbx_audit_revision_details_type CASCADE;
 CREATE TYPE ENUM_pdbx_audit_revision_details_type AS ENUM ( 'Initial release', 'Coordinate replacement', 'Obsolete' );
 DROP TYPE IF EXISTS ENUM_pdbx_audit_revision_details_data_content_type CASCADE;
-CREATE TYPE ENUM_pdbx_audit_revision_details_data_content_type AS ENUM ( 'Structure model', 'NMR restraints', 'NMR shifts', 'Structure factors' );
+CREATE TYPE ENUM_pdbx_audit_revision_details_data_content_type AS ENUM ( 'Structure model', 'NMR restraints', 'NMR shifts', 'Structure factors', 'Chemical component' );
 CREATE TABLE pdbx_audit_revision_details (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
@@ -8361,7 +8363,7 @@ CREATE TABLE pdbx_audit_revision_details (
 DROP TYPE IF EXISTS ENUM_pdbx_audit_revision_group_group CASCADE;
 CREATE TYPE ENUM_pdbx_audit_revision_group_group AS ENUM ( 'Advisory', 'Atomic model', 'Author supporting evidence', 'Data collection', 'Data processing', 'Database references', 'Derived calculations', 'Experimental data', 'Experimental preparation', 'Initial release', 'Non-polymer description', 'Other', 'Polymer sequence', 'Refinement description', 'Structure summary', 'Source and taxonomy', 'Version format compliance' );
 DROP TYPE IF EXISTS ENUM_pdbx_audit_revision_group_data_content_type CASCADE;
-CREATE TYPE ENUM_pdbx_audit_revision_group_data_content_type AS ENUM ( 'Structure model', 'NMR restraints', 'NMR shifts', 'Structure factors' );
+CREATE TYPE ENUM_pdbx_audit_revision_group_data_content_type AS ENUM ( 'Structure model', 'NMR restraints', 'NMR shifts', 'Structure factors', 'Chemical component' );
 CREATE TABLE pdbx_audit_revision_group (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
@@ -8381,7 +8383,7 @@ CREATE TABLE pdbx_audit_revision_group (
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_audit_revision_item_data_content_type CASCADE;
-CREATE TYPE ENUM_pdbx_audit_revision_item_data_content_type AS ENUM ( 'Structure model', 'NMR restraints', 'NMR shifts', 'Structure factors' );
+CREATE TYPE ENUM_pdbx_audit_revision_item_data_content_type AS ENUM ( 'Structure model', 'NMR restraints', 'NMR shifts', 'Structure factors', 'Chemical component' );
 CREATE TABLE pdbx_audit_revision_item (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
@@ -10265,7 +10267,7 @@ CREATE TABLE pdbx_entity_assembly (
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_entity_descriptor_type CASCADE;
-CREATE TYPE ENUM_pdbx_entity_descriptor_type AS ENUM ( 'LINUCS', 'IUPAC', 'IUPAC Abbreviated' );
+CREATE TYPE ENUM_pdbx_entity_descriptor_type AS ENUM ( 'LINUCS' );
 CREATE TABLE pdbx_entity_descriptor (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
@@ -14352,7 +14354,7 @@ CREATE TABLE pdbx_reflns_twin (
 
 --
 -- (quoted from pdbx_related_exp_data_setType)
--- Data items in the PDBX_RELATED_DATA_SET category record references to experimental data sets related to the entry. Example 1 - <PDBx:pdbx_related_exp_data_setCategory> <PDBx:pdbx_related_exp_data_set ordinal="1"> <PDBx:data_reference>doi:10.000/10002/image_data/cif</PDBx:data_reference> <PDBx:data_set_type>diffraction image data</PDBx:data_set_type> <PDBx:details>imgCIF data set containing 500 frames</PDBx:details> <PDBx:metadata_reference>doi:10.000/10002/image_data/txt</PDBx:metadata_reference> </PDBx:pdbx_related_exp_data_set> </PDBx:pdbx_related_exp_data_setCategory>
+-- Data items in the PDBX_RELATED_DATA_SET category record references to experimental data sets related to the entry. Example 1 - <PDBx:pdbx_related_exp_data_setCategory> <PDBx:pdbx_related_exp_data_set ordinal="1"> <PDBx:data_reference>10.000/10002/image_data/cif</PDBx:data_reference> <PDBx:data_set_type>diffraction image data</PDBx:data_set_type> <PDBx:details>imgCIF data set containing 500 frames</PDBx:details> <PDBx:metadata_reference>10.000/10002/image_data/txt</PDBx:metadata_reference> </PDBx:pdbx_related_exp_data_set> </PDBx:pdbx_related_exp_data_setCategory>
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
@@ -14633,7 +14635,7 @@ CREATE TABLE pdbx_serial_crystallography_measurement (
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_serial_crystallography_sample_delivery_method CASCADE;
-CREATE TYPE ENUM_pdbx_serial_crystallography_sample_delivery_method AS ENUM ( 'fixed target', 'injection', 'gas dynamic virtual nozzle' );
+CREATE TYPE ENUM_pdbx_serial_crystallography_sample_delivery_method AS ENUM ( 'fixed target', 'injection' );
 CREATE TABLE pdbx_serial_crystallography_sample_delivery (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
