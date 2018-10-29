@@ -14,30 +14,32 @@
 --  append xpath key: false
 --  retain constraint: false
 --  retrieve field annotation: false
+--  map integer numbers to: signed int 32 bits
+--  map decimal numbers to: big decimal
 --
 -- Statistics of schema:
---  Generated 444 tables (3340 fields), 0 attr groups, 0 model groups in total
+--  Generated 446 tables (3348 fields), 0 attr groups, 0 model groups in total
 --   Namespaces:
 --    http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), http://www.w3.org/2001/XMLSchema (xsd)
 --   Schema locations:
 --    schema/pdbx-validation-v1.xsd
 --   Table types:
---    0 root, 0 root children, 0 admin roots, 444 admin children
+--    0 root, 0 root children, 0 admin roots, 446 admin children
 --   System keys:
 --    0 primary keys (0 unique constraints), 0 foreign keys, 0 nested keys (0 as attribute)
 --   User keys:
---    399 document keys, 0 serial keys, 0 xpath keys
+--    401 document keys, 0 serial keys, 0 xpath keys
 --   Contents:
---    610 attributes (40 in-place document keys), 2282 elements (5 in-place document keys), 208 simple contents (0 as attribute, 0 as conditional attribute)
+--    616 attributes (40 in-place document keys), 2284 elements (5 in-place document keys), 208 simple contents (0 as attribute, 0 as conditional attribute)
 --   Wild cards:
 --    0 any elements, 0 any attributes
 --   Constraints:
---    1 unique constraints from xsd:unique, 232 unique constraints from xsd:key, 125 foreign key constraints from xsd:keyref
+--    1 unique constraints from xsd:unique, 234 unique constraints from xsd:key, 129 foreign key constraints from xsd:keyref
 --
 
 --
--- PDBML-validation Schema v1.299
--- PDBXML-validation Schema translated from wwPDB Validation Information Dictionary v1.299, which is backward compatible with the PDBx/mmCIF Dictionary v5.299: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
+-- PDBML-validation Schema v1.300
+-- PDBXML-validation Schema translated from wwPDB Validation Information Dictionary v1.300, which is backward compatible with the PDBx/mmCIF Dictionary v5.300: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
 -- URI-reference = http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd
 --
 
@@ -125,8 +127,10 @@ DROP TABLE IF EXISTS ndb_struct_conf_na CASCADE;
 DROP TABLE IF EXISTS ndb_struct_na_base_pair CASCADE;
 DROP TABLE IF EXISTS ndb_struct_na_base_pair_step CASCADE;
 DROP TABLE IF EXISTS pdbx_audit_author CASCADE;
+DROP TABLE IF EXISTS pdbx_audit_revision_category CASCADE;
 DROP TABLE IF EXISTS pdbx_audit_revision_details CASCADE;
 DROP TABLE IF EXISTS pdbx_audit_revision_group CASCADE;
+DROP TABLE IF EXISTS pdbx_audit_revision_item CASCADE;
 DROP TABLE IF EXISTS lower_limit CASCADE;
 DROP TABLE IF EXISTS upper_limit CASCADE;
 DROP TABLE IF EXISTS pdbx_bond_distance_limits CASCADE;
@@ -467,7 +471,6 @@ DROP TABLE IF EXISTS struct_ncs_dom CASCADE;
 DROP TABLE IF EXISTS struct_ncs_oper CASCADE;
 DROP TABLE IF EXISTS struct_ref_seq CASCADE;
 DROP TABLE IF EXISTS entity_poly_seq CASCADE;
-DROP TABLE IF EXISTS pdbx_audit_revision_history CASCADE;
 DROP TABLE IF EXISTS pdbx_percentile_conditions CASCADE;
 DROP TABLE IF EXISTS pdbx_struct_entity_inst CASCADE;
 DROP TABLE IF EXISTS pdbx_struct_group_list CASCADE;
@@ -478,6 +481,7 @@ DROP TABLE IF EXISTS entity_poly CASCADE;
 DROP TABLE IF EXISTS "phasing_MAD_expt" CASCADE;
 DROP TABLE IF EXISTS "phasing_MIR_der" CASCADE;
 DROP TABLE IF EXISTS struct_ncs_ens CASCADE;
+DROP TABLE IF EXISTS pdbx_audit_revision_history CASCADE;
 DROP TABLE IF EXISTS struct_sheet CASCADE;
 DROP TABLE IF EXISTS em_entity_assembly CASCADE;
 DROP TABLE IF EXISTS pdbx_nmr_assigned_chem_shift_list CASCADE;
@@ -659,6 +663,27 @@ CREATE TABLE struct_sheet (
 );
 
 --
+-- (quoted from pdbx_audit_revision_historyType)
+-- Data items in the PDBX_AUDIT_REVISION_HISTORY category record the revision history for a data entry. Example 1 - <PDBxv:pdbx_audit_revision_historyCategory> <PDBxv:pdbx_audit_revision_history data_content_type="Structure model" ordinal="1"> <PDBxv:major_revision>1</PDBxv:major_revision> <PDBxv:minor_revision>0</PDBxv:minor_revision> <PDBxv:revision_date>2017-03-01</PDBxv:revision_date> </PDBxv:pdbx_audit_revision_history> <PDBxv:pdbx_audit_revision_history data_content_type="Structure model" ordinal="2"> <PDBxv:major_revision>1</PDBxv:major_revision> <PDBxv:minor_revision>1</PDBxv:minor_revision> <PDBxv:revision_date>2017-03-08</PDBxv:revision_date> </PDBxv:pdbx_audit_revision_history> </PDBxv:pdbx_audit_revision_historyCategory>
+-- URI-reference = http://pdbml.pdb.org/dictionaries/mmcif_pdbx_v50.dic/Categories/pdbx_audit_revision_history.html
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), schema location: schema/pdbx-validation-v1.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+DROP TYPE IF EXISTS ENUM_pdbx_audit_revision_history_data_content_type CASCADE;
+CREATE TYPE ENUM_pdbx_audit_revision_history_data_content_type AS ENUM ( 'Structure model', 'NMR restraints', 'NMR shifts', 'Structure factors' );
+CREATE TABLE pdbx_audit_revision_history (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	entry_id TEXT ,
+	major_revision INTEGER ,
+	minor_revision INTEGER ,
+	revision_date DATE ,
+-- ATTRIBUTE
+	data_content_type ENUM_pdbx_audit_revision_history_data_content_type NOT NULL ,
+-- ATTRIBUTE
+	ordinal INTEGER NOT NULL
+);
+
+--
 -- (quoted from entity_polyType)
 -- Data items in the ENTITY_POLY category record details about the polymer, such as the type of the polymer, the number of monomers and whether it has nonstandard features. Example 1 - based on PDB entry 5HVP and laboratory records for the structure corresponding to PDB entry 5HVP. <PDBxv:entity_polyCategory> <PDBxv:entity_poly entity_id="1"> <PDBxv:nstd_chirality>no</PDBxv:nstd_chirality> <PDBxv:nstd_linkage>no</PDBxv:nstd_linkage> <PDBxv:nstd_monomer>no</PDBxv:nstd_monomer> <PDBxv:type>polypeptide(L)</PDBxv:type> <PDBxv:type_details xsi:nil="true" /> </PDBxv:entity_poly> </PDBxv:entity_polyCategory>
 -- URI-reference = http://pdbml.pdb.org/dictionaries/mmcif_pdbx_v50.dic/Categories/entity_poly.html
@@ -788,27 +813,6 @@ CREATE TABLE entity_poly_seq (
 	mon_id TEXT NOT NULL ,
 -- ATTRIBUTE
 	num INTEGER CHECK ( num >= 1 ) NOT NULL
-);
-
---
--- (quoted from pdbx_audit_revision_historyType)
--- Data items in the PDBX_AUDIT_REVISION_HISTORY category record the revision history for a data entry. Example 1 - <PDBxv:pdbx_audit_revision_historyCategory> <PDBxv:pdbx_audit_revision_history data_content_type="Structure model" ordinal="1"> <PDBxv:major_revision>1</PDBxv:major_revision> <PDBxv:minor_revision>0</PDBxv:minor_revision> <PDBxv:revision_date>2017-03-01</PDBxv:revision_date> </PDBxv:pdbx_audit_revision_history> <PDBxv:pdbx_audit_revision_history data_content_type="Structure model" ordinal="2"> <PDBxv:major_revision>1</PDBxv:major_revision> <PDBxv:minor_revision>1</PDBxv:minor_revision> <PDBxv:revision_date>2017-03-08</PDBxv:revision_date> </PDBxv:pdbx_audit_revision_history> </PDBxv:pdbx_audit_revision_historyCategory>
--- URI-reference = http://pdbml.pdb.org/dictionaries/mmcif_pdbx_v50.dic/Categories/pdbx_audit_revision_history.html
--- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), schema location: schema/pdbx-validation-v1.xsd
--- type: admin child, content: true, list: false, bridge: false, virtual: false
---
-DROP TYPE IF EXISTS ENUM_pdbx_audit_revision_history_data_content_type CASCADE;
-CREATE TYPE ENUM_pdbx_audit_revision_history_data_content_type AS ENUM ( 'Structure model', 'NMR restraints', 'NMR shifts', 'Structure factors' );
-CREATE TABLE pdbx_audit_revision_history (
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	entry_id TEXT ,
-	major_revision INTEGER ,
-	minor_revision INTEGER ,
-	revision_date DATE ,
--- ATTRIBUTE
-	data_content_type ENUM_pdbx_audit_revision_history_data_content_type NOT NULL ,
--- ATTRIBUTE
-	ordinal INTEGER NOT NULL
 );
 
 --
@@ -2962,6 +2966,27 @@ CREATE TABLE pdbx_audit_author (
 );
 
 --
+-- (quoted from pdbx_audit_revision_categoryType)
+-- Data items in the PDBX_AUDIT_REVISION_CATEGORY category report the data categories associated with a PDBX_AUDIT_REVISION_HISTORY record. Example 1 <PDBxv:pdbx_audit_revision_categoryCategory> <PDBxv:pdbx_audit_revision_category data_content_type="Structure model" ordinal="1" revision_ordinal="1"> <PDBxv:category>audit_author</PDBxv:category> </PDBxv:pdbx_audit_revision_category> <PDBxv:pdbx_audit_revision_category data_content_type="Structure model" ordinal="2" revision_ordinal="1"> <PDBxv:category>citation</PDBxv:category> </PDBxv:pdbx_audit_revision_category> <PDBxv:pdbx_audit_revision_category data_content_type="Structure model" ordinal="3" revision_ordinal="1"> <PDBxv:category>citation_author</PDBxv:category> </PDBxv:pdbx_audit_revision_category> <PDBxv:pdbx_audit_revision_category data_content_type="Structure model" ordinal="4" revision_ordinal="2"> <PDBxv:category>citation</PDBxv:category> </PDBxv:pdbx_audit_revision_category> </PDBxv:pdbx_audit_revision_categoryCategory>
+-- URI-reference = http://pdbml.pdb.org/dictionaries/mmcif_pdbx_v50.dic/Categories/pdbx_audit_revision_category.html
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), schema location: schema/pdbx-validation-v1.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+DROP TYPE IF EXISTS ENUM_pdbx_audit_revision_category_data_content_type CASCADE;
+CREATE TYPE ENUM_pdbx_audit_revision_category_data_content_type AS ENUM ( 'Structure model', 'NMR restraints', 'NMR shifts', 'Structure factors', 'Chemical component' );
+CREATE TABLE pdbx_audit_revision_category (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	entry_id TEXT ,
+	category TEXT ,
+-- ATTRIBUTE
+	data_content_type ENUM_pdbx_audit_revision_category_data_content_type NOT NULL ,
+-- ATTRIBUTE
+	ordinal INTEGER NOT NULL ,
+-- ATTRIBUTE
+	revision_ordinal INTEGER NOT NULL
+);
+
+--
 -- (quoted from pdbx_audit_revision_detailsType)
 -- Data items in the PDBX_audit_revision_details category record descriptions of changes associated with PDBX_AUDIT_REVISION_HISTORY records. Example 1 - <PDBxv:pdbx_audit_revision_detailsCategory> <PDBxv:pdbx_audit_revision_details data_content_type="Structure model" ordinal="1" revision_ordinal="1"> <PDBxv:provider>repository</PDBxv:provider> <PDBxv:type>Initial release</PDBxv:type> </PDBxv:pdbx_audit_revision_details> <PDBxv:pdbx_audit_revision_details data_content_type="Structure model" ordinal="2" revision_ordinal="7"> <PDBxv:description>Remodeling of inhibitor</PDBxv:description> <PDBxv:provider>author</PDBxv:provider> <PDBxv:type>Coordinate replacement</PDBxv:type> </PDBxv:pdbx_audit_revision_details> </PDBxv:pdbx_audit_revision_detailsCategory>
 -- URI-reference = http://pdbml.pdb.org/dictionaries/mmcif_pdbx_v50.dic/Categories/pdbx_audit_revision_details.html
@@ -2998,13 +3023,34 @@ CREATE TABLE pdbx_audit_revision_details (
 DROP TYPE IF EXISTS ENUM_pdbx_audit_revision_group_group CASCADE;
 CREATE TYPE ENUM_pdbx_audit_revision_group_group AS ENUM ( 'Advisory', 'Atomic model', 'Author supporting evidence', 'Data collection', 'Data processing', 'Database references', 'Derived calculations', 'Experimental data', 'Experimental preparation', 'Initial release', 'Non-polymer description', 'Other', 'Polymer sequence', 'Refinement description', 'Structure summary', 'Source and taxonomy', 'Version format compliance' );
 DROP TYPE IF EXISTS ENUM_pdbx_audit_revision_group_data_content_type CASCADE;
-CREATE TYPE ENUM_pdbx_audit_revision_group_data_content_type AS ENUM ( 'Structure model', 'NMR restraints', 'NMR shifts', 'Structure factors' );
+CREATE TYPE ENUM_pdbx_audit_revision_group_data_content_type AS ENUM ( 'Structure model', 'NMR restraints', 'NMR shifts', 'Structure factors', 'Chemical component' );
 CREATE TABLE pdbx_audit_revision_group (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	entry_id TEXT ,
 	"group" ENUM_pdbx_audit_revision_group_group ,
 -- ATTRIBUTE
 	data_content_type ENUM_pdbx_audit_revision_group_data_content_type NOT NULL ,
+-- ATTRIBUTE
+	ordinal INTEGER NOT NULL ,
+-- ATTRIBUTE
+	revision_ordinal INTEGER NOT NULL
+);
+
+--
+-- (quoted from pdbx_audit_revision_itemType)
+-- Data items in the PDBX_AUDIT_REVISION_ITEM category report the data items associated with a PDBX_AUDIT_REVISION_HISTORY record. Example 1 <PDBxv:pdbx_audit_revision_itemCategory> <PDBxv:pdbx_audit_revision_item data_content_type="Structure model" ordinal="1" revision_ordinal="1"> <PDBxv:item>_atom_site.type_symbol</PDBxv:item> </PDBxv:pdbx_audit_revision_item> </PDBxv:pdbx_audit_revision_itemCategory>
+-- URI-reference = http://pdbml.pdb.org/dictionaries/mmcif_pdbx_v50.dic/Categories/pdbx_audit_revision_item.html
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), schema location: schema/pdbx-validation-v1.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+DROP TYPE IF EXISTS ENUM_pdbx_audit_revision_item_data_content_type CASCADE;
+CREATE TYPE ENUM_pdbx_audit_revision_item_data_content_type AS ENUM ( 'Structure model', 'NMR restraints', 'NMR shifts', 'Structure factors', 'Chemical component' );
+CREATE TABLE pdbx_audit_revision_item (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	entry_id TEXT ,
+	item TEXT ,
+-- ATTRIBUTE
+	data_content_type ENUM_pdbx_audit_revision_item_data_content_type NOT NULL ,
 -- ATTRIBUTE
 	ordinal INTEGER NOT NULL ,
 -- ATTRIBUTE
@@ -3680,7 +3726,7 @@ CREATE TABLE pdbx_entity_assembly (
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_entity_descriptor_type CASCADE;
-CREATE TYPE ENUM_pdbx_entity_descriptor_type AS ENUM ( 'LINUCS', 'IUPAC', 'IUPAC Abbreviated' );
+CREATE TYPE ENUM_pdbx_entity_descriptor_type AS ENUM ( 'LINUCS' );
 CREATE TABLE pdbx_entity_descriptor (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	entry_id TEXT ,
@@ -9876,6 +9922,9 @@ CREATE TABLE symmetry_equiv (
 -- (derived from xsd:key[@name='pdbx_audit_authorKey_0'])
 --ALTER TABLE pdbx_audit_author ADD CONSTRAINT UNQ_pdbx_audit_author UNIQUE ( entry_id, ordinal );
 
+-- (derived from xsd:key[@name='pdbx_audit_revision_categoryKey_0'])
+--ALTER TABLE pdbx_audit_revision_category ADD CONSTRAINT UNQ_pdbx_audit_revision_category UNIQUE ( entry_id, data_content_type, ordinal, revision_ordinal );
+
 -- (derived from xsd:key[@name='pdbx_audit_revision_detailsKey_0'])
 --ALTER TABLE pdbx_audit_revision_details ADD CONSTRAINT UNQ_pdbx_audit_revision_details UNIQUE ( entry_id, data_content_type, ordinal, revision_ordinal );
 
@@ -9884,6 +9933,9 @@ CREATE TABLE symmetry_equiv (
 
 -- (derived from xsd:key[@name='pdbx_audit_revision_historyKey_0'])
 --ALTER TABLE pdbx_audit_revision_history ADD CONSTRAINT UNQ_pdbx_audit_revision_history UNIQUE ( entry_id, data_content_type, ordinal );
+
+-- (derived from xsd:key[@name='pdbx_audit_revision_itemKey_0'])
+--ALTER TABLE pdbx_audit_revision_item ADD CONSTRAINT UNQ_pdbx_audit_revision_item UNIQUE ( entry_id, data_content_type, ordinal, revision_ordinal );
 
 -- (derived from xsd:key[@name='pdbx_bond_distance_limitsKey_0'])
 --ALTER TABLE pdbx_bond_distance_limits ADD CONSTRAINT UNQ_pdbx_bond_distance_limits UNIQUE ( entry_id, atom_type_1, atom_type_2 );
@@ -10609,16 +10661,28 @@ CREATE TABLE symmetry_equiv (
 --ALTER TABLE symmetry ADD CONSTRAINT KR_entryKeyref_0_0_39_0 FOREIGN KEY ( entry_id ) REFERENCES entry ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
 -- (derived from xsd:keyref[@name='pdbx_audit_revision_historyKeyref_0_0_0_0'])
---ALTER TABLE pdbx_audit_revision_details ADD CONSTRAINT KR_pdbx_audit_revision_historyKeyref_0_0_0_0_0 FOREIGN KEY ( data_content_type ) REFERENCES pdbx_audit_revision_history ( data_content_type ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
+--ALTER TABLE pdbx_audit_revision_category ADD CONSTRAINT KR_pdbx_audit_revision_historyKeyref_0_0_0_0_0 FOREIGN KEY ( data_content_type ) REFERENCES pdbx_audit_revision_history ( data_content_type ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
 -- (derived from xsd:keyref[@name='pdbx_audit_revision_historyKeyref_0_0_0_0'])
---ALTER TABLE pdbx_audit_revision_details ADD CONSTRAINT KR_pdbx_audit_revision_historyKeyref_0_0_0_0_1 FOREIGN KEY ( revision_ordinal ) REFERENCES pdbx_audit_revision_history ( ordinal ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
+--ALTER TABLE pdbx_audit_revision_category ADD CONSTRAINT KR_pdbx_audit_revision_historyKeyref_0_0_0_0_1 FOREIGN KEY ( revision_ordinal ) REFERENCES pdbx_audit_revision_history ( ordinal ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
 -- (derived from xsd:keyref[@name='pdbx_audit_revision_historyKeyref_0_0_1_0'])
---ALTER TABLE pdbx_audit_revision_group ADD CONSTRAINT KR_pdbx_audit_revision_historyKeyref_0_0_1_0_0 FOREIGN KEY ( data_content_type ) REFERENCES pdbx_audit_revision_history ( data_content_type ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
+--ALTER TABLE pdbx_audit_revision_details ADD CONSTRAINT KR_pdbx_audit_revision_historyKeyref_0_0_1_0_0 FOREIGN KEY ( data_content_type ) REFERENCES pdbx_audit_revision_history ( data_content_type ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
 -- (derived from xsd:keyref[@name='pdbx_audit_revision_historyKeyref_0_0_1_0'])
---ALTER TABLE pdbx_audit_revision_group ADD CONSTRAINT KR_pdbx_audit_revision_historyKeyref_0_0_1_0_1 FOREIGN KEY ( revision_ordinal ) REFERENCES pdbx_audit_revision_history ( ordinal ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
+--ALTER TABLE pdbx_audit_revision_details ADD CONSTRAINT KR_pdbx_audit_revision_historyKeyref_0_0_1_0_1 FOREIGN KEY ( revision_ordinal ) REFERENCES pdbx_audit_revision_history ( ordinal ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
+
+-- (derived from xsd:keyref[@name='pdbx_audit_revision_historyKeyref_0_0_2_0'])
+--ALTER TABLE pdbx_audit_revision_group ADD CONSTRAINT KR_pdbx_audit_revision_historyKeyref_0_0_2_0_0 FOREIGN KEY ( data_content_type ) REFERENCES pdbx_audit_revision_history ( data_content_type ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
+
+-- (derived from xsd:keyref[@name='pdbx_audit_revision_historyKeyref_0_0_2_0'])
+--ALTER TABLE pdbx_audit_revision_group ADD CONSTRAINT KR_pdbx_audit_revision_historyKeyref_0_0_2_0_1 FOREIGN KEY ( revision_ordinal ) REFERENCES pdbx_audit_revision_history ( ordinal ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
+
+-- (derived from xsd:keyref[@name='pdbx_audit_revision_historyKeyref_0_0_3_0'])
+--ALTER TABLE pdbx_audit_revision_item ADD CONSTRAINT KR_pdbx_audit_revision_historyKeyref_0_0_3_0_0 FOREIGN KEY ( data_content_type ) REFERENCES pdbx_audit_revision_history ( data_content_type ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
+
+-- (derived from xsd:keyref[@name='pdbx_audit_revision_historyKeyref_0_0_3_0'])
+--ALTER TABLE pdbx_audit_revision_item ADD CONSTRAINT KR_pdbx_audit_revision_historyKeyref_0_0_3_0_1 FOREIGN KEY ( revision_ordinal ) REFERENCES pdbx_audit_revision_history ( ordinal ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
 -- (derived from xsd:keyref[@name='pdbx_domainKeyref_0_0_0_0'])
 --ALTER TABLE pdbx_domain_range ADD CONSTRAINT KR_pdbx_domainKeyref_0_0_0_0 FOREIGN KEY ( domain_id ) REFERENCES pdbx_domain ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;

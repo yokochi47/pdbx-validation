@@ -14,6 +14,8 @@
 --  append xpath key: false
 --  retain constraint: false
 --  retrieve field annotation: false
+--  map integer numbers to: signed int 32 bits
+--  map decimal numbers to: big decimal
 --
 -- Statistics of schema:
 --  Generated 25 tables (342 fields), 0 attr groups, 0 model groups in total
@@ -78,6 +80,7 @@ CREATE TABLE unmapped_chemical_shift (
 -- ATTRIBUTE
 	rescode TEXT ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	resnum INTEGER ,
 -- ATTRIBUTE
 	value DECIMAL ,
@@ -104,6 +107,7 @@ CREATE TABLE unparsed_chemical_shift (
 -- ATTRIBUTE
 	rescode TEXT ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	resnum INTEGER ,
 -- ATTRIBUTE
 	value DECIMAL ,
@@ -142,6 +146,7 @@ CREATE TABLE random_coil_index (
 -- ATTRIBUTE
 	rescode TEXT ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	resnum INTEGER ,
 -- ATTRIBUTE
 	value DECIMAL
@@ -160,6 +165,7 @@ CREATE TABLE chemical_shift_outlier (
 -- ATTRIBUTE
 	rescode TEXT ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	resnum INTEGER ,
 -- ATTRIBUTE
 	value DECIMAL ,
@@ -186,6 +192,7 @@ CREATE TABLE referencing_offset (
 -- ATTRIBUTE
 	value DECIMAL ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	number_of_measurements INTEGER NOT NULL
 );
 
@@ -198,10 +205,13 @@ CREATE TABLE assignment_completeness_well_defined (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	number_of_assigned_shifts INTEGER ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	number_of_unassigned_shifts INTEGER ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	number_of_shifts INTEGER ,
 -- ATTRIBUTE
 	type TEXT NOT NULL ,
@@ -218,10 +228,13 @@ CREATE TABLE assignment_completeness_full_length (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	number_of_assigned_shifts INTEGER ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	number_of_unassigned_shifts INTEGER ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	number_of_shifts INTEGER ,
 -- ATTRIBUTE
 	type TEXT NOT NULL ,
@@ -238,6 +251,7 @@ CREATE TABLE chemical_shift_list (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	file_id INTEGER ,
 -- ATTRIBUTE
 	file_name TEXT ,
@@ -248,16 +262,22 @@ CREATE TABLE chemical_shift_list (
 -- ATTRIBUTE
 	type TEXT ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	number_of_errors_while_mapping INTEGER ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	number_of_warnings_while_mapping INTEGER ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	number_of_mapped_shifts INTEGER ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	number_of_parsed_shifts INTEGER ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	total_number_of_shifts INTEGER ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	number_of_unparsed_shifts INTEGER
 );
 
@@ -296,8 +316,10 @@ CREATE TABLE "Entry" (
 -- ATTRIBUTE
 	bonds_rmsz DECIMAL ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	num_bonds_rmsz INTEGER ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	num_angles_rmsz INTEGER ,
 -- ATTRIBUTE
 	"num-H-reduce" DECIMAL ,
@@ -316,12 +338,14 @@ CREATE TABLE "Entry" (
 -- ATTRIBUTE
 	xtriage_input_columns TEXT ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	acentric_outliers INTEGER ,
 -- ATTRIBUTE
 	centric_outliers DECIMAL ,
 -- ATTRIBUTE
 	"IoverSigma" TEXT ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	"numMillerIndices" INTEGER ,
 -- ATTRIBUTE
 	"WilsonBestimate" DECIMAL ,
@@ -342,6 +366,7 @@ CREATE TABLE "Entry" (
 -- ATTRIBUTE
 	"DCC_refinement_program" TEXT ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	"num-free-reflections" INTEGER ,
 -- ATTRIBUTE
 	"RefmacVersion" TEXT ,
@@ -372,16 +397,22 @@ CREATE TABLE "Entry" (
 -- ATTRIBUTE
 	nmrclust_version TEXT ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	nmrclust_representative_model INTEGER ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	medoid_model INTEGER ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	nmrclust_number_of_outliers INTEGER ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	nmrclust_number_of_models INTEGER ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	nmrclust_number_of_clusters INTEGER ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	cyrange_number_of_domains INTEGER ,
 -- ATTRIBUTE
 	chemical_shift_completeness DECIMAL ,
@@ -398,48 +429,60 @@ CREATE TABLE "Entry" (
 -- ATTRIBUTE
 	"no-percentile-property" BOOLEAN ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	"numPDBids-absolute-percentile-RNAsuiteness" INTEGER ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	"numPDBids-relative-percentile-RNAsuiteness" INTEGER ,
 -- ATTRIBUTE
 	"low-resol-relative-percentile-RNAsuiteness" DECIMAL ,
 -- ATTRIBUTE
 	"high-resol-relative-percentile-RNAsuiteness" DECIMAL ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	"numPDBids-absolute-percentile-clashscore" INTEGER ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	"numPDBids-relative-percentile-clashscore" INTEGER ,
 -- ATTRIBUTE
 	"low-resol-relative-percentile-clashscore" DECIMAL ,
 -- ATTRIBUTE
 	"high-resol-relative-percentile-clashscore" DECIMAL ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	"numPDBids-absolute-percentile-percent-rama-outliers" INTEGER ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	"numPDBids-relative-percentile-percent-rama-outliers" INTEGER ,
 -- ATTRIBUTE
 	"low-resol-relative-percentile-percent-rama-outliers" DECIMAL ,
 -- ATTRIBUTE
 	"high-resol-relative-percentile-percent-rama-outliers" DECIMAL ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	"numPDBids-absolute-percentile-percent-rota-outliers" INTEGER ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	"numPDBids-relative-percentile-percent-rota-outliers" INTEGER ,
 -- ATTRIBUTE
 	"low-resol-relative-percentile-percent-rota-outliers" DECIMAL ,
 -- ATTRIBUTE
 	"high-resol-relative-percentile-percent-rota-outliers" DECIMAL ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	"numPDBids-absolute-percentile-DCC_Rfree" INTEGER ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	"numPDBids-relative-percentile-DCC_Rfree" INTEGER ,
 -- ATTRIBUTE
 	"low-resol-relative-percentile-DCC_Rfree" DECIMAL ,
 -- ATTRIBUTE
 	"high-resol-relative-percentile-DCC_Rfree" DECIMAL ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	"numPDBids-absolute-percentile-percent-RSRZ-outliers" INTEGER ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	"numPDBids-relative-percentile-percent-RSRZ-outliers" INTEGER ,
 -- ATTRIBUTE
 	"low-resol-relative-percentile-percent-RSRZ-outliers" DECIMAL ,
@@ -456,6 +499,7 @@ CREATE TABLE "Model" (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	model INTEGER ,
 -- ATTRIBUTE
 	nmrclust_cluster_id TEXT ,
@@ -542,6 +586,7 @@ CREATE TABLE clash (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	cid INTEGER NOT NULL ,
 -- ATTRIBUTE
 	clashmag DECIMAL NOT NULL ,
@@ -560,6 +605,7 @@ CREATE TABLE "symm-clash" (
 -- ATTRIBUTE
 	symop TEXT NOT NULL ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	scid INTEGER NOT NULL ,
 -- ATTRIBUTE
 	clashmag DECIMAL NOT NULL ,
@@ -584,6 +630,7 @@ CREATE TABLE "mog-bond-outlier" (
 -- ATTRIBUTE
 	stdev DECIMAL ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	numobs INTEGER ,
 -- ATTRIBUTE
 	"Zscore" DECIMAL ,
@@ -608,6 +655,7 @@ CREATE TABLE "mog-angle-outlier" (
 -- ATTRIBUTE
 	stdev DECIMAL ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	numobs INTEGER ,
 -- ATTRIBUTE
 	"Zscore" DECIMAL ,
@@ -632,6 +680,7 @@ CREATE TABLE "mog-torsion-outlier" (
 -- ATTRIBUTE
 	mindiff DECIMAL ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	numobs INTEGER ,
 -- ATTRIBUTE
 	stdev DECIMAL
@@ -654,6 +703,7 @@ CREATE TABLE "mog-ring-outlier" (
 -- ATTRIBUTE
 	stdev DECIMAL ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	numobs INTEGER
 );
 
@@ -674,6 +724,7 @@ CREATE TABLE "ModelledSubgroup" (
 -- ATTRIBUTE
 	chain TEXT ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	resnum INTEGER ,
 -- ATTRIBUTE
 	resname TEXT ,
@@ -690,12 +741,16 @@ CREATE TABLE "ModelledSubgroup" (
 -- ATTRIBUTE
 	seq TEXT ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	ligand_num_clashes INTEGER ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	ligand_num_symm_clashes INTEGER ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	"NatomsEDS" INTEGER ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	cyrange_domain_id INTEGER ,
 -- ATTRIBUTE
 	validate TEXT ,
@@ -716,6 +771,7 @@ CREATE TABLE "ModelledSubgroup" (
 -- ATTRIBUTE
 	"ligRSRnbrStdev" DECIMAL ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	"ligRSRnumnbrs" INTEGER ,
 -- ATTRIBUTE
 	"ligRSRZ" DECIMAL ,
@@ -742,8 +798,10 @@ CREATE TABLE "ModelledSubgroup" (
 -- ATTRIBUTE
 	mogul_bonds_rmsz DECIMAL ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	mogul_rmsz_numangles INTEGER ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	mogul_rmsz_numbonds INTEGER
 );
 
@@ -756,16 +814,20 @@ CREATE TABLE cyrange_domain (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	domain INTEGER ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	number_of_gaps INTEGER ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	number_of_residues INTEGER ,
 -- ATTRIBUTE
 	percentage_of_core DECIMAL ,
 -- ATTRIBUTE
 	rmsd DECIMAL ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	medoid_model INTEGER ,
 -- ATTRIBUTE
 	medoid_rmsd DECIMAL ,
@@ -794,8 +856,10 @@ CREATE TABLE "ModelledEntityInstance" (
 -- ATTRIBUTE
 	bonds_rmsz DECIMAL ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	num_bonds_rmsz INTEGER ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	num_angles_rmsz INTEGER ,
 -- ATTRIBUTE
 	chain TEXT ,
