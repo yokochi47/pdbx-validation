@@ -433,6 +433,12 @@ Unmatched entry ID in both documents (<xsl:value-of select="$entry_id"/> and <xs
     </xsl:element>
   </xsl:template>
 
+  <xsl:template match="PDBx:pdbx_audit_revision_categoryCategory">
+    <xsl:element name="PDBxv:{local-name()}">
+      <xsl:apply-templates mode="category-element"/>
+    </xsl:element>
+  </xsl:template>
+
   <xsl:template match="PDBx:pdbx_audit_revision_detailsCategory">
     <xsl:element name="PDBxv:{local-name()}">
       <xsl:apply-templates mode="category-element"/>
@@ -446,6 +452,12 @@ Unmatched entry ID in both documents (<xsl:value-of select="$entry_id"/> and <xs
   </xsl:template>
 
   <xsl:template match="PDBx:pdbx_audit_revision_historyCategory">
+    <xsl:element name="PDBxv:{local-name()}">
+      <xsl:apply-templates mode="category-element"/>
+    </xsl:element>
+  </xsl:template>
+
+  <xsl:template match="PDBx:pdbx_audit_revision_itemCategory">
     <xsl:element name="PDBxv:{local-name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>

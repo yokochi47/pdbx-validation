@@ -89,7 +89,7 @@ File path | Document
 - **Oct 29, 2018**: Release v1.3.8
 	- Update wwPDB Validation Information Dictionary from v1.299 to 1.300.
 	- Replace all xsd:integer of PDBML Schema and PDBML-validation Schema by xsd:int.
-	- Retrieve '_pdbx_audit_revision_history', 'pdbx_audit_revision_details' categories.
+	- Retrieve '_pdbx_audit_revision_category', 'pdbx_audit_revision_item' categories.
 
 - **Sep 5, 2018**: Release v1.3.7
 	- Update wwPDB Validation Information Dictionary from v1.298 to 1.299.
