@@ -1222,6 +1222,28 @@
   </xsl:template>
 
 
+  <xsl:template match="PDBxv:datablock/PDBxv:pdbx_audit_revision_categoryCategory/PDBxv:pdbx_audit_revision_category">
+      <PDBov:has_pdbx_audit_revision_category>
+      <PDBov:pdbx_audit_revision_category rdf:about="{$base}/pdbx_audit_revision_category/{translate(@data_content_type,' ^','_')},{translate(@ordinal,' ^','_')},{translate(@revision_ordinal,' ^','_')}">
+        <PDBov:of_datablock rdf:resource="{$base}"/>
+      <xsl:if test="@data_content_type!='' and @revision_ordinal!=''">
+        <PDBov:reference_to_pdbx_audit_revision_history>
+	  <rdf:Description  rdf:about="{$base}/pdbx_audit_revision_history/{translate(@data_content_type,' ^','_')},{translate(@revision_ordinal,' ^','_')}">
+	    <PDBov:referenced_by_pdbx_audit_revision_category rdf:resource="{$base}/pdbx_audit_revision_category/{translate(@data_content_type,' ^','_')},{translate(@ordinal,' ^','_')},{translate(@revision_ordinal,' ^','_')}"/>
+	  </rdf:Description>
+        </PDBov:reference_to_pdbx_audit_revision_history>
+            <!-- pdbx_audit_revision_historyKeyref_0_0_0_0 -->
+        
+      </xsl:if>
+      <xsl:apply-templates select="@*"/>
+      <xsl:apply-templates select="@*" mode="linked"/>
+      <xsl:apply-templates/>
+      <xsl:apply-templates mode="linked"/>
+      </PDBov:pdbx_audit_revision_category>
+      </PDBov:has_pdbx_audit_revision_category>
+  </xsl:template>
+
+
   <xsl:template match="PDBxv:datablock/PDBxv:pdbx_audit_revision_detailsCategory/PDBxv:pdbx_audit_revision_details">
       <PDBov:has_pdbx_audit_revision_details>
       <PDBov:pdbx_audit_revision_details rdf:about="{$base}/pdbx_audit_revision_details/{translate(@data_content_type,' ^','_')},{translate(@ordinal,' ^','_')},{translate(@revision_ordinal,' ^','_')}">
@@ -1232,7 +1254,7 @@
 	    <PDBov:referenced_by_pdbx_audit_revision_details rdf:resource="{$base}/pdbx_audit_revision_details/{translate(@data_content_type,' ^','_')},{translate(@ordinal,' ^','_')},{translate(@revision_ordinal,' ^','_')}"/>
 	  </rdf:Description>
         </PDBov:reference_to_pdbx_audit_revision_history>
-            <!-- pdbx_audit_revision_historyKeyref_0_0_0_0 -->
+            <!-- pdbx_audit_revision_historyKeyref_0_0_1_0 -->
         
       </xsl:if>
       <xsl:apply-templates select="@*"/>
@@ -1254,7 +1276,7 @@
 	    <PDBov:referenced_by_pdbx_audit_revision_group rdf:resource="{$base}/pdbx_audit_revision_group/{translate(@data_content_type,' ^','_')},{translate(@ordinal,' ^','_')},{translate(@revision_ordinal,' ^','_')}"/>
 	  </rdf:Description>
         </PDBov:reference_to_pdbx_audit_revision_history>
-            <!-- pdbx_audit_revision_historyKeyref_0_0_1_0 -->
+            <!-- pdbx_audit_revision_historyKeyref_0_0_2_0 -->
         
       </xsl:if>
       <xsl:apply-templates select="@*"/>
@@ -1276,6 +1298,28 @@
       <xsl:apply-templates mode="linked"/>
       </PDBov:pdbx_audit_revision_history>
       </PDBov:has_pdbx_audit_revision_history>
+  </xsl:template>
+
+
+  <xsl:template match="PDBxv:datablock/PDBxv:pdbx_audit_revision_itemCategory/PDBxv:pdbx_audit_revision_item">
+      <PDBov:has_pdbx_audit_revision_item>
+      <PDBov:pdbx_audit_revision_item rdf:about="{$base}/pdbx_audit_revision_item/{translate(@data_content_type,' ^','_')},{translate(@ordinal,' ^','_')},{translate(@revision_ordinal,' ^','_')}">
+        <PDBov:of_datablock rdf:resource="{$base}"/>
+      <xsl:if test="@data_content_type!='' and @revision_ordinal!=''">
+        <PDBov:reference_to_pdbx_audit_revision_history>
+	  <rdf:Description  rdf:about="{$base}/pdbx_audit_revision_history/{translate(@data_content_type,' ^','_')},{translate(@revision_ordinal,' ^','_')}">
+	    <PDBov:referenced_by_pdbx_audit_revision_item rdf:resource="{$base}/pdbx_audit_revision_item/{translate(@data_content_type,' ^','_')},{translate(@ordinal,' ^','_')},{translate(@revision_ordinal,' ^','_')}"/>
+	  </rdf:Description>
+        </PDBov:reference_to_pdbx_audit_revision_history>
+            <!-- pdbx_audit_revision_historyKeyref_0_0_3_0 -->
+        
+      </xsl:if>
+      <xsl:apply-templates select="@*"/>
+      <xsl:apply-templates select="@*" mode="linked"/>
+      <xsl:apply-templates/>
+      <xsl:apply-templates mode="linked"/>
+      </PDBov:pdbx_audit_revision_item>
+      </PDBov:has_pdbx_audit_revision_item>
   </xsl:template>
 
 

@@ -381,6 +381,13 @@ INGRNNLIQQKN</PDBxv:pdbx_seq_one_letter_code_can>
    <PDBxv:exptlCategory>
       <PDBxv:exptl entry_id="5U9B" method="SOLUTION NMR"/>
    </PDBxv:exptlCategory>
+   <PDBxv:pdbx_audit_revision_categoryCategory>
+      <PDBxv:pdbx_audit_revision_category data_content_type="Structure model"
+                                          ordinal="1"
+                                          revision_ordinal="2">
+         <PDBxv:category>citation</PDBxv:category>
+      </PDBxv:pdbx_audit_revision_category>
+   </PDBxv:pdbx_audit_revision_categoryCategory>
    <PDBxv:pdbx_audit_revision_detailsCategory>
       <PDBxv:pdbx_audit_revision_details data_content_type="Structure model"
                                          ordinal="1"
@@ -408,6 +415,28 @@ INGRNNLIQQKN</PDBxv:pdbx_seq_one_letter_code_can>
          <PDBxv:revision_date>2017-08-30</PDBxv:revision_date>
       </PDBxv:pdbx_audit_revision_history>
    </PDBxv:pdbx_audit_revision_historyCategory>
+   <PDBxv:pdbx_audit_revision_itemCategory>
+      <PDBxv:pdbx_audit_revision_item data_content_type="Structure model"
+                                      ordinal="1"
+                                      revision_ordinal="2">
+         <PDBxv:item>_citation.journal_volume</PDBxv:item>
+      </PDBxv:pdbx_audit_revision_item>
+      <PDBxv:pdbx_audit_revision_item data_content_type="Structure model"
+                                      ordinal="2"
+                                      revision_ordinal="2">
+         <PDBxv:item>_citation.page_first</PDBxv:item>
+      </PDBxv:pdbx_audit_revision_item>
+      <PDBxv:pdbx_audit_revision_item data_content_type="Structure model"
+                                      ordinal="3"
+                                      revision_ordinal="2">
+         <PDBxv:item>_citation.page_last</PDBxv:item>
+      </PDBxv:pdbx_audit_revision_item>
+      <PDBxv:pdbx_audit_revision_item data_content_type="Structure model"
+                                      ordinal="4"
+                                      revision_ordinal="2">
+         <PDBxv:item>_citation.title</PDBxv:item>
+      </PDBxv:pdbx_audit_revision_item>
+   </PDBxv:pdbx_audit_revision_itemCategory>
    <PDBxv:pdbx_database_statusCategory>
       <PDBxv:pdbx_database_status entry_id="5U9B">
          <PDBxv:SG_entry>N</PDBxv:SG_entry>
