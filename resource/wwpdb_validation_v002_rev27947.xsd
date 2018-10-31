@@ -129,40 +129,40 @@ $Revision: 27947 $
                                                         <xsd:attribute name="uncertainty" type="xsd:decimal" use="required"/>
                                                         <xsd:attribute name="precision" type="xsd:decimal" use="optional"/>
                                                         <xsd:attribute name="value" type="xsd:decimal" use="required"/>
-                                                        <xsd:attribute name="number_of_measurements" type="xsd:integer" use="required"/>
+                                                        <xsd:attribute name="number_of_measurements" type="xsd:int" use="required"/>
                                                     </xsd:complexType>
                                                 </xsd:element>
                                                 <xsd:element name="assignment_completeness_well_defined">
                                                     <xsd:complexType>
-                                                        <xsd:attribute name="number_of_assigned_shifts" type="xsd:integer" use="required"/>
-                                                        <xsd:attribute name="number_of_unassigned_shifts" type="xsd:integer" use="required"/>
-                                                        <xsd:attribute name="number_of_shifts" type="xsd:integer" use="required"/>
+                                                        <xsd:attribute name="number_of_assigned_shifts" type="xsd:int" use="required"/>
+                                                        <xsd:attribute name="number_of_unassigned_shifts" type="xsd:int" use="required"/>
+                                                        <xsd:attribute name="number_of_shifts" type="xsd:int" use="required"/>
                                                         <xsd:attribute name="type" type="xsd:string" use="required"/>
                                                         <xsd:attribute name="element" type="xsd:string" use="optional"/>
                                                     </xsd:complexType>
                                                 </xsd:element>
                                                 <xsd:element name="assignment_completeness_full_length">
                                                     <xsd:complexType>
-                                                        <xsd:attribute name="number_of_assigned_shifts" type="xsd:integer" use="required"/>
-                                                        <xsd:attribute name="number_of_unassigned_shifts" type="xsd:integer" use="required"/>
-                                                        <xsd:attribute name="number_of_shifts" type="xsd:integer" use="required"/>
+                                                        <xsd:attribute name="number_of_assigned_shifts" type="xsd:int" use="required"/>
+                                                        <xsd:attribute name="number_of_unassigned_shifts" type="xsd:int" use="required"/>
+                                                        <xsd:attribute name="number_of_shifts" type="xsd:int" use="required"/>
                                                         <xsd:attribute name="type" type="xsd:string" use="required"/>
                                                         <xsd:attribute name="element" type="xsd:string" use="optional"/>
                                                     </xsd:complexType>
                                                 </xsd:element>
                                             </xsd:choice>
                                         </xsd:sequence>
-                                        <xsd:attribute name="file_id" type="xsd:integer" use="required"/>
+                                        <xsd:attribute name="file_id" type="xsd:int" use="required"/>
                                         <xsd:attribute name="file_name" type="xsd:string" use="required"/>
                                         <xsd:attribute name="block_name" type="xsd:string" use="required"/>
                                         <xsd:attribute name="list_id" type="xsd:string" use="required"/>
                                         <xsd:attribute name="type" type="xsd:string" use="required"/>
-                                        <xsd:attribute name="number_of_errors_while_mapping" type="xsd:integer" use="required"/>
-                                        <xsd:attribute name="number_of_warnings_while_mapping" type="xsd:integer" use="required"/>
-                                        <xsd:attribute name="number_of_mapped_shifts" type="xsd:integer" use="required"/>
-                                        <xsd:attribute name="number_of_parsed_shifts" type="xsd:integer" use="required"/>
-                                        <xsd:attribute name="total_number_of_shifts" type="xsd:integer" use="required"/>
-                                        <xsd:attribute name="number_of_unparsed_shifts" type="xsd:integer" use="required"/>
+                                        <xsd:attribute name="number_of_errors_while_mapping" type="xsd:int" use="required"/>
+                                        <xsd:attribute name="number_of_warnings_while_mapping" type="xsd:int" use="required"/>
+                                        <xsd:attribute name="number_of_mapped_shifts" type="xsd:int" use="required"/>
+                                        <xsd:attribute name="number_of_parsed_shifts" type="xsd:int" use="required"/>
+                                        <xsd:attribute name="total_number_of_shifts" type="xsd:int" use="required"/>
+                                        <xsd:attribute name="number_of_unparsed_shifts" type="xsd:int" use="required"/>
                                     </xsd:complexType>
                                 </xsd:element>
                             </xsd:choice>
@@ -189,7 +189,7 @@ $Revision: 27947 $
                         <!-- -->
                         <xsd:attribute name="DCC_refinement_program" type="xsd:string" use="optional"/>
                         <!-- 20 chars -->
-                        <xsd:attribute name="num-free-reflections" type="xsd:integer" use="optional"/>
+                        <xsd:attribute name="num-free-reflections" type="xsd:int" use="optional"/>
                         <!-- -->
                         <xsd:attribute name="percent-free-reflections" type="xsd:decimal" use="optional"/>
                         <!-- -->
@@ -275,9 +275,9 @@ $Revision: 27947 $
                         <!-- -->
                         <xsd:attribute name="relative-percentile-chemical_shift_completeness" type="xsd:decimal" use="optional"/>
                         <!-- -->
-                        <xsd:attribute name="numPDBids-absolute-percentile-percent-rota-outliers" type="xsd:integer" use="optional"/>
+                        <xsd:attribute name="numPDBids-absolute-percentile-percent-rota-outliers" type="xsd:int" use="optional"/>
                         <!-- -->
-                        <xsd:attribute name="numPDBids-relative-percentile-percent-rota-outliers" type="xsd:integer" use="optional"/>
+                        <xsd:attribute name="numPDBids-relative-percentile-percent-rota-outliers" type="xsd:int" use="optional"/>
                         <!-- -->
                         <xsd:attribute name="low-resol-relative-percentile-percent-calpha-angle-outliers" type="xsd:decimal" use="optional"/>
                         <!-- -->
@@ -287,49 +287,49 @@ $Revision: 27947 $
                         <!-- -->
                         <xsd:attribute name="high-resol-relative-percentile-percent-rota-outliers" type="xsd:decimal" use="optional"/>
                         <!-- -->
-                        <xsd:attribute name="numPDBids-absolute-percentile-clashscore" type="xsd:integer" use="optional"/>
+                        <xsd:attribute name="numPDBids-absolute-percentile-clashscore" type="xsd:int" use="optional"/>
                         <!-- -->
-                        <xsd:attribute name="numPDBids-relative-percentile-clashscore" type="xsd:integer" use="optional"/>
+                        <xsd:attribute name="numPDBids-relative-percentile-clashscore" type="xsd:int" use="optional"/>
                         <!-- -->
                         <xsd:attribute name="low-resol-relative-percentile-clashscore" type="xsd:decimal" use="optional"/>
                         <!-- -->
                         <xsd:attribute name="high-resol-relative-percentile-clashscore" type="xsd:decimal" use="optional"/>
                         <!-- -->
-                        <xsd:attribute name="numPDBids-absolute-percentile-DCC_Rfree" type="xsd:integer" use="optional"/>
+                        <xsd:attribute name="numPDBids-absolute-percentile-DCC_Rfree" type="xsd:int" use="optional"/>
                         <!-- -->
-                        <xsd:attribute name="numPDBids-relative-percentile-DCC_Rfree" type="xsd:integer" use="optional"/>
+                        <xsd:attribute name="numPDBids-relative-percentile-DCC_Rfree" type="xsd:int" use="optional"/>
                         <!-- -->
                         <xsd:attribute name="low-resol-relative-percentile-DCC_Rfree" type="xsd:decimal" use="optional"/>
                         <!-- -->
                         <xsd:attribute name="high-resol-relative-percentile-DCC_Rfree" type="xsd:decimal" use="optional"/>
                         <!-- -->
-                        <xsd:attribute name="numPDBids-absolute-percentile-percent-RSRZ-outliers" type="xsd:integer" use="optional"/>
+                        <xsd:attribute name="numPDBids-absolute-percentile-percent-RSRZ-outliers" type="xsd:int" use="optional"/>
                         <!-- -->
-                        <xsd:attribute name="numPDBids-relative-percentile-percent-RSRZ-outliers" type="xsd:integer" use="optional"/>
+                        <xsd:attribute name="numPDBids-relative-percentile-percent-RSRZ-outliers" type="xsd:int" use="optional"/>
                         <!-- -->
                         <xsd:attribute name="low-resol-relative-percentile-percent-RSRZ-outliers" type="xsd:decimal" use="optional"/>
                         <!-- -->
                         <xsd:attribute name="high-resol-relative-percentile-percent-RSRZ-outliers" type="xsd:decimal" use="optional"/>
                         <!-- -->
-                        <xsd:attribute name="numPDBids-absolute-percentile-percent-rama-outliers" type="xsd:integer" use="optional"/>
+                        <xsd:attribute name="numPDBids-absolute-percentile-percent-rama-outliers" type="xsd:int" use="optional"/>
                         <!-- -->
-                        <xsd:attribute name="numPDBids-relative-percentile-percent-rama-outliers" type="xsd:integer" use="optional"/>
+                        <xsd:attribute name="numPDBids-relative-percentile-percent-rama-outliers" type="xsd:int" use="optional"/>
                         <!-- -->
                         <xsd:attribute name="low-resol-relative-percentile-percent-rama-outliers" type="xsd:decimal" use="optional"/>
                         <!-- -->
                         <xsd:attribute name="high-resol-relative-percentile-percent-rama-outliers" type="xsd:decimal" use="optional"/>
                         <!-- -->
-                        <xsd:attribute name="numPDBids-absolute-percentile-RNAsuiteness" type="xsd:integer" use="optional"/>
+                        <xsd:attribute name="numPDBids-absolute-percentile-RNAsuiteness" type="xsd:int" use="optional"/>
                         <!-- -->
-                        <xsd:attribute name="numPDBids-relative-percentile-RNAsuiteness" type="xsd:integer" use="optional"/>
+                        <xsd:attribute name="numPDBids-relative-percentile-RNAsuiteness" type="xsd:int" use="optional"/>
                         <!-- -->
-                        <xsd:attribute name="numPDBids-absolute-percentile-percent-calpha-angle-outliers" type="xsd:integer" use="optional"/>
+                        <xsd:attribute name="numPDBids-absolute-percentile-percent-calpha-angle-outliers" type="xsd:int" use="optional"/>
                         <!-- -->
-                        <xsd:attribute name="numPDBids-relative-percentile-percent-calpha-angle-outliers" type="xsd:integer" use="optional"/>
+                        <xsd:attribute name="numPDBids-relative-percentile-percent-calpha-angle-outliers" type="xsd:int" use="optional"/>
                         <!-- -->
-                        <xsd:attribute name="numPDBids-absolute-percentile-chemical_shift_completeness" type="xsd:integer" use="optional"/>
+                        <xsd:attribute name="numPDBids-absolute-percentile-chemical_shift_completeness" type="xsd:int" use="optional"/>
                         <!-- -->
-                        <xsd:attribute name="numPDBids-relative-percentile-chemical_shift_completeness" type="xsd:integer" use="optional"/>
+                        <xsd:attribute name="numPDBids-relative-percentile-chemical_shift_completeness" type="xsd:int" use="optional"/>
                         <!-- -->
                         <xsd:attribute name="low-resol-relative-percentile-RNAsuiteness" type="xsd:decimal" use="optional"/>
                         <!-- -->
@@ -364,19 +364,19 @@ $Revision: 27947 $
                         <xsd:attribute name="percent-calpha-angle-outliers-full-length" type="xsd:decimal" use="optional"/>
                         <xsd:attribute name="angles_rmsz" type="xsd:decimal" use="optional"/>
                         <xsd:attribute name="bonds_rmsz" type="xsd:decimal" use="optional"/>
-                        <xsd:attribute name="num_bonds_rmsz" type="xsd:integer" use="optional"/>
-                        <xsd:attribute name="num_angles_rmsz" type="xsd:integer" use="optional"/>
+                        <xsd:attribute name="num_bonds_rmsz" type="xsd:int" use="optional"/>
+                        <xsd:attribute name="num_angles_rmsz" type="xsd:int" use="optional"/>
                         <xsd:attribute name="nmr_models_consistency_flag" type="xsd:string" use="optional"/>
                         <xsd:attribute name="cyrange_error" type="xsd:string" use="optional"/>
                         <xsd:attribute name="cyrange_version" type="xsd:string" use="optional"/>
                         <xsd:attribute name="nmrclust_error" type="xsd:string" use="optional"/>
                         <xsd:attribute name="nmrclust_version" type="xsd:string" use="optional"/>
-                        <xsd:attribute name="nmrclust_representative_model" type="xsd:integer" use="optional"/>
-                        <xsd:attribute name="medoid_model" type="xsd:integer" use="optional"/>
-                        <xsd:attribute name="nmrclust_number_of_outliers" type="xsd:integer" use="optional"/>
-                        <xsd:attribute name="nmrclust_number_of_models" type="xsd:integer" use="optional"/>
-                        <xsd:attribute name="nmrclust_number_of_clusters" type="xsd:integer" use="optional"/>
-                        <xsd:attribute name="cyrange_number_of_domains" type="xsd:integer" use="optional"/>
+                        <xsd:attribute name="nmrclust_representative_model" type="xsd:int" use="optional"/>
+                        <xsd:attribute name="medoid_model" type="xsd:int" use="optional"/>
+                        <xsd:attribute name="nmrclust_number_of_outliers" type="xsd:int" use="optional"/>
+                        <xsd:attribute name="nmrclust_number_of_models" type="xsd:int" use="optional"/>
+                        <xsd:attribute name="nmrclust_number_of_clusters" type="xsd:int" use="optional"/>
+                        <xsd:attribute name="cyrange_number_of_domains" type="xsd:int" use="optional"/>
                         <xsd:attribute name="chemical_shift_completeness" type="xsd:decimal" use="optional"/>
                         <xsd:attribute name="chemical_shift_completeness_full_length" type="xsd:decimal" use="optional"/>
                         <xsd:attribute name="panav_version" type="xsd:string" use="optional"/>
@@ -389,7 +389,7 @@ $Revision: 27947 $
                 <xsd:choice minOccurs="0" maxOccurs="unbounded">
                     <xsd:element name="Model">
                         <xsd:complexType>
-                            <xsd:attribute name="model" type="xsd:integer" use="optional"/>
+                            <xsd:attribute name="model" type="xsd:int" use="optional"/>
                             <xsd:attribute name="nmrclust_cluster_id" type="xsd:string" use="optional"/>
                             <xsd:attribute name="nmrclust_representative" type="xsd:string" use="optional"/>
                         </xsd:complexType>
@@ -397,12 +397,12 @@ $Revision: 27947 $
                     <!-- Model ends -->
                     <xsd:element name="cyrange_domain">
                         <xsd:complexType>
-                            <xsd:attribute name="domain" type="xsd:integer" use="required"/>
-                            <xsd:attribute name="number_of_gaps" type="xsd:integer" use="required"/>
-                            <xsd:attribute name="number_of_residues" type="xsd:integer" use="required"/>
+                            <xsd:attribute name="domain" type="xsd:int" use="required"/>
+                            <xsd:attribute name="number_of_gaps" type="xsd:int" use="required"/>
+                            <xsd:attribute name="number_of_residues" type="xsd:int" use="required"/>
                             <xsd:attribute name="percentage_of_core" type="xsd:decimal" use="required"/>
                             <xsd:attribute name="rmsd" type="xsd:decimal" use="required"/>
-                            <xsd:attribute name="medoid_model" type="xsd:integer" use="required"/>
+                            <xsd:attribute name="medoid_model" type="xsd:int" use="required"/>
                             <xsd:attribute name="medoid_rmsd" type="xsd:decimal" use="required"/>
                             <xsd:attribute name="residue_string" type="xsd:string" use="optional"/>
                         </xsd:complexType>
@@ -510,7 +510,7 @@ $Revision: 27947 $
                                             <!-- 5 chars -->
                                             <xsd:attribute name="symop" type="xsd:string" use="required"/>
                                             <!-- 15 chars -->
-                                            <xsd:attribute name="scid" type="xsd:integer" use="required"/>
+                                            <xsd:attribute name="scid" type="xsd:int" use="required"/>
                                             <xsd:attribute name="clashmag" type="xsd:decimal" use="required"/>
                                             <xsd:attribute name="dist" type="xsd:decimal" use="required"/>
                                         </xsd:complexType>
@@ -519,15 +519,15 @@ $Revision: 27947 $
                                         <xsd:complexType>
                                             <xsd:attribute name="atom" type="xsd:string" use="required"/>
                                             <!-- 5 chars -->
-                                            <xsd:attribute name="cid" type="xsd:integer" use="required"/>
+                                            <xsd:attribute name="cid" type="xsd:int" use="required"/>
                                             <xsd:attribute name="clashmag" type="xsd:decimal" use="required"/>
                                             <xsd:attribute name="dist" type="xsd:decimal" use="required"/>
                                         </xsd:complexType>
                                     </xsd:element>
                                 </xsd:choice>
                             </xsd:sequence>
-                            <xsd:attribute name="ligand_num_clashes" type="xsd:integer" use="optional"/>
-                            <xsd:attribute name="ligand_num_symm_clashes" type="xsd:integer" use="optional"/>
+                            <xsd:attribute name="ligand_num_clashes" type="xsd:int" use="optional"/>
+                            <xsd:attribute name="ligand_num_symm_clashes" type="xsd:int" use="optional"/>
                             <xsd:attribute name="ligand_clashes_outlier" type="xsd:string" use="optional"/>
                             <!-- 5 chars -->
                             <xsd:attribute name="ligand_chirality_outlier" type="xsd:string" use="optional"/>
@@ -551,9 +551,9 @@ $Revision: 27947 $
                             <!-- 5 chars -->
                             <xsd:attribute name="seq" type="xsd:string" use="required"/>
                             <!-- 10 chars -->
-                            <xsd:attribute name="NatomsEDS" type="xsd:integer" use="optional"/>
+                            <xsd:attribute name="NatomsEDS" type="xsd:int" use="optional"/>
                             <!-- -->
-                            <xsd:attribute name="cyrange_domain_id" type="xsd:integer" use="optional"/>
+                            <xsd:attribute name="cyrange_domain_id" type="xsd:int" use="optional"/>
                             <!-- -->
                             <xsd:attribute name="validate" type="xsd:string" use="optional"/>
                             <!-- -->
@@ -573,7 +573,7 @@ $Revision: 27947 $
                             <!-- -->
                             <xsd:attribute name="ligRSRnbrStdev" type="xsd:decimal" use="optional"/>
                             <!-- -->
-                            <xsd:attribute name="ligRSRnumnbrs" type="xsd:integer" use="optional"/>
+                            <xsd:attribute name="ligRSRnumnbrs" type="xsd:int" use="optional"/>
                             <!-- -->
                             <xsd:attribute name="ligRSRZ" type="xsd:decimal" use="optional"/>
                             <!-- -->
@@ -606,8 +606,8 @@ $Revision: 27947 $
                             <xsd:attribute name="trace_atom_distance_error" type="xsd:decimal" use="optional"/>
                             <xsd:attribute name="mogul_angles_rmsz" type="xsd:decimal" use="optional"/>
                             <xsd:attribute name="mogul_bonds_rmsz" type="xsd:decimal" use="optional"/>
-                            <xsd:attribute name="mogul_rmsz_numangles" type="xsd:integer" use="optional"/>
-                            <xsd:attribute name="mogul_rmsz_numbonds" type="xsd:integer" use="optional"/>
+                            <xsd:attribute name="mogul_rmsz_numangles" type="xsd:int" use="optional"/>
+                            <xsd:attribute name="mogul_rmsz_numbonds" type="xsd:int" use="optional"/>
                             <xsd:attribute name="ligand_geometry_outlier" type="YesString" use="optional"/>
                             <xsd:attribute name="ligand_density_outlier" type="YesString" use="optional"/>
                         </xsd:complexType>
@@ -624,8 +624,8 @@ $Revision: 27947 $
                         <xsd:attribute name="relative_sidechain_percentile" type="xsd:decimal" use="optional"/>
                         <xsd:attribute name="angles_rmsz" type="xsd:decimal" use="optional"/>
                         <xsd:attribute name="bonds_rmsz" type="xsd:decimal" use="optional"/>
-                        <xsd:attribute name="num_bonds_rmsz" type="xsd:integer" use="optional"/>
-                        <xsd:attribute name="num_angles_rmsz" type="xsd:integer" use="optional"/>
+                        <xsd:attribute name="num_bonds_rmsz" type="xsd:int" use="optional"/>
+                        <xsd:attribute name="num_angles_rmsz" type="xsd:int" use="optional"/>
                         <xsd:attribute name="chain" type="xsd:string" use="required"/>
                         <!-- 5 chars -->
                         <xsd:attribute name="model" type="xsd:string" use="required"/>
