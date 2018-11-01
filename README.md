@@ -71,7 +71,7 @@ File path | Document
 	- wwPDB/RDF-validation-alt (light version):<br />
 	 `% rsync -av --delete rsync://bmrbpub.pdbj.org/wwpdb-rdf-valid-alt .`
 
-- [PDBML-validation-alt PostgreSQL 10 dump file](https://bmrbpub.pdbj.org/resources.html)
+- [PDBML-validation-alt PostgreSQL dump file](https://bmrbpub.pdbj.org/resources.html)
 
 - [SPARQL endpoint for wwPDB/RDF-validation-alt](https://bmrbpub.pdbj.org/examples.html)
 
