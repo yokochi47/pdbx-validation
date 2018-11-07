@@ -56324,12 +56324,12 @@ save__diffrn.pdbx_serial_crystal_experiment
     _item_description.description
 ;              Y/N if using serial crystallography experiment in which multiple crystals contribute to each diffraction frame in the experiment.
 ;
-    _item.name            '_diffrn.pdbx_serial_crystal_experiment'
-    _item.category_id     diffrn
-    _item.mandatory_code  no
-    _item_type.code       text
+    _item.name                  '_diffrn.pdbx_serial_crystal_experiment'
+    _item.category_id             diffrn
+    _item.mandatory_code          no
+    _item_type.code               text
     loop_
-    _item_examples.case   Y   N
+    _item_examples.case           Y   N
     loop_
     _pdbx_item_enumeration.name
     _pdbx_item_enumeration.value
@@ -59971,7 +59971,7 @@ save__pdbx_nmr_assigned_chem_shift_list.data_file_name
                chemical shift data.
 ;
     _item.name                  '_pdbx_nmr_assigned_chem_shift_list.data_file_name'
-    _item.category_id            'pdbx_nmr_assigned_chem_shift_list'
+    _item.category_id             pdbx_nmr_assigned_chem_shift_list
     _item.mandatory_code          yes
     _item_type.code               line
 #
