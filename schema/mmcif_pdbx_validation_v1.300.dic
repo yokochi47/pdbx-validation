@@ -1,7 +1,7 @@
 ###########################################################################
 #
 # File:  mmcif_pdbx_validation.dic
-# Date:  Tue Oct 30 09:27:22 JST 2018
+# Date:  Wed Nov  7 13:48:29 JST 2018
 #
 # Created from files noted:
 #        mmcif_pdbx_v50.dic   - PDB Exchange Data Dictionary (V5.300)
@@ -310,14 +310,15 @@ data_mmcif_pdbx_validation.dic
         _pdbx_serial_crystallography_sample_delivery_fixed_target
         _pdbx_serial_crystallography_data_reduction
 ;
-  1.300   2018-10-30
+  1.300   2018-11-07
 ;
 >     + Correct examples for _pdbx_related_exp_data_set
 >     + _diffrn_detector.type correct type for 'BRUKER PHOTON 100'
 >     + Extend audit content types to support 'Chemical component'
 >     + Add cisTEM and Topaz to em_software.name
 >     + Update _pdbx_audit_support.funding_organization enumeration
-      + Retrieve '_pdbx_audit_revision_category', 'pdbx_audit_revision_item' categories.
+      + Retrieve '_pdbx_audit_revision_category', 'pdbx_audit_revision_item' categories
+      + Retrieve '_diffrn_detector.pdbx_frequency'
 ;
 
 #
@@ -24023,6 +24024,18 @@ save__diffrn_detector.pdbx_collection_date
     _pdbx_item_type.name        "_diffrn_detector.pdbx_collection_date"
     _pdbx_item_type.code          date_dep
     #
+save_
+
+save__diffrn_detector.pdbx_frequency
+    _item_description.description
+;              The operating frequency of the detector (Hz) used in data collection.
+;
+    _item.name                  '_diffrn_detector.pdbx_frequency'
+    _item.category_id             diffrn_detector
+    _item.mandatory_code          no
+    _item_type.code               float
+    _item_range.maximum           .
+    _item_range.minimum           0.0
 save_
 
 #####################################
