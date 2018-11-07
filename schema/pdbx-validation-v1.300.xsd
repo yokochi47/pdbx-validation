@@ -511,6 +511,22 @@ data set.
                         </xsd:documentation>
                      </xsd:annotation>
                   </xsd:element>
+                  <xsd:element name="pdbx_frequency"
+                               minOccurs="0"
+                               maxOccurs="1"
+                               nillable="true">
+                     <xsd:annotation>
+                        <xsd:documentation xml:lang="en"
+                                           source="http://mmcif.wwpdb.org/dictionaries/mmcif_pdbx_v50.dic/Items/_diffrn_detector.pdbx_frequency.html">
+The operating frequency of the detector (Hz) used in data collection.
+                        </xsd:documentation>
+                     </xsd:annotation>
+                     <xsd:simpleType>
+                        <xsd:restriction base="xsd:decimal">
+                           <xsd:minExclusive value="0.0"/>
+                        </xsd:restriction>
+                     </xsd:simpleType>
+                  </xsd:element>
                   <xsd:element name="type"
                                minOccurs="0"
                                maxOccurs="1"

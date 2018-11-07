@@ -18,7 +18,7 @@
 --  map decimal numbers to: big decimal
 --
 -- Statistics of schema:
---  Generated 446 tables (3348 fields), 0 attr groups, 0 model groups in total
+--  Generated 446 tables (3349 fields), 0 attr groups, 0 model groups in total
 --   Namespaces:
 --    http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), http://www.w3.org/2001/XMLSchema (xsd)
 --   Schema locations:
@@ -30,7 +30,7 @@
 --   User keys:
 --    401 document keys, 0 serial keys, 0 xpath keys
 --   Contents:
---    616 attributes (40 in-place document keys), 2284 elements (5 in-place document keys), 208 simple contents (0 as attribute, 0 as conditional attribute)
+--    616 attributes (40 in-place document keys), 2285 elements (5 in-place document keys), 208 simple contents (0 as attribute, 0 as conditional attribute)
 --   Wild cards:
 --    0 any elements, 0 any attributes
 --   Constraints:
@@ -1282,6 +1282,7 @@ CREATE TABLE diffrn_detector (
 	dtime DECIMAL CHECK ( dtime >= 0 ) ,
 	pdbx_collection_date TEXT ,
 	pdbx_frames_total INTEGER ,
+	pdbx_frequency DECIMAL CHECK ( pdbx_frequency > 0.0 ) ,
 	type TEXT ,
 -- ATTRIBUTE
 	diffrn_id TEXT NOT NULL
