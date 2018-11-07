@@ -17,7 +17,7 @@ File path | Document
 [schema/mmcif_pdbx_validation_v1.dic](https://github.com/yokochi47/pdbx-validation/blob/master/schema/mmcif_pdbx_validation_v1.300.dic) | wwPDB Validation Information Dictionary (v1.300)
 [schema/pdbx-validation-v1.xsd](https://github.com/yokochi47/pdbx-validation/blob/master/schema/pdbx-validation-v1.300.xsd) | PDBML-validation Schema (v1.300)
 [schema/pdbx-validation-v1.owl](https://github.com/yokochi47/pdbx-validation/blob/master/schema/pdbx-validation-v1.300.owl) | wwPDB/OWL-validation (v1.300)
-[schema/mmcif_ddl.dic](https://github.com/yokochi47/pdbx-validation/blob/master/schema/mmcif_ddl_v2.2.0.dic) | extended mmCIF DDL Core Dictionary (dubbed as v2.2.0)
+[schema/mmcif_ddl.dic](https://github.com/yokochi47/pdbx-validation/blob/master/schema/mmcif_ddl_v2.2.1.dic) | extended mmCIF DDL Core Dictionary (dubbed as v2.2.1)
 [resource/mmcif_pdbx_v50.dic](http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic) | PDBx/mmCIF Dictionary (v5.300)
 [resource/pdbx-v50.xsd](http://mmcif.wwpdb.org/schema/pdbx-v50.xsd) | PDBML Schema (v5.300)
 [resource/pdbx-v50.owl](https://rdf.wwpdb.org/schema/pdbx-v50.owl) | PDBx ontology, ontology for wwPDB/RDF (v5.300)
@@ -92,6 +92,7 @@ File path | Document
 	- Retrieve '_pdbx_audit_revision_category', 'pdbx_audit_revision_item' categories.
 	- Retrieve '_diffrn_detector.pdbx_frequency'.
 	- Add XML Schame validation script 'run_valid.sh'.
+	- Update extended mmCIF DDL Core Dictionary from v2.2.0 to v2.2.1.
 
 - **Sep 5, 2018**: Release v1.3.7
 	- Update wwPDB Validation Information Dictionary from v1.298 to 1.299.
