@@ -7,6 +7,10 @@ if [ ! `which DictToSdb` ] || [ ! `which Dict2XMLSchema` ] || [ ! `which Dict2XM
 
 fi
 
+which DictToSdb
+which Dict2XMLSchema
+which Dict2XMLSchema
+
 DDL_FILE=mmcif_ddl.dic
 DIC_FILE=mmcif_pdbx_validation.dic
 
