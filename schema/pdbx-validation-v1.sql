@@ -38,8 +38,8 @@
 --
 
 --
--- PDBML-validation Schema v1.300
--- PDBXML-validation Schema translated from wwPDB Validation Information Dictionary v1.300, which is backward compatible with the PDBx/mmCIF Dictionary v5.300: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
+-- PDBML-validation Schema v1.301
+-- PDBXML-validation Schema translated from wwPDB Validation Information Dictionary v1.301, which is backward compatible with the PDBx/mmCIF Dictionary v5.301: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
 -- URI-reference = http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd
 --
 
@@ -637,7 +637,7 @@ CREATE TABLE em_entity_assembly (
 	entity_id_list TEXT ,
 	name TEXT ,
 	oligomeric_details TEXT ,
-	parent_id TEXT ,
+	parent_id INTEGER CHECK ( parent_id >= 0 ) ,
 	source ENUM_em_entity_assembly_source ,
 	synonym TEXT ,
 	type TEXT ,
@@ -7726,7 +7726,7 @@ CREATE TABLE refine (
 	"ls_abs_structure_Rogers" DECIMAL CHECK ( "ls_abs_structure_Rogers" >= -1 AND "ls_abs_structure_Rogers" <= 1 ) ,
 	"ls_abs_structure_Rogers_esd" DECIMAL ,
 	ls_abs_structure_details TEXT ,
-	ls_d_res_high DECIMAL CHECK ( ls_d_res_high >= 0 ) ,
+	ls_d_res_high DECIMAL CHECK ( ls_d_res_high > 0.0 ) ,
 	ls_d_res_low DECIMAL CHECK ( ls_d_res_low >= 0 ) ,
 	ls_extinction_coef DECIMAL ,
 	ls_extinction_coef_esd DECIMAL ,

@@ -38,8 +38,8 @@
 --
 
 --
--- PDBML Schema v5.300
--- PDBML Schema translated from the PDBx/mmCIF Dictionary v5.300: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
+-- PDBML Schema v5.301
+-- PDBML Schema translated from the PDBx/mmCIF Dictionary v5.301: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
 -- URI-reference = http://pdbml.pdb.org/schema/pdbx-v50.xsd
 --
 
@@ -1226,7 +1226,7 @@ CREATE TABLE em_entity_assembly (
 	name TEXT ,
 	number_of_copies INTEGER ,
 	oligomeric_details TEXT ,
-	parent_id TEXT ,
+	parent_id INTEGER CHECK ( parent_id >= 0 ) ,
 	source ENUM_em_entity_assembly_source ,
 	synonym TEXT ,
 	type TEXT ,
@@ -13156,6 +13156,8 @@ CREATE TABLE pdbx_post_process_status (
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
+DROP TYPE IF EXISTS ENUM_pdbx_prd_audit_processing_site CASCADE;
+CREATE TYPE ENUM_pdbx_prd_audit_processing_site AS ENUM ( 'RCSB', 'PDBE', 'PDBJ', 'BMRB' );
 DROP TYPE IF EXISTS ENUM_pdbx_prd_audit_action_type CASCADE;
 CREATE TYPE ENUM_pdbx_prd_audit_action_type AS ENUM ( 'Initial release', 'Create molecule', 'Modify type', 'Modify class', 'Modify molecule name', 'Modify representation', 'Modify sequence', 'Modify linkage', 'Modify taxonomy organism', 'Modify audit', 'Other modification', 'Obsolete molecule' );
 CREATE TABLE pdbx_prd_audit (
@@ -13163,7 +13165,7 @@ CREATE TABLE pdbx_prd_audit (
 	document_id TEXT ,
 	annotator TEXT ,
 	details TEXT ,
-	processing_site TEXT ,
+	processing_site ENUM_pdbx_prd_audit_processing_site ,
 -- ATTRIBUTE
 	action_type ENUM_pdbx_prd_audit_action_type NOT NULL ,
 -- ATTRIBUTE
@@ -17449,7 +17451,7 @@ CREATE TABLE refine (
 	"ls_abs_structure_Rogers" DECIMAL CHECK ( "ls_abs_structure_Rogers" >= -1 AND "ls_abs_structure_Rogers" <= 1 ) ,
 	"ls_abs_structure_Rogers_esd" DECIMAL ,
 	ls_abs_structure_details TEXT ,
-	ls_d_res_high DECIMAL CHECK ( ls_d_res_high >= 0 ) ,
+	ls_d_res_high DECIMAL CHECK ( ls_d_res_high > 0.0 ) ,
 	ls_d_res_low DECIMAL CHECK ( ls_d_res_low >= 0 ) ,
 	ls_extinction_coef DECIMAL ,
 	ls_extinction_coef_esd DECIMAL ,
