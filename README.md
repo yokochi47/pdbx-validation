@@ -86,8 +86,9 @@ File path | Document
 
 ## Release notes
 
-- **Nov 9, 2017**: Release v1.3.9
+- **Nov 12, 2017**: Release v1.3.9
 	- Update wwPDB Validation Information Dictionary from v1.300 to 1.301.
+	- Update units for _em_imaging.c2_aperture_diameter from millimetres to micrometres.
 
 - **Nov 8, 2018**: Release v1.3.8
 	- Update wwPDB Validation Information Dictionary from v1.299 to 1.300.

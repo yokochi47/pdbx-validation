@@ -6252,7 +6252,7 @@ Astigmatism
                      <xsd:annotation>
                         <xsd:documentation xml:lang="en"
                                            source="http://mmcif.wwpdb.org/dictionaries/mmcif_pdbx_v50.dic/Items/_em_imaging.c2_aperture_diameter.html">
-C2 lens aperture diameter, in mm
+C2 lens aperture diameter, in micrometres
                         </xsd:documentation>
                      </xsd:annotation>
                      <xsd:simpleType>
