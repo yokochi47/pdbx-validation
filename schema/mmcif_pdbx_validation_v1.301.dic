@@ -1,7 +1,7 @@
 ###########################################################################
 #
 # File:  mmcif_pdbx_validation.dic
-# Date:  Fri Nov  9 10:35:30 JST 2018
+# Date:  Mon Nov 12 09:35:42 JST 2018
 #
 # Created from files noted:
 #        mmcif_pdbx_v50.dic   - PDB Exchange Data Dictionary (V5.301)
@@ -320,7 +320,7 @@ data_mmcif_pdbx_validation.dic
       + Retrieve '_pdbx_audit_revision_category', 'pdbx_audit_revision_item' categories
       + Retrieve '_diffrn_detector.pdbx_frequency'
 ;
-  1.301   2018-11-09
+  1.301   2018-12-09
 ;
 >     + Add Buccaneer to _em_software.name enumeration
 >     + Add enumeration to _pdbx_prd_audit.processing_site # not mapped
@@ -331,6 +331,7 @@ data_mmcif_pdbx_validation.dic
 >     + Remove use of non_negative_int as regular expression incorrect
 >     + Add citation_doi and exp_data_doi for use in citation and pdbx_related_exp_data_set # not mapped
       + Update item range of '_em_entity_assembly.parent_id' allows non-negative int.
+      + Update units for _em_imaging.c2_aperture_diameter from millimetres to micrometres.
 ;
 
 #
@@ -49217,13 +49218,13 @@ save_
 save__em_imaging.c2_aperture_diameter
 #new V5
     _item_description.description
-;              C2 lens aperture diameter, in mm
+;              C2 lens aperture diameter, in micrometres
 ;
     _item.name                  '_em_imaging.c2_aperture_diameter'
     _item.category_id             em_imaging
     _item.mandatory_code          no
     _item_type.code               float
-    _item_units.code              millimetres
+    _item_units.code              micrometres
     loop_
      _item_range.minimum
      _item_range.maximum
