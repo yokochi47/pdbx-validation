@@ -18,7 +18,7 @@
 --  map decimal numbers to: big decimal
 --
 -- Statistics of schema:
---  Generated 898 tables (7760 fields), 0 attr groups, 0 model groups in total
+--  Generated 898 tables (7338 fields), 0 attr groups, 0 model groups in total
 --   Namespaces:
 --    http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), http://www.w3.org/2001/XMLSchema (xsd)
 --   Schema locations:
@@ -30,7 +30,7 @@
 --   User keys:
 --    898 document keys, 0 serial keys, 0 xpath keys
 --   Contents:
---    1352 attributes (0 in-place document keys), 4743 elements (0 in-place document keys), 345 simple contents (0 as attribute, 0 as conditional attribute)
+--    1352 attributes (0 in-place document keys), 4743 elements (0 in-place document keys), 345 simple contents (0 in-place document keys, 0 as attribute, 0 as conditional attribute)
 --   Wild cards:
 --    0 any elements, 0 any attributes
 --   Constraints:

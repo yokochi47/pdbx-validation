@@ -18,7 +18,7 @@
 --  map decimal numbers to: big decimal
 --
 -- Statistics of schema:
---  Generated 25 tables (342 fields), 0 attr groups, 0 model groups in total
+--  Generated 25 tables (274 fields), 0 attr groups, 0 model groups in total
 --   Namespaces:
 --    http://www.w3.org/2001/XMLSchema (xsd)
 --   Schema locations:
@@ -30,7 +30,7 @@
 --   User keys:
 --    25 document keys, 0 serial keys, 0 xpath keys
 --   Contents:
---    249 attributes (0 in-place document keys), 0 elements (0 in-place document keys), 0 simple contents (0 as attribute, 0 as conditional attribute)
+--    249 attributes (0 in-place document keys), 0 elements (0 in-place document keys), 0 simple contents (0 in-place document keys, 0 as attribute, 0 as conditional attribute)
 --   Wild cards:
 --    0 any elements, 0 any attributes
 --   Constraints:
