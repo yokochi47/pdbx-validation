@@ -9,7 +9,7 @@
 --  wild card extension: true
 --  case sensitive name: true
 --  no name collision: true
---  append document key: false
+--  append document key: true (in-place)
 --  append serial key: false
 --  append xpath key: false
 --  retain constraint: false
