@@ -320,7 +320,7 @@ data_mmcif_pdbx_validation.dic
       + Retrieve '_pdbx_audit_revision_category', 'pdbx_audit_revision_item' categories
       + Retrieve '_diffrn_detector.pdbx_frequency'
 ;
-  1.301   2018-12-09
+  1.301   2018-11-09
 ;
 >     + Add Buccaneer to _em_software.name enumeration
 >     + Add enumeration to _pdbx_prd_audit.processing_site # not mapped
