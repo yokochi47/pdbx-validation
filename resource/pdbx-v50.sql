@@ -38,8 +38,8 @@
 --
 
 --
--- PDBML Schema v5.302
--- PDBML Schema translated from the PDBx/mmCIF Dictionary v5.302: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
+-- PDBML Schema v5.303
+-- PDBML Schema translated from the PDBx/mmCIF Dictionary v5.303: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
 -- URI-reference = http://pdbml.pdb.org/schema/pdbx-v50.xsd
 --
 
