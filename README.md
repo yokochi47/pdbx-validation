@@ -101,7 +101,7 @@ File path | Document
 	- Replace all xsd:integer of PDBML Schema and PDBML-validation Schema by xsd:int.
 	- Retrieve '_pdbx_audit_revision_category', 'pdbx_audit_revision_item' categories.
 	- Retrieve '_diffrn_detector.pdbx_frequency'.
-	- Add XML Schame validation script 'run_valid.sh'.
+	- Add XML Schema validation script 'run_valid.sh'.
 	- Update extended mmCIF DDL Core Dictionary from v2.2.0 to v2.2.1.
 	- Add PDBML Schema generation script, 'resource/update_pdbx_xsd.sh'.
 
