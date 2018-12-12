@@ -1,13 +1,13 @@
 ﻿# pdbx-validation
 
-The pdbx-validation is a generation tool for alternative [wwPDB validation reports](https://www.wwpdb.org/validation/validation-reports), which includes [PDBx/mmCIF](http://mmcif.wwpdb.org/) compatible version of validation information (**PDBML-validation**), RDF version of validation information (**wwPDB/RDF-validation**) and a series of ontologies, **wwPDB Validation Information Dictionary**, **PDBML-validation Schema** and **wwPDB/OWL-validation**.
+The pdbx-validation is a generation tool for alternative [wwPDB validation reports](https://www.wwpdb.org/validation/validation-reports), which includes [PDBx/mmCIF](http://mmcif.wwpdb.org/) compatible version of validation report (*mmCIF-validation** and **PDBML-validation**), RDF version of validation report (**wwPDB/RDF-validation**) and a series of ontologies, **wwPDB Validation Information Dictionary**, **PDBML-validation Schema** and **wwPDB/OWL-validation**.
 
 ## Usage
 
-- To generate the wwPDB validation information of some PDB entries,<br />
+- To generate the alternative wwPDB validation report of some PDB entries,<br />
  `./run_test.sh 5b1l 5u9b 5h0s ... `
 
-- To update the wwPDB validation information of the entire PDB entry,<br />
+- To update the alternative wwPDB validation report of the entire PDB entry,<br />
  `./run_all.sh`
 
 - Here is a map of the program.<br />
@@ -30,18 +30,24 @@ File path | Document
 ## Examples of alternative wwPDB validation reports
 
 - PDB ID: [5B1L](https://pdbj.org/mine/summary/5b1l), Exptl. method: X-RAY DIFFRACTION
+	- mmCIF-validation: [5b1l-validation-full.cif](https://github.com/yokochi47/pdbx-validation/blob/master/test/mmcif-validation/5b1l-validation-full.cif)
+	- mmCIF-validation-alt: [5b1l-validation-alt.cif](https://github.com/yokochi47/pdbx-validation/blob/master/test/mmcif-validation-alt/5b1l-validation-alt.cif)
 	- PDBML-validation: [5b1l-validation-full.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/XML-validation/5b1l-validation-full.xml)
 	- PDBML-validation-alt: [5b1l-validation-alt.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/validation-info-alt/5b1l-validation-alt.xml)
 	- wwPDB/RDF-validation: [5b1l-validation.rdf](https://github.com/yokochi47/pdbx-validation/blob/master/test/RDF-validation/5b1l-validation.rdf)
 	- wwPDB/RDF-validation-alt: [5b1l-validation-alt.rdf](https://github.com/yokochi47/pdbx-validation/blob/master/test/RDF-validation-alt/5b1l-validation-alt.rdf)
 
 - PDB ID: [5U9B](https://pdbj.org/mine/summary/5u9b), Exptl. method: SOLUTION NMR
+	- mmCIF-validation: [5u9b-validation-full.cif](https://github.com/yokochi47/pdbx-validation/blob/master/test/mmcif-validation/5u9b-validation-full.cif)
+	- mmCIF-validation-alt: [5u9b-validation-alt.cif](https://github.com/yokochi47/pdbx-validation/blob/master/test/mmcif-validation-alt/5u9b-validation-alt.cif)
 	- PDBML-validation: [5u9b-validation-full.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/XML-validation/5u9b-validation-full.xml)
 	- PDBML-validation-alt: [5u9b-validation-alt.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/validation-info-alt/5u9b-validation-alt.xml)
 	- wwPDB/RDF-validation: [5u9b-validation.rdf](https://github.com/yokochi47/pdbx-validation/blob/master/test/RDF-validation/5u9b-validation.rdf)
 	- wwPDB/RDF-validation-alt: [5u9b-validation-alt.rdf](https://github.com/yokochi47/pdbx-validation/blob/master/test/RDF-validation-alt/5u9b-validation-alt.rdf)
 
 - PDB ID: [5H0S](https://pdbj.org/mine/summary/5h0s), Exptl. method: ELECTRON MICROSCOPY
+	- mmCIF-validation: [5h0s-validation-full.cif](https://github.com/yokochi47/pdbx-validation/blob/master/test/mmcif-validation/5h0s-validation-full.cif)
+	- mmCIF-validation: [5h0s-validation-alt.cif](https://github.com/yokochi47/pdbx-validation/blob/master/test/mmcif-validation-alt/5h0s-validation-alt.cif)
 	- PDBML-validation: [5h0s-validation-full.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/XML-validation/5h0s-validation-full.xml)
 	- PDBML-validation: [5h0s-validation-alt.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/validation-info-alt/5h0s-validation-alt.xml)
 	- wwPDB/RDF-validation: [5h0s-validation.rdf](https://github.com/yokochi47/pdbx-validation/blob/master/test/RDF-validation/5h0s-validation.rdf)
@@ -51,6 +57,9 @@ File path | Document
 
 - Bulk download via HTTP protocol
 
+	- [mmCIF-validation](https://bmrbpub.pdbj.org/archive/mmcif-valid/)
+	- [mmCIF-validation-alt (light version)](https://bmrbpub.pdbj.org/archive/mmcif-valid-alt/)
+
 	- [PDBML-validation](https://bmrbpub.pdbj.org/archive/pdbml-valid/)
 	- [PDBML-validation-alt (light version)](https://bmrbpub.pdbj.org/archive/pdbml-valid-alt/)
 
@@ -58,6 +67,12 @@ File path | Document
 	- [wwPDB/RDF-validation-alt (light version)](https://bmrbpub.pdbj.org/archive/wwpdb-rdf-valid-alt/)
 
 - Bulk download via rsync protocol
+
+	- PDBML-validation:<br />
+	 `% rsync -av --delete rsync://bmrbpub.pdbj.org/mmcif-valid .`
+
+	- PDBML-validation-alt (light version):<br />
+	 `% rsync -av --delete rsync://bmrbpub.pdbj.org/mmcif-valid-alt .`
 
 	- PDBML-validation:<br />
 	 `% rsync -av --delete rsync://bmrbpub.pdbj.org/pdbml-valid .`
@@ -81,10 +96,17 @@ File path | Document
 - [**Apache Maven (mvn)**](https://maven.apache.org), used to install external libraries.
 - [**Git (git)**](https://git-scm.com), used to install external libraries.
 - [**mmCIF Dictionary Suite**](http://mmcif.wwpdb.org/), optionally used to generate XML Schema from the wwPDB Validation Information Dictionary.
+- [**PDBML2CIF**](https://sw-tools.rcsb.org/apps/PDBML2CIF/index.html), optionally, used to generate mmCIF version of wwPDB validation reports.
 - [**PostgreSQL**](https://www.postgresql.org), optionally used to import XML contents to relational database.
 - [**Virtuoso**](https://www.openlinksw.com/wiki/main/Main), oprionally used as SPARQL endpoint of wwPDB/RDF-validation.
 
 ## Release notes
+
+- **Dec 12, 2018**: Release v1.4.0
+	- Add '_pdbx_nmr_chem_shift_annotation.id' and set category key along with '_pdbx_nmr_chem_shift_annotation.list_id'.
+	- Set '_pdbx_nmr_unmapped_chem_shift.id' as category key along with '_pdbx_nmr_unmapped_chem_shift.list_id'.
+	- Set '_pdbx_nmr_unparsed_chem_shift.id' as category key along with '_pdbx_nmr_unparsed_chem_shift.list_id'.
+	- Add support for mmCIF version of wwPDB validation reports using PDBML2CIF command.
 
 - **Dec 4, 2018**: Release v1.3.11
 	- Update wwPDB Validation Information Dictionary from v1.302 to 1.303.
@@ -101,7 +123,7 @@ File path | Document
 	- Replace all xsd:integer of PDBML Schema and PDBML-validation Schema by xsd:int.
 	- Retrieve '_pdbx_audit_revision_category', 'pdbx_audit_revision_item' categories.
 	- Retrieve '_diffrn_detector.pdbx_frequency'.
-	- Add XML Schame validation script 'run_valid.sh'.
+	- Add XML Schema validation script 'run_valid.sh'.
 	- Update extended mmCIF DDL Core Dictionary from v2.2.0 to v2.2.1.
 	- Add PDBML Schema generation script, 'resource/update_pdbx_xsd.sh'.
 

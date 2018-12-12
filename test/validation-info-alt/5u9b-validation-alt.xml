@@ -6,11 +6,839 @@
    <PDBxv:entryCategory>
       <PDBxv:entry id="5U9B"/>
    </PDBxv:entryCategory>
-   <PDBxv:pdbx_nmr_assigned_chem_shift_listCategory/>
-   <PDBxv:pdbx_nmr_chem_shift_annotationCategory/>
-   <PDBxv:pdbx_nmr_chem_shift_completenessCategory/>
-   <PDBxv:pdbx_nmr_chem_shift_re_offsetCategory/>
-   <PDBxv:pdbx_validate_nmr_chem_shiftCategory/>
+   <PDBxv:pdbx_nmr_assigned_chem_shift_listCategory>
+      <PDBxv:pdbx_nmr_assigned_chem_shift_list id="1">
+         <PDBxv:data_file_name>5u9b_cs.cif</PDBxv:data_file_name>
+         <PDBxv:label>chemical_shifts_zf12RNA_str.txt</PDBxv:label>
+         <PDBxv:nmr_star_consistency_flag>Y</PDBxv:nmr_star_consistency_flag>
+         <PDBxv:number_chem_shifts>939</PDBxv:number_chem_shifts>
+         <PDBxv:number_map_errors>0</PDBxv:number_map_errors>
+         <PDBxv:number_map_warnings>0</PDBxv:number_map_warnings>
+         <PDBxv:number_mapped_chem_shifts>939</PDBxv:number_mapped_chem_shifts>
+         <PDBxv:number_parsed_chem_shifts>939</PDBxv:number_parsed_chem_shifts>
+         <PDBxv:number_unparsed_chem_shifts>0</PDBxv:number_unparsed_chem_shifts>
+      </PDBxv:pdbx_nmr_assigned_chem_shift_list>
+   </PDBxv:pdbx_nmr_assigned_chem_shift_listCategory>
+   <PDBxv:pdbx_nmr_chem_shift_annotationCategory>
+      <PDBxv:pdbx_nmr_chem_shift_annotation list_id="1" id="1">
+         <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>ASP</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>10</PDBxv:auth_seq_id>
+         <PDBxv:random_coil_index>0.065</PDBxv:random_coil_index>
+      </PDBxv:pdbx_nmr_chem_shift_annotation>
+      <PDBxv:pdbx_nmr_chem_shift_annotation list_id="1" id="2">
+         <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>THR</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>11</PDBxv:auth_seq_id>
+         <PDBxv:random_coil_index>0.049</PDBxv:random_coil_index>
+      </PDBxv:pdbx_nmr_chem_shift_annotation>
+      <PDBxv:pdbx_nmr_chem_shift_annotation list_id="1" id="3">
+         <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>LYS</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>12</PDBxv:auth_seq_id>
+         <PDBxv:random_coil_index>0.028</PDBxv:random_coil_index>
+      </PDBxv:pdbx_nmr_chem_shift_annotation>
+      <PDBxv:pdbx_nmr_chem_shift_annotation list_id="1" id="4">
+         <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>TRP</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>13</PDBxv:auth_seq_id>
+         <PDBxv:random_coil_index>0.025</PDBxv:random_coil_index>
+      </PDBxv:pdbx_nmr_chem_shift_annotation>
+      <PDBxv:pdbx_nmr_chem_shift_annotation list_id="1" id="5">
+         <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>LEU</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>14</PDBxv:auth_seq_id>
+         <PDBxv:random_coil_index>0.023</PDBxv:random_coil_index>
+      </PDBxv:pdbx_nmr_chem_shift_annotation>
+      <PDBxv:pdbx_nmr_chem_shift_annotation list_id="1" id="6">
+         <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>THR</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>15</PDBxv:auth_seq_id>
+         <PDBxv:random_coil_index>0.030</PDBxv:random_coil_index>
+      </PDBxv:pdbx_nmr_chem_shift_annotation>
+      <PDBxv:pdbx_nmr_chem_shift_annotation list_id="1" id="7">
+         <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>LEU</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>16</PDBxv:auth_seq_id>
+         <PDBxv:random_coil_index>0.037</PDBxv:random_coil_index>
+      </PDBxv:pdbx_nmr_chem_shift_annotation>
+      <PDBxv:pdbx_nmr_chem_shift_annotation list_id="1" id="8">
+         <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>GLU</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>17</PDBxv:auth_seq_id>
+         <PDBxv:random_coil_index>0.047</PDBxv:random_coil_index>
+      </PDBxv:pdbx_nmr_chem_shift_annotation>
+      <PDBxv:pdbx_nmr_chem_shift_annotation list_id="1" id="9">
+         <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>VAL</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>18</PDBxv:auth_seq_id>
+         <PDBxv:random_coil_index>0.043</PDBxv:random_coil_index>
+      </PDBxv:pdbx_nmr_chem_shift_annotation>
+      <PDBxv:pdbx_nmr_chem_shift_annotation list_id="1" id="10">
+         <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>CYS</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>19</PDBxv:auth_seq_id>
+         <PDBxv:random_coil_index>0.033</PDBxv:random_coil_index>
+      </PDBxv:pdbx_nmr_chem_shift_annotation>
+      <PDBxv:pdbx_nmr_chem_shift_annotation list_id="1" id="11">
+         <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>ALA</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>2</PDBxv:auth_seq_id>
+         <PDBxv:random_coil_index>0.290</PDBxv:random_coil_index>
+      </PDBxv:pdbx_nmr_chem_shift_annotation>
+      <PDBxv:pdbx_nmr_chem_shift_annotation list_id="1" id="12">
+         <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>ARG</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>20</PDBxv:auth_seq_id>
+         <PDBxv:random_coil_index>0.020</PDBxv:random_coil_index>
+      </PDBxv:pdbx_nmr_chem_shift_annotation>
+      <PDBxv:pdbx_nmr_chem_shift_annotation list_id="1" id="13">
+         <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>GLU</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>21</PDBxv:auth_seq_id>
+         <PDBxv:random_coil_index>0.015</PDBxv:random_coil_index>
+      </PDBxv:pdbx_nmr_chem_shift_annotation>
+      <PDBxv:pdbx_nmr_chem_shift_annotation list_id="1" id="14">
+         <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>PHE</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>22</PDBxv:auth_seq_id>
+         <PDBxv:random_coil_index>0.016</PDBxv:random_coil_index>
+      </PDBxv:pdbx_nmr_chem_shift_annotation>
+      <PDBxv:pdbx_nmr_chem_shift_annotation list_id="1" id="15">
+         <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>GLN</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>23</PDBxv:auth_seq_id>
+         <PDBxv:random_coil_index>0.024</PDBxv:random_coil_index>
+      </PDBxv:pdbx_nmr_chem_shift_annotation>
+      <PDBxv:pdbx_nmr_chem_shift_annotation list_id="1" id="16">
+         <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>ARG</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>24</PDBxv:auth_seq_id>
+         <PDBxv:random_coil_index>0.045</PDBxv:random_coil_index>
+      </PDBxv:pdbx_nmr_chem_shift_annotation>
+      <PDBxv:pdbx_nmr_chem_shift_annotation list_id="1" id="17">
+         <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>GLY</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>25</PDBxv:auth_seq_id>
+         <PDBxv:random_coil_index>0.052</PDBxv:random_coil_index>
+      </PDBxv:pdbx_nmr_chem_shift_annotation>
+      <PDBxv:pdbx_nmr_chem_shift_annotation list_id="1" id="18">
+         <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>THR</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>26</PDBxv:auth_seq_id>
+         <PDBxv:random_coil_index>0.055</PDBxv:random_coil_index>
+      </PDBxv:pdbx_nmr_chem_shift_annotation>
+      <PDBxv:pdbx_nmr_chem_shift_annotation list_id="1" id="19">
+         <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>CYS</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>27</PDBxv:auth_seq_id>
+         <PDBxv:random_coil_index>0.048</PDBxv:random_coil_index>
+      </PDBxv:pdbx_nmr_chem_shift_annotation>
+      <PDBxv:pdbx_nmr_chem_shift_annotation list_id="1" id="20">
+         <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>SER</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>28</PDBxv:auth_seq_id>
+         <PDBxv:random_coil_index>0.044</PDBxv:random_coil_index>
+      </PDBxv:pdbx_nmr_chem_shift_annotation>
+      <PDBxv:pdbx_nmr_chem_shift_annotation list_id="1" id="21">
+         <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>ARG</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>29</PDBxv:auth_seq_id>
+         <PDBxv:random_coil_index>0.032</PDBxv:random_coil_index>
+      </PDBxv:pdbx_nmr_chem_shift_annotation>
+      <PDBxv:pdbx_nmr_chem_shift_annotation list_id="1" id="22">
+         <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>VAL</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>3</PDBxv:auth_seq_id>
+         <PDBxv:random_coil_index>0.262</PDBxv:random_coil_index>
+      </PDBxv:pdbx_nmr_chem_shift_annotation>
+      <PDBxv:pdbx_nmr_chem_shift_annotation list_id="1" id="23">
+         <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>PRO</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>30</PDBxv:auth_seq_id>
+         <PDBxv:random_coil_index>0.017</PDBxv:random_coil_index>
+      </PDBxv:pdbx_nmr_chem_shift_annotation>
+      <PDBxv:pdbx_nmr_chem_shift_annotation list_id="1" id="24">
+         <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>ASP</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>31</PDBxv:auth_seq_id>
+         <PDBxv:random_coil_index>0.012</PDBxv:random_coil_index>
+      </PDBxv:pdbx_nmr_chem_shift_annotation>
+      <PDBxv:pdbx_nmr_chem_shift_annotation list_id="1" id="25">
+         <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>THR</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>32</PDBxv:auth_seq_id>
+         <PDBxv:random_coil_index>0.014</PDBxv:random_coil_index>
+      </PDBxv:pdbx_nmr_chem_shift_annotation>
+      <PDBxv:pdbx_nmr_chem_shift_annotation list_id="1" id="26">
+         <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>GLU</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>33</PDBxv:auth_seq_id>
+         <PDBxv:random_coil_index>0.018</PDBxv:random_coil_index>
+      </PDBxv:pdbx_nmr_chem_shift_annotation>
+      <PDBxv:pdbx_nmr_chem_shift_annotation list_id="1" id="27">
+         <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>CYS</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>34</PDBxv:auth_seq_id>
+         <PDBxv:random_coil_index>0.024</PDBxv:random_coil_index>
+      </PDBxv:pdbx_nmr_chem_shift_annotation>
+      <PDBxv:pdbx_nmr_chem_shift_annotation list_id="1" id="28">
+         <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>LYS</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>35</PDBxv:auth_seq_id>
+         <PDBxv:random_coil_index>0.027</PDBxv:random_coil_index>
+      </PDBxv:pdbx_nmr_chem_shift_annotation>
+      <PDBxv:pdbx_nmr_chem_shift_annotation list_id="1" id="29">
+         <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>PHE</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>36</PDBxv:auth_seq_id>
+         <PDBxv:random_coil_index>0.027</PDBxv:random_coil_index>
+      </PDBxv:pdbx_nmr_chem_shift_annotation>
+      <PDBxv:pdbx_nmr_chem_shift_annotation list_id="1" id="30">
+         <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>ALA</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>37</PDBxv:auth_seq_id>
+         <PDBxv:random_coil_index>0.022</PDBxv:random_coil_index>
+      </PDBxv:pdbx_nmr_chem_shift_annotation>
+      <PDBxv:pdbx_nmr_chem_shift_annotation list_id="1" id="31">
+         <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>HIS</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>38</PDBxv:auth_seq_id>
+         <PDBxv:random_coil_index>0.017</PDBxv:random_coil_index>
+      </PDBxv:pdbx_nmr_chem_shift_annotation>
+      <PDBxv:pdbx_nmr_chem_shift_annotation list_id="1" id="32">
+         <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>PRO</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>39</PDBxv:auth_seq_id>
+         <PDBxv:random_coil_index>0.017</PDBxv:random_coil_index>
+      </PDBxv:pdbx_nmr_chem_shift_annotation>
+      <PDBxv:pdbx_nmr_chem_shift_annotation list_id="1" id="33">
+         <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>SER</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>4</PDBxv:auth_seq_id>
+         <PDBxv:random_coil_index>0.218</PDBxv:random_coil_index>
+      </PDBxv:pdbx_nmr_chem_shift_annotation>
+      <PDBxv:pdbx_nmr_chem_shift_annotation list_id="1" id="34">
+         <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>SER</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>40</PDBxv:auth_seq_id>
+         <PDBxv:random_coil_index>0.029</PDBxv:random_coil_index>
+      </PDBxv:pdbx_nmr_chem_shift_annotation>
+      <PDBxv:pdbx_nmr_chem_shift_annotation list_id="1" id="35">
+         <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>LYS</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>41</PDBxv:auth_seq_id>
+         <PDBxv:random_coil_index>0.035</PDBxv:random_coil_index>
+      </PDBxv:pdbx_nmr_chem_shift_annotation>
+      <PDBxv:pdbx_nmr_chem_shift_annotation list_id="1" id="36">
+         <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>SER</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>42</PDBxv:auth_seq_id>
+         <PDBxv:random_coil_index>0.049</PDBxv:random_coil_index>
+      </PDBxv:pdbx_nmr_chem_shift_annotation>
+      <PDBxv:pdbx_nmr_chem_shift_annotation list_id="1" id="37">
+         <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>CYS</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>43</PDBxv:auth_seq_id>
+         <PDBxv:random_coil_index>0.050</PDBxv:random_coil_index>
+      </PDBxv:pdbx_nmr_chem_shift_annotation>
+      <PDBxv:pdbx_nmr_chem_shift_annotation list_id="1" id="38">
+         <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>GLN</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>44</PDBxv:auth_seq_id>
+         <PDBxv:random_coil_index>0.057</PDBxv:random_coil_index>
+      </PDBxv:pdbx_nmr_chem_shift_annotation>
+      <PDBxv:pdbx_nmr_chem_shift_annotation list_id="1" id="39">
+         <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>VAL</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>45</PDBxv:auth_seq_id>
+         <PDBxv:random_coil_index>0.048</PDBxv:random_coil_index>
+      </PDBxv:pdbx_nmr_chem_shift_annotation>
+      <PDBxv:pdbx_nmr_chem_shift_annotation list_id="1" id="40">
+         <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>GLU</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>46</PDBxv:auth_seq_id>
+         <PDBxv:random_coil_index>0.042</PDBxv:random_coil_index>
+      </PDBxv:pdbx_nmr_chem_shift_annotation>
+      <PDBxv:pdbx_nmr_chem_shift_annotation list_id="1" id="41">
+         <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>ASN</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>47</PDBxv:auth_seq_id>
+         <PDBxv:random_coil_index>0.031</PDBxv:random_coil_index>
+      </PDBxv:pdbx_nmr_chem_shift_annotation>
+      <PDBxv:pdbx_nmr_chem_shift_annotation list_id="1" id="42">
+         <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>GLY</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>48</PDBxv:auth_seq_id>
+         <PDBxv:random_coil_index>0.025</PDBxv:random_coil_index>
+      </PDBxv:pdbx_nmr_chem_shift_annotation>
+      <PDBxv:pdbx_nmr_chem_shift_annotation list_id="1" id="43">
+         <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>ARG</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>49</PDBxv:auth_seq_id>
+         <PDBxv:random_coil_index>0.019</PDBxv:random_coil_index>
+      </PDBxv:pdbx_nmr_chem_shift_annotation>
+      <PDBxv:pdbx_nmr_chem_shift_annotation list_id="1" id="44">
+         <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>VAL</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>5</PDBxv:auth_seq_id>
+         <PDBxv:random_coil_index>0.135</PDBxv:random_coil_index>
+      </PDBxv:pdbx_nmr_chem_shift_annotation>
+      <PDBxv:pdbx_nmr_chem_shift_annotation list_id="1" id="45">
+         <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>VAL</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>50</PDBxv:auth_seq_id>
+         <PDBxv:random_coil_index>0.020</PDBxv:random_coil_index>
+      </PDBxv:pdbx_nmr_chem_shift_annotation>
+      <PDBxv:pdbx_nmr_chem_shift_annotation list_id="1" id="46">
+         <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>ILE</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>51</PDBxv:auth_seq_id>
+         <PDBxv:random_coil_index>0.038</PDBxv:random_coil_index>
+      </PDBxv:pdbx_nmr_chem_shift_annotation>
+      <PDBxv:pdbx_nmr_chem_shift_annotation list_id="1" id="47">
+         <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>ALA</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>52</PDBxv:auth_seq_id>
+         <PDBxv:random_coil_index>0.037</PDBxv:random_coil_index>
+      </PDBxv:pdbx_nmr_chem_shift_annotation>
+      <PDBxv:pdbx_nmr_chem_shift_annotation list_id="1" id="48">
+         <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>CYS</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>53</PDBxv:auth_seq_id>
+         <PDBxv:random_coil_index>0.033</PDBxv:random_coil_index>
+      </PDBxv:pdbx_nmr_chem_shift_annotation>
+      <PDBxv:pdbx_nmr_chem_shift_annotation list_id="1" id="49">
+         <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>PHE</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>54</PDBxv:auth_seq_id>
+         <PDBxv:random_coil_index>0.012</PDBxv:random_coil_index>
+      </PDBxv:pdbx_nmr_chem_shift_annotation>
+      <PDBxv:pdbx_nmr_chem_shift_annotation list_id="1" id="50">
+         <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>ASP</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>55</PDBxv:auth_seq_id>
+         <PDBxv:random_coil_index>0.011</PDBxv:random_coil_index>
+      </PDBxv:pdbx_nmr_chem_shift_annotation>
+      <PDBxv:pdbx_nmr_chem_shift_annotation list_id="1" id="51">
+         <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>SER</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>56</PDBxv:auth_seq_id>
+         <PDBxv:random_coil_index>0.012</PDBxv:random_coil_index>
+      </PDBxv:pdbx_nmr_chem_shift_annotation>
+      <PDBxv:pdbx_nmr_chem_shift_annotation list_id="1" id="52">
+         <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>LEU</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>57</PDBxv:auth_seq_id>
+         <PDBxv:random_coil_index>0.017</PDBxv:random_coil_index>
+      </PDBxv:pdbx_nmr_chem_shift_annotation>
+      <PDBxv:pdbx_nmr_chem_shift_annotation list_id="1" id="53">
+         <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>LYS</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>58</PDBxv:auth_seq_id>
+         <PDBxv:random_coil_index>0.023</PDBxv:random_coil_index>
+      </PDBxv:pdbx_nmr_chem_shift_annotation>
+      <PDBxv:pdbx_nmr_chem_shift_annotation list_id="1" id="54">
+         <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>GLY</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>59</PDBxv:auth_seq_id>
+         <PDBxv:random_coil_index>0.034</PDBxv:random_coil_index>
+      </PDBxv:pdbx_nmr_chem_shift_annotation>
+      <PDBxv:pdbx_nmr_chem_shift_annotation list_id="1" id="55">
+         <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>THR</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>6</PDBxv:auth_seq_id>
+         <PDBxv:random_coil_index>0.076</PDBxv:random_coil_index>
+      </PDBxv:pdbx_nmr_chem_shift_annotation>
+      <PDBxv:pdbx_nmr_chem_shift_annotation list_id="1" id="56">
+         <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>ARG</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>60</PDBxv:auth_seq_id>
+         <PDBxv:random_coil_index>0.038</PDBxv:random_coil_index>
+      </PDBxv:pdbx_nmr_chem_shift_annotation>
+      <PDBxv:pdbx_nmr_chem_shift_annotation list_id="1" id="57">
+         <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>CYS</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>61</PDBxv:auth_seq_id>
+         <PDBxv:random_coil_index>0.045</PDBxv:random_coil_index>
+      </PDBxv:pdbx_nmr_chem_shift_annotation>
+      <PDBxv:pdbx_nmr_chem_shift_annotation list_id="1" id="58">
+         <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>SER</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>62</PDBxv:auth_seq_id>
+         <PDBxv:random_coil_index>0.042</PDBxv:random_coil_index>
+      </PDBxv:pdbx_nmr_chem_shift_annotation>
+      <PDBxv:pdbx_nmr_chem_shift_annotation list_id="1" id="59">
+         <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>ARG</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>63</PDBxv:auth_seq_id>
+         <PDBxv:random_coil_index>0.047</PDBxv:random_coil_index>
+      </PDBxv:pdbx_nmr_chem_shift_annotation>
+      <PDBxv:pdbx_nmr_chem_shift_annotation list_id="1" id="60">
+         <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>GLU</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>64</PDBxv:auth_seq_id>
+         <PDBxv:random_coil_index>0.043</PDBxv:random_coil_index>
+      </PDBxv:pdbx_nmr_chem_shift_annotation>
+      <PDBxv:pdbx_nmr_chem_shift_annotation list_id="1" id="61">
+         <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>ASN</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>65</PDBxv:auth_seq_id>
+         <PDBxv:random_coil_index>0.050</PDBxv:random_coil_index>
+      </PDBxv:pdbx_nmr_chem_shift_annotation>
+      <PDBxv:pdbx_nmr_chem_shift_annotation list_id="1" id="62">
+         <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>CYS</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>66</PDBxv:auth_seq_id>
+         <PDBxv:random_coil_index>0.041</PDBxv:random_coil_index>
+      </PDBxv:pdbx_nmr_chem_shift_annotation>
+      <PDBxv:pdbx_nmr_chem_shift_annotation list_id="1" id="63">
+         <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>LYS</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>67</PDBxv:auth_seq_id>
+         <PDBxv:random_coil_index>0.038</PDBxv:random_coil_index>
+      </PDBxv:pdbx_nmr_chem_shift_annotation>
+      <PDBxv:pdbx_nmr_chem_shift_annotation list_id="1" id="64">
+         <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>TYR</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>68</PDBxv:auth_seq_id>
+         <PDBxv:random_coil_index>0.024</PDBxv:random_coil_index>
+      </PDBxv:pdbx_nmr_chem_shift_annotation>
+      <PDBxv:pdbx_nmr_chem_shift_annotation list_id="1" id="65">
+         <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>LEU</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>69</PDBxv:auth_seq_id>
+         <PDBxv:random_coil_index>0.025</PDBxv:random_coil_index>
+      </PDBxv:pdbx_nmr_chem_shift_annotation>
+      <PDBxv:pdbx_nmr_chem_shift_annotation list_id="1" id="66">
+         <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>PRO</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>7</PDBxv:auth_seq_id>
+         <PDBxv:random_coil_index>0.030</PDBxv:random_coil_index>
+      </PDBxv:pdbx_nmr_chem_shift_annotation>
+      <PDBxv:pdbx_nmr_chem_shift_annotation list_id="1" id="67">
+         <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>HIS</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>70</PDBxv:auth_seq_id>
+         <PDBxv:random_coil_index>0.022</PDBxv:random_coil_index>
+      </PDBxv:pdbx_nmr_chem_shift_annotation>
+      <PDBxv:pdbx_nmr_chem_shift_annotation list_id="1" id="68">
+         <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>PRO</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>71</PDBxv:auth_seq_id>
+         <PDBxv:random_coil_index>0.020</PDBxv:random_coil_index>
+      </PDBxv:pdbx_nmr_chem_shift_annotation>
+      <PDBxv:pdbx_nmr_chem_shift_annotation list_id="1" id="69">
+         <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>PRO</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>72</PDBxv:auth_seq_id>
+         <PDBxv:random_coil_index>0.015</PDBxv:random_coil_index>
+      </PDBxv:pdbx_nmr_chem_shift_annotation>
+      <PDBxv:pdbx_nmr_chem_shift_annotation list_id="1" id="70">
+         <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>PRO</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>73</PDBxv:auth_seq_id>
+         <PDBxv:random_coil_index>0.012</PDBxv:random_coil_index>
+      </PDBxv:pdbx_nmr_chem_shift_annotation>
+      <PDBxv:pdbx_nmr_chem_shift_annotation list_id="1" id="71">
+         <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>HIS</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>74</PDBxv:auth_seq_id>
+         <PDBxv:random_coil_index>0.014</PDBxv:random_coil_index>
+      </PDBxv:pdbx_nmr_chem_shift_annotation>
+      <PDBxv:pdbx_nmr_chem_shift_annotation list_id="1" id="72">
+         <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>LEU</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>75</PDBxv:auth_seq_id>
+         <PDBxv:random_coil_index>0.016</PDBxv:random_coil_index>
+      </PDBxv:pdbx_nmr_chem_shift_annotation>
+      <PDBxv:pdbx_nmr_chem_shift_annotation list_id="1" id="73">
+         <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>LYS</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>76</PDBxv:auth_seq_id>
+         <PDBxv:random_coil_index>0.016</PDBxv:random_coil_index>
+      </PDBxv:pdbx_nmr_chem_shift_annotation>
+      <PDBxv:pdbx_nmr_chem_shift_annotation list_id="1" id="74">
+         <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>THR</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>77</PDBxv:auth_seq_id>
+         <PDBxv:random_coil_index>0.015</PDBxv:random_coil_index>
+      </PDBxv:pdbx_nmr_chem_shift_annotation>
+      <PDBxv:pdbx_nmr_chem_shift_annotation list_id="1" id="75">
+         <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>GLN</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>78</PDBxv:auth_seq_id>
+         <PDBxv:random_coil_index>0.017</PDBxv:random_coil_index>
+      </PDBxv:pdbx_nmr_chem_shift_annotation>
+      <PDBxv:pdbx_nmr_chem_shift_annotation list_id="1" id="76">
+         <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>LEU</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>79</PDBxv:auth_seq_id>
+         <PDBxv:random_coil_index>0.019</PDBxv:random_coil_index>
+      </PDBxv:pdbx_nmr_chem_shift_annotation>
+      <PDBxv:pdbx_nmr_chem_shift_annotation list_id="1" id="77">
+         <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>ILE</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>8</PDBxv:auth_seq_id>
+         <PDBxv:random_coil_index>0.045</PDBxv:random_coil_index>
+      </PDBxv:pdbx_nmr_chem_shift_annotation>
+      <PDBxv:pdbx_nmr_chem_shift_annotation list_id="1" id="78">
+         <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>GLU</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>80</PDBxv:auth_seq_id>
+         <PDBxv:random_coil_index>0.020</PDBxv:random_coil_index>
+      </PDBxv:pdbx_nmr_chem_shift_annotation>
+      <PDBxv:pdbx_nmr_chem_shift_annotation list_id="1" id="79">
+         <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>ILE</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>81</PDBxv:auth_seq_id>
+         <PDBxv:random_coil_index>0.019</PDBxv:random_coil_index>
+      </PDBxv:pdbx_nmr_chem_shift_annotation>
+      <PDBxv:pdbx_nmr_chem_shift_annotation list_id="1" id="80">
+         <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>ASN</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>82</PDBxv:auth_seq_id>
+         <PDBxv:random_coil_index>0.019</PDBxv:random_coil_index>
+      </PDBxv:pdbx_nmr_chem_shift_annotation>
+      <PDBxv:pdbx_nmr_chem_shift_annotation list_id="1" id="81">
+         <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>GLY</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>83</PDBxv:auth_seq_id>
+         <PDBxv:random_coil_index>0.021</PDBxv:random_coil_index>
+      </PDBxv:pdbx_nmr_chem_shift_annotation>
+      <PDBxv:pdbx_nmr_chem_shift_annotation list_id="1" id="82">
+         <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>ARG</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>84</PDBxv:auth_seq_id>
+         <PDBxv:random_coil_index>0.026</PDBxv:random_coil_index>
+      </PDBxv:pdbx_nmr_chem_shift_annotation>
+      <PDBxv:pdbx_nmr_chem_shift_annotation list_id="1" id="83">
+         <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>ASN</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>85</PDBxv:auth_seq_id>
+         <PDBxv:random_coil_index>0.033</PDBxv:random_coil_index>
+      </PDBxv:pdbx_nmr_chem_shift_annotation>
+      <PDBxv:pdbx_nmr_chem_shift_annotation list_id="1" id="84">
+         <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>ASN</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>86</PDBxv:auth_seq_id>
+         <PDBxv:random_coil_index>0.045</PDBxv:random_coil_index>
+      </PDBxv:pdbx_nmr_chem_shift_annotation>
+      <PDBxv:pdbx_nmr_chem_shift_annotation list_id="1" id="85">
+         <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>LEU</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>87</PDBxv:auth_seq_id>
+         <PDBxv:random_coil_index>0.061</PDBxv:random_coil_index>
+      </PDBxv:pdbx_nmr_chem_shift_annotation>
+      <PDBxv:pdbx_nmr_chem_shift_annotation list_id="1" id="86">
+         <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>ILE</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>88</PDBxv:auth_seq_id>
+         <PDBxv:random_coil_index>0.057</PDBxv:random_coil_index>
+      </PDBxv:pdbx_nmr_chem_shift_annotation>
+      <PDBxv:pdbx_nmr_chem_shift_annotation list_id="1" id="87">
+         <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>GLN</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>89</PDBxv:auth_seq_id>
+         <PDBxv:random_coil_index>0.049</PDBxv:random_coil_index>
+      </PDBxv:pdbx_nmr_chem_shift_annotation>
+      <PDBxv:pdbx_nmr_chem_shift_annotation list_id="1" id="88">
+         <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>ARG</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>9</PDBxv:auth_seq_id>
+         <PDBxv:random_coil_index>0.063</PDBxv:random_coil_index>
+      </PDBxv:pdbx_nmr_chem_shift_annotation>
+      <PDBxv:pdbx_nmr_chem_shift_annotation list_id="1" id="89">
+         <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>GLN</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>90</PDBxv:auth_seq_id>
+         <PDBxv:random_coil_index>0.030</PDBxv:random_coil_index>
+      </PDBxv:pdbx_nmr_chem_shift_annotation>
+      <PDBxv:pdbx_nmr_chem_shift_annotation list_id="1" id="90">
+         <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>LYS</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>91</PDBxv:auth_seq_id>
+         <PDBxv:random_coil_index>0.035</PDBxv:random_coil_index>
+      </PDBxv:pdbx_nmr_chem_shift_annotation>
+      <PDBxv:pdbx_nmr_chem_shift_annotation list_id="1" id="91">
+         <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>ASN</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>92</PDBxv:auth_seq_id>
+         <PDBxv:random_coil_index>0.036</PDBxv:random_coil_index>
+      </PDBxv:pdbx_nmr_chem_shift_annotation>
+   </PDBxv:pdbx_nmr_chem_shift_annotationCategory>
+   <PDBxv:pdbx_nmr_chem_shift_completenessCategory>
+      <PDBxv:pdbx_nmr_chem_shift_completeness list_id="1" atom_group="sidechain" atom_type="H">
+         <PDBxv:number_assigned_chem_shifts_well_formed>207</PDBxv:number_assigned_chem_shifts_well_formed>
+         <PDBxv:number_target_shifts_well_formed>286</PDBxv:number_target_shifts_well_formed>
+         <PDBxv:number_unassigned_chem_shifts_well_formed>79</PDBxv:number_unassigned_chem_shifts_well_formed>
+         <PDBxv:number_assigned_chem_shifts>271</PDBxv:number_assigned_chem_shifts>
+         <PDBxv:number_target_shifts>396</PDBxv:number_target_shifts>
+         <PDBxv:number_unassigned_chem_shifts>125</PDBxv:number_unassigned_chem_shifts>
+      </PDBxv:pdbx_nmr_chem_shift_completeness>
+      <PDBxv:pdbx_nmr_chem_shift_completeness list_id="1" atom_group="backbone" atom_type="H">
+         <PDBxv:number_assigned_chem_shifts_well_formed>132</PDBxv:number_assigned_chem_shifts_well_formed>
+         <PDBxv:number_target_shifts_well_formed>137</PDBxv:number_target_shifts_well_formed>
+         <PDBxv:number_unassigned_chem_shifts_well_formed>5</PDBxv:number_unassigned_chem_shifts_well_formed>
+         <PDBxv:number_assigned_chem_shifts>169</PDBxv:number_assigned_chem_shifts>
+         <PDBxv:number_target_shifts>178</PDBxv:number_target_shifts>
+         <PDBxv:number_unassigned_chem_shifts>9</PDBxv:number_unassigned_chem_shifts>
+      </PDBxv:pdbx_nmr_chem_shift_completeness>
+      <PDBxv:pdbx_nmr_chem_shift_completeness list_id="1" atom_group="overall" atom_type="H">
+         <PDBxv:number_assigned_chem_shifts_well_formed>361</PDBxv:number_assigned_chem_shifts_well_formed>
+         <PDBxv:number_target_shifts_well_formed>615</PDBxv:number_target_shifts_well_formed>
+         <PDBxv:number_unassigned_chem_shifts_well_formed>254</PDBxv:number_unassigned_chem_shifts_well_formed>
+         <PDBxv:number_assigned_chem_shifts>462</PDBxv:number_assigned_chem_shifts>
+         <PDBxv:number_target_shifts>766</PDBxv:number_target_shifts>
+         <PDBxv:number_unassigned_chem_shifts>304</PDBxv:number_unassigned_chem_shifts>
+      </PDBxv:pdbx_nmr_chem_shift_completeness>
+      <PDBxv:pdbx_nmr_chem_shift_completeness list_id="1" atom_group="aromatic" atom_type="H">
+         <PDBxv:number_assigned_chem_shifts_well_formed>22</PDBxv:number_assigned_chem_shifts_well_formed>
+         <PDBxv:number_target_shifts_well_formed>37</PDBxv:number_target_shifts_well_formed>
+         <PDBxv:number_unassigned_chem_shifts_well_formed>15</PDBxv:number_unassigned_chem_shifts_well_formed>
+         <PDBxv:number_assigned_chem_shifts>22</PDBxv:number_assigned_chem_shifts>
+         <PDBxv:number_target_shifts>37</PDBxv:number_target_shifts>
+         <PDBxv:number_unassigned_chem_shifts>15</PDBxv:number_unassigned_chem_shifts>
+      </PDBxv:pdbx_nmr_chem_shift_completeness>
+      <PDBxv:pdbx_nmr_chem_shift_completeness list_id="1" atom_group="sugar" atom_type="H">
+         <PDBxv:number_assigned_chem_shifts_well_formed>0</PDBxv:number_assigned_chem_shifts_well_formed>
+         <PDBxv:number_target_shifts_well_formed>90</PDBxv:number_target_shifts_well_formed>
+         <PDBxv:number_unassigned_chem_shifts_well_formed>90</PDBxv:number_unassigned_chem_shifts_well_formed>
+         <PDBxv:number_assigned_chem_shifts>0</PDBxv:number_assigned_chem_shifts>
+         <PDBxv:number_target_shifts>90</PDBxv:number_target_shifts>
+         <PDBxv:number_unassigned_chem_shifts>90</PDBxv:number_unassigned_chem_shifts>
+      </PDBxv:pdbx_nmr_chem_shift_completeness>
+      <PDBxv:pdbx_nmr_chem_shift_completeness list_id="1" atom_group="base" atom_type="H">
+         <PDBxv:number_assigned_chem_shifts_well_formed>0</PDBxv:number_assigned_chem_shifts_well_formed>
+         <PDBxv:number_target_shifts_well_formed>65</PDBxv:number_target_shifts_well_formed>
+         <PDBxv:number_unassigned_chem_shifts_well_formed>65</PDBxv:number_unassigned_chem_shifts_well_formed>
+         <PDBxv:number_assigned_chem_shifts>0</PDBxv:number_assigned_chem_shifts>
+         <PDBxv:number_target_shifts>65</PDBxv:number_target_shifts>
+         <PDBxv:number_unassigned_chem_shifts>65</PDBxv:number_unassigned_chem_shifts>
+      </PDBxv:pdbx_nmr_chem_shift_completeness>
+      <PDBxv:pdbx_nmr_chem_shift_completeness list_id="1" atom_group="sidechain" atom_type="C">
+         <PDBxv:number_assigned_chem_shifts_well_formed>138</PDBxv:number_assigned_chem_shifts_well_formed>
+         <PDBxv:number_target_shifts_well_formed>166</PDBxv:number_target_shifts_well_formed>
+         <PDBxv:number_unassigned_chem_shifts_well_formed>28</PDBxv:number_unassigned_chem_shifts_well_formed>
+         <PDBxv:number_assigned_chem_shifts>182</PDBxv:number_assigned_chem_shifts>
+         <PDBxv:number_target_shifts>227</PDBxv:number_target_shifts>
+         <PDBxv:number_unassigned_chem_shifts>45</PDBxv:number_unassigned_chem_shifts>
+      </PDBxv:pdbx_nmr_chem_shift_completeness>
+      <PDBxv:pdbx_nmr_chem_shift_completeness list_id="1" atom_group="backbone" atom_type="C">
+         <PDBxv:number_assigned_chem_shifts_well_formed>70</PDBxv:number_assigned_chem_shifts_well_formed>
+         <PDBxv:number_target_shifts_well_formed>142</PDBxv:number_target_shifts_well_formed>
+         <PDBxv:number_unassigned_chem_shifts_well_formed>72</PDBxv:number_unassigned_chem_shifts_well_formed>
+         <PDBxv:number_assigned_chem_shifts>90</PDBxv:number_assigned_chem_shifts>
+         <PDBxv:number_target_shifts>184</PDBxv:number_target_shifts>
+         <PDBxv:number_unassigned_chem_shifts>94</PDBxv:number_unassigned_chem_shifts>
+      </PDBxv:pdbx_nmr_chem_shift_completeness>
+      <PDBxv:pdbx_nmr_chem_shift_completeness list_id="1" atom_group="overall" atom_type="C">
+         <PDBxv:number_assigned_chem_shifts_well_formed>227</PDBxv:number_assigned_chem_shifts_well_formed>
+         <PDBxv:number_target_shifts_well_formed>438</PDBxv:number_target_shifts_well_formed>
+         <PDBxv:number_unassigned_chem_shifts_well_formed>211</PDBxv:number_unassigned_chem_shifts_well_formed>
+         <PDBxv:number_assigned_chem_shifts>291</PDBxv:number_assigned_chem_shifts>
+         <PDBxv:number_target_shifts>541</PDBxv:number_target_shifts>
+         <PDBxv:number_unassigned_chem_shifts>250</PDBxv:number_unassigned_chem_shifts>
+      </PDBxv:pdbx_nmr_chem_shift_completeness>
+      <PDBxv:pdbx_nmr_chem_shift_completeness list_id="1" atom_group="aromatic" atom_type="C">
+         <PDBxv:number_assigned_chem_shifts_well_formed>19</PDBxv:number_assigned_chem_shifts_well_formed>
+         <PDBxv:number_target_shifts_well_formed>27</PDBxv:number_target_shifts_well_formed>
+         <PDBxv:number_unassigned_chem_shifts_well_formed>8</PDBxv:number_unassigned_chem_shifts_well_formed>
+         <PDBxv:number_assigned_chem_shifts>19</PDBxv:number_assigned_chem_shifts>
+         <PDBxv:number_target_shifts>27</PDBxv:number_target_shifts>
+         <PDBxv:number_unassigned_chem_shifts>8</PDBxv:number_unassigned_chem_shifts>
+      </PDBxv:pdbx_nmr_chem_shift_completeness>
+      <PDBxv:pdbx_nmr_chem_shift_completeness list_id="1" atom_group="sugar" atom_type="C">
+         <PDBxv:number_assigned_chem_shifts_well_formed>0</PDBxv:number_assigned_chem_shifts_well_formed>
+         <PDBxv:number_target_shifts_well_formed>75</PDBxv:number_target_shifts_well_formed>
+         <PDBxv:number_unassigned_chem_shifts_well_formed>75</PDBxv:number_unassigned_chem_shifts_well_formed>
+         <PDBxv:number_assigned_chem_shifts>0</PDBxv:number_assigned_chem_shifts>
+         <PDBxv:number_target_shifts>75</PDBxv:number_target_shifts>
+         <PDBxv:number_unassigned_chem_shifts>75</PDBxv:number_unassigned_chem_shifts>
+      </PDBxv:pdbx_nmr_chem_shift_completeness>
+      <PDBxv:pdbx_nmr_chem_shift_completeness list_id="1" atom_group="base" atom_type="C">
+         <PDBxv:number_assigned_chem_shifts_well_formed>0</PDBxv:number_assigned_chem_shifts_well_formed>
+         <PDBxv:number_target_shifts_well_formed>28</PDBxv:number_target_shifts_well_formed>
+         <PDBxv:number_unassigned_chem_shifts_well_formed>28</PDBxv:number_unassigned_chem_shifts_well_formed>
+         <PDBxv:number_assigned_chem_shifts>0</PDBxv:number_assigned_chem_shifts>
+         <PDBxv:number_target_shifts>28</PDBxv:number_target_shifts>
+         <PDBxv:number_unassigned_chem_shifts>28</PDBxv:number_unassigned_chem_shifts>
+      </PDBxv:pdbx_nmr_chem_shift_completeness>
+      <PDBxv:pdbx_nmr_chem_shift_completeness list_id="1" atom_group="sidechain" atom_type="Total">
+         <PDBxv:number_assigned_chem_shifts_well_formed>349</PDBxv:number_assigned_chem_shifts_well_formed>
+         <PDBxv:number_target_shifts_well_formed>478</PDBxv:number_target_shifts_well_formed>
+         <PDBxv:number_unassigned_chem_shifts_well_formed>129</PDBxv:number_unassigned_chem_shifts_well_formed>
+         <PDBxv:number_assigned_chem_shifts>459</PDBxv:number_assigned_chem_shifts>
+         <PDBxv:number_target_shifts>665</PDBxv:number_target_shifts>
+         <PDBxv:number_unassigned_chem_shifts>206</PDBxv:number_unassigned_chem_shifts>
+      </PDBxv:pdbx_nmr_chem_shift_completeness>
+      <PDBxv:pdbx_nmr_chem_shift_completeness list_id="1" atom_group="backbone" atom_type="Total">
+         <PDBxv:number_assigned_chem_shifts_well_formed>263</PDBxv:number_assigned_chem_shifts_well_formed>
+         <PDBxv:number_target_shifts_well_formed>345</PDBxv:number_target_shifts_well_formed>
+         <PDBxv:number_unassigned_chem_shifts_well_formed>82</PDBxv:number_unassigned_chem_shifts_well_formed>
+         <PDBxv:number_assigned_chem_shifts>337</PDBxv:number_assigned_chem_shifts>
+         <PDBxv:number_target_shifts>448</PDBxv:number_target_shifts>
+         <PDBxv:number_unassigned_chem_shifts>111</PDBxv:number_unassigned_chem_shifts>
+      </PDBxv:pdbx_nmr_chem_shift_completeness>
+      <PDBxv:pdbx_nmr_chem_shift_completeness list_id="1" atom_group="overall" atom_type="Total">
+         <PDBxv:number_assigned_chem_shifts_well_formed>654</PDBxv:number_assigned_chem_shifts_well_formed>
+         <PDBxv:number_target_shifts_well_formed>1167</PDBxv:number_target_shifts_well_formed>
+         <PDBxv:number_unassigned_chem_shifts_well_formed>513</PDBxv:number_unassigned_chem_shifts_well_formed>
+         <PDBxv:number_assigned_chem_shifts>838</PDBxv:number_assigned_chem_shifts>
+         <PDBxv:number_target_shifts>1457</PDBxv:number_target_shifts>
+         <PDBxv:number_unassigned_chem_shifts>619</PDBxv:number_unassigned_chem_shifts>
+      </PDBxv:pdbx_nmr_chem_shift_completeness>
+      <PDBxv:pdbx_nmr_chem_shift_completeness list_id="1" atom_group="aromatic" atom_type="Total">
+         <PDBxv:number_assigned_chem_shifts_well_formed>42</PDBxv:number_assigned_chem_shifts_well_formed>
+         <PDBxv:number_target_shifts_well_formed>69</PDBxv:number_target_shifts_well_formed>
+         <PDBxv:number_unassigned_chem_shifts_well_formed>27</PDBxv:number_unassigned_chem_shifts_well_formed>
+         <PDBxv:number_assigned_chem_shifts>42</PDBxv:number_assigned_chem_shifts>
+         <PDBxv:number_target_shifts>69</PDBxv:number_target_shifts>
+         <PDBxv:number_unassigned_chem_shifts>27</PDBxv:number_unassigned_chem_shifts>
+      </PDBxv:pdbx_nmr_chem_shift_completeness>
+      <PDBxv:pdbx_nmr_chem_shift_completeness list_id="1" atom_group="sugar" atom_type="Total">
+         <PDBxv:number_assigned_chem_shifts_well_formed>0</PDBxv:number_assigned_chem_shifts_well_formed>
+         <PDBxv:number_target_shifts_well_formed>165</PDBxv:number_target_shifts_well_formed>
+         <PDBxv:number_unassigned_chem_shifts_well_formed>165</PDBxv:number_unassigned_chem_shifts_well_formed>
+         <PDBxv:number_assigned_chem_shifts>0</PDBxv:number_assigned_chem_shifts>
+         <PDBxv:number_target_shifts>165</PDBxv:number_target_shifts>
+         <PDBxv:number_unassigned_chem_shifts>165</PDBxv:number_unassigned_chem_shifts>
+      </PDBxv:pdbx_nmr_chem_shift_completeness>
+      <PDBxv:pdbx_nmr_chem_shift_completeness list_id="1" atom_group="base" atom_type="Total">
+         <PDBxv:number_assigned_chem_shifts_well_formed>0</PDBxv:number_assigned_chem_shifts_well_formed>
+         <PDBxv:number_target_shifts_well_formed>110</PDBxv:number_target_shifts_well_formed>
+         <PDBxv:number_unassigned_chem_shifts_well_formed>110</PDBxv:number_unassigned_chem_shifts_well_formed>
+         <PDBxv:number_assigned_chem_shifts>0</PDBxv:number_assigned_chem_shifts>
+         <PDBxv:number_target_shifts>110</PDBxv:number_target_shifts>
+         <PDBxv:number_unassigned_chem_shifts>110</PDBxv:number_unassigned_chem_shifts>
+      </PDBxv:pdbx_nmr_chem_shift_completeness>
+      <PDBxv:pdbx_nmr_chem_shift_completeness list_id="1" atom_group="stereomethyl" atom_type="stereomethyl">
+         <PDBxv:number_assigned_chem_shifts_well_formed>9</PDBxv:number_assigned_chem_shifts_well_formed>
+         <PDBxv:number_target_shifts_well_formed>9</PDBxv:number_target_shifts_well_formed>
+         <PDBxv:number_unassigned_chem_shifts_well_formed>0</PDBxv:number_unassigned_chem_shifts_well_formed>
+         <PDBxv:number_assigned_chem_shifts>12</PDBxv:number_assigned_chem_shifts>
+         <PDBxv:number_target_shifts>12</PDBxv:number_target_shifts>
+         <PDBxv:number_unassigned_chem_shifts>0</PDBxv:number_unassigned_chem_shifts>
+      </PDBxv:pdbx_nmr_chem_shift_completeness>
+      <PDBxv:pdbx_nmr_chem_shift_completeness list_id="1" atom_group="sidechain" atom_type="N">
+         <PDBxv:number_assigned_chem_shifts_well_formed>4</PDBxv:number_assigned_chem_shifts_well_formed>
+         <PDBxv:number_target_shifts_well_formed>26</PDBxv:number_target_shifts_well_formed>
+         <PDBxv:number_unassigned_chem_shifts_well_formed>22</PDBxv:number_unassigned_chem_shifts_well_formed>
+         <PDBxv:number_assigned_chem_shifts>6</PDBxv:number_assigned_chem_shifts>
+         <PDBxv:number_target_shifts>42</PDBxv:number_target_shifts>
+         <PDBxv:number_unassigned_chem_shifts>36</PDBxv:number_unassigned_chem_shifts>
+      </PDBxv:pdbx_nmr_chem_shift_completeness>
+      <PDBxv:pdbx_nmr_chem_shift_completeness list_id="1" atom_group="backbone" atom_type="N">
+         <PDBxv:number_assigned_chem_shifts_well_formed>61</PDBxv:number_assigned_chem_shifts_well_formed>
+         <PDBxv:number_target_shifts_well_formed>66</PDBxv:number_target_shifts_well_formed>
+         <PDBxv:number_unassigned_chem_shifts_well_formed>5</PDBxv:number_unassigned_chem_shifts_well_formed>
+         <PDBxv:number_assigned_chem_shifts>78</PDBxv:number_assigned_chem_shifts>
+         <PDBxv:number_target_shifts>86</PDBxv:number_target_shifts>
+         <PDBxv:number_unassigned_chem_shifts>8</PDBxv:number_unassigned_chem_shifts>
+      </PDBxv:pdbx_nmr_chem_shift_completeness>
+      <PDBxv:pdbx_nmr_chem_shift_completeness list_id="1" atom_group="overall" atom_type="N">
+         <PDBxv:number_assigned_chem_shifts_well_formed>66</PDBxv:number_assigned_chem_shifts_well_formed>
+         <PDBxv:number_target_shifts_well_formed>114</PDBxv:number_target_shifts_well_formed>
+         <PDBxv:number_unassigned_chem_shifts_well_formed>48</PDBxv:number_unassigned_chem_shifts_well_formed>
+         <PDBxv:number_assigned_chem_shifts>85</PDBxv:number_assigned_chem_shifts>
+         <PDBxv:number_target_shifts>150</PDBxv:number_target_shifts>
+         <PDBxv:number_unassigned_chem_shifts>65</PDBxv:number_unassigned_chem_shifts>
+      </PDBxv:pdbx_nmr_chem_shift_completeness>
+      <PDBxv:pdbx_nmr_chem_shift_completeness list_id="1" atom_group="aromatic" atom_type="N">
+         <PDBxv:number_assigned_chem_shifts_well_formed>1</PDBxv:number_assigned_chem_shifts_well_formed>
+         <PDBxv:number_target_shifts_well_formed>5</PDBxv:number_target_shifts_well_formed>
+         <PDBxv:number_unassigned_chem_shifts_well_formed>4</PDBxv:number_unassigned_chem_shifts_well_formed>
+         <PDBxv:number_assigned_chem_shifts>1</PDBxv:number_assigned_chem_shifts>
+         <PDBxv:number_target_shifts>5</PDBxv:number_target_shifts>
+         <PDBxv:number_unassigned_chem_shifts>4</PDBxv:number_unassigned_chem_shifts>
+      </PDBxv:pdbx_nmr_chem_shift_completeness>
+      <PDBxv:pdbx_nmr_chem_shift_completeness list_id="1" atom_group="base" atom_type="N">
+         <PDBxv:number_assigned_chem_shifts_well_formed>0</PDBxv:number_assigned_chem_shifts_well_formed>
+         <PDBxv:number_target_shifts_well_formed>17</PDBxv:number_target_shifts_well_formed>
+         <PDBxv:number_unassigned_chem_shifts_well_formed>17</PDBxv:number_unassigned_chem_shifts_well_formed>
+         <PDBxv:number_assigned_chem_shifts>0</PDBxv:number_assigned_chem_shifts>
+         <PDBxv:number_target_shifts>17</PDBxv:number_target_shifts>
+         <PDBxv:number_unassigned_chem_shifts>17</PDBxv:number_unassigned_chem_shifts>
+      </PDBxv:pdbx_nmr_chem_shift_completeness>
+   </PDBxv:pdbx_nmr_chem_shift_completenessCategory>
+   <PDBxv:pdbx_nmr_chem_shift_re_offsetCategory>
+      <PDBxv:pdbx_nmr_chem_shift_re_offset list_id="1" atom_type="CB">
+         <PDBxv:correction_val>0.23</PDBxv:correction_val>
+         <PDBxv:correction_val_err>0.50</PDBxv:correction_val_err>
+         <PDBxv:correction_val_esd>0.17</PDBxv:correction_val_esd>
+         <PDBxv:number_chem_shifts>84</PDBxv:number_chem_shifts>
+      </PDBxv:pdbx_nmr_chem_shift_re_offset>
+      <PDBxv:pdbx_nmr_chem_shift_re_offset list_id="1" atom_type="C">
+         <PDBxv:correction_val>0.00</PDBxv:correction_val>
+         <PDBxv:correction_val_err>0.50</PDBxv:correction_val_err>
+         <PDBxv:correction_val_esd>0.00</PDBxv:correction_val_esd>
+         <PDBxv:number_chem_shifts>0</PDBxv:number_chem_shifts>
+      </PDBxv:pdbx_nmr_chem_shift_re_offset>
+      <PDBxv:pdbx_nmr_chem_shift_re_offset list_id="1" atom_type="CA">
+         <PDBxv:correction_val>0.09</PDBxv:correction_val>
+         <PDBxv:correction_val_err>0.50</PDBxv:correction_val_err>
+         <PDBxv:correction_val_esd>0.13</PDBxv:correction_val_esd>
+         <PDBxv:number_chem_shifts>90</PDBxv:number_chem_shifts>
+      </PDBxv:pdbx_nmr_chem_shift_re_offset>
+      <PDBxv:pdbx_nmr_chem_shift_re_offset list_id="1" atom_type="N">
+         <PDBxv:correction_val>-0.94</PDBxv:correction_val>
+         <PDBxv:correction_val_err>0.50</PDBxv:correction_val_err>
+         <PDBxv:correction_val_esd>0.63</PDBxv:correction_val_esd>
+         <PDBxv:number_chem_shifts>78</PDBxv:number_chem_shifts>
+      </PDBxv:pdbx_nmr_chem_shift_re_offset>
+   </PDBxv:pdbx_nmr_chem_shift_re_offsetCategory>
+   <PDBxv:pdbx_validate_nmr_chem_shiftCategory>
+      <PDBxv:pdbx_validate_nmr_chem_shift list_id="1" id="1">
+         <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>LEU</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>14</PDBxv:auth_seq_id>
+         <PDBxv:auth_atom_id>HG</PDBxv:auth_atom_id>
+         <PDBxv:val>-0.937</PDBxv:val>
+         <PDBxv:target_val>1.510</PDBxv:target_val>
+         <PDBxv:Zscore>-7.415</PDBxv:Zscore>
+         <PDBxv:method>shiftchecker</PDBxv:method>
+      </PDBxv:pdbx_validate_nmr_chem_shift>
+      <PDBxv:pdbx_validate_nmr_chem_shift list_id="1" id="2">
+         <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>PRO</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>30</PDBxv:auth_seq_id>
+         <PDBxv:auth_atom_id>CB</PDBxv:auth_atom_id>
+         <PDBxv:val>62.563</PDBxv:val>
+         <PDBxv:target_val>31.840</PDBxv:target_val>
+         <PDBxv:Zscore>25.818</PDBxv:Zscore>
+         <PDBxv:method>shiftchecker</PDBxv:method>
+      </PDBxv:pdbx_validate_nmr_chem_shift>
+      <PDBxv:pdbx_validate_nmr_chem_shift list_id="1" id="3">
+         <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>PRO</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>39</PDBxv:auth_seq_id>
+         <PDBxv:auth_atom_id>CB</PDBxv:auth_atom_id>
+         <PDBxv:val>62.597</PDBxv:val>
+         <PDBxv:target_val>31.840</PDBxv:target_val>
+         <PDBxv:Zscore>25.846</PDBxv:Zscore>
+         <PDBxv:method>shiftchecker</PDBxv:method>
+      </PDBxv:pdbx_validate_nmr_chem_shift>
+      <PDBxv:pdbx_validate_nmr_chem_shift list_id="1" id="4">
+         <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>PRO</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>7</PDBxv:auth_seq_id>
+         <PDBxv:auth_atom_id>CB</PDBxv:auth_atom_id>
+         <PDBxv:val>62.264</PDBxv:val>
+         <PDBxv:target_val>31.840</PDBxv:target_val>
+         <PDBxv:Zscore>25.566</PDBxv:Zscore>
+         <PDBxv:method>shiftchecker</PDBxv:method>
+      </PDBxv:pdbx_validate_nmr_chem_shift>
+      <PDBxv:pdbx_validate_nmr_chem_shift list_id="1" id="5">
+         <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>PRO</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>73</PDBxv:auth_seq_id>
+         <PDBxv:auth_atom_id>CB</PDBxv:auth_atom_id>
+         <PDBxv:val>62.563</PDBxv:val>
+         <PDBxv:target_val>31.840</PDBxv:target_val>
+         <PDBxv:Zscore>25.818</PDBxv:Zscore>
+         <PDBxv:method>shiftchecker</PDBxv:method>
+      </PDBxv:pdbx_validate_nmr_chem_shift>
+   </PDBxv:pdbx_validate_nmr_chem_shiftCategory>
    <PDBxv:pdbx_percentile_listCategory>
       <PDBxv:pdbx_percentile_list entry_id="5U9B">
          <PDBxv:name>all,nmr</PDBxv:name>

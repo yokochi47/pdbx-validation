@@ -18,7 +18,7 @@
 --  map decimal numbers to: big decimal
 --
 -- Statistics of schema:
---  Generated 446 tables (3510 fields), 0 attr groups, 0 model groups in total
+--  Generated 446 tables (3511 fields), 0 attr groups, 0 model groups in total
 --   Namespaces:
 --    http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), http://www.w3.org/2001/XMLSchema (xsd)
 --   Schema locations:
@@ -30,11 +30,11 @@
 --   User keys:
 --    401 document keys, 0 serial keys, 0 xpath keys
 --   Contents:
---    616 attributes (40 in-place document keys), 2285 elements (5 in-place document keys), 208 simple contents (0 in-place document keys, 0 as attribute, 0 as conditional attribute)
+--    622 attributes (40 in-place document keys), 2280 elements (5 in-place document keys), 208 simple contents (0 in-place document keys, 0 as attribute, 0 as conditional attribute)
 --   Wild cards:
 --    0 any elements, 0 any attributes
 --   Constraints:
---    1 unique constraints from xsd:unique, 234 unique constraints from xsd:key, 129 foreign key constraints from xsd:keyref
+--    1 unique constraints from xsd:unique, 237 unique constraints from xsd:key, 129 foreign key constraints from xsd:keyref
 --
 
 --
@@ -3880,8 +3880,11 @@ CREATE TABLE pdbx_nmr_chem_shift_annotation (
 	auth_asym_id TEXT ,
 	auth_comp_id TEXT ,
 	auth_seq_id TEXT ,
-	list_id INTEGER ,
-	random_coil_index DECIMAL
+	random_coil_index DECIMAL ,
+-- ATTRIBUTE
+	id INTEGER NOT NULL ,
+-- ATTRIBUTE
+	list_id INTEGER NOT NULL
 );
 
 --
@@ -4514,10 +4517,12 @@ CREATE TABLE pdbx_nmr_unmapped_chem_shift (
 	auth_comp_id TEXT ,
 	auth_seq_id TEXT ,
 	details TEXT ,
-	id INTEGER ,
-	list_id INTEGER ,
 	val DECIMAL ,
-	val_err DECIMAL
+	val_err DECIMAL ,
+-- ATTRIBUTE
+	id INTEGER NOT NULL ,
+-- ATTRIBUTE
+	list_id INTEGER NOT NULL
 );
 
 --
@@ -4538,10 +4543,12 @@ CREATE TABLE pdbx_nmr_unparsed_chem_shift (
 	auth_seq_id TEXT ,
 	chem_shift_id INTEGER ,
 	details TEXT ,
-	id INTEGER ,
-	list_id INTEGER ,
 	val DECIMAL ,
-	val_err DECIMAL
+	val_err DECIMAL ,
+-- ATTRIBUTE
+	id INTEGER NOT NULL ,
+-- ATTRIBUTE
+	list_id INTEGER NOT NULL
 );
 
 --
@@ -10010,6 +10017,9 @@ CREATE TABLE symmetry_equiv (
 -- (derived from xsd:key[@name='pdbx_nmr_assigned_chem_shift_listKey_0'])
 --ALTER TABLE pdbx_nmr_assigned_chem_shift_list ADD CONSTRAINT UNQ_pdbx_nmr_assigned_chem_shift_list UNIQUE ( entry_id, id );
 
+-- (derived from xsd:key[@name='pdbx_nmr_chem_shift_annotationKey_0'])
+--ALTER TABLE pdbx_nmr_chem_shift_annotation ADD CONSTRAINT UNQ_pdbx_nmr_chem_shift_annotation UNIQUE ( entry_id, id, list_id );
+
 -- (derived from xsd:key[@name='pdbx_nmr_chem_shift_completenessKey_0'])
 --ALTER TABLE pdbx_nmr_chem_shift_completeness ADD CONSTRAINT UNQ_pdbx_nmr_chem_shift_completeness UNIQUE ( entry_id, atom_group, atom_type, list_id );
 
@@ -10051,6 +10061,12 @@ CREATE TABLE symmetry_equiv (
 
 -- (derived from xsd:key[@name='pdbx_nmr_spectrometerKey_0'])
 --ALTER TABLE pdbx_nmr_spectrometer ADD CONSTRAINT UNQ_pdbx_nmr_spectrometer UNIQUE ( entry_id, spectrometer_id );
+
+-- (derived from xsd:key[@name='pdbx_nmr_unmapped_chem_shiftKey_0'])
+--ALTER TABLE pdbx_nmr_unmapped_chem_shift ADD CONSTRAINT UNQ_pdbx_nmr_unmapped_chem_shift UNIQUE ( entry_id, id, list_id );
+
+-- (derived from xsd:key[@name='pdbx_nmr_unparsed_chem_shiftKey_0'])
+--ALTER TABLE pdbx_nmr_unparsed_chem_shift ADD CONSTRAINT UNQ_pdbx_nmr_unparsed_chem_shift UNIQUE ( entry_id, id, list_id );
 
 -- (derived from xsd:key[@name='pdbx_nonpoly_schemeKey_0'])
 --ALTER TABLE pdbx_nonpoly_scheme ADD CONSTRAINT UNQ_pdbx_nonpoly_scheme UNIQUE ( entry_id, asym_id, ndb_seq_num );

@@ -40,7 +40,8 @@ fi
 DictObjFileCreator -dictSdbFile $DIC_PREFIX.sdb -o $DIC_PREFIX.odb
 Dict2XMLSchema -dictName $DIC_FILE -df $DIC_PREFIX.odb -ns $NAME_SPACE -prefix $DIC_PREFIX
 
-rm -f $DIC_PREFIX.sdb $DIC_PREFIX.odb
+# .sdb and .odb are used for conversion between mmCIF and PDBML
+#rm -f $DIC_PREFIX.sdb $DIC_PREFIX.odb
 
 if [ -e $DIC_FILE ] ; then
 

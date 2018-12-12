@@ -44,7 +44,7 @@ if [ $err != 0 ] || [ $total != $last ] ; then
 
  for proc_id in `seq 1 $MAXPROCS` ; do
 
-  ./scripts/translate_to_rdf_alt_worker.sh -d $RDF_VALID_ALT -l $pdbml_file_list -n $proc_id"of"$MAXPROCS $VALID_OPT &
+  ./scripts/translate_to_rdf_alt_worker.sh -d $RDF_VALID_ALT -l $pdbml_file_list -n $proc_id"of"$MAXPROCS &
 
  done
 

@@ -18,8 +18,10 @@ VALID_INFO=validation_info
 VALID_INFO_ALT=validation-info-alt
 XML_VALID=XML-validation
 RDF_VALID=RDF-validation
+MMCIF_VALID=mmcif-validation
 XML_VALID_ALT=XML-validation-alt
 RDF_VALID_ALT=RDF-validation-alt
+MMCIF_VALID_ALT=mmcif-validation-alt
 
 PDBML_XSD=resource/pdbx-v50.xsd
 PDBML_SQL=resource/pdbx-v50.sql
@@ -42,4 +44,15 @@ MERGE_PDBML_INFO_XSL=stylesheet/merge_pdbml_info.xsl
 
 PDBXV2PDBMLV2RDF_XSL=stylesheet/pdbxv2pdbmlv2rdf.xsl
 PDBMLV2RDF_XSL=stylesheet/pdbmlv2rdf.xsl
+
+pdbx_validation_dic=mmcif_pdbx_validation.dic
+pdbx_validation_odb=pdbx-validation.odb
+pdbx_validation_xsd=`basename $PDBX_VALIDATION_XSD`
+
+has_xml2mmcif_command=true
+
+if [ ! `which xml2mmcif` ] ; then
+ has_xml2mmcif_command=false
+fi
+
 

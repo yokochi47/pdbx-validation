@@ -2,6 +2,13 @@
 
 source ./scripts/env.sh
 
+if [ $has_xml2mmcif_command = "false" ] ; then
+
+ echo "xml2mmcif: command not found..."
+ echo "Please install PDBML2MMCIF (https://sw-tools.rcsb.org/apps/PDBML2CIF/index.html) to generate mmCIF version of wwPDB validation reports."
+
+fi
+
 VALID_OPT=
 
 ARGV=`getopt --long -o "v" "$@"`
@@ -79,10 +86,11 @@ if [ $ext_pdbml_exit_code = 0 ] || [ $ext_info_exit_code = 0 ] || [ $xml_total -
 
  fi
 
-# XML Schema validation for all compressed PDBML-validation
-# ./scripts/validate_all_gz.sh
-
  ./scripts/translate_to_rdf.sh
+
+ if [ $has_xml2mmcif_command != "false" ] ; then
+  ./scripts/translate_to_mmcif.sh
+ fi
 
 # Deprecated: update_pdbml.sh has already removed.
 # ./scripts/sync_delete_with_pdbml.sh
@@ -93,12 +101,22 @@ if [ $ext_pdbml_exit_code = 0 ] || [ $ext_info_exit_code = 0 ] || [ $xml_total -
  ./scripts/compress_pdbml_validation.sh
  ./scripts/compress_rdf_validation.sh
 
-# Option: PDBML-validation-alt
- ./scripts/compress_pdbml_validation_alt.sh
+ if [ $has_xml2mmcif_command != "false" ] ; then
+  ./scripts/compress_mmcif_validation.sh
+ fi
 
-# Option: wwPDB/RDF-validation-alt
- ./scripts/translate_to_rdf_alt.sh 
+ ./scripts/translate_to_rdf_alt.sh
+
+ if [ $has_xml2mmcif_command != "false" ] ; then
+  ./scripts/translate_to_mmcif_alt.sh
+ fi
+
+ ./scripts/compress_pdbml_validation_alt.sh
  ./scripts/compress_rdf_validation_alt.sh
+
+ if [ $has_xml2mmcif_command != "false" ] ; then
+  ./scripts/compress_mmcif_validation_alt.sh
+ fi
 
 fi
 

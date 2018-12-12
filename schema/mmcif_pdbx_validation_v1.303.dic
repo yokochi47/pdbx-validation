@@ -1,7 +1,7 @@
 ###########################################################################
 #
 # File:  mmcif_pdbx_validation.dic
-# Date:  Tue Dec  4 10:28:18 JST 2018
+# Date:  Wed Dec 12 17:30:56 JST 2018
 #
 # Created from files noted:
 #        mmcif_pdbx_v50.dic   - PDB Exchange Data Dictionary (V5.303)
@@ -330,22 +330,25 @@ data_mmcif_pdbx_validation.dic
 >     + Adjust limits for _refine.ls_d_res_high to not include 0
 >     + Remove use of non_negative_int as regular expression incorrect
 >     + Add citation_doi and exp_data_doi for use in citation and pdbx_related_exp_data_set # not mapped
-      + Update item range of '_em_entity_assembly.parent_id' allows non-negative int.
-      + Update units for _em_imaging.c2_aperture_diameter from millimetres to micrometres.
+      + Update item range of '_em_entity_assembly.parent_id' allows non-negative int
+      + Update units for _em_imaging.c2_aperture_diameter from millimetres to micrometres
 ;
   1.302   2018-11-26
 ;
 >     + Add various em_* categories to em_group # not mapped
->     + Add 'Science and Technology Funding Council' and 'Global Challenges Research Fund' 
+>     + Add 'Science and Technology Funding Council' and 'Global Challenges Research Fund'
 >       to _pdbx_audit_support.funding_organization # not mapped
 >     + _pdbx_audit_support.funding_organization mandatory for deposition # not mapped
 >     + _em_imaging.c2_aperture_diameter units changed to microns and lower limit changed to 1 # merged already
 >     + _pdbx_nmr_chem_shift_ref.mol_common_name add glucose to enumeration # not mapped
 ;
-  1.303   2018-12-04
+  1.303   2018-12-12
 ;
 >     + Change ec-type to support new enzyme classifications
 >     + Add TRANSLOCASE to _struct_keywords.pdbx_keywords enumeration # not mapped
+      + Add '_pdbx_nmr_chem_shift_annotation.id' and set category key along with '_pdbx_nmr_chem_shift_annotation.list_id'
+      + Set '_pdbx_nmr_unmapped_chem_shift.id' as category key along with '_pdbx_nmr_unmapped_chem_shift.list_id'
+      + Set '_pdbx_nmr_unparsed_chem_shift.id' as category key along with '_pdbx_nmr_unparsed_chem_shift.list_id'
 ;
 
 #
@@ -60214,6 +60217,9 @@ save_pdbx_nmr_unmapped_chem_shift
     _category.id                  pdbx_nmr_unmapped_chem_shift
     _category.mandatory_code      no
     loop_
+    _category_key.name          '_pdbx_nmr_unmapped_chem_shift.list_id'
+                                '_pdbx_nmr_unmapped_chem_shift.id'
+    loop_
     _category_group.id           'inclusive_group'
                                  'nmr_group'
                                  'validate_vtf_group'
@@ -60401,6 +60407,9 @@ save_pdbx_nmr_unparsed_chem_shift
 ;
     _category.id                  pdbx_nmr_unparsed_chem_shift
     _category.mandatory_code      no
+    loop_
+    _category_key.name          '_pdbx_nmr_unparsed_chem_shift.list_id'
+                                '_pdbx_nmr_unparsed_chem_shift.id'
     loop_
     _category_group.id           'inclusive_group'
                                  'nmr_group'
@@ -60676,9 +60685,25 @@ save_pdbx_nmr_chem_shift_annotation
     _category.id                  pdbx_nmr_chem_shift_annotation
     _category.mandatory_code      no
     loop_
+    _category_key.name          '_pdbx_nmr_chem_shift_annotation.list_id'
+                                '_pdbx_nmr_chem_shift_annotation.id'
+    loop_
     _category_group.id           'inclusive_group'
                                  'nmr_group'
                                  'validate_vtf_group'
+save_
+
+save__pdbx_nmr_chem_shift_annotation.id
+    _item_description.description
+;              The value of _pdbx_nmr_chem_shift_annotation.id must uniquely identify
+               each item in the PDBX_NMR_CHEM_SHIFT_ANNOTATION list.
+
+               This is an integer serial number.
+;
+    _item.name                  '_pdbx_nmr_chem_shift_annotation.id'
+    _item.category_id             pdbx_nmr_chem_shift_annotation
+    _item.mandatory_code          yes
+    _item_type.code               int
 save_
 
 save__pdbx_nmr_chem_shift_annotation.list_id
@@ -61500,6 +61525,7 @@ pdbx_struct_nmr_ens_dom_lim         1   pdbx_struct_nmr_ens_dom_lim:pdbx_struct_
 pdbx_nmr_unmapped_chem_shift        1   pdbx_nmr_unmapped_chem_shift:pdbx_nmr_assigned_chem_shift_list:1          . .
 pdbx_nmr_unparsed_chem_shift        1   pdbx_nmr_unparsed_chem_shift:pdbx_nmr_assigned_chem_shift_list:1          . .
 pdbx_missing_nmr_star_item          1   pdbx_missing_nmr_star_item:pdbx_nmr_assigned_chem_shift_list:1            . .
+pdbx_nmr_chem_shift_annotation      1   pdbx_nmr_chem_shift_annotation:pdbx_nmr_assigned_chem_shift_list:1        . .
 pdbx_validate_nmr_chem_shift        1   pdbx_validate_nmr_chem_shift:pdbx_nmr_assigned_chem_shift_list:1          . .
 pdbx_nmr_chem_shift_re_offset       1   pdbx_nmr_chem_shift_re_offset:pdbx_nmr_assigned_chem_shift_list:1         . .
 pdbx_nmr_chem_shift_completeness    1   pdbx_nmr_chem_shift_completeness:pdbx_nmr_assigned_chem_shift_list:1      . .
