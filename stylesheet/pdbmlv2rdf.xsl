@@ -1788,6 +1788,28 @@
   </xsl:template>
 
 
+  <xsl:template match="PDBxv:datablock/PDBxv:pdbx_nmr_chem_shift_annotationCategory/PDBxv:pdbx_nmr_chem_shift_annotation">
+      <PDBov:has_pdbx_nmr_chem_shift_annotation>
+      <PDBov:pdbx_nmr_chem_shift_annotation rdf:about="{$base}/pdbx_nmr_chem_shift_annotation/{translate(@id,' ^','_')},{translate(@list_id,' ^','_')}">
+        <PDBov:of_datablock rdf:resource="{$base}"/>
+      <xsl:if test="@list_id!=''">
+        <PDBov:reference_to_pdbx_nmr_assigned_chem_shift_list>
+	  <rdf:Description  rdf:about="{$base}/pdbx_nmr_assigned_chem_shift_list/{translate(@list_id,' ^','_')}">
+	    <PDBov:referenced_by_pdbx_nmr_chem_shift_annotation rdf:resource="{$base}/pdbx_nmr_chem_shift_annotation/{translate(@id,' ^','_')},{translate(@list_id,' ^','_')}"/>
+	  </rdf:Description>
+        </PDBov:reference_to_pdbx_nmr_assigned_chem_shift_list>
+            <!-- pdbx_nmr_assigned_chem_shift_listKeyref_0_0_1_0 -->
+        
+      </xsl:if>
+      <xsl:apply-templates select="@*"/>
+      <xsl:apply-templates select="@*" mode="linked"/>
+      <xsl:apply-templates/>
+      <xsl:apply-templates mode="linked"/>
+      </PDBov:pdbx_nmr_chem_shift_annotation>
+      </PDBov:has_pdbx_nmr_chem_shift_annotation>
+  </xsl:template>
+
+
   <xsl:template match="PDBxv:datablock/PDBxv:pdbx_nmr_chem_shift_completenessCategory/PDBxv:pdbx_nmr_chem_shift_completeness">
       <PDBov:has_pdbx_nmr_chem_shift_completeness>
       <PDBov:pdbx_nmr_chem_shift_completeness rdf:about="{$base}/pdbx_nmr_chem_shift_completeness/{translate(@atom_group,' ^','_')},{translate(@atom_type,' ^','_')},{translate(@list_id,' ^','_')}">
@@ -2048,6 +2070,50 @@
       <xsl:apply-templates mode="linked"/>
       </PDBov:pdbx_nmr_spectrometer>
       </PDBov:has_pdbx_nmr_spectrometer>
+  </xsl:template>
+
+
+  <xsl:template match="PDBxv:datablock/PDBxv:pdbx_nmr_unmapped_chem_shiftCategory/PDBxv:pdbx_nmr_unmapped_chem_shift">
+      <PDBov:has_pdbx_nmr_unmapped_chem_shift>
+      <PDBov:pdbx_nmr_unmapped_chem_shift rdf:about="{$base}/pdbx_nmr_unmapped_chem_shift/{translate(@id,' ^','_')},{translate(@list_id,' ^','_')}">
+        <PDBov:of_datablock rdf:resource="{$base}"/>
+      <xsl:if test="@list_id!=''">
+        <PDBov:reference_to_pdbx_nmr_assigned_chem_shift_list>
+	  <rdf:Description  rdf:about="{$base}/pdbx_nmr_assigned_chem_shift_list/{translate(@list_id,' ^','_')}">
+	    <PDBov:referenced_by_pdbx_nmr_unmapped_chem_shift rdf:resource="{$base}/pdbx_nmr_unmapped_chem_shift/{translate(@id,' ^','_')},{translate(@list_id,' ^','_')}"/>
+	  </rdf:Description>
+        </PDBov:reference_to_pdbx_nmr_assigned_chem_shift_list>
+            <!-- pdbx_nmr_assigned_chem_shift_listKeyref_0_0_4_0 -->
+        
+      </xsl:if>
+      <xsl:apply-templates select="@*"/>
+      <xsl:apply-templates select="@*" mode="linked"/>
+      <xsl:apply-templates/>
+      <xsl:apply-templates mode="linked"/>
+      </PDBov:pdbx_nmr_unmapped_chem_shift>
+      </PDBov:has_pdbx_nmr_unmapped_chem_shift>
+  </xsl:template>
+
+
+  <xsl:template match="PDBxv:datablock/PDBxv:pdbx_nmr_unparsed_chem_shiftCategory/PDBxv:pdbx_nmr_unparsed_chem_shift">
+      <PDBov:has_pdbx_nmr_unparsed_chem_shift>
+      <PDBov:pdbx_nmr_unparsed_chem_shift rdf:about="{$base}/pdbx_nmr_unparsed_chem_shift/{translate(@id,' ^','_')},{translate(@list_id,' ^','_')}">
+        <PDBov:of_datablock rdf:resource="{$base}"/>
+      <xsl:if test="@list_id!=''">
+        <PDBov:reference_to_pdbx_nmr_assigned_chem_shift_list>
+	  <rdf:Description  rdf:about="{$base}/pdbx_nmr_assigned_chem_shift_list/{translate(@list_id,' ^','_')}">
+	    <PDBov:referenced_by_pdbx_nmr_unparsed_chem_shift rdf:resource="{$base}/pdbx_nmr_unparsed_chem_shift/{translate(@id,' ^','_')},{translate(@list_id,' ^','_')}"/>
+	  </rdf:Description>
+        </PDBov:reference_to_pdbx_nmr_assigned_chem_shift_list>
+            <!-- pdbx_nmr_assigned_chem_shift_listKeyref_0_0_5_0 -->
+        
+      </xsl:if>
+      <xsl:apply-templates select="@*"/>
+      <xsl:apply-templates select="@*" mode="linked"/>
+      <xsl:apply-templates/>
+      <xsl:apply-templates mode="linked"/>
+      </PDBov:pdbx_nmr_unparsed_chem_shift>
+      </PDBov:has_pdbx_nmr_unparsed_chem_shift>
   </xsl:template>
 
 

@@ -82,7 +82,7 @@
   <xsl:variable name="last_cond_rel_rota">
     <xsl:choose>
       <xsl:when test="/wwPDB-validation-information/Entry/@relative-percentile-percent-rota-outliers"><xsl:value-of select="$last_cond_abs_rota+1"/></xsl:when>
-      <xsl:when test="/wwPDB-validation-information/ModelledEntityInstance[@relative_sidechain_percentile and @relative_sidechain_percentile!='NotAvailable']"><xsl:value-of select="$last_cond_abs_rota+1"/></xsl:when>  
+      <xsl:when test="/wwPDB-validation-information/ModelledEntityInstance[@relative_sidechain_percentile and @relative_sidechain_percentile!='NotAvailable']"><xsl:value-of select="$last_cond_abs_rota+1"/></xsl:when>
       <xsl:otherwise><xsl:value-of select="$last_cond_abs_rota"/></xsl:otherwise>
     </xsl:choose>
   </xsl:variable>
@@ -104,7 +104,7 @@
   <xsl:variable name="last_cond_abs_rsrz">
     <xsl:choose>
       <xsl:when test="/wwPDB-validation-information/Entry/@absolute-percentile-percent-RSRZ-outliers"><xsl:value-of select="$last_cond_rel_rfree+1"/></xsl:when>
-      <xsl:when test="/wwPDB-validation-information/ModelledEntityInstance[@absolute_RSRZ_percentile and @absolute_RSRZ_percentile!='NotAvailable']"><xsl:value-of select="$last_cond_rel_rfree+1"/></xsl:when>  
+      <xsl:when test="/wwPDB-validation-information/ModelledEntityInstance[@absolute_RSRZ_percentile and @absolute_RSRZ_percentile!='NotAvailable']"><xsl:value-of select="$last_cond_rel_rfree+1"/></xsl:when>
       <xsl:otherwise><xsl:value-of select="$last_cond_rel_rfree"/></xsl:otherwise>
     </xsl:choose>
   </xsl:variable>
@@ -112,7 +112,7 @@
   <xsl:variable name="last_cond_rel_rsrz">
     <xsl:choose>
       <xsl:when test="/wwPDB-validation-information/Entry/@relative-percentile-percent-RSRZ-outliers"><xsl:value-of select="$last_cond_abs_rsrz+1"/></xsl:when>
-      <xsl:when test="/wwPDB-validation-information/ModelledEntityInstance[@relative_RSRZ_percentile and @relative_RSRZ_percentile!='NotAvailable']"><xsl:value-of select="$last_cond_abs_rsrz+1"/></xsl:when>   
+      <xsl:when test="/wwPDB-validation-information/ModelledEntityInstance[@relative_RSRZ_percentile and @relative_RSRZ_percentile!='NotAvailable']"><xsl:value-of select="$last_cond_abs_rsrz+1"/></xsl:when>
       <xsl:otherwise><xsl:value-of select="$last_cond_abs_rsrz"/></xsl:otherwise>
     </xsl:choose>
   </xsl:variable>
@@ -608,7 +608,7 @@ Program name, <xsl:value-of select="@name"/>, is not listed in XSLT code.
   <!-- chemical_shift_list starts -->
 
   <xsl:template name="pdbx_missing_nmr_star_item">
-    <xsl:for-each select="current()/chemical_shift_list">
+    <xsl:for-each select="current()">
       <xsl:variable name="list_id"><xsl:value-of select="@list_id"/></xsl:variable>
       <xsl:for-each select="missing_nmrstar_tag">
         <PDBxv:pdbx_missing_nmr_star_item>
@@ -621,7 +621,7 @@ Program name, <xsl:value-of select="@name"/>, is not listed in XSLT code.
   </xsl:template>
 
   <xsl:template name="pdbx_nmr_assigned_chem_shift_list">
-    <xsl:for-each select="current()/chemical_shift_list">
+    <xsl:for-each select="current()">
     <PDBxv:pdbx_nmr_assigned_chem_shift_list>
       <xsl:attribute name="id"><xsl:value-of select="@list_id"/></xsl:attribute>
 <!-- unmapped data items
@@ -659,11 +659,12 @@ chemical shift list type, <xsl:value-of select="@type"/>, is not listed in XSLT 
   </xsl:template>
 
   <xsl:template name="pdbx_nmr_chem_shift_annotation">
-    <xsl:for-each select="current()/chemical_shift_list">
+    <xsl:for-each select="current()">
       <xsl:variable name="list_id"><xsl:value-of select="@list_id"/></xsl:variable>
       <xsl:for-each select="random_coil_index">
         <PDBxv:pdbx_nmr_chem_shift_annotation>
-          <xsl:element name="PDBxv:list_id"><xsl:value-of select="$list_id"/></xsl:element>
+          <xsl:attribute name="list_id"><xsl:value-of select="$list_id"/></xsl:attribute>
+          <xsl:attribute name="id"><xsl:value-of select="position()"/></xsl:attribute>
           <xsl:element name="PDBxv:auth_asym_id"><xsl:value-of select="@chain"/></xsl:element>
           <xsl:element name="PDBxv:auth_comp_id"><xsl:value-of select="@rescode"/></xsl:element>
           <xsl:element name="PDBxv:auth_seq_id"><xsl:value-of select="@resnum"/></xsl:element>
@@ -674,7 +675,7 @@ chemical shift list type, <xsl:value-of select="@type"/>, is not listed in XSLT 
   </xsl:template>
 
   <xsl:template name="pdbx_nmr_chem_shift_completeness_well_defined">
-    <xsl:for-each select="current()/chemical_shift_list">
+    <xsl:for-each select="current()">
       <xsl:variable name="list_id"><xsl:value-of select="@list_id"/></xsl:variable>
       <xsl:for-each select="assignment_completeness_well_defined">
         <xsl:variable name="atom_group"><xsl:value-of select="@type"/></xsl:variable>
@@ -697,7 +698,7 @@ chemical shift list type, <xsl:value-of select="@type"/>, is not listed in XSLT 
   </xsl:template>
 
   <xsl:template name="pdbx_nmr_chem_shift_completeness_full_length">
-    <xsl:for-each select="current()/chemical_shift_list">
+    <xsl:for-each select="current()">
       <xsl:variable name="list_id"><xsl:value-of select="@list_id"/></xsl:variable>
       <xsl:for-each select="assignment_completeness_full_length">
         <xsl:variable name="atom_group"><xsl:value-of select="@type"/></xsl:variable>
@@ -720,7 +721,7 @@ chemical shift list type, <xsl:value-of select="@type"/>, is not listed in XSLT 
   </xsl:template>
 
   <xsl:template name="pdbx_nmr_chem_shift_re_offset">
-    <xsl:for-each select="current()/chemical_shift_list">
+    <xsl:for-each select="current()">
       <xsl:variable name="list_id"><xsl:value-of select="@list_id"/></xsl:variable>
       <xsl:for-each select="referencing_offset">
         <PDBxv:pdbx_nmr_chem_shift_re_offset>
@@ -736,11 +737,12 @@ chemical shift list type, <xsl:value-of select="@type"/>, is not listed in XSLT 
   </xsl:template>
 
   <xsl:template name="pdbx_nmr_unmapped_chem_shift">
-    <xsl:for-each select="current()/chemical_shift_list">
+    <xsl:for-each select="current()">
       <xsl:variable name="list_id"><xsl:value-of select="@list_id"/></xsl:variable>
       <xsl:for-each select="unmapped_chemical_shift">
         <PDBxv:pdbx_nmr_unmapped_chem_shift>
-          <xsl:element name="PDBxv:list_id"><xsl:value-of select="$list_id"/></xsl:element>
+          <xsl:attribute name="list_id"><xsl:value-of select="$list_id"/></xsl:attribute>
+          <xsl:attribute name="id"><xsl:value-of select="position()"/></xsl:attribute>
           <xsl:element name="PDBxv:auth_asym_id"><xsl:value-of select="@chain"/></xsl:element>
           <xsl:element name="PDBxv:auth_comp_id"><xsl:value-of select="@rescode"/></xsl:element>
           <xsl:element name="PDBxv:auth_seq_id"><xsl:value-of select="@resnum"/></xsl:element>
@@ -755,11 +757,12 @@ chemical shift list type, <xsl:value-of select="@type"/>, is not listed in XSLT 
   </xsl:template>
 
   <xsl:template name="pdbx_nmr_unparsed_chem_shift">
-    <xsl:for-each select="current()/chemical_shift_list">
+    <xsl:for-each select="current()">
       <xsl:variable name="list_id"><xsl:value-of select="@list_id"/></xsl:variable>
       <xsl:for-each select="unparsed_chemical_shift">
         <PDBxv:pdbx_nmr_unparsed_chem_shift>
-          <xsl:element name="PDBxv:list_id"><xsl:value-of select="$list_id"/></xsl:element>
+          <xsl:attribute name="list_id"><xsl:value-of select="$list_id"/></xsl:attribute>
+          <xsl:attribute name="id"><xsl:value-of select="position()"/></xsl:attribute>
           <xsl:element name="PDBxv:chem_shift_id"><xsl:value-of select="@id"/></xsl:element>
           <xsl:element name="PDBxv:auth_asym_id"><xsl:value-of select="@chain"/></xsl:element>
           <xsl:element name="PDBxv:auth_comp_id"><xsl:value-of select="@rescode"/></xsl:element>
@@ -775,7 +778,7 @@ chemical shift list type, <xsl:value-of select="@type"/>, is not listed in XSLT 
   </xsl:template>
 
   <xsl:template name="pdbx_validate_nmr_chem_shift">
-    <xsl:for-each select="current()/chemical_shift_list">
+    <xsl:for-each select="current()">
       <xsl:variable name="list_id"><xsl:value-of select="@list_id"/></xsl:variable>
       <xsl:for-each select="chemical_shift_outlier">
         <PDBxv:pdbx_validate_nmr_chem_shift>

@@ -98,6 +98,32 @@ if [ -d $RDF_VALID ] ; then
 
 fi
 
+if [ -d $MMCIF_VALID_ALT ] ; then
+
+ find $MMCIF_VALID_ALT -name '*.cif' | cut -d '/' -f 2 | cut -d '-' -f 1 > $pdb_id_list
+
+ while read pdb_id ; do
+  if [ ! -e $SRC_DIR/${pdb_id:1:2}/$pdb_id/$pdb_id"_validation.xml.gz" ] ; then
+   echo deleting $MMCIF_VALID_ALT/$pdb_id-validation-alt.cif
+   rm -f $MMCIF_VALID_ALT/$pdb_id-validation-alt.cif
+  fi
+ done < $pdb_id_list
+
+fi
+
+if [ -d $MMCIF_VALID ] ; then
+
+ find $MMCIF_VALID -name '*.cif' | cut -d '/' -f 2 | cut -d '-' -f 1 > $pdb_id_list
+
+ while read pdb_id ; do
+  if [ ! -e $SRC_DIR/${pdb_id:1:2}/$pdb_id/$pdb_id"_validation.xml.gz" ] ; then
+   echo deleting $MMCIF_VALID/$pdb_id-validation-full.cif
+   rm -f $MMCIF_VALID/$pdb_id-validation-full.cif
+  fi
+ done < $pdb_id_list
+
+fi
+
 if [ -d $XML_VALID_ALT ] ; then
 
  find $XML_VALID_ALT -name '*.xml.gz' | cut -d '/' -f 3 | cut -d '-' -f 1 > $pdb_id_list
@@ -145,6 +171,32 @@ if [ -d $RDF_VALID ] ; then
   if [ ! -e $SRC_DIR/${pdb_id:1:2}/$pdb_id/$pdb_id"_validation.xml.gz" ] ; then
    echo deleting $RDF_VALID/${pdb_id:1:2}/$pdb_id/$pdb_id-validation.rdf.gz
    rm -rf $RDF_VALID/${pdb_id:1:2}/$pdb_id
+  fi
+ done < $pdb_id_list
+
+fi
+
+if [ -d $MMCIF_VALID_ALT ] ; then
+
+ find $MMCIF_VALID_ALT -name '*.cif.gz' | cut -d '/' -f 4 | cut -d '-' -f 1 > $pdb_id_list
+
+ while read pdb_id ; do
+  if [ ! -e $SRC_DIR/${pdb_id:1:2}/$pdb_id/$pdb_id"_validation.xml.gz" ] ; then
+   echo deleting $MMCIF_VALID_ALT/${pdb_id:1:2}/$pdb_id/$pdb_id-validation-alt.cif.gz
+   rm -rf $MMCIF_VALID_ALT/${pdb_id:1:2}/$pdb_id
+  fi
+ done < $pdb_id_list
+
+fi
+
+if [ -d $MMCIF_VALID ] ; then
+
+ find $MMCIF_VALID -name '*.cif.gz' | cut -d '/' -f 4 | cut -d '-' -f 1 > $pdb_id_list
+
+ while read pdb_id ; do
+  if [ ! -e $SRC_DIR/${pdb_id:1:2}/$pdb_id/$pdb_id"_validation.xml.gz" ] ; then
+   echo deleting $MMCIF_VALID/${pdb_id:1:2}/$pdb_id/$pdb_id-validation-full.cif.gz
+   rm -rf $MMCIF_VALID/${pdb_id:1:2}/$pdb_id
   fi
  done < $pdb_id_list
 

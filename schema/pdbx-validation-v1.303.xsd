@@ -16207,13 +16207,6 @@ This data item is a pointer to attribute auth_seq_id in category atom_site in th
                         </xsd:documentation>
                      </xsd:annotation>
                   </xsd:element>
-                  <xsd:element name="list_id" minOccurs="1" maxOccurs="1" type="xsd:int">
-                     <xsd:annotation>
-                        <xsd:documentation xml:lang="en">
-Pointer to attribute id in category pdbx_nmr_chem_shift_list. 
-                        </xsd:documentation>
-                     </xsd:annotation>
-                  </xsd:element>
                   <xsd:element name="random_coil_index"
                                minOccurs="0"
                                maxOccurs="1"
@@ -16226,6 +16219,23 @@ Assigned chemical shift value in ppm.
                      </xsd:annotation>
                   </xsd:element>
                </xsd:all>
+               <xsd:attribute name="id" use="required" type="xsd:int">
+                  <xsd:annotation>
+                     <xsd:documentation xml:lang="en">
+The value of attribute id in category pdbx_nmr_chem_shift_annotation must uniquely identify
+ each item in the PDBX_NMR_CHEM_SHIFT_ANNOTATION list.
+
+This is an integer serial number.
+                     </xsd:documentation>
+                  </xsd:annotation>
+               </xsd:attribute>
+               <xsd:attribute name="list_id" use="required" type="xsd:int">
+                  <xsd:annotation>
+                     <xsd:documentation xml:lang="en">
+Pointer to attribute id in category pdbx_nmr_chem_shift_list. 
+                     </xsd:documentation>
+                  </xsd:annotation>
+               </xsd:attribute>
             </xsd:complexType>
          </xsd:element>
       </xsd:sequence>
@@ -19126,23 +19136,6 @@ A diagnostinc message while mapping assigned chemical shifts to atoms in the NMR
                         </xsd:documentation>
                      </xsd:annotation>
                   </xsd:element>
-                  <xsd:element name="id" minOccurs="1" maxOccurs="1" type="xsd:int">
-                     <xsd:annotation>
-                        <xsd:documentation xml:lang="en">
-The value of attribute id in category pdbx_nmr_unmapped_chem_shift must uniquely identify
- each item in the PDBX_NMR_UNMAPPED_CHEM_SHIFT list.
-
-This is an integer serial number.
-                        </xsd:documentation>
-                     </xsd:annotation>
-                  </xsd:element>
-                  <xsd:element name="list_id" minOccurs="1" maxOccurs="1" type="xsd:int">
-                     <xsd:annotation>
-                        <xsd:documentation xml:lang="en">
-Pointer to attribute id in category pdbx_nmr_chem_shift_list. 
-                        </xsd:documentation>
-                     </xsd:annotation>
-                  </xsd:element>
                   <xsd:element name="val"
                                minOccurs="0"
                                maxOccurs="1"
@@ -19166,6 +19159,23 @@ Estimated or measured error in the assigned chemical shift value in ppm.
                      </xsd:annotation>
                   </xsd:element>
                </xsd:all>
+               <xsd:attribute name="id" use="required" type="xsd:int">
+                  <xsd:annotation>
+                     <xsd:documentation xml:lang="en">
+The value of attribute id in category pdbx_nmr_unmapped_chem_shift must uniquely identify
+ each item in the PDBX_NMR_UNMAPPED_CHEM_SHIFT list.
+
+This is an integer serial number.
+                     </xsd:documentation>
+                  </xsd:annotation>
+               </xsd:attribute>
+               <xsd:attribute name="list_id" use="required" type="xsd:int">
+                  <xsd:annotation>
+                     <xsd:documentation xml:lang="en">
+Pointer to attribute id in category pdbx_nmr_chem_shift_list. 
+                     </xsd:documentation>
+                  </xsd:annotation>
+               </xsd:attribute>
             </xsd:complexType>
          </xsd:element>
       </xsd:sequence>
@@ -19286,23 +19296,6 @@ A diagnostinc message while parsing assigned chemical shifts.
                         </xsd:documentation>
                      </xsd:annotation>
                   </xsd:element>
-                  <xsd:element name="id" minOccurs="1" maxOccurs="1" type="xsd:int">
-                     <xsd:annotation>
-                        <xsd:documentation xml:lang="en">
-The value of attribute id in category pdbx_nmr_unparsed_chem_shift must uniquely identify
- each item in the PDBX_NMR_UNPARSED_CHEM_SHIFT list.
-
-This is an integer serial number.
-                        </xsd:documentation>
-                     </xsd:annotation>
-                  </xsd:element>
-                  <xsd:element name="list_id" minOccurs="1" maxOccurs="1" type="xsd:int">
-                     <xsd:annotation>
-                        <xsd:documentation xml:lang="en">
-Pointer to attribute id in category pdbx_nmr_chem_shift_list. 
-                        </xsd:documentation>
-                     </xsd:annotation>
-                  </xsd:element>
                   <xsd:element name="val"
                                minOccurs="0"
                                maxOccurs="1"
@@ -19326,6 +19319,23 @@ Estimated or measured error in the assigned chemical shift value in ppm.
                      </xsd:annotation>
                   </xsd:element>
                </xsd:all>
+               <xsd:attribute name="id" use="required" type="xsd:int">
+                  <xsd:annotation>
+                     <xsd:documentation xml:lang="en">
+The value of attribute id in category pdbx_nmr_unparsed_chem_shift must uniquely identify
+ each item in the PDBX_NMR_UNPARSED_CHEM_SHIFT list.
+
+This is an integer serial number.
+                     </xsd:documentation>
+                  </xsd:annotation>
+               </xsd:attribute>
+               <xsd:attribute name="list_id" use="required" type="xsd:int">
+                  <xsd:annotation>
+                     <xsd:documentation xml:lang="en">
+Pointer to attribute id in category pdbx_nmr_chem_shift_list. 
+                     </xsd:documentation>
+                  </xsd:annotation>
+               </xsd:attribute>
             </xsd:complexType>
          </xsd:element>
       </xsd:sequence>
@@ -58001,7 +58011,7 @@ identifier.
       <xsd:keyref name="pdbx_nmr_assigned_chem_shift_listKeyref_0_0_1_0"
                   refer="PDBxv:pdbx_nmr_assigned_chem_shift_listKey_0">
          <xsd:selector xpath="PDBxv:pdbx_nmr_chem_shift_annotationCategory/PDBxv:pdbx_nmr_chem_shift_annotation"/>
-         <xsd:field xpath="PDBxv:list_id"/>
+         <xsd:field xpath="@list_id"/>
       </xsd:keyref>
       <xsd:keyref name="pdbx_nmr_assigned_chem_shift_listKeyref_0_0_2_0"
                   refer="PDBxv:pdbx_nmr_assigned_chem_shift_listKey_0">
@@ -58016,18 +58026,23 @@ identifier.
       <xsd:keyref name="pdbx_nmr_assigned_chem_shift_listKeyref_0_0_4_0"
                   refer="PDBxv:pdbx_nmr_assigned_chem_shift_listKey_0">
          <xsd:selector xpath="PDBxv:pdbx_nmr_unmapped_chem_shiftCategory/PDBxv:pdbx_nmr_unmapped_chem_shift"/>
-         <xsd:field xpath="PDBxv:list_id"/>
+         <xsd:field xpath="@list_id"/>
       </xsd:keyref>
       <xsd:keyref name="pdbx_nmr_assigned_chem_shift_listKeyref_0_0_5_0"
                   refer="PDBxv:pdbx_nmr_assigned_chem_shift_listKey_0">
          <xsd:selector xpath="PDBxv:pdbx_nmr_unparsed_chem_shiftCategory/PDBxv:pdbx_nmr_unparsed_chem_shift"/>
-         <xsd:field xpath="PDBxv:list_id"/>
+         <xsd:field xpath="@list_id"/>
       </xsd:keyref>
       <xsd:keyref name="pdbx_nmr_assigned_chem_shift_listKeyref_0_0_6_0"
                   refer="PDBxv:pdbx_nmr_assigned_chem_shift_listKey_0">
          <xsd:selector xpath="PDBxv:pdbx_validate_nmr_chem_shiftCategory/PDBxv:pdbx_validate_nmr_chem_shift"/>
          <xsd:field xpath="@list_id"/>
       </xsd:keyref>
+      <xsd:key name="pdbx_nmr_chem_shift_annotationKey_0">
+         <xsd:selector xpath="PDBxv:pdbx_nmr_chem_shift_annotationCategory/PDBxv:pdbx_nmr_chem_shift_annotation"/>
+         <xsd:field xpath="@id"/>
+         <xsd:field xpath="@list_id"/>
+      </xsd:key>
       <xsd:key name="pdbx_nmr_chem_shift_completenessKey_0">
          <xsd:selector xpath="PDBxv:pdbx_nmr_chem_shift_completenessCategory/PDBxv:pdbx_nmr_chem_shift_completeness"/>
          <xsd:field xpath="@atom_group"/>
@@ -58090,6 +58105,16 @@ identifier.
       <xsd:key name="pdbx_nmr_spectrometerKey_0">
          <xsd:selector xpath="PDBxv:pdbx_nmr_spectrometerCategory/PDBxv:pdbx_nmr_spectrometer"/>
          <xsd:field xpath="@spectrometer_id"/>
+      </xsd:key>
+      <xsd:key name="pdbx_nmr_unmapped_chem_shiftKey_0">
+         <xsd:selector xpath="PDBxv:pdbx_nmr_unmapped_chem_shiftCategory/PDBxv:pdbx_nmr_unmapped_chem_shift"/>
+         <xsd:field xpath="@id"/>
+         <xsd:field xpath="@list_id"/>
+      </xsd:key>
+      <xsd:key name="pdbx_nmr_unparsed_chem_shiftKey_0">
+         <xsd:selector xpath="PDBxv:pdbx_nmr_unparsed_chem_shiftCategory/PDBxv:pdbx_nmr_unparsed_chem_shift"/>
+         <xsd:field xpath="@id"/>
+         <xsd:field xpath="@list_id"/>
       </xsd:key>
       <xsd:key name="pdbx_nonpoly_schemeKey_0">
          <xsd:selector xpath="PDBxv:pdbx_nonpoly_schemeCategory/PDBxv:pdbx_nonpoly_scheme"/>

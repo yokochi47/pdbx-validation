@@ -34,6 +34,13 @@ if [ ! -e $PDBMLV2RDF_XSL ] ; then
 
 fi
 
+if [ $has_xml2mmcif_command = "false" ] ; then
+
+ echo "xml2mmcif: command not found..."
+ echo "Please install PDBML2MMCIF (https://sw-tools.rcsb.org/apps/PDBML2CIF/index.html) to generate mmCIF version of wwPDB validation reports."
+
+fi
+
 WORK_DIR=test
 
 for arg ; do
@@ -64,13 +71,39 @@ done
 mkdir -p $WORK_DIR/$PDBML_EXT
 mkdir -p $WORK_DIR/$VALID_INFO_ALT
 mkdir -p $WORK_DIR/$XML_VALID
-mkdir -p $WORK_DIR/$RDF_VALID
 
 if [ ! -d $WORK_DIR/$XML_VALID_ALT ] ; then
  ( cd $WORK_DIR; ln -s $VALID_INFO_ALT $XML_VALID_ALT )
 fi
 
+mkdir -p $WORK_DIR/$RDF_VALID
 mkdir -p $WORK_DIR/$RDF_VALID_ALT
+
+if [ $has_xml2mmcif_command != "false" ] ; then
+
+ for dirname in $WORK_DIR/$XML_VALID $WORK_DIR/$XML_VALID_ALT ; do
+
+  if [ ! -e $dirname/$pdbx_validation_xsd ] ; then
+   ( cd $dirname; ln -s ../../$PDBX_VALIDATION_XSD . )
+  fi
+
+ done
+
+ for dirname in $WORK_DIR/$MMCIF_VALID $WORK_DIR/$MMCIF_VALID_ALT ; do
+
+  mkdir -p $dirname
+
+  for dicfile in $pdbx_validation_dic $pdbx_validation_odb ; do
+
+   if [ ! -e $dirname/$dicfile ] ; then
+    ( cd $dirname; ln -s ../../schema/$dicfile . )
+   fi
+
+  done
+
+ done
+
+fi
 
 for pdbml_file in $WORK_DIR/pdbml/*.xml ; do
 
@@ -128,6 +161,32 @@ for pdbml_file in $WORK_DIR/pdbml/*.xml ; do
  java -jar $SAXON -s:$info_alt_file -xsl:$PDBMLV2RDF_XSL -o:$rdf_valid_alt_file || ( echo $0 aborted. && exit 1 )
 
  echo " generated: "$rdf_valid_alt_file
+
+ if [ $has_xml2mmcif_command != "false" ] ; then
+
+  pdbml_valid_file=$pdbid-validation-full.xml
+  mmcif_valid_file=$pdbid-validation-full.cif
+
+  ( cd $WORK_DIR/$MMCIF_VALID ; xml2mmcif -xml ../$XML_VALID/$pdbml_valid_file -dict $pdbx_validation_dic -df $pdbx_validation_odb > /dev/null && mv ../$XML_VALID/$pdbml_valid_file.cif $mmcif_valid_file )
+
+  if [ $? = 0 ] ; then
+   echo " generated: "$WORK_DIR/$MMCIF_VALID/$mmcif_valid_file
+  else
+   exit 1
+  fi
+
+  info_alt_file=$pdbid-validation-alt.xml
+  mmcif_valid_alt_file=$pdbid-validation-alt.cif
+
+  ( cd $WORK_DIR/$MMCIF_VALID_ALT ; xml2mmcif -xml ../$VALID_INFO_ALT/$info_alt_file -dict $pdbx_validation_dic -df $pdbx_validation_odb > /dev/null && mv ../$VALID_INFO_ALT/$info_alt_file.cif $mmcif_valid_alt_file )
+
+  if [ $? = 0 ] ; then
+   echo " generated: "$WORK_DIR/$MMCIF_VALID_ALT/$mmcif_valid_alt_file
+  else
+   exit 1
+  fi
+
+fi
 
 done
 
