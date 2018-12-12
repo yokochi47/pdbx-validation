@@ -68,10 +68,10 @@ File path | Document
 
 - Bulk download via rsync protocol
 
-	- PDBML-validation:<br />
+	- mmCIF-validation:<br />
 	 `% rsync -av --delete rsync://bmrbpub.pdbj.org/mmcif-valid .`
 
-	- PDBML-validation-alt (light version):<br />
+	- mmCIF-validation-alt (light version):<br />
 	 `% rsync -av --delete rsync://bmrbpub.pdbj.org/mmcif-valid-alt .`
 
 	- PDBML-validation:<br />
@@ -106,6 +106,7 @@ File path | Document
 	- Add '_pdbx_nmr_chem_shift_annotation.id' and set category key along with '_pdbx_nmr_chem_shift_annotation.list_id'.
 	- Set '_pdbx_nmr_unmapped_chem_shift.id' as category key along with '_pdbx_nmr_unmapped_chem_shift.list_id'.
 	- Set '_pdbx_nmr_unparsed_chem_shift.id' as category key along with '_pdbx_nmr_unparsed_chem_shift.list_id'.
+	- Update 'extract_info.xsl' style sheet which caused translation errors of NMR structure entries.
 	- Add support for mmCIF version of wwPDB validation reports using PDBML2CIF command.
 
 - **Dec 4, 2018**: Release v1.3.11
