@@ -149,7 +149,7 @@ for pdbml_file in $WORK_DIR/pdbml/*.xml ; do
 
  echo " validated: "$pdbml_valid_file
 
- rdf_valid_file=$WORK_DIR/$RDF_VALID/$pdbid-validation.rdf
+ rdf_valid_file=$WORK_DIR/$RDF_VALID/$pdbid-validation-full.rdf
 
  java -jar $SAXON -s:$pdbml_valid_file -xsl:$PDBMLV2RDF_XSL -o:$rdf_valid_file || ( echo $0 aborted. && exit 1 )
 

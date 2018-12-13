@@ -51,7 +51,7 @@ pdbx_validation_xsd=`basename $PDBX_VALIDATION_XSD`
 
 has_xml2mmcif_command=true
 
-if [ ! `which xml2mmcif` ] ; then
+if [ ! `which xml2mmcif 2> /dev/null` ] ; then
  has_xml2mmcif_command=false
 fi
 
