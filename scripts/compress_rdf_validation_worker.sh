@@ -46,7 +46,7 @@ do
 
  if [ $proc_id_mod = $PROC_ID ] ; then
 
-  pdb_id=`basename $rdf_file -validation.rdf`
+  pdb_id=`basename $rdf_file -validation-full.rdf`
   div_dir=$WORK_DIR/${pdb_id:1:2}/$pdb_id
 
   if [ ! -d $div_dir ] ; then
@@ -56,7 +56,7 @@ do
    mkdir -p $div_dir
   fi
 
-  mv -f $rdf_file $div_dir && gzip $div_dir/$pdb_id-validation.rdf
+  mv -f $rdf_file $div_dir && gzip $div_dir/$pdb_id-validation-full.rdf
 
  fi
 

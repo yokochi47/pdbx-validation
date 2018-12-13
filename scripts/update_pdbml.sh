@@ -146,7 +146,7 @@ if [ $weekday -ge 1 ] && [ $weekday -le 4 ] ; then
  if [ -d $RDF_VALID ] ; then
   while read pdb_id ; do
    [ -z "$pdb_id" ] || [[ "$pdb_id" =~ ^#.* ]] && continue
-   rm -f $RDF_VALID/$pdb_id-validation.rdf
+   rm -f $RDF_VALID/$pdb_id-validation-full.rdf
   done < $chk_sum_log
  fi
 
