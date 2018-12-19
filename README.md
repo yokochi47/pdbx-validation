@@ -1,6 +1,6 @@
 ﻿# pdbx-validation
 
-The pdbx-validation is a generation tool for alternative [wwPDB validation reports](https://www.wwpdb.org/validation/validation-reports), which includes [PDBx/mmCIF](http://mmcif.wwpdb.org/) compatible version of validation report (**mmCIF-validation** and **PDBML-validation**), RDF version of validation report (**wwPDB/RDF-validation**) and a series of ontologies, **wwPDB Validation Information Dictionary**, **PDBML-validation Schema** and **wwPDB/OWL-validation**.
+The pdbx-validation is a generation tool of alternative [wwPDB validation reports](https://www.wwpdb.org/validation/validation-reports), which includes [PDBx/mmCIF](http://mmcif.wwpdb.org/) compatible versions of validation reports (**mmCIF-validation** and **PDBML-validation**), RDF version of validation reports (**wwPDB/RDF-validation**), and a series of ontologies; **wwPDB Validation Information Dictionary**, **PDBML-validation Schema**, and **wwPDB/OWL-validation**.
 
 ## Usage
 
@@ -49,7 +49,7 @@ File path | Document
 	- mmCIF-validation: [5h0s-validation-full.cif](https://github.com/yokochi47/pdbx-validation/blob/master/test/mmcif-validation/5h0s-validation-full.cif)
 	- mmCIF-validation-alt: [5h0s-validation-alt.cif](https://github.com/yokochi47/pdbx-validation/blob/master/test/mmcif-validation-alt/5h0s-validation-alt.cif)
 	- PDBML-validation: [5h0s-validation-full.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/XML-validation/5h0s-validation-full.xml)
-	- PDBML-validation: [5h0s-validation-alt.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/validation-info-alt/5h0s-validation-alt.xml)
+	- PDBML-validation-alt: [5h0s-validation-alt.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/validation-info-alt/5h0s-validation-alt.xml)
 	- wwPDB/RDF-validation: [5h0s-validation-full.rdf](https://github.com/yokochi47/pdbx-validation/blob/master/test/RDF-validation/5h0s-validation-full.rdf)
 	- wwPDB/RDF-validation-alt: [5h0s-validation-alt.rdf](https://github.com/yokochi47/pdbx-validation/blob/master/test/RDF-validation-alt/5h0s-validation-alt.rdf)
 
@@ -97,18 +97,20 @@ File path | Document
 - [**Git (git)**](https://git-scm.com), used to install external libraries.
 - [**mmCIF Dictionary Suite**](https://sw-tools.rcsb.org/apps/MMCIF-DICT-SUITE/index.html), optionally used to generate XML Schema from the wwPDB Validation Information Dictionary.
 - [**PDBML2CIF**](https://sw-tools.rcsb.org/apps/PDBML2CIF/index.html), optionally, used to generate mmCIF version of wwPDB validation reports.
+- [**Raptor RDF Syntax Library**](http://librdf.org/raptor/), optionally, used to validate RDF syntax.
 - [**PostgreSQL**](https://www.postgresql.org), optionally used to import XML contents to relational database.
 - [**Virtuoso**](https://www.openlinksw.com/wiki/main/Main), oprionally used as SPARQL endpoint of wwPDB/RDF-validation.
 
 ## Release notes
 
-- **Dec 13, 2018**: Release v1.4.0
+- **Dec 19, 2018**: Release v1.4.0
 	- Add '_pdbx_nmr_chem_shift_annotation.id' and set category key along with '_pdbx_nmr_chem_shift_annotation.list_id'.
 	- Set '_pdbx_nmr_unmapped_chem_shift.id' as category key along with '_pdbx_nmr_unmapped_chem_shift.list_id'.
 	- Set '_pdbx_nmr_unparsed_chem_shift.id' as category key along with '_pdbx_nmr_unparsed_chem_shift.list_id'.
 	- Update 'extract_info.xsl' style sheet which caused translation errors of NMR structure entries.
 	- Add support for mmCIF version of wwPDB validation reports using PDBML2CIF command.
 	- Change file extension of wwPDB/RDF-validation form validation.rdf to validation-full.rdf.
+	- Add RDF syntac validation when Raptor RDF Syntax Library is available.
 
 - **Dec 4, 2018**: Release v1.3.11
 	- Update wwPDB Validation Information Dictionary from v1.302 to 1.303.

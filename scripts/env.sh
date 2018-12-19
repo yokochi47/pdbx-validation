@@ -55,4 +55,9 @@ if [ ! `which xml2mmcif 2> /dev/null` ] ; then
  has_xml2mmcif_command=false
 fi
 
+has_rapper_command=true
+
+if [ ! `which rapper 2> /dev/null` ] ; then
+ has_rapper_command=false
+fi
 
