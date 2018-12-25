@@ -156,8 +156,8 @@ if [ -d $RDF_VALID_ALT ] ; then
 
  while read pdb_id ; do
   if [ ! -e $SRC_DIR/${pdb_id:1:2}/$pdb_id-noatom.xml.gz ] ; then
-   echo deleting $RDF_VALID_ALT/${pdb_id:1:2}/$pdb_id/$pdb_id-validation-alt.rdf.gz
-   rm -rf $RDF_VALID_ALT/${pdb_id:1:2}/$pdb_id
+   echo deleting $RDF_VALID_ALT/${pdb_id:1:2}/$pdb_id-validation-alt.rdf.gz
+   rm -f $RDF_VALID_ALT/${pdb_id:1:2}/$pdb_id-validation-alt.rdf.gz
   fi
  done < $pdb_id_list
 
@@ -169,8 +169,8 @@ if [ -d $RDF_VALID ] ; then
 
  while read pdb_id ; do
   if [ ! -e $SRC_DIR/${pdb_id:1:2}/$pdb_id-noatom.xml.gz ] ; then
-   echo deleting $RDF_VALID/${pdb_id:1:2}/$pdb_id/$pdb_id-validation-full.rdf.gz
-   rm -rf $RDF_VALID/${pdb_id:1:2}/$pdb_id
+   echo deleting $RDF_VALID/${pdb_id:1:2}/$pdb_id-validation-full.rdf.gz
+   rm -f $RDF_VALID/${pdb_id:1:2}/$pdb_id-validation-full.rdf.gz
   fi
  done < $pdb_id_list
 
@@ -182,8 +182,8 @@ if [ -d $MMCIF_VALID_ALT ] ; then
 
  while read pdb_id ; do
   if [ ! -e $SRC_DIR/${pdb_id:1:2}/$pdb_id-noatom.xml.gz ] ; then
-   echo deleting $MMCIF_VALID_ALT/${pdb_id:1:2}/$pdb_id/$pdb_id-validation-alt.cif.gz
-   rm -rf $MMCIF_VALID_ALT/${pdb_id:1:2}/$pdb_id
+   echo deleting $MMCIF_VALID_ALT/${pdb_id:1:2}/$pdb_id-validation-alt.cif.gz
+   rm -f $MMCIF_VALID_ALT/${pdb_id:1:2}/$pdb_id-validation-alt.cif.gz
   fi
  done < $pdb_id_list
 
@@ -195,8 +195,8 @@ if [ -d $MMCIF_VALID ] ; then
 
  while read pdb_id ; do
   if [ ! -e $SRC_DIR/${pdb_id:1:2}/$pdb_id-noatom.xml.gz ] ; then
-   echo deleting $MMCIF_VALID/${pdb_id:1:2}/$pdb_id/$pdb_id-validation-full.cif.gz
-   rm -rf $MMCIF_VALID/${pdb_id:1:2}/$pdb_id
+   echo deleting $MMCIF_VALID/${pdb_id:1:2}/$pdb_id-validation-full.cif.gz
+   rm -f $MMCIF_VALID/${pdb_id:1:2}/$pdb_id-validation-full.cif.gz
   fi
  done < $pdb_id_list
 

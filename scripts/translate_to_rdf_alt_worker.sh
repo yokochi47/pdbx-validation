@@ -51,7 +51,7 @@ do
 
   pdb_id=`basename $pdbml_valid_file -validation-alt.xml`
   rdf_valid_file=$WORK_DIR/$pdb_id-validation-alt.rdf
-  rdf_gz_valid_file=$WORK_DIR/${pdb_id:1:2}/$pdb_id/$pdb_id-validation-alt.rdf.gz
+  rdf_gz_valid_file=$WORK_DIR/${pdb_id:1:2}/$pdb_id-validation-alt.rdf.gz
   err_file=$WORK_DIR/translate_to_rdf_alt_$pdb_id.err
 
   if ( [ ! -e $rdf_valid_file ] && [ ! -e $rdf_gz_valid_file ] ) || [ -e $err_file ] ; then

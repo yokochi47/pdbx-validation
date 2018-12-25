@@ -51,7 +51,7 @@ do
 
   pdb_id=`basename $pdbml_valid_file -validation-alt.xml`
   mmcif_valid_file=$pdb_id-validation-alt.cif
-  mmcif_gz_valid_file=$WORK_DIR/${pdb_id:1:2}/$pdb_id/$pdb_id-validation-alt.cif.gz
+  mmcif_gz_valid_file=$WORK_DIR/${pdb_id:1:2}/$pdb_id-validation-alt.cif.gz
 
   if [ ! -e $WORK_DIR/$mmcif_valid_file ] && [ ! -e $mmcif_gz_valid_file ] ; then
 

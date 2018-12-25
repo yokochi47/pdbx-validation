@@ -175,28 +175,28 @@ if [ $weekday -ge 1 ] && [ $weekday -le 4 ] ; then
  if [ -d $RDF_VALID_ALT ] ; then
   while read pdb_id ; do
    [ -z "$pdb_id" ] || [[ "$pdb_id" =~ ^#.* ]] && continue
-   rm -rf $RDF_VALID_ALT/${pdb_id:1:2}/$pdb_id
+   rm -f $RDF_VALID_ALT/${pdb_id:1:2}/$pdb_id-validation-alt.rdf.gz
   done < $chk_sum_log
  fi
 
  if [ -d $RDF_VALID ] ; then
   while read pdb_id ; do
    [ -z "$pdb_id" ] || [[ "$pdb_id" =~ ^#.* ]] && continue
-   rm -rf $RDF_VALID/${pdb_id:1:2}/$pdb_id
+   rm -f $RDF_VALID/${pdb_id:1:2}/$pdb_id-validation-full.rdf.gz
   done < $chk_sum_log
  fi
 
  if [ -d $MMCIF_VALID_ALT ] ; then
   while read pdb_id ; do
    [ -z "$pdb_id" ] || [[ "$pdb_id" =~ ^#.* ]] && continue
-   rm -rf $MMCIF_VALID_ALT/${pdb_id:1:2}/$pdb_id
+   rm -f $MMCIF_VALID_ALT/${pdb_id:1:2}/$pdb_id-validation-alt.cif.gz
   done < $chk_sum_log
  fi
 
  if [ -d $MMCIF_VALID ] ; then
   while read pdb_id ; do
    [ -z "$pdb_id" ] || [[ "$pdb_id" =~ ^#.* ]] && continue
-   rm -rf $MMCIF_VALID/${pdb_id:1:2}/$pdb_id
+   rm -f $MMCIF_VALID/${pdb_id:1:2}/$pdb_id-validation-full.cif.gz
   done < $chk_sum_log
  fi
 
@@ -216,7 +216,7 @@ if [ $updated = 0 ] || [ ! -e $xml_file_total ] ; then
   last=`cat $xml_file_total`
  fi
 
- total=`find $SRC_DIR -regextype posix-egrep -regex '.*/[0-9][0-9[a-z]{3}_validation.xml.gz' | wc -l`
+ total=`find $SRC_DIR -regextype posix-egrep -regex '.*/[0-9][0-9a-z]{3}_validation.xml.gz' | wc -l`
 
  if [ $total = $last ] ; then
 
