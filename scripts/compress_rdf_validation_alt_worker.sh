@@ -47,7 +47,7 @@ do
  if [ $proc_id_mod = $PROC_ID ] ; then
 
   pdb_id=`basename $rdf_file -validation-alt.rdf`
-  div_dir=$WORK_DIR/${pdb_id:1:2}/$pdb_id
+  div_dir=$WORK_DIR/${pdb_id:1:2}
 
   if [ ! -d $div_dir ] ; then
    if [ -e $div_dir ] ; then
