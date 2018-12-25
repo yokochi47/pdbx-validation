@@ -155,12 +155,22 @@ for pdbml_file in $WORK_DIR/pdbml/*.xml ; do
 
  echo " generated: "$rdf_valid_file
 
+ if [ $has_rapper_command != "false" ] ; then
+  rapper -q -c $rdf_valid_file 2> /dev/null || ( echo $0 aborted. && exit 1 )
+  echo " validated: "$rdf_valid_file
+ fi
+
  info_alt_file=$WORK_DIR/$VALID_INFO_ALT/$pdbid-validation-alt.xml
  rdf_valid_alt_file=$WORK_DIR/$RDF_VALID_ALT/$pdbid-validation-alt.rdf
 
  java -jar $SAXON -s:$info_alt_file -xsl:$PDBMLV2RDF_XSL -o:$rdf_valid_alt_file || ( echo $0 aborted. && exit 1 )
 
  echo " generated: "$rdf_valid_alt_file
+
+ if [ $has_rapper_command != "false" ] ; then
+  rapper -q -c $rdf_valid_alt_file 2> /dev/null || ( echo $0 aborted. && exit 1 )
+  echo " validated: "$rdf_valid_alt_file
+ fi
 
  if [ $has_xml2mmcif_command != "false" ] ; then
 
