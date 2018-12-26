@@ -69,5 +69,17 @@ if [ $total != $last ] ; then
 
 fi
 
+if [ -e $VALID_INFO_ALT/$pdbx_validation_xsd ] ; then
+ rm $VALID_INFO_ALT/$pdbx_validation_xsd
+fi
+
+for dicfile in $pdbx_validation_dic $pdbx_validation_odb ; do
+
+ if [ -e $MMCIF_VALID_ALT/$dicfile ] ; then
+  $MMCIF_VALID_ALT/$dicfile
+ fi
+
+done
+
 echo $MMCIF_VALID is up-to-date.
 
