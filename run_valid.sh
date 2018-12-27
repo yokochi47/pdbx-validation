@@ -14,13 +14,13 @@ fi
 
 if [ ! -z $XML_VALID ] ; then
 # ./scripts/validate_all_xml.sh -d $XML_VALID
- ./scripts/validate_all_gz.sh -d $XML_VALID
+ ./scripts/validate_all_xml_gz.sh -d $XML_VALID
 fi
 
 # PDBML-validation-alt
 
 if [ ! -z $XML_VALID_ALT ] ; then
 # ./scripts/validate_all_xml.sh -d $XML_VALID_ALT
- ./scripts/validate_all_gz.sh -d $XML_VALID_ALT
+ ./scripts/validate_all_xml_gz.sh -d $XML_VALID_ALT
 fi
 
