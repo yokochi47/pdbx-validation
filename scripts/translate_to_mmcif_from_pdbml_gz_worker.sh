@@ -50,7 +50,7 @@ do
  if [ $proc_id_mod = $PROC_ID ] ; then
 
   pdb_id=`basename $pdbml_valid_gz_file -validation-full.xml.gz`
-  pdbml_valid_file=../`basename $pdbml_valid_gz_file .gz`
+  pdbml_valid_file=../`dirname $pdbml_valid_gz_file`/`basename $pdbml_valid_gz_file .gz`
   mmcif_valid_file=$pdb_id-validation-full.cif
   mmcif_gz_valid_file=$WORK_DIR/${pdb_id:1:2}/$pdb_id-validation-full.cif.gz
 
