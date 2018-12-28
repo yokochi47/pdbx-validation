@@ -38,7 +38,7 @@ if [ $err != 0 ] || [ $total != $last ] ; then
  echo
  echo Translating PDBML-validation to wwPDB/RDF-validation...
 
- pdbml_file_list=pdbml_file_list
+ pdbml_file_list=pdbml_to_rdf_file_list
 
  find $XML_VALID -name '*.xml' > $pdbml_file_list
 

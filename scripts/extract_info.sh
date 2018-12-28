@@ -45,7 +45,7 @@ if [ $err != 0 ] || [ $total != $last ] ; then
  echo
  echo Extracting wwPDB Validation Information...
 
- info_file_list=info_file_list
+ info_file_list=extract_info_file_list
 
  find $VALID_INFO -name '*.xml' > $info_file_list
 

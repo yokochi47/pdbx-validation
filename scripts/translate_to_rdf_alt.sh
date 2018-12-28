@@ -38,7 +38,7 @@ if [ $err != 0 ] || [ $total != $last ] ; then
  echo
  echo Translating PDBML-validation-alt to wwPDB/RDF-validation-alt...
 
- pdbml_file_list=pdbml_file_list
+ pdbml_file_list=pdbml_to_rdf_alt_file_list
 
  find $VALID_INFO_ALT -name '*.xml' > $pdbml_file_list
 

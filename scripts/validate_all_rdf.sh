@@ -35,7 +35,7 @@ if [ ! -z $RDF_DIR ] ; then
 
   echo RDF syntax validation: *.rdf documents in $RDF_DIR...
 
-  rdf_file_list=rdf_file_list
+  rdf_file_list=check_${RDF_DIR,,}_rdf_file_list
 
   find $RDF_DIR -name '*.rdf' > $rdf_file_list
 
@@ -44,13 +44,11 @@ if [ ! -z $RDF_DIR ] ; then
 
    err_file=$RDF_DIR/validate_$rdf_file.err
 
-   rapper -q -c $rdf_file 2> $err_file || ( cat $err_file && exit 1 )
-
-   rm -f $err_file
+   rapper -q -c $rdf_file 2> $err_file && rm -f $err_file || ( cat $err_file && exit 1 )
 
   done < $rdf_file_list
 
-  rm $rdf_file_list
+  rm -f $rdf_file_list
 
  fi
 

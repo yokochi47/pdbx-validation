@@ -2,7 +2,7 @@
 
 source ./scripts/env.sh
 
-pdb_id_list=pdb_id_list
+pdb_id_list=sync_info_pdb_id_list
 
 SRC_DIR=$VALID_REPORT
 src_file_ext=_validation.xml.gz

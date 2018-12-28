@@ -2,7 +2,7 @@
 
 source ./scripts/env.sh
 
-pdb_id_list=pdb_id_list
+pdb_id_list=sync_mmcif_pdb_id_list
 
 SRC_DIR=$MMCIF_VALID
 src_file_ext=-validation-full.cif.gz

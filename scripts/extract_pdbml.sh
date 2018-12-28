@@ -58,7 +58,7 @@ if [ $err != 0 ] || [ $total != $last ] ; then
  echo
  echo Extracting PDBML...
 
- pdbml_file_list=pdbml_file_list
+ pdbml_file_list=extract_pdbml_file_list
 
  find $PDBML -name '*.xml' > $pdbml_file_list
 

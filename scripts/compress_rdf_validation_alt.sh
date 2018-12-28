@@ -11,7 +11,7 @@ fi
 echo
 echo Compressing $DB_NAME...
 
-rdf_file_list=rdf_file_list
+rdf_file_list=compress_rdf_alt_file_list
 
 find $RDF_VALID_ALT -name '*.rdf' > $rdf_file_list
 
