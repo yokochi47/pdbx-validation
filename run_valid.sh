@@ -24,3 +24,15 @@ if [ ! -z $XML_VALID_ALT ] ; then
  ./scripts/validate_all_xml_gz.sh -d $XML_VALID_ALT
 fi
 
+# wwPDB/RDF-validation
+
+if [ ! -z $RDF_VALID ] ; then
+ ./scripts/validate_all_rdf_gz.sh -d $RDF_VALID
+fi
+
+# wwPDB/RDF-validation-alt
+
+if [ ! -z $RDF_VALID_ALT ] ; then
+ ./scripts/validate_all_rdf_gz.sh -d $RDF_VALID_ALT
+fi
+
