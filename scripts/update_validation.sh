@@ -242,7 +242,7 @@ fi
 
 date -u +"%b %d, %Y" > /tmp/pdb-validation-last
 
-gz_file_list=gz_file_list
+gz_file_list=${SRC_DIR,,}_gz_file_list
 
 mkdir -p $XML_DIR
 

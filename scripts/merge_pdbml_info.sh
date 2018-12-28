@@ -58,7 +58,7 @@ if [ $err != 0 ] || [ $total != $last ] ; then
  echo
  echo Merging PDBML and wwPDB Validation Information...
 
- pdbml_file_list=pdbml_file_list
+ pdbml_file_list=merge_pdbml_file_list
 
  find $PDBML_EXT -name '*.xml' > $pdbml_file_list
 

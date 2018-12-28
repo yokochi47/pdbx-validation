@@ -56,11 +56,7 @@ do
 
   if [ ! -e $WORK_DIR/$mmcif_valid_file ] && [ ! -e $mmcif_gz_valid_file ] ; then
 
-   ( cd $WORK_DIR ; gunzip -c ../$pdbml_valid_gz_file > $pdbml_valid_file ; xml2mmcif -xml $pdbml_valid_file -dict $pdbx_validation_dic -df $pdbx_validation_odb > /dev/null && mv $pdbml_valid_file.cif $mmcif_valid_file && rm $pdbml_valid_file )
-
-   if [ $? != 0 ] ; then
-    exit 1
-   fi
+   ( cd $WORK_DIR ; gunzip -c ../$pdbml_valid_gz_file > $pdbml_valid_file ; xml2mmcif -xml $pdbml_valid_file -dict $pdbx_validation_dic -df $pdbx_validation_odb > /dev/null && ( mv $pdbml_valid_file.cif $mmcif_valid_file && rm $pdbml_valid_file ) || exit 1 )
 
    if [ $proc_id_mod = 0 ] ; then
     echo -e -n "\rDone "$((proc_id + 1)) of $total ...

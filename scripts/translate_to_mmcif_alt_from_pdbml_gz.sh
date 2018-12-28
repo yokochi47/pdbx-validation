@@ -44,7 +44,7 @@ if [ $total != $last ] ; then
  echo
  echo Translating compressed PDBML-validation-alt to mmCIF-validation-alt...
 
- pdbml_file_list=pdbml_file_list
+ pdbml_file_list=pdbml_gz_to_mmcif_alt_file_list
 
  find $VALID_INFO_ALT -name '*.xml.gz' > $pdbml_file_list
 

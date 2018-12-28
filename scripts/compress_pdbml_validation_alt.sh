@@ -15,7 +15,7 @@ fi
 echo
 echo Compressing $DB_NAME...
 
-pdbml_file_list=pdbml_file_list
+pdbml_file_list=compress_pdbml_alt_file_list
 
 find $VALID_INFO_ALT -name '*.xml' > $pdbml_file_list
 

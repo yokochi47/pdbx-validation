@@ -11,7 +11,7 @@ fi
 echo
 echo Compressing $DB_NAME...
 
-mmcif_file_list=mmcif_file_list
+mmcif_file_list=compress_mmcif_file_list
 
 find $MMCIF_VALID -name '*.cif' > $mmcif_file_list
 

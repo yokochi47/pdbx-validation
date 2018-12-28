@@ -2,7 +2,7 @@
 
 source ./scripts/env.sh
 
-pdb_id_list=pdb_id_list
+pdb_id_list=sync_pdbml_pdb_id_list
 
 SRC_DIR=$PDBML_NOATOM
 src_file_ext=-noatom.xml.gz

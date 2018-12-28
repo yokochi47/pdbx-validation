@@ -44,7 +44,7 @@ if [ $total != $last ] ; then
  echo
  echo Translating PDBML-validation to mmCIF-validation...
 
- pdbml_file_list=pdbml_file_list
+ pdbml_file_list=pdbml_to_mmcif_file_list
 
  find $XML_VALID -name '*.xml' > $pdbml_file_list
 
