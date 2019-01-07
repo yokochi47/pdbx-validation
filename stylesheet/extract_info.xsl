@@ -619,7 +619,8 @@ Program name, <xsl:value-of select="@name"/>, is not listed in XSLT code.
 
   <xsl:template name="pdbx_missing_nmr_star_item">
     <xsl:for-each select="current()">
-      <xsl:variable name="list_id"><xsl:value-of select="@list_id"/></xsl:variable>
+      <!--xsl:variable name="list_id"><xsl:value-of select="@list_id"/></xsl:variable-->
+      <xsl:variable name="list_id"><xsl:value-of select="position()"/></xsl:variable>
       <xsl:for-each select="missing_nmrstar_tag">
         <PDBxv:pdbx_missing_nmr_star_item>
           <xsl:element name="PDBxv:list_id"><xsl:value-of select="$list_id"/></xsl:element>
@@ -633,7 +634,8 @@ Program name, <xsl:value-of select="@name"/>, is not listed in XSLT code.
   <xsl:template name="pdbx_nmr_assigned_chem_shift_list">
     <xsl:for-each select="current()">
     <PDBxv:pdbx_nmr_assigned_chem_shift_list>
-      <xsl:attribute name="id"><xsl:value-of select="@list_id"/></xsl:attribute>
+      <!--xsl:attribute name="id"><xsl:value-of select="@list_id"/></xsl:attribute-->
+      <xsl:attribute name="id"><xsl:value-of select="position()"/></xsl:attribute>
 <!-- unmapped data items
 <PDBxv:chem_shift_13C_err> xsd:decimal </PDBxv:chem_shift_13C_err> [0..1]
 <PDBxv:chem_shift_15N_err> xsd:decimal </PDBxv:chem_shift_15N_err> [0..1]
@@ -670,7 +672,8 @@ chemical shift list type, <xsl:value-of select="@type"/>, is not listed in XSLT 
 
   <xsl:template name="pdbx_nmr_chem_shift_annotation">
     <xsl:for-each select="current()">
-      <xsl:variable name="list_id"><xsl:value-of select="@list_id"/></xsl:variable>
+      <!--xsl:variable name="list_id"><xsl:value-of select="@list_id"/></xsl:variable-->
+      <xsl:variable name="list_id"><xsl:value-of select="position()"/></xsl:variable>
       <xsl:for-each select="random_coil_index">
         <PDBxv:pdbx_nmr_chem_shift_annotation>
           <xsl:attribute name="list_id"><xsl:value-of select="$list_id"/></xsl:attribute>
@@ -686,7 +689,8 @@ chemical shift list type, <xsl:value-of select="@type"/>, is not listed in XSLT 
 
   <xsl:template name="pdbx_nmr_chem_shift_completeness_well_defined">
     <xsl:for-each select="current()">
-      <xsl:variable name="list_id"><xsl:value-of select="@list_id"/></xsl:variable>
+      <!--xsl:variable name="list_id"><xsl:value-of select="@list_id"/></xsl:variable-->
+      <xsl:variable name="list_id"><xsl:value-of select="position()"/></xsl:variable>
       <xsl:for-each select="assignment_completeness_well_defined">
         <xsl:variable name="atom_group"><xsl:value-of select="@type"/></xsl:variable>
         <xsl:variable name="atom_type"><xsl:value-of select="@element"/></xsl:variable>
@@ -709,7 +713,8 @@ chemical shift list type, <xsl:value-of select="@type"/>, is not listed in XSLT 
 
   <xsl:template name="pdbx_nmr_chem_shift_completeness_full_length">
     <xsl:for-each select="current()">
-      <xsl:variable name="list_id"><xsl:value-of select="@list_id"/></xsl:variable>
+      <!--xsl:variable name="list_id"><xsl:value-of select="@list_id"/></xsl:variable-->
+      <xsl:variable name="list_id"><xsl:value-of select="position()"/></xsl:variable>
       <xsl:for-each select="assignment_completeness_full_length">
         <xsl:variable name="atom_group"><xsl:value-of select="@type"/></xsl:variable>
         <xsl:variable name="atom_type"><xsl:value-of select="@element"/></xsl:variable>
@@ -732,7 +737,8 @@ chemical shift list type, <xsl:value-of select="@type"/>, is not listed in XSLT 
 
   <xsl:template name="pdbx_nmr_chem_shift_re_offset">
     <xsl:for-each select="current()">
-      <xsl:variable name="list_id"><xsl:value-of select="@list_id"/></xsl:variable>
+      <!--xsl:variable name="list_id"><xsl:value-of select="@list_id"/></xsl:variable-->
+      <xsl:variable name="list_id"><xsl:value-of select="position()"/></xsl:variable>
       <xsl:for-each select="referencing_offset">
         <PDBxv:pdbx_nmr_chem_shift_re_offset>
           <xsl:attribute name="list_id"><xsl:value-of select="$list_id"/></xsl:attribute>
@@ -748,7 +754,8 @@ chemical shift list type, <xsl:value-of select="@type"/>, is not listed in XSLT 
 
   <xsl:template name="pdbx_nmr_unmapped_chem_shift">
     <xsl:for-each select="current()">
-      <xsl:variable name="list_id"><xsl:value-of select="@list_id"/></xsl:variable>
+      <!--xsl:variable name="list_id"><xsl:value-of select="@list_id"/></xsl:variable-->
+      <xsl:variable name="list_id"><xsl:value-of select="position()"/></xsl:variable>
       <xsl:for-each select="unmapped_chemical_shift">
         <PDBxv:pdbx_nmr_unmapped_chem_shift>
           <xsl:attribute name="list_id"><xsl:value-of select="$list_id"/></xsl:attribute>
@@ -768,7 +775,8 @@ chemical shift list type, <xsl:value-of select="@type"/>, is not listed in XSLT 
 
   <xsl:template name="pdbx_nmr_unparsed_chem_shift">
     <xsl:for-each select="current()">
-      <xsl:variable name="list_id"><xsl:value-of select="@list_id"/></xsl:variable>
+      <!--xsl:variable name="list_id"><xsl:value-of select="@list_id"/></xsl:variable-->
+      <xsl:variable name="list_id"><xsl:value-of select="position()"/></xsl:variable>
       <xsl:for-each select="unparsed_chemical_shift">
         <PDBxv:pdbx_nmr_unparsed_chem_shift>
           <xsl:attribute name="list_id"><xsl:value-of select="$list_id"/></xsl:attribute>
@@ -789,7 +797,8 @@ chemical shift list type, <xsl:value-of select="@type"/>, is not listed in XSLT 
 
   <xsl:template name="pdbx_validate_nmr_chem_shift">
     <xsl:for-each select="current()">
-      <xsl:variable name="list_id"><xsl:value-of select="@list_id"/></xsl:variable>
+      <!--xsl:variable name="list_id"><xsl:value-of select="@list_id"/></xsl:variable-->
+      <xsl:variable name="list_id"><xsl:value-of select="position()"/></xsl:variable>
       <xsl:for-each select="chemical_shift_outlier">
         <PDBxv:pdbx_validate_nmr_chem_shift>
           <xsl:attribute name="list_id"><xsl:value-of select="$list_id"/></xsl:attribute>
