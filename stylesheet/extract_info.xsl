@@ -1539,7 +1539,7 @@ Unmatched components exist in WilsonBaniso, <xsl:value-of select="position()"/>,
 
   <xsl:template name="pdbx_dcc_entity_geometry">
     <xsl:if test="@angles_rmsz or @bonds_rmsz">
-      <PDBxv:pdbx_dcc_entity_geometry entry_id="{$entry_id}">
+      <PDBxv:pdbx_dcc_entity_geometry>
         <xsl:attribute name="label_asym_id"><xsl:value-of select="@said"/></xsl:attribute>
         <xsl:attribute name="PDB_model_num"><xsl:value-of select="@model"/></xsl:attribute>
         <xsl:element name="PDBxv:entity_id"><xsl:value-of select="@ent"/></xsl:element>
