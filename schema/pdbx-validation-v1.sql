@@ -30,11 +30,11 @@
 --   User keys:
 --    401 document keys, 0 serial keys, 0 xpath keys
 --   Contents:
---    622 attributes (40 in-place document keys), 2280 elements (5 in-place document keys), 208 simple contents (0 in-place document keys, 0 as attribute, 0 as conditional attribute)
+--    624 attributes (40 in-place document keys), 2278 elements (5 in-place document keys), 208 simple contents (0 in-place document keys, 0 as attribute, 0 as conditional attribute)
 --   Wild cards:
 --    0 any elements, 0 any attributes
 --   Constraints:
---    1 unique constraints from xsd:unique, 237 unique constraints from xsd:key, 129 foreign key constraints from xsd:keyref
+--    1 unique constraints from xsd:unique, 238 unique constraints from xsd:key, 129 foreign key constraints from xsd:keyref
 --
 
 --
@@ -3863,9 +3863,11 @@ CREATE TABLE pdbx_missing_nmr_star_item (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	entry_id TEXT ,
 	description TEXT ,
-	id INTEGER ,
-	list_id INTEGER ,
-	name TEXT
+	name TEXT ,
+-- ATTRIBUTE
+	id INTEGER NOT NULL ,
+-- ATTRIBUTE
+	list_id INTEGER NOT NULL
 );
 
 --
@@ -10013,6 +10015,9 @@ CREATE TABLE symmetry_equiv (
 
 -- (derived from xsd:key[@name='pdbx_helical_symmetryKey_0'])
 --ALTER TABLE pdbx_helical_symmetry ADD CONSTRAINT UNQ_pdbx_helical_symmetry UNIQUE ( entry_id );
+
+-- (derived from xsd:key[@name='pdbx_missing_nmr_star_itemKey_0'])
+--ALTER TABLE pdbx_missing_nmr_star_item ADD CONSTRAINT UNQ_pdbx_missing_nmr_star_item UNIQUE ( entry_id, id, list_id );
 
 -- (derived from xsd:key[@name='pdbx_nmr_assigned_chem_shift_listKey_0'])
 --ALTER TABLE pdbx_nmr_assigned_chem_shift_list ADD CONSTRAINT UNQ_pdbx_nmr_assigned_chem_shift_list UNIQUE ( entry_id, id );

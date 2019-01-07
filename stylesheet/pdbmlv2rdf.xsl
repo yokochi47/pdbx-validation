@@ -1775,6 +1775,28 @@
   </xsl:template>
 
 
+  <xsl:template match="PDBxv:datablock/PDBxv:pdbx_missing_nmr_star_itemCategory/PDBxv:pdbx_missing_nmr_star_item">
+      <PDBov:has_pdbx_missing_nmr_star_item>
+      <PDBov:pdbx_missing_nmr_star_item rdf:about="{$base}/pdbx_missing_nmr_star_item/{translate(@id,' ^','_')},{translate(@list_id,' ^','_')}">
+        <PDBov:of_datablock rdf:resource="{$base}"/>
+      <xsl:if test="@list_id!=''">
+        <PDBov:reference_to_pdbx_nmr_assigned_chem_shift_list>
+	  <rdf:Description  rdf:about="{$base}/pdbx_nmr_assigned_chem_shift_list/{translate(@list_id,' ^','_')}">
+	    <PDBov:referenced_by_pdbx_missing_nmr_star_item rdf:resource="{$base}/pdbx_missing_nmr_star_item/{translate(@id,' ^','_')},{translate(@list_id,' ^','_')}"/>
+	  </rdf:Description>
+        </PDBov:reference_to_pdbx_nmr_assigned_chem_shift_list>
+            <!-- pdbx_nmr_assigned_chem_shift_listKeyref_0_0_0_0 -->
+        
+      </xsl:if>
+      <xsl:apply-templates select="@*"/>
+      <xsl:apply-templates select="@*" mode="linked"/>
+      <xsl:apply-templates/>
+      <xsl:apply-templates mode="linked"/>
+      </PDBov:pdbx_missing_nmr_star_item>
+      </PDBov:has_pdbx_missing_nmr_star_item>
+  </xsl:template>
+
+
   <xsl:template match="PDBxv:datablock/PDBxv:pdbx_nmr_assigned_chem_shift_listCategory/PDBxv:pdbx_nmr_assigned_chem_shift_list">
       <PDBov:has_pdbx_nmr_assigned_chem_shift_list>
       <PDBov:pdbx_nmr_assigned_chem_shift_list rdf:about="{$base}/pdbx_nmr_assigned_chem_shift_list/{translate(@id,' ^','_')}">

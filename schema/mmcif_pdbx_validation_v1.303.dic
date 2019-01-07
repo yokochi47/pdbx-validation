@@ -350,6 +350,10 @@ data_mmcif_pdbx_validation.dic
       + Set '_pdbx_nmr_unmapped_chem_shift.id' as category key along with '_pdbx_nmr_unmapped_chem_shift.list_id'
       + Set '_pdbx_nmr_unparsed_chem_shift.id' as category key along with '_pdbx_nmr_unparsed_chem_shift.list_id'
 ;
+  1.303.1 2019-01-07
+;
+      + Set '_pdbx_missing_nmr_star_item.list_id' and '_pdbx_missing_nmr_star_item.id' as category key
+;
 
 #
 ###########################################################################
@@ -60612,6 +60616,9 @@ save_pdbx_missing_nmr_star_item
 ;
     _category.id                  pdbx_missing_nmr_star_item
     _category.mandatory_code      no
+    loop_
+    _category_key.name          '_pdbx_missing_nmr_star_item.list_id'
+                                '_pdbx_missing_nmr_star_item.id'
     loop_
     _category_group.id           'inclusive_group'
                                  'nmr_group'
