@@ -76,7 +76,7 @@ fi
 for dicfile in $pdbx_validation_dic $pdbx_validation_odb PdbMlParser.log ; do
 
  if [ -e $MMCIF_VALID_ALT/$dicfile ] ; then
-  $MMCIF_VALID_ALT/$dicfile
+  rm $MMCIF_VALID_ALT/$dicfile
  fi
 
 done

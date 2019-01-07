@@ -253,23 +253,33 @@ Unmatched entry ID in both documents (<xsl:value-of select="$entry_id"/> and <xs
     </xsl:if>
 
     <xsl:call-template name="pdbx_percentile_list"/>
-    <xsl:call-template name="pdbx_percentile_view"/>
-    <xsl:call-template name="pdbx_percentile_conditions"/>
 
-    <PDBxv:pdbx_percentile_entity_viewCategory>
-      <xsl:for-each select="../ModelledEntityInstance">
-        <xsl:call-template name="pdbx_percentile_entity_view"/>
-      </xsl:for-each>
-    </PDBxv:pdbx_percentile_entity_viewCategory>
+    <xsl:if test="@absolute-percentile-RNAsuiteness or @relative-percentile-RNAsuiteness or @absolute-percentile-clashscore or @relative-percentile-clashscore or @absolute-percentile-percent-rama-outliers or @relative-percentile-percent-rama-outliers or @absolute-percentile-percent-rota-outliers or @relative-percentile-percent-rota-outliers or @absolute-percentile-DCC_Rfree or @relative-percentile-DCC_Rfree or @absolute-percentile-percent-RSRZ-outliers or @relative-percentile-percent-RSRZ-outliers">
+      <xsl:call-template name="pdbx_percentile_view"/>
+    </xsl:if>
+
+    <xsl:if test="@absolute-percentile-RNAsuiteness or @relative-percentile-RNAsuiteness or @absolute-percentile-clashscore or @relative-percentile-clashscore or @absolute-percentile-percent-rama-outliers or /wwPDB-validation-information/ModelledEntityInstance/@absolute_rama_percentile or @relative-percentile-percent-rama-outliers or /wwPDB-validation-information/ModelledEntityInstance/@relative_rama_percentile or @absolute-percentile-percent-rota-outliers or /wwPDB-validation-information/ModelledEntityInstance/@absolute_sidechain_percentile or @relative-percentile-percent-rota-outliers or /wwPDB-validation-information/ModelledEntityInstance/@relative_sidechain_percentile or @absolute-percentile-DCC_Rfree or @relative-percentile-DCC_Rfree or @absolute-percentile-percent-RSRZ-outliers or /wwPDB-validation-information/ModelledEntityInstance/@absolute_RSRZ_percentile or @relative-percentile-percent-RSRZ-outliers or /wwPDB-validation-information/ModelledEntityInstance/@absolute_RSRZ_percentile">
+      <xsl:call-template name="pdbx_percentile_conditions"/>
+    </xsl:if>
+
+    <xsl:if test="../ModelledEntityInstance/@absolute_RSRZ_percentile or ../ModelledEntityInstance/@relative_RSRZ_percentile or ../ModelledEntityInstance/@absolute_rama_percentile or ../ModelledEntityInstance/@relative_rama_percentile or ../ModelledEntityInstance/@absolute_sidechain_percentile or ../ModelledEntityInstance/@relative_sidechain_percentile">
+      <PDBxv:pdbx_percentile_entity_viewCategory>
+        <xsl:for-each select="../ModelledEntityInstance">
+          <xsl:call-template name="pdbx_percentile_entity_view"/>
+        </xsl:for-each>
+      </PDBxv:pdbx_percentile_entity_viewCategory>
+    </xsl:if>
 
     <xsl:call-template name="pdbx_dcc_density"/>
     <xsl:call-template name="pdbx_dcc_geometry"/>
 
-    <PDBxv:pdbx_dcc_entity_geometryCategory>
-      <xsl:for-each select="../ModelledEntityInstance">
-        <xsl:call-template name="pdbx_dcc_entity_geometry"/>
-      </xsl:for-each>
-    </PDBxv:pdbx_dcc_entity_geometryCategory>
+    <xsl:if test="../ModelledEntityInstance/@angles_rmsz or ../ModelledEntityInstance/@bonds_rmsz">
+      <PDBxv:pdbx_dcc_entity_geometryCategory>
+        <xsl:for-each select="../ModelledEntityInstance">
+          <xsl:call-template name="pdbx_dcc_entity_geometry"/>
+        </xsl:for-each>
+      </PDBxv:pdbx_dcc_entity_geometryCategory>
+    </xsl:if>
 
     <xsl:call-template name="pdbx_dcc_map_overall"/>
 
@@ -327,7 +337,7 @@ Unmatched entry ID in both documents (<xsl:value-of select="$entry_id"/> and <xs
       </PDBxv:pdbx_validate_rmsd_bondCategory>
     </xsl:if>
 
-    <xsl:if test="../ModelledSubgroup/clash">
+    <xsl:if test="../ModelledSubgroup/clash[not(@cid=../preceding::ModelledSubgroup/clash/@cid) and not(@cid=preceding::clash/@cid)]">
       <PDBxv:pdbx_validate_close_contactCategory>
         <xsl:for-each select="../ModelledSubgroup/clash[not(@cid=../preceding::ModelledSubgroup/clash/@cid) and not(@cid=preceding::clash/@cid)]">
           <xsl:call-template name="append_clash_to_pdbx_validate_close_contact"/>
@@ -967,7 +977,6 @@ chemical shift list type, <xsl:value-of select="@type"/>, is not listed in XSLT 
       </xsl:if>
 
     </PDBxv:pdbx_percentile_viewCategory>
-
   </xsl:template>
 
   <xsl:template name="pdbx_percentile_conditions">
@@ -1530,7 +1539,7 @@ Unmatched components exist in WilsonBaniso, <xsl:value-of select="position()"/>,
 
   <xsl:template name="pdbx_dcc_entity_geometry">
     <xsl:if test="@angles_rmsz or @bonds_rmsz">
-      <PDBxv:pdbx_dcc_entity_geometry>
+      <PDBxv:pdbx_dcc_entity_geometry entry_id="{$entry_id}">
         <xsl:attribute name="label_asym_id"><xsl:value-of select="@said"/></xsl:attribute>
         <xsl:attribute name="PDB_model_num"><xsl:value-of select="@model"/></xsl:attribute>
         <xsl:element name="PDBxv:entity_id"><xsl:value-of select="@ent"/></xsl:element>
