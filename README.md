@@ -106,6 +106,7 @@ File path | Document
 - **Jan 7, 2019**: Release v1.4.1
 	- Ensure identity of chemical_shift_list/@list_id.
 	- Set category key for '_pdbx_missing_nmr_star_item' category.
+	- Fix style sheet to escape validtion error occurs for empty data in 'pdbx_nmr_unmapped_chem_shift.val_err' and 'pdbx_nmr_unmapped_chem_shift.ambiguity_code'.
 
 - **Dec 19, 2018**: Release v1.4.0
 	- Add '_pdbx_nmr_chem_shift_annotation.id' and set category key along with '_pdbx_nmr_chem_shift_annotation.list_id'.
