@@ -771,8 +771,12 @@ chemical shift list type, <xsl:value-of select="@type"/>, is not listed in XSLT 
           <xsl:element name="PDBxv:auth_seq_id"><xsl:value-of select="@resnum"/></xsl:element>
           <xsl:element name="PDBxv:auth_atom_id"><xsl:value-of select="@atom"/></xsl:element>
           <xsl:element name="PDBxv:val"><xsl:value-of select="@value"/></xsl:element>
-          <xsl:element name="PDBxv:val_err"><xsl:value-of select="@error"/></xsl:element>
-          <xsl:element name="PDBxv:ambiguity_code"><xsl:value-of select="@ambiguity"/></xsl:element>
+          <xsl:if test="@error and @error!='?' and @error!='.'">
+            <xsl:element name="PDBxv:val_err"><xsl:value-of select="@error"/></xsl:element>
+          </xsl:if>
+          <xsl:if test="@ambiguity and @ambiguity!='?' and @ambiguity!='.'">
+            <xsl:element name="PDBxv:ambiguity_code"><xsl:value-of select="@ambiguity"/></xsl:element>
+          </xsl:if>
           <xsl:element name="PDBxv:details"><xsl:value-of select="@diagnostic"/></xsl:element>
         </PDBxv:pdbx_nmr_unmapped_chem_shift>
       </xsl:for-each>
@@ -791,8 +795,12 @@ chemical shift list type, <xsl:value-of select="@type"/>, is not listed in XSLT 
           <xsl:element name="PDBxv:auth_seq_id"><xsl:value-of select="@resnum"/></xsl:element>
           <xsl:element name="PDBxv:auth_atom_id"><xsl:value-of select="@atom"/></xsl:element>
           <xsl:element name="PDBxv:val"><xsl:value-of select="@value"/></xsl:element>
-          <xsl:element name="PDBxv:val_err"><xsl:value-of select="@error"/></xsl:element>
-          <xsl:element name="PDBxv:ambiguity_code"><xsl:value-of select="@ambiguity"/></xsl:element>
+          <xsl:if test="@error and @error!='?' and @error!='.'">
+            <xsl:element name="PDBxv:val_err"><xsl:value-of select="@error"/></xsl:element>
+          </xsl:if>
+          <xsl:if test="@ambiguity and @ambiguity!='?' and @ambiguity!='.'">
+            <xsl:element name="PDBxv:ambiguity_code"><xsl:value-of select="@ambiguity"/></xsl:element>
+          </xsl:if>
           <xsl:element name="PDBxv:details"><xsl:value-of select="@diagnostic"/></xsl:element>
         </PDBxv:pdbx_nmr_unparsed_chem_shift>
       </xsl:for-each>
