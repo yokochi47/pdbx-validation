@@ -103,6 +103,10 @@ File path | Document
 
 ## Release notes
 
+- **Jan 7, 2019**: Release v1.4.1
+	- Ensure identity of chemical_shift_list/@list_id.
+	- Set category key for '_pdbx_missing_nmr_star_item' category.
+
 - **Dec 19, 2018**: Release v1.4.0
 	- Add '_pdbx_nmr_chem_shift_annotation.id' and set category key along with '_pdbx_nmr_chem_shift_annotation.list_id'.
 	- Set '_pdbx_nmr_unmapped_chem_shift.id' as category key along with '_pdbx_nmr_unmapped_chem_shift.list_id'.
