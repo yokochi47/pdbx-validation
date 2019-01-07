@@ -114,7 +114,7 @@ File path | Document
 	- Update 'extract_info.xsl' style sheet which caused translation errors of NMR structure entries.
 	- Add support for mmCIF version of wwPDB validation reports using PDBML2CIF command.
 	- Change file extension of wwPDB/RDF-validation form validation.rdf to validation-full.rdf.
-	- Add RDF syntac validation when Raptor RDF Syntax Library is available.
+	- Add RDF syntax validation when Raptor RDF Syntax Library is available.
 
 - **Dec 4, 2018**: Release v1.3.11
 	- Update wwPDB Validation Information Dictionary from v1.302 to 1.303.
@@ -124,7 +124,7 @@ File path | Document
 
 - **Nov 12, 2018**: Release v1.3.9
 	- Update wwPDB Validation Information Dictionary from v1.300 to 1.301.
-	- Update units for _em_imaging.c2_aperture_diameter from millimetres to micrometres.
+	- Update units for _em_imaging.c2_aperture_diameter from millimeters to micrometres.
 
 - **Nov 8, 2018**: Release v1.3.8
 	- Update wwPDB Validation Information Dictionary from v1.299 to 1.300.
@@ -166,7 +166,7 @@ File path | Document
 	- Update wwPDB Validation Information Dictionary from v1.293 to 1.294.
 
 - **May 11, 2018**: Release v1.3.0
-	- More efficient udpate scripts using check sum.
+	- More efficient update scripts using check sum.
 	- Fix PostgreSQL data migration scripts.
 
 - **Apr 18, 2018**: Release v1.2.3
@@ -176,7 +176,7 @@ File path | Document
 	- Add description of bulk download service of the alternative wwPDB validation reports.
 
 - **Apr 5, 2018**: Release v1.2.1
-	- Fix stylesheet to handle null RSR value, null medoid model number.
+	- Fix style sheet to handle null RSR value, null medoid model number.
 	- Enable differential XML Schema validation of compressed PDBML-validation.
 
 - **Mar 23, 2018**: Release v1.2.0
