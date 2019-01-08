@@ -110,6 +110,7 @@ File path | Document
 	- Revise style sheet to support unpaired steric clash (a solo clash/@cid).
 	- Change directory name containing uncompressed validation reports from validation_info to validation-info.
 	- Add mmCIF syntax validation when mmCIF Dictionary Suite is available (CifCheck).
+	- Validate ambiguity code while translation of PDBML-validation.
 
 - **Dec 19, 2018**: Release v1.4.0
 	- Add '_pdbx_nmr_chem_shift_annotation.id' and set category key along with '_pdbx_nmr_chem_shift_annotation.list_id'.
