@@ -103,10 +103,12 @@ File path | Document
 
 ## Release notes
 
-- **Jan 7, 2019**: Release v1.4.1
+- **Jan 8, 2019**: Release v1.4.1
 	- Ensure identity of chemical_shift_list/@list_id.
 	- Set category key for '_pdbx_missing_nmr_star_item' category.
 	- Fix style sheet to escape validtion error occurs for empty data in 'pdbx_nmr_unmapped_chem_shift.val_err' and 'pdbx_nmr_unmapped_chem_shift.ambiguity_code'.
+	- Revise style sheet to support unpaired steric clash (a solo clash/@cid).
+	- Change directory name containing uncompressed validation reports from validation_info to validation-info.
 
 - **Dec 19, 2018**: Release v1.4.0
 	- Add '_pdbx_nmr_chem_shift_annotation.id' and set category key along with '_pdbx_nmr_chem_shift_annotation.list_id'.

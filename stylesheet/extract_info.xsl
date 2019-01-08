@@ -280,7 +280,7 @@ Unmatched entry ID in both documents (<xsl:value-of select="$entry_id"/> and <xs
       <xsl:call-template name="pdbx_percentile_conditions"/>
     </xsl:if>
 
-    <xsl:if test="../ModelledEntityInstance/@absolute_RSRZ_percentile or ../ModelledEntityInstance/@relative_RSRZ_percentile or ../ModelledEntityInstance/@absolute_rama_percentile or ../ModelledEntityInstance/@relative_rama_percentile or ../ModelledEntityInstance/@absolute_sidechain_percentile or ../ModelledEntityInstance/@relative_sidechain_percentile">
+    <xsl:if test="(../ModelledEntityInstance/@absolute_RSRZ_percentile and ../ModelledEntityInstance/@absolute_RSRZ_percentile!='NotAvailable') or (../ModelledEntityInstance/@relative_RSRZ_percentile and ../ModelledEntityInstance/@relative_RSRZ_percentile!='NotAvailable') or (../ModelledEntityInstance/@absolute_rama_percentile and ../ModelledEntityInstance/@absolute_rama_percentile!='NotAvailable') or (../ModelledEntityInstance/@relative_rama_percentile and ../ModelledEntityInstance/@relative_rama_percentile!='NotAvailable') or (../ModelledEntityInstance/@absolute_sidechain_percentile and ../ModelledEntityInstance/@absolute_sidechain_percentile!='NotAvailable') or (../ModelledEntityInstance/@relative_sidechain_percentile and ../ModelledEntityInstance/@relative_sidechain_percentile!='NotAvailable')">
       <PDBxv:pdbx_percentile_entity_viewCategory>
         <xsl:for-each select="../ModelledEntityInstance">
           <xsl:call-template name="pdbx_percentile_entity_view"/>
@@ -1863,58 +1863,86 @@ xsd:decimal
 
   <xsl:template name="append_clash_to_pdbx_validate_close_contact">
     <xsl:variable name="cid"><xsl:value-of select="@cid"/></xsl:variable>
-    <xsl:if test="following::clash/@cid=$cid or ../following::ModelledSubgroup/clash[@cid=$cid]">
-      <PDBxv:pdbx_validate_close_contact>
-        <xsl:attribute name="id"><xsl:value-of select="$count_pdbx_validate_close_contact+position()"/></xsl:attribute>
-        <xsl:element name="PDBxv:PDB_model_num"><xsl:value-of select="../@model"/></xsl:element>
-        <xsl:element name="PDBxv:auth_asym_id_1"><xsl:value-of select="../@chain"/></xsl:element>
-        <xsl:element name="PDBxv:auth_comp_id_1"><xsl:value-of select="../@resname"/></xsl:element>
-        <xsl:element name="PDBxv:auth_seq_id_1"><xsl:value-of select="../@resnum"/></xsl:element>
-        <xsl:if test="../@altcode and ../@altcode!=' '">
-          <xsl:element name="PDBxv:label_alt_id_1"><xsl:value-of select="../@altcode"/></xsl:element>
-        </xsl:if>
-        <xsl:if test="../@icode and ../@icode!=' '">
-          <xsl:element name="PDBxv:PDB_ins_code_1"><xsl:value-of select="../@icode"/></xsl:element>
-        </xsl:if>
-        <xsl:element name="PDBxv:auth_atom_id_1"><xsl:value-of select="@atom"/></xsl:element>
-        <xsl:choose>
-          <xsl:when test="following::clash/@cid=$cid">
-            <xsl:for-each select="following::clash[@cid=$cid]">
-              <xsl:element name="PDBxv:auth_asym_id_2"><xsl:value-of select="../@chain"/></xsl:element>
-              <xsl:element name="PDBxv:auth_comp_id_2"><xsl:value-of select="../@resname"/></xsl:element>
-              <xsl:element name="PDBxv:auth_seq_id_2"><xsl:value-of select="../@resnum"/></xsl:element>
-              <xsl:if test="../@altcode and ../@altcode!=' '">
-                <xsl:element name="PDBxv:label_alt_id_2"><xsl:value-of select="../@altcode"/></xsl:element>
-              </xsl:if>
-              <xsl:if test="../@icode and ../@icode!=' '">
-                <xsl:element name="PDBxv:PDB_ins_code_2"><xsl:value-of select="../@icode"/></xsl:element>
-              </xsl:if>
-              <xsl:element name="PDBxv:auth_atom_id_2"><xsl:value-of select="@atom"/></xsl:element>
-            </xsl:for-each>
-          </xsl:when>
-          <xsl:otherwise>
-            <xsl:for-each select="../following::ModelledSubgroup/clash[@cid=$cid]">
-              <xsl:element name="PDBxv:auth_asym_id_2"><xsl:value-of select="../@chain"/></xsl:element>
-              <xsl:element name="PDBxv:auth_comp_id_2"><xsl:value-of select="../@resname"/></xsl:element>
-              <xsl:element name="PDBxv:auth_seq_id_2"><xsl:value-of select="../@resnum"/></xsl:element>
-              <xsl:if test="../@altcode and ../@altcode!=' '">
-                <xsl:element name="PDBxv:label_alt_id_2"><xsl:value-of select="../@altcode"/></xsl:element>
-              </xsl:if>
-              <xsl:if test="../@icode and ../@icode!=' '">
-                <xsl:element name="PDBxv:PDB_ins_code_2"><xsl:value-of select="../@icode"/></xsl:element>
-              </xsl:if>
-              <xsl:element name="PDBxv:auth_atom_id_2"><xsl:value-of select="@atom"/></xsl:element>
-            </xsl:for-each>
-          </xsl:otherwise>
-        </xsl:choose>
-        <xsl:element name="PDBxv:clash_magnitude"><xsl:value-of select="@clashmag"/></xsl:element>
-        <xsl:element name="PDBxv:dist"><xsl:value-of select="@dist"/></xsl:element>
+    <xsl:choose>
+      <xsl:when test="following::clash/@cid=$cid or ../following::ModelledSubgroup/clash[@cid=$cid]">
+        <PDBxv:pdbx_validate_close_contact>
+          <xsl:attribute name="id"><xsl:value-of select="$count_pdbx_validate_close_contact+position()"/></xsl:attribute>
+          <xsl:element name="PDBxv:PDB_model_num"><xsl:value-of select="../@model"/></xsl:element>
+          <xsl:element name="PDBxv:auth_asym_id_1"><xsl:value-of select="../@chain"/></xsl:element>
+          <xsl:element name="PDBxv:auth_comp_id_1"><xsl:value-of select="../@resname"/></xsl:element>
+          <xsl:element name="PDBxv:auth_seq_id_1"><xsl:value-of select="../@resnum"/></xsl:element>
+          <xsl:if test="../@altcode and ../@altcode!=' '">
+            <xsl:element name="PDBxv:label_alt_id_1"><xsl:value-of select="../@altcode"/></xsl:element>
+          </xsl:if>
+          <xsl:if test="../@icode and ../@icode!=' '">
+            <xsl:element name="PDBxv:PDB_ins_code_1"><xsl:value-of select="../@icode"/></xsl:element>
+          </xsl:if>
+          <xsl:element name="PDBxv:auth_atom_id_1"><xsl:value-of select="@atom"/></xsl:element>
+          <xsl:choose>
+            <xsl:when test="following::clash/@cid=$cid">
+              <xsl:for-each select="following::clash[@cid=$cid]">
+                <xsl:element name="PDBxv:auth_asym_id_2"><xsl:value-of select="../@chain"/></xsl:element>
+                <xsl:element name="PDBxv:auth_comp_id_2"><xsl:value-of select="../@resname"/></xsl:element>
+                <xsl:element name="PDBxv:auth_seq_id_2"><xsl:value-of select="../@resnum"/></xsl:element>
+                <xsl:if test="../@altcode and ../@altcode!=' '">
+                  <xsl:element name="PDBxv:label_alt_id_2"><xsl:value-of select="../@altcode"/></xsl:element>
+                </xsl:if>
+                <xsl:if test="../@icode and ../@icode!=' '">
+                  <xsl:element name="PDBxv:PDB_ins_code_2"><xsl:value-of select="../@icode"/></xsl:element>
+                </xsl:if>
+                <xsl:element name="PDBxv:auth_atom_id_2"><xsl:value-of select="@atom"/></xsl:element>
+              </xsl:for-each>
+            </xsl:when>
+            <xsl:otherwise>
+              <xsl:for-each select="../following::ModelledSubgroup/clash[@cid=$cid]">
+                <xsl:element name="PDBxv:auth_asym_id_2"><xsl:value-of select="../@chain"/></xsl:element>
+                <xsl:element name="PDBxv:auth_comp_id_2"><xsl:value-of select="../@resname"/></xsl:element>
+                <xsl:element name="PDBxv:auth_seq_id_2"><xsl:value-of select="../@resnum"/></xsl:element>
+                <xsl:if test="../@altcode and ../@altcode!=' '">
+                  <xsl:element name="PDBxv:label_alt_id_2"><xsl:value-of select="../@altcode"/></xsl:element>
+                </xsl:if>
+                <xsl:if test="../@icode and ../@icode!=' '">
+                  <xsl:element name="PDBxv:PDB_ins_code_2"><xsl:value-of select="../@icode"/></xsl:element>
+                </xsl:if>
+                <xsl:element name="PDBxv:auth_atom_id_2"><xsl:value-of select="@atom"/></xsl:element>
+              </xsl:for-each>
+            </xsl:otherwise>
+          </xsl:choose>
+          <xsl:element name="PDBxv:clash_magnitude"><xsl:value-of select="@clashmag"/></xsl:element>
+          <xsl:element name="PDBxv:dist"><xsl:value-of select="@dist"/></xsl:element>
 <!-- unmapped data items
 <PDBxv:symm_as_xyz_1> xsd:string </PDBxv:symm_as_xyz_1> [0..1]
 <PDBxv:symm_as_xyz_2> xsd:string </PDBxv:symm_as_xyz_2> [0..1]
 -->
-      </PDBxv:pdbx_validate_close_contact>
-    </xsl:if>
+        </PDBxv:pdbx_validate_close_contact>
+      </xsl:when>
+      <xsl:otherwise>
+        <PDBxv:pdbx_validate_close_contact>
+          <xsl:attribute name="id"><xsl:value-of select="$count_pdbx_validate_close_contact+position()"/></xsl:attribute>
+          <xsl:element name="PDBxv:PDB_model_num"><xsl:value-of select="../@model"/></xsl:element>
+          <xsl:element name="PDBxv:auth_asym_id_1"><xsl:value-of select="../@chain"/></xsl:element>
+          <xsl:element name="PDBxv:auth_comp_id_1"><xsl:value-of select="../@resname"/></xsl:element>
+          <xsl:element name="PDBxv:auth_seq_id_1"><xsl:value-of select="../@resnum"/></xsl:element>
+          <xsl:if test="../@altcode and ../@altcode!=' '">
+            <xsl:element name="PDBxv:label_alt_id_1"><xsl:value-of select="../@altcode"/></xsl:element>
+          </xsl:if>
+          <xsl:if test="../@icode and ../@icode!=' '">
+            <xsl:element name="PDBxv:PDB_ins_code_1"><xsl:value-of select="../@icode"/></xsl:element>
+          </xsl:if>
+          <xsl:element name="PDBxv:auth_atom_id_1"><xsl:value-of select="@atom"/></xsl:element>
+          <xsl:element name="PDBxv:auth_asym_id_2"/>
+          <xsl:element name="PDBxv:auth_comp_id_2"/>
+          <xsl:element name="PDBxv:auth_seq_id_2"/>
+          <xsl:element name="PDBxv:auth_atom_id_2"/>
+          <xsl:element name="PDBxv:clash_magnitude"><xsl:value-of select="@clashmag"/></xsl:element>
+          <xsl:element name="PDBxv:dist"><xsl:value-of select="@dist"/></xsl:element>
+<!-- unmapped data items
+<PDBxv:symm_as_xyz_1> xsd:string </PDBxv:symm_as_xyz_1> [0..1]
+<PDBxv:symm_as_xyz_2> xsd:string </PDBxv:symm_as_xyz_2> [0..1]
+-->
+        </PDBxv:pdbx_validate_close_contact>
+      </xsl:otherwise>
+    </xsl:choose>
   </xsl:template>
 
   <xsl:template name="append_symm_clash_to_pdbx_validate_symm_contact">
