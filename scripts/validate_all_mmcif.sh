@@ -58,7 +58,7 @@ if [ ! -z $MMCIF_DIR ] ; then
    rm -f $cif_dir/$diag_log $cif_dir/$parser_log
 
    ( cd $cif_dir ; CifCheck -f $cif_file -dictSdb $sdb_realpath > /dev/null ; [ -e $diag_log ] && [ `grep -v 'has invalid value "?" in row' $diag_log | sed -e /^$/d | wc -l` = 0 ] && rm -f $diag_log )
-   ( cd $cif_dir ; [ -e $parser_log ] && ( cat $parser_log && exit 1 ) ; [ -e $diag_log ] && ( cat $diag_log && exit 1 ) )
+   ( cd $cif_dir ; [ -e $parser_log ] && ( rm -f $cif_file ; cat $parser_log ) ; [ -e $diag_log ] && ( rm -f $cif_file ; cat $diag_log ) )
 
   done < $cif_file_list
 

@@ -55,7 +55,7 @@ do
 
   if [ ! -e $WORK_DIR/$mmcif_valid_file ] && [ ! -e $mmcif_gz_valid_file ] ; then
 
-   ( cd $WORK_DIR ; xml2mmcif -xml ../$pdbml_valid_file -dict $pdbx_validation_dic -df $pdbx_validation_odb > /dev/null && mv ../$pdbml_valid_file.cif $mmcif_valid_file )
+   ( cd $WORK_DIR ; xml2mmcif -xml ../$pdbml_valid_file -dict $pdbx_validation_dic -df $pdbx_validation_odb > /dev/null && mv -f ../$pdbml_valid_file.cif $mmcif_valid_file )
 
    if [ $proc_id_mod = 0 ] ; then
     echo -e -n "\rDone "$((proc_id + 1)) of $total ...

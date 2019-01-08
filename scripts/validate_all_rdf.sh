@@ -44,7 +44,7 @@ if [ ! -z $RDF_DIR ] ; then
 
    err_file=$RDF_DIR/validate_$rdf_file.err
 
-   rapper -q -c $rdf_file 2> $err_file && rm -f $err_file || ( cat $err_file && exit 1 )
+   rapper -q -c $rdf_file 2> $err_file && rm -f $err_file || ( rm -f $rdf_file ; cat $err_file )
 
   done < $rdf_file_list
 
