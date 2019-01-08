@@ -109,6 +109,7 @@ File path | Document
 	- Fix style sheet to escape validtion error occurs for empty data in 'pdbx_nmr_unmapped_chem_shift.val_err' and 'pdbx_nmr_unmapped_chem_shift.ambiguity_code'.
 	- Revise style sheet to support unpaired steric clash (a solo clash/@cid).
 	- Change directory name containing uncompressed validation reports from validation_info to validation-info.
+	- Add mmCIF syntax validation when mmCIF Dictionary Suite is available (CifCheck).
 
 - **Dec 19, 2018**: Release v1.4.0
 	- Add '_pdbx_nmr_chem_shift_annotation.id' and set category key along with '_pdbx_nmr_chem_shift_annotation.list_id'.
@@ -117,7 +118,7 @@ File path | Document
 	- Update 'extract_info.xsl' style sheet which caused translation errors of NMR structure entries.
 	- Add support for mmCIF version of wwPDB validation reports using PDBML2CIF command.
 	- Change file extension of wwPDB/RDF-validation form validation.rdf to validation-full.rdf.
-	- Add RDF syntax validation when Raptor RDF Syntax Library is available.
+	- Add RDF syntax validation when Raptor RDF Syntax Library is available (rapper).
 
 - **Dec 4, 2018**: Release v1.3.11
 	- Update wwPDB Validation Information Dictionary from v1.302 to 1.303.

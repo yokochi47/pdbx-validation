@@ -49,8 +49,8 @@ for arg ; do
 
  if [[ $pdbid =~ [0-9][0-9a-z]{3} ]] ; then
 
-   pdbml_file=$WORK_DIR/pdbml/$pdbid-noatom.xml
-   info_file=$WORK_DIR/validation_info/$pdbid"_validation.xml"
+   pdbml_file=$WORK_DIR/$PDBML/$pdbid-noatom.xml
+   info_file=$WORK_DIR/$VALID_INFO/$pdbid"_validation.xml"
 
    if [ ! -e $pdbml_file ] ; then
 
@@ -60,7 +60,7 @@ for arg ; do
 
    if [ ! -e $info_file ] ; then
 
-    wget ftp://ftp.wwpdb.org/pub/pdb/validation_reports/${pdbid:1:2}/$pdbid/$pdbid"_validation.xml.gz" -P $WORK_DIR/validation_info; gunzip $info_file.gz
+    wget ftp://ftp.wwpdb.org/pub/pdb/validation_reports/${pdbid:1:2}/$pdbid/$pdbid"_validation.xml.gz" -P $WORK_DIR/$VALID_INFO; gunzip $info_file.gz
 
    fi
 
@@ -93,7 +93,7 @@ if [ $has_xml2mmcif_command != "false" ] ; then
 
   mkdir -p $dirname
 
-  for dicfile in $pdbx_validation_dic $pdbx_validation_odb ; do
+  for dicfile in $pdbx_validation_dic $pdbx_validation_odb $pdbx_validation_sdb ; do
 
    if [ ! -e $dirname/$dicfile ] ; then
     ( cd $dirname; ln -s ../../schema/$dicfile . )
@@ -105,7 +105,7 @@ if [ $has_xml2mmcif_command != "false" ] ; then
 
 fi
 
-for pdbml_file in $WORK_DIR/pdbml/*.xml ; do
+for pdbml_file in $WORK_DIR/$PDBML/*.xml ; do
 
  pdbid=`basename $pdbml_file -noatom.xml`
 
@@ -115,7 +115,7 @@ for pdbml_file in $WORK_DIR/pdbml/*.xml ; do
  echo Processing PDB ID: ${pdbid^^}, "Exptl. method: "$exptl_method" ..."
 
  pdbml_ext_file=$WORK_DIR/$PDBML_EXT/$pdbid-noatom-ext.xml
- info_file=../$WORK_DIR/validation_info/$pdbid"_validation.xml"
+ info_file=../$WORK_DIR/$VALID_INFO/$pdbid"_validation.xml"
 
  java -jar $SAXON -s:$pdbml_file -xsl:$EXT_PDBML_XSL -o:$pdbml_ext_file info_file=$info_file || ( echo $0 aborted. && exit 1 )
 
@@ -125,7 +125,7 @@ for pdbml_file in $WORK_DIR/pdbml/*.xml ; do
 
  echo " validated: "$pdbml_ext_file
 
- info_file=$WORK_DIR/validation_info/$pdbid"_validation.xml"
+ info_file=$WORK_DIR/$VALID_INFO/$pdbid"_validation.xml"
  info_alt_file=$WORK_DIR/$VALID_INFO_ALT/$pdbid-validation-alt.xml
  pdbml_ext_file=../$pdbml_ext_file # add relative path (../) from directory contains target styleseet
 
@@ -185,6 +185,18 @@ for pdbml_file in $WORK_DIR/pdbml/*.xml ; do
    exit 1
   fi
 
+  if [ $has_cifcheck_command != "false" ] ; then
+
+   diag_log=$mmcif_valid_file-diag.log
+   parser_log=$mmcif_valid_file-parser.log
+
+   rm -f $WORK_DIR/$MMCIF_VALID/$diag_log $WORK_DIR/$MMCIF_VALID/$parser_log
+
+   ( cd $WORK_DIR/$MMCIF_VALID ; CifCheck -f $mmcif_valid_file -dictSdb $pdbx_validation_sdb > /dev/null ; [ -e $diag_log ] && [ `grep -v 'has invalid value "?" in row' $diag_log | sed -e /^$/d | wc -l` = 0 ] && rm -f $diag_log )
+   ( cd $WORK_DIR/$MMCIF_VALID ; [ ! -e $diag_log ] && [ ! -e $parser_log ] && echo " validated: "$WORK_DIR/$MMCIF_VALID/$mmcif_valid_file || exit 1 )
+
+  fi
+
   info_alt_file=$pdbid-validation-alt.xml
   mmcif_valid_alt_file=$pdbid-validation-alt.cif
 
@@ -194,6 +206,18 @@ for pdbml_file in $WORK_DIR/pdbml/*.xml ; do
    echo " generated: "$WORK_DIR/$MMCIF_VALID_ALT/$mmcif_valid_alt_file
   else
    exit 1
+  fi
+
+  if [ $has_cifcheck_command != "false" ] ; then
+
+   diag_log=$mmcif_valid_alt_file-diag.log
+   parser_log=$mmcif_valid_alt_file-parser.log
+
+   rm -f $WORK_DIR/$MMCIF_VALID_ALT/$diag_log $WORK_DIR/$MMCIF_VALID_ALT/$parser_log
+
+   ( cd $WORK_DIR/$MMCIF_VALID_ALT ; CifCheck -f $mmcif_valid_alt_file -dictSdb $pdbx_validation_sdb > /dev/null ; [ -e $diag_log ] && [ `grep -v 'has invalid value "?" in row' $diag_log | sed -e /^$/d | wc -l` = 0 ] && rm -f $diag_log )
+   ( cd $WORK_DIR/$MMCIF_VALID_ALT ; [ ! -e $diag_log ] && [ ! -e $parser_log ] && echo " validated: "$WORK_DIR/$MMCIF_VALID_ALT/$mmcif_valid_alt_file || exit 1 )
+
   fi
 
 fi
