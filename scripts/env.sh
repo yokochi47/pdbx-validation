@@ -47,6 +47,7 @@ PDBMLV2RDF_XSL=stylesheet/pdbmlv2rdf.xsl
 
 pdbx_validation_dic=mmcif_pdbx_validation.dic
 pdbx_validation_odb=pdbx-validation.odb
+pdbx_validation_sdb=pdbx-validation.sdb
 pdbx_validation_xsd=`basename $PDBX_VALIDATION_XSD`
 
 has_xml2mmcif_command=true
@@ -59,5 +60,11 @@ has_rapper_command=true
 
 if [ ! `which rapper 2> /dev/null` ] ; then
  has_rapper_command=false
+fi
+
+has_cifcheck_command=true
+
+if [ ! `which CifCheck 2> /dev/null` ] ; then
+ has_cifcheck_command=false
 fi
 
