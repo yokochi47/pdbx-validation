@@ -14,7 +14,7 @@ VALID_REPORT=validation_reports
 
 PDBML=pdbml
 PDBML_EXT=pdbml-ext
-VALID_INFO=validation_info
+VALID_INFO=validation-info
 VALID_INFO_ALT=validation-info-alt
 XML_VALID=XML-validation
 RDF_VALID=RDF-validation
