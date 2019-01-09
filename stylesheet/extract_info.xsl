@@ -789,7 +789,9 @@ chemical shift list type, <xsl:value-of select="@type"/>, is not listed in XSLT 
       <xsl:for-each select="unparsed_chemical_shift">
         <PDBxv:pdbx_nmr_unparsed_chem_shift list_id="{$list_id}">
           <xsl:attribute name="id"><xsl:value-of select="position()"/></xsl:attribute>
-          <xsl:element name="PDBxv:chem_shift_id"><xsl:value-of select="@id"/></xsl:element>
+          <xsl:if test="@id and @id!='?' and @id!='.'">
+            <xsl:element name="PDBxv:chem_shift_id"><xsl:value-of select="@id"/></xsl:element>
+          </xsl:if>
           <xsl:element name="PDBxv:auth_asym_id"><xsl:value-of select="@chain"/></xsl:element>
           <xsl:element name="PDBxv:auth_comp_id"><xsl:value-of select="@rescode"/></xsl:element>
           <xsl:element name="PDBxv:auth_seq_id"><xsl:value-of select="@resnum"/></xsl:element>
