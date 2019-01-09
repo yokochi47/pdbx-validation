@@ -11,14 +11,18 @@ if [ $has_rapper_command = "false" ] ; then
 fi
 
 RDF_DIR=
+DELETE=ture
 
-ARGV=`getopt --long -o "d:" "$@"`
+ARGV=`getopt --long -o "d:r" "$@"`
 eval set -- "$ARGV"
 while true ; do
  case "$1" in
  -d)
   RDF_DIR=$2
   shift
+ ;;
+ -r)
+  DELETE=false
  ;;
  *)
   break
@@ -45,7 +49,7 @@ if [ ! -z $RDF_DIR ] ; then
    rdf_dir=`dirname $rdf_file`
    err_file=$rdf_dir/validate_$rdf_file.err
 
-   rapper -q -c $rdf_file 2> $err_file && rm -f $err_file || ( rm -f $rdf_file ; cat $err_file )
+   rapper -q -c $rdf_file 2> $err_file && rm -f $err_file || ( [ $DELETE = "true" ] && rm -f $rdf_file ; cat $err_file )
 
   done < $rdf_file_list
 
