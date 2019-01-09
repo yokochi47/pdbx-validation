@@ -42,8 +42,9 @@ if [ ! -z $RDF_DIR ] ; then
   while read rdf_gz_file
   do
 
-   rdf_file=$RDF_DIR/`basename $rdf_gz_file .gz`
-   err_file=$RDF_DIR/validate_$rdf_gz_file.err
+   rdf_dir=`dirname $rdf_gz_file`
+   rdf_file=$rdf_dir/`basename $rdf_gz_file .gz`
+   err_file=$rdf_dir/validate_$rdf_gz_file.err
 
    gunzip -c $rdf_gz_file > $rdf_file ; rapper -q -c $rdf_file 2> $err_file && rm -f $rdf_file $err_file || ( rm -f $rdf_file $rdf_gz_file ; cat $err_file )
 

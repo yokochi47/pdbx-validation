@@ -42,7 +42,8 @@ if [ ! -z $RDF_DIR ] ; then
   while read rdf_file
   do
 
-   err_file=$RDF_DIR/validate_$rdf_file.err
+   rdf_dir=`dirname $rdf_file`
+   err_file=$rdf_dir/validate_$rdf_file.err
 
    rapper -q -c $rdf_file 2> $err_file && rm -f $err_file || ( rm -f $rdf_file ; cat $err_file )
 
