@@ -774,7 +774,7 @@ chemical shift list type, <xsl:value-of select="@type"/>, is not listed in XSLT 
           <xsl:if test="@error and @error!='?' and @error!='.'">
             <xsl:element name="PDBxv:val_err"><xsl:value-of select="@error"/></xsl:element>
           </xsl:if>
-          <xsl:if test="@ambiguity and @ambiguity=(1, 2, 3, 4, 5, 6, 9)">
+          <xsl:if test="@ambiguity and @ambiguity=('1','2','3','4','5','6','9')">
             <xsl:element name="PDBxv:ambiguity_code"><xsl:value-of select="@ambiguity"/></xsl:element>
           </xsl:if>
           <xsl:element name="PDBxv:details"><xsl:value-of select="@diagnostic"/></xsl:element>
@@ -798,7 +798,7 @@ chemical shift list type, <xsl:value-of select="@type"/>, is not listed in XSLT 
           <xsl:if test="@error and @error!='?' and @error!='.'">
             <xsl:element name="PDBxv:val_err"><xsl:value-of select="@error"/></xsl:element>
           </xsl:if>
-          <xsl:if test="@ambiguity and @ambiguity=(1, 2, 3, 4, 5, 6, 9)">
+          <xsl:if test="@ambiguity and @ambiguity=('1','2','3','4','5','6','9')">
             <xsl:element name="PDBxv:ambiguity_code"><xsl:value-of select="@ambiguity"/></xsl:element>
           </xsl:if>
           <xsl:element name="PDBxv:details"><xsl:value-of select="@diagnostic"/></xsl:element>
