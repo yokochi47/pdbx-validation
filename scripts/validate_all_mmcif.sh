@@ -11,14 +11,18 @@ if [ $has_cifcheck_command = "false" ] ; then
 fi
 
 MMCIF_DIR=
+DELETE=true
 
-ARGV=`getopt --long -o "d:" "$@"`
+ARGV=`getopt --long -o "d:r" "$@"`
 eval set -- "$ARGV"
 while true ; do
  case "$1" in
  -d)
   MMCIF_DIR=$2
   shift
+ ;;
+ -r)
+  DELETE=false
  ;;
  *)
   break
@@ -58,7 +62,7 @@ if [ ! -z $MMCIF_DIR ] ; then
    rm -f $cif_dir/$diag_log $cif_dir/$parser_log
 
    ( cd $cif_dir ; CifCheck -f $cif_file -dictSdb $sdb_realpath > /dev/null ; [ -e $diag_log ] && [ `grep -v 'has invalid value "?" in row' $diag_log | sed -e /^$/d | wc -l` = 0 ] && rm -f $diag_log )
-   ( cd $cif_dir ; [ -e $parser_log ] && ( rm -f $cif_file ; cat $parser_log ) ; [ -e $diag_log ] && ( rm -f $cif_file ; cat $diag_log ) )
+   ( cd $cif_dir ; [ -e $parser_log ] && ( [ $DELETE = "ture" ] && rm -f $cif_file ; cat $parser_log ) ; [ -e $diag_log ] && ( [ $DELETE = "ture" ] && rm -f $cif_file ; cat $diag_log ) )
 
   done < $cif_file_list
 

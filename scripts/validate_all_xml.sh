@@ -3,14 +3,18 @@
 source ./scripts/env.sh
 
 XML_DIR=
+DELETE=true
 
-ARGV=`getopt --long -o "d:" "$@"`
+ARGV=`getopt --long -o "d:r" "$@"`
 eval set -- "$ARGV"
 while true ; do
  case "$1" in
  -d)
   XML_DIR=$2
   shift
+ ;;
+ -r)
+  DELETE=false
  ;;
  *)
   break
@@ -27,7 +31,11 @@ if [ ! -z $XML_DIR ] ; then
 
  echo XML Schema validation: *.xml documents in $XML_DIR...
 
- java -classpath $XSD2PGSCHEMA xmlvalidator --xsd $PDBX_VALIDATION_XSD --xml $XML_DIR --sync chk_sum_pdbml_valid --del-invalid-xml
+ if [ $DELETE = "true" ] ;
+  java -classpath $XSD2PGSCHEMA xmlvalidator --xsd $PDBX_VALIDATION_XSD --xml $XML_DIR --sync chk_sum_pdbml_valid --del-invalid-xml
+ else
+  java -classpath $XSD2PGSCHEMA xmlvalidator --xsd $PDBX_VALIDATION_XSD --xml $XML_DIR --sync chk_sum_pdbml_valid
+ fi
 
 fi
 
