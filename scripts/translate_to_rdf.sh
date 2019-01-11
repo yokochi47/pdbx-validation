@@ -30,8 +30,8 @@ fi
 mkdir -p $RDF_VALID
 
 last=`find $RDF_VALID -name '*.rdf' | wc -l`
-err=`find $RDF_VALID -name '*.err' | wc -l`
 total=`find $XML_VALID -name '*.xml' | wc -l`
+err=`find $RDF_VALID -name '*.err' | wc -l`
 
 if [ $err != 0 ] || [ $total != $last ] ; then
 

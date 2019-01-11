@@ -29,22 +29,22 @@ fi
 
 mkdir -p $RDF_VALID_ALT
 
-last=`find $RDF_VALID_ALT -name '*.rdf' | wc -l`
-total=`find $VALID_INFO_ALT -name '*.xml' | wc -l`
+last=`find $RDF_VALID_ALT -name '*.rdf.gz' | wc -l`
+total=`find $VALID_INFO_ALT -name '*.xml.gz' | wc -l`
 err=`find $RDF_VALID_ALT -name '*.err' | wc -l`
 
 if [ $err != 0 ] || [ $total != $last ] ; then
 
  echo
- echo Translating PDBML-validation-alt to wwPDB/RDF-validation-alt...
+ echo Translating compressed PDBML-validation-alt to wwPDB/RDF-validation-alt...
 
- pdbml_file_list=pdbml_to_rdf_alt_file_list
+ pdbml_file_list=pdbml_gz_to_rdf_alt_file_list
 
- find $VALID_INFO_ALT -name '*.xml' > $pdbml_file_list
+ find $VALID_INFO_ALT -name '*.xml.gz' > $pdbml_file_list
 
  for proc_id in `seq 1 $MAXPROCS` ; do
 
-  ./scripts/translate_to_rdf_alt_worker.sh -d $RDF_VALID_ALT -l $pdbml_file_list -n $proc_id"of"$MAXPROCS &
+  ./scripts/translate_to_rdf_alt_from_pdbml_gz_worker.sh -d $RDF_VALID_ALT -l $pdbml_file_list -n $proc_id"of"$MAXPROCS &
 
  done
 
