@@ -16,6 +16,7 @@ PDBML=pdbml
 PDBML_EXT=pdbml-ext
 VALID_INFO=validation-info
 VALID_INFO_ALT=validation-info-alt
+VALID_INFO_REV=validation-info-rev
 XML_VALID=XML-validation
 RDF_VALID=RDF-validation
 MMCIF_VALID=mmcif-validation
@@ -44,6 +45,8 @@ MERGE_PDBML_INFO_XSL=stylesheet/merge_pdbml_info.xsl
 
 PDBXV2PDBMLV2RDF_XSL=stylesheet/pdbxv2pdbmlv2rdf.xsl
 PDBMLV2RDF_XSL=stylesheet/pdbmlv2rdf.xsl
+
+REVERT_INFO_XSL=stylesheet/revert_info.xsl
 
 pdbx_validation_dic=mmcif_pdbx_validation.dic
 pdbx_validation_odb=pdbx-validation.odb

@@ -8,17 +8,19 @@
   <xsl:param name="pdbml_ext_file" required="yes"/>
   <xsl:param name="pdbml_ext" select="document($pdbml_ext_file)"/>
 
+  <xsl:variable name="ext_datablock" select="$pdbml_ext/PDBxv:datablock"/>
+
   <xsl:output method="xml" indent="yes"/>
   <xsl:strip-space elements="*"/>
 
   <xsl:variable name="pdb_id"><xsl:value-of select="/wwPDB-validation-information/Entry/@pdbid"/></xsl:variable>
 
-  <xsl:variable name="entry_id"><xsl:value-of select="$pdbml_ext/PDBxv:datablock/PDBxv:entryCategory/PDBxv:entry/@id"/></xsl:variable>
+  <xsl:variable name="entry_id"><xsl:value-of select="$ext_datablock/PDBxv:entryCategory/PDBxv:entry/@id"/></xsl:variable>
   <xsl:variable name="datablock_name"><xsl:value-of select="concat($entry_id,'-validation-alt')"/></xsl:variable>
 
   <!-- experimental method -->
 
-  <xsl:variable name="exptl_method"><xsl:value-of select="$pdbml_ext/PDBxv:datablock/PDBxv:exptlCategory/PDBxv:exptl/@method"/></xsl:variable>
+  <xsl:variable name="exptl_method"><xsl:value-of select="$ext_datablock/PDBxv:exptlCategory/PDBxv:exptl/@method"/></xsl:variable>
 
   <xsl:variable name="x-ray"><xsl:value-of select="contains($exptl_method,'DIFFRACTION') and not(contains($exptl_method,'NEUTRON'))"/></xsl:variable>
   <xsl:variable name="nmr"><xsl:value-of select="contains($exptl_method,'NMR')"/></xsl:variable>
@@ -122,19 +124,19 @@
   </xsl:variable>
 
   <xsl:variable name="count_pdbx_validate_rmsd_angle">
-    <xsl:value-of select="count($pdbml_ext/PDBxv:datablock/PDBxv:pdbx_validate_rmsd_angleCategory/PDBxv:pdbx_validate_rmsd_angle)"/>
+    <xsl:value-of select="count($ext_datablock/PDBxv:pdbx_validate_rmsd_angleCategory/PDBxv:pdbx_validate_rmsd_angle)"/>
   </xsl:variable>
 
   <xsl:variable name="count_pdbx_validate_rmsd_bond">
-    <xsl:value-of select="count($pdbml_ext/PDBxv:datablock/PDBxv:pdbx_validate_rmsd_bondCategory/PDBxv:pdbx_validate_rmsd_bond)"/>
+    <xsl:value-of select="count($ext_datablock/PDBxv:pdbx_validate_rmsd_bondCategory/PDBxv:pdbx_validate_rmsd_bond)"/>
   </xsl:variable>
 
   <xsl:variable name="count_pdbx_validate_close_contact">
-    <xsl:value-of select="count($pdbml_ext/PDBxv:datablock/PDBxv:pdbx_validate_close_contactCategory/PDBxv:pdbx_validate_close_contact)"/>
+    <xsl:value-of select="count($ext_datablock/PDBxv:pdbx_validate_close_contactCategory/PDBxv:pdbx_validate_close_contact)"/>
   </xsl:variable>
 
   <xsl:variable name="count_pdbx_validate_symm_contact">
-    <xsl:value-of select="count($pdbml_ext/PDBxv:datablock/PDBxv:pdbx_validate_symm_contactCategory/PDBxv:pdbx_validate_symm_contact)"/>
+    <xsl:value-of select="count($ext_datablock/PDBxv:pdbx_validate_symm_contactCategory/PDBxv:pdbx_validate_symm_contact)"/>
   </xsl:variable>
 
   <xsl:variable name="count_angle_outlier">
@@ -289,6 +291,7 @@ Unmatched entry ID in both documents (<xsl:value-of select="$entry_id"/> and <xs
     </xsl:if>
 
     <xsl:call-template name="pdbx_dcc_density"/>
+    <xsl:call-template name="pdbx_dcc_density_corr"/>
     <xsl:call-template name="pdbx_dcc_geometry"/>
 
     <xsl:if test="../ModelledEntityInstance/@angles_rmsz or ../ModelledEntityInstance/@bonds_rmsz">
@@ -413,7 +416,7 @@ Unmatched entry ID in both documents (<xsl:value-of select="$entry_id"/> and <xs
                 <xsl:element name="PDBxv:conformers_total_number"><xsl:value-of select="@nmrclust_number_of_models"/></xsl:element>
               </xsl:when>
               <xsl:otherwise>
-                <xsl:element name="PDBxv:conformers_total_number"><xsl:value-of select="$pdbml_ext/PDBxv:datablock/PDBxv:pdbx_nmr_ensembleCategory/PDBxv:pdbx_nmr_ensemble/PDBxv:conformers_submitted_total_number"/></xsl:element>
+                <xsl:element name="PDBxv:conformers_total_number"><xsl:value-of select="$ext_datablock/PDBxv:pdbx_nmr_ensembleCategory/PDBxv:pdbx_nmr_ensemble/PDBxv:conformers_submitted_total_number"/></xsl:element>
               </xsl:otherwise>
             </xsl:choose>
             <xsl:if test="@nmrclust_number_of_outliers">
@@ -1225,6 +1228,9 @@ chemical shift list type, <xsl:value-of select="@type"/>, is not listed in XSLT 
           <xsl:if test="@IoverSigma">
             <xsl:element name="PDBxv:I_over_sigI_resh"><xsl:value-of select="substring-before(@IoverSigma,'(')"/></xsl:element>
           </xsl:if>
+          <xsl:if test="@numMillerIndices">
+            <xsl:element name="PDBxv:reflns_number_obs"><xsl:value-of select="@numMillerIndices"/></xsl:element>
+          </xsl:if>
           <xsl:if test="@babinet_k">
             <xsl:element name="PDBxv:K_babinet"><xsl:value-of select="@babinet_k"/></xsl:element>
           </xsl:if>
@@ -1237,7 +1243,9 @@ chemical shift list type, <xsl:value-of select="@type"/>, is not listed in XSLT 
           <xsl:if test="@TwinL2">
             <xsl:element name="PDBxv:Padilla-Yeates_L2_mean"><xsl:value-of select="@TwinL2"/></xsl:element>
           </xsl:if>
-          <xsl:element name="PDBxv:R_value_R_work"><xsl:value-of select="@DCC_R"/></xsl:element>
+          <xsl:if test="@DCC_R and @DCC_R!='NotAvailable'">
+            <xsl:element name="PDBxv:R_value_R_work"><xsl:value-of select="@DCC_R"/></xsl:element>
+          </xsl:if>
           <xsl:if test="@DCC_Rfree and @DCC_Rfree!='NotAvailable'">
             <xsl:element name="PDBxv:R_value_R_free"><xsl:value-of select="@DCC_Rfree"/></xsl:element>
             <xsl:element name="PDBxv:Rfree-Rwork"><xsl:value-of select="format-number(number(@DCC_Rfree)-number(@DCC_R),'0.00')"/></xsl:element>
@@ -1281,12 +1289,11 @@ Unmatched components exist in WilsonBaniso, <xsl:value-of select="position()"/>,
             <xsl:element name="PDBxv:error"><xsl:value-of select="@TransNCS"/></xsl:element>
           </xsl:if>
           <xsl:element name="PDBxv:iso_B_value_type"><xsl:value-of select="lower-case(@B_factor_type)"/></xsl:element>
-          <xsl:element name="PDBxv:ls_d_res_high"><xsl:value-of select="@PDB-resolution"/></xsl:element>
-          <xsl:if test="@EDS_resolution">
-            <xsl:element name="PDBxv:ls_d_res_high_sf"><xsl:value-of select="@EDS_resolution"/></xsl:element>
+          <xsl:if test="@PDB-resolution and @PDB-resolution!='NotAvailable'">
+            <xsl:element name="PDBxv:ls_d_res_high"><xsl:value-of select="@PDB-resolution"/></xsl:element>
           </xsl:if>
-          <xsl:if test="@EDS_resolution_low">
-            <xsl:element name="PDBxv:ls_d_res_low_sf"><xsl:value-of select="@EDS_resolution_low"/></xsl:element>
+          <xsl:if test="@PDB-resolution-low and @PDB-resolution-low!='NotAvailable'">
+            <xsl:element name="PDBxv:ls_d_res_low"><xsl:value-of select="@PDB-resolution-low"/></xsl:element>
           </xsl:if>
           <xsl:if test="@acentric_outliers">
             <xsl:element name="PDBxv:reflns_outlier_acentric"><xsl:value-of select="@acentric_outliers"/></xsl:element>
@@ -1308,7 +1315,16 @@ Unmatched components exist in WilsonBaniso, <xsl:value-of select="position()"/>,
             <xsl:element name="PDBxv:twin_fraction_xtriage"><xsl:value-of select="normalize-space($twin_fraction)"/></xsl:element>
             <xsl:element name="PDBxv:twin_operator_xtriage"><xsl:value-of select="normalize-space($twin_operator)"/></xsl:element>
           </xsl:if>
-          <xsl:variable name="wavelength"><xsl:value-of select="$pdbml_ext/PDBxv:datablock/PDBxv:diffrn_radiation_wavelengthCategory/PDBxv:diffrn_radiation_wavelength[1]/PDBxv:wavelength"/></xsl:variable>
+          <xsl:if test="@DataCompleteness">
+            <xsl:element name="PDBxv:ls_percent_reflns_obs"><xsl:value-of select="@DataCompleteness"/></xsl:element>
+          </xsl:if>
+          <xsl:if test="@num-free-reflections">
+            <xsl:element name="PDBxv:ls_number_reflns_R_free"><xsl:value-of select="@num-free-reflections"/></xsl:element>
+          </xsl:if>
+          <xsl:if test="@percent-free-reflections">
+            <xsl:element name="PDBxv:ls_percent_reflns_R_free"><xsl:value-of select="@percent-free-reflections"/></xsl:element>
+          </xsl:if>
+          <xsl:variable name="wavelength"><xsl:value-of select="$ext_datablock/PDBxv:diffrn_radiation_wavelengthCategory/PDBxv:diffrn_radiation_wavelength[1]/PDBxv:wavelength"/></xsl:variable>
           <xsl:if test="$wavelength!=''">
             <xsl:element name="PDBxv:wavelength"><xsl:value-of select="$wavelength"/></xsl:element>
           </xsl:if>
@@ -1369,6 +1385,40 @@ Unmatched components exist in WilsonBaniso, <xsl:value-of select="position()"/>,
     </xsl:if>
   </xsl:template>
 
+  <xsl:template name="pdbx_dcc_density_corr">
+    <xsl:if test="$dcc_version!=''">
+      <PDBxv:pdbx_dcc_density_corrCategory>
+        <PDBxv:pdbx_dcc_density_corr ordinal="1">
+          <PDBxv:program>EDS</PDBxv:program>
+          <xsl:if test="@EDS_resolution and @EDS_resolution!='NotAvailable'">
+            <xsl:element name="PDBxv:ls_d_res_high"><xsl:value-of select="@EDS_resolution"/></xsl:element>
+          </xsl:if>
+          <xsl:if test="@EDS_resolution_low and @EDS_resolution_low!='NotAvailable'">
+            <xsl:element name="PDBxv:ls_d_res_low"><xsl:value-of select="@EDS_resolution_low"/></xsl:element>
+          </xsl:if>
+          <xsl:if test="@EDS_R and @EDS_R!='NotAvailable'">
+            <xsl:element name="PDBxv:ls_R_factor_R_work"><xsl:value-of select="@EDS_R"/></xsl:element>
+          </xsl:if>
+          <xsl:if test="@numMillerIndices">
+            <xsl:element name="PDBxv:ls_number_reflns_obs"><xsl:value-of select="@numMillerIndices"/></xsl:element>
+          </xsl:if>
+          <xsl:if test="@DataCompleteness">
+            <xsl:element name="PDBxv:ls_percent_reflns_obs"><xsl:value-of select="@DataCompleteness"/></xsl:element>
+          </xsl:if>
+          <xsl:if test="@num-free-reflections">
+            <xsl:element name="PDBxv:ls_number_reflns_R_free"><xsl:value-of select="@num-free-reflections"/></xsl:element>
+          </xsl:if>
+          <xsl:if test="@percent-free-reflections">
+            <xsl:element name="PDBxv:ls_percent_reflns_R_free"><xsl:value-of select="@percent-free-reflections"/></xsl:element>
+          </xsl:if>
+          <xsl:if test="@Fo_Fc_correlation">
+            <xsl:element name="PDBxv:correlation_coeff_Fo_to_Fc"><xsl:value-of select="@Fo_Fc_correlation"/></xsl:element>
+          </xsl:if>
+        </PDBxv:pdbx_dcc_density_corr>
+      </PDBxv:pdbx_dcc_density_corrCategory>
+    </xsl:if>
+  </xsl:template>
+
   <xsl:template name="pdbx_dcc_geometry">
     <PDBxv:pdbx_dcc_geometryCategory>
       <PDBxv:pdbx_dcc_geometry entry_id="{$entry_id}">
@@ -1411,6 +1461,12 @@ Unmatched components exist in WilsonBaniso, <xsl:value-of select="position()"/>,
         <xsl:if test="@bonds_rmsz">
           <xsl:element name="PDBxv:bond_overall_rmsz"><xsl:value-of select="@bonds_rmsz"/></xsl:element>
         </xsl:if>
+        <xsl:if test="@num_angles_rmsz">
+          <xsl:element name="PDBxv:number_angles"><xsl:value-of select="@num_angles_rmsz"/></xsl:element>
+        </xsl:if>
+        <xsl:if test="@num_bonds_rmsz">
+          <xsl:element name="PDBxv:number_bonds"><xsl:value-of select="@num_bonds_rmsz"/></xsl:element>
+        </xsl:if>
         <xsl:if test="@percent-rota-outliers">
           <xsl:element name="PDBxv:rotamer_outliers_percent">
             <xsl:choose>
@@ -1425,9 +1481,6 @@ Unmatched components exist in WilsonBaniso, <xsl:value-of select="position()"/>,
           <xsl:if test="@percent-rota-outliers and $nmr=true()">
             <xsl:element name="PDBxv:rotamer_outliers_percent_nmr_well_formed"><xsl:value-of select="@percent-rota-outliers"/></xsl:element>
           </xsl:if>
-        </xsl:if>
-        <xsl:if test="@ligand_geometry_outlier='yes'">
-          <xsl:element name="PDBxv:LLDFZ_outlier_flag">Y</xsl:element>
         </xsl:if>
 <!-- unmapped data items
 <PDBxv:Ramachandran_allowed_number> xsd:integer </PDBxv:Ramachandran_allowed_number> [0..1]
@@ -1567,6 +1620,8 @@ Unmatched components exist in WilsonBaniso, <xsl:value-of select="position()"/>,
         <xsl:element name="PDBxv:auth_asym_id"><xsl:value-of select="@chain"/></xsl:element>
         <xsl:element name="PDBxv:angle_overall_rmsz"><xsl:value-of select="@angles_rmsz"/></xsl:element>
         <xsl:element name="PDBxv:bond_overall_rmsz"><xsl:value-of select="@bonds_rmsz"/></xsl:element>
+        <xsl:element name="PDBxv:number_angles"><xsl:value-of select="@num_angles_rmsz"/></xsl:element>
+        <xsl:element name="PDBxv:number_bonds"><xsl:value-of select="@num_bonds_rmsz"/></xsl:element>
       </PDBxv:pdbx_dcc_entity_geometry>
     </xsl:if>
   </xsl:template>
@@ -1587,6 +1642,15 @@ Unmatched components exist in WilsonBaniso, <xsl:value-of select="position()"/>,
         </xsl:if>
         <xsl:element name="PDBxv:angle_overall_rmsz"><xsl:value-of select="@mogul_angles_rmsz"/></xsl:element>
         <xsl:element name="PDBxv:bond_overall_rmsz"><xsl:value-of select="@mogul_bonds_rmsz"/></xsl:element>
+        <xsl:if test="@mogul_rmsz_numangles">
+          <xsl:element name="PDBxv:number_angles"><xsl:value-of select="@mogul_rmsz_numangles"/></xsl:element>
+        </xsl:if>
+        <xsl:if test="@mogul_rmsz_numbonds">
+          <xsl:element name="PDBxv:number_bonds"><xsl:value-of select="@mogul_rmsz_numbonds"/></xsl:element>
+        </xsl:if>
+        <xsl:if test="@ligand_geometry_outlier='yes'">
+          <xsl:element name="PDBxv:LLDFZ_outlier_flag">Y</xsl:element>
+        </xsl:if>
       </PDBxv:pdbx_dcc_mon_geometry>
     </xsl:if>
   </xsl:template>
@@ -1595,6 +1659,7 @@ Unmatched components exist in WilsonBaniso, <xsl:value-of select="position()"/>,
     <xsl:if test="@phi or @psi">
       <PDBxv:struct_mon_prot>
         <xsl:attribute name="pdbx_id"><xsl:value-of select="position()"/></xsl:attribute>
+        <xsl:element name="PDBxv:PDB_model_num"><xsl:value-of select="@model"/></xsl:element>
         <xsl:element name="PDBxv:auth_asym_id"><xsl:value-of select="@chain"/></xsl:element>
         <xsl:element name="PDBxv:auth_comp_id"><xsl:value-of select="@resname"/></xsl:element>
         <xsl:element name="PDBxv:auth_seq_id"><xsl:value-of select="@resnum"/></xsl:element>
@@ -1664,6 +1729,7 @@ xsd:decimal
     <xsl:if test="@RNApucker or @RNAsuite or @RNAscore">
       <PDBxv:struct_mon_nucl>
         <xsl:attribute name="pdbx_id"><xsl:value-of select="position()"/></xsl:attribute>
+        <xsl:element name="PDBxv:PDB_model_num"><xsl:value-of select="@model"/></xsl:element>
         <xsl:element name="PDBxv:auth_asym_id"><xsl:value-of select="@chain"/></xsl:element>
         <xsl:element name="PDBxv:auth_comp_id"><xsl:value-of select="@resname"/></xsl:element>
         <xsl:element name="PDBxv:auth_seq_id"><xsl:value-of select="@resnum"/></xsl:element>
@@ -1813,10 +1879,11 @@ xsd:decimal
       <xsl:element name="PDBxv:auth_atom_id_1"><xsl:value-of select="@atom0"/></xsl:element>
       <xsl:element name="PDBxv:auth_atom_id_2"><xsl:value-of select="@atom1"/></xsl:element>
       <xsl:element name="PDBxv:auth_atom_id_3"><xsl:value-of select="@atom2"/></xsl:element>
-      <xsl:element name="PDBxv:angle_deviation"><xsl:value-of select="@z"/></xsl:element>
+      <xsl:element name="PDBxv:angle_deviation"><xsl:value-of select="format-number(number(@obs)-number(@mean),'0.00')"/></xsl:element>
       <xsl:element name="PDBxv:angle_standard_deviation"><xsl:value-of select="@stdev"/></xsl:element>
       <xsl:element name="PDBxv:angle_target_value"><xsl:value-of select="@mean"/></xsl:element>
       <xsl:element name="PDBxv:angle_value"><xsl:value-of select="@obs"/></xsl:element>
+      <xsl:element name="PDBxv:Zscore"><xsl:value-of select="@z"/></xsl:element>
       <xsl:choose>
         <xsl:when test="@link='yes'">
           <xsl:element name="PDBxv:linker_flag">Y</xsl:element>
@@ -1848,10 +1915,11 @@ xsd:decimal
       </xsl:if>
       <xsl:element name="PDBxv:auth_atom_id_1"><xsl:value-of select="@atom0"/></xsl:element>
       <xsl:element name="PDBxv:auth_atom_id_2"><xsl:value-of select="@atom1"/></xsl:element>
-      <xsl:element name="PDBxv:bond_deviation"><xsl:value-of select="@z"/></xsl:element>
+      <xsl:element name="PDBxv:bond_deviation"><xsl:value-of select="format-number(number(@obs)-number(@mean),'0.000')"/></xsl:element>
       <xsl:element name="PDBxv:bond_standard_deviation"><xsl:value-of select="@stdev"/></xsl:element>
       <xsl:element name="PDBxv:bond_target_value"><xsl:value-of select="@mean"/></xsl:element>
       <xsl:element name="PDBxv:bond_value"><xsl:value-of select="@obs"/></xsl:element>
+      <xsl:element name="PDBxv:Zscore"><xsl:value-of select="@z"/></xsl:element>
       <xsl:choose>
         <xsl:when test="@link='yes'">
           <xsl:element name="PDBxv:linker_flag">Y</xsl:element>
@@ -1963,7 +2031,7 @@ xsd:decimal
           <xsl:element name="PDBxv:PDB_ins_code_1"><xsl:value-of select="../@icode"/></xsl:element>
         </xsl:if>
         <xsl:element name="PDBxv:auth_atom_id_1"><xsl:value-of select="@atom"/></xsl:element>
-        <xsl:element name="PDBxv:site_symmetry_1"><xsl:value-of select="translate(@symop,'_','')"/></xsl:element>
+        <xsl:element name="PDBxv:site_symmetry_1"><xsl:value-of select="@symop"/></xsl:element>
         <xsl:choose>
           <xsl:when test="following::symm-clash/@scid=$scid">
             <xsl:for-each select="following::symm-clash[@scid=$scid]">
@@ -1977,7 +2045,7 @@ xsd:decimal
                 <xsl:element name="PDBxv:PDB_ins_code_2"><xsl:value-of select="../@icode"/></xsl:element>
               </xsl:if>
               <xsl:element name="PDBxv:auth_atom_id_2"><xsl:value-of select="@atom"/></xsl:element>
-              <xsl:element name="PDBxv:site_symmetry_2"><xsl:value-of select="translate(@symop,'_','')"/></xsl:element>
+              <xsl:element name="PDBxv:site_symmetry_2"><xsl:value-of select="@symop"/></xsl:element>
             </xsl:for-each>
           </xsl:when>
           <xsl:otherwise>
@@ -1992,7 +2060,7 @@ xsd:decimal
                 <xsl:element name="PDBxv:PDB_ins_code_2"><xsl:value-of select="../@icode"/></xsl:element>
               </xsl:if>
               <xsl:element name="PDBxv:auth_atom_id_2"><xsl:value-of select="@atom"/></xsl:element>
-              <xsl:element name="PDBxv:site_symmetry_2"><xsl:value-of select="translate(@symop,'_','')"/></xsl:element>
+              <xsl:element name="PDBxv:site_symmetry_2"><xsl:value-of select="@symop"/></xsl:element>
             </xsl:for-each>
           </xsl:otherwise>
         </xsl:choose>
@@ -2046,10 +2114,13 @@ Unmatched components exist in atoms, <xsl:value-of select="position()"/>, found 
           </xsl:otherwise>
         </xsl:choose>
       </xsl:for-each>
-      <xsl:element name="PDBxv:angle_deviation"><xsl:value-of select="@Zscore"/></xsl:element>
+      <xsl:element name="PDBxv:angle_deviation"><xsl:value-of select="format-number(number(@obsval)-number(@mean),'0.00')"/></xsl:element>
       <xsl:element name="PDBxv:angle_standard_deviation"><xsl:value-of select="@stdev"/></xsl:element>
       <xsl:element name="PDBxv:angle_target_value"><xsl:value-of select="@mean"/></xsl:element>
       <xsl:element name="PDBxv:angle_value"><xsl:value-of select="@obsval"/></xsl:element>
+      <xsl:element name="PDBxv:Zscore"><xsl:value-of select="@Zscore"/></xsl:element>
+      <xsl:element name="PDBxv:angle_minimum_diff_to_kb"><xsl:value-of select="@mindiff"/></xsl:element>
+      <xsl:element name="PDBxv:number_angles_in_kb"><xsl:value-of select="@numobs"/></xsl:element>
     </PDBxv:pdbx_validate_rmsd_angle>
   </xsl:template>
 
@@ -2089,10 +2160,13 @@ Unmatched components exist in atoms, <xsl:value-of select="position()"/>, found 
           </xsl:otherwise>
         </xsl:choose>
       </xsl:for-each>
-      <xsl:element name="PDBxv:bond_deviation"><xsl:value-of select="@Zscore"/></xsl:element>
+      <xsl:element name="PDBxv:bond_deviation"><xsl:value-of select="format-number(number(@obsval)-number(@mean),'0.000')"/></xsl:element>
       <xsl:element name="PDBxv:bond_standard_deviation"><xsl:value-of select="@stdev"/></xsl:element>
       <xsl:element name="PDBxv:bond_target_value"><xsl:value-of select="@mean"/></xsl:element>
       <xsl:element name="PDBxv:bond_value"><xsl:value-of select="@obsval"/></xsl:element>
+      <xsl:element name="PDBxv:Zscore"><xsl:value-of select="@Zscore"/></xsl:element>
+      <xsl:element name="PDBxv:bond_minimum_diff_to_kb"><xsl:value-of select="@mindiff"/></xsl:element>
+      <xsl:element name="PDBxv:number_bonds_in_kb"><xsl:value-of select="@numobs"/></xsl:element>
     </PDBxv:pdbx_validate_rmsd_bond>
   </xsl:template>
 
@@ -2111,6 +2185,8 @@ Unmatched components exist in atoms, <xsl:value-of select="position()"/>, found 
       </xsl:if>
       <xsl:element name="PDBxv:dihedral_angle_standard_deviation"><xsl:value-of select="@stdev"/></xsl:element>
       <xsl:element name="PDBxv:dihedral_angle_target_value"><xsl:value-of select="@mean"/></xsl:element>
+      <xsl:element name="PDBxv:dihedral_angle_minimum_diff_to_kb"><xsl:value-of select="@mindiff"/></xsl:element>
+      <xsl:element name="PDBxv:number_dihedral_angles_in_kb"><xsl:value-of select="@numobs"/></xsl:element>
     </PDBxv:pdbx_validate_rmsd_ring>
   </xsl:template>
 
@@ -2164,6 +2240,8 @@ Unmatched components exist in atoms, <xsl:value-of select="position()"/>, found 
       <xsl:element name="PDBxv:dihedral_angle_value"><xsl:value-of select="@obsval"/></xsl:element>
       <xsl:element name="PDBxv:dihedral_angle_standard_deviation"><xsl:value-of select="@stdev"/></xsl:element>
       <xsl:element name="PDBxv:dihedral_angle_target_value"><xsl:value-of select="@mean"/></xsl:element>
+      <xsl:element name="PDBxv:dihedral_angle_minimum_diff_to_kb"><xsl:value-of select="@mindiff"/></xsl:element>
+      <xsl:element name="PDBxv:number_dihedral_angles_in_kb"><xsl:value-of select="@numobs"/></xsl:element>
     </PDBxv:pdbx_validate_rmsd_torsion>
   </xsl:template>
 
@@ -2226,6 +2304,7 @@ Unmatched components exist in atoms, <xsl:value-of select="position()"/>, found 
       </xsl:if>
       <xsl:element name="PDBxv:number_of_gaps"><xsl:value-of select="@number_of_gaps"/></xsl:element>
       <xsl:element name="PDBxv:number_of_monomers"><xsl:value-of select="@number_of_residues"/></xsl:element>
+      <xsl:element name="PDBxv:percent_of_core"><xsl:value-of select="@percentage_of_core"/></xsl:element>
       <xsl:if test="../Entry/@cyrange_error and ../Entry/@cyrange_error!='success'">
         <xsl:element name="PDBxv:error"><xsl:value-of select="../Entry/@cyrange_error"/></xsl:element>
       </xsl:if>
@@ -2247,7 +2326,7 @@ Unmatched components exist in atoms, <xsl:value-of select="position()"/>, found 
             <xsl:element name="PDBxv:beg_auth_asym_id"><xsl:value-of select="$beg_auth_asym_id"/></xsl:element>
             <xsl:element name="PDBxv:beg_auth_seq_id"><xsl:value-of select="$beg_auth_seq_id"/></xsl:element>
             <xsl:element name="PDBxv:beg_auth_comp_id">
-              <xsl:value-of select="$pdbml_ext/PDBxv:datablock/PDBxv:pdbx_poly_seq_schemeCategory/PDBxv:pdbx_poly_seq_scheme[@asym_id=$beg_auth_asym_id and PDBxv:auth_seq_num=$beg_auth_seq_id]/@mon_id"/>
+              <xsl:value-of select="$ext_datablock/PDBxv:pdbx_poly_seq_schemeCategory/PDBxv:pdbx_poly_seq_scheme[@asym_id=$beg_auth_asym_id and PDBxv:auth_seq_num=$beg_auth_seq_id]/@mon_id"/>
             </xsl:element>
           </xsl:when>
           <xsl:when test="position()=2">
@@ -2256,7 +2335,7 @@ Unmatched components exist in atoms, <xsl:value-of select="position()"/>, found 
             <xsl:element name="PDBxv:end_auth_asym_id"><xsl:value-of select="$end_auth_asym_id"/></xsl:element>
             <xsl:element name="PDBxv:end_auth_seq_id"><xsl:value-of select="$end_auth_seq_id"/></xsl:element>
             <xsl:element name="PDBxv:end_auth_comp_id">
-              <xsl:value-of select="$pdbml_ext/PDBxv:datablock/PDBxv:pdbx_poly_seq_schemeCategory/PDBxv:pdbx_poly_seq_scheme[@asym_id=$end_auth_asym_id and PDBxv:auth_seq_num=$end_auth_seq_id]/@mon_id"/>
+              <xsl:value-of select="$ext_datablock/PDBxv:pdbx_poly_seq_schemeCategory/PDBxv:pdbx_poly_seq_scheme[@asym_id=$end_auth_asym_id and PDBxv:auth_seq_num=$end_auth_seq_id]/@mon_id"/>
             </xsl:element>
           </xsl:when>
           <xsl:otherwise>
