@@ -1,0 +1,1858 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet
+  version="2.0"
+  xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:PDBxv="http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd">
+
+  <xsl:output method="xml" indent="yes"/>
+  <xsl:strip-space elements="*"/>
+
+  <xsl:variable name="datablock" select="/PDBxv:datablock"/>
+
+  <xsl:variable name="entry_id"><xsl:value-of select="$datablock/PDBxv:entryCategory/PDBxv:entry/@id"/></xsl:variable>
+
+  <!-- experimental method -->
+
+  <xsl:variable name="exptl_method"><xsl:value-of select="$datablock/PDBxv:exptlCategory/PDBxv:exptl/@method"/></xsl:variable>
+
+  <xsl:variable name="x-ray"><xsl:value-of select="contains($exptl_method,'DIFFRACTION') and not(contains($exptl_method,'NEUTRON'))"/></xsl:variable>
+  <xsl:variable name="nmr"><xsl:value-of select="contains($exptl_method,'NMR')"/></xsl:variable>
+  <xsl:variable name="em"><xsl:value-of select="$exptl_method='ELECTRON MICROSCOPY'"/></xsl:variable>
+  <xsl:variable name="other"><xsl:value-of select="$x-ray=false() and $nmr=false() and $em=false()"/></xsl:variable>
+
+  <xsl:variable name="percentile_d_res_high">
+    <xsl:value-of select="$datablock/PDBxv:pdbx_percentile_conditionsCategory/PDBxv:pdbx_percentile_conditions[PDBxv:ls_d_res_high!='']/PDBxv:ls_d_res_high"/>
+  </xsl:variable>
+
+  <xsl:variable name="percentile_d_res_low">
+    <xsl:value-of select="$datablock/PDBxv:pdbx_percentile_conditionsCategory/PDBxv:pdbx_percentile_conditions[PDBxv:ls_d_res_low!='']/PDBxv:ls_d_res_low"/>
+  </xsl:variable>
+
+  <xsl:variable name="nmr_models">
+    <xsl:value-of select="$datablock/PDBxv:pdbx_struct_nmr_ens_clustCategory/PDBxv:pdbx_struct_nmr_ens_clust/PDBxv:conformers_total_number"/>
+  </xsl:variable>
+
+  <!-- Level 1 -->
+
+  <xsl:template match="$datablock">
+
+    <wwPDB-validation-information xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://wwpdb.org/validation/schema/wwpdb_validation_v002.xsd">
+      <Entry>
+        <xsl:call-template name="Entry"/>
+      </Entry>
+
+      <xsl:if test="$nmr=true()">
+        <xsl:apply-templates select="PDBxv:pdbx_struct_nmr_ens_clust_genCategory/*"/>
+      </xsl:if>
+
+      <xsl:call-template name="ModelledSubgroup"/>
+
+      <xsl:if test="$nmr=true()">
+
+        <xsl:for-each select="PDBxv:pdbx_struct_nmr_ens_domCategory/PDBxv:pdbx_struct_nmr_ens_dom">
+
+          <cyrange_domain>
+
+            <xsl:variable name="dom_id"><xsl:value-of select="@id"/></xsl:variable>
+
+            <xsl:attribute name="domain"><xsl:value-of select="$dom_id"/></xsl:attribute>
+            <xsl:if test="PDBxv:medoid_model_number">
+              <xsl:attribute name="medoid_model"><xsl:value-of select="PDBxv:medoid_model_number"/></xsl:attribute>
+            </xsl:if>
+            <xsl:if test="PDBxv:distance_rms_dev_medoid">
+              <xsl:attribute name="medoid_rmsd"><xsl:value-of select="PDBxv:distance_rms_dev_medoid"/></xsl:attribute>
+            </xsl:if>
+            <xsl:attribute name="rmsd"><xsl:value-of select="PDBxv:distance_rms_dev"/></xsl:attribute>
+            <xsl:attribute name="number_of_gaps"><xsl:value-of select="PDBxv:number_of_gaps"/></xsl:attribute>
+            <xsl:attribute name="number_of_residues"><xsl:value-of select="PDBxv:number_of_monomers"/></xsl:attribute>
+            <xsl:attribute name="percentage_of_core"><xsl:value-of select="PDBxv:percent_of_core"/></xsl:attribute>
+
+            <xsl:variable name="residue_string">
+              <xsl:for-each select="$datablock/PDBxv:pdbx_struct_nmr_ens_dom_limCategory/PDBxv:pdbx_struct_nmr_ens_dom_lim[@dom_id=$dom_id]">
+                <xsl:value-of select="concat(PDBxv:beg_auth_asym_id,':',PDBxv:beg_auth_seq_id,'-',PDBxv:end_auth_asym_id,':',PDBxv:end_auth_seq_id,', ')"/>
+              </xsl:for-each>
+            </xsl:variable>
+
+            <xsl:attribute name="residue_string"><xsl:value-of select="substring($residue_string,1,string-length($residue_string)-2)"/></xsl:attribute>
+
+          </cyrange_domain>
+
+        </xsl:for-each>
+
+      </xsl:if>
+
+      <xsl:call-template name="ModelledEntityInstance"/>
+
+      <programs>
+        <xsl:apply-templates select="PDBxv:pdbx_validation_softwareCategory/*"/>
+      </programs>
+    </wwPDB-validation-information>
+
+  </xsl:template>
+
+  <!-- Level 2 -->
+
+  <!-- Entry -->
+
+  <xsl:template name="Entry">
+
+    <xsl:attribute name="pdbid"><xsl:value-of select="$entry_id"/></xsl:attribute>
+
+    <xsl:apply-templates select="PDBxv:pdbx_database_statusCategory/*"/>
+
+    <xsl:choose>
+      <xsl:when test="PDBxv:pdbx_audit_revision_historyCategory/PDBxv:pdbx_audit_revision_history">
+        <xsl:apply-templates select="PDBxv:pdbx_audit_revision_historyCategory"/>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:attribute name="PDB-revision-number">-1</xsl:attribute>
+        <xsl:attribute name="PDB-revision-date">unknown</xsl:attribute>
+      </xsl:otherwise>
+    </xsl:choose>
+
+    <xsl:choose>
+      <xsl:when test="PDBxv:pdbx_dcc_densityCategory/PDBxv:pdbx_dcc_density">
+        <xsl:for-each select="PDBxv:pdbx_dcc_densityCategory/PDBxv:pdbx_dcc_density">
+          <xsl:call-template name="pdbx_dcc_density_summary"/>
+        </xsl:for-each>
+      </xsl:when>
+      <xsl:when test="PDBxv:em_3d_reconstructionCategory/PDBxv:em_3d_reconstruction">
+        <xsl:apply-templates select="PDBxv:em_3d_reconstructionCategory/*"/>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:attribute name="PDB-resolution">NotAvailable</xsl:attribute>
+        <xsl:attribute name="PDB-resolution-low">NotAvailable</xsl:attribute>
+      </xsl:otherwise>
+    </xsl:choose>
+
+    <xsl:apply-templates select="PDBxv:refineCategory/*"/>
+
+    <xsl:variable name="polymer_entity_ids">
+      <xsl:for-each select="PDBxv:entity_polyCategory/PDBxv:entity_poly">
+        <xsl:if test="PDBxv:type and PDBxv:type=('polypeptide(L)','polypeptide(D)','polyribonucleotide','polydeoxyribonucleotide','polydeoxyribonucleotide/polyribonucleotide hybrid')">
+          <xsl:value-of select="concat(@entity_id,',')"/>
+        </xsl:if>
+      </xsl:for-each>
+    </xsl:variable>
+
+    <xsl:if test="string-length($polymer_entity_ids)&gt;1">
+      <xsl:attribute name="protein-DNA-RNA-entities"><xsl:value-of select="substring($polymer_entity_ids,1,string-length($polymer_entity_ids)-1)"/></xsl:attribute>
+    </xsl:if>
+    <xsl:if test="PDBxv:pdbx_coordinate_modelCategory/PDBxv:pdbx_coordinate_model/PDBxv:type='CA ATOMS ONLY'">
+      <xsl:attribute name="CA_ONLY">yes</xsl:attribute>
+    </xsl:if>
+
+    <xsl:apply-templates select="PDBxv:pdbx_dcc_geometryCategory/*"/>
+
+    <!-- x-ray -->
+
+    <xsl:if test="$x-ray=true()">
+
+      <xsl:apply-templates select="PDBxv:pdbx_dcc_densityCategory/*"/>
+      <xsl:apply-templates select="PDBxv:pdbx_dcc_density_corrCategory/*"/>
+      <xsl:apply-templates select="PDBxv:pdbx_dcc_map_overallCategory/*"/>
+
+    </xsl:if>
+
+    <!-- nmr -->
+
+    <xsl:if test="$nmr=true()">
+
+      <xsl:choose>
+        <xsl:when test="PDBxv:pdbx_nmr_ensembleCategory/PDBxv:pdbx_nmr_ensemble/PDBxv:atom_consistency_flag='Y'">
+          <xsl:attribute name="nmr_models_consistency_flag">True</xsl:attribute>
+        </xsl:when>
+        <xsl:otherwise>
+          <xsl:attribute name="nmr_models_consistency_flag">False</xsl:attribute>
+        </xsl:otherwise>
+      </xsl:choose>
+
+      <xsl:choose>
+        <xsl:when test="PDBxv:pdbx_struct_nmr_ens_domCategory/PDBxv:pdbx_struct_nmr_ens_dom/PDBxv:error!=''">
+          <xsl:attribute name="cyrange_error"><xsl:value-of select="PDBxv:pdbx_struct_nmr_ens_domCategory/PDBxv:pdbx_struct_nmr_ens_dom/PDBxv:error"/></xsl:attribute>
+        </xsl:when>
+        <xsl:otherwise>
+          <xsl:attribute name="cyrange_error">success</xsl:attribute>
+        </xsl:otherwise>
+      </xsl:choose>
+
+      <xsl:choose>
+        <xsl:when test="PDBxv:pdbx_struct_nmr_ens_clustCategory/PDBxv:pdbx_struct_nmr_ens_clust/PDBxv:error!=''">
+          <xsl:attribute name="nmrclust_error"><xsl:value-of select="PDBxv:pdbx_struct_nmr_ens_clustCategory/PDBxv:pdbx_struct_nmr_ens_clust/PDBxv:error"/></xsl:attribute>
+        </xsl:when>
+        <xsl:otherwise>
+          <xsl:attribute name="nmrclust_error">success</xsl:attribute>
+        </xsl:otherwise>
+      </xsl:choose>
+
+      <xsl:for-each select="PDBxv:pdbx_struct_nmr_ens_clust_genCategory/PDBxv:pdbx_struct_nmr_ens_clust_gen">
+        <xsl:if test="PDBxv:cluster_id='1' and PDBxv:medoid_conformer='Y'">
+          <xsl:attribute name="nmrclust_representative_model"><xsl:value-of select="@PDB_model_num"/></xsl:attribute>
+        </xsl:if>
+      </xsl:for-each>
+
+      <xsl:for-each select="PDBxv:pdbx_struct_nmr_ens_domCategory/PDBxv:pdbx_struct_nmr_ens_dom">
+        <xsl:if test="@id='1'">
+          <xsl:attribute name="medoid_model"><xsl:value-of select="PDBxv:medoid_model_number"/></xsl:attribute>
+        </xsl:if>
+      </xsl:for-each>
+
+      <xsl:apply-templates select="PDBxv:pdbx_struct_nmr_ens_clustCategory/*"/>
+
+      <xsl:if test="PDBxv:pdbx_struct_nmr_ens_domCategory/PDBxv:pdbx_struct_nmr_ens_dom">
+        <xsl:attribute name="cyrange_number_of_domains"><xsl:value-of select="count(PDBxv:pdbx_struct_nmr_ens_domCategory/PDBxv:pdbx_struct_nmr_ens_dom)"/></xsl:attribute>
+      </xsl:if>
+
+      <xsl:for-each select="PDBxv:pdbx_nmr_chem_shift_completenessCategory/PDBxv:pdbx_nmr_chem_shift_completeness[@list_id='1' and @atom_group='overall' and @atom_type='Total']">
+        <xsl:attribute name="chemical_shift_completeness"><xsl:value-of select="format-number(number(PDBxv:number_assigned_chem_shifts_well_formed) div number(PDBxv:number_target_shifts_well_formed) * 100,'0.00')"/></xsl:attribute>
+        <xsl:attribute name="chemical_shift_completeness_full_length"><xsl:value-of select="format-number(number(PDBxv:number_assigned_chem_shifts) div number(PDBxv:number_target_shifts) * 100,'0.00')"/></xsl:attribute>
+      </xsl:for-each>
+
+    </xsl:if>
+
+    <!-- percentile view -->
+
+    <xsl:choose>
+      <xsl:when test="PDBxv:pdbx_percentile_listCategory/PDBxv:pdbx_percentile_list/PDBxv:name">
+        <xsl:attribute name="percentilebins"><xsl:value-of select="PDBxv:pdbx_percentile_listCategory/PDBxv:pdbx_percentile_list/PDBxv:name"/></xsl:attribute>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:attribute name="no-percentile-property">true</xsl:attribute>
+      </xsl:otherwise>
+    </xsl:choose>
+
+    <xsl:apply-templates select="PDBxv:pdbx_percentile_viewCategory/*"/>
+
+    <!-- program -->
+
+    <xsl:variable name="software_list">
+      <xsl:for-each select="PDBxv:pdbx_validation_softwareCategory/PDBxv:pdbx_validation_software[PDBxv:details!='']">
+        <xsl:value-of select="concat(PDBxv:name,',')"/>
+      </xsl:for-each>
+    </xsl:variable>
+
+    <xsl:attribute name="attemptedValidationSteps"><xsl:value-of select="substring($software_list,1,string-length($software_list)-1)"/></xsl:attribute>
+
+    <xsl:for-each select="PDBxv:pdbx_validation_softwareCategory/PDBxv:pdbx_validation_software">
+
+      <xsl:if test="PDBxv:version='unknown (associated with DCC package)' and PDBxv:classification='refinement'">
+        <xsl:attribute name="DCC_refinement_program"><xsl:value-of select="PDBxv:name"/></xsl:attribute>
+      </xsl:if>
+      <xsl:if test="PDBxv:name='CCP4' and PDBxv:classification='data scaling and phasing'">
+        <xsl:attribute name="CCP4version"><xsl:value-of select="PDBxv:version"/></xsl:attribute>
+      </xsl:if>
+      <xsl:if test="PDBxv:name='Refmac' and PDBxv:classification='refinement'">
+        <xsl:attribute name="RefmacVersion"><xsl:value-of select="PDBxv:version"/></xsl:attribute>
+      </xsl:if>
+
+      <xsl:if test="$nmr=true()">
+
+        <xsl:if test="PDBxv:name='cyrange' and PDBxv:classification='domain identification of nmr ensemble structure'">
+          <xsl:attribute name="cyrange_version"><xsl:value-of select="PDBxv:version"/></xsl:attribute>
+        </xsl:if>
+        <xsl:if test="PDBxv:name='nmrclust' and PDBxv:classification='classification of nmr ensemble structure'">
+          <xsl:attribute name="nmrclust_version"><xsl:value-of select="PDBxv:version"/></xsl:attribute>
+        </xsl:if>
+        <xsl:if test="PDBxv:name='panav' and PDBxv:classification='nmr chemical shift validation and reference correction'">
+          <xsl:attribute name="panav_version"><xsl:value-of select="PDBxv:version"/></xsl:attribute>
+        </xsl:if>
+        <xsl:if test="PDBxv:name='rci' and PDBxv:classification='random coil index prediction from nmr chemical shifts'">
+          <xsl:attribute name="rci_version"><xsl:value-of select="PDBxv:version"/></xsl:attribute>
+        </xsl:if>
+        <xsl:if test="PDBxv:name='shiftchecker' and PDBxv:classification='nmr chemical shift validation'">
+          <xsl:attribute name="shiftchecker_version"><xsl:value-of select="PDBxv:version"/></xsl:attribute>
+        </xsl:if>
+
+      </xsl:if>
+
+    </xsl:for-each>
+
+    <!-- nmr -->
+
+    <xsl:if test="$nmr=true()">
+
+      <xsl:apply-templates select="PDBxv:pdbx_nmr_assigned_chem_shift_listCategory/*"/>
+
+    </xsl:if>
+
+  </xsl:template>
+
+  <xsl:template match="PDBxv:pdbx_validation_software">
+    <xsl:if test="PDBxv:details!=''">
+      <xsl:element name="program">
+        <xsl:attribute name="name"><xsl:value-of select="PDBxv:name"/></xsl:attribute>
+        <xsl:attribute name="properties"><xsl:value-of select="PDBxv:details"/></xsl:attribute>
+        <xsl:attribute name="version"><xsl:value-of select="PDBxv:version"/></xsl:attribute>
+      </xsl:element>
+    </xsl:if>
+  </xsl:template>
+
+  <xsl:template match="PDBxv:pdbx_audit_revision_historyCategory">
+
+    <xsl:for-each select="PDBxv:pdbx_audit_revision_history">
+
+    <xsl:if test="position()=last()">
+      <xsl:choose>
+        <xsl:when test="PDBxv:major_revision">
+          <xsl:attribute name="PDB-revision-number"><xsl:value-of select="PDBxv:major_revision"/></xsl:attribute>
+        </xsl:when>
+        <xsl:otherwise>
+          <xsl:attribute name="PDB-revision-number">-1</xsl:attribute>
+        </xsl:otherwise>
+      </xsl:choose>
+      <xsl:choose>
+        <xsl:when test="PDBxv:revision_date">
+          <xsl:attribute name="PDB-revision-date"><xsl:value-of select="PDBxv:revision_date"/></xsl:attribute>
+        </xsl:when>
+        <xsl:otherwise>
+          <xsl:attribute name="PDB-revision-date">unknown</xsl:attribute>
+        </xsl:otherwise>
+      </xsl:choose>
+    </xsl:if>
+
+    </xsl:for-each>
+
+  </xsl:template>
+
+  <xsl:template match="PDBxv:em_3d_reconstruction">
+
+    <xsl:if test="PDBxv:resolution">
+      <xsl:attribute name="PDB-resolution"><xsl:value-of select="PDBxv:resolution"/></xsl:attribute>
+    </xsl:if>
+
+    <xsl:attribute name="PDB-resolution-low">NotAvailable</xsl:attribute>
+
+  </xsl:template>
+
+  <xsl:template name="pdbx_dcc_density_summary">
+
+    <xsl:choose>
+       <xsl:when test="PDBxv:ls_d_res_high">
+         <xsl:attribute name="PDB-resolution"><xsl:value-of select="PDBxv:ls_d_res_high"/></xsl:attribute>
+       </xsl:when>
+       <xsl:otherwise>
+         <xsl:attribute name="PDB-resolution">NotAvailable</xsl:attribute>
+       </xsl:otherwise>
+     </xsl:choose>
+     <xsl:choose>
+       <xsl:when test="PDBxv:ls_d_res_low">
+         <xsl:attribute name="PDB-resolution-low"><xsl:value-of select="PDBxv:ls_d_res_low"/></xsl:attribute>
+       </xsl:when>
+       <xsl:otherwise>
+         <xsl:attribute name="PDB-resolution-low">NotAvailable</xsl:attribute>
+       </xsl:otherwise>
+     </xsl:choose>
+
+  </xsl:template>
+
+  <xsl:template match="PDBxv:refine">
+
+    <xsl:choose>
+      <xsl:when test="PDBxv:ls_R_factor_R_work">
+        <xsl:attribute name="PDB-R"><xsl:value-of select="format-number(PDBxv:ls_R_factor_R_work,'0.00')"/></xsl:attribute>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:attribute name="PDB-R">NotAvailable</xsl:attribute>
+      </xsl:otherwise>
+    </xsl:choose>
+
+    <xsl:choose>
+      <xsl:when test="PDBxv:ls_R_factor_R_free">
+        <xsl:attribute name="PDB-Rfree"><xsl:value-of select="format-number(PDBxv:ls_R_factor_R_free,'0.00')"/></xsl:attribute>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:attribute name="PDB-Rfree">NotAvailable</xsl:attribute>
+      </xsl:otherwise>
+    </xsl:choose>
+
+  </xsl:template>
+
+  <xsl:template match="PDBxv:pdbx_database_status">
+
+    <xsl:if test="PDBxv:validation_created_date">
+      <xsl:attribute name="XMLcreationDate"><xsl:value-of select="PDBxv:validation_created_date"/></xsl:attribute>
+    </xsl:if>
+
+    <xsl:choose>
+      <xsl:when test="PDBxv:recvd_initial_deposition_date">
+        <xsl:attribute name="PDB-deposition-date"><xsl:value-of select="PDBxv:recvd_initial_deposition_date"/></xsl:attribute>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:attribute name="PDB-deposition-date">unknown</xsl:attribute>
+      </xsl:otherwise>
+    </xsl:choose>
+
+  </xsl:template>
+
+  <xsl:template match="PDBxv:pdbx_dcc_geometry">
+
+    <xsl:if test="PDBxv:angle_overall_rmsz">
+      <xsl:attribute name="angles_rmsz"><xsl:value-of select="PDBxv:angle_overall_rmsz"/></xsl:attribute>
+    </xsl:if>
+    <xsl:if test="PDBxv:bond_overall_rmsz">
+      <xsl:attribute name="bonds_rmsz"><xsl:value-of select="PDBxv:bond_overall_rmsz"/></xsl:attribute>
+    </xsl:if>
+    <xsl:if test="PDBxv:number_angles">
+      <xsl:attribute name="num_angles_rmsz"><xsl:value-of select="PDBxv:number_angles"/></xsl:attribute>
+    </xsl:if>
+    <xsl:if test="PDBxv:number_bonds">
+      <xsl:attribute name="num_bonds_rmsz"><xsl:value-of select="PDBxv:number_bonds"/></xsl:attribute>
+    </xsl:if>
+
+    <xsl:choose>
+      <xsl:when test="$nmr=true()">
+        <xsl:if test="PDBxv:all_atom_clashscore_nmr_well_formed">
+          <xsl:attribute name="clashscore"><xsl:value-of select="PDBxv:all_atom_clashscore_nmr_well_formed"/></xsl:attribute>
+        </xsl:if>
+        <xsl:if test="PDBxv:all_atom_clashscore">
+          <xsl:attribute name="clashscore-full-length"><xsl:value-of select="PDBxv:all_atom_clashscore"/></xsl:attribute>
+        </xsl:if>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:if test="PDBxv:all_atom_clashscore">
+          <xsl:attribute name="clashscore"><xsl:value-of select="PDBxv:all_atom_clashscore"/></xsl:attribute>
+        </xsl:if>
+      </xsl:otherwise>
+    </xsl:choose>
+
+    <xsl:if test="PDBxv:RNA_suiteness_score">
+      <xsl:attribute name="RNAsuiteness"><xsl:value-of select="PDBxv:RNA_suiteness_score"/></xsl:attribute>
+    </xsl:if>
+
+    <xsl:choose>
+      <xsl:when test="$nmr=true()">
+        <xsl:if test="PDBxv:Ramachandran_outlier_percent">
+          <xsl:attribute name="percent-rama-outliers"><xsl:value-of select="PDBxv:Ramachandran_outlier_percent_nmr_well_formed"/></xsl:attribute>
+        </xsl:if>
+        <xsl:if test="PDBxv:Ramachandran_outlier_percent">
+          <xsl:attribute name="percent-rama-outliers-full-length"><xsl:value-of select="PDBxv:Ramachandran_outlier_percent"/></xsl:attribute>
+        </xsl:if>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:if test="PDBxv:Ramachandran_outlier_percent">
+          <xsl:attribute name="percent-rama-outliers"><xsl:value-of select="PDBxv:Ramachandran_outlier_percent"/></xsl:attribute>
+        </xsl:if>
+      </xsl:otherwise>
+    </xsl:choose>
+
+    <xsl:choose>
+      <xsl:when test="$nmr=true()">
+        <xsl:if test="PDBxv:rotamer_outliers_percent">
+          <xsl:attribute name="percent-rota-outliers"><xsl:value-of select="PDBxv:rotamer_outliers_percent_nmr_well_formed"/></xsl:attribute>
+        </xsl:if>
+        <xsl:if test="PDBxv:rotamer_outliers_percent">
+          <xsl:attribute name="percent-rota-outliers-full-length"><xsl:value-of select="PDBxv:rotamer_outliers_percent"/></xsl:attribute>
+        </xsl:if>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:if test="PDBxv:rotamer_outliers_percent">
+          <xsl:attribute name="percent-rota-outliers"><xsl:value-of select="PDBxv:rotamer_outliers_percent"/></xsl:attribute>
+        </xsl:if>
+      </xsl:otherwise>
+    </xsl:choose>
+
+  </xsl:template>
+
+  <xsl:template match="PDBxv:pdbx_dcc_density">
+
+    <xsl:if test="PDBxv:reflns_outlier_acentric">
+      <xsl:attribute name="acentric_outliers"><xsl:value-of select="PDBxv:reflns_outlier_acentric"/></xsl:attribute>
+    </xsl:if>
+    <xsl:if test="PDBxv:reflns_outlier_centric">
+      <xsl:attribute name="centric_outliers"><xsl:value-of select="PDBxv:reflns_outlier_centric"/></xsl:attribute>
+    </xsl:if>
+    <xsl:if test="PDBxv:I_over_sigI_resh">
+      <xsl:attribute name="IoverSigma"><xsl:value-of select="concat(PDBxv:I_over_sigI_resh,'(',substring-before($percentile_d_res_high,' '),'A)')"/></xsl:attribute>
+    </xsl:if>
+    <xsl:if test="PDBxv:reflns_number_obs">
+      <xsl:attribute name="numMillerIndices"><xsl:value-of select="PDBxv:reflns_number_obs"/></xsl:attribute>
+    </xsl:if>
+    <xsl:if test="PDBxv:B_wilson">
+      <xsl:attribute name="WilsonBestimate"><xsl:value-of select="PDBxv:B_wilson"/></xsl:attribute>
+    </xsl:if>
+    <xsl:if test="PDBxv:aniso_B11">
+      <xsl:attribute name="WilsonBaniso"><xsl:value-of select="concat('[',PDBxv:aniso_B11,',',PDBxv:aniso_B22,',',PDBxv:aniso_B33,',',PDBxv:aniso_B12,',',PDBxv:aniso_B13,',',PDBxv:aniso_B23,']')"/></xsl:attribute>
+    </xsl:if>
+    <xsl:if test="PDBxv:anisotropy">
+      <xsl:attribute name="DataAnisotropy"><xsl:value-of select="PDBxv:anisotropy"/></xsl:attribute>
+    </xsl:if>
+    <xsl:if test="PDBxv:error">
+      <xsl:attribute name="TransNCS"><xsl:value-of select="PDBxv:error"/></xsl:attribute>
+    </xsl:if>
+    <xsl:if test="PDBxv:Padilla-Yeates_L_mean">
+      <xsl:attribute name="TwinL"><xsl:value-of select="PDBxv:Padilla-Yeates_L_mean"/></xsl:attribute>
+    </xsl:if>
+    <xsl:if test="PDBxv:Padilla-Yeates_L2_mean">
+      <xsl:attribute name="TwinL2"><xsl:value-of select="PDBxv:Padilla-Yeates_L2_mean"/></xsl:attribute>
+    </xsl:if>
+
+    <xsl:if test="PDBxv:twin_operator_xtriage and PDBxv:twin_fraction_xtriage">
+
+      <xsl:variable name="operators" select="tokenize(PDBxv:twin_operator_xtriage,'\s+')"/>
+      <xsl:variable name="fractions" select="tokenize(PDBxv:twin_fraction_xtriage,'\s+')"/>
+
+      <xsl:variable name="twin_fraction">
+        <xsl:for-each select="$operators">
+          <xsl:variable name="index"><xsl:value-of select="position()"/></xsl:variable>
+          <xsl:variable name="fraction">
+            <xsl:for-each select="$fractions">
+              <xsl:if test="$index=position()">
+                <xsl:value-of select="."/>
+              </xsl:if>
+            </xsl:for-each>
+          </xsl:variable>
+          <xsl:value-of select="concat(.,':',$fraction,' ')"/>
+        </xsl:for-each>
+      </xsl:variable>
+
+      <xsl:attribute name="TwinFraction"><xsl:value-of select="translate(normalize-space($twin_fraction),' ',';')"/></xsl:attribute>
+
+    </xsl:if>
+
+    <xsl:if test="PDBxv:iso_B_value_type">
+      <xsl:attribute name="B_factor_type"><xsl:value-of select="upper-case(PDBxv:iso_B_value_type)"/></xsl:attribute>
+    </xsl:if>
+    <xsl:if test="PDBxv:ls_percent_reflns_obs">
+      <xsl:attribute name="DataCompleteness"><xsl:value-of select="PDBxv:ls_percent_reflns_obs"/></xsl:attribute>
+    </xsl:if>
+    <xsl:if test="PDBxv:ls_number_reflns_R_free">
+      <xsl:attribute name="num-free-reflections"><xsl:value-of select="PDBxv:ls_number_reflns_R_free"/></xsl:attribute>
+    </xsl:if>
+    <xsl:if test="PDBxv:ls_percent_reflns_R_free">
+      <xsl:attribute name="percent-free-reflections"><xsl:value-of select="PDBxv:ls_percent_reflns_R_free"/></xsl:attribute>
+    </xsl:if>
+
+    <xsl:choose>
+      <xsl:when test="PDBxv:R_value_R_work">
+        <xsl:attribute name="DCC_R"><xsl:value-of select="PDBxv:R_value_R_work"/></xsl:attribute>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:attribute name="DCC_R">NotAvailable</xsl:attribute>
+      </xsl:otherwise>
+    </xsl:choose>
+
+    <xsl:choose>
+      <xsl:when test="PDBxv:R_value_R_free">
+        <xsl:attribute name="DCC_Rfree"><xsl:value-of select="PDBxv:R_value_R_free"/></xsl:attribute>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:attribute name="DCC_Rfree">NotAvailable</xsl:attribute>
+      </xsl:otherwise>
+    </xsl:choose>
+
+    <xsl:if test="PDBxv:B_babinet">
+      <xsl:attribute name="babinet_b"><xsl:value-of select="PDBxv:B_babinet"/></xsl:attribute>
+    </xsl:if>
+    <xsl:if test="PDBxv:K_babinet">
+      <xsl:attribute name="babinet_k"><xsl:value-of select="PDBxv:K_babinet"/></xsl:attribute>
+    </xsl:if>
+    <xsl:if test="PDBxv:B_solvent">
+      <xsl:attribute name="bulk_solvent_b"><xsl:value-of select="PDBxv:B_solvent"/></xsl:attribute>
+    </xsl:if>
+    <xsl:if test="PDBxv:K_solvent">
+      <xsl:attribute name="bulk_solvent_k"><xsl:value-of select="PDBxv:K_solvent"/></xsl:attribute>
+    </xsl:if>
+
+  </xsl:template>
+
+  <xsl:template match="PDBxv:pdbx_dcc_density_corr">
+
+    <xsl:choose>
+      <xsl:when test="PDBxv:ls_R_factor_R_work">
+        <xsl:attribute name="EDS_R"><xsl:value-of select="PDBxv:ls_R_factor_R_work"/></xsl:attribute>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:attribute name="EDS_R">NotAvailable</xsl:attribute>
+      </xsl:otherwise>
+    </xsl:choose>
+
+    <xsl:choose>
+      <xsl:when test="PDBxv:ls_d_res_high">
+        <xsl:attribute name="EDS_resolution"><xsl:value-of select="PDBxv:ls_d_res_high"/></xsl:attribute>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:attribute name="EDS_resolution">NotAvailable</xsl:attribute>
+      </xsl:otherwise>
+    </xsl:choose>
+
+    <xsl:choose>
+      <xsl:when test="PDBxv:ls_d_res_low">
+        <xsl:attribute name="EDS_resolution_low"><xsl:value-of select="PDBxv:ls_d_res_low"/></xsl:attribute>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:attribute name="EDS_resolution_low">NotAvailable</xsl:attribute>
+      </xsl:otherwise>
+    </xsl:choose>
+
+    <xsl:choose>
+      <xsl:when test="PDBxv:correlation_coeff_Fo_to_Fc">
+        <xsl:attribute name="Fo_Fc_correlation"><xsl:value-of select="PDBxv:correlation_coeff_Fo_to_Fc"/></xsl:attribute>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:attribute name="Fo_Fc_correlation">NotAvailable</xsl:attribute>
+      </xsl:otherwise>
+    </xsl:choose>
+
+  </xsl:template>
+
+  <xsl:template match="PDBxv:pdbx_dcc_map_overall">
+
+    <xsl:if test="PDBxv:RSRZ_outliers_percent">
+      <xsl:attribute name="percent-RSRZ-outliers"><xsl:value-of select="PDBxv:RSRZ_outliers_percent"/></xsl:attribute>
+    </xsl:if>
+
+  </xsl:template>
+
+  <xsl:template match="PDBxv:pdbx_struct_nmr_ens_clust">
+
+    <xsl:if test="PDBxv:outliers_total_number">
+      <xsl:attribute name="nmrclust_number_of_outliers"><xsl:value-of select="PDBxv:outliers_total_number"/></xsl:attribute>
+    </xsl:if>
+    <xsl:if test="PDBxv:conformers_total_number">
+      <xsl:attribute name="nmrclust_number_of_models"><xsl:value-of select="PDBxv:conformers_total_number"/></xsl:attribute>
+    </xsl:if>
+    <xsl:if test="PDBxv:clusters_total_number">
+      <xsl:attribute name="nmrclust_number_of_clusters"><xsl:value-of select="PDBxv:clusters_total_number"/></xsl:attribute>
+    </xsl:if>
+
+  </xsl:template>
+
+  <xsl:template match="PDBxv:pdbx_percentile_view">
+
+    <xsl:call-template name="percentile_handler">
+      <xsl:with-param name="conditions_id"><xsl:value-of select="@conditions_id"/></xsl:with-param>
+      <xsl:with-param name="type"><xsl:value-of select="@type"/></xsl:with-param>
+      <xsl:with-param name="rank"><xsl:value-of select="PDBxv:rank"/></xsl:with-param>
+    </xsl:call-template>
+
+  </xsl:template>
+
+  <!-- percentile view -->
+
+  <xsl:template name="percentile_handler">
+    <xsl:param name="conditions_id"/>
+    <xsl:param name="type"/>
+    <xsl:param name="rank"/>
+
+    <xsl:variable name="condition_res_high"><xsl:value-of select="$datablock/PDBxv:pdbx_percentile_conditionsCategory/PDBxv:pdbx_percentile_conditions[@id=$conditions_id]/PDBxv:ls_d_res_high"/></xsl:variable>
+    <xsl:variable name="condition_res_low"><xsl:value-of select="$datablock/PDBxv:pdbx_percentile_conditionsCategory/PDBxv:pdbx_percentile_conditions[@id=$conditions_id]/PDBxv:ls_d_res_low"/></xsl:variable>
+
+    <xsl:variable name="absolute">
+      <xsl:choose>
+        <xsl:when test="$condition_res_high!=''">no</xsl:when>
+        <xsl:otherwise>yes</xsl:otherwise>
+      </xsl:choose>
+    </xsl:variable>
+
+    <xsl:variable name="number_of_entries"><xsl:value-of select="$datablock/PDBxv:pdbx_percentile_conditionsCategory/PDBxv:pdbx_percentile_conditions[@id=$conditions_id]/PDBxv:number_entries_total"/></xsl:variable>
+
+    <xsl:choose>
+      <xsl:when test="$type='RNA_suiteness_score'">
+        <xsl:choose>
+          <xsl:when test="$absolute='no'">
+            <xsl:attribute name="relative-percentile-RNAsuiteness"><xsl:value-of select="$rank"/></xsl:attribute>
+            <xsl:attribute name="numPDBids-relative-percentile-RNAsuiteness"><xsl:value-of select="$number_of_entries"/></xsl:attribute>
+            <xsl:attribute name="low-resol-relative-percentile-RNAsuiteness"><xsl:value-of select="$condition_res_low"/></xsl:attribute>
+            <xsl:attribute name="high-resol-relative-percentile-RNAsuiteness"><xsl:value-of select="$condition_res_high"/></xsl:attribute>
+          </xsl:when>
+          <xsl:otherwise>
+            <xsl:attribute name="absolute-percentile-RNAsuiteness"><xsl:value-of select="$rank"/></xsl:attribute>
+            <xsl:attribute name="numPDBids-absolute-percentile-RNAsuiteness"><xsl:value-of select="$number_of_entries"/></xsl:attribute>
+          </xsl:otherwise>
+        </xsl:choose>
+      </xsl:when>
+      <xsl:when test="$type='all_atom_clashscore'">
+        <xsl:choose>
+          <xsl:when test="$absolute='no'">
+            <xsl:attribute name="relative-percentile-clashscore"><xsl:value-of select="$rank"/></xsl:attribute>
+            <xsl:attribute name="numPDBids-relative-percentile-clashscore"><xsl:value-of select="$number_of_entries"/></xsl:attribute>
+            <xsl:attribute name="low-resol-relative-percentile-clashscore"><xsl:value-of select="$condition_res_low"/></xsl:attribute>
+            <xsl:attribute name="high-resol-relative-percentile-clashscore"><xsl:value-of select="$condition_res_high"/></xsl:attribute>
+          </xsl:when>
+          <xsl:otherwise>
+            <xsl:attribute name="absolute-percentile-clashscore"><xsl:value-of select="$rank"/></xsl:attribute>
+            <xsl:attribute name="numPDBids-absolute-percentile-clashscore"><xsl:value-of select="$number_of_entries"/></xsl:attribute>
+          </xsl:otherwise>
+        </xsl:choose>
+      </xsl:when>
+      <xsl:when test="$type='Ramachandran_outlier_percent'">
+        <xsl:choose>
+          <xsl:when test="$absolute='no'">
+            <xsl:attribute name="relative-percentile-percent-rama-outliers"><xsl:value-of select="$rank"/></xsl:attribute>
+            <xsl:attribute name="numPDBids-relative-percentile-percent-rama-outliers"><xsl:value-of select="$number_of_entries"/></xsl:attribute>
+            <xsl:attribute name="low-resol-relative-percentile-percent-rama-outliers"><xsl:value-of select="$condition_res_low"/></xsl:attribute>
+            <xsl:attribute name="high-resol-relative-percentile-percent-rama-outliers"><xsl:value-of select="$condition_res_high"/></xsl:attribute>
+          </xsl:when>
+          <xsl:otherwise>
+            <xsl:attribute name="absolute-percentile-percent-rama-outliers"><xsl:value-of select="$rank"/></xsl:attribute>
+            <xsl:attribute name="numPDBids-absolute-percentile-percent-rama-outliers"><xsl:value-of select="$number_of_entries"/></xsl:attribute>
+          </xsl:otherwise>
+        </xsl:choose>
+      </xsl:when>
+      <xsl:when test="$type='rotamer_outliers_percent'">
+        <xsl:choose>
+          <xsl:when test="$absolute='no'">
+            <xsl:attribute name="relative-percentile-percent-rota-outliers"><xsl:value-of select="$rank"/></xsl:attribute>
+            <xsl:attribute name="numPDBids-relative-percentile-percent-rota-outliers"><xsl:value-of select="$number_of_entries"/></xsl:attribute>
+            <xsl:attribute name="low-resol-relative-percentile-percent-rota-outliers"><xsl:value-of select="$condition_res_low"/></xsl:attribute>
+            <xsl:attribute name="high-resol-relative-percentile-percent-rota-outliers"><xsl:value-of select="$condition_res_high"/></xsl:attribute>
+          </xsl:when>
+          <xsl:otherwise>
+            <xsl:attribute name="absolute-percentile-percent-rota-outliers"><xsl:value-of select="$rank"/></xsl:attribute>
+            <xsl:attribute name="numPDBids-absolute-percentile-percent-rota-outliers"><xsl:value-of select="$number_of_entries"/></xsl:attribute>
+          </xsl:otherwise>
+        </xsl:choose>
+      </xsl:when>
+      <xsl:when test="$type='R_value_R_free'">
+        <xsl:choose>
+          <xsl:when test="$absolute='no'">
+            <xsl:attribute name="relative-percentile-DCC_Rfree"><xsl:value-of select="$rank"/></xsl:attribute>
+            <xsl:attribute name="numPDBids-relative-percentile-DCC_Rfree"><xsl:value-of select="$number_of_entries"/></xsl:attribute>
+            <xsl:attribute name="low-resol-relative-percentile-DCC_Rfree"><xsl:value-of select="$condition_res_low"/></xsl:attribute>
+            <xsl:attribute name="high-resol-relative-percentile-DCC_Rfree"><xsl:value-of select="$condition_res_high"/></xsl:attribute>
+          </xsl:when>
+          <xsl:otherwise>
+            <xsl:attribute name="absolute-percentile-DCC_Rfree"><xsl:value-of select="$rank"/></xsl:attribute>
+            <xsl:attribute name="numPDBids-absolute-percentile-DCC_Rfree"><xsl:value-of select="$number_of_entries"/></xsl:attribute>
+          </xsl:otherwise>
+        </xsl:choose>
+      </xsl:when>
+      <xsl:when test="$type='RSRZ_outliers_percent'">
+        <xsl:choose>
+          <xsl:when test="$absolute='no'">
+            <xsl:attribute name="relative-percentile-percent-RSRZ-outliers"><xsl:value-of select="$rank"/></xsl:attribute>
+            <xsl:attribute name="numPDBids-relative-percentile-percent-RSRZ-outliers"><xsl:value-of select="$number_of_entries"/></xsl:attribute>
+            <xsl:attribute name="low-resol-relative-percentile-percent-RSRZ-outliers"><xsl:value-of select="$condition_res_low"/></xsl:attribute>
+            <xsl:attribute name="high-resol-relative-percentile-percent-RSRZ-outliers"><xsl:value-of select="$condition_res_high"/></xsl:attribute>
+          </xsl:when>
+          <xsl:otherwise>
+            <xsl:attribute name="absolute-percentile-percent-RSRZ-outliers"><xsl:value-of select="$rank"/></xsl:attribute>
+            <xsl:attribute name="numPDBids-absolute-percentile-percent-RSRZ-outliers"><xsl:value-of select="$number_of_entries"/></xsl:attribute>
+          </xsl:otherwise>
+        </xsl:choose>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:call-template name="error_handler">
+          <xsl:with-param name="terminate">yes</xsl:with-param>
+          <xsl:with-param name="error_message">
+Unmatched type exist in _pdbx_percentile_view.type, <xsl:value-of select="position()"/>, found in XSLT code.
+          </xsl:with-param>
+        </xsl:call-template>
+      </xsl:otherwise>
+    </xsl:choose>
+
+  </xsl:template>
+
+  <!-- chemical shift list -->
+
+  <xsl:template match="PDBxv:pdbx_nmr_assigned_chem_shift_list">
+
+    <chemical_shift_list>
+
+      <xsl:variable name="list_id"><xsl:value-of select="@id"/></xsl:variable>
+
+      <xsl:attribute name="file_id"><xsl:value-of select="$list_id"/></xsl:attribute>
+      <xsl:attribute name="file_name"><xsl:value-of select="PDBxv:data_file_name"/></xsl:attribute>
+      <xsl:attribute name="block_name"><xsl:value-of select="PDBxv:label"/></xsl:attribute>
+      <xsl:attribute name="list_id"><xsl:value-of select="$list_id"/></xsl:attribute>
+      <xsl:choose>
+        <xsl:when test="PDBxv:nmr_star_consistency_flag='Y'">
+          <xsl:attribute name="type">full</xsl:attribute>
+        </xsl:when>
+        <xsl:when test="PDBxv:nmr_star_consistency_flag='N'">
+          <xsl:attribute name="type">partial</xsl:attribute>
+        </xsl:when>
+        <xsl:otherwise>
+          <xsl:call-template name="error_handler">
+            <xsl:with-param name="terminate">yes</xsl:with-param>
+            <xsl:with-param name="error_message">
+Unmatched type exist in _pdbx_nmr_assigned_chem_shift_list.nmr_star_consistency_flag, <xsl:value-of select="position()"/>, found in XSLT code.
+            </xsl:with-param>
+          </xsl:call-template>
+        </xsl:otherwise>
+      </xsl:choose>
+      <xsl:attribute name="number_of_errors_while_mapping"><xsl:value-of select="PDBxv:number_map_errors"/></xsl:attribute>
+      <xsl:attribute name="number_of_warnings_while_mapping"><xsl:value-of select="PDBxv:number_map_warnings"/></xsl:attribute>
+      <xsl:attribute name="number_of_mapped_shifts"><xsl:value-of select="PDBxv:number_mapped_chem_shifts"/></xsl:attribute>
+      <xsl:attribute name="number_of_parsed_shifts"><xsl:value-of select="PDBxv:number_parsed_chem_shifts"/></xsl:attribute>
+      <xsl:attribute name="total_number_of_shifts"><xsl:value-of select="PDBxv:number_chem_shifts"/></xsl:attribute>
+      <xsl:attribute name="number_of_unparsed_shifts"><xsl:value-of select="PDBxv:number_unparsed_chem_shifts"/></xsl:attribute>
+
+      <xsl:if test="$datablock/PDBxv:pdbx_nmr_unmapped_chem_shiftCategory/PDBxv:pdbx_nmr_unmapped_chem_shift">
+        <xsl:call-template name="pdbx_nmr_unmapped_chem_shift">
+          <xsl:with-param name="list_id"><xsl:value-of select="$list_id"/></xsl:with-param>
+        </xsl:call-template>
+      </xsl:if>
+
+      <xsl:if test="$datablock/PDBxv:pdbx_nmr_unparsed_chem_shiftCategory/PDBxv:pdbx_nmr_unparsed_chem_shift">
+        <xsl:call-template name="pdbx_nmr_unparsed_chem_shift">
+          <xsl:with-param name="list_id"><xsl:value-of select="$list_id"/></xsl:with-param>
+        </xsl:call-template>
+      </xsl:if>
+
+      <xsl:if test="$datablock/PDBxv:pdbx_missing_nmr_star_itemCategory/PDBxv:pdbx_missing_nmr_star_item">
+        <xsl:call-template name="pdbx_missing_nmr_star_item">
+          <xsl:with-param name="list_id"><xsl:value-of select="$list_id"/></xsl:with-param>
+        </xsl:call-template>
+      </xsl:if>
+
+      <xsl:if test="$datablock/PDBxv:pdbx_nmr_chem_shift_annotationCategory/PDBxv:pdbx_nmr_chem_shift_annotation">
+        <xsl:call-template name="pdbx_nmr_chem_shift_annotation">
+          <xsl:with-param name="list_id"><xsl:value-of select="$list_id"/></xsl:with-param>
+        </xsl:call-template>
+      </xsl:if>
+
+      <xsl:if test="$datablock/PDBxv:pdbx_validate_nmr_chem_shiftCategory/PDBxv:pdbx_validate_nmr_chem_shift">
+        <xsl:call-template name="pdbx_validate_nmr_chem_shift">
+          <xsl:with-param name="list_id"><xsl:value-of select="$list_id"/></xsl:with-param>
+        </xsl:call-template>
+      </xsl:if>
+
+      <xsl:if test="$datablock/PDBxv:pdbx_nmr_chem_shift_re_offsetCategory/PDBxv:pdbx_nmr_chem_shift_re_offset">
+        <xsl:call-template name="pdbx_nmr_chem_shift_re_offset">
+          <xsl:with-param name="list_id"><xsl:value-of select="$list_id"/></xsl:with-param>
+        </xsl:call-template>
+      </xsl:if>
+
+      <xsl:if test="$datablock/PDBxv:pdbx_nmr_chem_shift_completenessCategory/PDBxv:pdbx_nmr_chem_shift_completeness">
+        <xsl:call-template name="pdbx_nmr_chem_shift_completeness_well_defined">
+          <xsl:with-param name="list_id"><xsl:value-of select="$list_id"/></xsl:with-param>
+        </xsl:call-template>
+        <xsl:call-template name="pdbx_nmr_chem_shift_completeness_full_length">
+          <xsl:with-param name="list_id"><xsl:value-of select="$list_id"/></xsl:with-param>
+        </xsl:call-template>
+      </xsl:if>
+
+    </chemical_shift_list>
+
+  </xsl:template>
+
+  <xsl:template name="pdbx_nmr_unmapped_chem_shift">
+    <xsl:param name="list_id"/>
+
+    <xsl:for-each select="$datablock/PDBxv:pdbx_nmr_unmapped_chem_shiftCategory/PDBxv:pdbx_nmr_unmapped_chem_shift[@list_id=$list_id]">
+
+      <unmapped_chemical_shift>
+
+        <xsl:attribute name="chain"><xsl:value-of select="PDBxv:auth_asym_id"/></xsl:attribute>
+        <xsl:attribute name="rescode"><xsl:value-of select="PDBxv:auth_comp_id"/></xsl:attribute>
+        <xsl:attribute name="resnum"><xsl:value-of select="PDBxv:auth_seq_id"/></xsl:attribute>
+        <xsl:attribute name="atom"><xsl:value-of select="PDBxv:auth_atom_id"/></xsl:attribute>
+        <xsl:attribute name="value"><xsl:value-of select="PDBxv:val"/></xsl:attribute>
+        <xsl:if test="PDBxv:val_err">
+          <xsl:attribute name="error"><xsl:value-of select="PDBxv:val_err"/></xsl:attribute>
+        </xsl:if>
+        <xsl:if test="PDBxv:ambiguity_code=('1','2','3','4','5','6','9')">
+          <xsl:attribute name="ambiguity"><xsl:value-of select="PDBxv:ambiguity_code"/></xsl:attribute>
+        </xsl:if>
+        <xsl:attribute name="diagnostic"><xsl:value-of select="PDBxv:details"/></xsl:attribute>
+
+      </unmapped_chemical_shift>
+
+    </xsl:for-each>
+
+  </xsl:template>
+
+  <xsl:template name="pdbx_nmr_unparsed_chem_shift">
+    <xsl:param name="list_id"/>
+
+    <xsl:for-each select="$datablock/PDBxv:pdbx_nmr_unparsed_chem_shiftCategory/PDBxv:pdbx_nmr_unparsed_chem_shift[@list_id=$list_id]">
+
+      <unparsed_chemical_shift>
+
+        <xsl:if test="PDBxv:chem_shift_id">
+          <xsl:attribute name="id"><xsl:value-of select="PDBxv:chem_shift_id"/></xsl:attribute>
+        </xsl:if>
+        <xsl:attribute name="chain"><xsl:value-of select="PDBxv:auth_asym_id"/></xsl:attribute>
+        <xsl:attribute name="rescode"><xsl:value-of select="PDBxv:auth_comp_id"/></xsl:attribute>
+        <xsl:attribute name="resnum"><xsl:value-of select="PDBxv:auth_seq_id"/></xsl:attribute>
+        <xsl:attribute name="atom"><xsl:value-of select="PDBxv:auth_atom_id"/></xsl:attribute>
+        <xsl:attribute name="value"><xsl:value-of select="PDBxv:val"/></xsl:attribute>
+        <xsl:if test="PDBxv:val_err">
+          <xsl:attribute name="error"><xsl:value-of select="PDBxv:val_err"/></xsl:attribute>
+        </xsl:if>
+        <xsl:if test="PDBxv:ambiguity_code=('1','2','3','4','5','6','9')">
+          <xsl:attribute name="ambiguity"><xsl:value-of select="PDBxv:ambiguity_code"/></xsl:attribute>
+        </xsl:if>
+        <xsl:attribute name="diagnostic"><xsl:value-of select="PDBxv:details"/></xsl:attribute>
+
+      </unparsed_chemical_shift>
+
+    </xsl:for-each>
+
+  </xsl:template>
+
+  <xsl:template name="pdbx_missing_nmr_star_item">
+    <xsl:param name="list_id"/>
+
+    <xsl:for-each select="$datablock/PDBxv:pdbx_missing_nmr_star_itemCategory/PDBxv:pdbx_missing_nmr_star_item[@list_id=$list_id]">
+
+      <missing_nmrstar_tag>
+
+        <xsl:attribute name="nmrstar_tag"><xsl:value-of select="PDBxv:name"/></xsl:attribute>
+        <xsl:attribute name="nmrstar_tag_description"><xsl:value-of select="PDBxv:description"/></xsl:attribute>
+
+      </missing_nmrstar_tag>
+
+    </xsl:for-each>
+
+  </xsl:template>
+
+  <xsl:template name="pdbx_nmr_chem_shift_annotation">
+    <xsl:param name="list_id"/>
+
+    <xsl:for-each select="$datablock/PDBxv:pdbx_nmr_chem_shift_annotationCategory/PDBxv:pdbx_nmr_chem_shift_annotation[@list_id=$list_id]">
+
+      <random_coil_index>
+
+        <xsl:attribute name="chain"><xsl:value-of select="PDBxv:auth_asym_id"/></xsl:attribute>
+        <xsl:attribute name="rescode"><xsl:value-of select="PDBxv:auth_comp_id"/></xsl:attribute>
+        <xsl:attribute name="resnum"><xsl:value-of select="PDBxv:auth_seq_id"/></xsl:attribute>
+        <xsl:attribute name="value"><xsl:value-of select="PDBxv:random_coil_index"/></xsl:attribute>
+
+      </random_coil_index>
+
+    </xsl:for-each>
+
+  </xsl:template>
+
+  <xsl:template name="pdbx_validate_nmr_chem_shift">
+    <xsl:param name="list_id"/>
+
+    <xsl:for-each select="$datablock/PDBxv:pdbx_validate_nmr_chem_shiftCategory/PDBxv:pdbx_validate_nmr_chem_shift[@list_id=$list_id]">
+
+      <chemical_shift_outlier>
+
+        <xsl:attribute name="chain"><xsl:value-of select="PDBxv:auth_asym_id"/></xsl:attribute>
+        <xsl:attribute name="rescode"><xsl:value-of select="PDBxv:auth_comp_id"/></xsl:attribute>
+        <xsl:attribute name="resnum"><xsl:value-of select="PDBxv:auth_seq_id"/></xsl:attribute>
+        <xsl:attribute name="atom"><xsl:value-of select="PDBxv:auth_atom_id"/></xsl:attribute>
+        <xsl:attribute name="value"><xsl:value-of select="PDBxv:val"/></xsl:attribute>
+        <xsl:attribute name="prediction"><xsl:value-of select="PDBxv:target_val"/></xsl:attribute>
+        <xsl:attribute name="zscore"><xsl:value-of select="PDBxv:Zscore"/></xsl:attribute>
+        <xsl:attribute name="method"><xsl:value-of select="PDBxv:method"/></xsl:attribute>
+
+      </chemical_shift_outlier>
+
+    </xsl:for-each>
+
+  </xsl:template>
+
+  <xsl:template name="pdbx_nmr_chem_shift_re_offset">
+    <xsl:param name="list_id"/>
+
+    <xsl:for-each select="$datablock/PDBxv:pdbx_nmr_chem_shift_re_offsetCategory/PDBxv:pdbx_nmr_chem_shift_re_offset[@list_id=$list_id]">
+
+      <referencing_offset>
+
+        <xsl:attribute name="atom"><xsl:value-of select="@atom_type"/></xsl:attribute>
+        <xsl:attribute name="value"><xsl:value-of select="PDBxv:correction_val"/></xsl:attribute>
+        <xsl:attribute name="uncertainty"><xsl:value-of select="PDBxv:correction_val_err"/></xsl:attribute>
+        <xsl:attribute name="precision"><xsl:value-of select="PDBxv:correction_val_esd"/></xsl:attribute>
+        <xsl:attribute name="number_of_measurements"><xsl:value-of select="PDBxv:number_chem_shifts"/></xsl:attribute>
+
+      </referencing_offset>
+
+    </xsl:for-each>
+
+  </xsl:template>
+
+  <xsl:template name="pdbx_nmr_chem_shift_completeness_well_defined">
+    <xsl:param name="list_id"/>
+
+    <xsl:for-each select="$datablock/PDBxv:pdbx_nmr_chem_shift_completenessCategory/PDBxv:pdbx_nmr_chem_shift_completeness[@list_id=$list_id]">
+
+      <xsl:if test="PDBxv:number_assigned_chem_shifts_well_formed">
+
+        <assignment_completeness_well_defined>
+
+          <xsl:attribute name="type"><xsl:value-of select="@atom_group"/></xsl:attribute>
+          <xsl:attribute name="element"><xsl:value-of select="@atom_type"/></xsl:attribute>
+          <xsl:attribute name="number_of_assigned_shifts"><xsl:value-of select="PDBxv:number_assigned_chem_shifts_well_formed"/></xsl:attribute>
+          <xsl:attribute name="number_of_shifts"><xsl:value-of select="PDBxv:number_target_shifts_well_formed"/></xsl:attribute>
+          <xsl:attribute name="number_of_unassigned_shifts"><xsl:value-of select="PDBxv:number_unassigned_chem_shifts_well_formed"/></xsl:attribute>
+
+        </assignment_completeness_well_defined>
+
+      </xsl:if>
+
+    </xsl:for-each>
+
+  </xsl:template>
+
+  <xsl:template name="pdbx_nmr_chem_shift_completeness_full_length">
+    <xsl:param name="list_id"/>
+
+    <xsl:for-each select="$datablock/PDBxv:pdbx_nmr_chem_shift_completenessCategory/PDBxv:pdbx_nmr_chem_shift_completeness[@list_id=$list_id]">
+
+      <xsl:if test="PDBxv:number_assigned_chem_shifts_well_formed">
+
+        <assignment_completeness_full_length>
+
+          <xsl:attribute name="type"><xsl:value-of select="@atom_group"/></xsl:attribute>
+          <xsl:attribute name="element"><xsl:value-of select="@atom_type"/></xsl:attribute>
+          <xsl:attribute name="number_of_assigned_shifts"><xsl:value-of select="PDBxv:number_assigned_chem_shifts"/></xsl:attribute>
+          <xsl:attribute name="number_of_shifts"><xsl:value-of select="PDBxv:number_target_shifts"/></xsl:attribute>
+          <xsl:attribute name="number_of_unassigned_shifts"><xsl:value-of select="PDBxv:number_unassigned_chem_shifts"/></xsl:attribute>
+
+        </assignment_completeness_full_length>
+
+      </xsl:if>
+
+    </xsl:for-each>
+
+  </xsl:template>
+
+  <!-- Model -->
+
+  <xsl:template match="PDBxv:pdbx_struct_nmr_ens_clust_gen">
+
+    <Model>
+
+      <xsl:attribute name="model"><xsl:value-of select="@PDB_model_num"/></xsl:attribute>
+      <xsl:attribute name="nmrclust_cluster_id"><xsl:value-of select="PDBxv:cluster_id"/></xsl:attribute>
+      <xsl:if test="PDBxv:medoid_conformer='Y'">
+        <xsl:attribute name="nmrclust_representative">True</xsl:attribute>
+      </xsl:if>
+
+    </Model>
+
+  </xsl:template>
+
+  <!-- ModelledSubgroup -->
+
+  <xsl:template name="ModelledSubgroup">
+
+    <xsl:choose>
+      <xsl:when test="$nmr=true()">
+        <xsl:for-each select="1 to $nmr_models">
+          <xsl:call-template name="modelled_subgroup_model">
+            <xsl:with-param name="model"><xsl:value-of select="."/></xsl:with-param>
+          </xsl:call-template>
+        </xsl:for-each>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:call-template name="modelled_subgroup_model">
+          <xsl:with-param name="model">1</xsl:with-param>
+        </xsl:call-template>
+      </xsl:otherwise>
+    </xsl:choose>
+
+  </xsl:template>
+
+  <xsl:template name="modelled_subgroup_model">
+    <xsl:param name="model"/>
+
+    <xsl:variable name="asym_ids">
+      <xsl:for-each select="$datablock/PDBxv:pdbx_struct_assembly_genCategory/PDBxv:pdbx_struct_assembly_gen">
+        <xsl:value-of select="concat(@asym_id_list,',')"/>
+      </xsl:for-each>
+    </xsl:variable>
+
+    <xsl:for-each select="tokenize(substring($asym_ids,1,string-length($asym_ids)-1),',')">
+      <xsl:variable name="asym_id"><xsl:value-of select="."/></xsl:variable>
+      <xsl:call-template name="modelled_subgroup_asym_id">
+        <xsl:with-param name="model"><xsl:value-of select="$model"/></xsl:with-param>
+        <xsl:with-param name="asym_id"><xsl:value-of select="$asym_id"/></xsl:with-param>
+      </xsl:call-template>
+    </xsl:for-each>
+
+  </xsl:template>
+
+  <xsl:template name="modelled_subgroup_asym_id">
+    <xsl:param name="model"/>
+    <xsl:param name="asym_id"/>
+
+    <xsl:for-each select="$datablock/PDBxv:pdbx_poly_seq_schemeCategory/PDBxv:pdbx_poly_seq_scheme[@asym_id=$asym_id]">
+      <xsl:call-template name="modelled_subgroup_mon_id">
+        <xsl:with-param name="model"><xsl:value-of select="$model"/></xsl:with-param>
+        <xsl:with-param name="strand_id"><xsl:value-of select="PDBxv:pdb_strand_id"/></xsl:with-param>
+        <xsl:with-param name="asym_id"><xsl:value-of select="$asym_id"/></xsl:with-param>
+        <xsl:with-param name="entity_id"><xsl:value-of select="@entity_id"/></xsl:with-param>
+        <xsl:with-param name="mon_id"><xsl:value-of select="@mon_id"/></xsl:with-param>
+        <xsl:with-param name="seq_id"><xsl:value-of select="@seq_id"/></xsl:with-param>
+        <xsl:with-param name="pdb_seq_num"><xsl:value-of select="PDBxv:pdb_seq_num"/></xsl:with-param>
+        <xsl:with-param name="pdb_ins_code"><xsl:value-of select="PDBxv:pdb_ins_code"/></xsl:with-param>
+      </xsl:call-template>
+    </xsl:for-each>
+
+    <xsl:for-each select="$datablock/PDBxv:pdbx_nonpoly_schemeCategory/PDBxv:pdbx_nonpoly_scheme[@asym_id=$asym_id]">
+      <xsl:call-template name="modelled_subgroup_mon_id">
+        <xsl:with-param name="model"><xsl:value-of select="$model"/></xsl:with-param>
+        <xsl:with-param name="strand_id"><xsl:value-of select="PDBxv:pdb_strand_id"/></xsl:with-param>
+        <xsl:with-param name="asym_id"><xsl:value-of select="$asym_id"/></xsl:with-param>
+        <xsl:with-param name="entity_id"><xsl:value-of select="PDBxv:entity_id"/></xsl:with-param>
+        <xsl:with-param name="mon_id"><xsl:value-of select="PDBxv:mon_id"/></xsl:with-param>
+        <xsl:with-param name="seq_id"/>
+        <xsl:with-param name="pdb_seq_num"><xsl:value-of select="PDBxv:pdb_seq_num"/></xsl:with-param>
+        <xsl:with-param name="pdb_ins_code"><xsl:value-of select="PDBxv:pdb_ins_code"/></xsl:with-param>
+      </xsl:call-template>
+    </xsl:for-each>
+
+  </xsl:template>
+
+  <xsl:template name="modelled_subgroup_mon_id">
+    <xsl:param name="model"/>
+    <xsl:param name="strand_id"/>
+    <xsl:param name="asym_id"/>
+    <xsl:param name="entity_id"/>
+    <xsl:param name="mon_id"/>
+    <xsl:param name="seq_id"/>
+    <xsl:param name="pdb_seq_num"/>
+    <xsl:param name="pdb_ins_code"/>
+
+    <xsl:variable name="alt_ids">
+      <xsl:for-each select="$datablock/PDBxv:pdbx_dcc_mapCategory/PDBxv:pdbx_dcc_map[PDBxv:PDB_model_num=$model and PDBxv:auth_asym_id=$strand_id and PDBxv:auth_comp_id=$mon_id and PDBxv:auth_seq_id=$pdb_seq_num]">
+        <xsl:value-of select="concat(PDBxv:label_alt_id,',')"/>
+      </xsl:for-each>
+      <xsl:for-each select="$datablock/PDBxv:pdbx_dcc_mon_geometryCategory/PDBxv:pdbx_dcc_mon_geometry[PDBxv:PDB_model_num=$model and PDBxv:auth_asym_id=$strand_id and PDBxv:auth_comp_id=$mon_id and PDBxv:auth_seq_id=$pdb_seq_num]">
+        <xsl:value-of select="concat(PDBxv:label_alt_id,',')"/>
+      </xsl:for-each>
+      <xsl:for-each select="$datablock/PDBxv:struct_mon_protCategory/PDBxv:struct_mon_prot[PDBxv:PDB_model_num=$model and PDBxv:auth_asym_id=$strand_id and PDBxv:auth_comp_id=$mon_id and PDBxv:auth_seq_id=$pdb_seq_num]">
+        <xsl:value-of select="concat(PDBxv:label_alt_id,',')"/>
+      </xsl:for-each>
+      <xsl:for-each select="$datablock/PDBxv:struct_mon_nuclCategory/PDBxv:struct_mon_nucl[PDBxv:PDB_model_num=$model and PDBxv:auth_asym_id=$strand_id and PDBxv:auth_comp_id=$mon_id and PDBxv:auth_seq_id=$pdb_seq_num]">
+        <xsl:value-of select="concat(PDBxv:label_alt_id,',')"/>
+      </xsl:for-each>
+    </xsl:variable>
+
+    <xsl:variable name="alt_id_list">
+      <xsl:if test="string-length($alt_ids)&gt;0">
+        <xsl:value-of select="substring($alt_ids,1,string-length($alt_ids)-1)"/>
+      </xsl:if>
+    </xsl:variable>
+
+    <xsl:choose>
+      <xsl:when test="$alt_id_list=''">
+        <xsl:call-template name="modelled_subgroup_alt_id">
+          <xsl:with-param name="model"><xsl:value-of select="$model"/></xsl:with-param>
+          <xsl:with-param name="strand_id"><xsl:value-of select="$strand_id"/></xsl:with-param>
+          <xsl:with-param name="asym_id"><xsl:value-of select="$asym_id"/></xsl:with-param>
+          <xsl:with-param name="entity_id"><xsl:value-of select="$entity_id"/></xsl:with-param>
+          <xsl:with-param name="mon_id"><xsl:value-of select="$mon_id"/></xsl:with-param>
+          <xsl:with-param name="seq_id"><xsl:value-of select="$seq_id"/></xsl:with-param>
+          <xsl:with-param name="pdb_seq_num"><xsl:value-of select="$pdb_seq_num"/></xsl:with-param>
+          <xsl:with-param name="pdb_ins_code"><xsl:value-of select="$pdb_ins_code"/></xsl:with-param>
+          <xsl:with-param name="alt_id"/>
+        </xsl:call-template>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:for-each select="distinct-values(tokenize($alt_id_list,','))">
+          <xsl:call-template name="modelled_subgroup_alt_id">
+            <xsl:with-param name="model"><xsl:value-of select="$model"/></xsl:with-param>
+            <xsl:with-param name="strand_id"><xsl:value-of select="$strand_id"/></xsl:with-param>
+            <xsl:with-param name="asym_id"><xsl:value-of select="$asym_id"/></xsl:with-param>
+            <xsl:with-param name="entity_id"><xsl:value-of select="$entity_id"/></xsl:with-param>
+            <xsl:with-param name="mon_id"><xsl:value-of select="$mon_id"/></xsl:with-param>
+            <xsl:with-param name="seq_id"><xsl:value-of select="$seq_id"/></xsl:with-param>
+            <xsl:with-param name="pdb_seq_num"><xsl:value-of select="$pdb_seq_num"/></xsl:with-param>
+            <xsl:with-param name="pdb_ins_code"><xsl:value-of select="$pdb_ins_code"/></xsl:with-param>
+            <xsl:with-param name="alt_id"><xsl:value-of select="."/></xsl:with-param>
+          </xsl:call-template>
+        </xsl:for-each>
+      </xsl:otherwise>
+    </xsl:choose>
+
+  </xsl:template>
+
+  <xsl:template name="modelled_subgroup_alt_id">
+    <xsl:param name="model"/>
+    <xsl:param name="strand_id"/>
+    <xsl:param name="asym_id"/>
+    <xsl:param name="entity_id"/>
+    <xsl:param name="mon_id"/>
+    <xsl:param name="seq_id"/>
+    <xsl:param name="pdb_seq_num"/>
+    <xsl:param name="pdb_ins_code"/>
+    <xsl:param name="alt_id"/>
+
+    <ModelledSubgroup>
+
+      <xsl:attribute name="model"><xsl:value-of select="$model"/></xsl:attribute>
+      <xsl:attribute name="chain"><xsl:value-of select="$strand_id"/></xsl:attribute>
+      <xsl:attribute name="said"><xsl:value-of select="$asym_id"/></xsl:attribute>
+      <xsl:attribute name="ent"><xsl:value-of select="$entity_id"/></xsl:attribute>
+      <xsl:attribute name="resname"><xsl:value-of select="$mon_id"/></xsl:attribute>
+      <xsl:attribute name="seq"><xsl:value-of select="$seq_id"/></xsl:attribute>
+      <xsl:attribute name="resnum"><xsl:value-of select="$pdb_seq_num"/></xsl:attribute>
+      <xsl:choose>
+        <xsl:when test="$pdb_ins_code!=''">
+          <xsl:attribute name="icode"><xsl:value-of select="$pdb_ins_code"/></xsl:attribute>
+        </xsl:when>
+        <xsl:otherwise>
+          <xsl:attribute name="icode"/>
+        </xsl:otherwise>
+      </xsl:choose>
+      <xsl:choose>
+        <xsl:when test="$alt_id!=''">
+          <xsl:attribute name="altcode"><xsl:value-of select="$alt_id"/></xsl:attribute>
+        </xsl:when>
+        <xsl:otherwise>
+          <xsl:attribute name="altcode"/>
+        </xsl:otherwise>
+      </xsl:choose>
+
+      <!-- pdbx_dcc_map -->
+
+      <xsl:for-each select="$datablock/PDBxv:pdbx_dcc_mapCategory/PDBxv:pdbx_dcc_map[PDBxv:PDB_model_num=$model and PDBxv:auth_asym_id=$strand_id and PDBxv:auth_comp_id=$mon_id and PDBxv:auth_seq_id=$pdb_seq_num and ($alt_id='' or PDBxv:label_alt_id=$alt_id)]">
+
+        <xsl:attribute name="owab"><xsl:value-of select="PDBxv:Biso_mean"/></xsl:attribute>
+
+        <xsl:if test="PDBxv:LLDFZ">
+          <xsl:attribute name="ligRSRZ"><xsl:value-of select="PDBxv:LLDFZ"/></xsl:attribute>
+        </xsl:if>
+        <xsl:if test="PDBxv:LLDFZ_outlier_flag='Y'">
+          <xsl:attribute name="ligand_density_outlier">yes</xsl:attribute>
+        </xsl:if>
+        <xsl:if test="PDBxv:LLDF_name">
+          <xsl:attribute name="lig_rsrz_nbr_id"><xsl:value-of select="PDBxv:LLDF_name"/></xsl:attribute>
+        </xsl:if>
+        <xsl:if test="PDBxv:LLDF_number_residues_total">
+          <xsl:attribute name="ligRSRnumnbrs"><xsl:value-of select="PDBxv:LLDF_number_residues_total"/></xsl:attribute>
+        </xsl:if>
+        <xsl:if test="PDBxv:LLDF">
+          <xsl:attribute name="ligRSRnbrMean"><xsl:value-of select="PDBxv:LLDF"/></xsl:attribute>
+        </xsl:if>
+        <xsl:if test="PDBxv:LLDF_sigma">
+          <xsl:attribute name="ligRSRnbrStdev"><xsl:value-of select="PDBxv:LLDF_sigma"/></xsl:attribute>
+        </xsl:if>
+        <xsl:if test="PDBxv:RSCC">
+          <xsl:attribute name="rscc"><xsl:value-of select="PDBxv:RSCC"/></xsl:attribute>
+        </xsl:if>
+        <xsl:if test="PDBxv:RSR">
+          <xsl:attribute name="rsr"><xsl:value-of select="PDBxv:RSR"/></xsl:attribute>
+        </xsl:if>
+        <xsl:if test="PDBxv:RSRZ">
+          <xsl:attribute name="rsrz"><xsl:value-of select="PDBxv:RSRZ"/></xsl:attribute>
+        </xsl:if>
+        <xsl:if test="PDBxv:occupancy_mean">
+          <xsl:attribute name="avgoccu"><xsl:value-of select="PDBxv:occupancy_mean"/></xsl:attribute>
+        </xsl:if>
+
+      </xsl:for-each>
+
+      <!-- pdbx_dcc_mon_geometry -->
+
+      <xsl:for-each select="$datablock/PDBxv:pdbx_dcc_mon_geometryCategory/PDBxv:pdbx_dcc_mon_geometry[PDBxv:PDB_model_num=$model and PDBxv:auth_asym_id=$strand_id and PDBxv:auth_comp_id=$mon_id and PDBxv:auth_seq_id=$pdb_seq_num and ($alt_id='' or PDBxv:label_alt_id=$alt_id)]">
+
+        <xsl:attribute name="mogul_angles_rmsz"><xsl:value-of select="PDBxv:angle_overall_rmsz"/></xsl:attribute>
+        <xsl:attribute name="mogul_bonds_rmsz"><xsl:value-of select="PDBxv:bond_overall_rmsz"/></xsl:attribute>
+
+        <xsl:if test="PDBxv:number_angles">
+          <xsl:attribute name="mogul_rmsz_numangles"><xsl:value-of select="PDBxv:number_angles"/></xsl:attribute>
+        </xsl:if>
+        <xsl:if test="PDBxv:number_bonds">
+          <xsl:attribute name="mogul_rmsz_numbonds"><xsl:value-of select="PDBxv:number_bonds"/></xsl:attribute>
+        </xsl:if>
+        <xsl:if test="PDBxv:LLDFZ_outlier_flag='Y'">
+          <xsl:attribute name="ligand_geometry_outlier">yes</xsl:attribute>
+        </xsl:if>
+
+      </xsl:for-each>
+
+      <!-- struct_mon_prot -->
+
+      <xsl:for-each select="$datablock/PDBxv:struct_mon_protCategory/PDBxv:struct_mon_prot[PDBxv:PDB_model_num=$model and PDBxv:auth_asym_id=$strand_id and PDBxv:auth_comp_id=$mon_id and PDBxv:auth_seq_id=$pdb_seq_num and ($alt_id='' or PDBxv:label_alt_id=$alt_id)]">
+
+        <xsl:attribute name="phi"><xsl:value-of select="PDBxv:phi"/></xsl:attribute>
+        <xsl:attribute name="psi"><xsl:value-of select="PDBxv:psi"/></xsl:attribute>
+<!--
+        <xsl:if test="count(plane-outlier/@omega)=1">
+          <xsl:element name="PDBxv:omega"><xsl:value-of select="plane-outlier/@omega"/></xsl:element>
+        </xsl:if>
+-->
+        <xsl:if test="PDBxv:pdbx_Ramachandran_region">
+          <xsl:attribute name="rama"><xsl:value-of select="PDBxv:pdbx_Ramachandran_region"/></xsl:attribute>
+        </xsl:if>
+        <xsl:if test="PDBxv:pdbx_flippable_side_chain='Y'">
+          <xsl:attribute name="flippable-sidechain">1</xsl:attribute>
+        </xsl:if>
+        <xsl:if test="PDBxv:pdbx_rotamer">
+          <xsl:attribute name="rota"><xsl:value-of select="PDBxv:pdbx_rotamer"/></xsl:attribute>
+        </xsl:if>
+
+      </xsl:for-each>
+
+      <!-- struct_mon_nucl -->
+
+      <xsl:for-each select="$datablock/PDBxv:struct_mon_nuclCategory/PDBxv:struct_mon_nucl[PDBxv:PDB_model_num=$model and PDBxv:auth_asym_id=$strand_id and PDBxv:auth_comp_id=$mon_id and PDBxv:auth_seq_id=$pdb_seq_num and ($alt_id='' or PDBxv:label_alt_id=$alt_id)]">
+
+        <xsl:if test="PDBxv:pdbx_RNA_pucker_outlier_flag='Y'">
+          <xsl:attribute name="RNApucker">outlier</xsl:attribute>
+        </xsl:if>
+
+        <xsl:choose>
+          <xsl:when test="PDBxv:pdbx_RNA_suite">
+            <xsl:attribute name="RNAsuite"><xsl:value-of select="PDBxv:pdbx_RNA_suite"/></xsl:attribute>
+          </xsl:when>
+          <xsl:otherwise>
+            <xsl:attribute name="RNAsuite">NotAvailable</xsl:attribute>
+          </xsl:otherwise>
+        </xsl:choose>
+
+        <xsl:if test="PDBxv:pdbx_RNA_suiteness_score">
+          <xsl:attribute name="RNAscore"><xsl:value-of select="PDBxv:pdbx_RNA_suiteness_score"/></xsl:attribute>
+        </xsl:if>
+
+      </xsl:for-each>
+
+      <!-- cis_peptide -->
+
+      <xsl:for-each select="$datablock/PDBxv:struct_mon_prot_cisCategory/PDBxv:struct_mon_prot_cis[PDBxv:pdbx_PDB_model_num=$model and PDBxv:auth_asym_id=$strand_id and PDBxv:auth_comp_id=$mon_id and PDBxv:auth_seq_id=$pdb_seq_num and ($alt_id='' or PDBxv:label_alt_id=$alt_id)]">
+        <xsl:attribute name="cis_peptide">yes</xsl:attribute>
+      </xsl:for-each>
+
+      <!-- ligand -->
+
+      <xsl:if test="$datablock/PDBxv:pdbx_dcc_mon_geometryCategory/PDBxv:pdbx_dcc_mon_geometry[PDBxv:PDB_model_num=$model and PDBxv:auth_asym_id=$strand_id and PDBxv:auth_comp_id=$mon_id and PDBxv:auth_seq_id=$pdb_seq_num and ($alt_id='' or PDBxv:label_alt_id=$alt_id)]">
+
+        <xsl:variable name="ligand_num_clashes"><xsl:value-of select="count($datablock/PDBxv:pdbx_validate_close_contactCategory/PDBxv:pdbx_validate_close_contact[PDBxv:PDB_model_num=$model and PDBxv:auth_asym_id_1=$strand_id and PDBxv:auth_comp_id_1=$mon_id and PDBxv:auth_seq_id_1=$pdb_seq_num and ($alt_id='' or PDBxv:label_alt_id_1=$alt_id) and PDBxv:clash_magnitude]) + count($datablock/PDBxv:pdbx_validate_close_contactCategory/PDBxv:pdbx_validate_close_contact[PDBxv:PDB_model_num=$model and PDBxv:auth_asym_id_2=$strand_id and PDBxv:auth_comp_id_2=$mon_id and PDBxv:auth_seq_id_2=$pdb_seq_num and ($alt_id='' or PDBxv:label_alt_id_2=$alt_id) and PDBxv:clash_magnitude])"/></xsl:variable>
+
+        <xsl:variable name="ligand_num_symm_clashes"><xsl:value-of select="count($datablock/PDBxv:pdbx_validate_symm_contactCategory/PDBxv:pdbx_validate_symm_contact[PDBxv:PDB_model_num=$model and PDBxv:auth_asym_id_1=$strand_id and PDBxv:auth_comp_id_1=$mon_id and PDBxv:auth_seq_id_1=$pdb_seq_num and ($alt_id='' or PDBxv:label_alt_id_1=$alt_id) and PDBxv:clash_magnitude]) + count($datablock/PDBxv:pdbx_validate_symm_contactCategory/PDBxv:pdbx_validate_symm_contact[PDBxv:PDB_model_num=$model and PDBxv:auth_asym_id_2=$strand_id and PDBxv:auth_comp_id_2=$mon_id and PDBxv:auth_seq_id_2=$pdb_seq_num and ($alt_id='' or PDBxv:label_alt_id_2=$alt_id) and PDBxv:clash_magnitude])"/></xsl:variable>
+
+        <xsl:if test="$ligand_num_clashes&gt;0 or $ligand_num_symm_clashes&gt;0">
+          <xsl:attribute name="ligand_clashes_outlier">yes</xsl:attribute>
+          <xsl:attribute name="ligand_num_clashes"><xsl:value-of select="$ligand_num_clashes"/></xsl:attribute>
+          <xsl:attribute name="ligand_num_symm_clashes"><xsl:value-of select="$ligand_num_symm_clashes"/></xsl:attribute>
+        </xsl:if>
+
+        <xsl:if test="$datablock/PDBxv:pdbx_validate_chiralCategory/PDBxv:pdbx_validate_chiral[PDBxv:PDB_model_num=$model and PDBxv:auth_asym_id=$strand_id and PDBxv:auth_comp_id=$mon_id and PDBxv:auth_seq_id=$pdb_seq_num and ($alt_id='' or PDBxv:label_alt_id=$alt_id)]">
+          <xsl:attribute name="ligand_chirality_outlier">yes</xsl:attribute>
+        </xsl:if>
+
+      </xsl:if>
+
+      <xsl:if test="$nmr=true()">
+
+        <xsl:choose>
+          <xsl:when test="$datablock/PDBxv:pdbx_struct_nmr_ens_dom_limCategory/PDBxv:pdbx_struct_nmr_ens_dom_lim[PDBxv:beg_auth_asym_id=$strand_id and PDBxv:end_auth_asym_id=$strand_id]">
+
+            <xsl:variable name="cyrange_domain_id">
+              <xsl:for-each select="$datablock/PDBxv:pdbx_struct_nmr_ens_dom_limCategory/PDBxv:pdbx_struct_nmr_ens_dom_lim[PDBxv:beg_auth_asym_id=$strand_id and PDBxv:end_auth_asym_id=$strand_id and number(PDBxv:beg_auth_seq_id)&lt;=number($pdb_seq_num) and number(PDBxv:end_auth_seq_id)&gt;=number($pdb_seq_num)]">
+                <xsl:value-of select="@dom_id"/>
+              </xsl:for-each>
+            </xsl:variable>
+
+            <xsl:choose>
+              <xsl:when test="$cyrange_domain_id!=''">
+                <xsl:attribute name="cyrange_domain_id"><xsl:value-of select="$cyrange_domain_id"/></xsl:attribute>
+                <xsl:attribute name="validate">True</xsl:attribute>
+              </xsl:when>
+              <xsl:otherwise>
+                <xsl:attribute name="validate">False</xsl:attribute>
+              </xsl:otherwise>
+            </xsl:choose>
+          </xsl:when>
+          <xsl:otherwise>
+            <xsl:attribute name="validate">True</xsl:attribute>
+          </xsl:otherwise>
+        </xsl:choose>
+
+      </xsl:if>
+<!--
+            <xsd:attribute ref="NatomsEDS" use="optional"/>
+            <xsd:attribute ref="num-H-reduce" use="optional"/>
+            <xsd:attribute ref="mogul-ignore" use="optional"/>
+-->
+      <!-- bond-outlier, mog-bond-outlier -->
+
+      <xsl:for-each select="$datablock/PDBxv:pdbx_validate_rmsd_bondCategory/PDBxv:pdbx_validate_rmsd_bond[PDBxv:PDB_model_num=$model and PDBxv:auth_asym_id_1=$strand_id and PDBxv:auth_comp_id_1=$mon_id and PDBxv:auth_seq_id_1=$pdb_seq_num and ($alt_id='' or PDBxv:label_alt_id_1=$alt_id) and PDBxv:Zscore]">
+
+        <xsl:choose>
+          <xsl:when test="PDBxv:number_bonds_in_kb">
+
+            <mog-bond-outlier>
+
+              <xsl:attribute name="atoms"><xsl:value-of select="concat(PDBxv:auth_atom_id_1,',',PDBxv:auth_atom_id_2)"/></xsl:attribute>
+              <xsl:choose>
+                <xsl:when test="PDBxv:Zscore">
+                  <xsl:attribute name="Zscore"><xsl:value-of select="PDBxv:Zscore"/></xsl:attribute>
+                </xsl:when>
+                <xsl:otherwise>
+                  <xsl:attribute name="Zscore"><xsl:value-of select="format-number(number(PDBxv:bond_deviation) div number(PDBxv:bond_standard_deviation),'0.00')"/></xsl:attribute>
+                </xsl:otherwise>
+              </xsl:choose>
+              <xsl:attribute name="stdev"><xsl:value-of select="PDBxv:bond_standard_deviation"/></xsl:attribute>
+              <xsl:attribute name="mean"><xsl:value-of select="PDBxv:bond_target_value"/></xsl:attribute>
+              <xsl:attribute name="obsval"><xsl:value-of select="PDBxv:bond_value"/></xsl:attribute>
+              <xsl:attribute name="mindiff"><xsl:value-of select="PDBxv:bond_minimum_diff_to_kb"/></xsl:attribute>
+              <xsl:attribute name="numobs"><xsl:value-of select="PDBxv:number_bonds_in_kb"/></xsl:attribute>
+
+            </mog-bond-outlier>
+
+          </xsl:when>
+          <xsl:otherwise>
+
+            <bond-outlier>
+
+              <xsl:attribute name="atom0"><xsl:value-of select="PDBxv:auth_atom_id_1"/></xsl:attribute>
+              <xsl:attribute name="atom1"><xsl:value-of select="PDBxv:auth_atom_id_2"/></xsl:attribute>
+              <xsl:choose>
+                <xsl:when test="PDBxv:Zscore">
+                  <xsl:attribute name="z"><xsl:value-of select="PDBxv:Zscore"/></xsl:attribute>
+                </xsl:when>
+                <xsl:otherwise>
+                  <xsl:attribute name="z"><xsl:value-of select="format-number(number(PDBxv:bond_deviation) div number(PDBxv:bond_standard_deviation),'0.00')"/></xsl:attribute>
+                </xsl:otherwise>
+              </xsl:choose>
+              <xsl:attribute name="stdev"><xsl:value-of select="PDBxv:bond_standard_deviation"/></xsl:attribute>
+              <xsl:attribute name="mean"><xsl:value-of select="PDBxv:bond_target_value"/></xsl:attribute>
+              <xsl:attribute name="obs"><xsl:value-of select="PDBxv:bond_value"/></xsl:attribute>
+              <xsl:if test="PDBxv:linker_flag='Y'">
+                <xsl:attribute name="link">yes</xsl:attribute>
+              </xsl:if>
+
+            </bond-outlier>
+
+          </xsl:otherwise>
+        </xsl:choose>
+
+      </xsl:for-each>
+
+      <!-- angle-outlier, mog-angle-outlier -->
+
+      <xsl:for-each select="$datablock/PDBxv:pdbx_validate_rmsd_angleCategory/PDBxv:pdbx_validate_rmsd_angle[PDBxv:PDB_model_num=$model and PDBxv:auth_asym_id_1=$strand_id and PDBxv:auth_comp_id_1=$mon_id and PDBxv:auth_seq_id_1=$pdb_seq_num and ($alt_id='' or PDBxv:label_alt_id_1=$alt_id) and PDBxv:Zscore]">
+
+        <xsl:choose>
+          <xsl:when test="PDBxv:number_angles_in_kb">
+
+            <mog-angle-outlier>
+
+              <xsl:attribute name="atoms"><xsl:value-of select="concat(PDBxv:auth_atom_id_1,',',PDBxv:auth_atom_id_2,',',PDBxv:auth_atom_id_3)"/></xsl:attribute>
+              <xsl:choose>
+                <xsl:when test="PDBxv:Zscore">
+                  <xsl:attribute name="Zscore"><xsl:value-of select="PDBxv:Zscore"/></xsl:attribute>
+                </xsl:when>
+                <xsl:otherwise>
+                  <xsl:attribute name="Zscore"><xsl:value-of select="format-number(number(PDBxv:angle_deviation) div number(PDBxv:angle_standard_deviation),'0.00')"/></xsl:attribute>
+                </xsl:otherwise>
+              </xsl:choose>
+              <xsl:attribute name="stdev"><xsl:value-of select="PDBxv:angle_standard_deviation"/></xsl:attribute>
+              <xsl:attribute name="mean"><xsl:value-of select="PDBxv:angle_target_value"/></xsl:attribute>
+              <xsl:attribute name="obsval"><xsl:value-of select="PDBxv:angle_value"/></xsl:attribute>
+              <xsl:attribute name="mindiff"><xsl:value-of select="PDBxv:angle_minimum_diff_to_kb"/></xsl:attribute>
+              <xsl:attribute name="numobs"><xsl:value-of select="PDBxv:number_angles_in_kb"/></xsl:attribute>
+
+            </mog-angle-outlier>
+
+          </xsl:when>
+          <xsl:otherwise>
+
+            <angle-outlier>
+
+              <xsl:attribute name="atom0"><xsl:value-of select="PDBxv:auth_atom_id_1"/></xsl:attribute>
+              <xsl:attribute name="atom1"><xsl:value-of select="PDBxv:auth_atom_id_2"/></xsl:attribute>
+              <xsl:attribute name="atom2"><xsl:value-of select="PDBxv:auth_atom_id_3"/></xsl:attribute>
+              <xsl:choose>
+                <xsl:when test="PDBxv:Zscore">
+                  <xsl:attribute name="z"><xsl:value-of select="PDBxv:Zscore"/></xsl:attribute>
+                </xsl:when>
+                <xsl:otherwise>
+                  <xsl:attribute name="z"><xsl:value-of select="format-number(number(PDBxv:angle_deviation) div number(PDBxv:angle_standard_deviation),'0.00')"/></xsl:attribute>
+                </xsl:otherwise>
+              </xsl:choose>
+              <xsl:attribute name="stdev"><xsl:value-of select="PDBxv:angle_standard_deviation"/></xsl:attribute>
+              <xsl:attribute name="mean"><xsl:value-of select="PDBxv:angle_target_value"/></xsl:attribute>
+              <xsl:attribute name="obs"><xsl:value-of select="PDBxv:angle_value"/></xsl:attribute>
+              <xsl:if test="PDBxv:linker_flag='Y'">
+                <xsl:attribute name="link">yes</xsl:attribute>
+              </xsl:if>
+
+            </angle-outlier>
+
+          </xsl:otherwise>
+        </xsl:choose>
+
+      </xsl:for-each>
+
+      <!-- chiral-outlier -->
+
+      <xsl:for-each select="$datablock/PDBxv:pdbx_validate_chiralCategory/PDBxv:pdbx_validate_chiral[PDBxv:PDB_model_num=$model and PDBxv:auth_asym_id=$strand_id and PDBxv:auth_comp_id=$mon_id and PDBxv:auth_seq_id=$pdb_seq_num and ($alt_id='' or PDBxv:label_alt_id=$alt_id)]">
+
+        <chiral-outlier>
+
+          <xsl:attribute name="atom"><xsl:value-of select="PDBxv:auth_atom_id"/></xsl:attribute>
+          <xsl:attribute name="problem"><xsl:value-of select="PDBxv:details"/></xsl:attribute>
+
+        </chiral-outlier>
+
+      </xsl:for-each>
+
+      <!-- plane-outlier[@type='peptide'] -->
+
+      <xsl:for-each select="$datablock/PDBxv:pdbx_validate_peptide_omegaCategory/PDBxv:pdbx_validate_peptide_omega[PDBxv:PDB_model_num=$model and PDBxv:auth_asym_id_1=$strand_id and PDBxv:auth_comp_id_1=$mon_id and PDBxv:auth_seq_id_1=$pdb_seq_num and ($alt_id='' or PDBxv:label_alt_id_1=$alt_id)]">
+
+        <plane-outlier type="peptide">
+
+          <xsl:attribute name="omega"><xsl:value-of select="PDBxv:omega"/></xsl:attribute>
+
+        </plane-outlier>
+
+      </xsl:for-each>
+
+      <!-- plane-outlier[@type='mainchain'] -->
+
+      <xsl:for-each select="$datablock/PDBxv:pdbx_validate_main_chain_planeCategory/PDBxv:pdbx_validate_main_chain_plane[PDBxv:PDB_model_num=$model and PDBxv:auth_asym_id=$strand_id and PDBxv:auth_comp_id=$mon_id and PDBxv:auth_seq_id=$pdb_seq_num and ($alt_id='' or PDBxv:label_alt_id=$alt_id)]">
+
+        <plane-outlier type="mainchain">
+
+          <xsl:attribute name="improper"><xsl:value-of select="PDBxv:improper_torsion_angle"/></xsl:attribute>
+
+        </plane-outlier>
+
+      </xsl:for-each>
+
+      <!-- plane-outlier[@type='sidechain'] -->
+
+      <xsl:for-each select="$datablock/PDBxv:pdbx_validate_planesCategory/PDBxv:pdbx_validate_planes[PDBxv:PDB_model_num=$model and PDBxv:auth_asym_id=$strand_id and PDBxv:auth_comp_id=$mon_id and PDBxv:auth_seq_id=$pdb_seq_num and ($alt_id='' or PDBxv:label_alt_id=$alt_id)]">
+
+        <plane-outlier>
+
+          <xsl:attribute name="type"><xsl:value-of select="lower-case(translate(PDBxv:type,' ',''))"/></xsl:attribute>
+          <xsl:attribute name="planeRMSD"><xsl:value-of select="PDBxv:rmsd"/></xsl:attribute>
+
+        </plane-outlier>
+
+      </xsl:for-each>
+
+      <!-- mog-torsion-outlier -->
+
+      <xsl:for-each select="$datablock/PDBxv:pdbx_validate_rmsd_torsionCategory/PDBxv:pdbx_validate_rmsd_torsion[PDBxv:PDB_model_num=$model and PDBxv:auth_asym_id=$strand_id and PDBxv:auth_comp_id=$mon_id and PDBxv:auth_seq_id=$pdb_seq_num and ($alt_id='' or PDBxv:label_alt_id=$alt_id) and PDBxv:number_dihedral_angles_in_kb]">
+
+        <mog-torsion-outlier>
+
+          <xsl:variable name="torsion_id"><xsl:value-of select="@id"/></xsl:variable>
+
+          <xsl:variable name="atoms">
+            <xsl:for-each select="$datablock/PDBxv:pdbx_validate_rmsd_torsions_atomCategory/PDBxv:pdbx_validate_rmsd_torsions_atom[@torsion_id=$torsion_id]">
+              <xsl:value-of select="concat(PDBxv:auth_atom_id,',')"/>
+            </xsl:for-each>
+          </xsl:variable>
+
+          <xsl:attribute name="atoms"><xsl:value-of select="substring($atoms,1,string-length($atoms)-1)"/></xsl:attribute>
+          <xsl:attribute name="stdev"><xsl:value-of select="PDBxv:dihedral_angle_standard_deviation"/></xsl:attribute>
+          <xsl:attribute name="mean"><xsl:value-of select="PDBxv:dihedral_angle_target_value"/></xsl:attribute>
+          <xsl:attribute name="obsval"><xsl:value-of select="PDBxv:dihedral_angle_value"/></xsl:attribute>
+          <xsl:attribute name="mindiff"><xsl:value-of select="PDBxv:dihedral_angle_minimum_diff_to_kb"/></xsl:attribute>
+          <xsl:attribute name="numobs"><xsl:value-of select="PDBxv:number_dihedral_angles_in_kb"/></xsl:attribute>
+
+        </mog-torsion-outlier>
+
+      </xsl:for-each>
+
+      <!-- mog-ring-outlier -->
+
+     <xsl:for-each select="$datablock/PDBxv:pdbx_validate_rmsd_ringCategory/PDBxv:pdbx_validate_rmsd_ring[PDBxv:PDB_model_num=$model and PDBxv:auth_asym_id=$strand_id and PDBxv:auth_comp_id=$mon_id and PDBxv:auth_seq_id=$pdb_seq_num and ($alt_id='' or PDBxv:label_alt_id=$alt_id) and PDBxv:number_dihedral_angles_in_kb]">
+
+        <mog-ring-outlier>
+
+          <xsl:variable name="ring_id"><xsl:value-of select="@id"/></xsl:variable>
+
+          <xsl:variable name="atoms">
+            <xsl:for-each select="$datablock/PDBxv:pdbx_validate_rmsd_rings_atomCategory/PDBxv:pdbx_validate_rmsd_rings_atom[@ring_id=$ring_id]">
+              <xsl:value-of select="concat(PDBxv:auth_atom_id,',')"/>
+            </xsl:for-each>
+          </xsl:variable>
+
+          <xsl:attribute name="atoms"><xsl:value-of select="substring($atoms,1,string-length($atoms)-1)"/></xsl:attribute>
+          <xsl:attribute name="stdev"><xsl:value-of select="PDBxv:dihedral_angle_standard_deviation"/></xsl:attribute>
+          <xsl:attribute name="mean"><xsl:value-of select="PDBxv:dihedral_angle_target_value"/></xsl:attribute>
+          <xsl:attribute name="mindiff"><xsl:value-of select="PDBxv:dihedral_angle_minimum_diff_to_kb"/></xsl:attribute>
+          <xsl:attribute name="numobs"><xsl:value-of select="PDBxv:number_dihedral_angles_in_kb"/></xsl:attribute>
+
+        </mog-ring-outlier>
+
+      </xsl:for-each>
+
+      <!-- clash -->
+
+      <xsl:variable name="clash_from_pdbml"><xsl:value-of select="count($datablock/PDBxv:pdbx_validate_close_contactCategory/PDBxv:pdbx_validate_close_contact[not(PDBxv:clash_magnitude)])"/></xsl:variable>
+
+      <xsl:for-each select="$datablock/PDBxv:pdbx_validate_close_contactCategory/PDBxv:pdbx_validate_close_contact[PDBxv:PDB_model_num=$model and ((PDBxv:auth_asym_id_1=$strand_id and PDBxv:auth_comp_id_1=$mon_id and PDBxv:auth_seq_id_1=$pdb_seq_num and ($alt_id='' or PDBxv:label_alt_id_1=$alt_id)) or (PDBxv:auth_asym_id_2=$strand_id and PDBxv:auth_comp_id_2=$mon_id and PDBxv:auth_seq_id_2=$pdb_seq_num and ($alt_id='' or PDBxv:label_alt_id_2=$alt_id))) and PDBxv:clash_magnitude]">
+
+        <xsl:if test="PDBxv:auth_asym_id_1=$strand_id and PDBxv:auth_comp_id_1=$mon_id and PDBxv:auth_seq_id_1=$pdb_seq_num and ($alt_id='' or PDBxv:label_alt_id_1=$alt_id)">
+
+          <clash>
+
+            <xsl:attribute name="cid"><xsl:value-of select="number(@id)-$clash_from_pdbml"/></xsl:attribute>
+            <xsl:attribute name="atom"><xsl:value-of select="PDBxv:auth_atom_id_1"/></xsl:attribute>
+            <xsl:attribute name="dist"><xsl:value-of select="PDBxv:dist"/></xsl:attribute>
+            <xsl:if test="PDBxv:clash_magnitude">
+              <xsl:attribute name="clashmag"><xsl:value-of select="PDBxv:clash_magnitude"/></xsl:attribute>
+            </xsl:if>
+
+          </clash>
+
+        </xsl:if>
+
+        <xsl:if test="PDBxv:auth_asym_id_2=$strand_id and PDBxv:auth_comp_id_2=$mon_id and PDBxv:auth_seq_id_2=$pdb_seq_num and ($alt_id='' or PDBxv:label_alt_id_2=$alt_id)">
+
+          <clash>
+
+            <xsl:attribute name="cid"><xsl:value-of select="number(@id)-$clash_from_pdbml"/></xsl:attribute>
+            <xsl:attribute name="atom"><xsl:value-of select="PDBxv:auth_atom_id_2"/></xsl:attribute>
+            <xsl:attribute name="dist"><xsl:value-of select="PDBxv:dist"/></xsl:attribute>
+            <xsl:if test="PDBxv:clash_magnitude">
+              <xsl:attribute name="clashmag"><xsl:value-of select="PDBxv:clash_magnitude"/></xsl:attribute>
+            </xsl:if>
+
+          </clash>
+
+        </xsl:if>
+
+      </xsl:for-each>
+
+      <!-- symm-clash -->
+
+      <xsl:variable name="symm_clash_from_pdbml"><xsl:value-of select="count($datablock/PDBxv:pdbx_validate_symm_contactCategory/PDBxv:pdbx_validate_symm_contact[not(PDBxv:clash_magnitude)])"/></xsl:variable>
+
+      <xsl:for-each select="$datablock/PDBxv:pdbx_validate_symm_contactCategory/PDBxv:pdbx_validate_symm_contact[PDBxv:PDB_model_num=$model and ((PDBxv:auth_asym_id_1=$strand_id and PDBxv:auth_comp_id_1=$mon_id and PDBxv:auth_seq_id_1=$pdb_seq_num and ($alt_id='' or PDBxv:label_alt_id_1=$alt_id)) or (PDBxv:auth_asym_id_2=$strand_id and PDBxv:auth_comp_id_2=$mon_id and PDBxv:auth_seq_id_2=$pdb_seq_num and ($alt_id='' or PDBxv:label_alt_id_2=$alt_id))) and PDBxv:clash_magnitude]">
+
+        <xsl:if test="PDBxv:auth_asym_id_1=$strand_id and PDBxv:auth_comp_id_1=$mon_id and PDBxv:auth_seq_id_1=$pdb_seq_num and ($alt_id='' or PDBxv:label_alt_id_1=$alt_id)">
+
+          <symm-clash>
+
+            <xsl:attribute name="scid"><xsl:value-of select="number(@id)-$symm_clash_from_pdbml"/></xsl:attribute>
+            <xsl:attribute name="atom"><xsl:value-of select="PDBxv:auth_atom_id_1"/></xsl:attribute>
+            <xsl:attribute name="dist"><xsl:value-of select="PDBxv:dist"/></xsl:attribute>
+            <xsl:attribute name="symop"><xsl:value-of select="PDBxv:site_symmetry_1"/></xsl:attribute>
+            <xsl:if test="PDBxv:clash_magnitude">
+              <xsl:attribute name="clashmag"><xsl:value-of select="PDBxv:clash_magnitude"/></xsl:attribute>
+            </xsl:if>
+
+          </symm-clash>
+
+        </xsl:if>
+
+        <xsl:if test="PDBxv:auth_asym_id_2=$strand_id and PDBxv:auth_comp_id_2=$mon_id and PDBxv:auth_seq_id_2=$pdb_seq_num and ($alt_id='' or PDBxv:label_alt_id_2=$alt_id)">
+
+          <symm-clash>
+
+            <xsl:attribute name="scid"><xsl:value-of select="number(@id)-$symm_clash_from_pdbml"/></xsl:attribute>
+            <xsl:attribute name="atom"><xsl:value-of select="PDBxv:auth_atom_id_2"/></xsl:attribute>
+            <xsl:attribute name="dist"><xsl:value-of select="PDBxv:dist"/></xsl:attribute>
+            <xsl:attribute name="symop"><xsl:value-of select="PDBxv:site_symmetry_2"/></xsl:attribute>
+            <xsl:if test="PDBxv:clash_magnitude">
+              <xsl:attribute name="clashmag"><xsl:value-of select="PDBxv:clash_magnitude"/></xsl:attribute>
+            </xsl:if>
+
+          </symm-clash>
+
+        </xsl:if>
+
+      </xsl:for-each>
+
+    </ModelledSubgroup>
+
+  </xsl:template>
+
+  <!-- ModelledEntityInstance -->
+
+  <xsl:template name="ModelledEntityInstance">
+
+    <xsl:choose>
+      <xsl:when test="$nmr=true()">
+        <xsl:for-each select="1 to $nmr_models">
+          <xsl:call-template name="modelled_entity_instance_model">
+            <xsl:with-param name="model"><xsl:value-of select="."/></xsl:with-param>
+          </xsl:call-template>
+        </xsl:for-each>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:call-template name="modelled_entity_instance_model">
+          <xsl:with-param name="model">1</xsl:with-param>
+        </xsl:call-template>
+      </xsl:otherwise>
+    </xsl:choose>
+
+  </xsl:template>
+
+  <xsl:template name="modelled_entity_instance_model">
+    <xsl:param name="model"/>
+
+    <xsl:variable name="asym_ids">
+      <xsl:for-each select="$datablock/PDBxv:pdbx_struct_assembly_genCategory/PDBxv:pdbx_struct_assembly_gen">
+        <xsl:value-of select="concat(@asym_id_list,',')"/>
+      </xsl:for-each>
+    </xsl:variable>
+
+    <xsl:for-each select="tokenize(substring($asym_ids,1,string-length($asym_ids)-1),',')">
+      <xsl:variable name="asym_id"><xsl:value-of select="."/></xsl:variable>
+      <xsl:call-template name="modelled_entity_instance_asym_id">
+        <xsl:with-param name="model"><xsl:value-of select="$model"/></xsl:with-param>
+        <xsl:with-param name="asym_id"><xsl:value-of select="$asym_id"/></xsl:with-param>
+      </xsl:call-template>
+    </xsl:for-each>
+
+  </xsl:template>
+
+  <xsl:template name="modelled_entity_instance_asym_id">
+    <xsl:param name="model"/>
+    <xsl:param name="asym_id"/>
+
+    <xsl:variable name="entity_ids">
+      <xsl:for-each select="$datablock/PDBxv:pdbx_percentile_entity_viewCategory/PDBxv:pdbx_percentile_entity_view[@label_asym_id=$asym_id]">
+        <xsl:value-of select="concat(PDBxv:entity_id,',')"/>
+      </xsl:for-each>
+      <xsl:for-each select="$datablock/PDBxv:pdbx_dcc_entity_geometryCategory/PDBxv:pdbx_dcc_entity_geometry[@label_asym_id=$asym_id]">
+        <xsl:value-of select="concat(PDBxv:entity_id,',')"/>
+      </xsl:for-each>
+    </xsl:variable>
+
+    <xsl:if test="$entity_ids!=''">
+
+      <xsl:for-each select="distinct-values(tokenize($entity_ids,','))">
+        <xsl:call-template name="modelled_entity_instance_entity_id">
+          <xsl:with-param name="model"><xsl:value-of select="$model"/></xsl:with-param>
+          <xsl:with-param name="asym_id"><xsl:value-of select="$asym_id"/></xsl:with-param>
+          <xsl:with-param name="entity_id"><xsl:value-of select="."/></xsl:with-param>
+        </xsl:call-template>
+      </xsl:for-each>
+
+    </xsl:if>
+
+  </xsl:template>
+
+  <xsl:template name="modelled_entity_instance_entity_id">
+    <xsl:param name="model"/>
+    <xsl:param name="asym_id"/>
+    <xsl:param name="entity_id"/>
+
+    <xsl:variable name="strand_ids">
+      <xsl:for-each select="$datablock/PDBxv:pdbx_percentile_entity_viewCategory/PDBxv:pdbx_percentile_entity_view[@label_asym_id=$asym_id]">
+        <xsl:value-of select="concat(PDBxv:auth_asym_id,',')"/>
+      </xsl:for-each>
+      <xsl:for-each select="$datablock/PDBxv:pdbx_dcc_entity_geometryCategory/PDBxv:pdbx_dcc_entity_geometry[@label_asym_id=$asym_id]">
+        <xsl:value-of select="concat(PDBxv:auth_asym_id,',')"/>
+      </xsl:for-each>
+    </xsl:variable>
+
+    <xsl:if test="$strand_ids!=''">
+
+      <xsl:for-each select="distinct-values(tokenize($strand_ids,','))">
+        <xsl:call-template name="modelled_entity_instance_strand_id">
+          <xsl:with-param name="model"><xsl:value-of select="$model"/></xsl:with-param>
+          <xsl:with-param name="asym_id"><xsl:value-of select="$asym_id"/></xsl:with-param>
+          <xsl:with-param name="entity_id"><xsl:value-of select="$entity_id"/></xsl:with-param>
+          <xsl:with-param name="strand_id"><xsl:value-of select="."/></xsl:with-param>
+        </xsl:call-template>
+      </xsl:for-each>
+
+    </xsl:if>
+
+  </xsl:template>
+
+  <xsl:template name="modelled_entity_instance_strand_id">
+    <xsl:param name="model"/>
+    <xsl:param name="asym_id"/>
+    <xsl:param name="entity_id"/>
+    <xsl:param name="strand_id"/>
+
+    <ModelledEntityInstance>
+
+      <xsl:attribute name="model"><xsl:value-of select="$model"/></xsl:attribute>
+      <xsl:attribute name="chain"><xsl:value-of select="$strand_id"/></xsl:attribute>
+      <xsl:attribute name="said"><xsl:value-of select="$asym_id"/></xsl:attribute>
+      <xsl:attribute name="ent"><xsl:value-of select="$entity_id"/></xsl:attribute>
+
+      <xsl:for-each select="$datablock/PDBxv:pdbx_percentile_entity_viewCategory/PDBxv:pdbx_percentile_entity_view[@label_asym_id=$asym_id]">
+        <xsl:variable name="type"><xsl:value-of select="@type"/></xsl:variable>
+        <xsl:variable name="conditions_id"><xsl:value-of select="PDBxv:conditions_id"/></xsl:variable>
+        <xsl:variable name="condition_res_high"><xsl:value-of select="$datablock/PDBxv:pdbx_percentile_conditionsCategory/PDBxv:pdbx_percentile_conditions[@id=$conditions_id]/PDBxv:ls_d_res_high"/></xsl:variable>
+        <xsl:variable name="condition_res_low"><xsl:value-of select="$datablock/PDBxv:pdbx_percentile_conditionsCategory/PDBxv:pdbx_percentile_conditions[@id=$conditions_id]/PDBxv:ls_d_res_low"/></xsl:variable>
+
+        <xsl:variable name="absolute">
+          <xsl:choose>
+            <xsl:when test="$condition_res_high!=''">no</xsl:when>
+            <xsl:otherwise>yes</xsl:otherwise>
+          </xsl:choose>
+        </xsl:variable>
+
+        <xsl:choose>
+          <xsl:when test="$type='RSRZ_outliers_percent'">
+            <xsl:choose>
+              <xsl:when test="$absolute='no'">
+                <xsl:attribute name="relative_RSRZ_percentile"><xsl:value-of select="PDBxv:rank"/></xsl:attribute>
+              </xsl:when>
+              <xsl:otherwise>
+                <xsl:attribute name="absolute_RSRZ_percentile"><xsl:value-of select="PDBxv:rank"/></xsl:attribute>
+              </xsl:otherwise>
+            </xsl:choose>
+          </xsl:when>
+          <xsl:when test="$type='Ramachandran_outlier_percent'">
+            <xsl:choose>
+              <xsl:when test="$absolute='no'">
+                <xsl:attribute name="relative_rama_percentile"><xsl:value-of select="PDBxv:rank"/></xsl:attribute>
+              </xsl:when>
+              <xsl:otherwise>
+                <xsl:attribute name="absolute_rama_percentile"><xsl:value-of select="PDBxv:rank"/></xsl:attribute>
+              </xsl:otherwise>
+            </xsl:choose>
+          </xsl:when>
+          <xsl:when test="$type='rotamer_outliers_percent'">
+            <xsl:choose>
+              <xsl:when test="$absolute='no'">
+                <xsl:attribute name="relative_sidechain_percentile"><xsl:value-of select="PDBxv:rank"/></xsl:attribute>
+              </xsl:when>
+              <xsl:otherwise>
+                <xsl:attribute name="absolute_sidechain_percentile"><xsl:value-of select="PDBxv:rank"/></xsl:attribute>
+              </xsl:otherwise>
+            </xsl:choose>
+          </xsl:when>
+          <xsl:otherwise>
+            <xsl:call-template name="error_handler">
+              <xsl:with-param name="terminate">yes</xsl:with-param>
+              <xsl:with-param name="error_message">
+Unmatched type exist in _pdbx_percentile_entity_view.type, <xsl:value-of select="position()"/>, found in XSLT code.
+              </xsl:with-param>
+            </xsl:call-template>
+          </xsl:otherwise>
+        </xsl:choose>
+
+      </xsl:for-each>
+
+      <xsl:for-each select="$datablock/PDBxv:pdbx_dcc_entity_geometryCategory/PDBxv:pdbx_dcc_entity_geometry[@label_asym_id=$asym_id]">
+
+        <xsl:if test="PDBxv:angle_overall_rmsz">
+          <xsl:attribute name="angles_rmsz"><xsl:value-of select="PDBxv:angle_overall_rmsz"/></xsl:attribute>
+        </xsl:if>
+        <xsl:if test="PDBxv:bond_overall_rmsz">
+          <xsl:attribute name="bonds_rmsz"><xsl:value-of select="PDBxv:bond_overall_rmsz"/></xsl:attribute>
+        </xsl:if>
+        <xsl:if test="PDBxv:number_angles">
+          <xsl:attribute name="num_angles_rmsz"><xsl:value-of select="PDBxv:number_angles"/></xsl:attribute>
+        </xsl:if>
+        <xsl:if test="PDBxv:number_bonds">
+          <xsl:attribute name="num_bonds_rmsz"><xsl:value-of select="PDBxv:number_bonds"/></xsl:attribute>
+        </xsl:if>
+
+      </xsl:for-each>
+
+    </ModelledEntityInstance>
+
+  </xsl:template>
+
+  <xsl:template match="*[@xsi:nil='true']"/>
+  <xsl:template match="*|text()|@*"/>
+
+  <xsl:template name="error_handler">
+    <xsl:param name="error_message"/>
+    <xsl:param name="terminate">no</xsl:param>
+    <xsl:choose>
+      <xsl:when test="$terminate='yes'">
+        <xsl:message terminate="yes">
+          <xsl:text>ERROR in revert_info.xsl: </xsl:text>
+          <xsl:value-of select="$error_message"/>
+        </xsl:message>
+      </xsl:when>
+      <xsl:otherwise>
+        <span style="font-weight: bold; color: red">
+          <xsl:text>ERROR: </xsl:text>
+          <xsl:value-of select="$error_message"/>
+        </span>
+      </xsl:otherwise>
+    </xsl:choose>
+  </xsl:template>
+
+</xsl:stylesheet>

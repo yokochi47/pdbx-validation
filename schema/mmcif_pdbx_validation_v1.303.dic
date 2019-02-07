@@ -202,7 +202,7 @@ data_mmcif_pdbx_validation.dic
 >     + Add 'Bruker PHOTON III' and correct type of 'Bruker PHOTON II' in
 >       _diffrn_detector.type enumeration.
 >     + Add 'GRAPHENE OXIDE' to _em_sample_support.grid_material enumeration
-  + Change item type of _pdbx_dcc_density.twin_operator_xtriage from text to text.
+  + Change item type of _pdbx_dcc_density.twin_operator_xtriage from text to line.
   + Change item type of _pdbx_dcc_density.twin_fraction_xtriage from float to float-list defined.
   + Update range limits for _pdbx_percentile_view.rank and _pdbx_percentile_entity_view.rank.
   + Change mandatory code of _pdbx_percentile_conditions.number_entries_total for the case that /wwPDB-validation-information/Entry/@no-percentile-property='true'.
@@ -353,6 +353,53 @@ data_mmcif_pdbx_validation.dic
   1.303.1 2019-01-07
 ;
       + Set '_pdbx_missing_nmr_star_item.list_id' and '_pdbx_missing_nmr_star_item.id' as category key
+;
+  1.303.2 2019-02-01
+;
+      + Add/Revise the following data items in relation with wwPDB validation information XSD
+        + Add '_pdbx_dcc_density.ls_d_res_low' with link to /wwPDB-validation-information/Entry/@PDB-resolution-low
+        + Add '_pdbx_dcc_density.reflns_number_obs' with link to /wwPDB-validation-information/Entry/@numMillerIndices
+          , which was formerly linked to '_reflns.number_all'
+        + Add '_pdbx_dcc_density.ls_number_reflns_R_free' with link to /wwPDB-validation-information/Entry/@num-free-reflections
+          , which was formerly linked to '_refine.ls_number_reflns_R_free'
+        + Add '_pdbx_dcc_density.ls_percent_reflns_obs' with link to /wwPDB-validation-information/Entry/@DataCompleteness
+          , which was formerly linked to '_refine.ls_percent_reflns_obs'
+        + Add '_pdbx_dcc_density.ls_percent_reflns_R_free' and '_pdbx_dcc_density_corr.ls_percent_reflns_R_free' with link to /wwPDB-validation-information/Entry/@percent-free-reflections
+          , which was formerly linked to '_refine.ls_percent_reflns_R_free'
+      + Add the following relationships to wwPDB validation information XSD
+        + Link '_pdbx_dcc_density_corr.ls_d_res_high' and /wwPDB-validation-information/Entry/@EDS_resolution
+        + Link '_pdbx_dcc_density_corr.ls_d_res_high' and /wwPDB-validation-information/Entry/@EDS_resolution_low
+        + Link '_pdbx_dcc_density_corr.ls_R_factor_R_work' and /wwPDB-validation-information/Entry/@EDS_R
+        + Link '_pdbx_dcc_density_corr.ls_number_reflns_obs' and /wwPDB-validation-information/Entry/@numMillerIndices
+        + Link '_pdbx_dcc_density_corr.ls_percent_reflns_obs' and /wwPDB-validation-information/Entry/@DataCompleteness
+        + Link '_pdbx_dcc_density_corr.correlation_coeff_Fo_to_Fc' and /wwPDB-validation-information/Entry/@Fo_Fc_correlation
+      + Add '_struct_mon_prot.PDB_model_num' with link to /wwPDB-validation-information/ModelledSubgroup/@model
+      + Add '_struct_mon_nucl.PDB_model_num' with link to /wwPDB-validation-information/ModelledSubgroup/@model
+;
+  1.303.3 2019-02-05
+;
+      + Add '_pdbx_validate_rmsd_bond.bond_minimum_diff_to_kb' with link to /wwPDB-validation-information/ModelledSubgroup/mog-bond-outlier/@mindiff
+      + Add '_pdbx_validate_rmsd_bond.number_bonds_in_kb' with link to /wwPDB-validation-information/ModelledSubgroup/mog-bond-outlier/@numobs
+      + Add '_pdbx_validate_rmsd_angle.angle_minimum_diff_to_kb' with link to /wwPDB-validation-information/ModelledSubgroup/mog-angle-outlier/@mindiff
+      + Add '_pdbx_validate_rmsd_angle.number_angles_in_kb' with link to /wwPDB-validation-information/ModelledSubgroup/mog-angle-outlier/@numobs
+      + Add '_pdbx_validate_rmsd_torsion.dihedral_angle_minimum_diff_to_kb' with link to /wwPDB-validation-information/ModelledSubgroup/mog-torsion-outlier/@mindiff
+      + Add '_pdbx_validate_rmsd_torsion.number_dihedral_angles_in_kb' with link to /wwPDB-validation-information/ModelledSubgroup/mog-torsion-outlier/@numobs
+      + Add '_pdbx_validate_rmsd_ring.dihedral_angle_minimum_diff_to_kb' with link to /wwPDB-validation-information/ModelledSubgroup/mog-ring-outlier/@mindiff
+      + Add '_pdbx_validate_rmsd_ring.number_dihedral_angles_in_kb' with link to /wwPDB-validation-information/ModelledSubgroup/mog-ring-outlier/@numobs
+      + Revise dictionary link of '_pdbx_validate_rmsd_bond.bond_deviation'
+      + Revise dictionary link of '_pdbx_validate_rmsd_angle.angle_deviation'
+      + Add '_pdbx_validate_rmsd_bond.Zscore' with link to /wwPDB-validation-information/ModelledSubgroup/bond-outlier/@z
+      + Add '_pdbx_validate_rmsd_angle.Zscore' with link to /wwPDB-validation-information/ModelledSubgroup/angle-outlier/@z
+;
+  1.303.4 2019-02-06
+;
+      + Add '_pdbx_dcc_mon_geometry.number_angles' with link to /wwPDB-validation-information/ModelledSubgroup/@mogul_rmsz_numangles
+      + Add '_pdbx_dcc_mon_geometry.number_bonds' with link to /wwPDB-validation-information/ModelledSubgroup/@mogul_rmsz_numbonds
+      + Add '_pdbx_struct_nmr_ens_dom.percent_of_core' with link to /wwPDB-validation-information/cyrange_domain/@percentage_of_core
+      + Add '_pdbx_dcc_entity_geometry.number_angles' with link to /wwPDB-validation-information/ModelledEntityInstance/@num_bonds_rmsz
+      + Add '_pdbx_dcc_entity_geometry.number_bonds' with link to /wwPDB-validation-information/ModelledEntityInstance/@num_angles_rmsz
+      + Add '_pdbx_dcc_geometry.number_angles' with link to /wwPDB-validation-information/Entry/@num_bonds_rmsz
+      + Add '_pdbx_dcc_geometry.number_bonds' with link to /wwPDB-validation-information/Entry/@num_angles_rmsz
 ;
 
 #
@@ -9615,10 +9662,6 @@ save__refine.ls_number_reflns_R_free
       "_refine.ls_number_reflns_R_free"     40     40
       "_refine.ls_number_reflns_R_free"     40  16000
       "_refine.ls_number_reflns_R_free"  16000  16000
-#
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/Entry/@num-free-reflections'
-    _pdbx_item_aliases.schema     wwpdb_validation.xsd
-    _pdbx_item_aliases.version    002
 save_
 
 save__refine.ls_number_reflns_R_work
@@ -9686,10 +9729,6 @@ save__refine.ls_percent_reflns_obs
         '_refine.ls_percent_reflns_obs'   50   50
         '_refine.ls_percent_reflns_obs'   50  100
         '_refine.ls_percent_reflns_obs'  100  100
-#
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/Entry/@DataCompletenes'
-    _pdbx_item_aliases.schema     wwpdb_validation.xsd
-    _pdbx_item_aliases.version    002
 save_
 
 save__refine.ls_percent_reflns_R_free
@@ -9720,10 +9759,6 @@ save__refine.ls_percent_reflns_R_free
       "_refine.ls_percent_reflns_R_free"    1    1
       "_refine.ls_percent_reflns_R_free"    1   12
       "_refine.ls_percent_reflns_R_free"   12   12
-#
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/Entry/@percent-free-reflections'
-    _pdbx_item_aliases.schema     wwpdb_validation.xsd
-    _pdbx_item_aliases.version    002
 save_
 
 save__refine.ls_R_factor_all
@@ -13672,7 +13707,6 @@ save__reflns.d_resolution_high
     _pdbx_item_aliases.schema
     _pdbx_item_aliases.version
     '/wwPDB-validation-information/Entry/@PDB-resolution'                       wwpdb_validation.xsd    002
-    '/wwPDB-validation-information/Entry/@EDS_resolution'                       wwpdb_validation.xsd    002
     '/wwPDB-validation-information/Entry/@resol-high-from-reflectionsfile'      wwpdb_validation.xsd    002
 save_
 
@@ -13709,7 +13743,6 @@ save__reflns.d_resolution_low
     _pdbx_item_aliases.schema
     _pdbx_item_aliases.version
     '/wwPDB-validation-information/Entry/@PDB-resolution-low'                   wwpdb_validation.xsd    002
-    '/wwPDB-validation-information/Entry/@EDS_resolution_low'                   wwpdb_validation.xsd    002
     '/wwPDB-validation-information/Entry/@resol-low-from-reflectionsfile'       wwpdb_validation.xsd    002
 save_
 
@@ -13810,10 +13843,6 @@ save__reflns.number_all
     _item_range.minimum           .   0
                                   0   0
     _item_type.code               int
-# whether _reflns.number_obs is perferable ?
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/Entry/@numMillerIndices'
-    _pdbx_item_aliases.schema     wwpdb_validation.xsd
-    _pdbx_item_aliases.version    002
 #
 save_
 
@@ -17534,6 +17563,24 @@ save__struct_mon_prot.psi
     _item_units.code              degrees
 #
     _pdbx_item_aliases.xpath     '/wwPDB-validation-information/ModelledSubgroup/@psi'
+    _pdbx_item_aliases.schema     wwpdb_validation.xsd
+    _pdbx_item_aliases.version    002
+save_
+
+save__struct_mon_prot.PDB_model_num
+    _item_description.description
+;              The model number for the given monomer
+;
+    _item.name                  '_struct_mon_prot.PDB_model_num'
+    _item.category_id             struct_mon_prot
+    _item.mandatory_code          yes
+    _item_type.code               int
+    _pdbx_item_external_ref.child_name  '_struct_mon_prot.PDB_model_num'
+    _pdbx_item_external_ref.parent_name '_atom_site.pdbx_PDB_model_num'
+    _pdbx_item_external_ref.dictionary    mmcif_pdbx.dic
+    _pdbx_item_external_ref.version       5
+#
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/ModelledSubgroup/@model'
     _pdbx_item_aliases.schema     wwpdb_validation.xsd
     _pdbx_item_aliases.version    002
 save_
@@ -39612,7 +39659,6 @@ save__pdbx_validate_rmsd_bond.PDB_model_num
     '/wwPDB-validation-information/ModelledSubgroup[./mog-bond-outlier/@obsval!='']/@model'     wwpdb_validation.xsd    002
 save_
 
-
 save__pdbx_validate_rmsd_bond.auth_asym_id_1
     _item_description.description
 ;              Part of the identifier of the first of the two atom sites that
@@ -39813,7 +39859,6 @@ save__pdbx_validate_rmsd_bond.auth_seq_id_2
     '/wwPDB-validation-information/ModelledSubgroup[./mog-bond-outlier/@obsval!='']/@resnum'    wwpdb_validation.xsd    002
 save_
 
-
 save__pdbx_validate_rmsd_bond.PDB_ins_code_1
     _item_description.description
 ;              Optional identifier of the first of the two atom sites that
@@ -39929,8 +39974,8 @@ save__pdbx_validate_rmsd_bond.bond_deviation
     _pdbx_item_aliases.xpath
     _pdbx_item_aliases.schema
     _pdbx_item_aliases.version
-    '/wwPDB-validation-information/ModelledSubgroup/bond-outlier/@z'                    wwpdb_validation.xsd    002
-    '/wwPDB-validation-information/ModelledSubgroup/mog-bond-outlier/@Zscore'           wwpdb_validation.xsd    002
+    '/wwPDB-validation-information/ModelledSubgroup/bond-outlier/@obs-@mean'                    wwpdb_validation.xsd    002
+    '/wwPDB-validation-information/ModelledSubgroup/mog-bond-outlier/@obsval-@mean'           wwpdb_validation.xsd    002
 save_
 
 save__pdbx_validate_rmsd_bond.bond_value
@@ -39999,8 +40044,6 @@ save__pdbx_validate_rmsd_bond.bond_standard_deviation
     '/wwPDB-validation-information/ModelledSubgroup/mog-bond-outlier/@stdev'            wwpdb_validation.xsd    002
 save_
 
-
-
 save__pdbx_validate_rmsd_bond.linker_flag
     _item_description.description
 ;              A flag to indicate if the bond is between two residues
@@ -40012,6 +40055,64 @@ save__pdbx_validate_rmsd_bond.linker_flag
     _item_default.value           N
 #
     _pdbx_item_aliases.xpath     '/wwPDB-validation-information/ModelledSubgroup/bond-outlier/@link'
+    _pdbx_item_aliases.schema     wwpdb_validation.xsd
+    _pdbx_item_aliases.version    002
+save_
+
+save__pdbx_validate_rmsd_bond.Zscore
+    _item_description.description
+;              Z score of the bond length expected by knowlege base such as
+               the Cambridge Structural Database (CSD)
+;
+    _item.name                    '_pdbx_validate_rmsd_bond.Zscore'
+    _item.category_id             pdbx_validate_rmsd_bond
+    _item.mandatory_code          no
+    _item_type.code               float
+#
+    loop_
+    _pdbx_item_aliases.xpath
+    _pdbx_item_aliases.schema
+    _pdbx_item_aliases.version
+    '/wwPDB-validation-information/ModelledSubgroup/bond-outlier/@z'                    wwpdb_validation.xsd    002
+    '/wwPDB-validation-information/ModelledSubgroup/mog-bond-outlier/@Zscore'           wwpdb_validation.xsd    002
+save_
+
+save__pdbx_validate_rmsd_bond.bond_minimum_diff_to_kb
+    _item_description.description
+;              The minimum difference to the known bond lengths in similar
+               conformations archived in knowlege base such as
+               the Cambridge Structural Database (CSD)
+;
+    _item.name                  '_pdbx_validate_rmsd_bond.bond_minimum_diff_to_kb'
+    _item.category_id             pdbx_validate_rmsd_bond
+    _item.mandatory_code          no
+    _item_type.code               float
+    _item_units.code              angstroms
+    loop_
+    _item_range.maximum
+    _item_range.minimum            .    0.0
+                                  0.0   0.0
+#
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/ModelledSubgroup/mog-bond-outlier/@mindiff'
+    _pdbx_item_aliases.schema     wwpdb_validation.xsd
+    _pdbx_item_aliases.version    002
+save_
+
+save__pdbx_validate_rmsd_bond.number_bonds_in_kb
+    _item_description.description
+;              The number of bonds in similar conformations archived
+               in knowlege base such as the Cambridge Structural Database (CSD)
+;
+    _item.name                  '_pdbx_validate_rmsd_bond.number_bonds_in_kb'
+    _item.category_id             pdbx_validate_rmsd_bond
+    _item.mandatory_code          no
+    _item_type.code               int
+    loop_
+    _item_range.maximum
+    _item_range.minimum           .   0
+                                  0   0
+#
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/ModelledSubgroup/mog-bond-outlier/@numobs'
     _pdbx_item_aliases.schema     wwpdb_validation.xsd
     _pdbx_item_aliases.version    002
 save_
@@ -40075,7 +40176,6 @@ save_pdbx_validate_rmsd_angle
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 save_
 
-
 save__pdbx_validate_rmsd_angle.id
     _item_description.description
 ;              The value of _pdbx_validate_rmsd_angle.id must uniquely identify
@@ -40104,7 +40204,6 @@ save__pdbx_validate_rmsd_angle.PDB_model_num
     '/wwPDB-validation-information/ModelledSubgroup[./angle-outlier/@obs!='']/@model'           wwpdb_validation.xsd    002
     '/wwPDB-validation-information/ModelledSubgroup[./mog-angle-outlier/@obsval!='']/@model'    wwpdb_validation.xsd    002
 save_
-
 
 save__pdbx_validate_rmsd_angle.auth_asym_id_1
     _item_description.description
@@ -40506,7 +40605,6 @@ save__pdbx_validate_rmsd_angle.label_alt_id_1
     '/wwPDB-validation-information/ModelledSubgroup[./mog-angle-outlier/@obsval!='']/@altcode'  wwpdb_validation.xsd    002
 save_
 
-
 save__pdbx_validate_rmsd_angle.label_alt_id_2
     _item_description.description
 ;              An optional identifier of the second of the three atoms that
@@ -40557,8 +40655,6 @@ save__pdbx_validate_rmsd_angle.label_alt_id_3
     '/wwPDB-validation-information/ModelledSubgroup[./mog-angle-outlier/@obsval!='']/@altcode'  wwpdb_validation.xsd    002
 save_
 
-
-
 save__pdbx_validate_rmsd_angle.angle_deviation
     _item_description.description
 ;              Value of the deviation (in degrees)  from 6*REBI for the angle bounded
@@ -40574,10 +40670,9 @@ save__pdbx_validate_rmsd_angle.angle_deviation
     _pdbx_item_aliases.xpath
     _pdbx_item_aliases.schema
     _pdbx_item_aliases.version
-    '/wwPDB-validation-information/ModelledSubgroup/angle-outlier/@z'                   wwpdb_validation.xsd    002
-    '/wwPDB-validation-information/ModelledSubgroup/mog-angle-outlier/@Zscore'          wwpdb_validation.xsd    002
+    '/wwPDB-validation-information/ModelledSubgroup/angle-outlier/@obs-@mean'                   wwpdb_validation.xsd    002
+    '/wwPDB-validation-information/ModelledSubgroup/mog-angle-outlier/@obsval-@mean'          wwpdb_validation.xsd    002
 save_
-
 
 save__pdbx_validate_rmsd_angle.angle_value
     _item_description.description
@@ -40597,7 +40692,6 @@ save__pdbx_validate_rmsd_angle.angle_value
     '/wwPDB-validation-information/ModelledSubgroup/mog-angle-outlier/@obsval'          wwpdb_validation.xsd    002
 save_
 
-
 save__pdbx_validate_rmsd_angle.angle_target_value
     _item_description.description
 ;              The target value of the bond angle
@@ -40615,7 +40709,6 @@ save__pdbx_validate_rmsd_angle.angle_target_value
     '/wwPDB-validation-information/ModelledSubgroup/angle-outlier/@mean'                wwpdb_validation.xsd    002
     '/wwPDB-validation-information/ModelledSubgroup/mog-angle-outlier/@mean'            wwpdb_validation.xsd    002
 save_
-
 
 save__pdbx_validate_rmsd_angle.angle_standard_deviation
     _item_description.description
@@ -40650,6 +40743,64 @@ save__pdbx_validate_rmsd_angle.linker_flag
     _item_default.value           N
 #
     _pdbx_item_aliases.xpath     '/wwPDB-validation-information/ModelledSubgroup/angle-outlier/@link'
+    _pdbx_item_aliases.schema     wwpdb_validation.xsd
+    _pdbx_item_aliases.version    002
+save_
+
+save__pdbx_validate_rmsd_angle.Zscore
+    _item_description.description
+;              Z score of the bond angle expected by knowlege base such as
+               the Cambridge Structural Database (CSD)
+;
+    _item.name                    '_pdbx_validate_rmsd_angle.Zscore'
+    _item.category_id             pdbx_validate_rmsd_angle
+    _item.mandatory_code          no
+    _item_type.code               float
+#
+    loop_
+    _pdbx_item_aliases.xpath
+    _pdbx_item_aliases.schema
+    _pdbx_item_aliases.version
+    '/wwPDB-validation-information/ModelledSubgroup/angle-outlier/@z'                   wwpdb_validation.xsd    002
+    '/wwPDB-validation-information/ModelledSubgroup/mog-angle-outlier/@Zscore'          wwpdb_validation.xsd    002
+save_
+
+save__pdbx_validate_rmsd_angle.angle_minimum_diff_to_kb
+    _item_description.description
+;              The minimum difference to the known bond angles
+               in similar conformations archived in knowlege base
+               such as the Cambridge Structural Database (CSD)
+;
+    _item.name                  '_pdbx_validate_rmsd_angle.angle_minimum_diff_to_kb'
+    _item.category_id             pdbx_validate_rmsd_angle
+    _item.mandatory_code          no
+    _item_type.code               float
+    _item_units.code              degrees
+    loop_
+    _item_range.maximum
+    _item_range.minimum            .    0.0
+                                  0.0   0.0
+#
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/ModelledSubgroup/mog-angle-outlier/@mindiff'
+    _pdbx_item_aliases.schema     wwpdb_validation.xsd
+    _pdbx_item_aliases.version    002
+save_
+
+save__pdbx_validate_rmsd_angle.number_angles_in_kb
+    _item_description.description
+;              The number of bond angles in similar conformations archived
+               in knowlege base such as the Cambridge Structural Database (CSD)
+;
+    _item.name                  '_pdbx_validate_rmsd_angle.number_angles_in_kb'
+    _item.category_id             pdbx_validate_rmsd_angle
+    _item.mandatory_code          no
+    _item_type.code               int
+    loop_
+    _item_range.maximum
+    _item_range.minimum           .   0
+                                  0   0
+#
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/ModelledSubgroup/mog-angle-outlier/@numobs'
     _pdbx_item_aliases.schema     wwpdb_validation.xsd
     _pdbx_item_aliases.version    002
 save_
@@ -40727,7 +40878,6 @@ save__pdbx_validate_torsion.PDB_model_num
     _pdbx_item_aliases.schema     wwpdb_validation.xsd
     _pdbx_item_aliases.version    002
 save_
-
 
 save__pdbx_validate_torsion.auth_asym_id
     _item_description.description
@@ -40954,7 +41104,6 @@ save__pdbx_validate_peptide_omega.PDB_model_num
     _pdbx_item_aliases.version    002
 save_
 
-
 save__pdbx_validate_peptide_omega.auth_asym_id_1
     _item_description.description
 ;              Part of the identifier of the first residue in the bond
@@ -40975,7 +41124,6 @@ save__pdbx_validate_peptide_omega.auth_asym_id_1
     _pdbx_item_aliases.schema     wwpdb_validation.xsd
     _pdbx_item_aliases.version    002
 save_
-
 
 save__pdbx_validate_peptide_omega.auth_asym_id_2
     _item_description.description
@@ -41036,7 +41184,6 @@ save__pdbx_validate_peptide_omega.auth_comp_id_2
     _pdbx_item_external_ref.version       5
 save_
 
-
 save__pdbx_validate_peptide_omega.auth_seq_id_1
     _item_description.description
 ;              Part of the identifier of the first residue in the bond
@@ -41057,7 +41204,6 @@ save__pdbx_validate_peptide_omega.auth_seq_id_1
     _pdbx_item_aliases.schema     wwpdb_validation.xsd
     _pdbx_item_aliases.version    002
 save_
-
 
 save__pdbx_validate_peptide_omega.auth_seq_id_2
     _item_description.description
@@ -41096,7 +41242,6 @@ save__pdbx_validate_peptide_omega.PDB_ins_code_1
     _pdbx_item_aliases.schema     wwpdb_validation.xsd
     _pdbx_item_aliases.version    002
 save_
-
 
 save__pdbx_validate_peptide_omega.PDB_ins_code_2
     _item_description.description
@@ -41181,7 +41326,6 @@ save__pdbx_validate_peptide_omega.omega
     _pdbx_item_aliases.version    002
 save_
 
-
 ###########################
 ## PDBX_VALIDATE_CHIRAL  ##
 ###########################
@@ -41233,7 +41377,6 @@ save_pdbx_validate_chiral
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 save_
 
-
 save__pdbx_validate_chiral.id
     _item_description.description
 ;              The value of _pdbx_validate_chiral.id must
@@ -41266,7 +41409,6 @@ save__pdbx_validate_chiral.PDB_model_num
     _pdbx_item_aliases.schema     wwpdb_validation.xsd
     _pdbx_item_aliases.version    002
 save_
-
 
 save__pdbx_validate_chiral.auth_asym_id
     _item_description.description
@@ -41331,7 +41473,6 @@ save__pdbx_validate_chiral.label_alt_id
     _pdbx_item_aliases.version    002
 save_
 
-
 save__pdbx_validate_chiral.auth_comp_id
     _item_description.description
 ;              Part of the identifier of the residue
@@ -41395,7 +41536,6 @@ save__pdbx_validate_chiral.PDB_ins_code
     _pdbx_item_aliases.version    002
 save_
 
-
 save__pdbx_validate_chiral.omega
     _item_description.description
 ;              The value of the OMEGA angle for the peptide linkage between
@@ -41416,7 +41556,6 @@ save__pdbx_validate_chiral.omega
 
 save_
 
-
 save__pdbx_validate_chiral.details
     _item_description.description
 ;              A description of the outlier angle  e.g. ALPHA-CARBON
@@ -41432,8 +41571,6 @@ save__pdbx_validate_chiral.details
     _pdbx_item_aliases.schema     wwpdb_validation.xsd
     _pdbx_item_aliases.version    002
 save_
-
-
 
 #-----------------------------------------------------------
 
@@ -41513,7 +41650,6 @@ save__pdbx_validate_planes.PDB_model_num
     _pdbx_item_aliases.schema     wwpdb_validation.xsd
     _pdbx_item_aliases.version    002
 save_
-
 
 save__pdbx_validate_planes.auth_asym_id
     _item_description.description
@@ -41619,7 +41755,6 @@ save__pdbx_validate_planes.label_alt_id
     _pdbx_item_aliases.schema     wwpdb_validation.xsd
     _pdbx_item_aliases.version    002
 save_
-
 
 save__pdbx_validate_planes.rmsd
     _item_description.description
@@ -41930,7 +42065,6 @@ save__pdbx_validate_main_chain_plane.PDB_model_num
     _pdbx_item_aliases.version    002
 save_
 
-
 save__pdbx_validate_main_chain_plane.auth_asym_id
     _item_description.description
 ;              Part of the identifier of the residue in which the plane is calculated
@@ -42035,7 +42169,6 @@ save__pdbx_validate_main_chain_plane.label_alt_id
     _pdbx_item_aliases.schema     wwpdb_validation.xsd
     _pdbx_item_aliases.version    002
 save_
-
 
 save__pdbx_validate_main_chain_plane.improper_torsion_angle
     _item_description.description
@@ -53910,6 +54043,22 @@ save__pdbx_dcc_density.ls_d_res_high
     _pdbx_item_aliases.version    002
 save_
 
+# added by MY
+
+save__pdbx_dcc_density.ls_d_res_low
+    _item_description.description
+;              The lowest resolution limit reported in the model file.
+;
+    _item.name                  '_pdbx_dcc_density.ls_d_res_low'
+    _item.category_id             pdbx_dcc_density
+    _item.mandatory_code          no
+    _item_type.code               float
+#
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/Entry/@PDB-resolution-low'
+    _pdbx_item_aliases.schema     wwpdb_validation.xsd
+    _pdbx_item_aliases.version    002
+save_
+
 save__pdbx_dcc_density.ls_d_res_high_sf
     _item_description.description
 ;              The highest resolution limit calculated from the structure
@@ -55019,6 +55168,10 @@ save__pdbx_dcc_density_corr.ls_d_res_high
     _item.category_id             pdbx_dcc_density_corr
     _item.mandatory_code          no
     _item_type.code               float
+#
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/Entry/@EDS_resolution'
+    _pdbx_item_aliases.schema     wwpdb_validation.xsd
+    _pdbx_item_aliases.version    002
 save_
 
 save__pdbx_dcc_density_corr.ls_d_res_low
@@ -55030,6 +55183,10 @@ save__pdbx_dcc_density_corr.ls_d_res_low
     _item.category_id             pdbx_dcc_density_corr
     _item.mandatory_code          no
     _item_type.code               float
+#
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/Entry/@EDS_resolution_low'
+    _pdbx_item_aliases.schema     wwpdb_validation.xsd
+    _pdbx_item_aliases.version    002
 save_
 
 save__pdbx_dcc_density_corr.ls_R_factor_R_all
@@ -55050,6 +55207,10 @@ save__pdbx_dcc_density_corr.ls_R_factor_R_work
     _item.category_id             pdbx_dcc_density_corr
     _item.mandatory_code          no
     _item_type.code               float
+#
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/Entry/@EDS_R'
+    _pdbx_item_aliases.schema     wwpdb_validation.xsd
+    _pdbx_item_aliases.version    002
 save_
 
 save__pdbx_dcc_density_corr.ls_R_factor_R_free
@@ -55070,6 +55231,10 @@ save__pdbx_dcc_density_corr.ls_number_reflns_obs
     _item.category_id             pdbx_dcc_density_corr
     _item.mandatory_code          no
     _item_type.code               int
+#
+    _pdbx_item_aliases.xpath    '/wwPDB-validation-information/Entry/@numMillerIndices'
+    _pdbx_item_aliases.schema    wwpdb_validation.xsd
+    _pdbx_item_aliases.version   002
 save_
 
 save__pdbx_dcc_density_corr.ls_percent_reflns_obs
@@ -55080,6 +55245,10 @@ save__pdbx_dcc_density_corr.ls_percent_reflns_obs
     _item.category_id             pdbx_dcc_density_corr
     _item.mandatory_code          no
     _item_type.code               float
+#
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/Entry/@DataCompleteness'
+    _pdbx_item_aliases.schema     wwpdb_validation.xsd
+    _pdbx_item_aliases.version    002
 save_
 
 save__pdbx_dcc_density_corr.ls_number_reflns_R_free
@@ -55090,6 +55259,39 @@ save__pdbx_dcc_density_corr.ls_number_reflns_R_free
     _item.category_id             pdbx_dcc_density_corr
     _item.mandatory_code          no
     _item_type.code               int
+#
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/Entry/@num-free-reflections'
+    _pdbx_item_aliases.schema     wwpdb_validation.xsd
+    _pdbx_item_aliases.version    002
+save_
+
+# Added by MY
+
+save__pdbx_dcc_density_corr.ls_percent_reflns_R_free
+    _item_description.description
+;              The number of reflections that satisfy the resolution limits
+               established by _pdbx_dcc_density_corr.ls_d_res_high and _pdbx_dcc_density_corr.ls_d_res_low
+               , and that were used as the test reflections (i.e. were excluded from the refinement)
+               when the refinement included the calculation of a 'free' R factor,
+               expressed as a percentage of the number of geometrically
+               observable reflections that satisfy the resolution limits.
+;
+    _item.name                  '_pdbx_dcc_density_corr.ls_percent_reflns_R_free'
+    _item.category_id             pdbx_dcc_density_corr
+    _item.mandatory_code          no
+    _item_type.code               float
+#
+    loop_
+    _pdbx_item_range.name
+    _pdbx_item_range.minimum
+    _pdbx_item_range.maximum
+      "_pdbx_dcc_density_corr.ls_percent_reflns_R_free"    1    1
+      "_pdbx_dcc_density_corr.ls_percent_reflns_R_free"    1   12
+      "_pdbx_dcc_density_corr.ls_percent_reflns_R_free"   12   12
+#
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/Entry/@percent-free-reflections'
+    _pdbx_item_aliases.schema     wwpdb_validation.xsd
+    _pdbx_item_aliases.version    002
 save_
 
 save__pdbx_dcc_density_corr.correlation_coeff_Fo_to_Fc
@@ -55101,6 +55303,10 @@ save__pdbx_dcc_density_corr.correlation_coeff_Fo_to_Fc
     _item.category_id             pdbx_dcc_density_corr
     _item.mandatory_code          no
     _item_type.code               float
+#
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/Entry/@Fo_Fc_correlation'
+    _pdbx_item_aliases.schema     wwpdb_validation.xsd
+    _pdbx_item_aliases.version    002
 save_
 
 save__pdbx_dcc_density_corr.real_space_R
@@ -57497,6 +57703,109 @@ save__pdbx_dcc_density.aniso_B[3][3]
 #    _pdbx_item_aliases.version    002
 save_
 
+# Added by MY
+
+save__pdbx_dcc_density.reflns_number_obs
+    _item_description.description
+;              The number of reflections classified as observed by Xtriage.
+               This number may contain Friedel-equivalent reflections according
+               to the nature of the structure and the procedures used.
+;
+    _item.name                  '_pdbx_dcc_density.reflns_number_obs'
+    _item.category_id             pdbx_dcc_density
+    _item.mandatory_code          no
+    loop_
+    _item_range.maximum
+    _item_range.minimum           .   0
+                                  0   0
+    _item_type.code               int
+#
+    _pdbx_item_aliases.xpath    '/wwPDB-validation-information/Entry/@numMillerIndices'
+    _pdbx_item_aliases.schema    wwpdb_validation.xsd
+    _pdbx_item_aliases.version   002
+save_
+
+save__pdbx_dcc_density.ls_percent_reflns_obs
+    _item_description.description
+;              The number of reflections that satisfy the resolution limits
+               established by _pdbx_dcc_density.ls_d_res_high and
+               _pdbx_dcc_density.ls_d_res_low, expressed as a percentage of
+               the number of geometrically observable reflections that
+               satisfy the resolution limits.
+;
+    _item.name                  '_pdbx_dcc_density.ls_percent_reflns_obs'
+    _item.category_id             pdbx_dcc_density
+    _item.mandatory_code          no
+    _item_type.code               float
+    loop_
+    _pdbx_item_range.name
+    _pdbx_item_range.minimum
+    _pdbx_item_range.maximum
+        '_pdbx_dcc_density.ls_percent_reflns_obs'   50   50
+        '_pdbx_dcc_density.ls_percent_reflns_obs'   50  100
+        '_pdbx_dcc_density.ls_percent_reflns_obs'  100  100
+#
+    _pdbx_item_aliases.xpath    '/wwPDB-validation-information/Entry/@DataCompleteness'
+    _pdbx_item_aliases.schema    wwpdb_validation.xsd
+    _pdbx_item_aliases.version   002
+save_
+
+save__pdbx_dcc_density.ls_percent_reflns_R_free
+    _item_description.description
+;              The number of reflections that satisfy the resolution limits
+               established by _pdbx_dcc_density.ls_d_res_high and _pdbx_dcc_density.ls_d_res_low
+               , and that were used as the test reflections (i.e. were excluded from the refinement)
+               when the refinement included the calculation of a 'free' R factor,
+               expressed as a percentage of the number of geometrically
+               observable reflections that satisfy the resolution limits.
+;
+    _item.name                  '_pdbx_dcc_density.ls_percent_reflns_R_free'
+    _item.category_id             pdbx_dcc_density
+    _item.mandatory_code          no
+    _item_type.code               float
+
+    loop_
+    _pdbx_item_range.name
+    _pdbx_item_range.minimum
+    _pdbx_item_range.maximum
+      "_pdbx_dcc_density.ls_percent_reflns_R_free"    1    1
+      "_pdbx_dcc_density.ls_percent_reflns_R_free"    1   12
+      "_pdbx_dcc_density.ls_percent_reflns_R_free"   12   12
+
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/Entry/@percent-free-reflections'
+    _pdbx_item_aliases.schema     wwpdb_validation.xsd
+    _pdbx_item_aliases.version    002
+save_
+
+save__pdbx_dcc_density.ls_number_reflns_R_free
+    _item_description.description
+;              The number of reflections that satisfy the resolution limits
+               established by _pdbx_dcc_density.ls_d_res_high and _pdbx_dcc_density.ls_d_res_low
+               , and that were used as the test reflections (i.e. were excluded from the refinement)
+               when the refinement included the calculation of a 'free' R factor.
+;
+    _item.name                  '_pdbx_dcc_density.ls_number_reflns_R_free'
+    _item.category_id             pdbx_dcc_density
+    _item.mandatory_code          no
+    loop_
+    _item_range.maximum
+    _item_range.minimum           .   0
+                                  0   0
+    _item_type.code               int
+#
+    loop_
+    _pdbx_item_range.name
+    _pdbx_item_range.minimum
+    _pdbx_item_range.maximum
+      "_pdbx_dcc_density.ls_number_reflns_R_free"     40     40
+      "_pdbx_dcc_density.ls_number_reflns_R_free"     40  16000
+      "_pdbx_dcc_density.ls_number_reflns_R_free"  16000  16000
+#
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/Entry/@num-free-reflections'
+    _pdbx_item_aliases.schema     wwpdb_validation.xsd
+    _pdbx_item_aliases.version    002
+save_
+
 save__pdbx_dcc_density.reflns_outlier_acentric
     _item_description.description
 ;              The number of acentric reflections classified as outliers
@@ -57692,6 +58001,44 @@ save__pdbx_dcc_geometry.bond_overall_rmsz
     _item_type.code               float
 #
     _pdbx_item_aliases.xpath    '/wwPDB-validation-information/Entry/@bonds_rmsz'
+    _pdbx_item_aliases.schema    wwpdb_validation.xsd
+    _pdbx_item_aliases.version   002
+save_
+
+save__pdbx_dcc_geometry.number_angles
+    _item_description.description
+;              The number of bond angles in the entry used in calculation of
+               '_pdbx_dcc_geometry.angle_overall_rmsz'.
+;
+    _item.name                  '_pdbx_dcc_geometry.number_angles'
+    _item.category_id             pdbx_dcc_geometry
+    _item.mandatory_code          no
+    _item_type.code               int
+    loop_
+    _item_range.maximum
+    _item_range.minimum           .   0
+                                  0   0
+
+    _pdbx_item_aliases.xpath    '/wwPDB-validation-information/Entry/@num_angles_rmsz'
+    _pdbx_item_aliases.schema    wwpdb_validation.xsd
+    _pdbx_item_aliases.version   002
+save_
+
+save__pdbx_dcc_geometry.number_bonds
+    _item_description.description
+;              The number of bond lenths in the entry used in calculation of
+               '_pdbx_dcc_geometry.bond_overall_rmsz'.
+;
+    _item.name                  '_pdbx_dcc_geometry.number_bonds'
+    _item.category_id             pdbx_dcc_geometry
+    _item.mandatory_code          no
+    _item_type.code               int
+    loop_
+    _item_range.maximum
+    _item_range.minimum           .   0
+                                  0   0
+
+    _pdbx_item_aliases.xpath    '/wwPDB-validation-information/Entry/@num_bonds_rmsz'
     _pdbx_item_aliases.schema    wwpdb_validation.xsd
     _pdbx_item_aliases.version   002
 save_
@@ -57980,6 +58327,44 @@ save__pdbx_dcc_entity_geometry.bond_overall_rmsz
     _pdbx_item_aliases.version   002
 save_
 
+save__pdbx_dcc_entity_geometry.number_angles
+    _item_description.description
+;              The number of bond angles in the entity used in calculation of
+               '_pdbx_dcc_entity_geometry.angle_overall_rmsz'.
+;
+    _item.name                  '_pdbx_dcc_entity_geometry.number_angles'
+    _item.category_id             pdbx_dcc_entity_geometry
+    _item.mandatory_code          no
+    _item_type.code               int
+    loop_
+    _item_range.maximum
+    _item_range.minimum           .   0
+                                  0   0
+#
+    _pdbx_item_aliases.xpath    '/wwPDB-validation-information/ModelledEntityInstance/@num_angles_rmsz'
+    _pdbx_item_aliases.schema    wwpdb_validation.xsd
+    _pdbx_item_aliases.version   002
+save_
+
+save__pdbx_dcc_entity_geometry.number_bonds
+    _item_description.description
+;              The number of bond lenths in the entity used in calculation of
+               '_pdbx_dcc_entity_geometry.bond_overall_rmsz'.
+;
+    _item.name                  '_pdbx_dcc_entity_geometry.number_bonds'
+    _item.category_id             pdbx_dcc_entity_geometry
+    _item.mandatory_code          no
+    _item_type.code               int
+    loop_
+    _item_range.maximum
+    _item_range.minimum           .   0
+                                  0   0
+#
+    _pdbx_item_aliases.xpath    '/wwPDB-validation-information/ModelledEntityInstance/@num_bonds_rmsz'
+    _pdbx_item_aliases.schema    wwpdb_validation.xsd
+    _pdbx_item_aliases.version   002
+save_
+
 ###########################
 ## PDBX_DCC_MON_GEOMETRY_##
 ###########################
@@ -58145,6 +58530,44 @@ save__pdbx_dcc_mon_geometry.bond_overall_rmsz
     _item_type.code               float
 #
     _pdbx_item_aliases.xpath    '/wwPDB-validation-information/ModelledSubgroup/@mogul_bonds_rmsz'
+    _pdbx_item_aliases.schema    wwpdb_validation.xsd
+    _pdbx_item_aliases.version   002
+save_
+
+save__pdbx_dcc_mon_geometry.number_angles
+    _item_description.description
+;              The number of bond angles in the residue used in calculation of
+               '_pdbx_dcc_mon_geometry.angle_overall_rmsz'.
+;
+    _item.name                  '_pdbx_dcc_mon_geometry.number_angles'
+    _item.category_id             pdbx_dcc_mon_geometry
+    _item.mandatory_code          no
+    _item_type.code               int
+    loop_
+    _item_range.maximum
+    _item_range.minimum           .   0
+                                  0   0
+#
+    _pdbx_item_aliases.xpath    '/wwPDB-validation-information/ModelledSubgroup/@mogul_rmsz_numangles'
+    _pdbx_item_aliases.schema    wwpdb_validation.xsd
+    _pdbx_item_aliases.version   002
+save_
+
+save__pdbx_dcc_mon_geometry.number_bonds
+    _item_description.description
+;              The number of bond lenths in the residue used in calculation of
+               '_pdbx_dcc_mon_geometry.bond_overall_rmsz'.
+;
+    _item.name                  '_pdbx_dcc_mon_geometry.number_bonds'
+    _item.category_id             pdbx_dcc_mon_geometry
+    _item.mandatory_code          no
+    _item_type.code               int
+    loop_
+    _item_range.maximum
+    _item_range.minimum           .   0
+                                  0   0
+#
+    _pdbx_item_aliases.xpath    '/wwPDB-validation-information/ModelledSubgroup/@mogul_rmsz_numbonds'
     _pdbx_item_aliases.schema    wwpdb_validation.xsd
     _pdbx_item_aliases.version   002
 save_
@@ -58342,6 +58765,24 @@ save__struct_mon_nucl.pdbx_id
     _item.category_id             struct_mon_nucl
     _item.mandatory_code          yes
     _item_type.code               code
+save_
+
+save__struct_mon_nucl.PDB_model_num
+    _item_description.description
+;              The model number for the given monomer
+;
+    _item.name                  '_struct_mon_nucl.PDB_model_num'
+    _item.category_id             struct_mon_nucl
+    _item.mandatory_code          yes
+    _item_type.code               int
+    _pdbx_item_external_ref.child_name  '_struct_mon_nucl.PDB_model_num'
+    _pdbx_item_external_ref.parent_name '_atom_site.pdbx_PDB_model_num'
+    _pdbx_item_external_ref.dictionary    mmcif_pdbx.dic
+    _pdbx_item_external_ref.version       5
+#
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/ModelledSubgroup/@model'
+    _pdbx_item_aliases.schema     wwpdb_validation.xsd
+    _pdbx_item_aliases.version    002
 save_
 
 #
@@ -58601,6 +59042,46 @@ save__pdbx_validate_rmsd_ring.dihedral_angle_standard_deviation
                                   0.0   0.0
 #
     _pdbx_item_aliases.xpath     '/wwPDB-validation-information/ModelledSubgroup/mog-ring-outlier/@stdev'
+    _pdbx_item_aliases.schema     wwpdb_validation.xsd
+    _pdbx_item_aliases.version    002
+save_
+
+save__pdbx_validate_rmsd_ring.dihedral_angle_minimum_diff_to_kb
+    _item_description.description
+;              The minimum difference to the known diredral angles
+               in similar ring conformations archived in knowlege base
+               such as the Cambridge Structural Database (CSD)
+;
+    _item.name                  '_pdbx_validate_rmsd_ring.dihedral_angle_minimum_diff_to_kb'
+    _item.category_id             pdbx_validate_rmsd_ring
+    _item.mandatory_code          no
+    _item_type.code               float
+    _item_units.code              degrees
+    loop_
+    _item_range.maximum
+    _item_range.minimum            .    0.0
+                                  0.0   0.0
+#
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/ModelledSubgroup/mog-ring-outlier/@mindiff'
+    _pdbx_item_aliases.schema     wwpdb_validation.xsd
+    _pdbx_item_aliases.version    002
+save_
+
+save__pdbx_validate_rmsd_ring.number_dihedral_angles_in_kb
+    _item_description.description
+;              The number of dihedral angles in similar ring conformations archived
+               in knowlege base such as the Cambridge Structural Database (CSD)
+;
+    _item.name                  '_pdbx_validate_rmsd_ring.number_dihedral_angles_in_kb'
+    _item.category_id             pdbx_validate_rmsd_ring
+    _item.mandatory_code          no
+    _item_type.code               int
+    loop_
+    _item_range.maximum
+    _item_range.minimum           .   0
+                                  0   0
+#
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/ModelledSubgroup/mog-ring-outlier/@numobs'
     _pdbx_item_aliases.schema     wwpdb_validation.xsd
     _pdbx_item_aliases.version    002
 save_
@@ -59067,6 +59548,46 @@ save__pdbx_validate_rmsd_torsion.dihedral_angle_standard_deviation
                                   0.0   0.0
 #
     _pdbx_item_aliases.xpath     '/wwPDB-validation-information/ModelledSubgroup/mog-torsion-outlier/@stdev'
+    _pdbx_item_aliases.schema     wwpdb_validation.xsd
+    _pdbx_item_aliases.version    002
+save_
+
+save__pdbx_validate_rmsd_torsion.dihedral_angle_minimum_diff_to_kb
+    _item_description.description
+;              The minimum difference to the known torsion angles
+               in similar conformations archived in knowlege base
+               such as the Cambridge Structural Database (CSD)
+;
+    _item.name                  '_pdbx_validate_rmsd_torsion.dihedral_angle_minimum_diff_to_kb'
+    _item.category_id             pdbx_validate_rmsd_torsion
+    _item.mandatory_code          no
+    _item_type.code               float
+    _item_units.code              degrees
+    loop_
+    _item_range.maximum
+    _item_range.minimum            .    0.0
+                                  0.0   0.0
+
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/ModelledSubgroup/mog-torsion-outlier/@mindiff'
+    _pdbx_item_aliases.schema     wwpdb_validation.xsd
+    _pdbx_item_aliases.version    002
+save_
+
+save__pdbx_validate_rmsd_torsion.number_dihedral_angles_in_kb
+    _item_description.description
+;              The number of torsion angles in similar conformations archived
+               in knowlege base such as the Cambridge Structural Database (CSD)
+;
+    _item.name                  '_pdbx_validate_rmsd_torsion.number_dihedral_angles_in_kb'
+    _item.category_id             pdbx_validate_rmsd_torsion
+    _item.mandatory_code          no
+    _item_type.code               int
+    loop_
+    _item_range.maximum
+    _item_range.minimum           .   0
+                                  0   0
+
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/ModelledSubgroup/mog-torsion-outlier/@numobs'
     _pdbx_item_aliases.schema     wwpdb_validation.xsd
     _pdbx_item_aliases.version    002
 save_
@@ -59628,7 +60149,7 @@ save_
 
 save__pdbx_struct_nmr_ens_dom.distance_rms_dev
     _item_description.description
-;              The average backbone distance rmsd of the each well formedd
+;              The average backbone distance rmsd of the each well formed
                domain regions over the NMR ensemble structures.
 ;
     _item.name                  '_pdbx_struct_nmr_ens_dom.distance_rms_dev'
@@ -59665,7 +60186,7 @@ save_
 save__pdbx_struct_nmr_ens_dom.number_of_gaps
     _item_description.description
 ;              The number of dropout residues from continuous polypeptide chain
-               within the each well formedd domain.
+               within the each well formed domain.
 ;
     _item.name                  '_pdbx_struct_nmr_ens_dom.number_of_gaps'
     _item.category_id             pdbx_struct_nmr_ens_dom
@@ -59686,7 +60207,7 @@ save_
 
 save__pdbx_struct_nmr_ens_dom.number_of_monomers
     _item_description.description
-;              The number of residues constituting the each well formedd domain.
+;              The number of residues constituting the each well formed domain.
 ;
     _item.name                  '_pdbx_struct_nmr_ens_dom.number_of_monomers'
     _item.category_id             pdbx_struct_nmr_ens_dom
@@ -59699,6 +60220,26 @@ save__pdbx_struct_nmr_ens_dom.number_of_monomers
                        '96'
 #
     _pdbx_item_aliases.xpath     '/wwPDB-validation-information/cyrange_domain/@number_of_residues'
+    _pdbx_item_aliases.schema     wwpdb_validation.xsd
+    _pdbx_item_aliases.version    002
+save_
+
+save__pdbx_struct_nmr_ens_dom.percent_of_core
+    _item_description.description
+;              The percentage of the individual well formed domain in
+               the eitire well formed regions.
+;
+    _item.name                  '_pdbx_struct_nmr_ens_dom.percent_of_core'
+    _item.category_id             pdbx_struct_nmr_ens_dom
+    _item.mandatory_code          no
+    _item_type.code               float
+    loop_
+    _item_range.maximum
+    _item_range.minimum           100.0 100.0
+                                  100.0   0.0
+                                    0.0   0.0
+#
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/cyrange_domain/@percentage_of_core'
     _pdbx_item_aliases.schema     wwpdb_validation.xsd
     _pdbx_item_aliases.version    002
 save_

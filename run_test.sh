@@ -220,7 +220,22 @@ for pdbml_file in $WORK_DIR/$PDBML/*.xml ; do
 
   fi
 
-fi
+ fi
+
+ pdbml_valid_file=$WORK_DIR/$XML_VALID/$pdbid-validation-full.xml
+ info_rev_file=$WORK_DIR/$VALID_INFO_REV/$pdbid"_validation.xml"
+
+ java -jar $SAXON -s:$pdbml_valid_file -xsl:$REVERT_INFO_XSL -o:$info_rev_file || ( echo $0 aborted. && exit 1 )
+
+ if [ $? = 0 ] ; then
+  echo " generated: "$info_rev_file
+ else
+  exit 1
+ fi
+
+ java -classpath $XSD2PGSCHEMA xmlvalidator --xsd $WWPDB_VALIDATION_XSD --xml $info_rev_file > /dev/null || ( echo $0 aborted. && exit 1 )
+
+ echo " validated: "$info_rev_file
 
 done
 

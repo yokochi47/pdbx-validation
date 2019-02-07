@@ -14,13 +14,13 @@ The pdbx-validation is a generation tool of alternative [wwPDB validation report
 
 File path | Document
 --------- | --------
-[schema/mmcif_pdbx_validation_v1.dic](https://github.com/yokochi47/pdbx-validation/blob/master/schema/mmcif_pdbx_validation_v1.303.dic) | wwPDB Validation Information Dictionary (v1.303)
-[schema/pdbx-validation-v1.xsd](https://github.com/yokochi47/pdbx-validation/blob/master/schema/pdbx-validation-v1.303.xsd) | PDBML-validation Schema (v1.303)
-[schema/pdbx-validation-v1.owl](https://github.com/yokochi47/pdbx-validation/blob/master/schema/pdbx-validation-v1.303.owl) | wwPDB/OWL-validation (v1.303)
+[schema/mmcif_pdbx_validation_v1.dic](https://github.com/yokochi47/pdbx-validation/blob/master/schema/mmcif_pdbx_validation_v1.305.dic) | wwPDB Validation Information Dictionary (v1.305)
+[schema/pdbx-validation-v1.xsd](https://github.com/yokochi47/pdbx-validation/blob/master/schema/pdbx-validation-v1.305.xsd) | PDBML-validation Schema (v1.305)
+[schema/pdbx-validation-v1.owl](https://github.com/yokochi47/pdbx-validation/blob/master/schema/pdbx-validation-v1.305.owl) | wwPDB/OWL-validation (v1.305)
 [schema/mmcif_ddl.dic](https://github.com/yokochi47/pdbx-validation/blob/master/schema/mmcif_ddl_v2.2.1.dic) | extended mmCIF DDL Core Dictionary (dubbed as v2.2.1)
-[resource/mmcif_pdbx_v50.dic](http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic) | PDBx/mmCIF Dictionary (v5.303)
-[resource/pdbx-v50.xsd](https://github.com/yokochi47/pdbx-validation/blob/master/resource/pdbx-v50.xsd) | PDBML Schema (v5.303)
-[resource/pdbx-v50.owl](https://github.com/yokochi47/pdbx-validation/blob/master/resource/pdbx-v50.owl) | PDBx ontology, ontology for wwPDB/RDF (v5.303)
+[resource/mmcif_pdbx_v50.dic](http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic) | PDBx/mmCIF Dictionary (v5.305)
+[resource/pdbx-v50.xsd](https://github.com/yokochi47/pdbx-validation/blob/master/resource/pdbx-v50.xsd) | PDBML Schema (v5.305)
+[resource/pdbx-v50.owl](https://github.com/yokochi47/pdbx-validation/blob/master/resource/pdbx-v50.owl) | PDBx ontology, ontology for wwPDB/RDF (v5.305)
 [resource/wwpdb_validation_v002.xsd](https://github.com/yokochi47/pdbx-validation/blob/master/resource/wwpdb_validation_v002_rev30291.xsd) | XML Schema for wwPDB validation reports (v002, rev30291)
 [scripts](https://github.com/yokochi47/pdbx-validation/blob/master/scripts) | a directory contains scripts invoked by the 'run_all.sh' script
 [virtuoso_scripts](https://github.com/yokochi47/pdbx-validation/blob/master/virtuoso_scripts) | a directory contains scripts for uploading wwPDB/RDF-validation to local SPARQL endpoint
@@ -102,6 +102,48 @@ File path | Document
 - [**Virtuoso**](https://www.openlinksw.com/wiki/main/Main), oprionally used as SPARQL endpoint of wwPDB/RDF-validation.
 
 ## Release notes
+
+- **Feb 6, 2019**: Release v1.5.0
+	- Add/Revise the following data items in relation with wwPDB validation information XSD
+		- Add '_pdbx_dcc_density.ls_d_res_low' with link to /wwPDB-validation-information/Entry/@PDB-resolution-low
+		- Add '_pdbx_dcc_density.reflns_number_obs' with link to /wwPDB-validation-information/Entry/@numMillerIndices, which was formerly linked to '_reflns.number_all'
+		- Add '_pdbx_dcc_density.ls_number_reflns_R_free' with link to /wwPDB-validation-information/Entry/@num-free-reflections, which was formerly linked to '_refine.ls_number_reflns_R_free'
+		- Add '_pdbx_dcc_density.ls_percent_reflns_obs' with link to /wwPDB-validation-information/Entry/@DataCompleteness, which was formerly linked to '_refine.ls_percent_reflns_obs'
+		- Add '_pdbx_dcc_density.ls_percent_reflns_R_free' and '_pdbx_dcc_density_corr.ls_percent_reflns_R_free' with link to /wwPDB-validation-information/Entry/@percent-free-reflections, which was formerly linked to '_refine.ls_percent_reflns_R_free'
+	- Add the following relationships to wwPDB validation information XSD
+		- Link '_pdbx_dcc_density_corr.ls_d_res_high' and /wwPDB-validation-information/Entry/@EDS_resolution
+		- Link '_pdbx_dcc_density_corr.ls_d_res_high' and /wwPDB-validation-information/Entry/@EDS_resolution_low
+		- Link '_pdbx_dcc_density_corr.ls_R_factor_R_work' and /wwPDB-validation-information/Entry/@EDS_R
+		- Link '_pdbx_dcc_density_corr.ls_number_reflns_obs' and /wwPDB-validation-information/Entry/@numMillerIndices
+		- Link '_pdbx_dcc_density_corr.ls_percent_reflns_obs' and /wwPDB-validation-information/Entry/@DataCompleteness
+		- Link '_pdbx_dcc_density_corr.correlation_coeff_Fo_to_Fc' and /wwPDB-validation-information/Entry/@Fo_Fc_correlation
+	- Add '_struct_mon_prot.PDB_model_num' with link to /wwPDB-validation-information/ModelledSubgroup/@model
+	- Add '_struct_mon_nucl.PDB_model_num' with link to /wwPDB-validation-information/ModelledSubgroup/@model
+	- Add the following data items in relation with wwPDB validation information XSD
+		- Add '_pdbx_validate_rmsd_bond.bond_minimum_diff_to_kb' with link to /wwPDB-validation-information/ModelledSubgroup/mog-bond-outlier/@mindiff
+		- Add '_pdbx_validate_rmsd_bond.number_bonds_in_kb' with link to /wwPDB-validation-information/ModelledSubgroup/mog-bond-outlier/@numobs
+		- Add '_pdbx_validate_rmsd_angle.angle_minimum_diff_to_kb' with link to /wwPDB-validation-information/ModelledSubgroup/mog-angle-outlier/@mindiff
+		- Add '_pdbx_validate_rmsd_angle.number_angles_in_kb' with link to /wwPDB-validation-information/ModelledSubgroup/mog-angle-outlier/@numobs
+		- Add '_pdbx_validate_rmsd_torsion.dihedral_angle_minimum_diff_to_kb' with link to /wwPDB-validation-information/ModelledSubgroup/mog-torsion-outlier/@mindiff
+		- Add '_pdbx_validate_rmsd_torsion.number_dihedral_angles_in_kb' with link to /wwPDB-validation-information/ModelledSubgroup/mog-torsion-outlier/@numobs
+		- Add '_pdbx_validate_rmsd_ring.dihedral_angle_minimum_diff_to_kb' with link to /wwPDB-validation-information/ModelledSubgroup/mog-ring-outlier/@mindiff
+		- Add '_pdbx_validate_rmsd_ring.number_dihedral_angles_in_kb' with link to /wwPDB-validation-information/ModelledSubgroup/mog-ring-outlier/@numobs
+	- Revise dictionary link of '_pdbx_validate_rmsd_bond.bond_deviation'
+	- Revise dictionary link of '_pdbx_validate_rmsd_angle.angle_deviation'
+	- Add the following data items in relation with wwPDB validation information XSD
+		- Add '_pdbx_validate_rmsd_bond.Zscore' with link to /wwPDB-validation-information/ModelledSubgroup/bond-outlier/@z
+		- Add '_pdbx_validate_rmsd_angle.Zscore' with link to /wwPDB-validation-information/ModelledSubgroup/angle-outlier/@z
+		- Add '_pdbx_dcc_mon_geometry.number_angles' with link to /wwPDB-validation-information/ModelledSubgroup/@mogul_rmsz_numangles
+		- Add '_pdbx_dcc_mon_geometry.number_bonds' with link to /wwPDB-validation-information/ModelledSubgroup/@mogul_rmsz_numbonds
+		- Add '_pdbx_struct_nmr_ens_dom.percent_of_core' with link to /wwPDB-validation-information/cyrange_domain/@percentage_of_core
+		- Add '_pdbx_dcc_entity_geometry.number_angles' with link to /wwPDB-validation-information/ModelledEntityInstance/@num_bonds_rmsz
+		- Add '_pdbx_dcc_entity_geometry.number_bonds' with link to /wwPDB-validation-information/ModelledEntityInstance/@num_angles_rmsz
+		- Add '_pdbx_dcc_geometry.number_angles' with link to /wwPDB-validation-information/Entry/@num_bonds_rmsz
+		- Add '_pdbx_dcc_geometry.number_bonds' with link to /wwPDB-validation-information/Entry/@num_angles_rmsz
+	- Enable mutual transformation between PDBML-validation and wwPDB Validation Reports (XML)
+		- Add revert_info.xsl style sheet for the translation.
+		- Modify 'run_test.sh' script which include translation from PDBML-validation to wwPDB Validation Reports (XML).
+	- Update wwPDB Validation Information Dictionary from v1.303 to 1.305.
 
 - **Jan 8, 2019**: Release v1.4.1
 	- Ensure identity of chemical_shift_list/@list_id.

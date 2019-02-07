@@ -18,7 +18,7 @@
 --  map decimal numbers to: big decimal
 --
 -- Statistics of schema:
---  Generated 446 tables (3511 fields), 0 attr groups, 0 model groups in total
+--  Generated 446 tables (3536 fields), 0 attr groups, 0 model groups in total
 --   Namespaces:
 --    http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), http://www.w3.org/2001/XMLSchema (xsd)
 --   Schema locations:
@@ -30,7 +30,7 @@
 --   User keys:
 --    401 document keys, 0 serial keys, 0 xpath keys
 --   Contents:
---    624 attributes (40 in-place document keys), 2278 elements (5 in-place document keys), 208 simple contents (0 in-place document keys, 0 as attribute, 0 as conditional attribute)
+--    624 attributes (40 in-place document keys), 2303 elements (5 in-place document keys), 208 simple contents (0 in-place document keys, 0 as attribute, 0 as conditional attribute)
 --   Wild cards:
 --    0 any elements, 0 any attributes
 --   Constraints:
@@ -38,8 +38,8 @@
 --
 
 --
--- PDBML-validation Schema v1.303
--- PDBXML-validation Schema translated from wwPDB Validation Information Dictionary v1.303, which is backward compatible with the PDBx/mmCIF Dictionary v5.303: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
+-- PDBML-validation Schema v1.305
+-- PDBXML-validation Schema translated from wwPDB Validation Information Dictionary v1.305, which is backward compatible with the PDBx/mmCIF Dictionary v5.305: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
 -- URI-reference = http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd
 --
 
@@ -1024,6 +1024,7 @@ CREATE TABLE pdbx_struct_nmr_ens_dom (
 	medoid_model_number INTEGER ,
 	number_of_gaps INTEGER CHECK ( number_of_gaps >= 0 ) ,
 	number_of_monomers INTEGER CHECK ( number_of_monomers > 0 ) ,
+	percent_of_core DECIMAL CHECK ( percent_of_core >= 0 AND percent_of_core <= 100 ) ,
 -- ATTRIBUTE
 	id INTEGER NOT NULL
 );
@@ -1065,8 +1066,10 @@ CREATE TABLE pdbx_validate_rmsd_ring (
 	auth_asym_id TEXT ,
 	auth_comp_id TEXT ,
 	auth_seq_id TEXT ,
+	dihedral_angle_minimum_diff_to_kb DECIMAL CHECK ( dihedral_angle_minimum_diff_to_kb >= 0 ) ,
 	dihedral_angle_standard_deviation DECIMAL CHECK ( dihedral_angle_standard_deviation >= 0 ) ,
 	label_alt_id TEXT ,
+	number_dihedral_angles_in_kb INTEGER CHECK ( number_dihedral_angles_in_kb >= 0 ) ,
 -- ATTRIBUTE
 	id INTEGER NOT NULL
 );
@@ -1085,8 +1088,10 @@ CREATE TABLE pdbx_validate_rmsd_torsion (
 	auth_asym_id TEXT ,
 	auth_comp_id TEXT ,
 	auth_seq_id TEXT ,
+	dihedral_angle_minimum_diff_to_kb DECIMAL CHECK ( dihedral_angle_minimum_diff_to_kb >= 0 ) ,
 	dihedral_angle_standard_deviation DECIMAL CHECK ( dihedral_angle_standard_deviation >= 0 ) ,
 	label_alt_id TEXT ,
+	number_dihedral_angles_in_kb INTEGER CHECK ( number_dihedral_angles_in_kb >= 0 ) ,
 -- ATTRIBUTE
 	id INTEGER NOT NULL
 );
@@ -2410,7 +2415,7 @@ CREATE TYPE ENUM_em_imaging_mode AS ENUM ( 'BRIGHT FIELD', 'DARK FIELD', 'DIFFRA
 DROP TYPE IF EXISTS ENUM_em_imaging_specimen_holder_model CASCADE;
 CREATE TYPE ENUM_em_imaging_specimen_holder_model AS ENUM ( 'GATAN 626 SINGLE TILT LIQUID NITROGEN CRYO TRANSFER HOLDER', 'GATAN CT3500 SINGLE TILT LIQUID NITROGEN CRYO TRANSFER HOLDER', 'GATAN CT3500TR SINGLE TILT ROTATION LIQUID NITROGEN CRYO TRANSF', 'GATAN 910 MULTI-SPECIMEN SINGLE TILT CRYO TRANSFER HOLDER', 'GATAN 914 HIGH TILT LIQUID NITROGEN CRYO TRANSFER TOMOGRAPHY HO', 'GATAN 915 DOUBLE TILT LIQUID NITROGEN CRYO TRANSFER HOLDER', 'GATAN UHRST 3500 SINGLE TILT ULTRA HIGH RESOLUTION NITROGEN COO', 'GATAN CHDT 3504 DOUBLE TILT HIGH RESOLUTION NITROGEN COOLING HO', 'GATAN HC 3500 SINGLE TILT HEATING/NITROGEN COOLING HOLDER', 'GATAN HCHST 3008 SINGLE TILT HIGH RESOLUTION HELIUM COOLING HOL', 'GATAN ULTST ULTRA LOW TEMPERATURE SINGLE TILT HELIUM COOLING HO', 'GATAN HCHDT 3010 DOUBLE TILT HIGH RESOLUTION HELIUM COOLING HOL', 'GATAN ULTDT ULTRA LOW TEMPERATURE DOUBLE TILT HELIUM COOLING HO', 'FEI TITAN KRIOS AUTOGRID HOLDER', 'GATAN HELIUM', 'GATAN LIQUID NITROGEN', 'HOME BUILD', 'JEOL', 'JEOL CRYOSPECPORTER', 'JEOL 3200FSC CRYOHOLDER', 'PHILIPS ROTATION HOLDER', 'SIDE ENTRY, EUCENTRIC', 'FISCHIONE INSTRUMENTS DUAL AXIS TOMOGRAPHY HOLDER', 'OTHER' );
 CREATE TABLE em_imaging (
-	accelerating_voltage INTEGER CHECK ( accelerating_voltage > 0 ) ,
+	accelerating_voltage INTEGER CHECK ( accelerating_voltage >= 0 AND accelerating_voltage <= 400 ) ,
 	alignment_procedure ENUM_em_imaging_alignment_procedure ,
 	astigmatism TEXT ,
 	c2_aperture_diameter DECIMAL CHECK ( c2_aperture_diameter >= 1 AND c2_aperture_diameter <= 150 ) ,
@@ -3289,7 +3294,11 @@ CREATE TABLE pdbx_dcc_density (
 	"iso_B_value_type" TEXT ,
 	ls_d_res_high DECIMAL ,
 	ls_d_res_high_sf DECIMAL ,
+	ls_d_res_low DECIMAL ,
 	ls_d_res_low_sf DECIMAL ,
+	"ls_number_reflns_R_free" INTEGER CHECK ( "ls_number_reflns_R_free" >= 0 ) ,
+	"ls_percent_reflns_R_free" DECIMAL ,
+	ls_percent_reflns_obs DECIMAL ,
 	"mFo-DFc-3sigma_negative" INTEGER ,
 	"mFo-DFc-3sigma_positive" INTEGER ,
 	"mFo-DFc-6sigma_negative" INTEGER ,
@@ -3309,6 +3318,7 @@ CREATE TABLE pdbx_dcc_density (
 	"real_space_R_overall" DECIMAL ,
 	reflection_status_archived TEXT ,
 	reflection_status_used TEXT ,
+	reflns_number_obs INTEGER CHECK ( reflns_number_obs >= 0 ) ,
 	reflns_outlier_acentric INTEGER CHECK ( reflns_outlier_acentric >= 0 ) ,
 	reflns_outlier_centric INTEGER CHECK ( reflns_outlier_centric >= 0 ) ,
 	reflns_twin TEXT ,
@@ -3351,6 +3361,7 @@ CREATE TABLE pdbx_dcc_density_corr (
 	ls_d_res_low DECIMAL ,
 	"ls_number_reflns_R_free" INTEGER ,
 	ls_number_reflns_obs INTEGER ,
+	"ls_percent_reflns_R_free" DECIMAL ,
 	ls_percent_reflns_obs DECIMAL ,
 	program TEXT ,
 	"real_space_R" DECIMAL ,
@@ -3371,6 +3382,8 @@ CREATE TABLE pdbx_dcc_entity_geometry (
 	auth_asym_id TEXT ,
 	bond_overall_rmsz DECIMAL ,
 	entity_id TEXT ,
+	number_angles INTEGER CHECK ( number_angles >= 0 ) ,
+	number_bonds INTEGER CHECK ( number_bonds >= 0 ) ,
 -- ATTRIBUTE
 	"PDB_model_num" INTEGER NOT NULL ,
 -- ATTRIBUTE
@@ -3411,6 +3424,8 @@ CREATE TABLE pdbx_dcc_geometry (
 	dihedral_overall_max DECIMAL ,
 	dihedral_overall_rms DECIMAL ,
 	"non-bonded_rms" DECIMAL ,
+	number_angles INTEGER CHECK ( number_angles >= 0 ) ,
+	number_bonds INTEGER CHECK ( number_bonds >= 0 ) ,
 	overall_score DECIMAL ,
 	planarity_overall_max DECIMAL ,
 	planarity_overall_rms DECIMAL ,
@@ -3538,6 +3553,8 @@ CREATE TABLE pdbx_dcc_mon_geometry (
 	auth_seq_id TEXT ,
 	bond_overall_rmsz DECIMAL ,
 	label_alt_id TEXT ,
+	number_angles INTEGER CHECK ( number_angles >= 0 ) ,
+	number_bonds INTEGER CHECK ( number_bonds >= 0 ) ,
 -- ATTRIBUTE
 	id INTEGER NOT NULL
 );
@@ -6766,6 +6783,8 @@ CREATE TABLE pdbx_validate_rmsd_angle (
 	"PDB_ins_code_2" TEXT ,
 	"PDB_ins_code_3" TEXT ,
 	"PDB_model_num" INTEGER ,
+	"Zscore" DECIMAL ,
+	angle_minimum_diff_to_kb DECIMAL CHECK ( angle_minimum_diff_to_kb >= 0 ) ,
 	angle_standard_deviation DECIMAL CHECK ( angle_standard_deviation >= 0 ) ,
 	auth_asym_id_1 TEXT ,
 	auth_asym_id_2 TEXT ,
@@ -6783,6 +6802,7 @@ CREATE TABLE pdbx_validate_rmsd_angle (
 	label_alt_id_2 TEXT ,
 	label_alt_id_3 TEXT ,
 	linker_flag TEXT ,
+	number_angles_in_kb INTEGER CHECK ( number_angles_in_kb >= 0 ) ,
 -- ATTRIBUTE
 	id INTEGER NOT NULL
 );
@@ -6815,6 +6835,7 @@ CREATE TABLE pdbx_validate_rmsd_bond (
 	"PDB_ins_code_1" TEXT ,
 	"PDB_ins_code_2" TEXT ,
 	"PDB_model_num" INTEGER ,
+	"Zscore" DECIMAL ,
 	auth_asym_id_1 TEXT ,
 	auth_asym_id_2 TEXT ,
 	auth_atom_id_1 TEXT ,
@@ -6823,12 +6844,14 @@ CREATE TABLE pdbx_validate_rmsd_bond (
 	auth_comp_id_2 TEXT ,
 	auth_seq_id_1 TEXT ,
 	auth_seq_id_2 TEXT ,
+	bond_minimum_diff_to_kb DECIMAL CHECK ( bond_minimum_diff_to_kb >= 0 ) ,
 	bond_standard_deviation DECIMAL CHECK ( bond_standard_deviation >= 0 ) ,
 	bond_target_value DECIMAL CHECK ( bond_target_value >= 0 ) ,
 	bond_value DECIMAL CHECK ( bond_value >= 0 ) ,
 	label_alt_id_1 TEXT ,
 	label_alt_id_2 TEXT ,
 	linker_flag TEXT ,
+	number_bonds_in_kb INTEGER CHECK ( number_bonds_in_kb >= 0 ) ,
 -- ATTRIBUTE
 	id INTEGER NOT NULL
 );
@@ -7702,7 +7725,7 @@ CREATE TABLE pdbx_solvent_vdw_probe_radii (
 
 --
 -- (quoted from refineType)
--- Data items in the REFINE category record details about the structure-refinement parameters. Example 1 - based on PDB entry 5HVP and laboratory records for the structure corresponding to PDB entry 5HVP. <PDBxv:refineCategory> <PDBxv:refine entry_id="5HVP" pdbx_refine_id="X-ray"> <PDBxv:ls_R_factor_obs>0.176</PDBxv:ls_R_factor_obs> <PDBxv:ls_number_parameters>7032</PDBxv:ls_number_parameters> <PDBxv:ls_number_reflns_obs>12901</PDBxv:ls_number_reflns_obs> <PDBxv:ls_number_restraints>6609</PDBxv:ls_number_restraints> <PDBxv:ls_weighting_details> Sigdel model of Konnert-Hendrickson: Sigdel: Afsig + Bfsig*(sin(theta)/lambda-1/6) Afsig = 22.0, Bfsig = -150.0 at beginning of refinement Afsig = 15.5, Bfsig = -50.0 at end of refinement</PDBxv:ls_weighting_details> <PDBxv:ls_weighting_scheme>calc</PDBxv:ls_weighting_scheme> </PDBxv:refine> </PDBxv:refineCategory> Example 2 - based on data set TOZ of Willis, Beckwith & Tozer [Acta Cryst. (1991), C47, 2276-2277]. <PDBxv:refineCategory> <PDBxv:refine entry_id="TOZ" pdbx_refine_id="X-ray"> <PDBxv:details>sfls:_F_calc_weight_full_matrix</PDBxv:details> <PDBxv:diff_density_max>.131</PDBxv:diff_density_max> <PDBxv:diff_density_min>-.108</PDBxv:diff_density_min> <PDBxv:ls_R_factor_all>.038</PDBxv:ls_R_factor_all> <PDBxv:ls_R_factor_obs>.034</PDBxv:ls_R_factor_obs> <PDBxv:ls_abs_structure_Flack>0</PDBxv:ls_abs_structure_Flack> <PDBxv:ls_abs_structure_details> The absolute configuration was assigned to agree with the known chirality at C3 arising from its precursor l-leucine.</PDBxv:ls_abs_structure_details> <PDBxv:ls_extinction_coef>3514</PDBxv:ls_extinction_coef> <PDBxv:ls_extinction_expression> Larson, A. C. (1970). &quot;Crystallographic Computing&quot;, edited by F. R. Ahmed. Eq. (22) p. 292. Copenhagen: Munksgaard.</PDBxv:ls_extinction_expression> <PDBxv:ls_extinction_method>Zachariasen</PDBxv:ls_extinction_method> <PDBxv:ls_goodness_of_fit_all>1.462</PDBxv:ls_goodness_of_fit_all> <PDBxv:ls_goodness_of_fit_obs>1.515</PDBxv:ls_goodness_of_fit_obs> <PDBxv:ls_hydrogen_treatment>refxyz except H332B noref</PDBxv:ls_hydrogen_treatment> <PDBxv:ls_matrix_type>full</PDBxv:ls_matrix_type> <PDBxv:ls_number_constraints>0</PDBxv:ls_number_constraints> <PDBxv:ls_number_parameters>272</PDBxv:ls_number_parameters> <PDBxv:ls_number_reflns_obs>1408</PDBxv:ls_number_reflns_obs> <PDBxv:ls_number_restraints>0</PDBxv:ls_number_restraints> <PDBxv:ls_shift_over_esd_max>.535</PDBxv:ls_shift_over_esd_max> <PDBxv:ls_shift_over_esd_mean>.044</PDBxv:ls_shift_over_esd_mean> <PDBxv:ls_structure_factor_coef>F</PDBxv:ls_structure_factor_coef> <PDBxv:ls_wR_factor_all>.044</PDBxv:ls_wR_factor_all> <PDBxv:ls_wR_factor_obs>.042</PDBxv:ls_wR_factor_obs> <PDBxv:ls_weighting_details>w=1/(\s^2^(F)+0.0004F^2^)</PDBxv:ls_weighting_details> <PDBxv:ls_weighting_scheme>calc</PDBxv:ls_weighting_scheme> </PDBxv:refine> </PDBxv:refineCategory>
+-- Data items in the REFINE category record details about the structure-refinement parameters. Example 1 - based on PDB entry 5HVP and laboratory records for the structure corresponding to PDB entry 5HVP. <PDBxv:refineCategory> <PDBxv:refine entry_id="5HVP" pdbx_refine_id="X-RAY DIFFRACTION"> <PDBxv:ls_R_factor_obs>0.176</PDBxv:ls_R_factor_obs> <PDBxv:ls_number_parameters>7032</PDBxv:ls_number_parameters> <PDBxv:ls_number_reflns_obs>12901</PDBxv:ls_number_reflns_obs> <PDBxv:ls_number_restraints>6609</PDBxv:ls_number_restraints> <PDBxv:ls_weighting_details> Sigdel model of Konnert-Hendrickson: Sigdel: Afsig + Bfsig*(sin(theta)/lambda-1/6) Afsig = 22.0, Bfsig = -150.0 at beginning of refinement Afsig = 15.5, Bfsig = -50.0 at end of refinement</PDBxv:ls_weighting_details> <PDBxv:ls_weighting_scheme>calc</PDBxv:ls_weighting_scheme> </PDBxv:refine> </PDBxv:refineCategory> Example 2 - based on data set TOZ of Willis, Beckwith & Tozer [Acta Cryst. (1991), C47, 2276-2277]. <PDBxv:refineCategory> <PDBxv:refine entry_id="TOZ" pdbx_refine_id="X-RAY DIFFRACTION"> <PDBxv:details>sfls:_F_calc_weight_full_matrix</PDBxv:details> <PDBxv:diff_density_max>.131</PDBxv:diff_density_max> <PDBxv:diff_density_min>-.108</PDBxv:diff_density_min> <PDBxv:ls_R_factor_all>.038</PDBxv:ls_R_factor_all> <PDBxv:ls_R_factor_obs>.034</PDBxv:ls_R_factor_obs> <PDBxv:ls_abs_structure_Flack>0</PDBxv:ls_abs_structure_Flack> <PDBxv:ls_abs_structure_details> The absolute configuration was assigned to agree with the known chirality at C3 arising from its precursor l-leucine.</PDBxv:ls_abs_structure_details> <PDBxv:ls_extinction_coef>3514</PDBxv:ls_extinction_coef> <PDBxv:ls_extinction_expression> Larson, A. C. (1970). &quot;Crystallographic Computing&quot;, edited by F. R. Ahmed. Eq. (22) p. 292. Copenhagen: Munksgaard.</PDBxv:ls_extinction_expression> <PDBxv:ls_extinction_method>Zachariasen</PDBxv:ls_extinction_method> <PDBxv:ls_goodness_of_fit_all>1.462</PDBxv:ls_goodness_of_fit_all> <PDBxv:ls_goodness_of_fit_obs>1.515</PDBxv:ls_goodness_of_fit_obs> <PDBxv:ls_hydrogen_treatment>refxyz except H332B noref</PDBxv:ls_hydrogen_treatment> <PDBxv:ls_matrix_type>full</PDBxv:ls_matrix_type> <PDBxv:ls_number_constraints>0</PDBxv:ls_number_constraints> <PDBxv:ls_number_parameters>272</PDBxv:ls_number_parameters> <PDBxv:ls_number_reflns_obs>1408</PDBxv:ls_number_reflns_obs> <PDBxv:ls_number_restraints>0</PDBxv:ls_number_restraints> <PDBxv:ls_shift_over_esd_max>.535</PDBxv:ls_shift_over_esd_max> <PDBxv:ls_shift_over_esd_mean>.044</PDBxv:ls_shift_over_esd_mean> <PDBxv:ls_structure_factor_coef>F</PDBxv:ls_structure_factor_coef> <PDBxv:ls_wR_factor_all>.044</PDBxv:ls_wR_factor_all> <PDBxv:ls_wR_factor_obs>.042</PDBxv:ls_wR_factor_obs> <PDBxv:ls_weighting_details>w=1/(\s^2^(F)+0.0004F^2^)</PDBxv:ls_weighting_details> <PDBxv:ls_weighting_scheme>calc</PDBxv:ls_weighting_scheme> </PDBxv:refine> </PDBxv:refineCategory>
 -- URI-reference = http://pdbml.pdb.org/dictionaries/mmcif_pdbx_v50.dic/Categories/refine.html
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), schema location: schema/pdbx-validation-v1.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
@@ -7828,7 +7851,7 @@ CREATE TABLE refine (
 
 --
 -- (quoted from refine_B_isoType)
--- Data items in the REFINE_B_ISO category record details about the treatment of isotropic B factors (displacement parameters) during refinement. Example 1 - based on PDB entry 5HVP and laboratory records for the structure corresponding to PDB entry 5HVP. <PDBxv:refine_B_isoCategory> <PDBxv:refine_B_iso class="protein" pdbx_refine_id="X-ray"> <PDBxv:treatment>isotropic</PDBxv:treatment> </PDBxv:refine_B_iso> <PDBxv:refine_B_iso class="solvent" pdbx_refine_id="X-ray"> <PDBxv:treatment>isotropic</PDBxv:treatment> </PDBxv:refine_B_iso> <PDBxv:refine_B_iso class="inhibitor" pdbx_refine_id="X-ray"> <PDBxv:treatment>isotropic</PDBxv:treatment> </PDBxv:refine_B_iso> </PDBxv:refine_B_isoCategory>
+-- Data items in the REFINE_B_ISO category record details about the treatment of isotropic B factors (displacement parameters) during refinement. Example 1 - based on PDB entry 5HVP and laboratory records for the structure corresponding to PDB entry 5HVP. <PDBxv:refine_B_isoCategory> <PDBxv:refine_B_iso class="protein" pdbx_refine_id="X-RAY DIFFRACTION"> <PDBxv:treatment>isotropic</PDBxv:treatment> </PDBxv:refine_B_iso> <PDBxv:refine_B_iso class="solvent" pdbx_refine_id="X-RAY DIFFRACTION"> <PDBxv:treatment>isotropic</PDBxv:treatment> </PDBxv:refine_B_iso> <PDBxv:refine_B_iso class="inhibitor" pdbx_refine_id="X-RAY DIFFRACTION"> <PDBxv:treatment>isotropic</PDBxv:treatment> </PDBxv:refine_B_iso> </PDBxv:refine_B_isoCategory>
 -- URI-reference = http://pdbml.pdb.org/dictionaries/mmcif_pdbx_v50.dic/Categories/refine_B_iso.html
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), schema location: schema/pdbx-validation-v1.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
@@ -7938,7 +7961,7 @@ CREATE TABLE "Luzzati_sigma_a_obs" (
 
 --
 -- (quoted from refine_analyzeType)
--- Data items in the REFINE_ANALYZE category record details about the refined structure that are often used to analyze the refinement and assess its quality. A given computer program may or may not produce values corresponding to these data names. Example 1 - based on PDB entry 5HVP and laboratory records for the structure corresponding to PDB entry 5HVP. <PDBxv:refine_analyzeCategory> <PDBxv:refine_analyze entry_id="5HVP" pdbx_refine_id="X-ray"> <PDBxv:Luzzati_coordinate_error_obs>0.056</PDBxv:Luzzati_coordinate_error_obs> <PDBxv:Luzzati_d_res_low_obs>2.51</PDBxv:Luzzati_d_res_low_obs> </PDBxv:refine_analyze> </PDBxv:refine_analyzeCategory>
+-- Data items in the REFINE_ANALYZE category record details about the refined structure that are often used to analyze the refinement and assess its quality. A given computer program may or may not produce values corresponding to these data names. Example 1 - based on PDB entry 5HVP and laboratory records for the structure corresponding to PDB entry 5HVP. <PDBxv:refine_analyzeCategory> <PDBxv:refine_analyze entry_id="5HVP" pdbx_refine_id="X-RAY DIFFRACTION"> <PDBxv:Luzzati_coordinate_error_obs>0.056</PDBxv:Luzzati_coordinate_error_obs> <PDBxv:Luzzati_d_res_low_obs>2.51</PDBxv:Luzzati_d_res_low_obs> </PDBxv:refine_analyze> </PDBxv:refine_analyzeCategory>
 -- URI-reference = http://pdbml.pdb.org/dictionaries/mmcif_pdbx_v50.dic/Categories/refine_analyze.html
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), schema location: schema/pdbx-validation-v1.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
@@ -7963,7 +7986,7 @@ CREATE TABLE refine_analyze (
 
 --
 -- (quoted from refine_funct_minimizedType)
--- Data items in the REFINE_FUNCT_MINIMIZED category record details about the individual terms of the function minimized during refinement. Example 1 - based on RESTRAIN refinement for the CCP4 test data set toxd. <PDBxv:refine_funct_minimizedCategory> <PDBxv:refine_funct_minimized pdbx_refine_id="X-ray" type="sum(W*Delta(Amplitude)^2"> <PDBxv:number_terms>3009</PDBxv:number_terms> <PDBxv:residual>1621.3</PDBxv:residual> </PDBxv:refine_funct_minimized> <PDBxv:refine_funct_minimized pdbx_refine_id="X-ray" type="sum(W*Delta(Plane+Rigid)^2"> <PDBxv:number_terms>85</PDBxv:number_terms> <PDBxv:residual>56.68</PDBxv:residual> </PDBxv:refine_funct_minimized> <PDBxv:refine_funct_minimized pdbx_refine_id="X-ray" type="sum(W*Delta(Distance)^2"> <PDBxv:number_terms>1219</PDBxv:number_terms> <PDBxv:residual>163.59</PDBxv:residual> </PDBxv:refine_funct_minimized> <PDBxv:refine_funct_minimized pdbx_refine_id="X-ray" type="sum(W*Delta(U-tempfactors)^2"> <PDBxv:number_terms>1192</PDBxv:number_terms> <PDBxv:residual>69.338</PDBxv:residual> </PDBxv:refine_funct_minimized> </PDBxv:refine_funct_minimizedCategory>
+-- Data items in the REFINE_FUNCT_MINIMIZED category record details about the individual terms of the function minimized during refinement. Example 1 - based on RESTRAIN refinement for the CCP4 test data set toxd. <PDBxv:refine_funct_minimizedCategory> <PDBxv:refine_funct_minimized pdbx_refine_id="X-RAY DIFFRACTION" type="sum(W*Delta(Amplitude)^2"> <PDBxv:number_terms>3009</PDBxv:number_terms> <PDBxv:residual>1621.3</PDBxv:residual> </PDBxv:refine_funct_minimized> <PDBxv:refine_funct_minimized pdbx_refine_id="X-RAY DIFFRACTION" type="sum(W*Delta(Plane+Rigid)^2"> <PDBxv:number_terms>85</PDBxv:number_terms> <PDBxv:residual>56.68</PDBxv:residual> </PDBxv:refine_funct_minimized> <PDBxv:refine_funct_minimized pdbx_refine_id="X-RAY DIFFRACTION" type="sum(W*Delta(Distance)^2"> <PDBxv:number_terms>1219</PDBxv:number_terms> <PDBxv:residual>163.59</PDBxv:residual> </PDBxv:refine_funct_minimized> <PDBxv:refine_funct_minimized pdbx_refine_id="X-RAY DIFFRACTION" type="sum(W*Delta(U-tempfactors)^2"> <PDBxv:number_terms>1192</PDBxv:number_terms> <PDBxv:residual>69.338</PDBxv:residual> </PDBxv:refine_funct_minimized> </PDBxv:refine_funct_minimizedCategory>
 -- URI-reference = http://pdbml.pdb.org/dictionaries/mmcif_pdbx_v50.dic/Categories/refine_funct_minimized.html
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), schema location: schema/pdbx-validation-v1.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
@@ -7982,7 +8005,7 @@ CREATE TABLE refine_funct_minimized (
 
 --
 -- (quoted from refine_histType)
--- Data items in the REFINE_HIST category record details about the steps during the refinement of the structure. These data items are not meant to be as thorough a description of the refinement as is provided for the final model in other categories; rather, these data items provide a mechanism for sketching out the progress of the refinement, supported by a small set of representative statistics. Example 1 - based on laboratory records for the collagen-like peptide [(POG)4 EKG (POG)5]3. <PDBxv:refine_histCategory> <PDBxv:refine_hist cycle_id="C134" pdbx_refine_id="X-ray"> <PDBxv:R_factor_R_free>.274</PDBxv:R_factor_R_free> <PDBxv:R_factor_R_work>.160</PDBxv:R_factor_R_work> <PDBxv:R_factor_all>.265</PDBxv:R_factor_all> <PDBxv:R_factor_obs>.195</PDBxv:R_factor_obs> <PDBxv:d_res_high>1.85</PDBxv:d_res_high> <PDBxv:d_res_low>20.0</PDBxv:d_res_low> <PDBxv:details> Add majority of solvent molecules. B factors refined by group. Continued to remove misplaced water molecules.</PDBxv:details> <PDBxv:number_atoms_solvent>217</PDBxv:number_atoms_solvent> <PDBxv:number_atoms_total>808</PDBxv:number_atoms_total> <PDBxv:number_reflns_R_free>476</PDBxv:number_reflns_R_free> <PDBxv:number_reflns_R_work>4410</PDBxv:number_reflns_R_work> <PDBxv:number_reflns_all>6174</PDBxv:number_reflns_all> <PDBxv:number_reflns_obs>4886</PDBxv:number_reflns_obs> </PDBxv:refine_hist> </PDBxv:refine_histCategory>
+-- Data items in the REFINE_HIST category record details about the steps during the refinement of the structure. These data items are not meant to be as thorough a description of the refinement as is provided for the final model in other categories; rather, these data items provide a mechanism for sketching out the progress of the refinement, supported by a small set of representative statistics. Example 1 - based on laboratory records for the collagen-like peptide [(POG)4 EKG (POG)5]3. <PDBxv:refine_histCategory> <PDBxv:refine_hist cycle_id="C134" pdbx_refine_id="X-RAY DIFFRACTION"> <PDBxv:R_factor_R_free>.274</PDBxv:R_factor_R_free> <PDBxv:R_factor_R_work>.160</PDBxv:R_factor_R_work> <PDBxv:R_factor_all>.265</PDBxv:R_factor_all> <PDBxv:R_factor_obs>.195</PDBxv:R_factor_obs> <PDBxv:d_res_high>1.85</PDBxv:d_res_high> <PDBxv:d_res_low>20.0</PDBxv:d_res_low> <PDBxv:details> Add majority of solvent molecules. B factors refined by group. Continued to remove misplaced water molecules.</PDBxv:details> <PDBxv:number_atoms_solvent>217</PDBxv:number_atoms_solvent> <PDBxv:number_atoms_total>808</PDBxv:number_atoms_total> <PDBxv:number_reflns_R_free>476</PDBxv:number_reflns_R_free> <PDBxv:number_reflns_R_work>4410</PDBxv:number_reflns_R_work> <PDBxv:number_reflns_all>6174</PDBxv:number_reflns_all> <PDBxv:number_reflns_obs>4886</PDBxv:number_reflns_obs> </PDBxv:refine_hist> </PDBxv:refine_histCategory>
 -- URI-reference = http://pdbml.pdb.org/dictionaries/mmcif_pdbx_v50.dic/Categories/refine_hist.html
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), schema location: schema/pdbx-validation-v1.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
@@ -8041,7 +8064,7 @@ CREATE TABLE refine_ls_class (
 
 --
 -- (quoted from refine_ls_restrType)
--- Data items in the REFINE_LS_RESTR category record details about the restraints applied to various classes of parameters during the least-squares refinement. Example 1 - based on PDB entry 5HVP and laboratory records for the structure corresponding to PDB entry 5HVP. <PDBxv:refine_ls_restrCategory> <PDBxv:refine_ls_restr pdbx_refine_id="X-ray" type="bond_d"> <PDBxv:criterion>&gt; 2\s</PDBxv:criterion> <PDBxv:dev_ideal>0.018</PDBxv:dev_ideal> <PDBxv:dev_ideal_target>0.020</PDBxv:dev_ideal_target> <PDBxv:number>1654</PDBxv:number> <PDBxv:rejects>22</PDBxv:rejects> </PDBxv:refine_ls_restr> <PDBxv:refine_ls_restr pdbx_refine_id="X-ray" type="angle_d"> <PDBxv:criterion>&gt; 2\s</PDBxv:criterion> <PDBxv:dev_ideal>0.038</PDBxv:dev_ideal> <PDBxv:dev_ideal_target>0.030</PDBxv:dev_ideal_target> <PDBxv:number>2246</PDBxv:number> <PDBxv:rejects>139</PDBxv:rejects> </PDBxv:refine_ls_restr> <PDBxv:refine_ls_restr pdbx_refine_id="X-ray" type="planar_d"> <PDBxv:criterion>&gt; 2\s</PDBxv:criterion> <PDBxv:dev_ideal>0.043</PDBxv:dev_ideal> <PDBxv:dev_ideal_target>0.040</PDBxv:dev_ideal_target> <PDBxv:number>498</PDBxv:number> <PDBxv:rejects>21</PDBxv:rejects> </PDBxv:refine_ls_restr> <PDBxv:refine_ls_restr pdbx_refine_id="X-ray" type="planar"> <PDBxv:criterion>&gt; 2\s</PDBxv:criterion> <PDBxv:dev_ideal>0.015</PDBxv:dev_ideal> <PDBxv:dev_ideal_target>0.020</PDBxv:dev_ideal_target> <PDBxv:number>270</PDBxv:number> <PDBxv:rejects>1</PDBxv:rejects> </PDBxv:refine_ls_restr> <PDBxv:refine_ls_restr pdbx_refine_id="X-ray" type="chiral"> <PDBxv:criterion>&gt; 2\s</PDBxv:criterion> <PDBxv:dev_ideal>0.177</PDBxv:dev_ideal> <PDBxv:dev_ideal_target>0.150</PDBxv:dev_ideal_target> <PDBxv:number>278</PDBxv:number> <PDBxv:rejects>2</PDBxv:rejects> </PDBxv:refine_ls_restr> <PDBxv:refine_ls_restr pdbx_refine_id="X-ray" type="singtor_nbd"> <PDBxv:criterion>&gt; 2\s</PDBxv:criterion> <PDBxv:dev_ideal>0.216</PDBxv:dev_ideal> <PDBxv:dev_ideal_target>0.500</PDBxv:dev_ideal_target> <PDBxv:number>582</PDBxv:number> <PDBxv:rejects>0</PDBxv:rejects> </PDBxv:refine_ls_restr> <PDBxv:refine_ls_restr pdbx_refine_id="X-ray" type="multtor_nbd"> <PDBxv:criterion>&gt; 2\s</PDBxv:criterion> <PDBxv:dev_ideal>0.207</PDBxv:dev_ideal> <PDBxv:dev_ideal_target>0.500</PDBxv:dev_ideal_target> <PDBxv:number>419</PDBxv:number> <PDBxv:rejects>0</PDBxv:rejects> </PDBxv:refine_ls_restr> <PDBxv:refine_ls_restr pdbx_refine_id="X-ray" type="xyhbond_nbd"> <PDBxv:criterion>&gt; 2\s</PDBxv:criterion> <PDBxv:dev_ideal>0.245</PDBxv:dev_ideal> <PDBxv:dev_ideal_target>0.500</PDBxv:dev_ideal_target> <PDBxv:number>149</PDBxv:number> <PDBxv:rejects>0</PDBxv:rejects> </PDBxv:refine_ls_restr> <PDBxv:refine_ls_restr pdbx_refine_id="X-ray" type="planar_tor"> <PDBxv:criterion>&gt; 2\s</PDBxv:criterion> <PDBxv:dev_ideal>2.6</PDBxv:dev_ideal> <PDBxv:dev_ideal_target>3.0</PDBxv:dev_ideal_target> <PDBxv:number>203</PDBxv:number> <PDBxv:rejects>9</PDBxv:rejects> </PDBxv:refine_ls_restr> <PDBxv:refine_ls_restr pdbx_refine_id="X-ray" type="staggered_tor"> <PDBxv:criterion>&gt; 2\s</PDBxv:criterion> <PDBxv:dev_ideal>17.4</PDBxv:dev_ideal> <PDBxv:dev_ideal_target>15.0</PDBxv:dev_ideal_target> <PDBxv:number>298</PDBxv:number> <PDBxv:rejects>31</PDBxv:rejects> </PDBxv:refine_ls_restr> <PDBxv:refine_ls_restr pdbx_refine_id="X-ray" type="orthonormal_tor"> <PDBxv:criterion>&gt; 2\s</PDBxv:criterion> <PDBxv:dev_ideal>18.1</PDBxv:dev_ideal> <PDBxv:dev_ideal_target>20.0</PDBxv:dev_ideal_target> <PDBxv:number>12</PDBxv:number> <PDBxv:rejects>1</PDBxv:rejects> </PDBxv:refine_ls_restr> </PDBxv:refine_ls_restrCategory>
+-- Data items in the REFINE_LS_RESTR category record details about the restraints applied to various classes of parameters during the least-squares refinement. Example 1 - based on PDB entry 5HVP and laboratory records for the structure corresponding to PDB entry 5HVP. <PDBxv:refine_ls_restrCategory> <PDBxv:refine_ls_restr pdbx_refine_id="X-RAY DIFFRACTION" type="bond_d"> <PDBxv:criterion>&gt; 2\s</PDBxv:criterion> <PDBxv:dev_ideal>0.018</PDBxv:dev_ideal> <PDBxv:dev_ideal_target>0.020</PDBxv:dev_ideal_target> <PDBxv:number>1654</PDBxv:number> <PDBxv:rejects>22</PDBxv:rejects> </PDBxv:refine_ls_restr> <PDBxv:refine_ls_restr pdbx_refine_id="X-RAY DIFFRACTION" type="angle_d"> <PDBxv:criterion>&gt; 2\s</PDBxv:criterion> <PDBxv:dev_ideal>0.038</PDBxv:dev_ideal> <PDBxv:dev_ideal_target>0.030</PDBxv:dev_ideal_target> <PDBxv:number>2246</PDBxv:number> <PDBxv:rejects>139</PDBxv:rejects> </PDBxv:refine_ls_restr> <PDBxv:refine_ls_restr pdbx_refine_id="X-RAY DIFFRACTION" type="planar_d"> <PDBxv:criterion>&gt; 2\s</PDBxv:criterion> <PDBxv:dev_ideal>0.043</PDBxv:dev_ideal> <PDBxv:dev_ideal_target>0.040</PDBxv:dev_ideal_target> <PDBxv:number>498</PDBxv:number> <PDBxv:rejects>21</PDBxv:rejects> </PDBxv:refine_ls_restr> <PDBxv:refine_ls_restr pdbx_refine_id="X-RAY DIFFRACTION" type="planar"> <PDBxv:criterion>&gt; 2\s</PDBxv:criterion> <PDBxv:dev_ideal>0.015</PDBxv:dev_ideal> <PDBxv:dev_ideal_target>0.020</PDBxv:dev_ideal_target> <PDBxv:number>270</PDBxv:number> <PDBxv:rejects>1</PDBxv:rejects> </PDBxv:refine_ls_restr> <PDBxv:refine_ls_restr pdbx_refine_id="X-RAY DIFFRACTION" type="chiral"> <PDBxv:criterion>&gt; 2\s</PDBxv:criterion> <PDBxv:dev_ideal>0.177</PDBxv:dev_ideal> <PDBxv:dev_ideal_target>0.150</PDBxv:dev_ideal_target> <PDBxv:number>278</PDBxv:number> <PDBxv:rejects>2</PDBxv:rejects> </PDBxv:refine_ls_restr> <PDBxv:refine_ls_restr pdbx_refine_id="X-RAY DIFFRACTION" type="singtor_nbd"> <PDBxv:criterion>&gt; 2\s</PDBxv:criterion> <PDBxv:dev_ideal>0.216</PDBxv:dev_ideal> <PDBxv:dev_ideal_target>0.500</PDBxv:dev_ideal_target> <PDBxv:number>582</PDBxv:number> <PDBxv:rejects>0</PDBxv:rejects> </PDBxv:refine_ls_restr> <PDBxv:refine_ls_restr pdbx_refine_id="X-RAY DIFFRACTION" type="multtor_nbd"> <PDBxv:criterion>&gt; 2\s</PDBxv:criterion> <PDBxv:dev_ideal>0.207</PDBxv:dev_ideal> <PDBxv:dev_ideal_target>0.500</PDBxv:dev_ideal_target> <PDBxv:number>419</PDBxv:number> <PDBxv:rejects>0</PDBxv:rejects> </PDBxv:refine_ls_restr> <PDBxv:refine_ls_restr pdbx_refine_id="X-RAY DIFFRACTION" type="xyhbond_nbd"> <PDBxv:criterion>&gt; 2\s</PDBxv:criterion> <PDBxv:dev_ideal>0.245</PDBxv:dev_ideal> <PDBxv:dev_ideal_target>0.500</PDBxv:dev_ideal_target> <PDBxv:number>149</PDBxv:number> <PDBxv:rejects>0</PDBxv:rejects> </PDBxv:refine_ls_restr> <PDBxv:refine_ls_restr pdbx_refine_id="X-RAY DIFFRACTION" type="planar_tor"> <PDBxv:criterion>&gt; 2\s</PDBxv:criterion> <PDBxv:dev_ideal>2.6</PDBxv:dev_ideal> <PDBxv:dev_ideal_target>3.0</PDBxv:dev_ideal_target> <PDBxv:number>203</PDBxv:number> <PDBxv:rejects>9</PDBxv:rejects> </PDBxv:refine_ls_restr> <PDBxv:refine_ls_restr pdbx_refine_id="X-RAY DIFFRACTION" type="staggered_tor"> <PDBxv:criterion>&gt; 2\s</PDBxv:criterion> <PDBxv:dev_ideal>17.4</PDBxv:dev_ideal> <PDBxv:dev_ideal_target>15.0</PDBxv:dev_ideal_target> <PDBxv:number>298</PDBxv:number> <PDBxv:rejects>31</PDBxv:rejects> </PDBxv:refine_ls_restr> <PDBxv:refine_ls_restr pdbx_refine_id="X-RAY DIFFRACTION" type="orthonormal_tor"> <PDBxv:criterion>&gt; 2\s</PDBxv:criterion> <PDBxv:dev_ideal>18.1</PDBxv:dev_ideal> <PDBxv:dev_ideal_target>20.0</PDBxv:dev_ideal_target> <PDBxv:number>12</PDBxv:number> <PDBxv:rejects>1</PDBxv:rejects> </PDBxv:refine_ls_restr> </PDBxv:refine_ls_restrCategory>
 -- URI-reference = http://pdbml.pdb.org/dictionaries/mmcif_pdbx_v50.dic/Categories/refine_ls_restr.html
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), schema location: schema/pdbx-validation-v1.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
@@ -8064,7 +8087,7 @@ CREATE TABLE refine_ls_restr (
 
 --
 -- (quoted from refine_ls_restr_ncsType)
--- Data items in the REFINE_LS_RESTR_NCS category record details about the restraints applied to atom positions in domains related by noncrystallographic symmetry during least-squares refinement, and also about the deviation of the restrained atomic parameters at the end of the refinement. It is expected that these values will only be reported once for each set of restrained domains. Example 1 - based on laboratory records for the collagen-like peptide, HYP-. <PDBxv:refine_ls_restr_ncsCategory> <PDBxv:refine_ls_restr_ncs pdbx_ordinal="1"> <PDBxv:dom_id>d2</PDBxv:dom_id> <PDBxv:ncs_model_details> NCS restraint for pseudo-twofold symmetry between domains d1 and d2. Position weight coefficient given in Kcal/(mol \&#37;A^2^) and isotropic B weight coefficient given in \&#37;A^2^.</PDBxv:ncs_model_details> <PDBxv:pdbx_asym_id>A</PDBxv:pdbx_asym_id> <PDBxv:pdbx_ens_id>1</PDBxv:pdbx_ens_id> <PDBxv:pdbx_refine_id>X-ray</PDBxv:pdbx_refine_id> <PDBxv:pdbx_type>medium positional</PDBxv:pdbx_type> <PDBxv:rms_dev_B_iso>0.16</PDBxv:rms_dev_B_iso> <PDBxv:rms_dev_position>0.09</PDBxv:rms_dev_position> <PDBxv:weight_B_iso>2.0</PDBxv:weight_B_iso> <PDBxv:weight_position>300.0</PDBxv:weight_position> </PDBxv:refine_ls_restr_ncs> </PDBxv:refine_ls_restr_ncsCategory>
+-- Data items in the REFINE_LS_RESTR_NCS category record details about the restraints applied to atom positions in domains related by noncrystallographic symmetry during least-squares refinement, and also about the deviation of the restrained atomic parameters at the end of the refinement. It is expected that these values will only be reported once for each set of restrained domains. Example 1 - based on laboratory records for the collagen-like peptide, HYP-. <PDBxv:refine_ls_restr_ncsCategory> <PDBxv:refine_ls_restr_ncs pdbx_ordinal="1"> <PDBxv:dom_id>d2</PDBxv:dom_id> <PDBxv:ncs_model_details> NCS restraint for pseudo-twofold symmetry between domains d1 and d2. Position weight coefficient given in Kcal/(mol \&#37;A^2^) and isotropic B weight coefficient given in \&#37;A^2^.</PDBxv:ncs_model_details> <PDBxv:pdbx_asym_id>A</PDBxv:pdbx_asym_id> <PDBxv:pdbx_ens_id>1</PDBxv:pdbx_ens_id> <PDBxv:pdbx_refine_id>X-RAY DIFFRACTION</PDBxv:pdbx_refine_id> <PDBxv:pdbx_type>medium positional</PDBxv:pdbx_type> <PDBxv:rms_dev_B_iso>0.16</PDBxv:rms_dev_B_iso> <PDBxv:rms_dev_position>0.09</PDBxv:rms_dev_position> <PDBxv:weight_B_iso>2.0</PDBxv:weight_B_iso> <PDBxv:weight_position>300.0</PDBxv:weight_position> </PDBxv:refine_ls_restr_ncs> </PDBxv:refine_ls_restr_ncsCategory>
 -- URI-reference = http://pdbml.pdb.org/dictionaries/mmcif_pdbx_v50.dic/Categories/refine_ls_restr_ncs.html
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), schema location: schema/pdbx-validation-v1.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
@@ -8108,7 +8131,7 @@ CREATE TABLE refine_ls_restr_type (
 
 --
 -- (quoted from refine_ls_shellType)
--- Data items in the REFINE_LS_SHELL category record details about the results of the least-squares refinement broken down into shells of resolution. Example 1 - based on PDB entry 5HVP and laboratory records for the structure corresponding to PDB entry 5HVP. <PDBxv:refine_ls_shellCategory> <PDBxv:refine_ls_shell d_res_high="4.51" pdbx_refine_id="X-ray"> <PDBxv:R_factor_obs>0.196</PDBxv:R_factor_obs> <PDBxv:d_res_low>8.00</PDBxv:d_res_low> <PDBxv:number_reflns_obs>1226</PDBxv:number_reflns_obs> </PDBxv:refine_ls_shell> <PDBxv:refine_ls_shell d_res_high="3.48" pdbx_refine_id="X-ray"> <PDBxv:R_factor_obs>0.146</PDBxv:R_factor_obs> <PDBxv:d_res_low>4.51</PDBxv:d_res_low> <PDBxv:number_reflns_obs>1679</PDBxv:number_reflns_obs> </PDBxv:refine_ls_shell> <PDBxv:refine_ls_shell d_res_high="2.94" pdbx_refine_id="X-ray"> <PDBxv:R_factor_obs>0.160</PDBxv:R_factor_obs> <PDBxv:d_res_low>3.48</PDBxv:d_res_low> <PDBxv:number_reflns_obs>2014</PDBxv:number_reflns_obs> </PDBxv:refine_ls_shell> <PDBxv:refine_ls_shell d_res_high="2.59" pdbx_refine_id="X-ray"> <PDBxv:R_factor_obs>0.182</PDBxv:R_factor_obs> <PDBxv:d_res_low>2.94</PDBxv:d_res_low> <PDBxv:number_reflns_obs>2147</PDBxv:number_reflns_obs> </PDBxv:refine_ls_shell> <PDBxv:refine_ls_shell d_res_high="2.34" pdbx_refine_id="X-ray"> <PDBxv:R_factor_obs>0.193</PDBxv:R_factor_obs> <PDBxv:d_res_low>2.59</PDBxv:d_res_low> <PDBxv:number_reflns_obs>2127</PDBxv:number_reflns_obs> </PDBxv:refine_ls_shell> <PDBxv:refine_ls_shell d_res_high="2.15" pdbx_refine_id="X-ray"> <PDBxv:R_factor_obs>0.203</PDBxv:R_factor_obs> <PDBxv:d_res_low>2.34</PDBxv:d_res_low> <PDBxv:number_reflns_obs>2061</PDBxv:number_reflns_obs> </PDBxv:refine_ls_shell> <PDBxv:refine_ls_shell d_res_high="2.00" pdbx_refine_id="X-ray"> <PDBxv:R_factor_obs>0.188</PDBxv:R_factor_obs> <PDBxv:d_res_low>2.15</PDBxv:d_res_low> <PDBxv:number_reflns_obs>1647</PDBxv:number_reflns_obs> </PDBxv:refine_ls_shell> </PDBxv:refine_ls_shellCategory>
+-- Data items in the REFINE_LS_SHELL category record details about the results of the least-squares refinement broken down into shells of resolution. Example 1 - based on PDB entry 5HVP and laboratory records for the structure corresponding to PDB entry 5HVP. <PDBxv:refine_ls_shellCategory> <PDBxv:refine_ls_shell d_res_high="4.51" pdbx_refine_id="X-RAY DIFFRACTION"> <PDBxv:R_factor_obs>0.196</PDBxv:R_factor_obs> <PDBxv:d_res_low>8.00</PDBxv:d_res_low> <PDBxv:number_reflns_obs>1226</PDBxv:number_reflns_obs> </PDBxv:refine_ls_shell> <PDBxv:refine_ls_shell d_res_high="3.48" pdbx_refine_id="X-RAY DIFFRACTION"> <PDBxv:R_factor_obs>0.146</PDBxv:R_factor_obs> <PDBxv:d_res_low>4.51</PDBxv:d_res_low> <PDBxv:number_reflns_obs>1679</PDBxv:number_reflns_obs> </PDBxv:refine_ls_shell> <PDBxv:refine_ls_shell d_res_high="2.94" pdbx_refine_id="X-RAY DIFFRACTION"> <PDBxv:R_factor_obs>0.160</PDBxv:R_factor_obs> <PDBxv:d_res_low>3.48</PDBxv:d_res_low> <PDBxv:number_reflns_obs>2014</PDBxv:number_reflns_obs> </PDBxv:refine_ls_shell> <PDBxv:refine_ls_shell d_res_high="2.59" pdbx_refine_id="X-RAY DIFFRACTION"> <PDBxv:R_factor_obs>0.182</PDBxv:R_factor_obs> <PDBxv:d_res_low>2.94</PDBxv:d_res_low> <PDBxv:number_reflns_obs>2147</PDBxv:number_reflns_obs> </PDBxv:refine_ls_shell> <PDBxv:refine_ls_shell d_res_high="2.34" pdbx_refine_id="X-RAY DIFFRACTION"> <PDBxv:R_factor_obs>0.193</PDBxv:R_factor_obs> <PDBxv:d_res_low>2.59</PDBxv:d_res_low> <PDBxv:number_reflns_obs>2127</PDBxv:number_reflns_obs> </PDBxv:refine_ls_shell> <PDBxv:refine_ls_shell d_res_high="2.15" pdbx_refine_id="X-RAY DIFFRACTION"> <PDBxv:R_factor_obs>0.203</PDBxv:R_factor_obs> <PDBxv:d_res_low>2.34</PDBxv:d_res_low> <PDBxv:number_reflns_obs>2061</PDBxv:number_reflns_obs> </PDBxv:refine_ls_shell> <PDBxv:refine_ls_shell d_res_high="2.00" pdbx_refine_id="X-RAY DIFFRACTION"> <PDBxv:R_factor_obs>0.188</PDBxv:R_factor_obs> <PDBxv:d_res_low>2.15</PDBxv:d_res_low> <PDBxv:number_reflns_obs>1647</PDBxv:number_reflns_obs> </PDBxv:refine_ls_shell> </PDBxv:refine_ls_shellCategory>
 -- URI-reference = http://pdbml.pdb.org/dictionaries/mmcif_pdbx_v50.dic/Categories/refine_ls_shell.html
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), schema location: schema/pdbx-validation-v1.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
@@ -8146,7 +8169,7 @@ CREATE TABLE refine_ls_shell (
 
 --
 -- (quoted from refine_occupancyType)
--- Data items in the REFINE_OCCUPANCY category record details about the treatment of atom occupancies during refinement. Example 1 - based on PDB entry 5HVP and laboratory records for the structure corresponding to PDB entry 5HVP. <PDBxv:refine_occupancyCategory> <PDBxv:refine_occupancy class="protein" pdbx_refine_id="X-ray"> <PDBxv:details xsi:nil="true" /> <PDBxv:treatment>fix</PDBxv:treatment> <PDBxv:value>1.00</PDBxv:value> </PDBxv:refine_occupancy> <PDBxv:refine_occupancy class="solvent" pdbx_refine_id="X-ray"> <PDBxv:details xsi:nil="true" /> <PDBxv:treatment>fix</PDBxv:treatment> <PDBxv:value>1.00</PDBxv:value> </PDBxv:refine_occupancy> <PDBxv:refine_occupancy class="inhibitor orientation 1" pdbx_refine_id="X-ray"> <PDBxv:details xsi:nil="true" /> <PDBxv:treatment>fix</PDBxv:treatment> <PDBxv:value>0.65</PDBxv:value> </PDBxv:refine_occupancy> <PDBxv:refine_occupancy class="inhibitor orientation 2" pdbx_refine_id="X-ray"> <PDBxv:details> The inhibitor binds to the enzyme in two alternative conformations. The occupancy of each conformation was adjusted so as to result in approximately equal mean thermal factors for the atoms in each conformation.</PDBxv:details> <PDBxv:treatment>fix</PDBxv:treatment> <PDBxv:value>0.35</PDBxv:value> </PDBxv:refine_occupancy> </PDBxv:refine_occupancyCategory>
+-- Data items in the REFINE_OCCUPANCY category record details about the treatment of atom occupancies during refinement. Example 1 - based on PDB entry 5HVP and laboratory records for the structure corresponding to PDB entry 5HVP. <PDBxv:refine_occupancyCategory> <PDBxv:refine_occupancy class="protein" pdbx_refine_id="X-RAY DIFFRACTION"> <PDBxv:details xsi:nil="true" /> <PDBxv:treatment>fix</PDBxv:treatment> <PDBxv:value>1.00</PDBxv:value> </PDBxv:refine_occupancy> <PDBxv:refine_occupancy class="solvent" pdbx_refine_id="X-RAY DIFFRACTION"> <PDBxv:details xsi:nil="true" /> <PDBxv:treatment>fix</PDBxv:treatment> <PDBxv:value>1.00</PDBxv:value> </PDBxv:refine_occupancy> <PDBxv:refine_occupancy class="inhibitor orientation 1" pdbx_refine_id="X-RAY DIFFRACTION"> <PDBxv:details xsi:nil="true" /> <PDBxv:treatment>fix</PDBxv:treatment> <PDBxv:value>0.65</PDBxv:value> </PDBxv:refine_occupancy> <PDBxv:refine_occupancy class="inhibitor orientation 2" pdbx_refine_id="X-RAY DIFFRACTION"> <PDBxv:details> The inhibitor binds to the enzyme in two alternative conformations. The occupancy of each conformation was adjusted so as to result in approximately equal mean thermal factors for the atoms in each conformation.</PDBxv:details> <PDBxv:treatment>fix</PDBxv:treatment> <PDBxv:value>0.35</PDBxv:value> </PDBxv:refine_occupancy> </PDBxv:refine_occupancyCategory>
 -- URI-reference = http://pdbml.pdb.org/dictionaries/mmcif_pdbx_v50.dic/Categories/refine_occupancy.html
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), schema location: schema/pdbx-validation-v1.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
@@ -8613,7 +8636,7 @@ CREATE TABLE reflns (
 	pdbx_diffrn_id TEXT ,
 	"pdbx_netI_over_av_sigmaI" DECIMAL ,
 	"pdbx_netI_over_sigmaI" DECIMAL ,
-	pdbx_number_measured_all INTEGER ,
+	pdbx_number_measured_all INTEGER CHECK ( pdbx_number_measured_all >= 0 ) ,
 	pdbx_redundancy DECIMAL ,
 	pdbx_scaling_rejects INTEGER ,
 	percent_possible_obs DECIMAL CHECK ( percent_possible_obs >= 0 AND percent_possible_obs <= 100 ) ,
@@ -8850,6 +8873,8 @@ CREATE TABLE pdbx_dist_value (
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), schema location: schema/pdbx-validation-v1.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
+DROP TYPE IF EXISTS ENUM_struct_conn_conn_type_id CASCADE;
+CREATE TYPE ENUM_struct_conn_conn_type_id AS ENUM ( 'covale', 'disulf', 'metalc', 'hydrog' );
 DROP TYPE IF EXISTS ENUM_struct_conn_pdbx_leaving_atom_flag CASCADE;
 CREATE TYPE ENUM_struct_conn_pdbx_leaving_atom_flag AS ENUM ( 'both', 'one', 'none' );
 DROP TYPE IF EXISTS ENUM_struct_conn_pdbx_value_order CASCADE;
@@ -8857,7 +8882,7 @@ CREATE TYPE ENUM_struct_conn_pdbx_value_order AS ENUM ( 'sing', 'doub', 'trip', 
 CREATE TABLE struct_conn (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	entry_id TEXT ,
-	conn_type_id TEXT ,
+	conn_type_id ENUM_struct_conn_conn_type_id ,
 	details TEXT ,
 	"pdbx_PDB_id" TEXT ,
 	pdbx_leaving_atom_flag ENUM_struct_conn_pdbx_leaving_atom_flag ,
@@ -9267,6 +9292,7 @@ CREATE TYPE ENUM_struct_mon_nucl_pdbx_RNA_suite AS ENUM ( 'NonRotameric', 'Rotam
 CREATE TABLE struct_mon_nucl (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	entry_id TEXT ,
+	"PDB_model_num" INTEGER ,
 	"RSCC_all" DECIMAL ,
 	"RSCC_base" DECIMAL ,
 	"RSCC_phos" DECIMAL ,
@@ -9398,6 +9424,7 @@ CREATE TYPE ENUM_struct_mon_prot_pdbx_flippable_side_chain AS ENUM ( 'Y', 'N' );
 CREATE TABLE struct_mon_prot (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	entry_id TEXT ,
+	"PDB_model_num" INTEGER ,
 	"RSCC_all" DECIMAL ,
 	"RSCC_main" DECIMAL ,
 	"RSCC_side" DECIMAL ,
