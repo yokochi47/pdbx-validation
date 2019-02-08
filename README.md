@@ -30,66 +30,78 @@ File path | Document
 ## Examples of alternative wwPDB validation reports
 
 - PDB ID: [5B1L](https://pdbj.org/mine/summary/5b1l), Exptl. method: X-RAY DIFFRACTION
-	- mmCIF-validation: [5b1l-validation-full.cif](https://github.com/yokochi47/pdbx-validation/blob/master/test/mmcif-validation/5b1l-validation-full.cif)
-	- mmCIF-validation-alt: [5b1l-validation-alt.cif](https://github.com/yokochi47/pdbx-validation/blob/master/test/mmcif-validation-alt/5b1l-validation-alt.cif)
-	- PDBML-validation: [5b1l-validation-full.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/XML-validation/5b1l-validation-full.xml)
-	- PDBML-validation-alt: [5b1l-validation-alt.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/validation-info-alt/5b1l-validation-alt.xml)
-	- wwPDB/RDF-validation: [5b1l-validation-full.rdf](https://github.com/yokochi47/pdbx-validation/blob/master/test/RDF-validation/5b1l-validation-full.rdf)
-	- wwPDB/RDF-validation-alt: [5b1l-validation-alt.rdf](https://github.com/yokochi47/pdbx-validation/blob/master/test/RDF-validation-alt/5b1l-validation-alt.rdf)<br />
-	- Original wwPDB validation report: [5b1l_validation.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/validation-info/5b1l_validation.xml)
-	- Reverted wwPDB validation report: [5b1l_validation.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/validation-info-rev/5b1l_validation.xml)
+	- PDBx/mmCIF format
+		- mmCIF-validation: [5b1l-validation-full.cif](https://github.com/yokochi47/pdbx-validation/blob/master/test/mmcif-validation/5b1l-validation-full.cif)
+		- mmCIF-validation-alt: [5b1l-validation-alt.cif](https://github.com/yokochi47/pdbx-validation/blob/master/test/mmcif-validation-alt/5b1l-validation-alt.cif)
+	- PDBML format
+		- PDBML-validation: [5b1l-validation-full.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/XML-validation/5b1l-validation-full.xml)
+		- PDBML-validation-alt: [5b1l-validation-alt.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/validation-info-alt/5b1l-validation-alt.xml)
+	- wwPDB/RDF format
+		- wwPDB/RDF-validation: [5b1l-validation-full.rdf](https://github.com/yokochi47/pdbx-validation/blob/master/test/RDF-validation/5b1l-validation-full.rdf)
+		- wwPDB/RDF-validation-alt: [5b1l-validation-alt.rdf](https://github.com/yokochi47/pdbx-validation/blob/master/test/RDF-validation-alt/5b1l-validation-alt.rdf)
+	- wwPDB validation report (XML format)
+		- Original source: [5b1l_validation.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/validation-info/5b1l_validation.xml)
+		- Reverted from PDBML-validation: [5b1l_validation.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/validation-info-rev/5b1l_validation.xml)
 
 - PDB ID: [5U9B](https://pdbj.org/mine/summary/5u9b), Exptl. method: SOLUTION NMR
-	- mmCIF-validation: [5u9b-validation-full.cif](https://github.com/yokochi47/pdbx-validation/blob/master/test/mmcif-validation/5u9b-validation-full.cif)
-	- mmCIF-validation-alt: [5u9b-validation-alt.cif](https://github.com/yokochi47/pdbx-validation/blob/master/test/mmcif-validation-alt/5u9b-validation-alt.cif)
-	- PDBML-validation: [5u9b-validation-full.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/XML-validation/5u9b-validation-full.xml)
-	- PDBML-validation-alt: [5u9b-validation-alt.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/validation-info-alt/5u9b-validation-alt.xml)
-	- wwPDB/RDF-validation: [5u9b-validation-full.rdf](https://github.com/yokochi47/pdbx-validation/blob/master/test/RDF-validation/5u9b-validation-full.rdf)
-	- wwPDB/RDF-validation-alt: [5u9b-validation-alt.rdf](https://github.com/yokochi47/pdbx-validation/blob/master/test/RDF-validation-alt/5u9b-validation-alt.rdf)<br />
-	- Original wwPDB validation report: [5u9b_validation.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/validation-info/5u9b_validation.xml)
-	- Reverted wwPDB validation report: [5u9b_validation.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/validation-info-rev/5u9b_validation.xml)
+	- PDBx/mmCIF format
+		- mmCIF-validation: [5u9b-validation-full.cif](https://github.com/yokochi47/pdbx-validation/blob/master/test/mmcif-validation/5u9b-validation-full.cif)
+		- mmCIF-validation-alt: [5u9b-validation-alt.cif](https://github.com/yokochi47/pdbx-validation/blob/master/test/mmcif-validation-alt/5u9b-validation-alt.cif)
+	- PDBML format
+		- PDBML-validation: [5u9b-validation-full.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/XML-validation/5u9b-validation-full.xml)
+		- PDBML-validation-alt: [5u9b-validation-alt.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/validation-info-alt/5u9b-validation-alt.xml)
+	- wwPDB/RDF format
+		- wwPDB/RDF-validation: [5u9b-validation-full.rdf](https://github.com/yokochi47/pdbx-validation/blob/master/test/RDF-validation/5u9b-validation-full.rdf)
+		- wwPDB/RDF-validation-alt: [5u9b-validation-alt.rdf](https://github.com/yokochi47/pdbx-validation/blob/master/test/RDF-validation-alt/5u9b-validation-alt.rdf)
+	- wwPDB validation report (XML format)
+		- Original source: [5u9b_validation.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/validation-info/5u9b_validation.xml)
+		- Reverted from PDBML-validation: [5u9b_validation.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/validation-info-rev/5u9b_validation.xml)
 
 - PDB ID: [5H0S](https://pdbj.org/mine/summary/5h0s), Exptl. method: ELECTRON MICROSCOPY
-	- mmCIF-validation: [5h0s-validation-full.cif](https://github.com/yokochi47/pdbx-validation/blob/master/test/mmcif-validation/5h0s-validation-full.cif)
-	- mmCIF-validation-alt: [5h0s-validation-alt.cif](https://github.com/yokochi47/pdbx-validation/blob/master/test/mmcif-validation-alt/5h0s-validation-alt.cif)
-	- PDBML-validation: [5h0s-validation-full.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/XML-validation/5h0s-validation-full.xml)
-	- PDBML-validation-alt: [5h0s-validation-alt.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/validation-info-alt/5h0s-validation-alt.xml)
-	- wwPDB/RDF-validation: [5h0s-validation-full.rdf](https://github.com/yokochi47/pdbx-validation/blob/master/test/RDF-validation/5h0s-validation-full.rdf)
-	- wwPDB/RDF-validation-alt: [5h0s-validation-alt.rdf](https://github.com/yokochi47/pdbx-validation/blob/master/test/RDF-validation-alt/5h0s-validation-alt.rdf)<br />
-	- Original wwPDB validation report: [5h0s_validation.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/validation-info/5h0s_validation.xml)
-	- Reverted wwPDB validation report: [5h0s_validation.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/validation-info-rev/5h0s_validation.xml)
+	- PDBx/mmCIF format
+		- mmCIF-validation: [5h0s-validation-full.cif](https://github.com/yokochi47/pdbx-validation/blob/master/test/mmcif-validation/5h0s-validation-full.cif)
+		- mmCIF-validation-alt: [5h0s-validation-alt.cif](https://github.com/yokochi47/pdbx-validation/blob/master/test/mmcif-validation-alt/5h0s-validation-alt.cif)
+	- PDBML format
+		- PDBML-validation: [5h0s-validation-full.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/XML-validation/5h0s-validation-full.xml)
+		- PDBML-validation-alt: [5h0s-validation-alt.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/validation-info-alt/5h0s-validation-alt.xml)
+	- wwPDB/RDF format
+		- wwPDB/RDF-validation: [5h0s-validation-full.rdf](https://github.com/yokochi47/pdbx-validation/blob/master/test/RDF-validation/5h0s-validation-full.rdf)
+		- wwPDB/RDF-validation-alt: [5h0s-validation-alt.rdf](https://github.com/yokochi47/pdbx-validation/blob/master/test/RDF-validation-alt/5h0s-validation-alt.rdf)
+	- wwPDB validation report (XML format)
+		- Original source: [5h0s_validation.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/validation-info/5h0s_validation.xml)
+		- Reverted wwPDB validation report: [5h0s_validation.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/validation-info-rev/5h0s_validation.xml)
 
 ## Bulk download service of alternative wwPDB validation reports
 
 - Bulk download via HTTP protocol
 
-	- [mmCIF-validation](https://bmrbpub.pdbj.org/archive/mmcif-valid/)
-	- [mmCIF-validation-alt (lightweight version)](https://bmrbpub.pdbj.org/archive/mmcif-valid-alt/)
+	- [mmCIF-validation (full specification)](https://bmrbpub.pdbj.org/archive/mmcif-valid/)
+	- [mmCIF-validation-alt (lightweight alternative)](https://bmrbpub.pdbj.org/archive/mmcif-valid-alt/)
 
-	- [PDBML-validation](https://bmrbpub.pdbj.org/archive/pdbml-valid/)
-	- [PDBML-validation-alt (lightweight version)](https://bmrbpub.pdbj.org/archive/pdbml-valid-alt/)
+	- [PDBML-validation (full specification)](https://bmrbpub.pdbj.org/archive/pdbml-valid/)
+	- [PDBML-validation-alt (lightweight alternative)](https://bmrbpub.pdbj.org/archive/pdbml-valid-alt/)
 
-	- [wwPDB/RDF-validation](https://bmrbpub.pdbj.org/archive/wwpdb-rdf-valid/)
-	- [wwPDB/RDF-validation-alt (lightweight version)](https://bmrbpub.pdbj.org/archive/wwpdb-rdf-valid-alt/)
+	- [wwPDB/RDF-validation (full specification)](https://bmrbpub.pdbj.org/archive/wwpdb-rdf-valid/)
+	- [wwPDB/RDF-validation-alt (lightweight alternative)](https://bmrbpub.pdbj.org/archive/wwpdb-rdf-valid-alt/)
 
 - Bulk download via rsync protocol
 
-	- mmCIF-validation:<br />
+	- mmCIF-validation (full specification):<br />
 	 `% rsync -av --delete rsync://bmrbpub.pdbj.org/mmcif-valid .`
 
-	- mmCIF-validation-alt (lightweight version):<br />
+	- mmCIF-validation-alt (lightweight alternative):<br />
 	 `% rsync -av --delete rsync://bmrbpub.pdbj.org/mmcif-valid-alt .`
 
-	- PDBML-validation:<br />
+	- PDBML-validation (full specification):<br />
 	 `% rsync -av --delete rsync://bmrbpub.pdbj.org/pdbml-valid .`
 
-	- PDBML-validation-alt (lightweight version):<br />
+	- PDBML-validation-alt (lightweight alternative):<br />
 	 `% rsync -av --delete rsync://bmrbpub.pdbj.org/pdbml-valid-alt .`
 
-	- wwPDB/RDF-validation:<br />
+	- wwPDB/RDF-validation (full specification):<br />
 	 `% rsync -av --delete rsync://bmrbpub.pdbj.org/wwpdb-rdf-valid .`
 
-	- wwPDB/RDF-validation-alt (lightweight version):<br />
+	- wwPDB/RDF-validation-alt (lightweight alternative):<br />
 	 `% rsync -av --delete rsync://bmrbpub.pdbj.org/wwpdb-rdf-valid-alt .`
 
 - [PDBML-validation-alt PostgreSQL dump file](https://bmrbpub.pdbj.org/resources.html)
@@ -203,8 +215,8 @@ File path | Document
 
 - **Jul 18, 2018**: Release v1.3.4
 	- Change check sum directory name from chk_sum_pdbx_valid to chk_sum_pdbml_valid.
-	- Add PDBML-validation-alt, which is a lightweight version of PDBML-validation by omitting PDBML-noatom content.
-	- Add wwPDB/validation-alt, which is a lightweight version of wwPDB/RDF-validation by omitting PDBML-noatom content.
+	- Add PDBML-validation-alt, which is a lightweight alternative version of PDBML-validation by omitting PDBML-noatom content.
+	- Add wwPDB/validation-alt, which is a lightweight alternative version of wwPDB/RDF-validation by omitting PDBML-noatom content.
 	- Add PostgreSQL data migration script for PDBML-validation-alt.
 	- Add Virtuoso data upload script for wwPDB/RDF-validation-alt.
 	- Add PostgreSQL data migration script for PDBML-noatom.
