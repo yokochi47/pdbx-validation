@@ -40,6 +40,14 @@ if ! [[ $PROC_INFO =~ .*of.* ]] ; then
 
 fi
 
+xml_pretty() {
+
+ if [ $has_xmllint_command != "false" ] ; then
+  xmllint --format $1 > $1~ ; mv -f $1~ $1
+ fi
+
+}
+
 MAXPROCS=`echo $PROC_INFO | cut -d 'f' -f 2`
 PROC_ID=`echo $PROC_INFO | cut -d 'o' -f 1`
 PROC_ID=`expr $PROC_ID - 1`
@@ -63,6 +71,8 @@ do
   if [ -e $info_alt_file ] && ( ( [ ! -e $pdbml_valid_file ] && [ ! -e $pdbml_gz_valid_file ] ) || [ -e $err_file ] ); then
 
    java -jar $SAXON -s:$pdbml_ext_file -xsl:$MERGE_PDBML_INFO_XSL -o:$pdbml_valid_file info_alt_file=../$info_alt_file 2> $err_file && rm -f $err_file || ( cat $err_file && exit 1 )
+
+   xml_pretty $pdbml_valid_file
 
    if [ $VALIDATE = 'true' ] ; then
 

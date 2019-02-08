@@ -68,7 +68,11 @@ SIMPLIFY_XSD_XSL=../stylesheet/simplify_xsd.xsl
 
 java -jar $SAXON -s:$DIC_PREFIX-v$DIC_MAJOR_VER.xsd -xsl:$SIMPLIFY_XSD_XSL -o:$DIC_PREFIX-v$DIC_MAJOR_VER.xsd~
 
-mv $DIC_PREFIX-v$DIC_MAJOR_VER.xsd~ $DIC_PREFIX-v$DIC_MAJOR_VER.xsd
+if [ ! `which xmllint 2> /dev/null` ] ; then
+ mv $DIC_PREFIX-v$DIC_MAJOR_VER.xsd~ $DIC_PREFIX-v$DIC_MAJOR_VER.xsd
+else
+ xmllint --format $DIC_PREFIX-v$DIC_MAJOR_VER.xsd~ > $DIC_PREFIX-v$DIC_MAJOR_VER.xsd ; rm -f $DIC_PREFIX-v$DIC_MAJOR_VER.xsd~
+fi
 
 echo Generated: $DIC_PREFIX-v$DIC_MAJOR_VER.xsd
 

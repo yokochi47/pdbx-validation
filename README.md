@@ -37,6 +37,9 @@ File path | Document
 	- wwPDB/RDF-validation: [5b1l-validation-full.rdf](https://github.com/yokochi47/pdbx-validation/blob/master/test/RDF-validation/5b1l-validation-full.rdf)
 	- wwPDB/RDF-validation-alt: [5b1l-validation-alt.rdf](https://github.com/yokochi47/pdbx-validation/blob/master/test/RDF-validation-alt/5b1l-validation-alt.rdf)
 
+	- Original wwPDB validation report: [5b1l-validation.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/validation-info/5b1l-validation.xml)
+	- Reverted wwPDB validation report: [5b1l-validation.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/validation-info-rev/5b1l-validation.xml)
+
 - PDB ID: [5U9B](https://pdbj.org/mine/summary/5u9b), Exptl. method: SOLUTION NMR
 	- mmCIF-validation: [5u9b-validation-full.cif](https://github.com/yokochi47/pdbx-validation/blob/master/test/mmcif-validation/5u9b-validation-full.cif)
 	- mmCIF-validation-alt: [5u9b-validation-alt.cif](https://github.com/yokochi47/pdbx-validation/blob/master/test/mmcif-validation-alt/5u9b-validation-alt.cif)
@@ -45,6 +48,9 @@ File path | Document
 	- wwPDB/RDF-validation: [5u9b-validation-full.rdf](https://github.com/yokochi47/pdbx-validation/blob/master/test/RDF-validation/5u9b-validation-full.rdf)
 	- wwPDB/RDF-validation-alt: [5u9b-validation-alt.rdf](https://github.com/yokochi47/pdbx-validation/blob/master/test/RDF-validation-alt/5u9b-validation-alt.rdf)
 
+	- Original wwPDB validation report: [5u9b-validation.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/validation-info/5u9b-validation.xml)
+	- Reverted wwPDB validation report: [5u9b-validation.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/validation-info-rev/5u9b-validation.xml)
+
 - PDB ID: [5H0S](https://pdbj.org/mine/summary/5h0s), Exptl. method: ELECTRON MICROSCOPY
 	- mmCIF-validation: [5h0s-validation-full.cif](https://github.com/yokochi47/pdbx-validation/blob/master/test/mmcif-validation/5h0s-validation-full.cif)
 	- mmCIF-validation-alt: [5h0s-validation-alt.cif](https://github.com/yokochi47/pdbx-validation/blob/master/test/mmcif-validation-alt/5h0s-validation-alt.cif)
@@ -52,6 +58,9 @@ File path | Document
 	- PDBML-validation-alt: [5h0s-validation-alt.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/validation-info-alt/5h0s-validation-alt.xml)
 	- wwPDB/RDF-validation: [5h0s-validation-full.rdf](https://github.com/yokochi47/pdbx-validation/blob/master/test/RDF-validation/5h0s-validation-full.rdf)
 	- wwPDB/RDF-validation-alt: [5h0s-validation-alt.rdf](https://github.com/yokochi47/pdbx-validation/blob/master/test/RDF-validation-alt/5h0s-validation-alt.rdf)
+
+	- Original wwPDB validation report: [5h0s-validation.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/validation-info/5h0s-validation.xml)
+	- Reverted wwPDB validation report: [5h0s-validation.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/validation-info-rev/5h0s-validation.xml)
 
 ## Bulk download service of alternative wwPDB validation reports
 
@@ -98,6 +107,7 @@ File path | Document
 - [**mmCIF Dictionary Suite**](https://sw-tools.rcsb.org/apps/MMCIF-DICT-SUITE/index.html), optionally used to generate XML Schema from the wwPDB Validation Information Dictionary.
 - [**PDBML2CIF**](https://sw-tools.rcsb.org/apps/PDBML2CIF/index.html), optionally, used to generate mmCIF version of wwPDB validation reports.
 - [**Raptor RDF Syntax Library**](http://librdf.org/raptor/), optionally, used to validate RDF syntax.
+- [**libxml2**](http://xmlsoft.org/), optionally, used to post XML beutification (xmllint).
 - [**PostgreSQL**](https://www.postgresql.org), optionally used to import XML contents to relational database.
 - [**Virtuoso**](https://www.openlinksw.com/wiki/main/Main), oprionally used as SPARQL endpoint of wwPDB/RDF-validation.
 
@@ -144,6 +154,7 @@ File path | Document
 		- Add revert_info.xsl style sheet for the translation.
 		- Modify 'run_test.sh' script which include translation from PDBML-validation to wwPDB Validation Reports (XML).
 	- Update wwPDB Validation Information Dictionary from v1.303 to 1.305.
+	- Apply XML beautifier using xmllint command, if possible.
 
 - **Jan 8, 2019**: Release v1.4.1
 	- Ensure identity of chemical_shift_list/@list_id.

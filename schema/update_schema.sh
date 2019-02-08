@@ -71,6 +71,10 @@ java -jar $SAXON -s:$DIC_PREFIX.xsd~ -xsl:$APPEND_XSD_XSL -o:$DIC_PREFIX-v$DIC_V
 
 rm -f $DIC_PREFIX.xsd~ $DIC_PREFIX-v$DIC_MAJOR_VER.xsd
 
+if [ `which xmllint 2> /dev/null` ] ; then
+ xmllint --format $DIC_PREFIX-v$DIC_VER.xsd > $DIC_PREFIX-v$DIC_VER.xsd~ ; mv -f $DIC_PREFIX-v$DIC_VER.xsd~ $DIC_PREFIX-v$DIC_VER.xsd
+fi
+
 ln -s $DIC_PREFIX-v$DIC_VER.xsd $DIC_PREFIX-v$DIC_MAJOR_VER.xsd
 
 echo Generated: $DIC_PREFIX-v$DIC_MAJOR_VER.xsd

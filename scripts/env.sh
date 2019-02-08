@@ -71,3 +71,9 @@ if [ ! `which CifCheck 2> /dev/null` ] ; then
  has_cifcheck_command=false
 fi
 
+has_xmllint_command=true
+
+if [ ! `which xmllint 2> /dev/null` ] ; then
+ has_xmllint_command=false
+fi
+
