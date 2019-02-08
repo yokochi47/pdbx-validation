@@ -1709,11 +1709,13 @@ Unmatched type exist in _pdbx_nmr_assigned_chem_shift_list.nmr_star_consistency_
     <xsl:if test="$entity_ids!=''">
 
       <xsl:for-each select="distinct-values(tokenize($entity_ids,','))">
-        <xsl:call-template name="modelled_entity_instance_entity_id">
-          <xsl:with-param name="model"><xsl:value-of select="$model"/></xsl:with-param>
-          <xsl:with-param name="asym_id"><xsl:value-of select="$asym_id"/></xsl:with-param>
-          <xsl:with-param name="entity_id"><xsl:value-of select="."/></xsl:with-param>
-        </xsl:call-template>
+        <xsl:if test=".!=''">
+          <xsl:call-template name="modelled_entity_instance_entity_id">
+            <xsl:with-param name="model"><xsl:value-of select="$model"/></xsl:with-param>
+            <xsl:with-param name="asym_id"><xsl:value-of select="$asym_id"/></xsl:with-param>
+            <xsl:with-param name="entity_id"><xsl:value-of select="."/></xsl:with-param>
+          </xsl:call-template>
+        </xsl:if>
       </xsl:for-each>
 
     </xsl:if>
@@ -1737,12 +1739,14 @@ Unmatched type exist in _pdbx_nmr_assigned_chem_shift_list.nmr_star_consistency_
     <xsl:if test="$strand_ids!=''">
 
       <xsl:for-each select="distinct-values(tokenize($strand_ids,','))">
-        <xsl:call-template name="modelled_entity_instance_strand_id">
-          <xsl:with-param name="model"><xsl:value-of select="$model"/></xsl:with-param>
-          <xsl:with-param name="asym_id"><xsl:value-of select="$asym_id"/></xsl:with-param>
-          <xsl:with-param name="entity_id"><xsl:value-of select="$entity_id"/></xsl:with-param>
-          <xsl:with-param name="strand_id"><xsl:value-of select="."/></xsl:with-param>
-        </xsl:call-template>
+        <xsl:if test=".!=''">
+          <xsl:call-template name="modelled_entity_instance_strand_id">
+            <xsl:with-param name="model"><xsl:value-of select="$model"/></xsl:with-param>
+            <xsl:with-param name="asym_id"><xsl:value-of select="$asym_id"/></xsl:with-param>
+            <xsl:with-param name="entity_id"><xsl:value-of select="$entity_id"/></xsl:with-param>
+            <xsl:with-param name="strand_id"><xsl:value-of select="."/></xsl:with-param>
+          </xsl:call-template>
+        </xsl:if>
       </xsl:for-each>
 
     </xsl:if>
