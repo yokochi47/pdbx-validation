@@ -56254,6 +56254,16 @@ LAHYNKRSTITSREVQTAVRLLLPGELAKHAVSEGTKAVTKYTSSK</PDBxv:pdbx_seq_one_letter_code>
       </PDBxv:pdbx_dcc_map>
    </PDBxv:pdbx_dcc_mapCategory>
    <PDBxv:struct_mon_protCategory>
+      <PDBxv:struct_mon_prot pdbx_id="1">
+         <PDBxv:PDB_model_num>1</PDBxv:PDB_model_num>
+         <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>PRO</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>38</PDBxv:auth_seq_id>
+         <PDBxv:RSCC_all>0.875</PDBxv:RSCC_all>
+         <PDBxv:RSR_all>0.244</PDBxv:RSR_all>
+         <PDBxv:mean_B_all>70.930</PDBxv:mean_B_all>
+         <PDBxv:pdbx_rotamer>Cg_exo</PDBxv:pdbx_rotamer>
+      </PDBxv:struct_mon_prot>
       <PDBxv:struct_mon_prot pdbx_id="2">
          <PDBxv:PDB_model_num>1</PDBxv:PDB_model_num>
          <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
@@ -57478,6 +57488,26 @@ LAHYNKRSTITSREVQTAVRLLLPGELAKHAVSEGTKAVTKYTSSK</PDBxv:pdbx_seq_one_letter_code>
          <PDBxv:pdbx_Ramachandran_region>Favored</PDBxv:pdbx_Ramachandran_region>
          <PDBxv:pdbx_rotamer>mt-10</PDBxv:pdbx_rotamer>
       </PDBxv:struct_mon_prot>
+      <PDBxv:struct_mon_prot pdbx_id="97">
+         <PDBxv:PDB_model_num>1</PDBxv:PDB_model_num>
+         <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>ARG</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>134</PDBxv:auth_seq_id>
+         <PDBxv:RSCC_all>0.774</PDBxv:RSCC_all>
+         <PDBxv:RSR_all>0.224</PDBxv:RSR_all>
+         <PDBxv:mean_B_all>62.350</PDBxv:mean_B_all>
+         <PDBxv:pdbx_rotamer>mtp-105</PDBxv:pdbx_rotamer>
+      </PDBxv:struct_mon_prot>
+      <PDBxv:struct_mon_prot pdbx_id="119">
+         <PDBxv:PDB_model_num>1</PDBxv:PDB_model_num>
+         <PDBxv:auth_asym_id>B</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>ASN</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>25</PDBxv:auth_seq_id>
+         <PDBxv:RSCC_all>0.864</PDBxv:RSCC_all>
+         <PDBxv:RSR_all>0.196</PDBxv:RSR_all>
+         <PDBxv:mean_B_all>58.160</PDBxv:mean_B_all>
+         <PDBxv:pdbx_rotamer>m-20</PDBxv:pdbx_rotamer>
+      </PDBxv:struct_mon_prot>
       <PDBxv:struct_mon_prot pdbx_id="120">
          <PDBxv:PDB_model_num>1</PDBxv:PDB_model_num>
          <PDBxv:auth_asym_id>B</PDBxv:auth_asym_id>
@@ -58451,6 +58481,16 @@ LAHYNKRSTITSREVQTAVRLLLPGELAKHAVSEGTKAVTKYTSSK</PDBxv:pdbx_seq_one_letter_code>
          <PDBxv:phi>125.7</PDBxv:phi>
          <PDBxv:psi>7.2</PDBxv:psi>
          <PDBxv:pdbx_Ramachandran_region>Favored</PDBxv:pdbx_Ramachandran_region>
+      </PDBxv:struct_mon_prot>
+      <PDBxv:struct_mon_prot pdbx_id="208">
+         <PDBxv:PDB_model_num>1</PDBxv:PDB_model_num>
+         <PDBxv:auth_asym_id>C</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>ARG</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>11</PDBxv:auth_seq_id>
+         <PDBxv:RSCC_all>0.805</PDBxv:RSCC_all>
+         <PDBxv:RSR_all>0.411</PDBxv:RSR_all>
+         <PDBxv:mean_B_all>72.760</PDBxv:mean_B_all>
+         <PDBxv:pdbx_rotamer>tpt180</PDBxv:pdbx_rotamer>
       </PDBxv:struct_mon_prot>
       <PDBxv:struct_mon_prot pdbx_id="209">
          <PDBxv:PDB_model_num>1</PDBxv:PDB_model_num>
@@ -59808,6 +59848,16 @@ LAHYNKRSTITSREVQTAVRLLLPGELAKHAVSEGTKAVTKYTSSK</PDBxv:pdbx_seq_one_letter_code>
          <PDBxv:pdbx_Ramachandran_region>Favored</PDBxv:pdbx_Ramachandran_region>
          <PDBxv:pdbx_rotamer>Cg_endo</PDBxv:pdbx_rotamer>
       </PDBxv:struct_mon_prot>
+      <PDBxv:struct_mon_prot pdbx_id="315">
+         <PDBxv:PDB_model_num>1</PDBxv:PDB_model_num>
+         <PDBxv:auth_asym_id>C</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>LYS</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>118</PDBxv:auth_seq_id>
+         <PDBxv:RSCC_all>0.671</PDBxv:RSCC_all>
+         <PDBxv:RSR_all>0.579</PDBxv:RSR_all>
+         <PDBxv:mean_B_all>70.250</PDBxv:mean_B_all>
+         <PDBxv:pdbx_rotamer>mtmt</PDBxv:pdbx_rotamer>
+      </PDBxv:struct_mon_prot>
       <PDBxv:struct_mon_prot pdbx_id="340">
          <PDBxv:PDB_model_num>1</PDBxv:PDB_model_num>
          <PDBxv:auth_asym_id>D</PDBxv:auth_asym_id>
@@ -60978,6 +61028,26 @@ LAHYNKRSTITSREVQTAVRLLLPGELAKHAVSEGTKAVTKYTSSK</PDBxv:pdbx_seq_one_letter_code>
          <PDBxv:psi>-26.8</PDBxv:psi>
          <PDBxv:pdbx_Ramachandran_region>Favored</PDBxv:pdbx_Ramachandran_region>
          <PDBxv:pdbx_rotamer>p</PDBxv:pdbx_rotamer>
+      </PDBxv:struct_mon_prot>
+      <PDBxv:struct_mon_prot pdbx_id="431">
+         <PDBxv:PDB_model_num>1</PDBxv:PDB_model_num>
+         <PDBxv:auth_asym_id>D</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>SER</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>124</PDBxv:auth_seq_id>
+         <PDBxv:RSCC_all>0.866</PDBxv:RSCC_all>
+         <PDBxv:RSR_all>0.160</PDBxv:RSR_all>
+         <PDBxv:mean_B_all>59.580</PDBxv:mean_B_all>
+         <PDBxv:pdbx_rotamer>m</PDBxv:pdbx_rotamer>
+      </PDBxv:struct_mon_prot>
+      <PDBxv:struct_mon_prot pdbx_id="449">
+         <PDBxv:PDB_model_num>1</PDBxv:PDB_model_num>
+         <PDBxv:auth_asym_id>E</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>PRO</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>38</PDBxv:auth_seq_id>
+         <PDBxv:RSCC_all>0.878</PDBxv:RSCC_all>
+         <PDBxv:RSR_all>0.117</PDBxv:RSR_all>
+         <PDBxv:mean_B_all>45.430</PDBxv:mean_B_all>
+         <PDBxv:pdbx_rotamer>Cg_exo</PDBxv:pdbx_rotamer>
       </PDBxv:struct_mon_prot>
       <PDBxv:struct_mon_prot pdbx_id="450">
          <PDBxv:PDB_model_num>1</PDBxv:PDB_model_num>
@@ -62203,6 +62273,26 @@ LAHYNKRSTITSREVQTAVRLLLPGELAKHAVSEGTKAVTKYTSSK</PDBxv:pdbx_seq_one_letter_code>
          <PDBxv:pdbx_Ramachandran_region>Favored</PDBxv:pdbx_Ramachandran_region>
          <PDBxv:pdbx_rotamer>mt-10</PDBxv:pdbx_rotamer>
       </PDBxv:struct_mon_prot>
+      <PDBxv:struct_mon_prot pdbx_id="545">
+         <PDBxv:PDB_model_num>1</PDBxv:PDB_model_num>
+         <PDBxv:auth_asym_id>E</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>ARG</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>134</PDBxv:auth_seq_id>
+         <PDBxv:RSCC_all>0.790</PDBxv:RSCC_all>
+         <PDBxv:RSR_all>0.242</PDBxv:RSR_all>
+         <PDBxv:mean_B_all>65.780</PDBxv:mean_B_all>
+         <PDBxv:pdbx_rotamer>mtt180</PDBxv:pdbx_rotamer>
+      </PDBxv:struct_mon_prot>
+      <PDBxv:struct_mon_prot pdbx_id="577">
+         <PDBxv:PDB_model_num>1</PDBxv:PDB_model_num>
+         <PDBxv:auth_asym_id>F</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>ARG</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>19</PDBxv:auth_seq_id>
+         <PDBxv:RSCC_all>0.670</PDBxv:RSCC_all>
+         <PDBxv:RSR_all>0.236</PDBxv:RSR_all>
+         <PDBxv:mean_B_all>68.020</PDBxv:mean_B_all>
+         <PDBxv:pdbx_rotamer>mmt180</PDBxv:pdbx_rotamer>
+      </PDBxv:struct_mon_prot>
       <PDBxv:struct_mon_prot pdbx_id="578">
          <PDBxv:PDB_model_num>1</PDBxv:PDB_model_num>
          <PDBxv:auth_asym_id>F</PDBxv:auth_asym_id>
@@ -63254,6 +63344,16 @@ LAHYNKRSTITSREVQTAVRLLLPGELAKHAVSEGTKAVTKYTSSK</PDBxv:pdbx_seq_one_letter_code>
          <PDBxv:phi>-81.0</PDBxv:phi>
          <PDBxv:psi>5.8</PDBxv:psi>
          <PDBxv:pdbx_Ramachandran_region>Favored</PDBxv:pdbx_Ramachandran_region>
+      </PDBxv:struct_mon_prot>
+      <PDBxv:struct_mon_prot pdbx_id="682">
+         <PDBxv:PDB_model_num>1</PDBxv:PDB_model_num>
+         <PDBxv:auth_asym_id>G</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>LYS</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>15</PDBxv:auth_seq_id>
+         <PDBxv:RSCC_all>0.776</PDBxv:RSCC_all>
+         <PDBxv:RSR_all>0.291</PDBxv:RSR_all>
+         <PDBxv:mean_B_all>62.420</PDBxv:mean_B_all>
+         <PDBxv:pdbx_rotamer>mttt</PDBxv:pdbx_rotamer>
       </PDBxv:struct_mon_prot>
       <PDBxv:struct_mon_prot pdbx_id="683">
          <PDBxv:PDB_model_num>1</PDBxv:PDB_model_num>
@@ -64561,6 +64661,26 @@ LAHYNKRSTITSREVQTAVRLLLPGELAKHAVSEGTKAVTKYTSSK</PDBxv:pdbx_seq_one_letter_code>
          <PDBxv:pdbx_Ramachandran_region>Favored</PDBxv:pdbx_Ramachandran_region>
          <PDBxv:pdbx_rotamer>Cg_endo</PDBxv:pdbx_rotamer>
       </PDBxv:struct_mon_prot>
+      <PDBxv:struct_mon_prot pdbx_id="785">
+         <PDBxv:PDB_model_num>1</PDBxv:PDB_model_num>
+         <PDBxv:auth_asym_id>G</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>LYS</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>118</PDBxv:auth_seq_id>
+         <PDBxv:RSCC_all>0.810</PDBxv:RSCC_all>
+         <PDBxv:RSR_all>0.277</PDBxv:RSR_all>
+         <PDBxv:mean_B_all>67.760</PDBxv:mean_B_all>
+         <PDBxv:pdbx_rotamer>mtmt</PDBxv:pdbx_rotamer>
+      </PDBxv:struct_mon_prot>
+      <PDBxv:struct_mon_prot pdbx_id="799">
+         <PDBxv:PDB_model_num>1</PDBxv:PDB_model_num>
+         <PDBxv:auth_asym_id>H</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>ARG</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>33</PDBxv:auth_seq_id>
+         <PDBxv:RSCC_all>0.761</PDBxv:RSCC_all>
+         <PDBxv:RSR_all>0.328</PDBxv:RSR_all>
+         <PDBxv:mean_B_all>63.020</PDBxv:mean_B_all>
+         <PDBxv:pdbx_rotamer>mtm180</PDBxv:pdbx_rotamer>
+      </PDBxv:struct_mon_prot>
       <PDBxv:struct_mon_prot pdbx_id="800">
          <PDBxv:PDB_model_num>1</PDBxv:PDB_model_num>
          <PDBxv:auth_asym_id>H</PDBxv:auth_asym_id>
@@ -65718,6 +65838,16 @@ LAHYNKRSTITSREVQTAVRLLLPGELAKHAVSEGTKAVTKYTSSK</PDBxv:pdbx_seq_one_letter_code>
          <PDBxv:psi>-32.1</PDBxv:psi>
          <PDBxv:pdbx_Ramachandran_region>Favored</PDBxv:pdbx_Ramachandran_region>
          <PDBxv:pdbx_rotamer>m</PDBxv:pdbx_rotamer>
+      </PDBxv:struct_mon_prot>
+      <PDBxv:struct_mon_prot pdbx_id="890">
+         <PDBxv:PDB_model_num>1</PDBxv:PDB_model_num>
+         <PDBxv:auth_asym_id>H</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>SER</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>124</PDBxv:auth_seq_id>
+         <PDBxv:RSCC_all>0.876</PDBxv:RSCC_all>
+         <PDBxv:RSR_all>0.225</PDBxv:RSR_all>
+         <PDBxv:mean_B_all>61.170</PDBxv:mean_B_all>
+         <PDBxv:pdbx_rotamer>t</PDBxv:pdbx_rotamer>
       </PDBxv:struct_mon_prot>
    </PDBxv:struct_mon_protCategory>
    <PDBxv:pdbx_validation_softwareCategory>

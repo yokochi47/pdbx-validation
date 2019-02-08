@@ -1257,8 +1257,12 @@ Unmatched type exist in _pdbx_nmr_assigned_chem_shift_list.nmr_star_consistency_
 
       <xsl:for-each select="$datablock/PDBxv:struct_mon_protCategory/PDBxv:struct_mon_prot[PDBxv:PDB_model_num=$model and PDBxv:auth_asym_id=$strand_id and PDBxv:auth_comp_id=$mon_id and PDBxv:auth_seq_id=$pdb_seq_num and ($alt_id='' or PDBxv:label_alt_id=$alt_id)]">
 
-        <xsl:attribute name="phi"><xsl:value-of select="PDBxv:phi"/></xsl:attribute>
-        <xsl:attribute name="psi"><xsl:value-of select="PDBxv:psi"/></xsl:attribute>
+        <xsl:if test="PDBxv:phi">
+          <xsl:attribute name="phi"><xsl:value-of select="PDBxv:phi"/></xsl:attribute>
+        </xsl:if>
+        <xsl:if test="PDBxv:psi">
+          <xsl:attribute name="psi"><xsl:value-of select="PDBxv:psi"/></xsl:attribute>
+        </xsl:if>
 <!--
         <xsl:if test="count(plane-outlier/@omega)=1">
           <xsl:element name="PDBxv:omega"><xsl:value-of select="plane-outlier/@omega"/></xsl:element>

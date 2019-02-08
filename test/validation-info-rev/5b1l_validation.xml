@@ -92,7 +92,8 @@
                      rscc="0.875"
                      rsr="0.244"
                      rsrz="1.932"
-                     avgoccu="1.000"/>
+                     avgoccu="1.000"
+                     rota="Cg_exo"/>
    <ModelledSubgroup model="1"
                      chain="A"
                      said="A"
@@ -1819,7 +1820,8 @@
                      rscc="0.774"
                      rsr="0.224"
                      rsrz="0.882"
-                     avgoccu="1.000"/>
+                     avgoccu="1.000"
+                     rota="mtp-105"/>
    <ModelledSubgroup model="1"
                      chain="B"
                      said="B"
@@ -1833,7 +1835,8 @@
                      rscc="0.864"
                      rsr="0.196"
                      rsrz="0.823"
-                     avgoccu="1.000"/>
+                     avgoccu="1.000"
+                     rota="m-20"/>
    <ModelledSubgroup model="1"
                      chain="B"
                      said="B"
@@ -3223,7 +3226,8 @@
                      rscc="0.805"
                      rsr="0.411"
                      rsrz="3.569"
-                     avgoccu="1.000"/>
+                     avgoccu="1.000"
+                     rota="tpt180"/>
    <ModelledSubgroup model="1"
                      chain="C"
                      said="C"
@@ -5141,7 +5145,8 @@
                      rscc="0.671"
                      rsr="0.579"
                      rsrz="5.367"
-                     avgoccu="1.000">
+                     avgoccu="1.000"
+                     rota="mtmt">
       <clash cid="15" atom="HG3" dist="2.14" clashmag="0.47"/>
       <clash cid="16" atom="HB2" dist="1.90" clashmag="0.42"/>
       <clash cid="16" atom="HE2" dist="1.90" clashmag="0.42"/>
@@ -6818,7 +6823,8 @@
                      rscc="0.866"
                      rsr="0.160"
                      rsrz="0.417"
-                     avgoccu="1.000">
+                     avgoccu="1.000"
+                     rota="m">
       <clash cid="20" atom="HB2" dist="2.09" clashmag="0.52"/>
    </ModelledSubgroup>
    <ModelledSubgroup model="1"
@@ -6834,7 +6840,8 @@
                      rscc="0.878"
                      rsr="0.117"
                      rsrz="-0.232"
-                     avgoccu="1.000"/>
+                     avgoccu="1.000"
+                     rota="Cg_exo"/>
    <ModelledSubgroup model="1"
                      chain="E"
                      said="E"
@@ -8561,7 +8568,8 @@
                      rscc="0.790"
                      rsr="0.242"
                      rsrz="1.141"
-                     avgoccu="1.000"/>
+                     avgoccu="1.000"
+                     rota="mtt180"/>
    <ModelledSubgroup model="1"
                      chain="F"
                      said="F"
@@ -8575,7 +8583,8 @@
                      rscc="0.670"
                      rsr="0.236"
                      rsrz="1.055"
-                     avgoccu="1.000"/>
+                     avgoccu="1.000"
+                     rota="mmt180"/>
    <ModelledSubgroup model="1"
                      chain="F"
                      said="F"
@@ -10083,7 +10092,8 @@
                      rscc="0.776"
                      rsr="0.291"
                      rsrz="1.522"
-                     avgoccu="1.000"/>
+                     avgoccu="1.000"
+                     rota="mttt"/>
    <ModelledSubgroup model="1"
                      chain="G"
                      said="G"
@@ -11934,7 +11944,8 @@
                      rscc="0.810"
                      rsr="0.277"
                      rsrz="1.335"
-                     avgoccu="1.000"/>
+                     avgoccu="1.000"
+                     rota="mtmt"/>
    <ModelledSubgroup model="1"
                      chain="H"
                      said="H"
@@ -11948,7 +11959,8 @@
                      rscc="0.761"
                      rsr="0.328"
                      rsrz="2.376"
-                     avgoccu="1.000"/>
+                     avgoccu="1.000"
+                     rota="mtm180"/>
    <ModelledSubgroup model="1"
                      chain="H"
                      said="H"
@@ -13583,7 +13595,8 @@
                      rscc="0.876"
                      rsr="0.225"
                      rsrz="1.491"
-                     avgoccu="1.000"/>
+                     avgoccu="1.000"
+                     rota="t"/>
    <ModelledSubgroup model="1"
                      chain="I"
                      said="I"

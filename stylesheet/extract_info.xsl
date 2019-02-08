@@ -320,7 +320,7 @@ Unmatched entry ID in both documents (<xsl:value-of select="$entry_id"/> and <xs
       </PDBxv:pdbx_dcc_mon_geometryCategory>
     </xsl:if>
 
-    <xsl:if test="../ModelledSubgroup/@phi or ../ModelledSubgroup/@psi">
+    <xsl:if test="../ModelledSubgroup/@phi or ../ModelledSubgroup/@psi or ../ModelledSubgroup/@rama or ../ModelledSubgroup/@rota">
       <PDBxv:struct_mon_protCategory>
         <xsl:for-each select="../ModelledSubgroup">
           <xsl:call-template name="struct_mon_prot"/>
@@ -1656,7 +1656,7 @@ Unmatched components exist in WilsonBaniso, <xsl:value-of select="position()"/>,
   </xsl:template>
 
   <xsl:template name="struct_mon_prot">
-    <xsl:if test="@phi or @psi">
+    <xsl:if test="@phi or @psi or @rama or @rota">
       <PDBxv:struct_mon_prot>
         <xsl:attribute name="pdbx_id"><xsl:value-of select="position()"/></xsl:attribute>
         <xsl:element name="PDBxv:PDB_model_num"><xsl:value-of select="@model"/></xsl:element>
@@ -1675,8 +1675,12 @@ Unmatched components exist in WilsonBaniso, <xsl:value-of select="position()"/>,
         <xsl:if test="@owab">
           <xsl:element name="PDBxv:mean_B_all"><xsl:value-of select="@owab"/></xsl:element>
         </xsl:if>
-        <xsl:element name="PDBxv:phi"><xsl:value-of select="@phi"/></xsl:element>
-        <xsl:element name="PDBxv:psi"><xsl:value-of select="@psi"/></xsl:element>
+        <xsl:if test="@phi">
+          <xsl:element name="PDBxv:phi"><xsl:value-of select="@phi"/></xsl:element>
+        </xsl:if>
+        <xsl:if test="@psi">
+          <xsl:element name="PDBxv:psi"><xsl:value-of select="@psi"/></xsl:element>
+        </xsl:if>
         <xsl:if test="count(plane-outlier/@omega)=1">
           <xsl:element name="PDBxv:omega"><xsl:value-of select="plane-outlier/@omega"/></xsl:element>
         </xsl:if>
