@@ -41,6 +41,14 @@ if [ $has_xml2mmcif_command = "false" ] ; then
 
 fi
 
+xml_pretty() {
+
+ if [ $has_xmllint_command != "false" ] ; then
+  xmllint --format $1 > $1~ ; mv -f $1~ $1
+ fi
+
+}
+
 WORK_DIR=test
 
 for arg ; do
@@ -131,6 +139,8 @@ for pdbml_file in $WORK_DIR/$PDBML/*.xml ; do
 
  java -jar $SAXON -s:$info_file -xsl:$EXT_INFO_XSL -o:$info_alt_file pdbml_ext_file=$pdbml_ext_file || ( echo $0 aborted. && exit 1 )
 
+ xml_pretty $info_alt_file
+
  echo " extracted: "$info_alt_file
 
  java -classpath $XSD2PGSCHEMA xmlvalidator --xsd $PDBX_VALIDATION_XSD --xml $info_alt_file > /dev/null || ( echo $0 aborted. && exit 1 )
@@ -142,6 +152,8 @@ for pdbml_file in $WORK_DIR/$PDBML/*.xml ; do
  pdbml_valid_file=$WORK_DIR/$XML_VALID/$pdbid-validation-full.xml
 
  java -jar $SAXON -s:$pdbml_ext_file -xsl:$MERGE_PDBML_INFO_XSL -o:$pdbml_valid_file info_alt_file=$info_alt_file || ( echo $0 aborted. && exit 1 )
+
+ xml_pretty $pdbml_valid_file
 
  echo " merged   : "$pdbml_valid_file
 
@@ -226,6 +238,8 @@ for pdbml_file in $WORK_DIR/$PDBML/*.xml ; do
  info_rev_file=$WORK_DIR/$VALID_INFO_REV/$pdbid"_validation.xml"
 
  java -jar $SAXON -s:$pdbml_valid_file -xsl:$REVERT_INFO_XSL -o:$info_rev_file || ( echo $0 aborted. && exit 1 )
+
+ xml_pretty $info_rev_file
 
  if [ $? = 0 ] ; then
   echo " generated: "$info_rev_file
