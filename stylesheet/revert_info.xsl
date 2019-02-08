@@ -1117,28 +1117,14 @@ Unmatched type exist in _pdbx_nmr_assigned_chem_shift_list.nmr_star_consistency_
       </xsl:for-each>
     </xsl:variable>
 
-    <xsl:variable name="alt_id_list">
-      <xsl:if test="string-length($alt_ids)&gt;0">
-        <xsl:value-of select="substring($alt_ids,1,string-length($alt_ids)-1)"/>
-      </xsl:if>
-    </xsl:variable>
+    <xsl:if test="string-length($alt_ids)&gt;0">
 
-    <xsl:choose>
-      <xsl:when test="$alt_id_list=''">
-        <xsl:call-template name="modelled_subgroup_alt_id">
-          <xsl:with-param name="model"><xsl:value-of select="$model"/></xsl:with-param>
-          <xsl:with-param name="strand_id"><xsl:value-of select="$strand_id"/></xsl:with-param>
-          <xsl:with-param name="asym_id"><xsl:value-of select="$asym_id"/></xsl:with-param>
-          <xsl:with-param name="entity_id"><xsl:value-of select="$entity_id"/></xsl:with-param>
-          <xsl:with-param name="mon_id"><xsl:value-of select="$mon_id"/></xsl:with-param>
-          <xsl:with-param name="seq_id"><xsl:value-of select="$seq_id"/></xsl:with-param>
-          <xsl:with-param name="pdb_seq_num"><xsl:value-of select="$pdb_seq_num"/></xsl:with-param>
-          <xsl:with-param name="pdb_ins_code"><xsl:value-of select="$pdb_ins_code"/></xsl:with-param>
-          <xsl:with-param name="alt_id"/>
-        </xsl:call-template>
-      </xsl:when>
-      <xsl:otherwise>
-        <xsl:for-each select="distinct-values(tokenize($alt_id_list,','))">
+      <xsl:variable name="alt_id_list">
+        <xsl:value-of select="substring($alt_ids,1,string-length($alt_ids)-1)"/>
+      </xsl:variable>
+
+      <xsl:choose>
+        <xsl:when test="$alt_id_list=''">
           <xsl:call-template name="modelled_subgroup_alt_id">
             <xsl:with-param name="model"><xsl:value-of select="$model"/></xsl:with-param>
             <xsl:with-param name="strand_id"><xsl:value-of select="$strand_id"/></xsl:with-param>
@@ -1148,11 +1134,27 @@ Unmatched type exist in _pdbx_nmr_assigned_chem_shift_list.nmr_star_consistency_
             <xsl:with-param name="seq_id"><xsl:value-of select="$seq_id"/></xsl:with-param>
             <xsl:with-param name="pdb_seq_num"><xsl:value-of select="$pdb_seq_num"/></xsl:with-param>
             <xsl:with-param name="pdb_ins_code"><xsl:value-of select="$pdb_ins_code"/></xsl:with-param>
-            <xsl:with-param name="alt_id"><xsl:value-of select="."/></xsl:with-param>
+            <xsl:with-param name="alt_id"/>
           </xsl:call-template>
-        </xsl:for-each>
-      </xsl:otherwise>
-    </xsl:choose>
+        </xsl:when>
+        <xsl:otherwise>
+          <xsl:for-each select="distinct-values(tokenize($alt_id_list,','))">
+            <xsl:call-template name="modelled_subgroup_alt_id">
+              <xsl:with-param name="model"><xsl:value-of select="$model"/></xsl:with-param>
+              <xsl:with-param name="strand_id"><xsl:value-of select="$strand_id"/></xsl:with-param>
+              <xsl:with-param name="asym_id"><xsl:value-of select="$asym_id"/></xsl:with-param>
+              <xsl:with-param name="entity_id"><xsl:value-of select="$entity_id"/></xsl:with-param>
+              <xsl:with-param name="mon_id"><xsl:value-of select="$mon_id"/></xsl:with-param>
+              <xsl:with-param name="seq_id"><xsl:value-of select="$seq_id"/></xsl:with-param>
+              <xsl:with-param name="pdb_seq_num"><xsl:value-of select="$pdb_seq_num"/></xsl:with-param>
+              <xsl:with-param name="pdb_ins_code"><xsl:value-of select="$pdb_ins_code"/></xsl:with-param>
+              <xsl:with-param name="alt_id"><xsl:value-of select="."/></xsl:with-param>
+            </xsl:call-template>
+          </xsl:for-each>
+        </xsl:otherwise>
+      </xsl:choose>
+
+    </xsl:if>
 
   </xsl:template>
 
