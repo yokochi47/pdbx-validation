@@ -20539,6 +20539,20 @@
       <PDBov:has_struct_mon_protCategory>
          <PDBov:struct_mon_protCategory rdf:about="https://rdf.wwpdb.org/pdb-validation/5B1L/struct_mon_protCategory">
             <PDBov:has_struct_mon_prot>
+               <PDBov:struct_mon_prot rdf:about="https://rdf.wwpdb.org/pdb-validation/5B1L/struct_mon_prot/1">
+                  <PDBov:of_datablock rdf:resource="https://rdf.wwpdb.org/pdb-validation/5B1L"/>
+                  <PDBov:struct_mon_prot.pdbx_id>1</PDBov:struct_mon_prot.pdbx_id>
+                  <PDBov:struct_mon_prot.PDB_model_num>1</PDBov:struct_mon_prot.PDB_model_num>
+                  <PDBov:struct_mon_prot.auth_asym_id>A</PDBov:struct_mon_prot.auth_asym_id>
+                  <PDBov:struct_mon_prot.auth_comp_id>PRO</PDBov:struct_mon_prot.auth_comp_id>
+                  <PDBov:struct_mon_prot.auth_seq_id>38</PDBov:struct_mon_prot.auth_seq_id>
+                  <PDBov:struct_mon_prot.RSCC_all>0.875</PDBov:struct_mon_prot.RSCC_all>
+                  <PDBov:struct_mon_prot.RSR_all>0.244</PDBov:struct_mon_prot.RSR_all>
+                  <PDBov:struct_mon_prot.mean_B_all>70.930</PDBov:struct_mon_prot.mean_B_all>
+                  <PDBov:struct_mon_prot.pdbx_rotamer>Cg_exo</PDBov:struct_mon_prot.pdbx_rotamer>
+               </PDBov:struct_mon_prot>
+            </PDBov:has_struct_mon_prot>
+            <PDBov:has_struct_mon_prot>
                <PDBov:struct_mon_prot rdf:about="https://rdf.wwpdb.org/pdb-validation/5B1L/struct_mon_prot/2">
                   <PDBov:of_datablock rdf:resource="https://rdf.wwpdb.org/pdb-validation/5B1L"/>
                   <PDBov:struct_mon_prot.pdbx_id>2</PDBov:struct_mon_prot.pdbx_id>
@@ -22143,6 +22157,34 @@
                </PDBov:struct_mon_prot>
             </PDBov:has_struct_mon_prot>
             <PDBov:has_struct_mon_prot>
+               <PDBov:struct_mon_prot rdf:about="https://rdf.wwpdb.org/pdb-validation/5B1L/struct_mon_prot/97">
+                  <PDBov:of_datablock rdf:resource="https://rdf.wwpdb.org/pdb-validation/5B1L"/>
+                  <PDBov:struct_mon_prot.pdbx_id>97</PDBov:struct_mon_prot.pdbx_id>
+                  <PDBov:struct_mon_prot.PDB_model_num>1</PDBov:struct_mon_prot.PDB_model_num>
+                  <PDBov:struct_mon_prot.auth_asym_id>A</PDBov:struct_mon_prot.auth_asym_id>
+                  <PDBov:struct_mon_prot.auth_comp_id>ARG</PDBov:struct_mon_prot.auth_comp_id>
+                  <PDBov:struct_mon_prot.auth_seq_id>134</PDBov:struct_mon_prot.auth_seq_id>
+                  <PDBov:struct_mon_prot.RSCC_all>0.774</PDBov:struct_mon_prot.RSCC_all>
+                  <PDBov:struct_mon_prot.RSR_all>0.224</PDBov:struct_mon_prot.RSR_all>
+                  <PDBov:struct_mon_prot.mean_B_all>62.350</PDBov:struct_mon_prot.mean_B_all>
+                  <PDBov:struct_mon_prot.pdbx_rotamer>mtp-105</PDBov:struct_mon_prot.pdbx_rotamer>
+               </PDBov:struct_mon_prot>
+            </PDBov:has_struct_mon_prot>
+            <PDBov:has_struct_mon_prot>
+               <PDBov:struct_mon_prot rdf:about="https://rdf.wwpdb.org/pdb-validation/5B1L/struct_mon_prot/119">
+                  <PDBov:of_datablock rdf:resource="https://rdf.wwpdb.org/pdb-validation/5B1L"/>
+                  <PDBov:struct_mon_prot.pdbx_id>119</PDBov:struct_mon_prot.pdbx_id>
+                  <PDBov:struct_mon_prot.PDB_model_num>1</PDBov:struct_mon_prot.PDB_model_num>
+                  <PDBov:struct_mon_prot.auth_asym_id>B</PDBov:struct_mon_prot.auth_asym_id>
+                  <PDBov:struct_mon_prot.auth_comp_id>ASN</PDBov:struct_mon_prot.auth_comp_id>
+                  <PDBov:struct_mon_prot.auth_seq_id>25</PDBov:struct_mon_prot.auth_seq_id>
+                  <PDBov:struct_mon_prot.RSCC_all>0.864</PDBov:struct_mon_prot.RSCC_all>
+                  <PDBov:struct_mon_prot.RSR_all>0.196</PDBov:struct_mon_prot.RSR_all>
+                  <PDBov:struct_mon_prot.mean_B_all>58.160</PDBov:struct_mon_prot.mean_B_all>
+                  <PDBov:struct_mon_prot.pdbx_rotamer>m-20</PDBov:struct_mon_prot.pdbx_rotamer>
+               </PDBov:struct_mon_prot>
+            </PDBov:has_struct_mon_prot>
+            <PDBov:has_struct_mon_prot>
                <PDBov:struct_mon_prot rdf:about="https://rdf.wwpdb.org/pdb-validation/5B1L/struct_mon_prot/120">
                   <PDBov:of_datablock rdf:resource="https://rdf.wwpdb.org/pdb-validation/5B1L"/>
                   <PDBov:struct_mon_prot.pdbx_id>120</PDBov:struct_mon_prot.pdbx_id>
@@ -23418,6 +23460,20 @@
                   <PDBov:struct_mon_prot.phi>125.7</PDBov:struct_mon_prot.phi>
                   <PDBov:struct_mon_prot.psi>7.2</PDBov:struct_mon_prot.psi>
                   <PDBov:struct_mon_prot.pdbx_Ramachandran_region>Favored</PDBov:struct_mon_prot.pdbx_Ramachandran_region>
+               </PDBov:struct_mon_prot>
+            </PDBov:has_struct_mon_prot>
+            <PDBov:has_struct_mon_prot>
+               <PDBov:struct_mon_prot rdf:about="https://rdf.wwpdb.org/pdb-validation/5B1L/struct_mon_prot/208">
+                  <PDBov:of_datablock rdf:resource="https://rdf.wwpdb.org/pdb-validation/5B1L"/>
+                  <PDBov:struct_mon_prot.pdbx_id>208</PDBov:struct_mon_prot.pdbx_id>
+                  <PDBov:struct_mon_prot.PDB_model_num>1</PDBov:struct_mon_prot.PDB_model_num>
+                  <PDBov:struct_mon_prot.auth_asym_id>C</PDBov:struct_mon_prot.auth_asym_id>
+                  <PDBov:struct_mon_prot.auth_comp_id>ARG</PDBov:struct_mon_prot.auth_comp_id>
+                  <PDBov:struct_mon_prot.auth_seq_id>11</PDBov:struct_mon_prot.auth_seq_id>
+                  <PDBov:struct_mon_prot.RSCC_all>0.805</PDBov:struct_mon_prot.RSCC_all>
+                  <PDBov:struct_mon_prot.RSR_all>0.411</PDBov:struct_mon_prot.RSR_all>
+                  <PDBov:struct_mon_prot.mean_B_all>72.760</PDBov:struct_mon_prot.mean_B_all>
+                  <PDBov:struct_mon_prot.pdbx_rotamer>tpt180</PDBov:struct_mon_prot.pdbx_rotamer>
                </PDBov:struct_mon_prot>
             </PDBov:has_struct_mon_prot>
             <PDBov:has_struct_mon_prot>
@@ -25201,6 +25257,20 @@
                </PDBov:struct_mon_prot>
             </PDBov:has_struct_mon_prot>
             <PDBov:has_struct_mon_prot>
+               <PDBov:struct_mon_prot rdf:about="https://rdf.wwpdb.org/pdb-validation/5B1L/struct_mon_prot/315">
+                  <PDBov:of_datablock rdf:resource="https://rdf.wwpdb.org/pdb-validation/5B1L"/>
+                  <PDBov:struct_mon_prot.pdbx_id>315</PDBov:struct_mon_prot.pdbx_id>
+                  <PDBov:struct_mon_prot.PDB_model_num>1</PDBov:struct_mon_prot.PDB_model_num>
+                  <PDBov:struct_mon_prot.auth_asym_id>C</PDBov:struct_mon_prot.auth_asym_id>
+                  <PDBov:struct_mon_prot.auth_comp_id>LYS</PDBov:struct_mon_prot.auth_comp_id>
+                  <PDBov:struct_mon_prot.auth_seq_id>118</PDBov:struct_mon_prot.auth_seq_id>
+                  <PDBov:struct_mon_prot.RSCC_all>0.671</PDBov:struct_mon_prot.RSCC_all>
+                  <PDBov:struct_mon_prot.RSR_all>0.579</PDBov:struct_mon_prot.RSR_all>
+                  <PDBov:struct_mon_prot.mean_B_all>70.250</PDBov:struct_mon_prot.mean_B_all>
+                  <PDBov:struct_mon_prot.pdbx_rotamer>mtmt</PDBov:struct_mon_prot.pdbx_rotamer>
+               </PDBov:struct_mon_prot>
+            </PDBov:has_struct_mon_prot>
+            <PDBov:has_struct_mon_prot>
                <PDBov:struct_mon_prot rdf:about="https://rdf.wwpdb.org/pdb-validation/5B1L/struct_mon_prot/340">
                   <PDBov:of_datablock rdf:resource="https://rdf.wwpdb.org/pdb-validation/5B1L"/>
                   <PDBov:struct_mon_prot.pdbx_id>340</PDBov:struct_mon_prot.pdbx_id>
@@ -26733,6 +26803,34 @@
                   <PDBov:struct_mon_prot.psi>-26.8</PDBov:struct_mon_prot.psi>
                   <PDBov:struct_mon_prot.pdbx_Ramachandran_region>Favored</PDBov:struct_mon_prot.pdbx_Ramachandran_region>
                   <PDBov:struct_mon_prot.pdbx_rotamer>p</PDBov:struct_mon_prot.pdbx_rotamer>
+               </PDBov:struct_mon_prot>
+            </PDBov:has_struct_mon_prot>
+            <PDBov:has_struct_mon_prot>
+               <PDBov:struct_mon_prot rdf:about="https://rdf.wwpdb.org/pdb-validation/5B1L/struct_mon_prot/431">
+                  <PDBov:of_datablock rdf:resource="https://rdf.wwpdb.org/pdb-validation/5B1L"/>
+                  <PDBov:struct_mon_prot.pdbx_id>431</PDBov:struct_mon_prot.pdbx_id>
+                  <PDBov:struct_mon_prot.PDB_model_num>1</PDBov:struct_mon_prot.PDB_model_num>
+                  <PDBov:struct_mon_prot.auth_asym_id>D</PDBov:struct_mon_prot.auth_asym_id>
+                  <PDBov:struct_mon_prot.auth_comp_id>SER</PDBov:struct_mon_prot.auth_comp_id>
+                  <PDBov:struct_mon_prot.auth_seq_id>124</PDBov:struct_mon_prot.auth_seq_id>
+                  <PDBov:struct_mon_prot.RSCC_all>0.866</PDBov:struct_mon_prot.RSCC_all>
+                  <PDBov:struct_mon_prot.RSR_all>0.160</PDBov:struct_mon_prot.RSR_all>
+                  <PDBov:struct_mon_prot.mean_B_all>59.580</PDBov:struct_mon_prot.mean_B_all>
+                  <PDBov:struct_mon_prot.pdbx_rotamer>m</PDBov:struct_mon_prot.pdbx_rotamer>
+               </PDBov:struct_mon_prot>
+            </PDBov:has_struct_mon_prot>
+            <PDBov:has_struct_mon_prot>
+               <PDBov:struct_mon_prot rdf:about="https://rdf.wwpdb.org/pdb-validation/5B1L/struct_mon_prot/449">
+                  <PDBov:of_datablock rdf:resource="https://rdf.wwpdb.org/pdb-validation/5B1L"/>
+                  <PDBov:struct_mon_prot.pdbx_id>449</PDBov:struct_mon_prot.pdbx_id>
+                  <PDBov:struct_mon_prot.PDB_model_num>1</PDBov:struct_mon_prot.PDB_model_num>
+                  <PDBov:struct_mon_prot.auth_asym_id>E</PDBov:struct_mon_prot.auth_asym_id>
+                  <PDBov:struct_mon_prot.auth_comp_id>PRO</PDBov:struct_mon_prot.auth_comp_id>
+                  <PDBov:struct_mon_prot.auth_seq_id>38</PDBov:struct_mon_prot.auth_seq_id>
+                  <PDBov:struct_mon_prot.RSCC_all>0.878</PDBov:struct_mon_prot.RSCC_all>
+                  <PDBov:struct_mon_prot.RSR_all>0.117</PDBov:struct_mon_prot.RSR_all>
+                  <PDBov:struct_mon_prot.mean_B_all>45.430</PDBov:struct_mon_prot.mean_B_all>
+                  <PDBov:struct_mon_prot.pdbx_rotamer>Cg_exo</PDBov:struct_mon_prot.pdbx_rotamer>
                </PDBov:struct_mon_prot>
             </PDBov:has_struct_mon_prot>
             <PDBov:has_struct_mon_prot>
@@ -28340,6 +28438,34 @@
                </PDBov:struct_mon_prot>
             </PDBov:has_struct_mon_prot>
             <PDBov:has_struct_mon_prot>
+               <PDBov:struct_mon_prot rdf:about="https://rdf.wwpdb.org/pdb-validation/5B1L/struct_mon_prot/545">
+                  <PDBov:of_datablock rdf:resource="https://rdf.wwpdb.org/pdb-validation/5B1L"/>
+                  <PDBov:struct_mon_prot.pdbx_id>545</PDBov:struct_mon_prot.pdbx_id>
+                  <PDBov:struct_mon_prot.PDB_model_num>1</PDBov:struct_mon_prot.PDB_model_num>
+                  <PDBov:struct_mon_prot.auth_asym_id>E</PDBov:struct_mon_prot.auth_asym_id>
+                  <PDBov:struct_mon_prot.auth_comp_id>ARG</PDBov:struct_mon_prot.auth_comp_id>
+                  <PDBov:struct_mon_prot.auth_seq_id>134</PDBov:struct_mon_prot.auth_seq_id>
+                  <PDBov:struct_mon_prot.RSCC_all>0.790</PDBov:struct_mon_prot.RSCC_all>
+                  <PDBov:struct_mon_prot.RSR_all>0.242</PDBov:struct_mon_prot.RSR_all>
+                  <PDBov:struct_mon_prot.mean_B_all>65.780</PDBov:struct_mon_prot.mean_B_all>
+                  <PDBov:struct_mon_prot.pdbx_rotamer>mtt180</PDBov:struct_mon_prot.pdbx_rotamer>
+               </PDBov:struct_mon_prot>
+            </PDBov:has_struct_mon_prot>
+            <PDBov:has_struct_mon_prot>
+               <PDBov:struct_mon_prot rdf:about="https://rdf.wwpdb.org/pdb-validation/5B1L/struct_mon_prot/577">
+                  <PDBov:of_datablock rdf:resource="https://rdf.wwpdb.org/pdb-validation/5B1L"/>
+                  <PDBov:struct_mon_prot.pdbx_id>577</PDBov:struct_mon_prot.pdbx_id>
+                  <PDBov:struct_mon_prot.PDB_model_num>1</PDBov:struct_mon_prot.PDB_model_num>
+                  <PDBov:struct_mon_prot.auth_asym_id>F</PDBov:struct_mon_prot.auth_asym_id>
+                  <PDBov:struct_mon_prot.auth_comp_id>ARG</PDBov:struct_mon_prot.auth_comp_id>
+                  <PDBov:struct_mon_prot.auth_seq_id>19</PDBov:struct_mon_prot.auth_seq_id>
+                  <PDBov:struct_mon_prot.RSCC_all>0.670</PDBov:struct_mon_prot.RSCC_all>
+                  <PDBov:struct_mon_prot.RSR_all>0.236</PDBov:struct_mon_prot.RSR_all>
+                  <PDBov:struct_mon_prot.mean_B_all>68.020</PDBov:struct_mon_prot.mean_B_all>
+                  <PDBov:struct_mon_prot.pdbx_rotamer>mmt180</PDBov:struct_mon_prot.pdbx_rotamer>
+               </PDBov:struct_mon_prot>
+            </PDBov:has_struct_mon_prot>
+            <PDBov:has_struct_mon_prot>
                <PDBov:struct_mon_prot rdf:about="https://rdf.wwpdb.org/pdb-validation/5B1L/struct_mon_prot/578">
                   <PDBov:of_datablock rdf:resource="https://rdf.wwpdb.org/pdb-validation/5B1L"/>
                   <PDBov:struct_mon_prot.pdbx_id>578</PDBov:struct_mon_prot.pdbx_id>
@@ -29717,6 +29843,20 @@
                   <PDBov:struct_mon_prot.phi>-81.0</PDBov:struct_mon_prot.phi>
                   <PDBov:struct_mon_prot.psi>5.8</PDBov:struct_mon_prot.psi>
                   <PDBov:struct_mon_prot.pdbx_Ramachandran_region>Favored</PDBov:struct_mon_prot.pdbx_Ramachandran_region>
+               </PDBov:struct_mon_prot>
+            </PDBov:has_struct_mon_prot>
+            <PDBov:has_struct_mon_prot>
+               <PDBov:struct_mon_prot rdf:about="https://rdf.wwpdb.org/pdb-validation/5B1L/struct_mon_prot/682">
+                  <PDBov:of_datablock rdf:resource="https://rdf.wwpdb.org/pdb-validation/5B1L"/>
+                  <PDBov:struct_mon_prot.pdbx_id>682</PDBov:struct_mon_prot.pdbx_id>
+                  <PDBov:struct_mon_prot.PDB_model_num>1</PDBov:struct_mon_prot.PDB_model_num>
+                  <PDBov:struct_mon_prot.auth_asym_id>G</PDBov:struct_mon_prot.auth_asym_id>
+                  <PDBov:struct_mon_prot.auth_comp_id>LYS</PDBov:struct_mon_prot.auth_comp_id>
+                  <PDBov:struct_mon_prot.auth_seq_id>15</PDBov:struct_mon_prot.auth_seq_id>
+                  <PDBov:struct_mon_prot.RSCC_all>0.776</PDBov:struct_mon_prot.RSCC_all>
+                  <PDBov:struct_mon_prot.RSR_all>0.291</PDBov:struct_mon_prot.RSR_all>
+                  <PDBov:struct_mon_prot.mean_B_all>62.420</PDBov:struct_mon_prot.mean_B_all>
+                  <PDBov:struct_mon_prot.pdbx_rotamer>mttt</PDBov:struct_mon_prot.pdbx_rotamer>
                </PDBov:struct_mon_prot>
             </PDBov:has_struct_mon_prot>
             <PDBov:has_struct_mon_prot>
@@ -31434,6 +31574,34 @@
                </PDBov:struct_mon_prot>
             </PDBov:has_struct_mon_prot>
             <PDBov:has_struct_mon_prot>
+               <PDBov:struct_mon_prot rdf:about="https://rdf.wwpdb.org/pdb-validation/5B1L/struct_mon_prot/785">
+                  <PDBov:of_datablock rdf:resource="https://rdf.wwpdb.org/pdb-validation/5B1L"/>
+                  <PDBov:struct_mon_prot.pdbx_id>785</PDBov:struct_mon_prot.pdbx_id>
+                  <PDBov:struct_mon_prot.PDB_model_num>1</PDBov:struct_mon_prot.PDB_model_num>
+                  <PDBov:struct_mon_prot.auth_asym_id>G</PDBov:struct_mon_prot.auth_asym_id>
+                  <PDBov:struct_mon_prot.auth_comp_id>LYS</PDBov:struct_mon_prot.auth_comp_id>
+                  <PDBov:struct_mon_prot.auth_seq_id>118</PDBov:struct_mon_prot.auth_seq_id>
+                  <PDBov:struct_mon_prot.RSCC_all>0.810</PDBov:struct_mon_prot.RSCC_all>
+                  <PDBov:struct_mon_prot.RSR_all>0.277</PDBov:struct_mon_prot.RSR_all>
+                  <PDBov:struct_mon_prot.mean_B_all>67.760</PDBov:struct_mon_prot.mean_B_all>
+                  <PDBov:struct_mon_prot.pdbx_rotamer>mtmt</PDBov:struct_mon_prot.pdbx_rotamer>
+               </PDBov:struct_mon_prot>
+            </PDBov:has_struct_mon_prot>
+            <PDBov:has_struct_mon_prot>
+               <PDBov:struct_mon_prot rdf:about="https://rdf.wwpdb.org/pdb-validation/5B1L/struct_mon_prot/799">
+                  <PDBov:of_datablock rdf:resource="https://rdf.wwpdb.org/pdb-validation/5B1L"/>
+                  <PDBov:struct_mon_prot.pdbx_id>799</PDBov:struct_mon_prot.pdbx_id>
+                  <PDBov:struct_mon_prot.PDB_model_num>1</PDBov:struct_mon_prot.PDB_model_num>
+                  <PDBov:struct_mon_prot.auth_asym_id>H</PDBov:struct_mon_prot.auth_asym_id>
+                  <PDBov:struct_mon_prot.auth_comp_id>ARG</PDBov:struct_mon_prot.auth_comp_id>
+                  <PDBov:struct_mon_prot.auth_seq_id>33</PDBov:struct_mon_prot.auth_seq_id>
+                  <PDBov:struct_mon_prot.RSCC_all>0.761</PDBov:struct_mon_prot.RSCC_all>
+                  <PDBov:struct_mon_prot.RSR_all>0.328</PDBov:struct_mon_prot.RSR_all>
+                  <PDBov:struct_mon_prot.mean_B_all>63.020</PDBov:struct_mon_prot.mean_B_all>
+                  <PDBov:struct_mon_prot.pdbx_rotamer>mtm180</PDBov:struct_mon_prot.pdbx_rotamer>
+               </PDBov:struct_mon_prot>
+            </PDBov:has_struct_mon_prot>
+            <PDBov:has_struct_mon_prot>
                <PDBov:struct_mon_prot rdf:about="https://rdf.wwpdb.org/pdb-validation/5B1L/struct_mon_prot/800">
                   <PDBov:of_datablock rdf:resource="https://rdf.wwpdb.org/pdb-validation/5B1L"/>
                   <PDBov:struct_mon_prot.pdbx_id>800</PDBov:struct_mon_prot.pdbx_id>
@@ -32949,6 +33117,20 @@
                   <PDBov:struct_mon_prot.psi>-32.1</PDBov:struct_mon_prot.psi>
                   <PDBov:struct_mon_prot.pdbx_Ramachandran_region>Favored</PDBov:struct_mon_prot.pdbx_Ramachandran_region>
                   <PDBov:struct_mon_prot.pdbx_rotamer>m</PDBov:struct_mon_prot.pdbx_rotamer>
+               </PDBov:struct_mon_prot>
+            </PDBov:has_struct_mon_prot>
+            <PDBov:has_struct_mon_prot>
+               <PDBov:struct_mon_prot rdf:about="https://rdf.wwpdb.org/pdb-validation/5B1L/struct_mon_prot/890">
+                  <PDBov:of_datablock rdf:resource="https://rdf.wwpdb.org/pdb-validation/5B1L"/>
+                  <PDBov:struct_mon_prot.pdbx_id>890</PDBov:struct_mon_prot.pdbx_id>
+                  <PDBov:struct_mon_prot.PDB_model_num>1</PDBov:struct_mon_prot.PDB_model_num>
+                  <PDBov:struct_mon_prot.auth_asym_id>H</PDBov:struct_mon_prot.auth_asym_id>
+                  <PDBov:struct_mon_prot.auth_comp_id>SER</PDBov:struct_mon_prot.auth_comp_id>
+                  <PDBov:struct_mon_prot.auth_seq_id>124</PDBov:struct_mon_prot.auth_seq_id>
+                  <PDBov:struct_mon_prot.RSCC_all>0.876</PDBov:struct_mon_prot.RSCC_all>
+                  <PDBov:struct_mon_prot.RSR_all>0.225</PDBov:struct_mon_prot.RSR_all>
+                  <PDBov:struct_mon_prot.mean_B_all>61.170</PDBov:struct_mon_prot.mean_B_all>
+                  <PDBov:struct_mon_prot.pdbx_rotamer>t</PDBov:struct_mon_prot.pdbx_rotamer>
                </PDBov:struct_mon_prot>
             </PDBov:has_struct_mon_prot>
          </PDBov:struct_mon_protCategory>

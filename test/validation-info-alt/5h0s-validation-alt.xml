@@ -151,6 +151,13 @@
       </PDBxv:pdbx_dcc_entity_geometry>
    </PDBxv:pdbx_dcc_entity_geometryCategory>
    <PDBxv:struct_mon_protCategory>
+      <PDBxv:struct_mon_prot pdbx_id="1">
+         <PDBxv:PDB_model_num>1</PDBxv:PDB_model_num>
+         <PDBxv:auth_asym_id>B</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>THR</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>134</PDBxv:auth_seq_id>
+         <PDBxv:pdbx_rotamer>p</PDBxv:pdbx_rotamer>
+      </PDBxv:struct_mon_prot>
       <PDBxv:struct_mon_prot pdbx_id="2">
          <PDBxv:PDB_model_num>1</PDBxv:PDB_model_num>
          <PDBxv:auth_asym_id>B</PDBxv:auth_asym_id>
@@ -560,6 +567,13 @@
          <PDBxv:psi>156.4</PDBxv:psi>
          <PDBxv:pdbx_Ramachandran_region>Favored</PDBxv:pdbx_Ramachandran_region>
          <PDBxv:pdbx_rotamer>t</PDBxv:pdbx_rotamer>
+      </PDBxv:struct_mon_prot>
+      <PDBxv:struct_mon_prot pdbx_id="43">
+         <PDBxv:PDB_model_num>1</PDBxv:PDB_model_num>
+         <PDBxv:auth_asym_id>B</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>LYS</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>176</PDBxv:auth_seq_id>
+         <PDBxv:pdbx_rotamer>ttpp</PDBxv:pdbx_rotamer>
       </PDBxv:struct_mon_prot>
       <PDBxv:struct_mon_prot pdbx_id="45">
          <PDBxv:PDB_model_num>1</PDBxv:PDB_model_num>
@@ -3125,6 +3139,20 @@
          <PDBxv:psi>86.7</PDBxv:psi>
          <PDBxv:pdbx_Ramachandran_region>Allowed</PDBxv:pdbx_Ramachandran_region>
          <PDBxv:pdbx_rotamer>Cg_endo</PDBxv:pdbx_rotamer>
+      </PDBxv:struct_mon_prot>
+      <PDBxv:struct_mon_prot pdbx_id="305">
+         <PDBxv:PDB_model_num>1</PDBxv:PDB_model_num>
+         <PDBxv:auth_asym_id>B</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>VAL</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>443</PDBxv:auth_seq_id>
+         <PDBxv:pdbx_rotamer>p</PDBxv:pdbx_rotamer>
+      </PDBxv:struct_mon_prot>
+      <PDBxv:struct_mon_prot pdbx_id="306">
+         <PDBxv:PDB_model_num>1</PDBxv:PDB_model_num>
+         <PDBxv:auth_asym_id>B</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>TYR</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>448</PDBxv:auth_seq_id>
+         <PDBxv:pdbx_rotamer>m-85</PDBxv:pdbx_rotamer>
       </PDBxv:struct_mon_prot>
       <PDBxv:struct_mon_prot pdbx_id="307">
          <PDBxv:PDB_model_num>1</PDBxv:PDB_model_num>
@@ -6353,6 +6381,20 @@
          <PDBxv:pdbx_Ramachandran_region>Favored</PDBxv:pdbx_Ramachandran_region>
          <PDBxv:pdbx_rotamer>mt</PDBxv:pdbx_rotamer>
       </PDBxv:struct_mon_prot>
+      <PDBxv:struct_mon_prot pdbx_id="633">
+         <PDBxv:PDB_model_num>1</PDBxv:PDB_model_num>
+         <PDBxv:auth_asym_id>B</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>VAL</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>775</PDBxv:auth_seq_id>
+         <PDBxv:pdbx_rotamer>p</PDBxv:pdbx_rotamer>
+      </PDBxv:struct_mon_prot>
+      <PDBxv:struct_mon_prot pdbx_id="634">
+         <PDBxv:PDB_model_num>1</PDBxv:PDB_model_num>
+         <PDBxv:auth_asym_id>B</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>GLU</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>790</PDBxv:auth_seq_id>
+         <PDBxv:pdbx_rotamer>OUTLIER</PDBxv:pdbx_rotamer>
+      </PDBxv:struct_mon_prot>
       <PDBxv:struct_mon_prot pdbx_id="635">
          <PDBxv:PDB_model_num>1</PDBxv:PDB_model_num>
          <PDBxv:auth_asym_id>B</PDBxv:auth_asym_id>
@@ -6809,6 +6851,20 @@
          <PDBxv:psi>154.4</PDBxv:psi>
          <PDBxv:pdbx_Ramachandran_region>Favored</PDBxv:pdbx_Ramachandran_region>
          <PDBxv:pdbx_rotamer>mm-40</PDBxv:pdbx_rotamer>
+      </PDBxv:struct_mon_prot>
+      <PDBxv:struct_mon_prot pdbx_id="681">
+         <PDBxv:PDB_model_num>1</PDBxv:PDB_model_num>
+         <PDBxv:auth_asym_id>B</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>THR</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>837</PDBxv:auth_seq_id>
+         <PDBxv:pdbx_rotamer>m</PDBxv:pdbx_rotamer>
+      </PDBxv:struct_mon_prot>
+      <PDBxv:struct_mon_prot pdbx_id="682">
+         <PDBxv:PDB_model_num>1</PDBxv:PDB_model_num>
+         <PDBxv:auth_asym_id>B</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>GLU</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>845</PDBxv:auth_seq_id>
+         <PDBxv:pdbx_rotamer>tp10</PDBxv:pdbx_rotamer>
       </PDBxv:struct_mon_prot>
       <PDBxv:struct_mon_prot pdbx_id="683">
          <PDBxv:PDB_model_num>1</PDBxv:PDB_model_num>
@@ -7625,6 +7681,20 @@
          <PDBxv:pdbx_Ramachandran_region>Favored</PDBxv:pdbx_Ramachandran_region>
          <PDBxv:pdbx_rotamer>m</PDBxv:pdbx_rotamer>
       </PDBxv:struct_mon_prot>
+      <PDBxv:struct_mon_prot pdbx_id="765">
+         <PDBxv:PDB_model_num>1</PDBxv:PDB_model_num>
+         <PDBxv:auth_asym_id>B</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>ARG</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>928</PDBxv:auth_seq_id>
+         <PDBxv:pdbx_rotamer>ptp85</PDBxv:pdbx_rotamer>
+      </PDBxv:struct_mon_prot>
+      <PDBxv:struct_mon_prot pdbx_id="766">
+         <PDBxv:PDB_model_num>1</PDBxv:PDB_model_num>
+         <PDBxv:auth_asym_id>B</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>ASN</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>937</PDBxv:auth_seq_id>
+         <PDBxv:pdbx_rotamer>p-10</PDBxv:pdbx_rotamer>
+      </PDBxv:struct_mon_prot>
       <PDBxv:struct_mon_prot pdbx_id="767">
          <PDBxv:PDB_model_num>1</PDBxv:PDB_model_num>
          <PDBxv:auth_asym_id>B</PDBxv:auth_asym_id>
@@ -8141,6 +8211,20 @@
          <PDBxv:pdbx_Ramachandran_region>Favored</PDBxv:pdbx_Ramachandran_region>
          <PDBxv:pdbx_rotamer>mt</PDBxv:pdbx_rotamer>
       </PDBxv:struct_mon_prot>
+      <PDBxv:struct_mon_prot pdbx_id="819">
+         <PDBxv:PDB_model_num>1</PDBxv:PDB_model_num>
+         <PDBxv:auth_asym_id>B</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>THR</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>990</PDBxv:auth_seq_id>
+         <PDBxv:pdbx_rotamer>p</PDBxv:pdbx_rotamer>
+      </PDBxv:struct_mon_prot>
+      <PDBxv:struct_mon_prot pdbx_id="820">
+         <PDBxv:PDB_model_num>1</PDBxv:PDB_model_num>
+         <PDBxv:auth_asym_id>B</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>ASP</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>996</PDBxv:auth_seq_id>
+         <PDBxv:pdbx_rotamer>m-20</PDBxv:pdbx_rotamer>
+      </PDBxv:struct_mon_prot>
       <PDBxv:struct_mon_prot pdbx_id="821">
          <PDBxv:PDB_model_num>1</PDBxv:PDB_model_num>
          <PDBxv:auth_asym_id>B</PDBxv:auth_asym_id>
@@ -8209,6 +8293,20 @@
          <PDBxv:psi>-65.5</PDBxv:psi>
          <PDBxv:pdbx_Ramachandran_region>Allowed</PDBxv:pdbx_Ramachandran_region>
          <PDBxv:pdbx_rotamer>mtt180</PDBxv:pdbx_rotamer>
+      </PDBxv:struct_mon_prot>
+      <PDBxv:struct_mon_prot pdbx_id="828">
+         <PDBxv:PDB_model_num>1</PDBxv:PDB_model_num>
+         <PDBxv:auth_asym_id>B</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>PHE</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>1004</PDBxv:auth_seq_id>
+         <PDBxv:pdbx_rotamer>t80</PDBxv:pdbx_rotamer>
+      </PDBxv:struct_mon_prot>
+      <PDBxv:struct_mon_prot pdbx_id="829">
+         <PDBxv:PDB_model_num>1</PDBxv:PDB_model_num>
+         <PDBxv:auth_asym_id>B</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>MET</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>1014</PDBxv:auth_seq_id>
+         <PDBxv:pdbx_rotamer>ptp</PDBxv:pdbx_rotamer>
       </PDBxv:struct_mon_prot>
       <PDBxv:struct_mon_prot pdbx_id="830">
          <PDBxv:PDB_model_num>1</PDBxv:PDB_model_num>
@@ -18299,6 +18397,20 @@
          <PDBxv:psi>-35.7</PDBxv:psi>
          <PDBxv:pdbx_Ramachandran_region>Favored</PDBxv:pdbx_Ramachandran_region>
          <PDBxv:pdbx_rotamer>mt</PDBxv:pdbx_rotamer>
+      </PDBxv:struct_mon_prot>
+      <PDBxv:struct_mon_prot pdbx_id="1851">
+         <PDBxv:PDB_model_num>1</PDBxv:PDB_model_num>
+         <PDBxv:auth_asym_id>C</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>VAL</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>775</PDBxv:auth_seq_id>
+         <PDBxv:pdbx_rotamer>m</PDBxv:pdbx_rotamer>
+      </PDBxv:struct_mon_prot>
+      <PDBxv:struct_mon_prot pdbx_id="1852">
+         <PDBxv:PDB_model_num>1</PDBxv:PDB_model_num>
+         <PDBxv:auth_asym_id>C</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>GLU</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>790</PDBxv:auth_seq_id>
+         <PDBxv:pdbx_rotamer>tp10</PDBxv:pdbx_rotamer>
       </PDBxv:struct_mon_prot>
       <PDBxv:struct_mon_prot pdbx_id="1853">
          <PDBxv:PDB_model_num>1</PDBxv:PDB_model_num>

@@ -5206,6 +5206,13 @@ INGRNNLIQQKN</PDBxv:pdbx_seq_one_letter_code>
       </PDBxv:pdbx_dcc_entity_geometry>
    </PDBxv:pdbx_dcc_entity_geometryCategory>
    <PDBxv:struct_mon_protCategory>
+      <PDBxv:struct_mon_prot pdbx_id="1">
+         <PDBxv:PDB_model_num>1</PDBxv:PDB_model_num>
+         <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>MET</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>1</PDBxv:auth_seq_id>
+         <PDBxv:pdbx_rotamer>mpp?</PDBxv:pdbx_rotamer>
+      </PDBxv:struct_mon_prot>
       <PDBxv:struct_mon_prot pdbx_id="2">
          <PDBxv:PDB_model_num>1</PDBxv:PDB_model_num>
          <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
@@ -6098,6 +6105,20 @@ INGRNNLIQQKN</PDBxv:pdbx_seq_one_letter_code>
          <PDBxv:psi>-22.2</PDBxv:psi>
          <PDBxv:pdbx_Ramachandran_region>Favored</PDBxv:pdbx_Ramachandran_region>
          <PDBxv:pdbx_rotamer>tptt</PDBxv:pdbx_rotamer>
+      </PDBxv:struct_mon_prot>
+      <PDBxv:struct_mon_prot pdbx_id="92">
+         <PDBxv:PDB_model_num>1</PDBxv:PDB_model_num>
+         <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>ASN</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>92</PDBxv:auth_seq_id>
+         <PDBxv:pdbx_rotamer>t30</PDBxv:pdbx_rotamer>
+      </PDBxv:struct_mon_prot>
+      <PDBxv:struct_mon_prot pdbx_id="110">
+         <PDBxv:PDB_model_num>2</PDBxv:PDB_model_num>
+         <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>MET</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>1</PDBxv:auth_seq_id>
+         <PDBxv:pdbx_rotamer>ttt</PDBxv:pdbx_rotamer>
       </PDBxv:struct_mon_prot>
       <PDBxv:struct_mon_prot pdbx_id="111">
          <PDBxv:PDB_model_num>2</PDBxv:PDB_model_num>
@@ -6992,6 +7013,20 @@ INGRNNLIQQKN</PDBxv:pdbx_seq_one_letter_code>
          <PDBxv:pdbx_Ramachandran_region>Favored</PDBxv:pdbx_Ramachandran_region>
          <PDBxv:pdbx_rotamer>pttt</PDBxv:pdbx_rotamer>
       </PDBxv:struct_mon_prot>
+      <PDBxv:struct_mon_prot pdbx_id="201">
+         <PDBxv:PDB_model_num>2</PDBxv:PDB_model_num>
+         <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>ASN</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>92</PDBxv:auth_seq_id>
+         <PDBxv:pdbx_rotamer>t30</PDBxv:pdbx_rotamer>
+      </PDBxv:struct_mon_prot>
+      <PDBxv:struct_mon_prot pdbx_id="219">
+         <PDBxv:PDB_model_num>3</PDBxv:PDB_model_num>
+         <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>MET</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>1</PDBxv:auth_seq_id>
+         <PDBxv:pdbx_rotamer>mtm</PDBxv:pdbx_rotamer>
+      </PDBxv:struct_mon_prot>
       <PDBxv:struct_mon_prot pdbx_id="220">
          <PDBxv:PDB_model_num>3</PDBxv:PDB_model_num>
          <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
@@ -7884,6 +7919,20 @@ INGRNNLIQQKN</PDBxv:pdbx_seq_one_letter_code>
          <PDBxv:psi>-18.4</PDBxv:psi>
          <PDBxv:pdbx_Ramachandran_region>Favored</PDBxv:pdbx_Ramachandran_region>
          <PDBxv:pdbx_rotamer>ttmm</PDBxv:pdbx_rotamer>
+      </PDBxv:struct_mon_prot>
+      <PDBxv:struct_mon_prot pdbx_id="310">
+         <PDBxv:PDB_model_num>3</PDBxv:PDB_model_num>
+         <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>ASN</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>92</PDBxv:auth_seq_id>
+         <PDBxv:pdbx_rotamer>t30</PDBxv:pdbx_rotamer>
+      </PDBxv:struct_mon_prot>
+      <PDBxv:struct_mon_prot pdbx_id="328">
+         <PDBxv:PDB_model_num>4</PDBxv:PDB_model_num>
+         <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>MET</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>1</PDBxv:auth_seq_id>
+         <PDBxv:pdbx_rotamer>tpt</PDBxv:pdbx_rotamer>
       </PDBxv:struct_mon_prot>
       <PDBxv:struct_mon_prot pdbx_id="329">
          <PDBxv:PDB_model_num>4</PDBxv:PDB_model_num>
@@ -8778,6 +8827,20 @@ INGRNNLIQQKN</PDBxv:pdbx_seq_one_letter_code>
          <PDBxv:pdbx_Ramachandran_region>Favored</PDBxv:pdbx_Ramachandran_region>
          <PDBxv:pdbx_rotamer>tptp</PDBxv:pdbx_rotamer>
       </PDBxv:struct_mon_prot>
+      <PDBxv:struct_mon_prot pdbx_id="419">
+         <PDBxv:PDB_model_num>4</PDBxv:PDB_model_num>
+         <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>ASN</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>92</PDBxv:auth_seq_id>
+         <PDBxv:pdbx_rotamer>t30</PDBxv:pdbx_rotamer>
+      </PDBxv:struct_mon_prot>
+      <PDBxv:struct_mon_prot pdbx_id="437">
+         <PDBxv:PDB_model_num>5</PDBxv:PDB_model_num>
+         <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>MET</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>1</PDBxv:auth_seq_id>
+         <PDBxv:pdbx_rotamer>ptt?</PDBxv:pdbx_rotamer>
+      </PDBxv:struct_mon_prot>
       <PDBxv:struct_mon_prot pdbx_id="438">
          <PDBxv:PDB_model_num>5</PDBxv:PDB_model_num>
          <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
@@ -9670,6 +9733,20 @@ INGRNNLIQQKN</PDBxv:pdbx_seq_one_letter_code>
          <PDBxv:psi>-26.1</PDBxv:psi>
          <PDBxv:pdbx_Ramachandran_region>Favored</PDBxv:pdbx_Ramachandran_region>
          <PDBxv:pdbx_rotamer>mmpt?</PDBxv:pdbx_rotamer>
+      </PDBxv:struct_mon_prot>
+      <PDBxv:struct_mon_prot pdbx_id="528">
+         <PDBxv:PDB_model_num>5</PDBxv:PDB_model_num>
+         <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>ASN</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>92</PDBxv:auth_seq_id>
+         <PDBxv:pdbx_rotamer>t30</PDBxv:pdbx_rotamer>
+      </PDBxv:struct_mon_prot>
+      <PDBxv:struct_mon_prot pdbx_id="546">
+         <PDBxv:PDB_model_num>6</PDBxv:PDB_model_num>
+         <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>MET</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>1</PDBxv:auth_seq_id>
+         <PDBxv:pdbx_rotamer>ttt</PDBxv:pdbx_rotamer>
       </PDBxv:struct_mon_prot>
       <PDBxv:struct_mon_prot pdbx_id="547">
          <PDBxv:PDB_model_num>6</PDBxv:PDB_model_num>
@@ -10564,6 +10641,20 @@ INGRNNLIQQKN</PDBxv:pdbx_seq_one_letter_code>
          <PDBxv:pdbx_Ramachandran_region>Favored</PDBxv:pdbx_Ramachandran_region>
          <PDBxv:pdbx_rotamer>pttt</PDBxv:pdbx_rotamer>
       </PDBxv:struct_mon_prot>
+      <PDBxv:struct_mon_prot pdbx_id="637">
+         <PDBxv:PDB_model_num>6</PDBxv:PDB_model_num>
+         <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>ASN</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>92</PDBxv:auth_seq_id>
+         <PDBxv:pdbx_rotamer>t-20</PDBxv:pdbx_rotamer>
+      </PDBxv:struct_mon_prot>
+      <PDBxv:struct_mon_prot pdbx_id="655">
+         <PDBxv:PDB_model_num>7</PDBxv:PDB_model_num>
+         <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>MET</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>1</PDBxv:auth_seq_id>
+         <PDBxv:pdbx_rotamer>mtt</PDBxv:pdbx_rotamer>
+      </PDBxv:struct_mon_prot>
       <PDBxv:struct_mon_prot pdbx_id="656">
          <PDBxv:PDB_model_num>7</PDBxv:PDB_model_num>
          <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
@@ -11456,6 +11547,20 @@ INGRNNLIQQKN</PDBxv:pdbx_seq_one_letter_code>
          <PDBxv:psi>-18.7</PDBxv:psi>
          <PDBxv:pdbx_Ramachandran_region>Favored</PDBxv:pdbx_Ramachandran_region>
          <PDBxv:pdbx_rotamer>mmmp?</PDBxv:pdbx_rotamer>
+      </PDBxv:struct_mon_prot>
+      <PDBxv:struct_mon_prot pdbx_id="746">
+         <PDBxv:PDB_model_num>7</PDBxv:PDB_model_num>
+         <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>ASN</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>92</PDBxv:auth_seq_id>
+         <PDBxv:pdbx_rotamer>t30</PDBxv:pdbx_rotamer>
+      </PDBxv:struct_mon_prot>
+      <PDBxv:struct_mon_prot pdbx_id="764">
+         <PDBxv:PDB_model_num>8</PDBxv:PDB_model_num>
+         <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>MET</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>1</PDBxv:auth_seq_id>
+         <PDBxv:pdbx_rotamer>mtt</PDBxv:pdbx_rotamer>
       </PDBxv:struct_mon_prot>
       <PDBxv:struct_mon_prot pdbx_id="765">
          <PDBxv:PDB_model_num>8</PDBxv:PDB_model_num>
@@ -12350,6 +12455,20 @@ INGRNNLIQQKN</PDBxv:pdbx_seq_one_letter_code>
          <PDBxv:pdbx_Ramachandran_region>Favored</PDBxv:pdbx_Ramachandran_region>
          <PDBxv:pdbx_rotamer>tttt</PDBxv:pdbx_rotamer>
       </PDBxv:struct_mon_prot>
+      <PDBxv:struct_mon_prot pdbx_id="855">
+         <PDBxv:PDB_model_num>8</PDBxv:PDB_model_num>
+         <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>ASN</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>92</PDBxv:auth_seq_id>
+         <PDBxv:pdbx_rotamer>t-20</PDBxv:pdbx_rotamer>
+      </PDBxv:struct_mon_prot>
+      <PDBxv:struct_mon_prot pdbx_id="873">
+         <PDBxv:PDB_model_num>9</PDBxv:PDB_model_num>
+         <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>MET</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>1</PDBxv:auth_seq_id>
+         <PDBxv:pdbx_rotamer>ptm</PDBxv:pdbx_rotamer>
+      </PDBxv:struct_mon_prot>
       <PDBxv:struct_mon_prot pdbx_id="874">
          <PDBxv:PDB_model_num>9</PDBxv:PDB_model_num>
          <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
@@ -13242,6 +13361,20 @@ INGRNNLIQQKN</PDBxv:pdbx_seq_one_letter_code>
          <PDBxv:psi>-30.2</PDBxv:psi>
          <PDBxv:pdbx_Ramachandran_region>Favored</PDBxv:pdbx_Ramachandran_region>
          <PDBxv:pdbx_rotamer>ttmt</PDBxv:pdbx_rotamer>
+      </PDBxv:struct_mon_prot>
+      <PDBxv:struct_mon_prot pdbx_id="964">
+         <PDBxv:PDB_model_num>9</PDBxv:PDB_model_num>
+         <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>ASN</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>92</PDBxv:auth_seq_id>
+         <PDBxv:pdbx_rotamer>t-20</PDBxv:pdbx_rotamer>
+      </PDBxv:struct_mon_prot>
+      <PDBxv:struct_mon_prot pdbx_id="982">
+         <PDBxv:PDB_model_num>10</PDBxv:PDB_model_num>
+         <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>MET</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>1</PDBxv:auth_seq_id>
+         <PDBxv:pdbx_rotamer>ppp?</PDBxv:pdbx_rotamer>
       </PDBxv:struct_mon_prot>
       <PDBxv:struct_mon_prot pdbx_id="983">
          <PDBxv:PDB_model_num>10</PDBxv:PDB_model_num>
@@ -14136,6 +14269,20 @@ INGRNNLIQQKN</PDBxv:pdbx_seq_one_letter_code>
          <PDBxv:pdbx_Ramachandran_region>Favored</PDBxv:pdbx_Ramachandran_region>
          <PDBxv:pdbx_rotamer>mttm</PDBxv:pdbx_rotamer>
       </PDBxv:struct_mon_prot>
+      <PDBxv:struct_mon_prot pdbx_id="1073">
+         <PDBxv:PDB_model_num>10</PDBxv:PDB_model_num>
+         <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>ASN</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>92</PDBxv:auth_seq_id>
+         <PDBxv:pdbx_rotamer>t30</PDBxv:pdbx_rotamer>
+      </PDBxv:struct_mon_prot>
+      <PDBxv:struct_mon_prot pdbx_id="1091">
+         <PDBxv:PDB_model_num>11</PDBxv:PDB_model_num>
+         <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>MET</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>1</PDBxv:auth_seq_id>
+         <PDBxv:pdbx_rotamer>ptt?</PDBxv:pdbx_rotamer>
+      </PDBxv:struct_mon_prot>
       <PDBxv:struct_mon_prot pdbx_id="1092">
          <PDBxv:PDB_model_num>11</PDBxv:PDB_model_num>
          <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
@@ -15028,6 +15175,20 @@ INGRNNLIQQKN</PDBxv:pdbx_seq_one_letter_code>
          <PDBxv:psi>-23.9</PDBxv:psi>
          <PDBxv:pdbx_Ramachandran_region>Favored</PDBxv:pdbx_Ramachandran_region>
          <PDBxv:pdbx_rotamer>mmmm</PDBxv:pdbx_rotamer>
+      </PDBxv:struct_mon_prot>
+      <PDBxv:struct_mon_prot pdbx_id="1182">
+         <PDBxv:PDB_model_num>11</PDBxv:PDB_model_num>
+         <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>ASN</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>92</PDBxv:auth_seq_id>
+         <PDBxv:pdbx_rotamer>t-20</PDBxv:pdbx_rotamer>
+      </PDBxv:struct_mon_prot>
+      <PDBxv:struct_mon_prot pdbx_id="1200">
+         <PDBxv:PDB_model_num>12</PDBxv:PDB_model_num>
+         <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>MET</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>1</PDBxv:auth_seq_id>
+         <PDBxv:pdbx_rotamer>pmm?</PDBxv:pdbx_rotamer>
       </PDBxv:struct_mon_prot>
       <PDBxv:struct_mon_prot pdbx_id="1201">
          <PDBxv:PDB_model_num>12</PDBxv:PDB_model_num>
@@ -15922,6 +16083,20 @@ INGRNNLIQQKN</PDBxv:pdbx_seq_one_letter_code>
          <PDBxv:pdbx_Ramachandran_region>Favored</PDBxv:pdbx_Ramachandran_region>
          <PDBxv:pdbx_rotamer>mmmt</PDBxv:pdbx_rotamer>
       </PDBxv:struct_mon_prot>
+      <PDBxv:struct_mon_prot pdbx_id="1291">
+         <PDBxv:PDB_model_num>12</PDBxv:PDB_model_num>
+         <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>ASN</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>92</PDBxv:auth_seq_id>
+         <PDBxv:pdbx_rotamer>t-20</PDBxv:pdbx_rotamer>
+      </PDBxv:struct_mon_prot>
+      <PDBxv:struct_mon_prot pdbx_id="1309">
+         <PDBxv:PDB_model_num>13</PDBxv:PDB_model_num>
+         <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>MET</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>1</PDBxv:auth_seq_id>
+         <PDBxv:pdbx_rotamer>mtp</PDBxv:pdbx_rotamer>
+      </PDBxv:struct_mon_prot>
       <PDBxv:struct_mon_prot pdbx_id="1310">
          <PDBxv:PDB_model_num>13</PDBxv:PDB_model_num>
          <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
@@ -16814,6 +16989,20 @@ INGRNNLIQQKN</PDBxv:pdbx_seq_one_letter_code>
          <PDBxv:psi>-27.9</PDBxv:psi>
          <PDBxv:pdbx_Ramachandran_region>Favored</PDBxv:pdbx_Ramachandran_region>
          <PDBxv:pdbx_rotamer>tttp</PDBxv:pdbx_rotamer>
+      </PDBxv:struct_mon_prot>
+      <PDBxv:struct_mon_prot pdbx_id="1400">
+         <PDBxv:PDB_model_num>13</PDBxv:PDB_model_num>
+         <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>ASN</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>92</PDBxv:auth_seq_id>
+         <PDBxv:pdbx_rotamer>t-20</PDBxv:pdbx_rotamer>
+      </PDBxv:struct_mon_prot>
+      <PDBxv:struct_mon_prot pdbx_id="1418">
+         <PDBxv:PDB_model_num>14</PDBxv:PDB_model_num>
+         <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>MET</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>1</PDBxv:auth_seq_id>
+         <PDBxv:pdbx_rotamer>pmm?</PDBxv:pdbx_rotamer>
       </PDBxv:struct_mon_prot>
       <PDBxv:struct_mon_prot pdbx_id="1419">
          <PDBxv:PDB_model_num>14</PDBxv:PDB_model_num>
@@ -17708,6 +17897,20 @@ INGRNNLIQQKN</PDBxv:pdbx_seq_one_letter_code>
          <PDBxv:pdbx_Ramachandran_region>Favored</PDBxv:pdbx_Ramachandran_region>
          <PDBxv:pdbx_rotamer>mttp</PDBxv:pdbx_rotamer>
       </PDBxv:struct_mon_prot>
+      <PDBxv:struct_mon_prot pdbx_id="1509">
+         <PDBxv:PDB_model_num>14</PDBxv:PDB_model_num>
+         <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>ASN</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>92</PDBxv:auth_seq_id>
+         <PDBxv:pdbx_rotamer>t30</PDBxv:pdbx_rotamer>
+      </PDBxv:struct_mon_prot>
+      <PDBxv:struct_mon_prot pdbx_id="1527">
+         <PDBxv:PDB_model_num>15</PDBxv:PDB_model_num>
+         <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>MET</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>1</PDBxv:auth_seq_id>
+         <PDBxv:pdbx_rotamer>ptp</PDBxv:pdbx_rotamer>
+      </PDBxv:struct_mon_prot>
       <PDBxv:struct_mon_prot pdbx_id="1528">
          <PDBxv:PDB_model_num>15</PDBxv:PDB_model_num>
          <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
@@ -18600,6 +18803,20 @@ INGRNNLIQQKN</PDBxv:pdbx_seq_one_letter_code>
          <PDBxv:psi>-30.0</PDBxv:psi>
          <PDBxv:pdbx_Ramachandran_region>Favored</PDBxv:pdbx_Ramachandran_region>
          <PDBxv:pdbx_rotamer>ptpp?</PDBxv:pdbx_rotamer>
+      </PDBxv:struct_mon_prot>
+      <PDBxv:struct_mon_prot pdbx_id="1618">
+         <PDBxv:PDB_model_num>15</PDBxv:PDB_model_num>
+         <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>ASN</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>92</PDBxv:auth_seq_id>
+         <PDBxv:pdbx_rotamer>t30</PDBxv:pdbx_rotamer>
+      </PDBxv:struct_mon_prot>
+      <PDBxv:struct_mon_prot pdbx_id="1636">
+         <PDBxv:PDB_model_num>16</PDBxv:PDB_model_num>
+         <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>MET</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>1</PDBxv:auth_seq_id>
+         <PDBxv:pdbx_rotamer>ptp</PDBxv:pdbx_rotamer>
       </PDBxv:struct_mon_prot>
       <PDBxv:struct_mon_prot pdbx_id="1637">
          <PDBxv:PDB_model_num>16</PDBxv:PDB_model_num>
@@ -19494,6 +19711,20 @@ INGRNNLIQQKN</PDBxv:pdbx_seq_one_letter_code>
          <PDBxv:pdbx_Ramachandran_region>Favored</PDBxv:pdbx_Ramachandran_region>
          <PDBxv:pdbx_rotamer>tttt</PDBxv:pdbx_rotamer>
       </PDBxv:struct_mon_prot>
+      <PDBxv:struct_mon_prot pdbx_id="1727">
+         <PDBxv:PDB_model_num>16</PDBxv:PDB_model_num>
+         <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>ASN</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>92</PDBxv:auth_seq_id>
+         <PDBxv:pdbx_rotamer>t30</PDBxv:pdbx_rotamer>
+      </PDBxv:struct_mon_prot>
+      <PDBxv:struct_mon_prot pdbx_id="1745">
+         <PDBxv:PDB_model_num>17</PDBxv:PDB_model_num>
+         <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>MET</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>1</PDBxv:auth_seq_id>
+         <PDBxv:pdbx_rotamer>ttt</PDBxv:pdbx_rotamer>
+      </PDBxv:struct_mon_prot>
       <PDBxv:struct_mon_prot pdbx_id="1746">
          <PDBxv:PDB_model_num>17</PDBxv:PDB_model_num>
          <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
@@ -20386,6 +20617,20 @@ INGRNNLIQQKN</PDBxv:pdbx_seq_one_letter_code>
          <PDBxv:psi>-29.9</PDBxv:psi>
          <PDBxv:pdbx_Ramachandran_region>Favored</PDBxv:pdbx_Ramachandran_region>
          <PDBxv:pdbx_rotamer>ttmm</PDBxv:pdbx_rotamer>
+      </PDBxv:struct_mon_prot>
+      <PDBxv:struct_mon_prot pdbx_id="1836">
+         <PDBxv:PDB_model_num>17</PDBxv:PDB_model_num>
+         <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>ASN</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>92</PDBxv:auth_seq_id>
+         <PDBxv:pdbx_rotamer>t30</PDBxv:pdbx_rotamer>
+      </PDBxv:struct_mon_prot>
+      <PDBxv:struct_mon_prot pdbx_id="1854">
+         <PDBxv:PDB_model_num>18</PDBxv:PDB_model_num>
+         <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>MET</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>1</PDBxv:auth_seq_id>
+         <PDBxv:pdbx_rotamer>mpt?</PDBxv:pdbx_rotamer>
       </PDBxv:struct_mon_prot>
       <PDBxv:struct_mon_prot pdbx_id="1855">
          <PDBxv:PDB_model_num>18</PDBxv:PDB_model_num>
@@ -21280,6 +21525,20 @@ INGRNNLIQQKN</PDBxv:pdbx_seq_one_letter_code>
          <PDBxv:pdbx_Ramachandran_region>Favored</PDBxv:pdbx_Ramachandran_region>
          <PDBxv:pdbx_rotamer>pttm</PDBxv:pdbx_rotamer>
       </PDBxv:struct_mon_prot>
+      <PDBxv:struct_mon_prot pdbx_id="1945">
+         <PDBxv:PDB_model_num>18</PDBxv:PDB_model_num>
+         <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>ASN</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>92</PDBxv:auth_seq_id>
+         <PDBxv:pdbx_rotamer>t30</PDBxv:pdbx_rotamer>
+      </PDBxv:struct_mon_prot>
+      <PDBxv:struct_mon_prot pdbx_id="1963">
+         <PDBxv:PDB_model_num>19</PDBxv:PDB_model_num>
+         <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>MET</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>1</PDBxv:auth_seq_id>
+         <PDBxv:pdbx_rotamer>tpp</PDBxv:pdbx_rotamer>
+      </PDBxv:struct_mon_prot>
       <PDBxv:struct_mon_prot pdbx_id="1964">
          <PDBxv:PDB_model_num>19</PDBxv:PDB_model_num>
          <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
@@ -22173,6 +22432,20 @@ INGRNNLIQQKN</PDBxv:pdbx_seq_one_letter_code>
          <PDBxv:pdbx_Ramachandran_region>Favored</PDBxv:pdbx_Ramachandran_region>
          <PDBxv:pdbx_rotamer>tttt</PDBxv:pdbx_rotamer>
       </PDBxv:struct_mon_prot>
+      <PDBxv:struct_mon_prot pdbx_id="2054">
+         <PDBxv:PDB_model_num>19</PDBxv:PDB_model_num>
+         <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>ASN</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>92</PDBxv:auth_seq_id>
+         <PDBxv:pdbx_rotamer>p30</PDBxv:pdbx_rotamer>
+      </PDBxv:struct_mon_prot>
+      <PDBxv:struct_mon_prot pdbx_id="2072">
+         <PDBxv:PDB_model_num>20</PDBxv:PDB_model_num>
+         <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>MET</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>1</PDBxv:auth_seq_id>
+         <PDBxv:pdbx_rotamer>mtt</PDBxv:pdbx_rotamer>
+      </PDBxv:struct_mon_prot>
       <PDBxv:struct_mon_prot pdbx_id="2073">
          <PDBxv:PDB_model_num>20</PDBxv:PDB_model_num>
          <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
@@ -23065,6 +23338,13 @@ INGRNNLIQQKN</PDBxv:pdbx_seq_one_letter_code>
          <PDBxv:psi>-18.2</PDBxv:psi>
          <PDBxv:pdbx_Ramachandran_region>Favored</PDBxv:pdbx_Ramachandran_region>
          <PDBxv:pdbx_rotamer>tptt</PDBxv:pdbx_rotamer>
+      </PDBxv:struct_mon_prot>
+      <PDBxv:struct_mon_prot pdbx_id="2163">
+         <PDBxv:PDB_model_num>20</PDBxv:PDB_model_num>
+         <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
+         <PDBxv:auth_comp_id>ASN</PDBxv:auth_comp_id>
+         <PDBxv:auth_seq_id>92</PDBxv:auth_seq_id>
+         <PDBxv:pdbx_rotamer>t-20</PDBxv:pdbx_rotamer>
       </PDBxv:struct_mon_prot>
    </PDBxv:struct_mon_protCategory>
    <PDBxv:struct_mon_nuclCategory>

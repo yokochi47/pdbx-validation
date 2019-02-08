@@ -31,6 +31,16 @@
                      chain="B"
                      said="A"
                      ent="1"
+                     resname="THR"
+                     seq="134"
+                     resnum="134"
+                     icode=""
+                     altcode=""
+                     rota="p"/>
+   <ModelledSubgroup model="1"
+                     chain="B"
+                     said="A"
+                     ent="1"
                      resname="LYS"
                      seq="135"
                      resnum="135"
@@ -622,6 +632,16 @@
                      psi="156.4"
                      rama="Favored"
                      rota="t"/>
+   <ModelledSubgroup model="1"
+                     chain="B"
+                     said="A"
+                     ent="1"
+                     resname="LYS"
+                     seq="176"
+                     resnum="176"
+                     icode=""
+                     altcode=""
+                     rota="ttpp"/>
    <ModelledSubgroup model="1"
                      chain="B"
                      said="A"
@@ -4349,6 +4369,26 @@
       <clash cid="204" atom="CB" dist="2.39" clashmag="0.86"/>
       <clash cid="205" atom="HB3" dist="1.99" clashmag="0.43"/>
    </ModelledSubgroup>
+   <ModelledSubgroup model="1"
+                     chain="B"
+                     said="A"
+                     ent="1"
+                     resname="VAL"
+                     seq="443"
+                     resnum="443"
+                     icode=""
+                     altcode=""
+                     rota="p"/>
+   <ModelledSubgroup model="1"
+                     chain="B"
+                     said="A"
+                     ent="1"
+                     resname="TYR"
+                     seq="448"
+                     resnum="448"
+                     icode=""
+                     altcode=""
+                     rota="m-85"/>
    <ModelledSubgroup model="1"
                      chain="B"
                      said="A"
@@ -8994,6 +9034,28 @@
                      chain="B"
                      said="A"
                      ent="1"
+                     resname="VAL"
+                     seq="775"
+                     resnum="775"
+                     icode=""
+                     altcode=""
+                     rota="p">
+      <clash cid="346" atom="HG12" dist="1.81" clashmag="0.61"/>
+   </ModelledSubgroup>
+   <ModelledSubgroup model="1"
+                     chain="B"
+                     said="A"
+                     ent="1"
+                     resname="GLU"
+                     seq="790"
+                     resnum="790"
+                     icode=""
+                     altcode=""
+                     rota="OUTLIER"/>
+   <ModelledSubgroup model="1"
+                     chain="B"
+                     said="A"
+                     ent="1"
                      resname="ILE"
                      seq="791"
                      resnum="791"
@@ -9623,6 +9685,30 @@
                      psi="154.4"
                      rama="Favored"
                      rota="mm-40"/>
+   <ModelledSubgroup model="1"
+                     chain="B"
+                     said="A"
+                     ent="1"
+                     resname="THR"
+                     seq="837"
+                     resnum="837"
+                     icode=""
+                     altcode=""
+                     rota="m"/>
+   <ModelledSubgroup model="1"
+                     chain="B"
+                     said="A"
+                     ent="1"
+                     resname="GLU"
+                     seq="845"
+                     resnum="845"
+                     icode=""
+                     altcode=""
+                     rota="tp10"
+                     cis_peptide="yes">
+      <clash cid="366" atom="HG2" dist="1.98" clashmag="0.46"/>
+      <clash cid="367" atom="N" dist="2.26" clashmag="0.49"/>
+   </ModelledSubgroup>
    <ModelledSubgroup model="1"
                      chain="B"
                      said="A"
@@ -10831,6 +10917,33 @@
                      chain="B"
                      said="A"
                      ent="1"
+                     resname="ARG"
+                     seq="928"
+                     resnum="928"
+                     icode=""
+                     altcode=""
+                     rota="ptp85">
+      <clash cid="404" atom="HD3" dist="2.21" clashmag="0.40"/>
+      <clash cid="409" atom="NH1" dist="2.51" clashmag="0.84"/>
+      <clash cid="414" atom="CZ" dist="2.40" clashmag="0.51"/>
+      <clash cid="415" atom="NH2" dist="2.36" clashmag="0.40"/>
+   </ModelledSubgroup>
+   <ModelledSubgroup model="1"
+                     chain="B"
+                     said="A"
+                     ent="1"
+                     resname="ASN"
+                     seq="937"
+                     resnum="937"
+                     icode=""
+                     altcode=""
+                     rota="p-10">
+      <clash cid="418" atom="N" dist="2.30" clashmag="0.46"/>
+   </ModelledSubgroup>
+   <ModelledSubgroup model="1"
+                     chain="B"
+                     said="A"
+                     ent="1"
                      resname="ASN"
                      seq="938"
                      resnum="938"
@@ -11568,6 +11681,28 @@
                      chain="B"
                      said="A"
                      ent="1"
+                     resname="THR"
+                     seq="990"
+                     resnum="990"
+                     icode=""
+                     altcode=""
+                     rota="p"/>
+   <ModelledSubgroup model="1"
+                     chain="B"
+                     said="A"
+                     ent="1"
+                     resname="ASP"
+                     seq="996"
+                     resnum="996"
+                     icode=""
+                     altcode=""
+                     rota="m-20">
+      <clash cid="430" atom="HB2" dist="1.94" clashmag="0.49"/>
+   </ModelledSubgroup>
+   <ModelledSubgroup model="1"
+                     chain="B"
+                     said="A"
+                     ent="1"
                      resname="TYR"
                      seq="997"
                      resnum="997"
@@ -11656,6 +11791,26 @@
                      psi="-65.5"
                      rama="Allowed"
                      rota="mtt180"/>
+   <ModelledSubgroup model="1"
+                     chain="B"
+                     said="A"
+                     ent="1"
+                     resname="PHE"
+                     seq="1004"
+                     resnum="1004"
+                     icode=""
+                     altcode=""
+                     rota="t80"/>
+   <ModelledSubgroup model="1"
+                     chain="B"
+                     said="A"
+                     ent="1"
+                     resname="MET"
+                     seq="1014"
+                     resnum="1014"
+                     icode=""
+                     altcode=""
+                     rota="ptp"/>
    <ModelledSubgroup model="1"
                      chain="B"
                      said="A"
@@ -29186,6 +29341,40 @@
                      mean="115.300"
                      obs="103.545"/>
    </ModelledSubgroup>
+   <ModelledSubgroup model="1"
+                     chain="C"
+                     said="B"
+                     ent="1"
+                     resname="VAL"
+                     seq="775"
+                     resnum="775"
+                     icode=""
+                     altcode=""
+                     rota="m">
+      <bond-outlier atom0="CA"
+                    atom1="CB"
+                    z="5.13"
+                    stdev="0.021"
+                    mean="1.543"
+                    obs="1.651"/>
+      <angle-outlier atom0="CA"
+                     atom1="CB"
+                     atom2="CG2"
+                     z="6.85"
+                     stdev="1.500"
+                     mean="110.900"
+                     obs="121.177"/>
+   </ModelledSubgroup>
+   <ModelledSubgroup model="1"
+                     chain="C"
+                     said="B"
+                     ent="1"
+                     resname="GLU"
+                     seq="790"
+                     resnum="790"
+                     icode=""
+                     altcode=""
+                     rota="tp10"/>
    <ModelledSubgroup model="1"
                      chain="C"
                      said="B"
