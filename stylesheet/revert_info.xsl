@@ -1044,31 +1044,30 @@ Unmatched type exist in _pdbx_nmr_assigned_chem_shift_list.nmr_star_consistency_
   <xsl:template name="modelled_subgroup_model">
     <xsl:param name="model"/>
 
-    <xsl:variable name="asym_ids">
-      <xsl:for-each select="$datablock/PDBxv:pdbx_struct_assembly_genCategory/PDBxv:pdbx_struct_assembly_gen">
-        <xsl:value-of select="concat(@asym_id_list,',')"/>
+    <xsl:variable name="strand_ids">
+      <xsl:for-each select="$datablock/PDBxv:entity_polyCategory/PDBxv:entity_poly">
+        <xsl:value-of select="concat(PDBxv:pdbx_strand_id,',')"/>
       </xsl:for-each>
     </xsl:variable>
 
-    <xsl:for-each select="tokenize(substring($asym_ids,1,string-length($asym_ids)-1),',')">
-      <xsl:variable name="asym_id"><xsl:value-of select="."/></xsl:variable>
-      <xsl:call-template name="modelled_subgroup_asym_id">
+    <xsl:for-each select="tokenize(substring($strand_ids,1,string-length($strand_ids)-1),',')">
+      <xsl:call-template name="modelled_subgroup_strand_id">
         <xsl:with-param name="model"><xsl:value-of select="$model"/></xsl:with-param>
-        <xsl:with-param name="asym_id"><xsl:value-of select="$asym_id"/></xsl:with-param>
+        <xsl:with-param name="strand_id"><xsl:value-of select="."/></xsl:with-param>
       </xsl:call-template>
     </xsl:for-each>
 
   </xsl:template>
 
-  <xsl:template name="modelled_subgroup_asym_id">
+  <xsl:template name="modelled_subgroup_strand_id">
     <xsl:param name="model"/>
-    <xsl:param name="asym_id"/>
+    <xsl:param name="strand_id"/>
 
-    <xsl:for-each select="$datablock/PDBxv:pdbx_poly_seq_schemeCategory/PDBxv:pdbx_poly_seq_scheme[@asym_id=$asym_id]">
+    <xsl:for-each select="$datablock/PDBxv:pdbx_poly_seq_schemeCategory/PDBxv:pdbx_poly_seq_scheme[PDBxv:pdb_strand_id=$strand_id]">
       <xsl:call-template name="modelled_subgroup_mon_id">
         <xsl:with-param name="model"><xsl:value-of select="$model"/></xsl:with-param>
-        <xsl:with-param name="strand_id"><xsl:value-of select="PDBxv:pdb_strand_id"/></xsl:with-param>
-        <xsl:with-param name="asym_id"><xsl:value-of select="$asym_id"/></xsl:with-param>
+        <xsl:with-param name="strand_id"><xsl:value-of select="$strand_id"/></xsl:with-param>
+        <xsl:with-param name="asym_id"><xsl:value-of select="@asym_id"/></xsl:with-param>
         <xsl:with-param name="entity_id"><xsl:value-of select="@entity_id"/></xsl:with-param>
         <xsl:with-param name="mon_id"><xsl:value-of select="@mon_id"/></xsl:with-param>
         <xsl:with-param name="seq_id"><xsl:value-of select="@seq_id"/></xsl:with-param>
@@ -1077,11 +1076,11 @@ Unmatched type exist in _pdbx_nmr_assigned_chem_shift_list.nmr_star_consistency_
       </xsl:call-template>
     </xsl:for-each>
 
-    <xsl:for-each select="$datablock/PDBxv:pdbx_nonpoly_schemeCategory/PDBxv:pdbx_nonpoly_scheme[@asym_id=$asym_id]">
+    <xsl:for-each select="$datablock/PDBxv:pdbx_nonpoly_schemeCategory/PDBxv:pdbx_nonpoly_scheme[PDBxv:pdb_strand_id=$strand_id]">
       <xsl:call-template name="modelled_subgroup_mon_id">
         <xsl:with-param name="model"><xsl:value-of select="$model"/></xsl:with-param>
-        <xsl:with-param name="strand_id"><xsl:value-of select="PDBxv:pdb_strand_id"/></xsl:with-param>
-        <xsl:with-param name="asym_id"><xsl:value-of select="$asym_id"/></xsl:with-param>
+        <xsl:with-param name="strand_id"><xsl:value-of select="$strand_id"/></xsl:with-param>
+        <xsl:with-param name="asym_id"><xsl:value-of select="@asym_id"/></xsl:with-param>
         <xsl:with-param name="entity_id"><xsl:value-of select="PDBxv:entity_id"/></xsl:with-param>
         <xsl:with-param name="mon_id"><xsl:value-of select="PDBxv:mon_id"/></xsl:with-param>
         <xsl:with-param name="seq_id"/>
@@ -1677,31 +1676,30 @@ Unmatched type exist in _pdbx_nmr_assigned_chem_shift_list.nmr_star_consistency_
   <xsl:template name="modelled_entity_instance_model">
     <xsl:param name="model"/>
 
-    <xsl:variable name="asym_ids">
-      <xsl:for-each select="$datablock/PDBxv:pdbx_struct_assembly_genCategory/PDBxv:pdbx_struct_assembly_gen">
-        <xsl:value-of select="concat(@asym_id_list,',')"/>
+    <xsl:variable name="strand_ids">
+      <xsl:for-each select="$datablock/PDBxv:entity_polyCategory/PDBxv:entity_poly">
+        <xsl:value-of select="concat(PDBxv:pdbx_strand_id,',')"/>
       </xsl:for-each>
     </xsl:variable>
 
-    <xsl:for-each select="tokenize(substring($asym_ids,1,string-length($asym_ids)-1),',')">
-      <xsl:variable name="asym_id"><xsl:value-of select="."/></xsl:variable>
-      <xsl:call-template name="modelled_entity_instance_asym_id">
+    <xsl:for-each select="tokenize(substring($strand_ids,1,string-length($strand_ids)-1),',')">
+      <xsl:call-template name="modelled_entity_instance_strand_id">
         <xsl:with-param name="model"><xsl:value-of select="$model"/></xsl:with-param>
-        <xsl:with-param name="asym_id"><xsl:value-of select="$asym_id"/></xsl:with-param>
+        <xsl:with-param name="strand_id"><xsl:value-of select="."/></xsl:with-param>
       </xsl:call-template>
     </xsl:for-each>
 
   </xsl:template>
 
-  <xsl:template name="modelled_entity_instance_asym_id">
+  <xsl:template name="modelled_entity_instance_strand_id">
     <xsl:param name="model"/>
-    <xsl:param name="asym_id"/>
+    <xsl:param name="strand_id"/>
 
     <xsl:variable name="entity_ids">
-      <xsl:for-each select="$datablock/PDBxv:pdbx_percentile_entity_viewCategory/PDBxv:pdbx_percentile_entity_view[@label_asym_id=$asym_id]">
+      <xsl:for-each select="$datablock/PDBxv:pdbx_percentile_entity_viewCategory/PDBxv:pdbx_percentile_entity_view[PDBxv:auth_asym_id=$strand_id]">
         <xsl:value-of select="concat(PDBxv:entity_id,',')"/>
       </xsl:for-each>
-      <xsl:for-each select="$datablock/PDBxv:pdbx_dcc_entity_geometryCategory/PDBxv:pdbx_dcc_entity_geometry[@label_asym_id=$asym_id]">
+      <xsl:for-each select="$datablock/PDBxv:pdbx_dcc_entity_geometryCategory/PDBxv:pdbx_dcc_entity_geometry[PDBxv:auth_asym_id=$strand_id]">
         <xsl:value-of select="concat(PDBxv:entity_id,',')"/>
       </xsl:for-each>
     </xsl:variable>
@@ -1712,7 +1710,7 @@ Unmatched type exist in _pdbx_nmr_assigned_chem_shift_list.nmr_star_consistency_
         <xsl:if test=".!=''">
           <xsl:call-template name="modelled_entity_instance_entity_id">
             <xsl:with-param name="model"><xsl:value-of select="$model"/></xsl:with-param>
-            <xsl:with-param name="asym_id"><xsl:value-of select="$asym_id"/></xsl:with-param>
+            <xsl:with-param name="strand_id"><xsl:value-of select="$strand_id"/></xsl:with-param>
             <xsl:with-param name="entity_id"><xsl:value-of select="."/></xsl:with-param>
           </xsl:call-template>
         </xsl:if>
@@ -1724,27 +1722,27 @@ Unmatched type exist in _pdbx_nmr_assigned_chem_shift_list.nmr_star_consistency_
 
   <xsl:template name="modelled_entity_instance_entity_id">
     <xsl:param name="model"/>
-    <xsl:param name="asym_id"/>
+    <xsl:param name="strand_id"/>
     <xsl:param name="entity_id"/>
 
-    <xsl:variable name="strand_ids">
-      <xsl:for-each select="$datablock/PDBxv:pdbx_percentile_entity_viewCategory/PDBxv:pdbx_percentile_entity_view[@label_asym_id=$asym_id]">
-        <xsl:value-of select="concat(PDBxv:auth_asym_id,',')"/>
+    <xsl:variable name="asym_ids">
+      <xsl:for-each select="$datablock/PDBxv:pdbx_percentile_entity_viewCategory/PDBxv:pdbx_percentile_entity_view[PDBxv:auth_asym_id=$strand_id]">
+        <xsl:value-of select="concat(@label_asym_id,',')"/>
       </xsl:for-each>
-      <xsl:for-each select="$datablock/PDBxv:pdbx_dcc_entity_geometryCategory/PDBxv:pdbx_dcc_entity_geometry[@label_asym_id=$asym_id]">
-        <xsl:value-of select="concat(PDBxv:auth_asym_id,',')"/>
+      <xsl:for-each select="$datablock/PDBxv:pdbx_dcc_entity_geometryCategory/PDBxv:pdbx_dcc_entity_geometry[PDBxv:auth_asym_id=$strand_id]">
+        <xsl:value-of select="concat(@label_asym_id,',')"/>
       </xsl:for-each>
     </xsl:variable>
 
-    <xsl:if test="$strand_ids!=''">
+    <xsl:if test="$asym_ids!=''">
 
-      <xsl:for-each select="distinct-values(tokenize($strand_ids,','))">
+      <xsl:for-each select="distinct-values(tokenize($asym_ids,','))">
         <xsl:if test=".!=''">
-          <xsl:call-template name="modelled_entity_instance_strand_id">
+          <xsl:call-template name="modelled_entity_instance_asym_id">
             <xsl:with-param name="model"><xsl:value-of select="$model"/></xsl:with-param>
-            <xsl:with-param name="asym_id"><xsl:value-of select="$asym_id"/></xsl:with-param>
+            <xsl:with-param name="strand_id"><xsl:value-of select="$strand_id"/></xsl:with-param>
+            <xsl:with-param name="asym_id"><xsl:value-of select="."/></xsl:with-param>
             <xsl:with-param name="entity_id"><xsl:value-of select="$entity_id"/></xsl:with-param>
-            <xsl:with-param name="strand_id"><xsl:value-of select="."/></xsl:with-param>
           </xsl:call-template>
         </xsl:if>
       </xsl:for-each>
@@ -1753,11 +1751,11 @@ Unmatched type exist in _pdbx_nmr_assigned_chem_shift_list.nmr_star_consistency_
 
   </xsl:template>
 
-  <xsl:template name="modelled_entity_instance_strand_id">
+  <xsl:template name="modelled_entity_instance_asym_id">
     <xsl:param name="model"/>
+    <xsl:param name="strand_id"/>
     <xsl:param name="asym_id"/>
     <xsl:param name="entity_id"/>
-    <xsl:param name="strand_id"/>
 
     <ModelledEntityInstance>
 
@@ -1766,9 +1764,9 @@ Unmatched type exist in _pdbx_nmr_assigned_chem_shift_list.nmr_star_consistency_
       <xsl:attribute name="said"><xsl:value-of select="$asym_id"/></xsl:attribute>
       <xsl:attribute name="ent"><xsl:value-of select="$entity_id"/></xsl:attribute>
 
-      <xsl:for-each select="$datablock/PDBxv:pdbx_percentile_entity_viewCategory/PDBxv:pdbx_percentile_entity_view[@label_asym_id=$asym_id]">
+      <xsl:for-each select="$datablock/PDBxv:pdbx_percentile_entity_viewCategory/PDBxv:pdbx_percentile_entity_view[PDBxv:auth_asym_id=$strand_id]">
         <xsl:variable name="type"><xsl:value-of select="@type"/></xsl:variable>
-        <xsl:variable name="conditions_id"><xsl:value-of select="PDBxv:conditions_id"/></xsl:variable>
+        <xsl:variable name="conditions_id"><xsl:value-of select="@conditions_id"/></xsl:variable>
         <xsl:variable name="condition_res_high"><xsl:value-of select="$datablock/PDBxv:pdbx_percentile_conditionsCategory/PDBxv:pdbx_percentile_conditions[@id=$conditions_id]/PDBxv:ls_d_res_high"/></xsl:variable>
         <xsl:variable name="condition_res_low"><xsl:value-of select="$datablock/PDBxv:pdbx_percentile_conditionsCategory/PDBxv:pdbx_percentile_conditions[@id=$conditions_id]/PDBxv:ls_d_res_low"/></xsl:variable>
 
