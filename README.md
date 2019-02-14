@@ -41,7 +41,8 @@ File path | Document
 		- wwPDB/RDF-validation-alt: [5b1l-validation-alt.rdf](https://github.com/yokochi47/pdbx-validation/blob/master/test/RDF-validation-alt/5b1l-validation-alt.rdf)
 	- wwPDB validation report (XML format)
 		- Original source: [5b1l_validation.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/validation-info/5b1l_validation.xml)
-		- Reverted from PDBML-validation: [5b1l_validation.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/validation-info-rev/5b1l_validation.xml)
+		- Reverted from PDBML-validation: [5b1l_validation.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/validation-info-rev-from-full/5b1l_validation.xml)
+		- Reverted from PDBML-validation-alt and PDBML-noatom: [5b1l_validation.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/validation-info-rev-from-alt/5b1l_validation.xml)
 
 - PDB ID: [5U9B](https://pdbj.org/mine/summary/5u9b), Exptl. method: SOLUTION NMR
 	- PDBx/mmCIF format
@@ -55,7 +56,8 @@ File path | Document
 		- wwPDB/RDF-validation-alt: [5u9b-validation-alt.rdf](https://github.com/yokochi47/pdbx-validation/blob/master/test/RDF-validation-alt/5u9b-validation-alt.rdf)
 	- wwPDB validation report (XML format)
 		- Original source: [5u9b_validation.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/validation-info/5u9b_validation.xml)
-		- Reverted from PDBML-validation: [5u9b_validation.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/validation-info-rev/5u9b_validation.xml)
+		- Reverted from PDBML-validation: [5u9b_validation.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/validation-info-rev-from-full/5u9b_validation.xml)
+		- Reverted from PDBML-validation-alt and PDBML-noatom: [5u9b_validation.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/validation-info-rev-from-alt/5u9b_validation.xml)
 
 - PDB ID: [5H0S](https://pdbj.org/mine/summary/5h0s), Exptl. method: ELECTRON MICROSCOPY
 	- PDBx/mmCIF format
@@ -69,7 +71,8 @@ File path | Document
 		- wwPDB/RDF-validation-alt: [5h0s-validation-alt.rdf](https://github.com/yokochi47/pdbx-validation/blob/master/test/RDF-validation-alt/5h0s-validation-alt.rdf)
 	- wwPDB validation report (XML format)
 		- Original source: [5h0s_validation.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/validation-info/5h0s_validation.xml)
-		- Reverted wwPDB validation report: [5h0s_validation.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/validation-info-rev/5h0s_validation.xml)
+		- Reverted from PDBML-validation: [5h0s_validation.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/validation-info-rev-from-full/5h0s_validation.xml)
+		- Reverted from PDBML-validation-alt and PDBML-noatom: [5h0s_validation.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/validation-info-rev-from-alt/5h0s_validation.xml)
 
 ## Bulk download service of alternative wwPDB validation reports
 
@@ -122,14 +125,19 @@ File path | Document
 
 ## Release notes
 
+- **Feb 14, 2019**: Release v1.5.1
+	- Rename 'revert_info.xsl' to 'revert_info_from_full.xsl'.
+	- Enable mutual transformation between PDBML-validation-alt and wwPDB Validation Reports (XML).
+		- Add 'revert_info_from_alt_noatom.xsl', 'validation_created_date.xsl', and 'nmr_atom_consistency.xsl' style sheets for the translation.
+
 - **Feb 6, 2019**: Release v1.5.0
-	- Add/Revise the following data items in relation with wwPDB validation information XSD
+	- Add/Revise the following data items in relation with wwPDB validation information XSD.
 		- Add '_pdbx_dcc_density.ls_d_res_low' with link to /wwPDB-validation-information/Entry/@PDB-resolution-low
 		- Add '_pdbx_dcc_density.reflns_number_obs' with link to /wwPDB-validation-information/Entry/@numMillerIndices, which was formerly linked to '_reflns.number_all'
 		- Add '_pdbx_dcc_density.ls_number_reflns_R_free' with link to /wwPDB-validation-information/Entry/@num-free-reflections, which was formerly linked to '_refine.ls_number_reflns_R_free'
 		- Add '_pdbx_dcc_density.ls_percent_reflns_obs' with link to /wwPDB-validation-information/Entry/@DataCompleteness, which was formerly linked to '_refine.ls_percent_reflns_obs'
 		- Add '_pdbx_dcc_density.ls_percent_reflns_R_free' and '_pdbx_dcc_density_corr.ls_percent_reflns_R_free' with link to /wwPDB-validation-information/Entry/@percent-free-reflections, which was formerly linked to '_refine.ls_percent_reflns_R_free'
-	- Add the following relationships to wwPDB validation information XSD
+	- Add the following relationships to wwPDB validation information XSD.
 		- Link '_pdbx_dcc_density_corr.ls_d_res_high' and /wwPDB-validation-information/Entry/@EDS_resolution
 		- Link '_pdbx_dcc_density_corr.ls_d_res_high' and /wwPDB-validation-information/Entry/@EDS_resolution_low
 		- Link '_pdbx_dcc_density_corr.ls_R_factor_R_work' and /wwPDB-validation-information/Entry/@EDS_R
@@ -138,7 +146,7 @@ File path | Document
 		- Link '_pdbx_dcc_density_corr.correlation_coeff_Fo_to_Fc' and /wwPDB-validation-information/Entry/@Fo_Fc_correlation
 	- Add '_struct_mon_prot.PDB_model_num' with link to /wwPDB-validation-information/ModelledSubgroup/@model
 	- Add '_struct_mon_nucl.PDB_model_num' with link to /wwPDB-validation-information/ModelledSubgroup/@model
-	- Add the following data items in relation with wwPDB validation information XSD
+	- Add the following data items in relation with wwPDB validation information XSD.
 		- Add '_pdbx_validate_rmsd_bond.bond_minimum_diff_to_kb' with link to /wwPDB-validation-information/ModelledSubgroup/mog-bond-outlier/@mindiff
 		- Add '_pdbx_validate_rmsd_bond.number_bonds_in_kb' with link to /wwPDB-validation-information/ModelledSubgroup/mog-bond-outlier/@numobs
 		- Add '_pdbx_validate_rmsd_angle.angle_minimum_diff_to_kb' with link to /wwPDB-validation-information/ModelledSubgroup/mog-angle-outlier/@mindiff
@@ -147,9 +155,9 @@ File path | Document
 		- Add '_pdbx_validate_rmsd_torsion.number_dihedral_angles_in_kb' with link to /wwPDB-validation-information/ModelledSubgroup/mog-torsion-outlier/@numobs
 		- Add '_pdbx_validate_rmsd_ring.dihedral_angle_minimum_diff_to_kb' with link to /wwPDB-validation-information/ModelledSubgroup/mog-ring-outlier/@mindiff
 		- Add '_pdbx_validate_rmsd_ring.number_dihedral_angles_in_kb' with link to /wwPDB-validation-information/ModelledSubgroup/mog-ring-outlier/@numobs
-	- Revise dictionary link of '_pdbx_validate_rmsd_bond.bond_deviation'
-	- Revise dictionary link of '_pdbx_validate_rmsd_angle.angle_deviation'
-	- Add the following data items in relation with wwPDB validation information XSD
+	- Revise dictionary link of '_pdbx_validate_rmsd_bond.bond_deviation'.
+	- Revise dictionary link of '_pdbx_validate_rmsd_angle.angle_deviation'.
+	- Add the following data items in relation with wwPDB validation information XSD.
 		- Add '_pdbx_validate_rmsd_bond.Zscore' with link to /wwPDB-validation-information/ModelledSubgroup/bond-outlier/@z
 		- Add '_pdbx_validate_rmsd_angle.Zscore' with link to /wwPDB-validation-information/ModelledSubgroup/angle-outlier/@z
 		- Add '_pdbx_dcc_mon_geometry.number_angles' with link to /wwPDB-validation-information/ModelledSubgroup/@mogul_rmsz_numangles
@@ -159,8 +167,8 @@ File path | Document
 		- Add '_pdbx_dcc_entity_geometry.number_bonds' with link to /wwPDB-validation-information/ModelledEntityInstance/@num_angles_rmsz
 		- Add '_pdbx_dcc_geometry.number_angles' with link to /wwPDB-validation-information/Entry/@num_bonds_rmsz
 		- Add '_pdbx_dcc_geometry.number_bonds' with link to /wwPDB-validation-information/Entry/@num_angles_rmsz
-	- Enable mutual transformation between PDBML-validation and wwPDB Validation Reports (XML)
-		- Add revert_info.xsl style sheet for the translation.
+	- Enable mutual transformation between PDBML-validation and wwPDB Validation Reports (XML).
+		- Add 'revert_info.xsl' style sheet for the translation.
 		- Modify 'run_test.sh' script which include translation from PDBML-validation to wwPDB Validation Reports (XML).
 	- Update wwPDB Validation Information Dictionary from v1.303 to 1.305.
 	- Apply XML beautifier using xmllint command, if possible.
