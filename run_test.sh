@@ -235,21 +235,43 @@ for pdbml_file in $WORK_DIR/$PDBML/*.xml ; do
  fi
 
  pdbml_valid_file=$WORK_DIR/$XML_VALID/$pdbid-validation-full.xml
- info_rev_file=$WORK_DIR/$VALID_INFO_REV/$pdbid"_validation.xml"
+ info_rev_full_file=$WORK_DIR/$VALID_INFO_REV_FROM_FULL/$pdbid"_validation.xml"
 
- java -jar $SAXON -s:$pdbml_valid_file -xsl:$REVERT_INFO_XSL -o:$info_rev_file || ( echo $0 aborted. && exit 1 )
+ java -jar $SAXON -s:$pdbml_valid_file -xsl:$REVERT_INFO_FROM_FULL_XSL -o:$info_rev_full_file || ( echo $0 aborted. && exit 1 )
 
- xml_pretty $info_rev_file
+ xml_pretty $info_rev_full_file
 
  if [ $? = 0 ] ; then
-  echo " generated: "$info_rev_file
+  echo " generated: "$info_rev_full_file
  else
   exit 1
  fi
 
- java -classpath $XSD2PGSCHEMA xmlvalidator --xsd $WWPDB_VALIDATION_XSD --xml $info_rev_file > /dev/null || ( echo $0 aborted. && exit 1 )
+ java -classpath $XSD2PGSCHEMA xmlvalidator --xsd $WWPDB_VALIDATION_XSD --xml $info_rev_full_file > /dev/null || ( echo $0 aborted. && exit 1 )
 
- echo " validated: "$info_rev_file
+ echo " validated: "$info_rev_full_file
+
+ info_alt_file=$WORK_DIR/$VALID_INFO_ALT/$pdbid-validation-alt.xml
+ pdbml_file=../$WORK_DIR/$PDBML/$pdbid-noatom.xml
+ info_rev_alt_file=$WORK_DIR/$VALID_INFO_REV_FROM_ALT/$pdbid"_validation.xml"
+
+ info_file=$WORK_DIR/$VALID_INFO/$pdbid"_validation.xml"
+ validation_created_date=`java -jar $SAXON -s:$info_file -xsl:stylesheet/validation_created_date.xsl`
+ nmr_atom_consistency=`java -jar $SAXON -s:$info_file -xsl:stylesheet/nmr_atom_consistency.xsl`
+
+ java -jar $SAXON -s:$info_alt_file -xsl:$REVERT_INFO_FROM_ALT_NOATOM_XSL -o:$info_rev_alt_file pdbml_noatom_file=$pdbml_file validation_created_date=$validation_created_date nmr_atom_consistency=$nmr_atom_consistency || ( echo $0 aborted. && exit 1 )
+
+ xml_pretty $info_rev_alt_file
+
+ if [ $? = 0 ] ; then
+  echo " generated: "$info_rev_alt_file
+ else
+  exit 1
+ fi
+
+ java -classpath $XSD2PGSCHEMA xmlvalidator --xsd $WWPDB_VALIDATION_XSD --xml $info_rev_alt_file > /dev/null || ( echo $0 aborted. && exit 1 )
+
+ echo " validated: "$info_rev_alt_file
 
 done
 

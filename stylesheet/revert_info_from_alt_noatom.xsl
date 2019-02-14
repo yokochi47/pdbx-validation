@@ -3,7 +3,16 @@
   version="2.0"
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xmlns:PDBxv="http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd">
+  xmlns:PDBxv="http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd"
+  xmlns:PDBx="http://pdbml.pdb.org/schema/pdbx-v50.xsd">
+
+  <xsl:param name="pdbml_noatom_file" required="yes"/>
+  <xsl:param name="pdbml_noatom" select="document($pdbml_noatom_file)"/>
+
+  <xsl:param name="noatom_datablock" select="$pdbml_noatom/PDBx:datablock"/>
+
+  <xsl:param name="validation_created_date"/>
+  <xsl:param name="nmr_atom_consistency"/>
 
   <xsl:output method="xml" indent="yes"/>
   <xsl:strip-space elements="*"/>
@@ -12,9 +21,11 @@
 
   <xsl:variable name="entry_id"><xsl:value-of select="$datablock/PDBxv:entryCategory/PDBxv:entry/@id"/></xsl:variable>
 
+  <xsl:variable name="pdb_id"><xsl:value-of select="$noatom_datablock/PDBx:entryCategory/PDBx:entry/@id"/></xsl:variable>
+
   <!-- experimental method -->
 
-  <xsl:variable name="exptl_method"><xsl:value-of select="$datablock/PDBxv:exptlCategory/PDBxv:exptl/@method"/></xsl:variable>
+  <xsl:variable name="exptl_method"><xsl:value-of select="$noatom_datablock/PDBx:exptlCategory/PDBx:exptl/@method"/></xsl:variable>
 
   <xsl:variable name="x-ray"><xsl:value-of select="contains($exptl_method,'DIFFRACTION') and not(contains($exptl_method,'NEUTRON'))"/></xsl:variable>
   <xsl:variable name="nmr"><xsl:value-of select="contains($exptl_method,'NMR')"/></xsl:variable>
@@ -36,6 +47,15 @@
   <!-- Level 1 -->
 
   <xsl:template match="$datablock">
+
+    <xsl:if test="$entry_id!=$pdb_id">
+      <xsl:call-template name="error_handler">
+        <xsl:with-param name="terminate">yes</xsl:with-param>
+        <xsl:with-param name="error_message">
+Unmatched entry ID in both documents (<xsl:value-of select="$entry_id"/> and <xsl:value-of select="$pdb_id"/>).
+        </xsl:with-param>
+      </xsl:call-template>
+    </xsl:if>
 
     <wwPDB-validation-information xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://wwpdb.org/validation/schema/wwpdb_validation_v002.xsd">
       <Entry>
@@ -99,11 +119,11 @@
 
     <xsl:attribute name="pdbid"><xsl:value-of select="$entry_id"/></xsl:attribute>
 
-    <xsl:apply-templates select="PDBxv:pdbx_database_statusCategory/*"/>
+    <xsl:apply-templates select="$noatom_datablock/PDBx:pdbx_database_statusCategory/*"/>
 
     <xsl:choose>
-      <xsl:when test="PDBxv:pdbx_audit_revision_historyCategory/PDBxv:pdbx_audit_revision_history">
-        <xsl:apply-templates select="PDBxv:pdbx_audit_revision_historyCategory"/>
+      <xsl:when test="$noatom_datablock/PDBx:pdbx_audit_revision_historyCategory/PDBx:pdbx_audit_revision_history">
+        <xsl:apply-templates select="$noatom_datablock/PDBx:pdbx_audit_revision_historyCategory"/>
       </xsl:when>
       <xsl:otherwise>
         <xsl:attribute name="PDB-revision-number">-1</xsl:attribute>
@@ -117,8 +137,8 @@
           <xsl:call-template name="pdbx_dcc_density_summary"/>
         </xsl:for-each>
       </xsl:when>
-      <xsl:when test="PDBxv:em_3d_reconstructionCategory/PDBxv:em_3d_reconstruction">
-        <xsl:apply-templates select="PDBxv:em_3d_reconstructionCategory/*"/>
+      <xsl:when test="$noatom_datablock/PDBx:em_3d_reconstructionCategory/PDBx:em_3d_reconstruction">
+        <xsl:apply-templates select="$noatom_datablock/PDBx:em_3d_reconstructionCategory/*"/>
       </xsl:when>
       <xsl:otherwise>
         <xsl:attribute name="PDB-resolution">NotAvailable</xsl:attribute>
@@ -126,11 +146,11 @@
       </xsl:otherwise>
     </xsl:choose>
 
-    <xsl:apply-templates select="PDBxv:refineCategory/*"/>
+    <xsl:apply-templates select="$noatom_datablock/PDBx:refineCategory/*"/>
 
     <xsl:variable name="polymer_entity_ids">
-      <xsl:for-each select="PDBxv:entity_polyCategory/PDBxv:entity_poly">
-        <xsl:if test="PDBxv:type and PDBxv:type=('polypeptide(L)','polypeptide(D)','polyribonucleotide','polydeoxyribonucleotide','polydeoxyribonucleotide/polyribonucleotide hybrid')">
+      <xsl:for-each select="$noatom_datablock/PDBx:entity_polyCategory/PDBx:entity_poly">
+        <xsl:if test="PDBx:type and PDBx:type=('polypeptide(L)','polypeptide(D)','polyribonucleotide','polydeoxyribonucleotide','polydeoxyribonucleotide/polyribonucleotide hybrid')">
           <xsl:value-of select="concat(@entity_id,',')"/>
         </xsl:if>
       </xsl:for-each>
@@ -139,7 +159,7 @@
     <xsl:if test="string-length($polymer_entity_ids)&gt;1">
       <xsl:attribute name="protein-DNA-RNA-entities"><xsl:value-of select="substring($polymer_entity_ids,1,string-length($polymer_entity_ids)-1)"/></xsl:attribute>
     </xsl:if>
-    <xsl:if test="PDBxv:pdbx_coordinate_modelCategory/PDBxv:pdbx_coordinate_model/PDBxv:type='CA ATOMS ONLY'">
+    <xsl:if test="$noatom_datablock/PDBx:pdbx_coordinate_modelCategory/PDBx:pdbx_coordinate_model/PDBx:type='CA ATOMS ONLY'">
       <xsl:attribute name="CA_ONLY">yes</xsl:attribute>
     </xsl:if>
 
@@ -160,12 +180,26 @@
     <xsl:if test="$nmr=true()">
 
       <xsl:choose>
-        <xsl:when test="PDBxv:pdbx_nmr_ensembleCategory/PDBxv:pdbx_nmr_ensemble/PDBxv:atom_consistency_flag='Y'">
-          <xsl:attribute name="nmr_models_consistency_flag">True</xsl:attribute>
+        <xsl:when test="$noatom_datablock/PDBx:pdbx_nmr_ensembleCategory/PDBx:pdbx_nmr_ensemble">
+          <xsl:choose>
+            <xsl:when test="$noatom_datablock/PDBx:pdbx_nmr_ensembleCategory/PDBx:pdbx_nmr_ensemble/PDBx:atom_consistency_flag='Y'">
+              <xsl:attribute name="nmr_models_consistency_flag">True</xsl:attribute>
+            </xsl:when>
+            <xsl:otherwise>
+              <xsl:attribute name="nmr_models_consistency_flag">False</xsl:attribute>
+            </xsl:otherwise>
+          </xsl:choose>
         </xsl:when>
-        <xsl:otherwise>
-          <xsl:attribute name="nmr_models_consistency_flag">False</xsl:attribute>
-        </xsl:otherwise>
+        <xsl:when test="$nmr_atom_consistency!=''">
+          <xsl:choose>
+            <xsl:when test="$nmr_atom_consistency='Y'">
+              <xsl:attribute name="nmr_models_consistency_flag">True</xsl:attribute>
+            </xsl:when>
+            <xsl:otherwise>
+              <xsl:attribute name="nmr_models_consistency_flag">False</xsl:attribute>
+            </xsl:otherwise>
+          </xsl:choose>
+        </xsl:when>
       </xsl:choose>
 
       <xsl:choose>
@@ -288,22 +322,22 @@
     </xsl:if>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_audit_revision_historyCategory">
+  <xsl:template match="PDBx:pdbx_audit_revision_historyCategory">
 
-    <xsl:for-each select="PDBxv:pdbx_audit_revision_history">
+    <xsl:for-each select="PDBx:pdbx_audit_revision_history">
 
     <xsl:if test="position()=last()">
       <xsl:choose>
-        <xsl:when test="PDBxv:major_revision">
-          <xsl:attribute name="PDB-revision-number"><xsl:value-of select="PDBxv:major_revision"/></xsl:attribute>
+        <xsl:when test="PDBx:major_revision">
+          <xsl:attribute name="PDB-revision-number"><xsl:value-of select="PDBx:major_revision"/></xsl:attribute>
         </xsl:when>
         <xsl:otherwise>
           <xsl:attribute name="PDB-revision-number">-1</xsl:attribute>
         </xsl:otherwise>
       </xsl:choose>
       <xsl:choose>
-        <xsl:when test="PDBxv:revision_date">
-          <xsl:attribute name="PDB-revision-date"><xsl:value-of select="PDBxv:revision_date"/></xsl:attribute>
+        <xsl:when test="PDBx:revision_date">
+          <xsl:attribute name="PDB-revision-date"><xsl:value-of select="PDBx:revision_date"/></xsl:attribute>
         </xsl:when>
         <xsl:otherwise>
           <xsl:attribute name="PDB-revision-date">unknown</xsl:attribute>
@@ -315,10 +349,10 @@
 
   </xsl:template>
 
-  <xsl:template match="PDBxv:em_3d_reconstruction">
+  <xsl:template match="PDBx:em_3d_reconstruction">
 
-    <xsl:if test="PDBxv:resolution">
-      <xsl:attribute name="PDB-resolution"><xsl:value-of select="PDBxv:resolution"/></xsl:attribute>
+    <xsl:if test="PDBx:resolution">
+      <xsl:attribute name="PDB-resolution"><xsl:value-of select="PDBx:resolution"/></xsl:attribute>
     </xsl:if>
 
     <xsl:attribute name="PDB-resolution-low">NotAvailable</xsl:attribute>
@@ -346,11 +380,11 @@
 
   </xsl:template>
 
-  <xsl:template match="PDBxv:refine">
+  <xsl:template match="PDBx:refine">
 
     <xsl:choose>
-      <xsl:when test="PDBxv:ls_R_factor_R_work">
-        <xsl:attribute name="PDB-R"><xsl:value-of select="format-number(PDBxv:ls_R_factor_R_work,'0.00')"/></xsl:attribute>
+      <xsl:when test="PDBx:ls_R_factor_R_work">
+        <xsl:attribute name="PDB-R"><xsl:value-of select="format-number(PDBx:ls_R_factor_R_work,'0.00')"/></xsl:attribute>
       </xsl:when>
       <xsl:otherwise>
         <xsl:attribute name="PDB-R">NotAvailable</xsl:attribute>
@@ -358,8 +392,8 @@
     </xsl:choose>
 
     <xsl:choose>
-      <xsl:when test="PDBxv:ls_R_factor_R_free">
-        <xsl:attribute name="PDB-Rfree"><xsl:value-of select="format-number(PDBxv:ls_R_factor_R_free,'0.00')"/></xsl:attribute>
+      <xsl:when test="PDBx:ls_R_factor_R_free">
+        <xsl:attribute name="PDB-Rfree"><xsl:value-of select="format-number(PDBx:ls_R_factor_R_free,'0.00')"/></xsl:attribute>
       </xsl:when>
       <xsl:otherwise>
         <xsl:attribute name="PDB-Rfree">NotAvailable</xsl:attribute>
@@ -368,15 +402,23 @@
 
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_database_status">
-
-    <xsl:if test="PDBxv:validation_created_date">
-      <xsl:attribute name="XMLcreationDate"><xsl:value-of select="PDBxv:validation_created_date"/></xsl:attribute>
-    </xsl:if>
+  <xsl:template match="PDBx:pdbx_database_status">
 
     <xsl:choose>
-      <xsl:when test="PDBxv:recvd_initial_deposition_date">
-        <xsl:attribute name="PDB-deposition-date"><xsl:value-of select="PDBxv:recvd_initial_deposition_date"/></xsl:attribute>
+      <xsl:when test="PDBx:validation_created_date">
+        <xsl:attribute name="XMLcreationDate"><xsl:value-of select="PDBx:validation_created_date"/></xsl:attribute>
+      </xsl:when>
+      <xsl:when test="$validation_created_date!=''">
+        <xsl:attribute name="XMLcreationDate"><xsl:value-of select="$validation_created_date"/></xsl:attribute>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:attribute name="XMLcreationDate"><xsl:value-of select="substring(string(current-date()),1,10)"/></xsl:attribute>
+      </xsl:otherwise>
+    </xsl:choose>
+
+    <xsl:choose>
+      <xsl:when test="PDBx:recvd_initial_deposition_date">
+        <xsl:attribute name="PDB-deposition-date"><xsl:value-of select="PDBx:recvd_initial_deposition_date"/></xsl:attribute>
       </xsl:when>
       <xsl:otherwise>
         <xsl:attribute name="PDB-deposition-date">unknown</xsl:attribute>
@@ -1045,8 +1087,8 @@ Unmatched type exist in _pdbx_nmr_assigned_chem_shift_list.nmr_star_consistency_
     <xsl:param name="model"/>
 
     <xsl:variable name="strand_ids">
-      <xsl:for-each select="$datablock/PDBxv:entity_polyCategory/PDBxv:entity_poly">
-        <xsl:value-of select="concat(PDBxv:pdbx_strand_id,',')"/>
+      <xsl:for-each select="$noatom_datablock/PDBx:entity_polyCategory/PDBx:entity_poly">
+        <xsl:value-of select="concat(PDBx:pdbx_strand_id,',')"/>
       </xsl:for-each>
     </xsl:variable>
 
@@ -1063,7 +1105,7 @@ Unmatched type exist in _pdbx_nmr_assigned_chem_shift_list.nmr_star_consistency_
     <xsl:param name="model"/>
     <xsl:param name="strand_id"/>
 
-    <xsl:for-each select="$datablock/PDBxv:pdbx_poly_seq_schemeCategory/PDBxv:pdbx_poly_seq_scheme[PDBxv:pdb_strand_id=$strand_id]">
+    <xsl:for-each select="$noatom_datablock/PDBx:pdbx_poly_seq_schemeCategory/PDBx:pdbx_poly_seq_scheme[PDBx:pdb_strand_id=$strand_id]">
       <xsl:call-template name="modelled_subgroup_mon_id">
         <xsl:with-param name="model"><xsl:value-of select="$model"/></xsl:with-param>
         <xsl:with-param name="strand_id"><xsl:value-of select="$strand_id"/></xsl:with-param>
@@ -1071,21 +1113,21 @@ Unmatched type exist in _pdbx_nmr_assigned_chem_shift_list.nmr_star_consistency_
         <xsl:with-param name="entity_id"><xsl:value-of select="@entity_id"/></xsl:with-param>
         <xsl:with-param name="mon_id"><xsl:value-of select="@mon_id"/></xsl:with-param>
         <xsl:with-param name="seq_id"><xsl:value-of select="@seq_id"/></xsl:with-param>
-        <xsl:with-param name="pdb_seq_num"><xsl:value-of select="PDBxv:pdb_seq_num"/></xsl:with-param>
-        <xsl:with-param name="pdb_ins_code"><xsl:value-of select="PDBxv:pdb_ins_code"/></xsl:with-param>
+        <xsl:with-param name="pdb_seq_num"><xsl:value-of select="PDBx:pdb_seq_num"/></xsl:with-param>
+        <xsl:with-param name="pdb_ins_code"><xsl:value-of select="PDBx:pdb_ins_code"/></xsl:with-param>
       </xsl:call-template>
     </xsl:for-each>
 
-    <xsl:for-each select="$datablock/PDBxv:pdbx_nonpoly_schemeCategory/PDBxv:pdbx_nonpoly_scheme[PDBxv:pdb_strand_id=$strand_id]">
+    <xsl:for-each select="$noatom_datablock/PDBx:pdbx_nonpoly_schemeCategory/PDBx:pdbx_nonpoly_scheme[PDBx:pdb_strand_id=$strand_id]">
       <xsl:call-template name="modelled_subgroup_mon_id">
         <xsl:with-param name="model"><xsl:value-of select="$model"/></xsl:with-param>
         <xsl:with-param name="strand_id"><xsl:value-of select="$strand_id"/></xsl:with-param>
         <xsl:with-param name="asym_id"><xsl:value-of select="@asym_id"/></xsl:with-param>
-        <xsl:with-param name="entity_id"><xsl:value-of select="PDBxv:entity_id"/></xsl:with-param>
-        <xsl:with-param name="mon_id"><xsl:value-of select="PDBxv:mon_id"/></xsl:with-param>
+        <xsl:with-param name="entity_id"><xsl:value-of select="PDBx:entity_id"/></xsl:with-param>
+        <xsl:with-param name="mon_id"><xsl:value-of select="PDBx:mon_id"/></xsl:with-param>
         <xsl:with-param name="seq_id"/>
-        <xsl:with-param name="pdb_seq_num"><xsl:value-of select="PDBxv:pdb_seq_num"/></xsl:with-param>
-        <xsl:with-param name="pdb_ins_code"><xsl:value-of select="PDBxv:pdb_ins_code"/></xsl:with-param>
+        <xsl:with-param name="pdb_seq_num"><xsl:value-of select="PDBx:pdb_seq_num"/></xsl:with-param>
+        <xsl:with-param name="pdb_ins_code"><xsl:value-of select="PDBx:pdb_ins_code"/></xsl:with-param>
       </xsl:call-template>
     </xsl:for-each>
 
@@ -1304,7 +1346,7 @@ Unmatched type exist in _pdbx_nmr_assigned_chem_shift_list.nmr_star_consistency_
 
       <!-- cis_peptide -->
 
-      <xsl:for-each select="$datablock/PDBxv:struct_mon_prot_cisCategory/PDBxv:struct_mon_prot_cis[PDBxv:pdbx_PDB_model_num=$model and PDBxv:auth_asym_id=$strand_id and PDBxv:auth_comp_id=$mon_id and PDBxv:auth_seq_id=$pdb_seq_num and ($alt_id='' or PDBxv:label_alt_id=$alt_id)]">
+      <xsl:for-each select="$noatom_datablock/PDBx:struct_mon_prot_cisCategory/PDBx:struct_mon_prot_cis[PDBx:pdbx_PDB_model_num=$model and PDBx:auth_asym_id=$strand_id and PDBx:auth_comp_id=$mon_id and PDBx:auth_seq_id=$pdb_seq_num and ($alt_id='' or PDBx:label_alt_id=$alt_id)]">
         <xsl:attribute name="cis_peptide">yes</xsl:attribute>
       </xsl:for-each>
 
@@ -1473,12 +1515,12 @@ Unmatched type exist in _pdbx_nmr_assigned_chem_shift_list.nmr_star_consistency_
 
       <!-- chiral-outlier -->
 
-      <xsl:for-each select="$datablock/PDBxv:pdbx_validate_chiralCategory/PDBxv:pdbx_validate_chiral[PDBxv:PDB_model_num=$model and PDBxv:auth_asym_id=$strand_id and PDBxv:auth_comp_id=$mon_id and PDBxv:auth_seq_id=$pdb_seq_num and ($alt_id='' or PDBxv:label_alt_id=$alt_id)]">
+      <xsl:for-each select="$noatom_datablock/PDBx:pdbx_validate_chiralCategory/PDBx:pdbx_validate_chiral[PDBx:PDB_model_num=$model and PDBx:auth_asym_id=$strand_id and PDBx:auth_comp_id=$mon_id and PDBx:auth_seq_id=$pdb_seq_num and ($alt_id='' or PDBx:label_alt_id=$alt_id)]">
 
         <chiral-outlier>
 
-          <xsl:attribute name="atom"><xsl:value-of select="PDBxv:auth_atom_id"/></xsl:attribute>
-          <xsl:attribute name="problem"><xsl:value-of select="PDBxv:details"/></xsl:attribute>
+          <xsl:attribute name="atom"><xsl:value-of select="PDBx:auth_atom_id"/></xsl:attribute>
+          <xsl:attribute name="problem"><xsl:value-of select="PDBx:details"/></xsl:attribute>
 
         </chiral-outlier>
 
@@ -1486,11 +1528,11 @@ Unmatched type exist in _pdbx_nmr_assigned_chem_shift_list.nmr_star_consistency_
 
       <!-- plane-outlier[@type='peptide'] -->
 
-      <xsl:for-each select="$datablock/PDBxv:pdbx_validate_peptide_omegaCategory/PDBxv:pdbx_validate_peptide_omega[PDBxv:PDB_model_num=$model and PDBxv:auth_asym_id_1=$strand_id and PDBxv:auth_comp_id_1=$mon_id and PDBxv:auth_seq_id_1=$pdb_seq_num and ($alt_id='' or PDBxv:label_alt_id_1=$alt_id)]">
+      <xsl:for-each select="$noatom_datablock/PDBx:pdbx_validate_peptide_omegaCategory/PDBx:pdbx_validate_peptide_omega[PDBx:PDB_model_num=$model and PDBx:auth_asym_id_1=$strand_id and PDBx:auth_comp_id_1=$mon_id and PDBx:auth_seq_id_1=$pdb_seq_num and ($alt_id='' or PDBx:label_alt_id_1=$alt_id)]">
 
         <plane-outlier type="peptide">
 
-          <xsl:attribute name="omega"><xsl:value-of select="PDBxv:omega"/></xsl:attribute>
+          <xsl:attribute name="omega"><xsl:value-of select="PDBx:omega"/></xsl:attribute>
 
         </plane-outlier>
 
@@ -1498,11 +1540,11 @@ Unmatched type exist in _pdbx_nmr_assigned_chem_shift_list.nmr_star_consistency_
 
       <!-- plane-outlier[@type='mainchain'] -->
 
-      <xsl:for-each select="$datablock/PDBxv:pdbx_validate_main_chain_planeCategory/PDBxv:pdbx_validate_main_chain_plane[PDBxv:PDB_model_num=$model and PDBxv:auth_asym_id=$strand_id and PDBxv:auth_comp_id=$mon_id and PDBxv:auth_seq_id=$pdb_seq_num and ($alt_id='' or PDBxv:label_alt_id=$alt_id)]">
+      <xsl:for-each select="$noatom_datablock/PDBx:pdbx_validate_main_chain_planeCategory/PDBx:pdbx_validate_main_chain_plane[PDBx:PDB_model_num=$model and PDBx:auth_asym_id=$strand_id and PDBx:auth_comp_id=$mon_id and PDBx:auth_seq_id=$pdb_seq_num and ($alt_id='' or PDBx:label_alt_id=$alt_id)]">
 
         <plane-outlier type="mainchain">
 
-          <xsl:attribute name="improper"><xsl:value-of select="PDBxv:improper_torsion_angle"/></xsl:attribute>
+          <xsl:attribute name="improper"><xsl:value-of select="PDBx:improper_torsion_angle"/></xsl:attribute>
 
         </plane-outlier>
 
@@ -1510,12 +1552,12 @@ Unmatched type exist in _pdbx_nmr_assigned_chem_shift_list.nmr_star_consistency_
 
       <!-- plane-outlier[@type='sidechain'] -->
 
-      <xsl:for-each select="$datablock/PDBxv:pdbx_validate_planesCategory/PDBxv:pdbx_validate_planes[PDBxv:PDB_model_num=$model and PDBxv:auth_asym_id=$strand_id and PDBxv:auth_comp_id=$mon_id and PDBxv:auth_seq_id=$pdb_seq_num and ($alt_id='' or PDBxv:label_alt_id=$alt_id)]">
+      <xsl:for-each select="$noatom_datablock/PDBx:pdbx_validate_planesCategory/PDBx:pdbx_validate_planes[PDBx:PDB_model_num=$model and PDBx:auth_asym_id=$strand_id and PDBx:auth_comp_id=$mon_id and PDBx:auth_seq_id=$pdb_seq_num and ($alt_id='' or PDBx:label_alt_id=$alt_id)]">
 
         <plane-outlier>
 
-          <xsl:attribute name="type"><xsl:value-of select="lower-case(translate(PDBxv:type,' ',''))"/></xsl:attribute>
-          <xsl:attribute name="planeRMSD"><xsl:value-of select="PDBxv:rmsd"/></xsl:attribute>
+          <xsl:attribute name="type"><xsl:value-of select="lower-case(translate(PDBx:type,' ',''))"/></xsl:attribute>
+          <xsl:attribute name="planeRMSD"><xsl:value-of select="PDBx:rmsd"/></xsl:attribute>
 
         </plane-outlier>
 
@@ -1572,7 +1614,7 @@ Unmatched type exist in _pdbx_nmr_assigned_chem_shift_list.nmr_star_consistency_
 
       <!-- clash -->
 
-      <xsl:variable name="clash_from_pdbml"><xsl:value-of select="count($datablock/PDBxv:pdbx_validate_close_contactCategory/PDBxv:pdbx_validate_close_contact[not(PDBxv:clash_magnitude)])"/></xsl:variable>
+      <xsl:variable name="clash_from_pdbml"><xsl:value-of select="count($noatom_datablock/PDBx:pdbx_validate_close_contactCategory/PDBx:pdbx_validate_close_contact[not(PDBx:clash_magnitude)])"/></xsl:variable>
 
       <xsl:for-each select="$datablock/PDBxv:pdbx_validate_close_contactCategory/PDBxv:pdbx_validate_close_contact[PDBxv:PDB_model_num=$model and ((PDBxv:auth_asym_id_1=$strand_id and PDBxv:auth_comp_id_1=$mon_id and PDBxv:auth_seq_id_1=$pdb_seq_num and ($alt_id='' or PDBxv:label_alt_id_1=$alt_id)) or (PDBxv:auth_asym_id_2=$strand_id and PDBxv:auth_comp_id_2=$mon_id and PDBxv:auth_seq_id_2=$pdb_seq_num and ($alt_id='' or PDBxv:label_alt_id_2=$alt_id))) and PDBxv:clash_magnitude]">
 
@@ -1610,7 +1652,7 @@ Unmatched type exist in _pdbx_nmr_assigned_chem_shift_list.nmr_star_consistency_
 
       <!-- symm-clash -->
 
-      <xsl:variable name="symm_clash_from_pdbml"><xsl:value-of select="count($datablock/PDBxv:pdbx_validate_symm_contactCategory/PDBxv:pdbx_validate_symm_contact[not(PDBxv:clash_magnitude)])"/></xsl:variable>
+      <xsl:variable name="symm_clash_from_pdbml"><xsl:value-of select="count($noatom_datablock/PDBx:pdbx_validate_symm_contactCategory/PDBx:pdbx_validate_symm_contact[not(PDBx:clash_magnitude)])"/></xsl:variable>
 
       <xsl:for-each select="$datablock/PDBxv:pdbx_validate_symm_contactCategory/PDBxv:pdbx_validate_symm_contact[PDBxv:PDB_model_num=$model and ((PDBxv:auth_asym_id_1=$strand_id and PDBxv:auth_comp_id_1=$mon_id and PDBxv:auth_seq_id_1=$pdb_seq_num and ($alt_id='' or PDBxv:label_alt_id_1=$alt_id)) or (PDBxv:auth_asym_id_2=$strand_id and PDBxv:auth_comp_id_2=$mon_id and PDBxv:auth_seq_id_2=$pdb_seq_num and ($alt_id='' or PDBxv:label_alt_id_2=$alt_id))) and PDBxv:clash_magnitude]">
 
@@ -1677,8 +1719,8 @@ Unmatched type exist in _pdbx_nmr_assigned_chem_shift_list.nmr_star_consistency_
     <xsl:param name="model"/>
 
     <xsl:variable name="strand_ids">
-      <xsl:for-each select="$datablock/PDBxv:entity_polyCategory/PDBxv:entity_poly">
-        <xsl:value-of select="concat(PDBxv:pdbx_strand_id,',')"/>
+      <xsl:for-each select="$noatom_datablock/PDBx:entity_polyCategory/PDBx:entity_poly">
+        <xsl:value-of select="concat(PDBx:pdbx_strand_id,',')"/>
       </xsl:for-each>
     </xsl:variable>
 
@@ -1850,7 +1892,7 @@ Unmatched type exist in _pdbx_percentile_entity_view.type, <xsl:value-of select=
     <xsl:choose>
       <xsl:when test="$terminate='yes'">
         <xsl:message terminate="yes">
-          <xsl:text>ERROR in revert_info.xsl: </xsl:text>
+          <xsl:text>ERROR in revert_info_from_alt_noatom.xsl: </xsl:text>
           <xsl:value-of select="$error_message"/>
         </xsl:message>
       </xsl:when>
