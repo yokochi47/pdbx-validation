@@ -82,6 +82,8 @@ if [ ! -z $MMCIF_DIR ] ; then
 
   done
 
+  echo Done.
+
  fi
 
 fi
