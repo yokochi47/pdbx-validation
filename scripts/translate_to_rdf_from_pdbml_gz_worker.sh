@@ -59,7 +59,7 @@ do
 
    echo $pdb_id
 
-   gunzip -c $pdbml_valid_gz_file > $pdbml_valid_file && java -jar $SAXON -s:$pdbml_valid_file -xsl:$PDBMLV2RDF_XSL -o:$rdf_valid_file 2> $err_file && rm -f $pdbml_valid_file $err_file || ( cat $err_file && exit 1 )
+   gunzip -c $pdbml_valid_gz_file > $pdbml_valid_file && java -jar $SAXON -s:$pdbml_valid_file -xsl:$PDBMLV2RDF_XSL -o:$rdf_valid_file 2> $err_file && ( rm -f $pdbml_valid_file $err_file ) || ( cat $err_file && exit 1 )
 
    if [ $has_rapper_command != "false" ] ; then
     rapper -q -c $rdf_valid_file 2> $err_file && rm -f $err_file || ( cat $err_file && exit 1 )

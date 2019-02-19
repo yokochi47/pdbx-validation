@@ -50,7 +50,7 @@ if [ ! -z $RDF_DIR ] ; then
    rdf_file=$rdf_dir/`basename $rdf_gz_file .gz`
    err_file=$rdf_dir/validate_$rdf_gz_file.err
 
-   gunzip -c $rdf_gz_file > $rdf_file ; rapper -q -c $rdf_file 2> $err_file && rm -f $rdf_file $err_file || ( [ $DELETE = "true" ] && rm -f $rdf_gz_file ; rm -f $rdf_file ; cat $err_file )
+   gunzip -c $rdf_gz_file > $rdf_file ; rapper -q -c $rdf_file 2> $err_file && ( rm -f $rdf_file $err_file ) || ( [ $DELETE = "true" ] && rm -f $rdf_gz_file ; rm -f $rdf_file ; cat $err_file )
 
   done < $rdf_file_list
 

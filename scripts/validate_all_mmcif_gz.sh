@@ -75,7 +75,7 @@ if [ ! -z $MMCIF_DIR ] ; then
   for dicfile in $pdbx_validation_dic $pdbx_validation_odb $pdbx_validation_sdb ; do
 
    if [ -e $MMCIF_DIR/$dicfile ] ; then
-    rm $MMCIF_DIR/$dicfile
+    rm -f $MMCIF_DIR/$dicfile
    fi
 
   done
