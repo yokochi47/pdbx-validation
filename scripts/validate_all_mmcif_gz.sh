@@ -47,7 +47,7 @@ if [ ! -z $MMCIF_DIR ] ; then
 
   echo mmCIF syntax validation: *.cif.gz documents in $MMCIF_DIR...
 
-  sdb_realpath=`realpath $MMCIF_DIR/$pdbx_validation_sdb`
+  sdb_readlink=`readlink -f $MMCIF_DIR/$pdbx_validation_sdb`
   cif_file_list=check_${MMCIF_DIR,,}_cif_gz_file_list
 
   find $MMCIF_DIR -name '*.cif.gz' > $cif_file_list
@@ -65,7 +65,7 @@ if [ ! -z $MMCIF_DIR ] ; then
 
    rm -f $cif_dir/$diag_log $cif_dir/$parser_log
 
-   ( cd $cif_dir ; CifCheck -f $cif_file -dictSdb $sdb_realpath > /dev/null ; [ -e $diag_log ] && [ `grep -v 'has invalid value "?" in row' $diag_log | sed -e /^$/d | wc -l` = 0 ] && rm -f $diag_log )
+   ( cd $cif_dir ; CifCheck -f $cif_file -dictSdb $sdb_readlink > /dev/null ; [ -e $diag_log ] && [ `grep -v 'has invalid value "?" in row' $diag_log | sed -e /^$/d | wc -l` = 0 ] && rm -f $diag_log )
    ( cd $cif_dir ; [ ! -e $diag_log ] && [ ! -e parser_log ] && rm -f $cif_file ; [ -e $parser_log ] && ( [ $DELETE = "true" ] && rm -f $cif_file.gz ; rm -f $cif_file ; cat $parser_log ) ; [ -e $diag_log ] && ( [ $DELETE = "true" ] && rm -f $cif_file.gz ; rm -f $cif_file ; cat $diag_log ) )
 
   done < $cif_file_list
