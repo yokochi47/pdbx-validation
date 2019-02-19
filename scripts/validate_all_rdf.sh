@@ -66,6 +66,8 @@ if [ ! -z $RDF_DIR ] ; then
 
   rm -f $rdf_file_list
 
+  echo Done.
+
  fi
 
 fi
