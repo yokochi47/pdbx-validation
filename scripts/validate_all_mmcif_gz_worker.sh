@@ -66,7 +66,7 @@ do
   rm -f $cif_dir/$diag_log $cif_dir/$parser_log
 
   ( cd $cif_dir ; CifCheck -f $cif_file -dictSdb $sdb_readlink > /dev/null ; [ -e $diag_log ] && [ `grep -v 'has invalid value "?" in row' $diag_log | sed -e /^$/d | wc -l` = 0 ] && rm -f $diag_log )
-  ( cd $cif_dir ; [ ! -e $diag_log ] && [ ! -e $parser_log ] && rm -f $cif_file ; [ -e $parser_log ] && ( [ $DELETE = "true" ] && rm -f $cif_file.gz ; rm -f $cif_fil
+  ( cd $cif_dir ; [ ! -e $diag_log ] && [ ! -e $parser_log ] && rm -f $cif_file ; [ -e $parser_log ] && ( [ $DELETE = "true" ] && rm -f $cif_file.gz ; rm -f $cif_file ; cat $diag_log ) )
 
   if [ $proc_id_mod = 0 ] ; then
    echo -e -n "\rDone "$((proc_id + 1)) of $total ...
