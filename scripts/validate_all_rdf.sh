@@ -11,7 +11,7 @@ if [ $has_rapper_command = "false" ] ; then
 fi
 
 RDF_DIR=
-DELETE=ture
+DELETE=true
 
 ARGV=`getopt --long -o "d:r" "$@"`
 eval set -- "$ARGV"
@@ -43,15 +43,26 @@ if [ ! -z $RDF_DIR ] ; then
 
   find $RDF_DIR -name '*.rdf' > $rdf_file_list
 
-  while read rdf_file
-  do
+  for proc_id in `seq 1 $MAXPROCS` ; do
 
-   rdf_dir=`dirname $rdf_file`
-   err_file=$rdf_dir/validate_$rdf_file.err
+   if [ $DELETE = "true" ] ; then
+    ./scripts/validate_all_rdf_worker.sh -l $rdf_file_list -n $proc_id"of"$MAXPROCS -r &
+   else
+    ./scripts/validate_all_rdf_worker.sh -l $rdf_file_list -n $proc_id"of"$MAXPROCS &
+   fi
 
-   rapper -q -c $rdf_file 2> $err_file && rm -f $err_file || ( [ $DELETE = "true" ] && rm -f $rdf_file ; cat $err_file )
+  done
 
-  done < $rdf_file_list
+  if [ $? != 0 ] ; then
+
+   echo $0 aborted.
+   exit 1
+
+  fi
+
+  wait
+
+  echo
 
   rm -f $rdf_file_list
 

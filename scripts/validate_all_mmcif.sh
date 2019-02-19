@@ -47,24 +47,30 @@ if [ ! -z $MMCIF_DIR ] ; then
 
   echo mmCIF syntax validation: *.cif documents in $MMCIF_DIR...
 
-  sdb_readlink=`readlink -f $MMCIF_DIR/$pdbx_validation_sdb`
   cif_file_list=check_${MMCIF_DIR,,}_cif_file_list
 
   find $MMCIF_DIR -name '*.cif' > $cif_file_list
 
-  while read cif_file
-  do
+  for proc_id in `seq 1 $MAXPROCS` ; do
 
-   cif_dir=`dirname $cif_file`
-   diag_log=$cif_file-diag.log
-   parser_log=$cif_file-parser.log
+   if [ $DELETE = "true" ] ; then
+    ./scripts/validate_all_mmcif_worker.sh -d $MMCIF_DIR -l $cif_file_list -n $proc_id"of"$MAXPROCS -r &
+   else
+    ./scripts/validate_all_mmcif_worker.sh -d $MMCIF_DIR -l $cif_file_list -n $proc_id"of"$MAXPROCS &
+   fi
 
-   rm -f $cif_dir/$diag_log $cif_dir/$parser_log
+  done
 
-   ( cd $cif_dir ; CifCheck -f $cif_file -dictSdb $sdb_readlink > /dev/null ; [ -e $diag_log ] && [ `grep -v 'has invalid value "?" in row' $diag_log | sed -e /^$/d | wc -l` = 0 ] && rm -f $diag_log )
-   ( cd $cif_dir ; [ -e $parser_log ] && ( [ $DELETE = "ture" ] && rm -f $cif_file ; cat $parser_log ) ; [ -e $diag_log ] && ( [ $DELETE = "ture" ] && rm -f $cif_file ; cat $diag_log ) )
+  if [ $? != 0 ] ; then
 
-  done < $cif_file_list
+   echo $0 aborted.
+   exit 1
+
+  fi
+
+  wait
+
+  echo
 
   rm -f $cif_file_list
 

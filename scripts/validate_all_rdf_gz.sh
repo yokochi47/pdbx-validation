@@ -43,16 +43,26 @@ if [ ! -z $RDF_DIR ] ; then
 
   find $RDF_DIR -name '*.rdf.gz' > $rdf_file_list
 
-  while read rdf_gz_file
-  do
+  for proc_id in `seq 1 $MAXPROCS` ; do
 
-   rdf_dir=`dirname $rdf_gz_file`
-   rdf_file=$rdf_dir/`basename $rdf_gz_file .gz`
-   err_file=$rdf_dir/validate_$rdf_gz_file.err
+   if [ $DELETE = "true" ] ; then
+    ./scripts/validate_all_rdf_gz_worker.sh -l $rdf_file_list -n $proc_id"of"$MAXPROCS -r &
+   else
+    ./scripts/validate_all_rdf_gz_worker.sh -l $rdf_file_list -n $proc_id"of"$MAXPROCS &
+   fi
 
-   gunzip -c $rdf_gz_file > $rdf_file ; rapper -q -c $rdf_file 2> $err_file && ( rm -f $rdf_file $err_file ) || ( [ $DELETE = "true" ] && rm -f $rdf_gz_file ; rm -f $rdf_file ; cat $err_file )
+  done
 
-  done < $rdf_file_list
+  if [ $? != 0 ] ; then
+
+   echo $0 aborted.
+   exit 1
+
+  fi
+
+  wait
+
+  echo
 
   rm -f $rdf_file_list
 
