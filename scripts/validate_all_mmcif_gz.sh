@@ -56,9 +56,9 @@ if [ ! -z $MMCIF_DIR ] ; then
   do
 
    cif_dir=`dirname $cif_gz_file`
-   cif_file=$cif_dir/`basename $cif_gz_file .gz`
+   cif_file=`basename $cif_gz_file .gz`
 
-   gunzip -c $cif_gz_file > $cif_file
+   gunzip -c $cif_gz_file > $cif_dir/$cif_file
 
    diag_log=$cif_file-diag.log
    parser_log=$cif_file-parser.log
