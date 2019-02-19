@@ -47,28 +47,30 @@ if [ ! -z $MMCIF_DIR ] ; then
 
   echo mmCIF syntax validation: *.cif.gz documents in $MMCIF_DIR...
 
-  sdb_readlink=`readlink -f $MMCIF_DIR/$pdbx_validation_sdb`
   cif_file_list=check_${MMCIF_DIR,,}_cif_gz_file_list
 
   find $MMCIF_DIR -name '*.cif.gz' > $cif_file_list
 
-  while read cif_gz_file
-  do
+  for proc_id in `seq 1 $MAXPROCS` ; do
 
-   cif_dir=`dirname $cif_gz_file`
-   cif_file=`basename $cif_gz_file .gz`
+   if [ $DELETE = "true" ] ; then
+    ./scripts/validate_all_mmcif_gz_worker.sh -d $MMCIF_DIR -l $cif_file_list -n $proc_id"of"$MAXPROCS -r &
+   else
+    ./scripts/validate_all_mmcif_gz_worker.sh -d $MMCIF_DIR -l $cif_file_list -n $proc_id"of"$MAXPROCS &
+   fi
 
-   gunzip -c $cif_gz_file > $cif_dir/$cif_file
+  done
 
-   diag_log=$cif_file-diag.log
-   parser_log=$cif_file-parser.log
+  if [ $? != 0 ] ; then
 
-   rm -f $cif_dir/$diag_log $cif_dir/$parser_log
+   echo $0 aborted.
+   exit 1
 
-   ( cd $cif_dir ; CifCheck -f $cif_file -dictSdb $sdb_readlink > /dev/null ; [ -e $diag_log ] && [ `grep -v 'has invalid value "?" in row' $diag_log | sed -e /^$/d | wc -l` = 0 ] && rm -f $diag_log )
-   ( cd $cif_dir ; [ ! -e $diag_log ] && [ ! -e $parser_log ] && rm -f $cif_file ; [ -e $parser_log ] && ( [ $DELETE = "true" ] && rm -f $cif_file.gz ; rm -f $cif_file ; cat $parser_log ) ; [ -e $diag_log ] && ( [ $DELETE = "true" ] && rm -f $cif_file.gz ; rm -f $cif_file ; cat $diag_log ) )
+  fi
 
-  done < $cif_file_list
+  wait
+
+  echo
 
   rm -f $cif_file_list
 
