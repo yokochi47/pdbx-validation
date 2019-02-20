@@ -49,9 +49,9 @@ fi
 
 mkdir -p $XML_VALID
 
-last=`find $XML_VALID -name '*.xml' | wc -l`
-err=`find $XML_VALID -name '*.err' | wc -l`
-total=`find $PDBML_EXT -name '*.xml' | wc -l`
+last=`find $XML_VALID -maxdepth 1 -name '*.xml' | wc -l`
+err=`find $XML_VALID -maxdepth 1 -name '*.err' | wc -l`
+total=`find $PDBML_EXT -maxdepth 1 -name '*.xml' | wc -l`
 
 if [ $err != 0 ] || [ $total != $last ] ; then
 
@@ -60,7 +60,7 @@ if [ $err != 0 ] || [ $total != $last ] ; then
 
  pdbml_file_list=merge_pdbml_file_list
 
- find $PDBML_EXT -name '*.xml' > $pdbml_file_list
+ find $PDBML_EXT -maxdepth 1 -name '*.xml' > $pdbml_file_list
 
  for proc_id in `seq 1 $MAXPROCS` ; do
 

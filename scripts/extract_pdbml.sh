@@ -49,9 +49,9 @@ if [ ! -d $VALID_INFO ] ; then
  ./scripts/update_validation.sh
 fi
 
-last=`find $PDBML_EXT -name '*.xml' | wc -l`
-err=`find $PDBML_EXT -name '*.err' | wc -l`
-total=`find $VALID_INFO -name '*.xml' | wc -l`
+last=`find $PDBML_EXT -maxdepth 1 -name '*.xml' | wc -l`
+err=`find $PDBML_EXT -maxdepth 1 -name '*.err' | wc -l`
+total=`find $VALID_INFO -maxdepth 1 -name '*.xml' | wc -l`
 
 if [ $err != 0 ] || [ $total != $last ] ; then
 
@@ -60,7 +60,7 @@ if [ $err != 0 ] || [ $total != $last ] ; then
 
  pdbml_file_list=extract_pdbml_file_list
 
- find $PDBML -name '*.xml' > $pdbml_file_list
+ find $PDBML -maxdepth 1 -name '*.xml' > $pdbml_file_list
 
  for proc_id in `seq 1 $MAXPROCS` ; do
 

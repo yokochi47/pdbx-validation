@@ -9,7 +9,7 @@ src_file_ext=_validation.xml.gz
 
 if [ -d $VALID_INFO ] ; then
 
- find $VALID_INFO -name '*.xml' | cut -d '/' -f 2 | cut -d '_' -f 1 > $pdb_id_list
+ find $VALID_INFO -maxdepth 1 -name '*.xml' | cut -d '/' -f 2 | cut -d '_' -f 1 > $pdb_id_list
 
  while read pdb_id ; do
   if [ ! -e $SRC_DIR/${pdb_id:1:2}/$pdb_id/$pdb_id$src_file_ext ] ; then
@@ -22,7 +22,7 @@ fi
 
 if [ -d $PDBML_EXT ] ; then
 
- find $PDBML_EXT -name '*.xml' | cut -d '/' -f 2 | cut -d '-' -f 1 > $pdb_id_list
+ find $PDBML_EXT -maxdepth 1 -name '*.xml' | cut -d '/' -f 2 | cut -d '-' -f 1 > $pdb_id_list
 
  while read pdb_id ; do
   if [ ! -e $SRC_DIR/${pdb_id:1:2}/$pdb_id/$pdb_id$src_file_ext ] ; then
@@ -35,7 +35,7 @@ fi
 
 if [ -d $VALID_INFO_ALT ] ; then
 
- find $VALID_INFO_ALT -name '*.xml' | cut -d '/' -f 2 | cut -d '-' -f 1 > $pdb_id_list
+ find $VALID_INFO_ALT -maxdepth 1 -name '*.xml' | cut -d '/' -f 2 | cut -d '-' -f 1 > $pdb_id_list
 
  while read pdb_id ; do
   if [ ! -e $SRC_DIR/${pdb_id:1:2}/$pdb_id/$pdb_id$src_file_ext ] ; then
@@ -48,7 +48,7 @@ fi
 
 if [ -d $XML_VALID_ALT ] ; then
 
- find $XML_VALID_ALT -name '*.xml' | cut -d '/' -f 2 | cut -d '-' -f 1 > $pdb_id_list
+ find $XML_VALID_ALT -maxdepth 1 -name '*.xml' | cut -d '/' -f 2 | cut -d '-' -f 1 > $pdb_id_list
 
  while read pdb_id ; do
   if [ ! -e $SRC_DIR/${pdb_id:1:2}/$pdb_id/$pdb_id$src_file_ext ] ; then
@@ -61,7 +61,7 @@ fi
 
 if [ -d $XML_VALID ] ; then
 
- find $XML_VALID -name '*.xml' | cut -d '/' -f 2 | cut -d '-' -f 1 > $pdb_id_list
+ find $XML_VALID -maxdepth 1 -name '*.xml' | cut -d '/' -f 2 | cut -d '-' -f 1 > $pdb_id_list
 
  while read pdb_id ; do
   if [ ! -e $SRC_DIR/${pdb_id:1:2}/$pdb_id/$pdb_id$src_file_ext ] ; then
@@ -74,7 +74,7 @@ fi
 
 if [ -d $RDF_VALID_ALT ] ; then
 
- find $RDF_VALID_ALT -name '*.rdf' | cut -d '/' -f 2 | cut -d '-' -f 1 > $pdb_id_list
+ find $RDF_VALID_ALT -maxdepth 1 -name '*.rdf' | cut -d '/' -f 2 | cut -d '-' -f 1 > $pdb_id_list
 
  while read pdb_id ; do
   if [ ! -e $SRC_DIR/${pdb_id:1:2}/$pdb_id/$pdb_id$src_file_ext ] ; then
@@ -87,7 +87,7 @@ fi
 
 if [ -d $RDF_VALID ] ; then
 
- find $RDF_VALID -name '*.rdf' | cut -d '/' -f 2 | cut -d '-' -f 1 > $pdb_id_list
+ find $RDF_VALID -maxdepth 1 -name '*.rdf' | cut -d '/' -f 2 | cut -d '-' -f 1 > $pdb_id_list
 
  while read pdb_id ; do
   if [ ! -e $SRC_DIR/${pdb_id:1:2}/$pdb_id/$pdb_id$src_file_ext ] ; then
@@ -100,7 +100,7 @@ fi
 
 if [ -d $MMCIF_VALID_ALT ] ; then
 
- find $MMCIF_VALID_ALT -name '*.cif' | cut -d '/' -f 2 | cut -d '-' -f 1 > $pdb_id_list
+ find $MMCIF_VALID_ALT -maxdepth 1 -name '*.cif' | cut -d '/' -f 2 | cut -d '-' -f 1 > $pdb_id_list
 
  while read pdb_id ; do
   if [ ! -e $SRC_DIR/${pdb_id:1:2}/$pdb_id/$pdb_id$src_file_ext ] ; then
@@ -113,7 +113,7 @@ fi
 
 if [ -d $MMCIF_VALID ] ; then
 
- find $MMCIF_VALID -name '*.cif' | cut -d '/' -f 2 | cut -d '-' -f 1 > $pdb_id_list
+ find $MMCIF_VALID -maxdepth 1 -name '*.cif' | cut -d '/' -f 2 | cut -d '-' -f 1 > $pdb_id_list
 
  while read pdb_id ; do
   if [ ! -e $SRC_DIR/${pdb_id:1:2}/$pdb_id/$pdb_id$src_file_ext ] ; then
@@ -126,7 +126,7 @@ fi
 
 if [ -d $XML_VALID_ALT ] ; then
 
- find $XML_VALID_ALT -name '*.xml.gz' | cut -d '/' -f 3 | cut -d '-' -f 1 > $pdb_id_list
+ find $XML_VALID_ALT -mindepth 2 -name '*.xml.gz' | cut -d '/' -f 3 | cut -d '-' -f 1 > $pdb_id_list
 
  while read pdb_id ; do
   if [ ! -e $SRC_DIR/${pdb_id:1:2}/$pdb_id/$pdb_id$src_file_ext ] ; then
@@ -139,7 +139,7 @@ fi
 
 if [ -d $XML_VALID ] ; then
 
- find $XML_VALID -name '*.xml.gz' | cut -d '/' -f 3 | cut -d '-' -f 1 > $pdb_id_list
+ find $XML_VALID -mindepth 2 -name '*.xml.gz' | cut -d '/' -f 3 | cut -d '-' -f 1 > $pdb_id_list
 
  while read pdb_id ; do
   if [ ! -e $SRC_DIR/${pdb_id:1:2}/$pdb_id/$pdb_id$src_file_ext ] ; then
@@ -152,7 +152,7 @@ fi
 
 if [ -d $RDF_VALID_ALT ] ; then
 
- find $RDF_VALID_ALT -name '*.rdf.gz' | cut -d '/' -f 3 | cut -d '-' -f 1 > $pdb_id_list
+ find $RDF_VALID_ALT -mindepth 2 -name '*.rdf.gz' | cut -d '/' -f 3 | cut -d '-' -f 1 > $pdb_id_list
 
  while read pdb_id ; do
   if [ ! -e $SRC_DIR/${pdb_id:1:2}/$pdb_id/$pdb_id$src_file_ext ] ; then
@@ -165,7 +165,7 @@ fi
 
 if [ -d $RDF_VALID ] ; then
 
- find $RDF_VALID -name '*.rdf.gz' | cut -d '/' -f 3 | cut -d '-' -f 1 > $pdb_id_list
+ find $RDF_VALID -mindepth 2 -name '*.rdf.gz' | cut -d '/' -f 3 | cut -d '-' -f 1 > $pdb_id_list
 
  while read pdb_id ; do
   if [ ! -e $SRC_DIR/${pdb_id:1:2}/$pdb_id/$pdb_id$src_file_ext ] ; then
@@ -178,7 +178,7 @@ fi
 
 if [ -d $MMCIF_VALID_ALT ] ; then
 
- find $MMCIF_VALID_ALT -name '*.cif.gz' | cut -d '/' -f 3 | cut -d '-' -f 1 > $pdb_id_list
+ find $MMCIF_VALID_ALT -mindepth 2 -name '*.cif.gz' | cut -d '/' -f 3 | cut -d '-' -f 1 > $pdb_id_list
 
  while read pdb_id ; do
   if [ ! -e $SRC_DIR/${pdb_id:1:2}/$pdb_id/$pdb_id$src_file_ext ] ; then
@@ -191,7 +191,7 @@ fi
 
 if [ -d $MMCIF_VALID ] ; then
 
- find $MMCIF_VALID -name '*.cif.gz' | cut -d '/' -f 3 | cut -d '-' -f 1 > $pdb_id_list
+ find $MMCIF_VALID -mindepth 2 -name '*.cif.gz' | cut -d '/' -f 3 | cut -d '-' -f 1 > $pdb_id_list
 
  while read pdb_id ; do
   if [ ! -e $SRC_DIR/${pdb_id:1:2}/$pdb_id/$pdb_id$src_file_ext ] ; then

@@ -13,7 +13,7 @@ echo Compressing $DB_NAME...
 
 rdf_file_list=compress_rdf_file_list
 
-find $RDF_VALID -name '*.rdf' > $rdf_file_list
+find $RDF_VALID -maxdepth 1 -name '*.rdf' > $rdf_file_list
 
 for proc_id in `seq 1 $MAXPROCS` ; do
 

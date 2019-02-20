@@ -224,7 +224,7 @@ if [ $updated = 0 ] || [ ! -e $xml_file_total ] ; then
 
   if [ -d $XML_DIR ] ; then
 
-   unzipped=`find $XML_DIR -name '*.xml' | wc -l`
+   unzipped=`find $XML_DIR -maxdepth 1 -name '*.xml' | wc -l`
 
    if [ $total = $unzipped ] ; then
     exit 0
@@ -261,7 +261,7 @@ done < $gz_file_list
 
 rm -f $gz_file_list
 
-find $XML_DIR -type f -iname "*.gz" -exec gunzip {} +
+find $XML_DIR -type f -name "*.gz" -exec gunzip {} +
 
 echo Unzipped $ALT_NAME" ("$XML_DIR") is up-to-date."
 

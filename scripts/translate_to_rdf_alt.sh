@@ -29,9 +29,9 @@ fi
 
 mkdir -p $RDF_VALID_ALT
 
-last=`find $RDF_VALID_ALT -name '*.rdf' | wc -l`
-total=`find $VALID_INFO_ALT -name '*.xml' | wc -l`
-err=`find $RDF_VALID_ALT -name '*.err' | wc -l`
+last=`find $RDF_VALID_ALT -maxdepth 1 -name '*.rdf' | wc -l`
+total=`find $VALID_INFO_ALT -maxdepth 1 -name '*.xml' | wc -l`
+err=`find $RDF_VALID_ALT -maxdepth 1 -name '*.err' | wc -l`
 
 if [ $err != 0 ] || [ $total != $last ] ; then
 
@@ -40,7 +40,7 @@ if [ $err != 0 ] || [ $total != $last ] ; then
 
  pdbml_file_list=pdbml_to_rdf_alt_file_list
 
- find $VALID_INFO_ALT -name '*.xml' > $pdbml_file_list
+ find $VALID_INFO_ALT -maxdepth 1 -name '*.xml' > $pdbml_file_list
 
  for proc_id in `seq 1 $MAXPROCS` ; do
 

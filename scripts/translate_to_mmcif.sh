@@ -36,8 +36,8 @@ for dicfile in $pdbx_validation_dic $pdbx_validation_odb $pdbx_validation_sdb ; 
 
 done
 
-last=`find $MMCIF_VALID -name '*.cif' | wc -l`
-total=`find $XML_VALID -name '*.xml' | wc -l`
+last=`find $MMCIF_VALID -maxdepth 1 -name '*.cif' | wc -l`
+total=`find $XML_VALID -maxdepth 1 -name '*.xml' | wc -l`
 
 if [ $total != $last ] ; then
 
@@ -46,7 +46,7 @@ if [ $total != $last ] ; then
 
  pdbml_file_list=pdbml_to_mmcif_file_list
 
- find $XML_VALID -name '*.xml' > $pdbml_file_list
+ find $XML_VALID -maxdepth 1 -name '*.xml' > $pdbml_file_list
 
  for proc_id in `seq 1 $MAXPROCS` ; do
 
