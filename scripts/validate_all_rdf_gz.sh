@@ -33,7 +33,7 @@ done
 
 if [ ! -z $RDF_DIR ] ; then
 
- total=`find $RDF_DIR -name '*.rdf.gz' | wc -l`
+ total=`find $RDF_DIR -mindepth 2 -name '*.rdf.gz' | wc -l`
 
  if [ $total != 0 ] ; then
 
@@ -41,7 +41,7 @@ if [ ! -z $RDF_DIR ] ; then
 
   rdf_file_list=check_${RDF_DIR,,}_rdf_gz_file_list
 
-  find $RDF_DIR -name '*.rdf.gz' > $rdf_file_list
+  find $RDF_DIR -mindepth 2 -name '*.rdf.gz' > $rdf_file_list
 
   for proc_id in `seq 1 $MAXPROCS` ; do
 

@@ -13,7 +13,7 @@ echo Compressing $DB_NAME...
 
 pdbml_file_list=compress_pdbml_file_list
 
-find $XML_VALID -name '*.xml' > $pdbml_file_list
+find $XML_VALID -maxdepth 1 -name '*.xml' > $pdbml_file_list
 
 for proc_id in `seq 1 $MAXPROCS` ; do
 

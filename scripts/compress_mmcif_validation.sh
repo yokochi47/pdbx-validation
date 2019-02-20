@@ -13,7 +13,7 @@ echo Compressing $DB_NAME...
 
 mmcif_file_list=compress_mmcif_file_list
 
-find $MMCIF_VALID -name '*.cif' > $mmcif_file_list
+find $MMCIF_VALID -maxdepth 1 -name '*.cif' > $mmcif_file_list
 
 for proc_id in `seq 1 $MAXPROCS` ; do
 

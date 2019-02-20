@@ -33,7 +33,7 @@ done
 
 if [ ! -z $MMCIF_DIR ] ; then
 
- total=`find $MMCIF_DIR -name '*.cif' | wc -l`
+ total=`find $MMCIF_DIR -maxdepth 1 -name '*.cif' | wc -l`
 
  if [ $total != 0 ] ; then
 
@@ -49,7 +49,7 @@ if [ ! -z $MMCIF_DIR ] ; then
 
   cif_file_list=check_${MMCIF_DIR,,}_cif_file_list
 
-  find $MMCIF_DIR -name '*.cif' > $cif_file_list
+  find $MMCIF_DIR -maxdepth 1 -name '*.cif' > $cif_file_list
 
   for proc_id in `seq 1 $MAXPROCS` ; do
 
