@@ -32,5 +32,8 @@ wait
 
 rm -f $rdf_file_list
 
+find $RDF_VALID_ALT -mindepth 2 -name "*.rdf" -exec rm {} +
+find $RDF_VALID_ALT -mindepth 2 -name "*.err" -exec rm {} +
+
 echo $DB_NAME" ("$RDF_VALID_ALT") is up-to-date."
 

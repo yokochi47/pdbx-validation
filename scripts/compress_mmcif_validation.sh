@@ -32,5 +32,9 @@ wait
 
 rm -f $mmcif_file_list
 
+find $MMCIF_VALID -mindepth 2 -name "*.cif" -exec rm {} +
+find $MMCIF_VALID -mindepth 2 -name "*-diag.log" -exec rm {} +
+find $MMCIF_VALID -mindepth 2 -name "*-parser.log" -exec rm {} +
+
 echo $DB_NAME" ("$MMCIF_VALID") is up-to-date."
 
