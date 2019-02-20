@@ -50,6 +50,8 @@ PROC_ID=`expr $PROC_ID - 1`
 proc_id=0
 total=`wc -l < $FILE_LIST`
 
+chk_sum_dir=`readlink -f $CHK_SUM_DIR`
+
 while read cif_gz_file
 do
 
@@ -59,7 +61,7 @@ do
 
   cif_label=`basename $cif_gz_file`
 
-  chk_sum_file=$CHK_SUM_DIR/$cif_label.md5
+  chk_sum_file=$chk_sum_dir/$cif_label.md5
 
   if [ $chk_sum_file -nt $cif_gz_file ] ; then
 
