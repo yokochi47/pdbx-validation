@@ -11,6 +11,7 @@ if [ $has_rapper_command = "false" ] ; then
 fi
 
 RDF_DIR=
+CHK_SUM_DIR=chk_sum_rdf_valid
 DELETE=true
 
 ARGV=`getopt --long -o "d:r" "$@"`
@@ -37,6 +38,8 @@ if [ ! -z $RDF_DIR ] ; then
 
  if [ $total != 0 ] ; then
 
+  mkdir -p $CHK_SUM_DIR
+
   echo RDF syntax validation: *.rdf documents in $RDF_DIR...
 
   rdf_file_list=check_${RDF_DIR,,}_rdf_file_list
@@ -46,9 +49,9 @@ if [ ! -z $RDF_DIR ] ; then
   for proc_id in `seq 1 $MAXPROCS` ; do
 
    if [ $DELETE = "true" ] ; then
-    ./scripts/validate_all_rdf_worker.sh -l $rdf_file_list -n $proc_id"of"$MAXPROCS -r &
+    ./scripts/validate_all_rdf_worker.sh -c $CHK_SUM_DIR -l $rdf_file_list -n $proc_id"of"$MAXPROCS -r &
    else
-    ./scripts/validate_all_rdf_worker.sh -l $rdf_file_list -n $proc_id"of"$MAXPROCS &
+    ./scripts/validate_all_rdf_worker.sh -c $CHK_SUM_DIR -l $rdf_file_list -n $proc_id"of"$MAXPROCS &
    fi
 
   done

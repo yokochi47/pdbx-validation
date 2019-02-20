@@ -125,10 +125,11 @@ File path | Document
 
 ## Release notes
 
-- **Feb 14, 2019**: Release v1.5.1
+- **Feb 20, 2019**: Release v1.5.1
 	- Rename 'revert_info.xsl' to 'revert_info_from_full.xsl'.
 	- Enable mutual transformation between PDBML-validation-alt and wwPDB Validation Reports (XML).
 		- Add 'revert_info_from_alt_noatom.xsl', 'validation_created_date.xsl', and 'nmr_atom_consistency.xsl' style sheets for the translation.
+	- Enable parallel mmCIF and RDF syntax validation with check sum calculation.
 
 - **Feb 6, 2019**: Release v1.5.0
 	- Add/Revise the following data items in relation with wwPDB validation information XSD.

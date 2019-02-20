@@ -2,16 +2,20 @@
 
 source ./scripts/env.sh
 
-WORK_DIR=
+CHK_SUM_DIR=
 FILE_LIST=
 DELETE=true
 
-ARGV=`getopt --long -o "d:l:n:r" "$@"`
+ARGV=`getopt --long -o "c:s:l:n:r" "$@"`
 eval set -- "$ARGV"
 while true ; do
  case "$1" in
- -d)
-  WORK_DIR=$2
+ -c)
+  CHK_SUM_DIR=$2
+  shift
+ ;;
+ -s)
+  dict_sdb=$2
   shift
  ;;
  -l)
@@ -46,23 +50,51 @@ PROC_ID=`expr $PROC_ID - 1`
 proc_id=0
 total=`wc -l < $FILE_LIST`
 
-sdb_readlink=`readlink -f $WORK_DIR/$pdbx_validation_sdb`
-
-while read cif_file
+while read _cif_file
 do
 
  proc_id_mod=`expr $proc_id % $MAXPROCS`
 
  if [ $proc_id_mod = $PROC_ID ] ; then
 
-  cif_dir=`dirname $cif_file`
+  chk_sum_file=$CHK_SUM_DIR/$_cif_file.md5
+
+  if [ $chk_sum_file -nt $_cif_file ] ; then
+
+   let proc_id++
+   continue
+
+  fi
+
+  new_chk_sum=`md5sum $_cif_file | cut -d ' ' -f 1`
+
+  if [ -e $chk_sum_file ] ; then
+
+   old_chk_sum=`head -n 1 $chk_sum_file`
+
+   if [ $old_chk_sum = $new_chk_sum ] ; then
+
+    if [ $chk_sum_file -ot $_cif_file ] ; then
+     touch $chk_sum_file
+    fi
+
+    let proc_id++
+    continue
+
+   fi
+
+  fi
+
+  cif_dir=`dirname $_cif_file`
+  cif_file=`basename $_cif_file`
+
   diag_log=$cif_file-diag.log
   parser_log=$cif_file-parser.log
 
   rm -f $cif_dir/$diag_log $cif_dir/$parser_log
 
-  ( cd $cif_dir ; CifCheck -f $cif_file -dictSdb $sdb_readlink > /dev/null ; [ -e $diag_log ] && [ `grep -v 'has invalid value "?" in row' $diag_log | sed -e /^$/d | wc -l` = 0 ] && rm -f $diag_log )
-  ( cd $cif_dir ; [ -e $parser_log ] && ( [ $DELETE = "true" ] && rm -f $cif_file ; cat $parser_log ) ; [ -e $diag_log ] && ( [ $DELETE = "true" ] && rm -f $cif_file ; cat $diag_log ) )
+  ( cd $cif_dir ; CifCheck -f $cif_file -dictSdb $dict_sdb > /dev/null ; [ -e $diag_log ] && [ `grep -v 'has invalid value "?" in row' $diag_log | sed -e /^$/d | wc -l` = 0 ] && rm -f $diag_log )
+  ( cd $cif_dir ; [ ! -e $diag_log ] && [ ! -e $parser_log ] && echo $new_chk_sum > $chk_sum_file ; [ -e $parser_log ] && ( [ $DELETE = "true" ] && rm -f $cif_file ; cat $parser_log ) ; [ -e $diag_log ] && ( [ $DELETE = "true" ] && rm -f $cif_file ; cat $diag_log ) )
 
   if [ $proc_id_mod = 0 ] ; then
    echo -e -n "\rDone "$((proc_id + 1)) of $total ...

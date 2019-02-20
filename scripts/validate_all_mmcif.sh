@@ -11,6 +11,7 @@ if [ $has_cifcheck_command = "false" ] ; then
 fi
 
 MMCIF_DIR=
+CHK_SUM_DIR=chk_sum_mmcif_valid
 DELETE=true
 
 ARGV=`getopt --long -o "d:r" "$@"`
@@ -37,6 +38,8 @@ if [ ! -z $MMCIF_DIR ] ; then
 
  if [ $total != 0 ] ; then
 
+  mkdir -p $CHK_SUM_DIR
+
   for dicfile in $pdbx_validation_dic $pdbx_validation_odb $pdbx_validation_sdb ; do
 
    if [ ! -e $MMCIF_DIR/$dicfile ] ; then
@@ -48,15 +51,16 @@ if [ ! -z $MMCIF_DIR ] ; then
   echo mmCIF syntax validation: *.cif documents in $MMCIF_DIR...
 
   cif_file_list=check_${MMCIF_DIR,,}_cif_file_list
+  dict_sdb=`readlink -f $MMCIF_DIR/$pdbx_validation_sdb`
 
   find $MMCIF_DIR -maxdepth 1 -name '*.cif' > $cif_file_list
 
   for proc_id in `seq 1 $MAXPROCS` ; do
 
    if [ $DELETE = "true" ] ; then
-    ./scripts/validate_all_mmcif_worker.sh -d $MMCIF_DIR -l $cif_file_list -n $proc_id"of"$MAXPROCS -r &
+    ./scripts/validate_all_mmcif_worker.sh -c $CHK_SUM_DIR -s $dict_sdb -l $cif_file_list -n $proc_id"of"$MAXPROCS -r &
    else
-    ./scripts/validate_all_mmcif_worker.sh -d $MMCIF_DIR -l $cif_file_list -n $proc_id"of"$MAXPROCS &
+    ./scripts/validate_all_mmcif_worker.sh -c $CHK_SUM_DIR -s $dict_sdb -l $cif_file_list -n $proc_id"of"$MAXPROCS &
    fi
 
   done
