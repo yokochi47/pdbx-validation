@@ -2,13 +2,18 @@
 
 source ./scripts/env.sh
 
+CHK_SUM_DIR=
 FILE_LIST=
 DELETE=true
 
-ARGV=`getopt --long -o "l:n:r" "$@"`
+ARGV=`getopt --long -o "c:l:n:r" "$@"`
 eval set -- "$ARGV"
 while true ; do
  case "$1" in
+ -c)
+  CHK_SUM_DIR=$2
+  shift
+ ;;
  -l)
   FILE_LIST=$2
   shift
@@ -48,11 +53,40 @@ do
 
  if [ $proc_id_mod = $PROC_ID ] ; then
 
+  chk_sum_file=$CHK_SUM_DIR/$rdf_gz_file.md5
+
+  if [ $chk_sum_file -nt $rdf_gz_file ] ; then
+
+   let proc_id++
+   continue
+
+  fi
+
+  new_chk_sum=`md5sum $rdf_gz_file | cut -d ' ' -f 1`
+
+  if [ -e $chk_sum_file ] ; then
+
+   old_chk_sum=`head -n 1 $chk_sum_file`
+
+   if [ $old_chk_sum = $new_chk_sum ] ; then
+
+    if [ $chk_sum_file -ot $rdf_gz_file ] ; then
+     touch $chk_sum_file
+    fi
+
+    let proc_id++
+    continue
+
+   fi
+
+  fi
+
   rdf_dir=`dirname $rdf_gz_file`
+
   rdf_file=$rdf_dir/`basename $rdf_gz_file .gz`
   err_file=$rdf_dir/validate_$rdf_gz_file.err
 
-  gunzip -c $rdf_gz_file > $rdf_file ; rapper -q -c $rdf_file 2> $err_file && ( rm -f $rdf_file $err_file ) || ( [ $DELETE = "true" ] && rm -f $rdf_gz_file ; rm -f $rdf_file ; cat $err_file )
+  gunzip -c $rdf_gz_file > $rdf_file ; rapper -q -c $rdf_file 2> $err_file && ( rm -f $rdf_file $err_file ; echo $new_chk_sum > $chk_sum_file ) || ( [ $DELETE = "true" ] && rm -f $rdf_gz_file ; rm -f $rdf_file ; cat $err_file )
 
   if [ $proc_id_mod = 0 ] ; then
    echo -e -n "\rDone "$((proc_id + 1)) of $total ...
