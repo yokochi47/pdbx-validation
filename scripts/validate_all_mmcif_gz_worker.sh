@@ -57,7 +57,9 @@ do
 
  if [ $proc_id_mod = $PROC_ID ] ; then
 
-  chk_sum_file=$CHK_SUM_DIR/$cif_gz_file.md5
+  cif_label=`basename $cif_gz_file`
+
+  chk_sum_file=$CHK_SUM_DIR/$cif_label.md5
 
   if [ $chk_sum_file -nt $cif_gz_file ] ; then
 
@@ -90,8 +92,8 @@ do
 
   gunzip -c $cif_gz_file > $cif_dir/$cif_file
 
-  diag_log=$cif_file-diag.log
-  parser_log=$cif_file-parser.log
+  diag_log=$cif_label-diag.log
+  parser_log=$cif_label-parser.log
 
   rm -f $cif_dir/$diag_log $cif_dir/$parser_log
 

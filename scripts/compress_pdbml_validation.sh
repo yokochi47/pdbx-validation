@@ -32,5 +32,7 @@ wait
 
 rm -f $pdbml_file_list
 
+find $XML_VALID -mindepth 2 -name "*.xml" -exec rm {} +
+
 echo $DB_NAME" ("$XML_VALID") is up-to-date."
 

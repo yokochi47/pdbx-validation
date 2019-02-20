@@ -53,7 +53,9 @@ do
 
  if [ $proc_id_mod = $PROC_ID ] ; then
 
-  chk_sum_file=$CHK_SUM_DIR/$rdf_file.md5
+  rdf_label=`basename $rdf_file`
+
+  chk_sum_file=$CHK_SUM_DIR/$rdf_label.md5
 
   if [ $chk_sum_file -nt $rdf_file ] ; then
 
@@ -82,7 +84,7 @@ do
   fi
 
   rdf_dir=`dirname $rdf_file`
-  err_file=$rdf_dir/validate_$rdf_file.err
+  err_file=$rdf_dir/validate_$rdf_label.err
 
   rapper -q -c $rdf_file 2> $err_file && ( rm -f $err_file ; echo $new_chk_sum > $chk_sum_file ) || ( [ $DELETE = "true" ] && rm -f $rdf_file ; cat $err_file )
 

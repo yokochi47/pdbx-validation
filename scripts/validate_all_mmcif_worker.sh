@@ -50,23 +50,25 @@ PROC_ID=`expr $PROC_ID - 1`
 proc_id=0
 total=`wc -l < $FILE_LIST`
 
-while read _cif_file
+while read cif_file
 do
 
  proc_id_mod=`expr $proc_id % $MAXPROCS`
 
  if [ $proc_id_mod = $PROC_ID ] ; then
 
-  chk_sum_file=$CHK_SUM_DIR/$_cif_file.md5
+  cif_label=`basename $cif_file`
 
-  if [ $chk_sum_file -nt $_cif_file ] ; then
+  chk_sum_file=$CHK_SUM_DIR/$cif_label.md5
+
+  if [ $chk_sum_file -nt $cif_file ] ; then
 
    let proc_id++
    continue
 
   fi
 
-  new_chk_sum=`md5sum $_cif_file | cut -d ' ' -f 1`
+  new_chk_sum=`md5sum $cif_file | cut -d ' ' -f 1`
 
   if [ -e $chk_sum_file ] ; then
 
@@ -74,7 +76,7 @@ do
 
    if [ $old_chk_sum = $new_chk_sum ] ; then
 
-    if [ $chk_sum_file -ot $_cif_file ] ; then
+    if [ $chk_sum_file -ot $cif_file ] ; then
      touch $chk_sum_file
     fi
 
@@ -85,11 +87,9 @@ do
 
   fi
 
-  cif_dir=`dirname $_cif_file`
-  cif_file=`basename $_cif_file`
-
-  diag_log=$cif_file-diag.log
-  parser_log=$cif_file-parser.log
+  cif_dir=`dirname $cif_file`
+  diag_log=$cif_label-diag.log
+  parser_log=$cif_label-parser.log
 
   rm -f $cif_dir/$diag_log $cif_dir/$parser_log
 
