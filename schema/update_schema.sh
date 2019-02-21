@@ -111,3 +111,8 @@ java -jar $SAXON -s:$DIC_PREFIX-v$DIC_MAJOR_VER.xsd -xsl:$XS3P_XSLT_CODE -o:$DIC
 
 echo Generated: $DIC_PREFIX-v$DIC_MAJOR_VER.html
 
+./calc_schema_stat.sh > schema_stat.txt
+
+cat schema_stat.txt
+
+

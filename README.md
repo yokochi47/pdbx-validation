@@ -18,7 +18,7 @@ File path | Document
 [schema/pdbx-validation-v1.xsd](https://github.com/yokochi47/pdbx-validation/blob/master/schema/pdbx-validation-v1.305.xsd) | PDBML-validation Schema (v1.305)
 [schema/pdbx-validation-v1.owl](https://github.com/yokochi47/pdbx-validation/blob/master/schema/pdbx-validation-v1.305.owl) | wwPDB/OWL-validation (v1.305)
 [schema/mmcif_ddl.dic](https://github.com/yokochi47/pdbx-validation/blob/master/schema/mmcif_ddl_v2.2.1.dic) | extended mmCIF DDL Core Dictionary (dubbed as v2.2.1)
-[resource/mmcif_pdbx_v50.dic](http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic) | PDBx/mmCIF Dictionary (v5.305)
+[resource/mmcif_pdbx_v50.dic](http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic) | PDB Exchange Data Dictionary (v5.305)
 [resource/pdbx-v50.xsd](https://github.com/yokochi47/pdbx-validation/blob/master/resource/pdbx-v50.xsd) | PDBML Schema (v5.305)
 [resource/pdbx-v50.owl](https://github.com/yokochi47/pdbx-validation/blob/master/resource/pdbx-v50.owl) | PDBx ontology, ontology for wwPDB/RDF (v5.305)
 [resource/wwpdb_validation_v002.xsd](https://github.com/yokochi47/pdbx-validation/blob/master/resource/wwpdb_validation_v002_rev30291.xsd) | XML Schema for wwPDB validation reports (v002, rev30291)
@@ -125,11 +125,12 @@ File path | Document
 
 ## Release notes
 
-- **Feb 20, 2019**: Release v1.5.1
+- **Feb 21, 2019**: Release v1.5.1
 	- Rename 'revert_info.xsl' to 'revert_info_from_full.xsl'.
 	- Enable mutual transformation between PDBML-validation-alt and wwPDB Validation Reports (XML).
 		- Add 'revert_info_from_alt_noatom.xsl', 'validation_created_date.xsl', and 'nmr_atom_consistency.xsl' style sheets for the translation.
 	- Enable parallel mmCIF and RDF syntax validation with check sum calculation.
+	- Add script 'calc_schema_stat.sh', which reports statistics of wwPDB Validation Information Dictionary and difference with PDB Exchange Data Dictionary.
 
 - **Feb 6, 2019**: Release v1.5.0
 	- Add/Revise the following data items in relation with wwPDB validation information XSD.
