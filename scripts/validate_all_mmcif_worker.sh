@@ -55,9 +55,16 @@ chk_sum_dir=`readlink -f $CHK_SUM_DIR`
 while read cif_file
 do
 
- proc_id_mod=`expr $proc_id % $MAXPROCS`
+ proc_id_mod=$(($proc_id % $MAXPROCS))
 
  if [ $proc_id_mod = $PROC_ID ] ; then
+
+  if [ ! -e $cif_file ] ; then
+
+   let proc_id++
+   continue
+
+  fi
 
   cif_label=`basename $cif_file`
 

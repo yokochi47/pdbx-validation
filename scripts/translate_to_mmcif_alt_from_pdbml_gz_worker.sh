@@ -45,9 +45,16 @@ total=`wc -l < $FILE_LIST`
 while read pdbml_valid_gz_file
 do
 
- proc_id_mod=`expr $proc_id % $MAXPROCS`
+ proc_id_mod=$(($proc_id % $MAXPROCS))
 
  if [ $proc_id_mod = $PROC_ID ] ; then
+
+  if [ ! -e $pdbml_valid_gz_file ] ; then
+
+   let proc_id++
+   continue
+
+  fi
 
   pdb_id=`basename $pdbml_valid_gz_file -validation-alt.xml.gz`
   pdbml_valid_file=../`dirname $pdbml_valid_gz_file`/`basename $pdbml_valid_gz_file .gz`
