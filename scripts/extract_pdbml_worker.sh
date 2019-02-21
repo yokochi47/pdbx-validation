@@ -50,9 +50,16 @@ total=`wc -l < $FILE_LIST`
 while read pdbml_file
 do
 
- proc_id_mod=`expr $proc_id % $MAXPROCS`
+ proc_id_mod=$(($proc_id % $MAXPROCS))
 
  if [ $proc_id_mod = $PROC_ID ] ; then
+
+  if [ ! -e $pdbml_file ] ; then
+
+   let proc_id++
+   continue
+
+  fi
 
   pdb_id=`basename $pdbml_file -noatom.xml`
   pdbml_ext_file=$WORK_DIR/$pdb_id-noatom-ext.xml

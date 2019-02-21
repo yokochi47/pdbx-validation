@@ -58,9 +58,16 @@ total=`wc -l < $FILE_LIST`
 while read valid_file
 do
 
- proc_id_mod=`expr $proc_id % $MAXPROCS`
+ proc_id_mod=$(($proc_id % $MAXPROCS))
 
  if [ $proc_id_mod = $PROC_ID ] ; then
+
+  if [ ! -e $valid_file ] ; then
+
+   let proc_id++
+   continue
+
+  fi
 
   pdb_id=`basename $valid_file _validation.xml`
   info_alt_file=$WORK_DIR/$pdb_id-validation-alt.xml

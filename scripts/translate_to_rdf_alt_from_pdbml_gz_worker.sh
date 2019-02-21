@@ -49,6 +49,13 @@ do
 
  if [ $proc_id_mod = $PROC_ID ] ; then
 
+  if [ ! -e $pdbml_valid_gz_file ] ; then
+
+   let proc_id++
+   continue
+
+  fi
+
   pdb_id=`basename $pdbml_valid_gz_file -validation-alt.xml.gz`
   pdbml_valid_file=`dirname $pdbml_valid_gz_file`/`basename $pdbml_valid_gz_file .gz`
   rdf_valid_file=$WORK_DIR/$pdb_id-validation-alt.rdf

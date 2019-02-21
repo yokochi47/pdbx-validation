@@ -39,14 +39,21 @@ PROC_ID=`expr $PROC_ID - 1`
 
 proc_id=0
 
-while read mmcif_file
+while read cif_file
 do
 
- proc_id_mod=`expr $proc_id % $MAXPROCS`
+ proc_id_mod=$(($proc_id % $MAXPROCS))
 
  if [ $proc_id_mod = $PROC_ID ] ; then
 
-  pdb_id=`basename $mmcif_file -validation-full.cif`
+  if [ ! -e $cif_file ] ; then
+
+   let proc_id++
+   continue
+
+  fi
+
+  pdb_id=`basename $cif_file -validation-full.cif`
   div_dir=$WORK_DIR/${pdb_id:1:2}
 
   if [ ! -d $div_dir ] ; then
@@ -56,7 +63,7 @@ do
    mkdir -p $div_dir
   fi
 
-  mv -f $mmcif_file $div_dir && gzip $div_dir/$pdb_id-validation-full.cif
+  mv -f $cif_file $div_dir && gzip $div_dir/$pdb_id-validation-full.cif
 
  fi
 

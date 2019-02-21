@@ -58,9 +58,16 @@ total=`wc -l < $FILE_LIST`
 while read pdbml_ext_file
 do
 
- proc_id_mod=`expr $proc_id % $MAXPROCS`
+ proc_id_mod=$(($proc_id % $MAXPROCS))
 
  if [ $proc_id_mod = $PROC_ID ] ; then
+
+  if [ ! -e $pdbml_ext_file ] ; then
+
+   let proc_id++
+   continue
+
+  fi
 
   pdb_id=`basename $pdbml_ext_file -noatom-ext.xml`
   info_alt_file=$VALID_INFO_ALT/$pdb_id-validation-alt.xml

@@ -42,9 +42,16 @@ proc_id=0
 while read xml_file
 do
 
- proc_id_mod=`expr $proc_id % $MAXPROCS`
+ proc_id_mod=$(($proc_id % $MAXPROCS))
 
  if [ $proc_id_mod = $PROC_ID ] ; then
+
+  if [ ! -e $xml_file ] ; then
+
+   let proc_id++
+   continue
+
+  fi
 
   pdb_id=`basename $xml_file -validation-full.xml`
   div_dir=$WORK_DIR/${pdb_id:1:2}

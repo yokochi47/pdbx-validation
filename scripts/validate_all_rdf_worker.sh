@@ -49,9 +49,16 @@ total=`wc -l < $FILE_LIST`
 while read rdf_file
 do
 
- proc_id_mod=`expr $proc_id % $MAXPROCS`
+ proc_id_mod=$(($proc_id % $MAXPROCS))
 
  if [ $proc_id_mod = $PROC_ID ] ; then
+
+  if [ ! -e $rdf_file ] ; then
+
+   let proc_id++
+   continue
+
+  fi
 
   rdf_label=`basename $rdf_file`
 
