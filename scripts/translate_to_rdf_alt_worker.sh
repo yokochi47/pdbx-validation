@@ -37,7 +37,7 @@ fi
 
 MAXPROCS=`echo $PROC_INFO | cut -d 'f' -f 2`
 PROC_ID=`echo $PROC_INFO | cut -d 'o' -f 1`
-PROC_ID=`expr $PROC_ID - 1`
+PROC_ID=$(($PROC_ID - 1))
 
 proc_id=0
 total=`wc -l < $FILE_LIST`
@@ -45,7 +45,7 @@ total=`wc -l < $FILE_LIST`
 while read pdbml_valid_file
 do
 
- proc_id_mod=`expr $proc_id % $MAXPROCS`
+ proc_id_mod=$(($proc_id % $MAXPROCS))
 
  if [ $proc_id_mod = $PROC_ID ] ; then
 

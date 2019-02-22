@@ -50,7 +50,7 @@ xml_pretty() {
 
 MAXPROCS=`echo $PROC_INFO | cut -d 'f' -f 2`
 PROC_ID=`echo $PROC_INFO | cut -d 'o' -f 1`
-PROC_ID=`expr $PROC_ID - 1`
+PROC_ID=$(($PROC_ID - 1))
 
 proc_id=0
 total=`wc -l < $FILE_LIST`

@@ -45,7 +45,7 @@ fi
 
 MAXPROCS=`echo $PROC_INFO | cut -d 'f' -f 2`
 PROC_ID=`echo $PROC_INFO | cut -d 'o' -f 1`
-PROC_ID=`expr $PROC_ID - 1`
+PROC_ID=$(($PROC_ID - 1))
 
 proc_id=0
 total=`wc -l < $FILE_LIST`
@@ -72,7 +72,12 @@ do
 
   if [ $chk_sum_file -nt $cif_file ] ; then
 
+   if [ $proc_id_mod = 0 ] ; then
+    echo -e -n "\rDone "$((proc_id + 1)) of $total ...
+   fi
+
    let proc_id++
+
    continue
 
   fi
@@ -89,7 +94,12 @@ do
      touch $chk_sum_file
     fi
 
+    if [ $proc_id_mod = 0 ] ; then
+     echo -e -n "\rDone "$((proc_id + 1)) of $total ...
+    fi
+
     let proc_id++
+
     continue
 
    fi
