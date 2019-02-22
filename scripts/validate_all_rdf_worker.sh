@@ -77,7 +77,7 @@ do
 
    old_chk_sum=`head -n 1 $chk_sum_file`
 
-   if [ $old_chk_sum = $new_chk_sum ] ; then
+   if [ "$old_chk_sum" = "$new_chk_sum" ] ; then
 
     if [ $chk_sum_file -ot $rdf_file ] ; then
      touch $chk_sum_file
