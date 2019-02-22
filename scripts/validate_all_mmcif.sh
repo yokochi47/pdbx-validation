@@ -53,6 +53,8 @@ if [ ! -z $MMCIF_DIR ] ; then
   cif_file_list=check_${MMCIF_DIR,,}_cif_file_list
   dict_sdb=`readlink -f $MMCIF_DIR/$pdbx_validation_sdb`
 
+  find $MMCIF_DIR -name "*.log" -exec rm {} +
+
   find $MMCIF_DIR -maxdepth 1 -name '*.cif' > $cif_file_list
 
   for proc_id in `seq 1 $MAXPROCS` ; do

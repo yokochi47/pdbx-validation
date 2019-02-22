@@ -44,6 +44,8 @@ if [ ! -z $RDF_DIR ] ; then
 
   rdf_file_list=check_${RDF_DIR,,}_rdf_file_list
 
+  find $RDF_DIR -name "*.err" -exec rm {} +
+
   find $RDF_DIR -maxdepth 1 -name '*.rdf' > $rdf_file_list
 
   for proc_id in `seq 1 $MAXPROCS` ; do
