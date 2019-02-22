@@ -210,7 +210,7 @@ done < dropped_category_types.txt
 rm -f dropped_category_types.txt
 
 echo "  "$num_new_categories new categories "(see $schema_stat/new_categories.txt for details)."
-echo "  "`expr $num_categories - $num_new_categories` shared categories from `basename $mmcif_dic` "($shared_category_types"see $schema_stat/shared_categories.txt for details")."
+echo "  "$(($num_categories - $num_new_categories)) shared categories from `basename $mmcif_dic` "($shared_category_types"see $schema_stat/shared_categories.txt for details")."
 echo "  "$num_dropped_categories dropped categories from `basename $mmcif_dic` "($dropped_category_types"see $schema_stat/dropped_categories.txt for details")."
 
 # extract items
@@ -337,7 +337,7 @@ rm -f dropped_item_types.txt
 
 echo "  "$num_new_items new items "(see $schema_stat/new_items.txt for details)."
 echo "  "$num_extended_items extended items in shared categories "(see $schema_stat/extended_items.txt for details)."
-echo "  "`expr $num_items - $num_new_items` shared items from `basename $mmcif_dic` "($shared_item_types"see $schema_stat/shared_items.txt for details")."
+echo "  "$(($num_items - $num_new_items)) shared items from `basename $mmcif_dic` "($shared_item_types"see $schema_stat/shared_items.txt for details")."
 echo "  "$num_dropped_items dropped items from `basename $mmcif_dic` "($dropped_item_types"see $schema_stat/dropped_items.txt for details")."
 
 linked_items=`grep _pdbx_item_aliases.xpath $valid_dic | wc -l`
@@ -369,7 +369,7 @@ echo "  "$equivalent_classes equivalent classes of PDB/OWL.
 num_obj_properties=`grep 'owl:ObjectProperty rdf:ID' $valid_owl | wc -l`
 num_data_properties=`grep 'owl:DatatypeProperty rdf:ID' $valid_owl | wc -l`
 
-echo " has "`expr $num_obj_properties + $num_data_properties` properties "(object: $num_obj_properties, datatype: $num_data_properties)."
+echo " has "$(($num_obj_properties + $num_data_properties)) properties "(object: $num_obj_properties, datatype: $num_data_properties)."
 
 same_properties=`grep -1 '<owl:sameAs rdf:resource="PDBo:' $valid_owl | grep Property | wc -l`
 

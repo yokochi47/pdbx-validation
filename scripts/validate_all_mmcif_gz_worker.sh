@@ -45,7 +45,7 @@ fi
 
 MAXPROCS=`echo $PROC_INFO | cut -d 'f' -f 2`
 PROC_ID=`echo $PROC_INFO | cut -d 'o' -f 1`
-PROC_ID=`expr $PROC_ID - 1`
+PROC_ID=$(($PROC_ID - 1))
 
 proc_id=0
 total=`wc -l < $FILE_LIST`
@@ -72,7 +72,12 @@ do
 
   if [ $chk_sum_file -nt $cif_gz_file ] ; then
 
+   if [ $proc_id_mod = 0 ] ; then
+    echo -e -n "\rDone "$((proc_id + 1)) of $total ...
+   fi
+
    let proc_id++
+
    continue
 
   fi
@@ -89,7 +94,12 @@ do
      touch $chk_sum_file
     fi
 
+    if [ $proc_id_mod = 0 ] ; then
+     echo -e -n "\rDone "$((proc_id + 1)) of $total ...
+    fi
+
     let proc_id++
+
     continue
 
    fi
@@ -104,7 +114,7 @@ do
   diag_log=$cif_label-diag.log
   parser_log=$cif_label-parser.log
 
-  rm -f $cif_dir/$diag_log $cif_dir/$parser_log
+#  rm -f $cif_dir/$diag_log $cif_dir/$parser_log
 
   ( cd $cif_dir ; CifCheck -f $cif_file -dictSdb $dict_sdb > /dev/null ; [ -e $diag_log ] && [ `grep -v 'has invalid value "?" in row' $diag_log | sed -e /^$/d | wc -l` = 0 ] && rm -f $diag_log )
   ( cd $cif_dir ; [ ! -e $diag_log ] && [ ! -e $parser_log ] && ( rm -f $cif_file ; echo $new_chk_sum > $chk_sum_file ) ; [ -e $parser_log ] && ( [ $DELETE = "true" ] && rm -f $cif_file.gz ; rm -f $cif_file ; cat $diag_log ) )
