@@ -71,6 +71,18 @@ if [ ! -z $RDF_DIR ] ; then
 
   rm -f $rdf_file_list
 
+  red='\e[0;31m'
+  normal='\e[0m'
+
+  errs=`find $RDF_DIR -name "*.log" | wc -l`
+
+  if [ $errs != 0 ] ; then
+
+   echo -e "${red}$errs errors were detected. Please check the log files for more details.${normal}"
+   exit 1
+
+  fi
+
   echo Done.
 
  fi

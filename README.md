@@ -125,12 +125,19 @@ File path | Document
 
 ## Release notes
 
-- **Feb 21, 2019**: Release v1.5.1
+- **Feb 23, 2019**: Release v1.5.1
 	- Rename 'revert_info.xsl' to 'revert_info_from_full.xsl'.
 	- Enable mutual transformation between PDBML-validation-alt and wwPDB Validation Reports (XML).
 		- Add 'revert_info_from_alt_noatom.xsl', 'validation_created_date.xsl', and 'nmr_atom_consistency.xsl' style sheets for the translation.
 	- Enable parallel mmCIF and RDF syntax validation with check sum calculation.
 	- Add script 'calc_schema_stat.sh', which reports statistics of wwPDB Validation Information Dictionary and difference with PDB Exchange Data Dictionary.
+	- Fix typographical errors in item description. (pdbx_nmr_chem_shift_list.id -> pdbx_nmr_assigned_chem_shift_list.id)
+	- Change '_pdbx_missing_nmr_star_item.name' type to line
+	- Add '_pdbx_audit_revision_history.major_version' with link to /wwPDB-validation-information/Entry/@PDB-revision-number, which was formerly linked to '_pdbx_audit_revision_history.ordinal'
+	- Change '_pdbx_validate_rmsd_ring.dihedral_angle_standard_deviation' unit to degrees
+	- Change '_pdbx_validate_rmsd_torsion.dihedral_angle_standard_deviation' unit to degrees
+	- Change '_pdbx_dcc_map.LLDFZ_outlier_flag' type to uchar1
+	- Change '_pdbx_dcc_mon_geometry.LLDFZ_outlier_flag' type to uchar1
 
 - **Feb 6, 2019**: Release v1.5.0
 	- Add/Revise the following data items in relation with wwPDB validation information XSD.
