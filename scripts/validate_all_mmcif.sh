@@ -88,6 +88,18 @@ if [ ! -z $MMCIF_DIR ] ; then
 
   done
 
+  red='\e[0;31m'
+  normal='\e[0m'
+
+  errs=`find $MMCIF_DIR -name "*.log" | wc -l`
+
+  if [ $errs != 0 ] ; then
+
+   echo -e "${red}$errs errors were detected. Please check the log files for more details.${normal}"
+   exit 1
+
+  fi
+
   echo Done.
 
  fi

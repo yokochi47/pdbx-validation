@@ -1,7 +1,7 @@
 ###########################################################################
 #
 # File:  mmcif_pdbx_validation.dic
-# Date:  Wed Feb  6 17:19:02 JST 2019
+# Data:  Sat Feb 23 00:12:36 JST 2019
 #
 # Created from files noted:
 #        mmcif_pdbx_v50.dic   - PDB Exchange Data Dictionary (V5.305)
@@ -353,7 +353,8 @@ data_mmcif_pdbx_validation.dic
   1.303.1 2019-01-07
 ;
       + Set '_pdbx_missing_nmr_star_item.list_id' and '_pdbx_missing_nmr_star_item.id' as category key
-;
+;/for
+
   1.303.2 2019-02-01
 ;
       + Add/Revise the following data items in relation with wwPDB validation information XSD
@@ -417,6 +418,17 @@ data_mmcif_pdbx_validation.dic
 >     + Add enumeration for struct_conn.conn_type_id # merged
 >     + Extend _pdbx_audit_support.funding_organization with KU Leuven
 >       and Lundbeckfonden # not mapped
+;
+  1.305.1 2019-02-23
+;
+      + Fix typographical errors in item description. (pdbx_nmr_chem_shift_list.id -> pdbx_nmr_assigned_chem_shift_list.id)
+      + Change '_pdbx_missing_nmr_star_item.name' type to line
+      + Add '_pdbx_audit_revision_history.major_version' with link to /wwPDB-validation-information/Entry/@PDB-revision-number
+          , which was formerly linked to '_pdbx_audit_revision_history.ordinal'
+      + Change '_pdbx_validate_rmsd_ring.dihedral_angle_standard_deviation' unit to degrees
+      + Change '_pdbx_validate_rmsd_torsion.dihedral_angle_standard_deviation' unit to degrees
+      + Change '_pdbx_dcc_map.LLDFZ_outlier_flag' type to uchar1
+      + Change '_pdbx_dcc_mon_geometry.LLDFZ_outlier_flag' type to uchar1
 ;
 
 #
@@ -56103,10 +56115,6 @@ save__pdbx_audit_revision_history.ordinal
     _item.mandatory_code          yes
     _item_type.code               int
     _item_examples.case           1
-#
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/Entry/@PDB-revision-number'
-    _pdbx_item_aliases.schema     wwpdb_validation.xsd
-    _pdbx_item_aliases.version    002
 save_
 
 save__pdbx_audit_revision_history.data_content_type
@@ -56136,6 +56144,10 @@ save__pdbx_audit_revision_history.major_revision
     _item.mandatory_code          yes
     _item_type.code               int
     _item_examples.case           1
+#
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/Entry/@PDB-revision-number'
+    _pdbx_item_aliases.schema     wwpdb_validation.xsd
+    _pdbx_item_aliases.version    002
 save_
 
 save__pdbx_audit_revision_history.minor_revision
@@ -58233,7 +58245,7 @@ save__pdbx_dcc_map.LLDFZ_outlier_flag
     _item.name                  '_pdbx_dcc_map.LLDFZ_outlier_flag'
     _item.category_id             pdbx_dcc_map
     _item.mandatory_code          no
-    _item_type.code               code
+    _item_type.code               uchar1
     loop_
     _item_enumeration.value
     _item_enumeration.detail
@@ -58633,7 +58645,7 @@ save__pdbx_dcc_mon_geometry.LLDFZ_outlier_flag
     _item.name                  '_pdbx_dcc_mon_geometry.LLDFZ_outlier_flag'
     _item.category_id             pdbx_dcc_mon_geometry
     _item.mandatory_code          no
-    _item_type.code               code
+    _item_type.code               uchar1
     loop_
     _item_enumeration.value
     _item_enumeration.detail
@@ -59085,7 +59097,7 @@ save__pdbx_validate_rmsd_ring.dihedral_angle_standard_deviation
     _item.category_id             pdbx_validate_rmsd_ring
     _item.mandatory_code          no
     _item_type.code               float
-    _item_units.code              angstroms
+    _item_units.code              degrees
     loop_
     _item_range.maximum
     _item_range.minimum            .    0.0
@@ -59591,7 +59603,7 @@ save__pdbx_validate_rmsd_torsion.dihedral_angle_standard_deviation
     _item.category_id             pdbx_validate_rmsd_torsion
     _item.mandatory_code          no
     _item_type.code               float
-    _item_units.code              angstroms
+    _item_units.code              degrees
     loop_
     _item_range.maximum
     _item_range.minimum            .    0.0
@@ -60822,7 +60834,7 @@ save_
 
 save__pdbx_nmr_unmapped_chem_shift.list_id
     _item_description.description
-;              Pointer to _pdbx_nmr_chem_shift_list.id.
+;              Pointer to _pdbx_nmr_assigned_chem_shift_list.id.
 ;
     _item.name                  '_pdbx_nmr_unmapped_chem_shift.list_id'
     _item.category_id             pdbx_nmr_unmapped_chem_shift
@@ -60970,7 +60982,7 @@ save__pdbx_nmr_unmapped_chem_shift.ambiguity_code
    _item.mandatory_code           no
    _item_type.code                int
    loop_
-   _item_enumeration.value       1 2 3 4 5 6 9
+   _item_enumeration.value        1 2 3 4 5 6 9
 #
     _pdbx_item_aliases.xpath     '/wwPDB-validation-information/Entry/chemical_shift_list/unmapped_chemical_shift/@ambiguity'
     _pdbx_item_aliases.schema     wwpdb_validation.xsd
@@ -61013,7 +61025,7 @@ save_
 
 save__pdbx_nmr_unparsed_chem_shift.list_id
     _item_description.description
-;              Pointer to _pdbx_nmr_chem_shift_list.id.
+;              Pointer to _pdbx_nmr_assigned_chem_shift_list.id.
 ;
     _item.name                  '_pdbx_nmr_unparsed_chem_shift.list_id'
     _item.category_id             pdbx_nmr_unparsed_chem_shift
@@ -61175,7 +61187,7 @@ save__pdbx_nmr_unparsed_chem_shift.ambiguity_code
    _item.mandatory_code           no
    _item_type.code                int
    loop_
-   _item_enumeration.value       1 2 3 4 5 6 9
+   _item_enumeration.value        1 2 3 4 5 6 9
 #
     _pdbx_item_aliases.xpath     '/wwPDB-validation-information/Entry/chemical_shift_list/unparsed_chemical_shift/@ambiguity'
     _pdbx_item_aliases.schema     wwpdb_validation.xsd
@@ -61218,7 +61230,7 @@ save_
 
 save__pdbx_missing_nmr_star_item.list_id
     _item_description.description
-;              Pointer to _pdbx_nmr_chem_shift_list.id.
+;              Pointer to _pdbx_nmr_assigned_chem_shift_list.id.
 ;
     _item.name                  '_pdbx_missing_nmr_star_item.list_id'
     _item.category_id             pdbx_missing_nmr_star_item
@@ -61251,7 +61263,7 @@ save__pdbx_missing_nmr_star_item.name
 ;
     _item.name                  '_pdbx_missing_nmr_star_item.name'
     _item.mandatory_code          yes
-    _item_type.code               code
+    _item_type.code               line
 #
     _pdbx_item_aliases.xpath     '/wwPDB-validation-information/Entry/chemical_shift_list/missing_nmrstar_tag/@nmrstar_tag'
     _pdbx_item_aliases.schema     wwpdb_validation.xsd
@@ -61306,7 +61318,7 @@ save_
 
 save__pdbx_nmr_chem_shift_annotation.list_id
     _item_description.description
-;              Pointer to _pdbx_nmr_chem_shift_list.id.
+;              Pointer to _pdbx_nmr_assigned_chem_shift_list.id.
 ;
     _item.name                  '_pdbx_nmr_chem_shift_annotation.list_id'
     _item.category_id             pdbx_nmr_chem_shift_annotation
@@ -61435,7 +61447,7 @@ save_
 
 save__pdbx_validate_nmr_chem_shift.list_id
     _item_description.description
-;              Pointer to _pdbx_nmr_chem_shift_list.id.
+;              Pointer to _pdbx_nmr_assigned_chem_shift_list.id.
 ;
     _item.name                  '_pdbx_validate_nmr_chem_shift.list_id'
     _item.category_id             pdbx_validate_nmr_chem_shift
@@ -61608,7 +61620,7 @@ save_
 
 save__pdbx_nmr_chem_shift_re_offset.list_id
     _item_description.description
-;              Pointer to _pdbx_nmr_chem_shift_list.id.
+;              Pointer to _pdbx_nmr_assigned_chem_shift_list.id.
 ;
     _item.name                  '_pdbx_nmr_chem_shift_re_offset.list_id'
     _item.category_id             pdbx_nmr_chem_shift_re_offset
@@ -61719,7 +61731,7 @@ save_
 
 save__pdbx_nmr_chem_shift_completeness.list_id
     _item_description.description
-;              Pointer to _pdbx_nmr_chem_shift_list.id.
+;              Pointer to _pdbx_nmr_assigned_chem_shift_list.id.
 ;
     _item.name                  '_pdbx_nmr_chem_shift_completeness.list_id'
     _item.category_id             pdbx_nmr_chem_shift_completeness

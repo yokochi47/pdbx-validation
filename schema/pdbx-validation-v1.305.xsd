@@ -12755,7 +12755,7 @@ This is an integer serial number.
           <xsd:attribute name="list_id" use="required" type="xsd:int">
             <xsd:annotation>
               <xsd:documentation xml:lang="en">
-Pointer to attribute id in category pdbx_nmr_chem_shift_list. 
+Pointer to attribute id in category pdbx_nmr_assigned_chem_shift_list. 
                      </xsd:documentation>
             </xsd:annotation>
           </xsd:attribute>
@@ -13020,7 +13020,7 @@ This is an integer serial number.
           <xsd:attribute name="list_id" use="required" type="xsd:int">
             <xsd:annotation>
               <xsd:documentation xml:lang="en">
-Pointer to attribute id in category pdbx_nmr_chem_shift_list. 
+Pointer to attribute id in category pdbx_nmr_assigned_chem_shift_list. 
                      </xsd:documentation>
             </xsd:annotation>
           </xsd:attribute>
@@ -13133,7 +13133,7 @@ The kind of element (or atom) for which the completeness of assigned chemical sh
           <xsd:attribute name="list_id" use="required" type="xsd:int">
             <xsd:annotation>
               <xsd:documentation xml:lang="en">
-Pointer to attribute id in category pdbx_nmr_chem_shift_list. 
+Pointer to attribute id in category pdbx_nmr_assigned_chem_shift_list. 
                      </xsd:documentation>
             </xsd:annotation>
           </xsd:attribute>
@@ -13197,7 +13197,7 @@ The kind of atom to which the chemical shift offset value applies.
           <xsd:attribute name="list_id" use="required" type="xsd:int">
             <xsd:annotation>
               <xsd:documentation xml:lang="en">
-Pointer to attribute id in category pdbx_nmr_chem_shift_list. 
+Pointer to attribute id in category pdbx_nmr_assigned_chem_shift_list. 
                      </xsd:documentation>
             </xsd:annotation>
           </xsd:attribute>
@@ -15333,7 +15333,7 @@ This is an integer serial number.
           <xsd:attribute name="list_id" use="required" type="xsd:int">
             <xsd:annotation>
               <xsd:documentation xml:lang="en">
-Pointer to attribute id in category pdbx_nmr_chem_shift_list. 
+Pointer to attribute id in category pdbx_nmr_assigned_chem_shift_list. 
                      </xsd:documentation>
             </xsd:annotation>
           </xsd:attribute>
@@ -15457,7 +15457,7 @@ This is an integer serial number.
           <xsd:attribute name="list_id" use="required" type="xsd:int">
             <xsd:annotation>
               <xsd:documentation xml:lang="en">
-Pointer to attribute id in category pdbx_nmr_chem_shift_list. 
+Pointer to attribute id in category pdbx_nmr_assigned_chem_shift_list. 
                      </xsd:documentation>
             </xsd:annotation>
           </xsd:attribute>
@@ -24741,7 +24741,7 @@ This is an integer serial number.
           <xsd:attribute name="list_id" use="required" type="xsd:int">
             <xsd:annotation>
               <xsd:documentation xml:lang="en">
-Pointer to attribute id in category pdbx_nmr_chem_shift_list. 
+Pointer to attribute id in category pdbx_nmr_assigned_chem_shift_list. 
                      </xsd:documentation>
             </xsd:annotation>
           </xsd:attribute>
