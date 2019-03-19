@@ -38,8 +38,8 @@
 --
 
 --
--- PDBML Schema v5.305
--- PDBML Schema translated from the PDBx/mmCIF Dictionary v5.305: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
+-- PDBML Schema v5.306
+-- PDBML Schema translated from the PDBx/mmCIF Dictionary v5.306: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
 -- URI-reference = http://pdbml.pdb.org/schema/pdbx-v50.xsd
 --
 
@@ -981,7 +981,7 @@ CREATE TABLE entity (
 	pdbx_fragment TEXT ,
 	pdbx_modification TEXT ,
 	pdbx_mutation TEXT ,
-	pdbx_number_of_molecules DECIMAL ,
+	pdbx_number_of_molecules INTEGER ,
 	pdbx_parent_entity_id TEXT ,
 	pdbx_target_id TEXT ,
 	src_method ENUM_entity_src_method ,
@@ -1543,7 +1543,7 @@ CREATE TYPE ENUM_entity_poly_pdbx_seq_db_name AS ENUM ( 'EMBL', 'GB', 'PIR', 'SW
 DROP TYPE IF EXISTS ENUM_entity_poly_pdbx_sequence_evidence_code CASCADE;
 CREATE TYPE ENUM_entity_poly_pdbx_sequence_evidence_code AS ENUM ( 'depositor provided', 'derived from coordinates' );
 DROP TYPE IF EXISTS ENUM_entity_poly_type CASCADE;
-CREATE TYPE ENUM_entity_poly_type AS ENUM ( 'polypeptide(D)', 'polypeptide(L)', 'polydeoxyribonucleotide', 'polyribonucleotide', 'polysaccharide(D)', 'polysaccharide(L)', 'polydeoxyribonucleotide/polyribonucleotide hybrid', 'cyclic-pseudo-peptide', 'peptide nucleic acid', 'other' );
+CREATE TYPE ENUM_entity_poly_type AS ENUM ( 'polypeptide(D)', 'polypeptide(L)', 'polydeoxyribonucleotide', 'polyribonucleotide', 'polydeoxyribonucleotide/polyribonucleotide hybrid', 'cyclic-pseudo-peptide', 'peptide nucleic acid', 'other' );
 CREATE TABLE entity_poly (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
