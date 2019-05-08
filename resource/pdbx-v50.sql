@@ -18,7 +18,7 @@
 --  map decimal numbers to: big decimal
 --
 -- Statistics of schema:
---  Generated 898 tables (7338 fields), 0 attr groups, 0 model groups in total
+--  Generated 898 tables (7342 fields), 0 attr groups, 0 model groups in total
 --   Namespaces:
 --    http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), http://www.w3.org/2001/XMLSchema (xsd)
 --   Schema locations:
@@ -30,7 +30,7 @@
 --   User keys:
 --    898 document keys, 0 serial keys, 0 xpath keys
 --   Contents:
---    1352 attributes (0 in-place document keys), 4743 elements (0 in-place document keys), 345 simple contents (0 in-place document keys, 0 as attribute, 0 as conditional attribute)
+--    1352 attributes (0 in-place document keys), 4747 elements (0 in-place document keys), 345 simple contents (0 in-place document keys, 0 as attribute, 0 as conditional attribute)
 --   Wild cards:
 --    0 any elements, 0 any attributes
 --   Constraints:
@@ -38,8 +38,8 @@
 --
 
 --
--- PDBML Schema v5.306
--- PDBML Schema translated from the PDBx/mmCIF Dictionary v5.306: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
+-- PDBML Schema v5.309
+-- PDBML Schema translated from the PDBx/mmCIF Dictionary v5.309: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
 -- URI-reference = http://pdbml.pdb.org/schema/pdbx-v50.xsd
 --
 
@@ -967,7 +967,7 @@ CREATE TYPE ENUM_entity_pdbx_formula_weight_exptl_method AS ENUM ( 'MASS SPEC' )
 DROP TYPE IF EXISTS ENUM_entity_src_method CASCADE;
 CREATE TYPE ENUM_entity_src_method AS ENUM ( 'nat', 'man', 'syn' );
 DROP TYPE IF EXISTS ENUM_entity_type CASCADE;
-CREATE TYPE ENUM_entity_type AS ENUM ( 'polymer', 'non-polymer', 'macrolide', 'water' );
+CREATE TYPE ENUM_entity_type AS ENUM ( 'polymer', 'non-polymer', 'macrolide', 'water', 'branched' );
 CREATE TABLE entity (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
@@ -8647,7 +8647,7 @@ CREATE TABLE pdbx_chem_comp_feature (
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_chem_comp_identifier_type CASCADE;
-CREATE TYPE ENUM_pdbx_chem_comp_identifier_type AS ENUM ( 'COMMON NAME', 'SYSTEMATIC NAME', 'CAS REGISTRY NUMBER', 'PUBCHEM Identifier', 'MDL Identifier', 'SYNONYM' );
+CREATE TYPE ENUM_pdbx_chem_comp_identifier_type AS ENUM ( 'COMMON NAME', 'SYSTEMATIC NAME', 'CAS REGISTRY NUMBER', 'PUBCHEM Identifier', 'MDL Identifier', 'SYNONYM', 'CONDENSED IUPAC CARB SYMBOL', 'IUPAC CARB SYMBOL', 'SNFG CARB SYMBOL' );
 CREATE TABLE pdbx_chem_comp_identifier (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
@@ -9456,6 +9456,10 @@ DROP TYPE IF EXISTS ENUM_pdbx_database_status_methods_development_category CASCA
 CREATE TYPE ENUM_pdbx_database_status_methods_development_category AS ENUM ( 'CAPRI', 'CASP', 'CASD-NMR', 'FoldIt', 'GPCR Dock', 'D3R', 'RNA-Puzzles' );
 DROP TYPE IF EXISTS ENUM_pdbx_database_status_pdb_format_compatible CASCADE;
 CREATE TYPE ENUM_pdbx_database_status_pdb_format_compatible AS ENUM ( 'Y', 'N' );
+DROP TYPE IF EXISTS ENUM_pdbx_database_status_post_rel_recvd_coord CASCADE;
+CREATE TYPE ENUM_pdbx_database_status_post_rel_recvd_coord AS ENUM ( 'Y', 'N' );
+DROP TYPE IF EXISTS ENUM_pdbx_database_status_post_rel_status CASCADE;
+CREATE TYPE ENUM_pdbx_database_status_post_rel_status AS ENUM ( 'PROC', 'WAIT', 'HOLD', 'HPUB', 'OBS', 'WDRN', 'AUTH', 'REPL', 'AUCO' );
 DROP TYPE IF EXISTS ENUM_pdbx_database_status_process_site CASCADE;
 CREATE TYPE ENUM_pdbx_database_status_process_site AS ENUM ( 'NDB', 'RCSB', 'PDBE', 'PDBJ', 'BNL' );
 DROP TYPE IF EXISTS ENUM_pdbx_database_status_recvd_author_approval CASCADE;
@@ -9532,6 +9536,9 @@ CREATE TABLE pdbx_database_status (
 	pdb_date_of_author_approval TEXT ,
 	pdb_format_compatible ENUM_pdbx_database_status_pdb_format_compatible ,
 	pdbx_annotator TEXT ,
+	post_rel_recvd_coord ENUM_pdbx_database_status_post_rel_recvd_coord ,
+	post_rel_recvd_coord_date DATE ,
+	post_rel_status ENUM_pdbx_database_status_post_rel_status ,
 	process_site ENUM_pdbx_database_status_process_site ,
 	rcsb_annotator TEXT ,
 	recvd_author_approval ENUM_pdbx_database_status_recvd_author_approval ,
@@ -10038,6 +10045,8 @@ DROP TYPE IF EXISTS ENUM_pdbx_depui_status_flags_is_sas_deposited CASCADE;
 CREATE TYPE ENUM_pdbx_depui_status_flags_is_sas_deposited AS ENUM ( 'Y', 'N' );
 DROP TYPE IF EXISTS ENUM_pdbx_depui_status_flags_merged_fail CASCADE;
 CREATE TYPE ENUM_pdbx_depui_status_flags_merged_fail AS ENUM ( 'Y', 'N' );
+DROP TYPE IF EXISTS ENUM_pdbx_depui_status_flags_post_rel_replacement_reason CASCADE;
+CREATE TYPE ENUM_pdbx_depui_status_flags_post_rel_replacement_reason AS ENUM ( 'Chirality error', 'Polymer geometry', 'Ligand geometry', 'Ligand identity', 'Model completeness', 'Polymer backbone linkage', 'Atomic clashes', 'Sequence discrepancy', 'Atoms with unrealistic or zero occupancies', 'Real space R-factor', 'Occupancy of atoms on special symmetry positions', 'Missing anisotropic B-factor' );
 DROP TYPE IF EXISTS ENUM_pdbx_depui_status_flags_prediction_target CASCADE;
 CREATE TYPE ENUM_pdbx_depui_status_flags_prediction_target AS ENUM ( 'Y', 'N' );
 DROP TYPE IF EXISTS ENUM_pdbx_depui_status_flags_primary_citation_status CASCADE;
@@ -10064,6 +10073,7 @@ CREATE TABLE pdbx_depui_status_flags (
 	merge_prior_model_file_name TEXT ,
 	merge_replace_model_file_name TEXT ,
 	merged_fail ENUM_pdbx_depui_status_flags_merged_fail ,
+	post_rel_replacement_reason ENUM_pdbx_depui_status_flags_post_rel_replacement_reason ,
 	prediction_target ENUM_pdbx_depui_status_flags_prediction_target ,
 	primary_citation_status ENUM_pdbx_depui_status_flags_primary_citation_status ,
 	reference_citation_status ENUM_pdbx_depui_status_flags_reference_citation_status ,
@@ -10273,7 +10283,7 @@ CREATE TABLE pdbx_entity_assembly (
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_entity_descriptor_type CASCADE;
-CREATE TYPE ENUM_pdbx_entity_descriptor_type AS ENUM ( 'LINUCS' );
+CREATE TYPE ENUM_pdbx_entity_descriptor_type AS ENUM ( 'LINUCS', 'Glycam Condensed Sequence', 'Glycam Condensed Core Sequence' );
 CREATE TABLE pdbx_entity_descriptor (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
@@ -11884,7 +11894,7 @@ CREATE TABLE pdbx_nmr_chem_shift_experiment (
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_nmr_chem_shift_ref_atom_group CASCADE;
-CREATE TYPE ENUM_pdbx_nmr_chem_shift_ref_atom_group AS ENUM ( 'methyl carbon', 'methyl carbons', 'methyl protons', 'methylene protons', 'nitrogen', 'protons', 'phosphorus' );
+CREATE TYPE ENUM_pdbx_nmr_chem_shift_ref_atom_group AS ENUM ( 'carbonyl carbon', 'methyl carbon', 'methyl carbons', 'methyl protons', 'methylene protons', 'nitrogen', 'protons', 'phosphorus' );
 DROP TYPE IF EXISTS ENUM_pdbx_nmr_chem_shift_ref_chem_shift_units CASCADE;
 CREATE TYPE ENUM_pdbx_nmr_chem_shift_ref_chem_shift_units AS ENUM ( 'ppm', 'Hz' );
 DROP TYPE IF EXISTS ENUM_pdbx_nmr_chem_shift_ref_external_ref_axis CASCADE;
@@ -11898,7 +11908,7 @@ CREATE TYPE ENUM_pdbx_nmr_chem_shift_ref_ref_method AS ENUM ( 'internal', 'exter
 DROP TYPE IF EXISTS ENUM_pdbx_nmr_chem_shift_ref_ref_type CASCADE;
 CREATE TYPE ENUM_pdbx_nmr_chem_shift_ref_ref_type AS ENUM ( 'direct', 'indirect' );
 DROP TYPE IF EXISTS ENUM_pdbx_nmr_chem_shift_ref_mol_common_name CASCADE;
-CREATE TYPE ENUM_pdbx_nmr_chem_shift_ref_mol_common_name AS ENUM ( 'DSS', 'TSP', 'water', 'DMSO', 'DMSO-d5', 'DMSO-d6', 'methanol', 'TMS', 'methionine', 'acetate', 'glucose', 'dioxane', 'adamantane', 'ammonium chloride', '[15N] ammonium chloride', 'ammonium hydroxide', 'ammonium nitrate', '[15N] ammonium nitrate', '[15N, 15N] ammonium nitrate', 'ammonium nitrite', 'ammonium sulfate', '[15N] ammonium sulfate', 'liquid anhydrous ammonia', 'formamide', '[15N] nitric acid', 'Nitromethane', '[15N] nitromethane', 'urea', 'phosphoric acid', 'phosphoric acid (85%)', 'TMP', 'cadmium perchlorate', 'Deuterium Oxide' );
+CREATE TYPE ENUM_pdbx_nmr_chem_shift_ref_mol_common_name AS ENUM ( 'DSS', 'TSP', 'water', 'DMSO', 'DMSO-d5', 'DMSO-d6', 'methanol', 'TMS', 'methionine', 'alanine', 'acetate', 'glucose', 'dioxane', 'adamantane', 'ammonium chloride', '[15N] ammonium chloride', 'ammonium hydroxide', 'ammonium nitrate', '[15N] ammonium nitrate', '[15N, 15N] ammonium nitrate', 'ammonium nitrite', 'ammonium sulfate', '[15N] ammonium sulfate', 'liquid anhydrous ammonia', 'formamide', '[15N] nitric acid', 'Nitromethane', '[15N] nitromethane', 'urea', 'phosphoric acid', 'phosphoric acid (85%)', 'TMP', 'cadmium perchlorate', 'Deuterium Oxide' );
 CREATE TABLE pdbx_nmr_chem_shift_ref (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
@@ -17452,7 +17462,7 @@ CREATE TABLE refine (
 	"ls_abs_structure_Rogers_esd" DECIMAL ,
 	ls_abs_structure_details TEXT ,
 	ls_d_res_high DECIMAL CHECK ( ls_d_res_high > 0.0 ) ,
-	ls_d_res_low DECIMAL CHECK ( ls_d_res_low >= 0 ) ,
+	ls_d_res_low DECIMAL CHECK ( ls_d_res_low > 0.0 ) ,
 	ls_extinction_coef DECIMAL ,
 	ls_extinction_coef_esd DECIMAL ,
 	ls_extinction_expression TEXT ,
@@ -17831,7 +17841,7 @@ CREATE TABLE refine_ls_shell (
 	"R_factor_R_work" DECIMAL CHECK ( "R_factor_R_work" >= 0 ) ,
 	"R_factor_all" DECIMAL CHECK ( "R_factor_all" >= 0 ) ,
 	"R_factor_obs" DECIMAL CHECK ( "R_factor_obs" >= 0 ) ,
-	d_res_low DECIMAL CHECK ( d_res_low >= 0 ) ,
+	d_res_low DECIMAL CHECK ( d_res_low > 0.0 ) ,
 	"number_reflns_R_free" INTEGER CHECK ( "number_reflns_R_free" >= 0 ) ,
 	"number_reflns_R_work" INTEGER CHECK ( "number_reflns_R_work" >= 0 ) ,
 	number_reflns_all INTEGER CHECK ( number_reflns_all >= 0 ) ,
@@ -17849,7 +17859,7 @@ CREATE TABLE refine_ls_shell (
 	"wR_factor_all" DECIMAL CHECK ( "wR_factor_all" >= 0 ) ,
 	"wR_factor_obs" DECIMAL CHECK ( "wR_factor_obs" >= 0 ) ,
 -- ATTRIBUTE
-	d_res_high DECIMAL CHECK ( d_res_high >= 0 ) NOT NULL ,
+	d_res_high DECIMAL CHECK ( d_res_high > 0.0 ) NOT NULL ,
 -- ATTRIBUTE
 	pdbx_refine_id TEXT NOT NULL
 );

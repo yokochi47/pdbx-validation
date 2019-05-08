@@ -38,8 +38,8 @@
 --
 
 --
--- PDBML-validation Schema v1.306
--- PDBXML-validation Schema translated from wwPDB Validation Information Dictionary v1.306, which is backward compatible with the PDBx/mmCIF Dictionary v5.306: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
+-- PDBML-validation Schema v1.309
+-- PDBXML-validation Schema translated from wwPDB Validation Information Dictionary v1.309, which is backward compatible with the PDBx/mmCIF Dictionary v5.309: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
 -- URI-reference = http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd
 --
 
@@ -514,7 +514,7 @@ CREATE TYPE ENUM_entity_pdbx_formula_weight_exptl_method AS ENUM ( 'MASS SPEC' )
 DROP TYPE IF EXISTS ENUM_entity_src_method CASCADE;
 CREATE TYPE ENUM_entity_src_method AS ENUM ( 'nat', 'man', 'syn' );
 DROP TYPE IF EXISTS ENUM_entity_type CASCADE;
-CREATE TYPE ENUM_entity_type AS ENUM ( 'polymer', 'non-polymer', 'macrolide', 'water' );
+CREATE TYPE ENUM_entity_type AS ENUM ( 'polymer', 'non-polymer', 'macrolide', 'water', 'branched' );
 CREATE TABLE entity (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	entry_id TEXT ,
@@ -3744,7 +3744,7 @@ CREATE TABLE pdbx_entity_assembly (
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_entity_descriptor_type CASCADE;
-CREATE TYPE ENUM_pdbx_entity_descriptor_type AS ENUM ( 'LINUCS' );
+CREATE TYPE ENUM_pdbx_entity_descriptor_type AS ENUM ( 'LINUCS', 'Glycam Condensed Sequence', 'Glycam Condensed Core Sequence' );
 CREATE TABLE pdbx_entity_descriptor (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	entry_id TEXT ,
@@ -7759,7 +7759,7 @@ CREATE TABLE refine (
 	"ls_abs_structure_Rogers_esd" DECIMAL ,
 	ls_abs_structure_details TEXT ,
 	ls_d_res_high DECIMAL CHECK ( ls_d_res_high > 0.0 ) ,
-	ls_d_res_low DECIMAL CHECK ( ls_d_res_low >= 0 ) ,
+	ls_d_res_low DECIMAL CHECK ( ls_d_res_low > 0.0 ) ,
 	ls_extinction_coef DECIMAL ,
 	ls_extinction_coef_esd DECIMAL ,
 	ls_extinction_expression TEXT ,
@@ -8144,7 +8144,7 @@ CREATE TABLE refine_ls_shell (
 	"R_factor_R_work" DECIMAL CHECK ( "R_factor_R_work" >= 0 ) ,
 	"R_factor_all" DECIMAL CHECK ( "R_factor_all" >= 0 ) ,
 	"R_factor_obs" DECIMAL CHECK ( "R_factor_obs" >= 0 ) ,
-	d_res_low DECIMAL CHECK ( d_res_low >= 0 ) ,
+	d_res_low DECIMAL CHECK ( d_res_low > 0.0 ) ,
 	"number_reflns_R_free" INTEGER CHECK ( "number_reflns_R_free" >= 0 ) ,
 	"number_reflns_R_work" INTEGER CHECK ( "number_reflns_R_work" >= 0 ) ,
 	number_reflns_all INTEGER CHECK ( number_reflns_all >= 0 ) ,
@@ -8162,7 +8162,7 @@ CREATE TABLE refine_ls_shell (
 	"wR_factor_all" DECIMAL CHECK ( "wR_factor_all" >= 0 ) ,
 	"wR_factor_obs" DECIMAL CHECK ( "wR_factor_obs" >= 0 ) ,
 -- ATTRIBUTE
-	d_res_high DECIMAL CHECK ( d_res_high >= 0 ) NOT NULL ,
+	d_res_high DECIMAL CHECK ( d_res_high > 0.0 ) NOT NULL ,
 -- ATTRIBUTE
 	pdbx_refine_id TEXT NOT NULL
 );
