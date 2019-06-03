@@ -2995,6 +2995,7 @@ pdbx_entity_src_syn.pdbx_src_id
 pdbx_entity_src_syn.strain
 pdbx_entry_details.compound_details
 pdbx_entry_details.entry_id
+pdbx_entry_details.has_ligand_of_interest
 pdbx_entry_details.nonpolymer_details
 pdbx_entry_details.sequence_details
 pdbx_entry_details.source_details
