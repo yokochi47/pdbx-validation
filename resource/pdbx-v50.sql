@@ -18,7 +18,7 @@
 --  map decimal numbers to: big decimal
 --
 -- Statistics of schema:
---  Generated 898 tables (7342 fields), 0 attr groups, 0 model groups in total
+--  Generated 898 tables (7343 fields), 0 attr groups, 0 model groups in total
 --   Namespaces:
 --    http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), http://www.w3.org/2001/XMLSchema (xsd)
 --   Schema locations:
@@ -30,7 +30,7 @@
 --   User keys:
 --    898 document keys, 0 serial keys, 0 xpath keys
 --   Contents:
---    1352 attributes (0 in-place document keys), 4747 elements (0 in-place document keys), 345 simple contents (0 in-place document keys, 0 as attribute, 0 as conditional attribute)
+--    1352 attributes (0 in-place document keys), 4748 elements (0 in-place document keys), 345 simple contents (0 in-place document keys, 0 as attribute, 0 as conditional attribute)
 --   Wild cards:
 --    0 any elements, 0 any attributes
 --   Constraints:
@@ -38,8 +38,8 @@
 --
 
 --
--- PDBML Schema v5.309
--- PDBML Schema translated from the PDBx/mmCIF Dictionary v5.309: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
+-- PDBML Schema v5.311
+-- PDBML Schema translated from the PDBx/mmCIF Dictionary v5.311: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
 -- URI-reference = http://pdbml.pdb.org/schema/pdbx-v50.xsd
 --
 
@@ -7463,7 +7463,7 @@ CREATE TABLE exptl_crystal_face (
 
 --
 -- (quoted from exptl_crystal_growType)
--- Data items in the EXPTL_CRYSTAL_GROW category record details about the conditions and methods used to grow the crystal. Example 1 - based on PDB entry 5HVP and laboratory records for the structure corresponding to PDB entry 5HVP. <PDBx:exptl_crystal_growCategory> <PDBx:exptl_crystal_grow crystal_id="1"> <PDBx:apparatus>Linbro plates</PDBx:apparatus> <PDBx:atmosphere>room air</PDBx:atmosphere> <PDBx:method>hanging drop</PDBx:method> <PDBx:pH>4.7</PDBx:pH> <PDBx:temp>18.</PDBx:temp> <PDBx:time>approximately 2 days</PDBx:time> </PDBx:exptl_crystal_grow> </PDBx:exptl_crystal_growCategory>
+-- Data items in the EXPTL_CRYSTAL_GROW category record details about the conditions and methods used to grow the crystal. Example 1 - based on PDB entry 5HVP and laboratory records for the structure corresponding to PDB entry 5HVP. <PDBx:exptl_crystal_growCategory> <PDBx:exptl_crystal_grow crystal_id="1"> <PDBx:apparatus>Linbro plates</PDBx:apparatus> <PDBx:atmosphere>room air</PDBx:atmosphere> <PDBx:method>VAPOR DIFFUSION, HANGING DROP</PDBx:method> <PDBx:pH>4.7</PDBx:pH> <PDBx:temp>18.</PDBx:temp> <PDBx:time>approximately 2 days</PDBx:time> </PDBx:exptl_crystal_grow> </PDBx:exptl_crystal_growCategory>
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
@@ -7475,7 +7475,7 @@ CREATE TABLE exptl_crystal_grow (
 	details TEXT ,
 	method TEXT ,
 	method_ref TEXT ,
-	"pH" DECIMAL CHECK ( "pH" >= 0 ) ,
+	"pH" DECIMAL CHECK ( "pH" >= 0 AND "pH" <= 14 ) ,
 	pdbx_details TEXT ,
 	"pdbx_pH_range" TEXT ,
 	pressure DECIMAL CHECK ( pressure >= 0 ) ,
@@ -11273,10 +11273,13 @@ CREATE TABLE pdbx_entity_src_syn (
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
+DROP TYPE IF EXISTS ENUM_pdbx_entry_details_has_ligand_of_interest CASCADE;
+CREATE TYPE ENUM_pdbx_entry_details_has_ligand_of_interest AS ENUM ( 'Y', 'N' );
 CREATE TABLE pdbx_entry_details (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
 	compound_details TEXT ,
+	has_ligand_of_interest ENUM_pdbx_entry_details_has_ligand_of_interest ,
 	nonpolymer_details TEXT ,
 	sequence_details TEXT ,
 	source_details TEXT ,

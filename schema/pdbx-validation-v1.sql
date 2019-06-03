@@ -18,7 +18,7 @@
 --  map decimal numbers to: big decimal
 --
 -- Statistics of schema:
---  Generated 446 tables (3536 fields), 0 attr groups, 0 model groups in total
+--  Generated 446 tables (3537 fields), 0 attr groups, 0 model groups in total
 --   Namespaces:
 --    http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), http://www.w3.org/2001/XMLSchema (xsd)
 --   Schema locations:
@@ -30,7 +30,7 @@
 --   User keys:
 --    401 document keys, 0 serial keys, 0 xpath keys
 --   Contents:
---    624 attributes (40 in-place document keys), 2303 elements (5 in-place document keys), 208 simple contents (0 in-place document keys, 0 as attribute, 0 as conditional attribute)
+--    624 attributes (40 in-place document keys), 2304 elements (5 in-place document keys), 208 simple contents (0 in-place document keys, 0 as attribute, 0 as conditional attribute)
 --   Wild cards:
 --    0 any elements, 0 any attributes
 --   Constraints:
@@ -38,8 +38,8 @@
 --
 
 --
--- PDBML-validation Schema v1.309
--- PDBXML-validation Schema translated from wwPDB Validation Information Dictionary v1.309, which is backward compatible with the PDBx/mmCIF Dictionary v5.309: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
+-- PDBML-validation Schema v1.311
+-- PDBXML-validation Schema translated from wwPDB Validation Information Dictionary v1.311, which is backward compatible with the PDBx/mmCIF Dictionary v5.311: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
 -- URI-reference = http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd
 --
 
@@ -3813,8 +3813,11 @@ CREATE TABLE pdbx_entity_poly_comp_link_list (
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), schema location: schema/pdbx-validation-v1.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
+DROP TYPE IF EXISTS ENUM_pdbx_entry_details_has_ligand_of_interest CASCADE;
+CREATE TYPE ENUM_pdbx_entry_details_has_ligand_of_interest AS ENUM ( 'Y', 'N' );
 CREATE TABLE pdbx_entry_details (
 	compound_details TEXT ,
+	has_ligand_of_interest ENUM_pdbx_entry_details_has_ligand_of_interest ,
 	nonpolymer_details TEXT ,
 	sequence_details TEXT ,
 	source_details TEXT ,
