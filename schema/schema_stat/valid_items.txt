@@ -924,6 +924,7 @@ pdbx_entity_poly_comp_link_list.link_id
 pdbx_entity_poly_comp_link_list.value_order
 pdbx_entry_details.compound_details
 pdbx_entry_details.entry_id
+pdbx_entry_details.has_ligand_of_interest
 pdbx_entry_details.nonpolymer_details
 pdbx_entry_details.sequence_details
 pdbx_entry_details.source_details
