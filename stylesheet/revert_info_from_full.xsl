@@ -1237,9 +1237,12 @@ Unmatched type exist in _pdbx_nmr_assigned_chem_shift_list.nmr_star_consistency_
 
       <xsl:for-each select="$datablock/PDBxv:pdbx_dcc_mon_geometryCategory/PDBxv:pdbx_dcc_mon_geometry[PDBxv:PDB_model_num=$model and PDBxv:auth_asym_id=$strand_id and PDBxv:auth_comp_id=$mon_id and PDBxv:auth_seq_id=$pdb_seq_num and ($alt_id='' or PDBxv:label_alt_id=$alt_id)]">
 
-        <xsl:attribute name="mogul_angles_rmsz"><xsl:value-of select="PDBxv:angle_overall_rmsz"/></xsl:attribute>
-        <xsl:attribute name="mogul_bonds_rmsz"><xsl:value-of select="PDBxv:bond_overall_rmsz"/></xsl:attribute>
-
+        <xsl:if test="PDBxv:angle_overall_rmsz">
+          <xsl:attribute name="mogul_angles_rmsz"><xsl:value-of select="PDBxv:angle_overall_rmsz"/></xsl:attribute>
+        </xsl:if>
+        <xsl:if test="PDBxv:bond_overall_rmsz">
+          <xsl:attribute name="mogul_bonds_rmsz"><xsl:value-of select="PDBxv:bond_overall_rmsz"/></xsl:attribute>
+        </xsl:if>
         <xsl:if test="PDBxv:number_angles">
           <xsl:attribute name="mogul_rmsz_numangles"><xsl:value-of select="PDBxv:number_angles"/></xsl:attribute>
         </xsl:if>

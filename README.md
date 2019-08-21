@@ -129,6 +129,7 @@ File path | Document
 	- Update wwPDB Validation Information Dictionary from v1.311 to 1.313.
 	- Support XML Schema for wwPDB validation report (wwpdb_validation_v003.xsd).
 		- Add '_pdbx_validate_rmsd_torsion.percent_dehedral_angles_fitted_to_kb' with link to /wwPDB-validation-information/ModelledSubgroup/mog-torsion-outlier/@local_density.
+	- Add null check for /wwPDB-validation-information/ModelledSubgroup/@mogul_angles_rmsz | @mogul_bonds_rmsz.
 
 - **Jun 3, 2019**: Release v1.5.5
 	- Update wwPDB Validation Information Dictionary from v1.309 to 1.311.
