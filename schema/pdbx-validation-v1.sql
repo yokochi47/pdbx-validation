@@ -18,23 +18,23 @@
 --  map decimal numbers to: big decimal
 --
 -- Statistics of schema:
---  Generated 446 tables (3537 fields), 0 attr groups, 0 model groups in total
+--  Generated 447 tables (3545 fields), 0 attr groups, 0 model groups in total
 --   Namespaces:
 --    http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), http://www.w3.org/2001/XMLSchema (xsd)
 --   Schema locations:
 --    schema/pdbx-validation-v1.xsd
 --   Table types:
---    0 root, 0 root children, 0 admin roots, 446 admin children
+--    0 root, 0 root children, 0 admin roots, 447 admin children
 --   System keys:
 --    0 primary keys (0 unique constraints), 0 foreign keys, 0 nested keys (0 as attribute)
 --   User keys:
---    401 document keys, 0 serial keys, 0 xpath keys
+--    402 document keys, 0 serial keys, 0 xpath keys
 --   Contents:
---    624 attributes (40 in-place document keys), 2304 elements (5 in-place document keys), 208 simple contents (0 in-place document keys, 0 as attribute, 0 as conditional attribute)
+--    625 attributes (40 in-place document keys), 2310 elements (5 in-place document keys), 208 simple contents (0 in-place document keys, 0 as attribute, 0 as conditional attribute)
 --   Wild cards:
 --    0 any elements, 0 any attributes
 --   Constraints:
---    1 unique constraints from xsd:unique, 238 unique constraints from xsd:key, 129 foreign key constraints from xsd:keyref
+--    1 unique constraints from xsd:unique, 239 unique constraints from xsd:key, 130 foreign key constraints from xsd:keyref
 --
 
 --
@@ -158,6 +158,7 @@ DROP TABLE IF EXISTS neighbor_macromolecule_distance CASCADE;
 DROP TABLE IF EXISTS pdbx_distant_solvent_atoms CASCADE;
 DROP TABLE IF EXISTS pdbx_domain_range CASCADE;
 DROP TABLE IF EXISTS pdbx_entity_assembly CASCADE;
+DROP TABLE IF EXISTS pdbx_entity_branch_descriptor CASCADE;
 DROP TABLE IF EXISTS pdbx_entity_descriptor CASCADE;
 DROP TABLE IF EXISTS pdbx_entity_nonpoly CASCADE;
 DROP TABLE IF EXISTS pdbx_entity_poly_comp_link_list CASCADE;
@@ -1092,6 +1093,7 @@ CREATE TABLE pdbx_validate_rmsd_torsion (
 	dihedral_angle_standard_deviation DECIMAL CHECK ( dihedral_angle_standard_deviation >= 0 ) ,
 	label_alt_id TEXT ,
 	number_dihedral_angles_in_kb INTEGER CHECK ( number_dihedral_angles_in_kb >= 0 ) ,
+	percent_dihedral_angles_fitted_to_kb DECIMAL CHECK ( percent_dihedral_angles_fitted_to_kb >= 0 AND percent_dihedral_angles_fitted_to_kb <= 100 ) ,
 -- ATTRIBUTE
 	id INTEGER NOT NULL
 );
@@ -3737,9 +3739,29 @@ CREATE TABLE pdbx_entity_assembly (
 );
 
 --
+-- (quoted from pdbx_entity_branch_descriptorType)
+-- Data items in the PDBX_ENTITY_BRANCH_DESCRIPTOR category provide string descriptors of entity chemical structure. Example 1 - <PDBxv:pdbx_entity_branch_descriptorCategory> <PDBxv:pdbx_entity_branch_descriptor ordinal="1"> <PDBxv:descriptor>[][Asn]{[(4+1)][b-D-GlcpNAc]{[(4+1)][b-D-GlcpNAc]{[(4+1)][b-D-Manp]{[(3+1)][a-D-Manp]{[(2+1)][a-D-Manp]{[(2+1)][a-D-Manp]{}}}[(6+1)][a-D-Manp]{[(3+1)][a-D-Manp]{[(2+1)][a-D-Manp]{}}[(6+1)][a-D-Manp]{[(2+1)][a-D-Manp]{}}}}}}}</PDBxv:descriptor> <PDBxv:entity_id>1</PDBxv:entity_id> <PDBxv:program>PDB-CARE</PDBxv:program> <PDBxv:program_version>Beta</PDBxv:program_version> <PDBxv:type>LINUCS</PDBxv:type> </PDBxv:pdbx_entity_branch_descriptor> </PDBxv:pdbx_entity_branch_descriptorCategory>
+-- URI-reference = http://pdbml.pdb.org/dictionaries/mmcif_pdbx_v50.dic/Categories/pdbx_entity_branch_descriptor.html
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), schema location: schema/pdbx-validation-v1.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+DROP TYPE IF EXISTS ENUM_pdbx_entity_branch_descriptor_type CASCADE;
+CREATE TYPE ENUM_pdbx_entity_branch_descriptor_type AS ENUM ( 'LINUCS', 'Glycam Condensed Sequence', 'Glycam Condensed Core Sequence' );
+CREATE TABLE pdbx_entity_branch_descriptor (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	entry_id TEXT ,
+	descriptor TEXT ,
+	entity_id TEXT ,
+	program TEXT ,
+	program_version TEXT ,
+	type ENUM_pdbx_entity_branch_descriptor_type ,
+-- ATTRIBUTE
+	ordinal INTEGER NOT NULL
+);
+
+--
 -- (quoted from pdbx_entity_descriptorType)
 -- Data items in the PDBX_ENTITY_DESCRIPTOR category provide string descriptors of entity chemical structure. Example 1 - <PDBxv:pdbx_entity_descriptorCategory> <PDBxv:pdbx_entity_descriptor ordinal="1"> <PDBxv:descriptor>[][Asn]{[(4+1)][b-D-GlcpNAc]{[(4+1)][b-D-GlcpNAc]{[(4+1)][b-D-Manp]{[(3+1)][a-D-Manp]{[(2+1)][a-D-Manp]{[(2+1)][a-D-Manp]{}}}[(6+1)][a-D-Manp]{[(3+1)][a-D-Manp]{[(2+1)][a-D-Manp]{}}[(6+1)][a-D-Manp]{[(2+1)][a-D-Manp]{}}}}}}}</PDBxv:descriptor> <PDBxv:entity_id>1</PDBxv:entity_id> <PDBxv:program>PDB-CARE</PDBxv:program> <PDBxv:program_version>Beta</PDBxv:program_version> <PDBxv:type>LINUCS</PDBxv:type> </PDBxv:pdbx_entity_descriptor> </PDBxv:pdbx_entity_descriptorCategory>
--- URI-reference = http://pdbml.pdb.org/dictionaries/mmcif_pdbx_v50.dic/Categories/pdbx_entity_descriptor.html
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), schema location: schema/pdbx-validation-v1.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
@@ -10031,6 +10053,9 @@ CREATE TABLE symmetry_equiv (
 -- (derived from xsd:key[@name='pdbx_entity_assemblyKey_0'])
 --ALTER TABLE pdbx_entity_assembly ADD CONSTRAINT UNQ_pdbx_entity_assembly UNIQUE ( entry_id, entity_id, id );
 
+-- (derived from xsd:key[@name='pdbx_entity_branch_descriptorKey_0'])
+--ALTER TABLE pdbx_entity_branch_descriptor ADD CONSTRAINT UNQ_pdbx_entity_branch_descriptor UNIQUE ( entry_id, ordinal );
+
 -- (derived from xsd:key[@name='pdbx_entity_descriptorKey_0'])
 --ALTER TABLE pdbx_entity_descriptor ADD CONSTRAINT UNQ_pdbx_entity_descriptor UNIQUE ( entry_id, ordinal );
 
@@ -10560,16 +10585,19 @@ CREATE TABLE symmetry_equiv (
 --ALTER TABLE pdbx_entity_assembly ADD CONSTRAINT KR_entityKeyref_0_0_3_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
 -- (derived from xsd:keyref[@name='entityKeyref_0_0_4_0'])
---ALTER TABLE pdbx_entity_descriptor ADD CONSTRAINT KR_entityKeyref_0_0_4_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
+--ALTER TABLE pdbx_entity_branch_descriptor ADD CONSTRAINT KR_entityKeyref_0_0_4_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
 -- (derived from xsd:keyref[@name='entityKeyref_0_0_5_0'])
---ALTER TABLE pdbx_entity_nonpoly ADD CONSTRAINT KR_entityKeyref_0_0_5_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
+--ALTER TABLE pdbx_entity_descriptor ADD CONSTRAINT KR_entityKeyref_0_0_5_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
 -- (derived from xsd:keyref[@name='entityKeyref_0_0_6_0'])
---ALTER TABLE struct_asym ADD CONSTRAINT KR_entityKeyref_0_0_6_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
+--ALTER TABLE pdbx_entity_nonpoly ADD CONSTRAINT KR_entityKeyref_0_0_6_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
 -- (derived from xsd:keyref[@name='entityKeyref_0_0_7_0'])
---ALTER TABLE struct_ref ADD CONSTRAINT KR_entityKeyref_0_0_7_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
+--ALTER TABLE struct_asym ADD CONSTRAINT KR_entityKeyref_0_0_7_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
+
+-- (derived from xsd:keyref[@name='entityKeyref_0_0_8_0'])
+--ALTER TABLE struct_ref ADD CONSTRAINT KR_entityKeyref_0_0_8_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
 -- (derived from xsd:keyref[@name='entity_polyKeyref_0_0_0_0'])
 --ALTER TABLE entity_poly_seq ADD CONSTRAINT KR_entity_polyKeyref_0_0_0_0 FOREIGN KEY ( entity_id ) REFERENCES entity_poly ( entity_id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;

@@ -31,6 +31,8 @@ if [ ! -z $XML_DIR ] ; then
 
  echo XML Schema validation: *.xml documents in $XML_DIR...
 
+ find $XML_DIR -maxdepth 1 -name '*.xml' -size 0 -exec rm {} +
+
  if [ $DELETE = "true" ] ; then
   java -classpath $XSD2PGSCHEMA xmlvalidator --xsd $PDBX_VALIDATION_XSD --xml $XML_DIR --sync chk_sum_pdbml_valid --del-invalid-xml
  else

@@ -431,7 +431,7 @@ DROP TABLE IF EXISTS pdbx_distant_solvent_atoms CASCADE;
 DROP TABLE IF EXISTS pdbx_domain_range CASCADE;
 DROP TABLE IF EXISTS pdbx_drug_info CASCADE;
 DROP TABLE IF EXISTS pdbx_entity_assembly CASCADE;
-DROP TABLE IF EXISTS pdbx_entity_descriptor CASCADE;
+DROP TABLE IF EXISTS pdbx_entity_branch_descriptor CASCADE;
 DROP TABLE IF EXISTS pdbx_entity_func_bind_mode CASCADE;
 DROP TABLE IF EXISTS pdbx_entity_func_enzyme CASCADE;
 DROP TABLE IF EXISTS pdbx_entity_func_other CASCADE;
@@ -10277,21 +10277,21 @@ CREATE TABLE pdbx_entity_assembly (
 );
 
 --
--- (quoted from pdbx_entity_descriptorType)
--- Data items in the PDBX_ENTITY_DESCRIPTOR category provide string descriptors of entity chemical structure. Example 1 - <PDBx:pdbx_entity_descriptorCategory> <PDBx:pdbx_entity_descriptor ordinal="1"> <PDBx:descriptor>[][Asn]{[(4+1)][b-D-GlcpNAc]{[(4+1)][b-D-GlcpNAc]{[(4+1)][b-D-Manp]{[(3+1)][a-D-Manp]{[(2+1)][a-D-Manp]{[(2+1)][a-D-Manp]{}}}[(6+1)][a-D-Manp]{[(3+1)][a-D-Manp]{[(2+1)][a-D-Manp]{}}[(6+1)][a-D-Manp]{[(2+1)][a-D-Manp]{}}}}}}}</PDBx:descriptor> <PDBx:entity_id>1</PDBx:entity_id> <PDBx:program>PDB-CARE</PDBx:program> <PDBx:program_version>Beta</PDBx:program_version> <PDBx:type>LINUCS</PDBx:type> </PDBx:pdbx_entity_descriptor> </PDBx:pdbx_entity_descriptorCategory>
+-- (quoted from pdbx_entity_branch_descriptorType)
+-- Data items in the PDBX_ENTITY_BRANCH_DESCRIPTOR category provide string descriptors of entity chemical structure. Example 1 - <PDBx:pdbx_entity_branch_descriptorCategory> <PDBx:pdbx_entity_branch_descriptor ordinal="1"> <PDBx:descriptor>[][Asn]{[(4+1)][b-D-GlcpNAc]{[(4+1)][b-D-GlcpNAc]{[(4+1)][b-D-Manp]{[(3+1)][a-D-Manp]{[(2+1)][a-D-Manp]{[(2+1)][a-D-Manp]{}}}[(6+1)][a-D-Manp]{[(3+1)][a-D-Manp]{[(2+1)][a-D-Manp]{}}[(6+1)][a-D-Manp]{[(2+1)][a-D-Manp]{}}}}}}}</PDBx:descriptor> <PDBx:entity_id>1</PDBx:entity_id> <PDBx:program>PDB-CARE</PDBx:program> <PDBx:program_version>Beta</PDBx:program_version> <PDBx:type>LINUCS</PDBx:type> </PDBx:pdbx_entity_branch_descriptor> </PDBx:pdbx_entity_branch_descriptorCategory>
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
-DROP TYPE IF EXISTS ENUM_pdbx_entity_descriptor_type CASCADE;
-CREATE TYPE ENUM_pdbx_entity_descriptor_type AS ENUM ( 'LINUCS', 'Glycam Condensed Sequence', 'Glycam Condensed Core Sequence' );
-CREATE TABLE pdbx_entity_descriptor (
+DROP TYPE IF EXISTS ENUM_pdbx_entity_branch_descriptor_type CASCADE;
+CREATE TYPE ENUM_pdbx_entity_branch_descriptor_type AS ENUM ( 'LINUCS', 'Glycam Condensed Sequence', 'Glycam Condensed Core Sequence' );
+CREATE TABLE pdbx_entity_branch_descriptor (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
 	descriptor TEXT ,
 	entity_id TEXT ,
 	program TEXT ,
 	program_version TEXT ,
-	type ENUM_pdbx_entity_descriptor_type ,
+	type ENUM_pdbx_entity_branch_descriptor_type ,
 -- ATTRIBUTE
 	ordinal INTEGER NOT NULL
 );
@@ -20281,8 +20281,8 @@ CREATE TABLE valence_ref (
 -- (derived from xsd:key[@name='pdbx_entity_assemblyKey_0'])
 --ALTER TABLE pdbx_entity_assembly ADD CONSTRAINT UNQ_pdbx_entity_assembly UNIQUE ( document_id, entity_id, id );
 
--- (derived from xsd:key[@name='pdbx_entity_descriptorKey_0'])
---ALTER TABLE pdbx_entity_descriptor ADD CONSTRAINT UNQ_pdbx_entity_descriptor UNIQUE ( document_id, ordinal );
+-- (derived from xsd:key[@name='pdbx_entity_branch_descriptorKey_0'])
+--ALTER TABLE pdbx_entity_branch_descriptor ADD CONSTRAINT UNQ_pdbx_entity_branch_descriptor UNIQUE ( document_id, ordinal );
 
 -- (derived from xsd:key[@name='pdbx_entity_func_bind_modeKey_0'])
 --ALTER TABLE pdbx_entity_func_bind_mode ADD CONSTRAINT UNQ_pdbx_entity_func_bind_mode UNIQUE ( document_id, domain_id, entity_id, id );
@@ -21449,7 +21449,7 @@ CREATE TABLE valence_ref (
 --ALTER TABLE pdbx_entity_assembly ADD CONSTRAINT KR_entityKeyref_0_0_8_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
 -- (derived from xsd:keyref[@name='entityKeyref_0_0_9_0'])
---ALTER TABLE pdbx_entity_descriptor ADD CONSTRAINT KR_entityKeyref_0_0_9_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
+--ALTER TABLE pdbx_entity_branch_descriptor ADD CONSTRAINT KR_entityKeyref_0_0_9_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
 -- (derived from xsd:keyref[@name='entityKeyref_0_0_10_0'])
 --ALTER TABLE pdbx_entity_func_bind_mode ADD CONSTRAINT KR_entityKeyref_0_0_10_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;

@@ -246,7 +246,7 @@ pdbx_domain
 pdbx_domain_range
 pdbx_drug_info
 pdbx_entity_assembly
-pdbx_entity_descriptor
+pdbx_entity_branch_descriptor
 pdbx_entity_func_bind_mode
 pdbx_entity_func_enzyme
 pdbx_entity_func_other
