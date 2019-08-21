@@ -1641,8 +1641,12 @@ Unmatched components exist in WilsonBaniso, <xsl:value-of select="position()"/>,
         <xsl:if test="@icode and @icode!=' '">
           <xsl:element name="PDBxv:PDB_ins_code"><xsl:value-of select="@icode"/></xsl:element>
         </xsl:if>
-        <xsl:element name="PDBxv:angle_overall_rmsz"><xsl:value-of select="@mogul_angles_rmsz"/></xsl:element>
-        <xsl:element name="PDBxv:bond_overall_rmsz"><xsl:value-of select="@mogul_bonds_rmsz"/></xsl:element>
+        <xsl:if test="@mogul_angles_rmsz">
+          <xsl:element name="PDBxv:angle_overall_rmsz"><xsl:value-of select="@mogul_angles_rmsz"/></xsl:element>
+        </xsl:if>
+        <xsl:if test="@mogul_bonds_rmsz">
+          <xsl:element name="PDBxv:bond_overall_rmsz"><xsl:value-of select="@mogul_bonds_rmsz"/></xsl:element>
+        </xsl:if>
         <xsl:if test="@mogul_rmsz_numangles">
           <xsl:element name="PDBxv:number_angles"><xsl:value-of select="@mogul_rmsz_numangles"/></xsl:element>
         </xsl:if>
