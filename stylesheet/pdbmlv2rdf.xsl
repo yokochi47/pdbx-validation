@@ -1656,6 +1656,28 @@
   </xsl:template>
 
 
+  <xsl:template match="PDBxv:datablock/PDBxv:pdbx_entity_branch_descriptorCategory/PDBxv:pdbx_entity_branch_descriptor">
+      <PDBov:has_pdbx_entity_branch_descriptor>
+      <PDBov:pdbx_entity_branch_descriptor rdf:about="{$base}/pdbx_entity_branch_descriptor/{translate(@ordinal,' ^','_')}">
+        <PDBov:of_datablock rdf:resource="{$base}"/>
+      <xsl:if test="PDBxv:entity_id!=''">
+        <PDBov:reference_to_entity>
+	  <rdf:Description  rdf:about="{$base}/entity/{translate(PDBxv:entity_id,' ^','_')}">
+	    <PDBov:referenced_by_pdbx_entity_branch_descriptor rdf:resource="{$base}/pdbx_entity_branch_descriptor/{translate(@ordinal,' ^','_')}"/>
+	  </rdf:Description>
+        </PDBov:reference_to_entity>
+            <!-- entityKeyref_0_0_4_0 -->
+        
+      </xsl:if>
+      <xsl:apply-templates select="@*"/>
+      <xsl:apply-templates select="@*" mode="linked"/>
+      <xsl:apply-templates/>
+      <xsl:apply-templates mode="linked"/>
+      </PDBov:pdbx_entity_branch_descriptor>
+      </PDBov:has_pdbx_entity_branch_descriptor>
+  </xsl:template>
+
+
   <xsl:template match="PDBxv:datablock/PDBxv:pdbx_entity_descriptorCategory/PDBxv:pdbx_entity_descriptor">
       <PDBov:has_pdbx_entity_descriptor>
       <PDBov:pdbx_entity_descriptor rdf:about="{$base}/pdbx_entity_descriptor/{translate(@ordinal,' ^','_')}">
@@ -1666,7 +1688,7 @@
 	    <PDBov:referenced_by_pdbx_entity_descriptor rdf:resource="{$base}/pdbx_entity_descriptor/{translate(@ordinal,' ^','_')}"/>
 	  </rdf:Description>
         </PDBov:reference_to_entity>
-            <!-- entityKeyref_0_0_4_0 -->
+            <!-- entityKeyref_0_0_5_0 -->
         
       </xsl:if>
       <xsl:apply-templates select="@*"/>
@@ -1688,7 +1710,7 @@
 	    <PDBov:referenced_by_pdbx_entity_nonpoly rdf:resource="{$base}/pdbx_entity_nonpoly/{translate(@entity_id,' ^','_')}"/>
 	  </rdf:Description>
         </PDBov:reference_to_entity>
-            <!-- entityKeyref_0_0_5_0 -->
+            <!-- entityKeyref_0_0_6_0 -->
         
       </xsl:if>
       <xsl:apply-templates select="@*"/>
@@ -3838,7 +3860,7 @@
 	    <PDBov:referenced_by_struct_asym rdf:resource="{$base}/struct_asym/{translate(@id,' ^','_')}"/>
 	  </rdf:Description>
         </PDBov:reference_to_entity>
-            <!-- entityKeyref_0_0_6_0 -->
+            <!-- entityKeyref_0_0_7_0 -->
         
       </xsl:if>
       <xsl:apply-templates select="@*"/>
@@ -4118,7 +4140,7 @@
 	    <PDBov:referenced_by_struct_ref rdf:resource="{$base}/struct_ref/{translate(@id,' ^','_')}"/>
 	  </rdf:Description>
         </PDBov:reference_to_entity>
-            <!-- entityKeyref_0_0_7_0 -->
+            <!-- entityKeyref_0_0_8_0 -->
         
       </xsl:if>
       <xsl:apply-templates select="@*"/>

@@ -1,6 +1,7 @@
 pdbx_dcc_entity_geometry
 pdbx_dcc_map_overall
 pdbx_dcc_mon_geometry
+pdbx_entity_descriptor
 pdbx_missing_nmr_star_item
 pdbx_nmr_chem_shift_annotation
 pdbx_nmr_chem_shift_completeness

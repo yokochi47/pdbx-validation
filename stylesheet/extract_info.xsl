@@ -489,6 +489,7 @@ Unmatched entry ID in both documents (<xsl:value-of select="$entry_id"/> and <xs
             <xsl:when test="@name='validation-pack'">geometric validation</xsl:when>
             <xsl:when test="@name='validation-pipeline'">mmcif data extractor</xsl:when>
             <xsl:when test="@name='xtriage'">x-ray data assessment</xsl:when>
+            <xsl:when test="@name='buster-report'">geometric validation package for ligand chemistry in protein x-ray structures</xsl:when>
             <xsl:otherwise>
               <xsl:call-template name="error_handler">
                 <xsl:with-param name="terminate">yes</xsl:with-param>
@@ -2246,6 +2247,9 @@ Unmatched components exist in atoms, <xsl:value-of select="position()"/>, found 
       <xsl:element name="PDBxv:dihedral_angle_target_value"><xsl:value-of select="@mean"/></xsl:element>
       <xsl:element name="PDBxv:dihedral_angle_minimum_diff_to_kb"><xsl:value-of select="@mindiff"/></xsl:element>
       <xsl:element name="PDBxv:number_dihedral_angles_in_kb"><xsl:value-of select="@numobs"/></xsl:element>
+      <xsl:if test="../@local_density">
+        <xsl:element name="PDBxv:percent_dehedral_angles_fitted_to_kb"><xsl:value-of select="../@local_density"/></xsl:element>
+      </xsl:if>
     </PDBxv:pdbx_validate_rmsd_torsion>
   </xsl:template>
 

@@ -34,6 +34,8 @@ done
 
 if [ ! -z $RDF_DIR ] ; then
 
+ find $RDF_DIR -maxdepth 1 -name '*.rdf' -size 0 -exec rm {} +
+
  total=`find $RDF_DIR -maxdepth 1 -name '*.rdf' | wc -l`
 
  if [ $total != 0 ] ; then

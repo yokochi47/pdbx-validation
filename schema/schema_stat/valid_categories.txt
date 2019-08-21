@@ -82,6 +82,7 @@ pdbx_distant_solvent_atoms
 pdbx_domain
 pdbx_domain_range
 pdbx_entity_assembly
+pdbx_entity_branch_descriptor
 pdbx_entity_descriptor
 pdbx_entity_nonpoly
 pdbx_entity_poly_comp_link_list

@@ -384,3 +384,4 @@ equivalent_properties=`grep '<owl:equivalentProperty rdf:resource="BMRBo:' $vali
 echo "  "$equivalent_properties equivalent properties of BMRB/OWL.
 
 echo
+

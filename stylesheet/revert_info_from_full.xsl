@@ -37,7 +37,7 @@
 
   <xsl:template match="$datablock">
 
-    <wwPDB-validation-information xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://wwpdb.org/validation/schema/wwpdb_validation_v002.xsd">
+    <wwPDB-validation-information xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://wwpdb.org/validation/schema/wwpdb_validation_v003.xsd">
       <Entry>
         <xsl:call-template name="Entry"/>
       </Entry>
@@ -1541,6 +1541,9 @@ Unmatched type exist in _pdbx_nmr_assigned_chem_shift_list.nmr_star_consistency_
           <xsl:attribute name="obsval"><xsl:value-of select="PDBxv:dihedral_angle_value"/></xsl:attribute>
           <xsl:attribute name="mindiff"><xsl:value-of select="PDBxv:dihedral_angle_minimum_diff_to_kb"/></xsl:attribute>
           <xsl:attribute name="numobs"><xsl:value-of select="PDBxv:number_dihedral_angles_in_kb"/></xsl:attribute>
+          <xsl:if test="PDBxv:percent_dihedral_angles_fitted_to_kb">
+            <xsl:attribute name="local_density"><xsl:value-of select="PDBxv:percent_dihedral_angles_fitted_to_kb"/></xsl:attribute>
+          </xsl:if>
 
         </mog-torsion-outlier>
 

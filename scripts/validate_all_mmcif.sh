@@ -34,6 +34,8 @@ done
 
 if [ ! -z $MMCIF_DIR ] ; then
 
+ find $MMCIF_DIR -maxdepth 1 -name '*.cif' -size 0 -exec rm {} +
+
  total=`find $MMCIF_DIR -maxdepth 1 -name '*.cif' | wc -l`
 
  if [ $total != 0 ] ; then

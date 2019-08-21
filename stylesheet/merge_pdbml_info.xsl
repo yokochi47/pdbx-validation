@@ -548,6 +548,12 @@ Unmatched entry ID in both documents (<xsl:value-of select="$entry_id"/> and <xs
     </xsl:element>
   </xsl:template>
 
+  <xsl:template match="PDBxv:pdbx_entity_branch_descriptorCategory">
+    <xsl:element name="{name()}">
+      <xsl:apply-templates mode="category-element"/>
+    </xsl:element>
+  </xsl:template>
+
   <xsl:template match="PDBxv:pdbx_entity_descriptorCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
