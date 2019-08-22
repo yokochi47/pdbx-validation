@@ -12,7 +12,7 @@ fi
 
 MMCIF_DIR=
 CHK_SUM_DIR=chk_sum_mmcif_valid
-DELETE=true
+DELETE=false
 
 ARGV=`getopt --long -o "d:r" "$@"`
 eval set -- "$ARGV"
@@ -23,7 +23,7 @@ while true ; do
   shift
  ;;
  -r)
-  DELETE=false
+  DELETE=true
  ;;
  *)
   break
