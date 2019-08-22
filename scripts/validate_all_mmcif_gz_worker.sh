@@ -4,7 +4,7 @@ source ./scripts/env.sh
 
 CHK_SUM_DIR=
 FILE_LIST=
-DELETE=true
+DELETE=false
 
 ARGV=`getopt --long -o "c:s:l:n:r" "$@"`
 eval set -- "$ARGV"
@@ -27,7 +27,7 @@ while true ; do
   shift
  ;;
  -r)
-  DELETE=false
+  DELETE=true
  ;;
  *)
   break
