@@ -18,7 +18,7 @@
 --  map decimal numbers to: big decimal
 --
 -- Statistics of schema:
---  Generated 898 tables (7343 fields), 0 attr groups, 0 model groups in total
+--  Generated 898 tables (7347 fields), 0 attr groups, 0 model groups in total
 --   Namespaces:
 --    http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), http://www.w3.org/2001/XMLSchema (xsd)
 --   Schema locations:
@@ -30,7 +30,7 @@
 --   User keys:
 --    898 document keys, 0 serial keys, 0 xpath keys
 --   Contents:
---    1352 attributes (0 in-place document keys), 4748 elements (0 in-place document keys), 345 simple contents (0 in-place document keys, 0 as attribute, 0 as conditional attribute)
+--    1352 attributes (0 in-place document keys), 4752 elements (0 in-place document keys), 345 simple contents (0 in-place document keys, 0 as attribute, 0 as conditional attribute)
 --   Wild cards:
 --    0 any elements, 0 any attributes
 --   Constraints:
@@ -38,8 +38,8 @@
 --
 
 --
--- PDBML Schema v5.311
--- PDBML Schema translated from the PDBx/mmCIF Dictionary v5.311: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
+-- PDBML Schema v5.314
+-- PDBML Schema translated from the PDBx/mmCIF Dictionary v5.314: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
 -- URI-reference = http://pdbml.pdb.org/schema/pdbx-v50.xsd
 --
 
@@ -1268,8 +1268,10 @@ CREATE TABLE atom_type (
 	description TEXT ,
 	number_in_cell INTEGER CHECK ( number_in_cell >= 0 ) ,
 	oxidation_number INTEGER CHECK ( oxidation_number >= -8 AND oxidation_number <= 8 ) ,
+	"pdbx_N_electrons" INTEGER ,
 	"pdbx_scat_Cromer_Mann_a5" DECIMAL ,
 	"pdbx_scat_Cromer_Mann_b5" DECIMAL ,
+	"pdbx_scat_Z" INTEGER ,
 	radius_bond DECIMAL CHECK ( radius_bond >= 0 AND radius_bond <= 5 ) ,
 	radius_contact DECIMAL CHECK ( radius_contact >= 0 AND radius_contact <= 5 ) ,
 	"scat_Cromer_Mann_a1" DECIMAL ,
@@ -11911,7 +11913,7 @@ CREATE TYPE ENUM_pdbx_nmr_chem_shift_ref_ref_method AS ENUM ( 'internal', 'exter
 DROP TYPE IF EXISTS ENUM_pdbx_nmr_chem_shift_ref_ref_type CASCADE;
 CREATE TYPE ENUM_pdbx_nmr_chem_shift_ref_ref_type AS ENUM ( 'direct', 'indirect' );
 DROP TYPE IF EXISTS ENUM_pdbx_nmr_chem_shift_ref_mol_common_name CASCADE;
-CREATE TYPE ENUM_pdbx_nmr_chem_shift_ref_mol_common_name AS ENUM ( 'DSS', 'TSP', 'water', 'DMSO', 'DMSO-d5', 'DMSO-d6', 'methanol', 'TMS', 'methionine', 'alanine', 'acetate', 'glucose', 'dioxane', 'adamantane', 'ammonium chloride', '[15N] ammonium chloride', 'ammonium hydroxide', 'ammonium nitrate', '[15N] ammonium nitrate', '[15N, 15N] ammonium nitrate', 'ammonium nitrite', 'ammonium sulfate', '[15N] ammonium sulfate', 'liquid anhydrous ammonia', 'formamide', '[15N] nitric acid', 'Nitromethane', '[15N] nitromethane', 'urea', 'phosphoric acid', 'phosphoric acid (85%)', 'TMP', 'cadmium perchlorate', 'Deuterium Oxide' );
+CREATE TYPE ENUM_pdbx_nmr_chem_shift_ref_mol_common_name AS ENUM ( 'DSS', 'TSP', 'water', 'DMSO', 'DMSO-d5', 'DMSO-d6', 'methanol', 'TMS', 'methionine', 'alanine', 'acetate', 'glucose', 'dioxane', 'adamantane', 'ammonium chloride', '[15N] ammonium chloride', 'ammonium hydroxide', 'ammonium nitrate', '[15N] ammonium nitrate', '[15N, 15N] ammonium nitrate', 'ammonium nitrite', 'ammonium sulfate', '[15N] ammonium sulfate', 'liquid anhydrous ammonia', 'formamide', '[15N] nitric acid', 'Nitromethane', '[15N] nitromethane', 'N-acetyl-valine (NAV)', 'urea', 'phosphoric acid', 'phosphoric acid (85%)', 'TMP', 'cadmium perchlorate', 'Deuterium Oxide' );
 CREATE TABLE pdbx_nmr_chem_shift_ref (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
@@ -18303,6 +18305,7 @@ CREATE TABLE reflns (
 	"observed_criterion_sigma_F" DECIMAL ,
 	"observed_criterion_sigma_I" DECIMAL ,
 	"pdbx_CC_half" DECIMAL CHECK ( "pdbx_CC_half" >= -1 AND "pdbx_CC_half" <= 1 ) ,
+	"pdbx_CC_star" DECIMAL CHECK ( "pdbx_CC_star" >= 0 AND "pdbx_CC_star" <= 1 ) ,
 	"pdbx_R_split" DECIMAL CHECK ( "pdbx_R_split" >= 0 ) ,
 	"pdbx_Rmerge_I_all" DECIMAL ,
 	"pdbx_Rmerge_I_anomalous" DECIMAL ,
@@ -18401,6 +18404,7 @@ CREATE TABLE reflns_shell (
 	number_unique_gt INTEGER CHECK ( number_unique_gt >= 0 ) ,
 	number_unique_obs INTEGER ,
 	"pdbx_CC_half" DECIMAL CHECK ( "pdbx_CC_half" >= -1 AND "pdbx_CC_half" <= 1 ) ,
+	"pdbx_CC_star" DECIMAL CHECK ( "pdbx_CC_star" >= 0 AND "pdbx_CC_star" <= 1 ) ,
 	"pdbx_R_split" DECIMAL CHECK ( "pdbx_R_split" >= 0 ) ,
 	"pdbx_Rmerge_I_all_anomalous" DECIMAL ,
 	"pdbx_Rpim_I_all" DECIMAL CHECK ( "pdbx_Rpim_I_all" > 0.0 ) ,

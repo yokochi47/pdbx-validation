@@ -40,7 +40,7 @@ data_mmcif_ddl.dic
 
     _dictionary.datablock_id               mmcif_ddl.dic
     _dictionary.title                      mmcif_ddl.dic
-    _dictionary.version                    2.2.1
+    _dictionary.version                    2.2.2
 
      loop_
     _dictionary_history.version
