@@ -115,3 +115,5 @@ echo Generated: $DIC_PREFIX-v$DIC_MAJOR_VER.html
 
 cat schema_stat.txt
 
+date
+

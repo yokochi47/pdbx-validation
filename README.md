@@ -14,13 +14,13 @@ The pdbx-validation is a generation tool of alternative [wwPDB validation report
 
 File path | Document
 --------- | --------
-[schema/mmcif_pdbx_validation_v1.dic](https://github.com/yokochi47/pdbx-validation/blob/master/schema/mmcif_pdbx_validation_v1.313.dic) | wwPDB Validation Information Dictionary (v1.313)
-[schema/pdbx-validation-v1.xsd](https://github.com/yokochi47/pdbx-validation/blob/master/schema/pdbx-validation-v1.313.xsd) | PDBML-validation Schema (v1.313)
-[schema/pdbx-validation-v1.owl](https://github.com/yokochi47/pdbx-validation/blob/master/schema/pdbx-validation-v1.313.owl) | wwPDB/OWL-validation (v1.313)
-[schema/mmcif_ddl.dic](https://github.com/yokochi47/pdbx-validation/blob/master/schema/mmcif_ddl_v2.2.2.dic) | extended mmCIF DDL Core Dictionary (dubbed as v2.2.2)
-[resource/mmcif_pdbx_v50.dic](http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic) | PDB Exchange Data Dictionary (v5.313)
-[resource/pdbx-v50.xsd](https://github.com/yokochi47/pdbx-validation/blob/master/resource/pdbx-v50.xsd) | PDBML Schema (v5.313)
-[resource/pdbx-v50.owl](https://github.com/yokochi47/pdbx-validation/blob/master/resource/pdbx-v50.owl) | PDBx ontology, ontology for wwPDB/RDF (v5.313)
+[schema/mmcif_pdbx_validation_v1.dic](https://github.com/yokochi47/pdbx-validation/blob/master/schema/mmcif_pdbx_validation_v1.314.dic) | wwPDB Validation Information Dictionary (v1.314)
+[schema/pdbx-validation-v1.xsd](https://github.com/yokochi47/pdbx-validation/blob/master/schema/pdbx-validation-v1.314.xsd) | PDBML-validation Schema (v1.314)
+[schema/pdbx-validation-v1.owl](https://github.com/yokochi47/pdbx-validation/blob/master/schema/pdbx-validation-v1.314.owl) | wwPDB/OWL-validation (v1.314)
+[schema/mmcif_ddl.dic](https://github.com/yokochi47/pdbx-validation/blob/master/schema/mmcif_ddl_v2.3.0.dic) | extended mmCIF DDL Core Dictionary (dubbed as v2.3.0)
+[resource/mmcif_pdbx_v50.dic](http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic) | PDB Exchange Data Dictionary (v5.314)
+[resource/pdbx-v50.xsd](https://github.com/yokochi47/pdbx-validation/blob/master/resource/pdbx-v50.xsd) | PDBML Schema (v5.314)
+[resource/pdbx-v50.owl](https://github.com/yokochi47/pdbx-validation/blob/master/resource/pdbx-v50.owl) | PDBx ontology, ontology for wwPDB/RDF (v5.314)
 [resource/wwpdb_validation_v003.xsd](https://github.com/yokochi47/pdbx-validation/blob/master/resource/wwpdb_validation_v003.xsd) | XML Schema for wwPDB validation reports (v003, rev n/a)
 [scripts](https://github.com/yokochi47/pdbx-validation/blob/master/scripts) | a directory contains scripts invoked by the 'run_all.sh' script
 [virtuoso_scripts](https://github.com/yokochi47/pdbx-validation/blob/master/virtuoso_scripts) | a directory contains scripts for uploading wwPDB/RDF-validation to local SPARQL endpoint
@@ -124,6 +124,9 @@ File path | Document
 - [**Virtuoso**](https://www.openlinksw.com/wiki/main/Main), oprionally used as SPARQL endpoint of wwPDB/RDF-validation.
 
 ## Release notes
+
+- **Aug 23, 2019**: Release v1.6.1
+	- Update wwPDB Validation Information Dictionary from v1.313 to 1.314.
 
 - **Aug 21, 2019**: Release v1.6.0
 	- Update wwPDB Validation Information Dictionary from v1.311 to 1.313.

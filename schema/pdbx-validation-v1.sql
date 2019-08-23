@@ -18,7 +18,7 @@
 --  map decimal numbers to: big decimal
 --
 -- Statistics of schema:
---  Generated 447 tables (3545 fields), 0 attr groups, 0 model groups in total
+--  Generated 447 tables (3547 fields), 0 attr groups, 0 model groups in total
 --   Namespaces:
 --    http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), http://www.w3.org/2001/XMLSchema (xsd)
 --   Schema locations:
@@ -30,7 +30,7 @@
 --   User keys:
 --    402 document keys, 0 serial keys, 0 xpath keys
 --   Contents:
---    625 attributes (40 in-place document keys), 2310 elements (5 in-place document keys), 208 simple contents (0 in-place document keys, 0 as attribute, 0 as conditional attribute)
+--    625 attributes (40 in-place document keys), 2312 elements (5 in-place document keys), 208 simple contents (0 in-place document keys, 0 as attribute, 0 as conditional attribute)
 --   Wild cards:
 --    0 any elements, 0 any attributes
 --   Constraints:
@@ -38,8 +38,8 @@
 --
 
 --
--- PDBML-validation Schema v1.311
--- PDBXML-validation Schema translated from wwPDB Validation Information Dictionary v1.311, which is backward compatible with the PDBx/mmCIF Dictionary v5.311: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
+-- PDBML-validation Schema v1.314
+-- PDBXML-validation Schema translated from wwPDB Validation Information Dictionary v1.314, which is backward compatible with the PDBx/mmCIF Dictionary v5.314: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
 -- URI-reference = http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd
 --
 
@@ -8647,7 +8647,8 @@ CREATE TABLE reflns (
 	"observed_criterion_sigma_F" DECIMAL ,
 	"observed_criterion_sigma_I" DECIMAL ,
 	"pdbx_CC_half" DECIMAL CHECK ( "pdbx_CC_half" >= -1 AND "pdbx_CC_half" <= 1 ) ,
-	"pdbx_R_split" DECIMAL ,
+	"pdbx_CC_star" DECIMAL CHECK ( "pdbx_CC_star" >= 0 AND "pdbx_CC_star" <= 1 ) ,
+	"pdbx_R_split" DECIMAL CHECK ( "pdbx_R_split" >= 0 ) ,
 	"pdbx_Rmerge_I_all" DECIMAL ,
 	"pdbx_Rmerge_I_obs" DECIMAL ,
 	"pdbx_Rpim_I_all" DECIMAL CHECK ( "pdbx_Rpim_I_all" > 0.0 ) ,
@@ -8743,6 +8744,7 @@ CREATE TABLE reflns_shell (
 	number_unique_gt INTEGER CHECK ( number_unique_gt >= 0 ) ,
 	number_unique_obs INTEGER ,
 	"pdbx_CC_half" DECIMAL CHECK ( "pdbx_CC_half" >= -1 AND "pdbx_CC_half" <= 1 ) ,
+	"pdbx_CC_star" DECIMAL CHECK ( "pdbx_CC_star" >= 0 AND "pdbx_CC_star" <= 1 ) ,
 	"pdbx_R_split" DECIMAL CHECK ( "pdbx_R_split" >= 0 ) ,
 	"pdbx_Rpim_I_all" DECIMAL CHECK ( "pdbx_Rpim_I_all" > 0.0 ) ,
 	"pdbx_Rrim_I_all" DECIMAL CHECK ( "pdbx_Rrim_I_all" > 0.0 ) ,

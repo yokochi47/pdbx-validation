@@ -183,8 +183,10 @@ atom_type.analytical_mass_percent
 atom_type.description
 atom_type.number_in_cell
 atom_type.oxidation_number
+atom_type.pdbx_N_electrons
 atom_type.pdbx_scat_Cromer_Mann_a5
 atom_type.pdbx_scat_Cromer_Mann_b5
+atom_type.pdbx_scat_Z
 atom_type.radius_bond
 atom_type.radius_contact
 atom_type.scat_Cromer_Mann_a1
@@ -5620,6 +5622,7 @@ reflns.observed_criterion_I_min
 reflns.observed_criterion_sigma_F
 reflns.observed_criterion_sigma_I
 reflns.pdbx_CC_half
+reflns.pdbx_CC_star
 reflns.pdbx_chi_squared
 reflns.pdbx_diffrn_id
 reflns.pdbx_d_opt
@@ -5669,6 +5672,7 @@ reflns_shell.number_unique_all
 reflns_shell.number_unique_gt
 reflns_shell.number_unique_obs
 reflns_shell.pdbx_CC_half
+reflns_shell.pdbx_CC_star
 reflns_shell.pdbx_chi_squared
 reflns_shell.pdbx_diffrn_id
 reflns_shell.pdbx_netI_over_sigmaI_all
