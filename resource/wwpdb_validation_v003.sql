@@ -6,6 +6,7 @@
 -- Schema modeling options:
 --  explicit named schema: false
 --  relational extension: false
+--  inline simple content: false
 --  wild card extension: true
 --  case sensitive name: true
 --  no name collision: true
@@ -234,7 +235,7 @@ CREATE TABLE assignment_completeness_full_length (
 --
 -- NMR entries are normally linked to one or more assigned chemical shift lists. A typical reason for containing multiple chemical shift lists would be differing experimental conditions or samples.
 -- xmlns: no namespace, schema location: resource/wwpdb_validation_v003.xsd
--- type: root child, content: true, list: true, bridge: false, virtual: false
+-- type: root child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE chemical_shift_list (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
@@ -266,7 +267,7 @@ CREATE TABLE chemical_shift_list (
 --
 -- Entry contains most information that has a single value for the structure analyzed and in the run.
 -- xmlns: no namespace, schema location: resource/wwpdb_validation_v003.xsd
--- type: root child, content: true, list: true, bridge: false, virtual: false
+-- type: root child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE "Entry" (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
@@ -662,7 +663,7 @@ CREATE TABLE "mog-ring-outlier" (
 --
 -- A "ModelledSubgroup" is an individual occurence of a residue. If there are alternate atoms in the residue each alternate and any alternate atoms is a separate ModelledSubgroup. If there are multiple models then each of these is a separate subgroup.
 -- xmlns: no namespace, schema location: resource/wwpdb_validation_v003.xsd
--- type: root child, content: true, list: true, bridge: false, virtual: false
+-- type: root child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_ModelledSubgroup_rama CASCADE;
 CREATE TYPE ENUM_ModelledSubgroup_rama AS ENUM ( 'Favored', 'Allowed', 'OUTLIER' );
