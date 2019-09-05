@@ -6,6 +6,7 @@
 -- Schema modeling options:
 --  explicit named schema: false
 --  relational extension: false
+--  inline simple content: false
 --  wild card extension: true
 --  case sensitive name: true
 --  no name collision: true
