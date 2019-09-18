@@ -584,6 +584,7 @@ pdbx_audit_revision_category.ordinal
 pdbx_audit_revision_category.revision_ordinal
 pdbx_audit_revision_details.data_content_type
 pdbx_audit_revision_details.description
+pdbx_audit_revision_details.details
 pdbx_audit_revision_details.ordinal
 pdbx_audit_revision_details.provider
 pdbx_audit_revision_details.revision_ordinal
@@ -2303,6 +2304,7 @@ refine_ls_shell.number_reflns_R_work
 refine_ls_shell.pdbx_fsc_free
 refine_ls_shell.pdbx_fsc_work
 refine_ls_shell.pdbx_phase_error
+refine_ls_shell.pdbx_R_complete
 refine_ls_shell.pdbx_refine_id
 refine_ls_shell.pdbx_total_number_of_bins_used
 refine_ls_shell.percent_reflns_obs
@@ -2372,6 +2374,7 @@ refine.pdbx_pd_number_of_points
 refine.pdbx_pd_number_of_powder_patterns
 refine.pdbx_pd_proc_ls_prof_R_factor
 refine.pdbx_pd_proc_ls_prof_wR_factor
+refine.pdbx_R_complete
 refine.pdbx_real_space_R
 refine.pdbx_refine_id
 refine.pdbx_R_Free_selection_details
