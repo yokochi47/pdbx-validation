@@ -973,12 +973,12 @@ CREATE TABLE entity (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
 	details TEXT ,
--- xsd:restriction/xsd:minInclusive: 1
+-- xsd:restriction/xsd:minInclusive="1"
 	formula_weight DECIMAL CHECK ( formula_weight >= 1 ) ,
 	pdbx_description TEXT ,
 	pdbx_ec TEXT ,
 	pdbx_entities_per_biological_unit DECIMAL ,
--- xsd:restriction/xsd:minInclusive: 1
+-- xsd:restriction/xsd:minInclusive="1"
 	pdbx_formula_weight_exptl DECIMAL CHECK ( pdbx_formula_weight_exptl >= 1 ) ,
 	pdbx_formula_weight_exptl_method ENUM_entity_pdbx_formula_weight_exptl_method ,
 	pdbx_fragment TEXT ,
@@ -1017,7 +1017,7 @@ CREATE TABLE chem_comp (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
 	formula TEXT ,
--- xsd:restriction/xsd:minInclusive: 1
+-- xsd:restriction/xsd:minInclusive="1"
 	formula_weight DECIMAL CHECK ( formula_weight >= 1 ) ,
 	model_details TEXT ,
 	model_erf TEXT ,
@@ -1028,9 +1028,9 @@ CREATE TABLE chem_comp (
 	mon_nstd_parent TEXT ,
 	mon_nstd_parent_comp_id TEXT ,
 	name TEXT ,
--- xsd:restriction/xsd:minInclusive: 1
+-- xsd:restriction/xsd:minInclusive="1"
 	number_atoms_all INTEGER CHECK ( number_atoms_all >= 1 ) ,
--- xsd:restriction/xsd:minInclusive: 1
+-- xsd:restriction/xsd:minInclusive="1"
 	number_atoms_nh INTEGER CHECK ( number_atoms_nh >= 1 ) ,
 	one_letter_code TEXT ,
 	pdbx_ambiguous_flag TEXT ,
@@ -1060,8 +1060,8 @@ CREATE TABLE chem_comp (
 	pdbx_subcomponent_list TEXT ,
 	pdbx_synonyms TEXT ,
 	pdbx_type TEXT ,
--- xsd:restriction/xsd:maxInclusive: 1
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:maxInclusive="1"
+-- xsd:restriction/xsd:minInclusive="0"
 	pdbx_type_modified INTEGER CHECK ( pdbx_type_modified >= 0 AND pdbx_type_modified <= 1 ) ,
 	three_letter_code TEXT ,
 	type ENUM_chem_comp_type ,
@@ -1088,29 +1088,29 @@ CREATE TYPE ENUM_exptl_crystal_pdbx_x_ray_image AS ENUM ( 'Y', 'N' );
 CREATE TABLE exptl_crystal (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
--- xsd:restriction/xsd:minInclusive: 1
+-- xsd:restriction/xsd:minInclusive="1"
 	"F_000" INTEGER CHECK ( "F_000" >= 1 ) ,
 	colour TEXT ,
 	colour_lustre ENUM_exptl_crystal_colour_lustre ,
 	colour_modifier ENUM_exptl_crystal_colour_modifier ,
 	colour_primary ENUM_exptl_crystal_colour_primary ,
 	"density_Matthews" DECIMAL ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	density_diffrn DECIMAL CHECK ( density_diffrn >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	density_meas DECIMAL CHECK ( density_meas >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	density_meas_gt DECIMAL CHECK ( density_meas_gt >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	density_meas_lt DECIMAL CHECK ( density_meas_lt >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	density_meas_temp DECIMAL CHECK ( density_meas_temp >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	density_meas_temp_gt DECIMAL CHECK ( density_meas_temp_gt >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	density_meas_temp_lt DECIMAL CHECK ( density_meas_temp_lt >= 0 ) ,
 	density_method TEXT ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	density_percent_sol DECIMAL CHECK ( density_percent_sol >= 0 ) ,
 	description TEXT ,
 	pdbx_crystal_image ENUM_exptl_crystal_pdbx_crystal_image ,
@@ -1119,13 +1119,13 @@ CREATE TABLE exptl_crystal (
 	"pdbx_x-ray_image" ENUM_exptl_crystal_pdbx_x_ray_image ,
 	"pdbx_x-ray_image_type" TEXT ,
 	preparation TEXT ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	size_max DECIMAL CHECK ( size_max >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	size_mid DECIMAL CHECK ( size_mid >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	size_min DECIMAL CHECK ( size_min >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	size_rad DECIMAL CHECK ( size_rad >= 0 ) ,
 -- ATTRIBUTE
 	id TEXT NOT NULL
@@ -1141,18 +1141,18 @@ CREATE TABLE diffrn (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
 	ambient_environment TEXT ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	ambient_pressure DECIMAL CHECK ( ambient_pressure >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	ambient_pressure_gt DECIMAL CHECK ( ambient_pressure_gt >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	ambient_pressure_lt DECIMAL CHECK ( ambient_pressure_lt >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	ambient_temp DECIMAL CHECK ( ambient_temp >= 0 ) ,
 	ambient_temp_details TEXT ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	ambient_temp_gt DECIMAL CHECK ( ambient_temp_gt >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	ambient_temp_lt DECIMAL CHECK ( ambient_temp_lt >= 0 ) ,
 	crystal_id TEXT ,
 	crystal_support TEXT ,
@@ -1201,32 +1201,32 @@ CREATE TABLE chem_link (
 CREATE TABLE phasing_set (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
--- xsd:restriction/xsd:maxInclusive: 180
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:maxInclusive="180"
+-- xsd:restriction/xsd:minInclusive="0"
 	cell_angle_alpha DECIMAL CHECK ( cell_angle_alpha >= 0 AND cell_angle_alpha <= 180 ) ,
--- xsd:restriction/xsd:maxInclusive: 180
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:maxInclusive="180"
+-- xsd:restriction/xsd:minInclusive="0"
 	cell_angle_beta DECIMAL CHECK ( cell_angle_beta >= 0 AND cell_angle_beta <= 180 ) ,
--- xsd:restriction/xsd:maxInclusive: 180
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:maxInclusive="180"
+-- xsd:restriction/xsd:minInclusive="0"
 	cell_angle_gamma DECIMAL CHECK ( cell_angle_gamma >= 0 AND cell_angle_gamma <= 180 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	cell_length_a DECIMAL CHECK ( cell_length_a >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	cell_length_b DECIMAL CHECK ( cell_length_b >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	cell_length_c DECIMAL CHECK ( cell_length_c >= 0 ) ,
 	detector_specific TEXT ,
 	detector_type TEXT ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	pdbx_d_res_high DECIMAL CHECK ( pdbx_d_res_high >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	pdbx_d_res_low DECIMAL CHECK ( pdbx_d_res_low >= 0 ) ,
 	pdbx_temp_details TEXT ,
 	radiation_source_specific TEXT ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	radiation_wavelength DECIMAL CHECK ( radiation_wavelength >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	temp DECIMAL CHECK ( temp >= 0 ) ,
 -- ATTRIBUTE
 	id TEXT NOT NULL
@@ -1266,7 +1266,7 @@ CREATE TABLE em_entity_assembly (
 	name TEXT ,
 	number_of_copies INTEGER ,
 	oligomeric_details TEXT ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	parent_id INTEGER CHECK ( parent_id >= 0 ) ,
 	source ENUM_em_entity_assembly_source ,
 	synonym TEXT ,
@@ -1289,7 +1289,7 @@ CREATE TABLE struct_biol (
 	details TEXT ,
 	pdbx_aggregation_state ENUM_struct_biol_pdbx_aggregation_state ,
 	pdbx_assembly_method TEXT ,
--- xsd:restriction/xsd:minInclusive: 1
+-- xsd:restriction/xsd:minInclusive="1"
 	pdbx_formula_weight DECIMAL CHECK ( pdbx_formula_weight >= 1 ) ,
 	pdbx_formula_weight_method TEXT ,
 	pdbx_parent_biol_id TEXT ,
@@ -1306,23 +1306,23 @@ CREATE TABLE struct_biol (
 CREATE TABLE atom_type (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	analytical_mass_percent DECIMAL CHECK ( analytical_mass_percent >= 0 ) ,
 	description TEXT ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	number_in_cell INTEGER CHECK ( number_in_cell >= 0 ) ,
--- xsd:restriction/xsd:maxInclusive: 8
--- xsd:restriction/xsd:minInclusive: -8
+-- xsd:restriction/xsd:maxInclusive="8"
+-- xsd:restriction/xsd:minInclusive="-8"
 	oxidation_number INTEGER CHECK ( oxidation_number >= -8 AND oxidation_number <= 8 ) ,
 	"pdbx_N_electrons" INTEGER ,
 	"pdbx_scat_Cromer_Mann_a5" DECIMAL ,
 	"pdbx_scat_Cromer_Mann_b5" DECIMAL ,
 	"pdbx_scat_Z" INTEGER ,
--- xsd:restriction/xsd:maxInclusive: 5
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:maxInclusive="5"
+-- xsd:restriction/xsd:minInclusive="0"
 	radius_bond DECIMAL CHECK ( radius_bond >= 0 AND radius_bond <= 5 ) ,
--- xsd:restriction/xsd:maxInclusive: 5
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:maxInclusive="5"
+-- xsd:restriction/xsd:minInclusive="0"
 	radius_contact DECIMAL CHECK ( radius_contact >= 0 AND radius_contact <= 5 ) ,
 	"scat_Cromer_Mann_a1" DECIMAL ,
 	"scat_Cromer_Mann_a2" DECIMAL ,
@@ -1362,8 +1362,8 @@ CREATE TABLE chem_comp_atom (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
 	alt_atom_id TEXT ,
--- xsd:restriction/xsd:maxInclusive: 8
--- xsd:restriction/xsd:minInclusive: -8
+-- xsd:restriction/xsd:maxInclusive="8"
+-- xsd:restriction/xsd:minInclusive="-8"
 	charge INTEGER CHECK ( charge >= -8 AND charge <= 8 ) ,
 	partial_charge DECIMAL ,
 	pdbx_align INTEGER ,
@@ -1544,7 +1544,7 @@ CREATE TABLE pdbx_reference_molecule (
 	compound_details TEXT ,
 	description TEXT ,
 	formula TEXT ,
--- xsd:restriction/xsd:minInclusive: 1
+-- xsd:restriction/xsd:minInclusive="1"
 	formula_weight DECIMAL CHECK ( formula_weight >= 1 ) ,
 	name TEXT ,
 	release_status ENUM_pdbx_reference_molecule_release_status ,
@@ -1605,7 +1605,7 @@ CREATE TABLE entity_poly (
 	nstd_chirality ENUM_entity_poly_nstd_chirality ,
 	nstd_linkage ENUM_entity_poly_nstd_linkage ,
 	nstd_monomer ENUM_entity_poly_nstd_monomer ,
--- xsd:restriction/xsd:minInclusive: 1
+-- xsd:restriction/xsd:minInclusive="1"
 	number_of_monomers INTEGER CHECK ( number_of_monomers >= 1 ) ,
 	"pdbx_C_terminal_seq_one_letter_code" TEXT ,
 	"pdbx_N_terminal_seq_one_letter_code" TEXT ,
@@ -1716,15 +1716,15 @@ CREATE TABLE "phasing_MAD_expt" (
 CREATE TABLE "phasing_MIR_der" (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	"R_cullis_acentric" DECIMAL CHECK ( "R_cullis_acentric" >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	"R_cullis_anomalous" DECIMAL CHECK ( "R_cullis_anomalous" >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	"R_cullis_centric" DECIMAL CHECK ( "R_cullis_centric" >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	d_res_high DECIMAL CHECK ( d_res_high >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	d_res_low DECIMAL CHECK ( d_res_low >= 0 ) ,
 	der_set_id TEXT ,
 	details TEXT ,
@@ -1742,15 +1742,15 @@ CREATE TABLE "phasing_MIR_der" (
 	pdbx_loc_centric DECIMAL ,
 	pdbx_power DECIMAL ,
 	pdbx_reflns INTEGER ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	power_acentric DECIMAL CHECK ( power_acentric >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	power_centric DECIMAL CHECK ( power_centric >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	reflns_acentric INTEGER CHECK ( reflns_acentric >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	reflns_anomalous INTEGER CHECK ( reflns_anomalous >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	reflns_centric INTEGER CHECK ( reflns_centric >= 0 ) ,
 	reflns_criteria TEXT ,
 -- ATTRIBUTE
@@ -1815,22 +1815,22 @@ CREATE TABLE atom_sites_alt (
 CREATE TABLE chemical_conn_atom (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	"NCA" INTEGER CHECK ( "NCA" >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	"NH" INTEGER CHECK ( "NH" >= 0 ) ,
--- xsd:restriction/xsd:maxInclusive: 8
--- xsd:restriction/xsd:minInclusive: -8
+-- xsd:restriction/xsd:maxInclusive="8"
+-- xsd:restriction/xsd:minInclusive="-8"
 	charge INTEGER CHECK ( charge >= -8 AND charge <= 8 ) ,
--- xsd:restriction/xsd:maxInclusive: 1
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:maxInclusive="1"
+-- xsd:restriction/xsd:minInclusive="0"
 	display_x DECIMAL CHECK ( display_x >= 0 AND display_x <= 1 ) ,
--- xsd:restriction/xsd:maxInclusive: 1
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:maxInclusive="1"
+-- xsd:restriction/xsd:minInclusive="0"
 	display_y DECIMAL CHECK ( display_y >= 0 AND display_y <= 1 ) ,
 	type_symbol TEXT ,
 -- ATTRIBUTE
--- xsd:restriction/xsd:minInclusive: 1
+-- xsd:restriction/xsd:minInclusive="1"
 	number INTEGER CHECK ( number >= 1 ) NOT NULL
 );
 
@@ -1856,7 +1856,7 @@ CREATE TABLE citation (
 	coordinate_linkage ENUM_citation_coordinate_linkage ,
 	country TEXT ,
 	"database_id_CSD" TEXT ,
--- xsd:restriction/xsd:minInclusive: 1
+-- xsd:restriction/xsd:minInclusive="1"
 	"database_id_Medline" INTEGER CHECK ( "database_id_Medline" >= 1 ) ,
 	details TEXT ,
 	journal_abbrev TEXT ,
@@ -1870,7 +1870,7 @@ CREATE TABLE citation (
 	page_first TEXT ,
 	page_last TEXT ,
 	"pdbx_database_id_DOI" TEXT ,
--- xsd:restriction/xsd:minInclusive: -1
+-- xsd:restriction/xsd:minInclusive="-1"
 	"pdbx_database_id_PubMed" INTEGER CHECK ( "pdbx_database_id_PubMed" >= -1 ) ,
 	title TEXT ,
 	unpublished_flag ENUM_citation_unpublished_flag ,
@@ -1896,7 +1896,7 @@ CREATE TABLE entity_poly_seq (
 -- ATTRIBUTE
 	mon_id TEXT NOT NULL ,
 -- ATTRIBUTE
--- xsd:restriction/xsd:minInclusive: 1
+-- xsd:restriction/xsd:minInclusive="1"
 	num INTEGER CHECK ( num >= 1 ) NOT NULL
 );
 
@@ -2232,7 +2232,7 @@ CREATE TABLE "database_PDB_rev" (
 CREATE TABLE diffrn_scale_group (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	"I_net" DECIMAL CHECK ( "I_net" >= 0 ) ,
 -- ATTRIBUTE
 	code TEXT NOT NULL
@@ -3016,20 +3016,20 @@ CREATE TYPE ENUM_atom_site_thermal_displace_type AS ENUM ( 'Uani', 'Uiso', 'Uovl
 CREATE TABLE atom_site (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	"B_equiv_geom_mean" DECIMAL CHECK ( "B_equiv_geom_mean" >= 0 ) ,
--- xsd:restriction/xsd:maxInclusive: 10
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:maxInclusive="10"
+-- xsd:restriction/xsd:minInclusive="0"
 	"U_equiv_geom_mean" DECIMAL CHECK ( "U_equiv_geom_mean" >= 0 AND "U_equiv_geom_mean" <= 10 ) ,
--- xsd:restriction/xsd:maxInclusive: 10
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:maxInclusive="10"
+-- xsd:restriction/xsd:minInclusive="0"
 	"U_iso_or_equiv" DECIMAL CHECK ( "U_iso_or_equiv" >= 0 AND "U_iso_or_equiv" <= 10 ) ,
 	"Wyckoff_symbol" TEXT ,
 	adp_type ENUM_atom_site_adp_type ,
--- xsd:restriction/xsd:minInclusive: 1
+-- xsd:restriction/xsd:minInclusive="1"
 	aniso_ratio DECIMAL CHECK ( aniso_ratio >= 1 ) ,
--- xsd:restriction/xsd:maxInclusive: 8
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:maxInclusive="8"
+-- xsd:restriction/xsd:minInclusive="0"
 	attached_hydrogens INTEGER CHECK ( attached_hydrogens >= 0 AND attached_hydrogens <= 8 ) ,
 	auth_asym_id TEXT ,
 	auth_atom_id TEXT ,
@@ -3060,7 +3060,7 @@ CREATE TABLE atom_site (
 	occupancy_esd DECIMAL ,
 	"pdbx_PDB_atom_name" TEXT ,
 	"pdbx_PDB_ins_code" TEXT ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	"pdbx_PDB_model_num" INTEGER CHECK ( "pdbx_PDB_model_num" > 0 ) ,
 	"pdbx_PDB_residue_name" TEXT ,
 	"pdbx_PDB_residue_no" TEXT ,
@@ -3071,8 +3071,8 @@ CREATE TABLE atom_site (
 	pdbx_auth_atom_name TEXT ,
 	pdbx_auth_comp_id TEXT ,
 	pdbx_auth_seq_id TEXT ,
--- xsd:restriction/xsd:maxInclusive: 8
--- xsd:restriction/xsd:minInclusive: -8
+-- xsd:restriction/xsd:maxInclusive="8"
+-- xsd:restriction/xsd:minInclusive="-8"
 	pdbx_formal_charge INTEGER CHECK ( pdbx_formal_charge >= -8 AND pdbx_formal_charge <= 8 ) ,
 	"pdbx_group_NDB" TEXT ,
 	pdbx_label_seq_num TEXT ,
@@ -3085,8 +3085,8 @@ CREATE TABLE atom_site (
 	refinement_flags_occupancy ENUM_atom_site_refinement_flags_occupancy ,
 	refinement_flags_posn ENUM_atom_site_refinement_flags_posn ,
 	restraints TEXT ,
--- xsd:restriction/xsd:maxInclusive: 192
--- xsd:restriction/xsd:minInclusive: 1
+-- xsd:restriction/xsd:maxInclusive="192"
+-- xsd:restriction/xsd:minInclusive="1"
 	symmetry_multiplicity INTEGER CHECK ( symmetry_multiplicity >= 1 AND symmetry_multiplicity <= 192 ) ,
 	thermal_displace_type ENUM_atom_site_thermal_displace_type ,
 	type_symbol TEXT ,
@@ -3458,7 +3458,7 @@ CREATE TABLE atom_site_anisotrop (
 	pdbx_label_ins_code TEXT ,
 	pdbx_label_seq_id INTEGER ,
 	pdbx_not_in_asym TEXT ,
--- xsd:restriction/xsd:minInclusive: 1
+-- xsd:restriction/xsd:minInclusive="1"
 	ratio DECIMAL CHECK ( ratio >= 1 ) ,
 	type_symbol TEXT ,
 -- ATTRIBUTE
@@ -3811,43 +3811,43 @@ CREATE TABLE volume_esd (
 CREATE TABLE cell (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
--- xsd:restriction/xsd:minInclusive: 1
+-- xsd:restriction/xsd:minInclusive="1"
 	"Z_PDB" INTEGER CHECK ( "Z_PDB" >= 1 ) ,
--- xsd:restriction/xsd:maxInclusive: 180
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:maxInclusive="180"
+-- xsd:restriction/xsd:minInclusive="0"
 	angle_alpha DECIMAL CHECK ( angle_alpha >= 0 AND angle_alpha <= 180 ) ,
--- xsd:restriction/xsd:maxInclusive: 180
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:maxInclusive="180"
+-- xsd:restriction/xsd:minInclusive="0"
 	angle_beta DECIMAL CHECK ( angle_beta >= 0 AND angle_beta <= 180 ) ,
--- xsd:restriction/xsd:maxInclusive: 180
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:maxInclusive="180"
+-- xsd:restriction/xsd:minInclusive="0"
 	angle_gamma DECIMAL CHECK ( angle_gamma >= 0 AND angle_gamma <= 180 ) ,
 	details TEXT ,
--- xsd:restriction/xsd:minInclusive: 1
+-- xsd:restriction/xsd:minInclusive="1"
 	"formula_units_Z" INTEGER CHECK ( "formula_units_Z" >= 1 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	length_a DECIMAL CHECK ( length_a >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	length_b DECIMAL CHECK ( length_b >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	length_c DECIMAL CHECK ( length_c >= 0 ) ,
 	pdbx_unique_axis TEXT ,
--- xsd:restriction/xsd:maxInclusive: 180
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:maxInclusive="180"
+-- xsd:restriction/xsd:minInclusive="0"
 	reciprocal_angle_alpha DECIMAL CHECK ( reciprocal_angle_alpha >= 0 AND reciprocal_angle_alpha <= 180 ) ,
--- xsd:restriction/xsd:maxInclusive: 180
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:maxInclusive="180"
+-- xsd:restriction/xsd:minInclusive="0"
 	reciprocal_angle_beta DECIMAL CHECK ( reciprocal_angle_beta >= 0 AND reciprocal_angle_beta <= 180 ) ,
--- xsd:restriction/xsd:maxInclusive: 180
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:maxInclusive="180"
+-- xsd:restriction/xsd:minInclusive="0"
 	reciprocal_angle_gamma DECIMAL CHECK ( reciprocal_angle_gamma >= 0 AND reciprocal_angle_gamma <= 180 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	reciprocal_length_a DECIMAL CHECK ( reciprocal_length_a >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	reciprocal_length_b DECIMAL CHECK ( reciprocal_length_b >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	reciprocal_length_c DECIMAL CHECK ( reciprocal_length_c >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	volume DECIMAL CHECK ( volume >= 0 ) ,
 -- ATTRIBUTE
 	entry_id TEXT NOT NULL
@@ -3906,15 +3906,15 @@ CREATE TABLE cell_measurement (
 	document_id TEXT ,
 	radiation TEXT ,
 	reflns_used INTEGER ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	temp DECIMAL CHECK ( temp >= 0 ) ,
--- xsd:restriction/xsd:maxInclusive: 90
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:maxInclusive="90"
+-- xsd:restriction/xsd:minInclusive="0"
 	theta_max DECIMAL CHECK ( theta_max >= 0 AND theta_max <= 90 ) ,
--- xsd:restriction/xsd:maxInclusive: 90
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:maxInclusive="90"
+-- xsd:restriction/xsd:minInclusive="0"
 	theta_min DECIMAL CHECK ( theta_min >= 0 AND theta_min <= 90 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	wavelength DECIMAL CHECK ( wavelength >= 0 ) ,
 -- ATTRIBUTE
 	entry_id TEXT NOT NULL
@@ -3929,8 +3929,8 @@ CREATE TABLE cell_measurement (
 CREATE TABLE cell_measurement_refln (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
--- xsd:restriction/xsd:maxInclusive: 90
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:maxInclusive="90"
+-- xsd:restriction/xsd:minInclusive="0"
 	theta DECIMAL CHECK ( theta >= 0 AND theta <= 90 ) ,
 -- ATTRIBUTE
 	index_h INTEGER NOT NULL ,
@@ -3949,15 +3949,15 @@ CREATE TABLE cell_measurement_refln (
 CREATE TABLE chem_comp_angle (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
--- xsd:restriction/xsd:maxInclusive: 180
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:maxInclusive="180"
+-- xsd:restriction/xsd:minInclusive="0"
 	value_angle DECIMAL CHECK ( value_angle >= 0 AND value_angle <= 180 ) ,
--- xsd:restriction/xsd:maxInclusive: 180
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:maxInclusive="180"
+-- xsd:restriction/xsd:minInclusive="0"
 	value_angle_esd DECIMAL CHECK ( value_angle_esd >= 0 AND value_angle_esd <= 180 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	value_dist DECIMAL CHECK ( value_dist >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	value_dist_esd DECIMAL CHECK ( value_dist_esd >= 0 ) ,
 -- ATTRIBUTE
 	atom_id_1 TEXT NOT NULL ,
@@ -4113,9 +4113,9 @@ CREATE TABLE chem_comp_bond (
 	pdbx_aromatic_flag ENUM_chem_comp_bond_pdbx_aromatic_flag ,
 	pdbx_ordinal INTEGER ,
 	pdbx_stereo_config ENUM_chem_comp_bond_pdbx_stereo_config ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	value_dist DECIMAL CHECK ( value_dist >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	value_dist_esd DECIMAL CHECK ( value_dist_esd >= 0 ) ,
 	value_order ENUM_chem_comp_bond_value_order ,
 -- ATTRIBUTE
@@ -4301,15 +4301,15 @@ CREATE TABLE chem_comp_tor (
 CREATE TABLE chem_comp_tor_value (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
--- xsd:restriction/xsd:maxInclusive: 180
--- xsd:restriction/xsd:minInclusive: -180
+-- xsd:restriction/xsd:maxInclusive="180"
+-- xsd:restriction/xsd:minInclusive="-180"
 	angle DECIMAL CHECK ( angle >= -180 AND angle <= 180 ) ,
--- xsd:restriction/xsd:maxInclusive: 180
--- xsd:restriction/xsd:minInclusive: -180
+-- xsd:restriction/xsd:maxInclusive="180"
+-- xsd:restriction/xsd:minInclusive="-180"
 	angle_esd DECIMAL CHECK ( angle_esd >= -180 AND angle_esd <= 180 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	dist DECIMAL CHECK ( dist >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	dist_esd DECIMAL CHECK ( dist_esd >= 0 ) ,
 -- ATTRIBUTE
 	comp_id TEXT NOT NULL ,
@@ -4335,15 +4335,15 @@ CREATE TABLE chem_link_angle (
 	atom_1_comp_id ENUM_chem_link_angle_atom_1_comp_id ,
 	atom_2_comp_id ENUM_chem_link_angle_atom_2_comp_id ,
 	atom_3_comp_id ENUM_chem_link_angle_atom_3_comp_id ,
--- xsd:restriction/xsd:maxInclusive: 180
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:maxInclusive="180"
+-- xsd:restriction/xsd:minInclusive="0"
 	value_angle DECIMAL CHECK ( value_angle >= 0 AND value_angle <= 180 ) ,
--- xsd:restriction/xsd:maxInclusive: 180
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:maxInclusive="180"
+-- xsd:restriction/xsd:minInclusive="0"
 	value_angle_esd DECIMAL CHECK ( value_angle_esd >= 0 AND value_angle_esd <= 180 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	value_dist DECIMAL CHECK ( value_dist >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	value_dist_esd DECIMAL CHECK ( value_dist_esd >= 0 ) ,
 -- ATTRIBUTE
 	atom_id_1 TEXT NOT NULL ,
@@ -4372,9 +4372,9 @@ CREATE TABLE chem_link_bond (
 	document_id TEXT ,
 	atom_1_comp_id ENUM_chem_link_bond_atom_1_comp_id ,
 	atom_2_comp_id ENUM_chem_link_bond_atom_2_comp_id ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	value_dist DECIMAL CHECK ( value_dist >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	value_dist_esd DECIMAL CHECK ( value_dist_esd >= 0 ) ,
 	value_order ENUM_chem_link_bond_value_order ,
 -- ATTRIBUTE
@@ -4505,15 +4505,15 @@ CREATE TABLE chem_link_tor (
 CREATE TABLE chem_link_tor_value (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
--- xsd:restriction/xsd:maxInclusive: 180
--- xsd:restriction/xsd:minInclusive: -180
+-- xsd:restriction/xsd:maxInclusive="180"
+-- xsd:restriction/xsd:minInclusive="-180"
 	angle DECIMAL CHECK ( angle >= -180 AND angle <= 180 ) ,
--- xsd:restriction/xsd:maxInclusive: 180
--- xsd:restriction/xsd:minInclusive: -180
+-- xsd:restriction/xsd:maxInclusive="180"
+-- xsd:restriction/xsd:minInclusive="-180"
 	angle_esd DECIMAL CHECK ( angle_esd >= -180 AND angle_esd <= 180 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	dist DECIMAL CHECK ( dist >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	dist_esd DECIMAL CHECK ( dist_esd >= 0 ) ,
 -- ATTRIBUTE
 	tor_id TEXT NOT NULL
@@ -4560,11 +4560,11 @@ CREATE TABLE chemical (
 	document_id TEXT ,
 	absolute_configuration ENUM_chemical_absolute_configuration ,
 	compound_source TEXT ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	melting_point DECIMAL CHECK ( melting_point >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	melting_point_gt DECIMAL CHECK ( melting_point_gt >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	melting_point_lt DECIMAL CHECK ( melting_point_lt >= 0 ) ,
 	name_common TEXT ,
 	name_mineral TEXT ,
@@ -4573,17 +4573,17 @@ CREATE TABLE chemical (
 	optical_rotation TEXT ,
 	properties_biological TEXT ,
 	properties_physical TEXT ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	temperature_decomposition DECIMAL CHECK ( temperature_decomposition >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	temperature_decomposition_gt DECIMAL CHECK ( temperature_decomposition_gt >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	temperature_decomposition_lt DECIMAL CHECK ( temperature_decomposition_lt >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	temperature_sublimation DECIMAL CHECK ( temperature_sublimation >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	temperature_sublimation_gt DECIMAL CHECK ( temperature_sublimation_gt >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	temperature_sublimation_lt DECIMAL CHECK ( temperature_sublimation_lt >= 0 ) ,
 -- ATTRIBUTE
 	entry_id TEXT NOT NULL
@@ -4621,9 +4621,9 @@ CREATE TABLE chemical_formula (
 	moiety TEXT ,
 	structural TEXT ,
 	sum TEXT ,
--- xsd:restriction/xsd:minInclusive: 1
+-- xsd:restriction/xsd:minInclusive="1"
 	weight DECIMAL CHECK ( weight >= 1 ) ,
--- xsd:restriction/xsd:minInclusive: 1
+-- xsd:restriction/xsd:minInclusive="1"
 	weight_meas DECIMAL CHECK ( weight_meas >= 1 ) ,
 -- ATTRIBUTE
 	entry_id TEXT NOT NULL
@@ -4868,7 +4868,7 @@ CREATE TABLE diffrn_attenuator (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
 	material TEXT ,
--- xsd:restriction/xsd:minInclusive: 1
+-- xsd:restriction/xsd:minInclusive="1"
 	scale DECIMAL CHECK ( scale >= 1 ) ,
 -- ATTRIBUTE
 	code TEXT NOT NULL
@@ -4897,15 +4897,15 @@ CREATE TABLE pdbx_collection_time_total (
 CREATE TABLE diffrn_detector (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	area_resol_mean DECIMAL CHECK ( area_resol_mean >= 0 ) ,
 	details TEXT ,
 	detector TEXT ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	dtime DECIMAL CHECK ( dtime >= 0 ) ,
 	pdbx_collection_date TEXT ,
 	pdbx_frames_total INTEGER ,
--- xsd:restriction/xsd:minInclusive: 0.0
+-- xsd:restriction/xsd:minInclusive="0.0"
 	pdbx_frequency DECIMAL CHECK ( pdbx_frequency > 0.0 ) ,
 	type TEXT ,
 -- ATTRIBUTE
@@ -5076,9 +5076,9 @@ CREATE TABLE diffrn_radiation (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
 	collimation TEXT ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	filter_edge DECIMAL CHECK ( filter_edge >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	inhomogeneity DECIMAL CHECK ( inhomogeneity >= 0 ) ,
 	monochromator TEXT ,
 	pdbx_analyzer TEXT ,
@@ -5087,9 +5087,9 @@ CREATE TABLE diffrn_radiation (
 	pdbx_scattering_type ENUM_diffrn_radiation_pdbx_scattering_type ,
 	pdbx_wavelength TEXT ,
 	pdbx_wavelength_list TEXT ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	polarisn_norm DECIMAL CHECK ( polarisn_norm >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	polarisn_ratio DECIMAL CHECK ( polarisn_ratio >= 0 ) ,
 	probe ENUM_diffrn_radiation_probe ,
 	type TEXT ,
@@ -5108,10 +5108,10 @@ CREATE TABLE diffrn_radiation (
 CREATE TABLE diffrn_radiation_wavelength (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	wavelength DECIMAL CHECK ( wavelength >= 0 ) ,
--- xsd:restriction/xsd:maxInclusive: 1
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:maxInclusive="1"
+-- xsd:restriction/xsd:minInclusive="0"
 	wt DECIMAL CHECK ( wt >= 0 AND wt <= 1 ) ,
 -- ATTRIBUTE
 	id TEXT NOT NULL
@@ -5160,43 +5160,43 @@ CREATE TABLE diffrn_refln (
 	document_id TEXT ,
 	attenuator_code TEXT ,
 	class_code TEXT ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	counts_bg_1 INTEGER CHECK ( counts_bg_1 >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	counts_bg_2 INTEGER CHECK ( counts_bg_2 >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	counts_net INTEGER CHECK ( counts_net >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	counts_peak INTEGER CHECK ( counts_peak >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	counts_total INTEGER CHECK ( counts_total >= 0 ) ,
--- xsd:restriction/xsd:maxInclusive: 90
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:maxInclusive="90"
+-- xsd:restriction/xsd:minInclusive="0"
 	detect_slit_horiz DECIMAL CHECK ( detect_slit_horiz >= 0 AND detect_slit_horiz <= 90 ) ,
--- xsd:restriction/xsd:maxInclusive: 90
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:maxInclusive="90"
+-- xsd:restriction/xsd:minInclusive="0"
 	detect_slit_vert DECIMAL CHECK ( detect_slit_vert >= 0 AND detect_slit_vert <= 90 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	elapsed_time DECIMAL CHECK ( elapsed_time >= 0 ) ,
 	index_h INTEGER ,
 	index_k INTEGER ,
 	index_l INTEGER ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	intensity_net DECIMAL CHECK ( intensity_net >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	intensity_sigma DECIMAL CHECK ( intensity_sigma >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	intensity_u DECIMAL CHECK ( intensity_u >= 0 ) ,
 	scale_group_code TEXT ,
 	scan_mode ENUM_diffrn_refln_scan_mode ,
 	scan_mode_backgd ENUM_diffrn_refln_scan_mode_backgd ,
--- xsd:restriction/xsd:maxInclusive: 90
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:maxInclusive="90"
+-- xsd:restriction/xsd:minInclusive="0"
 	scan_width DECIMAL CHECK ( scan_width >= 0 AND scan_width <= 90 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	sint_over_lambda DECIMAL CHECK ( sint_over_lambda >= 0 ) ,
 	standard_code TEXT ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	wavelength DECIMAL CHECK ( wavelength >= 0 ) ,
 	wavelength_id TEXT ,
 -- ATTRIBUTE
@@ -5214,11 +5214,11 @@ CREATE TABLE diffrn_refln (
 CREATE TABLE diffrn_reflns (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	"av_R_equivalents" DECIMAL CHECK ( "av_R_equivalents" >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	"av_sigmaI_over_netI" DECIMAL CHECK ( "av_sigmaI_over_netI" >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	"av_unetI_over_netI" DECIMAL CHECK ( "av_unetI_over_netI" >= 0 ) ,
 	limit_h_max INTEGER ,
 	limit_h_min INTEGER ,
@@ -5226,7 +5226,7 @@ CREATE TABLE diffrn_reflns (
 	limit_k_min INTEGER ,
 	limit_l_max INTEGER ,
 	limit_l_min INTEGER ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	number INTEGER CHECK ( number >= 0 ) ,
 	"pdbx_Rmerge_I_obs" DECIMAL ,
 	"pdbx_Rsym_value" DECIMAL ,
@@ -5239,11 +5239,11 @@ CREATE TABLE diffrn_reflns (
 	pdbx_redundancy DECIMAL ,
 	pdbx_rejects INTEGER ,
 	reduction_process TEXT ,
--- xsd:restriction/xsd:maxInclusive: 90
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:maxInclusive="90"
+-- xsd:restriction/xsd:minInclusive="0"
 	theta_max DECIMAL CHECK ( theta_max >= 0 AND theta_max <= 90 ) ,
--- xsd:restriction/xsd:maxInclusive: 90
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:maxInclusive="90"
+-- xsd:restriction/xsd:minInclusive="0"
 	theta_min DECIMAL CHECK ( theta_min >= 0 AND theta_min <= 90 ) ,
 	transf_matrix11 DECIMAL ,
 	transf_matrix12 DECIMAL ,
@@ -5267,18 +5267,18 @@ CREATE TABLE diffrn_reflns (
 CREATE TABLE diffrn_reflns_class (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	"av_R_eq" DECIMAL CHECK ( "av_R_eq" >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	"av_sgI_over_I" DECIMAL CHECK ( "av_sgI_over_I" >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	"av_uI_over_I" DECIMAL CHECK ( "av_uI_over_I" >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	d_res_high DECIMAL CHECK ( d_res_high >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	d_res_low DECIMAL CHECK ( d_res_low >= 0 ) ,
 	description TEXT ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	number INTEGER CHECK ( number >= 0 ) ,
 -- ATTRIBUTE
 	code TEXT NOT NULL
@@ -5346,8 +5346,8 @@ CREATE TABLE diffrn_source (
 	pdbx_wavelength_list TEXT ,
 	size TEXT ,
 	source TEXT ,
--- xsd:restriction/xsd:maxInclusive: 90
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:maxInclusive="90"
+-- xsd:restriction/xsd:minInclusive="0"
 	"take-off_angle" DECIMAL CHECK ( "take-off_angle" >= 0 AND "take-off_angle" <= 90 ) ,
 	target ENUM_diffrn_source_target ,
 	type TEXT ,
@@ -5382,17 +5382,17 @@ CREATE TABLE diffrn_standard_refln (
 CREATE TABLE diffrn_standards (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
--- xsd:restriction/xsd:maxInclusive: 100
+-- xsd:restriction/xsd:maxInclusive="100"
 	decay_ DECIMAL CHECK ( decay_ <= 100 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	interval_count INTEGER CHECK ( interval_count >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	interval_time DECIMAL CHECK ( interval_time >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	number INTEGER CHECK ( number >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	scale_sigma DECIMAL CHECK ( scale_sigma >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	scale_u DECIMAL CHECK ( scale_u >= 0 ) ,
 -- ATTRIBUTE
 	diffrn_id TEXT NOT NULL
@@ -5409,17 +5409,17 @@ CREATE TYPE ENUM_em_2d_crystal_entity_space_group_name_H_M AS ENUM ( 'P 1', 'P 2
 CREATE TABLE em_2d_crystal_entity (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
--- xsd:restriction/xsd:maxInclusive: 180.0
--- xsd:restriction/xsd:minInclusive: 0.0
+-- xsd:restriction/xsd:maxInclusive="180.0"
+-- xsd:restriction/xsd:minInclusive="0.0"
 	angle_gamma DECIMAL CHECK ( angle_gamma > 0.0 AND angle_gamma < 180.0 ) ,
--- xsd:restriction/xsd:minInclusive: 0.0
+-- xsd:restriction/xsd:minInclusive="0.0"
 	c_sampling_length DECIMAL CHECK ( c_sampling_length > 0.0 ) ,
 	entity_assembly_id TEXT ,
--- xsd:restriction/xsd:minInclusive: 0.0
+-- xsd:restriction/xsd:minInclusive="0.0"
 	length_a DECIMAL CHECK ( length_a > 0.0 ) ,
--- xsd:restriction/xsd:minInclusive: 0.0
+-- xsd:restriction/xsd:minInclusive="0.0"
 	length_b DECIMAL CHECK ( length_b > 0.0 ) ,
--- xsd:restriction/xsd:minInclusive: 0.0
+-- xsd:restriction/xsd:minInclusive="0.0"
 	length_c DECIMAL CHECK ( length_c > 0.0 ) ,
 	"space_group_name_H-M" ENUM_em_2d_crystal_entity_space_group_name_H_M ,
 -- ATTRIBUTE
@@ -5456,24 +5456,24 @@ CREATE TABLE em_2d_projection_selection (
 CREATE TABLE em_3d_crystal_entity (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
--- xsd:restriction/xsd:maxInclusive: 180.0
--- xsd:restriction/xsd:minInclusive: 0.0
+-- xsd:restriction/xsd:maxInclusive="180.0"
+-- xsd:restriction/xsd:minInclusive="0.0"
 	angle_alpha DECIMAL CHECK ( angle_alpha > 0.0 AND angle_alpha < 180.0 ) ,
--- xsd:restriction/xsd:maxInclusive: 180.0
--- xsd:restriction/xsd:minInclusive: 0.0
+-- xsd:restriction/xsd:maxInclusive="180.0"
+-- xsd:restriction/xsd:minInclusive="0.0"
 	angle_beta DECIMAL CHECK ( angle_beta > 0.0 AND angle_beta < 180.0 ) ,
--- xsd:restriction/xsd:maxInclusive: 180.0
--- xsd:restriction/xsd:minInclusive: 0.0
+-- xsd:restriction/xsd:maxInclusive="180.0"
+-- xsd:restriction/xsd:minInclusive="0.0"
 	angle_gamma DECIMAL CHECK ( angle_gamma > 0.0 AND angle_gamma < 180.0 ) ,
--- xsd:restriction/xsd:minInclusive: 0.0
+-- xsd:restriction/xsd:minInclusive="0.0"
 	length_a DECIMAL CHECK ( length_a > 0.0 ) ,
--- xsd:restriction/xsd:minInclusive: 0.0
+-- xsd:restriction/xsd:minInclusive="0.0"
 	length_b DECIMAL CHECK ( length_b > 0.0 ) ,
--- xsd:restriction/xsd:minInclusive: 0.0
+-- xsd:restriction/xsd:minInclusive="0.0"
 	length_c DECIMAL CHECK ( length_c > 0.0 ) ,
 	space_group_name TEXT ,
--- xsd:restriction/xsd:maxInclusive: 230
--- xsd:restriction/xsd:minInclusive: 1
+-- xsd:restriction/xsd:maxInclusive="230"
+-- xsd:restriction/xsd:minInclusive="1"
 	space_group_num INTEGER CHECK ( space_group_num >= 1 AND space_group_num <= 230 ) ,
 -- ATTRIBUTE
 	id TEXT NOT NULL ,
@@ -5566,9 +5566,9 @@ CREATE TABLE em_3d_reconstruction (
 	magnification_calibration TEXT ,
 	method TEXT ,
 	nominal_pixel_size DECIMAL ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	num_class_averages INTEGER CHECK ( num_class_averages > 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	num_particles INTEGER CHECK ( num_particles > 0 ) ,
 	refinement_type ENUM_em_3d_reconstruction_refinement_type ,
 	resolution_method TEXT ,
@@ -5702,7 +5702,7 @@ CREATE TABLE em_buffer (
 CREATE TABLE em_buffer_component (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
--- xsd:restriction/xsd:minInclusive: 0.0
+-- xsd:restriction/xsd:minInclusive="0.0"
 	concentration DECIMAL CHECK ( concentration > 0.0 ) ,
 	concentration_units TEXT ,
 	formula TEXT ,
@@ -5742,7 +5742,7 @@ CREATE TABLE em_crystal_formation (
 	details TEXT ,
 	instrument TEXT ,
 	lipid_mixture TEXT ,
--- xsd:restriction/xsd:minInclusive: 0.0
+-- xsd:restriction/xsd:minInclusive="0.0"
 	lipid_protein_ratio DECIMAL CHECK ( lipid_protein_ratio > 0.0 ) ,
 	specimen_id TEXT ,
 	time TEXT ,
@@ -5899,7 +5899,7 @@ CREATE TABLE em_detector (
 CREATE TABLE em_diffraction (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
--- xsd:restriction/xsd:minInclusive: 0.0
+-- xsd:restriction/xsd:minInclusive="0.0"
 	camera_length DECIMAL CHECK ( camera_length > 0.0 ) ,
 	imaging_id TEXT ,
 	tilt_angle_list TEXT ,
@@ -5917,18 +5917,18 @@ CREATE TABLE em_diffraction_shell (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
 	em_diffraction_stats_id TEXT ,
--- xsd:restriction/xsd:maxInclusive: 100
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:maxInclusive="100"
+-- xsd:restriction/xsd:minInclusive="0"
 	fourier_space_coverage DECIMAL CHECK ( fourier_space_coverage > 0 AND fourier_space_coverage <= 100 ) ,
--- xsd:restriction/xsd:minInclusive: 0.0
+-- xsd:restriction/xsd:minInclusive="0.0"
 	high_resolution DECIMAL CHECK ( high_resolution > 0.0 ) ,
--- xsd:restriction/xsd:minInclusive: 0.0
+-- xsd:restriction/xsd:minInclusive="0.0"
 	low_resolution DECIMAL CHECK ( low_resolution > 0.0 ) ,
--- xsd:restriction/xsd:minInclusive: 0.0
+-- xsd:restriction/xsd:minInclusive="0.0"
 	multiplicity DECIMAL CHECK ( multiplicity > 0.0 ) ,
 	num_structure_factors TEXT ,
--- xsd:restriction/xsd:maxInclusive: 180.0
--- xsd:restriction/xsd:minInclusive: 0.0
+-- xsd:restriction/xsd:maxInclusive="180.0"
+-- xsd:restriction/xsd:minInclusive="0.0"
 	phase_residual DECIMAL CHECK ( phase_residual > 0.0 AND phase_residual < 180.0 ) ,
 -- ATTRIBUTE
 	id TEXT NOT NULL
@@ -5944,26 +5944,26 @@ CREATE TABLE em_diffraction_stats (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
 	details TEXT ,
--- xsd:restriction/xsd:maxInclusive: 100
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:maxInclusive="100"
+-- xsd:restriction/xsd:minInclusive="0"
 	fourier_space_coverage DECIMAL CHECK ( fourier_space_coverage > 0 AND fourier_space_coverage <= 100 ) ,
--- xsd:restriction/xsd:minInclusive: 0.0
+-- xsd:restriction/xsd:minInclusive="0.0"
 	high_resolution DECIMAL CHECK ( high_resolution > 0.0 ) ,
 	image_processing_id TEXT ,
 	num_intensities_measured TEXT ,
 	num_structure_factors TEXT ,
--- xsd:restriction/xsd:maxInclusive: 180
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:maxInclusive="180"
+-- xsd:restriction/xsd:minInclusive="0"
 	overall_phase_error DECIMAL CHECK ( overall_phase_error >= 0 AND overall_phase_error < 180 ) ,
--- xsd:restriction/xsd:maxInclusive: 180.0
--- xsd:restriction/xsd:minInclusive: 0.0
+-- xsd:restriction/xsd:maxInclusive="180.0"
+-- xsd:restriction/xsd:minInclusive="0.0"
 	overall_phase_residual DECIMAL CHECK ( overall_phase_residual > 0.0 AND overall_phase_residual < 180.0 ) ,
 	phase_error_rejection_criteria TEXT ,
--- xsd:restriction/xsd:maxInclusive: 100
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:maxInclusive="100"
+-- xsd:restriction/xsd:minInclusive="0"
 	r_merge DECIMAL CHECK ( r_merge > 0 AND r_merge <= 100 ) ,
--- xsd:restriction/xsd:maxInclusive: 100
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:maxInclusive="100"
+-- xsd:restriction/xsd:minInclusive="0"
 	r_sym DECIMAL CHECK ( r_sym > 0 AND r_sym <= 100 ) ,
 -- ATTRIBUTE
 	id TEXT NOT NULL
@@ -6001,7 +6001,7 @@ CREATE TABLE em_entity_assembly_molwt (
 	experimental_flag ENUM_em_entity_assembly_molwt_experimental_flag ,
 	method TEXT ,
 	units ENUM_em_entity_assembly_molwt_units ,
--- xsd:restriction/xsd:minInclusive: 0.0
+-- xsd:restriction/xsd:minInclusive="0.0"
 	value DECIMAL CHECK ( value > 0.0 ) ,
 -- ATTRIBUTE
 	entity_assembly_id TEXT NOT NULL ,
@@ -6068,7 +6068,7 @@ CREATE TABLE em_euler_angle_assignment (
 	details TEXT ,
 	image_processing_id TEXT ,
 	"order" ENUM_em_euler_angle_assignment_order ,
--- xsd:restriction/xsd:minInclusive: 0.0
+-- xsd:restriction/xsd:minInclusive="0.0"
 	proj_matching_angular_sampling DECIMAL CHECK ( proj_matching_angular_sampling > 0.0 ) ,
 	proj_matching_merit_function TEXT ,
 	proj_matching_num_projections TEXT ,
@@ -6108,8 +6108,8 @@ CREATE TABLE em_experiment (
 CREATE TABLE em_fiducial_markers (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
--- xsd:restriction/xsd:maxInclusive: 100
--- xsd:restriction/xsd:minInclusive: 0.1
+-- xsd:restriction/xsd:maxInclusive="100"
+-- xsd:restriction/xsd:minInclusive="0.1"
 	diameter DECIMAL CHECK ( diameter >= 0.1 AND diameter <= 100 ) ,
 	em_tomography_specimen_id TEXT ,
 	manufacturer TEXT ,
@@ -6204,11 +6204,11 @@ CREATE TABLE initial_thickness (
 CREATE TABLE em_focused_ion_beam (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
--- xsd:restriction/xsd:maxInclusive: 20
--- xsd:restriction/xsd:minInclusive: 0.001
+-- xsd:restriction/xsd:maxInclusive="20"
+-- xsd:restriction/xsd:minInclusive="0.001"
 	current DECIMAL CHECK ( current >= 0.001 AND current <= 20 ) ,
 	details TEXT ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	dose_rate INTEGER CHECK ( dose_rate > 0 ) ,
 	em_tomography_specimen_id TEXT ,
 	instrument TEXT ,
@@ -6258,7 +6258,7 @@ CREATE TABLE em_grid_pretreatment (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
 	atmosphere TEXT ,
--- xsd:restriction/xsd:minInclusive: 0.0
+-- xsd:restriction/xsd:minInclusive="0.0"
 	pressure DECIMAL CHECK ( pressure > 0.0 ) ,
 	sample_support_id TEXT ,
 	type ENUM_em_grid_pretreatment_type ,
@@ -6277,10 +6277,10 @@ CREATE TYPE ENUM_em_helical_entity_dyad AS ENUM ( 'YES', 'NO' );
 CREATE TABLE em_helical_entity (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
--- xsd:restriction/xsd:maxInclusive: 180
--- xsd:restriction/xsd:minInclusive: -180
+-- xsd:restriction/xsd:maxInclusive="180"
+-- xsd:restriction/xsd:minInclusive="-180"
 	angular_rotation_per_subunit DECIMAL CHECK ( angular_rotation_per_subunit > -180 AND angular_rotation_per_subunit <= 180 ) ,
--- xsd:restriction/xsd:minInclusive: 0.0
+-- xsd:restriction/xsd:minInclusive="0.0"
 	axial_rise_per_subunit DECIMAL CHECK ( axial_rise_per_subunit > 0.0 ) ,
 	axial_symmetry TEXT ,
 	details TEXT ,
@@ -6336,10 +6336,10 @@ CREATE TYPE ENUM_em_image_recording_detector_mode AS ENUM ( 'COUNTING', 'INTEGRA
 CREATE TABLE em_image_recording (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
--- xsd:restriction/xsd:maxInclusive: 240.0
--- xsd:restriction/xsd:minInclusive: 0.0
+-- xsd:restriction/xsd:maxInclusive="240.0"
+-- xsd:restriction/xsd:minInclusive="0.0"
 	average_exposure_time DECIMAL CHECK ( average_exposure_time > 0.0 AND average_exposure_time < 240.0 ) ,
--- xsd:restriction/xsd:minInclusive: 0.0
+-- xsd:restriction/xsd:minInclusive="0.0"
 	avg_electron_dose_per_image DECIMAL CHECK ( avg_electron_dose_per_image > 0.0 ) ,
 	details TEXT ,
 	detector_mode ENUM_em_image_recording_detector_mode ,
@@ -6570,18 +6570,18 @@ CREATE TYPE ENUM_em_imaging_specimen_holder_model AS ENUM ( 'GATAN 626 SINGLE TI
 CREATE TABLE em_imaging (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
--- xsd:restriction/xsd:maxInclusive: 400
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:maxInclusive="400"
+-- xsd:restriction/xsd:minInclusive="0"
 	accelerating_voltage INTEGER CHECK ( accelerating_voltage >= 0 AND accelerating_voltage <= 400 ) ,
 	alignment_procedure ENUM_em_imaging_alignment_procedure ,
 	astigmatism TEXT ,
--- xsd:restriction/xsd:maxInclusive: 150
--- xsd:restriction/xsd:minInclusive: 1
+-- xsd:restriction/xsd:maxInclusive="150"
+-- xsd:restriction/xsd:minInclusive="1"
 	c2_aperture_diameter DECIMAL CHECK ( c2_aperture_diameter >= 1 AND c2_aperture_diameter <= 150 ) ,
--- xsd:restriction/xsd:maxInclusive: 30000
--- xsd:restriction/xsd:minInclusive: -30000
+-- xsd:restriction/xsd:maxInclusive="30000"
+-- xsd:restriction/xsd:minInclusive="-30000"
 	calibrated_defocus_max DECIMAL CHECK ( calibrated_defocus_max >= -30000 AND calibrated_defocus_max <= 30000 ) ,
--- xsd:restriction/xsd:minInclusive: 1
+-- xsd:restriction/xsd:minInclusive="1"
 	calibrated_magnification INTEGER CHECK ( calibrated_magnification > 1 ) ,
 	citation_id TEXT ,
 	cryogen ENUM_em_imaging_cryogen ,
@@ -6595,11 +6595,11 @@ CREATE TABLE em_imaging (
 	microscope_id TEXT ,
 	microscope_model ENUM_em_imaging_microscope_model ,
 	mode ENUM_em_imaging_mode ,
--- xsd:restriction/xsd:maxInclusive: 20
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:maxInclusive="20"
+-- xsd:restriction/xsd:minInclusive="0"
 	nominal_cs DECIMAL CHECK ( nominal_cs >= 0 AND nominal_cs <= 20 ) ,
--- xsd:restriction/xsd:maxInclusive: 500000
--- xsd:restriction/xsd:minInclusive: 1000
+-- xsd:restriction/xsd:maxInclusive="500000"
+-- xsd:restriction/xsd:minInclusive="1000"
 	nominal_magnification INTEGER CHECK ( nominal_magnification > 1000 AND nominal_magnification < 500000 ) ,
 	sample_support_id TEXT ,
 	scans_id TEXT ,
@@ -6651,8 +6651,8 @@ CREATE TABLE em_imaging_optics (
 	document_id TEXT ,
 	chr_aberration_corrector TEXT ,
 	energyfilter_name TEXT ,
--- xsd:restriction/xsd:maxInclusive: 1000
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:maxInclusive="1000"
+-- xsd:restriction/xsd:minInclusive="0"
 	energyfilter_slit_width DECIMAL CHECK ( energyfilter_slit_width >= 0 AND energyfilter_slit_width <= 1000 ) ,
 	phase_plate TEXT ,
 	sph_aberration_corrector TEXT ,
@@ -6739,20 +6739,20 @@ CREATE TABLE em_map (
 	axis_order_fast ENUM_em_map_axis_order_fast ,
 	axis_order_medium ENUM_em_map_axis_order_medium ,
 	axis_order_slow ENUM_em_map_axis_order_slow ,
--- xsd:restriction/xsd:minInclusive: 0.0
+-- xsd:restriction/xsd:minInclusive="0.0"
 	cell_a DECIMAL CHECK ( cell_a > 0.0 ) ,
--- xsd:restriction/xsd:maxInclusive: 180.0
--- xsd:restriction/xsd:minInclusive: 0.0
+-- xsd:restriction/xsd:maxInclusive="180.0"
+-- xsd:restriction/xsd:minInclusive="0.0"
 	cell_alpha DECIMAL CHECK ( cell_alpha > 0.0 AND cell_alpha < 180.0 ) ,
--- xsd:restriction/xsd:minInclusive: 0.0
+-- xsd:restriction/xsd:minInclusive="0.0"
 	cell_b DECIMAL CHECK ( cell_b > 0.0 ) ,
--- xsd:restriction/xsd:maxInclusive: 180.0
--- xsd:restriction/xsd:minInclusive: 0.0
+-- xsd:restriction/xsd:maxInclusive="180.0"
+-- xsd:restriction/xsd:minInclusive="0.0"
 	cell_beta DECIMAL CHECK ( cell_beta > 0.0 AND cell_beta < 180.0 ) ,
--- xsd:restriction/xsd:minInclusive: 0.0
+-- xsd:restriction/xsd:minInclusive="0.0"
 	cell_c DECIMAL CHECK ( cell_c > 0.0 ) ,
--- xsd:restriction/xsd:maxInclusive: 180.0
--- xsd:restriction/xsd:minInclusive: 0.0
+-- xsd:restriction/xsd:maxInclusive="180.0"
+-- xsd:restriction/xsd:minInclusive="0.0"
 	cell_gamma DECIMAL CHECK ( cell_gamma > 0.0 AND cell_gamma < 180.0 ) ,
 	contour_level DECIMAL ,
 	contour_level_source ENUM_em_map_contour_level_source ,
@@ -6771,11 +6771,11 @@ CREATE TABLE em_map (
 	origin_row INTEGER ,
 	origin_sec INTEGER ,
 	partition TEXT ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	pixel_spacing_x DECIMAL CHECK ( pixel_spacing_x >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	pixel_spacing_y DECIMAL CHECK ( pixel_spacing_y >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	pixel_spacing_z DECIMAL CHECK ( pixel_spacing_z >= 0 ) ,
 	size_kb TEXT ,
 	spacing_x TEXT ,
@@ -6810,11 +6810,11 @@ CREATE TABLE em_map_depositor_info (
 	contour_level DECIMAL ,
 	experiment_id TEXT ,
 	map_type ENUM_em_map_depositor_info_map_type ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	pixel_spacing_x DECIMAL CHECK ( pixel_spacing_x >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	pixel_spacing_y DECIMAL CHECK ( pixel_spacing_y >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	pixel_spacing_z DECIMAL CHECK ( pixel_spacing_z >= 0 ) ,
 	upload_file_name TEXT ,
 	upload_format ENUM_em_map_depositor_info_upload_format ,
@@ -6837,11 +6837,11 @@ CREATE TABLE em_mask_depositor_info (
 	document_id TEXT ,
 	annotation_details TEXT ,
 	contour_level DECIMAL ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	pixel_spacing_x DECIMAL CHECK ( pixel_spacing_x >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	pixel_spacing_y DECIMAL CHECK ( pixel_spacing_y >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	pixel_spacing_z DECIMAL CHECK ( pixel_spacing_z >= 0 ) ,
 	upload_file_name TEXT ,
 	upload_format ENUM_em_mask_depositor_info_upload_format ,
@@ -6936,7 +6936,7 @@ CREATE TABLE em_sample_support (
 	details TEXT ,
 	film_material ENUM_em_sample_support_film_material ,
 	grid_material ENUM_em_sample_support_grid_material ,
--- xsd:restriction/xsd:minInclusive: 1
+-- xsd:restriction/xsd:minInclusive="1"
 	grid_mesh_size INTEGER CHECK ( grid_mesh_size > 1 ) ,
 	grid_type TEXT ,
 	method TEXT ,
@@ -6956,12 +6956,12 @@ CREATE TABLE em_sample_support (
 CREATE TABLE em_shadowing (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
--- xsd:restriction/xsd:maxInclusive: 90.0
--- xsd:restriction/xsd:minInclusive: 0.0
+-- xsd:restriction/xsd:maxInclusive="90.0"
+-- xsd:restriction/xsd:minInclusive="0.0"
 	angle DECIMAL CHECK ( angle > 0.0 AND angle < 90.0 ) ,
 	details TEXT ,
 	material TEXT ,
--- xsd:restriction/xsd:minInclusive: 0.0
+-- xsd:restriction/xsd:minInclusive="0.0"
 	thickness DECIMAL CHECK ( thickness > 0.0 ) ,
 -- ATTRIBUTE
 	id TEXT NOT NULL ,
@@ -7028,7 +7028,7 @@ CREATE TYPE ENUM_em_specimen_vitrification_applied AS ENUM ( 'YES', 'NO' );
 CREATE TABLE em_specimen (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
--- xsd:restriction/xsd:minInclusive: 0.0
+-- xsd:restriction/xsd:minInclusive="0.0"
 	concentration DECIMAL CHECK ( concentration > 0.0 ) ,
 	details TEXT ,
 	embedding_applied ENUM_em_specimen_embedding_applied ,
@@ -7074,17 +7074,17 @@ CREATE TABLE em_start_model (
 	details TEXT ,
 	emdb_id TEXT ,
 	insilico_model TEXT ,
--- xsd:restriction/xsd:maxInclusive: 180.0
--- xsd:restriction/xsd:minInclusive: -180.0
+-- xsd:restriction/xsd:maxInclusive="180.0"
+-- xsd:restriction/xsd:minInclusive="-180.0"
 	orthogonal_tilt_angle1 DECIMAL CHECK ( orthogonal_tilt_angle1 > -180.0 AND orthogonal_tilt_angle1 < 180.0 ) ,
--- xsd:restriction/xsd:maxInclusive: 180.0
--- xsd:restriction/xsd:minInclusive: -180.0
+-- xsd:restriction/xsd:maxInclusive="180.0"
+-- xsd:restriction/xsd:minInclusive="-180.0"
 	orthogonal_tilt_angle2 DECIMAL CHECK ( orthogonal_tilt_angle2 > -180.0 AND orthogonal_tilt_angle2 < 180.0 ) ,
 	orthogonal_tilt_num_images TEXT ,
 	other TEXT ,
 	pdb_id TEXT ,
--- xsd:restriction/xsd:maxInclusive: 180
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:maxInclusive="180"
+-- xsd:restriction/xsd:minInclusive="0"
 	random_conical_tilt_angle DECIMAL CHECK ( random_conical_tilt_angle >= 0 AND random_conical_tilt_angle <= 180 ) ,
 	random_conical_tilt_num_images TEXT ,
 	type ENUM_em_start_model_type ,
@@ -7158,7 +7158,7 @@ CREATE TABLE em_support_film (
 	document_id TEXT ,
 	material ENUM_em_support_film_material ,
 	sample_support_id TEXT ,
--- xsd:restriction/xsd:minInclusive: 0.0
+-- xsd:restriction/xsd:minInclusive="0.0"
 	thickness DECIMAL CHECK ( thickness > 0.0 ) ,
 	topology ENUM_em_support_film_topology ,
 -- ATTRIBUTE
@@ -7174,24 +7174,24 @@ CREATE TABLE em_support_film (
 CREATE TABLE em_tomography (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
--- xsd:restriction/xsd:minInclusive: 0.0
+-- xsd:restriction/xsd:minInclusive="0.0"
 	axis1_angle_increment DECIMAL CHECK ( axis1_angle_increment > 0.0 ) ,
--- xsd:restriction/xsd:maxInclusive: 90
--- xsd:restriction/xsd:minInclusive: -90
+-- xsd:restriction/xsd:maxInclusive="90"
+-- xsd:restriction/xsd:minInclusive="-90"
 	axis1_max_angle DECIMAL CHECK ( axis1_max_angle >= -90 AND axis1_max_angle <= 90 ) ,
--- xsd:restriction/xsd:maxInclusive: 90
--- xsd:restriction/xsd:minInclusive: -90
+-- xsd:restriction/xsd:maxInclusive="90"
+-- xsd:restriction/xsd:minInclusive="-90"
 	axis1_min_angle DECIMAL CHECK ( axis1_min_angle >= -90 AND axis1_min_angle <= 90 ) ,
--- xsd:restriction/xsd:minInclusive: 0.0
+-- xsd:restriction/xsd:minInclusive="0.0"
 	axis2_angle_increment DECIMAL CHECK ( axis2_angle_increment > 0.0 ) ,
--- xsd:restriction/xsd:maxInclusive: 90
--- xsd:restriction/xsd:minInclusive: -90
+-- xsd:restriction/xsd:maxInclusive="90"
+-- xsd:restriction/xsd:minInclusive="-90"
 	axis2_max_angle DECIMAL CHECK ( axis2_max_angle >= -90 AND axis2_max_angle <= 90 ) ,
--- xsd:restriction/xsd:maxInclusive: 90
--- xsd:restriction/xsd:minInclusive: -90
+-- xsd:restriction/xsd:maxInclusive="90"
+-- xsd:restriction/xsd:minInclusive="-90"
 	axis2_min_angle DECIMAL CHECK ( axis2_min_angle >= -90 AND axis2_min_angle <= 90 ) ,
--- xsd:restriction/xsd:maxInclusive: 180.0
--- xsd:restriction/xsd:minInclusive: 0.0
+-- xsd:restriction/xsd:maxInclusive="180.0"
+-- xsd:restriction/xsd:minInclusive="0.0"
 	dual_tilt_axis_rotation DECIMAL CHECK ( dual_tilt_axis_rotation > 0.0 AND dual_tilt_axis_rotation < 180.0 ) ,
 -- ATTRIBUTE
 	id TEXT NOT NULL ,
@@ -7274,7 +7274,7 @@ CREATE TABLE em_virus_natural_host (
 CREATE TABLE em_virus_shell (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
--- xsd:restriction/xsd:minInclusive: 0.0
+-- xsd:restriction/xsd:minInclusive="0.0"
 	diameter DECIMAL CHECK ( diameter > 0.0 ) ,
 	name TEXT ,
 	triangulation TEXT ,
@@ -7329,8 +7329,8 @@ CREATE TABLE em_vitrification (
 	cryogen_name ENUM_em_vitrification_cryogen_name ,
 	details TEXT ,
 	entry_id TEXT ,
--- xsd:restriction/xsd:maxInclusive: 100
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:maxInclusive="100"
+-- xsd:restriction/xsd:minInclusive="0"
 	humidity DECIMAL CHECK ( humidity >= 0 AND humidity <= 100 ) ,
 	instrument ENUM_em_vitrification_instrument ,
 	method TEXT ,
@@ -7568,17 +7568,17 @@ CREATE TYPE ENUM_exptl_method AS ENUM ( 'X-RAY DIFFRACTION', 'NEUTRON DIFFRACTIO
 CREATE TABLE exptl (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	absorpt_coefficient_mu DECIMAL CHECK ( absorpt_coefficient_mu >= 0 ) ,
--- xsd:restriction/xsd:maxInclusive: 1
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:maxInclusive="1"
+-- xsd:restriction/xsd:minInclusive="0"
 	"absorpt_correction_T_max" DECIMAL CHECK ( "absorpt_correction_T_max" >= 0 AND "absorpt_correction_T_max" <= 1 ) ,
--- xsd:restriction/xsd:maxInclusive: 1
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:maxInclusive="1"
+-- xsd:restriction/xsd:minInclusive="0"
 	"absorpt_correction_T_min" DECIMAL CHECK ( "absorpt_correction_T_min" >= 0 AND "absorpt_correction_T_min" <= 1 ) ,
 	absorpt_correction_type ENUM_exptl_absorpt_correction_type ,
 	absorpt_process_details TEXT ,
--- xsd:restriction/xsd:minInclusive: 1
+-- xsd:restriction/xsd:minInclusive="1"
 	crystals_number INTEGER CHECK ( crystals_number >= 1 ) ,
 	details TEXT ,
 	method_details TEXT ,
@@ -7779,7 +7779,7 @@ CREATE TABLE diffr_psi (
 CREATE TABLE exptl_crystal_face (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	perp_dist DECIMAL CHECK ( perp_dist >= 0 ) ,
 -- ATTRIBUTE
 	crystal_id TEXT NOT NULL ,
@@ -7805,16 +7805,16 @@ CREATE TABLE exptl_crystal_grow (
 	details TEXT ,
 	method TEXT ,
 	method_ref TEXT ,
--- xsd:restriction/xsd:maxInclusive: 14
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:maxInclusive="14"
+-- xsd:restriction/xsd:minInclusive="0"
 	"pH" DECIMAL CHECK ( "pH" >= 0 AND "pH" <= 14 ) ,
 	pdbx_details TEXT ,
 	"pdbx_pH_range" TEXT ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	pressure DECIMAL CHECK ( pressure >= 0 ) ,
 	seeding TEXT ,
 	seeding_ref TEXT ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	temp DECIMAL CHECK ( temp >= 0 ) ,
 	temp_details TEXT ,
 	time TEXT ,
@@ -7976,7 +7976,7 @@ CREATE TABLE geom_bond (
 	atom_site_label_comp_id_2 TEXT ,
 	atom_site_label_seq_id_1 INTEGER ,
 	atom_site_label_seq_id_2 INTEGER ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	dist DECIMAL CHECK ( dist >= 0 ) ,
 	"pdbx_PDB_model_num" INTEGER ,
 	"pdbx_atom_site_PDB_ins_code_1" TEXT ,
@@ -8022,7 +8022,7 @@ CREATE TABLE geom_contact (
 	atom_site_label_comp_id_2 TEXT ,
 	atom_site_label_seq_id_1 INTEGER ,
 	atom_site_label_seq_id_2 INTEGER ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	dist DECIMAL CHECK ( dist >= 0 ) ,
 	"pdbx_PDB_model_num" INTEGER ,
 	"pdbx_atom_site_PDB_ins_code_1" TEXT ,
@@ -8105,7 +8105,7 @@ CREATE TYPE ENUM_geom_hbond_publ_flag AS ENUM ( 'no', 'n', 'yes', 'y' );
 CREATE TABLE geom_hbond (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	"angle_DHA" DECIMAL CHECK ( "angle_DHA" >= 0 ) ,
 	"atom_site_auth_asym_id_A" TEXT ,
 	"atom_site_auth_asym_id_D" TEXT ,
@@ -8134,11 +8134,11 @@ CREATE TABLE geom_hbond (
 	"atom_site_label_seq_id_A" INTEGER ,
 	"atom_site_label_seq_id_D" INTEGER ,
 	"atom_site_label_seq_id_H" INTEGER ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	"dist_DA" DECIMAL CHECK ( "dist_DA" >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	"dist_DH" DECIMAL CHECK ( "dist_DH" >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	"dist_HA" DECIMAL CHECK ( "dist_HA" >= 0 ) ,
 	publ_flag ENUM_geom_hbond_publ_flag ,
 -- ATTRIBUTE
@@ -9038,8 +9038,8 @@ CREATE TABLE pdbx_chem_comp_instance_depositor_info (
 CREATE TABLE pdbx_chem_comp_model_atom (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
--- xsd:restriction/xsd:maxInclusive: 8
--- xsd:restriction/xsd:minInclusive: -8
+-- xsd:restriction/xsd:maxInclusive="8"
+-- xsd:restriction/xsd:minInclusive="-8"
 	charge INTEGER CHECK ( charge >= -8 AND charge <= 8 ) ,
 	ordinal_id INTEGER ,
 	type_symbol TEXT ,
@@ -9328,10 +9328,10 @@ CREATE TABLE pdbx_construct_feature (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
 	details TEXT ,
--- xsd:restriction/xsd:minInclusive: 1
+-- xsd:restriction/xsd:minInclusive="1"
 	end_seq INTEGER CHECK ( end_seq >= 1 ) ,
 	entry_id TEXT ,
--- xsd:restriction/xsd:minInclusive: 1
+-- xsd:restriction/xsd:minInclusive="1"
 	start_seq INTEGER CHECK ( start_seq >= 1 ) ,
 	type TEXT ,
 -- ATTRIBUTE
@@ -9550,23 +9550,23 @@ CREATE TABLE gamma_tolerance (
 CREATE TABLE pdbx_data_processing_cell (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	a DECIMAL CHECK ( a >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	a_tolerance DECIMAL CHECK ( a_tolerance >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	b DECIMAL CHECK ( b >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	b_tolerance DECIMAL CHECK ( b_tolerance >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	c DECIMAL CHECK ( c >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	c_tolerance DECIMAL CHECK ( c_tolerance >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	mosaicity DECIMAL CHECK ( mosaicity >= 0 ) ,
 	resolution_range TEXT ,
 	space_group TEXT ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	volume DECIMAL CHECK ( volume >= 0 ) ,
 -- ATTRIBUTE
 	entry_id TEXT NOT NULL
@@ -10452,7 +10452,7 @@ CREATE TABLE pdbx_depui_upload (
 	diagnostic_message TEXT ,
 	file_content_type TEXT ,
 	file_name TEXT ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	file_size INTEGER CHECK ( file_size >= 0 ) ,
 	file_type TEXT ,
 	sequence_align TEXT ,
@@ -10474,15 +10474,15 @@ CREATE TYPE ENUM_pdbx_depui_validation_status_flags_tls_no_aniso AS ENUM ( 'Y', 
 CREATE TABLE pdbx_depui_validation_status_flags (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	adp_outliers_low INTEGER CHECK ( adp_outliers_low >= 0 ) ,
 	adp_outliers_zero TEXT ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	occupancy_outliers_high INTEGER CHECK ( occupancy_outliers_high >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	occupancy_outliers_low INTEGER CHECK ( occupancy_outliers_low >= 0 ) ,
 	"residual_B_factors_flag" ENUM_pdbx_depui_validation_status_flags_residual_B_factors_flag ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	solvent_outliers INTEGER CHECK ( solvent_outliers >= 0 ) ,
 	tls_no_aniso ENUM_pdbx_depui_validation_status_flags_tls_no_aniso ,
 -- ATTRIBUTE
@@ -10894,10 +10894,10 @@ CREATE TABLE pdbx_entity_poly_domain (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
 	begin_mon_id TEXT ,
--- xsd:restriction/xsd:minInclusive: 1
+-- xsd:restriction/xsd:minInclusive="1"
 	begin_seq_num INTEGER CHECK ( begin_seq_num >= 1 ) ,
 	end_mon_id TEXT ,
--- xsd:restriction/xsd:minInclusive: 1
+-- xsd:restriction/xsd:minInclusive="1"
 	end_seq_num INTEGER CHECK ( end_seq_num >= 1 ) ,
 -- ATTRIBUTE
 	entity_id TEXT NOT NULL ,
@@ -11715,7 +11715,7 @@ CREATE TABLE pdbx_exptl_pd (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
 	spec_preparation TEXT ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	"spec_preparation_pH" DECIMAL CHECK ( "spec_preparation_pH" >= 0 ) ,
 	"spec_preparation_pH_range" TEXT ,
 -- ATTRIBUTE
@@ -11918,12 +11918,12 @@ CREATE TYPE ENUM_pdbx_helical_symmetry_dyad_axis AS ENUM ( 'no', 'yes' );
 CREATE TABLE pdbx_helical_symmetry (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
--- xsd:restriction/xsd:minInclusive: 1
+-- xsd:restriction/xsd:minInclusive="1"
 	circular_symmetry INTEGER CHECK ( circular_symmetry >= 1 ) ,
 	dyad_axis ENUM_pdbx_helical_symmetry_dyad_axis ,
--- xsd:restriction/xsd:minInclusive: 1
+-- xsd:restriction/xsd:minInclusive="1"
 	n_subunits_divisor INTEGER CHECK ( n_subunits_divisor >= 1 ) ,
--- xsd:restriction/xsd:minInclusive: 1
+-- xsd:restriction/xsd:minInclusive="1"
 	number_of_operations INTEGER CHECK ( number_of_operations >= 1 ) ,
 -- ATTRIBUTE
 	entry_id TEXT NOT NULL
@@ -11942,12 +11942,12 @@ CREATE TYPE ENUM_pdbx_helical_symmetry_depositor_info_status_flag AS ENUM ( 'Y',
 CREATE TABLE pdbx_helical_symmetry_depositor_info (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
--- xsd:restriction/xsd:minInclusive: 1
+-- xsd:restriction/xsd:minInclusive="1"
 	circular_symmetry INTEGER CHECK ( circular_symmetry >= 1 ) ,
 	dyad_axis ENUM_pdbx_helical_symmetry_depositor_info_dyad_axis ,
--- xsd:restriction/xsd:minInclusive: 1
+-- xsd:restriction/xsd:minInclusive="1"
 	n_subunits_divisor INTEGER CHECK ( n_subunits_divisor >= 1 ) ,
--- xsd:restriction/xsd:minInclusive: 1
+-- xsd:restriction/xsd:minInclusive="1"
 	number_of_operations INTEGER CHECK ( number_of_operations >= 1 ) ,
 	status_flag ENUM_pdbx_helical_symmetry_depositor_info_status_flag ,
 -- ATTRIBUTE
@@ -12408,7 +12408,7 @@ CREATE TYPE ENUM_pdbx_nmr_constraint_file_constraint_type AS ENUM ( 'carbohydrat
 CREATE TABLE pdbx_nmr_constraint_file (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	constraint_number INTEGER CHECK ( constraint_number > 0 ) ,
 	id INTEGER ,
 	software_name TEXT ,
@@ -12569,12 +12569,12 @@ CREATE TABLE pdbx_nmr_ensemble (
 	average_constraint_violations_per_residue INTEGER ,
 	average_constraints_per_residue INTEGER ,
 	conformer_selection_criteria TEXT ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	conformers_calculated_total_number INTEGER CHECK ( conformers_calculated_total_number > 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	conformers_submitted_total_number INTEGER CHECK ( conformers_submitted_total_number > 0 ) ,
 	distance_constraint_violation_method TEXT ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	representative_conformer INTEGER CHECK ( representative_conformer > 0 ) ,
 	torsion_angle_constraint_violation_method TEXT ,
 -- ATTRIBUTE
@@ -12803,9 +12803,9 @@ CREATE TYPE ENUM_pdbx_nmr_exptl_sample_concentration_units AS ENUM ( '%', 'mM', 
 CREATE TABLE pdbx_nmr_exptl_sample (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	concentration DECIMAL CHECK ( concentration > 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	concentration_err DECIMAL CHECK ( concentration_err > 0 ) ,
 	concentration_range TEXT ,
 	concentration_units ENUM_pdbx_nmr_exptl_sample_concentration_units ,
@@ -13446,7 +13446,7 @@ CREATE TABLE pdbx_point_symmetry (
 	document_id TEXT ,
 	"H-M_notation" TEXT ,
 	"Schoenflies_symbol" ENUM_pdbx_point_symmetry_Schoenflies_symbol ,
--- xsd:restriction/xsd:minInclusive: 1
+-- xsd:restriction/xsd:minInclusive="1"
 	circular_symmetry INTEGER CHECK ( circular_symmetry >= 1 ) ,
 -- ATTRIBUTE
 	entry_id TEXT NOT NULL
@@ -13467,7 +13467,7 @@ CREATE TABLE pdbx_point_symmetry_depositor_info (
 	document_id TEXT ,
 	"H-M_notation" TEXT ,
 	"Schoenflies_symbol" ENUM_pdbx_point_symmetry_depositor_info_Schoenflies_symbol ,
--- xsd:restriction/xsd:minInclusive: 1
+-- xsd:restriction/xsd:minInclusive="1"
 	circular_symmetry INTEGER CHECK ( circular_symmetry >= 1 ) ,
 	status_flag ENUM_pdbx_point_symmetry_depositor_info_status_flag ,
 -- ATTRIBUTE
@@ -14823,11 +14823,11 @@ CREATE TABLE pdbx_rmch_outlier (
 	label_comp_id TEXT ,
 	label_seq_id INTEGER ,
 	model_id INTEGER ,
--- xsd:restriction/xsd:maxInclusive: 180
--- xsd:restriction/xsd:minInclusive: -180
+-- xsd:restriction/xsd:maxInclusive="180"
+-- xsd:restriction/xsd:minInclusive="-180"
 	phi DECIMAL CHECK ( phi >= -180 AND phi <= 180 ) ,
--- xsd:restriction/xsd:maxInclusive: 180
--- xsd:restriction/xsd:minInclusive: -180
+-- xsd:restriction/xsd:maxInclusive="180"
+-- xsd:restriction/xsd:minInclusive="-180"
 	psi DECIMAL CHECK ( psi >= -180 AND psi <= 180 ) ,
 -- ATTRIBUTE
 	id INTEGER NOT NULL
@@ -14993,21 +14993,21 @@ CREATE TABLE pdbx_sequence_range (
 CREATE TABLE pdbx_serial_crystallography_data_reduction (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	crystal_hits INTEGER CHECK ( crystal_hits > 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	droplet_hits INTEGER CHECK ( droplet_hits > 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	frame_hits INTEGER CHECK ( frame_hits > 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	frames_failed_index INTEGER CHECK ( frames_failed_index >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	frames_indexed INTEGER CHECK ( frames_indexed > 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	frames_total INTEGER CHECK ( frames_total > 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	lattices_indexed INTEGER CHECK ( lattices_indexed > 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	xfel_pulse_events INTEGER CHECK ( xfel_pulse_events > 0 ) ,
 	xfel_run_numbers TEXT ,
 -- ATTRIBUTE
@@ -15023,24 +15023,24 @@ CREATE TABLE pdbx_serial_crystallography_data_reduction (
 CREATE TABLE pdbx_serial_crystallography_measurement (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
--- xsd:restriction/xsd:minInclusive: 0.0
+-- xsd:restriction/xsd:minInclusive="0.0"
 	collection_time_total DECIMAL CHECK ( collection_time_total > 0.0 ) ,
 	collimation TEXT ,
--- xsd:restriction/xsd:minInclusive: 0.0
+-- xsd:restriction/xsd:minInclusive="0.0"
 	focal_spot_size DECIMAL CHECK ( focal_spot_size > 0.0 ) ,
--- xsd:restriction/xsd:minInclusive: 0.0
+-- xsd:restriction/xsd:minInclusive="0.0"
 	photons_per_pulse DECIMAL CHECK ( photons_per_pulse > 0.0 ) ,
--- xsd:restriction/xsd:minInclusive: 0.0
+-- xsd:restriction/xsd:minInclusive="0.0"
 	pulse_duration DECIMAL CHECK ( pulse_duration > 0.0 ) ,
--- xsd:restriction/xsd:minInclusive: 0.0
+-- xsd:restriction/xsd:minInclusive="0.0"
 	pulse_energy DECIMAL CHECK ( pulse_energy > 0.0 ) ,
--- xsd:restriction/xsd:minInclusive: 0.0
+-- xsd:restriction/xsd:minInclusive="0.0"
 	pulse_photon_energy DECIMAL CHECK ( pulse_photon_energy > 0.0 ) ,
--- xsd:restriction/xsd:minInclusive: 0.0
+-- xsd:restriction/xsd:minInclusive="0.0"
 	source_distance DECIMAL CHECK ( source_distance > 0.0 ) ,
--- xsd:restriction/xsd:minInclusive: 0.0
+-- xsd:restriction/xsd:minInclusive="0.0"
 	source_size DECIMAL CHECK ( source_size > 0.0 ) ,
--- xsd:restriction/xsd:minInclusive: 0.0
+-- xsd:restriction/xsd:minInclusive="0.0"
 	xfel_pulse_repetition_rate DECIMAL CHECK ( xfel_pulse_repetition_rate > 0.0 ) ,
 -- ATTRIBUTE
 	diffrn_id TEXT NOT NULL
@@ -15072,7 +15072,7 @@ CREATE TABLE pdbx_serial_crystallography_sample_delivery (
 CREATE TABLE pdbx_serial_crystallography_sample_delivery_fixed_target (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	crystals_per_unit INTEGER CHECK ( crystals_per_unit > 0 ) ,
 	description TEXT ,
 	details TEXT ,
@@ -15080,12 +15080,12 @@ CREATE TABLE pdbx_serial_crystallography_sample_delivery_fixed_target (
 	sample_dehydration_prevention TEXT ,
 	sample_holding TEXT ,
 	sample_solvent TEXT ,
--- xsd:restriction/xsd:minInclusive: 0.0
+-- xsd:restriction/xsd:minInclusive="0.0"
 	sample_unit_size DECIMAL CHECK ( sample_unit_size > 0.0 ) ,
 	support_base TEXT ,
--- xsd:restriction/xsd:minInclusive: 0.0
+-- xsd:restriction/xsd:minInclusive="0.0"
 	velocity_horizontal DECIMAL CHECK ( velocity_horizontal > 0.0 ) ,
--- xsd:restriction/xsd:minInclusive: 0.0
+-- xsd:restriction/xsd:minInclusive="0.0"
 	velocity_vertical DECIMAL CHECK ( velocity_vertical > 0.0 ) ,
 -- ATTRIBUTE
 	diffrn_id TEXT NOT NULL
@@ -15101,22 +15101,22 @@ CREATE TABLE pdbx_serial_crystallography_sample_delivery_injection (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
 	carrier_solvent TEXT ,
--- xsd:restriction/xsd:minInclusive: 0.0
+-- xsd:restriction/xsd:minInclusive="0.0"
 	crystal_concentration DECIMAL CHECK ( crystal_concentration > 0.0 ) ,
 	description TEXT ,
--- xsd:restriction/xsd:minInclusive: 0.0
+-- xsd:restriction/xsd:minInclusive="0.0"
 	filter_size DECIMAL CHECK ( filter_size > 0.0 ) ,
--- xsd:restriction/xsd:minInclusive: 0.0
+-- xsd:restriction/xsd:minInclusive="0.0"
 	flow_rate DECIMAL CHECK ( flow_rate > 0.0 ) ,
--- xsd:restriction/xsd:minInclusive: 0.0
+-- xsd:restriction/xsd:minInclusive="0.0"
 	injector_diameter DECIMAL CHECK ( injector_diameter > 0.0 ) ,
 	injector_nozzle TEXT ,
--- xsd:restriction/xsd:minInclusive: 0.0
+-- xsd:restriction/xsd:minInclusive="0.0"
 	injector_pressure DECIMAL CHECK ( injector_pressure > 0.0 ) ,
--- xsd:restriction/xsd:maxInclusive: 370
--- xsd:restriction/xsd:minInclusive: 100
+-- xsd:restriction/xsd:maxInclusive="370"
+-- xsd:restriction/xsd:minInclusive="100"
 	injector_temperature DECIMAL CHECK ( injector_temperature >= 100 AND injector_temperature <= 370 ) ,
--- xsd:restriction/xsd:minInclusive: 0.0
+-- xsd:restriction/xsd:minInclusive="0.0"
 	jet_diameter DECIMAL CHECK ( jet_diameter > 0.0 ) ,
 	power_by TEXT ,
 	preparation TEXT ,
@@ -15245,7 +15245,7 @@ CREATE TABLE pdbx_soln_scatter (
 	source_beamline_instrument TEXT ,
 	source_class TEXT ,
 	source_type TEXT ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	temperature DECIMAL CHECK ( temperature >= 0 ) ,
 	type ENUM_pdbx_soln_scatter_type ,
 -- ATTRIBUTE
@@ -15502,10 +15502,10 @@ CREATE TABLE pdbx_struct_assembly_gen_depositor_info (
 	at_unit_matrix ENUM_pdbx_struct_assembly_gen_depositor_info_at_unit_matrix ,
 	chain_id_list TEXT ,
 	full_matrices TEXT ,
--- xsd:restriction/xsd:minInclusive: 0.0
+-- xsd:restriction/xsd:minInclusive="0.0"
 	helical_rise DECIMAL CHECK ( helical_rise > 0.0 ) ,
--- xsd:restriction/xsd:maxInclusive: 180.0
--- xsd:restriction/xsd:minInclusive: -180.0
+-- xsd:restriction/xsd:maxInclusive="180.0"
+-- xsd:restriction/xsd:minInclusive="-180.0"
 	helical_rotation DECIMAL CHECK ( helical_rotation > -180.0 AND helical_rotation < 180.0 ) ,
 	oper_expression TEXT ,
 	symmetry_operation TEXT ,
@@ -15788,7 +15788,7 @@ CREATE TABLE pdbx_struct_link (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
 	details TEXT ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	pdbx_dist_value DECIMAL CHECK ( pdbx_dist_value >= 0 ) ,
 	ptnr1_label_alt_id TEXT ,
 	ptnr1_label_asym_id TEXT ,
@@ -15976,9 +15976,9 @@ CREATE TABLE pdbx_struct_ref_seq_depositor_info (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
 	db_accession TEXT ,
--- xsd:restriction/xsd:minInclusive: 1
+-- xsd:restriction/xsd:minInclusive="1"
 	db_align_beg INTEGER CHECK ( db_align_beg >= 1 ) ,
--- xsd:restriction/xsd:minInclusive: 1
+-- xsd:restriction/xsd:minInclusive="1"
 	db_align_end INTEGER CHECK ( db_align_end >= 1 ) ,
 	db_code TEXT ,
 	db_name TEXT ,
@@ -16009,7 +16009,7 @@ CREATE TABLE pdbx_struct_ref_seq_dif_depositor_info (
 	db_code TEXT ,
 	db_mon_id TEXT ,
 	db_name TEXT ,
--- xsd:restriction/xsd:minInclusive: 1
+-- xsd:restriction/xsd:minInclusive="1"
 	db_seq_id INTEGER CHECK ( db_seq_id >= 1 ) ,
 	details TEXT ,
 	entity_id TEXT ,
@@ -16526,7 +16526,7 @@ CREATE TABLE pdbx_val_contact (
 	auth_comp_id_2 TEXT ,
 	auth_seq_id_1 TEXT ,
 	auth_seq_id_2 TEXT ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	dist DECIMAL CHECK ( dist >= 0 ) ,
 	label_alt_id_1 TEXT ,
 	label_alt_id_2 TEXT ,
@@ -16562,7 +16562,7 @@ CREATE TABLE pdbx_val_sym_contact (
 	auth_comp_id_2 TEXT ,
 	auth_seq_id_1 TEXT ,
 	auth_seq_id_2 TEXT ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	dist DECIMAL CHECK ( dist >= 0 ) ,
 	label_alt_id_1 TEXT ,
 	label_alt_id_2 TEXT ,
@@ -16598,8 +16598,8 @@ CREATE TABLE pdbx_validate_chiral (
 	auth_seq_id TEXT ,
 	details TEXT ,
 	label_alt_id TEXT ,
--- xsd:restriction/xsd:maxInclusive: 180
--- xsd:restriction/xsd:minInclusive: -180
+-- xsd:restriction/xsd:maxInclusive="180"
+-- xsd:restriction/xsd:minInclusive="-180"
 	omega DECIMAL CHECK ( omega >= -180 AND omega <= 180 ) ,
 -- ATTRIBUTE
 	id INTEGER NOT NULL
@@ -16700,8 +16700,8 @@ CREATE TABLE pdbx_validate_peptide_omega (
 	auth_seq_id_2 TEXT ,
 	label_alt_id_1 TEXT ,
 	label_alt_id_2 TEXT ,
--- xsd:restriction/xsd:maxInclusive: 180
--- xsd:restriction/xsd:minInclusive: -180
+-- xsd:restriction/xsd:maxInclusive="180"
+-- xsd:restriction/xsd:minInclusive="-180"
 	omega DECIMAL CHECK ( omega >= -180 AND omega <= 180 ) ,
 -- ATTRIBUTE
 	id INTEGER NOT NULL
@@ -16822,7 +16822,7 @@ CREATE TABLE pdbx_validate_rmsd_angle (
 	"PDB_ins_code_2" TEXT ,
 	"PDB_ins_code_3" TEXT ,
 	"PDB_model_num" INTEGER ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	angle_standard_deviation DECIMAL CHECK ( angle_standard_deviation >= 0 ) ,
 	auth_asym_id_1 TEXT ,
 	auth_asym_id_2 TEXT ,
@@ -16864,11 +16864,11 @@ CREATE TABLE pdbx_validate_rmsd_bond (
 	auth_comp_id_2 TEXT ,
 	auth_seq_id_1 TEXT ,
 	auth_seq_id_2 TEXT ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	bond_standard_deviation DECIMAL CHECK ( bond_standard_deviation >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	bond_target_value DECIMAL CHECK ( bond_target_value >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	bond_value DECIMAL CHECK ( bond_value >= 0 ) ,
 	label_alt_id_1 TEXT ,
 	label_alt_id_2 TEXT ,
@@ -16920,11 +16920,11 @@ CREATE TABLE pdbx_validate_torsion (
 	auth_comp_id TEXT ,
 	auth_seq_id TEXT ,
 	label_alt_id TEXT ,
--- xsd:restriction/xsd:maxInclusive: 180
--- xsd:restriction/xsd:minInclusive: -180
+-- xsd:restriction/xsd:maxInclusive="180"
+-- xsd:restriction/xsd:minInclusive="-180"
 	phi DECIMAL CHECK ( phi >= -180 AND phi <= 180 ) ,
--- xsd:restriction/xsd:maxInclusive: 180
--- xsd:restriction/xsd:minInclusive: -180
+-- xsd:restriction/xsd:maxInclusive="180"
+-- xsd:restriction/xsd:minInclusive="-180"
 	psi DECIMAL CHECK ( psi >= -180 AND psi <= 180 ) ,
 -- ATTRIBUTE
 	id INTEGER NOT NULL
@@ -17053,7 +17053,7 @@ CREATE TABLE pdbx_virtual_bond (
 	atom_site_label_comp_id_2 TEXT ,
 	atom_site_label_seq_id_1 INTEGER ,
 	atom_site_label_seq_id_2 INTEGER ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	dist DECIMAL CHECK ( dist >= 0 ) ,
 -- ATTRIBUTE
 	atom_site_id_1 TEXT NOT NULL ,
@@ -17275,24 +17275,24 @@ CREATE TABLE "phasing_MAD_set" (
 CREATE TABLE "phasing_MIR" (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	"FOM" DECIMAL CHECK ( "FOM" >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	"FOM_acentric" DECIMAL CHECK ( "FOM_acentric" >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	"FOM_centric" DECIMAL CHECK ( "FOM_centric" >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	d_res_high DECIMAL CHECK ( d_res_high >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	d_res_low DECIMAL CHECK ( d_res_low >= 0 ) ,
 	details TEXT ,
 	method TEXT ,
 	pdbx_number_derivatives INTEGER ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	reflns INTEGER CHECK ( reflns >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	reflns_acentric INTEGER CHECK ( reflns_acentric >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	reflns_centric INTEGER CHECK ( reflns_centric >= 0 ) ,
 	reflns_criterion TEXT ,
 -- ATTRIBUTE
@@ -17431,15 +17431,15 @@ CREATE TABLE "phasing_MIR_der_refln" (
 CREATE TABLE "phasing_MIR_der_shell" (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	"R_cullis" DECIMAL CHECK ( "R_cullis" >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	"R_kraut" DECIMAL CHECK ( "R_kraut" >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	fom DECIMAL CHECK ( fom >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	ha_ampl DECIMAL CHECK ( ha_ampl >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	loc DECIMAL CHECK ( loc >= 0 ) ,
 	"pdbx_R_cullis_acentric" DECIMAL ,
 	"pdbx_R_cullis_centric" DECIMAL ,
@@ -17454,15 +17454,15 @@ CREATE TABLE "phasing_MIR_der_shell" (
 	pdbx_reflns_acentric INTEGER ,
 	pdbx_reflns_centric DECIMAL ,
 	phase DECIMAL ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	power DECIMAL CHECK ( power >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	reflns INTEGER CHECK ( reflns >= 0 ) ,
 -- ATTRIBUTE
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	d_res_high DECIMAL CHECK ( d_res_high >= 0 ) NOT NULL ,
 -- ATTRIBUTE
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	d_res_low DECIMAL CHECK ( d_res_low >= 0 ) NOT NULL ,
 -- ATTRIBUTE
 	der_id TEXT NOT NULL
@@ -17513,7 +17513,7 @@ CREATE TABLE "phasing_MIR_der_site" (
 	fract_y_esd DECIMAL ,
 	fract_z DECIMAL ,
 	fract_z_esd DECIMAL ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	occupancy DECIMAL CHECK ( occupancy >= 0 ) ,
 	occupancy_anom DECIMAL ,
 	occupancy_anom_su DECIMAL ,
@@ -17534,17 +17534,17 @@ CREATE TABLE "phasing_MIR_der_site" (
 CREATE TABLE "phasing_MIR_shell" (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	"FOM" DECIMAL CHECK ( "FOM" >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	"FOM_acentric" DECIMAL CHECK ( "FOM_acentric" >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	"FOM_centric" DECIMAL CHECK ( "FOM_centric" >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	"R_cullis" DECIMAL CHECK ( "R_cullis" >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	"R_kraut" DECIMAL CHECK ( "R_kraut" >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	loc DECIMAL CHECK ( loc >= 0 ) ,
 	mean_phase DECIMAL ,
 	"pdbx_R_cullis_acentric" DECIMAL ,
@@ -17555,21 +17555,21 @@ CREATE TABLE "phasing_MIR_shell" (
 	pdbx_loc_centric DECIMAL ,
 	pdbx_power_acentric DECIMAL ,
 	pdbx_power_centric DECIMAL ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	power DECIMAL CHECK ( power >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	reflns INTEGER CHECK ( reflns >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	reflns_acentric INTEGER CHECK ( reflns_acentric >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	reflns_anomalous INTEGER CHECK ( reflns_anomalous >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	reflns_centric INTEGER CHECK ( reflns_centric >= 0 ) ,
 -- ATTRIBUTE
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	d_res_high DECIMAL CHECK ( d_res_high >= 0 ) NOT NULL ,
 -- ATTRIBUTE
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	d_res_low DECIMAL CHECK ( d_res_low >= 0 ) NOT NULL
 );
 
@@ -17913,99 +17913,99 @@ CREATE TABLE refine (
 	"correlation_coeff_Fo_to_Fc" DECIMAL ,
 	"correlation_coeff_Fo_to_Fc_free" DECIMAL ,
 	details TEXT ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	"ls_R_Fsqd_factor_obs" DECIMAL CHECK ( "ls_R_Fsqd_factor_obs" >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	"ls_R_I_factor_obs" DECIMAL CHECK ( "ls_R_I_factor_obs" >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	"ls_R_factor_R_free" DECIMAL CHECK ( "ls_R_factor_R_free" >= 0 ) ,
 	"ls_R_factor_R_free_error" DECIMAL ,
 	"ls_R_factor_R_free_error_details" TEXT ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	"ls_R_factor_R_work" DECIMAL CHECK ( "ls_R_factor_R_work" >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	"ls_R_factor_all" DECIMAL CHECK ( "ls_R_factor_all" >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	"ls_R_factor_gt" DECIMAL CHECK ( "ls_R_factor_gt" >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	"ls_R_factor_obs" DECIMAL CHECK ( "ls_R_factor_obs" >= 0 ) ,
--- xsd:restriction/xsd:maxInclusive: 1
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:maxInclusive="1"
+-- xsd:restriction/xsd:minInclusive="0"
 	"ls_abs_structure_Flack" DECIMAL CHECK ( "ls_abs_structure_Flack" >= 0 AND "ls_abs_structure_Flack" <= 1 ) ,
 	"ls_abs_structure_Flack_esd" DECIMAL ,
--- xsd:restriction/xsd:maxInclusive: 1
--- xsd:restriction/xsd:minInclusive: -1
+-- xsd:restriction/xsd:maxInclusive="1"
+-- xsd:restriction/xsd:minInclusive="-1"
 	"ls_abs_structure_Rogers" DECIMAL CHECK ( "ls_abs_structure_Rogers" >= -1 AND "ls_abs_structure_Rogers" <= 1 ) ,
 	"ls_abs_structure_Rogers_esd" DECIMAL ,
 	ls_abs_structure_details TEXT ,
--- xsd:restriction/xsd:minInclusive: 0.0
+-- xsd:restriction/xsd:minInclusive="0.0"
 	ls_d_res_high DECIMAL CHECK ( ls_d_res_high > 0.0 ) ,
--- xsd:restriction/xsd:minInclusive: 0.0
+-- xsd:restriction/xsd:minInclusive="0.0"
 	ls_d_res_low DECIMAL CHECK ( ls_d_res_low > 0.0 ) ,
 	ls_extinction_coef DECIMAL ,
 	ls_extinction_coef_esd DECIMAL ,
 	ls_extinction_expression TEXT ,
 	ls_extinction_method TEXT ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	ls_goodness_of_fit_all DECIMAL CHECK ( ls_goodness_of_fit_all >= 0 ) ,
 	ls_goodness_of_fit_all_esd DECIMAL ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	ls_goodness_of_fit_gt DECIMAL CHECK ( ls_goodness_of_fit_gt >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	ls_goodness_of_fit_obs DECIMAL CHECK ( ls_goodness_of_fit_obs >= 0 ) ,
 	ls_goodness_of_fit_obs_esd DECIMAL ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	ls_goodness_of_fit_ref DECIMAL CHECK ( ls_goodness_of_fit_ref >= 0 ) ,
 	ls_hydrogen_treatment ENUM_refine_ls_hydrogen_treatment ,
 	ls_matrix_type ENUM_refine_ls_matrix_type ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	ls_number_constraints INTEGER CHECK ( ls_number_constraints >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	ls_number_parameters INTEGER CHECK ( ls_number_parameters >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	"ls_number_reflns_R_free" INTEGER CHECK ( "ls_number_reflns_R_free" >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	"ls_number_reflns_R_work" INTEGER CHECK ( "ls_number_reflns_R_work" >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	ls_number_reflns_all INTEGER CHECK ( ls_number_reflns_all >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	ls_number_reflns_obs INTEGER CHECK ( ls_number_reflns_obs >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	ls_number_restraints INTEGER CHECK ( ls_number_restraints >= 0 ) ,
 	"ls_percent_reflns_R_free" DECIMAL ,
 	ls_percent_reflns_obs DECIMAL ,
 	ls_redundancy_reflns_all DECIMAL ,
 	ls_redundancy_reflns_obs DECIMAL ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	"ls_restrained_S_all" DECIMAL CHECK ( "ls_restrained_S_all" >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	"ls_restrained_S_obs" DECIMAL CHECK ( "ls_restrained_S_obs" >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	ls_shift_over_esd_max DECIMAL CHECK ( ls_shift_over_esd_max >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	ls_shift_over_esd_mean DECIMAL CHECK ( ls_shift_over_esd_mean >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	ls_shift_over_su_max DECIMAL CHECK ( ls_shift_over_su_max >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	ls_shift_over_su_max_lt DECIMAL CHECK ( ls_shift_over_su_max_lt >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	ls_shift_over_su_mean DECIMAL CHECK ( ls_shift_over_su_mean >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	ls_shift_over_su_mean_lt DECIMAL CHECK ( ls_shift_over_su_mean_lt >= 0 ) ,
 	ls_structure_factor_coef ENUM_refine_ls_structure_factor_coef ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	"ls_wR_factor_R_free" DECIMAL CHECK ( "ls_wR_factor_R_free" >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	"ls_wR_factor_R_work" DECIMAL CHECK ( "ls_wR_factor_R_work" >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	"ls_wR_factor_all" DECIMAL CHECK ( "ls_wR_factor_all" >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	"ls_wR_factor_obs" DECIMAL CHECK ( "ls_wR_factor_obs" >= 0 ) ,
 	ls_weighting_details TEXT ,
 	ls_weighting_scheme ENUM_refine_ls_weighting_scheme ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	occupancy_max DECIMAL CHECK ( occupancy_max >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	occupancy_min DECIMAL CHECK ( occupancy_min >= 0 ) ,
 	"overall_FOM_free_R_set" DECIMAL ,
 	"overall_FOM_work_R_set" DECIMAL ,
@@ -18014,8 +18014,8 @@ CREATE TABLE refine (
 	"overall_SU_R_Cruickshank_DPI" DECIMAL ,
 	"overall_SU_R_free" DECIMAL ,
 	"pdbx_R_Free_selection_details" TEXT ,
--- xsd:restriction/xsd:maxInclusive: 1
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:maxInclusive="1"
+-- xsd:restriction/xsd:minInclusive="0"
 	"pdbx_R_complete" DECIMAL CHECK ( "pdbx_R_complete" >= 0 AND "pdbx_R_complete" <= 1 ) ,
 	"pdbx_TLS_residual_ADP_flag" ENUM_refine_pdbx_TLS_residual_ADP_flag ,
 	pdbx_average_fsc_free DECIMAL ,
@@ -18040,16 +18040,16 @@ CREATE TABLE refine (
 	"pdbx_overall_SU_R_free_Blow_DPI" DECIMAL ,
 	"pdbx_overall_SU_R_free_Cruickshank_DPI" DECIMAL ,
 	pdbx_overall_phase_error DECIMAL ,
--- xsd:restriction/xsd:minInclusive: 0.0
+-- xsd:restriction/xsd:minInclusive="0.0"
 	"pdbx_pd_Fsqrd_R_factor" DECIMAL CHECK ( "pdbx_pd_Fsqrd_R_factor" > 0.0 ) ,
 	"pdbx_pd_Marquardt_correlation_coeff" DECIMAL ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	pdbx_pd_ls_matrix_band_width INTEGER CHECK ( pdbx_pd_ls_matrix_band_width >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	pdbx_pd_meas_number_of_points INTEGER CHECK ( pdbx_pd_meas_number_of_points >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	pdbx_pd_number_of_points INTEGER CHECK ( pdbx_pd_number_of_points >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	pdbx_pd_number_of_powder_patterns INTEGER CHECK ( pdbx_pd_number_of_powder_patterns >= 0 ) ,
 	"pdbx_pd_proc_ls_prof_R_factor" DECIMAL ,
 	"pdbx_pd_proc_ls_prof_wR_factor" DECIMAL ,
@@ -18183,15 +18183,15 @@ CREATE TABLE refine_analyze (
 	document_id TEXT ,
 	"Luzzati_sigma_a_free_details" TEXT ,
 	"Luzzati_sigma_a_obs_details" TEXT ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	"RG_d_res_high" DECIMAL CHECK ( "RG_d_res_high" >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	"RG_d_res_low" DECIMAL CHECK ( "RG_d_res_low" >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	"RG_free" DECIMAL CHECK ( "RG_free" >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	"RG_free_work_ratio" DECIMAL CHECK ( "RG_free_work_ratio" >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	"RG_work" DECIMAL CHECK ( "RG_work" >= 0 ) ,
 	number_disordered_residues DECIMAL ,
 	occupancy_sum_hydrogen DECIMAL ,
@@ -18212,9 +18212,9 @@ CREATE TABLE refine_analyze (
 CREATE TABLE refine_funct_minimized (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	number_terms INTEGER CHECK ( number_terms >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	residual DECIMAL CHECK ( residual >= 0 ) ,
 	weight DECIMAL ,
 -- ATTRIBUTE
@@ -18232,30 +18232,30 @@ CREATE TABLE refine_funct_minimized (
 CREATE TABLE refine_hist (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	"R_factor_R_free" DECIMAL CHECK ( "R_factor_R_free" >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	"R_factor_R_work" DECIMAL CHECK ( "R_factor_R_work" >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	"R_factor_all" DECIMAL CHECK ( "R_factor_all" >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	"R_factor_obs" DECIMAL CHECK ( "R_factor_obs" >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	d_res_high DECIMAL CHECK ( d_res_high >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	d_res_low DECIMAL CHECK ( d_res_low >= 0 ) ,
 	details TEXT ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	number_atoms_solvent INTEGER CHECK ( number_atoms_solvent >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	number_atoms_total INTEGER CHECK ( number_atoms_total >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	"number_reflns_R_free" INTEGER CHECK ( "number_reflns_R_free" >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	"number_reflns_R_work" INTEGER CHECK ( "number_reflns_R_work" >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	number_reflns_all INTEGER CHECK ( number_reflns_all >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	number_reflns_obs INTEGER CHECK ( number_reflns_obs >= 0 ) ,
 	"pdbx_B_iso_mean_ligand" DECIMAL ,
 	"pdbx_B_iso_mean_solvent" DECIMAL ,
@@ -18283,19 +18283,19 @@ CREATE TABLE refine_hist (
 CREATE TABLE refine_ls_class (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	"R_Fsqd_factor" DECIMAL CHECK ( "R_Fsqd_factor" >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	"R_I_factor" DECIMAL CHECK ( "R_I_factor" >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	"R_factor_all" DECIMAL CHECK ( "R_factor_all" >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	"R_factor_gt" DECIMAL CHECK ( "R_factor_gt" >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	d_res_high DECIMAL CHECK ( d_res_high >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	d_res_low DECIMAL CHECK ( d_res_low >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	"wR_factor_all" DECIMAL CHECK ( "wR_factor_all" >= 0 ) ,
 -- ATTRIBUTE
 	code TEXT NOT NULL
@@ -18311,14 +18311,14 @@ CREATE TABLE refine_ls_restr (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
 	criterion TEXT ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	dev_ideal DECIMAL CHECK ( dev_ideal >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	dev_ideal_target DECIMAL CHECK ( dev_ideal_target >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	number INTEGER CHECK ( number >= 0 ) ,
 	pdbx_restraint_function TEXT ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	rejects INTEGER CHECK ( rejects >= 0 ) ,
 	weight DECIMAL ,
 -- ATTRIBUTE
@@ -18346,9 +18346,9 @@ CREATE TABLE refine_ls_restr_ncs (
 	pdbx_rms DECIMAL ,
 	pdbx_type TEXT ,
 	pdbx_weight DECIMAL ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	"rms_dev_B_iso" DECIMAL CHECK ( "rms_dev_B_iso" >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	rms_dev_position DECIMAL CHECK ( rms_dev_position >= 0 ) ,
 	"weight_B_iso" DECIMAL ,
 	weight_position DECIMAL ,
@@ -18365,9 +18365,9 @@ CREATE TABLE refine_ls_restr_ncs (
 CREATE TABLE refine_ls_restr_type (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	distance_cutoff_high DECIMAL CHECK ( distance_cutoff_high >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	distance_cutoff_low DECIMAL CHECK ( distance_cutoff_low >= 0 ) ,
 -- ATTRIBUTE
 	type TEXT NOT NULL
@@ -18382,27 +18382,27 @@ CREATE TABLE refine_ls_restr_type (
 CREATE TABLE refine_ls_shell (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	"R_factor_R_free" DECIMAL CHECK ( "R_factor_R_free" >= 0 ) ,
 	"R_factor_R_free_error" DECIMAL ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	"R_factor_R_work" DECIMAL CHECK ( "R_factor_R_work" >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	"R_factor_all" DECIMAL CHECK ( "R_factor_all" >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	"R_factor_obs" DECIMAL CHECK ( "R_factor_obs" >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0.0
+-- xsd:restriction/xsd:minInclusive="0.0"
 	d_res_low DECIMAL CHECK ( d_res_low > 0.0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	"number_reflns_R_free" INTEGER CHECK ( "number_reflns_R_free" >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	"number_reflns_R_work" INTEGER CHECK ( "number_reflns_R_work" >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	number_reflns_all INTEGER CHECK ( number_reflns_all >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	number_reflns_obs INTEGER CHECK ( number_reflns_obs >= 0 ) ,
--- xsd:restriction/xsd:maxInclusive: 1
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:maxInclusive="1"
+-- xsd:restriction/xsd:minInclusive="0"
 	"pdbx_R_complete" DECIMAL CHECK ( "pdbx_R_complete" >= 0 AND "pdbx_R_complete" <= 1 ) ,
 	pdbx_fsc_free DECIMAL ,
 	pdbx_fsc_work DECIMAL ,
@@ -18412,16 +18412,16 @@ CREATE TABLE refine_ls_shell (
 	percent_reflns_obs DECIMAL ,
 	redundancy_reflns_all DECIMAL ,
 	redundancy_reflns_obs DECIMAL ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	"wR_factor_R_free" DECIMAL CHECK ( "wR_factor_R_free" >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	"wR_factor_R_work" DECIMAL CHECK ( "wR_factor_R_work" >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	"wR_factor_all" DECIMAL CHECK ( "wR_factor_all" >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	"wR_factor_obs" DECIMAL CHECK ( "wR_factor_obs" >= 0 ) ,
 -- ATTRIBUTE
--- xsd:restriction/xsd:minInclusive: 0.0
+-- xsd:restriction/xsd:minInclusive="0.0"
 	d_res_high DECIMAL CHECK ( d_res_high > 0.0 ) NOT NULL ,
 -- ATTRIBUTE
 	pdbx_refine_id TEXT NOT NULL
@@ -18440,8 +18440,8 @@ CREATE TABLE refine_occupancy (
 	document_id TEXT ,
 	details TEXT ,
 	treatment ENUM_refine_occupancy_treatment ,
--- xsd:restriction/xsd:maxInclusive: 1
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:maxInclusive="1"
+-- xsd:restriction/xsd:minInclusive="0"
 	value DECIMAL CHECK ( value >= 0 AND value <= 1 ) ,
 -- ATTRIBUTE
 	class TEXT NOT NULL ,
@@ -18690,15 +18690,15 @@ CREATE TABLE refln (
 	document_id TEXT ,
 	class_code TEXT ,
 	crystal_id TEXT ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	d_spacing DECIMAL CHECK ( d_spacing >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	fom DECIMAL CHECK ( fom >= 0 ) ,
 	include_status ENUM_refln_include_status ,
 	intensity_calc DECIMAL ,
 	intensity_meas DECIMAL ,
 	intensity_sigma DECIMAL ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	mean_path_length_tbar DECIMAL CHECK ( mean_path_length_tbar >= 0 ) ,
 	"pdbx_DELFWT" DECIMAL ,
 	"pdbx_DELPHWT" DECIMAL ,
@@ -18730,16 +18730,16 @@ CREATE TABLE refln (
 	pdbx_sin_phase_calc DECIMAL ,
 	refinement_status ENUM_refln_refinement_status ,
 	scale_group_code TEXT ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	sint_over_lambda DECIMAL CHECK ( sint_over_lambda >= 0 ) ,
 	status ENUM_refln_status ,
--- xsd:restriction/xsd:maxInclusive: 48
--- xsd:restriction/xsd:minInclusive: 1
+-- xsd:restriction/xsd:maxInclusive="48"
+-- xsd:restriction/xsd:minInclusive="1"
 	symmetry_epsilon INTEGER CHECK ( symmetry_epsilon >= 1 AND symmetry_epsilon <= 48 ) ,
--- xsd:restriction/xsd:maxInclusive: 48
--- xsd:restriction/xsd:minInclusive: 1
+-- xsd:restriction/xsd:maxInclusive="48"
+-- xsd:restriction/xsd:minInclusive="1"
 	symmetry_multiplicity INTEGER CHECK ( symmetry_multiplicity >= 1 AND symmetry_multiplicity <= 48 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	wavelength DECIMAL CHECK ( wavelength >= 0 ) ,
 	wavelength_id TEXT ,
 -- ATTRIBUTE
@@ -18847,17 +18847,17 @@ CREATE TABLE "pdbx_res_netI_over_sigmaI_2" (
 CREATE TABLE reflns (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
--- xsd:restriction/xsd:maxInclusive: 1
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:maxInclusive="1"
+-- xsd:restriction/xsd:minInclusive="0"
 	"Friedel_coverage" DECIMAL CHECK ( "Friedel_coverage" >= 0 AND "Friedel_coverage" <= 1 ) ,
 	"R_free_details" TEXT ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	"Rmerge_F_all" DECIMAL CHECK ( "Rmerge_F_all" >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	"Rmerge_F_obs" DECIMAL CHECK ( "Rmerge_F_obs" >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	d_resolution_high DECIMAL CHECK ( d_resolution_high >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	d_resolution_low DECIMAL CHECK ( d_resolution_low >= 0 ) ,
 	data_reduction_details TEXT ,
 	data_reduction_method TEXT ,
@@ -18869,11 +18869,11 @@ CREATE TABLE reflns (
 	limit_k_min INTEGER ,
 	limit_l_max INTEGER ,
 	limit_l_min INTEGER ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	number_all INTEGER CHECK ( number_all >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	number_gt INTEGER CHECK ( number_gt >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	number_obs INTEGER CHECK ( number_obs >= 0 ) ,
 	observed_criterion TEXT ,
 	"observed_criterion_F_max" DECIMAL ,
@@ -18882,44 +18882,44 @@ CREATE TABLE reflns (
 	"observed_criterion_I_min" DECIMAL ,
 	"observed_criterion_sigma_F" DECIMAL ,
 	"observed_criterion_sigma_I" DECIMAL ,
--- xsd:restriction/xsd:maxInclusive: 1
--- xsd:restriction/xsd:minInclusive: -1
+-- xsd:restriction/xsd:maxInclusive="1"
+-- xsd:restriction/xsd:minInclusive="-1"
 	"pdbx_CC_half" DECIMAL CHECK ( "pdbx_CC_half" >= -1 AND "pdbx_CC_half" <= 1 ) ,
--- xsd:restriction/xsd:maxInclusive: 1
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:maxInclusive="1"
+-- xsd:restriction/xsd:minInclusive="0"
 	"pdbx_CC_star" DECIMAL CHECK ( "pdbx_CC_star" >= 0 AND "pdbx_CC_star" <= 1 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	"pdbx_R_split" DECIMAL CHECK ( "pdbx_R_split" >= 0 ) ,
 	"pdbx_Rmerge_I_all" DECIMAL ,
 	"pdbx_Rmerge_I_anomalous" DECIMAL ,
 	"pdbx_Rmerge_I_obs" DECIMAL ,
--- xsd:restriction/xsd:minInclusive: 0.0
+-- xsd:restriction/xsd:minInclusive="0.0"
 	"pdbx_Rpim_I_all" DECIMAL CHECK ( "pdbx_Rpim_I_all" > 0.0 ) ,
--- xsd:restriction/xsd:minInclusive: 0.0
+-- xsd:restriction/xsd:minInclusive="0.0"
 	"pdbx_Rpim_I_all_anomalous" DECIMAL CHECK ( "pdbx_Rpim_I_all_anomalous" > 0.0 ) ,
--- xsd:restriction/xsd:minInclusive: 0.0
+-- xsd:restriction/xsd:minInclusive="0.0"
 	"pdbx_Rrim_I_all" DECIMAL CHECK ( "pdbx_Rrim_I_all" > 0.0 ) ,
--- xsd:restriction/xsd:minInclusive: 0.0
+-- xsd:restriction/xsd:minInclusive="0.0"
 	"pdbx_Rrim_I_all_anomalous" DECIMAL CHECK ( "pdbx_Rrim_I_all_anomalous" > 0.0 ) ,
 	"pdbx_Rsym_value" DECIMAL ,
 	pdbx_chi_squared DECIMAL ,
 	pdbx_d_opt DECIMAL ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	pdbx_d_res_high_opt DECIMAL CHECK ( pdbx_d_res_high_opt >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	pdbx_d_res_low_opt DECIMAL CHECK ( pdbx_d_res_low_opt >= 0 ) ,
 	pdbx_d_res_opt_method TEXT ,
 	pdbx_diffrn_id TEXT ,
 	"pdbx_netI_over_av_sigmaI" DECIMAL ,
 	"pdbx_netI_over_sigmaI" DECIMAL ,
 	pdbx_number_anomalous INTEGER ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	pdbx_number_measured_all INTEGER CHECK ( pdbx_number_measured_all >= 0 ) ,
 	pdbx_redundancy DECIMAL ,
 	pdbx_redundancy_reflns_obs DECIMAL ,
 	pdbx_scaling_rejects INTEGER ,
--- xsd:restriction/xsd:maxInclusive: 100
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:maxInclusive="100"
+-- xsd:restriction/xsd:minInclusive="0"
 	percent_possible_obs DECIMAL CHECK ( percent_possible_obs >= 0 AND percent_possible_obs <= 100 ) ,
 	phase_calculation_details TEXT ,
 	threshold_expression TEXT ,
@@ -18936,24 +18936,24 @@ CREATE TABLE reflns (
 CREATE TABLE reflns_class (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	"R_Fsqd_factor" DECIMAL CHECK ( "R_Fsqd_factor" >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	"R_I_factor" DECIMAL CHECK ( "R_I_factor" >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	"R_factor_all" DECIMAL CHECK ( "R_factor_all" >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	"R_factor_gt" DECIMAL CHECK ( "R_factor_gt" >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	d_res_high DECIMAL CHECK ( d_res_high >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	d_res_low DECIMAL CHECK ( d_res_low >= 0 ) ,
 	description TEXT ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	number_gt INTEGER CHECK ( number_gt >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	number_total INTEGER CHECK ( number_total >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	"wR_factor_all" DECIMAL CHECK ( "wR_factor_all" >= 0 ) ,
 -- ATTRIBUTE
 	code TEXT NOT NULL
@@ -18968,11 +18968,11 @@ CREATE TABLE reflns_class (
 CREATE TABLE reflns_scale (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	"meas_F" DECIMAL CHECK ( "meas_F" >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	"meas_F_squared" DECIMAL CHECK ( "meas_F_squared" >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	meas_intensity DECIMAL CHECK ( meas_intensity >= 0 ) ,
 -- ATTRIBUTE
 	group_code TEXT NOT NULL
@@ -18987,21 +18987,21 @@ CREATE TABLE reflns_scale (
 CREATE TABLE reflns_shell (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	"Rmerge_F_all" DECIMAL CHECK ( "Rmerge_F_all" >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	"Rmerge_F_gt" DECIMAL CHECK ( "Rmerge_F_gt" >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	"Rmerge_F_obs" DECIMAL CHECK ( "Rmerge_F_obs" >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	"Rmerge_I_all" DECIMAL CHECK ( "Rmerge_I_all" >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	"Rmerge_I_gt" DECIMAL CHECK ( "Rmerge_I_gt" >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	"Rmerge_I_obs" DECIMAL CHECK ( "Rmerge_I_obs" >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	d_res_high DECIMAL CHECK ( d_res_high >= 0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	d_res_low DECIMAL CHECK ( d_res_low >= 0 ) ,
 	"meanI_over_sigI_all" DECIMAL ,
 	"meanI_over_sigI_gt" DECIMAL ,
@@ -19009,33 +19009,33 @@ CREATE TABLE reflns_shell (
 	"meanI_over_uI_all" DECIMAL ,
 	"meanI_over_uI_gt" DECIMAL ,
 	number_measured_all INTEGER ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	number_measured_gt INTEGER CHECK ( number_measured_gt >= 0 ) ,
 	number_measured_obs INTEGER ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	number_possible INTEGER CHECK ( number_possible >= 0 ) ,
 	number_unique_all INTEGER ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	number_unique_gt INTEGER CHECK ( number_unique_gt >= 0 ) ,
 	number_unique_obs INTEGER ,
--- xsd:restriction/xsd:maxInclusive: 1
--- xsd:restriction/xsd:minInclusive: -1
+-- xsd:restriction/xsd:maxInclusive="1"
+-- xsd:restriction/xsd:minInclusive="-1"
 	"pdbx_CC_half" DECIMAL CHECK ( "pdbx_CC_half" >= -1 AND "pdbx_CC_half" <= 1 ) ,
--- xsd:restriction/xsd:maxInclusive: 1
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:maxInclusive="1"
+-- xsd:restriction/xsd:minInclusive="0"
 	"pdbx_CC_star" DECIMAL CHECK ( "pdbx_CC_star" >= 0 AND "pdbx_CC_star" <= 1 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	"pdbx_R_split" DECIMAL CHECK ( "pdbx_R_split" >= 0 ) ,
 	"pdbx_Rmerge_I_all_anomalous" DECIMAL ,
--- xsd:restriction/xsd:minInclusive: 0.0
+-- xsd:restriction/xsd:minInclusive="0.0"
 	"pdbx_Rpim_I_all" DECIMAL CHECK ( "pdbx_Rpim_I_all" > 0.0 ) ,
--- xsd:restriction/xsd:minInclusive: 0.0
+-- xsd:restriction/xsd:minInclusive="0.0"
 	"pdbx_Rpim_I_all_anomalous" DECIMAL CHECK ( "pdbx_Rpim_I_all_anomalous" > 0.0 ) ,
--- xsd:restriction/xsd:minInclusive: 0.0
+-- xsd:restriction/xsd:minInclusive="0.0"
 	"pdbx_Rrim_I_all" DECIMAL CHECK ( "pdbx_Rrim_I_all" > 0.0 ) ,
--- xsd:restriction/xsd:minInclusive: 0.0
+-- xsd:restriction/xsd:minInclusive="0.0"
 	"pdbx_Rrim_I_all_anomalous" DECIMAL CHECK ( "pdbx_Rrim_I_all_anomalous" > 0.0 ) ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	"pdbx_Rsym_value" DECIMAL CHECK ( "pdbx_Rsym_value" >= 0 ) ,
 	pdbx_chi_squared DECIMAL ,
 	pdbx_diffrn_id TEXT ,
@@ -19045,13 +19045,13 @@ CREATE TABLE reflns_shell (
 	pdbx_redundancy DECIMAL ,
 	pdbx_redundancy_reflns_obs DECIMAL ,
 	pdbx_rejects INTEGER ,
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:minInclusive="0"
 	percent_possible_all DECIMAL CHECK ( percent_possible_all >= 0 ) ,
--- xsd:restriction/xsd:maxInclusive: 100
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:maxInclusive="100"
+-- xsd:restriction/xsd:minInclusive="0"
 	percent_possible_gt DECIMAL CHECK ( percent_possible_gt >= 0 AND percent_possible_gt <= 100 ) ,
--- xsd:restriction/xsd:maxInclusive: 100
--- xsd:restriction/xsd:minInclusive: 0
+-- xsd:restriction/xsd:maxInclusive="100"
+-- xsd:restriction/xsd:minInclusive="0"
 	percent_possible_obs DECIMAL CHECK ( percent_possible_obs >= 0 AND percent_possible_obs <= 100 ) ,
 -- ATTRIBUTE
 	pdbx_ordinal INTEGER NOT NULL
@@ -19103,8 +19103,8 @@ CREATE TYPE ENUM_space_group_crystal_system AS ENUM ( 'triclinic', 'monoclinic',
 CREATE TABLE space_group (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
--- xsd:restriction/xsd:maxInclusive: 230
--- xsd:restriction/xsd:minInclusive: 1
+-- xsd:restriction/xsd:maxInclusive="230"
+-- xsd:restriction/xsd:minInclusive="1"
 	"IT_number" INTEGER CHECK ( "IT_number" >= 1 AND "IT_number" <= 230 ) ,
 	crystal_system ENUM_space_group_crystal_system ,
 	"name_H-M_alt" TEXT ,
@@ -19142,7 +19142,7 @@ CREATE TABLE struct (
 	"pdbx_CASP_flag" ENUM_struct_pdbx_CASP_flag ,
 	pdbx_descriptor TEXT ,
 	pdbx_details TEXT ,
--- xsd:restriction/xsd:minInclusive: 1
+-- xsd:restriction/xsd:minInclusive="1"
 	pdbx_formula_weight DECIMAL CHECK ( pdbx_formula_weight >= 1 ) ,
 	pdbx_formula_weight_method TEXT ,
 	pdbx_model_details TEXT ,
