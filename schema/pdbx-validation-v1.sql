@@ -17,6 +17,7 @@
 --  retrieve field annotation: false
 --  map integer numbers to: signed int 32 bits
 --  map decimal numbers to: big decimal
+--  map xsd date type to: sql date type
 --
 -- Statistics of schema:
 --  Generated 447 tables (3550 fields), 0 attr groups, 0 model groups in total
@@ -27,7 +28,7 @@
 --   Table types:
 --    0 root, 0 root children, 0 admin roots, 447 admin children
 --   System keys:
---    0 primary keys (0 unique constraints), 0 foreign keys, 0 nested keys (0 as attribute)
+--    0 primary keys (0 unique constraints), 0 foreign keys, 0 nested keys (0 as attribute, 0 as attribute group)
 --   User keys:
 --    402 document keys, 0 serial keys, 0 xpath keys
 --   Contents:
@@ -706,6 +707,7 @@ CREATE TABLE pdbx_audit_revision_history (
 	entry_id TEXT ,
 	major_revision INTEGER ,
 	minor_revision INTEGER ,
+-- map XSD date (xsd:date) to SQL DATE
 	revision_date DATE ,
 -- ATTRIBUTE
 	data_content_type ENUM_pdbx_audit_revision_history_data_content_type NOT NULL ,
@@ -2584,6 +2586,7 @@ CREATE TABLE em_imaging (
 	calibrated_magnification INTEGER CHECK ( calibrated_magnification > 1 ) ,
 	citation_id TEXT ,
 	cryogen ENUM_em_imaging_cryogen ,
+-- map XSD date (xsd:date) to SQL DATE
 	date DATE ,
 	details TEXT ,
 	electron_beam_tilt_params TEXT ,
@@ -3335,11 +3338,13 @@ CREATE TABLE pdbx_database_status (
 	methods_development_category ENUM_pdbx_database_status_methods_development_category ,
 	pdb_format_compatible ENUM_pdbx_database_status_pdb_format_compatible ,
 	process_site ENUM_pdbx_database_status_process_site ,
+-- map XSD date (xsd:date) to SQL DATE
 	recvd_initial_deposition_date DATE ,
 	status_code ENUM_pdbx_database_status_status_code ,
 	status_code_cs ENUM_pdbx_database_status_status_code_cs ,
 	status_code_mr ENUM_pdbx_database_status_status_code_mr ,
 	status_code_sf ENUM_pdbx_database_status_status_code_sf ,
+-- map XSD date (xsd:date) to SQL DATE
 	validation_created_date DATE ,
 -- ATTRIBUTE, IN-PLACE DOCUMENT KEY
 	entry_id TEXT NOT NULL
