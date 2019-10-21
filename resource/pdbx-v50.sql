@@ -17,6 +17,7 @@
 --  retrieve field annotation: false
 --  map integer numbers to: signed int 32 bits
 --  map decimal numbers to: big decimal
+--  map xsd date type to: sql date type
 --
 -- Statistics of schema:
 --  Generated 898 tables (7351 fields), 0 attr groups, 0 model groups in total
@@ -27,7 +28,7 @@
 --   Table types:
 --    0 root, 0 root children, 0 admin roots, 898 admin children
 --   System keys:
---    0 primary keys (0 unique constraints), 0 foreign keys, 0 nested keys (0 as attribute)
+--    0 primary keys (0 unique constraints), 0 foreign keys, 0 nested keys (0 as attribute, 0 as attribute group)
 --   User keys:
 --    898 document keys, 0 serial keys, 0 xpath keys
 --   Contents:
@@ -1042,11 +1043,13 @@ CREATE TABLE chem_comp (
 	pdbx_formal_charge INTEGER ,
 	pdbx_ideal_coordinates_details TEXT ,
 	pdbx_ideal_coordinates_missing_flag ENUM_chem_comp_pdbx_ideal_coordinates_missing_flag ,
+-- map XSD date (xsd:date) to SQL DATE
 	pdbx_initial_date DATE ,
 	pdbx_model_coordinates_db_code TEXT ,
 	pdbx_model_coordinates_details TEXT ,
 	pdbx_model_coordinates_missing_flag ENUM_chem_comp_pdbx_model_coordinates_missing_flag ,
 	pdbx_modification_details TEXT ,
+-- map XSD date (xsd:date) to SQL DATE
 	pdbx_modified_date DATE ,
 	pdbx_nscnum TEXT ,
 	pdbx_number_subcomponents INTEGER ,
@@ -1500,6 +1503,7 @@ CREATE TABLE pdbx_audit_revision_history (
 	internal_version INTEGER ,
 	major_revision INTEGER ,
 	minor_revision INTEGER ,
+-- map XSD date (xsd:date) to SQL DATE
 	revision_date DATE ,
 -- ATTRIBUTE
 	data_content_type ENUM_pdbx_audit_revision_history_data_content_type NOT NULL ,
@@ -2188,6 +2192,7 @@ CREATE TABLE atom_sites_alt_ens (
 CREATE TABLE audit (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
+-- map XSD date (xsd:date) to SQL DATE
 	creation_date DATE ,
 	creation_method TEXT ,
 	update_record TEXT ,
@@ -2209,7 +2214,9 @@ CREATE TABLE "database_PDB_rev" (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
 	author_name TEXT ,
+-- map XSD date (xsd:date) to SQL DATE
 	date DATE ,
+-- map XSD date (xsd:date) to SQL DATE
 	date_original DATE ,
 	mod_type ENUM_database_PDB_rev_mod_type ,
 	pdbx_record_revised_1 TEXT ,
@@ -4926,6 +4933,7 @@ CREATE TABLE diffrn_measurement (
 	device_details TEXT ,
 	device_type TEXT ,
 	method TEXT ,
+-- map XSD date (xsd:date) to SQL DATE
 	pdbx_date DATE ,
 	specimen_support TEXT ,
 -- ATTRIBUTE
@@ -5596,13 +5604,19 @@ CREATE TABLE em_admin (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
 	current_status ENUM_em_admin_current_status ,
+-- map XSD date (xsd:date) to SQL DATE
 	deposition_date DATE ,
 	deposition_site ENUM_em_admin_deposition_site ,
 	details TEXT ,
+-- map XSD date (xsd:date) to SQL DATE
 	header_release_date DATE ,
+-- map XSD date (xsd:date) to SQL DATE
 	last_update DATE ,
+-- map XSD date (xsd:date) to SQL DATE
 	map_hold_date DATE ,
+-- map XSD date (xsd:date) to SQL DATE
 	map_release_date DATE ,
+-- map XSD date (xsd:date) to SQL DATE
 	obsoleted_date DATE ,
 	replace_existing_entry_flag ENUM_em_admin_replace_existing_entry_flag ,
 	title TEXT ,
@@ -6585,6 +6599,7 @@ CREATE TABLE em_imaging (
 	calibrated_magnification INTEGER CHECK ( calibrated_magnification > 1 ) ,
 	citation_id TEXT ,
 	cryogen ENUM_em_imaging_cryogen ,
+-- map XSD date (xsd:date) to SQL DATE
 	date DATE ,
 	details TEXT ,
 	detector_id TEXT ,
@@ -6858,6 +6873,7 @@ CREATE TABLE em_mask_depositor_info (
 CREATE TABLE em_obsolete (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
+-- map XSD date (xsd:date) to SQL DATE
 	date DATE ,
 	details TEXT ,
 	entry TEXT ,
@@ -7136,6 +7152,7 @@ CREATE TABLE em_structure_factors_depositor_info (
 CREATE TABLE em_supersede (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
+-- map XSD date (xsd:date) to SQL DATE
 	date DATE ,
 	details TEXT ,
 	entry TEXT ,
@@ -8245,15 +8262,25 @@ CREATE TABLE journal (
 	coeditor_notes TEXT ,
 	coeditor_phone TEXT ,
 	data_validation_number TEXT ,
+-- map XSD date (xsd:date) to SQL DATE
 	date_accepted DATE ,
+-- map XSD date (xsd:date) to SQL DATE
 	date_from_coeditor DATE ,
+-- map XSD date (xsd:date) to SQL DATE
 	date_printers_final DATE ,
+-- map XSD date (xsd:date) to SQL DATE
 	date_printers_first DATE ,
+-- map XSD date (xsd:date) to SQL DATE
 	date_proofs_in DATE ,
+-- map XSD date (xsd:date) to SQL DATE
 	date_proofs_out DATE ,
+-- map XSD date (xsd:date) to SQL DATE
 	date_recd_copyright DATE ,
+-- map XSD date (xsd:date) to SQL DATE
 	date_recd_electronic DATE ,
+-- map XSD date (xsd:date) to SQL DATE
 	date_recd_hard_copy DATE ,
+-- map XSD date (xsd:date) to SQL DATE
 	date_to_coeditor DATE ,
 	issue TEXT ,
 	language TEXT ,
@@ -8884,6 +8911,7 @@ CREATE TABLE pdbx_chem_comp_audit (
 -- ATTRIBUTE
 	comp_id TEXT NOT NULL ,
 -- ATTRIBUTE
+-- map XSD date (xsd:date) to SQL DATE
 	date DATE NOT NULL
 );
 
@@ -9066,6 +9094,7 @@ CREATE TABLE pdbx_chem_comp_model_audit (
 -- ATTRIBUTE
 	action_type ENUM_pdbx_chem_comp_model_audit_action_type NOT NULL ,
 -- ATTRIBUTE
+-- map XSD date (xsd:date) to SQL DATE
 	date DATE NOT NULL ,
 -- ATTRIBUTE
 	model_id TEXT NOT NULL
@@ -9255,11 +9284,13 @@ CREATE TABLE pdbx_connect (
 	document_id TEXT ,
 	class_1 TEXT ,
 	class_2 TEXT ,
+-- map XSD date (xsd:date) to SQL DATE
 	date DATE ,
 	formal_charge INTEGER ,
 	formul TEXT ,
 	hetgroup_chemical_name TEXT ,
 	hetgroup_name TEXT ,
+-- map XSD date (xsd:date) to SQL DATE
 	modified_date DATE ,
 	parent_residue TEXT ,
 	status TEXT ,
@@ -9849,6 +9880,7 @@ CREATE TABLE pdbx_database_status (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
 	"SG_entry" ENUM_pdbx_database_status_SG_entry ,
+-- map XSD date (xsd:date) to SQL DATE
 	auth_req_rel_date DATE ,
 	author_approval_type ENUM_pdbx_database_status_author_approval_type ,
 	author_release_status_code ENUM_pdbx_database_status_author_release_status_code ,
@@ -9867,12 +9899,18 @@ CREATE TABLE pdbx_database_status (
 	date_hold_struct_fact TEXT ,
 	date_manuscript TEXT ,
 	date_nmr_constraints TEXT ,
+-- map XSD date (xsd:date) to SQL DATE
 	"date_of_NDB_release" DATE ,
 	"date_of_PDB_release" TEXT ,
+-- map XSD date (xsd:date) to SQL DATE
 	date_of_cs_release DATE ,
+-- map XSD date (xsd:date) to SQL DATE
 	date_of_mr_release DATE ,
+-- map XSD date (xsd:date) to SQL DATE
 	date_of_sf_release DATE ,
+-- map XSD date (xsd:date) to SQL DATE
 	"date_released_to_PDB" DATE ,
+-- map XSD date (xsd:date) to SQL DATE
 	date_revised DATE ,
 	date_struct_fact TEXT ,
 	date_submitted TEXT ,
@@ -9890,6 +9928,7 @@ CREATE TABLE pdbx_database_status (
 	pdb_format_compatible ENUM_pdbx_database_status_pdb_format_compatible ,
 	pdbx_annotator TEXT ,
 	post_rel_recvd_coord ENUM_pdbx_database_status_post_rel_recvd_coord ,
+-- map XSD date (xsd:date) to SQL DATE
 	post_rel_recvd_coord_date DATE ,
 	post_rel_status ENUM_pdbx_database_status_post_rel_status ,
 	process_site ENUM_pdbx_database_status_process_site ,
@@ -9898,6 +9937,7 @@ CREATE TABLE pdbx_database_status (
 	recvd_chemical_shifts ENUM_pdbx_database_status_recvd_chemical_shifts ,
 	recvd_coordinates ENUM_pdbx_database_status_recvd_coordinates ,
 	recvd_deposit_form ENUM_pdbx_database_status_recvd_deposit_form ,
+-- map XSD date (xsd:date) to SQL DATE
 	recvd_initial_deposition_date DATE ,
 	recvd_internal_approval ENUM_pdbx_database_status_recvd_internal_approval ,
 	recvd_manuscript ENUM_pdbx_database_status_recvd_manuscript ,
@@ -11754,6 +11794,7 @@ CREATE TABLE pdbx_family_prd_audit (
 -- ATTRIBUTE
 	action_type ENUM_pdbx_family_prd_audit_action_type NOT NULL ,
 -- ATTRIBUTE
+-- map XSD date (xsd:date) to SQL DATE
 	date DATE NOT NULL ,
 -- ATTRIBUTE
 	family_prd_id TEXT NOT NULL
@@ -13558,6 +13599,7 @@ CREATE TABLE pdbx_prd_audit (
 -- ATTRIBUTE
 	action_type ENUM_pdbx_prd_audit_action_type NOT NULL ,
 -- ATTRIBUTE
+-- map XSD date (xsd:date) to SQL DATE
 	date DATE NOT NULL ,
 -- ATTRIBUTE
 	prd_id TEXT NOT NULL
@@ -16942,6 +16984,7 @@ CREATE TABLE pdbx_version (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
 	details TEXT ,
+-- map XSD date (xsd:date) to SQL DATE
 	revision_date DATE ,
 -- ATTRIBUTE
 	entry_id TEXT NOT NULL ,

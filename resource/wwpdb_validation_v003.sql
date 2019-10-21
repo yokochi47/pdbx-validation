@@ -17,6 +17,7 @@
 --  retrieve field annotation: false
 --  map integer numbers to: signed int 32 bits
 --  map decimal numbers to: big decimal
+--  map xsd date type to: sql date type
 --
 -- Statistics of schema:
 --  Generated 25 tables (274 fields), 0 attr groups, 0 model groups in total
@@ -27,7 +28,7 @@
 --   Table types:
 --    0 root, 25 root children, 0 admin roots, 0 admin children
 --   System keys:
---    0 primary keys (0 unique constraints), 0 foreign keys, 0 nested keys (0 as attribute)
+--    0 primary keys (0 unique constraints), 0 foreign keys, 0 nested keys (0 as attribute, 0 as attribute group)
 --   User keys:
 --    25 document keys, 0 serial keys, 0 xpath keys
 --   Contents:
