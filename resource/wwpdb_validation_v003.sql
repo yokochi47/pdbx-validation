@@ -7,6 +7,7 @@
 --  explicit named schema: false
 --  relational extension: false
 --  inline simple content: false
+--  realize simple bridge: false
 --  wild card extension: true
 --  case sensitive name: true
 --  no name collision: true
@@ -20,7 +21,7 @@
 --  map xsd date type to: sql date type
 --
 -- Statistics of schema:
---  Generated 25 tables (274 fields), 0 attr groups, 0 model groups in total
+--  Generated 25 tables (274 fields), 0 views (0 fields), 0 attr groups, 0 model groups in total
 --   Namespaces:
 --    http://www.w3.org/2001/XMLSchema (xsd)
 --   Schema locations:

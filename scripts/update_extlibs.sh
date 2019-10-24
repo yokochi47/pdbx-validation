@@ -19,10 +19,10 @@ fi
 EXTLIBS=./extlibs
 
 SAXON=Saxon-HE
-SAXON_VER=9.9.1-4
+SAXON_VER=9.9.1-5
 
 XSD2PGSCHEMA=xsd2pgschema
-XSD2PGSCHEMA_VER=3.[0-9].[0-9]
+XSD2PGSCHEMA_VER=4.[0-9].[0-9]
 
 mkdir -p $EXTLIBS
 
