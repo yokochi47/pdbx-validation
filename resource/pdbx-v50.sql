@@ -41,8 +41,8 @@
 --
 
 --
--- PDBML Schema v5.317
--- PDBML Schema translated from the PDBx/mmCIF Dictionary v5.317: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
+-- PDBML Schema v5.318
+-- PDBML Schema translated from the PDBx/mmCIF Dictionary v5.318: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
 -- URI-reference = http://pdbml.pdb.org/schema/pdbx-v50.xsd
 --
 
