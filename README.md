@@ -125,8 +125,9 @@ File path | Document
 
 ## Release notes
 
-- **Oct 29, 2019**: Release v1.6.3
+- **Nov 1, 2019**: Release v1.6.3
 	- Update wwPDB Validation Information Dictionary from v1.315 to 1.318.
+	- Update PostgreSQL DDLs.
 
 - **Sep 18, 2019**: Release v1.6.2
 	- Update wwPDB Validation Information Dictionary from v1.314 to 1.315.

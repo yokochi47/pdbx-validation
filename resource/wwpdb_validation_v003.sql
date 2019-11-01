@@ -6,7 +6,7 @@
 -- Schema modeling options:
 --  explicit named schema: false
 --  relational extension: false
---  inline simple content: false
+--  inline simple content: true
 --  realize simple bridge: false
 --  wild card extension: true
 --  case sensitive name: true
@@ -21,19 +21,22 @@
 --  map xsd date type to: sql date type
 --
 -- Statistics of schema:
---  Generated 25 tables (274 fields), 0 views (0 fields), 0 attr groups, 0 model groups in total
+--  Generated 17 tables (270 fields), 0 views (0 fields), 0 attr groups, 0 model groups in total
+--   Unnecessary tables by inlining simple content as a primitive data type:
+--    schema location: resource/wwpdb_validation_v003.xsd
+--      atom_name, "floatORunavailable", "BfactorType", "YesString", percentile_rank, percentage
 --   Namespaces:
 --    http://www.w3.org/2001/XMLSchema (xsd)
 --   Schema locations:
 --    resource/wwpdb_validation_v003.xsd
 --   Table types:
---    0 root, 25 root children, 0 admin roots, 0 admin children
+--    0 root, 17 root children, 0 admin roots, 0 admin children
 --   System keys:
 --    0 primary keys (0 unique constraints), 0 foreign keys, 0 nested keys (0 as attribute, 0 as attribute group)
 --   User keys:
---    25 document keys, 0 serial keys, 0 xpath keys
+--    17 document keys, 0 serial keys, 0 xpath keys
 --   Contents:
---    249 attributes (0 in-place document keys), 0 elements (0 in-place document keys), 0 simple contents (0 in-place document keys, 0 as attribute, 0 as conditional attribute)
+--    253 attributes (0 in-place document keys), 0 elements (0 in-place document keys), 0 simple contents (0 in-place document keys, 0 as attribute, 0 as conditional attribute)
 --   Wild cards:
 --    0 any elements, 0 any attributes
 --   Constraints:
@@ -44,12 +47,8 @@
 -- COPYRIGHT ***************************************************************** Copyright 2014-2017 EMBL - European Bioinformatics Institute Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. ***************************************************************** This is a XML schema for checking entry-specific validation XML documents from wwPDB. versions published: v1 2014/02/20 http://wwpdb.org/validation/schema/wwpdb_validation_v1.xsd v002 2016/02/25 http://wwpdb.org/validation/schema/wwpdb_validation_v002.xsd v002 2017/08/31 http://wwpdb.org/validation/schema/wwpdb_validation_v002.xsd (with annotations) v003 2019/05/27 http://wwpdb.org/validation/schema/wwpdb_validation_v003.xsd (added local_density, no-ligands-for-buster-report ligands-for-buster-report attribute) $Revision$ *****************************************************************
 --
 
-DROP TABLE IF EXISTS unmapped_chemical_shift CASCADE;
-DROP TABLE IF EXISTS unparsed_chemical_shift CASCADE;
 DROP TABLE IF EXISTS missing_nmrstar_tag CASCADE;
 DROP TABLE IF EXISTS random_coil_index CASCADE;
-DROP TABLE IF EXISTS chemical_shift_outlier CASCADE;
-DROP TABLE IF EXISTS referencing_offset CASCADE;
 DROP TABLE IF EXISTS assignment_completeness_well_defined CASCADE;
 DROP TABLE IF EXISTS assignment_completeness_full_length CASCADE;
 DROP TABLE IF EXISTS chemical_shift_list CASCADE;
@@ -57,68 +56,14 @@ DROP TABLE IF EXISTS "Entry" CASCADE;
 DROP TABLE IF EXISTS "Model" CASCADE;
 DROP TABLE IF EXISTS "bond-outlier" CASCADE;
 DROP TABLE IF EXISTS "angle-outlier" CASCADE;
-DROP TABLE IF EXISTS "chiral-outlier" CASCADE;
 DROP TABLE IF EXISTS "plane-outlier" CASCADE;
-DROP TABLE IF EXISTS clash CASCADE;
-DROP TABLE IF EXISTS "symm-clash" CASCADE;
 DROP TABLE IF EXISTS "mog-bond-outlier" CASCADE;
 DROP TABLE IF EXISTS "mog-angle-outlier" CASCADE;
-DROP TABLE IF EXISTS "mog-torsion-outlier" CASCADE;
 DROP TABLE IF EXISTS "mog-ring-outlier" CASCADE;
 DROP TABLE IF EXISTS "ModelledSubgroup" CASCADE;
 DROP TABLE IF EXISTS cyrange_domain CASCADE;
 DROP TABLE IF EXISTS "ModelledEntityInstance" CASCADE;
 DROP TABLE IF EXISTS program CASCADE;
-
---
--- Each assigned chemical shift should map to one or more nuclei of the studied biological macromolecule or complex. In preliminary reports and for some older entries, this mapping is not always accurate and some chemical shifts can therefore be "unmapped". It implies, that the chemical shift was parsed, but not mapped to any nucleus expected from the molecular description. It may result for instance from typos or from an incomplete molecular description. Details are given in the free text "diagnostic" attribute.
--- xmlns: no namespace, schema location: resource/wwpdb_validation_v003.xsd
--- type: root child, content: true, list: false, bridge: false, virtual: false
---
-CREATE TABLE unmapped_chemical_shift (
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
--- ATTRIBUTE
-	chain TEXT ,
--- ATTRIBUTE
-	rescode TEXT ,
--- ATTRIBUTE
-	resnum INTEGER ,
--- ATTRIBUTE
-	value DECIMAL ,
--- ATTRIBUTE
-	error TEXT ,
--- ATTRIBUTE
-	ambiguity TEXT ,
--- ATTRIBUTE
-	diagnostic TEXT
-);
-
---
--- An unparsed chemical shift implies that some expected values were missing or did not conform to expected format: e.g., non-numeric value of a shift measurement or missing chain/entity identifier.
--- xmlns: no namespace, schema location: resource/wwpdb_validation_v003.xsd
--- type: root child, content: true, list: false, bridge: false, virtual: false
---
-CREATE TABLE unparsed_chemical_shift (
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
--- ATTRIBUTE
-	id TEXT ,
--- ATTRIBUTE
-	chain TEXT ,
--- ATTRIBUTE
-	rescode TEXT ,
--- ATTRIBUTE
-	resnum INTEGER ,
--- ATTRIBUTE
-	value DECIMAL ,
--- ATTRIBUTE
-	error TEXT ,
--- ATTRIBUTE
-	ambiguity TEXT ,
--- ATTRIBUTE
-	diagnostic TEXT
-);
 
 --
 -- The chemical shifts must be supplied in NMR-STAR 3.1 format. In order for the shifts to be mapped to the molecular structure, certain values (data items or tags) must be provided.
@@ -150,48 +95,6 @@ CREATE TABLE random_coil_index (
 	resnum INTEGER ,
 -- ATTRIBUTE
 	value DECIMAL
-);
-
---
--- BMRB compiled statistics of assigned chemical shifts, against which a given value is checked. A value is deemed an outlier if it is 5 standard deviation away from the expected mean.
--- xmlns: no namespace, schema location: resource/wwpdb_validation_v003.xsd
--- type: root child, content: true, list: false, bridge: false, virtual: false
---
-CREATE TABLE chemical_shift_outlier (
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
--- ATTRIBUTE
-	chain TEXT ,
--- ATTRIBUTE
-	rescode TEXT ,
--- ATTRIBUTE
-	resnum INTEGER ,
--- ATTRIBUTE
-	value DECIMAL ,
--- ATTRIBUTE
-	zscore DECIMAL ,
--- ATTRIBUTE
-	prediction DECIMAL NOT NULL ,
--- ATTRIBUTE
-	method TEXT NOT NULL
-);
-
---
--- PANAV software is used to calculate suggested referencing correction for each chemical shift list.
--- xmlns: no namespace, schema location: resource/wwpdb_validation_v003.xsd
--- type: root child, content: true, list: false, bridge: false, virtual: false
---
-CREATE TABLE referencing_offset (
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
--- ATTRIBUTE
-	uncertainty DECIMAL NOT NULL ,
--- ATTRIBUTE
-	precision DECIMAL ,
--- ATTRIBUTE
-	value DECIMAL ,
--- ATTRIBUTE
-	number_of_measurements INTEGER NOT NULL
 );
 
 --
@@ -271,6 +174,10 @@ CREATE TABLE chemical_shift_list (
 -- xmlns: no namespace, schema location: resource/wwpdb_validation_v003.xsd
 -- type: root child, content: true, list: false, bridge: false, virtual: false
 --
+DROP TYPE IF EXISTS ENUM_YesString_content CASCADE;
+CREATE TYPE ENUM_YesString_content AS ENUM ( 'yes' );
+DROP TYPE IF EXISTS ENUM_BfactorType_content CASCADE;
+CREATE TYPE ENUM_BfactorType_content AS ENUM ( 'PARTIAL', 'FULL' );
 CREATE TABLE "Entry" (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
@@ -283,7 +190,21 @@ CREATE TABLE "Entry" (
 -- ATTRIBUTE
 	"PDB-revision-date" TEXT ,
 -- ATTRIBUTE
+-- xsd:union/@memberTypes="xsd:decimal NotAvailable"
+	"PDB-resolution" TEXT ,
+-- ATTRIBUTE
+-- xsd:union/@memberTypes="xsd:decimal NotAvailable"
+	"PDB-resolution-low" TEXT ,
+-- ATTRIBUTE
+-- xsd:union/@memberTypes="xsd:decimal NotAvailable"
+	"PDB-R" TEXT ,
+-- ATTRIBUTE
+-- xsd:union/@memberTypes="xsd:decimal NotAvailable"
+	"PDB-Rfree" TEXT ,
+-- ATTRIBUTE
 	"protein-DNA-RNA-entities" TEXT ,
+-- ATTRIBUTE
+	"CA_ONLY" ENUM_YesString_content ,
 -- ATTRIBUTE
 	"XMLcreationDate" TEXT ,
 -- ATTRIBUTE
@@ -294,6 +215,12 @@ CREATE TABLE "Entry" (
 	"chemicalshiftsInputFilename" TEXT ,
 -- ATTRIBUTE
 	"attemptedValidationSteps" TEXT ,
+-- ATTRIBUTE
+	"no-ligands-for-mogul" ENUM_YesString_content ,
+-- ATTRIBUTE
+	"no-ligands-for-buster-report" ENUM_YesString_content ,
+-- ATTRIBUTE
+	"ligands-for-buster-report" ENUM_YesString_content ,
 -- ATTRIBUTE
 	"RestypesNotcheckedForBondAngleGeometry" TEXT ,
 -- ATTRIBUTE
@@ -312,6 +239,22 @@ CREATE TABLE "Entry" (
 	"clashscore-full-length" DECIMAL ,
 -- ATTRIBUTE
 	"RNAsuiteness" DECIMAL ,
+-- ATTRIBUTE
+-- xsd:restriction/xsd:maxInclusive="100."
+-- xsd:restriction/xsd:minInclusive="0."
+	"percent-rama-outliers" REAL CHECK ( "percent-rama-outliers" >= 0.0 AND "percent-rama-outliers" <= 100.0 ) ,
+-- ATTRIBUTE
+-- xsd:restriction/xsd:maxInclusive="100."
+-- xsd:restriction/xsd:minInclusive="0."
+	"percent-rama-outliers-full-length" REAL CHECK ( "percent-rama-outliers-full-length" >= 0.0 AND "percent-rama-outliers-full-length" <= 100.0 ) ,
+-- ATTRIBUTE
+-- xsd:restriction/xsd:maxInclusive="100."
+-- xsd:restriction/xsd:minInclusive="0."
+	"percent-rota-outliers" REAL CHECK ( "percent-rota-outliers" >= 0.0 AND "percent-rota-outliers" <= 100.0 ) ,
+-- ATTRIBUTE
+-- xsd:restriction/xsd:maxInclusive="100."
+-- xsd:restriction/xsd:minInclusive="0."
+	"percent-rota-outliers-full-length" REAL CHECK ( "percent-rota-outliers-full-length" >= 0.0 AND "percent-rota-outliers-full-length" <= 100.0 ) ,
 -- ATTRIBUTE
 	"CCP4version" TEXT ,
 -- ATTRIBUTE
@@ -343,11 +286,24 @@ CREATE TABLE "Entry" (
 -- ATTRIBUTE
 	"TwinFraction" TEXT ,
 -- ATTRIBUTE
+	"B_factor_type" ENUM_BfactorType_content ,
+-- ATTRIBUTE
+-- xsd:restriction/xsd:maxInclusive="100."
+-- xsd:restriction/xsd:minInclusive="0."
+	"DataCompleteness" REAL CHECK ( "DataCompleteness" >= 0.0 AND "DataCompleteness" <= 100.0 ) ,
+-- ATTRIBUTE
 	"DCC_R" DECIMAL ,
+-- ATTRIBUTE
+-- xsd:union/@memberTypes="xsd:decimal NotAvailable"
+	"DCC_Rfree" TEXT ,
 -- ATTRIBUTE
 	"DCC_refinement_program" TEXT ,
 -- ATTRIBUTE
 	"num-free-reflections" INTEGER ,
+-- ATTRIBUTE
+-- xsd:restriction/xsd:maxInclusive="100."
+-- xsd:restriction/xsd:minInclusive="0."
+	"percent-free-reflections" REAL CHECK ( "percent-free-reflections" >= 0.0 AND "percent-free-reflections" <= 100.0 ) ,
 -- ATTRIBUTE
 	"RefmacVersion" TEXT ,
 -- ATTRIBUTE
@@ -366,6 +322,10 @@ CREATE TABLE "Entry" (
 	bulk_solvent_b DECIMAL ,
 -- ATTRIBUTE
 	bulk_solvent_k DECIMAL ,
+-- ATTRIBUTE
+-- xsd:restriction/xsd:maxInclusive="100."
+-- xsd:restriction/xsd:minInclusive="0."
+	"percent-RSRZ-outliers" REAL CHECK ( "percent-RSRZ-outliers" >= 0.0 AND "percent-RSRZ-outliers" <= 100.0 ) ,
 -- ATTRIBUTE
 	nmr_models_consistency_flag TEXT ,
 -- ATTRIBUTE
@@ -403,7 +363,15 @@ CREATE TABLE "Entry" (
 -- ATTRIBUTE
 	"no-percentile-property" BOOLEAN ,
 -- ATTRIBUTE
+-- xsd:restriction/xsd:maxInclusive="100."
+-- xsd:restriction/xsd:minInclusive="0."
+	"absolute-percentile-RNAsuiteness" REAL CHECK ( "absolute-percentile-RNAsuiteness" >= 0.0 AND "absolute-percentile-RNAsuiteness" <= 100.0 ) ,
+-- ATTRIBUTE
 	"numPDBids-absolute-percentile-RNAsuiteness" INTEGER ,
+-- ATTRIBUTE
+-- xsd:restriction/xsd:maxInclusive="100."
+-- xsd:restriction/xsd:minInclusive="0."
+	"relative-percentile-RNAsuiteness" REAL CHECK ( "relative-percentile-RNAsuiteness" >= 0.0 AND "relative-percentile-RNAsuiteness" <= 100.0 ) ,
 -- ATTRIBUTE
 	"numPDBids-relative-percentile-RNAsuiteness" INTEGER ,
 -- ATTRIBUTE
@@ -411,7 +379,15 @@ CREATE TABLE "Entry" (
 -- ATTRIBUTE
 	"high-resol-relative-percentile-RNAsuiteness" DECIMAL ,
 -- ATTRIBUTE
+-- xsd:restriction/xsd:maxInclusive="100."
+-- xsd:restriction/xsd:minInclusive="0."
+	"absolute-percentile-clashscore" REAL CHECK ( "absolute-percentile-clashscore" >= 0.0 AND "absolute-percentile-clashscore" <= 100.0 ) ,
+-- ATTRIBUTE
 	"numPDBids-absolute-percentile-clashscore" INTEGER ,
+-- ATTRIBUTE
+-- xsd:restriction/xsd:maxInclusive="100."
+-- xsd:restriction/xsd:minInclusive="0."
+	"relative-percentile-clashscore" REAL CHECK ( "relative-percentile-clashscore" >= 0.0 AND "relative-percentile-clashscore" <= 100.0 ) ,
 -- ATTRIBUTE
 	"numPDBids-relative-percentile-clashscore" INTEGER ,
 -- ATTRIBUTE
@@ -419,7 +395,15 @@ CREATE TABLE "Entry" (
 -- ATTRIBUTE
 	"high-resol-relative-percentile-clashscore" DECIMAL ,
 -- ATTRIBUTE
+-- xsd:restriction/xsd:maxInclusive="100."
+-- xsd:restriction/xsd:minInclusive="0."
+	"absolute-percentile-percent-rama-outliers" REAL CHECK ( "absolute-percentile-percent-rama-outliers" >= 0.0 AND "absolute-percentile-percent-rama-outliers" <= 100.0 ) ,
+-- ATTRIBUTE
 	"numPDBids-absolute-percentile-percent-rama-outliers" INTEGER ,
+-- ATTRIBUTE
+-- xsd:restriction/xsd:maxInclusive="100."
+-- xsd:restriction/xsd:minInclusive="0."
+	"relative-percentile-percent-rama-outliers" REAL CHECK ( "relative-percentile-percent-rama-outliers" >= 0.0 AND "relative-percentile-percent-rama-outliers" <= 100.0 ) ,
 -- ATTRIBUTE
 	"numPDBids-relative-percentile-percent-rama-outliers" INTEGER ,
 -- ATTRIBUTE
@@ -427,7 +411,15 @@ CREATE TABLE "Entry" (
 -- ATTRIBUTE
 	"high-resol-relative-percentile-percent-rama-outliers" DECIMAL ,
 -- ATTRIBUTE
+-- xsd:restriction/xsd:maxInclusive="100."
+-- xsd:restriction/xsd:minInclusive="0."
+	"absolute-percentile-percent-rota-outliers" REAL CHECK ( "absolute-percentile-percent-rota-outliers" >= 0.0 AND "absolute-percentile-percent-rota-outliers" <= 100.0 ) ,
+-- ATTRIBUTE
 	"numPDBids-absolute-percentile-percent-rota-outliers" INTEGER ,
+-- ATTRIBUTE
+-- xsd:restriction/xsd:maxInclusive="100."
+-- xsd:restriction/xsd:minInclusive="0."
+	"relative-percentile-percent-rota-outliers" REAL CHECK ( "relative-percentile-percent-rota-outliers" >= 0.0 AND "relative-percentile-percent-rota-outliers" <= 100.0 ) ,
 -- ATTRIBUTE
 	"numPDBids-relative-percentile-percent-rota-outliers" INTEGER ,
 -- ATTRIBUTE
@@ -435,7 +427,15 @@ CREATE TABLE "Entry" (
 -- ATTRIBUTE
 	"high-resol-relative-percentile-percent-rota-outliers" DECIMAL ,
 -- ATTRIBUTE
+-- xsd:restriction/xsd:maxInclusive="100."
+-- xsd:restriction/xsd:minInclusive="0."
+	"absolute-percentile-DCC_Rfree" REAL CHECK ( "absolute-percentile-DCC_Rfree" >= 0.0 AND "absolute-percentile-DCC_Rfree" <= 100.0 ) ,
+-- ATTRIBUTE
 	"numPDBids-absolute-percentile-DCC_Rfree" INTEGER ,
+-- ATTRIBUTE
+-- xsd:restriction/xsd:maxInclusive="100."
+-- xsd:restriction/xsd:minInclusive="0."
+	"relative-percentile-DCC_Rfree" REAL CHECK ( "relative-percentile-DCC_Rfree" >= 0.0 AND "relative-percentile-DCC_Rfree" <= 100.0 ) ,
 -- ATTRIBUTE
 	"numPDBids-relative-percentile-DCC_Rfree" INTEGER ,
 -- ATTRIBUTE
@@ -443,7 +443,15 @@ CREATE TABLE "Entry" (
 -- ATTRIBUTE
 	"high-resol-relative-percentile-DCC_Rfree" DECIMAL ,
 -- ATTRIBUTE
+-- xsd:restriction/xsd:maxInclusive="100."
+-- xsd:restriction/xsd:minInclusive="0."
+	"absolute-percentile-percent-RSRZ-outliers" REAL CHECK ( "absolute-percentile-percent-RSRZ-outliers" >= 0.0 AND "absolute-percentile-percent-RSRZ-outliers" <= 100.0 ) ,
+-- ATTRIBUTE
 	"numPDBids-absolute-percentile-percent-RSRZ-outliers" INTEGER ,
+-- ATTRIBUTE
+-- xsd:restriction/xsd:maxInclusive="100."
+-- xsd:restriction/xsd:minInclusive="0."
+	"relative-percentile-percent-RSRZ-outliers" REAL CHECK ( "relative-percentile-percent-RSRZ-outliers" >= 0.0 AND "relative-percentile-percent-RSRZ-outliers" <= 100.0 ) ,
 -- ATTRIBUTE
 	"numPDBids-relative-percentile-percent-RSRZ-outliers" INTEGER ,
 -- ATTRIBUTE
@@ -477,13 +485,21 @@ CREATE TABLE "bond-outlier" (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
 -- ATTRIBUTE
+-- xsd:restriction/xsd:minLength="1"
+	atom0 TEXT ,
+-- ATTRIBUTE
+-- xsd:restriction/xsd:minLength="1"
+	atom1 TEXT ,
+-- ATTRIBUTE
 	mean DECIMAL ,
 -- ATTRIBUTE
 	stdev DECIMAL ,
 -- ATTRIBUTE
 	obs DECIMAL ,
 -- ATTRIBUTE
-	z DECIMAL
+	z DECIMAL ,
+-- ATTRIBUTE
+	link ENUM_YesString_content
 );
 
 --
@@ -495,27 +511,24 @@ CREATE TABLE "angle-outlier" (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
 -- ATTRIBUTE
+-- xsd:restriction/xsd:minLength="1"
+	atom0 TEXT ,
+-- ATTRIBUTE
+-- xsd:restriction/xsd:minLength="1"
+	atom1 TEXT ,
+-- ATTRIBUTE
+-- xsd:restriction/xsd:minLength="1"
+	atom2 TEXT ,
+-- ATTRIBUTE
 	mean DECIMAL ,
 -- ATTRIBUTE
 	stdev DECIMAL ,
 -- ATTRIBUTE
 	obs DECIMAL ,
 -- ATTRIBUTE
-	z DECIMAL
-);
-
---
--- Indicates there is a problem in the chirality compared to that expected with an atom in the residue. Chiral centres for all compounds occurring in the PDB are described in the chemical component dictionary. Chirality can be assessed in a number of ways, including calculation of the chiral volume, e.g. for the Calpha of amino acids this is 2.6 or -2.6 Angstrom cubed for L or D configurations, respectively. If the sign of the computed volume is incorrect, the handedness is wrong. If the absolute volume is less than 0.7Å3 , the chiral centre has been modelled as a planar moiety which is very likely to be erroneous. Chirality deviations are summarised per chain.
--- xmlns: no namespace, schema location: resource/wwpdb_validation_v003.xsd
--- type: root child, content: true, list: false, bridge: false, virtual: false
---
-DROP TYPE IF EXISTS ENUM_chiral_outlier_problem CASCADE;
-CREATE TYPE ENUM_chiral_outlier_problem AS ENUM ( 'WRONG HAND', 'PLANAR' );
-CREATE TABLE "chiral-outlier" (
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
+	z DECIMAL ,
 -- ATTRIBUTE
-	problem ENUM_chiral_outlier_problem NOT NULL
+	link ENUM_YesString_content
 );
 
 --
@@ -536,40 +549,6 @@ CREATE TABLE "plane-outlier" (
 	omega DECIMAL ,
 -- ATTRIBUTE
 	"planeRMSD" DECIMAL
-);
-
---
--- A MolProbity all-atom clash outlier within the residue. Note that hydrogen atoms are added to the model and optimized by the reduce program. Outliers often involve these added hydrogen atoms. Example: <clash atom="HB3" cid="7" clashmag="0.44" dist="2.57"/>
--- xmlns: no namespace, schema location: resource/wwpdb_validation_v003.xsd
--- type: root child, content: true, list: false, bridge: false, virtual: false
---
-CREATE TABLE clash (
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
--- ATTRIBUTE
-	cid INTEGER NOT NULL ,
--- ATTRIBUTE
-	clashmag DECIMAL NOT NULL ,
--- ATTRIBUTE
-	dist DECIMAL
-);
-
---
--- A symmetry-related clash identified by Validation-pack. Symmetry related clashes are too-close contacts between two atoms across a crystallographic symmetry contact. Only relevant to crystallographic structures. Example: <symm-clash atom="O" clashmag="0.79" dist="1.41" scid="0" symop="2_657"/> From mmcif item "_pdbx_validate_symm_contact".
--- xmlns: no namespace, schema location: resource/wwpdb_validation_v003.xsd
--- type: root child, content: true, list: false, bridge: false, virtual: false
---
-CREATE TABLE "symm-clash" (
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
--- ATTRIBUTE
-	symop TEXT NOT NULL ,
--- ATTRIBUTE
-	scid INTEGER NOT NULL ,
--- ATTRIBUTE
-	clashmag DECIMAL NOT NULL ,
--- ATTRIBUTE
-	dist DECIMAL
 );
 
 --
@@ -618,28 +597,6 @@ CREATE TABLE "mog-angle-outlier" (
 	"Zscore" DECIMAL ,
 -- ATTRIBUTE
 	mindiff DECIMAL
-);
-
---
--- Torsion angle outlier for ligand or modified amino acid/nucleic acid identified by the Mogul program. It will involve four atoms. The obsval, mean, mindiff, stdev will all be in degrees. The Mogul program (Bruno et al., 2004) works by comparing the ligand geometry with preferred molecular geometries derived from high-quality, small-molecule structures in the Cambridge Structural Database (CSD).
--- xmlns: no namespace, schema location: resource/wwpdb_validation_v003.xsd
--- type: root child, content: true, list: false, bridge: false, virtual: false
---
-CREATE TABLE "mog-torsion-outlier" (
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
--- ATTRIBUTE
-	atoms TEXT ,
--- ATTRIBUTE
-	obsval DECIMAL ,
--- ATTRIBUTE
-	mean DECIMAL ,
--- ATTRIBUTE
-	mindiff DECIMAL ,
--- ATTRIBUTE
-	numobs INTEGER ,
--- ATTRIBUTE
-	stdev DECIMAL
 );
 
 --
@@ -699,6 +656,12 @@ CREATE TABLE "ModelledSubgroup" (
 -- ATTRIBUTE
 	ligand_num_symm_clashes INTEGER ,
 -- ATTRIBUTE
+	ligand_clashes_outlier ENUM_YesString_content ,
+-- ATTRIBUTE
+	ligand_chirality_outlier ENUM_YesString_content ,
+-- ATTRIBUTE
+	cis_peptide ENUM_YesString_content ,
+-- ATTRIBUTE
 	"NatomsEDS" INTEGER ,
 -- ATTRIBUTE
 	cyrange_domain_id INTEGER ,
@@ -735,6 +698,8 @@ CREATE TABLE "ModelledSubgroup" (
 -- ATTRIBUTE
 	psi DECIMAL ,
 -- ATTRIBUTE
+	"mogul-ignore" ENUM_YesString_content ,
+-- ATTRIBUTE
 	"flippable-sidechain" ENUM_ModelledSubgroup_flippable_sidechain ,
 -- ATTRIBUTE
 	"RNAscore" DECIMAL ,
@@ -749,7 +714,11 @@ CREATE TABLE "ModelledSubgroup" (
 -- ATTRIBUTE
 	mogul_rmsz_numangles INTEGER ,
 -- ATTRIBUTE
-	mogul_rmsz_numbonds INTEGER
+	mogul_rmsz_numbonds INTEGER ,
+-- ATTRIBUTE
+	ligand_geometry_outlier ENUM_YesString_content ,
+-- ATTRIBUTE
+	ligand_density_outlier ENUM_YesString_content
 );
 
 --
@@ -786,6 +755,12 @@ CREATE TABLE cyrange_domain (
 CREATE TABLE "ModelledEntityInstance" (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
+-- ATTRIBUTE
+-- xsd:union/@memberTypes="xsd:decimal NotAvailable"
+	"absolute_RSRZ_percentile" TEXT ,
+-- ATTRIBUTE
+-- xsd:union/@memberTypes="xsd:decimal NotAvailable"
+	"relative_RSRZ_percentile" TEXT ,
 -- ATTRIBUTE
 	absolute_rama_percentile DECIMAL ,
 -- ATTRIBUTE
