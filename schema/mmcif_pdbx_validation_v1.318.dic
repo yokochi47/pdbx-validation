@@ -1,7 +1,7 @@
 ###########################################################################
 #
 # File:  mmcif_pdbx_validation.dic
-# Data:  Tue Oct 29 16:38:47 JST 2019
+# Data:  Fri Nov  8 17:31:16 JST 2019
 #
 # Created from files noted:
 #        mmcif_pdbx_v50.dic   - PDB Exchange Data Dictionary (V5.318)
@@ -510,7 +510,7 @@ data_mmcif_pdbx_validation.dic
 >     + Update description of _atom_site.label_alt_id # not merged
 >     + Add _refine.pdbx_R_complete and _refine_ls_shell.pdbx_R_complete # added
 ;
-  1.318   2019-10-29
+  1.318   2019-11-08
 ;
 >     5.316:
 >     + Adjust range limits for _reflns.pdbx_CC_star, _reflns_shell.pdbx_CC_star # merged
@@ -529,6 +529,7 @@ data_mmcif_pdbx_validation.dic
 >     5.318:
 >     + Remove duplicate enumerations from _diffrn_detector.type # already merged
 >     + Correct deposition_email type name # already merged
+      + Correct details for 'NMR restraints'
 ;
 
 #
@@ -56740,10 +56741,10 @@ save__pdbx_audit_revision_history.data_content_type
     loop_
     _item_enumeration.value
     _item_enumeration.detail
-    'Structure model'    'Coordinate model file'
-    'NMR restraints'     'NMR chemical restraints file'
-    'NMR shifts'         'NMR chemical shifts file'
-    'Structure factors'  'Diffraction structure factors file'
+    'Structure model'            'Coordinate model file'
+    'NMR restraints'             'NMR structural restraints file'
+    'NMR shifts'                 'NMR chemical shifts file'
+    'Structure factors'          'Diffraction structure factors file'
 save_
 
 save__pdbx_audit_revision_history.major_revision
@@ -56864,11 +56865,11 @@ save__pdbx_audit_revision_group.data_content_type
     loop_
     _item_enumeration.value
     _item_enumeration.detail
-    'Structure model'    'Coordinate model file'
-    'NMR restraints'     'NMR chemical restraints file'
-    'NMR shifts'         'NMR chemical shifts file'
-    'Structure factors'  'Diffraction structure factors file'
-    'Chemical component' 'Chemical component definition file'
+    'Structure model'            'Coordinate model file'
+    'NMR restraints'             'NMR structural restraints file'
+    'NMR shifts'                 'NMR chemical shifts file'
+    'Structure factors'          'Diffraction structure factors file'
+    'Chemical component'         'Chemical component definition file'
     _item_linked.child_name     '_pdbx_audit_revision_group.data_content_type'
     _item_linked.parent_name    '_pdbx_audit_revision_history.data_content_type'
 save_
@@ -56983,7 +56984,7 @@ save__pdbx_audit_revision_category.data_content_type
     _item_enumeration.value
     _item_enumeration.detail
     'Structure model'            'Coordinate model file'
-    'NMR restraints'             'NMR chemical restraints file'
+    'NMR restraints'             'NMR structural restraints file'
     'NMR shifts'                 'NMR chemical shifts file'
     'Structure factors'          'Diffraction structure factors file'
     'Chemical component'         'Chemical component definition file'
@@ -57066,8 +57067,8 @@ save__pdbx_audit_revision_details.revision_ordinal
     _item.mandatory_code          yes
     _item_type.code               int
     _item_examples.case           1
-    _item_linked.child_name       '_pdbx_audit_revision_details.revision_ordinal'
-    _item_linked.parent_name      '_pdbx_audit_revision_history.ordinal'
+    _item_linked.child_name     '_pdbx_audit_revision_details.revision_ordinal'
+    _item_linked.parent_name    '_pdbx_audit_revision_history.ordinal'
 save_
 
 save__pdbx_audit_revision_details.data_content_type
@@ -57082,12 +57083,12 @@ save__pdbx_audit_revision_details.data_content_type
     loop_
     _item_enumeration.value
     _item_enumeration.detail
-    'Structure model'    'Coordinate model file'
-    'NMR restraints'     'NMR chemical restraints file'
-    'NMR shifts'         'NMR chemical shifts file'
-    'Structure factors'  'Diffraction structure factors file'
-    _item_linked.child_name       '_pdbx_audit_revision_details.data_content_type'
-    _item_linked.parent_name      '_pdbx_audit_revision_history.data_content_type'
+    'Structure model'            'Coordinate model file'
+    'NMR restraints'             'NMR structural restraints file'
+    'NMR shifts'                 'NMR chemical shifts file'
+    'Structure factors'          'Diffraction structure factors file'
+    _item_linked.child_name     '_pdbx_audit_revision_details.data_content_type'
+    _item_linked.parent_name    '_pdbx_audit_revision_history.data_content_type'
 save_
 
 save__pdbx_audit_revision_details.provider
@@ -57110,7 +57111,7 @@ save__pdbx_audit_revision_details.type
     _item_description.description
 ;              A type classification of the revision
 ;
-    _item.name                   '_pdbx_audit_revision_details.type'
+    _item.name                  '_pdbx_audit_revision_details.type'
     _item.category_id             pdbx_audit_revision_details
     _item.mandatory_code          no
     _pdbx_item.mandatory_code     yes
@@ -57219,7 +57220,7 @@ save__pdbx_audit_revision_item.data_content_type
     _item_enumeration.value
     _item_enumeration.detail
     'Structure model'            'Coordinate model file'
-    'NMR restraints'             'NMR chemical restraints file'
+    'NMR restraints'             'NMR structural restraints file'
     'NMR shifts'                 'NMR chemical shifts file'
     'Structure factors'          'Diffraction structure factors file'
     'Chemical component'         'Chemical component definition file'
