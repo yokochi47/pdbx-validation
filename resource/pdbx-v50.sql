@@ -21,7 +21,7 @@
 --  map xsd date type to: sql date type
 --
 -- Statistics of schema:
---  Generated 553 tables (6738 fields), 0 views (0 fields), 0 attr groups, 0 model groups in total
+--  Generated 553 tables (6744 fields), 0 views (0 fields), 0 attr groups, 0 model groups in total
 --   Unnecessary tables by inlining simple content as a primitive data type:
 --    schema location: resource/pdbx-v50.xsd
 --      "S31", "T12_esd", "B_iso_mean", sampling_size, "U_tls13", angle_beta_esd, "Cartn_z_esd", pdbx_crystal_diffrn_lifetime, diff_density_max, diffr_kappa, "U_equiv_geom_mean_esd", ambient_temp_esd, pressure_esd, "dist_HA_esd", "model_Cartn_x", "B_equiv_geom_mean_esd", "S13_esd", "F_squared_meas", "U13_esd", "L11", "aniso_U33", "B33", protein_volume, "L23", "Cartn_y", epsilon, average_torsion_angle_constraint_violation, "S32", scan_rate, yield_pooled_fractions, improper_torsion_angle, reciprocal_length_a_esd, "aniso_U23", covalent_bond_rms_dev, angle_value, dist_esd, temperature_decomposition_esd, "F_calc", angle_gamma_esd, recording_temperature_maximum, length_c_esd, "aniso_U13_esd", "B_calc_au", "aniso_B33_esd", "aniso_U22", "B22", inducer_concentration, "L12", "Cartn_z", nu2, "S21", nu1, "U_tls23", nu4, "U_tls11", nu3, peptide_planarity_rms_dev, "S33", "Luzzati_d_res_low_obs", nu0, temperature, pdbx_phase_calc_with_solvent, "Luzzati_sigma_a_free", "Cartn_x_esd", pressure, lower_limit, "B_iso_min", diffr_chi, "A_meas_au", angle_psi, bond, "Luzzati_sigma_a_obs", "B11", "L13", "B33_esd", diff_density_rms_esd, "B23", "F_meas_au", "F_meas_sigma_au", pdbx_crystal_direction_1, pdbx_crystal_direction_2, "U_tls12", zeta, pdbx_crystal_direction_3, "S22", "S11_esd", scan_time_backgd, pdbx_crystal_diffrn_limit, flow_rate, time, protein_yield, omega, diffr_psi, "L12_esd", bond_angle_rms_dev, column_volume, pdbx_solvent_ion_probe_radii, pdbx_dist_value, "Cartn_x", "Ro", "B12", mol_wt_exp, final_thickness, neighbor_macromolecule_distance, diff_density_min_esd, "U_tls33", "B22_esd", "pdbx_res_netI_over_sigmaI_2", "U13", reciprocal_angle_alpha_esd, mol_wt_theo, beta_tolerance, "F_squared_calc", "B_iso_Wilson_estimate", "L22_esd", "angle_DHA_esd", current, "T33_esd", gamma, "F_meas_sigma", "U_tls22", peptide_planarity_rms_dev_error, alpha, delta, "T22_esd", storage_temperature, "aniso_B11_esd", reciprocal_angle_gamma_esd, angle_chi, "aniso_B22_esd", reciprocal_length_b_esd, "model_Cartn_z_esd", angle_omega, distance_rms_dev_error, detector_distance, resolution, "dist_DA_esd", culture_temperature, "aniso_U11_esd", min_mean_cross_sectional_radii_gyration, improper_torsion_angle_rms_dev, improper_torsion_angle_rms_dev_error, psi, "aniso_U12", energyfilter_lower, "L33_esd", "aniso_B12_esd", "pre_Cartn_x", calibrated_defocus_min, upper_limit, max_mean_cross_sectional_radii_gyration, "model_Cartn_y_esd", "L33", "aniso_U11", power, distance_rms_dev, "A_calc_au", mean_guiner_radius, "aniso_U13", dihedral_angles_rms_dev, energyfilter_upper, "U11_esd", origin_z, origin_y, pdbx_mosaicity_esd, origin_x, induction_timepoint, nominal_defocus_max, "I", "pdbx_model_Cartn_y_ideal", volume_pooled_fractions, "dist_DH_esd", "pre_Cartn_y", "B_iso_or_equiv", "B12_esd", "L22", "L23_esd", reciprocal_angle_beta_esd, alpha_tolerance, temp_esd, "T23_esd", "U12_esd", "aniso_B22", "S12_esd", "L13_esd", "T12", "U33", volume_three, value_esd, dev, "B13_esd", tilt_angle_min, "pre_Cartn_z", tau1, reciprocal_length_c_esd, "T13_esd", tau0, concentration_range, covalent_bond_rms_dev_error, "B_iso_or_equiv_esd", mean_guiner_radius_esd, "sigmaI", "B_iso_max", length_a_esd, "A_meas", angle_alpha_esd, "aniso_B23", "aniso_B11", neighbor_ligand_distance, "T13", recording_temperature_minimum, "U22", prot_cis, "L11_esd", atom_deviation, tau3, tau2, tau4, cleavage_temperature, "T11_esd", diff_density_min, pdbx_solvent_shrinkage_radii, induction_temperature, pdbx_phase_calc_part_solvent, "Cartn_y_esd", "S31_esd", dist, column_temperature, residual_tilt, "F_meas", maximum_upper_distance_constraint_violation, "U23", "aniso_B13_esd", "U11", voltage, "B11_esd", "model_Cartn_x_esd", rise_per_n_subunits, energy_window, taum, "aniso_U12_esd", "B_iso", volume_three_esd, culture_volume, angle_kappa, "aniso_B33", temp, bond_angle_rms_dev_error, pdbx_collection_time_total, sample_concentration, "U12", "S33_esd", gamma_tolerance, phase_meas, rmsd, "U22_esd", density_meas_temp_esd, "B23_esd", electron_dose, protein_concentration, diff_density_max_esd, length_b_esd, initial_thickness, angle_deviation, scat_length_neutron, "S11", beta, "S23", "aniso_U22_esd", sample_volume, max_mean_cross_sectional_radii_gyration_esd, bond_deviation, dihedral_angles_rms_dev_error, "aniso_U23_esd", min_mean_cross_sectional_radii_gyration_esd, maximum_distance_constraint_violation, "F_calc_au", "Luzzati_d_res_low_free", "S21_esd", "F_squared_sigma", "aniso_B23_esd", "B13", chi1, pdbx_mosaicity, chi3, chi2, chi5, diffr_phi, "S12", "T33", chi4, "P", multiplicity_of_infection, phi, temperature_sublimation_esd, buffer_volume, pdbx_solvent_vdw_probe_radii, angle_theta, "pdbx_model_Cartn_x_ideal", volume_esd, ambient_pressure_esd, average_distance_constraint_violation, "B_meas", "S23_esd", "B_meas_au", "pdbx_model_Cartn_z_ideal", maximum_torsion_angle_constraint_violation, "U23_esd", "aniso_B12", nominal_defocus_min, "S13", "Luzzati_coordinate_error_free", duration, "T22", "S32_esd", "aniso_U33_esd", "B_calc", "Luzzati_coordinate_error_obs", density_meas_esd, culture_time, "model_Cartn_z", "U_iso_or_equiv_esd", "B", value, angle, "A_calc", "aniso_B13", angle_target_value, tilt_angle_max, "S22_esd", "T23", cleavage_time, "U33_esd", chamber_temperature, "T11", phase_calc, "pdbx_F_calc_with_solvent", "pdbx_F_calc_part_solvent", "model_Cartn_y", "B_iso_esd", rotation_per_n_subunits, angle_phi, maximum_lower_distance_constraint_violation, "pdbx_res_netI_over_av_sigmaI_2", diff_density_rms
@@ -36,7 +36,7 @@
 --   User keys:
 --    553 document keys, 0 serial keys, 0 xpath keys
 --   Contents:
---    1007 attributes (0 in-place document keys), 5178 elements (0 in-place document keys), 0 simple contents (0 in-place document keys, 0 as attribute, 0 as conditional attribute)
+--    1007 attributes (0 in-place document keys), 5184 elements (0 in-place document keys), 0 simple contents (0 in-place document keys, 0 as attribute, 0 as conditional attribute)
 --   Wild cards:
 --    0 any elements, 0 any attributes
 --   Constraints:
@@ -44,8 +44,8 @@
 --
 
 --
--- PDBML Schema v5.318
--- PDBML Schema translated from the PDBx/mmCIF Dictionary v5.318: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
+-- PDBML Schema v5.319
+-- PDBML Schema translated from the PDBx/mmCIF Dictionary v5.319: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
 -- URI-reference = http://pdbml.pdb.org/schema/pdbx-v50.xsd
 --
 
@@ -829,8 +829,9 @@ CREATE TABLE diffrn (
 	ambient_pressure_gt DECIMAL CHECK ( ambient_pressure_gt >= 0 ) ,
 -- xsd:restriction/xsd:minInclusive="0"
 	ambient_pressure_lt DECIMAL CHECK ( ambient_pressure_lt >= 0 ) ,
+-- xsd:restriction/xsd:maxInclusive="450"
 -- xsd:restriction/xsd:minInclusive="0"
-	ambient_temp DECIMAL CHECK ( ambient_temp >= 0 ) ,
+	ambient_temp DECIMAL CHECK ( ambient_temp >= 0 AND ambient_temp < 450 ) ,
 	ambient_temp_details TEXT ,
 -- omit an attribute having a fixed value: @units="kelvins"
 	ambient_temp_esd DECIMAL ,
@@ -4859,7 +4860,7 @@ CREATE TYPE ENUM_em_imaging_cryogen AS ENUM ( 'NITROGEN', 'HELIUM' );
 DROP TYPE IF EXISTS ENUM_em_imaging_illumination_mode CASCADE;
 CREATE TYPE ENUM_em_imaging_illumination_mode AS ENUM ( 'FLOOD BEAM', 'SPOT SCAN', 'OTHER' );
 DROP TYPE IF EXISTS ENUM_em_imaging_microscope_model CASCADE;
-CREATE TYPE ENUM_em_imaging_microscope_model AS ENUM ( 'FEI MORGAGNI', 'FEI POLARA 300', 'FEI TALOS ARCTICA', 'FEI TECNAI 10', 'FEI TECNAI 12', 'FEI TECNAI 20', 'FEI TECNAI F20', 'FEI TECNAI F30', 'FEI TECNAI ARCTICA', 'FEI TECNAI SPHERA', 'FEI TECNAI SPIRIT', 'FEI TITAN', 'FEI TITAN KRIOS', 'FEI/PHILIPS CM10', 'FEI/PHILIPS CM12', 'FEI/PHILIPS CM120T', 'FEI/PHILIPS CM200FEG', 'FEI/PHILIPS CM200FEG/SOPHIE', 'FEI/PHILIPS CM200FEG/ST', 'FEI/PHILIPS CM200FEG/UT', 'FEI/PHILIPS CM200T', 'FEI/PHILIPS CM300FEG/HE', 'FEI/PHILIPS CM300FEG/ST', 'FEI/PHILIPS CM300FEG/T', 'FEI/PHILIPS EM400', 'FEI/PHILIPS EM420', 'HITACHI EF2000', 'HITACHI EF3000', 'HITACHI H7600', 'HITACHI HF2000', 'HITACHI HF3000', 'HITACHI H-9500SD', 'JEOL 100B', 'JEOL 100CX', 'JEOL 1010', 'JEOL 1200', 'JEOL 1200EX', 'JEOL 1200EXII', 'JEOL 1230', 'JEOL 1400', 'JEOL 2000EX', 'JEOL 2000EXII', 'JEOL 2010', 'JEOL 2010F', 'JEOL 2010HT', 'JEOL 2010HC', 'JEOL 2010UHR', 'JEOL 2011', 'JEOL 2100', 'JEOL 2100F', 'JEOL 2200FS', 'JEOL 2200FSC', 'JEOL 3000SFF', 'JEOL 3100FEF', 'JEOL 3100FFC', 'JEOL 3200FS', 'JEOL 3200FSC', 'JEOL KYOTO-3000SFF', 'JEOL 4000', 'JEOL 4000EX', 'JEOL CRYO ARM 200', 'JEOL CRYO ARM 300', 'SIEMENS SULEIKA', 'TFS GLACIOS', 'TFS KRIOS', 'ZEISS LEO912', 'ZEISS LIBRA120PLUS' );
+CREATE TYPE ENUM_em_imaging_microscope_model AS ENUM ( 'FEI MORGAGNI', 'FEI POLARA 300', 'FEI TALOS ARCTICA', 'FEI TECNAI 10', 'FEI TECNAI 12', 'FEI TECNAI 20', 'FEI TECNAI F20', 'FEI TECNAI F30', 'FEI TECNAI ARCTICA', 'FEI TECNAI SPHERA', 'FEI TECNAI SPIRIT', 'FEI TITAN', 'FEI TITAN KRIOS', 'FEI/PHILIPS CM10', 'FEI/PHILIPS CM12', 'FEI/PHILIPS CM120T', 'FEI/PHILIPS CM200FEG', 'FEI/PHILIPS CM200FEG/SOPHIE', 'FEI/PHILIPS CM200FEG/ST', 'FEI/PHILIPS CM200FEG/UT', 'FEI/PHILIPS CM200T', 'FEI/PHILIPS CM300FEG/HE', 'FEI/PHILIPS CM300FEG/ST', 'FEI/PHILIPS CM300FEG/T', 'FEI/PHILIPS EM400', 'FEI/PHILIPS EM420', 'HITACHI EF2000', 'HITACHI EF3000', 'HITACHI H7600', 'HITACHI HF2000', 'HITACHI HF3000', 'HITACHI H-9500SD', 'JEOL 100B', 'JEOL 100CX', 'JEOL 1010', 'JEOL 1200', 'JEOL 1200EX', 'JEOL 1200EXII', 'JEOL 1230', 'JEOL 1400', 'JEOL 2000EX', 'JEOL 2000EXII', 'JEOL 2010', 'JEOL 2010F', 'JEOL 2010HT', 'JEOL 2010HC', 'JEOL 2010UHR', 'JEOL 2011', 'JEOL 2100', 'JEOL 2100F', 'JEOL 2200FS', 'JEOL 2200FSC', 'JEOL 3000SFF', 'JEOL 3100FEF', 'JEOL 3100FFC', 'JEOL 3200FS', 'JEOL 3200FSC', 'JEOL KYOTO-3000SFF', 'JEOL 4000', 'JEOL 4000EX', 'JEOL CRYO ARM 200', 'JEOL CRYO ARM 300', 'SIEMENS SULEIKA', 'TFS GLACIOS', 'TFS KRIOS', 'TFS TALOS', 'ZEISS LEO912', 'ZEISS LIBRA120PLUS' );
 DROP TYPE IF EXISTS ENUM_em_imaging_mode CASCADE;
 CREATE TYPE ENUM_em_imaging_mode AS ENUM ( 'BRIGHT FIELD', 'DARK FIELD', 'DIFFRACTION', 'OTHER' );
 DROP TYPE IF EXISTS ENUM_em_imaging_specimen_holder_model CASCADE;
@@ -7683,6 +7684,8 @@ DROP TYPE IF EXISTS ENUM_pdbx_database_status_dep_release_code_coordinates CASCA
 CREATE TYPE ENUM_pdbx_database_status_dep_release_code_coordinates AS ENUM ( 'RELEASE NOW', 'HOLD FOR PUBLICATION', 'HOLD FOR 4 WEEKS', 'HOLD FOR 6 WEEKS', 'HOLD FOR 8 WEEKS', 'HOLD FOR 6 MONTHS', 'HOLD FOR 1 YEAR' );
 DROP TYPE IF EXISTS ENUM_pdbx_database_status_dep_release_code_nmr_constraints CASCADE;
 CREATE TYPE ENUM_pdbx_database_status_dep_release_code_nmr_constraints AS ENUM ( 'RELEASE NOW', 'HOLD FOR PUBLICATION', 'HOLD FOR 6 MONTHS', 'HOLD FOR 1 YEAR' );
+DROP TYPE IF EXISTS ENUM_pdbx_database_status_dep_release_code_nmr_data CASCADE;
+CREATE TYPE ENUM_pdbx_database_status_dep_release_code_nmr_data AS ENUM ( 'RELEASE NOW', 'HOLD FOR PUBLICATION', 'HOLD FOR 6 MONTHS', 'HOLD FOR 1 YEAR' );
 DROP TYPE IF EXISTS ENUM_pdbx_database_status_dep_release_code_sequence CASCADE;
 CREATE TYPE ENUM_pdbx_database_status_dep_release_code_sequence AS ENUM ( 'RELEASE NOW', 'HOLD FOR RELEASE' );
 DROP TYPE IF EXISTS ENUM_pdbx_database_status_dep_release_code_struct_fact CASCADE;
@@ -7715,6 +7718,8 @@ DROP TYPE IF EXISTS ENUM_pdbx_database_status_recvd_manuscript CASCADE;
 CREATE TYPE ENUM_pdbx_database_status_recvd_manuscript AS ENUM ( 'Y', 'N' );
 DROP TYPE IF EXISTS ENUM_pdbx_database_status_recvd_nmr_constraints CASCADE;
 CREATE TYPE ENUM_pdbx_database_status_recvd_nmr_constraints AS ENUM ( 'Y', 'N' );
+DROP TYPE IF EXISTS ENUM_pdbx_database_status_recvd_nmr_data CASCADE;
+CREATE TYPE ENUM_pdbx_database_status_recvd_nmr_data AS ENUM ( 'Y', 'N' );
 DROP TYPE IF EXISTS ENUM_pdbx_database_status_recvd_struct_fact CASCADE;
 CREATE TYPE ENUM_pdbx_database_status_recvd_struct_fact AS ENUM ( 'Y', 'N' );
 DROP TYPE IF EXISTS ENUM_pdbx_database_status_skip_PDB_REMARK_500 CASCADE;
@@ -7725,6 +7730,8 @@ DROP TYPE IF EXISTS ENUM_pdbx_database_status_status_code_cs CASCADE;
 CREATE TYPE ENUM_pdbx_database_status_status_code_cs AS ENUM ( 'PROC', 'WAIT', 'AUTH', 'POLC', 'REPL', 'REL', 'HOLD', 'HPUB', 'OBS', 'RMVD', 'WDRN' );
 DROP TYPE IF EXISTS ENUM_pdbx_database_status_status_code_mr CASCADE;
 CREATE TYPE ENUM_pdbx_database_status_status_code_mr AS ENUM ( 'PROC', 'WAIT', 'REL', 'HOLD', 'HPUB', 'OBS', 'WDRN', 'AUTH', 'POLC', 'REPL', 'RMVD' );
+DROP TYPE IF EXISTS ENUM_pdbx_database_status_status_code_nmr_data CASCADE;
+CREATE TYPE ENUM_pdbx_database_status_status_code_nmr_data AS ENUM ( 'PROC', 'WAIT', 'AUTH', 'POLC', 'REPL', 'REL', 'HOLD', 'HPUB', 'OBS', 'RMVD', 'WDRN' );
 DROP TYPE IF EXISTS ENUM_pdbx_database_status_status_code_sf CASCADE;
 CREATE TYPE ENUM_pdbx_database_status_status_code_sf AS ENUM ( 'PROC', 'WAIT', 'REL', 'HOLD', 'HPUB', 'OBS', 'WDRN', 'AUTH', 'POLC', 'REPL', 'RMVD' );
 DROP TYPE IF EXISTS ENUM_pdbx_database_status_status_coordinates_in_NDB CASCADE;
@@ -7751,9 +7758,11 @@ CREATE TABLE pdbx_database_status (
 	date_hold_chemical_shifts TEXT ,
 	date_hold_coordinates TEXT ,
 	date_hold_nmr_constraints TEXT ,
+	date_hold_nmr_data TEXT ,
 	date_hold_struct_fact TEXT ,
 	date_manuscript TEXT ,
 	date_nmr_constraints TEXT ,
+	date_nmr_data TEXT ,
 -- map XSD date (xsd:date) to SQL DATE
 	"date_of_NDB_release" DATE ,
 	"date_of_PDB_release" TEXT ,
@@ -7761,6 +7770,8 @@ CREATE TABLE pdbx_database_status (
 	date_of_cs_release DATE ,
 -- map XSD date (xsd:date) to SQL DATE
 	date_of_mr_release DATE ,
+-- map XSD date (xsd:date) to SQL DATE
+	date_of_nmr_data_release DATE ,
 -- map XSD date (xsd:date) to SQL DATE
 	date_of_sf_release DATE ,
 -- map XSD date (xsd:date) to SQL DATE
@@ -7772,6 +7783,7 @@ CREATE TABLE pdbx_database_status (
 	dep_release_code_chemical_shifts TEXT ,
 	dep_release_code_coordinates ENUM_pdbx_database_status_dep_release_code_coordinates ,
 	dep_release_code_nmr_constraints ENUM_pdbx_database_status_dep_release_code_nmr_constraints ,
+	dep_release_code_nmr_data ENUM_pdbx_database_status_dep_release_code_nmr_data ,
 	dep_release_code_sequence ENUM_pdbx_database_status_dep_release_code_sequence ,
 	dep_release_code_struct_fact ENUM_pdbx_database_status_dep_release_code_struct_fact ,
 	deposit_site ENUM_pdbx_database_status_deposit_site ,
@@ -7797,6 +7809,7 @@ CREATE TABLE pdbx_database_status (
 	recvd_internal_approval ENUM_pdbx_database_status_recvd_internal_approval ,
 	recvd_manuscript ENUM_pdbx_database_status_recvd_manuscript ,
 	recvd_nmr_constraints ENUM_pdbx_database_status_recvd_nmr_constraints ,
+	recvd_nmr_data ENUM_pdbx_database_status_recvd_nmr_data ,
 	recvd_struct_fact ENUM_pdbx_database_status_recvd_struct_fact ,
 	replaced_entry_id TEXT ,
 	revision_description TEXT ,
@@ -7806,6 +7819,7 @@ CREATE TABLE pdbx_database_status (
 	status_code ENUM_pdbx_database_status_status_code ,
 	status_code_cs ENUM_pdbx_database_status_status_code_cs ,
 	status_code_mr ENUM_pdbx_database_status_status_code_mr ,
+	status_code_nmr_data ENUM_pdbx_database_status_status_code_nmr_data ,
 	status_code_sf ENUM_pdbx_database_status_status_code_sf ,
 	"status_coordinates_in_NDB" ENUM_pdbx_database_status_status_coordinates_in_NDB ,
 	title_suppression ENUM_pdbx_database_status_title_suppression ,
@@ -9881,7 +9895,7 @@ CREATE TABLE pdbx_nmr_chem_shift_experiment (
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_nmr_chem_shift_ref_atom_group CASCADE;
-CREATE TYPE ENUM_pdbx_nmr_chem_shift_ref_atom_group AS ENUM ( 'carbonyl carbon', 'methyl carbon', 'methyl carbons', 'methyl protons', 'methylene protons', 'nitrogen', 'protons', 'phosphorus' );
+CREATE TYPE ENUM_pdbx_nmr_chem_shift_ref_atom_group AS ENUM ( 'carbonyl carbon', 'fluorine', 'methyl carbon', 'methyl carbons', 'methyl protons', 'methylene protons', 'nitrogen', 'protons', 'phosphorus' );
 DROP TYPE IF EXISTS ENUM_pdbx_nmr_chem_shift_ref_chem_shift_units CASCADE;
 CREATE TYPE ENUM_pdbx_nmr_chem_shift_ref_chem_shift_units AS ENUM ( 'ppm', 'Hz' );
 DROP TYPE IF EXISTS ENUM_pdbx_nmr_chem_shift_ref_external_ref_axis CASCADE;
@@ -9895,7 +9909,7 @@ CREATE TYPE ENUM_pdbx_nmr_chem_shift_ref_ref_method AS ENUM ( 'internal', 'exter
 DROP TYPE IF EXISTS ENUM_pdbx_nmr_chem_shift_ref_ref_type CASCADE;
 CREATE TYPE ENUM_pdbx_nmr_chem_shift_ref_ref_type AS ENUM ( 'direct', 'indirect' );
 DROP TYPE IF EXISTS ENUM_pdbx_nmr_chem_shift_ref_mol_common_name CASCADE;
-CREATE TYPE ENUM_pdbx_nmr_chem_shift_ref_mol_common_name AS ENUM ( 'DSS', 'TSP', 'water', 'DMSO', 'DMSO-d5', 'DMSO-d6', 'methanol', 'TMS', 'methionine', 'alanine', 'acetate', 'glucose', 'dioxane', 'adamantane', 'ammonium chloride', '[15N] ammonium chloride', 'ammonium hydroxide', 'ammonium nitrate', '[15N] ammonium nitrate', '[15N, 15N] ammonium nitrate', 'ammonium nitrite', 'ammonium sulfate', '[15N] ammonium sulfate', 'liquid anhydrous ammonia', 'formamide', '[15N] nitric acid', 'Nitromethane', '[15N] nitromethane', 'N-acetyl-valine (NAV)', 'urea', 'phosphoric acid', 'phosphoric acid (85%)', 'TMP', 'cadmium perchlorate', 'Deuterium Oxide' );
+CREATE TYPE ENUM_pdbx_nmr_chem_shift_ref_mol_common_name AS ENUM ( 'DSS', 'TSP', 'water', 'DMSO', 'DMSO-d5', 'DMSO-d6', 'methanol', 'TMS', 'methionine', 'alanine', 'acetate', 'glucose', 'dioxane', 'adamantane', 'ammonium chloride', '[15N] ammonium chloride', 'ammonium hydroxide', 'ammonium nitrate', '[15N] ammonium nitrate', '[15N, 15N] ammonium nitrate', 'ammonium nitrite', 'ammonium sulfate', '[15N] ammonium sulfate', 'liquid anhydrous ammonia', 'formamide', '[15N] nitric acid', 'Nitromethane', '[15N] nitromethane', 'N-acetyl-valine (NAV)', 'urea', 'phosphoric acid', 'phosphoric acid (85%)', 'TMP', 'cadmium perchlorate', 'Deuterium Oxide', 'TFA' );
 CREATE TABLE pdbx_nmr_chem_shift_ref (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
