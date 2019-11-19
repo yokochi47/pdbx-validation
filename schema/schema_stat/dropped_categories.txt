@@ -146,7 +146,6 @@ pdbx_database_PDB_master WWPDB_LOCAL
 pdbx_database_PDB_obs_spr
 pdbx_database_pdb_omit WWPDB_LOCAL
 pdbx_database_proc WWPDB_LOCAL
-pdbx_database_related
 pdbx_database_remark
 pdbx_database_status_history WWPDB_LOCAL
 pdbx_data_processing_cell WWPDB_LOCAL

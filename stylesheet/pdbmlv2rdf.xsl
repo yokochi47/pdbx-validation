@@ -1358,6 +1358,19 @@
   </xsl:template>
 
 
+  <xsl:template match="PDBxv:datablock/PDBxv:pdbx_database_relatedCategory/PDBxv:pdbx_database_related">
+      <PDBov:has_pdbx_database_related>
+      <PDBov:pdbx_database_related rdf:about="{$base}/pdbx_database_related/{translate(@content_type,' ^','_')},{translate(@db_id,' ^','_')},{translate(@db_name,' ^','_')}">
+        <PDBov:of_datablock rdf:resource="{$base}"/>
+      <xsl:apply-templates select="@*"/>
+      <xsl:apply-templates select="@*" mode="linked"/>
+      <xsl:apply-templates/>
+      <xsl:apply-templates mode="linked"/>
+      </PDBov:pdbx_database_related>
+      </PDBov:has_pdbx_database_related>
+  </xsl:template>
+
+
   <xsl:template match="PDBxv:datablock/PDBxv:pdbx_database_statusCategory/PDBxv:pdbx_database_status">
       <PDBov:has_pdbx_database_status>
       <PDBov:pdbx_database_status rdf:about="{$base}/pdbx_database_status/{translate(@entry_id,' ^','_')}">

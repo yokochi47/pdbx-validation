@@ -608,6 +608,10 @@ pdbx_bond_distance_limits.lower_limit
 pdbx_bond_distance_limits.upper_limit
 pdbx_coordinate_model.asym_id
 pdbx_coordinate_model.type
+pdbx_database_related.content_type
+pdbx_database_related.db_id
+pdbx_database_related.db_name
+pdbx_database_related.details
 pdbx_database_status.deposit_site
 pdbx_database_status.entry_id
 pdbx_database_status.methods_development_category

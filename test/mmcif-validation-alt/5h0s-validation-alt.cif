@@ -10,22 +10,22 @@ _pdbx_percentile_view.entry_id
 _pdbx_percentile_view.conditions_id 
 _pdbx_percentile_view.type 
 _pdbx_percentile_view.rank 
-5H0S 1 all_atom_clashscore          1.5  
-5H0S 2 all_atom_clashscore          10.7 
-5H0S 3 Ramachandran_outlier_percent 5.1  
-5H0S 4 Ramachandran_outlier_percent 23.2 
-5H0S 5 rotamer_outliers_percent     5.4  
-5H0S 6 rotamer_outliers_percent     9.0  
+5H0S 1 all_atom_clashscore          1.4  
+5H0S 2 all_atom_clashscore          8.7  
+5H0S 3 Ramachandran_outlier_percent 4.8  
+5H0S 4 Ramachandran_outlier_percent 17.1 
+5H0S 5 rotamer_outliers_percent     5.1  
+5H0S 6 rotamer_outliers_percent     6.5  
 # 
 loop_
 _pdbx_percentile_conditions.id 
 _pdbx_percentile_conditions.number_entries_total 
-1 125131 
-2 1336   
-3 121729 
-4 1120   
-5 121581 
-6 1026   
+1 136279 
+2 1886   
+3 132675 
+4 1663   
+5 132484 
+6 1531   
 # 
 loop_
 _pdbx_percentile_entity_view.conditions_id 
@@ -35,14 +35,14 @@ _pdbx_percentile_entity_view.PDB_model_num
 _pdbx_percentile_entity_view.entity_id 
 _pdbx_percentile_entity_view.auth_asym_id 
 _pdbx_percentile_entity_view.rank 
-3 Ramachandran_outlier_percent A 1 1 B 16.52 
-4 Ramachandran_outlier_percent A 1 1 B 52.27 
-5 rotamer_outliers_percent     A 1 1 B 86.51 
-6 rotamer_outliers_percent     A 1 1 B 92.31 
-3 Ramachandran_outlier_percent B 1 1 C 0.92  
-4 Ramachandran_outlier_percent B 1 1 C 7.86  
-5 rotamer_outliers_percent     B 1 1 C 0.15  
-6 rotamer_outliers_percent     B 1 1 C 0.88  
+3 Ramachandran_outlier_percent A 1 1 B 15.56 
+4 Ramachandran_outlier_percent A 1 1 B 49.65 
+5 rotamer_outliers_percent     A 1 1 B 85.28 
+6 rotamer_outliers_percent     A 1 1 B 91.22 
+3 Ramachandran_outlier_percent B 1 1 C 0.85  
+4 Ramachandran_outlier_percent B 1 1 C 6.88  
+5 rotamer_outliers_percent     B 1 1 C 0.14  
+6 rotamer_outliers_percent     B 1 1 C 0.75  
 # 
 _pdbx_dcc_geometry.entry_id                       5H0S 
 _pdbx_dcc_geometry.Ramachandran_outlier_percent   4.59 
@@ -5657,18 +5657,18 @@ _pdbx_validation_software.name
 _pdbx_validation_software.version 
 _pdbx_validation_software.classification 
 _pdbx_validation_software.details 
-1 percentiles         
-'20161228.v01 (using entries in the PDB archive December 28th 2016)' 
-'percentile rank calculation' 
-;numPDBids-absolute-percentile-clashscore,absolute-percentile-percent-rota-outliers,relative-percentile-clashscore,numPDBids-absolute-percentile-percent-rota-outliers,numPDBids-absolute-percentile-percent-rama-outliers,numPDBids-relative-percentile-percent-rota-outliers,numPDBids-relative-percentile-percent-rama-outliers,relative-percentile-percent-rota-outliers,numPDBids-relative-percentile-clashscore,relative-percentile-percent-rama-outliers,absolute-percentile-percent-rama-outliers,absolute-percentile-clashscore
+1 validation-pipeline trunk30686 'mmcif data extractor'        
+;PDB-revision-date,PDB-resolution,protein-DNA-RNA-entities,PDB-Rfree,PDB-R,percentilebins,PDB-resolution-low,pdbid,PDB-revision-number,attemptedValidationSteps,XMLcreationDate,PDB-deposition-date
 ;
 2 mogul               unknown 'geometric validation'        
 no-ligands-for-mogul 
 3 validation-pack     unknown 'geometric validation'        plane-outlier 
-4 validation-pipeline recalc28906 'mmcif data extractor'        
-;PDB-revision-date,PDB-resolution,protein-DNA-RNA-entities,PDB-Rfree,PDB-R,percentilebins,PDB-resolution-low,pdbid,PDB-revision-number,attemptedValidationSteps,XMLcreationDate,PDB-deposition-date
-;
-5 molprobity          4.02b-467 'geometric validation'        
+4 molprobity          4.02b-467 'geometric validation'        
 ;relative_rama_percentile,bond-outlier,phi,psi,absolute_rama_percentile,cis_peptide,clash,angle-outlier,rota,num_bonds_rmsz,absolute_sidechain_percentile,relative_sidechain_percentile,clashscore,bonds_rmsz,percent-rama-outliers,num-H-reduce,angles_rmsz,num_angles_rmsz,percent-rota-outliers,rama,flippable-sidechain
+;
+5 percentiles         
+'20171227.v01 (using entries in the PDB archive December 27th 2017)' 
+'percentile rank calculation' 
+;numPDBids-absolute-percentile-clashscore,absolute-percentile-percent-rota-outliers,relative-percentile-clashscore,numPDBids-absolute-percentile-percent-rota-outliers,numPDBids-absolute-percentile-percent-rama-outliers,numPDBids-relative-percentile-percent-rota-outliers,numPDBids-relative-percentile-percent-rama-outliers,relative-percentile-percent-rota-outliers,numPDBids-relative-percentile-clashscore,relative-percentile-percent-rama-outliers,absolute-percentile-percent-rama-outliers,absolute-percentile-clashscore
 ;
 # 

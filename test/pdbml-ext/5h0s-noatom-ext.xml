@@ -4214,6 +4214,17 @@ VANGQVGIPKLEVDHISFSNVVSMMTANIRTGDDMAVERVNPDDVRAINIRNA</PDBxv:pdbx_seq_one_letter
          <PDBxv:revision_date>2017-01-25</PDBxv:revision_date>
       </PDBxv:pdbx_audit_revision_history>
    </PDBxv:pdbx_audit_revision_historyCategory>
+   <PDBxv:pdbx_database_relatedCategory>
+      <PDBxv:pdbx_database_related content_type="other EM volume" db_id="EMD-9564" db_name="EMDB">
+         <PDBxv:details>the structure of a cypovirus capsid of 750 diameter at 3.3 resolution using a 200 kV TEM</PDBxv:details>
+      </PDBxv:pdbx_database_related>
+      <PDBxv:pdbx_database_related content_type="associated EM volume" db_id="EMD-9565" db_name="EMDB">
+         <PDBxv:details>VP1A,VP1B</PDBxv:details>
+      </PDBxv:pdbx_database_related>
+      <PDBxv:pdbx_database_related content_type="unspecified" db_id="5H0R" db_name="PDB">
+         <PDBxv:details xsi:nil="true"/>
+      </PDBxv:pdbx_database_related>
+   </PDBxv:pdbx_database_relatedCategory>
    <PDBxv:pdbx_database_statusCategory>
       <PDBxv:pdbx_database_status entry_id="5H0S">
          <PDBxv:SG_entry>N</PDBxv:SG_entry>
@@ -4222,7 +4233,7 @@ VANGQVGIPKLEVDHISFSNVVSMMTANIRTGDDMAVERVNPDDVRAINIRNA</PDBxv:pdbx_seq_one_letter
          <PDBxv:process_site>PDBJ</PDBxv:process_site>
          <PDBxv:recvd_initial_deposition_date>2016-10-06</PDBxv:recvd_initial_deposition_date>
          <PDBxv:status_code>REL</PDBxv:status_code>
-         <PDBxv:validation_created_date>2017-02-09</PDBxv:validation_created_date>
+         <PDBxv:validation_created_date>2018-02-16</PDBxv:validation_created_date>
       </PDBxv:pdbx_database_status>
    </PDBxv:pdbx_database_statusCategory>
    <PDBxv:pdbx_poly_seq_schemeCategory>

@@ -21,7 +21,7 @@ File path | Document
 [resource/mmcif_pdbx_v50.dic](http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic) | PDB Exchange Data Dictionary (v5.319)
 [resource/pdbx-v50.xsd](https://github.com/yokochi47/pdbx-validation/blob/master/resource/pdbx-v50.xsd) | PDBML Schema (v5.319)
 [resource/pdbx-v50.owl](https://github.com/yokochi47/pdbx-validation/blob/master/resource/pdbx-v50.owl) | PDBx ontology, ontology for wwPDB/RDF (v5.319)
-[resource/wwpdb_validation_v003.xsd](https://github.com/yokochi47/pdbx-validation/blob/master/resource/wwpdb_validation_v003.xsd) | XML Schema for wwPDB validation reports (v003, rev n/a)
+[resource/wwpdb_validation_v004.xsd](https://github.com/yokochi47/pdbx-validation/blob/master/resource/wwpdb_validation_v004.xsd) | XML Schema for wwPDB validation reports (v004, rev n/a)
 [scripts](https://github.com/yokochi47/pdbx-validation/blob/master/scripts) | a directory contains scripts invoked by the 'run_all.sh' script
 [virtuoso_scripts](https://github.com/yokochi47/pdbx-validation/blob/master/virtuoso_scripts) | a directory contains scripts for uploading wwPDB/RDF-validation to local SPARQL endpoint
 [stylesheet](https://github.com/yokochi47/pdbx-validation/blob/master/stylesheet) | a directory contains XSL style sheets for generation of alternative wwPDB validation reports
@@ -125,6 +125,13 @@ File path | Document
 
 ## Release notes
 
+- **Nov 19, 2019**: Release v1.6.5
+	- Fix typo of '_pdbx_validate_rmsd_torsion.percent_dihedral_angles_fitted_to_kb'.
+	- Partial support XML Schema for wwPDB validation report (wwpdb_validation_v004.xsd).
+		- Fix typo in style sheet.
+		- Add '_pdbx_database_related' category.
+		- Update PostgreSQL DDLs (wwpdb_validation_v004.sql) enabling relational model extension.
+
 - **Nov 14, 2019**: Release v1.6.4
 	- Update wwPDB Validation Information Dictionary from v1.318 to 1.319.
 
@@ -142,7 +149,7 @@ File path | Document
 - **Aug 21, 2019**: Release v1.6.0
 	- Update wwPDB Validation Information Dictionary from v1.311 to 1.313.
 	- Support XML Schema for wwPDB validation report (wwpdb_validation_v003.xsd).
-		- Add '_pdbx_validate_rmsd_torsion.percent_dehedral_angles_fitted_to_kb' with link to /wwPDB-validation-information/ModelledSubgroup/mog-torsion-outlier/@local_density.
+		- Add '_pdbx_validate_rmsd_torsion.percent_dihedral_angles_fitted_to_kb' with link to /wwPDB-validation-information/ModelledSubgroup/mog-torsion-outlier/@local_density.
 	- Add null check for /wwPDB-validation-information/ModelledSubgroup/@mogul_angles_rmsz | @mogul_bonds_rmsz.
 
 - **Jun 3, 2019**: Release v1.5.5

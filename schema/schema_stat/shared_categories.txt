@@ -66,6 +66,7 @@ pdbx_audit_revision_history CHEM_COMP_INT
 pdbx_audit_revision_item CHEM_COMP_INT
 pdbx_bond_distance_limits
 pdbx_coordinate_model
+pdbx_database_related
 pdbx_database_status
 pdbx_dcc_density WWPDB_LOCAL
 pdbx_dcc_density_corr WWPDB_LOCAL

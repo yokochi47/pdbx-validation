@@ -420,6 +420,17 @@ INGRNNLIQQKN</PDBxv:pdbx_seq_one_letter_code_can>
       <PDBxv:item>_citation.title</PDBxv:item>
     </PDBxv:pdbx_audit_revision_item>
   </PDBxv:pdbx_audit_revision_itemCategory>
+  <PDBxv:pdbx_database_relatedCategory>
+    <PDBxv:pdbx_database_related content_type="unspecified" db_id="30210" db_name="BMRB">
+      <PDBxv:details>Solution structure of the zinc fingers 1 and 2 of MBNL1 in complex with human cardiac troponin T pre-mRNA</PDBxv:details>
+    </PDBxv:pdbx_database_related>
+    <PDBxv:pdbx_database_related content_type="unspecified" db_id="5U6H" db_name="PDB">
+      <PDBxv:details xsi:nil="true"/>
+    </PDBxv:pdbx_database_related>
+    <PDBxv:pdbx_database_related content_type="unspecified" db_id="5U6L" db_name="PDB">
+      <PDBxv:details xsi:nil="true"/>
+    </PDBxv:pdbx_database_related>
+  </PDBxv:pdbx_database_relatedCategory>
   <PDBxv:pdbx_database_statusCategory>
     <PDBxv:pdbx_database_status entry_id="5U9B">
       <PDBxv:SG_entry>N</PDBxv:SG_entry>
@@ -430,7 +441,7 @@ INGRNNLIQQKN</PDBxv:pdbx_seq_one_letter_code_can>
       <PDBxv:status_code>REL</PDBxv:status_code>
       <PDBxv:status_code_cs>REL</PDBxv:status_code_cs>
       <PDBxv:status_code_mr>REL</PDBxv:status_code_mr>
-      <PDBxv:validation_created_date>2017-08-22</PDBxv:validation_created_date>
+      <PDBxv:validation_created_date>2018-02-17</PDBxv:validation_created_date>
     </PDBxv:pdbx_database_status>
   </PDBxv:pdbx_database_statusCategory>
   <PDBxv:pdbx_entity_nonpolyCategory>
@@ -3316,7 +3327,7 @@ INGRNNLIQQKN</PDBxv:pdbx_seq_one_letter_code>
   </PDBxv:struct_site_genCategory>
   <PDBxv:pdbx_nmr_assigned_chem_shift_listCategory>
     <PDBxv:pdbx_nmr_assigned_chem_shift_list id="1">
-      <PDBxv:data_file_name>5u9b_cs.cif</PDBxv:data_file_name>
+      <PDBxv:data_file_name>5u9b_cs.str</PDBxv:data_file_name>
       <PDBxv:label>chemical_shifts_zf12RNA_str.txt</PDBxv:label>
       <PDBxv:nmr_star_consistency_flag>Y</PDBxv:nmr_star_consistency_flag>
       <PDBxv:number_chem_shifts>939</PDBxv:number_chem_shifts>
@@ -4154,54 +4165,54 @@ INGRNNLIQQKN</PDBxv:pdbx_seq_one_letter_code>
   </PDBxv:pdbx_percentile_listCategory>
   <PDBxv:pdbx_percentile_viewCategory>
     <PDBxv:pdbx_percentile_view entry_id="5U9B" conditions_id="1" type="RNA_suiteness_score">
-      <PDBxv:rank>10.5</PDBxv:rank>
+      <PDBxv:rank>10.4</PDBxv:rank>
     </PDBxv:pdbx_percentile_view>
     <PDBxv:pdbx_percentile_view entry_id="5U9B" conditions_id="2" type="RNA_suiteness_score">
-      <PDBxv:rank>23.8</PDBxv:rank>
+      <PDBxv:rank>24.0</PDBxv:rank>
     </PDBxv:pdbx_percentile_view>
     <PDBxv:pdbx_percentile_view entry_id="5U9B" conditions_id="3" type="all_atom_clashscore">
-      <PDBxv:rank>100.0</PDBxv:rank>
+      <PDBxv:rank>99.9</PDBxv:rank>
     </PDBxv:pdbx_percentile_view>
     <PDBxv:pdbx_percentile_view entry_id="5U9B" conditions_id="4" type="all_atom_clashscore">
       <PDBxv:rank>100.0</PDBxv:rank>
     </PDBxv:pdbx_percentile_view>
     <PDBxv:pdbx_percentile_view entry_id="5U9B" conditions_id="5" type="Ramachandran_outlier_percent">
-      <PDBxv:rank>57.7</PDBxv:rank>
+      <PDBxv:rank>56.5</PDBxv:rank>
     </PDBxv:pdbx_percentile_view>
     <PDBxv:pdbx_percentile_view entry_id="5U9B" conditions_id="6" type="Ramachandran_outlier_percent">
-      <PDBxv:rank>86.9</PDBxv:rank>
+      <PDBxv:rank>86.2</PDBxv:rank>
     </PDBxv:pdbx_percentile_view>
     <PDBxv:pdbx_percentile_view entry_id="5U9B" conditions_id="7" type="rotamer_outliers_percent">
-      <PDBxv:rank>54.9</PDBxv:rank>
+      <PDBxv:rank>52.6</PDBxv:rank>
     </PDBxv:pdbx_percentile_view>
     <PDBxv:pdbx_percentile_view entry_id="5U9B" conditions_id="8" type="rotamer_outliers_percent">
-      <PDBxv:rank>91.9</PDBxv:rank>
+      <PDBxv:rank>91.6</PDBxv:rank>
     </PDBxv:pdbx_percentile_view>
   </PDBxv:pdbx_percentile_viewCategory>
   <PDBxv:pdbx_percentile_conditionsCategory>
     <PDBxv:pdbx_percentile_conditions id="1">
-      <PDBxv:number_entries_total>3398</PDBxv:number_entries_total>
+      <PDBxv:number_entries_total>3744</PDBxv:number_entries_total>
     </PDBxv:pdbx_percentile_conditions>
     <PDBxv:pdbx_percentile_conditions id="2">
-      <PDBxv:number_entries_total>623</PDBxv:number_entries_total>
+      <PDBxv:number_entries_total>647</PDBxv:number_entries_total>
     </PDBxv:pdbx_percentile_conditions>
     <PDBxv:pdbx_percentile_conditions id="3">
-      <PDBxv:number_entries_total>125131</PDBxv:number_entries_total>
+      <PDBxv:number_entries_total>136279</PDBxv:number_entries_total>
     </PDBxv:pdbx_percentile_conditions>
     <PDBxv:pdbx_percentile_conditions id="4">
-      <PDBxv:number_entries_total>11601</PDBxv:number_entries_total>
+      <PDBxv:number_entries_total>12091</PDBxv:number_entries_total>
     </PDBxv:pdbx_percentile_conditions>
     <PDBxv:pdbx_percentile_conditions id="5">
-      <PDBxv:number_entries_total>121729</PDBxv:number_entries_total>
+      <PDBxv:number_entries_total>132675</PDBxv:number_entries_total>
     </PDBxv:pdbx_percentile_conditions>
     <PDBxv:pdbx_percentile_conditions id="6">
-      <PDBxv:number_entries_total>10391</PDBxv:number_entries_total>
+      <PDBxv:number_entries_total>10835</PDBxv:number_entries_total>
     </PDBxv:pdbx_percentile_conditions>
     <PDBxv:pdbx_percentile_conditions id="7">
-      <PDBxv:number_entries_total>121581</PDBxv:number_entries_total>
+      <PDBxv:number_entries_total>132484</PDBxv:number_entries_total>
     </PDBxv:pdbx_percentile_conditions>
     <PDBxv:pdbx_percentile_conditions id="8">
-      <PDBxv:number_entries_total>10367</PDBxv:number_entries_total>
+      <PDBxv:number_entries_total>10811</PDBxv:number_entries_total>
     </PDBxv:pdbx_percentile_conditions>
   </PDBxv:pdbx_percentile_conditionsCategory>
   <PDBxv:pdbx_percentile_entity_viewCategory>
@@ -4218,12 +4229,12 @@ INGRNNLIQQKN</PDBxv:pdbx_seq_one_letter_code>
     <PDBxv:pdbx_percentile_entity_view conditions_id="7" type="rotamer_outliers_percent" label_asym_id="A" PDB_model_num="1">
       <PDBxv:entity_id>1</PDBxv:entity_id>
       <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
-      <PDBxv:rank>75.45</PDBxv:rank>
+      <PDBxv:rank>73.53</PDBxv:rank>
     </PDBxv:pdbx_percentile_entity_view>
     <PDBxv:pdbx_percentile_entity_view conditions_id="8" type="rotamer_outliers_percent" label_asym_id="A" PDB_model_num="1">
       <PDBxv:entity_id>1</PDBxv:entity_id>
       <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
-      <PDBxv:rank>75.45</PDBxv:rank>
+      <PDBxv:rank>73.53</PDBxv:rank>
     </PDBxv:pdbx_percentile_entity_view>
     <PDBxv:pdbx_percentile_entity_view conditions_id="5" type="Ramachandran_outlier_percent" label_asym_id="A" PDB_model_num="2">
       <PDBxv:entity_id>1</PDBxv:entity_id>
@@ -4238,12 +4249,12 @@ INGRNNLIQQKN</PDBxv:pdbx_seq_one_letter_code>
     <PDBxv:pdbx_percentile_entity_view conditions_id="7" type="rotamer_outliers_percent" label_asym_id="A" PDB_model_num="2">
       <PDBxv:entity_id>1</PDBxv:entity_id>
       <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
-      <PDBxv:rank>22.81</PDBxv:rank>
+      <PDBxv:rank>21.47</PDBxv:rank>
     </PDBxv:pdbx_percentile_entity_view>
     <PDBxv:pdbx_percentile_entity_view conditions_id="8" type="rotamer_outliers_percent" label_asym_id="A" PDB_model_num="2">
       <PDBxv:entity_id>1</PDBxv:entity_id>
       <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
-      <PDBxv:rank>22.81</PDBxv:rank>
+      <PDBxv:rank>21.47</PDBxv:rank>
     </PDBxv:pdbx_percentile_entity_view>
     <PDBxv:pdbx_percentile_entity_view conditions_id="5" type="Ramachandran_outlier_percent" label_asym_id="A" PDB_model_num="3">
       <PDBxv:entity_id>1</PDBxv:entity_id>
@@ -4278,12 +4289,12 @@ INGRNNLIQQKN</PDBxv:pdbx_seq_one_letter_code>
     <PDBxv:pdbx_percentile_entity_view conditions_id="7" type="rotamer_outliers_percent" label_asym_id="A" PDB_model_num="4">
       <PDBxv:entity_id>1</PDBxv:entity_id>
       <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
-      <PDBxv:rank>22.81</PDBxv:rank>
+      <PDBxv:rank>21.47</PDBxv:rank>
     </PDBxv:pdbx_percentile_entity_view>
     <PDBxv:pdbx_percentile_entity_view conditions_id="8" type="rotamer_outliers_percent" label_asym_id="A" PDB_model_num="4">
       <PDBxv:entity_id>1</PDBxv:entity_id>
       <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
-      <PDBxv:rank>22.81</PDBxv:rank>
+      <PDBxv:rank>21.47</PDBxv:rank>
     </PDBxv:pdbx_percentile_entity_view>
     <PDBxv:pdbx_percentile_entity_view conditions_id="5" type="Ramachandran_outlier_percent" label_asym_id="A" PDB_model_num="5">
       <PDBxv:entity_id>1</PDBxv:entity_id>
@@ -4298,12 +4309,12 @@ INGRNNLIQQKN</PDBxv:pdbx_seq_one_letter_code>
     <PDBxv:pdbx_percentile_entity_view conditions_id="7" type="rotamer_outliers_percent" label_asym_id="A" PDB_model_num="5">
       <PDBxv:entity_id>1</PDBxv:entity_id>
       <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
-      <PDBxv:rank>40.95</PDBxv:rank>
+      <PDBxv:rank>38.87</PDBxv:rank>
     </PDBxv:pdbx_percentile_entity_view>
     <PDBxv:pdbx_percentile_entity_view conditions_id="8" type="rotamer_outliers_percent" label_asym_id="A" PDB_model_num="5">
       <PDBxv:entity_id>1</PDBxv:entity_id>
       <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
-      <PDBxv:rank>40.95</PDBxv:rank>
+      <PDBxv:rank>38.87</PDBxv:rank>
     </PDBxv:pdbx_percentile_entity_view>
     <PDBxv:pdbx_percentile_entity_view conditions_id="5" type="Ramachandran_outlier_percent" label_asym_id="A" PDB_model_num="6">
       <PDBxv:entity_id>1</PDBxv:entity_id>
@@ -4318,12 +4329,12 @@ INGRNNLIQQKN</PDBxv:pdbx_seq_one_letter_code>
     <PDBxv:pdbx_percentile_entity_view conditions_id="7" type="rotamer_outliers_percent" label_asym_id="A" PDB_model_num="6">
       <PDBxv:entity_id>1</PDBxv:entity_id>
       <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
-      <PDBxv:rank>30.43</PDBxv:rank>
+      <PDBxv:rank>28.74</PDBxv:rank>
     </PDBxv:pdbx_percentile_entity_view>
     <PDBxv:pdbx_percentile_entity_view conditions_id="8" type="rotamer_outliers_percent" label_asym_id="A" PDB_model_num="6">
       <PDBxv:entity_id>1</PDBxv:entity_id>
       <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
-      <PDBxv:rank>30.43</PDBxv:rank>
+      <PDBxv:rank>28.74</PDBxv:rank>
     </PDBxv:pdbx_percentile_entity_view>
     <PDBxv:pdbx_percentile_entity_view conditions_id="5" type="Ramachandran_outlier_percent" label_asym_id="A" PDB_model_num="7">
       <PDBxv:entity_id>1</PDBxv:entity_id>
@@ -4338,12 +4349,12 @@ INGRNNLIQQKN</PDBxv:pdbx_seq_one_letter_code>
     <PDBxv:pdbx_percentile_entity_view conditions_id="7" type="rotamer_outliers_percent" label_asym_id="A" PDB_model_num="7">
       <PDBxv:entity_id>1</PDBxv:entity_id>
       <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
-      <PDBxv:rank>40.95</PDBxv:rank>
+      <PDBxv:rank>38.87</PDBxv:rank>
     </PDBxv:pdbx_percentile_entity_view>
     <PDBxv:pdbx_percentile_entity_view conditions_id="8" type="rotamer_outliers_percent" label_asym_id="A" PDB_model_num="7">
       <PDBxv:entity_id>1</PDBxv:entity_id>
       <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
-      <PDBxv:rank>40.95</PDBxv:rank>
+      <PDBxv:rank>38.87</PDBxv:rank>
     </PDBxv:pdbx_percentile_entity_view>
     <PDBxv:pdbx_percentile_entity_view conditions_id="5" type="Ramachandran_outlier_percent" label_asym_id="A" PDB_model_num="8">
       <PDBxv:entity_id>1</PDBxv:entity_id>
@@ -4358,52 +4369,52 @@ INGRNNLIQQKN</PDBxv:pdbx_seq_one_letter_code>
     <PDBxv:pdbx_percentile_entity_view conditions_id="7" type="rotamer_outliers_percent" label_asym_id="A" PDB_model_num="8">
       <PDBxv:entity_id>1</PDBxv:entity_id>
       <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
-      <PDBxv:rank>54.16</PDBxv:rank>
+      <PDBxv:rank>51.82</PDBxv:rank>
     </PDBxv:pdbx_percentile_entity_view>
     <PDBxv:pdbx_percentile_entity_view conditions_id="8" type="rotamer_outliers_percent" label_asym_id="A" PDB_model_num="8">
       <PDBxv:entity_id>1</PDBxv:entity_id>
       <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
-      <PDBxv:rank>54.16</PDBxv:rank>
+      <PDBxv:rank>51.82</PDBxv:rank>
     </PDBxv:pdbx_percentile_entity_view>
     <PDBxv:pdbx_percentile_entity_view conditions_id="5" type="Ramachandran_outlier_percent" label_asym_id="A" PDB_model_num="9">
       <PDBxv:entity_id>1</PDBxv:entity_id>
       <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
-      <PDBxv:rank>7.70</PDBxv:rank>
+      <PDBxv:rank>7.18</PDBxv:rank>
     </PDBxv:pdbx_percentile_entity_view>
     <PDBxv:pdbx_percentile_entity_view conditions_id="6" type="Ramachandran_outlier_percent" label_asym_id="A" PDB_model_num="9">
       <PDBxv:entity_id>1</PDBxv:entity_id>
       <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
-      <PDBxv:rank>7.70</PDBxv:rank>
+      <PDBxv:rank>7.18</PDBxv:rank>
     </PDBxv:pdbx_percentile_entity_view>
     <PDBxv:pdbx_percentile_entity_view conditions_id="7" type="rotamer_outliers_percent" label_asym_id="A" PDB_model_num="9">
       <PDBxv:entity_id>1</PDBxv:entity_id>
       <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
-      <PDBxv:rank>54.16</PDBxv:rank>
+      <PDBxv:rank>51.82</PDBxv:rank>
     </PDBxv:pdbx_percentile_entity_view>
     <PDBxv:pdbx_percentile_entity_view conditions_id="8" type="rotamer_outliers_percent" label_asym_id="A" PDB_model_num="9">
       <PDBxv:entity_id>1</PDBxv:entity_id>
       <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
-      <PDBxv:rank>54.16</PDBxv:rank>
+      <PDBxv:rank>51.82</PDBxv:rank>
     </PDBxv:pdbx_percentile_entity_view>
     <PDBxv:pdbx_percentile_entity_view conditions_id="5" type="Ramachandran_outlier_percent" label_asym_id="A" PDB_model_num="10">
       <PDBxv:entity_id>1</PDBxv:entity_id>
       <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
-      <PDBxv:rank>16.52</PDBxv:rank>
+      <PDBxv:rank>15.56</PDBxv:rank>
     </PDBxv:pdbx_percentile_entity_view>
     <PDBxv:pdbx_percentile_entity_view conditions_id="6" type="Ramachandran_outlier_percent" label_asym_id="A" PDB_model_num="10">
       <PDBxv:entity_id>1</PDBxv:entity_id>
       <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
-      <PDBxv:rank>16.52</PDBxv:rank>
+      <PDBxv:rank>15.56</PDBxv:rank>
     </PDBxv:pdbx_percentile_entity_view>
     <PDBxv:pdbx_percentile_entity_view conditions_id="7" type="rotamer_outliers_percent" label_asym_id="A" PDB_model_num="10">
       <PDBxv:entity_id>1</PDBxv:entity_id>
       <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
-      <PDBxv:rank>54.16</PDBxv:rank>
+      <PDBxv:rank>51.82</PDBxv:rank>
     </PDBxv:pdbx_percentile_entity_view>
     <PDBxv:pdbx_percentile_entity_view conditions_id="8" type="rotamer_outliers_percent" label_asym_id="A" PDB_model_num="10">
       <PDBxv:entity_id>1</PDBxv:entity_id>
       <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
-      <PDBxv:rank>54.16</PDBxv:rank>
+      <PDBxv:rank>51.82</PDBxv:rank>
     </PDBxv:pdbx_percentile_entity_view>
     <PDBxv:pdbx_percentile_entity_view conditions_id="5" type="Ramachandran_outlier_percent" label_asym_id="A" PDB_model_num="11">
       <PDBxv:entity_id>1</PDBxv:entity_id>
@@ -4418,32 +4429,32 @@ INGRNNLIQQKN</PDBxv:pdbx_seq_one_letter_code>
     <PDBxv:pdbx_percentile_entity_view conditions_id="7" type="rotamer_outliers_percent" label_asym_id="A" PDB_model_num="11">
       <PDBxv:entity_id>1</PDBxv:entity_id>
       <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
-      <PDBxv:rank>54.16</PDBxv:rank>
+      <PDBxv:rank>51.82</PDBxv:rank>
     </PDBxv:pdbx_percentile_entity_view>
     <PDBxv:pdbx_percentile_entity_view conditions_id="8" type="rotamer_outliers_percent" label_asym_id="A" PDB_model_num="11">
       <PDBxv:entity_id>1</PDBxv:entity_id>
       <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
-      <PDBxv:rank>54.16</PDBxv:rank>
+      <PDBxv:rank>51.82</PDBxv:rank>
     </PDBxv:pdbx_percentile_entity_view>
     <PDBxv:pdbx_percentile_entity_view conditions_id="5" type="Ramachandran_outlier_percent" label_asym_id="A" PDB_model_num="12">
       <PDBxv:entity_id>1</PDBxv:entity_id>
       <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
-      <PDBxv:rank>7.70</PDBxv:rank>
+      <PDBxv:rank>7.18</PDBxv:rank>
     </PDBxv:pdbx_percentile_entity_view>
     <PDBxv:pdbx_percentile_entity_view conditions_id="6" type="Ramachandran_outlier_percent" label_asym_id="A" PDB_model_num="12">
       <PDBxv:entity_id>1</PDBxv:entity_id>
       <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
-      <PDBxv:rank>7.70</PDBxv:rank>
+      <PDBxv:rank>7.18</PDBxv:rank>
     </PDBxv:pdbx_percentile_entity_view>
     <PDBxv:pdbx_percentile_entity_view conditions_id="7" type="rotamer_outliers_percent" label_asym_id="A" PDB_model_num="12">
       <PDBxv:entity_id>1</PDBxv:entity_id>
       <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
-      <PDBxv:rank>54.16</PDBxv:rank>
+      <PDBxv:rank>51.82</PDBxv:rank>
     </PDBxv:pdbx_percentile_entity_view>
     <PDBxv:pdbx_percentile_entity_view conditions_id="8" type="rotamer_outliers_percent" label_asym_id="A" PDB_model_num="12">
       <PDBxv:entity_id>1</PDBxv:entity_id>
       <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
-      <PDBxv:rank>54.16</PDBxv:rank>
+      <PDBxv:rank>51.82</PDBxv:rank>
     </PDBxv:pdbx_percentile_entity_view>
     <PDBxv:pdbx_percentile_entity_view conditions_id="5" type="Ramachandran_outlier_percent" label_asym_id="A" PDB_model_num="13">
       <PDBxv:entity_id>1</PDBxv:entity_id>
@@ -4458,12 +4469,12 @@ INGRNNLIQQKN</PDBxv:pdbx_seq_one_letter_code>
     <PDBxv:pdbx_percentile_entity_view conditions_id="7" type="rotamer_outliers_percent" label_asym_id="A" PDB_model_num="13">
       <PDBxv:entity_id>1</PDBxv:entity_id>
       <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
-      <PDBxv:rank>22.81</PDBxv:rank>
+      <PDBxv:rank>21.47</PDBxv:rank>
     </PDBxv:pdbx_percentile_entity_view>
     <PDBxv:pdbx_percentile_entity_view conditions_id="8" type="rotamer_outliers_percent" label_asym_id="A" PDB_model_num="13">
       <PDBxv:entity_id>1</PDBxv:entity_id>
       <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
-      <PDBxv:rank>22.81</PDBxv:rank>
+      <PDBxv:rank>21.47</PDBxv:rank>
     </PDBxv:pdbx_percentile_entity_view>
     <PDBxv:pdbx_percentile_entity_view conditions_id="5" type="Ramachandran_outlier_percent" label_asym_id="A" PDB_model_num="14">
       <PDBxv:entity_id>1</PDBxv:entity_id>
@@ -4478,12 +4489,12 @@ INGRNNLIQQKN</PDBxv:pdbx_seq_one_letter_code>
     <PDBxv:pdbx_percentile_entity_view conditions_id="7" type="rotamer_outliers_percent" label_asym_id="A" PDB_model_num="14">
       <PDBxv:entity_id>1</PDBxv:entity_id>
       <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
-      <PDBxv:rank>54.16</PDBxv:rank>
+      <PDBxv:rank>51.82</PDBxv:rank>
     </PDBxv:pdbx_percentile_entity_view>
     <PDBxv:pdbx_percentile_entity_view conditions_id="8" type="rotamer_outliers_percent" label_asym_id="A" PDB_model_num="14">
       <PDBxv:entity_id>1</PDBxv:entity_id>
       <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
-      <PDBxv:rank>54.16</PDBxv:rank>
+      <PDBxv:rank>51.82</PDBxv:rank>
     </PDBxv:pdbx_percentile_entity_view>
     <PDBxv:pdbx_percentile_entity_view conditions_id="5" type="Ramachandran_outlier_percent" label_asym_id="A" PDB_model_num="15">
       <PDBxv:entity_id>1</PDBxv:entity_id>
@@ -4498,12 +4509,12 @@ INGRNNLIQQKN</PDBxv:pdbx_seq_one_letter_code>
     <PDBxv:pdbx_percentile_entity_view conditions_id="7" type="rotamer_outliers_percent" label_asym_id="A" PDB_model_num="15">
       <PDBxv:entity_id>1</PDBxv:entity_id>
       <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
-      <PDBxv:rank>54.16</PDBxv:rank>
+      <PDBxv:rank>51.82</PDBxv:rank>
     </PDBxv:pdbx_percentile_entity_view>
     <PDBxv:pdbx_percentile_entity_view conditions_id="8" type="rotamer_outliers_percent" label_asym_id="A" PDB_model_num="15">
       <PDBxv:entity_id>1</PDBxv:entity_id>
       <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
-      <PDBxv:rank>54.16</PDBxv:rank>
+      <PDBxv:rank>51.82</PDBxv:rank>
     </PDBxv:pdbx_percentile_entity_view>
     <PDBxv:pdbx_percentile_entity_view conditions_id="5" type="Ramachandran_outlier_percent" label_asym_id="A" PDB_model_num="16">
       <PDBxv:entity_id>1</PDBxv:entity_id>
@@ -4518,12 +4529,12 @@ INGRNNLIQQKN</PDBxv:pdbx_seq_one_letter_code>
     <PDBxv:pdbx_percentile_entity_view conditions_id="7" type="rotamer_outliers_percent" label_asym_id="A" PDB_model_num="16">
       <PDBxv:entity_id>1</PDBxv:entity_id>
       <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
-      <PDBxv:rank>22.81</PDBxv:rank>
+      <PDBxv:rank>21.47</PDBxv:rank>
     </PDBxv:pdbx_percentile_entity_view>
     <PDBxv:pdbx_percentile_entity_view conditions_id="8" type="rotamer_outliers_percent" label_asym_id="A" PDB_model_num="16">
       <PDBxv:entity_id>1</PDBxv:entity_id>
       <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
-      <PDBxv:rank>22.81</PDBxv:rank>
+      <PDBxv:rank>21.47</PDBxv:rank>
     </PDBxv:pdbx_percentile_entity_view>
     <PDBxv:pdbx_percentile_entity_view conditions_id="5" type="Ramachandran_outlier_percent" label_asym_id="A" PDB_model_num="17">
       <PDBxv:entity_id>1</PDBxv:entity_id>
@@ -4538,12 +4549,12 @@ INGRNNLIQQKN</PDBxv:pdbx_seq_one_letter_code>
     <PDBxv:pdbx_percentile_entity_view conditions_id="7" type="rotamer_outliers_percent" label_asym_id="A" PDB_model_num="17">
       <PDBxv:entity_id>1</PDBxv:entity_id>
       <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
-      <PDBxv:rank>40.95</PDBxv:rank>
+      <PDBxv:rank>38.87</PDBxv:rank>
     </PDBxv:pdbx_percentile_entity_view>
     <PDBxv:pdbx_percentile_entity_view conditions_id="8" type="rotamer_outliers_percent" label_asym_id="A" PDB_model_num="17">
       <PDBxv:entity_id>1</PDBxv:entity_id>
       <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
-      <PDBxv:rank>40.95</PDBxv:rank>
+      <PDBxv:rank>38.87</PDBxv:rank>
     </PDBxv:pdbx_percentile_entity_view>
     <PDBxv:pdbx_percentile_entity_view conditions_id="5" type="Ramachandran_outlier_percent" label_asym_id="A" PDB_model_num="18">
       <PDBxv:entity_id>1</PDBxv:entity_id>
@@ -4558,32 +4569,32 @@ INGRNNLIQQKN</PDBxv:pdbx_seq_one_letter_code>
     <PDBxv:pdbx_percentile_entity_view conditions_id="7" type="rotamer_outliers_percent" label_asym_id="A" PDB_model_num="18">
       <PDBxv:entity_id>1</PDBxv:entity_id>
       <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
-      <PDBxv:rank>75.45</PDBxv:rank>
+      <PDBxv:rank>73.53</PDBxv:rank>
     </PDBxv:pdbx_percentile_entity_view>
     <PDBxv:pdbx_percentile_entity_view conditions_id="8" type="rotamer_outliers_percent" label_asym_id="A" PDB_model_num="18">
       <PDBxv:entity_id>1</PDBxv:entity_id>
       <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
-      <PDBxv:rank>75.45</PDBxv:rank>
+      <PDBxv:rank>73.53</PDBxv:rank>
     </PDBxv:pdbx_percentile_entity_view>
     <PDBxv:pdbx_percentile_entity_view conditions_id="5" type="Ramachandran_outlier_percent" label_asym_id="A" PDB_model_num="19">
       <PDBxv:entity_id>1</PDBxv:entity_id>
       <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
-      <PDBxv:rank>16.52</PDBxv:rank>
+      <PDBxv:rank>15.56</PDBxv:rank>
     </PDBxv:pdbx_percentile_entity_view>
     <PDBxv:pdbx_percentile_entity_view conditions_id="6" type="Ramachandran_outlier_percent" label_asym_id="A" PDB_model_num="19">
       <PDBxv:entity_id>1</PDBxv:entity_id>
       <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
-      <PDBxv:rank>16.52</PDBxv:rank>
+      <PDBxv:rank>15.56</PDBxv:rank>
     </PDBxv:pdbx_percentile_entity_view>
     <PDBxv:pdbx_percentile_entity_view conditions_id="7" type="rotamer_outliers_percent" label_asym_id="A" PDB_model_num="19">
       <PDBxv:entity_id>1</PDBxv:entity_id>
       <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
-      <PDBxv:rank>22.81</PDBxv:rank>
+      <PDBxv:rank>21.47</PDBxv:rank>
     </PDBxv:pdbx_percentile_entity_view>
     <PDBxv:pdbx_percentile_entity_view conditions_id="8" type="rotamer_outliers_percent" label_asym_id="A" PDB_model_num="19">
       <PDBxv:entity_id>1</PDBxv:entity_id>
       <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
-      <PDBxv:rank>22.81</PDBxv:rank>
+      <PDBxv:rank>21.47</PDBxv:rank>
     </PDBxv:pdbx_percentile_entity_view>
     <PDBxv:pdbx_percentile_entity_view conditions_id="5" type="Ramachandran_outlier_percent" label_asym_id="A" PDB_model_num="20">
       <PDBxv:entity_id>1</PDBxv:entity_id>
@@ -4598,12 +4609,12 @@ INGRNNLIQQKN</PDBxv:pdbx_seq_one_letter_code>
     <PDBxv:pdbx_percentile_entity_view conditions_id="7" type="rotamer_outliers_percent" label_asym_id="A" PDB_model_num="20">
       <PDBxv:entity_id>1</PDBxv:entity_id>
       <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
-      <PDBxv:rank>54.16</PDBxv:rank>
+      <PDBxv:rank>51.82</PDBxv:rank>
     </PDBxv:pdbx_percentile_entity_view>
     <PDBxv:pdbx_percentile_entity_view conditions_id="8" type="rotamer_outliers_percent" label_asym_id="A" PDB_model_num="20">
       <PDBxv:entity_id>1</PDBxv:entity_id>
       <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
-      <PDBxv:rank>54.16</PDBxv:rank>
+      <PDBxv:rank>51.82</PDBxv:rank>
     </PDBxv:pdbx_percentile_entity_view>
   </PDBxv:pdbx_percentile_entity_viewCategory>
   <PDBxv:pdbx_dcc_geometryCategory>
@@ -25620,52 +25631,52 @@ INGRNNLIQQKN</PDBxv:pdbx_seq_one_letter_code>
   </PDBxv:pdbx_struct_nmr_ens_dom_limCategory>
   <PDBxv:pdbx_validation_softwareCategory>
     <PDBxv:pdbx_validation_software ordinal="1">
+      <PDBxv:name>coreclust</PDBxv:name>
+      <PDBxv:version>trunk30686</PDBxv:version>
+      <PDBxv:classification>assessment of nmr ensemble structure</PDBxv:classification>
+      <PDBxv:details>nmrclust_representative_model,nmrclust_number_of_models,residue_string,medoid_model,cyrange_error,rmsd,nmrclust_representative,number_of_residues,cyrange_version,nmrclust_version,medoid_rmsd,cyrange_domain_id,cyrange_number_of_domains,nmrclust_number_of_outliers,percentage_of_core,nmr_models_consistency_flag,validate,nmrclust_error,nmrclust_cluster_id,number_of_gaps,nmrclust_number_of_clusters</PDBxv:details>
+    </PDBxv:pdbx_validation_software>
+    <PDBxv:pdbx_validation_software ordinal="2">
+      <PDBxv:name>nmrwriter</PDBxv:name>
+      <PDBxv:version>trunk30686</PDBxv:version>
+      <PDBxv:classification>geometric validation of nmr ensemble structure</PDBxv:classification>
+      <PDBxv:details>clashscore,percent-rota-outliers,percent-rama-outliers</PDBxv:details>
+    </PDBxv:pdbx_validation_software>
+    <PDBxv:pdbx_validation_software ordinal="3">
+      <PDBxv:name>validation-pipeline</PDBxv:name>
+      <PDBxv:version>trunk30686</PDBxv:version>
+      <PDBxv:classification>mmcif data extractor</PDBxv:classification>
+      <PDBxv:details>PDB-revision-date,PDB-resolution,protein-DNA-RNA-entities,PDB-Rfree,PDB-R,percentilebins,PDB-resolution-low,pdbid,PDB-revision-number,attemptedValidationSteps,XMLcreationDate,PDB-deposition-date</PDBxv:details>
+    </PDBxv:pdbx_validation_software>
+    <PDBxv:pdbx_validation_software ordinal="4">
       <PDBxv:name>mogul</PDBxv:name>
       <PDBxv:version>unknown</PDBxv:version>
       <PDBxv:classification>geometric validation</PDBxv:classification>
       <PDBxv:details>mogul-ignore</PDBxv:details>
     </PDBxv:pdbx_validation_software>
-    <PDBxv:pdbx_validation_software ordinal="2">
-      <PDBxv:name>coreclust</PDBxv:name>
-      <PDBxv:version>rb-20029824</PDBxv:version>
-      <PDBxv:classification>assessment of nmr ensemble structure</PDBxv:classification>
-      <PDBxv:details>nmrclust_representative_model,nmrclust_number_of_models,residue_string,medoid_model,cyrange_error,rmsd,nmrclust_representative,number_of_residues,cyrange_version,nmrclust_version,medoid_rmsd,cyrange_domain_id,cyrange_number_of_domains,nmrclust_number_of_outliers,percentage_of_core,nmr_models_consistency_flag,validate,nmrclust_error,nmrclust_cluster_id,number_of_gaps,nmrclust_number_of_clusters</PDBxv:details>
-    </PDBxv:pdbx_validation_software>
-    <PDBxv:pdbx_validation_software ordinal="3">
-      <PDBxv:name>percentiles</PDBxv:name>
-      <PDBxv:version>20161228.v01 (using entries in the PDB archive December 28th 2016)</PDBxv:version>
-      <PDBxv:classification>percentile rank calculation</PDBxv:classification>
-      <PDBxv:details>numPDBids-absolute-percentile-clashscore,absolute-percentile-percent-rota-outliers,relative-percentile-percent-rama-outliers,relative-percentile-clashscore,numPDBids-absolute-percentile-RNAsuiteness,numPDBids-absolute-percentile-percent-rota-outliers,numPDBids-absolute-percentile-percent-rama-outliers,numPDBids-relative-percentile-RNAsuiteness,numPDBids-relative-percentile-percent-rota-outliers,absolute-percentile-percent-rama-outliers,relative-percentile-RNAsuiteness,relative-percentile-percent-rota-outliers,numPDBids-relative-percentile-clashscore,absolute-percentile-RNAsuiteness,numPDBids-relative-percentile-percent-rama-outliers,absolute-percentile-clashscore</PDBxv:details>
-    </PDBxv:pdbx_validation_software>
-    <PDBxv:pdbx_validation_software ordinal="4">
-      <PDBxv:name>validation-pipeline</PDBxv:name>
-      <PDBxv:version>rb-20029824</PDBxv:version>
-      <PDBxv:classification>mmcif data extractor</PDBxv:classification>
-      <PDBxv:details>PDB-revision-date,PDB-resolution,protein-DNA-RNA-entities,PDB-Rfree,PDB-R,percentilebins,PDB-resolution-low,pdbid,PDB-revision-number,attemptedValidationSteps,XMLcreationDate,PDB-deposition-date</PDBxv:details>
-    </PDBxv:pdbx_validation_software>
     <PDBxv:pdbx_validation_software ordinal="5">
-      <PDBxv:name>chemicalshifts</PDBxv:name>
-      <PDBxv:version>rb-20029824</PDBxv:version>
-      <PDBxv:classification>assessment of nmr assigned chemical shifts</PDBxv:classification>
-      <PDBxv:details>rci_version,shiftchecker_version,chemical_shift_completeness,panav_version,chemical_shift_completeness_full_length</PDBxv:details>
+      <PDBxv:name>molprobity</PDBxv:name>
+      <PDBxv:version>4.02b-467</PDBxv:version>
+      <PDBxv:classification>geometric validation</PDBxv:classification>
+      <PDBxv:details>relative_rama_percentile,absolute_sidechain_percentile,clashscore-full-length,absolute_rama_percentile,phi,psi,num-H-reduce,clash,percent-rota-outliers-full-length,relative_sidechain_percentile,rota,bonds_rmsz,RNAscore,RNAsuite,bond-outlier,angle-outlier,RNAsuiteness,percent-rama-outliers-full-length,num_bonds_rmsz,RNApucker,RestypesNotcheckedForBondAngleGeometry,angles_rmsz,num_angles_rmsz,rama</PDBxv:details>
     </PDBxv:pdbx_validation_software>
     <PDBxv:pdbx_validation_software ordinal="6">
-      <PDBxv:name>nmrwriter</PDBxv:name>
-      <PDBxv:version>rb-20029824</PDBxv:version>
-      <PDBxv:classification>geometric validation of nmr ensemble structure</PDBxv:classification>
-      <PDBxv:details>clashscore,percent-rota-outliers,percent-rama-outliers</PDBxv:details>
-    </PDBxv:pdbx_validation_software>
-    <PDBxv:pdbx_validation_software ordinal="7">
       <PDBxv:name>validation-pack</PDBxv:name>
       <PDBxv:version>unknown</PDBxv:version>
       <PDBxv:classification>geometric validation</PDBxv:classification>
       <PDBxv:details>plane-outlier</PDBxv:details>
     </PDBxv:pdbx_validation_software>
+    <PDBxv:pdbx_validation_software ordinal="7">
+      <PDBxv:name>chemicalshifts</PDBxv:name>
+      <PDBxv:version>trunk30686</PDBxv:version>
+      <PDBxv:classification>assessment of nmr assigned chemical shifts</PDBxv:classification>
+      <PDBxv:details>rci_version,shiftchecker_version,chemical_shift_completeness,panav_version,chemical_shift_completeness_full_length</PDBxv:details>
+    </PDBxv:pdbx_validation_software>
     <PDBxv:pdbx_validation_software ordinal="8">
-      <PDBxv:name>molprobity</PDBxv:name>
-      <PDBxv:version>4.02b-467</PDBxv:version>
-      <PDBxv:classification>geometric validation</PDBxv:classification>
-      <PDBxv:details>relative_rama_percentile,absolute_sidechain_percentile,clashscore-full-length,absolute_rama_percentile,phi,psi,num-H-reduce,clash,percent-rota-outliers-full-length,relative_sidechain_percentile,rota,bonds_rmsz,RNAscore,RNAsuite,bond-outlier,angle-outlier,RNAsuiteness,percent-rama-outliers-full-length,num_bonds_rmsz,RNApucker,RestypesNotcheckedForBondAngleGeometry,angles_rmsz,num_angles_rmsz,rama</PDBxv:details>
+      <PDBxv:name>percentiles</PDBxv:name>
+      <PDBxv:version>20171227.v01 (using entries in the PDB archive December 27th 2017)</PDBxv:version>
+      <PDBxv:classification>percentile rank calculation</PDBxv:classification>
+      <PDBxv:details>numPDBids-absolute-percentile-clashscore,absolute-percentile-percent-rota-outliers,relative-percentile-percent-rama-outliers,relative-percentile-clashscore,numPDBids-absolute-percentile-RNAsuiteness,numPDBids-absolute-percentile-percent-rota-outliers,numPDBids-absolute-percentile-percent-rama-outliers,numPDBids-relative-percentile-RNAsuiteness,numPDBids-relative-percentile-percent-rota-outliers,absolute-percentile-percent-rama-outliers,relative-percentile-RNAsuiteness,relative-percentile-percent-rota-outliers,numPDBids-relative-percentile-clashscore,absolute-percentile-RNAsuiteness,numPDBids-relative-percentile-percent-rama-outliers,absolute-percentile-clashscore</PDBxv:details>
     </PDBxv:pdbx_validation_software>
     <PDBxv:pdbx_validation_software ordinal="9">
       <PDBxv:name>cyrange</PDBxv:name>
@@ -25689,7 +25700,7 @@ INGRNNLIQQKN</PDBxv:pdbx_seq_one_letter_code>
     </PDBxv:pdbx_validation_software>
     <PDBxv:pdbx_validation_software ordinal="13">
       <PDBxv:name>shiftchecker</PDBxv:name>
-      <PDBxv:version>rb-20029824</PDBxv:version>
+      <PDBxv:version>trunk30686</PDBxv:version>
       <PDBxv:classification>nmr chemical shift validation</PDBxv:classification>
     </PDBxv:pdbx_validation_software>
   </PDBxv:pdbx_validation_softwareCategory>

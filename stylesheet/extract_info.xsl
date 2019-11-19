@@ -2252,7 +2252,7 @@ Unmatched components exist in atoms, <xsl:value-of select="position()"/>, found 
       <xsl:element name="PDBxv:dihedral_angle_minimum_diff_to_kb"><xsl:value-of select="@mindiff"/></xsl:element>
       <xsl:element name="PDBxv:number_dihedral_angles_in_kb"><xsl:value-of select="@numobs"/></xsl:element>
       <xsl:if test="../@local_density">
-        <xsl:element name="PDBxv:percent_dehedral_angles_fitted_to_kb"><xsl:value-of select="../@local_density"/></xsl:element>
+        <xsl:element name="PDBxv:percent_dihedral_angles_fitted_to_kb"><xsl:value-of select="../@local_density"/></xsl:element>
       </xsl:if>
     </PDBxv:pdbx_validate_rmsd_torsion>
   </xsl:template>
