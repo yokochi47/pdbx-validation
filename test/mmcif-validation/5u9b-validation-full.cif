@@ -191,6 +191,17 @@ _pdbx_audit_revision_item.item
 'Structure model' 3 2 '_citation.page_last'      
 'Structure model' 4 2 '_citation.title'          
 # 
+loop_
+_pdbx_database_related.content_type 
+_pdbx_database_related.db_id 
+_pdbx_database_related.db_name 
+_pdbx_database_related.details 
+unspecified 30210 BMRB 
+;Solution structure of the zinc fingers 1 and 2 of MBNL1 in complex with human cardiac troponin T pre-mRNA
+;
+unspecified 5U6H  PDB  ? 
+unspecified 5U6L  PDB  ? 
+# 
 _pdbx_database_status.entry_id                        5U9B 
 _pdbx_database_status.SG_entry                        N 
 _pdbx_database_status.deposit_site                    RCSB 
@@ -200,7 +211,7 @@ _pdbx_database_status.recvd_initial_deposition_date   2016-12-15
 _pdbx_database_status.status_code                     REL 
 _pdbx_database_status.status_code_cs                  REL 
 _pdbx_database_status.status_code_mr                  REL 
-_pdbx_database_status.validation_created_date         2017-08-22 
+_pdbx_database_status.validation_created_date         2018-02-17 
 # 
 _pdbx_entity_nonpoly.entity_id   3 
 _pdbx_entity_nonpoly.comp_id     ZN 
@@ -799,7 +810,7 @@ _struct_site_gen.symmetry
 8 AC2 A HIS 70 A ? HIS 70 4 1_555 
 # 
 _pdbx_nmr_assigned_chem_shift_list.id                            1 
-_pdbx_nmr_assigned_chem_shift_list.data_file_name                5u9b_cs.cif 
+_pdbx_nmr_assigned_chem_shift_list.data_file_name                5u9b_cs.str 
 _pdbx_nmr_assigned_chem_shift_list.label                         
 chemical_shifts_zf12RNA_str.txt 
 _pdbx_nmr_assigned_chem_shift_list.nmr_star_consistency_flag     Y 
@@ -981,26 +992,26 @@ _pdbx_percentile_view.entry_id
 _pdbx_percentile_view.conditions_id 
 _pdbx_percentile_view.type 
 _pdbx_percentile_view.rank 
-5U9B 1 RNA_suiteness_score          10.5  
-5U9B 2 RNA_suiteness_score          23.8  
-5U9B 3 all_atom_clashscore          100.0 
+5U9B 1 RNA_suiteness_score          10.4  
+5U9B 2 RNA_suiteness_score          24.0  
+5U9B 3 all_atom_clashscore          99.9  
 5U9B 4 all_atom_clashscore          100.0 
-5U9B 5 Ramachandran_outlier_percent 57.7  
-5U9B 6 Ramachandran_outlier_percent 86.9  
-5U9B 7 rotamer_outliers_percent     54.9  
-5U9B 8 rotamer_outliers_percent     91.9  
+5U9B 5 Ramachandran_outlier_percent 56.5  
+5U9B 6 Ramachandran_outlier_percent 86.2  
+5U9B 7 rotamer_outliers_percent     52.6  
+5U9B 8 rotamer_outliers_percent     91.6  
 # 
 loop_
 _pdbx_percentile_conditions.id 
 _pdbx_percentile_conditions.number_entries_total 
-1 3398   
-2 623    
-3 125131 
-4 11601  
-5 121729 
-6 10391  
-7 121581 
-8 10367  
+1 3744   
+2 647    
+3 136279 
+4 12091  
+5 132675 
+6 10835  
+7 132484 
+8 10811  
 # 
 loop_
 _pdbx_percentile_entity_view.conditions_id 
@@ -1012,84 +1023,84 @@ _pdbx_percentile_entity_view.auth_asym_id
 _pdbx_percentile_entity_view.rank 
 5 Ramachandran_outlier_percent A 1  1 A 100.00 
 6 Ramachandran_outlier_percent A 1  1 A 100.00 
-7 rotamer_outliers_percent     A 1  1 A 75.45  
-8 rotamer_outliers_percent     A 1  1 A 75.45  
+7 rotamer_outliers_percent     A 1  1 A 73.53  
+8 rotamer_outliers_percent     A 1  1 A 73.53  
 5 Ramachandran_outlier_percent A 2  1 A 100.00 
 6 Ramachandran_outlier_percent A 2  1 A 100.00 
-7 rotamer_outliers_percent     A 2  1 A 22.81  
-8 rotamer_outliers_percent     A 2  1 A 22.81  
+7 rotamer_outliers_percent     A 2  1 A 21.47  
+8 rotamer_outliers_percent     A 2  1 A 21.47  
 5 Ramachandran_outlier_percent A 3  1 A 100.00 
 6 Ramachandran_outlier_percent A 3  1 A 100.00 
 7 rotamer_outliers_percent     A 3  1 A 100.00 
 8 rotamer_outliers_percent     A 3  1 A 100.00 
 5 Ramachandran_outlier_percent A 4  1 A 100.00 
 6 Ramachandran_outlier_percent A 4  1 A 100.00 
-7 rotamer_outliers_percent     A 4  1 A 22.81  
-8 rotamer_outliers_percent     A 4  1 A 22.81  
+7 rotamer_outliers_percent     A 4  1 A 21.47  
+8 rotamer_outliers_percent     A 4  1 A 21.47  
 5 Ramachandran_outlier_percent A 5  1 A 100.00 
 6 Ramachandran_outlier_percent A 5  1 A 100.00 
-7 rotamer_outliers_percent     A 5  1 A 40.95  
-8 rotamer_outliers_percent     A 5  1 A 40.95  
+7 rotamer_outliers_percent     A 5  1 A 38.87  
+8 rotamer_outliers_percent     A 5  1 A 38.87  
 5 Ramachandran_outlier_percent A 6  1 A 100.00 
 6 Ramachandran_outlier_percent A 6  1 A 100.00 
-7 rotamer_outliers_percent     A 6  1 A 30.43  
-8 rotamer_outliers_percent     A 6  1 A 30.43  
+7 rotamer_outliers_percent     A 6  1 A 28.74  
+8 rotamer_outliers_percent     A 6  1 A 28.74  
 5 Ramachandran_outlier_percent A 7  1 A 100.00 
 6 Ramachandran_outlier_percent A 7  1 A 100.00 
-7 rotamer_outliers_percent     A 7  1 A 40.95  
-8 rotamer_outliers_percent     A 7  1 A 40.95  
+7 rotamer_outliers_percent     A 7  1 A 38.87  
+8 rotamer_outliers_percent     A 7  1 A 38.87  
 5 Ramachandran_outlier_percent A 8  1 A 100.00 
 6 Ramachandran_outlier_percent A 8  1 A 100.00 
-7 rotamer_outliers_percent     A 8  1 A 54.16  
-8 rotamer_outliers_percent     A 8  1 A 54.16  
-5 Ramachandran_outlier_percent A 9  1 A 7.70   
-6 Ramachandran_outlier_percent A 9  1 A 7.70   
-7 rotamer_outliers_percent     A 9  1 A 54.16  
-8 rotamer_outliers_percent     A 9  1 A 54.16  
-5 Ramachandran_outlier_percent A 10 1 A 16.52  
-6 Ramachandran_outlier_percent A 10 1 A 16.52  
-7 rotamer_outliers_percent     A 10 1 A 54.16  
-8 rotamer_outliers_percent     A 10 1 A 54.16  
+7 rotamer_outliers_percent     A 8  1 A 51.82  
+8 rotamer_outliers_percent     A 8  1 A 51.82  
+5 Ramachandran_outlier_percent A 9  1 A 7.18   
+6 Ramachandran_outlier_percent A 9  1 A 7.18   
+7 rotamer_outliers_percent     A 9  1 A 51.82  
+8 rotamer_outliers_percent     A 9  1 A 51.82  
+5 Ramachandran_outlier_percent A 10 1 A 15.56  
+6 Ramachandran_outlier_percent A 10 1 A 15.56  
+7 rotamer_outliers_percent     A 10 1 A 51.82  
+8 rotamer_outliers_percent     A 10 1 A 51.82  
 5 Ramachandran_outlier_percent A 11 1 A 100.00 
 6 Ramachandran_outlier_percent A 11 1 A 100.00 
-7 rotamer_outliers_percent     A 11 1 A 54.16  
-8 rotamer_outliers_percent     A 11 1 A 54.16  
-5 Ramachandran_outlier_percent A 12 1 A 7.70   
-6 Ramachandran_outlier_percent A 12 1 A 7.70   
-7 rotamer_outliers_percent     A 12 1 A 54.16  
-8 rotamer_outliers_percent     A 12 1 A 54.16  
+7 rotamer_outliers_percent     A 11 1 A 51.82  
+8 rotamer_outliers_percent     A 11 1 A 51.82  
+5 Ramachandran_outlier_percent A 12 1 A 7.18   
+6 Ramachandran_outlier_percent A 12 1 A 7.18   
+7 rotamer_outliers_percent     A 12 1 A 51.82  
+8 rotamer_outliers_percent     A 12 1 A 51.82  
 5 Ramachandran_outlier_percent A 13 1 A 100.00 
 6 Ramachandran_outlier_percent A 13 1 A 100.00 
-7 rotamer_outliers_percent     A 13 1 A 22.81  
-8 rotamer_outliers_percent     A 13 1 A 22.81  
+7 rotamer_outliers_percent     A 13 1 A 21.47  
+8 rotamer_outliers_percent     A 13 1 A 21.47  
 5 Ramachandran_outlier_percent A 14 1 A 100.00 
 6 Ramachandran_outlier_percent A 14 1 A 100.00 
-7 rotamer_outliers_percent     A 14 1 A 54.16  
-8 rotamer_outliers_percent     A 14 1 A 54.16  
+7 rotamer_outliers_percent     A 14 1 A 51.82  
+8 rotamer_outliers_percent     A 14 1 A 51.82  
 5 Ramachandran_outlier_percent A 15 1 A 100.00 
 6 Ramachandran_outlier_percent A 15 1 A 100.00 
-7 rotamer_outliers_percent     A 15 1 A 54.16  
-8 rotamer_outliers_percent     A 15 1 A 54.16  
+7 rotamer_outliers_percent     A 15 1 A 51.82  
+8 rotamer_outliers_percent     A 15 1 A 51.82  
 5 Ramachandran_outlier_percent A 16 1 A 100.00 
 6 Ramachandran_outlier_percent A 16 1 A 100.00 
-7 rotamer_outliers_percent     A 16 1 A 22.81  
-8 rotamer_outliers_percent     A 16 1 A 22.81  
+7 rotamer_outliers_percent     A 16 1 A 21.47  
+8 rotamer_outliers_percent     A 16 1 A 21.47  
 5 Ramachandran_outlier_percent A 17 1 A 100.00 
 6 Ramachandran_outlier_percent A 17 1 A 100.00 
-7 rotamer_outliers_percent     A 17 1 A 40.95  
-8 rotamer_outliers_percent     A 17 1 A 40.95  
+7 rotamer_outliers_percent     A 17 1 A 38.87  
+8 rotamer_outliers_percent     A 17 1 A 38.87  
 5 Ramachandran_outlier_percent A 18 1 A 100.00 
 6 Ramachandran_outlier_percent A 18 1 A 100.00 
-7 rotamer_outliers_percent     A 18 1 A 75.45  
-8 rotamer_outliers_percent     A 18 1 A 75.45  
-5 Ramachandran_outlier_percent A 19 1 A 16.52  
-6 Ramachandran_outlier_percent A 19 1 A 16.52  
-7 rotamer_outliers_percent     A 19 1 A 22.81  
-8 rotamer_outliers_percent     A 19 1 A 22.81  
+7 rotamer_outliers_percent     A 18 1 A 73.53  
+8 rotamer_outliers_percent     A 18 1 A 73.53  
+5 Ramachandran_outlier_percent A 19 1 A 15.56  
+6 Ramachandran_outlier_percent A 19 1 A 15.56  
+7 rotamer_outliers_percent     A 19 1 A 21.47  
+8 rotamer_outliers_percent     A 19 1 A 21.47  
 5 Ramachandran_outlier_percent A 20 1 A 100.00 
 6 Ramachandran_outlier_percent A 20 1 A 100.00 
-7 rotamer_outliers_percent     A 20 1 A 54.16  
-8 rotamer_outliers_percent     A 20 1 A 54.16  
+7 rotamer_outliers_percent     A 20 1 A 51.82  
+8 rotamer_outliers_percent     A 20 1 A 51.82  
 # 
 _pdbx_dcc_geometry.entry_id                                       5U9B 
 _pdbx_dcc_geometry.RNA_suiteness_score                            0.16 
@@ -3371,28 +3382,27 @@ _pdbx_validation_software.name
 _pdbx_validation_software.version 
 _pdbx_validation_software.classification 
 _pdbx_validation_software.details 
-1  mogul               unknown 'geometric validation' mogul-ignore 
-2  coreclust           rb-20029824 'assessment of nmr ensemble structure' 
+1  coreclust           trunk30686 'assessment of nmr ensemble structure' 
 ;nmrclust_representative_model,nmrclust_number_of_models,residue_string,medoid_model,cyrange_error,rmsd,nmrclust_representative,number_of_residues,cyrange_version,nmrclust_version,medoid_rmsd,cyrange_domain_id,cyrange_number_of_domains,nmrclust_number_of_outliers,percentage_of_core,nmr_models_consistency_flag,validate,nmrclust_error,nmrclust_cluster_id,number_of_gaps,nmrclust_number_of_clusters
 ;
-3  percentiles         
-'20161228.v01 (using entries in the PDB archive December 28th 2016)' 
-'percentile rank calculation'                            
-;numPDBids-absolute-percentile-clashscore,absolute-percentile-percent-rota-outliers,relative-percentile-percent-rama-outliers,relative-percentile-clashscore,numPDBids-absolute-percentile-RNAsuiteness,numPDBids-absolute-percentile-percent-rota-outliers,numPDBids-absolute-percentile-percent-rama-outliers,numPDBids-relative-percentile-RNAsuiteness,numPDBids-relative-percentile-percent-rota-outliers,absolute-percentile-percent-rama-outliers,relative-percentile-RNAsuiteness,relative-percentile-percent-rota-outliers,numPDBids-relative-percentile-clashscore,absolute-percentile-RNAsuiteness,numPDBids-relative-percentile-percent-rama-outliers,absolute-percentile-clashscore
-;
-4  validation-pipeline rb-20029824 'mmcif data extractor' 
-;PDB-revision-date,PDB-resolution,protein-DNA-RNA-entities,PDB-Rfree,PDB-R,percentilebins,PDB-resolution-low,pdbid,PDB-revision-number,attemptedValidationSteps,XMLcreationDate,PDB-deposition-date
-;
-5  chemicalshifts      rb-20029824 
-'assessment of nmr assigned chemical shifts'             
-;rci_version,shiftchecker_version,chemical_shift_completeness,panav_version,chemical_shift_completeness_full_length
-;
-6  nmrwriter           rb-20029824 
+2  nmrwriter           trunk30686 
 'geometric validation of nmr ensemble structure'         
 clashscore,percent-rota-outliers,percent-rama-outliers 
-7  validation-pack     unknown 'geometric validation' plane-outlier 
-8  molprobity          4.02b-467 'geometric validation' 
+3  validation-pipeline trunk30686 'mmcif data extractor' 
+;PDB-revision-date,PDB-resolution,protein-DNA-RNA-entities,PDB-Rfree,PDB-R,percentilebins,PDB-resolution-low,pdbid,PDB-revision-number,attemptedValidationSteps,XMLcreationDate,PDB-deposition-date
+;
+4  mogul               unknown 'geometric validation' mogul-ignore 
+5  molprobity          4.02b-467 'geometric validation' 
 ;relative_rama_percentile,absolute_sidechain_percentile,clashscore-full-length,absolute_rama_percentile,phi,psi,num-H-reduce,clash,percent-rota-outliers-full-length,relative_sidechain_percentile,rota,bonds_rmsz,RNAscore,RNAsuite,bond-outlier,angle-outlier,RNAsuiteness,percent-rama-outliers-full-length,num_bonds_rmsz,RNApucker,RestypesNotcheckedForBondAngleGeometry,angles_rmsz,num_angles_rmsz,rama
+;
+6  validation-pack     unknown 'geometric validation' plane-outlier 
+7  chemicalshifts      trunk30686 'assessment of nmr assigned chemical shifts' 
+;rci_version,shiftchecker_version,chemical_shift_completeness,panav_version,chemical_shift_completeness_full_length
+;
+8  percentiles         
+'20171227.v01 (using entries in the PDB archive December 27th 2017)' 
+'percentile rank calculation'                            
+;numPDBids-absolute-percentile-clashscore,absolute-percentile-percent-rota-outliers,relative-percentile-percent-rama-outliers,relative-percentile-clashscore,numPDBids-absolute-percentile-RNAsuiteness,numPDBids-absolute-percentile-percent-rota-outliers,numPDBids-absolute-percentile-percent-rama-outliers,numPDBids-relative-percentile-RNAsuiteness,numPDBids-relative-percentile-percent-rota-outliers,absolute-percentile-percent-rama-outliers,relative-percentile-RNAsuiteness,relative-percentile-percent-rota-outliers,numPDBids-relative-percentile-clashscore,absolute-percentile-RNAsuiteness,numPDBids-relative-percentile-percent-rama-outliers,absolute-percentile-clashscore
 ;
 9  cyrange             
 ;Kirchner and G\"{u}ntert (2011)
@@ -3404,7 +3414,7 @@ clashscore,percent-rota-outliers,percent-rama-outliers
 'nmr chemical shift validation and reference correction' ? 
 12 rci                 'v_1n_11_5_13_A (Berjanski et al., 2005)' 
 'random coil index prediction from nmr chemical shifts'  ? 
-13 shiftchecker        rb-20029824 'nmr chemical shift validation' ? 
+13 shiftchecker        trunk30686 'nmr chemical shift validation' ? 
 # 
 loop_
 _pdbx_validate_rmsd_angle.id 

@@ -36,7 +36,7 @@ FILE_EXT_DIGEST=_validation
 XSD_SCHEMA=$WWPDB_VALIDATION_XSD
 DB_SCHEMA=$WWPDB_VALIDATION_SQL
 
-java -classpath $XSD2PGSCHEMA xsd2pgschema --xsd $XSD_SCHEMA --ddl $DB_SCHEMA --no-rel --doc-key --no-key
+java -classpath $XSD2PGSCHEMA xsd2pgschema --xsd $XSD_SCHEMA --ddl $DB_SCHEMA
 
 echo
 echo "Do you want to update $DB_NAME? (y [n]) "
@@ -84,11 +84,11 @@ err_file=$ERR_DIR/all_err
 
 if [ $sync_update != "true" ] ; then
 
- java -classpath $XSD2PGSCHEMA xml2pgtsv --xsd $XSD_SCHEMA --xml $XML_DIR --work-dir $DATA_DIR --sync $MD5_DIR --no-rel --doc-key --no-valid --xml-file-ext-digest $FILE_EXT_DIGEST --db-name $DB_NAME --db-user $DB_USER 2> $err_file
+ java -classpath $XSD2PGSCHEMA xml2pgtsv --xsd $XSD_SCHEMA --xml $XML_DIR --work-dir $DATA_DIR --sync $MD5_DIR --xml-file-ext-digest $FILE_EXT_DIGEST --db-name $DB_NAME --db-user $DB_USER 2> $err_file
 
 else
 
- java -classpath $XSD2PGSCHEMA xml2pgsql --xsd $XSD_SCHEMA --xml $XML_DIR --sync $MD5_DIR --no-rel --doc-key --no-valid --xml-file-ext-digest $FILE_EXT_DIGEST --db-name $DB_NAME --db-user $DB_USER 2> $err_file
+ java -classpath $XSD2PGSCHEMA xml2pgsql --xsd $XSD_SCHEMA --xml $XML_DIR --sync $MD5_DIR --xml-file-ext-digest $FILE_EXT_DIGEST --db-name $DB_NAME --db-user $DB_USER 2> $err_file
 
 fi
 

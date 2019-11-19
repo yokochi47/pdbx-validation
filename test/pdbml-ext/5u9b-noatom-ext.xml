@@ -437,6 +437,17 @@ INGRNNLIQQKN</PDBxv:pdbx_seq_one_letter_code_can>
          <PDBxv:item>_citation.title</PDBxv:item>
       </PDBxv:pdbx_audit_revision_item>
    </PDBxv:pdbx_audit_revision_itemCategory>
+   <PDBxv:pdbx_database_relatedCategory>
+      <PDBxv:pdbx_database_related content_type="unspecified" db_id="30210" db_name="BMRB">
+         <PDBxv:details>Solution structure of the zinc fingers 1 and 2 of MBNL1 in complex with human cardiac troponin T pre-mRNA</PDBxv:details>
+      </PDBxv:pdbx_database_related>
+      <PDBxv:pdbx_database_related content_type="unspecified" db_id="5U6H" db_name="PDB">
+         <PDBxv:details xsi:nil="true"/>
+      </PDBxv:pdbx_database_related>
+      <PDBxv:pdbx_database_related content_type="unspecified" db_id="5U6L" db_name="PDB">
+         <PDBxv:details xsi:nil="true"/>
+      </PDBxv:pdbx_database_related>
+   </PDBxv:pdbx_database_relatedCategory>
    <PDBxv:pdbx_database_statusCategory>
       <PDBxv:pdbx_database_status entry_id="5U9B">
          <PDBxv:SG_entry>N</PDBxv:SG_entry>
@@ -447,7 +458,7 @@ INGRNNLIQQKN</PDBxv:pdbx_seq_one_letter_code_can>
          <PDBxv:status_code>REL</PDBxv:status_code>
          <PDBxv:status_code_cs>REL</PDBxv:status_code_cs>
          <PDBxv:status_code_mr>REL</PDBxv:status_code_mr>
-         <PDBxv:validation_created_date>2017-08-22</PDBxv:validation_created_date>
+         <PDBxv:validation_created_date>2018-02-17</PDBxv:validation_created_date>
       </PDBxv:pdbx_database_status>
    </PDBxv:pdbx_database_statusCategory>
    <PDBxv:pdbx_entity_nonpolyCategory>

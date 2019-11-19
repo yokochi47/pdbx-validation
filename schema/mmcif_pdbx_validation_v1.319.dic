@@ -1,11 +1,11 @@
 ###########################################################################
 #
 # File:  mmcif_pdbx_validation.dic
-# Data:  Nov 14 16:21:11 JST 2019
+# Data:  Tue Nov 19 16:01:33 JST 2019
 #
 # Created from files noted:
 #        mmcif_pdbx_v50.dic   - PDB Exchange Data Dictionary (V5.319)
-#        wwpdb_validation.xsd - a XML schema for checking entry-specific validation XML documents from wwPDB, v003, rev. ?
+#        wwpdb_validation.xsd - a XML schema for checking entry-specific validation XML documents from wwPDB, v004, rev. ?
 #
 ###########################################################################
 
@@ -490,7 +490,7 @@ data_mmcif_pdbx_validation.dic
 >     + Make _pdbx_refine_tls_group.pdbx_refine_id and _pdbx_refine_tls.pdbx_refine_id mandatory # merged
       + Add pdbx_entity_branch_descriptor category
       + Update XML Schema for wwPDB validation reports v003
-        + Add '_pdbx_validate_rmsd_torsion.percent_dehedral_angles_fitted_to_kb' with link to /wwPDB-validation-information/ModelledSubgroup/mog-torsion-outlier/@local_density
+        + Add '_pdbx_validate_rmsd_torsion.percent_dihedral_angles_fitted_to_kb' with link to /wwPDB-validation-information/ModelledSubgroup/mog-torsion-outlier/@local_density
 ;
   1.314   2019-08-23
 ;
@@ -544,6 +544,11 @@ data_mmcif_pdbx_validation.dic
 >     + Correct soft limits for _reflns.percent_possible_obs # merged
 >     + Make _struct_keywords.pdbx_keywords mandatory for deposition # not mapped
 >     + Add soft limits for _reflns.pdbx_CC_half # merged
+;
+  1.319.1   2019-11-19
+;
+      + Update XML Schema for wwPDB validation reports v004
+        + Retrieve '_pdbx_database_related' category
 ;
 
 #
@@ -24206,6 +24211,167 @@ save__pdbx_struct_sheet_hbond.range_2_PDB_ins_code
     _pdbx_item_external_ref.parent_name '_atom_site.pdbx_PDB_ins_code'
     _pdbx_item_external_ref.dictionary    mmcif_pdbx.dic
     _pdbx_item_external_ref.version       5
+save_
+
+############################
+### PDBX_DATABASE_RELATED ##
+############################
+
+save_pdbx_database_related
+    _category.description
+;              Data items in PDBX_DATABASE_RELATED contain references to entries
+               that are related to the this entry.
+;
+    _category.id                 pdbx_database_related
+    _category.mandatory_code      no
+     loop_
+    _category_key.name          '_pdbx_database_related.db_name'
+                                '_pdbx_database_related.db_id'
+                                '_pdbx_database_related.content_type'
+     loop_
+    _category_group.id           'inclusive_group'
+                                 'database_group'
+                                 'pdbx_group'
+    _category_examples.case
+;
+    _pdbx_database_related.db_name         PDB
+    _pdbx_database_related.db_id           1ABC
+    _pdbx_database_related.content_type    'native structure'
+;
+save_
+
+save__pdbx_database_related.db_name
+    _item_description.description
+;              The name of the database containing the related entry.
+;
+    _item.name                  '_pdbx_database_related.db_name'
+    _item.category_id             pdbx_database_related
+    _item.mandatory_code          yes
+    _item_type.code               code
+#     loop_
+#    _item_enumeration.value  'PDB' 'NDB' 'BMRB' 'BMCD' 'EMDB'
+    _item_examples.case
+;
+PDB  - Protein Databank
+NDB  - Nucleic Acid Database
+BMRB - BioMagResBank
+EMDB - Electron Microscopy Database
+BMCD - Biological Macromolecule Crystallization Database
+TargetTrack - Target Registration and Protocol Database
+SASBDB - Small Angle Scattering Biological Data Bank
+;
+    _pdbx_item.name             "_pdbx_database_related.db_name"
+    _pdbx_item.mandatory_code     no
+    #
+    _pdbx_item_description.name         "_pdbx_database_related.db_name"
+    _pdbx_item_description.description  "The name of the database containing the related entry"
+    #   #
+    loop_
+    _pdbx_item_enumeration.name
+    _pdbx_item_enumeration.value
+    _pdbx_item_enumeration.detail
+      "_pdbx_database_related.db_name"  BMCD         'associated structure factors'
+      "_pdbx_database_related.db_name"  BMRB         'associated NMR restraints,unspecified'
+      "_pdbx_database_related.db_name"  EMDB         'associated EM volume,other EM volume'
+      "_pdbx_database_related.db_name"  NDB          unspecified
+      "_pdbx_database_related.db_name"  PDB          're-refinement,unspecified,derivative structure,complete structure,split,ensemble,minimized average structure,native structure,representative structure,split'
+      "_pdbx_database_related.db_name"  TargetDB     unspecified
+      "_pdbx_database_related.db_name"  TargetTrack  unspecified
+      "_pdbx_database_related.db_name"  SASBDB       'associated SAS data'
+      "_pdbx_database_related.db_name"  BIOISIS      'associated SAS data'
+save_
+
+save__pdbx_database_related.details
+    _item_description.description
+;              A description of the related entry.
+;
+    _item.name                  '_pdbx_database_related.details'
+    _item.category_id             pdbx_database_related
+    _item.mandatory_code          no
+    _pdbx_item.name             "_pdbx_database_related.details"
+    _pdbx_item.mandatory_code     no
+    _item_type.code               text
+     loop_
+    _item_examples.case
+;
+1ABC contains the same protein complexed with Netropsin.
+;
+save_
+
+#
+save__pdbx_database_related.db_id
+    _item_description.description
+;              The identifying code in the related database.
+;
+    _item.name                  '_pdbx_database_related.db_id'
+    _item.category_id             pdbx_database_related
+    _item.mandatory_code          yes
+    _item_type.code               line
+     loop_
+    _item_examples.case      '1ABC' 'BDL001'
+    _pdbx_item.name            "_pdbx_database_related.db_id"
+    _pdbx_item.mandatory_code  no
+    #
+    _pdbx_item_description.name         "_pdbx_database_related.db_id"
+    _pdbx_item_description.description  "The identifying code in the related database"
+save_
+
+#
+save__pdbx_database_related.content_type
+    _item_description.description
+;              The identifying content type of the related entry.
+;
+    _item.name                  '_pdbx_database_related.content_type'
+    _item.category_id             pdbx_database_related
+    _item.mandatory_code          yes
+    _pdbx_item.name             "_pdbx_database_related.content_type"
+    _pdbx_item.mandatory_code     no
+    _item_type.code               line
+     loop_
+    _item_examples.case      'minimized average structure'
+                             'representative structure'
+                             'ensemble'
+                             'derivative structure'
+                             'native structure'
+                             'associated EM volume'
+                             'other EM volume'
+                             'associated NMR restraints'
+                             'associated structure factors'
+                             'associated SAS data'
+                             'protein target sequence and/or protocol data'
+                             'split'
+                             're-refinement'
+                             'complete structure'
+                             'unspecified'
+                             'other'
+     loop_
+    _item_enumeration.value
+                             'minimized average structure'
+                             'representative structure'
+                             'ensemble'
+                             'derivative structure'
+                             'native structure'
+                             'associated EM volume'
+                             'other EM volume'
+                             'associated NMR restraints'
+                             'associated structure factors'
+                             'associated SAS data'
+                             'protein target sequence and/or protocol data'
+                             'split'
+                             're-refinement'
+                             'complete structure'
+                             'unspecified'
+                             'other'
+     loop_
+    _pdbx_item_enumeration.name
+    _pdbx_item_enumeration.value
+    _pdbx_item_enumeration.detail
+      "_pdbx_database_related.content_type"  unspecified             .
+      "_pdbx_database_related.content_type"  re-refinement           .
+      "_pdbx_database_related.content_type"  "associated EM volume"  .
+      "_pdbx_database_related.content_type"  "associated SAS data"   .
+      "_pdbx_database_related.content_type"  "other EM volume"       .
+      "_pdbx_database_related.content_type"  other                   .
 save_
 
 ##########################

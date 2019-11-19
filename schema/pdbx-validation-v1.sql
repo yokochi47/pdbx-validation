@@ -21,7 +21,7 @@
 --  map xsd date type to: sql date type
 --
 -- Statistics of schema:
---  Generated 239 tables (3166 fields), 0 views (0 fields), 0 attr groups, 0 model groups in total
+--  Generated 240 tables (3171 fields), 0 views (0 fields), 0 attr groups, 0 model groups in total
 --   Unnecessary tables by inlining simple content as a primitive data type:
 --    schema location: schema/pdbx-validation-v1.xsd
 --      maximum_lower_distance_constraint_violation, recording_temperature_minimum, "A_meas_au", nu0, "Cartn_y_esd", nu1, current, "B_iso_min", improper_torsion_angle_rms_dev, diff_density_min, improper_torsion_angle_rms_dev_error, temperature, lower_limit, "T33_esd", pdbx_phase_calc_with_solvent, "T13", value, angle_chi, "L33_esd", angle_theta, rotation_per_n_subunits, angle_deviation, dihedral_angles_rms_dev, "F_calc", improper_torsion_angle, phi, "T12", "P", "S32_esd", bond_angle_rms_dev, "F_meas_au", "Luzzati_coordinate_error_free", covalent_bond_rms_dev_error, "L23_esd", "B_iso", rise_per_n_subunits, "S22_esd", "F_meas_sigma", "T23", nu2, nu3, power, "T11", nu4, "T23_esd", "B_calc_au", maximum_upper_distance_constraint_violation, calibrated_defocus_min, tilt_angle_min, origin_y, origin_x, value_esd, nominal_defocus_max, phase_calc, origin_z, psi, "T22", "S13", "T13_esd", "aniso_B12", dihedral_angles_rms_dev_error, pdbx_dist_value, "S13_esd", "L13_esd", atom_deviation, "I", "T11_esd", omega, residual_tilt, maximum_distance_constraint_violation, "T33", voltage, "B_iso_esd", "S12", neighbor_macromolecule_distance, "L11_esd", pdbx_solvent_ion_probe_radii, "Luzzati_sigma_a_obs", "B_iso_mean", "aniso_B13", max_mean_cross_sectional_radii_gyration, average_distance_constraint_violation, "F_calc_au", diff_density_rms, beta, "S33_esd", "S11", "S23", "aniso_B22", "B_iso_max", "sigmaI", min_mean_cross_sectional_radii_gyration_esd, "L12_esd", max_mean_cross_sectional_radii_gyration_esd, chi4, diff_density_min_esd, chi3, chi2, chi1, chi5, "T12_esd", "S22", "aniso_B11", pdbx_solvent_vdw_probe_radii, "Luzzati_coordinate_error_obs", "aniso_B23", "Luzzati_d_res_low_obs", angle_target_value, "B_meas_au", pdbx_solvent_shrinkage_radii, "S21_esd", dist, bond_deviation, ambient_temp_esd, "L22_esd", diff_density_rms_esd, diff_density_max, "S21", "S33", bond_angle_rms_dev_error, energyfilter_upper, pdbx_collection_time_total, gamma, detector_distance, "A_meas", temp, ambient_pressure_esd, "T22_esd", taum, rmsd, sampling_size, recording_temperature_maximum, min_mean_cross_sectional_radii_gyration, angle_kappa, "S32", "S23_esd", "aniso_B33", "F_meas_sigma_au", "L13", mean_guiner_radius_esd, prot_cis, "Cartn_z_esd", dihedral_angle_value, neighbor_ligand_distance, covalent_bond_rms_dev, "S31", "L12", "B_iso_Wilson_estimate", distance_rms_dev_medoid, "Cartn_x_esd", "F_meas", scan_time_backgd, tau0, angle_phi, tau3, tau4, "pdbx_res_netI_over_av_sigmaI_2", tau1, "F_squared_meas", tau2, delta, "L23", pdbx_phase_calc_part_solvent, "L11", upper_limit, angle_value, "B_meas", diff_density_max_esd, "Cartn_y", "A_calc", "F_squared_calc", "pdbx_res_netI_over_sigmaI_2", "L22", "A_calc_au", resolution, maximum_torsion_angle_constraint_violation, distance_rms_dev_error, "S31_esd", "Cartn_z", clash_magnitude, tilt_angle_max, "S12_esd", nominal_defocus_min, average_torsion_angle_constraint_violation, scan_rate, distance_rms_dev, "L33", concentration_range, "pdbx_F_calc_with_solvent", dihedral_angle_target_value, peptide_planarity_rms_dev_error, "F_squared_sigma", mean_guiner_radius, "Luzzati_d_res_low_free", "Luzzati_sigma_a_free", angle_psi, zeta, "B_calc", alpha, "S11_esd", "Cartn_x", peptide_planarity_rms_dev, epsilon, angle_omega, chamber_temperature, energyfilter_lower, phase_meas, "pdbx_F_calc_part_solvent"
@@ -30,17 +30,17 @@
 --   Schema locations:
 --    schema/pdbx-validation-v1.xsd
 --   Table types:
---    0 root, 0 root children, 0 admin roots, 239 admin children
+--    0 root, 0 root children, 0 admin roots, 240 admin children
 --   System keys:
 --    0 primary keys (0 unique constraints), 0 foreign keys, 0 nested keys (0 as attribute, 0 as attribute group)
 --   User keys:
---    194 document keys, 0 serial keys, 0 xpath keys
+--    195 document keys, 0 serial keys, 0 xpath keys
 --   Contents:
---    417 attributes (40 in-place document keys), 2555 elements (5 in-place document keys), 0 simple contents (0 in-place document keys, 0 as attribute, 0 as conditional attribute)
+--    420 attributes (40 in-place document keys), 2556 elements (5 in-place document keys), 0 simple contents (0 in-place document keys, 0 as attribute, 0 as conditional attribute)
 --   Wild cards:
 --    0 any elements, 0 any attributes
 --   Constraints:
---    1 unique constraints from xsd:unique, 239 unique constraints from xsd:key, 130 foreign key constraints from xsd:keyref
+--    1 unique constraints from xsd:unique, 240 unique constraints from xsd:key, 130 foreign key constraints from xsd:keyref
 --
 
 --
@@ -109,6 +109,7 @@ DROP TABLE IF EXISTS pdbx_audit_revision_group CASCADE;
 DROP TABLE IF EXISTS pdbx_audit_revision_item CASCADE;
 DROP TABLE IF EXISTS pdbx_bond_distance_limits CASCADE;
 DROP TABLE IF EXISTS pdbx_coordinate_model CASCADE;
+DROP TABLE IF EXISTS pdbx_database_related CASCADE;
 DROP TABLE IF EXISTS pdbx_database_status CASCADE;
 DROP TABLE IF EXISTS pdbx_dcc_density CASCADE;
 DROP TABLE IF EXISTS pdbx_dcc_density_corr CASCADE;
@@ -2802,6 +2803,27 @@ CREATE TABLE pdbx_coordinate_model (
 	type ENUM_pdbx_coordinate_model_type ,
 -- ATTRIBUTE
 	asym_id TEXT NOT NULL
+);
+
+--
+-- (quoted from pdbx_database_relatedType)
+-- Data items in PDBX_DATABASE_RELATED contain references to entries that are related to the this entry. <PDBxv:pdbx_database_relatedCategory> <PDBxv:pdbx_database_related content_type="native structure" db_id="1ABC" db_name="PDB"></PDBxv:pdbx_database_related> </PDBxv:pdbx_database_relatedCategory>
+-- URI-reference = http://pdbml.pdb.org/dictionaries/mmcif_pdbx_v50.dic/Categories/pdbx_database_related.html
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), schema location: schema/pdbx-validation-v1.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+DROP TYPE IF EXISTS ENUM_pdbx_database_related_content_type CASCADE;
+CREATE TYPE ENUM_pdbx_database_related_content_type AS ENUM ( 'minimized average structure', 'representative structure', 'ensemble', 'derivative structure', 'native structure', 'associated EM volume', 'other EM volume', 'associated NMR restraints', 'associated structure factors', 'associated SAS data', 'protein target sequence and/or protocol data', 'split', 're-refinement', 'complete structure', 'unspecified', 'other' );
+CREATE TABLE pdbx_database_related (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	entry_id TEXT ,
+	details TEXT ,
+-- ATTRIBUTE
+	content_type ENUM_pdbx_database_related_content_type NOT NULL ,
+-- ATTRIBUTE
+	db_id TEXT NOT NULL ,
+-- ATTRIBUTE
+	db_name TEXT NOT NULL
 );
 
 --
@@ -7602,6 +7624,9 @@ CREATE TABLE symmetry_equiv (
 
 -- (derived from xsd:key[@name='pdbx_coordinate_modelKey_0'])
 --ALTER TABLE pdbx_coordinate_model ADD CONSTRAINT UNQ_pdbx_coordinate_model UNIQUE ( entry_id, asym_id );
+
+-- (derived from xsd:key[@name='pdbx_database_relatedKey_0'])
+--ALTER TABLE pdbx_database_related ADD CONSTRAINT UNQ_pdbx_database_related UNIQUE ( entry_id, content_type, db_id, db_name );
 
 -- (derived from xsd:key[@name='pdbx_database_statusKey_0'])
 --ALTER TABLE pdbx_database_status ADD CONSTRAINT UNQ_pdbx_database_status UNIQUE ( entry_id );

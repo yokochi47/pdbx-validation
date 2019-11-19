@@ -11386,6 +11386,11 @@ GAACATGCCTTTTGATGGAGCAGTTTCCAAATACACTTTTGGTAGAATCTGCAGGTGGATATTGAT</PDBxv:pdbx_s
          <PDBxv:revision_date>2017-02-15</PDBxv:revision_date>
       </PDBxv:pdbx_audit_revision_history>
    </PDBxv:pdbx_audit_revision_historyCategory>
+   <PDBxv:pdbx_database_relatedCategory>
+      <PDBxv:pdbx_database_related content_type="unspecified" db_id="5B1M" db_name="PDB">
+         <PDBxv:details xsi:nil="true"/>
+      </PDBxv:pdbx_database_related>
+   </PDBxv:pdbx_database_relatedCategory>
    <PDBxv:pdbx_database_statusCategory>
       <PDBxv:pdbx_database_status entry_id="5B1L">
          <PDBxv:SG_entry>N</PDBxv:SG_entry>
@@ -11395,7 +11400,7 @@ GAACATGCCTTTTGATGGAGCAGTTTCCAAATACACTTTTGGTAGAATCTGCAGGTGGATATTGAT</PDBxv:pdbx_s
          <PDBxv:recvd_initial_deposition_date>2015-12-08</PDBxv:recvd_initial_deposition_date>
          <PDBxv:status_code>REL</PDBxv:status_code>
          <PDBxv:status_code_sf>REL</PDBxv:status_code_sf>
-         <PDBxv:validation_created_date>2017-02-28</PDBxv:validation_created_date>
+         <PDBxv:validation_created_date>2018-03-09</PDBxv:validation_created_date>
       </PDBxv:pdbx_database_status>
    </PDBxv:pdbx_database_statusCategory>
    <PDBxv:pdbx_entity_nonpolyCategory>

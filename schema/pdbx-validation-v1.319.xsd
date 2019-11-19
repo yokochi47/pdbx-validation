@@ -9147,6 +9147,103 @@ A
       </xsd:element>
     </xsd:sequence>
   </xsd:complexType>
+  <xsd:complexType name="pdbx_database_relatedType">
+    <xsd:annotation>
+      <xsd:documentation xml:lang="en" source="http://pdbml.pdb.org/dictionaries/mmcif_pdbx_v50.dic/Categories/pdbx_database_related.html">
+Data items in PDBX_DATABASE_RELATED contain references to entries
+that are related to the this entry.
+&lt;PDBxv:pdbx_database_relatedCategory&gt;
+   &lt;PDBxv:pdbx_database_related content_type="native structure" db_id="1ABC" db_name="PDB"&gt;&lt;/PDBxv:pdbx_database_related&gt;
+&lt;/PDBxv:pdbx_database_relatedCategory&gt;
+
+
+         </xsd:documentation>
+    </xsd:annotation>
+    <xsd:sequence>
+      <xsd:element name="pdbx_database_related" minOccurs="0" maxOccurs="unbounded">
+        <xsd:complexType>
+          <xsd:all>
+            <xsd:element name="details" minOccurs="0" maxOccurs="1" nillable="true" type="xsd:string">
+              <xsd:annotation>
+                <xsd:documentation xml:lang="en" source="http://mmcif.wwpdb.org/dictionaries/mmcif_pdbx_v50.dic/Items/_pdbx_database_related.details.html">
+A description of the related entry.
+
+1ABC contains the same protein complexed with Netropsin.
+                        </xsd:documentation>
+              </xsd:annotation>
+            </xsd:element>
+          </xsd:all>
+          <xsd:attribute name="content_type" use="required">
+            <xsd:annotation>
+              <xsd:documentation xml:lang="en" source="http://mmcif.wwpdb.org/dictionaries/mmcif_pdbx_v50.dic/Items/_pdbx_database_related.content_type.html">
+The identifying content type of the related entry.
+minimized average structure
+representative structure
+ensemble
+derivative structure
+native structure
+associated EM volume
+other EM volume
+associated NMR restraints
+associated structure factors
+associated SAS data
+protein target sequence and/or protocol data
+split
+re-refinement
+complete structure
+unspecified
+other
+                     </xsd:documentation>
+            </xsd:annotation>
+            <xsd:simpleType>
+              <xsd:restriction base="xsd:string">
+                <xsd:enumeration value="minimized average structure"/>
+                <xsd:enumeration value="representative structure"/>
+                <xsd:enumeration value="ensemble"/>
+                <xsd:enumeration value="derivative structure"/>
+                <xsd:enumeration value="native structure"/>
+                <xsd:enumeration value="associated EM volume"/>
+                <xsd:enumeration value="other EM volume"/>
+                <xsd:enumeration value="associated NMR restraints"/>
+                <xsd:enumeration value="associated structure factors"/>
+                <xsd:enumeration value="associated SAS data"/>
+                <xsd:enumeration value="protein target sequence and/or protocol data"/>
+                <xsd:enumeration value="split"/>
+                <xsd:enumeration value="re-refinement"/>
+                <xsd:enumeration value="complete structure"/>
+                <xsd:enumeration value="unspecified"/>
+                <xsd:enumeration value="other"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:attribute>
+          <xsd:attribute name="db_id" use="required" type="xsd:string">
+            <xsd:annotation>
+              <xsd:documentation xml:lang="en" source="http://mmcif.wwpdb.org/dictionaries/mmcif_pdbx_v50.dic/Items/_pdbx_database_related.db_id.html">
+The identifying code in the related database.
+1ABC
+BDL001
+                     </xsd:documentation>
+            </xsd:annotation>
+          </xsd:attribute>
+          <xsd:attribute name="db_name" use="required" type="xsd:string">
+            <xsd:annotation>
+              <xsd:documentation xml:lang="en" source="http://mmcif.wwpdb.org/dictionaries/mmcif_pdbx_v50.dic/Items/_pdbx_database_related.db_name.html">
+The name of the database containing the related entry.
+
+PDB  - Protein Databank
+NDB  - Nucleic Acid Database
+BMRB - BioMagResBank
+EMDB - Electron Microscopy Database
+BMCD - Biological Macromolecule Crystallization Database
+TargetTrack - Target Registration and Protocol Database
+SASBDB - Small Angle Scattering Biological Data Bank
+                     </xsd:documentation>
+            </xsd:annotation>
+          </xsd:attribute>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
   <xsd:complexType name="pdbx_database_statusType">
     <xsd:annotation>
       <xsd:documentation xml:lang="en" source="http://pdbml.pdb.org/dictionaries/mmcif_pdbx_v50.dic/Categories/pdbx_database_status.html">
@@ -45885,6 +45982,7 @@ identifier.
       <xsd:element name="pdbx_audit_revision_itemCategory" type="PDBxv:pdbx_audit_revision_itemType" minOccurs="0" maxOccurs="1"/>
       <xsd:element name="pdbx_bond_distance_limitsCategory" type="PDBxv:pdbx_bond_distance_limitsType" minOccurs="0" maxOccurs="1"/>
       <xsd:element name="pdbx_coordinate_modelCategory" type="PDBxv:pdbx_coordinate_modelType" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="pdbx_database_relatedCategory" type="PDBxv:pdbx_database_relatedType" minOccurs="0" maxOccurs="1"/>
       <xsd:element name="pdbx_database_statusCategory" type="PDBxv:pdbx_database_statusType" minOccurs="0" maxOccurs="1"/>
       <xsd:element name="pdbx_dcc_densityCategory" type="PDBxv:pdbx_dcc_densityType" minOccurs="0" maxOccurs="1"/>
       <xsd:element name="pdbx_dcc_density_corrCategory" type="PDBxv:pdbx_dcc_density_corrType" minOccurs="0" maxOccurs="1"/>
@@ -46715,6 +46813,12 @@ identifier.
     <xsd:key name="pdbx_coordinate_modelKey_0">
       <xsd:selector xpath="PDBxv:pdbx_coordinate_modelCategory/PDBxv:pdbx_coordinate_model"/>
       <xsd:field xpath="@asym_id"/>
+    </xsd:key>
+    <xsd:key name="pdbx_database_relatedKey_0">
+      <xsd:selector xpath="PDBxv:pdbx_database_relatedCategory/PDBxv:pdbx_database_related"/>
+      <xsd:field xpath="@content_type"/>
+      <xsd:field xpath="@db_id"/>
+      <xsd:field xpath="@db_name"/>
     </xsd:key>
     <xsd:key name="pdbx_database_statusKey_0">
       <xsd:selector xpath="PDBxv:pdbx_database_statusCategory/PDBxv:pdbx_database_status"/>
