@@ -24308,8 +24308,8 @@ save__pdbx_database_related.db_id
     _item.mandatory_code          yes
     _item_type.code               line
      loop_
-    _item_examples.case      '1ABC' 'BDL001'
-    _pdbx_item.name            "_pdbx_database_related.db_id"
+    _item_examples.case          '1ABC' 'BDL001'
+    _pdbx_item.name             "_pdbx_database_related.db_id"
     _pdbx_item.mandatory_code  no
     #
     _pdbx_item_description.name         "_pdbx_database_related.db_id"
@@ -24328,40 +24328,39 @@ save__pdbx_database_related.content_type
     _pdbx_item.mandatory_code     no
     _item_type.code               line
      loop_
-    _item_examples.case      'minimized average structure'
-                             'representative structure'
-                             'ensemble'
-                             'derivative structure'
-                             'native structure'
-                             'associated EM volume'
-                             'other EM volume'
-                             'associated NMR restraints'
-                             'associated structure factors'
-                             'associated SAS data'
-                             'protein target sequence and/or protocol data'
-                             'split'
-                             're-refinement'
-                             'complete structure'
-                             'unspecified'
-                             'other'
+    _item_examples.case          'minimized average structure'
+                                 'representative structure'
+                                 'ensemble'
+                                 'derivative structure'
+                                 'native structure'
+                                 'associated EM volume'
+                                 'other EM volume'
+                                 'associated NMR restraints'
+                                 'associated structure factors'
+                                 'associated SAS data'
+                                 'protein target sequence and/or protocol data'
+                                 'split'
+                                 're-refinement'
+                                 'complete structure'
+                                 'unspecified'
+                                 'other'
      loop_
-    _item_enumeration.value
-                             'minimized average structure'
-                             'representative structure'
-                             'ensemble'
-                             'derivative structure'
-                             'native structure'
-                             'associated EM volume'
-                             'other EM volume'
-                             'associated NMR restraints'
-                             'associated structure factors'
-                             'associated SAS data'
-                             'protein target sequence and/or protocol data'
-                             'split'
-                             're-refinement'
-                             'complete structure'
-                             'unspecified'
-                             'other'
+    _item_enumeration.value      'minimized average structure'
+                                 'representative structure'
+                                 'ensemble'
+                                 'derivative structure'
+                                 'native structure'
+                                 'associated EM volume'
+                                 'other EM volume'
+                                 'associated NMR restraints'
+                                 'associated structure factors'
+                                 'associated SAS data'
+                                 'protein target sequence and/or protocol data'
+                                 'split'
+                                 're-refinement'
+                                 'complete structure'
+                                 'unspecified'
+                                 'other'
      loop_
     _pdbx_item_enumeration.name
     _pdbx_item_enumeration.value
@@ -29356,7 +29355,7 @@ save__pdbx_nmr_software.ordinal
     _pdbx_item_description.name         "_pdbx_nmr_software.ordinal"
     _pdbx_item_description.description  "The number that uniquely identifies this software from the others listed in the entry."
     loop_
-    _item_examples.case      1 2
+    _item_examples.case           1 2
 save_
 
 save__pdbx_nmr_software.classification
@@ -39009,7 +39008,7 @@ save__pdbx_soln_scatter.concentration_range
     _item.mandatory_code          no
     _item_type.code               line
     _item_units.code              mg_per_ml
-    _item_examples.case           '0.7 - 14'
+    _item_examples.case          '0.7 - 14'
 save_
 
 save__pdbx_soln_scatter.buffer_name
@@ -47791,7 +47790,7 @@ save__pdbx_nmr_exptl_sample_conditions.pH_units
     pH*             ?
    'Not defined'    ?
 
-    _item_examples.case            'pH'
+    _item_examples.case          'pH'
 
 save_
 
@@ -53752,7 +53751,7 @@ save__em_volume_selection.method
     _item.category_id             em_volume_selection
     _item.mandatory_code          no
     _item_type.code               text
-    _item_examples.case         'volumes picked interactively'
+    _item_examples.case          'volumes picked interactively'
 save_
 
 save__em_volume_selection.num_tomograms
@@ -57851,7 +57850,7 @@ save__pdbx_validation_software.ordinal
     _pdbx_item_description.name         "_pdbx_validation_software.ordinal"
     _pdbx_item_description.description  "The number that uniquely identifies this software from the others listed in the entry."
     loop_
-    _item_examples.case      1 2
+    _item_examples.case           1 2
 save_
 
 save__pdbx_validation_software.classification
