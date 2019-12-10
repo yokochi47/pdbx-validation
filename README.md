@@ -14,9 +14,9 @@ The pdbx-validation is a generation tool of alternative [wwPDB validation report
 
 File path | Document
 --------- | --------
-[schema/mmcif_pdbx_validation_v1.dic](https://github.com/yokochi47/pdbx-validation/blob/master/schema/mmcif_pdbx_validation_v2.320.dic) | wwPDB Validation Information Dictionary (v2.320)
-[schema/pdbx-validation-v1.xsd](https://github.com/yokochi47/pdbx-validation/blob/master/schema/pdbx-validation-v2.320.xsd) | PDBML-validation Schema (v2.320)
-[schema/pdbx-validation-v1.owl](https://github.com/yokochi47/pdbx-validation/blob/master/schema/pdbx-validation-v2.320.owl) | wwPDB/OWL-validation (v2.320)
+[schema/mmcif_pdbx_validation_v2.dic](https://github.com/yokochi47/pdbx-validation/blob/master/schema/mmcif_pdbx_validation_v2.320.dic) | wwPDB Validation Information Dictionary (v2.320)
+[schema/pdbx-validation-v2.xsd](https://github.com/yokochi47/pdbx-validation/blob/master/schema/pdbx-validation-v2.320.xsd) | PDBML-validation Schema (v2.320)
+[schema/pdbx-validation-v2.owl](https://github.com/yokochi47/pdbx-validation/blob/master/schema/pdbx-validation-v2.320.owl) | wwPDB/OWL-validation (v2.320)
 [schema/mmcif_ddl.dic](https://github.com/yokochi47/pdbx-validation/blob/master/schema/mmcif_ddl_v2.3.0.dic) | extended mmCIF DDL Core Dictionary (dubbed as v2.3.0)
 [resource/mmcif_pdbx_v50.dic](http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic) | PDB Exchange Data Dictionary (v5.320)
 [resource/pdbx-v50.xsd](https://github.com/yokochi47/pdbx-validation/blob/master/resource/pdbx-v50.xsd) | PDBML Schema (v5.320)
