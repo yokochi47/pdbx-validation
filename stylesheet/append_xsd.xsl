@@ -5,7 +5,7 @@
   xmlns:xsd="http://www.w3.org/2001/XMLSchema"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xmlns:PDBx="http://pdbml.pdb.org/schema/pdbx-v50.xsd"
-  xmlns:PDBxv="http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd"
+  xmlns:PDBxv="http://pdbml.pdb.org/schema/pdbx-validation-v2.xsd"
   exclude-result-prefixes="PDBx xsi">
 
   <xsl:param name="pdbx_xsd_file" required="yes"/>
@@ -19,14 +19,14 @@
 
   <xsl:template match="/xsd:schema">
     <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-       xmlns:PDBxv="http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd"
-       targetNamespace="http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd"
+       xmlns:PDBxv="http://pdbml.pdb.org/schema/pdbx-validation-v2.xsd"
+       targetNamespace="http://pdbml.pdb.org/schema/pdbx-validation-v2.xsd"
        elementFormDefault="qualified" attributeFormDefault="unqualified">
       <xsd:annotation>
-        <xsd:appinfo>PDBML-validation Schema v1.319</xsd:appinfo>
-        <xsd:documentation source="http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd" xml:lang="en">
+        <xsd:appinfo>PDBML-validation Schema v2.320</xsd:appinfo>
+        <xsd:documentation source="http://pdbml.pdb.org/schema/pdbx-validation-v2.xsd" xml:lang="en">
 
-PDBXML-validation Schema translated from wwPDB Validation Information Dictionary v1.319, which is backward compatible with the PDBx/mmCIF Dictionary v5.319:
+PDBXML-validation Schema translated from wwPDB Validation Information Dictionary v2.320, which is backward compatible with the PDBx/mmCIF Dictionary v5.320:
  http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
 
         </xsd:documentation>

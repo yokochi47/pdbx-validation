@@ -44,8 +44,8 @@
 --
 
 --
--- PDBML-validation Schema v1.319
--- PDBXML-validation Schema translated from wwPDB Validation Information Dictionary v1.319, which is backward compatible with the PDBx/mmCIF Dictionary v5.319: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
+-- PDBML-validation Schema v1.320
+-- PDBXML-validation Schema translated from wwPDB Validation Information Dictionary v1.320, which is backward compatible with the PDBx/mmCIF Dictionary v5.320: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
 -- URI-reference = http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd
 --
 
@@ -663,7 +663,7 @@ CREATE TABLE entity_poly_seq (
 
 --
 -- (quoted from pdbx_percentile_conditionsType)
--- Data items in the PDBX_PERCENTILE_CONDITIONS category describe conditions to calculate percentile rank representations of each validation metric in the wwPDB validation report. For example, relative evaluation for X-ray structure is obtained by by compareing other X-ray structures having similar resolution. If there are no conditions by default, absolute evaluation is calculated based on all available PDB structures determined by the same methodology. Example 1 - <PDBxv:pdbx_percentile_conditionsCategory> <PDBxv:pdbx_percentile_conditions id="1"> <PDBxv:ls_d_res_high xsi:nil="true" /> <PDBxv:ls_d_res_low xsi:nil="true" /> <PDBxv:number_entries_total>101464</PDBxv:number_entries_total> </PDBxv:pdbx_percentile_conditions> <PDBxv:pdbx_percentile_conditions id="2"> <PDBxv:ls_d_res_high>1.9</PDBxv:ls_d_res_high> <PDBxv:ls_d_res_low>1.9</PDBxv:ls_d_res_low> <PDBxv:number_entries_total>5100</PDBxv:number_entries_total> </PDBxv:pdbx_percentile_conditions> </PDBxv:pdbx_percentile_conditionsCategory>
+-- Data items in the PDBX_PERCENTILE_CONDITIONS category describe conditions to calculate percentile rank representations of each validation metric in the wwPDB validation report. For example, relative evaluation for X-ray structure is obtained by by comparing other X-ray structures having similar resolution. If there are no conditions by default, absolute evaluation is calculated based on all available PDB structures determined by the same methodology. Example 1 - <PDBxv:pdbx_percentile_conditionsCategory> <PDBxv:pdbx_percentile_conditions id="1"> <PDBxv:ls_d_res_high xsi:nil="true" /> <PDBxv:ls_d_res_low xsi:nil="true" /> <PDBxv:number_entries_total>101464</PDBxv:number_entries_total> </PDBxv:pdbx_percentile_conditions> <PDBxv:pdbx_percentile_conditions id="2"> <PDBxv:ls_d_res_high>1.9</PDBxv:ls_d_res_high> <PDBxv:ls_d_res_low>1.9</PDBxv:ls_d_res_low> <PDBxv:number_entries_total>5100</PDBxv:number_entries_total> </PDBxv:pdbx_percentile_conditions> </PDBxv:pdbx_percentile_conditionsCategory>
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), schema location: schema/pdbx-validation-v1.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
@@ -3076,7 +3076,7 @@ CREATE TABLE pdbx_dcc_geometry (
 
 --
 -- (quoted from pdbx_dcc_mapType)
--- Data items in the category record residual map properties such as Real Space electron density Correlation Coefficient (RSCC), real space R factors (RSR) and the Zscores for each residue, the main/side chains.
+-- Data items in the category record residual map properties such as Real Space electron density Correlation Coefficient (RSCC), real space R factors (RSR) and the Z scores for each residue, the main/side chains.
 -- URI-reference = http://pdbml.pdb.org/dictionaries/mmcif_pdbx_v50.dic/Categories/pdbx_dcc_map.html
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), schema location: schema/pdbx-validation-v1.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
@@ -3148,7 +3148,7 @@ CREATE TABLE pdbx_dcc_map (
 
 --
 -- (quoted from pdbx_dcc_map_overallType)
--- Data items in the category record statistics of each entry for residual map properties such as Real Space electron density Correlation Coefficient (RSCC), real space R factors (RSR) and the Zscores.
+-- Data items in the category record statistics of each entry for residual map properties such as Real Space electron density Correlation Coefficient (RSCC), real space R factors (RSR) and the Z scores.
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), schema location: schema/pdbx-validation-v1.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
@@ -3201,7 +3201,7 @@ CREATE TABLE pdbx_dcc_mon_geometry (
 
 --
 -- (quoted from pdbx_dcc_rscc_mapmanType)
--- Data items in this category record residual map properties such as correlation, real space Rfactors and the Zscore calculated from refmac and mapman.
+-- Data items in this category record residual map properties such as correlation, real space Rfactors and the Z score calculated from refmac and mapman.
 -- URI-reference = http://pdbml.pdb.org/dictionaries/mmcif_pdbx_v50.dic/Categories/pdbx_dcc_rscc_mapman.html
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), schema location: schema/pdbx-validation-v1.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
@@ -3228,7 +3228,7 @@ CREATE TABLE pdbx_dcc_rscc_mapman (
 
 --
 -- (quoted from pdbx_dcc_rscc_mapman_overallType)
--- Data items in the category record overall map properties such as correlation, real space Rfactors and the Zscore calculated from refmac and mapman.
+-- Data items in the category record overall map properties such as correlation, real space Rfactors and the Z score calculated from refmac and mapman.
 -- URI-reference = http://pdbml.pdb.org/dictionaries/mmcif_pdbx_v50.dic/Categories/pdbx_dcc_rscc_mapman_overall.html
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), schema location: schema/pdbx-validation-v1.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
@@ -3503,7 +3503,7 @@ CREATE TABLE pdbx_missing_nmr_star_item (
 
 --
 -- (quoted from pdbx_nmr_chem_shift_annotationType)
--- Items in the PDBX_NMR_CHEM_SHIFT_ANNOTATION category provide information about verious derived values from assigned chemical shifts. e.g. random coil index.
+-- Items in the PDBX_NMR_CHEM_SHIFT_ANNOTATION category provide information about various derived values from assigned chemical shifts. e.g. random coil index.
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), schema location: schema/pdbx-validation-v1.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
@@ -5229,7 +5229,7 @@ CREATE TABLE pdbx_validate_planes_atom (
 
 --
 -- (quoted from pdbx_validate_polymer_linkageType)
--- Data items in the PDBX_VALIDATE_POLYMER_LINKAGE category list the polymer linkages within the entry that are outside of typlical covalent distances. Example 1 - <PDBxv:pdbx_validate_polymer_linkageCategory> <PDBxv:pdbx_validate_polymer_linkage id="1"> <PDBxv:PDB_ins_code_1 xsi:nil="true" /> <PDBxv:PDB_ins_code_2 xsi:nil="true" /> <PDBxv:PDB_model_num>1</PDBxv:PDB_model_num> <PDBxv:auth_asym_id_1>B</PDBxv:auth_asym_id_1> <PDBxv:auth_asym_id_2>B</PDBxv:auth_asym_id_2> <PDBxv:auth_atom_id_1 xsi:nil="true" /> <PDBxv:auth_atom_id_2 xsi:nil="true" /> <PDBxv:auth_comp_id_1>VAL</PDBxv:auth_comp_id_1> <PDBxv:auth_comp_id_2>ARG</PDBxv:auth_comp_id_2> <PDBxv:auth_seq_id_1>107</PDBxv:auth_seq_id_1> <PDBxv:auth_seq_id_2>108</PDBxv:auth_seq_id_2> <PDBxv:dist>3.16</PDBxv:dist> <PDBxv:label_alt_id_1 xsi:nil="true" /> <PDBxv:label_alt_id_2 xsi:nil="true" /> </PDBxv:pdbx_validate_polymer_linkage> <PDBxv:pdbx_validate_polymer_linkage id="2"> <PDBxv:PDB_ins_code_1 xsi:nil="true" /> <PDBxv:PDB_ins_code_2 xsi:nil="true" /> <PDBxv:PDB_model_num>1</PDBxv:PDB_model_num> <PDBxv:auth_asym_id_1>B</PDBxv:auth_asym_id_1> <PDBxv:auth_asym_id_2>B</PDBxv:auth_asym_id_2> <PDBxv:auth_atom_id_1 xsi:nil="true" /> <PDBxv:auth_atom_id_2 xsi:nil="true" /> <PDBxv:auth_comp_id_1>ARG</PDBxv:auth_comp_id_1> <PDBxv:auth_comp_id_2>LYS</PDBxv:auth_comp_id_2> <PDBxv:auth_seq_id_1>110</PDBxv:auth_seq_id_1> <PDBxv:auth_seq_id_2>110</PDBxv:auth_seq_id_2> <PDBxv:dist>2.95</PDBxv:dist> <PDBxv:label_alt_id_1 xsi:nil="true" /> <PDBxv:label_alt_id_2 xsi:nil="true" /> </PDBxv:pdbx_validate_polymer_linkage> </PDBxv:pdbx_validate_polymer_linkageCategory>
+-- Data items in the PDBX_VALIDATE_POLYMER_LINKAGE category list the polymer linkages within the entry that are outside of typical covalent distances. Example 1 - <PDBxv:pdbx_validate_polymer_linkageCategory> <PDBxv:pdbx_validate_polymer_linkage id="1"> <PDBxv:PDB_ins_code_1 xsi:nil="true" /> <PDBxv:PDB_ins_code_2 xsi:nil="true" /> <PDBxv:PDB_model_num>1</PDBxv:PDB_model_num> <PDBxv:auth_asym_id_1>B</PDBxv:auth_asym_id_1> <PDBxv:auth_asym_id_2>B</PDBxv:auth_asym_id_2> <PDBxv:auth_atom_id_1 xsi:nil="true" /> <PDBxv:auth_atom_id_2 xsi:nil="true" /> <PDBxv:auth_comp_id_1>VAL</PDBxv:auth_comp_id_1> <PDBxv:auth_comp_id_2>ARG</PDBxv:auth_comp_id_2> <PDBxv:auth_seq_id_1>107</PDBxv:auth_seq_id_1> <PDBxv:auth_seq_id_2>108</PDBxv:auth_seq_id_2> <PDBxv:dist>3.16</PDBxv:dist> <PDBxv:label_alt_id_1 xsi:nil="true" /> <PDBxv:label_alt_id_2 xsi:nil="true" /> </PDBxv:pdbx_validate_polymer_linkage> <PDBxv:pdbx_validate_polymer_linkage id="2"> <PDBxv:PDB_ins_code_1 xsi:nil="true" /> <PDBxv:PDB_ins_code_2 xsi:nil="true" /> <PDBxv:PDB_model_num>1</PDBxv:PDB_model_num> <PDBxv:auth_asym_id_1>B</PDBxv:auth_asym_id_1> <PDBxv:auth_asym_id_2>B</PDBxv:auth_asym_id_2> <PDBxv:auth_atom_id_1 xsi:nil="true" /> <PDBxv:auth_atom_id_2 xsi:nil="true" /> <PDBxv:auth_comp_id_1>ARG</PDBxv:auth_comp_id_1> <PDBxv:auth_comp_id_2>LYS</PDBxv:auth_comp_id_2> <PDBxv:auth_seq_id_1>110</PDBxv:auth_seq_id_1> <PDBxv:auth_seq_id_2>110</PDBxv:auth_seq_id_2> <PDBxv:dist>2.95</PDBxv:dist> <PDBxv:label_alt_id_1 xsi:nil="true" /> <PDBxv:label_alt_id_2 xsi:nil="true" /> </PDBxv:pdbx_validate_polymer_linkage> </PDBxv:pdbx_validate_polymer_linkageCategory>
 -- URI-reference = http://pdbml.pdb.org/dictionaries/mmcif_pdbx_v50.dic/Categories/pdbx_validate_polymer_linkage.html
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), schema location: schema/pdbx-validation-v1.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
@@ -5423,7 +5423,7 @@ CREATE TABLE pdbx_validate_symm_contact (
 
 --
 -- (quoted from pdbx_validate_torsionType)
--- Data items in the PDBX_VALIDATE_TORSION category list the residues with torsion angles outside the expected ramachandran regions Example 1 - <PDBxv:pdbx_validate_torsionCategory> <PDBxv:pdbx_validate_torsion id="1"> <PDBxv:PDB_ins_code xsi:nil="true" /> <PDBxv:PDB_model_num>1</PDBxv:PDB_model_num> <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id> <PDBxv:auth_comp_id>SER</PDBxv:auth_comp_id> <PDBxv:auth_seq_id>12</PDBxv:auth_seq_id> <PDBxv:phi>-64.75</PDBxv:phi> <PDBxv:psi>2.02</PDBxv:psi> </PDBxv:pdbx_validate_torsion> <PDBxv:pdbx_validate_torsion id="2"> <PDBxv:PDB_ins_code xsi:nil="true" /> <PDBxv:PDB_model_num>1</PDBxv:PDB_model_num> <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id> <PDBxv:auth_comp_id>THR</PDBxv:auth_comp_id> <PDBxv:auth_seq_id>22</PDBxv:auth_seq_id> <PDBxv:phi>-116.30</PDBxv:phi> <PDBxv:psi>61.44</PDBxv:psi> </PDBxv:pdbx_validate_torsion> </PDBxv:pdbx_validate_torsionCategory>
+-- Data items in the PDBX_VALIDATE_TORSION category list the residues with torsion angles outside the expected Ramachandran regions Example 1 - <PDBxv:pdbx_validate_torsionCategory> <PDBxv:pdbx_validate_torsion id="1"> <PDBxv:PDB_ins_code xsi:nil="true" /> <PDBxv:PDB_model_num>1</PDBxv:PDB_model_num> <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id> <PDBxv:auth_comp_id>SER</PDBxv:auth_comp_id> <PDBxv:auth_seq_id>12</PDBxv:auth_seq_id> <PDBxv:phi>-64.75</PDBxv:phi> <PDBxv:psi>2.02</PDBxv:psi> </PDBxv:pdbx_validate_torsion> <PDBxv:pdbx_validate_torsion id="2"> <PDBxv:PDB_ins_code xsi:nil="true" /> <PDBxv:PDB_model_num>1</PDBxv:PDB_model_num> <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id> <PDBxv:auth_comp_id>THR</PDBxv:auth_comp_id> <PDBxv:auth_seq_id>22</PDBxv:auth_seq_id> <PDBxv:phi>-116.30</PDBxv:phi> <PDBxv:psi>61.44</PDBxv:psi> </PDBxv:pdbx_validate_torsion> </PDBxv:pdbx_validate_torsionCategory>
 -- URI-reference = http://pdbml.pdb.org/dictionaries/mmcif_pdbx_v50.dic/Categories/pdbx_validate_torsion.html
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd (PDBxv), schema location: schema/pdbx-validation-v1.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false

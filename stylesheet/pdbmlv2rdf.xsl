@@ -9,8 +9,8 @@
   xmlns:dc="http://purl.org/dc/elements/1.1/"
   xmlns:dcterms="http://purl.org/dc/terms/"
   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-  xmlns:PDBxv="http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd"
-  xmlns:PDBov="https://rdf.wwpdb.org/schema/pdbx-validation-v1.owl#"
+  xmlns:PDBxv="http://pdbml.pdb.org/schema/pdbx-validation-v2.xsd"
+  xmlns:PDBov="https://rdf.wwpdb.org/schema/pdbx-validation-v2.owl#"
   exclude-result-prefixes="PDBxv">
     
   <xsl:output method="xml" indent="yes"/>
@@ -1638,6 +1638,304 @@
   </xsl:template>
 
 
+  <xsl:template match="PDBxv:datablock/PDBxv:pdbx_em_atom_inclusionCategory/PDBxv:pdbx_em_atom_inclusion">
+      <PDBov:has_pdbx_em_atom_inclusion>
+      <PDBov:pdbx_em_atom_inclusion rdf:about="{$base}/pdbx_em_atom_inclusion/{translate(@id,' ^','_')}">
+        <PDBov:of_datablock rdf:resource="{$base}"/>
+      <xsl:apply-templates select="@*"/>
+      <xsl:apply-templates select="@*" mode="linked"/>
+      <xsl:apply-templates/>
+      <xsl:apply-templates mode="linked"/>
+      </PDBov:pdbx_em_atom_inclusion>
+      </PDBov:has_pdbx_em_atom_inclusion>
+  </xsl:template>
+
+
+  <xsl:template match="PDBxv:datablock/PDBxv:pdbx_em_atom_inclusion_markerCategory/PDBxv:pdbx_em_atom_inclusion_marker">
+      <PDBov:has_pdbx_em_atom_inclusion_marker>
+      <PDBov:pdbx_em_atom_inclusion_marker rdf:about="{$base}/pdbx_em_atom_inclusion_marker/{translate(@ordinal,' ^','_')},{translate(@plot_id,' ^','_')}">
+        <PDBov:of_datablock rdf:resource="{$base}"/>
+      <xsl:if test="@plot_id!=''">
+        <PDBov:reference_to_pdbx_em_atom_inclusion>
+	  <rdf:Description  rdf:about="{$base}/pdbx_em_atom_inclusion/{translate(@plot_id,' ^','_')}">
+	    <PDBov:referenced_by_pdbx_em_atom_inclusion_marker rdf:resource="{$base}/pdbx_em_atom_inclusion_marker/{translate(@ordinal,' ^','_')},{translate(@plot_id,' ^','_')}"/>
+	  </rdf:Description>
+        </PDBov:reference_to_pdbx_em_atom_inclusion>
+            <!-- pdbx_em_atom_inclusionKeyref_0_0_0_0 -->
+        
+      </xsl:if>
+      <xsl:apply-templates select="@*"/>
+      <xsl:apply-templates select="@*" mode="linked"/>
+      <xsl:apply-templates/>
+      <xsl:apply-templates mode="linked"/>
+      </PDBov:pdbx_em_atom_inclusion_marker>
+      </PDBov:has_pdbx_em_atom_inclusion_marker>
+  </xsl:template>
+
+
+  <xsl:template match="PDBxv:datablock/PDBxv:pdbx_em_density_distributionCategory/PDBxv:pdbx_em_density_distribution">
+      <PDBov:has_pdbx_em_density_distribution>
+      <PDBov:pdbx_em_density_distribution rdf:about="{$base}/pdbx_em_density_distribution/{translate(@id,' ^','_')}">
+        <PDBov:of_datablock rdf:resource="{$base}"/>
+      <xsl:apply-templates select="@*"/>
+      <xsl:apply-templates select="@*" mode="linked"/>
+      <xsl:apply-templates/>
+      <xsl:apply-templates mode="linked"/>
+      </PDBov:pdbx_em_density_distribution>
+      </PDBov:has_pdbx_em_density_distribution>
+  </xsl:template>
+
+
+  <xsl:template match="PDBxv:datablock/PDBxv:pdbx_em_density_distribution_markerCategory/PDBxv:pdbx_em_density_distribution_marker">
+      <PDBov:has_pdbx_em_density_distribution_marker>
+      <PDBov:pdbx_em_density_distribution_marker rdf:about="{$base}/pdbx_em_density_distribution_marker/{translate(@ordinal,' ^','_')},{translate(@plot_id,' ^','_')}">
+        <PDBov:of_datablock rdf:resource="{$base}"/>
+      <xsl:if test="@plot_id!=''">
+        <PDBov:reference_to_pdbx_em_density_distribution>
+	  <rdf:Description  rdf:about="{$base}/pdbx_em_density_distribution/{translate(@plot_id,' ^','_')}">
+	    <PDBov:referenced_by_pdbx_em_density_distribution_marker rdf:resource="{$base}/pdbx_em_density_distribution_marker/{translate(@ordinal,' ^','_')},{translate(@plot_id,' ^','_')}"/>
+	  </rdf:Description>
+        </PDBov:reference_to_pdbx_em_density_distribution>
+            <!-- pdbx_em_density_distributionKeyref_0_0_0_0 -->
+        
+      </xsl:if>
+      <xsl:apply-templates select="@*"/>
+      <xsl:apply-templates select="@*" mode="linked"/>
+      <xsl:apply-templates/>
+      <xsl:apply-templates mode="linked"/>
+      </PDBov:pdbx_em_density_distribution_marker>
+      </PDBov:has_pdbx_em_density_distribution_marker>
+  </xsl:template>
+
+
+  <xsl:template match="PDBxv:datablock/PDBxv:pdbx_em_fsc_curveCategory/PDBxv:pdbx_em_fsc_curve">
+      <PDBov:has_pdbx_em_fsc_curve>
+      <PDBov:pdbx_em_fsc_curve rdf:about="{$base}/pdbx_em_fsc_curve/{translate(@id,' ^','_')}">
+        <PDBov:of_datablock rdf:resource="{$base}"/>
+      <xsl:apply-templates select="@*"/>
+      <xsl:apply-templates select="@*" mode="linked"/>
+      <xsl:apply-templates/>
+      <xsl:apply-templates mode="linked"/>
+      </PDBov:pdbx_em_fsc_curve>
+      </PDBov:has_pdbx_em_fsc_curve>
+  </xsl:template>
+
+
+  <xsl:template match="PDBxv:datablock/PDBxv:pdbx_em_fsc_curve_markerCategory/PDBxv:pdbx_em_fsc_curve_marker">
+      <PDBov:has_pdbx_em_fsc_curve_marker>
+      <PDBov:pdbx_em_fsc_curve_marker rdf:about="{$base}/pdbx_em_fsc_curve_marker/{translate(@ordinal,' ^','_')},{translate(@plot_id,' ^','_')}">
+        <PDBov:of_datablock rdf:resource="{$base}"/>
+      <xsl:if test="@plot_id!=''">
+        <PDBov:reference_to_pdbx_em_fsc_curve>
+	  <rdf:Description  rdf:about="{$base}/pdbx_em_fsc_curve/{translate(@plot_id,' ^','_')}">
+	    <PDBov:referenced_by_pdbx_em_fsc_curve_marker rdf:resource="{$base}/pdbx_em_fsc_curve_marker/{translate(@ordinal,' ^','_')},{translate(@plot_id,' ^','_')}"/>
+	  </rdf:Description>
+        </PDBov:reference_to_pdbx_em_fsc_curve>
+            <!-- pdbx_em_fsc_curveKeyref_0_0_0_0 -->
+        
+      </xsl:if>
+      <xsl:apply-templates select="@*"/>
+      <xsl:apply-templates select="@*" mode="linked"/>
+      <xsl:apply-templates/>
+      <xsl:apply-templates mode="linked"/>
+      </PDBov:pdbx_em_fsc_curve_marker>
+      </PDBov:has_pdbx_em_fsc_curve_marker>
+  </xsl:template>
+
+
+  <xsl:template match="PDBxv:datablock/PDBxv:pdbx_em_fsc_cutoff_curveCategory/PDBxv:pdbx_em_fsc_cutoff_curve">
+      <PDBov:has_pdbx_em_fsc_cutoff_curve>
+      <PDBov:pdbx_em_fsc_cutoff_curve rdf:about="{$base}/pdbx_em_fsc_cutoff_curve/{translate(@id,' ^','_')}">
+        <PDBov:of_datablock rdf:resource="{$base}"/>
+      <xsl:apply-templates select="@*"/>
+      <xsl:apply-templates select="@*" mode="linked"/>
+      <xsl:apply-templates/>
+      <xsl:apply-templates mode="linked"/>
+      </PDBov:pdbx_em_fsc_cutoff_curve>
+      </PDBov:has_pdbx_em_fsc_cutoff_curve>
+  </xsl:template>
+
+
+  <xsl:template match="PDBxv:datablock/PDBxv:pdbx_em_fsc_cutoff_curve_markerCategory/PDBxv:pdbx_em_fsc_cutoff_curve_marker">
+      <PDBov:has_pdbx_em_fsc_cutoff_curve_marker>
+      <PDBov:pdbx_em_fsc_cutoff_curve_marker rdf:about="{$base}/pdbx_em_fsc_cutoff_curve_marker/{translate(@ordinal,' ^','_')},{translate(@plot_id,' ^','_')}">
+        <PDBov:of_datablock rdf:resource="{$base}"/>
+      <xsl:if test="@plot_id!=''">
+        <PDBov:reference_to_pdbx_em_fsc_cutoff_curve>
+	  <rdf:Description  rdf:about="{$base}/pdbx_em_fsc_cutoff_curve/{translate(@plot_id,' ^','_')}">
+	    <PDBov:referenced_by_pdbx_em_fsc_cutoff_curve_marker rdf:resource="{$base}/pdbx_em_fsc_cutoff_curve_marker/{translate(@ordinal,' ^','_')},{translate(@plot_id,' ^','_')}"/>
+	  </rdf:Description>
+        </PDBov:reference_to_pdbx_em_fsc_cutoff_curve>
+            <!-- pdbx_em_fsc_cutoff_curveKeyref_0_0_0_0 -->
+        
+      </xsl:if>
+      <xsl:apply-templates select="@*"/>
+      <xsl:apply-templates select="@*" mode="linked"/>
+      <xsl:apply-templates/>
+      <xsl:apply-templates mode="linked"/>
+      </PDBov:pdbx_em_fsc_cutoff_curve_marker>
+      </PDBov:has_pdbx_em_fsc_cutoff_curve_marker>
+  </xsl:template>
+
+
+  <xsl:template match="PDBxv:datablock/PDBxv:pdbx_em_fsc_resolutionCategory/PDBxv:pdbx_em_fsc_resolution">
+      <PDBov:has_pdbx_em_fsc_resolution>
+      <PDBov:pdbx_em_fsc_resolution rdf:about="{$base}/pdbx_em_fsc_resolution/{translate(@criterion,' ^','_')},{translate(@source,' ^','_')}">
+        <PDBov:of_datablock rdf:resource="{$base}"/>
+      <xsl:if test="PDBxv:fsc_curve_id!=''">
+        <PDBov:reference_to_pdbx_em_fsc_curve>
+	  <rdf:Description  rdf:about="{$base}/pdbx_em_fsc_curve/{translate(PDBxv:fsc_curve_id,' ^','_')}">
+	    <PDBov:referenced_by_pdbx_em_fsc_resolution rdf:resource="{$base}/pdbx_em_fsc_resolution/{translate(@criterion,' ^','_')},{translate(@source,' ^','_')}"/>
+	  </rdf:Description>
+        </PDBov:reference_to_pdbx_em_fsc_curve>
+            <!-- pdbx_em_fsc_curveKeyref_0_0_1_0 -->
+        
+      </xsl:if>
+      <xsl:if test="PDBxv:fsc_cutoff_curve_id!=''">
+        <PDBov:reference_to_pdbx_em_fsc_cutoff_curve>
+	  <rdf:Description  rdf:about="{$base}/pdbx_em_fsc_cutoff_curve/{translate(PDBxv:fsc_cutoff_curve_id,' ^','_')}">
+	    <PDBov:referenced_by_pdbx_em_fsc_resolution rdf:resource="{$base}/pdbx_em_fsc_resolution/{translate(@criterion,' ^','_')},{translate(@source,' ^','_')}"/>
+	  </rdf:Description>
+        </PDBov:reference_to_pdbx_em_fsc_cutoff_curve>
+            <!-- pdbx_em_fsc_cutoff_curveKeyref_0_0_1_0 -->
+        
+      </xsl:if>
+      <xsl:apply-templates select="@*"/>
+      <xsl:apply-templates select="@*" mode="linked"/>
+      <xsl:apply-templates/>
+      <xsl:apply-templates mode="linked"/>
+      </PDBov:pdbx_em_fsc_resolution>
+      </PDBov:has_pdbx_em_fsc_resolution>
+  </xsl:template>
+
+
+  <xsl:template match="PDBxv:datablock/PDBxv:pdbx_em_rapsCategory/PDBxv:pdbx_em_raps">
+      <PDBov:has_pdbx_em_raps>
+      <PDBov:pdbx_em_raps rdf:about="{$base}/pdbx_em_raps/{translate(@id,' ^','_')}">
+        <PDBov:of_datablock rdf:resource="{$base}"/>
+      <xsl:apply-templates select="@*"/>
+      <xsl:apply-templates select="@*" mode="linked"/>
+      <xsl:apply-templates/>
+      <xsl:apply-templates mode="linked"/>
+      </PDBov:pdbx_em_raps>
+      </PDBov:has_pdbx_em_raps>
+  </xsl:template>
+
+
+  <xsl:template match="PDBxv:datablock/PDBxv:pdbx_em_raps_markerCategory/PDBxv:pdbx_em_raps_marker">
+      <PDBov:has_pdbx_em_raps_marker>
+      <PDBov:pdbx_em_raps_marker rdf:about="{$base}/pdbx_em_raps_marker/{translate(@ordinal,' ^','_')},{translate(@plot_id,' ^','_')}">
+        <PDBov:of_datablock rdf:resource="{$base}"/>
+      <xsl:if test="@plot_id!=''">
+        <PDBov:reference_to_pdbx_em_raps>
+	  <rdf:Description  rdf:about="{$base}/pdbx_em_raps/{translate(@plot_id,' ^','_')}">
+	    <PDBov:referenced_by_pdbx_em_raps_marker rdf:resource="{$base}/pdbx_em_raps_marker/{translate(@ordinal,' ^','_')},{translate(@plot_id,' ^','_')}"/>
+	  </rdf:Description>
+        </PDBov:reference_to_pdbx_em_raps>
+            <!-- pdbx_em_rapsKeyref_0_0_0_0 -->
+        
+      </xsl:if>
+      <xsl:apply-templates select="@*"/>
+      <xsl:apply-templates select="@*" mode="linked"/>
+      <xsl:apply-templates/>
+      <xsl:apply-templates mode="linked"/>
+      </PDBov:pdbx_em_raps_marker>
+      </PDBov:has_pdbx_em_raps_marker>
+  </xsl:template>
+
+
+  <xsl:template match="PDBxv:datablock/PDBxv:pdbx_em_validate_map_modelCategory/PDBxv:pdbx_em_validate_map_model">
+      <PDBov:has_pdbx_em_validate_map_model>
+      <PDBov:pdbx_em_validate_map_model rdf:about="{$base}/pdbx_em_validate_map_model/{translate(@id,' ^','_')}">
+        <PDBov:of_datablock rdf:resource="{$base}"/>
+      <xsl:apply-templates select="@*"/>
+      <xsl:apply-templates select="@*" mode="linked"/>
+      <xsl:apply-templates/>
+      <xsl:apply-templates mode="linked"/>
+      </PDBov:pdbx_em_validate_map_model>
+      </PDBov:has_pdbx_em_validate_map_model>
+  </xsl:template>
+
+
+  <xsl:template match="PDBxv:datablock/PDBxv:pdbx_em_validate_map_model_entityCategory/PDBxv:pdbx_em_validate_map_model_entity">
+      <PDBov:has_pdbx_em_validate_map_model_entity>
+      <PDBov:pdbx_em_validate_map_model_entity rdf:about="{$base}/pdbx_em_validate_map_model_entity/{translate(@PDB_model_num,' ^','_')},{translate(@label_asym_id,' ^','_')}">
+        <PDBov:of_datablock rdf:resource="{$base}"/>
+      <xsl:if test="PDBxv:entity_id!=''">
+        <PDBov:reference_to_entity>
+	  <rdf:Description  rdf:about="{$base}/entity/{translate(PDBxv:entity_id,' ^','_')}">
+	    <PDBov:referenced_by_pdbx_em_validate_map_model_entity rdf:resource="{$base}/pdbx_em_validate_map_model_entity/{translate(@PDB_model_num,' ^','_')},{translate(@label_asym_id,' ^','_')}"/>
+	  </rdf:Description>
+        </PDBov:reference_to_entity>
+            <!-- entityKeyref_0_0_3_0 -->
+        
+      </xsl:if>
+      <xsl:apply-templates select="@*"/>
+      <xsl:apply-templates select="@*" mode="linked"/>
+      <xsl:apply-templates/>
+      <xsl:apply-templates mode="linked"/>
+      </PDBov:pdbx_em_validate_map_model_entity>
+      </PDBov:has_pdbx_em_validate_map_model_entity>
+  </xsl:template>
+
+
+  <xsl:template match="PDBxv:datablock/PDBxv:pdbx_em_validate_map_model_overallCategory/PDBxv:pdbx_em_validate_map_model_overall">
+      <PDBov:has_pdbx_em_validate_map_model_overall>
+      <PDBov:pdbx_em_validate_map_model_overall rdf:about="{$base}/pdbx_em_validate_map_model_overall/{translate(@entry_id,' ^','_')}">
+        <PDBov:of_datablock rdf:resource="{$base}"/>
+      <xsl:if test="@entry_id!=''">
+        <PDBov:reference_to_entry>
+	  <rdf:Description  rdf:about="{$base}/entry/{translate(@entry_id,' ^','_')}">
+	    <PDBov:referenced_by_pdbx_em_validate_map_model_overall rdf:resource="{$base}/pdbx_em_validate_map_model_overall/{translate(@entry_id,' ^','_')}"/>
+	  </rdf:Description>
+        </PDBov:reference_to_entry>
+            <!-- entryKeyref_0_0_15_0 -->
+        
+      </xsl:if>
+      <xsl:apply-templates select="@*"/>
+      <xsl:apply-templates select="@*" mode="linked"/>
+      <xsl:apply-templates/>
+      <xsl:apply-templates mode="linked"/>
+      </PDBov:pdbx_em_validate_map_model_overall>
+      </PDBov:has_pdbx_em_validate_map_model_overall>
+  </xsl:template>
+
+
+  <xsl:template match="PDBxv:datablock/PDBxv:pdbx_em_volume_estimateCategory/PDBxv:pdbx_em_volume_estimate">
+      <PDBov:has_pdbx_em_volume_estimate>
+      <PDBov:pdbx_em_volume_estimate rdf:about="{$base}/pdbx_em_volume_estimate/{translate(@id,' ^','_')}">
+        <PDBov:of_datablock rdf:resource="{$base}"/>
+      <xsl:apply-templates select="@*"/>
+      <xsl:apply-templates select="@*" mode="linked"/>
+      <xsl:apply-templates/>
+      <xsl:apply-templates mode="linked"/>
+      </PDBov:pdbx_em_volume_estimate>
+      </PDBov:has_pdbx_em_volume_estimate>
+  </xsl:template>
+
+
+  <xsl:template match="PDBxv:datablock/PDBxv:pdbx_em_volume_estimate_markerCategory/PDBxv:pdbx_em_volume_estimate_marker">
+      <PDBov:has_pdbx_em_volume_estimate_marker>
+      <PDBov:pdbx_em_volume_estimate_marker rdf:about="{$base}/pdbx_em_volume_estimate_marker/{translate(@ordinal,' ^','_')},{translate(@plot_id,' ^','_')}">
+        <PDBov:of_datablock rdf:resource="{$base}"/>
+      <xsl:if test="@plot_id!=''">
+        <PDBov:reference_to_pdbx_em_volume_estimate>
+	  <rdf:Description  rdf:about="{$base}/pdbx_em_volume_estimate/{translate(@plot_id,' ^','_')}">
+	    <PDBov:referenced_by_pdbx_em_volume_estimate_marker rdf:resource="{$base}/pdbx_em_volume_estimate_marker/{translate(@ordinal,' ^','_')},{translate(@plot_id,' ^','_')}"/>
+	  </rdf:Description>
+        </PDBov:reference_to_pdbx_em_volume_estimate>
+            <!-- pdbx_em_volume_estimateKeyref_0_0_0_0 -->
+        
+      </xsl:if>
+      <xsl:apply-templates select="@*"/>
+      <xsl:apply-templates select="@*" mode="linked"/>
+      <xsl:apply-templates/>
+      <xsl:apply-templates mode="linked"/>
+      </PDBov:pdbx_em_volume_estimate_marker>
+      </PDBov:has_pdbx_em_volume_estimate_marker>
+  </xsl:template>
+
+
   <xsl:template match="PDBxv:datablock/PDBxv:pdbx_entity_assemblyCategory/PDBxv:pdbx_entity_assembly">
       <PDBov:has_pdbx_entity_assembly>
       <PDBov:pdbx_entity_assembly rdf:about="{$base}/pdbx_entity_assembly/{translate(@entity_id,' ^','_')},{translate(@id,' ^','_')}">
@@ -1648,7 +1946,7 @@
 	    <PDBov:referenced_by_pdbx_entity_assembly rdf:resource="{$base}/pdbx_entity_assembly/{translate(@entity_id,' ^','_')},{translate(@id,' ^','_')}"/>
 	  </rdf:Description>
         </PDBov:reference_to_entity>
-            <!-- entityKeyref_0_0_3_0 -->
+            <!-- entityKeyref_0_0_4_0 -->
         
       </xsl:if>
       <xsl:if test="PDBxv:biol_id!=''">
@@ -1679,7 +1977,7 @@
 	    <PDBov:referenced_by_pdbx_entity_branch_descriptor rdf:resource="{$base}/pdbx_entity_branch_descriptor/{translate(@ordinal,' ^','_')}"/>
 	  </rdf:Description>
         </PDBov:reference_to_entity>
-            <!-- entityKeyref_0_0_4_0 -->
+            <!-- entityKeyref_0_0_5_0 -->
         
       </xsl:if>
       <xsl:apply-templates select="@*"/>
@@ -1701,7 +1999,7 @@
 	    <PDBov:referenced_by_pdbx_entity_descriptor rdf:resource="{$base}/pdbx_entity_descriptor/{translate(@ordinal,' ^','_')}"/>
 	  </rdf:Description>
         </PDBov:reference_to_entity>
-            <!-- entityKeyref_0_0_5_0 -->
+            <!-- entityKeyref_0_0_6_0 -->
         
       </xsl:if>
       <xsl:apply-templates select="@*"/>
@@ -1723,7 +2021,7 @@
 	    <PDBov:referenced_by_pdbx_entity_nonpoly rdf:resource="{$base}/pdbx_entity_nonpoly/{translate(@entity_id,' ^','_')}"/>
 	  </rdf:Description>
         </PDBov:reference_to_entity>
-            <!-- entityKeyref_0_0_6_0 -->
+            <!-- entityKeyref_0_0_7_0 -->
         
       </xsl:if>
       <xsl:apply-templates select="@*"/>
@@ -1776,7 +2074,7 @@
 	    <PDBov:referenced_by_pdbx_entry_details rdf:resource="{$base}/pdbx_entry_details/{translate(@entry_id,' ^','_')}"/>
 	  </rdf:Description>
         </PDBov:reference_to_entry>
-            <!-- entryKeyref_0_0_15_0 -->
+            <!-- entryKeyref_0_0_16_0 -->
         
       </xsl:if>
       <xsl:apply-templates select="@*"/>
@@ -1798,7 +2096,7 @@
 	    <PDBov:referenced_by_pdbx_helical_symmetry rdf:resource="{$base}/pdbx_helical_symmetry/{translate(@entry_id,' ^','_')}"/>
 	  </rdf:Description>
         </PDBov:reference_to_entry>
-            <!-- entryKeyref_0_0_16_0 -->
+            <!-- entryKeyref_0_0_17_0 -->
         
       </xsl:if>
       <xsl:apply-templates select="@*"/>
@@ -1921,7 +2219,7 @@
 	    <PDBov:referenced_by_pdbx_nmr_constraints rdf:resource="{$base}/pdbx_nmr_constraints/{translate(@entry_id,' ^','_')}"/>
 	  </rdf:Description>
         </PDBov:reference_to_entry>
-            <!-- entryKeyref_0_0_17_0 -->
+            <!-- entryKeyref_0_0_18_0 -->
         
       </xsl:if>
       <xsl:apply-templates select="@*"/>
@@ -1943,7 +2241,7 @@
 	    <PDBov:referenced_by_pdbx_nmr_details rdf:resource="{$base}/pdbx_nmr_details/{translate(@entry_id,' ^','_')}"/>
 	  </rdf:Description>
         </PDBov:reference_to_entry>
-            <!-- entryKeyref_0_0_18_0 -->
+            <!-- entryKeyref_0_0_19_0 -->
         
       </xsl:if>
       <xsl:apply-templates select="@*"/>
@@ -1965,7 +2263,7 @@
 	    <PDBov:referenced_by_pdbx_nmr_ensemble rdf:resource="{$base}/pdbx_nmr_ensemble/{translate(@entry_id,' ^','_')}"/>
 	  </rdf:Description>
         </PDBov:reference_to_entry>
-            <!-- entryKeyref_0_0_19_0 -->
+            <!-- entryKeyref_0_0_20_0 -->
         
       </xsl:if>
       <xsl:apply-templates select="@*"/>
@@ -1987,7 +2285,7 @@
 	    <PDBov:referenced_by_pdbx_nmr_ensemble_rms rdf:resource="{$base}/pdbx_nmr_ensemble_rms/{translate(@entry_id,' ^','_')}"/>
 	  </rdf:Description>
         </PDBov:reference_to_entry>
-            <!-- entryKeyref_0_0_20_0 -->
+            <!-- entryKeyref_0_0_21_0 -->
         
       </xsl:if>
       <xsl:apply-templates select="@*"/>
@@ -2048,7 +2346,7 @@
 	    <PDBov:referenced_by_pdbx_nmr_force_constants rdf:resource="{$base}/pdbx_nmr_force_constants/{translate(@entry_id,' ^','_')}"/>
 	  </rdf:Description>
         </PDBov:reference_to_entry>
-            <!-- entryKeyref_0_0_21_0 -->
+            <!-- entryKeyref_0_0_22_0 -->
         
       </xsl:if>
       <xsl:apply-templates select="@*"/>
@@ -2070,7 +2368,7 @@
 	    <PDBov:referenced_by_pdbx_nmr_refine rdf:resource="{$base}/pdbx_nmr_refine/{translate(@entry_id,' ^','_')},{translate(@software_ordinal,' ^','_')}"/>
 	  </rdf:Description>
         </PDBov:reference_to_entry>
-            <!-- entryKeyref_0_0_22_0 -->
+            <!-- entryKeyref_0_0_23_0 -->
         
       </xsl:if>
       <xsl:apply-templates select="@*"/>
@@ -2092,7 +2390,7 @@
 	    <PDBov:referenced_by_pdbx_nmr_representative rdf:resource="{$base}/pdbx_nmr_representative/{translate(@entry_id,' ^','_')}"/>
 	  </rdf:Description>
         </PDBov:reference_to_entry>
-            <!-- entryKeyref_0_0_23_0 -->
+            <!-- entryKeyref_0_0_24_0 -->
         
       </xsl:if>
       <xsl:apply-templates select="@*"/>
@@ -2232,7 +2530,7 @@
 	    <PDBov:referenced_by_pdbx_percentile_list rdf:resource="{$base}/pdbx_percentile_list/{translate(@entry_id,' ^','_')}"/>
 	  </rdf:Description>
         </PDBov:reference_to_entry>
-            <!-- entryKeyref_0_0_24_0 -->
+            <!-- entryKeyref_0_0_25_0 -->
         
       </xsl:if>
       <xsl:apply-templates select="@*"/>
@@ -2254,7 +2552,7 @@
 	    <PDBov:referenced_by_pdbx_percentile_view rdf:resource="{$base}/pdbx_percentile_view/{translate(@conditions_id,' ^','_')},{translate(@entry_id,' ^','_')},{translate(@type,' ^','_')}"/>
 	  </rdf:Description>
         </PDBov:reference_to_entry>
-            <!-- entryKeyref_0_0_25_0 -->
+            <!-- entryKeyref_0_0_26_0 -->
         
       </xsl:if>
       <xsl:if test="@conditions_id!=''">
@@ -2376,7 +2674,7 @@
 	    <PDBov:referenced_by_pdbx_point_symmetry rdf:resource="{$base}/pdbx_point_symmetry/{translate(@entry_id,' ^','_')}"/>
 	  </rdf:Description>
         </PDBov:reference_to_entry>
-            <!-- entryKeyref_0_0_26_0 -->
+            <!-- entryKeyref_0_0_27_0 -->
         
       </xsl:if>
       <xsl:apply-templates select="@*"/>
@@ -2451,7 +2749,7 @@
 	    <PDBov:referenced_by_pdbx_refine rdf:resource="{$base}/pdbx_refine/{translate(@entry_id,' ^','_')},{translate(@pdbx_refine_id,' ^','_')}"/>
 	  </rdf:Description>
         </PDBov:reference_to_entry>
-            <!-- entryKeyref_0_0_27_0 -->
+            <!-- entryKeyref_0_0_28_0 -->
         
       </xsl:if>
       <xsl:apply-templates select="@*"/>
@@ -2547,7 +2845,7 @@
 	    <PDBov:referenced_by_pdbx_soln_scatter rdf:resource="{$base}/pdbx_soln_scatter/{translate(@entry_id,' ^','_')},{translate(@id,' ^','_')}"/>
 	  </rdf:Description>
         </PDBov:reference_to_entry>
-            <!-- entryKeyref_0_0_28_0 -->
+            <!-- entryKeyref_0_0_29_0 -->
         
       </xsl:if>
       <xsl:apply-templates select="@*"/>
@@ -2809,7 +3107,7 @@
 	    <PDBov:referenced_by_pdbx_struct_nmr_ens_clust rdf:resource="{$base}/pdbx_struct_nmr_ens_clust/{translate(@entry_id,' ^','_')}"/>
 	  </rdf:Description>
         </PDBov:reference_to_entry>
-            <!-- entryKeyref_0_0_29_0 -->
+            <!-- entryKeyref_0_0_30_0 -->
         
       </xsl:if>
       <xsl:apply-templates select="@*"/>
@@ -3249,7 +3547,7 @@
 	    <PDBov:referenced_by_phasing_MAD rdf:resource="{$base}/phasing_MAD/{translate(@entry_id,' ^','_')}"/>
 	  </rdf:Description>
         </PDBov:reference_to_entry>
-            <!-- entryKeyref_0_0_30_0 -->
+            <!-- entryKeyref_0_0_31_0 -->
         
       </xsl:if>
       <xsl:apply-templates select="@*"/>
@@ -3359,7 +3657,7 @@
 	    <PDBov:referenced_by_phasing_MIR rdf:resource="{$base}/phasing_MIR/{translate(@entry_id,' ^','_')}"/>
 	  </rdf:Description>
         </PDBov:reference_to_entry>
-            <!-- entryKeyref_0_0_31_0 -->
+            <!-- entryKeyref_0_0_32_0 -->
         
       </xsl:if>
       <xsl:apply-templates select="@*"/>
@@ -3491,7 +3789,7 @@
 	    <PDBov:referenced_by_phasing_averaging rdf:resource="{$base}/phasing_averaging/{translate(@entry_id,' ^','_')}"/>
 	  </rdf:Description>
         </PDBov:reference_to_entry>
-            <!-- entryKeyref_0_0_32_0 -->
+            <!-- entryKeyref_0_0_33_0 -->
         
       </xsl:if>
       <xsl:apply-templates select="@*"/>
@@ -3513,7 +3811,7 @@
 	    <PDBov:referenced_by_phasing_isomorphous rdf:resource="{$base}/phasing_isomorphous/{translate(@entry_id,' ^','_')}"/>
 	  </rdf:Description>
         </PDBov:reference_to_entry>
-            <!-- entryKeyref_0_0_33_0 -->
+            <!-- entryKeyref_0_0_34_0 -->
         
       </xsl:if>
       <xsl:apply-templates select="@*"/>
@@ -3570,7 +3868,7 @@
 	    <PDBov:referenced_by_refine rdf:resource="{$base}/refine/{translate(@entry_id,' ^','_')},{translate(@pdbx_refine_id,' ^','_')}"/>
 	  </rdf:Description>
         </PDBov:reference_to_entry>
-            <!-- entryKeyref_0_0_34_0 -->
+            <!-- entryKeyref_0_0_35_0 -->
         
       </xsl:if>
       <xsl:apply-templates select="@*"/>
@@ -3605,7 +3903,7 @@
 	    <PDBov:referenced_by_refine_analyze rdf:resource="{$base}/refine_analyze/{translate(@entry_id,' ^','_')},{translate(@pdbx_refine_id,' ^','_')}"/>
 	  </rdf:Description>
         </PDBov:reference_to_entry>
-            <!-- entryKeyref_0_0_35_0 -->
+            <!-- entryKeyref_0_0_36_0 -->
         
       </xsl:if>
       <xsl:apply-templates select="@*"/>
@@ -3757,7 +4055,7 @@
 	    <PDBov:referenced_by_reflns rdf:resource="{$base}/reflns/{translate(@pdbx_ordinal,' ^','_')}"/>
 	  </rdf:Description>
         </PDBov:reference_to_entry>
-            <!-- entryKeyref_0_0_36_0 -->
+            <!-- entryKeyref_0_0_37_0 -->
         
       </xsl:if>
       <xsl:apply-templates select="@*"/>
@@ -3844,7 +4142,7 @@
 	    <PDBov:referenced_by_struct rdf:resource="{$base}/struct/{translate(@entry_id,' ^','_')}"/>
 	  </rdf:Description>
         </PDBov:reference_to_entry>
-            <!-- entryKeyref_0_0_37_0 -->
+            <!-- entryKeyref_0_0_38_0 -->
         
       </xsl:if>
       <xsl:apply-templates select="@*"/>
@@ -3873,7 +4171,7 @@
 	    <PDBov:referenced_by_struct_asym rdf:resource="{$base}/struct_asym/{translate(@id,' ^','_')}"/>
 	  </rdf:Description>
         </PDBov:reference_to_entity>
-            <!-- entityKeyref_0_0_7_0 -->
+            <!-- entityKeyref_0_0_8_0 -->
         
       </xsl:if>
       <xsl:apply-templates select="@*"/>
@@ -3991,7 +4289,7 @@
 	    <PDBov:referenced_by_struct_mon_details rdf:resource="{$base}/struct_mon_details/{translate(@entry_id,' ^','_')}"/>
 	  </rdf:Description>
         </PDBov:reference_to_entry>
-            <!-- entryKeyref_0_0_38_0 -->
+            <!-- entryKeyref_0_0_39_0 -->
         
       </xsl:if>
       <xsl:apply-templates select="@*"/>
@@ -4153,7 +4451,7 @@
 	    <PDBov:referenced_by_struct_ref rdf:resource="{$base}/struct_ref/{translate(@id,' ^','_')}"/>
 	  </rdf:Description>
         </PDBov:reference_to_entity>
-            <!-- entityKeyref_0_0_8_0 -->
+            <!-- entityKeyref_0_0_9_0 -->
         
       </xsl:if>
       <xsl:apply-templates select="@*"/>
@@ -4377,7 +4675,7 @@
 	    <PDBov:referenced_by_symmetry rdf:resource="{$base}/symmetry/{translate(@entry_id,' ^','_')}"/>
 	  </rdf:Description>
         </PDBov:reference_to_entry>
-            <!-- entryKeyref_0_0_39_0 -->
+            <!-- entryKeyref_0_0_40_0 -->
         
       </xsl:if>
       <xsl:apply-templates select="@*"/>

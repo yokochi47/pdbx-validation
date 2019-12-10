@@ -14,13 +14,13 @@ The pdbx-validation is a generation tool of alternative [wwPDB validation report
 
 File path | Document
 --------- | --------
-[schema/mmcif_pdbx_validation_v1.dic](https://github.com/yokochi47/pdbx-validation/blob/master/schema/mmcif_pdbx_validation_v1.319.dic) | wwPDB Validation Information Dictionary (v1.319)
-[schema/pdbx-validation-v1.xsd](https://github.com/yokochi47/pdbx-validation/blob/master/schema/pdbx-validation-v1.319.xsd) | PDBML-validation Schema (v1.319)
-[schema/pdbx-validation-v1.owl](https://github.com/yokochi47/pdbx-validation/blob/master/schema/pdbx-validation-v1.319.owl) | wwPDB/OWL-validation (v1.319)
+[schema/mmcif_pdbx_validation_v1.dic](https://github.com/yokochi47/pdbx-validation/blob/master/schema/mmcif_pdbx_validation_v2.320.dic) | wwPDB Validation Information Dictionary (v2.320)
+[schema/pdbx-validation-v1.xsd](https://github.com/yokochi47/pdbx-validation/blob/master/schema/pdbx-validation-v2.320.xsd) | PDBML-validation Schema (v2.320)
+[schema/pdbx-validation-v1.owl](https://github.com/yokochi47/pdbx-validation/blob/master/schema/pdbx-validation-v2.320.owl) | wwPDB/OWL-validation (v2.320)
 [schema/mmcif_ddl.dic](https://github.com/yokochi47/pdbx-validation/blob/master/schema/mmcif_ddl_v2.3.0.dic) | extended mmCIF DDL Core Dictionary (dubbed as v2.3.0)
-[resource/mmcif_pdbx_v50.dic](http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic) | PDB Exchange Data Dictionary (v5.319)
-[resource/pdbx-v50.xsd](https://github.com/yokochi47/pdbx-validation/blob/master/resource/pdbx-v50.xsd) | PDBML Schema (v5.319)
-[resource/pdbx-v50.owl](https://github.com/yokochi47/pdbx-validation/blob/master/resource/pdbx-v50.owl) | PDBx ontology, ontology for wwPDB/RDF (v5.319)
+[resource/mmcif_pdbx_v50.dic](http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic) | PDB Exchange Data Dictionary (v5.320)
+[resource/pdbx-v50.xsd](https://github.com/yokochi47/pdbx-validation/blob/master/resource/pdbx-v50.xsd) | PDBML Schema (v5.320)
+[resource/pdbx-v50.owl](https://github.com/yokochi47/pdbx-validation/blob/master/resource/pdbx-v50.owl) | PDBx ontology, ontology for wwPDB/RDF (v5.320)
 [resource/wwpdb_validation_v004.xsd](https://github.com/yokochi47/pdbx-validation/blob/master/resource/wwpdb_validation_v004.xsd) | XML Schema for wwPDB validation reports (v004, rev n/a)
 [scripts](https://github.com/yokochi47/pdbx-validation/blob/master/scripts) | a directory contains scripts invoked by the 'run_all.sh' script
 [virtuoso_scripts](https://github.com/yokochi47/pdbx-validation/blob/master/virtuoso_scripts) | a directory contains scripts for uploading wwPDB/RDF-validation to local SPARQL endpoint
@@ -74,6 +74,21 @@ File path | Document
 		- Reverted from PDBML-validation: [5h0s_validation.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/validation-info-rev-from-full/5h0s_validation.xml)
 		- Reverted from PDBML-validation-alt and PDBML-noatom: [5h0s_validation.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/validation-info-rev-from-alt/5h0s_validation.xml)
 
+- PDB ID: [6RJH](https://pdbj.org/mine/summary/6rjh), Exptl. method: ELECTRON MICROSCOPY with EM map/model validation
+	- PDBx/mmCIF format
+		- mmCIF-validation: [6rjh-validation-full.cif](https://github.com/yokochi47/pdbx-validation/blob/master/test/mmcif-validation/6rjh-validation-full.cif)
+		- mmCIF-validation-alt: [6rjh-validation-alt.cif](https://github.com/yokochi47/pdbx-validation/blob/master/test/mmcif-validation-alt/6rjh-validation-alt.cif)
+	- PDBML format
+		- PDBML-validation: [6rjh-validation-full.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/XML-validation/6rjh-validation-full.xml)
+		- PDBML-validation-alt: [6rjh-validation-alt.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/validation-info-alt/6rjh-validation-alt.xml)
+	- wwPDB/RDF format
+		- wwPDB/RDF-validation: [6rjh-validation-full.rdf](https://github.com/yokochi47/pdbx-validation/blob/master/test/RDF-validation/6rjh-validation-full.rdf)
+		- wwPDB/RDF-validation-alt: [6rjh-validation-alt.rdf](https://github.com/yokochi47/pdbx-validation/blob/master/test/RDF-validation-alt/6rjh-validation-alt.rdf)
+	- wwPDB validation report (XML format)
+		- Original source: [6rjh_validation.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/validation-info/6rjh_validation.xml)
+		- Reverted from PDBML-validation: [6rjh_validation.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/validation-info-rev-from-full/6rjh_validation.xml)
+		- Reverted from PDBML-validation-alt and PDBML-noatom: [6rjh_validation.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/validation-info-rev-from-alt/6rjh_validation.xml)
+
 ## Bulk download service of alternative wwPDB validation reports
 
 - Bulk download via HTTP protocol
@@ -124,6 +139,25 @@ File path | Document
 - [**Virtuoso**](https://www.openlinksw.com/wiki/main/Main), oprionally used as SPARQL endpoint of wwPDB/RDF-validation.
 
 ## Release notes
+
+- **Dec 10, 2019**: Release v2.0.0
+	- Support XML Schema for wwPDB validation report (wwpdb_validation_v004.xsd).
+		- Add '_pdbx_em_density_distribution' category that records map-value distribution of the primary EM volume.
+		- Add '_pdbx_em_density_distribution_marker' category that records map-value distribution plot of the primary EM volume.
+		- Add '_pdbx_em_volume_estimate' category that records volume estimation of the primary EM volume.
+		- Add '_pdbx_em_volume_estimate_marker' category that records volume estimation plot of the primary EM volume.
+		- Add '_pdbx_em_raps' category that records Rotationally Averaged Power Spectrum (RAPS).
+		- Add '_pdbx_em_raps_marker' category that records Rotationally Averaged Power Spectrum (RAPS) plot.
+		- Add '_pdbx_em_fsc_resolution' category that records estimated global resolutions from Fourier-Shell Correlation (FSC) curve using various criteria
+		- Add '_pdbx_em_fsc_curve' category that records Fourier-Shell Correlation (FSC) curve.
+		- Add '_pdbx_em_fsc_curve_marker' category that records row data to plot Fourier-Shell Correlation (FSC) curve.
+		- Add '_pdbx_em_fsc_cutoff_curve' category that records Fourier-Shell Correlation (FSC) cut-off curve that represents a given criterion.
+		- Add '_pdbx_em_fsc_cutoff_curve_marker' category that records row data to plot Fourier-Shell Correlation (FSC) cut-off curve that represents a given criterion.
+		- Add '_pdbx_em_atom_inclusion' category that records fraction of atoms that are inside the surface.
+		- Add '_pdbx_em_atom_inclusion_marker' category that records atom inclusion plot.
+		- Add '_pdbx_em_validate_map_model_overall' category that records overall EM map-model validation of each entry.
+		- Add '_pdbx_em_validate_map_model' category that records EM map-model validation of each residue.
+		- Add '_pdbx_em_validate_map_model_entity' category that records EM map-model validation of each entity.
 
 - **Nov 19, 2019**: Release v1.6.5
 	- Fix typo of '_pdbx_validate_rmsd_torsion.percent_dihedral_angles_fitted_to_kb'.
