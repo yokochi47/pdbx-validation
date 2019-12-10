@@ -14,7 +14,7 @@
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xmlns:PDBx="http://pdbml.pdb.org/schema/pdbx-v50.xsd"
-  xmlns:PDBxv="http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd"
+  xmlns:PDBxv="http://pdbml.pdb.org/schema/pdbx-validation-v2.xsd"
   exclude-result-prefixes="PDBx"&gt;
 </xsl2:text>
     <xsl2:apply-templates/>
@@ -79,7 +79,7 @@ Unmatched entry ID in both documents (&lt;xsl:value-of select="$entry_id"/&gt; a
       &lt;/xsl:call-template&gt;
     &lt;/xsl:if&gt;
 
-    &lt;PDBxv:datablock datablockName="{$datablock_name}" xsi:schemaLocation="http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd pdbx-validation-v1.xsd"&gt;
+    &lt;PDBxv:datablock datablockName="{$datablock_name}" xsi:schemaLocation="http://pdbml.pdb.org/schema/pdbx-validation-v2.xsd pdbx-validation-v2.xsd"&gt;
       &lt;xsl:apply-templates select="PDBx:datablock/*"/&gt;
     &lt;/PDBxv:datablock&gt;
   &lt;/xsl:template&gt;

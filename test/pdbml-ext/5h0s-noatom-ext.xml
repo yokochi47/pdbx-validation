@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PDBxv:datablock xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                 xmlns:PDBxv="http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd"
+                 xmlns:PDBxv="http://pdbml.pdb.org/schema/pdbx-validation-v2.xsd"
                  datablockName="5H0S-noatom-ext"
-                 xsi:schemaLocation="http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd pdbx-validation-v1.xsd">
+                 xsi:schemaLocation="http://pdbml.pdb.org/schema/pdbx-validation-v2.xsd pdbx-validation-v2.xsd">
    <PDBxv:em_3d_reconstructionCategory>
       <PDBxv:em_3d_reconstruction id="1" image_processing_id="1">
          <PDBxv:entry_id>5H0S</PDBxv:entry_id>

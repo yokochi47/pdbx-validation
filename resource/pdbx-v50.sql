@@ -44,8 +44,8 @@
 --
 
 --
--- PDBML Schema v5.319
--- PDBML Schema translated from the PDBx/mmCIF Dictionary v5.319: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
+-- PDBML Schema v5.320
+-- PDBML Schema translated from the PDBx/mmCIF Dictionary v5.320: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
 -- URI-reference = http://pdbml.pdb.org/schema/pdbx-v50.xsd
 --
 
@@ -672,7 +672,7 @@ CREATE TYPE ENUM_chem_comp_pdbx_processing_site AS ENUM ( 'PDBE', 'EBI', 'PDBJ',
 DROP TYPE IF EXISTS ENUM_chem_comp_pdbx_release_status CASCADE;
 CREATE TYPE ENUM_chem_comp_pdbx_release_status AS ENUM ( 'REL', 'HOLD', 'HPUB', 'OBS', 'DEL', 'REF_ONLY' );
 DROP TYPE IF EXISTS ENUM_chem_comp_type CASCADE;
-CREATE TYPE ENUM_chem_comp_type AS ENUM ( 'D-peptide linking', 'L-peptide linking', 'D-peptide NH3 amino terminus', 'L-peptide NH3 amino terminus', 'D-peptide COOH carboxy terminus', 'L-peptide COOH carboxy terminus', 'DNA linking', 'RNA linking', 'L-RNA linking', 'L-DNA linking', 'DNA OH 5 prime terminus', 'RNA OH 5 prime terminus', 'DNA OH 3 prime terminus', 'RNA OH 3 prime terminus', 'D-saccharide 1,4 and 1,4 linking', 'L-saccharide 1,4 and 1,4 linking', 'D-saccharide 1,4 and 1,6 linking', 'L-saccharide 1,4 and 1,6 linking', 'L-saccharide', 'D-saccharide', 'saccharide', 'non-polymer', 'peptide linking', 'peptide-like', 'L-gamma-peptide, C-delta linking', 'D-gamma-peptide, C-delta linking', 'L-beta-peptide, C-gamma linking', 'D-beta-peptide, C-gamma linking', 'other' );
+CREATE TYPE ENUM_chem_comp_type AS ENUM ( 'D-peptide linking', 'L-peptide linking', 'D-peptide NH3 amino terminus', 'L-peptide NH3 amino terminus', 'D-peptide COOH carboxy terminus', 'L-peptide COOH carboxy terminus', 'DNA linking', 'RNA linking', 'L-RNA linking', 'L-DNA linking', 'DNA OH 5 prime terminus', 'RNA OH 5 prime terminus', 'DNA OH 3 prime terminus', 'RNA OH 3 prime terminus', 'D-saccharide 1,4 and 1,4 linking', 'L-saccharide 1,4 and 1,4 linking', 'D-saccharide 1,4 and 1,6 linking', 'L-saccharide 1,4 and 1,6 linking', 'D-saccharide, beta linking', 'D-saccharide, alpha linking', 'L-saccharide, beta linking', 'L-saccharide, alpha linking', 'L-saccharide', 'D-saccharide', 'saccharide', 'non-polymer', 'peptide linking', 'peptide-like', 'L-gamma-peptide, C-delta linking', 'D-gamma-peptide, C-delta linking', 'L-beta-peptide, C-gamma linking', 'D-beta-peptide, C-gamma linking', 'other' );
 CREATE TABLE chem_comp (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
@@ -6938,7 +6938,7 @@ CREATE TABLE pdbx_chem_comp_feature (
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_chem_comp_identifier_type CASCADE;
-CREATE TYPE ENUM_pdbx_chem_comp_identifier_type AS ENUM ( 'COMMON NAME', 'SYSTEMATIC NAME', 'CAS REGISTRY NUMBER', 'PUBCHEM Identifier', 'MDL Identifier', 'SYNONYM', 'CONDENSED IUPAC CARB SYMBOL', 'IUPAC CARB SYMBOL', 'SNFG CARB SYMBOL' );
+CREATE TYPE ENUM_pdbx_chem_comp_identifier_type AS ENUM ( 'COMMON NAME', 'SYSTEMATIC NAME', 'CAS REGISTRY NUMBER', 'PUBCHEM Identifier', 'MDL Identifier', 'SYNONYM', 'CONDENSED IUPAC CARB SYMBOL', 'IUPAC CARB SYMBOL', 'SNFG CARB SYMBOL', 'CONDENSED IUPAC CARBOHYDRATE SYMBOL', 'IUPAC CARBOHYDRATE SYMBOL', 'SNFG CARBOHYDRATE SYMBOL' );
 CREATE TABLE pdbx_chem_comp_identifier (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,

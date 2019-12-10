@@ -3,7 +3,7 @@
   version="2.0"
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xmlns:PDBxv="http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd">
+  xmlns:PDBxv="http://pdbml.pdb.org/schema/pdbx-validation-v2.xsd">
 
   <xsl:param name="pdbml_ext_file" required="yes"/>
   <xsl:param name="pdbml_ext" select="document($pdbml_ext_file)"/>
@@ -166,7 +166,7 @@ Unmatched entry ID in both documents (<xsl:value-of select="$entry_id"/> and <xs
       </xsl:call-template>
     </xsl:if>
 
-    <PDBxv:datablock datablockName="{$datablock_name}" xsi:schemaLocation="http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd pdbx-validation-v1.xsd">
+    <PDBxv:datablock datablockName="{$datablock_name}" xsi:schemaLocation="http://pdbml.pdb.org/schema/pdbx-validation-v2.xsd pdbx-validation-v2.xsd">
       <PDBxv:entryCategory>
         <PDBxv:entry id="{$entry_id}"/>
       </PDBxv:entryCategory>
@@ -303,6 +303,22 @@ Unmatched entry ID in both documents (<xsl:value-of select="$entry_id"/> and <xs
     </xsl:if>
 
     <xsl:call-template name="pdbx_dcc_map_overall"/>
+
+    <!-- EM validation: Entry, ModelledEntityInstance -->
+
+    <xsl:if test="$em=true()">
+
+      <xsl:if test="../ModelledEntityInstance/@average_residue_inclusion">
+        <PDBxv:pdbx_em_validate_map_model_entityCategory>
+          <xsl:for-each select="../ModelledEntityInstance">
+            <xsl:call-template name="pdbx_em_validate_map_model_entity"/>
+          </xsl:for-each>
+        </PDBxv:pdbx_em_validate_map_model_entityCategory>
+      </xsl:if>
+
+      <xsl:call-template name="pdbx_em_validate_map_model_overall"/>
+
+    </xsl:if>
 
     <xsl:if test="../ModelledSubgroup/@rsr or ../ModelledSubgroup/@rsrz or ../ModelledSubgroup/@rscc">
       <PDBxv:pdbx_dcc_mapCategory>
@@ -458,6 +474,20 @@ Unmatched entry ID in both documents (<xsl:value-of select="$entry_id"/> and <xs
 
     </xsl:if>
 
+    <!-- EM validation: ModelledSubgroup -->
+
+    <xsl:if test="$em=true()">
+
+      <xsl:if test="../ModelledSubgroup/@residue_inclusion">
+        <PDBxv:pdbx_em_validate_map_modelCategory>
+          <xsl:for-each select="../ModelledSubgroup">
+            <xsl:call-template name="pdbx_em_validate_map_model"/>
+          </xsl:for-each>
+        </PDBxv:pdbx_em_validate_map_modelCategory>
+      </xsl:if>
+
+    </xsl:if>
+
   </xsl:template>
 <!--
   <xsl:template match="Model">
@@ -469,6 +499,287 @@ Unmatched entry ID in both documents (<xsl:value-of select="$entry_id"/> and <xs
   <xsl:template match="ModelledSubgroup">
   </xsl:template>
 -->
+  <!-- EM validation: EM_validation -->
+
+  <xsl:template match="EM_validation">
+    <xsl:apply-templates select="node()"/>
+  </xsl:template>
+
+  <xsl:template match="map_value_distribution">
+    <PDBxv:pdbx_em_density_distributionCategory>
+      <PDBxv:pdbx_em_density_distribution id="1">
+        <PDBxv:map_value_title><xsl:value-of select="@xTitle"/></PDBxv:map_value_title>
+        <PDBxv:voxel_count_title><xsl:value-of select="@yTitle"/></PDBxv:voxel_count_title>
+        <xsl:if test="@yScale">
+          <PDBxv:voxel_count_scale><xsl:value-of select="@yScale"/></PDBxv:voxel_count_scale>
+        </xsl:if>
+      </PDBxv:pdbx_em_density_distribution>
+    </PDBxv:pdbx_em_density_distributionCategory>
+    <PDBxv:pdbx_em_density_distribution_markerCategory>
+      <xsl:for-each select="coordinate">
+        <xsl:sort select="number(@x)" data-type="number"/>
+        <PDBxv:pdbx_em_density_distribution_marker plot_id="1" ordinal="{position()}">
+          <PDBxv:map_value><xsl:value-of select="number(@x)"/></PDBxv:map_value>
+          <PDBxv:voxel_count><xsl:value-of select="number(@y)"/></PDBxv:voxel_count>
+        </PDBxv:pdbx_em_density_distribution_marker>
+      </xsl:for-each>
+    </PDBxv:pdbx_em_density_distribution_markerCategory>
+  </xsl:template>
+
+  <xsl:template match="volume_estimate">
+    <PDBxv:pdbx_em_volume_estimateCategory>
+      <PDBxv:pdbx_em_volume_estimate id="1">
+        <PDBxv:contour_level_title><xsl:value-of select="@xTitle"/></PDBxv:contour_level_title>
+        <PDBxv:enclosed_volume_title><xsl:value-of select="@yTitle"/></PDBxv:enclosed_volume_title>
+        <xsl:if test="@yUnit">
+          <PDBxv:enclosed_volume_unit><xsl:value-of select="@yUnit"/></PDBxv:enclosed_volume_unit>
+        </xsl:if>
+      </PDBxv:pdbx_em_volume_estimate>
+    </PDBxv:pdbx_em_volume_estimateCategory>
+    <PDBxv:pdbx_em_volume_estimate_markerCategory>
+      <xsl:for-each select="coordinate">
+        <xsl:sort select="number(@x)" data-type="number"/>
+        <PDBxv:pdbx_em_volume_estimate_marker plot_id="1" ordinal="{position()}">
+          <PDBxv:contour_level><xsl:value-of select="number(@x)"/></PDBxv:contour_level>
+          <PDBxv:enclosed_volume><xsl:value-of select="number(@y)"/></PDBxv:enclosed_volume>
+        </PDBxv:pdbx_em_volume_estimate_marker>
+      </xsl:for-each>
+    </PDBxv:pdbx_em_volume_estimate_markerCategory>
+  </xsl:template>
+
+  <xsl:template match="rotationally_averaged_power_spectrum">
+    <PDBxv:pdbx_em_rapsCategory>
+      <PDBxv:pdbx_em_raps id="1">
+        <PDBxv:spatial_frequency_title><xsl:value-of select="@xTitle"/></PDBxv:spatial_frequency_title>
+        <PDBxv:power_title><xsl:value-of select="@yTitle"/></PDBxv:power_title>
+        <xsl:if test="@xUnit">
+          <PDBxv:spatial_frequency_unit><xsl:value-of select="@xUnit"/></PDBxv:spatial_frequency_unit>
+        </xsl:if>
+        <xsl:if test="@yScale">
+          <PDBxv:power_scale><xsl:value-of select="@yScale"/></PDBxv:power_scale>
+        </xsl:if>
+      </PDBxv:pdbx_em_raps>
+    </PDBxv:pdbx_em_rapsCategory>
+    <PDBxv:pdbx_em_raps_markerCategory>
+      <xsl:for-each select="coordinate">
+        <xsl:sort select="number(@x)" data-type="number"/>
+        <PDBxv:pdbx_em_raps_marker plot_id="1" ordinal="{position()}">
+          <PDBxv:spatial_frequency><xsl:value-of select="number(@x)"/></PDBxv:spatial_frequency>
+          <PDBxv:power><xsl:value-of select="number(@y)"/></PDBxv:power>
+        </PDBxv:pdbx_em_raps_marker>
+      </xsl:for-each>
+    </PDBxv:pdbx_em_raps_markerCategory>
+  </xsl:template>
+
+  <xsl:template match="fsc">
+    <xsl:apply-templates/>
+  </xsl:template>
+
+  <xsl:template match="resolution_intersections">
+    <xsl:variable name="spatial_frequency_unit"><xsl:value-of select="@spatial_frequency_unit"/></xsl:variable>
+    <xsl:variable name="resolution_unit"><xsl:value-of select="@resolution_unit"/></xsl:variable>
+    <PDBxv:pdbx_em_fsc_resolutionCategory>
+      <xsl:for-each select="intersection">
+        <PDBxv:pdbx_em_fsc_resolution>
+          <xsl:variable name="fsc_curve"><xsl:value-of select="@curve"/></xsl:variable>
+          <xsl:variable name="fsc_cutoff_curve">
+            <xsl:choose>
+              <xsl:when test="@type='threesig'"><xsl:value-of select="concat(@curve,'_threesigma')"/></xsl:when>
+              <xsl:otherwise>
+                <xsl:value-of select="concat(@curve,'_',@type)"/>
+              </xsl:otherwise>
+            </xsl:choose>
+          </xsl:variable>
+          <xsl:attribute name="source"><xsl:value-of select="$fsc_curve"/></xsl:attribute>
+          <xsl:choose>
+            <xsl:when test="@type='0.143' or @type='0.333' or @type='0.5'"><xsl:attribute name="criterion"><xsl:value-of select="@type"/></xsl:attribute></xsl:when>
+            <xsl:when test="@type='halfbit'"><xsl:attribute name="criterion">half-bit</xsl:attribute></xsl:when>
+            <xsl:when test="@type='onebit'"><xsl:attribute name="criterion">one-bit</xsl:attribute></xsl:when>
+            <xsl:when test="starts-with(@type,'threesig')"><xsl:attribute name="criterion">3sigma</xsl:attribute></xsl:when>
+            <xsl:otherwise>
+              <xsl:call-template name="error_handler">
+                <xsl:with-param name="terminate">yes</xsl:with-param>
+                <xsl:with-param name="error_message">
+Criteria for FSC resolution estimation, <xsl:value-of select="@type"/>, is not listed in XSLT code.
+                </xsl:with-param>
+              </xsl:call-template>
+            </xsl:otherwise>
+          </xsl:choose>
+          <PDBxv:correlation_coef><xsl:value-of select="@correlation"/></PDBxv:correlation_coef>
+          <PDBxv:spatial_frequency><xsl:value-of select="@spatial_frequency"/></PDBxv:spatial_frequency>
+          <PDBxv:resolution><xsl:value-of select="@resolution"/></PDBxv:resolution>
+          <PDBxv:spatial_frequency_unit><xsl:value-of select="$spatial_frequency_unit"/></PDBxv:spatial_frequency_unit>
+          <PDBxv:resolution_unit><xsl:value-of select="$resolution_unit"/></PDBxv:resolution_unit>
+          <PDBxv:fsc_curve_id>
+            <xsl:for-each select="../../fsc_curves/fsc_curve">
+              <xsl:if test="@Title=$fsc_curve">
+                <xsl:value-of select="position()"/>
+              </xsl:if>
+            </xsl:for-each>
+          </PDBxv:fsc_curve_id>
+          <PDBxv:fsc_cutoff_curve_id>
+            <xsl:for-each select="../../fsc_indicator_curves/fsc_indicator_curve">
+              <xsl:if test="@Title=$fsc_cutoff_curve">
+                <xsl:value-of select="position()"/>
+              </xsl:if>
+            </xsl:for-each>
+          </PDBxv:fsc_cutoff_curve_id>
+        </PDBxv:pdbx_em_fsc_resolution>
+      </xsl:for-each>
+    </PDBxv:pdbx_em_fsc_resolutionCategory>
+  </xsl:template>
+
+  <xsl:template match="fsc_curves">
+    <PDBxv:pdbx_em_fsc_curveCategory>
+      <xsl:for-each select="fsc_curve">
+        <PDBxv:pdbx_em_fsc_curve>
+          <xsl:attribute name="id"><xsl:value-of select="position()"/></xsl:attribute>
+          <PDBxv:title><xsl:value-of select="@Title"/></PDBxv:title>
+          <PDBxv:spatial_frequency_title><xsl:value-of select="@xTitle"/></PDBxv:spatial_frequency_title>
+          <PDBxv:correlation_coef_title><xsl:value-of select="@yTitle"/></PDBxv:correlation_coef_title>
+          <PDBxv:spatial_frequency_unit><xsl:value-of select="@xUnit"/></PDBxv:spatial_frequency_unit>
+        </PDBxv:pdbx_em_fsc_curve>
+      </xsl:for-each>
+    </PDBxv:pdbx_em_fsc_curveCategory>
+    <PDBxv:pdbx_em_fsc_curve_markerCategory>
+      <xsl:for-each select="fsc_curve">
+        <xsl:variable name="plot_id"><xsl:value-of select="position()"/></xsl:variable>
+        <xsl:for-each select="coordinate">
+          <xsl:sort select="number(@x)" data-type="number"/>
+          <PDBxv:pdbx_em_fsc_curve_marker plot_id="{$plot_id}" ordinal="{position()}">
+            <PDBxv:spatial_frequency><xsl:value-of select="number(@x)"/></PDBxv:spatial_frequency>
+            <PDBxv:correlation_coef><xsl:value-of select="number(@y)"/></PDBxv:correlation_coef>
+          </PDBxv:pdbx_em_fsc_curve_marker>
+        </xsl:for-each>
+      </xsl:for-each>
+    </PDBxv:pdbx_em_fsc_curve_markerCategory>
+  </xsl:template>
+
+  <xsl:template match="fsc_indicator_curves">
+    <PDBxv:pdbx_em_fsc_cutoff_curveCategory>
+      <xsl:for-each select="fsc_indicator_curve">
+        <PDBxv:pdbx_em_fsc_cutoff_curve>
+          <xsl:attribute name="id"><xsl:value-of select="position()"/></xsl:attribute>
+          <xsl:variable name="source">
+            <xsl:choose>
+              <xsl:when test="starts-with(@Title,'calculated_fsc')">calculated_fsc</xsl:when>
+              <xsl:when test="starts-with(@Title,'author_provided_fsc')">author_provided_fsc</xsl:when>
+              <xsl:otherwise>
+                <xsl:call-template name="error_handler">
+                  <xsl:with-param name="terminate">yes</xsl:with-param>
+                  <xsl:with-param name="error_message">
+Source for FSC curve, <xsl:value-of select="@Title"/>, is not listed in XSLT code.
+                  </xsl:with-param>
+                </xsl:call-template>
+              </xsl:otherwise>
+            </xsl:choose>
+          </xsl:variable>
+          <xsl:variable name="criterion">
+            <xsl:choose>
+              <xsl:when test="ends-with(@Title,'0.143')">0.143</xsl:when>
+              <xsl:when test="ends-with(@Title,'0.333')">0.333</xsl:when>
+              <xsl:when test="ends-with(@Title,'0.5')">0.5</xsl:when>
+              <xsl:when test="ends-with(@Title,'halfbit')">half-bit</xsl:when>
+              <xsl:when test="ends-with(@Title,'onebit')">one-bit</xsl:when>
+              <xsl:when test="ends-with(@Title,'threesigma')">3sigma</xsl:when>
+              <xsl:otherwise>
+                <xsl:call-template name="error_handler">
+                  <xsl:with-param name="terminate">yes</xsl:with-param>
+                  <xsl:with-param name="error_message">
+Criteria for FSC curve, <xsl:value-of select="@Title"/>, is not listed in XSLT code.
+                  </xsl:with-param>
+                </xsl:call-template>
+              </xsl:otherwise>
+            </xsl:choose>
+          </xsl:variable>
+          <PDBxv:title><xsl:value-of select="concat($source,'_',$criterion)"/></PDBxv:title>
+          <PDBxv:spatial_frequency_title><xsl:value-of select="@xTitle"/></PDBxv:spatial_frequency_title>
+          <PDBxv:correlation_coef_title><xsl:value-of select="@yTitle"/></PDBxv:correlation_coef_title>
+          <PDBxv:spatial_frequency_unit><xsl:value-of select="@xUnit"/></PDBxv:spatial_frequency_unit>
+        </PDBxv:pdbx_em_fsc_cutoff_curve>
+      </xsl:for-each>
+    </PDBxv:pdbx_em_fsc_cutoff_curveCategory>
+    <PDBxv:pdbx_em_fsc_cutoff_curve_markerCategory>
+      <xsl:for-each select="fsc_indicator_curve">
+        <xsl:variable name="plot_id"><xsl:value-of select="position()"/></xsl:variable>
+        <xsl:variable name="criterion">
+          <xsl:choose>
+            <xsl:when test="ends-with(@Title,'0.143')">0.143</xsl:when>
+            <xsl:when test="ends-with(@Title,'0.333')">0.333</xsl:when>
+            <xsl:when test="ends-with(@Title,'0.5')">0.5</xsl:when>
+            <xsl:when test="ends-with(@Title,'halfbit')">half-bit</xsl:when>
+            <xsl:when test="ends-with(@Title,'onebit')">one-bit</xsl:when>
+            <xsl:when test="ends-with(@Title,'threesigma')">3sigma</xsl:when>
+            <xsl:otherwise>
+              <xsl:call-template name="error_handler">
+                <xsl:with-param name="terminate">yes</xsl:with-param>
+                <xsl:with-param name="error_message">
+Criteria for FSC offset curve, <xsl:value-of select="@Title"/>, is not listed in XSLT code.
+                </xsl:with-param>
+              </xsl:call-template>
+            </xsl:otherwise>
+          </xsl:choose>
+        </xsl:variable>
+        <xsl:choose>
+          <xsl:when test="$criterion='half-bit' or $criterion='one-bit' or $criterion='3sigma'">
+            <xsl:for-each select="coordinate">
+              <xsl:sort select="number(@x)" data-type="number"/>
+              <PDBxv:pdbx_em_fsc_cutoff_curve_marker plot_id="{$plot_id}" ordinal="{position()}">
+                <PDBxv:spatial_frequency><xsl:value-of select="number(@x)"/></PDBxv:spatial_frequency>
+                <PDBxv:correlation_coef><xsl:value-of select="number(@y)"/></PDBxv:correlation_coef>
+              </PDBxv:pdbx_em_fsc_cutoff_curve_marker>
+            </xsl:for-each>
+          </xsl:when>
+          <xsl:otherwise>
+            <PDBxv:pdbx_em_fsc_cutoff_curve_marker plot_id="{$plot_id}" ordinal="1">
+              <PDBxv:correlation_coef><xsl:value-of select="$criterion"/></PDBxv:correlation_coef>
+            </PDBxv:pdbx_em_fsc_cutoff_curve_marker>
+          </xsl:otherwise>
+        </xsl:choose>
+      </xsl:for-each>
+    </PDBxv:pdbx_em_fsc_cutoff_curve_markerCategory>
+  </xsl:template>
+
+  <xsl:template match="atom_inclusion">
+    <PDBxv:pdbx_em_atom_inclusionCategory>
+      <xsl:for-each select="*">
+        <PDBxv:pdbx_em_atom_inclusion>
+          <xsl:attribute name="id"><xsl:value-of select="position()"/></xsl:attribute>
+          <xsl:choose>
+            <xsl:when test="name()='all_atoms'">
+              <PDBxv:atom_type>all non-hydrogen atoms</PDBxv:atom_type>
+            </xsl:when>
+            <xsl:when test="name()='backbone'">
+              <PDBxv:atom_type>backbone atoms</PDBxv:atom_type>
+            </xsl:when>
+            <xsl:otherwise>
+              <xsl:call-template name="error_handler">
+                <xsl:with-param name="terminate">yes</xsl:with-param>
+                <xsl:with-param name="error_message">
+Atom type of atom inclusion plot, <xsl:value-of select="name()"/>, is not listed in XSLT code.
+                </xsl:with-param>
+              </xsl:call-template>
+            </xsl:otherwise>
+          </xsl:choose>
+          <PDBxv:contour_level_title><xsl:value-of select="@xTitle"/></PDBxv:contour_level_title>
+          <PDBxv:atom_inclusion_title><xsl:value-of select="@yTitle"/></PDBxv:atom_inclusion_title>
+        </PDBxv:pdbx_em_atom_inclusion>
+      </xsl:for-each>
+    </PDBxv:pdbx_em_atom_inclusionCategory>
+    <PDBxv:pdbx_em_atom_inclusion_markerCategory>
+      <xsl:for-each select="*">
+        <xsl:variable name="plot_id"><xsl:value-of select="position()"/></xsl:variable>
+        <xsl:for-each select="coordinate">
+          <xsl:sort select="number(@x)" data-type="number"/>
+          <PDBxv:pdbx_em_atom_inclusion_marker plot_id="{$plot_id}" ordinal="{position()}">
+            <PDBxv:contour_level><xsl:value-of select="number(@x)"/></PDBxv:contour_level>
+            <PDBxv:atom_inclusion><xsl:value-of select="number(@y)"/></PDBxv:atom_inclusion>
+          </PDBxv:pdbx_em_atom_inclusion_marker>
+        </xsl:for-each>
+      </xsl:for-each>
+    </PDBxv:pdbx_em_atom_inclusion_markerCategory>
+  </xsl:template>
+
   <xsl:template match="programs">
     <PDBxv:pdbx_validation_softwareCategory>
       <xsl:for-each select="program">
@@ -490,6 +801,7 @@ Unmatched entry ID in both documents (<xsl:value-of select="$entry_id"/> and <xs
             <xsl:when test="@name='validation-pipeline'">mmcif data extractor</xsl:when>
             <xsl:when test="@name='xtriage'">x-ray data assessment</xsl:when>
             <xsl:when test="@name='buster-report'">geometric validation package for ligand chemistry in protein x-ray structures</xsl:when>
+            <xsl:when test="@name='visualanalysis'">em map-model validation package</xsl:when>
             <xsl:otherwise>
               <xsl:call-template name="error_handler">
                 <xsl:with-param name="terminate">yes</xsl:with-param>
@@ -2362,6 +2674,57 @@ Unmatched components exist in residue_string, <xsl:value-of select="position()"/
       </xsl:for-each>
     </PDBxv:pdbx_struct_nmr_ens_dom_lim>
     </xsl:for-each>
+  </xsl:template>
+
+  <!-- EM validation: Entry, ModelledEntityInstance -->
+
+  <xsl:template name="pdbx_em_validate_map_model_entity">
+    <xsl:if test="@average_residue_inclusion">
+      <PDBxv:pdbx_em_validate_map_model_entity>
+        <xsl:attribute name="label_asym_id"><xsl:value-of select="@said"/></xsl:attribute>
+        <xsl:attribute name="PDB_model_num"><xsl:value-of select="@model"/></xsl:attribute>
+        <xsl:element name="PDBxv:entity_id"><xsl:value-of select="@ent"/></xsl:element>
+        <xsl:element name="PDBxv:auth_asym_id"><xsl:value-of select="@chain"/></xsl:element>
+        <xsl:element name="PDBxv:average_atom_inclusion_all"><xsl:value-of select="@average_residue_inclusion"/></xsl:element>
+      </PDBxv:pdbx_em_validate_map_model_entity>
+    </xsl:if>
+  </xsl:template>
+
+  <xsl:template name="pdbx_em_validate_map_model_overall">
+    <xsl:if test="@contour_level_primary_map">
+      <PDBxv:pdbx_em_validate_map_model_overallCategory>
+        <PDBxv:pdbx_em_validate_map_model_overall entry_id="{$entry_id}">
+          <xsl:element name="PDBxv:recommended_contour_level"><xsl:value-of select="@contour_level_primary_map"/></xsl:element>
+          <xsl:if test="@atom_inclusion_all">
+            <xsl:element name="PDBxv:atom_inclusion_all"><xsl:value-of select="@atom_inclusion_all"/></xsl:element>
+          </xsl:if>
+          <xsl:if test="@atom_inclusion_backbone">
+            <xsl:element name="PDBxv:atom_inclusion_main"><xsl:value-of select="@atom_inclusion_backbone"/></xsl:element>
+          </xsl:if>
+        </PDBxv:pdbx_em_validate_map_model_overall>
+      </PDBxv:pdbx_em_validate_map_model_overallCategory>
+    </xsl:if>
+  </xsl:template>
+
+  <!-- EM validation: ModelledSubgroup -->
+
+  <xsl:template name="pdbx_em_validate_map_model">
+    <xsl:if test="@residue_inclusion">
+      <PDBxv:pdbx_em_validate_map_model>
+        <xsl:attribute name="id"><xsl:value-of select="position()"/></xsl:attribute>
+        <xsl:element name="PDBxv:PDB_model_num"><xsl:value-of select="@model"/></xsl:element>
+        <xsl:element name="PDBxv:auth_asym_id"><xsl:value-of select="@chain"/></xsl:element>
+        <xsl:element name="PDBxv:auth_comp_id"><xsl:value-of select="@resname"/></xsl:element>
+        <xsl:element name="PDBxv:auth_seq_id"><xsl:value-of select="@resnum"/></xsl:element>
+        <xsl:if test="@altcode and @altcode!=' '">
+          <xsl:element name="PDBxv:label_alt_id"><xsl:value-of select="@altcode"/></xsl:element>
+        </xsl:if>
+        <xsl:if test="@icode and @icode!=' '">
+          <xsl:element name="PDBxv:PDB_ins_code"><xsl:value-of select="@icode"/></xsl:element>
+        </xsl:if>
+        <xsl:element name="PDBxv:atom_inclusion_all"><xsl:value-of select="@residue_inclusion"/></xsl:element>
+      </PDBxv:pdbx_em_validate_map_model>
+    </xsl:if>
   </xsl:template>
 
   <xsl:template match="*[@xsi:nil='true']"/>

@@ -31,8 +31,8 @@ PDBML_SQL=resource/pdbx-v50.sql
 WWPDB_VALIDATION_XSD=resource/wwpdb_validation_v004.xsd
 WWPDB_VALIDATION_SQL=resource/wwpdb_validation_v004.sql
 
-PDBX_VALIDATION_XSD=schema/pdbx-validation-v1.xsd
-PDBX_VALIDATION_SQL=schema/pdbx-validation-v1.sql
+PDBX_VALIDATION_XSD=schema/pdbx-validation-v2.xsd
+PDBX_VALIDATION_SQL=schema/pdbx-validation-v2.sql
 
 XSD2EXT_PDBML_XSL=stylesheet/xsd2extract_pdbml.xsl
 

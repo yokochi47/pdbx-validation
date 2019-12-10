@@ -3,7 +3,7 @@
   version="1.0"
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xmlns:PDBxv="http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd">
+  xmlns:PDBxv="http://pdbml.pdb.org/schema/pdbx-validation-v2.xsd">
 
   <xsl:param name="info_alt_file" required="yes"/>
   <xsl:param name="info_alt" select="document($info_alt_file)"/>
@@ -29,7 +29,7 @@ Unmatched entry ID in both documents (<xsl:value-of select="$entry_id"/> and <xs
       </xsl:call-template>
     </xsl:if>
 
-    <PDBxv:datablock datablockName="{$datablock_name}" xsi:schemaLocation="http://pdbml.pdb.org/schema/pdbx-validation-v1.xsd pdbx-validation-v1.xsd">
+    <PDBxv:datablock datablockName="{$datablock_name}" xsi:schemaLocation="http://pdbml.pdb.org/schema/pdbx-validation-v2.xsd pdbx-validation-v2.xsd">
       <xsl:apply-templates select="PDBxv:datablock/*[not(local-name()='pdbx_validate_rmsd_angleCategory' or local-name()='pdbx_validate_rmsd_bondCategory' or local-name()='pdbx_validate_close_contactCategory' or local-name()='pdbx_validate_symm_contactCategory')]"/>
       <xsl:apply-templates select="$alt_datablock/*[not(local-name()='entryCategory' or local-name()='pdbx_validate_rmsd_angleCategory' or local-name()='pdbx_validate_rmsd_bondCategory' or local-name()='pdbx_validate_close_contactCategory' or local-name()='pdbx_validate_symm_contactCategory')]"/>
 
@@ -543,6 +543,102 @@ Unmatched entry ID in both documents (<xsl:value-of select="$entry_id"/> and <xs
   </xsl:template>
 
   <xsl:template match="PDBxv:pdbx_domain_rangeCategory">
+    <xsl:element name="{name()}">
+      <xsl:apply-templates mode="category-element"/>
+    </xsl:element>
+  </xsl:template>
+
+  <xsl:template match="PDBxv:pdbx_em_atom_inclusionCategory">
+    <xsl:element name="{name()}">
+      <xsl:apply-templates mode="category-element"/>
+    </xsl:element>
+  </xsl:template>
+
+  <xsl:template match="PDBxv:pdbx_em_atom_inclusion_markerCategory">
+    <xsl:element name="{name()}">
+      <xsl:apply-templates mode="category-element"/>
+    </xsl:element>
+  </xsl:template>
+
+  <xsl:template match="PDBxv:pdbx_em_density_distributionCategory">
+    <xsl:element name="{name()}">
+      <xsl:apply-templates mode="category-element"/>
+    </xsl:element>
+  </xsl:template>
+
+  <xsl:template match="PDBxv:pdbx_em_density_distribution_markerCategory">
+    <xsl:element name="{name()}">
+      <xsl:apply-templates mode="category-element"/>
+    </xsl:element>
+  </xsl:template>
+
+  <xsl:template match="PDBxv:pdbx_em_fsc_curveCategory">
+    <xsl:element name="{name()}">
+      <xsl:apply-templates mode="category-element"/>
+    </xsl:element>
+  </xsl:template>
+
+  <xsl:template match="PDBxv:pdbx_em_fsc_curve_markerCategory">
+    <xsl:element name="{name()}">
+      <xsl:apply-templates mode="category-element"/>
+    </xsl:element>
+  </xsl:template>
+
+  <xsl:template match="PDBxv:pdbx_em_fsc_cutoff_curveCategory">
+    <xsl:element name="{name()}">
+      <xsl:apply-templates mode="category-element"/>
+    </xsl:element>
+  </xsl:template>
+
+  <xsl:template match="PDBxv:pdbx_em_fsc_cutoff_curve_markerCategory">
+    <xsl:element name="{name()}">
+      <xsl:apply-templates mode="category-element"/>
+    </xsl:element>
+  </xsl:template>
+
+  <xsl:template match="PDBxv:pdbx_em_fsc_resolutionCategory">
+    <xsl:element name="{name()}">
+      <xsl:apply-templates mode="category-element"/>
+    </xsl:element>
+  </xsl:template>
+
+  <xsl:template match="PDBxv:pdbx_em_rapsCategory">
+    <xsl:element name="{name()}">
+      <xsl:apply-templates mode="category-element"/>
+    </xsl:element>
+  </xsl:template>
+
+  <xsl:template match="PDBxv:pdbx_em_raps_markerCategory">
+    <xsl:element name="{name()}">
+      <xsl:apply-templates mode="category-element"/>
+    </xsl:element>
+  </xsl:template>
+
+  <xsl:template match="PDBxv:pdbx_em_validate_map_modelCategory">
+    <xsl:element name="{name()}">
+      <xsl:apply-templates mode="category-element"/>
+    </xsl:element>
+  </xsl:template>
+
+  <xsl:template match="PDBxv:pdbx_em_validate_map_model_entityCategory">
+    <xsl:element name="{name()}">
+      <xsl:apply-templates mode="category-element"/>
+    </xsl:element>
+  </xsl:template>
+
+  <xsl:template match="PDBxv:pdbx_em_validate_map_model_overallCategory">
+    <xsl:element name="{name()}">
+      <xsl:apply-templates mode="category-element"/>
+    </xsl:element>
+  </xsl:template>
+
+  <xsl:template match="PDBxv:pdbx_em_volume_estimateCategory">
+    <xsl:element name="{name()}">
+      <xsl:apply-templates mode="category-element"/>
+    </xsl:element>
+  </xsl:template>
+
+  <xsl:template match="PDBxv:pdbx_em_volume_estimate_markerCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
