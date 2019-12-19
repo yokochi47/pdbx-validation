@@ -53437,7 +53437,7 @@ save__em_software.image_processing_id
     _item_linked.parent_name    '_em_image_processing.id'
 save_
 
- save__em_software.fitting_id
+save__em_software.fitting_id
     _item_description.description
 ;              Pointer to _em_3d_fitting.id in the EM_3D_FITTING category.
 ;
@@ -53449,7 +53449,7 @@ save_
     _item_linked.parent_name    '_em_3d_fitting.id'
 save_
 
- save__em_software.imaging_id
+save__em_software.imaging_id
     _item_description.description
 ;              Pointer to _em_imaging.id in the EM_IMAGING category.
 ;
