@@ -42,7 +42,7 @@
 --   Wild cards:
 --    0 any elements, 0 any attributes
 --   Constraints:
---    0 unique constraints from xsd:unique, 0 unique constraints from xsd:key, 0 foreign key constraints from xsd:keyref
+--    0 unique constraints from xsd:key, 0 unique constraints from xsd:unique, 0 foreign key constraints from xsd:keyref
 --
 
 --
