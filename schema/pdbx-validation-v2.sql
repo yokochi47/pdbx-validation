@@ -44,8 +44,8 @@
 --
 
 --
--- PDBML-validation Schema v2.320
--- PDBXML-validation Schema translated from wwPDB Validation Information Dictionary v2.320, which is backward compatible with the PDBx/mmCIF Dictionary v5.320: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
+-- PDBML-validation Schema v2.321
+-- PDBXML-validation Schema translated from wwPDB Validation Information Dictionary v2.321, which is backward compatible with the PDBx/mmCIF Dictionary v5.321: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
 -- URI-reference = http://pdbml.pdb.org/schema/pdbx-validation-v2.xsd
 --
 

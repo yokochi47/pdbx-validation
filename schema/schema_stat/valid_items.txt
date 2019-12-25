@@ -401,8 +401,10 @@ em_single_particle_entity.image_processing_id
 em_single_particle_entity.point_symmetry
 em_software.category
 em_software.details
+em_software.fitting_id
 em_software.id
 em_software.image_processing_id
+em_software.imaging_id
 em_software.name
 em_software.version
 em_specimen.concentration
