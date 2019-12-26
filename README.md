@@ -1,6 +1,6 @@
 ﻿# pdbx-validation
 
-The pdbx-validation is a generation tool of alternative [wwPDB validation reports](https://www.wwpdb.org/validation/validation-reports), which includes [PDBx/mmCIF](http://mmcif.wwpdb.org/) compatible versions of validation reports (**mmCIF-validation** and **PDBML-validation**), RDF version of validation reports (**wwPDB/RDF-validation**), and a series of ontologies; **wwPDB Validation Information Dictionary**, **PDBML-validation Schema**, and **wwPDB/OWL-validation**.
+The pdbx-validation is a generation tool of alternative [wwPDB validation reports](https://www.wwpdb.org/validation/validation-reports) where validation metrics are reorganized using the familiar mmCIF nameing scheme and categories. It includes [PDBx/mmCIF](http://mmcif.wwpdb.org/) compatible versions of validation reports (**mmCIF-validation** and **PDBML-validation**), RDF version of validation reports (**wwPDB/RDF-validation**), and a series of ontologies; **wwPDB Validation Information Dictionary**, **PDBML-validation Schema**, and **wwPDB/OWL-validation**.
 
 ## Usage
 
@@ -94,37 +94,41 @@ File path | Document
 - Bulk download via HTTP protocol
 
 	- [mmCIF-validation (full specification)](https://bmrbpub.pdbj.org/archive/mmcif-valid/)
-	- [mmCIF-validation-alt (lightweight alternative)](https://bmrbpub.pdbj.org/archive/mmcif-valid-alt/)
+	- [mmCIF-validation-alt (lightweight version)](https://bmrbpub.pdbj.org/archive/mmcif-valid-alt/)
 
 	- [PDBML-validation (full specification)](https://bmrbpub.pdbj.org/archive/pdbml-valid/)
-	- [PDBML-validation-alt (lightweight alternative)](https://bmrbpub.pdbj.org/archive/pdbml-valid-alt/)
+	- [PDBML-validation-alt (lightweight version)](https://bmrbpub.pdbj.org/archive/pdbml-valid-alt/)
+	- [PDBML-validation-alt (lightweight version @ PDBj FTP server)](http://ftp.pdbj.org/XML/vrpt-alt/)
 
 	- [wwPDB/RDF-validation (full specification)](https://bmrbpub.pdbj.org/archive/wwpdb-rdf-valid/)
-	- [wwPDB/RDF-validation-alt (lightweight alternative)](https://bmrbpub.pdbj.org/archive/wwpdb-rdf-valid-alt/)
+	- [wwPDB/RDF-validation-alt (lightweight version)](https://bmrbpub.pdbj.org/archive/wwpdb-rdf-valid-alt/)
+	- [wwPDB/RDF-validation-alt (lightweight version @ PDBj FTP server)](http://ftp.pdbj.org/RDF/vrpt-alt/)
 
 - Bulk download via rsync protocol
 
 	- mmCIF-validation (full specification):<br />
 	 `% rsync -av --delete rsync://bmrbpub.pdbj.org/mmcif-valid .`
 
-	- mmCIF-validation-alt (lightweight alternative):<br />
+	- mmCIF-validation-alt (lightweight version):<br />
 	 `% rsync -av --delete rsync://bmrbpub.pdbj.org/mmcif-valid-alt .`
 
 	- PDBML-validation (full specification):<br />
 	 `% rsync -av --delete rsync://bmrbpub.pdbj.org/pdbml-valid .`
 
-	- PDBML-validation-alt (lightweight alternative):<br />
+	- PDBML-validation-alt (lightweight version):<br />
 	 `% rsync -av --delete rsync://bmrbpub.pdbj.org/pdbml-valid-alt .`
 
 	- wwPDB/RDF-validation (full specification):<br />
 	 `% rsync -av --delete rsync://bmrbpub.pdbj.org/wwpdb-rdf-valid .`
 
-	- wwPDB/RDF-validation-alt (lightweight alternative):<br />
+	- wwPDB/RDF-validation-alt (lightweight version):<br />
 	 `% rsync -av --delete rsync://bmrbpub.pdbj.org/wwpdb-rdf-valid-alt .`
 
 - [PDBML-validation-alt PostgreSQL dump file](https://bmrbpub.pdbj.org/resources.html)
 
 - [SPARQL endpoint for wwPDB/RDF-validation-alt](https://bmrbpub.pdbj.org/examples.html)
+
+- [PDBj Mine2 SQL search](https://pdbj.org/help/mine-sql)
 
 ## Software requirements
 
@@ -142,6 +146,7 @@ File path | Document
 
 - **Dec 25, 2019**: Release v2.0.1
 	- Update wwPDB Validation Information Dictionary to 2.321.
+	- Add URLs for PDBj's FTP and PDBj Mine2 SQL search services.
 
 - **Dec 10, 2019**: Release v2.0.0
 	- Support XML Schema for wwPDB validation report (wwpdb_validation_v004.xsd).
@@ -309,8 +314,8 @@ File path | Document
 
 - **Jul 18, 2018**: Release v1.3.4
 	- Change check sum directory name from chk_sum_pdbx_valid to chk_sum_pdbml_valid.
-	- Add PDBML-validation-alt, which is a lightweight alternative version of PDBML-validation by omitting PDBML-noatom content.
-	- Add wwPDB/validation-alt, which is a lightweight alternative version of wwPDB/RDF-validation by omitting PDBML-noatom content.
+	- Add PDBML-validation-alt, which is a lightweight version of PDBML-validation by omitting PDBML-noatom content.
+	- Add wwPDB/validation-alt, which is a lightweight version of wwPDB/RDF-validation by omitting PDBML-noatom content.
 	- Add PostgreSQL data migration script for PDBML-validation-alt.
 	- Add Virtuoso data upload script for wwPDB/RDF-validation-alt.
 	- Add PostgreSQL data migration script for PDBML-noatom.
