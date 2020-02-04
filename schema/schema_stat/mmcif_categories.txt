@@ -197,6 +197,7 @@ pdbx_chem_comp_model_reference
 pdbx_chem_comp_nonstandard
 pdbx_chem_comp_subcomponent_entity_list
 pdbx_chem_comp_subcomponent_struct_conn
+pdbx_chem_comp_synonyms
 pdbx_chem_comp_upload_depositor_info
 pdbx_columninfo
 pdbx_connect
