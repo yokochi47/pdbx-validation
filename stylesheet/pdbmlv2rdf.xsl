@@ -1861,15 +1861,6 @@
       <PDBov:has_pdbx_em_validate_map_model_entity>
       <PDBov:pdbx_em_validate_map_model_entity rdf:about="{$base}/pdbx_em_validate_map_model_entity/{translate(@PDB_model_num,' ^','_')},{translate(@label_asym_id,' ^','_')}">
         <PDBov:of_datablock rdf:resource="{$base}"/>
-      <xsl:if test="PDBxv:entity_id!=''">
-        <PDBov:reference_to_entity>
-	  <rdf:Description  rdf:about="{$base}/entity/{translate(PDBxv:entity_id,' ^','_')}">
-	    <PDBov:referenced_by_pdbx_em_validate_map_model_entity rdf:resource="{$base}/pdbx_em_validate_map_model_entity/{translate(@PDB_model_num,' ^','_')},{translate(@label_asym_id,' ^','_')}"/>
-	  </rdf:Description>
-        </PDBov:reference_to_entity>
-            <!-- entityKeyref_0_0_3_0 -->
-        
-      </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
       <xsl:apply-templates/>
@@ -1946,7 +1937,7 @@
 	    <PDBov:referenced_by_pdbx_entity_assembly rdf:resource="{$base}/pdbx_entity_assembly/{translate(@entity_id,' ^','_')},{translate(@id,' ^','_')}"/>
 	  </rdf:Description>
         </PDBov:reference_to_entity>
-            <!-- entityKeyref_0_0_4_0 -->
+            <!-- entityKeyref_0_0_3_0 -->
         
       </xsl:if>
       <xsl:if test="PDBxv:biol_id!=''">
@@ -1977,7 +1968,7 @@
 	    <PDBov:referenced_by_pdbx_entity_branch_descriptor rdf:resource="{$base}/pdbx_entity_branch_descriptor/{translate(@ordinal,' ^','_')}"/>
 	  </rdf:Description>
         </PDBov:reference_to_entity>
-            <!-- entityKeyref_0_0_5_0 -->
+            <!-- entityKeyref_0_0_4_0 -->
         
       </xsl:if>
       <xsl:apply-templates select="@*"/>
@@ -1999,7 +1990,7 @@
 	    <PDBov:referenced_by_pdbx_entity_descriptor rdf:resource="{$base}/pdbx_entity_descriptor/{translate(@ordinal,' ^','_')}"/>
 	  </rdf:Description>
         </PDBov:reference_to_entity>
-            <!-- entityKeyref_0_0_6_0 -->
+            <!-- entityKeyref_0_0_5_0 -->
         
       </xsl:if>
       <xsl:apply-templates select="@*"/>
@@ -2021,7 +2012,7 @@
 	    <PDBov:referenced_by_pdbx_entity_nonpoly rdf:resource="{$base}/pdbx_entity_nonpoly/{translate(@entity_id,' ^','_')}"/>
 	  </rdf:Description>
         </PDBov:reference_to_entity>
-            <!-- entityKeyref_0_0_7_0 -->
+            <!-- entityKeyref_0_0_6_0 -->
         
       </xsl:if>
       <xsl:apply-templates select="@*"/>
@@ -4171,7 +4162,7 @@
 	    <PDBov:referenced_by_struct_asym rdf:resource="{$base}/struct_asym/{translate(@id,' ^','_')}"/>
 	  </rdf:Description>
         </PDBov:reference_to_entity>
-            <!-- entityKeyref_0_0_8_0 -->
+            <!-- entityKeyref_0_0_7_0 -->
         
       </xsl:if>
       <xsl:apply-templates select="@*"/>
@@ -4451,7 +4442,7 @@
 	    <PDBov:referenced_by_struct_ref rdf:resource="{$base}/struct_ref/{translate(@id,' ^','_')}"/>
 	  </rdf:Description>
         </PDBov:reference_to_entity>
-            <!-- entityKeyref_0_0_9_0 -->
+            <!-- entityKeyref_0_0_8_0 -->
         
       </xsl:if>
       <xsl:apply-templates select="@*"/>
