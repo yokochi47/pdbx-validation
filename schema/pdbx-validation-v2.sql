@@ -21,7 +21,7 @@
 --  map xsd date type to: sql date type
 --
 -- Statistics of schema:
---  Generated 256 tables (3263 fields), 0 views (0 fields), 0 attr groups, 0 model groups in total
+--  Generated 256 tables (3265 fields), 0 views (0 fields), 0 attr groups, 0 model groups in total
 --   Unnecessary tables by inlining simple content as a primitive data type:
 --    schema location: schema/pdbx-validation-v2.xsd
 --      average_distance_constraint_violation, "Luzzati_sigma_a_obs", peptide_planarity_rms_dev, bond_angle_rms_dev_error, "Luzzati_coordinate_error_free", covalent_bond_rms_dev_error, "T11_esd", current, angle_target_value, recording_temperature_maximum, "F_calc", detector_distance, "S12_esd", value, dihedral_angle_target_value, "Cartn_y_esd", angle_omega, beta, upper_limit, maximum_distance_constraint_violation, value_esd, "L11_esd", taum, pdbx_solvent_shrinkage_radii, "B_iso_Wilson_estimate", rmsd, "F_meas_sigma_au", temp, covalent_bond_rms_dev, "S31_esd", chi2, chi3, chi4, "A_calc", chi5, neighbor_ligand_distance, chi1, phase_meas, "S22_esd", max_mean_cross_sectional_radii_gyration_esd, "B_meas_au", "T23_esd", "Luzzati_d_res_low_free", "L23_esd", "T13", atom_deviation, angle_kappa, "B_iso", average_torsion_angle_constraint_violation, "L13_esd", improper_torsion_angle_rms_dev, min_mean_cross_sectional_radii_gyration_esd, omega, "T13_esd", "pdbx_res_netI_over_av_sigmaI_2", dihedral_angle_value, mean_guiner_radius_esd, "pdbx_res_netI_over_sigmaI_2", "aniso_B33", distance_rms_dev, peptide_planarity_rms_dev_error, dihedral_angles_rms_dev, "T23", "T11", "Luzzati_d_res_low_obs", chamber_temperature, "L22_esd", resolution, concentration_range, "F_meas_au", distance_rms_dev_medoid, "S32_esd", pdbx_phase_calc_part_solvent, "T12", nominal_defocus_min, epsilon, energyfilter_lower, "S23_esd", diff_density_max_esd, tilt_angle_min, "S12", "T33", angle_value, pdbx_phase_calc_with_solvent, "S33_esd", recording_temperature_minimum, diff_density_min, "F_squared_calc", mean_guiner_radius, energyfilter_upper, "Cartn_x_esd", pdbx_dist_value, "S13", "T22", sampling_size, "Cartn_z", zeta, "L12_esd", alpha, "Cartn_z_esd", "aniso_B13", "sigmaI", min_mean_cross_sectional_radii_gyration, "S11_esd", "T12_esd", ambient_temp_esd, "A_meas", "P", "S22", phi, "S13_esd", angle_theta, "Cartn_y", "F_calc_au", "F_squared_meas", delta, "aniso_B12", "A_calc_au", rotation_per_n_subunits, gamma, nu1, nu2, nu3, nu4, "S23", "S11", origin_x, scan_time_backgd, origin_y, origin_z, "B_meas", prot_cis, nu0, "aniso_B23", "T22_esd", "aniso_B11", "S32", angle_phi, "L13", rise_per_n_subunits, maximum_torsion_angle_constraint_violation, "B_iso_min", angle_deviation, "B_calc", "aniso_B22", "S21", "F_meas_sigma", lower_limit, improper_torsion_angle, "F_squared_sigma", bond_angle_rms_dev, "S33", maximum_upper_distance_constraint_violation, angle_chi, maximum_lower_distance_constraint_violation, clash_magnitude, calibrated_defocus_min, ambient_pressure_esd, "pdbx_F_calc_with_solvent", "L23", "Luzzati_coordinate_error_obs", "L11", temperature, neighbor_macromolecule_distance, "L33_esd", diff_density_rms, pdbx_collection_time_total, tilt_angle_max, "B_iso_max", "S31", "T33_esd", diff_density_rms_esd, "L12", "S21_esd", voltage, pdbx_solvent_vdw_probe_radii, "A_meas_au", "B_calc_au", "B_iso_esd", psi, residual_tilt, "Cartn_x", power, improper_torsion_angle_rms_dev_error, max_mean_cross_sectional_radii_gyration, "F_meas", bond_deviation, "L33", scan_rate, diff_density_min_esd, "B_iso_mean", diff_density_max, "I", "Luzzati_sigma_a_free", dist, "pdbx_F_calc_part_solvent", phase_calc, tau2, tau3, tau4, nominal_defocus_max, pdbx_solvent_ion_probe_radii, tau0, dihedral_angles_rms_dev_error, tau1, distance_rms_dev_error, "L22", angle_psi
@@ -36,7 +36,7 @@
 --   User keys:
 --    210 document keys, 0 serial keys, 0 xpath keys
 --   Contents:
---    444 attributes (41 in-place document keys), 2609 elements (5 in-place document keys), 0 simple contents (0 in-place document keys, 0 as attribute, 0 as conditional attribute)
+--    444 attributes (41 in-place document keys), 2611 elements (5 in-place document keys), 0 simple contents (0 in-place document keys, 0 as attribute, 0 as conditional attribute)
 --   Wild cards:
 --    0 any elements, 0 any attributes
 --   Constraints:
@@ -44,8 +44,8 @@
 --
 
 --
--- PDBML-validation Schema v2.323
--- PDBXML-validation Schema translated from wwPDB Validation Information Dictionary v2.323, which is backward compatible with the PDBx/mmCIF Dictionary v5.323: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
+-- PDBML-validation Schema v2.324
+-- PDBXML-validation Schema translated from wwPDB Validation Information Dictionary v2.324, which is backward compatible with the PDBx/mmCIF Dictionary v5.324: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
 -- URI-reference = http://pdbml.pdb.org/schema/pdbx-validation-v2.xsd
 --
 
@@ -2244,9 +2244,8 @@ CREATE TYPE ENUM_em_imaging_mode AS ENUM ( 'BRIGHT FIELD', 'DARK FIELD', 'DIFFRA
 DROP TYPE IF EXISTS ENUM_em_imaging_specimen_holder_model CASCADE;
 CREATE TYPE ENUM_em_imaging_specimen_holder_model AS ENUM ( 'FEI TITAN KRIOS AUTOGRID HOLDER', 'FISCHIONE 2550', 'FISCHIONE INSTRUMENTS DUAL AXIS TOMOGRAPHY HOLDER', 'GATAN 626 SINGLE TILT LIQUID NITROGEN CRYO TRANSFER HOLDER', 'GATAN 910 MULTI-SPECIMEN SINGLE TILT CRYO TRANSFER HOLDER', 'GATAN 914 HIGH TILT LIQUID NITROGEN CRYO TRANSFER TOMOGRAPHY HO', 'GATAN 915 DOUBLE TILT LIQUID NITROGEN CRYO TRANSFER HOLDER', 'GATAN CHDT 3504 DOUBLE TILT HIGH RESOLUTION NITROGEN COOLING HO', 'GATAN CT3500 SINGLE TILT LIQUID NITROGEN CRYO TRANSFER HOLDER', 'GATAN CT3500TR SINGLE TILT ROTATION LIQUID NITROGEN CRYO TRANSF', 'GATAN ELSA 698 SINGLE TILT LIQUID NITROGEN CRYO TRANSFER HOLDER', 'GATAN HC 3500 SINGLE TILT HEATING/NITROGEN COOLING HOLDER', 'GATAN HCHDT 3010 DOUBLE TILT HIGH RESOLUTION HELIUM COOLING HOL', 'GATAN HCHST 3008 SINGLE TILT HIGH RESOLUTION HELIUM COOLING HOL', 'GATAN HELIUM', 'GATAN LIQUID NITROGEN', 'GATAN UHRST 3500 SINGLE TILT ULTRA HIGH RESOLUTION NITROGEN COO', 'GATAN ULTDT ULTRA LOW TEMPERATURE DOUBLE TILT HELIUM COOLING HO', 'GATAN ULTST ULTRA LOW TEMPERATURE SINGLE TILT HELIUM COOLING HO', 'HOME BUILD', 'JEOL', 'JEOL CRYOSPECPORTER', 'JEOL 3200FSC CRYOHOLDER', 'PHILIPS ROTATION HOLDER', 'SIDE ENTRY, EUCENTRIC', 'OTHER' );
 CREATE TABLE em_imaging (
--- xsd:restriction/xsd:maxInclusive="400"
 -- xsd:restriction/xsd:minInclusive="0"
-	accelerating_voltage INTEGER CHECK ( accelerating_voltage >= 0 AND accelerating_voltage <= 400 ) ,
+	accelerating_voltage INTEGER CHECK ( accelerating_voltage >= 0 ) ,
 	alignment_procedure ENUM_em_imaging_alignment_procedure ,
 	astigmatism TEXT ,
 -- xsd:restriction/xsd:maxInclusive="150"
@@ -2953,13 +2952,13 @@ CREATE TABLE pdbx_database_related (
 DROP TYPE IF EXISTS ENUM_pdbx_database_status_SG_entry CASCADE;
 CREATE TYPE ENUM_pdbx_database_status_SG_entry AS ENUM ( 'Y', 'N' );
 DROP TYPE IF EXISTS ENUM_pdbx_database_status_deposit_site CASCADE;
-CREATE TYPE ENUM_pdbx_database_status_deposit_site AS ENUM ( 'NDB', 'RCSB', 'PDBE', 'PDBJ', 'BMRB', 'BNL' );
+CREATE TYPE ENUM_pdbx_database_status_deposit_site AS ENUM ( 'NDB', 'RCSB', 'PDBE', 'PDBJ', 'BMRB', 'BNL', 'PDBC' );
 DROP TYPE IF EXISTS ENUM_pdbx_database_status_methods_development_category CASCADE;
 CREATE TYPE ENUM_pdbx_database_status_methods_development_category AS ENUM ( 'CAPRI', 'CASP', 'CASD-NMR', 'FoldIt', 'GPCR Dock', 'D3R', 'RNA-Puzzles' );
 DROP TYPE IF EXISTS ENUM_pdbx_database_status_pdb_format_compatible CASCADE;
 CREATE TYPE ENUM_pdbx_database_status_pdb_format_compatible AS ENUM ( 'Y', 'N' );
 DROP TYPE IF EXISTS ENUM_pdbx_database_status_process_site CASCADE;
-CREATE TYPE ENUM_pdbx_database_status_process_site AS ENUM ( 'NDB', 'RCSB', 'PDBE', 'PDBJ', 'BNL' );
+CREATE TYPE ENUM_pdbx_database_status_process_site AS ENUM ( 'NDB', 'RCSB', 'PDBE', 'PDBJ', 'BNL', 'PDBC' );
 DROP TYPE IF EXISTS ENUM_pdbx_database_status_status_code CASCADE;
 CREATE TYPE ENUM_pdbx_database_status_status_code AS ENUM ( 'PROC', 'WAIT', 'REL', 'HOLD', 'HPUB', 'REFI', 'OBS', 'WDRN', 'AUTH', 'POLC', 'REPL', 'AUCO', 'TRSF', 'RMVD', 'DEL', 'REV', 'UPD', 'BIB' );
 DROP TYPE IF EXISTS ENUM_pdbx_database_status_status_code_cs CASCADE;
@@ -4044,7 +4043,7 @@ CREATE TABLE pdbx_nmr_exptl (
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_nmr_exptl_sample_concentration_units CASCADE;
-CREATE TYPE ENUM_pdbx_nmr_exptl_sample_concentration_units AS ENUM ( '%', 'mM', 'mg/mL', 'nM', 'pM', 'M', 'g/L', 'ug/mL', 'mg/L', 'mg/uL', 'ug/uL', 'uM', 'v/v', 'w/v', 'w/w', '% w/v', '% w/w', '% v/v', 'saturated', 'na' );
+CREATE TYPE ENUM_pdbx_nmr_exptl_sample_concentration_units AS ENUM ( '%', 'mM', 'mg/mL', 'nM', 'pM', 'M', 'g/L', 'ug/mL', 'mg', 'mg/L', 'mg/uL', 'ug/uL', 'uM', 'v/v', 'w/v', 'w/w', '% w/v', '% w/w', '% v/v', 'saturated', 'na' );
 CREATE TABLE pdbx_nmr_exptl_sample (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	entry_id TEXT ,
@@ -4713,10 +4712,12 @@ CREATE TABLE pdbx_refine_component (
 CREATE TABLE pdbx_refine_tls_group (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	entry_id TEXT ,
+	"beg_PDB_ins_code" TEXT ,
 	beg_auth_asym_id TEXT ,
 	beg_auth_seq_id TEXT ,
 	beg_label_asym_id TEXT ,
 	beg_label_seq_id INTEGER ,
+	"end_PDB_ins_code" TEXT ,
 	end_auth_asym_id TEXT ,
 	end_auth_seq_id TEXT ,
 	end_label_asym_id TEXT ,
@@ -6224,18 +6225,21 @@ CREATE TABLE refine (
 	"ls_R_Fsqd_factor_obs" DECIMAL CHECK ( "ls_R_Fsqd_factor_obs" >= 0 ) ,
 -- xsd:restriction/xsd:minInclusive="0"
 	"ls_R_I_factor_obs" DECIMAL CHECK ( "ls_R_I_factor_obs" >= 0 ) ,
+-- xsd:restriction/xsd:maxInclusive="1"
 -- xsd:restriction/xsd:minInclusive="0"
-	"ls_R_factor_R_free" DECIMAL CHECK ( "ls_R_factor_R_free" >= 0 ) ,
+	"ls_R_factor_R_free" DECIMAL CHECK ( "ls_R_factor_R_free" >= 0 AND "ls_R_factor_R_free" <= 1 ) ,
 	"ls_R_factor_R_free_error" DECIMAL ,
 	"ls_R_factor_R_free_error_details" TEXT ,
+-- xsd:restriction/xsd:maxInclusive="1"
 -- xsd:restriction/xsd:minInclusive="0"
-	"ls_R_factor_R_work" DECIMAL CHECK ( "ls_R_factor_R_work" >= 0 ) ,
+	"ls_R_factor_R_work" DECIMAL CHECK ( "ls_R_factor_R_work" >= 0 AND "ls_R_factor_R_work" <= 1 ) ,
 -- xsd:restriction/xsd:minInclusive="0"
 	"ls_R_factor_all" DECIMAL CHECK ( "ls_R_factor_all" >= 0 ) ,
 -- xsd:restriction/xsd:minInclusive="0"
 	"ls_R_factor_gt" DECIMAL CHECK ( "ls_R_factor_gt" >= 0 ) ,
+-- xsd:restriction/xsd:maxInclusive="1"
 -- xsd:restriction/xsd:minInclusive="0"
-	"ls_R_factor_obs" DECIMAL CHECK ( "ls_R_factor_obs" >= 0 ) ,
+	"ls_R_factor_obs" DECIMAL CHECK ( "ls_R_factor_obs" >= 0 AND "ls_R_factor_obs" <= 1 ) ,
 -- xsd:restriction/xsd:maxInclusive="1"
 -- xsd:restriction/xsd:minInclusive="0"
 	"ls_abs_structure_Flack" DECIMAL CHECK ( "ls_abs_structure_Flack" >= 0 AND "ls_abs_structure_Flack" <= 1 ) ,
