@@ -185,7 +185,9 @@ atom_type.number_in_cell
 atom_type.oxidation_number
 atom_type.pdbx_N_electrons
 atom_type.pdbx_scat_Cromer_Mann_a5
+atom_type.pdbx_scat_Cromer_Mann_a6
 atom_type.pdbx_scat_Cromer_Mann_b5
+atom_type.pdbx_scat_Cromer_Mann_b6
 atom_type.pdbx_scat_Z
 atom_type.radius_bond
 atom_type.radius_contact
@@ -3877,10 +3879,12 @@ pdbx_refine_tls_group.beg_auth_asym_id
 pdbx_refine_tls_group.beg_auth_seq_id
 pdbx_refine_tls_group.beg_label_asym_id
 pdbx_refine_tls_group.beg_label_seq_id
+pdbx_refine_tls_group.beg_PDB_ins_code
 pdbx_refine_tls_group.end_auth_asym_id
 pdbx_refine_tls_group.end_auth_seq_id
 pdbx_refine_tls_group.end_label_asym_id
 pdbx_refine_tls_group.end_label_seq_id
+pdbx_refine_tls_group.end_PDB_ins_code
 pdbx_refine_tls_group.id
 pdbx_refine_tls_group.pdbx_refine_id
 pdbx_refine_tls_group.refine_tls_id

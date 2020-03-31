@@ -21,7 +21,7 @@
 --  map xsd date type to: sql date type
 --
 -- Statistics of schema:
---  Generated 554 tables (6750 fields), 0 views (0 fields), 0 attr groups, 0 model groups in total
+--  Generated 554 tables (6754 fields), 0 views (0 fields), 0 attr groups, 0 model groups in total
 --   Unnecessary tables by inlining simple content as a primitive data type:
 --    schema location: resource/pdbx-v50.xsd
 --      "S31", "T12_esd", "B_iso_mean", sampling_size, "U_tls13", angle_beta_esd, "Cartn_z_esd", pdbx_crystal_diffrn_lifetime, diff_density_max, diffr_kappa, "U_equiv_geom_mean_esd", ambient_temp_esd, pressure_esd, "dist_HA_esd", "model_Cartn_x", "B_equiv_geom_mean_esd", "S13_esd", "F_squared_meas", "U13_esd", "L11", "aniso_U33", "B33", protein_volume, "L23", "Cartn_y", epsilon, average_torsion_angle_constraint_violation, "S32", scan_rate, yield_pooled_fractions, improper_torsion_angle, reciprocal_length_a_esd, "aniso_U23", covalent_bond_rms_dev, angle_value, dist_esd, temperature_decomposition_esd, "F_calc", angle_gamma_esd, recording_temperature_maximum, length_c_esd, "aniso_U13_esd", "B_calc_au", "aniso_B33_esd", "aniso_U22", "B22", inducer_concentration, "L12", "Cartn_z", nu2, "S21", nu1, "U_tls23", nu4, "U_tls11", nu3, peptide_planarity_rms_dev, "S33", "Luzzati_d_res_low_obs", nu0, temperature, pdbx_phase_calc_with_solvent, "Luzzati_sigma_a_free", "Cartn_x_esd", pressure, lower_limit, "B_iso_min", diffr_chi, "A_meas_au", angle_psi, bond, "Luzzati_sigma_a_obs", "B11", "L13", "B33_esd", diff_density_rms_esd, "B23", "F_meas_au", "F_meas_sigma_au", pdbx_crystal_direction_1, pdbx_crystal_direction_2, "U_tls12", zeta, pdbx_crystal_direction_3, "S22", "S11_esd", scan_time_backgd, pdbx_crystal_diffrn_limit, flow_rate, time, protein_yield, omega, diffr_psi, "L12_esd", bond_angle_rms_dev, column_volume, pdbx_solvent_ion_probe_radii, pdbx_dist_value, "Cartn_x", "Ro", "B12", mol_wt_exp, final_thickness, neighbor_macromolecule_distance, diff_density_min_esd, "U_tls33", "B22_esd", "pdbx_res_netI_over_sigmaI_2", "U13", reciprocal_angle_alpha_esd, mol_wt_theo, beta_tolerance, "F_squared_calc", "B_iso_Wilson_estimate", "L22_esd", "angle_DHA_esd", current, "T33_esd", gamma, "F_meas_sigma", "U_tls22", peptide_planarity_rms_dev_error, alpha, delta, "T22_esd", storage_temperature, "aniso_B11_esd", reciprocal_angle_gamma_esd, angle_chi, "aniso_B22_esd", reciprocal_length_b_esd, "model_Cartn_z_esd", angle_omega, distance_rms_dev_error, detector_distance, resolution, "dist_DA_esd", culture_temperature, "aniso_U11_esd", min_mean_cross_sectional_radii_gyration, improper_torsion_angle_rms_dev, improper_torsion_angle_rms_dev_error, psi, "aniso_U12", energyfilter_lower, "L33_esd", "aniso_B12_esd", "pre_Cartn_x", calibrated_defocus_min, upper_limit, max_mean_cross_sectional_radii_gyration, "model_Cartn_y_esd", "L33", "aniso_U11", power, distance_rms_dev, "A_calc_au", mean_guiner_radius, "aniso_U13", dihedral_angles_rms_dev, energyfilter_upper, "U11_esd", origin_z, origin_y, pdbx_mosaicity_esd, origin_x, induction_timepoint, nominal_defocus_max, "I", "pdbx_model_Cartn_y_ideal", volume_pooled_fractions, "dist_DH_esd", "pre_Cartn_y", "B_iso_or_equiv", "B12_esd", "L22", "L23_esd", reciprocal_angle_beta_esd, alpha_tolerance, temp_esd, "T23_esd", "U12_esd", "aniso_B22", "S12_esd", "L13_esd", "T12", "U33", volume_three, value_esd, dev, "B13_esd", tilt_angle_min, "pre_Cartn_z", tau1, reciprocal_length_c_esd, "T13_esd", tau0, concentration_range, covalent_bond_rms_dev_error, "B_iso_or_equiv_esd", mean_guiner_radius_esd, "sigmaI", "B_iso_max", length_a_esd, "A_meas", angle_alpha_esd, "aniso_B23", "aniso_B11", neighbor_ligand_distance, "T13", recording_temperature_minimum, "U22", prot_cis, "L11_esd", atom_deviation, tau3, tau2, tau4, cleavage_temperature, "T11_esd", diff_density_min, pdbx_solvent_shrinkage_radii, induction_temperature, pdbx_phase_calc_part_solvent, "Cartn_y_esd", "S31_esd", dist, column_temperature, residual_tilt, "F_meas", maximum_upper_distance_constraint_violation, "U23", "aniso_B13_esd", "U11", voltage, "B11_esd", "model_Cartn_x_esd", rise_per_n_subunits, energy_window, taum, "aniso_U12_esd", "B_iso", volume_three_esd, culture_volume, angle_kappa, "aniso_B33", temp, bond_angle_rms_dev_error, pdbx_collection_time_total, sample_concentration, "U12", "S33_esd", gamma_tolerance, phase_meas, rmsd, "U22_esd", density_meas_temp_esd, "B23_esd", electron_dose, protein_concentration, diff_density_max_esd, length_b_esd, initial_thickness, angle_deviation, scat_length_neutron, "S11", beta, "S23", "aniso_U22_esd", sample_volume, max_mean_cross_sectional_radii_gyration_esd, bond_deviation, dihedral_angles_rms_dev_error, "aniso_U23_esd", min_mean_cross_sectional_radii_gyration_esd, maximum_distance_constraint_violation, "F_calc_au", "Luzzati_d_res_low_free", "S21_esd", "F_squared_sigma", "aniso_B23_esd", "B13", chi1, pdbx_mosaicity, chi3, chi2, chi5, diffr_phi, "S12", "T33", chi4, "P", multiplicity_of_infection, phi, temperature_sublimation_esd, buffer_volume, pdbx_solvent_vdw_probe_radii, angle_theta, "pdbx_model_Cartn_x_ideal", volume_esd, ambient_pressure_esd, average_distance_constraint_violation, "B_meas", "S23_esd", "B_meas_au", "pdbx_model_Cartn_z_ideal", maximum_torsion_angle_constraint_violation, "U23_esd", "aniso_B12", nominal_defocus_min, "S13", "Luzzati_coordinate_error_free", duration, "T22", "S32_esd", "aniso_U33_esd", "B_calc", "Luzzati_coordinate_error_obs", density_meas_esd, culture_time, "model_Cartn_z", "U_iso_or_equiv_esd", "B", value, angle, "A_calc", "aniso_B13", angle_target_value, tilt_angle_max, "S22_esd", "T23", cleavage_time, "U33_esd", chamber_temperature, "T11", phase_calc, "pdbx_F_calc_with_solvent", "pdbx_F_calc_part_solvent", "model_Cartn_y", "B_iso_esd", rotation_per_n_subunits, angle_phi, maximum_lower_distance_constraint_violation, "pdbx_res_netI_over_av_sigmaI_2", diff_density_rms
@@ -36,7 +36,7 @@
 --   User keys:
 --    554 document keys, 0 serial keys, 0 xpath keys
 --   Contents:
---    1009 attributes (0 in-place document keys), 5187 elements (0 in-place document keys), 0 simple contents (0 in-place document keys, 0 as attribute, 0 as conditional attribute)
+--    1009 attributes (0 in-place document keys), 5191 elements (0 in-place document keys), 0 simple contents (0 in-place document keys, 0 as attribute, 0 as conditional attribute)
 --   Wild cards:
 --    0 any elements, 0 any attributes
 --   Constraints:
@@ -44,8 +44,8 @@
 --
 
 --
--- PDBML Schema v5.323
--- PDBML Schema translated from the PDBx/mmCIF Dictionary v5.323: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
+-- PDBML Schema v5.324
+-- PDBML Schema translated from the PDBx/mmCIF Dictionary v5.324: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
 -- URI-reference = http://pdbml.pdb.org/schema/pdbx-v50.xsd
 --
 
@@ -669,7 +669,7 @@ CREATE TYPE ENUM_chem_comp_pdbx_ideal_coordinates_missing_flag AS ENUM ( 'Y', 'N
 DROP TYPE IF EXISTS ENUM_chem_comp_pdbx_model_coordinates_missing_flag CASCADE;
 CREATE TYPE ENUM_chem_comp_pdbx_model_coordinates_missing_flag AS ENUM ( 'Y', 'N' );
 DROP TYPE IF EXISTS ENUM_chem_comp_pdbx_processing_site CASCADE;
-CREATE TYPE ENUM_chem_comp_pdbx_processing_site AS ENUM ( 'PDBE', 'EBI', 'PDBJ', 'RCSB' );
+CREATE TYPE ENUM_chem_comp_pdbx_processing_site AS ENUM ( 'PDBE', 'EBI', 'PDBJ', 'PDBC', 'RCSB' );
 DROP TYPE IF EXISTS ENUM_chem_comp_pdbx_release_status CASCADE;
 CREATE TYPE ENUM_chem_comp_pdbx_release_status AS ENUM ( 'REL', 'HOLD', 'HPUB', 'OBS', 'DEL', 'REF_ONLY' );
 DROP TYPE IF EXISTS ENUM_chem_comp_type CASCADE;
@@ -1002,7 +1002,9 @@ CREATE TABLE atom_type (
 	oxidation_number INTEGER CHECK ( oxidation_number >= -8 AND oxidation_number <= 8 ) ,
 	"pdbx_N_electrons" INTEGER ,
 	"pdbx_scat_Cromer_Mann_a5" DECIMAL ,
+	"pdbx_scat_Cromer_Mann_a6" DECIMAL ,
 	"pdbx_scat_Cromer_Mann_b5" DECIMAL ,
+	"pdbx_scat_Cromer_Mann_b6" DECIMAL ,
 	"pdbx_scat_Z" INTEGER ,
 -- xsd:restriction/xsd:maxInclusive="5"
 -- xsd:restriction/xsd:minInclusive="0"
@@ -2159,11 +2161,13 @@ CREATE TABLE pdbx_linked_entity_list (
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
+DROP TYPE IF EXISTS ENUM_pdbx_reference_entity_list_type CASCADE;
+CREATE TYPE ENUM_pdbx_reference_entity_list_type AS ENUM ( 'polymer', 'polymer-like', 'non-polymer', 'branched' );
 CREATE TABLE pdbx_reference_entity_list (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
 	details TEXT ,
-	type TEXT ,
+	type ENUM_pdbx_reference_entity_list_type ,
 -- ATTRIBUTE
 	component_id INTEGER NOT NULL ,
 -- ATTRIBUTE
@@ -4128,7 +4132,7 @@ CREATE TABLE em_3d_reconstruction (
 DROP TYPE IF EXISTS ENUM_em_admin_current_status CASCADE;
 CREATE TYPE ENUM_em_admin_current_status AS ENUM ( 'PROC', 'WAIT', 'AUTH', 'REUP', 'REPL', 'AUXU', 'AUXS', 'AUCO', 'REFI', 'POLC', 'HPUB', 'HOLD', 'HOLD8W', 'REL', 'WDRN', 'OBS' );
 DROP TYPE IF EXISTS ENUM_em_admin_deposition_site CASCADE;
-CREATE TYPE ENUM_em_admin_deposition_site AS ENUM ( 'PDBE', 'RCSB', 'PDBJ' );
+CREATE TYPE ENUM_em_admin_deposition_site AS ENUM ( 'PDBE', 'RCSB', 'PDBJ', 'PDBC' );
 DROP TYPE IF EXISTS ENUM_em_admin_replace_existing_entry_flag CASCADE;
 CREATE TYPE ENUM_em_admin_replace_existing_entry_flag AS ENUM ( 'YES', 'NO' );
 CREATE TABLE em_admin (
@@ -4869,9 +4873,8 @@ CREATE TYPE ENUM_em_imaging_specimen_holder_model AS ENUM ( 'FEI TITAN KRIOS AUT
 CREATE TABLE em_imaging (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
--- xsd:restriction/xsd:maxInclusive="400"
 -- xsd:restriction/xsd:minInclusive="0"
-	accelerating_voltage INTEGER CHECK ( accelerating_voltage >= 0 AND accelerating_voltage <= 400 ) ,
+	accelerating_voltage INTEGER CHECK ( accelerating_voltage >= 0 ) ,
 	alignment_procedure ENUM_em_imaging_alignment_procedure ,
 	astigmatism TEXT ,
 -- xsd:restriction/xsd:maxInclusive="150"
@@ -7712,7 +7715,7 @@ CREATE TYPE ENUM_pdbx_database_status_dep_release_code_sequence AS ENUM ( 'RELEA
 DROP TYPE IF EXISTS ENUM_pdbx_database_status_dep_release_code_struct_fact CASCADE;
 CREATE TYPE ENUM_pdbx_database_status_dep_release_code_struct_fact AS ENUM ( 'RELEASE NOW', 'HOLD FOR PUBLICATION', 'HOLD FOR 4 WEEKS', 'HOLD FOR 8 WEEKS', 'HOLD FOR 6 MONTHS', 'HOLD FOR 1 YEAR', 'HOLD FOR 4 YEARS' );
 DROP TYPE IF EXISTS ENUM_pdbx_database_status_deposit_site CASCADE;
-CREATE TYPE ENUM_pdbx_database_status_deposit_site AS ENUM ( 'NDB', 'RCSB', 'PDBE', 'PDBJ', 'BMRB', 'BNL' );
+CREATE TYPE ENUM_pdbx_database_status_deposit_site AS ENUM ( 'NDB', 'RCSB', 'PDBE', 'PDBJ', 'BMRB', 'BNL', 'PDBC' );
 DROP TYPE IF EXISTS ENUM_pdbx_database_status_hold_for_publication CASCADE;
 CREATE TYPE ENUM_pdbx_database_status_hold_for_publication AS ENUM ( 'Y', 'N' );
 DROP TYPE IF EXISTS ENUM_pdbx_database_status_methods_development_category CASCADE;
@@ -7724,7 +7727,7 @@ CREATE TYPE ENUM_pdbx_database_status_post_rel_recvd_coord AS ENUM ( 'Y', 'N' );
 DROP TYPE IF EXISTS ENUM_pdbx_database_status_post_rel_status CASCADE;
 CREATE TYPE ENUM_pdbx_database_status_post_rel_status AS ENUM ( 'PROC', 'WAIT', 'HOLD', 'HPUB', 'OBS', 'WDRN', 'AUTH', 'REPL', 'AUCO' );
 DROP TYPE IF EXISTS ENUM_pdbx_database_status_process_site CASCADE;
-CREATE TYPE ENUM_pdbx_database_status_process_site AS ENUM ( 'NDB', 'RCSB', 'PDBE', 'PDBJ', 'BNL' );
+CREATE TYPE ENUM_pdbx_database_status_process_site AS ENUM ( 'NDB', 'RCSB', 'PDBE', 'PDBJ', 'BNL', 'PDBC' );
 DROP TYPE IF EXISTS ENUM_pdbx_database_status_recvd_author_approval CASCADE;
 CREATE TYPE ENUM_pdbx_database_status_recvd_author_approval AS ENUM ( 'Y', 'N' );
 DROP TYPE IF EXISTS ENUM_pdbx_database_status_recvd_chemical_shifts CASCADE;
@@ -10234,7 +10237,7 @@ CREATE TABLE pdbx_nmr_exptl (
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_nmr_exptl_sample_concentration_units CASCADE;
-CREATE TYPE ENUM_pdbx_nmr_exptl_sample_concentration_units AS ENUM ( '%', 'mM', 'mg/mL', 'nM', 'pM', 'M', 'g/L', 'ug/mL', 'mg/L', 'mg/uL', 'ug/uL', 'uM', 'v/v', 'w/v', 'w/w', '% w/v', '% w/w', '% v/v', 'saturated', 'na' );
+CREATE TYPE ENUM_pdbx_nmr_exptl_sample_concentration_units AS ENUM ( '%', 'mM', 'mg/mL', 'nM', 'pM', 'M', 'g/L', 'ug/mL', 'mg', 'mg/L', 'mg/uL', 'ug/uL', 'uM', 'v/v', 'w/v', 'w/w', '% w/v', '% w/w', '% v/v', 'saturated', 'na' );
 CREATE TABLE pdbx_nmr_exptl_sample (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
@@ -10979,7 +10982,7 @@ CREATE TABLE pdbx_post_process_status (
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_prd_audit_processing_site CASCADE;
-CREATE TYPE ENUM_pdbx_prd_audit_processing_site AS ENUM ( 'RCSB', 'PDBe', 'PDBJ', 'BMRB' );
+CREATE TYPE ENUM_pdbx_prd_audit_processing_site AS ENUM ( 'RCSB', 'PDBe', 'PDBJ', 'BMRB', 'PDBC' );
 DROP TYPE IF EXISTS ENUM_pdbx_prd_audit_action_type CASCADE;
 CREATE TYPE ENUM_pdbx_prd_audit_action_type AS ENUM ( 'Initial release', 'Create molecule', 'Modify type', 'Modify class', 'Modify molecule name', 'Modify representation', 'Modify sequence', 'Modify linkage', 'Modify taxonomy organism', 'Modify audit', 'Other modification', 'Obsolete molecule' );
 CREATE TABLE pdbx_prd_audit (
@@ -11153,18 +11156,20 @@ CREATE TABLE pdbx_reference_entity_poly_seq (
 
 --
 -- (quoted from pdbx_reference_entity_sequenceType)
--- Additional features associated with the reference entity. Example 1 - Actinomycin <PDBx:pdbx_reference_entity_sequenceCategory> <PDBx:pdbx_reference_entity_sequence prd_id="PRD_000001" ref_entity_id="1"> <PDBx:NRP_flag>Y</PDBx:NRP_flag> <PDBx:one_letter_codes>TVPGVXTVPGV</PDBx:one_letter_codes> <PDBx:type>amino_acid</PDBx:type> </PDBx:pdbx_reference_entity_sequence> <PDBx:pdbx_reference_entity_sequence prd_id="PRD_000006" ref_entity_id="2"> <PDBx:NRP_flag>Y</PDBx:NRP_flag> <PDBx:one_letter_codes>TVPGVXTVPGV</PDBx:one_letter_codes> <PDBx:type>amino_acid</PDBx:type> </PDBx:pdbx_reference_entity_sequence> <PDBx:pdbx_reference_entity_sequence prd_id="PRD_000007" ref_entity_id="3"> <PDBx:NRP_flag>Y</PDBx:NRP_flag> <PDBx:one_letter_codes>TVPGVXTVPGV</PDBx:one_letter_codes> <PDBx:type>amino_acid</PDBx:type> </PDBx:pdbx_reference_entity_sequence> <PDBx:pdbx_reference_entity_sequence prd_id="PRD_000009" ref_entity_id="4"> <PDBx:NRP_flag>Y</PDBx:NRP_flag> <PDBx:one_letter_codes>TVPGVXTVPGV</PDBx:one_letter_codes> <PDBx:type>amino_acid</PDBx:type> </PDBx:pdbx_reference_entity_sequence> <PDBx:pdbx_reference_entity_sequence prd_id="PRD_000010" ref_entity_id="5"> <PDBx:NRP_flag>Y</PDBx:NRP_flag> <PDBx:one_letter_codes>TVPGVXTVPGV</PDBx:one_letter_codes> <PDBx:type>amino_acid</PDBx:type> </PDBx:pdbx_reference_entity_sequence> <PDBx:pdbx_reference_entity_sequence prd_id="PRD_000011" ref_entity_id="6"> <PDBx:NRP_flag>Y</PDBx:NRP_flag> <PDBx:one_letter_codes>TVPGVXTVPGV</PDBx:one_letter_codes> <PDBx:type>amino_acid</PDBx:type> </PDBx:pdbx_reference_entity_sequence> </PDBx:pdbx_reference_entity_sequenceCategory>
+-- Additional features associated with the reference entity. Example 1 - Actinomycin <PDBx:pdbx_reference_entity_sequenceCategory> <PDBx:pdbx_reference_entity_sequence prd_id="PRD_000001" ref_entity_id="1"> <PDBx:NRP_flag>Y</PDBx:NRP_flag> <PDBx:one_letter_codes>TVPGVXTVPGV</PDBx:one_letter_codes> <PDBx:type>peptide-like</PDBx:type> </PDBx:pdbx_reference_entity_sequence> <PDBx:pdbx_reference_entity_sequence prd_id="PRD_000006" ref_entity_id="2"> <PDBx:NRP_flag>Y</PDBx:NRP_flag> <PDBx:one_letter_codes>TVPGVXTVPGV</PDBx:one_letter_codes> <PDBx:type>peptide-like</PDBx:type> </PDBx:pdbx_reference_entity_sequence> <PDBx:pdbx_reference_entity_sequence prd_id="PRD_000007" ref_entity_id="3"> <PDBx:NRP_flag>Y</PDBx:NRP_flag> <PDBx:one_letter_codes>TVPGVXTVPGV</PDBx:one_letter_codes> <PDBx:type>peptide-like</PDBx:type> </PDBx:pdbx_reference_entity_sequence> <PDBx:pdbx_reference_entity_sequence prd_id="PRD_000009" ref_entity_id="4"> <PDBx:NRP_flag>Y</PDBx:NRP_flag> <PDBx:one_letter_codes>TVPGVXTVPGV</PDBx:one_letter_codes> <PDBx:type>peptide-like</PDBx:type> </PDBx:pdbx_reference_entity_sequence> <PDBx:pdbx_reference_entity_sequence prd_id="PRD_000010" ref_entity_id="5"> <PDBx:NRP_flag>Y</PDBx:NRP_flag> <PDBx:one_letter_codes>TVPGVXTVPGV</PDBx:one_letter_codes> <PDBx:type>peptide-like</PDBx:type> </PDBx:pdbx_reference_entity_sequence> <PDBx:pdbx_reference_entity_sequence prd_id="PRD_000011" ref_entity_id="6"> <PDBx:NRP_flag>Y</PDBx:NRP_flag> <PDBx:one_letter_codes>TVPGVXTVPGV</PDBx:one_letter_codes> <PDBx:type>peptide-like</PDBx:type> </PDBx:pdbx_reference_entity_sequence> </PDBx:pdbx_reference_entity_sequenceCategory>
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_reference_entity_sequence_NRP_flag CASCADE;
 CREATE TYPE ENUM_pdbx_reference_entity_sequence_NRP_flag AS ENUM ( 'Y', 'N' );
+DROP TYPE IF EXISTS ENUM_pdbx_reference_entity_sequence_type CASCADE;
+CREATE TYPE ENUM_pdbx_reference_entity_sequence_type AS ENUM ( 'peptide-like', 'saccharide' );
 CREATE TABLE pdbx_reference_entity_sequence (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
 	"NRP_flag" ENUM_pdbx_reference_entity_sequence_NRP_flag ,
 	one_letter_codes TEXT ,
-	type TEXT ,
+	type ENUM_pdbx_reference_entity_sequence_type ,
 -- ATTRIBUTE
 	prd_id TEXT NOT NULL ,
 -- ATTRIBUTE
@@ -11511,10 +11516,12 @@ CREATE TABLE pdbx_refine_ls_restr_ncs (
 CREATE TABLE pdbx_refine_tls_group (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
+	"beg_PDB_ins_code" TEXT ,
 	beg_auth_asym_id TEXT ,
 	beg_auth_seq_id TEXT ,
 	beg_label_asym_id TEXT ,
 	beg_label_seq_id INTEGER ,
+	"end_PDB_ins_code" TEXT ,
 	end_auth_asym_id TEXT ,
 	end_auth_seq_id TEXT ,
 	end_label_asym_id TEXT ,
@@ -14280,18 +14287,21 @@ CREATE TABLE refine (
 	"ls_R_Fsqd_factor_obs" DECIMAL CHECK ( "ls_R_Fsqd_factor_obs" >= 0 ) ,
 -- xsd:restriction/xsd:minInclusive="0"
 	"ls_R_I_factor_obs" DECIMAL CHECK ( "ls_R_I_factor_obs" >= 0 ) ,
+-- xsd:restriction/xsd:maxInclusive="1"
 -- xsd:restriction/xsd:minInclusive="0"
-	"ls_R_factor_R_free" DECIMAL CHECK ( "ls_R_factor_R_free" >= 0 ) ,
+	"ls_R_factor_R_free" DECIMAL CHECK ( "ls_R_factor_R_free" >= 0 AND "ls_R_factor_R_free" <= 1 ) ,
 	"ls_R_factor_R_free_error" DECIMAL ,
 	"ls_R_factor_R_free_error_details" TEXT ,
+-- xsd:restriction/xsd:maxInclusive="1"
 -- xsd:restriction/xsd:minInclusive="0"
-	"ls_R_factor_R_work" DECIMAL CHECK ( "ls_R_factor_R_work" >= 0 ) ,
+	"ls_R_factor_R_work" DECIMAL CHECK ( "ls_R_factor_R_work" >= 0 AND "ls_R_factor_R_work" <= 1 ) ,
 -- xsd:restriction/xsd:minInclusive="0"
 	"ls_R_factor_all" DECIMAL CHECK ( "ls_R_factor_all" >= 0 ) ,
 -- xsd:restriction/xsd:minInclusive="0"
 	"ls_R_factor_gt" DECIMAL CHECK ( "ls_R_factor_gt" >= 0 ) ,
+-- xsd:restriction/xsd:maxInclusive="1"
 -- xsd:restriction/xsd:minInclusive="0"
-	"ls_R_factor_obs" DECIMAL CHECK ( "ls_R_factor_obs" >= 0 ) ,
+	"ls_R_factor_obs" DECIMAL CHECK ( "ls_R_factor_obs" >= 0 AND "ls_R_factor_obs" <= 1 ) ,
 -- xsd:restriction/xsd:maxInclusive="1"
 -- xsd:restriction/xsd:minInclusive="0"
 	"ls_abs_structure_Flack" DECIMAL CHECK ( "ls_abs_structure_Flack" >= 0 AND "ls_abs_structure_Flack" <= 1 ) ,
