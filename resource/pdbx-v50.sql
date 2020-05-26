@@ -44,8 +44,8 @@
 --
 
 --
--- PDBML Schema v5.324
--- PDBML Schema translated from the PDBx/mmCIF Dictionary v5.324: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
+-- PDBML Schema v5.325
+-- PDBML Schema translated from the PDBx/mmCIF Dictionary v5.325: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
 -- URI-reference = http://pdbml.pdb.org/schema/pdbx-v50.xsd
 --
 
@@ -777,8 +777,9 @@ CREATE TABLE exptl_crystal (
 -- xsd:restriction/xsd:minInclusive="0"
 	density_meas_temp_lt DECIMAL CHECK ( density_meas_temp_lt >= 0 ) ,
 	density_method TEXT ,
+-- xsd:restriction/xsd:maxInclusive="100"
 -- xsd:restriction/xsd:minInclusive="0"
-	density_percent_sol DECIMAL CHECK ( density_percent_sol >= 0 ) ,
+	density_percent_sol DECIMAL CHECK ( density_percent_sol >= 0 AND density_percent_sol <= 100 ) ,
 	description TEXT ,
 -- omit an attribute having a fixed value: @units="hours"
 	pdbx_crystal_diffrn_lifetime DECIMAL ,
@@ -5443,7 +5444,7 @@ CREATE TABLE em_supersede (
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_em_support_film_material CASCADE;
-CREATE TYPE ENUM_em_support_film_material AS ENUM ( 'CARBON', 'FORMVAR', 'CELLULOSE ACETATE', 'PARLODION', 'GRAPHENE', 'GRAPHENE OXIDE' );
+CREATE TYPE ENUM_em_support_film_material AS ENUM ( 'CARBON', 'FORMVAR', 'CELLULOSE ACETATE', 'PARLODION', 'GOLD', 'GRAPHENE', 'GRAPHENE OXIDE' );
 DROP TYPE IF EXISTS ENUM_em_support_film_topology CASCADE;
 CREATE TYPE ENUM_em_support_film_topology AS ENUM ( 'CONTINUOUS', 'LACEY', 'HOLEY', 'HOLEY ARRAY' );
 CREATE TABLE em_support_film (
