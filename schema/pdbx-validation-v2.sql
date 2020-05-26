@@ -21,7 +21,7 @@
 --  map xsd date type to: sql date type
 --
 -- Statistics of schema:
---  Generated 256 tables (3265 fields), 0 views (0 fields), 0 attr groups, 0 model groups in total
+--  Generated 256 tables (3266 fields), 0 views (0 fields), 0 attr groups, 0 model groups in total
 --   Unnecessary tables by inlining simple content as a primitive data type:
 --    schema location: schema/pdbx-validation-v2.xsd
 --      average_distance_constraint_violation, "Luzzati_sigma_a_obs", peptide_planarity_rms_dev, bond_angle_rms_dev_error, "Luzzati_coordinate_error_free", covalent_bond_rms_dev_error, "T11_esd", current, angle_target_value, recording_temperature_maximum, "F_calc", detector_distance, "S12_esd", value, dihedral_angle_target_value, "Cartn_y_esd", angle_omega, beta, upper_limit, maximum_distance_constraint_violation, value_esd, "L11_esd", taum, pdbx_solvent_shrinkage_radii, "B_iso_Wilson_estimate", rmsd, "F_meas_sigma_au", temp, covalent_bond_rms_dev, "S31_esd", chi2, chi3, chi4, "A_calc", chi5, neighbor_ligand_distance, chi1, phase_meas, "S22_esd", max_mean_cross_sectional_radii_gyration_esd, "B_meas_au", "T23_esd", "Luzzati_d_res_low_free", "L23_esd", "T13", atom_deviation, angle_kappa, "B_iso", average_torsion_angle_constraint_violation, "L13_esd", improper_torsion_angle_rms_dev, min_mean_cross_sectional_radii_gyration_esd, omega, "T13_esd", "pdbx_res_netI_over_av_sigmaI_2", dihedral_angle_value, mean_guiner_radius_esd, "pdbx_res_netI_over_sigmaI_2", "aniso_B33", distance_rms_dev, peptide_planarity_rms_dev_error, dihedral_angles_rms_dev, "T23", "T11", "Luzzati_d_res_low_obs", chamber_temperature, "L22_esd", resolution, concentration_range, "F_meas_au", distance_rms_dev_medoid, "S32_esd", pdbx_phase_calc_part_solvent, "T12", nominal_defocus_min, epsilon, energyfilter_lower, "S23_esd", diff_density_max_esd, tilt_angle_min, "S12", "T33", angle_value, pdbx_phase_calc_with_solvent, "S33_esd", recording_temperature_minimum, diff_density_min, "F_squared_calc", mean_guiner_radius, energyfilter_upper, "Cartn_x_esd", pdbx_dist_value, "S13", "T22", sampling_size, "Cartn_z", zeta, "L12_esd", alpha, "Cartn_z_esd", "aniso_B13", "sigmaI", min_mean_cross_sectional_radii_gyration, "S11_esd", "T12_esd", ambient_temp_esd, "A_meas", "P", "S22", phi, "S13_esd", angle_theta, "Cartn_y", "F_calc_au", "F_squared_meas", delta, "aniso_B12", "A_calc_au", rotation_per_n_subunits, gamma, nu1, nu2, nu3, nu4, "S23", "S11", origin_x, scan_time_backgd, origin_y, origin_z, "B_meas", prot_cis, nu0, "aniso_B23", "T22_esd", "aniso_B11", "S32", angle_phi, "L13", rise_per_n_subunits, maximum_torsion_angle_constraint_violation, "B_iso_min", angle_deviation, "B_calc", "aniso_B22", "S21", "F_meas_sigma", lower_limit, improper_torsion_angle, "F_squared_sigma", bond_angle_rms_dev, "S33", maximum_upper_distance_constraint_violation, angle_chi, maximum_lower_distance_constraint_violation, clash_magnitude, calibrated_defocus_min, ambient_pressure_esd, "pdbx_F_calc_with_solvent", "L23", "Luzzati_coordinate_error_obs", "L11", temperature, neighbor_macromolecule_distance, "L33_esd", diff_density_rms, pdbx_collection_time_total, tilt_angle_max, "B_iso_max", "S31", "T33_esd", diff_density_rms_esd, "L12", "S21_esd", voltage, pdbx_solvent_vdw_probe_radii, "A_meas_au", "B_calc_au", "B_iso_esd", psi, residual_tilt, "Cartn_x", power, improper_torsion_angle_rms_dev_error, max_mean_cross_sectional_radii_gyration, "F_meas", bond_deviation, "L33", scan_rate, diff_density_min_esd, "B_iso_mean", diff_density_max, "I", "Luzzati_sigma_a_free", dist, "pdbx_F_calc_part_solvent", phase_calc, tau2, tau3, tau4, nominal_defocus_max, pdbx_solvent_ion_probe_radii, tau0, dihedral_angles_rms_dev_error, tau1, distance_rms_dev_error, "L22", angle_psi
@@ -36,7 +36,7 @@
 --   User keys:
 --    210 document keys, 0 serial keys, 0 xpath keys
 --   Contents:
---    444 attributes (41 in-place document keys), 2611 elements (5 in-place document keys), 0 simple contents (0 in-place document keys, 0 as attribute, 0 as conditional attribute)
+--    444 attributes (41 in-place document keys), 2612 elements (5 in-place document keys), 0 simple contents (0 in-place document keys, 0 as attribute, 0 as conditional attribute)
 --   Wild cards:
 --    0 any elements, 0 any attributes
 --   Constraints:
@@ -44,8 +44,8 @@
 --
 
 --
--- PDBML-validation Schema v2.324
--- PDBXML-validation Schema translated from wwPDB Validation Information Dictionary v2.324, which is backward compatible with the PDBx/mmCIF Dictionary v5.324: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
+-- PDBML-validation Schema v2.325
+-- PDBXML-validation Schema translated from wwPDB Validation Information Dictionary v2.325, which is backward compatible with the PDBx/mmCIF Dictionary v5.325: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
 -- URI-reference = http://pdbml.pdb.org/schema/pdbx-validation-v2.xsd
 --
 
@@ -2965,6 +2965,8 @@ DROP TYPE IF EXISTS ENUM_pdbx_database_status_status_code_cs CASCADE;
 CREATE TYPE ENUM_pdbx_database_status_status_code_cs AS ENUM ( 'PROC', 'WAIT', 'AUTH', 'POLC', 'REPL', 'REL', 'HOLD', 'HPUB', 'OBS', 'RMVD', 'WDRN' );
 DROP TYPE IF EXISTS ENUM_pdbx_database_status_status_code_mr CASCADE;
 CREATE TYPE ENUM_pdbx_database_status_status_code_mr AS ENUM ( 'PROC', 'WAIT', 'REL', 'HOLD', 'HPUB', 'OBS', 'WDRN', 'AUTH', 'POLC', 'REPL', 'RMVD' );
+DROP TYPE IF EXISTS ENUM_pdbx_database_status_status_code_nmr_data CASCADE;
+CREATE TYPE ENUM_pdbx_database_status_status_code_nmr_data AS ENUM ( 'PROC', 'WAIT', 'AUTH', 'POLC', 'REPL', 'REL', 'HOLD', 'HPUB', 'OBS', 'RMVD', 'WDRN' );
 DROP TYPE IF EXISTS ENUM_pdbx_database_status_status_code_sf CASCADE;
 CREATE TYPE ENUM_pdbx_database_status_status_code_sf AS ENUM ( 'PROC', 'WAIT', 'REL', 'HOLD', 'HPUB', 'OBS', 'WDRN', 'AUTH', 'POLC', 'REPL', 'RMVD' );
 CREATE TABLE pdbx_database_status (
@@ -2978,6 +2980,7 @@ CREATE TABLE pdbx_database_status (
 	status_code ENUM_pdbx_database_status_status_code ,
 	status_code_cs ENUM_pdbx_database_status_status_code_cs ,
 	status_code_mr ENUM_pdbx_database_status_status_code_mr ,
+	status_code_nmr_data ENUM_pdbx_database_status_status_code_nmr_data ,
 	status_code_sf ENUM_pdbx_database_status_status_code_sf ,
 -- map XSD date (xsd:date) to SQL DATE
 	validation_created_date DATE ,

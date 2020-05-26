@@ -120,7 +120,6 @@ pdbx_database_status.revision_description WWPDB_LOCAL
 pdbx_database_status.revision_id WWPDB_LOCAL
 pdbx_database_status.skip_PDB_REMARK WWPDB_LOCAL
 pdbx_database_status.skip_PDB_REMARK_500 WWPDB_LOCAL
-pdbx_database_status.status_code_nmr_data WWPDB_LOCAL
 pdbx_database_status.status_coordinates_in_NDB WWPDB_LOCAL
 pdbx_database_status.title_suppression WWPDB_LOCAL
 pdbx_dcc_density.pdbid
