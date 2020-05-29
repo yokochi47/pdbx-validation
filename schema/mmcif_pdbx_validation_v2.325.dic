@@ -633,7 +633,7 @@ data_mmcif_pdbx_validation.dic
 >     + Add _pdbx_audit_support.funding_organization enumeration # not mapped
 >     + Add "GOLD" enumeration to em_support_film.material # not mapped
 >     + Add "FEI Falcon IV (4k X 4k)" to _em_image_recording.film_or_detector_model # merged
->     + Add "JADAS" and "crYOLO" to em_software.name
+>     + Add "JADAS" and "crYOLO" to em_software.name # merged
 >     + Remove local contet from _pdbx_database_status.status_code_nmr_data # added
 ;
 

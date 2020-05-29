@@ -175,6 +175,7 @@ pdbx_audit_revision_history
 pdbx_audit_revision_item
 pdbx_audit_support
 pdbx_bond_distance_limits
+pdbx_branch_scheme
 pdbx_buffer
 pdbx_buffer_components
 pdbx_chem_comp_atom_edit
@@ -247,7 +248,10 @@ pdbx_domain
 pdbx_domain_range
 pdbx_drug_info
 pdbx_entity_assembly
+pdbx_entity_branch
 pdbx_entity_branch_descriptor
+pdbx_entity_branch_link
+pdbx_entity_branch_list
 pdbx_entity_func_bind_mode
 pdbx_entity_func_enzyme
 pdbx_entity_func_other
