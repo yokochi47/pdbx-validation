@@ -469,6 +469,12 @@ Unmatched entry ID in both documents (<xsl:value-of select="$entry_id"/> and <xs
     </xsl:element>
   </xsl:template>
 
+  <xsl:template match="PDBx:pdbx_branch_schemeCategory">
+    <xsl:element name="PDBxv:{local-name()}">
+      <xsl:apply-templates mode="category-element"/>
+    </xsl:element>
+  </xsl:template>
+
   <xsl:template match="PDBx:pdbx_coordinate_modelCategory">
     <xsl:element name="PDBxv:{local-name()}">
       <xsl:apply-templates mode="category-element"/>
@@ -673,7 +679,25 @@ Unmatched entry ID in both documents (<xsl:value-of select="$entry_id"/> and <xs
     </xsl:element>
   </xsl:template>
 
+  <xsl:template match="PDBx:pdbx_entity_branchCategory">
+    <xsl:element name="PDBxv:{local-name()}">
+      <xsl:apply-templates mode="category-element"/>
+    </xsl:element>
+  </xsl:template>
+
   <xsl:template match="PDBx:pdbx_entity_branch_descriptorCategory">
+    <xsl:element name="PDBxv:{local-name()}">
+      <xsl:apply-templates mode="category-element"/>
+    </xsl:element>
+  </xsl:template>
+
+  <xsl:template match="PDBx:pdbx_entity_branch_linkCategory">
+    <xsl:element name="PDBxv:{local-name()}">
+      <xsl:apply-templates mode="category-element"/>
+    </xsl:element>
+  </xsl:template>
+
+  <xsl:template match="PDBx:pdbx_entity_branch_listCategory">
     <xsl:element name="PDBxv:{local-name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>

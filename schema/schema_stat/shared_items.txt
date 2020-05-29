@@ -460,6 +460,7 @@ entity.formula_weight
 entity.id
 entity_name_com.entity_id
 entity_name_com.name
+entity_name_com.pdbx_provenance WWPDB_LOCAL
 entity_name_sys.entity_id
 entity_name_sys.name
 entity_name_sys.system
@@ -606,6 +607,18 @@ pdbx_bond_distance_limits.atom_type_1
 pdbx_bond_distance_limits.atom_type_2
 pdbx_bond_distance_limits.lower_limit
 pdbx_bond_distance_limits.upper_limit
+pdbx_branch_scheme.asym_id
+pdbx_branch_scheme.auth_asym_id
+pdbx_branch_scheme.auth_mon_id
+pdbx_branch_scheme.auth_seq_num
+pdbx_branch_scheme.entity_id
+pdbx_branch_scheme.hetero
+pdbx_branch_scheme.mon_id
+pdbx_branch_scheme.num
+pdbx_branch_scheme.pdb_asym_id
+pdbx_branch_scheme.pdb_ins_code
+pdbx_branch_scheme.pdb_mon_id
+pdbx_branch_scheme.pdb_seq_num
 pdbx_coordinate_model.asym_id
 pdbx_coordinate_model.type
 pdbx_database_related.content_type
@@ -854,6 +867,26 @@ pdbx_entity_branch_descriptor.ordinal
 pdbx_entity_branch_descriptor.program
 pdbx_entity_branch_descriptor.program_version
 pdbx_entity_branch_descriptor.type
+pdbx_entity_branch.entity_id
+pdbx_entity_branch_link.atom_id_1
+pdbx_entity_branch_link.atom_id_2
+pdbx_entity_branch_link.atom_stereo_config_1
+pdbx_entity_branch_link.atom_stereo_config_2
+pdbx_entity_branch_link.comp_id_1
+pdbx_entity_branch_link.comp_id_2
+pdbx_entity_branch_link.details
+pdbx_entity_branch_link.entity_branch_list_num_1
+pdbx_entity_branch_link.entity_branch_list_num_2
+pdbx_entity_branch_link.entity_id
+pdbx_entity_branch_link.leaving_atom_id_1
+pdbx_entity_branch_link.leaving_atom_id_2
+pdbx_entity_branch_link.link_id
+pdbx_entity_branch_link.value_order
+pdbx_entity_branch_list.comp_id
+pdbx_entity_branch_list.entity_id
+pdbx_entity_branch_list.hetero
+pdbx_entity_branch_list.num
+pdbx_entity_branch.type
 pdbx_entity_nonpoly.comp_id
 pdbx_entity_nonpoly.entity_id
 pdbx_entity_nonpoly.name
@@ -2408,12 +2441,16 @@ struct_conn.id
 struct_conn.pdbx_dist_value
 struct_conn.pdbx_leaving_atom_flag
 struct_conn.pdbx_PDB_id
+struct_conn.pdbx_ptnr1_atom_stereo_config WWPDB_LOCAL
 struct_conn.pdbx_ptnr1_auth_alt_id
 struct_conn.pdbx_ptnr1_label_alt_id
+struct_conn.pdbx_ptnr1_leaving_atom_id WWPDB_LOCAL
 struct_conn.pdbx_ptnr1_PDB_ins_code
 struct_conn.pdbx_ptnr1_standard_comp_id
+struct_conn.pdbx_ptnr2_atom_stereo_config WWPDB_LOCAL
 struct_conn.pdbx_ptnr2_auth_alt_id
 struct_conn.pdbx_ptnr2_label_alt_id
+struct_conn.pdbx_ptnr2_leaving_atom_id WWPDB_LOCAL
 struct_conn.pdbx_ptnr2_PDB_ins_code
 struct_conn.pdbx_ptnr3_auth_alt_id
 struct_conn.pdbx_ptnr3_auth_asym_id
@@ -2426,6 +2463,7 @@ struct_conn.pdbx_ptnr3_label_atom_id
 struct_conn.pdbx_ptnr3_label_comp_id
 struct_conn.pdbx_ptnr3_label_seq_id
 struct_conn.pdbx_ptnr3_PDB_ins_code
+struct_conn.pdbx_role
 struct_conn.pdbx_value_order
 struct_conn.ptnr1_auth_asym_id
 struct_conn.ptnr1_auth_atom_id

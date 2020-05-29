@@ -21,7 +21,7 @@
 --  map xsd date type to: sql date type
 --
 -- Statistics of schema:
---  Generated 256 tables (3266 fields), 0 views (0 fields), 0 attr groups, 0 model groups in total
+--  Generated 260 tables (3308 fields), 0 views (0 fields), 0 attr groups, 0 model groups in total
 --   Unnecessary tables by inlining simple content as a primitive data type:
 --    schema location: schema/pdbx-validation-v2.xsd
 --      average_distance_constraint_violation, "Luzzati_sigma_a_obs", peptide_planarity_rms_dev, bond_angle_rms_dev_error, "Luzzati_coordinate_error_free", covalent_bond_rms_dev_error, "T11_esd", current, angle_target_value, recording_temperature_maximum, "F_calc", detector_distance, "S12_esd", value, dihedral_angle_target_value, "Cartn_y_esd", angle_omega, beta, upper_limit, maximum_distance_constraint_violation, value_esd, "L11_esd", taum, pdbx_solvent_shrinkage_radii, "B_iso_Wilson_estimate", rmsd, "F_meas_sigma_au", temp, covalent_bond_rms_dev, "S31_esd", chi2, chi3, chi4, "A_calc", chi5, neighbor_ligand_distance, chi1, phase_meas, "S22_esd", max_mean_cross_sectional_radii_gyration_esd, "B_meas_au", "T23_esd", "Luzzati_d_res_low_free", "L23_esd", "T13", atom_deviation, angle_kappa, "B_iso", average_torsion_angle_constraint_violation, "L13_esd", improper_torsion_angle_rms_dev, min_mean_cross_sectional_radii_gyration_esd, omega, "T13_esd", "pdbx_res_netI_over_av_sigmaI_2", dihedral_angle_value, mean_guiner_radius_esd, "pdbx_res_netI_over_sigmaI_2", "aniso_B33", distance_rms_dev, peptide_planarity_rms_dev_error, dihedral_angles_rms_dev, "T23", "T11", "Luzzati_d_res_low_obs", chamber_temperature, "L22_esd", resolution, concentration_range, "F_meas_au", distance_rms_dev_medoid, "S32_esd", pdbx_phase_calc_part_solvent, "T12", nominal_defocus_min, epsilon, energyfilter_lower, "S23_esd", diff_density_max_esd, tilt_angle_min, "S12", "T33", angle_value, pdbx_phase_calc_with_solvent, "S33_esd", recording_temperature_minimum, diff_density_min, "F_squared_calc", mean_guiner_radius, energyfilter_upper, "Cartn_x_esd", pdbx_dist_value, "S13", "T22", sampling_size, "Cartn_z", zeta, "L12_esd", alpha, "Cartn_z_esd", "aniso_B13", "sigmaI", min_mean_cross_sectional_radii_gyration, "S11_esd", "T12_esd", ambient_temp_esd, "A_meas", "P", "S22", phi, "S13_esd", angle_theta, "Cartn_y", "F_calc_au", "F_squared_meas", delta, "aniso_B12", "A_calc_au", rotation_per_n_subunits, gamma, nu1, nu2, nu3, nu4, "S23", "S11", origin_x, scan_time_backgd, origin_y, origin_z, "B_meas", prot_cis, nu0, "aniso_B23", "T22_esd", "aniso_B11", "S32", angle_phi, "L13", rise_per_n_subunits, maximum_torsion_angle_constraint_violation, "B_iso_min", angle_deviation, "B_calc", "aniso_B22", "S21", "F_meas_sigma", lower_limit, improper_torsion_angle, "F_squared_sigma", bond_angle_rms_dev, "S33", maximum_upper_distance_constraint_violation, angle_chi, maximum_lower_distance_constraint_violation, clash_magnitude, calibrated_defocus_min, ambient_pressure_esd, "pdbx_F_calc_with_solvent", "L23", "Luzzati_coordinate_error_obs", "L11", temperature, neighbor_macromolecule_distance, "L33_esd", diff_density_rms, pdbx_collection_time_total, tilt_angle_max, "B_iso_max", "S31", "T33_esd", diff_density_rms_esd, "L12", "S21_esd", voltage, pdbx_solvent_vdw_probe_radii, "A_meas_au", "B_calc_au", "B_iso_esd", psi, residual_tilt, "Cartn_x", power, improper_torsion_angle_rms_dev_error, max_mean_cross_sectional_radii_gyration, "F_meas", bond_deviation, "L33", scan_rate, diff_density_min_esd, "B_iso_mean", diff_density_max, "I", "Luzzati_sigma_a_free", dist, "pdbx_F_calc_part_solvent", phase_calc, tau2, tau3, tau4, nominal_defocus_max, pdbx_solvent_ion_probe_radii, tau0, dihedral_angles_rms_dev_error, tau1, distance_rms_dev_error, "L22", angle_psi
@@ -30,22 +30,22 @@
 --   Schema locations:
 --    schema/pdbx-validation-v2.xsd
 --   Table types:
---    0 root, 0 root children, 0 admin roots, 256 admin children
+--    0 root, 0 root children, 0 admin roots, 260 admin children
 --   System keys:
 --    0 primary keys (0 unique constraints), 0 foreign keys, 0 nested keys (0 as attribute, 0 as attribute group)
 --   User keys:
---    210 document keys, 0 serial keys, 0 xpath keys
+--    214 document keys, 0 serial keys, 0 xpath keys
 --   Contents:
---    444 attributes (41 in-place document keys), 2612 elements (5 in-place document keys), 0 simple contents (0 in-place document keys, 0 as attribute, 0 as conditional attribute)
+--    453 attributes (41 in-place document keys), 2641 elements (5 in-place document keys), 0 simple contents (0 in-place document keys, 0 as attribute, 0 as conditional attribute)
 --   Wild cards:
 --    0 any elements, 0 any attributes
 --   Constraints:
---    256 unique constraints from xsd:key, 1 unique constraints from xsd:unique, 139 foreign key constraints from xsd:keyref
+--    260 unique constraints from xsd:key, 1 unique constraints from xsd:unique, 142 foreign key constraints from xsd:keyref
 --
 
 --
--- PDBML-validation Schema v2.325
--- PDBXML-validation Schema translated from wwPDB Validation Information Dictionary v2.325, which is backward compatible with the PDBx/mmCIF Dictionary v5.325: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
+-- PDBML-validation Schema v2.326
+-- PDBXML-validation Schema translated from wwPDB Validation Information Dictionary v2.326, which is backward compatible with the PDBx/mmCIF Dictionary v5.326: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
 -- URI-reference = http://pdbml.pdb.org/schema/pdbx-validation-v2.xsd
 --
 
@@ -108,6 +108,7 @@ DROP TABLE IF EXISTS pdbx_audit_revision_details CASCADE;
 DROP TABLE IF EXISTS pdbx_audit_revision_group CASCADE;
 DROP TABLE IF EXISTS pdbx_audit_revision_item CASCADE;
 DROP TABLE IF EXISTS pdbx_bond_distance_limits CASCADE;
+DROP TABLE IF EXISTS pdbx_branch_scheme CASCADE;
 DROP TABLE IF EXISTS pdbx_coordinate_model CASCADE;
 DROP TABLE IF EXISTS pdbx_database_related CASCADE;
 DROP TABLE IF EXISTS pdbx_database_status CASCADE;
@@ -135,7 +136,10 @@ DROP TABLE IF EXISTS pdbx_em_validate_map_model_entity CASCADE;
 DROP TABLE IF EXISTS pdbx_em_validate_map_model_overall CASCADE;
 DROP TABLE IF EXISTS pdbx_em_volume_estimate_marker CASCADE;
 DROP TABLE IF EXISTS pdbx_entity_assembly CASCADE;
+DROP TABLE IF EXISTS pdbx_entity_branch CASCADE;
 DROP TABLE IF EXISTS pdbx_entity_branch_descriptor CASCADE;
+DROP TABLE IF EXISTS pdbx_entity_branch_link CASCADE;
+DROP TABLE IF EXISTS pdbx_entity_branch_list CASCADE;
 DROP TABLE IF EXISTS pdbx_entity_descriptor CASCADE;
 DROP TABLE IF EXISTS pdbx_entity_nonpoly CASCADE;
 DROP TABLE IF EXISTS pdbx_entity_poly_comp_link_list CASCADE;
@@ -2569,10 +2573,13 @@ CREATE TABLE em_volume_selection (
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v2.xsd (PDBxv), schema location: schema/pdbx-validation-v2.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
+DROP TYPE IF EXISTS ENUM_entity_name_com_pdbx_provenance CASCADE;
+CREATE TYPE ENUM_entity_name_com_pdbx_provenance AS ENUM ( 'UNIPROT', 'AUTHOR' );
 CREATE TABLE entity_name_com (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	entry_id TEXT ,
 	name TEXT ,
+	pdbx_provenance ENUM_entity_name_com_pdbx_provenance ,
 -- ATTRIBUTE
 	entity_id TEXT NOT NULL
 );
@@ -2902,6 +2909,37 @@ CREATE TABLE pdbx_bond_distance_limits (
 	atom_type_1 TEXT NOT NULL ,
 -- ATTRIBUTE
 	atom_type_2 TEXT NOT NULL
+);
+
+--
+-- (quoted from pdbx_branch_schemeType)
+-- The PDBX_BRANCH_SCHEME category provides residue level nomenclature mapping for branch chain entities. Example 1 - <PDBxv:pdbx_branch_schemeCategory> <PDBxv:pdbx_branch_scheme asym_id="B" entity_id="2" mon_id="NAG" num="1"> <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id> <PDBxv:auth_mon_id>NAG</PDBxv:auth_mon_id> <PDBxv:auth_seq_num>1592</PDBxv:auth_seq_num> <PDBxv:hetero>n</PDBxv:hetero> <PDBxv:pdb_asym_id>B</PDBxv:pdb_asym_id> <PDBxv:pdb_mon_id>NAG</PDBxv:pdb_mon_id> <PDBxv:pdb_seq_num>1</PDBxv:pdb_seq_num> </PDBxv:pdbx_branch_scheme> <PDBxv:pdbx_branch_scheme asym_id="B" entity_id="2" mon_id="GAL" num="2"> <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id> <PDBxv:auth_mon_id>GAL</PDBxv:auth_mon_id> <PDBxv:auth_seq_num>1591</PDBxv:auth_seq_num> <PDBxv:hetero>n</PDBxv:hetero> <PDBxv:pdb_asym_id>B</PDBxv:pdb_asym_id> <PDBxv:pdb_mon_id>GAL</PDBxv:pdb_mon_id> <PDBxv:pdb_seq_num>2</PDBxv:pdb_seq_num> </PDBxv:pdbx_branch_scheme> <PDBxv:pdbx_branch_scheme asym_id="B" entity_id="2" mon_id="FUC" num="3"> <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id> <PDBxv:auth_mon_id>FUC</PDBxv:auth_mon_id> <PDBxv:auth_seq_num>1590</PDBxv:auth_seq_num> <PDBxv:hetero>n</PDBxv:hetero> <PDBxv:pdb_asym_id>B</PDBxv:pdb_asym_id> <PDBxv:pdb_mon_id>FUC</PDBxv:pdb_mon_id> <PDBxv:pdb_seq_num>3</PDBxv:pdb_seq_num> </PDBxv:pdbx_branch_scheme> <PDBxv:pdbx_branch_scheme asym_id="B" entity_id="2" mon_id="FUC" num="4"> <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id> <PDBxv:auth_mon_id>FUC</PDBxv:auth_mon_id> <PDBxv:auth_seq_num>1593</PDBxv:auth_seq_num> <PDBxv:hetero>n</PDBxv:hetero> <PDBxv:pdb_asym_id>B</PDBxv:pdb_asym_id> <PDBxv:pdb_mon_id>FUC</PDBxv:pdb_mon_id> <PDBxv:pdb_seq_num>4</PDBxv:pdb_seq_num> </PDBxv:pdbx_branch_scheme> </PDBxv:pdbx_branch_schemeCategory>
+-- URI-reference = http://pdbml.pdb.org/dictionaries/mmcif_pdbx_v50.dic/Categories/pdbx_branch_scheme.html
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v2.xsd (PDBxv), schema location: schema/pdbx-validation-v2.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+DROP TYPE IF EXISTS ENUM_pdbx_branch_scheme_hetero CASCADE;
+CREATE TYPE ENUM_pdbx_branch_scheme_hetero AS ENUM ( 'no', 'n', 'yes', 'y' );
+CREATE TABLE pdbx_branch_scheme (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	entry_id TEXT ,
+	auth_asym_id TEXT ,
+	auth_mon_id TEXT ,
+	auth_seq_num TEXT ,
+	hetero ENUM_pdbx_branch_scheme_hetero ,
+	pdb_asym_id TEXT ,
+	pdb_ins_code TEXT ,
+	pdb_mon_id TEXT ,
+	pdb_seq_num TEXT ,
+-- ATTRIBUTE
+	asym_id TEXT NOT NULL ,
+-- ATTRIBUTE
+	entity_id TEXT NOT NULL ,
+-- ATTRIBUTE
+	mon_id TEXT NOT NULL ,
+-- ATTRIBUTE
+-- xsd:restriction/xsd:minInclusive="1"
+	num INTEGER CHECK ( num >= 1 ) NOT NULL
 );
 
 --
@@ -3667,6 +3705,23 @@ CREATE TABLE pdbx_entity_assembly (
 );
 
 --
+-- (quoted from pdbx_entity_branchType)
+-- Data items in the PDBX_ENTITY_BRANCH category specify the list of branched entities and the type. Example 1 - <PDBxv:pdbx_entity_branchCategory> <PDBxv:pdbx_entity_branch entity_id="2"> <PDBxv:type>oligosaccharide</PDBxv:type> </PDBxv:pdbx_entity_branch> </PDBxv:pdbx_entity_branchCategory>
+-- URI-reference = http://pdbml.pdb.org/dictionaries/mmcif_pdbx_v50.dic/Categories/pdbx_entity_branch.html
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v2.xsd (PDBxv), schema location: schema/pdbx-validation-v2.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+DROP TYPE IF EXISTS ENUM_pdbx_entity_branch_type CASCADE;
+CREATE TYPE ENUM_pdbx_entity_branch_type AS ENUM ( 'oligosaccharide' );
+CREATE TABLE pdbx_entity_branch (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	entry_id TEXT ,
+	type ENUM_pdbx_entity_branch_type ,
+-- ATTRIBUTE
+	entity_id TEXT NOT NULL
+);
+
+--
 -- (quoted from pdbx_entity_branch_descriptorType)
 -- Data items in the PDBX_ENTITY_BRANCH_DESCRIPTOR category provide string descriptors of entity chemical structure. Example 1 - <PDBxv:pdbx_entity_branch_descriptorCategory> <PDBxv:pdbx_entity_branch_descriptor ordinal="1"> <PDBxv:descriptor>[][Asn]{[(4+1)][b-D-GlcpNAc]{[(4+1)][b-D-GlcpNAc]{[(4+1)][b-D-Manp]{[(3+1)][a-D-Manp]{[(2+1)][a-D-Manp]{[(2+1)][a-D-Manp]{}}}[(6+1)][a-D-Manp]{[(3+1)][a-D-Manp]{[(2+1)][a-D-Manp]{}}[(6+1)][a-D-Manp]{[(2+1)][a-D-Manp]{}}}}}}}</PDBxv:descriptor> <PDBxv:entity_id>1</PDBxv:entity_id> <PDBxv:program>PDB-CARE</PDBxv:program> <PDBxv:program_version>Beta</PDBxv:program_version> <PDBxv:type>LINUCS</PDBxv:type> </PDBxv:pdbx_entity_branch_descriptor> </PDBxv:pdbx_entity_branch_descriptorCategory>
 -- URI-reference = http://pdbml.pdb.org/dictionaries/mmcif_pdbx_v50.dic/Categories/pdbx_entity_branch_descriptor.html
@@ -3685,6 +3740,61 @@ CREATE TABLE pdbx_entity_branch_descriptor (
 	type ENUM_pdbx_entity_branch_descriptor_type ,
 -- ATTRIBUTE
 	ordinal INTEGER NOT NULL
+);
+
+--
+-- (quoted from pdbx_entity_branch_linkType)
+-- Data items in the PDBX_ENTITY_BRANCH_LINK category give details about the linkages between components within a branched entity. Example 1 - base on PDB entry 2WMG <PDBxv:pdbx_entity_branch_linkCategory> <PDBxv:pdbx_entity_branch_link link_id="1"> <PDBxv:atom_id_1>O4</PDBxv:atom_id_1> <PDBxv:atom_id_2>C1</PDBxv:atom_id_2> <PDBxv:atom_stereo_config_2>R</PDBxv:atom_stereo_config_2> <PDBxv:comp_id_1>NAG</PDBxv:comp_id_1> <PDBxv:comp_id_2>GAL</PDBxv:comp_id_2> <PDBxv:entity_branch_list_num_1>1</PDBxv:entity_branch_list_num_1> <PDBxv:entity_branch_list_num_2>2</PDBxv:entity_branch_list_num_2> <PDBxv:entity_id>2</PDBxv:entity_id> <PDBxv:leaving_atom_id_1>HO4</PDBxv:leaving_atom_id_1> <PDBxv:leaving_atom_id_2>O1</PDBxv:leaving_atom_id_2> <PDBxv:value_order>sing</PDBxv:value_order> </PDBxv:pdbx_entity_branch_link> <PDBxv:pdbx_entity_branch_link link_id="2"> <PDBxv:atom_id_1>O2</PDBxv:atom_id_1> <PDBxv:atom_id_2>C1</PDBxv:atom_id_2> <PDBxv:atom_stereo_config_2>R</PDBxv:atom_stereo_config_2> <PDBxv:comp_id_1>GAL</PDBxv:comp_id_1> <PDBxv:comp_id_2>FUC</PDBxv:comp_id_2> <PDBxv:entity_branch_list_num_1>2</PDBxv:entity_branch_list_num_1> <PDBxv:entity_branch_list_num_2>3</PDBxv:entity_branch_list_num_2> <PDBxv:entity_id>2</PDBxv:entity_id> <PDBxv:leaving_atom_id_1>HO2</PDBxv:leaving_atom_id_1> <PDBxv:leaving_atom_id_2>O1</PDBxv:leaving_atom_id_2> <PDBxv:value_order>sing</PDBxv:value_order> </PDBxv:pdbx_entity_branch_link> <PDBxv:pdbx_entity_branch_link link_id="3"> <PDBxv:atom_id_1>O3</PDBxv:atom_id_1> <PDBxv:atom_id_2>C1</PDBxv:atom_id_2> <PDBxv:atom_stereo_config_2>R</PDBxv:atom_stereo_config_2> <PDBxv:comp_id_1>NAG</PDBxv:comp_id_1> <PDBxv:comp_id_2>FUC</PDBxv:comp_id_2> <PDBxv:entity_branch_list_num_1>1</PDBxv:entity_branch_list_num_1> <PDBxv:entity_branch_list_num_2>4</PDBxv:entity_branch_list_num_2> <PDBxv:entity_id>2</PDBxv:entity_id> <PDBxv:leaving_atom_id_1>HO3</PDBxv:leaving_atom_id_1> <PDBxv:leaving_atom_id_2>O1</PDBxv:leaving_atom_id_2> <PDBxv:value_order>sing</PDBxv:value_order> </PDBxv:pdbx_entity_branch_link> </PDBxv:pdbx_entity_branch_linkCategory>
+-- URI-reference = http://pdbml.pdb.org/dictionaries/mmcif_pdbx_v50.dic/Categories/pdbx_entity_branch_link.html
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v2.xsd (PDBxv), schema location: schema/pdbx-validation-v2.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+DROP TYPE IF EXISTS ENUM_pdbx_entity_branch_link_atom_stereo_config_1 CASCADE;
+CREATE TYPE ENUM_pdbx_entity_branch_link_atom_stereo_config_1 AS ENUM ( 'R', 'S', 'N' );
+DROP TYPE IF EXISTS ENUM_pdbx_entity_branch_link_atom_stereo_config_2 CASCADE;
+CREATE TYPE ENUM_pdbx_entity_branch_link_atom_stereo_config_2 AS ENUM ( 'R', 'S', 'N' );
+DROP TYPE IF EXISTS ENUM_pdbx_entity_branch_link_value_order CASCADE;
+CREATE TYPE ENUM_pdbx_entity_branch_link_value_order AS ENUM ( 'sing', 'doub', 'trip', 'quad', 'arom', 'poly', 'delo', 'pi' );
+CREATE TABLE pdbx_entity_branch_link (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	entry_id TEXT ,
+	atom_id_1 TEXT ,
+	atom_id_2 TEXT ,
+	atom_stereo_config_1 ENUM_pdbx_entity_branch_link_atom_stereo_config_1 ,
+	atom_stereo_config_2 ENUM_pdbx_entity_branch_link_atom_stereo_config_2 ,
+	comp_id_1 TEXT ,
+	comp_id_2 TEXT ,
+	details TEXT ,
+	entity_branch_list_num_1 INTEGER ,
+	entity_branch_list_num_2 INTEGER ,
+	entity_id TEXT ,
+	leaving_atom_id_1 TEXT ,
+	leaving_atom_id_2 TEXT ,
+	value_order ENUM_pdbx_entity_branch_link_value_order ,
+-- ATTRIBUTE
+	link_id INTEGER NOT NULL
+);
+
+--
+-- (quoted from pdbx_entity_branch_listType)
+-- Data items in the PDBX_ENTITY_BRANCH_LIST category specify the list of monomers in a branched entity. Allowance is made for the possibility of microheterogeneity in a sample by allowing a given sequence number to be correlated with more than one monomer ID. The corresponding ATOM_SITE entries should reflect this heterogeneity. Example 1 - <PDBxv:pdbx_entity_branch_listCategory> <PDBxv:pdbx_entity_branch_list comp_id="NAG" entity_id="2" num="1"> <PDBxv:hetero>n</PDBxv:hetero> </PDBxv:pdbx_entity_branch_list> <PDBxv:pdbx_entity_branch_list comp_id="GAL" entity_id="2" num="2"> <PDBxv:hetero>n</PDBxv:hetero> </PDBxv:pdbx_entity_branch_list> <PDBxv:pdbx_entity_branch_list comp_id="FUC" entity_id="2" num="3"> <PDBxv:hetero>n</PDBxv:hetero> </PDBxv:pdbx_entity_branch_list> <PDBxv:pdbx_entity_branch_list comp_id="FUC" entity_id="2" num="4"> <PDBxv:hetero>n</PDBxv:hetero> </PDBxv:pdbx_entity_branch_list> </PDBxv:pdbx_entity_branch_listCategory>
+-- URI-reference = http://pdbml.pdb.org/dictionaries/mmcif_pdbx_v50.dic/Categories/pdbx_entity_branch_list.html
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v2.xsd (PDBxv), schema location: schema/pdbx-validation-v2.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+DROP TYPE IF EXISTS ENUM_pdbx_entity_branch_list_hetero CASCADE;
+CREATE TYPE ENUM_pdbx_entity_branch_list_hetero AS ENUM ( 'no', 'n', 'yes', 'y' );
+CREATE TABLE pdbx_entity_branch_list (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	entry_id TEXT ,
+	hetero ENUM_pdbx_entity_branch_list_hetero ,
+-- ATTRIBUTE
+	comp_id TEXT NOT NULL ,
+-- ATTRIBUTE
+	entity_id TEXT NOT NULL ,
+-- ATTRIBUTE
+-- xsd:restriction/xsd:minInclusive="1"
+	num INTEGER CHECK ( num >= 1 ) NOT NULL
 );
 
 --
@@ -7189,6 +7299,12 @@ DROP TYPE IF EXISTS ENUM_struct_conn_conn_type_id CASCADE;
 CREATE TYPE ENUM_struct_conn_conn_type_id AS ENUM ( 'covale', 'disulf', 'metalc', 'hydrog' );
 DROP TYPE IF EXISTS ENUM_struct_conn_pdbx_leaving_atom_flag CASCADE;
 CREATE TYPE ENUM_struct_conn_pdbx_leaving_atom_flag AS ENUM ( 'both', 'one', 'none' );
+DROP TYPE IF EXISTS ENUM_struct_conn_pdbx_ptnr1_atom_stereo_config CASCADE;
+CREATE TYPE ENUM_struct_conn_pdbx_ptnr1_atom_stereo_config AS ENUM ( 'R', 'S', 'N' );
+DROP TYPE IF EXISTS ENUM_struct_conn_pdbx_ptnr2_atom_stereo_config CASCADE;
+CREATE TYPE ENUM_struct_conn_pdbx_ptnr2_atom_stereo_config AS ENUM ( 'R', 'S', 'N' );
+DROP TYPE IF EXISTS ENUM_struct_conn_pdbx_role CASCADE;
+CREATE TYPE ENUM_struct_conn_pdbx_role AS ENUM ( 'N-Glycosylation', 'O-Glycosylation', 'C-Mannosylation' );
 DROP TYPE IF EXISTS ENUM_struct_conn_pdbx_value_order CASCADE;
 CREATE TYPE ENUM_struct_conn_pdbx_value_order AS ENUM ( 'sing', 'doub', 'trip', 'quad' );
 CREATE TABLE struct_conn (
@@ -7201,12 +7317,16 @@ CREATE TABLE struct_conn (
 	pdbx_dist_value DECIMAL ,
 	pdbx_leaving_atom_flag ENUM_struct_conn_pdbx_leaving_atom_flag ,
 	"pdbx_ptnr1_PDB_ins_code" TEXT ,
+	pdbx_ptnr1_atom_stereo_config ENUM_struct_conn_pdbx_ptnr1_atom_stereo_config ,
 	pdbx_ptnr1_auth_alt_id TEXT ,
 	pdbx_ptnr1_label_alt_id TEXT ,
+	pdbx_ptnr1_leaving_atom_id TEXT ,
 	pdbx_ptnr1_standard_comp_id TEXT ,
 	"pdbx_ptnr2_PDB_ins_code" TEXT ,
+	pdbx_ptnr2_atom_stereo_config ENUM_struct_conn_pdbx_ptnr2_atom_stereo_config ,
 	pdbx_ptnr2_auth_alt_id TEXT ,
 	pdbx_ptnr2_label_alt_id TEXT ,
+	pdbx_ptnr2_leaving_atom_id TEXT ,
 	"pdbx_ptnr3_PDB_ins_code" TEXT ,
 	pdbx_ptnr3_auth_alt_id TEXT ,
 	pdbx_ptnr3_auth_asym_id TEXT ,
@@ -7218,6 +7338,7 @@ CREATE TABLE struct_conn (
 	pdbx_ptnr3_label_atom_id TEXT ,
 	pdbx_ptnr3_label_comp_id TEXT ,
 	pdbx_ptnr3_label_seq_id INTEGER ,
+	pdbx_role ENUM_struct_conn_pdbx_role ,
 	pdbx_value_order ENUM_struct_conn_pdbx_value_order ,
 	ptnr1_auth_asym_id TEXT ,
 	ptnr1_auth_atom_id TEXT ,
@@ -7941,6 +8062,9 @@ CREATE TABLE symmetry_equiv (
 -- (derived from xsd:key[@name='pdbx_bond_distance_limitsKey_0'])
 --ALTER TABLE pdbx_bond_distance_limits ADD CONSTRAINT UNQ_pdbx_bond_distance_limits UNIQUE ( entry_id, atom_type_1, atom_type_2 );
 
+-- (derived from xsd:key[@name='pdbx_branch_schemeKey_0'])
+--ALTER TABLE pdbx_branch_scheme ADD CONSTRAINT UNQ_pdbx_branch_scheme UNIQUE ( entry_id, asym_id, entity_id, mon_id, num );
+
 -- (derived from xsd:key[@name='pdbx_coordinate_modelKey_0'])
 --ALTER TABLE pdbx_coordinate_model ADD CONSTRAINT UNQ_pdbx_coordinate_model UNIQUE ( entry_id, asym_id );
 
@@ -8043,8 +8167,17 @@ CREATE TABLE symmetry_equiv (
 -- (derived from xsd:key[@name='pdbx_entity_assemblyKey_0'])
 --ALTER TABLE pdbx_entity_assembly ADD CONSTRAINT UNQ_pdbx_entity_assembly UNIQUE ( entry_id, entity_id, id );
 
+-- (derived from xsd:key[@name='pdbx_entity_branchKey_0'])
+--ALTER TABLE pdbx_entity_branch ADD CONSTRAINT UNQ_pdbx_entity_branch UNIQUE ( entry_id, entity_id );
+
 -- (derived from xsd:key[@name='pdbx_entity_branch_descriptorKey_0'])
 --ALTER TABLE pdbx_entity_branch_descriptor ADD CONSTRAINT UNQ_pdbx_entity_branch_descriptor UNIQUE ( entry_id, ordinal );
+
+-- (derived from xsd:key[@name='pdbx_entity_branch_linkKey_0'])
+--ALTER TABLE pdbx_entity_branch_link ADD CONSTRAINT UNQ_pdbx_entity_branch_link UNIQUE ( entry_id, link_id );
+
+-- (derived from xsd:key[@name='pdbx_entity_branch_listKey_0'])
+--ALTER TABLE pdbx_entity_branch_list ADD CONSTRAINT UNQ_pdbx_entity_branch_list UNIQUE ( entry_id, comp_id, entity_id, num );
 
 -- (derived from xsd:key[@name='pdbx_entity_descriptorKey_0'])
 --ALTER TABLE pdbx_entity_descriptor ADD CONSTRAINT UNQ_pdbx_entity_descriptor UNIQUE ( entry_id, ordinal );
@@ -8575,22 +8708,31 @@ CREATE TABLE symmetry_equiv (
 --ALTER TABLE entity_poly ADD CONSTRAINT KR_entityKeyref_0_0_2_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
 -- (derived from xsd:keyref[@name='entityKeyref_0_0_3_0'])
---ALTER TABLE pdbx_entity_assembly ADD CONSTRAINT KR_entityKeyref_0_0_3_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
+--ALTER TABLE pdbx_branch_scheme ADD CONSTRAINT KR_entityKeyref_0_0_3_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
 -- (derived from xsd:keyref[@name='entityKeyref_0_0_4_0'])
---ALTER TABLE pdbx_entity_branch_descriptor ADD CONSTRAINT KR_entityKeyref_0_0_4_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
+--ALTER TABLE pdbx_entity_assembly ADD CONSTRAINT KR_entityKeyref_0_0_4_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
 -- (derived from xsd:keyref[@name='entityKeyref_0_0_5_0'])
---ALTER TABLE pdbx_entity_descriptor ADD CONSTRAINT KR_entityKeyref_0_0_5_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
+--ALTER TABLE pdbx_entity_branch ADD CONSTRAINT KR_entityKeyref_0_0_5_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
 -- (derived from xsd:keyref[@name='entityKeyref_0_0_6_0'])
---ALTER TABLE pdbx_entity_nonpoly ADD CONSTRAINT KR_entityKeyref_0_0_6_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
+--ALTER TABLE pdbx_entity_branch_descriptor ADD CONSTRAINT KR_entityKeyref_0_0_6_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
 -- (derived from xsd:keyref[@name='entityKeyref_0_0_7_0'])
---ALTER TABLE struct_asym ADD CONSTRAINT KR_entityKeyref_0_0_7_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
+--ALTER TABLE pdbx_entity_branch_list ADD CONSTRAINT KR_entityKeyref_0_0_7_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
 -- (derived from xsd:keyref[@name='entityKeyref_0_0_8_0'])
---ALTER TABLE struct_ref ADD CONSTRAINT KR_entityKeyref_0_0_8_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
+--ALTER TABLE pdbx_entity_descriptor ADD CONSTRAINT KR_entityKeyref_0_0_8_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
+
+-- (derived from xsd:keyref[@name='entityKeyref_0_0_9_0'])
+--ALTER TABLE pdbx_entity_nonpoly ADD CONSTRAINT KR_entityKeyref_0_0_9_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
+
+-- (derived from xsd:keyref[@name='entityKeyref_0_0_10_0'])
+--ALTER TABLE struct_asym ADD CONSTRAINT KR_entityKeyref_0_0_10_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
+
+-- (derived from xsd:keyref[@name='entityKeyref_0_0_11_0'])
+--ALTER TABLE struct_ref ADD CONSTRAINT KR_entityKeyref_0_0_11_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
 -- (derived from xsd:keyref[@name='entity_polyKeyref_0_0_0_0'])
 --ALTER TABLE entity_poly_seq ADD CONSTRAINT KR_entity_polyKeyref_0_0_0_0 FOREIGN KEY ( entity_id ) REFERENCES entity_poly ( entity_id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;

@@ -166,3 +166,7 @@ pdbx_audit_revision_group CHEM_COMP_INT
 pdbx_audit_revision_category CHEM_COMP_INT
 pdbx_audit_revision_details CHEM_COMP_INT
 pdbx_audit_revision_item CHEM_COMP_INT
+pdbx_entity_branch_list WWPDB_LOCAL
+pdbx_entity_branch_link WWPDB_LOCAL
+pdbx_entity_branch WWPDB_LOCAL
+pdbx_branch_scheme WWPDB_LOCAL
