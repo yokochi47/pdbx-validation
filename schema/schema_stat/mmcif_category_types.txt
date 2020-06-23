@@ -8,7 +8,6 @@ pdbx_version WWPDB_DEPRECATED
 pdbx_database_proc WWPDB_LOCAL
 pdbx_entity_name WWPDB_LOCAL
 pdbx_contact_author WWPDB_LOCAL
-pdbx_chem_comp_synonyms WWPDB_LOCAL
 pdbx_remediation_atom_site_mapping WWPDB_LOCAL
 pdbx_nmr_assigned_chem_shift_list WWPDB_LOCAL
 pdbx_nmr_chem_shift_experiment WWPDB_LOCAL
@@ -166,7 +165,3 @@ pdbx_audit_revision_group CHEM_COMP_INT
 pdbx_audit_revision_category CHEM_COMP_INT
 pdbx_audit_revision_details CHEM_COMP_INT
 pdbx_audit_revision_item CHEM_COMP_INT
-pdbx_entity_branch_list WWPDB_LOCAL
-pdbx_entity_branch_link WWPDB_LOCAL
-pdbx_entity_branch WWPDB_LOCAL
-pdbx_branch_scheme WWPDB_LOCAL

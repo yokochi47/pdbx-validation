@@ -65,7 +65,7 @@ pdbx_audit_revision_group CHEM_COMP_INT
 pdbx_audit_revision_history CHEM_COMP_INT
 pdbx_audit_revision_item CHEM_COMP_INT
 pdbx_bond_distance_limits
-pdbx_branch_scheme WWPDB_LOCAL
+pdbx_branch_scheme
 pdbx_coordinate_model
 pdbx_database_related
 pdbx_database_status
@@ -81,10 +81,10 @@ pdbx_distant_solvent_atoms
 pdbx_domain
 pdbx_domain_range
 pdbx_entity_assembly
-pdbx_entity_branch WWPDB_LOCAL
+pdbx_entity_branch
 pdbx_entity_branch_descriptor
-pdbx_entity_branch_link WWPDB_LOCAL
-pdbx_entity_branch_list WWPDB_LOCAL
+pdbx_entity_branch_link
+pdbx_entity_branch_list
 pdbx_entity_nonpoly
 pdbx_entity_poly_comp_link_list
 pdbx_entry_details

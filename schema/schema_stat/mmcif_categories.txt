@@ -180,6 +180,7 @@ pdbx_buffer
 pdbx_buffer_components
 pdbx_chem_comp_atom_edit
 pdbx_chem_comp_atom_feature
+pdbx_chem_comp_atom_related
 pdbx_chem_comp_audit
 pdbx_chem_comp_bond_edit
 pdbx_chem_comp_depositor_info
@@ -196,6 +197,7 @@ pdbx_chem_comp_model_descriptor
 pdbx_chem_comp_model_feature
 pdbx_chem_comp_model_reference
 pdbx_chem_comp_nonstandard
+pdbx_chem_comp_related
 pdbx_chem_comp_subcomponent_entity_list
 pdbx_chem_comp_subcomponent_struct_conn
 pdbx_chem_comp_synonyms

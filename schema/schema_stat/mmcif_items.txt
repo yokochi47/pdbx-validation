@@ -306,6 +306,7 @@ chem_comp_atom.pdbx_polymer_type
 chem_comp_atom.pdbx_ref_id
 chem_comp_atom.pdbx_residue_numbering
 chem_comp_atom.pdbx_stereo_config
+chem_comp_atom.pdbx_stnd_atom_id
 chem_comp_atom.substruct_code
 chem_comp_atom.type_symbol
 chem_comp_bond.atom_id_1
@@ -2003,6 +2004,12 @@ pdbx_chem_comp_atom_edit.ordinal
 pdbx_chem_comp_atom_feature.atom_id
 pdbx_chem_comp_atom_feature.comp_id
 pdbx_chem_comp_atom_feature.feature_type
+pdbx_chem_comp_atom_related.atom_id
+pdbx_chem_comp_atom_related.comp_id
+pdbx_chem_comp_atom_related.ordinal
+pdbx_chem_comp_atom_related.related_atom_id
+pdbx_chem_comp_atom_related.related_comp_id
+pdbx_chem_comp_atom_related.related_type
 pdbx_chem_comp_audit.action_type
 pdbx_chem_comp_audit.annotator
 pdbx_chem_comp_audit.comp_id
@@ -2084,6 +2091,10 @@ pdbx_chem_comp_model_reference.db_name
 pdbx_chem_comp_model_reference.model_id
 pdbx_chem_comp_nonstandard.comp_id
 pdbx_chem_comp_nonstandard.type
+pdbx_chem_comp_related.comp_id
+pdbx_chem_comp_related.details
+pdbx_chem_comp_related.related_comp_id
+pdbx_chem_comp_related.relationship_type
 pdbx_chem_comp_subcomponent_entity_list.class
 pdbx_chem_comp_subcomponent_entity_list.id
 pdbx_chem_comp_subcomponent_entity_list.parent_comp_id

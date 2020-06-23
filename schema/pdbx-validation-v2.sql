@@ -44,8 +44,8 @@
 --
 
 --
--- PDBML-validation Schema v2.326
--- PDBXML-validation Schema translated from wwPDB Validation Information Dictionary v2.326, which is backward compatible with the PDBx/mmCIF Dictionary v5.326: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
+-- PDBML-validation Schema v2.327
+-- PDBXML-validation Schema translated from wwPDB Validation Information Dictionary v2.327, which is backward compatible with the PDBx/mmCIF Dictionary v5.327: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
 -- URI-reference = http://pdbml.pdb.org/schema/pdbx-validation-v2.xsd
 --
 
@@ -3729,7 +3729,7 @@ CREATE TABLE pdbx_entity_branch (
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_entity_branch_descriptor_type CASCADE;
-CREATE TYPE ENUM_pdbx_entity_branch_descriptor_type AS ENUM ( 'LINUCS', 'Glycam Condensed Sequence', 'Glycam Condensed Core Sequence' );
+CREATE TYPE ENUM_pdbx_entity_branch_descriptor_type AS ENUM ( 'LINUCS', 'Glycam Condensed Sequence', 'Glycam Condensed Core Sequence', 'WURCS' );
 CREATE TABLE pdbx_entity_branch_descriptor (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	entry_id TEXT ,
