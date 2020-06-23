@@ -112,6 +112,7 @@ pdbx_buffer
 pdbx_buffer_components
 pdbx_chem_comp_atom_edit
 pdbx_chem_comp_atom_feature
+pdbx_chem_comp_atom_related
 pdbx_chem_comp_audit
 pdbx_chem_comp_bond_edit
 pdbx_chem_comp_depositor_info WWPDB_LOCAL
@@ -128,9 +129,10 @@ pdbx_chem_comp_model_descriptor
 pdbx_chem_comp_model_feature
 pdbx_chem_comp_model_reference
 pdbx_chem_comp_nonstandard WWPDB_LOCAL
+pdbx_chem_comp_related
 pdbx_chem_comp_subcomponent_entity_list
 pdbx_chem_comp_subcomponent_struct_conn
-pdbx_chem_comp_synonyms WWPDB_LOCAL
+pdbx_chem_comp_synonyms
 pdbx_chem_comp_upload_depositor_info WWPDB_LOCAL
 pdbx_columninfo WWPDB_LOCAL
 pdbx_connect WWPDB_LOCAL

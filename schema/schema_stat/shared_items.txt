@@ -460,7 +460,7 @@ entity.formula_weight
 entity.id
 entity_name_com.entity_id
 entity_name_com.name
-entity_name_com.pdbx_provenance WWPDB_LOCAL
+entity_name_com.pdbx_provenance
 entity_name_sys.entity_id
 entity_name_sys.name
 entity_name_sys.system
@@ -2441,16 +2441,16 @@ struct_conn.id
 struct_conn.pdbx_dist_value
 struct_conn.pdbx_leaving_atom_flag
 struct_conn.pdbx_PDB_id
-struct_conn.pdbx_ptnr1_atom_stereo_config WWPDB_LOCAL
+struct_conn.pdbx_ptnr1_atom_stereo_config
 struct_conn.pdbx_ptnr1_auth_alt_id
 struct_conn.pdbx_ptnr1_label_alt_id
-struct_conn.pdbx_ptnr1_leaving_atom_id WWPDB_LOCAL
+struct_conn.pdbx_ptnr1_leaving_atom_id
 struct_conn.pdbx_ptnr1_PDB_ins_code
 struct_conn.pdbx_ptnr1_standard_comp_id
-struct_conn.pdbx_ptnr2_atom_stereo_config WWPDB_LOCAL
+struct_conn.pdbx_ptnr2_atom_stereo_config
 struct_conn.pdbx_ptnr2_auth_alt_id
 struct_conn.pdbx_ptnr2_label_alt_id
-struct_conn.pdbx_ptnr2_leaving_atom_id WWPDB_LOCAL
+struct_conn.pdbx_ptnr2_leaving_atom_id
 struct_conn.pdbx_ptnr2_PDB_ins_code
 struct_conn.pdbx_ptnr3_auth_alt_id
 struct_conn.pdbx_ptnr3_auth_asym_id

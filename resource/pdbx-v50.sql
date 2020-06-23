@@ -21,7 +21,7 @@
 --  map xsd date type to: sql date type
 --
 -- Statistics of schema:
---  Generated 558 tables (6796 fields), 0 views (0 fields), 0 attr groups, 0 model groups in total
+--  Generated 560 tables (6809 fields), 0 views (0 fields), 0 attr groups, 0 model groups in total
 --   Unnecessary tables by inlining simple content as a primitive data type:
 --    schema location: resource/pdbx-v50.xsd
 --      "S31", "T12_esd", "B_iso_mean", sampling_size, "U_tls13", angle_beta_esd, "Cartn_z_esd", pdbx_crystal_diffrn_lifetime, diff_density_max, diffr_kappa, "U_equiv_geom_mean_esd", ambient_temp_esd, pressure_esd, "dist_HA_esd", "model_Cartn_x", "B_equiv_geom_mean_esd", "S13_esd", "F_squared_meas", "U13_esd", "L11", "aniso_U33", "B33", protein_volume, "L23", "Cartn_y", epsilon, average_torsion_angle_constraint_violation, "S32", scan_rate, yield_pooled_fractions, improper_torsion_angle, reciprocal_length_a_esd, "aniso_U23", covalent_bond_rms_dev, angle_value, dist_esd, temperature_decomposition_esd, "F_calc", angle_gamma_esd, recording_temperature_maximum, length_c_esd, "aniso_U13_esd", "B_calc_au", "aniso_B33_esd", "aniso_U22", "B22", inducer_concentration, "L12", "Cartn_z", nu2, "S21", nu1, "U_tls23", nu4, "U_tls11", nu3, peptide_planarity_rms_dev, "S33", "Luzzati_d_res_low_obs", nu0, temperature, pdbx_phase_calc_with_solvent, "Luzzati_sigma_a_free", "Cartn_x_esd", pressure, lower_limit, "B_iso_min", diffr_chi, "A_meas_au", angle_psi, bond, "Luzzati_sigma_a_obs", "B11", "L13", "B33_esd", diff_density_rms_esd, "B23", "F_meas_au", "F_meas_sigma_au", pdbx_crystal_direction_1, pdbx_crystal_direction_2, "U_tls12", zeta, pdbx_crystal_direction_3, "S22", "S11_esd", scan_time_backgd, pdbx_crystal_diffrn_limit, flow_rate, time, protein_yield, omega, diffr_psi, "L12_esd", bond_angle_rms_dev, column_volume, pdbx_solvent_ion_probe_radii, pdbx_dist_value, "Cartn_x", "Ro", "B12", mol_wt_exp, final_thickness, neighbor_macromolecule_distance, diff_density_min_esd, "U_tls33", "B22_esd", "pdbx_res_netI_over_sigmaI_2", "U13", reciprocal_angle_alpha_esd, mol_wt_theo, beta_tolerance, "F_squared_calc", "B_iso_Wilson_estimate", "L22_esd", "angle_DHA_esd", current, "T33_esd", gamma, "F_meas_sigma", "U_tls22", peptide_planarity_rms_dev_error, alpha, delta, "T22_esd", storage_temperature, "aniso_B11_esd", reciprocal_angle_gamma_esd, angle_chi, "aniso_B22_esd", reciprocal_length_b_esd, "model_Cartn_z_esd", angle_omega, distance_rms_dev_error, detector_distance, resolution, "dist_DA_esd", culture_temperature, "aniso_U11_esd", min_mean_cross_sectional_radii_gyration, improper_torsion_angle_rms_dev, improper_torsion_angle_rms_dev_error, psi, "aniso_U12", energyfilter_lower, "L33_esd", "aniso_B12_esd", "pre_Cartn_x", calibrated_defocus_min, upper_limit, max_mean_cross_sectional_radii_gyration, "model_Cartn_y_esd", "L33", "aniso_U11", power, distance_rms_dev, "A_calc_au", mean_guiner_radius, "aniso_U13", dihedral_angles_rms_dev, energyfilter_upper, "U11_esd", origin_z, origin_y, pdbx_mosaicity_esd, origin_x, induction_timepoint, nominal_defocus_max, "I", "pdbx_model_Cartn_y_ideal", volume_pooled_fractions, "dist_DH_esd", "pre_Cartn_y", "B_iso_or_equiv", "B12_esd", "L22", "L23_esd", reciprocal_angle_beta_esd, alpha_tolerance, temp_esd, "T23_esd", "U12_esd", "aniso_B22", "S12_esd", "L13_esd", "T12", "U33", volume_three, value_esd, dev, "B13_esd", tilt_angle_min, "pre_Cartn_z", tau1, reciprocal_length_c_esd, "T13_esd", tau0, concentration_range, covalent_bond_rms_dev_error, "B_iso_or_equiv_esd", mean_guiner_radius_esd, "sigmaI", "B_iso_max", length_a_esd, "A_meas", angle_alpha_esd, "aniso_B23", "aniso_B11", neighbor_ligand_distance, "T13", recording_temperature_minimum, "U22", prot_cis, "L11_esd", atom_deviation, tau3, tau2, tau4, cleavage_temperature, "T11_esd", diff_density_min, pdbx_solvent_shrinkage_radii, induction_temperature, pdbx_phase_calc_part_solvent, "Cartn_y_esd", "S31_esd", dist, column_temperature, residual_tilt, "F_meas", maximum_upper_distance_constraint_violation, "U23", "aniso_B13_esd", "U11", voltage, "B11_esd", "model_Cartn_x_esd", rise_per_n_subunits, energy_window, taum, "aniso_U12_esd", "B_iso", volume_three_esd, culture_volume, angle_kappa, "aniso_B33", temp, bond_angle_rms_dev_error, pdbx_collection_time_total, sample_concentration, "U12", "S33_esd", gamma_tolerance, phase_meas, rmsd, "U22_esd", density_meas_temp_esd, "B23_esd", electron_dose, protein_concentration, diff_density_max_esd, length_b_esd, initial_thickness, angle_deviation, scat_length_neutron, "S11", beta, "S23", "aniso_U22_esd", sample_volume, max_mean_cross_sectional_radii_gyration_esd, bond_deviation, dihedral_angles_rms_dev_error, "aniso_U23_esd", min_mean_cross_sectional_radii_gyration_esd, maximum_distance_constraint_violation, "F_calc_au", "Luzzati_d_res_low_free", "S21_esd", "F_squared_sigma", "aniso_B23_esd", "B13", chi1, pdbx_mosaicity, chi3, chi2, chi5, diffr_phi, "S12", "T33", chi4, "P", multiplicity_of_infection, phi, temperature_sublimation_esd, buffer_volume, pdbx_solvent_vdw_probe_radii, angle_theta, "pdbx_model_Cartn_x_ideal", volume_esd, ambient_pressure_esd, average_distance_constraint_violation, "B_meas", "S23_esd", "B_meas_au", "pdbx_model_Cartn_z_ideal", maximum_torsion_angle_constraint_violation, "U23_esd", "aniso_B12", nominal_defocus_min, "S13", "Luzzati_coordinate_error_free", duration, "T22", "S32_esd", "aniso_U33_esd", "B_calc", "Luzzati_coordinate_error_obs", density_meas_esd, culture_time, "model_Cartn_z", "U_iso_or_equiv_esd", "B", value, angle, "A_calc", "aniso_B13", angle_target_value, tilt_angle_max, "S22_esd", "T23", cleavage_time, "U33_esd", chamber_temperature, "T11", phase_calc, "pdbx_F_calc_with_solvent", "pdbx_F_calc_part_solvent", "model_Cartn_y", "B_iso_esd", rotation_per_n_subunits, angle_phi, maximum_lower_distance_constraint_violation, "pdbx_res_netI_over_av_sigmaI_2", diff_density_rms
@@ -30,22 +30,22 @@
 --   Schema locations:
 --    resource/pdbx-v50.xsd
 --   Table types:
---    0 root, 0 root children, 0 admin roots, 558 admin children
+--    0 root, 0 root children, 0 admin roots, 560 admin children
 --   System keys:
 --    0 primary keys (0 unique constraints), 0 foreign keys, 0 nested keys (0 as attribute, 0 as attribute group)
 --   User keys:
---    558 document keys, 0 serial keys, 0 xpath keys
+--    560 document keys, 0 serial keys, 0 xpath keys
 --   Contents:
---    1018 attributes (0 in-place document keys), 5220 elements (0 in-place document keys), 0 simple contents (0 in-place document keys, 0 as attribute, 0 as conditional attribute)
+--    1024 attributes (0 in-place document keys), 5225 elements (0 in-place document keys), 0 simple contents (0 in-place document keys, 0 as attribute, 0 as conditional attribute)
 --   Wild cards:
 --    0 any elements, 0 any attributes
 --   Constraints:
---    558 unique constraints from xsd:key, 1 unique constraints from xsd:unique, 344 foreign key constraints from xsd:keyref
+--    560 unique constraints from xsd:key, 1 unique constraints from xsd:unique, 346 foreign key constraints from xsd:keyref
 --
 
 --
--- PDBML Schema v5.326
--- PDBML Schema translated from the PDBx/mmCIF Dictionary v5.326: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
+-- PDBML Schema v5.327
+-- PDBML Schema translated from the PDBx/mmCIF Dictionary v5.327: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
 -- URI-reference = http://pdbml.pdb.org/schema/pdbx-v50.xsd
 --
 
@@ -211,6 +211,7 @@ DROP TABLE IF EXISTS pdbx_branch_scheme CASCADE;
 DROP TABLE IF EXISTS pdbx_buffer_components CASCADE;
 DROP TABLE IF EXISTS pdbx_chem_comp_atom_edit CASCADE;
 DROP TABLE IF EXISTS pdbx_chem_comp_atom_feature CASCADE;
+DROP TABLE IF EXISTS pdbx_chem_comp_atom_related CASCADE;
 DROP TABLE IF EXISTS pdbx_chem_comp_audit CASCADE;
 DROP TABLE IF EXISTS pdbx_chem_comp_bond_edit CASCADE;
 DROP TABLE IF EXISTS pdbx_chem_comp_depositor_info CASCADE;
@@ -225,6 +226,7 @@ DROP TABLE IF EXISTS pdbx_chem_comp_model_descriptor CASCADE;
 DROP TABLE IF EXISTS pdbx_chem_comp_model_feature CASCADE;
 DROP TABLE IF EXISTS pdbx_chem_comp_model_reference CASCADE;
 DROP TABLE IF EXISTS pdbx_chem_comp_nonstandard CASCADE;
+DROP TABLE IF EXISTS pdbx_chem_comp_related CASCADE;
 DROP TABLE IF EXISTS pdbx_chem_comp_subcomponent_entity_list CASCADE;
 DROP TABLE IF EXISTS pdbx_chem_comp_subcomponent_struct_conn CASCADE;
 DROP TABLE IF EXISTS pdbx_chem_comp_synonyms CASCADE;
@@ -925,6 +927,7 @@ CREATE TABLE chem_comp_atom (
 	pdbx_ref_id TEXT ,
 	pdbx_residue_numbering INTEGER ,
 	pdbx_stereo_config ENUM_chem_comp_atom_pdbx_stereo_config ,
+	pdbx_stnd_atom_id TEXT ,
 	substruct_code ENUM_chem_comp_atom_substruct_code ,
 	type_symbol TEXT ,
 -- ATTRIBUTE
@@ -1242,7 +1245,7 @@ CREATE TABLE pdbx_chem_comp_model (
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_reference_molecule_class CASCADE;
-CREATE TYPE ENUM_pdbx_reference_molecule_class AS ENUM ( 'Antagonist', 'Antibiotic', 'Anticancer', 'Anticoagulant', 'Antifungal', 'Antigen', 'Antiinflammatory', 'Antimicrobial', 'Antineoplastic', 'Antiparasitic', 'Antiretroviral', 'Anthelmintic', 'Antithrombotic', 'Antitumor', 'Antiviral', 'CASPASE inhibitor', 'Chaperone binding', 'Enzyme inhibitor', 'Drug delivery', 'Glycan component', 'Growth factor', 'Immunosuppressant', 'Inducer', 'Inhibitor', 'Lantibiotic', 'Metabolism', 'Metal transport', 'Nutrient', 'Oxidation-reduction', 'Protein binding', 'Receptor', 'Substrate analog', 'Thrombin inhibitor', 'Trypsin inhibitor', 'Toxin', 'Unknown', 'Anticoagulant, Antithrombotic', 'Antibiotic, Antimicrobial', 'Antibiotic, Anthelmintic', 'Antibiotic, Antineoplastic', 'Antimicrobial, Antiretroviral', 'Antimicrobial, Antitumor', 'Antimicrobial, Antiparasitic, Antibiotic', 'Thrombin inhibitor, Trypsin inhibitor' );
+CREATE TYPE ENUM_pdbx_reference_molecule_class AS ENUM ( 'Antagonist', 'Antibiotic', 'Anticancer', 'Anticoagulant', 'Antifungal', 'Antigen', 'Antiinflammatory', 'Antimicrobial', 'Antineoplastic', 'Antiparasitic', 'Antiretroviral', 'Anthelmintic', 'Antithrombotic', 'Antitumor', 'Antiviral', 'CASPASE inhibitor', 'Chaperone binding', 'Enzyme inhibitor', 'Drug delivery', 'Glycan component', 'Growth factor', 'Immunosuppressant', 'Inducer', 'Inhibitor', 'Lantibiotic', 'Metabolism', 'Metal transport', 'Nutrient', 'Oxidation-reduction', 'Protein binding', 'Receptor', 'Substrate analog', 'Thrombin inhibitor', 'Trypsin inhibitor', 'Toxin', 'Unknown', 'Water retention', 'Anticoagulant, Antithrombotic', 'Antibiotic, Antimicrobial', 'Antibiotic, Anthelmintic', 'Antibiotic, Antineoplastic', 'Antimicrobial, Antiretroviral', 'Antimicrobial, Antitumor', 'Antimicrobial, Antiparasitic, Antibiotic', 'Thrombin inhibitor, Trypsin inhibitor' );
 DROP TYPE IF EXISTS ENUM_pdbx_reference_molecule_release_status CASCADE;
 CREATE TYPE ENUM_pdbx_reference_molecule_release_status AS ENUM ( 'REL', 'HOLD', 'OBS', 'WAIT' );
 DROP TYPE IF EXISTS ENUM_pdbx_reference_molecule_represent_as CASCADE;
@@ -6857,6 +6860,28 @@ CREATE TABLE pdbx_chem_comp_atom_feature (
 );
 
 --
+-- (quoted from pdbx_chem_comp_atom_relatedType)
+-- PDBX_CHEM_COMP_ATOM_RELATED provides atom level nomenclature mapping between two related chemical components. Example 1 - <PDBx:pdbx_chem_comp_atom_relatedCategory> <PDBx:pdbx_chem_comp_atom_related comp_id="SGN" ordinal="1" related_comp_id="GLC"> <PDBx:atom_id>C1</PDBx:atom_id> <PDBx:related_atom_id>C1</PDBx:related_atom_id> <PDBx:related_type>Carbohydrate core</PDBx:related_type> </PDBx:pdbx_chem_comp_atom_related> <PDBx:pdbx_chem_comp_atom_related comp_id="SGN" ordinal="2" related_comp_id="GLC"> <PDBx:atom_id>C2</PDBx:atom_id> <PDBx:related_atom_id>C2</PDBx:related_atom_id> <PDBx:related_type>Carbohydrate core</PDBx:related_type> </PDBx:pdbx_chem_comp_atom_related> <PDBx:pdbx_chem_comp_atom_related comp_id="SGN" ordinal="3" related_comp_id="GLC"> <PDBx:atom_id>C3</PDBx:atom_id> <PDBx:related_atom_id>C3</PDBx:related_atom_id> <PDBx:related_type>Carbohydrate core</PDBx:related_type> </PDBx:pdbx_chem_comp_atom_related> <PDBx:pdbx_chem_comp_atom_related comp_id="SGN" ordinal="4" related_comp_id="GLC"> <PDBx:atom_id>C4</PDBx:atom_id> <PDBx:related_atom_id>C4</PDBx:related_atom_id> <PDBx:related_type>Carbohydrate core</PDBx:related_type> </PDBx:pdbx_chem_comp_atom_related> <PDBx:pdbx_chem_comp_atom_related comp_id="SGN" ordinal="5" related_comp_id="GLC"> <PDBx:atom_id>C5</PDBx:atom_id> <PDBx:related_atom_id>C5</PDBx:related_atom_id> <PDBx:related_type>Carbohydrate core</PDBx:related_type> </PDBx:pdbx_chem_comp_atom_related> <PDBx:pdbx_chem_comp_atom_related comp_id="SGN" ordinal="6" related_comp_id="GLC"> <PDBx:atom_id>C6</PDBx:atom_id> <PDBx:related_atom_id>C6</PDBx:related_atom_id> <PDBx:related_type>Carbohydrate core</PDBx:related_type> </PDBx:pdbx_chem_comp_atom_related> <PDBx:pdbx_chem_comp_atom_related comp_id="SGN" ordinal="7" related_comp_id="GLC"> <PDBx:atom_id>N</PDBx:atom_id> <PDBx:related_type>Carbohydrate core</PDBx:related_type> </PDBx:pdbx_chem_comp_atom_related> <PDBx:pdbx_chem_comp_atom_related comp_id="SGN" ordinal="8" related_comp_id="GLC"> <PDBx:atom_id>O1</PDBx:atom_id> <PDBx:related_atom_id>O1</PDBx:related_atom_id> <PDBx:related_type>Carbohydrate core</PDBx:related_type> </PDBx:pdbx_chem_comp_atom_related> <PDBx:pdbx_chem_comp_atom_related comp_id="SGN" ordinal="9" related_comp_id="GLC"> <PDBx:atom_id>O3</PDBx:atom_id> <PDBx:related_atom_id>O3</PDBx:related_atom_id> <PDBx:related_type>Carbohydrate core</PDBx:related_type> </PDBx:pdbx_chem_comp_atom_related> <PDBx:pdbx_chem_comp_atom_related comp_id="SGN" ordinal="10" related_comp_id="GLC"> <PDBx:atom_id>O4</PDBx:atom_id> <PDBx:related_atom_id>O4</PDBx:related_atom_id> <PDBx:related_type>Carbohydrate core</PDBx:related_type> </PDBx:pdbx_chem_comp_atom_related> <PDBx:pdbx_chem_comp_atom_related comp_id="SGN" ordinal="11" related_comp_id="GLC"> <PDBx:atom_id>O5</PDBx:atom_id> <PDBx:related_atom_id>O5</PDBx:related_atom_id> <PDBx:related_type>Carbohydrate core</PDBx:related_type> </PDBx:pdbx_chem_comp_atom_related> <PDBx:pdbx_chem_comp_atom_related comp_id="SGN" ordinal="12" related_comp_id="GLC"> <PDBx:atom_id>O6</PDBx:atom_id> <PDBx:related_atom_id>O6</PDBx:related_atom_id> <PDBx:related_type>Carbohydrate core</PDBx:related_type> </PDBx:pdbx_chem_comp_atom_related> <PDBx:pdbx_chem_comp_atom_related comp_id="SGN" ordinal="13" related_comp_id="GLC"> <PDBx:atom_id>S1</PDBx:atom_id> <PDBx:related_type>Carbohydrate core</PDBx:related_type> </PDBx:pdbx_chem_comp_atom_related> <PDBx:pdbx_chem_comp_atom_related comp_id="SGN" ordinal="14" related_comp_id="GLC"> <PDBx:atom_id>O1S</PDBx:atom_id> <PDBx:related_type>Carbohydrate core</PDBx:related_type> </PDBx:pdbx_chem_comp_atom_related> <PDBx:pdbx_chem_comp_atom_related comp_id="SGN" ordinal="15" related_comp_id="GLC"> <PDBx:atom_id>O2S</PDBx:atom_id> <PDBx:related_type>Carbohydrate core</PDBx:related_type> </PDBx:pdbx_chem_comp_atom_related> <PDBx:pdbx_chem_comp_atom_related comp_id="SGN" ordinal="16" related_comp_id="GLC"> <PDBx:atom_id>O3S</PDBx:atom_id> <PDBx:related_type>Carbohydrate core</PDBx:related_type> </PDBx:pdbx_chem_comp_atom_related> <PDBx:pdbx_chem_comp_atom_related comp_id="SGN" ordinal="17" related_comp_id="GLC"> <PDBx:atom_id>S2</PDBx:atom_id> <PDBx:related_type>Carbohydrate core</PDBx:related_type> </PDBx:pdbx_chem_comp_atom_related> <PDBx:pdbx_chem_comp_atom_related comp_id="SGN" ordinal="18" related_comp_id="GLC"> <PDBx:atom_id>O4S</PDBx:atom_id> <PDBx:related_type>Carbohydrate core</PDBx:related_type> </PDBx:pdbx_chem_comp_atom_related> <PDBx:pdbx_chem_comp_atom_related comp_id="SGN" ordinal="19" related_comp_id="GLC"> <PDBx:atom_id>O5S</PDBx:atom_id> <PDBx:related_type>Carbohydrate core</PDBx:related_type> </PDBx:pdbx_chem_comp_atom_related> <PDBx:pdbx_chem_comp_atom_related comp_id="SGN" ordinal="20" related_comp_id="GLC"> <PDBx:atom_id>O6S</PDBx:atom_id> <PDBx:related_type>Carbohydrate core</PDBx:related_type> </PDBx:pdbx_chem_comp_atom_related> <PDBx:pdbx_chem_comp_atom_related comp_id="SGN" ordinal="21" related_comp_id="GLC"> <PDBx:atom_id>H1</PDBx:atom_id> <PDBx:related_atom_id>H1</PDBx:related_atom_id> <PDBx:related_type>Carbohydrate core</PDBx:related_type> </PDBx:pdbx_chem_comp_atom_related> <PDBx:pdbx_chem_comp_atom_related comp_id="SGN" ordinal="22" related_comp_id="GLC"> <PDBx:atom_id>H2</PDBx:atom_id> <PDBx:related_atom_id>H2</PDBx:related_atom_id> <PDBx:related_type>Carbohydrate core</PDBx:related_type> </PDBx:pdbx_chem_comp_atom_related> <PDBx:pdbx_chem_comp_atom_related comp_id="SGN" ordinal="23" related_comp_id="GLC"> <PDBx:atom_id>H3</PDBx:atom_id> <PDBx:related_atom_id>H3</PDBx:related_atom_id> <PDBx:related_type>Carbohydrate core</PDBx:related_type> </PDBx:pdbx_chem_comp_atom_related> <PDBx:pdbx_chem_comp_atom_related comp_id="SGN" ordinal="24" related_comp_id="GLC"> <PDBx:atom_id>H4</PDBx:atom_id> <PDBx:related_atom_id>H4</PDBx:related_atom_id> <PDBx:related_type>Carbohydrate core</PDBx:related_type> </PDBx:pdbx_chem_comp_atom_related> <PDBx:pdbx_chem_comp_atom_related comp_id="SGN" ordinal="25" related_comp_id="GLC"> <PDBx:atom_id>H5</PDBx:atom_id> <PDBx:related_atom_id>H5</PDBx:related_atom_id> <PDBx:related_type>Carbohydrate core</PDBx:related_type> </PDBx:pdbx_chem_comp_atom_related> <PDBx:pdbx_chem_comp_atom_related comp_id="SGN" ordinal="26" related_comp_id="GLC"> <PDBx:atom_id>H61</PDBx:atom_id> <PDBx:related_atom_id>H61</PDBx:related_atom_id> <PDBx:related_type>Carbohydrate core</PDBx:related_type> </PDBx:pdbx_chem_comp_atom_related> <PDBx:pdbx_chem_comp_atom_related comp_id="SGN" ordinal="27" related_comp_id="GLC"> <PDBx:atom_id>H62</PDBx:atom_id> <PDBx:related_atom_id>H62</PDBx:related_atom_id> <PDBx:related_type>Carbohydrate core</PDBx:related_type> </PDBx:pdbx_chem_comp_atom_related> <PDBx:pdbx_chem_comp_atom_related comp_id="SGN" ordinal="28" related_comp_id="GLC"> <PDBx:atom_id>HN</PDBx:atom_id> <PDBx:related_type>Carbohydrate core</PDBx:related_type> </PDBx:pdbx_chem_comp_atom_related> <PDBx:pdbx_chem_comp_atom_related comp_id="SGN" ordinal="29" related_comp_id="GLC"> <PDBx:atom_id>HO1</PDBx:atom_id> <PDBx:related_atom_id>HO1</PDBx:related_atom_id> <PDBx:related_type>Carbohydrate core</PDBx:related_type> </PDBx:pdbx_chem_comp_atom_related> <PDBx:pdbx_chem_comp_atom_related comp_id="SGN" ordinal="30" related_comp_id="GLC"> <PDBx:atom_id>HO3</PDBx:atom_id> <PDBx:related_atom_id>HO3</PDBx:related_atom_id> <PDBx:related_type>Carbohydrate core</PDBx:related_type> </PDBx:pdbx_chem_comp_atom_related> <PDBx:pdbx_chem_comp_atom_related comp_id="SGN" ordinal="31" related_comp_id="GLC"> <PDBx:atom_id>HO4</PDBx:atom_id> <PDBx:related_atom_id>HO4</PDBx:related_atom_id> <PDBx:related_type>Carbohydrate core</PDBx:related_type> </PDBx:pdbx_chem_comp_atom_related> <PDBx:pdbx_chem_comp_atom_related comp_id="SGN" ordinal="32" related_comp_id="GLC"> <PDBx:atom_id>HOS3</PDBx:atom_id> <PDBx:related_type>Carbohydrate core</PDBx:related_type> </PDBx:pdbx_chem_comp_atom_related> <PDBx:pdbx_chem_comp_atom_related comp_id="SGN" ordinal="33" related_comp_id="GLC"> <PDBx:atom_id>HOS6</PDBx:atom_id> <PDBx:related_type>Carbohydrate core</PDBx:related_type> </PDBx:pdbx_chem_comp_atom_related> </PDBx:pdbx_chem_comp_atom_relatedCategory>
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+DROP TYPE IF EXISTS ENUM_pdbx_chem_comp_atom_related_related_type CASCADE;
+CREATE TYPE ENUM_pdbx_chem_comp_atom_related_related_type AS ENUM ( 'Carbohydrate core', 'Precursor' );
+CREATE TABLE pdbx_chem_comp_atom_related (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+	atom_id TEXT ,
+	related_atom_id TEXT ,
+	related_type ENUM_pdbx_chem_comp_atom_related_related_type ,
+-- ATTRIBUTE
+	comp_id TEXT NOT NULL ,
+-- ATTRIBUTE
+	ordinal INTEGER NOT NULL ,
+-- ATTRIBUTE
+	related_comp_id TEXT NOT NULL
+);
+
+--
 -- (quoted from pdbx_chem_comp_auditType)
 -- Data items in the PDBX_CHEM_COMP_AUDIT category records the status and tracking information for this component. Example 1 - <PDBx:pdbx_chem_comp_auditCategory> <PDBx:pdbx_chem_comp_audit action_type="Create componenet" comp_id="ATP" date="2007-12-01"> <PDBx:annotator>JY</PDBx:annotator> <PDBx:processing_site>RCSB</PDBx:processing_site> </PDBx:pdbx_chem_comp_audit> <PDBx:pdbx_chem_comp_audit action_type="Modify leaving atom flag" comp_id="ATP" date="2008-10-03"> <PDBx:annotator>CS</PDBx:annotator> <PDBx:processing_site>RCSB</PDBx:processing_site> </PDBx:pdbx_chem_comp_audit> <PDBx:pdbx_chem_comp_audit action_type="Modify synonyms" comp_id="ATP" date="2009-07-03"> <PDBx:annotator>MZ</PDBx:annotator> <PDBx:processing_site>RCSB</PDBx:processing_site> </PDBx:pdbx_chem_comp_audit> </PDBx:pdbx_chem_comp_auditCategory>
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
@@ -7157,6 +7182,26 @@ CREATE TABLE pdbx_chem_comp_nonstandard (
 	comp_id TEXT NOT NULL ,
 -- ATTRIBUTE
 	type ENUM_pdbx_chem_comp_nonstandard_type NOT NULL
+);
+
+--
+-- (quoted from pdbx_chem_comp_relatedType)
+-- PDBX_CHEM_COMP_RELATED describes the relationship between two chemical components. Example 1 - <PDBx:pdbx_chem_comp_relatedCategory> <PDBx:pdbx_chem_comp_related comp_id="SGN" related_comp_id="GLC" relationship_type="Carbohydrate core"> </PDBx:pdbx_chem_comp_related> </PDBx:pdbx_chem_comp_relatedCategory>
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+DROP TYPE IF EXISTS ENUM_pdbx_chem_comp_related_relationship_type CASCADE;
+CREATE TYPE ENUM_pdbx_chem_comp_related_relationship_type AS ENUM ( 'Carbohydrate core', 'Precursor' );
+CREATE TABLE pdbx_chem_comp_related (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+	details TEXT ,
+-- ATTRIBUTE
+	comp_id TEXT NOT NULL ,
+-- ATTRIBUTE
+	related_comp_id TEXT NOT NULL ,
+-- ATTRIBUTE
+	relationship_type ENUM_pdbx_chem_comp_related_relationship_type NOT NULL
 );
 
 --
@@ -8605,7 +8650,7 @@ CREATE TABLE pdbx_entity_branch (
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_entity_branch_descriptor_type CASCADE;
-CREATE TYPE ENUM_pdbx_entity_branch_descriptor_type AS ENUM ( 'LINUCS', 'Glycam Condensed Sequence', 'Glycam Condensed Core Sequence' );
+CREATE TYPE ENUM_pdbx_entity_branch_descriptor_type AS ENUM ( 'LINUCS', 'Glycam Condensed Sequence', 'Glycam Condensed Core Sequence', 'WURCS' );
 CREATE TABLE pdbx_entity_branch_descriptor (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
@@ -16595,6 +16640,9 @@ CREATE TABLE valence_ref (
 -- (derived from xsd:key[@name='pdbx_chem_comp_atom_featureKey_0'])
 --ALTER TABLE pdbx_chem_comp_atom_feature ADD CONSTRAINT UNQ_pdbx_chem_comp_atom_feature UNIQUE ( document_id, atom_id, comp_id, feature_type );
 
+-- (derived from xsd:key[@name='pdbx_chem_comp_atom_relatedKey_0'])
+--ALTER TABLE pdbx_chem_comp_atom_related ADD CONSTRAINT UNQ_pdbx_chem_comp_atom_related UNIQUE ( document_id, comp_id, ordinal, related_comp_id );
+
 -- (derived from xsd:key[@name='pdbx_chem_comp_auditKey_0'])
 --ALTER TABLE pdbx_chem_comp_audit ADD CONSTRAINT UNQ_pdbx_chem_comp_audit UNIQUE ( document_id, action_type, comp_id, date );
 
@@ -16642,6 +16690,9 @@ CREATE TABLE valence_ref (
 
 -- (derived from xsd:key[@name='pdbx_chem_comp_nonstandardKey_0'])
 --ALTER TABLE pdbx_chem_comp_nonstandard ADD CONSTRAINT UNQ_pdbx_chem_comp_nonstandard UNIQUE ( document_id, comp_id, type );
+
+-- (derived from xsd:key[@name='pdbx_chem_comp_relatedKey_0'])
+--ALTER TABLE pdbx_chem_comp_related ADD CONSTRAINT UNQ_pdbx_chem_comp_related UNIQUE ( document_id, comp_id, related_comp_id, relationship_type );
 
 -- (derived from xsd:key[@name='pdbx_chem_comp_subcomponent_entity_listKey_0'])
 --ALTER TABLE pdbx_chem_comp_subcomponent_entity_list ADD CONSTRAINT UNQ_pdbx_chem_comp_subcomponent_entity_list UNIQUE ( document_id, id );
@@ -17769,40 +17820,46 @@ CREATE TABLE valence_ref (
 --ALTER TABLE entity_poly_seq ADD CONSTRAINT KR_chem_compKeyref_0_0_7_0 FOREIGN KEY ( mon_id ) REFERENCES chem_comp ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
 -- (derived from xsd:keyref[@name='chem_compKeyref_0_0_8_0'])
---ALTER TABLE pdbx_chem_comp_audit ADD CONSTRAINT KR_chem_compKeyref_0_0_8_0 FOREIGN KEY ( comp_id ) REFERENCES chem_comp ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
+--ALTER TABLE pdbx_chem_comp_atom_related ADD CONSTRAINT KR_chem_compKeyref_0_0_8_0 FOREIGN KEY ( comp_id ) REFERENCES chem_comp ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
 -- (derived from xsd:keyref[@name='chem_compKeyref_0_0_9_0'])
---ALTER TABLE pdbx_chem_comp_descriptor ADD CONSTRAINT KR_chem_compKeyref_0_0_9_0 FOREIGN KEY ( comp_id ) REFERENCES chem_comp ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
+--ALTER TABLE pdbx_chem_comp_audit ADD CONSTRAINT KR_chem_compKeyref_0_0_9_0 FOREIGN KEY ( comp_id ) REFERENCES chem_comp ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
 -- (derived from xsd:keyref[@name='chem_compKeyref_0_0_10_0'])
---ALTER TABLE pdbx_chem_comp_feature ADD CONSTRAINT KR_chem_compKeyref_0_0_10_0 FOREIGN KEY ( comp_id ) REFERENCES chem_comp ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
+--ALTER TABLE pdbx_chem_comp_descriptor ADD CONSTRAINT KR_chem_compKeyref_0_0_10_0 FOREIGN KEY ( comp_id ) REFERENCES chem_comp ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
 -- (derived from xsd:keyref[@name='chem_compKeyref_0_0_11_0'])
---ALTER TABLE pdbx_chem_comp_identifier ADD CONSTRAINT KR_chem_compKeyref_0_0_11_0 FOREIGN KEY ( comp_id ) REFERENCES chem_comp ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
+--ALTER TABLE pdbx_chem_comp_feature ADD CONSTRAINT KR_chem_compKeyref_0_0_11_0 FOREIGN KEY ( comp_id ) REFERENCES chem_comp ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
 -- (derived from xsd:keyref[@name='chem_compKeyref_0_0_12_0'])
---ALTER TABLE pdbx_chem_comp_import ADD CONSTRAINT KR_chem_compKeyref_0_0_12_0 FOREIGN KEY ( comp_id ) REFERENCES chem_comp ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
+--ALTER TABLE pdbx_chem_comp_identifier ADD CONSTRAINT KR_chem_compKeyref_0_0_12_0 FOREIGN KEY ( comp_id ) REFERENCES chem_comp ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
 -- (derived from xsd:keyref[@name='chem_compKeyref_0_0_13_0'])
---ALTER TABLE pdbx_chem_comp_nonstandard ADD CONSTRAINT KR_chem_compKeyref_0_0_13_0 FOREIGN KEY ( comp_id ) REFERENCES chem_comp ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
+--ALTER TABLE pdbx_chem_comp_import ADD CONSTRAINT KR_chem_compKeyref_0_0_13_0 FOREIGN KEY ( comp_id ) REFERENCES chem_comp ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
 -- (derived from xsd:keyref[@name='chem_compKeyref_0_0_14_0'])
---ALTER TABLE pdbx_chem_comp_subcomponent_entity_list ADD CONSTRAINT KR_chem_compKeyref_0_0_14_0 FOREIGN KEY ( parent_comp_id ) REFERENCES chem_comp ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
+--ALTER TABLE pdbx_chem_comp_nonstandard ADD CONSTRAINT KR_chem_compKeyref_0_0_14_0 FOREIGN KEY ( comp_id ) REFERENCES chem_comp ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
 -- (derived from xsd:keyref[@name='chem_compKeyref_0_0_15_0'])
---ALTER TABLE pdbx_chem_comp_synonyms ADD CONSTRAINT KR_chem_compKeyref_0_0_15_0 FOREIGN KEY ( comp_id ) REFERENCES chem_comp ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
+--ALTER TABLE pdbx_chem_comp_related ADD CONSTRAINT KR_chem_compKeyref_0_0_15_0 FOREIGN KEY ( comp_id ) REFERENCES chem_comp ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
 -- (derived from xsd:keyref[@name='chem_compKeyref_0_0_16_0'])
---ALTER TABLE pdbx_distant_solvent_atoms ADD CONSTRAINT KR_chem_compKeyref_0_0_16_0 FOREIGN KEY ( auth_comp_id ) REFERENCES chem_comp ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
+--ALTER TABLE pdbx_chem_comp_subcomponent_entity_list ADD CONSTRAINT KR_chem_compKeyref_0_0_16_0 FOREIGN KEY ( parent_comp_id ) REFERENCES chem_comp ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
 -- (derived from xsd:keyref[@name='chem_compKeyref_0_0_17_0'])
---ALTER TABLE pdbx_entity_branch_list ADD CONSTRAINT KR_chem_compKeyref_0_0_17_0 FOREIGN KEY ( comp_id ) REFERENCES chem_comp ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
+--ALTER TABLE pdbx_chem_comp_synonyms ADD CONSTRAINT KR_chem_compKeyref_0_0_17_0 FOREIGN KEY ( comp_id ) REFERENCES chem_comp ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
 -- (derived from xsd:keyref[@name='chem_compKeyref_0_0_18_0'])
---ALTER TABLE pdbx_unobs_or_zero_occ_atoms ADD CONSTRAINT KR_chem_compKeyref_0_0_18_0 FOREIGN KEY ( auth_comp_id ) REFERENCES chem_comp ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
+--ALTER TABLE pdbx_distant_solvent_atoms ADD CONSTRAINT KR_chem_compKeyref_0_0_18_0 FOREIGN KEY ( auth_comp_id ) REFERENCES chem_comp ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
 -- (derived from xsd:keyref[@name='chem_compKeyref_0_0_19_0'])
---ALTER TABLE pdbx_unobs_or_zero_occ_residues ADD CONSTRAINT KR_chem_compKeyref_0_0_19_0 FOREIGN KEY ( auth_comp_id ) REFERENCES chem_comp ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
+--ALTER TABLE pdbx_entity_branch_list ADD CONSTRAINT KR_chem_compKeyref_0_0_19_0 FOREIGN KEY ( comp_id ) REFERENCES chem_comp ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
+
+-- (derived from xsd:keyref[@name='chem_compKeyref_0_0_20_0'])
+--ALTER TABLE pdbx_unobs_or_zero_occ_atoms ADD CONSTRAINT KR_chem_compKeyref_0_0_20_0 FOREIGN KEY ( auth_comp_id ) REFERENCES chem_comp ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
+
+-- (derived from xsd:keyref[@name='chem_compKeyref_0_0_21_0'])
+--ALTER TABLE pdbx_unobs_or_zero_occ_residues ADD CONSTRAINT KR_chem_compKeyref_0_0_21_0 FOREIGN KEY ( auth_comp_id ) REFERENCES chem_comp ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
 -- (derived from xsd:keyref[@name='chem_compKeyref_2_0_0_0'])
 --ALTER TABLE pdbx_struct_special_symmetry ADD CONSTRAINT KR_chem_compKeyref_2_0_0_0 FOREIGN KEY ( auth_comp_id ) REFERENCES chem_comp ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
