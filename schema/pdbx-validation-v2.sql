@@ -44,8 +44,8 @@
 --
 
 --
--- PDBML-validation Schema v2.328
--- PDBXML-validation Schema translated from wwPDB Validation Information Dictionary v2.328, which is backward compatible with the PDBx/mmCIF Dictionary v5.328: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
+-- PDBML-validation Schema v2.329
+-- PDBXML-validation Schema translated from wwPDB Validation Information Dictionary v2.329, which is backward compatible with the PDBx/mmCIF Dictionary v5.329: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
 -- URI-reference = http://pdbml.pdb.org/schema/pdbx-validation-v2.xsd
 --
 
@@ -2361,7 +2361,7 @@ CREATE TABLE em_particle_selection (
 --
 CREATE TABLE em_single_particle_entity (
 -- IN-PLACE DOCUMENT KEY
-	entry_id TEXT ,
+	entry_id INTEGER ,
 	point_symmetry TEXT ,
 -- ATTRIBUTE
 	id TEXT NOT NULL ,
@@ -2829,7 +2829,7 @@ CREATE TABLE pdbx_audit_revision_category (
 DROP TYPE IF EXISTS ENUM_pdbx_audit_revision_details_provider CASCADE;
 CREATE TYPE ENUM_pdbx_audit_revision_details_provider AS ENUM ( 'repository', 'author' );
 DROP TYPE IF EXISTS ENUM_pdbx_audit_revision_details_type CASCADE;
-CREATE TYPE ENUM_pdbx_audit_revision_details_type AS ENUM ( 'Initial release', 'Coordinate replacement', 'Obsolete' );
+CREATE TYPE ENUM_pdbx_audit_revision_details_type AS ENUM ( 'Initial release', 'Coordinate replacement', 'Obsolete', 'Remediation' );
 DROP TYPE IF EXISTS ENUM_pdbx_audit_revision_details_data_content_type CASCADE;
 CREATE TYPE ENUM_pdbx_audit_revision_details_data_content_type AS ENUM ( 'Structure model', 'NMR restraints', 'NMR shifts', 'Structure factors' );
 CREATE TABLE pdbx_audit_revision_details (
@@ -7304,7 +7304,7 @@ CREATE TYPE ENUM_struct_conn_pdbx_ptnr1_atom_stereo_config AS ENUM ( 'R', 'S', '
 DROP TYPE IF EXISTS ENUM_struct_conn_pdbx_ptnr2_atom_stereo_config CASCADE;
 CREATE TYPE ENUM_struct_conn_pdbx_ptnr2_atom_stereo_config AS ENUM ( 'R', 'S', 'N' );
 DROP TYPE IF EXISTS ENUM_struct_conn_pdbx_role CASCADE;
-CREATE TYPE ENUM_struct_conn_pdbx_role AS ENUM ( 'N-Glycosylation', 'O-Glycosylation', 'C-Mannosylation' );
+CREATE TYPE ENUM_struct_conn_pdbx_role AS ENUM ( 'N-Glycosylation', 'O-Glycosylation', 'S-Glycosylation', 'C-Mannosylation' );
 DROP TYPE IF EXISTS ENUM_struct_conn_pdbx_value_order CASCADE;
 CREATE TYPE ENUM_struct_conn_pdbx_value_order AS ENUM ( 'sing', 'doub', 'trip', 'quad' );
 CREATE TABLE struct_conn (
