@@ -5782,7 +5782,7 @@ Point symmetry symbol, either Cn, Dn, T, O, or I
               </xsd:annotation>
             </xsd:element>
           </xsd:all>
-          <xsd:attribute name="id" use="required" type="xsd:string">
+          <xsd:attribute name="id" use="required" type="xsd:int">
             <xsd:annotation>
               <xsd:documentation xml:lang="en" source="http://mmcif.wwpdb.org/dictionaries/mmcif_pdbx_v50.dic/Items/_em_single_particle_entity.id.html">
 Unique category label.

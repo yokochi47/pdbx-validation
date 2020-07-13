@@ -2363,7 +2363,7 @@ CREATE TABLE em_single_particle_entity (
 	entry_id TEXT ,
 	point_symmetry TEXT ,
 -- ATTRIBUTE
-	id TEXT NOT NULL ,
+	id INTEGER NOT NULL ,
 -- ATTRIBUTE
 	image_processing_id TEXT NOT NULL
 );

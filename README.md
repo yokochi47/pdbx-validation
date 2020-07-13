@@ -146,7 +146,6 @@ File path | Document
 
 - **Jul 13, 2020**: Release v2.0.10
 	- Update wwPDB Validation Information Dictionary to 2.330
-	- Revert type of em_single_particle_entity.id from integer to code
 
 - **Jun 24, 2020**: Release v2.0.9
 	- Update wwPDB Validation Information Dictionary to 2.329
