@@ -671,7 +671,7 @@ data_mmcif_pdbx_validation.dic
 >     'ELETTRA BEAMLINE 11.2C' is the same one. # merged
 >     + Add 'S-Glycosylation' to enumeration for _struct_conn.pdbx_role # merged
 >     + Add 'eTasED' to em_software.name enumeration # merged # merged
->     + Restrict type of em_single_particle_entity.id to integer # merged -> reverted in 2.330
+>     + Restrict type of em_single_particle_entity.id to integer # merged -> fixed in 2.330
 >     + Add 'Remediation' to pdbx_audit_revision_details.type enumeration # merged
 ;
   2.330   2020-07-13
@@ -684,7 +684,6 @@ data_mmcif_pdbx_validation.dic
 >       shells and not just highest resolution shell
 >     + Add "The Mark Foundation" to _pdbx_audit_support.funding_organization" # not mapped
 >     + Correct "deposition_email" type to be POSIX compliant # merged
-      - Revert type of em_single_particle_entity.id from integer to code
 ;
 
 
@@ -51569,7 +51568,7 @@ save__em_single_particle_entity.id
     _item.name                  '_em_single_particle_entity.id'
     _item.category_id             em_single_particle_entity
     _item.mandatory_code          yes  #V5
-    _item_type.code               code
+    _item_type.code               int
 
 save_
 
