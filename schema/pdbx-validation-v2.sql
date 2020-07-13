@@ -44,8 +44,8 @@
 --
 
 --
--- PDBML-validation Schema v2.329
--- PDBXML-validation Schema translated from wwPDB Validation Information Dictionary v2.329, which is backward compatible with the PDBx/mmCIF Dictionary v5.329: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
+-- PDBML-validation Schema v2.330
+-- PDBXML-validation Schema translated from wwPDB Validation Information Dictionary v2.330, which is backward compatible with the PDBx/mmCIF Dictionary v5.330: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
 -- URI-reference = http://pdbml.pdb.org/schema/pdbx-validation-v2.xsd
 --
 
@@ -1527,8 +1527,7 @@ CREATE TABLE diffrn_refln (
 	index_l INTEGER ,
 -- xsd:restriction/xsd:minInclusive="0"
 	intensity_net DECIMAL CHECK ( intensity_net >= 0 ) ,
--- xsd:restriction/xsd:minInclusive="0"
-	intensity_sigma DECIMAL CHECK ( intensity_sigma >= 0 ) ,
+	intensity_sigma DECIMAL ,
 -- xsd:restriction/xsd:minInclusive="0"
 	intensity_u DECIMAL CHECK ( intensity_u >= 0 ) ,
 	scale_group_code TEXT ,
@@ -2361,7 +2360,7 @@ CREATE TABLE em_particle_selection (
 --
 CREATE TABLE em_single_particle_entity (
 -- IN-PLACE DOCUMENT KEY
-	entry_id INTEGER ,
+	entry_id TEXT ,
 	point_symmetry TEXT ,
 -- ATTRIBUTE
 	id TEXT NOT NULL ,

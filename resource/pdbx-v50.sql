@@ -44,8 +44,8 @@
 --
 
 --
--- PDBML Schema v5.329
--- PDBML Schema translated from the PDBx/mmCIF Dictionary v5.329: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
+-- PDBML Schema v5.330
+-- PDBML Schema translated from the PDBx/mmCIF Dictionary v5.330: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
 -- URI-reference = http://pdbml.pdb.org/schema/pdbx-v50.xsd
 --
 
@@ -3776,8 +3776,7 @@ CREATE TABLE diffrn_refln (
 	index_h INTEGER ,
 	index_k INTEGER ,
 	index_l INTEGER ,
--- xsd:restriction/xsd:minInclusive="0"
-	intensity_net DECIMAL CHECK ( intensity_net >= 0 ) ,
+	intensity_net DECIMAL ,
 -- xsd:restriction/xsd:minInclusive="0"
 	intensity_sigma DECIMAL CHECK ( intensity_sigma >= 0 ) ,
 -- xsd:restriction/xsd:minInclusive="0"
