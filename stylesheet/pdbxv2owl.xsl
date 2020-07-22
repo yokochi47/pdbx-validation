@@ -44,7 +44,7 @@
 	<rdfs:comment xml:lang="en">The OWL ontology for wwPDB/RDF-validation.</rdfs:comment>
         <rdfs:seeAlso rdf:resource="https://rdf.wwpdb.org/schema/pdbx-validation-v2.dic"/>
         <rdfs:seeAlso rdf:resource="https://rdf.wwpdb.org/schema/pdbx-validation-v2.xsd"/>
-        <owl:versionIRI rdf:resource="https://rdf.wwpdb.org/schema/pdbx-validation-v2.owl/2.330"/>
+        <owl:versionIRI rdf:resource="https://rdf.wwpdb.org/schema/pdbx-validation-v2.owl/2.331"/>
       </owl:Ontology>
 
       <owl:Class rdf:ID="Category">
@@ -108,26 +108,42 @@
       </owl:ObjectProperty>
 
       <owl:ObjectProperty rdf:ID="link_to_pdbml">
-	<rdfs:subPropertyOf rdf:resource="#rdf_link_to"/>
+	<rdfs:subPropertyOf rdf:resource="#html_link_to"/>
 	<rdfs:comment xml:lang="en">link to PDBML-all file.</rdfs:comment>
         <owl:sameAs rdf:resource="PDBo:link_to_pdbml"/>
       </owl:ObjectProperty>
 
       <owl:ObjectProperty rdf:ID="link_to_pdbml_noatom">
-	<rdfs:subPropertyOf rdf:resource="#rdf_link_to"/>
+	<rdfs:subPropertyOf rdf:resource="#html_link_to"/>
 	<rdfs:comment xml:lang="en">link to PDBML-noatom file.</rdfs:comment>
         <owl:sameAs rdf:resource="PDBo:link_to_pdbml_noatom"/>
       </owl:ObjectProperty>
 
       <owl:ObjectProperty rdf:ID="link_to_pdbml_extatom">
-	<rdfs:subPropertyOf rdf:resource="#rdf_link_to"/>
+	<rdfs:subPropertyOf rdf:resource="#html_link_to"/>
 	<rdfs:comment xml:lang="en">link to PDBML-extatom file.</rdfs:comment>
         <owl:sameAs rdf:resource="PDBo:link_to_pdbml_extatom"/>
       </owl:ObjectProperty>
 
-      <owl:ObjectProperty rdf:ID="link_to_pdbml_validation">
+      <owl:ObjectProperty rdf:ID="link_to_xml_vrpt">
+        <rdfs:subPropertyOf rdf:resource="#html_link_to"/>
+        <rdfs:comment xml:lang="en">link to wwPDB validation report (XML).</rdfs:comment>
+      </owl:ObjectProperty>
+
+      <owl:ObjectProperty rdf:ID="link_to_pdbml_vrpt">
+        <rdfs:subPropertyOf rdf:resource="#html_link_to"/>
+        <rdfs:comment xml:lang="en">link to PDBML formatted validation report (full).</rdfs:comment>
+      </owl:ObjectProperty>
+
+      <owl:ObjectProperty rdf:ID="link_to_pdbml_vrpt_alt">
+        <rdfs:subPropertyOf rdf:resource="#html_link_to"/>
+        <rdfs:comment xml:lang="en">link to PDBML formatted validation report (alternative).</rdfs:comment>
+      </owl:ObjectProperty>
+
+      <owl:ObjectProperty rdf:ID="link_to_pdb_src">
         <rdfs:subPropertyOf rdf:resource="#rdf_link_to"/>
-        <rdfs:comment xml:lang="en">link to wwPDB validation information.</rdfs:comment>
+        <rdfs:comment xml:lang="en">link to associated PDB entry.</rdfs:comment>
+        <owl:sameAs rdf:resource="PDBo:link_to_pdb"/>
       </owl:ObjectProperty>
 
       <owl:ObjectProperty rdf:ID="link_to_pdb">

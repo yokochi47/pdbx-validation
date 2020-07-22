@@ -4,17 +4,15 @@
   <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#">
   <!ENTITY owl "http://www.w3.org/2002/07/owl#">
 ]>
-<xsl2:stylesheet 
+<xsl2:stylesheet
    version="2.0"
    xmlns:xsl2="http://www.w3.org/1999/XSL/Transform"
    xmlns:xsd="http://www.w3.org/2001/XMLSchema">
 
   <xsl2:output method="xml" indent="yes"/>
   <xsl2:strip-space elements="*"/>
-
   <xsl2:template match="/">
-    <xsl2:text disable-output-escaping="yes">
-&lt;xsl:stylesheet
+    <xsl2:text disable-output-escaping="yes">&lt;xsl:stylesheet
   version="1.0"
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -27,7 +25,7 @@
   xmlns:PDBxv="http://pdbml.pdb.org/schema/pdbx-validation-v2.xsd"
   xmlns:PDBov="https://rdf.wwpdb.org/schema/pdbx-validation-v2.owl#"
   exclude-result-prefixes="PDBxv"&gt;
-    </xsl2:text>
+</xsl2:text>
     <xsl2:apply-templates/>
     <xsl2:text disable-output-escaping="yes">
 &lt;/xsl:stylesheet&gt;</xsl2:text>
@@ -50,8 +48,7 @@
   &lt;xsl:variable name="pdbml"&gt;ftp://ftp.wwpdb.org/pub/pdb/data/structures/all/XML/&lt;/xsl:variable&gt;
   &lt;xsl:variable name="pdbml_noatom"&gt;ftp://ftp.wwpdb.org/pub/pdb/data/structures/all/XML-noatom/&lt;/xsl:variable&gt;
   &lt;xsl:variable name="pdbml_extatom"&gt;ftp://ftp.wwpdb.org/pub/pdb/data/structures/all/XML-extatom/&lt;/xsl:variable&gt;
-  &lt;xsl:variable name="valid_info"&gt;ftp://ftp.wwpdb.org/pub/pdb/validation_reports/&lt;xsl:value-of select="substring($pdbid,2,2)"/&gt;/&lt;xsl:value-of select="$pdbid"/&gt;/&lt;/xsl:variable&gt;
-
+  &lt;xsl:variable name="vrpt"&gt;ftp://ftp.wwpdb.org/pub/pdb/validation_reports/&lt;xsl:value-of select="substring($pdbid,2,2)"/&gt;/&lt;xsl:value-of select="$pdbid"/&gt;/&lt;/xsl:variable&gt;
   &lt;xsl:variable name="idorg"&gt;http://identifiers.org/&lt;/xsl:variable&gt;
   &lt;xsl:variable name="doi"&gt;https://doi.org/&lt;/xsl:variable&gt;
   &lt;xsl:variable name="pubmed"&gt;https://www.ncbi.nlm.nih.gov/pubmed/&lt;/xsl:variable&gt;
@@ -69,22 +66,25 @@
 
   &lt;!-- level 1 --&gt;
   &lt;xsl:template match="/PDBxv:datablock"&gt;
-  &lt;PDBov:datablock rdf:about="{$base}"&gt;
-  &lt;dcterms:identifier&gt;&lt;xsl:value-of select="$PDBID"/&gt;&lt;/dcterms:identifier&gt;
-  &lt;skos:altLabel&gt;&lt;xsl:value-of select="$pdbid"/&gt;&lt;/skos:altLabel&gt;
-  &lt;dc:title&gt;&lt;xsl:value-of select="PDBxv:structCategory/PDBxv:struct/PDBxv:title/text()"/&gt;&lt;/dc:title&gt;
+    &lt;PDBov:datablock rdf:about="{$base}"&gt;
+      &lt;dcterms:identifier&gt;&lt;xsl:value-of select="$PDBID"/&gt;&lt;/dcterms:identifier&gt;
+      &lt;dcterms:identifier&gt;&lt;xsl:value-of select="concat('10.2210/pdb',$pdbid,'/pdb')"/&gt;&lt;/dcterms:identifier&gt;
+      &lt;skos:altLabel&gt;&lt;xsl:value-of select="$pdbid"/&gt;&lt;/skos:altLabel&gt;
+      &lt;dc:title&gt;&lt;xsl:value-of select="PDBxv:structCategory/PDBxv:struct/PDBxv:title/text()"/&gt;&lt;/dc:title&gt;
+      &lt;PDBov:link_to_pdb_src rdf:resource="{$pdb_link}{$pdbid}"/&gt;
       &lt;PDBov:link_to_pdbml rdf:resource="{$pdbml}{$pdbid}.xml.gz"/&gt;
       &lt;PDBov:link_to_pdbml_noatom rdf:resource="{$pdbml_noatom}{$pdbid}-noatom.xml.gz"/&gt;
       &lt;PDBov:link_to_pdbml_extatom rdf:resource="{$pdbml_extatom}{$pdbid}-extatom.xml.gz"/&gt;
-      &lt;PDBov:link_to_validation rdf:resource="{$valid_info}{$pdbid}_validation.xml.gz"/&gt;
-      &lt;PDBov:link_to_pdbml_validation rdf:resource="{$valid_info}{$pdbid}-validation-full.xml.gz"/&gt;
+      &lt;PDBov:link_to_xml_vrpt rdf:resource="{$vrpt}{$pdbid}_validation.xml.gz"/&gt;
+      &lt;!-- PDBov:link_to_pdbml_vrpt rdf:resource="{$vrpt}{$pdbid}-validation-full.xml.gz"/ --&gt;
+      &lt;!-- PDBov:link_to_pdbml_vrpt_alt rdf:resource="{$vrpt}{$pdbid}-validation-alt.xml.gz"/ --&gt;
       &lt;owl:sameAs rdf:resource="{$base_lower}"/&gt;
       &lt;rdfs:seeAlso rdf:resource="{$pdbj}{$PDBID}"/&gt;
       &lt;rdfs:seeAlso rdf:resource="{$rcsb}{$PDBID}"/&gt;
       &lt;rdfs:seeAlso rdf:resource="{$pdbe}{$PDBID}"/&gt;
 
       &lt;PDBov:datablockName&gt;&lt;xsl:value-of select="@datablockName"/&gt;&lt;/PDBov:datablockName&gt;
-      &lt;xsl:apply-templates select="./*" /&gt;
+      &lt;xsl:apply-templates select="./*"/&gt;
     &lt;/PDBov:datablock&gt;
   &lt;/xsl:template&gt;
 
@@ -117,7 +117,6 @@
   &lt;/xsl:template&gt;
 
   &lt;!-- level 4 (linked data) --&gt;
-
   &lt;xsl:template match="PDBxv:chem_comp/@id" mode="linked"&gt;
     &lt;PDBov:link_to_chem_comp rdf:resource="{$chem_comp}{.}"/&gt;
   &lt;/xsl:template&gt;
@@ -132,61 +131,54 @@
   &lt;/xsl:template&gt;
 
   &lt;xsl:template match="PDBxv:entity_src_gen/PDBxv:pdbx_gene_src_ncbi_taxonomy_id[text()!='']" mode="linked"&gt;
-  &lt;PDBov:link_to_taxonomy_source
-  rdf:resource="{$taxonomy}{text()}"
-  rdfs:label="taxonomy:{text()}"/&gt;
-  &lt;rdfs:seeAlso rdf:resource="{$idorg}taxonomy/{text()}" rdfs:label="taxonomy:{text()}"/&gt;
-  &lt;/xsl:template&gt;
-
-  &lt;xsl:template match="PDBxv:entity_src_gen/PDBxv:pdbx_host_org_ncbi_taxonomy_id[text()!='']" 
-	        mode="linked"&gt;
-    &lt;PDBov:link_to_taxonomy_host rdf:resource="{$taxonomy}{text()}" rdfs:label="taxonomy:{text()}"/&gt;
-    &lt;rdfs:seeAlso rdf:resource="{$idorg}taxonomy/{text()}" rdfs:label="taxonomy:{text()}"/&gt;
-    &lt;/xsl:template&gt;
-
-  &lt;xsl:template match="PDBxv:entity_src_nat/PDBxv:pdbx_ncbi_taxonomy_id[text()!='']" 
-	        mode="linked"&gt;
     &lt;PDBov:link_to_taxonomy_source rdf:resource="{$taxonomy}{text()}" rdfs:label="taxonomy:{text()}"/&gt;
     &lt;rdfs:seeAlso rdf:resource="{$idorg}taxonomy/{text()}" rdfs:label="taxonomy:{text()}"/&gt;
-    &lt;/xsl:template&gt;
+  &lt;/xsl:template&gt;
+
+  &lt;xsl:template match="PDBxv:entity_src_gen/PDBxv:pdbx_host_org_ncbi_taxonomy_id[text()!='']" mode="linked"&gt;
+    &lt;PDBov:link_to_taxonomy_host rdf:resource="{$taxonomy}{text()}" rdfs:label="taxonomy:{text()}"/&gt;
+    &lt;rdfs:seeAlso rdf:resource="{$idorg}taxonomy/{text()}" rdfs:label="taxonomy:{text()}"/&gt;
+  &lt;/xsl:template&gt;
+
+  &lt;xsl:template match="PDBxv:entity_src_nat/PDBxv:pdbx_ncbi_taxonomy_id[text()!='']" mode="linked"&gt;
+    &lt;PDBov:link_to_taxonomy_source rdf:resource="{$taxonomy}{text()}" rdfs:label="taxonomy:{text()}"/&gt;
+    &lt;rdfs:seeAlso rdf:resource="{$idorg}taxonomy/{text()}" rdfs:label="taxonomy:{text()}"/&gt;
+  &lt;/xsl:template&gt;
 
   &lt;xsl:template match="PDBxv:entity/PDBxv:pdbx_ec[text()!='']" mode="linked"&gt;
     &lt;PDBov:link_to_enzyme rdf:resource="{$enzyme}{text()}" rdfs:label="enzyme:{text()}"/&gt;
     &lt;rdfs:seeAlso rdf:resource="{$idorg}ec-code/{text()}" rdfs:label="ec-code:{text()}"/&gt;
-    &lt;/xsl:template&gt;
+  &lt;/xsl:template&gt;
 
-  &lt;xsl:template match="PDBxv:struct_ref/PDBxv:pdbx_db_accession[../PDBxv:db_name='UNP' and text()!='']" 
-	        mode="linked"&gt;
+  &lt;xsl:template match="PDBxv:struct_ref/PDBxv:pdbx_db_accession[../PDBxv:db_name='UNP' and text()!='']" mode="linked"&gt;
     &lt;PDBov:link_to_uniprot rdf:resource="{$uniprot}{text()}" rdfs:label="uniprot:{text()}"/&gt;
     &lt;rdfs:seeAlso rdf:resource="{$idorg}uniprot/{text()}" rdfs:label="uniprot:{text()}"/&gt;
-    &lt;/xsl:template&gt;
+  &lt;/xsl:template&gt;
 
-  &lt;xsl:template match="PDBxv:struct_ref/PDBxv:db_code[../PDBxv:db_name='GB' and text()!='']" 
-	        mode="linked"&gt;
+  &lt;xsl:template match="PDBxv:struct_ref/PDBxv:db_code[../PDBxv:db_name='GB' and text()!='']" mode="linked"&gt;
     &lt;PDBov:link_to_genbank rdf:resource="{$genbank}{text()}" rdfs:label="genbank:{text()}"/&gt;
     &lt;rdfs:seeAlso rdf:resource="{$idorg}insdc/{text()}" rdfs:label="nuccore:{text()}"/&gt;
-    &lt;/xsl:template&gt;
+  &lt;/xsl:template&gt;
 
   &lt;xsl:template match="PDBxv:pdbx_database_related[@db_name='PDB' and @content_type!='split']/@db_id" mode="linked"&gt;
-    &lt;PDBov:link_to_pdb rdf:resource="{$pdb_link}{.}" /&gt;
+    &lt;PDBov:link_to_pdb rdf:resource="{$pdb_link}{.}"/&gt;
   &lt;/xsl:template&gt;
 
   &lt;xsl:template match="PDBxv:pdbx_database_related[@db_name='PDB' and @content_type='split']/@db_id" mode="linked"&gt;
-    &lt;PDBov:link_to_pdb_split rdf:resource="{$pdb_link}{.}" /&gt;
+    &lt;PDBov:link_to_pdb_split rdf:resource="{$pdb_link}{.}"/&gt;
   &lt;/xsl:template&gt;
 
   &lt;xsl:template match="PDBxv:chem_comp/PDBxv:pdbx_model_coordinates_db_code" mode="linked"&gt;
-    &lt;PDBov:link_to_pdb rdf:resource="{$pdb_link}{text()}" /&gt;
+    &lt;PDBov:link_to_pdb rdf:resource="{$pdb_link}{text()}"/&gt;
   &lt;/xsl:template&gt;
-  
-  &lt;!-- level-3 templates follow --&gt;
-    </xsl2:text>
+
+  &lt;!-- level-3 templates follow --&gt;</xsl2:text>
     <xsl2:call-template name="key_category"/>
     <xsl2:text disable-output-escaping="yes">
   &lt;xsl:template match="*[@xsi:nil='true']"/&gt;
   &lt;xsl:template match="*|text()|@*"/&gt;
   &lt;xsl:template match="*|text()|@*" mode="linked"/&gt;
- </xsl2:text>
+</xsl2:text>
 
   </xsl2:template>
 
@@ -233,7 +225,7 @@
       &lt;</xsl2:text>PDBov:has_<xsl2:value-of select='$name'/><xsl2:text disable-output-escaping="yes">&gt;</xsl2:text>
     <xsl2:text disable-output-escaping="yes">
       &lt;</xsl2:text>PDBov:<xsl2:value-of select='$name'/> rdf:about="{$base}/<xsl2:value-of select='$resource'/>"<xsl2:text disable-output-escaping="yes">&gt;
-        &lt;PDBov:of_datablock rdf:resource="{$base}"/&gt;</xsl2:text>
+      &lt;PDBov:of_datablock rdf:resource="{$base}"/&gt;</xsl2:text>
     <xsl2:call-template name="category_unique">
       <xsl2:with-param name="name" select="$name"/>
       <xsl2:with-param name="original" select="$resource"/>
@@ -253,7 +245,6 @@
       &lt;</xsl2:text>/PDBov:has_<xsl2:value-of select='$name'/><xsl2:text disable-output-escaping="yes">&gt;</xsl2:text>
     <xsl2:text disable-output-escaping="yes">
   &lt;/xsl:template&gt;
-
 </xsl2:text>
   </xsl2:template>
 
@@ -267,7 +258,6 @@
 	  <xsl2:with-param name="field" select="xsd:field[1]"/></xsl2:call-template></xsl2:variable>
       <!-- don't want duplicate key -->
       <xsl2:if test="$original!=$resource">
-
 	<xsl2:variable name="check"><xsl2:call-template name="check_fields"><xsl2:with-param name="field" select="xsd:field[1]"/></xsl2:call-template></xsl2:variable>
 	<xsl2:text disable-output-escaping="yes">
       &lt;xsl:if test=</xsl2:text>"<xsl2:value-of select='$check'/>"<xsl2:text disable-output-escaping='yes'>&gt;
@@ -284,7 +274,6 @@
         &lt;/owl:sameAs&gt;</xsl2:text>
 	<xsl2:text disable-output-escaping="yes">
       &lt;/xsl:if&gt;</xsl2:text>
-
       </xsl2:if>
     </xsl2:for-each>
   </xsl2:template>
@@ -302,8 +291,7 @@
 	    <xsl2:with-param name="field1" select="$refering/xsd:field[1]"/>
 	    <xsl2:with-param name="selector2" select="substring-after($refer/xsd:selector/@xpath,'/')"/>
 	    <xsl2:with-param name="field2" select="$refer/xsd:field[1]"/></xsl2:call-template></xsl2:variable>
-      <xsl2:variable name="check"><xsl2:call-template name="check_fields"><xsl2:with-param name="field" select="$refering/xsd:field[1]"/></xsl2:call-template></xsl2:variable>
-
+        <xsl2:variable name="check"><xsl2:call-template name="check_fields"><xsl2:with-param name="field" select="$refering/xsd:field[1]"/></xsl2:call-template></xsl2:variable>
 	<xsl2:text disable-output-escaping="yes">
       &lt;xsl:if test=</xsl2:text>"<xsl2:value-of select='$check'/>"<xsl2:text disable-output-escaping='yes'>&gt;
         &lt;</xsl2:text>PDBov:reference_to_<xsl2:value-of select="$refname"/><xsl2:text disable-output-escaping="yes">&gt;
@@ -312,13 +300,11 @@
 	  &lt;</xsl2:text>/rdf:Description<xsl2:text disable-output-escaping="yes">&gt;
         &lt;</xsl2:text>/PDBov:reference_to_<xsl2:value-of select="$refname"/><xsl2:text disable-output-escaping="yes">&gt;</xsl2:text>
 	<xsl2:text disable-output-escaping="yes">
-            &lt;!-- </xsl2:text>
+        &lt;!-- </xsl2:text>
 	<xsl2:value-of select="@name"/>
-	<xsl2:text disable-output-escaping="yes"> --&gt;
-        </xsl2:text>
+	<xsl2:text disable-output-escaping="yes"> --&gt;</xsl2:text>
 	<xsl2:text disable-output-escaping="yes">
       &lt;/xsl:if&gt;</xsl2:text>
-
     </xsl2:for-each>
   </xsl2:template>
   <xsl2:template match="*|text()|@*"/>
