@@ -36,7 +36,7 @@
 	<rdfs:comment xml:lang="en">The PDBx OWL ontology translated from the PDBML schema.</rdfs:comment>
         <rdfs:seeAlso rdf:resource="http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic"/>
         <rdfs:seeAlso rdf:resource="http://mmcif.wwpdb.org/schema/pdbx-v50.xsd"/>
-        <owl:versionIRI rdf:resource="https://rdf.wwpdb.org/schema/pdbx-v50.owl/5.330"/>
+        <owl:versionIRI rdf:resource="https://rdf.wwpdb.org/schema/pdbx-v50.owl/5.331"/>
       </owl:Ontology>
 
       <owl:Class rdf:ID="Category">
@@ -91,23 +91,28 @@
       </owl:ObjectProperty>
 
       <owl:ObjectProperty rdf:ID="link_to_pdbml">
-	<rdfs:subPropertyOf rdf:resource="#rdf_link_to"/>
+	<rdfs:subPropertyOf rdf:resource="#html_link_to"/>
 	<rdfs:comment xml:lang="en">link to PDBML-all file.</rdfs:comment>
       </owl:ObjectProperty>
 
       <owl:ObjectProperty rdf:ID="link_to_pdbml_noatom">
-	<rdfs:subPropertyOf rdf:resource="#rdf_link_to"/>
+	<rdfs:subPropertyOf rdf:resource="#html_link_to"/>
 	<rdfs:comment xml:lang="en">link to PDBML-noatom file.</rdfs:comment>
       </owl:ObjectProperty>
 
       <owl:ObjectProperty rdf:ID="link_to_pdbml_extatom">
-	<rdfs:subPropertyOf rdf:resource="#rdf_link_to"/>
+	<rdfs:subPropertyOf rdf:resource="#html_link_to"/>
 	<rdfs:comment xml:lang="en">link to PDBML-extatom file.</rdfs:comment>
       </owl:ObjectProperty>
 
       <owl:ObjectProperty rdf:ID="link_to_pdb">
 	<rdfs:subPropertyOf rdf:resource="#rdf_link_to"/>
 	<rdfs:comment xml:lang="en">link to related PDB entry.</rdfs:comment>
+      </owl:ObjectProperty>
+
+      <owl:ObjectProperty rdf:ID="link_to_vrpt">
+        <rdfs:subPropertyOf rdf:resource="#rdf_link_to"/>
+        <rdfs:comment xml:lang="en">link to associated wwPDB validation report.</rdfs:comment>
       </owl:ObjectProperty>
 
       <owl:ObjectProperty rdf:ID="link_to_pdb_split">
