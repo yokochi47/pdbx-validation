@@ -17,6 +17,7 @@
 
   <xsl:variable name="PDBID"><xsl:value-of select="/PDBxv:datablock/PDBxv:entryCategory/PDBxv:entry/@id"/></xsl:variable>
   <xsl:variable name="pdbid"><xsl:value-of select="lower-case($PDBID)"/></xsl:variable>
+  <xsl:variable name="pdb_doi"><xsl:value-of select="concat('10.2210/pdb',$pdbid,'/pdb')"/></xsl:variable>
   <xsl:variable name="base">https://rdf.wwpdb.org/pdb-validation/<xsl:value-of select="$PDBID"/></xsl:variable>
   <xsl:variable name="base_lower">https://rdf.wwpdb.org/pdb/<xsl:value-of select="$pdbid"/></xsl:variable>
   <xsl:variable name="pdb_link">https://rdf.wwpdb.org/pdb/</xsl:variable>
@@ -47,7 +48,6 @@
   <xsl:template match="/PDBxv:datablock">
     <PDBov:datablock rdf:about="{$base}">
       <dcterms:identifier><xsl:value-of select="$PDBID"/></dcterms:identifier>
-      <dcterms:identifier><xsl:value-of select="concat('10.2210/pdb',$pdbid,'/pdb')"/></dcterms:identifier>
       <skos:altLabel><xsl:value-of select="$pdbid"/></skos:altLabel>
       <dc:title><xsl:value-of select="PDBxv:structCategory/PDBxv:struct/PDBxv:title/text()"/></dc:title>
       <PDBov:link_to_pdb_src rdf:resource="{$pdb_link}{$pdbid}"/>
@@ -55,6 +55,7 @@
       <PDBov:link_to_pdbml_noatom rdf:resource="{$pdbml_noatom}{$pdbid}-noatom.xml.gz"/>
       <PDBov:link_to_pdbml_extatom rdf:resource="{$pdbml_extatom}{$pdbid}-extatom.xml.gz"/>
       <PDBov:link_to_xml_vrpt rdf:resource="{$vrpt}{$pdbid}_validation.xml.gz"/>
+      <PDBov:link_to_doi rdf:resource="{$doi}{$pdb_doi}" rdfs:label="doi:{$pdb_doi}"/>
       <!-- PDBov:link_to_pdbml_vrpt rdf:resource="{$vrpt}{$pdbid}-validation-full.xml.gz"/ -->
       <!-- PDBov:link_to_pdbml_vrpt_alt rdf:resource="{$vrpt}{$pdbid}-validation-alt.xml.gz"/ -->
       <owl:sameAs rdf:resource="{$base_lower}"/>

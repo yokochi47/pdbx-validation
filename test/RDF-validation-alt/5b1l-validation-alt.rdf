@@ -9,7 +9,6 @@
          xmlns:PDBov="https://rdf.wwpdb.org/schema/pdbx-validation-v2.owl#">
    <PDBov:datablock rdf:about="https://rdf.wwpdb.org/pdb-validation/5B1L">
       <dcterms:identifier>5B1L</dcterms:identifier>
-      <dcterms:identifier>10.2210/pdb5b1l/pdb</dcterms:identifier>
       <skos:altLabel>5b1l</skos:altLabel>
       <dc:title/>
       <PDBov:link_to_pdb_src rdf:resource="https://rdf.wwpdb.org/pdb/5b1l"/>
@@ -17,6 +16,8 @@
       <PDBov:link_to_pdbml_noatom rdf:resource="ftp://ftp.wwpdb.org/pub/pdb/data/structures/all/XML-noatom/5b1l-noatom.xml.gz"/>
       <PDBov:link_to_pdbml_extatom rdf:resource="ftp://ftp.wwpdb.org/pub/pdb/data/structures/all/XML-extatom/5b1l-extatom.xml.gz"/>
       <PDBov:link_to_xml_vrpt rdf:resource="ftp://ftp.wwpdb.org/pub/pdb/validation_reports/b1/5b1l/5b1l_validation.xml.gz"/>
+      <PDBov:link_to_doi rdf:resource="https://doi.org/10.2210/pdb5b1l/pdb"
+                         rdfs:label="doi:10.2210/pdb5b1l/pdb"/>
       <owl:sameAs rdf:resource="https://rdf.wwpdb.org/pdb/5b1l"/>
       <rdfs:seeAlso rdf:resource="https://pdbj.org/pdb/5B1L"/>
       <rdfs:seeAlso rdf:resource="https://www.rcsb.org/pdb/explore.do?structureId=5B1L"/>
