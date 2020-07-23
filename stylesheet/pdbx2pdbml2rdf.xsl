@@ -37,6 +37,7 @@
 
   &lt;xsl:variable name="PDBID"&gt;&lt;xsl:value-of select="/PDBx:datablock/PDBx:entryCategory/PDBx:entry/@id"/&gt;&lt;/xsl:variable&gt;
   &lt;xsl:variable name="pdbid"&gt;&lt;xsl:value-of select="lower-case($PDBID)"/&gt;&lt;/xsl:variable&gt;
+  &lt;xsl:variable name="pdb_doi"&gt;&lt;xsl:value-of select="concat('10.2210/pdb',$pdbid,'/pdb')"/&gt;&lt;/xsl:variable&gt;
   &lt;xsl:variable name="base"&gt;https://rdf.wwpdb.org/pdb/&lt;xsl:value-of select="$PDBID"/&gt;&lt;/xsl:variable&gt;
   &lt;xsl:variable name="base_lower"&gt;https://rdf.wwpdb.org/pdb/&lt;xsl:value-of select="$pdbid"/&gt;&lt;/xsl:variable&gt;
   &lt;xsl:variable name="vrpt_base"&gt;https://rdf.wwpdb.org/pdb-validation/&lt;xsl:value-of select="$PDBID"/&gt;&lt;/xsl:variable&gt;
@@ -67,13 +68,13 @@
   &lt;xsl:template match="/PDBx:datablock"&gt;
     &lt;PDBo:datablock rdf:about="{$base}"&gt;
       &lt;dcterms:identifier&gt;&lt;xsl:value-of select="$PDBID"/&gt;&lt;/dcterms:identifier&gt;
-      &lt;dcterms:identifier&gt;&lt;xsl:value-of select="concat('10.2210/pdb',$pdbid,'/pdb')"/&gt;&lt;/dcterms:identifier&gt;
       &lt;skos:altLabel&gt;&lt;xsl:value-of select="$pdbid"/&gt;&lt;/skos:altLabel&gt;
       &lt;dc:title&gt;&lt;xsl:value-of select="PDBx:structCategory/PDBx:struct/PDBx:title/text()"/&gt;&lt;/dc:title&gt;
       &lt;PDBo:link_to_pdbml rdf:resource="{$pdbml}{$pdbid}.xml.gz"/&gt;
       &lt;PDBo:link_to_pdbml_noatom rdf:resource="{$pdbml_noatom}{$pdbid}-noatom.xml.gz"/&gt;
       &lt;PDBo:link_to_pdbml_extatom rdf:resource="{$pdbml_extatom}{$pdbid}-extatom.xml.gz"/&gt;
       &lt;PDBo:link_to_vrpt rdf:resource="{$vrpt_base}"/&gt;
+      &lt;PDBo:link_to_doi rdf:resource="{$doi}{$pdb_doi}" rdfs:label="doi:{$pdb_doi}"/&gt;
       &lt;owl:sameAs rdf:resource="{$base_lower}"/&gt;
       &lt;rdfs:seeAlso rdf:resource="{$pdbj}{$PDBID}"/&gt;
       &lt;rdfs:seeAlso rdf:resource="{$rcsb}{$PDBID}"/&gt;
