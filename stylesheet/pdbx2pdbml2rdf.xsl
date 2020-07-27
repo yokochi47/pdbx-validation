@@ -32,6 +32,9 @@
 
   <xsl2:template match="/xsd:schema">
     <xsl2:text disable-output-escaping="yes">
+  &lt;xsl:param name="wurcs2glytoucan" required="no"/&gt;
+  &lt;xsl:param name="glytoucan" select="document($wurcs2glytoucan)"/&gt;
+
   &lt;xsl:output method="xml" indent="yes"/&gt;
   &lt;xsl:strip-space elements="*"/&gt;
 
@@ -57,6 +60,7 @@
   &lt;xsl:variable name="uniprot"&gt;http://purl.uniprot.org/uniprot/&lt;/xsl:variable&gt;
   &lt;xsl:variable name="enzyme"&gt;http://purl.uniprot.org/enzyme/&lt;/xsl:variable&gt;
   &lt;xsl:variable name="go"&gt;http://amigo.geneontology.org/amigo/term/GO:/&lt;/xsl:variable&gt;
+  &lt;xsl:variable name="glycoinfo"&gt;http://rdf.glycoinfo.org/glycan/&lt;/xsl:variable&gt;
 
   &lt;xsl:template match="/"&gt;
     &lt;rdf:RDF&gt;
@@ -155,6 +159,21 @@
   &lt;xsl:template match="PDBx:struct_ref/PDBx:db_code[../PDBx:db_name='GB' and text()!='']" mode="linked"&gt;
     &lt;PDBo:link_to_genbank rdf:resource="{$genbank}{text()}" rdfs:label="genbank:{text()}"/&gt;
     &lt;rdfs:seeAlso rdf:resource="{$idorg}insdc/{text()}" rdfs:label="nuccore:{text()}"/&gt;
+  &lt;/xsl:template&gt;
+
+  &lt;xsl:template match="PDBx:struct_ref/PDBx:db_code[../PDBx:db_name='GB' and text()!='']" mode="linked"&gt;
+    &lt;PDBo:link_to_genbank rdf:resource="{$genbank}{text()}" rdfs:label="genbank:{text()}"/&gt;
+    &lt;rdfs:seeAlso rdf:resource="{$idorg}insdc/{text()}" rdfs:label="nuccore:{text()}"/&gt;
+  &lt;/xsl:template&gt;
+
+  &lt;xsl:template match="PDBx:pdbx_entity_branch_descriptor/PDBx:descriptor[../PDBx:type='WURCS' and text()!='']" mode="linked"&gt;
+    &lt;xsl:variable name="wurcs_id">&lt;xsl:value-of select="text()"/&gt;&lt;/xsl:variable&gt;
+    &lt;xsl:for-each select="$glytoucan/mapping/wurcs[@id=$wurcs_id]"&gt;
+      &lt;xsl:if test="text()!=''"&gt;
+        &lt;PDBo:link_to_glycoinfo rdf:resource="{$glycoinfo}{text()}" rdfs:label="glytoucan:{text()}"/&gt;
+        &lt;rdfs:seeAlso rdf:resource="{$idorg}glytoucan/{text()}" rdfs:label="glytoucan:{text()}"/&gt;
+      &lt;/xsl:if&gt;
+    &lt;/xsl:for-each&gt;
   &lt;/xsl:template&gt;
 
   &lt;xsl:template match="PDBx:pdbx_database_related[@db_name='PDB' and @content_type!='split']/@db_id" mode="linked"&gt;
