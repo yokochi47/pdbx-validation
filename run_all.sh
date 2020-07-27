@@ -73,6 +73,8 @@ fi
 xml_total=`ls $XML_VALID 2> /dev/null | wc -l`
 rdf_total=`ls $RDF_VALID 2> /dev/null | wc -l`
 
+( cd wurcs2glytoucan; ./LocalGlyTouCanID > glytoucan.tsv )
+
 if [ $ext_pdbml_exit_code = 0 ] || [ $ext_info_exit_code = 0 ] || [ $xml_total -le $huge_number ] || [ $rdf_total -le $huge_number ] ; then
 
  if [ -d $XML_VALID ] && [ $xml_total -gt $huge_number ] ; then

@@ -148,6 +148,12 @@
 	<rdfs:comment xml:lang="en">external link to EMBL.</rdfs:comment>
       </owl:ObjectProperty>
 
+      <owl:ObjectProperty rdf:ID="link_to_glycoinfo">
+        <rdfs:subPropertyOf rdf:resource="#link_to_sequence_db"/>
+        <rdfs:subPropertyOf rdf:resource="#rdf_link_to"/>
+        <rdfs:comment xml:lang="en">external link to glycoinfo.org.</rdfs:comment>
+      </owl:ObjectProperty>
+
       <owl:ObjectProperty rdf:ID="link_to_doi">
 	<rdfs:subPropertyOf rdf:resource="#html_link_to"/>
 	<rdfs:comment xml:lang="en">external link to DOI (digital object identifier).</rdfs:comment>

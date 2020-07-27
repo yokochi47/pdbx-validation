@@ -163,7 +163,32 @@ for pdbml_file in $WORK_DIR/$PDBML/*.xml ; do
 
  rdf_valid_file=$WORK_DIR/$RDF_VALID/$pdbid-validation-full.rdf
 
- java -jar $SAXON -s:$pdbml_valid_file -xsl:$PDBMLV2RDF_XSL -o:$rdf_valid_file || ( echo $0 aborted. && exit 1 )
+ wurcs_array=(`java -jar $SAXON -s:$pdbml_valid_file -xsl:$PDBMLV2WURCS_XSL`)
+
+ if [ ! -z $wurcs_array ] ; then
+
+  temp_file=`mktemp`
+
+  echo '<mapping>' > $temp_file
+
+  for wurcs in ${wurcs_array[@]} ; do
+    glytoucan=`grep -F "$wurcs" $GLYTOUCAN_TSV 2> /dev/null | cut -f 2 2> /dev/null | xargs`
+    echo '<wurcs id="'$wurcs'">'$glytoucan'</wurcs>' >> $temp_file
+  done
+
+  echo '</mapping>' >> $temp_file
+
+ fi
+
+ if [ ! -z $wurcs_array ] ; then
+
+  java -jar $SAXON -s:$pdbml_valid_file -xsl:$PDBMLV2RDF_XSL -o:$rdf_valid_file wurcs2glytoucan=$temp_file || ( echo $0 aborted. && exit 1 )
+
+ else
+
+  java -jar $SAXON -s:$pdbml_valid_file -xsl:$PDBMLV2RDF_XSL -o:$rdf_valid_file || ( echo $0 aborted. && exit 1 )
+
+ fi
 
  echo " generated: "$rdf_valid_file
 
@@ -175,7 +200,17 @@ for pdbml_file in $WORK_DIR/$PDBML/*.xml ; do
  info_alt_file=$WORK_DIR/$VALID_INFO_ALT/$pdbid-validation-alt.xml
  rdf_valid_alt_file=$WORK_DIR/$RDF_VALID_ALT/$pdbid-validation-alt.rdf
 
- java -jar $SAXON -s:$info_alt_file -xsl:$PDBMLV2RDF_XSL -o:$rdf_valid_alt_file || ( echo $0 aborted. && exit 1 )
+ if [ ! -z $wurcs_array ] ; then
+
+  java -jar $SAXON -s:$info_alt_file -xsl:$PDBMLV2RDF_XSL -o:$rdf_valid_alt_file wurcs2glytoucan=$temp_file || ( echo $0 aborted. && exit 1 )
+
+  rm -f $temp_file
+
+ else
+
+  java -jar $SAXON -s:$info_alt_file -xsl:$PDBMLV2RDF_XSL -o:$rdf_valid_alt_file || ( echo $0 aborted. && exit 1 )
+
+ fi
 
  echo " generated: "$rdf_valid_alt_file
 

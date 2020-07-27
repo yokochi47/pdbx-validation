@@ -12,6 +12,9 @@
   xmlns:PDBov="https://rdf.wwpdb.org/schema/pdbx-validation-v2.owl#"
   exclude-result-prefixes="PDBxv">
 
+  <xsl:param name="wurcs2glytoucan" required="no"/>
+  <xsl:param name="glytoucan" select="document($wurcs2glytoucan)"/>
+
   <xsl:output method="xml" indent="yes"/>
   <xsl:strip-space elements="*"/>
 
@@ -37,6 +40,7 @@
   <xsl:variable name="uniprot">http://purl.uniprot.org/uniprot/</xsl:variable>
   <xsl:variable name="enzyme">http://purl.uniprot.org/enzyme/</xsl:variable>
   <xsl:variable name="go">http://amigo.geneontology.org/amigo/term/GO:/</xsl:variable>
+  <xsl:variable name="glycoinfo">http://rdf.glycoinfo.org/glycan/</xsl:variable>
 
   <xsl:template match="/">
     <rdf:RDF>
@@ -138,6 +142,16 @@
   <xsl:template match="PDBxv:struct_ref/PDBxv:db_code[../PDBxv:db_name='GB' and text()!='']" mode="linked">
     <PDBov:link_to_genbank rdf:resource="{$genbank}{text()}" rdfs:label="genbank:{text()}"/>
     <rdfs:seeAlso rdf:resource="{$idorg}insdc/{text()}" rdfs:label="nuccore:{text()}"/>
+  </xsl:template>
+
+  <xsl:template match="PDBxv:pdbx_entity_branch_descriptor/PDBxv:descriptor[../PDBxv:type='WURCS' and text()!='']" mode="linked">
+    <xsl:variable name="wurcs_id"><xsl:value-of select="text()"/></xsl:variable>
+    <xsl:for-each select="$glytoucan/mapping/wurcs[@id=$wurcs_id]">
+      <xsl:if test="text()!=''">
+        <PDBov:link_to_glycoinfo rdf:resource="{$glycoinfo}{text()}" rdfs:label="glytoucan:{text()}"/>
+        <rdfs:seeAlso rdf:resource="{$idorg}glytoucan/{text()}" rdfs:label="glytoucan:{text()}"/>
+      </xsl:if>
+    </xsl:for-each>
   </xsl:template>
 
   <xsl:template match="PDBxv:pdbx_database_related[@db_name='PDB' and @content_type!='split']/@db_id" mode="linked">

@@ -59,13 +59,39 @@ for pdbml_file in $WORK_DIR/$PDBML/*.xml ; do
  pdbid=`basename $pdbml_file -noatom.xml`
 
  exptl_method=`java -jar $SAXON -s:$pdbml_file -xsl:stylesheet/exptl_method.xsl`
+ wurcs_array=(`java -jar $SAXON -s:$pdbml_file -xsl:$PDBML2WURCS_XSL`)
+
+ if [ ! -z $wurcs_array ] ; then
+
+  temp_file=`mktemp`
+
+  echo '<mapping>' > $temp_file
+
+  for wurcs in ${wurcs_array[@]} ; do
+    glytoucan=`grep -F "$wurcs" $GLYTOUCAN_TSV 2> /dev/null | cut -f 2 2> /dev/null | xargs`
+    echo '<wurcs id="'$wurcs'">'$glytoucan'</wurcs>' >> $temp_file
+  done
+
+  echo '</mapping>' >> $temp_file
+
+ fi
 
  echo
  echo Processing PDB ID: ${pdbid^^}, "Exptl. method: "$exptl_method" ..."
 
  rdf_file=$WORK_DIR/$RDF/$pdbid.rdf
 
- java -jar $SAXON -s:$pdbml_file -xsl:$PDBML2RDF_XSL -o:$rdf_file || ( echo $0 aborted. && exit 1 )
+ if [ ! -z $wurcs_array ] ; then
+
+  java -jar $SAXON -s:$pdbml_file -xsl:$PDBML2RDF_XSL -o:$rdf_file wurcs2glytoucan=$temp_file || ( echo $0 aborted. && exit 1 )
+
+  rm -f $temp_file
+
+ else
+
+  java -jar $SAXON -s:$pdbml_file -xsl:$PDBML2RDF_XSL -o:$rdf_file || ( echo $0 aborted. && exit 1 )
+
+ fi
 
  echo " generated: "$rdf_file
 

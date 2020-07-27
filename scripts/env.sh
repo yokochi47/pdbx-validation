@@ -79,3 +79,8 @@ if [ ! `which xmllint 2> /dev/null` ] ; then
  has_xmllint_command=false
 fi
 
+PDBML2WURCS_XSL=stylesheet/pdbml2wurcs.xsl
+PDBMLV2WURCS_XSL=stylesheet/pdbmlv2wurcs.xsl
+
+GLYTOUCAN_TSV=wurcs2glytoucan/glytoucan.tsv
+
