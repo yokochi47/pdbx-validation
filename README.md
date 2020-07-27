@@ -95,6 +95,7 @@ File path | Document
 
 	- [mmCIF-validation (full specification)](https://bmrbpub.pdbj.org/archive/mmcif-valid/)
 	- [mmCIF-validation-alt (lightweight version)](https://bmrbpub.pdbj.org/archive/mmcif-valid-alt/)
+	- [mmCIF-validation-alt (lightweight version @ PDBj FTP server)](http://ftp.pdbj.org/mine2/data/vrpt/mmcif/)
 
 	- [PDBML-validation (full specification)](https://bmrbpub.pdbj.org/archive/pdbml-valid/)
 	- [PDBML-validation-alt (lightweight version)](https://bmrbpub.pdbj.org/archive/pdbml-valid-alt/)
@@ -145,23 +146,23 @@ File path | Document
 ## Release notes
 
 - **Jul 22, 2020**: Release v2.0.11
-	- Update wwPDB Validation Information Dictionary to 2.331
-	- Add resources for wwPDB/RDF
+	- Update wwPDB Validation Information Dictionary to 2.331.
+	- Add resources for wwPDB/RDF (stylesheet/pdbml2rdf.xsl, stylesheet/cc2rdf.xsl).
 
 - **Jul 13, 2020**: Release v2.0.10
-	- Update wwPDB Validation Information Dictionary to 2.330
+	- Update wwPDB Validation Information Dictionary to 2.330.
 
 - **Jun 24, 2020**: Release v2.0.9
-	- Update wwPDB Validation Information Dictionary to 2.329
+	- Update wwPDB Validation Information Dictionary to 2.329.
 
 - **Jun 23, 2020**: Release v2.0.8
-	- Update wwPDB Validation Information Dictionary to 2.328
+	- Update wwPDB Validation Information Dictionary to 2.328.
 
 - **Jun 23, 2020**: Release v2.0.7
-	- Update wwPDB Validation Information Dictionary to 2.327
+	- Update wwPDB Validation Information Dictionary to 2.327.
 
 - **May 29, 2020**: Release v2.0.6
-	- Update wwPDB Validation Information Dictionary to 2.326 (incorpoate branch chain dictionary extension)
+	- Update wwPDB Validation Information Dictionary to 2.326 (incorpoate branch chain dictionary extension).
 
 - **May 26, 2020**: Release v2.0.5
 	- Update wwPDB Validation Information Dictionary to 2.325.
