@@ -6,10 +6,6 @@ if [ ! -e $SAXON ] || [ ! -e $XSD2PGSCHEMA ] ; then
  ./scripts/update_extlibs.sh
 fi
 
-PDBX_XSD=resource/pdbx-v50.xsd
-PDBX2PDBML2RDF_XSL=stylesheet/pdbx2pdbml2rdf.xsl
-PDBML2RDF_XSL=stylesheet/pdbml2rdf.xsl
-
 if [ ! -e $PDBX_XSD ] || [ ! -e $PDBML2RDF_XSL ] ; then
  ( cd resource; ./update_pdbx_xsd.sh; ./update_pdbx_owl.sh )
 fi
@@ -29,6 +25,8 @@ xml_pretty() {
  fi
 
 }
+
+# PDB/RDF
 
 WORK_DIR=test
 
@@ -50,8 +48,6 @@ for arg ; do
 
 done
 
-RDF=RDF
-
 mkdir -p $WORK_DIR/$RDF
 
 for pdbml_file in $WORK_DIR/$PDBML/*.xml ; do
@@ -59,39 +55,54 @@ for pdbml_file in $WORK_DIR/$PDBML/*.xml ; do
  pdbid=`basename $pdbml_file -noatom.xml`
 
  exptl_method=`java -jar $SAXON -s:$pdbml_file -xsl:stylesheet/exptl_method.xsl`
- wurcs_array=(`java -jar $SAXON -s:$pdbml_file -xsl:$PDBML2WURCS_XSL`)
-
- if [ ! -z $wurcs_array ] ; then
-
-  temp_file=`mktemp`
-
-  echo '<mapping>' > $temp_file
-
-  for wurcs in ${wurcs_array[@]} ; do
-    glytoucan=`grep -F "$wurcs" $GLYTOUCAN_TSV 2> /dev/null | cut -f 2 2> /dev/null | xargs`
-    echo '<wurcs id="'$wurcs'">'$glytoucan'</wurcs>' >> $temp_file
-  done
-
-  echo '</mapping>' >> $temp_file
-
- fi
 
  echo
  echo Processing PDB ID: ${pdbid^^}, "Exptl. method: "$exptl_method" ..."
 
  rdf_file=$WORK_DIR/$RDF/$pdbid.rdf
 
- if [ ! -z $wurcs_array ] ; then
+ java -jar $SAXON -s:$pdbml_file -xsl:$PDBML2RDF_XSL -o:$rdf_file wurcs2glytoucan=$GLYTOUCAN_XML || ( echo $0 aborted. && exit 1 )
 
-  java -jar $SAXON -s:$pdbml_file -xsl:$PDBML2RDF_XSL -o:$rdf_file wurcs2glytoucan=$temp_file || ( echo $0 aborted. && exit 1 )
+ echo " generated: "$rdf_file
 
-  rm -f $temp_file
-
- else
-
-  java -jar $SAXON -s:$pdbml_file -xsl:$PDBML2RDF_XSL -o:$rdf_file || ( echo $0 aborted. && exit 1 )
-
+ if [ $has_rapper_command != "false" ] ; then
+  rapper -q -c $rdf_file 2> /dev/null || ( echo $0 aborted. && exit 1 )
+  echo " validated: "$rdf_file
  fi
+
+ xml_pretty $rdf_file
+
+done
+
+echo
+echo Done.
+
+# chem_comp/RDF
+
+if [ ! -e $PDBX_XSD ] || [ ! -e $CC2RDF_XSL ] ; then
+ ( cd resource; ./update_pdbx_xsd.sh; ./update_pdbx_owl.sh )
+fi
+
+if [ ! -e $CC2RDF_XSL ] ; then
+
+ java -jar $SAXON -s:$PDBX_XSD -xsl:$PDBX2CC2RDF_XSL -o:$CC2RDF_XSL || ( echo $0 aborted. && exit 1 )
+
+ echo Generated: $CC2RDF_XSL
+
+fi
+
+mkdir -p $WORK_DIR/$COMPONENTS_RDF
+
+for pdbml_file in $WORK_DIR/$COMPONENTS_XML/*.xml ; do
+
+ ccid=`basename $pdbml_file .xml`
+
+ echo
+ echo Processing Chem comp ID: ${ccid^^}" ..."
+
+ rdf_file=$WORK_DIR/$COMPONENTS_RDF/$ccid.rdf
+
+ java -jar $SAXON -s:$pdbml_file -xsl:$CC2RDF_XSL -o:$rdf_file || ( echo $0 aborted. && exit 1 )
 
  echo " generated: "$rdf_file
 

@@ -33,7 +33,7 @@
 
   <xsl2:template match="/xsd:schema">
     <xsl2:text disable-output-escaping="yes">
-  &lt;xsl:param name="wurcs2glytoucan" required="no"/&gt;
+  &lt;xsl:param name="wurcs2glytoucan" select="'https://raw.githubusercontent.com/yokochi47/pdbx-validation/master/wurcs2glytoucan/glytoucan.xml'" required="no"/&gt;
   &lt;xsl:param name="glytoucan" select="document($wurcs2glytoucan)"/&gt;
 
   &lt;xsl:output method="xml" indent="yes"/&gt;
@@ -45,6 +45,7 @@
   &lt;xsl:variable name="base"&gt;https://rdf.wwpdb.org/pdb-validation/&lt;xsl:value-of select="$PDBID"/&gt;&lt;/xsl:variable&gt;
   &lt;xsl:variable name="base_lower"&gt;https://rdf.wwpdb.org/pdb/&lt;xsl:value-of select="$pdbid"/&gt;&lt;/xsl:variable&gt;
   &lt;xsl:variable name="pdb_link"&gt;https://rdf.wwpdb.org/pdb/&lt;/xsl:variable&gt;
+  &lt;xsl:variable name="bmrb_link"&gt;https://bmrbpub.pdbj.org/rdf/bmr&lt;/xsl:variable&gt;
   &lt;xsl:variable name="chem_comp"&gt;https://rdf.wwpdb.org/cc/&lt;/xsl:variable&gt;
   &lt;xsl:variable name="pdbj"&gt;https://pdbj.org/pdb/&lt;/xsl:variable&gt;
   &lt;xsl:variable name="rcsb"&gt;https://www.rcsb.org/pdb/explore.do?structureId=&lt;/xsl:variable&gt;
@@ -185,6 +186,10 @@
 
   &lt;xsl:template match="PDBxv:chem_comp/PDBxv:pdbx_model_coordinates_db_code" mode="linked"&gt;
     &lt;PDBov:link_to_pdb rdf:resource="{$pdb_link}{text()}"/&gt;
+  &lt;/xsl:template&gt;
+
+  &lt;xsl:template match="PDBxv:pdbx_database_related[@db_name='BMRB']/@db_id" mode="linked"&gt;
+    &lt;PDBov:link_to_bmrb rdf:resource="{$bmrb_link}{.}"/&gt;
   &lt;/xsl:template&gt;
 
   &lt;!-- level-3 templates follow --&gt;</xsl2:text>

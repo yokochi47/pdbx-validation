@@ -79,8 +79,21 @@ if [ ! `which xmllint 2> /dev/null` ] ; then
  has_xmllint_command=false
 fi
 
+PDBX_XSD=resource/pdbx-v50.xsd
+
+PDBX2PDBML2RDF_XSL=stylesheet/pdbx2pdbml2rdf.xsl
+PDBML2RDF_XSL=stylesheet/pdbml2rdf.xsl
+
+PDBX2CC2RDF_XSL=stylesheet/pdbx2cc2rdf.xsl
+CC2RDF_XSL=stylesheet/cc2rdf.xsl
+
 PDBML2WURCS_XSL=stylesheet/pdbml2wurcs.xsl
 PDBMLV2WURCS_XSL=stylesheet/pdbmlv2wurcs.xsl
 
-GLYTOUCAN_TSV=wurcs2glytoucan/glytoucan.tsv
+GLYTOUCAN_XML=../wurcs2glytoucan/glytoucan.xml
+
+RDF=RDF
+
+COMPONENTS_XML=components-xml
+COMPONENTS_RDF=components-rdf
 

@@ -2915,6 +2915,7 @@ INGRNNLIQQKN</PDBo:entity_poly.pdbx_seq_one_letter_code_can>
             <PDBo:pdbx_database_related.content_type>unspecified</PDBo:pdbx_database_related.content_type>
             <PDBo:pdbx_database_related.db_id>30210</PDBo:pdbx_database_related.db_id>
             <PDBo:pdbx_database_related.db_name>BMRB</PDBo:pdbx_database_related.db_name>
+            <PDBo:link_to_bmrb rdf:resource="https://bmrbpub.pdbj.org/rdf/bmr30210"/>
             <PDBo:pdbx_database_related.details>Solution structure of the zinc fingers 1 and 2 of MBNL1 in complex with human cardiac troponin T pre-mRNA</PDBo:pdbx_database_related.details>
           </PDBo:pdbx_database_related>
         </PDBo:has_pdbx_database_related>

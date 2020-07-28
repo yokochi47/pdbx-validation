@@ -63,30 +63,7 @@ do
 
   if ( [ ! -e $rdf_valid_file ] && [ ! -e $rdf_gz_valid_file ] ) || [ -e $err_file ] ; then
 
-   wurcs_array=(`java -jar $SAXON -s:$pdbml_valid_file -xsl:$PDBMLV2WURCS_XSL`)
-
-   if [ ! -z $wurcs_array ] ; then
-
-    temp_file=`mktemp`
-
-    echo '<mapping>' > $temp_file
-
-    for wurcs in ${wurcs_array[@]} ; do
-      glytoucan=`grep -F "$wurcs" $GLYTOUCAN_TSV 2> /dev/null | cut -f 2 2> /dev/null | xargs`
-      echo '<wurcs id="'$wurcs'">'$glytoucan'</wurcs>' >> $temp_file
-    done
-
-    echo '</mapping>' >> $temp_file
-
-    java -jar $SAXON -s:$pdbml_valid_file -xsl:$PDBMLV2RDF_XSL -o:$rdf_valid_file wurcs2glytoucan=$temp_file 2> $err_file && rm -f $err_file || ( cat $err_file && exit 1 )
-
-    rm -f $temp_file
-
-   else
-
-    java -jar $SAXON -s:$pdbml_valid_file -xsl:$PDBMLV2RDF_XSL -o:$rdf_valid_file 2> $err_file && rm -f $err_file || ( cat $err_file && exit 1 )
-
-   fi
+   java -jar $SAXON -s:$pdbml_valid_file -xsl:$PDBMLV2RDF_XSL -o:$rdf_valid_file wurcs2glytoucan=$GLYTOUCAN_XML 2> $err_file && rm -f $err_file || ( cat $err_file && exit 1 )
 
    if [ $has_rapper_command != "false" ] ; then
     rapper -q -c $rdf_valid_file 2> $err_file && rm -f $err_file || ( cat $err_file && exit 1 )
