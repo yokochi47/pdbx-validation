@@ -190,6 +190,7 @@ for pdbml_file in $WORK_DIR/$PDBML/*.xml ; do
   mmcif_valid_file=$pdbid-validation-full.cif
 
   ( cd $WORK_DIR/$MMCIF_VALID ; xml2mmcif -xml ../$XML_VALID/$pdbml_valid_file -dict $pdbx_validation_dic -df $pdbx_validation_odb > /dev/null && mv ../$XML_VALID/$pdbml_valid_file.cif $mmcif_valid_file )
+  ( cd $WORK_DIR/$MMCIF_VALID ; sed -i -e "s/\._\([0-9]\)\(\S*\) /\.\1\2  /" $mmcif_valid_file )
 
   if [ $? = 0 ] ; then
    echo " generated: "$WORK_DIR/$MMCIF_VALID/$mmcif_valid_file
@@ -213,6 +214,7 @@ for pdbml_file in $WORK_DIR/$PDBML/*.xml ; do
   mmcif_valid_alt_file=$pdbid-validation-alt.cif
 
   ( cd $WORK_DIR/$MMCIF_VALID_ALT ; xml2mmcif -xml ../$VALID_INFO_ALT/$info_alt_file -dict $pdbx_validation_dic -df $pdbx_validation_odb > /dev/null && mv ../$VALID_INFO_ALT/$info_alt_file.cif $mmcif_valid_alt_file )
+  ( cd $WORK_DIR/$MMCIF_VALID_ALT ; sed -i -e "s/\._\([0-9]\)\(\S*\) /\.\1\2  /" $mmcif_valid_alt_file )
 
   if [ $? = 0 ] ; then
    echo " generated: "$WORK_DIR/$MMCIF_VALID_ALT/$mmcif_valid_alt_file
