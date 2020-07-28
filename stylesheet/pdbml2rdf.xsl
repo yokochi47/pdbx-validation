@@ -11,7 +11,7 @@
   xmlns:dcterms="http://purl.org/dc/terms/"
   xmlns:skos="http://www.w3.org/2004/02/skos/core#">
 
-  <xsl:param name="wurcs2glytoucan" required="no"/>
+  <xsl:param name="wurcs2glytoucan" select="'https://raw.githubusercontent.com/yokochi47/pdbx-validation/master/wurcs2glytoucan/glytoucan.xml'" required="no"/>
   <xsl:param name="glytoucan" select="document($wurcs2glytoucan)"/>
 
   <xsl:output method="xml" indent="yes"/>
@@ -24,6 +24,7 @@
   <xsl:variable name="base_lower">https://rdf.wwpdb.org/pdb/<xsl:value-of select="$pdbid"/></xsl:variable>
   <xsl:variable name="vrpt_base">https://rdf.wwpdb.org/pdb-validation/<xsl:value-of select="$PDBID"/></xsl:variable>
   <xsl:variable name="pdb_link">https://rdf.wwpdb.org/pdb/</xsl:variable>
+  <xsl:variable name="bmrb_link">https://bmrbpub.pdbj.org/rdf/bmr</xsl:variable>
   <xsl:variable name="chem_comp">https://rdf.wwpdb.org/cc/</xsl:variable>
   <xsl:variable name="pdbj">https://pdbj.org/pdb/</xsl:variable>
   <xsl:variable name="rcsb">https://www.rcsb.org/pdb/explore.do?structureId=</xsl:variable>
@@ -165,6 +166,10 @@
 
   <xsl:template match="PDBx:chem_comp/PDBx:pdbx_model_coordinates_db_code" mode="linked">
     <PDBo:link_to_pdb rdf:resource="{$pdb_link}{text()}"/>
+  </xsl:template>
+
+  <xsl:template match="PDBx:pdbx_database_related[@db_name='BMRB']/@db_id" mode="linked">
+    <PDBo:link_to_bmrb rdf:resource="{$bmrb_link}{.}"/>
   </xsl:template>
 
   <!-- level-3 templates follow -->

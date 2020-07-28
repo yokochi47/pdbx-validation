@@ -65,7 +65,7 @@ do
 
    echo $pdb_id
 
-   ( cd $WORK_DIR ; gunzip -c ../$pdbml_valid_gz_file > $pdbml_valid_file ; xml2mmcif -xml $pdbml_valid_file -dict $pdbx_validation_dic -df $pdbx_validation_odb > /dev/null && ( mv -f $pdbml_valid_file.cif $mmcif_valid_file && rm $pdbml_valid_file ) || exit 1 )
+   ( cd $WORK_DIR ; gunzip -c ../$pdbml_valid_gz_file > $pdbml_valid_file ; xml2mmcif -xml $pdbml_valid_file -dict $pdbx_validation_dic -df $pdbx_validation_odb > /dev/null && ( mv -f $pdbml_valid_file.cif $mmcif_valid_file && rm $pdbml_valid_file && sed -i -e "s/\._\([0-9]\)\(\S*\) /\.\1\2  /" $mmcif_valid_file ) || exit 1 )
 
    if [ $proc_id_mod = 0 ] ; then
     echo -e -n "\rDone "$((proc_id + 1)) of $total ...

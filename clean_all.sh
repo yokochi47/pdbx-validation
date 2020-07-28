@@ -34,7 +34,5 @@ rm -rf $WORK_DIR/$PDBML_EXT $WORK_DIR/$VALID_INFO_ALT $WORK_DIR/$XML_VALID $WORK
 
 rm -rf $WORK_DIR/chk_sum_*
 
-if [ -e $GLYTOUCAN_TSV ] ; then
- ( cd wurcs2glytoucan; ./LocalGlyTouCanID > glytoucan.tsv )
-fi
+( cd wurcs2glytoucan; ./update_glytoucan.sh )
 

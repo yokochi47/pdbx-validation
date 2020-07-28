@@ -1,4 +1,0 @@
-ERROR - In block "6RJH-validation-full", in category "em_3d_fitting_list", item "_3d_fitting_id" is not defined in the reference file
-ERROR - In block "6RJH-validation-full", key item "3d_fitting_id" not found in category "em_3d_fitting_list"
-ERROR - In block "6RJH-validation-full", mandatory item "3d_fitting_id" is not in category "em_3d_fitting_list"
-

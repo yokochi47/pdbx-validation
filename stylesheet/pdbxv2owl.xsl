@@ -158,6 +158,11 @@
         <owl:sameAs rdf:resource="PDBo:link_to_split"/>
       </owl:ObjectProperty>
 
+      <owl:ObjectProperty rdf:ID="link_to_bmrb">
+        <rdfs:subPropertyOf rdf:resource="#rdf_link_to"/>
+        <rdfs:comment xml:lang="en">link to associated BMRB entry.</rdfs:comment>
+      </owl:ObjectProperty>
+
       <owl:ObjectProperty rdf:ID="link_to_pubmed">
 	<rdfs:subPropertyOf rdf:resource="#html_link_to"/>
 	<rdfs:comment xml:lang="en">external link to PubMed.</rdfs:comment>
