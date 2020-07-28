@@ -44,8 +44,8 @@
 --
 
 --
--- PDBML Schema v5.330
--- PDBML Schema translated from the PDBx/mmCIF Dictionary v5.330: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
+-- PDBML Schema v5.331
+-- PDBML Schema translated from the PDBx/mmCIF Dictionary v5.331: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
 -- URI-reference = http://pdbml.pdb.org/schema/pdbx-v50.xsd
 --
 
@@ -1245,7 +1245,7 @@ CREATE TABLE pdbx_chem_comp_model (
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_reference_molecule_class CASCADE;
-CREATE TYPE ENUM_pdbx_reference_molecule_class AS ENUM ( 'Antagonist', 'Antibiotic', 'Anticancer', 'Anticoagulant', 'Antifungal', 'Antigen', 'Antiinflammatory', 'Antimicrobial', 'Antineoplastic', 'Antiparasitic', 'Antiretroviral', 'Anthelmintic', 'Antithrombotic', 'Antitumor', 'Antiviral', 'CASPASE inhibitor', 'Chaperone binding', 'Enzyme inhibitor', 'Drug delivery', 'Glycan component', 'Growth factor', 'Immunosuppressant', 'Inducer', 'Inhibitor', 'Lantibiotic', 'Metabolism', 'Metal transport', 'Nutrient', 'Oxidation-reduction', 'Protein binding', 'Receptor', 'Substrate analog', 'Thrombin inhibitor', 'Transport activator', 'Trypsin inhibitor', 'Toxin', 'Unknown', 'Water retention', 'Anticoagulant, Antithrombotic', 'Antibiotic, Antimicrobial', 'Antibiotic, Anthelmintic', 'Antibiotic, Antineoplastic', 'Antimicrobial, Antiretroviral', 'Antimicrobial, Antitumor', 'Antimicrobial, Antiparasitic, Antibiotic', 'Thrombin inhibitor, Trypsin inhibitor' );
+CREATE TYPE ENUM_pdbx_reference_molecule_class AS ENUM ( 'Antagonist', 'Antibiotic', 'Anticancer', 'Anticoagulant', 'Antifungal', 'Antigen', 'Antiinflammatory', 'Antimicrobial', 'Antineoplastic', 'Antiparasitic', 'Antiretroviral', 'Anthelmintic', 'Antithrombotic', 'Antitumor', 'Antiviral', 'CASPASE inhibitor', 'Chaperone binding', 'Enzyme inhibitor', 'Drug delivery', 'Glycan component', 'Growth factor', 'Immunosuppressant', 'Inducer', 'Inhibitor', 'Lantibiotic', 'Metabolism', 'Metal transport', 'Nutrient', 'Oxidation-reduction', 'Protein binding', 'Receptor', 'Substrate analog', 'Synthetic opioid', 'Thrombin inhibitor', 'Transition state mimetic', 'Transport activator', 'Trypsin inhibitor', 'Toxin', 'Unknown', 'Water retention', 'Anticoagulant, Antithrombotic', 'Antibiotic, Antimicrobial', 'Antibiotic, Anthelmintic', 'Antibiotic, Antineoplastic', 'Antimicrobial, Antiretroviral', 'Antimicrobial, Antitumor', 'Antimicrobial, Antiparasitic, Antibiotic', 'Thrombin inhibitor, Trypsin inhibitor' );
 DROP TYPE IF EXISTS ENUM_pdbx_reference_molecule_release_status CASCADE;
 CREATE TYPE ENUM_pdbx_reference_molecule_release_status AS ENUM ( 'REL', 'HOLD', 'OBS', 'WAIT' );
 DROP TYPE IF EXISTS ENUM_pdbx_reference_molecule_represent_as CASCADE;
@@ -9942,7 +9942,7 @@ CREATE TABLE pdbx_molecule (
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_molecule_features_class CASCADE;
-CREATE TYPE ENUM_pdbx_molecule_features_class AS ENUM ( 'Antagonist', 'Antibiotic', 'Anticancer', 'Anticoagulant', 'Antifungal', 'Antigen', 'Antiinflammatory', 'Antimicrobial', 'Antineoplastic', 'Antiparasitic', 'Antiretroviral', 'Anthelmintic', 'Antithrombotic', 'Antitumor', 'Antiviral', 'CASPASE inhibitor', 'Chaperone binding', 'Enzyme inhibitor', 'Drug delivery', 'Glycan component', 'Growth factor', 'Immunosuppressant', 'Inducer', 'Inhibitor', 'Lantibiotic', 'Metabolism', 'Metal transport', 'Nutrient', 'Oxidation-reduction', 'Protein binding', 'Receptor', 'Substrate analog', 'Thrombin inhibitor', 'Transport activator', 'Trypsin inhibitor', 'Toxin', 'Unknown', 'Water retention', 'Anticoagulant, Antithrombotic', 'Antibiotic, Antimicrobial', 'Antibiotic, Anthelmintic', 'Antibiotic, Antineoplastic', 'Antimicrobial, Antiretroviral', 'Antimicrobial, Antitumor', 'Antimicrobial, Antiparasitic, Antibiotic', 'Thrombin inhibitor, Trypsin inhibitor' );
+CREATE TYPE ENUM_pdbx_molecule_features_class AS ENUM ( 'Antagonist', 'Antibiotic', 'Anticancer', 'Anticoagulant', 'Antifungal', 'Antigen', 'Antiinflammatory', 'Antimicrobial', 'Antineoplastic', 'Antiparasitic', 'Antiretroviral', 'Anthelmintic', 'Antithrombotic', 'Antitumor', 'Antiviral', 'CASPASE inhibitor', 'Chaperone binding', 'Enzyme inhibitor', 'Drug delivery', 'Glycan component', 'Growth factor', 'Immunosuppressant', 'Inducer', 'Inhibitor', 'Lantibiotic', 'Metabolism', 'Metal transport', 'Nutrient', 'Oxidation-reduction', 'Protein binding', 'Receptor', 'Substrate analog', 'Synthetic opioid', 'Thrombin inhibitor', 'Transition state mimetic', 'Transport activator', 'Trypsin inhibitor', 'Toxin', 'Unknown', 'Water retention', 'Anticoagulant, Antithrombotic', 'Antibiotic, Antimicrobial', 'Antibiotic, Anthelmintic', 'Antibiotic, Antineoplastic', 'Antimicrobial, Antiretroviral', 'Antimicrobial, Antitumor', 'Antimicrobial, Antiparasitic, Antibiotic', 'Thrombin inhibitor, Trypsin inhibitor' );
 DROP TYPE IF EXISTS ENUM_pdbx_molecule_features_type CASCADE;
 CREATE TYPE ENUM_pdbx_molecule_features_type AS ENUM ( 'Amino acid', 'Aminoglycoside', 'Anthracycline', 'Anthraquinone', 'Ansamycin', 'Chalkophore', 'Chromophore', 'Glycopeptide', 'Cyclic depsipeptide', 'Cyclic lipopeptide', 'Cyclic peptide', 'Heterocyclic', 'Imino sugar', 'Keto acid', 'Lipoglycopeptide', 'Lipopeptide', 'Macrolide', 'Non-polymer', 'Nucleoside', 'Oligopeptide', 'Oligosaccharide', 'Peptaibol', 'Peptide-like', 'Polycyclic', 'Polypeptide', 'Polysaccharide', 'Quinolone', 'Thiolactone', 'Thiopeptide', 'Siderophore', 'Unknown', 'Chalkophore, Polypeptide' );
 CREATE TABLE pdbx_molecule_features (

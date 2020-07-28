@@ -150,6 +150,13 @@ if [ $weekday -ge 1 ] && [ $weekday -le 4 ] ; then
   done < $chk_sum_log
  fi
 
+ if [ -d $RDF ] ; then
+  while read pdb_id ; do
+   [ -z "$pdb_id" ] || [[ "$pdb_id" =~ ^#.* ]] && continue
+   rm -f $RDF/$pdb_id.rdf
+  done < $chk_sum_log
+ fi
+
  if [ -d $MMCIF_VALID_ALT ] ; then
   while read pdb_id ; do
    [ -z "$pdb_id" ] || [[ "$pdb_id" =~ ^#.* ]] && continue
@@ -189,6 +196,13 @@ if [ $weekday -ge 1 ] && [ $weekday -le 4 ] ; then
   while read pdb_id ; do
    [ -z "$pdb_id" ] || [[ "$pdb_id" =~ ^#.* ]] && continue
    rm -f $RDF_VALID/${pdb_id:1:2}/$pdb_id-validation-full.rdf.gz
+  done < $chk_sum_log
+ fi
+
+ if [ -d $RDF ] ; then
+  while read pdb_id ; do
+   [ -z "$pdb_id" ] || [[ "$pdb_id" =~ ^#.* ]] && continue
+   rm -f $RDF/${pdb_id:1:2}/$pdb_id.rdf.gz
   done < $chk_sum_log
  fi
 
