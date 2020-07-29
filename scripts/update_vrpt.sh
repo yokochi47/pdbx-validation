@@ -2,16 +2,17 @@
 
 source ./scripts/env.sh
 
-DB_NAME=PDBML-noatom
+DB_NAME="wwPDB Validation Report"
+ALT_NAME="wwPDB Validation Information"
 
-SRC_DIR=$PDBML_NOATOM
-XML_DIR=$PDBML
+SRC_DIR=$VALID_REPORT
+XML_DIR=$VALID_INFO
 
 weekday=`date -u +"%w"`
 
 PDB_MIRRORS=("rsync.rcsb.org" "ftp.pdbj.org" "rsync.ebi.ac.uk")
 RSYNC_PORTS=("--port=33444" "" "")
-RSYNC_BASE_DIRS=("ftp_data/structures/divided" "ftp_data/structures/divided" "pub/databases/pdb/data/structures/divided")
+RSYNC_BASE_DIRS=("ftp" "ftp" "pub/databases/pdb")
 
 if [ ! -e url_mirror ] ; then
 
@@ -100,26 +101,19 @@ fi
 
 if [ $weekday -ge 1 ] && [ $weekday -le 4 ] ; then
 
- rsync -avz --delete $RSYNC_PORT $PDB_MIRROR::$RSYNC_BASE_DIR/$SRC_DIR/ $SRC_DIR
+ MD5_DIR=chk_sum_vrpt
+ FILE_EXT_DIGEST=_validation
 
- MD5_DIR=chk_sum_pdbml_noatom
- FILE_EXT_DIGEST=-noatom
+ chk_sum_log=vrpt_log
 
- chk_sum_log=pdbml_noatom_log
+ rsync -rlpt -v -z --delete $RSYNC_PORT $PDB_MIRROR::$RSYNC_BASE_DIR/$SRC_DIR .
 
  java -classpath $XSD2PGSCHEMA chksumstat --xml $SRC_DIR/[0-9a-z]{2} --xml-file-ext gz --sync $MD5_DIR --xml-file-ext-digest $FILE_EXT_DIGEST --update --verbose > $chk_sum_log
 
  if [ -d $XML_DIR ] ; then
   while read pdb_id ; do
    [ -z "$pdb_id" ] || [[ "$pdb_id" =~ ^#.* ]] && continue
-   rm -f $XML_DIR/$pdb_id-noatom.xml
-  done < $chk_sum_log
- fi
-
- if [ -d $PDBML_EXT ] ; then
-  while read pdb_id ; do
-   [ -z "$pdb_id" ] || [[ "$pdb_id" =~ ^#.* ]] && continue
-   rm -f $PDBML_EXT/$pdb_id-noatom-ext.xml
+   rm -f $XML_DIR/$pdb_id"_validation.xml"
   done < $chk_sum_log
  fi
 
@@ -155,13 +149,6 @@ if [ $weekday -ge 1 ] && [ $weekday -le 4 ] ; then
   while read pdb_id ; do
    [ -z "$pdb_id" ] || [[ "$pdb_id" =~ ^#.* ]] && continue
    rm -f $RDF_VALID/$pdb_id-validation-full.rdf
-  done < $chk_sum_log
- fi
-
- if [ -d $RDF ] ; then
-  while read pdb_id ; do
-   [ -z "$pdb_id" ] || [[ "$pdb_id" =~ ^#.* ]] && continue
-   rm -f $RDF/$pdb_id.rdf
   done < $chk_sum_log
  fi
 
@@ -207,13 +194,6 @@ if [ $weekday -ge 1 ] && [ $weekday -le 4 ] ; then
   done < $chk_sum_log
  fi
 
- if [ -d $RDF ] ; then
-  while read pdb_id ; do
-   [ -z "$pdb_id" ] || [[ "$pdb_id" =~ ^#.* ]] && continue
-   rm -f $RDF/${pdb_id:1:2}/$pdb_id.rdf.gz
-  done < $chk_sum_log
- fi
-
  if [ -d $MMCIF_VALID_ALT ] ; then
   while read pdb_id ; do
    [ -z "$pdb_id" ] || [[ "$pdb_id" =~ ^#.* ]] && continue
@@ -232,9 +212,9 @@ if [ $weekday -ge 1 ] && [ $weekday -le 4 ] ; then
 
 fi
 
-xml_file_total=pdbml_file_total
+xml_file_total=info_file_total
 
-updated=`find $SRC_DIR/* -name "*.xml.gz" -mtime -4 | wc -l`
+updated=`find $SRC_DIR -regextype posix-egrep -regex '.*/[0-9][0-9a-z]{3}_validation.xml.gz' -mtime -4 | wc -l`
 
 if [ $updated = 0 ] || [ ! -e $xml_file_total ] ; then
 
@@ -244,7 +224,7 @@ if [ $updated = 0 ] || [ ! -e $xml_file_total ] ; then
   last=`cat $xml_file_total`
  fi
 
- total=`find $SRC_DIR/* -name '*.xml.gz' | wc -l`
+ total=`find $SRC_DIR -regextype posix-egrep -regex '.*/[0-9][0-9a-z]{3}_validation.xml.gz' | wc -l`
 
  if [ $total = $last ] ; then
 
@@ -268,20 +248,20 @@ if [ $updated = 0 ] || [ ! -e $xml_file_total ] ; then
 
 fi
 
-date -u +"%b %d, %Y" > /tmp/pdbml-last
+date -u +"%b %d, %Y" > /tmp/pdb-vrpt-last
 
 gz_file_list=${SRC_DIR,,}_gz_file_list
 
 mkdir -p $XML_DIR
 
-find $SRC_DIR/* -name '*.xml.gz' > $gz_file_list
+find $SRC_DIR -regextype posix-egrep -regex '.*/[0-9][0-9a-z]{3}_validation.xml.gz' > $gz_file_list
 
 while read gz_file
 do
 
- xml_file=`basename $gz_file .gz`
+ info_file=`basename $gz_file .gz`
 
- if [ ! -e $XML_DIR/$xml_file ] ; then
+ if [ ! -e $XML_DIR/$info_file ] ; then
   cp $gz_file $XML_DIR
  fi
 
@@ -291,5 +271,5 @@ rm -f $gz_file_list
 
 find $XML_DIR -type f -name "*.gz" -exec gunzip {} +
 
-echo Unzipped $DB_NAME" ("$XML_DIR") is up-to-date."
+echo Unzipped $ALT_NAME" ("$XML_DIR") is up-to-date."
 

@@ -46,7 +46,7 @@ if [ ! -d $PDBML ] ; then
 fi
 
 if [ ! -d $VALID_INFO ] ; then
- ./scripts/update_validation.sh
+ ./scripts/update_vrpt.sh
 fi
 
 last=`find $PDBML_EXT -maxdepth 1 -name '*.xml' | wc -l`

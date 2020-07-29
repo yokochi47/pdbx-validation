@@ -12,7 +12,7 @@ if [ ! `which psql` ] ; then
 
 fi
 
-DB_NAME=pdbml_noatom_clone
+DB_NAME=xml_vrpt_clone
 DB_USER=$USER
 
 echo
@@ -30,14 +30,14 @@ if [ ! -e $XSD2PGSCHEMA ] ; then
  ./scripts/update_extlibs.sh
 fi
 
-XML_DIR=$PDBML_NOATOM
-FILE_EXT_DIGEST=-noatom
+XML_DIR=$VALID_INFO
+FILE_EXT_DIGEST=_validation
 
-XSD_SCHEMA=$PDBML_XSD
-DB_SCHEMA=$PDBML_SQL
+XSD_SCHEMA=$WWPDB_VALIDATION_XSD
+DB_SCHEMA=$WWPDB_VALIDATION_SQL
 
 if [ ! -e $DB_SCHEMA ] ; then
- java -classpath $XSD2PGSCHEMA xsd2pgschema --xsd $XSD_SCHEMA --ddl $DB_SCHEMA --no-rel --doc-key --no-key
+ java -classpath $XSD2PGSCHEMA xsd2pgschema --xsd $XSD_SCHEMA --ddl $DB_SCHEMA
 fi
 
 echo
@@ -51,23 +51,23 @@ case $ans in
   exit 1;;
 esac
 
-if [ ! -d $PDBML_NOATOM ] ; then
- ./scripts/update_pdbml.sh
+if [ ! -d $XML_DIR ] ; then
+ ./scripts/update_vrpt.sh
 fi
 
-MD5_DIR=chk_sum_psql_pdbml_noatom
+MD5_DIR=chk_sum_psql_xml_vrpt
 
 relations=`psql -d $DB_NAME -U $DB_USER -c "\d" | wc -l`
 
 if [ $sync_update != "true" ] || [ ! -d $MD5_DIR ] || [ $relations -eq 0 ] ; then
+ sync_update=false
  psql -d $DB_NAME -U $DB_USER -f $DB_SCHEMA --quiet
 fi
 
 WORK_DIR=pg_work
 
 if [ $sync_update != "true" ] ; then
- sync_update=false
- DATA_DIR=$WORK_DIR/data
+ DATA_DIR=$WORK_DIR/work
 fi
 
 ERR_DIR=$WORK_DIR/err
@@ -86,11 +86,11 @@ err_file=$ERR_DIR/all_err
 
 if [ $sync_update != "true" ] ; then
 
- java -classpath $XSD2PGSCHEMA xml2pgtsv --xsd $XSD_SCHEMA --xml $XML_DIR/[0-9a-z]{2} --xml-file-ext gz --work-dir $DATA_DIR --sync $MD5_DIR --no-rel --doc-key --no-valid --xml-file-ext-digest $FILE_EXT_DIGEST --db-name $DB_NAME --db-user $DB_USER 2> $err_file
+ java -classpath $XSD2PGSCHEMA xml2pgtsv --xsd $XSD_SCHEMA --xml $XML_DIR --work-dir $DATA_DIR --sync $MD5_DIR --xml-file-ext-digest $FILE_EXT_DIGEST --db-name $DB_NAME --db-user $DB_USER --type-check 2> $err_file
 
 else
 
- java -classpath $XSD2PGSCHEMA xml2pgsql --xsd $XSD_SCHEMA --xml $XML_DIR/[0-9a-z]{2} --xml-file-ext gz --sync $MD5_DIR --no-rel --doc-key --no-valid --xml-file-ext-digest $FILE_EXT_DIGEST --db-name $DB_NAME --db-user $DB_USER 2> $err_file
+ java -classpath $XSD2PGSCHEMA xml2pgsql --xsd $XSD_SCHEMA --xml $XML_DIR --sync $MD5_DIR --xml-file-ext-digest $FILE_EXT_DIGEST --db-name $DB_NAME --db-user $DB_USER --type-check 2> $err_file
 
 fi
 

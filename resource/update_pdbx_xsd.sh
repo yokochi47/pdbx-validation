@@ -76,3 +76,11 @@ fi
 
 echo Generated: $DIC_PREFIX-v$DIC_MAJOR_VER.xsd
 
+if [ -e ../extlibs/xsd2pgschema.jar ] ; then
+
+ java -classpath ../extlibs/xsd2pgschema.jar xsd2pgschema --xsd $DIC_PREFIX-v$DIC_MAJOR_VER.xsd --ddl $DIC_PREFIX-v$DIC_MAJOR_VER.sql --no-rel --doc-key --no-key
+
+ echo Generated: $DIC_PREFIX-v$DIC_MAJOR_VER.sql
+
+fi
+

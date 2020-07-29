@@ -34,9 +34,9 @@ if [ ! -z $XML_DIR ] ; then
  find $XML_DIR -maxdepth 1 -name '*.xml' -size 0 -exec rm {} +
 
  if [ $DELETE = "true" ] ; then
-  java -classpath $XSD2PGSCHEMA xmlvalidator --xsd $PDBX_VALIDATION_XSD --xml $XML_DIR --sync chk_sum_pdbml_valid --del-invalid-xml
+  java -classpath $XSD2PGSCHEMA xmlvalidator --xsd $PDBX_VALIDATION_XSD --xml $XML_DIR --sync chk_sum_pdbml_vrpt --del-invalid-xml
  else
-  java -classpath $XSD2PGSCHEMA xmlvalidator --xsd $PDBX_VALIDATION_XSD --xml $XML_DIR --sync chk_sum_pdbml_valid
+  java -classpath $XSD2PGSCHEMA xmlvalidator --xsd $PDBX_VALIDATION_XSD --xml $XML_DIR --sync chk_sum_pdbml_vrpt
  fi
 
 fi

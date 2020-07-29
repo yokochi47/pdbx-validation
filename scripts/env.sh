@@ -81,6 +81,8 @@ fi
 
 PDBX_XSD=resource/pdbx-v50.xsd
 
+PDBML_CC=PDBML
+
 PDBX2PDBML2RDF_XSL=stylesheet/pdbx2pdbml2rdf.xsl
 PDBML2RDF_XSL=stylesheet/pdbml2rdf.xsl
 

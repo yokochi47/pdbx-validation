@@ -79,6 +79,14 @@ ln -s $DIC_PREFIX-v$DIC_VER.xsd $DIC_PREFIX-v$DIC_MAJOR_VER.xsd
 
 echo Generated: $DIC_PREFIX-v$DIC_MAJOR_VER.xsd
 
+if [ -e ../extlibs/xsd2pgschema.jar ] ; then
+
+ java -classpath ../extlibs/xsd2pgschema.jar xsd2pgschema --xsd $DIC_PREFIX-v$DIC_MAJOR_VER.xsd --ddl $DIC_PREFIX-v$DIC_MAJOR_VER.sql --no-rel --no-key --inplace-doc-key-name entry_id --inplace-doc-key-name entry.id --doc-key-if-no-inplace --doc-key-name entry_id
+
+ echo Generated: $DIC_PREFIX-v$DIC_MAJOR_VER.sql
+
+fi
+
 # Convert tagmap.csv to tagmap.xml
 
 TAGMAP2XML_XSL=../stylesheet/tagmap2xml.xsl
