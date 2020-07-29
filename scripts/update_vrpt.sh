@@ -259,9 +259,9 @@ find $SRC_DIR -regextype posix-egrep -regex '.*/[0-9][0-9a-z]{3}_validation.xml.
 while read gz_file
 do
 
- info_file=`basename $gz_file .gz`
+ xml_file=`basename $gz_file .gz`
 
- if [ ! -e $XML_DIR/$info_file ] ; then
+ if [ ! -e $XML_DIR/$xml_file ] ; then
   cp $gz_file $XML_DIR
  fi
 
