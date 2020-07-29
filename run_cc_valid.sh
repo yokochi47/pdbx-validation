@@ -18,10 +18,10 @@ while true ; do
  shift
 done
 
-# PDB/RDF
+# chem_comp/RDF
 
-if [ ! -z $RDF ] ; then
-# ./scripts/validate_all_rdf.sh -d $RDF $DELETE_OPT
- ./scripts/validate_all_rdf_gz.sh -d $RDF $DELETE_OPT
+if [ ! -z $COMPONENTS_RDF ] ; then
+# ./scripts/validate_all_rdf.sh -d $COMPONENTS_RDF $DELETE_OPT
+ ./scripts/validate_all_rdf_gz.sh -d $COMPONENTS_RDF $DELETE_OPT
 fi
 

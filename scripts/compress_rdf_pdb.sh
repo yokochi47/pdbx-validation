@@ -2,7 +2,7 @@
 
 source ./scripts/env.sh
 
-DB_NAME="wwPDB/RDF"
+DB_NAME="PDB/RDF"
 
 if [ ! -d $RDF ] ; then
  ./scripts/transl_to_rdf_pdb.sh
