@@ -102,9 +102,9 @@ if [ $weekday -ge 1 ] && [ $weekday -le 4 ] ; then
 
  rsync -avz --delete $RSYNC_PORT $PDB_MIRROR::$RSYNC_BASE_DIR/$SRC_DIR/ $SRC_DIR
 
- MD5_DIR=chk_sum_cc
+ MD5_DIR=chk_sum_pdbml_cc
 
- chk_sum_log=cc_log
+ chk_sum_log=pdbml_cc_log
 
  java -classpath $XSD2PGSCHEMA chksumstat --xml $SRC_DIR --xml-file-ext gz --sync $MD5_DIR --update --verbose > $chk_sum_log
 
@@ -126,7 +126,7 @@ if [ $weekday -ge 1 ] && [ $weekday -le 4 ] ; then
 
 fi
 
-xml_file_total=cc_file_total
+xml_file_total=pdbml_cc_file_total
 
 updated=`find $SRC_DIR/* -name "*.xml.gz" -mtime -4 | wc -l`
 
@@ -162,7 +162,7 @@ if [ $updated = 0 ] || [ ! -e $xml_file_total ] ; then
 
 fi
 
-date -u +"%b %d, %Y" > /tmp/cc-last
+date -u +"%b %d, %Y" > /tmp/pdbml-cc-last
 
 gz_file_list=${SRC_DIR,,}_gz_file_list
 
