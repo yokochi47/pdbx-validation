@@ -93,37 +93,37 @@ File path | Document
 
 - Bulk download via HTTP protocol
 
-	- [mmCIF-validation (full specification)](https://bmrbpub.pdbj.org/archive/mmcif-valid/)
-	- [mmCIF-validation-alt (lightweight version)](https://bmrbpub.pdbj.org/archive/mmcif-valid-alt/)
+	- [mmCIF-validation (full specification)](https://bmrbpub.pdbj.org/archive/mmcif-vrpt/)
+	- [mmCIF-validation-alt (lightweight version)](https://bmrbpub.pdbj.org/archive/mmcif-vrpt-alt/)
 	- [mmCIF-validation-alt (lightweight version @ PDBj FTP server)](http://ftp.pdbj.org/mine2/data/vrpt/mmcif/)
 
-	- [PDBML-validation (full specification)](https://bmrbpub.pdbj.org/archive/pdbml-valid/)
-	- [PDBML-validation-alt (lightweight version)](https://bmrbpub.pdbj.org/archive/pdbml-valid-alt/)
+	- [PDBML-validation (full specification)](https://bmrbpub.pdbj.org/archive/pdbml-vrpt/)
+	- [PDBML-validation-alt (lightweight version)](https://bmrbpub.pdbj.org/archive/pdbml-vrpt-alt/)
 	- [PDBML-validation-alt (lightweight version @ PDBj FTP server)](http://ftp.pdbj.org/XML/vrpt-alt/)
 
-	- [wwPDB/RDF-validation (full specification)](https://bmrbpub.pdbj.org/archive/wwpdb-rdf-valid/)
-	- [wwPDB/RDF-validation-alt (lightweight version)](https://bmrbpub.pdbj.org/archive/wwpdb-rdf-valid-alt/)
+	- [wwPDB/RDF-validation (full specification)](https://bmrbpub.pdbj.org/archive/wwpdb-rdf-vrpt/)
+	- [wwPDB/RDF-validation-alt (lightweight version)](https://bmrbpub.pdbj.org/archive/wwpdb-rdf-vrpt-alt/)
 	- [wwPDB/RDF-validation-alt (lightweight version @ PDBj FTP server)](http://ftp.pdbj.org/RDF/vrpt-alt/)
 
 - Bulk download via rsync protocol
 
 	- mmCIF-validation (full specification):<br />
-	 `% rsync -av --delete rsync://bmrbpub.pdbj.org/mmcif-valid .`
+	 `% rsync -av --delete rsync://bmrbpub.pdbj.org/mmcif-vrpt .`
 
 	- mmCIF-validation-alt (lightweight version):<br />
-	 `% rsync -av --delete rsync://bmrbpub.pdbj.org/mmcif-valid-alt .`
+	 `% rsync -av --delete rsync://bmrbpub.pdbj.org/mmcif-vrpt-alt .`
 
 	- PDBML-validation (full specification):<br />
-	 `% rsync -av --delete rsync://bmrbpub.pdbj.org/pdbml-valid .`
+	 `% rsync -av --delete rsync://bmrbpub.pdbj.org/pdbml-vrpt .`
 
 	- PDBML-validation-alt (lightweight version):<br />
-	 `% rsync -av --delete rsync://bmrbpub.pdbj.org/pdbml-valid-alt .`
+	 `% rsync -av --delete rsync://bmrbpub.pdbj.org/pdbml-vrpt-alt .`
 
 	- wwPDB/RDF-validation (full specification):<br />
-	 `% rsync -av --delete rsync://bmrbpub.pdbj.org/wwpdb-rdf-valid .`
+	 `% rsync -av --delete rsync://bmrbpub.pdbj.org/wwpdb-rdf-vrpt .`
 
 	- wwPDB/RDF-validation-alt (lightweight version):<br />
-	 `% rsync -av --delete rsync://bmrbpub.pdbj.org/wwpdb-rdf-valid-alt .`
+	 `% rsync -av --delete rsync://bmrbpub.pdbj.org/wwpdb-rdf-vrpt-alt .`
 
 - [PDBML-validation-alt PostgreSQL dump file](https://bmrbpub.pdbj.org/resources.html)
 
