@@ -11,7 +11,7 @@ weekday=`date -u +"%w"`
 
 PDB_MIRRORS=("rsync.rcsb.org" "ftp.pdbj.org" "rsync.ebi.ac.uk")
 RSYNC_PORTS=("--port=33444" "" "")
-RSYNC_BASE_DIRS=("ftp_data/chem_comp/PDBML" "ftp_data/chem_comp/PDBML" "pub/databases/pdb/data/chem_comp/PDBML")
+RSYNC_BASE_DIRS=("ftp_data/chem_comp" "ftp_data/chem_comp" "pub/databases/pdb/data/chem_comp")
 
 if [ ! -e url_mirror ] ; then
 
