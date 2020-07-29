@@ -5,7 +5,7 @@ source ./scripts/env.sh
 DB_NAME="mmCIF-validation-alt"
 
 if [ ! -d $MMCIF_VALID_ALT ] ; then
- ./scripts/translate_to_mmcif_alt.sh
+ ./scripts/transl_to_mmcif_vrpt_alt.sh
 fi
 
 echo
@@ -19,7 +19,7 @@ find $MMCIF_VALID_ALT -maxdepth 1 -name '*.cif' > $mmcif_file_list
 
 for proc_id in `seq 1 $MAXPROCS` ; do
 
- ./scripts/compress_mmcif_validation_alt_worker.sh -d $MMCIF_VALID_ALT -l $mmcif_file_list -n $proc_id"of"$MAXPROCS &
+ ./scripts/compress_mmcif_vrpt_alt_worker.sh -d $MMCIF_VALID_ALT -l $mmcif_file_list -n $proc_id"of"$MAXPROCS &
 
 done
 

@@ -3,7 +3,7 @@
 end_point=https://ts.glytoucan.org/sparql
 limit=500
 
-output_xml=glytoucan.xml
+glytoucan_xml=glytoucan.xml
 
 function query() {
  offset=${1:-0}
@@ -46,9 +46,9 @@ function query_recursive() {
   printf "\rRetrieved %s entries..." $((offset + $(echo -e "${result}" | wc -l))) >&2
   for line in ${result} ; do
    if [ $(($i % 2)) == 0 ] ; then
-    echo -n '<wurcs id='$(echo $line | sed 's/</\&lt;/g; s/>/\&gt;/g')'>' >> $output_xml
+    echo -n '<wurcs id='$(echo $line | sed 's/</\&lt;/g; s/>/\&gt;/g')'>' >> $glytoucan_xml
    else
-    echo $(echo $line | xargs)'</wurcs>' >> $output_xml
+    echo $(echo $line | xargs)'</wurcs>' >> $glytoucan_xml
    fi
    let i++
   done
@@ -58,9 +58,11 @@ function query_recursive() {
  fi
 }
 
-echo '<mapping>' > $output_xml
+echo '<mapping>' > $glytoucan_xml
 
 query_recursive
 
-echo '</mapping>' >> $output_xml
+echo '</mapping>' >> $glytoucan_xml
+
+echo $glytoucan_xml is up-to-date.
 

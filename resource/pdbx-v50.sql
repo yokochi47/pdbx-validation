@@ -1,5 +1,5 @@
 --
--- PostgreSQL DDL generated from resource/pdbx-v50.xsd using xsd2pgschema
+-- PostgreSQL DDL generated from pdbx-v50.xsd using xsd2pgschema
 --  xsd2pgschema - Database replication tool based on XML Schema
 --  https://sourceforge.net/projects/xsd2pgschema/
 --
@@ -23,12 +23,12 @@
 -- Statistics of schema:
 --  Generated 560 tables (6809 fields), 0 views (0 fields), 0 attr groups, 0 model groups in total
 --   Unnecessary tables by inlining simple content as a primitive data type:
---    schema location: resource/pdbx-v50.xsd
---      "S31", "T12_esd", "B_iso_mean", sampling_size, "U_tls13", angle_beta_esd, "Cartn_z_esd", pdbx_crystal_diffrn_lifetime, diff_density_max, diffr_kappa, "U_equiv_geom_mean_esd", ambient_temp_esd, pressure_esd, "dist_HA_esd", "model_Cartn_x", "B_equiv_geom_mean_esd", "S13_esd", "F_squared_meas", "U13_esd", "L11", "aniso_U33", "B33", protein_volume, "L23", "Cartn_y", epsilon, average_torsion_angle_constraint_violation, "S32", scan_rate, yield_pooled_fractions, improper_torsion_angle, reciprocal_length_a_esd, "aniso_U23", covalent_bond_rms_dev, angle_value, dist_esd, temperature_decomposition_esd, "F_calc", angle_gamma_esd, recording_temperature_maximum, length_c_esd, "aniso_U13_esd", "B_calc_au", "aniso_B33_esd", "aniso_U22", "B22", inducer_concentration, "L12", "Cartn_z", nu2, "S21", nu1, "U_tls23", nu4, "U_tls11", nu3, peptide_planarity_rms_dev, "S33", "Luzzati_d_res_low_obs", nu0, temperature, pdbx_phase_calc_with_solvent, "Luzzati_sigma_a_free", "Cartn_x_esd", pressure, lower_limit, "B_iso_min", diffr_chi, "A_meas_au", angle_psi, bond, "Luzzati_sigma_a_obs", "B11", "L13", "B33_esd", diff_density_rms_esd, "B23", "F_meas_au", "F_meas_sigma_au", pdbx_crystal_direction_1, pdbx_crystal_direction_2, "U_tls12", zeta, pdbx_crystal_direction_3, "S22", "S11_esd", scan_time_backgd, pdbx_crystal_diffrn_limit, flow_rate, time, protein_yield, omega, diffr_psi, "L12_esd", bond_angle_rms_dev, column_volume, pdbx_solvent_ion_probe_radii, pdbx_dist_value, "Cartn_x", "Ro", "B12", mol_wt_exp, final_thickness, neighbor_macromolecule_distance, diff_density_min_esd, "U_tls33", "B22_esd", "pdbx_res_netI_over_sigmaI_2", "U13", reciprocal_angle_alpha_esd, mol_wt_theo, beta_tolerance, "F_squared_calc", "B_iso_Wilson_estimate", "L22_esd", "angle_DHA_esd", current, "T33_esd", gamma, "F_meas_sigma", "U_tls22", peptide_planarity_rms_dev_error, alpha, delta, "T22_esd", storage_temperature, "aniso_B11_esd", reciprocal_angle_gamma_esd, angle_chi, "aniso_B22_esd", reciprocal_length_b_esd, "model_Cartn_z_esd", angle_omega, distance_rms_dev_error, detector_distance, resolution, "dist_DA_esd", culture_temperature, "aniso_U11_esd", min_mean_cross_sectional_radii_gyration, improper_torsion_angle_rms_dev, improper_torsion_angle_rms_dev_error, psi, "aniso_U12", energyfilter_lower, "L33_esd", "aniso_B12_esd", "pre_Cartn_x", calibrated_defocus_min, upper_limit, max_mean_cross_sectional_radii_gyration, "model_Cartn_y_esd", "L33", "aniso_U11", power, distance_rms_dev, "A_calc_au", mean_guiner_radius, "aniso_U13", dihedral_angles_rms_dev, energyfilter_upper, "U11_esd", origin_z, origin_y, pdbx_mosaicity_esd, origin_x, induction_timepoint, nominal_defocus_max, "I", "pdbx_model_Cartn_y_ideal", volume_pooled_fractions, "dist_DH_esd", "pre_Cartn_y", "B_iso_or_equiv", "B12_esd", "L22", "L23_esd", reciprocal_angle_beta_esd, alpha_tolerance, temp_esd, "T23_esd", "U12_esd", "aniso_B22", "S12_esd", "L13_esd", "T12", "U33", volume_three, value_esd, dev, "B13_esd", tilt_angle_min, "pre_Cartn_z", tau1, reciprocal_length_c_esd, "T13_esd", tau0, concentration_range, covalent_bond_rms_dev_error, "B_iso_or_equiv_esd", mean_guiner_radius_esd, "sigmaI", "B_iso_max", length_a_esd, "A_meas", angle_alpha_esd, "aniso_B23", "aniso_B11", neighbor_ligand_distance, "T13", recording_temperature_minimum, "U22", prot_cis, "L11_esd", atom_deviation, tau3, tau2, tau4, cleavage_temperature, "T11_esd", diff_density_min, pdbx_solvent_shrinkage_radii, induction_temperature, pdbx_phase_calc_part_solvent, "Cartn_y_esd", "S31_esd", dist, column_temperature, residual_tilt, "F_meas", maximum_upper_distance_constraint_violation, "U23", "aniso_B13_esd", "U11", voltage, "B11_esd", "model_Cartn_x_esd", rise_per_n_subunits, energy_window, taum, "aniso_U12_esd", "B_iso", volume_three_esd, culture_volume, angle_kappa, "aniso_B33", temp, bond_angle_rms_dev_error, pdbx_collection_time_total, sample_concentration, "U12", "S33_esd", gamma_tolerance, phase_meas, rmsd, "U22_esd", density_meas_temp_esd, "B23_esd", electron_dose, protein_concentration, diff_density_max_esd, length_b_esd, initial_thickness, angle_deviation, scat_length_neutron, "S11", beta, "S23", "aniso_U22_esd", sample_volume, max_mean_cross_sectional_radii_gyration_esd, bond_deviation, dihedral_angles_rms_dev_error, "aniso_U23_esd", min_mean_cross_sectional_radii_gyration_esd, maximum_distance_constraint_violation, "F_calc_au", "Luzzati_d_res_low_free", "S21_esd", "F_squared_sigma", "aniso_B23_esd", "B13", chi1, pdbx_mosaicity, chi3, chi2, chi5, diffr_phi, "S12", "T33", chi4, "P", multiplicity_of_infection, phi, temperature_sublimation_esd, buffer_volume, pdbx_solvent_vdw_probe_radii, angle_theta, "pdbx_model_Cartn_x_ideal", volume_esd, ambient_pressure_esd, average_distance_constraint_violation, "B_meas", "S23_esd", "B_meas_au", "pdbx_model_Cartn_z_ideal", maximum_torsion_angle_constraint_violation, "U23_esd", "aniso_B12", nominal_defocus_min, "S13", "Luzzati_coordinate_error_free", duration, "T22", "S32_esd", "aniso_U33_esd", "B_calc", "Luzzati_coordinate_error_obs", density_meas_esd, culture_time, "model_Cartn_z", "U_iso_or_equiv_esd", "B", value, angle, "A_calc", "aniso_B13", angle_target_value, tilt_angle_max, "S22_esd", "T23", cleavage_time, "U33_esd", chamber_temperature, "T11", phase_calc, "pdbx_F_calc_with_solvent", "pdbx_F_calc_part_solvent", "model_Cartn_y", "B_iso_esd", rotation_per_n_subunits, angle_phi, maximum_lower_distance_constraint_violation, "pdbx_res_netI_over_av_sigmaI_2", diff_density_rms
+--    schema location: pdbx-v50.xsd
+--      temperature, final_thickness, "B_calc", zeta, "L23", "L11", "pdbx_F_calc_with_solvent", time, "model_Cartn_y_esd", diffr_phi, "B_iso_or_equiv", pdbx_solvent_vdw_probe_radii, maximum_torsion_angle_constraint_violation, "A_meas_au", lower_limit, "F_meas", "S31", "F_meas_au", "Cartn_x_esd", length_a_esd, "L22", "F_squared_calc", volume_three, mean_guiner_radius, reciprocal_angle_beta_esd, beta_tolerance, maximum_upper_distance_constraint_violation, bond_deviation, nominal_defocus_min, resolution, pdbx_mosaicity_esd, "B33", angle, "B_iso_min", "U_equiv_geom_mean_esd", psi, "U33_esd", bond_angle_rms_dev, "S33_esd", angle_gamma_esd, pdbx_crystal_direction_3, dihedral_angles_rms_dev, pdbx_crystal_direction_2, "angle_DHA_esd", epsilon, pdbx_crystal_direction_1, bond, "aniso_U22", induction_temperature, average_torsion_angle_constraint_violation, "L33", angle_phi, "aniso_B11_esd", pdbx_solvent_ion_probe_radii, "aniso_B33_esd", "dist_HA_esd", "B_calc_au", culture_temperature, "S23_esd", sample_volume, diffr_kappa, reciprocal_length_a_esd, peptide_planarity_rms_dev, "sigmaI", recording_temperature_minimum, pdbx_solvent_shrinkage_radii, "aniso_U33", maximum_lower_distance_constraint_violation, culture_time, "aniso_U22_esd", column_volume, tilt_angle_min, prot_cis, electron_dose, scan_time_backgd, "aniso_B23_esd", protein_yield, "B_equiv_geom_mean_esd", calibrated_defocus_min, "F_squared_meas", "B22_esd", "aniso_U12", pdbx_dist_value, duration, "U11_esd", induction_timepoint, "L12_esd", "T11_esd", "model_Cartn_y", energyfilter_lower, alpha, pressure, atom_deviation, "U13", improper_torsion_angle_rms_dev_error, "B12_esd", "T12_esd", "aniso_U13_esd", "pdbx_model_Cartn_y_ideal", "A_calc_au", pdbx_phase_calc_part_solvent, reciprocal_angle_gamma_esd, "aniso_U11", "aniso_U23", angle_value, "F_squared_sigma", buffer_volume, covalent_bond_rms_dev, reciprocal_angle_alpha_esd, "L13_esd", "model_Cartn_x", "T13_esd", rotation_per_n_subunits, diff_density_min, "B_iso", "U12", angle_omega, energyfilter_upper, mean_guiner_radius_esd, "A_meas", "aniso_U23_esd", storage_temperature, mol_wt_theo, tau1, distance_rms_dev, tau2, tau3, tau4, "U23", "I", flow_rate, dist, "A_calc", angle_deviation, temperature_decomposition_esd, nominal_defocus_max, "B_iso_mean", "U11", "aniso_U33_esd", dist_esd, "aniso_U13", value_esd, upper_limit, "B_meas", initial_thickness, cleavage_time, "pdbx_res_netI_over_av_sigmaI_2", "model_Cartn_z", density_meas_temp_esd, "T13", maximum_distance_constraint_violation, tau0, "B11_esd", angle_beta_esd, "L22_esd", "T22_esd", "U22", gamma_tolerance, temp, "U_tls22", phase_calc, angle_chi, "aniso_B22_esd", improper_torsion_angle_rms_dev, diff_density_max_esd, sample_concentration, rmsd, "pdbx_F_calc_part_solvent", cleavage_temperature, "pdbx_res_netI_over_sigmaI_2", "Luzzati_sigma_a_obs", "Luzzati_coordinate_error_free", temperature_sublimation_esd, "F_meas_sigma", "U33", "model_Cartn_z_esd", "T12", dihedral_angles_rms_dev_error, "B_iso_or_equiv_esd", angle_target_value, "Cartn_y_esd", angle_psi, "U_tls11", bond_angle_rms_dev_error, "B23_esd", "U_iso_or_equiv_esd", volume_esd, "U_tls23", pdbx_phase_calc_with_solvent, taum, "S22_esd", diffr_chi, "T23", "B", pressure_esd, column_temperature, "T11", min_mean_cross_sectional_radii_gyration_esd, "Luzzati_d_res_low_free", chi2, chi1, "L23_esd", chi4, chi3, "aniso_B22", pdbx_collection_time_total, chi5, angle_alpha_esd, scan_rate, neighbor_ligand_distance, length_b_esd, "T23_esd", pdbx_crystal_diffrn_lifetime, peptide_planarity_rms_dev_error, "S13", "Ro", "T22", voltage, "S32_esd", beta, average_distance_constraint_violation, "aniso_B33", energy_window, dev, "U_tls33", "S13_esd", "model_Cartn_x_esd", "L11_esd", volume_three_esd, protein_volume, residual_tilt, value, "T33_esd", angle_kappa, rise_per_n_subunits, reciprocal_length_c_esd, "L33_esd", "S12", scat_length_neutron, "T33", "S11_esd", improper_torsion_angle, current, "aniso_B12", alpha_tolerance, "Luzzati_coordinate_error_obs", "P", gamma, diff_density_rms_esd, "B13_esd", phi, "aniso_U12_esd", neighbor_macromolecule_distance, "pre_Cartn_x", "B_iso_Wilson_estimate", "B12", ambient_temp_esd, "Cartn_z", "F_calc", "pdbx_model_Cartn_x_ideal", ambient_pressure_esd, pdbx_crystal_diffrn_limit, yield_pooled_fractions, "U12_esd", "S12_esd", phase_meas, "pdbx_model_Cartn_z_ideal", recording_temperature_maximum, "S23", diff_density_max, "aniso_B13_esd", tilt_angle_max, "S11", origin_y, origin_x, nu4, nu3, nu2, nu1, "aniso_B11", nu0, "aniso_B23", max_mean_cross_sectional_radii_gyration, angle_theta, covalent_bond_rms_dev_error, "Luzzati_d_res_low_obs", origin_z, power, "dist_DA_esd", "B13", min_mean_cross_sectional_radii_gyration, temp_esd, culture_volume, inducer_concentration, "S22", "B_meas_au", "U22_esd", pdbx_mosaicity, omega, length_c_esd, diff_density_min_esd, "S31_esd", "pre_Cartn_z", "U_tls12", volume_pooled_fractions, "B_iso_esd", "U13_esd", delta, detector_distance, "Cartn_x", "B22", "U23_esd", diffr_psi, distance_rms_dev_error, "S21", max_mean_cross_sectional_radii_gyration_esd, "S33", "L12", "B_iso_max", "aniso_B13", reciprocal_length_b_esd, diff_density_rms, "Luzzati_sigma_a_free", "aniso_B12_esd", protein_concentration, mol_wt_exp, concentration_range, "pre_Cartn_y", "S21_esd", "F_calc_au", "U_tls13", "Cartn_z_esd", "B33_esd", "B23", sampling_size, "B11", "Cartn_y", chamber_temperature, "aniso_U11_esd", density_meas_esd, "dist_DH_esd", multiplicity_of_infection, "L13", "F_meas_sigma_au", "S32"
 --   Namespaces:
 --    http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), http://www.w3.org/2001/XMLSchema (xsd)
 --   Schema locations:
---    resource/pdbx-v50.xsd
+--    pdbx-v50.xsd
 --   Table types:
 --    0 root, 0 root children, 0 admin roots, 560 admin children
 --   System keys:
@@ -613,7 +613,7 @@ DROP TABLE IF EXISTS entry CASCADE;
 --
 -- (quoted from entryType)
 -- There is only one item in the ENTRY category, attribute id in category entry. This data item gives a name to this entry and is indirectly a key to the categories (such as CELL, GEOM, EXPTL) that describe information pertinent to the entire data block. Example 1 - based on PDB entry 5HVP and laboratory records for the structure corresponding to PDB entry 5HVP. <PDBx:entryCategory> <PDBx:entry id="5HVP"></PDBx:entry> </PDBx:entryCategory> Example 2 - based on data set TOZ of Willis, Beckwith & Tozer [Acta Cryst. (1991), C47, 2276-2277]. <PDBx:entryCategory> <PDBx:entry id="TOZ"></PDBx:entry> </PDBx:entryCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE entry (
@@ -627,7 +627,7 @@ CREATE TABLE entry (
 --
 -- (quoted from entityType)
 -- Data items in the ENTITY category record details (such as chemical composition, name and source) about the molecular entities that are present in the crystallographic structure. Items in the various ENTITY subcategories provide a full chemical description of these molecular entities. Entities are of three types: polymer, non-polymer and water. Note that the water category includes only water; ordered solvent such as sulfate ion or acetone would be described as individual non-polymer entities. The ENTITY category is specific to macromolecular CIF applications and replaces the function of the CHEMICAL category in the CIF core. It is important to remember that the ENTITY data are not the result of the crystallographic experiment; those results are represented by the ATOM_SITE data items. ENTITY data items describe the chemistry of the molecules under investigation and can most usefully be thought of as the ideal groups to which the structure is restrained or constrained during refinement. It is also important to remember that entities do not correspond directly to the enumeration of the contents of the asymmetric unit. Entities are described only once, even in those structures that contain multiple observations of an entity. The STRUCT_ASYM data items, which reference the entity list, describe and label the contents of the asymmetric unit. Example 1 - based on PDB entry 5HVP and laboratory records for the structure corresponding to PDB entry 5HVP. <PDBx:entityCategory> <PDBx:entity id="1"> <PDBx:details> The enzymatically competent form of HIV protease is a dimer. This entity corresponds to one monomer of an active dimer.</PDBx:details> <PDBx:formula_weight>10916</PDBx:formula_weight> <PDBx:type>polymer</PDBx:type> </PDBx:entity> <PDBx:entity id="2"> <PDBx:details xsi:nil="true" /> <PDBx:formula_weight>762</PDBx:formula_weight> <PDBx:type>non-polymer</PDBx:type> </PDBx:entity> <PDBx:entity id="3"> <PDBx:details xsi:nil="true" /> <PDBx:formula_weight>18</PDBx:formula_weight> <PDBx:type>water</PDBx:type> </PDBx:entity> </PDBx:entityCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_entity_pdbx_formula_weight_exptl_method CASCADE;
@@ -663,7 +663,7 @@ CREATE TABLE entity (
 --
 -- (quoted from chem_compType)
 -- Data items in the CHEM_COMP category give details about each of the chemical components from which the relevant chemical structures can be constructed, such as name, mass or charge. The related categories CHEM_COMP_ATOM, CHEM_COMP_BOND, CHEM_COMP_ANGLE etc. describe the detailed geometry of these chemical components. Example 1 - based on PDB entry 5HVP and laboratory records for the structure corresponding to PDB entry 5HVP. <PDBx:chem_compCategory> <PDBx:chem_comp id="phe"> <PDBx:model_source>1987 Protin/Prolsq Ideals file</PDBx:model_source> <PDBx:name>phenylalanine</PDBx:name> </PDBx:chem_comp> <PDBx:chem_comp id="val"> <PDBx:model_source>1987 Protin/Prolsq Ideals file</PDBx:model_source> <PDBx:name>alanine</PDBx:name> </PDBx:chem_comp> </PDBx:chem_compCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_chem_comp_mon_nstd_flag CASCADE;
@@ -741,7 +741,7 @@ CREATE TABLE chem_comp (
 --
 -- (quoted from exptl_crystalType)
 -- Data items in the EXPTL_CRYSTAL category record the results of experimental measurements on the crystal or crystals used, such as shape, size or density. Example 1 - based on laboratory records for Yb(S-C5H4N)2(THF)4. <PDBx:exptl_crystalCategory> <PDBx:exptl_crystal id="xst2l"> <PDBx:F_000>202</PDBx:F_000> <PDBx:colour>pale yellow</PDBx:colour> <PDBx:density_Matthews>1.01</PDBx:density_Matthews> <PDBx:density_diffrn>1.113</PDBx:density_diffrn> <PDBx:density_meas>1.11</PDBx:density_meas> <PDBx:density_meas_temp>294.5</PDBx:density_meas_temp> <PDBx:density_method>neutral buoyancy</PDBx:density_method> <PDBx:density_percent_sol>0.15</PDBx:density_percent_sol> <PDBx:description>hexagonal rod, uncut</PDBx:description> <PDBx:preparation> hanging drop, crystal soaked in 10&#37; ethylene glycol for 10 h, then placed in nylon loop at data collection time</PDBx:preparation> <PDBx:size_max>0.30</PDBx:size_max> <PDBx:size_mid>0.20</PDBx:size_mid> <PDBx:size_min>0.05</PDBx:size_min> <PDBx:size_rad>0.025</PDBx:size_rad> </PDBx:exptl_crystal> </PDBx:exptl_crystalCategory> Example 2 - using separate items to define upper and lower limits for a value. <PDBx:exptl_crystalCategory> <PDBx:exptl_crystal id="xst2l"> <PDBx:density_meas_gt>2.5</PDBx:density_meas_gt> <PDBx:density_meas_lt>5.0</PDBx:density_meas_lt> </PDBx:exptl_crystal> </PDBx:exptl_crystalCategory> Example 3 - here the density was measured at some unspecified temperature below room temperature. <PDBx:exptl_crystalCategory> <PDBx:exptl_crystal id="xst2l"> <PDBx:density_meas_temp_lt>300</PDBx:density_meas_temp_lt> </PDBx:exptl_crystal> </PDBx:exptl_crystalCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_exptl_crystal_colour_lustre CASCADE;
@@ -822,7 +822,7 @@ CREATE TABLE exptl_crystal (
 --
 -- (quoted from diffrnType)
 -- Data items in the DIFFRN category record details about the diffraction data and their measurement. Example 1 - based on PDB entry 5HVP and laboratory records for the structure corresponding to PDB entry 5HVP. <PDBx:diffrnCategory> <PDBx:diffrn id="Set1"> <PDBx:ambient_environment> Mother liquor from the reservoir of the vapor diffusion experiment, mounted in room air</PDBx:ambient_environment> <PDBx:ambient_temp>293.0</PDBx:ambient_temp> <PDBx:crystal_support> 0.7 mm glass capillary, sealed with dental wax</PDBx:crystal_support> <PDBx:crystal_treatment> Equilibrated in rotating anode radiation enclosure for 18 hours prior to beginning of data collection</PDBx:crystal_treatment> </PDBx:diffrn> </PDBx:diffrnCategory> Example 2 - based on data set TOZ of Willis, Beckwith & Tozer [(1991). Acta Cryst. C47, 2276-2277]. <PDBx:diffrnCategory> <PDBx:diffrn id="d1"> <PDBx:ambient_temp>293</PDBx:ambient_temp> <PDBx:details> \q scan width (1.0 + 0.14tan\q)\&#37;, \q scan rate 1.2\&#37; per min. Background counts for 5 sec on each side every scan.</PDBx:details> </PDBx:diffrn> </PDBx:diffrnCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE diffrn (
@@ -859,7 +859,7 @@ CREATE TABLE diffrn (
 --
 -- (quoted from pdbx_bufferType)
 -- Data items in the PDBX_BUFFER category record details of the sample buffer.
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_buffer (
@@ -874,7 +874,7 @@ CREATE TABLE pdbx_buffer (
 --
 -- (quoted from chem_comp_atomType)
 -- Data items in the CHEM_COMP_ATOM category record details about the atoms in a chemical component. Specifying the atomic coordinates for the components in this category is an alternative to specifying the structure of the component via bonds, angles, planes etc. in the appropriate CHEM_COMP subcategories. Example 1 - based on PDB entry 5HVP and laboratory records for the structure corresponding to PDB entry 5HVP. <PDBx:chem_comp_atomCategory> <PDBx:chem_comp_atom atom_id="N" comp_id="phe"> <PDBx:model_Cartn_x>1.20134</PDBx:model_Cartn_x> <PDBx:model_Cartn_y>0.84658</PDBx:model_Cartn_y> <PDBx:model_Cartn_z>0.00000</PDBx:model_Cartn_z> <PDBx:substruct_code>main</PDBx:substruct_code> <PDBx:type_symbol>N</PDBx:type_symbol> </PDBx:chem_comp_atom> <PDBx:chem_comp_atom atom_id="CA" comp_id="phe"> <PDBx:model_Cartn_x>0.00000</PDBx:model_Cartn_x> <PDBx:model_Cartn_y>0.00000</PDBx:model_Cartn_y> <PDBx:model_Cartn_z>0.00000</PDBx:model_Cartn_z> <PDBx:substruct_code>main</PDBx:substruct_code> <PDBx:type_symbol>C</PDBx:type_symbol> </PDBx:chem_comp_atom> <PDBx:chem_comp_atom atom_id="C" comp_id="phe"> <PDBx:model_Cartn_x>-1.25029</PDBx:model_Cartn_x> <PDBx:model_Cartn_y>0.88107</PDBx:model_Cartn_y> <PDBx:model_Cartn_z>0.00000</PDBx:model_Cartn_z> <PDBx:substruct_code>main</PDBx:substruct_code> <PDBx:type_symbol>C</PDBx:type_symbol> </PDBx:chem_comp_atom> <PDBx:chem_comp_atom atom_id="O" comp_id="phe"> <PDBx:model_Cartn_x>-2.18525</PDBx:model_Cartn_x> <PDBx:model_Cartn_y>0.66029</PDBx:model_Cartn_y> <PDBx:model_Cartn_z>-0.78409</PDBx:model_Cartn_z> <PDBx:substruct_code>main</PDBx:substruct_code> <PDBx:type_symbol>O</PDBx:type_symbol> </PDBx:chem_comp_atom> <PDBx:chem_comp_atom atom_id="CB" comp_id="phe"> <PDBx:model_Cartn_x>0.00662</PDBx:model_Cartn_x> <PDBx:model_Cartn_y>-1.03603</PDBx:model_Cartn_y> <PDBx:model_Cartn_z>1.11081</PDBx:model_Cartn_z> <PDBx:substruct_code>side</PDBx:substruct_code> <PDBx:type_symbol>C</PDBx:type_symbol> </PDBx:chem_comp_atom> <PDBx:chem_comp_atom atom_id="CG" comp_id="phe"> <PDBx:model_Cartn_x>0.03254</PDBx:model_Cartn_x> <PDBx:model_Cartn_y>-0.49711</PDBx:model_Cartn_y> <PDBx:model_Cartn_z>2.50951</PDBx:model_Cartn_z> <PDBx:substruct_code>side</PDBx:substruct_code> <PDBx:type_symbol>C</PDBx:type_symbol> </PDBx:chem_comp_atom> <PDBx:chem_comp_atom atom_id="CD1" comp_id="phe"> <PDBx:model_Cartn_x>-1.15813</PDBx:model_Cartn_x> <PDBx:model_Cartn_y>-0.12084</PDBx:model_Cartn_y> <PDBx:model_Cartn_z>3.13467</PDBx:model_Cartn_z> <PDBx:substruct_code>side</PDBx:substruct_code> <PDBx:type_symbol>C</PDBx:type_symbol> </PDBx:chem_comp_atom> <PDBx:chem_comp_atom atom_id="CE1" comp_id="phe"> <PDBx:model_Cartn_x>-1.15720</PDBx:model_Cartn_x> <PDBx:model_Cartn_y>0.38038</PDBx:model_Cartn_y> <PDBx:model_Cartn_z>4.42732</PDBx:model_Cartn_z> <PDBx:substruct_code>side</PDBx:substruct_code> <PDBx:type_symbol>C</PDBx:type_symbol> </PDBx:chem_comp_atom> <PDBx:chem_comp_atom atom_id="CZ" comp_id="phe"> <PDBx:model_Cartn_x>0.05385</PDBx:model_Cartn_x> <PDBx:model_Cartn_y>0.51332</PDBx:model_Cartn_y> <PDBx:model_Cartn_z>5.11032</PDBx:model_Cartn_z> <PDBx:substruct_code>side</PDBx:substruct_code> <PDBx:type_symbol>C</PDBx:type_symbol> </PDBx:chem_comp_atom> <PDBx:chem_comp_atom atom_id="CE2" comp_id="phe"> <PDBx:model_Cartn_x>1.26137</PDBx:model_Cartn_x> <PDBx:model_Cartn_y>0.11613</PDBx:model_Cartn_y> <PDBx:model_Cartn_z>4.50975</PDBx:model_Cartn_z> <PDBx:substruct_code>side</PDBx:substruct_code> <PDBx:type_symbol>C</PDBx:type_symbol> </PDBx:chem_comp_atom> <PDBx:chem_comp_atom atom_id="CD2" comp_id="phe"> <PDBx:model_Cartn_x>1.23668</PDBx:model_Cartn_x> <PDBx:model_Cartn_y>-0.38351</PDBx:model_Cartn_y> <PDBx:model_Cartn_z>3.20288</PDBx:model_Cartn_z> <PDBx:substruct_code>side</PDBx:substruct_code> <PDBx:type_symbol>C</PDBx:type_symbol> </PDBx:chem_comp_atom> <PDBx:chem_comp_atom atom_id="N" comp_id="val"> <PDBx:model_Cartn_x>1.20134</PDBx:model_Cartn_x> <PDBx:model_Cartn_y>0.84658</PDBx:model_Cartn_y> <PDBx:model_Cartn_z>0.00000</PDBx:model_Cartn_z> <PDBx:substruct_code>main</PDBx:substruct_code> <PDBx:type_symbol>N</PDBx:type_symbol> </PDBx:chem_comp_atom> <PDBx:chem_comp_atom atom_id="CA" comp_id="val"> <PDBx:model_Cartn_x>0.00000</PDBx:model_Cartn_x> <PDBx:model_Cartn_y>0.00000</PDBx:model_Cartn_y> <PDBx:model_Cartn_z>0.00000</PDBx:model_Cartn_z> <PDBx:substruct_code>main</PDBx:substruct_code> <PDBx:type_symbol>C</PDBx:type_symbol> </PDBx:chem_comp_atom> <PDBx:chem_comp_atom atom_id="C" comp_id="val"> <PDBx:model_Cartn_x>-1.25029</PDBx:model_Cartn_x> <PDBx:model_Cartn_y>0.88107</PDBx:model_Cartn_y> <PDBx:model_Cartn_z>0.00000</PDBx:model_Cartn_z> <PDBx:substruct_code>main</PDBx:substruct_code> <PDBx:type_symbol>C</PDBx:type_symbol> </PDBx:chem_comp_atom> <PDBx:chem_comp_atom atom_id="O" comp_id="val"> <PDBx:model_Cartn_x>-2.18525</PDBx:model_Cartn_x> <PDBx:model_Cartn_y>0.66029</PDBx:model_Cartn_y> <PDBx:model_Cartn_z>-0.78409</PDBx:model_Cartn_z> <PDBx:substruct_code>main</PDBx:substruct_code> <PDBx:type_symbol>O</PDBx:type_symbol> </PDBx:chem_comp_atom> <PDBx:chem_comp_atom atom_id="CB" comp_id="val"> <PDBx:model_Cartn_x>0.05260</PDBx:model_Cartn_x> <PDBx:model_Cartn_y>-0.99339</PDBx:model_Cartn_y> <PDBx:model_Cartn_z>1.17429</PDBx:model_Cartn_z> <PDBx:substruct_code>side</PDBx:substruct_code> <PDBx:type_symbol>C</PDBx:type_symbol> </PDBx:chem_comp_atom> <PDBx:chem_comp_atom atom_id="CG1" comp_id="val"> <PDBx:model_Cartn_x>-0.13288</PDBx:model_Cartn_x> <PDBx:model_Cartn_y>-0.31545</PDBx:model_Cartn_y> <PDBx:model_Cartn_z>2.52668</PDBx:model_Cartn_z> <PDBx:substruct_code>side</PDBx:substruct_code> <PDBx:type_symbol>C</PDBx:type_symbol> </PDBx:chem_comp_atom> <PDBx:chem_comp_atom atom_id="CG2" comp_id="val"> <PDBx:model_Cartn_x>-0.94265</PDBx:model_Cartn_x> <PDBx:model_Cartn_y>-2.12930</PDBx:model_Cartn_y> <PDBx:model_Cartn_z>0.99811</PDBx:model_Cartn_z> <PDBx:substruct_code>side</PDBx:substruct_code> <PDBx:type_symbol>C</PDBx:type_symbol> </PDBx:chem_comp_atom> </PDBx:chem_comp_atomCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_chem_comp_atom_pdbx_aromatic_flag CASCADE;
@@ -939,7 +939,7 @@ CREATE TABLE chem_comp_atom (
 --
 -- (quoted from chem_linkType)
 -- Data items in the CHEM_LINK category give details about the links between chemical components.
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE chem_link (
@@ -953,7 +953,7 @@ CREATE TABLE chem_link (
 --
 -- (quoted from phasing_setType)
 -- Data items in the PHASING_SET category record details about the data sets used in a phasing experiment. A given data set may be used in a number of different ways; for instance, a single data set could be used both as an isomorphous derivative and as a component of a multiple-wavelength calculation. This category establishes identifiers for each data set and permits the archiving of a subset of experimental information for each data set (cell constants, wavelength, temperature etc.). This and related categories of data items are provided so that derivative intensity and phase information can be stored in the same data block as the information for the refined structure. If all the possible experimental information for each data set (raw data sets, crystal growth conditions etc.) is to be archived, these data items should be recorded in a separate data block. Example 1 - based on laboratory records for an Hg/Pt derivative of protein NS1. <PDBx:phasing_setCategory> <PDBx:phasing_set id="NS1-96"> <PDBx:cell_angle_alpha>90.0</PDBx:cell_angle_alpha> <PDBx:cell_angle_beta>90.0</PDBx:cell_angle_beta> <PDBx:cell_angle_gamma>90.0</PDBx:cell_angle_gamma> <PDBx:cell_length_a>38.63</PDBx:cell_length_a> <PDBx:cell_length_b>38.63</PDBx:cell_length_b> <PDBx:cell_length_c>82.88</PDBx:cell_length_c> <PDBx:detector_specific>RXII</PDBx:detector_specific> <PDBx:detector_type>image plate</PDBx:detector_type> <PDBx:radiation_wavelength>1.5145</PDBx:radiation_wavelength> </PDBx:phasing_set> </PDBx:phasing_setCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE phasing_set (
@@ -993,7 +993,7 @@ CREATE TABLE phasing_set (
 --
 -- (quoted from em_entity_assemblyType)
 -- Data items in the EM_ENTITY_ASSEMBLY category record details about each component of the complex. Example 1 -- based on PDB entry 1C2W <PDBx:em_entity_assemblyCategory> <PDBx:em_entity_assembly id="1"> <PDBx:name>50S Ribosomal Subunit</PDBx:name> <PDBx:parent_id>0</PDBx:parent_id> <PDBx:type>RIBOSOME</PDBx:type> </PDBx:em_entity_assembly> </PDBx:em_entity_assemblyCategory> Example 2 -- based on PDB entry 3IY7 <PDBx:em_entity_assemblyCategory> <PDBx:em_entity_assembly id="1"> <PDBx:name>Fab fragment from MAb F interacting with feline panleukopenia virus (FPV)</PDBx:name> <PDBx:parent_id>0</PDBx:parent_id> <PDBx:type>COMPLEX</PDBx:type> </PDBx:em_entity_assembly> <PDBx:em_entity_assembly id="2"> <PDBx:name>feline panleukopenia virus</PDBx:name> <PDBx:parent_id>1</PDBx:parent_id> <PDBx:synonym>FPV</PDBx:synonym> <PDBx:type>VIRUS</PDBx:type> </PDBx:em_entity_assembly> <PDBx:em_entity_assembly id="3"> <PDBx:name>Fab fragment from Mab F</PDBx:name> <PDBx:parent_id>1</PDBx:parent_id> <PDBx:synonym>Fab</PDBx:synonym> <PDBx:type>COMPLEX</PDBx:type> </PDBx:em_entity_assembly> </PDBx:em_entity_assemblyCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_em_entity_assembly_ebi_engineered CASCADE;
@@ -1036,7 +1036,7 @@ CREATE TABLE em_entity_assembly (
 --
 -- (quoted from struct_biolType)
 -- Data items in the STRUCT_BIOL category record details about the structural elements that form each structure of biological significance. A given crystal structure may contain many different biological structures. A given structural component in the asymmetric unit may be part of more than one biological unit. A given biological structure may involve crystallographic symmetry. For instance, in a structure of a lysozyme-FAB structure, the light- and heavy-chain components of the FAB could be one biological unit, while the two chains of the FAB and the lysozyme could constitute a second biological unit. Example 1 - based on PDB entry 5HVP and laboratory records for the structure corresponding to PDB entry 5HVP. <PDBx:struct_biolCategory> <PDBx:struct_biol id="1"> <PDBx:details> significant deviations from twofold symmetry exist in this dimeric enzyme</PDBx:details> </PDBx:struct_biol> <PDBx:struct_biol id="2"> <PDBx:details> The drug binds to this enzyme in two roughly twofold symmetric modes. Hence this biological unit (2) is roughly twofold symmetric to biological unit (3). Disorder in the protein chain indicated with alternative ID 1 should be used with this biological unit.</PDBx:details> </PDBx:struct_biol> <PDBx:struct_biol id="3"> <PDBx:details> The drug binds to this enzyme in two roughly twofold symmetric modes. Hence this biological unit (3) is roughly twofold symmetric to biological unit (2). Disorder in the protein chain indicated with alternative ID 2 should be used with this biological unit.</PDBx:details> </PDBx:struct_biol> </PDBx:struct_biolCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_struct_biol_pdbx_aggregation_state CASCADE;
@@ -1058,7 +1058,7 @@ CREATE TABLE struct_biol (
 --
 -- (quoted from atom_typeType)
 -- Data items in the ATOM_TYPE category record details about the properties of the atoms that occupy the atom sites, such as the atomic scattering factors. Example 1 - based on PDB entry 5HVP and laboratory records for the structure corresponding to PDB entry 5HVP. <PDBx:atom_typeCategory> <PDBx:atom_type symbol="C"> <PDBx:oxidation_number>0</PDBx:oxidation_number> <PDBx:scat_Cromer_Mann_a1>2.31000</PDBx:scat_Cromer_Mann_a1> <PDBx:scat_Cromer_Mann_a2>20.8439</PDBx:scat_Cromer_Mann_a2> <PDBx:scat_Cromer_Mann_a3>1.02000</PDBx:scat_Cromer_Mann_a3> <PDBx:scat_Cromer_Mann_a4>10.2075</PDBx:scat_Cromer_Mann_a4> <PDBx:scat_Cromer_Mann_b1>1.58860</PDBx:scat_Cromer_Mann_b1> <PDBx:scat_Cromer_Mann_b2>0.568700</PDBx:scat_Cromer_Mann_b2> <PDBx:scat_Cromer_Mann_b3>0.865000</PDBx:scat_Cromer_Mann_b3> <PDBx:scat_Cromer_Mann_b4>51.6512</PDBx:scat_Cromer_Mann_b4> <PDBx:scat_Cromer_Mann_c>0.21560</PDBx:scat_Cromer_Mann_c> </PDBx:atom_type> <PDBx:atom_type symbol="N"> <PDBx:oxidation_number>0</PDBx:oxidation_number> <PDBx:scat_Cromer_Mann_a1>12.2126</PDBx:scat_Cromer_Mann_a1> <PDBx:scat_Cromer_Mann_a2>0.005700</PDBx:scat_Cromer_Mann_a2> <PDBx:scat_Cromer_Mann_a3>3.13220</PDBx:scat_Cromer_Mann_a3> <PDBx:scat_Cromer_Mann_a4>9.89330</PDBx:scat_Cromer_Mann_a4> <PDBx:scat_Cromer_Mann_b1>2.01250</PDBx:scat_Cromer_Mann_b1> <PDBx:scat_Cromer_Mann_b2>28.9975</PDBx:scat_Cromer_Mann_b2> <PDBx:scat_Cromer_Mann_b3>1.16630</PDBx:scat_Cromer_Mann_b3> <PDBx:scat_Cromer_Mann_b4>0.582600</PDBx:scat_Cromer_Mann_b4> <PDBx:scat_Cromer_Mann_c>-11.529</PDBx:scat_Cromer_Mann_c> </PDBx:atom_type> <PDBx:atom_type symbol="O"> <PDBx:oxidation_number>0</PDBx:oxidation_number> <PDBx:scat_Cromer_Mann_a1>3.04850</PDBx:scat_Cromer_Mann_a1> <PDBx:scat_Cromer_Mann_a2>13.2771</PDBx:scat_Cromer_Mann_a2> <PDBx:scat_Cromer_Mann_a3>2.28680</PDBx:scat_Cromer_Mann_a3> <PDBx:scat_Cromer_Mann_a4>5.70110</PDBx:scat_Cromer_Mann_a4> <PDBx:scat_Cromer_Mann_b1>1.54630</PDBx:scat_Cromer_Mann_b1> <PDBx:scat_Cromer_Mann_b2>0.323900</PDBx:scat_Cromer_Mann_b2> <PDBx:scat_Cromer_Mann_b3>0.867000</PDBx:scat_Cromer_Mann_b3> <PDBx:scat_Cromer_Mann_b4>32.9089</PDBx:scat_Cromer_Mann_b4> <PDBx:scat_Cromer_Mann_c>0.250800</PDBx:scat_Cromer_Mann_c> </PDBx:atom_type> <PDBx:atom_type symbol="S"> <PDBx:oxidation_number>0</PDBx:oxidation_number> <PDBx:scat_Cromer_Mann_a1>6.90530</PDBx:scat_Cromer_Mann_a1> <PDBx:scat_Cromer_Mann_a2>1.46790</PDBx:scat_Cromer_Mann_a2> <PDBx:scat_Cromer_Mann_a3>5.20340</PDBx:scat_Cromer_Mann_a3> <PDBx:scat_Cromer_Mann_a4>22.2151</PDBx:scat_Cromer_Mann_a4> <PDBx:scat_Cromer_Mann_b1>1.43790</PDBx:scat_Cromer_Mann_b1> <PDBx:scat_Cromer_Mann_b2>0.253600</PDBx:scat_Cromer_Mann_b2> <PDBx:scat_Cromer_Mann_b3>1.58630</PDBx:scat_Cromer_Mann_b3> <PDBx:scat_Cromer_Mann_b4>56.1720</PDBx:scat_Cromer_Mann_b4> <PDBx:scat_Cromer_Mann_c>0.866900</PDBx:scat_Cromer_Mann_c> </PDBx:atom_type> <PDBx:atom_type symbol="CL"> <PDBx:oxidation_number>-1</PDBx:oxidation_number> <PDBx:scat_Cromer_Mann_a1>18.2915</PDBx:scat_Cromer_Mann_a1> <PDBx:scat_Cromer_Mann_a2>0.006600</PDBx:scat_Cromer_Mann_a2> <PDBx:scat_Cromer_Mann_a3>7.20840</PDBx:scat_Cromer_Mann_a3> <PDBx:scat_Cromer_Mann_a4>1.17170</PDBx:scat_Cromer_Mann_a4> <PDBx:scat_Cromer_Mann_b1>6.53370</PDBx:scat_Cromer_Mann_b1> <PDBx:scat_Cromer_Mann_b2>19.5424</PDBx:scat_Cromer_Mann_b2> <PDBx:scat_Cromer_Mann_b3>2.33860</PDBx:scat_Cromer_Mann_b3> <PDBx:scat_Cromer_Mann_b4>60.4486</PDBx:scat_Cromer_Mann_b4> <PDBx:scat_Cromer_Mann_c>-16.378</PDBx:scat_Cromer_Mann_c> </PDBx:atom_type> </PDBx:atom_typeCategory> Example 2 - based on data set TOZ of Willis, Beckwith & Tozer [Acta Cryst. (1991), C47, 2276-2277]. <PDBx:atom_typeCategory> <PDBx:atom_type symbol="C"> <PDBx:number_in_cell>72</PDBx:number_in_cell> <PDBx:oxidation_number>0</PDBx:oxidation_number> <PDBx:scat_dispersion_imag>.009</PDBx:scat_dispersion_imag> <PDBx:scat_dispersion_real>.017</PDBx:scat_dispersion_real> <PDBx:scat_source>International_Tables_Vol_IV_Table_2.2B</PDBx:scat_source> </PDBx:atom_type> <PDBx:atom_type symbol="H"> <PDBx:number_in_cell>100</PDBx:number_in_cell> <PDBx:oxidation_number>0</PDBx:oxidation_number> <PDBx:scat_dispersion_imag>0</PDBx:scat_dispersion_imag> <PDBx:scat_dispersion_real>0</PDBx:scat_dispersion_real> <PDBx:scat_source>International_Tables_Vol_IV_Table_2.2B</PDBx:scat_source> </PDBx:atom_type> <PDBx:atom_type symbol="O"> <PDBx:number_in_cell>12</PDBx:number_in_cell> <PDBx:oxidation_number>0</PDBx:oxidation_number> <PDBx:scat_dispersion_imag>.032</PDBx:scat_dispersion_imag> <PDBx:scat_dispersion_real>.047</PDBx:scat_dispersion_real> <PDBx:scat_source>International_Tables_Vol_IV_Table_2.2B</PDBx:scat_source> </PDBx:atom_type> <PDBx:atom_type symbol="N"> <PDBx:number_in_cell>4</PDBx:number_in_cell> <PDBx:oxidation_number>0</PDBx:oxidation_number> <PDBx:scat_dispersion_imag>.018</PDBx:scat_dispersion_imag> <PDBx:scat_dispersion_real>.029</PDBx:scat_dispersion_real> <PDBx:scat_source>International_Tables_Vol_IV_Table_2.2B</PDBx:scat_source> </PDBx:atom_type> </PDBx:atom_typeCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE atom_type (
@@ -1107,7 +1107,7 @@ CREATE TABLE atom_type (
 --
 -- (quoted from pdbx_constructType)
 -- Data items in the PDBX_CONSTRUCT category specify a sequence of nucleic acids or amino acids. It is a catch-all that may be used to provide details of sequences known to be relevant to the project as well as primers, plasmids, proteins and such like that are either used or produced during the protein production process. Molecules described here are not necessarily complete, so for instance it would be possible to include either a complete plasmid or just its insert. This category may be considered as an abbreviated form of _entity where the molecules described are not required to appear in the final co-ordinates. Note that the details provided here all pertain to a single entry as defined at deposition. It is anticipated that attribute id in category pdbx_construct would also be composed of a sequence that is unique within a given site prefixed by a code that identifies that site and would, therefore, be GLOBALLY unique. Thus this category could also be used locally to store details about the different constructs used during protein production without reference to the entry_id (which only becomes a meaningful concept during deposition). Example 1 - hypothetical example <PDBx:pdbx_constructCategory> <PDBx:pdbx_construct id="1"> <PDBx:entity_id>1</PDBx:entity_id> <PDBx:entry_id>111000111</PDBx:entry_id> <PDBx:seq> gatgctgtag gcataggctt ggttatgccg gtactgccgg gcctcttgcg ggatatcgtc gctcaaggcg cactcccgtt ctggataatg ttttttgcgc cgacatcata acggttctgg caaatattct gaaatgagct gttgacaatt aatcatcgat aagcttcttg # - - - - data truncated for brevity - - - -</PDBx:seq> <PDBx:type>DNA</PDBx:type> </PDBx:pdbx_construct> </PDBx:pdbx_constructCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_construct_class CASCADE;
@@ -1134,7 +1134,7 @@ CREATE TABLE pdbx_construct (
 --
 -- (quoted from struct_asymType)
 -- Data items in the STRUCT_ASYM category record details about the structural elements in the asymmetric unit. Example 1 - based on PDB entry 5HVP and laboratory records for the structure corresponding to PDB entry 5HVP. <PDBx:struct_asymCategory> <PDBx:struct_asym id="A"> <PDBx:details>one monomer of the dimeric enzyme</PDBx:details> <PDBx:entity_id>1</PDBx:entity_id> </PDBx:struct_asym> <PDBx:struct_asym id="B"> <PDBx:details>one monomer of the dimeric enzyme</PDBx:details> <PDBx:entity_id>1</PDBx:entity_id> </PDBx:struct_asym> <PDBx:struct_asym id="C"> <PDBx:details>one partially occupied position for the inhibitor</PDBx:details> <PDBx:entity_id>2</PDBx:entity_id> </PDBx:struct_asym> <PDBx:struct_asym id="D"> <PDBx:details>one partially occupied position for the inhibitor</PDBx:details> <PDBx:entity_id>2</PDBx:entity_id> </PDBx:struct_asym> </PDBx:struct_asymCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_struct_asym_pdbx_blank_PDB_chainid_flag CASCADE;
@@ -1163,7 +1163,7 @@ CREATE TABLE struct_asym (
 --
 -- (quoted from struct_sheetType)
 -- Data items in the STRUCT_SHEET category record details about the beta-sheets. Example 1 - simple beta-barrel. N O N O N O N O N O N O 10--11--12--13--14--15--16--17--18--19--20 strand_a N O N O N O N O N O / \ / \ / \ / \ / \ N O N O N O N O N O N O 30--31--32--33--34--35--36--37--38--39--40 strand_b N O N O N O N O N O / \ / \ / \ / \ / \ N O N O N O N O N O N O 50--51--52--53--54--55--56--57--58--59--60 strand_c N O N O N O N O N O / \ / \ / \ / \ / \ N O N O N O N O N O N O 70--71--72--73--74--75--76--77--78--79--80 strand_d N O N O N O N O N O / \ / \ / \ / \ / \ N O N O N O N O N O N O 90--91--92--93--94--95--96--97--98--99-100 strand_e N O N O N O N O N O / \ / \ / \ / \ / \ N O N O N O N O N O N O 110-111-112-113-114-115-116-117-118-119-120 strand_f N O N O N O N O N O / \ / \ / \ / \ / \ N O N O N O N O N O N O 130-131-132-133-134-135-136-137-138-139-140 strand_g N O N O N O N O N O / \ / \ / \ / \ / \ N O N O N O N O N O N O 150-151-152-153-154-155-156-157-158-159-160 strand_h N O N O N O N O N O / \ / \ / \ / \ / \ <PDBx:struct_sheetCategory> <PDBx:struct_sheet id="sheet_1"> <PDBx:details xsi:nil="true" /> <PDBx:number_strands>8</PDBx:number_strands> <PDBx:type>beta-barrel</PDBx:type> </PDBx:struct_sheet> </PDBx:struct_sheetCategory> Example 2 - five stranded mixed-sense sheet with one two-piece strand. N O N O N O N O -10--11--12--13--14--15--16--17--18-> strand_a N O N O N O N O N O | | | | | | | | | | O N O N O N O N O N <-119-118-117-116-115-114-113-112-111-110- strand_b O N O N O N O N O N \ / \ / \ / \ / \ O N O N O N O N O N O N <-41--40--39--38--37--36--35--34--33--32--31--30- strand_c O N O N O N O N O N O N | | | | | | | | | | | | N O N O N O N O N O N O strand_d1 -50--51--52-> -90--91--92--93--95--95--96--97-> strand_d2 N O N O N O N O N O | | | | | | | | | | | | O N O N O N O N O N O N <-80--79--78--77--76--75--74--73--72--71--70- strand_e O N O N O N O N O N <PDBx:struct_sheetCategory> <PDBx:struct_sheet id="sheet_2"> <PDBx:details>strand_d is in two pieces</PDBx:details> <PDBx:number_strands>5</PDBx:number_strands> <PDBx:type>five stranded, mixed-sense</PDBx:type> </PDBx:struct_sheet> </PDBx:struct_sheetCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE struct_sheet (
@@ -1179,7 +1179,7 @@ CREATE TABLE struct_sheet (
 --
 -- (quoted from em_tomography_specimenType)
 -- Description specimen preparation for imaging using tomography.
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_em_tomography_specimen_fiducial_markers CASCADE;
@@ -1204,7 +1204,7 @@ CREATE TABLE em_tomography_specimen (
 --
 -- (quoted from pdbx_audit_revision_historyType)
 -- Data items in the PDBX_AUDIT_REVISION_HISTORY category record the revision history for a data entry. Example 1 <PDBx:pdbx_audit_revision_historyCategory> <PDBx:pdbx_audit_revision_history data_content_type="Structure model" ordinal="1"> <PDBx:internal_deposition_id>D_123456789</PDBx:internal_deposition_id> <PDBx:internal_version>4</PDBx:internal_version> <PDBx:major_revision>1</PDBx:major_revision> <PDBx:minor_revision>0</PDBx:minor_revision> <PDBx:revision_date>2017-03-01</PDBx:revision_date> </PDBx:pdbx_audit_revision_history> <PDBx:pdbx_audit_revision_history data_content_type="Structure model" ordinal="2"> <PDBx:internal_deposition_id>D_123456789</PDBx:internal_deposition_id> <PDBx:internal_version>6</PDBx:internal_version> <PDBx:major_revision>1</PDBx:major_revision> <PDBx:minor_revision>1</PDBx:minor_revision> <PDBx:revision_date>2017-03-08</PDBx:revision_date> </PDBx:pdbx_audit_revision_history> </PDBx:pdbx_audit_revision_historyCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_audit_revision_history_data_content_type CASCADE;
@@ -1227,7 +1227,7 @@ CREATE TABLE pdbx_audit_revision_history (
 --
 -- (quoted from pdbx_chem_comp_modelType)
 -- Data items in the PDBX_CHEM_COMP_MODEL category give details about each of the chemical component model instances. Example 1 - <PDBx:pdbx_chem_comp_modelCategory> <PDBx:pdbx_chem_comp_model id="M_ZZV_00001"> <PDBx:comp_id>ZZV</PDBx:comp_id> </PDBx:pdbx_chem_comp_model> </PDBx:pdbx_chem_comp_modelCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_chem_comp_model (
@@ -1241,7 +1241,7 @@ CREATE TABLE pdbx_chem_comp_model (
 --
 -- (quoted from pdbx_reference_moleculeType)
 -- Data items in the PDBX_REFERENCE_MOLECULE category record reference information about small polymer molecules. Example: 1 Actinomycin <PDBx:pdbx_reference_moleculeCategory> <PDBx:pdbx_reference_molecule prd_id="PRD_000001"> <PDBx:class>polypeptide antibiotic</PDBx:class> <PDBx:formula>C62 H86 N12 O16</PDBx:formula> <PDBx:formula_weight>1255.5</PDBx:formula_weight> <PDBx:name>Actinomycin D</PDBx:name> <PDBx:type>Antitumor Antibiotic</PDBx:type> </PDBx:pdbx_reference_molecule> <PDBx:pdbx_reference_molecule prd_id="PRD_000002"> <PDBx:class>polypeptide antibiotic</PDBx:class> <PDBx:name>Actinomycin C</PDBx:name> <PDBx:type>Antitumor Antibiotic</PDBx:type> </PDBx:pdbx_reference_molecule> <PDBx:pdbx_reference_molecule prd_id="PRD_000003"> <PDBx:class>polypeptide antibiotic</PDBx:class> <PDBx:formula>C63 H88 N12 O16</PDBx:formula> <PDBx:formula_weight>1269.5</PDBx:formula_weight> <PDBx:name>Actinomycin C2</PDBx:name> <PDBx:type>Antitumor Antibiotic</PDBx:type> </PDBx:pdbx_reference_molecule> <PDBx:pdbx_reference_molecule prd_id="PRD_000004"> <PDBx:class>polypeptide antibiotic</PDBx:class> <PDBx:formula>C64 H90 N12 O16</PDBx:formula> <PDBx:formula_weight>1283.5</PDBx:formula_weight> <PDBx:name>Actinomycin C3</PDBx:name> <PDBx:type>Antitumor Antibiotic</PDBx:type> </PDBx:pdbx_reference_molecule> <PDBx:pdbx_reference_molecule prd_id="PRD_000005"> <PDBx:class>polypeptide antibiotic</PDBx:class> <PDBx:formula>C62 H86 N12 O17</PDBx:formula> <PDBx:formula_weight>1271.5</PDBx:formula_weight> <PDBx:name>Actinomycin X0 beta</PDBx:name> <PDBx:type>Antitumor Antibiotic</PDBx:type> </PDBx:pdbx_reference_molecule> <PDBx:pdbx_reference_molecule prd_id="PRD_000006"> <PDBx:class>polypeptide antibiotic</PDBx:class> <PDBx:formula>C62 H85 F N12 O16</PDBx:formula> <PDBx:formula_weight>1273.49</PDBx:formula_weight> <PDBx:name>8-Fluoro-Actinomycin D</PDBx:name> <PDBx:type>Antitumor Antibiotic</PDBx:type> </PDBx:pdbx_reference_molecule> <PDBx:pdbx_reference_molecule prd_id="PRD_000007"> <PDBx:class>polypeptide antibiotic</PDBx:class> <PDBx:formula>C62 H84 N12 O17</PDBx:formula> <PDBx:formula_weight>1269.4</PDBx:formula_weight> <PDBx:name>Actinomycin X2</PDBx:name> <PDBx:type>Antitumor Antibiotic</PDBx:type> </PDBx:pdbx_reference_molecule> <PDBx:pdbx_reference_molecule prd_id="PRD_000008"> <PDBx:class>polypeptide antibiotic</PDBx:class> <PDBx:formula>C62 H84 N12 O19</PDBx:formula> <PDBx:formula_weight>1301.5</PDBx:formula_weight> <PDBx:name>Actinomycin Z1</PDBx:name> <PDBx:type>Antitumor Antibiotic</PDBx:type> </PDBx:pdbx_reference_molecule> <PDBx:pdbx_reference_molecule prd_id="PRD_000009"> <PDBx:class>polypeptide antibiotic</PDBx:class> <PDBx:formula>C62 H83 Cl N12 O18</PDBx:formula> <PDBx:formula_weight>1319.845</PDBx:formula_weight> <PDBx:name>Actinomycin Z3</PDBx:name> <PDBx:type>Antitumor Antibiotic</PDBx:type> </PDBx:pdbx_reference_molecule> <PDBx:pdbx_reference_molecule prd_id="PRD_000010"> <PDBx:class>polypeptide antibiotic</PDBx:class> <PDBx:formula>C62 H87 N13 O16</PDBx:formula> <PDBx:formula_weight>1270.43</PDBx:formula_weight> <PDBx:name>7-AminoActinomycin</PDBx:name> <PDBx:type>Antitumor Antibiotic</PDBx:type> </PDBx:pdbx_reference_molecule> <PDBx:pdbx_reference_molecule prd_id="PRD_000011"> <PDBx:class>polypeptide antibiotic</PDBx:class> <PDBx:formula>C61 H85 N13 O16</PDBx:formula> <PDBx:formula_weight>1256.4051</PDBx:formula_weight> <PDBx:name>N8-Actinomycin D</PDBx:name> <PDBx:type>Antitumor Antibiotic</PDBx:type> </PDBx:pdbx_reference_molecule> </PDBx:pdbx_reference_moleculeCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_reference_molecule_class CASCADE;
@@ -1278,7 +1278,7 @@ CREATE TABLE pdbx_reference_molecule (
 --
 -- (quoted from pdbx_reference_molecule_familyType)
 -- Data items in the PDBX_REFERENCE_MOLECULE_FAMILY category identify entity families. Example: 1 Actinomycin <PDBx:pdbx_reference_molecule_familyCategory> <PDBx:pdbx_reference_molecule_family family_prd_id="FAM_000001"> <PDBx:name>ACTINOMYCIN</PDBx:name> </PDBx:pdbx_reference_molecule_family> </PDBx:pdbx_reference_molecule_familyCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_reference_molecule_family_release_status CASCADE;
@@ -1297,7 +1297,7 @@ CREATE TABLE pdbx_reference_molecule_family (
 --
 -- (quoted from entity_polyType)
 -- Data items in the ENTITY_POLY category record details about the polymer, such as the type of the polymer, the number of monomers and whether it has nonstandard features. Example 1 - based on PDB entry 5HVP and laboratory records for the structure corresponding to PDB entry 5HVP. <PDBx:entity_polyCategory> <PDBx:entity_poly entity_id="1"> <PDBx:nstd_chirality>no</PDBx:nstd_chirality> <PDBx:nstd_linkage>no</PDBx:nstd_linkage> <PDBx:nstd_monomer>no</PDBx:nstd_monomer> <PDBx:type>polypeptide(L)</PDBx:type> <PDBx:type_details xsi:nil="true" /> </PDBx:entity_poly> </PDBx:entity_polyCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_entity_poly_nstd_chirality CASCADE;
@@ -1348,7 +1348,7 @@ CREATE TABLE entity_poly (
 --
 -- (quoted from pdbx_linked_entityType)
 -- Data items in the PDBX_LINKED_ENTITY category record information about molecules composed of linked entities. Example: 1 Actinomycin <PDBx:pdbx_linked_entityCategory> <PDBx:pdbx_linked_entity linked_entity_id="L1"> <PDBx:class>polypeptide antibiotic</PDBx:class> <PDBx:name>Actinomycin D</PDBx:name> <PDBx:prd_id>PRD_000001</PDBx:prd_id> <PDBx:type>Antitumor Antibiotic</PDBx:type> </PDBx:pdbx_linked_entity> </PDBx:pdbx_linked_entityCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_linked_entity (
@@ -1366,7 +1366,7 @@ CREATE TABLE pdbx_linked_entity (
 --
 -- (quoted from pdbx_reference_linked_entityType)
 -- Data items in the pdbx_reference_linked_entity category describe common observed interaction patterns within linked entities. Example 1 - <PDBx:pdbx_reference_linked_entityCategory> <PDBx:pdbx_reference_linked_entity id="0"> <PDBx:class>N-linked-glycan</PDBx:class> <PDBx:link_from_entity_type>polysaccharide</PDBx:link_from_entity_type> <PDBx:link_to_comp_id>ASN</PDBx:link_to_comp_id> <PDBx:link_to_entity_type>polypeptide</PDBx:link_to_entity_type> <PDBx:name>basic</PDBx:name> <PDBx:taxonomy_class xsi:nil="true" /> <PDBx:taxonomy_id xsi:nil="true" /> </PDBx:pdbx_reference_linked_entity> <PDBx:pdbx_reference_linked_entity id="1"> <PDBx:class>N-linked-glycan</PDBx:class> <PDBx:link_from_entity_type>polysaccharide</PDBx:link_from_entity_type> <PDBx:link_to_comp_id>ASN</PDBx:link_to_comp_id> <PDBx:link_to_entity_type>polypeptide</PDBx:link_to_entity_type> <PDBx:name>high-mannose simple</PDBx:name> <PDBx:taxonomy_class xsi:nil="true" /> <PDBx:taxonomy_id xsi:nil="true" /> </PDBx:pdbx_reference_linked_entity> <PDBx:pdbx_reference_linked_entity id="2"> <PDBx:class>N-linked-glycan</PDBx:class> <PDBx:link_from_entity_type>polysaccharide</PDBx:link_from_entity_type> <PDBx:link_to_comp_id>ASN</PDBx:link_to_comp_id> <PDBx:link_to_entity_type>polypeptide</PDBx:link_to_entity_type> <PDBx:name>high-mannose</PDBx:name> <PDBx:taxonomy_class xsi:nil="true" /> <PDBx:taxonomy_id xsi:nil="true" /> </PDBx:pdbx_reference_linked_entity> <PDBx:pdbx_reference_linked_entity id="3"> <PDBx:class>N-linked-glycan</PDBx:class> <PDBx:link_from_entity_type>polysaccharide</PDBx:link_from_entity_type> <PDBx:link_to_comp_id>ASN</PDBx:link_to_comp_id> <PDBx:link_to_entity_type>polypeptide</PDBx:link_to_entity_type> <PDBx:name>hybrid simple</PDBx:name> <PDBx:taxonomy_class xsi:nil="true" /> <PDBx:taxonomy_id xsi:nil="true" /> </PDBx:pdbx_reference_linked_entity> <PDBx:pdbx_reference_linked_entity id="4"> <PDBx:class>N-linked-glycan</PDBx:class> <PDBx:link_from_entity_type>polysaccharide</PDBx:link_from_entity_type> <PDBx:link_to_comp_id>ASN</PDBx:link_to_comp_id> <PDBx:link_to_entity_type>polypeptide</PDBx:link_to_entity_type> <PDBx:name>hybrid</PDBx:name> <PDBx:taxonomy_class xsi:nil="true" /> <PDBx:taxonomy_id xsi:nil="true" /> </PDBx:pdbx_reference_linked_entity> <PDBx:pdbx_reference_linked_entity id="5"> <PDBx:class>N-linked-glycan</PDBx:class> <PDBx:link_from_entity_type>polysaccharide</PDBx:link_from_entity_type> <PDBx:link_to_comp_id>ASN</PDBx:link_to_comp_id> <PDBx:link_to_entity_type>polypeptide</PDBx:link_to_entity_type> <PDBx:name>complex</PDBx:name> <PDBx:taxonomy_class>Mammalia</PDBx:taxonomy_class> <PDBx:taxonomy_id>40674</PDBx:taxonomy_id> </PDBx:pdbx_reference_linked_entity> </PDBx:pdbx_reference_linked_entityCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_reference_linked_entity_link_from_entity_type CASCADE;
@@ -1390,7 +1390,7 @@ CREATE TABLE pdbx_reference_linked_entity (
 --
 -- (quoted from pdbx_struct_assemblyType)
 -- Data items in the PDBX_STRUCT_ASSEMBLY category record details about the structural elements that form macromolecular assemblies. Example 1 - <PDBx:pdbx_struct_assemblyCategory> <PDBx:pdbx_struct_assembly id="1"> <PDBx:details> The icosahedral virus particle.</PDBx:details> </PDBx:pdbx_struct_assembly> </PDBx:pdbx_struct_assemblyCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_struct_assembly (
@@ -1407,7 +1407,7 @@ CREATE TABLE pdbx_struct_assembly (
 --
 -- (quoted from phasing_MAD_exptType)
 -- Data items in the PHASING_MAD_EXPT category record details about a MAD phasing experiment, such as the number of experiments that were clustered together to produce a set of phases or the statistics for those phases. Example 1 - based on a paper by Shapiro et al. [Nature (London) (1995), 374, 327-337]. <PDBx:phasing_MAD_exptCategory> <PDBx:phasing_MAD_expt id="1"> <PDBx:R_normal_all>0.063</PDBx:R_normal_all> <PDBx:R_normal_anom_scat>0.451</PDBx:R_normal_anom_scat> <PDBx:delta_delta_phi>58.5</PDBx:delta_delta_phi> <PDBx:delta_phi_sigma>20.3</PDBx:delta_phi_sigma> <PDBx:mean_fom>0.88</PDBx:mean_fom> <PDBx:number_clust>2</PDBx:number_clust> </PDBx:phasing_MAD_expt> <PDBx:phasing_MAD_expt id="2"> <PDBx:R_normal_all>0.051</PDBx:R_normal_all> <PDBx:R_normal_anom_scat>0.419</PDBx:R_normal_anom_scat> <PDBx:delta_delta_phi>36.8</PDBx:delta_delta_phi> <PDBx:delta_phi_sigma>18.2</PDBx:delta_phi_sigma> <PDBx:mean_fom>0.93</PDBx:mean_fom> <PDBx:number_clust>1</PDBx:number_clust> </PDBx:phasing_MAD_expt> </PDBx:phasing_MAD_exptCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE "phasing_MAD_expt" (
@@ -1427,7 +1427,7 @@ CREATE TABLE "phasing_MAD_expt" (
 --
 -- (quoted from phasing_MIR_derType)
 -- Data items in the PHASING_MIR_DER category record details about individual derivatives used in the phasing of the structure when methods involving isomorphous replacement are involved. A derivative in this context does not necessarily equate with a data set; for instance, the same data set could be used to one resolution limit as an isomorphous scatterer and to a different resolution (and with a different sigma cutoff) as an anomalous scatterer. These would be treated as two distinct derivatives, although both derivatives would point to the same data sets via attribute der_set_id in category phasing_MIR_der and attribute native_set_id in category phasing_MIR_der. Example 1 - based on a paper by Zanotti et al. [J. Biol. Chem. (1993), 268, 10728-10738]. <PDBx:phasing_MIR_derCategory> <PDBx:phasing_MIR_der id="KAu(CN)2"> <PDBx:details>major site interpreted in difference Patterson</PDBx:details> <PDBx:number_of_sites>3</PDBx:number_of_sites> </PDBx:phasing_MIR_der> <PDBx:phasing_MIR_der id="K2HgI4"> <PDBx:details>sites found in cross-difference Fourier</PDBx:details> <PDBx:number_of_sites>6</PDBx:number_of_sites> </PDBx:phasing_MIR_der> <PDBx:phasing_MIR_der id="K3IrCl6"> <PDBx:details>sites found in cross-difference Fourier</PDBx:details> <PDBx:number_of_sites>2</PDBx:number_of_sites> </PDBx:phasing_MIR_der> <PDBx:phasing_MIR_der id="All"> <PDBx:details>data for all three derivatives combined</PDBx:details> <PDBx:number_of_sites>11</PDBx:number_of_sites> </PDBx:phasing_MIR_der> </PDBx:phasing_MIR_derCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE "phasing_MIR_der" (
@@ -1477,7 +1477,7 @@ CREATE TABLE "phasing_MIR_der" (
 --
 -- (quoted from struct_ncs_ensType)
 -- Data items in the STRUCT_NCS_ENS category record information about ensembles of domains related by noncrystallographic symmetry. The point group of the ensemble when taken as a whole may be specified, as well as any special aspects of the ensemble that require description. Example 1 - based on laboratory records for the collagen-like peptide, HYP-. <PDBx:struct_ncs_ensCategory> <PDBx:struct_ncs_ens id="en1"> <PDBx:details> The ensemble represents the pseudo-twofold symmetry between domains d1 and d2.</PDBx:details> </PDBx:struct_ncs_ens> </PDBx:struct_ncs_ensCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE struct_ncs_ens (
@@ -1492,7 +1492,7 @@ CREATE TABLE struct_ncs_ens (
 --
 -- (quoted from struct_siteType)
 -- Data items in the STRUCT_SITE category record details about portions of the structure that contribute to structurally relevant sites (e.g. active sites, substrate-binding subsites, metal-coordination sites). Example 1 - based on PDB entry 5HVP and laboratory records for the structure corresponding to PDB entry 5HVP. <PDBx:struct_siteCategory> <PDBx:struct_site id="P2 site C"> <PDBx:details> residues with a contact &lt; 3.7 \&#37;A to an atom in the P2 moiety of the inhibitor in the conformation with _struct_asym.id = C</PDBx:details> </PDBx:struct_site> <PDBx:struct_site id="P2 site D"> <PDBx:details> residues with a contact &lt; 3.7 \&#37;A to an atom in the P1 moiety of the inhibitor in the conformation with _struct_asym.id = D)</PDBx:details> </PDBx:struct_site> </PDBx:struct_siteCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE struct_site (
@@ -1512,7 +1512,7 @@ CREATE TABLE struct_site (
 --
 -- (quoted from atom_sites_altType)
 -- Data items in the ATOM_SITES_ALT category record details about the structural ensembles that should be generated from atom sites or groups of atom sites that are modelled in alternative conformations in this data block. Example 1 - based on PDB entry 5HVP and laboratory records for the structure corresponding to PDB entry 5HVP. <PDBx:atom_sites_altCategory> <PDBx:atom_sites_alt id="1"> <PDBx:details> Atom sites with the alternative ID set to 1 have been modeled in alternative conformations with respect to atom sites marked with alternative ID 2. The conformations of amino-acid side chains and solvent atoms with alternative ID set to 1 correlate with the conformation of the inhibitor marked with alternative ID 1. They have been given an occupancy of 0.58 to match the occupancy assigned to the inhibitor.</PDBx:details> </PDBx:atom_sites_alt> <PDBx:atom_sites_alt id="2"> <PDBx:details> Atom sites with the alternative ID set to 2 have been modeled in alternative conformations with respect to atom sites marked with alternative ID 1. The conformations of amino-acid side chains and solvent atoms with alternative ID set to 2 correlate with the conformation of the inhibitor marked with alternative ID 2. They have been given an occupancy of 0.42 to match the occupancy assigned to the inhibitor.</PDBx:details> </PDBx:atom_sites_alt> <PDBx:atom_sites_alt id="3"> <PDBx:details> Atom sites with the alternative ID set to 3 have been modeled in alternative conformations with respect to atoms marked with alternative ID 4. The conformations of amino-acid side chains and solvent atoms with alternative ID set to 3 do not correlate with the conformation of the inhibitor. These atom sites have arbitrarily been given an occupancy of 0.50.</PDBx:details> </PDBx:atom_sites_alt> <PDBx:atom_sites_alt id="4"> <PDBx:details> Atom sites with the alternative ID set to 4 have been modeled in alternative conformations with respect to atoms marked with alternative ID 3. The conformations of amino-acid side chains and solvent atoms with alternative ID set to 4 do not correlate with the conformation of the inhibitor. These atom sites have arbitrarily been given an occupancy of 0.50.</PDBx:details> </PDBx:atom_sites_alt> </PDBx:atom_sites_altCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE atom_sites_alt (
@@ -1526,7 +1526,7 @@ CREATE TABLE atom_sites_alt (
 --
 -- (quoted from chemical_conn_atomType)
 -- Data items in the CHEMICAL_CONN_ATOM category would not, in general, be used in a macromolecular CIF. See instead the ENTITY data items. Data items in the CHEMICAL_CONN_ATOM and CHEMICAL_CONN_BOND categories record details about the two-dimensional (2D) chemical structure of the molecular species. They allow a 2D chemical diagram to be reconstructed for use in a publication or in a database search for structural and substructural relationships. The CHEMICAL_CONN_ATOM data items provide information about the chemical properties of the atoms in the structure. In cases where crystallographic and molecular symmetry elements coincide, they must also contain symmetry-generated atoms, so that the CHEMICAL_CONN_ATOM and CHEMICAL_CONN_BOND data items will always describe a complete chemical entity. Example 1 - based on data set DPTD of Yamin, Suwandi, Fun, Sivakumar & bin Shawkataly [Acta Cryst. (1996), C52, 951-953]. <PDBx:chemical_conn_atomCategory> <PDBx:chemical_conn_atom number="1"> <PDBx:NCA>1</PDBx:NCA> <PDBx:NH>0</PDBx:NH> <PDBx:display_x>.39</PDBx:display_x> <PDBx:display_y>.81</PDBx:display_y> <PDBx:type_symbol>S</PDBx:type_symbol> </PDBx:chemical_conn_atom> <PDBx:chemical_conn_atom number="2"> <PDBx:NCA>2</PDBx:NCA> <PDBx:NH>0</PDBx:NH> <PDBx:display_x>.39</PDBx:display_x> <PDBx:display_y>.96</PDBx:display_y> <PDBx:type_symbol>S</PDBx:type_symbol> </PDBx:chemical_conn_atom> <PDBx:chemical_conn_atom number="3"> <PDBx:NCA>3</PDBx:NCA> <PDBx:NH>0</PDBx:NH> <PDBx:display_x>.14</PDBx:display_x> <PDBx:display_y>.88</PDBx:display_y> <PDBx:type_symbol>N</PDBx:type_symbol> </PDBx:chemical_conn_atom> <PDBx:chemical_conn_atom number="4"> <PDBx:NCA>3</PDBx:NCA> <PDBx:NH>0</PDBx:NH> <PDBx:display_x>.33</PDBx:display_x> <PDBx:display_y>.88</PDBx:display_y> <PDBx:type_symbol>C</PDBx:type_symbol> </PDBx:chemical_conn_atom> <PDBx:chemical_conn_atom number="5"> <PDBx:NCA>2</PDBx:NCA> <PDBx:NH>2</PDBx:NH> <PDBx:display_x>.11</PDBx:display_x> <PDBx:display_y>.96</PDBx:display_y> <PDBx:type_symbol>C</PDBx:type_symbol> </PDBx:chemical_conn_atom> <PDBx:chemical_conn_atom number="6"> <PDBx:NCA>2</PDBx:NCA> <PDBx:NH>2</PDBx:NH> <PDBx:display_x>.03</PDBx:display_x> <PDBx:display_y>.96</PDBx:display_y> <PDBx:type_symbol>C</PDBx:type_symbol> </PDBx:chemical_conn_atom> <PDBx:chemical_conn_atom number="7"> <PDBx:NCA>2</PDBx:NCA> <PDBx:NH>2</PDBx:NH> <PDBx:display_x>.03</PDBx:display_x> <PDBx:display_y>.80</PDBx:display_y> <PDBx:type_symbol>C</PDBx:type_symbol> </PDBx:chemical_conn_atom> <PDBx:chemical_conn_atom number="8"> <PDBx:NCA>2</PDBx:NCA> <PDBx:NH>2</PDBx:NH> <PDBx:display_x>.11</PDBx:display_x> <PDBx:display_y>.80</PDBx:display_y> <PDBx:type_symbol>C</PDBx:type_symbol> </PDBx:chemical_conn_atom> <PDBx:chemical_conn_atom number="9"> <PDBx:NCA>1</PDBx:NCA> <PDBx:NH>0</PDBx:NH> <PDBx:display_x>.54</PDBx:display_x> <PDBx:display_y>.81</PDBx:display_y> <PDBx:type_symbol>S</PDBx:type_symbol> </PDBx:chemical_conn_atom> <PDBx:chemical_conn_atom number="10"> <PDBx:NCA>2</PDBx:NCA> <PDBx:NH>0</PDBx:NH> <PDBx:display_x>.54</PDBx:display_x> <PDBx:display_y>.96</PDBx:display_y> <PDBx:type_symbol>S</PDBx:type_symbol> </PDBx:chemical_conn_atom> <PDBx:chemical_conn_atom number="11"> <PDBx:NCA>3</PDBx:NCA> <PDBx:NH>0</PDBx:NH> <PDBx:display_x>.80</PDBx:display_x> <PDBx:display_y>.88</PDBx:display_y> <PDBx:type_symbol>N</PDBx:type_symbol> </PDBx:chemical_conn_atom> <PDBx:chemical_conn_atom number="12"> <PDBx:NCA>3</PDBx:NCA> <PDBx:NH>0</PDBx:NH> <PDBx:display_x>.60</PDBx:display_x> <PDBx:display_y>.88</PDBx:display_y> <PDBx:type_symbol>C</PDBx:type_symbol> </PDBx:chemical_conn_atom> <PDBx:chemical_conn_atom number="13"> <PDBx:NCA>2</PDBx:NCA> <PDBx:NH>2</PDBx:NH> <PDBx:display_x>.84</PDBx:display_x> <PDBx:display_y>.96</PDBx:display_y> <PDBx:type_symbol>C</PDBx:type_symbol> </PDBx:chemical_conn_atom> <PDBx:chemical_conn_atom number="14"> <PDBx:NCA>2</PDBx:NCA> <PDBx:NH>2</PDBx:NH> <PDBx:display_x>.91</PDBx:display_x> <PDBx:display_y>.96</PDBx:display_y> <PDBx:type_symbol>C</PDBx:type_symbol> </PDBx:chemical_conn_atom> <PDBx:chemical_conn_atom number="15"> <PDBx:NCA>2</PDBx:NCA> <PDBx:NH>2</PDBx:NH> <PDBx:display_x>.91</PDBx:display_x> <PDBx:display_y>.80</PDBx:display_y> <PDBx:type_symbol>C</PDBx:type_symbol> </PDBx:chemical_conn_atom> <PDBx:chemical_conn_atom number="16"> <PDBx:NCA>2</PDBx:NCA> <PDBx:NH>2</PDBx:NH> <PDBx:display_x>.84</PDBx:display_x> <PDBx:display_y>.80</PDBx:display_y> <PDBx:type_symbol>C</PDBx:type_symbol> </PDBx:chemical_conn_atom> </PDBx:chemical_conn_atomCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE chemical_conn_atom (
@@ -1554,7 +1554,7 @@ CREATE TABLE chemical_conn_atom (
 --
 -- (quoted from citationType)
 -- Data items in the CITATION category record details about the literature cited as being relevant to the contents of the data block. Example 1 - based on PDB entry 5HVP and laboratory records for the structure corresponding to PDB entry 5HVP. <PDBx:citationCategory> <PDBx:citation id="primary"> <PDBx:book_id_ISBN xsi:nil="true" /> <PDBx:book_publisher xsi:nil="true" /> <PDBx:book_title xsi:nil="true" /> <PDBx:coordinate_linkage>yes</PDBx:coordinate_linkage> <PDBx:country>US</PDBx:country> <PDBx:details> The publication that directly relates to this coordinate set.</PDBx:details> <PDBx:journal_abbrev>J. Biol. Chem.</PDBx:journal_abbrev> <PDBx:journal_id_ASTM>HBCHA3</PDBx:journal_id_ASTM> <PDBx:journal_id_CSD>071</PDBx:journal_id_CSD> <PDBx:journal_id_ISSN>0021-9258</PDBx:journal_id_ISSN> <PDBx:journal_issue xsi:nil="true" /> <PDBx:journal_volume>265</PDBx:journal_volume> <PDBx:page_first>14209</PDBx:page_first> <PDBx:page_last>14219</PDBx:page_last> <PDBx:title> Crystallographic analysis of a complex between human immunodeficiency virus type 1 protease and acetyl-pepstatin at 2.0-Angstroms resolution.</PDBx:title> <PDBx:year>1990</PDBx:year> </PDBx:citation> <PDBx:citation id="2"> <PDBx:book_id_ISBN xsi:nil="true" /> <PDBx:book_publisher xsi:nil="true" /> <PDBx:book_title xsi:nil="true" /> <PDBx:coordinate_linkage>no</PDBx:coordinate_linkage> <PDBx:country>UK</PDBx:country> <PDBx:details> Determination of the structure of the unliganded enzyme.</PDBx:details> <PDBx:journal_abbrev>Nature</PDBx:journal_abbrev> <PDBx:journal_id_ASTM>NATUAS</PDBx:journal_id_ASTM> <PDBx:journal_id_CSD>006</PDBx:journal_id_CSD> <PDBx:journal_id_ISSN>0028-0836</PDBx:journal_id_ISSN> <PDBx:journal_issue xsi:nil="true" /> <PDBx:journal_volume>337</PDBx:journal_volume> <PDBx:page_first>615</PDBx:page_first> <PDBx:page_last>619</PDBx:page_last> <PDBx:title> Three-dimensional structure of aspartyl-protease from human immunodeficiency virus HIV-1.</PDBx:title> <PDBx:year>1989</PDBx:year> </PDBx:citation> <PDBx:citation id="3"> <PDBx:book_id_ISBN xsi:nil="true" /> <PDBx:book_publisher xsi:nil="true" /> <PDBx:book_title xsi:nil="true" /> <PDBx:coordinate_linkage>no</PDBx:coordinate_linkage> <PDBx:country>US</PDBx:country> <PDBx:details> Crystallization of the unliganded enzyme.</PDBx:details> <PDBx:journal_abbrev>J. Biol. Chem.</PDBx:journal_abbrev> <PDBx:journal_id_ASTM>HBCHA3</PDBx:journal_id_ASTM> <PDBx:journal_id_CSD>071</PDBx:journal_id_CSD> <PDBx:journal_id_ISSN>0021-9258</PDBx:journal_id_ISSN> <PDBx:journal_issue xsi:nil="true" /> <PDBx:journal_volume>264</PDBx:journal_volume> <PDBx:page_first>1919</PDBx:page_first> <PDBx:page_last>1921</PDBx:page_last> <PDBx:title> Crystallization of the aspartylprotease from human immunodeficiency virus, HIV-1.</PDBx:title> <PDBx:year>1989</PDBx:year> </PDBx:citation> <PDBx:citation id="4"> <PDBx:book_id_ISBN xsi:nil="true" /> <PDBx:book_publisher xsi:nil="true" /> <PDBx:book_title xsi:nil="true" /> <PDBx:coordinate_linkage>no</PDBx:coordinate_linkage> <PDBx:country>US</PDBx:country> <PDBx:details> Expression and purification of the enzyme.</PDBx:details> <PDBx:journal_abbrev>J. Biol. Chem.</PDBx:journal_abbrev> <PDBx:journal_id_ASTM>HBCHA3</PDBx:journal_id_ASTM> <PDBx:journal_id_CSD>071</PDBx:journal_id_CSD> <PDBx:journal_id_ISSN>0021-9258</PDBx:journal_id_ISSN> <PDBx:journal_issue xsi:nil="true" /> <PDBx:journal_volume>264</PDBx:journal_volume> <PDBx:page_first>2307</PDBx:page_first> <PDBx:page_last>2312</PDBx:page_last> <PDBx:title> Human immunodeficiency virus protease. Bacterial expression and characterization of the purified aspartic protease.</PDBx:title> <PDBx:year>1989</PDBx:year> </PDBx:citation> </PDBx:citationCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_citation_coordinate_linkage CASCADE;
@@ -1599,7 +1599,7 @@ CREATE TABLE citation (
 --
 -- (quoted from entity_poly_seqType)
 -- Data items in the ENTITY_POLY_SEQ category specify the sequence of monomers in a polymer. Allowance is made for the possibility of microheterogeneity in a sample by allowing a given sequence number to be correlated with more than one monomer ID. The corresponding ATOM_SITE entries should reflect this heterogeneity. Example 1 - based on PDB entry 5HVP and laboratory records for the structure corresponding to PDB entry 5HVP. <PDBx:entity_poly_seqCategory> <PDBx:entity_poly_seq entity_id="1" mon_id="PRO" num="1"></PDBx:entity_poly_seq> <PDBx:entity_poly_seq entity_id="1" mon_id="GLN" num="2"></PDBx:entity_poly_seq> <PDBx:entity_poly_seq entity_id="1" mon_id="ILE" num="3"></PDBx:entity_poly_seq> <PDBx:entity_poly_seq entity_id="1" mon_id="THR" num="4"></PDBx:entity_poly_seq> <PDBx:entity_poly_seq entity_id="1" mon_id="LEU" num="5"></PDBx:entity_poly_seq> <PDBx:entity_poly_seq entity_id="1" mon_id="TRP" num="6"></PDBx:entity_poly_seq> <PDBx:entity_poly_seq entity_id="1" mon_id="GLN" num="7"></PDBx:entity_poly_seq> <PDBx:entity_poly_seq entity_id="1" mon_id="ARG" num="8"></PDBx:entity_poly_seq> <PDBx:entity_poly_seq entity_id="1" mon_id="PRO" num="9"></PDBx:entity_poly_seq> <PDBx:entity_poly_seq entity_id="1" mon_id="LEU" num="10"></PDBx:entity_poly_seq> <PDBx:entity_poly_seq entity_id="1" mon_id="VAL" num="11"></PDBx:entity_poly_seq> <PDBx:entity_poly_seq entity_id="1" mon_id="THR" num="12"></PDBx:entity_poly_seq> <PDBx:entity_poly_seq entity_id="1" mon_id="ILE" num="13"></PDBx:entity_poly_seq> <PDBx:entity_poly_seq entity_id="1" mon_id="LYS" num="14"></PDBx:entity_poly_seq> <PDBx:entity_poly_seq entity_id="1" mon_id="ILE" num="15"></PDBx:entity_poly_seq> <PDBx:entity_poly_seq entity_id="1" mon_id="GLY" num="16"></PDBx:entity_poly_seq> <PDBx:entity_poly_seq entity_id="1" mon_id="GLY" num="17"></PDBx:entity_poly_seq> <PDBx:entity_poly_seq entity_id="1" mon_id="GLN" num="18"></PDBx:entity_poly_seq> <PDBx:entity_poly_seq entity_id="1" mon_id="LEU" num="19"></PDBx:entity_poly_seq> <PDBx:entity_poly_seq entity_id="1" mon_id="LYS" num="20"></PDBx:entity_poly_seq> <PDBx:entity_poly_seq entity_id="1" mon_id="GLU" num="21"></PDBx:entity_poly_seq> <PDBx:entity_poly_seq entity_id="1" mon_id="ALA" num="22"></PDBx:entity_poly_seq> <PDBx:entity_poly_seq entity_id="1" mon_id="LEU" num="23"></PDBx:entity_poly_seq> <PDBx:entity_poly_seq entity_id="1" mon_id="LEU" num="24"></PDBx:entity_poly_seq> <PDBx:entity_poly_seq entity_id="1" mon_id="ASP" num="25"></PDBx:entity_poly_seq> </PDBx:entity_poly_seqCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_entity_poly_seq_hetero CASCADE;
@@ -1620,7 +1620,7 @@ CREATE TABLE entity_poly_seq (
 --
 -- (quoted from pdbx_chem_comp_importType)
 -- Data items in the PDBX_CHEM_COMP_IMPORT category identify existing chemical components to be imported into the current component definition. Components in this list can be edited by instructions in categories pdbx_chem_comp_atom_edit and pdbx_chem_comp_bond_edit. Example 1 - <PDBx:pdbx_chem_comp_importCategory> <PDBx:pdbx_chem_comp_import comp_id="ATP"></PDBx:pdbx_chem_comp_import> </PDBx:pdbx_chem_comp_importCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_chem_comp_import (
@@ -1633,7 +1633,7 @@ CREATE TABLE pdbx_chem_comp_import (
 --
 -- (quoted from pdbx_domainType)
 -- Data items in the PDBX_DOMAIN category record information about domain definitions. A domain need not correspond to a completely polypeptide chain; it can be composed of one or more segments in a single chain, or by segments from more than one chain. Example 1 - <PDBx:pdbx_domainCategory> <PDBx:pdbx_domain id="d1"> <PDBx:details>Chains A, B</PDBx:details> </PDBx:pdbx_domain> <PDBx:pdbx_domain id="d2"> <PDBx:details>Asym_id D Residues 1-134</PDBx:details> </PDBx:pdbx_domain> </PDBx:pdbx_domainCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_domain (
@@ -1647,7 +1647,7 @@ CREATE TABLE pdbx_domain (
 --
 -- (quoted from pdbx_entity_src_gen_cloneType)
 -- This category contains details for the cloning steps used in the overall protein production process. Each row in PDBX_ENTITY_SRC_GEN_CLONE should have an equivalent row in either PDBX_ENTITY_SRC_GEN_CLONE_LIGATION or PDBX_ENTITY_SRC_GEN_CLONE_RECOMBINATION. If only summary information is provided data in the later two categories may be omitted.
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_entity_src_gen_clone_gene_insert_method CASCADE;
@@ -1684,7 +1684,7 @@ CREATE TABLE pdbx_entity_src_gen_clone (
 --
 -- (quoted from pdbx_reference_entity_polyType)
 -- Data items in the PDBX_REFERENCE_ENTITY_POLY category record details about the polymer, such as the type of the polymer, the number of monomers and whether it has nonstandard features. Example: 1 Actinomycin <PDBx:pdbx_reference_entity_polyCategory> <PDBx:pdbx_reference_entity_poly prd_id="PRD_000001" ref_entity_id="1"> <PDBx:db_code>NOR00228</PDBx:db_code> <PDBx:db_name>Norine</PDBx:db_name> <PDBx:type>peptide-like</PDBx:type> </PDBx:pdbx_reference_entity_poly> <PDBx:pdbx_reference_entity_poly prd_id="PRD_000006" ref_entity_id="2"> <PDBx:db_name>Semi-synthetic</PDBx:db_name> <PDBx:type>peptide-like</PDBx:type> </PDBx:pdbx_reference_entity_poly> <PDBx:pdbx_reference_entity_poly prd_id="PRD_000007" ref_entity_id="3"> <PDBx:db_code>NOR00232</PDBx:db_code> <PDBx:db_name>Norine</PDBx:db_name> <PDBx:type>peptide-like</PDBx:type> </PDBx:pdbx_reference_entity_poly> <PDBx:pdbx_reference_entity_poly prd_id="PRD_000009" ref_entity_id="4"> <PDBx:db_code>NOR00237</PDBx:db_code> <PDBx:db_name>Norine</PDBx:db_name> <PDBx:type>peptide-like</PDBx:type> </PDBx:pdbx_reference_entity_poly> <PDBx:pdbx_reference_entity_poly prd_id="PRD_000010" ref_entity_id="5"> <PDBx:db_name>Semi-synthetic</PDBx:db_name> <PDBx:type>peptide-like</PDBx:type> </PDBx:pdbx_reference_entity_poly> <PDBx:pdbx_reference_entity_poly prd_id="PRD_000011" ref_entity_id="6"> <PDBx:db_name>Semi-synthetic</PDBx:db_name> <PDBx:type>peptide-like</PDBx:type> </PDBx:pdbx_reference_entity_poly> </PDBx:pdbx_reference_entity_polyCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_reference_entity_poly_type CASCADE;
@@ -1704,7 +1704,7 @@ CREATE TABLE pdbx_reference_entity_poly (
 --
 -- (quoted from pdbx_reference_linked_entity_comp_listType)
 -- Data items in the pdbx_reference_linked_entity_comp_list category lists the constituents of common observed interaction patterns described in the pdbx_reference_linked_entity category. Example 1 - <PDBx:pdbx_reference_linked_entity_comp_listCategory> <PDBx:pdbx_reference_linked_entity_comp_list linked_entity_id="0" list_id="1"> <PDBx:comp_id>NAG</PDBx:comp_id> <PDBx:name>N-acetyl glucosamine</PDBx:name> </PDBx:pdbx_reference_linked_entity_comp_list> <PDBx:pdbx_reference_linked_entity_comp_list linked_entity_id="0" list_id="2"> <PDBx:comp_id>NAG</PDBx:comp_id> <PDBx:name>N-acetyl glucosamine</PDBx:name> </PDBx:pdbx_reference_linked_entity_comp_list> <PDBx:pdbx_reference_linked_entity_comp_list linked_entity_id="0" list_id="3"> <PDBx:comp_id>MAN</PDBx:comp_id> <PDBx:name>Mannose</PDBx:name> </PDBx:pdbx_reference_linked_entity_comp_list> <PDBx:pdbx_reference_linked_entity_comp_list linked_entity_id="0" list_id="4"> <PDBx:comp_id>MAN</PDBx:comp_id> <PDBx:name>Mannose</PDBx:name> </PDBx:pdbx_reference_linked_entity_comp_list> <PDBx:pdbx_reference_linked_entity_comp_list linked_entity_id="0" list_id="5"> <PDBx:comp_id>MAN</PDBx:comp_id> <PDBx:name>Mannose</PDBx:name> </PDBx:pdbx_reference_linked_entity_comp_list> </PDBx:pdbx_reference_linked_entity_comp_listCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_reference_linked_entity_comp_list (
@@ -1721,7 +1721,7 @@ CREATE TABLE pdbx_reference_linked_entity_comp_list (
 --
 -- (quoted from pdbx_reference_molecule_listType)
 -- Data items in the PDBX_REFERENCE_MOLECULE_LIST category record reference information about small polymer molecules. Example: 1 Actinomycin <PDBx:pdbx_reference_molecule_listCategory> <PDBx:pdbx_reference_molecule_list family_prd_id="FAM_000001" prd_id="PRD_000001"></PDBx:pdbx_reference_molecule_list> <PDBx:pdbx_reference_molecule_list family_prd_id="FAM_000001" prd_id="PRD_000002"></PDBx:pdbx_reference_molecule_list> <PDBx:pdbx_reference_molecule_list family_prd_id="FAM_000001" prd_id="PRD_000003"></PDBx:pdbx_reference_molecule_list> <PDBx:pdbx_reference_molecule_list family_prd_id="FAM_000001" prd_id="PRD_000004"></PDBx:pdbx_reference_molecule_list> <PDBx:pdbx_reference_molecule_list family_prd_id="FAM_000001" prd_id="PRD_000005"></PDBx:pdbx_reference_molecule_list> <PDBx:pdbx_reference_molecule_list family_prd_id="FAM_000001" prd_id="PRD_000006"></PDBx:pdbx_reference_molecule_list> <PDBx:pdbx_reference_molecule_list family_prd_id="FAM_000001" prd_id="PRD_000007"></PDBx:pdbx_reference_molecule_list> <PDBx:pdbx_reference_molecule_list family_prd_id="FAM_000001" prd_id="PRD_000008"></PDBx:pdbx_reference_molecule_list> <PDBx:pdbx_reference_molecule_list family_prd_id="FAM_000001" prd_id="PRD_000009"></PDBx:pdbx_reference_molecule_list> <PDBx:pdbx_reference_molecule_list family_prd_id="FAM_000001" prd_id="PRD_000010"></PDBx:pdbx_reference_molecule_list> <PDBx:pdbx_reference_molecule_list family_prd_id="FAM_000001" prd_id="PRD_000011"></PDBx:pdbx_reference_molecule_list> </PDBx:pdbx_reference_molecule_listCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_reference_molecule_list (
@@ -1736,7 +1736,7 @@ CREATE TABLE pdbx_reference_molecule_list (
 --
 -- (quoted from pdbx_refine_tlsType)
 -- Data items in the REFINE_TLS category record details about TLS parameters used in structure refinement. Note that the intention is primarily to describe directly refined TLS parameters, although other methods of obtaining TLS parameters may be covered, see item attribute method in category pdbx_refine_tls
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_refine_tls_method CASCADE;
@@ -1844,7 +1844,7 @@ CREATE TABLE pdbx_refine_tls (
 --
 -- (quoted from pdbx_struct_assembly_depositor_infoType)
 -- Data items in the PDBX_STRUCT_ASSEMBLY_DEPOSITOR_INFO category capture depositor provided information related to the archival cateogory PDBX_STRUCT_ASSEMBLY. Example 1 - <PDBx:pdbx_struct_assembly_depositor_infoCategory> <PDBx:pdbx_struct_assembly_depositor_info id="1"> <PDBx:details> The icosahedral virus particle.</PDBx:details> </PDBx:pdbx_struct_assembly_depositor_info> </PDBx:pdbx_struct_assembly_depositor_infoCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_struct_assembly_depositor_info_matrix_flag CASCADE;
@@ -1865,7 +1865,7 @@ CREATE TABLE pdbx_struct_assembly_depositor_info (
 --
 -- (quoted from pdbx_struct_entity_instType)
 -- Data items in the PDBX_STRUCT_ENTITY_INST category record details about the structural elements in the deposited entry. The entity instance is a method neutral identifier for the observed molecular entities in the deposited coordinate set. Example 1 - <PDBx:pdbx_struct_entity_instCategory> <PDBx:pdbx_struct_entity_inst id="A"> <PDBx:details>one monomer of the dimeric enzyme</PDBx:details> <PDBx:entity_id>1</PDBx:entity_id> </PDBx:pdbx_struct_entity_inst> <PDBx:pdbx_struct_entity_inst id="B"> <PDBx:details>one monomer of the dimeric enzyme</PDBx:details> <PDBx:entity_id>1</PDBx:entity_id> </PDBx:pdbx_struct_entity_inst> </PDBx:pdbx_struct_entity_instCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_struct_entity_inst (
@@ -1880,7 +1880,7 @@ CREATE TABLE pdbx_struct_entity_inst (
 --
 -- (quoted from pdbx_struct_group_listType)
 -- Data items in the PDBX_STRUCT_GROUP_LIST define groups of related components or atoms. Example 1 - <PDBx:pdbx_struct_group_listCategory> <PDBx:pdbx_struct_group_list struct_group_id="1"> <PDBx:description> Decaplanin is a tricyclic glycopeptide. The scaffold is a heptapeptide with the configuration D-D-L-D-D-L-L, glycosylated by a monosaccharide and a disaccharide</PDBx:description> <PDBx:group_enumeration_type>component</PDBx:group_enumeration_type> <PDBx:name>DECAPLANIN</PDBx:name> <PDBx:type>MolecularComplex</PDBx:type> </PDBx:pdbx_struct_group_list> </PDBx:pdbx_struct_group_listCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_struct_group_list_group_enumeration_type CASCADE;
@@ -1903,7 +1903,7 @@ CREATE TABLE pdbx_struct_group_list (
 --
 -- (quoted from pdbx_view_category_groupType)
 -- Data items in the PDBX_VIEW_CATEGORY_GROUP identify collections of related mmCIF categories. Views provide a vehicle for presenting different logical arrangements of dictionary contents.
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_view_category_group (
@@ -1917,7 +1917,7 @@ CREATE TABLE pdbx_view_category_group (
 --
 -- (quoted from struct_ncs_operType)
 -- Data items in the STRUCT_NCS_OPER category describe the noncrystallographic symmetry operations. Each operator is specified as a matrix and a subsequent translation vector. Operators need not represent proper rotations. Example 1 - based on laboratory records for the protein NS1. <PDBx:struct_ncs_operCategory> <PDBx:struct_ncs_oper id="ncsop1"> <PDBx:code>given</PDBx:code> <PDBx:details> Matrix and translation vector for pseudo-twofold operation.</PDBx:details> <PDBx:matrix11>0.247</PDBx:matrix11> <PDBx:matrix12>0.935</PDBx:matrix12> <PDBx:matrix13>0.256</PDBx:matrix13> <PDBx:matrix21>0.929</PDBx:matrix21> <PDBx:matrix22>0.153</PDBx:matrix22> <PDBx:matrix23>0.337</PDBx:matrix23> <PDBx:matrix31>0.276</PDBx:matrix31> <PDBx:matrix32>0.321</PDBx:matrix32> <PDBx:matrix33>-0.906</PDBx:matrix33> <PDBx:vector1>-8.253</PDBx:vector1> <PDBx:vector2>-11.743</PDBx:vector2> <PDBx:vector3>-1.782</PDBx:vector3> </PDBx:struct_ncs_oper> </PDBx:struct_ncs_operCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_struct_ncs_oper_code CASCADE;
@@ -1946,7 +1946,7 @@ CREATE TABLE struct_ncs_oper (
 --
 -- (quoted from struct_refType)
 -- Data items in the STRUCT_REF category allow the author of a data block to relate the entities or biological units described in the data block to information archived in external databases. For references to the sequence of a polymer, the value of the data item attribute seq_align in category struct_ref is used to indicate whether the correspondence between the sequence of the entity or biological unit in the data block and the sequence in the referenced database entry is 'complete' or 'partial'. If this value is 'partial', the region (or regions) of the alignment may be delimited using data items in the STRUCT_REF_SEQ category. Similarly, the value of attribute seq_dif in category struct_ref is used to indicate whether the two sequences contain point differences. If the value is 'yes', the differences may be identified and annotated using data items in the STRUCT_REF_SEQ_DIF category. Example 1 - based on PDB entry 5HVP and laboratory records for the structure corresponding to PDB entry 5HVP. <PDBx:struct_refCategory> <PDBx:struct_ref id="1"> <PDBx:biol_id xsi:nil="true" /> <PDBx:db_code>12345</PDBx:db_code> <PDBx:db_name>Genbank</PDBx:db_name> <PDBx:details xsi:nil="true" /> <PDBx:entity_id>1</PDBx:entity_id> <PDBx:seq_align>entire</PDBx:seq_align> <PDBx:seq_dif>yes</PDBx:seq_dif> </PDBx:struct_ref> <PDBx:struct_ref id="2"> <PDBx:biol_id>2</PDBx:biol_id> <PDBx:db_code>1ABC</PDBx:db_code> <PDBx:db_name>PDB</PDBx:db_name> <PDBx:details> The structure of the closely related compound, isobutyryl-pepstatin (pepstatin A) in complex with rhizopuspepsin</PDBx:details> <PDBx:entity_id xsi:nil="true" /> <PDBx:seq_align xsi:nil="true" /> <PDBx:seq_dif xsi:nil="true" /> </PDBx:struct_ref> </PDBx:struct_refCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_struct_ref_seq_align CASCADE;
@@ -1975,7 +1975,7 @@ CREATE TABLE struct_ref (
 --
 -- (quoted from atom_sites_alt_ensType)
 -- Data items in the ATOM_SITES_ALT_ENS category record details about the ensemble structure generated from atoms with various alternative conformation IDs. Example 1 - based on PDB entry 5HVP and laboratory records for the structure corresponding to PDB entry 5HVP. <PDBx:atom_sites_alt_ensCategory> <PDBx:atom_sites_alt_ens id="Ensemble 1-A"> <PDBx:details> The inhibitor binds to the enzyme in two, roughly twofold symmetric alternative conformations. This conformational ensemble includes the more populated conformation of the inhibitor (ID=1) and the amino-acid side chains and solvent structure that correlate with this inhibitor conformation. Also included are one set (ID=3) of side chains with alternative conformations when the conformations are not correlated with the inhibitor conformation.</PDBx:details> </PDBx:atom_sites_alt_ens> <PDBx:atom_sites_alt_ens id="Ensemble 1-B"> <PDBx:details> The inhibitor binds to the enzyme in two, roughly twofold symmetric alternative conformations. This conformational ensemble includes the more populated conformation of the inhibitor (ID=1) and the amino-acid side chains and solvent structure that correlate with this inhibitor conformation. Also included are one set (ID=4) of side chains with alternative conformations when the conformations are not correlated with the inhibitor conformation.</PDBx:details> </PDBx:atom_sites_alt_ens> <PDBx:atom_sites_alt_ens id="Ensemble 2-A"> <PDBx:details> The inhibitor binds to the enzyme in two, roughly twofold symmetric alternative conformations. This conformational ensemble includes the less populated conformation of the inhibitor (ID=2) and the amino-acid side chains and solvent structure that correlate with this inhibitor conformation. Also included are one set (ID=3) of side chains with alternative conformations when the conformations are not correlated with the inhibitor conformation.</PDBx:details> </PDBx:atom_sites_alt_ens> <PDBx:atom_sites_alt_ens id="Ensemble 2-B"> <PDBx:details> The inhibitor binds to the enzyme in two, roughly twofold symmetric alternative conformations. This conformational ensemble includes the less populated conformation of the inhibitor (ID=2) and the amino-acid side chains and solvent structure that correlate with this inhibitor conformation. Also included are one set (ID=4) of side chains with alternative conformations when the conformations are not correlated with the inhibitor conformation.</PDBx:details> </PDBx:atom_sites_alt_ens> </PDBx:atom_sites_alt_ensCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE atom_sites_alt_ens (
@@ -1989,7 +1989,7 @@ CREATE TABLE atom_sites_alt_ens (
 --
 -- (quoted from auditType)
 -- Data items in the AUDIT category record details about the creation and subsequent updating of the data block. Note that these items apply only to the creation and updating of the data block, and should not be confused with the data items in the JOURNAL category that record different stages in the publication of the material in the data block. Example 1 - based on PDB entry 5HVP and laboratory records for the structure corresponding to PDB entry 5HVP. <PDBx:auditCategory> <PDBx:audit revision_id="1"> <PDBx:creation_date>1992-12-08</PDBx:creation_date> <PDBx:creation_method> Created by hand from PDB entry 5HVP, from the J. Biol. Chem. paper describing this structure and from laboratory records</PDBx:creation_method> <PDBx:update_record> 1992-12-09 adjusted to reflect comments from B. McKeever 1992-12-10 adjusted to reflect comments from H. Berman 1992-12-12 adjusted to reflect comments from K. Watenpaugh</PDBx:update_record> </PDBx:audit> </PDBx:auditCategory> Example 2 - based on data set TOZ of Willis, Beckwith & Tozer [Acta Cryst. (1991), C47, 2276-2277]. <PDBx:auditCategory> <PDBx:audit revision_id="2"> <PDBx:creation_date>1991-03-20</PDBx:creation_date> <PDBx:creation_method>from_xtal_archive_file_using_CIFIO</PDBx:creation_method> <PDBx:update_record> 1991-04-09 text and data added by Tony Willis. 1991-04-15 rec&apos;d by co-editor as manuscript HL0007. 1991-04-17 adjustments based on first referee report. 1991-04-18 adjustments based on second referee report.</PDBx:update_record> </PDBx:audit> </PDBx:auditCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE audit (
@@ -2006,7 +2006,7 @@ CREATE TABLE audit (
 --
 -- (quoted from database_PDB_revType)
 -- Data items in the DATABASE_PDB_REV category record details about the history of the data block as archived by the Protein Data Bank (PDB). These data items are assigned by the PDB database managers and should only appear in a data block if they originate from that source. Example 1 - based on PDB entry 5HVP and laboratory records for the structure corresponding to PDB entry 5HVP. <PDBx:database_PDB_revCategory> <PDBx:database_PDB_rev num="1"> <PDBx:author_name>Fitzgerald, Paula M.D</PDBx:author_name> <PDBx:date>1991-10-15</PDBx:date> <PDBx:date_original>1990-04-30</PDBx:date_original> <PDBx:mod_type>0</PDBx:mod_type> <PDBx:status>full release</PDBx:status> </PDBx:database_PDB_rev> </PDBx:database_PDB_revCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_database_PDB_rev_mod_type CASCADE;
@@ -2036,7 +2036,7 @@ CREATE TABLE "database_PDB_rev" (
 --
 -- (quoted from diffrn_scale_groupType)
 -- Data items in the DIFFRN_SCALE_GROUP category record details of the scaling factors applied to place all intensities in the reflection lists on a common scale. Scaling groups might, for example, correspond to each film in a multi-film data set or each crystal in a multi-crystal data set. Example 1 - based on CAD-4 diffractometer data obtained for Yb(S-C5H4N)2(THF)4. <PDBx:diffrn_scale_groupCategory> <PDBx:diffrn_scale_group code="A24"> <PDBx:I_net>1.021</PDBx:I_net> </PDBx:diffrn_scale_group> </PDBx:diffrn_scale_groupCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE diffrn_scale_group (
@@ -2051,7 +2051,7 @@ CREATE TABLE diffrn_scale_group (
 --
 -- (quoted from pdbx_deposit_groupType)
 -- Data items in the pdbx_deposit_group category provide identifiers and related information for groups of entries deposited in a collection. Example 1 - Deposition collection <PDBx:pdbx_deposit_groupCategory> <PDBx:pdbx_deposit_group group_id="B_0000000001"></PDBx:pdbx_deposit_group> </PDBx:pdbx_deposit_groupCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_deposit_group_group_type CASCADE;
@@ -2069,7 +2069,7 @@ CREATE TABLE pdbx_deposit_group (
 --
 -- (quoted from pdbx_entity_src_gen_expressType)
 -- This category contains details for the EXPRESSION steps used in the overall protein production process. It is hoped that this category will cover all forms of cell-based expression by reading induction as induction/transformation/transfection.
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_entity_src_gen_express (
@@ -2125,7 +2125,7 @@ CREATE TABLE pdbx_entity_src_gen_express (
 --
 -- (quoted from pdbx_entity_src_gen_prod_otherType)
 -- This category contains details for process steps that are not explicitly catered for elsewhere. It provides some basic details as well as placeholders for a list of parameters and values (the category PDBX_ENTITY_SRC_GEN_PROD_OTHER_PARAMETER). Note that processes that have been modelled explicitly should not be represented using this category.
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_entity_src_gen_prod_other (
@@ -2148,7 +2148,7 @@ CREATE TABLE pdbx_entity_src_gen_prod_other (
 --
 -- (quoted from pdbx_linked_entity_listType)
 -- Data items in the PDBX_LINKED_ENTITY_LIST category record the list of entity constituents for this molecule. Example: 1 <PDBx:pdbx_linked_entity_listCategory> <PDBx:pdbx_linked_entity_list component_id="1" entity_id="1" linked_entity_id="L1"></PDBx:pdbx_linked_entity_list> <PDBx:pdbx_linked_entity_list component_id="2" entity_id="2" linked_entity_id="L1"></PDBx:pdbx_linked_entity_list> <PDBx:pdbx_linked_entity_list component_id="3" entity_id="3" linked_entity_id="L1"></PDBx:pdbx_linked_entity_list> </PDBx:pdbx_linked_entity_listCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_linked_entity_list (
@@ -2166,7 +2166,7 @@ CREATE TABLE pdbx_linked_entity_list (
 --
 -- (quoted from pdbx_reference_entity_listType)
 -- Data items in the PDBX_REFERENCE_ENTITY_LIST category record the list of entities within each reference molecule. Example: 1 <PDBx:pdbx_reference_entity_listCategory> <PDBx:pdbx_reference_entity_list component_id="1" prd_id="PRD_000001" ref_entity_id="1"> <PDBx:details>PEPTIDE LIKE SEQUENCE RESIDUES 1 TO 8</PDBx:details> <PDBx:type>polymer</PDBx:type> </PDBx:pdbx_reference_entity_list> <PDBx:pdbx_reference_entity_list component_id="2" prd_id="PRD_000001" ref_entity_id="2"> <PDBx:details>QUINALDIC ACID CHROMOPHORE</PDBx:details> <PDBx:type>non-polymer</PDBx:type> </PDBx:pdbx_reference_entity_list> <PDBx:pdbx_reference_entity_list component_id="3" prd_id="PRD_000001" ref_entity_id="3"> <PDBx:details>QUINALDIC ACID CHROMOPHORE</PDBx:details> <PDBx:type>non-polymer</PDBx:type> </PDBx:pdbx_reference_entity_list> </PDBx:pdbx_reference_entity_listCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_reference_entity_list_type CASCADE;
@@ -2187,7 +2187,7 @@ CREATE TABLE pdbx_reference_entity_list (
 --
 -- (quoted from pdbx_struct_ref_seq_featureType)
 -- Data items in the PDBX_STRUCT_REF_SEQ_FEATURE category provide a mechanism for identifying and annotating sequence features. Example 1 - <PDBx:pdbx_struct_ref_seq_featureCategory> <PDBx:pdbx_struct_ref_seq_feature feature_id="1"> <PDBx:align_id>algn2</PDBx:align_id> <PDBx:beg_auth_mon_id>GLU</PDBx:beg_auth_mon_id> <PDBx:beg_auth_seq_id>10</PDBx:beg_auth_seq_id> <PDBx:details> Special </PDBx:details> <PDBx:end_auth_mon_id>PHE</PDBx:end_auth_mon_id> <PDBx:end_auth_seq_id>14</PDBx:end_auth_seq_id> <PDBx:type>variant</PDBx:type> </PDBx:pdbx_struct_ref_seq_feature> </PDBx:pdbx_struct_ref_seq_featureCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_struct_ref_seq_feature_type CASCADE;
@@ -2215,7 +2215,7 @@ CREATE TABLE pdbx_struct_ref_seq_feature (
 --
 -- (quoted from pdbx_validate_planesType)
 -- Data items in the PDBX_VALIDATE_PLANES category list the residues that contain unexpected deviations from planes centers. Example 1 <PDBx:pdbx_validate_planesCategory> <PDBx:pdbx_validate_planes id="1"> <PDBx:PDB_ins_code xsi:nil="true" /> <PDBx:PDB_model_num>1</PDBx:PDB_model_num> <PDBx:auth_asym_id>A</PDBx:auth_asym_id> <PDBx:auth_comp_id>DG</PDBx:auth_comp_id> <PDBx:auth_seq_id>3</PDBx:auth_seq_id> <PDBx:rmsd>0.068</PDBx:rmsd> <PDBx:type>SIDE CHAIN</PDBx:type> </PDBx:pdbx_validate_planes> <PDBx:pdbx_validate_planes id="2"> <PDBx:PDB_ins_code xsi:nil="true" /> <PDBx:PDB_model_num>1</PDBx:PDB_model_num> <PDBx:auth_asym_id>A</PDBx:auth_asym_id> <PDBx:auth_comp_id>DT</PDBx:auth_comp_id> <PDBx:auth_seq_id>4</PDBx:auth_seq_id> <PDBx:rmsd>0.198</PDBx:rmsd> <PDBx:type>SIDE CHAIN</PDBx:type> </PDBx:pdbx_validate_planes> <PDBx:pdbx_validate_planes id="3"> <PDBx:PDB_ins_code xsi:nil="true" /> <PDBx:PDB_model_num>1</PDBx:PDB_model_num> <PDBx:auth_asym_id>A</PDBx:auth_asym_id> <PDBx:auth_comp_id>DC</PDBx:auth_comp_id> <PDBx:auth_seq_id>8</PDBx:auth_seq_id> <PDBx:rmsd>0.090</PDBx:rmsd> <PDBx:type>SIDE CHAIN</PDBx:type> </PDBx:pdbx_validate_planes> </PDBx:pdbx_validate_planesCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_validate_planes_type CASCADE;
@@ -2239,7 +2239,7 @@ CREATE TABLE pdbx_validate_planes (
 --
 -- (quoted from pdbx_view_categoryType)
 -- Data items in the PDBX_VIEW_CATEGORY specify the categories belonging to a category view group. An alias name for the the mmCIF category may also be specified for the each category in the view.
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_view_category (
@@ -2254,7 +2254,7 @@ CREATE TABLE pdbx_view_category (
 --
 -- (quoted from struct_conf_typeType)
 -- Data items in the STRUCT_CONF_TYPE category record details about the criteria used to identify backbone conformations of a segment of polymer. Example 1 - based on PDB entry 5HVP and laboratory records for the structure corresponding to PDB entry 5HVP. <PDBx:struct_conf_typeCategory> <PDBx:struct_conf_type id="HELX_RH_AL_P"> <PDBx:criteria>author judgement</PDBx:criteria> <PDBx:reference xsi:nil="true" /> </PDBx:struct_conf_type> <PDBx:struct_conf_type id="STRN_P"> <PDBx:criteria>author judgement</PDBx:criteria> <PDBx:reference xsi:nil="true" /> </PDBx:struct_conf_type> <PDBx:struct_conf_type id="TURN_TY1_P"> <PDBx:criteria>author judgement</PDBx:criteria> <PDBx:reference xsi:nil="true" /> </PDBx:struct_conf_type> <PDBx:struct_conf_type id="TURN_TY1P_P"> <PDBx:criteria>author judgement</PDBx:criteria> <PDBx:reference xsi:nil="true" /> </PDBx:struct_conf_type> <PDBx:struct_conf_type id="TURN_TY2_P"> <PDBx:criteria>author judgement</PDBx:criteria> <PDBx:reference xsi:nil="true" /> </PDBx:struct_conf_type> <PDBx:struct_conf_type id="TURN_TY2P_P"> <PDBx:criteria>author judgement</PDBx:criteria> <PDBx:reference xsi:nil="true" /> </PDBx:struct_conf_type> </PDBx:struct_conf_typeCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_struct_conf_type_id CASCADE;
@@ -2271,7 +2271,7 @@ CREATE TABLE struct_conf_type (
 --
 -- (quoted from struct_conn_typeType)
 -- Data items in the STRUCT_CONN_TYPE category record details about the criteria used to identify interactions between portions of the structure. Example 1 - based on PDB entry 5HVP and laboratory records for the structure corresponding to PDB entry 5HVP. <PDBx:struct_conn_typeCategory> <PDBx:struct_conn_type id="saltbr"> <PDBx:criteria>negative to positive distance &gt; 2.5 \&#37;A, &lt; 3.2 \&#37;A</PDBx:criteria> <PDBx:reference xsi:nil="true" /> </PDBx:struct_conn_type> <PDBx:struct_conn_type id="hydrog"> <PDBx:criteria>NO distance &gt; 2.5\&#37;A, &lt; 3.5\&#37;A, NOC angle &lt; 120 degrees</PDBx:criteria> <PDBx:reference xsi:nil="true" /> </PDBx:struct_conn_type> </PDBx:struct_conn_typeCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_struct_conn_type_id CASCADE;
@@ -2288,7 +2288,7 @@ CREATE TABLE struct_conn_type (
 --
 -- (quoted from struct_ncs_domType)
 -- Data items in the STRUCT_NCS_DOM category record information about the domains in an ensemble of domains related by one or more noncrystallographic symmetry operators. A domain need not correspond to a complete polypeptide chain; it can be composed of one or more segments in a single chain, or by segments from more than one chain. Example 1 - based on laboratory records for the collagen-like peptide, HYP-. <PDBx:struct_ncs_domCategory> <PDBx:struct_ncs_dom id="d1" pdbx_ens_id="1"> <PDBx:details>Chains A, B, and C</PDBx:details> </PDBx:struct_ncs_dom> <PDBx:struct_ncs_dom id="d2" pdbx_ens_id="1"> <PDBx:details>Chains D, E, and F</PDBx:details> </PDBx:struct_ncs_dom> </PDBx:struct_ncs_domCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE struct_ncs_dom (
@@ -2304,7 +2304,7 @@ CREATE TABLE struct_ncs_dom (
 --
 -- (quoted from struct_ref_seqType)
 -- Data items in the STRUCT_REF_SEQ category provide a mechanism for indicating and annotating a region (or regions) of alignment between the sequence of an entity or biological unit described in the data block and the sequence in the referenced database entry. Example 1 - based on the sequence alignment of CHER from M. xantus (36 to 288) and CHER from S. typhimurium (18 to 276). <PDBx:struct_ref_seqCategory> <PDBx:struct_ref_seq align_id="alg1"> <PDBx:db_align_beg>18</PDBx:db_align_beg> <PDBx:db_align_end>276</PDBx:db_align_end> <PDBx:details> The alignment contains 3 gaps larger than 2 residues</PDBx:details> <PDBx:ref_id>seqdb1</PDBx:ref_id> <PDBx:seq_align_beg>36</PDBx:seq_align_beg> <PDBx:seq_align_end>288</PDBx:seq_align_end> </PDBx:struct_ref_seq> </PDBx:struct_ref_seqCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE struct_ref_seq (
@@ -2332,7 +2332,7 @@ CREATE TABLE struct_ref_seq (
 --
 -- (quoted from atom_siteType)
 -- Data items in the ATOM_SITE category record details about the atom sites in a macromolecular crystal structure, such as the positional coordinates, atomic displacement parameters, magnetic moments and directions. The data items for describing anisotropic atomic displacement factors are only used if the corresponding items are not given in the ATOM_SITE_ANISOTROP category. Example 1 - based on PDB entry 5HVP and laboratory records for the structure corresponding to PDB entry 5HVP. <PDBx:atom_siteCategory> <PDBx:atom_site id="1"> <PDBx:B_iso_or_equiv>17.93</PDBx:B_iso_or_equiv> <PDBx:Cartn_x>25.369</PDBx:Cartn_x> <PDBx:Cartn_y>30.691</PDBx:Cartn_y> <PDBx:Cartn_z>11.795</PDBx:Cartn_z> <PDBx:auth_seq_id>11</PDBx:auth_seq_id> <PDBx:footnote_id xsi:nil="true" /> <PDBx:group_PDB>ATOM</PDBx:group_PDB> <PDBx:label_alt_id xsi:nil="true" /> <PDBx:label_asym_id>A</PDBx:label_asym_id> <PDBx:label_atom_id>N</PDBx:label_atom_id> <PDBx:label_comp_id>VAL</PDBx:label_comp_id> <PDBx:label_seq_id>11</PDBx:label_seq_id> <PDBx:occupancy>1.00</PDBx:occupancy> <PDBx:type_symbol>N</PDBx:type_symbol> </PDBx:atom_site> <PDBx:atom_site id="2"> <PDBx:B_iso_or_equiv>17.75</PDBx:B_iso_or_equiv> <PDBx:Cartn_x>25.970</PDBx:Cartn_x> <PDBx:Cartn_y>31.965</PDBx:Cartn_y> <PDBx:Cartn_z>12.332</PDBx:Cartn_z> <PDBx:auth_seq_id>11</PDBx:auth_seq_id> <PDBx:footnote_id xsi:nil="true" /> <PDBx:group_PDB>ATOM</PDBx:group_PDB> <PDBx:label_alt_id xsi:nil="true" /> <PDBx:label_asym_id>A</PDBx:label_asym_id> <PDBx:label_atom_id>CA</PDBx:label_atom_id> <PDBx:label_comp_id>VAL</PDBx:label_comp_id> <PDBx:label_seq_id>11</PDBx:label_seq_id> <PDBx:occupancy>1.00</PDBx:occupancy> <PDBx:type_symbol>C</PDBx:type_symbol> </PDBx:atom_site> <PDBx:atom_site id="3"> <PDBx:B_iso_or_equiv>17.83</PDBx:B_iso_or_equiv> <PDBx:Cartn_x>25.569</PDBx:Cartn_x> <PDBx:Cartn_y>32.010</PDBx:Cartn_y> <PDBx:Cartn_z>13.808</PDBx:Cartn_z> <PDBx:auth_seq_id>11</PDBx:auth_seq_id> <PDBx:footnote_id xsi:nil="true" /> <PDBx:group_PDB>ATOM</PDBx:group_PDB> <PDBx:label_alt_id xsi:nil="true" /> <PDBx:label_asym_id>A</PDBx:label_asym_id> <PDBx:label_atom_id>C</PDBx:label_atom_id> <PDBx:label_comp_id>VAL</PDBx:label_comp_id> <PDBx:label_seq_id>11</PDBx:label_seq_id> <PDBx:occupancy>1.00</PDBx:occupancy> <PDBx:type_symbol>C</PDBx:type_symbol> </PDBx:atom_site> <PDBx:atom_site id="4"> <PDBx:B_iso_or_equiv>17.53</PDBx:B_iso_or_equiv> <PDBx:Cartn_x>24.735</PDBx:Cartn_x> <PDBx:Cartn_y>31.190</PDBx:Cartn_y> <PDBx:Cartn_z>14.167</PDBx:Cartn_z> <PDBx:auth_seq_id>11</PDBx:auth_seq_id> <PDBx:footnote_id xsi:nil="true" /> <PDBx:group_PDB>ATOM</PDBx:group_PDB> <PDBx:label_alt_id xsi:nil="true" /> <PDBx:label_asym_id>A</PDBx:label_asym_id> <PDBx:label_atom_id>O</PDBx:label_atom_id> <PDBx:label_comp_id>VAL</PDBx:label_comp_id> <PDBx:label_seq_id>11</PDBx:label_seq_id> <PDBx:occupancy>1.00</PDBx:occupancy> <PDBx:type_symbol>O</PDBx:type_symbol> </PDBx:atom_site> <PDBx:atom_site id="5"> <PDBx:B_iso_or_equiv>17.66</PDBx:B_iso_or_equiv> <PDBx:Cartn_x>25.379</PDBx:Cartn_x> <PDBx:Cartn_y>33.146</PDBx:Cartn_y> <PDBx:Cartn_z>11.540</PDBx:Cartn_z> <PDBx:auth_seq_id>11</PDBx:auth_seq_id> <PDBx:footnote_id xsi:nil="true" /> <PDBx:group_PDB>ATOM</PDBx:group_PDB> <PDBx:label_alt_id xsi:nil="true" /> <PDBx:label_asym_id>A</PDBx:label_asym_id> <PDBx:label_atom_id>CB</PDBx:label_atom_id> <PDBx:label_comp_id>VAL</PDBx:label_comp_id> <PDBx:label_seq_id>11</PDBx:label_seq_id> <PDBx:occupancy>1.00</PDBx:occupancy> <PDBx:type_symbol>C</PDBx:type_symbol> </PDBx:atom_site> <PDBx:atom_site id="6"> <PDBx:B_iso_or_equiv>18.86</PDBx:B_iso_or_equiv> <PDBx:Cartn_x>25.584</PDBx:Cartn_x> <PDBx:Cartn_y>33.034</PDBx:Cartn_y> <PDBx:Cartn_z>10.030</PDBx:Cartn_z> <PDBx:auth_seq_id>11</PDBx:auth_seq_id> <PDBx:footnote_id xsi:nil="true" /> <PDBx:group_PDB>ATOM</PDBx:group_PDB> <PDBx:label_alt_id xsi:nil="true" /> <PDBx:label_asym_id>A</PDBx:label_asym_id> <PDBx:label_atom_id>CG1</PDBx:label_atom_id> <PDBx:label_comp_id>VAL</PDBx:label_comp_id> <PDBx:label_seq_id>11</PDBx:label_seq_id> <PDBx:occupancy>1.00</PDBx:occupancy> <PDBx:type_symbol>C</PDBx:type_symbol> </PDBx:atom_site> <PDBx:atom_site id="7"> <PDBx:B_iso_or_equiv>17.12</PDBx:B_iso_or_equiv> <PDBx:Cartn_x>23.933</PDBx:Cartn_x> <PDBx:Cartn_y>33.309</PDBx:Cartn_y> <PDBx:Cartn_z>11.872</PDBx:Cartn_z> <PDBx:auth_seq_id>11</PDBx:auth_seq_id> <PDBx:footnote_id xsi:nil="true" /> <PDBx:group_PDB>ATOM</PDBx:group_PDB> <PDBx:label_alt_id xsi:nil="true" /> <PDBx:label_asym_id>A</PDBx:label_asym_id> <PDBx:label_atom_id>CG2</PDBx:label_atom_id> <PDBx:label_comp_id>VAL</PDBx:label_comp_id> <PDBx:label_seq_id>11</PDBx:label_seq_id> <PDBx:occupancy>1.00</PDBx:occupancy> <PDBx:type_symbol>C</PDBx:type_symbol> </PDBx:atom_site> <PDBx:atom_site id="8"> <PDBx:B_iso_or_equiv>18.97</PDBx:B_iso_or_equiv> <PDBx:Cartn_x>26.095</PDBx:Cartn_x> <PDBx:Cartn_y>32.930</PDBx:Cartn_y> <PDBx:Cartn_z>14.590</PDBx:Cartn_z> <PDBx:auth_seq_id>12</PDBx:auth_seq_id> <PDBx:footnote_id>4</PDBx:footnote_id> <PDBx:group_PDB>ATOM</PDBx:group_PDB> <PDBx:label_alt_id xsi:nil="true" /> <PDBx:label_asym_id>A</PDBx:label_asym_id> <PDBx:label_atom_id>N</PDBx:label_atom_id> <PDBx:label_comp_id>THR</PDBx:label_comp_id> <PDBx:label_seq_id>12</PDBx:label_seq_id> <PDBx:occupancy>1.00</PDBx:occupancy> <PDBx:type_symbol>N</PDBx:type_symbol> </PDBx:atom_site> <PDBx:atom_site id="9"> <PDBx:B_iso_or_equiv>19.80</PDBx:B_iso_or_equiv> <PDBx:Cartn_x>25.734</PDBx:Cartn_x> <PDBx:Cartn_y>32.995</PDBx:Cartn_y> <PDBx:Cartn_z>16.032</PDBx:Cartn_z> <PDBx:auth_seq_id>12</PDBx:auth_seq_id> <PDBx:footnote_id>4</PDBx:footnote_id> <PDBx:group_PDB>ATOM</PDBx:group_PDB> <PDBx:label_alt_id xsi:nil="true" /> <PDBx:label_asym_id>A</PDBx:label_asym_id> <PDBx:label_atom_id>CA</PDBx:label_atom_id> <PDBx:label_comp_id>THR</PDBx:label_comp_id> <PDBx:label_seq_id>12</PDBx:label_seq_id> <PDBx:occupancy>1.00</PDBx:occupancy> <PDBx:type_symbol>C</PDBx:type_symbol> </PDBx:atom_site> <PDBx:atom_site id="10"> <PDBx:B_iso_or_equiv>20.92</PDBx:B_iso_or_equiv> <PDBx:Cartn_x>24.695</PDBx:Cartn_x> <PDBx:Cartn_y>34.106</PDBx:Cartn_y> <PDBx:Cartn_z>16.113</PDBx:Cartn_z> <PDBx:auth_seq_id>12</PDBx:auth_seq_id> <PDBx:footnote_id>4</PDBx:footnote_id> <PDBx:group_PDB>ATOM</PDBx:group_PDB> <PDBx:label_alt_id xsi:nil="true" /> <PDBx:label_asym_id>A</PDBx:label_asym_id> <PDBx:label_atom_id>C</PDBx:label_atom_id> <PDBx:label_comp_id>THR</PDBx:label_comp_id> <PDBx:label_seq_id>12</PDBx:label_seq_id> <PDBx:occupancy>1.00</PDBx:occupancy> <PDBx:type_symbol>C</PDBx:type_symbol> </PDBx:atom_site> <PDBx:atom_site id="11"> <PDBx:B_iso_or_equiv>21.84</PDBx:B_iso_or_equiv> <PDBx:Cartn_x>24.869</PDBx:Cartn_x> <PDBx:Cartn_y>35.118</PDBx:Cartn_y> <PDBx:Cartn_z>15.421</PDBx:Cartn_z> <PDBx:auth_seq_id>12</PDBx:auth_seq_id> <PDBx:footnote_id>4</PDBx:footnote_id> <PDBx:group_PDB>ATOM</PDBx:group_PDB> <PDBx:label_alt_id xsi:nil="true" /> <PDBx:label_asym_id>A</PDBx:label_asym_id> <PDBx:label_atom_id>O</PDBx:label_atom_id> <PDBx:label_comp_id>THR</PDBx:label_comp_id> <PDBx:label_seq_id>12</PDBx:label_seq_id> <PDBx:occupancy>1.00</PDBx:occupancy> <PDBx:type_symbol>O</PDBx:type_symbol> </PDBx:atom_site> <PDBx:atom_site id="12"> <PDBx:B_iso_or_equiv>20.51</PDBx:B_iso_or_equiv> <PDBx:Cartn_x>26.911</PDBx:Cartn_x> <PDBx:Cartn_y>33.346</PDBx:Cartn_y> <PDBx:Cartn_z>17.018</PDBx:Cartn_z> <PDBx:auth_seq_id>12</PDBx:auth_seq_id> <PDBx:footnote_id>4</PDBx:footnote_id> <PDBx:group_PDB>ATOM</PDBx:group_PDB> <PDBx:label_alt_id xsi:nil="true" /> <PDBx:label_asym_id>A</PDBx:label_asym_id> <PDBx:label_atom_id>CB</PDBx:label_atom_id> <PDBx:label_comp_id>THR</PDBx:label_comp_id> <PDBx:label_seq_id>12</PDBx:label_seq_id> <PDBx:occupancy>1.00</PDBx:occupancy> <PDBx:type_symbol>C</PDBx:type_symbol> </PDBx:atom_site> <PDBx:atom_site id="13"> <PDBx:B_iso_or_equiv>20.29</PDBx:B_iso_or_equiv> <PDBx:Cartn_x>27.946</PDBx:Cartn_x> <PDBx:Cartn_y>33.921</PDBx:Cartn_y> <PDBx:Cartn_z>16.183</PDBx:Cartn_z> <PDBx:auth_seq_id>12</PDBx:auth_seq_id> <PDBx:footnote_id>4</PDBx:footnote_id> <PDBx:group_PDB>ATOM</PDBx:group_PDB> <PDBx:label_alt_id>3</PDBx:label_alt_id> <PDBx:label_asym_id>A</PDBx:label_asym_id> <PDBx:label_atom_id>OG1</PDBx:label_atom_id> <PDBx:label_comp_id>THR</PDBx:label_comp_id> <PDBx:label_seq_id>12</PDBx:label_seq_id> <PDBx:occupancy>0.50</PDBx:occupancy> <PDBx:type_symbol>O</PDBx:type_symbol> </PDBx:atom_site> <PDBx:atom_site id="14"> <PDBx:B_iso_or_equiv>20.59</PDBx:B_iso_or_equiv> <PDBx:Cartn_x>27.769</PDBx:Cartn_x> <PDBx:Cartn_y>32.142</PDBx:Cartn_y> <PDBx:Cartn_z>17.103</PDBx:Cartn_z> <PDBx:auth_seq_id>12</PDBx:auth_seq_id> <PDBx:footnote_id>4</PDBx:footnote_id> <PDBx:group_PDB>ATOM</PDBx:group_PDB> <PDBx:label_alt_id>4</PDBx:label_alt_id> <PDBx:label_asym_id>A</PDBx:label_asym_id> <PDBx:label_atom_id>OG1</PDBx:label_atom_id> <PDBx:label_comp_id>THR</PDBx:label_comp_id> <PDBx:label_seq_id>12</PDBx:label_seq_id> <PDBx:occupancy>0.50</PDBx:occupancy> <PDBx:type_symbol>O</PDBx:type_symbol> </PDBx:atom_site> <PDBx:atom_site id="15"> <PDBx:B_iso_or_equiv>20.47</PDBx:B_iso_or_equiv> <PDBx:Cartn_x>27.418</PDBx:Cartn_x> <PDBx:Cartn_y>32.181</PDBx:Cartn_y> <PDBx:Cartn_z>17.878</PDBx:Cartn_z> <PDBx:auth_seq_id>12</PDBx:auth_seq_id> <PDBx:footnote_id>4</PDBx:footnote_id> <PDBx:group_PDB>ATOM</PDBx:group_PDB> <PDBx:label_alt_id>3</PDBx:label_alt_id> <PDBx:label_asym_id>A</PDBx:label_asym_id> <PDBx:label_atom_id>CG2</PDBx:label_atom_id> <PDBx:label_comp_id>THR</PDBx:label_comp_id> <PDBx:label_seq_id>12</PDBx:label_seq_id> <PDBx:occupancy>0.50</PDBx:occupancy> <PDBx:type_symbol>C</PDBx:type_symbol> </PDBx:atom_site> <PDBx:atom_site id="16"> <PDBx:B_iso_or_equiv>20.00</PDBx:B_iso_or_equiv> <PDBx:Cartn_x>26.489</PDBx:Cartn_x> <PDBx:Cartn_y>33.778</PDBx:Cartn_y> <PDBx:Cartn_z>18.426</PDBx:Cartn_z> <PDBx:auth_seq_id>12</PDBx:auth_seq_id> <PDBx:footnote_id>4</PDBx:footnote_id> <PDBx:group_PDB>ATOM</PDBx:group_PDB> <PDBx:label_alt_id>4</PDBx:label_alt_id> <PDBx:label_asym_id>A</PDBx:label_asym_id> <PDBx:label_atom_id>CG2</PDBx:label_atom_id> <PDBx:label_comp_id>THR</PDBx:label_comp_id> <PDBx:label_seq_id>12</PDBx:label_seq_id> <PDBx:occupancy>0.50</PDBx:occupancy> <PDBx:type_symbol>C</PDBx:type_symbol> </PDBx:atom_site> <PDBx:atom_site id="17"> <PDBx:B_iso_or_equiv>22.08</PDBx:B_iso_or_equiv> <PDBx:Cartn_x>23.664</PDBx:Cartn_x> <PDBx:Cartn_y>33.855</PDBx:Cartn_y> <PDBx:Cartn_z>16.884</PDBx:Cartn_z> <PDBx:auth_seq_id>13</PDBx:auth_seq_id> <PDBx:footnote_id xsi:nil="true" /> <PDBx:group_PDB>ATOM</PDBx:group_PDB> <PDBx:label_alt_id xsi:nil="true" /> <PDBx:label_asym_id>A</PDBx:label_asym_id> <PDBx:label_atom_id>N</PDBx:label_atom_id> <PDBx:label_comp_id>ILE</PDBx:label_comp_id> <PDBx:label_seq_id>13</PDBx:label_seq_id> <PDBx:occupancy>1.00</PDBx:occupancy> <PDBx:type_symbol>N</PDBx:type_symbol> </PDBx:atom_site> <PDBx:atom_site id="18"> <PDBx:B_iso_or_equiv>23.44</PDBx:B_iso_or_equiv> <PDBx:Cartn_x>22.623</PDBx:Cartn_x> <PDBx:Cartn_y>34.850</PDBx:Cartn_y> <PDBx:Cartn_z>17.093</PDBx:Cartn_z> <PDBx:auth_seq_id>13</PDBx:auth_seq_id> <PDBx:footnote_id xsi:nil="true" /> <PDBx:group_PDB>ATOM</PDBx:group_PDB> <PDBx:label_alt_id xsi:nil="true" /> <PDBx:label_asym_id>A</PDBx:label_asym_id> <PDBx:label_atom_id>CA</PDBx:label_atom_id> <PDBx:label_comp_id>ILE</PDBx:label_comp_id> <PDBx:label_seq_id>13</PDBx:label_seq_id> <PDBx:occupancy>1.00</PDBx:occupancy> <PDBx:type_symbol>C</PDBx:type_symbol> </PDBx:atom_site> <PDBx:atom_site id="19"> <PDBx:B_iso_or_equiv>25.77</PDBx:B_iso_or_equiv> <PDBx:Cartn_x>22.657</PDBx:Cartn_x> <PDBx:Cartn_y>35.113</PDBx:Cartn_y> <PDBx:Cartn_z>18.610</PDBx:Cartn_z> <PDBx:auth_seq_id>13</PDBx:auth_seq_id> <PDBx:footnote_id xsi:nil="true" /> <PDBx:group_PDB>ATOM</PDBx:group_PDB> <PDBx:label_alt_id xsi:nil="true" /> <PDBx:label_asym_id>A</PDBx:label_asym_id> <PDBx:label_atom_id>C</PDBx:label_atom_id> <PDBx:label_comp_id>ILE</PDBx:label_comp_id> <PDBx:label_seq_id>13</PDBx:label_seq_id> <PDBx:occupancy>1.00</PDBx:occupancy> <PDBx:type_symbol>C</PDBx:type_symbol> </PDBx:atom_site> <PDBx:atom_site id="20"> <PDBx:B_iso_or_equiv>26.28</PDBx:B_iso_or_equiv> <PDBx:Cartn_x>23.123</PDBx:Cartn_x> <PDBx:Cartn_y>34.250</PDBx:Cartn_y> <PDBx:Cartn_z>19.406</PDBx:Cartn_z> <PDBx:auth_seq_id>13</PDBx:auth_seq_id> <PDBx:footnote_id xsi:nil="true" /> <PDBx:group_PDB>ATOM</PDBx:group_PDB> <PDBx:label_alt_id xsi:nil="true" /> <PDBx:label_asym_id>A</PDBx:label_asym_id> <PDBx:label_atom_id>O</PDBx:label_atom_id> <PDBx:label_comp_id>ILE</PDBx:label_comp_id> <PDBx:label_seq_id>13</PDBx:label_seq_id> <PDBx:occupancy>1.00</PDBx:occupancy> <PDBx:type_symbol>O</PDBx:type_symbol> </PDBx:atom_site> <PDBx:atom_site id="21"> <PDBx:B_iso_or_equiv>22.67</PDBx:B_iso_or_equiv> <PDBx:Cartn_x>21.236</PDBx:Cartn_x> <PDBx:Cartn_y>34.463</PDBx:Cartn_y> <PDBx:Cartn_z>16.492</PDBx:Cartn_z> <PDBx:auth_seq_id>13</PDBx:auth_seq_id> <PDBx:footnote_id xsi:nil="true" /> <PDBx:group_PDB>ATOM</PDBx:group_PDB> <PDBx:label_alt_id xsi:nil="true" /> <PDBx:label_asym_id>A</PDBx:label_asym_id> <PDBx:label_atom_id>CB</PDBx:label_atom_id> <PDBx:label_comp_id>ILE</PDBx:label_comp_id> <PDBx:label_seq_id>13</PDBx:label_seq_id> <PDBx:occupancy>1.00</PDBx:occupancy> <PDBx:type_symbol>C</PDBx:type_symbol> </PDBx:atom_site> <PDBx:atom_site id="22"> <PDBx:B_iso_or_equiv>22.14</PDBx:B_iso_or_equiv> <PDBx:Cartn_x>20.478</PDBx:Cartn_x> <PDBx:Cartn_y>33.469</PDBx:Cartn_y> <PDBx:Cartn_z>17.371</PDBx:Cartn_z> <PDBx:auth_seq_id>13</PDBx:auth_seq_id> <PDBx:footnote_id xsi:nil="true" /> <PDBx:group_PDB>ATOM</PDBx:group_PDB> <PDBx:label_alt_id xsi:nil="true" /> <PDBx:label_asym_id>A</PDBx:label_asym_id> <PDBx:label_atom_id>CG1</PDBx:label_atom_id> <PDBx:label_comp_id>ILE</PDBx:label_comp_id> <PDBx:label_seq_id>13</PDBx:label_seq_id> <PDBx:occupancy>1.00</PDBx:occupancy> <PDBx:type_symbol>C</PDBx:type_symbol> </PDBx:atom_site> <PDBx:atom_site id="23"> <PDBx:B_iso_or_equiv>21.75</PDBx:B_iso_or_equiv> <PDBx:Cartn_x>21.357</PDBx:Cartn_x> <PDBx:Cartn_y>33.986</PDBx:Cartn_y> <PDBx:Cartn_z>15.016</PDBx:Cartn_z> <PDBx:auth_seq_id>13</PDBx:auth_seq_id> <PDBx:footnote_id xsi:nil="true" /> <PDBx:group_PDB>ATOM</PDBx:group_PDB> <PDBx:label_alt_id xsi:nil="true" /> <PDBx:label_asym_id>A</PDBx:label_asym_id> <PDBx:label_atom_id>CG2</PDBx:label_atom_id> <PDBx:label_comp_id>ILE</PDBx:label_comp_id> <PDBx:label_seq_id>13</PDBx:label_seq_id> <PDBx:occupancy>1.00</PDBx:occupancy> <PDBx:type_symbol>C</PDBx:type_symbol> </PDBx:atom_site> <PDBx:atom_site id="101"> <PDBx:B_iso_or_equiv>17.27</PDBx:B_iso_or_equiv> <PDBx:Cartn_x>4.171</PDBx:Cartn_x> <PDBx:Cartn_y>29.012</PDBx:Cartn_y> <PDBx:Cartn_z>7.116</PDBx:Cartn_z> <PDBx:auth_seq_id>300</PDBx:auth_seq_id> <PDBx:footnote_id>1</PDBx:footnote_id> <PDBx:group_PDB>HETATM</PDBx:group_PDB> <PDBx:label_alt_id>1</PDBx:label_alt_id> <PDBx:label_asym_id>C</PDBx:label_asym_id> <PDBx:label_atom_id>C1</PDBx:label_atom_id> <PDBx:label_comp_id>APS</PDBx:label_comp_id> <PDBx:label_seq_id xsi:nil="true" /> <PDBx:occupancy>0.58</PDBx:occupancy> <PDBx:type_symbol>C</PDBx:type_symbol> </PDBx:atom_site> <PDBx:atom_site id="102"> <PDBx:B_iso_or_equiv>16.95</PDBx:B_iso_or_equiv> <PDBx:Cartn_x>4.949</PDBx:Cartn_x> <PDBx:Cartn_y>27.758</PDBx:Cartn_y> <PDBx:Cartn_z>6.793</PDBx:Cartn_z> <PDBx:auth_seq_id>300</PDBx:auth_seq_id> <PDBx:footnote_id>1</PDBx:footnote_id> <PDBx:group_PDB>HETATM</PDBx:group_PDB> <PDBx:label_alt_id>1</PDBx:label_alt_id> <PDBx:label_asym_id>C</PDBx:label_asym_id> <PDBx:label_atom_id>C2</PDBx:label_atom_id> <PDBx:label_comp_id>APS</PDBx:label_comp_id> <PDBx:label_seq_id xsi:nil="true" /> <PDBx:occupancy>0.58</PDBx:occupancy> <PDBx:type_symbol>C</PDBx:type_symbol> </PDBx:atom_site> <PDBx:atom_site id="103"> <PDBx:B_iso_or_equiv>16.85</PDBx:B_iso_or_equiv> <PDBx:Cartn_x>4.800</PDBx:Cartn_x> <PDBx:Cartn_y>26.678</PDBx:Cartn_y> <PDBx:Cartn_z>7.393</PDBx:Cartn_z> <PDBx:auth_seq_id>300</PDBx:auth_seq_id> <PDBx:footnote_id>1</PDBx:footnote_id> <PDBx:group_PDB>HETATM</PDBx:group_PDB> <PDBx:label_alt_id>1</PDBx:label_alt_id> <PDBx:label_asym_id>C</PDBx:label_asym_id> <PDBx:label_atom_id>O3</PDBx:label_atom_id> <PDBx:label_comp_id>APS</PDBx:label_comp_id> <PDBx:label_seq_id xsi:nil="true" /> <PDBx:occupancy>0.58</PDBx:occupancy> <PDBx:type_symbol>O</PDBx:type_symbol> </PDBx:atom_site> <PDBx:atom_site id="104"> <PDBx:B_iso_or_equiv>16.43</PDBx:B_iso_or_equiv> <PDBx:Cartn_x>5.930</PDBx:Cartn_x> <PDBx:Cartn_y>27.841</PDBx:Cartn_y> <PDBx:Cartn_z>5.869</PDBx:Cartn_z> <PDBx:auth_seq_id>300</PDBx:auth_seq_id> <PDBx:footnote_id>1</PDBx:footnote_id> <PDBx:group_PDB>HETATM</PDBx:group_PDB> <PDBx:label_alt_id>1</PDBx:label_alt_id> <PDBx:label_asym_id>C</PDBx:label_asym_id> <PDBx:label_atom_id>N4</PDBx:label_atom_id> <PDBx:label_comp_id>APS</PDBx:label_comp_id> <PDBx:label_seq_id xsi:nil="true" /> <PDBx:occupancy>0.58</PDBx:occupancy> <PDBx:type_symbol>N</PDBx:type_symbol> </PDBx:atom_site> </PDBx:atom_siteCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_atom_site_adp_type CASCADE;
@@ -2505,7 +2505,7 @@ CREATE TABLE atom_site (
 --
 -- (quoted from atom_site_anisotropType)
 -- Data items in the ATOM_SITE_ANISOTROP category record details about anisotropic displacement parameters. If the ATOM_SITE_ANISOTROP category is used for storing these data, the corresponding ATOM_SITE data items are not used. Example 1 - based on NDB structure BDL005 of Holbrook, Dickerson & Kim [Acta Cryst. (1985), B41, 255-262]. <PDBx:atom_site_anisotropCategory> <PDBx:atom_site_anisotrop id="1"> <PDBx:U11>8642</PDBx:U11> <PDBx:U12>4866</PDBx:U12> <PDBx:U13>7299</PDBx:U13> <PDBx:U22>-342</PDBx:U22> <PDBx:U23>-258</PDBx:U23> <PDBx:U33>-1427</PDBx:U33> <PDBx:type_symbol>O</PDBx:type_symbol> </PDBx:atom_site_anisotrop> <PDBx:atom_site_anisotrop id="2"> <PDBx:U11>5174</PDBx:U11> <PDBx:U12>4871</PDBx:U12> <PDBx:U13>6243</PDBx:U13> <PDBx:U22>-1885</PDBx:U22> <PDBx:U23>-2051</PDBx:U23> <PDBx:U33>-1377</PDBx:U33> <PDBx:type_symbol>C</PDBx:type_symbol> </PDBx:atom_site_anisotrop> <PDBx:atom_site_anisotrop id="3"> <PDBx:U11>6202</PDBx:U11> <PDBx:U12>5020</PDBx:U12> <PDBx:U13>4395</PDBx:U13> <PDBx:U22>-1130</PDBx:U22> <PDBx:U23>-556</PDBx:U23> <PDBx:U33>-632</PDBx:U33> <PDBx:type_symbol>C</PDBx:type_symbol> </PDBx:atom_site_anisotrop> <PDBx:atom_site_anisotrop id="4"> <PDBx:U11>4224</PDBx:U11> <PDBx:U12>4700</PDBx:U12> <PDBx:U13>5046</PDBx:U13> <PDBx:U22>1105</PDBx:U22> <PDBx:U23>-161</PDBx:U23> <PDBx:U33>345</PDBx:U33> <PDBx:type_symbol>O</PDBx:type_symbol> </PDBx:atom_site_anisotrop> <PDBx:atom_site_anisotrop id="5"> <PDBx:U11>8684</PDBx:U11> <PDBx:U12>4688</PDBx:U12> <PDBx:U13>4171</PDBx:U13> <PDBx:U22>-1850</PDBx:U22> <PDBx:U23>-433</PDBx:U23> <PDBx:U33>-292</PDBx:U33> <PDBx:type_symbol>C</PDBx:type_symbol> </PDBx:atom_site_anisotrop> <PDBx:atom_site_anisotrop id="6"> <PDBx:U11>11226</PDBx:U11> <PDBx:U12>5255</PDBx:U12> <PDBx:U13>3532</PDBx:U13> <PDBx:U22>-341</PDBx:U22> <PDBx:U23>2685</PDBx:U23> <PDBx:U33>1328</PDBx:U33> <PDBx:type_symbol>O</PDBx:type_symbol> </PDBx:atom_site_anisotrop> <PDBx:atom_site_anisotrop id="7"> <PDBx:U11>10214</PDBx:U11> <PDBx:U12>2428</PDBx:U12> <PDBx:U13>5614</PDBx:U13> <PDBx:U22>-2610</PDBx:U22> <PDBx:U23>-1940</PDBx:U23> <PDBx:U33>902</PDBx:U33> <PDBx:type_symbol>C</PDBx:type_symbol> </PDBx:atom_site_anisotrop> <PDBx:atom_site_anisotrop id="8"> <PDBx:U11>4590</PDBx:U11> <PDBx:U12>3488</PDBx:U12> <PDBx:U13>5827</PDBx:U13> <PDBx:U22>751</PDBx:U22> <PDBx:U23>-770</PDBx:U23> <PDBx:U33>986</PDBx:U33> <PDBx:type_symbol>C</PDBx:type_symbol> </PDBx:atom_site_anisotrop> <PDBx:atom_site_anisotrop id="9"> <PDBx:U11>5014</PDBx:U11> <PDBx:U12>4434</PDBx:U12> <PDBx:U13>3447</PDBx:U13> <PDBx:U22>-17</PDBx:U22> <PDBx:U23>-1593</PDBx:U23> <PDBx:U33>539</PDBx:U33> <PDBx:type_symbol>N</PDBx:type_symbol> </PDBx:atom_site_anisotrop> </PDBx:atom_site_anisotropCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE atom_site_anisotrop (
@@ -2588,7 +2588,7 @@ CREATE TABLE atom_site_anisotrop (
 --
 -- (quoted from atom_sitesType)
 -- Data items in the ATOM_SITES category record details about the crystallographic cell and cell transformations, which are common to all atom sites. Example 1 - based on PDB entry 5HVP and laboratory records for the structure corresponding to PDB entry 5HVP. <PDBx:atom_sitesCategory> <PDBx:atom_sites entry_id="5HVP"> <PDBx:Cartn_transf_matrix11>58.39</PDBx:Cartn_transf_matrix11> <PDBx:Cartn_transf_matrix12>0.00</PDBx:Cartn_transf_matrix12> <PDBx:Cartn_transf_matrix13>0.00</PDBx:Cartn_transf_matrix13> <PDBx:Cartn_transf_matrix21>0.00</PDBx:Cartn_transf_matrix21> <PDBx:Cartn_transf_matrix22>86.70</PDBx:Cartn_transf_matrix22> <PDBx:Cartn_transf_matrix23>0.00</PDBx:Cartn_transf_matrix23> <PDBx:Cartn_transf_matrix31>0.00</PDBx:Cartn_transf_matrix31> <PDBx:Cartn_transf_matrix32>0.00</PDBx:Cartn_transf_matrix32> <PDBx:Cartn_transf_matrix33>46.27</PDBx:Cartn_transf_matrix33> <PDBx:Cartn_transf_vector1>0.00</PDBx:Cartn_transf_vector1> <PDBx:Cartn_transf_vector2>0.00</PDBx:Cartn_transf_vector2> <PDBx:Cartn_transf_vector3>0.00</PDBx:Cartn_transf_vector3> <PDBx:Cartn_transform_axes>c along z, astar along x, b along y</PDBx:Cartn_transform_axes> </PDBx:atom_sites> </PDBx:atom_sitesCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_atom_sites_solution_hydrogens CASCADE;
@@ -2636,7 +2636,7 @@ CREATE TABLE atom_sites (
 --
 -- (quoted from atom_sites_alt_genType)
 -- Data items in the ATOM_SITES_ALT_GEN category record details about the interpretation of multiple conformations in the structure. Example 1 - based on PDB entry 5HVP and laboratory records for the structure corresponding to PDB entry 5HVP. <PDBx:atom_sites_alt_genCategory> <PDBx:atom_sites_alt_gen alt_id="1" ens_id="Ensemble 1-A"></PDBx:atom_sites_alt_gen> <PDBx:atom_sites_alt_gen alt_id="2" ens_id="Ensemble 1-A"></PDBx:atom_sites_alt_gen> <PDBx:atom_sites_alt_gen alt_id="1" ens_id="Ensemble 1-B"></PDBx:atom_sites_alt_gen> <PDBx:atom_sites_alt_gen alt_id="4" ens_id="Ensemble 1-B"></PDBx:atom_sites_alt_gen> <PDBx:atom_sites_alt_gen alt_id="2" ens_id="Ensemble 2-A"></PDBx:atom_sites_alt_gen> <PDBx:atom_sites_alt_gen alt_id="3" ens_id="Ensemble 2-A"></PDBx:atom_sites_alt_gen> <PDBx:atom_sites_alt_gen alt_id="2" ens_id="Ensemble 2-B"></PDBx:atom_sites_alt_gen> <PDBx:atom_sites_alt_gen alt_id="4" ens_id="Ensemble 2-B"></PDBx:atom_sites_alt_gen> </PDBx:atom_sites_alt_genCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE atom_sites_alt_gen (
@@ -2651,7 +2651,7 @@ CREATE TABLE atom_sites_alt_gen (
 --
 -- (quoted from atom_sites_footnoteType)
 -- Data items in the ATOM_SITES_FOOTNOTE category record detailed comments about an atom site or a group of atom sites. Example 1 - based on PDB entry 5HVP and laboratory records for the structure corresponding to PDB entry 5HVP. <PDBx:atom_sites_footnoteCategory> <PDBx:atom_sites_footnote id="1"> <PDBx:text> The inhibitor binds to the enzyme in two alternative orientations. The two orientations have been assigned alternative IDs *1* and *2*.</PDBx:text> </PDBx:atom_sites_footnote> <PDBx:atom_sites_footnote id="2"> <PDBx:text> Side chains of these residues adopt alternative orientations that correlate with the alternative orientations of the inhibitor. Side chains with alternative ID *1* and occupancy 0.58 correlate with inhibitor orientation *1*. Side chains with alternative ID *2* and occupancy 0.42 correlate with inhibitor orientation *2*.</PDBx:text> </PDBx:atom_sites_footnote> <PDBx:atom_sites_footnote id="3"> <PDBx:text> The positions of these water molecules correlate with the alternative orientations of the inhibitor. Water molecules with alternative ID *1* and occupancy 0.58 correlate with inhibitor orientation *1*. Water molecules with alternative ID *2* and occupancy 0.42 correlate with inhibitor orientation *2*.</PDBx:text> </PDBx:atom_sites_footnote> <PDBx:atom_sites_footnote id="4"> <PDBx:text> Side chains of these residues adopt alternative orientations that do not correlate with the alternative orientation of the inhibitor.</PDBx:text> </PDBx:atom_sites_footnote> <PDBx:atom_sites_footnote id="5"> <PDBx:text> The positions of these water molecules correlate with alternative orientations of amino-acid side chains that do not correlate with alternative orientations of the inhibitor.</PDBx:text> </PDBx:atom_sites_footnote> </PDBx:atom_sites_footnoteCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE atom_sites_footnote (
@@ -2665,7 +2665,7 @@ CREATE TABLE atom_sites_footnote (
 --
 -- (quoted from audit_authorType)
 -- Data items in the AUDIT_AUTHOR category record details about the author(s) of the data block. Example 1 - based on PDB entry 5HVP and laboratory records for the structure corresponding to PDB entry 5HVP. <PDBx:audit_authorCategory> <PDBx:audit_author pdbx_ordinal="1"> <PDBx:address> Department of Biophysical Chemistry Merck Research Laboratories P. O. Box 2000, Ry80M203 Rahway, New Jersey 07065 USA</PDBx:address> <PDBx:name>Fitzgerald, Paula M.D.</PDBx:name> </PDBx:audit_author> <PDBx:audit_author pdbx_ordinal="2"> <PDBx:address> Department of Biophysical Chemistry Merck Research Laboratories P. O. Box 2000, Ry80M203 Rahway, New Jersey 07065 USA</PDBx:address> <PDBx:name>McKeever, Brian M.</PDBx:name> </PDBx:audit_author> <PDBx:audit_author pdbx_ordinal="3"> <PDBx:address> Department of Biophysical Chemistry Merck Research Laboratories P. O. Box 2000, Ry80M203 Rahway, New Jersey 07065 USA</PDBx:address> <PDBx:name>Van Middlesworth, J.F.</PDBx:name> </PDBx:audit_author> <PDBx:audit_author pdbx_ordinal="4"> <PDBx:address> Department of Biophysical Chemistry Merck Research Laboratories P. O. Box 2000, Ry80M203 Rahway, New Jersey 07065 USA</PDBx:address> <PDBx:name>Springer, James P.</PDBx:name> </PDBx:audit_author> </PDBx:audit_authorCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE audit_author (
@@ -2681,7 +2681,7 @@ CREATE TABLE audit_author (
 --
 -- (quoted from audit_conformType)
 -- Data items in the AUDIT_CONFORM category describe the dictionary versions against which the data names appearing in the current data block are conformant. Example 1 - any file conforming to the current CIF core dictionary. <PDBx:audit_conformCategory> <PDBx:audit_conform dict_name="cif_core.dic" dict_version="2.3.1"> <PDBx:dict_location>ftp://ftp.iucr.org/pub/cif_core.2.3.1.dic</PDBx:dict_location> </PDBx:audit_conform> </PDBx:audit_conformCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE audit_conform (
@@ -2697,7 +2697,7 @@ CREATE TABLE audit_conform (
 --
 -- (quoted from audit_contact_authorType)
 -- Data items in the AUDIT_CONTACT_AUTHOR category record details about the name and address of the author to be contacted concerning the content of this data block. Example 1 - based on PDB entry 5HVP and laboratory records for the structure corresponding to PDB entry 5HVP. <PDBx:audit_contact_authorCategory> <PDBx:audit_contact_author name="Fitzgerald, Paula M.D."> <PDBx:address> Department of Biophysical Chemistry Merck Research Laboratories PO Box 2000, Ry80M203 Rahway, New Jersey 07065 USA</PDBx:address> <PDBx:email>paula_fitzgerald@merck.com</PDBx:email> <PDBx:fax>1(908)5946645</PDBx:fax> <PDBx:phone>1(908)5945510</PDBx:phone> </PDBx:audit_contact_author> </PDBx:audit_contact_authorCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE audit_contact_author (
@@ -2714,7 +2714,7 @@ CREATE TABLE audit_contact_author (
 --
 -- (quoted from audit_linkType)
 -- Data items in the AUDIT_LINK category record details about the relationships between data blocks in the current CIF. Example 1 - multiple structure paper, as illustrated in A Guide to CIF for Authors (1995). IUCr: Chester. <PDBx:audit_linkCategory> <PDBx:audit_link block_code="morA_pub" block_description="discursive text of paper with two structures"></PDBx:audit_link> <PDBx:audit_link block_code="morA_(1)" block_description="structure 1 of 2"></PDBx:audit_link> <PDBx:audit_link block_code="morA_(2)" block_description="structure 2 of 2"></PDBx:audit_link> </PDBx:audit_linkCategory> Example 2 - example file for the one-dimensional incommensurately modulated structure of K~2~SeO~4~. <PDBx:audit_linkCategory> <PDBx:audit_link block_code="KSE_PUB" block_description="publication details"></PDBx:audit_link> <PDBx:audit_link block_code="KSE_COM" block_description="experimental data common to ref./mod. structures"></PDBx:audit_link> <PDBx:audit_link block_code="KSE_REF" block_description="reference structure"></PDBx:audit_link> <PDBx:audit_link block_code="KSE_MOD" block_description="modulated structure"></PDBx:audit_link> </PDBx:audit_linkCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE audit_link (
@@ -2729,7 +2729,7 @@ CREATE TABLE audit_link (
 --
 -- (quoted from cellType)
 -- Data items in the CELL category record details about the crystallographic cell parameters. Example 1 - based on PDB entry 5HVP and laboratory records for the structure corresponding to PDB entry 5HVP. <PDBx:cellCategory> <PDBx:cell entry_id="5HVP"> <PDBx:angle_alpha>90.00</PDBx:angle_alpha> <PDBx:angle_beta>90.00</PDBx:angle_beta> <PDBx:angle_gamma>90.00</PDBx:angle_gamma> <PDBx:details> The cell parameters were refined every twenty frames during data integration. The cell lengths given are the mean of 55 such refinements; the esds given are the root mean square deviations of these 55 observations from that mean.</PDBx:details> <PDBx:length_a>58.39</PDBx:length_a> <PDBx:length_a_esd>0.05</PDBx:length_a_esd> <PDBx:length_b>86.70</PDBx:length_b> <PDBx:length_b_esd>0.12</PDBx:length_b_esd> <PDBx:length_c>46.27</PDBx:length_c> <PDBx:length_c_esd>0.06</PDBx:length_c_esd> <PDBx:volume>234237</PDBx:volume> </PDBx:cell> </PDBx:cellCategory> Example 2 - based on data set TOZ of Willis, Beckwith & Tozer [Acta Cryst. (1991), C47, 2276-2277]. <PDBx:cellCategory> <PDBx:cell entry_id="1TOZ"> <PDBx:angle_alpha>90.0</PDBx:angle_alpha> <PDBx:angle_beta>90.0</PDBx:angle_beta> <PDBx:angle_gamma>90.0</PDBx:angle_gamma> <PDBx:length_a>5.959</PDBx:length_a> <PDBx:length_a_esd>0.001</PDBx:length_a_esd> <PDBx:length_b>14.956</PDBx:length_b> <PDBx:length_b_esd>0.001</PDBx:length_b_esd> <PDBx:length_c>19.737</PDBx:length_c> <PDBx:length_c_esd>0.003</PDBx:length_c_esd> <PDBx:volume>1759.0</PDBx:volume> <PDBx:volume_esd>0.3</PDBx:volume_esd> </PDBx:cell> </PDBx:cellCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE cell (
@@ -2806,7 +2806,7 @@ CREATE TABLE cell (
 --
 -- (quoted from cell_measurementType)
 -- Data items in the CELL_MEASUREMENT category record details about the measurement of the crystallographic cell parameters. Example 1 - based on PDB entry 5HVP and laboratory records for the structure corresponding to PDB entry 5HVP. <PDBx:cell_measurementCategory> <PDBx:cell_measurement entry_id="5HVP"> <PDBx:temp>293</PDBx:temp> <PDBx:temp_esd>3</PDBx:temp_esd> <PDBx:theta_max>31</PDBx:theta_max> <PDBx:theta_min>11</PDBx:theta_min> <PDBx:wavelength>1.54</PDBx:wavelength> </PDBx:cell_measurement> </PDBx:cell_measurementCategory> Example 2 - based on data set TOZ of Willis, Beckwith & Tozer [Acta Cryst. (1991), C47, 2276-2277]. <PDBx:cell_measurementCategory> <PDBx:cell_measurement entry_id="1TOZ"> <PDBx:reflns_used>25</PDBx:reflns_used> <PDBx:temp>293</PDBx:temp> <PDBx:theta_max>31</PDBx:theta_max> <PDBx:theta_min>25</PDBx:theta_min> </PDBx:cell_measurement> </PDBx:cell_measurementCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE cell_measurement (
@@ -2837,7 +2837,7 @@ CREATE TABLE cell_measurement (
 --
 -- (quoted from cell_measurement_reflnType)
 -- Data items in the CELL_MEASUREMENT_REFLN category record details about the reflections used to determine the crystallographic cell parameters. The CELL_MEASUREMENT_REFLN data items would in general be used only for diffractometer data. Example 1 - extracted from the CAD-4 listing of Rb~2~S~2~O~6~ at room temperature (unpublished). <PDBx:cell_measurement_reflnCategory> <PDBx:cell_measurement_refln index_h="-2" index_k="4" index_l="1"> <PDBx:theta>8.67</PDBx:theta> </PDBx:cell_measurement_refln> <PDBx:cell_measurement_refln index_h="0" index_k="3" index_l="2"> <PDBx:theta>9.45</PDBx:theta> </PDBx:cell_measurement_refln> <PDBx:cell_measurement_refln index_h="3" index_k="0" index_l="2"> <PDBx:theta>9.46</PDBx:theta> </PDBx:cell_measurement_refln> <PDBx:cell_measurement_refln index_h="-3" index_k="4" index_l="1"> <PDBx:theta>8.93</PDBx:theta> </PDBx:cell_measurement_refln> <PDBx:cell_measurement_refln index_h="-2" index_k="1" index_l="-2"> <PDBx:theta>7.53</PDBx:theta> </PDBx:cell_measurement_refln> <PDBx:cell_measurement_refln index_h="10" index_k="0" index_l="0"> <PDBx:theta>23.77</PDBx:theta> </PDBx:cell_measurement_refln> <PDBx:cell_measurement_refln index_h="0" index_k="10" index_l="0"> <PDBx:theta>23.78</PDBx:theta> </PDBx:cell_measurement_refln> <PDBx:cell_measurement_refln index_h="-5" index_k="4" index_l="1"> <PDBx:theta>11.14</PDBx:theta> </PDBx:cell_measurement_refln> </PDBx:cell_measurement_reflnCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE cell_measurement_refln (
@@ -2857,7 +2857,7 @@ CREATE TABLE cell_measurement_refln (
 --
 -- (quoted from chem_comp_angleType)
 -- Data items in the CHEM_COMP_ANGLE category record details about angles in a chemical component. Angles are designated by three atoms, with the second atom forming the vertex of the angle. Target values may be specified as angles in degrees, as a distance between the first and third atoms, or both. Example 1 - based on PDB entry 5HVP and laboratory records for the structure corresponding to PDB entry 5HVP. <PDBx:chem_comp_angleCategory> <PDBx:chem_comp_angle atom_id_1="N" atom_id_2="CA" atom_id_3="C" comp_id="PHE"> <PDBx:value_angle>110.8</PDBx:value_angle> </PDBx:chem_comp_angle> <PDBx:chem_comp_angle atom_id_1="N" atom_id_2="CA" atom_id_3="CB" comp_id="PHE"> <PDBx:value_angle>110.1</PDBx:value_angle> </PDBx:chem_comp_angle> <PDBx:chem_comp_angle atom_id_1="C" atom_id_2="CA" atom_id_3="CB" comp_id="PHE"> <PDBx:value_angle>110.3</PDBx:value_angle> </PDBx:chem_comp_angle> <PDBx:chem_comp_angle atom_id_1="C" atom_id_2="CA" atom_id_3="HA" comp_id="PHE"> <PDBx:value_angle>108.3</PDBx:value_angle> </PDBx:chem_comp_angle> <PDBx:chem_comp_angle atom_id_1="CA" atom_id_2="C" atom_id_3="O" comp_id="PHE"> <PDBx:value_angle>118.4</PDBx:value_angle> </PDBx:chem_comp_angle> <PDBx:chem_comp_angle atom_id_1="CA" atom_id_2="C" atom_id_3="OXT" comp_id="PHE"> <PDBx:value_angle>117.8</PDBx:value_angle> </PDBx:chem_comp_angle> <PDBx:chem_comp_angle atom_id_1="CA" atom_id_2="CB" atom_id_3="CG" comp_id="PHE"> <PDBx:value_angle>114.0</PDBx:value_angle> </PDBx:chem_comp_angle> <PDBx:chem_comp_angle atom_id_1="O" atom_id_2="C" atom_id_3="OXT" comp_id="PHE"> <PDBx:value_angle>123.8</PDBx:value_angle> </PDBx:chem_comp_angle> <PDBx:chem_comp_angle atom_id_1="CB" atom_id_2="CG" atom_id_3="CD1" comp_id="PHE"> <PDBx:value_angle>120.8</PDBx:value_angle> </PDBx:chem_comp_angle> <PDBx:chem_comp_angle atom_id_1="CB" atom_id_2="CG" atom_id_3="CD2" comp_id="PHE"> <PDBx:value_angle>120.5</PDBx:value_angle> </PDBx:chem_comp_angle> </PDBx:chem_comp_angleCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE chem_comp_angle (
@@ -2886,7 +2886,7 @@ CREATE TABLE chem_comp_angle (
 --
 -- (quoted from chem_comp_bondType)
 -- Data items in the CHEM_COMP_BOND category record details about the bonds between atoms in a chemical component. Target values may be specified as bond orders, as a distance between the two atoms, or both. Example 1 - based on PDB entry 5HVP and laboratory records for the structure corresponding to PDB entry 5HVP. <PDBx:chem_comp_bondCategory> <PDBx:chem_comp_bond atom_id_1="N" atom_id_2="CA" comp_id="phe"> <PDBx:value_order>sing</PDBx:value_order> </PDBx:chem_comp_bond> <PDBx:chem_comp_bond atom_id_1="CA" atom_id_2="C" comp_id="phe"> <PDBx:value_order>sing</PDBx:value_order> </PDBx:chem_comp_bond> <PDBx:chem_comp_bond atom_id_1="C" atom_id_2="O" comp_id="phe"> <PDBx:value_order>doub</PDBx:value_order> </PDBx:chem_comp_bond> <PDBx:chem_comp_bond atom_id_1="CB" atom_id_2="CA" comp_id="phe"> <PDBx:value_order>sing</PDBx:value_order> </PDBx:chem_comp_bond> <PDBx:chem_comp_bond atom_id_1="CB" atom_id_2="CG" comp_id="phe"> <PDBx:value_order>sing</PDBx:value_order> </PDBx:chem_comp_bond> <PDBx:chem_comp_bond atom_id_1="CG" atom_id_2="CD1" comp_id="phe"> <PDBx:value_order>arom</PDBx:value_order> </PDBx:chem_comp_bond> <PDBx:chem_comp_bond atom_id_1="CD1" atom_id_2="CE1" comp_id="phe"> <PDBx:value_order>arom</PDBx:value_order> </PDBx:chem_comp_bond> <PDBx:chem_comp_bond atom_id_1="CE1" atom_id_2="CZ" comp_id="phe"> <PDBx:value_order>arom</PDBx:value_order> </PDBx:chem_comp_bond> <PDBx:chem_comp_bond atom_id_1="CZ" atom_id_2="CE2" comp_id="phe"> <PDBx:value_order>arom</PDBx:value_order> </PDBx:chem_comp_bond> <PDBx:chem_comp_bond atom_id_1="CE2" atom_id_2="CD2" comp_id="phe"> <PDBx:value_order>arom</PDBx:value_order> </PDBx:chem_comp_bond> <PDBx:chem_comp_bond atom_id_1="CD2" atom_id_2="CG" comp_id="phe"> <PDBx:value_order>arom</PDBx:value_order> </PDBx:chem_comp_bond> <PDBx:chem_comp_bond atom_id_1="N" atom_id_2="CA" comp_id="val"> <PDBx:value_order>sing</PDBx:value_order> </PDBx:chem_comp_bond> <PDBx:chem_comp_bond atom_id_1="CA" atom_id_2="C" comp_id="val"> <PDBx:value_order>sing</PDBx:value_order> </PDBx:chem_comp_bond> <PDBx:chem_comp_bond atom_id_1="C" atom_id_2="O" comp_id="val"> <PDBx:value_order>doub</PDBx:value_order> </PDBx:chem_comp_bond> <PDBx:chem_comp_bond atom_id_1="CB" atom_id_2="CA" comp_id="val"> <PDBx:value_order>sing</PDBx:value_order> </PDBx:chem_comp_bond> <PDBx:chem_comp_bond atom_id_1="CB" atom_id_2="CG1" comp_id="val"> <PDBx:value_order>sing</PDBx:value_order> </PDBx:chem_comp_bond> <PDBx:chem_comp_bond atom_id_1="CB" atom_id_2="CG2" comp_id="val"> <PDBx:value_order>sing</PDBx:value_order> </PDBx:chem_comp_bond> </PDBx:chem_comp_bondCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_chem_comp_bond_pdbx_aromatic_flag CASCADE;
@@ -2917,7 +2917,7 @@ CREATE TABLE chem_comp_bond (
 --
 -- (quoted from chem_comp_chirType)
 -- Data items in the CHEM_COMP_CHIR category provide details about the chiral centres in a chemical component. The atoms bonded to the chiral atom are specified in the CHEM_COMP_CHIR_ATOM category. Example 1 - based on PDB entry 5HVP and laboratory records for the structure corresponding to PDB entry 5HVP. <PDBx:chem_comp_chirCategory> <PDBx:chem_comp_chir comp_id="phe" id="phe1"> <PDBx:atom_id>CA</PDBx:atom_id> </PDBx:chem_comp_chir> <PDBx:chem_comp_chir comp_id="val" id="val1"> <PDBx:atom_id>CA</PDBx:atom_id> </PDBx:chem_comp_chir> </PDBx:chem_comp_chirCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_chem_comp_chir_atom_config CASCADE;
@@ -2945,7 +2945,7 @@ CREATE TABLE chem_comp_chir (
 --
 -- (quoted from chem_comp_chir_atomType)
 -- Data items in the CHEM_COMP_CHIR_ATOM category enumerate the atoms bonded to a chiral atom within a chemical component. Example 1 - based on PDB entry 5HVP and laboratory records for the structure corresponding to PDB entry 5HVP. <PDBx:chem_comp_chir_atomCategory> <PDBx:chem_comp_chir_atom atom_id="N" chir_id="1" comp_id="phe"></PDBx:chem_comp_chir_atom> <PDBx:chem_comp_chir_atom atom_id="C" chir_id="1" comp_id="phe"></PDBx:chem_comp_chir_atom> <PDBx:chem_comp_chir_atom atom_id="CB" chir_id="1" comp_id="phe"></PDBx:chem_comp_chir_atom> <PDBx:chem_comp_chir_atom atom_id="N" chir_id="1" comp_id="val"></PDBx:chem_comp_chir_atom> <PDBx:chem_comp_chir_atom atom_id="C" chir_id="1" comp_id="val"></PDBx:chem_comp_chir_atom> <PDBx:chem_comp_chir_atom atom_id="CB" chir_id="1" comp_id="val"></PDBx:chem_comp_chir_atom> </PDBx:chem_comp_chir_atomCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE chem_comp_chir_atom (
@@ -2964,7 +2964,7 @@ CREATE TABLE chem_comp_chir_atom (
 --
 -- (quoted from chem_comp_linkType)
 -- Data items in the CHEM_COMP_LINK category give details about the links between chemical components.
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE chem_comp_link (
@@ -2980,7 +2980,7 @@ CREATE TABLE chem_comp_link (
 --
 -- (quoted from chem_comp_planeType)
 -- Data items in the CHEM_COMP_PLANE category provide identifiers for the planes in a chemical component. The atoms in the plane are specified in the CHEM_COMP_PLANE_ATOM category. Example 1 - based on PDB entry 5HVP and laboratory records for the structure corresponding to PDB entry 5HVP. <PDBx:chem_comp_planeCategory> <PDBx:chem_comp_plane comp_id="phe" id="phe1"></PDBx:chem_comp_plane> </PDBx:chem_comp_planeCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE chem_comp_plane (
@@ -2997,7 +2997,7 @@ CREATE TABLE chem_comp_plane (
 --
 -- (quoted from chem_comp_plane_atomType)
 -- Data items in the CHEM_COMP_PLANE_ATOM category enumerate the atoms in a plane within a chemical component. Example 1 - based on PDB entry 5HVP and laboratory records for the structure corresponding to PDB entry 5HVP. <PDBx:chem_comp_plane_atomCategory> <PDBx:chem_comp_plane_atom atom_id="CB" comp_id="phe" plane_id="phe1"></PDBx:chem_comp_plane_atom> <PDBx:chem_comp_plane_atom atom_id="CG" comp_id="phe" plane_id="phe1"></PDBx:chem_comp_plane_atom> <PDBx:chem_comp_plane_atom atom_id="CD1" comp_id="phe" plane_id="phe1"></PDBx:chem_comp_plane_atom> <PDBx:chem_comp_plane_atom atom_id="CE1" comp_id="phe" plane_id="phe1"></PDBx:chem_comp_plane_atom> <PDBx:chem_comp_plane_atom atom_id="CZ" comp_id="phe" plane_id="phe1"></PDBx:chem_comp_plane_atom> <PDBx:chem_comp_plane_atom atom_id="CE2" comp_id="phe" plane_id="phe1"></PDBx:chem_comp_plane_atom> <PDBx:chem_comp_plane_atom atom_id="CD2" comp_id="phe" plane_id="phe1"></PDBx:chem_comp_plane_atom> </PDBx:chem_comp_plane_atomCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE chem_comp_plane_atom (
@@ -3016,7 +3016,7 @@ CREATE TABLE chem_comp_plane_atom (
 --
 -- (quoted from chem_comp_torType)
 -- Data items in the CHEM_COMP_TOR category record details about the torsion angles in a chemical component. As torsion angles can have more than one target value, the target values are specified in the CHEM_COMP_TOR_VALUE category. Example 1 - based on PDB entry 5HVP and laboratory records for the structure corresponding to PDB entry 5HVP. <PDBx:chem_comp_torCategory> <PDBx:chem_comp_tor comp_id="phe" id="phe_chi1"> <PDBx:atom_id_1>N</PDBx:atom_id_1> <PDBx:atom_id_2>CA</PDBx:atom_id_2> <PDBx:atom_id_3>CB</PDBx:atom_id_3> <PDBx:atom_id_4>CG</PDBx:atom_id_4> </PDBx:chem_comp_tor> <PDBx:chem_comp_tor comp_id="phe" id="phe_chi2"> <PDBx:atom_id_1>CA</PDBx:atom_id_1> <PDBx:atom_id_2>CB</PDBx:atom_id_2> <PDBx:atom_id_3>CG</PDBx:atom_id_3> <PDBx:atom_id_4>CD1</PDBx:atom_id_4> </PDBx:chem_comp_tor> <PDBx:chem_comp_tor comp_id="phe" id="phe_ring1"> <PDBx:atom_id_1>CB</PDBx:atom_id_1> <PDBx:atom_id_2>CG</PDBx:atom_id_2> <PDBx:atom_id_3>CD1</PDBx:atom_id_3> <PDBx:atom_id_4>CE1</PDBx:atom_id_4> </PDBx:chem_comp_tor> <PDBx:chem_comp_tor comp_id="phe" id="phe_ring2"> <PDBx:atom_id_1>CB</PDBx:atom_id_1> <PDBx:atom_id_2>CG</PDBx:atom_id_2> <PDBx:atom_id_3>CD2</PDBx:atom_id_3> <PDBx:atom_id_4>CE2</PDBx:atom_id_4> </PDBx:chem_comp_tor> <PDBx:chem_comp_tor comp_id="phe" id="phe_ring3"> <PDBx:atom_id_1>CG</PDBx:atom_id_1> <PDBx:atom_id_2>CD1</PDBx:atom_id_2> <PDBx:atom_id_3>CE1</PDBx:atom_id_3> <PDBx:atom_id_4>CZ</PDBx:atom_id_4> </PDBx:chem_comp_tor> <PDBx:chem_comp_tor comp_id="phe" id="phe_ring4"> <PDBx:atom_id_1>CD1</PDBx:atom_id_1> <PDBx:atom_id_2>CE1</PDBx:atom_id_2> <PDBx:atom_id_3>CZ</PDBx:atom_id_3> <PDBx:atom_id_4>CE2</PDBx:atom_id_4> </PDBx:chem_comp_tor> <PDBx:chem_comp_tor comp_id="phe" id="phe_ring5"> <PDBx:atom_id_1>CE1</PDBx:atom_id_1> <PDBx:atom_id_2>CZ</PDBx:atom_id_2> <PDBx:atom_id_3>CE2</PDBx:atom_id_3> <PDBx:atom_id_4>CD2</PDBx:atom_id_4> </PDBx:chem_comp_tor> </PDBx:chem_comp_torCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE chem_comp_tor (
@@ -3035,7 +3035,7 @@ CREATE TABLE chem_comp_tor (
 --
 -- (quoted from chem_comp_tor_valueType)
 -- Data items in the CHEM_COMP_TOR_VALUE category record details about the target values for the torsion angles enumerated in the CHEM_COMP_TOR list. Target values may be specified as angles in degrees, as a distance between the first and fourth atoms, or both. Example 1 - based on PDB entry 5HVP and laboratory records for the structure corresponding to PDB entry 5HVP. <PDBx:chem_comp_tor_valueCategory> <PDBx:chem_comp_tor_value comp_id="phe" tor_id="phe_chi1"> <PDBx:angle>-60.0</PDBx:angle> <PDBx:dist>2.88</PDBx:dist> </PDBx:chem_comp_tor_value> <PDBx:chem_comp_tor_value comp_id="phe" tor_id="phe_chi1"> <PDBx:angle>180.0</PDBx:angle> <PDBx:dist>3.72</PDBx:dist> </PDBx:chem_comp_tor_value> <PDBx:chem_comp_tor_value comp_id="phe" tor_id="phe_chi1"> <PDBx:angle>60.0</PDBx:angle> <PDBx:dist>2.88</PDBx:dist> </PDBx:chem_comp_tor_value> <PDBx:chem_comp_tor_value comp_id="phe" tor_id="phe_chi2"> <PDBx:angle>90.0</PDBx:angle> <PDBx:dist>3.34</PDBx:dist> </PDBx:chem_comp_tor_value> <PDBx:chem_comp_tor_value comp_id="phe" tor_id="phe_chi2"> <PDBx:angle>-90.0</PDBx:angle> <PDBx:dist>3.34</PDBx:dist> </PDBx:chem_comp_tor_value> <PDBx:chem_comp_tor_value comp_id="phe" tor_id="phe_ring1"> <PDBx:angle>180.0</PDBx:angle> <PDBx:dist>3.75</PDBx:dist> </PDBx:chem_comp_tor_value> <PDBx:chem_comp_tor_value comp_id="phe" tor_id="phe_ring2"> <PDBx:angle>180.0</PDBx:angle> <PDBx:dist>3.75</PDBx:dist> </PDBx:chem_comp_tor_value> <PDBx:chem_comp_tor_value comp_id="phe" tor_id="phe_ring3"> <PDBx:angle>0.0</PDBx:angle> <PDBx:dist>2.80</PDBx:dist> </PDBx:chem_comp_tor_value> <PDBx:chem_comp_tor_value comp_id="phe" tor_id="phe_ring4"> <PDBx:angle>0.0</PDBx:angle> <PDBx:dist>2.80</PDBx:dist> </PDBx:chem_comp_tor_value> <PDBx:chem_comp_tor_value comp_id="phe" tor_id="phe_ring5"> <PDBx:angle>0.0</PDBx:angle> <PDBx:dist>2.80</PDBx:dist> </PDBx:chem_comp_tor_value> </PDBx:chem_comp_tor_valueCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE chem_comp_tor_value (
@@ -3060,7 +3060,7 @@ CREATE TABLE chem_comp_tor_value (
 --
 -- (quoted from chem_link_angleType)
 -- Data items in the CHEM_LINK_ANGLE category record details about angles in a link between chemical components. Example 1 - Engh & Huber parameters [Acta Cryst. (1991), A47, 392-400] as interpreted by J. P. Priestle (1995). Consistent Stereochemical Dictionaries for Refinement and Model Building. CCP4 Daresbury Study Weekend, DL-CONF-95-001, ISSN 1358-6254. Warrington: Daresbury Laboratory. <PDBx:chem_link_angleCategory> <PDBx:chem_link_angle atom_id_1="N" atom_id_2="CA" atom_id_3="C" link_id="PEPTIDE"> <PDBx:atom_1_comp_id>1</PDBx:atom_1_comp_id> <PDBx:atom_2_comp_id>1</PDBx:atom_2_comp_id> <PDBx:atom_3_comp_id>1</PDBx:atom_3_comp_id> <PDBx:value_angle>111.2</PDBx:value_angle> <PDBx:value_angle_esd>2.8</PDBx:value_angle_esd> </PDBx:chem_link_angle> <PDBx:chem_link_angle atom_id_1="CA" atom_id_2="C" atom_id_3="O" link_id="PEPTIDE"> <PDBx:atom_1_comp_id>1</PDBx:atom_1_comp_id> <PDBx:atom_2_comp_id>1</PDBx:atom_2_comp_id> <PDBx:atom_3_comp_id>1</PDBx:atom_3_comp_id> <PDBx:value_angle>120.8</PDBx:value_angle> <PDBx:value_angle_esd>1.7</PDBx:value_angle_esd> </PDBx:chem_link_angle> <PDBx:chem_link_angle atom_id_1="CA" atom_id_2="C" atom_id_3="N" link_id="PEPTIDE"> <PDBx:atom_1_comp_id>1</PDBx:atom_1_comp_id> <PDBx:atom_2_comp_id>1</PDBx:atom_2_comp_id> <PDBx:atom_3_comp_id>2</PDBx:atom_3_comp_id> <PDBx:value_angle>116.2</PDBx:value_angle> <PDBx:value_angle_esd>2.0</PDBx:value_angle_esd> </PDBx:chem_link_angle> <PDBx:chem_link_angle atom_id_1="O" atom_id_2="C" atom_id_3="N" link_id="PEPTIDE"> <PDBx:atom_1_comp_id>1</PDBx:atom_1_comp_id> <PDBx:atom_2_comp_id>1</PDBx:atom_2_comp_id> <PDBx:atom_3_comp_id>2</PDBx:atom_3_comp_id> <PDBx:value_angle>123.0</PDBx:value_angle> <PDBx:value_angle_esd>1.6</PDBx:value_angle_esd> </PDBx:chem_link_angle> <PDBx:chem_link_angle atom_id_1="C" atom_id_2="N" atom_id_3="CA" link_id="PEPTIDE"> <PDBx:atom_1_comp_id>1</PDBx:atom_1_comp_id> <PDBx:atom_2_comp_id>2</PDBx:atom_2_comp_id> <PDBx:atom_3_comp_id>2</PDBx:atom_3_comp_id> <PDBx:value_angle>121.7</PDBx:value_angle> <PDBx:value_angle_esd>1.8</PDBx:value_angle_esd> </PDBx:chem_link_angle> </PDBx:chem_link_angleCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_chem_link_angle_atom_1_comp_id CASCADE;
@@ -3098,7 +3098,7 @@ CREATE TABLE chem_link_angle (
 --
 -- (quoted from chem_link_bondType)
 -- Data items in the CHEM_LINK_BOND category record details about bonds in a link between components in the chemical structure. Example 1 - Engh & Huber parameters [Acta Cryst. (1991), A47, 392-400] as interpreted by J. P. Priestle (1995). Consistent Stereochemical Dictionaries for Refinement and Model Building. CCP4 Daresbury Study Weekend, DL-CONF-95-001, ISSN 1358-6254. Warrington: Daresbury Laboratory. <PDBx:chem_link_bondCategory> <PDBx:chem_link_bond atom_id_1="N" atom_id_2="CA" link_id="PEPTIDE"> <PDBx:atom_1_comp_id>1</PDBx:atom_1_comp_id> <PDBx:atom_2_comp_id>1</PDBx:atom_2_comp_id> <PDBx:value_dist>1.458</PDBx:value_dist> <PDBx:value_dist_esd>0.019</PDBx:value_dist_esd> </PDBx:chem_link_bond> <PDBx:chem_link_bond atom_id_1="CA" atom_id_2="C" link_id="PEPTIDE"> <PDBx:atom_1_comp_id>1</PDBx:atom_1_comp_id> <PDBx:atom_2_comp_id>1</PDBx:atom_2_comp_id> <PDBx:value_dist>1.525</PDBx:value_dist> <PDBx:value_dist_esd>0.021</PDBx:value_dist_esd> </PDBx:chem_link_bond> <PDBx:chem_link_bond atom_id_1="C" atom_id_2="N" link_id="PEPTIDE"> <PDBx:atom_1_comp_id>1</PDBx:atom_1_comp_id> <PDBx:atom_2_comp_id>2</PDBx:atom_2_comp_id> <PDBx:value_dist>1.329</PDBx:value_dist> <PDBx:value_dist_esd>0.014</PDBx:value_dist_esd> </PDBx:chem_link_bond> <PDBx:chem_link_bond atom_id_1="C" atom_id_2="O" link_id="PEPTIDE"> <PDBx:atom_1_comp_id>1</PDBx:atom_1_comp_id> <PDBx:atom_2_comp_id>1</PDBx:atom_2_comp_id> <PDBx:value_dist>1.231</PDBx:value_dist> <PDBx:value_dist_esd>0.020</PDBx:value_dist_esd> </PDBx:chem_link_bond> </PDBx:chem_link_bondCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_chem_link_bond_atom_1_comp_id CASCADE;
@@ -3128,7 +3128,7 @@ CREATE TABLE chem_link_bond (
 --
 -- (quoted from chem_link_chirType)
 -- Data items in the CHEM_LINK_CHIR category provide details about the chiral centres in a link between two chemical components. The atoms bonded to the chiral atom are specified in the CHEM_LINK_CHIR_ATOM category.
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_chem_link_chir_atom_comp_id CASCADE;
@@ -3159,7 +3159,7 @@ CREATE TABLE chem_link_chir (
 --
 -- (quoted from chem_link_chir_atomType)
 -- Data items in the CHEM_LINK_CHIR_ATOM category enumerate the atoms bonded to a chiral atom in a link between two chemical components.
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_chem_link_chir_atom_atom_comp_id CASCADE;
@@ -3179,7 +3179,7 @@ CREATE TABLE chem_link_chir_atom (
 --
 -- (quoted from chem_link_planeType)
 -- Data items in the CHEM_LINK_PLANE category provide identifiers for the planes in a link between two chemical components. The atoms in the plane are specified in the CHEM_LINK_PLANE_ATOM category.
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE chem_link_plane (
@@ -3196,7 +3196,7 @@ CREATE TABLE chem_link_plane (
 --
 -- (quoted from chem_link_plane_atomType)
 -- Data items in the CHEM_LINK_PLANE_ATOM category enumerate the atoms in a plane in a link between two chemical components.
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_chem_link_plane_atom_atom_comp_id CASCADE;
@@ -3214,7 +3214,7 @@ CREATE TABLE chem_link_plane_atom (
 --
 -- (quoted from chem_link_torType)
 -- Data items in the CHEM_LINK_TOR category record details about the torsion angles in a link between two chemical components. As torsion angles can have more than one target value, the target values are specified in the CHEM_LINK_TOR_VALUE category.
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_chem_link_tor_atom_1_comp_id CASCADE;
@@ -3245,7 +3245,7 @@ CREATE TABLE chem_link_tor (
 --
 -- (quoted from chem_link_tor_valueType)
 -- Data items in the CHEM_LINK_TOR_VALUE category record details about the target values for the torsion angles enumerated in the CHEM_LINK_TOR list. Target values may be specified as angles in degrees, as a distance between the first and fourth atoms, or both.
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE chem_link_tor_value (
@@ -3268,7 +3268,7 @@ CREATE TABLE chem_link_tor_value (
 --
 -- (quoted from chemicalType)
 -- Data items in the CHEMICAL category would not in general be used in a macromolecular CIF. See instead the ENTITY data items. Data items in the CHEMICAL category record details about the composition and chemical properties of the compounds. The formula data items must agree with those that specify the density, unit-cell and Z values. Example 1 - based on data set 9597gaus of Alyea, Ferguson & Kannan [Acta Cryst. (1996), C52, 765-767]. <PDBx:chemicalCategory> <PDBx:chemical entry_id="9597gaus"> <PDBx:name_systematic>trans-bis(tricyclohexylphosphine)tetracarbonylmolybdenum(0)</PDBx:name_systematic> </PDBx:chemical> </PDBx:chemicalCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_chemical_absolute_configuration CASCADE;
@@ -3314,7 +3314,7 @@ CREATE TABLE chemical (
 --
 -- (quoted from chemical_conn_bondType)
 -- Data items in the CHEMICAL_CONN_BOND category would not, in general, be used in a macromolecular CIF. See instead the ENTITY data items. Data items in the CHEMICAL_CONN_ATOM and CHEMICAL_CONN_BOND categories record details about the two-dimensional (2D) chemical structure of the molecular species. They allow a 2D chemical diagram to be reconstructed for use in a publication or in a database search for structural and substructural relationships. The CHEMICAL_CONN_BOND data items specify the connections between the atoms in the CHEMICAL_CONN_ATOM list and the nature of the chemical bond between these atoms. Example 1 - based on data set DPTD of Yamin, Suwandi, Fun, Sivakumar & bin Shawkataly [Acta Cryst. (1996), C52, 951-953]. <PDBx:chemical_conn_bondCategory> <PDBx:chemical_conn_bond atom_1="4" atom_2="1"> <PDBx:type>doub</PDBx:type> </PDBx:chemical_conn_bond> <PDBx:chemical_conn_bond atom_1="4" atom_2="3"> <PDBx:type>sing</PDBx:type> </PDBx:chemical_conn_bond> <PDBx:chemical_conn_bond atom_1="4" atom_2="2"> <PDBx:type>sing</PDBx:type> </PDBx:chemical_conn_bond> <PDBx:chemical_conn_bond atom_1="5" atom_2="3"> <PDBx:type>sing</PDBx:type> </PDBx:chemical_conn_bond> <PDBx:chemical_conn_bond atom_1="6" atom_2="5"> <PDBx:type>sing</PDBx:type> </PDBx:chemical_conn_bond> <PDBx:chemical_conn_bond atom_1="7" atom_2="6"> <PDBx:type>sing</PDBx:type> </PDBx:chemical_conn_bond> <PDBx:chemical_conn_bond atom_1="8" atom_2="7"> <PDBx:type>sing</PDBx:type> </PDBx:chemical_conn_bond> <PDBx:chemical_conn_bond atom_1="8" atom_2="3"> <PDBx:type>sing</PDBx:type> </PDBx:chemical_conn_bond> <PDBx:chemical_conn_bond atom_1="10" atom_2="2"> <PDBx:type>sing</PDBx:type> </PDBx:chemical_conn_bond> <PDBx:chemical_conn_bond atom_1="12" atom_2="9"> <PDBx:type>doub</PDBx:type> </PDBx:chemical_conn_bond> <PDBx:chemical_conn_bond atom_1="12" atom_2="11"> <PDBx:type>sing</PDBx:type> </PDBx:chemical_conn_bond> <PDBx:chemical_conn_bond atom_1="12" atom_2="10"> <PDBx:type>sing</PDBx:type> </PDBx:chemical_conn_bond> <PDBx:chemical_conn_bond atom_1="13" atom_2="11"> <PDBx:type>sing</PDBx:type> </PDBx:chemical_conn_bond> <PDBx:chemical_conn_bond atom_1="14" atom_2="13"> <PDBx:type>sing</PDBx:type> </PDBx:chemical_conn_bond> <PDBx:chemical_conn_bond atom_1="15" atom_2="14"> <PDBx:type>sing</PDBx:type> </PDBx:chemical_conn_bond> <PDBx:chemical_conn_bond atom_1="16" atom_2="15"> <PDBx:type>sing</PDBx:type> </PDBx:chemical_conn_bond> <PDBx:chemical_conn_bond atom_1="16" atom_2="11"> <PDBx:type>sing</PDBx:type> </PDBx:chemical_conn_bond> <PDBx:chemical_conn_bond atom_1="17" atom_2="5"> <PDBx:type>sing</PDBx:type> </PDBx:chemical_conn_bond> <PDBx:chemical_conn_bond atom_1="18" atom_2="5"> <PDBx:type>sing</PDBx:type> </PDBx:chemical_conn_bond> <PDBx:chemical_conn_bond atom_1="19" atom_2="6"> <PDBx:type>sing</PDBx:type> </PDBx:chemical_conn_bond> <PDBx:chemical_conn_bond atom_1="20" atom_2="6"> <PDBx:type>sing</PDBx:type> </PDBx:chemical_conn_bond> <PDBx:chemical_conn_bond atom_1="21" atom_2="7"> <PDBx:type>sing</PDBx:type> </PDBx:chemical_conn_bond> <PDBx:chemical_conn_bond atom_1="22" atom_2="7"> <PDBx:type>sing</PDBx:type> </PDBx:chemical_conn_bond> <PDBx:chemical_conn_bond atom_1="23" atom_2="8"> <PDBx:type>sing</PDBx:type> </PDBx:chemical_conn_bond> <PDBx:chemical_conn_bond atom_1="24" atom_2="8"> <PDBx:type>sing</PDBx:type> </PDBx:chemical_conn_bond> <PDBx:chemical_conn_bond atom_1="25" atom_2="13"> <PDBx:type>sing</PDBx:type> </PDBx:chemical_conn_bond> <PDBx:chemical_conn_bond atom_1="26" atom_2="13"> <PDBx:type>sing</PDBx:type> </PDBx:chemical_conn_bond> <PDBx:chemical_conn_bond atom_1="27" atom_2="14"> <PDBx:type>sing</PDBx:type> </PDBx:chemical_conn_bond> <PDBx:chemical_conn_bond atom_1="28" atom_2="14"> <PDBx:type>sing</PDBx:type> </PDBx:chemical_conn_bond> <PDBx:chemical_conn_bond atom_1="29" atom_2="15"> <PDBx:type>sing</PDBx:type> </PDBx:chemical_conn_bond> <PDBx:chemical_conn_bond atom_1="30" atom_2="15"> <PDBx:type>sing</PDBx:type> </PDBx:chemical_conn_bond> <PDBx:chemical_conn_bond atom_1="31" atom_2="16"> <PDBx:type>sing</PDBx:type> </PDBx:chemical_conn_bond> <PDBx:chemical_conn_bond atom_1="32" atom_2="16"> <PDBx:type>sing</PDBx:type> </PDBx:chemical_conn_bond> </PDBx:chemical_conn_bondCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_chemical_conn_bond_type CASCADE;
@@ -3332,7 +3332,7 @@ CREATE TABLE chemical_conn_bond (
 --
 -- (quoted from chemical_formulaType)
 -- Data items in the CHEMICAL_FORMULA category would not, in general, be used in a macromolecular CIF. See instead the ENTITY data items. Data items in the CHEMICAL_FORMULA category specify the composition and chemical properties of the compound. The formula data items must agree with those that specify the density, unit-cell and Z values. The following rules apply to the construction of the data items _chemical_formula.analytical, _chemical_formula.structural and attribute sum in category chemical_formula. For the data item attribute moiety in category chemical_formula, the formula construction is broken up into residues or moieties, i.e. groups of atoms that form a molecular unit or molecular ion. The rules given below apply within each moiety but different requirements apply to the way that moieties are connected (see attribute moiety). in category chemical_formula (1) Only recognized element symbols may be used. (2) Each element symbol is followed by a 'count' number. A count of '1' may be omitted. (3) A space or parenthesis must separate each cluster of (element symbol + count). (4) Where a group of elements is enclosed in parentheses, the multiplier for the group must follow the closing parenthesis. That is, all element and group multipliers are assumed to be printed as subscripted numbers. (An exception to this rule exists for attribute moiety in category chemical_formula formulae where pre- and post-multipliers are permitted for molecular units.) (5) Unless the elements are ordered in a manner that corresponds to their chemical structure, as in attribute structural in category chemical_formula, the order of the elements within any group or moiety should be: C, then H, then the other elements in alphabetical order of their symbol. This is the 'Hill' system used by Chemical Abstracts. This ordering is used in _chemical_formula.moiety and _chemical_formula.sum. Example 2 - based on data set TOZ of Willis, Beckwith & Tozer [(1991). Acta Cryst. C47, 2276-2277]. <PDBx:chemical_formulaCategory> <PDBx:chemical_formula entry_id="TOZ"> <PDBx:moiety>C18 H25 N O3</PDBx:moiety> <PDBx:sum>C18 H25 N O3</PDBx:sum> <PDBx:weight>303.40</PDBx:weight> </PDBx:chemical_formula> </PDBx:chemical_formulaCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE chemical_formula (
@@ -3354,7 +3354,7 @@ CREATE TABLE chemical_formula (
 --
 -- (quoted from citation_authorType)
 -- Data items in the CITATION_AUTHOR category record details about the authors associated with the citations in the CITATION list. Example 1 - based on PDB entry 5HVP and laboratory records for the structure corresponding to PDB entry 5HVP. <PDBx:citation_authorCategory> <PDBx:citation_author citation_id="primary" name="Fitzgerald, P.M.D." ordinal="1"></PDBx:citation_author> <PDBx:citation_author citation_id="primary" name="McKeever, B.M." ordinal="2"></PDBx:citation_author> <PDBx:citation_author citation_id="primary" name="Van Middlesworth, J.F." ordinal="3"></PDBx:citation_author> <PDBx:citation_author citation_id="primary" name="Springer, J.P." ordinal="4"></PDBx:citation_author> <PDBx:citation_author citation_id="primary" name="Heimbach, J.C." ordinal="5"></PDBx:citation_author> <PDBx:citation_author citation_id="primary" name="Leu, C.-T." ordinal="6"></PDBx:citation_author> <PDBx:citation_author citation_id="primary" name="Herber, W.K." ordinal="7"></PDBx:citation_author> <PDBx:citation_author citation_id="primary" name="Dixon, R.A.F." ordinal="8"></PDBx:citation_author> <PDBx:citation_author citation_id="primary" name="Darke, P.L." ordinal="9"></PDBx:citation_author> <PDBx:citation_author citation_id="2" name="Navia, M.A." ordinal="1"></PDBx:citation_author> <PDBx:citation_author citation_id="2" name="Fitzgerald, P.M.D." ordinal="2"></PDBx:citation_author> <PDBx:citation_author citation_id="2" name="McKeever, B.M." ordinal="3"></PDBx:citation_author> <PDBx:citation_author citation_id="2" name="Leu, C.-T." ordinal="4"></PDBx:citation_author> <PDBx:citation_author citation_id="2" name="Heimbach, J.C." ordinal="5"></PDBx:citation_author> <PDBx:citation_author citation_id="2" name="Herber, W.K." ordinal="6"></PDBx:citation_author> <PDBx:citation_author citation_id="2" name="Sigal, I.S." ordinal="7"></PDBx:citation_author> <PDBx:citation_author citation_id="2" name="Darke, P.L." ordinal="8"></PDBx:citation_author> <PDBx:citation_author citation_id="2" name="Springer, J.P." ordinal="9"></PDBx:citation_author> <PDBx:citation_author citation_id="3" name="McKeever, B.M." ordinal="1"></PDBx:citation_author> <PDBx:citation_author citation_id="3" name="Navia, M.A." ordinal="2"></PDBx:citation_author> <PDBx:citation_author citation_id="3" name="Fitzgerald, P.M.D." ordinal="3"></PDBx:citation_author> <PDBx:citation_author citation_id="3" name="Springer, J.P." ordinal="4"></PDBx:citation_author> <PDBx:citation_author citation_id="3" name="Leu, C.-T." ordinal="5"></PDBx:citation_author> <PDBx:citation_author citation_id="3" name="Heimbach, J.C." ordinal="6"></PDBx:citation_author> <PDBx:citation_author citation_id="3" name="Herber, W.K." ordinal="7"></PDBx:citation_author> <PDBx:citation_author citation_id="3" name="Sigal, I.S." ordinal="8"></PDBx:citation_author> <PDBx:citation_author citation_id="3" name="Darke, P.L." ordinal="9"></PDBx:citation_author> <PDBx:citation_author citation_id="4" name="Darke, P.L." ordinal="1"></PDBx:citation_author> <PDBx:citation_author citation_id="4" name="Leu, C.-T." ordinal="2"></PDBx:citation_author> <PDBx:citation_author citation_id="4" name="Davis, L.J." ordinal="3"></PDBx:citation_author> <PDBx:citation_author citation_id="4" name="Heimbach, J.C." ordinal="4"></PDBx:citation_author> <PDBx:citation_author citation_id="4" name="Diehl, R.E." ordinal="5"></PDBx:citation_author> <PDBx:citation_author citation_id="4" name="Hill, W.S." ordinal="6"></PDBx:citation_author> <PDBx:citation_author citation_id="4" name="Dixon, R.A.F." ordinal="7"></PDBx:citation_author> <PDBx:citation_author citation_id="4" name="Sigal, I.S." ordinal="8"></PDBx:citation_author> </PDBx:citation_authorCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE citation_author (
@@ -3372,7 +3372,7 @@ CREATE TABLE citation_author (
 --
 -- (quoted from citation_editorType)
 -- Data items in the CITATION_EDITOR category record details about the editors associated with the books or book chapters cited in the CITATION list. Example 1 - hypothetical example. <PDBx:citation_editorCategory> <PDBx:citation_editor citation_id="5" name="McKeever, B.M."></PDBx:citation_editor> <PDBx:citation_editor citation_id="5" name="Navia, M.A."></PDBx:citation_editor> <PDBx:citation_editor citation_id="5" name="Fitzgerald, P.M.D."></PDBx:citation_editor> <PDBx:citation_editor citation_id="5" name="Springer, J.P."></PDBx:citation_editor> </PDBx:citation_editorCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE citation_editor (
@@ -3388,7 +3388,7 @@ CREATE TABLE citation_editor (
 --
 -- (quoted from computingType)
 -- Data items in the COMPUTING category record details about the computer programs used in the crystal structure analysis. Data items in this category would not, in general, be used in a macromolecular CIF. The category SOFTWARE, which allows a more detailed description of computer programs and their attributes to be given, would be used instead. Example 1 - Rodr\'iguez-Romera, Ruiz-P\'erez & Solans [Acta Cryst. (1996), C52, 1415-1417]. <PDBx:computingCategory> <PDBx:computing entry_id="1ABC"> <PDBx:cell_refinement>CAD-4 (Enraf-Nonius, 1989)</PDBx:cell_refinement> <PDBx:data_collection>CAD-4 (Enraf-Nonius, 1989)</PDBx:data_collection> <PDBx:data_reduction>CFEO (Solans, 1978)</PDBx:data_reduction> <PDBx:molecular_graphics>ORTEPII (Johnson, 1976)</PDBx:molecular_graphics> <PDBx:publication_material>PARST (Nardelli, 1983)</PDBx:publication_material> <PDBx:structure_refinement>SHELXL93 (Sheldrick, 1993)</PDBx:structure_refinement> <PDBx:structure_solution>SHELXS86 (Sheldrick, 1990)</PDBx:structure_solution> </PDBx:computing> </PDBx:computingCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE computing (
@@ -3411,7 +3411,7 @@ CREATE TABLE computing (
 --
 -- (quoted from databaseType)
 -- Data items in the DATABASE category have been superseded by data items in the DATABASE_2 category. They are included here only for compliance with older CIFs.
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE database (
@@ -3440,7 +3440,7 @@ CREATE TABLE database (
 --
 -- (quoted from database_2Type)
 -- Data items in the DATABASE_2 category record details about the database identifiers of the data block. These data items are assigned by database managers and should only appear in a data block if they originate from that source. The name of this category, DATABASE_2, arose because the category name DATABASE was already in use in the core CIF dictionary, but was used differently from the way it needed to be used in the mmCIF dictionary. Since CIF data names cannot be changed once they have been adopted, a new category had to be created. Example 1 - based on PDB entry 5HVP and laboratory records for the structure corresponding to PDB entry 5HVP. <PDBx:database_2Category> <PDBx:database_2 database_code="5HVP" database_id="PDB"></PDBx:database_2> </PDBx:database_2Category>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_database_2_database_id CASCADE;
@@ -3457,7 +3457,7 @@ CREATE TABLE database_2 (
 --
 -- (quoted from database_PDB_caveatType)
 -- Data items in the DATABASE_PDB_CAVEAT category record details about features of the data block flagged as 'caveats' by the Protein Data Bank (PDB). These data items are included only for consistency with PDB format files. They should appear in a data block only if that data block was created by reformatting a PDB format file. Example 1 - hypothetical example. <PDBx:database_PDB_caveatCategory> <PDBx:database_PDB_caveat id="1"> <PDBx:text> THE CRYSTAL TRANSFORMATION IS IN ERROR BUT IS</PDBx:text> </PDBx:database_PDB_caveat> <PDBx:database_PDB_caveat id="2"> <PDBx:text> UNCORRECTABLE AT THIS TIME</PDBx:text> </PDBx:database_PDB_caveat> </PDBx:database_PDB_caveatCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE "database_PDB_caveat" (
@@ -3471,7 +3471,7 @@ CREATE TABLE "database_PDB_caveat" (
 --
 -- (quoted from database_PDB_matrixType)
 -- The DATABASE_PDB_MATRIX category provides placeholders for transformation matrices and vectors used by the Protein Data Bank (PDB). These data items are included only for consistency with older PDB format files. They should appear in a data block only if that data block was created by reformatting a PDB format file.
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE "database_PDB_matrix" (
@@ -3508,7 +3508,7 @@ CREATE TABLE "database_PDB_matrix" (
 --
 -- (quoted from database_PDB_remarkType)
 -- Data items in the DATABASE_PDB_REMARK category record details about the data block as archived by the Protein Data Bank (PDB). Some data appearing in PDB REMARK records can be algorithmically extracted into the appropriate data items in the data block. These data items are included only for consistency with older PDB format files. They should appear in a data block only if that data block was created by reformatting a PDB format file. NOTE: These remark records in this category are not uniformly annotated by the PDB and may not be consistent with nomenclature or labeling used in the entry. Example 1 - based on PDB entry 5HVP and laboratory records for the structure corresponding to PDB entry 5HVP. <PDBx:database_PDB_remarkCategory> <PDBx:database_PDB_remark id="3"> <PDBx:text> REFINEMENT. BY THE RESTRAINED LEAST-SQUARES PROCEDURE OF J. KONNERT AND W. HENDRICKSON (PROGRAM *PROLSQ*). THE R VALUE IS 0.176 FOR 12901 REFLECTIONS IN THE RESOLUTION RANGE 8.0 TO 2.0 ANGSTROMS WITH I .GT. SIGMA(I). RMS DEVIATIONS FROM IDEAL VALUES (THE VALUES OF SIGMA, IN PARENTHESES, ARE THE INPUT ESTIMATED STANDARD DEVIATIONS THAT DETERMINE THE RELATIVE WEIGHTS OF THE CORRESPONDING RESTRAINTS) DISTANCE RESTRAINTS (ANGSTROMS) BOND DISTANCE 0.018(0.020) ANGLE DISTANCE 0.038(0.030) PLANAR 1-4 DISTANCE 0.043(0.040) PLANE RESTRAINT (ANGSTROMS) 0.015(0.020) CHIRAL-CENTER RESTRAINT (ANGSTROMS**3) 0.177(0.150) NON-BONDED CONTACT RESTRAINTS (ANGSTROMS) SINGLE TORSION CONTACT 0.216(0.500) MULTIPLE TORSION CONTACT 0.207(0.500) POSSIBLE HYDROGEN BOND 0.245(0.500) CONFORMATIONAL TORSION ANGLE RESTRAINT (DEGREES) PLANAR (OMEGA) 2.6(3.0) STAGGERED 17.4(15.0) ORTHONORMAL 18.1(20.0)</PDBx:text> </PDBx:database_PDB_remark> <PDBx:database_PDB_remark id="4"> <PDBx:text> THE TWO CHAINS OF THE DIMERIC ENZYME HAS BEEN ASSIGNED THE THE CHAIN INDICATORS *A* AND *B*.</PDBx:text> </PDBx:database_PDB_remark> </PDBx:database_PDB_remarkCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE "database_PDB_remark" (
@@ -3522,7 +3522,7 @@ CREATE TABLE "database_PDB_remark" (
 --
 -- (quoted from database_PDB_rev_recordType)
 -- Data items in the DATABASE_PDB_REV_RECORD category record details about specific record types that were changed in a given revision of a PDB entry. These data items are assigned by the PDB database managers and should only appear in a data block if they originate from that source. Example 1 - hypothetical example. <PDBx:database_PDB_rev_recordCategory> <PDBx:database_PDB_rev_record rev_num="1" type="CONECT"> <PDBx:details> Error fix - incorrect connection between atoms 2312 and 2317</PDBx:details> </PDBx:database_PDB_rev_record> <PDBx:database_PDB_rev_record rev_num="2" type="MATRIX"> <PDBx:details>For consistency with 1995-08-04 style-guide</PDBx:details> </PDBx:database_PDB_rev_record> <PDBx:database_PDB_rev_record rev_num="3" type="ORIGX"> <PDBx:details>Based on new data from author</PDBx:details> </PDBx:database_PDB_rev_record> </PDBx:database_PDB_rev_recordCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE "database_PDB_rev_record" (
@@ -3538,7 +3538,7 @@ CREATE TABLE "database_PDB_rev_record" (
 --
 -- (quoted from database_PDB_tvectType)
 -- The DATABASE_PDB_TVECT category provides placeholders for the TVECT matrices and vectors used by the Protein Data Bank (PDB). These data items are included only for consistency with older PDB format files. They should appear in a data block only if the data block was created by reformatting a PDB format file.
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE "database_PDB_tvect" (
@@ -3555,7 +3555,7 @@ CREATE TABLE "database_PDB_tvect" (
 --
 -- (quoted from diffrn_attenuatorType)
 -- Data items in the DIFFRN_ATTENUATOR category record details about the diffraction attenuator scales employed. Example 2 - based on data set TOZ of Willis, Beckwith & Tozer [Acta Cryst. (1991), C47, 2276-2277]. <PDBx:diffrn_attenuatorCategory> <PDBx:diffrn_attenuator code="1"> <PDBx:scale>16.976</PDBx:scale> </PDBx:diffrn_attenuator> </PDBx:diffrn_attenuatorCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE diffrn_attenuator (
@@ -3571,7 +3571,7 @@ CREATE TABLE diffrn_attenuator (
 --
 -- (quoted from diffrn_detectorType)
 -- Data items in the DIFFRN_DETECTOR category describe the detector used to measure the scattered radiation, including any analyser and post-sample collimation. Example 1 - based on PDB entry 5HVP and laboratory records for the structure corresponding to PDB entry 5HVP. <PDBx:diffrn_detectorCategory> <PDBx:diffrn_detector diffrn_id="d1"> <PDBx:detector>multiwire</PDBx:detector> <PDBx:type>Siemens</PDBx:type> </PDBx:diffrn_detector> </PDBx:diffrn_detectorCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE diffrn_detector (
@@ -3597,7 +3597,7 @@ CREATE TABLE diffrn_detector (
 --
 -- (quoted from diffrn_measurementType)
 -- Data items in the DIFFRN_MEASUREMENT category record details about the device used to orient and/or position the crystal during data measurement and the manner in which the diffraction data were measured. Example 1 - based on PDB entry 5HVP and laboratory records for the structure corresponding to PDB entry 5HVP. <PDBx:diffrn_measurementCategory> <PDBx:diffrn_measurement diffrn_id="d1"> <PDBx:details> 440 frames, 0.20 degrees, 150 sec, detector distance 12 cm, detector angle 22.5 degrees</PDBx:details> <PDBx:device>3-circle camera</PDBx:device> <PDBx:device_details>none</PDBx:device_details> <PDBx:device_type>Supper model x</PDBx:device_type> <PDBx:method>omega scan</PDBx:method> </PDBx:diffrn_measurement> </PDBx:diffrn_measurementCategory> Example 2 - based on data set TOZ of Willis, Beckwith & Tozer [Acta Cryst. (1991), C47, 2276-2277]. <PDBx:diffrn_measurementCategory> <PDBx:diffrn_measurement diffrn_id="s1"> <PDBx:device_type>Philips PW1100/20 diffractometer</PDBx:device_type> <PDBx:method>\q/2\q</PDBx:method> </PDBx:diffrn_measurement> </PDBx:diffrn_measurementCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE diffrn_measurement (
@@ -3618,7 +3618,7 @@ CREATE TABLE diffrn_measurement (
 --
 -- (quoted from diffrn_orient_matrixType)
 -- Data items in the DIFFRN_ORIENT_MATRIX category record details about the orientation matrix used in the measurement of the diffraction data. Example 1 - based on CAD-4 diffractometer data obtained for Yb(S-C5H4N)2(THF)4. <PDBx:diffrn_orient_matrixCategory> <PDBx:diffrn_orient_matrix diffrn_id="set1"> <PDBx:UB11>-0.071479</PDBx:UB11> <PDBx:UB12>0.020208</PDBx:UB12> <PDBx:UB13>0.039076</PDBx:UB13> <PDBx:UB21>0.035372</PDBx:UB21> <PDBx:UB22>0.056209</PDBx:UB22> <PDBx:UB23>0.078324</PDBx:UB23> <PDBx:UB31>-0.007470</PDBx:UB31> <PDBx:UB32>0.067854</PDBx:UB32> <PDBx:UB33>-0.017832</PDBx:UB33> <PDBx:type> reciprocal axis matrix, multiplies hkl vector to generate diffractometer xyz vector and diffractometer angles</PDBx:type> </PDBx:diffrn_orient_matrix> </PDBx:diffrn_orient_matrixCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE diffrn_orient_matrix (
@@ -3641,7 +3641,7 @@ CREATE TABLE diffrn_orient_matrix (
 --
 -- (quoted from diffrn_orient_reflnType)
 -- Data items in the DIFFRN_ORIENT_REFLN category record details about the reflections that define the orientation matrix used in the measurement of the diffraction intensities. Example 1 - based on CAD-4 diffractometer data obtained for Yb(S-C5H4N)2(THF)4. <PDBx:diffrn_orient_reflnCategory> <PDBx:diffrn_orient_refln diffrn_id="myset1" index_h="2" index_k="0" index_l="2"> <PDBx:angle_chi>-28.45</PDBx:angle_chi> <PDBx:angle_kappa>-11.32</PDBx:angle_kappa> <PDBx:angle_omega>5.33</PDBx:angle_omega> <PDBx:angle_phi>101.78</PDBx:angle_phi> <PDBx:angle_psi>0.00</PDBx:angle_psi> <PDBx:angle_theta>10.66</PDBx:angle_theta> </PDBx:diffrn_orient_refln> </PDBx:diffrn_orient_reflnCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE diffrn_orient_refln (
@@ -3672,7 +3672,7 @@ CREATE TABLE diffrn_orient_refln (
 --
 -- (quoted from diffrn_radiationType)
 -- Data items in the DIFFRN_RADIATION category describe the radiation used in measuring the diffraction intensities, its collimation and monochromatization before the sample. Post-sample treatment of the beam is described by data items in the DIFFRN_DETECTOR category. Example 1 - based on PDB entry 5HVP and laboratory records for the structure corresponding to PDB entry 5HVP. <PDBx:diffrn_radiationCategory> <PDBx:diffrn_radiation diffrn_id="set1"> <PDBx:collimation>0.3 mm double pinhole</PDBx:collimation> <PDBx:monochromator>graphite</PDBx:monochromator> <PDBx:type>Cu K\a</PDBx:type> <PDBx:wavelength_id>1</PDBx:wavelength_id> </PDBx:diffrn_radiation> </PDBx:diffrn_radiationCategory> Example 2 - based on data set TOZ of Willis, Beckwith & Tozer [Acta Cryst. (1991), C47, 2276-2277]. <PDBx:diffrn_radiationCategory> <PDBx:diffrn_radiation diffrn_id="set1"> <PDBx:monochromator>graphite</PDBx:monochromator> <PDBx:type>Cu K\a</PDBx:type> <PDBx:wavelength_id>1</PDBx:wavelength_id> </PDBx:diffrn_radiation> </PDBx:diffrn_radiationCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_diffrn_radiation_pdbx_monochromatic_or_laue_m_l CASCADE;
@@ -3713,7 +3713,7 @@ CREATE TABLE diffrn_radiation (
 --
 -- (quoted from diffrn_radiation_wavelengthType)
 -- Data items in the DIFFRN_RADIATION_WAVELENGTH category describe the wavelength of the radiation used to measure the diffraction intensities. Items may be looped to identify and assign weights to distinct components of a polychromatic beam. Example 1 - based on PDB entry 5HVP and laboratory records for the structure corresponding to PDB entry 5HVP. <PDBx:diffrn_radiation_wavelengthCategory> <PDBx:diffrn_radiation_wavelength id="1"> <PDBx:wavelength>1.54</PDBx:wavelength> <PDBx:wt>1.0</PDBx:wt> </PDBx:diffrn_radiation_wavelength> </PDBx:diffrn_radiation_wavelengthCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE diffrn_radiation_wavelength (
@@ -3731,7 +3731,7 @@ CREATE TABLE diffrn_radiation_wavelength (
 --
 -- (quoted from diffrn_reflnType)
 -- Data items in the DIFFRN_REFLN category record details about the intensities in the diffraction data set identified by attribute diffrn_id. in category diffrn_refln The DIFFRN_REFLN data items refer to individual intensity measurements and must be included in looped lists. The DIFFRN_REFLNS data items specify the parameters that apply to all intensity measurements in the particular diffraction data set identified by attribute diffrn_id in category diffrn_reflns. Example 1 - based on CAD-4 diffractometer data obtained for Yb(S-C5H4N)2(THF)4 for data set 'set1' reflection 1102. <PDBx:diffrn_reflnCategory> <PDBx:diffrn_refln diffrn_id="set1" id="1102"> <PDBx:angle_chi>32.21</PDBx:angle_chi> <PDBx:angle_kappa>20.12</PDBx:angle_kappa> <PDBx:angle_omega>11.54</PDBx:angle_omega> <PDBx:angle_phi>176.02</PDBx:angle_phi> <PDBx:angle_psi>0.00</PDBx:angle_psi> <PDBx:angle_theta>23.08</PDBx:angle_theta> <PDBx:attenuator_code>Ni.005</PDBx:attenuator_code> <PDBx:counts_bg_1>22</PDBx:counts_bg_1> <PDBx:counts_bg_2>25</PDBx:counts_bg_2> <PDBx:counts_net>3450</PDBx:counts_net> <PDBx:counts_peak>321</PDBx:counts_peak> <PDBx:counts_total>3499</PDBx:counts_total> <PDBx:detect_slit_horiz>0.04</PDBx:detect_slit_horiz> <PDBx:detect_slit_vert>0.02</PDBx:detect_slit_vert> <PDBx:elapsed_time>1.00</PDBx:elapsed_time> <PDBx:index_h>4</PDBx:index_h> <PDBx:index_k>0</PDBx:index_k> <PDBx:index_l>2</PDBx:index_l> <PDBx:intensity_net>202.56</PDBx:intensity_net> <PDBx:intensity_sigma>2.18</PDBx:intensity_sigma> <PDBx:scale_group_code>A24</PDBx:scale_group_code> <PDBx:scan_mode>om</PDBx:scan_mode> <PDBx:scan_mode_backgd>mo</PDBx:scan_mode_backgd> <PDBx:scan_rate>1.2</PDBx:scan_rate> <PDBx:scan_time_backgd>900.00</PDBx:scan_time_backgd> <PDBx:scan_width>1.0</PDBx:scan_width> <PDBx:sint_over_lambda>0.25426</PDBx:sint_over_lambda> <PDBx:standard_code>1</PDBx:standard_code> <PDBx:wavelength>1.54184</PDBx:wavelength> <PDBx:wavelength_id>Cu1fixed</PDBx:wavelength_id> </PDBx:diffrn_refln> </PDBx:diffrn_reflnCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_diffrn_refln_scan_mode CASCADE;
@@ -3806,7 +3806,7 @@ CREATE TABLE diffrn_refln (
 --
 -- (quoted from diffrn_reflnsType)
 -- Data items in the DIFFRN_REFLNS category record details about the set of intensities measured in the diffraction experiment. The DIFFRN_REFLN data items refer to individual intensity measurements and must be included in looped lists. The DIFFRN_REFLNS data items specify the parameters that apply to all intensity measurements in a diffraction data set.
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE diffrn_reflns (
@@ -3859,7 +3859,7 @@ CREATE TABLE diffrn_reflns (
 --
 -- (quoted from diffrn_reflns_classType)
 -- Data items in the DIFFRN_REFLNS_CLASS category record details about the classes of reflections measured in the diffraction experiment. Example 1 - example corresponding to the one-dimensional incommensurately modulated structure of K~2~SeO~4~. Each reflection class is defined by the number m=sum|m~i~|, where the m~i~ are the integer coefficients that, in addition to h,k,l, index the corresponding diffraction vector in the basis defined for the reciprocal lattice. <PDBx:diffrn_reflns_classCategory> <PDBx:diffrn_reflns_class code="Main"> <PDBx:av_R_eq>0.015</PDBx:av_R_eq> <PDBx:d_res_high>0.551</PDBx:d_res_high> <PDBx:d_res_low>6.136</PDBx:d_res_low> <PDBx:description>m=0; main reflections</PDBx:description> <PDBx:number>1580</PDBx:number> </PDBx:diffrn_reflns_class> <PDBx:diffrn_reflns_class code="Sat1"> <PDBx:av_R_eq>0.010</PDBx:av_R_eq> <PDBx:d_res_high>0.551</PDBx:d_res_high> <PDBx:d_res_low>6.136</PDBx:d_res_low> <PDBx:description>m=1; first-order satellites</PDBx:description> <PDBx:number>1045</PDBx:number> </PDBx:diffrn_reflns_class> </PDBx:diffrn_reflns_classCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE diffrn_reflns_class (
@@ -3885,7 +3885,7 @@ CREATE TABLE diffrn_reflns_class (
 --
 -- (quoted from diffrn_sourceType)
 -- Data items in the DIFFRN_SOURCE category record details of the source of radiation used in the diffraction experiment. Example 1 - based on PDB entry 5HVP and laboratory records for the structure corresponding to PDB entry 5HVP. <PDBx:diffrn_sourceCategory> <PDBx:diffrn_source diffrn_id="s1"> <PDBx:current>180</PDBx:current> <PDBx:power>50</PDBx:power> <PDBx:size>8mm x 0.4 mm broad-focus</PDBx:size> <PDBx:source>rotating anode</PDBx:source> <PDBx:type>Rigaku RU-200</PDBx:type> </PDBx:diffrn_source> </PDBx:diffrn_sourceCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_diffrn_source_target CASCADE;
@@ -3920,7 +3920,7 @@ CREATE TABLE diffrn_source (
 --
 -- (quoted from diffrn_standard_reflnType)
 -- Data items in the DIFFRN_STANDARD_REFLN category record details about the reflections treated as standards during the measurement of a set of diffraction intensities. Note that these are the individual standard reflections, not the results of the analysis of the standard reflections. Example 2 - based on data set TOZ of Willis, Beckwith & Tozer [Acta Cryst. (1991), C47, 2276-2277]. <PDBx:diffrn_standard_reflnCategory> <PDBx:diffrn_standard_refln code="1" diffrn_id="s1"> <PDBx:index_h>3</PDBx:index_h> <PDBx:index_k>2</PDBx:index_k> <PDBx:index_l>4</PDBx:index_l> </PDBx:diffrn_standard_refln> <PDBx:diffrn_standard_refln code="1" diffrn_id="s1"> <PDBx:index_h>1</PDBx:index_h> <PDBx:index_k>9</PDBx:index_k> <PDBx:index_l>1</PDBx:index_l> </PDBx:diffrn_standard_refln> <PDBx:diffrn_standard_refln code="1" diffrn_id="s1"> <PDBx:index_h>3</PDBx:index_h> <PDBx:index_k>0</PDBx:index_k> <PDBx:index_l>10</PDBx:index_l> </PDBx:diffrn_standard_refln> </PDBx:diffrn_standard_reflnCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE diffrn_standard_refln (
@@ -3938,7 +3938,7 @@ CREATE TABLE diffrn_standard_refln (
 --
 -- (quoted from diffrn_standardsType)
 -- Data items in the DIFFRN_STANDARDS category record details about the set of standard reflections used to monitor intensity stability during the measurement of diffraction intensities. Note that these records describe properties common to the set of standard reflections, not the standard reflections themselves. Example 1 - based on data set TOZ of Willis, Beckwith & Tozer [Acta Cryst. (1991), C47, 2276-2277]. <PDBx:diffrn_standardsCategory> <PDBx:diffrn_standards diffrn_id="s1"> <PDBx:decay_>0</PDBx:decay_> <PDBx:interval_time>120</PDBx:interval_time> <PDBx:number>3</PDBx:number> </PDBx:diffrn_standards> </PDBx:diffrn_standardsCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE diffrn_standards (
@@ -3963,7 +3963,7 @@ CREATE TABLE diffrn_standards (
 --
 -- (quoted from em_2d_crystal_entityType)
 -- Data items in the EM_SYMMETRY_2DX category record 2D crystal symmetry parameters utilized in a 3DEM reconstruction.
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_em_2d_crystal_entity_space_group_name_H_M CASCADE;
@@ -3993,7 +3993,7 @@ CREATE TABLE em_2d_crystal_entity (
 --
 -- (quoted from em_2d_projection_selectionType)
 -- Data items in the EM_2D_PROJECTION_SELECTION category record details of images from scanned micrographs and the number of particles selected from a scanned set of micrographs. Example 1 <PDBx:em_2d_projection_selectionCategory> <PDBx:em_2d_projection_selection entry_id="1ABC"> <PDBx:details xsi:nil="true" /> <PDBx:method>INTERACTIVE</PDBx:method> <PDBx:num_particles>52346</PDBx:num_particles> <PDBx:software_name>EMAN2 BOXER</PDBx:software_name> </PDBx:em_2d_projection_selection> </PDBx:em_2d_projection_selectionCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE em_2d_projection_selection (
@@ -4012,7 +4012,7 @@ CREATE TABLE em_2d_projection_selection (
 --
 -- (quoted from em_3d_crystal_entityType)
 -- Data items in the EM_SYMMETRY_3DX category record 3D crystal symmetry parameters utilized in 3DEM reconstruction averaging.
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE em_3d_crystal_entity (
@@ -4046,7 +4046,7 @@ CREATE TABLE em_3d_crystal_entity (
 --
 -- (quoted from em_3d_fittingType)
 -- Data items in the 3D_FITTING category record details of the method of fitting atomic coordinates from a PDB file into a 3d-em volume map file Example 1 - based on PDB entry 1DYL and laboratory records for the structure corresponding to PDB entry 1DYL <PDBx:em_3d_fittingCategory> <PDBx:em_3d_fitting entry_id="1DYL" id="1"> <PDBx:details> THE CRYSTAL STRUCTURE OF THE CAPSID PROTEIN FROM CHOI ET AL (1997) PROTEINS 3 27:345-359 (SUBUNIT A OF PDB FILE 1VCQ) WAS PLACED INTO THE CRYO-EM DENSITY MAP. THE CAPSID PROTEIN WAS FIRST MANUALLY POSITIONED INTO THE CRYO-EM DENSITY CORRESPONDING TO POSITIONS OF THE FOUR INDEPENDENT MONOMER DENSITIES BETWEEN THE INNER LEAFLET OF THE BILAYER AND THE RNA. THESE POSITIONS WERE THEN REFINED BY RIGID BODY REFINEMENT IN REAL SPACE WITH THE PROGRAM EMFIT (CHENG ET AL. 1995, CELL 80, 621-630). THE QUALITY OF THE FIT CAN BE SEEN FROM THE MAP DENSITY WITHIN THE PROTEIN. ALL 4563 ATOMS ARE IN DENSITY OF AT LEAST 4 SIGMA (96.73) ABOVE THE AVERAGE (512.04), 1167 ATOMS ARE IN DENSITY BETWEEN 4 AND 5 SIGMA, 3174 ATOMS ARE IN DENSITY BETWEEN 5 AND 6 SIGMA, AND 222 ATOMS ARE IN DENSTY OF 6 SIGMA OR ABOVE. THE VARIATION IN DENSITY OVER THE FITTED PROTEIN CAN BE VISUALIZED WITH THE PSEUDO TEMPERATURE FACTOR. THE DENSITY VALUE AT EACH ATOM IS GIVEN IN THE 8TH COLUM (USUALLY THE OCCUPANCY) AS THE NUMBER OF STANDARD DEVIATION ABOVE BACKGROUND. COLUMN NINE (USUALLY THE TEMPERATURE FACTOR) CONTAINS THE VALUE OF THE RELATIVE DENSITY WITHIN THE FITTED PROTEIN SCALED LINEARLY SO THAT THE MINIMUM DENSITY IS 100.0 AND THE MAXIMUM DENSITY IS 1.0. THE ATOMS THAT LIE IN THE LOWER DENSITY REGIONS WILL HAVE THE HIGHEST PSEUDO TEMPERATURE FACTORS.</PDBx:details> <PDBx:method>AUTOMATIC</PDBx:method> <PDBx:overall_b_value xsi:nil="true" /> <PDBx:ref_protocol>RIGID BODY REFINEMENT</PDBx:ref_protocol> <PDBx:ref_space>REAL</PDBx:ref_space> <PDBx:software_name>1</PDBx:software_name> <PDBx:target_criteria>R-FACTOR</PDBx:target_criteria> </PDBx:em_3d_fitting> </PDBx:em_3d_fittingCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_em_3d_fitting_ref_protocol CASCADE;
@@ -4072,7 +4072,7 @@ CREATE TABLE em_3d_fitting (
 --
 -- (quoted from em_3d_fitting_listType)
 -- Data items in the 3D_FITTING_LIST category lists the methods of fitting atomic coordinates from a PDB file into a 3d-em volume map file Example 1 - based on PDB entry 1DYL and laboratory records for the structure corresponding to PDB entry 1DYL <PDBx:em_3d_fitting_listCategory> <PDBx:em_3d_fitting_list _3d_fitting_id="l" id="1"> <PDBx:pdb_chain_id xsi:nil="true" /> <PDBx:pdb_entry_id>1VCQ</PDBx:pdb_entry_id> </PDBx:em_3d_fitting_list> </PDBx:em_3d_fitting_listCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE em_3d_fitting_list (
@@ -4091,7 +4091,7 @@ CREATE TABLE em_3d_fitting_list (
 --
 -- (quoted from em_3d_reconstructionType)
 -- Data items in the EM_3D_RECONSTRUCTION category record details of the 3D reconstruction procedure from 2D projections. Example 1 - based on PDB entry 1DYL and laboratory records for the structure corresponding to PDB entry 1DYL <PDBx:em_3d_reconstructionCategory> <PDBx:em_3d_reconstruction id="1"> <PDBx:actual_pixel_size>2.52</PDBx:actual_pixel_size> <PDBx:ctf_correction_method xsi:nil="true" /> <PDBx:details xsi:nil="true" /> <PDBx:entry_id>1DYL</PDBx:entry_id> <PDBx:method>CROSS-COMMON LINES</PDBx:method> <PDBx:nominal_pixel_size>2.64</PDBx:nominal_pixel_size> <PDBx:resolution>9</PDBx:resolution> <PDBx:resolution_method xsi:nil="true" /> </PDBx:em_3d_reconstruction> </PDBx:em_3d_reconstructionCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_em_3d_reconstruction_fsc_type CASCADE;
@@ -4133,7 +4133,7 @@ CREATE TABLE em_3d_reconstruction (
 --
 -- (quoted from em_adminType)
 -- Administration-related data items Example 1 <PDBx:em_adminCategory> <PDBx:em_admin entry_id="D_100005"> <PDBx:current_status>REL</PDBx:current_status> <PDBx:deposition_date>2008-12-01</PDBx:deposition_date> <PDBx:details xsi:nil="true" /> <PDBx:last_update>2011-05-22</PDBx:last_update> <PDBx:map_release_date>2009-12-01</PDBx:map_release_date> </PDBx:em_admin> </PDBx:em_adminCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_em_admin_current_status CASCADE;
@@ -4169,7 +4169,7 @@ CREATE TABLE em_admin (
 --
 -- (quoted from em_assemblyType)
 -- Data items in the EM_ASSEMBLY category record details about the imaged EM sample. Example 1 - based on PDB entry 1DYL and laboratory records for the structure corresponding to PDB entry 1DYL <PDBx:em_assemblyCategory> <PDBx:em_assembly entry_id="1DYL" id="1"> <PDBx:aggregation_state>PARTICLE</PDBx:aggregation_state> <PDBx:composition>virus</PDBx:composition> <PDBx:details xsi:nil="true" /> <PDBx:mol_wt_exp xsi:nil="true" /> <PDBx:mol_wt_method xsi:nil="true" /> <PDBx:mol_wt_theo xsi:nil="true" /> <PDBx:name>virus</PDBx:name> <PDBx:num_components>1</PDBx:num_components> </PDBx:em_assembly> </PDBx:em_assemblyCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_em_assembly_aggregation_state CASCADE;
@@ -4196,7 +4196,7 @@ CREATE TABLE em_assembly (
 --
 -- (quoted from em_author_listType)
 -- Category to collect the authors of this entry Example 1 <PDBx:em_author_listCategory> <PDBx:em_author_list ordinal="1"> <PDBx:author>Miller, A.</PDBx:author> </PDBx:em_author_list> <PDBx:em_author_list ordinal="2"> <PDBx:author>Smith, J.T.</PDBx:author> </PDBx:em_author_list> </PDBx:em_author_listCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE em_author_list (
@@ -4210,7 +4210,7 @@ CREATE TABLE em_author_list (
 --
 -- (quoted from em_bufferType)
 -- Data items in the BUFFER category record details of the sample buffer.
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE em_buffer (
@@ -4228,7 +4228,7 @@ CREATE TABLE em_buffer (
 --
 -- (quoted from em_buffer_componentType)
 -- Buffer category
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE em_buffer_component (
@@ -4248,7 +4248,7 @@ CREATE TABLE em_buffer_component (
 --
 -- (quoted from em_crystal_formationType)
 -- Description of growth of a 2D, 3D, or helical crystal array.
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_em_crystal_formation_time_unit CASCADE;
@@ -4274,7 +4274,7 @@ CREATE TABLE em_crystal_formation (
 --
 -- (quoted from em_ctf_correctionType)
 -- Description of the Contrast Transfer Function (CTF) correction Example 1 <PDBx:em_ctf_correctionCategory> <PDBx:em_ctf_correction id="1"> <PDBx:em_image_processing_id>1</PDBx:em_image_processing_id> <PDBx:type>PHASE FLIPPING ONLY</PDBx:type> </PDBx:em_ctf_correction> </PDBx:em_ctf_correctionCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_em_ctf_correction_amplitude_correction CASCADE;
@@ -4309,7 +4309,7 @@ CREATE TABLE em_ctf_correction (
 --
 -- (quoted from em_db_referenceType)
 -- Category holds links to raw data sources for the entry, e.g., held by a remote server. Example 1 <PDBx:em_db_referenceCategory> <PDBx:em_db_reference id="1"> <PDBx:access_code>1ABC</PDBx:access_code> <PDBx:db_name>PDB</PDBx:db_name> </PDBx:em_db_reference> </PDBx:em_db_referenceCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_em_db_reference_db_name CASCADE;
@@ -4330,7 +4330,7 @@ CREATE TABLE em_db_reference (
 --
 -- (quoted from em_db_reference_auxiliaryType)
 -- Category holds links to raw data sources for the entry, e.g., held by a remote server. Example 1 <PDBx:em_db_reference_auxiliaryCategory> <PDBx:em_db_reference_auxiliary id="1"> <PDBx:link>http://www.ebi.ac.uk/pdbe/emdb/singleParticledir/SPIDER_FRANK_data</PDBx:link> <PDBx:link_type>2D EM DATA</PDBx:link_type> </PDBx:em_db_reference_auxiliary> </PDBx:em_db_reference_auxiliaryCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_em_db_reference_auxiliary_link_type CASCADE;
@@ -4347,7 +4347,7 @@ CREATE TABLE em_db_reference_auxiliary (
 --
 -- (quoted from em_depositor_infoType)
 -- Data items in the EM_DEPOSITOR INFO category record parameters for EM depositions that are provided by the depositor Example 1 <PDBx:em_depositor_infoCategory> <PDBx:em_depositor_info entry_id="D_10005049"> <PDBx:em_method_selection>yes</PDBx:em_method_selection> <PDBx:molecular_description_flag>yes</PDBx:molecular_description_flag> </PDBx:em_depositor_info> </PDBx:em_depositor_infoCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_em_depositor_info_em_method_selection CASCADE;
@@ -4366,7 +4366,7 @@ CREATE TABLE em_depositor_info (
 --
 -- (quoted from em_depuiType)
 -- Some internal items to power the deposition interface Example 1 <PDBx:em_depuiCategory> <PDBx:em_depui entry_id="1ABC"> <PDBx:depositor_hold_instructions>HOLD</PDBx:depositor_hold_instructions> <PDBx:macromolecule_description>YES</PDBx:macromolecule_description> <PDBx:obsolete_instructions xsi:nil="true" /> <PDBx:same_authors_as_pdb>NO</PDBx:same_authors_as_pdb> <PDBx:same_title_as_pdb>NO</PDBx:same_title_as_pdb> </PDBx:em_depui> </PDBx:em_depuiCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_em_depui_depositor_hold_instructions CASCADE;
@@ -4392,7 +4392,7 @@ CREATE TABLE em_depui (
 --
 -- (quoted from em_detectorType)
 -- Data items in the EM_DETECTOR category record details of the image detector type. Example 1 - based on PDB entry 1DYL and laboratory records for the structure corresponding to PDB entry 1DYL <PDBx:em_detectorCategory> <PDBx:em_detector entry_id="1DYL" id="1"> <PDBx:details xsi:nil="true" /> <PDBx:detective_quantum_efficiency xsi:nil="true" /> <PDBx:type>KODAK SO163 FILM</PDBx:type> </PDBx:em_detector> </PDBx:em_detectorCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_em_detector_mode CASCADE;
@@ -4413,7 +4413,7 @@ CREATE TABLE em_detector (
 --
 -- (quoted from em_diffractionType)
 -- Microscopy parameters relevant only for crystallography Example 1 <PDBx:em_diffractionCategory> <PDBx:em_diffraction id="1"> <PDBx:camera_length>800</PDBx:camera_length> <PDBx:imaging_id>1</PDBx:imaging_id> </PDBx:em_diffraction> <PDBx:em_diffraction id="2"> <PDBx:camera_length>750</PDBx:camera_length> <PDBx:imaging_id>2</PDBx:imaging_id> </PDBx:em_diffraction> </PDBx:em_diffractionCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE em_diffraction (
@@ -4430,7 +4430,7 @@ CREATE TABLE em_diffraction (
 --
 -- (quoted from em_diffraction_shellType)
 -- Statistical parameters for electron diffraction measurements within a resolution shell Example 1 <PDBx:em_diffraction_shellCategory> <PDBx:em_diffraction_shell id="1"> <PDBx:fourier_space_coverage>93.0</PDBx:fourier_space_coverage> <PDBx:high_resolution>7.5</PDBx:high_resolution> <PDBx:low_resolution>45</PDBx:low_resolution> <PDBx:multiplicity>2.3</PDBx:multiplicity> <PDBx:num_structure_factors>327</PDBx:num_structure_factors> <PDBx:phase_residual>13.5</PDBx:phase_residual> </PDBx:em_diffraction_shell> </PDBx:em_diffraction_shellCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE em_diffraction_shell (
@@ -4457,7 +4457,7 @@ CREATE TABLE em_diffraction_shell (
 --
 -- (quoted from em_diffraction_statsType)
 -- Statistical parameters for electron diffraction measurements Example 1 <PDBx:em_diffraction_statsCategory> <PDBx:em_diffraction_stats id="1"> <PDBx:fourier_space_coverage>92</PDBx:fourier_space_coverage> <PDBx:high_resolution>7.2</PDBx:high_resolution> <PDBx:num_intensities_measured>1524</PDBx:num_intensities_measured> <PDBx:num_structure_factors>325</PDBx:num_structure_factors> <PDBx:overall_phase_error>18.6</PDBx:overall_phase_error> <PDBx:overall_phase_residual>9.5</PDBx:overall_phase_residual> <PDBx:phase_error_rejection_criteria>None</PDBx:phase_error_rejection_criteria> <PDBx:r_merge>19.5</PDBx:r_merge> <PDBx:r_sym>23.2</PDBx:r_sym> </PDBx:em_diffraction_stats> </PDBx:em_diffraction_statsCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE em_diffraction_stats (
@@ -4492,7 +4492,7 @@ CREATE TABLE em_diffraction_stats (
 --
 -- (quoted from em_embeddingType)
 -- Sugar embedding category
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE em_embedding (
@@ -4508,7 +4508,7 @@ CREATE TABLE em_embedding (
 --
 -- (quoted from em_entity_assembly_molwtType)
 -- Data items in this category record details about the molecular weight of an assembly component of the sample. Example 1 - based on PDB entry 1DYL and laboratory records for the structure corresponding to PDB entry 1DYL <PDBx:em_entity_assembly_molwtCategory> <PDBx:em_entity_assembly_molwt entity_assembly_id="1" id="1"> <PDBx:units>MEGADALTONS</PDBx:units> <PDBx:value>30.5</PDBx:value> </PDBx:em_entity_assembly_molwt> </PDBx:em_entity_assembly_molwtCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_em_entity_assembly_molwt_experimental_flag CASCADE;
@@ -4532,7 +4532,7 @@ CREATE TABLE em_entity_assembly_molwt (
 --
 -- (quoted from em_entity_assembly_naturalsourceType)
 -- Data items in this category record taxonomic details about the natural source for EM assemblies and assembly components. Example 1 <PDBx:em_entity_assembly_naturalsourceCategory> <PDBx:em_entity_assembly_naturalsource entity_assembly_id="8333" id="1"> <PDBx:cellular_location xsi:nil="true" /> <PDBx:ncbi_tax_id>Escherichia coli</PDBx:ncbi_tax_id> <PDBx:organ xsi:nil="true" /> <PDBx:organelle>cytoplasm</PDBx:organelle> <PDBx:organism>K12</PDBx:organism> <PDBx:strain xsi:nil="true" /> <PDBx:tissue xsi:nil="true" /> </PDBx:em_entity_assembly_naturalsource> </PDBx:em_entity_assembly_naturalsourceCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE em_entity_assembly_naturalsource (
@@ -4555,7 +4555,7 @@ CREATE TABLE em_entity_assembly_naturalsource (
 --
 -- (quoted from em_entity_assembly_recombinantType)
 -- Data items in this category record details about recombinant expression of the assembly or assembly component. Example 1 <PDBx:em_entity_assembly_recombinantCategory> <PDBx:em_entity_assembly_recombinant entity_assembly_id="1" id="1"> <PDBx:organism>Escherichia coli</PDBx:organism> <PDBx:plasmid>pET17c</PDBx:plasmid> </PDBx:em_entity_assembly_recombinant> </PDBx:em_entity_assembly_recombinantCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE em_entity_assembly_recombinant (
@@ -4575,7 +4575,7 @@ CREATE TABLE em_entity_assembly_recombinant (
 --
 -- (quoted from em_euler_angle_assignmentType)
 -- Category to describe the euler angle assignement Example 1 <PDBx:em_euler_angle_assignmentCategory> <PDBx:em_euler_angle_assignment id="1"> <PDBx:image_processing_id>1</PDBx:image_processing_id> <PDBx:order>FINAL</PDBx:order> <PDBx:type>COMMON LINE</PDBx:type> </PDBx:em_euler_angle_assignment> </PDBx:em_euler_angle_assignmentCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_em_euler_angle_assignment_order CASCADE;
@@ -4600,7 +4600,7 @@ CREATE TABLE em_euler_angle_assignment (
 --
 -- (quoted from em_experimentType)
 -- Data items in the EM_EXPERIMENT category provide high-level classification of the EM experiment. Example 1 - based on PDB entry 1EG0 <PDBx:em_experimentCategory> <PDBx:em_experiment entry_id="1EG0"> <PDBx:aggregation_state>PARTICLE</PDBx:aggregation_state> <PDBx:reconstruction_method>SINGLE PARTICLE</PDBx:reconstruction_method> <PDBx:specimen_type>VITREOUS ICE (CRYO EM)</PDBx:specimen_type> </PDBx:em_experiment> </PDBx:em_experimentCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_em_experiment_aggregation_state CASCADE;
@@ -4622,7 +4622,7 @@ CREATE TABLE em_experiment (
 --
 -- (quoted from em_fiducial_markersType)
 -- Description of fiducial markers.
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE em_fiducial_markers (
@@ -4640,7 +4640,7 @@ CREATE TABLE em_fiducial_markers (
 --
 -- (quoted from em_figure_depositor_infoType)
 -- Listing of image files (figures) associated with an EMDB entry Example 1 <PDBx:em_figure_depositor_infoCategory> <PDBx:em_figure_depositor_info id="1"> <PDBx:details xsi:nil="true" /> <PDBx:experiment_id>1</PDBx:experiment_id> <PDBx:upload_file_name>groel-chimera-image.png</PDBx:upload_file_name> </PDBx:em_figure_depositor_info> </PDBx:em_figure_depositor_infoCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE em_figure_depositor_info (
@@ -4656,7 +4656,7 @@ CREATE TABLE em_figure_depositor_info (
 --
 -- (quoted from em_final_classificationType)
 -- Information about the final image classification Example 1 <PDBx:em_final_classificationCategory> <PDBx:em_final_classification id="1"> <PDBx:image_processing_id>1</PDBx:image_processing_id> </PDBx:em_final_classification> </PDBx:em_final_classificationCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_em_final_classification_type CASCADE;
@@ -4676,7 +4676,7 @@ CREATE TABLE em_final_classification (
 --
 -- (quoted from em_focused_ion_beamType)
 -- Description of sectioning by focused_ion_beam
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE em_focused_ion_beam (
@@ -4708,7 +4708,7 @@ CREATE TABLE em_focused_ion_beam (
 --
 -- (quoted from em_fsc_curveType)
 -- Data items in the EMD_VALIDATION_FSC_CURVE category record details of the Fourier Shell Correlation (FSC) curve file. Example 1 <PDBx:em_fsc_curveCategory> <PDBx:em_fsc_curve id="1"> <PDBx:file>fsc_curve.txt</PDBx:file> </PDBx:em_fsc_curve> </PDBx:em_fsc_curveCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE em_fsc_curve (
@@ -4723,7 +4723,7 @@ CREATE TABLE em_fsc_curve (
 --
 -- (quoted from em_grid_pretreatmentType)
 -- Data items describing glow discharge pretreatment for an EM grid Example 1 <PDBx:em_grid_pretreatmentCategory> <PDBx:em_grid_pretreatment id="1"> <PDBx:sample_support_id>1</PDBx:sample_support_id> <PDBx:time>12</PDBx:time> <PDBx:type>GLOW DISCHARGE</PDBx:type> </PDBx:em_grid_pretreatment> </PDBx:em_grid_pretreatmentCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_em_grid_pretreatment_type CASCADE;
@@ -4745,7 +4745,7 @@ CREATE TABLE em_grid_pretreatment (
 --
 -- (quoted from em_helical_entityType)
 -- Data items in the EM_HELICAL_ENTITY category record details for a helical or filament type of assembly component.
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_em_helical_entity_dyad CASCADE;
@@ -4772,7 +4772,7 @@ CREATE TABLE em_helical_entity (
 --
 -- (quoted from em_high_pressure_freezingType)
 -- Description of high pressure freezing
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE em_high_pressure_freezing (
@@ -4788,7 +4788,7 @@ CREATE TABLE em_high_pressure_freezing (
 --
 -- (quoted from em_image_processingType)
 -- Data items in the EM_IMAGE_PROCESSING category record details of the EM image processing procedure. Example 1 <PDBx:em_image_processingCategory> <PDBx:em_image_processing id="1" image_recording_id="1"> <PDBx:details>The selected images were high-pass filtered and normalized</PDBx:details> </PDBx:em_image_processing> </PDBx:em_image_processingCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE em_image_processing (
@@ -4804,7 +4804,7 @@ CREATE TABLE em_image_processing (
 --
 -- (quoted from em_image_recordingType)
 -- Data items in the EM_IMAGE_RECORDING category record details of the image recording (either film/microdensitometer or electronic detector) and parameters for image digitization. Example 1 - images collected on film <PDBx:em_image_recordingCategory> <PDBx:em_image_recording id="1" imaging_id="1"> <PDBx:avg_electron_dose_per_image>0.9</PDBx:avg_electron_dose_per_image> <PDBx:film_or_detector_model>GENERIC FILM</PDBx:film_or_detector_model> <PDBx:num_diffraction_images>48</PDBx:num_diffraction_images> </PDBx:em_image_recording> </PDBx:em_image_recordingCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_em_image_recording_detector_mode CASCADE;
@@ -4832,7 +4832,7 @@ CREATE TABLE em_image_recording (
 --
 -- (quoted from em_image_scansType)
 -- Data items in the EM_IMAGE_SCANS category record details of the image scanning device (microdensitometer) and parameters for digitization of the image. Example 1 - based on PDB entry 1DYL and laboratory records for the structure corresponding to PDB entry 1DYL <PDBx:em_image_scansCategory> <PDBx:em_image_scans id="2"> <PDBx:details xsi:nil="true" /> <PDBx:entry_id>1DYL</PDBx:entry_id> <PDBx:number_digital_images>48</PDBx:number_digital_images> <PDBx:od_range xsi:nil="true" /> <PDBx:quant_bit_size xsi:nil="true" /> <PDBx:sampling_size xsi:nil="true" /> <PDBx:scanner_model xsi:nil="true" /> </PDBx:em_image_scans> </PDBx:em_image_scansCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_em_image_scans_scanner_model CASCADE;
@@ -4862,7 +4862,7 @@ CREATE TABLE em_image_scans (
 --
 -- (quoted from em_imagingType)
 -- Data items in the EM_IMAGING category record details about the parameters used in imaging the sample in the electron microscope. Example 1 - based on PDB entry 1DYL and laboratory records for the structure corresponding to PDB entry 1DYL <PDBx:em_imagingCategory> <PDBx:em_imaging entry_id="1DYL" id="1"> <PDBx:accelerating_voltage>200</PDBx:accelerating_voltage> <PDBx:calibrated_magnification xsi:nil="true" /> <PDBx:date>1998-15-06</PDBx:date> <PDBx:details xsi:nil="true" /> <PDBx:detector_distance xsi:nil="true" /> <PDBx:electron_source>FEG</PDBx:electron_source> <PDBx:energy_filter xsi:nil="true" /> <PDBx:energy_window xsi:nil="true" /> <PDBx:illumination_mode>bright field</PDBx:illumination_mode> <PDBx:microscope_model>FEI/PHILIPS CM200 FEG</PDBx:microscope_model> <PDBx:mode>low dose</PDBx:mode> <PDBx:nominal_cs>2.0</PDBx:nominal_cs> <PDBx:nominal_defocus_max>7600</PDBx:nominal_defocus_max> <PDBx:nominal_defocus_min>975</PDBx:nominal_defocus_min> <PDBx:nominal_magnification>50000</PDBx:nominal_magnification> <PDBx:recording_temperature_maximum xsi:nil="true" /> <PDBx:recording_temperature_minimum xsi:nil="true" /> <PDBx:sample_support_id>1</PDBx:sample_support_id> <PDBx:specimen_holder_model>gatan 626-0300</PDBx:specimen_holder_model> <PDBx:specimen_holder_type>cryotransfer</PDBx:specimen_holder_type> <PDBx:temperature>95</PDBx:temperature> <PDBx:tilt_angle_max>0</PDBx:tilt_angle_max> <PDBx:tilt_angle_min>0</PDBx:tilt_angle_min> </PDBx:em_imaging> </PDBx:em_imagingCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_em_imaging_alignment_procedure CASCADE;
@@ -4949,7 +4949,7 @@ CREATE TABLE em_imaging (
 --
 -- (quoted from em_imaging_opticsType)
 -- Description of a few specialist optics apparatus Example 1 <PDBx:em_imaging_opticsCategory> <PDBx:em_imaging_optics id="1" imaging_id="1"> <PDBx:chr_aberration_corrector>CEOS manufactured Cc corrector</PDBx:chr_aberration_corrector> <PDBx:energyfilter_lower>0</PDBx:energyfilter_lower> <PDBx:energyfilter_name>FEI</PDBx:energyfilter_name> <PDBx:energyfilter_upper>15</PDBx:energyfilter_upper> </PDBx:em_imaging_optics> </PDBx:em_imaging_opticsCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE em_imaging_optics (
@@ -4975,7 +4975,7 @@ CREATE TABLE em_imaging_optics (
 --
 -- (quoted from em_interpret_figureType)
 -- Listing of all layer line files associated with the EM entry Example 1 <PDBx:em_interpret_figureCategory> <PDBx:em_interpret_figure id="1"> <PDBx:details xsi:nil="true" /> <PDBx:file>emd-1234.png</PDBx:file> </PDBx:em_interpret_figure> </PDBx:em_interpret_figureCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE em_interpret_figure (
@@ -4990,7 +4990,7 @@ CREATE TABLE em_interpret_figure (
 --
 -- (quoted from em_layer_linesType)
 -- Listing of all layer line files associated with the EM entry Example 1 <PDBx:em_layer_linesCategory> <PDBx:em_layer_lines experiment_id="1" id="1"> <PDBx:details xsi:nil="true" /> <PDBx:file>emd-1234-sf.cif</PDBx:file> </PDBx:em_layer_lines> </PDBx:em_layer_linesCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE em_layer_lines (
@@ -5007,7 +5007,7 @@ CREATE TABLE em_layer_lines (
 --
 -- (quoted from em_layer_lines_depositor_infoType)
 -- Listing of layer line files associated with the EM entry Example 1 <PDBx:em_layer_lines_depositor_infoCategory> <PDBx:em_layer_lines_depositor_info id="1"> <PDBx:details xsi:nil="true" /> <PDBx:experiment_id>1</PDBx:experiment_id> <PDBx:upload_file_name>emd-1234-ll.cif</PDBx:upload_file_name> </PDBx:em_layer_lines_depositor_info> </PDBx:em_layer_lines_depositor_infoCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE em_layer_lines_depositor_info (
@@ -5023,7 +5023,7 @@ CREATE TABLE em_layer_lines_depositor_info (
 --
 -- (quoted from em_mapType)
 -- Data items in the EMD_MAP category record parameters of the CCP4 binary-format map file header (see ftp://ftp.wwpdb.org/pub/emdb/doc/map_format/EMDB_mapFormat_v1.0.pdf), parameters derived from the map header, pixel size, contour level, and annotation details from the depositor. The map is a three-dimensional array of data-values of the same data-type. Important parameters are data-type and array size in three dimensions (i.e. the number of columns, rows and sections). Columns are the fastest changing, followed by rows and sections. Example 1 - based on map entry EMD-5001 <PDBx:em_mapCategory> <PDBx:em_map entry_id="1ABC" id="1"> <PDBx:annotation_details>D7 structure of Groel at 4.2 Angstrom resolution</PDBx:annotation_details> <PDBx:axis_order_fast>X</PDBx:axis_order_fast> <PDBx:axis_order_medium>Y</PDBx:axis_order_medium> <PDBx:axis_order_slow>Z</PDBx:axis_order_slow> <PDBx:cell_a>212.0</PDBx:cell_a> <PDBx:cell_alpha>90.0</PDBx:cell_alpha> <PDBx:cell_b>212.0</PDBx:cell_b> <PDBx:cell_beta>90.0</PDBx:cell_beta> <PDBx:cell_c>212.0</PDBx:cell_c> <PDBx:cell_gamma>90.0</PDBx:cell_gamma> <PDBx:data_type>Image stored as Reals</PDBx:data_type> <PDBx:dimensions_col>200</PDBx:dimensions_col> <PDBx:dimensions_row>200</PDBx:dimensions_row> <PDBx:dimensions_sec>200</PDBx:dimensions_sec> <PDBx:format>CCP4</PDBx:format> <PDBx:origin_col>-100</PDBx:origin_col> <PDBx:origin_row>-100</PDBx:origin_row> <PDBx:origin_sec>-100</PDBx:origin_sec> <PDBx:pixel_spacing_x>1.06</PDBx:pixel_spacing_x> <PDBx:pixel_spacing_y>1.06</PDBx:pixel_spacing_y> <PDBx:pixel_spacing_z>1.06</PDBx:pixel_spacing_z> <PDBx:size_kb>32002</PDBx:size_kb> <PDBx:spacing_x>200</PDBx:spacing_x> <PDBx:spacing_y>200</PDBx:spacing_y> <PDBx:spacing_z>200</PDBx:spacing_z> <PDBx:statistics_average>0.0668982</PDBx:statistics_average> <PDBx:statistics_maximum>2.42436</PDBx:statistics_maximum> <PDBx:statistics_minimum>-0.965912</PDBx:statistics_minimum> <PDBx:statistics_std>0.23771</PDBx:statistics_std> <PDBx:symmetry_space_group>1</PDBx:symmetry_space_group> </PDBx:em_map> </PDBx:em_mapCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_em_map_axis_order_fast CASCADE;
@@ -5106,7 +5106,7 @@ CREATE TABLE em_map (
 --
 -- (quoted from em_map_depositor_infoType)
 -- Data items in the EM_MAP_DEPOSITOR INFO category record map parameters that are provided by the depositor Example 1 - based on map entry EMD-5001 <PDBx:em_map_depositor_infoCategory> <PDBx:em_map_depositor_info entry_id="D_10005049" id="1"> <PDBx:annotation_details>D7 structure of Groel at 4.2 Angstrom resolution</PDBx:annotation_details> <PDBx:contour_level>5.0</PDBx:contour_level> <PDBx:experiment_id xsi:nil="true" /> <PDBx:map_type>primary</PDBx:map_type> <PDBx:pixel_spacing_x>1.06</PDBx:pixel_spacing_x> <PDBx:pixel_spacing_y>1.06</PDBx:pixel_spacing_y> <PDBx:pixel_spacing_z>1.06</PDBx:pixel_spacing_z> <PDBx:upload_file_name>GroelD7.mrc.gz</PDBx:upload_file_name> <PDBx:upload_format>CCP4/MRC</PDBx:upload_format> </PDBx:em_map_depositor_info> </PDBx:em_map_depositor_infoCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_em_map_depositor_info_map_type CASCADE;
@@ -5137,7 +5137,7 @@ CREATE TABLE em_map_depositor_info (
 --
 -- (quoted from em_mask_depositor_infoType)
 -- Data items in the EM_MASK_DEPOSITOR_INFO category record mask parameters that are provided by the depositor Example 1 - based on map entry EMD-5001 <PDBx:em_mask_depositor_infoCategory> <PDBx:em_mask_depositor_info id="1"> <PDBx:annotation_details>D7 structure of Groel at 4.2 Angstrom resolution</PDBx:annotation_details> <PDBx:contour_level>5.0</PDBx:contour_level> <PDBx:pixel_spacing_x>1.06</PDBx:pixel_spacing_x> <PDBx:pixel_spacing_y>1.06</PDBx:pixel_spacing_y> <PDBx:pixel_spacing_z>1.06</PDBx:pixel_spacing_z> <PDBx:upload_file_name>GroelD7.mrc.gz</PDBx:upload_file_name> <PDBx:upload_format>CCP4/MRC</PDBx:upload_format> </PDBx:em_mask_depositor_info> </PDBx:em_mask_depositor_infoCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_em_mask_depositor_info_upload_format CASCADE;
@@ -5162,7 +5162,7 @@ CREATE TABLE em_mask_depositor_info (
 --
 -- (quoted from em_obsoleteType)
 -- List of EMD entries made obsolete by this entry.
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE em_obsolete (
@@ -5179,7 +5179,7 @@ CREATE TABLE em_obsolete (
 --
 -- (quoted from em_particle_selectionType)
 -- Data items in this category record details of images from scanned micrographs and the number of particles selected from a scanned set of micrographs. Example 1 - based on PDB entry 1DYL and laboratory records for the structure corresponding to PDB entry 1DYL <PDBx:em_particle_selectionCategory> <PDBx:em_particle_selection id="1" image_processing_id="1"> <PDBx:details xsi:nil="true" /> <PDBx:method>INTERACTIVE</PDBx:method> <PDBx:num_particles_selected>5267</PDBx:num_particles_selected> </PDBx:em_particle_selection> </PDBx:em_particle_selectionCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE em_particle_selection (
@@ -5198,7 +5198,7 @@ CREATE TABLE em_particle_selection (
 --
 -- (quoted from em_sample_preparationType)
 -- Data items in the EM_SAMPLE_PREPARATION category record details of sample conditions prior to and upon loading onto grid support. Example 1 - based on PDB entry 1DYL and laboratory records for the structure corresponding to PDB entry 1DYL <PDBx:em_sample_preparationCategory> <PDBx:em_sample_preparation entry_id="1DYL" id="1"> <PDBx:_2d_crystal_grow_id xsi:nil="true" /> <PDBx:buffer_id>1</PDBx:buffer_id> <PDBx:ph>7.6</PDBx:ph> <PDBx:sample_concentration>5</PDBx:sample_concentration> <PDBx:support_id>1</PDBx:support_id> </PDBx:em_sample_preparation> </PDBx:em_sample_preparationCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE em_sample_preparation (
@@ -5221,7 +5221,7 @@ CREATE TABLE em_sample_preparation (
 --
 -- (quoted from em_sample_supportType)
 -- Data items in the EM_SAMPLE_SUPPORT category record details of the electron microscope grid type, grid support film and pretreatment of whole before sample is applied Example 1 - based on PDB entry 1DYL and laboratory records for the structure corresponding to PDB entry 1DYL <PDBx:em_sample_supportCategory> <PDBx:em_sample_support id="1"> <PDBx:details>GLOW DISCHARGED 120 seconds</PDBx:details> <PDBx:film_material>HOLEY CARBON</PDBx:film_material> <PDBx:grid_material>COPPER</PDBx:grid_material> <PDBx:grid_mesh_size>400</PDBx:grid_mesh_size> </PDBx:em_sample_support> </PDBx:em_sample_supportCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_em_sample_support_film_material CASCADE;
@@ -5249,7 +5249,7 @@ CREATE TABLE em_sample_support (
 --
 -- (quoted from em_shadowingType)
 -- Data items related to shadowing of an EM specimen Example 1 <PDBx:em_shadowingCategory> <PDBx:em_shadowing id="1" specimen_id="1"> <PDBx:angle>45</PDBx:angle> <PDBx:details>shadowing was used to create a platinum replica</PDBx:details> <PDBx:material>Platinum</PDBx:material> <PDBx:thickness>3</PDBx:thickness> </PDBx:em_shadowing> </PDBx:em_shadowingCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE em_shadowing (
@@ -5271,7 +5271,7 @@ CREATE TABLE em_shadowing (
 --
 -- (quoted from em_single_particle_entityType)
 -- Data items in the EM_SINGLE_PARTICLE_ENTITY category provide the details of the symmetry for a single particle entity type. Example <PDBx:em_single_particle_entityCategory> <PDBx:em_single_particle_entity id="1" image_processing_id="1"> <PDBx:point_symmetry>I</PDBx:point_symmetry> </PDBx:em_single_particle_entity> </PDBx:em_single_particle_entityCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_em_single_particle_entity_symmetry_type CASCADE;
@@ -5291,7 +5291,7 @@ CREATE TABLE em_single_particle_entity (
 --
 -- (quoted from em_softwareType)
 -- Description of the software that was used for data collection, data processing, data analysis, structure calculations and refinement. The description should include the name of the software, the author of the software and the version used. Example 1 <PDBx:em_softwareCategory> <PDBx:em_software id="1"> <PDBx:category>IMAGE ACQUISITION</PDBx:category> <PDBx:details xsi:nil="true" /> <PDBx:name>Leginon</PDBx:name> <PDBx:version>1.3</PDBx:version> </PDBx:em_software> <PDBx:em_software id="2"> <PDBx:category>PARTICLE SELECTION</PDBx:category> <PDBx:details xsi:nil="true" /> <PDBx:name>X3D</PDBx:name> <PDBx:version xsi:nil="true" /> </PDBx:em_software> <PDBx:em_software id="3"> <PDBx:category>BACKGROUND MASKING</PDBx:category> <PDBx:details xsi:nil="true" /> <PDBx:name>bsoft</PDBx:name> <PDBx:version>1.1</PDBx:version> </PDBx:em_software> <PDBx:em_software id="4"> <PDBx:category>RECONSTRUCTION</PDBx:category> <PDBx:details>em3dr2 -low 20</PDBx:details> <PDBx:name>EM2DR2</PDBx:name> <PDBx:version>3.2</PDBx:version> </PDBx:em_software> <PDBx:em_software id="5"> <PDBx:category>EULER ASSIGNMENT</PDBx:category> <PDBx:details xsi:nil="true" /> <PDBx:name>erandom</PDBx:name> <PDBx:version xsi:nil="true" /> </PDBx:em_software> <PDBx:em_software id="6"> <PDBx:category>CTF CORRECTION</PDBx:category> <PDBx:details xsi:nil="true" /> <PDBx:name>bctf</PDBx:name> <PDBx:version xsi:nil="true" /> </PDBx:em_software> <PDBx:em_software id="7"> <PDBx:category>MODEL FITTING</PDBx:category> <PDBx:details xsi:nil="true" /> <PDBx:name>chimera</PDBx:name> <PDBx:version>1.6</PDBx:version> </PDBx:em_software> </PDBx:em_softwareCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_em_software_category CASCADE;
@@ -5313,7 +5313,7 @@ CREATE TABLE em_software (
 --
 -- (quoted from em_specimenType)
 -- Data items in the EMD_SPECIMEN category record details about specimens prepared for imaging by electron microscopy. Example 1 -- based on PDB 2FL8 <PDBx:em_specimenCategory> <PDBx:em_specimen experiment_id="1" id="1"> <PDBx:embedding_applied>NO</PDBx:embedding_applied> <PDBx:shadowing_applied>NO</PDBx:shadowing_applied> <PDBx:staining_applied>NO</PDBx:staining_applied> <PDBx:vitrification_applied>YES</PDBx:vitrification_applied> </PDBx:em_specimen> </PDBx:em_specimenCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_em_specimen_embedding_applied CASCADE;
@@ -5343,7 +5343,7 @@ CREATE TABLE em_specimen (
 --
 -- (quoted from em_stainingType)
 -- Staining category Example 1 <PDBx:em_stainingCategory> <PDBx:em_staining id="1"> <PDBx:material>Uranyl Acetate</PDBx:material> <PDBx:specimen_id>1</PDBx:specimen_id> <PDBx:type>NEGATIVE</PDBx:type> </PDBx:em_staining> </PDBx:em_stainingCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_em_staining_type CASCADE;
@@ -5362,7 +5362,7 @@ CREATE TABLE em_staining (
 --
 -- (quoted from em_start_modelType)
 -- The startup model employed to begin refinement of the parameters for a 3DEM reconstruction Example 1 -- based on PDB 3IYD <PDBx:em_start_modelCategory> <PDBx:em_start_model id="1" image_processing_id="1"> <PDBx:details>a map created from PDB entry 3DXJ was gaussian blurred to 60 Angstroms</PDBx:details> <PDBx:pdb_id>3DXJ</PDBx:pdb_id> <PDBx:type>PDB ENTRY</PDBx:type> </PDBx:em_start_model> </PDBx:em_start_modelCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_em_start_model_type CASCADE;
@@ -5396,7 +5396,7 @@ CREATE TABLE em_start_model (
 --
 -- (quoted from em_structure_factorsType)
 -- Listing of all structure factor files associated with the EM entry Example 1 <PDBx:em_structure_factorsCategory> <PDBx:em_structure_factors experiment_id="1" id="1"> <PDBx:details xsi:nil="true" /> <PDBx:file>emd-1234-sf.cif</PDBx:file> </PDBx:em_structure_factors> </PDBx:em_structure_factorsCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE em_structure_factors (
@@ -5413,7 +5413,7 @@ CREATE TABLE em_structure_factors (
 --
 -- (quoted from em_structure_factors_depositor_infoType)
 -- Structure factor files associated with the EM entry Example 1 <PDBx:em_structure_factors_depositor_infoCategory> <PDBx:em_structure_factors_depositor_info id="1"> <PDBx:details xsi:nil="true" /> <PDBx:experiment_id>1</PDBx:experiment_id> <PDBx:upload_file_name>emd-1234-sf.cif</PDBx:upload_file_name> </PDBx:em_structure_factors_depositor_info> </PDBx:em_structure_factors_depositor_infoCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE em_structure_factors_depositor_info (
@@ -5429,7 +5429,7 @@ CREATE TABLE em_structure_factors_depositor_info (
 --
 -- (quoted from em_supersedeType)
 -- List of newer entries that replace this entry.
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE em_supersede (
@@ -5446,7 +5446,7 @@ CREATE TABLE em_supersede (
 --
 -- (quoted from em_support_filmType)
 -- Data items to describe films supporting the specimen Example 1 - based on PDB entry 1DYL and laboratory records for the structure corresponding to PDB entry 1DYL <PDBx:em_support_filmCategory> <PDBx:em_support_film id="1"> <PDBx:material>CARBON</PDBx:material> </PDBx:em_support_film> </PDBx:em_support_filmCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_em_support_film_material CASCADE;
@@ -5468,7 +5468,7 @@ CREATE TABLE em_support_film (
 --
 -- (quoted from em_tomographyType)
 -- Microscopy parameters only relevant for tomography Example 1 <PDBx:em_tomographyCategory> <PDBx:em_tomography id="1" imaging_id="1"> <PDBx:axis1_angle_increment>2</PDBx:axis1_angle_increment> <PDBx:axis1_max_angle>70.</PDBx:axis1_max_angle> <PDBx:axis1_min_angle>-70.</PDBx:axis1_min_angle> <PDBx:axis2_angle_increment>2</PDBx:axis2_angle_increment> <PDBx:axis2_max_angle>70.</PDBx:axis2_max_angle> <PDBx:axis2_min_angle>-70.</PDBx:axis2_min_angle> <PDBx:dual_tilt_axis_rotation>90.</PDBx:dual_tilt_axis_rotation> </PDBx:em_tomography> </PDBx:em_tomographyCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE em_tomography (
@@ -5502,7 +5502,7 @@ CREATE TABLE em_tomography (
 --
 -- (quoted from em_ultramicrotomyType)
 -- Description of sectioning by ultramicrotomy
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE em_ultramicrotomy (
@@ -5522,7 +5522,7 @@ CREATE TABLE em_ultramicrotomy (
 --
 -- (quoted from em_virus_entityType)
 -- Data items in the EM_VIRUS_ENTITY category record details of the icosahedral virus. Example 1 - based on PDB entry 1DYL and laboratory records for the structure corresponding to PDB entry 1DYL <PDBx:em_virus_entityCategory> <PDBx:em_virus_entity entity_assembly_id="1" id="1"> <PDBx:empty>NO</PDBx:empty> <PDBx:enveloped>YES</PDBx:enveloped> <PDBx:ictvdb_id>00.073.0.01.023</PDBx:ictvdb_id> <PDBx:virus_host_category>VERTERBRATES</PDBx:virus_host_category> <PDBx:virus_host_species>HOMO SAPIENS</PDBx:virus_host_species> <PDBx:virus_isolate>STRAIN</PDBx:virus_isolate> <PDBx:virus_type>VIRUS</PDBx:virus_type> </PDBx:em_virus_entity> </PDBx:em_virus_entityCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_em_virus_entity_empty CASCADE;
@@ -5554,7 +5554,7 @@ CREATE TABLE em_virus_entity (
 --
 -- (quoted from em_virus_natural_hostType)
 -- Data items in this category record details of a virus entity.
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE em_virus_natural_host (
@@ -5572,7 +5572,7 @@ CREATE TABLE em_virus_natural_host (
 --
 -- (quoted from em_virus_shellType)
 -- Data items in the EMD_VIRUS_SHELL category record details of the viral shell number, shell diameter, and icosahedral triangulation number. Example 1 -- Bluetongue Virus <PDBx:em_virus_shellCategory> <PDBx:em_virus_shell entity_assembly_id="1" id="1"> <PDBx:diameter>348</PDBx:diameter> <PDBx:name>VP7 layer</PDBx:name> <PDBx:triangulation>13</PDBx:triangulation> </PDBx:em_virus_shell> <PDBx:em_virus_shell entity_assembly_id="1" id="2"> <PDBx:diameter>348</PDBx:diameter> <PDBx:name>VP3 layer</PDBx:name> <PDBx:triangulation>2</PDBx:triangulation> </PDBx:em_virus_shell> </PDBx:em_virus_shellCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE em_virus_shell (
@@ -5591,7 +5591,7 @@ CREATE TABLE em_virus_shell (
 --
 -- (quoted from em_vitrificationType)
 -- Data items in the EM_VITRIFICATION category record details about the method and cryogen used in rapid freezing of the sample on the grid prior to its insertion in the electron microscope Example 1 - based on PDB entry 1DYL and laboratory records for the structure corresponding to PDB entry 1DYL <PDBx:em_vitrificationCategory> <PDBx:em_vitrification id="1"> <PDBx:cryogen_name>ETHANE</PDBx:cryogen_name> <PDBx:details> SAMPLES WERE PREPARED AS THIN LAYERS OF VITREOUS ICE AND MAINTAINED AT NEAR LIQUID NITROGEN TEMPERATURE IN THE ELECTRON MICROSCOPE WITH A GATAN 626-0300 CRYOTRANSFER HOLDER.</PDBx:details> <PDBx:entry_id>1DYL</PDBx:entry_id> <PDBx:humidity>90</PDBx:humidity> <PDBx:instrument xsi:nil="true" /> <PDBx:method>PLUNGE VITRIFICATION</PDBx:method> <PDBx:sample_preparation_id>1</PDBx:sample_preparation_id> <PDBx:temp>95</PDBx:temp> <PDBx:time_resolved_state xsi:nil="true" /> </PDBx:em_vitrification> </PDBx:em_vitrificationCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_em_vitrification_cryogen_name CASCADE;
@@ -5625,7 +5625,7 @@ CREATE TABLE em_vitrification (
 --
 -- (quoted from em_volume_selectionType)
 -- Volume selection in image processing Example 1 - based on PDB entry 1DYL and laboratory records for the structure corresponding to PDB entry 1DYL <PDBx:em_volume_selectionCategory> <PDBx:em_volume_selection id="1" image_processing_id="1"> <PDBx:details xsi:nil="true" /> <PDBx:method>INTERACTIVE</PDBx:method> <PDBx:num_volumes_extracted>5267</PDBx:num_volumes_extracted> </PDBx:em_volume_selection> </PDBx:em_volume_selectionCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE em_volume_selection (
@@ -5645,7 +5645,7 @@ CREATE TABLE em_volume_selection (
 --
 -- (quoted from entity_keywordsType)
 -- Data items in the ENTITY_KEYWORDS category specify keywords relevant to the molecular entities. Note that this list of keywords is separate from the list that is used for the STRUCT_BIOL data items and is intended to provide only the information that one would know about the molecular entity *if one did not know its structure*. Hence polypeptides are simply polypeptides, not cytokines or beta-alpha-barrels, and polyribonucleic acids are simply poly-RNA, not transfer- RNA. Example 1 - based on PDB entry 5HVP and laboratory records for the structure corresponding to PDB entry 5HVP. <PDBx:entity_keywordsCategory> <PDBx:entity_keywords entity_id="2"> <PDBx:text>natural product, inhibitor, reduced peptide</PDBx:text> </PDBx:entity_keywords> </PDBx:entity_keywordsCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE entity_keywords (
@@ -5663,7 +5663,7 @@ CREATE TABLE entity_keywords (
 --
 -- (quoted from entity_linkType)
 -- Data items in the ENTITY_LINK category give details about the links between entities.
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE entity_link (
@@ -5681,7 +5681,7 @@ CREATE TABLE entity_link (
 --
 -- (quoted from entity_name_comType)
 -- Data items in the ENTITY_NAME_COM category record the common name or names associated with the entity. In some cases, the entity name may not be the same as the name of the biological structure. For example, haemoglobin alpha chain would be the entity common name, not haemoglobin. Example 1 - based on PDB entry 5HVP and laboratory records for the structure corresponding to PDB entry 5HVP. <PDBx:entity_name_comCategory> <PDBx:entity_name_com entity_id="1"> <PDBx:name>HIV-1 protease monomer</PDBx:name> </PDBx:entity_name_com> <PDBx:entity_name_com entity_id="1"> <PDBx:name>HIV-1 PR monomer</PDBx:name> </PDBx:entity_name_com> <PDBx:entity_name_com entity_id="2"> <PDBx:name>acetyl-pepstatin</PDBx:name> </PDBx:entity_name_com> <PDBx:entity_name_com entity_id="2"> <PDBx:name>acetyl-Ile-Val-Asp-Statine-Ala-Ile-Statine</PDBx:name> </PDBx:entity_name_com> <PDBx:entity_name_com entity_id="3"> <PDBx:name>water</PDBx:name> </PDBx:entity_name_com> </PDBx:entity_name_comCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_entity_name_com_pdbx_provenance CASCADE;
@@ -5698,7 +5698,7 @@ CREATE TABLE entity_name_com (
 --
 -- (quoted from entity_name_sysType)
 -- Data items in the ENTITY_NAME_SYS category record the systematic name or names associated with the entity and the system that was used to construct the systematic name. In some cases, the entity name may not be the same as the name of the biological structure. Example 1 - based on PDB entry 5HVP and laboratory records for the structure corresponding to PDB entry 5HVP. <PDBx:entity_name_sysCategory> <PDBx:entity_name_sys entity_id="1"> <PDBx:name>EC 3.4.23.16</PDBx:name> </PDBx:entity_name_sys> <PDBx:entity_name_sys entity_id="2"> <PDBx:name>acetyl-Ile-Val-Asp-Sta-Ala-Ile-Sta</PDBx:name> </PDBx:entity_name_sys> <PDBx:entity_name_sys entity_id="3"> <PDBx:name>water</PDBx:name> </PDBx:entity_name_sys> </PDBx:entity_name_sysCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE entity_name_sys (
@@ -5713,7 +5713,7 @@ CREATE TABLE entity_name_sys (
 --
 -- (quoted from entity_src_genType)
 -- Data items in the ENTITY_SRC_GEN category record details of the source from which the entity was obtained in cases where the source was genetically manipulated. The following are treated separately: items pertaining to the tissue from which the gene was obtained, items pertaining to the host organism for gene expression and items pertaining to the actual producing organism (plasmid). Example 1 - based on PDB entry 5HVP and laboratory records for the structure corresponding to PDB entry 5HVP. <PDBx:entity_src_genCategory> <PDBx:entity_src_gen entity_id="1" pdbx_src_id="1"> <PDBx:gene_src_common_name>HIV-1</PDBx:gene_src_common_name> <PDBx:gene_src_strain>NY-5</PDBx:gene_src_strain> <PDBx:host_org_common_name>bacteria</PDBx:host_org_common_name> <PDBx:host_org_genus>Escherichia</PDBx:host_org_genus> <PDBx:host_org_species>coli</PDBx:host_org_species> <PDBx:plasmid_name>pB322</PDBx:plasmid_name> </PDBx:entity_src_gen> </PDBx:entity_src_genCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_entity_src_gen_pdbx_alt_source_flag CASCADE;
@@ -5784,7 +5784,7 @@ CREATE TABLE entity_src_gen (
 --
 -- (quoted from entity_src_natType)
 -- Data items in the ENTITY_SRC_NAT category record details of the source from which the entity was obtained in cases where the entity was isolated directly from a natural tissue. Example 1 - based on PDB entry 5HVP and laboratory records for the structure corresponding to PDB entry 5HVP. <PDBx:entity_src_natCategory> <PDBx:entity_src_nat entity_id="2" pdbx_src_id="1"> <PDBx:common_name>bacteria</PDBx:common_name> <PDBx:details> Acetyl-pepstatin was isolated by Dr. K. Oda, Osaka Prefecture University, and provided to us by Dr. Ben Dunn, University of Florida, and Dr. J. Kay, University of Wales.</PDBx:details> <PDBx:genus>Actinomycetes</PDBx:genus> </PDBx:entity_src_nat> </PDBx:entity_src_natCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_entity_src_nat_pdbx_alt_source_flag CASCADE;
@@ -5825,7 +5825,7 @@ CREATE TABLE entity_src_nat (
 --
 -- (quoted from entry_linkType)
 -- Data items in the ENTRY_LINK category record the relationships between the current data block identified by attribute id in category entry and other data blocks within the current file which may be referenced in the current data block. Example 1 - example file for the one-dimensional incommensurately modulated structure of K~2~SeO~4~. <PDBx:entry_linkCategory> <PDBx:entry_link entry_id="KSE_TEXT" id="KSE_COM"> <PDBx:details>experimental data common to ref./mod. structures</PDBx:details> </PDBx:entry_link> <PDBx:entry_link entry_id="KSE_TEXT" id="KSE_REF"> <PDBx:details>reference structure</PDBx:details> </PDBx:entry_link> <PDBx:entry_link entry_id="KSE_TEXT" id="KSE_MOD"> <PDBx:details>modulated structure</PDBx:details> </PDBx:entry_link> </PDBx:entry_linkCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE entry_link (
@@ -5841,7 +5841,7 @@ CREATE TABLE entry_link (
 --
 -- (quoted from exptlType)
 -- Data items in the EXPTL category record details about the experimental work prior to the intensity measurements and details about the absorption-correction technique employed. Example 1 - based on laboratory records for Yb(S-C5H4N)2(THF)4. <PDBx:exptlCategory> <PDBx:exptl entry_id="datablock1" method="single-crystal x-ray diffraction"> <PDBx:absorpt_coefficient_mu>1.22</PDBx:absorpt_coefficient_mu> <PDBx:absorpt_correction_T_max>0.896</PDBx:absorpt_correction_T_max> <PDBx:absorpt_correction_T_min>0.802</PDBx:absorpt_correction_T_min> <PDBx:absorpt_correction_type>integration</PDBx:absorpt_correction_type> <PDBx:absorpt_process_details> Gaussian grid method from SHELX76 Sheldrick, G. M., &quot;SHELX-76: structure determination and refinement program&quot;, Cambridge University, UK, 1976</PDBx:absorpt_process_details> <PDBx:crystals_number>1</PDBx:crystals_number> <PDBx:details> Enraf-Nonius LT2 liquid nitrogen variable-temperature device used</PDBx:details> <PDBx:method_details> graphite monochromatized Cu K(alpha) fixed tube and Enraf-Nonius CAD4 diffractometer used</PDBx:method_details> </PDBx:exptl> </PDBx:exptlCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_exptl_absorpt_correction_type CASCADE;
@@ -5874,7 +5874,7 @@ CREATE TABLE exptl (
 --
 -- (quoted from exptl_crystal_faceType)
 -- Data items in the EXPTL_CRYSTAL_FACE category record details of the crystal faces. Example 1 - based on laboratory records for Yb(S-C5H4N)2(THF)4 for the 100 face of crystal xstl1. <PDBx:exptl_crystal_faceCategory> <PDBx:exptl_crystal_face crystal_id="xstl1" index_h="1" index_k="0" index_l="0"> <PDBx:diffr_chi>42.56</PDBx:diffr_chi> <PDBx:diffr_kappa>30.23</PDBx:diffr_kappa> <PDBx:diffr_phi>-125.56</PDBx:diffr_phi> <PDBx:diffr_psi>-0.34</PDBx:diffr_psi> <PDBx:perp_dist>0.025</PDBx:perp_dist> </PDBx:exptl_crystal_face> </PDBx:exptl_crystal_faceCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE exptl_crystal_face (
@@ -5903,7 +5903,7 @@ CREATE TABLE exptl_crystal_face (
 --
 -- (quoted from exptl_crystal_growType)
 -- Data items in the EXPTL_CRYSTAL_GROW category record details about the conditions and methods used to grow the crystal. Example 1 - based on PDB entry 5HVP and laboratory records for the structure corresponding to PDB entry 5HVP. <PDBx:exptl_crystal_growCategory> <PDBx:exptl_crystal_grow crystal_id="1"> <PDBx:apparatus>Linbro plates</PDBx:apparatus> <PDBx:atmosphere>room air</PDBx:atmosphere> <PDBx:method>VAPOR DIFFUSION, HANGING DROP</PDBx:method> <PDBx:pH>4.7</PDBx:pH> <PDBx:temp>291</PDBx:temp> <PDBx:time>approximately 2 days</PDBx:time> </PDBx:exptl_crystal_grow> </PDBx:exptl_crystal_growCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE exptl_crystal_grow (
@@ -5938,7 +5938,7 @@ CREATE TABLE exptl_crystal_grow (
 --
 -- (quoted from exptl_crystal_grow_compType)
 -- Data items in the EXPTL_CRYSTAL_GROW_COMP category record details about the components of the solutions that were 'mixed' (by whatever means) to produce the crystal. In general, solution 1 is the solution that contains the molecule to be crystallized and solution 2 is the solution that contains the precipitant. However, the number of solutions required to describe the crystallization protocol is not limited to 2. Details of the crystallization protocol should be given in attribute details in category exptl_crystal_grow_comp using the solutions described in EXPTL_CRYSTAL_GROW_COMP. Example 1 - based on PDB entry 5HVP and laboratory records for the structure corresponding to PDB entry 5HVP. <PDBx:exptl_crystal_grow_compCategory> <PDBx:exptl_crystal_grow_comp crystal_id="1" id="1"> <PDBx:conc>6 mg/ml</PDBx:conc> <PDBx:details> The protein solution was in a buffer containing 25 mM NaCl, 100 mM NaMES/ MES buffer, pH 7.5, 3 mM NaAzide</PDBx:details> <PDBx:name>HIV-1 protease</PDBx:name> <PDBx:sol_id>1</PDBx:sol_id> <PDBx:volume>0.002 ml</PDBx:volume> </PDBx:exptl_crystal_grow_comp> <PDBx:exptl_crystal_grow_comp crystal_id="1" id="2"> <PDBx:conc>4 M</PDBx:conc> <PDBx:details>in 3 mM NaAzide</PDBx:details> <PDBx:name>NaCl</PDBx:name> <PDBx:sol_id>2</PDBx:sol_id> <PDBx:volume>0.200 ml</PDBx:volume> </PDBx:exptl_crystal_grow_comp> <PDBx:exptl_crystal_grow_comp crystal_id="1" id="3"> <PDBx:conc>100 mM</PDBx:conc> <PDBx:details>in 3 mM NaAzide</PDBx:details> <PDBx:name>Acetic Acid</PDBx:name> <PDBx:sol_id>2</PDBx:sol_id> <PDBx:volume>0.047 ml</PDBx:volume> </PDBx:exptl_crystal_grow_comp> <PDBx:exptl_crystal_grow_comp crystal_id="1" id="4"> <PDBx:conc>100 mM</PDBx:conc> <PDBx:details> in 3 mM NaAzide. Buffer components were mixed to produce a pH of 4.7 according to a ratio calculated from the pKa. The actual pH of solution 2 was not measured.</PDBx:details> <PDBx:name>Na Acetate</PDBx:name> <PDBx:sol_id>2</PDBx:sol_id> <PDBx:volume>0.053 ml</PDBx:volume> </PDBx:exptl_crystal_grow_comp> <PDBx:exptl_crystal_grow_comp crystal_id="1" id="5"> <PDBx:conc>neat</PDBx:conc> <PDBx:details>in 3 mM NaAzide</PDBx:details> <PDBx:name>water</PDBx:name> <PDBx:sol_id>2</PDBx:sol_id> <PDBx:volume>0.700 ml</PDBx:volume> </PDBx:exptl_crystal_grow_comp> </PDBx:exptl_crystal_grow_compCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE exptl_crystal_grow_comp (
@@ -5964,7 +5964,7 @@ CREATE TABLE exptl_crystal_grow_comp (
 --
 -- (quoted from geomType)
 -- Data items in the GEOM and related (GEOM_ANGLE, GEOM_BOND, GEOM_CONTACT, GEOM_HBOND and GEOM_TORSION) categories record details about the molecular geometry as calculated from the contents of the ATOM, CELL and SYMMETRY data. Geometry data are therefore redundant, in that they can be calculated from other more fundamental quantities in the data block. However, they provide a check on the correctness of both sets of data and enable the most important geometric data to be identified for publication by setting the appropriate publication flag.
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE geom (
@@ -5978,7 +5978,7 @@ CREATE TABLE geom (
 --
 -- (quoted from geom_angleType)
 -- Data items in the GEOM_ANGLE category record details about the bond angles as calculated from the contents of the ATOM, CELL and SYMMETRY data. Example 1 - based on data set TOZ of Willis, Beckwith & Tozer [Acta Cryst. (1991), C47, 2276-2277]. <PDBx:geom_angleCategory> <PDBx:geom_angle atom_site_id_1="C2" atom_site_id_2="O1" atom_site_id_3="C5" site_symmetry_1="1_555" site_symmetry_2="1_555" site_symmetry_3="1_555"> <PDBx:publ_flag>yes</PDBx:publ_flag> <PDBx:value>111.6</PDBx:value> <PDBx:value_esd>0.2</PDBx:value_esd> </PDBx:geom_angle> <PDBx:geom_angle atom_site_id_1="O1" atom_site_id_2="C2" atom_site_id_3="C3" site_symmetry_1="1_555" site_symmetry_2="1_555" site_symmetry_3="1_555"> <PDBx:publ_flag>yes</PDBx:publ_flag> <PDBx:value>110.9</PDBx:value> <PDBx:value_esd>0.2</PDBx:value_esd> </PDBx:geom_angle> <PDBx:geom_angle atom_site_id_1="O1" atom_site_id_2="C2" atom_site_id_3="O21" site_symmetry_1="1_555" site_symmetry_2="1_555" site_symmetry_3="1_555"> <PDBx:publ_flag>yes</PDBx:publ_flag> <PDBx:value>122.2</PDBx:value> <PDBx:value_esd>0.3</PDBx:value_esd> </PDBx:geom_angle> <PDBx:geom_angle atom_site_id_1="C3" atom_site_id_2="C2" atom_site_id_3="O21" site_symmetry_1="1_555" site_symmetry_2="1_555" site_symmetry_3="1_555"> <PDBx:publ_flag>yes</PDBx:publ_flag> <PDBx:value>127.0</PDBx:value> <PDBx:value_esd>0.3</PDBx:value_esd> </PDBx:geom_angle> <PDBx:geom_angle atom_site_id_1="C2" atom_site_id_2="C3" atom_site_id_3="N4" site_symmetry_1="1_555" site_symmetry_2="1_555" site_symmetry_3="1_555"> <PDBx:publ_flag>yes</PDBx:publ_flag> <PDBx:value>101.3</PDBx:value> <PDBx:value_esd>0.2</PDBx:value_esd> </PDBx:geom_angle> <PDBx:geom_angle atom_site_id_1="C2" atom_site_id_2="C3" atom_site_id_3="C31" site_symmetry_1="1_555" site_symmetry_2="1_555" site_symmetry_3="1_555"> <PDBx:publ_flag>yes</PDBx:publ_flag> <PDBx:value>111.3</PDBx:value> <PDBx:value_esd>0.2</PDBx:value_esd> </PDBx:geom_angle> <PDBx:geom_angle atom_site_id_1="C2" atom_site_id_2="C3" atom_site_id_3="H3" site_symmetry_1="1_555" site_symmetry_2="1_555" site_symmetry_3="1_555"> <PDBx:publ_flag>no</PDBx:publ_flag> <PDBx:value>107</PDBx:value> <PDBx:value_esd>1</PDBx:value_esd> </PDBx:geom_angle> <PDBx:geom_angle atom_site_id_1="N4" atom_site_id_2="C3" atom_site_id_3="C31" site_symmetry_1="1_555" site_symmetry_2="1_555" site_symmetry_3="1_555"> <PDBx:publ_flag>yes</PDBx:publ_flag> <PDBx:value>116.7</PDBx:value> <PDBx:value_esd>0.2</PDBx:value_esd> </PDBx:geom_angle> </PDBx:geom_angleCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_geom_angle_publ_flag CASCADE;
@@ -6039,7 +6039,7 @@ CREATE TABLE geom_angle (
 --
 -- (quoted from geom_bondType)
 -- Data items in the GEOM_BOND category record details about the bond lengths as calculated from the contents of the ATOM, CELL and SYMMETRY data. Example 1 - based on data set TOZ of Willis, Beckwith & Tozer [Acta Cryst. (1991), C47, 2276-2277]. <PDBx:geom_bondCategory> <PDBx:geom_bond atom_site_id_1="O1" atom_site_id_2="C2" site_symmetry_1="1_555" site_symmetry_2="1_555"> <PDBx:dist>1.342</PDBx:dist> <PDBx:dist_esd>0.004</PDBx:dist_esd> <PDBx:publ_flag>yes</PDBx:publ_flag> </PDBx:geom_bond> <PDBx:geom_bond atom_site_id_1="O1" atom_site_id_2="C5" site_symmetry_1="1_555" site_symmetry_2="1_555"> <PDBx:dist>1.439</PDBx:dist> <PDBx:dist_esd>0.003</PDBx:dist_esd> <PDBx:publ_flag>yes</PDBx:publ_flag> </PDBx:geom_bond> <PDBx:geom_bond atom_site_id_1="C2" atom_site_id_2="C3" site_symmetry_1="1_555" site_symmetry_2="1_555"> <PDBx:dist>1.512</PDBx:dist> <PDBx:dist_esd>0.004</PDBx:dist_esd> <PDBx:publ_flag>yes</PDBx:publ_flag> </PDBx:geom_bond> <PDBx:geom_bond atom_site_id_1="C2" atom_site_id_2="O21" site_symmetry_1="1_555" site_symmetry_2="1_555"> <PDBx:dist>1.199</PDBx:dist> <PDBx:dist_esd>0.004</PDBx:dist_esd> <PDBx:publ_flag>yes</PDBx:publ_flag> </PDBx:geom_bond> <PDBx:geom_bond atom_site_id_1="C3" atom_site_id_2="N4" site_symmetry_1="1_555" site_symmetry_2="1_555"> <PDBx:dist>1.465</PDBx:dist> <PDBx:dist_esd>0.003</PDBx:dist_esd> <PDBx:publ_flag>yes</PDBx:publ_flag> </PDBx:geom_bond> <PDBx:geom_bond atom_site_id_1="C3" atom_site_id_2="C31" site_symmetry_1="1_555" site_symmetry_2="1_555"> <PDBx:dist>1.537</PDBx:dist> <PDBx:dist_esd>0.004</PDBx:dist_esd> <PDBx:publ_flag>yes</PDBx:publ_flag> </PDBx:geom_bond> <PDBx:geom_bond atom_site_id_1="C3" atom_site_id_2="H3" site_symmetry_1="1_555" site_symmetry_2="1_555"> <PDBx:dist>1.00</PDBx:dist> <PDBx:dist_esd>0.03</PDBx:dist_esd> <PDBx:publ_flag>no</PDBx:publ_flag> </PDBx:geom_bond> <PDBx:geom_bond atom_site_id_1="N4" atom_site_id_2="C5" site_symmetry_1="1_555" site_symmetry_2="1_555"> <PDBx:dist>1.472</PDBx:dist> <PDBx:dist_esd>0.003</PDBx:dist_esd> <PDBx:publ_flag>yes</PDBx:publ_flag> </PDBx:geom_bond> </PDBx:geom_bondCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_geom_bond_publ_flag CASCADE;
@@ -6087,7 +6087,7 @@ CREATE TABLE geom_bond (
 --
 -- (quoted from geom_contactType)
 -- Data items in the GEOM_CONTACT category record details about interatomic contacts as calculated from the contents of the ATOM, CELL and SYMMETRY data. Example 1 - based on data set CLPHO6 of Ferguson, Ruhl, McKervey & Browne [Acta Cryst. (1992), C48, 2262-2264]. <PDBx:geom_contactCategory> <PDBx:geom_contact atom_site_id_1="O(1)" atom_site_id_2="O(2)" site_symmetry_1="1_555" site_symmetry_2="1_555"> <PDBx:dist>2.735</PDBx:dist> <PDBx:dist_esd>0.003</PDBx:dist_esd> <PDBx:publ_flag>yes</PDBx:publ_flag> </PDBx:geom_contact> <PDBx:geom_contact atom_site_id_1="H(O1)" atom_site_id_2="O(2)" site_symmetry_1="1_555" site_symmetry_2="1_555"> <PDBx:dist>1.82</PDBx:dist> <PDBx:dist_esd xsi:nil="true" /> <PDBx:publ_flag>no</PDBx:publ_flag> </PDBx:geom_contact> </PDBx:geom_contactCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_geom_contact_publ_flag CASCADE;
@@ -6134,7 +6134,7 @@ CREATE TABLE geom_contact (
 --
 -- (quoted from geom_hbondType)
 -- Data items in the GEOM_HBOND category record details about hydrogen bonds as calculated from the contents of the ATOM, CELL and SYMMETRY data. Example 1 - based on C~14~H~13~ClN~2~O.H~2~O, reported by Palmer, Puddle & Lisgarten [Acta Cryst. (1993), C49, 1777-1779]. <PDBx:geom_hbondCategory> <PDBx:geom_hbond atom_site_id_A="OW" atom_site_id_D="N6" atom_site_id_H="HN6"> <PDBx:angle_DHA>169.6</PDBx:angle_DHA> <PDBx:dist_DA>2.801</PDBx:dist_DA> <PDBx:dist_DH>0.888</PDBx:dist_DH> <PDBx:dist_HA>1.921</PDBx:dist_HA> <PDBx:publ_flag>yes</PDBx:publ_flag> </PDBx:geom_hbond> <PDBx:geom_hbond atom_site_id_A="O7" atom_site_id_D="OW" atom_site_id_H="HO2"> <PDBx:angle_DHA>153.5</PDBx:angle_DHA> <PDBx:dist_DA>2.793</PDBx:dist_DA> <PDBx:dist_DH>0.917</PDBx:dist_DH> <PDBx:dist_HA>1.923</PDBx:dist_HA> <PDBx:publ_flag>yes</PDBx:publ_flag> </PDBx:geom_hbond> <PDBx:geom_hbond atom_site_id_A="N10" atom_site_id_D="OW" atom_site_id_H="HO1"> <PDBx:angle_DHA>179.7</PDBx:angle_DHA> <PDBx:dist_DA>2.842</PDBx:dist_DA> <PDBx:dist_DH>0.894</PDBx:dist_DH> <PDBx:dist_HA>1.886</PDBx:dist_HA> <PDBx:publ_flag>yes</PDBx:publ_flag> </PDBx:geom_hbond> </PDBx:geom_hbondCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_geom_hbond_publ_flag CASCADE;
@@ -6203,7 +6203,7 @@ CREATE TABLE geom_hbond (
 --
 -- (quoted from geom_torsionType)
 -- Data items in the GEOM_TORSION category record details about torsion angles as calculated from the contents of the ATOM, CELL and SYMMETRY data. The vector direction attribute atom_site_id_2 in category geom_torsion to attribute atom_site_id_3 in category geom_torsion is the viewing direction, and the torsion angle is the angle of twist required to superimpose the projection of the vector between site 2 and site 1 onto the projection of the vector between site 3 and site 4. Clockwise torsions are positive, anticlockwise torsions are negative. Ref: Klyne, W. & Prelog, V. (1960). Experientia, 16, 521-523. Example 1 - based on data set CLPHO6 of Ferguson, Ruhl, McKervey & Browne [Acta Cryst. (1992), C48, 2262-2264]. <PDBx:geom_torsionCategory> <PDBx:geom_torsion atom_site_id_1="C(9)" atom_site_id_2="O(2)" atom_site_id_3="C(7)" atom_site_id_4="C(2)" site_symmetry_1="1_555" site_symmetry_2="1_555" site_symmetry_3="1_555" site_symmetry_4="1_555"> <PDBx:publ_flag>yes</PDBx:publ_flag> <PDBx:value>71.8</PDBx:value> </PDBx:geom_torsion> <PDBx:geom_torsion atom_site_id_1="C(7)" atom_site_id_2="O(2)" atom_site_id_3="C(9)" atom_site_id_4="C(10)" site_symmetry_1="1_555" site_symmetry_2="1_555" site_symmetry_3="1_555" site_symmetry_4="2_666"> <PDBx:publ_flag>yes</PDBx:publ_flag> <PDBx:value>-168.0</PDBx:value> </PDBx:geom_torsion> <PDBx:geom_torsion atom_site_id_1="C(10)" atom_site_id_2="O(3)" atom_site_id_3="C(8)" atom_site_id_4="C(6)" site_symmetry_1="1_555" site_symmetry_2="1_555" site_symmetry_3="1_555" site_symmetry_4="1_555"> <PDBx:publ_flag>yes</PDBx:publ_flag> <PDBx:value>-167.7</PDBx:value> </PDBx:geom_torsion> <PDBx:geom_torsion atom_site_id_1="C(8)" atom_site_id_2="O(3)" atom_site_id_3="C(10)" atom_site_id_4="C(9)" site_symmetry_1="1_555" site_symmetry_2="1_555" site_symmetry_3="1_555" site_symmetry_4="2_666"> <PDBx:publ_flag>yes</PDBx:publ_flag> <PDBx:value>-69.7</PDBx:value> </PDBx:geom_torsion> <PDBx:geom_torsion atom_site_id_1="O(1)" atom_site_id_2="C(1)" atom_site_id_3="C(2)" atom_site_id_4="C(3)" site_symmetry_1="1_555" site_symmetry_2="1_555" site_symmetry_3="1_555" site_symmetry_4="1_555"> <PDBx:publ_flag>no</PDBx:publ_flag> <PDBx:value>-179.5</PDBx:value> </PDBx:geom_torsion> <PDBx:geom_torsion atom_site_id_1="O(1)" atom_site_id_2="C(1)" atom_site_id_3="C(2)" atom_site_id_4="C(7)" site_symmetry_1="1_555" site_symmetry_2="1_555" site_symmetry_3="1_555" site_symmetry_4="1_555"> <PDBx:publ_flag>no</PDBx:publ_flag> <PDBx:value>-0.6</PDBx:value> </PDBx:geom_torsion> </PDBx:geom_torsionCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_geom_torsion_publ_flag CASCADE;
@@ -6278,7 +6278,7 @@ CREATE TABLE geom_torsion (
 --
 -- (quoted from journalType)
 -- Data items in the JOURNAL category record details about the book-keeping by the journal staff when processing a data block submitted for publication. The creator of a data block will not normally specify these data. The data names are not defined in the dictionary because they are for journal use only. Example 1 - based on Acta Cryst. file for entry HL0007 [Willis, Beckwith & Tozer (1991). Acta Cryst. C47, 2276-2277]. <PDBx:journalCategory> <PDBx:journal entry_id="TOZ"> <PDBx:coden_ASTM>ACSCEE</PDBx:coden_ASTM> <PDBx:coeditor_code>HL0007</PDBx:coeditor_code> <PDBx:date_accepted>1991-04-18</PDBx:date_accepted> <PDBx:date_from_coeditor>1991-04-18</PDBx:date_from_coeditor> <PDBx:date_printers_first>1991-08-07</PDBx:date_printers_first> <PDBx:date_proofs_out>1991-08-07</PDBx:date_proofs_out> <PDBx:date_recd_electronic>1991-04-15</PDBx:date_recd_electronic> <PDBx:issue>NOV91</PDBx:issue> <PDBx:name_full>Acta Crystallographica Section C</PDBx:name_full> <PDBx:page_first>2276</PDBx:page_first> <PDBx:page_last>2277</PDBx:page_last> <PDBx:techeditor_code>C910963</PDBx:techeditor_code> <PDBx:volume>47</PDBx:volume> <PDBx:year>1991</PDBx:year> </PDBx:journal> </PDBx:journalCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE journal (
@@ -6338,7 +6338,7 @@ CREATE TABLE journal (
 --
 -- (quoted from journal_indexType)
 -- Data items in the JOURNAL_INDEX category are used to list terms used to generate the journal indexes. The creator of a data block will not normally specify these data items. Example 1 - based on a paper by Zhu, Reynolds, Klein & Trudell [Acta Cryst. (1994), C50, 2067-2069]. <PDBx:journal_indexCategory> <PDBx:journal_index term="C16H19NO4" type="O"> <PDBx:subterm xsi:nil="true" /> </PDBx:journal_index> <PDBx:journal_index term="alkaloids" type="S"> <PDBx:subterm>(-)-norcocaine</PDBx:subterm> </PDBx:journal_index> <PDBx:journal_index term="(-)-norcocaine" type="S"> <PDBx:subterm xsi:nil="true" /> </PDBx:journal_index> <PDBx:journal_index term=" [2R,3S-(2\b,3\b)]-methyl 3-(benzoyloxy)-8-azabicyclo[3.2.1]octane-2-carboxylate" type="S"> <PDBx:subterm xsi:nil="true" /> </PDBx:journal_index> </PDBx:journal_indexCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE journal_index (
@@ -6354,7 +6354,7 @@ CREATE TABLE journal_index (
 --
 -- (quoted from ndb_original_ndb_coordinatesType)
 -- Placeholder category for PDB coordinate data.
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE ndb_original_ndb_coordinates (
@@ -6367,7 +6367,7 @@ CREATE TABLE ndb_original_ndb_coordinates (
 --
 -- (quoted from ndb_struct_conf_naType)
 -- Data items in the NDB_STRUCT_CONF_NA category describes secondary structure features in this entry.
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_ndb_struct_conf_na_feature CASCADE;
@@ -6385,7 +6385,7 @@ CREATE TABLE ndb_struct_conf_na (
 --
 -- (quoted from ndb_struct_feature_naType)
 -- Data items in the NDB_STRUCT_FEATURE_NA category describes tertiary and other special structural features in this entry.
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_ndb_struct_feature_na_feature CASCADE;
@@ -6403,7 +6403,7 @@ CREATE TABLE ndb_struct_feature_na (
 --
 -- (quoted from ndb_struct_na_base_pairType)
 -- Data items in the NDB_STRUCT_NA_BASE_PAIR category record details of base pairing interactions. <PDBx:ndb_struct_na_base_pairCategory> <PDBx:ndb_struct_na_base_pair i_label_asym_id="A" i_label_comp_id="G" i_label_seq_id="1" i_symmetry="1_555" j_label_asym_id="A" j_label_comp_id="C" j_label_seq_id="8" j_symmetry="7_555" model_number="1"> <PDBx:buckle>-5.523</PDBx:buckle> <PDBx:opening>-3.291</PDBx:opening> <PDBx:propeller>-6.752</PDBx:propeller> <PDBx:shear>-0.396</PDBx:shear> <PDBx:stagger>-0.018</PDBx:stagger> <PDBx:stretch>-0.156</PDBx:stretch> </PDBx:ndb_struct_na_base_pair> <PDBx:ndb_struct_na_base_pair i_label_asym_id="A" i_label_comp_id="G" i_label_seq_id="2" i_symmetry="1_555" j_label_asym_id="A" j_label_comp_id="C" j_label_seq_id="7" j_symmetry="7_555" model_number="1"> <PDBx:buckle>-4.727</PDBx:buckle> <PDBx:opening>2.311</PDBx:opening> <PDBx:propeller>-9.765</PDBx:propeller> <PDBx:shear>-0.094</PDBx:shear> <PDBx:stagger>-0.334</PDBx:stagger> <PDBx:stretch>-0.220</PDBx:stretch> </PDBx:ndb_struct_na_base_pair> <PDBx:ndb_struct_na_base_pair i_label_asym_id="A" i_label_comp_id="G" i_label_seq_id="3" i_symmetry="1_555" j_label_asym_id="A" j_label_comp_id="C" j_label_seq_id="6" j_symmetry="7_555" model_number="1"> <PDBx:buckle>-6.454</PDBx:buckle> <PDBx:opening>-1.181</PDBx:opening> <PDBx:propeller>-12.575</PDBx:propeller> <PDBx:shear>-0.285</PDBx:shear> <PDBx:stagger>0.008</PDBx:stagger> <PDBx:stretch>-0.239</PDBx:stretch> </PDBx:ndb_struct_na_base_pair> </PDBx:ndb_struct_na_base_pairCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE ndb_struct_na_base_pair (
@@ -6448,7 +6448,7 @@ CREATE TABLE ndb_struct_na_base_pair (
 --
 -- (quoted from ndb_struct_na_base_pair_stepType)
 -- Data items in the NDB_STRUCT_NA_BASE_PAIR_STEP category record details of base pair step interactions. <PDBx:ndb_struct_na_base_pair_stepCategory> <PDBx:ndb_struct_na_base_pair_step i_label_asym_id_1="A" i_label_asym_id_2="A" i_label_comp_id_1="G" i_label_comp_id_2="G" i_label_seq_id_1="1" i_label_seq_id_2="2" i_symmetry_1="1_555" i_symmetry_2="1_555" j_label_asym_id_1="A" j_label_asym_id_2="A" j_label_comp_id_1="C" j_label_comp_id_2="C" j_label_seq_id_1="8" j_label_seq_id_2="7" j_symmetry_1="7_555" j_symmetry_2="7_555" model_number="1"> <PDBx:rise>3.339</PDBx:rise> <PDBx:roll>9.755</PDBx:roll> <PDBx:shift>0.369</PDBx:shift> <PDBx:slide>-1.414</PDBx:slide> <PDBx:tilt>3.056</PDBx:tilt> <PDBx:twist>33.530</PDBx:twist> </PDBx:ndb_struct_na_base_pair_step> <PDBx:ndb_struct_na_base_pair_step i_label_asym_id_1="A" i_label_asym_id_2="A" i_label_comp_id_1="G" i_label_comp_id_2="G" i_label_seq_id_1="2" i_label_seq_id_2="3" i_symmetry_1="1_555" i_symmetry_2="1_555" j_label_asym_id_1="A" j_label_asym_id_2="A" j_label_comp_id_1="C" j_label_comp_id_2="C" j_label_seq_id_1="7" j_label_seq_id_2="6" j_symmetry_1="7_555" j_symmetry_2="7_555" model_number="1"> <PDBx:rise>3.371</PDBx:rise> <PDBx:roll>6.725</PDBx:roll> <PDBx:shift>0.176</PDBx:shift> <PDBx:slide>-1.672</PDBx:slide> <PDBx:tilt>-1.176</PDBx:tilt> <PDBx:twist>30.004</PDBx:twist> </PDBx:ndb_struct_na_base_pair_step> </PDBx:ndb_struct_na_base_pair_stepCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE ndb_struct_na_base_pair_step (
@@ -6519,7 +6519,7 @@ CREATE TABLE ndb_struct_na_base_pair_step (
 --
 -- (quoted from pdbx_SG_projectType)
 -- Data items in the PDBX_CONTACT_AUTHOR category record details about the Structural Genomics Project and name and initials for each Center. Example 1 - <PDBx:pdbx_SG_projectCategory> <PDBx:pdbx_SG_project id="1"> <PDBx:full_name_of_center>Berkeley Structural Genomics Center</PDBx:full_name_of_center> <PDBx:initial_of_center>BSGC</PDBx:initial_of_center> <PDBx:project_name>PSI, Protein Structure Initiative</PDBx:project_name> </PDBx:pdbx_SG_project> </PDBx:pdbx_SG_projectCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_SG_project_full_name_of_center CASCADE;
@@ -6543,7 +6543,7 @@ CREATE TABLE "pdbx_SG_project" (
 --
 -- (quoted from pdbx_atlasType)
 -- Gives information about the organization of the NDB Structural Atlas.
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_atlas (
@@ -6559,7 +6559,7 @@ CREATE TABLE pdbx_atlas (
 --
 -- (quoted from pdbx_atom_site_aniso_tlsType)
 -- Data items in the PDBX_ATOM_SITE_ANISO_TLS category record details about the TLS contribution to anisotropic displacement parameters. Example 1 <PDBx:pdbx_atom_site_aniso_tlsCategory> <PDBx:pdbx_atom_site_aniso_tls id="1" tls_group_id="1"> <PDBx:U_tls11>2541</PDBx:U_tls11> <PDBx:U_tls12>676</PDBx:U_tls12> <PDBx:U_tls13>-827</PDBx:U_tls13> <PDBx:U_tls22>2835</PDBx:U_tls22> <PDBx:U_tls23>341</PDBx:U_tls23> <PDBx:U_tls33>3175</PDBx:U_tls33> <PDBx:auth_asym_id>A</PDBx:auth_asym_id> <PDBx:auth_atom_id>CB</PDBx:auth_atom_id> <PDBx:auth_comp_id>SER</PDBx:auth_comp_id> <PDBx:auth_seq_id>8</PDBx:auth_seq_id> <PDBx:type_symbol>C</PDBx:type_symbol> </PDBx:pdbx_atom_site_aniso_tls> <PDBx:pdbx_atom_site_aniso_tls id="2" tls_group_id="1"> <PDBx:U_tls11>3708</PDBx:U_tls11> <PDBx:U_tls12>633</PDBx:U_tls12> <PDBx:U_tls13>-724</PDBx:U_tls13> <PDBx:U_tls22>3876</PDBx:U_tls22> <PDBx:U_tls23>342</PDBx:U_tls23> <PDBx:U_tls33>4181</PDBx:U_tls33> <PDBx:auth_asym_id>A</PDBx:auth_asym_id> <PDBx:auth_atom_id>OG</PDBx:auth_atom_id> <PDBx:auth_comp_id>SER</PDBx:auth_comp_id> <PDBx:auth_seq_id>8</PDBx:auth_seq_id> <PDBx:type_symbol>O</PDBx:type_symbol> </PDBx:pdbx_atom_site_aniso_tls> <PDBx:pdbx_atom_site_aniso_tls id="3" tls_group_id="1"> <PDBx:U_tls11>7054</PDBx:U_tls11> <PDBx:U_tls12>619</PDBx:U_tls12> <PDBx:U_tls13>-966</PDBx:U_tls13> <PDBx:U_tls22>7457</PDBx:U_tls22> <PDBx:U_tls23>344</PDBx:U_tls23> <PDBx:U_tls33>7553</PDBx:U_tls33> <PDBx:auth_asym_id>A</PDBx:auth_asym_id> <PDBx:auth_atom_id>C</PDBx:auth_atom_id> <PDBx:auth_comp_id>SER</PDBx:auth_comp_id> <PDBx:auth_seq_id>8</PDBx:auth_seq_id> <PDBx:type_symbol>C</PDBx:type_symbol> </PDBx:pdbx_atom_site_aniso_tls> <PDBx:pdbx_atom_site_aniso_tls id="4" tls_group_id="1"> <PDBx:U_tls11>6837</PDBx:U_tls11> <PDBx:U_tls12>567</PDBx:U_tls12> <PDBx:U_tls13>-974</PDBx:U_tls13> <PDBx:U_tls22>7210</PDBx:U_tls22> <PDBx:U_tls23>341</PDBx:U_tls23> <PDBx:U_tls33>7184</PDBx:U_tls33> <PDBx:auth_asym_id>A</PDBx:auth_asym_id> <PDBx:auth_atom_id>O</PDBx:auth_atom_id> <PDBx:auth_comp_id>SER</PDBx:auth_comp_id> <PDBx:auth_seq_id>8</PDBx:auth_seq_id> <PDBx:type_symbol>O</PDBx:type_symbol> </PDBx:pdbx_atom_site_aniso_tls> <PDBx:pdbx_atom_site_aniso_tls id="5" tls_group_id="1"> <PDBx:U_tls11>5792</PDBx:U_tls11> <PDBx:U_tls12>538</PDBx:U_tls12> <PDBx:U_tls13>-778</PDBx:U_tls13> <PDBx:U_tls22>6180</PDBx:U_tls22> <PDBx:U_tls23>290</PDBx:U_tls23> <PDBx:U_tls33>6271</PDBx:U_tls33> <PDBx:auth_asym_id>A</PDBx:auth_asym_id> <PDBx:auth_atom_id>N</PDBx:auth_atom_id> <PDBx:auth_comp_id>SER</PDBx:auth_comp_id> <PDBx:auth_seq_id>8</PDBx:auth_seq_id> <PDBx:type_symbol>N</PDBx:type_symbol> </PDBx:pdbx_atom_site_aniso_tls> <PDBx:pdbx_atom_site_aniso_tls id="6" tls_group_id="1"> <PDBx:U_tls11>8440</PDBx:U_tls11> <PDBx:U_tls12>616</PDBx:U_tls12> <PDBx:U_tls13>-861</PDBx:U_tls13> <PDBx:U_tls22>8771</PDBx:U_tls22> <PDBx:U_tls23>331</PDBx:U_tls23> <PDBx:U_tls33>8935</PDBx:U_tls33> <PDBx:auth_asym_id>A</PDBx:auth_asym_id> <PDBx:auth_atom_id>CA</PDBx:auth_atom_id> <PDBx:auth_comp_id>SER</PDBx:auth_comp_id> <PDBx:auth_seq_id>8</PDBx:auth_seq_id> <PDBx:type_symbol>C</PDBx:type_symbol> </PDBx:pdbx_atom_site_aniso_tls> </PDBx:pdbx_atom_site_aniso_tlsCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_atom_site_aniso_tls (
@@ -6597,7 +6597,7 @@ CREATE TABLE pdbx_atom_site_aniso_tls (
 --
 -- (quoted from pdbx_auditType)
 -- The PDBX_AUDIT holds current version information.
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_audit (
@@ -6611,7 +6611,7 @@ CREATE TABLE pdbx_audit (
 --
 -- (quoted from pdbx_audit_authorType)
 -- Data items in the PDBX_AUDIT_AUTHOR category record details about the author(s) of the data block. Example 1 - based on PDB entry 5HVP and laboratory records for the structure corresponding to PDB entry 5HVP <PDBx:pdbx_audit_authorCategory> <PDBx:pdbx_audit_author ordinal="1"> <PDBx:address> Department of Biophysical Chemistry Merck Research Laboratories P. O. Box 2000, Ry80M203 Rahway, New Jersey 07065 USA</PDBx:address> <PDBx:name>Fitzgerald, Paula M.D.</PDBx:name> </PDBx:pdbx_audit_author> <PDBx:pdbx_audit_author ordinal="2"> <PDBx:address> Department of Biophysical Chemistry Merck Research Laboratories P. O. Box 2000, Ry80M203 Rahway, New Jersey 07065 USA</PDBx:address> <PDBx:name>McKeever, Brian M.</PDBx:name> </PDBx:pdbx_audit_author> <PDBx:pdbx_audit_author ordinal="3"> <PDBx:address> Department of Biophysical Chemistry Merck Research Laboratories P. O. Box 2000, Ry80M203 Rahway, New Jersey 07065 USA</PDBx:address> <PDBx:name>Van Middlesworth, J.F.</PDBx:name> </PDBx:pdbx_audit_author> <PDBx:pdbx_audit_author ordinal="4"> <PDBx:address> Department of Biophysical Chemistry Merck Research Laboratories P. O. Box 2000, Ry80M203 Rahway, New Jersey 07065 USA</PDBx:address> <PDBx:name>Springer, James P.</PDBx:name> </PDBx:pdbx_audit_author> </PDBx:pdbx_audit_authorCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_audit_author (
@@ -6626,7 +6626,7 @@ CREATE TABLE pdbx_audit_author (
 --
 -- (quoted from pdbx_audit_conform_extensionType)
 -- Data items in the PDBX_AUDIT_CONFORM_EXTENSION category describe extension dictionary versions against which the data names appearing the current data block are conformant. Example 1 - Conforming to EMD V 1.0 extension dictionary. <PDBx:pdbx_audit_conform_extensionCategory> <PDBx:pdbx_audit_conform_extension extension_dict_name="EMD" extension_dict_version="1.0"> <PDBx:extension_dict_location>http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v5_next.dic</PDBx:extension_dict_location> </PDBx:pdbx_audit_conform_extension> </PDBx:pdbx_audit_conform_extensionCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_audit_conform_extension_extension_dict_name CASCADE;
@@ -6644,7 +6644,7 @@ CREATE TABLE pdbx_audit_conform_extension (
 --
 -- (quoted from pdbx_audit_revision_categoryType)
 -- Data items in the PDBX_AUDIT_REVISION_CATEGORY category report the data categories associated with a PDBX_AUDIT_REVISION_HISTORY record. Example 1 <PDBx:pdbx_audit_revision_categoryCategory> <PDBx:pdbx_audit_revision_category data_content_type="Structure model" ordinal="1" revision_ordinal="1"> <PDBx:category>audit_author</PDBx:category> </PDBx:pdbx_audit_revision_category> <PDBx:pdbx_audit_revision_category data_content_type="Structure model" ordinal="2" revision_ordinal="1"> <PDBx:category>citation</PDBx:category> </PDBx:pdbx_audit_revision_category> <PDBx:pdbx_audit_revision_category data_content_type="Structure model" ordinal="3" revision_ordinal="1"> <PDBx:category>citation_author</PDBx:category> </PDBx:pdbx_audit_revision_category> <PDBx:pdbx_audit_revision_category data_content_type="Structure model" ordinal="4" revision_ordinal="2"> <PDBx:category>citation</PDBx:category> </PDBx:pdbx_audit_revision_category> </PDBx:pdbx_audit_revision_categoryCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_audit_revision_category_data_content_type CASCADE;
@@ -6664,7 +6664,7 @@ CREATE TABLE pdbx_audit_revision_category (
 --
 -- (quoted from pdbx_audit_revision_detailsType)
 -- Data items in the PDBX_audit_revision_details category record descriptions of changes associated with PDBX_AUDIT_REVISION_HISTORY records. Example 1 <PDBx:pdbx_audit_revision_detailsCategory> <PDBx:pdbx_audit_revision_details data_content_type="Structure model" ordinal="1" revision_ordinal="1"> <PDBx:provider>repository</PDBx:provider> <PDBx:type>Initial release</PDBx:type> </PDBx:pdbx_audit_revision_details> <PDBx:pdbx_audit_revision_details data_content_type="Structure model" ordinal="2" revision_ordinal="7"> <PDBx:description>Remodeling of inhibitor</PDBx:description> <PDBx:provider>author</PDBx:provider> <PDBx:type>Coordinate replacement</PDBx:type> </PDBx:pdbx_audit_revision_details> </PDBx:pdbx_audit_revision_detailsCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_audit_revision_details_provider CASCADE;
@@ -6691,7 +6691,7 @@ CREATE TABLE pdbx_audit_revision_details (
 --
 -- (quoted from pdbx_audit_revision_groupType)
 -- Data items in the PDBX_AUDIT_revision_group category report the content groups associated with a PDBX_AUDIT_REVISION_HISTORY record. Example 1 <PDBx:pdbx_audit_revision_groupCategory> <PDBx:pdbx_audit_revision_group data_content_type="Structure model" ordinal="1" revision_ordinal="2"> <PDBx:group>citation</PDBx:group> </PDBx:pdbx_audit_revision_group> <PDBx:pdbx_audit_revision_group data_content_type="Structure model" ordinal="2" revision_ordinal="3"> <PDBx:group>sample</PDBx:group> </PDBx:pdbx_audit_revision_group> </PDBx:pdbx_audit_revision_groupCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_audit_revision_group_group CASCADE;
@@ -6713,7 +6713,7 @@ CREATE TABLE pdbx_audit_revision_group (
 --
 -- (quoted from pdbx_audit_revision_itemType)
 -- Data items in the PDBX_AUDIT_REVISION_ITEM category report the data items associated with a PDBX_AUDIT_REVISION_HISTORY record. Example 1 <PDBx:pdbx_audit_revision_itemCategory> <PDBx:pdbx_audit_revision_item data_content_type="Structure model" ordinal="1" revision_ordinal="1"> <PDBx:item>_atom_site.type_symbol</PDBx:item> </PDBx:pdbx_audit_revision_item> </PDBx:pdbx_audit_revision_itemCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_audit_revision_item_data_content_type CASCADE;
@@ -6733,7 +6733,7 @@ CREATE TABLE pdbx_audit_revision_item (
 --
 -- (quoted from pdbx_audit_supportType)
 -- Data items in the PDBX_AUDIT_SUPPORT category record details about funding support for the entry. Example 1 - <PDBx:pdbx_audit_supportCategory> <PDBx:pdbx_audit_support ordinal="1"> <PDBx:country>United States</PDBx:country> <PDBx:funding_organization>National Institutes of Health/National Institute of General Medical Sciences</PDBx:funding_organization> <PDBx:grant_number>1R01GM072999-01</PDBx:grant_number> </PDBx:pdbx_audit_support> </PDBx:pdbx_audit_supportCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_audit_support (
@@ -6750,7 +6750,7 @@ CREATE TABLE pdbx_audit_support (
 --
 -- (quoted from pdbx_bond_distance_limitsType)
 -- This category provides a table of upper and lower distance limits used as criteria in determining covalent bonds. The table is organized by atom type pairs. Example 1 - Abbreviated bond distance limit table <PDBx:pdbx_bond_distance_limitsCategory> <PDBx:pdbx_bond_distance_limits atom_type_1="N" atom_type_2="Ag"> <PDBx:lower_limit>1.85</PDBx:lower_limit> <PDBx:upper_limit>2.70</PDBx:upper_limit> </PDBx:pdbx_bond_distance_limits> <PDBx:pdbx_bond_distance_limits atom_type_1="O" atom_type_2="Ag"> <PDBx:lower_limit>1.85</PDBx:lower_limit> <PDBx:upper_limit>2.70</PDBx:upper_limit> </PDBx:pdbx_bond_distance_limits> <PDBx:pdbx_bond_distance_limits atom_type_1="S" atom_type_2="Ag"> <PDBx:lower_limit>2.00</PDBx:lower_limit> <PDBx:upper_limit>3.00</PDBx:upper_limit> </PDBx:pdbx_bond_distance_limits> <PDBx:pdbx_bond_distance_limits atom_type_1="Al" atom_type_2="H"> <PDBx:lower_limit>1.35</PDBx:lower_limit> <PDBx:upper_limit>1.65</PDBx:upper_limit> </PDBx:pdbx_bond_distance_limits> <PDBx:pdbx_bond_distance_limits atom_type_1="As" atom_type_2="H"> <PDBx:lower_limit>1.20</PDBx:lower_limit> <PDBx:upper_limit>1.60</PDBx:upper_limit> </PDBx:pdbx_bond_distance_limits> <PDBx:pdbx_bond_distance_limits atom_type_1="N" atom_type_2="Au"> <PDBx:lower_limit>1.80</PDBx:lower_limit> <PDBx:upper_limit>2.80</PDBx:upper_limit> </PDBx:pdbx_bond_distance_limits> <PDBx:pdbx_bond_distance_limits atom_type_1="O" atom_type_2="Au"> <PDBx:lower_limit>1.80</PDBx:lower_limit> <PDBx:upper_limit>2.80</PDBx:upper_limit> </PDBx:pdbx_bond_distance_limits> <PDBx:pdbx_bond_distance_limits atom_type_1="S" atom_type_2="Au"> <PDBx:lower_limit>1.80</PDBx:lower_limit> <PDBx:upper_limit>3.00</PDBx:upper_limit> </PDBx:pdbx_bond_distance_limits> <PDBx:pdbx_bond_distance_limits atom_type_1="B" atom_type_2="B"> <PDBx:lower_limit>1.45</PDBx:lower_limit> <PDBx:upper_limit>1.95</PDBx:upper_limit> </PDBx:pdbx_bond_distance_limits> <PDBx:pdbx_bond_distance_limits atom_type_1="C" atom_type_2="B"> <PDBx:lower_limit>1.20</PDBx:lower_limit> <PDBx:upper_limit>1.85</PDBx:upper_limit> </PDBx:pdbx_bond_distance_limits> <PDBx:pdbx_bond_distance_limits atom_type_1="F" atom_type_2="B"> <PDBx:lower_limit>1.20</PDBx:lower_limit> <PDBx:upper_limit>1.75</PDBx:upper_limit> </PDBx:pdbx_bond_distance_limits> </PDBx:pdbx_bond_distance_limitsCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_bond_distance_limits (
@@ -6769,7 +6769,7 @@ CREATE TABLE pdbx_bond_distance_limits (
 --
 -- (quoted from pdbx_branch_schemeType)
 -- The PDBX_BRANCH_SCHEME category provides residue level nomenclature mapping for branch chain entities. Example 1 - <PDBx:pdbx_branch_schemeCategory> <PDBx:pdbx_branch_scheme asym_id="B" entity_id="2" mon_id="NAG" num="1"> <PDBx:auth_asym_id>A</PDBx:auth_asym_id> <PDBx:auth_mon_id>NAG</PDBx:auth_mon_id> <PDBx:auth_seq_num>1592</PDBx:auth_seq_num> <PDBx:hetero>n</PDBx:hetero> <PDBx:pdb_asym_id>B</PDBx:pdb_asym_id> <PDBx:pdb_mon_id>NAG</PDBx:pdb_mon_id> <PDBx:pdb_seq_num>1</PDBx:pdb_seq_num> </PDBx:pdbx_branch_scheme> <PDBx:pdbx_branch_scheme asym_id="B" entity_id="2" mon_id="GAL" num="2"> <PDBx:auth_asym_id>A</PDBx:auth_asym_id> <PDBx:auth_mon_id>GAL</PDBx:auth_mon_id> <PDBx:auth_seq_num>1591</PDBx:auth_seq_num> <PDBx:hetero>n</PDBx:hetero> <PDBx:pdb_asym_id>B</PDBx:pdb_asym_id> <PDBx:pdb_mon_id>GAL</PDBx:pdb_mon_id> <PDBx:pdb_seq_num>2</PDBx:pdb_seq_num> </PDBx:pdbx_branch_scheme> <PDBx:pdbx_branch_scheme asym_id="B" entity_id="2" mon_id="FUC" num="3"> <PDBx:auth_asym_id>A</PDBx:auth_asym_id> <PDBx:auth_mon_id>FUC</PDBx:auth_mon_id> <PDBx:auth_seq_num>1590</PDBx:auth_seq_num> <PDBx:hetero>n</PDBx:hetero> <PDBx:pdb_asym_id>B</PDBx:pdb_asym_id> <PDBx:pdb_mon_id>FUC</PDBx:pdb_mon_id> <PDBx:pdb_seq_num>3</PDBx:pdb_seq_num> </PDBx:pdbx_branch_scheme> <PDBx:pdbx_branch_scheme asym_id="B" entity_id="2" mon_id="FUC" num="4"> <PDBx:auth_asym_id>A</PDBx:auth_asym_id> <PDBx:auth_mon_id>FUC</PDBx:auth_mon_id> <PDBx:auth_seq_num>1593</PDBx:auth_seq_num> <PDBx:hetero>n</PDBx:hetero> <PDBx:pdb_asym_id>B</PDBx:pdb_asym_id> <PDBx:pdb_mon_id>FUC</PDBx:pdb_mon_id> <PDBx:pdb_seq_num>4</PDBx:pdb_seq_num> </PDBx:pdbx_branch_scheme> </PDBx:pdbx_branch_schemeCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_branch_scheme_hetero CASCADE;
@@ -6799,7 +6799,7 @@ CREATE TABLE pdbx_branch_scheme (
 --
 -- (quoted from pdbx_buffer_componentsType)
 -- Constituents of buffer in sample Example 1 - based on PDB entry 1DYL and laboratory records for the structure corresponding to PDB entry 1DYL <PDBx:pdbx_buffer_componentsCategory> <PDBx:pdbx_buffer_components buffer_id="1" id="1"> <PDBx:conc>4 </PDBx:conc> <PDBx:details xsi:nil="true" /> <PDBx:name>NaCl</PDBx:name> <PDBx:volume>0.200 </PDBx:volume> </PDBx:pdbx_buffer_components> <PDBx:pdbx_buffer_components buffer_id="1" id="2"> <PDBx:conc>100</PDBx:conc> <PDBx:details xsi:nil="true" /> <PDBx:name>Acetic Acid</PDBx:name> <PDBx:volume>0.047 </PDBx:volume> </PDBx:pdbx_buffer_components> <PDBx:pdbx_buffer_components buffer_id="1" id="3"> <PDBx:conc>neat</PDBx:conc> <PDBx:details xsi:nil="true" /> <PDBx:name>water</PDBx:name> <PDBx:volume>0.700 </PDBx:volume> </PDBx:pdbx_buffer_components> </PDBx:pdbx_buffer_componentsCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_buffer_components_conc_units CASCADE;
@@ -6822,7 +6822,7 @@ CREATE TABLE pdbx_buffer_components (
 --
 -- (quoted from pdbx_chem_comp_atom_editType)
 -- Data items in the PDBX_CHEM_COMP_ATOM_EDIT category provide atom level editing instructions to be applied to imported chemical components. Example 1 - <PDBx:pdbx_chem_comp_atom_editCategory> <PDBx:pdbx_chem_comp_atom_edit ordinal="1"> <PDBx:atom_id>HN2</PDBx:atom_id> <PDBx:comp_id>LYS</PDBx:comp_id> <PDBx:edit_op>DELETE</PDBx:edit_op> </PDBx:pdbx_chem_comp_atom_edit> </PDBx:pdbx_chem_comp_atom_editCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_chem_comp_atom_edit_edit_op CASCADE;
@@ -6842,7 +6842,7 @@ CREATE TABLE pdbx_chem_comp_atom_edit (
 --
 -- (quoted from pdbx_chem_comp_atom_featureType)
 -- Data items in the PDBX_CHEM_COMP_ATOM_FEATURE category provide a selected list of atom level features for the chemical component. Example 1 - <PDBx:pdbx_chem_comp_atom_featureCategory> <PDBx:pdbx_chem_comp_atom_feature atom_id="N" comp_id="LYS" feature_type="NT"></PDBx:pdbx_chem_comp_atom_feature> <PDBx:pdbx_chem_comp_atom_feature atom_id="C" comp_id="LYS" feature_type="CT"></PDBx:pdbx_chem_comp_atom_feature> <PDBx:pdbx_chem_comp_atom_feature atom_id="CA" comp_id="LYS" feature_type="CPA"></PDBx:pdbx_chem_comp_atom_feature> </PDBx:pdbx_chem_comp_atom_featureCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_chem_comp_atom_feature_feature_type CASCADE;
@@ -6861,7 +6861,7 @@ CREATE TABLE pdbx_chem_comp_atom_feature (
 --
 -- (quoted from pdbx_chem_comp_atom_relatedType)
 -- PDBX_CHEM_COMP_ATOM_RELATED provides atom level nomenclature mapping between two related chemical components. Example 1 - <PDBx:pdbx_chem_comp_atom_relatedCategory> <PDBx:pdbx_chem_comp_atom_related comp_id="SGN" ordinal="1" related_comp_id="GLC"> <PDBx:atom_id>C1</PDBx:atom_id> <PDBx:related_atom_id>C1</PDBx:related_atom_id> <PDBx:related_type>Carbohydrate core</PDBx:related_type> </PDBx:pdbx_chem_comp_atom_related> <PDBx:pdbx_chem_comp_atom_related comp_id="SGN" ordinal="2" related_comp_id="GLC"> <PDBx:atom_id>C2</PDBx:atom_id> <PDBx:related_atom_id>C2</PDBx:related_atom_id> <PDBx:related_type>Carbohydrate core</PDBx:related_type> </PDBx:pdbx_chem_comp_atom_related> <PDBx:pdbx_chem_comp_atom_related comp_id="SGN" ordinal="3" related_comp_id="GLC"> <PDBx:atom_id>C3</PDBx:atom_id> <PDBx:related_atom_id>C3</PDBx:related_atom_id> <PDBx:related_type>Carbohydrate core</PDBx:related_type> </PDBx:pdbx_chem_comp_atom_related> <PDBx:pdbx_chem_comp_atom_related comp_id="SGN" ordinal="4" related_comp_id="GLC"> <PDBx:atom_id>C4</PDBx:atom_id> <PDBx:related_atom_id>C4</PDBx:related_atom_id> <PDBx:related_type>Carbohydrate core</PDBx:related_type> </PDBx:pdbx_chem_comp_atom_related> <PDBx:pdbx_chem_comp_atom_related comp_id="SGN" ordinal="5" related_comp_id="GLC"> <PDBx:atom_id>C5</PDBx:atom_id> <PDBx:related_atom_id>C5</PDBx:related_atom_id> <PDBx:related_type>Carbohydrate core</PDBx:related_type> </PDBx:pdbx_chem_comp_atom_related> <PDBx:pdbx_chem_comp_atom_related comp_id="SGN" ordinal="6" related_comp_id="GLC"> <PDBx:atom_id>C6</PDBx:atom_id> <PDBx:related_atom_id>C6</PDBx:related_atom_id> <PDBx:related_type>Carbohydrate core</PDBx:related_type> </PDBx:pdbx_chem_comp_atom_related> <PDBx:pdbx_chem_comp_atom_related comp_id="SGN" ordinal="7" related_comp_id="GLC"> <PDBx:atom_id>N</PDBx:atom_id> <PDBx:related_type>Carbohydrate core</PDBx:related_type> </PDBx:pdbx_chem_comp_atom_related> <PDBx:pdbx_chem_comp_atom_related comp_id="SGN" ordinal="8" related_comp_id="GLC"> <PDBx:atom_id>O1</PDBx:atom_id> <PDBx:related_atom_id>O1</PDBx:related_atom_id> <PDBx:related_type>Carbohydrate core</PDBx:related_type> </PDBx:pdbx_chem_comp_atom_related> <PDBx:pdbx_chem_comp_atom_related comp_id="SGN" ordinal="9" related_comp_id="GLC"> <PDBx:atom_id>O3</PDBx:atom_id> <PDBx:related_atom_id>O3</PDBx:related_atom_id> <PDBx:related_type>Carbohydrate core</PDBx:related_type> </PDBx:pdbx_chem_comp_atom_related> <PDBx:pdbx_chem_comp_atom_related comp_id="SGN" ordinal="10" related_comp_id="GLC"> <PDBx:atom_id>O4</PDBx:atom_id> <PDBx:related_atom_id>O4</PDBx:related_atom_id> <PDBx:related_type>Carbohydrate core</PDBx:related_type> </PDBx:pdbx_chem_comp_atom_related> <PDBx:pdbx_chem_comp_atom_related comp_id="SGN" ordinal="11" related_comp_id="GLC"> <PDBx:atom_id>O5</PDBx:atom_id> <PDBx:related_atom_id>O5</PDBx:related_atom_id> <PDBx:related_type>Carbohydrate core</PDBx:related_type> </PDBx:pdbx_chem_comp_atom_related> <PDBx:pdbx_chem_comp_atom_related comp_id="SGN" ordinal="12" related_comp_id="GLC"> <PDBx:atom_id>O6</PDBx:atom_id> <PDBx:related_atom_id>O6</PDBx:related_atom_id> <PDBx:related_type>Carbohydrate core</PDBx:related_type> </PDBx:pdbx_chem_comp_atom_related> <PDBx:pdbx_chem_comp_atom_related comp_id="SGN" ordinal="13" related_comp_id="GLC"> <PDBx:atom_id>S1</PDBx:atom_id> <PDBx:related_type>Carbohydrate core</PDBx:related_type> </PDBx:pdbx_chem_comp_atom_related> <PDBx:pdbx_chem_comp_atom_related comp_id="SGN" ordinal="14" related_comp_id="GLC"> <PDBx:atom_id>O1S</PDBx:atom_id> <PDBx:related_type>Carbohydrate core</PDBx:related_type> </PDBx:pdbx_chem_comp_atom_related> <PDBx:pdbx_chem_comp_atom_related comp_id="SGN" ordinal="15" related_comp_id="GLC"> <PDBx:atom_id>O2S</PDBx:atom_id> <PDBx:related_type>Carbohydrate core</PDBx:related_type> </PDBx:pdbx_chem_comp_atom_related> <PDBx:pdbx_chem_comp_atom_related comp_id="SGN" ordinal="16" related_comp_id="GLC"> <PDBx:atom_id>O3S</PDBx:atom_id> <PDBx:related_type>Carbohydrate core</PDBx:related_type> </PDBx:pdbx_chem_comp_atom_related> <PDBx:pdbx_chem_comp_atom_related comp_id="SGN" ordinal="17" related_comp_id="GLC"> <PDBx:atom_id>S2</PDBx:atom_id> <PDBx:related_type>Carbohydrate core</PDBx:related_type> </PDBx:pdbx_chem_comp_atom_related> <PDBx:pdbx_chem_comp_atom_related comp_id="SGN" ordinal="18" related_comp_id="GLC"> <PDBx:atom_id>O4S</PDBx:atom_id> <PDBx:related_type>Carbohydrate core</PDBx:related_type> </PDBx:pdbx_chem_comp_atom_related> <PDBx:pdbx_chem_comp_atom_related comp_id="SGN" ordinal="19" related_comp_id="GLC"> <PDBx:atom_id>O5S</PDBx:atom_id> <PDBx:related_type>Carbohydrate core</PDBx:related_type> </PDBx:pdbx_chem_comp_atom_related> <PDBx:pdbx_chem_comp_atom_related comp_id="SGN" ordinal="20" related_comp_id="GLC"> <PDBx:atom_id>O6S</PDBx:atom_id> <PDBx:related_type>Carbohydrate core</PDBx:related_type> </PDBx:pdbx_chem_comp_atom_related> <PDBx:pdbx_chem_comp_atom_related comp_id="SGN" ordinal="21" related_comp_id="GLC"> <PDBx:atom_id>H1</PDBx:atom_id> <PDBx:related_atom_id>H1</PDBx:related_atom_id> <PDBx:related_type>Carbohydrate core</PDBx:related_type> </PDBx:pdbx_chem_comp_atom_related> <PDBx:pdbx_chem_comp_atom_related comp_id="SGN" ordinal="22" related_comp_id="GLC"> <PDBx:atom_id>H2</PDBx:atom_id> <PDBx:related_atom_id>H2</PDBx:related_atom_id> <PDBx:related_type>Carbohydrate core</PDBx:related_type> </PDBx:pdbx_chem_comp_atom_related> <PDBx:pdbx_chem_comp_atom_related comp_id="SGN" ordinal="23" related_comp_id="GLC"> <PDBx:atom_id>H3</PDBx:atom_id> <PDBx:related_atom_id>H3</PDBx:related_atom_id> <PDBx:related_type>Carbohydrate core</PDBx:related_type> </PDBx:pdbx_chem_comp_atom_related> <PDBx:pdbx_chem_comp_atom_related comp_id="SGN" ordinal="24" related_comp_id="GLC"> <PDBx:atom_id>H4</PDBx:atom_id> <PDBx:related_atom_id>H4</PDBx:related_atom_id> <PDBx:related_type>Carbohydrate core</PDBx:related_type> </PDBx:pdbx_chem_comp_atom_related> <PDBx:pdbx_chem_comp_atom_related comp_id="SGN" ordinal="25" related_comp_id="GLC"> <PDBx:atom_id>H5</PDBx:atom_id> <PDBx:related_atom_id>H5</PDBx:related_atom_id> <PDBx:related_type>Carbohydrate core</PDBx:related_type> </PDBx:pdbx_chem_comp_atom_related> <PDBx:pdbx_chem_comp_atom_related comp_id="SGN" ordinal="26" related_comp_id="GLC"> <PDBx:atom_id>H61</PDBx:atom_id> <PDBx:related_atom_id>H61</PDBx:related_atom_id> <PDBx:related_type>Carbohydrate core</PDBx:related_type> </PDBx:pdbx_chem_comp_atom_related> <PDBx:pdbx_chem_comp_atom_related comp_id="SGN" ordinal="27" related_comp_id="GLC"> <PDBx:atom_id>H62</PDBx:atom_id> <PDBx:related_atom_id>H62</PDBx:related_atom_id> <PDBx:related_type>Carbohydrate core</PDBx:related_type> </PDBx:pdbx_chem_comp_atom_related> <PDBx:pdbx_chem_comp_atom_related comp_id="SGN" ordinal="28" related_comp_id="GLC"> <PDBx:atom_id>HN</PDBx:atom_id> <PDBx:related_type>Carbohydrate core</PDBx:related_type> </PDBx:pdbx_chem_comp_atom_related> <PDBx:pdbx_chem_comp_atom_related comp_id="SGN" ordinal="29" related_comp_id="GLC"> <PDBx:atom_id>HO1</PDBx:atom_id> <PDBx:related_atom_id>HO1</PDBx:related_atom_id> <PDBx:related_type>Carbohydrate core</PDBx:related_type> </PDBx:pdbx_chem_comp_atom_related> <PDBx:pdbx_chem_comp_atom_related comp_id="SGN" ordinal="30" related_comp_id="GLC"> <PDBx:atom_id>HO3</PDBx:atom_id> <PDBx:related_atom_id>HO3</PDBx:related_atom_id> <PDBx:related_type>Carbohydrate core</PDBx:related_type> </PDBx:pdbx_chem_comp_atom_related> <PDBx:pdbx_chem_comp_atom_related comp_id="SGN" ordinal="31" related_comp_id="GLC"> <PDBx:atom_id>HO4</PDBx:atom_id> <PDBx:related_atom_id>HO4</PDBx:related_atom_id> <PDBx:related_type>Carbohydrate core</PDBx:related_type> </PDBx:pdbx_chem_comp_atom_related> <PDBx:pdbx_chem_comp_atom_related comp_id="SGN" ordinal="32" related_comp_id="GLC"> <PDBx:atom_id>HOS3</PDBx:atom_id> <PDBx:related_type>Carbohydrate core</PDBx:related_type> </PDBx:pdbx_chem_comp_atom_related> <PDBx:pdbx_chem_comp_atom_related comp_id="SGN" ordinal="33" related_comp_id="GLC"> <PDBx:atom_id>HOS6</PDBx:atom_id> <PDBx:related_type>Carbohydrate core</PDBx:related_type> </PDBx:pdbx_chem_comp_atom_related> </PDBx:pdbx_chem_comp_atom_relatedCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_chem_comp_atom_related_related_type CASCADE;
@@ -6883,7 +6883,7 @@ CREATE TABLE pdbx_chem_comp_atom_related (
 --
 -- (quoted from pdbx_chem_comp_auditType)
 -- Data items in the PDBX_CHEM_COMP_AUDIT category records the status and tracking information for this component. Example 1 - <PDBx:pdbx_chem_comp_auditCategory> <PDBx:pdbx_chem_comp_audit action_type="Create componenet" comp_id="ATP" date="2007-12-01"> <PDBx:annotator>JY</PDBx:annotator> <PDBx:processing_site>RCSB</PDBx:processing_site> </PDBx:pdbx_chem_comp_audit> <PDBx:pdbx_chem_comp_audit action_type="Modify leaving atom flag" comp_id="ATP" date="2008-10-03"> <PDBx:annotator>CS</PDBx:annotator> <PDBx:processing_site>RCSB</PDBx:processing_site> </PDBx:pdbx_chem_comp_audit> <PDBx:pdbx_chem_comp_audit action_type="Modify synonyms" comp_id="ATP" date="2009-07-03"> <PDBx:annotator>MZ</PDBx:annotator> <PDBx:processing_site>RCSB</PDBx:processing_site> </PDBx:pdbx_chem_comp_audit> </PDBx:pdbx_chem_comp_auditCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_chem_comp_audit_action_type CASCADE;
@@ -6906,7 +6906,7 @@ CREATE TABLE pdbx_chem_comp_audit (
 --
 -- (quoted from pdbx_chem_comp_bond_editType)
 -- Data items in the PDBX_CHEM_COMP_BOND_EDIT category provide bond level editing instructions to be applied to imported chemical components. Example 1 - <PDBx:pdbx_chem_comp_bond_editCategory> <PDBx:pdbx_chem_comp_bond_edit atom_id_1="OXT" atom_id_2="HXT" comp_id="LYS" edit_op="DELETE"> <PDBx:ordinal>1</PDBx:ordinal> </PDBx:pdbx_chem_comp_bond_edit> </PDBx:pdbx_chem_comp_bond_editCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_chem_comp_bond_edit_edit_op CASCADE;
@@ -6929,7 +6929,7 @@ CREATE TABLE pdbx_chem_comp_bond_edit (
 --
 -- (quoted from pdbx_chem_comp_depositor_infoType)
 -- Data items in the PDBX_CHEM_COMP_DEPOSITOR_INFO category record additional details provided by depositors about deposited chemical components. Example 1 - <PDBx:pdbx_chem_comp_depositor_infoCategory> <PDBx:pdbx_chem_comp_depositor_info ordinal="1"> <PDBx:alt_comp_id xsi:nil="true" /> <PDBx:comp_id>GNC</PDBx:comp_id> <PDBx:descriptor>CC(=O)N[C@H]1[C@H](O)O[C@H](CO)[C@@H](O)[C@@H]1O</PDBx:descriptor> <PDBx:descriptor_type>SMILES</PDBx:descriptor_type> <PDBx:formula>C8 H15 N O6</PDBx:formula> <PDBx:name>N-acetyl-beta-D-glucosamine</PDBx:name> </PDBx:pdbx_chem_comp_depositor_info> </PDBx:pdbx_chem_comp_depositor_infoCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_chem_comp_depositor_info_descriptor_type CASCADE;
@@ -6957,7 +6957,7 @@ CREATE TABLE pdbx_chem_comp_depositor_info (
 --
 -- (quoted from pdbx_chem_comp_descriptorType)
 -- Data items in the CHEM_COMP_DESCRIPTOR category provide string descriptors of component chemical structure. Example 1 - <PDBx:pdbx_chem_comp_descriptorCategory> <PDBx:pdbx_chem_comp_descriptor comp_id="ATP" program="OPENEYE" program_version="1.5.0" type="SMILES"> <PDBx:descriptor>c1nc(c2c(n1)n(cn2)C3C(C(C(O3)COP(=O)(O)OP(=O)(O)OP(=O)(O)O)O)O)N</PDBx:descriptor> </PDBx:pdbx_chem_comp_descriptor> </PDBx:pdbx_chem_comp_descriptorCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_chem_comp_descriptor_type CASCADE;
@@ -6980,7 +6980,7 @@ CREATE TABLE pdbx_chem_comp_descriptor (
 --
 -- (quoted from pdbx_chem_comp_featureType)
 -- Additional features associated with the chemical component. Example 1 - <PDBx:pdbx_chem_comp_featureCategory> <PDBx:pdbx_chem_comp_feature comp_id="00X" source="PDB" type="ENZYME INHIBITED" value="ASPARTIC PROTEINASE"></PDBx:pdbx_chem_comp_feature> <PDBx:pdbx_chem_comp_feature comp_id="00X" source="PDB" type="FUNCTION" value="Transistion-state analogue inhibitor"></PDBx:pdbx_chem_comp_feature> <PDBx:pdbx_chem_comp_feature comp_id="00X" source="IUCR" type="STRUCTURE IMAGE URL" value="http://journals.iucr.org/00X.jpg"></PDBx:pdbx_chem_comp_feature> </PDBx:pdbx_chem_comp_featureCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_chem_comp_feature (
@@ -7000,7 +7000,7 @@ CREATE TABLE pdbx_chem_comp_feature (
 --
 -- (quoted from pdbx_chem_comp_identifierType)
 -- Data items in the CHEM_COMP_IDENTIFIER category provide identifiers for chemical components. Example 1 - <PDBx:pdbx_chem_comp_identifierCategory> <PDBx:pdbx_chem_comp_identifier comp_id="ATP" program="ACDLabs" program_version="10.04" type="SYSTEMATIC NAME"> <PDBx:identifier>adenosine 5&apos;-(tetrahydrogen triphosphate)</PDBx:identifier> </PDBx:pdbx_chem_comp_identifier> </PDBx:pdbx_chem_comp_identifierCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_chem_comp_identifier_type CASCADE;
@@ -7023,7 +7023,7 @@ CREATE TABLE pdbx_chem_comp_identifier (
 --
 -- (quoted from pdbx_chem_comp_instance_depositor_infoType)
 -- Data items in the PDBX_CHEM_COMP_INSTANCE_DEPOSITOR_INFO category records depositor provided information about the chemical context of component instances. Example - <PDBx:pdbx_chem_comp_instance_depositor_infoCategory> <PDBx:pdbx_chem_comp_instance_depositor_info ordinal="1"> <PDBx:PDB_ins_code xsi:nil="true" /> <PDBx:auth_asym_id>W</PDBx:auth_asym_id> <PDBx:auth_seq_id>102</PDBx:auth_seq_id> <PDBx:author_provided_flag>Y</PDBx:author_provided_flag> <PDBx:comp_id>X78</PDBx:comp_id> <PDBx:in_polymer_flag>N</PDBx:in_polymer_flag> <PDBx:label_alt_id xsi:nil="true" /> </PDBx:pdbx_chem_comp_instance_depositor_info> </PDBx:pdbx_chem_comp_instance_depositor_infoCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_chem_comp_instance_depositor_info_author_provided_fla CASCADE;
@@ -7048,7 +7048,7 @@ CREATE TABLE pdbx_chem_comp_instance_depositor_info (
 --
 -- (quoted from pdbx_chem_comp_model_atomType)
 -- Data items in the PDBX_CHEM_COMP_MODEL_ATOM category record coordinates for the chemical component model instance. Example 1 - <PDBx:pdbx_chem_comp_model_atomCategory> <PDBx:pdbx_chem_comp_model_atom atom_id="CAA" model_id="M_ZZV_00001"> <PDBx:charge>0</PDBx:charge> <PDBx:model_Cartn_x>2.180</PDBx:model_Cartn_x> <PDBx:model_Cartn_y>6.561</PDBx:model_Cartn_y> <PDBx:model_Cartn_z>8.402</PDBx:model_Cartn_z> <PDBx:ordinal_id>1</PDBx:ordinal_id> <PDBx:type_symbol>C</PDBx:type_symbol> </PDBx:pdbx_chem_comp_model_atom> <PDBx:pdbx_chem_comp_model_atom atom_id="CAB" model_id="M_ZZV_00001"> <PDBx:charge>0</PDBx:charge> <PDBx:model_Cartn_x>5.709</PDBx:model_Cartn_x> <PDBx:model_Cartn_y>6.659</PDBx:model_Cartn_y> <PDBx:model_Cartn_z>8.211</PDBx:model_Cartn_z> <PDBx:ordinal_id>2</PDBx:ordinal_id> <PDBx:type_symbol>C</PDBx:type_symbol> </PDBx:pdbx_chem_comp_model_atom> <PDBx:pdbx_chem_comp_model_atom atom_id="OAC" model_id="M_ZZV_00001"> <PDBx:charge>0</PDBx:charge> <PDBx:model_Cartn_x>1.912</PDBx:model_Cartn_x> <PDBx:model_Cartn_y>12.185</PDBx:model_Cartn_y> <PDBx:model_Cartn_z>12.303</PDBx:model_Cartn_z> <PDBx:ordinal_id>3</PDBx:ordinal_id> <PDBx:type_symbol>O</PDBx:type_symbol> </PDBx:pdbx_chem_comp_model_atom> <PDBx:pdbx_chem_comp_model_atom atom_id="OAD" model_id="M_ZZV_00001"> <PDBx:charge>0</PDBx:charge> <PDBx:model_Cartn_x>4.002</PDBx:model_Cartn_x> <PDBx:model_Cartn_y>7.560</PDBx:model_Cartn_y> <PDBx:model_Cartn_z>6.491</PDBx:model_Cartn_z> <PDBx:ordinal_id>4</PDBx:ordinal_id> <PDBx:type_symbol>O</PDBx:type_symbol> </PDBx:pdbx_chem_comp_model_atom> <PDBx:pdbx_chem_comp_model_atom atom_id="OAE" model_id="M_ZZV_00001"> <PDBx:charge>0</PDBx:charge> <PDBx:model_Cartn_x>4.992</PDBx:model_Cartn_x> <PDBx:model_Cartn_y>9.134</PDBx:model_Cartn_y> <PDBx:model_Cartn_z>8.117</PDBx:model_Cartn_z> <PDBx:ordinal_id>5</PDBx:ordinal_id> <PDBx:type_symbol>O</PDBx:type_symbol> </PDBx:pdbx_chem_comp_model_atom> <PDBx:pdbx_chem_comp_model_atom atom_id="OAF" model_id="M_ZZV_00001"> <PDBx:charge>0</PDBx:charge> <PDBx:model_Cartn_x>2.970</PDBx:model_Cartn_x> <PDBx:model_Cartn_y>10.013</PDBx:model_Cartn_y> <PDBx:model_Cartn_z>13.854</PDBx:model_Cartn_z> <PDBx:ordinal_id>6</PDBx:ordinal_id> <PDBx:type_symbol>O</PDBx:type_symbol> </PDBx:pdbx_chem_comp_model_atom> <PDBx:pdbx_chem_comp_model_atom atom_id="FAG" model_id="M_ZZV_00001"> <PDBx:charge>0</PDBx:charge> <PDBx:model_Cartn_x>-3.392</PDBx:model_Cartn_x> <PDBx:model_Cartn_y>12.249</PDBx:model_Cartn_y> <PDBx:model_Cartn_z>6.995</PDBx:model_Cartn_z> <PDBx:ordinal_id>7</PDBx:ordinal_id> <PDBx:type_symbol>F</PDBx:type_symbol> </PDBx:pdbx_chem_comp_model_atom> <PDBx:pdbx_chem_comp_model_atom atom_id="CAH" model_id="M_ZZV_00001"> <PDBx:charge>0</PDBx:charge> <PDBx:model_Cartn_x>4.361</PDBx:model_Cartn_x> <PDBx:model_Cartn_y>5.472</PDBx:model_Cartn_y> <PDBx:model_Cartn_z>12.379</PDBx:model_Cartn_z> <PDBx:ordinal_id>8</PDBx:ordinal_id> <PDBx:type_symbol>C</PDBx:type_symbol> </PDBx:pdbx_chem_comp_model_atom> <PDBx:pdbx_chem_comp_model_atom atom_id="CAI" model_id="M_ZZV_00001"> <PDBx:charge>0</PDBx:charge> <PDBx:model_Cartn_x>4.277</PDBx:model_Cartn_x> <PDBx:model_Cartn_y>6.182</PDBx:model_Cartn_y> <PDBx:model_Cartn_z>13.595</PDBx:model_Cartn_z> <PDBx:ordinal_id>9</PDBx:ordinal_id> <PDBx:type_symbol>C</PDBx:type_symbol> </PDBx:pdbx_chem_comp_model_atom> <PDBx:pdbx_chem_comp_model_atom atom_id="CAJ" model_id="M_ZZV_00001"> <PDBx:charge>0</PDBx:charge> <PDBx:model_Cartn_x>-2.132</PDBx:model_Cartn_x> <PDBx:model_Cartn_y>12.408</PDBx:model_Cartn_y> <PDBx:model_Cartn_z>8.958</PDBx:model_Cartn_z> <PDBx:ordinal_id>10</PDBx:ordinal_id> <PDBx:type_symbol>C</PDBx:type_symbol> </PDBx:pdbx_chem_comp_model_atom> <PDBx:pdbx_chem_comp_model_atom atom_id="CAK" model_id="M_ZZV_00001"> <PDBx:charge>0</PDBx:charge> <PDBx:model_Cartn_x>-1.112</PDBx:model_Cartn_x> <PDBx:model_Cartn_y>12.651</PDBx:model_Cartn_y> <PDBx:model_Cartn_z>6.807</PDBx:model_Cartn_z> <PDBx:ordinal_id>11</PDBx:ordinal_id> <PDBx:type_symbol>C</PDBx:type_symbol> </PDBx:pdbx_chem_comp_model_atom> <PDBx:pdbx_chem_comp_model_atom atom_id="CAL" model_id="M_ZZV_00001"> <PDBx:charge>0</PDBx:charge> <PDBx:model_Cartn_x>-0.902</PDBx:model_Cartn_x> <PDBx:model_Cartn_y>12.579</PDBx:model_Cartn_y> <PDBx:model_Cartn_z>9.557</PDBx:model_Cartn_z> <PDBx:ordinal_id>12</PDBx:ordinal_id> <PDBx:type_symbol>C</PDBx:type_symbol> </PDBx:pdbx_chem_comp_model_atom> <PDBx:pdbx_chem_comp_model_atom atom_id="CAM" model_id="M_ZZV_00001"> <PDBx:charge>0</PDBx:charge> <PDBx:model_Cartn_x>0.139</PDBx:model_Cartn_x> <PDBx:model_Cartn_y>12.801</PDBx:model_Cartn_y> <PDBx:model_Cartn_z>7.421</PDBx:model_Cartn_z> <PDBx:ordinal_id>13</PDBx:ordinal_id> <PDBx:type_symbol>C</PDBx:type_symbol> </PDBx:pdbx_chem_comp_model_atom> <PDBx:pdbx_chem_comp_model_atom atom_id="CAN" model_id="M_ZZV_00001"> <PDBx:charge>0</PDBx:charge> <PDBx:model_Cartn_x>4.004</PDBx:model_Cartn_x> <PDBx:model_Cartn_y>6.101</PDBx:model_Cartn_y> <PDBx:model_Cartn_z>11.237</PDBx:model_Cartn_z> <PDBx:ordinal_id>14</PDBx:ordinal_id> <PDBx:type_symbol>C</PDBx:type_symbol> </PDBx:pdbx_chem_comp_model_atom> </PDBx:pdbx_chem_comp_model_atomCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_chem_comp_model_atom (
@@ -7074,7 +7074,7 @@ CREATE TABLE pdbx_chem_comp_model_atom (
 --
 -- (quoted from pdbx_chem_comp_model_auditType)
 -- Data items in the PDBX_CHEM_COMP_MODEL_AUDIT category records the status and tracking information for this component model instance. Example 1 - <PDBx:pdbx_chem_comp_model_auditCategory> <PDBx:pdbx_chem_comp_model_audit action_type="Create component model" date="2014-11-30" model_id="M_ZZV_00001"> <PDBx:annotator>JDW</PDBx:annotator> <PDBx:processing_site>RCSB</PDBx:processing_site> </PDBx:pdbx_chem_comp_model_audit> </PDBx:pdbx_chem_comp_model_auditCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_chem_comp_model_audit_action_type CASCADE;
@@ -7097,7 +7097,7 @@ CREATE TABLE pdbx_chem_comp_model_audit (
 --
 -- (quoted from pdbx_chem_comp_model_bondType)
 -- Data items in the PDBX_CHEM_COMP_MODEL_BOND category record details about the bonds between atoms in a chemical component model instance. Example 1 - <PDBx:pdbx_chem_comp_model_bondCategory> <PDBx:pdbx_chem_comp_model_bond atom_id_1="CAA" atom_id_2="NBA" model_id="M_ZZV_00001"> <PDBx:ordinal_id>1</PDBx:ordinal_id> <PDBx:value_order>SING</PDBx:value_order> </PDBx:pdbx_chem_comp_model_bond> <PDBx:pdbx_chem_comp_model_bond atom_id_1="CAA" atom_id_2="HAA" model_id="M_ZZV_00001"> <PDBx:ordinal_id>2</PDBx:ordinal_id> <PDBx:value_order>SING</PDBx:value_order> </PDBx:pdbx_chem_comp_model_bond> <PDBx:pdbx_chem_comp_model_bond atom_id_1="CAA" atom_id_2="HAAA" model_id="M_ZZV_00001"> <PDBx:ordinal_id>3</PDBx:ordinal_id> <PDBx:value_order>SING</PDBx:value_order> </PDBx:pdbx_chem_comp_model_bond> <PDBx:pdbx_chem_comp_model_bond atom_id_1="CAA" atom_id_2="HAAB" model_id="M_ZZV_00001"> <PDBx:ordinal_id>4</PDBx:ordinal_id> <PDBx:value_order>SING</PDBx:value_order> </PDBx:pdbx_chem_comp_model_bond> <PDBx:pdbx_chem_comp_model_bond atom_id_1="CAB" atom_id_2="SBC" model_id="M_ZZV_00001"> <PDBx:ordinal_id>5</PDBx:ordinal_id> <PDBx:value_order>SING</PDBx:value_order> </PDBx:pdbx_chem_comp_model_bond> <PDBx:pdbx_chem_comp_model_bond atom_id_1="CAB" atom_id_2="HAB" model_id="M_ZZV_00001"> <PDBx:ordinal_id>6</PDBx:ordinal_id> <PDBx:value_order>SING</PDBx:value_order> </PDBx:pdbx_chem_comp_model_bond> <PDBx:pdbx_chem_comp_model_bond atom_id_1="CAB" atom_id_2="HABA" model_id="M_ZZV_00001"> <PDBx:ordinal_id>7</PDBx:ordinal_id> <PDBx:value_order>SING</PDBx:value_order> </PDBx:pdbx_chem_comp_model_bond> <PDBx:pdbx_chem_comp_model_bond atom_id_1="CAB" atom_id_2="HABB" model_id="M_ZZV_00001"> <PDBx:ordinal_id>8</PDBx:ordinal_id> <PDBx:value_order>SING</PDBx:value_order> </PDBx:pdbx_chem_comp_model_bond> <PDBx:pdbx_chem_comp_model_bond atom_id_1="OAC" atom_id_2="CAR" model_id="M_ZZV_00001"> <PDBx:ordinal_id>9</PDBx:ordinal_id> <PDBx:value_order>DOUB</PDBx:value_order> </PDBx:pdbx_chem_comp_model_bond> <PDBx:pdbx_chem_comp_model_bond atom_id_1="OAD" atom_id_2="SBC" model_id="M_ZZV_00001"> <PDBx:ordinal_id>10</PDBx:ordinal_id> <PDBx:value_order>DOUB</PDBx:value_order> </PDBx:pdbx_chem_comp_model_bond> <PDBx:pdbx_chem_comp_model_bond atom_id_1="OAE" atom_id_2="SBC" model_id="M_ZZV_00001"> <PDBx:ordinal_id>11</PDBx:ordinal_id> <PDBx:value_order>DOUB</PDBx:value_order> </PDBx:pdbx_chem_comp_model_bond> <PDBx:pdbx_chem_comp_model_bond atom_id_1="OAF" atom_id_2="CAU" model_id="M_ZZV_00001"> <PDBx:ordinal_id>12</PDBx:ordinal_id> <PDBx:value_order>SING</PDBx:value_order> </PDBx:pdbx_chem_comp_model_bond> <PDBx:pdbx_chem_comp_model_bond atom_id_1="OAF" atom_id_2="HOAF" model_id="M_ZZV_00001"> <PDBx:ordinal_id>13</PDBx:ordinal_id> <PDBx:value_order>SING</PDBx:value_order> </PDBx:pdbx_chem_comp_model_bond> <PDBx:pdbx_chem_comp_model_bond atom_id_1="FAG" atom_id_2="CAS" model_id="M_ZZV_00001"> <PDBx:ordinal_id>14</PDBx:ordinal_id> <PDBx:value_order>SING</PDBx:value_order> </PDBx:pdbx_chem_comp_model_bond> <PDBx:pdbx_chem_comp_model_bond atom_id_1="CAH" atom_id_2="CAI" model_id="M_ZZV_00001"> <PDBx:ordinal_id>15</PDBx:ordinal_id> <PDBx:value_order>DOUB</PDBx:value_order> </PDBx:pdbx_chem_comp_model_bond> <PDBx:pdbx_chem_comp_model_bond atom_id_1="CAH" atom_id_2="CAN" model_id="M_ZZV_00001"> <PDBx:ordinal_id>16</PDBx:ordinal_id> <PDBx:value_order>SING</PDBx:value_order> </PDBx:pdbx_chem_comp_model_bond> <PDBx:pdbx_chem_comp_model_bond atom_id_1="CAH" atom_id_2="HAH" model_id="M_ZZV_00001"> <PDBx:ordinal_id>17</PDBx:ordinal_id> <PDBx:value_order>SING</PDBx:value_order> </PDBx:pdbx_chem_comp_model_bond> <PDBx:pdbx_chem_comp_model_bond atom_id_1="CAI" atom_id_2="NAQ" model_id="M_ZZV_00001"> <PDBx:ordinal_id>18</PDBx:ordinal_id> <PDBx:value_order>SING</PDBx:value_order> </PDBx:pdbx_chem_comp_model_bond> <PDBx:pdbx_chem_comp_model_bond atom_id_1="CAI" atom_id_2="HAI" model_id="M_ZZV_00001"> <PDBx:ordinal_id>19</PDBx:ordinal_id> <PDBx:value_order>SING</PDBx:value_order> </PDBx:pdbx_chem_comp_model_bond> </PDBx:pdbx_chem_comp_model_bondCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_chem_comp_model_bond_value_order CASCADE;
@@ -7118,7 +7118,7 @@ CREATE TABLE pdbx_chem_comp_model_bond (
 --
 -- (quoted from pdbx_chem_comp_model_descriptorType)
 -- Data items in the CHEM_COMP_MODEL_DESCRIPTOR category provide string descriptors for component model structures. Example 1 - <PDBx:pdbx_chem_comp_model_descriptorCategory> <PDBx:pdbx_chem_comp_model_descriptor model_id="M_ZZV_00001" type="SMILES"> <PDBx:descriptor>CN(c1c2cccnc2c(c3c1CN(C3=O)Cc4ccc(cc4)F)O)S(=O)(=O)C</PDBx:descriptor> </PDBx:pdbx_chem_comp_model_descriptor> <PDBx:pdbx_chem_comp_model_descriptor model_id="M_ZZV_00001" type="SMILES_CANNONICAL"> <PDBx:descriptor>CN(c1c2cccnc2c(c3c1CN(C3=O)Cc4ccc(cc4)F)O)S(=O)(=O)C</PDBx:descriptor> </PDBx:pdbx_chem_comp_model_descriptor> </PDBx:pdbx_chem_comp_model_descriptorCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_chem_comp_model_descriptor_type CASCADE;
@@ -7136,7 +7136,7 @@ CREATE TABLE pdbx_chem_comp_model_descriptor (
 --
 -- (quoted from pdbx_chem_comp_model_featureType)
 -- Additional features associated with the chemical component. Example 1 - <PDBx:pdbx_chem_comp_model_featureCategory> <PDBx:pdbx_chem_comp_model_feature feature_name="experiment_temperature" model_id="M_ZZV_00001"> <PDBx:feature_value>218.0</PDBx:feature_value> </PDBx:pdbx_chem_comp_model_feature> <PDBx:pdbx_chem_comp_model_feature feature_name="publication_doi" model_id="M_ZZV_00001"> <PDBx:feature_value>10.1016/j.bmcl.2008.01.018</PDBx:feature_value> </PDBx:pdbx_chem_comp_model_feature> <PDBx:pdbx_chem_comp_model_feature feature_name="r_factor" model_id="M_ZZV_00001"> <PDBx:feature_value>6.92</PDBx:feature_value> </PDBx:pdbx_chem_comp_model_feature> <PDBx:pdbx_chem_comp_model_feature feature_name="all_atoms_have_sites" model_id="M_ZZV_00001"> <PDBx:feature_value>Y</PDBx:feature_value> </PDBx:pdbx_chem_comp_model_feature> <PDBx:pdbx_chem_comp_model_feature feature_name="has_disorder" model_id="M_ZZV_00001"> <PDBx:feature_value>Y</PDBx:feature_value> </PDBx:pdbx_chem_comp_model_feature> </PDBx:pdbx_chem_comp_model_featureCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_chem_comp_model_feature (
@@ -7152,7 +7152,7 @@ CREATE TABLE pdbx_chem_comp_model_feature (
 --
 -- (quoted from pdbx_chem_comp_model_referenceType)
 -- Additional features associated with the chemical component. Example 1 - <PDBx:pdbx_chem_comp_model_referenceCategory> <PDBx:pdbx_chem_comp_model_reference db_code="PIWVIB" db_name="CSD" model_id="M_ZZV_00001"></PDBx:pdbx_chem_comp_model_reference> </PDBx:pdbx_chem_comp_model_referenceCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_chem_comp_model_reference (
@@ -7169,7 +7169,7 @@ CREATE TABLE pdbx_chem_comp_model_reference (
 --
 -- (quoted from pdbx_chem_comp_nonstandardType)
 -- Data items in the PDBX_CHEM_COMP_NONSTANDARD category describes common nucleotide modifications and nonstandard features.
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_chem_comp_nonstandard_type CASCADE;
@@ -7186,7 +7186,7 @@ CREATE TABLE pdbx_chem_comp_nonstandard (
 --
 -- (quoted from pdbx_chem_comp_relatedType)
 -- PDBX_CHEM_COMP_RELATED describes the relationship between two chemical components. Example 1 - <PDBx:pdbx_chem_comp_relatedCategory> <PDBx:pdbx_chem_comp_related comp_id="SGN" related_comp_id="GLC" relationship_type="Carbohydrate core"> </PDBx:pdbx_chem_comp_related> </PDBx:pdbx_chem_comp_relatedCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_chem_comp_related_relationship_type CASCADE;
@@ -7206,7 +7206,7 @@ CREATE TABLE pdbx_chem_comp_related (
 --
 -- (quoted from pdbx_chem_comp_subcomponent_entity_listType)
 -- Data items in the pdbx_chem_comp_subcomponent_entity_list category list the constituent chemical entities and entity features in this chemical component. Example 1 - <PDBx:pdbx_chem_comp_subcomponent_entity_listCategory> <PDBx:pdbx_chem_comp_subcomponent_entity_list id="1"> <PDBx:class>polymer</PDBx:class> <PDBx:parent_comp_id>CE8</PDBx:parent_comp_id> <PDBx:type>saccharide</PDBx:type> </PDBx:pdbx_chem_comp_subcomponent_entity_list> </PDBx:pdbx_chem_comp_subcomponent_entity_listCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_chem_comp_subcomponent_entity_list_class CASCADE;
@@ -7226,7 +7226,7 @@ CREATE TABLE pdbx_chem_comp_subcomponent_entity_list (
 --
 -- (quoted from pdbx_chem_comp_subcomponent_struct_connType)
 -- Data items in the pdbx_chem_comp_subcomponent_struct_conn list the chemical interactions among the subcomponents in the chemical component. Example 1 - <PDBx:pdbx_chem_comp_subcomponent_struct_connCategory> <PDBx:pdbx_chem_comp_subcomponent_struct_conn id="1"> <PDBx:atom_id_1> O4</PDBx:atom_id_1> <PDBx:atom_id_2> C1</PDBx:atom_id_2> <PDBx:comp_id_1>BGC</PDBx:comp_id_1> <PDBx:comp_id_2>BGC</PDBx:comp_id_2> <PDBx:entity_id_1>1</PDBx:entity_id_1> <PDBx:entity_id_2>1</PDBx:entity_id_2> <PDBx:seq_id_1>1</PDBx:seq_id_1> <PDBx:seq_id_2>2</PDBx:seq_id_2> <PDBx:type>covale</PDBx:type> </PDBx:pdbx_chem_comp_subcomponent_struct_conn> <PDBx:pdbx_chem_comp_subcomponent_struct_conn id="2"> <PDBx:atom_id_1> O4</PDBx:atom_id_1> <PDBx:atom_id_2> C1</PDBx:atom_id_2> <PDBx:comp_id_1>BGC</PDBx:comp_id_1> <PDBx:comp_id_2>BGC</PDBx:comp_id_2> <PDBx:entity_id_1>1</PDBx:entity_id_1> <PDBx:entity_id_2>1</PDBx:entity_id_2> <PDBx:seq_id_1>2</PDBx:seq_id_1> <PDBx:seq_id_2>3</PDBx:seq_id_2> <PDBx:type>covale</PDBx:type> </PDBx:pdbx_chem_comp_subcomponent_struct_conn> <PDBx:pdbx_chem_comp_subcomponent_struct_conn id="3"> <PDBx:atom_id_1> O4</PDBx:atom_id_1> <PDBx:atom_id_2> C1</PDBx:atom_id_2> <PDBx:comp_id_1>BGC</PDBx:comp_id_1> <PDBx:comp_id_2>BGC</PDBx:comp_id_2> <PDBx:entity_id_1>1</PDBx:entity_id_1> <PDBx:entity_id_2>1</PDBx:entity_id_2> <PDBx:seq_id_1>3</PDBx:seq_id_1> <PDBx:seq_id_2>4</PDBx:seq_id_2> <PDBx:type>covale</PDBx:type> </PDBx:pdbx_chem_comp_subcomponent_struct_conn> <PDBx:pdbx_chem_comp_subcomponent_struct_conn id="4"> <PDBx:atom_id_1> O4</PDBx:atom_id_1> <PDBx:atom_id_2> C1</PDBx:atom_id_2> <PDBx:comp_id_1>BGC</PDBx:comp_id_1> <PDBx:comp_id_2>BGC</PDBx:comp_id_2> <PDBx:entity_id_1>1</PDBx:entity_id_1> <PDBx:entity_id_2>1</PDBx:entity_id_2> <PDBx:seq_id_1>4</PDBx:seq_id_1> <PDBx:seq_id_2>5</PDBx:seq_id_2> <PDBx:type>covale</PDBx:type> </PDBx:pdbx_chem_comp_subcomponent_struct_conn> <PDBx:pdbx_chem_comp_subcomponent_struct_conn id="5"> <PDBx:atom_id_1> O4</PDBx:atom_id_1> <PDBx:atom_id_2> C1</PDBx:atom_id_2> <PDBx:comp_id_1>BGC</PDBx:comp_id_1> <PDBx:comp_id_2>BGC</PDBx:comp_id_2> <PDBx:entity_id_1>1</PDBx:entity_id_1> <PDBx:entity_id_2>1</PDBx:entity_id_2> <PDBx:seq_id_1>5</PDBx:seq_id_1> <PDBx:seq_id_2>6</PDBx:seq_id_2> <PDBx:type>covale</PDBx:type> </PDBx:pdbx_chem_comp_subcomponent_struct_conn> <PDBx:pdbx_chem_comp_subcomponent_struct_conn id="6"> <PDBx:atom_id_1> O4</PDBx:atom_id_1> <PDBx:atom_id_2> C1</PDBx:atom_id_2> <PDBx:comp_id_1>BGC</PDBx:comp_id_1> <PDBx:comp_id_2>BGC</PDBx:comp_id_2> <PDBx:entity_id_1>1</PDBx:entity_id_1> <PDBx:entity_id_2>1</PDBx:entity_id_2> <PDBx:seq_id_1>6</PDBx:seq_id_1> <PDBx:seq_id_2>7</PDBx:seq_id_2> <PDBx:type>covale</PDBx:type> </PDBx:pdbx_chem_comp_subcomponent_struct_conn> <PDBx:pdbx_chem_comp_subcomponent_struct_conn id="7"> <PDBx:atom_id_1> O4</PDBx:atom_id_1> <PDBx:atom_id_2> C1</PDBx:atom_id_2> <PDBx:comp_id_1>BGC</PDBx:comp_id_1> <PDBx:comp_id_2>BGC</PDBx:comp_id_2> <PDBx:entity_id_1>1</PDBx:entity_id_1> <PDBx:entity_id_2>1</PDBx:entity_id_2> <PDBx:seq_id_1>7</PDBx:seq_id_1> <PDBx:seq_id_2>8</PDBx:seq_id_2> <PDBx:type>covale</PDBx:type> </PDBx:pdbx_chem_comp_subcomponent_struct_conn> </PDBx:pdbx_chem_comp_subcomponent_struct_connCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_chem_comp_subcomponent_struct_conn_type CASCADE;
@@ -7250,7 +7250,7 @@ CREATE TABLE pdbx_chem_comp_subcomponent_struct_conn (
 --
 -- (quoted from pdbx_chem_comp_synonymsType)
 -- PDBX_CHEM_COMP_SYNONYMS holds chemical name and synonym correspondences. Example 1 - <PDBx:pdbx_chem_comp_synonymsCategory> <PDBx:pdbx_chem_comp_synonyms comp_id="ROC" ordinal="1"> <PDBx:name>Fortovase</PDBx:name> <PDBx:provenance>DRUGBANK</PDBx:provenance> </PDBx:pdbx_chem_comp_synonyms> <PDBx:pdbx_chem_comp_synonyms comp_id="ROC" ordinal="2"> <PDBx:name>SAQUINAVIR</PDBx:name> <PDBx:provenance>DRUGBANK</PDBx:provenance> </PDBx:pdbx_chem_comp_synonyms> <PDBx:pdbx_chem_comp_synonyms comp_id="ROC" ordinal="3"> <PDBx:name>RO 31-8959</PDBx:name> </PDBx:pdbx_chem_comp_synonyms> </PDBx:pdbx_chem_comp_synonymsCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_chem_comp_synonyms_provenance CASCADE;
@@ -7270,7 +7270,7 @@ CREATE TABLE pdbx_chem_comp_synonyms (
 --
 -- (quoted from pdbx_chem_comp_upload_depositor_infoType)
 -- Data items in the PDBX_CHEM_COMP_UPLOAD_DEPOSITOR_INFO category record details of the uploaded files related to depositor provided chemical assignments. Example 1 - <PDBx:pdbx_chem_comp_upload_depositor_infoCategory> <PDBx:pdbx_chem_comp_upload_depositor_info ordinal="1"> <PDBx:comp_id>GNC</PDBx:comp_id> <PDBx:upload_file_name>GNC.gif</PDBx:upload_file_name> <PDBx:upload_file_type>GIF</PDBx:upload_file_type> </PDBx:pdbx_chem_comp_upload_depositor_info> </PDBx:pdbx_chem_comp_upload_depositor_infoCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_chem_comp_upload_depositor_info_upload_file_type CASCADE;
@@ -7288,7 +7288,7 @@ CREATE TABLE pdbx_chem_comp_upload_depositor_info (
 --
 -- (quoted from pdbx_columninfoType)
 -- <PDBx:pdbx_columninfoCategory> <PDBx:pdbx_columninfo columnname="id" tablename="summary"> <PDBx:WWW_Report_Criteria>1</PDBx:WWW_Report_Criteria> <PDBx:WWW_Selection_Criteria>1</PDBx:WWW_Selection_Criteria> <PDBx:column_serial_no>1</PDBx:column_serial_no> <PDBx:description>id code</PDBx:description> <PDBx:example>id1, id2</PDBx:example> <PDBx:table_serial_no>1</PDBx:table_serial_no> <PDBx:type>1</PDBx:type> </PDBx:pdbx_columninfo> </PDBx:pdbx_columninfoCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_columninfo (
@@ -7310,7 +7310,7 @@ CREATE TABLE pdbx_columninfo (
 --
 -- (quoted from pdbx_connectType)
 -- Local data items describing ligand and monomer chemical features.
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_connect (
@@ -7336,7 +7336,7 @@ CREATE TABLE pdbx_connect (
 --
 -- (quoted from pdbx_connect_atomType)
 -- Local data items describing ligand and monomer atom names and connectivity.
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_connect_atom (
@@ -7357,7 +7357,7 @@ CREATE TABLE pdbx_connect_atom (
 --
 -- (quoted from pdbx_connect_modificationType)
 -- Local data items describing ligand and monomer modifications.
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_connect_modification (
@@ -7371,7 +7371,7 @@ CREATE TABLE pdbx_connect_modification (
 --
 -- (quoted from pdbx_connect_typeType)
 -- Local data items describing ligand and monomer type information.
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_connect_type (
@@ -7386,7 +7386,7 @@ CREATE TABLE pdbx_connect_type (
 --
 -- (quoted from pdbx_construct_featureType)
 -- Data items in the PDBX_CONSTRUCT_FEATURE category may be used to specify various properties of a nucleic acid sequence used during protein production. Example 1 - vector pUC28 <PDBx:pdbx_construct_featureCategory> <PDBx:pdbx_construct_feature construct_id="1" id="1"> <PDBx:details>pKK84-1 ClaI 5260bp 5247..5247 ptac11 TaqI-TaqI 192bp, -35 trp promoter -&gt; pEA300 5452bp</PDBx:details> <PDBx:end_seq xsi:nil="true" /> <PDBx:entry_id>111000111</PDBx:entry_id> <PDBx:start_seq xsi:nil="true" /> <PDBx:type xsi:nil="true" /> </PDBx:pdbx_construct_feature> <PDBx:pdbx_construct_feature construct_id="1" id="2"> <PDBx:details>pKK84-1 1..5246 5246bp ClaI = AT^CGAT TaqI = T^CGA cgact...</PDBx:details> <PDBx:end_seq xsi:nil="true" /> <PDBx:entry_id>111000111</PDBx:entry_id> <PDBx:start_seq xsi:nil="true" /> <PDBx:type xsi:nil="true" /> </PDBx:pdbx_construct_feature> <PDBx:pdbx_construct_feature construct_id="1" id="3"> <PDBx:details>ptac11 190bp ...cat TaqI = T^CGA ClaI = AT^CGAT</PDBx:details> <PDBx:end_seq>5436</PDBx:end_seq> <PDBx:entry_id>111000111</PDBx:entry_id> <PDBx:start_seq>5247</PDBx:start_seq> <PDBx:type xsi:nil="true" /> </PDBx:pdbx_construct_feature> <PDBx:pdbx_construct_feature construct_id="1" id="4"> <PDBx:details>pKK84-1 5247..5260 14bp</PDBx:details> <PDBx:end_seq>5450</PDBx:end_seq> <PDBx:entry_id>111000111</PDBx:entry_id> <PDBx:start_seq>5437</PDBx:start_seq> <PDBx:type xsi:nil="true" /> </PDBx:pdbx_construct_feature> <PDBx:pdbx_construct_feature construct_id="1" id="5"> <PDBx:details>SIT unique EcoRI-ClaI-HindIII-BamHI-PvuII</PDBx:details> <PDBx:end_seq xsi:nil="true" /> <PDBx:entry_id>111000111</PDBx:entry_id> <PDBx:start_seq xsi:nil="true" /> <PDBx:type>misc_binding</PDBx:type> </PDBx:pdbx_construct_feature> <PDBx:pdbx_construct_feature construct_id="1" id="6"> <PDBx:details>ORI E. coli pMB1 (ColE1 and pBR322)</PDBx:details> <PDBx:end_seq xsi:nil="true" /> <PDBx:entry_id>111000111</PDBx:entry_id> <PDBx:start_seq xsi:nil="true" /> <PDBx:type>rep_origin</PDBx:type> </PDBx:pdbx_construct_feature> <PDBx:pdbx_construct_feature construct_id="1" id="7"> <PDBx:details>PRO E. coli trp</PDBx:details> <PDBx:end_seq xsi:nil="true" /> <PDBx:entry_id>111000111</PDBx:entry_id> <PDBx:start_seq xsi:nil="true" /> <PDBx:type>promoter</PDBx:type> </PDBx:pdbx_construct_feature> <PDBx:pdbx_construct_feature construct_id="1" id="8"> <PDBx:details>ANT E. coli beta-lactamase gene (bla) ampicillin resistance gene (apr/amp)</PDBx:details> <PDBx:end_seq xsi:nil="true" /> <PDBx:entry_id>111000111</PDBx:entry_id> <PDBx:start_seq xsi:nil="true" /> <PDBx:type>CDS</PDBx:type> </PDBx:pdbx_construct_feature> </PDBx:pdbx_construct_featureCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_construct_feature (
@@ -7408,7 +7408,7 @@ CREATE TABLE pdbx_construct_feature (
 --
 -- (quoted from pdbx_contact_authorType)
 -- Data items in the PDBX_CONTACT_AUTHOR category record details about the name and address of the author to be contacted concerning the contents of this data block. This category atomizes information to a greater degree than the standard AUDIT_CONTACT_AUTHOR category. Example 1 - <PDBx:pdbx_contact_authorCategory> <PDBx:pdbx_contact_author id="1"> <PDBx:address_1>Department of Biophysical Chemistry</PDBx:address_1> <PDBx:address_2>Merck Research Laboratories</PDBx:address_2> <PDBx:address_3>P. O. Box 2000, Ry80M203</PDBx:address_3> <PDBx:city>Rahway</PDBx:city> <PDBx:country>UNITED STATES</PDBx:country> <PDBx:email>paula_fitzgerald@merck.com</PDBx:email> <PDBx:fax>908 594 6645</PDBx:fax> <PDBx:name_first>Paula</PDBx:name_first> <PDBx:name_last>Fitzgerald</PDBx:name_last> <PDBx:name_mi>M.D.</PDBx:name_mi> <PDBx:name_salutation>Dr.</PDBx:name_salutation> <PDBx:organization_type>commercial</PDBx:organization_type> <PDBx:phone>908 594 5510</PDBx:phone> <PDBx:postal_code>07065</PDBx:postal_code> <PDBx:role>principal investigator/group leader</PDBx:role> <PDBx:state_province>New Jersey</PDBx:state_province> </PDBx:pdbx_contact_author> </PDBx:pdbx_contact_authorCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_contact_author_continent CASCADE;
@@ -7450,7 +7450,7 @@ CREATE TABLE pdbx_contact_author (
 --
 -- (quoted from pdbx_coordType)
 -- Gives information about what kind of coordinates are available.
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_coord_chain_atoms_Y_P CASCADE;
@@ -7475,7 +7475,7 @@ CREATE TABLE pdbx_coord (
 --
 -- (quoted from pdbx_coordinate_modelType)
 -- The details of the composition of the coordinate model. Example 1 - <PDBx:pdbx_coordinate_modelCategory> <PDBx:pdbx_coordinate_model asym_id="A"> <PDBx:type>CA ATOMS ONLY</PDBx:type> </PDBx:pdbx_coordinate_model> <PDBx:pdbx_coordinate_model asym_id="B"> <PDBx:type>CA ATOMS ONLY</PDBx:type> </PDBx:pdbx_coordinate_model> <PDBx:pdbx_coordinate_model asym_id="X"> <PDBx:type>P ATOMS ONLY</PDBx:type> </PDBx:pdbx_coordinate_model> <PDBx:pdbx_coordinate_model asym_id="Y"> <PDBx:type>P ATOMS ONLY</PDBx:type> </PDBx:pdbx_coordinate_model> </PDBx:pdbx_coordinate_modelCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_coordinate_model_type CASCADE;
@@ -7491,7 +7491,7 @@ CREATE TABLE pdbx_coordinate_model (
 --
 -- (quoted from pdbx_crystal_alignmentType)
 -- Data in the PDBX_CRYSTAL_ALIGNMENT are produced by log files from programs during indexing
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_crystal_alignment (
@@ -7525,7 +7525,7 @@ CREATE TABLE pdbx_crystal_alignment (
 --
 -- (quoted from pdbx_data_processing_cellType)
 -- Crystallographic cell specifications used in data processing.
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_data_processing_cell (
@@ -7568,7 +7568,7 @@ CREATE TABLE pdbx_data_processing_cell (
 --
 -- (quoted from pdbx_data_processing_detectorType)
 -- Details of the detector used at data collection site.
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_data_processing_detector (
@@ -7599,7 +7599,7 @@ CREATE TABLE pdbx_data_processing_detector (
 --
 -- (quoted from pdbx_data_processing_reflnsType)
 -- Details of reflections used in data processing.
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_data_processing_reflns (
@@ -7617,7 +7617,7 @@ CREATE TABLE pdbx_data_processing_reflns (
 --
 -- (quoted from pdbx_data_processing_statusType)
 -- Data items in the PDBX_DATA_PROCESSING_STATUS category record data processing instructions for workflow processing tasks. Example 1 - <PDBx:pdbx_data_processing_statusCategory> <PDBx:pdbx_data_processing_status status="skip" task_name="site"></PDBx:pdbx_data_processing_status> <PDBx:pdbx_data_processing_status status="skip" task_name="link"></PDBx:pdbx_data_processing_status> <PDBx:pdbx_data_processing_status status="skip" task_name="helix"></PDBx:pdbx_data_processing_status> <PDBx:pdbx_data_processing_status status="skip" task_name="solvent position"></PDBx:pdbx_data_processing_status> <PDBx:pdbx_data_processing_status status="skip" task_name="ssbond"></PDBx:pdbx_data_processing_status> </PDBx:pdbx_data_processing_statusCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_data_processing_status (
@@ -7632,7 +7632,7 @@ CREATE TABLE pdbx_data_processing_status (
 --
 -- (quoted from pdbx_database_PDB_masterType)
 -- The PDBX_DATABASE_PDB_MASTER category provides placeholders for the count of various PDB record types.
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE "pdbx_database_PDB_master" (
@@ -7657,7 +7657,7 @@ CREATE TABLE "pdbx_database_PDB_master" (
 --
 -- (quoted from pdbx_database_PDB_obs_sprType)
 -- The PDBX_DATABASE_PDB_OBS_SPR category provides placeholders for information on obsolete/superseded PDB entries
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_database_PDB_obs_spr_id CASCADE;
@@ -7677,7 +7677,7 @@ CREATE TABLE "pdbx_database_PDB_obs_spr" (
 --
 -- (quoted from pdbx_database_messageType)
 -- The PDBX_DATABASE_MESSAGE category provides information about correspondance related to a structure deposition.
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_database_message_content_type CASCADE;
@@ -7710,7 +7710,7 @@ CREATE TABLE pdbx_database_message (
 --
 -- (quoted from pdbx_database_pdb_omitType)
 -- Data items in the PDBX_DATABASE_PDB_OMIT category record list PDB record names that should be omitted in the PDB format file. <PDBx:pdbx_database_pdb_omitCategory> <PDBx:pdbx_database_pdb_omit entry_id="RCSB00001" record_name="HELIX"></PDBx:pdbx_database_pdb_omit> <PDBx:pdbx_database_pdb_omit entry_id="RCSB00001" record_name="REMARK 500"></PDBx:pdbx_database_pdb_omit> </PDBx:pdbx_database_pdb_omitCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_database_pdb_omit (
@@ -7725,7 +7725,7 @@ CREATE TABLE pdbx_database_pdb_omit (
 --
 -- (quoted from pdbx_database_procType)
 -- Internal records to track the data processing cycle. <PDBx:pdbx_database_procCategory> <PDBx:pdbx_database_proc cycle_id="1" entry_id="BDL001"> <PDBx:date_begin_cycle>1998-02-27</PDBx:date_begin_cycle> <PDBx:date_end_cycle>1998-02-27</PDBx:date_end_cycle> </PDBx:pdbx_database_proc> </PDBx:pdbx_database_procCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_database_proc (
@@ -7743,7 +7743,7 @@ CREATE TABLE pdbx_database_proc (
 --
 -- (quoted from pdbx_database_relatedType)
 -- Data items in PDBX_DATABASE_RELATED contain references to entries that are related to the this entry. <PDBx:pdbx_database_relatedCategory> <PDBx:pdbx_database_related content_type="native structure" db_id="1ABC" db_name="PDB"></PDBx:pdbx_database_related> </PDBx:pdbx_database_relatedCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_database_related_content_type CASCADE;
@@ -7763,7 +7763,7 @@ CREATE TABLE pdbx_database_related (
 --
 -- (quoted from pdbx_database_remarkType)
 -- Data items in the PDBX_DATABASE_REMARK category record keep additional information about the entry. They are mostly used to create 'non-standard' PDB REMARK annotations (6-99). Example 1 - based on PDB entry 1ABC <PDBx:pdbx_database_remarkCategory> <PDBx:pdbx_database_remark id="1"> <PDBx:text> THE NON-CRYSTALLOGRAPHIC RELATIONSHIP BETWEEN THE THREE DOUBLE HELICES IN THE ASYMMETRIC UNIT IS DESCRIBED IN THE MTRIX1-3 RECORDS.</PDBx:text> </PDBx:pdbx_database_remark> </PDBx:pdbx_database_remarkCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_database_remark (
@@ -7777,7 +7777,7 @@ CREATE TABLE pdbx_database_remark (
 --
 -- (quoted from pdbx_database_statusType)
 -- These are internal RCSB records to keep track of data processing and status of the entry. <PDBx:pdbx_database_statusCategory> <PDBx:pdbx_database_status entry_id="1ABC"> <PDBx:deposit_site>RCSB</PDBx:deposit_site> <PDBx:process_site>RCSB</PDBx:process_site> <PDBx:status_code>REL</PDBx:status_code> </PDBx:pdbx_database_status> </PDBx:pdbx_database_statusCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_database_status_SG_entry CASCADE;
@@ -7936,7 +7936,7 @@ CREATE TABLE pdbx_database_status (
 --
 -- (quoted from pdbx_database_status_historyType)
 -- The pdbx_database_status_history category records the time evolution of entry processing status. <PDBx:pdbx_database_status_historyCategory> <PDBx:pdbx_database_status_history entry_id="D_0000000000" ordinal="1"> <PDBx:date_begin>2014-01-01</PDBx:date_begin> <PDBx:date_end>2014-01-01</PDBx:date_end> <PDBx:status_code>PROC</PDBx:status_code> </PDBx:pdbx_database_status_history> </PDBx:pdbx_database_status_historyCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_database_status_history_status_code CASCADE;
@@ -7957,7 +7957,7 @@ CREATE TABLE pdbx_database_status_history (
 --
 -- (quoted from pdbx_dbrefType)
 -- These records are used in the DBREF record of a PDB file and are used as place holders for NDB ID's in PDB files. Example 1 - based on NDB entry BDLB58 <PDBx:pdbx_dbrefCategory> <PDBx:pdbx_dbref begin_res_number="1" chain_id="A" database_name="NDB" end_res_number="12" pdb_id_code="218D"> <PDBx:database_accession>BDLB58</PDBx:database_accession> <PDBx:database_begin_res_number>1</PDBx:database_begin_res_number> <PDBx:database_end_res_number>12</PDBx:database_end_res_number> <PDBx:database_id_code>BDLB58</PDBx:database_id_code> </PDBx:pdbx_dbref> <PDBx:pdbx_dbref begin_res_number="13" chain_id="B" database_name="NDB" end_res_number="24" pdb_id_code="218D"> <PDBx:database_accession>BDLB58</PDBx:database_accession> <PDBx:database_begin_res_number>13</PDBx:database_begin_res_number> <PDBx:database_end_res_number>24</PDBx:database_end_res_number> <PDBx:database_id_code>BDLB58</PDBx:database_id_code> </PDBx:pdbx_dbref> </PDBx:pdbx_dbrefCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_dbref (
@@ -7986,7 +7986,7 @@ CREATE TABLE pdbx_dbref (
 --
 -- (quoted from pdbx_dcc_densityType)
 -- Data items in the category record various overall metrics calculated by DCC and various wrapped programs (such as Xtriage, pointless, REFMAC ...).
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_dcc_density (
@@ -8068,7 +8068,7 @@ CREATE TABLE pdbx_dcc_density (
 --
 -- (quoted from pdbx_dcc_density_corrType)
 -- Data items in the category record calculated metrics from various programs (such as phenix, refmac, cns, sfcheck).
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_dcc_density_corr (
@@ -8094,7 +8094,7 @@ CREATE TABLE pdbx_dcc_density_corr (
 --
 -- (quoted from pdbx_dcc_geometryType)
 -- Data items in the category record the overall deviations about geometry (such as bond length, angle, dihedral, chirality, planarity). These data are calculated with the phenix module model_vs_data.
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_dcc_geometry (
@@ -8133,7 +8133,7 @@ CREATE TABLE pdbx_dcc_geometry (
 --
 -- (quoted from pdbx_dcc_mapType)
 -- Data items in the category record residual map properties such as Real Space electron density Correlation Coefficient (RSCC), real space R factors (RSR) and the Zscores for each residue, the main/side chains.
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_dcc_map (
@@ -8198,7 +8198,7 @@ CREATE TABLE pdbx_dcc_map (
 --
 -- (quoted from pdbx_dcc_mapmanType)
 -- Data items in the category record details from the output of mapman used by the DCC program.
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_dcc_mapman (
@@ -8212,7 +8212,7 @@ CREATE TABLE pdbx_dcc_mapman (
 --
 -- (quoted from pdbx_dcc_rscc_mapmanType)
 -- Data items in this category record residual map properties such as correlation, real space Rfactors and the Zscore calculated from refmac and mapman.
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_dcc_rscc_mapman (
@@ -8239,7 +8239,7 @@ CREATE TABLE pdbx_dcc_rscc_mapman (
 --
 -- (quoted from pdbx_dcc_rscc_mapman_overallType)
 -- Data items in the category record overall map properties such as correlation, real space Rfactors and the Zscore calculated from refmac and mapman.
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_dcc_rscc_mapman_overall (
@@ -8256,7 +8256,7 @@ CREATE TABLE pdbx_dcc_rscc_mapman_overall (
 --
 -- (quoted from pdbx_deposit_group_indexType)
 -- Data items in the pdbx_deposit_group_index category provides details about the individual data files in the collection of deposited entries. Example 1 - Deposition collection <PDBx:pdbx_deposit_group_indexCategory> <PDBx:pdbx_deposit_group_index group_id="B_1000000001" ordinal_id="1"> <PDBx:auth_file_content_type>model</PDBx:auth_file_content_type> <PDBx:auth_file_format_type>cif</PDBx:auth_file_format_type> <PDBx:auth_file_label>model1</PDBx:auth_file_label> <PDBx:auth_file_name>model-file-1.cif</PDBx:auth_file_name> <PDBx:auth_file_size>4000002</PDBx:auth_file_size> <PDBx:dep_set_id>D_2000000001</PDBx:dep_set_id> <PDBx:group_file_name>myset.tar.gz</PDBx:group_file_name> <PDBx:group_file_timestamp>2016-01-02:10:02</PDBx:group_file_timestamp> <PDBx:pdb_id_code>1ABC</PDBx:pdb_id_code> </PDBx:pdbx_deposit_group_index> <PDBx:pdbx_deposit_group_index group_id="B_1000000001" ordinal_id="2"> <PDBx:auth_file_content_type>structure factors</PDBx:auth_file_content_type> <PDBx:auth_file_format_type>cif</PDBx:auth_file_format_type> <PDBx:auth_file_label>sf1</PDBx:auth_file_label> <PDBx:auth_file_name>sf-file-1.cif</PDBx:auth_file_name> <PDBx:auth_file_size>53000022</PDBx:auth_file_size> <PDBx:dep_set_id>D_2000000001</PDBx:dep_set_id> <PDBx:group_file_name>myset.tar.gz</PDBx:group_file_name> <PDBx:group_file_timestamp>2016-01-02:10:02</PDBx:group_file_timestamp> <PDBx:pdb_id_code>1ABC</PDBx:pdb_id_code> </PDBx:pdbx_deposit_group_index> </PDBx:pdbx_deposit_group_indexCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_deposit_group_index_auth_file_content_type CASCADE;
@@ -8284,7 +8284,7 @@ CREATE TABLE pdbx_deposit_group_index (
 --
 -- (quoted from pdbx_deposition_message_file_referenceType)
 -- Data items in the PDBX_DEPOSITION_MESSAGE_FILE_REFERENCE category record details of files references associated with messages defined in the PDBX_DEPOSITION_MESSAGE_INFO data category. Example 1 - <PDBx:pdbx_deposition_message_file_referenceCategory> <PDBx:pdbx_deposition_message_file_reference ordinal="1"> <PDBx:content_format>pdbx</PDBx:content_format> <PDBx:content_type>model-annotate</PDBx:content_type> <PDBx:deposition_data_set_id>D_000000</PDBx:deposition_data_set_id> <PDBx:message_id>8bf7a60b-066d-4fff-8ee9-c5b820e19b3c</PDBx:message_id> <PDBx:partition_number>1</PDBx:partition_number> <PDBx:storage_type>archive</PDBx:storage_type> <PDBx:version_id>1</PDBx:version_id> </PDBx:pdbx_deposition_message_file_reference> <PDBx:pdbx_deposition_message_file_reference ordinal="2"> <PDBx:content_format>pdbx</PDBx:content_format> <PDBx:content_type>model-annotate</PDBx:content_type> <PDBx:deposition_data_set_id>D_000000</PDBx:deposition_data_set_id> <PDBx:message_id>8bf7a60b-066d-4fff-8ee9-c5b820e19b3c</PDBx:message_id> <PDBx:partition_number>1</PDBx:partition_number> <PDBx:storage_type>archive</PDBx:storage_type> <PDBx:version_id>1</PDBx:version_id> </PDBx:pdbx_deposition_message_file_reference> </PDBx:pdbx_deposition_message_file_referenceCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_deposition_message_file_reference (
@@ -8304,7 +8304,7 @@ CREATE TABLE pdbx_deposition_message_file_reference (
 --
 -- (quoted from pdbx_deposition_message_infoType)
 -- Data items in the PDBX_DEPOSITION_MESSAGE_INFO category record internal messages within the depositon and annotation system. Example 1 - <PDBx:pdbx_deposition_message_infoCategory> <PDBx:pdbx_deposition_message_info ordinal="1"> <PDBx:content_type>report</PDBx:content_type> <PDBx:content_value>validation</PDBx:content_value> <PDBx:deposition_data_set_id>D_000000</PDBx:deposition_data_set_id> <PDBx:message_id>83ae9530-194c-4360-93d2-90598491012a</PDBx:message_id> <PDBx:message_subject>Response to validation report</PDBx:message_subject> <PDBx:message_text> All of the C-alpha and C-beta atom coordinates have gone missing. We looked all over the lab and could not find them. There were a few reflections that we misplaced earlier. We are hoping that we will find these data before the manuscript is reviewed.</PDBx:message_text> <PDBx:message_type>text</PDBx:message_type> <PDBx:parent_message_id>83ae9530-194c-4360-93d2-90598491012a</PDBx:parent_message_id> <PDBx:send_status>draft</PDBx:send_status> <PDBx:sender>depositor</PDBx:sender> <PDBx:timestamp>2013-08-15 12:49:26</PDBx:timestamp> </PDBx:pdbx_deposition_message_info> </PDBx:pdbx_deposition_message_infoCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_deposition_message_info (
@@ -8328,7 +8328,7 @@ CREATE TABLE pdbx_deposition_message_info (
 --
 -- (quoted from pdbx_depui_entity_featuresType)
 -- Data items in the PDBX_DEPUI_ENTITY_FEATURES category record status details related to the features of individual entities. Example 1 - <PDBx:pdbx_depui_entity_featuresCategory> <PDBx:pdbx_depui_entity_features dep_dataset_id="D_000000" entity_id="1" type="Antibiotic/inhibitor"></PDBx:pdbx_depui_entity_features> </PDBx:pdbx_depui_entity_featuresCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_depui_entity_features_type CASCADE;
@@ -8347,7 +8347,7 @@ CREATE TABLE pdbx_depui_entity_features (
 --
 -- (quoted from pdbx_depui_entity_status_flagsType)
 -- Data items in the PDBX_DEPUI_ENTITY_STATUS_FLAGS category record status details related to individual entities. Example 1 - <PDBx:pdbx_depui_entity_status_flagsCategory> <PDBx:pdbx_depui_entity_status_flags dep_dataset_id="D_000000" entity_id="1"> <PDBx:has_mutation>Y</PDBx:has_mutation> </PDBx:pdbx_depui_entity_status_flags> </PDBx:pdbx_depui_entity_status_flagsCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_depui_entity_status_flags_has_mutation CASCADE;
@@ -8366,7 +8366,7 @@ CREATE TABLE pdbx_depui_entity_status_flags (
 --
 -- (quoted from pdbx_depui_entry_detailsType)
 -- Data items in the PDBX_DEPUI_ENTRY_DETAILS category record information required to identify the depositor and route deposition to an appropriate processing site. Example 1 - <PDBx:pdbx_depui_entry_detailsCategory> <PDBx:pdbx_depui_entry_details dep_dataset_id="D_0000000000"> <PDBx:country>United States</PDBx:country> <PDBx:experimental_methods>X-Ray Diffraction</PDBx:experimental_methods> <PDBx:requested_accession_types>PDB</PDBx:requested_accession_types> <PDBx:validated_contact_email>user@host</PDBx:validated_contact_email> </PDBx:pdbx_depui_entry_details> </PDBx:pdbx_depui_entry_detailsCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_depui_entry_details (
@@ -8388,7 +8388,7 @@ CREATE TABLE pdbx_depui_entry_details (
 --
 -- (quoted from pdbx_depui_status_flagsType)
 -- Data items in the PDBX_DEPUI_STATUS_FLAGS category record status details used to maintain state within the wwPDB deposition system. Example 1 - <PDBx:pdbx_depui_status_flagsCategory> <PDBx:pdbx_depui_status_flags dep_dataset_id="D_000000"> <PDBx:corresponding_author_status>N</PDBx:corresponding_author_status> <PDBx:has_ncs_data>Y</PDBx:has_ncs_data> <PDBx:is_grant_funded>Y</PDBx:is_grant_funded> <PDBx:prediction_target>N</PDBx:prediction_target> <PDBx:primary_citation_status>N</PDBx:primary_citation_status> <PDBx:reference_citation_status>N</PDBx:reference_citation_status> </PDBx:pdbx_depui_status_flags> </PDBx:pdbx_depui_status_flagsCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_depui_status_flags_corresponding_author_status CASCADE;
@@ -8456,7 +8456,7 @@ CREATE TABLE pdbx_depui_status_flags (
 --
 -- (quoted from pdbx_depui_uploadType)
 -- Data items in the PDBX_DEPUI_UPLOAD category record the details of uploaded data files. Example 1 - <PDBx:pdbx_depui_uploadCategory> <PDBx:pdbx_depui_upload ordinal="1"> <PDBx:file_content_type>PDBx/mmCIF model file</PDBx:file_content_type> <PDBx:file_name>myfile.cif</PDBx:file_name> <PDBx:file_size>34567</PDBx:file_size> <PDBx:file_type>xs-cif</PDBx:file_type> <PDBx:valid_flag>Y</PDBx:valid_flag> </PDBx:pdbx_depui_upload> </PDBx:pdbx_depui_uploadCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_depui_upload_valid_flag CASCADE;
@@ -8479,7 +8479,7 @@ CREATE TABLE pdbx_depui_upload (
 --
 -- (quoted from pdbx_depui_validation_status_flagsType)
 -- Data items in the PDBX_DEPUI_VALIDATION_STATUS_FLAGS category record status details that assess the status of selected validation diagnostics. Example 1 - <PDBx:pdbx_depui_validation_status_flagsCategory> <PDBx:pdbx_depui_validation_status_flags dep_dataset_id="D_000000"> <PDBx:adp_outliers_low>0</PDBx:adp_outliers_low> <PDBx:occupancy_outliers_high>0</PDBx:occupancy_outliers_high> <PDBx:occupancy_outliers_low>0</PDBx:occupancy_outliers_low> <PDBx:solvent_outliers>0</PDBx:solvent_outliers> </PDBx:pdbx_depui_validation_status_flags> </PDBx:pdbx_depui_validation_status_flagsCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_depui_validation_status_flags_residual_B_factors_flag CASCADE;
@@ -8507,7 +8507,7 @@ CREATE TABLE pdbx_depui_validation_status_flags (
 --
 -- (quoted from pdbx_diffrn_reflns_shellType)
 -- Data items in the DIFFRN_REFLNS_SHELL category record details about the reflection data set within shells of resolution. Example 1 - diffraction properties with shells <PDBx:pdbx_diffrn_reflns_shellCategory> <PDBx:pdbx_diffrn_reflns_shell d_res_high="5.18" d_res_low="50.00" diffrn_id="1"> <PDBx:Rmerge_I_obs>0.029</PDBx:Rmerge_I_obs> <PDBx:chi_squared>1.154</PDBx:chi_squared> <PDBx:number_obs>11791</PDBx:number_obs> <PDBx:percent_possible_obs>100.000</PDBx:percent_possible_obs> </PDBx:pdbx_diffrn_reflns_shell> <PDBx:pdbx_diffrn_reflns_shell d_res_high="4.11" d_res_low="5.18" diffrn_id="1"> <PDBx:Rmerge_I_obs>0.033</PDBx:Rmerge_I_obs> <PDBx:chi_squared>1.098</PDBx:chi_squared> <PDBx:number_obs>11717</PDBx:number_obs> <PDBx:percent_possible_obs>100.000</PDBx:percent_possible_obs> </PDBx:pdbx_diffrn_reflns_shell> <PDBx:pdbx_diffrn_reflns_shell d_res_high="3.59" d_res_low="4.11" diffrn_id="1"> <PDBx:Rmerge_I_obs>0.043</PDBx:Rmerge_I_obs> <PDBx:chi_squared>1.044</PDBx:chi_squared> <PDBx:number_obs>11792</PDBx:number_obs> <PDBx:percent_possible_obs>100.000</PDBx:percent_possible_obs> </PDBx:pdbx_diffrn_reflns_shell> <PDBx:pdbx_diffrn_reflns_shell d_res_high="3.26" d_res_low="3.59" diffrn_id="1"> <PDBx:Rmerge_I_obs>0.059</PDBx:Rmerge_I_obs> <PDBx:chi_squared>1.104</PDBx:chi_squared> <PDBx:number_obs>11718</PDBx:number_obs> <PDBx:percent_possible_obs>100.000</PDBx:percent_possible_obs> </PDBx:pdbx_diffrn_reflns_shell> <PDBx:pdbx_diffrn_reflns_shell d_res_high="3.03" d_res_low="3.26" diffrn_id="1"> <PDBx:Rmerge_I_obs>0.087</PDBx:Rmerge_I_obs> <PDBx:chi_squared>1.160</PDBx:chi_squared> <PDBx:number_obs>11753</PDBx:number_obs> <PDBx:percent_possible_obs>100.000</PDBx:percent_possible_obs> </PDBx:pdbx_diffrn_reflns_shell> <PDBx:pdbx_diffrn_reflns_shell d_res_high="2.85" d_res_low="3.03" diffrn_id="1"> <PDBx:Rmerge_I_obs>0.130</PDBx:Rmerge_I_obs> <PDBx:chi_squared>1.169</PDBx:chi_squared> <PDBx:number_obs>11811</PDBx:number_obs> <PDBx:percent_possible_obs>100.000</PDBx:percent_possible_obs> </PDBx:pdbx_diffrn_reflns_shell> <PDBx:pdbx_diffrn_reflns_shell d_res_high="2.71" d_res_low="2.85" diffrn_id="1"> <PDBx:Rmerge_I_obs>0.174</PDBx:Rmerge_I_obs> <PDBx:chi_squared>1.170</PDBx:chi_squared> <PDBx:number_obs>11752</PDBx:number_obs> <PDBx:percent_possible_obs>100.000</PDBx:percent_possible_obs> </PDBx:pdbx_diffrn_reflns_shell> <PDBx:pdbx_diffrn_reflns_shell d_res_high="2.59" d_res_low="2.71" diffrn_id="1"> <PDBx:Rmerge_I_obs>0.227</PDBx:Rmerge_I_obs> <PDBx:chi_squared>1.165</PDBx:chi_squared> <PDBx:number_obs>11767</PDBx:number_obs> <PDBx:percent_possible_obs>100.000</PDBx:percent_possible_obs> </PDBx:pdbx_diffrn_reflns_shell> </PDBx:pdbx_diffrn_reflns_shellCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_diffrn_reflns_shell (
@@ -8531,7 +8531,7 @@ CREATE TABLE pdbx_diffrn_reflns_shell (
 --
 -- (quoted from pdbx_distant_solvent_atomsType)
 -- Data items in the PDBX_DISTANT_SOLVENT_ATOMS category list the solvent atoms remote from any macromolecule. Example 1 <PDBx:pdbx_distant_solvent_atomsCategory> <PDBx:pdbx_distant_solvent_atoms id="1"> <PDBx:PDB_ins_code xsi:nil="true" /> <PDBx:PDB_model_num>1</PDBx:PDB_model_num> <PDBx:auth_asym_id>W</PDBx:auth_asym_id> <PDBx:auth_atom_id>O</PDBx:auth_atom_id> <PDBx:auth_comp_id>HOH</PDBx:auth_comp_id> <PDBx:auth_seq_id>412</PDBx:auth_seq_id> <PDBx:label_alt_id xsi:nil="true" /> <PDBx:neighbor_ligand_distance xsi:nil="true" /> <PDBx:neighbor_macromolecule_distance>7.3</PDBx:neighbor_macromolecule_distance> </PDBx:pdbx_distant_solvent_atoms> <PDBx:pdbx_distant_solvent_atoms id="2"> <PDBx:PDB_ins_code xsi:nil="true" /> <PDBx:PDB_model_num>1</PDBx:PDB_model_num> <PDBx:auth_asym_id>W</PDBx:auth_asym_id> <PDBx:auth_atom_id>O</PDBx:auth_atom_id> <PDBx:auth_comp_id>HOH</PDBx:auth_comp_id> <PDBx:auth_seq_id>413</PDBx:auth_seq_id> <PDBx:label_alt_id xsi:nil="true" /> <PDBx:neighbor_ligand_distance xsi:nil="true" /> <PDBx:neighbor_macromolecule_distance>8.4</PDBx:neighbor_macromolecule_distance> </PDBx:pdbx_distant_solvent_atoms> <PDBx:pdbx_distant_solvent_atoms id="3"> <PDBx:PDB_ins_code xsi:nil="true" /> <PDBx:PDB_model_num>1</PDBx:PDB_model_num> <PDBx:auth_asym_id>W</PDBx:auth_asym_id> <PDBx:auth_atom_id>O</PDBx:auth_atom_id> <PDBx:auth_comp_id>HOH</PDBx:auth_comp_id> <PDBx:auth_seq_id>414</PDBx:auth_seq_id> <PDBx:label_alt_id xsi:nil="true" /> <PDBx:neighbor_ligand_distance xsi:nil="true" /> <PDBx:neighbor_macromolecule_distance>7.2</PDBx:neighbor_macromolecule_distance> </PDBx:pdbx_distant_solvent_atoms> <PDBx:pdbx_distant_solvent_atoms id="4"> <PDBx:PDB_ins_code xsi:nil="true" /> <PDBx:PDB_model_num>1</PDBx:PDB_model_num> <PDBx:auth_asym_id>W</PDBx:auth_asym_id> <PDBx:auth_atom_id>O</PDBx:auth_atom_id> <PDBx:auth_comp_id>HOH</PDBx:auth_comp_id> <PDBx:auth_seq_id>415</PDBx:auth_seq_id> <PDBx:label_alt_id xsi:nil="true" /> <PDBx:neighbor_ligand_distance xsi:nil="true" /> <PDBx:neighbor_macromolecule_distance>8.3</PDBx:neighbor_macromolecule_distance> </PDBx:pdbx_distant_solvent_atoms> </PDBx:pdbx_distant_solvent_atomsCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_distant_solvent_atoms (
@@ -8559,7 +8559,7 @@ CREATE TABLE pdbx_distant_solvent_atoms (
 --
 -- (quoted from pdbx_domain_rangeType)
 -- Data items in the PDBX_DOMAIN_RANGE category identify the beginning and ending points of polypeptide chain segments that form all or part of a domain. Example 1 - <PDBx:pdbx_domain_rangeCategory> <PDBx:pdbx_domain_range beg_label_alt_id="A" beg_label_asym_id="A" beg_label_comp_id="PRO" beg_label_seq_id="1" domain_id="d1" end_label_alt_id="A" end_label_asym_id="A" end_label_comp_id="GLY" end_label_seq_id="29"></PDBx:pdbx_domain_range> <PDBx:pdbx_domain_range beg_label_alt_id="A" beg_label_asym_id="B" beg_label_comp_id="PRO" beg_label_seq_id="31" domain_id="d1" end_label_alt_id="A" end_label_asym_id="B" end_label_comp_id="GLY" end_label_seq_id="59"></PDBx:pdbx_domain_range> <PDBx:pdbx_domain_range beg_label_alt_id="A" beg_label_asym_id="C" beg_label_comp_id="PRO" beg_label_seq_id="61" domain_id="d1" end_label_alt_id="A" end_label_asym_id="B" end_label_comp_id="GLY" end_label_seq_id="89"></PDBx:pdbx_domain_range> <PDBx:pdbx_domain_range beg_label_alt_id="A" beg_label_asym_id="D" beg_label_comp_id="PRO" beg_label_seq_id="91" domain_id="d2" end_label_alt_id="A" end_label_asym_id="D" end_label_comp_id="GLY" end_label_seq_id="119"></PDBx:pdbx_domain_range> <PDBx:pdbx_domain_range beg_label_alt_id="A" beg_label_asym_id="E" beg_label_comp_id="PRO" beg_label_seq_id="121" domain_id="d2" end_label_alt_id="A" end_label_asym_id="E" end_label_comp_id="GLY" end_label_seq_id="149"></PDBx:pdbx_domain_range> <PDBx:pdbx_domain_range beg_label_alt_id="A" beg_label_asym_id="F" beg_label_comp_id="PRO" beg_label_seq_id="151" domain_id="d2" end_label_alt_id="A" end_label_asym_id="F" end_label_comp_id="GLY" end_label_seq_id="179"></PDBx:pdbx_domain_range> </PDBx:pdbx_domain_rangeCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_domain_range (
@@ -8594,7 +8594,7 @@ CREATE TABLE pdbx_domain_range (
 --
 -- (quoted from pdbx_drug_infoType)
 -- Data items in the PDBX_DRUG_INFO category are still used until the 'entity' categories are entered into the database, even though the information is repeated. Example 1 - based on NDB entry DDH048 <PDBx:pdbx_drug_infoCategory> <PDBx:pdbx_drug_info id="1" name="ACTINOMYCIN D"> <PDBx:num_of_whole_molecule>2</PDBx:num_of_whole_molecule> <PDBx:num_per_asym_unit>2</PDBx:num_per_asym_unit> <PDBx:size_of_molecule_per_asym_unit>HALF</PDBx:size_of_molecule_per_asym_unit> </PDBx:pdbx_drug_info> </PDBx:pdbx_drug_infoCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_drug_info (
@@ -8612,7 +8612,7 @@ CREATE TABLE pdbx_drug_info (
 --
 -- (quoted from pdbx_entity_assemblyType)
 -- The PDBX_ENTITY_ASSEMBLY category provides a chemical description of the biological assembly studied in terms of its constituent entities. A complex composed of one copy of entities 1 and 2. <PDBx:pdbx_entity_assemblyCategory> <PDBx:pdbx_entity_assembly entity_id="1" id="1"> <PDBx:biol_id>1</PDBx:biol_id> <PDBx:num_copies>1</PDBx:num_copies> </PDBx:pdbx_entity_assembly> <PDBx:pdbx_entity_assembly entity_id="2" id="1"> <PDBx:biol_id>1</PDBx:biol_id> <PDBx:num_copies>1</PDBx:num_copies> </PDBx:pdbx_entity_assembly> </PDBx:pdbx_entity_assemblyCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_entity_assembly (
@@ -8629,7 +8629,7 @@ CREATE TABLE pdbx_entity_assembly (
 --
 -- (quoted from pdbx_entity_branchType)
 -- Data items in the PDBX_ENTITY_BRANCH category specify the list of branched entities and the type. Example 1 - <PDBx:pdbx_entity_branchCategory> <PDBx:pdbx_entity_branch entity_id="2"> <PDBx:type>oligosaccharide</PDBx:type> </PDBx:pdbx_entity_branch> </PDBx:pdbx_entity_branchCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_entity_branch_type CASCADE;
@@ -8645,7 +8645,7 @@ CREATE TABLE pdbx_entity_branch (
 --
 -- (quoted from pdbx_entity_branch_descriptorType)
 -- Data items in the PDBX_ENTITY_BRANCH_DESCRIPTOR category provide string descriptors of entity chemical structure. Example 1 - <PDBx:pdbx_entity_branch_descriptorCategory> <PDBx:pdbx_entity_branch_descriptor ordinal="1"> <PDBx:descriptor>[][Asn]{[(4+1)][b-D-GlcpNAc]{[(4+1)][b-D-GlcpNAc]{[(4+1)][b-D-Manp]{[(3+1)][a-D-Manp]{[(2+1)][a-D-Manp]{[(2+1)][a-D-Manp]{}}}[(6+1)][a-D-Manp]{[(3+1)][a-D-Manp]{[(2+1)][a-D-Manp]{}}[(6+1)][a-D-Manp]{[(2+1)][a-D-Manp]{}}}}}}}</PDBx:descriptor> <PDBx:entity_id>1</PDBx:entity_id> <PDBx:program>PDB-CARE</PDBx:program> <PDBx:program_version>Beta</PDBx:program_version> <PDBx:type>LINUCS</PDBx:type> </PDBx:pdbx_entity_branch_descriptor> </PDBx:pdbx_entity_branch_descriptorCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_entity_branch_descriptor_type CASCADE;
@@ -8665,7 +8665,7 @@ CREATE TABLE pdbx_entity_branch_descriptor (
 --
 -- (quoted from pdbx_entity_branch_linkType)
 -- Data items in the PDBX_ENTITY_BRANCH_LINK category give details about the linkages between components within a branched entity. Example 1 - base on PDB entry 2WMG <PDBx:pdbx_entity_branch_linkCategory> <PDBx:pdbx_entity_branch_link link_id="1"> <PDBx:atom_id_1>O4</PDBx:atom_id_1> <PDBx:atom_id_2>C1</PDBx:atom_id_2> <PDBx:atom_stereo_config_2>R</PDBx:atom_stereo_config_2> <PDBx:comp_id_1>NAG</PDBx:comp_id_1> <PDBx:comp_id_2>GAL</PDBx:comp_id_2> <PDBx:entity_branch_list_num_1>1</PDBx:entity_branch_list_num_1> <PDBx:entity_branch_list_num_2>2</PDBx:entity_branch_list_num_2> <PDBx:entity_id>2</PDBx:entity_id> <PDBx:leaving_atom_id_1>HO4</PDBx:leaving_atom_id_1> <PDBx:leaving_atom_id_2>O1</PDBx:leaving_atom_id_2> <PDBx:value_order>sing</PDBx:value_order> </PDBx:pdbx_entity_branch_link> <PDBx:pdbx_entity_branch_link link_id="2"> <PDBx:atom_id_1>O2</PDBx:atom_id_1> <PDBx:atom_id_2>C1</PDBx:atom_id_2> <PDBx:atom_stereo_config_2>R</PDBx:atom_stereo_config_2> <PDBx:comp_id_1>GAL</PDBx:comp_id_1> <PDBx:comp_id_2>FUC</PDBx:comp_id_2> <PDBx:entity_branch_list_num_1>2</PDBx:entity_branch_list_num_1> <PDBx:entity_branch_list_num_2>3</PDBx:entity_branch_list_num_2> <PDBx:entity_id>2</PDBx:entity_id> <PDBx:leaving_atom_id_1>HO2</PDBx:leaving_atom_id_1> <PDBx:leaving_atom_id_2>O1</PDBx:leaving_atom_id_2> <PDBx:value_order>sing</PDBx:value_order> </PDBx:pdbx_entity_branch_link> <PDBx:pdbx_entity_branch_link link_id="3"> <PDBx:atom_id_1>O3</PDBx:atom_id_1> <PDBx:atom_id_2>C1</PDBx:atom_id_2> <PDBx:atom_stereo_config_2>R</PDBx:atom_stereo_config_2> <PDBx:comp_id_1>NAG</PDBx:comp_id_1> <PDBx:comp_id_2>FUC</PDBx:comp_id_2> <PDBx:entity_branch_list_num_1>1</PDBx:entity_branch_list_num_1> <PDBx:entity_branch_list_num_2>4</PDBx:entity_branch_list_num_2> <PDBx:entity_id>2</PDBx:entity_id> <PDBx:leaving_atom_id_1>HO3</PDBx:leaving_atom_id_1> <PDBx:leaving_atom_id_2>O1</PDBx:leaving_atom_id_2> <PDBx:value_order>sing</PDBx:value_order> </PDBx:pdbx_entity_branch_link> </PDBx:pdbx_entity_branch_linkCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_entity_branch_link_atom_stereo_config_1 CASCADE;
@@ -8697,7 +8697,7 @@ CREATE TABLE pdbx_entity_branch_link (
 --
 -- (quoted from pdbx_entity_branch_listType)
 -- Data items in the PDBX_ENTITY_BRANCH_LIST category specify the list of monomers in a branched entity. Allowance is made for the possibility of microheterogeneity in a sample by allowing a given sequence number to be correlated with more than one monomer ID. The corresponding ATOM_SITE entries should reflect this heterogeneity. Example 1 - <PDBx:pdbx_entity_branch_listCategory> <PDBx:pdbx_entity_branch_list comp_id="NAG" entity_id="2" num="1"> <PDBx:hetero>n</PDBx:hetero> </PDBx:pdbx_entity_branch_list> <PDBx:pdbx_entity_branch_list comp_id="GAL" entity_id="2" num="2"> <PDBx:hetero>n</PDBx:hetero> </PDBx:pdbx_entity_branch_list> <PDBx:pdbx_entity_branch_list comp_id="FUC" entity_id="2" num="3"> <PDBx:hetero>n</PDBx:hetero> </PDBx:pdbx_entity_branch_list> <PDBx:pdbx_entity_branch_list comp_id="FUC" entity_id="2" num="4"> <PDBx:hetero>n</PDBx:hetero> </PDBx:pdbx_entity_branch_list> </PDBx:pdbx_entity_branch_listCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_entity_branch_list_hetero CASCADE;
@@ -8718,7 +8718,7 @@ CREATE TABLE pdbx_entity_branch_list (
 --
 -- (quoted from pdbx_entity_func_bind_modeType)
 -- Data items in the PDBX_ENTITY_FUNC_BIND_MODE category describe characteristics of protein oligonucleotide binding.
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_entity_func_bind_mode_protein_binds_to CASCADE;
@@ -8741,7 +8741,7 @@ CREATE TABLE pdbx_entity_func_bind_mode (
 --
 -- (quoted from pdbx_entity_func_enzymeType)
 -- Data items in the PDBX_ENTITY_FUNC_ENZYME category describe characteristics of protein oligonucleotide binding in which the binding mode is enzymatic.
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_entity_func_enzyme_type CASCADE;
@@ -8757,7 +8757,7 @@ CREATE TABLE pdbx_entity_func_enzyme (
 --
 -- (quoted from pdbx_entity_func_otherType)
 -- Data items in the PDBX_ENTITY_FUNC_OTHER category describe characteristics of protein oligonucleotide binding in which the binding mode is not classified.
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_entity_func_other_type CASCADE;
@@ -8773,7 +8773,7 @@ CREATE TABLE pdbx_entity_func_other (
 --
 -- (quoted from pdbx_entity_func_regulatoryType)
 -- Data items in the PDBX_ENTITY_FUNC_REGULATORY category describe characteristics of protein oligonucleotide binding in which the binding mode is regulatory.
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_entity_func_regulatory_type CASCADE;
@@ -8789,7 +8789,7 @@ CREATE TABLE pdbx_entity_func_regulatory (
 --
 -- (quoted from pdbx_entity_func_structuralType)
 -- Data items in the PDBX_ENTITY_FUNC_STRUCTURAL category describe characteristics of protein oligonucleotide binding in which the binding mode is structural.
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_entity_func_structural_type CASCADE;
@@ -8805,7 +8805,7 @@ CREATE TABLE pdbx_entity_func_structural (
 --
 -- (quoted from pdbx_entity_instance_featureType)
 -- Data items in the pdbx_entity_instance_feature category records special features of selected entity instances. Example 1 - <PDBx:pdbx_entity_instance_featureCategory> <PDBx:pdbx_entity_instance_feature ordinal="1"> <PDBx:auth_asym_id>A</PDBx:auth_asym_id> <PDBx:auth_comp_id>R77</PDBx:auth_comp_id> <PDBx:auth_seq_num>47</PDBx:auth_seq_num> <PDBx:comp_id>Q20</PDBx:comp_id> <PDBx:feature_type>SUBJECT OF INVESTIGATION</PDBx:feature_type> </PDBx:pdbx_entity_instance_feature> </PDBx:pdbx_entity_instance_featureCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_entity_instance_feature_feature_type CASCADE;
@@ -8828,7 +8828,7 @@ CREATE TABLE pdbx_entity_instance_feature (
 --
 -- (quoted from pdbx_entity_nameType)
 -- The PDBX_ENTITY_NAME records additional name information for each entity. Example 1 - <PDBx:pdbx_entity_nameCategory> <PDBx:pdbx_entity_name entity_id="1" name="PLASTOCYANIN" name_type="SWS-NAME"></PDBx:pdbx_entity_name> <PDBx:pdbx_entity_name entity_id="1" name="Electron transport" name_type="SWS-KEYWORD"></PDBx:pdbx_entity_name> </PDBx:pdbx_entity_nameCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_entity_name_name_type CASCADE;
@@ -8847,7 +8847,7 @@ CREATE TABLE pdbx_entity_name (
 --
 -- (quoted from pdbx_entity_name_instanceType)
 -- Data items in the PDBX_ENTITY_NAME_INSTANCE category list names used to define entities with their associated database, entity, chain, and molecule identifiers. <PDBx:pdbx_entity_name_instanceCategory> <PDBx:pdbx_entity_name_instance entity_id="1" name="ALCOHOL DEHYDROGENASE" pdb_id="1B2L"> <PDBx:pdb_chain_id>A</PDBx:pdb_chain_id> <PDBx:pdb_mol_id>1</PDBx:pdb_mol_id> <PDBx:rcsb_id>RCSB000146</PDBx:rcsb_id> </PDBx:pdbx_entity_name_instance> </PDBx:pdbx_entity_name_instanceCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_entity_name_instance (
@@ -8867,7 +8867,7 @@ CREATE TABLE pdbx_entity_name_instance (
 --
 -- (quoted from pdbx_entity_name_taxonomyType)
 -- Data items in the PDBX_ENTITY_NAME_TAXONOMY category define the names and synonyms of the entity name taxonomy. <PDBx:pdbx_entity_name_taxonomyCategory> <PDBx:pdbx_entity_name_taxonomy id="alcohol dehydrogenase" name="alcohol dehydrogenase"> <PDBx:name_type>STANDARD</PDBx:name_type> </PDBx:pdbx_entity_name_taxonomy> <PDBx:pdbx_entity_name_taxonomy id="alcohol dehydrogenase" name="adhg"> <PDBx:name_type>SYNONYM</PDBx:name_type> </PDBx:pdbx_entity_name_taxonomy> <PDBx:pdbx_entity_name_taxonomy id="alcohol dehydrogenase" name="steroid active alcohol dehydrogenase"> <PDBx:name_type>SUBCLASS</PDBx:name_type> </PDBx:pdbx_entity_name_taxonomy> <PDBx:pdbx_entity_name_taxonomy id="alcohol dehydrogenase" name="$ALCOHOL DEHYDROGENASE$"> <PDBx:name_type>DEPRECATED</PDBx:name_type> </PDBx:pdbx_entity_name_taxonomy> </PDBx:pdbx_entity_name_taxonomyCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_entity_name_taxonomy_name_type CASCADE;
@@ -8885,7 +8885,7 @@ CREATE TABLE pdbx_entity_name_taxonomy (
 --
 -- (quoted from pdbx_entity_name_taxonomy_treeType)
 -- Data items in the PDBX_ENTITY_NAME_TAXONOMY_TREE category define the tree structure of the entity name taxonomy. <PDBx:pdbx_entity_name_taxonomy_treeCategory> <PDBx:pdbx_entity_name_taxonomy_tree id="Oxidoreductases" parent_id="-"></PDBx:pdbx_entity_name_taxonomy_tree> <PDBx:pdbx_entity_name_taxonomy_tree id="alcohol dehydrogenase" parent_id="Oxidoreductases"></PDBx:pdbx_entity_name_taxonomy_tree> <PDBx:pdbx_entity_name_taxonomy_tree id="alcohol dehydrogenase (NADP)" parent_id="Oxidoreductases"></PDBx:pdbx_entity_name_taxonomy_tree> <PDBx:pdbx_entity_name_taxonomy_tree id="homoserine dehydrogenase" parent_id="Oxidoreductases"></PDBx:pdbx_entity_name_taxonomy_tree> <PDBx:pdbx_entity_name_taxonomy_tree id="Transferases" parent_id="-"></PDBx:pdbx_entity_name_taxonomy_tree> <PDBx:pdbx_entity_name_taxonomy_tree id="nicotinamide N-methyltransferase" parent_id="Transferases"></PDBx:pdbx_entity_name_taxonomy_tree> <PDBx:pdbx_entity_name_taxonomy_tree id="glycine N-methyltransferase" parent_id="Transferases"></PDBx:pdbx_entity_name_taxonomy_tree> </PDBx:pdbx_entity_name_taxonomy_treeCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_entity_name_taxonomy_tree (
@@ -8900,7 +8900,7 @@ CREATE TABLE pdbx_entity_name_taxonomy_tree (
 --
 -- (quoted from pdbx_entity_nonpolyType)
 -- Example 1 -
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_entity_nonpoly (
@@ -8915,7 +8915,7 @@ CREATE TABLE pdbx_entity_nonpoly (
 --
 -- (quoted from pdbx_entity_poly_comp_link_listType)
 -- Data items in the PDBX_ENTITY_POLY_COMP_LINK_LIST category enumerate the the linkages between components within the polymer entity. Example 1 - <PDBx:pdbx_entity_poly_comp_link_listCategory> <PDBx:pdbx_entity_poly_comp_link_list link_id="1"> <PDBx:atom_id_1 xsi:nil="true" /> <PDBx:atom_id_2 xsi:nil="true" /> <PDBx:atom_stereo_config_1 xsi:nil="true" /> <PDBx:atom_stereo_config_2 xsi:nil="true" /> <PDBx:comp_id_1 xsi:nil="true" /> <PDBx:comp_id_2 xsi:nil="true" /> <PDBx:entity_comp_num_1>1</PDBx:entity_comp_num_1> <PDBx:entity_comp_num_2>2</PDBx:entity_comp_num_2> <PDBx:entity_id>1</PDBx:entity_id> <PDBx:leaving_atom_id_1 xsi:nil="true" /> <PDBx:leaving_atom_id_2 xsi:nil="true" /> <PDBx:value_order>sing</PDBx:value_order> </PDBx:pdbx_entity_poly_comp_link_list> </PDBx:pdbx_entity_poly_comp_link_listCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_entity_poly_comp_link_list_atom_stereo_config_1 CASCADE;
@@ -8947,7 +8947,7 @@ CREATE TABLE pdbx_entity_poly_comp_link_list (
 --
 -- (quoted from pdbx_entity_poly_domainType)
 -- Data items in the PDBX_ENTITY_POLY_DOMAIN category specify domains of monomers within a polymer.
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_entity_poly_domain (
@@ -8968,7 +8968,7 @@ CREATE TABLE pdbx_entity_poly_domain (
 --
 -- (quoted from pdbx_entity_poly_na_nonstandardType)
 -- Data items in the PDBX_ENTITY_POLY_NA_NONSTANDARD category describe the nonstandard features of the nucleic acid polymer entities.
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_entity_poly_na_nonstandard_feature CASCADE;
@@ -8985,7 +8985,7 @@ CREATE TABLE pdbx_entity_poly_na_nonstandard (
 --
 -- (quoted from pdbx_entity_poly_na_typeType)
 -- Data items in the PDBX_ENTITY_POLY_NA_TYPE category describe type of nucleic acid polymer entities.
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_entity_poly_na_type_type CASCADE;
@@ -9002,7 +9002,7 @@ CREATE TABLE pdbx_entity_poly_na_type (
 --
 -- (quoted from pdbx_entity_poly_protein_classType)
 -- Data items in the PDBX_ENTITY_POLY_PROTEIN_CLASS category provides a top-level protein classification.
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_entity_poly_protein_class_class CASCADE;
@@ -9019,7 +9019,7 @@ CREATE TABLE pdbx_entity_poly_protein_class (
 --
 -- (quoted from pdbx_entity_prod_protocolType)
 -- This category contains descriptive protocols for the production of this entity.
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_entity_prod_protocol_protocol_type CASCADE;
@@ -9039,7 +9039,7 @@ CREATE TABLE pdbx_entity_prod_protocol (
 --
 -- (quoted from pdbx_entity_src_gen_characterType)
 -- This category contains details of protein characterisation. It refers to the characteristion of the product of a specific step.
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_entity_src_gen_character (
@@ -9061,7 +9061,7 @@ CREATE TABLE pdbx_entity_src_gen_character (
 --
 -- (quoted from pdbx_entity_src_gen_chromType)
 -- This category contains details for the chromatographic steps used in the purification of the protein.
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_entity_src_gen_chrom (
@@ -9104,7 +9104,7 @@ CREATE TABLE pdbx_entity_src_gen_chrom (
 --
 -- (quoted from pdbx_entity_src_gen_clone_ligationType)
 -- This category contains details for the ligation-based cloning steps used in the overall protein production process. attribute clone_step_id in category pdbx_entity_src_gen_clone_ligation in this category must point at a defined attribute step_id in category pdbx_entity_src_gen_clone. The details in PDBX_ENTITY_SRC_GEN_CLONE_LIGATION extend the details in PDBX_ENTITY_SRC_GEN_CLONE to cover ligation dependent cloning steps.
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_entity_src_gen_clone_ligation (
@@ -9128,7 +9128,7 @@ CREATE TABLE pdbx_entity_src_gen_clone_ligation (
 --
 -- (quoted from pdbx_entity_src_gen_clone_recombinationType)
 -- This category contains details for the recombination-based cloning steps used in the overall protein production process. It is assumed that these reactions will use commercially available kits. attribute clone_step_id in category pdbx_entity_src_gen_clone_recombination in this category must point at a defined attribute step_id in category pdbx_entity_src_gen_clone. The details in PDBX_ENTITY_SRC_GEN_CLONE_RECOMBINATION extend the details in PDBX_ENTITY_SRC_GEN_CLONE to cover recombination dependent cloning steps.
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_entity_src_gen_clone_recombination_recombination_enzy CASCADE;
@@ -9152,7 +9152,7 @@ CREATE TABLE pdbx_entity_src_gen_clone_recombination (
 --
 -- (quoted from pdbx_entity_src_gen_depositor_infoType)
 -- Data items in the PDBX_ENTITY_SRC_GEN_DEPOSITOR_INFO category record details of the source from which the entity was obtained in cases where the source was genetically manipulated. The following are treated separately: items pertaining to the tissue from which the gene was obtained, items pertaining to the host organism for gene expression and items pertaining to the actual producing organism (plasmid). Example - Fusion protein case- 3L2J Fusion protein of maltose-binding periplasmic protein and parathyroid hormone/parathyroid hormone-related peptide receptor. <PDBx:pdbx_entity_src_gen_depositor_infoCategory> <PDBx:pdbx_entity_src_gen_depositor_info src_id="1"> <PDBx:beg_seq_num>1</PDBx:beg_seq_num> <PDBx:end_seq_num>364</PDBx:end_seq_num> <PDBx:entity_id>1</PDBx:entity_id> <PDBx:gene_src_gene>b4034, JW3994</PDBx:gene_src_gene> <PDBx:gene_src_ncbi_taxonomy_id>83333</PDBx:gene_src_ncbi_taxonomy_id> <PDBx:gene_src_scientific_name>Escherichia coli</PDBx:gene_src_scientific_name> <PDBx:host_org_ncbi_taxonomy_id>562</PDBx:host_org_ncbi_taxonomy_id> <PDBx:host_org_scientific_name>Escherichia coli</PDBx:host_org_scientific_name> <PDBx:host_org_vector_type>plasmid</PDBx:host_org_vector_type> <PDBx:plasmid_name>pGEX6p-2RBS</PDBx:plasmid_name> </PDBx:pdbx_entity_src_gen_depositor_info> <PDBx:pdbx_entity_src_gen_depositor_info src_id="2"> <PDBx:beg_seq_num>365</PDBx:beg_seq_num> <PDBx:end_seq_num>370</PDBx:end_seq_num> <PDBx:entity_id>1</PDBx:entity_id> <PDBx:gene_src_ncbi_taxonomy_id>32630</PDBx:gene_src_ncbi_taxonomy_id> <PDBx:gene_src_scientific_name>synthetic construct</PDBx:gene_src_scientific_name> <PDBx:host_org_ncbi_taxonomy_id>562</PDBx:host_org_ncbi_taxonomy_id> <PDBx:host_org_scientific_name>Escherichia coli</PDBx:host_org_scientific_name> <PDBx:host_org_vector_type>plasmid</PDBx:host_org_vector_type> <PDBx:plasmid_name>pGEX6p-2RBS</PDBx:plasmid_name> </PDBx:pdbx_entity_src_gen_depositor_info> <PDBx:pdbx_entity_src_gen_depositor_info src_id="3"> <PDBx:beg_seq_num>371</PDBx:beg_seq_num> <PDBx:end_seq_num>529</PDBx:end_seq_num> <PDBx:entity_id>1</PDBx:entity_id> <PDBx:gene_src_gene>malE, PTHR1</PDBx:gene_src_gene> <PDBx:gene_src_ncbi_taxonomy_id>9606</PDBx:gene_src_ncbi_taxonomy_id> <PDBx:gene_src_scientific_name>Homo sapiens</PDBx:gene_src_scientific_name> <PDBx:host_org_ncbi_taxonomy_id>562</PDBx:host_org_ncbi_taxonomy_id> <PDBx:host_org_scientific_name>Escherichia coli</PDBx:host_org_scientific_name> <PDBx:host_org_vector_type>plasmid</PDBx:host_org_vector_type> <PDBx:plasmid_name>pGEX6p-2RBS</PDBx:plasmid_name> </PDBx:pdbx_entity_src_gen_depositor_info> <PDBx:pdbx_entity_src_gen_depositor_info src_id="4"> <PDBx:beg_seq_num>530</PDBx:beg_seq_num> <PDBx:end_seq_num>535</PDBx:end_seq_num> <PDBx:entity_id>1</PDBx:entity_id> <PDBx:gene_src_ncbi_taxonomy_id>32630</PDBx:gene_src_ncbi_taxonomy_id> <PDBx:gene_src_scientific_name>synthetic construct</PDBx:gene_src_scientific_name> <PDBx:host_org_ncbi_taxonomy_id>562</PDBx:host_org_ncbi_taxonomy_id> <PDBx:host_org_scientific_name>Escherichia coli</PDBx:host_org_scientific_name> <PDBx:host_org_vector_type>plasmid</PDBx:host_org_vector_type> <PDBx:plasmid_name>pGEX6p-2RBS</PDBx:plasmid_name> </PDBx:pdbx_entity_src_gen_depositor_info> </PDBx:pdbx_entity_src_gen_depositor_infoCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_entity_src_gen_depositor_info_seq_type CASCADE;
@@ -9180,7 +9180,7 @@ CREATE TABLE pdbx_entity_src_gen_depositor_info (
 --
 -- (quoted from pdbx_entity_src_gen_express_timepointType)
 -- This category contains details for OD time series used to monitor a given EXPRESSION step used in the overall protein production process.
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_entity_src_gen_express_timepoint (
@@ -9201,7 +9201,7 @@ CREATE TABLE pdbx_entity_src_gen_express_timepoint (
 --
 -- (quoted from pdbx_entity_src_gen_fractType)
 -- This category contains details for the fraction steps used in the overall protein production process. Examples of fractionation steps are centrifugation and magnetic bead pull-down purification.
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_entity_src_gen_fract_method CASCADE;
@@ -9236,7 +9236,7 @@ CREATE TABLE pdbx_entity_src_gen_fract (
 --
 -- (quoted from pdbx_entity_src_gen_lysisType)
 -- This category contains details for the cell lysis steps used in the overall protein production process.
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_entity_src_gen_lysis_method CASCADE;
@@ -9268,7 +9268,7 @@ CREATE TABLE pdbx_entity_src_gen_lysis (
 --
 -- (quoted from pdbx_entity_src_gen_prod_digestType)
 -- This category contains details for the DIGEST steps used in the overall protein production process. The digestion is assumed to be applied to the result of the previous production step, or the gene source if this is the first production step. Example 1 - hypothetical example <PDBx:pdbx_entity_src_gen_prod_digestCategory> <PDBx:pdbx_entity_src_gen_prod_digest entity_id="222000111" entry_id="111000111" step_id="2"> <PDBx:date>2002-07-12:15:13</PDBx:date> <PDBx:end_construct_id>440050000123</PDBx:end_construct_id> <PDBx:next_step_id>3</PDBx:next_step_id> <PDBx:purification_details> No purification</PDBx:purification_details> <PDBx:restriction_enzyme_1>NcoI</PDBx:restriction_enzyme_1> <PDBx:restriction_enzyme_2>BamII</PDBx:restriction_enzyme_2> <PDBx:robot_id>5</PDBx:robot_id> </PDBx:pdbx_entity_src_gen_prod_digest> </PDBx:pdbx_entity_src_gen_prod_digestCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_entity_src_gen_prod_digest (
@@ -9293,7 +9293,7 @@ CREATE TABLE pdbx_entity_src_gen_prod_digest (
 --
 -- (quoted from pdbx_entity_src_gen_prod_other_parameterType)
 -- This category contains parameters and values required to capture information about a particular process step
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_entity_src_gen_prod_other_parameter (
@@ -9314,7 +9314,7 @@ CREATE TABLE pdbx_entity_src_gen_prod_other_parameter (
 --
 -- (quoted from pdbx_entity_src_gen_prod_pcrType)
 -- This category contains details for the PCR steps used in the overall protein production process. The PCR is assumed to be applied to the result of the previous production step, or the gene source if this is the first production step. Example 1 - hypothetical example <PDBx:pdbx_entity_src_gen_prod_pcrCategory> <PDBx:pdbx_entity_src_gen_prod_pcr entity_id="222000111" entry_id="111000111" step_id="1"> <PDBx:date>2002-07-12:15:13</PDBx:date> <PDBx:end_construct_id>440050000111</PDBx:end_construct_id> <PDBx:forward_primer_id>2</PDBx:forward_primer_id> <PDBx:next_step_id>2</PDBx:next_step_id> <PDBx:purification_details> No purification</PDBx:purification_details> <PDBx:reaction_details> Annealing temperature = 70 C Annealing time = 60 s Extending temperature = 74 C Extending time = 120 s Melting temperature = 95 C Melting time = 120 s Number of cycles = 40 Polymerase = KOD Template = 10 pmol Primer = 25 pmol Total volume = 25 ul</PDBx:reaction_details> <PDBx:reverse_primer_id>3</PDBx:reverse_primer_id> <PDBx:robot_id>5</PDBx:robot_id> </PDBx:pdbx_entity_src_gen_prod_pcr> </PDBx:pdbx_entity_src_gen_prod_pcrCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_entity_src_gen_prod_pcr (
@@ -9340,7 +9340,7 @@ CREATE TABLE pdbx_entity_src_gen_prod_pcr (
 --
 -- (quoted from pdbx_entity_src_gen_proteolysisType)
 -- This category contains details for the protein purification tag removal steps used in the overall protein production process
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_entity_src_gen_proteolysis (
@@ -9369,7 +9369,7 @@ CREATE TABLE pdbx_entity_src_gen_proteolysis (
 --
 -- (quoted from pdbx_entity_src_gen_pureType)
 -- This category contains details for the final purified protein product. Note that this category does not contain the amino acid sequence of the protein. The sequence will be found in the ENTITY_POLY_SEQ entry with matching entity_id. Only one PDBX_ENTITY_SRC_GEN_PURE category is allowed per entity, hence there is no step_id for this category.
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_entity_src_gen_pure (
@@ -9401,7 +9401,7 @@ CREATE TABLE pdbx_entity_src_gen_pure (
 --
 -- (quoted from pdbx_entity_src_gen_refoldType)
 -- This category contains details for the refolding steps used in the overall protein production process.
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_entity_src_gen_refold (
@@ -9430,7 +9430,7 @@ CREATE TABLE pdbx_entity_src_gen_refold (
 --
 -- (quoted from pdbx_entity_src_synType)
 -- The data items in category PDBX_ENTITY_SRC_SYN record the source details about chemically synthesized molecules.
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_entity_src_syn_pdbx_alt_source_flag CASCADE;
@@ -9455,7 +9455,7 @@ CREATE TABLE pdbx_entity_src_syn (
 --
 -- (quoted from pdbx_entry_detailsType)
 -- Data items in the PDBX_ENTRY_DETAILS category provide additional details about this entry. Example 1 <PDBx:pdbx_entry_detailsCategory> <PDBx:pdbx_entry_details entry_id="1ABC"> <PDBx:nonpolymer_details>Inhibitor VX4A in this entry adopts a highly strained conformation about C32 inorder to fit into the cleft about the active site.</PDBx:nonpolymer_details> </PDBx:pdbx_entry_details> </PDBx:pdbx_entry_detailsCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_entry_details_has_ligand_of_interest CASCADE;
@@ -9475,7 +9475,7 @@ CREATE TABLE pdbx_entry_details (
 --
 -- (quoted from pdbx_exptl_crystal_cryo_treatmentType)
 -- Data items in the PDBX_EXPTL_CRYSTAL_CRYO_TREATMENT category record details cryogenic treatments applied to this crystal. Example 1 <PDBx:pdbx_exptl_crystal_cryo_treatmentCategory> <PDBx:pdbx_exptl_crystal_cryo_treatment crystal_id="4"> <PDBx:cooling_details> Direct immersion in liquid nitrogen</PDBx:cooling_details> <PDBx:final_solution_details> 25&#37; (v/v) glycerol in precipitant solution</PDBx:final_solution_details> <PDBx:soaking_details> A series of 1 min soaks beginning at 5&#37; (v/v) glycerol in precipitant, transiting to 20&#37; (v/v) glycerol, and finally to 25&#37; glycerol</PDBx:soaking_details> </PDBx:pdbx_exptl_crystal_cryo_treatment> </PDBx:pdbx_exptl_crystal_cryo_treatmentCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_exptl_crystal_cryo_treatment (
@@ -9492,7 +9492,7 @@ CREATE TABLE pdbx_exptl_crystal_cryo_treatment (
 --
 -- (quoted from pdbx_exptl_crystal_grow_compType)
 -- Data items in the PDBX_EXPTL_CRYSTAL_GROW_COMP category record details about the components of the solutions that were 'mixed' to produce the crystal. Example 1 - <PDBx:pdbx_exptl_crystal_grow_compCategory> <PDBx:pdbx_exptl_crystal_grow_comp comp_id="1" crystal_id="4"> <PDBx:comp_name>protein</PDBx:comp_name> <PDBx:conc>25.</PDBx:conc> <PDBx:conc_range xsi:nil="true" /> <PDBx:conc_units>mg/ml</PDBx:conc_units> <PDBx:sol_id>protein</PDBx:sol_id> </PDBx:pdbx_exptl_crystal_grow_comp> <PDBx:pdbx_exptl_crystal_grow_comp comp_id="2" crystal_id="4"> <PDBx:comp_name>Tris HCl</PDBx:comp_name> <PDBx:conc>20.</PDBx:conc> <PDBx:conc_range xsi:nil="true" /> <PDBx:conc_units>millimolar</PDBx:conc_units> <PDBx:sol_id>protein</PDBx:sol_id> </PDBx:pdbx_exptl_crystal_grow_comp> <PDBx:pdbx_exptl_crystal_grow_comp comp_id="3" crystal_id="4"> <PDBx:comp_name>NaCl</PDBx:comp_name> <PDBx:conc>0.2</PDBx:conc> <PDBx:conc_range xsi:nil="true" /> <PDBx:conc_units>molar</PDBx:conc_units> <PDBx:sol_id>protein</PDBx:sol_id> </PDBx:pdbx_exptl_crystal_grow_comp> <PDBx:pdbx_exptl_crystal_grow_comp comp_id="1" crystal_id="4"> <PDBx:comp_name>PEG 4000</PDBx:comp_name> <PDBx:conc>12.5</PDBx:conc> <PDBx:conc_range xsi:nil="true" /> <PDBx:conc_units>percent_weight_by_volume</PDBx:conc_units> <PDBx:sol_id>precipitant</PDBx:sol_id> </PDBx:pdbx_exptl_crystal_grow_comp> <PDBx:pdbx_exptl_crystal_grow_comp comp_id="2" crystal_id="4"> <PDBx:comp_name>MES</PDBx:comp_name> <PDBx:conc>0.1</PDBx:conc> <PDBx:conc_range xsi:nil="true" /> <PDBx:conc_units>molar</PDBx:conc_units> <PDBx:sol_id>precipitant</PDBx:sol_id> </PDBx:pdbx_exptl_crystal_grow_comp> </PDBx:pdbx_exptl_crystal_grow_compCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_exptl_crystal_grow_comp (
@@ -9512,7 +9512,7 @@ CREATE TABLE pdbx_exptl_crystal_grow_comp (
 --
 -- (quoted from pdbx_exptl_crystal_grow_solType)
 -- Data items in the PDBX_EXPTL_CRYSTAL_GROW_SOL category record details about the solutions that were 'mixed' to produce the crystal. Example 1 <PDBx:pdbx_exptl_crystal_grow_solCategory> <PDBx:pdbx_exptl_crystal_grow_sol crystal_id="1" sol_id="protein"> <PDBx:pH>7.5</PDBx:pH> <PDBx:volume>0.5</PDBx:volume> <PDBx:volume_units>microliter</PDBx:volume_units> </PDBx:pdbx_exptl_crystal_grow_sol> <PDBx:pdbx_exptl_crystal_grow_sol crystal_id="1" sol_id="precipitant"> <PDBx:pH>7.3</PDBx:pH> <PDBx:volume>0.5</PDBx:volume> <PDBx:volume_units>microliter</PDBx:volume_units> </PDBx:pdbx_exptl_crystal_grow_sol> <PDBx:pdbx_exptl_crystal_grow_sol crystal_id="1" sol_id="reservoir"> <PDBx:pH>7.3</PDBx:pH> <PDBx:volume>0.5</PDBx:volume> <PDBx:volume_units>milliliter</PDBx:volume_units> </PDBx:pdbx_exptl_crystal_grow_sol> </PDBx:pdbx_exptl_crystal_grow_solCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_exptl_crystal_grow_sol_sol_id CASCADE;
@@ -9532,7 +9532,7 @@ CREATE TABLE pdbx_exptl_crystal_grow_sol (
 --
 -- (quoted from pdbx_exptl_pdType)
 -- Data items in the pdbx_exptl_pd record information about powder sample preparations.
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_exptl_pd (
@@ -9549,7 +9549,7 @@ CREATE TABLE pdbx_exptl_pd (
 --
 -- (quoted from pdbx_family_group_indexType)
 -- Data items in the PDBX_FAMILY_GROUP_INDEX category record the family membership in family groups. Example 1 - <PDBx:pdbx_family_group_indexCategory> <PDBx:pdbx_family_group_index family_prd_id="FAM_0000001" id="FGR_0000001"></PDBx:pdbx_family_group_index> <PDBx:pdbx_family_group_index family_prd_id="FAM_0000002" id="FGR_0000001"></PDBx:pdbx_family_group_index> <PDBx:pdbx_family_group_index family_prd_id="FAM_0000021" id="FGR_0000001"></PDBx:pdbx_family_group_index> <PDBx:pdbx_family_group_index family_prd_id="FAM_0000022" id="FGR_0000002"></PDBx:pdbx_family_group_index> <PDBx:pdbx_family_group_index family_prd_id="FAM_0000023" id="FGR_0000002"></PDBx:pdbx_family_group_index> </PDBx:pdbx_family_group_indexCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_family_group_index (
@@ -9564,7 +9564,7 @@ CREATE TABLE pdbx_family_group_index (
 --
 -- (quoted from pdbx_family_prd_auditType)
 -- Data items in the PDBX_FAMILY_PRD_AUDIT category records the status and tracking information for this family. Example 1 - <PDBx:pdbx_family_prd_auditCategory> <PDBx:pdbx_family_prd_audit action_type="Create family" date="2011-12-01" family_prd_id="FAM_0000001"> <PDBx:annotator>JY</PDBx:annotator> <PDBx:processing_site>RCSB</PDBx:processing_site> </PDBx:pdbx_family_prd_audit> <PDBx:pdbx_family_prd_audit action_type="Modify sequence" date="2011-12-05" family_prd_id="FAM_0000001"> <PDBx:annotator>MZ</PDBx:annotator> <PDBx:processing_site>RCSB</PDBx:processing_site> </PDBx:pdbx_family_prd_audit> </PDBx:pdbx_family_prd_auditCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_family_prd_audit_action_type CASCADE;
@@ -9587,7 +9587,7 @@ CREATE TABLE pdbx_family_prd_audit (
 --
 -- (quoted from pdbx_feature_assemblyType)
 -- Data items in the PDBX_FEATURE_ASSEMBLY category records information about properties pertaining to this structural assembly. Example 1 - Biological process for functional assembly <PDBx:pdbx_feature_assemblyCategory> <PDBx:pdbx_feature_assembly id="1"> <PDBx:assembly_id>b1</PDBx:assembly_id> <PDBx:feature>nitrogen metabolism</PDBx:feature> <PDBx:feature_assigned_by>GO</PDBx:feature_assigned_by> <PDBx:feature_citation_id>GO</PDBx:feature_citation_id> <PDBx:feature_name>biological process</PDBx:feature_name> <PDBx:feature_type>value</PDBx:feature_type> </PDBx:pdbx_feature_assembly> </PDBx:pdbx_feature_assemblyCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_feature_assembly_feature_type CASCADE;
@@ -9610,7 +9610,7 @@ CREATE TABLE pdbx_feature_assembly (
 --
 -- (quoted from pdbx_feature_domainType)
 -- Data items in the PDBX_FEATURE_DOMAIN category records information about properties pertaining to this structure domain. Example 1 - SCOP data for PDB Entry 1KIP domain d1kipa_ <PDBx:pdbx_feature_domainCategory> <PDBx:pdbx_feature_domain id="1"> <PDBx:domain_id>d1kipa_</PDBx:domain_id> <PDBx:feature>All beta proteins</PDBx:feature> <PDBx:feature_assigned_by>SCOP</PDBx:feature_assigned_by> <PDBx:feature_citation_id>scop</PDBx:feature_citation_id> <PDBx:feature_name>class</PDBx:feature_name> <PDBx:feature_type>value</PDBx:feature_type> </PDBx:pdbx_feature_domain> <PDBx:pdbx_feature_domain id="2"> <PDBx:domain_id>d1kipa_</PDBx:domain_id> <PDBx:feature>Immunoglobulin-like beta-sandwich</PDBx:feature> <PDBx:feature_assigned_by>SCOP</PDBx:feature_assigned_by> <PDBx:feature_citation_id>scop</PDBx:feature_citation_id> <PDBx:feature_name>fold</PDBx:feature_name> <PDBx:feature_type>value</PDBx:feature_type> </PDBx:pdbx_feature_domain> <PDBx:pdbx_feature_domain id="3"> <PDBx:domain_id>d1kipa_</PDBx:domain_id> <PDBx:feature>Immunoglobulin</PDBx:feature> <PDBx:feature_assigned_by>SCOP</PDBx:feature_assigned_by> <PDBx:feature_citation_id>scop</PDBx:feature_citation_id> <PDBx:feature_name>superfamily</PDBx:feature_name> <PDBx:feature_type>value</PDBx:feature_type> </PDBx:pdbx_feature_domain> <PDBx:pdbx_feature_domain id="4"> <PDBx:domain_id>d1kipa_</PDBx:domain_id> <PDBx:feature>V set domains (antibody variable domain-like)</PDBx:feature> <PDBx:feature_assigned_by>SCOP</PDBx:feature_assigned_by> <PDBx:feature_citation_id>scop</PDBx:feature_citation_id> <PDBx:feature_name>family</PDBx:feature_name> <PDBx:feature_type>value</PDBx:feature_type> </PDBx:pdbx_feature_domain> <PDBx:pdbx_feature_domain id="5"> <PDBx:domain_id>d1kipa_</PDBx:domain_id> <PDBx:feature>Immunoglobulin light chain kappa variable domain</PDBx:feature> <PDBx:feature_assigned_by>SCOP</PDBx:feature_assigned_by> <PDBx:feature_citation_id>scop</PDBx:feature_citation_id> <PDBx:feature_name>domain</PDBx:feature_name> <PDBx:feature_type>value</PDBx:feature_type> </PDBx:pdbx_feature_domain> <PDBx:pdbx_feature_domain id="6"> <PDBx:domain_id>d1kipa_</PDBx:domain_id> <PDBx:feature>Mouse (Mus musculus), cluster 4</PDBx:feature> <PDBx:feature_assigned_by>SCOP</PDBx:feature_assigned_by> <PDBx:feature_citation_id>scop</PDBx:feature_citation_id> <PDBx:feature_name>species</PDBx:feature_name> <PDBx:feature_type>value</PDBx:feature_type> </PDBx:pdbx_feature_domain> </PDBx:pdbx_feature_domainCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_feature_domain_feature_type CASCADE;
@@ -9633,7 +9633,7 @@ CREATE TABLE pdbx_feature_domain (
 --
 -- (quoted from pdbx_feature_entryType)
 -- Data items in the PDBX_FEATURE_ENTRY category records information about properties pertaining to this structure entry. Example 1 - Gene Ontology data by entry <PDBx:pdbx_feature_entryCategory> <PDBx:pdbx_feature_entry id="1"> <PDBx:feature>DNA binding activity</PDBx:feature> <PDBx:feature_assigned_by>GO</PDBx:feature_assigned_by> <PDBx:feature_citation_id>GO</PDBx:feature_citation_id> <PDBx:feature_name>molecular function</PDBx:feature_name> <PDBx:feature_type>value</PDBx:feature_type> </PDBx:pdbx_feature_entry> <PDBx:pdbx_feature_entry id="2"> <PDBx:feature>regulation of transcription, DNA-dependent</PDBx:feature> <PDBx:feature_assigned_by>GO</PDBx:feature_assigned_by> <PDBx:feature_citation_id>GO</PDBx:feature_citation_id> <PDBx:feature_name>biological process</PDBx:feature_name> <PDBx:feature_type>value</PDBx:feature_type> </PDBx:pdbx_feature_entry> </PDBx:pdbx_feature_entryCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_feature_entry_feature_type CASCADE;
@@ -9655,7 +9655,7 @@ CREATE TABLE pdbx_feature_entry (
 --
 -- (quoted from pdbx_feature_monomerType)
 -- Data items in the PDBX_FEATURE_MONOMER category records information about properties pertaining to particular monomers in this structure. Example 1 - <PDBx:pdbx_feature_monomerCategory> <PDBx:pdbx_feature_monomer id="1"> <PDBx:feature>129.4</PDBx:feature> <PDBx:feature_assigned_by>POPS</PDBx:feature_assigned_by> <PDBx:feature_citation_id>pops</PDBx:feature_citation_id> <PDBx:feature_name>SASA</PDBx:feature_name> <PDBx:feature_type>value</PDBx:feature_type> <PDBx:label_alt_id xsi:nil="true" /> <PDBx:label_asym_id>A</PDBx:label_asym_id> <PDBx:label_comp_id>ASP</PDBx:label_comp_id> <PDBx:label_seq_id>1</PDBx:label_seq_id> </PDBx:pdbx_feature_monomer> <PDBx:pdbx_feature_monomer id="1"> <PDBx:feature>35.5</PDBx:feature> <PDBx:feature_assigned_by>POPS</PDBx:feature_assigned_by> <PDBx:feature_citation_id>pops</PDBx:feature_citation_id> <PDBx:feature_name>SASA</PDBx:feature_name> <PDBx:feature_type>value</PDBx:feature_type> <PDBx:label_alt_id xsi:nil="true" /> <PDBx:label_asym_id>A</PDBx:label_asym_id> <PDBx:label_comp_id>ILE</PDBx:label_comp_id> <PDBx:label_seq_id>2</PDBx:label_seq_id> </PDBx:pdbx_feature_monomer> <PDBx:pdbx_feature_monomer id="1"> <PDBx:feature>87.2</PDBx:feature> <PDBx:feature_assigned_by>POPS</PDBx:feature_assigned_by> <PDBx:feature_citation_id>pops</PDBx:feature_citation_id> <PDBx:feature_name>SASA</PDBx:feature_name> <PDBx:feature_type>value</PDBx:feature_type> <PDBx:label_alt_id xsi:nil="true" /> <PDBx:label_asym_id>A</PDBx:label_asym_id> <PDBx:label_comp_id>VAL</PDBx:label_comp_id> <PDBx:label_seq_id>3</PDBx:label_seq_id> </PDBx:pdbx_feature_monomer> </PDBx:pdbx_feature_monomerCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_feature_monomer_feature_type CASCADE;
@@ -9684,7 +9684,7 @@ CREATE TABLE pdbx_feature_monomer (
 --
 -- (quoted from pdbx_feature_sequence_rangeType)
 -- Data items in the PDBX_FEATURE_SEQUENCE_RANGE category records information about properties pertaining to this structure sequence_range. Example 1 - Secondary structure computed by program DSSP. <PDBx:pdbx_feature_sequence_rangeCategory> <PDBx:pdbx_feature_sequence_range id="1"> <PDBx:feature>4-helix (alpha-helix)</PDBx:feature> <PDBx:feature_assigned_by>DSSP</PDBx:feature_assigned_by> <PDBx:feature_name>secondary structure</PDBx:feature_name> <PDBx:feature_software_id>DSSP</PDBx:feature_software_id> <PDBx:feature_type>value</PDBx:feature_type> <PDBx:seq_range_id>H1</PDBx:seq_range_id> </PDBx:pdbx_feature_sequence_range> <PDBx:pdbx_feature_sequence_range id="2"> <PDBx:feature>hydrogen-bonded turn in beta-ladder</PDBx:feature> <PDBx:feature_assigned_by>DSSP</PDBx:feature_assigned_by> <PDBx:feature_name>secondary structure</PDBx:feature_name> <PDBx:feature_software_id>DSSP</PDBx:feature_software_id> <PDBx:feature_type>value</PDBx:feature_type> <PDBx:seq_range_id>T1</PDBx:seq_range_id> </PDBx:pdbx_feature_sequence_range> </PDBx:pdbx_feature_sequence_rangeCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_feature_sequence_range_feature_type CASCADE;
@@ -9707,7 +9707,7 @@ CREATE TABLE pdbx_feature_sequence_range (
 --
 -- (quoted from pdbx_helical_symmetryType)
 -- Data items in the PDBX_HELICAL_SYMMETRY category record details about the helical symmetry group associated with this entry. Example 1 - <PDBx:pdbx_helical_symmetryCategory> <PDBx:pdbx_helical_symmetry entry_id="1ABC"> <PDBx:circular_symmetry>1</PDBx:circular_symmetry> <PDBx:dyad_axis>no</PDBx:dyad_axis> <PDBx:n_subunits_divisor>1</PDBx:n_subunits_divisor> <PDBx:number_of_operations>35</PDBx:number_of_operations> <PDBx:rise_per_n_subunits>6.10</PDBx:rise_per_n_subunits> <PDBx:rotation_per_n_subunits>131.84</PDBx:rotation_per_n_subunits> </PDBx:pdbx_helical_symmetry> </PDBx:pdbx_helical_symmetryCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_helical_symmetry_dyad_axis CASCADE;
@@ -9733,7 +9733,7 @@ CREATE TABLE pdbx_helical_symmetry (
 --
 -- (quoted from pdbx_helical_symmetry_depositor_infoType)
 -- Data items in the PDBX_HELICAL_SYMMETRY_DEPOSITOR_INFO category capture depositor provided information related to the archival cateogory PDBX_HELICAL_SYMMETRY. Example 1 - <PDBx:pdbx_helical_symmetry_depositor_infoCategory> <PDBx:pdbx_helical_symmetry_depositor_info entry_id="1ABC"> <PDBx:circular_symmetry>1</PDBx:circular_symmetry> <PDBx:dyad_axis>no</PDBx:dyad_axis> <PDBx:n_subunits_divisor>1</PDBx:n_subunits_divisor> <PDBx:number_of_operations>35</PDBx:number_of_operations> <PDBx:rise_per_n_subunits>6.10</PDBx:rise_per_n_subunits> <PDBx:rotation_per_n_subunits>131.84</PDBx:rotation_per_n_subunits> </PDBx:pdbx_helical_symmetry_depositor_info> </PDBx:pdbx_helical_symmetry_depositor_infoCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_helical_symmetry_depositor_info_dyad_axis CASCADE;
@@ -9762,7 +9762,7 @@ CREATE TABLE pdbx_helical_symmetry_depositor_info (
 --
 -- (quoted from pdbx_hybridType)
 -- Data items in the PDBX_HYBRID category are used to describe the chimeric characteristics of a DNA/RNA structure. Example 1 - based on NDB entry AHJ068 <PDBx:pdbx_hybridCategory> <PDBx:pdbx_hybrid id="1"> <PDBx:residue_names>G01 C02</PDBx:residue_names> <PDBx:strand_id>A</PDBx:strand_id> <PDBx:sugar_name>R</PDBx:sugar_name> </PDBx:pdbx_hybrid> <PDBx:pdbx_hybrid id="2"> <PDBx:residue_names>G01 C02</PDBx:residue_names> <PDBx:strand_id>B</PDBx:strand_id> <PDBx:sugar_name>R</PDBx:sugar_name> </PDBx:pdbx_hybrid> <PDBx:pdbx_hybrid id="3"> <PDBx:residue_names>G03 T04 A05 T06 A07 C08 G09 C10</PDBx:residue_names> <PDBx:strand_id>A</PDBx:strand_id> <PDBx:sugar_name>D</PDBx:sugar_name> </PDBx:pdbx_hybrid> <PDBx:pdbx_hybrid id="4"> <PDBx:residue_names>G03 T04 A05 T06 A07 C08 G09 C10</PDBx:residue_names> <PDBx:strand_id>B</PDBx:strand_id> <PDBx:sugar_name>D</PDBx:sugar_name> </PDBx:pdbx_hybrid> </PDBx:pdbx_hybridCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_hybrid (
@@ -9778,7 +9778,7 @@ CREATE TABLE pdbx_hybrid (
 --
 -- (quoted from pdbx_inhibitor_infoType)
 -- Data items in the PDBX_INHIBITOR_INFO category are still used until the 'entity' categories are entered into the database, even though the inhibitor is repeated. Example 1 - based on NDB entry ... <PDBx:pdbx_inhibitor_infoCategory> <PDBx:pdbx_inhibitor_info id="1"> <PDBx:name>N-ACETYL-DEOXYTHYMIDINE</PDBx:name> <PDBx:num_per_asym_unit>1</PDBx:num_per_asym_unit> </PDBx:pdbx_inhibitor_info> </PDBx:pdbx_inhibitor_infoCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_inhibitor_info (
@@ -9793,7 +9793,7 @@ CREATE TABLE pdbx_inhibitor_info (
 --
 -- (quoted from pdbx_ion_infoType)
 -- Data items in the PDBX_ION_INFO category are still used until the 'entity' categories are entered into the database, even though the information is repeated. Example 1 - based on NDB entry DDH048 <PDBx:pdbx_ion_infoCategory> <PDBx:pdbx_ion_info id="1"> <PDBx:name>MG</PDBx:name> <PDBx:numb_per_asym_unit>3</PDBx:numb_per_asym_unit> </PDBx:pdbx_ion_info> </PDBx:pdbx_ion_infoCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_ion_info (
@@ -9808,7 +9808,7 @@ CREATE TABLE pdbx_ion_info (
 --
 -- (quoted from pdbx_linked_entity_instance_listType)
 -- Data items in the PDBX_LINKED_ENTITY_INSTANCE_LIST category identify instance molecules represented as linked entities within an entry. Example 1 - <PDBx:pdbx_linked_entity_instance_listCategory> <PDBx:pdbx_linked_entity_instance_list asym_id="X" instance_id="1" linked_entity_id="L1"></PDBx:pdbx_linked_entity_instance_list> <PDBx:pdbx_linked_entity_instance_list asym_id="Y" instance_id="1" linked_entity_id="L1"></PDBx:pdbx_linked_entity_instance_list> <PDBx:pdbx_linked_entity_instance_list asym_id="Z" instance_id="1" linked_entity_id="L1"></PDBx:pdbx_linked_entity_instance_list> </PDBx:pdbx_linked_entity_instance_listCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_linked_entity_instance_list (
@@ -9825,7 +9825,7 @@ CREATE TABLE pdbx_linked_entity_instance_list (
 --
 -- (quoted from pdbx_linked_entity_link_listType)
 -- Data items in the PDBX_LINKED_ENTITY_LINK_LIST category give details about the linkages with molecules represented as linked entities. Example 1 - quinoxaline <PDBx:pdbx_linked_entity_link_listCategory> <PDBx:pdbx_linked_entity_link_list link_id="1" linked_entity_id="L1"> <PDBx:atom_id_1>N</PDBx:atom_id_1> <PDBx:atom_id_2>C</PDBx:atom_id_2> <PDBx:comp_id_1>DSN</PDBx:comp_id_1> <PDBx:comp_id_2>QUI</PDBx:comp_id_2> <PDBx:component_1>1</PDBx:component_1> <PDBx:component_2>2</PDBx:component_2> <PDBx:entity_id_1>1</PDBx:entity_id_1> <PDBx:entity_id_2>2</PDBx:entity_id_2> <PDBx:entity_seq_num_1>1</PDBx:entity_seq_num_1> <PDBx:entity_seq_num_2 xsi:nil="true" /> <PDBx:link_class>PN</PDBx:link_class> <PDBx:value_order>single</PDBx:value_order> </PDBx:pdbx_linked_entity_link_list> <PDBx:pdbx_linked_entity_link_list link_id="2" linked_entity_id="L1"> <PDBx:atom_id_1>N</PDBx:atom_id_1> <PDBx:atom_id_2>C</PDBx:atom_id_2> <PDBx:comp_id_1>DSN</PDBx:comp_id_1> <PDBx:comp_id_2>QUI</PDBx:comp_id_2> <PDBx:component_1>1</PDBx:component_1> <PDBx:component_2>3</PDBx:component_2> <PDBx:entity_id_1>1</PDBx:entity_id_1> <PDBx:entity_id_2>3</PDBx:entity_id_2> <PDBx:entity_seq_num_1>5</PDBx:entity_seq_num_1> <PDBx:entity_seq_num_2 xsi:nil="true" /> <PDBx:link_class>PN</PDBx:link_class> <PDBx:value_order>single</PDBx:value_order> </PDBx:pdbx_linked_entity_link_list> </PDBx:pdbx_linked_entity_link_listCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_linked_entity_link_list_link_class CASCADE;
@@ -9857,7 +9857,7 @@ CREATE TABLE pdbx_linked_entity_link_list (
 --
 -- (quoted from pdbx_missing_atom_nonpolyType)
 -- Data items in the PDBX_MISSING_ATOM_NONPOLY category list the atoms missing in nonpolymer residues. This is a completely derived category. Do not edit.
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_missing_atom_nonpoly (
@@ -9878,7 +9878,7 @@ CREATE TABLE pdbx_missing_atom_nonpoly (
 --
 -- (quoted from pdbx_missing_atom_polyType)
 -- Data items in the PDBX_MISSING_ATOM_POLY category lists atoms missing in polymer residues. This is a completely derived category. Do not edit.
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_missing_atom_poly (
@@ -9900,7 +9900,7 @@ CREATE TABLE pdbx_missing_atom_poly (
 --
 -- (quoted from pdbx_missing_residue_listType)
 -- Provides a place-holder for PDB REMARK 465 data.
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_missing_residue_list (
@@ -9920,7 +9920,7 @@ CREATE TABLE pdbx_missing_residue_list (
 --
 -- (quoted from pdbx_moleculeType)
 -- Data items in the PDBX_MOLECULE category identify reference molecules within a PDB entry. Example 1 - <PDBx:pdbx_moleculeCategory> <PDBx:pdbx_molecule asym_id="X" instance_id="1" prd_id="PRD_050001"></PDBx:pdbx_molecule> <PDBx:pdbx_molecule asym_id="Y" instance_id="1" prd_id="PRD_050001"></PDBx:pdbx_molecule> <PDBx:pdbx_molecule asym_id="Z" instance_id="1" prd_id="PRD_050001"></PDBx:pdbx_molecule> </PDBx:pdbx_moleculeCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_molecule (
@@ -9938,7 +9938,7 @@ CREATE TABLE pdbx_molecule (
 --
 -- (quoted from pdbx_molecule_featuresType)
 -- Data items in the PDBX_MOLECULE_FEATURES category record features of molecules within a PDB entry. Example 1 - <PDBx:pdbx_molecule_featuresCategory> <PDBx:pdbx_molecule_features prd_id="PRD_000001"> <PDBx:class>polypeptide antibiotic</PDBx:class> <PDBx:name>Actinomycin D</PDBx:name> <PDBx:type>Antitumor Antibiotic</PDBx:type> </PDBx:pdbx_molecule_features> </PDBx:pdbx_molecule_featuresCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_molecule_features_class CASCADE;
@@ -9959,7 +9959,7 @@ CREATE TABLE pdbx_molecule_features (
 --
 -- (quoted from pdbx_molecule_features_depositor_infoType)
 -- Data items in the PDBX_MOLECULE_FEATURES_DEPOSITOR_INFO category capture depositor provided information related to the archival cateogory PDBX_MOLECULE_FEATURES. Example 1 - <PDBx:pdbx_molecule_features_depositor_infoCategory> <PDBx:pdbx_molecule_features_depositor_info entity_id="1"> <PDBx:class>polypeptide antibiotic</PDBx:class> <PDBx:name>Actinomycin D</PDBx:name> <PDBx:type>Antitumor Antibiotic</PDBx:type> </PDBx:pdbx_molecule_features_depositor_info> </PDBx:pdbx_molecule_features_depositor_infoCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_molecule_features_depositor_info_class CASCADE;
@@ -9980,7 +9980,7 @@ CREATE TABLE pdbx_molecule_features_depositor_info (
 --
 -- (quoted from pdbx_na_strand_infoType)
 -- Data items in the PDBX_NA_STRAND_INFO category are still used until the 'entity' categories are entered into the database, even though the information is repeated. Example 1 - based on NDB entry DDH048 <PDBx:pdbx_na_strand_infoCategory> <PDBx:pdbx_na_strand_info id="1"> <PDBx:fract_NA_strand_per_asym_unit>half</PDBx:fract_NA_strand_per_asym_unit> <PDBx:num_of_NA_strands_per_asym_unit>2</PDBx:num_of_NA_strands_per_asym_unit> <PDBx:num_of_NA_strands_per_biol_unit>2</PDBx:num_of_NA_strands_per_biol_unit> </PDBx:pdbx_na_strand_info> </PDBx:pdbx_na_strand_infoCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_na_strand_info (
@@ -9996,7 +9996,7 @@ CREATE TABLE pdbx_na_strand_info (
 --
 -- (quoted from pdbx_na_struct_keywdsType)
 -- Data items in the PDBX_NA_STRUCT_KEYWDS category record give details about structural features of the NA. Example 1 - based on NDB entry UDJ031 <PDBx:pdbx_na_struct_keywdsCategory> <PDBx:pdbx_na_struct_keywds entry_id="UDJ031"> <PDBx:conformation_type>B</PDBx:conformation_type> <PDBx:special_feature> FLIPPED-OUT BASES, INTERMOLECULAR BASE TRIPLET</PDBx:special_feature> <PDBx:strand_description>DOUBLE HELIX</PDBx:strand_description> </PDBx:pdbx_na_struct_keywds> </PDBx:pdbx_na_struct_keywdsCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_na_struct_keywds_conformation_type CASCADE;
@@ -10016,7 +10016,7 @@ CREATE TABLE pdbx_na_struct_keywds (
 --
 -- (quoted from pdbx_nmr_assigned_chem_shift_listType)
 -- Items in the assigned_chem_shift_list category provide information about a list of reported assigned chemical shift values.
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_nmr_assigned_chem_shift_list (
@@ -10044,7 +10044,7 @@ CREATE TABLE pdbx_nmr_assigned_chem_shift_list (
 --
 -- (quoted from pdbx_nmr_chem_shift_experimentType)
 -- Items in the chem_shift_experiment category provide pointers to the NMR experiments and samples used to collect the data for a set of reported assigned chemical shifts.
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_nmr_chem_shift_experiment_sample_state CASCADE;
@@ -10066,7 +10066,7 @@ CREATE TABLE pdbx_nmr_chem_shift_experiment (
 --
 -- (quoted from pdbx_nmr_chem_shift_refType)
 -- Items in the pdbx_nmr_chem_shift_ref category provide the chemical shift referencing values used in assigning the chemical shift positions for peaks in spectral peak lists and assigned atom chemical shifts. Example 1 <PDBx:pdbx_nmr_chem_shift_refCategory> <PDBx:pdbx_nmr_chem_shift_ref atom_isotope_number="1" atom_type="H" chem_shift_reference_id="1" entry_id="1ABC" mol_common_name="DSS"> <PDBx:atom_group>methyl protons</PDBx:atom_group> <PDBx:chem_shift_units>ppm</PDBx:chem_shift_units> <PDBx:chem_shift_val>0.000</PDBx:chem_shift_val> <PDBx:indirect_shift_ratio>1.00000000</PDBx:indirect_shift_ratio> <PDBx:ref_method>external</PDBx:ref_method> <PDBx:ref_type>direct</PDBx:ref_type> </PDBx:pdbx_nmr_chem_shift_ref> <PDBx:pdbx_nmr_chem_shift_ref atom_isotope_number="13" atom_type="C" chem_shift_reference_id="1" entry_id="1ABC" mol_common_name="DSS"> <PDBx:atom_group>methyl protons</PDBx:atom_group> <PDBx:chem_shift_units>ppm</PDBx:chem_shift_units> <PDBx:chem_shift_val>0.000</PDBx:chem_shift_val> <PDBx:indirect_shift_ratio>0.251449530</PDBx:indirect_shift_ratio> <PDBx:ref_method>external</PDBx:ref_method> <PDBx:ref_type>indirect</PDBx:ref_type> </PDBx:pdbx_nmr_chem_shift_ref> <PDBx:pdbx_nmr_chem_shift_ref atom_isotope_number="15" atom_type="N" chem_shift_reference_id="1" entry_id="1ABC" mol_common_name="DSS"> <PDBx:atom_group>methyl protons</PDBx:atom_group> <PDBx:chem_shift_units>ppm</PDBx:chem_shift_units> <PDBx:chem_shift_val>0.000</PDBx:chem_shift_val> <PDBx:indirect_shift_ratio>0.101329118</PDBx:indirect_shift_ratio> <PDBx:ref_method>external</PDBx:ref_method> <PDBx:ref_type>indirect</PDBx:ref_type> </PDBx:pdbx_nmr_chem_shift_ref> </PDBx:pdbx_nmr_chem_shift_refCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_nmr_chem_shift_ref_atom_group CASCADE;
@@ -10116,7 +10116,7 @@ CREATE TABLE pdbx_nmr_chem_shift_ref (
 --
 -- (quoted from pdbx_nmr_chem_shift_referenceType)
 -- Items in the chem_shift_reference category define a set of chemical shift referencing parameters. Example 1 <PDBx:pdbx_nmr_chem_shift_referenceCategory> <PDBx:pdbx_nmr_chem_shift_reference entry_id="1ABC" id="1"> <PDBx:details>External DSS sample</PDBx:details> <PDBx:label>chemical_shift_reference_</PDBx:label> </PDBx:pdbx_nmr_chem_shift_reference> </PDBx:pdbx_nmr_chem_shift_referenceCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_nmr_chem_shift_reference_carbon_shifts_flag CASCADE;
@@ -10148,7 +10148,7 @@ CREATE TABLE pdbx_nmr_chem_shift_reference (
 --
 -- (quoted from pdbx_nmr_chem_shift_softwareType)
 -- Items in the chem_shift_software category provide pointers to the software category and methods category.
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_nmr_chem_shift_software (
@@ -10166,7 +10166,7 @@ CREATE TABLE pdbx_nmr_chem_shift_software (
 --
 -- (quoted from pdbx_nmr_computingType)
 -- The table in this section is used to describe the software that was used for data collection, data processing, data analysis, structure calculations and refinement. The description should include both the name of the software and the version used. This example describes the software used in the MCP-1 study. <PDBx:pdbx_nmr_computingCategory> <PDBx:pdbx_nmr_computing entry_id="1ABC"> <PDBx:collection>UXNMR</PDBx:collection> <PDBx:collection_version>940501.3</PDBx:collection_version> <PDBx:processing>FELIX</PDBx:processing> <PDBx:processing_version>1.1</PDBx:processing_version> </PDBx:pdbx_nmr_computing> </PDBx:pdbx_nmr_computingCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_nmr_computing_collection CASCADE;
@@ -10203,7 +10203,7 @@ CREATE TABLE pdbx_nmr_computing (
 --
 -- (quoted from pdbx_nmr_constraint_fileType)
 -- Items in the pdbx_nmr_constraint_file category record the name of the constraint file, the software used to calculate conformers with the constraint file, and the characteristics of the constraints in the constraint file.
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_nmr_constraint_file_constraint_subtype CASCADE;
@@ -10231,7 +10231,7 @@ CREATE TABLE pdbx_nmr_constraint_file (
 --
 -- (quoted from pdbx_nmr_constraintsType)
 -- This section provides a tabulation of constraint data. This example uses the data from the MCP-1 structure determination. Remember this is a dimer so there are intersubunit constraints as well as intrasubunit constraints. <PDBx:pdbx_nmr_constraintsCategory> <PDBx:pdbx_nmr_constraints entry_id="1ABC"> <PDBx:NOE_constraints_total>4458</PDBx:NOE_constraints_total> <PDBx:NOE_intraresidue_total_count>1144</PDBx:NOE_intraresidue_total_count> <PDBx:NOE_long_range_total_count>1356</PDBx:NOE_long_range_total_count> <PDBx:NOE_medium_range_total_count>1004</PDBx:NOE_medium_range_total_count> <PDBx:NOE_sequential_total_count>272</PDBx:NOE_sequential_total_count> <PDBx:protein_phi_angle_constraints_total_count>96</PDBx:protein_phi_angle_constraints_total_count> </PDBx:pdbx_nmr_constraints> </PDBx:pdbx_nmr_constraintsCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_nmr_constraints (
@@ -10267,7 +10267,7 @@ CREATE TABLE pdbx_nmr_constraints (
 --
 -- (quoted from pdbx_nmr_detailsType)
 -- Experimental details of the NMR study that have not been described elsewhere in this deposition.
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_nmr_details (
@@ -10281,7 +10281,7 @@ CREATE TABLE pdbx_nmr_details (
 --
 -- (quoted from pdbx_nmr_ensembleType)
 -- This category contains the information that describes the ensemble of deposited structures. If only an average structure has been deposited skip this section. This example uses the data from the MCP-1 study. <PDBx:pdbx_nmr_ensembleCategory> <PDBx:pdbx_nmr_ensemble entry_id="1ABC"> <PDBx:conformer_selection_criteria>structures with the least restraint violations</PDBx:conformer_selection_criteria> <PDBx:conformers_calculated_total_number>40</PDBx:conformers_calculated_total_number> <PDBx:conformers_submitted_total_number>20</PDBx:conformers_submitted_total_number> <PDBx:representative_conformer>1</PDBx:representative_conformer> </PDBx:pdbx_nmr_ensemble> </PDBx:pdbx_nmr_ensembleCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_nmr_ensemble (
@@ -10317,7 +10317,7 @@ CREATE TABLE pdbx_nmr_ensemble (
 --
 -- (quoted from pdbx_nmr_ensemble_rmsType)
 -- Structural statistics are derived from molecular dynamics and simulated annealing programs. This example is derived from the MCP-1 structure calculation statistics. For this structure the statistics were calculated over residues 5-69 for both the monomer and dimer . <PDBx:pdbx_nmr_ensemble_rmsCategory> <PDBx:pdbx_nmr_ensemble_rms entry_id="1ABC"> <PDBx:atom_type>all heavy atoms</PDBx:atom_type> <PDBx:chain_range_begin>A</PDBx:chain_range_begin> <PDBx:chain_range_end>A</PDBx:chain_range_end> <PDBx:distance_rms_dev>0.22</PDBx:distance_rms_dev> <PDBx:distance_rms_dev_error>0.06</PDBx:distance_rms_dev_error> <PDBx:residue_range_begin>5</PDBx:residue_range_begin> <PDBx:residue_range_end>69</PDBx:residue_range_end> </PDBx:pdbx_nmr_ensemble_rms> </PDBx:pdbx_nmr_ensemble_rmsCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_nmr_ensemble_rms_atom_type CASCADE;
@@ -10362,7 +10362,7 @@ CREATE TABLE pdbx_nmr_ensemble_rms (
 --
 -- (quoted from pdbx_nmr_exptlType)
 -- In this section, enter information on those experiments that were used to generate constraint data. For each NMR experiment indicate which sample and which sample conditions were used for the experiment. This example was taken from the MCP-1 study. <PDBx:pdbx_nmr_exptlCategory> <PDBx:pdbx_nmr_exptl conditions_id="1" experiment_id="1" solution_id="3"> <PDBx:type>3D_15N-separated_NOESY</PDBx:type> </PDBx:pdbx_nmr_exptl> <PDBx:pdbx_nmr_exptl conditions_id="1" experiment_id="2" solution_id="1"> <PDBx:type>3D_13C-separated_NOESY</PDBx:type> </PDBx:pdbx_nmr_exptl> <PDBx:pdbx_nmr_exptl conditions_id="2" experiment_id="3" solution_id="1"> <PDBx:type>4D_13C/15N-separated_NOESY</PDBx:type> </PDBx:pdbx_nmr_exptl> <PDBx:pdbx_nmr_exptl conditions_id="1" experiment_id="4" solution_id="1"> <PDBx:type>4D_13C-separated_NOESY</PDBx:type> </PDBx:pdbx_nmr_exptl> <PDBx:pdbx_nmr_exptl conditions_id="1" experiment_id="5" solution_id="1"> <PDBx:type>3D_15N-separated_ROESY</PDBx:type> </PDBx:pdbx_nmr_exptl> <PDBx:pdbx_nmr_exptl conditions_id="1" experiment_id="6" solution_id="3"> <PDBx:type>3D_13C-separated_ROESY</PDBx:type> </PDBx:pdbx_nmr_exptl> </PDBx:pdbx_nmr_exptlCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_nmr_exptl_sample_state CASCADE;
@@ -10384,7 +10384,7 @@ CREATE TABLE pdbx_nmr_exptl (
 --
 -- (quoted from pdbx_nmr_exptl_sampleType)
 -- The chemical constituents of each NMR sample. Each sample is identified by a number and each component in the sample is identified by name. Example 1 This example was taken from the study of MCP-1 which is a dimer under the conditions studied. Three solutions with different isotope compositions were studied. <PDBx:pdbx_nmr_exptl_sampleCategory> <PDBx:pdbx_nmr_exptl_sample component="MCP-1" solution_id="1"> <PDBx:concentration>2</PDBx:concentration> <PDBx:concentration_units>mM</PDBx:concentration_units> <PDBx:isotopic_labeling>U-15N,13C</PDBx:isotopic_labeling> </PDBx:pdbx_nmr_exptl_sample> <PDBx:pdbx_nmr_exptl_sample component="H2O" solution_id="1"> <PDBx:concentration>90</PDBx:concentration> <PDBx:concentration_units>&#37;</PDBx:concentration_units> <PDBx:isotopic_labeling xsi:nil="true" /> </PDBx:pdbx_nmr_exptl_sample> <PDBx:pdbx_nmr_exptl_sample component="D2O" solution_id="1"> <PDBx:concentration>10</PDBx:concentration> <PDBx:concentration_units>&#37;</PDBx:concentration_units> <PDBx:isotopic_labeling xsi:nil="true" /> </PDBx:pdbx_nmr_exptl_sample> </PDBx:pdbx_nmr_exptl_sampleCategory> Example 2 This example was taken from the study of MCP-1 which is a dimer under the conditions studied. Three solutions with different isotope compositions were studied. <PDBx:pdbx_nmr_exptl_sampleCategory> <PDBx:pdbx_nmr_exptl_sample component="MCP-1" solution_id="2"> <PDBx:concentration>1</PDBx:concentration> <PDBx:concentration_units>mM</PDBx:concentration_units> <PDBx:isotopic_labeling>U-50&#37; 15N</PDBx:isotopic_labeling> </PDBx:pdbx_nmr_exptl_sample> <PDBx:pdbx_nmr_exptl_sample component="H2O" solution_id="2"> <PDBx:concentration>90</PDBx:concentration> <PDBx:concentration_units>&#37;</PDBx:concentration_units> <PDBx:isotopic_labeling xsi:nil="true" /> </PDBx:pdbx_nmr_exptl_sample> <PDBx:pdbx_nmr_exptl_sample component="D2O" solution_id="2"> <PDBx:concentration>10</PDBx:concentration> <PDBx:concentration_units>&#37;</PDBx:concentration_units> <PDBx:isotopic_labeling xsi:nil="true" /> </PDBx:pdbx_nmr_exptl_sample> </PDBx:pdbx_nmr_exptl_sampleCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_nmr_exptl_sample_concentration_units CASCADE;
@@ -10408,7 +10408,7 @@ CREATE TABLE pdbx_nmr_exptl_sample (
 --
 -- (quoted from pdbx_nmr_exptl_sample_conditionsType)
 -- The experimental conditions used to for each sample. Each set of conditions is identified by a numerical code. This example was taken from a pH stability study. <PDBx:pdbx_nmr_exptl_sample_conditionsCategory> <PDBx:pdbx_nmr_exptl_sample_conditions conditions_id="1"> <PDBx:ionic_strength>25mM NaCl</PDBx:ionic_strength> <PDBx:pH>7</PDBx:pH> <PDBx:pressure>ambient</PDBx:pressure> <PDBx:temperature>298</PDBx:temperature> </PDBx:pdbx_nmr_exptl_sample_conditions> <PDBx:pdbx_nmr_exptl_sample_conditions conditions_id="2"> <PDBx:ionic_strength>25mM NaCl</PDBx:ionic_strength> <PDBx:pH>3</PDBx:pH> <PDBx:pressure>ambient</PDBx:pressure> <PDBx:temperature>298</PDBx:temperature> </PDBx:pdbx_nmr_exptl_sample_conditions> </PDBx:pdbx_nmr_exptl_sample_conditionsCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_nmr_exptl_sample_conditions_ionic_strength_units CASCADE;
@@ -10441,7 +10441,7 @@ CREATE TABLE pdbx_nmr_exptl_sample_conditions (
 --
 -- (quoted from pdbx_nmr_force_constantsType)
 -- The final force constants, including units, employed for the various experimental constraints, covalent geometry constraints, and the non-bonded interaction terms in the target function used for simulated annealing. This example is taken from a study of BAF, a dimeric DNA binding protein. The final force constants in the target function used for simulated annealing are: Experimental Constraint terms: Distance (NOE,H-bonds), Torsion angles, J coupling, 13C shifts, 1H shifts, Dipolar coupling, D isotope shifts Covalent Geometry Constraint terms: Bond lengths, Angles, Impropers Non-bonded Interaction terms: van der Waals, Type of van der Waals term, Conformational database potential, Radius of gyration. <PDBx:pdbx_nmr_force_constantsCategory> <PDBx:pdbx_nmr_force_constants entry_id="1ABC"> <PDBx:covalent_geom_bond_term>1000.</PDBx:covalent_geom_bond_term> <PDBx:covalent_geom_bond_term_units>kcal/mol/A**2</PDBx:covalent_geom_bond_term_units> <PDBx:exptl_13C_shift_term>0.5</PDBx:exptl_13C_shift_term> <PDBx:exptl_13C_shift_term_units>kcal/mol/ppm**2</PDBx:exptl_13C_shift_term_units> <PDBx:exptl_1H_shift_term>7.5</PDBx:exptl_1H_shift_term> <PDBx:exptl_1H_shift_term_units>kcal/mol/ppm**2</PDBx:exptl_1H_shift_term_units> <PDBx:exptl_J_coupling_term>1.</PDBx:exptl_J_coupling_term> <PDBx:exptl_J_coupling_term_units>kcal/mol/Hz**2</PDBx:exptl_J_coupling_term_units> <PDBx:exptl_distance_term>30.</PDBx:exptl_distance_term> <PDBx:exptl_distance_term_units>kcal/mol/A**2</PDBx:exptl_distance_term_units> <PDBx:exptl_torsion_angles_term>200.</PDBx:exptl_torsion_angles_term> <PDBx:exptl_torsion_angles_term_units>kcal/mol/rad**2</PDBx:exptl_torsion_angles_term_units> <PDBx:non-bonded_inter_van_der_Waals_term_type>4.</PDBx:non-bonded_inter_van_der_Waals_term_type> <PDBx:non-bonded_inter_van_der_Waals_term_units>kcal/mol/A**4</PDBx:non-bonded_inter_van_der_Waals_term_units> </PDBx:pdbx_nmr_force_constants> </PDBx:pdbx_nmr_force_constantsCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_nmr_force_constants_covalent_geom_angles_term_units CASCADE;
@@ -10504,7 +10504,7 @@ CREATE TABLE pdbx_nmr_force_constants (
 --
 -- (quoted from pdbx_nmr_refineType)
 -- Describe the method and details of the refinement of the deposited structure. This example is drawn from the MCP-1 structure. <PDBx:pdbx_nmr_refineCategory> <PDBx:pdbx_nmr_refine entry_id="1ABC" software_ordinal="1"> <PDBx:method>torsion angle dynamics</PDBx:method> </PDBx:pdbx_nmr_refine> </PDBx:pdbx_nmr_refineCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_nmr_refine (
@@ -10521,7 +10521,7 @@ CREATE TABLE pdbx_nmr_refine (
 --
 -- (quoted from pdbx_nmr_representativeType)
 -- An average structure is often calculated in addition to the ensemble, or one of the ensemble is selected as a representative structure. This section describes selection of the representative structure. This example is drawn from the MCP-1 structure. <PDBx:pdbx_nmr_representativeCategory> <PDBx:pdbx_nmr_representative entry_id="1ABC"> <PDBx:conformer_id>15</PDBx:conformer_id> <PDBx:selection_criteria>lowest energy</PDBx:selection_criteria> </PDBx:pdbx_nmr_representative> </PDBx:pdbx_nmr_representativeCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_nmr_representative (
@@ -10536,7 +10536,7 @@ CREATE TABLE pdbx_nmr_representative (
 --
 -- (quoted from pdbx_nmr_sample_detailsType)
 -- Complete description of each NMR sample, including the solvent system used. This example was taken from the study of MCP-1 which is a dimer under the conditions studied. Three solutions with different isotope compositions were studied. <PDBx:pdbx_nmr_sample_detailsCategory> <PDBx:pdbx_nmr_sample_details solution_id="1"> <PDBx:contents>2 mM U-15N,13C, H2O 90 &#37;, D2O 10 &#37;</PDBx:contents> <PDBx:solvent_system>MCP-1</PDBx:solvent_system> </PDBx:pdbx_nmr_sample_details> <PDBx:pdbx_nmr_sample_details solution_id="2"> <PDBx:contents>1 mM U-50&#37; 15N, MCP-1 1 mM U-50&#37; 13C, H2O 90 &#37;, D2O 10 &#37;</PDBx:contents> <PDBx:solvent_system>MCP-1</PDBx:solvent_system> </PDBx:pdbx_nmr_sample_details> <PDBx:pdbx_nmr_sample_details solution_id="3"> <PDBx:contents>2 mM U-15N, H2O 90 &#37;, D2O 10 &#37;</PDBx:contents> <PDBx:solvent_system>MCP-1</PDBx:solvent_system> </PDBx:pdbx_nmr_sample_details> </PDBx:pdbx_nmr_sample_detailsCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_nmr_sample_details_type CASCADE;
@@ -10556,7 +10556,7 @@ CREATE TABLE pdbx_nmr_sample_details (
 --
 -- (quoted from pdbx_nmr_softwareType)
 -- Description of the software that was used for data collection, data processing, data analysis, structure calculations and refinement. The description should include the name of the software, the author of the software and the version used. This example describes the software used in the MCP-1 study. <PDBx:pdbx_nmr_softwareCategory> <PDBx:pdbx_nmr_software ordinal="1"> <PDBx:authors>Bruker</PDBx:authors> <PDBx:classification>collection</PDBx:classification> <PDBx:name>UXNMR</PDBx:name> <PDBx:version>940501.3</PDBx:version> </PDBx:pdbx_nmr_software> <PDBx:pdbx_nmr_software ordinal="2"> <PDBx:authors>Hare</PDBx:authors> <PDBx:classification>processing</PDBx:classification> <PDBx:name>FELIX</PDBx:name> <PDBx:version>1.1</PDBx:version> </PDBx:pdbx_nmr_software> <PDBx:pdbx_nmr_software ordinal="3"> <PDBx:authors>Kraulis</PDBx:authors> <PDBx:classification>data analysis</PDBx:classification> <PDBx:name>ANSIG</PDBx:name> <PDBx:version>3.0</PDBx:version> </PDBx:pdbx_nmr_software> <PDBx:pdbx_nmr_software ordinal="4"> <PDBx:authors>Brunger</PDBx:authors> <PDBx:classification>structure calculation</PDBx:classification> <PDBx:name>X-PLOR</PDBx:name> <PDBx:version>3.8</PDBx:version> </PDBx:pdbx_nmr_software> </PDBx:pdbx_nmr_softwareCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_nmr_software (
@@ -10574,7 +10574,7 @@ CREATE TABLE pdbx_nmr_software (
 --
 -- (quoted from pdbx_nmr_software_taskType)
 -- Items in the pdbx_nmr_software_task category provide information about software workflow in the NMR experiment.
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_nmr_software_task_task CASCADE;
@@ -10593,7 +10593,7 @@ CREATE TABLE pdbx_nmr_software_task (
 --
 -- (quoted from pdbx_nmr_spectral_dimType)
 -- Items in the spectral_dim category describe the parameters of each dimension in the NMR experiment used to generate the spectral peak list.
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_nmr_spectral_dim_sweep_width_units CASCADE;
@@ -10626,7 +10626,7 @@ CREATE TABLE pdbx_nmr_spectral_dim (
 --
 -- (quoted from pdbx_nmr_spectral_peak_listType)
 -- Items in the pdbx_nmr_spectral_peak_list category provide information about a list of reported spectral peak characteristic values.
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_nmr_spectral_peak_list (
@@ -10650,7 +10650,7 @@ CREATE TABLE pdbx_nmr_spectral_peak_list (
 --
 -- (quoted from pdbx_nmr_spectral_peak_softwareType)
 -- Items in the pdbx_nmr_spectral_peak_software category provide pointers to the software category and methods category where descriptions of software applications and methods can be found.
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_nmr_spectral_peak_software (
@@ -10667,7 +10667,7 @@ CREATE TABLE pdbx_nmr_spectral_peak_software (
 --
 -- (quoted from pdbx_nmr_spectrometerType)
 -- The details about each spectrometer used to collect data for this deposition. The instruments described here are the ones used for the MCP-1 studies. <PDBx:pdbx_nmr_spectrometerCategory> <PDBx:pdbx_nmr_spectrometer spectrometer_id="1"> <PDBx:field_strength>600</PDBx:field_strength> <PDBx:type>Bruker AMX</PDBx:type> </PDBx:pdbx_nmr_spectrometer> <PDBx:pdbx_nmr_spectrometer spectrometer_id="2"> <PDBx:field_strength>500</PDBx:field_strength> <PDBx:type>Bruker AMX</PDBx:type> </PDBx:pdbx_nmr_spectrometer> </PDBx:pdbx_nmr_spectrometerCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_nmr_spectrometer (
@@ -10686,7 +10686,7 @@ CREATE TABLE pdbx_nmr_spectrometer (
 --
 -- (quoted from pdbx_nmr_systematic_chem_shift_offsetType)
 -- Items in the pdbx_nmr_systematic_chem_shift_offset category define chemical shift offsets that systematically affect all chemical shifts in a set of assigned chemical shifts for a specific nuclei.
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_nmr_systematic_chem_shift_offset_atom_type CASCADE;
@@ -10710,7 +10710,7 @@ CREATE TABLE pdbx_nmr_systematic_chem_shift_offset (
 --
 -- (quoted from pdbx_nmr_uploadType)
 -- Items in the pdbx_nmr_upload category provide information about the data files uploaded by a depositor using the deposition system.
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_nmr_upload_data_file_category CASCADE;
@@ -10732,7 +10732,7 @@ CREATE TABLE pdbx_nmr_upload (
 --
 -- (quoted from pdbx_nonpoly_schemeType)
 -- The PDBX_NONPOLY_SCHEME category provides residue level nomenclature mapping for non-polymer entities. Example 1 - <PDBx:pdbx_nonpoly_schemeCategory> <PDBx:pdbx_nonpoly_scheme asym_id="C" ndb_seq_num="100"> <PDBx:auth_mon_id>HOH</PDBx:auth_mon_id> <PDBx:auth_seq_num>100</PDBx:auth_seq_num> <PDBx:entity_id>3</PDBx:entity_id> <PDBx:mon_id>HOH</PDBx:mon_id> <PDBx:pdb_ins_code xsi:nil="true" /> <PDBx:pdb_mon_id>HOH</PDBx:pdb_mon_id> <PDBx:pdb_seq_num>100</PDBx:pdb_seq_num> <PDBx:pdb_strand_id>C</PDBx:pdb_strand_id> </PDBx:pdbx_nonpoly_scheme> </PDBx:pdbx_nonpoly_schemeCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_nonpoly_scheme (
@@ -10755,7 +10755,7 @@ CREATE TABLE pdbx_nonpoly_scheme (
 --
 -- (quoted from pdbx_nonstandard_listType)
 -- The information in this category is exclusively used to store the HET records of a PDB file. This record will be generated by the PROGRAM. Example 1 - based on NDB entry DDLB57. <PDBx:pdbx_nonstandard_listCategory> <PDBx:pdbx_nonstandard_list id="BR" label_asym_id="A"> <PDBx:label_seq_num>3</PDBx:label_seq_num> <PDBx:number_atoms_nh>1</PDBx:number_atoms_nh> </PDBx:pdbx_nonstandard_list> <PDBx:pdbx_nonstandard_list id="BR" label_asym_id="C"> <PDBx:label_seq_num>27</PDBx:label_seq_num> <PDBx:number_atoms_nh>1</PDBx:number_atoms_nh> </PDBx:pdbx_nonstandard_list> <PDBx:pdbx_nonstandard_list id="CPT" label_asym_id="E"> <PDBx:label_seq_num>49</PDBx:label_seq_num> <PDBx:number_atoms_nh>3</PDBx:number_atoms_nh> </PDBx:pdbx_nonstandard_list> <PDBx:pdbx_nonstandard_list id="CPT" label_asym_id="F"> <PDBx:label_seq_num>50</PDBx:label_seq_num> <PDBx:number_atoms_nh>3</PDBx:number_atoms_nh> </PDBx:pdbx_nonstandard_list> </PDBx:pdbx_nonstandard_listCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_nonstandard_list (
@@ -10777,7 +10777,7 @@ CREATE TABLE pdbx_nonstandard_list (
 --
 -- (quoted from pdbx_pdb_compndType)
 -- This is a place holder for the PDB COMPND.
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_pdb_compnd (
@@ -10791,7 +10791,7 @@ CREATE TABLE pdbx_pdb_compnd (
 --
 -- (quoted from pdbx_pdb_sourceType)
 -- This is a place holder for the PDB SOURCE.
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_pdb_source (
@@ -10805,7 +10805,7 @@ CREATE TABLE pdbx_pdb_source (
 --
 -- (quoted from pdbx_phasing_MAD_setType)
 -- Record details about each phasing set: (Note: the phasing set is different from data set. for example: if there are three data sets, the inflection point (IP), the peak (PK) and the high remote (HR), the combination of the phasing set will be IP_iso, PK_iso (the isomorphous repleacement with HR as 'native'), IP_ano, PK_ano and HR_ano (the anomalous difference with itself). Therefore, there are five set used for phasing. Example 1 - three wavelengths <PDBx:pdbx_phasing_MAD_setCategory> <PDBx:pdbx_phasing_MAD_set id="ISO_1"> <PDBx:R_cullis_acentric>0.000</PDBx:R_cullis_acentric> <PDBx:R_cullis_centric>0.000</PDBx:R_cullis_centric> <PDBx:d_res_high>2.00</PDBx:d_res_high> <PDBx:d_res_low>22.60</PDBx:d_res_low> <PDBx:reflns_acentric>5387</PDBx:reflns_acentric> <PDBx:reflns_centric>471</PDBx:reflns_centric> </PDBx:pdbx_phasing_MAD_set> <PDBx:pdbx_phasing_MAD_set id="ISO_2"> <PDBx:R_cullis_acentric>0.803</PDBx:R_cullis_acentric> <PDBx:R_cullis_centric>0.718</PDBx:R_cullis_centric> <PDBx:d_res_high>2.00</PDBx:d_res_high> <PDBx:d_res_low>22.60</PDBx:d_res_low> <PDBx:reflns_acentric>5365</PDBx:reflns_acentric> <PDBx:reflns_centric>469</PDBx:reflns_centric> </PDBx:pdbx_phasing_MAD_set> <PDBx:pdbx_phasing_MAD_set id="ISO_3"> <PDBx:R_cullis_acentric>0.658</PDBx:R_cullis_acentric> <PDBx:R_cullis_centric>0.500</PDBx:R_cullis_centric> <PDBx:d_res_high>2.00</PDBx:d_res_high> <PDBx:d_res_low>22.60</PDBx:d_res_low> <PDBx:reflns_acentric>5317</PDBx:reflns_acentric> <PDBx:reflns_centric>460</PDBx:reflns_centric> </PDBx:pdbx_phasing_MAD_set> <PDBx:pdbx_phasing_MAD_set id="ANO_1"> <PDBx:R_cullis_acentric>0.841</PDBx:R_cullis_acentric> <PDBx:R_cullis_centric>0.000</PDBx:R_cullis_centric> <PDBx:d_res_high>2.00</PDBx:d_res_high> <PDBx:d_res_low>22.60</PDBx:d_res_low> <PDBx:reflns_acentric>5278</PDBx:reflns_acentric> <PDBx:reflns_centric>0</PDBx:reflns_centric> </PDBx:pdbx_phasing_MAD_set> <PDBx:pdbx_phasing_MAD_set id="ANO_2"> <PDBx:R_cullis_acentric>0.649</PDBx:R_cullis_acentric> <PDBx:R_cullis_centric>0.000</PDBx:R_cullis_centric> <PDBx:d_res_high>2.00</PDBx:d_res_high> <PDBx:d_res_low>22.60</PDBx:d_res_low> <PDBx:reflns_acentric>5083</PDBx:reflns_acentric> <PDBx:reflns_centric>0</PDBx:reflns_centric> </PDBx:pdbx_phasing_MAD_set> <PDBx:pdbx_phasing_MAD_set id="ANO_3"> <PDBx:R_cullis_acentric>0.829</PDBx:R_cullis_acentric> <PDBx:R_cullis_centric>0.000</PDBx:R_cullis_centric> <PDBx:d_res_high>2.00</PDBx:d_res_high> <PDBx:d_res_low>22.60</PDBx:d_res_low> <PDBx:reflns_acentric>5329</PDBx:reflns_acentric> <PDBx:reflns_centric>0</PDBx:reflns_centric> </PDBx:pdbx_phasing_MAD_set> </PDBx:pdbx_phasing_MAD_setCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE "pdbx_phasing_MAD_set" (
@@ -10839,7 +10839,7 @@ CREATE TABLE "pdbx_phasing_MAD_set" (
 --
 -- (quoted from pdbx_phasing_MAD_set_shellType)
 -- The same as category pdbx_phasing_MAD_set, but broken into shells. Example 1 - three wavelengths (SHARP example) <PDBx:pdbx_phasing_MAD_set_shellCategory> <PDBx:pdbx_phasing_MAD_set_shell d_res_high="7.77" d_res_low="22.60" id="ISO_1"> <PDBx:R_cullis_acentric>0.000</PDBx:R_cullis_acentric> <PDBx:R_cullis_centric>0.000</PDBx:R_cullis_centric> <PDBx:power_acentric>0.000</PDBx:power_acentric> <PDBx:power_centric>0.000</PDBx:power_centric> <PDBx:reflns_acentric>64</PDBx:reflns_acentric> <PDBx:reflns_centric>23</PDBx:reflns_centric> </PDBx:pdbx_phasing_MAD_set_shell> <PDBx:pdbx_phasing_MAD_set_shell d_res_high="5.67" d_res_low="7.77" id="ISO_1"> <PDBx:R_cullis_acentric>0.000</PDBx:R_cullis_acentric> <PDBx:R_cullis_centric>0.000</PDBx:R_cullis_centric> <PDBx:power_acentric>0.000</PDBx:power_acentric> <PDBx:power_centric>0.000</PDBx:power_centric> <PDBx:reflns_acentric>130</PDBx:reflns_acentric> <PDBx:reflns_centric>32</PDBx:reflns_centric> </PDBx:pdbx_phasing_MAD_set_shell> <PDBx:pdbx_phasing_MAD_set_shell d_res_high="4.68" d_res_low="5.67" id="ISO_1"> <PDBx:R_cullis_acentric>0.000</PDBx:R_cullis_acentric> <PDBx:R_cullis_centric>0.000</PDBx:R_cullis_centric> <PDBx:power_acentric>0.000</PDBx:power_acentric> <PDBx:power_centric>0.000</PDBx:power_centric> <PDBx:reflns_acentric>182</PDBx:reflns_acentric> <PDBx:reflns_centric>27</PDBx:reflns_centric> </PDBx:pdbx_phasing_MAD_set_shell> <PDBx:pdbx_phasing_MAD_set_shell d_res_high="4.07" d_res_low="4.68" id="ISO_1"> <PDBx:R_cullis_acentric>0.000</PDBx:R_cullis_acentric> <PDBx:R_cullis_centric>0.000</PDBx:R_cullis_centric> <PDBx:power_acentric>0.000</PDBx:power_acentric> <PDBx:power_centric>0.000</PDBx:power_centric> <PDBx:reflns_acentric>207</PDBx:reflns_acentric> <PDBx:reflns_centric>24</PDBx:reflns_centric> </PDBx:pdbx_phasing_MAD_set_shell> <PDBx:pdbx_phasing_MAD_set_shell d_res_high="7.77" d_res_low="22.60" id="ANO_1"> <PDBx:R_cullis_acentric>0.610</PDBx:R_cullis_acentric> <PDBx:R_cullis_centric>0.000</PDBx:R_cullis_centric> <PDBx:power_acentric>1.804</PDBx:power_acentric> <PDBx:power_centric>0.000</PDBx:power_centric> <PDBx:reflns_acentric>62</PDBx:reflns_acentric> <PDBx:reflns_centric>0</PDBx:reflns_centric> </PDBx:pdbx_phasing_MAD_set_shell> <PDBx:pdbx_phasing_MAD_set_shell d_res_high="5.67" d_res_low="7.77" id="ANO_1"> <PDBx:R_cullis_acentric>0.532</PDBx:R_cullis_acentric> <PDBx:R_cullis_centric>0.000</PDBx:R_cullis_centric> <PDBx:power_acentric>2.382</PDBx:power_acentric> <PDBx:power_centric>0.000</PDBx:power_centric> <PDBx:reflns_acentric>129</PDBx:reflns_acentric> <PDBx:reflns_centric>0</PDBx:reflns_centric> </PDBx:pdbx_phasing_MAD_set_shell> <PDBx:pdbx_phasing_MAD_set_shell d_res_high="4.68" d_res_low="5.67" id="ANO_1"> <PDBx:R_cullis_acentric>0.673</PDBx:R_cullis_acentric> <PDBx:R_cullis_centric>0.000</PDBx:R_cullis_centric> <PDBx:power_acentric>1.858</PDBx:power_acentric> <PDBx:power_centric>0.000</PDBx:power_centric> <PDBx:reflns_acentric>178</PDBx:reflns_acentric> <PDBx:reflns_centric>0</PDBx:reflns_centric> </PDBx:pdbx_phasing_MAD_set_shell> <PDBx:pdbx_phasing_MAD_set_shell d_res_high="4.07" d_res_low="4.68" id="ANO_1"> <PDBx:R_cullis_acentric>0.755</PDBx:R_cullis_acentric> <PDBx:R_cullis_centric>0.000</PDBx:R_cullis_centric> <PDBx:power_acentric>1.605</PDBx:power_acentric> <PDBx:power_centric>0.000</PDBx:power_centric> <PDBx:reflns_acentric>204</PDBx:reflns_acentric> <PDBx:reflns_centric>0</PDBx:reflns_centric> </PDBx:pdbx_phasing_MAD_set_shell> </PDBx:pdbx_phasing_MAD_set_shellCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE "pdbx_phasing_MAD_set_shell" (
@@ -10874,7 +10874,7 @@ CREATE TABLE "pdbx_phasing_MAD_set_shell" (
 --
 -- (quoted from pdbx_phasing_MAD_set_siteType)
 -- record the details (coordinates etc.) of anomalous scatters. Example 1 - anomalous scatters is Se <PDBx:pdbx_phasing_MAD_set_siteCategory> <PDBx:pdbx_phasing_MAD_set_site id="1"> <PDBx:Cartn_x>25.9407</PDBx:Cartn_x> <PDBx:Cartn_y>-0.103471</PDBx:Cartn_y> <PDBx:Cartn_z>17.4094</PDBx:Cartn_z> <PDBx:atom_type_symbol>SE</PDBx:atom_type_symbol> <PDBx:b_iso>15.2561</PDBx:b_iso> <PDBx:occupancy>1</PDBx:occupancy> </PDBx:pdbx_phasing_MAD_set_site> <PDBx:pdbx_phasing_MAD_set_site id="2"> <PDBx:Cartn_x>30.6534</PDBx:Cartn_x> <PDBx:Cartn_y>6.62359</PDBx:Cartn_y> <PDBx:Cartn_z>9.93063</PDBx:Cartn_z> <PDBx:atom_type_symbol>SE</PDBx:atom_type_symbol> <PDBx:b_iso>12.9102</PDBx:b_iso> <PDBx:occupancy>1</PDBx:occupancy> </PDBx:pdbx_phasing_MAD_set_site> <PDBx:pdbx_phasing_MAD_set_site id="3"> <PDBx:Cartn_x>-3.26506</PDBx:Cartn_x> <PDBx:Cartn_y>15.5546</PDBx:Cartn_y> <PDBx:Cartn_z>53.9529</PDBx:Cartn_z> <PDBx:atom_type_symbol>SE</PDBx:atom_type_symbol> <PDBx:b_iso>30.5239</PDBx:b_iso> <PDBx:occupancy>1</PDBx:occupancy> </PDBx:pdbx_phasing_MAD_set_site> </PDBx:pdbx_phasing_MAD_set_siteCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE "pdbx_phasing_MAD_set_site" (
@@ -10906,7 +10906,7 @@ CREATE TABLE "pdbx_phasing_MAD_set_site" (
 --
 -- (quoted from pdbx_phasing_MAD_shellType)
 -- Data items in the PDBX_PHASING_MAD_SHELL category record details about the phasing of the structure, when methods involving multiple anomalous dispersion techniques are involved (note: the values are overall, but broken down into shells of resolution) Example 1 - <PDBx:pdbx_phasing_MAD_shellCategory> <PDBx:pdbx_phasing_MAD_shell d_res_high="7.77" d_res_low="22.60"> <PDBx:fom_acentric>0.886</PDBx:fom_acentric> <PDBx:fom_centric>0.641</PDBx:fom_centric> <PDBx:reflns_acentric>64</PDBx:reflns_acentric> <PDBx:reflns_centric>23</PDBx:reflns_centric> </PDBx:pdbx_phasing_MAD_shell> <PDBx:pdbx_phasing_MAD_shell d_res_high="5.67" d_res_low="7.77"> <PDBx:fom_acentric>0.863</PDBx:fom_acentric> <PDBx:fom_centric>0.642</PDBx:fom_centric> <PDBx:reflns_acentric>132</PDBx:reflns_acentric> <PDBx:reflns_centric>32</PDBx:reflns_centric> </PDBx:pdbx_phasing_MAD_shell> <PDBx:pdbx_phasing_MAD_shell d_res_high="4.68" d_res_low="5.67"> <PDBx:fom_acentric>0.842</PDBx:fom_acentric> <PDBx:fom_centric>0.737</PDBx:fom_centric> <PDBx:reflns_acentric>182</PDBx:reflns_acentric> <PDBx:reflns_centric>27</PDBx:reflns_centric> </PDBx:pdbx_phasing_MAD_shell> <PDBx:pdbx_phasing_MAD_shell d_res_high="4.07" d_res_low="4.68"> <PDBx:fom_acentric>0.789</PDBx:fom_acentric> <PDBx:fom_centric>0.682</PDBx:fom_centric> <PDBx:reflns_acentric>209</PDBx:reflns_acentric> <PDBx:reflns_centric>24</PDBx:reflns_centric> </PDBx:pdbx_phasing_MAD_shell> <PDBx:pdbx_phasing_MAD_shell d_res_high="3.65" d_res_low="4.07"> <PDBx:fom_acentric>0.772</PDBx:fom_acentric> <PDBx:fom_centric>0.633</PDBx:fom_centric> <PDBx:reflns_acentric>246</PDBx:reflns_acentric> <PDBx:reflns_centric>27</PDBx:reflns_centric> </PDBx:pdbx_phasing_MAD_shell> <PDBx:pdbx_phasing_MAD_shell d_res_high="3.34" d_res_low="3.65"> <PDBx:fom_acentric>0.752</PDBx:fom_acentric> <PDBx:fom_centric>0.700</PDBx:fom_centric> <PDBx:reflns_acentric>260</PDBx:reflns_acentric> <PDBx:reflns_centric>31</PDBx:reflns_centric> </PDBx:pdbx_phasing_MAD_shell> </PDBx:pdbx_phasing_MAD_shellCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE "pdbx_phasing_MAD_shell" (
@@ -10939,7 +10939,7 @@ CREATE TABLE "pdbx_phasing_MAD_shell" (
 --
 -- (quoted from pdbx_phasing_MRType)
 -- Data items in the PDBX_PHASING_MR category record details about molecular replacement. Example 1 - molecular replacement example from program CNS. <PDBx:pdbx_phasing_MRCategory> <PDBx:pdbx_phasing_MR entry_id="ABC001"> <PDBx:correlation_coeff_Fo_to_Fc>0.586</PDBx:correlation_coeff_Fo_to_Fc> <PDBx:d_res_high_rotation>3.8</PDBx:d_res_high_rotation> <PDBx:d_res_high_translation>4.0</PDBx:d_res_high_translation> <PDBx:d_res_low_rotation>13.0</PDBx:d_res_low_rotation> <PDBx:d_res_low_translation>15.0</PDBx:d_res_low_translation> <PDBx:method_rotation>real-space rotation search</PDBx:method_rotation> <PDBx:method_translation>gerneral using PC-refinement= e2e2</PDBx:method_translation> <PDBx:packing>0.3086</PDBx:packing> <PDBx:reflns_percent_rotation>97.8</PDBx:reflns_percent_rotation> <PDBx:reflns_percent_translation>97.7</PDBx:reflns_percent_translation> <PDBx:sigma_F_rotation>1.0</PDBx:sigma_F_rotation> <PDBx:sigma_F_translation>0</PDBx:sigma_F_translation> </PDBx:pdbx_phasing_MR> </PDBx:pdbx_phasing_MRCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE "pdbx_phasing_MR" (
@@ -10977,7 +10977,7 @@ CREATE TABLE "pdbx_phasing_MR" (
 --
 -- (quoted from pdbx_phasing_dmType)
 -- Data items in the PDBX_PHASING_DM category record details about density modification Example 1 - density modification from resolve <PDBx:pdbx_phasing_dmCategory> <PDBx:pdbx_phasing_dm entry_id="ABC001"> <PDBx:fom>0.85</PDBx:fom> <PDBx:fom_acentric>0.85</PDBx:fom_acentric> <PDBx:fom_centric>0.79</PDBx:fom_centric> <PDBx:reflns>12486</PDBx:reflns> <PDBx:reflns_acentric>11351</PDBx:reflns_acentric> <PDBx:reflns_centric>1135</PDBx:reflns_centric> </PDBx:pdbx_phasing_dm> </PDBx:pdbx_phasing_dmCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_phasing_dm (
@@ -11000,7 +11000,7 @@ CREATE TABLE pdbx_phasing_dm (
 --
 -- (quoted from pdbx_phasing_dm_shellType)
 -- Data items in the PDBX_PHASING_DM_SHELL category record details about density modification in resolution shell. Example 1 - density modification with shells <PDBx:pdbx_phasing_dm_shellCategory> <PDBx:pdbx_phasing_dm_shell d_res_high="7.73" d_res_low="100.00"> <PDBx:delta_phi_final>24.7</PDBx:delta_phi_final> <PDBx:fom>0.879</PDBx:fom> <PDBx:reflns>502</PDBx:reflns> </PDBx:pdbx_phasing_dm_shell> <PDBx:pdbx_phasing_dm_shell d_res_high="6.24" d_res_low="7.73"> <PDBx:delta_phi_final>29.2</PDBx:delta_phi_final> <PDBx:fom>0.857</PDBx:fom> <PDBx:reflns>506</PDBx:reflns> </PDBx:pdbx_phasing_dm_shell> <PDBx:pdbx_phasing_dm_shell d_res_high="5.50" d_res_low="6.24"> <PDBx:delta_phi_final>29.2</PDBx:delta_phi_final> <PDBx:fom>0.838</PDBx:fom> <PDBx:reflns>504</PDBx:reflns> </PDBx:pdbx_phasing_dm_shell> <PDBx:pdbx_phasing_dm_shell d_res_high="5.02" d_res_low="5.50"> <PDBx:delta_phi_final>25.3</PDBx:delta_phi_final> <PDBx:fom>0.851</PDBx:fom> <PDBx:reflns>502</PDBx:reflns> </PDBx:pdbx_phasing_dm_shell> <PDBx:pdbx_phasing_dm_shell d_res_high="4.67" d_res_low="5.02"> <PDBx:delta_phi_final>22.7</PDBx:delta_phi_final> <PDBx:fom>0.831</PDBx:fom> <PDBx:reflns>503</PDBx:reflns> </PDBx:pdbx_phasing_dm_shell> </PDBx:pdbx_phasing_dm_shellCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_phasing_dm_shell (
@@ -11023,7 +11023,7 @@ CREATE TABLE pdbx_phasing_dm_shell (
 --
 -- (quoted from pdbx_point_symmetryType)
 -- Data items in the PDBX_POINT_SYMMETRY category record details about the point symmetry group associated with this entry. Example 1 - <PDBx:pdbx_point_symmetryCategory> <PDBx:pdbx_point_symmetry entry_id="1ABC"> <PDBx:H-M_notation>532</PDBx:H-M_notation> <PDBx:Schoenflies_symbol>I</PDBx:Schoenflies_symbol> </PDBx:pdbx_point_symmetry> </PDBx:pdbx_point_symmetryCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_point_symmetry_Schoenflies_symbol CASCADE;
@@ -11042,7 +11042,7 @@ CREATE TABLE pdbx_point_symmetry (
 --
 -- (quoted from pdbx_point_symmetry_depositor_infoType)
 -- Data items in the PDBX_POINT_SYMMETRY_DEPOSITOR_INFO category capture depositor provided information related to the archival cateogory PDBX_POINT_SYMMETRY. Example 1 - <PDBx:pdbx_point_symmetry_depositor_infoCategory> <PDBx:pdbx_point_symmetry_depositor_info entry_id="1ABC"> <PDBx:H-M_notation>532</PDBx:H-M_notation> <PDBx:Schoenflies_symbol>I</PDBx:Schoenflies_symbol> </PDBx:pdbx_point_symmetry_depositor_info> </PDBx:pdbx_point_symmetry_depositor_infoCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_point_symmetry_depositor_info_Schoenflies_symbol CASCADE;
@@ -11064,7 +11064,7 @@ CREATE TABLE pdbx_point_symmetry_depositor_info (
 --
 -- (quoted from pdbx_poly_seq_schemeType)
 -- The PDBX_POLY_SEQ_SCHEME category provides residue level nomenclature mapping for polymer entities. Example 1 - based on NDB entry DDFB25 <PDBx:pdbx_poly_seq_schemeCategory> <PDBx:pdbx_poly_seq_scheme asym_id="A" entity_id="1" mon_id="DC" seq_id="1"> <PDBx:auth_mon_id>DC</PDBx:auth_mon_id> <PDBx:auth_seq_num>1</PDBx:auth_seq_num> <PDBx:ndb_seq_num>1</PDBx:ndb_seq_num> <PDBx:pdb_ins_code xsi:nil="true" /> <PDBx:pdb_mon_id>DC</PDBx:pdb_mon_id> <PDBx:pdb_seq_num>1</PDBx:pdb_seq_num> <PDBx:pdb_strand_id>A</PDBx:pdb_strand_id> </PDBx:pdbx_poly_seq_scheme> <PDBx:pdbx_poly_seq_scheme asym_id="A" entity_id="1" mon_id="DG" seq_id="2"> <PDBx:auth_mon_id>DG</PDBx:auth_mon_id> <PDBx:auth_seq_num>2</PDBx:auth_seq_num> <PDBx:ndb_seq_num>2</PDBx:ndb_seq_num> <PDBx:pdb_ins_code xsi:nil="true" /> <PDBx:pdb_mon_id>DG</PDBx:pdb_mon_id> <PDBx:pdb_seq_num>2</PDBx:pdb_seq_num> <PDBx:pdb_strand_id>A</PDBx:pdb_strand_id> </PDBx:pdbx_poly_seq_scheme> <PDBx:pdbx_poly_seq_scheme asym_id="A" entity_id="1" mon_id="DT" seq_id="3"> <PDBx:auth_mon_id>DT</PDBx:auth_mon_id> <PDBx:auth_seq_num>3</PDBx:auth_seq_num> <PDBx:ndb_seq_num>3</PDBx:ndb_seq_num> <PDBx:pdb_ins_code xsi:nil="true" /> <PDBx:pdb_mon_id>DT</PDBx:pdb_mon_id> <PDBx:pdb_seq_num>3</PDBx:pdb_seq_num> <PDBx:pdb_strand_id>A</PDBx:pdb_strand_id> </PDBx:pdbx_poly_seq_scheme> <PDBx:pdbx_poly_seq_scheme asym_id="A" entity_id="1" mon_id="DA" seq_id="4"> <PDBx:auth_mon_id>DA</PDBx:auth_mon_id> <PDBx:auth_seq_num>4</PDBx:auth_seq_num> <PDBx:ndb_seq_num>4</PDBx:ndb_seq_num> <PDBx:pdb_ins_code xsi:nil="true" /> <PDBx:pdb_mon_id>DA</PDBx:pdb_mon_id> <PDBx:pdb_seq_num>4</PDBx:pdb_seq_num> <PDBx:pdb_strand_id>A</PDBx:pdb_strand_id> </PDBx:pdbx_poly_seq_scheme> <PDBx:pdbx_poly_seq_scheme asym_id="A" entity_id="1" mon_id="DC" seq_id="5"> <PDBx:auth_mon_id>DC</PDBx:auth_mon_id> <PDBx:auth_seq_num>5</PDBx:auth_seq_num> <PDBx:ndb_seq_num>5</PDBx:ndb_seq_num> <PDBx:pdb_ins_code xsi:nil="true" /> <PDBx:pdb_mon_id>DC</PDBx:pdb_mon_id> <PDBx:pdb_seq_num>5</PDBx:pdb_seq_num> <PDBx:pdb_strand_id>A</PDBx:pdb_strand_id> </PDBx:pdbx_poly_seq_scheme> <PDBx:pdbx_poly_seq_scheme asym_id="A" entity_id="1" mon_id="DG" seq_id="6"> <PDBx:auth_mon_id>DG</PDBx:auth_mon_id> <PDBx:auth_seq_num>6</PDBx:auth_seq_num> <PDBx:ndb_seq_num>6</PDBx:ndb_seq_num> <PDBx:pdb_ins_code xsi:nil="true" /> <PDBx:pdb_mon_id>DG</PDBx:pdb_mon_id> <PDBx:pdb_seq_num>6</PDBx:pdb_seq_num> <PDBx:pdb_strand_id>A</PDBx:pdb_strand_id> </PDBx:pdbx_poly_seq_scheme> </PDBx:pdbx_poly_seq_schemeCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_poly_seq_scheme_hetero CASCADE;
@@ -11093,7 +11093,7 @@ CREATE TABLE pdbx_poly_seq_scheme (
 --
 -- (quoted from pdbx_post_process_detailsType)
 -- Data items in the PDBX_POST_PROCESS_DETAILS identify problems or errors encountered in the post-processing of this entry. <PDBx:pdbx_post_process_detailsCategory> <PDBx:pdbx_post_process_details entry_id="RCSB001"> <PDBx:text> The missing SEQRES record for chain B was added</PDBx:text> </PDBx:pdbx_post_process_details> </PDBx:pdbx_post_process_detailsCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_post_process_details (
@@ -11108,7 +11108,7 @@ CREATE TABLE pdbx_post_process_details (
 --
 -- (quoted from pdbx_post_process_statusType)
 -- Data items in the PDBX_POST_PROCESS_DETAILS record the status of post-processed entries. <PDBx:pdbx_post_process_statusCategory> <PDBx:pdbx_post_process_status cycle_id="1" entry_id="RCSB001"> <PDBx:date_begin>1998-10-22</PDBx:date_begin> <PDBx:date_end>1998-10-22</PDBx:date_end> <PDBx:details> Fix ligand nomenclature</PDBx:details> </PDBx:pdbx_post_process_status> </PDBx:pdbx_post_process_statusCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_post_process_status_cycle_id CASCADE;
@@ -11129,7 +11129,7 @@ CREATE TABLE pdbx_post_process_status (
 --
 -- (quoted from pdbx_prd_auditType)
 -- Data items in the PDBX_PRD_AUDIT category records the status and tracking information for this molecule. Example 1 - <PDBx:pdbx_prd_auditCategory> <PDBx:pdbx_prd_audit action_type="Create molecule" date="2011-12-01" prd_id="PRD_0000001"> <PDBx:annotator>JY</PDBx:annotator> <PDBx:processing_site>RCSB</PDBx:processing_site> </PDBx:pdbx_prd_audit> <PDBx:pdbx_prd_audit action_type="Modify sequence" date="2011-12-05" prd_id="PRD_0000001"> <PDBx:annotator>MZ</PDBx:annotator> <PDBx:processing_site>RCSB</PDBx:processing_site> </PDBx:pdbx_prd_audit> </PDBx:pdbx_prd_auditCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_prd_audit_processing_site CASCADE;
@@ -11154,7 +11154,7 @@ CREATE TABLE pdbx_prd_audit (
 --
 -- (quoted from pdbx_prerelease_seqType)
 -- This category provides a placeholder for pre-release sequence information. After release this category should be discarded. <PDBx:pdbx_prerelease_seqCategory> <PDBx:pdbx_prerelease_seq entity_id="1"> <PDBx:seq_one_letter_code>GKHNGPEHWHKDFPIAKGERQSPVDIDTHTAKYDPSLKPLSVSYDQATSLRILNNGAAFNVEFD</PDBx:seq_one_letter_code> </PDBx:pdbx_prerelease_seq> <PDBx:pdbx_prerelease_seq entity_id="2"> <PDBx:seq_one_letter_code>HKDFPIAKGERQSPVDIDTHTAKYDPSLKPLSVSYDQATSLRILNN</PDBx:seq_one_letter_code> </PDBx:pdbx_prerelease_seq> </PDBx:pdbx_prerelease_seqCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_prerelease_seq (
@@ -11168,7 +11168,7 @@ CREATE TABLE pdbx_prerelease_seq (
 --
 -- (quoted from pdbx_protein_infoType)
 -- Data items in the PDBX_PROTEIN_INFO category are still used until the 'entity' categories are entered into the database, even though the information is repeated. Example 1 - based on NDB entry PDE001 <PDBx:pdbx_protein_infoCategory> <PDBx:pdbx_protein_info id="1"> <PDBx:name>ECO RI endonuclease</PDBx:name> <PDBx:num_per_asym_unit>1</PDBx:num_per_asym_unit> </PDBx:pdbx_protein_info> </PDBx:pdbx_protein_infoCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_protein_info (
@@ -11183,7 +11183,7 @@ CREATE TABLE pdbx_protein_info (
 --
 -- (quoted from pdbx_re_refinementType)
 -- Describes the origin of the experimental data used in this entry. Example 1 - <PDBx:pdbx_re_refinementCategory> <PDBx:pdbx_re_refinement entry_id="1ABC"> <PDBx:citation_id>2</PDBx:citation_id> <PDBx:details>Re-refinement of data from entry 1ABC</PDBx:details> </PDBx:pdbx_re_refinement> </PDBx:pdbx_re_refinementCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_re_refinement (
@@ -11198,7 +11198,7 @@ CREATE TABLE pdbx_re_refinement (
 --
 -- (quoted from pdbx_reference_entity_linkType)
 -- Data items in the PDBX_REFERENCE_ENTITY_LINK category give details about the linkages between entities within reference molecules. Example 1 - quinoxaline <PDBx:pdbx_reference_entity_linkCategory> <PDBx:pdbx_reference_entity_link link_id="1" prd_id="PRD_000001"> <PDBx:atom_id_1>N</PDBx:atom_id_1> <PDBx:atom_id_2>C</PDBx:atom_id_2> <PDBx:comp_id_1>DSN</PDBx:comp_id_1> <PDBx:comp_id_2>QUI</PDBx:comp_id_2> <PDBx:component_1>1</PDBx:component_1> <PDBx:component_2>2</PDBx:component_2> <PDBx:entity_seq_num_1>1</PDBx:entity_seq_num_1> <PDBx:entity_seq_num_2 xsi:nil="true" /> <PDBx:link_class>PN</PDBx:link_class> <PDBx:ref_entity_id_1>1</PDBx:ref_entity_id_1> <PDBx:ref_entity_id_2>2</PDBx:ref_entity_id_2> <PDBx:value_order>single</PDBx:value_order> </PDBx:pdbx_reference_entity_link> <PDBx:pdbx_reference_entity_link link_id="2" prd_id="PRD_000001"> <PDBx:atom_id_1>N</PDBx:atom_id_1> <PDBx:atom_id_2>C</PDBx:atom_id_2> <PDBx:comp_id_1>DSN</PDBx:comp_id_1> <PDBx:comp_id_2>QUI</PDBx:comp_id_2> <PDBx:component_1>1</PDBx:component_1> <PDBx:component_2>3</PDBx:component_2> <PDBx:entity_seq_num_1>5</PDBx:entity_seq_num_1> <PDBx:entity_seq_num_2 xsi:nil="true" /> <PDBx:link_class>PN</PDBx:link_class> <PDBx:ref_entity_id_1>1</PDBx:ref_entity_id_1> <PDBx:ref_entity_id_2>3</PDBx:ref_entity_id_2> <PDBx:value_order>single</PDBx:value_order> </PDBx:pdbx_reference_entity_link> </PDBx:pdbx_reference_entity_linkCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_reference_entity_link_link_class CASCADE;
@@ -11232,7 +11232,7 @@ CREATE TABLE pdbx_reference_entity_link (
 --
 -- (quoted from pdbx_reference_entity_nonpolyType)
 -- Data items in the PDBX_REFERENCE_ENTITY_NONPOLY category record the list of entities within each reference molecule. Example: 1 <PDBx:pdbx_reference_entity_nonpolyCategory> <PDBx:pdbx_reference_entity_nonpoly prd_id="PRD_000004" ref_entity_id="2"> <PDBx:chem_comp_id>QUI</PDBx:chem_comp_id> <PDBx:name>2-CARBOXYQUINOXALINE</PDBx:name> </PDBx:pdbx_reference_entity_nonpoly> </PDBx:pdbx_reference_entity_nonpolyCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_reference_entity_nonpoly (
@@ -11250,7 +11250,7 @@ CREATE TABLE pdbx_reference_entity_nonpoly (
 --
 -- (quoted from pdbx_reference_entity_poly_linkType)
 -- Data items in the PDBX_REFERENCE_ENTITY_POLY_LINK category give details about polymer linkages including both standard and non-standard linkages between polymer componnents. Example 1 - <PDBx:pdbx_reference_entity_poly_linkCategory> <PDBx:pdbx_reference_entity_poly_link component_id="1" link_id="1" prd_id="PRD_000001" ref_entity_id="1"> <PDBx:atom_id_1>C</PDBx:atom_id_1> <PDBx:atom_id_2>N</PDBx:atom_id_2> <PDBx:comp_id_1>DSN</PDBx:comp_id_1> <PDBx:comp_id_2>ALA</PDBx:comp_id_2> <PDBx:entity_seq_num_1>1</PDBx:entity_seq_num_1> <PDBx:entity_seq_num_2>2</PDBx:entity_seq_num_2> <PDBx:value_order>single</PDBx:value_order> </PDBx:pdbx_reference_entity_poly_link> <PDBx:pdbx_reference_entity_poly_link component_id="1" link_id="2" prd_id="PRD_000001" ref_entity_id="1"> <PDBx:atom_id_1>C</PDBx:atom_id_1> <PDBx:atom_id_2>N</PDBx:atom_id_2> <PDBx:comp_id_1>ALA</PDBx:comp_id_1> <PDBx:comp_id_2>N2C</PDBx:comp_id_2> <PDBx:entity_seq_num_1>2</PDBx:entity_seq_num_1> <PDBx:entity_seq_num_2>3</PDBx:entity_seq_num_2> <PDBx:value_order>single</PDBx:value_order> </PDBx:pdbx_reference_entity_poly_link> <PDBx:pdbx_reference_entity_poly_link component_id="1" link_id="3" prd_id="PRD_000001" ref_entity_id="1"> <PDBx:atom_id_1>C</PDBx:atom_id_1> <PDBx:atom_id_2>N</PDBx:atom_id_2> <PDBx:comp_id_1>ALA</PDBx:comp_id_1> <PDBx:comp_id_2>N2C</PDBx:comp_id_2> <PDBx:entity_seq_num_1>2</PDBx:entity_seq_num_1> <PDBx:entity_seq_num_2>3</PDBx:entity_seq_num_2> <PDBx:value_order>single</PDBx:value_order> </PDBx:pdbx_reference_entity_poly_link> <PDBx:pdbx_reference_entity_poly_link component_id="1" link_id="4" prd_id="PRD_000001" ref_entity_id="1"> <PDBx:atom_id_1>C</PDBx:atom_id_1> <PDBx:atom_id_2>N</PDBx:atom_id_2> <PDBx:comp_id_1>ALA</PDBx:comp_id_1> <PDBx:comp_id_2>NCY</PDBx:comp_id_2> <PDBx:entity_seq_num_1>2</PDBx:entity_seq_num_1> <PDBx:entity_seq_num_2>3</PDBx:entity_seq_num_2> <PDBx:value_order>single</PDBx:value_order> </PDBx:pdbx_reference_entity_poly_link> <PDBx:pdbx_reference_entity_poly_link component_id="1" link_id="5" prd_id="PRD_000001" ref_entity_id="1"> <PDBx:atom_id_1>C</PDBx:atom_id_1> <PDBx:atom_id_2>N</PDBx:atom_id_2> <PDBx:comp_id_1>N2C</PDBx:comp_id_1> <PDBx:comp_id_2>MVA</PDBx:comp_id_2> <PDBx:entity_seq_num_1>3</PDBx:entity_seq_num_1> <PDBx:entity_seq_num_2>4</PDBx:entity_seq_num_2> <PDBx:value_order>single</PDBx:value_order> </PDBx:pdbx_reference_entity_poly_link> <PDBx:pdbx_reference_entity_poly_link component_id="1" link_id="6" prd_id="PRD_000001" ref_entity_id="1"> <PDBx:atom_id_1>C</PDBx:atom_id_1> <PDBx:atom_id_2>N</PDBx:atom_id_2> <PDBx:comp_id_1>NCY</PDBx:comp_id_1> <PDBx:comp_id_2>MVA</PDBx:comp_id_2> <PDBx:entity_seq_num_1>3</PDBx:entity_seq_num_1> <PDBx:entity_seq_num_2>4</PDBx:entity_seq_num_2> <PDBx:value_order>single</PDBx:value_order> </PDBx:pdbx_reference_entity_poly_link> <PDBx:pdbx_reference_entity_poly_link component_id="1" link_id="7" prd_id="PRD_000001" ref_entity_id="1"> <PDBx:atom_id_1>C</PDBx:atom_id_1> <PDBx:atom_id_2>OG</PDBx:atom_id_2> <PDBx:comp_id_1>MVA</PDBx:comp_id_1> <PDBx:comp_id_2>DSN</PDBx:comp_id_2> <PDBx:entity_seq_num_1>4</PDBx:entity_seq_num_1> <PDBx:entity_seq_num_2>5</PDBx:entity_seq_num_2> <PDBx:value_order>single</PDBx:value_order> </PDBx:pdbx_reference_entity_poly_link> <PDBx:pdbx_reference_entity_poly_link component_id="1" link_id="8" prd_id="PRD_000001" ref_entity_id="1"> <PDBx:atom_id_1>C</PDBx:atom_id_1> <PDBx:atom_id_2>N</PDBx:atom_id_2> <PDBx:comp_id_1>DSN</PDBx:comp_id_1> <PDBx:comp_id_2>ALA</PDBx:comp_id_2> <PDBx:entity_seq_num_1>5</PDBx:entity_seq_num_1> <PDBx:entity_seq_num_2>6</PDBx:entity_seq_num_2> <PDBx:value_order>single</PDBx:value_order> </PDBx:pdbx_reference_entity_poly_link> <PDBx:pdbx_reference_entity_poly_link component_id="1" link_id="8" prd_id="PRD_000001" ref_entity_id="1"> <PDBx:atom_id_1>C</PDBx:atom_id_1> <PDBx:atom_id_2>N</PDBx:atom_id_2> <PDBx:comp_id_1>ALA</PDBx:comp_id_1> <PDBx:comp_id_2>NCY</PDBx:comp_id_2> <PDBx:entity_seq_num_1>6</PDBx:entity_seq_num_1> <PDBx:entity_seq_num_2>7</PDBx:entity_seq_num_2> <PDBx:value_order>single</PDBx:value_order> </PDBx:pdbx_reference_entity_poly_link> <PDBx:pdbx_reference_entity_poly_link component_id="1" link_id="9" prd_id="PRD_000001" ref_entity_id="1"> <PDBx:atom_id_1>C</PDBx:atom_id_1> <PDBx:atom_id_2>N</PDBx:atom_id_2> <PDBx:comp_id_1>ALA</PDBx:comp_id_1> <PDBx:comp_id_2>N2C</PDBx:comp_id_2> <PDBx:entity_seq_num_1>6</PDBx:entity_seq_num_1> <PDBx:entity_seq_num_2>7</PDBx:entity_seq_num_2> <PDBx:value_order>single</PDBx:value_order> </PDBx:pdbx_reference_entity_poly_link> <PDBx:pdbx_reference_entity_poly_link component_id="1" link_id="8" prd_id="PRD_000001" ref_entity_id="1"> <PDBx:atom_id_1>C</PDBx:atom_id_1> <PDBx:atom_id_2>N</PDBx:atom_id_2> <PDBx:comp_id_1>NCY</PDBx:comp_id_1> <PDBx:comp_id_2>MVA</PDBx:comp_id_2> <PDBx:entity_seq_num_1>7</PDBx:entity_seq_num_1> <PDBx:entity_seq_num_2>8</PDBx:entity_seq_num_2> <PDBx:value_order>single</PDBx:value_order> </PDBx:pdbx_reference_entity_poly_link> <PDBx:pdbx_reference_entity_poly_link component_id="1" link_id="9" prd_id="PRD_000001" ref_entity_id="1"> <PDBx:atom_id_1>C</PDBx:atom_id_1> <PDBx:atom_id_2>N</PDBx:atom_id_2> <PDBx:comp_id_1>N2C</PDBx:comp_id_1> <PDBx:comp_id_2>MVZ</PDBx:comp_id_2> <PDBx:entity_seq_num_1>7</PDBx:entity_seq_num_1> <PDBx:entity_seq_num_2>8</PDBx:entity_seq_num_2> <PDBx:value_order>single</PDBx:value_order> </PDBx:pdbx_reference_entity_poly_link> </PDBx:pdbx_reference_entity_poly_linkCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_reference_entity_poly_link_value_order CASCADE;
@@ -11281,7 +11281,7 @@ CREATE TABLE pdbx_reference_entity_poly_link (
 --
 -- (quoted from pdbx_reference_entity_poly_seqType)
 -- Data items in the PDBX_REFERENCE_ENTITY_POLY_SEQ category specify the sequence of monomers in a polymer. Example: 1 Actinomycin <PDBx:pdbx_reference_entity_poly_seqCategory> <PDBx:pdbx_reference_entity_poly_seq hetero="N" mon_id="THR" num="1" prd_id="PRD_000001" ref_entity_id="1"> <PDBx:observed>Y</PDBx:observed> <PDBx:parent_mon_id>THR</PDBx:parent_mon_id> </PDBx:pdbx_reference_entity_poly_seq> <PDBx:pdbx_reference_entity_poly_seq hetero="N" mon_id="DVA" num="2" prd_id="PRD_000001" ref_entity_id="1"> <PDBx:observed>Y</PDBx:observed> <PDBx:parent_mon_id>VAL</PDBx:parent_mon_id> </PDBx:pdbx_reference_entity_poly_seq> <PDBx:pdbx_reference_entity_poly_seq hetero="N" mon_id="PRO" num="3" prd_id="PRD_000001" ref_entity_id="1"> <PDBx:observed>Y</PDBx:observed> <PDBx:parent_mon_id>PRO</PDBx:parent_mon_id> </PDBx:pdbx_reference_entity_poly_seq> <PDBx:pdbx_reference_entity_poly_seq hetero="N" mon_id="SAR" num="4" prd_id="PRD_000001" ref_entity_id="1"> <PDBx:observed>Y</PDBx:observed> <PDBx:parent_mon_id>GLY</PDBx:parent_mon_id> </PDBx:pdbx_reference_entity_poly_seq> <PDBx:pdbx_reference_entity_poly_seq hetero="N" mon_id="MVA" num="5" prd_id="PRD_000001" ref_entity_id="1"> <PDBx:observed>Y</PDBx:observed> <PDBx:parent_mon_id>VAL</PDBx:parent_mon_id> </PDBx:pdbx_reference_entity_poly_seq> <PDBx:pdbx_reference_entity_poly_seq hetero="N" mon_id="PXZ" num="6" prd_id="PRD_000001" ref_entity_id="1"> <PDBx:observed>Y</PDBx:observed> <PDBx:parent_mon_id xsi:nil="true" /> </PDBx:pdbx_reference_entity_poly_seq> <PDBx:pdbx_reference_entity_poly_seq hetero="N" mon_id="THR" num="7" prd_id="PRD_000001" ref_entity_id="1"> <PDBx:observed>Y</PDBx:observed> <PDBx:parent_mon_id>THR</PDBx:parent_mon_id> </PDBx:pdbx_reference_entity_poly_seq> <PDBx:pdbx_reference_entity_poly_seq hetero="N" mon_id="DVA" num="8" prd_id="PRD_000001" ref_entity_id="1"> <PDBx:observed>Y</PDBx:observed> <PDBx:parent_mon_id>VAL</PDBx:parent_mon_id> </PDBx:pdbx_reference_entity_poly_seq> <PDBx:pdbx_reference_entity_poly_seq hetero="N" mon_id="PRO" num="9" prd_id="PRD_000001" ref_entity_id="1"> <PDBx:observed>Y</PDBx:observed> <PDBx:parent_mon_id>PRO</PDBx:parent_mon_id> </PDBx:pdbx_reference_entity_poly_seq> <PDBx:pdbx_reference_entity_poly_seq hetero="N" mon_id="SAR" num="10" prd_id="PRD_000001" ref_entity_id="1"> <PDBx:observed>Y</PDBx:observed> <PDBx:parent_mon_id>GLY</PDBx:parent_mon_id> </PDBx:pdbx_reference_entity_poly_seq> <PDBx:pdbx_reference_entity_poly_seq hetero="N" mon_id="MVA" num="11" prd_id="PRD_000001" ref_entity_id="1"> <PDBx:observed>Y</PDBx:observed> <PDBx:parent_mon_id>VAL</PDBx:parent_mon_id> </PDBx:pdbx_reference_entity_poly_seq> </PDBx:pdbx_reference_entity_poly_seqCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_reference_entity_poly_seq_observed CASCADE;
@@ -11308,7 +11308,7 @@ CREATE TABLE pdbx_reference_entity_poly_seq (
 --
 -- (quoted from pdbx_reference_entity_sequenceType)
 -- Additional features associated with the reference entity. Example 1 - Actinomycin <PDBx:pdbx_reference_entity_sequenceCategory> <PDBx:pdbx_reference_entity_sequence prd_id="PRD_000001" ref_entity_id="1"> <PDBx:NRP_flag>Y</PDBx:NRP_flag> <PDBx:one_letter_codes>TVPGVXTVPGV</PDBx:one_letter_codes> <PDBx:type>peptide-like</PDBx:type> </PDBx:pdbx_reference_entity_sequence> <PDBx:pdbx_reference_entity_sequence prd_id="PRD_000006" ref_entity_id="2"> <PDBx:NRP_flag>Y</PDBx:NRP_flag> <PDBx:one_letter_codes>TVPGVXTVPGV</PDBx:one_letter_codes> <PDBx:type>peptide-like</PDBx:type> </PDBx:pdbx_reference_entity_sequence> <PDBx:pdbx_reference_entity_sequence prd_id="PRD_000007" ref_entity_id="3"> <PDBx:NRP_flag>Y</PDBx:NRP_flag> <PDBx:one_letter_codes>TVPGVXTVPGV</PDBx:one_letter_codes> <PDBx:type>peptide-like</PDBx:type> </PDBx:pdbx_reference_entity_sequence> <PDBx:pdbx_reference_entity_sequence prd_id="PRD_000009" ref_entity_id="4"> <PDBx:NRP_flag>Y</PDBx:NRP_flag> <PDBx:one_letter_codes>TVPGVXTVPGV</PDBx:one_letter_codes> <PDBx:type>peptide-like</PDBx:type> </PDBx:pdbx_reference_entity_sequence> <PDBx:pdbx_reference_entity_sequence prd_id="PRD_000010" ref_entity_id="5"> <PDBx:NRP_flag>Y</PDBx:NRP_flag> <PDBx:one_letter_codes>TVPGVXTVPGV</PDBx:one_letter_codes> <PDBx:type>peptide-like</PDBx:type> </PDBx:pdbx_reference_entity_sequence> <PDBx:pdbx_reference_entity_sequence prd_id="PRD_000011" ref_entity_id="6"> <PDBx:NRP_flag>Y</PDBx:NRP_flag> <PDBx:one_letter_codes>TVPGVXTVPGV</PDBx:one_letter_codes> <PDBx:type>peptide-like</PDBx:type> </PDBx:pdbx_reference_entity_sequence> </PDBx:pdbx_reference_entity_sequenceCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_reference_entity_sequence_NRP_flag CASCADE;
@@ -11330,7 +11330,7 @@ CREATE TABLE pdbx_reference_entity_sequence (
 --
 -- (quoted from pdbx_reference_entity_src_natType)
 -- Data items in the PDBX_REFERENCE_ENTITY_SRC_NAT category record details of the source from which the entity was obtained. Example 1 - Actinomycin <PDBx:pdbx_reference_entity_src_natCategory> <PDBx:pdbx_reference_entity_src_nat ordinal="1" prd_id="PRD_000001" ref_entity_id="1"> <PDBx:db_code>C06770</PDBx:db_code> <PDBx:db_name>KEGG</PDBx:db_name> <PDBx:organism_scientific>Streptomyces parvulus</PDBx:organism_scientific> <PDBx:source>KEGG</PDBx:source> <PDBx:taxid>146923</PDBx:taxid> </PDBx:pdbx_reference_entity_src_nat> <PDBx:pdbx_reference_entity_src_nat ordinal="2" prd_id="PRD_000001" ref_entity_id="1"> <PDBx:db_code>NOR00228</PDBx:db_code> <PDBx:db_name>Norine</PDBx:db_name> <PDBx:organism_scientific>Streptomyces anulatus</PDBx:organism_scientific> <PDBx:source>Norine</PDBx:source> <PDBx:taxid>1892</PDBx:taxid> </PDBx:pdbx_reference_entity_src_nat> <PDBx:pdbx_reference_entity_src_nat ordinal="3" prd_id="PRD_000001" ref_entity_id="1"> <PDBx:db_code>NOR00228</PDBx:db_code> <PDBx:db_name>Norine</PDBx:db_name> <PDBx:organism_scientific>Streptomyces antibioticus</PDBx:organism_scientific> <PDBx:source>Norine</PDBx:source> <PDBx:taxid>1890</PDBx:taxid> </PDBx:pdbx_reference_entity_src_nat> <PDBx:pdbx_reference_entity_src_nat ordinal="4" prd_id="PRD_000001" ref_entity_id="1"> <PDBx:db_code>NOR00228</PDBx:db_code> <PDBx:db_name>Norine</PDBx:db_name> <PDBx:organism_scientific>Streptomyces parvulus</PDBx:organism_scientific> <PDBx:source>Norine</PDBx:source> <PDBx:taxid>146923</PDBx:taxid> </PDBx:pdbx_reference_entity_src_nat> <PDBx:pdbx_reference_entity_src_nat ordinal="5" prd_id="PRD_000002" ref_entity_id="2"> <PDBx:db_code>NOR00228</PDBx:db_code> <PDBx:db_name>Norine</PDBx:db_name> <PDBx:organism_scientific>Streptomyces chrysomallus</PDBx:organism_scientific> <PDBx:source>Norine</PDBx:source> <PDBx:taxid>1892</PDBx:taxid> </PDBx:pdbx_reference_entity_src_nat> <PDBx:pdbx_reference_entity_src_nat ordinal="6" prd_id="PRD_000003" ref_entity_id="3"> <PDBx:db_code>NOR00233</PDBx:db_code> <PDBx:db_name>Norine</PDBx:db_name> <PDBx:organism_scientific>Streptomyces chrysomallus</PDBx:organism_scientific> <PDBx:source>Norine</PDBx:source> <PDBx:taxid>1892</PDBx:taxid> </PDBx:pdbx_reference_entity_src_nat> <PDBx:pdbx_reference_entity_src_nat ordinal="7" prd_id="PRD_000003" ref_entity_id="3"> <PDBx:db_code>NOR00233</PDBx:db_code> <PDBx:db_name>Norine</PDBx:db_name> <PDBx:organism_scientific>Streptomyces sp.</PDBx:organism_scientific> <PDBx:source>Norine</PDBx:source> <PDBx:taxid>1931</PDBx:taxid> </PDBx:pdbx_reference_entity_src_nat> </PDBx:pdbx_reference_entity_src_natCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_reference_entity_src_nat (
@@ -11355,7 +11355,7 @@ CREATE TABLE pdbx_reference_entity_src_nat (
 --
 -- (quoted from pdbx_reference_entity_subcomponentsType)
 -- Data items in the PDBX_REFERENCE_ENTITY_SUBCOMPONENTS category records subcomponent sequence from which this entity could be built. Example: 1 0G6 <PDBx:pdbx_reference_entity_subcomponentsCategory> <PDBx:pdbx_reference_entity_subcomponents prd_id="PRD_000001" seq="DPN PRO ARG 0QE"> <PDBx:chem_comp_id>0G6</PDBx:chem_comp_id> </PDBx:pdbx_reference_entity_subcomponents> </PDBx:pdbx_reference_entity_subcomponentsCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_reference_entity_subcomponents (
@@ -11371,7 +11371,7 @@ CREATE TABLE pdbx_reference_entity_subcomponents (
 --
 -- (quoted from pdbx_reference_linked_entity_comp_linkType)
 -- Data items in the pdbx_reference_linked_entity_comp_link category enumerate inter-entity linkages between the components of common observed interaction patterns described in the pdbx_reference_linked_entity category. Example 1 - <PDBx:pdbx_reference_linked_entity_comp_linkCategory> <PDBx:pdbx_reference_linked_entity_comp_link link_id="1" linked_entity_id="0"> <PDBx:atom_id_1>O4</PDBx:atom_id_1> <PDBx:atom_id_2>C1</PDBx:atom_id_2> <PDBx:atom_stereo_config_1>N</PDBx:atom_stereo_config_1> <PDBx:atom_stereo_config_2>R</PDBx:atom_stereo_config_2> <PDBx:comp_id_1>NAG</PDBx:comp_id_1> <PDBx:comp_id_2>NAG</PDBx:comp_id_2> <PDBx:details>beta 1--&gt;4</PDBx:details> <PDBx:leaving_atom_id_1 xsi:nil="true" /> <PDBx:leaving_atom_id_2>O1</PDBx:leaving_atom_id_2> <PDBx:list_id_1>1</PDBx:list_id_1> <PDBx:list_id_2>2</PDBx:list_id_2> <PDBx:value_order>sing</PDBx:value_order> </PDBx:pdbx_reference_linked_entity_comp_link> <PDBx:pdbx_reference_linked_entity_comp_link link_id="2" linked_entity_id="0"> <PDBx:atom_id_1>O4</PDBx:atom_id_1> <PDBx:atom_id_2>C1</PDBx:atom_id_2> <PDBx:atom_stereo_config_1>N</PDBx:atom_stereo_config_1> <PDBx:atom_stereo_config_2>S</PDBx:atom_stereo_config_2> <PDBx:comp_id_1>NAG</PDBx:comp_id_1> <PDBx:comp_id_2>MAN</PDBx:comp_id_2> <PDBx:details>beta 1--&gt;4</PDBx:details> <PDBx:leaving_atom_id_1 xsi:nil="true" /> <PDBx:leaving_atom_id_2>O1</PDBx:leaving_atom_id_2> <PDBx:list_id_1>2</PDBx:list_id_1> <PDBx:list_id_2>3</PDBx:list_id_2> <PDBx:value_order>sing</PDBx:value_order> </PDBx:pdbx_reference_linked_entity_comp_link> <PDBx:pdbx_reference_linked_entity_comp_link link_id="3" linked_entity_id="0"> <PDBx:atom_id_1>O3</PDBx:atom_id_1> <PDBx:atom_id_2>C1</PDBx:atom_id_2> <PDBx:atom_stereo_config_1>N</PDBx:atom_stereo_config_1> <PDBx:atom_stereo_config_2>S</PDBx:atom_stereo_config_2> <PDBx:comp_id_1>MAN</PDBx:comp_id_1> <PDBx:comp_id_2>MAN</PDBx:comp_id_2> <PDBx:details>alpha 1--&gt;3</PDBx:details> <PDBx:leaving_atom_id_1 xsi:nil="true" /> <PDBx:leaving_atom_id_2>O1</PDBx:leaving_atom_id_2> <PDBx:list_id_1>3</PDBx:list_id_1> <PDBx:list_id_2>4</PDBx:list_id_2> <PDBx:value_order>sing</PDBx:value_order> </PDBx:pdbx_reference_linked_entity_comp_link> <PDBx:pdbx_reference_linked_entity_comp_link link_id="4" linked_entity_id="0"> <PDBx:atom_id_1>O6</PDBx:atom_id_1> <PDBx:atom_id_2>C1</PDBx:atom_id_2> <PDBx:atom_stereo_config_1>N</PDBx:atom_stereo_config_1> <PDBx:atom_stereo_config_2>S</PDBx:atom_stereo_config_2> <PDBx:comp_id_1>MAN</PDBx:comp_id_1> <PDBx:comp_id_2>MAN</PDBx:comp_id_2> <PDBx:details>alpha 1--&gt;6</PDBx:details> <PDBx:leaving_atom_id_1 xsi:nil="true" /> <PDBx:leaving_atom_id_2>O1</PDBx:leaving_atom_id_2> <PDBx:list_id_1>3</PDBx:list_id_1> <PDBx:list_id_2>5</PDBx:list_id_2> <PDBx:value_order>sing</PDBx:value_order> </PDBx:pdbx_reference_linked_entity_comp_link> </PDBx:pdbx_reference_linked_entity_comp_linkCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_reference_linked_entity_comp_link_atom_stereo_config_ CASCADE;
@@ -11402,7 +11402,7 @@ CREATE TABLE pdbx_reference_linked_entity_comp_link (
 --
 -- (quoted from pdbx_reference_linked_entity_linkType)
 -- Data items in the pdbx_reference_linked_entity_link category enumerate linkages between the entities in common observed interaction patterns described in the pdbx_reference_linked_entity category. Example 1 - <PDBx:pdbx_reference_linked_entity_linkCategory> <PDBx:pdbx_reference_linked_entity_link link_id="1" linked_entity_id="0"> <PDBx:from_atom_id>C1</PDBx:from_atom_id> <PDBx:from_atom_stereo_config>R</PDBx:from_atom_stereo_config> <PDBx:from_comp_id>NAG</PDBx:from_comp_id> <PDBx:from_leaving_atom_id>O1</PDBx:from_leaving_atom_id> <PDBx:from_list_id>1</PDBx:from_list_id> <PDBx:to_atom_id>ND2</PDBx:to_atom_id> <PDBx:to_comp_id>ASN</PDBx:to_comp_id> <PDBx:value_order>sing</PDBx:value_order> </PDBx:pdbx_reference_linked_entity_link> <PDBx:pdbx_reference_linked_entity_link link_id="1" linked_entity_id="1"> <PDBx:from_atom_id>C1</PDBx:from_atom_id> <PDBx:from_atom_stereo_config>R</PDBx:from_atom_stereo_config> <PDBx:from_comp_id>NAG</PDBx:from_comp_id> <PDBx:from_leaving_atom_id>O1</PDBx:from_leaving_atom_id> <PDBx:from_list_id>1</PDBx:from_list_id> <PDBx:to_atom_id>ND2</PDBx:to_atom_id> <PDBx:to_comp_id>ASN</PDBx:to_comp_id> <PDBx:value_order>sing</PDBx:value_order> </PDBx:pdbx_reference_linked_entity_link> <PDBx:pdbx_reference_linked_entity_link link_id="1" linked_entity_id="2"> <PDBx:from_atom_id>C1</PDBx:from_atom_id> <PDBx:from_atom_stereo_config>R</PDBx:from_atom_stereo_config> <PDBx:from_comp_id>NAG</PDBx:from_comp_id> <PDBx:from_leaving_atom_id>O1</PDBx:from_leaving_atom_id> <PDBx:from_list_id>1</PDBx:from_list_id> <PDBx:to_atom_id>ND2</PDBx:to_atom_id> <PDBx:to_comp_id>ASN</PDBx:to_comp_id> <PDBx:value_order>sing</PDBx:value_order> </PDBx:pdbx_reference_linked_entity_link> <PDBx:pdbx_reference_linked_entity_link link_id="1" linked_entity_id="3"> <PDBx:from_atom_id>C1</PDBx:from_atom_id> <PDBx:from_atom_stereo_config>R</PDBx:from_atom_stereo_config> <PDBx:from_comp_id>NAG</PDBx:from_comp_id> <PDBx:from_leaving_atom_id>O1</PDBx:from_leaving_atom_id> <PDBx:from_list_id>1</PDBx:from_list_id> <PDBx:to_atom_id>ND2</PDBx:to_atom_id> <PDBx:to_comp_id>ASN</PDBx:to_comp_id> <PDBx:value_order>sing</PDBx:value_order> </PDBx:pdbx_reference_linked_entity_link> <PDBx:pdbx_reference_linked_entity_link link_id="1" linked_entity_id="4"> <PDBx:from_atom_id>C1</PDBx:from_atom_id> <PDBx:from_atom_stereo_config>R</PDBx:from_atom_stereo_config> <PDBx:from_comp_id>NAG</PDBx:from_comp_id> <PDBx:from_leaving_atom_id>O1</PDBx:from_leaving_atom_id> <PDBx:from_list_id>1</PDBx:from_list_id> <PDBx:to_atom_id>ND2</PDBx:to_atom_id> <PDBx:to_comp_id>ASN</PDBx:to_comp_id> <PDBx:value_order>sing</PDBx:value_order> </PDBx:pdbx_reference_linked_entity_link> <PDBx:pdbx_reference_linked_entity_link link_id="1" linked_entity_id="5"> <PDBx:from_atom_id>C1</PDBx:from_atom_id> <PDBx:from_atom_stereo_config>R</PDBx:from_atom_stereo_config> <PDBx:from_comp_id>NAG</PDBx:from_comp_id> <PDBx:from_leaving_atom_id>O1</PDBx:from_leaving_atom_id> <PDBx:from_list_id>1</PDBx:from_list_id> <PDBx:to_atom_id>ND2</PDBx:to_atom_id> <PDBx:to_comp_id>ASN</PDBx:to_comp_id> <PDBx:value_order>sing</PDBx:value_order> </PDBx:pdbx_reference_linked_entity_link> </PDBx:pdbx_reference_linked_entity_linkCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_reference_linked_entity_link_from_atom_stereo_config CASCADE;
@@ -11430,7 +11430,7 @@ CREATE TABLE pdbx_reference_linked_entity_link (
 --
 -- (quoted from pdbx_reference_molecule_annotationType)
 -- Data items in the PDBX_REFERENCE_MOLECULE_ANNOTATION category specify additional annotation relevant to the molecular entities. Example: 1 Actinomycin <PDBx:pdbx_reference_molecule_annotationCategory> <PDBx:pdbx_reference_molecule_annotation family_prd_id="FAM_000001" ordinal="1"> <PDBx:prd_id>PRD_000001</PDBx:prd_id> <PDBx:source>KEGG</PDBx:source> <PDBx:text>RNA polymerase inhibitor</PDBx:text> <PDBx:type>Function</PDBx:type> </PDBx:pdbx_reference_molecule_annotation> <PDBx:pdbx_reference_molecule_annotation family_prd_id="FAM_000001" ordinal="2"> <PDBx:prd_id>PRD_000001</PDBx:prd_id> <PDBx:source>KEGG</PDBx:source> <PDBx:text>antineoplastic</PDBx:text> <PDBx:type>Function</PDBx:type> </PDBx:pdbx_reference_molecule_annotation> <PDBx:pdbx_reference_molecule_annotation family_prd_id="FAM_000001" ordinal="3"> <PDBx:prd_id>PRD_000001</PDBx:prd_id> <PDBx:source>DrugBank</PDBx:source> <PDBx:text>Nucleic Acid Synthesis Inhibitor</PDBx:text> <PDBx:type>Function</PDBx:type> </PDBx:pdbx_reference_molecule_annotation> <PDBx:pdbx_reference_molecule_annotation family_prd_id="FAM_000001" ordinal="4"> <PDBx:prd_id>PRD_000001</PDBx:prd_id> <PDBx:source>DrugBank</PDBx:source> <PDBx:text>Protein Synthesis Inhibitor</PDBx:text> <PDBx:type>Function</PDBx:type> </PDBx:pdbx_reference_molecule_annotation> <PDBx:pdbx_reference_molecule_annotation family_prd_id="FAM_000001" ordinal="5"> <PDBx:prd_id>PRD_000001</PDBx:prd_id> <PDBx:source>Norine</PDBx:source> <PDBx:text>antibiotic</PDBx:text> <PDBx:type>Function</PDBx:type> </PDBx:pdbx_reference_molecule_annotation> <PDBx:pdbx_reference_molecule_annotation family_prd_id="FAM_000001" ordinal="6"> <PDBx:prd_id>PRD_000001</PDBx:prd_id> <PDBx:source>Norine</PDBx:source> <PDBx:text>antitumor</PDBx:text> <PDBx:type>Function</PDBx:type> </PDBx:pdbx_reference_molecule_annotation> <PDBx:pdbx_reference_molecule_annotation family_prd_id="FAM_000001" ordinal="7"> <PDBx:prd_id>PRD_000001</PDBx:prd_id> <PDBx:source>PubChem</PDBx:source> <PDBx:text>transcriptional inhibitor</PDBx:text> <PDBx:type>Function</PDBx:type> </PDBx:pdbx_reference_molecule_annotation> </PDBx:pdbx_reference_molecule_annotationCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_reference_molecule_annotation (
@@ -11451,7 +11451,7 @@ CREATE TABLE pdbx_reference_molecule_annotation (
 --
 -- (quoted from pdbx_reference_molecule_detailsType)
 -- Data items in the PDBX_REFERENCE_MOLECULE_DETAILS category records textual details about small polymer molecules. Example: 1 Actinomycin <PDBx:pdbx_reference_molecule_detailsCategory> <PDBx:pdbx_reference_molecule_details family_prd_id="FAM_000001" ordinal="1"> <PDBx:prd_id>PRD_000001</PDBx:prd_id> <PDBx:source>Wikipedia</PDBx:source> <PDBx:text> Actinomycin D is primarily used as an investigative tool in cell biology to inhibit transcription. It does this by binding DNA at the transcription initiation complex and preventing elongation by RNA polymerase. Because it can bind DNA duplexes, it can also interfere with DNA replication, although other chemicals such as hydroxyurea are better suited for use in the laboratory as inhibitors of DNA synthesis.</PDBx:text> </PDBx:pdbx_reference_molecule_details> <PDBx:pdbx_reference_molecule_details family_prd_id="FAM_000001" ordinal="2"> <PDBx:prd_id>PRD_000001</PDBx:prd_id> <PDBx:source>DrugBank</PDBx:source> <PDBx:text> A compound composed of a two cyclic peptides attached to a phenoxazine that is derived from streptomyces parvullus. It binds to DNA and inhibits RNA synthesis (transcription), with chain elongation more sensitive than initiation, termination, or release. As a result of impaired mRNA production, protein synthesis also declines after dactinomycin therapy.</PDBx:text> </PDBx:pdbx_reference_molecule_details> <PDBx:pdbx_reference_molecule_details family_prd_id="FAM_000001" ordinal="3"> <PDBx:prd_id>PRD_000003</PDBx:prd_id> <PDBx:source>DOI</PDBx:source> <PDBx:source_id>DOI:10.1016/S0960-894X(98)00345-X</PDBx:source_id> <PDBx:text> Actinomycin D, C2 and VII, cyclic peptides, inhibit Grb2 SH2 domain association with a phosphotyrosine containing peptide derived from the Shc protein (pTyr317). Actinomycins are the first examples of nonphosphorylated natural ligands of SH2 domain.</PDBx:text> </PDBx:pdbx_reference_molecule_details> </PDBx:pdbx_reference_molecule_detailsCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_reference_molecule_details (
@@ -11470,7 +11470,7 @@ CREATE TABLE pdbx_reference_molecule_details (
 --
 -- (quoted from pdbx_reference_molecule_featuresType)
 -- Additional features associated with the reference entity. Example: 1 Actinomycin <PDBx:pdbx_reference_molecule_featuresCategory> <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_000001" ordinal="1" prd_id="PRD_000001"> <PDBx:source>CAS</PDBx:source> <PDBx:source_ordinal>1</PDBx:source_ordinal> <PDBx:type>External_Reference_ID</PDBx:type> <PDBx:value>50-76-0</PDBx:value> </PDBx:pdbx_reference_molecule_features> <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_000001" ordinal="2" prd_id="PRD_000001"> <PDBx:source>Merck</PDBx:source> <PDBx:source_ordinal>1</PDBx:source_ordinal> <PDBx:type>External_Reference_ID</PDBx:type> <PDBx:value>14:2800</PDBx:value> </PDBx:pdbx_reference_molecule_features> <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_000001" ordinal="3" prd_id="PRD_000001"> <PDBx:source>Beilstein</PDBx:source> <PDBx:source_ordinal>1</PDBx:source_ordinal> <PDBx:type>External_Reference_ID</PDBx:type> <PDBx:value>4173766</PDBx:value> </PDBx:pdbx_reference_molecule_features> <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_000001" ordinal="4" prd_id="PRD_000001"> <PDBx:source>DrugBank</PDBx:source> <PDBx:source_ordinal>1</PDBx:source_ordinal> <PDBx:type>External_Reference_ID</PDBx:type> <PDBx:value>DB00970</PDBx:value> </PDBx:pdbx_reference_molecule_features> <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_000001" ordinal="5" prd_id="PRD_000001"> <PDBx:source>Norine</PDBx:source> <PDBx:source_ordinal>1</PDBx:source_ordinal> <PDBx:type>External_Reference_ID</PDBx:type> <PDBx:value>NOR00228</PDBx:value> </PDBx:pdbx_reference_molecule_features> <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_000001" ordinal="6" prd_id="PRD_000001"> <PDBx:source>PubChem</PDBx:source> <PDBx:source_ordinal>1</PDBx:source_ordinal> <PDBx:type>External_Reference_ID</PDBx:type> <PDBx:value>2019</PDBx:value> </PDBx:pdbx_reference_molecule_features> <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_000001" ordinal="7" prd_id="PRD_000001"> <PDBx:source>ChemSpider</PDBx:source> <PDBx:source_ordinal>1</PDBx:source_ordinal> <PDBx:type>External_Reference_ID</PDBx:type> <PDBx:value>1942</PDBx:value> </PDBx:pdbx_reference_molecule_features> <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_000001" ordinal="8" prd_id="PRD_000001"> <PDBx:source>ChEBI</PDBx:source> <PDBx:source_ordinal>1</PDBx:source_ordinal> <PDBx:type>External_Reference_ID</PDBx:type> <PDBx:value>27666</PDBx:value> </PDBx:pdbx_reference_molecule_features> <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_000001" ordinal="9" prd_id="PRD_000001"> <PDBx:source>ChemDB</PDBx:source> <PDBx:source_ordinal>1</PDBx:source_ordinal> <PDBx:type>External_Reference_ID</PDBx:type> <PDBx:value>3965267</PDBx:value> </PDBx:pdbx_reference_molecule_features> <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_000001" ordinal="10" prd_id="PRD_000001"> <PDBx:source>ChemIDplus</PDBx:source> <PDBx:source_ordinal>1</PDBx:source_ordinal> <PDBx:type>External_Reference_ID</PDBx:type> <PDBx:value>000050760</PDBx:value> </PDBx:pdbx_reference_molecule_features> <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_000001" ordinal="11" prd_id="PRD_000001"> <PDBx:source>ChemBank</PDBx:source> <PDBx:source_ordinal>1</PDBx:source_ordinal> <PDBx:type>External_Reference_ID</PDBx:type> <PDBx:value>329</PDBx:value> </PDBx:pdbx_reference_molecule_features> <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_000001" ordinal="12" prd_id="PRD_000001"> <PDBx:source>KEGG</PDBx:source> <PDBx:source_ordinal>1</PDBx:source_ordinal> <PDBx:type>KEGG_CompoundID</PDBx:type> <PDBx:value>C06770</PDBx:value> </PDBx:pdbx_reference_molecule_features> <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_000001" ordinal="13" prd_id="PRD_000001"> <PDBx:source>KEGG</PDBx:source> <PDBx:source_ordinal>1</PDBx:source_ordinal> <PDBx:type>KEGG_DrugID</PDBx:type> <PDBx:value>D00214</PDBx:value> </PDBx:pdbx_reference_molecule_features> <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_000001" ordinal="14" prd_id="PRD_000001"> <PDBx:source>MESH</PDBx:source> <PDBx:source_ordinal>1</PDBx:source_ordinal> <PDBx:type>MESH_Unique_ID</PDBx:type> <PDBx:value>D003609</PDBx:value> </PDBx:pdbx_reference_molecule_features> </PDBx:pdbx_reference_molecule_featuresCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_reference_molecule_features (
@@ -11492,7 +11492,7 @@ CREATE TABLE pdbx_reference_molecule_features (
 --
 -- (quoted from pdbx_reference_molecule_related_structuresType)
 -- Data items in the PDBX_REFERENCE_MOLECULE_RELATED_STRUCTURES category record details of the structural examples in related databases for this entity. Example 1 - Actinomycin <PDBx:pdbx_reference_molecule_related_structuresCategory> <PDBx:pdbx_reference_molecule_related_structures family_prd_id="FAM_000001" ordinal="1"> <PDBx:citation_id>1</PDBx:citation_id> <PDBx:db_accession>144860</PDBx:db_accession> <PDBx:db_code>POHMUU</PDBx:db_code> <PDBx:db_name>CCDC</PDBx:db_name> <PDBx:formula>C72 H90 N12 O18</PDBx:formula> <PDBx:name>2,2&apos;-D-bis(O-Methyltyrosinyl)-actinomycin D ethyl acetate hydrate</PDBx:name> </PDBx:pdbx_reference_molecule_related_structures> <PDBx:pdbx_reference_molecule_related_structures family_prd_id="FAM_000001" ordinal="2"> <PDBx:citation_id>2</PDBx:citation_id> <PDBx:db_accession>140332</PDBx:db_accession> <PDBx:db_code>ZZZGQM</PDBx:db_code> <PDBx:db_name>CCDC</PDBx:db_name> <PDBx:name>Actinomycin</PDBx:name> </PDBx:pdbx_reference_molecule_related_structures> <PDBx:pdbx_reference_molecule_related_structures family_prd_id="FAM_000001" ordinal="3"> <PDBx:citation_id>2</PDBx:citation_id> <PDBx:db_accession>140333</PDBx:db_accession> <PDBx:db_code>ZZZGQM01</PDBx:db_code> <PDBx:db_name>CCDC</PDBx:db_name> <PDBx:name>Actinomycin</PDBx:name> </PDBx:pdbx_reference_molecule_related_structures> <PDBx:pdbx_reference_molecule_related_structures family_prd_id="FAM_000001" ordinal="4"> <PDBx:citation_id>3</PDBx:citation_id> <PDBx:db_accession>36676</PDBx:db_accession> <PDBx:db_code>BEJXET</PDBx:db_code> <PDBx:db_name>CCDC</PDBx:db_name> <PDBx:formula>C62 H86 N12 O16; 2(C19 H25 N8 O10 P1)</PDBx:formula> <PDBx:name>bis(Deoxyguanylyl-(3&apos;-5&apos;)-deoxycytidine) actinomycin D hydrate</PDBx:name> </PDBx:pdbx_reference_molecule_related_structures> <PDBx:pdbx_reference_molecule_related_structures family_prd_id="FAM_000001" ordinal="5"> <PDBx:citation_id>4</PDBx:citation_id> <PDBx:db_accession>77327</PDBx:db_accession> <PDBx:db_code>GIDNUC</PDBx:db_code> <PDBx:db_name>CCDC</PDBx:db_name> <PDBx:formula>C62 H86 N12 O16</PDBx:formula> <PDBx:name>Actinomycin D ethanol solvate hydrate</PDBx:name> </PDBx:pdbx_reference_molecule_related_structures> <PDBx:pdbx_reference_molecule_related_structures family_prd_id="FAM_000001" ordinal="6"> <PDBx:citation_id>5</PDBx:citation_id> <PDBx:db_accession>128630</PDBx:db_accession> <PDBx:db_code>ACTDGU01</PDBx:db_code> <PDBx:db_name>CCDC</PDBx:db_name> <PDBx:name>Actinomycin D bis(deoxyguanosine) dodecahydrate</PDBx:name> </PDBx:pdbx_reference_molecule_related_structures> <PDBx:pdbx_reference_molecule_related_structures family_prd_id="FAM_000001" ordinal="7"> <PDBx:citation_id>6</PDBx:citation_id> <PDBx:db_accession>455</PDBx:db_accession> <PDBx:db_code>ACTDGU10</PDBx:db_code> <PDBx:db_name>CCDC</PDBx:db_name> <PDBx:name>Actinomycin D bis(deoxyguanosine) dodecahydrate</PDBx:name> </PDBx:pdbx_reference_molecule_related_structures> <PDBx:pdbx_reference_molecule_related_structures family_prd_id="FAM_000001" ordinal="8"> <PDBx:citation_id>6</PDBx:citation_id> <PDBx:db_accession>3032</PDBx:db_accession> <PDBx:db_code>BRAXGU</PDBx:db_code> <PDBx:db_name>CCDC</PDBx:db_name> <PDBx:name>7-Bromoactinomycin D bis(deoxyguanosine) undecahydrate</PDBx:name> </PDBx:pdbx_reference_molecule_related_structures> </PDBx:pdbx_reference_molecule_related_structuresCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_reference_molecule_related_structures (
@@ -11513,7 +11513,7 @@ CREATE TABLE pdbx_reference_molecule_related_structures (
 --
 -- (quoted from pdbx_reference_molecule_synonymsType)
 -- Data items in the PDBX_REFERENCE_MOLECULE_SYNONYMS category records synonym names for reference entities. Example: 1 Actinomycin <PDBx:pdbx_reference_molecule_synonymsCategory> <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_000001" ordinal="1" prd_id="PRD_000001"> <PDBx:name>ACTINOMYCIN</PDBx:name> <PDBx:source>PDB</PDBx:source> </PDBx:pdbx_reference_molecule_synonyms> <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_000001" ordinal="2" prd_id="PRD_000001"> <PDBx:name> 3H-Phenoxazine-1,9-dicarboxamide, 2-amino-N,N&apos;-bis(hexadecahydro-6,13-diisopropyl-2,5,9-trimethyl-1,4,7,11,14-pentaoxo- 1H-pyrrolo[2,1-i][1,4,7,10,13]oxatetraazacyclohexadecin-10-yl)-4,6-dimethyl-3-oxo-(7CI)</PDBx:name> <PDBx:source>SciFinder</PDBx:source> </PDBx:pdbx_reference_molecule_synonyms> <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_000001" ordinal="3" prd_id="PRD_000001"> <PDBx:name>Actinomycin C1 (6CI)</PDBx:name> <PDBx:source>SciFinder</PDBx:source> </PDBx:pdbx_reference_molecule_synonyms> <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_000001" ordinal="4" prd_id="PRD_000001"> <PDBx:name>1H-Pyrrolo[2,1-i][1,4,7,10,13]oxatetraazacyclohexadecine, cyclic peptide deriv.</PDBx:name> <PDBx:source>SciFinder</PDBx:source> </PDBx:pdbx_reference_molecule_synonyms> <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_000001" ordinal="5" prd_id="PRD_000001"> <PDBx:name>3H-Phenoxazine, actinomycin D deriv.</PDBx:name> <PDBx:source>SciFinder</PDBx:source> </PDBx:pdbx_reference_molecule_synonyms> <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_000001" ordinal="6" prd_id="PRD_000001"> <PDBx:name>Actactinomycin A IV</PDBx:name> <PDBx:source>SciFinder</PDBx:source> </PDBx:pdbx_reference_molecule_synonyms> <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_000001" ordinal="7" prd_id="PRD_000001"> <PDBx:name>Actinomycin 7</PDBx:name> <PDBx:source>SciFinder</PDBx:source> </PDBx:pdbx_reference_molecule_synonyms> </PDBx:pdbx_reference_molecule_synonymsCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_reference_molecule_synonyms (
@@ -11533,7 +11533,7 @@ CREATE TABLE pdbx_reference_molecule_synonyms (
 --
 -- (quoted from pdbx_reference_publication_listType)
 -- Data items in the PDBX_REFERENCE_PUBLICATION_LIST hold reference information related to PDB citation data. Example 1 - <PDBx:pdbx_reference_publication_listCategory> <PDBx:pdbx_reference_publication_list publication_abbrev="acc.CHEM.RES."> <PDBx:ASTM_code_type>ASTM</PDBx:ASTM_code_type> <PDBx:ASTM_code_value>ACHRE4</PDBx:ASTM_code_value> <PDBx:ISSN_code_type>ISSN</PDBx:ISSN_code_type> <PDBx:ISSN_code_value>0001-4842</PDBx:ISSN_code_value> <PDBx:country>US</PDBx:country> </PDBx:pdbx_reference_publication_list> </PDBx:pdbx_reference_publication_listCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_reference_publication_list (
@@ -11553,7 +11553,7 @@ CREATE TABLE pdbx_reference_publication_list (
 --
 -- (quoted from pdbx_refineType)
 -- Data items in the PDBX_REFINE category record details about additional structure refinement parameters which are needed to complete legacy REMARK 3 refinement templates in PDB format files. Example 1 - PDB placeholders for refinement program SHELX <PDBx:pdbx_refineCategory> <PDBx:pdbx_refine entry_id="ABC001" pdbx_refine_id="x-ray"> <PDBx:R_factor_all_4sig_cutoff>0.174</PDBx:R_factor_all_4sig_cutoff> <PDBx:R_factor_obs_4sig_cutoff>0.169</PDBx:R_factor_obs_4sig_cutoff> <PDBx:free_R_factor_4sig_cutoff>0.216</PDBx:free_R_factor_4sig_cutoff> <PDBx:free_R_val_test_set_ct_4sig_cutoff>164</PDBx:free_R_val_test_set_ct_4sig_cutoff> <PDBx:free_R_val_test_set_size_perc_4sig_cutoff>1.29</PDBx:free_R_val_test_set_size_perc_4sig_cutoff> <PDBx:number_reflns_obs_4sig_cutoff>1263</PDBx:number_reflns_obs_4sig_cutoff> </PDBx:pdbx_refine> </PDBx:pdbx_refineCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_refine (
@@ -11583,7 +11583,7 @@ CREATE TABLE pdbx_refine (
 --
 -- (quoted from pdbx_refine_aux_fileType)
 -- Auxilary parameter and topology files used in refinement. <PDBx:pdbx_refine_aux_fileCategory> <PDBx:pdbx_refine_aux_file pdbx_refine_id="x-ray" serial_no="1"> <PDBx:file_name>parm_hol.dat</PDBx:file_name> <PDBx:file_type>PARAMETER</PDBx:file_type> </PDBx:pdbx_refine_aux_file> </PDBx:pdbx_refine_aux_fileCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_refine_aux_file_file_type CASCADE;
@@ -11602,7 +11602,7 @@ CREATE TABLE pdbx_refine_aux_file (
 --
 -- (quoted from pdbx_refine_componentType)
 -- Data items in the PDBX_REFINE_COMPONENT category record statistics of the final model relative to the density map. Example 1 -
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_refine_component (
@@ -11644,7 +11644,7 @@ CREATE TABLE pdbx_refine_component (
 --
 -- (quoted from pdbx_refine_ls_restr_ncsType)
 -- Holds details of NCS restraints in cases where multiple conditions are provided for each domain.
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_refine_ls_restr_ncs (
@@ -11661,7 +11661,7 @@ CREATE TABLE pdbx_refine_ls_restr_ncs (
 --
 -- (quoted from pdbx_refine_tls_groupType)
 -- Data items in the PDBX_REFINE_TLS_GROUP category record details about a fragment of a TLS group. Properties of the TLS group are recorded in PDBX_REFINE_TLS
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_refine_tls_group (
@@ -11688,7 +11688,7 @@ CREATE TABLE pdbx_refine_tls_group (
 --
 -- (quoted from pdbx_reflns_twinType)
 -- Details decribing crystallographic twinning. Example 1 - <PDBx:pdbx_reflns_twinCategory> <PDBx:pdbx_reflns_twin crystal_id="1" diffrn_id="1" operator="h,-h-k,-l"> <PDBx:fraction>.43</PDBx:fraction> <PDBx:mean_F_square_over_mean_F2>.84</PDBx:mean_F_square_over_mean_F2> <PDBx:mean_I2_over_mean_I_square>1.3</PDBx:mean_I2_over_mean_I_square> <PDBx:type>merohedral</PDBx:type> </PDBx:pdbx_reflns_twin> </PDBx:pdbx_reflns_twinCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_reflns_twin_type CASCADE;
@@ -11712,7 +11712,7 @@ CREATE TABLE pdbx_reflns_twin (
 --
 -- (quoted from pdbx_related_exp_data_setType)
 -- Data items in the PDBX_RELATED_DATA_SET category record references to experimental data sets related to the entry. Example 1 - <PDBx:pdbx_related_exp_data_setCategory> <PDBx:pdbx_related_exp_data_set ordinal="1"> <PDBx:data_reference>10.000/10002/image_data/cif</PDBx:data_reference> <PDBx:data_set_type>diffraction image data</PDBx:data_set_type> <PDBx:details>imgCIF data set containing 500 frames</PDBx:details> <PDBx:metadata_reference>10.000/10002/image_data/txt</PDBx:metadata_reference> </PDBx:pdbx_related_exp_data_set> </PDBx:pdbx_related_exp_data_setCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_related_exp_data_set (
@@ -11729,7 +11729,7 @@ CREATE TABLE pdbx_related_exp_data_set (
 --
 -- (quoted from pdbx_remediation_atom_site_mappingType)
 -- Data items in the PDBX_REMEDIATION_ATOM_SITE_MAPPING category records mapping information between selected molecular entities that have been chemically redefined. The prior and current atom nomenclature is tabulated in this category. Example component QUA <PDBx:pdbx_remediation_atom_site_mappingCategory> <PDBx:pdbx_remediation_atom_site_mapping id="1"> <PDBx:PDB_ins_code xsi:nil="true" /> <PDBx:auth_alt_id xsi:nil="true" /> <PDBx:auth_asym_id>C</PDBx:auth_asym_id> <PDBx:auth_atom_id>O12</PDBx:auth_atom_id> <PDBx:auth_comp_id>QUA</PDBx:auth_comp_id> <PDBx:auth_seq_id>7</PDBx:auth_seq_id> <PDBx:group_PDB>HETATM</PDBx:group_PDB> <PDBx:label_alt_id xsi:nil="true" /> <PDBx:label_asym_id>C</PDBx:label_asym_id> <PDBx:label_atom_id>O12</PDBx:label_atom_id> <PDBx:label_comp_id>QUA</PDBx:label_comp_id> <PDBx:label_seq_id>0</PDBx:label_seq_id> <PDBx:pdbx_align>1</PDBx:pdbx_align> <PDBx:pre_PDB_ins_code xsi:nil="true" /> <PDBx:pre_auth_alt_id xsi:nil="true" /> <PDBx:pre_auth_asym_id>C</PDBx:pre_auth_asym_id> <PDBx:pre_auth_atom_id>O12</PDBx:pre_auth_atom_id> <PDBx:pre_auth_comp_id>QUA</PDBx:pre_auth_comp_id> <PDBx:pre_auth_seq_id>7</PDBx:pre_auth_seq_id> <PDBx:pre_group_PDB>HETATM</PDBx:pre_group_PDB> <PDBx:pre_pdbx_align>1</PDBx:pre_pdbx_align> </PDBx:pdbx_remediation_atom_site_mapping> <PDBx:pdbx_remediation_atom_site_mapping id="2"> <PDBx:PDB_ins_code xsi:nil="true" /> <PDBx:auth_alt_id xsi:nil="true" /> <PDBx:auth_asym_id>C</PDBx:auth_asym_id> <PDBx:auth_atom_id>C11</PDBx:auth_atom_id> <PDBx:auth_comp_id>QUA</PDBx:auth_comp_id> <PDBx:auth_seq_id>7</PDBx:auth_seq_id> <PDBx:group_PDB>HETATM</PDBx:group_PDB> <PDBx:label_alt_id xsi:nil="true" /> <PDBx:label_asym_id>C</PDBx:label_asym_id> <PDBx:label_atom_id>C11</PDBx:label_atom_id> <PDBx:label_comp_id>QUA</PDBx:label_comp_id> <PDBx:label_seq_id>0</PDBx:label_seq_id> <PDBx:pdbx_align>1</PDBx:pdbx_align> <PDBx:pre_PDB_ins_code xsi:nil="true" /> <PDBx:pre_auth_alt_id xsi:nil="true" /> <PDBx:pre_auth_asym_id>C</PDBx:pre_auth_asym_id> <PDBx:pre_auth_atom_id>C11</PDBx:pre_auth_atom_id> <PDBx:pre_auth_comp_id>QUA</PDBx:pre_auth_comp_id> <PDBx:pre_auth_seq_id>7</PDBx:pre_auth_seq_id> <PDBx:pre_group_PDB>HETATM</PDBx:pre_group_PDB> <PDBx:pre_pdbx_align>1</PDBx:pre_pdbx_align> </PDBx:pdbx_remediation_atom_site_mapping> </PDBx:pdbx_remediation_atom_site_mappingCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_remediation_atom_site_mapping_group_PDB CASCADE;
@@ -11769,7 +11769,7 @@ CREATE TABLE pdbx_remediation_atom_site_mapping (
 --
 -- (quoted from pdbx_rmch_outlierType)
 -- Data items in the PDBX_RMCH_OUTLIER category list the residues with torsion angles outside the expected Ramachandran regions. This is a completely derived category. Do not edit.
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_rmch_outlier (
@@ -11796,7 +11796,7 @@ CREATE TABLE pdbx_rmch_outlier (
 --
 -- (quoted from pdbx_rms_devs_cov_by_monomerType)
 -- Data items in the PDBX_RMS_DEVS_COV_BY_MONOMER record the RMS deviations covalent geometry for each momoner relative to small molecule crystal standards. Example 1 - <PDBx:pdbx_rms_devs_cov_by_monomerCategory> <PDBx:pdbx_rms_devs_cov_by_monomer id="1"> <PDBx:auth_asym_id>A</PDBx:auth_asym_id> <PDBx:auth_seq_id>1</PDBx:auth_seq_id> <PDBx:label_asym_id>A</PDBx:label_asym_id> <PDBx:label_comp_id>A</PDBx:label_comp_id> <PDBx:label_seq_id>1</PDBx:label_seq_id> <PDBx:model_id xsi:nil="true" /> <PDBx:num_bonds>12</PDBx:num_bonds> <PDBx:rms_bonds>0.05</PDBx:rms_bonds> </PDBx:pdbx_rms_devs_cov_by_monomer> </PDBx:pdbx_rms_devs_cov_by_monomerCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_rms_devs_cov_by_monomer (
@@ -11819,7 +11819,7 @@ CREATE TABLE pdbx_rms_devs_cov_by_monomer (
 --
 -- (quoted from pdbx_rms_devs_covalentType)
 -- Data items in the PDBX_RMS_DEVS_COVALENT record the summary RMS deviations for nucleic acid covalent geometry relative to small molecule crystal standards. Example 1 - <PDBx:pdbx_rms_devs_covalentCategory> <PDBx:pdbx_rms_devs_covalent entry_id="1ABC"> <PDBx:num_bonds>100</PDBx:num_bonds> <PDBx:rms_bonds>0.89</PDBx:rms_bonds> </PDBx:pdbx_rms_devs_covalent> </PDBx:pdbx_rms_devs_covalentCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_rms_devs_covalent (
@@ -11848,7 +11848,7 @@ CREATE TABLE pdbx_rms_devs_covalent (
 --
 -- (quoted from pdbx_robot_systemType)
 -- The details about each robotic system used to collect data for this project.
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_robot_system (
@@ -11864,7 +11864,7 @@ CREATE TABLE pdbx_robot_system (
 --
 -- (quoted from pdbx_seq_map_depositor_infoType)
 -- Data items in the PDBX_SEQ_MAP_DEPOSITOR_INFO record the details about the mapping sample and coordinate sequences. Example 1 - <PDBx:pdbx_seq_map_depositor_infoCategory> <PDBx:pdbx_seq_map_depositor_info auth_asym_id="A" entity_id="1"> <PDBx:one_letter_code>AAAAAAAAAAAAAAAAA</PDBx:one_letter_code> <PDBx:one_letter_code_mod>AAAAAAAAAAAAAAAAA</PDBx:one_letter_code_mod> </PDBx:pdbx_seq_map_depositor_info> </PDBx:pdbx_seq_map_depositor_infoCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_seq_map_depositor_info (
@@ -11881,7 +11881,7 @@ CREATE TABLE pdbx_seq_map_depositor_info (
 --
 -- (quoted from pdbx_sequence_annotationType)
 -- PDBX_SEQUENCE_ANNOTATION holds internal details about molecular sequences described in the context of PDB chains. <PDBx:pdbx_sequence_annotationCategory> <PDBx:pdbx_sequence_annotation pdb_chain_id="A"> <PDBx:ncbi_taxid>188000</PDBx:ncbi_taxid> </PDBx:pdbx_sequence_annotation> </PDBx:pdbx_sequence_annotationCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_sequence_annotation (
@@ -11895,7 +11895,7 @@ CREATE TABLE pdbx_sequence_annotation (
 --
 -- (quoted from pdbx_sequence_patternType)
 -- Data items in the PDBX_SEQUENCE_PATTERN category record the number of occurences of common step sequence patterns (e.g. AA, CG, AT). Example 1 - <PDBx:pdbx_sequence_patternCategory> <PDBx:pdbx_sequence_pattern label_asym_id="A" sequence_pattern="GC"> <PDBx:pattern_count>2</PDBx:pattern_count> </PDBx:pdbx_sequence_pattern> <PDBx:pdbx_sequence_pattern label_asym_id="B" sequence_pattern="GC"> <PDBx:pattern_count>2</PDBx:pattern_count> </PDBx:pdbx_sequence_pattern> </PDBx:pdbx_sequence_patternCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_sequence_pattern (
@@ -11912,7 +11912,7 @@ CREATE TABLE pdbx_sequence_pattern (
 --
 -- (quoted from pdbx_sequence_rangeType)
 -- Data items in the PDBX_SEQUENCE_RANGE category identify the beginning and ending points of polypeptide sequence segments. Example 1 - <PDBx:pdbx_sequence_rangeCategory> <PDBx:pdbx_sequence_range beg_label_alt_id="A" beg_label_asym_id="A" beg_label_comp_id="PRO" beg_label_seq_id="1" end_label_alt_id="A" end_label_asym_id="A" end_label_comp_id="GLY" end_label_seq_id="29" seq_range_id="s1"></PDBx:pdbx_sequence_range> <PDBx:pdbx_sequence_range beg_label_alt_id="A" beg_label_asym_id="D" beg_label_comp_id="PRO" beg_label_seq_id="91" end_label_alt_id="A" end_label_asym_id="D" end_label_comp_id="GLY" end_label_seq_id="119" seq_range_id="s2"></PDBx:pdbx_sequence_range> </PDBx:pdbx_sequence_rangeCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_sequence_range (
@@ -11947,7 +11947,7 @@ CREATE TABLE pdbx_sequence_range (
 --
 -- (quoted from pdbx_serial_crystallography_data_reductionType)
 -- Data items in the PDBX_SERIAL_CRYSTALLOGRAPHY_DATA_REDUCTION category record details about data processing that are unique to XFEL experiments. These will compliment data recorded in category pdbx_diffrn_merge_stat. Example 1 <PDBx:pdbx_serial_crystallography_data_reductionCategory> <PDBx:pdbx_serial_crystallography_data_reduction diffrn_id="1"> <PDBx:crystal_hits>1797503</PDBx:crystal_hits> <PDBx:frames_indexed>578620</PDBx:frames_indexed> <PDBx:frames_total>7324430</PDBx:frames_total> </PDBx:pdbx_serial_crystallography_data_reduction> </PDBx:pdbx_serial_crystallography_data_reductionCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_serial_crystallography_data_reduction (
@@ -11977,7 +11977,7 @@ CREATE TABLE pdbx_serial_crystallography_data_reduction (
 --
 -- (quoted from pdbx_serial_crystallography_measurementType)
 -- Data items in the PDBX_SERIAL_CRYSTALLOGRAPHY_MEASUREMENT category record details the beam that is impinging on the sample Example 1 <PDBx:pdbx_serial_crystallography_measurementCategory> <PDBx:pdbx_serial_crystallography_measurement diffrn_id="1"> <PDBx:collection_time_total>16.95</PDBx:collection_time_total> <PDBx:focal_spot_size>1.8</PDBx:focal_spot_size> <PDBx:photons_per_pulse>0.17</PDBx:photons_per_pulse> <PDBx:pulse_duration>45</PDBx:pulse_duration> </PDBx:pdbx_serial_crystallography_measurement> </PDBx:pdbx_serial_crystallography_measurementCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_serial_crystallography_measurement (
@@ -12009,7 +12009,7 @@ CREATE TABLE pdbx_serial_crystallography_measurement (
 --
 -- (quoted from pdbx_serial_crystallography_sample_deliveryType)
 -- Data items in the PDBX_SERIAL_CRYSTALLOGRAPHY_SAMPLE_DELIVERY category record general details about the sample delivery Example 1 <PDBx:pdbx_serial_crystallography_sample_deliveryCategory> <PDBx:pdbx_serial_crystallography_sample_delivery diffrn_id="1"> <PDBx:description>LCP injector</PDBx:description> </PDBx:pdbx_serial_crystallography_sample_delivery> </PDBx:pdbx_serial_crystallography_sample_deliveryCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_serial_crystallography_sample_delivery_method CASCADE;
@@ -12026,7 +12026,7 @@ CREATE TABLE pdbx_serial_crystallography_sample_delivery (
 --
 -- (quoted from pdbx_serial_crystallography_sample_delivery_fixed_targetType)
 -- Data items in the PDBX_SERIAL_CRYSTALLOGRAPHY_SAMPLE_DELIVERY_FIXED_TARGET category record details about sample delivery using a fixed taget. Example 1 <PDBx:pdbx_serial_crystallography_sample_delivery_fixed_targetCategory> <PDBx:pdbx_serial_crystallography_sample_delivery_fixed_target diffrn_id="1"> <PDBx:crystals_per_unit>7</PDBx:crystals_per_unit> <PDBx:sample_holding>mesh</PDBx:sample_holding> <PDBx:support_base>goniometer</PDBx:support_base> </PDBx:pdbx_serial_crystallography_sample_delivery_fixed_target> </PDBx:pdbx_serial_crystallography_sample_delivery_fixed_targetCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_serial_crystallography_sample_delivery_fixed_target (
@@ -12054,7 +12054,7 @@ CREATE TABLE pdbx_serial_crystallography_sample_delivery_fixed_target (
 --
 -- (quoted from pdbx_serial_crystallography_sample_delivery_injectionType)
 -- Data items in the PDBX_SERIAL_CRYSTALLOGRAPHY_SAMPLE_DELIVERY_INJECTION category record details about sample delivery by injection Example 1 <PDBx:pdbx_serial_crystallography_sample_delivery_injectionCategory> <PDBx:pdbx_serial_crystallography_sample_delivery_injection diffrn_id="1"> <PDBx:carrier_solvent>liquid</PDBx:carrier_solvent> <PDBx:description>microextrusion injector</PDBx:description> <PDBx:flow_rate>0.22</PDBx:flow_rate> <PDBx:injector_diameter>50</PDBx:injector_diameter> </PDBx:pdbx_serial_crystallography_sample_delivery_injection> </PDBx:pdbx_serial_crystallography_sample_delivery_injectionCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_serial_crystallography_sample_delivery_injection (
@@ -12087,7 +12087,7 @@ CREATE TABLE pdbx_serial_crystallography_sample_delivery_injection (
 --
 -- (quoted from pdbx_soln_scatterType)
 -- Data items in the PDBX_SOLN_SCATTER category record details about a solution scattering experiment Example 1 - based on PDB entry 1HAQ <PDBx:pdbx_soln_scatterCategory> <PDBx:pdbx_soln_scatter entry_id="1HAQ" id="1"> <PDBx:buffer_name>tris</PDBx:buffer_name> <PDBx:concentration_range>0.7 - 14</PDBx:concentration_range> <PDBx:detector_specific xsi:nil="true" /> <PDBx:detector_type>500-channel quadrant</PDBx:detector_type> <PDBx:max_mean_cross_sectional_radii_gyration>1.7</PDBx:max_mean_cross_sectional_radii_gyration> <PDBx:max_mean_cross_sectional_radii_gyration_esd>0.1</PDBx:max_mean_cross_sectional_radii_gyration_esd> <PDBx:mean_guiner_radius>11.1</PDBx:mean_guiner_radius> <PDBx:mean_guiner_radius_esd>0.4</PDBx:mean_guiner_radius_esd> <PDBx:min_mean_cross_sectional_radii_gyration>4.4</PDBx:min_mean_cross_sectional_radii_gyration> <PDBx:min_mean_cross_sectional_radii_gyration_esd>0.2</PDBx:min_mean_cross_sectional_radii_gyration_esd> <PDBx:num_time_frames>10</PDBx:num_time_frames> <PDBx:protein_length>40</PDBx:protein_length> <PDBx:sample_pH xsi:nil="true" /> <PDBx:source_beamline>2.1</PDBx:source_beamline> <PDBx:source_beamline_instrument xsi:nil="true" /> <PDBx:source_class>synchrotron</PDBx:source_class> <PDBx:source_type>SRS BEAMLINE 2.1</PDBx:source_type> <PDBx:temperature>288</PDBx:temperature> <PDBx:type>x-ray</PDBx:type> </PDBx:pdbx_soln_scatter> <PDBx:pdbx_soln_scatter entry_id="1HAQ" id="2"> <PDBx:buffer_name>PBS in 99.9&#37; D2O</PDBx:buffer_name> <PDBx:concentration_range>0.4 - 9.6</PDBx:concentration_range> <PDBx:detector_specific xsi:nil="true" /> <PDBx:detector_type>area</PDBx:detector_type> <PDBx:max_mean_cross_sectional_radii_gyration>1.51</PDBx:max_mean_cross_sectional_radii_gyration> <PDBx:max_mean_cross_sectional_radii_gyration_esd>0.06</PDBx:max_mean_cross_sectional_radii_gyration_esd> <PDBx:mean_guiner_radius>11.3</PDBx:mean_guiner_radius> <PDBx:mean_guiner_radius_esd>0.4</PDBx:mean_guiner_radius_esd> <PDBx:min_mean_cross_sectional_radii_gyration>3.9</PDBx:min_mean_cross_sectional_radii_gyration> <PDBx:min_mean_cross_sectional_radii_gyration_esd>0.2</PDBx:min_mean_cross_sectional_radii_gyration_esd> <PDBx:num_time_frames xsi:nil="true" /> <PDBx:protein_length>37.0 - 39.0</PDBx:protein_length> <PDBx:sample_pH xsi:nil="true" /> <PDBx:source_beamline xsi:nil="true" /> <PDBx:source_beamline_instrument>D11, D22</PDBx:source_beamline_instrument> <PDBx:source_class>neutron source</PDBx:source_class> <PDBx:source_type>ILL</PDBx:source_type> <PDBx:temperature xsi:nil="true" /> <PDBx:type>neutron</PDBx:type> </PDBx:pdbx_soln_scatter> <PDBx:pdbx_soln_scatter entry_id="1HAQ" id="3"> <PDBx:buffer_name>PBS in 99.9&#37; D2O</PDBx:buffer_name> <PDBx:concentration_range>3.7, 6.1</PDBx:concentration_range> <PDBx:detector_specific xsi:nil="true" /> <PDBx:detector_type>AREA (TIME-OF-FLIGHT)</PDBx:detector_type> <PDBx:max_mean_cross_sectional_radii_gyration xsi:nil="true" /> <PDBx:max_mean_cross_sectional_radii_gyration_esd xsi:nil="true" /> <PDBx:mean_guiner_radius>11.7</PDBx:mean_guiner_radius> <PDBx:mean_guiner_radius_esd>0.5</PDBx:mean_guiner_radius_esd> <PDBx:min_mean_cross_sectional_radii_gyration xsi:nil="true" /> <PDBx:min_mean_cross_sectional_radii_gyration_esd xsi:nil="true" /> <PDBx:num_time_frames xsi:nil="true" /> <PDBx:protein_length>40.0</PDBx:protein_length> <PDBx:sample_pH xsi:nil="true" /> <PDBx:source_beamline>Pulsed Neutron</PDBx:source_beamline> <PDBx:source_beamline_instrument>LOQ</PDBx:source_beamline_instrument> <PDBx:source_class>neutron source</PDBx:source_class> <PDBx:source_type>ISIS</PDBx:source_type> <PDBx:temperature xsi:nil="true" /> <PDBx:type>neutron</PDBx:type> </PDBx:pdbx_soln_scatter> </PDBx:pdbx_soln_scatterCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_soln_scatter_type CASCADE;
@@ -12133,7 +12133,7 @@ CREATE TABLE pdbx_soln_scatter (
 --
 -- (quoted from pdbx_soln_scatter_modelType)
 -- Data items in the PDBX_SOLN_SCATTER_MODEL category record details about the homology model fitting to the solution scatter data.
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_soln_scatter_model (
@@ -12157,7 +12157,7 @@ CREATE TABLE pdbx_soln_scatter_model (
 --
 -- (quoted from pdbx_solvent_atom_site_mappingType)
 -- Data items in the PDBX_SOLVENT_ATOM_SITE_MAPPING category records mapping information between solvent atoms before and after symmetry repositioning. Example - <PDBx:pdbx_solvent_atom_site_mappingCategory> <PDBx:pdbx_solvent_atom_site_mapping id="1"> <PDBx:Cartn_x xsi:nil="true" /> <PDBx:Cartn_y xsi:nil="true" /> <PDBx:Cartn_z xsi:nil="true" /> <PDBx:auth_alt_id xsi:nil="true" /> <PDBx:auth_asym_id xsi:nil="true" /> <PDBx:auth_atom_id xsi:nil="true" /> <PDBx:auth_comp_id xsi:nil="true" /> <PDBx:auth_seq_id xsi:nil="true" /> <PDBx:label_alt_id xsi:nil="true" /> <PDBx:label_asym_id xsi:nil="true" /> <PDBx:label_atom_id xsi:nil="true" /> <PDBx:label_comp_id xsi:nil="true" /> <PDBx:label_seq_id xsi:nil="true" /> <PDBx:pre_Cartn_x xsi:nil="true" /> <PDBx:pre_Cartn_y xsi:nil="true" /> <PDBx:pre_Cartn_z xsi:nil="true" /> <PDBx:pre_auth_alt_id xsi:nil="true" /> <PDBx:pre_auth_asym_id xsi:nil="true" /> <PDBx:pre_auth_atom_id xsi:nil="true" /> <PDBx:pre_auth_comp_id xsi:nil="true" /> <PDBx:pre_auth_seq_id xsi:nil="true" /> </PDBx:pdbx_solvent_atom_site_mapping> </PDBx:pdbx_solvent_atom_site_mappingCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_solvent_atom_site_mapping (
@@ -12202,7 +12202,7 @@ CREATE TABLE pdbx_solvent_atom_site_mapping (
 --
 -- (quoted from pdbx_solvent_infoType)
 -- Data items in the PDBX_SOLVENT_INFO category are still used until the 'entity' categories are entered into the database, even though the information is repeated. Example 1 - based on NDB entry DDH048 <PDBx:pdbx_solvent_infoCategory> <PDBx:pdbx_solvent_info id="1"> <PDBx:name>water</PDBx:name> <PDBx:numb_per_asym_unit>22</PDBx:numb_per_asym_unit> </PDBx:pdbx_solvent_info> </PDBx:pdbx_solvent_infoCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_solvent_info (
@@ -12217,7 +12217,7 @@ CREATE TABLE pdbx_solvent_info (
 --
 -- (quoted from pdbx_sourceType)
 -- Data item will still be used until the ENTITY category is fully adopted by NDBQuery. Example 1 - based on NDB entry BDL001 <PDBx:pdbx_sourceCategory> <PDBx:pdbx_source src_method="synthetic"></PDBx:pdbx_source> </PDBx:pdbx_sourceCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_source (
@@ -12230,7 +12230,7 @@ CREATE TABLE pdbx_source (
 --
 -- (quoted from pdbx_stereochemistryType)
 -- Data items in the PDBX_STEREOCHEMISTRY identify chiral centers and associated chiral volumes.
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_stereochemistry (
@@ -12259,7 +12259,7 @@ CREATE TABLE pdbx_stereochemistry (
 --
 -- (quoted from pdbx_struct_assembly_auth_classificationType)
 -- Provides reason a particular assembly in pdbx_struct_assembly is of interest. Example 1 - <PDBx:pdbx_struct_assembly_auth_classificationCategory> <PDBx:pdbx_struct_assembly_auth_classification assembly_id="1"> <PDBx:reason_for_interest>biologically relevant</PDBx:reason_for_interest> </PDBx:pdbx_struct_assembly_auth_classification> <PDBx:pdbx_struct_assembly_auth_classification assembly_id="2"> <PDBx:reason_for_interest>designed</PDBx:reason_for_interest> </PDBx:pdbx_struct_assembly_auth_classification> </PDBx:pdbx_struct_assembly_auth_classificationCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_struct_assembly_auth_classification_reason_for_intere CASCADE;
@@ -12275,7 +12275,7 @@ CREATE TABLE pdbx_struct_assembly_auth_classification (
 --
 -- (quoted from pdbx_struct_assembly_auth_evidenceType)
 -- Provides author supplied evidentiary support for assemblies in pdbx_struct_assembly. Example 1 - <PDBx:pdbx_struct_assembly_auth_evidenceCategory> <PDBx:pdbx_struct_assembly_auth_evidence assembly_id="1" id="1"> <PDBx:details xsi:nil="true" /> <PDBx:experimental_support>cross-linking</PDBx:experimental_support> </PDBx:pdbx_struct_assembly_auth_evidence> <PDBx:pdbx_struct_assembly_auth_evidence assembly_id="1" id="2"> <PDBx:details>Elutes as a dimer</PDBx:details> <PDBx:experimental_support>gel filtration</PDBx:experimental_support> </PDBx:pdbx_struct_assembly_auth_evidence> <PDBx:pdbx_struct_assembly_auth_evidence assembly_id="2" id="3"> <PDBx:details xsi:nil="true" /> <PDBx:experimental_support>cross-linking</PDBx:experimental_support> </PDBx:pdbx_struct_assembly_auth_evidence> </PDBx:pdbx_struct_assembly_auth_evidenceCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_struct_assembly_auth_evidence_experimental_support CASCADE;
@@ -12294,7 +12294,7 @@ CREATE TABLE pdbx_struct_assembly_auth_evidence (
 --
 -- (quoted from pdbx_struct_assembly_auth_evidence_depositor_infoType)
 -- Provides author supplied evidentiary support for assemblies in pdbx_struct_assembly. Example 1 - <PDBx:pdbx_struct_assembly_auth_evidence_depositor_infoCategory> <PDBx:pdbx_struct_assembly_auth_evidence_depositor_info assembly_id="1" id="1"> <PDBx:details xsi:nil="true" /> <PDBx:experimental_support>cross-linking</PDBx:experimental_support> </PDBx:pdbx_struct_assembly_auth_evidence_depositor_info> <PDBx:pdbx_struct_assembly_auth_evidence_depositor_info assembly_id="1" id="2"> <PDBx:details>Elutes as a dimer</PDBx:details> <PDBx:experimental_support>gel filtration</PDBx:experimental_support> </PDBx:pdbx_struct_assembly_auth_evidence_depositor_info> <PDBx:pdbx_struct_assembly_auth_evidence_depositor_info assembly_id="2" id="3"> <PDBx:details xsi:nil="true" /> <PDBx:experimental_support>cross-linking</PDBx:experimental_support> </PDBx:pdbx_struct_assembly_auth_evidence_depositor_info> </PDBx:pdbx_struct_assembly_auth_evidence_depositor_infoCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_struct_assembly_auth_evidence_depositor_info_experime CASCADE;
@@ -12313,7 +12313,7 @@ CREATE TABLE pdbx_struct_assembly_auth_evidence_depositor_info (
 --
 -- (quoted from pdbx_struct_assembly_genType)
 -- Data items in the PDBX_STRUCT_ASSEMBLY_GEN category record details about the generation of each macromolecular assemblies. The PDBX_STRUCT_ASSEMBLY_GEN data items provide the specifications of the components that constitute that assembly in terms of cartesian transformations. Example 1 - <PDBx:pdbx_struct_assembly_genCategory> <PDBx:pdbx_struct_assembly_gen assembly_id="1" asym_id_list="A" oper_expression="1"></PDBx:pdbx_struct_assembly_gen> <PDBx:pdbx_struct_assembly_gen assembly_id="1" asym_id_list="B" oper_expression="1"></PDBx:pdbx_struct_assembly_gen> <PDBx:pdbx_struct_assembly_gen assembly_id="2" asym_id_list="A" oper_expression="2"></PDBx:pdbx_struct_assembly_gen> <PDBx:pdbx_struct_assembly_gen assembly_id="2" asym_id_list="B" oper_expression="2"></PDBx:pdbx_struct_assembly_gen> <PDBx:pdbx_struct_assembly_gen assembly_id="2" asym_id_list="C" oper_expression="2"></PDBx:pdbx_struct_assembly_gen> <PDBx:pdbx_struct_assembly_gen assembly_id="3" asym_id_list="A" oper_expression="3"></PDBx:pdbx_struct_assembly_gen> <PDBx:pdbx_struct_assembly_gen assembly_id="3" asym_id_list="B" oper_expression="3"></PDBx:pdbx_struct_assembly_gen> <PDBx:pdbx_struct_assembly_gen assembly_id="3" asym_id_list="D" oper_expression="3"></PDBx:pdbx_struct_assembly_gen> </PDBx:pdbx_struct_assembly_genCategory> Example 2 - <PDBx:pdbx_struct_assembly_genCategory> <PDBx:pdbx_struct_assembly_gen assembly_id="1" asym_id_list="A,B" oper_expression="1"></PDBx:pdbx_struct_assembly_gen> <PDBx:pdbx_struct_assembly_gen assembly_id="2" asym_id_list="A,B,C" oper_expression="2"></PDBx:pdbx_struct_assembly_gen> <PDBx:pdbx_struct_assembly_gen assembly_id="3" asym_id_list="A,B,D" oper_expression="3"></PDBx:pdbx_struct_assembly_gen> </PDBx:pdbx_struct_assembly_genCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_struct_assembly_gen (
@@ -12332,7 +12332,7 @@ CREATE TABLE pdbx_struct_assembly_gen (
 --
 -- (quoted from pdbx_struct_assembly_gen_depositor_infoType)
 -- Data items in the PDBX_STRUCT_ASSEMBLY_GEN_DEPOSITOR_INFO category capture depositor provided information related to the archival cateogory PDBX_STRUCT_ASSEMBLY_GEN. Example 1 - <PDBx:pdbx_struct_assembly_gen_depositor_infoCategory> <PDBx:pdbx_struct_assembly_gen_depositor_info id="1"> <PDBx:assembly_id>1</PDBx:assembly_id> <PDBx:asym_id_list>A</PDBx:asym_id_list> <PDBx:oper_expression>1</PDBx:oper_expression> </PDBx:pdbx_struct_assembly_gen_depositor_info> <PDBx:pdbx_struct_assembly_gen_depositor_info id="2"> <PDBx:assembly_id>1</PDBx:assembly_id> <PDBx:asym_id_list>B</PDBx:asym_id_list> <PDBx:oper_expression>1</PDBx:oper_expression> </PDBx:pdbx_struct_assembly_gen_depositor_info> <PDBx:pdbx_struct_assembly_gen_depositor_info id="3"> <PDBx:assembly_id>2</PDBx:assembly_id> <PDBx:asym_id_list>A</PDBx:asym_id_list> <PDBx:oper_expression>2</PDBx:oper_expression> </PDBx:pdbx_struct_assembly_gen_depositor_info> <PDBx:pdbx_struct_assembly_gen_depositor_info id="4"> <PDBx:assembly_id>2</PDBx:assembly_id> <PDBx:asym_id_list>B</PDBx:asym_id_list> <PDBx:oper_expression>2</PDBx:oper_expression> </PDBx:pdbx_struct_assembly_gen_depositor_info> <PDBx:pdbx_struct_assembly_gen_depositor_info id="5"> <PDBx:assembly_id>2</PDBx:assembly_id> <PDBx:asym_id_list>C</PDBx:asym_id_list> <PDBx:oper_expression>2</PDBx:oper_expression> </PDBx:pdbx_struct_assembly_gen_depositor_info> <PDBx:pdbx_struct_assembly_gen_depositor_info id="6"> <PDBx:assembly_id>3</PDBx:assembly_id> <PDBx:asym_id_list>A</PDBx:asym_id_list> <PDBx:oper_expression>3</PDBx:oper_expression> </PDBx:pdbx_struct_assembly_gen_depositor_info> <PDBx:pdbx_struct_assembly_gen_depositor_info id="7"> <PDBx:assembly_id>3</PDBx:assembly_id> <PDBx:asym_id_list>B</PDBx:asym_id_list> <PDBx:oper_expression>3</PDBx:oper_expression> </PDBx:pdbx_struct_assembly_gen_depositor_info> <PDBx:pdbx_struct_assembly_gen_depositor_info id="8"> <PDBx:assembly_id>3</PDBx:assembly_id> <PDBx:asym_id_list>D</PDBx:asym_id_list> <PDBx:oper_expression>3</PDBx:oper_expression> </PDBx:pdbx_struct_assembly_gen_depositor_info> </PDBx:pdbx_struct_assembly_gen_depositor_infoCategory> Example 2 - <PDBx:pdbx_struct_assembly_gen_depositor_infoCategory> <PDBx:pdbx_struct_assembly_gen_depositor_info id="1"> <PDBx:assembly_id>1</PDBx:assembly_id> <PDBx:asym_id_list>A,B</PDBx:asym_id_list> <PDBx:oper_expression>1</PDBx:oper_expression> </PDBx:pdbx_struct_assembly_gen_depositor_info> <PDBx:pdbx_struct_assembly_gen_depositor_info id="2"> <PDBx:assembly_id>2</PDBx:assembly_id> <PDBx:asym_id_list>A,B,C</PDBx:asym_id_list> <PDBx:oper_expression>2</PDBx:oper_expression> </PDBx:pdbx_struct_assembly_gen_depositor_info> <PDBx:pdbx_struct_assembly_gen_depositor_info id="3"> <PDBx:assembly_id>3</PDBx:assembly_id> <PDBx:asym_id_list>A,B,D</PDBx:asym_id_list> <PDBx:oper_expression>3</PDBx:oper_expression> </PDBx:pdbx_struct_assembly_gen_depositor_info> </PDBx:pdbx_struct_assembly_gen_depositor_infoCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_struct_assembly_gen_depositor_info_all_chains CASCADE;
@@ -12362,7 +12362,7 @@ CREATE TABLE pdbx_struct_assembly_gen_depositor_info (
 --
 -- (quoted from pdbx_struct_assembly_propType)
 -- Properties and features of structural assemblies. Example 1 - <PDBx:pdbx_struct_assembly_propCategory> <PDBx:pdbx_struct_assembly_prop biol_id="1" type="ABSA"> <PDBx:details> </PDBx:details> <PDBx:value>1456.7</PDBx:value> </PDBx:pdbx_struct_assembly_prop> </PDBx:pdbx_struct_assembly_propCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_struct_assembly_prop_type CASCADE;
@@ -12381,7 +12381,7 @@ CREATE TABLE pdbx_struct_assembly_prop (
 --
 -- (quoted from pdbx_struct_assembly_prop_depositor_infoType)
 -- Data items in the PDBX_STRUCT_ASSEMBLY_PROP_DEPOSITOR_INFO category capture depositor provided information related to the archival cateogory PDBX_STRUCT_ASSEMBLY_PROP. Example 1 - <PDBx:pdbx_struct_assembly_prop_depositor_infoCategory> <PDBx:pdbx_struct_assembly_prop_depositor_info biol_id="1" type="ABSA"> <PDBx:value>1456.7</PDBx:value> </PDBx:pdbx_struct_assembly_prop_depositor_info> </PDBx:pdbx_struct_assembly_prop_depositor_infoCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_struct_assembly_prop_depositor_info_type CASCADE;
@@ -12400,7 +12400,7 @@ CREATE TABLE pdbx_struct_assembly_prop_depositor_info (
 --
 -- (quoted from pdbx_struct_asym_genType)
 -- Data items in the PDBX_STRUCT_ASYM_GEN category record details about the generation of the crystallographic asymmetric unit. The PDBX_STRUCT_ASYM_GEN data items provide the specifications of the components that constitute the asymmetric unit in terms of cartesian transformations of deposited coordinates. Example 1 - <PDBx:pdbx_struct_asym_genCategory> <PDBx:pdbx_struct_asym_gen entity_inst_id="A" oper_expression="1"> <PDBx:asym_id>A</PDBx:asym_id> </PDBx:pdbx_struct_asym_gen> <PDBx:pdbx_struct_asym_gen entity_inst_id="B" oper_expression="1"> <PDBx:asym_id>B</PDBx:asym_id> </PDBx:pdbx_struct_asym_gen> </PDBx:pdbx_struct_asym_genCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_struct_asym_gen (
@@ -12416,7 +12416,7 @@ CREATE TABLE pdbx_struct_asym_gen (
 --
 -- (quoted from pdbx_struct_biol_funcType)
 -- Data items in the PDBX_STRUCT_BIOL_FUNC category record details about the function of a particular biological assembly. Example 1 - based on NDB entry NRT0001 <PDBx:pdbx_struct_biol_funcCategory> <PDBx:pdbx_struct_biol_func biol_id="1" id="1"> <PDBx:function>Oxygen Transport</PDBx:function> </PDBx:pdbx_struct_biol_func> </PDBx:pdbx_struct_biol_funcCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_struct_biol_func (
@@ -12432,7 +12432,7 @@ CREATE TABLE pdbx_struct_biol_func (
 --
 -- (quoted from pdbx_struct_chem_comp_diagnosticsType)
 -- Data items in the PDBX_STRUCT_CHEM_COMP_DIAGNOSTICS category provides structural diagnostics in chemical components instances. Example 1 - <PDBx:pdbx_struct_chem_comp_diagnosticsCategory> <PDBx:pdbx_struct_chem_comp_diagnostics ordinal="1"> <PDBx:asym_id>Q</PDBx:asym_id> <PDBx:auth_comp_id>Q20</PDBx:auth_comp_id> <PDBx:auth_seq_id>10</PDBx:auth_seq_id> <PDBx:details>Strained geometry. Long carbonyl bond at C10.</PDBx:details> <PDBx:pdb_strand_id>Q</PDBx:pdb_strand_id> <PDBx:seq_num xsi:nil="true" /> <PDBx:type>GEOMETRY</PDBx:type> </PDBx:pdbx_struct_chem_comp_diagnostics> </PDBx:pdbx_struct_chem_comp_diagnosticsCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_struct_chem_comp_diagnostics_type CASCADE;
@@ -12455,7 +12455,7 @@ CREATE TABLE pdbx_struct_chem_comp_diagnostics (
 --
 -- (quoted from pdbx_struct_chem_comp_featureType)
 -- Data items in the PDBX_STRUCT_CHEM_COMP_FEATURE category provides structural annotations in chemical components instances. Example 1 - <PDBx:pdbx_struct_chem_comp_featureCategory> <PDBx:pdbx_struct_chem_comp_feature ordinal="1"> <PDBx:asym_id>Q</PDBx:asym_id> <PDBx:auth_comp_id>Q20</PDBx:auth_comp_id> <PDBx:auth_seq_id>10</PDBx:auth_seq_id> <PDBx:details>Helix of length 4 beginning at atom position C2A.</PDBx:details> <PDBx:pdb_strand_id>Q</PDBx:pdb_strand_id> <PDBx:seq_num xsi:nil="true" /> <PDBx:type>SECONDARY STRUCTURE</PDBx:type> </PDBx:pdbx_struct_chem_comp_feature> </PDBx:pdbx_struct_chem_comp_featureCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_struct_chem_comp_feature_type CASCADE;
@@ -12478,7 +12478,7 @@ CREATE TABLE pdbx_struct_chem_comp_feature (
 --
 -- (quoted from pdbx_struct_conn_angleType)
 -- Data items in the PDBX_STRUCT_CONN_ANGLE category record the angles in connections between portions of the structure. Example 1 PDB entry 2v8d <PDBx:pdbx_struct_conn_angleCategory> <PDBx:pdbx_struct_conn_angle id="1"> <PDBx:ptnr1_PDB_ins_code xsi:nil="true" /> <PDBx:ptnr1_label_asym_id>A</PDBx:ptnr1_label_asym_id> <PDBx:ptnr1_label_atom_id>OD</PDBx:ptnr1_label_atom_id> <PDBx:ptnr1_label_comp_id>ASP</PDBx:ptnr1_label_comp_id> <PDBx:ptnr1_label_seq_id>125</PDBx:ptnr1_label_seq_id> <PDBx:ptnr2_PDB_ins_code>ZN</PDBx:ptnr2_PDB_ins_code> <PDBx:ptnr2_label_asym_id>A</PDBx:ptnr2_label_asym_id> <PDBx:ptnr2_label_atom_id xsi:nil="true" /> <PDBx:ptnr2_label_comp_id>ZN</PDBx:ptnr2_label_comp_id> <PDBx:ptnr2_label_seq_id>500</PDBx:ptnr2_label_seq_id> <PDBx:ptnr3_PDB_ins_code>NE</PDBx:ptnr3_PDB_ins_code> <PDBx:ptnr3_label_asym_id>A</PDBx:ptnr3_label_asym_id> <PDBx:ptnr3_label_atom_id xsi:nil="true" /> <PDBx:ptnr3_label_comp_id>HIS</PDBx:ptnr3_label_comp_id> <PDBx:ptnr3_label_seq_id>114</PDBx:ptnr3_label_seq_id> <PDBx:value>104.7</PDBx:value> </PDBx:pdbx_struct_conn_angle> <PDBx:pdbx_struct_conn_angle id="2"> <PDBx:ptnr1_PDB_ins_code xsi:nil="true" /> <PDBx:ptnr1_label_asym_id>A</PDBx:ptnr1_label_asym_id> <PDBx:ptnr1_label_atom_id>OD</PDBx:ptnr1_label_atom_id> <PDBx:ptnr1_label_comp_id>ASP</PDBx:ptnr1_label_comp_id> <PDBx:ptnr1_label_seq_id>125</PDBx:ptnr1_label_seq_id> <PDBx:ptnr2_PDB_ins_code>ZN</PDBx:ptnr2_PDB_ins_code> <PDBx:ptnr2_label_asym_id>A</PDBx:ptnr2_label_asym_id> <PDBx:ptnr2_label_atom_id xsi:nil="true" /> <PDBx:ptnr2_label_comp_id>ZN</PDBx:ptnr2_label_comp_id> <PDBx:ptnr2_label_seq_id>500</PDBx:ptnr2_label_seq_id> <PDBx:ptnr3_PDB_ins_code>NE</PDBx:ptnr3_PDB_ins_code> <PDBx:ptnr3_label_asym_id>A</PDBx:ptnr3_label_asym_id> <PDBx:ptnr3_label_atom_id xsi:nil="true" /> <PDBx:ptnr3_label_comp_id>HIS</PDBx:ptnr3_label_comp_id> <PDBx:ptnr3_label_seq_id>226</PDBx:ptnr3_label_seq_id> <PDBx:value>91.3</PDBx:value> </PDBx:pdbx_struct_conn_angle> <PDBx:pdbx_struct_conn_angle id="3"> <PDBx:ptnr1_PDB_ins_code xsi:nil="true" /> <PDBx:ptnr1_label_asym_id>A</PDBx:ptnr1_label_asym_id> <PDBx:ptnr1_label_atom_id>NE</PDBx:ptnr1_label_atom_id> <PDBx:ptnr1_label_comp_id>HIS</PDBx:ptnr1_label_comp_id> <PDBx:ptnr1_label_seq_id>114</PDBx:ptnr1_label_seq_id> <PDBx:ptnr2_PDB_ins_code>ZN</PDBx:ptnr2_PDB_ins_code> <PDBx:ptnr2_label_asym_id>A</PDBx:ptnr2_label_asym_id> <PDBx:ptnr2_label_atom_id xsi:nil="true" /> <PDBx:ptnr2_label_comp_id>ZN</PDBx:ptnr2_label_comp_id> <PDBx:ptnr2_label_seq_id>500</PDBx:ptnr2_label_seq_id> <PDBx:ptnr3_PDB_ins_code>NE</PDBx:ptnr3_PDB_ins_code> <PDBx:ptnr3_label_asym_id>A</PDBx:ptnr3_label_asym_id> <PDBx:ptnr3_label_atom_id xsi:nil="true" /> <PDBx:ptnr3_label_comp_id>HIS</PDBx:ptnr3_label_comp_id> <PDBx:ptnr3_label_seq_id>226</PDBx:ptnr3_label_seq_id> <PDBx:value>120.6</PDBx:value> </PDBx:pdbx_struct_conn_angle> <PDBx:pdbx_struct_conn_angle id="4"> <PDBx:ptnr1_PDB_ins_code xsi:nil="true" /> <PDBx:ptnr1_label_asym_id>A</PDBx:ptnr1_label_asym_id> <PDBx:ptnr1_label_atom_id>OD</PDBx:ptnr1_label_atom_id> <PDBx:ptnr1_label_comp_id>ASP</PDBx:ptnr1_label_comp_id> <PDBx:ptnr1_label_seq_id>125</PDBx:ptnr1_label_seq_id> <PDBx:ptnr2_PDB_ins_code>ZN</PDBx:ptnr2_PDB_ins_code> <PDBx:ptnr2_label_asym_id>A</PDBx:ptnr2_label_asym_id> <PDBx:ptnr2_label_atom_id xsi:nil="true" /> <PDBx:ptnr2_label_comp_id>ZN</PDBx:ptnr2_label_comp_id> <PDBx:ptnr2_label_seq_id>500</PDBx:ptnr2_label_seq_id> <PDBx:ptnr3_PDB_ins_code>O</PDBx:ptnr3_PDB_ins_code> <PDBx:ptnr3_label_asym_id>A</PDBx:ptnr3_label_asym_id> <PDBx:ptnr3_label_atom_id xsi:nil="true" /> <PDBx:ptnr3_label_comp_id>HOH</PDBx:ptnr3_label_comp_id> <PDBx:ptnr3_label_seq_id>2041</PDBx:ptnr3_label_seq_id> <PDBx:value>172.5</PDBx:value> </PDBx:pdbx_struct_conn_angle> <PDBx:pdbx_struct_conn_angle id="5"> <PDBx:ptnr1_PDB_ins_code xsi:nil="true" /> <PDBx:ptnr1_label_asym_id>A</PDBx:ptnr1_label_asym_id> <PDBx:ptnr1_label_atom_id>NE</PDBx:ptnr1_label_atom_id> <PDBx:ptnr1_label_comp_id>HIS</PDBx:ptnr1_label_comp_id> <PDBx:ptnr1_label_seq_id>114</PDBx:ptnr1_label_seq_id> <PDBx:ptnr2_PDB_ins_code>ZN</PDBx:ptnr2_PDB_ins_code> <PDBx:ptnr2_label_asym_id>A</PDBx:ptnr2_label_asym_id> <PDBx:ptnr2_label_atom_id xsi:nil="true" /> <PDBx:ptnr2_label_comp_id>ZN</PDBx:ptnr2_label_comp_id> <PDBx:ptnr2_label_seq_id>500</PDBx:ptnr2_label_seq_id> <PDBx:ptnr3_PDB_ins_code>O</PDBx:ptnr3_PDB_ins_code> <PDBx:ptnr3_label_asym_id>A</PDBx:ptnr3_label_asym_id> <PDBx:ptnr3_label_atom_id xsi:nil="true" /> <PDBx:ptnr3_label_comp_id>HOH</PDBx:ptnr3_label_comp_id> <PDBx:ptnr3_label_seq_id>2041</PDBx:ptnr3_label_seq_id> <PDBx:value>80.0</PDBx:value> </PDBx:pdbx_struct_conn_angle> <PDBx:pdbx_struct_conn_angle id="6"> <PDBx:ptnr1_PDB_ins_code xsi:nil="true" /> <PDBx:ptnr1_label_asym_id>A</PDBx:ptnr1_label_asym_id> <PDBx:ptnr1_label_atom_id>NE</PDBx:ptnr1_label_atom_id> <PDBx:ptnr1_label_comp_id>HIS</PDBx:ptnr1_label_comp_id> <PDBx:ptnr1_label_seq_id>226</PDBx:ptnr1_label_seq_id> <PDBx:ptnr2_PDB_ins_code>ZN</PDBx:ptnr2_PDB_ins_code> <PDBx:ptnr2_label_asym_id>A</PDBx:ptnr2_label_asym_id> <PDBx:ptnr2_label_atom_id xsi:nil="true" /> <PDBx:ptnr2_label_comp_id>ZN</PDBx:ptnr2_label_comp_id> <PDBx:ptnr2_label_seq_id>500</PDBx:ptnr2_label_seq_id> <PDBx:ptnr3_PDB_ins_code>O</PDBx:ptnr3_PDB_ins_code> <PDBx:ptnr3_label_asym_id>A</PDBx:ptnr3_label_asym_id> <PDBx:ptnr3_label_atom_id xsi:nil="true" /> <PDBx:ptnr3_label_comp_id>HOH</PDBx:ptnr3_label_comp_id> <PDBx:ptnr3_label_seq_id>2041</PDBx:ptnr3_label_seq_id> <PDBx:value>91.3</PDBx:value> </PDBx:pdbx_struct_conn_angle> <PDBx:pdbx_struct_conn_angle id="7"> <PDBx:ptnr1_PDB_ins_code xsi:nil="true" /> <PDBx:ptnr1_label_asym_id>A</PDBx:ptnr1_label_asym_id> <PDBx:ptnr1_label_atom_id>OD</PDBx:ptnr1_label_atom_id> <PDBx:ptnr1_label_comp_id>ASP</PDBx:ptnr1_label_comp_id> <PDBx:ptnr1_label_seq_id>125</PDBx:ptnr1_label_seq_id> <PDBx:ptnr2_PDB_ins_code>ZN</PDBx:ptnr2_PDB_ins_code> <PDBx:ptnr2_label_asym_id>A</PDBx:ptnr2_label_asym_id> <PDBx:ptnr2_label_atom_id xsi:nil="true" /> <PDBx:ptnr2_label_comp_id>ZN</PDBx:ptnr2_label_comp_id> <PDBx:ptnr2_label_seq_id>500</PDBx:ptnr2_label_seq_id> <PDBx:ptnr3_PDB_ins_code>O</PDBx:ptnr3_PDB_ins_code> <PDBx:ptnr3_label_asym_id>A</PDBx:ptnr3_label_asym_id> <PDBx:ptnr3_label_atom_id xsi:nil="true" /> <PDBx:ptnr3_label_comp_id>HOH</PDBx:ptnr3_label_comp_id> <PDBx:ptnr3_label_seq_id>3001</PDBx:ptnr3_label_seq_id> <PDBx:value>76.9</PDBx:value> </PDBx:pdbx_struct_conn_angle> <PDBx:pdbx_struct_conn_angle id="8"> <PDBx:ptnr1_PDB_ins_code xsi:nil="true" /> <PDBx:ptnr1_label_asym_id>A</PDBx:ptnr1_label_asym_id> <PDBx:ptnr1_label_atom_id>NE</PDBx:ptnr1_label_atom_id> <PDBx:ptnr1_label_comp_id>HIS</PDBx:ptnr1_label_comp_id> <PDBx:ptnr1_label_seq_id>114</PDBx:ptnr1_label_seq_id> <PDBx:ptnr2_PDB_ins_code>ZN</PDBx:ptnr2_PDB_ins_code> <PDBx:ptnr2_label_asym_id>A</PDBx:ptnr2_label_asym_id> <PDBx:ptnr2_label_atom_id xsi:nil="true" /> <PDBx:ptnr2_label_comp_id>ZN</PDBx:ptnr2_label_comp_id> <PDBx:ptnr2_label_seq_id>500</PDBx:ptnr2_label_seq_id> <PDBx:ptnr3_PDB_ins_code>O</PDBx:ptnr3_PDB_ins_code> <PDBx:ptnr3_label_asym_id>A</PDBx:ptnr3_label_asym_id> <PDBx:ptnr3_label_atom_id xsi:nil="true" /> <PDBx:ptnr3_label_comp_id>HOH</PDBx:ptnr3_label_comp_id> <PDBx:ptnr3_label_seq_id>3001</PDBx:ptnr3_label_seq_id> <PDBx:value>112.3</PDBx:value> </PDBx:pdbx_struct_conn_angle> <PDBx:pdbx_struct_conn_angle id="9"> <PDBx:ptnr1_PDB_ins_code xsi:nil="true" /> <PDBx:ptnr1_label_asym_id>A</PDBx:ptnr1_label_asym_id> <PDBx:ptnr1_label_atom_id>NE</PDBx:ptnr1_label_atom_id> <PDBx:ptnr1_label_comp_id>HIS</PDBx:ptnr1_label_comp_id> <PDBx:ptnr1_label_seq_id>226</PDBx:ptnr1_label_seq_id> <PDBx:ptnr2_PDB_ins_code>ZN</PDBx:ptnr2_PDB_ins_code> <PDBx:ptnr2_label_asym_id>A</PDBx:ptnr2_label_asym_id> <PDBx:ptnr2_label_atom_id xsi:nil="true" /> <PDBx:ptnr2_label_comp_id>ZN</PDBx:ptnr2_label_comp_id> <PDBx:ptnr2_label_seq_id>500</PDBx:ptnr2_label_seq_id> <PDBx:ptnr3_PDB_ins_code>O</PDBx:ptnr3_PDB_ins_code> <PDBx:ptnr3_label_asym_id>A</PDBx:ptnr3_label_asym_id> <PDBx:ptnr3_label_atom_id xsi:nil="true" /> <PDBx:ptnr3_label_comp_id>HOH</PDBx:ptnr3_label_comp_id> <PDBx:ptnr3_label_seq_id>3001</PDBx:ptnr3_label_seq_id> <PDBx:value>127.0</PDBx:value> </PDBx:pdbx_struct_conn_angle> <PDBx:pdbx_struct_conn_angle id="10"> <PDBx:ptnr1_PDB_ins_code xsi:nil="true" /> <PDBx:ptnr1_label_asym_id>A</PDBx:ptnr1_label_asym_id> <PDBx:ptnr1_label_atom_id>O</PDBx:ptnr1_label_atom_id> <PDBx:ptnr1_label_comp_id>HOH</PDBx:ptnr1_label_comp_id> <PDBx:ptnr1_label_seq_id>2041</PDBx:ptnr1_label_seq_id> <PDBx:ptnr2_PDB_ins_code>ZN</PDBx:ptnr2_PDB_ins_code> <PDBx:ptnr2_label_asym_id>A</PDBx:ptnr2_label_asym_id> <PDBx:ptnr2_label_atom_id xsi:nil="true" /> <PDBx:ptnr2_label_comp_id>ZN</PDBx:ptnr2_label_comp_id> <PDBx:ptnr2_label_seq_id>500</PDBx:ptnr2_label_seq_id> <PDBx:ptnr3_PDB_ins_code>O</PDBx:ptnr3_PDB_ins_code> <PDBx:ptnr3_label_asym_id>A</PDBx:ptnr3_label_asym_id> <PDBx:ptnr3_label_atom_id xsi:nil="true" /> <PDBx:ptnr3_label_comp_id>HOH</PDBx:ptnr3_label_comp_id> <PDBx:ptnr3_label_seq_id>3001</PDBx:ptnr3_label_seq_id> <PDBx:value>95.9</PDBx:value> </PDBx:pdbx_struct_conn_angle> <PDBx:pdbx_struct_conn_angle id="11"> <PDBx:ptnr1_PDB_ins_code xsi:nil="true" /> <PDBx:ptnr1_label_asym_id>A</PDBx:ptnr1_label_asym_id> <PDBx:ptnr1_label_atom_id>OD</PDBx:ptnr1_label_atom_id> <PDBx:ptnr1_label_comp_id>ASP</PDBx:ptnr1_label_comp_id> <PDBx:ptnr1_label_seq_id>125</PDBx:ptnr1_label_seq_id> <PDBx:ptnr2_PDB_ins_code>ZN</PDBx:ptnr2_PDB_ins_code> <PDBx:ptnr2_label_asym_id>A</PDBx:ptnr2_label_asym_id> <PDBx:ptnr2_label_atom_id xsi:nil="true" /> <PDBx:ptnr2_label_comp_id>ZN</PDBx:ptnr2_label_comp_id> <PDBx:ptnr2_label_seq_id>501</PDBx:ptnr2_label_seq_id> <PDBx:ptnr3_PDB_ins_code>OE</PDBx:ptnr3_PDB_ins_code> <PDBx:ptnr3_label_asym_id>A</PDBx:ptnr3_label_asym_id> <PDBx:ptnr3_label_atom_id xsi:nil="true" /> <PDBx:ptnr3_label_comp_id>GLU</PDBx:ptnr3_label_comp_id> <PDBx:ptnr3_label_seq_id>160</PDBx:ptnr3_label_seq_id> <PDBx:value>89.8</PDBx:value> </PDBx:pdbx_struct_conn_angle> <PDBx:pdbx_struct_conn_angle id="12"> <PDBx:ptnr1_PDB_ins_code xsi:nil="true" /> <PDBx:ptnr1_label_asym_id>A</PDBx:ptnr1_label_asym_id> <PDBx:ptnr1_label_atom_id>OD</PDBx:ptnr1_label_atom_id> <PDBx:ptnr1_label_comp_id>ASP</PDBx:ptnr1_label_comp_id> <PDBx:ptnr1_label_seq_id>125</PDBx:ptnr1_label_seq_id> <PDBx:ptnr2_PDB_ins_code>ZN</PDBx:ptnr2_PDB_ins_code> <PDBx:ptnr2_label_asym_id>A</PDBx:ptnr2_label_asym_id> <PDBx:ptnr2_label_atom_id xsi:nil="true" /> <PDBx:ptnr2_label_comp_id>ZN</PDBx:ptnr2_label_comp_id> <PDBx:ptnr2_label_seq_id>501</PDBx:ptnr2_label_seq_id> <PDBx:ptnr3_PDB_ins_code>O</PDBx:ptnr3_PDB_ins_code> <PDBx:ptnr3_label_asym_id>A</PDBx:ptnr3_label_asym_id> <PDBx:ptnr3_label_atom_id xsi:nil="true" /> <PDBx:ptnr3_label_comp_id>HOH</PDBx:ptnr3_label_comp_id> <PDBx:ptnr3_label_seq_id>3001</PDBx:ptnr3_label_seq_id> <PDBx:value>95.5</PDBx:value> </PDBx:pdbx_struct_conn_angle> <PDBx:pdbx_struct_conn_angle id="13"> <PDBx:ptnr1_PDB_ins_code xsi:nil="true" /> <PDBx:ptnr1_label_asym_id>A</PDBx:ptnr1_label_asym_id> <PDBx:ptnr1_label_atom_id>OE</PDBx:ptnr1_label_atom_id> <PDBx:ptnr1_label_comp_id>GLU</PDBx:ptnr1_label_comp_id> <PDBx:ptnr1_label_seq_id>160</PDBx:ptnr1_label_seq_id> <PDBx:ptnr2_PDB_ins_code>ZN</PDBx:ptnr2_PDB_ins_code> <PDBx:ptnr2_label_asym_id>A</PDBx:ptnr2_label_asym_id> <PDBx:ptnr2_label_atom_id xsi:nil="true" /> <PDBx:ptnr2_label_comp_id>ZN</PDBx:ptnr2_label_comp_id> <PDBx:ptnr2_label_seq_id>501</PDBx:ptnr2_label_seq_id> <PDBx:ptnr3_PDB_ins_code>O</PDBx:ptnr3_PDB_ins_code> <PDBx:ptnr3_label_asym_id>A</PDBx:ptnr3_label_asym_id> <PDBx:ptnr3_label_atom_id xsi:nil="true" /> <PDBx:ptnr3_label_comp_id>HOH</PDBx:ptnr3_label_comp_id> <PDBx:ptnr3_label_seq_id>3001</PDBx:ptnr3_label_seq_id> <PDBx:value>109.4</PDBx:value> </PDBx:pdbx_struct_conn_angle> <PDBx:pdbx_struct_conn_angle id="14"> <PDBx:ptnr1_PDB_ins_code xsi:nil="true" /> <PDBx:ptnr1_label_asym_id>A</PDBx:ptnr1_label_asym_id> <PDBx:ptnr1_label_atom_id>OD</PDBx:ptnr1_label_atom_id> <PDBx:ptnr1_label_comp_id>ASP</PDBx:ptnr1_label_comp_id> <PDBx:ptnr1_label_seq_id>125</PDBx:ptnr1_label_seq_id> <PDBx:ptnr2_PDB_ins_code>ZN</PDBx:ptnr2_PDB_ins_code> <PDBx:ptnr2_label_asym_id>A</PDBx:ptnr2_label_asym_id> <PDBx:ptnr2_label_atom_id xsi:nil="true" /> <PDBx:ptnr2_label_comp_id>ZN</PDBx:ptnr2_label_comp_id> <PDBx:ptnr2_label_seq_id>501</PDBx:ptnr2_label_seq_id> <PDBx:ptnr3_PDB_ins_code>NE</PDBx:ptnr3_PDB_ins_code> <PDBx:ptnr3_label_asym_id>A</PDBx:ptnr3_label_asym_id> <PDBx:ptnr3_label_atom_id xsi:nil="true" /> <PDBx:ptnr3_label_comp_id>HIS</PDBx:ptnr3_label_comp_id> <PDBx:ptnr3_label_seq_id>421</PDBx:ptnr3_label_seq_id> <PDBx:value>90.4</PDBx:value> </PDBx:pdbx_struct_conn_angle> <PDBx:pdbx_struct_conn_angle id="15"> <PDBx:ptnr1_PDB_ins_code xsi:nil="true" /> <PDBx:ptnr1_label_asym_id>A</PDBx:ptnr1_label_asym_id> <PDBx:ptnr1_label_atom_id>OE</PDBx:ptnr1_label_atom_id> <PDBx:ptnr1_label_comp_id>GLU</PDBx:ptnr1_label_comp_id> <PDBx:ptnr1_label_seq_id>160</PDBx:ptnr1_label_seq_id> <PDBx:ptnr2_PDB_ins_code>ZN</PDBx:ptnr2_PDB_ins_code> <PDBx:ptnr2_label_asym_id>A</PDBx:ptnr2_label_asym_id> <PDBx:ptnr2_label_atom_id xsi:nil="true" /> <PDBx:ptnr2_label_comp_id>ZN</PDBx:ptnr2_label_comp_id> <PDBx:ptnr2_label_seq_id>501</PDBx:ptnr2_label_seq_id> <PDBx:ptnr3_PDB_ins_code>NE</PDBx:ptnr3_PDB_ins_code> <PDBx:ptnr3_label_asym_id>A</PDBx:ptnr3_label_asym_id> <PDBx:ptnr3_label_atom_id xsi:nil="true" /> <PDBx:ptnr3_label_comp_id>HIS</PDBx:ptnr3_label_comp_id> <PDBx:ptnr3_label_seq_id>421</PDBx:ptnr3_label_seq_id> <PDBx:value>111.3</PDBx:value> </PDBx:pdbx_struct_conn_angle> <PDBx:pdbx_struct_conn_angle id="16"> <PDBx:ptnr1_PDB_ins_code xsi:nil="true" /> <PDBx:ptnr1_label_asym_id>A</PDBx:ptnr1_label_asym_id> <PDBx:ptnr1_label_atom_id>O</PDBx:ptnr1_label_atom_id> <PDBx:ptnr1_label_comp_id>HOH</PDBx:ptnr1_label_comp_id> <PDBx:ptnr1_label_seq_id>3001</PDBx:ptnr1_label_seq_id> <PDBx:ptnr2_PDB_ins_code>ZN</PDBx:ptnr2_PDB_ins_code> <PDBx:ptnr2_label_asym_id>A</PDBx:ptnr2_label_asym_id> <PDBx:ptnr2_label_atom_id xsi:nil="true" /> <PDBx:ptnr2_label_comp_id>ZN</PDBx:ptnr2_label_comp_id> <PDBx:ptnr2_label_seq_id>501</PDBx:ptnr2_label_seq_id> <PDBx:ptnr3_PDB_ins_code>NE</PDBx:ptnr3_PDB_ins_code> <PDBx:ptnr3_label_asym_id>A</PDBx:ptnr3_label_asym_id> <PDBx:ptnr3_label_atom_id xsi:nil="true" /> <PDBx:ptnr3_label_comp_id>HIS</PDBx:ptnr3_label_comp_id> <PDBx:ptnr3_label_seq_id>421</PDBx:ptnr3_label_seq_id> <PDBx:value>138.9</PDBx:value> </PDBx:pdbx_struct_conn_angle> <PDBx:pdbx_struct_conn_angle id="17"> <PDBx:ptnr1_PDB_ins_code xsi:nil="true" /> <PDBx:ptnr1_label_asym_id>B</PDBx:ptnr1_label_asym_id> <PDBx:ptnr1_label_atom_id>O</PDBx:ptnr1_label_atom_id> <PDBx:ptnr1_label_comp_id>HOH</PDBx:ptnr1_label_comp_id> <PDBx:ptnr1_label_seq_id>3001</PDBx:ptnr1_label_seq_id> <PDBx:ptnr2_PDB_ins_code>ZN</PDBx:ptnr2_PDB_ins_code> <PDBx:ptnr2_label_asym_id>B</PDBx:ptnr2_label_asym_id> <PDBx:ptnr2_label_atom_id xsi:nil="true" /> <PDBx:ptnr2_label_comp_id>ZN</PDBx:ptnr2_label_comp_id> <PDBx:ptnr2_label_seq_id>500</PDBx:ptnr2_label_seq_id> <PDBx:ptnr3_PDB_ins_code>NE</PDBx:ptnr3_PDB_ins_code> <PDBx:ptnr3_label_asym_id>B</PDBx:ptnr3_label_asym_id> <PDBx:ptnr3_label_atom_id xsi:nil="true" /> <PDBx:ptnr3_label_comp_id>HIS</PDBx:ptnr3_label_comp_id> <PDBx:ptnr3_label_seq_id>114</PDBx:ptnr3_label_seq_id> <PDBx:value>106.4</PDBx:value> </PDBx:pdbx_struct_conn_angle> <PDBx:pdbx_struct_conn_angle id="18"> <PDBx:ptnr1_PDB_ins_code xsi:nil="true" /> <PDBx:ptnr1_label_asym_id>B</PDBx:ptnr1_label_asym_id> <PDBx:ptnr1_label_atom_id>O</PDBx:ptnr1_label_atom_id> <PDBx:ptnr1_label_comp_id>HOH</PDBx:ptnr1_label_comp_id> <PDBx:ptnr1_label_seq_id>3001</PDBx:ptnr1_label_seq_id> <PDBx:ptnr2_PDB_ins_code>ZN</PDBx:ptnr2_PDB_ins_code> <PDBx:ptnr2_label_asym_id>B</PDBx:ptnr2_label_asym_id> <PDBx:ptnr2_label_atom_id xsi:nil="true" /> <PDBx:ptnr2_label_comp_id>ZN</PDBx:ptnr2_label_comp_id> <PDBx:ptnr2_label_seq_id>500</PDBx:ptnr2_label_seq_id> <PDBx:ptnr3_PDB_ins_code>OD</PDBx:ptnr3_PDB_ins_code> <PDBx:ptnr3_label_asym_id>B</PDBx:ptnr3_label_asym_id> <PDBx:ptnr3_label_atom_id xsi:nil="true" /> <PDBx:ptnr3_label_comp_id>ASP</PDBx:ptnr3_label_comp_id> <PDBx:ptnr3_label_seq_id>125</PDBx:ptnr3_label_seq_id> <PDBx:value>100.5</PDBx:value> </PDBx:pdbx_struct_conn_angle> <PDBx:pdbx_struct_conn_angle id="19"> <PDBx:ptnr1_PDB_ins_code xsi:nil="true" /> <PDBx:ptnr1_label_asym_id>B</PDBx:ptnr1_label_asym_id> <PDBx:ptnr1_label_atom_id>NE</PDBx:ptnr1_label_atom_id> <PDBx:ptnr1_label_comp_id>HIS</PDBx:ptnr1_label_comp_id> <PDBx:ptnr1_label_seq_id>114</PDBx:ptnr1_label_seq_id> <PDBx:ptnr2_PDB_ins_code>ZN</PDBx:ptnr2_PDB_ins_code> <PDBx:ptnr2_label_asym_id>B</PDBx:ptnr2_label_asym_id> <PDBx:ptnr2_label_atom_id xsi:nil="true" /> <PDBx:ptnr2_label_comp_id>ZN</PDBx:ptnr2_label_comp_id> <PDBx:ptnr2_label_seq_id>500</PDBx:ptnr2_label_seq_id> <PDBx:ptnr3_PDB_ins_code>OD</PDBx:ptnr3_PDB_ins_code> <PDBx:ptnr3_label_asym_id>B</PDBx:ptnr3_label_asym_id> <PDBx:ptnr3_label_atom_id xsi:nil="true" /> <PDBx:ptnr3_label_comp_id>ASP</PDBx:ptnr3_label_comp_id> <PDBx:ptnr3_label_seq_id>125</PDBx:ptnr3_label_seq_id> <PDBx:value>115.6</PDBx:value> </PDBx:pdbx_struct_conn_angle> <PDBx:pdbx_struct_conn_angle id="20"> <PDBx:ptnr1_PDB_ins_code xsi:nil="true" /> <PDBx:ptnr1_label_asym_id>B</PDBx:ptnr1_label_asym_id> <PDBx:ptnr1_label_atom_id>O</PDBx:ptnr1_label_atom_id> <PDBx:ptnr1_label_comp_id>HOH</PDBx:ptnr1_label_comp_id> <PDBx:ptnr1_label_seq_id>3001</PDBx:ptnr1_label_seq_id> <PDBx:ptnr2_PDB_ins_code>ZN</PDBx:ptnr2_PDB_ins_code> <PDBx:ptnr2_label_asym_id>B</PDBx:ptnr2_label_asym_id> <PDBx:ptnr2_label_atom_id xsi:nil="true" /> <PDBx:ptnr2_label_comp_id>ZN</PDBx:ptnr2_label_comp_id> <PDBx:ptnr2_label_seq_id>500</PDBx:ptnr2_label_seq_id> <PDBx:ptnr3_PDB_ins_code>NE</PDBx:ptnr3_PDB_ins_code> <PDBx:ptnr3_label_asym_id>B</PDBx:ptnr3_label_asym_id> <PDBx:ptnr3_label_atom_id xsi:nil="true" /> <PDBx:ptnr3_label_comp_id>HIS</PDBx:ptnr3_label_comp_id> <PDBx:ptnr3_label_seq_id>226</PDBx:ptnr3_label_seq_id> <PDBx:value>123.2</PDBx:value> </PDBx:pdbx_struct_conn_angle> <PDBx:pdbx_struct_conn_angle id="21"> <PDBx:ptnr1_PDB_ins_code xsi:nil="true" /> <PDBx:ptnr1_label_asym_id>B</PDBx:ptnr1_label_asym_id> <PDBx:ptnr1_label_atom_id>NE</PDBx:ptnr1_label_atom_id> <PDBx:ptnr1_label_comp_id>HIS</PDBx:ptnr1_label_comp_id> <PDBx:ptnr1_label_seq_id>114</PDBx:ptnr1_label_seq_id> <PDBx:ptnr2_PDB_ins_code>ZN</PDBx:ptnr2_PDB_ins_code> <PDBx:ptnr2_label_asym_id>B</PDBx:ptnr2_label_asym_id> <PDBx:ptnr2_label_atom_id xsi:nil="true" /> <PDBx:ptnr2_label_comp_id>ZN</PDBx:ptnr2_label_comp_id> <PDBx:ptnr2_label_seq_id>500</PDBx:ptnr2_label_seq_id> <PDBx:ptnr3_PDB_ins_code>NE</PDBx:ptnr3_PDB_ins_code> <PDBx:ptnr3_label_asym_id>B</PDBx:ptnr3_label_asym_id> <PDBx:ptnr3_label_atom_id xsi:nil="true" /> <PDBx:ptnr3_label_comp_id>HIS</PDBx:ptnr3_label_comp_id> <PDBx:ptnr3_label_seq_id>226</PDBx:ptnr3_label_seq_id> <PDBx:value>123.2</PDBx:value> </PDBx:pdbx_struct_conn_angle> <PDBx:pdbx_struct_conn_angle id="22"> <PDBx:ptnr1_PDB_ins_code xsi:nil="true" /> <PDBx:ptnr1_label_asym_id>B</PDBx:ptnr1_label_asym_id> <PDBx:ptnr1_label_atom_id>OD</PDBx:ptnr1_label_atom_id> <PDBx:ptnr1_label_comp_id>ASP</PDBx:ptnr1_label_comp_id> <PDBx:ptnr1_label_seq_id>125</PDBx:ptnr1_label_seq_id> <PDBx:ptnr2_PDB_ins_code>ZN</PDBx:ptnr2_PDB_ins_code> <PDBx:ptnr2_label_asym_id>B</PDBx:ptnr2_label_asym_id> <PDBx:ptnr2_label_atom_id xsi:nil="true" /> <PDBx:ptnr2_label_comp_id>ZN</PDBx:ptnr2_label_comp_id> <PDBx:ptnr2_label_seq_id>500</PDBx:ptnr2_label_seq_id> <PDBx:ptnr3_PDB_ins_code>NE</PDBx:ptnr3_PDB_ins_code> <PDBx:ptnr3_label_asym_id>B</PDBx:ptnr3_label_asym_id> <PDBx:ptnr3_label_atom_id xsi:nil="true" /> <PDBx:ptnr3_label_comp_id>HIS</PDBx:ptnr3_label_comp_id> <PDBx:ptnr3_label_seq_id>226</PDBx:ptnr3_label_seq_id> <PDBx:value>82.7</PDBx:value> </PDBx:pdbx_struct_conn_angle> <PDBx:pdbx_struct_conn_angle id="23"> <PDBx:ptnr1_PDB_ins_code xsi:nil="true" /> <PDBx:ptnr1_label_asym_id>B</PDBx:ptnr1_label_asym_id> <PDBx:ptnr1_label_atom_id>OE</PDBx:ptnr1_label_atom_id> <PDBx:ptnr1_label_comp_id>GLU</PDBx:ptnr1_label_comp_id> <PDBx:ptnr1_label_seq_id>160</PDBx:ptnr1_label_seq_id> <PDBx:ptnr2_PDB_ins_code>ZN</PDBx:ptnr2_PDB_ins_code> <PDBx:ptnr2_label_asym_id>B</PDBx:ptnr2_label_asym_id> <PDBx:ptnr2_label_atom_id xsi:nil="true" /> <PDBx:ptnr2_label_comp_id>ZN</PDBx:ptnr2_label_comp_id> <PDBx:ptnr2_label_seq_id>501</PDBx:ptnr2_label_seq_id> <PDBx:ptnr3_PDB_ins_code>OD</PDBx:ptnr3_PDB_ins_code> <PDBx:ptnr3_label_asym_id>B</PDBx:ptnr3_label_asym_id> <PDBx:ptnr3_label_atom_id xsi:nil="true" /> <PDBx:ptnr3_label_comp_id>ASP</PDBx:ptnr3_label_comp_id> <PDBx:ptnr3_label_seq_id>125</PDBx:ptnr3_label_seq_id> <PDBx:value>148.6</PDBx:value> </PDBx:pdbx_struct_conn_angle> </PDBx:pdbx_struct_conn_angleCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_struct_conn_angle (
@@ -12531,7 +12531,7 @@ CREATE TABLE pdbx_struct_conn_angle (
 --
 -- (quoted from pdbx_struct_group_component_rangeType)
 -- Data items in the PDBX_STRUCT_GROUP_COMPONENT_RANGE category define a structural group as a continuous span chemical components. Example 1 - <PDBx:pdbx_struct_group_component_rangeCategory> <PDBx:pdbx_struct_group_component_range ordinal="1"> <PDBx:PDB_model_num>1</PDBx:PDB_model_num> <PDBx:beg_PDB_ins_code xsi:nil="true" /> <PDBx:beg_auth_asym_id>A</PDBx:beg_auth_asym_id> <PDBx:beg_auth_comp_id>MLU</PDBx:beg_auth_comp_id> <PDBx:beg_auth_seq_id>1</PDBx:beg_auth_seq_id> <PDBx:end_PDB_ins_code xsi:nil="true" /> <PDBx:end_auth_asym_id>A</PDBx:end_auth_asym_id> <PDBx:end_auth_comp_id>RAM</PDBx:end_auth_comp_id> <PDBx:end_auth_seq_id>10</PDBx:end_auth_seq_id> <PDBx:struct_group_id>1</PDBx:struct_group_id> </PDBx:pdbx_struct_group_component_range> </PDBx:pdbx_struct_group_component_rangeCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_struct_group_component_range (
@@ -12562,7 +12562,7 @@ CREATE TABLE pdbx_struct_group_component_range (
 --
 -- (quoted from pdbx_struct_group_componentsType)
 -- Data items in the PDBX_STRUCT_GROUP_COMPONENTS category list component-level group assignments within the entry. Groups are defined and described in category PDBX_STRUCT_GROUP_LIST. Example 1 <PDBx:pdbx_struct_group_componentsCategory> <PDBx:pdbx_struct_group_components ordinal="1"> <PDBx:PDB_ins_code xsi:nil="true" /> <PDBx:PDB_model_num>1</PDBx:PDB_model_num> <PDBx:auth_asym_id>A</PDBx:auth_asym_id> <PDBx:auth_comp_id>MLU</PDBx:auth_comp_id> <PDBx:auth_seq_id>1</PDBx:auth_seq_id> <PDBx:struct_group_id>1</PDBx:struct_group_id> </PDBx:pdbx_struct_group_components> <PDBx:pdbx_struct_group_components ordinal="2"> <PDBx:PDB_ins_code xsi:nil="true" /> <PDBx:PDB_model_num>1</PDBx:PDB_model_num> <PDBx:auth_asym_id>A</PDBx:auth_asym_id> <PDBx:auth_comp_id>OMZ</PDBx:auth_comp_id> <PDBx:auth_seq_id>2</PDBx:auth_seq_id> <PDBx:struct_group_id>1</PDBx:struct_group_id> </PDBx:pdbx_struct_group_components> <PDBx:pdbx_struct_group_components ordinal="3"> <PDBx:PDB_ins_code xsi:nil="true" /> <PDBx:PDB_model_num>1</PDBx:PDB_model_num> <PDBx:auth_asym_id>A</PDBx:auth_asym_id> <PDBx:auth_comp_id>ASN</PDBx:auth_comp_id> <PDBx:auth_seq_id>3</PDBx:auth_seq_id> <PDBx:struct_group_id>1</PDBx:struct_group_id> </PDBx:pdbx_struct_group_components> <PDBx:pdbx_struct_group_components ordinal="4"> <PDBx:PDB_ins_code xsi:nil="true" /> <PDBx:PDB_model_num>1</PDBx:PDB_model_num> <PDBx:auth_asym_id>A</PDBx:auth_asym_id> <PDBx:auth_comp_id>GHP</PDBx:auth_comp_id> <PDBx:auth_seq_id>4</PDBx:auth_seq_id> <PDBx:struct_group_id>1</PDBx:struct_group_id> </PDBx:pdbx_struct_group_components> <PDBx:pdbx_struct_group_components ordinal="5"> <PDBx:PDB_ins_code xsi:nil="true" /> <PDBx:PDB_model_num>1</PDBx:PDB_model_num> <PDBx:auth_asym_id>A</PDBx:auth_asym_id> <PDBx:auth_comp_id>GHP</PDBx:auth_comp_id> <PDBx:auth_seq_id>5</PDBx:auth_seq_id> <PDBx:struct_group_id>1</PDBx:struct_group_id> </PDBx:pdbx_struct_group_components> <PDBx:pdbx_struct_group_components ordinal="6"> <PDBx:PDB_ins_code xsi:nil="true" /> <PDBx:PDB_model_num>1</PDBx:PDB_model_num> <PDBx:auth_asym_id>A</PDBx:auth_asym_id> <PDBx:auth_comp_id>OMX</PDBx:auth_comp_id> <PDBx:auth_seq_id>6</PDBx:auth_seq_id> <PDBx:struct_group_id>1</PDBx:struct_group_id> </PDBx:pdbx_struct_group_components> <PDBx:pdbx_struct_group_components ordinal="7"> <PDBx:PDB_ins_code xsi:nil="true" /> <PDBx:PDB_model_num>1</PDBx:PDB_model_num> <PDBx:auth_asym_id>A</PDBx:auth_asym_id> <PDBx:auth_comp_id>3FG</PDBx:auth_comp_id> <PDBx:auth_seq_id>7</PDBx:auth_seq_id> <PDBx:struct_group_id>1</PDBx:struct_group_id> </PDBx:pdbx_struct_group_components> <PDBx:pdbx_struct_group_components ordinal="8"> <PDBx:PDB_ins_code xsi:nil="true" /> <PDBx:PDB_model_num>1</PDBx:PDB_model_num> <PDBx:auth_asym_id>A</PDBx:auth_asym_id> <PDBx:auth_comp_id>ERE</PDBx:auth_comp_id> <PDBx:auth_seq_id>8</PDBx:auth_seq_id> <PDBx:struct_group_id>1</PDBx:struct_group_id> </PDBx:pdbx_struct_group_components> <PDBx:pdbx_struct_group_components ordinal="9"> <PDBx:PDB_ins_code xsi:nil="true" /> <PDBx:PDB_model_num>1</PDBx:PDB_model_num> <PDBx:auth_asym_id>A</PDBx:auth_asym_id> <PDBx:auth_comp_id>BGC</PDBx:auth_comp_id> <PDBx:auth_seq_id>9</PDBx:auth_seq_id> <PDBx:struct_group_id>1</PDBx:struct_group_id> </PDBx:pdbx_struct_group_components> <PDBx:pdbx_struct_group_components ordinal="10"> <PDBx:PDB_ins_code xsi:nil="true" /> <PDBx:PDB_model_num>1</PDBx:PDB_model_num> <PDBx:auth_asym_id>A</PDBx:auth_asym_id> <PDBx:auth_comp_id>RAM</PDBx:auth_comp_id> <PDBx:auth_seq_id>10</PDBx:auth_seq_id> <PDBx:struct_group_id>1</PDBx:struct_group_id> </PDBx:pdbx_struct_group_components> </PDBx:pdbx_struct_group_componentsCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_struct_group_components (
@@ -12585,7 +12585,7 @@ CREATE TABLE pdbx_struct_group_components (
 --
 -- (quoted from pdbx_struct_infoType)
 -- Special features of this structural entry. Example 1 - <PDBx:pdbx_struct_infoCategory> <PDBx:pdbx_struct_info type="nonpolymer_zero_occupancy_flag" value="Y"></PDBx:pdbx_struct_info> <PDBx:pdbx_struct_info type="polymer_zero_occupancy_flag" value="Y"></PDBx:pdbx_struct_info> <PDBx:pdbx_struct_info type="multiple_model_flag" value="Y"></PDBx:pdbx_struct_info> <PDBx:pdbx_struct_info type="multiple_model_details" value="Model 3 missing ligand ACX"></PDBx:pdbx_struct_info> <PDBx:pdbx_struct_info type="nonpolymer_details" value="Disordered ligand geometry for C34 with missing pyridine ring"></PDBx:pdbx_struct_info> <PDBx:pdbx_struct_info type="missing atoms in alternate conformations" value="Y"></PDBx:pdbx_struct_info> </PDBx:pdbx_struct_infoCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_struct_info_type CASCADE;
@@ -12603,7 +12603,7 @@ CREATE TABLE pdbx_struct_info (
 --
 -- (quoted from pdbx_struct_legacy_oper_listType)
 -- Data items in the PDBX_STRUCT_LEGACY_OPER_LIST category describe Cartesian rotation and translation operations required to generate or transform the coordinates deposited with this entry. This category provides a container for matrices used to construct icosahedral assemblies in legacy entries. Example 1 - <PDBx:pdbx_struct_legacy_oper_listCategory> <PDBx:pdbx_struct_legacy_oper_list id="2"> <PDBx:matrix11>0.247</PDBx:matrix11> <PDBx:matrix12>0.935</PDBx:matrix12> <PDBx:matrix13>0.256</PDBx:matrix13> <PDBx:matrix21>0.929</PDBx:matrix21> <PDBx:matrix22>0.153</PDBx:matrix22> <PDBx:matrix23>0.337</PDBx:matrix23> <PDBx:matrix31>0.276</PDBx:matrix31> <PDBx:matrix32>0.321</PDBx:matrix32> <PDBx:matrix33>-0.906</PDBx:matrix33> <PDBx:vector1>-8.253</PDBx:vector1> <PDBx:vector2>-11.743</PDBx:vector2> <PDBx:vector3>-1.782</PDBx:vector3> </PDBx:pdbx_struct_legacy_oper_list> </PDBx:pdbx_struct_legacy_oper_listCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_struct_legacy_oper_list (
@@ -12629,7 +12629,7 @@ CREATE TABLE pdbx_struct_legacy_oper_list (
 --
 -- (quoted from pdbx_struct_linkType)
 -- Data items in the PDBX_STRUCT_LINK category record details about covalent linkages in the structure. <PDBx:pdbx_struct_linkCategory> <PDBx:pdbx_struct_link id="1"> <PDBx:pdbx_dist_value>2.217</PDBx:pdbx_dist_value> <PDBx:ptnr1_label_asym_id>A</PDBx:ptnr1_label_asym_id> <PDBx:ptnr1_label_atom_id>CO</PDBx:ptnr1_label_atom_id> <PDBx:ptnr1_label_comp_id>B12</PDBx:ptnr1_label_comp_id> <PDBx:ptnr1_label_seq_id>201</PDBx:ptnr1_label_seq_id> <PDBx:ptnr1_symmetry>1_555</PDBx:ptnr1_symmetry> <PDBx:ptnr2_label_asym_id>A</PDBx:ptnr2_label_asym_id> <PDBx:ptnr2_label_atom_id>NE2</PDBx:ptnr2_label_atom_id> <PDBx:ptnr2_label_comp_id>HIS</PDBx:ptnr2_label_comp_id> <PDBx:ptnr2_label_seq_id>16</PDBx:ptnr2_label_seq_id> <PDBx:ptnr2_symmetry>1_555</PDBx:ptnr2_symmetry> <PDBx:type>metalc</PDBx:type> </PDBx:pdbx_struct_link> <PDBx:pdbx_struct_link id="2"> <PDBx:pdbx_dist_value>2.222</PDBx:pdbx_dist_value> <PDBx:ptnr1_label_asym_id>C</PDBx:ptnr1_label_asym_id> <PDBx:ptnr1_label_atom_id>CO</PDBx:ptnr1_label_atom_id> <PDBx:ptnr1_label_comp_id>B12</PDBx:ptnr1_label_comp_id> <PDBx:ptnr1_label_seq_id>201</PDBx:ptnr1_label_seq_id> <PDBx:ptnr1_symmetry>1_555</PDBx:ptnr1_symmetry> <PDBx:ptnr2_label_asym_id>C</PDBx:ptnr2_label_asym_id> <PDBx:ptnr2_label_atom_id>NE2</PDBx:ptnr2_label_atom_id> <PDBx:ptnr2_label_comp_id>HIS</PDBx:ptnr2_label_comp_id> <PDBx:ptnr2_label_seq_id>16</PDBx:ptnr2_label_seq_id> <PDBx:ptnr2_symmetry>1_555</PDBx:ptnr2_symmetry> <PDBx:type>metalc</PDBx:type> </PDBx:pdbx_struct_link> </PDBx:pdbx_struct_linkCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_struct_link_type CASCADE;
@@ -12662,7 +12662,7 @@ CREATE TABLE pdbx_struct_link (
 --
 -- (quoted from pdbx_struct_mod_residueType)
 -- Data items in the PDBX_STRUCT_MOD_RESIDUE category list the modified polymer components in the entry and provide some details describing the nature of the modification. Example 1 <PDBx:pdbx_struct_mod_residueCategory> <PDBx:pdbx_struct_mod_residue id="1"> <PDBx:PDB_ins_code xsi:nil="true" /> <PDBx:auth_asym_id>A</PDBx:auth_asym_id> <PDBx:auth_comp_id>CRW</PDBx:auth_comp_id> <PDBx:auth_seq_id>66</PDBx:auth_seq_id> <PDBx:details>CIRCULARIZED TRI-PEPTIDE CHROMOPHORE</PDBx:details> <PDBx:parent_comp_id>ALA</PDBx:parent_comp_id> </PDBx:pdbx_struct_mod_residue> <PDBx:pdbx_struct_mod_residue id="2"> <PDBx:PDB_ins_code xsi:nil="true" /> <PDBx:auth_asym_id>A</PDBx:auth_asym_id> <PDBx:auth_comp_id>CRW</PDBx:auth_comp_id> <PDBx:auth_seq_id>66</PDBx:auth_seq_id> <PDBx:details>CIRCULARIZED TRI-PEPTIDE CHROMOPHORE</PDBx:details> <PDBx:parent_comp_id>SER</PDBx:parent_comp_id> </PDBx:pdbx_struct_mod_residue> <PDBx:pdbx_struct_mod_residue id="3"> <PDBx:PDB_ins_code xsi:nil="true" /> <PDBx:auth_asym_id>A</PDBx:auth_asym_id> <PDBx:auth_comp_id>CRW</PDBx:auth_comp_id> <PDBx:auth_seq_id>66</PDBx:auth_seq_id> <PDBx:details>CIRCULARIZED TRI-PEPTIDE CHROMOPHORE</PDBx:details> <PDBx:parent_comp_id>GLY</PDBx:parent_comp_id> </PDBx:pdbx_struct_mod_residue> </PDBx:pdbx_struct_mod_residueCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_struct_mod_residue (
@@ -12685,7 +12685,7 @@ CREATE TABLE pdbx_struct_mod_residue (
 --
 -- (quoted from pdbx_struct_msym_genType)
 -- Data items in the PDBX_STRUCT_MSYM_GEN category record details about the generation of the minimal asymmetric unit. For instance, this category can be used to provide this information for helical and point symmetry systems. The PDBX_STRUCT_MSYM_GEN data items provide the specifications of the components that constitute the asymmetric unit in terms of cartesian transformations of deposited coordinates. Example 1 - <PDBx:pdbx_struct_msym_genCategory> <PDBx:pdbx_struct_msym_gen entity_inst_id="A" msym_id="A" oper_expression="3"></PDBx:pdbx_struct_msym_gen> <PDBx:pdbx_struct_msym_gen entity_inst_id="B" msym_id="B" oper_expression="4"></PDBx:pdbx_struct_msym_gen> <PDBx:pdbx_struct_msym_gen entity_inst_id="B" msym_id="C" oper_expression="5"></PDBx:pdbx_struct_msym_gen> </PDBx:pdbx_struct_msym_genCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_struct_msym_gen (
@@ -12702,7 +12702,7 @@ CREATE TABLE pdbx_struct_msym_gen (
 --
 -- (quoted from pdbx_struct_ncs_virus_genType)
 -- Data items in the PDBX_STRUCT_NCS_VIRUS_GEN category record details about the generation of virus structures from NCS matrix operators. Example 1 <PDBx:pdbx_struct_ncs_virus_genCategory> <PDBx:pdbx_struct_ncs_virus_gen id="1"> <PDBx:asym_id>A</PDBx:asym_id> <PDBx:oper_id>1</PDBx:oper_id> <PDBx:pdb_chain_id>A</PDBx:pdb_chain_id> </PDBx:pdbx_struct_ncs_virus_gen> <PDBx:pdbx_struct_ncs_virus_gen id="2"> <PDBx:asym_id>B</PDBx:asym_id> <PDBx:oper_id>2</PDBx:oper_id> <PDBx:pdb_chain_id>B</PDBx:pdb_chain_id> </PDBx:pdbx_struct_ncs_virus_gen> <PDBx:pdbx_struct_ncs_virus_gen id="3"> <PDBx:asym_id>C</PDBx:asym_id> <PDBx:oper_id>3</PDBx:oper_id> <PDBx:pdb_chain_id>C</PDBx:pdb_chain_id> </PDBx:pdbx_struct_ncs_virus_gen> </PDBx:pdbx_struct_ncs_virus_genCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_struct_ncs_virus_gen (
@@ -12718,7 +12718,7 @@ CREATE TABLE pdbx_struct_ncs_virus_gen (
 --
 -- (quoted from pdbx_struct_oper_listType)
 -- Data items in the PDBX_STRUCT_OPER_LIST category describe Cartesian rotation and translation operations required to generate or transform the coordinates deposited with this entry. Example 1 - <PDBx:pdbx_struct_oper_listCategory> <PDBx:pdbx_struct_oper_list id="2"> <PDBx:matrix11>0.247</PDBx:matrix11> <PDBx:matrix12>0.935</PDBx:matrix12> <PDBx:matrix13>0.256</PDBx:matrix13> <PDBx:matrix21>0.929</PDBx:matrix21> <PDBx:matrix22>0.153</PDBx:matrix22> <PDBx:matrix23>0.337</PDBx:matrix23> <PDBx:matrix31>0.276</PDBx:matrix31> <PDBx:matrix32>0.321</PDBx:matrix32> <PDBx:matrix33>-0.906</PDBx:matrix33> <PDBx:type>point symmetry operation</PDBx:type> <PDBx:vector1>-8.253</PDBx:vector1> <PDBx:vector2>-11.743</PDBx:vector2> <PDBx:vector3>-1.782</PDBx:vector3> </PDBx:pdbx_struct_oper_list> </PDBx:pdbx_struct_oper_listCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_struct_oper_list_type CASCADE;
@@ -12748,7 +12748,7 @@ CREATE TABLE pdbx_struct_oper_list (
 --
 -- (quoted from pdbx_struct_oper_list_depositor_infoType)
 -- Data items in the PDBX_STRUCT_OPER_LIST_DEPOSITOR_INFO category capture depositor provided information related to the archival cateogory PDBX_STRUCT_OPER_LIST. Example 1 - <PDBx:pdbx_struct_oper_list_depositor_infoCategory> <PDBx:pdbx_struct_oper_list_depositor_info id="2"> <PDBx:matrix11>0.247</PDBx:matrix11> <PDBx:matrix12>0.935</PDBx:matrix12> <PDBx:matrix13>0.256</PDBx:matrix13> <PDBx:matrix21>0.929</PDBx:matrix21> <PDBx:matrix22>0.153</PDBx:matrix22> <PDBx:matrix23>0.337</PDBx:matrix23> <PDBx:matrix31>0.276</PDBx:matrix31> <PDBx:matrix32>0.321</PDBx:matrix32> <PDBx:matrix33>-0.906</PDBx:matrix33> <PDBx:type>point symmetry operation</PDBx:type> <PDBx:vector1>-8.253</PDBx:vector1> <PDBx:vector2>-11.743</PDBx:vector2> <PDBx:vector3>-1.782</PDBx:vector3> </PDBx:pdbx_struct_oper_list_depositor_info> </PDBx:pdbx_struct_oper_list_depositor_infoCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_struct_oper_list_depositor_info_type CASCADE;
@@ -12778,7 +12778,7 @@ CREATE TABLE pdbx_struct_oper_list_depositor_info (
 --
 -- (quoted from pdbx_struct_pack_genType)
 -- Data items in the PDBX_STRUCT_PACK_GEN category record details about the generation of the packing picture(s). Example 1 - based on NDB entry ADJ066 <PDBx:pdbx_struct_pack_genCategory> <PDBx:pdbx_struct_pack_gen asym_id="A" id="1" symmetry="1_555"> <PDBx:color_blue>.4</PDBx:color_blue> <PDBx:color_green>.3</PDBx:color_green> <PDBx:color_red>.2</PDBx:color_red> </PDBx:pdbx_struct_pack_gen> </PDBx:pdbx_struct_pack_genCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_struct_pack_gen (
@@ -12800,7 +12800,7 @@ CREATE TABLE pdbx_struct_pack_gen (
 --
 -- (quoted from pdbx_struct_ref_seq_deletionType)
 -- Data items in the PDBX_STRUCT_REF_SEQ_INSERTION category annotate deletions in the sequence of the entity described in the referenced database entry. Example 1 <PDBx:pdbx_struct_ref_seq_deletionCategory> <PDBx:pdbx_struct_ref_seq_deletion id="1"> <PDBx:asym_id>A</PDBx:asym_id> <PDBx:comp_id>LEU</PDBx:comp_id> <PDBx:db_code>P15456</PDBx:db_code> <PDBx:db_name>UNP</PDBx:db_name> <PDBx:db_seq_id>23</PDBx:db_seq_id> <PDBx:details xsi:nil="true" /> </PDBx:pdbx_struct_ref_seq_deletion> <PDBx:pdbx_struct_ref_seq_deletion id="1"> <PDBx:asym_id>A</PDBx:asym_id> <PDBx:comp_id>THR</PDBx:comp_id> <PDBx:db_code>P15456</PDBx:db_code> <PDBx:db_name>UNP</PDBx:db_name> <PDBx:db_seq_id>24</PDBx:db_seq_id> <PDBx:details xsi:nil="true" /> </PDBx:pdbx_struct_ref_seq_deletion> <PDBx:pdbx_struct_ref_seq_deletion id="1"> <PDBx:asym_id>A</PDBx:asym_id> <PDBx:comp_id>GLN</PDBx:comp_id> <PDBx:db_code>P15456</PDBx:db_code> <PDBx:db_name>UNP</PDBx:db_name> <PDBx:db_seq_id>25</PDBx:db_seq_id> <PDBx:details xsi:nil="true" /> </PDBx:pdbx_struct_ref_seq_deletion> </PDBx:pdbx_struct_ref_seq_deletionCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_struct_ref_seq_deletion (
@@ -12819,7 +12819,7 @@ CREATE TABLE pdbx_struct_ref_seq_deletion (
 --
 -- (quoted from pdbx_struct_ref_seq_depositor_infoType)
 -- Data items in the PDBX_STRUCT_REF_SEQ_DEPOSITOR_INFO category capture depositor provided information related to the archival cateogory STRUCT_REF_SEQ. Example 1 - <PDBx:pdbx_struct_ref_seq_depositor_infoCategory> <PDBx:pdbx_struct_ref_seq_depositor_info ref_id="1"> <PDBx:db_accession xsi:nil="true" /> <PDBx:db_align_beg>18</PDBx:db_align_beg> <PDBx:db_align_end>276</PDBx:db_align_end> <PDBx:db_code xsi:nil="true" /> <PDBx:db_name xsi:nil="true" /> <PDBx:db_seq_one_letter_code xsi:nil="true" /> <PDBx:details xsi:nil="true" /> <PDBx:entity_id>1</PDBx:entity_id> <PDBx:seq_align_begin xsi:nil="true" /> <PDBx:seq_align_end xsi:nil="true" /> </PDBx:pdbx_struct_ref_seq_depositor_info> </PDBx:pdbx_struct_ref_seq_depositor_infoCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_struct_ref_seq_depositor_info (
@@ -12844,7 +12844,7 @@ CREATE TABLE pdbx_struct_ref_seq_depositor_info (
 --
 -- (quoted from pdbx_struct_ref_seq_dif_depositor_infoType)
 -- Data items in the PDBX_STRUCT_REF_SEQ_DIF_DEPOSITOR_INFO category capture depositor provided information related to the archival cateogory STRUCT_REF_SEQ_DIF. Example 1 - <PDBx:pdbx_struct_ref_seq_dif_depositor_infoCategory> <PDBx:pdbx_struct_ref_seq_dif_depositor_info ordinal="1"> <PDBx:auth_mon_id>ALA</PDBx:auth_mon_id> <PDBx:auth_seq_id>181</PDBx:auth_seq_id> <PDBx:db_mon_id>GLU</PDBx:db_mon_id> <PDBx:db_seq_id>301</PDBx:db_seq_id> <PDBx:details xsi:nil="true" /> <PDBx:ref_id>1</PDBx:ref_id> </PDBx:pdbx_struct_ref_seq_dif_depositor_info> </PDBx:pdbx_struct_ref_seq_dif_depositor_infoCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_struct_ref_seq_dif_depositor_info_annotation CASCADE;
@@ -12871,7 +12871,7 @@ CREATE TABLE pdbx_struct_ref_seq_dif_depositor_info (
 --
 -- (quoted from pdbx_struct_ref_seq_feature_propType)
 -- Data items in the PDBX_STRUCT_REF_SEQ_FEATURE_PROP category provide a mechanism for identifying and annotating properties of sequence features. Example 1 - <PDBx:pdbx_struct_ref_seq_feature_propCategory> <PDBx:pdbx_struct_ref_seq_feature_prop feature_id="1" property_id="1"> <PDBx:beg_db_mon_id>GLU</PDBx:beg_db_mon_id> <PDBx:beg_db_seq_id>100</PDBx:beg_db_seq_id> <PDBx:details> Special splice at ... </PDBx:details> <PDBx:end_db_mon_id>PHE</PDBx:end_db_mon_id> <PDBx:end_db_seq_id>104</PDBx:end_db_seq_id> <PDBx:type>VARIABLE_SPLICING</PDBx:type> <PDBx:value>VSP_003456</PDBx:value> </PDBx:pdbx_struct_ref_seq_feature_prop> </PDBx:pdbx_struct_ref_seq_feature_propCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_struct_ref_seq_feature_prop (
@@ -12893,7 +12893,7 @@ CREATE TABLE pdbx_struct_ref_seq_feature_prop (
 --
 -- (quoted from pdbx_struct_ref_seq_insertionType)
 -- Data items in the PDBX_STRUCT_REF_SEQ_INSERTION category annotate insertions in the sequence of the entity described in the referenced database entry. Example 1 <PDBx:pdbx_struct_ref_seq_insertionCategory> <PDBx:pdbx_struct_ref_seq_insertion id="1"> <PDBx:PDB_ins_code xsi:nil="true" /> <PDBx:asym_id>A</PDBx:asym_id> <PDBx:auth_asym_id>A</PDBx:auth_asym_id> <PDBx:auth_seq_id>104</PDBx:auth_seq_id> <PDBx:comp_id>GLY</PDBx:comp_id> <PDBx:db_code>P00752</PDBx:db_code> <PDBx:db_name>UNP</PDBx:db_name> <PDBx:details>INSERTION</PDBx:details> <PDBx:seq_id>102</PDBx:seq_id> </PDBx:pdbx_struct_ref_seq_insertion> <PDBx:pdbx_struct_ref_seq_insertion id="2"> <PDBx:PDB_ins_code xsi:nil="true" /> <PDBx:asym_id>A</PDBx:asym_id> <PDBx:auth_asym_id>A</PDBx:auth_asym_id> <PDBx:auth_seq_id>105</PDBx:auth_seq_id> <PDBx:comp_id>TRP</PDBx:comp_id> <PDBx:db_code>P00752</PDBx:db_code> <PDBx:db_name>UNP</PDBx:db_name> <PDBx:details>INSERTION</PDBx:details> <PDBx:seq_id>103</PDBx:seq_id> </PDBx:pdbx_struct_ref_seq_insertion> </PDBx:pdbx_struct_ref_seq_insertionCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_struct_ref_seq_insertion (
@@ -12915,7 +12915,7 @@ CREATE TABLE pdbx_struct_ref_seq_insertion (
 --
 -- (quoted from pdbx_struct_sheet_hbondType)
 -- Data items in the PDBX_STRUCT_SHEET_HBOND category record details about the hydrogen bonding between residue ranges in a beta sheet. This category is provided for cases where only a single hydrogen bond is used to register the two residue ranges. Category STRUCT_SHEET_HBOND should be used when the initial and terminal hydrogen bonds for strand pair are known.
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_struct_sheet_hbond (
@@ -12950,7 +12950,7 @@ CREATE TABLE pdbx_struct_sheet_hbond (
 --
 -- (quoted from pdbx_struct_special_symmetryType)
 -- Data items in the PDBX_STRUCT_SPECIAL_SYMMETRY category list the molecular components that lie on special symmetry positions. Example 1 <PDBx:pdbx_struct_special_symmetryCategory> <PDBx:pdbx_struct_special_symmetry id="1"> <PDBx:PDB_ins_code xsi:nil="true" /> <PDBx:PDB_model_num>1</PDBx:PDB_model_num> <PDBx:auth_asym_id>Q</PDBx:auth_asym_id> <PDBx:auth_comp_id>ATP</PDBx:auth_comp_id> <PDBx:auth_seq_id>412</PDBx:auth_seq_id> <PDBx:label_alt_id xsi:nil="true" /> </PDBx:pdbx_struct_special_symmetry> </PDBx:pdbx_struct_special_symmetryCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_struct_special_symmetry (
@@ -12972,7 +12972,7 @@ CREATE TABLE pdbx_struct_special_symmetry (
 --
 -- (quoted from pdbx_sugar_phosphate_geometryType)
 -- Data items in the PDBX_SUGAR_PHOSPHATE_GEOMETRY record the RMS deviations covalent geometry for each momoner relative to small molecule crystal standards. Example 1 - <PDBx:pdbx_sugar_phosphate_geometryCategory> <PDBx:pdbx_sugar_phosphate_geometry id="1"> <PDBx:auth_asym_id>A</PDBx:auth_asym_id> <PDBx:auth_seq_id>1</PDBx:auth_seq_id> <PDBx:label_asym_id>A</PDBx:label_asym_id> <PDBx:label_comp_id>A</PDBx:label_comp_id> <PDBx:label_seq_id>1</PDBx:label_seq_id> <PDBx:model_id xsi:nil="true" /> <PDBx:o3_p_o5_c5>140.1</PDBx:o3_p_o5_c5> </PDBx:pdbx_sugar_phosphate_geometry> </PDBx:pdbx_sugar_phosphate_geometryCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_sugar_phosphate_geometry (
@@ -13058,7 +13058,7 @@ CREATE TABLE pdbx_sugar_phosphate_geometry (
 --
 -- (quoted from pdbx_summary_flagsType)
 -- Container category for a list of feature flags associated with each structure entry.
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_summary_flags_flag_value CASCADE;
@@ -13078,7 +13078,7 @@ CREATE TABLE pdbx_summary_flags (
 --
 -- (quoted from pdbx_supporting_exp_data_setType)
 -- Data items in the PDBX_SUPPORTING_EXP_DATA_SET category record to experimental data set dependencies for this entry. Example 1 - <PDBx:pdbx_supporting_exp_data_setCategory> <PDBx:pdbx_supporting_exp_data_set ordinal="1"> <PDBx:data_content_type>X-ray structure factor amplitudes</PDBx:data_content_type> <PDBx:data_version_major>1</PDBx:data_version_major> <PDBx:data_version_minor>2</PDBx:data_version_minor> </PDBx:pdbx_supporting_exp_data_set> </PDBx:pdbx_supporting_exp_data_setCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_supporting_exp_data_set (
@@ -13095,7 +13095,7 @@ CREATE TABLE pdbx_supporting_exp_data_set (
 --
 -- (quoted from pdbx_tableinfoType)
 -- <PDBx:pdbx_tableinfoCategory> <PDBx:pdbx_tableinfo tablename="summary"> <PDBx:WWW_Report_Criteria>1</PDBx:WWW_Report_Criteria> <PDBx:WWW_Selection_Criteria>1</PDBx:WWW_Selection_Criteria> <PDBx:description>summary data</PDBx:description> <PDBx:group_name>STRUCTURE</PDBx:group_name> <PDBx:table_serial_no>1</PDBx:table_serial_no> <PDBx:type>1</PDBx:type> </PDBx:pdbx_tableinfo> </PDBx:pdbx_tableinfoCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_tableinfo (
@@ -13114,7 +13114,7 @@ CREATE TABLE pdbx_tableinfo (
 --
 -- (quoted from pdbx_trna_infoType)
 -- Data items in the PDBX_TRNA_INFO category are still used until the 'entity' categories are entered into the database, even though the T-RNA is repeated. Example 1 - based on NDB entry TRNA04 <PDBx:pdbx_trna_infoCategory> <PDBx:pdbx_trna_info id="1"> <PDBx:name>Yeast Phenylalanine T-RNA</PDBx:name> <PDBx:num_per_asym_unit>1</PDBx:num_per_asym_unit> </PDBx:pdbx_trna_info> </PDBx:pdbx_trna_infoCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_trna_info (
@@ -13129,7 +13129,7 @@ CREATE TABLE pdbx_trna_info (
 --
 -- (quoted from pdbx_unobs_or_zero_occ_atomsType)
 -- Data items in the PDBX_UNOBS_OR_ZERO_OCC_ATOMS category list the atoms within the entry that are either unobserved or have zero occupancy/ Example 1 <PDBx:pdbx_unobs_or_zero_occ_atomsCategory> <PDBx:pdbx_unobs_or_zero_occ_atoms id="1"> <PDBx:PDB_ins_code xsi:nil="true" /> <PDBx:PDB_model_num>1</PDBx:PDB_model_num> <PDBx:auth_asym_id>A</PDBx:auth_asym_id> <PDBx:auth_atom_id>CG</PDBx:auth_atom_id> <PDBx:auth_comp_id>ARG</PDBx:auth_comp_id> <PDBx:auth_seq_id>412</PDBx:auth_seq_id> <PDBx:label_alt_id xsi:nil="true" /> <PDBx:occupancy_flag>1</PDBx:occupancy_flag> <PDBx:polymer_flag>Y</PDBx:polymer_flag> </PDBx:pdbx_unobs_or_zero_occ_atoms> <PDBx:pdbx_unobs_or_zero_occ_atoms id="2"> <PDBx:PDB_ins_code xsi:nil="true" /> <PDBx:PDB_model_num>1</PDBx:PDB_model_num> <PDBx:auth_asym_id>A</PDBx:auth_asym_id> <PDBx:auth_atom_id>CD</PDBx:auth_atom_id> <PDBx:auth_comp_id>ARG</PDBx:auth_comp_id> <PDBx:auth_seq_id>412</PDBx:auth_seq_id> <PDBx:label_alt_id xsi:nil="true" /> <PDBx:occupancy_flag>1</PDBx:occupancy_flag> <PDBx:polymer_flag>Y</PDBx:polymer_flag> </PDBx:pdbx_unobs_or_zero_occ_atoms> <PDBx:pdbx_unobs_or_zero_occ_atoms id="3"> <PDBx:PDB_ins_code xsi:nil="true" /> <PDBx:PDB_model_num>1</PDBx:PDB_model_num> <PDBx:auth_asym_id>A</PDBx:auth_asym_id> <PDBx:auth_atom_id>NE</PDBx:auth_atom_id> <PDBx:auth_comp_id>ARG</PDBx:auth_comp_id> <PDBx:auth_seq_id>412</PDBx:auth_seq_id> <PDBx:label_alt_id xsi:nil="true" /> <PDBx:occupancy_flag>1</PDBx:occupancy_flag> <PDBx:polymer_flag>Y</PDBx:polymer_flag> </PDBx:pdbx_unobs_or_zero_occ_atoms> <PDBx:pdbx_unobs_or_zero_occ_atoms id="4"> <PDBx:PDB_ins_code xsi:nil="true" /> <PDBx:PDB_model_num>1</PDBx:PDB_model_num> <PDBx:auth_asym_id>A</PDBx:auth_asym_id> <PDBx:auth_atom_id>CZ</PDBx:auth_atom_id> <PDBx:auth_comp_id>ARG</PDBx:auth_comp_id> <PDBx:auth_seq_id>412</PDBx:auth_seq_id> <PDBx:label_alt_id xsi:nil="true" /> <PDBx:occupancy_flag>1</PDBx:occupancy_flag> <PDBx:polymer_flag>Y</PDBx:polymer_flag> </PDBx:pdbx_unobs_or_zero_occ_atoms> <PDBx:pdbx_unobs_or_zero_occ_atoms id="5"> <PDBx:PDB_ins_code xsi:nil="true" /> <PDBx:PDB_model_num>1</PDBx:PDB_model_num> <PDBx:auth_asym_id>A</PDBx:auth_asym_id> <PDBx:auth_atom_id>NH1</PDBx:auth_atom_id> <PDBx:auth_comp_id>ARG</PDBx:auth_comp_id> <PDBx:auth_seq_id>412</PDBx:auth_seq_id> <PDBx:label_alt_id xsi:nil="true" /> <PDBx:occupancy_flag>1</PDBx:occupancy_flag> <PDBx:polymer_flag>Y</PDBx:polymer_flag> </PDBx:pdbx_unobs_or_zero_occ_atoms> <PDBx:pdbx_unobs_or_zero_occ_atoms id="6"> <PDBx:PDB_ins_code xsi:nil="true" /> <PDBx:PDB_model_num>1</PDBx:PDB_model_num> <PDBx:auth_asym_id>A</PDBx:auth_asym_id> <PDBx:auth_atom_id>NH2</PDBx:auth_atom_id> <PDBx:auth_comp_id>ARG</PDBx:auth_comp_id> <PDBx:auth_seq_id>412</PDBx:auth_seq_id> <PDBx:label_alt_id xsi:nil="true" /> <PDBx:occupancy_flag>1</PDBx:occupancy_flag> <PDBx:polymer_flag>Y</PDBx:polymer_flag> </PDBx:pdbx_unobs_or_zero_occ_atoms> </PDBx:pdbx_unobs_or_zero_occ_atomsCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_unobs_or_zero_occ_atoms_occupancy_flag CASCADE;
@@ -13159,7 +13159,7 @@ CREATE TABLE pdbx_unobs_or_zero_occ_atoms (
 --
 -- (quoted from pdbx_unobs_or_zero_occ_residuesType)
 -- Data items in the PDBX_UNOBS_OR_ZERO_OCC_RESIDUES category list the residues within the entry that are not observed or have zero occupancy. Example 1 <PDBx:pdbx_unobs_or_zero_occ_residuesCategory> <PDBx:pdbx_unobs_or_zero_occ_residues id="1"> <PDBx:PDB_ins_code xsi:nil="true" /> <PDBx:PDB_model_num>1</PDBx:PDB_model_num> <PDBx:auth_asym_id>B</PDBx:auth_asym_id> <PDBx:auth_comp_id>VAL</PDBx:auth_comp_id> <PDBx:auth_seq_id>36</PDBx:auth_seq_id> <PDBx:occupancy_flag>1</PDBx:occupancy_flag> <PDBx:polymer_flag>Y</PDBx:polymer_flag> </PDBx:pdbx_unobs_or_zero_occ_residues> <PDBx:pdbx_unobs_or_zero_occ_residues id="2"> <PDBx:PDB_ins_code xsi:nil="true" /> <PDBx:PDB_model_num>1</PDBx:PDB_model_num> <PDBx:auth_asym_id>B</PDBx:auth_asym_id> <PDBx:auth_comp_id>ARG</PDBx:auth_comp_id> <PDBx:auth_seq_id>108</PDBx:auth_seq_id> <PDBx:occupancy_flag>1</PDBx:occupancy_flag> <PDBx:polymer_flag>Y</PDBx:polymer_flag> </PDBx:pdbx_unobs_or_zero_occ_residues> <PDBx:pdbx_unobs_or_zero_occ_residues id="3"> <PDBx:PDB_ins_code xsi:nil="true" /> <PDBx:PDB_model_num>1</PDBx:PDB_model_num> <PDBx:auth_asym_id>D</PDBx:auth_asym_id> <PDBx:auth_comp_id>PPI</PDBx:auth_comp_id> <PDBx:auth_seq_id>438</PDBx:auth_seq_id> <PDBx:occupancy_flag>1</PDBx:occupancy_flag> <PDBx:polymer_flag>N</PDBx:polymer_flag> </PDBx:pdbx_unobs_or_zero_occ_residues> </PDBx:pdbx_unobs_or_zero_occ_residuesCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_unobs_or_zero_occ_residues_occupancy_flag CASCADE;
@@ -13186,7 +13186,7 @@ CREATE TABLE pdbx_unobs_or_zero_occ_residues (
 --
 -- (quoted from pdbx_unpairType)
 -- These records give information about residues which do not pair (h-bond) in the asymmetric unit. The records about Watson-Crick base pairing depend on these records. Example 1 - based on NDB entry PDR001 <PDBx:pdbx_unpairCategory> <PDBx:pdbx_unpair chain_id="A"> <PDBx:residue_name>A</PDBx:residue_name> <PDBx:residue_number>1</PDBx:residue_number> </PDBx:pdbx_unpair> <PDBx:pdbx_unpair chain_id="B"> <PDBx:residue_name>T</PDBx:residue_name> <PDBx:residue_number>21</PDBx:residue_number> </PDBx:pdbx_unpair> </PDBx:pdbx_unpairCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_unpair (
@@ -13201,7 +13201,7 @@ CREATE TABLE pdbx_unpair (
 --
 -- (quoted from pdbx_val_angleType)
 -- The PDBX_VAL_ANGLE category lists the covalent bond angles in this entry deviating by greater than 6*sigma from standard values. This is a completely derived category. Do not edit.
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_val_angle (
@@ -13249,7 +13249,7 @@ CREATE TABLE pdbx_val_angle (
 --
 -- (quoted from pdbx_val_bondType)
 -- The PDBX_VAL_BOND category lists the covalent bond angles in this entry deviating by greater than 6*sigma from standard values. This is a completely derived category. Do not edit.
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_val_bond (
@@ -13287,7 +13287,7 @@ CREATE TABLE pdbx_val_bond (
 --
 -- (quoted from pdbx_val_chiralType)
 -- Data items in the PDBX_VAL_CHIRAL category list the atoms with nonstandard chiralities. This is a completely derived category. Do not edit.
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_val_chiral (
@@ -13312,7 +13312,7 @@ CREATE TABLE pdbx_val_chiral (
 --
 -- (quoted from pdbx_val_contactType)
 -- The PDBX_VAL_CONTACT category lists non-bonded atoms within the assymetric unit of the entry that are in close contact. For those contacts not involving hydrogen a limit of 2.2 Angstroms is used. For contacts involving a hydrogen atom a cutoff of 1.6 Angstrom is used. This is a completely derived category. Do not edit.
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_val_contact (
@@ -13348,7 +13348,7 @@ CREATE TABLE pdbx_val_contact (
 --
 -- (quoted from pdbx_val_sym_contactType)
 -- The PDBX_VAL_SYM_CONTACT category lists symmetry related contacts amoung non-bonded atoms. For those contacts not involving hydrogen a limit of 2.2 Angstroms is used. For contacts involving a hydrogen atom a cutoff of 1.6 Angstrom is used. This is a completely derived category. Do not edit.
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_val_sym_contact (
@@ -13386,7 +13386,7 @@ CREATE TABLE pdbx_val_sym_contact (
 --
 -- (quoted from pdbx_validate_chiralType)
 -- Data items in the PDBX_VALIDATE_CHIRAL category list the residues that contain unexpected configuration of chiral centers. IMPROPER HA N C CB chirality CA IMPROPER HB1 HB2 CA CG stereo CB as this number approaches (+) or (-) 180.0, then the error in predicting the true chirality of the center increases. Improper dihedrals are a measure of the chirality/planarity of the structure at a specific atom. Values around -35 or +35 are expected for chiral atoms, and values around 0 for planar atoms. HERE improper C---N----CA---CB done expected answer is around -120 mean -122.52 D-amino acid is +120.0 Example 1 <PDBx:pdbx_validate_chiralCategory> <PDBx:pdbx_validate_chiral id="1"> <PDBx:PDB_ins_code xsi:nil="true" /> <PDBx:PDB_model_num>0</PDBx:PDB_model_num> <PDBx:auth_asym_id>ASP</PDBx:auth_asym_id> <PDBx:auth_comp_id>B</PDBx:auth_comp_id> <PDBx:auth_seq_id>405</PDBx:auth_seq_id> <PDBx:details>ALPHA-CARBON</PDBx:details> <PDBx:omega>150.48</PDBx:omega> </PDBx:pdbx_validate_chiral> </PDBx:pdbx_validate_chiralCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_validate_chiral (
@@ -13410,7 +13410,7 @@ CREATE TABLE pdbx_validate_chiral (
 --
 -- (quoted from pdbx_validate_close_contactType)
 -- Data items in the PDBX_VALIDATE_CLOSE_CONTACT category list the atoms within the entry that are in close contact with regard the distances expected from either covalent bonding or closest approach by van der Waals contacts. Contacts within the asymmetric unit are considered. For those contacts not involving hydrogen a limit of 2.2 Angstroms is used. For contacts involving a hydrogen atom a cutoff of 1.6 Angstroms is used. Example 1 <PDBx:pdbx_validate_close_contactCategory> <PDBx:pdbx_validate_close_contact id="1"> <PDBx:PDB_ins_code_1 xsi:nil="true" /> <PDBx:PDB_ins_code_2 xsi:nil="true" /> <PDBx:PDB_model_num>1</PDBx:PDB_model_num> <PDBx:auth_asym_id_1>B</PDBx:auth_asym_id_1> <PDBx:auth_asym_id_2>B</PDBx:auth_asym_id_2> <PDBx:auth_atom_id_1 xsi:nil="true" /> <PDBx:auth_atom_id_2 xsi:nil="true" /> <PDBx:auth_comp_id_1>VAL</PDBx:auth_comp_id_1> <PDBx:auth_comp_id_2>ARG</PDBx:auth_comp_id_2> <PDBx:auth_seq_id_1>36</PDBx:auth_seq_id_1> <PDBx:auth_seq_id_2>108</PDBx:auth_seq_id_2> <PDBx:dist>2.16</PDBx:dist> <PDBx:label_alt_id_1 xsi:nil="true" /> <PDBx:label_alt_id_2 xsi:nil="true" /> </PDBx:pdbx_validate_close_contact> <PDBx:pdbx_validate_close_contact id="2"> <PDBx:PDB_ins_code_1 xsi:nil="true" /> <PDBx:PDB_ins_code_2 xsi:nil="true" /> <PDBx:PDB_model_num>1</PDBx:PDB_model_num> <PDBx:auth_asym_id_1>B</PDBx:auth_asym_id_1> <PDBx:auth_asym_id_2>B</PDBx:auth_asym_id_2> <PDBx:auth_atom_id_1 xsi:nil="true" /> <PDBx:auth_atom_id_2 xsi:nil="true" /> <PDBx:auth_comp_id_1>ARG</PDBx:auth_comp_id_1> <PDBx:auth_comp_id_2>VAL</PDBx:auth_comp_id_2> <PDBx:auth_seq_id_1>108</PDBx:auth_seq_id_1> <PDBx:auth_seq_id_2>36</PDBx:auth_seq_id_2> <PDBx:dist>2.16</PDBx:dist> <PDBx:label_alt_id_1 xsi:nil="true" /> <PDBx:label_alt_id_2 xsi:nil="true" /> </PDBx:pdbx_validate_close_contact> </PDBx:pdbx_validate_close_contactCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_validate_close_contact (
@@ -13440,7 +13440,7 @@ CREATE TABLE pdbx_validate_close_contact (
 --
 -- (quoted from pdbx_validate_main_chain_planeType)
 -- Data items in the PDBX_VALIDATE_MAIN_CHAIN_PLANE category list the residues that contain unexpected deviations from planes for main chain atoms as defined by the improper torsion angle describing planarity: PLANARITY = C(i-1) - CA(i-1) - N(i) - O(i-1) ==> planar < 5 as a pseudo torsion Example 1 <PDBx:pdbx_validate_main_chain_planeCategory> <PDBx:pdbx_validate_main_chain_plane id="1"> <PDBx:PDB_ins_code xsi:nil="true" /> <PDBx:PDB_model_num>0</PDBx:PDB_model_num> <PDBx:auth_asym_id>G</PDBx:auth_asym_id> <PDBx:auth_comp_id>TRP</PDBx:auth_comp_id> <PDBx:auth_seq_id>20</PDBx:auth_seq_id> <PDBx:improper_torsion_angle>29.901</PDBx:improper_torsion_angle> </PDBx:pdbx_validate_main_chain_plane> <PDBx:pdbx_validate_main_chain_plane id="2"> <PDBx:PDB_ins_code xsi:nil="true" /> <PDBx:PDB_model_num>0</PDBx:PDB_model_num> <PDBx:auth_asym_id>G</PDBx:auth_asym_id> <PDBx:auth_comp_id>TRP</PDBx:auth_comp_id> <PDBx:auth_seq_id>21</PDBx:auth_seq_id> <PDBx:improper_torsion_angle>-42.450</PDBx:improper_torsion_angle> </PDBx:pdbx_validate_main_chain_plane> </PDBx:pdbx_validate_main_chain_planeCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_validate_main_chain_plane (
@@ -13461,7 +13461,7 @@ CREATE TABLE pdbx_validate_main_chain_plane (
 --
 -- (quoted from pdbx_validate_peptide_omegaType)
 -- Data items in the PDBX_VALIDATE_PEPTIDE_OMEGA category list the residues that contain peptide bonds deviate significantly from both cis and trans conformation. cis bonds, if any, are listed on cispep records. trans is defined as 180 +/- 30 and cis is defined as 0 +/- 30 degrees. Example 1 <PDBx:pdbx_validate_peptide_omegaCategory> <PDBx:pdbx_validate_peptide_omega id="1"> <PDBx:PDB_ins_code_1 xsi:nil="true" /> <PDBx:PDB_ins_code_2 xsi:nil="true" /> <PDBx:PDB_model_num>0</PDBx:PDB_model_num> <PDBx:auth_asym_id_1>ASP</PDBx:auth_asym_id_1> <PDBx:auth_asym_id_2>ARG</PDBx:auth_asym_id_2> <PDBx:auth_comp_id_1>A</PDBx:auth_comp_id_1> <PDBx:auth_comp_id_2>A</PDBx:auth_comp_id_2> <PDBx:auth_seq_id_1>414</PDBx:auth_seq_id_1> <PDBx:auth_seq_id_2>413</PDBx:auth_seq_id_2> <PDBx:label_alt_id_1 xsi:nil="true" /> <PDBx:label_alt_id_2 xsi:nil="true" /> <PDBx:omega>147.84</PDBx:omega> </PDBx:pdbx_validate_peptide_omega> <PDBx:pdbx_validate_peptide_omega id="2"> <PDBx:PDB_ins_code_1 xsi:nil="true" /> <PDBx:PDB_ins_code_2 xsi:nil="true" /> <PDBx:PDB_model_num>0</PDBx:PDB_model_num> <PDBx:auth_asym_id_1>ASN</PDBx:auth_asym_id_1> <PDBx:auth_asym_id_2>ALA</PDBx:auth_asym_id_2> <PDBx:auth_comp_id_1>B</PDBx:auth_comp_id_1> <PDBx:auth_comp_id_2>B</PDBx:auth_comp_id_2> <PDBx:auth_seq_id_1>289</PDBx:auth_seq_id_1> <PDBx:auth_seq_id_2>288</PDBx:auth_seq_id_2> <PDBx:label_alt_id_1 xsi:nil="true" /> <PDBx:label_alt_id_2 xsi:nil="true" /> <PDBx:omega>-39.12</PDBx:omega> </PDBx:pdbx_validate_peptide_omega> </PDBx:pdbx_validate_peptide_omegaCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_validate_peptide_omega (
@@ -13488,7 +13488,7 @@ CREATE TABLE pdbx_validate_peptide_omega (
 --
 -- (quoted from pdbx_validate_planes_atomType)
 -- Data items in the PDBX_VALIDATE_PLANES_ATOM category list the residues that contain unexpected deviations from planes centers. Example 1 <PDBx:pdbx_validate_planes_atomCategory> <PDBx:pdbx_validate_planes_atom id="1"> <PDBx:PDB_ins_code xsi:nil="true" /> <PDBx:PDB_model_num>1</PDBx:PDB_model_num> <PDBx:atom_deviation>0.003</PDBx:atom_deviation> <PDBx:auth_asym_id>DG</PDBx:auth_asym_id> <PDBx:auth_atom_id>N1</PDBx:auth_atom_id> <PDBx:auth_comp_id>A</PDBx:auth_comp_id> <PDBx:auth_seq_id>3</PDBx:auth_seq_id> <PDBx:plane_id>1</PDBx:plane_id> </PDBx:pdbx_validate_planes_atom> <PDBx:pdbx_validate_planes_atom id="2"> <PDBx:PDB_ins_code xsi:nil="true" /> <PDBx:PDB_model_num>1</PDBx:PDB_model_num> <PDBx:atom_deviation>0.011</PDBx:atom_deviation> <PDBx:auth_asym_id>DG</PDBx:auth_asym_id> <PDBx:auth_atom_id>C2</PDBx:auth_atom_id> <PDBx:auth_comp_id>A</PDBx:auth_comp_id> <PDBx:auth_seq_id>3</PDBx:auth_seq_id> <PDBx:plane_id>1</PDBx:plane_id> </PDBx:pdbx_validate_planes_atom> <PDBx:pdbx_validate_planes_atom id="3"> <PDBx:PDB_ins_code xsi:nil="true" /> <PDBx:PDB_model_num>1</PDBx:PDB_model_num> <PDBx:atom_deviation>0.074</PDBx:atom_deviation> <PDBx:auth_asym_id>DG</PDBx:auth_asym_id> <PDBx:auth_atom_id>N2</PDBx:auth_atom_id> <PDBx:auth_comp_id>A</PDBx:auth_comp_id> <PDBx:auth_seq_id>3</PDBx:auth_seq_id> <PDBx:plane_id>1</PDBx:plane_id> </PDBx:pdbx_validate_planes_atom> <PDBx:pdbx_validate_planes_atom id="4"> <PDBx:PDB_ins_code xsi:nil="true" /> <PDBx:PDB_model_num>1</PDBx:PDB_model_num> <PDBx:atom_deviation>0.005</PDBx:atom_deviation> <PDBx:auth_asym_id>DG</PDBx:auth_asym_id> <PDBx:auth_atom_id>N3</PDBx:auth_atom_id> <PDBx:auth_comp_id>A</PDBx:auth_comp_id> <PDBx:auth_seq_id>3</PDBx:auth_seq_id> <PDBx:plane_id>1</PDBx:plane_id> </PDBx:pdbx_validate_planes_atom> <PDBx:pdbx_validate_planes_atom id="5"> <PDBx:PDB_ins_code xsi:nil="true" /> <PDBx:PDB_model_num>1</PDBx:PDB_model_num> <PDBx:atom_deviation>0.010</PDBx:atom_deviation> <PDBx:auth_asym_id>DG</PDBx:auth_asym_id> <PDBx:auth_atom_id>C4</PDBx:auth_atom_id> <PDBx:auth_comp_id>A</PDBx:auth_comp_id> <PDBx:auth_seq_id>3</PDBx:auth_seq_id> <PDBx:plane_id>1</PDBx:plane_id> </PDBx:pdbx_validate_planes_atom> <PDBx:pdbx_validate_planes_atom id="6"> <PDBx:PDB_ins_code xsi:nil="true" /> <PDBx:PDB_model_num>1</PDBx:PDB_model_num> <PDBx:atom_deviation>0.029</PDBx:atom_deviation> <PDBx:auth_asym_id>DG</PDBx:auth_asym_id> <PDBx:auth_atom_id>C5</PDBx:auth_atom_id> <PDBx:auth_comp_id>A</PDBx:auth_comp_id> <PDBx:auth_seq_id>3</PDBx:auth_seq_id> <PDBx:plane_id>1</PDBx:plane_id> </PDBx:pdbx_validate_planes_atom> <PDBx:pdbx_validate_planes_atom id="7"> <PDBx:PDB_ins_code xsi:nil="true" /> <PDBx:PDB_model_num>1</PDBx:PDB_model_num> <PDBx:atom_deviation>0.039</PDBx:atom_deviation> <PDBx:auth_asym_id>DG</PDBx:auth_asym_id> <PDBx:auth_atom_id>C6</PDBx:auth_atom_id> <PDBx:auth_comp_id>A</PDBx:auth_comp_id> <PDBx:auth_seq_id>3</PDBx:auth_seq_id> <PDBx:plane_id>1</PDBx:plane_id> </PDBx:pdbx_validate_planes_atom> <PDBx:pdbx_validate_planes_atom id="8"> <PDBx:PDB_ins_code xsi:nil="true" /> <PDBx:PDB_model_num>1</PDBx:PDB_model_num> <PDBx:atom_deviation>0.074</PDBx:atom_deviation> <PDBx:auth_asym_id>DG</PDBx:auth_asym_id> <PDBx:auth_atom_id>O6</PDBx:auth_atom_id> <PDBx:auth_comp_id>A</PDBx:auth_comp_id> <PDBx:auth_seq_id>3</PDBx:auth_seq_id> <PDBx:plane_id>1</PDBx:plane_id> </PDBx:pdbx_validate_planes_atom> <PDBx:pdbx_validate_planes_atom id="9"> <PDBx:PDB_ins_code xsi:nil="true" /> <PDBx:PDB_model_num>1</PDBx:PDB_model_num> <PDBx:atom_deviation>0.050</PDBx:atom_deviation> <PDBx:auth_asym_id>DG</PDBx:auth_asym_id> <PDBx:auth_atom_id>N7</PDBx:auth_atom_id> <PDBx:auth_comp_id>A</PDBx:auth_comp_id> <PDBx:auth_seq_id>3</PDBx:auth_seq_id> <PDBx:plane_id>1</PDBx:plane_id> </PDBx:pdbx_validate_planes_atom> <PDBx:pdbx_validate_planes_atom id="10"> <PDBx:PDB_ins_code xsi:nil="true" /> <PDBx:PDB_model_num>1</PDBx:PDB_model_num> <PDBx:atom_deviation>0.129</PDBx:atom_deviation> <PDBx:auth_asym_id>DG</PDBx:auth_asym_id> <PDBx:auth_atom_id>C8</PDBx:auth_atom_id> <PDBx:auth_comp_id>A</PDBx:auth_comp_id> <PDBx:auth_seq_id>3</PDBx:auth_seq_id> <PDBx:plane_id>1</PDBx:plane_id> </PDBx:pdbx_validate_planes_atom> <PDBx:pdbx_validate_planes_atom id="11"> <PDBx:PDB_ins_code xsi:nil="true" /> <PDBx:PDB_model_num>1</PDBx:PDB_model_num> <PDBx:atom_deviation>0.033</PDBx:atom_deviation> <PDBx:auth_asym_id>DG</PDBx:auth_asym_id> <PDBx:auth_atom_id>N9</PDBx:auth_atom_id> <PDBx:auth_comp_id>A</PDBx:auth_comp_id> <PDBx:auth_seq_id>3</PDBx:auth_seq_id> <PDBx:plane_id>1</PDBx:plane_id> </PDBx:pdbx_validate_planes_atom> <PDBx:pdbx_validate_planes_atom id="12"> <PDBx:PDB_ins_code xsi:nil="true" /> <PDBx:PDB_model_num>1</PDBx:PDB_model_num> <PDBx:atom_deviation>0.147</PDBx:atom_deviation> <PDBx:auth_asym_id>DG</PDBx:auth_asym_id> <PDBx:auth_atom_id>C1&apos;</PDBx:auth_atom_id> <PDBx:auth_comp_id>A</PDBx:auth_comp_id> <PDBx:auth_seq_id>3</PDBx:auth_seq_id> <PDBx:plane_id>1</PDBx:plane_id> </PDBx:pdbx_validate_planes_atom> <PDBx:pdbx_validate_planes_atom id="1"> <PDBx:PDB_ins_code xsi:nil="true" /> <PDBx:PDB_model_num>1</PDBx:PDB_model_num> <PDBx:atom_deviation>0.069</PDBx:atom_deviation> <PDBx:auth_asym_id>DT</PDBx:auth_asym_id> <PDBx:auth_atom_id>N1</PDBx:auth_atom_id> <PDBx:auth_comp_id>A</PDBx:auth_comp_id> <PDBx:auth_seq_id>4</PDBx:auth_seq_id> <PDBx:plane_id>2</PDBx:plane_id> </PDBx:pdbx_validate_planes_atom> </PDBx:pdbx_validate_planes_atomCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_validate_planes_atom (
@@ -13510,7 +13510,7 @@ CREATE TABLE pdbx_validate_planes_atom (
 --
 -- (quoted from pdbx_validate_polymer_linkageType)
 -- Data items in the PDBX_VALIDATE_POLYMER_LINKAGE category list the polymer linkages within the entry that are outside of typlical covalent distances. Example 1 <PDBx:pdbx_validate_polymer_linkageCategory> <PDBx:pdbx_validate_polymer_linkage id="1"> <PDBx:PDB_ins_code_1 xsi:nil="true" /> <PDBx:PDB_ins_code_2 xsi:nil="true" /> <PDBx:PDB_model_num>1</PDBx:PDB_model_num> <PDBx:auth_asym_id_1>B</PDBx:auth_asym_id_1> <PDBx:auth_asym_id_2>B</PDBx:auth_asym_id_2> <PDBx:auth_atom_id_1 xsi:nil="true" /> <PDBx:auth_atom_id_2 xsi:nil="true" /> <PDBx:auth_comp_id_1>VAL</PDBx:auth_comp_id_1> <PDBx:auth_comp_id_2>ARG</PDBx:auth_comp_id_2> <PDBx:auth_seq_id_1>107</PDBx:auth_seq_id_1> <PDBx:auth_seq_id_2>108</PDBx:auth_seq_id_2> <PDBx:dist>3.16</PDBx:dist> <PDBx:label_alt_id_1 xsi:nil="true" /> <PDBx:label_alt_id_2 xsi:nil="true" /> </PDBx:pdbx_validate_polymer_linkage> <PDBx:pdbx_validate_polymer_linkage id="2"> <PDBx:PDB_ins_code_1 xsi:nil="true" /> <PDBx:PDB_ins_code_2 xsi:nil="true" /> <PDBx:PDB_model_num>1</PDBx:PDB_model_num> <PDBx:auth_asym_id_1>B</PDBx:auth_asym_id_1> <PDBx:auth_asym_id_2>B</PDBx:auth_asym_id_2> <PDBx:auth_atom_id_1 xsi:nil="true" /> <PDBx:auth_atom_id_2 xsi:nil="true" /> <PDBx:auth_comp_id_1>ARG</PDBx:auth_comp_id_1> <PDBx:auth_comp_id_2>LYS</PDBx:auth_comp_id_2> <PDBx:auth_seq_id_1>110</PDBx:auth_seq_id_1> <PDBx:auth_seq_id_2>110</PDBx:auth_seq_id_2> <PDBx:dist>2.95</PDBx:dist> <PDBx:label_alt_id_1 xsi:nil="true" /> <PDBx:label_alt_id_2 xsi:nil="true" /> </PDBx:pdbx_validate_polymer_linkage> </PDBx:pdbx_validate_polymer_linkageCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_validate_polymer_linkage (
@@ -13538,7 +13538,7 @@ CREATE TABLE pdbx_validate_polymer_linkage (
 --
 -- (quoted from pdbx_validate_rmsd_angleType)
 -- Data items in the PDBX_VALIDATE_RMSD_ANGLE category list the the covalent bond angles found in an entry that have values which deviate from expected values by more than 6*rmsd for the particular entry from the expected standard value Example 1 <PDBx:pdbx_validate_rmsd_angleCategory> <PDBx:pdbx_validate_rmsd_angle id="1"> <PDBx:PDB_ins_code_1 xsi:nil="true" /> <PDBx:PDB_ins_code_2 xsi:nil="true" /> <PDBx:PDB_ins_code_3 xsi:nil="true" /> <PDBx:PDB_model_num>0</PDBx:PDB_model_num> <PDBx:angle_deviation>-3.14</PDBx:angle_deviation> <PDBx:angle_value>117.16</PDBx:angle_value> <PDBx:auth_asym_id_1>A</PDBx:auth_asym_id_1> <PDBx:auth_asym_id_2>A</PDBx:auth_asym_id_2> <PDBx:auth_asym_id_3>A</PDBx:auth_asym_id_3> <PDBx:auth_atom_id_1>NE</PDBx:auth_atom_id_1> <PDBx:auth_atom_id_2>CZ</PDBx:auth_atom_id_2> <PDBx:auth_atom_id_3>NH2</PDBx:auth_atom_id_3> <PDBx:auth_comp_id_1>ARG</PDBx:auth_comp_id_1> <PDBx:auth_comp_id_2>ARG</PDBx:auth_comp_id_2> <PDBx:auth_comp_id_3>ARG</PDBx:auth_comp_id_3> <PDBx:auth_seq_id_1>35</PDBx:auth_seq_id_1> <PDBx:auth_seq_id_2>35</PDBx:auth_seq_id_2> <PDBx:auth_seq_id_3>35</PDBx:auth_seq_id_3> <PDBx:label_alt_id_1 xsi:nil="true" /> <PDBx:label_alt_id_2 xsi:nil="true" /> <PDBx:label_alt_id_3 xsi:nil="true" /> <PDBx:linker_flag>N</PDBx:linker_flag> </PDBx:pdbx_validate_rmsd_angle> <PDBx:pdbx_validate_rmsd_angle id="2"> <PDBx:PDB_ins_code_1 xsi:nil="true" /> <PDBx:PDB_ins_code_2 xsi:nil="true" /> <PDBx:PDB_ins_code_3 xsi:nil="true" /> <PDBx:PDB_model_num>0</PDBx:PDB_model_num> <PDBx:angle_deviation>34.68</PDBx:angle_deviation> <PDBx:angle_value>148.88</PDBx:angle_value> <PDBx:auth_asym_id_1>A</PDBx:auth_asym_id_1> <PDBx:auth_asym_id_2>A</PDBx:auth_asym_id_2> <PDBx:auth_asym_id_3>A</PDBx:auth_asym_id_3> <PDBx:auth_atom_id_1>CB</PDBx:auth_atom_id_1> <PDBx:auth_atom_id_2>CG</PDBx:auth_atom_id_2> <PDBx:auth_atom_id_3>CD</PDBx:auth_atom_id_3> <PDBx:auth_comp_id_1>GLU</PDBx:auth_comp_id_1> <PDBx:auth_comp_id_2>GLU</PDBx:auth_comp_id_2> <PDBx:auth_comp_id_3>GLU</PDBx:auth_comp_id_3> <PDBx:auth_seq_id_1>166</PDBx:auth_seq_id_1> <PDBx:auth_seq_id_2>166</PDBx:auth_seq_id_2> <PDBx:auth_seq_id_3>166</PDBx:auth_seq_id_3> <PDBx:label_alt_id_1 xsi:nil="true" /> <PDBx:label_alt_id_2 xsi:nil="true" /> <PDBx:label_alt_id_3 xsi:nil="true" /> <PDBx:linker_flag>N</PDBx:linker_flag> </PDBx:pdbx_validate_rmsd_angle> </PDBx:pdbx_validate_rmsd_angleCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_validate_rmsd_angle (
@@ -13579,7 +13579,7 @@ CREATE TABLE pdbx_validate_rmsd_angle (
 --
 -- (quoted from pdbx_validate_rmsd_bondType)
 -- Data items in the PDBX_VALIDATE_RMSD_BOND category list the covalent bonds that have values which deviate from expected values by more than 6*rmsd. Example 1 <PDBx:pdbx_validate_rmsd_bondCategory> <PDBx:pdbx_validate_rmsd_bond id="1"> <PDBx:PDB_ins_code_1 xsi:nil="true" /> <PDBx:PDB_ins_code_2 xsi:nil="true" /> <PDBx:PDB_model_num>0</PDBx:PDB_model_num> <PDBx:auth_asym_id_1>A</PDBx:auth_asym_id_1> <PDBx:auth_asym_id_2>A</PDBx:auth_asym_id_2> <PDBx:auth_atom_id_1>CD</PDBx:auth_atom_id_1> <PDBx:auth_atom_id_2>CE</PDBx:auth_atom_id_2> <PDBx:auth_comp_id_1>LYS</PDBx:auth_comp_id_1> <PDBx:auth_comp_id_2>LYS</PDBx:auth_comp_id_2> <PDBx:auth_seq_id_1>152</PDBx:auth_seq_id_1> <PDBx:auth_seq_id_2>152</PDBx:auth_seq_id_2> <PDBx:bond_deviation>-0.372</PDBx:bond_deviation> <PDBx:bond_value>1.136</PDBx:bond_value> <PDBx:label_alt_id_1 xsi:nil="true" /> <PDBx:label_alt_id_2 xsi:nil="true" /> <PDBx:linker_flag>N</PDBx:linker_flag> </PDBx:pdbx_validate_rmsd_bond> <PDBx:pdbx_validate_rmsd_bond id="2"> <PDBx:PDB_ins_code_1 xsi:nil="true" /> <PDBx:PDB_ins_code_2 xsi:nil="true" /> <PDBx:PDB_model_num>0</PDBx:PDB_model_num> <PDBx:auth_asym_id_1>A</PDBx:auth_asym_id_1> <PDBx:auth_asym_id_2>A</PDBx:auth_asym_id_2> <PDBx:auth_atom_id_1>CG</PDBx:auth_atom_id_1> <PDBx:auth_atom_id_2>CD</PDBx:auth_atom_id_2> <PDBx:auth_comp_id_1>GLU</PDBx:auth_comp_id_1> <PDBx:auth_comp_id_2>GLU</PDBx:auth_comp_id_2> <PDBx:auth_seq_id_1>166</PDBx:auth_seq_id_1> <PDBx:auth_seq_id_2>166</PDBx:auth_seq_id_2> <PDBx:bond_deviation>-0.622</PDBx:bond_deviation> <PDBx:bond_value>0.893</PDBx:bond_value> <PDBx:label_alt_id_1 xsi:nil="true" /> <PDBx:label_alt_id_2 xsi:nil="true" /> <PDBx:linker_flag>N</PDBx:linker_flag> </PDBx:pdbx_validate_rmsd_bond> </PDBx:pdbx_validate_rmsd_bondCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_validate_rmsd_bond (
@@ -13614,7 +13614,7 @@ CREATE TABLE pdbx_validate_rmsd_bond (
 --
 -- (quoted from pdbx_validate_symm_contactType)
 -- Data items in the PDBX_VALIDATE_SYMM_CONTACT category list the atoms within the entry that are in close contact with regard the distances expected from either covalent bonding or closest approach by van der Waals contacts. Contacts with for symmetry related contacts are considered. For those contacts not involving hydrogen a limit of 2.2 Angstroms is used. For contacts involving a hydrogen atom a cutoff of 1.6Angstrom is used. Example 1 <PDBx:pdbx_validate_symm_contactCategory> <PDBx:pdbx_validate_symm_contact id="1"> <PDBx:PDB_ins_code_1 xsi:nil="true" /> <PDBx:PDB_ins_code_2 xsi:nil="true" /> <PDBx:PDB_model_num>1</PDBx:PDB_model_num> <PDBx:auth_asym_id_1 xsi:nil="true" /> <PDBx:auth_asym_id_2 xsi:nil="true" /> <PDBx:auth_atom_id_1>O</PDBx:auth_atom_id_1> <PDBx:auth_atom_id_2>O</PDBx:auth_atom_id_2> <PDBx:auth_comp_id_1>HOH</PDBx:auth_comp_id_1> <PDBx:auth_comp_id_2>HOH</PDBx:auth_comp_id_2> <PDBx:auth_seq_id_1>70</PDBx:auth_seq_id_1> <PDBx:auth_seq_id_2>70</PDBx:auth_seq_id_2> <PDBx:dist>2.05</PDBx:dist> <PDBx:label_alt_id_1 xsi:nil="true" /> <PDBx:label_alt_id_2 xsi:nil="true" /> <PDBx:site_symmetry_1>1555</PDBx:site_symmetry_1> <PDBx:site_symmetry_2>7555</PDBx:site_symmetry_2> </PDBx:pdbx_validate_symm_contact> </PDBx:pdbx_validate_symm_contactCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_validate_symm_contact (
@@ -13644,7 +13644,7 @@ CREATE TABLE pdbx_validate_symm_contact (
 --
 -- (quoted from pdbx_validate_torsionType)
 -- Data items in the PDBX_VALIDATE_TORSION category list the residues with torsion angles outside the expected ramachandran regions Example 1 <PDBx:pdbx_validate_torsionCategory> <PDBx:pdbx_validate_torsion id="1"> <PDBx:PDB_ins_code xsi:nil="true" /> <PDBx:PDB_model_num>1</PDBx:PDB_model_num> <PDBx:auth_asym_id>A</PDBx:auth_asym_id> <PDBx:auth_comp_id>SER</PDBx:auth_comp_id> <PDBx:auth_seq_id>12</PDBx:auth_seq_id> <PDBx:phi>-64.75</PDBx:phi> <PDBx:psi>2.02</PDBx:psi> </PDBx:pdbx_validate_torsion> <PDBx:pdbx_validate_torsion id="2"> <PDBx:PDB_ins_code xsi:nil="true" /> <PDBx:PDB_model_num>1</PDBx:PDB_model_num> <PDBx:auth_asym_id>A</PDBx:auth_asym_id> <PDBx:auth_comp_id>THR</PDBx:auth_comp_id> <PDBx:auth_seq_id>22</PDBx:auth_seq_id> <PDBx:phi>-116.30</PDBx:phi> <PDBx:psi>61.44</PDBx:psi> </PDBx:pdbx_validate_torsion> </PDBx:pdbx_validate_torsionCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_validate_torsion (
@@ -13669,7 +13669,7 @@ CREATE TABLE pdbx_validate_torsion (
 --
 -- (quoted from pdbx_versionType)
 -- Data items in the PDBX_VERSION category record details about the version of this entry. Example 1 - <PDBx:pdbx_versionCategory> <PDBx:pdbx_version entry_id="1ABC" major_version="4" minor_version="0001" revision_type="Citation"> <PDBx:details> Primary citation page numbers added.</PDBx:details> <PDBx:revision_date>2011-05-02</PDBx:revision_date> </PDBx:pdbx_version> </PDBx:pdbx_versionCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_version_revision_type CASCADE;
@@ -13693,7 +13693,7 @@ CREATE TABLE pdbx_version (
 --
 -- (quoted from pdbx_view_itemType)
 -- Data items in the PDBX_VIEW_ITEM specify the mmCIF data items belonging to a view category. An alias name for the the mmCIF item may be specified for the each item in the view category. The role of the item in the view category can be designated as mandatory, optional, or hidden.
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_view_item_item_view_allow_alternate_value CASCADE;
@@ -13714,7 +13714,7 @@ CREATE TABLE pdbx_view_item (
 --
 -- (quoted from pdbx_virtual_angleType)
 -- Data items in the PDBX_VIRTUAL_ANGLE category record details about the molecular virtual angles, as calculated from the contents of the ATOM, CELL, and SYMMETRY data. Example 1 - <PDBx:pdbx_virtual_angleCategory> <PDBx:pdbx_virtual_angle atom_site_id_1="1" atom_site_id_2="15" atom_site_id_3="20" model_id="1" site_symmetry_1="1_555" site_symmetry_2="1_555" site_symmetry_3="1_555"> <PDBx:value>111.6</PDBx:value> </PDBx:pdbx_virtual_angle> </PDBx:pdbx_virtual_angleCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_virtual_angle (
@@ -13770,7 +13770,7 @@ CREATE TABLE pdbx_virtual_angle (
 --
 -- (quoted from pdbx_virtual_bondType)
 -- Data items in the PDBX_VIRTUAL_BOND category record details about virtual bonds, as calculated from the contents of the ATOM, CELL, and SYMMETRY data. Example 1 - <PDBx:pdbx_virtual_bondCategory> <PDBx:pdbx_virtual_bond atom_site_id_1="1" atom_site_id_2="5" model_id="1" site_symmetry_1="1_555" site_symmetry_2="1_555"> <PDBx:dist>3.40</PDBx:dist> </PDBx:pdbx_virtual_bond> </PDBx:pdbx_virtual_bondCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_virtual_bond (
@@ -13813,7 +13813,7 @@ CREATE TABLE pdbx_virtual_bond (
 --
 -- (quoted from pdbx_virtual_torsionType)
 -- Data items in the PDBX_VIRTUAL_TORSION category record details about virtual torsion angles, as calculated from the contents of the ATOM, CELL, and SYMMETRY data. Example 1 - <PDBx:pdbx_virtual_torsionCategory> <PDBx:pdbx_virtual_torsion atom_site_id_1="1" atom_site_id_2="2" atom_site_id_3="5" atom_site_id_4="9" model_id="1" site_symmetry_1="1_555" site_symmetry_2="1_555" site_symmetry_3="1_555" site_symmetry_4="1_555"> <PDBx:value>71.8</PDBx:value> </PDBx:pdbx_virtual_torsion> </PDBx:pdbx_virtual_torsionCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_virtual_torsion (
@@ -13882,7 +13882,7 @@ CREATE TABLE pdbx_virtual_torsion (
 --
 -- (quoted from pdbx_xplor_fileType)
 -- Parameter and topology files used in X-PLOR/CNS refinement. <PDBx:pdbx_xplor_fileCategory> <PDBx:pdbx_xplor_file pdbx_refine_id="x-ray" serial_no="1"> <PDBx:param_file>parm_hol.dat</PDBx:param_file> <PDBx:topol_file>topol_hol.dat</PDBx:topol_file> </PDBx:pdbx_xplor_file> </PDBx:pdbx_xplor_fileCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_xplor_file (
@@ -13899,7 +13899,7 @@ CREATE TABLE pdbx_xplor_file (
 --
 -- (quoted from phasingType)
 -- Data items in the PHASING category record details about the phasing of the structure, listing the various methods used in the phasing process. Details about the application of each method are listed in the appropriate subcategories. Example 1 - hypothetical example. <PDBx:phasingCategory> <PDBx:phasing method="mir"></PDBx:phasing> <PDBx:phasing method="averaging"></PDBx:phasing> </PDBx:phasingCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE phasing (
@@ -13912,7 +13912,7 @@ CREATE TABLE phasing (
 --
 -- (quoted from phasing_MADType)
 -- Data items in the PHASING_MAD category record details about the phasing of the structure where methods involving multiple-wavelength anomalous-dispersion techniques are involved. Example 1 - based on a paper by Shapiro et al. [Nature (London) (1995), 374, 327-337]. <PDBx:phasing_MADCategory> <PDBx:phasing_MAD entry_id="NCAD"></PDBx:phasing_MAD> </PDBx:phasing_MADCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE "phasing_MAD" (
@@ -13949,7 +13949,7 @@ CREATE TABLE "phasing_MAD" (
 --
 -- (quoted from phasing_MAD_clustType)
 -- Data items in the PHASING_MAD_CLUST category record details about a cluster of experiments that contributed to the generation of a set of phases. Example 1 - based on a paper by Shapiro et al. [Nature (London) (1995), 374, 327-337]. <PDBx:phasing_MAD_clustCategory> <PDBx:phasing_MAD_clust expt_id="1" id="4 wavelength"> <PDBx:number_set>4</PDBx:number_set> </PDBx:phasing_MAD_clust> <PDBx:phasing_MAD_clust expt_id="1" id="5 wavelength"> <PDBx:number_set>5</PDBx:number_set> </PDBx:phasing_MAD_clust> <PDBx:phasing_MAD_clust expt_id="2" id="5 wavelength"> <PDBx:number_set>5</PDBx:number_set> </PDBx:phasing_MAD_clust> </PDBx:phasing_MAD_clustCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE "phasing_MAD_clust" (
@@ -13965,7 +13965,7 @@ CREATE TABLE "phasing_MAD_clust" (
 --
 -- (quoted from phasing_MAD_ratioType)
 -- Data items in the PHASING_MAD_RATIO category record the ratios of phasing statistics between pairs of data sets in a MAD phasing experiment, in given shells of resolution. Example 1 - based on a paper by Shapiro et al. [Nature (London) (1995), 374, 327-337]. <PDBx:phasing_MAD_ratioCategory> <PDBx:phasing_MAD_ratio clust_id="4 wavelength" expt_id="1" wavelength_1="1.4013" wavelength_2="1.4013"> <PDBx:d_res_high>4.00</PDBx:d_res_high> <PDBx:d_res_low>20.00</PDBx:d_res_low> <PDBx:ratio_one_wl>0.084</PDBx:ratio_one_wl> <PDBx:ratio_one_wl_centric>0.076</PDBx:ratio_one_wl_centric> <PDBx:ratio_two_wl xsi:nil="true" /> </PDBx:phasing_MAD_ratio> <PDBx:phasing_MAD_ratio clust_id="4 wavelength" expt_id="1" wavelength_1="1.4013" wavelength_2="1.3857"> <PDBx:d_res_high>4.00</PDBx:d_res_high> <PDBx:d_res_low>20.00</PDBx:d_res_low> <PDBx:ratio_one_wl xsi:nil="true" /> <PDBx:ratio_one_wl_centric xsi:nil="true" /> <PDBx:ratio_two_wl>0.067</PDBx:ratio_two_wl> </PDBx:phasing_MAD_ratio> <PDBx:phasing_MAD_ratio clust_id="4 wavelength" expt_id="1" wavelength_1="1.4013" wavelength_2="1.3852"> <PDBx:d_res_high>4.00</PDBx:d_res_high> <PDBx:d_res_low>20.00</PDBx:d_res_low> <PDBx:ratio_one_wl xsi:nil="true" /> <PDBx:ratio_one_wl_centric xsi:nil="true" /> <PDBx:ratio_two_wl>0.051</PDBx:ratio_two_wl> </PDBx:phasing_MAD_ratio> <PDBx:phasing_MAD_ratio clust_id="4 wavelength" expt_id="1" wavelength_1="1.4013" wavelength_2="1.3847"> <PDBx:d_res_high>4.00</PDBx:d_res_high> <PDBx:d_res_low>20.00</PDBx:d_res_low> <PDBx:ratio_one_wl xsi:nil="true" /> <PDBx:ratio_one_wl_centric xsi:nil="true" /> <PDBx:ratio_two_wl>0.044</PDBx:ratio_two_wl> </PDBx:phasing_MAD_ratio> <PDBx:phasing_MAD_ratio clust_id="4 wavelength" expt_id="1" wavelength_1="1.3857" wavelength_2="1.3857"> <PDBx:d_res_high>4.00</PDBx:d_res_high> <PDBx:d_res_low>20.00</PDBx:d_res_low> <PDBx:ratio_one_wl>0.110</PDBx:ratio_one_wl> <PDBx:ratio_one_wl_centric>0.049</PDBx:ratio_one_wl_centric> <PDBx:ratio_two_wl xsi:nil="true" /> </PDBx:phasing_MAD_ratio> <PDBx:phasing_MAD_ratio clust_id="4 wavelength" expt_id="1" wavelength_1="1.3857" wavelength_2="1.3852"> <PDBx:d_res_high>4.00</PDBx:d_res_high> <PDBx:d_res_low>20.00</PDBx:d_res_low> <PDBx:ratio_one_wl xsi:nil="true" /> <PDBx:ratio_one_wl_centric xsi:nil="true" /> <PDBx:ratio_two_wl>0.049</PDBx:ratio_two_wl> </PDBx:phasing_MAD_ratio> <PDBx:phasing_MAD_ratio clust_id="4 wavelength" expt_id="1" wavelength_1="1.3857" wavelength_2="1.3847"> <PDBx:d_res_high>4.00</PDBx:d_res_high> <PDBx:d_res_low>20.00</PDBx:d_res_low> <PDBx:ratio_one_wl xsi:nil="true" /> <PDBx:ratio_one_wl_centric xsi:nil="true" /> <PDBx:ratio_two_wl>0.067</PDBx:ratio_two_wl> </PDBx:phasing_MAD_ratio> <PDBx:phasing_MAD_ratio clust_id="4 wavelength" expt_id="1" wavelength_1="1.3852" wavelength_2="1.3852"> <PDBx:d_res_high>4.00</PDBx:d_res_high> <PDBx:d_res_low>20.00</PDBx:d_res_low> <PDBx:ratio_one_wl>0.149</PDBx:ratio_one_wl> <PDBx:ratio_one_wl_centric>0.072</PDBx:ratio_one_wl_centric> <PDBx:ratio_two_wl xsi:nil="true" /> </PDBx:phasing_MAD_ratio> <PDBx:phasing_MAD_ratio clust_id="4 wavelength" expt_id="1" wavelength_1="1.3852" wavelength_2="1.3847"> <PDBx:d_res_high>4.00</PDBx:d_res_high> <PDBx:d_res_low>20.00</PDBx:d_res_low> <PDBx:ratio_one_wl xsi:nil="true" /> <PDBx:ratio_one_wl_centric xsi:nil="true" /> <PDBx:ratio_two_wl>0.039</PDBx:ratio_two_wl> </PDBx:phasing_MAD_ratio> <PDBx:phasing_MAD_ratio clust_id="4 wavelength" expt_id="1" wavelength_1="1.3847" wavelength_2="1.3847"> <PDBx:d_res_high>4.00</PDBx:d_res_high> <PDBx:d_res_low>20.00</PDBx:d_res_low> <PDBx:ratio_one_wl>0.102</PDBx:ratio_one_wl> <PDBx:ratio_one_wl_centric>0.071</PDBx:ratio_one_wl_centric> <PDBx:ratio_two_wl xsi:nil="true" /> </PDBx:phasing_MAD_ratio> <PDBx:phasing_MAD_ratio clust_id="4 wavelength" expt_id="1" wavelength_1="1.4013" wavelength_2="1.4013"> <PDBx:d_res_high>3.00</PDBx:d_res_high> <PDBx:d_res_low>4.00</PDBx:d_res_low> <PDBx:ratio_one_wl>0.114</PDBx:ratio_one_wl> <PDBx:ratio_one_wl_centric>0.111</PDBx:ratio_one_wl_centric> <PDBx:ratio_two_wl xsi:nil="true" /> </PDBx:phasing_MAD_ratio> <PDBx:phasing_MAD_ratio clust_id="4 wavelength" expt_id="1" wavelength_1="1.4013" wavelength_2="1.3857"> <PDBx:d_res_high>3.00</PDBx:d_res_high> <PDBx:d_res_low>4.00</PDBx:d_res_low> <PDBx:ratio_one_wl xsi:nil="true" /> <PDBx:ratio_one_wl_centric xsi:nil="true" /> <PDBx:ratio_two_wl>0.089</PDBx:ratio_two_wl> </PDBx:phasing_MAD_ratio> <PDBx:phasing_MAD_ratio clust_id="4 wavelength" expt_id="1" wavelength_1="1.4013" wavelength_2="1.3852"> <PDBx:d_res_high>3.00</PDBx:d_res_high> <PDBx:d_res_low>4.00</PDBx:d_res_low> <PDBx:ratio_one_wl xsi:nil="true" /> <PDBx:ratio_one_wl_centric xsi:nil="true" /> <PDBx:ratio_two_wl>0.086</PDBx:ratio_two_wl> </PDBx:phasing_MAD_ratio> <PDBx:phasing_MAD_ratio clust_id="4 wavelength" expt_id="1" wavelength_1="1.4013" wavelength_2="1.3847"> <PDBx:d_res_high>3.00</PDBx:d_res_high> <PDBx:d_res_low>4.00</PDBx:d_res_low> <PDBx:ratio_one_wl xsi:nil="true" /> <PDBx:ratio_one_wl_centric xsi:nil="true" /> <PDBx:ratio_two_wl>0.077</PDBx:ratio_two_wl> </PDBx:phasing_MAD_ratio> <PDBx:phasing_MAD_ratio clust_id="4 wavelength" expt_id="1" wavelength_1="1.3857" wavelength_2="1.3857"> <PDBx:d_res_high>3.00</PDBx:d_res_high> <PDBx:d_res_low>4.00</PDBx:d_res_low> <PDBx:ratio_one_wl>0.140</PDBx:ratio_one_wl> <PDBx:ratio_one_wl_centric>0.127</PDBx:ratio_one_wl_centric> <PDBx:ratio_two_wl xsi:nil="true" /> </PDBx:phasing_MAD_ratio> <PDBx:phasing_MAD_ratio clust_id="4 wavelength" expt_id="1" wavelength_1="1.3857" wavelength_2="1.3852"> <PDBx:d_res_high>3.00</PDBx:d_res_high> <PDBx:d_res_low>4.00</PDBx:d_res_low> <PDBx:ratio_one_wl xsi:nil="true" /> <PDBx:ratio_one_wl_centric xsi:nil="true" /> <PDBx:ratio_two_wl>0.085</PDBx:ratio_two_wl> </PDBx:phasing_MAD_ratio> <PDBx:phasing_MAD_ratio clust_id="4 wavelength" expt_id="1" wavelength_1="1.3857" wavelength_2="1.3847"> <PDBx:d_res_high>3.00</PDBx:d_res_high> <PDBx:d_res_low>4.00</PDBx:d_res_low> <PDBx:ratio_one_wl xsi:nil="true" /> <PDBx:ratio_one_wl_centric xsi:nil="true" /> <PDBx:ratio_two_wl>0.089</PDBx:ratio_two_wl> </PDBx:phasing_MAD_ratio> <PDBx:phasing_MAD_ratio clust_id="4 wavelength" expt_id="1" wavelength_1="1.3852" wavelength_2="1.3852"> <PDBx:d_res_high>3.00</PDBx:d_res_high> <PDBx:d_res_low>4.00</PDBx:d_res_low> <PDBx:ratio_one_wl>0.155</PDBx:ratio_one_wl> <PDBx:ratio_one_wl_centric>0.119</PDBx:ratio_one_wl_centric> <PDBx:ratio_two_wl xsi:nil="true" /> </PDBx:phasing_MAD_ratio> <PDBx:phasing_MAD_ratio clust_id="4 wavelength" expt_id="1" wavelength_1="1.3852" wavelength_2="1.3847"> <PDBx:d_res_high>3.00</PDBx:d_res_high> <PDBx:d_res_low>4.00</PDBx:d_res_low> <PDBx:ratio_one_wl xsi:nil="true" /> <PDBx:ratio_one_wl_centric xsi:nil="true" /> <PDBx:ratio_two_wl>0.082</PDBx:ratio_two_wl> </PDBx:phasing_MAD_ratio> <PDBx:phasing_MAD_ratio clust_id="4 wavelength" expt_id="1" wavelength_1="1.3847" wavelength_2="1.3847"> <PDBx:d_res_high>3.00</PDBx:d_res_high> <PDBx:d_res_low>4.00</PDBx:d_res_low> <PDBx:ratio_one_wl>0.124</PDBx:ratio_one_wl> <PDBx:ratio_one_wl_centric>0.120</PDBx:ratio_one_wl_centric> <PDBx:ratio_two_wl xsi:nil="true" /> </PDBx:phasing_MAD_ratio> <PDBx:phasing_MAD_ratio clust_id="5 wavelength" expt_id="1" wavelength_1="1.3857" wavelength_2="1.3857"> <PDBx:d_res_high>4.00</PDBx:d_res_high> <PDBx:d_res_low>20.00</PDBx:d_res_low> <PDBx:ratio_one_wl>0.075</PDBx:ratio_one_wl> <PDBx:ratio_one_wl_centric>0.027</PDBx:ratio_one_wl_centric> <PDBx:ratio_two_wl xsi:nil="true" /> </PDBx:phasing_MAD_ratio> <PDBx:phasing_MAD_ratio clust_id="5 wavelength" expt_id="1" wavelength_1="1.3857" wavelength_2="1.3852"> <PDBx:d_res_high>4.00</PDBx:d_res_high> <PDBx:d_res_low>20.00</PDBx:d_res_low> <PDBx:ratio_one_wl xsi:nil="true" /> <PDBx:ratio_one_wl_centric xsi:nil="true" /> <PDBx:ratio_two_wl>0.041</PDBx:ratio_two_wl> </PDBx:phasing_MAD_ratio> <PDBx:phasing_MAD_ratio clust_id="5 wavelength" expt_id="1" wavelength_1="1.3857" wavelength_2="1.3847"> <PDBx:d_res_high>4.00</PDBx:d_res_high> <PDBx:d_res_low>20.00</PDBx:d_res_low> <PDBx:ratio_one_wl xsi:nil="true" /> <PDBx:ratio_one_wl_centric xsi:nil="true" /> <PDBx:ratio_two_wl>0.060</PDBx:ratio_two_wl> </PDBx:phasing_MAD_ratio> <PDBx:phasing_MAD_ratio clust_id="5 wavelength" expt_id="1" wavelength_1="1.3857" wavelength_2="1.3784"> <PDBx:d_res_high>4.00</PDBx:d_res_high> <PDBx:d_res_low>20.00</PDBx:d_res_low> <PDBx:ratio_one_wl xsi:nil="true" /> <PDBx:ratio_one_wl_centric xsi:nil="true" /> <PDBx:ratio_two_wl>0.057</PDBx:ratio_two_wl> </PDBx:phasing_MAD_ratio> <PDBx:phasing_MAD_ratio clust_id="5 wavelength" expt_id="1" wavelength_1="1.3857" wavelength_2="1.2862"> <PDBx:d_res_high>4.00</PDBx:d_res_high> <PDBx:d_res_low>20.00</PDBx:d_res_low> <PDBx:ratio_one_wl xsi:nil="true" /> <PDBx:ratio_one_wl_centric xsi:nil="true" /> <PDBx:ratio_two_wl>0.072</PDBx:ratio_two_wl> </PDBx:phasing_MAD_ratio> <PDBx:phasing_MAD_ratio clust_id="5 wavelength" expt_id="1" wavelength_1="1.3852" wavelength_2="1.3852"> <PDBx:d_res_high>4.00</PDBx:d_res_high> <PDBx:d_res_low>20.00</PDBx:d_res_low> <PDBx:ratio_one_wl>0.105</PDBx:ratio_one_wl> <PDBx:ratio_one_wl_centric>0.032</PDBx:ratio_one_wl_centric> <PDBx:ratio_two_wl xsi:nil="true" /> </PDBx:phasing_MAD_ratio> <PDBx:phasing_MAD_ratio clust_id="5 wavelength" expt_id="1" wavelength_1="1.3852" wavelength_2="1.3847"> <PDBx:d_res_high>4.00</PDBx:d_res_high> <PDBx:d_res_low>20.00</PDBx:d_res_low> <PDBx:ratio_one_wl xsi:nil="true" /> <PDBx:ratio_one_wl_centric xsi:nil="true" /> <PDBx:ratio_two_wl>0.036</PDBx:ratio_two_wl> </PDBx:phasing_MAD_ratio> <PDBx:phasing_MAD_ratio clust_id="5 wavelength" expt_id="1" wavelength_1="1.3852" wavelength_2="1.3784"> <PDBx:d_res_high>4.00</PDBx:d_res_high> <PDBx:d_res_low>20.00</PDBx:d_res_low> <PDBx:ratio_one_wl xsi:nil="true" /> <PDBx:ratio_one_wl_centric xsi:nil="true" /> <PDBx:ratio_two_wl>0.044</PDBx:ratio_two_wl> </PDBx:phasing_MAD_ratio> <PDBx:phasing_MAD_ratio clust_id="5 wavelength" expt_id="1" wavelength_1="1.3852" wavelength_2="1.2862"> <PDBx:d_res_high>4.00</PDBx:d_res_high> <PDBx:d_res_low>20.00</PDBx:d_res_low> <PDBx:ratio_one_wl xsi:nil="true" /> <PDBx:ratio_one_wl_centric xsi:nil="true" /> <PDBx:ratio_two_wl>0.065</PDBx:ratio_two_wl> </PDBx:phasing_MAD_ratio> <PDBx:phasing_MAD_ratio clust_id="5 wavelength" expt_id="1" wavelength_1="1.3847" wavelength_2="1.3847"> <PDBx:d_res_high>4.00</PDBx:d_res_high> <PDBx:d_res_low>20.00</PDBx:d_res_low> <PDBx:ratio_one_wl>0.072</PDBx:ratio_one_wl> <PDBx:ratio_one_wl_centric>0.031</PDBx:ratio_one_wl_centric> <PDBx:ratio_two_wl xsi:nil="true" /> </PDBx:phasing_MAD_ratio> <PDBx:phasing_MAD_ratio clust_id="5 wavelength" expt_id="1" wavelength_1="1.3847" wavelength_2="1.3784"> <PDBx:d_res_high>4.00</PDBx:d_res_high> <PDBx:d_res_low>20.00</PDBx:d_res_low> <PDBx:ratio_one_wl xsi:nil="true" /> <PDBx:ratio_one_wl_centric xsi:nil="true" /> <PDBx:ratio_two_wl>0.040</PDBx:ratio_two_wl> </PDBx:phasing_MAD_ratio> <PDBx:phasing_MAD_ratio clust_id="5 wavelength" expt_id="1" wavelength_1="1.3847" wavelength_2="1.2862"> <PDBx:d_res_high>4.00</PDBx:d_res_high> <PDBx:d_res_low>20.00</PDBx:d_res_low> <PDBx:ratio_one_wl xsi:nil="true" /> <PDBx:ratio_one_wl_centric xsi:nil="true" /> <PDBx:ratio_two_wl>0.059</PDBx:ratio_two_wl> </PDBx:phasing_MAD_ratio> <PDBx:phasing_MAD_ratio clust_id="5 wavelength" expt_id="1" wavelength_1="1.3784" wavelength_2="1.3784"> <PDBx:d_res_high>4.00</PDBx:d_res_high> <PDBx:d_res_low>20.00</PDBx:d_res_low> <PDBx:ratio_one_wl>0.059</PDBx:ratio_one_wl> <PDBx:ratio_one_wl_centric>0.032</PDBx:ratio_one_wl_centric> <PDBx:ratio_two_wl xsi:nil="true" /> </PDBx:phasing_MAD_ratio> <PDBx:phasing_MAD_ratio clust_id="5 wavelength" expt_id="1" wavelength_1="1.3784" wavelength_2="1.2862"> <PDBx:d_res_high>4.00</PDBx:d_res_high> <PDBx:d_res_low>20.00</PDBx:d_res_low> <PDBx:ratio_one_wl xsi:nil="true" /> <PDBx:ratio_one_wl_centric xsi:nil="true" /> <PDBx:ratio_two_wl>0.059</PDBx:ratio_two_wl> </PDBx:phasing_MAD_ratio> <PDBx:phasing_MAD_ratio clust_id="5 wavelength" expt_id="1" wavelength_1="1.2862" wavelength_2="1.3847"> <PDBx:d_res_high>4.00</PDBx:d_res_high> <PDBx:d_res_low>20.00</PDBx:d_res_low> <PDBx:ratio_one_wl>0.058</PDBx:ratio_one_wl> <PDBx:ratio_one_wl_centric>0.028</PDBx:ratio_one_wl_centric> <PDBx:ratio_two_wl xsi:nil="true" /> </PDBx:phasing_MAD_ratio> <PDBx:phasing_MAD_ratio clust_id="5 wavelength" expt_id="1" wavelength_1="1.3857" wavelength_2="1.3857"> <PDBx:d_res_high>3.00</PDBx:d_res_high> <PDBx:d_res_low>4.00</PDBx:d_res_low> <PDBx:ratio_one_wl>0.078</PDBx:ratio_one_wl> <PDBx:ratio_one_wl_centric>0.075</PDBx:ratio_one_wl_centric> <PDBx:ratio_two_wl xsi:nil="true" /> </PDBx:phasing_MAD_ratio> <PDBx:phasing_MAD_ratio clust_id="5 wavelength" expt_id="1" wavelength_1="1.3857" wavelength_2="1.3852"> <PDBx:d_res_high>3.00</PDBx:d_res_high> <PDBx:d_res_low>4.00</PDBx:d_res_low> <PDBx:ratio_one_wl xsi:nil="true" /> <PDBx:ratio_one_wl_centric xsi:nil="true" /> <PDBx:ratio_two_wl>0.059</PDBx:ratio_two_wl> </PDBx:phasing_MAD_ratio> <PDBx:phasing_MAD_ratio clust_id="5 wavelength" expt_id="1" wavelength_1="1.3857" wavelength_2="1.3847"> <PDBx:d_res_high>3.00</PDBx:d_res_high> <PDBx:d_res_low>4.00</PDBx:d_res_low> <PDBx:ratio_one_wl xsi:nil="true" /> <PDBx:ratio_one_wl_centric xsi:nil="true" /> <PDBx:ratio_two_wl>0.067</PDBx:ratio_two_wl> </PDBx:phasing_MAD_ratio> <PDBx:phasing_MAD_ratio clust_id="5 wavelength" expt_id="1" wavelength_1="1.3857" wavelength_2="1.3784"> <PDBx:d_res_high>3.00</PDBx:d_res_high> <PDBx:d_res_low>4.00</PDBx:d_res_low> <PDBx:ratio_one_wl xsi:nil="true" /> <PDBx:ratio_one_wl_centric xsi:nil="true" /> <PDBx:ratio_two_wl>0.084</PDBx:ratio_two_wl> </PDBx:phasing_MAD_ratio> <PDBx:phasing_MAD_ratio clust_id="5 wavelength" expt_id="1" wavelength_1="1.3857" wavelength_2="1.2862"> <PDBx:d_res_high>3.00</PDBx:d_res_high> <PDBx:d_res_low>4.00</PDBx:d_res_low> <PDBx:ratio_one_wl xsi:nil="true" /> <PDBx:ratio_one_wl_centric xsi:nil="true" /> <PDBx:ratio_two_wl>0.073</PDBx:ratio_two_wl> </PDBx:phasing_MAD_ratio> <PDBx:phasing_MAD_ratio clust_id="5 wavelength" expt_id="1" wavelength_1="1.3852" wavelength_2="1.3852"> <PDBx:d_res_high>3.00</PDBx:d_res_high> <PDBx:d_res_low>4.00</PDBx:d_res_low> <PDBx:ratio_one_wl>0.101</PDBx:ratio_one_wl> <PDBx:ratio_one_wl_centric>0.088</PDBx:ratio_one_wl_centric> <PDBx:ratio_two_wl xsi:nil="true" /> </PDBx:phasing_MAD_ratio> <PDBx:phasing_MAD_ratio clust_id="5 wavelength" expt_id="1" wavelength_1="1.3852" wavelength_2="1.3847"> <PDBx:d_res_high>3.00</PDBx:d_res_high> <PDBx:d_res_low>4.00</PDBx:d_res_low> <PDBx:ratio_one_wl xsi:nil="true" /> <PDBx:ratio_one_wl_centric xsi:nil="true" /> <PDBx:ratio_two_wl>0.066</PDBx:ratio_two_wl> </PDBx:phasing_MAD_ratio> <PDBx:phasing_MAD_ratio clust_id="5 wavelength" expt_id="1" wavelength_1="1.3852" wavelength_2="1.3784"> <PDBx:d_res_high>3.00</PDBx:d_res_high> <PDBx:d_res_low>4.00</PDBx:d_res_low> <PDBx:ratio_one_wl xsi:nil="true" /> <PDBx:ratio_one_wl_centric xsi:nil="true" /> <PDBx:ratio_two_wl>0.082</PDBx:ratio_two_wl> </PDBx:phasing_MAD_ratio> <PDBx:phasing_MAD_ratio clust_id="5 wavelength" expt_id="1" wavelength_1="1.3852" wavelength_2="1.2862"> <PDBx:d_res_high>3.00</PDBx:d_res_high> <PDBx:d_res_low>4.00</PDBx:d_res_low> <PDBx:ratio_one_wl xsi:nil="true" /> <PDBx:ratio_one_wl_centric xsi:nil="true" /> <PDBx:ratio_two_wl>0.085</PDBx:ratio_two_wl> </PDBx:phasing_MAD_ratio> <PDBx:phasing_MAD_ratio clust_id="5 wavelength" expt_id="1" wavelength_1="1.3847" wavelength_2="1.3847"> <PDBx:d_res_high>3.00</PDBx:d_res_high> <PDBx:d_res_low>4.00</PDBx:d_res_low> <PDBx:ratio_one_wl>0.097</PDBx:ratio_one_wl> <PDBx:ratio_one_wl_centric>0.074</PDBx:ratio_one_wl_centric> <PDBx:ratio_two_wl xsi:nil="true" /> </PDBx:phasing_MAD_ratio> <PDBx:phasing_MAD_ratio clust_id="5 wavelength" expt_id="1" wavelength_1="1.3847" wavelength_2="1.3784"> <PDBx:d_res_high>3.00</PDBx:d_res_high> <PDBx:d_res_low>4.00</PDBx:d_res_low> <PDBx:ratio_one_wl xsi:nil="true" /> <PDBx:ratio_one_wl_centric xsi:nil="true" /> <PDBx:ratio_two_wl>0.081</PDBx:ratio_two_wl> </PDBx:phasing_MAD_ratio> <PDBx:phasing_MAD_ratio clust_id="5 wavelength" expt_id="1" wavelength_1="1.3847" wavelength_2="1.2862"> <PDBx:d_res_high>3.00</PDBx:d_res_high> <PDBx:d_res_low>4.00</PDBx:d_res_low> <PDBx:ratio_one_wl xsi:nil="true" /> <PDBx:ratio_one_wl_centric xsi:nil="true" /> <PDBx:ratio_two_wl>0.085</PDBx:ratio_two_wl> </PDBx:phasing_MAD_ratio> <PDBx:phasing_MAD_ratio clust_id="5 wavelength" expt_id="1" wavelength_1="1.3784" wavelength_2="1.3784"> <PDBx:d_res_high>3.00</PDBx:d_res_high> <PDBx:d_res_low>4.00</PDBx:d_res_low> <PDBx:ratio_one_wl>0.114</PDBx:ratio_one_wl> <PDBx:ratio_one_wl_centric>0.089</PDBx:ratio_one_wl_centric> <PDBx:ratio_two_wl xsi:nil="true" /> </PDBx:phasing_MAD_ratio> <PDBx:phasing_MAD_ratio clust_id="5 wavelength" expt_id="1" wavelength_1="1.3784" wavelength_2="1.2862"> <PDBx:d_res_high>3.00</PDBx:d_res_high> <PDBx:d_res_low>4.00</PDBx:d_res_low> <PDBx:ratio_one_wl xsi:nil="true" /> <PDBx:ratio_one_wl_centric xsi:nil="true" /> <PDBx:ratio_two_wl>0.103</PDBx:ratio_two_wl> </PDBx:phasing_MAD_ratio> <PDBx:phasing_MAD_ratio clust_id="5 wavelength" expt_id="1" wavelength_1="1.2862" wavelength_2="1.2862"> <PDBx:d_res_high>3.00</PDBx:d_res_high> <PDBx:d_res_low>4.00</PDBx:d_res_low> <PDBx:ratio_one_wl>0.062</PDBx:ratio_one_wl> <PDBx:ratio_one_wl_centric>0.060</PDBx:ratio_one_wl_centric> <PDBx:ratio_two_wl xsi:nil="true" /> </PDBx:phasing_MAD_ratio> <PDBx:phasing_MAD_ratio clust_id="5 wavelength" expt_id="2" wavelength_1="0.7263" wavelength_2="0.7263"> <PDBx:d_res_high>3.00</PDBx:d_res_high> <PDBx:d_res_low>15.00</PDBx:d_res_low> <PDBx:ratio_one_wl>0.035</PDBx:ratio_one_wl> <PDBx:ratio_one_wl_centric>0.026</PDBx:ratio_one_wl_centric> <PDBx:ratio_two_wl xsi:nil="true" /> </PDBx:phasing_MAD_ratio> <PDBx:phasing_MAD_ratio clust_id="5 wavelength" expt_id="2" wavelength_1="0.7263" wavelength_2="0.7251"> <PDBx:d_res_high>3.00</PDBx:d_res_high> <PDBx:d_res_low>15.00</PDBx:d_res_low> <PDBx:ratio_one_wl xsi:nil="true" /> <PDBx:ratio_one_wl_centric xsi:nil="true" /> <PDBx:ratio_two_wl>0.028</PDBx:ratio_two_wl> </PDBx:phasing_MAD_ratio> <PDBx:phasing_MAD_ratio clust_id="5 wavelength" expt_id="2" wavelength_1="0.7263" wavelength_2="0.7284"> <PDBx:d_res_high>3.00</PDBx:d_res_high> <PDBx:d_res_low>15.00</PDBx:d_res_low> <PDBx:ratio_one_wl xsi:nil="true" /> <PDBx:ratio_one_wl_centric xsi:nil="true" /> <PDBx:ratio_two_wl>0.023</PDBx:ratio_two_wl> </PDBx:phasing_MAD_ratio> <PDBx:phasing_MAD_ratio clust_id="5 wavelength" expt_id="2" wavelength_1="0.7263" wavelength_2="0.7246"> <PDBx:d_res_high>3.00</PDBx:d_res_high> <PDBx:d_res_low>15.00</PDBx:d_res_low> <PDBx:ratio_one_wl xsi:nil="true" /> <PDBx:ratio_one_wl_centric xsi:nil="true" /> <PDBx:ratio_two_wl>0.025</PDBx:ratio_two_wl> </PDBx:phasing_MAD_ratio> <PDBx:phasing_MAD_ratio clust_id="5 wavelength" expt_id="2" wavelength_1="0.7263" wavelength_2="0.7217"> <PDBx:d_res_high>3.00</PDBx:d_res_high> <PDBx:d_res_low>15.00</PDBx:d_res_low> <PDBx:ratio_one_wl xsi:nil="true" /> <PDBx:ratio_one_wl_centric xsi:nil="true" /> <PDBx:ratio_two_wl>0.026</PDBx:ratio_two_wl> </PDBx:phasing_MAD_ratio> <PDBx:phasing_MAD_ratio clust_id="5 wavelength" expt_id="2" wavelength_1="0.7251" wavelength_2="0.7251"> <PDBx:d_res_high>3.00</PDBx:d_res_high> <PDBx:d_res_low>15.00</PDBx:d_res_low> <PDBx:ratio_one_wl>0.060</PDBx:ratio_one_wl> <PDBx:ratio_one_wl_centric>0.026</PDBx:ratio_one_wl_centric> <PDBx:ratio_two_wl xsi:nil="true" /> </PDBx:phasing_MAD_ratio> <PDBx:phasing_MAD_ratio clust_id="5 wavelength" expt_id="2" wavelength_1="0.7251" wavelength_2="0.7284"> <PDBx:d_res_high>3.00</PDBx:d_res_high> <PDBx:d_res_low>15.00</PDBx:d_res_low> <PDBx:ratio_one_wl xsi:nil="true" /> <PDBx:ratio_one_wl_centric xsi:nil="true" /> <PDBx:ratio_two_wl>0.029</PDBx:ratio_two_wl> </PDBx:phasing_MAD_ratio> <PDBx:phasing_MAD_ratio clust_id="5 wavelength" expt_id="2" wavelength_1="0.7251" wavelength_2="0.7246"> <PDBx:d_res_high>3.00</PDBx:d_res_high> <PDBx:d_res_low>15.00</PDBx:d_res_low> <PDBx:ratio_one_wl xsi:nil="true" /> <PDBx:ratio_one_wl_centric xsi:nil="true" /> <PDBx:ratio_two_wl>0.031</PDBx:ratio_two_wl> </PDBx:phasing_MAD_ratio> <PDBx:phasing_MAD_ratio clust_id="5 wavelength" expt_id="2" wavelength_1="0.7251" wavelength_2="0.7217"> <PDBx:d_res_high>3.00</PDBx:d_res_high> <PDBx:d_res_low>15.00</PDBx:d_res_low> <PDBx:ratio_one_wl xsi:nil="true" /> <PDBx:ratio_one_wl_centric xsi:nil="true" /> <PDBx:ratio_two_wl>0.035</PDBx:ratio_two_wl> </PDBx:phasing_MAD_ratio> <PDBx:phasing_MAD_ratio clust_id="5 wavelength" expt_id="2" wavelength_1="0.7284" wavelength_2="0.7284"> <PDBx:d_res_high>3.00</PDBx:d_res_high> <PDBx:d_res_low>15.00</PDBx:d_res_low> <PDBx:ratio_one_wl>0.075</PDBx:ratio_one_wl> <PDBx:ratio_one_wl_centric>0.030</PDBx:ratio_one_wl_centric> <PDBx:ratio_two_wl xsi:nil="true" /> </PDBx:phasing_MAD_ratio> <PDBx:phasing_MAD_ratio clust_id="5 wavelength" expt_id="2" wavelength_1="0.7284" wavelength_2="0.7246"> <PDBx:d_res_high>3.00</PDBx:d_res_high> <PDBx:d_res_low>15.00</PDBx:d_res_low> <PDBx:ratio_one_wl xsi:nil="true" /> <PDBx:ratio_one_wl_centric xsi:nil="true" /> <PDBx:ratio_two_wl>0.023</PDBx:ratio_two_wl> </PDBx:phasing_MAD_ratio> <PDBx:phasing_MAD_ratio clust_id="5 wavelength" expt_id="2" wavelength_1="0.7284" wavelength_2="0.7217"> <PDBx:d_res_high>3.00</PDBx:d_res_high> <PDBx:d_res_low>15.00</PDBx:d_res_low> <PDBx:ratio_one_wl xsi:nil="true" /> <PDBx:ratio_one_wl_centric xsi:nil="true" /> <PDBx:ratio_two_wl>0.027</PDBx:ratio_two_wl> </PDBx:phasing_MAD_ratio> <PDBx:phasing_MAD_ratio clust_id="5 wavelength" expt_id="2" wavelength_1="0.7246" wavelength_2="0.7246"> <PDBx:d_res_high>3.00</PDBx:d_res_high> <PDBx:d_res_low>15.00</PDBx:d_res_low> <PDBx:ratio_one_wl>0.069</PDBx:ratio_one_wl> <PDBx:ratio_one_wl_centric>0.026</PDBx:ratio_one_wl_centric> <PDBx:ratio_two_wl xsi:nil="true" /> </PDBx:phasing_MAD_ratio> <PDBx:phasing_MAD_ratio clust_id="5 wavelength" expt_id="2" wavelength_1="0.7246" wavelength_2="0.7217"> <PDBx:d_res_high>3.00</PDBx:d_res_high> <PDBx:d_res_low>15.00</PDBx:d_res_low> <PDBx:ratio_one_wl xsi:nil="true" /> <PDBx:ratio_one_wl_centric xsi:nil="true" /> <PDBx:ratio_two_wl>0.024</PDBx:ratio_two_wl> </PDBx:phasing_MAD_ratio> <PDBx:phasing_MAD_ratio clust_id="5 wavelength" expt_id="2" wavelength_1="0.7217" wavelength_2="0.7284"> <PDBx:d_res_high>3.00</PDBx:d_res_high> <PDBx:d_res_low>15.00</PDBx:d_res_low> <PDBx:ratio_one_wl>0.060</PDBx:ratio_one_wl> <PDBx:ratio_one_wl_centric>0.028</PDBx:ratio_one_wl_centric> <PDBx:ratio_two_wl xsi:nil="true" /> </PDBx:phasing_MAD_ratio> <PDBx:phasing_MAD_ratio clust_id="5 wavelength" expt_id="2" wavelength_1="0.7263" wavelength_2="0.7263"> <PDBx:d_res_high>1.90</PDBx:d_res_high> <PDBx:d_res_low>3.00</PDBx:d_res_low> <PDBx:ratio_one_wl>0.060</PDBx:ratio_one_wl> <PDBx:ratio_one_wl_centric>0.050</PDBx:ratio_one_wl_centric> <PDBx:ratio_two_wl xsi:nil="true" /> </PDBx:phasing_MAD_ratio> <PDBx:phasing_MAD_ratio clust_id="5 wavelength" expt_id="2" wavelength_1="0.7263" wavelength_2="0.7251"> <PDBx:d_res_high>1.90</PDBx:d_res_high> <PDBx:d_res_low>3.00</PDBx:d_res_low> <PDBx:ratio_one_wl xsi:nil="true" /> <PDBx:ratio_one_wl_centric xsi:nil="true" /> <PDBx:ratio_two_wl>0.056</PDBx:ratio_two_wl> </PDBx:phasing_MAD_ratio> <PDBx:phasing_MAD_ratio clust_id="5 wavelength" expt_id="2" wavelength_1="0.7263" wavelength_2="0.7284"> <PDBx:d_res_high>1.90</PDBx:d_res_high> <PDBx:d_res_low>3.00</PDBx:d_res_low> <PDBx:ratio_one_wl xsi:nil="true" /> <PDBx:ratio_one_wl_centric xsi:nil="true" /> <PDBx:ratio_two_wl>0.055</PDBx:ratio_two_wl> </PDBx:phasing_MAD_ratio> <PDBx:phasing_MAD_ratio clust_id="5 wavelength" expt_id="2" wavelength_1="0.7263" wavelength_2="0.7246"> <PDBx:d_res_high>1.90</PDBx:d_res_high> <PDBx:d_res_low>3.00</PDBx:d_res_low> <PDBx:ratio_one_wl xsi:nil="true" /> <PDBx:ratio_one_wl_centric xsi:nil="true" /> <PDBx:ratio_two_wl>0.053</PDBx:ratio_two_wl> </PDBx:phasing_MAD_ratio> <PDBx:phasing_MAD_ratio clust_id="5 wavelength" expt_id="2" wavelength_1="0.7263" wavelength_2="0.7217"> <PDBx:d_res_high>1.90</PDBx:d_res_high> <PDBx:d_res_low>3.00</PDBx:d_res_low> <PDBx:ratio_one_wl xsi:nil="true" /> <PDBx:ratio_one_wl_centric xsi:nil="true" /> <PDBx:ratio_two_wl>0.056</PDBx:ratio_two_wl> </PDBx:phasing_MAD_ratio> <PDBx:phasing_MAD_ratio clust_id="5 wavelength" expt_id="2" wavelength_1="0.7251" wavelength_2="0.7251"> <PDBx:d_res_high>1.90</PDBx:d_res_high> <PDBx:d_res_low>3.00</PDBx:d_res_low> <PDBx:ratio_one_wl>0.089</PDBx:ratio_one_wl> <PDBx:ratio_one_wl_centric>0.050</PDBx:ratio_one_wl_centric> <PDBx:ratio_two_wl xsi:nil="true" /> </PDBx:phasing_MAD_ratio> <PDBx:phasing_MAD_ratio clust_id="5 wavelength" expt_id="2" wavelength_1="0.7251" wavelength_2="0.7284"> <PDBx:d_res_high>1.90</PDBx:d_res_high> <PDBx:d_res_low>3.00</PDBx:d_res_low> <PDBx:ratio_one_wl xsi:nil="true" /> <PDBx:ratio_one_wl_centric xsi:nil="true" /> <PDBx:ratio_two_wl>0.054</PDBx:ratio_two_wl> </PDBx:phasing_MAD_ratio> <PDBx:phasing_MAD_ratio clust_id="5 wavelength" expt_id="2" wavelength_1="0.7251" wavelength_2="0.7246"> <PDBx:d_res_high>1.90</PDBx:d_res_high> <PDBx:d_res_low>3.00</PDBx:d_res_low> <PDBx:ratio_one_wl xsi:nil="true" /> <PDBx:ratio_one_wl_centric xsi:nil="true" /> <PDBx:ratio_two_wl>0.058</PDBx:ratio_two_wl> </PDBx:phasing_MAD_ratio> <PDBx:phasing_MAD_ratio clust_id="5 wavelength" expt_id="2" wavelength_1="0.7251" wavelength_2="0.7217"> <PDBx:d_res_high>1.90</PDBx:d_res_high> <PDBx:d_res_low>3.00</PDBx:d_res_low> <PDBx:ratio_one_wl xsi:nil="true" /> <PDBx:ratio_one_wl_centric xsi:nil="true" /> <PDBx:ratio_two_wl>0.063</PDBx:ratio_two_wl> </PDBx:phasing_MAD_ratio> <PDBx:phasing_MAD_ratio clust_id="5 wavelength" expt_id="2" wavelength_1="0.7284" wavelength_2="0.7284"> <PDBx:d_res_high>1.90</PDBx:d_res_high> <PDBx:d_res_low>3.00</PDBx:d_res_low> <PDBx:ratio_one_wl>0.104</PDBx:ratio_one_wl> <PDBx:ratio_one_wl_centric>0.057</PDBx:ratio_one_wl_centric> <PDBx:ratio_two_wl xsi:nil="true" /> </PDBx:phasing_MAD_ratio> <PDBx:phasing_MAD_ratio clust_id="5 wavelength" expt_id="2" wavelength_1="0.7284" wavelength_2="0.7246"> <PDBx:d_res_high>1.90</PDBx:d_res_high> <PDBx:d_res_low>3.00</PDBx:d_res_low> <PDBx:ratio_one_wl xsi:nil="true" /> <PDBx:ratio_one_wl_centric xsi:nil="true" /> <PDBx:ratio_two_wl>0.052</PDBx:ratio_two_wl> </PDBx:phasing_MAD_ratio> <PDBx:phasing_MAD_ratio clust_id="5 wavelength" expt_id="2" wavelength_1="0.7284" wavelength_2="0.7217"> <PDBx:d_res_high>1.90</PDBx:d_res_high> <PDBx:d_res_low>3.00</PDBx:d_res_low> <PDBx:ratio_one_wl xsi:nil="true" /> <PDBx:ratio_one_wl_centric xsi:nil="true" /> <PDBx:ratio_two_wl>0.057</PDBx:ratio_two_wl> </PDBx:phasing_MAD_ratio> <PDBx:phasing_MAD_ratio clust_id="5 wavelength" expt_id="2" wavelength_1="0.7246" wavelength_2="0.7246"> <PDBx:d_res_high>1.90</PDBx:d_res_high> <PDBx:d_res_low>3.00</PDBx:d_res_low> <PDBx:ratio_one_wl>0.098</PDBx:ratio_one_wl> <PDBx:ratio_one_wl_centric>0.052</PDBx:ratio_one_wl_centric> <PDBx:ratio_two_wl xsi:nil="true" /> </PDBx:phasing_MAD_ratio> <PDBx:phasing_MAD_ratio clust_id="5 wavelength" expt_id="2" wavelength_1="0.7246" wavelength_2="0.7217"> <PDBx:d_res_high>1.90</PDBx:d_res_high> <PDBx:d_res_low>3.00</PDBx:d_res_low> <PDBx:ratio_one_wl xsi:nil="true" /> <PDBx:ratio_one_wl_centric xsi:nil="true" /> <PDBx:ratio_two_wl>0.054</PDBx:ratio_two_wl> </PDBx:phasing_MAD_ratio> <PDBx:phasing_MAD_ratio clust_id="5 wavelength" expt_id="2" wavelength_1="0.7217" wavelength_2="0.7284"> <PDBx:d_res_high>1.90</PDBx:d_res_high> <PDBx:d_res_low>3.00</PDBx:d_res_low> <PDBx:ratio_one_wl>0.089</PDBx:ratio_one_wl> <PDBx:ratio_one_wl_centric>0.060</PDBx:ratio_one_wl_centric> <PDBx:ratio_two_wl xsi:nil="true" /> </PDBx:phasing_MAD_ratio> </PDBx:phasing_MAD_ratioCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE "phasing_MAD_ratio" (
@@ -13989,7 +13989,7 @@ CREATE TABLE "phasing_MAD_ratio" (
 --
 -- (quoted from phasing_MAD_setType)
 -- Data items in the PHASING_MAD_SET category record details about the individual data sets used in a MAD phasing experiment. Example 1 - based on a paper by Shapiro et al. [Nature (London) (1995), 374, 327-337]. <PDBx:phasing_MAD_setCategory> <PDBx:phasing_MAD_set clust_id="4 wavelength" expt_id="1" set_id="aa" wavelength="1.4013"> <PDBx:d_res_high>3.00</PDBx:d_res_high> <PDBx:d_res_low>20.00</PDBx:d_res_low> <PDBx:f_double_prime>3.80</PDBx:f_double_prime> <PDBx:f_prime>-12.48</PDBx:f_prime> <PDBx:wavelength_details>pre-edge</PDBx:wavelength_details> </PDBx:phasing_MAD_set> <PDBx:phasing_MAD_set clust_id="4 wavelength" expt_id="1" set_id="bb" wavelength="1.3857"> <PDBx:d_res_high>3.00</PDBx:d_res_high> <PDBx:d_res_low>20.00</PDBx:d_res_low> <PDBx:f_double_prime>17.20</PDBx:f_double_prime> <PDBx:f_prime>-31.22</PDBx:f_prime> <PDBx:wavelength_details>peak</PDBx:wavelength_details> </PDBx:phasing_MAD_set> <PDBx:phasing_MAD_set clust_id="4 wavelength" expt_id="1" set_id="cc" wavelength="1.3852"> <PDBx:d_res_high>3.00</PDBx:d_res_high> <PDBx:d_res_low>20.00</PDBx:d_res_low> <PDBx:f_double_prime>29.17</PDBx:f_double_prime> <PDBx:f_prime>-13.97</PDBx:f_prime> <PDBx:wavelength_details>edge</PDBx:wavelength_details> </PDBx:phasing_MAD_set> <PDBx:phasing_MAD_set clust_id="4 wavelength" expt_id="1" set_id="dd" wavelength="1.3847"> <PDBx:d_res_high>3.00</PDBx:d_res_high> <PDBx:d_res_low>20.00</PDBx:d_res_low> <PDBx:f_double_prime>17.34</PDBx:f_double_prime> <PDBx:f_prime>-6.67</PDBx:f_prime> <PDBx:wavelength_details>remote</PDBx:wavelength_details> </PDBx:phasing_MAD_set> <PDBx:phasing_MAD_set clust_id="5 wavelength" expt_id="1" set_id="ee" wavelength="1.3857"> <PDBx:d_res_high>3.00</PDBx:d_res_high> <PDBx:d_res_low>20.00</PDBx:d_res_low> <PDBx:f_double_prime>14.84</PDBx:f_double_prime> <PDBx:f_prime>-28.33</PDBx:f_prime> <PDBx:wavelength_details>ascending edge</PDBx:wavelength_details> </PDBx:phasing_MAD_set> <PDBx:phasing_MAD_set clust_id="5 wavelength" expt_id="1" set_id="ff" wavelength="1.3852"> <PDBx:d_res_high>3.00</PDBx:d_res_high> <PDBx:d_res_low>20.00</PDBx:d_res_low> <PDBx:f_double_prime>30.23</PDBx:f_double_prime> <PDBx:f_prime>-21.50</PDBx:f_prime> <PDBx:wavelength_details>peak</PDBx:wavelength_details> </PDBx:phasing_MAD_set> <PDBx:phasing_MAD_set clust_id="5 wavelength" expt_id="1" set_id="gg" wavelength="1.3847"> <PDBx:d_res_high>3.00</PDBx:d_res_high> <PDBx:d_res_low>20.00</PDBx:d_res_low> <PDBx:f_double_prime>20.35</PDBx:f_double_prime> <PDBx:f_prime>-10.71</PDBx:f_prime> <PDBx:wavelength_details>descending edge</PDBx:wavelength_details> </PDBx:phasing_MAD_set> <PDBx:phasing_MAD_set clust_id="5 wavelength" expt_id="1" set_id="hh" wavelength="1.3784"> <PDBx:d_res_high>3.00</PDBx:d_res_high> <PDBx:d_res_low>20.00</PDBx:d_res_low> <PDBx:f_double_prime>11.84</PDBx:f_double_prime> <PDBx:f_prime>-14.45</PDBx:f_prime> <PDBx:wavelength_details>remote 1</PDBx:wavelength_details> </PDBx:phasing_MAD_set> <PDBx:phasing_MAD_set clust_id="5 wavelength" expt_id="1" set_id="ii" wavelength="1.2862"> <PDBx:d_res_high>3.00</PDBx:d_res_high> <PDBx:d_res_low>20.00</PDBx:d_res_low> <PDBx:f_double_prime>9.01</PDBx:f_double_prime> <PDBx:f_prime>-9.03</PDBx:f_prime> <PDBx:wavelength_details>remote 2</PDBx:wavelength_details> </PDBx:phasing_MAD_set> <PDBx:phasing_MAD_set clust_id="5 wavelength" expt_id="2" set_id="jj" wavelength="0.7263"> <PDBx:d_res_high>1.90</PDBx:d_res_high> <PDBx:d_res_low>15.00</PDBx:d_res_low> <PDBx:f_double_prime>4.08</PDBx:f_double_prime> <PDBx:f_prime>-21.10</PDBx:f_prime> <PDBx:wavelength_details>pre-edge</PDBx:wavelength_details> </PDBx:phasing_MAD_set> <PDBx:phasing_MAD_set clust_id="5 wavelength" expt_id="2" set_id="kk" wavelength="0.7251"> <PDBx:d_res_high>1.90</PDBx:d_res_high> <PDBx:d_res_low>15.00</PDBx:d_res_low> <PDBx:f_double_prime>7.92</PDBx:f_double_prime> <PDBx:f_prime>-34.72</PDBx:f_prime> <PDBx:wavelength_details>edge</PDBx:wavelength_details> </PDBx:phasing_MAD_set> <PDBx:phasing_MAD_set clust_id="5 wavelength" expt_id="2" set_id="ll" wavelength="0.7248"> <PDBx:d_res_high>1.90</PDBx:d_res_high> <PDBx:d_res_low>15.00</PDBx:d_res_low> <PDBx:f_double_prime>10.30</PDBx:f_double_prime> <PDBx:f_prime>-24.87</PDBx:f_prime> <PDBx:wavelength_details>peak</PDBx:wavelength_details> </PDBx:phasing_MAD_set> <PDBx:phasing_MAD_set clust_id="5 wavelength" expt_id="2" set_id="mm" wavelength="0.7246"> <PDBx:d_res_high>1.90</PDBx:d_res_high> <PDBx:d_res_low>15.00</PDBx:d_res_low> <PDBx:f_double_prime>9.62</PDBx:f_double_prime> <PDBx:f_prime>-17.43</PDBx:f_prime> <PDBx:wavelength_details>descending edge</PDBx:wavelength_details> </PDBx:phasing_MAD_set> <PDBx:phasing_MAD_set clust_id="5 wavelength" expt_id="2" set_id="nn" wavelength="0.7217"> <PDBx:d_res_high>1.90</PDBx:d_res_high> <PDBx:d_res_low>15.00</PDBx:d_res_low> <PDBx:f_double_prime>8.40</PDBx:f_double_prime> <PDBx:f_prime>-13.26</PDBx:f_prime> <PDBx:wavelength_details>remote</PDBx:wavelength_details> </PDBx:phasing_MAD_set> </PDBx:phasing_MAD_setCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE "phasing_MAD_set" (
@@ -14016,7 +14016,7 @@ CREATE TABLE "phasing_MAD_set" (
 --
 -- (quoted from phasing_MIRType)
 -- Data items in the PHASING_MIR category record details about the phasing of the structure where methods involving isomorphous replacement are involved. All isomorphous-replacement-based techniques are covered by this category, including single isomorphous replacement (SIR), multiple isomorphous replacement (MIR) and single or multiple isomorphous replacement plus anomalous scattering (SIRAS, MIRAS). Example 1 - based on a paper by Zanotti et al. [J. Biol. Chem. (1993), 268, 10728-10738]. <PDBx:phasing_MIRCategory> <PDBx:phasing_MIR entry_id="1ABC"> <PDBx:method> Standard phase refinement (Blow &amp; Crick, 1959)</PDBx:method> </PDBx:phasing_MIR> </PDBx:phasing_MIRCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE "phasing_MIR" (
@@ -14049,7 +14049,7 @@ CREATE TABLE "phasing_MIR" (
 --
 -- (quoted from phasing_MIR_der_reflnType)
 -- Data items in the PHASING_MIR_DER_REFLN category record details about the calculated structure factors obtained in an MIR phasing experiment. This list may contain information from a number of different derivatives; attribute der_id in category phasing_MIR_der_refln indicates to which derivative a given record corresponds. (A derivative in this context does not necessarily equate with a data set; see the definition of the PHASING_MIR_DER category for a discussion of the meaning of derivative.) It is not necessary for the data items describing the measured value of F to appear in this list, as they will be given in the PHASING_SET_REFLN category. However, these items can also be listed here for completeness. Example 1 - based on laboratory records for the 6,1,25 reflection of an Hg/Pt derivative of protein NS1. <PDBx:phasing_MIR_der_reflnCategory> <PDBx:phasing_MIR_der_refln der_id="HGPT1" index_h="6" index_k="1" index_l="25" set_id="NS1-96"> <PDBx:F_calc_au>106.66</PDBx:F_calc_au> <PDBx:F_meas_au>204.67</PDBx:F_meas_au> <PDBx:F_meas_sigma>6.21</PDBx:F_meas_sigma> <PDBx:HL_A_iso>-3.15</PDBx:HL_A_iso> <PDBx:HL_B_iso>-0.76</PDBx:HL_B_iso> <PDBx:HL_C_iso>0.65</PDBx:HL_C_iso> <PDBx:HL_D_iso>0.23</PDBx:HL_D_iso> <PDBx:phase_calc>194.48</PDBx:phase_calc> </PDBx:phasing_MIR_der_refln> </PDBx:phasing_MIR_der_reflnCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE "phasing_MIR_der_refln" (
@@ -14088,7 +14088,7 @@ CREATE TABLE "phasing_MIR_der_refln" (
 --
 -- (quoted from phasing_MIR_der_shellType)
 -- Data items in the PHASING_MIR_DER_SHELL category record statistics, broken down into shells of resolution, for an MIR phasing experiment. This list may contain information from a number of different derivatives; attribute der_id in category phasing_MIR_der_shell indicates to which derivative a given record corresponds. (A derivative in this context does not necessarily equate with a data set; see the definition of the PHASING_MIR_DER category for a discussion of the meaning of derivative.) Example 1 - based on a paper by Zanotti et al. [J. Biol. Chem. (1993), 268, 10728-10738] with addition of an arbitrary low-resolution limit. <PDBx:phasing_MIR_der_shellCategory> <PDBx:phasing_MIR_der_shell d_res_high="8.3" d_res_low="15.0" der_id="KAu(CN)2"> <PDBx:ha_ampl>54</PDBx:ha_ampl> <PDBx:loc>26</PDBx:loc> </PDBx:phasing_MIR_der_shell> <PDBx:phasing_MIR_der_shell d_res_high="6.4" d_res_low="8.3" der_id="KAu(CN)2"> <PDBx:ha_ampl>54</PDBx:ha_ampl> <PDBx:loc>20</PDBx:loc> </PDBx:phasing_MIR_der_shell> <PDBx:phasing_MIR_der_shell d_res_high="5.2" d_res_low="6.4" der_id="KAu(CN)2"> <PDBx:ha_ampl>50</PDBx:ha_ampl> <PDBx:loc>20</PDBx:loc> </PDBx:phasing_MIR_der_shell> <PDBx:phasing_MIR_der_shell d_res_high="4.4" d_res_low="5.2" der_id="KAu(CN)2"> <PDBx:ha_ampl>44</PDBx:ha_ampl> <PDBx:loc>23</PDBx:loc> </PDBx:phasing_MIR_der_shell> <PDBx:phasing_MIR_der_shell d_res_high="3.8" d_res_low="4.4" der_id="KAu(CN)2"> <PDBx:ha_ampl>39</PDBx:ha_ampl> <PDBx:loc>23</PDBx:loc> </PDBx:phasing_MIR_der_shell> <PDBx:phasing_MIR_der_shell d_res_high="3.4" d_res_low="3.8" der_id="KAu(CN)2"> <PDBx:ha_ampl>33</PDBx:ha_ampl> <PDBx:loc>21</PDBx:loc> </PDBx:phasing_MIR_der_shell> <PDBx:phasing_MIR_der_shell d_res_high="3.0" d_res_low="3.4" der_id="KAu(CN)2"> <PDBx:ha_ampl>28</PDBx:ha_ampl> <PDBx:loc>17</PDBx:loc> </PDBx:phasing_MIR_der_shell> <PDBx:phasing_MIR_der_shell d_res_high="3.0" d_res_low="15.0" der_id="KAu(CN)2"> <PDBx:ha_ampl>38</PDBx:ha_ampl> <PDBx:loc>21</PDBx:loc> </PDBx:phasing_MIR_der_shell> <PDBx:phasing_MIR_der_shell d_res_high="8.3" d_res_low="15.0" der_id="K2HgI4"> <PDBx:ha_ampl>149</PDBx:ha_ampl> <PDBx:loc>87</PDBx:loc> </PDBx:phasing_MIR_der_shell> <PDBx:phasing_MIR_der_shell d_res_high="6.4" d_res_low="8.3" der_id="K2HgI4"> <PDBx:ha_ampl>121</PDBx:ha_ampl> <PDBx:loc>73</PDBx:loc> </PDBx:phasing_MIR_der_shell> <PDBx:phasing_MIR_der_shell d_res_high="5.2" d_res_low="6.4" der_id="K2HgI4"> <PDBx:ha_ampl>95</PDBx:ha_ampl> <PDBx:loc>61</PDBx:loc> </PDBx:phasing_MIR_der_shell> <PDBx:phasing_MIR_der_shell d_res_high="4.4" d_res_low="5.2" der_id="K2HgI4"> <PDBx:ha_ampl>80</PDBx:ha_ampl> <PDBx:loc>60</PDBx:loc> </PDBx:phasing_MIR_der_shell> <PDBx:phasing_MIR_der_shell d_res_high="3.8" d_res_low="4.4" der_id="K2HgI4"> <PDBx:ha_ampl>73</PDBx:ha_ampl> <PDBx:loc>63</PDBx:loc> </PDBx:phasing_MIR_der_shell> <PDBx:phasing_MIR_der_shell d_res_high="3.4" d_res_low="3.8" der_id="K2HgI4"> <PDBx:ha_ampl>68</PDBx:ha_ampl> <PDBx:loc>57</PDBx:loc> </PDBx:phasing_MIR_der_shell> <PDBx:phasing_MIR_der_shell d_res_high="3.0" d_res_low="3.4" der_id="K2HgI4"> <PDBx:ha_ampl>63</PDBx:ha_ampl> <PDBx:loc>46</PDBx:loc> </PDBx:phasing_MIR_der_shell> <PDBx:phasing_MIR_der_shell d_res_high="3.0" d_res_low="15.0" der_id="K2HgI4"> <PDBx:ha_ampl>79</PDBx:ha_ampl> <PDBx:loc>58</PDBx:loc> </PDBx:phasing_MIR_der_shell> <PDBx:phasing_MIR_der_shell d_res_high="8.3" d_res_low="15.0" der_id="K3IrCl6"> <PDBx:ha_ampl>33</PDBx:ha_ampl> <PDBx:loc>27</PDBx:loc> </PDBx:phasing_MIR_der_shell> <PDBx:phasing_MIR_der_shell d_res_high="6.4" d_res_low="8.3" der_id="K3IrCl6"> <PDBx:ha_ampl>40</PDBx:ha_ampl> <PDBx:loc>23</PDBx:loc> </PDBx:phasing_MIR_der_shell> <PDBx:phasing_MIR_der_shell d_res_high="5.2" d_res_low="6.4" der_id="K3IrCl6"> <PDBx:ha_ampl>31</PDBx:ha_ampl> <PDBx:loc>22</PDBx:loc> </PDBx:phasing_MIR_der_shell> <PDBx:phasing_MIR_der_shell d_res_high="4.4" d_res_low="5.2" der_id="K3IrCl6"> <PDBx:ha_ampl>27</PDBx:ha_ampl> <PDBx:loc>23</PDBx:loc> </PDBx:phasing_MIR_der_shell> <PDBx:phasing_MIR_der_shell d_res_high="3.8" d_res_low="4.4" der_id="K3IrCl6"> <PDBx:ha_ampl>22</PDBx:ha_ampl> <PDBx:loc>23</PDBx:loc> </PDBx:phasing_MIR_der_shell> <PDBx:phasing_MIR_der_shell d_res_high="3.4" d_res_low="3.8" der_id="K3IrCl6"> <PDBx:ha_ampl>19</PDBx:ha_ampl> <PDBx:loc>20</PDBx:loc> </PDBx:phasing_MIR_der_shell> <PDBx:phasing_MIR_der_shell d_res_high="3.0" d_res_low="3.4" der_id="K3IrCl6"> <PDBx:ha_ampl>16</PDBx:ha_ampl> <PDBx:loc>20</PDBx:loc> </PDBx:phasing_MIR_der_shell> <PDBx:phasing_MIR_der_shell d_res_high="3.0" d_res_low="15.0" der_id="K3IrCl6"> <PDBx:ha_ampl>23</PDBx:ha_ampl> <PDBx:loc>21</PDBx:loc> </PDBx:phasing_MIR_der_shell> </PDBx:phasing_MIR_der_shellCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE "phasing_MIR_der_shell" (
@@ -14134,7 +14134,7 @@ CREATE TABLE "phasing_MIR_der_shell" (
 --
 -- (quoted from phasing_MIR_der_siteType)
 -- Data items in the PHASING_MIR_DER_SITE category record details about the heavy-atom sites in an MIR phasing experiment. This list may contain information from a number of different derivatives; attribute der_id in category phasing_MIR_der_site indicates to which derivative a given record corresponds. (A derivative in this context does not necessarily equate with a data set; see the definition of the PHASING_MIR_DER category for a discussion of the meaning of derivative.) Example 1 - based on a paper by Zanotti et al. [J. Biol. Chem. (1993), 268, 10728-10738] with occupancies converted from electrons to fractional. <PDBx:phasing_MIR_der_siteCategory> <PDBx:phasing_MIR_der_site der_id="KAu(CN)2" id="1"> <PDBx:B_iso>33.0</PDBx:B_iso> <PDBx:atom_type_symbol>Au</PDBx:atom_type_symbol> <PDBx:fract_x>0.082</PDBx:fract_x> <PDBx:fract_y>0.266</PDBx:fract_y> <PDBx:fract_z>0.615</PDBx:fract_z> <PDBx:occupancy>0.40</PDBx:occupancy> </PDBx:phasing_MIR_der_site> <PDBx:phasing_MIR_der_site der_id="KAu(CN)2" id="2"> <PDBx:B_iso>25.9</PDBx:B_iso> <PDBx:atom_type_symbol>Au</PDBx:atom_type_symbol> <PDBx:fract_x>0.607</PDBx:fract_x> <PDBx:fract_y>0.217</PDBx:fract_y> <PDBx:fract_z>0.816</PDBx:fract_z> <PDBx:occupancy>0.03</PDBx:occupancy> </PDBx:phasing_MIR_der_site> <PDBx:phasing_MIR_der_site der_id="KAu(CN)2" id="3"> <PDBx:B_iso>15.7</PDBx:B_iso> <PDBx:atom_type_symbol>Au</PDBx:atom_type_symbol> <PDBx:fract_x>0.263</PDBx:fract_x> <PDBx:fract_y>0.782</PDBx:fract_y> <PDBx:fract_z>0.906</PDBx:fract_z> <PDBx:occupancy>0.02</PDBx:occupancy> </PDBx:phasing_MIR_der_site> <PDBx:phasing_MIR_der_site der_id="K2HgI4" id="1"> <PDBx:B_iso>33.7</PDBx:B_iso> <PDBx:atom_type_symbol>Hg</PDBx:atom_type_symbol> <PDBx:fract_x>0.048</PDBx:fract_x> <PDBx:fract_y>0.286</PDBx:fract_y> <PDBx:fract_z>0.636</PDBx:fract_z> <PDBx:occupancy>0.63</PDBx:occupancy> </PDBx:phasing_MIR_der_site> <PDBx:phasing_MIR_der_site der_id="K2HgI4" id="2"> <PDBx:B_iso>36.7</PDBx:B_iso> <PDBx:atom_type_symbol>Hg</PDBx:atom_type_symbol> <PDBx:fract_x>0.913</PDBx:fract_x> <PDBx:fract_y>0.768</PDBx:fract_y> <PDBx:fract_z>0.889</PDBx:fract_z> <PDBx:occupancy>0.34</PDBx:occupancy> </PDBx:phasing_MIR_der_site> <PDBx:phasing_MIR_der_site der_id="K2HgI4" id="3"> <PDBx:B_iso>24.2</PDBx:B_iso> <PDBx:atom_type_symbol>Hg</PDBx:atom_type_symbol> <PDBx:fract_x>0.974</PDBx:fract_x> <PDBx:fract_y>0.455</PDBx:fract_y> <PDBx:fract_z>0.974</PDBx:fract_z> <PDBx:occupancy>0.23</PDBx:occupancy> </PDBx:phasing_MIR_der_site> <PDBx:phasing_MIR_der_site der_id="K2HgI4" id="4"> <PDBx:B_iso>14.7</PDBx:B_iso> <PDBx:atom_type_symbol>Hg</PDBx:atom_type_symbol> <PDBx:fract_x>0.903</PDBx:fract_x> <PDBx:fract_y>0.836</PDBx:fract_y> <PDBx:fract_z>0.859</PDBx:fract_z> <PDBx:occupancy>0.28</PDBx:occupancy> </PDBx:phasing_MIR_der_site> <PDBx:phasing_MIR_der_site der_id="K2HgI4" id="5"> <PDBx:B_iso>6.4</PDBx:B_iso> <PDBx:atom_type_symbol>Hg</PDBx:atom_type_symbol> <PDBx:fract_x>0.489</PDBx:fract_x> <PDBx:fract_y>0.200</PDBx:fract_y> <PDBx:fract_z>0.885</PDBx:fract_z> <PDBx:occupancy>0.07</PDBx:occupancy> </PDBx:phasing_MIR_der_site> <PDBx:phasing_MIR_der_site der_id="K2HgI4" id="6"> <PDBx:B_iso>32.9</PDBx:B_iso> <PDBx:atom_type_symbol>Hg</PDBx:atom_type_symbol> <PDBx:fract_x>0.162</PDBx:fract_x> <PDBx:fract_y>0.799</PDBx:fract_y> <PDBx:fract_z>0.889</PDBx:fract_z> <PDBx:occupancy>0.07</PDBx:occupancy> </PDBx:phasing_MIR_der_site> <PDBx:phasing_MIR_der_site der_id="K3IrCl6" id="1"> <PDBx:B_iso>40.8</PDBx:B_iso> <PDBx:atom_type_symbol>Ir</PDBx:atom_type_symbol> <PDBx:fract_x>0.209</PDBx:fract_x> <PDBx:fract_y>0.739</PDBx:fract_y> <PDBx:fract_z>0.758</PDBx:fract_z> <PDBx:occupancy>0.26</PDBx:occupancy> </PDBx:phasing_MIR_der_site> <PDBx:phasing_MIR_der_site der_id="K3IrCl6" id="2"> <PDBx:B_iso>24.9</PDBx:B_iso> <PDBx:atom_type_symbol>Ir</PDBx:atom_type_symbol> <PDBx:fract_x>0.279</PDBx:fract_x> <PDBx:fract_y>0.613</PDBx:fract_y> <PDBx:fract_z>0.752</PDBx:fract_z> <PDBx:occupancy>0.05</PDBx:occupancy> </PDBx:phasing_MIR_der_site> </PDBx:phasing_MIR_der_siteCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE "phasing_MIR_der_site" (
@@ -14179,7 +14179,7 @@ CREATE TABLE "phasing_MIR_der_site" (
 --
 -- (quoted from phasing_MIR_shellType)
 -- Data items in the PHASING_MIR_SHELL category record statistics for an isomorphous replacement phasing experiment.broken down into shells of resolution. Example 1 - based on a paper by Zanotti et al. [J. Biol. Chem. (1993), 268, 10728-10738] with addition of an arbitrary low-resolution limit. <PDBx:phasing_MIR_shellCategory> <PDBx:phasing_MIR_shell d_res_high="8.3" d_res_low="15.0"> <PDBx:FOM>0.69</PDBx:FOM> <PDBx:reflns>80</PDBx:reflns> </PDBx:phasing_MIR_shell> <PDBx:phasing_MIR_shell d_res_high="6.4" d_res_low="8.3"> <PDBx:FOM>0.73</PDBx:FOM> <PDBx:reflns>184</PDBx:reflns> </PDBx:phasing_MIR_shell> <PDBx:phasing_MIR_shell d_res_high="5.2" d_res_low="6.4"> <PDBx:FOM>0.72</PDBx:FOM> <PDBx:reflns>288</PDBx:reflns> </PDBx:phasing_MIR_shell> <PDBx:phasing_MIR_shell d_res_high="4.4" d_res_low="5.2"> <PDBx:FOM>0.65</PDBx:FOM> <PDBx:reflns>406</PDBx:reflns> </PDBx:phasing_MIR_shell> <PDBx:phasing_MIR_shell d_res_high="3.8" d_res_low="4.4"> <PDBx:FOM>0.54</PDBx:FOM> <PDBx:reflns>554</PDBx:reflns> </PDBx:phasing_MIR_shell> <PDBx:phasing_MIR_shell d_res_high="3.4" d_res_low="3.8"> <PDBx:FOM>0.53</PDBx:FOM> <PDBx:reflns>730</PDBx:reflns> </PDBx:phasing_MIR_shell> <PDBx:phasing_MIR_shell d_res_high="3.0" d_res_low="3.4"> <PDBx:FOM>0.50</PDBx:FOM> <PDBx:reflns>939</PDBx:reflns> </PDBx:phasing_MIR_shell> </PDBx:phasing_MIR_shellCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE "phasing_MIR_shell" (
@@ -14227,7 +14227,7 @@ CREATE TABLE "phasing_MIR_shell" (
 --
 -- (quoted from phasing_averagingType)
 -- Data items in the PHASING_AVERAGING category record details about the phasing of the structure where methods involving averaging of multiple observations of the molecule in the asymmetric unit are involved. Example 1 - hypothetical example. <PDBx:phasing_averagingCategory> <PDBx:phasing_averaging entry_id="EXAMHYPO"> <PDBx:details> The position of the threefold axis was redetermined every five cycles.</PDBx:details> <PDBx:method> Iterative threefold averaging alternating with phase extensions by 0.5 reciprocal lattice units per cycle.</PDBx:method> </PDBx:phasing_averaging> </PDBx:phasing_averagingCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE phasing_averaging (
@@ -14242,7 +14242,7 @@ CREATE TABLE phasing_averaging (
 --
 -- (quoted from phasing_isomorphousType)
 -- Data items in the PHASING_ISOMORPHOUS category record details about the phasing of the structure where a model isomorphous to the structure being phased was used to generate the initial phases. Example 1 - based on PDB entry 4PHV and laboratory records for the structure corresponding to PDB entry 4PHV. <PDBx:phasing_isomorphousCategory> <PDBx:phasing_isomorphous entry_id="1ABC"> <PDBx:details> The inhibitor and all solvent atoms were removed from the parent structure before beginning refinement. All static disorder present in the parent structure was also removed.</PDBx:details> <PDBx:parent>PDB entry 5HVP</PDBx:parent> </PDBx:phasing_isomorphous> </PDBx:phasing_isomorphousCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE phasing_isomorphous (
@@ -14258,7 +14258,7 @@ CREATE TABLE phasing_isomorphous (
 --
 -- (quoted from phasing_set_reflnType)
 -- Data items in the PHASING_SET_REFLN category record the values of the measured structure factors used in a phasing experiment. This list may contain information from a number of different data sets; attribute set_id in category phasing_set_refln indicates the data set to which a given record corresponds. Example 1 - based on laboratory records for the 15,15,32 reflection of an Hg/Pt derivative of protein NS1. <PDBx:phasing_set_reflnCategory> <PDBx:phasing_set_refln index_h="15" index_k="15" index_l="32" set_id="NS1-96"> <PDBx:F_meas_au>181.79</PDBx:F_meas_au> <PDBx:F_meas_sigma_au>3.72</PDBx:F_meas_sigma_au> </PDBx:phasing_set_refln> </PDBx:phasing_set_reflnCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE phasing_set_refln (
@@ -14285,7 +14285,7 @@ CREATE TABLE phasing_set_refln (
 --
 -- (quoted from publType)
 -- Data items in the PUBL category are used when submitting a manuscript for publication. Example 1 - based on data set TOZ of Willis, Beckwith & Tozer [Acta Cryst. (1991), C47, 2276-2277]. <PDBx:publCategory> <PDBx:publ entry_id="1ABC"> <PDBx:section_abstract> The oxazolidinone ring is a shallow envelope conformation with the tert-butyl and iso-butyl groups occupying trans-positions with respect to the ring. The angles at the N atom sum to 356.2\&#37;, indicating a very small degree of pyramidalization at this atom. This is consistent with electron delocalization between the N atom and the carbonyl centre [N-C=O = 1.374(3)\&#37;A].</PDBx:section_abstract> <PDBx:section_title> trans-3-Benzoyl-2-(tert-butyl)-4-(iso-butyl)- 1,3-oxazolidin-5-one</PDBx:section_title> </PDBx:publ> </PDBx:publCategory> Example 2 - based on C~31~H~48~N~4~O~4~, reported by Coleman, Patrick, Andersen & Rettig [Acta Cryst. (1996), C52, 1525-1527]. <PDBx:publCategory> <PDBx:publ entry_id="1ABC"> <PDBx:section_title> Hemiasterlin methyl ester</PDBx:section_title> <PDBx:section_title_footnote> IUPAC name: methyl 2,5-dimethyl-4-{2-[3-methyl- 2-methylamino-3-(N-methylbenzo[b]pyrrol- 3-yl)butanamido]-3,3-dimethyl-N-methyl- butanamido}-2-hexenoate.</PDBx:section_title_footnote> </PDBx:publ> </PDBx:publCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_publ_requested_category CASCADE;
@@ -14328,7 +14328,7 @@ CREATE TABLE publ (
 --
 -- (quoted from publ_authorType)
 -- Data items in the PUBL_AUTHOR category record details of the authors of a manuscript submitted for publication. Example 1 - based on data set TOZ of Willis, Beckwith & Tozer [Acta Cryst. (1991), C47, 2276-2277]. <PDBx:publ_authorCategory> <PDBx:publ_author name="Willis, Anthony C."> <PDBx:address> Research School of Chemistry Australian National University GPO Box 4 Canberra, A.C.T. Australia 2601</PDBx:address> </PDBx:publ_author> </PDBx:publ_authorCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE publ_author (
@@ -14345,7 +14345,7 @@ CREATE TABLE publ_author (
 --
 -- (quoted from publ_bodyType)
 -- Data items in the PUBL_BODY category permit the labelling of different text sections within the body of a paper. Note that these should not be used in a paper which has a standard format with sections tagged by specific data names (such as in Acta Crystallographica Section C). Typically, each journal will supply a list of the specific items it requires in its Notes for Authors. Example 1 - based on a paper by R. Restori & D. Schwarzenbach [Acta Cryst. (1996), A52, 369-378]. <PDBx:publ_bodyCategory> <PDBx:publ_body element="section" label="1"> <PDBx:contents> X-ray diffraction from a crystalline material provides information on the thermally and spatially averaged electron density in the crystal...</PDBx:contents> <PDBx:format>cif</PDBx:format> <PDBx:title>Introduction</PDBx:title> </PDBx:publ_body> <PDBx:publ_body element="section" label="2"> <PDBx:contents> In the rigid-atom approximation, the dynamic electron density of an atom is described by the convolution product of the static atomic density and a probability density function, $\rho_{dyn}(\bf r) = \rho_{stat}(\bf r) * P(\bf r). \eqno(1)$</PDBx:contents> <PDBx:format>tex</PDBx:format> <PDBx:title>Theory</PDBx:title> </PDBx:publ_body> </PDBx:publ_bodyCategory> Example 2 - based on a paper by R. J. Papoular, Y. Vekhter & P. Coppens [Acta Cryst. (1996), A52, 397-407]. <PDBx:publ_bodyCategory> <PDBx:publ_body element="section" label="3"> <PDBx:contents xsi:nil="true" /> <PDBx:title> The two-channel method for retrieval of the deformation electron density</PDBx:title> </PDBx:publ_body> <PDBx:publ_body element="subsection" label="3.1"> <PDBx:contents> As the wide dynamic range involved in the total electron density...</PDBx:contents> <PDBx:title>The two-channel entropy S[\D\r(r)]</PDBx:title> </PDBx:publ_body> <PDBx:publ_body element="subsection" label="3.2"> <PDBx:contents xsi:nil="true" /> <PDBx:title>Uniform vs informative prior model densities</PDBx:title> </PDBx:publ_body> <PDBx:publ_body element="subsubsection" label="3.2.1"> <PDBx:contents> Straightforward algebra leads to expressions analogous to...</PDBx:contents> <PDBx:title>Use of uniform models</PDBx:title> </PDBx:publ_body> </PDBx:publ_bodyCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_publ_body_format CASCADE;
@@ -14367,7 +14367,7 @@ CREATE TABLE publ_body (
 --
 -- (quoted from publ_manuscript_inclType)
 -- Data items in the PUBL_MANUSCRIPT_INCL category allow the authors of a manuscript submitted for publication to list data names that should be added to the standard request list used by the journal printing software. Example 1 - hypothetical example. <PDBx:publ_manuscript_inclCategory> <PDBx:publ_manuscript_incl entry_id="EXAMHYPO"> <PDBx:extra_defn>yes</PDBx:extra_defn> <PDBx:extra_info>to emphasise special sites</PDBx:extra_info> <PDBx:extra_item>_atom_site.symmetry_multiplicity</PDBx:extra_item> </PDBx:publ_manuscript_incl> <PDBx:publ_manuscript_incl entry_id="EXAMHYPO"> <PDBx:extra_defn>yes</PDBx:extra_defn> <PDBx:extra_info>rare material, unusual source</PDBx:extra_info> <PDBx:extra_item>_chemical.compound_source</PDBx:extra_item> </PDBx:publ_manuscript_incl> <PDBx:publ_manuscript_incl entry_id="EXAMHYPO"> <PDBx:extra_defn>yes</PDBx:extra_defn> <PDBx:extra_info>limited data is a problem here</PDBx:extra_info> <PDBx:extra_item>_reflns.d_resolution_high</PDBx:extra_item> </PDBx:publ_manuscript_incl> <PDBx:publ_manuscript_incl entry_id="EXAMHYPO"> <PDBx:extra_defn>no</PDBx:extra_defn> <PDBx:extra_info>unusual value for this material</PDBx:extra_info> <PDBx:extra_item>_crystal.magnetic_permeability</PDBx:extra_item> </PDBx:publ_manuscript_incl> </PDBx:publ_manuscript_inclCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_publ_manuscript_incl_extra_defn CASCADE;
@@ -14385,7 +14385,7 @@ CREATE TABLE publ_manuscript_incl (
 --
 -- (quoted from refineType)
 -- Data items in the REFINE category record details about the structure-refinement parameters. Example 1 - based on PDB entry 5HVP and laboratory records for the structure corresponding to PDB entry 5HVP. <PDBx:refineCategory> <PDBx:refine entry_id="5HVP" pdbx_refine_id="X-RAY DIFFRACTION"> <PDBx:ls_R_factor_obs>0.176</PDBx:ls_R_factor_obs> <PDBx:ls_number_parameters>7032</PDBx:ls_number_parameters> <PDBx:ls_number_reflns_obs>12901</PDBx:ls_number_reflns_obs> <PDBx:ls_number_restraints>6609</PDBx:ls_number_restraints> <PDBx:ls_weighting_details> Sigdel model of Konnert-Hendrickson: Sigdel: Afsig + Bfsig*(sin(theta)/lambda-1/6) Afsig = 22.0, Bfsig = -150.0 at beginning of refinement Afsig = 15.5, Bfsig = -50.0 at end of refinement</PDBx:ls_weighting_details> <PDBx:ls_weighting_scheme>calc</PDBx:ls_weighting_scheme> </PDBx:refine> </PDBx:refineCategory> Example 2 - based on data set TOZ of Willis, Beckwith & Tozer [Acta Cryst. (1991), C47, 2276-2277]. <PDBx:refineCategory> <PDBx:refine entry_id="TOZ" pdbx_refine_id="X-RAY DIFFRACTION"> <PDBx:details>sfls:_F_calc_weight_full_matrix</PDBx:details> <PDBx:diff_density_max>.131</PDBx:diff_density_max> <PDBx:diff_density_min>-.108</PDBx:diff_density_min> <PDBx:ls_R_factor_all>.038</PDBx:ls_R_factor_all> <PDBx:ls_R_factor_obs>.034</PDBx:ls_R_factor_obs> <PDBx:ls_abs_structure_Flack>0</PDBx:ls_abs_structure_Flack> <PDBx:ls_abs_structure_details> The absolute configuration was assigned to agree with the known chirality at C3 arising from its precursor l-leucine.</PDBx:ls_abs_structure_details> <PDBx:ls_extinction_coef>3514</PDBx:ls_extinction_coef> <PDBx:ls_extinction_expression> Larson, A. C. (1970). &quot;Crystallographic Computing&quot;, edited by F. R. Ahmed. Eq. (22) p. 292. Copenhagen: Munksgaard.</PDBx:ls_extinction_expression> <PDBx:ls_extinction_method>Zachariasen</PDBx:ls_extinction_method> <PDBx:ls_goodness_of_fit_all>1.462</PDBx:ls_goodness_of_fit_all> <PDBx:ls_goodness_of_fit_obs>1.515</PDBx:ls_goodness_of_fit_obs> <PDBx:ls_hydrogen_treatment>refxyz except H332B noref</PDBx:ls_hydrogen_treatment> <PDBx:ls_matrix_type>full</PDBx:ls_matrix_type> <PDBx:ls_number_constraints>0</PDBx:ls_number_constraints> <PDBx:ls_number_parameters>272</PDBx:ls_number_parameters> <PDBx:ls_number_reflns_obs>1408</PDBx:ls_number_reflns_obs> <PDBx:ls_number_restraints>0</PDBx:ls_number_restraints> <PDBx:ls_shift_over_esd_max>.535</PDBx:ls_shift_over_esd_max> <PDBx:ls_shift_over_esd_mean>.044</PDBx:ls_shift_over_esd_mean> <PDBx:ls_structure_factor_coef>F</PDBx:ls_structure_factor_coef> <PDBx:ls_wR_factor_all>.044</PDBx:ls_wR_factor_all> <PDBx:ls_wR_factor_obs>.042</PDBx:ls_wR_factor_obs> <PDBx:ls_weighting_details>w=1/(\s^2^(F)+0.0004F^2^)</PDBx:ls_weighting_details> <PDBx:ls_weighting_scheme>calc</PDBx:ls_weighting_scheme> </PDBx:refine> </PDBx:refineCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_refine_ls_hydrogen_treatment CASCADE;
@@ -14599,7 +14599,7 @@ CREATE TABLE refine (
 --
 -- (quoted from refine_B_isoType)
 -- Data items in the REFINE_B_ISO category record details about the treatment of isotropic B factors (displacement parameters) during refinement. Example 1 - based on PDB entry 5HVP and laboratory records for the structure corresponding to PDB entry 5HVP. <PDBx:refine_B_isoCategory> <PDBx:refine_B_iso class="protein" pdbx_refine_id="X-RAY DIFFRACTION"> <PDBx:treatment>isotropic</PDBx:treatment> </PDBx:refine_B_iso> <PDBx:refine_B_iso class="solvent" pdbx_refine_id="X-RAY DIFFRACTION"> <PDBx:treatment>isotropic</PDBx:treatment> </PDBx:refine_B_iso> <PDBx:refine_B_iso class="inhibitor" pdbx_refine_id="X-RAY DIFFRACTION"> <PDBx:treatment>isotropic</PDBx:treatment> </PDBx:refine_B_iso> </PDBx:refine_B_isoCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_refine_B_iso_treatment CASCADE;
@@ -14623,7 +14623,7 @@ CREATE TABLE "refine_B_iso" (
 --
 -- (quoted from refine_analyzeType)
 -- Data items in the REFINE_ANALYZE category record details about the refined structure that are often used to analyze the refinement and assess its quality. A given computer program may or may not produce values corresponding to these data names. Example 1 - based on PDB entry 5HVP and laboratory records for the structure corresponding to PDB entry 5HVP. <PDBx:refine_analyzeCategory> <PDBx:refine_analyze entry_id="5HVP" pdbx_refine_id="X-RAY DIFFRACTION"> <PDBx:Luzzati_coordinate_error_obs>0.056</PDBx:Luzzati_coordinate_error_obs> <PDBx:Luzzati_d_res_low_obs>2.51</PDBx:Luzzati_d_res_low_obs> </PDBx:refine_analyze> </PDBx:refine_analyzeCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE refine_analyze (
@@ -14666,7 +14666,7 @@ CREATE TABLE refine_analyze (
 --
 -- (quoted from refine_funct_minimizedType)
 -- Data items in the REFINE_FUNCT_MINIMIZED category record details about the individual terms of the function minimized during refinement. Example 1 - based on RESTRAIN refinement for the CCP4 test data set toxd. <PDBx:refine_funct_minimizedCategory> <PDBx:refine_funct_minimized pdbx_refine_id="X-RAY DIFFRACTION" type="sum(W*Delta(Amplitude)^2"> <PDBx:number_terms>3009</PDBx:number_terms> <PDBx:residual>1621.3</PDBx:residual> </PDBx:refine_funct_minimized> <PDBx:refine_funct_minimized pdbx_refine_id="X-RAY DIFFRACTION" type="sum(W*Delta(Plane+Rigid)^2"> <PDBx:number_terms>85</PDBx:number_terms> <PDBx:residual>56.68</PDBx:residual> </PDBx:refine_funct_minimized> <PDBx:refine_funct_minimized pdbx_refine_id="X-RAY DIFFRACTION" type="sum(W*Delta(Distance)^2"> <PDBx:number_terms>1219</PDBx:number_terms> <PDBx:residual>163.59</PDBx:residual> </PDBx:refine_funct_minimized> <PDBx:refine_funct_minimized pdbx_refine_id="X-RAY DIFFRACTION" type="sum(W*Delta(U-tempfactors)^2"> <PDBx:number_terms>1192</PDBx:number_terms> <PDBx:residual>69.338</PDBx:residual> </PDBx:refine_funct_minimized> </PDBx:refine_funct_minimizedCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE refine_funct_minimized (
@@ -14686,7 +14686,7 @@ CREATE TABLE refine_funct_minimized (
 --
 -- (quoted from refine_histType)
 -- Data items in the REFINE_HIST category record details about the steps during the refinement of the structure. These data items are not meant to be as thorough a description of the refinement as is provided for the final model in other categories; rather, these data items provide a mechanism for sketching out the progress of the refinement, supported by a small set of representative statistics. Example 1 - based on laboratory records for the collagen-like peptide [(POG)4 EKG (POG)5]3. <PDBx:refine_histCategory> <PDBx:refine_hist cycle_id="C134" pdbx_refine_id="X-RAY DIFFRACTION"> <PDBx:R_factor_R_free>.274</PDBx:R_factor_R_free> <PDBx:R_factor_R_work>.160</PDBx:R_factor_R_work> <PDBx:R_factor_all>.265</PDBx:R_factor_all> <PDBx:R_factor_obs>.195</PDBx:R_factor_obs> <PDBx:d_res_high>1.85</PDBx:d_res_high> <PDBx:d_res_low>20.0</PDBx:d_res_low> <PDBx:details> Add majority of solvent molecules. B factors refined by group. Continued to remove misplaced water molecules.</PDBx:details> <PDBx:number_atoms_solvent>217</PDBx:number_atoms_solvent> <PDBx:number_atoms_total>808</PDBx:number_atoms_total> <PDBx:number_reflns_R_free>476</PDBx:number_reflns_R_free> <PDBx:number_reflns_R_work>4410</PDBx:number_reflns_R_work> <PDBx:number_reflns_all>6174</PDBx:number_reflns_all> <PDBx:number_reflns_obs>4886</PDBx:number_reflns_obs> </PDBx:refine_hist> </PDBx:refine_histCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE refine_hist (
@@ -14737,7 +14737,7 @@ CREATE TABLE refine_hist (
 --
 -- (quoted from refine_ls_classType)
 -- Data items in the REFINE_LS_CLASS category record details about the reflections used for the structure refinement for each reflection class separately. Example 1 - data for a modulated structure from van Smaalen [J. Phys. Condens. Matter (1991), 3, 1247-1263]. <PDBx:refine_ls_classCategory> <PDBx:refine_ls_class code="Main"> <PDBx:R_factor_gt>0.057</PDBx:R_factor_gt> </PDBx:refine_ls_class> <PDBx:refine_ls_class code="Com"> <PDBx:R_factor_gt>0.074</PDBx:R_factor_gt> </PDBx:refine_ls_class> <PDBx:refine_ls_class code="NbRefls"> <PDBx:R_factor_gt>0.064</PDBx:R_factor_gt> </PDBx:refine_ls_class> <PDBx:refine_ls_class code="LaRefls"> <PDBx:R_factor_gt>0.046</PDBx:R_factor_gt> </PDBx:refine_ls_class> <PDBx:refine_ls_class code="Sat1"> <PDBx:R_factor_gt>0.112</PDBx:R_factor_gt> </PDBx:refine_ls_class> <PDBx:refine_ls_class code="Sat2"> <PDBx:R_factor_gt>0.177</PDBx:R_factor_gt> </PDBx:refine_ls_class> </PDBx:refine_ls_classCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE refine_ls_class (
@@ -14764,7 +14764,7 @@ CREATE TABLE refine_ls_class (
 --
 -- (quoted from refine_ls_restrType)
 -- Data items in the REFINE_LS_RESTR category record details about the restraints applied to various classes of parameters during the least-squares refinement. Example 1 - based on PDB entry 5HVP and laboratory records for the structure corresponding to PDB entry 5HVP. <PDBx:refine_ls_restrCategory> <PDBx:refine_ls_restr pdbx_refine_id="X-RAY DIFFRACTION" type="bond_d"> <PDBx:criterion>&gt; 2\s</PDBx:criterion> <PDBx:dev_ideal>0.018</PDBx:dev_ideal> <PDBx:dev_ideal_target>0.020</PDBx:dev_ideal_target> <PDBx:number>1654</PDBx:number> <PDBx:rejects>22</PDBx:rejects> </PDBx:refine_ls_restr> <PDBx:refine_ls_restr pdbx_refine_id="X-RAY DIFFRACTION" type="angle_d"> <PDBx:criterion>&gt; 2\s</PDBx:criterion> <PDBx:dev_ideal>0.038</PDBx:dev_ideal> <PDBx:dev_ideal_target>0.030</PDBx:dev_ideal_target> <PDBx:number>2246</PDBx:number> <PDBx:rejects>139</PDBx:rejects> </PDBx:refine_ls_restr> <PDBx:refine_ls_restr pdbx_refine_id="X-RAY DIFFRACTION" type="planar_d"> <PDBx:criterion>&gt; 2\s</PDBx:criterion> <PDBx:dev_ideal>0.043</PDBx:dev_ideal> <PDBx:dev_ideal_target>0.040</PDBx:dev_ideal_target> <PDBx:number>498</PDBx:number> <PDBx:rejects>21</PDBx:rejects> </PDBx:refine_ls_restr> <PDBx:refine_ls_restr pdbx_refine_id="X-RAY DIFFRACTION" type="planar"> <PDBx:criterion>&gt; 2\s</PDBx:criterion> <PDBx:dev_ideal>0.015</PDBx:dev_ideal> <PDBx:dev_ideal_target>0.020</PDBx:dev_ideal_target> <PDBx:number>270</PDBx:number> <PDBx:rejects>1</PDBx:rejects> </PDBx:refine_ls_restr> <PDBx:refine_ls_restr pdbx_refine_id="X-RAY DIFFRACTION" type="chiral"> <PDBx:criterion>&gt; 2\s</PDBx:criterion> <PDBx:dev_ideal>0.177</PDBx:dev_ideal> <PDBx:dev_ideal_target>0.150</PDBx:dev_ideal_target> <PDBx:number>278</PDBx:number> <PDBx:rejects>2</PDBx:rejects> </PDBx:refine_ls_restr> <PDBx:refine_ls_restr pdbx_refine_id="X-RAY DIFFRACTION" type="singtor_nbd"> <PDBx:criterion>&gt; 2\s</PDBx:criterion> <PDBx:dev_ideal>0.216</PDBx:dev_ideal> <PDBx:dev_ideal_target>0.500</PDBx:dev_ideal_target> <PDBx:number>582</PDBx:number> <PDBx:rejects>0</PDBx:rejects> </PDBx:refine_ls_restr> <PDBx:refine_ls_restr pdbx_refine_id="X-RAY DIFFRACTION" type="multtor_nbd"> <PDBx:criterion>&gt; 2\s</PDBx:criterion> <PDBx:dev_ideal>0.207</PDBx:dev_ideal> <PDBx:dev_ideal_target>0.500</PDBx:dev_ideal_target> <PDBx:number>419</PDBx:number> <PDBx:rejects>0</PDBx:rejects> </PDBx:refine_ls_restr> <PDBx:refine_ls_restr pdbx_refine_id="X-RAY DIFFRACTION" type="xyhbond_nbd"> <PDBx:criterion>&gt; 2\s</PDBx:criterion> <PDBx:dev_ideal>0.245</PDBx:dev_ideal> <PDBx:dev_ideal_target>0.500</PDBx:dev_ideal_target> <PDBx:number>149</PDBx:number> <PDBx:rejects>0</PDBx:rejects> </PDBx:refine_ls_restr> <PDBx:refine_ls_restr pdbx_refine_id="X-RAY DIFFRACTION" type="planar_tor"> <PDBx:criterion>&gt; 2\s</PDBx:criterion> <PDBx:dev_ideal>2.6</PDBx:dev_ideal> <PDBx:dev_ideal_target>3.0</PDBx:dev_ideal_target> <PDBx:number>203</PDBx:number> <PDBx:rejects>9</PDBx:rejects> </PDBx:refine_ls_restr> <PDBx:refine_ls_restr pdbx_refine_id="X-RAY DIFFRACTION" type="staggered_tor"> <PDBx:criterion>&gt; 2\s</PDBx:criterion> <PDBx:dev_ideal>17.4</PDBx:dev_ideal> <PDBx:dev_ideal_target>15.0</PDBx:dev_ideal_target> <PDBx:number>298</PDBx:number> <PDBx:rejects>31</PDBx:rejects> </PDBx:refine_ls_restr> <PDBx:refine_ls_restr pdbx_refine_id="X-RAY DIFFRACTION" type="orthonormal_tor"> <PDBx:criterion>&gt; 2\s</PDBx:criterion> <PDBx:dev_ideal>18.1</PDBx:dev_ideal> <PDBx:dev_ideal_target>20.0</PDBx:dev_ideal_target> <PDBx:number>12</PDBx:number> <PDBx:rejects>1</PDBx:rejects> </PDBx:refine_ls_restr> </PDBx:refine_ls_restrCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE refine_ls_restr (
@@ -14790,7 +14790,7 @@ CREATE TABLE refine_ls_restr (
 --
 -- (quoted from refine_ls_restr_ncsType)
 -- Data items in the REFINE_LS_RESTR_NCS category record details about the restraints applied to atom positions in domains related by noncrystallographic symmetry during least-squares refinement, and also about the deviation of the restrained atomic parameters at the end of the refinement. It is expected that these values will only be reported once for each set of restrained domains. Example 1 - based on laboratory records for the collagen-like peptide, HYP-. <PDBx:refine_ls_restr_ncsCategory> <PDBx:refine_ls_restr_ncs pdbx_ordinal="1"> <PDBx:dom_id>d2</PDBx:dom_id> <PDBx:ncs_model_details> NCS restraint for pseudo-twofold symmetry between domains d1 and d2. Position weight coefficient given in Kcal/(mol \&#37;A^2^) and isotropic B weight coefficient given in \&#37;A^2^.</PDBx:ncs_model_details> <PDBx:pdbx_asym_id>A</PDBx:pdbx_asym_id> <PDBx:pdbx_ens_id>1</PDBx:pdbx_ens_id> <PDBx:pdbx_refine_id>X-RAY DIFFRACTION</PDBx:pdbx_refine_id> <PDBx:pdbx_type>medium positional</PDBx:pdbx_type> <PDBx:rms_dev_B_iso>0.16</PDBx:rms_dev_B_iso> <PDBx:rms_dev_position>0.09</PDBx:rms_dev_position> <PDBx:weight_B_iso>2.0</PDBx:weight_B_iso> <PDBx:weight_position>300.0</PDBx:weight_position> </PDBx:refine_ls_restr_ncs> </PDBx:refine_ls_restr_ncsCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE refine_ls_restr_ncs (
@@ -14819,7 +14819,7 @@ CREATE TABLE refine_ls_restr_ncs (
 --
 -- (quoted from refine_ls_restr_typeType)
 -- Data items in the REFINE_LS_RESTR_TYPE category record details about the restraint types used in the least-squares refinement. Example 1 - based on RESTRAIN refinement for the CCP4 test data set toxd. <PDBx:refine_ls_restrCategory> <PDBx:refine_ls_restr type="RESTRAIN_Distances &lt; 2.12"> <PDBx:dev_ideal>0.005</PDBx:dev_ideal> <PDBx:dev_ideal_target>0.022</PDBx:dev_ideal_target> <PDBx:number>509</PDBx:number> </PDBx:refine_ls_restr> <PDBx:refine_ls_restr type="RESTRAIN_Distances 2.12 &lt; D &lt; 2.625"> <PDBx:dev_ideal>0.016</PDBx:dev_ideal> <PDBx:dev_ideal_target>0.037</PDBx:dev_ideal_target> <PDBx:number>671</PDBx:number> </PDBx:refine_ls_restr> <PDBx:refine_ls_restr type="RESTRAIN_Distances &gt; 2.625"> <PDBx:dev_ideal>0.034</PDBx:dev_ideal> <PDBx:dev_ideal_target>0.043</PDBx:dev_ideal_target> <PDBx:number>39</PDBx:number> </PDBx:refine_ls_restr> <PDBx:refine_ls_restr type="RESTRAIN_Peptide Planes"> <PDBx:dev_ideal>0.002</PDBx:dev_ideal> <PDBx:dev_ideal_target>0.010</PDBx:dev_ideal_target> <PDBx:number>59</PDBx:number> </PDBx:refine_ls_restr> <PDBx:refine_ls_restr type="RESTRAIN_Ring and other planes"> <PDBx:dev_ideal>0.014</PDBx:dev_ideal> <PDBx:dev_ideal_target>0.010</PDBx:dev_ideal_target> <PDBx:number>26</PDBx:number> </PDBx:refine_ls_restr> <PDBx:refine_ls_restr type="RESTRAIN_rms diffs for Uiso atoms at dist 1.2-1.4"> <PDBx:dev_ideal>0.106</PDBx:dev_ideal> <PDBx:dev_ideal_target xsi:nil="true" /> <PDBx:number>212</PDBx:number> </PDBx:refine_ls_restr> <PDBx:refine_ls_restr type="RESTRAIN_rms diffs for Uiso atoms at dist 1.4-1.6"> <PDBx:dev_ideal>0.101</PDBx:dev_ideal> <PDBx:dev_ideal_target xsi:nil="true" /> <PDBx:number>288</PDBx:number> </PDBx:refine_ls_restr> <PDBx:refine_ls_restr type="RESTRAIN_rms diffs for Uiso atoms at dist 1.8-2.0"> <PDBx:dev_ideal>0.077</PDBx:dev_ideal> <PDBx:dev_ideal_target xsi:nil="true" /> <PDBx:number>6</PDBx:number> </PDBx:refine_ls_restr> <PDBx:refine_ls_restr type="RESTRAIN_rms diffs for Uiso atoms at dist 2.0-2.2"> <PDBx:dev_ideal>0.114</PDBx:dev_ideal> <PDBx:dev_ideal_target xsi:nil="true" /> <PDBx:number>10</PDBx:number> </PDBx:refine_ls_restr> <PDBx:refine_ls_restr type="RESTRAIN_rms diffs for Uiso atoms at dist 2.2-2.4"> <PDBx:dev_ideal>0.119</PDBx:dev_ideal> <PDBx:dev_ideal_target xsi:nil="true" /> <PDBx:number>215</PDBx:number> </PDBx:refine_ls_restr> <PDBx:refine_ls_restr type="RESTRAIN_rms diffs for Uiso atoms at dist &gt;2.4"> <PDBx:dev_ideal>0.106</PDBx:dev_ideal> <PDBx:dev_ideal_target xsi:nil="true" /> <PDBx:number>461</PDBx:number> </PDBx:refine_ls_restr> </PDBx:refine_ls_restrCategory> <PDBx:refine_ls_restr_typeCategory> <PDBx:refine_ls_restr_type type="RESTRAIN_Distances &lt; 2.12"> <PDBx:distance_cutoff_high>2.12</PDBx:distance_cutoff_high> <PDBx:distance_cutoff_low xsi:nil="true" /> </PDBx:refine_ls_restr_type> <PDBx:refine_ls_restr_type type="RESTRAIN_Distances 2.12 &lt; D &lt; 2.625"> <PDBx:distance_cutoff_high>2.625</PDBx:distance_cutoff_high> <PDBx:distance_cutoff_low>2.12</PDBx:distance_cutoff_low> </PDBx:refine_ls_restr_type> <PDBx:refine_ls_restr_type type="RESTRAIN_Distances &gt; 2.625"> <PDBx:distance_cutoff_high xsi:nil="true" /> <PDBx:distance_cutoff_low>2.625</PDBx:distance_cutoff_low> </PDBx:refine_ls_restr_type> <PDBx:refine_ls_restr_type type="RESTRAIN_Peptide Planes"> <PDBx:distance_cutoff_high xsi:nil="true" /> <PDBx:distance_cutoff_low xsi:nil="true" /> </PDBx:refine_ls_restr_type> <PDBx:refine_ls_restr_type type="RESTRAIN_Ring and other planes"> <PDBx:distance_cutoff_high xsi:nil="true" /> <PDBx:distance_cutoff_low xsi:nil="true" /> </PDBx:refine_ls_restr_type> <PDBx:refine_ls_restr_type type="RESTRAIN_rms diffs for Uiso atoms at dist 1.2-1.4"> <PDBx:distance_cutoff_high>1.4</PDBx:distance_cutoff_high> <PDBx:distance_cutoff_low>1.2</PDBx:distance_cutoff_low> </PDBx:refine_ls_restr_type> <PDBx:refine_ls_restr_type type="RESTRAIN_rms diffs for Uiso atoms at dist 1.4-1.6"> <PDBx:distance_cutoff_high>1.6</PDBx:distance_cutoff_high> <PDBx:distance_cutoff_low>1.4</PDBx:distance_cutoff_low> </PDBx:refine_ls_restr_type> <PDBx:refine_ls_restr_type type="RESTRAIN_rms diffs for Uiso atoms at dist 1.8-2.0"> <PDBx:distance_cutoff_high>2.0</PDBx:distance_cutoff_high> <PDBx:distance_cutoff_low>1.8</PDBx:distance_cutoff_low> </PDBx:refine_ls_restr_type> <PDBx:refine_ls_restr_type type="RESTRAIN_rms diffs for Uiso atoms at dist 2.0-2.2"> <PDBx:distance_cutoff_high>2.2</PDBx:distance_cutoff_high> <PDBx:distance_cutoff_low>2.0</PDBx:distance_cutoff_low> </PDBx:refine_ls_restr_type> <PDBx:refine_ls_restr_type type="RESTRAIN_rms diffs for Uiso atoms at dist 2.2-2.4"> <PDBx:distance_cutoff_high>2.4</PDBx:distance_cutoff_high> <PDBx:distance_cutoff_low>2.2</PDBx:distance_cutoff_low> </PDBx:refine_ls_restr_type> <PDBx:refine_ls_restr_type type="RESTRAIN_rms diffs for Uiso atoms at dist &gt;2.4"> <PDBx:distance_cutoff_high xsi:nil="true" /> <PDBx:distance_cutoff_low>2.4</PDBx:distance_cutoff_low> </PDBx:refine_ls_restr_type> </PDBx:refine_ls_restr_typeCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE refine_ls_restr_type (
@@ -14836,7 +14836,7 @@ CREATE TABLE refine_ls_restr_type (
 --
 -- (quoted from refine_ls_shellType)
 -- Data items in the REFINE_LS_SHELL category record details about the results of the least-squares refinement broken down into shells of resolution. Example 1 - based on PDB entry 5HVP and laboratory records for the structure corresponding to PDB entry 5HVP. <PDBx:refine_ls_shellCategory> <PDBx:refine_ls_shell d_res_high="4.51" pdbx_refine_id="X-RAY DIFFRACTION"> <PDBx:R_factor_obs>0.196</PDBx:R_factor_obs> <PDBx:d_res_low>8.00</PDBx:d_res_low> <PDBx:number_reflns_obs>1226</PDBx:number_reflns_obs> </PDBx:refine_ls_shell> <PDBx:refine_ls_shell d_res_high="3.48" pdbx_refine_id="X-RAY DIFFRACTION"> <PDBx:R_factor_obs>0.146</PDBx:R_factor_obs> <PDBx:d_res_low>4.51</PDBx:d_res_low> <PDBx:number_reflns_obs>1679</PDBx:number_reflns_obs> </PDBx:refine_ls_shell> <PDBx:refine_ls_shell d_res_high="2.94" pdbx_refine_id="X-RAY DIFFRACTION"> <PDBx:R_factor_obs>0.160</PDBx:R_factor_obs> <PDBx:d_res_low>3.48</PDBx:d_res_low> <PDBx:number_reflns_obs>2014</PDBx:number_reflns_obs> </PDBx:refine_ls_shell> <PDBx:refine_ls_shell d_res_high="2.59" pdbx_refine_id="X-RAY DIFFRACTION"> <PDBx:R_factor_obs>0.182</PDBx:R_factor_obs> <PDBx:d_res_low>2.94</PDBx:d_res_low> <PDBx:number_reflns_obs>2147</PDBx:number_reflns_obs> </PDBx:refine_ls_shell> <PDBx:refine_ls_shell d_res_high="2.34" pdbx_refine_id="X-RAY DIFFRACTION"> <PDBx:R_factor_obs>0.193</PDBx:R_factor_obs> <PDBx:d_res_low>2.59</PDBx:d_res_low> <PDBx:number_reflns_obs>2127</PDBx:number_reflns_obs> </PDBx:refine_ls_shell> <PDBx:refine_ls_shell d_res_high="2.15" pdbx_refine_id="X-RAY DIFFRACTION"> <PDBx:R_factor_obs>0.203</PDBx:R_factor_obs> <PDBx:d_res_low>2.34</PDBx:d_res_low> <PDBx:number_reflns_obs>2061</PDBx:number_reflns_obs> </PDBx:refine_ls_shell> <PDBx:refine_ls_shell d_res_high="2.00" pdbx_refine_id="X-RAY DIFFRACTION"> <PDBx:R_factor_obs>0.188</PDBx:R_factor_obs> <PDBx:d_res_low>2.15</PDBx:d_res_low> <PDBx:number_reflns_obs>1647</PDBx:number_reflns_obs> </PDBx:refine_ls_shell> </PDBx:refine_ls_shellCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE refine_ls_shell (
@@ -14890,7 +14890,7 @@ CREATE TABLE refine_ls_shell (
 --
 -- (quoted from refine_occupancyType)
 -- Data items in the REFINE_OCCUPANCY category record details about the treatment of atom occupancies during refinement. Example 1 - based on PDB entry 5HVP and laboratory records for the structure corresponding to PDB entry 5HVP. <PDBx:refine_occupancyCategory> <PDBx:refine_occupancy class="protein" pdbx_refine_id="X-RAY DIFFRACTION"> <PDBx:details xsi:nil="true" /> <PDBx:treatment>fix</PDBx:treatment> <PDBx:value>1.00</PDBx:value> </PDBx:refine_occupancy> <PDBx:refine_occupancy class="solvent" pdbx_refine_id="X-RAY DIFFRACTION"> <PDBx:details xsi:nil="true" /> <PDBx:treatment>fix</PDBx:treatment> <PDBx:value>1.00</PDBx:value> </PDBx:refine_occupancy> <PDBx:refine_occupancy class="inhibitor orientation 1" pdbx_refine_id="X-RAY DIFFRACTION"> <PDBx:details xsi:nil="true" /> <PDBx:treatment>fix</PDBx:treatment> <PDBx:value>0.65</PDBx:value> </PDBx:refine_occupancy> <PDBx:refine_occupancy class="inhibitor orientation 2" pdbx_refine_id="X-RAY DIFFRACTION"> <PDBx:details> The inhibitor binds to the enzyme in two alternative conformations. The occupancy of each conformation was adjusted so as to result in approximately equal mean thermal factors for the atoms in each conformation.</PDBx:details> <PDBx:treatment>fix</PDBx:treatment> <PDBx:value>0.35</PDBx:value> </PDBx:refine_occupancy> </PDBx:refine_occupancyCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_refine_occupancy_treatment CASCADE;
@@ -14912,7 +14912,7 @@ CREATE TABLE refine_occupancy (
 --
 -- (quoted from reflnType)
 -- Data items in the REFLN category record details about the reflection data used to determine the ATOM_SITE data items. The REFLN data items refer to individual reflections and must be included in looped lists. The REFLNS data items specify the parameters that apply to all reflections. The REFLNS data items are not looped. Example 1 - based on data set fetod of Todres, Yanovsky, Ermekov & Struchkov [Acta Cryst. (1993), C49, 1352-1354]. <PDBx:reflnCategory> <PDBx:refln index_h="2" index_k="0" index_l="0"> <PDBx:F_squared_calc>85.57</PDBx:F_squared_calc> <PDBx:F_squared_meas>58.90</PDBx:F_squared_meas> <PDBx:F_squared_sigma>1.45</PDBx:F_squared_sigma> <PDBx:status>o</PDBx:status> </PDBx:refln> <PDBx:refln index_h="3" index_k="0" index_l="0"> <PDBx:F_squared_calc>15718.18</PDBx:F_squared_calc> <PDBx:F_squared_meas>15631.06</PDBx:F_squared_meas> <PDBx:F_squared_sigma>30.40</PDBx:F_squared_sigma> <PDBx:status>o</PDBx:status> </PDBx:refln> <PDBx:refln index_h="4" index_k="0" index_l="0"> <PDBx:F_squared_calc>55613.11</PDBx:F_squared_calc> <PDBx:F_squared_meas>49840.09</PDBx:F_squared_meas> <PDBx:F_squared_sigma>61.86</PDBx:F_squared_sigma> <PDBx:status>o</PDBx:status> </PDBx:refln> <PDBx:refln index_h="5" index_k="0" index_l="0"> <PDBx:F_squared_calc>246.85</PDBx:F_squared_calc> <PDBx:F_squared_meas>241.86</PDBx:F_squared_meas> <PDBx:F_squared_sigma>10.02</PDBx:F_squared_sigma> <PDBx:status>o</PDBx:status> </PDBx:refln> <PDBx:refln index_h="6" index_k="0" index_l="0"> <PDBx:F_squared_calc>82.16</PDBx:F_squared_calc> <PDBx:F_squared_meas>69.97</PDBx:F_squared_meas> <PDBx:F_squared_sigma>1.93</PDBx:F_squared_sigma> <PDBx:status>o</PDBx:status> </PDBx:refln> <PDBx:refln index_h="7" index_k="0" index_l="0"> <PDBx:F_squared_calc>1133.62</PDBx:F_squared_calc> <PDBx:F_squared_meas>947.79</PDBx:F_squared_meas> <PDBx:F_squared_sigma>11.78</PDBx:F_squared_sigma> <PDBx:status>o</PDBx:status> </PDBx:refln> <PDBx:refln index_h="8" index_k="0" index_l="0"> <PDBx:F_squared_calc>2558.04</PDBx:F_squared_calc> <PDBx:F_squared_meas>2453.33</PDBx:F_squared_meas> <PDBx:F_squared_sigma>20.44</PDBx:F_squared_sigma> <PDBx:status>o</PDBx:status> </PDBx:refln> <PDBx:refln index_h="9" index_k="0" index_l="0"> <PDBx:F_squared_calc>283.88</PDBx:F_squared_calc> <PDBx:F_squared_meas>393.66</PDBx:F_squared_meas> <PDBx:F_squared_sigma>7.79</PDBx:F_squared_sigma> <PDBx:status>o</PDBx:status> </PDBx:refln> <PDBx:refln index_h="10" index_k="0" index_l="0"> <PDBx:F_squared_calc>283.70</PDBx:F_squared_calc> <PDBx:F_squared_meas>171.98</PDBx:F_squared_meas> <PDBx:F_squared_sigma>4.26</PDBx:F_squared_sigma> <PDBx:status>o</PDBx:status> </PDBx:refln> </PDBx:reflnCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_refln_include_status CASCADE;
@@ -15035,7 +15035,7 @@ CREATE TABLE refln (
 --
 -- (quoted from refln_sys_absType)
 -- Data items in the REFLN_SYS_ABS category record details about the reflection data that should be systematically absent, given the designated space group. Example 1 - hypothetical example. <PDBx:refln_sys_absCategory> <PDBx:refln_sys_abs index_h="0" index_k="3" index_l="0"> <PDBx:I>28.32</PDBx:I> <PDBx:I_over_sigmaI>1.23</PDBx:I_over_sigmaI> <PDBx:sigmaI>22.95</PDBx:sigmaI> </PDBx:refln_sys_abs> <PDBx:refln_sys_abs index_h="0" index_k="5" index_l="0"> <PDBx:I>14.11</PDBx:I> <PDBx:I_over_sigmaI>0.86</PDBx:I_over_sigmaI> <PDBx:sigmaI>16.38</PDBx:sigmaI> </PDBx:refln_sys_abs> <PDBx:refln_sys_abs index_h="0" index_k="7" index_l="0"> <PDBx:I>114.81</PDBx:I> <PDBx:I_over_sigmaI>5.67</PDBx:I_over_sigmaI> <PDBx:sigmaI>20.22</PDBx:sigmaI> </PDBx:refln_sys_abs> <PDBx:refln_sys_abs index_h="0" index_k="9" index_l="0"> <PDBx:I>32.99</PDBx:I> <PDBx:I_over_sigmaI>1.35</PDBx:I_over_sigmaI> <PDBx:sigmaI>24.51</PDBx:sigmaI> </PDBx:refln_sys_abs> </PDBx:refln_sys_absCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE refln_sys_abs (
@@ -15057,7 +15057,7 @@ CREATE TABLE refln_sys_abs (
 --
 -- (quoted from reflnsType)
 -- Data items in the REFLNS category record details about the reflection data used to determine the ATOM_SITE data items. The REFLN data items refer to individual reflections and must be included in looped lists. The REFLNS data items specify the parameters that apply to all reflections. The REFLNS data items are not looped. Example 1 - based on PDB entry 5HVP and laboratory records for the structure corresponding to PDB entry 5HVP. <PDBx:reflnsCategory> <PDBx:reflns pdbx_ordinal="1"> <PDBx:d_resolution_high>2.00</PDBx:d_resolution_high> <PDBx:d_resolution_low>8.00</PDBx:d_resolution_low> <PDBx:data_reduction_details> Merging and scaling based on only those reflections with I &gt; \s(I).</PDBx:data_reduction_details> <PDBx:data_reduction_method> Xengen program scalei. Anomalous pairs were merged. Scaling proceeded in several passes, beginning with 1-parameter fit and ending with 3-parameter fit.</PDBx:data_reduction_method> <PDBx:details>none</PDBx:details> <PDBx:entry_id>5HVP</PDBx:entry_id> <PDBx:limit_h_max>22</PDBx:limit_h_max> <PDBx:limit_h_min>0</PDBx:limit_h_min> <PDBx:limit_k_max>46</PDBx:limit_k_max> <PDBx:limit_k_min>0</PDBx:limit_k_min> <PDBx:limit_l_max>57</PDBx:limit_l_max> <PDBx:limit_l_min>0</PDBx:limit_l_min> <PDBx:number_obs>7228</PDBx:number_obs> <PDBx:observed_criterion>&gt; 1 \s(I)</PDBx:observed_criterion> <PDBx:pdbx_diffrn_id>1</PDBx:pdbx_diffrn_id> </PDBx:reflns> </PDBx:reflnsCategory> Example 2 - based on data set TOZ of Willis, Beckwith & Tozer [Acta Cryst. (1991), C47, 2276-2277]. <PDBx:reflnsCategory> <PDBx:reflns pdbx_ordinal="1"> <PDBx:d_resolution_high>0.8733</PDBx:d_resolution_high> <PDBx:d_resolution_low>11.9202</PDBx:d_resolution_low> <PDBx:entry_id>1TOZ</PDBx:entry_id> <PDBx:limit_h_max>6</PDBx:limit_h_max> <PDBx:limit_h_min>0</PDBx:limit_h_min> <PDBx:limit_k_max>17</PDBx:limit_k_max> <PDBx:limit_k_min>0</PDBx:limit_k_min> <PDBx:limit_l_max>22</PDBx:limit_l_max> <PDBx:limit_l_min>0</PDBx:limit_l_min> <PDBx:number_all>1592</PDBx:number_all> <PDBx:number_obs>1408</PDBx:number_obs> <PDBx:observed_criterion>F_&gt;_6.0_\s(F)</PDBx:observed_criterion> <PDBx:pdbx_diffrn_id>1</PDBx:pdbx_diffrn_id> </PDBx:reflns> </PDBx:reflnsCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE reflns (
@@ -15154,7 +15154,7 @@ CREATE TABLE reflns (
 --
 -- (quoted from reflns_classType)
 -- Data items in the REFLNS_CLASS category record details of the reflections used to determine the structural parameters for each reflection class. Example 1 - example corresponding to the one-dimensional incommensurately modulated structure of K~2~SeO~4~. <PDBx:reflns_classCategory> <PDBx:reflns_class code="Main"> <PDBx:number_gt>584</PDBx:number_gt> </PDBx:reflns_class> <PDBx:reflns_class code="Sat1"> <PDBx:number_gt>226</PDBx:number_gt> </PDBx:reflns_class> <PDBx:reflns_class code="Sat2"> <PDBx:number_gt>50</PDBx:number_gt> </PDBx:reflns_class> </PDBx:reflns_classCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE reflns_class (
@@ -15186,7 +15186,7 @@ CREATE TABLE reflns_class (
 --
 -- (quoted from reflns_scaleType)
 -- Data items in the REFLNS_SCALE category record details about the structure-factor scales. They are referenced from within the REFLN list through attribute scale_group_code in category refln. Example 1 - based on laboratory records for the collagen-like peptide [(POG)4 EKG (POG)5]3. <PDBx:reflns_scaleCategory> <PDBx:reflns_scale group_code="SG1"> <PDBx:meas_F>4.0</PDBx:meas_F> </PDBx:reflns_scale> </PDBx:reflns_scaleCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE reflns_scale (
@@ -15205,7 +15205,7 @@ CREATE TABLE reflns_scale (
 --
 -- (quoted from reflns_shellType)
 -- Data items in the REFLNS_SHELL category record details about the reflection data used to determine the ATOM_SITE data items broken down into shells of resolution. Example 1 - based on PDB entry 5HVP and laboratory records for the structure corresponding to PDB entry 5HVP. <PDBx:reflns_shellCategory> <PDBx:reflns_shell pdbx_ordinal="1"> <PDBx:Rmerge_F_obs>1.98</PDBx:Rmerge_F_obs> <PDBx:d_res_high>31.38</PDBx:d_res_high> <PDBx:d_res_low>3.82</PDBx:d_res_low> <PDBx:meanI_over_sigI_obs>69.8</PDBx:meanI_over_sigI_obs> <PDBx:number_measured_obs>9024</PDBx:number_measured_obs> <PDBx:number_unique_obs>2540</PDBx:number_unique_obs> <PDBx:percent_possible_obs>96.8</PDBx:percent_possible_obs> </PDBx:reflns_shell> <PDBx:reflns_shell pdbx_ordinal="2"> <PDBx:Rmerge_F_obs>3.85</PDBx:Rmerge_F_obs> <PDBx:d_res_high>3.82</PDBx:d_res_high> <PDBx:d_res_low>3.03</PDBx:d_res_low> <PDBx:meanI_over_sigI_obs>26.1</PDBx:meanI_over_sigI_obs> <PDBx:number_measured_obs>7413</PDBx:number_measured_obs> <PDBx:number_unique_obs>2364</PDBx:number_unique_obs> <PDBx:percent_possible_obs>95.1</PDBx:percent_possible_obs> </PDBx:reflns_shell> <PDBx:reflns_shell pdbx_ordinal="3"> <PDBx:Rmerge_F_obs>6.37</PDBx:Rmerge_F_obs> <PDBx:d_res_high>3.03</PDBx:d_res_high> <PDBx:d_res_low>2.65</PDBx:d_res_low> <PDBx:meanI_over_sigI_obs>10.5</PDBx:meanI_over_sigI_obs> <PDBx:number_measured_obs>5640</PDBx:number_measured_obs> <PDBx:number_unique_obs>2123</PDBx:number_unique_obs> <PDBx:percent_possible_obs>86.2</PDBx:percent_possible_obs> </PDBx:reflns_shell> <PDBx:reflns_shell pdbx_ordinal="4"> <PDBx:Rmerge_F_obs>8.01</PDBx:Rmerge_F_obs> <PDBx:d_res_high>2.65</PDBx:d_res_high> <PDBx:d_res_low>2.41</PDBx:d_res_low> <PDBx:meanI_over_sigI_obs>6.4</PDBx:meanI_over_sigI_obs> <PDBx:number_measured_obs>4322</PDBx:number_measured_obs> <PDBx:number_unique_obs>1882</PDBx:number_unique_obs> <PDBx:percent_possible_obs>76.8</PDBx:percent_possible_obs> </PDBx:reflns_shell> <PDBx:reflns_shell pdbx_ordinal="5"> <PDBx:Rmerge_F_obs>9.86</PDBx:Rmerge_F_obs> <PDBx:d_res_high>2.41</PDBx:d_res_high> <PDBx:d_res_low>2.23</PDBx:d_res_low> <PDBx:meanI_over_sigI_obs>4.3</PDBx:meanI_over_sigI_obs> <PDBx:number_measured_obs>3247</PDBx:number_measured_obs> <PDBx:number_unique_obs>1714</PDBx:number_unique_obs> <PDBx:percent_possible_obs>70.4</PDBx:percent_possible_obs> </PDBx:reflns_shell> <PDBx:reflns_shell pdbx_ordinal="6"> <PDBx:Rmerge_F_obs>13.99</PDBx:Rmerge_F_obs> <PDBx:d_res_high>2.23</PDBx:d_res_high> <PDBx:d_res_low>2.10</PDBx:d_res_low> <PDBx:meanI_over_sigI_obs>3.1</PDBx:meanI_over_sigI_obs> <PDBx:number_measured_obs>1140</PDBx:number_measured_obs> <PDBx:number_unique_obs>812</PDBx:number_unique_obs> <PDBx:percent_possible_obs>33.3</PDBx:percent_possible_obs> </PDBx:reflns_shell> </PDBx:reflns_shellCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE reflns_shell (
@@ -15285,7 +15285,7 @@ CREATE TABLE reflns_shell (
 --
 -- (quoted from softwareType)
 -- Data items in the SOFTWARE category record details about the software used in the structure analysis, which implies any software used in the generation of any data items associated with the structure determination and structure representation. These data items allow computer programs to be referenced in more detail than data items in the COMPUTING category do. Example 1 - based on PDB entry 5HVP and laboratory records for the structure corresponding to PDB entry 5HVP. <PDBx:softwareCategory> <PDBx:software pdbx_ordinal="1"> <PDBx:citation_id>ref5</PDBx:citation_id> <PDBx:classification>refinement</PDBx:classification> <PDBx:compiler_name>Convex Fortran</PDBx:compiler_name> <PDBx:compiler_version>v8.0</PDBx:compiler_version> <PDBx:contact_author>Wayne A. Hendrickson</PDBx:contact_author> <PDBx:date xsi:nil="true" /> <PDBx:dependencies>Requires that Protin be run first</PDBx:dependencies> <PDBx:description>restrained least-squares refinement</PDBx:description> <PDBx:hardware>Convex C220</PDBx:hardware> <PDBx:language>Fortran</PDBx:language> <PDBx:location>ftp://rosebud.sdsc.edu/pub/sdsc/xtal/CCP4/ccp4/</PDBx:location> <PDBx:mods>optimized</PDBx:mods> <PDBx:name>Prolsq</PDBx:name> <PDBx:os>ConvexOS</PDBx:os> <PDBx:os_version>v10.1</PDBx:os_version> <PDBx:type>program</PDBx:type> <PDBx:version>unknown</PDBx:version> </PDBx:software> </PDBx:softwareCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_software_language CASCADE;
@@ -15320,7 +15320,7 @@ CREATE TABLE software (
 --
 -- (quoted from space_groupType)
 -- Contains all the data items that refer to the space group as a whole, such as its name or crystal system. They may be looped, for example, in a list of space groups and their properties. Only a subset of the SPACE_GROUP category items appear in this dictionary. The remainder are found in the symmetry CIF dictionary. Space-group types are identified by their number as given in International Tables for Crystallography Vol. A. Specific settings of the space groups can be identified either by their Hall symbol or by specifying their symmetry operations. The commonly used Hermann-Mauguin symbol determines the space-group type uniquely but several different Hermann-Mauguin symbols may refer to the same space-group type. A Hermann-Mauguin symbol contains information on the choice of the basis, but not on the choice of origin. Different formats for the Hermann-Mauguin symbol are found in the symmetry CIF dictionary. Example 1 - the monoclinic space group No. 15 with unique axis b. <PDBx:space_groupCategory> <PDBx:space_group id="1"> <PDBx:IT_number>15</PDBx:IT_number> <PDBx:crystal_system>monoclinic</PDBx:crystal_system> <PDBx:name_H-M_alt>C 2/c</PDBx:name_H-M_alt> <PDBx:name_Hall>-C 2yc</PDBx:name_Hall> </PDBx:space_group> </PDBx:space_groupCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_space_group_crystal_system CASCADE;
@@ -15341,7 +15341,7 @@ CREATE TABLE space_group (
 --
 -- (quoted from space_group_symopType)
 -- Contains information about the symmetry operations of the space group. Example 1 - The symmetry operations for the space group P21/c. <PDBx:space_group_symopCategory> <PDBx:space_group_symop id="1"> <PDBx:operation_xyz>x,y,z</PDBx:operation_xyz> </PDBx:space_group_symop> <PDBx:space_group_symop id="2"> <PDBx:operation_xyz>-x,-y,-z</PDBx:operation_xyz> </PDBx:space_group_symop> <PDBx:space_group_symop id="3"> <PDBx:operation_xyz>-x,1/2+y,1/2-z</PDBx:operation_xyz> </PDBx:space_group_symop> <PDBx:space_group_symop id="4"> <PDBx:operation_xyz>x,1/2-y,1/2+z</PDBx:operation_xyz> </PDBx:space_group_symop> </PDBx:space_group_symopCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE space_group_symop (
@@ -15356,7 +15356,7 @@ CREATE TABLE space_group_symop (
 --
 -- (quoted from structType)
 -- Data items in the STRUCT category record details about the description of the crystallographic structure. Example 1 - based on PDB entry 5HVP and laboratory records for the structure corresponding to PDB entry 5HVP. <PDBx:structCategory> <PDBx:struct entry_id="5HVP"> <PDBx:title> HIV-1 protease complex with acetyl-pepstatin</PDBx:title> </PDBx:struct> </PDBx:structCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_struct_pdbx_CASP_flag CASCADE;
@@ -15381,7 +15381,7 @@ CREATE TABLE struct (
 --
 -- (quoted from struct_biol_genType)
 -- Data items in the STRUCT_BIOL_GEN category record details about the generation of each biological unit. The STRUCT_BIOL_GEN data items provide the specifications of the components that constitute that biological unit, which may include symmetry elements. Example 1 - based on PDB entry 5HVP and laboratory records for the structure corresponding to PDB entry 5HVP. <PDBx:struct_biol_genCategory> <PDBx:struct_biol_gen asym_id="A" biol_id="1" symmetry="1_555"></PDBx:struct_biol_gen> <PDBx:struct_biol_gen asym_id="B" biol_id="1" symmetry="1_555"></PDBx:struct_biol_gen> <PDBx:struct_biol_gen asym_id="A" biol_id="2" symmetry="1_555"></PDBx:struct_biol_gen> <PDBx:struct_biol_gen asym_id="B" biol_id="2" symmetry="1_555"></PDBx:struct_biol_gen> <PDBx:struct_biol_gen asym_id="C" biol_id="2" symmetry="1_555"></PDBx:struct_biol_gen> <PDBx:struct_biol_gen asym_id="A" biol_id="3" symmetry="1_555"></PDBx:struct_biol_gen> <PDBx:struct_biol_gen asym_id="B" biol_id="3" symmetry="1_555"></PDBx:struct_biol_gen> <PDBx:struct_biol_gen asym_id="D" biol_id="3" symmetry="1_555"></PDBx:struct_biol_gen> </PDBx:struct_biol_genCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE struct_biol_gen (
@@ -15410,7 +15410,7 @@ CREATE TABLE struct_biol_gen (
 --
 -- (quoted from struct_biol_keywordsType)
 -- Data items in the STRUCT_BIOL_KEYWORDS category record keywords that describe each biological unit. Example 1 - based on PDB entry 5HVP and laboratory records for the structure corresponding to PDB entry 5HVP. <PDBx:struct_biol_keywordsCategory> <PDBx:struct_biol_keywords biol_id="1" text="aspartyl-protease"></PDBx:struct_biol_keywords> <PDBx:struct_biol_keywords biol_id="1" text="aspartic-protease"></PDBx:struct_biol_keywords> <PDBx:struct_biol_keywords biol_id="1" text="acid-protease"></PDBx:struct_biol_keywords> <PDBx:struct_biol_keywords biol_id="1" text="aspartyl-proteinase"></PDBx:struct_biol_keywords> <PDBx:struct_biol_keywords biol_id="1" text="aspartic-proteinase"></PDBx:struct_biol_keywords> <PDBx:struct_biol_keywords biol_id="1" text="acid-proteinase"></PDBx:struct_biol_keywords> <PDBx:struct_biol_keywords biol_id="1" text="enzyme"></PDBx:struct_biol_keywords> <PDBx:struct_biol_keywords biol_id="1" text="protease"></PDBx:struct_biol_keywords> <PDBx:struct_biol_keywords biol_id="1" text="proteinase"></PDBx:struct_biol_keywords> <PDBx:struct_biol_keywords biol_id="1" text="dimer"></PDBx:struct_biol_keywords> <PDBx:struct_biol_keywords biol_id="2" text="drug-enzyme complex"></PDBx:struct_biol_keywords> <PDBx:struct_biol_keywords biol_id="2" text="inhibitor-enzyme complex"></PDBx:struct_biol_keywords> <PDBx:struct_biol_keywords biol_id="2" text="drug-protease complex"></PDBx:struct_biol_keywords> <PDBx:struct_biol_keywords biol_id="2" text="inhibitor-protease complex"></PDBx:struct_biol_keywords> <PDBx:struct_biol_keywords biol_id="3" text="drug-enzyme complex"></PDBx:struct_biol_keywords> <PDBx:struct_biol_keywords biol_id="3" text="inhibitor-enzyme complex"></PDBx:struct_biol_keywords> <PDBx:struct_biol_keywords biol_id="3" text="drug-protease complex"></PDBx:struct_biol_keywords> <PDBx:struct_biol_keywords biol_id="3" text="inhibitor-protease complex"></PDBx:struct_biol_keywords> </PDBx:struct_biol_keywordsCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE struct_biol_keywords (
@@ -15425,7 +15425,7 @@ CREATE TABLE struct_biol_keywords (
 --
 -- (quoted from struct_biol_viewType)
 -- Data items in the STRUCT_BIOL_VIEW category record details about how to draw and annotate an informative view of the biological structure. Example 1 - based on NDB structure GDL001 by Coll, Aymami, Van Der Marel, Van Boom, Rich & Wang [Biochemistry, (1989), 28, 310-320]. <PDBx:struct_biol_viewCategory> <PDBx:struct_biol_view biol_id="c1" id="1"> <PDBx:details> This view highlights the ATAT-Netropsin interaction in the DNA-drug complex.</PDBx:details> <PDBx:rot_matrix11>0.132</PDBx:rot_matrix11> <PDBx:rot_matrix12>0.922</PDBx:rot_matrix12> <PDBx:rot_matrix13>-0.363</PDBx:rot_matrix13> <PDBx:rot_matrix21>0.131</PDBx:rot_matrix21> <PDBx:rot_matrix22>-0.380</PDBx:rot_matrix22> <PDBx:rot_matrix23>-0.916</PDBx:rot_matrix23> <PDBx:rot_matrix31>-0.982</PDBx:rot_matrix31> <PDBx:rot_matrix32>0.073</PDBx:rot_matrix32> <PDBx:rot_matrix33>-0.172</PDBx:rot_matrix33> </PDBx:struct_biol_view> </PDBx:struct_biol_viewCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE struct_biol_view (
@@ -15453,7 +15453,7 @@ CREATE TABLE struct_biol_view (
 --
 -- (quoted from struct_confType)
 -- Data items in the STRUCT_CONF category record details about the backbone conformation of a segment of polymer. Data items in the STRUCT_CONF_TYPE category define the criteria used to identify the backbone conformations. Example 1 - based on PDB entry 5HVP and laboratory records for the structure corresponding to PDB entry 5HVP. <PDBx:struct_confCategory> <PDBx:struct_conf id="HELX1"> <PDBx:beg_label_asym_id>A</PDBx:beg_label_asym_id> <PDBx:beg_label_comp_id>ARG</PDBx:beg_label_comp_id> <PDBx:beg_label_seq_id>87</PDBx:beg_label_seq_id> <PDBx:conf_type_id>HELX_RH_AL_P</PDBx:conf_type_id> <PDBx:details xsi:nil="true" /> <PDBx:end_label_asym_id>A</PDBx:end_label_asym_id> <PDBx:end_label_comp_id>GLN</PDBx:end_label_comp_id> <PDBx:end_label_seq_id>92</PDBx:end_label_seq_id> </PDBx:struct_conf> <PDBx:struct_conf id="HELX2"> <PDBx:beg_label_asym_id>B</PDBx:beg_label_asym_id> <PDBx:beg_label_comp_id>ARG</PDBx:beg_label_comp_id> <PDBx:beg_label_seq_id>287</PDBx:beg_label_seq_id> <PDBx:conf_type_id>HELX_RH_AL_P</PDBx:conf_type_id> <PDBx:details xsi:nil="true" /> <PDBx:end_label_asym_id>B</PDBx:end_label_asym_id> <PDBx:end_label_comp_id>GLN</PDBx:end_label_comp_id> <PDBx:end_label_seq_id>292</PDBx:end_label_seq_id> </PDBx:struct_conf> <PDBx:struct_conf id="STRN1"> <PDBx:beg_label_asym_id>A</PDBx:beg_label_asym_id> <PDBx:beg_label_comp_id>PRO</PDBx:beg_label_comp_id> <PDBx:beg_label_seq_id>1</PDBx:beg_label_seq_id> <PDBx:conf_type_id>STRN_P</PDBx:conf_type_id> <PDBx:details xsi:nil="true" /> <PDBx:end_label_asym_id>A</PDBx:end_label_asym_id> <PDBx:end_label_comp_id>LEU</PDBx:end_label_comp_id> <PDBx:end_label_seq_id>5</PDBx:end_label_seq_id> </PDBx:struct_conf> <PDBx:struct_conf id="STRN2"> <PDBx:beg_label_asym_id>B</PDBx:beg_label_asym_id> <PDBx:beg_label_comp_id>CYS</PDBx:beg_label_comp_id> <PDBx:beg_label_seq_id>295</PDBx:beg_label_seq_id> <PDBx:conf_type_id>STRN_P</PDBx:conf_type_id> <PDBx:details xsi:nil="true" /> <PDBx:end_label_asym_id>B</PDBx:end_label_asym_id> <PDBx:end_label_comp_id>PHE</PDBx:end_label_comp_id> <PDBx:end_label_seq_id>299</PDBx:end_label_seq_id> </PDBx:struct_conf> <PDBx:struct_conf id="STRN3"> <PDBx:beg_label_asym_id>A</PDBx:beg_label_asym_id> <PDBx:beg_label_comp_id>CYS</PDBx:beg_label_comp_id> <PDBx:beg_label_seq_id>95</PDBx:beg_label_seq_id> <PDBx:conf_type_id>STRN_P</PDBx:conf_type_id> <PDBx:details xsi:nil="true" /> <PDBx:end_label_asym_id>A</PDBx:end_label_asym_id> <PDBx:end_label_comp_id>PHE</PDBx:end_label_comp_id> <PDBx:end_label_seq_id>299</PDBx:end_label_seq_id> </PDBx:struct_conf> <PDBx:struct_conf id="STRN4"> <PDBx:beg_label_asym_id>B</PDBx:beg_label_asym_id> <PDBx:beg_label_comp_id>PRO</PDBx:beg_label_comp_id> <PDBx:beg_label_seq_id>201</PDBx:beg_label_seq_id> <PDBx:conf_type_id>STRN_P</PDBx:conf_type_id> <PDBx:details xsi:nil="true" /> <PDBx:end_label_asym_id>B</PDBx:end_label_asym_id> <PDBx:end_label_comp_id>LEU</PDBx:end_label_comp_id> <PDBx:end_label_seq_id>205</PDBx:end_label_seq_id> </PDBx:struct_conf> <PDBx:struct_conf id="TURN1"> <PDBx:beg_label_asym_id>A</PDBx:beg_label_asym_id> <PDBx:beg_label_comp_id>ILE</PDBx:beg_label_comp_id> <PDBx:beg_label_seq_id>15</PDBx:beg_label_seq_id> <PDBx:conf_type_id>TURN_TY1P_P</PDBx:conf_type_id> <PDBx:details xsi:nil="true" /> <PDBx:end_label_asym_id>A</PDBx:end_label_asym_id> <PDBx:end_label_comp_id>GLN</PDBx:end_label_comp_id> <PDBx:end_label_seq_id>18</PDBx:end_label_seq_id> </PDBx:struct_conf> <PDBx:struct_conf id="TURN2"> <PDBx:beg_label_asym_id>A</PDBx:beg_label_asym_id> <PDBx:beg_label_comp_id>GLY</PDBx:beg_label_comp_id> <PDBx:beg_label_seq_id>49</PDBx:beg_label_seq_id> <PDBx:conf_type_id>TURN_TY2_P</PDBx:conf_type_id> <PDBx:details xsi:nil="true" /> <PDBx:end_label_asym_id>A</PDBx:end_label_asym_id> <PDBx:end_label_comp_id>GLY</PDBx:end_label_comp_id> <PDBx:end_label_seq_id>52</PDBx:end_label_seq_id> </PDBx:struct_conf> <PDBx:struct_conf id="TURN3"> <PDBx:beg_label_asym_id>A</PDBx:beg_label_asym_id> <PDBx:beg_label_comp_id>ILE</PDBx:beg_label_comp_id> <PDBx:beg_label_seq_id>55</PDBx:beg_label_seq_id> <PDBx:conf_type_id>TURN_TY1P_P</PDBx:conf_type_id> <PDBx:details xsi:nil="true" /> <PDBx:end_label_asym_id>A</PDBx:end_label_asym_id> <PDBx:end_label_comp_id>HIS</PDBx:end_label_comp_id> <PDBx:end_label_seq_id>69</PDBx:end_label_seq_id> </PDBx:struct_conf> <PDBx:struct_conf id="TURN4"> <PDBx:beg_label_asym_id>A</PDBx:beg_label_asym_id> <PDBx:beg_label_comp_id>THR</PDBx:beg_label_comp_id> <PDBx:beg_label_seq_id>91</PDBx:beg_label_seq_id> <PDBx:conf_type_id>TURN_TY1_P</PDBx:conf_type_id> <PDBx:details xsi:nil="true" /> <PDBx:end_label_asym_id>A</PDBx:end_label_asym_id> <PDBx:end_label_comp_id>GLY</PDBx:end_label_comp_id> <PDBx:end_label_seq_id>94</PDBx:end_label_seq_id> </PDBx:struct_conf> </PDBx:struct_confCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE struct_conf (
@@ -15485,7 +15485,7 @@ CREATE TABLE struct_conf (
 --
 -- (quoted from struct_connType)
 -- Data items in the STRUCT_CONN category record details about the connections between portions of the structure. These can be hydrogen bonds, salt bridges, disulfide bridges and so on. The STRUCT_CONN_TYPE records define the criteria used to identify these connections. Example 1 - based on PDB entry 5HVP and laboratory records for the structure corresponding to PDB entry 5HVP. <PDBx:struct_connCategory> <PDBx:struct_conn id="C1"> <PDBx:conn_type_id>saltbr</PDBx:conn_type_id> <PDBx:details xsi:nil="true" /> <PDBx:ptnr1_label_asym_id>A</PDBx:ptnr1_label_asym_id> <PDBx:ptnr1_label_atom_id>NZ1</PDBx:ptnr1_label_atom_id> <PDBx:ptnr1_label_comp_id>ARG</PDBx:ptnr1_label_comp_id> <PDBx:ptnr1_label_seq_id>87</PDBx:ptnr1_label_seq_id> <PDBx:ptnr1_role>positive</PDBx:ptnr1_role> <PDBx:ptnr1_symmetry>1_555</PDBx:ptnr1_symmetry> <PDBx:ptnr2_label_asym_id>A</PDBx:ptnr2_label_asym_id> <PDBx:ptnr2_label_atom_id>OE1</PDBx:ptnr2_label_atom_id> <PDBx:ptnr2_label_comp_id>GLU</PDBx:ptnr2_label_comp_id> <PDBx:ptnr2_label_seq_id>92</PDBx:ptnr2_label_seq_id> <PDBx:ptnr2_role>negative</PDBx:ptnr2_role> <PDBx:ptnr2_symmetry>1_555</PDBx:ptnr2_symmetry> </PDBx:struct_conn> <PDBx:struct_conn id="C2"> <PDBx:conn_type_id>hydrog</PDBx:conn_type_id> <PDBx:details xsi:nil="true" /> <PDBx:ptnr1_label_asym_id>B</PDBx:ptnr1_label_asym_id> <PDBx:ptnr1_label_atom_id>N</PDBx:ptnr1_label_atom_id> <PDBx:ptnr1_label_comp_id>ARG</PDBx:ptnr1_label_comp_id> <PDBx:ptnr1_label_seq_id>287</PDBx:ptnr1_label_seq_id> <PDBx:ptnr1_role>donor</PDBx:ptnr1_role> <PDBx:ptnr1_symmetry>1_555</PDBx:ptnr1_symmetry> <PDBx:ptnr2_label_asym_id>B</PDBx:ptnr2_label_asym_id> <PDBx:ptnr2_label_atom_id>O</PDBx:ptnr2_label_atom_id> <PDBx:ptnr2_label_comp_id>GLY</PDBx:ptnr2_label_comp_id> <PDBx:ptnr2_label_seq_id>292</PDBx:ptnr2_label_seq_id> <PDBx:ptnr2_role>acceptor</PDBx:ptnr2_role> <PDBx:ptnr2_symmetry>1_555</PDBx:ptnr2_symmetry> </PDBx:struct_conn> </PDBx:struct_connCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_struct_conn_conn_type_id CASCADE;
@@ -15566,7 +15566,7 @@ CREATE TABLE struct_conn (
 --
 -- (quoted from struct_keywordsType)
 -- Data items in the STRUCT_KEYWORDS category specify keywords that describe the chemical structure in this entry. Example 1 - based on PDB entry 5HVP and laboratory records for the structure corresponding to PDB entry 5HVP. <PDBx:struct_keywordsCategory> <PDBx:struct_keywords entry_id="5HVP"> <PDBx:text>enzyme-inhibitor complex, aspartyl protease, static disorder</PDBx:text> </PDBx:struct_keywords> </PDBx:struct_keywordsCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE struct_keywords (
@@ -15582,7 +15582,7 @@ CREATE TABLE struct_keywords (
 --
 -- (quoted from struct_mon_detailsType)
 -- Data items in the STRUCT_MON_DETAILS category record details about specifics of calculations summarized in data items in the STRUCT_MON_PROT and STRUCT_MON_NUCL categories. These can include the coefficients used in map calculations, the radii used for including points in a calculation and so on.
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE struct_mon_details (
@@ -15599,7 +15599,7 @@ CREATE TABLE struct_mon_details (
 --
 -- (quoted from struct_mon_nuclType)
 -- Data items in the STRUCT_MON_NUCL category record details about structural properties of a nucleic acid when analyzed at the monomer level. Analogous data items for proteins are given in the STRUCT_MON_PROT category. For items where the value of the property depends on the method employed to calculate it, details of the method of calculation are given using data items in the STRUCT_MON_DETAILS category. Example 1 - based on NDB structure BDL028. <PDBx:struct_mon_nuclCategory> <PDBx:struct_mon_nucl label_alt_id="A" label_asym_id="A" label_comp_id="C" label_seq_id="1"> <PDBx:alpha xsi:nil="true" /> <PDBx:beta xsi:nil="true" /> <PDBx:delta>131.9</PDBx:delta> <PDBx:epsilon>222.1</PDBx:epsilon> <PDBx:gamma>29.9</PDBx:gamma> <PDBx:zeta>174.2</PDBx:zeta> </PDBx:struct_mon_nucl> <PDBx:struct_mon_nucl label_alt_id="A" label_asym_id="A" label_comp_id="G" label_seq_id="2"> <PDBx:alpha>334.0</PDBx:alpha> <PDBx:beta>130.6</PDBx:beta> <PDBx:delta>125.6</PDBx:delta> <PDBx:epsilon>167.6</PDBx:epsilon> <PDBx:gamma>33.1</PDBx:gamma> <PDBx:zeta>270.9</PDBx:zeta> </PDBx:struct_mon_nucl> <PDBx:struct_mon_nucl label_alt_id="A" label_asym_id="A" label_comp_id="T" label_seq_id="3"> <PDBx:alpha>258.2</PDBx:alpha> <PDBx:beta>178.7</PDBx:beta> <PDBx:delta>114.6</PDBx:delta> <PDBx:epsilon>216.6</PDBx:epsilon> <PDBx:gamma>101.0</PDBx:gamma> <PDBx:zeta>259.3</PDBx:zeta> </PDBx:struct_mon_nucl> </PDBx:struct_mon_nuclCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE struct_mon_nucl (
@@ -15674,7 +15674,7 @@ CREATE TABLE struct_mon_nucl (
 --
 -- (quoted from struct_mon_protType)
 -- Data items in the STRUCT_MON_PROT category record details about structural properties of a protein when analyzed at the monomer level. Analogous data items for nucleic acids are given in the STRUCT_MON_NUCL category. For items where the value of the property depends on the method employed to calculate it, details of the method of calculation are given using data items in the STRUCT_MON_DETAILS category. Example 1 - based on laboratory records for protein NS1. This example provides details for residue ARG 35. <PDBx:struct_mon_protCategory> <PDBx:struct_mon_prot label_alt_id="A" label_asym_id="A" label_comp_id="ARG" label_seq_id="35"> <PDBx:RSCC_all>0.90</PDBx:RSCC_all> <PDBx:RSR_all>0.18</PDBx:RSR_all> <PDBx:chi1>-67.9</PDBx:chi1> <PDBx:chi2>-174.7</PDBx:chi2> <PDBx:chi3>-67.7</PDBx:chi3> <PDBx:chi4>-86.3</PDBx:chi4> <PDBx:chi5>4.2</PDBx:chi5> <PDBx:mean_B_all>30.0</PDBx:mean_B_all> <PDBx:mean_B_main>25.0</PDBx:mean_B_main> <PDBx:mean_B_side>35.1</PDBx:mean_B_side> <PDBx:omega>180.1</PDBx:omega> <PDBx:phi>-60.3</PDBx:phi> <PDBx:psi>-46.0</PDBx:psi> </PDBx:struct_mon_prot> </PDBx:struct_mon_protCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE struct_mon_prot (
@@ -15722,7 +15722,7 @@ CREATE TABLE struct_mon_prot (
 --
 -- (quoted from struct_mon_prot_cisType)
 -- Data items in the STRUCT_MON_PROT_CIS category identify monomers that have been found to have the peptide bond in the cis conformation. The criterion used to select residues to be designated as containing cis peptide bonds is given in attribute prot_cis in category struct_mon_details. Example 1 - based on PDB structure 1ACY of Ghiara, Stura, Stanfield, Profy & Wilson [Science (1994), 264, 82-85]. <PDBx:struct_mon_prot_cisCategory> <PDBx:struct_mon_prot_cis pdbx_id="1"> <PDBx:label_alt_id xsi:nil="true" /> <PDBx:label_asym_id>L</PDBx:label_asym_id> <PDBx:label_comp_id>PRO</PDBx:label_comp_id> <PDBx:label_seq_id>8</PDBx:label_seq_id> <PDBx:pdbx_PDB_model_num>1</PDBx:pdbx_PDB_model_num> </PDBx:struct_mon_prot_cis> <PDBx:struct_mon_prot_cis pdbx_id="2"> <PDBx:label_alt_id xsi:nil="true" /> <PDBx:label_asym_id>L</PDBx:label_asym_id> <PDBx:label_comp_id>PRO</PDBx:label_comp_id> <PDBx:label_seq_id>77</PDBx:label_seq_id> <PDBx:pdbx_PDB_model_num>1</PDBx:pdbx_PDB_model_num> </PDBx:struct_mon_prot_cis> <PDBx:struct_mon_prot_cis pdbx_id="3"> <PDBx:label_alt_id xsi:nil="true" /> <PDBx:label_asym_id>L</PDBx:label_asym_id> <PDBx:label_comp_id>PRO</PDBx:label_comp_id> <PDBx:label_seq_id>95</PDBx:label_seq_id> <PDBx:pdbx_PDB_model_num>1</PDBx:pdbx_PDB_model_num> </PDBx:struct_mon_prot_cis> <PDBx:struct_mon_prot_cis pdbx_id="4"> <PDBx:label_alt_id xsi:nil="true" /> <PDBx:label_asym_id>L</PDBx:label_asym_id> <PDBx:label_comp_id>PRO</PDBx:label_comp_id> <PDBx:label_seq_id>141</PDBx:label_seq_id> <PDBx:pdbx_PDB_model_num>1</PDBx:pdbx_PDB_model_num> </PDBx:struct_mon_prot_cis> </PDBx:struct_mon_prot_cisCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE struct_mon_prot_cis (
@@ -15754,7 +15754,7 @@ CREATE TABLE struct_mon_prot_cis (
 --
 -- (quoted from struct_ncs_dom_limType)
 -- Data items in the STRUCT_NCS_DOM_LIM category identify the start and end points of polypeptide chain segments that form all or part of a domain in an ensemble of domains related by noncrystallographic symmetry. Example 1 - based on laboratory records for the collagen-like peptide, HYP-. <PDBx:struct_ncs_dom_limCategory> <PDBx:struct_ncs_dom_lim dom_id="d1" pdbx_component_id="1" pdbx_ens_id="1"> <PDBx:beg_label_alt_id xsi:nil="true" /> <PDBx:beg_label_asym_id>A</PDBx:beg_label_asym_id> <PDBx:beg_label_comp_id>PRO</PDBx:beg_label_comp_id> <PDBx:beg_label_seq_id>1</PDBx:beg_label_seq_id> <PDBx:end_label_alt_id xsi:nil="true" /> <PDBx:end_label_asym_id>A</PDBx:end_label_asym_id> <PDBx:end_label_comp_id>GLY</PDBx:end_label_comp_id> <PDBx:end_label_seq_id>29</PDBx:end_label_seq_id> </PDBx:struct_ncs_dom_lim> <PDBx:struct_ncs_dom_lim dom_id="d1" pdbx_component_id="2" pdbx_ens_id="1"> <PDBx:beg_label_alt_id xsi:nil="true" /> <PDBx:beg_label_asym_id>B</PDBx:beg_label_asym_id> <PDBx:beg_label_comp_id>PRO</PDBx:beg_label_comp_id> <PDBx:beg_label_seq_id>31</PDBx:beg_label_seq_id> <PDBx:end_label_alt_id xsi:nil="true" /> <PDBx:end_label_asym_id>B</PDBx:end_label_asym_id> <PDBx:end_label_comp_id>GLY</PDBx:end_label_comp_id> <PDBx:end_label_seq_id>59</PDBx:end_label_seq_id> </PDBx:struct_ncs_dom_lim> <PDBx:struct_ncs_dom_lim dom_id="d1" pdbx_component_id="3" pdbx_ens_id="1"> <PDBx:beg_label_alt_id xsi:nil="true" /> <PDBx:beg_label_asym_id>C</PDBx:beg_label_asym_id> <PDBx:beg_label_comp_id>PRO</PDBx:beg_label_comp_id> <PDBx:beg_label_seq_id>61</PDBx:beg_label_seq_id> <PDBx:end_label_alt_id xsi:nil="true" /> <PDBx:end_label_asym_id>B</PDBx:end_label_asym_id> <PDBx:end_label_comp_id>GLY</PDBx:end_label_comp_id> <PDBx:end_label_seq_id>89</PDBx:end_label_seq_id> </PDBx:struct_ncs_dom_lim> <PDBx:struct_ncs_dom_lim dom_id="d2" pdbx_component_id="1" pdbx_ens_id="1"> <PDBx:beg_label_alt_id xsi:nil="true" /> <PDBx:beg_label_asym_id>D</PDBx:beg_label_asym_id> <PDBx:beg_label_comp_id>PRO</PDBx:beg_label_comp_id> <PDBx:beg_label_seq_id>91</PDBx:beg_label_seq_id> <PDBx:end_label_alt_id xsi:nil="true" /> <PDBx:end_label_asym_id>D</PDBx:end_label_asym_id> <PDBx:end_label_comp_id>GLY</PDBx:end_label_comp_id> <PDBx:end_label_seq_id>119</PDBx:end_label_seq_id> </PDBx:struct_ncs_dom_lim> <PDBx:struct_ncs_dom_lim dom_id="d2" pdbx_component_id="2" pdbx_ens_id="1"> <PDBx:beg_label_alt_id xsi:nil="true" /> <PDBx:beg_label_asym_id>E</PDBx:beg_label_asym_id> <PDBx:beg_label_comp_id>PRO</PDBx:beg_label_comp_id> <PDBx:beg_label_seq_id>121</PDBx:beg_label_seq_id> <PDBx:end_label_alt_id xsi:nil="true" /> <PDBx:end_label_asym_id>E</PDBx:end_label_asym_id> <PDBx:end_label_comp_id>GLY</PDBx:end_label_comp_id> <PDBx:end_label_seq_id>149</PDBx:end_label_seq_id> </PDBx:struct_ncs_dom_lim> <PDBx:struct_ncs_dom_lim dom_id="d2" pdbx_component_id="3" pdbx_ens_id="1"> <PDBx:beg_label_alt_id xsi:nil="true" /> <PDBx:beg_label_asym_id>F</PDBx:beg_label_asym_id> <PDBx:beg_label_comp_id>PRO</PDBx:beg_label_comp_id> <PDBx:beg_label_seq_id>151</PDBx:beg_label_seq_id> <PDBx:end_label_alt_id xsi:nil="true" /> <PDBx:end_label_asym_id>F</PDBx:end_label_asym_id> <PDBx:end_label_comp_id>GLY</PDBx:end_label_comp_id> <PDBx:end_label_seq_id>179</PDBx:end_label_seq_id> </PDBx:struct_ncs_dom_lim> </PDBx:struct_ncs_dom_limCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE struct_ncs_dom_lim (
@@ -15787,7 +15787,7 @@ CREATE TABLE struct_ncs_dom_lim (
 --
 -- (quoted from struct_ncs_ens_genType)
 -- Data items in the STRUCT_NCS_ENS_GEN category list domains related by a noncrystallographic symmetry operation and identify the operator. Example 1 - based on laboratory records for the collagen-like peptide, HYP-. <PDBx:struct_ncs_ens_genCategory> <PDBx:struct_ncs_ens_gen dom_id_1="d1" dom_id_2="d2" ens_id="en1" oper_id="ncsop1"></PDBx:struct_ncs_ens_gen> </PDBx:struct_ncs_ens_genCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE struct_ncs_ens_gen (
@@ -15806,7 +15806,7 @@ CREATE TABLE struct_ncs_ens_gen (
 --
 -- (quoted from struct_ref_seq_difType)
 -- Data items in the STRUCT_REF_SEQ_DIF category provide a mechanism for indicating and annotating point differences between the sequence of the entity or biological unit described in the data block and the sequence of the referenced database entry. Example 1 - based on laboratory records for CAP-DNA complex. <PDBx:struct_ref_seq_difCategory> <PDBx:struct_ref_seq_dif pdbx_ordinal="1"> <PDBx:align_id>algn2</PDBx:align_id> <PDBx:db_mon_id>GLU</PDBx:db_mon_id> <PDBx:details> A point mutation was introduced in the CAP at position 181 substituting PHE for GLU.</PDBx:details> <PDBx:mon_id>PHE</PDBx:mon_id> <PDBx:seq_num>181</PDBx:seq_num> </PDBx:struct_ref_seq_dif> </PDBx:struct_ref_seq_difCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE struct_ref_seq_dif (
@@ -15831,7 +15831,7 @@ CREATE TABLE struct_ref_seq_dif (
 --
 -- (quoted from struct_sheet_hbondType)
 -- Data items in the STRUCT_SHEET_HBOND category record details about the hydrogen bonding between residue ranges in a beta- sheet. It is necessary to treat hydrogen bonding independently of the designation of ranges, because the hydrogen bonding may begin in different places for the interactions of a given strand with the one preceding it and the one following it in the sheet. Example 1 - simple beta-barrel. <PDBx:struct_sheet_hbondCategory> <PDBx:struct_sheet_hbond range_id_1="strand_a" range_id_2="strand_b" sheet_id="sheet_1"> <PDBx:range_1_beg_label_atom_id>N</PDBx:range_1_beg_label_atom_id> <PDBx:range_1_beg_label_seq_id>11</PDBx:range_1_beg_label_seq_id> <PDBx:range_1_end_label_atom_id>O</PDBx:range_1_end_label_atom_id> <PDBx:range_1_end_label_seq_id>19</PDBx:range_1_end_label_seq_id> <PDBx:range_2_beg_label_atom_id>O</PDBx:range_2_beg_label_atom_id> <PDBx:range_2_beg_label_seq_id>30</PDBx:range_2_beg_label_seq_id> <PDBx:range_2_end_label_atom_id>N</PDBx:range_2_end_label_atom_id> <PDBx:range_2_end_label_seq_id>40</PDBx:range_2_end_label_seq_id> </PDBx:struct_sheet_hbond> <PDBx:struct_sheet_hbond range_id_1="strand_b" range_id_2="strand_c" sheet_id="sheet_1"> <PDBx:range_1_beg_label_atom_id>N</PDBx:range_1_beg_label_atom_id> <PDBx:range_1_beg_label_seq_id>31</PDBx:range_1_beg_label_seq_id> <PDBx:range_1_end_label_atom_id>O</PDBx:range_1_end_label_atom_id> <PDBx:range_1_end_label_seq_id>39</PDBx:range_1_end_label_seq_id> <PDBx:range_2_beg_label_atom_id>O</PDBx:range_2_beg_label_atom_id> <PDBx:range_2_beg_label_seq_id>50</PDBx:range_2_beg_label_seq_id> <PDBx:range_2_end_label_atom_id>N</PDBx:range_2_end_label_atom_id> <PDBx:range_2_end_label_seq_id>60</PDBx:range_2_end_label_seq_id> </PDBx:struct_sheet_hbond> <PDBx:struct_sheet_hbond range_id_1="strand_c" range_id_2="strand_d" sheet_id="sheet_1"> <PDBx:range_1_beg_label_atom_id>N</PDBx:range_1_beg_label_atom_id> <PDBx:range_1_beg_label_seq_id>51</PDBx:range_1_beg_label_seq_id> <PDBx:range_1_end_label_atom_id>O</PDBx:range_1_end_label_atom_id> <PDBx:range_1_end_label_seq_id>59</PDBx:range_1_end_label_seq_id> <PDBx:range_2_beg_label_atom_id>O</PDBx:range_2_beg_label_atom_id> <PDBx:range_2_beg_label_seq_id>70</PDBx:range_2_beg_label_seq_id> <PDBx:range_2_end_label_atom_id>N</PDBx:range_2_end_label_atom_id> <PDBx:range_2_end_label_seq_id>80</PDBx:range_2_end_label_seq_id> </PDBx:struct_sheet_hbond> <PDBx:struct_sheet_hbond range_id_1="strand_d" range_id_2="strand_e" sheet_id="sheet_1"> <PDBx:range_1_beg_label_atom_id>N</PDBx:range_1_beg_label_atom_id> <PDBx:range_1_beg_label_seq_id>71</PDBx:range_1_beg_label_seq_id> <PDBx:range_1_end_label_atom_id>O</PDBx:range_1_end_label_atom_id> <PDBx:range_1_end_label_seq_id>89</PDBx:range_1_end_label_seq_id> <PDBx:range_2_beg_label_atom_id>O</PDBx:range_2_beg_label_atom_id> <PDBx:range_2_beg_label_seq_id>90</PDBx:range_2_beg_label_seq_id> <PDBx:range_2_end_label_atom_id>N</PDBx:range_2_end_label_atom_id> <PDBx:range_2_end_label_seq_id>100</PDBx:range_2_end_label_seq_id> </PDBx:struct_sheet_hbond> <PDBx:struct_sheet_hbond range_id_1="strand_e" range_id_2="strand_f" sheet_id="sheet_1"> <PDBx:range_1_beg_label_atom_id>N</PDBx:range_1_beg_label_atom_id> <PDBx:range_1_beg_label_seq_id>91</PDBx:range_1_beg_label_seq_id> <PDBx:range_1_end_label_atom_id>O</PDBx:range_1_end_label_atom_id> <PDBx:range_1_end_label_seq_id>99</PDBx:range_1_end_label_seq_id> <PDBx:range_2_beg_label_atom_id>O</PDBx:range_2_beg_label_atom_id> <PDBx:range_2_beg_label_seq_id>110</PDBx:range_2_beg_label_seq_id> <PDBx:range_2_end_label_atom_id>N</PDBx:range_2_end_label_atom_id> <PDBx:range_2_end_label_seq_id>120</PDBx:range_2_end_label_seq_id> </PDBx:struct_sheet_hbond> <PDBx:struct_sheet_hbond range_id_1="strand_f" range_id_2="strand_g" sheet_id="sheet_1"> <PDBx:range_1_beg_label_atom_id>N</PDBx:range_1_beg_label_atom_id> <PDBx:range_1_beg_label_seq_id>111</PDBx:range_1_beg_label_seq_id> <PDBx:range_1_end_label_atom_id>O</PDBx:range_1_end_label_atom_id> <PDBx:range_1_end_label_seq_id>119</PDBx:range_1_end_label_seq_id> <PDBx:range_2_beg_label_atom_id>O</PDBx:range_2_beg_label_atom_id> <PDBx:range_2_beg_label_seq_id>130</PDBx:range_2_beg_label_seq_id> <PDBx:range_2_end_label_atom_id>N</PDBx:range_2_end_label_atom_id> <PDBx:range_2_end_label_seq_id>140</PDBx:range_2_end_label_seq_id> </PDBx:struct_sheet_hbond> <PDBx:struct_sheet_hbond range_id_1="strand_g" range_id_2="strand_h" sheet_id="sheet_1"> <PDBx:range_1_beg_label_atom_id>N</PDBx:range_1_beg_label_atom_id> <PDBx:range_1_beg_label_seq_id>131</PDBx:range_1_beg_label_seq_id> <PDBx:range_1_end_label_atom_id>O</PDBx:range_1_end_label_atom_id> <PDBx:range_1_end_label_seq_id>139</PDBx:range_1_end_label_seq_id> <PDBx:range_2_beg_label_atom_id>O</PDBx:range_2_beg_label_atom_id> <PDBx:range_2_beg_label_seq_id>150</PDBx:range_2_beg_label_seq_id> <PDBx:range_2_end_label_atom_id>N</PDBx:range_2_end_label_atom_id> <PDBx:range_2_end_label_seq_id>160</PDBx:range_2_end_label_seq_id> </PDBx:struct_sheet_hbond> <PDBx:struct_sheet_hbond range_id_1="strand_h" range_id_2="strand_a" sheet_id="sheet_1"> <PDBx:range_1_beg_label_atom_id>N</PDBx:range_1_beg_label_atom_id> <PDBx:range_1_beg_label_seq_id>151</PDBx:range_1_beg_label_seq_id> <PDBx:range_1_end_label_atom_id>O</PDBx:range_1_end_label_atom_id> <PDBx:range_1_end_label_seq_id>159</PDBx:range_1_end_label_seq_id> <PDBx:range_2_beg_label_atom_id>O</PDBx:range_2_beg_label_atom_id> <PDBx:range_2_beg_label_seq_id>10</PDBx:range_2_beg_label_seq_id> <PDBx:range_2_end_label_atom_id>N</PDBx:range_2_end_label_atom_id> <PDBx:range_2_end_label_seq_id>180</PDBx:range_2_end_label_seq_id> </PDBx:struct_sheet_hbond> </PDBx:struct_sheet_hbondCategory> Example 2 - five stranded mixed-sense sheet with one two-piece strand. <PDBx:struct_sheet_hbondCategory> <PDBx:struct_sheet_hbond range_id_1="strand_a" range_id_2="strand_b" sheet_id="sheet_2"> <PDBx:range_1_beg_label_atom_id>N</PDBx:range_1_beg_label_atom_id> <PDBx:range_1_beg_label_seq_id>20</PDBx:range_1_beg_label_seq_id> <PDBx:range_1_end_label_atom_id>O</PDBx:range_1_end_label_atom_id> <PDBx:range_1_end_label_seq_id>18</PDBx:range_1_end_label_seq_id> <PDBx:range_2_beg_label_atom_id>O</PDBx:range_2_beg_label_atom_id> <PDBx:range_2_beg_label_seq_id>119</PDBx:range_2_beg_label_seq_id> <PDBx:range_2_end_label_atom_id>N</PDBx:range_2_end_label_atom_id> <PDBx:range_2_end_label_seq_id>111</PDBx:range_2_end_label_seq_id> </PDBx:struct_sheet_hbond> <PDBx:struct_sheet_hbond range_id_1="strand_b" range_id_2="strand_c" sheet_id="sheet_2"> <PDBx:range_1_beg_label_atom_id>N</PDBx:range_1_beg_label_atom_id> <PDBx:range_1_beg_label_seq_id>110</PDBx:range_1_beg_label_seq_id> <PDBx:range_1_end_label_atom_id>N</PDBx:range_1_end_label_atom_id> <PDBx:range_1_end_label_seq_id>118</PDBx:range_1_end_label_seq_id> <PDBx:range_2_beg_label_atom_id>O</PDBx:range_2_beg_label_atom_id> <PDBx:range_2_beg_label_seq_id>33</PDBx:range_2_beg_label_seq_id> <PDBx:range_2_end_label_atom_id>O</PDBx:range_2_end_label_atom_id> <PDBx:range_2_end_label_seq_id>41</PDBx:range_2_end_label_seq_id> </PDBx:struct_sheet_hbond> <PDBx:struct_sheet_hbond range_id_1="strand_c" range_id_2="strand_d1" sheet_id="sheet_2"> <PDBx:range_1_beg_label_atom_id>N</PDBx:range_1_beg_label_atom_id> <PDBx:range_1_beg_label_seq_id>38</PDBx:range_1_beg_label_seq_id> <PDBx:range_1_end_label_atom_id>O</PDBx:range_1_end_label_atom_id> <PDBx:range_1_end_label_seq_id>40</PDBx:range_1_end_label_seq_id> <PDBx:range_2_beg_label_atom_id>O</PDBx:range_2_beg_label_atom_id> <PDBx:range_2_beg_label_seq_id>52</PDBx:range_2_beg_label_seq_id> <PDBx:range_2_end_label_atom_id>N</PDBx:range_2_end_label_atom_id> <PDBx:range_2_end_label_seq_id>50</PDBx:range_2_end_label_seq_id> </PDBx:struct_sheet_hbond> <PDBx:struct_sheet_hbond range_id_1="strand_c" range_id_2="strand_d2" sheet_id="sheet_2"> <PDBx:range_1_beg_label_atom_id>N</PDBx:range_1_beg_label_atom_id> <PDBx:range_1_beg_label_seq_id>30</PDBx:range_1_beg_label_seq_id> <PDBx:range_1_end_label_atom_id>O</PDBx:range_1_end_label_atom_id> <PDBx:range_1_end_label_seq_id>36</PDBx:range_1_end_label_seq_id> <PDBx:range_2_beg_label_atom_id>O</PDBx:range_2_beg_label_atom_id> <PDBx:range_2_beg_label_seq_id>96</PDBx:range_2_beg_label_seq_id> <PDBx:range_2_end_label_atom_id>N</PDBx:range_2_end_label_atom_id> <PDBx:range_2_end_label_seq_id>90</PDBx:range_2_end_label_seq_id> </PDBx:struct_sheet_hbond> <PDBx:struct_sheet_hbond range_id_1="strand_d1" range_id_2="strand_e" sheet_id="sheet_2"> <PDBx:range_1_beg_label_atom_id>N</PDBx:range_1_beg_label_atom_id> <PDBx:range_1_beg_label_seq_id>51</PDBx:range_1_beg_label_seq_id> <PDBx:range_1_end_label_atom_id>O</PDBx:range_1_end_label_atom_id> <PDBx:range_1_end_label_seq_id>51</PDBx:range_1_end_label_seq_id> <PDBx:range_2_beg_label_atom_id>O</PDBx:range_2_beg_label_atom_id> <PDBx:range_2_beg_label_seq_id>80</PDBx:range_2_beg_label_seq_id> <PDBx:range_2_end_label_atom_id>N</PDBx:range_2_end_label_atom_id> <PDBx:range_2_end_label_seq_id>80</PDBx:range_2_end_label_seq_id> </PDBx:struct_sheet_hbond> <PDBx:struct_sheet_hbond range_id_1="strand_d2" range_id_2="strand_e" sheet_id="sheet_2"> <PDBx:range_1_beg_label_atom_id>N</PDBx:range_1_beg_label_atom_id> <PDBx:range_1_beg_label_seq_id>91</PDBx:range_1_beg_label_seq_id> <PDBx:range_1_end_label_atom_id>O</PDBx:range_1_end_label_atom_id> <PDBx:range_1_end_label_seq_id>97</PDBx:range_1_end_label_seq_id> <PDBx:range_2_beg_label_atom_id>O</PDBx:range_2_beg_label_atom_id> <PDBx:range_2_beg_label_seq_id>76</PDBx:range_2_beg_label_seq_id> <PDBx:range_2_end_label_atom_id>N</PDBx:range_2_end_label_atom_id> <PDBx:range_2_end_label_seq_id>70</PDBx:range_2_end_label_seq_id> </PDBx:struct_sheet_hbond> </PDBx:struct_sheet_hbondCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE struct_sheet_hbond (
@@ -15880,7 +15880,7 @@ CREATE TABLE struct_sheet_hbond (
 --
 -- (quoted from struct_sheet_orderType)
 -- Data items in the STRUCT_SHEET_ORDER category record details about the order of the residue ranges that form a beta-sheet. All order links are pairwise and the specified pairs are assumed to be adjacent to one another in the sheet. These data items are an alternative to the STRUCT_SHEET_TOPOLOGY data items and they allow all manner of sheets to be described. Example 1 - simple beta-barrel. <PDBx:struct_sheet_orderCategory> <PDBx:struct_sheet_order range_id_1="strand_a" range_id_2="strand_b" sheet_id="sheet_1"> <PDBx:offset>+1</PDBx:offset> <PDBx:sense>parallel</PDBx:sense> </PDBx:struct_sheet_order> <PDBx:struct_sheet_order range_id_1="strand_b" range_id_2="strand_c" sheet_id="sheet_1"> <PDBx:offset>+1</PDBx:offset> <PDBx:sense>parallel</PDBx:sense> </PDBx:struct_sheet_order> <PDBx:struct_sheet_order range_id_1="strand_c" range_id_2="strand_d" sheet_id="sheet_1"> <PDBx:offset>+1</PDBx:offset> <PDBx:sense>parallel</PDBx:sense> </PDBx:struct_sheet_order> <PDBx:struct_sheet_order range_id_1="strand_d" range_id_2="strand_e" sheet_id="sheet_1"> <PDBx:offset>+1</PDBx:offset> <PDBx:sense>parallel</PDBx:sense> </PDBx:struct_sheet_order> <PDBx:struct_sheet_order range_id_1="strand_e" range_id_2="strand_f" sheet_id="sheet_1"> <PDBx:offset>+1</PDBx:offset> <PDBx:sense>parallel</PDBx:sense> </PDBx:struct_sheet_order> <PDBx:struct_sheet_order range_id_1="strand_f" range_id_2="strand_g" sheet_id="sheet_1"> <PDBx:offset>+1</PDBx:offset> <PDBx:sense>parallel</PDBx:sense> </PDBx:struct_sheet_order> <PDBx:struct_sheet_order range_id_1="strand_g" range_id_2="strand_h" sheet_id="sheet_1"> <PDBx:offset>+1</PDBx:offset> <PDBx:sense>parallel</PDBx:sense> </PDBx:struct_sheet_order> <PDBx:struct_sheet_order range_id_1="strand_h" range_id_2="strand_a" sheet_id="sheet_1"> <PDBx:offset>+1</PDBx:offset> <PDBx:sense>parallel</PDBx:sense> </PDBx:struct_sheet_order> </PDBx:struct_sheet_orderCategory> Example 2 - five stranded mixed-sense sheet with one two-piece strand. <PDBx:struct_sheet_orderCategory> <PDBx:struct_sheet_order range_id_1="strand_a" range_id_2="strand_b" sheet_id="sheet_2"> <PDBx:offset>+1</PDBx:offset> <PDBx:sense>anti-parallel</PDBx:sense> </PDBx:struct_sheet_order> <PDBx:struct_sheet_order range_id_1="strand_b" range_id_2="strand_c" sheet_id="sheet_2"> <PDBx:offset>+1</PDBx:offset> <PDBx:sense>parallel</PDBx:sense> </PDBx:struct_sheet_order> <PDBx:struct_sheet_order range_id_1="strand_c" range_id_2="strand_d1" sheet_id="sheet_2"> <PDBx:offset>+1</PDBx:offset> <PDBx:sense>anti-parallel</PDBx:sense> </PDBx:struct_sheet_order> <PDBx:struct_sheet_order range_id_1="strand_c" range_id_2="strand_d2" sheet_id="sheet_2"> <PDBx:offset>+1</PDBx:offset> <PDBx:sense>anti-parallel</PDBx:sense> </PDBx:struct_sheet_order> <PDBx:struct_sheet_order range_id_1="strand_d1" range_id_2="strand_e" sheet_id="sheet_2"> <PDBx:offset>+1</PDBx:offset> <PDBx:sense>anti-parallel</PDBx:sense> </PDBx:struct_sheet_order> <PDBx:struct_sheet_order range_id_1="strand_d2" range_id_2="strand_e" sheet_id="sheet_2"> <PDBx:offset>+1</PDBx:offset> <PDBx:sense>anti-parallel</PDBx:sense> </PDBx:struct_sheet_order> </PDBx:struct_sheet_orderCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_struct_sheet_order_sense CASCADE;
@@ -15901,7 +15901,7 @@ CREATE TABLE struct_sheet_order (
 --
 -- (quoted from struct_sheet_rangeType)
 -- Data items in the STRUCT_SHEET_RANGE category record details about the residue ranges that form a beta-sheet. Residues are included in a range if they made beta-sheet-type hydrogen-bonding interactions with at least one adjacent strand and if there are at least two residues in the range. Example 1 - simple beta-barrel. <PDBx:struct_sheet_rangeCategory> <PDBx:struct_sheet_range id="strand_a" sheet_id="sheet_1"> <PDBx:beg_label_asym_id>A</PDBx:beg_label_asym_id> <PDBx:beg_label_comp_id>ala</PDBx:beg_label_comp_id> <PDBx:beg_label_seq_id>20</PDBx:beg_label_seq_id> <PDBx:end_label_asym_id>A</PDBx:end_label_asym_id> <PDBx:end_label_comp_id>ala</PDBx:end_label_comp_id> <PDBx:end_label_seq_id>30</PDBx:end_label_seq_id> <PDBx:symmetry>1_555</PDBx:symmetry> </PDBx:struct_sheet_range> <PDBx:struct_sheet_range id="strand_b" sheet_id="sheet_1"> <PDBx:beg_label_asym_id>A</PDBx:beg_label_asym_id> <PDBx:beg_label_comp_id>ala</PDBx:beg_label_comp_id> <PDBx:beg_label_seq_id>40</PDBx:beg_label_seq_id> <PDBx:end_label_asym_id>A</PDBx:end_label_asym_id> <PDBx:end_label_comp_id>ala</PDBx:end_label_comp_id> <PDBx:end_label_seq_id>50</PDBx:end_label_seq_id> <PDBx:symmetry>1_555</PDBx:symmetry> </PDBx:struct_sheet_range> <PDBx:struct_sheet_range id="strand_c" sheet_id="sheet_1"> <PDBx:beg_label_asym_id>A</PDBx:beg_label_asym_id> <PDBx:beg_label_comp_id>ala</PDBx:beg_label_comp_id> <PDBx:beg_label_seq_id>60</PDBx:beg_label_seq_id> <PDBx:end_label_asym_id>A</PDBx:end_label_asym_id> <PDBx:end_label_comp_id>ala</PDBx:end_label_comp_id> <PDBx:end_label_seq_id>70</PDBx:end_label_seq_id> <PDBx:symmetry>1_555</PDBx:symmetry> </PDBx:struct_sheet_range> <PDBx:struct_sheet_range id="strand_d" sheet_id="sheet_1"> <PDBx:beg_label_asym_id>A</PDBx:beg_label_asym_id> <PDBx:beg_label_comp_id>ala</PDBx:beg_label_comp_id> <PDBx:beg_label_seq_id>80</PDBx:beg_label_seq_id> <PDBx:end_label_asym_id>A</PDBx:end_label_asym_id> <PDBx:end_label_comp_id>ala</PDBx:end_label_comp_id> <PDBx:end_label_seq_id>90</PDBx:end_label_seq_id> <PDBx:symmetry>1_555</PDBx:symmetry> </PDBx:struct_sheet_range> <PDBx:struct_sheet_range id="strand_e" sheet_id="sheet_1"> <PDBx:beg_label_asym_id>A</PDBx:beg_label_asym_id> <PDBx:beg_label_comp_id>ala</PDBx:beg_label_comp_id> <PDBx:beg_label_seq_id>100</PDBx:beg_label_seq_id> <PDBx:end_label_asym_id>A</PDBx:end_label_asym_id> <PDBx:end_label_comp_id>ala</PDBx:end_label_comp_id> <PDBx:end_label_seq_id>110</PDBx:end_label_seq_id> <PDBx:symmetry>1_555</PDBx:symmetry> </PDBx:struct_sheet_range> <PDBx:struct_sheet_range id="strand_f" sheet_id="sheet_1"> <PDBx:beg_label_asym_id>A</PDBx:beg_label_asym_id> <PDBx:beg_label_comp_id>ala</PDBx:beg_label_comp_id> <PDBx:beg_label_seq_id>120</PDBx:beg_label_seq_id> <PDBx:end_label_asym_id>A</PDBx:end_label_asym_id> <PDBx:end_label_comp_id>ala</PDBx:end_label_comp_id> <PDBx:end_label_seq_id>130</PDBx:end_label_seq_id> <PDBx:symmetry>1_555</PDBx:symmetry> </PDBx:struct_sheet_range> <PDBx:struct_sheet_range id="strand_g" sheet_id="sheet_1"> <PDBx:beg_label_asym_id>A</PDBx:beg_label_asym_id> <PDBx:beg_label_comp_id>ala</PDBx:beg_label_comp_id> <PDBx:beg_label_seq_id>140</PDBx:beg_label_seq_id> <PDBx:end_label_asym_id>A</PDBx:end_label_asym_id> <PDBx:end_label_comp_id>ala</PDBx:end_label_comp_id> <PDBx:end_label_seq_id>150</PDBx:end_label_seq_id> <PDBx:symmetry>1_555</PDBx:symmetry> </PDBx:struct_sheet_range> <PDBx:struct_sheet_range id="strand_h" sheet_id="sheet_1"> <PDBx:beg_label_asym_id>A</PDBx:beg_label_asym_id> <PDBx:beg_label_comp_id>ala</PDBx:beg_label_comp_id> <PDBx:beg_label_seq_id>160</PDBx:beg_label_seq_id> <PDBx:end_label_asym_id>A</PDBx:end_label_asym_id> <PDBx:end_label_comp_id>ala</PDBx:end_label_comp_id> <PDBx:end_label_seq_id>170</PDBx:end_label_seq_id> <PDBx:symmetry>1_555</PDBx:symmetry> </PDBx:struct_sheet_range> </PDBx:struct_sheet_rangeCategory> Example 2 - five stranded mixed-sense sheet with one two-piece strand. <PDBx:struct_sheet_rangeCategory> <PDBx:struct_sheet_range id="strand_a" sheet_id="sheet_2"> <PDBx:beg_label_asym_id>A</PDBx:beg_label_asym_id> <PDBx:beg_label_comp_id>ala</PDBx:beg_label_comp_id> <PDBx:beg_label_seq_id>10</PDBx:beg_label_seq_id> <PDBx:end_label_asym_id>A</PDBx:end_label_asym_id> <PDBx:end_label_comp_id>ala</PDBx:end_label_comp_id> <PDBx:end_label_seq_id>18</PDBx:end_label_seq_id> <PDBx:symmetry>1_555</PDBx:symmetry> </PDBx:struct_sheet_range> <PDBx:struct_sheet_range id="strand_b" sheet_id="sheet_2"> <PDBx:beg_label_asym_id>A</PDBx:beg_label_asym_id> <PDBx:beg_label_comp_id>ala</PDBx:beg_label_comp_id> <PDBx:beg_label_seq_id>110</PDBx:beg_label_seq_id> <PDBx:end_label_asym_id>A</PDBx:end_label_asym_id> <PDBx:end_label_comp_id>ala</PDBx:end_label_comp_id> <PDBx:end_label_seq_id>119</PDBx:end_label_seq_id> <PDBx:symmetry>1_555</PDBx:symmetry> </PDBx:struct_sheet_range> <PDBx:struct_sheet_range id="strand_c" sheet_id="sheet_2"> <PDBx:beg_label_asym_id>A</PDBx:beg_label_asym_id> <PDBx:beg_label_comp_id>ala</PDBx:beg_label_comp_id> <PDBx:beg_label_seq_id>30</PDBx:beg_label_seq_id> <PDBx:end_label_asym_id>A</PDBx:end_label_asym_id> <PDBx:end_label_comp_id>ala</PDBx:end_label_comp_id> <PDBx:end_label_seq_id>41</PDBx:end_label_seq_id> <PDBx:symmetry>1_555</PDBx:symmetry> </PDBx:struct_sheet_range> <PDBx:struct_sheet_range id="strand_d1" sheet_id="sheet_2"> <PDBx:beg_label_asym_id>A</PDBx:beg_label_asym_id> <PDBx:beg_label_comp_id>ala</PDBx:beg_label_comp_id> <PDBx:beg_label_seq_id>50</PDBx:beg_label_seq_id> <PDBx:end_label_asym_id>A</PDBx:end_label_asym_id> <PDBx:end_label_comp_id>ala</PDBx:end_label_comp_id> <PDBx:end_label_seq_id>52</PDBx:end_label_seq_id> <PDBx:symmetry>1_555</PDBx:symmetry> </PDBx:struct_sheet_range> <PDBx:struct_sheet_range id="strand_d2" sheet_id="sheet_2"> <PDBx:beg_label_asym_id>A</PDBx:beg_label_asym_id> <PDBx:beg_label_comp_id>ala</PDBx:beg_label_comp_id> <PDBx:beg_label_seq_id>90</PDBx:beg_label_seq_id> <PDBx:end_label_asym_id>A</PDBx:end_label_asym_id> <PDBx:end_label_comp_id>ala</PDBx:end_label_comp_id> <PDBx:end_label_seq_id>97</PDBx:end_label_seq_id> <PDBx:symmetry>1_555</PDBx:symmetry> </PDBx:struct_sheet_range> <PDBx:struct_sheet_range id="strand_e" sheet_id="sheet_2"> <PDBx:beg_label_asym_id>A</PDBx:beg_label_asym_id> <PDBx:beg_label_comp_id>ala</PDBx:beg_label_comp_id> <PDBx:beg_label_seq_id>70</PDBx:beg_label_seq_id> <PDBx:end_label_asym_id>A</PDBx:end_label_asym_id> <PDBx:end_label_comp_id>ala</PDBx:end_label_comp_id> <PDBx:end_label_seq_id>80</PDBx:end_label_seq_id> <PDBx:symmetry>1_555</PDBx:symmetry> </PDBx:struct_sheet_range> </PDBx:struct_sheet_rangeCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE struct_sheet_range (
@@ -15931,7 +15931,7 @@ CREATE TABLE struct_sheet_range (
 --
 -- (quoted from struct_sheet_topologyType)
 -- Data items in the STRUCT_SHEET_TOPOLOGY category record details about the topology of the residue ranges that form a beta-sheet. All topology links are pairwise and the specified pairs are assumed to be successive in the amino-acid sequence. These data items are useful in describing various simple and complex folds, but they become inadequate when the strands in the sheet come from more than one chain. The STRUCT_SHEET_ORDER data items can be used to describe single- and multiple-chain-containing sheets. Example 1 - simple beta-barrel. <PDBx:struct_sheet_topologyCategory> <PDBx:struct_sheet_topology range_id_1="strand_a" range_id_2="strand_b" sheet_id="sheet_1"> <PDBx:offset>+1</PDBx:offset> <PDBx:sense>parallel</PDBx:sense> </PDBx:struct_sheet_topology> <PDBx:struct_sheet_topology range_id_1="strand_b" range_id_2="strand_c" sheet_id="sheet_1"> <PDBx:offset>+1</PDBx:offset> <PDBx:sense>parallel</PDBx:sense> </PDBx:struct_sheet_topology> <PDBx:struct_sheet_topology range_id_1="strand_c" range_id_2="strand_d" sheet_id="sheet_1"> <PDBx:offset>+1</PDBx:offset> <PDBx:sense>parallel</PDBx:sense> </PDBx:struct_sheet_topology> <PDBx:struct_sheet_topology range_id_1="strand_d" range_id_2="strand_e" sheet_id="sheet_1"> <PDBx:offset>+1</PDBx:offset> <PDBx:sense>parallel</PDBx:sense> </PDBx:struct_sheet_topology> <PDBx:struct_sheet_topology range_id_1="strand_e" range_id_2="strand_f" sheet_id="sheet_1"> <PDBx:offset>+1</PDBx:offset> <PDBx:sense>parallel</PDBx:sense> </PDBx:struct_sheet_topology> <PDBx:struct_sheet_topology range_id_1="strand_f" range_id_2="strand_g" sheet_id="sheet_1"> <PDBx:offset>+1</PDBx:offset> <PDBx:sense>parallel</PDBx:sense> </PDBx:struct_sheet_topology> <PDBx:struct_sheet_topology range_id_1="strand_g" range_id_2="strand_h" sheet_id="sheet_1"> <PDBx:offset>+1</PDBx:offset> <PDBx:sense>parallel</PDBx:sense> </PDBx:struct_sheet_topology> <PDBx:struct_sheet_topology range_id_1="strand_h" range_id_2="strand_a" sheet_id="sheet_1"> <PDBx:offset>+1</PDBx:offset> <PDBx:sense>parallel</PDBx:sense> </PDBx:struct_sheet_topology> </PDBx:struct_sheet_topologyCategory> Example 2 - five stranded mixed-sense sheet with one two-piece strand. <PDBx:struct_sheet_topologyCategory> <PDBx:struct_sheet_topology range_id_1="strand_a" range_id_2="strand_c" sheet_id="sheet_2"> <PDBx:offset>+2</PDBx:offset> <PDBx:sense>anti-parallel</PDBx:sense> </PDBx:struct_sheet_topology> <PDBx:struct_sheet_topology range_id_1="strand_c" range_id_2="strand_d1" sheet_id="sheet_2"> <PDBx:offset>+1</PDBx:offset> <PDBx:sense>anti-parallel</PDBx:sense> </PDBx:struct_sheet_topology> <PDBx:struct_sheet_topology range_id_1="strand_d1" range_id_2="strand_e" sheet_id="sheet_2"> <PDBx:offset>+1</PDBx:offset> <PDBx:sense>anti-parallel</PDBx:sense> </PDBx:struct_sheet_topology> <PDBx:struct_sheet_topology range_id_1="strand_e" range_id_2="strand_d2" sheet_id="sheet_2"> <PDBx:offset>-1</PDBx:offset> <PDBx:sense>anti-parallel</PDBx:sense> </PDBx:struct_sheet_topology> <PDBx:struct_sheet_topology range_id_1="strand_d2" range_id_2="strand_b" sheet_id="sheet_2"> <PDBx:offset>-2</PDBx:offset> <PDBx:sense>anti-parallel</PDBx:sense> </PDBx:struct_sheet_topology> </PDBx:struct_sheet_topologyCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_struct_sheet_topology_sense CASCADE;
@@ -15952,7 +15952,7 @@ CREATE TABLE struct_sheet_topology (
 --
 -- (quoted from struct_site_genType)
 -- Data items in the STRUCT_SITE_GEN category record details about the generation of portions of the structure that contribute to structurally relevant sites. Example 1 - based on PDB entry 5HVP and laboratory records for the structure corresponding to PDB entry 5HVP. <PDBx:struct_site_genCategory> <PDBx:struct_site_gen id="1" site_id="1"> <PDBx:details xsi:nil="true" /> <PDBx:label_asym_id>A</PDBx:label_asym_id> <PDBx:label_comp_id>VAL</PDBx:label_comp_id> <PDBx:label_seq_id>32</PDBx:label_seq_id> <PDBx:symmetry>1_555</PDBx:symmetry> </PDBx:struct_site_gen> <PDBx:struct_site_gen id="2" site_id="1"> <PDBx:details xsi:nil="true" /> <PDBx:label_asym_id>A</PDBx:label_asym_id> <PDBx:label_comp_id>ILE</PDBx:label_comp_id> <PDBx:label_seq_id>47</PDBx:label_seq_id> <PDBx:symmetry>1_555</PDBx:symmetry> </PDBx:struct_site_gen> <PDBx:struct_site_gen id="3" site_id="1"> <PDBx:details xsi:nil="true" /> <PDBx:label_asym_id>A</PDBx:label_asym_id> <PDBx:label_comp_id>VAL</PDBx:label_comp_id> <PDBx:label_seq_id>82</PDBx:label_seq_id> <PDBx:symmetry>1_555</PDBx:symmetry> </PDBx:struct_site_gen> <PDBx:struct_site_gen id="4" site_id="1"> <PDBx:details xsi:nil="true" /> <PDBx:label_asym_id>A</PDBx:label_asym_id> <PDBx:label_comp_id>ILE</PDBx:label_comp_id> <PDBx:label_seq_id>84</PDBx:label_seq_id> <PDBx:symmetry>1_555</PDBx:symmetry> </PDBx:struct_site_gen> <PDBx:struct_site_gen id="5" site_id="2"> <PDBx:details xsi:nil="true" /> <PDBx:label_asym_id>B</PDBx:label_asym_id> <PDBx:label_comp_id>VAL</PDBx:label_comp_id> <PDBx:label_seq_id>232</PDBx:label_seq_id> <PDBx:symmetry>1_555</PDBx:symmetry> </PDBx:struct_site_gen> <PDBx:struct_site_gen id="6" site_id="2"> <PDBx:details xsi:nil="true" /> <PDBx:label_asym_id>B</PDBx:label_asym_id> <PDBx:label_comp_id>ILE</PDBx:label_comp_id> <PDBx:label_seq_id>247</PDBx:label_seq_id> <PDBx:symmetry>1_555</PDBx:symmetry> </PDBx:struct_site_gen> <PDBx:struct_site_gen id="7" site_id="2"> <PDBx:details xsi:nil="true" /> <PDBx:label_asym_id>B</PDBx:label_asym_id> <PDBx:label_comp_id>VAL</PDBx:label_comp_id> <PDBx:label_seq_id>282</PDBx:label_seq_id> <PDBx:symmetry>1_555</PDBx:symmetry> </PDBx:struct_site_gen> <PDBx:struct_site_gen id="8" site_id="2"> <PDBx:details xsi:nil="true" /> <PDBx:label_asym_id>B</PDBx:label_asym_id> <PDBx:label_comp_id>ILE</PDBx:label_comp_id> <PDBx:label_seq_id>284</PDBx:label_seq_id> <PDBx:symmetry>1_555</PDBx:symmetry> </PDBx:struct_site_gen> </PDBx:struct_site_genCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE struct_site_gen (
@@ -15980,7 +15980,7 @@ CREATE TABLE struct_site_gen (
 --
 -- (quoted from struct_site_keywordsType)
 -- Data items in the STRUCT_SITE_KEYWORDS category record keywords describing the site. Example 1 - based on PDB entry 5HVP and laboratory records for the structure corresponding to PDB entry 5HVP. <PDBx:struct_site_keywordsCategory> <PDBx:struct_site_keywords site_id="P2 site C" text="binding site"></PDBx:struct_site_keywords> <PDBx:struct_site_keywords site_id="P2 site C" text="binding pocket"></PDBx:struct_site_keywords> <PDBx:struct_site_keywords site_id="P2 site C" text="P2 site"></PDBx:struct_site_keywords> <PDBx:struct_site_keywords site_id="P2 site C" text="P2 pocket"></PDBx:struct_site_keywords> <PDBx:struct_site_keywords site_id="P2 site D" text="binding site"></PDBx:struct_site_keywords> <PDBx:struct_site_keywords site_id="P2 site D" text="binding pocket"></PDBx:struct_site_keywords> <PDBx:struct_site_keywords site_id="P2 site D" text="P2 site"></PDBx:struct_site_keywords> <PDBx:struct_site_keywords site_id="P2 site D" text="P2 pocket"></PDBx:struct_site_keywords> </PDBx:struct_site_keywordsCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE struct_site_keywords (
@@ -15995,7 +15995,7 @@ CREATE TABLE struct_site_keywords (
 --
 -- (quoted from struct_site_viewType)
 -- Data items in the STRUCT_SITE_VIEW category record details about how to draw and annotate an informative view of the site. Example 1 - based on NDB structure GDL001 by Coll, Aymami, Van Der Marel, Van Boom, Rich & Wang [Biochemistry (1989), 28, 310-320]. <PDBx:struct_site_viewCategory> <PDBx:struct_site_view id="1"> <PDBx:details> This view highlights the site of ATAT-Netropsin interaction.</PDBx:details> <PDBx:rot_matrix11>0.132</PDBx:rot_matrix11> <PDBx:rot_matrix12>0.922</PDBx:rot_matrix12> <PDBx:rot_matrix13>-0.363</PDBx:rot_matrix13> <PDBx:rot_matrix21>0.131</PDBx:rot_matrix21> <PDBx:rot_matrix22>-0.380</PDBx:rot_matrix22> <PDBx:rot_matrix23>-0.916</PDBx:rot_matrix23> <PDBx:rot_matrix31>-0.982</PDBx:rot_matrix31> <PDBx:rot_matrix32>0.073</PDBx:rot_matrix32> <PDBx:rot_matrix33>-0.172</PDBx:rot_matrix33> </PDBx:struct_site_view> </PDBx:struct_site_viewCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE struct_site_view (
@@ -16019,7 +16019,7 @@ CREATE TABLE struct_site_view (
 --
 -- (quoted from symmetryType)
 -- Data items in the SYMMETRY category record details about the space-group symmetry. Example 1 - based on PDB entry 5HVP and laboratory records for the structure corresponding to PDB entry 5HVP. <PDBx:symmetryCategory> <PDBx:symmetry entry_id="5HVP"> <PDBx:Int_Tables_number>18</PDBx:Int_Tables_number> <PDBx:cell_setting>orthorhombic</PDBx:cell_setting> <PDBx:space_group_name_H-M>P 21 21 2</PDBx:space_group_name_H-M> </PDBx:symmetry> </PDBx:symmetryCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_symmetry_cell_setting CASCADE;
@@ -16039,7 +16039,7 @@ CREATE TABLE symmetry (
 --
 -- (quoted from symmetry_equivType)
 -- Data items in the SYMMETRY_EQUIV category list the symmetry-equivalent positions for the space group. Example 1 - based on PDB entry 5HVP and laboratory records for the structure corresponding to PDB entry 5HVP. <PDBx:symmetry_equivCategory> <PDBx:symmetry_equiv id="1"> <PDBx:pos_as_xyz>+x,+y,+z</PDBx:pos_as_xyz> </PDBx:symmetry_equiv> <PDBx:symmetry_equiv id="2"> <PDBx:pos_as_xyz>-x,-y,z</PDBx:pos_as_xyz> </PDBx:symmetry_equiv> <PDBx:symmetry_equiv id="3"> <PDBx:pos_as_xyz>1/2+x,1/2-y,-z</PDBx:pos_as_xyz> </PDBx:symmetry_equiv> <PDBx:symmetry_equiv id="4"> <PDBx:pos_as_xyz>1/2-x,1/2+y,-z</PDBx:pos_as_xyz> </PDBx:symmetry_equiv> </PDBx:symmetry_equivCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE symmetry_equiv (
@@ -16053,7 +16053,7 @@ CREATE TABLE symmetry_equiv (
 --
 -- (quoted from valence_paramType)
 -- Data items in the VALENCE_PARAM category define the parameters used for calculating bond valences from bond lengths. In addition to the parameters, a pointer is given to the reference (in VALENCE_REF) from which the bond-valence parameters were taken. Example 1 - a bond-valence parameter list with accompanying references. <PDBx:valence_paramCategory> <PDBx:valence_param atom_1="Cu" atom_1_valence="2" atom_2="O" atom_2_valence="-2"> <PDBx:B>0.37</PDBx:B> <PDBx:Ro>1.679</PDBx:Ro> <PDBx:details xsi:nil="true" /> <PDBx:ref_id>a</PDBx:ref_id> </PDBx:valence_param> <PDBx:valence_param atom_1="Cu" atom_1_valence="2" atom_2="O" atom_2_valence="-2"> <PDBx:B>0.37</PDBx:B> <PDBx:Ro>1.649</PDBx:Ro> <PDBx:details xsi:nil="true" /> <PDBx:ref_id>j</PDBx:ref_id> </PDBx:valence_param> <PDBx:valence_param atom_1="Cu" atom_1_valence="2" atom_2="N" atom_2_valence="-3"> <PDBx:B>0.37</PDBx:B> <PDBx:Ro>1.64</PDBx:Ro> <PDBx:details>2-coordinate N</PDBx:details> <PDBx:ref_id>m</PDBx:ref_id> </PDBx:valence_param> <PDBx:valence_param atom_1="Cu" atom_1_valence="2" atom_2="N" atom_2_valence="-3"> <PDBx:B>0.37</PDBx:B> <PDBx:Ro>1.76</PDBx:Ro> <PDBx:details>3-coordinate N</PDBx:details> <PDBx:ref_id>m</PDBx:ref_id> </PDBx:valence_param> </PDBx:valence_paramCategory> <PDBx:valence_refCategory> <PDBx:valence_ref id="a"> <PDBx:reference>Brown &amp; Altermatt (1985), Acta Cryst. B41, 244-247</PDBx:reference> </PDBx:valence_ref> <PDBx:valence_ref id="j"> <PDBx:reference>Liu &amp; Thorp (1993), Inorg. Chem. 32, 4102-4205</PDBx:reference> </PDBx:valence_ref> <PDBx:valence_ref id="m"> <PDBx:reference>See, Krause &amp; Strub (1998), Inorg. Chem. 37, 5369-5375</PDBx:reference> </PDBx:valence_ref> </PDBx:valence_refCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE valence_param (
@@ -16079,7 +16079,7 @@ CREATE TABLE valence_param (
 --
 -- (quoted from valence_refType)
 -- Data items in the VALENCE_REF category list the references from which the bond-valence parameters have been taken.
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: resource/pdbx-v50.xsd
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE valence_ref (

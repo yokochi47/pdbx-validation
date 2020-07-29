@@ -29,22 +29,22 @@ fi
 
 mkdir -p $RDF_VALID
 
-last=`find $RDF_VALID -mindepth 2 -name '*.rdf.gz' | wc -l`
-total=`find $XML_VALID -mindepth 2 -name '*.xml.gz' | wc -l`
-err=`find $RDF_VALID -mindepth 2 -name '*.err' | wc -l`
+last=`find $RDF_VALID -maxdepth 1 -name '*.rdf' | wc -l`
+total=`find $XML_VALID -maxdepth 1 -name '*.xml' | wc -l`
+err=`find $RDF_VALID -maxdepth 1 -name '*.err' | wc -l`
 
 if [ $err != 0 ] || [ $total != $last ] ; then
 
  echo
- echo Translating compressed PDBML-validation to wwPDB/RDF-validation...
+ echo Translating PDBML-validation to wwPDB/RDF-validation...
 
- pdbml_file_list=pdbml_gz_to_rdf_file_list
+ pdbml_file_list=pdbml_to_rdf_file_list
 
- find $XML_VALID -mindepth 2 -name '*.xml.gz' > $pdbml_file_list
+ find $XML_VALID -maxdepth 1 -name '*.xml' > $pdbml_file_list
 
  for proc_id in `seq 1 $MAXPROCS` ; do
 
-  ./scripts/translate_to_rdf_from_pdbml_gz_worker.sh -d $RDF_VALID -l $pdbml_file_list -n $proc_id"of"$MAXPROCS &
+  ./scripts/transl_to_rdf_vrpt_worker.sh -d $RDF_VALID -l $pdbml_file_list -n $proc_id"of"$MAXPROCS &
 
  done
 

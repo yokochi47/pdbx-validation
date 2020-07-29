@@ -42,30 +42,32 @@ PROC_ID=$(($PROC_ID - 1))
 proc_id=0
 total=`wc -l < $FILE_LIST`
 
-while read pdbml_valid_gz_file
+while read pdbml_file
 do
 
  proc_id_mod=$(($proc_id % $MAXPROCS))
 
  if [ $proc_id_mod = $PROC_ID ] ; then
 
-  if [ ! -e $pdbml_valid_gz_file ] ; then
+  if [ ! -e $pdbml_file ] ; then
 
    let proc_id++
    continue
 
   fi
 
-  pdb_id=`basename $pdbml_valid_gz_file -validation-full.xml.gz`
-  pdbml_valid_file=../`dirname $pdbml_valid_gz_file`/`basename $pdbml_valid_gz_file .gz`
-  mmcif_valid_file=$pdb_id-validation-full.cif
-  mmcif_gz_valid_file=$WORK_DIR/${pdb_id:1:2}/$pdb_id-validation-full.cif.gz
+  pdb_id=`basename $pdbml_file -noatom.xml`
+  rdf_file=$WORK_DIR/$pdb_id.rdf
+  rdf_gz_file=$WORK_DIR/${pdb_id:1:2}/$pdb_id.rdf.gz
+  err_file=$WORK_DIR/transl_to_rdf_cc_$pdb_id.err
 
-  if [ ! -e $WORK_DIR/$mmcif_valid_file ] && [ ! -e $mmcif_gz_valid_file ] ; then
+  if ( [ ! -e $rdf_file ] && [ ! -e $rdf_gz_file ] ) || [ -e $err_file ] ; then
 
-   echo $pdb_id
+   java -jar $SAXON -s:$pdbml_file -xsl:$CC2RDF_XSL -o:$rdf_file 2> $err_file && rm -f $err_file || ( cat $err_file && exit 1 )
 
-   ( cd $WORK_DIR ; gunzip -c ../$pdbml_valid_gz_file > $pdbml_valid_file ; xml2mmcif -xml $pdbml_valid_file -dict $pdbx_validation_dic -df $pdbx_validation_odb > /dev/null && ( mv -f $pdbml_valid_file.cif $mmcif_valid_file && rm $pdbml_valid_file && sed -i -e "s/\._\([0-9]\)\(\S*\) /\.\1\2  /" $mmcif_valid_file ) || exit 1 )
+   if [ $has_rapper_command != "false" ] ; then
+    rapper -q -c $rdf_file 2> $err_file && rm -f $err_file || ( cat $err_file && exit 1 )
+   fi
 
    if [ $proc_id_mod = 0 ] ; then
     echo -e -n "\rDone "$((proc_id + 1)) of $total ...

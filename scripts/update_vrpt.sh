@@ -33,11 +33,19 @@ if [ ! -e url_mirror ] ; then
 
    printf "[%d] %s\t\t%6.1f\n" $i $url $time
 
-   cmp=`echo "$time > $delay" | bc`
+   cmp=`echo "$time > $delay" | bc 2> /dev/null`
 
-   if [ $cmp = 0 ] ; then
-    PDB_MIRROR=$url
-    delay=$time
+   if [ "$cmp" = 0 ] ; then
+
+    server_alive=`curl -I $url -m 5 2> /dev/null`
+
+    if [ $? == 0 ] ; then
+
+     PDB_MIRROR=$url
+     delay=$time
+
+    fi
+
    fi
 
   else
@@ -93,10 +101,10 @@ fi
 
 if [ $weekday -ge 1 ] && [ $weekday -le 4 ] ; then
 
- MD5_DIR=chk_sum_validation
+ MD5_DIR=chk_sum_vrpt
  FILE_EXT_DIGEST=_validation
 
- chk_sum_log=validation_log
+ chk_sum_log=vrpt_log
 
  rsync -rlpt -v -z --delete $RSYNC_PORT $PDB_MIRROR::$RSYNC_BASE_DIR/$SRC_DIR .
 
@@ -204,7 +212,7 @@ if [ $weekday -ge 1 ] && [ $weekday -le 4 ] ; then
 
 fi
 
-xml_file_total=validation_file_total
+xml_file_total=info_file_total
 
 updated=`find $SRC_DIR -regextype posix-egrep -regex '.*/[0-9][0-9a-z]{3}_validation.xml.gz' -mtime -4 | wc -l`
 
@@ -240,7 +248,7 @@ if [ $updated = 0 ] || [ ! -e $xml_file_total ] ; then
 
 fi
 
-date -u +"%b %d, %Y" > /tmp/pdb-validation-last
+date -u +"%b %d, %Y" > /tmp/pdb-vrpt-last
 
 gz_file_list=${SRC_DIR,,}_gz_file_list
 
@@ -251,9 +259,9 @@ find $SRC_DIR -regextype posix-egrep -regex '.*/[0-9][0-9a-z]{3}_validation.xml.
 while read gz_file
 do
 
- xml_file=`basename $gz_file .gz`
+ info_file=`basename $gz_file .gz`
 
- if [ ! -e $XML_DIR/$xml_file ] ; then
+ if [ ! -e $XML_DIR/$info_file ] ; then
   cp $gz_file $XML_DIR
  fi
 

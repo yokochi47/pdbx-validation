@@ -50,7 +50,7 @@ if [ $total != $last ] ; then
 
  for proc_id in `seq 1 $MAXPROCS` ; do
 
-  ./scripts/translate_to_mmcif_worker.sh -d $MMCIF_VALID -l $pdbml_file_list -n $proc_id"of"$MAXPROCS &
+  ./scripts/transl_to_mmcif_vrpt_worker.sh -d $MMCIF_VALID -l $pdbml_file_list -n $proc_id"of"$MAXPROCS &
 
  done
 

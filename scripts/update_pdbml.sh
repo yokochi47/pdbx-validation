@@ -32,11 +32,19 @@ if [ ! -e url_mirror ] ; then
 
    printf "[%d] %s\t\t%6.1f\n" $i $url $time
 
-   cmp=`echo "$time > $delay" | bc`
+   cmp=`echo "$time > $delay" | bc 2> /dev/null`
 
-   if [ $cmp = 0 ] ; then
-    PDB_MIRROR=$url
-    delay=$time
+   if [ "$cmp" = 0 ] ; then
+
+    server_alive=`curl -I $url -m 5 2> /dev/null`
+
+    if [ $? == 0 ] ; then
+
+     PDB_MIRROR=$url
+     delay=$time
+
+    fi
+
    fi
 
   else

@@ -30,17 +30,15 @@ if [ ! -e $XSD2PGSCHEMA ] ; then
  ./scripts/update_extlibs.sh
 fi
 
-if [ ! -d $PDBML_NOATOM ] ; then
- ./scripts/update_pdbml.sh
-fi
-
 XML_DIR=$PDBML_NOATOM
 FILE_EXT_DIGEST=-noatom
 
 XSD_SCHEMA=$PDBML_XSD
 DB_SCHEMA=$PDBML_SQL
 
-java -classpath $XSD2PGSCHEMA xsd2pgschema --xsd $XSD_SCHEMA --ddl $DB_SCHEMA --no-rel --doc-key --no-key
+if [ ! -e $DB_SCHEMA ] ; then
+ java -classpath $XSD2PGSCHEMA xsd2pgschema --xsd $XSD_SCHEMA --ddl $DB_SCHEMA --no-rel --doc-key --no-key
+fi
 
 echo
 echo "Do you want to update $DB_NAME? (y [n]) "
@@ -52,6 +50,10 @@ case $ans in
  *) echo stopped.
   exit 1;;
 esac
+
+if [ ! -d $PDBML_NOATOM ] ; then
+ ./scripts/update_pdbml.sh
+fi
 
 MD5_DIR=chk_sum_psql_pdbml_noatom
 

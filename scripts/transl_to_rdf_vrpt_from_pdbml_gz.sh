@@ -23,28 +23,28 @@ if [ ! -e $PDBMLV2RDF_XSL ] ; then
 
 fi
 
-if [ ! -d $VALID_INFO_ALT ] ; then
- ./scripts/extract_info.sh
+if [ ! -d $XML_VALID ] ; then
+ ./scripts/merge_pdbml_info.sh
 fi
 
-mkdir -p $RDF_VALID_ALT
+mkdir -p $RDF_VALID
 
-last=`find $RDF_VALID_ALT -mindepth 2 -name '*.rdf.gz' | wc -l`
-total=`find $VALID_INFO_ALT -mindepth 2 -name '*.xml.gz' | wc -l`
-err=`find $RDF_VALID_ALT -mindepth 2 -name '*.err' | wc -l`
+last=`find $RDF_VALID -mindepth 2 -name '*.rdf.gz' | wc -l`
+total=`find $XML_VALID -mindepth 2 -name '*.xml.gz' | wc -l`
+err=`find $RDF_VALID -mindepth 2 -name '*.err' | wc -l`
 
 if [ $err != 0 ] || [ $total != $last ] ; then
 
  echo
- echo Translating compressed PDBML-validation-alt to wwPDB/RDF-validation-alt...
+ echo Translating compressed PDBML-validation to wwPDB/RDF-validation...
 
- pdbml_file_list=pdbml_gz_to_rdf_alt_file_list
+ pdbml_file_list=pdbml_gz_to_rdf_file_list
 
- find $VALID_INFO_ALT -mindepth 2 -name '*.xml.gz' > $pdbml_file_list
+ find $XML_VALID -mindepth 2 -name '*.xml.gz' > $pdbml_file_list
 
  for proc_id in `seq 1 $MAXPROCS` ; do
 
-  ./scripts/translate_to_rdf_alt_from_pdbml_gz_worker.sh -d $RDF_VALID_ALT -l $pdbml_file_list -n $proc_id"of"$MAXPROCS &
+  ./scripts/transl_to_rdf_vrpt_from_pdbml_gz_worker.sh -d $RDF_VALID -l $pdbml_file_list -n $proc_id"of"$MAXPROCS &
 
  done
 
@@ -63,5 +63,5 @@ if [ $err != 0 ] || [ $total != $last ] ; then
 
 fi
 
-echo $RDF_VALID_ALT is up-to-date.
+echo $RDF_VALID is up-to-date.
 

@@ -29,7 +29,7 @@ fi
 mkdir -p $VALID_INFO_ALT
 
 if [ ! -d $VALID_INFO ] ; then
- ./scripts/update_validation.sh
+ ./scripts/update_vrpt.sh
 fi
 
 if [ ! -d $PDBML_EXT ] ; then

@@ -12,7 +12,7 @@ if [ ! `which psql` ] ; then
 
 fi
 
-DB_NAME=valid_info_clone
+DB_NAME=xml_vrpt_clone
 DB_USER=$USER
 
 echo
@@ -36,7 +36,9 @@ FILE_EXT_DIGEST=_validation
 XSD_SCHEMA=$WWPDB_VALIDATION_XSD
 DB_SCHEMA=$WWPDB_VALIDATION_SQL
 
-java -classpath $XSD2PGSCHEMA xsd2pgschema --xsd $XSD_SCHEMA --ddl $DB_SCHEMA
+if [ ! -e $DB_SCHEMA ] ; then
+ java -classpath $XSD2PGSCHEMA xsd2pgschema --xsd $XSD_SCHEMA --ddl $DB_SCHEMA
+fi
 
 echo
 echo "Do you want to update $DB_NAME? (y [n]) "
@@ -50,10 +52,10 @@ case $ans in
 esac
 
 if [ ! -d $XML_DIR ] ; then
- ./scripts/update_validation.sh
+ ./scripts/update_vrpt.sh
 fi
 
-MD5_DIR=chk_sum_psql_valid_info
+MD5_DIR=chk_sum_psql_xml_vrpt
 
 relations=`psql -d $DB_NAME -U $DB_USER -c "\d" | wc -l`
 

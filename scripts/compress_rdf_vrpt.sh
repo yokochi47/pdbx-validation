@@ -5,7 +5,7 @@ source ./scripts/env.sh
 DB_NAME="wwPDB/RDF-validation"
 
 if [ ! -d $RDF_VALID ] ; then
- ./scripts/translate_to_rdf.sh
+ ./scripts/transl_to_rdf_vrpt.sh
 fi
 
 echo
@@ -19,7 +19,7 @@ find $RDF_VALID -maxdepth 1 -name '*.rdf' > $rdf_file_list
 
 for proc_id in `seq 1 $MAXPROCS` ; do
 
- ./scripts/compress_rdf_validation_worker.sh -d $RDF_VALID -l $rdf_file_list -n $proc_id"of"$MAXPROCS &
+ ./scripts/compress_rdf_vrpt_worker.sh -d $RDF_VALID -l $rdf_file_list -n $proc_id"of"$MAXPROCS &
 
 done
 

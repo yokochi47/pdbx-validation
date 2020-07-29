@@ -149,97 +149,97 @@ for pdbml_file in $WORK_DIR/$PDBML/*.xml ; do
 
  pdbml_ext_file=$WORK_DIR/$PDBML_EXT/$pdbid-noatom-ext.xml
  info_alt_file=../$info_alt_file # add relative path (../) from directory contains target stylesheet
- pdbml_valid_file=$WORK_DIR/$XML_VALID/$pdbid-validation-full.xml
+ pdbml_vrpt_file=$WORK_DIR/$XML_VALID/$pdbid-validation-full.xml
 
- java -jar $SAXON -s:$pdbml_ext_file -xsl:$MERGE_PDBML_INFO_XSL -o:$pdbml_valid_file info_alt_file=$info_alt_file || ( echo $0 aborted. && exit 1 )
+ java -jar $SAXON -s:$pdbml_ext_file -xsl:$MERGE_PDBML_INFO_XSL -o:$pdbml_vrpt_file info_alt_file=$info_alt_file || ( echo $0 aborted. && exit 1 )
 
- xml_pretty $pdbml_valid_file
+ xml_pretty $pdbml_vrpt_file
 
- echo " merged   : "$pdbml_valid_file
+ echo " merged   : "$pdbml_vrpt_file
 
- java -classpath $XSD2PGSCHEMA xmlvalidator --xsd $PDBX_VALIDATION_XSD --xml $pdbml_valid_file > /dev/null || ( echo $0 aborted. && exit 1 )
+ java -classpath $XSD2PGSCHEMA xmlvalidator --xsd $PDBX_VALIDATION_XSD --xml $pdbml_vrpt_file > /dev/null || ( echo $0 aborted. && exit 1 )
 
- echo " validated: "$pdbml_valid_file
+ echo " validated: "$pdbml_vrpt_file
 
- rdf_valid_file=$WORK_DIR/$RDF_VALID/$pdbid-validation-full.rdf
+ rdf_vrpt_file=$WORK_DIR/$RDF_VALID/$pdbid-validation-full.rdf
 
- java -jar $SAXON -s:$pdbml_valid_file -xsl:$PDBMLV2RDF_XSL -o:$rdf_valid_file wurcs2glytoucan=$GLYTOUCAN_XML || ( echo $0 aborted. && exit 1 )
+ java -jar $SAXON -s:$pdbml_vrpt_file -xsl:$PDBMLV2RDF_XSL -o:$rdf_vrpt_file wurcs2glytoucan=$GLYTOUCAN_XML || ( echo $0 aborted. && exit 1 )
 
- echo " generated: "$rdf_valid_file
+ echo " generated: "$rdf_vrpt_file
 
  if [ $has_rapper_command != "false" ] ; then
-  rapper -q -c $rdf_valid_file 2> /dev/null || ( echo $0 aborted. && exit 1 )
-  echo " validated: "$rdf_valid_file
+  rapper -q -c $rdf_vrpt_file 2> /dev/null || ( echo $0 aborted. && exit 1 )
+  echo " validated: "$rdf_vrpt_file
  fi
 
  info_alt_file=$WORK_DIR/$VALID_INFO_ALT/$pdbid-validation-alt.xml
- rdf_valid_alt_file=$WORK_DIR/$RDF_VALID_ALT/$pdbid-validation-alt.rdf
+ rdf_vrpt_alt_file=$WORK_DIR/$RDF_VALID_ALT/$pdbid-validation-alt.rdf
 
- java -jar $SAXON -s:$info_alt_file -xsl:$PDBMLV2RDF_XSL -o:$rdf_valid_alt_file wurcs2glytoucan=$GLYTOUCAN_XML || ( echo $0 aborted. && exit 1 )
+ java -jar $SAXON -s:$info_alt_file -xsl:$PDBMLV2RDF_XSL -o:$rdf_vrpt_alt_file wurcs2glytoucan=$GLYTOUCAN_XML || ( echo $0 aborted. && exit 1 )
 
- echo " generated: "$rdf_valid_alt_file
+ echo " generated: "$rdf_vrpt_alt_file
 
  if [ $has_rapper_command != "false" ] ; then
-  rapper -q -c $rdf_valid_alt_file 2> /dev/null || ( echo $0 aborted. && exit 1 )
-  echo " validated: "$rdf_valid_alt_file
+  rapper -q -c $rdf_vrpt_alt_file 2> /dev/null || ( echo $0 aborted. && exit 1 )
+  echo " validated: "$rdf_vrpt_alt_file
  fi
 
  if [ $has_xml2mmcif_command != "false" ] ; then
 
-  pdbml_valid_file=$pdbid-validation-full.xml
-  mmcif_valid_file=$pdbid-validation-full.cif
+  pdbml_vrpt_file=$pdbid-validation-full.xml
+  mmcif_vrpt_file=$pdbid-validation-full.cif
 
-  ( cd $WORK_DIR/$MMCIF_VALID ; xml2mmcif -xml ../$XML_VALID/$pdbml_valid_file -dict $pdbx_validation_dic -df $pdbx_validation_odb > /dev/null && mv ../$XML_VALID/$pdbml_valid_file.cif $mmcif_valid_file )
-  ( cd $WORK_DIR/$MMCIF_VALID ; sed -i -e "s/\._\([0-9]\)\(\S*\) /\.\1\2  /" $mmcif_valid_file )
+  ( cd $WORK_DIR/$MMCIF_VALID ; xml2mmcif -xml ../$XML_VALID/$pdbml_vrpt_file -dict $pdbx_validation_dic -df $pdbx_validation_odb > /dev/null && mv ../$XML_VALID/$pdbml_vrpt_file.cif $mmcif_vrpt_file )
+  ( cd $WORK_DIR/$MMCIF_VALID ; sed -i -e "s/\._\([0-9]\)\(\S*\) /\.\1\2  /" $mmcif_vrpt_file )
 
   if [ $? = 0 ] ; then
-   echo " generated: "$WORK_DIR/$MMCIF_VALID/$mmcif_valid_file
+   echo " generated: "$WORK_DIR/$MMCIF_VALID/$mmcif_vrpt_file
   else
    exit 1
   fi
 
   if [ $has_cifcheck_command != "false" ] ; then
 
-   diag_log=$mmcif_valid_file-diag.log
-   parser_log=$mmcif_valid_file-parser.log
+   diag_log=$mmcif_vrpt_file-diag.log
+   parser_log=$mmcif_vrpt_file-parser.log
 
    rm -f $WORK_DIR/$MMCIF_VALID/$diag_log $WORK_DIR/$MMCIF_VALID/$parser_log
 
-   ( cd $WORK_DIR/$MMCIF_VALID ; CifCheck -f $mmcif_valid_file -dictSdb $pdbx_validation_sdb > /dev/null ; [ -e $diag_log ] && [ `grep -v 'has invalid value "?" in row' $diag_log | sed -e /^$/d | wc -l` = 0 ] && rm -f $diag_log )
-   ( cd $WORK_DIR/$MMCIF_VALID ; [ ! -e $diag_log ] && [ ! -e $parser_log ] && echo " validated: "$WORK_DIR/$MMCIF_VALID/$mmcif_valid_file || exit 1 )
+   ( cd $WORK_DIR/$MMCIF_VALID ; CifCheck -f $mmcif_vrpt_file -dictSdb $pdbx_validation_sdb > /dev/null ; [ -e $diag_log ] && [ `grep -v 'has invalid value "?" in row' $diag_log | sed -e /^$/d | wc -l` = 0 ] && rm -f $diag_log )
+   ( cd $WORK_DIR/$MMCIF_VALID ; [ ! -e $diag_log ] && [ ! -e $parser_log ] && echo " validated: "$WORK_DIR/$MMCIF_VALID/$mmcif_vrpt_file || exit 1 )
 
   fi
 
   info_alt_file=$pdbid-validation-alt.xml
-  mmcif_valid_alt_file=$pdbid-validation-alt.cif
+  mmcif_vrpt_alt_file=$pdbid-validation-alt.cif
 
-  ( cd $WORK_DIR/$MMCIF_VALID_ALT ; xml2mmcif -xml ../$VALID_INFO_ALT/$info_alt_file -dict $pdbx_validation_dic -df $pdbx_validation_odb > /dev/null && mv ../$VALID_INFO_ALT/$info_alt_file.cif $mmcif_valid_alt_file )
-  ( cd $WORK_DIR/$MMCIF_VALID_ALT ; sed -i -e "s/\._\([0-9]\)\(\S*\) /\.\1\2  /" $mmcif_valid_alt_file )
+  ( cd $WORK_DIR/$MMCIF_VALID_ALT ; xml2mmcif -xml ../$VALID_INFO_ALT/$info_alt_file -dict $pdbx_validation_dic -df $pdbx_validation_odb > /dev/null && mv ../$VALID_INFO_ALT/$info_alt_file.cif $mmcif_vrpt_alt_file )
+  ( cd $WORK_DIR/$MMCIF_VALID_ALT ; sed -i -e "s/\._\([0-9]\)\(\S*\) /\.\1\2  /" $mmcif_vrpt_alt_file )
 
   if [ $? = 0 ] ; then
-   echo " generated: "$WORK_DIR/$MMCIF_VALID_ALT/$mmcif_valid_alt_file
+   echo " generated: "$WORK_DIR/$MMCIF_VALID_ALT/$mmcif_vrpt_alt_file
   else
    exit 1
   fi
 
   if [ $has_cifcheck_command != "false" ] ; then
 
-   diag_log=$mmcif_valid_alt_file-diag.log
-   parser_log=$mmcif_valid_alt_file-parser.log
+   diag_log=$mmcif_vrpt_alt_file-diag.log
+   parser_log=$mmcif_vrpt_alt_file-parser.log
 
    rm -f $WORK_DIR/$MMCIF_VALID_ALT/$diag_log $WORK_DIR/$MMCIF_VALID_ALT/$parser_log
 
-   ( cd $WORK_DIR/$MMCIF_VALID_ALT ; CifCheck -f $mmcif_valid_alt_file -dictSdb $pdbx_validation_sdb > /dev/null ; [ -e $diag_log ] && [ `grep -v 'has invalid value "?" in row' $diag_log | sed -e /^$/d | wc -l` = 0 ] && rm -f $diag_log )
-   ( cd $WORK_DIR/$MMCIF_VALID_ALT ; [ ! -e $diag_log ] && [ ! -e $parser_log ] && echo " validated: "$WORK_DIR/$MMCIF_VALID_ALT/$mmcif_valid_alt_file || exit 1 )
+   ( cd $WORK_DIR/$MMCIF_VALID_ALT ; CifCheck -f $mmcif_vrpt_alt_file -dictSdb $pdbx_validation_sdb > /dev/null ; [ -e $diag_log ] && [ `grep -v 'has invalid value "?" in row' $diag_log | sed -e /^$/d | wc -l` = 0 ] && rm -f $diag_log )
+   ( cd $WORK_DIR/$MMCIF_VALID_ALT ; [ ! -e $diag_log ] && [ ! -e $parser_log ] && echo " validated: "$WORK_DIR/$MMCIF_VALID_ALT/$mmcif_vrpt_alt_file || exit 1 )
 
   fi
 
  fi
 
- pdbml_valid_file=$WORK_DIR/$XML_VALID/$pdbid-validation-full.xml
+ pdbml_vrpt_file=$WORK_DIR/$XML_VALID/$pdbid-validation-full.xml
  info_rev_full_file=$WORK_DIR/$VALID_INFO_REV_FROM_FULL/$pdbid"_validation.xml"
 
- java -jar $SAXON -s:$pdbml_valid_file -xsl:$REVERT_INFO_FROM_FULL_XSL -o:$info_rev_full_file || ( echo $0 aborted. && exit 1 )
+ java -jar $SAXON -s:$pdbml_vrpt_file -xsl:$REVERT_INFO_FROM_FULL_XSL -o:$info_rev_full_file || ( echo $0 aborted. && exit 1 )
 
  xml_pretty $info_rev_full_file
 

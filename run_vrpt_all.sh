@@ -27,7 +27,7 @@ done
 
 ./scripts/update_pdbml.sh || exit $?
 
-./scripts/update_validation.sh || exit $?
+./scripts/update_info.sh || exit $?
 
 huge_number=100000
 
@@ -90,36 +90,36 @@ if [ $ext_pdbml_exit_code = 0 ] || [ $ext_info_exit_code = 0 ] || [ $xml_total -
 
  fi
 
- ./scripts/translate_to_rdf.sh
+ ./scripts/transl_to_rdf_vrpt.sh
 
  if [ $has_xml2mmcif_command != "false" ] ; then
-  ./scripts/translate_to_mmcif.sh
+  ./scripts/transl_to_mmcif_vrpt.sh
  fi
 
 # Deprecated: update_pdbml.sh has already removed.
 # ./scripts/sync_delete_with_pdbml.sh
 
-# Deprecated: update_validation.sh has already removed.
-# ./scripts/sync_delete_with_info.sh
+# Deprecated: update_vrpt.sh has already removed.
+# ./scripts/sync_delete_with_vrpt.sh
 
- ./scripts/compress_pdbml_validation.sh
- ./scripts/compress_rdf_validation.sh
+ ./scripts/compress_pdbml_vrpt.sh
+ ./scripts/compress_rdf_vrpt.sh
 
  if [ $has_xml2mmcif_command != "false" ] ; then
-  ./scripts/compress_mmcif_validation.sh
+  ./scripts/compress_mmcif_vrpt.sh
  fi
 
- ./scripts/translate_to_rdf_alt.sh
+ ./scripts/transl_to_rdf_vrpt_alt.sh
 
  if [ $has_xml2mmcif_command != "false" ] ; then
-  ./scripts/translate_to_mmcif_alt.sh
+  ./scripts/transl_to_mmcif_vrpt_alt.sh
  fi
 
- ./scripts/compress_pdbml_validation_alt.sh
- ./scripts/compress_rdf_validation_alt.sh
+ ./scripts/compress_pdbml_vrpt_alt.sh
+ ./scripts/compress_rdf_vrpt_alt.sh
 
  if [ $has_xml2mmcif_command != "false" ] ; then
-  ./scripts/compress_mmcif_validation_alt.sh
+  ./scripts/compress_mmcif_vrpt_alt.sh
  fi
 
 fi

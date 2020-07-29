@@ -42,34 +42,34 @@ PROC_ID=$(($PROC_ID - 1))
 proc_id=0
 total=`wc -l < $FILE_LIST`
 
-while read pdbml_valid_gz_file
+while read pdbml_vrpt_gz_file
 do
 
  proc_id_mod=$(($proc_id % $MAXPROCS))
 
  if [ $proc_id_mod = $PROC_ID ] ; then
 
-  if [ ! -e $pdbml_valid_gz_file ] ; then
+  if [ ! -e $pdbml_vrpt_gz_file ] ; then
 
    let proc_id++
    continue
 
   fi
 
-  pdb_id=`basename $pdbml_valid_gz_file -validation-full.xml.gz`
-  pdbml_valid_file=`dirname $pdbml_valid_gz_file`/`basename $pdbml_valid_gz_file .gz`
-  rdf_valid_file=$WORK_DIR/$pdb_id-validation-full.rdf
-  rdf_gz_valid_file=$WORK_DIR/${pdb_id:1:2}/$pdb_id-validation-full.rdf.gz
-  err_file=$WORK_DIR/translate_to_rdf_$pdb_id.err
+  pdb_id=`basename $pdbml_vrpt_gz_file -validation-alt.xml.gz`
+  pdbml_vrpt_file=`dirname $pdbml_vrpt_gz_file`/`basename $pdbml_vrpt_gz_file .gz`
+  rdf_vrpt_file=$WORK_DIR/$pdb_id-validation-alt.rdf
+  rdf_vrpt_gz_file=$WORK_DIR/${pdb_id:1:2}/$pdb_id-validation-alt.rdf.gz
+  err_file=$WORK_DIR/transl_to_rdf_vrpt_alt_$pdb_id.err
 
-  if ( [ ! -e $rdf_valid_file ] && [ ! -e $rdf_gz_valid_file ] ) || [ -e $err_file ] ; then
+  if ( [ ! -e $rdf_vrpt_file ] && [ ! -e $rdf_vrpt_gz_file ] ) || [ -e $err_file ] ; then
 
    echo $pdb_id
 
-   gunzip -c $pdbml_valid_gz_file > $pdbml_valid_file && java -jar $SAXON -s:$pdbml_valid_file -xsl:$PDBMLV2RDF_XSL -o:$rdf_valid_file wurcs2glytoucan=$GLYTOUCAN_XML 2> $err_file && ( rm -f $pdbml_valid_file $err_file ) || ( cat $err_file && exit 1 )
+   gunzip -c $pdbml_vrpt_gz_file > $pdbml_vrpt_file && java -jar $SAXON -s:$pdbml_vrpt_file -xsl:$PDBMLV2RDF_XSL -o:$rdf_vrpt_file wurcs2glytoucan=$GLYTOUCAN_XML 2> $err_file && ( rm -f $pdbml_vrpt_file $err_file ) || ( cat $err_file && exit 1 )
 
    if [ $has_rapper_command != "false" ] ; then
-    rapper -q -c $rdf_valid_file 2> $err_file && rm -f $err_file || ( cat $err_file && exit 1 )
+    rapper -q -c $rdf_vrpt_file 2> $err_file && rm -f $err_file || ( cat $err_file && exit 1 )
    fi
 
    if [ $proc_id_mod = 0 ] ; then
