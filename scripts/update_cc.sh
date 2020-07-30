@@ -17,7 +17,7 @@ fi
 
 if [ $weekday -ge 1 ] && [ $weekday -le 4 ] ; then
 
- wget -c -r -nv -np http://$PDB_MIRROR/$SRC_DIR/* -nH -R index.html*
+ wget -c -r -nv -np http://$PDB_MIRROR/$SRC_DIR/ -nH -R index.html*
 
  MD5_DIR=chk_sum_pdbml_cc
 
