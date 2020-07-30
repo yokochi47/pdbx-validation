@@ -103,7 +103,7 @@ if [ -d $RDF ] ; then
  find $RDF -maxdepth 1 -name '*.rdf' | cut -d '/' -f 2 | cut -d '-' -f 1 > $pdb_id_list
 
  while read pdb_id ; do
-  if [ ! -e $SRC_DIR/${pdb_id:1:2}/$pdb_id$src_file_ext ] ; then
+  if [ ! -e $SRC_DIR/$pdb_id$src_file_ext ] ; then
    echo deleting $RDF/$pdb_id.rdf
    rm -f $RDF/$pdb_id.rdf
   fi
@@ -191,12 +191,12 @@ fi
 
 if [ -d $RDF ] ; then
 
- find $RDF -mindepth 2 -name '*.rdf.gz' | cut -d '/' -f 3 | cut -d '-' -f 1 > $pdb_id_list
+ find $RDF -mindepth 1 -name '*.rdf.gz' | cut -d '/' -f 2 | cut -d '-' -f 1 > $pdb_id_list
 
  while read pdb_id ; do
-  if [ ! -e $SRC_DIR/${pdb_id:1:2}/$pdb_id$src_file_ext ] ; then
-   echo deleting $RDF/${pdb_id:1:2}/$pdb_id.rdf.gz
-   rm -f $RDF/${pdb_id:1:2}/$pdb_id.rdf.gz
+  if [ ! -e $SRC_DIR/$pdb_id$src_file_ext ] ; then
+   echo deleting $RDF/$pdb_id.rdf.gz
+   rm -f $RDF/$pdb_id.rdf.gz
   fi
  done < $pdb_id_list
 
