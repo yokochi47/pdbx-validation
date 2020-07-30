@@ -9,90 +9,7 @@ XML_DIR=$COMPONENTS_XML
 
 weekday=`date -u +"%w"`
 
-PDB_MIRRORS=("rsync.rcsb.org" "ftp.pdbj.org" "rsync.ebi.ac.uk")
-RSYNC_PORTS=("--port=33444" "" "")
-RSYNC_BASE_DIRS=("ftp_data/chem_comp" "ftp_data/chem_comp" "pub/databases/pdb/data/chem_comp")
-
-if [ ! -e url_mirror ] ; then
-
- printf "    PDB mirror sites\t\t delay [ms]\n"
- echo "-------------------------------------------"
-
- PDB_MIRROR=${PDB_MIRRORS[0]}
-
- delay=10000
- i=1
-
- for url in ${PDB_MIRRORS[@]}
- do
-
-  time=`ping -c 1 -w 10 $url | grep 'avg' | cut -d '=' -f 2 | cut -d '/' -f 2`
-
-  if [ $? = 0 ] ; then
-
-   printf "[%d] %s\t\t%6.1f\n" $i $url $time
-
-   cmp=`echo "$time > $delay" | bc 2> /dev/null`
-
-   if [ "$cmp" = 0 ] ; then
-
-    server_alive=`curl -I $url -m 5 2> /dev/null`
-
-    if [ $? == 0 ] ; then
-
-     PDB_MIRROR=$url
-     delay=$time
-
-    fi
-
-   fi
-
-  else
-   echo $url: timed out.
-  fi
-
-  let i++
-
- done
-
- echo
- echo "$PDB_MIRROR is selected by default. OK (1/2/3/n [y]) ? "
-
- read ans
-
- case $ans in
-  n*|N*)
-   echo stopped.
-   exit 1;;
-  1) PDB_MIRROR=${PDB_MIRRORS[0]};;
-  2) PDB_MIRROR=${PDB_MIRRORS[1]};;
-  3) PDB_MIRROR=${PDB_MIRRORS[2]};;
-  *) ;;
- esac
-
- echo $PDB_MIRROR > url_mirror
-
-else
-
- PDB_MIRROR=`cat url_mirror`
-
-fi
-
-case $PDB_MIRROR in
- rsync.rcsb.org)
-  RSYNC_PORT=${RSYNC_PORTS[0]}
-  RSYNC_BASE_DIR=${RSYNC_BASE_DIRS[0]};;
- ftp.pdbj.org)
-  RSYNC_PORT=${RSYNC_PORTS[1]}
-  RSYNC_BASE_DIR=${RSYNC_BASE_DIRS[1]};;
- rsync.ebi.ac.uk)
-  RSYNC_PORT=${RSYNC_PORTS[2]}
-  RSYNC_BASE_DIR=${RSYNC_BASE_DIRS[2]};;
- *)
-  echo $PDB_MIRROR: undefined PDB mirror site.
-  rm -f url_miror
-  exit 1;;
-esac
+PDB_MIRROR=ftp.pdbj.org
 
 if [ ! -e $XSD2PGSCHEMA ] ; then
  ./scripts/update_extlibs.sh
@@ -100,7 +17,7 @@ fi
 
 if [ $weekday -ge 1 ] && [ $weekday -le 4 ] ; then
 
- rsync -avz --delete $RSYNC_PORT $PDB_MIRROR::$RSYNC_BASE_DIR/$SRC_DIR/ $SRC_DIR
+ wget -c -r -nv -np http://$PDB_MIRROR/$SRC_DIR/* -nH -R index.html*
 
  MD5_DIR=chk_sum_pdbml_cc
 

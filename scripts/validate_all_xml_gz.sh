@@ -36,9 +36,9 @@ if [ ! -z $XML_DIR ] ; then
  echo XML Schema validation: *.xml.gz documents in $XML_DIR/"[0-9a-z]{2}"...
 
  if [ $DELETE = "true" ] ; then
-  java -classpath $XSD2PGSCHEMA xmlvalidator --xsd $PDBX_VALIDATION_XSD --xml $XML_DIR/[0-9a-z]{2} --xml-file-ext gz --sync chk_sum_pdbml_vrpt --del-invalid-xml
+  java -classpath $XSD2PGSCHEMA xmlvalidator --xsd $PDBX_VALIDATION_XSD --xml $XML_DIR/[0-9a-z]{2} --xml-file-ext gz --sync chk_sum_valid_xml --del-invalid-xml
  else
-  java -classpath $XSD2PGSCHEMA xmlvalidator --xsd $PDBX_VALIDATION_XSD --xml $XML_DIR/[0-9a-z]{2} --xml-file-ext gz --sync chk_sum_pdbml_vrpt
+  java -classpath $XSD2PGSCHEMA xmlvalidator --xsd $PDBX_VALIDATION_XSD --xml $XML_DIR/[0-9a-z]{2} --xml-file-ext gz --sync chk_sum_valid_xml
  fi
 
 fi

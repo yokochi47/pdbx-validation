@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
 <PDBx:datablock datablockName="ATP"
-   xmlns:PDBx="http://pdbml.pdb.org/schema/pdbx-v40.xsd"
+   xmlns:PDBx="http://pdbml.pdb.org/schema/pdbx-v50.xsd"
    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-   xsi:schemaLocation="http://pdbml.pdb.org/schema/pdbx-v40.xsd pdbx-v40.xsd">
+   xsi:schemaLocation="http://pdbml.pdb.org/schema/pdbx-v50.xsd pdbx-v50.xsd">
 
    <PDBx:chem_compCategory>
       <PDBx:chem_comp id="ATP">

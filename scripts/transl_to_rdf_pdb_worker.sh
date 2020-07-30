@@ -58,7 +58,7 @@ do
 
   pdb_id=`basename $pdbml_file -noatom.xml`
   rdf_file=$WORK_DIR/$pdb_id.rdf
-  rdf_gz_file=$WORK_DIR/${pdb_id:1:2}/$pdb_id.rdf.gz
+  rdf_gz_file=$WORK_DIR/$pdb_id.rdf.gz
   err_file=$WORK_DIR/transl_to_rdf_pdb_$pdb_id.err
 
   if ( [ ! -e $rdf_file ] && [ ! -e $rdf_gz_file ] ) || [ -e $err_file ] ; then

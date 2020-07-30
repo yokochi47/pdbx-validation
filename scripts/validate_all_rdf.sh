@@ -11,7 +11,7 @@ if [ $has_rapper_command = "false" ] ; then
 fi
 
 RDF_DIR=
-CHK_SUM_DIR=chk_sum_rdf_vrpt
+CHK_SUM_DIR=chk_sum_valid_rdf
 DELETE=false
 
 ARGV=`getopt --long -o "d:r" "$@"`

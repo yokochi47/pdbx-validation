@@ -11,15 +11,20 @@ if [ $has_rapper_command = "false" ] ; then
 fi
 
 RDF_DIR=
-CHK_SUM_DIR=chk_sum_rdf_vrpt
+MIN_DEPTH=2
+CHK_SUM_DIR=chk_sum_valid_rdf
 DELETE=false
 
-ARGV=`getopt --long -o "d:r" "$@"`
+ARGV=`getopt --long -o "d:m:r" "$@"`
 eval set -- "$ARGV"
 while true ; do
  case "$1" in
  -d)
   RDF_DIR=$2
+  shift
+ ;;
+ -m)
+  MIN_DEPTH=$2
   shift
  ;;
  -r)
@@ -34,7 +39,7 @@ done
 
 if [ ! -z $RDF_DIR ] ; then
 
- total=`find $RDF_DIR -mindepth 2 -name '*.rdf.gz' | wc -l`
+ total=`find $RDF_DIR -mindepth $MIN_DEPTH -name '*.rdf.gz' | wc -l`
 
  if [ $total != 0 ] ; then
 
@@ -46,7 +51,7 @@ if [ ! -z $RDF_DIR ] ; then
 
   find $RDF_DIR -name "*.err" -exec rm {} +
 
-  find $RDF_DIR -mindepth 2 -name '*.rdf.gz' > $rdf_file_list
+  find $RDF_DIR -mindepth $MIN_DEPTH -name '*.rdf.gz' > $rdf_file_list
 
   for proc_id in `seq 1 $MAXPROCS` ; do
 
