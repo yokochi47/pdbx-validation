@@ -27,7 +27,7 @@ done
 
 ./scripts/update_pdbml.sh || exit $?
 
-./scripts/update_info.sh || exit $?
+./scripts/update_vrpt.sh || exit $?
 
 huge_number=100000
 
