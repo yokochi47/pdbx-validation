@@ -210,7 +210,7 @@ if [ $weekday -ge 1 ] && [ $weekday -le 4 ] ; then
  if [ -d $RDF ] ; then
   while read pdb_id ; do
    [ -z "$pdb_id" ] || [[ "$pdb_id" =~ ^#.* ]] && continue
-   rm -f $RDF/${pdb_id:1:2}/$pdb_id.rdf.gz
+   rm -f $RDF/$pdb_id.rdf.gz
   done < $chk_sum_log
  fi
 
