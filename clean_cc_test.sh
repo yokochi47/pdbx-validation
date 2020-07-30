@@ -2,9 +2,9 @@
 
 source ./scripts/env.sh
 
-rm -f $PDBML2RDF_XSL
+rm -f $CC2RDF_XSL
 
 WORK_DIR=test
 
-rm -rf $WORK_DIR/$RDF
+rm -rf $WORK_DIR/$COMPONENTS_RDF
 

@@ -22,6 +22,6 @@ done
 
 if [ ! -z $RDF ] ; then
 # ./scripts/validate_all_rdf.sh -d $RDF $DELETE_OPT
- ./scripts/validate_all_rdf_gz.sh -d $RDF $DELETE_OPT
+ ./scripts/validate_all_rdf_gz.sh -d $RDF $DELETE_OPT -m 1
 fi
 

@@ -11,7 +11,7 @@ if [ $has_cifcheck_command = "false" ] ; then
 fi
 
 MMCIF_DIR=
-CHK_SUM_DIR=chk_sum_mmcif_vrpt
+CHK_SUM_DIR=chk_sum_valid_mmcif
 DELETE=false
 
 ARGV=`getopt --long -o "d:r" "$@"`

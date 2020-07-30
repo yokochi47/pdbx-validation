@@ -1,5 +1,5 @@
 --
--- PostgreSQL DDL generated from resource/wwpdb_validation_v004.xsd using xsd2pgschema
+-- PostgreSQL DDL generated from wwpdb_validation_v004.xsd using xsd2pgschema
 --  xsd2pgschema - Database replication tool based on XML Schema
 --  https://sourceforge.net/projects/xsd2pgschema/
 --
@@ -25,12 +25,12 @@
 -- Statistics of schema:
 --  Generated 44 tables (554 fields), 48 views (144 fields), 0 attr groups, 0 model groups in total
 --   Orphan tables that can not be reached from the document root:
---    schema location: resource/wwpdb_validation_v004.xsd
+--    schema location: wwpdb_validation_v004.xsd
 --      "NotAvailable"
 --   Namespaces:
 --    http://www.w3.org/2001/XMLSchema (xsd)
 --   Schema locations:
---    resource/wwpdb_validation_v004.xsd
+--    wwpdb_validation_v004.xsd
 --   Table types:
 --    1 root, 82 root children, 8 admin roots, 1 admin children
 --   System keys:
@@ -96,7 +96,7 @@ DROP TABLE IF EXISTS "wwPDB-validation-information" CASCADE;
 
 --
 -- No annotation is available
--- xmlns: no namespace, schema location: resource/wwpdb_validation_v004.xsd
+-- xmlns: no namespace, schema location: wwpdb_validation_v004.xsd
 -- type: root, content: false, list: true, bridge: false, virtual: false
 --
 CREATE TABLE "wwPDB-validation-information" (
@@ -121,7 +121,7 @@ CREATE TABLE "wwPDB-validation-information" (
 
 --
 -- A "ModelledSubgroup" is an individual occurence of a residue. If there are alternate atoms in the residue each alternate and any alternate atoms is a separate ModelledSubgroup. If there are multiple models then each of these is a separate subgroup.
--- xmlns: no namespace, schema location: resource/wwpdb_validation_v004.xsd
+-- xmlns: no namespace, schema location: wwpdb_validation_v004.xsd
 -- type: root child, content: true, list: true, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_ModelledSubgroup_rama CASCADE;
@@ -248,7 +248,7 @@ CREATE TABLE "ModelledSubgroup" (
 
 --
 -- Entry contains most information that has a single value for the structure analyzed and in the run.
--- xmlns: no namespace, schema location: resource/wwpdb_validation_v004.xsd
+-- xmlns: no namespace, schema location: wwpdb_validation_v004.xsd
 -- type: root child, content: true, list: true, bridge: false, virtual: false
 --
 CREATE TABLE "Entry" (
@@ -529,7 +529,7 @@ CREATE TABLE "Entry" (
 
 --
 -- NMR entries are normally linked to one or more assigned chemical shift lists. A typical reason for containing multiple chemical shift lists would be differing experimental conditions or samples.
--- xmlns: no namespace, schema location: resource/wwpdb_validation_v004.xsd
+-- xmlns: no namespace, schema location: wwpdb_validation_v004.xsd
 -- type: root child, content: true, list: true, bridge: false, virtual: false
 --
 CREATE TABLE chemical_shift_list (
@@ -580,7 +580,7 @@ CREATE TABLE chemical_shift_list (
 
 --
 -- EM validation information which is not tied to a specific chain or residue.
--- xmlns: no namespace, schema location: resource/wwpdb_validation_v004.xsd
+-- xmlns: no namespace, schema location: wwpdb_validation_v004.xsd
 -- type: root child, content: false, list: false, bridge: false, virtual: false
 --
 CREATE TABLE "EM_validation" (
@@ -605,7 +605,7 @@ CREATE TABLE "EM_validation" (
 
 --
 -- Contains all fsc information. Including fsc curves, fsc indicator curves and fsc intersections
--- xmlns: no namespace, schema location: resource/wwpdb_validation_v004.xsd
+-- xmlns: no namespace, schema location: wwpdb_validation_v004.xsd
 -- type: root child, content: false, list: false, bridge: false, virtual: false
 --
 CREATE TABLE fsc (
@@ -625,7 +625,7 @@ CREATE TABLE fsc (
 
 --
 -- Contains the data required to plot the map-value distribution graph for the primary map
--- xmlns: no namespace, schema location: resource/wwpdb_validation_v004.xsd
+-- xmlns: no namespace, schema location: wwpdb_validation_v004.xsd
 -- type: admin root, content: true, list: true, bridge: true, virtual: true
 --
 CREATE TABLE graph (
@@ -663,7 +663,7 @@ CREATE TABLE graph (
 
 --
 -- No annotation is available
--- xmlns: no namespace, schema location: resource/wwpdb_validation_v004.xsd
+-- xmlns: no namespace, schema location: wwpdb_validation_v004.xsd
 -- type: root child, content: false, list: true, bridge: true, virtual: false
 --
 CREATE TABLE intersection (
@@ -676,7 +676,7 @@ CREATE TABLE intersection (
 
 --
 -- A list of programs used by the validation pipeline.
--- xmlns: no namespace, schema location: resource/wwpdb_validation_v004.xsd
+-- xmlns: no namespace, schema location: wwpdb_validation_v004.xsd
 -- type: root child, content: false, list: true, bridge: true, virtual: false
 --
 CREATE TABLE programs (
@@ -691,7 +691,7 @@ CREATE TABLE programs (
 
 --
 -- An atom name from cif item _atom_site.label_atom_id and _chem_comp_atom.atom_id. Currently limited to 4 characters. Example: atom="NE2"
--- xmlns: no namespace, schema location: resource/wwpdb_validation_v004.xsd
+-- xmlns: no namespace, schema location: wwpdb_validation_v004.xsd
 -- type: admin root, content: true, list: false, bridge: false, virtual: true
 --
 CREATE TABLE atom_name (
@@ -714,7 +714,7 @@ CREATE TABLE atom_name (
 
 --
 -- Each assigned chemical shift should map to one or more nuclei of the studied biological macromolecule or complex. In preliminary reports and for some older entries, this mapping is not always accurate and some chemical shifts can therefore be "unmapped". It implies, that the chemical shift was parsed, but not mapped to any nucleus expected from the molecular description. It may result for instance from typos or from an incomplete molecular description. Details are given in the free text "diagnostic" attribute.
--- xmlns: no namespace, schema location: resource/wwpdb_validation_v004.xsd
+-- xmlns: no namespace, schema location: wwpdb_validation_v004.xsd
 -- type: root child, content: true, list: false, bridge: true, virtual: false
 --
 CREATE TABLE unmapped_chemical_shift (
@@ -743,7 +743,7 @@ CREATE TABLE unmapped_chemical_shift (
 
 --
 -- An unparsed chemical shift implies that some expected values were missing or did not conform to expected format: e.g., non-numeric value of a shift measurement or missing chain/entity identifier.
--- xmlns: no namespace, schema location: resource/wwpdb_validation_v004.xsd
+-- xmlns: no namespace, schema location: wwpdb_validation_v004.xsd
 -- type: root child, content: true, list: false, bridge: true, virtual: false
 --
 CREATE TABLE unparsed_chemical_shift (
@@ -774,7 +774,7 @@ CREATE TABLE unparsed_chemical_shift (
 
 --
 -- The chemical shifts must be supplied in NMR-STAR 3.1 format. In order for the shifts to be mapped to the molecular structure, certain values (data items or tags) must be provided.
--- xmlns: no namespace, schema location: resource/wwpdb_validation_v004.xsd
+-- xmlns: no namespace, schema location: wwpdb_validation_v004.xsd
 -- type: root child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE missing_nmrstar_tag (
@@ -791,7 +791,7 @@ CREATE TABLE missing_nmrstar_tag (
 
 --
 -- The Random Coil Index (RCI) is calculated for each residue from the protein sequence and assigned chemical shifts. Via an empirical formula the RCI correlates with disorder propensity of the residue.
--- xmlns: no namespace, schema location: resource/wwpdb_validation_v004.xsd
+-- xmlns: no namespace, schema location: wwpdb_validation_v004.xsd
 -- type: root child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE random_coil_index (
@@ -812,7 +812,7 @@ CREATE TABLE random_coil_index (
 
 --
 -- BMRB compiled statistics of assigned chemical shifts, against which a given value is checked. A value is deemed an outlier if it is 5 standard deviation away from the expected mean.
--- xmlns: no namespace, schema location: resource/wwpdb_validation_v004.xsd
+-- xmlns: no namespace, schema location: wwpdb_validation_v004.xsd
 -- type: root child, content: true, list: false, bridge: true, virtual: false
 --
 CREATE TABLE chemical_shift_outlier (
@@ -841,7 +841,7 @@ CREATE TABLE chemical_shift_outlier (
 
 --
 -- PANAV software is used to calculate suggested referencing correction for each chemical shift list.
--- xmlns: no namespace, schema location: resource/wwpdb_validation_v004.xsd
+-- xmlns: no namespace, schema location: wwpdb_validation_v004.xsd
 -- type: root child, content: true, list: false, bridge: true, virtual: false
 --
 CREATE TABLE referencing_offset (
@@ -864,7 +864,7 @@ CREATE TABLE referencing_offset (
 
 --
 -- For the well-defined regions of the structure, what is the completeness of chemical shift assignments for the typically assigned nuclei.
--- xmlns: no namespace, schema location: resource/wwpdb_validation_v004.xsd
+-- xmlns: no namespace, schema location: wwpdb_validation_v004.xsd
 -- type: root child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE assignment_completeness_well_defined (
@@ -887,7 +887,7 @@ CREATE TABLE assignment_completeness_well_defined (
 
 --
 -- For the complete structure, what is the completeness of chemical shift assignments for the typically assigned nuclei.
--- xmlns: no namespace, schema location: resource/wwpdb_validation_v004.xsd
+-- xmlns: no namespace, schema location: wwpdb_validation_v004.xsd
 -- type: root child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE assignment_completeness_full_length (
@@ -910,7 +910,7 @@ CREATE TABLE assignment_completeness_full_length (
 
 --
 -- For X-ray entries: data high resolution diffraction limit in Angstroms as reported in the input mmCIF file, normally taken from mmcif item _refine.ls_d_res_high or if this is not found _reflns.d_resolution_high. For EM entries: The final resolution, in Angstroms, of the 3d reconstruction as reported in the input mmCIF file, taken from _em_3d_reconstruction.resolution. If not available then item will be absent or set to "NotAvailable".
--- xmlns: no namespace, schema location: resource/wwpdb_validation_v004.xsd
+-- xmlns: no namespace, schema location: wwpdb_validation_v004.xsd
 -- type: admin root, content: true, list: false, bridge: false, virtual: true
 --
 CREATE TABLE "floatORunavailable" (
@@ -939,7 +939,7 @@ CREATE TABLE "floatORunavailable" (
 
 --
 -- The structure is a Calpha only model. Currently implementation uses test that the structure has more than 30 atoms with the name CA and that number of atoms with name CA is greater than 1/3 of the total number of atoms. Currently test only applied in the EDS step so will be only set for X-ray structures.
--- xmlns: no namespace, schema location: resource/wwpdb_validation_v004.xsd
+-- xmlns: no namespace, schema location: wwpdb_validation_v004.xsd
 -- type: admin root, content: true, list: false, bridge: false, virtual: true
 --
 DROP TYPE IF EXISTS ENUM_YesString_content CASCADE;
@@ -977,7 +977,7 @@ CREATE TABLE "YesString" (
 
 --
 -- The MolProbity Ramachandran outlier score (a percentage). A residue is considered to be a Ramachandran plot outlier if the combination of its phi and psi torsion angles is unusual, as assessed by MolProbity. The Ramachandran outlier score for an entry is calculated as the percentage of Ramachandran outliers with respect to the total number of residues in the entry for which the outlier assessment is available. Example: percent-rama-outliers="0.00" Specific to structures that contain protein chains. For NMR structures only the well-defined (core) residues from ensemble analysis will be considered.
--- xmlns: no namespace, schema location: resource/wwpdb_validation_v004.xsd
+-- xmlns: no namespace, schema location: wwpdb_validation_v004.xsd
 -- type: admin root, content: true, list: false, bridge: false, virtual: true
 --
 CREATE TABLE percentage (
@@ -1009,7 +1009,7 @@ CREATE TABLE percentage (
 
 --
 -- Whether the B factor is FULL or PARTIAL. Normally B factors are FULL. Example: B_factor_type="FULL". X-ray entry specific, obtained from the DCC program.
--- xmlns: no namespace, schema location: resource/wwpdb_validation_v004.xsd
+-- xmlns: no namespace, schema location: wwpdb_validation_v004.xsd
 -- type: admin root, content: true, list: false, bridge: false, virtual: true
 --
 DROP TYPE IF EXISTS ENUM_BfactorType_content CASCADE;
@@ -1027,7 +1027,7 @@ CREATE TABLE "BfactorType" (
 
 --
 -- The "all" percentile rank for the property RNAsuiteness (the MolProbity conformer-match quality parameter for RNA structures). The comparison will be to: * For X-ray structures: the set of all structures determined by X-ray crystallography ... * For NMR and EM structures: the set of all PDB structures ... deposited, up to the date included in the program name="percentiles" version, where the RNAsuiteness was successfully calculated. Example: absolute-percentile-RNAsuiteness="99.7" Specific to entries that contain RNA polymers (and have a RNAsuiteness attribute). Produced by the percentiles step of the validation pipeline software.
--- xmlns: no namespace, schema location: resource/wwpdb_validation_v004.xsd
+-- xmlns: no namespace, schema location: wwpdb_validation_v004.xsd
 -- type: admin root, content: true, list: false, bridge: false, virtual: true
 --
 CREATE TABLE percentile_rank (
@@ -1067,7 +1067,7 @@ CREATE TABLE percentile_rank (
 
 --
 -- A "Model" is one of the structures that are described by a PDB entry. Most NMR entries as well as some entries determined by other experimental techniques, contain an ensemble of models (structures). For most NMR entries, the models should be chemically identical - i.e., contain the exact same atoms, and will only differ in the cartesian coordinates of constituent atoms. For older NMR entries, and for non-NMR entries, this is not enforced.
--- xmlns: no namespace, schema location: resource/wwpdb_validation_v004.xsd
+-- xmlns: no namespace, schema location: wwpdb_validation_v004.xsd
 -- type: root child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE "Model" (
@@ -1086,7 +1086,7 @@ CREATE TABLE "Model" (
 
 --
 -- Bond outlier for standard amino acid or nucleic acid in comparison to the Engh and Huber EH99 parameters, Parkinson et al. parameter set. It involves two atoms. The obs, mean, stdev will all be in Angstroms units. Example: <bond-outlier atom0="C" atom1="OXT" mean="1.229" obs="1.327" stdev="0.019" z="5.16"/>
--- xmlns: no namespace, schema location: resource/wwpdb_validation_v004.xsd
+-- xmlns: no namespace, schema location: wwpdb_validation_v004.xsd
 -- type: root child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE "bond-outlier" (
@@ -1113,7 +1113,7 @@ CREATE TABLE "bond-outlier" (
 
 --
 -- Bond angle outlier for standard amino acid or nucleic acid in comparison to the Engh and Huber EH99 parameters, Parkinson et al. parameter set. It involves three atoms. The obsval, mean, mindiff, stdev will all be in degrees. Example: < atom0="C" atom1="N" atom2="CA" link="yes" mean="121.700" obs="139.881" stdev="2.500" z="7.27"/>
--- xmlns: no namespace, schema location: resource/wwpdb_validation_v004.xsd
+-- xmlns: no namespace, schema location: wwpdb_validation_v004.xsd
 -- type: root child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE "angle-outlier" (
@@ -1142,7 +1142,7 @@ CREATE TABLE "angle-outlier" (
 
 --
 -- Indicates there is a problem in the chirality compared to that expected with an atom in the residue. Chiral centres for all compounds occurring in the PDB are described in the chemical component dictionary. Chirality can be assessed in a number of ways, including calculation of the chiral volume, e.g. for the Calpha of amino acids this is 2.6 or -2.6 Angstrom cubed for L or D configurations, respectively. If the sign of the computed volume is incorrect, the handedness is wrong. If the absolute volume is less than 0.7Å3 , the chiral centre has been modelled as a planar moiety which is very likely to be erroneous. Chirality deviations are summarised per chain.
--- xmlns: no namespace, schema location: resource/wwpdb_validation_v004.xsd
+-- xmlns: no namespace, schema location: wwpdb_validation_v004.xsd
 -- type: root child, content: true, list: false, bridge: true, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_chiral_outlier_problem CASCADE;
@@ -1161,7 +1161,7 @@ CREATE TABLE "chiral-outlier" (
 
 --
 -- Indicates that there is a problem with planarity of group defined in the standard_geometry.cif for amino acids/proteins or nucleic acid. Calculated by the Validation-pack program. Examples: <plane-outlier improper="-13.96" type="mainchain"/> <plane-outlier omega="-145.49" type="peptide"/> <plane-outlier planeRMSD="0.17" type="sidechain"/>
--- xmlns: no namespace, schema location: resource/wwpdb_validation_v004.xsd
+-- xmlns: no namespace, schema location: wwpdb_validation_v004.xsd
 -- type: root child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_plane_outlier_type CASCADE;
@@ -1184,7 +1184,7 @@ CREATE TABLE "plane-outlier" (
 
 --
 -- A MolProbity all-atom clash outlier within the residue. Note that hydrogen atoms are added to the model and optimized by the reduce program. Outliers often involve these added hydrogen atoms. Example: <clash atom="HB3" cid="7" clashmag="0.44" dist="2.57"/>
--- xmlns: no namespace, schema location: resource/wwpdb_validation_v004.xsd
+-- xmlns: no namespace, schema location: wwpdb_validation_v004.xsd
 -- type: root child, content: true, list: false, bridge: true, virtual: false
 --
 CREATE TABLE clash (
@@ -1205,7 +1205,7 @@ CREATE TABLE clash (
 
 --
 -- A symmetry-related clash identified by Validation-pack. Symmetry related clashes are too-close contacts between two atoms across a crystallographic symmetry contact. Only relevant to crystallographic structures. Example: <symm-clash atom="O" clashmag="0.79" dist="1.41" scid="0" symop="2_657"/> From mmcif item "_pdbx_validate_symm_contact".
--- xmlns: no namespace, schema location: resource/wwpdb_validation_v004.xsd
+-- xmlns: no namespace, schema location: wwpdb_validation_v004.xsd
 -- type: root child, content: true, list: false, bridge: true, virtual: false
 --
 CREATE TABLE "symm-clash" (
@@ -1228,7 +1228,7 @@ CREATE TABLE "symm-clash" (
 
 --
 -- Bond outlier for ligand or modified amino acid/nucleic acid identified by the Mogul program. It will involve two atoms. The obsval, mean, mindiff, stdev will all be in Angstroms units. The Mogul program (Bruno et al., 2004) works by comparing the ligand geometry with preferred molecular geometries derived from high-quality, small-molecule structures in the Cambridge Structural Database (CSD) Example: <mog-bond-outlier Zscore="2.25" atoms="C1,C6" mean="1.53" mindiff="0.00" numobs="128" obsval="1.56" stdev="0.01"/>
--- xmlns: no namespace, schema location: resource/wwpdb_validation_v004.xsd
+-- xmlns: no namespace, schema location: wwpdb_validation_v004.xsd
 -- type: root child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE "mog-bond-outlier" (
@@ -1255,7 +1255,7 @@ CREATE TABLE "mog-bond-outlier" (
 
 --
 -- Bond angle outlier for ligand or modified amino acid/nucleic acid identified by the Mogul program. It involves three atoms. The obsval, mean, mindiff, stdev will all be in degrees. The Mogul program (Bruno et al., 2004) works by comparing the ligand geometry with preferred molecular geometries derived from high-quality, small-molecule structures in the Cambridge Structural Database (CSD).
--- xmlns: no namespace, schema location: resource/wwpdb_validation_v004.xsd
+-- xmlns: no namespace, schema location: wwpdb_validation_v004.xsd
 -- type: root child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE "mog-angle-outlier" (
@@ -1282,7 +1282,7 @@ CREATE TABLE "mog-angle-outlier" (
 
 --
 -- Torsion angle outlier for ligand or modified amino acid/nucleic acid identified by the Mogul program. It will involve four atoms. The obsval, mean, mindiff, stdev will all be in degrees. The Mogul program (Bruno et al., 2004) works by comparing the ligand geometry with preferred molecular geometries derived from high-quality, small-molecule structures in the Cambridge Structural Database (CSD).
--- xmlns: no namespace, schema location: resource/wwpdb_validation_v004.xsd
+-- xmlns: no namespace, schema location: wwpdb_validation_v004.xsd
 -- type: root child, content: true, list: false, bridge: true, virtual: false
 --
 CREATE TABLE "mog-torsion-outlier" (
@@ -1309,7 +1309,7 @@ CREATE TABLE "mog-torsion-outlier" (
 
 --
 -- Unusual ring conformation identified by Mogul. Mogul finds similar ring and works out the rmsd deviation of the ring torsion angles compared to the CSD similar rings. Each ring involves five or six atoms. The Mogul program (Bruno et al., 2004) works by comparing the ligand geometry with preferred molecular geometries derived from high-quality, small-molecule structures in the Cambridge Structural Database (CSD).
--- xmlns: no namespace, schema location: resource/wwpdb_validation_v004.xsd
+-- xmlns: no namespace, schema location: wwpdb_validation_v004.xsd
 -- type: root child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE "mog-ring-outlier" (
@@ -1332,7 +1332,7 @@ CREATE TABLE "mog-ring-outlier" (
 
 --
 -- Cyrange software is used to identify well-defined regions of protein structures in NMR ensembles. The well-defined region may contain more than one well-defined core or domain, which are not well defined with respect to each other. Each of these individual cores/domains is described as a "cyrange_domain".
--- xmlns: no namespace, schema location: resource/wwpdb_validation_v004.xsd
+-- xmlns: no namespace, schema location: wwpdb_validation_v004.xsd
 -- type: root child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE cyrange_domain (
@@ -1361,7 +1361,7 @@ CREATE TABLE cyrange_domain (
 
 --
 -- Each separate chain in the structure is a "ModelledEntityInstance". In the case of multiple models each individual model is a "ModelledEntityInstance" on its own.
--- xmlns: no namespace, schema location: resource/wwpdb_validation_v004.xsd
+-- xmlns: no namespace, schema location: wwpdb_validation_v004.xsd
 -- type: root child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE "ModelledEntityInstance" (
@@ -1404,7 +1404,7 @@ CREATE TABLE "ModelledEntityInstance" (
 
 --
 -- The recommended contour level for the primary map of this entry
--- xmlns: no namespace, schema location: resource/wwpdb_validation_v004.xsd
+-- xmlns: no namespace, schema location: wwpdb_validation_v004.xsd
 -- type: root child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE "RecommendedContourLevel" (
@@ -1420,7 +1420,7 @@ CREATE TABLE "RecommendedContourLevel" (
 
 --
 -- Contains an element for each atom inclusion graph line
--- xmlns: no namespace, schema location: resource/wwpdb_validation_v004.xsd
+-- xmlns: no namespace, schema location: wwpdb_validation_v004.xsd
 -- type: root child, content: false, list: false, bridge: false, virtual: false
 --
 CREATE TABLE atom_inclusion (
@@ -1438,7 +1438,7 @@ CREATE TABLE atom_inclusion (
 
 --
 -- Contains information regarding a fsc intersection
--- xmlns: no namespace, schema location: resource/wwpdb_validation_v004.xsd
+-- xmlns: no namespace, schema location: wwpdb_validation_v004.xsd
 -- type: admin root, content: true, list: false, bridge: false, virtual: true
 --
 CREATE TABLE fsc_intersection (
@@ -1461,7 +1461,7 @@ CREATE TABLE fsc_intersection (
 
 --
 -- Contains intersections between fsc_curves and their corresponding fsc_indicator_curves
--- xmlns: no namespace, schema location: resource/wwpdb_validation_v004.xsd
+-- xmlns: no namespace, schema location: wwpdb_validation_v004.xsd
 -- type: root child, content: true, list: true, bridge: true, virtual: false
 --
 CREATE TABLE resolution_intersections (
@@ -1482,7 +1482,7 @@ CREATE TABLE resolution_intersections (
 
 --
 -- No annotation is available
--- xmlns: no namespace, schema location: resource/wwpdb_validation_v004.xsd
+-- xmlns: no namespace, schema location: wwpdb_validation_v004.xsd
 -- type: root child, content: false, list: false, bridge: false, virtual: false
 --
 CREATE TABLE fsc_curves (
@@ -1496,7 +1496,7 @@ CREATE TABLE fsc_curves (
 
 --
 -- No annotation is available
--- xmlns: no namespace, schema location: resource/wwpdb_validation_v004.xsd
+-- xmlns: no namespace, schema location: wwpdb_validation_v004.xsd
 -- type: root child, content: false, list: false, bridge: false, virtual: false
 --
 CREATE TABLE fsc_indicator_curves (
@@ -1510,7 +1510,7 @@ CREATE TABLE fsc_indicator_curves (
 
 --
 -- An individual program used by the validation pipeline. Normally this corresponds to a "step" but not always.
--- xmlns: no namespace, schema location: resource/wwpdb_validation_v004.xsd
+-- xmlns: no namespace, schema location: wwpdb_validation_v004.xsd
 -- type: root child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE program (
@@ -1529,7 +1529,7 @@ CREATE TABLE program (
 
 --
 -- A shared element for storing graphs, contains X and Y coordinates for a single point. Axis labels and scales should be stored in the parent element
--- xmlns: no namespace, schema location: resource/wwpdb_validation_v004.xsd
+-- xmlns: no namespace, schema location: wwpdb_validation_v004.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE coordinate (
@@ -1546,7 +1546,7 @@ CREATE TABLE coordinate (
 
 --
 -- An atom name from cif item _atom_site.label_atom_id and _chem_comp_atom.atom_id. Currently limited to 4 characters. Example: atom="NE2"
--- xmlns: no namespace, schema location: resource/wwpdb_validation_v004.xsd
+-- xmlns: no namespace, schema location: wwpdb_validation_v004.xsd
 -- type: root child (view), content: false, list: false, bridge: true, virtual: false
 --
 CREATE OR REPLACE VIEW atom AS
@@ -1615,7 +1615,7 @@ FROM "symm-clash" WHERE atom_id IS NOT NULL;
 
 --
 -- An atom name for the first atom in a bond or angle outlier. Atom names are from cif item _atom_site.label_atom_id and _chem_comp_atom.atom_id. Currently limited to 4 characters. Example: atom="NE2"
--- xmlns: no namespace, schema location: resource/wwpdb_validation_v004.xsd
+-- xmlns: no namespace, schema location: wwpdb_validation_v004.xsd
 -- type: root child (view), content: false, list: false, bridge: true, virtual: false
 --
 CREATE OR REPLACE VIEW atom0 AS
@@ -1639,7 +1639,7 @@ FROM "angle-outlier" WHERE atom0_id IS NOT NULL;
 
 --
 -- An atom name for the second atom in a bond or angle outlier. Atom names are from cif item _atom_site.label_atom_id and _chem_comp_atom.atom_id. Currently limited to 4 characters. Example: atom="CE2"
--- xmlns: no namespace, schema location: resource/wwpdb_validation_v004.xsd
+-- xmlns: no namespace, schema location: wwpdb_validation_v004.xsd
 -- type: root child (view), content: false, list: false, bridge: true, virtual: false
 --
 CREATE OR REPLACE VIEW atom1 AS
@@ -1663,7 +1663,7 @@ FROM "angle-outlier" WHERE atom1_id IS NOT NULL;
 
 --
 -- The bond or bond angle involves one or atom that is in another residue. Example: link="yes"
--- xmlns: no namespace, schema location: resource/wwpdb_validation_v004.xsd
+-- xmlns: no namespace, schema location: wwpdb_validation_v004.xsd
 -- type: root child (view), content: false, list: false, bridge: true, virtual: false
 --
 CREATE OR REPLACE VIEW link AS
@@ -1687,7 +1687,7 @@ FROM "angle-outlier" WHERE link_id IS NOT NULL;
 
 --
 -- An atom name for third atom in an angle outlier. Atom names are from cif item _atom_site.label_atom_id and _chem_comp_atom.atom_id. Currently limited to 4 characters. Example: atom="NE2"
--- xmlns: no namespace, schema location: resource/wwpdb_validation_v004.xsd
+-- xmlns: no namespace, schema location: wwpdb_validation_v004.xsd
 -- type: root child (view), content: false, list: false, bridge: true, virtual: false
 --
 CREATE OR REPLACE VIEW atom2 AS
@@ -1702,7 +1702,7 @@ FROM "angle-outlier" WHERE atom2_id IS NOT NULL;
 
 --
 -- The local density is the percentage of observed Mogul torsion angles within certain units of the query torsion angle. Units depend on the parameter being analyzed. Example: local_density="17.5"
--- xmlns: no namespace, schema location: resource/wwpdb_validation_v004.xsd
+-- xmlns: no namespace, schema location: wwpdb_validation_v004.xsd
 -- type: root child (view), content: false, list: false, bridge: true, virtual: false
 --
 CREATE OR REPLACE VIEW local_density AS
@@ -1717,7 +1717,7 @@ FROM "mog-torsion-outlier" WHERE local_density_id IS NOT NULL;
 
 --
 -- The "all" percentile rank for the property percent-RSRZ-outliers for the chain/model (The proportion of residues that are RSRZ outliers reported as a percentage). The comparison will be to the set of all structures determined by X-ray crystallography deposited, up to the date included in the program name="percentiles" version, where the percent-RSRZ-outliers was successfully calculated. Example: absolute_RSRZ_percentile="39.90" N.B. this is the chain/model equivalent of the overall (all chain) category "absolute-percentile-percent-RSRZ-outliers" X-ray entry specific, produced by the percentiles step of the validation pipeline software.
--- xmlns: no namespace, schema location: resource/wwpdb_validation_v004.xsd
+-- xmlns: no namespace, schema location: wwpdb_validation_v004.xsd
 -- type: root child (view), content: false, list: false, bridge: true, virtual: false
 --
 CREATE OR REPLACE VIEW "absolute_RSRZ_percentile" AS
@@ -1732,7 +1732,7 @@ FROM "ModelledEntityInstance" WHERE "absolute_RSRZ_percentile_id" IS NOT NULL;
 
 --
 -- The "similar" percentile rank for the property percent-RSRZ-outliers for the chain/model (The proportion of residues that are RSRZ outliers reported as a percentage). The comparison will be to the subset of structures determined by X-ray crystallography deposited, up to the date included in the program name="percentiles" version, where the percent-RSRZ-outliers was successfully calculated that have a similar resolution ("PDB-resolution"). Example: relative_RSRZ_percentile="34.81" N.B. this is the chain/model equivalent of the overall (all chain) category "absolute-percentile-percent-RSRZ-outliers" X-ray entry specific, produced by the percentiles step of the validation pipeline software.
--- xmlns: no namespace, schema location: resource/wwpdb_validation_v004.xsd
+-- xmlns: no namespace, schema location: wwpdb_validation_v004.xsd
 -- type: root child (view), content: false, list: false, bridge: true, virtual: false
 --
 CREATE OR REPLACE VIEW "relative_RSRZ_percentile" AS
@@ -1747,7 +1747,7 @@ FROM "ModelledEntityInstance" WHERE "relative_RSRZ_percentile_id" IS NOT NULL;
 
 --
 -- Contains the data required to plot atom inclusion for for all atoms.
--- xmlns: no namespace, schema location: resource/wwpdb_validation_v004.xsd
+-- xmlns: no namespace, schema location: wwpdb_validation_v004.xsd
 -- type: root child (view), content: false, list: false, bridge: true, virtual: false
 --
 CREATE OR REPLACE VIEW all_atoms AS
@@ -1762,7 +1762,7 @@ FROM atom_inclusion WHERE all_atoms_id IS NOT NULL;
 
 --
 -- Contains the data required to plot the atom inclusion for the backbone.
--- xmlns: no namespace, schema location: resource/wwpdb_validation_v004.xsd
+-- xmlns: no namespace, schema location: wwpdb_validation_v004.xsd
 -- type: root child (view), content: false, list: false, bridge: true, virtual: false
 --
 CREATE OR REPLACE VIEW backbone AS
@@ -1777,7 +1777,7 @@ FROM atom_inclusion WHERE backbone_id IS NOT NULL;
 
 --
 -- Contains the data required to plot the map-value distribution graph for the primary map
--- xmlns: no namespace, schema location: resource/wwpdb_validation_v004.xsd
+-- xmlns: no namespace, schema location: wwpdb_validation_v004.xsd
 -- type: root child (view), content: false, list: false, bridge: true, virtual: false
 --
 CREATE OR REPLACE VIEW map_value_distribution AS
@@ -1792,7 +1792,7 @@ FROM "EM_validation" WHERE map_value_distribution_id IS NOT NULL;
 
 --
 -- Contains the data required to plot the rotationally averaged power spectrum graph for the primary map
--- xmlns: no namespace, schema location: resource/wwpdb_validation_v004.xsd
+-- xmlns: no namespace, schema location: wwpdb_validation_v004.xsd
 -- type: root child (view), content: false, list: false, bridge: true, virtual: false
 --
 CREATE OR REPLACE VIEW rotationally_averaged_power_spectrum AS
@@ -1807,7 +1807,7 @@ FROM "EM_validation" WHERE rotationally_averaged_power_spectrum_id IS NOT NULL;
 
 --
 -- Contains the data required to plot the volume estimate for the primary map
--- xmlns: no namespace, schema location: resource/wwpdb_validation_v004.xsd
+-- xmlns: no namespace, schema location: wwpdb_validation_v004.xsd
 -- type: root child (view), content: false, list: false, bridge: true, virtual: false
 --
 CREATE OR REPLACE VIEW volume_estimate AS
@@ -1822,7 +1822,7 @@ FROM "EM_validation" WHERE volume_estimate_id IS NOT NULL;
 
 --
 -- For X-ray entries: data high resolution diffraction limit in Angstroms as reported in the input mmCIF file, normally taken from mmcif item _refine.ls_d_res_high or if this is not found _reflns.d_resolution_high. For EM entries: The final resolution, in Angstroms, of the 3d reconstruction as reported in the input mmCIF file, taken from _em_3d_reconstruction.resolution. If not available then item will be absent or set to "NotAvailable".
--- xmlns: no namespace, schema location: resource/wwpdb_validation_v004.xsd
+-- xmlns: no namespace, schema location: wwpdb_validation_v004.xsd
 -- type: root child (view), content: false, list: false, bridge: true, virtual: false
 --
 CREATE OR REPLACE VIEW "PDB-resolution" AS
@@ -1836,7 +1836,7 @@ FROM "Entry" WHERE "PDB-resolution_id" IS NOT NULL;
 
 --
 -- For X-ray entries: lower data resolution diffraction limit, in Angstroms, as reported in the input mmCIF file, normally taken from mmcif item _refine.ls_d_res_low or if this is not found _reflns.d_resolution_low.
--- xmlns: no namespace, schema location: resource/wwpdb_validation_v004.xsd
+-- xmlns: no namespace, schema location: wwpdb_validation_v004.xsd
 -- type: root child (view), content: false, list: false, bridge: true, virtual: false
 --
 CREATE OR REPLACE VIEW "PDB-resolution-low" AS
@@ -1850,7 +1850,7 @@ FROM "Entry" WHERE "PDB-resolution-low_id" IS NOT NULL;
 
 --
 -- The residual R-factor reported in the input mmCIF file. The value will be taken from mmcif item _refine.ls_R_factor_all or if this not found _refine.ls_R_factor_obs or if this is not found _refine.ls_R_factor_R_work. The R-factor is measure of the agreement between the crystallographic model and the experimental X-ray diffraction data. If not available then item will be absent or set to "NotAvailable".
--- xmlns: no namespace, schema location: resource/wwpdb_validation_v004.xsd
+-- xmlns: no namespace, schema location: wwpdb_validation_v004.xsd
 -- type: root child (view), content: false, list: false, bridge: true, virtual: false
 --
 CREATE OR REPLACE VIEW "PDB-R" AS
@@ -1864,7 +1864,7 @@ FROM "Entry" WHERE "PDB-R_id" IS NOT NULL;
 
 --
 -- The residual R-factor for free reflections in the refinement reported in the input mmCIF file. The value will be taken from mmcif item _refine.ls_R_factor_R_free. If not available then item will be absent or set to "NotAvailable".
--- xmlns: no namespace, schema location: resource/wwpdb_validation_v004.xsd
+-- xmlns: no namespace, schema location: wwpdb_validation_v004.xsd
 -- type: root child (view), content: false, list: false, bridge: true, virtual: false
 --
 CREATE OR REPLACE VIEW "PDB-Rfree" AS
@@ -1878,7 +1878,7 @@ FROM "Entry" WHERE "PDB-Rfree_id" IS NOT NULL;
 
 --
 -- The structure is a Calpha only model. Currently implementation uses test that the structure has more than 30 atoms with the name CA and that number of atoms with name CA is greater than 1/3 of the total number of atoms. Currently test only applied in the EDS step so will be only set for X-ray structures.
--- xmlns: no namespace, schema location: resource/wwpdb_validation_v004.xsd
+-- xmlns: no namespace, schema location: wwpdb_validation_v004.xsd
 -- type: root child (view), content: false, list: false, bridge: true, virtual: false
 --
 CREATE OR REPLACE VIEW "CA_ONLY" AS
@@ -1892,7 +1892,7 @@ FROM "Entry" WHERE "CA_ONLY_id" IS NOT NULL;
 
 --
 -- This will be set to "yes" when there were no ligands or modified residues found in the structure and consequently Mogul has not been run.
--- xmlns: no namespace, schema location: resource/wwpdb_validation_v004.xsd
+-- xmlns: no namespace, schema location: wwpdb_validation_v004.xsd
 -- type: root child (view), content: false, list: false, bridge: true, virtual: false
 --
 CREATE OR REPLACE VIEW "no-ligands-for-mogul" AS
@@ -1906,7 +1906,7 @@ FROM "Entry" WHERE "no-ligands-for-mogul_id" IS NOT NULL;
 
 --
 -- This will be set to "yes" when buster-report program was not run.
--- xmlns: no namespace, schema location: resource/wwpdb_validation_v004.xsd
+-- xmlns: no namespace, schema location: wwpdb_validation_v004.xsd
 -- type: root child (view), content: false, list: false, bridge: true, virtual: false
 --
 CREATE OR REPLACE VIEW "no-ligands-for-buster-report" AS
@@ -1920,7 +1920,7 @@ FROM "Entry" WHERE "no-ligands-for-buster-report_id" IS NOT NULL;
 
 --
 -- This will be set to "yes" when buster-report program was run.
--- xmlns: no namespace, schema location: resource/wwpdb_validation_v004.xsd
+-- xmlns: no namespace, schema location: wwpdb_validation_v004.xsd
 -- type: root child (view), content: false, list: false, bridge: true, virtual: false
 --
 CREATE OR REPLACE VIEW "ligands-for-buster-report" AS
@@ -1934,7 +1934,7 @@ FROM "Entry" WHERE "ligands-for-buster-report_id" IS NOT NULL;
 
 --
 -- The MolProbity Ramachandran outlier score (a percentage). A residue is considered to be a Ramachandran plot outlier if the combination of its phi and psi torsion angles is unusual, as assessed by MolProbity. The Ramachandran outlier score for an entry is calculated as the percentage of Ramachandran outliers with respect to the total number of residues in the entry for which the outlier assessment is available. Example: percent-rama-outliers="0.00" Specific to structures that contain protein chains. For NMR structures only the well-defined (core) residues from ensemble analysis will be considered.
--- xmlns: no namespace, schema location: resource/wwpdb_validation_v004.xsd
+-- xmlns: no namespace, schema location: wwpdb_validation_v004.xsd
 -- type: root child (view), content: false, list: false, bridge: true, virtual: false
 --
 CREATE OR REPLACE VIEW "percent-rama-outliers" AS
@@ -1948,7 +1948,7 @@ FROM "Entry" WHERE "percent-rama-outliers_id" IS NOT NULL;
 
 --
 -- Only given for structures determined by NMR. The MolProbity Ramachandran outlier score for all atoms in the structure rather than just the well-defined (core) residues.
--- xmlns: no namespace, schema location: resource/wwpdb_validation_v004.xsd
+-- xmlns: no namespace, schema location: wwpdb_validation_v004.xsd
 -- type: root child (view), content: false, list: false, bridge: true, virtual: false
 --
 CREATE OR REPLACE VIEW "percent-rama-outliers-full-length" AS
@@ -1962,7 +1962,7 @@ FROM "Entry" WHERE "percent-rama-outliers-full-length_id" IS NOT NULL;
 
 --
 -- The MolProbity sidechain outlier score (a percentage). Protein sidechains mostly adopt certain (combinations of) preferred torsion angle values (called rotamers or rotameric conformers), much like their backbone torsion angles (as assessed in the Ramachandran analysis). MolProbity considers the sidechain conformation of a residue to be an outlier if its set of torsion angles is not similar to any preferred combination. The sidechain outlier score is calculated as the percentage of residues with an unusual sidechain conformation with respect to the total number of residues for which the assessment is available. Example: percent-rota-outliers="2.44". Specific to structure that contain protein chains and have sidechains modelled. For NMR structures only the well-defined (core) residues from ensemble analysis will be considered.
--- xmlns: no namespace, schema location: resource/wwpdb_validation_v004.xsd
+-- xmlns: no namespace, schema location: wwpdb_validation_v004.xsd
 -- type: root child (view), content: false, list: false, bridge: true, virtual: false
 --
 CREATE OR REPLACE VIEW "percent-rota-outliers" AS
@@ -1976,7 +1976,7 @@ FROM "Entry" WHERE "percent-rota-outliers_id" IS NOT NULL;
 
 --
 -- Only given for structures determined by NMR. The MolProbity sidechain outlier score for all atoms in the structure rather than just the well-defined (core) residues.
--- xmlns: no namespace, schema location: resource/wwpdb_validation_v004.xsd
+-- xmlns: no namespace, schema location: wwpdb_validation_v004.xsd
 -- type: root child (view), content: false, list: false, bridge: true, virtual: false
 --
 CREATE OR REPLACE VIEW "percent-rota-outliers-full-length" AS
@@ -1990,7 +1990,7 @@ FROM "Entry" WHERE "percent-rota-outliers-full-length_id" IS NOT NULL;
 
 --
 -- Whether the B factor is FULL or PARTIAL. Normally B factors are FULL. Example: B_factor_type="FULL". X-ray entry specific, obtained from the DCC program.
--- xmlns: no namespace, schema location: resource/wwpdb_validation_v004.xsd
+-- xmlns: no namespace, schema location: wwpdb_validation_v004.xsd
 -- type: root child (view), content: false, list: false, bridge: true, virtual: false
 --
 CREATE OR REPLACE VIEW "B_factor_type" AS
@@ -2004,7 +2004,7 @@ FROM "Entry" WHERE "B_factor_type_id" IS NOT NULL;
 
 --
 -- The number of expected diffraction spots is a function of data resolution and the space group. This metric describes the number of recorded reflections as a percentage of the number expected. Example: "DataCompleteness="95.71"" X-ray entry specific, obtained from the REFMAC program, during the EDS calculation.
--- xmlns: no namespace, schema location: resource/wwpdb_validation_v004.xsd
+-- xmlns: no namespace, schema location: wwpdb_validation_v004.xsd
 -- type: root child (view), content: false, list: false, bridge: true, virtual: false
 --
 CREATE OR REPLACE VIEW "DataCompleteness" AS
@@ -2018,7 +2018,7 @@ FROM "Entry" WHERE "DataCompleteness_id" IS NOT NULL;
 
 --
 -- The free R-factor from a DCC recalculation of the electron density maps for the deposited coordinates and structure factors. Example: DCC_Rfree="0.19". Currently value is rounded to 2 decimal places. X-ray entry specific, obtained from the DCC program.
--- xmlns: no namespace, schema location: resource/wwpdb_validation_v004.xsd
+-- xmlns: no namespace, schema location: wwpdb_validation_v004.xsd
 -- type: root child (view), content: false, list: false, bridge: true, virtual: false
 --
 CREATE OR REPLACE VIEW "DCC_Rfree" AS
@@ -2032,7 +2032,7 @@ FROM "Entry" WHERE "DCC_Rfree_id" IS NOT NULL;
 
 --
 -- The percentage reflections in the free set as defined in the input structure factor file supplied to the validation pipeline. Example: percent-free-reflections="10.17". X-ray entry specific, obtained from the DCC program.
--- xmlns: no namespace, schema location: resource/wwpdb_validation_v004.xsd
+-- xmlns: no namespace, schema location: wwpdb_validation_v004.xsd
 -- type: root child (view), content: false, list: false, bridge: true, virtual: false
 --
 CREATE OR REPLACE VIEW "percent-free-reflections" AS
@@ -2046,7 +2046,7 @@ FROM "Entry" WHERE "percent-free-reflections_id" IS NOT NULL;
 
 --
 -- The proportion of residues that are RSRZ outliers reported as a percentage. An RSRZ outlier is a residue that has an RSRZ greater than 2. For a description of the how RSRZ provides a measure of the fit between the model and electron density, see: https://wwpdb.org/validation/2016/XrayValidationReportHelp#fit_model_data. Example: percent-RSRZ-outliers="3.88" X-ray entry specific, obtained in the eds step from REFMAC calculated electron density map.
--- xmlns: no namespace, schema location: resource/wwpdb_validation_v004.xsd
+-- xmlns: no namespace, schema location: wwpdb_validation_v004.xsd
 -- type: root child (view), content: false, list: false, bridge: true, virtual: false
 --
 CREATE OR REPLACE VIEW "percent-RSRZ-outliers" AS
@@ -2060,7 +2060,7 @@ FROM "Entry" WHERE "percent-RSRZ-outliers_id" IS NOT NULL;
 
 --
 -- The "all" percentile rank for the property RNAsuiteness (the MolProbity conformer-match quality parameter for RNA structures). The comparison will be to: * For X-ray structures: the set of all structures determined by X-ray crystallography ... * For NMR and EM structures: the set of all PDB structures ... deposited, up to the date included in the program name="percentiles" version, where the RNAsuiteness was successfully calculated. Example: absolute-percentile-RNAsuiteness="99.7" Specific to entries that contain RNA polymers (and have a RNAsuiteness attribute). Produced by the percentiles step of the validation pipeline software.
--- xmlns: no namespace, schema location: resource/wwpdb_validation_v004.xsd
+-- xmlns: no namespace, schema location: wwpdb_validation_v004.xsd
 -- type: root child (view), content: false, list: false, bridge: true, virtual: false
 --
 CREATE OR REPLACE VIEW "absolute-percentile-RNAsuiteness" AS
@@ -2074,7 +2074,7 @@ FROM "Entry" WHERE "absolute-percentile-RNAsuiteness_id" IS NOT NULL;
 
 --
 -- The "relative" percentile rank for the property RNAsuiteness (the MolProbity conformer-match quality parameter for RNA structures). The comparison will be to: * For X-ray structures: the subset of structures structures determined by X-ray crystallography, that have a similar resolution ("PDB-resolution") to this entry, ... * For structures determined by NMR: the subset of structures determined by NMR ... * For structures determined by EM: the subset of structures determined by EM ... ... deposited up to the date included in the program name="percentiles" version and where the RNAsuiteness was successfully calculated. Example: absolute-percentile-RNAsuiteness="99.7" Specific to entries that contain RNA polymers (and have a RNAsuiteness attribute). Produced by the percentiles step of the validation pipeline software.
--- xmlns: no namespace, schema location: resource/wwpdb_validation_v004.xsd
+-- xmlns: no namespace, schema location: wwpdb_validation_v004.xsd
 -- type: root child (view), content: false, list: false, bridge: true, virtual: false
 --
 CREATE OR REPLACE VIEW "relative-percentile-RNAsuiteness" AS
@@ -2088,7 +2088,7 @@ FROM "Entry" WHERE "relative-percentile-RNAsuiteness_id" IS NOT NULL;
 
 --
 -- The "all" percentile rank for the property clashscore (the MolProbity all-atom too-close contacts parameter). The comparison will be to: * For X-ray structures: the set of all structures determined by X-ray crystallography ... * For NMR and EM structures: the set of all PDB structures ... deposited, up to the date included in the program name="percentiles" version, where the clashscore was successfully calculated. Example: absolute-percentile-clashscore="71.6" Only calculated if clashscore is available. Produced by the percentiles step of the validation pipeline software.
--- xmlns: no namespace, schema location: resource/wwpdb_validation_v004.xsd
+-- xmlns: no namespace, schema location: wwpdb_validation_v004.xsd
 -- type: root child (view), content: false, list: false, bridge: true, virtual: false
 --
 CREATE OR REPLACE VIEW "absolute-percentile-clashscore" AS
@@ -2102,7 +2102,7 @@ FROM "Entry" WHERE "absolute-percentile-clashscore_id" IS NOT NULL;
 
 --
 -- The "relative" percentile rank for the property clashscore (the MolProbity all-atom too-close contacts parameter). The comparison will be to: * For X-ray structures: the subset of structures structures determined by X-ray crystallography, that have a similar resolution ("PDB-resolution") to this entry, ... * For structures determined by NMR: the subset of structures determined by NMR ... * For structures determined by EM: the subset of structures determined by EM ... ... deposited up to the date included in the program name="percentiles" version and where the clashscore was successfully calculated. Example: relative-percentile-clashscore="64.4" Only calculated if clashscore is available. Produced by the percentiles step of the validation pipeline software.
--- xmlns: no namespace, schema location: resource/wwpdb_validation_v004.xsd
+-- xmlns: no namespace, schema location: wwpdb_validation_v004.xsd
 -- type: root child (view), content: false, list: false, bridge: true, virtual: false
 --
 CREATE OR REPLACE VIEW "relative-percentile-clashscore" AS
@@ -2116,7 +2116,7 @@ FROM "Entry" WHERE "relative-percentile-clashscore_id" IS NOT NULL;
 
 --
 -- The "all" percentile rank for the property percent-rama-outliers (the MolProbity Ramachandran outlier score). The comparison will be to: * For X-ray structures: the set of all structures determined by X-ray crystallography ... * For NMR and EM structures: the set of all PDB structures ... deposited, up to the date included in the program name="percentiles" version, where the percent-rama-outliers was successfully calculated. Example: absolute-percentile-percent-rama-outliers="100.0" Produced by the percentiles step of the validation pipeline software.
--- xmlns: no namespace, schema location: resource/wwpdb_validation_v004.xsd
+-- xmlns: no namespace, schema location: wwpdb_validation_v004.xsd
 -- type: root child (view), content: false, list: false, bridge: true, virtual: false
 --
 CREATE OR REPLACE VIEW "absolute-percentile-percent-rama-outliers" AS
@@ -2130,7 +2130,7 @@ FROM "Entry" WHERE "absolute-percentile-percent-rama-outliers_id" IS NOT NULL;
 
 --
 -- The "relative" percentile rank for the property percent-rama-outliers (the MolProbity Ramachandran outlier score). The comparison will be to: * For X-ray structures: the subset of structures structures determined by X-ray crystallography, that have a similar resolution ("PDB-resolution") to this entry, ... * For structures determined by NMR: the subset of structures determined by NMR ... * For structures determined by EM: the subset of structures determined by EM ... ... deposited up to the date included in the program name="percentiles" version and where the percent-rama-outliers was successfully calculated. Example: relative-percentile-percent-rama-outliers="100.0". Produced by the percentiles step of the validation pipeline software.
--- xmlns: no namespace, schema location: resource/wwpdb_validation_v004.xsd
+-- xmlns: no namespace, schema location: wwpdb_validation_v004.xsd
 -- type: root child (view), content: false, list: false, bridge: true, virtual: false
 --
 CREATE OR REPLACE VIEW "relative-percentile-percent-rama-outliers" AS
@@ -2144,7 +2144,7 @@ FROM "Entry" WHERE "relative-percentile-percent-rama-outliers_id" IS NOT NULL;
 
 --
 -- The "all" percentile rank for the property percent-rota-outliers (the MolProbity sidechain outlier score). The comparison will be to: * For X-ray structures: the set of all structures determined by X-ray crystallography ... * For NMR and EM structures: the set of all PDB structures ... deposited, up to the date included in the program name="percentiles" version, where the percent-rota-outliers was successfully calculated. Example: absolute-percentile-percent-rota-outliers="54.2" Only calculated if percent-rota-outliers is available. Produced by the percentiles step of the validation pipeline software.
--- xmlns: no namespace, schema location: resource/wwpdb_validation_v004.xsd
+-- xmlns: no namespace, schema location: wwpdb_validation_v004.xsd
 -- type: root child (view), content: false, list: false, bridge: true, virtual: false
 --
 CREATE OR REPLACE VIEW "absolute-percentile-percent-rota-outliers" AS
@@ -2158,7 +2158,7 @@ FROM "Entry" WHERE "absolute-percentile-percent-rota-outliers_id" IS NOT NULL;
 
 --
 -- The "relative" percentile rank for the property percent-rota-outliers (the MolProbity sidechain outlier score). The comparison will be to: * For X-ray structures: the subset of structures structures determined by X-ray crystallography, that have a similar resolution ("PDB-resolution") to this entry, ... * For structures determined by NMR: the subset of structures determined by NMR ... * For structures determined by EM: the subset of structures determined by EM ... ... deposited up to the date included in the program name="percentiles" version and where the percent-rota-outliers was successfully calculated. Example: relative-percentile-percent-rota-outliers="64.4" Only calculated if percent-rota-outliers is available. Produced by the percentiles step of the validation pipeline software.
--- xmlns: no namespace, schema location: resource/wwpdb_validation_v004.xsd
+-- xmlns: no namespace, schema location: wwpdb_validation_v004.xsd
 -- type: root child (view), content: false, list: false, bridge: true, virtual: false
 --
 CREATE OR REPLACE VIEW "relative-percentile-percent-rota-outliers" AS
@@ -2172,7 +2172,7 @@ FROM "Entry" WHERE "relative-percentile-percent-rota-outliers_id" IS NOT NULL;
 
 --
 -- The "all" percentile rank for the property DCC_Rfree (the free R-factor from a DCC recalculation of the electron density maps for the deposited coordinates and structure factors). The comparison will be to the set of all structures determined by X-ray crystallography deposited, up to the date included in the program name="percentiles" version, where the DCC_Rfree was successfully calculated. Example: absolute-percentile-DCC_Rfree="90.6". X-ray entry specific, produced by the percentiles step of the validation pipeline software.
--- xmlns: no namespace, schema location: resource/wwpdb_validation_v004.xsd
+-- xmlns: no namespace, schema location: wwpdb_validation_v004.xsd
 -- type: root child (view), content: false, list: false, bridge: true, virtual: false
 --
 CREATE OR REPLACE VIEW "absolute-percentile-DCC_Rfree" AS
@@ -2186,7 +2186,7 @@ FROM "Entry" WHERE "absolute-percentile-DCC_Rfree_id" IS NOT NULL;
 
 --
 -- The "similar" percentile rank for the property DCC_Rfree (the free R-factor from a DCC recalculation of the electron density maps for the deposited coordinates and structure factors). The comparison will be to the subset of structures determined by X-ray crystallography deposited, up to the date included in the program name="percentiles" version, where the DCC_Rfree was successfully calculated that have a similar resolution ("PDB-resolution"). Example: relative-percentile-DCC_Rfree="92.9". X-ray entry specific, produced by the percentiles step of the validation pipeline software.
--- xmlns: no namespace, schema location: resource/wwpdb_validation_v004.xsd
+-- xmlns: no namespace, schema location: wwpdb_validation_v004.xsd
 -- type: root child (view), content: false, list: false, bridge: true, virtual: false
 --
 CREATE OR REPLACE VIEW "relative-percentile-DCC_Rfree" AS
@@ -2200,7 +2200,7 @@ FROM "Entry" WHERE "relative-percentile-DCC_Rfree_id" IS NOT NULL;
 
 --
 -- The "all" percentile rank for the property percent-RSRZ-outliers (The proportion of residues that are RSRZ outliers reported as a percentage). The comparison will be to the set of all structures determined by X-ray crystallography deposited, up to the date included in the program name="percentiles" version, where the percent-RSRZ-outliers was successfully calculated. Example: absolute_RSRZ_percentile="83.82" N.B. this is the chain/model equivalent of the overall (all chain) category "absolute-percentile-percent-RSRZ-outliers" X-ray entry specific, produced by the percentiles step of the validation pipeline software.
--- xmlns: no namespace, schema location: resource/wwpdb_validation_v004.xsd
+-- xmlns: no namespace, schema location: wwpdb_validation_v004.xsd
 -- type: root child (view), content: false, list: false, bridge: true, virtual: false
 --
 CREATE OR REPLACE VIEW "absolute-percentile-percent-RSRZ-outliers" AS
@@ -2214,7 +2214,7 @@ FROM "Entry" WHERE "absolute-percentile-percent-RSRZ-outliers_id" IS NOT NULL;
 
 --
 -- The "similar" percentile rank for the property percent-RSRZ-outliers (The proportion of residues that are RSRZ outliers reported as a percentage). The comparison will be to the subset of structures determined by X-ray crystallography deposited, up to the date included in the program name="percentiles" version, where the percent-RSRZ-outliers was successfully calculated that have a similar resolution ("PDB-resolution"). Example: relative-percentile-percent-RSRZ-outliers="100.0". X-ray entry specific, produced by the percentiles step of the validation pipeline software.
--- xmlns: no namespace, schema location: resource/wwpdb_validation_v004.xsd
+-- xmlns: no namespace, schema location: wwpdb_validation_v004.xsd
 -- type: root child (view), content: false, list: false, bridge: true, virtual: false
 --
 CREATE OR REPLACE VIEW "relative-percentile-percent-RSRZ-outliers" AS
@@ -2228,7 +2228,7 @@ FROM "Entry" WHERE "relative-percentile-percent-RSRZ-outliers_id" IS NOT NULL;
 
 --
 -- If the residue is a ligand and involved in clashes this will be set to yes: Example: ligand_clashes_outlier="yes".
--- xmlns: no namespace, schema location: resource/wwpdb_validation_v004.xsd
+-- xmlns: no namespace, schema location: wwpdb_validation_v004.xsd
 -- type: root child (view), content: false, list: false, bridge: true, virtual: false
 --
 CREATE OR REPLACE VIEW ligand_clashes_outlier AS
@@ -2242,7 +2242,7 @@ FROM "ModelledSubgroup" WHERE ligand_clashes_outlier_id IS NOT NULL;
 
 --
 -- Will be set to "yes" if the residue is a ligand and has a chiral atom problem compared to the PDB chemical component definition. Example: ligand_chirality_outlier="yes".
--- xmlns: no namespace, schema location: resource/wwpdb_validation_v004.xsd
+-- xmlns: no namespace, schema location: wwpdb_validation_v004.xsd
 -- type: root child (view), content: false, list: false, bridge: true, virtual: false
 --
 CREATE OR REPLACE VIEW ligand_chirality_outlier AS
@@ -2256,7 +2256,7 @@ FROM "ModelledSubgroup" WHERE ligand_chirality_outlier_id IS NOT NULL;
 
 --
 -- This residue is linked to the next residue by a peptide bond that has a cis rather than trans conformation. Example: cis_peptide="yes"
--- xmlns: no namespace, schema location: resource/wwpdb_validation_v004.xsd
+-- xmlns: no namespace, schema location: wwpdb_validation_v004.xsd
 -- type: root child (view), content: false, list: false, bridge: true, virtual: false
 --
 CREATE OR REPLACE VIEW cis_peptide AS
@@ -2270,7 +2270,7 @@ FROM "ModelledSubgroup" WHERE cis_peptide_id IS NOT NULL;
 
 --
 -- This will be set to "yes" if the residue is ignored for Mogul validation of bond geometry. For instance monoatomic ions such as sodium resname="NA" will have mogul-ignore="yes". Produced by the mogul step.
--- xmlns: no namespace, schema location: resource/wwpdb_validation_v004.xsd
+-- xmlns: no namespace, schema location: wwpdb_validation_v004.xsd
 -- type: root child (view), content: false, list: false, bridge: true, virtual: false
 --
 CREATE OR REPLACE VIEW "mogul-ignore" AS
@@ -2284,7 +2284,7 @@ FROM "ModelledSubgroup" WHERE "mogul-ignore_id" IS NOT NULL;
 
 --
 -- This will be set to "yes" if that more than 40% of bonds, angles, torsions, and rings are found in the Mogul analysis to be outliers. Produced by the mogul step.
--- xmlns: no namespace, schema location: resource/wwpdb_validation_v004.xsd
+-- xmlns: no namespace, schema location: wwpdb_validation_v004.xsd
 -- type: root child (view), content: false, list: false, bridge: true, virtual: false
 --
 CREATE OR REPLACE VIEW ligand_geometry_outlier AS
@@ -2298,7 +2298,7 @@ FROM "ModelledSubgroup" WHERE ligand_geometry_outlier_id IS NOT NULL;
 
 --
 -- This will be set to "yes" if EDS finds that the ligand has an issue with electron density fit. is used where the residue has Real-Space R-value (RSR) exceeding 0.5 or a Local Ligand Density Fit value (LLDF) is greater than 2. Note that the LLDF calculation is still under development and the methods and criterion for identifying outlier will be refined following analysis of a large test set of ligands. X-ray specific produce by the EDS step.
--- xmlns: no namespace, schema location: resource/wwpdb_validation_v004.xsd
+-- xmlns: no namespace, schema location: wwpdb_validation_v004.xsd
 -- type: root child (view), content: false, list: false, bridge: true, virtual: false
 --
 CREATE OR REPLACE VIEW ligand_density_outlier AS
