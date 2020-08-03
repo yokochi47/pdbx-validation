@@ -365,6 +365,7 @@ Criteria for FSC resolution estimation, <xsl:value-of select="@type"/>, is not l
 
     <xsl:if test="PDBxv:resolution">
       <xsl:attribute name="PDB-resolution"><xsl:value-of select="PDBxv:resolution"/></xsl:attribute>
+      <xsl:attribute name="EMDB-resolution"><xsl:value-of select="PDBxv:resolution"/></xsl:attribute>
     </xsl:if>
 
     <xsl:attribute name="PDB-resolution-low">NotAvailable</xsl:attribute>
@@ -2051,6 +2052,12 @@ Criteria for FSC resolution estimation, <xsl:value-of select="@type"/>, is not l
                 <xsl:variable name="plot_id"><xsl:value-of select="@id"/></xsl:variable>
                 <fsc_curve>
                   <xsl:attribute name="Title"><xsl:value-of select="PDBxv:title"/></xsl:attribute>
+                  <xsl:if test="PDBxv:name">
+                    <xsl:attribute name="curve_name"><xsl:value-of select="PDBxv:name"/></xsl:attribute>
+                  </xsl:if>
+                  <xsl:if test="PDBxv:type">
+                    <xsl:attribute name="type"><xsl:value-of select="PDBxv:type"/></xsl:attribute>
+                  </xsl:if>
                   <xsl:attribute name="xTitle"><xsl:value-of select="PDBxv:spatial_frequency_title"/></xsl:attribute>
                   <xsl:attribute name="yTitle"><xsl:value-of select="PDBxv:correlation_coef_title"/></xsl:attribute>
                   <xsl:attribute name="xUnit"><xsl:value-of select="PDBxv:spatial_frequency_unit"/></xsl:attribute>
@@ -2071,8 +2078,8 @@ Criteria for FSC resolution estimation, <xsl:value-of select="@type"/>, is not l
                 <fsc_indicator_curve>
                   <xsl:variable name="curve">
                     <xsl:choose>
-                      <xsl:when test="starts-with(PDBxv:title,'calculated_fsc')">calculated_fsc</xsl:when>
-                      <xsl:when test="starts-with(PDBxv:title,'author_provided_fsc')">author_provided_fsc</xsl:when>
+                      <xsl:when test="starts-with(PDBxv:title,'calculated_fsc') or PDBxv:target_curve='calculated_fsc'">calculated_fsc</xsl:when>
+                      <xsl:when test="starts-with(PDBxv:title,'author_provided_fsc') or PDBxv:target_curve='author_provided_fsc'">author_provided_fsc</xsl:when>
                       <xsl:otherwise>
                         <xsl:call-template name="error_handler">
                           <xsl:with-param name="terminate">yes</xsl:with-param>
@@ -2085,12 +2092,12 @@ Source for FSC offset curve, <xsl:value-of select="PDBxv:title"/>, is not listed
                   </xsl:variable>
                   <xsl:variable name="type">
                     <xsl:choose>
-                      <xsl:when test="ends-with(PDBxv:title,'0.143')">0.143</xsl:when>
-                      <xsl:when test="ends-with(PDBxv:title,'0.333')">0.333</xsl:when>
-                      <xsl:when test="ends-with(PDBxv:title,'0.5')">0.5</xsl:when>
-                      <xsl:when test="ends-with(PDBxv:title,'half-bit')">halfbit</xsl:when>
-                      <xsl:when test="ends-with(PDBxv:title,'one-bit')">onebit</xsl:when>
-                      <xsl:when test="ends-with(PDBxv:title,'3sigma')">threesigma</xsl:when>
+                      <xsl:when test="ends-with(PDBxv:title,'0.143') or PDBxv:type='0.143'">0.143</xsl:when>
+                      <xsl:when test="ends-with(PDBxv:title,'0.333') or PDBxv:type='0.333'">0.333</xsl:when>
+                      <xsl:when test="ends-with(PDBxv:title,'0.5') or PDBxv:type='0.5'">0.5</xsl:when>
+                      <xsl:when test="ends-with(PDBxv:title,'half-bit') or PDBxv:type='half-bit'">halfbit</xsl:when>
+                      <xsl:when test="ends-with(PDBxv:title,'one-bit') or PDBxv:type='one-bit'">onebit</xsl:when>
+                      <xsl:when test="ends-with(PDBxv:title,'3sigma') or PDBxv:type='3sigma'">threesigma</xsl:when>
                       <xsl:otherwise>
                         <xsl:call-template name="error_handler">
                           <xsl:with-param name="terminate">yes</xsl:with-param>
@@ -2101,7 +2108,16 @@ Criteria for FSC offset curve, <xsl:value-of select="PDBxv:title"/>, is not list
                       </xsl:otherwise>
                     </xsl:choose>
                   </xsl:variable>
-                  <xsl:attribute name="Title"><xsl:value-of select="concat($curve,'_',$type)"/></xsl:attribute>
+                  <xsl:attribute name="Title"><xsl:value-of select="PDBxv:title"/></xsl:attribute>
+                  <xsl:if test="PDBxv:name">
+                    <xsl:attribute name="curve_name"><xsl:value-of select="concat($curve,'_',$type)"/></xsl:attribute>
+                  </xsl:if>
+                  <xsl:if test="PDBxv:type">
+                    <xsl:attribute name="type"><xsl:value-of select="$type"/></xsl:attribute>
+                  </xsl:if>
+                  <xsl:if test="PDBxv:target_name">
+                    <xsl:attribute name="data_curve"><xsl:value-of select="$curve"/></xsl:attribute>
+                  </xsl:if>
                   <xsl:attribute name="xTitle"><xsl:value-of select="PDBxv:spatial_frequency_title"/></xsl:attribute>
                   <xsl:attribute name="yTitle"><xsl:value-of select="PDBxv:correlation_coef_title"/></xsl:attribute>
                   <xsl:attribute name="xUnit"><xsl:value-of select="PDBxv:spatial_frequency_unit"/></xsl:attribute>

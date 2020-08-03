@@ -12844,6 +12844,19 @@ Correlation coefficient
                         </xsd:documentation>
               </xsd:annotation>
             </xsd:element>
+            <xsd:element name="name" minOccurs="0" maxOccurs="1" nillable="true" type="xsd:string">
+              <xsd:annotation>
+                <xsd:documentation xml:lang="en">
+A name for the Fourier-Shell Correlation (FSC) curve to distinguish
+this from others.
+
+See also: https://www.wwpdb.org/validation/2017/EMValidationReportHelp#calculated_fsc
+https://www.wwpdb.org/validation/2017/EMValidationReportHelp#author_provided_fsc
+calculated_fsc
+author_provided_fsc
+                        </xsd:documentation>
+              </xsd:annotation>
+            </xsd:element>
             <xsd:element name="spatial_frequency_title" minOccurs="1" maxOccurs="1" type="xsd:string">
               <xsd:annotation>
                 <xsd:documentation xml:lang="en">
@@ -12878,8 +12891,17 @@ this from others.
 
 See also: https://www.wwpdb.org/validation/2017/EMValidationReportHelp#calculated_fsc
 https://www.wwpdb.org/validation/2017/EMValidationReportHelp#author_provided_fsc
-calculated_fsc
-author_provided_fsc
+                        </xsd:documentation>
+              </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="type" minOccurs="0" maxOccurs="1" nillable="true" type="xsd:string">
+              <xsd:annotation>
+                <xsd:documentation xml:lang="en">
+A short notation of the Fourier-Shell Correlation (FSC) curve that
+descrives how to generate the FSC curve.
+
+See also: https://www.wwpdb.org/validation/2017/EMValidationReportHelp#calculated_fsc
+https://www.wwpdb.org/validation/2017/EMValidationReportHelp#author_provided_fsc
                         </xsd:documentation>
               </xsd:annotation>
             </xsd:element>
@@ -13116,6 +13138,28 @@ Correlation coefficient
                         </xsd:documentation>
               </xsd:annotation>
             </xsd:element>
+            <xsd:element name="name" minOccurs="0" maxOccurs="1" nillable="true" type="xsd:string">
+              <xsd:annotation>
+                <xsd:documentation xml:lang="en">
+A name for the Fourier-Shell Correlation (FSC) cut-off curve to
+distinguish this from others.
+
+See also: https://www.wwpdb.org/validation/2017/EMValidationReportHelp#calculated_fsc
+https://www.wwpdb.org/validation/2017/EMValidationReportHelp#author_provided_fsc
+calculated_fsc_0.143
+calculated_fsc_0.333
+calculated_fsc_0.5
+calculated_fsc_half-bit
+calculated_fsc_one-bit
+calculated_fsc_3sigma
+author_provided_fsc_0.333
+author_provided_fsc_0.5
+author_provided_fsc_half-bit
+author_provided_fsc_one-bit
+author_provided_fsc_3sigma
+                        </xsd:documentation>
+              </xsd:annotation>
+            </xsd:element>
             <xsd:element name="spatial_frequency_title" minOccurs="1" maxOccurs="1" type="xsd:string">
               <xsd:annotation>
                 <xsd:documentation xml:lang="en">
@@ -13142,6 +13186,18 @@ https://www.wwpdb.org/validation/2017/EMValidationReportHelp#author_provided_fsc
                         </xsd:documentation>
               </xsd:annotation>
             </xsd:element>
+            <xsd:element name="target_name" minOccurs="0" maxOccurs="1" nillable="true" type="xsd:string">
+              <xsd:annotation>
+                <xsd:documentation xml:lang="en">
+A name of FSC curve to compare with the cut-off curve.
+
+See also: https://www.wwpdb.org/validation/2017/EMValidationReportHelp#calculated_fsc
+https://www.wwpdb.org/validation/2017/EMValidationReportHelp#author_provided_fsc
+calculated_fsc
+author_provided_fsc
+                        </xsd:documentation>
+              </xsd:annotation>
+            </xsd:element>
             <xsd:element name="title" minOccurs="1" maxOccurs="1" type="xsd:string">
               <xsd:annotation>
                 <xsd:documentation xml:lang="en">
@@ -13150,17 +13206,22 @@ distinguish this from others.
 
 See also: https://www.wwpdb.org/validation/2017/EMValidationReportHelp#calculated_fsc
 https://www.wwpdb.org/validation/2017/EMValidationReportHelp#author_provided_fsc
-calculated_fsc_0.143
-calculated_fsc_0.333
-calculated_fsc_0.5
-calculated_fsc_half-bit
-calculated_fsc_one-bit
-calculated_fsc_3sigma
-author_provided_fsc_0.333
-author_provided_fsc_0.5
-author_provided_fsc_half-bit
-author_provided_fsc_one-bit
-author_provided_fsc_3sigma
+                        </xsd:documentation>
+              </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="type" minOccurs="0" maxOccurs="1" nillable="true" type="xsd:string">
+              <xsd:annotation>
+                <xsd:documentation xml:lang="en">
+A threshold of the Fourier-Shell Correlation (FSC) cut-off curve.
+
+See also: https://www.wwpdb.org/validation/2017/EMValidationReportHelp#calculated_fsc
+https://www.wwpdb.org/validation/2017/EMValidationReportHelp#author_provided_fsc
+0.143
+0.333
+0.5
+half-bit
+one-bit
+3sigma
                         </xsd:documentation>
               </xsd:annotation>
             </xsd:element>

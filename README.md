@@ -145,10 +145,11 @@ File path | Document
 
 ## Release notes
 
-- **Jul 30, 2020**: Release v2.0.11
+- **Aug 3, 2020**: Release v2.0.11
 	- Update wwPDB Validation Information Dictionary to 2.331.
 	- Add resources for PDB/RDF and chem_comp/RDF (stylesheet/pdbml2rdf.xsl, stylesheet/cc2rdf.xsl).
 	- Add RDF link to rdf.glycoinfo.org and GlyTouCan.
+        - Add support for wwPDB validation report (wwpdb_validation_v004.xsd, 2020-02-18)
 
 - **Jul 13, 2020**: Release v2.0.10
 	- Update wwPDB Validation Information Dictionary to 2.330.
