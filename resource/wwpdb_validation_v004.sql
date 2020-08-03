@@ -23,7 +23,7 @@
 --  hash key type: unsigned long 64 bits
 --
 -- Statistics of schema:
---  Generated 44 tables (554 fields), 48 views (144 fields), 0 attr groups, 0 model groups in total
+--  Generated 46 tables (570 fields), 49 views (147 fields), 0 attr groups, 0 model groups in total
 --   Orphan tables that can not be reached from the document root:
 --    schema location: wwpdb_validation_v004.xsd
 --      "NotAvailable"
@@ -32,13 +32,13 @@
 --   Schema locations:
 --    wwpdb_validation_v004.xsd
 --   Table types:
---    1 root, 82 root children, 8 admin roots, 1 admin children
+--    1 root, 83 root children, 10 admin roots, 1 admin children
 --   System keys:
---    92 primary keys (25 unique constraints), 83 foreign keys, 141 nested keys (95 as attribute, 1 as attribute group)
+--    95 primary keys (27 unique constraints), 86 foreign keys, 145 nested keys (97 as attribute, 1 as attribute group)
 --   User keys:
---    92 document keys, 0 serial keys, 0 xpath keys
+--    95 document keys, 0 serial keys, 0 xpath keys
 --   Contents:
---    284 attributes (0 in-place document keys), 0 elements (0 in-place document keys), 6 simple contents (0 in-place document keys, 6 as attribute, 0 as conditional attribute)
+--    290 attributes (0 in-place document keys), 0 elements (0 in-place document keys), 6 simple contents (0 in-place document keys, 6 as attribute, 0 as conditional attribute)
 --   Wild cards:
 --    0 any elements, 0 any attributes
 --   Constraints:
@@ -46,7 +46,7 @@
 --
 
 --
--- COPYRIGHT ***************************************************************** Copyright 2014-2017 EMBL - European Bioinformatics Institute Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. ***************************************************************** This is a XML schema for checking entry-specific validation XML documents from wwPDB. versions published: v1 2014/02/20 http://wwpdb.org/validation/schema/wwpdb_validation_v1.xsd v002 2016/02/25 http://wwpdb.org/validation/schema/wwpdb_validation_v002.xsd v002 2017/08/31 http://wwpdb.org/validation/schema/wwpdb_validation_v002.xsd (with annotations) v003 2019/05/27 http://wwpdb.org/validation/schema/wwpdb_validation_v003.xsd (added local_density, no-ligands-for-buster-report ligands-for-buster-report attribute) v004 2019/10/16 http://wwpdb.org/validation/schema/wwpdb_validation_v004.xsd (added em validation) $Revision$ *****************************************************************
+-- COPYRIGHT ***************************************************************** Copyright 2014-2017 EMBL - European Bioinformatics Institute Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. ***************************************************************** This is a XML schema for checking entry-specific validation XML documents from wwPDB. versions published: v1 2014/02/20 http://wwpdb.org/validation/schema/wwpdb_validation_v1.xsd v002 2016/02/25 http://wwpdb.org/validation/schema/wwpdb_validation_v002.xsd v002 2017/08/31 http://wwpdb.org/validation/schema/wwpdb_validation_v002.xsd (with annotations) v003 2019/05/27 http://wwpdb.org/validation/schema/wwpdb_validation_v003.xsd (added local_density, no-ligands-for-buster-report ligands-for-buster-report attribute) v004 2019/10/16 http://wwpdb.org/validation/schema/wwpdb_validation_v004.xsd (added em validation) v004 2019/11/18 http://wwpdb.org/validation/schema/wwpdb_validation_v004.xsd (Updated FSC representation) v004 2020/02/18 http://wwpdb.org/validation/schema/wwpdb_validation_v004.xsd (Added EMDB-deposition-date and EMDB-resolution) $Revision$ *****************************************************************
 --
 
 DROP TABLE IF EXISTS atom_name CASCADE;
@@ -87,6 +87,8 @@ DROP TABLE IF EXISTS coordinate CASCADE;
 DROP TABLE IF EXISTS graph CASCADE;
 DROP TABLE IF EXISTS intersection CASCADE;
 DROP TABLE IF EXISTS programs CASCADE;
+DROP TABLE IF EXISTS fsc_curve CASCADE;
+DROP TABLE IF EXISTS fsc_indicator_curve CASCADE;
 DROP TABLE IF EXISTS fsc CASCADE;
 DROP TABLE IF EXISTS "EM_validation" CASCADE;
 DROP TABLE IF EXISTS chemical_shift_list CASCADE;
@@ -273,6 +275,8 @@ CREATE TABLE "Entry" (
 	"PDB-resolution_id" BIGINT CHECK ( "PDB-resolution_id" >= 0 ) ,
 -- NESTED KEY AS ATTRIBUTE : "PDB-resolution-low" ( "PDB-resolution-low_id", DELEGATED TO "floatORunavailable_id" )
 	"PDB-resolution-low_id" BIGINT CHECK ( "PDB-resolution-low_id" >= 0 ) ,
+-- NESTED KEY AS ATTRIBUTE : "EMDB-resolution" ( "EMDB-resolution_id", DELEGATED TO "floatORunavailable_id" )
+	"EMDB-resolution_id" BIGINT CHECK ( "EMDB-resolution_id" >= 0 ) ,
 -- NESTED KEY AS ATTRIBUTE : "PDB-R" ( "PDB-R_id", DELEGATED TO "floatORunavailable_id" )
 	"PDB-R_id" BIGINT CHECK ( "PDB-R_id" >= 0 ) ,
 -- NESTED KEY AS ATTRIBUTE : "PDB-Rfree" ( "PDB-Rfree_id", DELEGATED TO "floatORunavailable_id" )
@@ -281,6 +285,8 @@ CREATE TABLE "Entry" (
 	"protein-DNA-RNA-entities" TEXT ,
 -- NESTED KEY AS ATTRIBUTE : "CA_ONLY" ( "CA_ONLY_id", DELEGATED TO "YesString_id" )
 	"CA_ONLY_id" BIGINT CHECK ( "CA_ONLY_id" >= 0 ) ,
+-- ATTRIBUTE
+	"EMDB-deposition-date" TEXT ,
 -- ATTRIBUTE
 	"XMLcreationDate" TEXT ,
 -- ATTRIBUTE
@@ -624,6 +630,44 @@ CREATE TABLE fsc (
 );
 
 --
+-- Used for storing the data fsc curves. The type denotes what files the curve was calculated from e.g. "half_map to half_map fsc"
+-- xmlns: no namespace, schema location: wwpdb_validation_v004.xsd
+-- type: admin root, content: true, list: false, bridge: true, virtual: true
+--
+CREATE TABLE fsc_curve (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- PRIMARY KEY
+	fsc_curve_id BIGINT CHECK ( fsc_curve_id >= 0 ) PRIMARY KEY ,
+-- NESTED KEY : graph ( graph_id )
+	graph_id BIGINT CHECK ( graph_id >= 0 ) ,
+-- ATTRIBUTE
+	curve_name TEXT NOT NULL ,
+-- ATTRIBUTE
+	type TEXT NOT NULL
+);
+
+--
+-- Used for storing the fsc indicator curves. The data_curve refers to the fsc_curve which this indicator curve is made against. The type denotes which threshold is used.
+-- xmlns: no namespace, schema location: wwpdb_validation_v004.xsd
+-- type: admin root, content: true, list: false, bridge: true, virtual: true
+--
+CREATE TABLE fsc_indicator_curve (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- PRIMARY KEY
+	fsc_indicator_curve_id BIGINT CHECK ( fsc_indicator_curve_id >= 0 ) PRIMARY KEY ,
+-- NESTED KEY : graph ( graph_id )
+	graph_id BIGINT CHECK ( graph_id >= 0 ) ,
+-- ATTRIBUTE
+	curve_name TEXT NOT NULL ,
+-- ATTRIBUTE
+	type TEXT NOT NULL ,
+-- ATTRIBUTE
+	data_curve TEXT NOT NULL
+);
+
+--
 -- Contains the data required to plot the map-value distribution graph for the primary map
 -- xmlns: no namespace, schema location: wwpdb_validation_v004.xsd
 -- type: admin root, content: true, list: true, bridge: true, virtual: true
@@ -658,7 +702,11 @@ CREATE TABLE graph (
 -- ATTRIBUTE
 	"yUnit" TEXT ,
 -- ATTRIBUTE
-	"Title" TEXT
+	"Title" TEXT ,
+-- FOREIGN KEY : fsc_curve ( fsc_curve_id )
+	fsc_curve_id BIGINT CHECK ( fsc_curve_id >= 0 ) CONSTRAINT FK_graph_fsc_curve REFERENCES fsc_curve ( fsc_curve_id ) ON DELETE CASCADE ,
+-- FOREIGN KEY : fsc_indicator_curve ( fsc_indicator_curve_id )
+	fsc_indicator_curve_id BIGINT CHECK ( fsc_indicator_curve_id >= 0 ) CONSTRAINT FK_graph_fsc_indicator_curve REFERENCES fsc_indicator_curve ( fsc_indicator_curve_id ) ON DELETE CASCADE
 );
 
 --
@@ -922,6 +970,8 @@ CREATE TABLE "floatORunavailable" (
 	"PDB-resolution_id" BIGINT CHECK ( "PDB-resolution_id" >= 0 ) ,
 -- FOREIGN KEY : "PDB-resolution-low" ( "PDB-resolution-low_id" )
 	"PDB-resolution-low_id" BIGINT CHECK ( "PDB-resolution-low_id" >= 0 ) ,
+-- FOREIGN KEY : "EMDB-resolution" ( "EMDB-resolution_id" )
+	"EMDB-resolution_id" BIGINT CHECK ( "EMDB-resolution_id" >= 0 ) ,
 -- FOREIGN KEY : "PDB-R" ( "PDB-R_id" )
 	"PDB-R_id" BIGINT CHECK ( "PDB-R_id" >= 0 ) ,
 -- FOREIGN KEY : "PDB-Rfree" ( "PDB-Rfree_id" )
@@ -932,7 +982,7 @@ CREATE TABLE "floatORunavailable" (
 	"absolute_RSRZ_percentile_id" BIGINT CHECK ( "absolute_RSRZ_percentile_id" >= 0 ) ,
 -- FOREIGN KEY : "relative_RSRZ_percentile" ( "relative_RSRZ_percentile_id" )
 	"relative_RSRZ_percentile_id" BIGINT CHECK ( "relative_RSRZ_percentile_id" >= 0 ) ,
--- SIMPLE CONTENT AS ATTRIBUTE, ATTRIBUTE NODE: PDB-resolution PDB-resolution-low PDB-R PDB-Rfree DCC_Rfree absolute_RSRZ_percentile relative_RSRZ_percentile
+-- SIMPLE CONTENT AS ATTRIBUTE, ATTRIBUTE NODE: PDB-resolution PDB-resolution-low EMDB-resolution PDB-R PDB-Rfree DCC_Rfree absolute_RSRZ_percentile relative_RSRZ_percentile
 -- xsd:union/@memberTypes="xsd:decimal NotAvailable"
 	content TEXT
 );
@@ -1847,6 +1897,20 @@ SELECT
 -- NESTED KEY AS ATTRIBUTE : "floatORunavailable" ( "floatORunavailable_id" )
 	"PDB-resolution-low_id" AS "floatORunavailable_id"
 FROM "Entry" WHERE "PDB-resolution-low_id" IS NOT NULL;
+
+--
+-- The resolution reported to the EMDB.
+-- xmlns: no namespace, schema location: wwpdb_validation_v004.xsd
+-- type: root child (view), content: false, list: false, bridge: true, virtual: false
+--
+CREATE OR REPLACE VIEW "EMDB-resolution" AS
+SELECT
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id ,
+	"EMDB-resolution_id" ,
+-- NESTED KEY AS ATTRIBUTE : "floatORunavailable" ( "floatORunavailable_id" )
+	"EMDB-resolution_id" AS "floatORunavailable_id"
+FROM "Entry" WHERE "EMDB-resolution_id" IS NOT NULL;
 
 --
 -- The residual R-factor reported in the input mmCIF file. The value will be taken from mmcif item _refine.ls_R_factor_all or if this not found _refine.ls_R_factor_obs or if this is not found _refine.ls_R_factor_R_work. The R-factor is measure of the agreement between the crystallographic model and the experimental X-ray diffraction data. If not available then item will be absent or set to "NotAvailable".

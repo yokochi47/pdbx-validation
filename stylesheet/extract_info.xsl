@@ -612,14 +612,14 @@ Criteria for FSC resolution estimation, <xsl:value-of select="@type"/>, is not l
           <PDBxv:resolution_unit><xsl:value-of select="$resolution_unit"/></PDBxv:resolution_unit>
           <PDBxv:fsc_curve_id>
             <xsl:for-each select="../../fsc_curves/fsc_curve">
-              <xsl:if test="@Title=$fsc_curve">
+              <xsl:if test="@Title=$fsc_curve or @curve_name=$fsc_curve">
                 <xsl:value-of select="position()"/>
               </xsl:if>
             </xsl:for-each>
           </PDBxv:fsc_curve_id>
           <PDBxv:fsc_cutoff_curve_id>
             <xsl:for-each select="../../fsc_indicator_curves/fsc_indicator_curve">
-              <xsl:if test="@Title=$fsc_cutoff_curve">
+              <xsl:if test="@Title=$fsc_cutoff_curve or @curve_name=$fsc_cutoff_curve">
                 <xsl:value-of select="position()"/>
               </xsl:if>
             </xsl:for-each>
@@ -635,6 +635,12 @@ Criteria for FSC resolution estimation, <xsl:value-of select="@type"/>, is not l
         <PDBxv:pdbx_em_fsc_curve>
           <xsl:attribute name="id"><xsl:value-of select="position()"/></xsl:attribute>
           <PDBxv:title><xsl:value-of select="@Title"/></PDBxv:title>
+          <xsl:if test="@curve_name">
+            <PDBxv:name><xsl:value-of select="@curve_name"/></PDBxv:name>
+          </xsl:if>
+          <xsl:if test="@type">
+            <PDBxv:type><xsl:value-of select="@type"/></PDBxv:type>
+          </xsl:if>
           <PDBxv:spatial_frequency_title><xsl:value-of select="@xTitle"/></PDBxv:spatial_frequency_title>
           <PDBxv:correlation_coef_title><xsl:value-of select="@yTitle"/></PDBxv:correlation_coef_title>
           <PDBxv:spatial_frequency_unit><xsl:value-of select="@xUnit"/></PDBxv:spatial_frequency_unit>
@@ -662,8 +668,8 @@ Criteria for FSC resolution estimation, <xsl:value-of select="@type"/>, is not l
           <xsl:attribute name="id"><xsl:value-of select="position()"/></xsl:attribute>
           <xsl:variable name="source">
             <xsl:choose>
-              <xsl:when test="starts-with(@Title,'calculated_fsc')">calculated_fsc</xsl:when>
-              <xsl:when test="starts-with(@Title,'author_provided_fsc')">author_provided_fsc</xsl:when>
+              <xsl:when test="starts-with(@Title,'calculated_fsc') or @data_curve='calculated_fsc'">calculated_fsc</xsl:when>
+              <xsl:when test="starts-with(@Title,'author_provided_fsc') or @data_curve='author_provided_fsc'">author_provided_fsc</xsl:when>
               <xsl:otherwise>
                 <xsl:call-template name="error_handler">
                   <xsl:with-param name="terminate">yes</xsl:with-param>
@@ -676,12 +682,12 @@ Source for FSC curve, <xsl:value-of select="@Title"/>, is not listed in XSLT cod
           </xsl:variable>
           <xsl:variable name="criterion">
             <xsl:choose>
-              <xsl:when test="ends-with(@Title,'0.143')">0.143</xsl:when>
-              <xsl:when test="ends-with(@Title,'0.333')">0.333</xsl:when>
-              <xsl:when test="ends-with(@Title,'0.5')">0.5</xsl:when>
-              <xsl:when test="ends-with(@Title,'halfbit')">half-bit</xsl:when>
-              <xsl:when test="ends-with(@Title,'onebit')">one-bit</xsl:when>
-              <xsl:when test="ends-with(@Title,'threesigma')">3sigma</xsl:when>
+              <xsl:when test="ends-with(@Title,'0.143') or @type='0.143'">0.143</xsl:when>
+              <xsl:when test="ends-with(@Title,'0.333') or @type='0.333'">0.333</xsl:when>
+              <xsl:when test="ends-with(@Title,'0.5') or @type='0.5'">0.5</xsl:when>
+              <xsl:when test="ends-with(@Title,'halfbit') or @type='halfbit'">half-bit</xsl:when>
+              <xsl:when test="ends-with(@Title,'onebit') or @type='onebit'">one-bit</xsl:when>
+              <xsl:when test="ends-with(@Title,'threesigma') or @type='threesigma'">3sigma</xsl:when>
               <xsl:otherwise>
                 <xsl:call-template name="error_handler">
                   <xsl:with-param name="terminate">yes</xsl:with-param>
@@ -692,7 +698,17 @@ Criteria for FSC curve, <xsl:value-of select="@Title"/>, is not listed in XSLT c
               </xsl:otherwise>
             </xsl:choose>
           </xsl:variable>
-          <PDBxv:title><xsl:value-of select="concat($source,'_',$criterion)"/></PDBxv:title>
+          <xsl:choose>
+            <xsl:when test="@data_curve">
+              <PDBxv:title><xsl:value-of select="@Title"/></PDBxv:title>
+              <PDBxv:name><xsl:value-of select="@curve_name"/></PDBxv:name>
+              <PDBxv:type><xsl:value-of select="@type"/></PDBxv:type>
+              <PDBxv:target_name><xsl:value-of select="@data_curve"/></PDBxv:target_name>
+            </xsl:when>
+            <xsl:otherwise>
+              <PDBxv:title><xsl:value-of select="concat($source,'_',$criterion)"/></PDBxv:title>
+            </xsl:otherwise>
+          </xsl:choose>
           <PDBxv:spatial_frequency_title><xsl:value-of select="@xTitle"/></PDBxv:spatial_frequency_title>
           <PDBxv:correlation_coef_title><xsl:value-of select="@yTitle"/></PDBxv:correlation_coef_title>
           <PDBxv:spatial_frequency_unit><xsl:value-of select="@xUnit"/></PDBxv:spatial_frequency_unit>
@@ -704,12 +720,12 @@ Criteria for FSC curve, <xsl:value-of select="@Title"/>, is not listed in XSLT c
         <xsl:variable name="plot_id"><xsl:value-of select="position()"/></xsl:variable>
         <xsl:variable name="criterion">
           <xsl:choose>
-            <xsl:when test="ends-with(@Title,'0.143')">0.143</xsl:when>
-            <xsl:when test="ends-with(@Title,'0.333')">0.333</xsl:when>
-            <xsl:when test="ends-with(@Title,'0.5')">0.5</xsl:when>
-            <xsl:when test="ends-with(@Title,'halfbit')">half-bit</xsl:when>
-            <xsl:when test="ends-with(@Title,'onebit')">one-bit</xsl:when>
-            <xsl:when test="ends-with(@Title,'threesigma')">3sigma</xsl:when>
+            <xsl:when test="ends-with(@Title,'0.143') or @type='0.143'">0.143</xsl:when>
+            <xsl:when test="ends-with(@Title,'0.333') or @type='0.333'">0.333</xsl:when>
+            <xsl:when test="ends-with(@Title,'0.5') or @type='0.5'">0.5</xsl:when>
+            <xsl:when test="ends-with(@Title,'halfbit') or @type='halfbit'">half-bit</xsl:when>
+            <xsl:when test="ends-with(@Title,'onebit') or @type='onebit'">one-bit</xsl:when>
+            <xsl:when test="ends-with(@Title,'threesigma') or @type='threesigma'">3sigma</xsl:when>
             <xsl:otherwise>
               <xsl:call-template name="error_handler">
                 <xsl:with-param name="terminate">yes</xsl:with-param>

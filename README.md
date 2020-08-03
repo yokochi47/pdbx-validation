@@ -74,7 +74,7 @@ File path | Document
 		- Reverted from PDBML-validation: [5h0s_validation.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/validation-info-rev-from-full/5h0s_validation.xml)
 		- Reverted from PDBML-validation-alt and PDBML-noatom: [5h0s_validation.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/validation-info-rev-from-alt/5h0s_validation.xml)
 
-- PDB ID: [6RJH](https://pdbj.org/mine/summary/6rjh), Exptl. method: ELECTRON MICROSCOPY with EM map/model validation (v004)
+- PDB ID: [6RJH](https://pdbj.org/mine/summary/6rjh), Exptl. method: ELECTRON MICROSCOPY with EM map/model validation (v004, 2019-11-18)
 	- PDBx/mmCIF format
 		- mmCIF-validation: [6rjh-validation-full.cif](https://github.com/yokochi47/pdbx-validation/blob/master/test/mmcif-validation/6rjh-validation-full.cif)
 		- mmCIF-validation-alt: [6rjh-validation-alt.cif](https://github.com/yokochi47/pdbx-validation/blob/master/test/mmcif-validation-alt/6rjh-validation-alt.cif)
@@ -88,6 +88,21 @@ File path | Document
 		- Original source: [6rjh_validation.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/validation-info/6rjh_validation.xml)
 		- Reverted from PDBML-validation: [6rjh_validation.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/validation-info-rev-from-full/6rjh_validation.xml)
 		- Reverted from PDBML-validation-alt and PDBML-noatom: [6rjh_validation.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/validation-info-rev-from-alt/6rjh_validation.xml)
+
+- PDB ID: [6XEY](https://pdbj.org/mine/summary/6exy), Exptl. method: ELECTRON MICROSCOPY with EM map/model validation (v004, 2020-02-18)
+	- PDBx/mmCIF format
+		- mmCIF-validation: [6exy-validation-full.cif](https://github.com/yokochi47/pdbx-validation/blob/master/test/mmcif-validation/6exy-validation-full.cif)
+		- mmCIF-validation-alt: [6exy-validation-alt.cif](https://github.com/yokochi47/pdbx-validation/blob/master/test/mmcif-validation-alt/6exy-validation-alt.cif)
+	- PDBML format
+		- PDBML-validation: [6exy-validation-full.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/XML-validation/6exy-validation-full.xml)
+		- PDBML-validation-alt: [6exy-validation-alt.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/validation-info-alt/6exy-validation-alt.xml)
+	- wwPDB/RDF format
+		- wwPDB/RDF-validation: [6exy-validation-full.rdf](https://github.com/yokochi47/pdbx-validation/blob/master/test/RDF-validation/6exy-validation-full.rdf)
+		- wwPDB/RDF-validation-alt: [6exy-validation-alt.rdf](https://github.com/yokochi47/pdbx-validation/blob/master/test/RDF-validation-alt/6exy-validation-alt.rdf)
+	- wwPDB validation report (XML format)
+		- Original source: [6exy_validation.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/validation-info/6exy_validation.xml)
+		- Reverted from PDBML-validation: [6exy_validation.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/validation-info-rev-from-full/6exy_validation.xml)
+		- Reverted from PDBML-validation-alt and PDBML-noatom: [6exy_validation.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/validation-info-rev-from-alt/6exy_validation.xml)
 
 ## Bulk download service of alternative wwPDB validation reports
 
@@ -145,10 +160,11 @@ File path | Document
 
 ## Release notes
 
-- **Jul 30, 2020**: Release v2.0.11
+- **Aug 3, 2020**: Release v2.0.11
 	- Update wwPDB Validation Information Dictionary to 2.331.
 	- Add resources for PDB/RDF and chem_comp/RDF (stylesheet/pdbml2rdf.xsl, stylesheet/cc2rdf.xsl).
 	- Add RDF link to rdf.glycoinfo.org and GlyTouCan.
+        - Add support for wwPDB validation report (wwpdb_validation_v004.xsd, 2020-02-18)
 
 - **Jul 13, 2020**: Release v2.0.10
 	- Update wwPDB Validation Information Dictionary to 2.330.

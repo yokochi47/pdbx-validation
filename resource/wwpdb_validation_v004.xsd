@@ -28,6 +28,8 @@ v002    2016/02/25  http://wwpdb.org/validation/schema/wwpdb_validation_v002.xsd
 v002    2017/08/31  http://wwpdb.org/validation/schema/wwpdb_validation_v002.xsd (with annotations)
 v003    2019/05/27  http://wwpdb.org/validation/schema/wwpdb_validation_v003.xsd (added local_density, no-ligands-for-buster-report ligands-for-buster-report attribute)
 v004    2019/10/16  http://wwpdb.org/validation/schema/wwpdb_validation_v004.xsd (added em validation)
+v004    2019/11/18  http://wwpdb.org/validation/schema/wwpdb_validation_v004.xsd (Updated FSC representation)
+v004    2020/02/18  http://wwpdb.org/validation/schema/wwpdb_validation_v004.xsd (Added EMDB-deposition-date and EMDB-resolution)
 
 $Revision$
 *****************************************************************
@@ -71,10 +73,12 @@ $Revision$
             <xsd:attribute ref="PDB-revision-date" use="optional"/>
             <xsd:attribute ref="PDB-resolution" use="optional"/>
             <xsd:attribute ref="PDB-resolution-low" use="optional"/>
+            <xsd:attribute ref="EMDB-resolution" use="optional"/>
             <xsd:attribute ref="PDB-R" use="optional"/>
             <xsd:attribute ref="PDB-Rfree" use="optional"/>
             <xsd:attribute ref="protein-DNA-RNA-entities" use="optional"/>
             <xsd:attribute ref="CA_ONLY" use="optional"/>
+            <xsd:attribute ref="EMDB-deposition-date" use="optional"/>
 
             <!-- validation pipeline related attributes-->
             <xsd:attribute ref="XMLcreationDate" use="optional"/>
@@ -417,8 +421,9 @@ $Revision$
 
     <xsd:complexType name="graph">
         <xsd:annotation><xsd:documentation xml:lang="en">
-            Used for storing graph data. Titles must be given, scales will be assumed to be linear if not provided.
-            Units will be assumed to be arbitrary if empty or not provided
+            Used for storing graph data. Titles must be given if more than one curve of this type is present.
+            Scales will be assumed to be linear if not provided.
+            Units will be assumed to be arbitrary if empty or not provided.
         </xsd:documentation> </xsd:annotation>
         <xsd:sequence>
             <xsd:element ref="coordinate" minOccurs="1" maxOccurs="unbounded"/>
@@ -432,6 +437,34 @@ $Revision$
         <xsd:attribute name="yUnit" type="xsd:string" use="optional"/>
 
         <xsd:attribute name="Title" type="xsd:string" use="optional"/>
+    </xsd:complexType>
+
+    <xsd:complexType name="fsc_curve">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            Used for storing the data fsc curves.
+            The type denotes what files the curve was calculated from e.g. "half_map to half_map fsc"
+        </xsd:documentation></xsd:annotation>
+        <xsd:complexContent>
+            <xsd:extension base="graph">
+                <xsd:attribute name="curve_name" type="xsd:string" use="required"/>
+                <xsd:attribute name="type" type="xsd:string" use="required"/>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+
+    <xsd:complexType name="fsc_indicator_curve">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            Used for storing the fsc indicator curves.
+            The data_curve refers to the fsc_curve which this indicator curve is made against.
+            The type denotes which threshold is used.
+        </xsd:documentation> </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:extension base="graph">
+                <xsd:attribute name="curve_name" type="xsd:string" use="required"/>
+                <xsd:attribute name="type" type="xsd:string" use="required"/>
+                <xsd:attribute name="data_curve" type="xsd:string" use="required"/>
+            </xsd:extension>
+        </xsd:complexContent>
     </xsd:complexType>
 
     <xsd:element name="map_value_distribution" type="graph">
@@ -526,7 +559,7 @@ $Revision$
         </xsd:documentation></xsd:annotation>
         <xsd:complexType>
             <xsd:sequence>
-                <xsd:element name="fsc_curve" type="graph" minOccurs="0"/>
+                <xsd:element name="fsc_curve" type="fsc_curve" minOccurs="0"/>
             </xsd:sequence>
         </xsd:complexType>
     </xsd:element>
@@ -537,7 +570,7 @@ $Revision$
         </xsd:documentation> </xsd:annotation>
         <xsd:complexType>
             <xsd:sequence>
-                <xsd:element name="fsc_indicator_curve" type="graph" minOccurs="0"/>
+                <xsd:element name="fsc_indicator_curve" type="fsc_indicator_curve" minOccurs="0"/>
             </xsd:sequence>
         </xsd:complexType>
     </xsd:element>
@@ -1144,10 +1177,18 @@ $Revision$
         <xsd:annotation><xsd:documentation xml:lang="en">
             Date in yyyy-mm-dd format when structure was deposited to the PDB.
             Obtained from mmCIF table _database_PDB_rev item _database_PDB_rev.date_original 
-            Reports produced by the validation server or during the initial depositon process should not have this item.
+            Reports produced by the validation server or during the initial deposition process should not have this item.
             If there is a difficulty parsing the item then "unknown" will be given.
         </xsd:documentation></xsd:annotation>
-    </xsd:attribute> 
+    </xsd:attribute>
+
+    <xsd:attribute name="EMDB-deposition-date" type="xsd:string">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            Date in yyyy-mm-dd format when map was deposited to the EMDB.
+            Reports produced by the validation server or during the initial deposition process should not have this item.
+            If there is a difficulty parsing the item then "unknown" will be given.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
  
     <xsd:attribute name="PDB-revision-number" type="xsd:decimal">
         <xsd:annotation><xsd:documentation xml:lang="en">
@@ -1182,7 +1223,13 @@ $Revision$
             normally taken from mmcif item _refine.ls_d_res_low or if this is not found _reflns.d_resolution_low.
         </xsd:documentation></xsd:annotation>
     </xsd:attribute>
-    
+
+    <xsd:attribute name="EMDB-resolution" type="floatORunavailable">
+        <xsd:annotation><xsd:documentation xml:lang="en">
+            The resolution reported to the EMDB.
+        </xsd:documentation></xsd:annotation>
+    </xsd:attribute>
+
     <xsd:attribute name="PDB-R" type="floatORunavailable">
         <xsd:annotation><xsd:documentation xml:lang="en">
             The residual R-factor reported in the input mmCIF file. 

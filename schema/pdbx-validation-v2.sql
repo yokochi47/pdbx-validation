@@ -21,7 +21,7 @@
 --  map xsd date type to: sql date type
 --
 -- Statistics of schema:
---  Generated 260 tables (3308 fields), 0 views (0 fields), 0 attr groups, 0 model groups in total
+--  Generated 260 tables (3313 fields), 0 views (0 fields), 0 attr groups, 0 model groups in total
 --   Unnecessary tables by inlining simple content as a primitive data type:
 --    schema location: pdbx-validation-v2.xsd
 --      "S23_esd", chi5, residual_tilt, chi4, "F_squared_calc", "B_iso", chi1, chi3, chi2, pdbx_dist_value, "Luzzati_sigma_a_obs", min_mean_cross_sectional_radii_gyration_esd, pdbx_phase_calc_part_solvent, average_distance_constraint_violation, "B_iso_max", maximum_distance_constraint_violation, "L22_esd", distance_rms_dev, "L33", omega, "T22_esd", "F_calc", nominal_defocus_min, rotation_per_n_subunits, distance_rms_dev_medoid, bond_deviation, "aniso_B22", mean_guiner_radius, "Cartn_z", phase_calc, value, rmsd, "pdbx_F_calc_with_solvent", current, temp, "S13_esd", improper_torsion_angle_rms_dev, beta, "aniso_B33", "Luzzati_coordinate_error_free", angle_phi, energyfilter_lower, angle_kappa, "I", "A_calc", prot_cis, dist, tau4, detector_distance, "S32", "S32_esd", tau1, "L13", tau0, tau3, tau2, "Cartn_x_esd", "A_calc_au", pdbx_solvent_vdw_probe_radii, "T13_esd", atom_deviation, angle_value, diff_density_max_esd, "B_calc", taum, recording_temperature_maximum, covalent_bond_rms_dev, angle_omega, "S21", value_esd, "S33", "F_meas_sigma_au", tilt_angle_min, "L12_esd", calibrated_defocus_min, "L22", "T12_esd", gamma, peptide_planarity_rms_dev_error, "L23", scan_time_backgd, bond_angle_rms_dev, distance_rms_dev_error, pdbx_solvent_shrinkage_radii, clash_magnitude, upper_limit, concentration_range, power, "B_iso_mean", "L11", "S33_esd", "L12", "S31", delta, chamber_temperature, "F_meas", pdbx_collection_time_total, temperature, ambient_pressure_esd, dihedral_angle_target_value, average_torsion_angle_constraint_violation, origin_x, "B_iso_Wilson_estimate", "T23_esd", nu2, nu1, origin_y, nu0, origin_z, nu4, nu3, lower_limit, energyfilter_upper, "S12", "T33", dihedral_angle_value, "A_meas_au", neighbor_macromolecule_distance, "F_meas_au", bond_angle_rms_dev_error, "B_meas", phi, "L11_esd", "P", peptide_planarity_rms_dev, resolution, "Luzzati_sigma_a_free", "B_iso_min", "T11_esd", "T22", "F_meas_sigma", "S13", dihedral_angles_rms_dev_error, "pdbx_res_netI_over_sigmaI_2", "Luzzati_d_res_low_obs", diff_density_rms, maximum_lower_distance_constraint_violation, zeta, "B_calc_au", "S12_esd", "pdbx_F_calc_part_solvent", maximum_upper_distance_constraint_violation, "L13_esd", maximum_torsion_angle_constraint_violation, epsilon, pdbx_solvent_ion_probe_radii, "S22", angle_deviation, max_mean_cross_sectional_radii_gyration, pdbx_phase_calc_with_solvent, "S22_esd", diff_density_max, ambient_temp_esd, rise_per_n_subunits, alpha, "L23_esd", "S23", "S11", "F_squared_sigma", angle_target_value, min_mean_cross_sectional_radii_gyration, neighbor_ligand_distance, diff_density_min, "Cartn_x", "S31_esd", "aniso_B12", psi, "T13", "pdbx_res_netI_over_av_sigmaI_2", angle_psi, improper_torsion_angle, "F_squared_meas", "Cartn_y", "aniso_B11", "Cartn_y_esd", "aniso_B23", dihedral_angles_rms_dev, "L33_esd", "Luzzati_d_res_low_free", "T33_esd", angle_theta, scan_rate, "sigmaI", "Luzzati_coordinate_error_obs", "A_meas", voltage, angle_chi, "B_meas_au", recording_temperature_minimum, mean_guiner_radius_esd, "B_iso_esd", "Cartn_z_esd", diff_density_min_esd, "T11", phase_meas, "T23", nominal_defocus_max, "S21_esd", "F_calc_au", diff_density_rms_esd, max_mean_cross_sectional_radii_gyration_esd, tilt_angle_max, covalent_bond_rms_dev_error, "S11_esd", "aniso_B13", "T12", sampling_size, improper_torsion_angle_rms_dev_error
@@ -36,7 +36,7 @@
 --   User keys:
 --    214 document keys, 0 serial keys, 0 xpath keys
 --   Contents:
---    453 attributes (41 in-place document keys), 2641 elements (5 in-place document keys), 0 simple contents (0 in-place document keys, 0 as attribute, 0 as conditional attribute)
+--    453 attributes (41 in-place document keys), 2646 elements (5 in-place document keys), 0 simple contents (0 in-place document keys, 0 as attribute, 0 as conditional attribute)
 --   Wild cards:
 --    0 any elements, 0 any attributes
 --   Constraints:
@@ -691,9 +691,11 @@ CREATE TABLE pdbx_em_fsc_curve (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	entry_id TEXT ,
 	correlation_coef_title TEXT ,
+	name TEXT ,
 	spatial_frequency_title TEXT ,
 	spatial_frequency_unit TEXT ,
 	title TEXT ,
+	type TEXT ,
 -- ATTRIBUTE
 	id INTEGER NOT NULL
 );
@@ -708,9 +710,12 @@ CREATE TABLE pdbx_em_fsc_cutoff_curve (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	entry_id TEXT ,
 	correlation_coef_title TEXT ,
+	name TEXT ,
 	spatial_frequency_title TEXT ,
 	spatial_frequency_unit TEXT ,
+	target_name TEXT ,
 	title TEXT ,
+	type TEXT ,
 -- ATTRIBUTE
 	id INTEGER NOT NULL
 );

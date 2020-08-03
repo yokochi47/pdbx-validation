@@ -1,7 +1,7 @@
 ###########################################################################
 #
 # File:  mmcif_pdbx_validation.dic
-# Data:  Wed Jul 22 18:26:33 JST 2020
+# Data:  Mon Aug  3 19:42:53 JST 2020
 #
 # Created from files noted:
 #        mmcif_pdbx_v50.dic   - PDB Exchange Data Dictionary (V5.331)
@@ -670,7 +670,7 @@ data_mmcif_pdbx_validation.dic
 >     + Remove 'ELETTRA BEAMLINE XRD2' to _diffrn_source.type and _diffrn_source.pdbx_synchrotron_beamline.
 >     'ELETTRA BEAMLINE 11.2C' is the same one. # merged
 >     + Add 'S-Glycosylation' to enumeration for _struct_conn.pdbx_role # merged
->     + Add 'eTasED' to em_software.name enumeration # merged # merged
+>     + Add 'eTasED' to em_software.name enumeration # merged
 >     + Restrict type of em_single_particle_entity.id to integer # merged -> fixed in 2.330
 >     + Add 'Remediation' to pdbx_audit_revision_details.type enumeration # merged
 ;
@@ -693,6 +693,17 @@ data_mmcif_pdbx_validation.dic
 >     + Add "The Mark Foundation", "Canada Research Chairs" and "The Swedish Foundation for Strategic Research"
 >       to _pdbx_audit_support.funding_organization" # not mapped
 >     + Add 'PELCO Ultrathin Carbon with Lacey Carbon' to _em_sample_support.grid_type enumeration # not mapped
+;
+  2.331-2   2020-08-03
+;
+      + Support EM validation in wwPDB validation report XML Schema v004 (2020-02-18)
+        + Re-link _em_3d_reconstruction.resolution with /wwPDB-validation-information/Entry/@EMDB-resolution,
+          which was formerly linked to @PDB-resolution.
+        - Unmap /wwPDB-validation-information/Entry/@EMDB-deposition-date due to WWPDB_LOCAL.
+        - Relax enumeration for _pdbx_em_fsc_curve.title and _pdbx_em_fsc_cutoff_curve.title.
+        + Add _pdbx_em_fsc_curve.name and _pdbx_em_fsc_cutoff_curve.name.
+        + Add _pdbx_em_fsc_curve.type and _pdbx_em_fsc_cutoff_curve.type.
+        + Add _pdbx_em_fsc_cutoff_curve.target_name.
 ;
 
 #
@@ -50858,7 +50869,7 @@ save__em_3d_reconstruction.resolution
        '8.9'
        '10.0'
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/Entry/@PDB-resolution'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/Entry/@EMDB-resolution'
     _pdbx_item_aliases.schema     wwpdb_validation.xsd
     _pdbx_item_aliases.version    004
 save_
@@ -64093,11 +64104,50 @@ save__pdbx_em_fsc_curve.title
     _item.category_id             pdbx_em_fsc_curve
     _item.mandatory_code          yes
     _item_type.code               text
+#   loop_
+#   _item_examples.case          'calculated_fsc'
+#                                'author_provided_fsc'
+#
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/EM_validation/fsc/fsc_curves/fsc_curve/@Title'
+    _pdbx_item_aliases.schema     wwpdb_validation.xsd
+    _pdbx_item_aliases.version    004
+save_
+
+save__pdbx_em_fsc_curve.name
+    _item_description.description
+;              A name for the Fourier-Shell Correlation (FSC) curve to distinguish
+               this from others.
+
+               See also: https://www.wwpdb.org/validation/2017/EMValidationReportHelp#calculated_fsc
+                         https://www.wwpdb.org/validation/2017/EMValidationReportHelp#author_provided_fsc
+;
+    _item.name                  '_pdbx_em_fsc_curve.name'
+    _item.category_id             pdbx_em_fsc_curve
+    _item.mandatory_code          no
+    _item_type.code               text
     loop_
     _item_examples.case          'calculated_fsc'
                                  'author_provided_fsc'
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/EM_validation/fsc/fsc_curves/fsc_curve/@Title'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/EM_validation/fsc/fsc_curves/fsc_curve/@curve_name'
+    _pdbx_item_aliases.schema     wwpdb_validation.xsd
+    _pdbx_item_aliases.version    004
+save_
+
+save__pdbx_em_fsc_curve.type
+    _item_description.description
+;              A short notation of the Fourier-Shell Correlation (FSC) curve that
+               descrives how to generate the FSC curve.
+
+               See also: https://www.wwpdb.org/validation/2017/EMValidationReportHelp#calculated_fsc
+                         https://www.wwpdb.org/validation/2017/EMValidationReportHelp#author_provided_fsc
+;
+    _item.name                  '_pdbx_em_fsc_curve.type'
+    _item.category_id             pdbx_em_fsc_curve
+    _item.mandatory_code          no
+    _item_type.code               text
+#
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/EM_validation/fsc/fsc_curves/fsc_curve/@type'
     _pdbx_item_aliases.schema     wwpdb_validation.xsd
     _pdbx_item_aliases.version    004
 save_
@@ -64377,6 +64427,37 @@ save__pdbx_em_fsc_cutoff_curve.title
     _item.category_id             pdbx_em_fsc_cutoff_curve
     _item.mandatory_code          yes
     _item_type.code               text
+#   loop_
+#   _item_examples.case          'calculated_fsc_0.143'
+#                                'calculated_fsc_0.333'
+#                                'calculated_fsc_0.5'
+#                                'calculated_fsc_half-bit'
+#                                'calculated_fsc_one-bit'
+#                                'calculated_fsc_3sigma'
+#                                'calculated_fsc_0.143'
+#                                'author_provided_fsc_0.333'
+#                                'author_provided_fsc_0.5'
+#                                'author_provided_fsc_half-bit'
+#                                'author_provided_fsc_one-bit'
+#                                'author_provided_fsc_3sigma'
+#
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/EM_validation/fsc/fsc_indicator_curves/fsc_indicator_curve/@Title'
+    _pdbx_item_aliases.schema     wwpdb_validation.xsd
+    _pdbx_item_aliases.version    004
+save_
+
+save__pdbx_em_fsc_cutoff_curve.name
+    _item_description.description
+;              A name for the Fourier-Shell Correlation (FSC) cut-off curve to
+               distinguish this from others.
+
+               See also: https://www.wwpdb.org/validation/2017/EMValidationReportHelp#calculated_fsc
+                         https://www.wwpdb.org/validation/2017/EMValidationReportHelp#author_provided_fsc
+;
+    _item.name                  '_pdbx_em_fsc_cutoff_curve.name'
+    _item.category_id             pdbx_em_fsc_cutoff_curve
+    _item.mandatory_code          no
+    _item_type.code               text
     loop_
     _item_examples.case          'calculated_fsc_0.143'
                                  'calculated_fsc_0.333'
@@ -64391,7 +64472,51 @@ save__pdbx_em_fsc_cutoff_curve.title
                                  'author_provided_fsc_one-bit'
                                  'author_provided_fsc_3sigma'
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/EM_validation/fsc/fsc_indicator_curves/fsc_indicator_curve/@Title'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/EM_validation/fsc/fsc_indicator_curves/fsc_indicator_curve/@curve_name'
+    _pdbx_item_aliases.schema     wwpdb_validation.xsd
+    _pdbx_item_aliases.version    004
+save_
+
+save__pdbx_em_fsc_cutoff_curve.type
+    _item_description.description
+;              A threshold of the Fourier-Shell Correlation (FSC) cut-off curve.
+
+               See also: https://www.wwpdb.org/validation/2017/EMValidationReportHelp#calculated_fsc
+                         https://www.wwpdb.org/validation/2017/EMValidationReportHelp#author_provided_fsc
+;
+    _item.name                  '_pdbx_em_fsc_cutoff_curve.type'
+    _item.category_id             pdbx_em_fsc_cutoff_curve
+    _item.mandatory_code          no
+    _item_type.code               text
+    loop_
+    _item_examples.case          '0.143'
+                                 '0.333'
+                                 '0.5'
+                                 'half-bit'
+                                 'one-bit'
+                                 '3sigma'
+#
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/EM_validation/fsc/fsc_indicator_curves/fsc_indicator_curve/@type'
+    _pdbx_item_aliases.schema     wwpdb_validation.xsd
+    _pdbx_item_aliases.version    004
+save_
+
+save__pdbx_em_fsc_cutoff_curve.target_name
+    _item_description.description
+;              A name of FSC curve to compare with the cut-off curve.
+
+               See also: https://www.wwpdb.org/validation/2017/EMValidationReportHelp#calculated_fsc
+                         https://www.wwpdb.org/validation/2017/EMValidationReportHelp#author_provided_fsc
+;
+    _item.name                  '_pdbx_em_fsc_cutoff_curve.target_name'
+    _item.category_id             pdbx_em_fsc_cutoff_curve
+    _item.mandatory_code          no
+    _item_type.code               text
+    loop_
+    _item_examples.case          'calculated_fsc'
+                                 'author_provided_fsc'
+#
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/EM_validation/fsc/fsc_indicator_curves/fsc_indicator_curve/@data_curve'
     _pdbx_item_aliases.schema     wwpdb_validation.xsd
     _pdbx_item_aliases.version    004
 save_
