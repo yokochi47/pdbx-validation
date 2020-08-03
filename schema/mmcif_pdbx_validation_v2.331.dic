@@ -670,7 +670,7 @@ data_mmcif_pdbx_validation.dic
 >     + Remove 'ELETTRA BEAMLINE XRD2' to _diffrn_source.type and _diffrn_source.pdbx_synchrotron_beamline.
 >     'ELETTRA BEAMLINE 11.2C' is the same one. # merged
 >     + Add 'S-Glycosylation' to enumeration for _struct_conn.pdbx_role # merged
->     + Add 'eTasED' to em_software.name enumeration # merged # merged
+>     + Add 'eTasED' to em_software.name enumeration # merged
 >     + Restrict type of em_single_particle_entity.id to integer # merged -> fixed in 2.330
 >     + Add 'Remediation' to pdbx_audit_revision_details.type enumeration # merged
 ;
