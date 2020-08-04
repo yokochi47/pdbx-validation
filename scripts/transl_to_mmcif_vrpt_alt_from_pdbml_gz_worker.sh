@@ -63,8 +63,6 @@ do
 
   if [ ! -e $WORK_DIR/$mmcif_vrpt_file ] && [ ! -e $mmcif_vrpt_gz_file ] ; then
 
-   echo $pdb_id
-
    ( cd $WORK_DIR ; gunzip -c ../$pdbml_vrpt_gz_file > $pdbml_vrpt_file ; xml2mmcif -xml $pdbml_vrpt_file -dict $pdbx_validation_dic -df $pdbx_validation_odb > /dev/null && ( mv -f $pdbml_vrpt_file.cif $mmcif_vrpt_file && rm $pdbml_vrpt_file && sed -i -e "s/\._\([0-9]\)\(\S*\) /\.\1\2  /" $mmcif_vrpt_file ) || exit 1 )
 
    if [ $proc_id_mod = 0 ] ; then

@@ -44,7 +44,7 @@ if [ -d $RDF_DIR ] ; then
 
   echo RDF syntax validation: *.rdf documents in $RDF_DIR...
 
-  rdf_file_list=check_${RDF_DIR,,}_rdf_file_list
+  rdf_file_list=`echo check_${RDF_DIR,,}_rdf_file_list | tr '-' _`
 
   find $RDF_DIR -name "*.err" -exec rm {} +
 
