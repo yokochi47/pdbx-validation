@@ -64,8 +64,6 @@ do
 
   if ( [ ! -e $rdf_vrpt_file ] && [ ! -e $rdf_vrpt_gz_file ] ) || [ -e $err_file ] ; then
 
-   echo $pdb_id
-
    #gunzip -c $pdbml_vrpt_gz_file > $pdbml_vrpt_file && java -jar $SAXON -s:$pdbml_vrpt_file -xsl:$PDBMLV2RDF_XSL -o:$rdf_vrpt_file wurcs2glytoucan=$GLYTOUCAN_XML 2> $err_file && ( rm -f $pdbml_vrpt_file $err_file ) || ( cat $err_file && exit 1 )
    gunzip -c $pdbml_vrpt_gz_file > $pdbml_vrpt_file && xsltproc -o $rdf_vrpt_file --param wurcs2glytoucan $GLYTOUCAN_XML $PDBMLV2RDF_XSL $pdbml_vrpt_file 2> $err_file && ( rm -f $pdbml_vrpt_file $err_file ) || ( cat $err_file && exit 1 
 
