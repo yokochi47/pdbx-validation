@@ -27,7 +27,7 @@ if [ ! -e $XSD2PGSCHEMA ] ; then
  ./scripts/update_extlibs.sh
 fi
 
-if [ ! -z $XML_DIR ] ; then
+if [ -d $XML_DIR ] ; then
 
  echo XML Schema validation: *.xml documents in $XML_DIR...
 
