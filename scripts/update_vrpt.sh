@@ -101,7 +101,7 @@ fi
 
 if [ $weekday -ge 1 ] && [ $weekday -le 4 ] ; then
 
- MD5_DIR=chk_sum_vrpt
+ MD5_DIR=chk_sum_xml_vrpt
  FILE_EXT_DIGEST=_validation
 
  chk_sum_log=vrpt_log

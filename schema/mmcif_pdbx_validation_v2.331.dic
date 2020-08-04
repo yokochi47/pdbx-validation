@@ -699,7 +699,7 @@ data_mmcif_pdbx_validation.dic
       + Support EM validation in wwPDB validation report XML Schema v004 (2020-02-18)
         + Re-link _em_3d_reconstruction.resolution with /wwPDB-validation-information/Entry/@EMDB-resolution,
           which was formerly linked to @PDB-resolution.
-        - Unmap /wwPDB-validation-information/Entry/@EMDB-deposition-date due to WWPDB_LOCAL.
+        - Unmap /wwPDB-validation-information/Entry/@EMDB-deposition-date due to WWPDB_LOCAL flag for _em_admin.deposition_date.
         - Relax enumeration for _pdbx_em_fsc_curve.title and _pdbx_em_fsc_cutoff_curve.title.
         + Add _pdbx_em_fsc_curve.name and _pdbx_em_fsc_cutoff_curve.name.
         + Add _pdbx_em_fsc_curve.type and _pdbx_em_fsc_cutoff_curve.type.
