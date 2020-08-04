@@ -35,7 +35,7 @@
   &lt;xsl:output method="xml" indent="yes"/&gt;
   &lt;xsl:strip-space elements="*"/&gt;
   &lt;xsl:variable name="PDBID"&gt;&lt;xsl:value-of select="/PDBx:datablock/@datablockName"/&gt;&lt;/xsl:variable&gt;
-  &lt;xsl:variable name="pdbid"&gt;&lt;xsl:value-of select="lower-case($PDBID)"/&gt;&lt;/xsl:variable&gt;
+  &lt;xsl:variable name="pdbid"&gt;&lt;xsl:value-of select="translate($PDBID,'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz')"/&gt;&lt;/xsl:variable&gt;
   &lt;xsl:variable name="base"&gt;https://rdf.wwpdb.org/cc/&lt;xsl:value-of select="$PDBID"/&gt;&lt;/xsl:variable&gt;
   &lt;xsl:variable name="base_lower"&gt;https://rdf.wwpdb.org/cc/&lt;xsl:value-of select="$pdbid"/&gt;&lt;/xsl:variable&gt;
   &lt;xsl:variable name="pdb_link"&gt;https://rdf.wwpdb.org/pdb/&lt;/xsl:variable&gt;

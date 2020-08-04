@@ -18,7 +18,7 @@
   <xsl:strip-space elements="*"/>
 
   <xsl:variable name="PDBID"><xsl:value-of select="/PDBx:datablock/PDBx:entryCategory/PDBx:entry/@id"/></xsl:variable>
-  <xsl:variable name="pdbid"><xsl:value-of select="lower-case($PDBID)"/></xsl:variable>
+  <xsl:variable name="pdbid"><xsl:value-of select="translate($PDBID,'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz')"/></xsl:variable>
   <xsl:variable name="pdb_doi"><xsl:value-of select="concat('10.2210/pdb',$pdbid,'/pdb')"/></xsl:variable>
   <xsl:variable name="base">https://rdf.wwpdb.org/pdb/<xsl:value-of select="$PDBID"/></xsl:variable>
   <xsl:variable name="base_lower">https://rdf.wwpdb.org/pdb/<xsl:value-of select="$pdbid"/></xsl:variable>

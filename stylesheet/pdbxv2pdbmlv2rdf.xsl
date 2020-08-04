@@ -40,7 +40,7 @@
   &lt;xsl:strip-space elements="*"/&gt;
 
   &lt;xsl:variable name="PDBID"&gt;&lt;xsl:value-of select="/PDBxv:datablock/PDBxv:entryCategory/PDBxv:entry/@id"/&gt;&lt;/xsl:variable&gt;
-  &lt;xsl:variable name="pdbid"&gt;&lt;xsl:value-of select="lower-case($PDBID)"/&gt;&lt;/xsl:variable&gt;
+  &lt;xsl:variable name="pdbid"&gt;&lt;xsl:value-of select="translate($PDBID,'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz')"/&gt;&lt;/xsl:variable&gt;
   &lt;xsl:variable name="pdb_doi"&gt;&lt;xsl:value-of select="concat('10.2210/pdb',$pdbid,'/pdb')"/&gt;&lt;/xsl:variable&gt;
   &lt;xsl:variable name="base"&gt;https://rdf.wwpdb.org/pdb-validation/&lt;xsl:value-of select="$PDBID"/&gt;&lt;/xsl:variable&gt;
   &lt;xsl:variable name="base_lower"&gt;https://rdf.wwpdb.org/pdb/&lt;xsl:value-of select="$pdbid"/&gt;&lt;/xsl:variable&gt;
