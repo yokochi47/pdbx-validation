@@ -32,7 +32,7 @@ while true ; do
  shift
 done
 
-if [ ! -z $RDF_DIR ] ; then
+if [ -d $RDF_DIR ] ; then
 
  find $RDF_DIR -maxdepth 1 -name '*.rdf' -size 0 -exec rm {} +
 

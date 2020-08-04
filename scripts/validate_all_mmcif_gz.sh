@@ -32,7 +32,7 @@ while true ; do
  shift
 done
 
-if [ ! -z $MMCIF_DIR ] ; then
+if [ -d $MMCIF_DIR ] ; then
 
  total=`find $MMCIF_DIR -mindepth 2 -name '*.cif.gz' | wc -l`
 

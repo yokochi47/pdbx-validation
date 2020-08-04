@@ -32,7 +32,7 @@ while true ; do
  shift
 done
 
-if [ ! -z $MMCIF_DIR ] ; then
+if [ -d $MMCIF_DIR ] ; then
 
  find $MMCIF_DIR -maxdepth 1 -name '*.cif' -size 0 -exec rm {} +
 

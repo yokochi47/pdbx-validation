@@ -37,7 +37,7 @@ while true ; do
  shift
 done
 
-if [ ! -z $RDF_DIR ] ; then
+if [ -d $RDF_DIR ] ; then
 
  total=`find $RDF_DIR -mindepth $MIN_DEPTH -name '*.rdf.gz' | wc -l`
 
