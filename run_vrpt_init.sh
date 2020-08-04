@@ -37,12 +37,12 @@ if [ $has_xml2mmcif_command != "false" ] ; then
  ./scripts/compress_mmcif_vrpt.sh
 fi
 
-./scripts/transl_to_rdf_vrpt_alt_from_pdbml_gz.sh
+./scripts/transl_to_rdf_vrpt_alt.sh
 ./validate_all_rdf.sh -d $RDF_VALID_ALT -r
 ./scripts/compress_rdf_vrpt_alt.sh
 
 if [ $has_xml2mmcif_command != "false" ] ; then
- ./scripts/transl_to_mmcif_vrpt_alt_from_pdbml_gz.sh
+ ./scripts/transl_to_mmcif_vrpt_alt.sh
  ./validate_all_mmcif.sh -d $MMCIF_VALID_ALT -r
  ./scripts/compress_mmcif_vrpt_alt.sh
 fi
