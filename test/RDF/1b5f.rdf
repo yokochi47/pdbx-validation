@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<rdf:RDF xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:PDBx="http://pdbml.pdb.org/schema/pdbx-v50.xsd" xmlns:PDBo="https://rdf.wwpdb.org/schema/pdbx-v50.owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:PDBx="http://pdbml.pdb.org/schema/pdbx-v50.xsd" xmlns:PDBo="https://rdf.wwpdb.org/schema/pdbx-v50.owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
   <PDBo:datablock rdf:about="https://rdf.wwpdb.org/pdb/1B5F">
     <dcterms:identifier>1B5F</dcterms:identifier>
     <skos:altLabel>1b5f</skos:altLabel>
@@ -9136,8 +9136,6 @@ VGFAEAA</PDBo:entity_poly.pdbx_seq_one_letter_code_can>
             <PDBo:pdbx_entity_branch_descriptor.program>PDB2Glycan</PDBo:pdbx_entity_branch_descriptor.program>
             <PDBo:pdbx_entity_branch_descriptor.program_version>1.1.0</PDBo:pdbx_entity_branch_descriptor.program_version>
             <PDBo:pdbx_entity_branch_descriptor.type>WURCS</PDBo:pdbx_entity_branch_descriptor.type>
-            <PDBo:link_to_glycoinfo rdf:resource="http://rdf.glycoinfo.org/glycan/G17689EW" rdfs:label="glytoucan:G17689EW"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/glytoucan/G17689EW" rdfs:label="glytoucan:G17689EW"/>
           </PDBo:pdbx_entity_branch_descriptor>
         </PDBo:has_pdbx_entity_branch_descriptor>
         <PDBo:has_pdbx_entity_branch_descriptor>
@@ -9185,8 +9183,6 @@ VGFAEAA</PDBo:entity_poly.pdbx_seq_one_letter_code_can>
             <PDBo:pdbx_entity_branch_descriptor.program>PDB2Glycan</PDBo:pdbx_entity_branch_descriptor.program>
             <PDBo:pdbx_entity_branch_descriptor.program_version>1.1.0</PDBo:pdbx_entity_branch_descriptor.program_version>
             <PDBo:pdbx_entity_branch_descriptor.type>WURCS</PDBo:pdbx_entity_branch_descriptor.type>
-            <PDBo:link_to_glycoinfo rdf:resource="http://rdf.glycoinfo.org/glycan/G18638YB" rdfs:label="glytoucan:G18638YB"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/glytoucan/G18638YB" rdfs:label="glytoucan:G18638YB"/>
           </PDBo:pdbx_entity_branch_descriptor>
         </PDBo:has_pdbx_entity_branch_descriptor>
         <PDBo:has_pdbx_entity_branch_descriptor>
@@ -9234,8 +9230,6 @@ VGFAEAA</PDBo:entity_poly.pdbx_seq_one_letter_code_can>
             <PDBo:pdbx_entity_branch_descriptor.program>PDB2Glycan</PDBo:pdbx_entity_branch_descriptor.program>
             <PDBo:pdbx_entity_branch_descriptor.program_version>1.1.0</PDBo:pdbx_entity_branch_descriptor.program_version>
             <PDBo:pdbx_entity_branch_descriptor.type>WURCS</PDBo:pdbx_entity_branch_descriptor.type>
-            <PDBo:link_to_glycoinfo rdf:resource="http://rdf.glycoinfo.org/glycan/G43648DB" rdfs:label="glytoucan:G43648DB"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/glytoucan/G43648DB" rdfs:label="glytoucan:G43648DB"/>
           </PDBo:pdbx_entity_branch_descriptor>
         </PDBo:has_pdbx_entity_branch_descriptor>
         <PDBo:has_pdbx_entity_branch_descriptor>
@@ -9283,8 +9277,6 @@ VGFAEAA</PDBo:entity_poly.pdbx_seq_one_letter_code_can>
             <PDBo:pdbx_entity_branch_descriptor.program>PDB2Glycan</PDBo:pdbx_entity_branch_descriptor.program>
             <PDBo:pdbx_entity_branch_descriptor.program_version>1.1.0</PDBo:pdbx_entity_branch_descriptor.program_version>
             <PDBo:pdbx_entity_branch_descriptor.type>WURCS</PDBo:pdbx_entity_branch_descriptor.type>
-            <PDBo:link_to_glycoinfo rdf:resource="http://rdf.glycoinfo.org/glycan/G73622RM" rdfs:label="glytoucan:G73622RM"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/glytoucan/G73622RM" rdfs:label="glytoucan:G73622RM"/>
           </PDBo:pdbx_entity_branch_descriptor>
         </PDBo:has_pdbx_entity_branch_descriptor>
         <PDBo:has_pdbx_entity_branch_descriptor>

@@ -14,7 +14,7 @@
   <xsl:output method="xml" indent="yes"/>
   <xsl:strip-space elements="*"/>
   <xsl:variable name="PDBID"><xsl:value-of select="/PDBx:datablock/@datablockName"/></xsl:variable>
-  <xsl:variable name="pdbid"><xsl:value-of select="lower-case($PDBID)"/></xsl:variable>
+  <xsl:variable name="pdbid"><xsl:value-of select="translate($PDBID,'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz')"/></xsl:variable>
   <xsl:variable name="base">https://rdf.wwpdb.org/cc/<xsl:value-of select="$PDBID"/></xsl:variable>
   <xsl:variable name="base_lower">https://rdf.wwpdb.org/cc/<xsl:value-of select="$pdbid"/></xsl:variable>
   <xsl:variable name="pdb_link">https://rdf.wwpdb.org/pdb/</xsl:variable>

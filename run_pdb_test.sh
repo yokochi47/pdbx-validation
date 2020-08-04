@@ -61,7 +61,8 @@ for pdbml_file in $WORK_DIR/$PDBML/*.xml ; do
 
  rdf_file=$WORK_DIR/$RDF/$pdbid.rdf
 
- java -jar $SAXON -s:$pdbml_file -xsl:$PDBML2RDF_XSL -o:$rdf_file wurcs2glytoucan=$GLYTOUCAN_XML || ( echo $0 aborted. && exit 1 )
+ #java -jar $SAXON -s:$pdbml_file -xsl:$PDBML2RDF_XSL -o:$rdf_file wurcs2glytoucan=$GLYTOUCAN_XML || ( echo $0 aborted. && exit 1 )
+ xsltproc -o $rdf_file --param wurcs2glytoucan $GLYTOUCAN_XML $PDBML2RDF_XSL $pdbml_file || ( echo $0 aborted. && exit 1 )
 
  echo " generated: "$rdf_file
 
@@ -70,7 +71,7 @@ for pdbml_file in $WORK_DIR/$PDBML/*.xml ; do
   echo " validated: "$rdf_file
  fi
 
- xml_pretty $rdf_file
+ #xml_pretty $rdf_file
 
 done
 

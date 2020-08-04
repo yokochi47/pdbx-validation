@@ -41,7 +41,8 @@ for pdbml_file in $WORK_DIR/$COMPONENTS_XML/*.xml ; do
 
  rdf_file=$WORK_DIR/$COMPONENTS_RDF/$ccid.rdf
 
- java -jar $SAXON -s:$pdbml_file -xsl:$CC2RDF_XSL -o:$rdf_file || ( echo $0 aborted. && exit 1 )
+ #java -jar $SAXON -s:$pdbml_file -xsl:$CC2RDF_XSL -o:$rdf_file || ( echo $0 aborted. && exit 1 )
+ xsltproc -o $rdf_file $CC2RDF_XSL $pdbml_file || ( echo $0 aborted. && exit 1 )
 
  echo " generated: "$rdf_file
 
@@ -50,7 +51,7 @@ for pdbml_file in $WORK_DIR/$COMPONENTS_XML/*.xml ; do
   echo " validated: "$rdf_file
  fi
 
- xml_pretty $rdf_file
+ #xml_pretty $rdf_file
 
 done
 
