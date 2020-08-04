@@ -5,7 +5,7 @@ The pdbx-validation is a generation tool of alternative [wwPDB validation report
 ## Usage
 
 - To generate the alternative wwPDB validation report of some PDB entries,<br />
- `./run_test.sh 5b1l 5u9b 5h0s ... `
+ `./run_vrpt_test.sh 5b1l 5u9b 5h0s ... `
 
 - To update the alternative wwPDB validation report of the entire PDB entry,<br />
  `./run_vrpt_all.sh`
