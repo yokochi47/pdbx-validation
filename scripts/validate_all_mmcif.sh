@@ -52,7 +52,7 @@ if [ -d $MMCIF_DIR ] ; then
 
   echo mmCIF syntax validation: *.cif documents in $MMCIF_DIR...
 
-  cif_file_list=check_${MMCIF_DIR,,}_cif_file_list
+  cif_file_list=`echo check_${MMCIF_DIR,,}_cif_file_list | tr '-' _`
   dict_sdb=`readlink -f $MMCIF_DIR/$pdbx_validation_sdb`
 
   find $MMCIF_DIR -name "*.log" -exec rm {} +
