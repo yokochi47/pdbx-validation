@@ -63,8 +63,8 @@ do
 
   if ( [ ! -e $rdf_file ] && [ ! -e $rdf_gz_file ] ) || [ -e $err_file ] ; then
 
-   #java -jar $SAXON -s:$pdbml_file -xsl:$PDBML2RDF_XSL -o:$rdf_file wurcs2glytoucan=$GLYTOUCAN_XML 2> $err_file && rm -f $err_file || ( cat $err_file && exit 1 )
-   xsltproc -o $rdf_file --param wurcs2glytoucan $GLYTOUCAN_XML $PDBML2RDF_XSL $pdbml_file 2> $err_file && rm -f $err_file || ( cat $err_file && exit 1 )
+   java -jar $SAXON -s:$pdbml_file -xsl:$PDBML2RDF_XSL -o:$rdf_file wurcs2glytoucan=$GLYTOUCAN_XML 2> $err_file && rm -f $err_file || ( cat $err_file && exit 1 )
+   #xsltproc -o $rdf_file --param wurcs2glytoucan $GLYTOUCAN_XML $PDBML2RDF_XSL $pdbml_file 2> $err_file && rm -f $err_file || ( cat $err_file && exit 1 )
 
    if [ $has_rapper_command != "false" ] ; then
     rapper -q -c $rdf_file 2> $err_file && rm -f $err_file || ( cat $err_file && exit 1 )
