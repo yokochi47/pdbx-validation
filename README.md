@@ -151,6 +151,7 @@ File path | Document
 - [**Java 8**](https://java.com/en/) or later.
 - [**Apache Maven (mvn)**](https://maven.apache.org), used to install external libraries.
 - [**Git (git)**](https://git-scm.com), used to install external libraries.
+- [**xsltproc**](http://xmlsoft.org/XSLT/), used to XSL translation v1.0.
 - [**mmCIF Dictionary Suite**](https://sw-tools.rcsb.org/apps/MMCIF-DICT-SUITE/index.html), optionally used to generate XML Schema from the wwPDB Validation Information Dictionary. (it is recommend to use mmCIF Dictionary Suite v2.250 instead of v2.300)
 - [**PDBML2CIF**](https://sw-tools.rcsb.org/apps/PDBML2CIF/index.html), optionally, used to generate mmCIF version of wwPDB validation reports.
 - [**Raptor RDF Syntax Library**](http://librdf.org/raptor/), optionally, used to validate RDF syntax.
