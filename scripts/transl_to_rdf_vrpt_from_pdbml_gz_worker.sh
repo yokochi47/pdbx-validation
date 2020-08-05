@@ -70,9 +70,9 @@ do
    has_glycan=$?
 
    if [ $has_glycan == 0 ] ; then
-    xsltproc -o $rdf_vrpt_file --param wurcs2glytoucan $_GLYTOUCAN_XML $PDBMLV2RDF_XSL $pdbml_vrpt_file 2> $err_file && ( rm -f $pdbml_vrpt_file $err_file ) || ( cat $err_file && exit 1 )
-   else
     java -jar $SAXON -s:$pdbml_vrpt_file -xsl:$PDBMLV2RDF_XSL -o:$rdf_vrpt_file wurcs2glytoucan=$GLYTOUCAN_XML 2> $err_file && ( rm -f $pdbml_vrpt_file $err_file ) || ( cat $err_file && exit 1 )
+   else
+    xsltproc -o $rdf_vrpt_file --param wurcs2glytoucan $_GLYTOUCAN_XML $PDBMLV2RDF_XSL $pdbml_vrpt_file 2> $err_file && ( rm -f $pdbml_vrpt_file $err_file ) || ( cat $err_file && exit 1 )
    fi
 
    if [ $has_rapper_command != "false" ] ; then
