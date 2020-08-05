@@ -163,8 +163,13 @@ for pdbml_file in $WORK_DIR/$PDBML/*.xml ; do
  echo " validated: "$pdbml_vrpt_file
 
  rdf_vrpt_file=$WORK_DIR/$RDF_VALID/$pdbid-validation-full.rdf
+ has_glycan=`java -jar $SAXON -s:$pdbml_vrpt_file -xsl:$PDBMLV2WURCS_XSL`
 
- java -jar $SAXON -s:$pdbml_vrpt_file -xsl:$PDBMLV2RDF_XSL -o:$rdf_vrpt_file wurcs2glytoucan=$GLYTOUCAN_XML || ( echo $0 aborted. && exit 1 )
+ if [ -z "$has_glycan" ] ; then
+  xsltproc -o $rdf_vrpt_file --param wurcs2glytoucan $_GLYTOUCAN_XML $PDBMLV2RDF_XSL $pdbml_vrpt_file || ( echo $0 aborted. && exit 1 )
+ else
+  java -jar $SAXON -s:$pdbml_vrpt_file -xsl:$PDBMLV2RDF_XSL -o:$rdf_vrpt_file wurcs2glytoucan=$GLYTOUCAN_XML || ( echo $0 aborted. && exit 1 )
+ fi
 
  echo " generated: "$rdf_vrpt_file
 
