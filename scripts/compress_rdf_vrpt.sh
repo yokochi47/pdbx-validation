@@ -2,7 +2,7 @@
 
 source ./scripts/env.sh
 
-DB_NAME="wwPDB/RDF-validation"
+DB_NAME="PDB/RDF-validation"
 
 if [ ! -d $RDF_VALID ] ; then
  ./scripts/transl_to_rdf_vrpt.sh

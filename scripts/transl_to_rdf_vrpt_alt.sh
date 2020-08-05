@@ -36,7 +36,7 @@ err=`find $RDF_VALID_ALT -maxdepth 1 -name '*.err' | wc -l`
 if [ $err != 0 ] || [ $total != $last ] ; then
 
  echo
- echo Translating PDBML-validation-alt to wwPDB/RDF-validation-alt...
+ echo Translating PDBML-validation-alt to PDB/RDF-validation-alt...
 
  pdbml_file_list=pdbml_to_rdf_alt_file_list
 

@@ -1,6 +1,6 @@
 ﻿# pdbx-validation
 
-The pdbx-validation is a generation tool of alternative [wwPDB validation reports](https://www.wwpdb.org/validation/validation-reports) where validation metrics are reorganized using the familiar mmCIF naming scheme and categories. It includes [PDBx/mmCIF](http://mmcif.wwpdb.org/) compatible versions of validation reports (**mmCIF-validation** and **PDBML-validation**), RDF version of validation reports (**wwPDB/RDF-validation**), and a series of ontologies; **wwPDB Validation Information Dictionary**, **PDBML-validation Schema**, and **wwPDB/OWL-validation**.
+The pdbx-validation is a generation tool of alternative [wwPDB validation reports](https://www.wwpdb.org/validation/validation-reports) where validation metrics are reorganized using the familiar mmCIF naming scheme and categories. It includes [PDBx/mmCIF](http://mmcif.wwpdb.org/) compatible versions of validation reports (**mmCIF-validation** and **PDBML-validation**), RDF version of validation reports (**PDB/RDF-validation**), and a series of ontologies; **wwPDB Validation Information Dictionary**, **PDBML-validation Schema**, and **PDB/OWL-validation**.
 
 ## Usage
 
@@ -16,14 +16,14 @@ File path | Document
 --------- | --------
 [schema/mmcif_pdbx_validation_v2.dic](https://github.com/yokochi47/pdbx-validation/blob/master/schema/mmcif_pdbx_validation_v2.331.dic) | wwPDB Validation Information Dictionary (v2.331)
 [schema/pdbx-validation-v2.xsd](https://github.com/yokochi47/pdbx-validation/blob/master/schema/pdbx-validation-v2.331.xsd) | PDBML-validation Schema (v2.331)
-[schema/pdbx-validation-v2.owl](https://github.com/yokochi47/pdbx-validation/blob/master/schema/pdbx-validation-v2.331.owl) | wwPDB/OWL-validation (v2.331)
+[schema/pdbx-validation-v2.owl](https://github.com/yokochi47/pdbx-validation/blob/master/schema/pdbx-validation-v2.331.owl) | PDB/OWL-validation (v2.331)
 [schema/mmcif_ddl.dic](https://github.com/yokochi47/pdbx-validation/blob/master/schema/mmcif_ddl_v2.3.0.dic) | extended mmCIF DDL Core Dictionary (dubbed as v2.3.0)
 [resource/mmcif_pdbx_v50.dic](http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic) | PDB Exchange Data Dictionary (v5.331)
 [resource/pdbx-v50.xsd](https://github.com/yokochi47/pdbx-validation/blob/master/resource/pdbx-v50.xsd) | PDBML Schema (v5.331)
-[resource/pdbx-v50.owl](https://github.com/yokochi47/pdbx-validation/blob/master/resource/pdbx-v50.owl) | PDBx ontology, ontology for wwPDB/RDF (v5.331)
+[resource/pdbx-v50.owl](https://github.com/yokochi47/pdbx-validation/blob/master/resource/pdbx-v50.owl) | PDBx ontology, ontology for PDB/RDF (v5.331)
 [resource/wwpdb_validation_v004.xsd](https://github.com/yokochi47/pdbx-validation/blob/master/resource/wwpdb_validation_v004.xsd) | XML Schema for wwPDB validation reports (v004, rev n/a)
 [scripts](https://github.com/yokochi47/pdbx-validation/blob/master/scripts) | a directory contains scripts invoked by the 'run_vrpt_all.sh' script
-[virtuoso_scripts](https://github.com/yokochi47/pdbx-validation/blob/master/virtuoso_scripts) | a directory contains scripts for uploading wwPDB/RDF-validation to local SPARQL endpoint
+[virtuoso_scripts](https://github.com/yokochi47/pdbx-validation/blob/master/virtuoso_scripts) | a directory contains scripts for uploading PDB/RDF-validation to local SPARQL endpoint
 [stylesheet](https://github.com/yokochi47/pdbx-validation/blob/master/stylesheet) | a directory contains XSL style sheets for generation of alternative wwPDB validation reports
 [test](https://github.com/yokochi47/pdbx-validation/blob/master/test) | a directory contains resource files for test on several PDB entries
 
@@ -36,9 +36,9 @@ File path | Document
 	- PDBML format
 		- PDBML-validation: [5b1l-validation-full.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/XML-validation/5b1l-validation-full.xml)
 		- PDBML-validation-alt: [5b1l-validation-alt.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/validation-info-alt/5b1l-validation-alt.xml)
-	- wwPDB/RDF format
-		- wwPDB/RDF-validation: [5b1l-validation-full.rdf](https://github.com/yokochi47/pdbx-validation/blob/master/test/RDF-validation/5b1l-validation-full.rdf)
-		- wwPDB/RDF-validation-alt: [5b1l-validation-alt.rdf](https://github.com/yokochi47/pdbx-validation/blob/master/test/RDF-validation-alt/5b1l-validation-alt.rdf)
+	- PDB/RDF format
+		- PDB/RDF-validation: [5b1l-validation-full.rdf](https://github.com/yokochi47/pdbx-validation/blob/master/test/RDF-validation/5b1l-validation-full.rdf)
+		- PDB/RDF-validation-alt: [5b1l-validation-alt.rdf](https://github.com/yokochi47/pdbx-validation/blob/master/test/RDF-validation-alt/5b1l-validation-alt.rdf)
 	- wwPDB validation report (XML format)
 		- Original source: [5b1l_validation.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/validation-info/5b1l_validation.xml)
 		- Reverted from PDBML-validation: [5b1l_validation.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/validation-info-rev-from-full/5b1l_validation.xml)
@@ -51,9 +51,9 @@ File path | Document
 	- PDBML format
 		- PDBML-validation: [5u9b-validation-full.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/XML-validation/5u9b-validation-full.xml)
 		- PDBML-validation-alt: [5u9b-validation-alt.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/validation-info-alt/5u9b-validation-alt.xml)
-	- wwPDB/RDF format
-		- wwPDB/RDF-validation: [5u9b-validation-full.rdf](https://github.com/yokochi47/pdbx-validation/blob/master/test/RDF-validation/5u9b-validation-full.rdf)
-		- wwPDB/RDF-validation-alt: [5u9b-validation-alt.rdf](https://github.com/yokochi47/pdbx-validation/blob/master/test/RDF-validation-alt/5u9b-validation-alt.rdf)
+	- PDB/RDF format
+		- PDB/RDF-validation: [5u9b-validation-full.rdf](https://github.com/yokochi47/pdbx-validation/blob/master/test/RDF-validation/5u9b-validation-full.rdf)
+		- PDB/RDF-validation-alt: [5u9b-validation-alt.rdf](https://github.com/yokochi47/pdbx-validation/blob/master/test/RDF-validation-alt/5u9b-validation-alt.rdf)
 	- wwPDB validation report (XML format)
 		- Original source: [5u9b_validation.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/validation-info/5u9b_validation.xml)
 		- Reverted from PDBML-validation: [5u9b_validation.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/validation-info-rev-from-full/5u9b_validation.xml)
@@ -66,9 +66,9 @@ File path | Document
 	- PDBML format
 		- PDBML-validation: [5h0s-validation-full.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/XML-validation/5h0s-validation-full.xml)
 		- PDBML-validation-alt: [5h0s-validation-alt.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/validation-info-alt/5h0s-validation-alt.xml)
-	- wwPDB/RDF format
-		- wwPDB/RDF-validation: [5h0s-validation-full.rdf](https://github.com/yokochi47/pdbx-validation/blob/master/test/RDF-validation/5h0s-validation-full.rdf)
-		- wwPDB/RDF-validation-alt: [5h0s-validation-alt.rdf](https://github.com/yokochi47/pdbx-validation/blob/master/test/RDF-validation-alt/5h0s-validation-alt.rdf)
+	- PDB/RDF format
+		- PDB/RDF-validation: [5h0s-validation-full.rdf](https://github.com/yokochi47/pdbx-validation/blob/master/test/RDF-validation/5h0s-validation-full.rdf)
+		- PDB/RDF-validation-alt: [5h0s-validation-alt.rdf](https://github.com/yokochi47/pdbx-validation/blob/master/test/RDF-validation-alt/5h0s-validation-alt.rdf)
 	- wwPDB validation report (XML format)
 		- Original source: [5h0s_validation.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/validation-info/5h0s_validation.xml)
 		- Reverted from PDBML-validation: [5h0s_validation.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/validation-info-rev-from-full/5h0s_validation.xml)
@@ -81,9 +81,9 @@ File path | Document
 	- PDBML format
 		- PDBML-validation: [6rjh-validation-full.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/XML-validation/6rjh-validation-full.xml)
 		- PDBML-validation-alt: [6rjh-validation-alt.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/validation-info-alt/6rjh-validation-alt.xml)
-	- wwPDB/RDF format
-		- wwPDB/RDF-validation: [6rjh-validation-full.rdf](https://github.com/yokochi47/pdbx-validation/blob/master/test/RDF-validation/6rjh-validation-full.rdf)
-		- wwPDB/RDF-validation-alt: [6rjh-validation-alt.rdf](https://github.com/yokochi47/pdbx-validation/blob/master/test/RDF-validation-alt/6rjh-validation-alt.rdf)
+	- PDB/RDF format
+		- PDB/RDF-validation: [6rjh-validation-full.rdf](https://github.com/yokochi47/pdbx-validation/blob/master/test/RDF-validation/6rjh-validation-full.rdf)
+		- PDB/RDF-validation-alt: [6rjh-validation-alt.rdf](https://github.com/yokochi47/pdbx-validation/blob/master/test/RDF-validation-alt/6rjh-validation-alt.rdf)
 	- wwPDB validation report (XML format)
 		- Original source: [6rjh_validation.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/validation-info/6rjh_validation.xml)
 		- Reverted from PDBML-validation: [6rjh_validation.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/validation-info-rev-from-full/6rjh_validation.xml)
@@ -96,9 +96,9 @@ File path | Document
 	- PDBML format
 		- PDBML-validation: [6xey-validation-full.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/XML-validation/6xey-validation-full.xml)
 		- PDBML-validation-alt: [6xey-validation-alt.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/validation-info-alt/6xey-validation-alt.xml)
-	- wwPDB/RDF format
-		- wwPDB/RDF-validation: [6xey-validation-full.rdf](https://github.com/yokochi47/pdbx-validation/blob/master/test/RDF-validation/6xey-validation-full.rdf)
-		- wwPDB/RDF-validation-alt: [6xey-validation-alt.rdf](https://github.com/yokochi47/pdbx-validation/blob/master/test/RDF-validation-alt/6xey-validation-alt.rdf)
+	- PDB/RDF format
+		- PDB/RDF-validation: [6xey-validation-full.rdf](https://github.com/yokochi47/pdbx-validation/blob/master/test/RDF-validation/6xey-validation-full.rdf)
+		- PDB/RDF-validation-alt: [6xey-validation-alt.rdf](https://github.com/yokochi47/pdbx-validation/blob/master/test/RDF-validation-alt/6xey-validation-alt.rdf)
 	- wwPDB validation report (XML format)
 		- Original source: [6xey_validation.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/validation-info/6xey_validation.xml)
 		- Reverted from PDBML-validation: [6xey_validation.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/validation-info-rev-from-full/6xey_validation.xml)
@@ -116,9 +116,9 @@ File path | Document
 	- [PDBML-validation-alt (lightweight version)](https://bmrbpub.pdbj.org/archive/pdbml-vrpt-alt/)
 	- [PDBML-validation-alt (lightweight version @ PDBj FTP server)](http://ftp.pdbj.org/XML/vrpt-alt/)
 
-	- [wwPDB/RDF-validation (full specification)](https://bmrbpub.pdbj.org/archive/wwpdb-rdf-vrpt/)
-	- [wwPDB/RDF-validation-alt (lightweight version)](https://bmrbpub.pdbj.org/archive/wwpdb-rdf-vrpt-alt/)
-	- [wwPDB/RDF-validation-alt (lightweight version @ PDBj FTP server)](http://ftp.pdbj.org/RDF/vrpt-alt/)
+	- [PDB/RDF-validation (full specification)](https://bmrbpub.pdbj.org/archive/wwpdb-rdf-vrpt/)
+	- [PDB/RDF-validation-alt (lightweight version)](https://bmrbpub.pdbj.org/archive/wwpdb-rdf-vrpt-alt/)
+	- [PDB/RDF-validation-alt (lightweight version @ PDBj FTP server)](http://ftp.pdbj.org/RDF/vrpt-alt/)
 
 - Bulk download via rsync protocol
 
@@ -134,15 +134,15 @@ File path | Document
 	- PDBML-validation-alt (lightweight version):<br />
 	 `% rsync -av --delete rsync://bmrbpub.pdbj.org/pdbml-vrpt-alt .`
 
-	- wwPDB/RDF-validation (full specification):<br />
+	- PDB/RDF-validation (full specification):<br />
 	 `% rsync -av --delete rsync://bmrbpub.pdbj.org/wwpdb-rdf-vrpt .`
 
-	- wwPDB/RDF-validation-alt (lightweight version):<br />
+	- PDB/RDF-validation-alt (lightweight version):<br />
 	 `% rsync -av --delete rsync://bmrbpub.pdbj.org/wwpdb-rdf-vrpt-alt .`
 
 - [PDBML-validation-alt PostgreSQL dump file](https://bmrbpub.pdbj.org/resources.html)
 
-- [SPARQL endpoint for wwPDB/RDF-validation-alt](https://bmrbpub.pdbj.org/examples.html)
+- [SPARQL endpoint for PDB/RDF-validation-alt](https://bmrbpub.pdbj.org/examples.html)
 
 - [PDBj Mine2 SQL search](https://pdbj.org/help/mine-sql)
 
@@ -157,7 +157,7 @@ File path | Document
 - [**Raptor RDF Syntax Library**](http://librdf.org/raptor/), optionally, used to validate RDF syntax.
 - [**libxml2**](http://xmlsoft.org/), optionally, used to post XML beutification (xmllint).
 - [**PostgreSQL**](https://www.postgresql.org), optionally used to import XML contents to relational database.
-- [**Virtuoso**](https://www.openlinksw.com/wiki/main/Main), oprionally used as SPARQL endpoint of wwPDB/RDF-validation.
+- [**Virtuoso**](https://www.openlinksw.com/wiki/main/Main), oprionally used as SPARQL endpoint of PDB/RDF-validation.
 
 ## Release notes
 
@@ -330,7 +330,7 @@ File path | Document
 	- Set '_pdbx_nmr_unparsed_chem_shift.id' as category key along with '_pdbx_nmr_unparsed_chem_shift.list_id'.
 	- Update 'extract_info.xsl' style sheet which caused translation errors of NMR structure entries.
 	- Add support for mmCIF version of wwPDB validation reports using PDBML2CIF command.
-	- Change file extension of wwPDB/RDF-validation form validation.rdf to validation-full.rdf.
+	- Change file extension of PDB/RDF-validation form validation.rdf to validation-full.rdf.
 	- Add RDF syntax validation when Raptor RDF Syntax Library is available (rapper).
 
 - **Dec 4, 2018**: Release v1.3.11
@@ -366,9 +366,9 @@ File path | Document
 - **Jul 18, 2018**: Release v1.3.4
 	- Change check sum directory name from chk_sum_pdbx_valid to chk_sum_pdbml_valid.
 	- Add PDBML-validation-alt, which is a lightweight version of PDBML-validation by omitting PDBML-noatom content.
-	- Add wwPDB/validation-alt, which is a lightweight version of wwPDB/RDF-validation by omitting PDBML-noatom content.
+	- Add PDB/validation-alt, which is a lightweight version of PDB/RDF-validation by omitting PDBML-noatom content.
 	- Add PostgreSQL data migration script for PDBML-validation-alt.
-	- Add Virtuoso data upload script for wwPDB/RDF-validation-alt.
+	- Add Virtuoso data upload script for PDB/RDF-validation-alt.
 	- Add PostgreSQL data migration script for PDBML-noatom.
 
 - **Jul 10, 2018**: Release v1.3.3
@@ -411,18 +411,18 @@ File path | Document
 
 - **Feb 16, 2018**: Release v0.1.0
 	- Revise PDBML-validation Schema using xsd:minInclusive and xsd:maxExclusive without xsd:union.
-	- Fix wwPDB/OWL-validation lacking XSD data type definition.
+	- Fix PDB/OWL-validation lacking XSD data type definition.
 	- Add validate_all_gz.sh script to perform XML Schema validation of compressed PDBML-validation.
 
 - **Feb 15, 2018**: Release v0.0.9
-	- Add ontology relationship between wwPDB/OWL-validation and PDBx ontology.
-	- Add ontology relationship between wwPDB/OWL-validation and BMRB/OWL.
+	- Add ontology relationship between PDB/OWL-validation and PDBx ontology.
+	- Add ontology relationship between PDB/OWL-validation and BMRB/OWL.
 	- Update ontology mapping between PDBx/mmCIF and NMR-STAR data items.
 	- PDB mirror server is selectable from rsync.rcsb.org, ftp.pdbj.org, rsync.ebi.ac.uk based on network response.
 
 - **Feb 13, 2018**: Release v0.0.8
 	- Change directory: from pdbml-validtion to XML-validation, which contains compressed PDBML-validation.
-	- Change directory: from rdf-validation to RDF-validation, which contains compressed wwPDB/RDF-validation.
+	- Change directory: from rdf-validation to RDF-validation, which contains compressed PDB/RDF-validation.
 	- Add source URL in PDBML-validation Schema pointing PDBx/mmCIF dictionary browser.
 
 - **Feb 9, 2018**: Release v0.0.7
@@ -457,8 +457,8 @@ File path | Document
 	- Add 'clean_all.sh' script.
 	- Append current PDBx Ontology (pdbx-v50.owl) in resource directory.
 	- Append PostgreSQL DDL for wwPDB validation (resource/wwpdb_validation_v002.sql) information and PDBML-validation (schema/pdbx-validation-v0.sql).
-	- Add wwPDB/OWL-validation, ontology for wwPDB/RDF-validation.
-	- Add script 'scripts/translate_to_rdf.sh' for generation of wwPDB/RDF-validation.
+	- Add PDB/OWL-validation, ontology for PDB/RDF-validation.
+	- Add script 'scripts/translate_to_rdf.sh' for generation of PDB/RDF-validation.
 - **Feb 1, 2018**: Release v0.0.1
 	- Generate PDBML-validation from PDBML-noatom and wwPDB Validation Information.
 

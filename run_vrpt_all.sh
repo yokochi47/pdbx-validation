@@ -9,12 +9,18 @@ if [ $has_xml2mmcif_command = "false" ] ; then
 
 fi
 
+MTIME=
+MTIME_OPT=
 VALID_OPT=
 
-ARGV=`getopt --long -o "v" "$@"`
+ARGV=`getopt --long -o "m:v" "$@"`
 eval set -- "$ARGV"
 while true ; do
  case "$1" in
+ -m)
+  MTIME=$2
+  shift
+ ;;
  -v)
   VALID_OPT=$1
  ;;
@@ -25,9 +31,13 @@ while true ; do
  shift
 done
 
-./scripts/update_pdbml.sh || exit $?
+if [ ! -z $MTIME ] ; then
+ MTIME_OPT="-m "$MTIME
+fi
 
-./scripts/update_vrpt.sh || exit $?
+./scripts/update_pdbml.sh $MTIME_OPT || exit $?
+
+./scripts/update_vrpt.sh $MTIME_OPT || exit $?
 
 huge_number=100000
 

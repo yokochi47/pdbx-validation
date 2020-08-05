@@ -40,14 +40,14 @@ if [ -d $XML_VALID_ALT ] ; then
  ./scripts/validate_all_xml_gz.sh -d $XML_VALID_ALT $DELETE_OPT
 fi
 
-# wwPDB/RDF-validation
+# PDB/RDF-validation
 
 if [ -d $RDF_VALID ] ; then
 # ./scripts/validate_all_rdf.sh -d $RDF_VALID $DELETE_OPT
  ./scripts/validate_all_rdf_gz.sh -d $RDF_VALID $DELETE_OPT
 fi
 
-# wwPDB/RDF-validation-alt
+# PDB/RDF-validation-alt
 
 if [ -d $RDF_VALID_ALT ] ; then
 # ./scripts/validate_all_rdf.sh -d $RDF_VALID_ALT $DELETE_OPT
