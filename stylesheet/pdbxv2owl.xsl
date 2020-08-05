@@ -40,8 +40,8 @@
        xmlns:BMRBo="https://bmrbpub.pdbj.org/schema/mmcif_nmr-star.owl#">
 
       <owl:Ontology rdf:about="https://rdf.wwpdb.org/schema/pdbx-validation-v2.owl">
-	<rdfs:label>wwPDB/OWL-validation</rdfs:label>
-	<rdfs:comment xml:lang="en">The OWL ontology for wwPDB/RDF-validation.</rdfs:comment>
+	<rdfs:label>PDB/OWL-validation</rdfs:label>
+	<rdfs:comment xml:lang="en">The OWL ontology for PDB/RDF-validation.</rdfs:comment>
         <rdfs:seeAlso rdf:resource="https://rdf.wwpdb.org/schema/pdbx-validation-v2.dic"/>
         <rdfs:seeAlso rdf:resource="https://rdf.wwpdb.org/schema/pdbx-validation-v2.xsd"/>
         <owl:versionIRI rdf:resource="https://rdf.wwpdb.org/schema/pdbx-validation-v2.owl/2.331"/>

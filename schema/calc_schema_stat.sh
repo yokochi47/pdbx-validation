@@ -345,7 +345,7 @@ linked_items=`grep _pdbx_item_aliases.xpath $valid_dic | wc -l`
 echo "  "$linked_items items linked to `basename $valid_xsd`.
 
 #
-# statistics of wwPDB/OWL-validation
+# statistics of PDB/OWL-validation
 #
 
 echo
