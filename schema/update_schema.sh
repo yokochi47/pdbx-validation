@@ -95,7 +95,7 @@ tagmap_xml_file=tagmap.xml
 
 java -jar $SAXON -it:main -xsl:$TAGMAP2XML_XSL -o:$tagmap_xml_file tagmap_csv_file=$tagmap_csv_file
 
-# Generate wwPDB/OWL-validation
+# Generate PDB/OWL-validation
 
 PDBXV2OWL_XSL=../stylesheet/pdbxv2owl.xsl
 

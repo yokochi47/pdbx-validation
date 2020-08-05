@@ -2,6 +2,23 @@
 
 source ./scripts/env.sh
 
+MTIME=
+
+ARGV=`getopt --long -o "m:" "$@"`
+eval set -- "$ARGV"
+while true ; do
+ case "$1" in
+ -m)
+  MTIME=$2
+  shift
+ ;;
+ *)
+  break
+ ;;
+ esac
+ shift
+done
+
 DB_NAME=PDBML-noatom
 
 SRC_DIR=$PDBML_NOATOM
@@ -109,7 +126,9 @@ if [ $weekday -ge 1 ] && [ $weekday -le 4 ] ; then
 
  java -classpath $XSD2PGSCHEMA chksumstat --xml $SRC_DIR/[0-9a-z]{2} --xml-file-ext gz --sync $MD5_DIR --xml-file-ext-digest $FILE_EXT_DIGEST --update --verbose > $chk_sum_log
 
- #find XML-noatom -name "*.xml.gz" -mtime -30 | cut -d '/' -f 3 | cut -d '-' -f 1 > $chk_sum_log
+ if [ ! -z $MTIME ] ; then
+  find $SRC_DIR -name "*.xml.gz" -mtime $MTIME | cut -d '/' -f 3 | cut -d '-' -f 1 > $chk_sum_log
+ fi
 
  if [ -d $XML_DIR ] ; then
   while read pdb_id ; do
@@ -236,7 +255,11 @@ fi
 
 xml_file_total=pdbml_file_total
 
-updated=`find $SRC_DIR/* -name "*.xml.gz" -mtime -4 | wc -l`
+if [ -z $MTIME ] ; then
+ MTIME=-4
+fi
+
+updated=`find $SRC_DIR/* -name "*.xml.gz" -mtime $MTIME | wc -l`
 
 if [ $updated = 0 ] || [ ! -e $xml_file_total ] ; then
 

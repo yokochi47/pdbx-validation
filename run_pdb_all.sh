@@ -2,7 +2,29 @@
 
 source ./scripts/env.sh
 
-./scripts/update_pdbml.sh || exit $?
+MTIME=
+MTIME_OPT=
+
+ARGV=`getopt --long -o "m:" "$@"`
+eval set -- "$ARGV"
+while true ; do
+ case "$1" in
+ -m)
+  MTIME=$2
+  shift
+ ;;
+ *)
+  break
+ ;;
+ esac
+ shift
+done
+
+if [ ! -z $MTIME ] ; then
+ MTIME_OPT="-m "$MTIME
+fi
+
+./scripts/update_pdbml.sh $MTIME_OPT || exit $?
 
 if [[ $(find wurcs2glytoucan/glytoucan.xml -mtime +4) ]] ; then
  ( cd wurcs2glytoucan; ./update_glytoucan.sh )
