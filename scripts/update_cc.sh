@@ -81,7 +81,7 @@ fi
 
 date -u +"%b %d, %Y" > /tmp/pdbml-cc-last
 
-gz_file_list=${SRC_DIR,,}_gz_file_list
+gz_file_list=`echo ${SRC_DIR,,}_gz_file_list | tr '-' _`
 
 mkdir -p $XML_DIR
 

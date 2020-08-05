@@ -65,9 +65,11 @@ do
   if ( [ ! -e $rdf_vrpt_file ] && [ ! -e $rdf_vrpt_gz_file ] ) || [ -e $err_file ] ; then
 
    gunzip -c $pdbml_vrpt_gz_file > $pdbml_vrpt_file || exit 1
-   has_glycan=`java -jar $SAXON -s:$pdbml_vrpt_file -xsl:$PDBMLV2WURCS_XSL`
+   #has_glycan=`java -jar $SAXON -s:$pdbml_vrpt_file -xsl:$PDBMLV2WURCS_XSL`
+   grep WURCS $pdbml_vrpt_file > /dev/null
+   has_glycan=$?
 
-   if [ -z "$has_glycan" ] ; then
+   if [ $has_glycan == 0 ] ; then
     xsltproc -o $rdf_vrpt_file --param wurcs2glytoucan $_GLYTOUCAN_XML $PDBMLV2RDF_XSL $pdbml_vrpt_file 2> $err_file && ( rm -f $pdbml_vrpt_file $err_file ) || ( cat $err_file && exit 1 )
    else
     java -jar $SAXON -s:$pdbml_vrpt_file -xsl:$PDBMLV2RDF_XSL -o:$rdf_vrpt_file wurcs2glytoucan=$GLYTOUCAN_XML 2> $err_file && ( rm -f $pdbml_vrpt_file $err_file ) || ( cat $err_file && exit 1 )
