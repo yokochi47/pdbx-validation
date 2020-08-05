@@ -110,6 +110,8 @@ if [ $weekday -ge 1 ] && [ $weekday -le 4 ] ; then
 
  java -classpath $XSD2PGSCHEMA chksumstat --xml $SRC_DIR/[0-9a-z]{2} --xml-file-ext gz --sync $MD5_DIR --xml-file-ext-digest $FILE_EXT_DIGEST --update --verbose > $chk_sum_log
 
+ #find $SRC_DIR -name "*_validation.xml.gz" -mtime -30 | cut -d '/' -f 4 | cut -d '_' -f 1 > $chk_sum_log
+
  if [ -d $XML_DIR ] ; then
   while read pdb_id ; do
    [ -z "$pdb_id" ] || [[ "$pdb_id" =~ ^#.* ]] && continue
@@ -250,7 +252,7 @@ fi
 
 date -u +"%b %d, %Y" > /tmp/pdb-vrpt-last
 
-gz_file_list=${SRC_DIR,,}_gz_file_list
+gz_file_list=`echo ${SRC_DIR,,}_gz_file_list | tr '-' _`
 
 mkdir -p $XML_DIR
 
