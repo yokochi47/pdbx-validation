@@ -60,11 +60,15 @@ do
   rdf_file=$WORK_DIR/$pdb_id.rdf
   rdf_gz_file=$WORK_DIR/$pdb_id.rdf.gz
   err_file=$WORK_DIR/transl_to_rdf_pdb_$pdb_id.err
+  has_glycan=`java -jar $SAXON -s:$pdbml_file -xsl:$PDBML2WURCS_XSL`
 
   if ( [ ! -e $rdf_file ] && [ ! -e $rdf_gz_file ] ) || [ -e $err_file ] ; then
 
-   java -jar $SAXON -s:$pdbml_file -xsl:$PDBML2RDF_XSL -o:$rdf_file wurcs2glytoucan=$GLYTOUCAN_XML 2> $err_file && rm -f $err_file || ( cat $err_file && exit 1 )
-   #xsltproc -o $rdf_file --param wurcs2glytoucan $GLYTOUCAN_XML $PDBML2RDF_XSL $pdbml_file 2> $err_file && rm -f $err_file || ( cat $err_file && exit 1 )
+   if [ -z "$has_glycan" ] ; then
+    xsltproc -o $rdf_file --param wurcs2glytoucan $_GLYTOUCAN_XML $PDBML2RDF_XSL $pdbml_file 2> $err_file && rm -f $err_file || ( cat $err_file && exit 1 )
+   else
+    java -jar $SAXON -s:$pdbml_file -xsl:$PDBML2RDF_XSL -o:$rdf_file wurcs2glytoucan=$GLYTOUCAN_XML 2> $err_file && rm -f $err_file || ( cat $err_file && exit 1 )
+   fi
 
    if [ $has_rapper_command != "false" ] ; then
     rapper -q -c $rdf_file 2> $err_file && rm -f $err_file || ( cat $err_file && exit 1 )

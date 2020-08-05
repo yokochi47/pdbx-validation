@@ -54,14 +54,20 @@ for pdbml_file in $WORK_DIR/$PDBML/*.xml ; do
 
  pdbid=`basename $pdbml_file -noatom.xml`
 
- exptl_method=`java -jar $SAXON -s:$pdbml_file -xsl:stylesheet/exptl_method.xsl`
+ #exptl_method=`java -jar $SAXON -s:$pdbml_file -xsl:stylesheet/exptl_method.xsl`
+ exptl_method=`xsltproc stylesheet/exptl_method.xsl $pdbml_file`
+ has_glycan=`java -jar $SAXON -s:$pdbml_file -xsl:$PDBML2WURCS_XSL`
 
  echo
  echo Processing PDB ID: ${pdbid^^}, "Exptl. method: "$exptl_method" ..."
 
  rdf_file=$WORK_DIR/$RDF/$pdbid.rdf
 
- java -jar $SAXON -s:$pdbml_file -xsl:$PDBML2RDF_XSL -o:$rdf_file wurcs2glytoucan=$GLYTOUCAN_XML || ( echo $0 aborted. && exit 1 )
+ if [ -z "$has_glycan" ] ; then
+  xsltproc -o $rdf_file --param wurcs2glytoucan $_GLYTOUCAN_XML $PDBML2RDF_XSL $pdbml_file
+ else
+  java -jar $SAXON -s:$pdbml_file -xsl:$PDBML2RDF_XSL -o:$rdf_file wurcs2glytoucan=$GLYTOUCAN_XML || ( echo $0 aborted. && exit 1 )
+ fi
 
  echo " generated: "$rdf_file
 

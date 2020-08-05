@@ -60,11 +60,15 @@ do
   rdf_vrpt_file=$WORK_DIR/$pdb_id-validation-full.rdf
   rdf_vrpt_gz_file=$WORK_DIR/${pdb_id:1:2}/$pdb_id-validation-full.rdf.gz
   err_file=$WORK_DIR/transl_to_rdf_vrpt_$pdb_id.err
+  has_glycan=`java -jar $SAXON -s:$pdbml_vrpt_file -xsl:$PDBMLV2WURCS_XSL`
 
   if ( [ ! -e $rdf_vrpt_file ] && [ ! -e $rdf_vrpt_gz_file ] ) || [ -e $err_file ] ; then
 
-   java -jar $SAXON -s:$pdbml_vrpt_file -xsl:$PDBMLV2RDF_XSL -o:$rdf_vrpt_file wurcs2glytoucan=$GLYTOUCAN_XML 2> $err_file && rm -f $err_file || ( cat $err_file && exit 1 )
-   #xsltproc -o $rdf_vrpt_file --param wurcs2glytoucan $GLYTOUCAN_XML $PDBMLV2RDF_XSL $pdbml_vrpt_file 2> $err_file && rm -f $err_file || ( cat $err_file && exit 1 )
+   if [ -z "$has_glycan" ] ; then
+    xsltproc -o $rdf_vrpt_file --param wurcs2glytoucan $_GLYTOUCAN_XML $PDBMLV2RDF_XSL $pdbml_vrpt_file 2> $err_file && rm -f $err_file || ( cat $err_file && exit 1 )
+   else
+    java -jar $SAXON -s:$pdbml_vrpt_file -xsl:$PDBMLV2RDF_XSL -o:$rdf_vrpt_file wurcs2glytoucan=$GLYTOUCAN_XML 2> $err_file && rm -f $err_file || ( cat $err_file && exit 1 )
+   fi
 
    if [ $has_rapper_command != "false" ] ; then
     rapper -q -c $rdf_vrpt_file 2> $err_file && rm -f $err_file || ( cat $err_file && exit 1 )

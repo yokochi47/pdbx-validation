@@ -93,6 +93,7 @@ PDBML2WURCS_XSL=stylesheet/pdbml2wurcs.xsl
 PDBMLV2WURCS_XSL=stylesheet/pdbmlv2wurcs.xsl
 
 GLYTOUCAN_XML=../wurcs2glytoucan/glytoucan.xml
+_GLYTOUCAN_XML=wurcs2glytoucan/glytoucan.xml
 
 RDF=RDF
 
