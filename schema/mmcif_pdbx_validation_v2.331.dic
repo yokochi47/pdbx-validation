@@ -49565,6 +49565,7 @@ save_
 ###############
 ## EM_BUFFER ##
 ###############
+
 save_em_buffer
     _category.description
 ;              Data items in the BUFFER category
@@ -65368,6 +65369,7 @@ save_
 #################
 ## STRUCT_CONN ##
 #################
+
 save__struct_conn.pdbx_ptnr1_atom_stereo_config
     _item_description.description
 ;              The chiral configuration of the first atom making the linkage.
@@ -66118,6 +66120,7 @@ save__pdbx_branch_scheme.auth_mon_id
 #####################
 ## ENTITY_NAME_COM ##
 #####################
+
 save__entity_name_com.pdbx_provenance
     _item_description.description
 ;              Provides the provenance of the name in the _entity_name_com.name field
