@@ -114,7 +114,7 @@ do
   diag_log=$cif_label-diag.log
   parser_log=$cif_label-parser.log
 
-#  rm -f $cif_dir/$diag_log $cif_dir/$parser_log
+  rm -f $cif_dir/$diag_log $cif_dir/$parser_log
 
   ( cd $cif_dir ; CifCheck -f $cif_file -dictSdb $dict_sdb > /dev/null ; [ -e $diag_log ] && [ `grep -v 'has invalid value "?" in row' $diag_log | sed -e /^$/d | wc -l` = 0 ] && rm -f $diag_log )
   ( cd $cif_dir ; [ ! -e $diag_log ] && [ ! -e $parser_log ] && ( rm -f $cif_file ; echo $new_chk_sum > $chk_sum_file ) ; [ -e $parser_log ] && ( [ $DELETE = "true" ] && rm -f $cif_file.gz ; rm -f $cif_file ; cat $diag_log ) )
