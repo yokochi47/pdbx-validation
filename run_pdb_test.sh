@@ -56,7 +56,8 @@ for pdbml_file in $WORK_DIR/$PDBML/*.xml ; do
 
  #exptl_method=`java -jar $SAXON -s:$pdbml_file -xsl:stylesheet/exptl_method.xsl`
  exptl_method=`xsltproc stylesheet/exptl_method.xsl $pdbml_file`
- has_glycan=`java -jar $SAXON -s:$pdbml_file -xsl:$PDBML2WURCS_XSL`
+ #has_glycan=`java -jar $SAXON -s:$pdbml_file -xsl:$PDBML2WURCS_XSL`
+ has_glycan=`xsltproc $PDBML2WURCS_XSL $pdbml_file`
 
  echo
  echo Processing PDB ID: ${pdbid^^}, "Exptl. method: "$exptl_method" ..."
