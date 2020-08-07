@@ -59,11 +59,21 @@ do
   pdb_id=`basename $pdbml_vrpt_gz_file -validation-full.xml.gz`
   pdbml_vrpt_file=../`dirname $pdbml_vrpt_gz_file`/`basename $pdbml_vrpt_gz_file .gz`
   mmcif_vrpt_file=$pdb_id-validation-full.cif
-  mmcif_vrpt_gz_file=$WORK_DIR/${pdb_id:1:2}/$pdb_id-validation-full.cif.gz
+  div_dir=$WORK_DIR/${pdb_id:1:2}
+  mmcif_vrpt_div_file=$div_dir/$pdb_id-validation-full.cif
 
-  if [ ! -e $WORK_DIR/$mmcif_vrpt_file ] && [ ! -e $mmcif_vrpt_gz_file ] ; then
+  if [ ! -e $WORK_DIR/$mmcif_vrpt_file ] && [ ! -e $mmcif_vrpt_div_file.gz ] ; then
 
    ( cd $WORK_DIR ; gunzip -c ../$pdbml_vrpt_gz_file > $pdbml_vrpt_file ; xml2mmcif -xml $pdbml_vrpt_file -dict $pdbx_validation_dic -df $pdbx_validation_odb > /dev/null && ( mv -f $pdbml_vrpt_file.cif $mmcif_vrpt_file && rm $pdbml_vrpt_file && sed -i -e "s/\._\([0-9]\)\(\S*\) /\.\1\2  /" $mmcif_vrpt_file ) || exit 1 )
+
+   if [ ! -d $div_dir ] ; then
+    if [ -e $div_dir ] ; then
+     rm -f $div_dir
+    fi
+    mkdir -p $div_dir
+   fi
+
+   mv -f $mmcif_vrpt_file $div_dir && gzip $mmcif_vrpt_div_file
 
    if [ $proc_id_mod = 0 ] ; then
     echo -e -n "\rDone "$((proc_id + 1)) of $total ...
