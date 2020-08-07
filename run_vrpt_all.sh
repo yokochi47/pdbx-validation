@@ -100,10 +100,12 @@ if [ $ext_pdbml_exit_code = 0 ] || [ $ext_info_exit_code = 0 ] || [ $xml_total -
 
  fi
 
- ./scripts/transl_to_rdf_vrpt.sh
+ ./scripts/compress_pdbml_vrpt.sh
+
+ ./scripts/transl_to_rdf_vrpt_from_pdbml_gz.sh
 
  if [ $has_xml2mmcif_command != "false" ] ; then
-  ./scripts/transl_to_mmcif_vrpt.sh
+  ./scripts/transl_to_mmcif_vrpt_from_pdbml_gz.sh
  fi
 
 # Deprecated: update_pdbml.sh has already removed.
@@ -111,27 +113,27 @@ if [ $ext_pdbml_exit_code = 0 ] || [ $ext_info_exit_code = 0 ] || [ $xml_total -
 
 # Deprecated: update_vrpt.sh has already removed.
 # ./scripts/sync_delete_with_vrpt.sh
-
+<<REMARK
  ./scripts/compress_pdbml_vrpt.sh
  ./scripts/compress_rdf_vrpt.sh
 
  if [ $has_xml2mmcif_command != "false" ] ; then
   ./scripts/compress_mmcif_vrpt.sh
  fi
-
+REMARK
  ./scripts/transl_to_rdf_vrpt_alt.sh
 
  if [ $has_xml2mmcif_command != "false" ] ; then
   ./scripts/transl_to_mmcif_vrpt_alt.sh
  fi
-
+<<REMARK
  ./scripts/compress_pdbml_vrpt_alt.sh
  ./scripts/compress_rdf_vrpt_alt.sh
 
  if [ $has_xml2mmcif_command != "false" ] ; then
   ./scripts/compress_mmcif_vrpt_alt.sh
  fi
-
+REMARK
 fi
 
 echo
