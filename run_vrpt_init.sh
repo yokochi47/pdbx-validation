@@ -21,7 +21,7 @@ fi
 
 ./scripts/merge_pdbml_info.sh -v
 
-./scripts/compress_pdbml_vrpt.sh
+#./scripts/compress_pdbml_vrpt.sh
 
 if [[ $(find wurcs2glytoucan/glytoucan.xml -mtime +4) ]] ; then
  ( cd wurcs2glytoucan; ./update_glytoucan.sh )
