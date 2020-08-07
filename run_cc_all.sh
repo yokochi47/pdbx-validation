@@ -28,7 +28,7 @@ fi
 
 ./scripts/transl_to_rdf_cc.sh
 
-./scripts/compress_rdf_cc.sh
+#./scripts/compress_rdf_cc.sh
 
 echo
 echo Everything is up-to-date.

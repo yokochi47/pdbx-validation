@@ -72,14 +72,22 @@ do
   pdb_id=`basename $pdbml_ext_file -noatom-ext.xml`
   info_alt_file=$VALID_INFO_ALT/$pdb_id-validation-alt.xml
   pdbml_vrpt_file=$WORK_DIR/$pdb_id-validation-full.xml
-  pdbml_vrpt_gz_file=$WORK_DIR/${pdb_id:1:2}/$pdb_id-validation-full.xml.gz
+  div_dir=$WORK_DIR/${pdb_id:1:2}
+  pdbml_vrpt_div_file=$div_dir/$pdb_id-validation-full.xml
   err_file=$WORK_DIR/merge_pdbml_info_$pdb_id.err
 
-  if [ -e $info_alt_file ] && ( ( [ ! -e $pdbml_vrpt_file ] && [ ! -e $pdbml_vrpt_gz_file ] ) || [ -e $err_file ] ); then
+  if [ -e $info_alt_file ] && ( ( [ ! -e $pdbml_vrpt_file ] && [ ! -e $pdbml_vrpt_div_file.gz ] ) || [ -e $err_file ] ); then
 
    java -jar $SAXON -s:$pdbml_ext_file -xsl:$MERGE_PDBML_INFO_XSL -o:$pdbml_vrpt_file info_alt_file=../$info_alt_file 2> $err_file && rm -f $err_file || ( cat $err_file && exit 1 )
 
    xml_pretty $pdbml_vrpt_file
+
+   if [ ! -d $div_dir ] ; then
+    if [ -e $div_dir ] ; then
+     rm -f $div_dir
+    fi
+    mkdir -p $div_dir
+   fi
 
    if [ $VALIDATE = 'true' ] ; then
 
@@ -87,6 +95,7 @@ do
 
     if [ $? = 0 ] ; then
      rm -f $err_file
+     mv -f $pdbml_vrpt_file $div_dir && gzip $pdbml_vrpt_div_file
      if [ $proc_id_mod = 0 ] ; then
       echo -e -n "\rDone "$((proc_id + 1)) of $total ...
      fi
@@ -95,6 +104,7 @@ do
     fi
 
    elif [ $proc_id_mod = 0 ] ; then
+    mv -f $pdbml_vrpt_file $div_dir && gzip $pdbml_vrpt_div_file
     echo -e -n "\rDone "$((proc_id + 1)) of $total ...
    fi
 

@@ -32,7 +32,7 @@ fi
 
 ./scripts/transl_to_rdf_pdb.sh
 
-./scripts/compress_rdf_pdb.sh
+#./scripts/compress_rdf_pdb.sh
 
 echo
 echo Everything is up-to-date.
