@@ -77,7 +77,7 @@ do
     rapper -q -c $rdf_file 2> $err_file && rm -f $err_file || ( cat $err_file && exit 1 )
    fi
 
-   gzip $file_file
+   gzip $rdf_file
 
    if [ $proc_id_mod = 0 ] ; then
     echo -e -n "\rDone "$((proc_id + 1)) of $total ...
