@@ -73,7 +73,7 @@ do
     mkdir -p $div_dir
    fi
 
-   mv -f $mmcif_vrpt_file $div_dir && gzip $mmcif_vrpt_div_file
+   mv -f $WORK_DIR/$mmcif_vrpt_file $div_dir && gzip $mmcif_vrpt_div_file
 
    if [ $proc_id_mod = 0 ] ; then
     echo -e -n "\rDone "$((proc_id + 1)) of $total ...
