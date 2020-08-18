@@ -36,7 +36,7 @@ for dicfile in $pdbx_validation_dic $pdbx_validation_odb $pdbx_validation_sdb ; 
 
 done
 
-last=`find $MMCIF_VALID -maxdepth 1 -name '*.cif' | wc -l`
+last=`find $MMCIF_VALID -maxdepth 2 -name '*.cif.gz' | wc -l`
 total=`find $XML_VALID -maxdepth 1 -name '*.xml' | wc -l`
 
 if [ $total != $last ] ; then

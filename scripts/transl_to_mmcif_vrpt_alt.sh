@@ -18,12 +18,12 @@ if [ ! -e $PDBX_VALIDATION_XSD ] ; then
  ( cd schema; ./update_schema.sh )
 fi
 
-if [ ! -d $VALID_INFO_ALT ] ; then
+if [ ! -d $XML_VALID_ALT ] ; then
  ./scripts/extract_info.sh
 fi
 
-if [ ! -e $VALID_INFO_ALT/$pdbx_validation_xsd ] ; then
- ( cd $VALID_INFO_ALT; ln -s ../$PDBX_VALIDATION_XSD . )
+if [ ! -e $XML_VALID_ALT/$pdbx_validation_xsd ] ; then
+ ( cd $XML_VALID_ALT; ln -s ../$PDBX_VALIDATION_XSD . )
 fi
 
 mkdir -p $MMCIF_VALID_ALT
@@ -36,8 +36,9 @@ for dicfile in $pdbx_validation_dic $pdbx_validation_odb $pdbx_validation_sdb ; 
 
 done
 
-last=`find $MMCIF_VALID_ALT -maxdepth 1 -name '*.cif' | wc -l`
-total=`find $VALID_INFO_ALT -maxdepth 1 -name '*.xml' | wc -l`
+last=`find $MMCIF_VALID_ALT -maxdepth 2 -name '*.cif.gz' | wc -l`
+#total=`find $VALID_INFO_ALT -maxdepth 1 -name '*.xml' | wc -l`
+total=`find $XML_VALID_ALT -maxdepth 2 -name '*.xml.gz' | wc -l`
 
 if [ $total != $last ] ; then
 
@@ -46,7 +47,8 @@ if [ $total != $last ] ; then
 
  pdbml_file_list=pdbml_to_mmcif_alt_file_list
 
- find $VALID_INFO_ALT -maxdepth 1 -name '*.xml' > $pdbml_file_list
+# find $VALID_INFO_ALT -maxdepth 1 -name '*.xml' > $pdbml_file_list
+ find $XML_VALID_ALT -maxdepth 2 -name '*.xml.gz' > $pdbml_file_list
 
  for proc_id in `seq 1 $MAXPROCS` ; do
 
@@ -69,8 +71,8 @@ if [ $total != $last ] ; then
 
 fi
 
-if [ -e $VALID_INFO_ALT/$pdbx_validation_xsd ] ; then
- rm $VALID_INFO_ALT/$pdbx_validation_xsd
+if [ -e $XML_VALID_ALT/$pdbx_validation_xsd ] ; then
+ rm $XML_VALID_ALT/$pdbx_validation_xsd
 fi
 
 for dicfile in $pdbx_validation_dic $pdbx_validation_odb $pdbx_validation_sdb PdbMlParser.log ; do

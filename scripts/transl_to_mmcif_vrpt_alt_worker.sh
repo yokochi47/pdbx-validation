@@ -42,28 +42,32 @@ PROC_ID=$(($PROC_ID - 1))
 proc_id=0
 total=`wc -l < $FILE_LIST`
 
-while read pdbml_vrpt_file
+while read pdbml_vrpt_gz_file
 do
 
  proc_id_mod=$(($proc_id % $MAXPROCS))
 
  if [ $proc_id_mod = $PROC_ID ] ; then
 
-  if [ ! -e $pdbml_vrpt_file ] ; then
+  if [ ! -e $pdbml_vrpt_gz_file ] ; then
 
    let proc_id++
    continue
 
   fi
 
-  pdb_id=`basename $pdbml_vrpt_file -validation-alt.xml`
+  #pdb_id=`basename $pdbml_vrpt_file -validation-alt.xml`
+  pdb_id=`basename $pdbml_vrpt_gz_file -validation-alt.xml.gz`
   mmcif_vrpt_file=$pdb_id-validation-alt.cif
   div_dir=$WORK_DIR/${pdb_id:1:2}
   mmcif_vrpt_div_file=$div_dir/$pdb_id-validation-alt.cif
 
   if [ ! -e $WORK_DIR/$mmcif_vrpt_file ] && [ ! -e $mmcif_vrpt_div_file.gz ] ; then
 
-   ( cd $WORK_DIR ; xml2mmcif -xml ../$pdbml_vrpt_file -dict $pdbx_validation_dic -df $pdbx_validation_odb > /dev/null && mv -f ../$pdbml_vrpt_file.cif $mmcif_vrpt_file && sed -i -e "s/\._\([0-9]\)\(\S*\) /\.\1\2  /" $mmcif_vrpt_file )
+   pdbml_vrpt_file=${pdbml_vrpt_gz_file::-3} # remove the last '.gz'
+   gunzip -c $pdbml_vrpt_gz_file > $pdbml_vrpt_file
+
+   ( cd $WORK_DIR ; xml2mmcif -xml ../$pdbml_vrpt_file -dict $pdbx_validation_dic -df $pdbx_validation_odb > /dev/null && rm -f ../$pdbml_vrpt_file && mv -f ../$pdbml_vrpt_file.cif $mmcif_vrpt_file && sed -i -e "s/\._\([0-9]\)\(\S*\) /\.\1\2  /" $mmcif_vrpt_file )
 
    if [ ! -d $div_dir ] ; then
     if [ -e $div_dir ] ; then

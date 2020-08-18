@@ -29,7 +29,7 @@ fi
 
 mkdir -p $RDF_VALID
 
-last=`find $RDF_VALID -maxdepth 1 -name '*.rdf' | wc -l`
+last=`find $RDF_VALID -maxdepth 2 -name '*.rdf.gz' | wc -l`
 total=`find $XML_VALID -maxdepth 1 -name '*.xml' | wc -l`
 err=`find $RDF_VALID -maxdepth 1 -name '*.err' | wc -l`
 

@@ -140,7 +140,7 @@ REMARK
  if [ -d $PDBML_EXT ] ; then
   while read pdb_id ; do
    [ -z "$pdb_id" ] || [[ "$pdb_id" =~ ^#.* ]] && continue
-   rm -f $PDBML_EXT/$pdb_id-noatom-ext.xml
+   rm -f $PDBML_EXT/$pdb_id-noatom-ext.xml.gz
   done < $chk_sum_log
  fi
 

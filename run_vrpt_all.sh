@@ -57,14 +57,16 @@ else
  ext_pdbml_exit_code=$?
 
  if [ ! -z $VALID_OPT ] ; then
-  ./scripts/validate_all_xml.sh -d $PDBML_EXT
+  ./scripts/validate_all_xml_gz.sh -d $PDBML_EXT
  fi
 
 fi
 
-total=`ls $VALID_INFO_ALT 2> /dev/null | wc -l`
+#total=`ls $VALID_INFO_ALT 2> /dev/null | wc -l`
+total=`find $XML_VALID_ALT -mindepth 2 -name '*.xml.gz' | wc -l`
 
-if [ -d $VALID_INFO_ALT ] && [ $total -gt $huge_number ] ; then
+#if [ -d $VALID_INFO_ALT ] && [ $total -gt $huge_number ] ; then
+if [ -d $XML_VALID_ALT ] && [ $total -gt $huge_number ] ; then
 
  ./scripts/extract_info.sh $VALID_OPT
  ext_info_exit_code=$?
@@ -75,7 +77,8 @@ else
  ext_info_exit_code=$?
 
  if [ ! -z $VALID_OPT ] ; then
-  ./scripts/validate_all_xml.sh -d $VALID_INFO_ALT
+#  ./scripts/validate_all_xml.sh -d $VALID_INFO_ALT
+  ./scripts/validate_all_xml_gz.sh -d $XML_VALID_ALT
  fi
 
 fi
@@ -89,7 +92,7 @@ fi
 
 if [ $ext_pdbml_exit_code = 0 ] || [ $ext_info_exit_code = 0 ] || [ $xml_total -le $huge_number ] || [ $rdf_total -le $huge_number ] ; then
 
- ./scripts/compress_pdbml_vrpt_alt.sh
+# ./scripts/compress_pdbml_vrpt_alt.sh
 
  if [ -d $XML_VALID ] && [ $xml_total -gt $huge_number ] ; then
 

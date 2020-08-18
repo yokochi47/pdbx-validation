@@ -55,30 +55,36 @@ PROC_ID=$(($PROC_ID - 1))
 proc_id=0
 total=`wc -l < $FILE_LIST`
 
-while read pdbml_ext_file
+while read pdbml_ext_gz_file
 do
 
  proc_id_mod=$(($proc_id % $MAXPROCS))
 
  if [ $proc_id_mod = $PROC_ID ] ; then
 
-  if [ ! -e $pdbml_ext_file ] ; then
+  if [ ! -e $pdbml_ext_gz_file ] ; then
 
    let proc_id++
    continue
 
   fi
 
-  pdb_id=`basename $pdbml_ext_file -noatom-ext.xml`
-  info_alt_file=$VALID_INFO_ALT/$pdb_id-validation-alt.xml
+  #pdb_id=`basename $pdbml_ext_file -noatom-ext.xml`
+  pdb_id=`basename $pdbml_ext_gz_file -noatom-ext.xml.gz`
+  info_alt_file=$XML_VALID_ALT/${pdb_id:1:2}/$pdb_id-validation-alt.xml
   pdbml_vrpt_file=$WORK_DIR/$pdb_id-validation-full.xml
   div_dir=$WORK_DIR/${pdb_id:1:2}
   pdbml_vrpt_div_file=$div_dir/$pdb_id-validation-full.xml
   err_file=$WORK_DIR/merge_pdbml_info_$pdb_id.err
 
-  if [ -e $info_alt_file ] && ( ( [ ! -e $pdbml_vrpt_file ] && [ ! -e $pdbml_vrpt_div_file.gz ] ) || [ -e $err_file ] ); then
+  if [ -e $info_alt_file.gz ] && ( ( [ ! -e $pdbml_vrpt_file ] && [ ! -e $pdbml_vrpt_div_file.gz ] ) || [ -e $err_file ] ); then
 
-   java -jar $SAXON -s:$pdbml_ext_file -xsl:$MERGE_PDBML_INFO_XSL -o:$pdbml_vrpt_file info_alt_file=../$info_alt_file 2> $err_file && rm -f $err_file || ( cat $err_file && exit 1 )
+   pdbml_ext_file=${pdbml_ext_gz_file::-3} # remove the last '.gz'
+
+   gunzip -c $pdbml_ext_gz_file > $pdbml_ext_file
+   gunzip -c $info_alt_file.gz > $info_alt_file
+
+   java -jar $SAXON -s:$pdbml_ext_file -xsl:$MERGE_PDBML_INFO_XSL -o:$pdbml_vrpt_file info_alt_file=../$info_alt_file 2> $err_file && rm -f $err_file $pdbml_ext_file $info_alt_file || ( rm -f $pdbml_ext_file $info_alt_file && cat $err_file && exit 1 )
 
    xml_pretty $pdbml_vrpt_file
 

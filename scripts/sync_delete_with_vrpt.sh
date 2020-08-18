@@ -26,8 +26,8 @@ if [ -d $PDBML_EXT ] ; then
 
  while read pdb_id ; do
   if [ ! -e $SRC_DIR/${pdb_id:1:2}/$pdb_id/$pdb_id$src_file_ext ] ; then
-   echo deleting $PDBML_EXT/$pdb_id-noatom-ext.xml
-   rm -f $PDBML_EXT/$pdb_id-noatom-ext.xml
+   echo deleting $PDBML_EXT/$pdb_id-noatom-ext.xml.gz
+   rm -f $PDBML_EXT/$pdb_id-noatom-ext.xml.gz
   fi
  done < $pdb_id_list
 

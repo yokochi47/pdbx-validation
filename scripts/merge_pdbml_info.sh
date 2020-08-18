@@ -43,15 +43,15 @@ if [ ! -d $PDBML_EXT ] ; then
  ./scripts/extract_pdbml.sh
 fi
 
-if [ ! -d $VALID_INFO_ALT ] ; then
+if [ ! -d $XML_VALID_ALT ] ; then
  ./scripts/extract_info.sh
 fi
 
 mkdir -p $XML_VALID
 
-last=`find $XML_VALID -maxdepth 1 -name '*.xml' | wc -l`
+last=`find $XML_VALID -maxdepth 2 -name '*.xml.gz' | wc -l`
 err=`find $XML_VALID -maxdepth 1 -name '*.err' | wc -l`
-total=`find $PDBML_EXT -maxdepth 1 -name '*.xml' | wc -l`
+total=`find $PDBML_EXT -maxdepth 1 -name '*.xml.gz' | wc -l`
 
 if [ $err != 0 ] || [ $total != $last ] ; then
 
@@ -60,7 +60,7 @@ if [ $err != 0 ] || [ $total != $last ] ; then
 
  pdbml_file_list=merge_pdbml_file_list
 
- find $PDBML_EXT -maxdepth 1 -name '*.xml' > $pdbml_file_list
+ find $PDBML_EXT -maxdepth 1 -name '*.xml.gz' > $pdbml_file_list
 
  for proc_id in `seq 1 $MAXPROCS` ; do
 
