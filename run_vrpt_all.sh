@@ -102,7 +102,7 @@ if [ $ext_pdbml_exit_code = 0 ] || [ $ext_info_exit_code = 0 ] || [ $xml_total -
 
  fi
 
-# ./scripts/compress_pdbml_vrpt.sh
+ #./scripts/compress_pdbml_vrpt.sh
 
  ./scripts/transl_to_rdf_vrpt_from_pdbml_gz.sh
 

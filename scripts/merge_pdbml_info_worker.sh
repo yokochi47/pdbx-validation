@@ -103,9 +103,11 @@ do
      cat $err_file
     fi
 
-   elif [ $proc_id_mod = 0 ] ; then
+   else
     mv -f $pdbml_vrpt_file $div_dir && gzip $pdbml_vrpt_div_file
-    echo -e -n "\rDone "$((proc_id + 1)) of $total ...
+    if [ $proc_id_mod = 0 ] ; then
+     echo -e -n "\rDone "$((proc_id + 1)) of $total ...
+    fi
    fi
 
   fi
