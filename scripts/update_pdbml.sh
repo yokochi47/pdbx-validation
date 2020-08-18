@@ -22,7 +22,7 @@ done
 DB_NAME=PDBML-noatom
 
 SRC_DIR=$PDBML_NOATOM
-XML_DIR=$PDBML
+#XML_DIR=$PDBML
 
 weekday=`date -u +"%w"`
 
@@ -129,14 +129,14 @@ if [ $weekday -ge 1 ] && [ $weekday -le 4 ] ; then
  if [ ! -z $MTIME ] ; then
   find $SRC_DIR -name "*.xml.gz" -mtime $MTIME | cut -d '/' -f 3 | cut -d '-' -f 1 > $chk_sum_log
  fi
-
+<<REMARK
  if [ -d $XML_DIR ] ; then
   while read pdb_id ; do
    [ -z "$pdb_id" ] || [[ "$pdb_id" =~ ^#.* ]] && continue
    rm -f $XML_DIR/$pdb_id-noatom.xml
   done < $chk_sum_log
  fi
-
+REMARK
  if [ -d $PDBML_EXT ] ; then
   while read pdb_id ; do
    [ -z "$pdb_id" ] || [[ "$pdb_id" =~ ^#.* ]] && continue
@@ -274,7 +274,7 @@ if [ $updated = 0 ] || [ ! -e $xml_file_total ] ; then
  if [ $total = $last ] ; then
 
   echo $DB_NAME" ("$SRC_DIR") is up-to-date."
-
+<<REMARK
   if [ -d $XML_DIR ] ; then
 
    unzipped=`find $XML_DIR -maxdepth 1 -name '*.xml' | wc -l`
@@ -284,7 +284,7 @@ if [ $updated = 0 ] || [ ! -e $xml_file_total ] ; then
    fi
 
   fi
-
+REMARK
  else
 
    echo $total > $xml_file_total
@@ -294,6 +294,8 @@ if [ $updated = 0 ] || [ ! -e $xml_file_total ] ; then
 fi
 
 date -u +"%b %d, %Y" > /tmp/pdbml-last
+
+exit ### do not uncompress
 
 gz_file_list=`echo ${SRC_DIR,,}_gz_file_list | tr '-' _`
 

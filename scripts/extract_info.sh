@@ -28,7 +28,7 @@ fi
 
 mkdir -p $VALID_INFO_ALT
 
-if [ ! -d $VALID_INFO ] ; then
+if [ ! -d $VALID_REPORT ] ; then
  ./scripts/update_vrpt.sh
 fi
 
@@ -38,7 +38,8 @@ fi
 
 last=`find $VALID_INFO_ALT -maxdepth 1 -name '*.xml' | wc -l`
 err=`find $VALID_INFO_ALT -maxdepth 1 -name '*.err' | wc -l`
-total=`find $VALID_INFO -maxdepth 1 -name '*.xml' | wc -l`
+#total=`find $VALID_INFO -maxdepth 1 -name '*.xml' | wc -l`
+total=`find $VALID_REPORT -maxdepth 3 -name '*_validation.xml.gz' | wc -l`
 
 if [ $err != 0 ] || [ $total != $last ] ; then
 
@@ -47,7 +48,8 @@ if [ $err != 0 ] || [ $total != $last ] ; then
 
  info_file_list=extract_info_file_list
 
- find $VALID_INFO -maxdepth 1 -name '*.xml' > $info_file_list
+# find $VALID_INFO -maxdepth 1 -name '*.xml' > $info_file_list
+ find $VALID_REPORT -maxdepth 3 -name '*_validation.xml.gz' > $info_file_list
 
  for proc_id in `seq 1 $MAXPROCS` ; do
 

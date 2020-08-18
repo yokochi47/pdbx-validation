@@ -42,35 +42,40 @@ PROC_ID=$(($PROC_ID - 1))
 proc_id=0
 total=`wc -l < $FILE_LIST`
 
-while read pdbml_file
+while read pdbml_gz_file
 do
 
  proc_id_mod=$(($proc_id % $MAXPROCS))
 
  if [ $proc_id_mod = $PROC_ID ] ; then
 
-  if [ ! -e $pdbml_file ] ; then
+  if [ ! -e $pdbml_gz_file ] ; then
 
    let proc_id++
    continue
 
   fi
 
-  pdb_id=`basename $pdbml_file -noatom.xml`
+#  pdb_id=`basename $pdbml_file -noatom.xml`
+  pdb_id=`basename $pdbml_gz_file -noatom.xml.gz`
   rdf_file=$WORK_DIR/$pdb_id.rdf
   rdf_gz_file=$WORK_DIR/$pdb_id.rdf.gz
   err_file=$WORK_DIR/transl_to_rdf_pdb_$pdb_id.err
-  #has_glycan=`java -jar $SAXON -s:$pdbml_file -xsl:$PDBML2WURCS_XSL`
-  has_glycan=`xsltproc $PDBML2WURCS_XSL $pdbml_file`
-  #grep WURCS $pdbml_file > /dev/null
-  #has_glycan=$?
 
   if ( [ ! -e $rdf_file ] && [ ! -e $rdf_gz_file ] ) || [ -e $err_file ] ; then
 
+   pdbml_file=${pdbml_gz_file::-3} # remove the last '.gz'
+   gunzip -c $pdbml_gz_file > $pdbml_file
+
+   #has_glycan=`java -jar $SAXON -s:$pdbml_file -xsl:$PDBML2WURCS_XSL`
+   has_glycan=`xsltproc $PDBML2WURCS_XSL $pdbml_file`
+   #grep WURCS $pdbml_file > /dev/null
+   #has_glycan=$?
+
    if [ -z "$has_glycan" ] ; then
-    xsltproc -o $rdf_file --param wurcs2glytoucan $_GLYTOUCAN_XML $PDBML2RDF_XSL $pdbml_file 2> $err_file && rm -f $err_file || ( cat $err_file && exit 1 )
+    xsltproc -o $rdf_file --param wurcs2glytoucan $_GLYTOUCAN_XML $PDBML2RDF_XSL $pdbml_file 2> $err_file && rm -f $err_file $pdbml_file || ( rm -f $pdbml_file && cat $err_file && exit 1 )
    else
-    java -jar $SAXON -s:$pdbml_file -xsl:$PDBML2RDF_XSL -o:$rdf_file wurcs2glytoucan=$GLYTOUCAN_XML 2> $err_file && rm -f $err_file || ( cat $err_file && exit 1 )
+    java -jar $SAXON -s:$pdbml_file -xsl:$PDBML2RDF_XSL -o:$rdf_file wurcs2glytoucan=$GLYTOUCAN_XML 2> $err_file && rm -f $err_file $pdbml_file || ( rm -f $pdbml_file && cat $err_file && exit 1 )
    fi
 
    if [ $has_rapper_command != "false" ] ; then

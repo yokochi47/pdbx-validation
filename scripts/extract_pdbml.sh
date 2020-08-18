@@ -41,17 +41,18 @@ fi
 
 mkdir -p $PDBML_EXT
 
-if [ ! -d $PDBML ] ; then
+if [ ! -d $PDBML_NOATOM ] ; then
  ./scripts/update_pdbml.sh
 fi
 
-if [ ! -d $VALID_INFO ] ; then
+if [ ! -d $VALID_REPORT ] ; then
  ./scripts/update_vrpt.sh
 fi
 
 last=`find $PDBML_EXT -maxdepth 1 -name '*.xml' | wc -l`
 err=`find $PDBML_EXT -maxdepth 1 -name '*.err' | wc -l`
-total=`find $VALID_INFO -maxdepth 1 -name '*.xml' | wc -l`
+#total=`find $VALID_INFO -maxdepth 1 -name '*.xml' | wc -l`
+total=`find $VALID_REPORT -maxdepth 3 -name '*_validation.xml.gz' | wc -l`
 
 if [ $err != 0 ] || [ $total != $last ] ; then
 
@@ -60,7 +61,8 @@ if [ $err != 0 ] || [ $total != $last ] ; then
 
  pdbml_file_list=extract_pdbml_file_list
 
- find $PDBML -maxdepth 1 -name '*.xml' > $pdbml_file_list
+# find $PDBML -maxdepth 1 -name '*.xml' > $pdbml_file_list
+ find $PDBML_NOATOM -maxdepth 2 -name '*-noatom.xml.gz' > $pdbml_file_list
 
  for proc_id in `seq 1 $MAXPROCS` ; do
 
