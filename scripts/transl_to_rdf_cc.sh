@@ -30,7 +30,8 @@ fi
 mkdir -p $COMPONENTS_RDF
 
 last=`find $COMPONENTS_RDF -maxdepth 1 -name '*.rdf' | wc -l`
-total=`find $COMPONENTS_XML -maxdepth 1 -name '*.xml' | wc -l`
+#total=`find $COMPONENTS_XML -maxdepth 1 -name '*.xml' | wc -l`
+total=`find $PDBML_CC -maxdepth 1 -name '*.xml' | wc -l`
 err=`find $COMPONENTS_RDF -maxdepth 1 -name '*.err' | wc -l`
 
 if [ $err != 0 ] || [ $total != $last ] ; then
@@ -40,7 +41,8 @@ if [ $err != 0 ] || [ $total != $last ] ; then
 
  pdbml_file_list=pdbml_to_rdf_cc_file_list
 
- find $COMPONENTS_XML -maxdepth 1 -name '*.xml' > $pdbml_file_list
+# find $ -maxdepth 1 -name '*.xml' > $pdbml_file_list
+ find $PDBML_CC -maxdepth 1 -name '*.xml' > $pdbml_file_list
 
  for proc_id in `seq 1 $MAXPROCS` ; do
 

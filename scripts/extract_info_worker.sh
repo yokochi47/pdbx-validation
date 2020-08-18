@@ -55,28 +55,32 @@ PROC_ID=$(($PROC_ID - 1))
 proc_id=0
 total=`wc -l < $FILE_LIST`
 
-while read info_file
+while read info_gz_file
 do
 
  proc_id_mod=$(($proc_id % $MAXPROCS))
 
  if [ $proc_id_mod = $PROC_ID ] ; then
 
-  if [ ! -e $info_file ] ; then
+  if [ ! -e $info_gz_file ] ; then
 
    let proc_id++
    continue
 
   fi
 
-  pdb_id=`basename $info_file _validation.xml`
+#  pdb_id=`basename $info_file _validation.xml`
+  pdb_id=`basename $info_gz_file _validation.xml.gz`
   info_alt_file=$WORK_DIR/$pdb_id-validation-alt.xml
   pdbml_ext_file=$PDBML_EXT/$pdb_id-noatom-ext.xml
   err_file=$WORK_DIR/extract_info_$pdb_id.err
 
   if [ -e $pdbml_ext_file ] && ( [ ! -e $info_alt_file ] || [ -e $err_file ] ) ; then
 
-   java -jar $SAXON -s:$info_file -xsl:$EXT_INFO_XSL -o:$info_alt_file pdbml_ext_file=../$pdbml_ext_file 2> $err_file && rm -f $err_file || ( cat $err_file && exit 1 )
+   info_file=${info_gz_file::-3} # remove the last '.gz'
+   gunzip -c $info_gz_file > $info_file
+
+   java -jar $SAXON -s:$info_file -xsl:$EXT_INFO_XSL -o:$info_alt_file pdbml_ext_file=../$pdbml_ext_file 2> $err_file && rm -f $err_file $info_file || ( rm -f $info_file && cat $err_file && exit 1 )
 
    xml_pretty $info_alt_file
 

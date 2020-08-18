@@ -23,7 +23,7 @@ DB_NAME="wwPDB Validation Report"
 ALT_NAME="wwPDB Validation Information"
 
 SRC_DIR=$VALID_REPORT
-XML_DIR=$VALID_INFO
+#XML_DIR=$VALID_INFO
 
 weekday=`date -u +"%w"`
 
@@ -130,14 +130,14 @@ if [ $weekday -ge 1 ] && [ $weekday -le 4 ] ; then
  if [ ! -z $MTIME ] ; then
   find $SRC_DIR -name "*_validation.xml.gz" -mtime $MTIME | cut -d '/' -f 4 | cut -d '_' -f 1 > $chk_sum_log
  fi
-
+<<REMARK
  if [ -d $XML_DIR ] ; then
   while read pdb_id ; do
    [ -z "$pdb_id" ] || [[ "$pdb_id" =~ ^#.* ]] && continue
    rm -f $XML_DIR/$pdb_id"_validation.xml"
   done < $chk_sum_log
  fi
-
+REMARK
  if [ -d $VALID_INFO_ALT ] ; then
   while read pdb_id ; do
    [ -z "$pdb_id" ] || [[ "$pdb_id" =~ ^#.* ]] && continue
@@ -254,7 +254,7 @@ if [ $updated = 0 ] || [ ! -e $xml_file_total ] ; then
  if [ $total = $last ] ; then
 
   echo $DB_NAME" ("$SRC_DIR") is up-to-date."
-
+<<REMARK
   if [ -d $XML_DIR ] ; then
 
    unzipped=`find $XML_DIR -maxdepth 1 -name '*.xml' | wc -l`
@@ -264,7 +264,7 @@ if [ $updated = 0 ] || [ ! -e $xml_file_total ] ; then
    fi
 
   fi
-
+REMARK
  else
 
    echo $total > $xml_file_total
@@ -274,6 +274,8 @@ if [ $updated = 0 ] || [ ! -e $xml_file_total ] ; then
 fi
 
 date -u +"%b %d, %Y" > /tmp/pdb-vrpt-last
+
+exit ### do not uncompress
 
 gz_file_list=`echo ${SRC_DIR,,}_gz_file_list | tr '-' _`
 

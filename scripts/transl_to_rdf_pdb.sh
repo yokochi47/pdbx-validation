@@ -23,14 +23,15 @@ if [ ! -e $PDBML2RDF_XSL ] ; then
 
 fi
 
-if [ ! -d $PDBML ] ; then
+if [ ! -d $PDBML_NOATOM ] ; then
  ./scripts/update_pdbml.sh
 fi
 
 mkdir -p $RDF
 
 last=`find $RDF -maxdepth 1 -name '*.rdf' | wc -l`
-total=`find $PDBML -maxdepth 1 -name '*.xml' | wc -l`
+#total=`find $PDBML -maxdepth 1 -name '*.xml' | wc -l`
+total=`find $PDBML_NOATOM -maxdepth 2 -name '*-noatom.xml.gz' | wc -l`
 err=`find $RDF -maxdepth 1 -name '*.err' | wc -l`
 
 if [ $err != 0 ] || [ $total != $last ] ; then
@@ -40,7 +41,8 @@ if [ $err != 0 ] || [ $total != $last ] ; then
 
  pdbml_file_list=pdbml_to_rdf_pdb_file_list
 
- find $PDBML -maxdepth 1 -name '*.xml' > $pdbml_file_list
+# find $PDBML -maxdepth 1 -name '*.xml' > $pdbml_file_list
+ find $PDBML_NOATOM -maxdepth 2 -name '*-noatom.xml.gz' > $pdbml_file_list
 
  for proc_id in `seq 1 $MAXPROCS` ; do
 
