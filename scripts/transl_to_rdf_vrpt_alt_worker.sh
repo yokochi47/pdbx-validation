@@ -42,21 +42,22 @@ PROC_ID=$(($PROC_ID - 1))
 proc_id=0
 total=`wc -l < $FILE_LIST`
 
-while read pdbml_vrpt_file
+while read pdbml_vrpt_gz_file
 do
 
  proc_id_mod=$(($proc_id % $MAXPROCS))
 
  if [ $proc_id_mod = $PROC_ID ] ; then
 
-  if [ ! -e $pdbml_vrpt_file ] ; then
+  if [ ! -e $pdbml_vrpt_gz_file ] ; then
 
    let proc_id++
    continue
 
   fi
 
-  pdb_id=`basename $pdbml_vrpt_file -validation-alt.xml`
+  #pdb_id=`basename $pdbml_vrpt_file -validation-alt.xml`
+  pdb_id=`basename $pdbml_vrpt_gz_file -validation-alt.xml.gz`
   rdf_vrpt_file=$WORK_DIR/$pdb_id-validation-alt.rdf
   div_dir=$WORK_DIR/${pdb_id:1:2}
   rdf_vrpt_div_file=$div_dir/$pdb_id-validation-alt.rdf
@@ -64,8 +65,11 @@ do
 
   if ( [ ! -e $rdf_vrpt_file ] && [ ! -e $rdf_vrpt_div_file.gz ] ) || [ -e $err_file ] ; then
 
-   #java -jar $SAXON -s:$pdbml_vrpt_file -xsl:$PDBMLV2RDF_XSL -o:$rdf_vrpt_file wurcs2glytoucan=$GLYTOUCAN_XML 2> $err_file && rm -f $err_file || ( cat $err_file && exit 1 )
-   xsltproc -o $rdf_vrpt_file --param wurcs2glytoucan $_GLYTOUCAN_XML $PDBMLV2RDF_XSL $pdbml_vrpt_file 2> $err_file && rm -f $err_file || ( cat $err_file && exit 1 )
+   pdbml_vrpt_file=${pdbml_vrpt_gz_file::-3} # remove the last '.gz'
+   gunzip -c $pdbml_vrpt_gz_file > $pdbml_vrpt_file
+
+   #java -jar $SAXON -s:$pdbml_vrpt_file -xsl:$PDBMLV2RDF_XSL -o:$rdf_vrpt_file wurcs2glytoucan=$GLYTOUCAN_XML 2> $err_file && rm -f $err_file $pdbml_vrpt_file || ( rm -f $pdbml_vrpt_file && cat $err_file && exit 1 )
+   xsltproc -o $rdf_vrpt_file --param wurcs2glytoucan $_GLYTOUCAN_XML $PDBMLV2RDF_XSL $pdbml_vrpt_file 2> $err_file && rm -f $err_file $pdbml_vrpt_file || ( rm -f $pdbml_vrpt_file && cat $err_file && exit 1 )
 
    if [ $has_rapper_command != "false" ] ; then
     rapper -q -c $rdf_vrpt_file 2> $err_file && rm -f $err_file || ( cat $err_file && exit 1 )

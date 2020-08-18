@@ -72,17 +72,28 @@ do
 #  pdb_id=`basename $info_file _validation.xml`
   pdb_id=`basename $info_gz_file _validation.xml.gz`
   info_alt_file=$WORK_DIR/$pdb_id-validation-alt.xml
+  div_dir=$WORK_DIR/${pdb_id:1:2}
+  info_alt_div_file=$div_dir/$pdb_id-validation-alt.xml
   pdbml_ext_file=$PDBML_EXT/$pdb_id-noatom-ext.xml
   err_file=$WORK_DIR/extract_info_$pdb_id.err
 
-  if [ -e $pdbml_ext_file ] && ( [ ! -e $info_alt_file ] || [ -e $err_file ] ) ; then
+  if [ -e $pdbml_ext_file.gz ] && ( ( [ ! -e $info_alt_file ] && [ ! -e $info_alt_div_file.gz ] ) || [ -e $err_file ] ) ; then
 
    info_file=${info_gz_file::-3} # remove the last '.gz'
    gunzip -c $info_gz_file > $info_file
 
-   java -jar $SAXON -s:$info_file -xsl:$EXT_INFO_XSL -o:$info_alt_file pdbml_ext_file=../$pdbml_ext_file 2> $err_file && rm -f $err_file $info_file || ( rm -f $info_file && cat $err_file && exit 1 )
+   gunzip -c $pdbml_ext_file.gz > $pdbml_ext_file
+
+   java -jar $SAXON -s:$info_file -xsl:$EXT_INFO_XSL -o:$info_alt_file pdbml_ext_file=../$pdbml_ext_file 2> $err_file && rm -f $err_file $info_file $pdbml_ext_file || ( rm -f $info_file $pdbml_ext_file && cat $err_file && exit 1 )
 
    xml_pretty $info_alt_file
+
+   if [ ! -d $div_dir ] ; then
+    if [ -e $div_dir ] ; then
+     rm -f $div_dir
+    fi
+    mkdir -p $div_dir
+   fi
 
    if [ $VALIDATE = 'true' ] ; then
 
@@ -90,6 +101,7 @@ do
 
     if [ $? = 0 ] ; then
      rm -f $err_file
+     mv -f $info_alt_file $div_dir && gzip $info_alt_div_file
      if [ $proc_id_mod = 0 ] ; then
       echo -e -n "\rDone "$((proc_id + 1)) of $total ...
      fi
@@ -97,8 +109,11 @@ do
      cat $err_file
     fi
 
-   elif [ $proc_id_mod = 0 ] ; then
-    echo -e -n "\rDone "$((proc_id + 1)) of $total ...
+   else
+    mv -f $info_alt_file $div_dir && gzip $info_alt_div_file
+    if [ $proc_id_mod = 0 ] ; then
+     echo -e -n "\rDone "$((proc_id + 1)) of $total ...
+    fi
    fi
 
   fi

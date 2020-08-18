@@ -57,7 +57,7 @@ do
   fi
 
   pdb_id=`basename $pdbml_vrpt_gz_file -validation-full.xml.gz`
-  pdbml_vrpt_file=`dirname $pdbml_vrpt_gz_file`/`basename $pdbml_vrpt_gz_file .gz`
+  pdbml_vrpt_file=${pdbml_vrpt_gz_file::-3} # remove the last '.gz'
   rdf_vrpt_file=$WORK_DIR/$pdb_id-validation-full.rdf
   div_dir=$WORK_DIR/${pdb_id:1:2}
   rdf_vrpt_div_file=$div_dir/$pdb_id-validation-full.rdf
@@ -72,9 +72,9 @@ do
    #has_glycan=$?
 
    if [ -z "$has_glycan" ] ; then
-    xsltproc -o $rdf_vrpt_file --param wurcs2glytoucan $_GLYTOUCAN_XML $PDBMLV2RDF_XSL $pdbml_vrpt_file 2> $err_file && ( rm -f $pdbml_vrpt_file $err_file ) || ( cat $err_file && exit 1 )
+    xsltproc -o $rdf_vrpt_file --param wurcs2glytoucan $_GLYTOUCAN_XML $PDBMLV2RDF_XSL $pdbml_vrpt_file 2> $err_file && ( rm -f $pdbml_vrpt_file $err_file ) || ( rm -f $pdbml_vrpt_file && cat $err_file && exit 1 )
    else
-    java -jar $SAXON -s:$pdbml_vrpt_file -xsl:$PDBMLV2RDF_XSL -o:$rdf_vrpt_file wurcs2glytoucan=$GLYTOUCAN_XML 2> $err_file && ( rm -f $pdbml_vrpt_file $err_file ) || ( cat $err_file && exit 1 )
+    java -jar $SAXON -s:$pdbml_vrpt_file -xsl:$PDBMLV2RDF_XSL -o:$rdf_vrpt_file wurcs2glytoucan=$GLYTOUCAN_XML 2> $err_file && ( rm -f $pdbml_vrpt_file $err_file ) || ( rm -f $pdbml_vrpt_file && cat $err_file && exit 1 )
    fi
 
    if [ $has_rapper_command != "false" ] ; then

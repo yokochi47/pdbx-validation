@@ -26,7 +26,7 @@ if [ ! -e $PDBX_VALIDATION_XSD ] ; then
  ( cd schema; ./update_schema.sh )
 fi
 
-mkdir -p $VALID_INFO_ALT
+mkdir -p $XML_VALID_ALT
 
 if [ ! -d $VALID_REPORT ] ; then
  ./scripts/update_vrpt.sh
@@ -36,9 +36,11 @@ if [ ! -d $PDBML_EXT ] ; then
  ./scripts/extract_pdbml.sh
 fi
 
-last=`find $VALID_INFO_ALT -maxdepth 1 -name '*.xml' | wc -l`
-err=`find $VALID_INFO_ALT -maxdepth 1 -name '*.err' | wc -l`
+#last=`find $VALID_INFO_ALT -maxdepth 1 -name '*.xml' | wc -l`
+#err=`find $VALID_INFO_ALT -maxdepth 1 -name '*.err' | wc -l`
 #total=`find $VALID_INFO -maxdepth 1 -name '*.xml' | wc -l`
+last=`find $XML_VALID_ALT -maxdepth 2 -name '*.xml.gz' | wc -l`
+err=`find $XML_VALID_ALT -maxdepth 1 -name '*.err' | wc -l`
 total=`find $VALID_REPORT -maxdepth 3 -name '*_validation.xml.gz' | wc -l`
 
 if [ $err != 0 ] || [ $total != $last ] ; then
@@ -53,7 +55,7 @@ if [ $err != 0 ] || [ $total != $last ] ; then
 
  for proc_id in `seq 1 $MAXPROCS` ; do
 
-  ./scripts/extract_info_worker.sh -d $VALID_INFO_ALT -l $info_file_list -n $proc_id"of"$MAXPROCS $VALID_OPT &
+  ./scripts/extract_info_worker.sh -d $XML_VALID_ALT -l $info_file_list -n $proc_id"of"$MAXPROCS $VALID_OPT &
 
  done
 
@@ -72,10 +74,10 @@ if [ $err != 0 ] || [ $total != $last ] ; then
 
 else
 
- echo $VALID_INFO_ALT is up-to-date.
+ echo $XML_VALID_ALT is up-to-date.
  exit 2
 
 fi
 
-echo $VALID_INFO_ALT is up-to-date.
+echo $XML_VALID_ALT is up-to-date.
 

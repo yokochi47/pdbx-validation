@@ -68,7 +68,7 @@ do
   info_gz_file=$VALID_REPORT/${pdb_id:1:2}/$pdb_id/$pdb_id"_validation.xml.gz"
   err_file=$WORK_DIR/extract_pdbml_$pdb_id.err
 
-  if [ -e $info_gz_file ] && ( [ ! -e $pdbml_ext_file ] || [ -e $err_file ] ); then
+  if [ -e $info_gz_file ] && ( [ ! -e $pdbml_ext_file.gz ] || [ -e $err_file ] ); then
 
    pdbml_file=${pdbml_gz_file::-3} # remove the last '.gz'
    gunzip -c $pdbml_gz_file > $pdbml_file
@@ -84,6 +84,7 @@ do
 
     if [ $? = 0 ] ; then
      rm -f $err_file
+     gzip $pdbml_ext_file
      if [ $proc_id_mod = 0 ] ; then
       echo -e -n "\rDone "$((proc_id + 1)) of $total ...
      fi
@@ -91,8 +92,11 @@ do
      cat $err_file
     fi
 
-   elif [ $proc_id_mod = 0 ] ; then
-    echo -e -n "\rDone "$((proc_id + 1)) of $total ...
+   else
+    gzip $pdbml_ext_file
+    if [ $proc_id_mod = 0 ] ; then
+     echo -e -n "\rDone "$((proc_id + 1)) of $total ...
+    fi
    fi
 
   fi
