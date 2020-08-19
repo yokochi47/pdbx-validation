@@ -3415,6 +3415,117 @@ Foreign key to the EM_IMAGE_PROCESSING category
       </xsd:element>
     </xsd:sequence>
   </xsd:complexType>
+  <xsd:complexType name="em_adminType">
+    <xsd:annotation>
+      <xsd:documentation xml:lang="en" source="http://pdbml.pdb.org/dictionaries/mmcif_pdbx_v50.dic/Categories/em_admin.html">
+Administration-related data items
+Example 1
+&lt;PDBxv:em_adminCategory&gt;
+   &lt;PDBxv:em_admin entry_id="D_100005"&gt;
+      &lt;PDBxv:current_status&gt;REL&lt;/PDBxv:current_status&gt;
+      &lt;PDBxv:deposition_date&gt;2008-12-01&lt;/PDBxv:deposition_date&gt;
+      &lt;PDBxv:details xsi:nil="true" /&gt;
+      &lt;PDBxv:last_update&gt;2011-05-22&lt;/PDBxv:last_update&gt;
+      &lt;PDBxv:map_release_date&gt;2009-12-01&lt;/PDBxv:map_release_date&gt;
+   &lt;/PDBxv:em_admin&gt;
+&lt;/PDBxv:em_adminCategory&gt;
+
+
+         </xsd:documentation>
+    </xsd:annotation>
+    <xsd:sequence>
+      <xsd:element name="em_admin" minOccurs="0" maxOccurs="unbounded">
+        <xsd:complexType>
+          <xsd:all>
+            <xsd:element name="current_status" minOccurs="0" maxOccurs="1" nillable="true">
+              <xsd:annotation>
+                <xsd:documentation xml:lang="en" source="http://mmcif.wwpdb.org/dictionaries/mmcif_pdbx_v50.dic/Items/_em_admin.current_status.html">
+This data item indicates the current status of the EMDB entry.
+                        </xsd:documentation>
+              </xsd:annotation>
+              <xsd:simpleType>
+                <xsd:restriction base="xsd:string">
+                  <xsd:enumeration value="PROC"/>
+                  <xsd:enumeration value="WAIT"/>
+                  <xsd:enumeration value="AUTH"/>
+                  <xsd:enumeration value="REUP"/>
+                  <xsd:enumeration value="REPL"/>
+                  <xsd:enumeration value="AUXU"/>
+                  <xsd:enumeration value="AUXS"/>
+                  <xsd:enumeration value="AUCO"/>
+                  <xsd:enumeration value="REFI"/>
+                  <xsd:enumeration value="POLC"/>
+                  <xsd:enumeration value="HPUB"/>
+                  <xsd:enumeration value="HOLD"/>
+                  <xsd:enumeration value="HOLD8W"/>
+                  <xsd:enumeration value="REL"/>
+                  <xsd:enumeration value="WDRN"/>
+                  <xsd:enumeration value="OBS"/>
+                </xsd:restriction>
+              </xsd:simpleType>
+            </xsd:element>
+            <xsd:element name="deposition_date" minOccurs="0" maxOccurs="1" nillable="true" type="xsd:date">
+              <xsd:annotation>
+                <xsd:documentation xml:lang="en" source="http://mmcif.wwpdb.org/dictionaries/mmcif_pdbx_v50.dic/Items/_em_admin.deposition_date.html">
+date of the entry deposition
+                        </xsd:documentation>
+              </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="deposition_site" minOccurs="0" maxOccurs="1" nillable="true">
+              <xsd:annotation>
+                <xsd:documentation xml:lang="en" source="http://mmcif.wwpdb.org/dictionaries/mmcif_pdbx_v50.dic/Items/_em_admin.deposition_site.html">
+entry deposition site
+                        </xsd:documentation>
+              </xsd:annotation>
+              <xsd:simpleType>
+                <xsd:restriction base="xsd:string">
+                  <xsd:enumeration value="PDBE"/>
+                  <xsd:enumeration value="RCSB"/>
+                  <xsd:enumeration value="PDBJ"/>
+                  <xsd:enumeration value="PDBC"/>
+                </xsd:restriction>
+              </xsd:simpleType>
+            </xsd:element>
+            <xsd:element name="details" minOccurs="0" maxOccurs="1" nillable="true" type="xsd:string">
+              <xsd:annotation>
+                <xsd:documentation xml:lang="en" source="http://mmcif.wwpdb.org/dictionaries/mmcif_pdbx_v50.dic/Items/_em_admin.details.html">
+EMDB administration details
+                        </xsd:documentation>
+              </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="last_update" minOccurs="0" maxOccurs="1" nillable="true" type="xsd:date">
+              <xsd:annotation>
+                <xsd:documentation xml:lang="en" source="http://mmcif.wwpdb.org/dictionaries/mmcif_pdbx_v50.dic/Items/_em_admin.last_update.html">
+date of last update to the file
+                        </xsd:documentation>
+              </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="map_release_date" minOccurs="0" maxOccurs="1" nillable="true" type="xsd:date">
+              <xsd:annotation>
+                <xsd:documentation xml:lang="en" source="http://mmcif.wwpdb.org/dictionaries/mmcif_pdbx_v50.dic/Items/_em_admin.map_release_date.html">
+date of map release for this entry
+                        </xsd:documentation>
+              </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="title" minOccurs="0" maxOccurs="1" nillable="true" type="xsd:string">
+              <xsd:annotation>
+                <xsd:documentation xml:lang="en" source="http://mmcif.wwpdb.org/dictionaries/mmcif_pdbx_v50.dic/Items/_em_admin.title.html">
+Title for the EMDB entry.
+                        </xsd:documentation>
+              </xsd:annotation>
+            </xsd:element>
+          </xsd:all>
+          <xsd:attribute name="entry_id" use="required" type="xsd:string">
+            <xsd:annotation>
+              <xsd:documentation xml:lang="en" source="http://mmcif.wwpdb.org/dictionaries/mmcif_pdbx_v50.dic/Items/_em_admin.entry_id.html">
+An identifier for EM map (a.k.a. EMDB ID).
+                     </xsd:documentation>
+            </xsd:annotation>
+          </xsd:attribute>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
   <xsd:complexType name="em_bufferType">
     <xsd:annotation>
       <xsd:documentation xml:lang="en" source="http://pdbml.pdb.org/dictionaries/mmcif_pdbx_v50.dic/Categories/em_buffer.html">
@@ -48250,6 +48361,7 @@ identifier.
       <xsd:element name="em_3d_fittingCategory" type="PDBxv:em_3d_fittingType" minOccurs="0" maxOccurs="1"/>
       <xsd:element name="em_3d_fitting_listCategory" type="PDBxv:em_3d_fitting_listType" minOccurs="0" maxOccurs="1"/>
       <xsd:element name="em_3d_reconstructionCategory" type="PDBxv:em_3d_reconstructionType" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="em_adminCategory" type="PDBxv:em_adminType" minOccurs="0" maxOccurs="1"/>
       <xsd:element name="em_bufferCategory" type="PDBxv:em_bufferType" minOccurs="0" maxOccurs="1"/>
       <xsd:element name="em_buffer_componentCategory" type="PDBxv:em_buffer_componentType" minOccurs="0" maxOccurs="1"/>
       <xsd:element name="em_crystal_formationCategory" type="PDBxv:em_crystal_formationType" minOccurs="0" maxOccurs="1"/>
@@ -48631,6 +48743,10 @@ identifier.
       <xsd:selector xpath="PDBxv:em_3d_reconstructionCategory/PDBxv:em_3d_reconstruction"/>
       <xsd:field xpath="@id"/>
       <xsd:field xpath="@image_processing_id"/>
+    </xsd:key>
+    <xsd:key name="em_adminKey_0">
+      <xsd:selector xpath="PDBxv:em_adminCategory/PDBxv:em_admin"/>
+      <xsd:field xpath="@entry_id"/>
     </xsd:key>
     <xsd:key name="em_bufferKey_0">
       <xsd:selector xpath="PDBxv:em_bufferCategory/PDBxv:em_buffer"/>

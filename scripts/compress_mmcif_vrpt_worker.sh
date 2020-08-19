@@ -63,7 +63,9 @@ do
    mkdir -p $div_dir
   fi
 
-  mv -f $cif_file $div_dir && gzip $div_dir/$pdb_id-validation-full.cif
+  if [ ! -s $cif_file ] ; then
+   mv -f $cif_file $div_dir && gzip $div_dir/$pdb_id-validation-full.cif
+  fi
 
  fi
 

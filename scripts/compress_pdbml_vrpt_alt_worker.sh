@@ -65,7 +65,7 @@ do
 
   dst_xml=$div_dir/$pdb_id-validation-alt.xml
 
-  if [ ! -e $dst_xml.gz ] ; then
+  if [ ! -e $dst_xml.gz ] && [ ! -s $xml_file ] ; then
    cp -f $xml_file $div_dir && gzip $dst_xml
   fi
 

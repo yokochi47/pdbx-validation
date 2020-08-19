@@ -226,6 +226,14 @@ em_3d_reconstruction.refinement_type
 em_3d_reconstruction.resolution
 em_3d_reconstruction.resolution_method
 em_3d_reconstruction.symmetry_type
+em_admin.current_status
+em_admin.deposition_date
+em_admin.deposition_site
+em_admin.details
+em_admin.entry_id
+em_admin.last_update
+em_admin.map_release_date
+em_admin.title
 em_buffer_component.buffer_id
 em_buffer_component.concentration
 em_buffer_component.concentration_units

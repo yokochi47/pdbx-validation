@@ -318,8 +318,20 @@ Unmatched entry ID in both documents (<xsl:value-of select="$entry_id"/> and <xs
 
     <xsl:if test="$em=true()">
 
-      <xsl:for-each select="PDBxv:pdbx_database_relatedCategory/PDBxv:pdbx_database_related[PDBxv:db_name='EMDB']">
+      <!--xsl:for-each select="PDBxv:pdbx_database_relatedCategory/PDBxv:pdbx_database_related[PDBxv:db_name='EMDB']">
         <xsl:attribute name="emdb_id"><xsl:value-of select="PDBxv:db_id"/></xsl:attribute>
+      </xsl:for-each-->
+
+      <xsl:for-each select="PDBxv:em_adminCategory/PDBxv:em_admin">
+        <xsl:attribute name="emdb_id"><xsl:value-of select="@entry_id"/></xsl:attribute>
+        <xsl:choose>
+          <xsl:when test="PDBxv:deposition_date">
+            <xsl:attribute name="EMDB-deposition-date"><xsl:value-of select="PDBxv:deposition_date"/></xsl:attribute>
+          </xsl:when>
+          <xsl:otherwise>
+            <xsl:attribute name="EMDB-deposition-date">unknown</xsl:attribute>
+          </xsl:otherwise>
+        </xsl:choose>
       </xsl:for-each>
 
       <xsl:for-each select="PDBxv:pdbx_em_validate_map_model_overallCategory/PDBxv:pdbx_em_validate_map_model_overall[PDBxv:recommended_contour_level!='']">

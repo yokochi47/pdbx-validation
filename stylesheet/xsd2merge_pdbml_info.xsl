@@ -20,7 +20,7 @@
 &lt;/xsl:stylesheet&gt;</xsl2:text>
   </xsl2:template>
 
-  <xsl2:variable name="merge_categories">pdbx_validate_rmsd_angle pdbx_validate_rmsd_bond pdbx_validate_close_contact pdbx_validate_symm_contact</xsl2:variable>
+  <xsl2:variable name="merge_categories">em_admin pdbx_validate_rmsd_angle pdbx_validate_rmsd_bond pdbx_validate_close_contact pdbx_validate_symm_contact</xsl2:variable>
 
   <xsl2:template match="/xsd:schema">
     <xsl2:text disable-output-escaping="yes">

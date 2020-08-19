@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet
-  version="2.0"
+  version="1.0"
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xmlns:PDBxv="http://pdbml.pdb.org/schema/pdbx-validation-v2.xsd">
@@ -30,8 +30,10 @@ Unmatched entry ID in both documents (<xsl:value-of select="$entry_id"/> and <xs
     </xsl:if>
 
     <PDBxv:datablock datablockName="{$datablock_name}" xsi:schemaLocation="http://pdbml.pdb.org/schema/pdbx-validation-v2.xsd pdbx-validation-v2.xsd">
-      <xsl:apply-templates select="PDBxv:datablock/*[not(local-name()='pdbx_validate_rmsd_angleCategory' or local-name()='pdbx_validate_rmsd_bondCategory' or local-name()='pdbx_validate_close_contactCategory' or local-name()='pdbx_validate_symm_contactCategory')]"/>
-      <xsl:apply-templates select="$alt_datablock/*[not(local-name()='entryCategory' or local-name()='pdbx_validate_rmsd_angleCategory' or local-name()='pdbx_validate_rmsd_bondCategory' or local-name()='pdbx_validate_close_contactCategory' or local-name()='pdbx_validate_symm_contactCategory')]"/>
+      <xsl:apply-templates select="PDBxv:datablock/*[not(local-name()='em_adminCategory' or local-name()='pdbx_validate_rmsd_angleCategory' or local-name()='pdbx_validate_rmsd_bondCategory' or local-name()='pdbx_validate_close_contactCategory' or local-name()='pdbx_validate_symm_contactCategory')]"/>
+      <xsl:apply-templates select="$alt_datablock/*[not(local-name()='entryCategory' or local-name()='em_adminCategory' or local-name()='pdbx_validate_rmsd_angleCategory' or local-name()='pdbx_validate_rmsd_bondCategory' or local-name()='pdbx_validate_close_contactCategory' or local-name()='pdbx_validate_symm_contactCategory')]"/>
+
+      <xsl:call-template name="merge_em_admin"/>
 
       <xsl:call-template name="merge_pdbx_validate_rmsd_angle"/>
 
@@ -159,6 +161,12 @@ Unmatched entry ID in both documents (<xsl:value-of select="$entry_id"/> and <xs
   </xsl:template>
 
   <xsl:template match="PDBxv:em_3d_reconstructionCategory">
+    <xsl:element name="{name()}">
+      <xsl:apply-templates mode="category-element"/>
+    </xsl:element>
+  </xsl:template>
+
+  <xsl:template match="PDBxv:em_adminCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
@@ -1645,6 +1653,19 @@ Unmatched entry ID in both documents (<xsl:value-of select="$entry_id"/> and <xs
         </span>
       </xsl:otherwise>
     </xsl:choose>
+  </xsl:template>
+
+  <xsl:template name="merge_em_admin">
+    <xsl:if test="PDBxv:datablock/PDBxv:em_adminCategory or $alt_datablock/PDBxv:em_adminCategory">
+      <xsl:element name="PDBxv:em_adminCategory">
+        <xsl:if test="PDBxv:datablock/PDBxv:em_adminCategory">
+          <xsl:apply-templates select="PDBxv:datablock/PDBxv:em_adminCategory/*" mode="category-element"/>
+        </xsl:if>
+        <xsl:if test="$alt_datablock/PDBxv:em_adminCategory">
+          <xsl:apply-templates select="$alt_datablock/PDBxv:em_adminCategory/*" mode="category-element"/>
+        </xsl:if>
+      </xsl:element>
+    </xsl:if>
   </xsl:template>
 
   <xsl:template name="merge_pdbx_validate_rmsd_angle">

@@ -21359,6 +21359,9 @@ no-ligands-for-buster-report
 ;fsc_generation,fsc_analysis,atom_inclusion_by_level,residue_inclusion,atom_inclusion_all_atoms,map_value_distribution,volume_estimate,atom_inclusion_backbone,rotationally_averaged_power_spectrum,average_residue_inclusion
 ;
 # 
+_em_admin.entry_id          EMD-22156 
+_em_admin.deposition_date   2020-06-14 
+# 
 loop_
 _pdbx_validate_rmsd_angle.id 
 _pdbx_validate_rmsd_angle.PDB_model_num 

@@ -7,6 +7,10 @@ em_3d_fitting.software_name WWPDB_DEPRECATED
 em_3d_reconstruction.ctf_correction_method WWPDB_DEPRECATED
 em_3d_reconstruction.fsc_type WWPDB_LOCAL
 em_3d_reconstruction.software WWPDB_DEPRECATED
+em_admin.header_release_date
+em_admin.map_hold_date
+em_admin.obsoleted_date
+em_admin.replace_existing_entry_flag
 em_ctf_correction.amplitude_correction WWPDB_LOCAL
 em_ctf_correction.amplitude_correction_factor WWPDB_LOCAL
 em_ctf_correction.amplitude_correction_space WWPDB_LOCAL

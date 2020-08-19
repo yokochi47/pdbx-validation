@@ -175,6 +175,8 @@ V 1 1 V 1.03 0.80 1866 1386
 W 1 1 W 1.03 0.80 1866 1386 
 X 1 1 X 1.03 0.80 1866 1386 
 # 
+_em_admin.entry_id   EMD-4905 
+# 
 loop_
 _pdbx_em_validate_map_model_entity.label_asym_id 
 _pdbx_em_validate_map_model_entity.PDB_model_num 
