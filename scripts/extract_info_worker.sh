@@ -80,9 +80,9 @@ do
   if [ -e $pdbml_ext_file.gz ] && ( ( [ ! -e $info_alt_file ] && [ ! -e $info_alt_div_file.gz ] ) || [ -e $err_file ] ) ; then
 
    info_file=${info_gz_file::-3} # remove the last '.gz'
-   gunzip -c $info_gz_file > $info_file
+   gunzip -c $info_gz_file > $info_file || exit 1
 
-   gunzip -c $pdbml_ext_file.gz > $pdbml_ext_file
+   gunzip -c $pdbml_ext_file.gz > $pdbml_ext_file || exit 1
 
    java -jar $SAXON -s:$info_file -xsl:$EXT_INFO_XSL -o:$info_alt_file pdbml_ext_file=../$pdbml_ext_file 2> $err_file && rm -f $err_file $info_file $pdbml_ext_file || ( rm -f $info_file $pdbml_ext_file && cat $err_file && exit 1 )
 

@@ -107,7 +107,7 @@ case $PDB_MIRROR in
   RSYNC_BASE_DIR=${RSYNC_BASE_DIRS[2]};;
  *)
   echo $PDB_MIRROR: undefined PDB mirror site.
-  rm -f url_miror
+  rm -f url_mirror
   exit 1;;
 esac
 

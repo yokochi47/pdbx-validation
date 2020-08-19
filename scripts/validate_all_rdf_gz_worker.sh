@@ -104,7 +104,9 @@ do
   rdf_file=$rdf_dir/`basename $rdf_gz_file .gz`
   err_file=$rdf_dir/validate_$rdf_label.err
 
-  gunzip -c $rdf_gz_file > $rdf_file ; rapper -q -c $rdf_file 2> $err_file && ( rm -f $rdf_file $err_file ; echo $new_chk_sum > $chk_sum_file ) || ( [ $DELETE = "true" ] && rm -f $rdf_gz_file ; rm -f $rdf_file ; cat $err_file )
+  gunzip -c $rdf_gz_file > $rdf_file || exit 1
+
+  rapper -q -c $rdf_file 2> $err_file && ( rm -f $rdf_file $err_file ; echo $new_chk_sum > $chk_sum_file ) || ( [ $DELETE = "true" ] && rm -f $rdf_gz_file $rdf_file ; cat $err_file )
 
   if [ $proc_id_mod = 0 ] ; then
    echo -e -n "\rDone "$((proc_id + 1)) of $total ...
