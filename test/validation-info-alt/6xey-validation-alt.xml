@@ -315,6 +315,11 @@
       <PDBxv:number_bonds>712</PDBxv:number_bonds>
     </PDBxv:pdbx_dcc_entity_geometry>
   </PDBxv:pdbx_dcc_entity_geometryCategory>
+  <PDBxv:em_adminCategory>
+    <PDBxv:em_admin entry_id="EMD-22156">
+      <PDBxv:deposition_date>2020-06-14</PDBxv:deposition_date>
+    </PDBxv:em_admin>
+  </PDBxv:em_adminCategory>
   <PDBxv:pdbx_em_validate_map_model_entityCategory>
     <PDBxv:pdbx_em_validate_map_model_entity label_asym_id="A" PDB_model_num="1">
       <PDBxv:entity_id>1</PDBxv:entity_id>

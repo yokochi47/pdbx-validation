@@ -18,6 +18,7 @@ em_3d_crystal_entity
 em_3d_fitting
 em_3d_fitting_list
 em_3d_reconstruction
+em_admin WWPDB_LOCAL
 em_buffer
 em_buffer_component
 em_crystal_formation

@@ -308,6 +308,17 @@ Unmatched entry ID in both documents (<xsl:value-of select="$entry_id"/> and <xs
 
     <xsl:if test="$em=true()">
 
+      <xsl:if test="@emdb_id">
+        <PDBxv:em_adminCategory>
+          <PDBxv:em_admin>
+            <xsl:attribute name="entry_id"><xsl:value-of select="@emdb_id"/></xsl:attribute>
+            <xsl:if test="@EMDB-deposition-date and @EMDB-deposition-date!='unknown'">
+              <xsl:element name="PDBxv:deposition_date"><xsl:value-of select="@EMDB-deposition-date"/></xsl:element>
+            </xsl:if>
+          </PDBxv:em_admin>
+        </PDBxv:em_adminCategory>
+      </xsl:if>
+
       <xsl:if test="../ModelledEntityInstance/@average_residue_inclusion">
         <PDBxv:pdbx_em_validate_map_model_entityCategory>
           <xsl:for-each select="../ModelledEntityInstance">

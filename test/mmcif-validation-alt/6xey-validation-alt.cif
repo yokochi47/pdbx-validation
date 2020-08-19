@@ -100,6 +100,9 @@ E 1 3 G 0.59 0.30 982   716
 H 1 3 K 0.53 0.29 975   710  
 I 1 3 L 0.59 0.31 978   712  
 # 
+_em_admin.entry_id          EMD-22156 
+_em_admin.deposition_date   2020-06-14 
+# 
 loop_
 _pdbx_em_validate_map_model_entity.label_asym_id 
 _pdbx_em_validate_map_model_entity.PDB_model_num 

@@ -99,7 +99,7 @@ do
 
     java -classpath $XSD2PGSCHEMA xmlvalidator --xsd $PDBX_VALIDATION_XSD --xml $pdbml_vrpt_file > /dev/null 2> $err_file
 
-    if [ $? = 0 ] ; then
+    if [ $? = 0 ] && [ ! -s $pdbml_vrpt_file ] ; then
      rm -f $err_file
      mv -f $pdbml_vrpt_file $div_dir && gzip $pdbml_vrpt_div_file
      if [ $proc_id_mod = 0 ] ; then
@@ -109,7 +109,7 @@ do
      cat $err_file
     fi
 
-   else
+   elif [ ! -s $pdbml_vrpt_file ] ; then
     mv -f $pdbml_vrpt_file $div_dir && gzip $pdbml_vrpt_div_file
     if [ $proc_id_mod = 0 ] ; then
      echo -e -n "\rDone "$((proc_id + 1)) of $total ...

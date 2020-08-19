@@ -1,7 +1,7 @@
 ###########################################################################
 #
 # File:  mmcif_pdbx_validation.dic
-# Data:  Mon Aug  3 19:42:53 JST 2020
+# Data:  Wed Aug 19 17:44:55 JST 2020
 #
 # Created from files noted:
 #        mmcif_pdbx_v50.dic   - PDB Exchange Data Dictionary (V5.331)
@@ -705,6 +705,12 @@ data_mmcif_pdbx_validation.dic
         + Add _pdbx_em_fsc_curve.type and _pdbx_em_fsc_cutoff_curve.type.
         + Add _pdbx_em_fsc_cutoff_curve.target_name.
 ;
+  2.331-3   2020-08-19
+;
+      + Restore 'em_admin' category.
+        + Link '_em_admin.entry_id' and /wwPDB-validation-information/Entry/@emdb_id.
+        + Link '_em_admin.deposition_date' and /wwPDB-validation-information/Entry/@EMDB-deposition-date.
+;
 
 #
 ###########################################################################
@@ -794,6 +800,10 @@ data_mmcif_pdbx_validation.dic
               'em_group'
               'inclusive_group'
 ;              Categories that describe 3-dimensional electron microscopy.
+;
+              'emdb_admin_group'
+              'inclusive_group'
+;              Administrative Categories for Electron Microscopy Data Bank.
 ;
               'entity_group'
               'inclusive_group'
@@ -49203,7 +49213,6 @@ save_
 ## EM_ENTITY_ASSEMBLY ##
 ########################
 
-
 save_em_entity_assembly
     _category.description
 ;              Data items in the EM_ENTITY_ASSEMBLY category
@@ -51618,6 +51627,152 @@ save__em_single_particle_entity.point_symmetry
 save_
 
 #######START NEW CATEGORIES FOR V5 ###################
+
+##############
+## EM_ADMIN ##
+##############
+
+save_em_admin
+    _category.description
+;              Administration-related data items
+;
+    _category.id                  em_admin
+    _category.mandatory_code      no
+    _category_key.name          '_em_admin.entry_id'
+    loop_
+    _category_group.id           'inclusive_group'
+                                 'emdb_admin_group'
+    loop_
+    _category_examples.detail
+    _category_examples.case
+   'Example 1'
+;
+    _em_admin.entry_id            D_100005
+    _em_admin.current_status      REL
+    _em_admin.last_update         2011-05-22
+    _em_admin.deposition_date     2008-12-01
+    _em_admin.map_release_date    2009-12-01
+    _em_admin.details             .
+;
+    _pdbx_category_context.type         WWPDB_LOCAL
+    _pdbx_category_context.category_id  em_admin
+save_
+
+save__em_admin.current_status
+    _item_description.description
+;              This data item indicates the current status of the EMDB entry.
+;
+    _item.name                  '_em_admin.current_status'
+    _item.category_id             em_admin
+    _item.mandatory_code          no
+    _item_type.code               code
+    loop_
+    _item_enumeration.value
+    _item_enumeration.detail
+    PROC  "To be processed"
+    WAIT "Processing started, waiting for author input to continue processing"
+    AUTH "Processed, waiting for author review and approval"
+    REUP "Upload of coordinates and/or structure factors and auxiliary files"
+    REPL "Resubmission of coordinates and/or structure factors and auxiliary files"
+    AUXU "Upload of auxiliary files"
+    AUXS "Resubmission of auxiliary files"
+    AUCO "Author corrections pending review"
+    REFI "Re-refined entry"
+    POLC "Processing, waiting for a policy decision"
+    HPUB "On hold until publication"
+    HOLD "On hold (1 year)"
+    HOLD8W "On hold (8 weeks)"
+    REL   Released
+    WDRN "Deposition has been withdrawn"
+    OBS   Obsoleted
+save_
+
+save__em_admin.deposition_date
+    _item_description.description
+;              date of the entry deposition
+;
+    _item.name                  '_em_admin.deposition_date'
+    _item.category_id             em_admin
+    _item.mandatory_code          no
+    _item_type.code               yyyy-mm-dd
+#
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/Entry/@EMDB-deposition-date'
+    _pdbx_item_aliases.schema     wwpdb_validation.xsd
+    _pdbx_item_aliases.version    004
+save_
+
+save__em_admin.deposition_site
+    _item_description.description
+;              entry deposition site
+;
+    _item.name                  '_em_admin.deposition_site'
+    _item.category_id             em_admin
+    _item.mandatory_code          no
+    _item_type.code               code
+    loop_
+    _item_enumeration.value
+      PDBE
+      RCSB
+      PDBJ
+      PDBC
+save_
+
+save__em_admin.details
+    _item_description.description
+;              EMDB administration details
+;
+    _item.name                  '_em_admin.details'
+    _item.category_id             em_admin
+    _item.mandatory_code          no
+    _item_type.code               text
+save_
+
+save__em_admin.entry_id
+    _item_description.description
+;              An identifier for EM map (a.k.a. EMDB ID).
+;
+    _item.name                  '_em_admin.entry_id'
+    _item.category_id             em_admin
+    _item.mandatory_code          yes
+    _item_type.code               emd_id
+# NOTE: Not a pointer to _entry.id
+#    _item_linked.child_name     '_em_admin.entry_id'
+#    _item_linked.parent_name    '_entry.id'
+#
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/Entry/@emdb_id'
+    _pdbx_item_aliases.schema     wwpdb_validation.xsd
+    _pdbx_item_aliases.version    004
+save_
+
+save__em_admin.last_update
+    _item_description.description
+;              date of last update to the file
+;
+    _item.name                  '_em_admin.last_update'
+    _item.category_id             em_admin
+    _item.mandatory_code          no
+    _item_type.code               yyyy-mm-dd
+save_
+
+save__em_admin.map_release_date
+    _item_description.description
+;              date of map release for this entry
+;
+    _item.name                  '_em_admin.map_release_date'
+    _item.category_id             em_admin
+    _item.mandatory_code          no
+    _item_type.code               yyyy-mm-dd
+save_
+
+save__em_admin.title
+    _item_description.description
+;              Title for the EMDB entry.
+;
+    _item.name                  '_em_admin.title'
+    _item.category_id             em_admin
+    _item.mandatory_code          no
+    _item_type.code               line
+save_
 
 ##############################
 ## EM_ENTITY_ASSEMBLY_MOLWT ##

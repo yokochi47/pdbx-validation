@@ -516,6 +516,18 @@
       </PDBov:has_em_3d_reconstruction>
   </xsl:template>
 
+  <xsl:template match="PDBxv:datablock/PDBxv:em_adminCategory/PDBxv:em_admin">
+      <PDBov:has_em_admin>
+      <PDBov:em_admin rdf:about="{$base}/em_admin/{translate(@entry_id,' ^','_')}">
+      <PDBov:of_datablock rdf:resource="{$base}"/>
+      <xsl:apply-templates select="@*"/>
+      <xsl:apply-templates select="@*" mode="linked"/>
+      <xsl:apply-templates/>
+      <xsl:apply-templates mode="linked"/>
+      </PDBov:em_admin>
+      </PDBov:has_em_admin>
+  </xsl:template>
+
   <xsl:template match="PDBxv:datablock/PDBxv:em_bufferCategory/PDBxv:em_buffer">
       <PDBov:has_em_buffer>
       <PDBov:em_buffer rdf:about="{$base}/em_buffer/{translate(@id,' ^','_')},{translate(@specimen_id,' ^','_')}">

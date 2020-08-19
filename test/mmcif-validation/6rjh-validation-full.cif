@@ -17551,6 +17551,8 @@ no-ligands-for-buster-report
 ;fsc_generation,fsc_analysis,atom_inclusion_by_level,residue_inclusion,atom_inclusion_all_atoms,map_value_distribution,volume_estimate,atom_inclusion_backbone,rotationally_averaged_power_spectrum,average_residue_inclusion
 ;
 # 
+_em_admin.entry_id   EMD-4905 
+# 
 loop_
 _pdbx_validate_close_contact.id 
 _pdbx_validate_close_contact.PDB_model_num 

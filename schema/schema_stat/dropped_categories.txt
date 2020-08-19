@@ -51,7 +51,6 @@ database_PDB_rev WWPDB_LOCAL
 database_PDB_rev_record WWPDB_LOCAL
 database_PDB_tvect
 em_2d_projection_selection WWPDB_LOCAL
-em_admin WWPDB_LOCAL
 em_assembly WWPDB_LOCAL
 em_author_list WWPDB_LOCAL
 em_db_reference WWPDB_LOCAL
