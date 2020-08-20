@@ -44,8 +44,8 @@
 --
 
 --
--- PDBML Schema v5.331
--- PDBML Schema translated from the PDBx/mmCIF Dictionary v5.331: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
+-- PDBML Schema v5.332
+-- PDBML Schema translated from the PDBx/mmCIF Dictionary v5.332: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
 -- URI-reference = http://pdbml.pdb.org/schema/pdbx-v50.xsd
 --
 
@@ -679,7 +679,7 @@ CREATE TYPE ENUM_chem_comp_pdbx_processing_site AS ENUM ( 'PDBE', 'EBI', 'PDBJ',
 DROP TYPE IF EXISTS ENUM_chem_comp_pdbx_release_status CASCADE;
 CREATE TYPE ENUM_chem_comp_pdbx_release_status AS ENUM ( 'REL', 'HOLD', 'HPUB', 'OBS', 'DEL', 'REF_ONLY' );
 DROP TYPE IF EXISTS ENUM_chem_comp_type CASCADE;
-CREATE TYPE ENUM_chem_comp_type AS ENUM ( 'D-peptide linking', 'L-peptide linking', 'D-peptide NH3 amino terminus', 'L-peptide NH3 amino terminus', 'D-peptide COOH carboxy terminus', 'L-peptide COOH carboxy terminus', 'DNA linking', 'RNA linking', 'L-RNA linking', 'L-DNA linking', 'DNA OH 5 prime terminus', 'RNA OH 5 prime terminus', 'DNA OH 3 prime terminus', 'RNA OH 3 prime terminus', 'D-saccharide 1,4 and 1,4 linking', 'L-saccharide 1,4 and 1,4 linking', 'D-saccharide 1,4 and 1,6 linking', 'L-saccharide 1,4 and 1,6 linking', 'D-saccharide, beta linking', 'D-saccharide, alpha linking', 'L-saccharide, beta linking', 'L-saccharide, alpha linking', 'L-saccharide', 'D-saccharide', 'saccharide', 'non-polymer', 'peptide linking', 'peptide-like', 'L-gamma-peptide, C-delta linking', 'D-gamma-peptide, C-delta linking', 'L-beta-peptide, C-gamma linking', 'D-beta-peptide, C-gamma linking', 'other' );
+CREATE TYPE ENUM_chem_comp_type AS ENUM ( 'D-peptide linking', 'L-peptide linking', 'D-peptide NH3 amino terminus', 'L-peptide NH3 amino terminus', 'D-peptide COOH carboxy terminus', 'L-peptide COOH carboxy terminus', 'DNA linking', 'RNA linking', 'L-RNA linking', 'L-DNA linking', 'DNA OH 5 prime terminus', 'RNA OH 5 prime terminus', 'DNA OH 3 prime terminus', 'RNA OH 3 prime terminus', 'D-saccharide, beta linking', 'D-saccharide, alpha linking', 'L-saccharide, beta linking', 'L-saccharide, alpha linking', 'L-saccharide', 'D-saccharide', 'saccharide', 'non-polymer', 'peptide linking', 'peptide-like', 'L-gamma-peptide, C-delta linking', 'D-gamma-peptide, C-delta linking', 'L-beta-peptide, C-gamma linking', 'D-beta-peptide, C-gamma linking', 'other' );
 CREATE TABLE chem_comp (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
@@ -6983,6 +6983,8 @@ CREATE TABLE pdbx_chem_comp_descriptor (
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
+DROP TYPE IF EXISTS ENUM_pdbx_chem_comp_feature_type CASCADE;
+CREATE TYPE ENUM_pdbx_chem_comp_feature_type AS ENUM ( 'CARBOHYDRATE ANOMER', 'CARBOHYDRATE ISOMER', 'CARBOHYDRATE RING', 'CARBOHYDRATE PRIMARY CARBONYL GROUP' );
 CREATE TABLE pdbx_chem_comp_feature (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
@@ -6992,7 +6994,7 @@ CREATE TABLE pdbx_chem_comp_feature (
 -- ATTRIBUTE
 	source TEXT NOT NULL ,
 -- ATTRIBUTE
-	type TEXT NOT NULL ,
+	type ENUM_pdbx_chem_comp_feature_type NOT NULL ,
 -- ATTRIBUTE
 	value TEXT NOT NULL
 );
@@ -12279,7 +12281,7 @@ CREATE TABLE pdbx_struct_assembly_auth_classification (
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_struct_assembly_auth_evidence_experimental_support CASCADE;
-CREATE TYPE ENUM_pdbx_struct_assembly_auth_evidence_experimental_support AS ENUM ( 'gel filtration', 'light scattering', 'homology', 'equilibrium centrifugation', 'mass spectrometry', 'SAXS', 'immunoprecipitation', 'isothermal titration calorimetry', 'cross-linking', 'native gel electrophoresis', 'microscopy', 'assay for oligomerization', 'scanning transmission electron microscopy', 'surface plasmon resonance', 'fluorescence resonance energy transfer', 'none' );
+CREATE TYPE ENUM_pdbx_struct_assembly_auth_evidence_experimental_support AS ENUM ( 'gel filtration', 'light scattering', 'homology', 'equilibrium centrifugation', 'mass spectrometry', 'SAXS', 'immunoprecipitation', 'isothermal titration calorimetry', 'cross-linking', 'native gel electrophoresis', 'microscopy', 'assay for oligomerization', 'scanning transmission electron microscopy', 'surface plasmon resonance', 'fluorescence resonance energy transfer', 'NMR relaxation study', 'none' );
 CREATE TABLE pdbx_struct_assembly_auth_evidence (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
