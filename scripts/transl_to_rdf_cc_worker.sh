@@ -76,7 +76,6 @@ do
 
    if [ -s $rdf_file ] ; then
     gzip $rdf_file
-
     if [ $proc_id_mod = 0 ] ; then
      echo -e -n "\rDone "$((proc_id + 1)) of $total ...
     fi
