@@ -56,16 +56,9 @@ do
   pdb_id=`basename $xml_file -validation-alt.xml`
   div_dir=$WORK_DIR/${pdb_id:1:2}
 
-  if [ ! -d $div_dir ] ; then
-   if [ -e $div_dir ] ; then
-    rm -f $div_dir
-   fi
-   mkdir -p $div_dir
-  fi
+  mk_div_dir $div_dir
 
-  dst_xml=$div_dir/$pdb_id-validation-alt.xml
-
-  [ ! -e $dst_xml.gz ] && [ -s $xml_file ] && cp -f $xml_file $div_dir && gzip $dst_xml
+  [ ! -e $dst_xml.gz ] && [ -s $xml_file ] && gzip_in_div_dir $xml_file $div_dir
 
  fi
 

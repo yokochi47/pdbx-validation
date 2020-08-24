@@ -60,21 +60,15 @@ do
   pdbml_vrpt_file=../${pdbml_vrpt_gz_file%.*} # remove the last '.gz'
   mmcif_vrpt_file=$pdb_id-validation-full.cif
   div_dir=$WORK_DIR/${pdb_id:1:2}
-  mmcif_vrpt_div_file=$div_dir/$pdb_id-validation-full.cif
 
-  if [ ! -e $WORK_DIR/$mmcif_vrpt_file ] && [ ! -e $mmcif_vrpt_div_file.gz ] ; then
+  if [ ! -e $WORK_DIR/$mmcif_vrpt_file ] && [ ! -e $div_dir/`basename $mmcif_vrpt_file`.gz ] ; then
 
    ( cd $WORK_DIR ; gunzip -c ../$pdbml_vrpt_gz_file > $pdbml_vrpt_file ; xml2mmcif -xml $pdbml_vrpt_file -dict $pdbx_validation_dic -df $pdbx_validation_odb > /dev/null && ( rm -f $pdbml_vrpt_file && mv -f $pdbml_vrpt_file.cif $mmcif_vrpt_file && sed -i -e "s/\._\([0-9]\)\(\S*\) /\.\1\2  /" $mmcif_vrpt_file ) || ( rm -f $pdbml_vrpt_file && exit 1 ) )
 
-   if [ ! -d $div_dir ] ; then
-    if [ -e $div_dir ] ; then
-     rm -f $div_dir
-    fi
-    mkdir -p $div_dir
-   fi
+   mk_div_dir $div_dir
 
    if [ -s $WORK_DIR/$mmcif_vrpt_file ] ; then
-    mv -f $WORK_DIR/$mmcif_vrpt_file $div_dir && gzip $mmcif_vrpt_div_file
+    gzip_in_div_dir $WORK_DIR/$mmcif_vrpt_file $div_dir
     if [ $proc_id_mod = 0 ] ; then
      echo -e -n "\rDone "$((proc_id + 1)) of $total ...
     fi

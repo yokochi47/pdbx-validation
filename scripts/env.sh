@@ -100,3 +100,13 @@ RDF=RDF
 COMPONENTS_XML=components-xml
 COMPONENTS_RDF=components-rdf
 
+function mk_div_dir() {
+ if [ ! -d $1 ] ; then
+  [ -e $1 ] && rm -f $1
+  mkdir -p $1
+ fi
+}
+
+function gzip_in_div_dir() {
+ mv -f $1 $2 && gzip $2/`basename $1`
+}

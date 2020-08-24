@@ -74,10 +74,9 @@ do
   info_alt_file=$XML_VALID_ALT/${pdb_id:1:2}/$pdb_id-validation-alt.xml
   pdbml_vrpt_file=$WORK_DIR/$pdb_id-validation-full.xml
   div_dir=$WORK_DIR/${pdb_id:1:2}
-  pdbml_vrpt_div_file=$div_dir/$pdb_id-validation-full.xml
   err_file=$WORK_DIR/merge_pdbml_info_$pdb_id.err
 
-  if [ -e $info_alt_file.gz ] && ( ( [ ! -e $pdbml_vrpt_file ] && [ ! -e $pdbml_vrpt_div_file.gz ] ) || [ -e $err_file ] ); then
+  if [ -e $info_alt_file.gz ] && ( ( [ ! -e $pdbml_vrpt_file ] && [ ! -e $div_dir/`basename $pdbml_vrpt_file`.gz ] ) || [ -e $err_file ] ); then
 
    pdbml_ext_file=${pdbml_ext_gz_file%.*} # remove the last '.gz'
    gunzip -c $pdbml_ext_gz_file > $pdbml_ext_file || exit 1
@@ -88,12 +87,7 @@ do
 
    xml_pretty $pdbml_vrpt_file
 
-   if [ ! -d $div_dir ] ; then
-    if [ -e $div_dir ] ; then
-     rm -f $div_dir
-    fi
-    mkdir -p $div_dir
-   fi
+   mk_div_dir $div_dir
 
    if [ $VALIDATE = 'true' ] ; then
 
@@ -101,7 +95,7 @@ do
 
     if [ $? = 0 ] && [ -s $pdbml_vrpt_file ] ; then
      rm -f $err_file
-     mv -f $pdbml_vrpt_file $div_dir && gzip $pdbml_vrpt_div_file
+     gzip_in_div_dir $pdbml_vrpt_file $div_dir
      if [ $proc_id_mod = 0 ] ; then
       echo -e -n "\rDone "$((proc_id + 1)) of $total ...
      fi
@@ -110,7 +104,7 @@ do
     fi
 
    elif [ -s $pdbml_vrpt_file ] ; then
-    mv -f $pdbml_vrpt_file $div_dir && gzip $pdbml_vrpt_div_file
+    gzip_in_div_dir $pdbml_vrpt_file $div_dir
     if [ $proc_id_mod = 0 ] ; then
      echo -e -n "\rDone "$((proc_id + 1)) of $total ...
     fi

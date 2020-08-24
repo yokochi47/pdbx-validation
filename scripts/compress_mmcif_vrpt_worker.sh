@@ -56,14 +56,9 @@ do
   pdb_id=`basename $cif_file -validation-full.cif`
   div_dir=$WORK_DIR/${pdb_id:1:2}
 
-  if [ ! -d $div_dir ] ; then
-   if [ -e $div_dir ] ; then
-    rm -f $div_dir
-   fi
-   mkdir -p $div_dir
-  fi
+  mk_div_dir $div_dir
 
-  [ -s $cif_file ] && mv -f $cif_file $div_dir && gzip $div_dir/$pdb_id-validation-full.cif
+  [ -s $cif_file ] && gzip_in_div_dir $cif_file $div_dir
 
  fi
 

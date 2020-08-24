@@ -73,11 +73,10 @@ do
   pdb_id=`basename $info_gz_file _validation.xml.gz`
   info_alt_file=$WORK_DIR/$pdb_id-validation-alt.xml
   div_dir=$WORK_DIR/${pdb_id:1:2}
-  info_alt_div_file=$div_dir/$pdb_id-validation-alt.xml
   pdbml_ext_file=$PDBML_EXT/$pdb_id-noatom-ext.xml
   err_file=$WORK_DIR/extract_info_$pdb_id.err
 
-  if [ -e $pdbml_ext_file.gz ] && ( ( [ ! -e $info_alt_file ] && [ ! -e $info_alt_div_file.gz ] ) || [ -e $err_file ] ) ; then
+  if [ -e $pdbml_ext_file.gz ] && ( ( [ ! -e $info_alt_file ] && [ ! -e $div_dir/`basename $info_alt_file`.gz ] ) || [ -e $err_file ] ) ; then
 
    info_file=${info_gz_file%.*} # remove the last '.gz'
    gunzip -c $info_gz_file > $info_file || exit 1
@@ -88,12 +87,7 @@ do
 
    xml_pretty $info_alt_file
 
-   if [ ! -d $div_dir ] ; then
-    if [ -e $div_dir ] ; then
-     rm -f $div_dir
-    fi
-    mkdir -p $div_dir
-   fi
+   mk_div_dir $div_dir
 
    if [ $VALIDATE = 'true' ] ; then
 
@@ -101,7 +95,7 @@ do
 
     if [ $? = 0 ] && [ -s $info_alt_file ] ; then
      rm -f $err_file
-     mv -f $info_alt_file $div_dir && gzip $info_alt_div_file
+     gzip_in_div_dir $info_alt_file $div_dir
      if [ $proc_id_mod = 0 ] ; then
       echo -e -n "\rDone "$((proc_id + 1)) of $total ...
      fi
@@ -110,7 +104,7 @@ do
     fi
 
    elif [ -s $info_alt_file ] ; then
-    mv -f $info_alt_file $div_dir && gzip $info_alt_div_file
+    gzip_in_div_dir $info_alt_file $div_dir
     if [ $proc_id_mod = 0 ] ; then
      echo -e -n "\rDone "$((proc_id + 1)) of $total ...
     fi
