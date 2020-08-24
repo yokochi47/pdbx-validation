@@ -3,7 +3,7 @@
 mmcif_dic=../resource/mmcif_pdbx_v50.dic
 valid_dic=mmcif_pdbx_validation.dic
 
-valid_xsd=../resource/wwpdb_validation_v002.xsd
+valid_xsd=../resource/wwpdb_validation_v004.xsd
 
 schema_stat=schema_stat
 
