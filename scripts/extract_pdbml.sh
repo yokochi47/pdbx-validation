@@ -49,10 +49,10 @@ if [ ! -d $VALID_REPORT ] ; then
  ./scripts/update_vrpt.sh
 fi
 
-last=`find $PDBML_EXT -maxdepth 1 -name '*.xml.gz' | wc -l`
-err=`find $PDBML_EXT -maxdepth 1 -name '*.err' | wc -l`
-#total=`find $VALID_INFO -maxdepth 1 -name '*.xml' | wc -l`
-total=`find $VALID_REPORT -maxdepth 3 -name '*_validation.xml.gz' | wc -l`
+last=`find $PDBML_EXT -maxdepth 1 -name '*.xml.gz' | wc -l 2> /dev/null`
+err=`find $PDBML_EXT -maxdepth 1 -name '*.err' | wc -l 2> /dev/null`
+#total=`find $VALID_INFO -maxdepth 1 -name '*.xml' | wc -l 2> /dev/null`
+total=`find $VALID_REPORT -maxdepth 3 -name '*_validation.xml.gz' | wc -l 2> /dev/null`
 
 if [ $err != 0 ] || [ $total != $last ] ; then
 

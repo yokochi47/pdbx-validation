@@ -57,7 +57,7 @@ fi
 
 MD5_DIR=chk_sum_psql_xml_vrpt
 
-relations=`psql -d $DB_NAME -U $DB_USER -c "\d" | wc -l`
+relations=`psql -d $DB_NAME -U $DB_USER -c "\d" | wc -l 2> /dev/null`
 
 if [ $sync_update != "true" ] || [ ! -d $MD5_DIR ] || [ $relations -eq 0 ] ; then
  sync_update=false
@@ -107,7 +107,7 @@ fi
 red='\e[0;31m'
 normal='\e[0m'
 
-errs=`ls $ERR_DIR/*_err 2> /dev/null | wc -l`
+errs=`ls $ERR_DIR/*_err 2> /dev/null | wc -l 2> /dev/null`
 
 if [ $errs = 0 ] ; then
 

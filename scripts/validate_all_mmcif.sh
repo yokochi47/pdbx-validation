@@ -36,7 +36,7 @@ if [ -d $MMCIF_DIR ] ; then
 
  find $MMCIF_DIR -maxdepth 1 -name '*.cif' -size 0 -exec rm {} +
 
- total=`find $MMCIF_DIR -maxdepth 1 -name '*.cif' | wc -l`
+ total=`find $MMCIF_DIR -maxdepth 1 -name '*.cif' | wc -l 2> /dev/null`
 
  if [ $total != 0 ] ; then
 
@@ -93,7 +93,7 @@ if [ -d $MMCIF_DIR ] ; then
   red='\e[0;31m'
   normal='\e[0m'
 
-  errs=`find $MMCIF_DIR -name "*.log" | wc -l`
+  errs=`find $MMCIF_DIR -name "*.log" | wc -l 2> /dev/null`
 
   if [ $errs != 0 ] ; then
 

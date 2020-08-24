@@ -29,10 +29,10 @@ fi
 
 mkdir -p $RDF
 
-last=`find $RDF -maxdepth 1 -name '*.rdf.gz' | wc -l`
-#total=`find $PDBML -maxdepth 1 -name '*.xml' | wc -l`
-total=`find $PDBML_NOATOM -maxdepth 2 -name '*-noatom.xml.gz' | wc -l`
-err=`find $RDF -maxdepth 1 -name '*.err' | wc -l`
+last=`find $RDF -maxdepth 1 -name '*.rdf.gz' | wc -l 2> /dev/null`
+#total=`find $PDBML -maxdepth 1 -name '*.xml' | wc -l 2> /dev/null`
+total=`find $PDBML_NOATOM -maxdepth 2 -name '*-noatom.xml.gz' | wc -l 2> /dev/null`
+err=`find $RDF -maxdepth 1 -name '*.err' | wc -l 2> /dev/null`
 
 if [ $err != 0 ] || [ $total != $last ] ; then
 

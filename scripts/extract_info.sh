@@ -36,12 +36,12 @@ if [ ! -d $PDBML_EXT ] ; then
  ./scripts/extract_pdbml.sh
 fi
 
-#last=`find $VALID_INFO_ALT -maxdepth 1 -name '*.xml' | wc -l`
-#err=`find $VALID_INFO_ALT -maxdepth 1 -name '*.err' | wc -l`
-#total=`find $VALID_INFO -maxdepth 1 -name '*.xml' | wc -l`
-last=`find $XML_VALID_ALT -maxdepth 2 -name '*.xml.gz' | wc -l`
-err=`find $XML_VALID_ALT -maxdepth 1 -name '*.err' | wc -l`
-total=`find $VALID_REPORT -maxdepth 3 -name '*_validation.xml.gz' | wc -l`
+#last=`find $VALID_INFO_ALT -maxdepth 1 -name '*.xml' | wc -l 2> /dev/null`
+#err=`find $VALID_INFO_ALT -maxdepth 1 -name '*.err' | wc -l 2> /dev/null`
+#total=`find $VALID_INFO -maxdepth 1 -name '*.xml' | wc -l 2> /dev/null`
+last=`find $XML_VALID_ALT -maxdepth 2 -name '*.xml.gz' | wc -l 2> /dev/null`
+err=`find $XML_VALID_ALT -maxdepth 1 -name '*.err' | wc -l 2> /dev/null`
+total=`find $VALID_REPORT -maxdepth 3 -name '*_validation.xml.gz' | wc -l 2> /dev/null`
 
 if [ $err != 0 ] || [ $total != $last ] ; then
 
