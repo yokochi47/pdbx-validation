@@ -73,7 +73,7 @@ do
     mkdir -p $div_dir
    fi
 
-   if [ ! -s $WORK_DIR/$mmcif_vrpt_file ] ; then
+   if [ -s $WORK_DIR/$mmcif_vrpt_file ] ; then
     mv -f $WORK_DIR/$mmcif_vrpt_file $div_dir && gzip $mmcif_vrpt_div_file
 
     if [ $proc_id_mod = 0 ] ; then

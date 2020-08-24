@@ -63,9 +63,7 @@ do
    mkdir -p $div_dir
   fi
 
-  if [ ! -s $rdf_file ] ; then
-   mv -f $rdf_file $div_dir && gzip $div_dir/$pdb_id-validation-alt.rdf
-  fi
+  [ -s $rdf_file ] && mv -f $rdf_file $div_dir && gzip $div_dir/$pdb_id-validation-alt.rdf
 
  fi
 

@@ -63,9 +63,7 @@ do
    mkdir -p $div_dir
   fi
 
-  if [ ! -s $xml_file ] ; then
-   mv -f $xml_file $div_dir && gzip $div_dir/$pdb_id-validation-full.xml
-  fi
+  [ -s $xml_file ] && mv -f $xml_file $div_dir && gzip $div_dir/$pdb_id-validation-full.xml
 
  fi
 

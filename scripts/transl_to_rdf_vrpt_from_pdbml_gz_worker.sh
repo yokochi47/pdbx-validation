@@ -88,7 +88,7 @@ do
     mkdir -p $div_dir
    fi
 
-   if [ ! -s $rdf_vrpt_file ] ; then
+   if [ -s $rdf_vrpt_file ] ; then
     mv -f $rdf_vrpt_file $div_dir && gzip $rdf_vrpt_div_file
 
     if [ $proc_id_mod = 0 ] ; then

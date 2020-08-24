@@ -82,7 +82,7 @@ do
     rapper -q -c $rdf_file 2> $err_file && rm -f $err_file || ( cat $err_file && exit 1 )
    fi
 
-   if [ ! -s $rdf_file ] ; then
+   if [ -s $rdf_file ] ; then
     gzip $rdf_file
 
     if [ $proc_id_mod = 0 ] ; then

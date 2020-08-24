@@ -82,7 +82,7 @@ do
 
     java -classpath $XSD2PGSCHEMA xmlvalidator --xsd $PDBX_VALIDATION_XSD --xml $pdbml_ext_file > /dev/null 2> $err_file
 
-    if [ $? = 0 ] && [ ! -s $pdbml_ext_file ] ; then
+    if [ $? = 0 ] && [ -s $pdbml_ext_file ] ; then
      rm -f $err_file
      gzip $pdbml_ext_file
      if [ $proc_id_mod = 0 ] ; then
@@ -92,7 +92,7 @@ do
      cat $err_file
     fi
 
-   elif [ ! -s $pdbml_ext_file ] ; then
+   elif [ -s $pdbml_ext_file ] ; then
     gzip $pdbml_ext_file
     if [ $proc_id_mod = 0 ] ; then
      echo -e -n "\rDone "$((proc_id + 1)) of $total ...
