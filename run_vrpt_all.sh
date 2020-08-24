@@ -41,7 +41,7 @@ fi
 
 huge_number=100000
 
-total=`ls $PDBML_EXT 2> /dev/null | wc -l`
+total=`ls $PDBML_EXT 2> /dev/null | wc -l 2> /dev/null`
 
 ext_pdbml_exit_code=0
 ext_info_exit_code=0
@@ -62,8 +62,8 @@ else
 
 fi
 
-#total=`ls $VALID_INFO_ALT 2> /dev/null | wc -l`
-total=`find $XML_VALID_ALT -mindepth 2 -name '*.xml.gz' | wc -l`
+#total=`ls $VALID_INFO_ALT 2> /dev/null | wc -l 2> /dev/null`
+total=`find $XML_VALID_ALT -mindepth 2 -name '*.xml.gz' | wc -l 2> /dev/null`
 
 #if [ -d $VALID_INFO_ALT ] && [ $total -gt $huge_number ] ; then
 if [ -d $XML_VALID_ALT ] && [ $total -gt $huge_number ] ; then
@@ -83,8 +83,8 @@ else
 
 fi
 
-xml_total=`ls $XML_VALID 2> /dev/null | wc -l`
-rdf_total=`ls $RDF_VALID 2> /dev/null | wc -l`
+xml_total=`ls $XML_VALID 2> /dev/null | wc -l 2> /dev/null`
+rdf_total=`ls $RDF_VALID 2> /dev/null | wc -l 2> /dev/null`
 
 if [[ $(find wurcs2glytoucan/glytoucan.xml -mtime +4) ]] ; then
  ( cd wurcs2glytoucan; ./update_glytoucan.sh )

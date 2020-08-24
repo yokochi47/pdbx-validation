@@ -239,7 +239,7 @@ if [ -z $MTIME ] ; then
  MTIME=-4
 fi
 
-updated=`find $SRC_DIR -regextype posix-egrep -regex '.*/[0-9][0-9a-z]{3}_validation.xml.gz' -mtime $MTIME | wc -l`
+updated=`find $SRC_DIR -regextype posix-egrep -regex '.*/[0-9][0-9a-z]{3}_validation.xml.gz' -mtime $MTIME | wc -l 2> /dev/null`
 
 if [ $updated = 0 ] || [ ! -e $xml_file_total ] ; then
 
@@ -249,7 +249,7 @@ if [ $updated = 0 ] || [ ! -e $xml_file_total ] ; then
   last=`cat $xml_file_total`
  fi
 
- total=`find $SRC_DIR -regextype posix-egrep -regex '.*/[0-9][0-9a-z]{3}_validation.xml.gz' | wc -l`
+ total=`find $SRC_DIR -regextype posix-egrep -regex '.*/[0-9][0-9a-z]{3}_validation.xml.gz' | wc -l 2> /dev/null`
 
  if [ $total = $last ] ; then
 
@@ -257,7 +257,7 @@ if [ $updated = 0 ] || [ ! -e $xml_file_total ] ; then
 <<REMARK
   if [ -d $XML_DIR ] ; then
 
-   unzipped=`find $XML_DIR -maxdepth 1 -name '*.xml' | wc -l`
+   unzipped=`find $XML_DIR -maxdepth 1 -name '*.xml' | wc -l 2> /dev/null`
 
    if [ $total = $unzipped ] ; then
     exit 0

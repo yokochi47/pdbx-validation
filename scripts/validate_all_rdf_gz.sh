@@ -39,7 +39,7 @@ done
 
 if [ -d $RDF_DIR ] ; then
 
- total=`find $RDF_DIR -mindepth $MIN_DEPTH -name '*.rdf.gz' | wc -l`
+ total=`find $RDF_DIR -mindepth $MIN_DEPTH -name '*.rdf.gz' | wc -l 2> /dev/null`
 
  if [ $total != 0 ] ; then
 
@@ -79,7 +79,7 @@ if [ -d $RDF_DIR ] ; then
   red='\e[0;31m'
   normal='\e[0m'
 
-  errs=`find $RDF_DIR -name "*.log" | wc -l`
+  errs=`find $RDF_DIR -name "*.log" | wc -l 2> /dev/null`
 
   if [ $errs != 0 ] ; then
 

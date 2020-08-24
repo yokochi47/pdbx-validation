@@ -49,9 +49,9 @@ fi
 
 mkdir -p $XML_VALID
 
-last=`find $XML_VALID -maxdepth 2 -name '*.xml.gz' | wc -l`
-err=`find $XML_VALID -maxdepth 1 -name '*.err' | wc -l`
-total=`find $PDBML_EXT -maxdepth 1 -name '*.xml.gz' | wc -l`
+last=`find $XML_VALID -maxdepth 2 -name '*.xml.gz' | wc -l 2> /dev/null`
+err=`find $XML_VALID -maxdepth 1 -name '*.err' | wc -l 2> /dev/null`
+total=`find $PDBML_EXT -maxdepth 1 -name '*.xml.gz' | wc -l 2> /dev/null`
 
 if [ $err != 0 ] || [ $total != $last ] ; then
 

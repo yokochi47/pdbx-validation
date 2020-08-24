@@ -29,10 +29,10 @@ fi
 
 mkdir -p $RDF_VALID_ALT
 
-last=`find $RDF_VALID_ALT -maxdepth 2 -name '*.rdf.gz' | wc -l`
-#total=`find $VALID_INFO_ALT -maxdepth 1 -name '*.xml' | wc -l`
-total=`find $XML_VALID_ALT -maxdepth 2 -name '*.xml.gz' | wc -l`
-err=`find $RDF_VALID_ALT -maxdepth 1 -name '*.err' | wc -l`
+last=`find $RDF_VALID_ALT -maxdepth 2 -name '*.rdf.gz' | wc -l 2> /dev/null`
+#total=`find $VALID_INFO_ALT -maxdepth 1 -name '*.xml' | wc -l 2> /dev/null`
+total=`find $XML_VALID_ALT -maxdepth 2 -name '*.xml.gz' | wc -l 2> /dev/null`
+err=`find $RDF_VALID_ALT -maxdepth 1 -name '*.err' | wc -l 2> /dev/null`
 
 if [ $err != 0 ] || [ $total != $last ] ; then
 

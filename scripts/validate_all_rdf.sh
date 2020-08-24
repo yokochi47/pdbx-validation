@@ -36,7 +36,7 @@ if [ -d $RDF_DIR ] ; then
 
  find $RDF_DIR -maxdepth 1 -name '*.rdf' -size 0 -exec rm {} +
 
- total=`find $RDF_DIR -maxdepth 1 -name '*.rdf' | wc -l`
+ total=`find $RDF_DIR -maxdepth 1 -name '*.rdf' | wc -l 2> /dev/null`
 
  if [ $total != 0 ] ; then
 
@@ -76,7 +76,7 @@ if [ -d $RDF_DIR ] ; then
   red='\e[0;31m'
   normal='\e[0m'
 
-  errs=`find $RDF_DIR -name "*.log" | wc -l`
+  errs=`find $RDF_DIR -name "*.log" | wc -l 2> /dev/null`
 
   if [ $errs != 0 ] ; then
 

@@ -29,10 +29,10 @@ fi
 
 mkdir -p $COMPONENTS_RDF
 
-last=`find $COMPONENTS_RDF -maxdepth 1 -name '*.rdf.gz' | wc -l`
-#total=`find $COMPONENTS_XML -maxdepth 1 -name '*.xml' | wc -l`
-total=`find $PDBML_CC -maxdepth 1 -name '*.xml.gz' | wc -l`
-err=`find $COMPONENTS_RDF -maxdepth 1 -name '*.err' | wc -l`
+last=`find $COMPONENTS_RDF -maxdepth 1 -name '*.rdf.gz' | wc -l 2> /dev/null`
+#total=`find $COMPONENTS_XML -maxdepth 1 -name '*.xml' | wc -l 2> /dev/null`
+total=`find $PDBML_CC -maxdepth 1 -name '*.xml.gz' | wc -l 2> /dev/null`
+err=`find $COMPONENTS_RDF -maxdepth 1 -name '*.err' | wc -l 2> /dev/null`
 
 if [ $err != 0 ] || [ $total != $last ] ; then
 

@@ -34,7 +34,7 @@ done
 
 if [ -d $MMCIF_DIR ] ; then
 
- total=`find $MMCIF_DIR -mindepth 2 -name '*.cif.gz' | wc -l`
+ total=`find $MMCIF_DIR -mindepth 2 -name '*.cif.gz' | wc -l 2> /dev/null`
 
  if [ $total != 0 ] ; then
 
@@ -91,7 +91,7 @@ if [ -d $MMCIF_DIR ] ; then
   red='\e[0;31m'
   normal='\e[0m'
 
-  errs=`find $MMCIF_DIR -name "*.log" | wc -l`
+  errs=`find $MMCIF_DIR -name "*.log" | wc -l 2> /dev/null`
 
   if [ $errs != 0 ] ; then
 
