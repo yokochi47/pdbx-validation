@@ -161,8 +161,9 @@ File path | Document
 
 ## Release notes
 
-- **Aug 20, 2020**: Release v2.0.12
+- **Aug 24, 2020**: Release v2.0.12
 	- Update wwPDB Validation Information Dictionary to 2.332.
+	- Add '_pdbx_percentile_view.conditions_label' and '_pdbx_percentile_entity_view.conditions_label' that provides short descriptive label about conditions applied for percentile calculation.
 
 - **Aug 19, 2020**: Release v2.0.11
 	- Update wwPDB Validation Information Dictionary to 2.331-3.

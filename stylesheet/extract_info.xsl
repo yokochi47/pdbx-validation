@@ -1270,72 +1270,84 @@ chemical shift list type, <xsl:value-of select="@type"/>, is not listed in XSLT 
 
       <xsl:if test="@absolute-percentile-RNAsuiteness">
         <PDBxv:pdbx_percentile_view entry_id="{$entry_id}" conditions_id="{$last_view_abs_rna}" type="RNA_suiteness_score">
+          <xsl:element name="PDBxv:conditions_label">absolute</xsl:element>
           <xsl:element name="PDBxv:rank"><xsl:value-of select="@absolute-percentile-RNAsuiteness"/></xsl:element>
         </PDBxv:pdbx_percentile_view>
       </xsl:if>
 
       <xsl:if test="@relative-percentile-RNAsuiteness">
         <PDBxv:pdbx_percentile_view entry_id="{$entry_id}" conditions_id="{$last_view_rel_rna}" type="RNA_suiteness_score">
+          <xsl:element name="PDBxv:conditions_label">relative</xsl:element>
           <xsl:element name="PDBxv:rank"><xsl:value-of select="@relative-percentile-RNAsuiteness"/></xsl:element>
         </PDBxv:pdbx_percentile_view>
       </xsl:if>
 
       <xsl:if test="@absolute-percentile-clashscore">
         <PDBxv:pdbx_percentile_view entry_id="{$entry_id}" conditions_id="{$last_view_abs_clash}" type="all_atom_clashscore">
+          <xsl:element name="PDBxv:conditions_label">absolute</xsl:element>
           <xsl:element name="PDBxv:rank"><xsl:value-of select="@absolute-percentile-clashscore"/></xsl:element>
         </PDBxv:pdbx_percentile_view>
       </xsl:if>
 
       <xsl:if test="@relative-percentile-clashscore">
         <PDBxv:pdbx_percentile_view entry_id="{$entry_id}" conditions_id="{$last_view_rel_clash}" type="all_atom_clashscore">
+          <xsl:element name="PDBxv:conditions_label">relative</xsl:element>
           <xsl:element name="PDBxv:rank"><xsl:value-of select="@relative-percentile-clashscore"/></xsl:element>
         </PDBxv:pdbx_percentile_view>
       </xsl:if>
 
       <xsl:if test="@absolute-percentile-percent-rama-outliers">
         <PDBxv:pdbx_percentile_view entry_id="{$entry_id}" conditions_id="{$last_view_abs_rama}" type="Ramachandran_outlier_percent">
+          <xsl:element name="PDBxv:conditions_label">absolute</xsl:element>
           <xsl:element name="PDBxv:rank"><xsl:value-of select="@absolute-percentile-percent-rama-outliers"/></xsl:element>
         </PDBxv:pdbx_percentile_view>
       </xsl:if>
 
       <xsl:if test="@relative-percentile-percent-rama-outliers">
         <PDBxv:pdbx_percentile_view entry_id="{$entry_id}" conditions_id="{$last_view_rel_rama}" type="Ramachandran_outlier_percent">
+          <xsl:element name="PDBxv:conditions_label">relative</xsl:element>
           <xsl:element name="PDBxv:rank"><xsl:value-of select="@relative-percentile-percent-rama-outliers"/></xsl:element>
         </PDBxv:pdbx_percentile_view>
       </xsl:if>
 
       <xsl:if test="@absolute-percentile-percent-rota-outliers">
         <PDBxv:pdbx_percentile_view entry_id="{$entry_id}" conditions_id="{$last_view_abs_rota}" type="rotamer_outliers_percent">
+          <xsl:element name="PDBxv:conditions_label">absolute</xsl:element>
           <xsl:element name="PDBxv:rank"><xsl:value-of select="@absolute-percentile-percent-rota-outliers"/></xsl:element>
         </PDBxv:pdbx_percentile_view>
       </xsl:if>
 
       <xsl:if test="@relative-percentile-percent-rota-outliers">
         <PDBxv:pdbx_percentile_view entry_id="{$entry_id}" conditions_id="{$last_view_rel_rota}" type="rotamer_outliers_percent">
+          <xsl:element name="PDBxv:conditions_label">relative</xsl:element>
           <xsl:element name="PDBxv:rank"><xsl:value-of select="@relative-percentile-percent-rota-outliers"/></xsl:element>
         </PDBxv:pdbx_percentile_view>
       </xsl:if>
 
       <xsl:if test="@absolute-percentile-DCC_Rfree">
         <PDBxv:pdbx_percentile_view entry_id="{$entry_id}" conditions_id="{$last_view_abs_rfree}" type="R_value_R_free">
+          <xsl:element name="PDBxv:conditions_label">absolute</xsl:element>
           <xsl:element name="PDBxv:rank"><xsl:value-of select="@absolute-percentile-DCC_Rfree"/></xsl:element>
         </PDBxv:pdbx_percentile_view>
       </xsl:if>
 
       <xsl:if test="@relative-percentile-DCC_Rfree">
         <PDBxv:pdbx_percentile_view entry_id="{$entry_id}" conditions_id="{$last_view_rel_rfree}" type="R_value_R_free">
+          <xsl:element name="PDBxv:conditions_label">relative</xsl:element>
           <xsl:element name="PDBxv:rank"><xsl:value-of select="@relative-percentile-DCC_Rfree"/></xsl:element>
         </PDBxv:pdbx_percentile_view>
       </xsl:if>
 
       <xsl:if test="@absolute-percentile-percent-RSRZ-outliers">
         <PDBxv:pdbx_percentile_view entry_id="{$entry_id}" conditions_id="{$last_view_abs_rsrz}" type="RSRZ_outliers_percent">
+          <xsl:element name="PDBxv:conditions_label">absolute</xsl:element>
           <xsl:element name="PDBxv:rank"><xsl:value-of select="@absolute-percentile-percent-RSRZ-outliers"/></xsl:element>
         </PDBxv:pdbx_percentile_view>
       </xsl:if>
 
       <xsl:if test="@relative-percentile-percent-RSRZ-outliers">
         <PDBxv:pdbx_percentile_view entry_id="{$entry_id}" conditions_id="{$last_view_rel_rsrz}" type="RSRZ_outliers_percent">
+          <xsl:element name="PDBxv:conditions_label">relative</xsl:element>
           <xsl:element name="PDBxv:rank"><xsl:value-of select="@relative-percentile-percent-RSRZ-outliers"/></xsl:element>
         </PDBxv:pdbx_percentile_view>
       </xsl:if>
@@ -1495,6 +1507,7 @@ chemical shift list type, <xsl:value-of select="@type"/>, is not listed in XSLT 
         <xsl:attribute name="PDB_model_num"><xsl:value-of select="@model"/></xsl:attribute>
         <xsl:element name="PDBxv:entity_id"><xsl:value-of select="@ent"/></xsl:element>
         <xsl:element name="PDBxv:auth_asym_id"><xsl:value-of select="@chain"/></xsl:element>
+        <xsl:element name="PDBxv:conditions_label">absolute</xsl:element>
         <xsl:element name="PDBxv:rank"><xsl:value-of select="@absolute_RSRZ_percentile"/></xsl:element>
       </PDBxv:pdbx_percentile_entity_view>
     </xsl:if>
@@ -1505,6 +1518,7 @@ chemical shift list type, <xsl:value-of select="@type"/>, is not listed in XSLT 
         <xsl:attribute name="PDB_model_num"><xsl:value-of select="@model"/></xsl:attribute>
         <xsl:element name="PDBxv:entity_id"><xsl:value-of select="@ent"/></xsl:element>
         <xsl:element name="PDBxv:auth_asym_id"><xsl:value-of select="@chain"/></xsl:element>
+        <xsl:element name="PDBxv:conditions_label">relative</xsl:element>
         <xsl:element name="PDBxv:rank"><xsl:value-of select="@relative_RSRZ_percentile"/></xsl:element>
       </PDBxv:pdbx_percentile_entity_view>
     </xsl:if>
@@ -1515,6 +1529,7 @@ chemical shift list type, <xsl:value-of select="@type"/>, is not listed in XSLT 
         <xsl:attribute name="PDB_model_num"><xsl:value-of select="@model"/></xsl:attribute>
         <xsl:element name="PDBxv:entity_id"><xsl:value-of select="@ent"/></xsl:element>
         <xsl:element name="PDBxv:auth_asym_id"><xsl:value-of select="@chain"/></xsl:element>
+        <xsl:element name="PDBxv:conditions_label">absolute</xsl:element>
         <xsl:element name="PDBxv:rank"><xsl:value-of select="@absolute_rama_percentile"/></xsl:element>
       </PDBxv:pdbx_percentile_entity_view>
     </xsl:if>
@@ -1525,6 +1540,7 @@ chemical shift list type, <xsl:value-of select="@type"/>, is not listed in XSLT 
         <xsl:attribute name="PDB_model_num"><xsl:value-of select="@model"/></xsl:attribute>
         <xsl:element name="PDBxv:entity_id"><xsl:value-of select="@ent"/></xsl:element>
         <xsl:element name="PDBxv:auth_asym_id"><xsl:value-of select="@chain"/></xsl:element>
+        <xsl:element name="PDBxv:conditions_label">relative</xsl:element>
         <xsl:element name="PDBxv:rank"><xsl:value-of select="@relative_rama_percentile"/></xsl:element>
       </PDBxv:pdbx_percentile_entity_view>
     </xsl:if>
@@ -1535,6 +1551,7 @@ chemical shift list type, <xsl:value-of select="@type"/>, is not listed in XSLT 
         <xsl:attribute name="PDB_model_num"><xsl:value-of select="@model"/></xsl:attribute>
         <xsl:element name="PDBxv:entity_id"><xsl:value-of select="@ent"/></xsl:element>
         <xsl:element name="PDBxv:auth_asym_id"><xsl:value-of select="@chain"/></xsl:element>
+        <xsl:element name="PDBxv:conditions_label">absolute</xsl:element>
         <xsl:element name="PDBxv:rank"><xsl:value-of select="@absolute_sidechain_percentile"/></xsl:element>
       </PDBxv:pdbx_percentile_entity_view>
     </xsl:if>
@@ -1545,6 +1562,7 @@ chemical shift list type, <xsl:value-of select="@type"/>, is not listed in XSLT 
         <xsl:attribute name="PDB_model_num"><xsl:value-of select="@model"/></xsl:attribute>
         <xsl:element name="PDBxv:entity_id"><xsl:value-of select="@ent"/></xsl:element>
         <xsl:element name="PDBxv:auth_asym_id"><xsl:value-of select="@chain"/></xsl:element>
+        <xsl:element name="PDBxv:conditions_label">relative</xsl:element>
         <xsl:element name="PDBxv:rank"><xsl:value-of select="@relative_sidechain_percentile"/></xsl:element>
       </PDBxv:pdbx_percentile_entity_view>
     </xsl:if>

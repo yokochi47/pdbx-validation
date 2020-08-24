@@ -65,7 +65,7 @@ do
 
   if ( [ ! -e $rdf_vrpt_file ] && [ ! -e $rdf_vrpt_div_file.gz ] ) || [ -e $err_file ] ; then
 
-   pdbml_vrpt_file=${pdbml_vrpt_gz_file::-3} # remove the last '.gz'
+   pdbml_vrpt_file=${pdbml_vrpt_gz_file%.*} # remove the last '.gz'
    gunzip -c $pdbml_vrpt_gz_file > $pdbml_vrpt_file || exit 1
 
    #java -jar $SAXON -s:$pdbml_vrpt_file -xsl:$PDBMLV2RDF_XSL -o:$rdf_vrpt_file wurcs2glytoucan=$GLYTOUCAN_XML 2> $err_file && rm -f $err_file $pdbml_vrpt_file || ( rm -f $pdbml_vrpt_file && cat $err_file && exit 1 )

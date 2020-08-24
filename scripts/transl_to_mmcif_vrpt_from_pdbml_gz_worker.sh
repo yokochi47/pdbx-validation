@@ -57,7 +57,7 @@ do
   fi
 
   pdb_id=`basename $pdbml_vrpt_gz_file -validation-full.xml.gz`
-  pdbml_vrpt_file=../${pdbml_vrpt_gz_file::-3} # remove the last '.gz'
+  pdbml_vrpt_file=../${pdbml_vrpt_gz_file%.*} # remove the last '.gz'
   mmcif_vrpt_file=$pdb_id-validation-full.cif
   div_dir=$WORK_DIR/${pdb_id:1:2}
   mmcif_vrpt_div_file=$div_dir/$pdb_id-validation-full.cif

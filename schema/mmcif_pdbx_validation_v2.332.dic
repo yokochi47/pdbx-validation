@@ -1,7 +1,7 @@
 ###########################################################################
 #
 # File:  mmcif_pdbx_validation.dic
-# Data:  Thu Aug 20 18:28:30 JST 2020
+# Data:  Mon Aug 24 10:25:25 JST 2020
 #
 # Created from files noted:
 #        mmcif_pdbx_v50.dic   - PDB Exchange Data Dictionary (V5.332)
@@ -724,6 +724,11 @@ data_mmcif_pdbx_validation.dic
 >        _pdbx_nmr_systematic_chem_shift_offset.type # not mapped
 >     + Add 'NMR relaxation study' to _pdbx_struct_assembly_auth_evidence.experimental_support
 >        eumeration # not mapped
+;
+  2.332-1   2020-08-24
+;
+      + Add '_pdbx_percentile_view.conditions_label' and '_pdbx_percentile_entity_view.conditions_label'
+         that provides short descriptive label about conditions applied for percentile calculation.
 ;
 
 #
@@ -58530,10 +58535,11 @@ save_pdbx_percentile_view
     _pdbx_percentile_view.type
     _pdbx_percentile_view.rank
     _pdbx_percentile_view.conditions_id
-     5B1L  'all_atom_clashscore     66.9   1       # absolute-percentile-clashscore
-     5B1L  'RSRZ_outliers_percent  100.0   1       # absolute-percentile-percent-RSRZ-outliers
-     5B1L  'all_atom_clashscore     62.5   2       # relative-percentile-clashscore
-     5B1L  'RSRZ_outliers_percent  100.0   2       # relative-percentile-percent-RSRZ-outliers
+    _pdbx_percentile_view.conditions_label
+     5B1L  'all_atom_clashscore     66.9   1   absolute    # absolute-percentile-clashscore
+     5B1L  'RSRZ_outliers_percent  100.0   1   absolute    # absolute-percentile-percent-RSRZ-outliers
+     5B1L  'all_atom_clashscore     62.5   2   relative    # relative-percentile-clashscore
+     5B1L  'RSRZ_outliers_percent  100.0   2   relative    # relative-percentile-percent-RSRZ-outliers
 ;
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 save_
@@ -58613,6 +58619,21 @@ save__pdbx_percentile_view.conditions_id
     _item_type.code               int
 save_
 
+save__pdbx_percentile_view.conditions_label
+    _item_description.description
+;              A short descriptive label that identifies applied conditions
+               for calculation of validation metric.
+;
+    _item.name                  '_pdbx_percentile_view.conditions_label'
+    _item.category_id             pdbx_percentile_view
+    _item.mandatory_code          no
+    _item_type.code               line
+    loop_
+    _item_enumeration.value
+    'absolute'
+    'relative'
+save_
+
 #################################
 ## PDBX_PERCENTILE_ENTITY_VIEW ##
 #################################
@@ -58649,10 +58670,11 @@ save_pdbx_percentile_entity_view
     _pdbx_percentile_entity_view.type
     _pdbx_percentile_entity_view.rank
     _pdbx_percentile_entity_view.conditions_id
-     A  1    'RSRZ_outliers_percent'  100.0  1       # absolute_RSRZ_percentile
-     A  1    'RSRZ_outliers_percent'  100.0  2       # relative_RSRZ_percentile
-     B  1    'RSRZ_outliers_percent'  100.0  1       # absolute_RSRZ_percentile
-     B  1    'RSRZ_outliers_percent'  100.0  2       # relative_RSRZ_percentile
+    _pdbx_percentile_entity_view.conditions_label
+     A   1   'RSRZ_outliers_percent'   100.0   1    absolute   # absolute_RSRZ_percentile
+     A   1   'RSRZ_outliers_percent'   100.0   2    relative   # relative_RSRZ_percentile
+     B   1   'RSRZ_outliers_percent'   100.0   1    absolute   # absolute_RSRZ_percentile
+     B   1   'RSRZ_outliers_percent'   100.0   2    relative   # relative_RSRZ_percentile
 ;
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 save_
@@ -58784,6 +58806,21 @@ save__pdbx_percentile_entity_view.conditions_id
     _item_linked.child_name     '_pdbx_percentile_entity_view.conditions_id'
     _item_linked.parent_name    '_pdbx_percentile_conditions.id'
     _item_type.code               int
+save_
+
+save__pdbx_percentile_entity_view.conditions_label
+    _item_description.description
+;              A short descriptive label that identifies applied conditions
+               for calculation of validation metric.
+;
+    _item.name                  '_pdbx_percentile_entity_view.conditions_label'
+    _item.category_id             pdbx_percentile_entity_view
+    _item.mandatory_code          no
+    _item_type.code               line
+    loop_
+    _item_enumeration.value
+    'absolute'
+    'relative'
 save_
 
 save_pdbx_percentile_conditions

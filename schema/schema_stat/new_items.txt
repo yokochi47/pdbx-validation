@@ -205,6 +205,7 @@ pdbx_percentile_conditions.ls_d_res_low
 pdbx_percentile_conditions.number_entries_total
 pdbx_percentile_entity_view.auth_asym_id
 pdbx_percentile_entity_view.conditions_id
+pdbx_percentile_entity_view.conditions_label
 pdbx_percentile_entity_view.entity_id
 pdbx_percentile_entity_view.label_asym_id
 pdbx_percentile_entity_view.PDB_model_num
@@ -213,6 +214,7 @@ pdbx_percentile_entity_view.type
 pdbx_percentile_list.entry_id
 pdbx_percentile_list.name
 pdbx_percentile_view.conditions_id
+pdbx_percentile_view.conditions_label
 pdbx_percentile_view.entry_id
 pdbx_percentile_view.rank
 pdbx_percentile_view.type

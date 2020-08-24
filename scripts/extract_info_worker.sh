@@ -79,7 +79,7 @@ do
 
   if [ -e $pdbml_ext_file.gz ] && ( ( [ ! -e $info_alt_file ] && [ ! -e $info_alt_div_file.gz ] ) || [ -e $err_file ] ) ; then
 
-   info_file=${info_gz_file::-3} # remove the last '.gz'
+   info_file=${info_gz_file%.*} # remove the last '.gz'
    gunzip -c $info_gz_file > $info_file || exit 1
 
    gunzip -c $pdbml_ext_file.gz > $pdbml_ext_file || exit 1
