@@ -8,6 +8,11 @@ if [ ! -d $VALID_INFO_ALT ] ; then
  ./scripts/extract_info.sh
 fi
 
+if [ ! -d $VALID_INFO_ALT ] ;
+ echo $VALID_INFO_ALT is empty.
+ exit 1
+fi
+
 if [ ! -d $XML_VALID_ALT ] ; then
  mkdir -p $XML_VALID_ALT
 fi
