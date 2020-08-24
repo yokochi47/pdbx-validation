@@ -3,6 +3,7 @@
 end_point=https://ts.glytoucan.org/sparql
 limit=500
 
+glytoucan_lock=glytoucan.lock
 glytoucan_xml=glytoucan.xml
 
 function query() {
@@ -58,11 +59,20 @@ function query_recursive() {
  fi
 }
 
+if [ -e $glytoucan_lock ] ; then
+ $glytoucan_lock exists.
+ exit 1
+fi
+
+touch $glytoucan_lock
+
 echo '<mapping>' > $glytoucan_xml
 
 query_recursive
 
 echo '</mapping>' >> $glytoucan_xml
+
+rm -f $glytoucan_lock
 
 echo $glytoucan_xml is up-to-date.
 

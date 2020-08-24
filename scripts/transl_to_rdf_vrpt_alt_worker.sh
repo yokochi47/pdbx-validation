@@ -84,7 +84,6 @@ do
 
    if [ -s $rdf_vrpt_file ] ; then
     mv -f $rdf_vrpt_file $div_dir && gzip $rdf_vrpt_div_file
-
     if [ $proc_id_mod = 0 ] ; then
      echo -e -n "\rDone "$((proc_id + 1)) of $total ...
     fi
