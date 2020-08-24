@@ -9,15 +9,16 @@ loop_
 _pdbx_percentile_view.entry_id 
 _pdbx_percentile_view.conditions_id 
 _pdbx_percentile_view.type 
+_pdbx_percentile_view.conditions_label 
 _pdbx_percentile_view.rank 
-1B5F 1 all_atom_clashscore          37.2 
-1B5F 2 all_atom_clashscore          20.3 
-1B5F 3 Ramachandran_outlier_percent 30.8 
-1B5F 4 Ramachandran_outlier_percent 14.0 
-1B5F 5 rotamer_outliers_percent     22.6 
-1B5F 6 rotamer_outliers_percent     6.5  
-1B5F 7 RSRZ_outliers_percent        10.2 
-1B5F 8 RSRZ_outliers_percent        11.9 
+1B5F 1 all_atom_clashscore          absolute 37.2 
+1B5F 2 all_atom_clashscore          relative 20.3 
+1B5F 3 Ramachandran_outlier_percent absolute 30.8 
+1B5F 4 Ramachandran_outlier_percent relative 14.0 
+1B5F 5 rotamer_outliers_percent     absolute 22.6 
+1B5F 6 rotamer_outliers_percent     relative 6.5  
+1B5F 7 RSRZ_outliers_percent        absolute 10.2 
+1B5F 8 RSRZ_outliers_percent        relative 11.9 
 # 
 loop_
 _pdbx_percentile_conditions.id 
@@ -40,31 +41,32 @@ _pdbx_percentile_entity_view.label_asym_id
 _pdbx_percentile_entity_view.PDB_model_num 
 _pdbx_percentile_entity_view.entity_id 
 _pdbx_percentile_entity_view.auth_asym_id 
+_pdbx_percentile_entity_view.conditions_label 
 _pdbx_percentile_entity_view.rank 
-7 RSRZ_outliers_percent        A 1 1 A 9.70   
-8 RSRZ_outliers_percent        A 1 1 A 11.09  
-3 Ramachandran_outlier_percent A 1 1 A 36.31  
-4 Ramachandran_outlier_percent A 1 1 A 19.05  
-5 rotamer_outliers_percent     A 1 1 A 27.35  
-6 rotamer_outliers_percent     A 1 1 A 8.72   
-7 RSRZ_outliers_percent        C 1 1 C 7.56   
-8 RSRZ_outliers_percent        C 1 1 C 8.37   
-3 Ramachandran_outlier_percent C 1 1 C 100.00 
-4 Ramachandran_outlier_percent C 1 1 C 100.00 
-5 rotamer_outliers_percent     C 1 1 C 17.32  
-6 rotamer_outliers_percent     C 1 1 C 3.76   
-7 RSRZ_outliers_percent        B 1 2 B 16.62  
-8 RSRZ_outliers_percent        B 1 2 B 19.32  
-3 Ramachandran_outlier_percent B 1 2 B 14.28  
-4 Ramachandran_outlier_percent B 1 2 B 2.87   
-5 rotamer_outliers_percent     B 1 2 B 16.91  
-6 rotamer_outliers_percent     B 1 2 B 3.56   
-7 RSRZ_outliers_percent        D 1 2 D 16.62  
-8 RSRZ_outliers_percent        D 1 2 D 19.32  
-3 Ramachandran_outlier_percent D 1 2 D 14.28  
-4 Ramachandran_outlier_percent D 1 2 D 2.87   
-5 rotamer_outliers_percent     D 1 2 D 32.46  
-6 rotamer_outliers_percent     D 1 2 D 11.92  
+7 RSRZ_outliers_percent        A 1 1 A absolute 9.70   
+8 RSRZ_outliers_percent        A 1 1 A relative 11.09  
+3 Ramachandran_outlier_percent A 1 1 A absolute 36.31  
+4 Ramachandran_outlier_percent A 1 1 A relative 19.05  
+5 rotamer_outliers_percent     A 1 1 A absolute 27.35  
+6 rotamer_outliers_percent     A 1 1 A relative 8.72   
+7 RSRZ_outliers_percent        C 1 1 C absolute 7.56   
+8 RSRZ_outliers_percent        C 1 1 C relative 8.37   
+3 Ramachandran_outlier_percent C 1 1 C absolute 100.00 
+4 Ramachandran_outlier_percent C 1 1 C relative 100.00 
+5 rotamer_outliers_percent     C 1 1 C absolute 17.32  
+6 rotamer_outliers_percent     C 1 1 C relative 3.76   
+7 RSRZ_outliers_percent        B 1 2 B absolute 16.62  
+8 RSRZ_outliers_percent        B 1 2 B relative 19.32  
+3 Ramachandran_outlier_percent B 1 2 B absolute 14.28  
+4 Ramachandran_outlier_percent B 1 2 B relative 2.87   
+5 rotamer_outliers_percent     B 1 2 B absolute 16.91  
+6 rotamer_outliers_percent     B 1 2 B relative 3.56   
+7 RSRZ_outliers_percent        D 1 2 D absolute 16.62  
+8 RSRZ_outliers_percent        D 1 2 D relative 19.32  
+3 Ramachandran_outlier_percent D 1 2 D absolute 14.28  
+4 Ramachandran_outlier_percent D 1 2 D relative 2.87   
+5 rotamer_outliers_percent     D 1 2 D absolute 32.46  
+6 rotamer_outliers_percent     D 1 2 D relative 11.92  
 # 
 _pdbx_dcc_density.entry_id                   1B5F 
 _pdbx_dcc_density.B_babinet                  95.689 

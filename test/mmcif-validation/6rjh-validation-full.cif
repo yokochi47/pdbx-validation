@@ -6968,13 +6968,14 @@ loop_
 _pdbx_percentile_view.entry_id 
 _pdbx_percentile_view.conditions_id 
 _pdbx_percentile_view.type 
+_pdbx_percentile_view.conditions_label 
 _pdbx_percentile_view.rank 
-6RJH 1 all_atom_clashscore          18.9 
-6RJH 2 all_atom_clashscore          42.0 
-6RJH 3 Ramachandran_outlier_percent 31.4 
-6RJH 4 Ramachandran_outlier_percent 65.6 
-6RJH 5 rotamer_outliers_percent     21.3 
-6RJH 6 rotamer_outliers_percent     29.7 
+6RJH 1 all_atom_clashscore          absolute 18.9 
+6RJH 2 all_atom_clashscore          relative 42.0 
+6RJH 3 Ramachandran_outlier_percent absolute 31.4 
+6RJH 4 Ramachandran_outlier_percent relative 65.6 
+6RJH 5 rotamer_outliers_percent     absolute 21.3 
+6RJH 6 rotamer_outliers_percent     relative 29.7 
 # 
 loop_
 _pdbx_percentile_conditions.id 
@@ -6993,103 +6994,104 @@ _pdbx_percentile_entity_view.label_asym_id
 _pdbx_percentile_entity_view.PDB_model_num 
 _pdbx_percentile_entity_view.entity_id 
 _pdbx_percentile_entity_view.auth_asym_id 
+_pdbx_percentile_entity_view.conditions_label 
 _pdbx_percentile_entity_view.rank 
-3 Ramachandran_outlier_percent A 1 1 A 26.95 
-4 Ramachandran_outlier_percent A 1 1 A 20.55 
-5 rotamer_outliers_percent     A 1 1 A 16.91 
-6 rotamer_outliers_percent     A 1 1 A 11.72 
-3 Ramachandran_outlier_percent B 1 1 B 26.95 
-4 Ramachandran_outlier_percent B 1 1 B 20.55 
-5 rotamer_outliers_percent     B 1 1 B 16.91 
-6 rotamer_outliers_percent     B 1 1 B 11.72 
-3 Ramachandran_outlier_percent C 1 1 C 26.95 
-4 Ramachandran_outlier_percent C 1 1 C 20.55 
-5 rotamer_outliers_percent     C 1 1 C 16.91 
-6 rotamer_outliers_percent     C 1 1 C 11.72 
-3 Ramachandran_outlier_percent D 1 1 D 26.95 
-4 Ramachandran_outlier_percent D 1 1 D 20.55 
-5 rotamer_outliers_percent     D 1 1 D 16.91 
-6 rotamer_outliers_percent     D 1 1 D 11.72 
-3 Ramachandran_outlier_percent E 1 1 E 26.95 
-4 Ramachandran_outlier_percent E 1 1 E 20.55 
-5 rotamer_outliers_percent     E 1 1 E 16.91 
-6 rotamer_outliers_percent     E 1 1 E 11.72 
-3 Ramachandran_outlier_percent F 1 1 F 26.95 
-4 Ramachandran_outlier_percent F 1 1 F 20.55 
-5 rotamer_outliers_percent     F 1 1 F 16.91 
-6 rotamer_outliers_percent     F 1 1 F 11.72 
-3 Ramachandran_outlier_percent G 1 1 G 26.95 
-4 Ramachandran_outlier_percent G 1 1 G 20.55 
-5 rotamer_outliers_percent     G 1 1 G 16.91 
-6 rotamer_outliers_percent     G 1 1 G 11.72 
-3 Ramachandran_outlier_percent H 1 1 H 26.95 
-4 Ramachandran_outlier_percent H 1 1 H 20.55 
-5 rotamer_outliers_percent     H 1 1 H 16.91 
-6 rotamer_outliers_percent     H 1 1 H 11.72 
-3 Ramachandran_outlier_percent I 1 1 I 26.95 
-4 Ramachandran_outlier_percent I 1 1 I 20.55 
-5 rotamer_outliers_percent     I 1 1 I 16.91 
-6 rotamer_outliers_percent     I 1 1 I 11.72 
-3 Ramachandran_outlier_percent J 1 1 J 26.95 
-4 Ramachandran_outlier_percent J 1 1 J 20.55 
-5 rotamer_outliers_percent     J 1 1 J 16.91 
-6 rotamer_outliers_percent     J 1 1 J 11.72 
-3 Ramachandran_outlier_percent K 1 1 K 26.95 
-4 Ramachandran_outlier_percent K 1 1 K 20.55 
-5 rotamer_outliers_percent     K 1 1 K 16.91 
-6 rotamer_outliers_percent     K 1 1 K 11.72 
-3 Ramachandran_outlier_percent L 1 1 L 26.95 
-4 Ramachandran_outlier_percent L 1 1 L 20.55 
-5 rotamer_outliers_percent     L 1 1 L 16.91 
-6 rotamer_outliers_percent     L 1 1 L 11.72 
-3 Ramachandran_outlier_percent M 1 1 M 26.95 
-4 Ramachandran_outlier_percent M 1 1 M 20.55 
-5 rotamer_outliers_percent     M 1 1 M 16.91 
-6 rotamer_outliers_percent     M 1 1 M 11.72 
-3 Ramachandran_outlier_percent N 1 1 N 26.95 
-4 Ramachandran_outlier_percent N 1 1 N 20.55 
-5 rotamer_outliers_percent     N 1 1 N 16.91 
-6 rotamer_outliers_percent     N 1 1 N 11.72 
-3 Ramachandran_outlier_percent O 1 1 O 26.95 
-4 Ramachandran_outlier_percent O 1 1 O 20.55 
-5 rotamer_outliers_percent     O 1 1 O 16.91 
-6 rotamer_outliers_percent     O 1 1 O 11.72 
-3 Ramachandran_outlier_percent P 1 1 P 26.95 
-4 Ramachandran_outlier_percent P 1 1 P 20.55 
-5 rotamer_outliers_percent     P 1 1 P 16.91 
-6 rotamer_outliers_percent     P 1 1 P 11.72 
-3 Ramachandran_outlier_percent Q 1 1 Q 26.95 
-4 Ramachandran_outlier_percent Q 1 1 Q 20.55 
-5 rotamer_outliers_percent     Q 1 1 Q 16.91 
-6 rotamer_outliers_percent     Q 1 1 Q 11.72 
-3 Ramachandran_outlier_percent R 1 1 R 26.95 
-4 Ramachandran_outlier_percent R 1 1 R 20.55 
-5 rotamer_outliers_percent     R 1 1 R 16.91 
-6 rotamer_outliers_percent     R 1 1 R 11.72 
-3 Ramachandran_outlier_percent S 1 1 S 26.95 
-4 Ramachandran_outlier_percent S 1 1 S 20.55 
-5 rotamer_outliers_percent     S 1 1 S 16.91 
-6 rotamer_outliers_percent     S 1 1 S 11.72 
-3 Ramachandran_outlier_percent T 1 1 T 26.95 
-4 Ramachandran_outlier_percent T 1 1 T 20.55 
-5 rotamer_outliers_percent     T 1 1 T 16.91 
-6 rotamer_outliers_percent     T 1 1 T 11.72 
-3 Ramachandran_outlier_percent U 1 1 U 26.95 
-4 Ramachandran_outlier_percent U 1 1 U 20.55 
-5 rotamer_outliers_percent     U 1 1 U 16.91 
-6 rotamer_outliers_percent     U 1 1 U 11.72 
-3 Ramachandran_outlier_percent V 1 1 V 26.95 
-4 Ramachandran_outlier_percent V 1 1 V 20.55 
-5 rotamer_outliers_percent     V 1 1 V 16.91 
-6 rotamer_outliers_percent     V 1 1 V 11.72 
-3 Ramachandran_outlier_percent W 1 1 W 26.95 
-4 Ramachandran_outlier_percent W 1 1 W 20.55 
-5 rotamer_outliers_percent     W 1 1 W 16.91 
-6 rotamer_outliers_percent     W 1 1 W 11.72 
-3 Ramachandran_outlier_percent X 1 1 X 26.95 
-4 Ramachandran_outlier_percent X 1 1 X 20.55 
-5 rotamer_outliers_percent     X 1 1 X 16.91 
-6 rotamer_outliers_percent     X 1 1 X 11.72 
+3 Ramachandran_outlier_percent A 1 1 A absolute 26.95 
+4 Ramachandran_outlier_percent A 1 1 A relative 20.55 
+5 rotamer_outliers_percent     A 1 1 A absolute 16.91 
+6 rotamer_outliers_percent     A 1 1 A relative 11.72 
+3 Ramachandran_outlier_percent B 1 1 B absolute 26.95 
+4 Ramachandran_outlier_percent B 1 1 B relative 20.55 
+5 rotamer_outliers_percent     B 1 1 B absolute 16.91 
+6 rotamer_outliers_percent     B 1 1 B relative 11.72 
+3 Ramachandran_outlier_percent C 1 1 C absolute 26.95 
+4 Ramachandran_outlier_percent C 1 1 C relative 20.55 
+5 rotamer_outliers_percent     C 1 1 C absolute 16.91 
+6 rotamer_outliers_percent     C 1 1 C relative 11.72 
+3 Ramachandran_outlier_percent D 1 1 D absolute 26.95 
+4 Ramachandran_outlier_percent D 1 1 D relative 20.55 
+5 rotamer_outliers_percent     D 1 1 D absolute 16.91 
+6 rotamer_outliers_percent     D 1 1 D relative 11.72 
+3 Ramachandran_outlier_percent E 1 1 E absolute 26.95 
+4 Ramachandran_outlier_percent E 1 1 E relative 20.55 
+5 rotamer_outliers_percent     E 1 1 E absolute 16.91 
+6 rotamer_outliers_percent     E 1 1 E relative 11.72 
+3 Ramachandran_outlier_percent F 1 1 F absolute 26.95 
+4 Ramachandran_outlier_percent F 1 1 F relative 20.55 
+5 rotamer_outliers_percent     F 1 1 F absolute 16.91 
+6 rotamer_outliers_percent     F 1 1 F relative 11.72 
+3 Ramachandran_outlier_percent G 1 1 G absolute 26.95 
+4 Ramachandran_outlier_percent G 1 1 G relative 20.55 
+5 rotamer_outliers_percent     G 1 1 G absolute 16.91 
+6 rotamer_outliers_percent     G 1 1 G relative 11.72 
+3 Ramachandran_outlier_percent H 1 1 H absolute 26.95 
+4 Ramachandran_outlier_percent H 1 1 H relative 20.55 
+5 rotamer_outliers_percent     H 1 1 H absolute 16.91 
+6 rotamer_outliers_percent     H 1 1 H relative 11.72 
+3 Ramachandran_outlier_percent I 1 1 I absolute 26.95 
+4 Ramachandran_outlier_percent I 1 1 I relative 20.55 
+5 rotamer_outliers_percent     I 1 1 I absolute 16.91 
+6 rotamer_outliers_percent     I 1 1 I relative 11.72 
+3 Ramachandran_outlier_percent J 1 1 J absolute 26.95 
+4 Ramachandran_outlier_percent J 1 1 J relative 20.55 
+5 rotamer_outliers_percent     J 1 1 J absolute 16.91 
+6 rotamer_outliers_percent     J 1 1 J relative 11.72 
+3 Ramachandran_outlier_percent K 1 1 K absolute 26.95 
+4 Ramachandran_outlier_percent K 1 1 K relative 20.55 
+5 rotamer_outliers_percent     K 1 1 K absolute 16.91 
+6 rotamer_outliers_percent     K 1 1 K relative 11.72 
+3 Ramachandran_outlier_percent L 1 1 L absolute 26.95 
+4 Ramachandran_outlier_percent L 1 1 L relative 20.55 
+5 rotamer_outliers_percent     L 1 1 L absolute 16.91 
+6 rotamer_outliers_percent     L 1 1 L relative 11.72 
+3 Ramachandran_outlier_percent M 1 1 M absolute 26.95 
+4 Ramachandran_outlier_percent M 1 1 M relative 20.55 
+5 rotamer_outliers_percent     M 1 1 M absolute 16.91 
+6 rotamer_outliers_percent     M 1 1 M relative 11.72 
+3 Ramachandran_outlier_percent N 1 1 N absolute 26.95 
+4 Ramachandran_outlier_percent N 1 1 N relative 20.55 
+5 rotamer_outliers_percent     N 1 1 N absolute 16.91 
+6 rotamer_outliers_percent     N 1 1 N relative 11.72 
+3 Ramachandran_outlier_percent O 1 1 O absolute 26.95 
+4 Ramachandran_outlier_percent O 1 1 O relative 20.55 
+5 rotamer_outliers_percent     O 1 1 O absolute 16.91 
+6 rotamer_outliers_percent     O 1 1 O relative 11.72 
+3 Ramachandran_outlier_percent P 1 1 P absolute 26.95 
+4 Ramachandran_outlier_percent P 1 1 P relative 20.55 
+5 rotamer_outliers_percent     P 1 1 P absolute 16.91 
+6 rotamer_outliers_percent     P 1 1 P relative 11.72 
+3 Ramachandran_outlier_percent Q 1 1 Q absolute 26.95 
+4 Ramachandran_outlier_percent Q 1 1 Q relative 20.55 
+5 rotamer_outliers_percent     Q 1 1 Q absolute 16.91 
+6 rotamer_outliers_percent     Q 1 1 Q relative 11.72 
+3 Ramachandran_outlier_percent R 1 1 R absolute 26.95 
+4 Ramachandran_outlier_percent R 1 1 R relative 20.55 
+5 rotamer_outliers_percent     R 1 1 R absolute 16.91 
+6 rotamer_outliers_percent     R 1 1 R relative 11.72 
+3 Ramachandran_outlier_percent S 1 1 S absolute 26.95 
+4 Ramachandran_outlier_percent S 1 1 S relative 20.55 
+5 rotamer_outliers_percent     S 1 1 S absolute 16.91 
+6 rotamer_outliers_percent     S 1 1 S relative 11.72 
+3 Ramachandran_outlier_percent T 1 1 T absolute 26.95 
+4 Ramachandran_outlier_percent T 1 1 T relative 20.55 
+5 rotamer_outliers_percent     T 1 1 T absolute 16.91 
+6 rotamer_outliers_percent     T 1 1 T relative 11.72 
+3 Ramachandran_outlier_percent U 1 1 U absolute 26.95 
+4 Ramachandran_outlier_percent U 1 1 U relative 20.55 
+5 rotamer_outliers_percent     U 1 1 U absolute 16.91 
+6 rotamer_outliers_percent     U 1 1 U relative 11.72 
+3 Ramachandran_outlier_percent V 1 1 V absolute 26.95 
+4 Ramachandran_outlier_percent V 1 1 V relative 20.55 
+5 rotamer_outliers_percent     V 1 1 V absolute 16.91 
+6 rotamer_outliers_percent     V 1 1 V relative 11.72 
+3 Ramachandran_outlier_percent W 1 1 W absolute 26.95 
+4 Ramachandran_outlier_percent W 1 1 W relative 20.55 
+5 rotamer_outliers_percent     W 1 1 W absolute 16.91 
+6 rotamer_outliers_percent     W 1 1 W relative 11.72 
+3 Ramachandran_outlier_percent X 1 1 X absolute 26.95 
+4 Ramachandran_outlier_percent X 1 1 X relative 20.55 
+5 rotamer_outliers_percent     X 1 1 X absolute 16.91 
+6 rotamer_outliers_percent     X 1 1 X relative 11.72 
 # 
 _pdbx_dcc_geometry.entry_id                       6RJH 
 _pdbx_dcc_geometry.Ramachandran_outlier_percent   0.60 
