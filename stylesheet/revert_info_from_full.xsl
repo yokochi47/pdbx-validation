@@ -681,7 +681,6 @@ Criteria for FSC resolution estimation, <xsl:value-of select="@type"/>, is not l
 
     <xsl:call-template name="percentile_handler">
       <xsl:with-param name="conditions_id"><xsl:value-of select="@conditions_id"/></xsl:with-param>
-      <xsl:with-param name="conditions_label"><xsl:value-of select="PDBxv:conditions_label"/></xsl:with-param>
       <xsl:with-param name="type"><xsl:value-of select="@type"/></xsl:with-param>
       <xsl:with-param name="rank"><xsl:value-of select="PDBxv:rank"/></xsl:with-param>
     </xsl:call-template>

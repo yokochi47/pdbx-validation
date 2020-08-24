@@ -10,21 +10,27 @@
   </PDBxv:pdbx_percentile_listCategory>
   <PDBxv:pdbx_percentile_viewCategory>
     <PDBxv:pdbx_percentile_view entry_id="5H0S" conditions_id="1" type="all_atom_clashscore">
+      <PDBxv:conditions_label>absolute</PDBxv:conditions_label>
       <PDBxv:rank>1.4</PDBxv:rank>
     </PDBxv:pdbx_percentile_view>
     <PDBxv:pdbx_percentile_view entry_id="5H0S" conditions_id="2" type="all_atom_clashscore">
+      <PDBxv:conditions_label>relative</PDBxv:conditions_label>
       <PDBxv:rank>8.7</PDBxv:rank>
     </PDBxv:pdbx_percentile_view>
     <PDBxv:pdbx_percentile_view entry_id="5H0S" conditions_id="3" type="Ramachandran_outlier_percent">
+      <PDBxv:conditions_label>absolute</PDBxv:conditions_label>
       <PDBxv:rank>4.8</PDBxv:rank>
     </PDBxv:pdbx_percentile_view>
     <PDBxv:pdbx_percentile_view entry_id="5H0S" conditions_id="4" type="Ramachandran_outlier_percent">
+      <PDBxv:conditions_label>relative</PDBxv:conditions_label>
       <PDBxv:rank>17.1</PDBxv:rank>
     </PDBxv:pdbx_percentile_view>
     <PDBxv:pdbx_percentile_view entry_id="5H0S" conditions_id="5" type="rotamer_outliers_percent">
+      <PDBxv:conditions_label>absolute</PDBxv:conditions_label>
       <PDBxv:rank>5.1</PDBxv:rank>
     </PDBxv:pdbx_percentile_view>
     <PDBxv:pdbx_percentile_view entry_id="5H0S" conditions_id="6" type="rotamer_outliers_percent">
+      <PDBxv:conditions_label>relative</PDBxv:conditions_label>
       <PDBxv:rank>6.5</PDBxv:rank>
     </PDBxv:pdbx_percentile_view>
   </PDBxv:pdbx_percentile_viewCategory>
@@ -52,41 +58,49 @@
     <PDBxv:pdbx_percentile_entity_view conditions_id="3" type="Ramachandran_outlier_percent" label_asym_id="A" PDB_model_num="1">
       <PDBxv:entity_id>1</PDBxv:entity_id>
       <PDBxv:auth_asym_id>B</PDBxv:auth_asym_id>
+      <PDBxv:conditions_label>absolute</PDBxv:conditions_label>
       <PDBxv:rank>15.56</PDBxv:rank>
     </PDBxv:pdbx_percentile_entity_view>
     <PDBxv:pdbx_percentile_entity_view conditions_id="4" type="Ramachandran_outlier_percent" label_asym_id="A" PDB_model_num="1">
       <PDBxv:entity_id>1</PDBxv:entity_id>
       <PDBxv:auth_asym_id>B</PDBxv:auth_asym_id>
+      <PDBxv:conditions_label>relative</PDBxv:conditions_label>
       <PDBxv:rank>49.65</PDBxv:rank>
     </PDBxv:pdbx_percentile_entity_view>
     <PDBxv:pdbx_percentile_entity_view conditions_id="5" type="rotamer_outliers_percent" label_asym_id="A" PDB_model_num="1">
       <PDBxv:entity_id>1</PDBxv:entity_id>
       <PDBxv:auth_asym_id>B</PDBxv:auth_asym_id>
+      <PDBxv:conditions_label>absolute</PDBxv:conditions_label>
       <PDBxv:rank>85.28</PDBxv:rank>
     </PDBxv:pdbx_percentile_entity_view>
     <PDBxv:pdbx_percentile_entity_view conditions_id="6" type="rotamer_outliers_percent" label_asym_id="A" PDB_model_num="1">
       <PDBxv:entity_id>1</PDBxv:entity_id>
       <PDBxv:auth_asym_id>B</PDBxv:auth_asym_id>
+      <PDBxv:conditions_label>relative</PDBxv:conditions_label>
       <PDBxv:rank>91.22</PDBxv:rank>
     </PDBxv:pdbx_percentile_entity_view>
     <PDBxv:pdbx_percentile_entity_view conditions_id="3" type="Ramachandran_outlier_percent" label_asym_id="B" PDB_model_num="1">
       <PDBxv:entity_id>1</PDBxv:entity_id>
       <PDBxv:auth_asym_id>C</PDBxv:auth_asym_id>
+      <PDBxv:conditions_label>absolute</PDBxv:conditions_label>
       <PDBxv:rank>0.85</PDBxv:rank>
     </PDBxv:pdbx_percentile_entity_view>
     <PDBxv:pdbx_percentile_entity_view conditions_id="4" type="Ramachandran_outlier_percent" label_asym_id="B" PDB_model_num="1">
       <PDBxv:entity_id>1</PDBxv:entity_id>
       <PDBxv:auth_asym_id>C</PDBxv:auth_asym_id>
+      <PDBxv:conditions_label>relative</PDBxv:conditions_label>
       <PDBxv:rank>6.88</PDBxv:rank>
     </PDBxv:pdbx_percentile_entity_view>
     <PDBxv:pdbx_percentile_entity_view conditions_id="5" type="rotamer_outliers_percent" label_asym_id="B" PDB_model_num="1">
       <PDBxv:entity_id>1</PDBxv:entity_id>
       <PDBxv:auth_asym_id>C</PDBxv:auth_asym_id>
+      <PDBxv:conditions_label>absolute</PDBxv:conditions_label>
       <PDBxv:rank>0.14</PDBxv:rank>
     </PDBxv:pdbx_percentile_entity_view>
     <PDBxv:pdbx_percentile_entity_view conditions_id="6" type="rotamer_outliers_percent" label_asym_id="B" PDB_model_num="1">
       <PDBxv:entity_id>1</PDBxv:entity_id>
       <PDBxv:auth_asym_id>C</PDBxv:auth_asym_id>
+      <PDBxv:conditions_label>relative</PDBxv:conditions_label>
       <PDBxv:rank>0.75</PDBxv:rank>
     </PDBxv:pdbx_percentile_entity_view>
   </PDBxv:pdbx_percentile_entity_viewCategory>

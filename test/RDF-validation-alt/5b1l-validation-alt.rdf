@@ -67,6 +67,7 @@
                   <PDBov:pdbx_percentile_view.entry_id>5B1L</PDBov:pdbx_percentile_view.entry_id>
                   <PDBov:pdbx_percentile_view.conditions_id>1</PDBov:pdbx_percentile_view.conditions_id>
                   <PDBov:pdbx_percentile_view.type>all_atom_clashscore</PDBov:pdbx_percentile_view.type>
+                  <PDBov:pdbx_percentile_view.conditions_label>absolute</PDBov:pdbx_percentile_view.conditions_label>
                   <PDBov:pdbx_percentile_view.rank>49.0</PDBov:pdbx_percentile_view.rank>
                </PDBov:pdbx_percentile_view>
             </PDBov:has_pdbx_percentile_view>
@@ -86,6 +87,7 @@
                   <PDBov:pdbx_percentile_view.entry_id>5B1L</PDBov:pdbx_percentile_view.entry_id>
                   <PDBov:pdbx_percentile_view.conditions_id>2</PDBov:pdbx_percentile_view.conditions_id>
                   <PDBov:pdbx_percentile_view.type>all_atom_clashscore</PDBov:pdbx_percentile_view.type>
+                  <PDBov:pdbx_percentile_view.conditions_label>relative</PDBov:pdbx_percentile_view.conditions_label>
                   <PDBov:pdbx_percentile_view.rank>53.0</PDBov:pdbx_percentile_view.rank>
                </PDBov:pdbx_percentile_view>
             </PDBov:has_pdbx_percentile_view>
@@ -105,6 +107,7 @@
                   <PDBov:pdbx_percentile_view.entry_id>5B1L</PDBov:pdbx_percentile_view.entry_id>
                   <PDBov:pdbx_percentile_view.conditions_id>3</PDBov:pdbx_percentile_view.conditions_id>
                   <PDBov:pdbx_percentile_view.type>Ramachandran_outlier_percent</PDBov:pdbx_percentile_view.type>
+                  <PDBov:pdbx_percentile_view.conditions_label>absolute</PDBov:pdbx_percentile_view.conditions_label>
                   <PDBov:pdbx_percentile_view.rank>100.0</PDBov:pdbx_percentile_view.rank>
                </PDBov:pdbx_percentile_view>
             </PDBov:has_pdbx_percentile_view>
@@ -124,6 +127,7 @@
                   <PDBov:pdbx_percentile_view.entry_id>5B1L</PDBov:pdbx_percentile_view.entry_id>
                   <PDBov:pdbx_percentile_view.conditions_id>4</PDBov:pdbx_percentile_view.conditions_id>
                   <PDBov:pdbx_percentile_view.type>Ramachandran_outlier_percent</PDBov:pdbx_percentile_view.type>
+                  <PDBov:pdbx_percentile_view.conditions_label>relative</PDBov:pdbx_percentile_view.conditions_label>
                   <PDBov:pdbx_percentile_view.rank>100.0</PDBov:pdbx_percentile_view.rank>
                </PDBov:pdbx_percentile_view>
             </PDBov:has_pdbx_percentile_view>
@@ -143,6 +147,7 @@
                   <PDBov:pdbx_percentile_view.entry_id>5B1L</PDBov:pdbx_percentile_view.entry_id>
                   <PDBov:pdbx_percentile_view.conditions_id>5</PDBov:pdbx_percentile_view.conditions_id>
                   <PDBov:pdbx_percentile_view.type>rotamer_outliers_percent</PDBov:pdbx_percentile_view.type>
+                  <PDBov:pdbx_percentile_view.conditions_label>absolute</PDBov:pdbx_percentile_view.conditions_label>
                   <PDBov:pdbx_percentile_view.rank>93.8</PDBov:pdbx_percentile_view.rank>
                </PDBov:pdbx_percentile_view>
             </PDBov:has_pdbx_percentile_view>
@@ -162,6 +167,7 @@
                   <PDBov:pdbx_percentile_view.entry_id>5B1L</PDBov:pdbx_percentile_view.entry_id>
                   <PDBov:pdbx_percentile_view.conditions_id>6</PDBov:pdbx_percentile_view.conditions_id>
                   <PDBov:pdbx_percentile_view.type>rotamer_outliers_percent</PDBov:pdbx_percentile_view.type>
+                  <PDBov:pdbx_percentile_view.conditions_label>relative</PDBov:pdbx_percentile_view.conditions_label>
                   <PDBov:pdbx_percentile_view.rank>97.3</PDBov:pdbx_percentile_view.rank>
                </PDBov:pdbx_percentile_view>
             </PDBov:has_pdbx_percentile_view>
@@ -181,6 +187,7 @@
                   <PDBov:pdbx_percentile_view.entry_id>5B1L</PDBov:pdbx_percentile_view.entry_id>
                   <PDBov:pdbx_percentile_view.conditions_id>7</PDBov:pdbx_percentile_view.conditions_id>
                   <PDBov:pdbx_percentile_view.type>R_value_R_free</PDBov:pdbx_percentile_view.type>
+                  <PDBov:pdbx_percentile_view.conditions_label>absolute</PDBov:pdbx_percentile_view.conditions_label>
                   <PDBov:pdbx_percentile_view.rank>48.3</PDBov:pdbx_percentile_view.rank>
                </PDBov:pdbx_percentile_view>
             </PDBov:has_pdbx_percentile_view>
@@ -200,6 +207,7 @@
                   <PDBov:pdbx_percentile_view.entry_id>5B1L</PDBov:pdbx_percentile_view.entry_id>
                   <PDBov:pdbx_percentile_view.conditions_id>8</PDBov:pdbx_percentile_view.conditions_id>
                   <PDBov:pdbx_percentile_view.type>R_value_R_free</PDBov:pdbx_percentile_view.type>
+                  <PDBov:pdbx_percentile_view.conditions_label>relative</PDBov:pdbx_percentile_view.conditions_label>
                   <PDBov:pdbx_percentile_view.rank>68.7</PDBov:pdbx_percentile_view.rank>
                </PDBov:pdbx_percentile_view>
             </PDBov:has_pdbx_percentile_view>
@@ -219,6 +227,7 @@
                   <PDBov:pdbx_percentile_view.entry_id>5B1L</PDBov:pdbx_percentile_view.entry_id>
                   <PDBov:pdbx_percentile_view.conditions_id>9</PDBov:pdbx_percentile_view.conditions_id>
                   <PDBov:pdbx_percentile_view.type>RSRZ_outliers_percent</PDBov:pdbx_percentile_view.type>
+                  <PDBov:pdbx_percentile_view.conditions_label>absolute</PDBov:pdbx_percentile_view.conditions_label>
                   <PDBov:pdbx_percentile_view.rank>73.3</PDBov:pdbx_percentile_view.rank>
                </PDBov:pdbx_percentile_view>
             </PDBov:has_pdbx_percentile_view>
@@ -238,6 +247,7 @@
                   <PDBov:pdbx_percentile_view.entry_id>5B1L</PDBov:pdbx_percentile_view.entry_id>
                   <PDBov:pdbx_percentile_view.conditions_id>10</PDBov:pdbx_percentile_view.conditions_id>
                   <PDBov:pdbx_percentile_view.type>RSRZ_outliers_percent</PDBov:pdbx_percentile_view.type>
+                  <PDBov:pdbx_percentile_view.conditions_label>relative</PDBov:pdbx_percentile_view.conditions_label>
                   <PDBov:pdbx_percentile_view.rank>82.4</PDBov:pdbx_percentile_view.rank>
                </PDBov:pdbx_percentile_view>
             </PDBov:has_pdbx_percentile_view>
@@ -343,6 +353,7 @@
                   <PDBov:pdbx_percentile_entity_view.PDB_model_num>1</PDBov:pdbx_percentile_entity_view.PDB_model_num>
                   <PDBov:pdbx_percentile_entity_view.entity_id>1</PDBov:pdbx_percentile_entity_view.entity_id>
                   <PDBov:pdbx_percentile_entity_view.auth_asym_id>A</PDBov:pdbx_percentile_entity_view.auth_asym_id>
+                  <PDBov:pdbx_percentile_entity_view.conditions_label>absolute</PDBov:pdbx_percentile_entity_view.conditions_label>
                   <PDBov:pdbx_percentile_entity_view.rank>81.96</PDBov:pdbx_percentile_entity_view.rank>
                </PDBov:pdbx_percentile_entity_view>
             </PDBov:has_pdbx_percentile_entity_view>
@@ -360,6 +371,7 @@
                   <PDBov:pdbx_percentile_entity_view.PDB_model_num>1</PDBov:pdbx_percentile_entity_view.PDB_model_num>
                   <PDBov:pdbx_percentile_entity_view.entity_id>1</PDBov:pdbx_percentile_entity_view.entity_id>
                   <PDBov:pdbx_percentile_entity_view.auth_asym_id>A</PDBov:pdbx_percentile_entity_view.auth_asym_id>
+                  <PDBov:pdbx_percentile_entity_view.conditions_label>relative</PDBov:pdbx_percentile_entity_view.conditions_label>
                   <PDBov:pdbx_percentile_entity_view.rank>89.42</PDBov:pdbx_percentile_entity_view.rank>
                </PDBov:pdbx_percentile_entity_view>
             </PDBov:has_pdbx_percentile_entity_view>
@@ -377,6 +389,7 @@
                   <PDBov:pdbx_percentile_entity_view.PDB_model_num>1</PDBov:pdbx_percentile_entity_view.PDB_model_num>
                   <PDBov:pdbx_percentile_entity_view.entity_id>1</PDBov:pdbx_percentile_entity_view.entity_id>
                   <PDBov:pdbx_percentile_entity_view.auth_asym_id>A</PDBov:pdbx_percentile_entity_view.auth_asym_id>
+                  <PDBov:pdbx_percentile_entity_view.conditions_label>absolute</PDBov:pdbx_percentile_entity_view.conditions_label>
                   <PDBov:pdbx_percentile_entity_view.rank>100.00</PDBov:pdbx_percentile_entity_view.rank>
                </PDBov:pdbx_percentile_entity_view>
             </PDBov:has_pdbx_percentile_entity_view>
@@ -394,6 +407,7 @@
                   <PDBov:pdbx_percentile_entity_view.PDB_model_num>1</PDBov:pdbx_percentile_entity_view.PDB_model_num>
                   <PDBov:pdbx_percentile_entity_view.entity_id>1</PDBov:pdbx_percentile_entity_view.entity_id>
                   <PDBov:pdbx_percentile_entity_view.auth_asym_id>A</PDBov:pdbx_percentile_entity_view.auth_asym_id>
+                  <PDBov:pdbx_percentile_entity_view.conditions_label>relative</PDBov:pdbx_percentile_entity_view.conditions_label>
                   <PDBov:pdbx_percentile_entity_view.rank>100.00</PDBov:pdbx_percentile_entity_view.rank>
                </PDBov:pdbx_percentile_entity_view>
             </PDBov:has_pdbx_percentile_entity_view>
@@ -411,6 +425,7 @@
                   <PDBov:pdbx_percentile_entity_view.PDB_model_num>1</PDBov:pdbx_percentile_entity_view.PDB_model_num>
                   <PDBov:pdbx_percentile_entity_view.entity_id>1</PDBov:pdbx_percentile_entity_view.entity_id>
                   <PDBov:pdbx_percentile_entity_view.auth_asym_id>A</PDBov:pdbx_percentile_entity_view.auth_asym_id>
+                  <PDBov:pdbx_percentile_entity_view.conditions_label>absolute</PDBov:pdbx_percentile_entity_view.conditions_label>
                   <PDBov:pdbx_percentile_entity_view.rank>100.00</PDBov:pdbx_percentile_entity_view.rank>
                </PDBov:pdbx_percentile_entity_view>
             </PDBov:has_pdbx_percentile_entity_view>
@@ -428,6 +443,7 @@
                   <PDBov:pdbx_percentile_entity_view.PDB_model_num>1</PDBov:pdbx_percentile_entity_view.PDB_model_num>
                   <PDBov:pdbx_percentile_entity_view.entity_id>1</PDBov:pdbx_percentile_entity_view.entity_id>
                   <PDBov:pdbx_percentile_entity_view.auth_asym_id>A</PDBov:pdbx_percentile_entity_view.auth_asym_id>
+                  <PDBov:pdbx_percentile_entity_view.conditions_label>relative</PDBov:pdbx_percentile_entity_view.conditions_label>
                   <PDBov:pdbx_percentile_entity_view.rank>100.00</PDBov:pdbx_percentile_entity_view.rank>
                </PDBov:pdbx_percentile_entity_view>
             </PDBov:has_pdbx_percentile_entity_view>
@@ -445,6 +461,7 @@
                   <PDBov:pdbx_percentile_entity_view.PDB_model_num>1</PDBov:pdbx_percentile_entity_view.PDB_model_num>
                   <PDBov:pdbx_percentile_entity_view.entity_id>1</PDBov:pdbx_percentile_entity_view.entity_id>
                   <PDBov:pdbx_percentile_entity_view.auth_asym_id>E</PDBov:pdbx_percentile_entity_view.auth_asym_id>
+                  <PDBov:pdbx_percentile_entity_view.conditions_label>absolute</PDBov:pdbx_percentile_entity_view.conditions_label>
                   <PDBov:pdbx_percentile_entity_view.rank>100.00</PDBov:pdbx_percentile_entity_view.rank>
                </PDBov:pdbx_percentile_entity_view>
             </PDBov:has_pdbx_percentile_entity_view>
@@ -462,6 +479,7 @@
                   <PDBov:pdbx_percentile_entity_view.PDB_model_num>1</PDBov:pdbx_percentile_entity_view.PDB_model_num>
                   <PDBov:pdbx_percentile_entity_view.entity_id>1</PDBov:pdbx_percentile_entity_view.entity_id>
                   <PDBov:pdbx_percentile_entity_view.auth_asym_id>E</PDBov:pdbx_percentile_entity_view.auth_asym_id>
+                  <PDBov:pdbx_percentile_entity_view.conditions_label>relative</PDBov:pdbx_percentile_entity_view.conditions_label>
                   <PDBov:pdbx_percentile_entity_view.rank>100.00</PDBov:pdbx_percentile_entity_view.rank>
                </PDBov:pdbx_percentile_entity_view>
             </PDBov:has_pdbx_percentile_entity_view>
@@ -479,6 +497,7 @@
                   <PDBov:pdbx_percentile_entity_view.PDB_model_num>1</PDBov:pdbx_percentile_entity_view.PDB_model_num>
                   <PDBov:pdbx_percentile_entity_view.entity_id>1</PDBov:pdbx_percentile_entity_view.entity_id>
                   <PDBov:pdbx_percentile_entity_view.auth_asym_id>E</PDBov:pdbx_percentile_entity_view.auth_asym_id>
+                  <PDBov:pdbx_percentile_entity_view.conditions_label>absolute</PDBov:pdbx_percentile_entity_view.conditions_label>
                   <PDBov:pdbx_percentile_entity_view.rank>100.00</PDBov:pdbx_percentile_entity_view.rank>
                </PDBov:pdbx_percentile_entity_view>
             </PDBov:has_pdbx_percentile_entity_view>
@@ -496,6 +515,7 @@
                   <PDBov:pdbx_percentile_entity_view.PDB_model_num>1</PDBov:pdbx_percentile_entity_view.PDB_model_num>
                   <PDBov:pdbx_percentile_entity_view.entity_id>1</PDBov:pdbx_percentile_entity_view.entity_id>
                   <PDBov:pdbx_percentile_entity_view.auth_asym_id>E</PDBov:pdbx_percentile_entity_view.auth_asym_id>
+                  <PDBov:pdbx_percentile_entity_view.conditions_label>relative</PDBov:pdbx_percentile_entity_view.conditions_label>
                   <PDBov:pdbx_percentile_entity_view.rank>100.00</PDBov:pdbx_percentile_entity_view.rank>
                </PDBov:pdbx_percentile_entity_view>
             </PDBov:has_pdbx_percentile_entity_view>
@@ -513,6 +533,7 @@
                   <PDBov:pdbx_percentile_entity_view.PDB_model_num>1</PDBov:pdbx_percentile_entity_view.PDB_model_num>
                   <PDBov:pdbx_percentile_entity_view.entity_id>1</PDBov:pdbx_percentile_entity_view.entity_id>
                   <PDBov:pdbx_percentile_entity_view.auth_asym_id>E</PDBov:pdbx_percentile_entity_view.auth_asym_id>
+                  <PDBov:pdbx_percentile_entity_view.conditions_label>absolute</PDBov:pdbx_percentile_entity_view.conditions_label>
                   <PDBov:pdbx_percentile_entity_view.rank>100.00</PDBov:pdbx_percentile_entity_view.rank>
                </PDBov:pdbx_percentile_entity_view>
             </PDBov:has_pdbx_percentile_entity_view>
@@ -530,6 +551,7 @@
                   <PDBov:pdbx_percentile_entity_view.PDB_model_num>1</PDBov:pdbx_percentile_entity_view.PDB_model_num>
                   <PDBov:pdbx_percentile_entity_view.entity_id>1</PDBov:pdbx_percentile_entity_view.entity_id>
                   <PDBov:pdbx_percentile_entity_view.auth_asym_id>E</PDBov:pdbx_percentile_entity_view.auth_asym_id>
+                  <PDBov:pdbx_percentile_entity_view.conditions_label>relative</PDBov:pdbx_percentile_entity_view.conditions_label>
                   <PDBov:pdbx_percentile_entity_view.rank>100.00</PDBov:pdbx_percentile_entity_view.rank>
                </PDBov:pdbx_percentile_entity_view>
             </PDBov:has_pdbx_percentile_entity_view>
@@ -547,6 +569,7 @@
                   <PDBov:pdbx_percentile_entity_view.PDB_model_num>1</PDBov:pdbx_percentile_entity_view.PDB_model_num>
                   <PDBov:pdbx_percentile_entity_view.entity_id>2</PDBov:pdbx_percentile_entity_view.entity_id>
                   <PDBov:pdbx_percentile_entity_view.auth_asym_id>B</PDBov:pdbx_percentile_entity_view.auth_asym_id>
+                  <PDBov:pdbx_percentile_entity_view.conditions_label>absolute</PDBov:pdbx_percentile_entity_view.conditions_label>
                   <PDBov:pdbx_percentile_entity_view.rank>55.60</PDBov:pdbx_percentile_entity_view.rank>
                </PDBov:pdbx_percentile_entity_view>
             </PDBov:has_pdbx_percentile_entity_view>
@@ -564,6 +587,7 @@
                   <PDBov:pdbx_percentile_entity_view.PDB_model_num>1</PDBov:pdbx_percentile_entity_view.PDB_model_num>
                   <PDBov:pdbx_percentile_entity_view.entity_id>2</PDBov:pdbx_percentile_entity_view.entity_id>
                   <PDBov:pdbx_percentile_entity_view.auth_asym_id>B</PDBov:pdbx_percentile_entity_view.auth_asym_id>
+                  <PDBov:pdbx_percentile_entity_view.conditions_label>relative</PDBov:pdbx_percentile_entity_view.conditions_label>
                   <PDBov:pdbx_percentile_entity_view.rank>66.17</PDBov:pdbx_percentile_entity_view.rank>
                </PDBov:pdbx_percentile_entity_view>
             </PDBov:has_pdbx_percentile_entity_view>
@@ -581,6 +605,7 @@
                   <PDBov:pdbx_percentile_entity_view.PDB_model_num>1</PDBov:pdbx_percentile_entity_view.PDB_model_num>
                   <PDBov:pdbx_percentile_entity_view.entity_id>2</PDBov:pdbx_percentile_entity_view.entity_id>
                   <PDBov:pdbx_percentile_entity_view.auth_asym_id>B</PDBov:pdbx_percentile_entity_view.auth_asym_id>
+                  <PDBov:pdbx_percentile_entity_view.conditions_label>absolute</PDBov:pdbx_percentile_entity_view.conditions_label>
                   <PDBov:pdbx_percentile_entity_view.rank>100.00</PDBov:pdbx_percentile_entity_view.rank>
                </PDBov:pdbx_percentile_entity_view>
             </PDBov:has_pdbx_percentile_entity_view>
@@ -598,6 +623,7 @@
                   <PDBov:pdbx_percentile_entity_view.PDB_model_num>1</PDBov:pdbx_percentile_entity_view.PDB_model_num>
                   <PDBov:pdbx_percentile_entity_view.entity_id>2</PDBov:pdbx_percentile_entity_view.entity_id>
                   <PDBov:pdbx_percentile_entity_view.auth_asym_id>B</PDBov:pdbx_percentile_entity_view.auth_asym_id>
+                  <PDBov:pdbx_percentile_entity_view.conditions_label>relative</PDBov:pdbx_percentile_entity_view.conditions_label>
                   <PDBov:pdbx_percentile_entity_view.rank>100.00</PDBov:pdbx_percentile_entity_view.rank>
                </PDBov:pdbx_percentile_entity_view>
             </PDBov:has_pdbx_percentile_entity_view>
@@ -615,6 +641,7 @@
                   <PDBov:pdbx_percentile_entity_view.PDB_model_num>1</PDBov:pdbx_percentile_entity_view.PDB_model_num>
                   <PDBov:pdbx_percentile_entity_view.entity_id>2</PDBov:pdbx_percentile_entity_view.entity_id>
                   <PDBov:pdbx_percentile_entity_view.auth_asym_id>B</PDBov:pdbx_percentile_entity_view.auth_asym_id>
+                  <PDBov:pdbx_percentile_entity_view.conditions_label>absolute</PDBov:pdbx_percentile_entity_view.conditions_label>
                   <PDBov:pdbx_percentile_entity_view.rank>100.00</PDBov:pdbx_percentile_entity_view.rank>
                </PDBov:pdbx_percentile_entity_view>
             </PDBov:has_pdbx_percentile_entity_view>
@@ -632,6 +659,7 @@
                   <PDBov:pdbx_percentile_entity_view.PDB_model_num>1</PDBov:pdbx_percentile_entity_view.PDB_model_num>
                   <PDBov:pdbx_percentile_entity_view.entity_id>2</PDBov:pdbx_percentile_entity_view.entity_id>
                   <PDBov:pdbx_percentile_entity_view.auth_asym_id>B</PDBov:pdbx_percentile_entity_view.auth_asym_id>
+                  <PDBov:pdbx_percentile_entity_view.conditions_label>relative</PDBov:pdbx_percentile_entity_view.conditions_label>
                   <PDBov:pdbx_percentile_entity_view.rank>100.00</PDBov:pdbx_percentile_entity_view.rank>
                </PDBov:pdbx_percentile_entity_view>
             </PDBov:has_pdbx_percentile_entity_view>
@@ -649,6 +677,7 @@
                   <PDBov:pdbx_percentile_entity_view.PDB_model_num>1</PDBov:pdbx_percentile_entity_view.PDB_model_num>
                   <PDBov:pdbx_percentile_entity_view.entity_id>2</PDBov:pdbx_percentile_entity_view.entity_id>
                   <PDBov:pdbx_percentile_entity_view.auth_asym_id>F</PDBov:pdbx_percentile_entity_view.auth_asym_id>
+                  <PDBov:pdbx_percentile_entity_view.conditions_label>absolute</PDBov:pdbx_percentile_entity_view.conditions_label>
                   <PDBov:pdbx_percentile_entity_view.rank>78.58</PDBov:pdbx_percentile_entity_view.rank>
                </PDBov:pdbx_percentile_entity_view>
             </PDBov:has_pdbx_percentile_entity_view>
@@ -666,6 +695,7 @@
                   <PDBov:pdbx_percentile_entity_view.PDB_model_num>1</PDBov:pdbx_percentile_entity_view.PDB_model_num>
                   <PDBov:pdbx_percentile_entity_view.entity_id>2</PDBov:pdbx_percentile_entity_view.entity_id>
                   <PDBov:pdbx_percentile_entity_view.auth_asym_id>F</PDBov:pdbx_percentile_entity_view.auth_asym_id>
+                  <PDBov:pdbx_percentile_entity_view.conditions_label>relative</PDBov:pdbx_percentile_entity_view.conditions_label>
                   <PDBov:pdbx_percentile_entity_view.rank>86.43</PDBov:pdbx_percentile_entity_view.rank>
                </PDBov:pdbx_percentile_entity_view>
             </PDBov:has_pdbx_percentile_entity_view>
@@ -683,6 +713,7 @@
                   <PDBov:pdbx_percentile_entity_view.PDB_model_num>1</PDBov:pdbx_percentile_entity_view.PDB_model_num>
                   <PDBov:pdbx_percentile_entity_view.entity_id>2</PDBov:pdbx_percentile_entity_view.entity_id>
                   <PDBov:pdbx_percentile_entity_view.auth_asym_id>F</PDBov:pdbx_percentile_entity_view.auth_asym_id>
+                  <PDBov:pdbx_percentile_entity_view.conditions_label>absolute</PDBov:pdbx_percentile_entity_view.conditions_label>
                   <PDBov:pdbx_percentile_entity_view.rank>100.00</PDBov:pdbx_percentile_entity_view.rank>
                </PDBov:pdbx_percentile_entity_view>
             </PDBov:has_pdbx_percentile_entity_view>
@@ -700,6 +731,7 @@
                   <PDBov:pdbx_percentile_entity_view.PDB_model_num>1</PDBov:pdbx_percentile_entity_view.PDB_model_num>
                   <PDBov:pdbx_percentile_entity_view.entity_id>2</PDBov:pdbx_percentile_entity_view.entity_id>
                   <PDBov:pdbx_percentile_entity_view.auth_asym_id>F</PDBov:pdbx_percentile_entity_view.auth_asym_id>
+                  <PDBov:pdbx_percentile_entity_view.conditions_label>relative</PDBov:pdbx_percentile_entity_view.conditions_label>
                   <PDBov:pdbx_percentile_entity_view.rank>100.00</PDBov:pdbx_percentile_entity_view.rank>
                </PDBov:pdbx_percentile_entity_view>
             </PDBov:has_pdbx_percentile_entity_view>
@@ -717,6 +749,7 @@
                   <PDBov:pdbx_percentile_entity_view.PDB_model_num>1</PDBov:pdbx_percentile_entity_view.PDB_model_num>
                   <PDBov:pdbx_percentile_entity_view.entity_id>2</PDBov:pdbx_percentile_entity_view.entity_id>
                   <PDBov:pdbx_percentile_entity_view.auth_asym_id>F</PDBov:pdbx_percentile_entity_view.auth_asym_id>
+                  <PDBov:pdbx_percentile_entity_view.conditions_label>absolute</PDBov:pdbx_percentile_entity_view.conditions_label>
                   <PDBov:pdbx_percentile_entity_view.rank>69.44</PDBov:pdbx_percentile_entity_view.rank>
                </PDBov:pdbx_percentile_entity_view>
             </PDBov:has_pdbx_percentile_entity_view>
@@ -734,6 +767,7 @@
                   <PDBov:pdbx_percentile_entity_view.PDB_model_num>1</PDBov:pdbx_percentile_entity_view.PDB_model_num>
                   <PDBov:pdbx_percentile_entity_view.entity_id>2</PDBov:pdbx_percentile_entity_view.entity_id>
                   <PDBov:pdbx_percentile_entity_view.auth_asym_id>F</PDBov:pdbx_percentile_entity_view.auth_asym_id>
+                  <PDBov:pdbx_percentile_entity_view.conditions_label>relative</PDBov:pdbx_percentile_entity_view.conditions_label>
                   <PDBov:pdbx_percentile_entity_view.rank>79.76</PDBov:pdbx_percentile_entity_view.rank>
                </PDBov:pdbx_percentile_entity_view>
             </PDBov:has_pdbx_percentile_entity_view>
@@ -751,6 +785,7 @@
                   <PDBov:pdbx_percentile_entity_view.PDB_model_num>1</PDBov:pdbx_percentile_entity_view.PDB_model_num>
                   <PDBov:pdbx_percentile_entity_view.entity_id>3</PDBov:pdbx_percentile_entity_view.entity_id>
                   <PDBov:pdbx_percentile_entity_view.auth_asym_id>C</PDBov:pdbx_percentile_entity_view.auth_asym_id>
+                  <PDBov:pdbx_percentile_entity_view.conditions_label>absolute</PDBov:pdbx_percentile_entity_view.conditions_label>
                   <PDBov:pdbx_percentile_entity_view.rank>52.70</PDBov:pdbx_percentile_entity_view.rank>
                </PDBov:pdbx_percentile_entity_view>
             </PDBov:has_pdbx_percentile_entity_view>
@@ -768,6 +803,7 @@
                   <PDBov:pdbx_percentile_entity_view.PDB_model_num>1</PDBov:pdbx_percentile_entity_view.PDB_model_num>
                   <PDBov:pdbx_percentile_entity_view.entity_id>3</PDBov:pdbx_percentile_entity_view.entity_id>
                   <PDBov:pdbx_percentile_entity_view.auth_asym_id>C</PDBov:pdbx_percentile_entity_view.auth_asym_id>
+                  <PDBov:pdbx_percentile_entity_view.conditions_label>relative</PDBov:pdbx_percentile_entity_view.conditions_label>
                   <PDBov:pdbx_percentile_entity_view.rank>64.57</PDBov:pdbx_percentile_entity_view.rank>
                </PDBov:pdbx_percentile_entity_view>
             </PDBov:has_pdbx_percentile_entity_view>
@@ -785,6 +821,7 @@
                   <PDBov:pdbx_percentile_entity_view.PDB_model_num>1</PDBov:pdbx_percentile_entity_view.PDB_model_num>
                   <PDBov:pdbx_percentile_entity_view.entity_id>3</PDBov:pdbx_percentile_entity_view.entity_id>
                   <PDBov:pdbx_percentile_entity_view.auth_asym_id>C</PDBov:pdbx_percentile_entity_view.auth_asym_id>
+                  <PDBov:pdbx_percentile_entity_view.conditions_label>absolute</PDBov:pdbx_percentile_entity_view.conditions_label>
                   <PDBov:pdbx_percentile_entity_view.rank>100.00</PDBov:pdbx_percentile_entity_view.rank>
                </PDBov:pdbx_percentile_entity_view>
             </PDBov:has_pdbx_percentile_entity_view>
@@ -802,6 +839,7 @@
                   <PDBov:pdbx_percentile_entity_view.PDB_model_num>1</PDBov:pdbx_percentile_entity_view.PDB_model_num>
                   <PDBov:pdbx_percentile_entity_view.entity_id>3</PDBov:pdbx_percentile_entity_view.entity_id>
                   <PDBov:pdbx_percentile_entity_view.auth_asym_id>C</PDBov:pdbx_percentile_entity_view.auth_asym_id>
+                  <PDBov:pdbx_percentile_entity_view.conditions_label>relative</PDBov:pdbx_percentile_entity_view.conditions_label>
                   <PDBov:pdbx_percentile_entity_view.rank>100.00</PDBov:pdbx_percentile_entity_view.rank>
                </PDBov:pdbx_percentile_entity_view>
             </PDBov:has_pdbx_percentile_entity_view>
@@ -819,6 +857,7 @@
                   <PDBov:pdbx_percentile_entity_view.PDB_model_num>1</PDBov:pdbx_percentile_entity_view.PDB_model_num>
                   <PDBov:pdbx_percentile_entity_view.entity_id>3</PDBov:pdbx_percentile_entity_view.entity_id>
                   <PDBov:pdbx_percentile_entity_view.auth_asym_id>C</PDBov:pdbx_percentile_entity_view.auth_asym_id>
+                  <PDBov:pdbx_percentile_entity_view.conditions_label>absolute</PDBov:pdbx_percentile_entity_view.conditions_label>
                   <PDBov:pdbx_percentile_entity_view.rank>100.00</PDBov:pdbx_percentile_entity_view.rank>
                </PDBov:pdbx_percentile_entity_view>
             </PDBov:has_pdbx_percentile_entity_view>
@@ -836,6 +875,7 @@
                   <PDBov:pdbx_percentile_entity_view.PDB_model_num>1</PDBov:pdbx_percentile_entity_view.PDB_model_num>
                   <PDBov:pdbx_percentile_entity_view.entity_id>3</PDBov:pdbx_percentile_entity_view.entity_id>
                   <PDBov:pdbx_percentile_entity_view.auth_asym_id>C</PDBov:pdbx_percentile_entity_view.auth_asym_id>
+                  <PDBov:pdbx_percentile_entity_view.conditions_label>relative</PDBov:pdbx_percentile_entity_view.conditions_label>
                   <PDBov:pdbx_percentile_entity_view.rank>100.00</PDBov:pdbx_percentile_entity_view.rank>
                </PDBov:pdbx_percentile_entity_view>
             </PDBov:has_pdbx_percentile_entity_view>
@@ -853,6 +893,7 @@
                   <PDBov:pdbx_percentile_entity_view.PDB_model_num>1</PDBov:pdbx_percentile_entity_view.PDB_model_num>
                   <PDBov:pdbx_percentile_entity_view.entity_id>3</PDBov:pdbx_percentile_entity_view.entity_id>
                   <PDBov:pdbx_percentile_entity_view.auth_asym_id>G</PDBov:pdbx_percentile_entity_view.auth_asym_id>
+                  <PDBov:pdbx_percentile_entity_view.conditions_label>absolute</PDBov:pdbx_percentile_entity_view.conditions_label>
                   <PDBov:pdbx_percentile_entity_view.rank>66.48</PDBov:pdbx_percentile_entity_view.rank>
                </PDBov:pdbx_percentile_entity_view>
             </PDBov:has_pdbx_percentile_entity_view>
@@ -870,6 +911,7 @@
                   <PDBov:pdbx_percentile_entity_view.PDB_model_num>1</PDBov:pdbx_percentile_entity_view.PDB_model_num>
                   <PDBov:pdbx_percentile_entity_view.entity_id>3</PDBov:pdbx_percentile_entity_view.entity_id>
                   <PDBov:pdbx_percentile_entity_view.auth_asym_id>G</PDBov:pdbx_percentile_entity_view.auth_asym_id>
+                  <PDBov:pdbx_percentile_entity_view.conditions_label>relative</PDBov:pdbx_percentile_entity_view.conditions_label>
                   <PDBov:pdbx_percentile_entity_view.rank>76.45</PDBov:pdbx_percentile_entity_view.rank>
                </PDBov:pdbx_percentile_entity_view>
             </PDBov:has_pdbx_percentile_entity_view>
@@ -887,6 +929,7 @@
                   <PDBov:pdbx_percentile_entity_view.PDB_model_num>1</PDBov:pdbx_percentile_entity_view.PDB_model_num>
                   <PDBov:pdbx_percentile_entity_view.entity_id>3</PDBov:pdbx_percentile_entity_view.entity_id>
                   <PDBov:pdbx_percentile_entity_view.auth_asym_id>G</PDBov:pdbx_percentile_entity_view.auth_asym_id>
+                  <PDBov:pdbx_percentile_entity_view.conditions_label>absolute</PDBov:pdbx_percentile_entity_view.conditions_label>
                   <PDBov:pdbx_percentile_entity_view.rank>100.00</PDBov:pdbx_percentile_entity_view.rank>
                </PDBov:pdbx_percentile_entity_view>
             </PDBov:has_pdbx_percentile_entity_view>
@@ -904,6 +947,7 @@
                   <PDBov:pdbx_percentile_entity_view.PDB_model_num>1</PDBov:pdbx_percentile_entity_view.PDB_model_num>
                   <PDBov:pdbx_percentile_entity_view.entity_id>3</PDBov:pdbx_percentile_entity_view.entity_id>
                   <PDBov:pdbx_percentile_entity_view.auth_asym_id>G</PDBov:pdbx_percentile_entity_view.auth_asym_id>
+                  <PDBov:pdbx_percentile_entity_view.conditions_label>relative</PDBov:pdbx_percentile_entity_view.conditions_label>
                   <PDBov:pdbx_percentile_entity_view.rank>100.00</PDBov:pdbx_percentile_entity_view.rank>
                </PDBov:pdbx_percentile_entity_view>
             </PDBov:has_pdbx_percentile_entity_view>
@@ -921,6 +965,7 @@
                   <PDBov:pdbx_percentile_entity_view.PDB_model_num>1</PDBov:pdbx_percentile_entity_view.PDB_model_num>
                   <PDBov:pdbx_percentile_entity_view.entity_id>3</PDBov:pdbx_percentile_entity_view.entity_id>
                   <PDBov:pdbx_percentile_entity_view.auth_asym_id>G</PDBov:pdbx_percentile_entity_view.auth_asym_id>
+                  <PDBov:pdbx_percentile_entity_view.conditions_label>absolute</PDBov:pdbx_percentile_entity_view.conditions_label>
                   <PDBov:pdbx_percentile_entity_view.rank>100.00</PDBov:pdbx_percentile_entity_view.rank>
                </PDBov:pdbx_percentile_entity_view>
             </PDBov:has_pdbx_percentile_entity_view>
@@ -938,6 +983,7 @@
                   <PDBov:pdbx_percentile_entity_view.PDB_model_num>1</PDBov:pdbx_percentile_entity_view.PDB_model_num>
                   <PDBov:pdbx_percentile_entity_view.entity_id>3</PDBov:pdbx_percentile_entity_view.entity_id>
                   <PDBov:pdbx_percentile_entity_view.auth_asym_id>G</PDBov:pdbx_percentile_entity_view.auth_asym_id>
+                  <PDBov:pdbx_percentile_entity_view.conditions_label>relative</PDBov:pdbx_percentile_entity_view.conditions_label>
                   <PDBov:pdbx_percentile_entity_view.rank>100.00</PDBov:pdbx_percentile_entity_view.rank>
                </PDBov:pdbx_percentile_entity_view>
             </PDBov:has_pdbx_percentile_entity_view>
@@ -955,6 +1001,7 @@
                   <PDBov:pdbx_percentile_entity_view.PDB_model_num>1</PDBov:pdbx_percentile_entity_view.PDB_model_num>
                   <PDBov:pdbx_percentile_entity_view.entity_id>4</PDBov:pdbx_percentile_entity_view.entity_id>
                   <PDBov:pdbx_percentile_entity_view.auth_asym_id>D</PDBov:pdbx_percentile_entity_view.auth_asym_id>
+                  <PDBov:pdbx_percentile_entity_view.conditions_label>absolute</PDBov:pdbx_percentile_entity_view.conditions_label>
                   <PDBov:pdbx_percentile_entity_view.rank>100.00</PDBov:pdbx_percentile_entity_view.rank>
                </PDBov:pdbx_percentile_entity_view>
             </PDBov:has_pdbx_percentile_entity_view>
@@ -972,6 +1019,7 @@
                   <PDBov:pdbx_percentile_entity_view.PDB_model_num>1</PDBov:pdbx_percentile_entity_view.PDB_model_num>
                   <PDBov:pdbx_percentile_entity_view.entity_id>4</PDBov:pdbx_percentile_entity_view.entity_id>
                   <PDBov:pdbx_percentile_entity_view.auth_asym_id>D</PDBov:pdbx_percentile_entity_view.auth_asym_id>
+                  <PDBov:pdbx_percentile_entity_view.conditions_label>relative</PDBov:pdbx_percentile_entity_view.conditions_label>
                   <PDBov:pdbx_percentile_entity_view.rank>100.00</PDBov:pdbx_percentile_entity_view.rank>
                </PDBov:pdbx_percentile_entity_view>
             </PDBov:has_pdbx_percentile_entity_view>
@@ -989,6 +1037,7 @@
                   <PDBov:pdbx_percentile_entity_view.PDB_model_num>1</PDBov:pdbx_percentile_entity_view.PDB_model_num>
                   <PDBov:pdbx_percentile_entity_view.entity_id>4</PDBov:pdbx_percentile_entity_view.entity_id>
                   <PDBov:pdbx_percentile_entity_view.auth_asym_id>D</PDBov:pdbx_percentile_entity_view.auth_asym_id>
+                  <PDBov:pdbx_percentile_entity_view.conditions_label>absolute</PDBov:pdbx_percentile_entity_view.conditions_label>
                   <PDBov:pdbx_percentile_entity_view.rank>100.00</PDBov:pdbx_percentile_entity_view.rank>
                </PDBov:pdbx_percentile_entity_view>
             </PDBov:has_pdbx_percentile_entity_view>
@@ -1006,6 +1055,7 @@
                   <PDBov:pdbx_percentile_entity_view.PDB_model_num>1</PDBov:pdbx_percentile_entity_view.PDB_model_num>
                   <PDBov:pdbx_percentile_entity_view.entity_id>4</PDBov:pdbx_percentile_entity_view.entity_id>
                   <PDBov:pdbx_percentile_entity_view.auth_asym_id>D</PDBov:pdbx_percentile_entity_view.auth_asym_id>
+                  <PDBov:pdbx_percentile_entity_view.conditions_label>relative</PDBov:pdbx_percentile_entity_view.conditions_label>
                   <PDBov:pdbx_percentile_entity_view.rank>100.00</PDBov:pdbx_percentile_entity_view.rank>
                </PDBov:pdbx_percentile_entity_view>
             </PDBov:has_pdbx_percentile_entity_view>
@@ -1023,6 +1073,7 @@
                   <PDBov:pdbx_percentile_entity_view.PDB_model_num>1</PDBov:pdbx_percentile_entity_view.PDB_model_num>
                   <PDBov:pdbx_percentile_entity_view.entity_id>4</PDBov:pdbx_percentile_entity_view.entity_id>
                   <PDBov:pdbx_percentile_entity_view.auth_asym_id>D</PDBov:pdbx_percentile_entity_view.auth_asym_id>
+                  <PDBov:pdbx_percentile_entity_view.conditions_label>absolute</PDBov:pdbx_percentile_entity_view.conditions_label>
                   <PDBov:pdbx_percentile_entity_view.rank>100.00</PDBov:pdbx_percentile_entity_view.rank>
                </PDBov:pdbx_percentile_entity_view>
             </PDBov:has_pdbx_percentile_entity_view>
@@ -1040,6 +1091,7 @@
                   <PDBov:pdbx_percentile_entity_view.PDB_model_num>1</PDBov:pdbx_percentile_entity_view.PDB_model_num>
                   <PDBov:pdbx_percentile_entity_view.entity_id>4</PDBov:pdbx_percentile_entity_view.entity_id>
                   <PDBov:pdbx_percentile_entity_view.auth_asym_id>D</PDBov:pdbx_percentile_entity_view.auth_asym_id>
+                  <PDBov:pdbx_percentile_entity_view.conditions_label>relative</PDBov:pdbx_percentile_entity_view.conditions_label>
                   <PDBov:pdbx_percentile_entity_view.rank>100.00</PDBov:pdbx_percentile_entity_view.rank>
                </PDBov:pdbx_percentile_entity_view>
             </PDBov:has_pdbx_percentile_entity_view>
@@ -1057,6 +1109,7 @@
                   <PDBov:pdbx_percentile_entity_view.PDB_model_num>1</PDBov:pdbx_percentile_entity_view.PDB_model_num>
                   <PDBov:pdbx_percentile_entity_view.entity_id>4</PDBov:pdbx_percentile_entity_view.entity_id>
                   <PDBov:pdbx_percentile_entity_view.auth_asym_id>H</PDBov:pdbx_percentile_entity_view.auth_asym_id>
+                  <PDBov:pdbx_percentile_entity_view.conditions_label>absolute</PDBov:pdbx_percentile_entity_view.conditions_label>
                   <PDBov:pdbx_percentile_entity_view.rank>80.15</PDBov:pdbx_percentile_entity_view.rank>
                </PDBov:pdbx_percentile_entity_view>
             </PDBov:has_pdbx_percentile_entity_view>
@@ -1074,6 +1127,7 @@
                   <PDBov:pdbx_percentile_entity_view.PDB_model_num>1</PDBov:pdbx_percentile_entity_view.PDB_model_num>
                   <PDBov:pdbx_percentile_entity_view.entity_id>4</PDBov:pdbx_percentile_entity_view.entity_id>
                   <PDBov:pdbx_percentile_entity_view.auth_asym_id>H</PDBov:pdbx_percentile_entity_view.auth_asym_id>
+                  <PDBov:pdbx_percentile_entity_view.conditions_label>relative</PDBov:pdbx_percentile_entity_view.conditions_label>
                   <PDBov:pdbx_percentile_entity_view.rank>87.82</PDBov:pdbx_percentile_entity_view.rank>
                </PDBov:pdbx_percentile_entity_view>
             </PDBov:has_pdbx_percentile_entity_view>
@@ -1091,6 +1145,7 @@
                   <PDBov:pdbx_percentile_entity_view.PDB_model_num>1</PDBov:pdbx_percentile_entity_view.PDB_model_num>
                   <PDBov:pdbx_percentile_entity_view.entity_id>4</PDBov:pdbx_percentile_entity_view.entity_id>
                   <PDBov:pdbx_percentile_entity_view.auth_asym_id>H</PDBov:pdbx_percentile_entity_view.auth_asym_id>
+                  <PDBov:pdbx_percentile_entity_view.conditions_label>absolute</PDBov:pdbx_percentile_entity_view.conditions_label>
                   <PDBov:pdbx_percentile_entity_view.rank>100.00</PDBov:pdbx_percentile_entity_view.rank>
                </PDBov:pdbx_percentile_entity_view>
             </PDBov:has_pdbx_percentile_entity_view>
@@ -1108,6 +1163,7 @@
                   <PDBov:pdbx_percentile_entity_view.PDB_model_num>1</PDBov:pdbx_percentile_entity_view.PDB_model_num>
                   <PDBov:pdbx_percentile_entity_view.entity_id>4</PDBov:pdbx_percentile_entity_view.entity_id>
                   <PDBov:pdbx_percentile_entity_view.auth_asym_id>H</PDBov:pdbx_percentile_entity_view.auth_asym_id>
+                  <PDBov:pdbx_percentile_entity_view.conditions_label>relative</PDBov:pdbx_percentile_entity_view.conditions_label>
                   <PDBov:pdbx_percentile_entity_view.rank>100.00</PDBov:pdbx_percentile_entity_view.rank>
                </PDBov:pdbx_percentile_entity_view>
             </PDBov:has_pdbx_percentile_entity_view>
@@ -1125,6 +1181,7 @@
                   <PDBov:pdbx_percentile_entity_view.PDB_model_num>1</PDBov:pdbx_percentile_entity_view.PDB_model_num>
                   <PDBov:pdbx_percentile_entity_view.entity_id>4</PDBov:pdbx_percentile_entity_view.entity_id>
                   <PDBov:pdbx_percentile_entity_view.auth_asym_id>H</PDBov:pdbx_percentile_entity_view.auth_asym_id>
+                  <PDBov:pdbx_percentile_entity_view.conditions_label>absolute</PDBov:pdbx_percentile_entity_view.conditions_label>
                   <PDBov:pdbx_percentile_entity_view.rank>100.00</PDBov:pdbx_percentile_entity_view.rank>
                </PDBov:pdbx_percentile_entity_view>
             </PDBov:has_pdbx_percentile_entity_view>
@@ -1142,6 +1199,7 @@
                   <PDBov:pdbx_percentile_entity_view.PDB_model_num>1</PDBov:pdbx_percentile_entity_view.PDB_model_num>
                   <PDBov:pdbx_percentile_entity_view.entity_id>4</PDBov:pdbx_percentile_entity_view.entity_id>
                   <PDBov:pdbx_percentile_entity_view.auth_asym_id>H</PDBov:pdbx_percentile_entity_view.auth_asym_id>
+                  <PDBov:pdbx_percentile_entity_view.conditions_label>relative</PDBov:pdbx_percentile_entity_view.conditions_label>
                   <PDBov:pdbx_percentile_entity_view.rank>100.00</PDBov:pdbx_percentile_entity_view.rank>
                </PDBov:pdbx_percentile_entity_view>
             </PDBov:has_pdbx_percentile_entity_view>
@@ -1159,6 +1217,7 @@
                   <PDBov:pdbx_percentile_entity_view.PDB_model_num>1</PDBov:pdbx_percentile_entity_view.PDB_model_num>
                   <PDBov:pdbx_percentile_entity_view.entity_id>5</PDBov:pdbx_percentile_entity_view.entity_id>
                   <PDBov:pdbx_percentile_entity_view.auth_asym_id>I</PDBov:pdbx_percentile_entity_view.auth_asym_id>
+                  <PDBov:pdbx_percentile_entity_view.conditions_label>absolute</PDBov:pdbx_percentile_entity_view.conditions_label>
                   <PDBov:pdbx_percentile_entity_view.rank>63.22</PDBov:pdbx_percentile_entity_view.rank>
                </PDBov:pdbx_percentile_entity_view>
             </PDBov:has_pdbx_percentile_entity_view>
@@ -1176,6 +1235,7 @@
                   <PDBov:pdbx_percentile_entity_view.PDB_model_num>1</PDBov:pdbx_percentile_entity_view.PDB_model_num>
                   <PDBov:pdbx_percentile_entity_view.entity_id>5</PDBov:pdbx_percentile_entity_view.entity_id>
                   <PDBov:pdbx_percentile_entity_view.auth_asym_id>I</PDBov:pdbx_percentile_entity_view.auth_asym_id>
+                  <PDBov:pdbx_percentile_entity_view.conditions_label>relative</PDBov:pdbx_percentile_entity_view.conditions_label>
                   <PDBov:pdbx_percentile_entity_view.rank>74.55</PDBov:pdbx_percentile_entity_view.rank>
                </PDBov:pdbx_percentile_entity_view>
             </PDBov:has_pdbx_percentile_entity_view>
@@ -1193,6 +1253,7 @@
                   <PDBov:pdbx_percentile_entity_view.PDB_model_num>1</PDBov:pdbx_percentile_entity_view.PDB_model_num>
                   <PDBov:pdbx_percentile_entity_view.entity_id>5</PDBov:pdbx_percentile_entity_view.entity_id>
                   <PDBov:pdbx_percentile_entity_view.auth_asym_id>J</PDBov:pdbx_percentile_entity_view.auth_asym_id>
+                  <PDBov:pdbx_percentile_entity_view.conditions_label>absolute</PDBov:pdbx_percentile_entity_view.conditions_label>
                   <PDBov:pdbx_percentile_entity_view.rank>63.22</PDBov:pdbx_percentile_entity_view.rank>
                </PDBov:pdbx_percentile_entity_view>
             </PDBov:has_pdbx_percentile_entity_view>
@@ -1210,6 +1271,7 @@
                   <PDBov:pdbx_percentile_entity_view.PDB_model_num>1</PDBov:pdbx_percentile_entity_view.PDB_model_num>
                   <PDBov:pdbx_percentile_entity_view.entity_id>5</PDBov:pdbx_percentile_entity_view.entity_id>
                   <PDBov:pdbx_percentile_entity_view.auth_asym_id>J</PDBov:pdbx_percentile_entity_view.auth_asym_id>
+                  <PDBov:pdbx_percentile_entity_view.conditions_label>relative</PDBov:pdbx_percentile_entity_view.conditions_label>
                   <PDBov:pdbx_percentile_entity_view.rank>74.55</PDBov:pdbx_percentile_entity_view.rank>
                </PDBov:pdbx_percentile_entity_view>
             </PDBov:has_pdbx_percentile_entity_view>
