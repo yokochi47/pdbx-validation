@@ -17,7 +17,7 @@ fi
 
 ./scripts/extract_info.sh -v
 
-./scripts/compress_pdbml_vrpt_alt.sh
+#./scripts/compress_pdbml_vrpt_alt.sh
 
 ./scripts/merge_pdbml_info.sh -v
 
