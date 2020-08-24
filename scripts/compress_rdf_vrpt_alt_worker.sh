@@ -56,14 +56,9 @@ do
   pdb_id=`basename $rdf_file -validation-alt.rdf`
   div_dir=$WORK_DIR/${pdb_id:1:2}
 
-  if [ ! -d $div_dir ] ; then
-   if [ -e $div_dir ] ; then
-    rm -f $div_dir
-   fi
-   mkdir -p $div_dir
-  fi
+  mk_div_dir $div_dir
 
-  [ -s $rdf_file ] && mv -f $rdf_file $div_dir && gzip $div_dir/$pdb_id-validation-alt.rdf
+  [ -s $rdf_file ] && gzip_in_div_dir $rdf_file $div_dir
 
  fi
 

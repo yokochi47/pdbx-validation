@@ -66,13 +66,24 @@ fi
 
 touch $glytoucan_lock
 
+old_xml_size=0
+
+if [ -e $glytoucan_xml ] ; then
+ old_xml_size=`wc -l $glytoucan_xml`
+ mv -f $glytoucan_xml $glytoucan_xml.bk
+fi
+
 echo '<mapping>' > $glytoucan_xml
 
 query_recursive
 
 echo '</mapping>' >> $glytoucan_xml
 
-rm -f $glytoucan_lock
+new_xml_size=`wc -l $glytoucan_xml`
+
+[ -e $glytoucan_xml.bk ] && [ $((new_xml_size + 100)) -lt $old_xml_size ] && mv -f $glytoucan_xml.bk $glytoucan_xml
+
+rm -f $glytoucan_lock $glytoucan_xml.bk
 
 echo $glytoucan_xml is up-to-date.
 
