@@ -18206,18 +18206,22 @@ for each entity in the wwPDB validation report.
     Example 1 -
 &lt;PDBxv:pdbx_percentile_entity_viewCategory&gt;
    &lt;PDBxv:pdbx_percentile_entity_view conditions_id="1" label_asym_id="A" type="RSRZ_outliers_percent"&gt;
+      &lt;PDBxv:conditions_label&gt;absolute&lt;/PDBxv:conditions_label&gt;
       &lt;PDBxv:entity_id&gt;1&lt;/PDBxv:entity_id&gt;
       &lt;PDBxv:rank&gt;100.0&lt;/PDBxv:rank&gt;
    &lt;/PDBxv:pdbx_percentile_entity_view&gt;
    &lt;PDBxv:pdbx_percentile_entity_view conditions_id="2" label_asym_id="A" type="RSRZ_outliers_percent"&gt;
+      &lt;PDBxv:conditions_label&gt;relative&lt;/PDBxv:conditions_label&gt;
       &lt;PDBxv:entity_id&gt;1&lt;/PDBxv:entity_id&gt;
       &lt;PDBxv:rank&gt;100.0&lt;/PDBxv:rank&gt;
    &lt;/PDBxv:pdbx_percentile_entity_view&gt;
    &lt;PDBxv:pdbx_percentile_entity_view conditions_id="1" label_asym_id="B" type="RSRZ_outliers_percent"&gt;
+      &lt;PDBxv:conditions_label&gt;absolute&lt;/PDBxv:conditions_label&gt;
       &lt;PDBxv:entity_id&gt;1&lt;/PDBxv:entity_id&gt;
       &lt;PDBxv:rank&gt;100.0&lt;/PDBxv:rank&gt;
    &lt;/PDBxv:pdbx_percentile_entity_view&gt;
    &lt;PDBxv:pdbx_percentile_entity_view conditions_id="2" label_asym_id="B" type="RSRZ_outliers_percent"&gt;
+      &lt;PDBxv:conditions_label&gt;relative&lt;/PDBxv:conditions_label&gt;
       &lt;PDBxv:entity_id&gt;1&lt;/PDBxv:entity_id&gt;
       &lt;PDBxv:rank&gt;100.0&lt;/PDBxv:rank&gt;
    &lt;/PDBxv:pdbx_percentile_entity_view&gt;
@@ -18236,6 +18240,20 @@ for each entity in the wwPDB validation report.
 Pointer to attribute auth_asym_id in category atom_site. 
                         </xsd:documentation>
               </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="conditions_label" minOccurs="0" maxOccurs="1" nillable="true">
+              <xsd:annotation>
+                <xsd:documentation xml:lang="en">
+A short descriptive label that identifies applied conditions
+for calculation of validation metric.
+                        </xsd:documentation>
+              </xsd:annotation>
+              <xsd:simpleType>
+                <xsd:restriction base="xsd:string">
+                  <xsd:enumeration value="absolute"/>
+                  <xsd:enumeration value="relative"/>
+                </xsd:restriction>
+              </xsd:simpleType>
             </xsd:element>
             <xsd:element name="entity_id" minOccurs="1" maxOccurs="1" type="xsd:string">
               <xsd:annotation>
@@ -18361,15 +18379,19 @@ in the wwPDB validation report.
     Example 1 -
 &lt;PDBxv:pdbx_percentile_viewCategory&gt;
    &lt;PDBxv:pdbx_percentile_view conditions_id="1" entry_id="5B1L" type="&amp;apos;all_atom_clashscore"&gt;
+      &lt;PDBxv:conditions_label&gt;absolute&lt;/PDBxv:conditions_label&gt;
       &lt;PDBxv:rank&gt;66.9&lt;/PDBxv:rank&gt;
    &lt;/PDBxv:pdbx_percentile_view&gt;
    &lt;PDBxv:pdbx_percentile_view conditions_id="1" entry_id="5B1L" type="&amp;apos;RSRZ_outliers_percent"&gt;
+      &lt;PDBxv:conditions_label&gt;absolute&lt;/PDBxv:conditions_label&gt;
       &lt;PDBxv:rank&gt;100.0&lt;/PDBxv:rank&gt;
    &lt;/PDBxv:pdbx_percentile_view&gt;
    &lt;PDBxv:pdbx_percentile_view conditions_id="2" entry_id="5B1L" type="&amp;apos;all_atom_clashscore"&gt;
+      &lt;PDBxv:conditions_label&gt;relative&lt;/PDBxv:conditions_label&gt;
       &lt;PDBxv:rank&gt;62.5&lt;/PDBxv:rank&gt;
    &lt;/PDBxv:pdbx_percentile_view&gt;
    &lt;PDBxv:pdbx_percentile_view conditions_id="2" entry_id="5B1L" type="&amp;apos;RSRZ_outliers_percent"&gt;
+      &lt;PDBxv:conditions_label&gt;relative&lt;/PDBxv:conditions_label&gt;
       &lt;PDBxv:rank&gt;100.0&lt;/PDBxv:rank&gt;
    &lt;/PDBxv:pdbx_percentile_view&gt;
 &lt;/PDBxv:pdbx_percentile_viewCategory&gt;
@@ -18381,6 +18403,20 @@ in the wwPDB validation report.
       <xsd:element name="pdbx_percentile_view" minOccurs="0" maxOccurs="unbounded">
         <xsd:complexType>
           <xsd:all>
+            <xsd:element name="conditions_label" minOccurs="0" maxOccurs="1" nillable="true">
+              <xsd:annotation>
+                <xsd:documentation xml:lang="en">
+A short descriptive label that identifies applied conditions
+for calculation of validation metric.
+                        </xsd:documentation>
+              </xsd:annotation>
+              <xsd:simpleType>
+                <xsd:restriction base="xsd:string">
+                  <xsd:enumeration value="absolute"/>
+                  <xsd:enumeration value="relative"/>
+                </xsd:restriction>
+              </xsd:simpleType>
+            </xsd:element>
             <xsd:element name="rank" minOccurs="1" maxOccurs="1">
               <xsd:annotation>
                 <xsd:documentation xml:lang="en">

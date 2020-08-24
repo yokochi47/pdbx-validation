@@ -64,7 +64,7 @@ do
 
   if ( [ ! -e $rdf_file ] && [ ! -e $rdf_gz_file ] ) || [ -e $err_file ] ; then
 
-   pdbml_file=${pdbml_gz_file::-3} # remove the last '.gz'
+   pdbml_file=${pdbml_gz_file%.*} # remove the last '.gz'
    #gunzip -c $pdbml_gz_file > $pdbml_file || exit 1
 
    #java -jar $SAXON -s:$pdbml_file -xsl:$CC2RDF_XSL -o:$rdf_file 2> $err_file && rm -f $err_file $pdbml_file || ( rm -f $pdbml_file && cat $err_file && exit 1 )
