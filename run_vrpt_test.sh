@@ -12,7 +12,7 @@ fi
 
 if [ ! -e $EXT_PDBML_XSL ] ; then
 
- java -jar $SAXON -s:$PDBX_VALIDATION_XSD -xsl:$XSD2EXT_PDBML_XSL -o:$EXT_PDBML_XSL || ( echo $0 aborted. && exit 1 )
+ java -jar $SAXON -s:$PDBX_VALIDATION_XSD -xsl:$XSD2EXT_PDBML_XSL -o:$EXT_PDBML_XSL || ( echo $0 aborted. ; exit 1 )
 
  echo Generated: $EXT_PDBML_XSL
 
@@ -20,7 +20,7 @@ fi
 
 if [ ! -e $MERGE_PDBML_INFO_XSL ] ; then
 
- java -jar $SAXON -s:$PDBX_VALIDATION_XSD -xsl:$XSD2MERGE_PDBML_INFO_XSL -o:$MERGE_PDBML_INFO_XSL || ( echo $0 aborted. && exit 1 )
+ java -jar $SAXON -s:$PDBX_VALIDATION_XSD -xsl:$XSD2MERGE_PDBML_INFO_XSL -o:$MERGE_PDBML_INFO_XSL || ( echo $0 aborted. ; exit 1 )
 
  echo Generated: $MERGE_PDBML_INFO_XSL
 
@@ -28,7 +28,7 @@ fi
 
 if [ ! -e $PDBMLV2RDF_XSL ] ; then
 
- java -jar $SAXON -s:$PDBX_VALIDATION_XSD -xsl:$PDBXV2PDBMLV2RDF_XSL -o:$PDBMLV2RDF_XSL || ( echo $0 aborted. && exit 1 )
+ java -jar $SAXON -s:$PDBX_VALIDATION_XSD -xsl:$PDBXV2PDBMLV2RDF_XSL -o:$PDBMLV2RDF_XSL || ( echo $0 aborted. ; exit 1 )
 
  echo Generated: $PDBMLV2RDF_XSL
 
@@ -126,11 +126,11 @@ for pdbml_file in $WORK_DIR/$PDBML/*.xml ; do
  pdbml_ext_file=$WORK_DIR/$PDBML_EXT/$pdbid-noatom-ext.xml
  info_file=../$WORK_DIR/$VALID_INFO/$pdbid"_validation.xml"
 
- java -jar $SAXON -s:$pdbml_file -xsl:$EXT_PDBML_XSL -o:$pdbml_ext_file info_file=$info_file || ( echo $0 aborted. && exit 1 )
+ java -jar $SAXON -s:$pdbml_file -xsl:$EXT_PDBML_XSL -o:$pdbml_ext_file info_file=$info_file || ( echo $0 aborted. ; exit 1 )
 
  echo " extracted: "$pdbml_ext_file
 
- java -classpath $XSD2PGSCHEMA xmlvalidator --xsd $PDBX_VALIDATION_XSD --xml $pdbml_ext_file > /dev/null || ( echo $0 aborted. && exit 1 )
+ java -classpath $XSD2PGSCHEMA xmlvalidator --xsd $PDBX_VALIDATION_XSD --xml $pdbml_ext_file > /dev/null || ( echo $0 aborted. ; exit 1 )
 
  echo " validated: "$pdbml_ext_file
 
@@ -138,13 +138,13 @@ for pdbml_file in $WORK_DIR/$PDBML/*.xml ; do
  info_alt_file=$WORK_DIR/$VALID_INFO_ALT/$pdbid-validation-alt.xml
  pdbml_ext_file=../$pdbml_ext_file # add relative path (../) from directory contains target styleseet
 
- java -jar $SAXON -s:$info_file -xsl:$EXT_INFO_XSL -o:$info_alt_file pdbml_ext_file=$pdbml_ext_file || ( echo $0 aborted. && exit 1 )
+ java -jar $SAXON -s:$info_file -xsl:$EXT_INFO_XSL -o:$info_alt_file pdbml_ext_file=$pdbml_ext_file || ( echo $0 aborted. ; exit 1 )
 
  xml_pretty $info_alt_file
 
  echo " extracted: "$info_alt_file
 
- java -classpath $XSD2PGSCHEMA xmlvalidator --xsd $PDBX_VALIDATION_XSD --xml $info_alt_file > /dev/null || ( echo $0 aborted. && exit 1 )
+ java -classpath $XSD2PGSCHEMA xmlvalidator --xsd $PDBX_VALIDATION_XSD --xml $info_alt_file > /dev/null || ( echo $0 aborted. ; exit 1 )
 
  echo " validated: "$info_alt_file
 
@@ -152,13 +152,13 @@ for pdbml_file in $WORK_DIR/$PDBML/*.xml ; do
  info_alt_file=../$info_alt_file # add relative path (../) from directory contains target stylesheet
  pdbml_vrpt_file=$WORK_DIR/$XML_VALID/$pdbid-validation-full.xml
 
- java -jar $SAXON -s:$pdbml_ext_file -xsl:$MERGE_PDBML_INFO_XSL -o:$pdbml_vrpt_file info_alt_file=$info_alt_file || ( echo $0 aborted. && exit 1 )
+ java -jar $SAXON -s:$pdbml_ext_file -xsl:$MERGE_PDBML_INFO_XSL -o:$pdbml_vrpt_file info_alt_file=$info_alt_file || ( echo $0 aborted. ; exit 1 )
 
  xml_pretty $pdbml_vrpt_file
 
  echo " merged   : "$pdbml_vrpt_file
 
- java -classpath $XSD2PGSCHEMA xmlvalidator --xsd $PDBX_VALIDATION_XSD --xml $pdbml_vrpt_file > /dev/null || ( echo $0 aborted. && exit 1 )
+ java -classpath $XSD2PGSCHEMA xmlvalidator --xsd $PDBX_VALIDATION_XSD --xml $pdbml_vrpt_file > /dev/null || ( echo $0 aborted. ; exit 1 )
 
  echo " validated: "$pdbml_vrpt_file
 
@@ -167,27 +167,27 @@ for pdbml_file in $WORK_DIR/$PDBML/*.xml ; do
  has_glycan=`xsltproc $PDBMLV2WURCS_XSL $pdbml_vrpt_file`
 
  if [ -z "$has_glycan" ] ; then
-  xsltproc -o $rdf_vrpt_file --param wurcs2glytoucan $_GLYTOUCAN_XML $PDBMLV2RDF_XSL $pdbml_vrpt_file || ( echo $0 aborted. && exit 1 )
+  xsltproc -o $rdf_vrpt_file --param wurcs2glytoucan $_GLYTOUCAN_XML $PDBMLV2RDF_XSL $pdbml_vrpt_file || ( echo $0 aborted. ; exit 1 )
  else
-  java -jar $SAXON -s:$pdbml_vrpt_file -xsl:$PDBMLV2RDF_XSL -o:$rdf_vrpt_file wurcs2glytoucan=$GLYTOUCAN_XML || ( echo $0 aborted. && exit 1 )
+  java -jar $SAXON -s:$pdbml_vrpt_file -xsl:$PDBMLV2RDF_XSL -o:$rdf_vrpt_file wurcs2glytoucan=$GLYTOUCAN_XML || ( echo $0 aborted. ; exit 1 )
  fi
 
  echo " generated: "$rdf_vrpt_file
 
  if [ $has_rapper_command != "false" ] ; then
-  rapper -q -c $rdf_vrpt_file 2> /dev/null || ( echo $0 aborted. && exit 1 )
+  rapper -q -c $rdf_vrpt_file 2> /dev/null || ( echo $0 aborted. ; exit 1 )
   echo " validated: "$rdf_vrpt_file
  fi
 
  info_alt_file=$WORK_DIR/$VALID_INFO_ALT/$pdbid-validation-alt.xml
  rdf_vrpt_alt_file=$WORK_DIR/$RDF_VALID_ALT/$pdbid-validation-alt.rdf
 
- java -jar $SAXON -s:$info_alt_file -xsl:$PDBMLV2RDF_XSL -o:$rdf_vrpt_alt_file wurcs2glytoucan=$GLYTOUCAN_XML || ( echo $0 aborted. && exit 1 )
+ java -jar $SAXON -s:$info_alt_file -xsl:$PDBMLV2RDF_XSL -o:$rdf_vrpt_alt_file wurcs2glytoucan=$GLYTOUCAN_XML || ( echo $0 aborted. ; exit 1 )
 
  echo " generated: "$rdf_vrpt_alt_file
 
  if [ $has_rapper_command != "false" ] ; then
-  rapper -q -c $rdf_vrpt_alt_file 2> /dev/null || ( echo $0 aborted. && exit 1 )
+  rapper -q -c $rdf_vrpt_alt_file 2> /dev/null || ( echo $0 aborted. ; exit 1 )
   echo " validated: "$rdf_vrpt_alt_file
  fi
 
@@ -246,7 +246,7 @@ for pdbml_file in $WORK_DIR/$PDBML/*.xml ; do
  pdbml_vrpt_file=$WORK_DIR/$XML_VALID/$pdbid-validation-full.xml
  info_rev_full_file=$WORK_DIR/$VALID_INFO_REV_FROM_FULL/$pdbid"_validation.xml"
 
- java -jar $SAXON -s:$pdbml_vrpt_file -xsl:$REVERT_INFO_FROM_FULL_XSL -o:$info_rev_full_file || ( echo $0 aborted. && exit 1 )
+ java -jar $SAXON -s:$pdbml_vrpt_file -xsl:$REVERT_INFO_FROM_FULL_XSL -o:$info_rev_full_file || ( echo $0 aborted. ; exit 1 )
 
  xml_pretty $info_rev_full_file
 
@@ -256,7 +256,7 @@ for pdbml_file in $WORK_DIR/$PDBML/*.xml ; do
   exit 1
  fi
 
- java -classpath $XSD2PGSCHEMA xmlvalidator --xsd $WWPDB_VALIDATION_XSD --xml $info_rev_full_file > /dev/null || ( echo $0 aborted. && exit 1 )
+ java -classpath $XSD2PGSCHEMA xmlvalidator --xsd $WWPDB_VALIDATION_XSD --xml $info_rev_full_file > /dev/null || ( echo $0 aborted. ; exit 1 )
 
  echo " validated: "$info_rev_full_file
 
@@ -268,7 +268,7 @@ for pdbml_file in $WORK_DIR/$PDBML/*.xml ; do
  validation_created_date=`java -jar $SAXON -s:$info_file -xsl:stylesheet/validation_created_date.xsl`
  nmr_atom_consistency=`java -jar $SAXON -s:$info_file -xsl:stylesheet/nmr_atom_consistency.xsl`
 
- java -jar $SAXON -s:$info_alt_file -xsl:$REVERT_INFO_FROM_ALT_NOATOM_XSL -o:$info_rev_alt_file pdbml_noatom_file=$pdbml_file validation_created_date=$validation_created_date nmr_atom_consistency=$nmr_atom_consistency || ( echo $0 aborted. && exit 1 )
+ java -jar $SAXON -s:$info_alt_file -xsl:$REVERT_INFO_FROM_ALT_NOATOM_XSL -o:$info_rev_alt_file pdbml_noatom_file=$pdbml_file validation_created_date=$validation_created_date nmr_atom_consistency=$nmr_atom_consistency || ( echo $0 aborted. ; exit 1 )
 
  xml_pretty $info_rev_alt_file
 
@@ -278,7 +278,7 @@ for pdbml_file in $WORK_DIR/$PDBML/*.xml ; do
   exit 1
  fi
 
- java -classpath $XSD2PGSCHEMA xmlvalidator --xsd $WWPDB_VALIDATION_XSD --xml $info_rev_alt_file > /dev/null || ( echo $0 aborted. && exit 1 )
+ java -classpath $XSD2PGSCHEMA xmlvalidator --xsd $WWPDB_VALIDATION_XSD --xml $info_rev_alt_file > /dev/null || ( echo $0 aborted. ; exit 1 )
 
  echo " validated: "$info_rev_alt_file
 

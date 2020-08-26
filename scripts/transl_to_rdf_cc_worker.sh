@@ -67,11 +67,11 @@ do
    pdbml_file=${pdbml_gz_file%.*} # remove the last '.gz'
    #gunzip -c $pdbml_gz_file > $pdbml_file || exit 1
 
-   #java -jar $SAXON -s:$pdbml_file -xsl:$CC2RDF_XSL -o:$rdf_file 2> $err_file && rm -f $err_file $pdbml_file || ( rm -f $pdbml_file && cat $err_file && exit 1 )
-   gunzip -c $pdbml_gz_file | xsltproc -o $rdf_file $CC2RDF_XSL - 2> $err_file && rm -f $err_file || ( cat $err_file && exit 1 )
+   #java -jar $SAXON -s:$pdbml_file -xsl:$CC2RDF_XSL -o:$rdf_file 2> $err_file && rm -f $err_file $pdbml_file || ( rm -f $pdbml_file $rdf_file ; cat $err_file ; exit 1 )
+   gunzip -c $pdbml_gz_file | xsltproc -o $rdf_file $CC2RDF_XSL - 2> $err_file && rm -f $err_file || ( rm -f $rdf_file ; cat $err_file ; exit 1 )
 
    if [ $has_rapper_command != "false" ] ; then
-    rapper -q -c $rdf_file 2> $err_file && rm -f $err_file || ( cat $err_file && exit 1 )
+    rapper -q -c $rdf_file 2> $err_file && rm -f $err_file || ( cat $err_file ; exit 1 )
    fi
 
    if [ -s $rdf_file ] ; then

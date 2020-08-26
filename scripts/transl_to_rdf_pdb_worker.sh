@@ -73,13 +73,13 @@ do
    #has_glycan=$?
 
    if [ -z "$has_glycan" ] ; then
-    xsltproc -o $rdf_file --param wurcs2glytoucan $_GLYTOUCAN_XML $PDBML2RDF_XSL $pdbml_file 2> $err_file && rm -f $err_file $pdbml_file || ( rm -f $pdbml_file && cat $err_file && exit 1 )
+    xsltproc -o $rdf_file --param wurcs2glytoucan $_GLYTOUCAN_XML $PDBML2RDF_XSL $pdbml_file 2> $err_file && rm -f $err_file $pdbml_file || ( rm -f $pdbml_file $rdf_file ; cat $err_file ; exit 1 )
    else
-    java -jar $SAXON -s:$pdbml_file -xsl:$PDBML2RDF_XSL -o:$rdf_file wurcs2glytoucan=$GLYTOUCAN_XML 2> $err_file && rm -f $err_file $pdbml_file || ( rm -f $pdbml_file && cat $err_file && exit 1 )
+    java -jar $SAXON -s:$pdbml_file -xsl:$PDBML2RDF_XSL -o:$rdf_file wurcs2glytoucan=$GLYTOUCAN_XML 2> $err_file && rm -f $err_file $pdbml_file || ( rm -f $pdbml_file $rdf_file ; cat $err_file ; exit 1 )
    fi
 
    if [ $has_rapper_command != "false" ] ; then
-    rapper -q -c $rdf_file 2> $err_file && rm -f $err_file || ( cat $err_file && exit 1 )
+    rapper -q -c $rdf_file 2> $err_file && rm -f $err_file || ( cat $err_file ; exit 1 )
    fi
 
    if [ -s $rdf_file ] ; then

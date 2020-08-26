@@ -76,7 +76,7 @@ do
    info_file=${info_gz_file%.*} # remove the last '.gz'
    gunzip -c $info_gz_file > $info_file || exit 1
 
-   java -jar $SAXON -s:$pdbml_file -xsl:$EXT_PDBML_XSL -o:$pdbml_ext_file info_file=../$info_file 2> $err_file && rm -f $err_file $pdbml_file $info_file || ( rm -f $pdbml_file $info_file && cat $err_file && exit 1 )
+   java -jar $SAXON -s:$pdbml_file -xsl:$EXT_PDBML_XSL -o:$pdbml_ext_file info_file=../$info_file 2> $err_file && rm -f $err_file $pdbml_file $info_file || ( rm -f $pdbml_file $pdbml_ext_file $info_file ; cat $err_file ; exit 1 )
 
    if [ $VALIDATE = 'true' ] ; then
 
