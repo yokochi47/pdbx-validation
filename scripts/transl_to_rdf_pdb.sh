@@ -14,7 +14,7 @@ err=pdbx2pdbml2rdf.err
 
 if [ ! -e $PDBML2RDF_XSL ] ; then
 
- java -jar $SAXON -s:$PDBX_XSD -xsl:$PDBX2PDBML2RDF_XSL -o:$PDBML2RDF_XSL 2> $err || ( cat $err && exit 1 )
+ java -jar $SAXON -s:$PDBX_XSD -xsl:$PDBX2PDBML2RDF_XSL -o:$PDBML2RDF_XSL 2> $err || ( cat $err ; exit 1 )
 
  rm -f $err
 

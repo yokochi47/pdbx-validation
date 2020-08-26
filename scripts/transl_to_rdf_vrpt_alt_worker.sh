@@ -67,11 +67,11 @@ do
    pdbml_vrpt_file=${pdbml_vrpt_gz_file%.*} # remove the last '.gz'
    gunzip -c $pdbml_vrpt_gz_file > $pdbml_vrpt_file || exit 1
 
-   #java -jar $SAXON -s:$pdbml_vrpt_file -xsl:$PDBMLV2RDF_XSL -o:$rdf_vrpt_file wurcs2glytoucan=$GLYTOUCAN_XML 2> $err_file && rm -f $err_file $pdbml_vrpt_file || ( rm -f $pdbml_vrpt_file && cat $err_file && exit 1 )
-   xsltproc -o $rdf_vrpt_file --param wurcs2glytoucan $_GLYTOUCAN_XML $PDBMLV2RDF_XSL $pdbml_vrpt_file 2> $err_file && rm -f $err_file $pdbml_vrpt_file || ( rm -f $pdbml_vrpt_file && cat $err_file && exit 1 )
+   #java -jar $SAXON -s:$pdbml_vrpt_file -xsl:$PDBMLV2RDF_XSL -o:$rdf_vrpt_file wurcs2glytoucan=$GLYTOUCAN_XML 2> $err_file && rm -f $err_file $pdbml_vrpt_file || ( rm -f $pdbml_vrpt_file $rdf_vrpt_file ; cat $err_file ; exit 1 )
+   xsltproc -o $rdf_vrpt_file --param wurcs2glytoucan $_GLYTOUCAN_XML $PDBMLV2RDF_XSL $pdbml_vrpt_file 2> $err_file && rm -f $err_file $pdbml_vrpt_file || ( rm -f $pdbml_vrpt_file $rdf_vrpt_file ; cat $err_file ; exit 1 )
 
    if [ $has_rapper_command != "false" ] ; then
-    rapper -q -c $rdf_vrpt_file 2> $err_file && rm -f $err_file || ( cat $err_file && exit 1 )
+    rapper -q -c $rdf_vrpt_file 2> $err_file && rm -f $err_file || ( cat $err_file ; exit 1 )
    fi
 
    mk_div_dir $div_dir

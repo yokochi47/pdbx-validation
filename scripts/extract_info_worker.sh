@@ -43,7 +43,7 @@ fi
 xml_pretty() {
 
  if [ $has_xmllint_command != "false" ] ; then
-  xmllint --format $1 > $1~ ; mv -f $1~ $1
+  xmllint --format $1 > $1~ && mv -f $1~ $1 || rm -f $1~
  fi
 
 }
@@ -83,7 +83,7 @@ do
 
    gunzip -c $pdbml_ext_file.gz > $pdbml_ext_file || exit 1
 
-   java -jar $SAXON -s:$info_file -xsl:$EXT_INFO_XSL -o:$info_alt_file pdbml_ext_file=../$pdbml_ext_file 2> $err_file && rm -f $err_file $info_file $pdbml_ext_file || ( rm -f $info_file $pdbml_ext_file && cat $err_file && exit 1 )
+   java -jar $SAXON -s:$info_file -xsl:$EXT_INFO_XSL -o:$info_alt_file pdbml_ext_file=../$pdbml_ext_file 2> $err_file && rm -f $err_file $info_file $pdbml_ext_file || ( rm -f $info_file $info_alt_file $pdbml_ext_file ; cat $err_file ; exit 1 )
 
    xml_pretty $info_alt_file
 
