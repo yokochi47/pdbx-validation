@@ -60,16 +60,12 @@ MD5_DIR=chk_sum_psql_pdbml_vrpt_alt
 relations=`psql -d $DB_NAME -U $DB_USER -c "\d" | wc -l 2> /dev/null`
 
 if [ $sync_update != "true" ] || [ ! -d $MD5_DIR ] || [ $relations -eq 0 ] ; then
+ sync_update=false
  psql -d $DB_NAME -U $DB_USER -f $DB_SCHEMA --quiet
 fi
 
 WORK_DIR=pg_work
-
-if [ $sync_update != "true" ] ; then
- sync_update=false
- DATA_DIR=$WORK_DIR/data
-fi
-
+DATA_DIR=$WORK_DIR/data
 ERR_DIR=$WORK_DIR/err
 
 rm -rf $WORK_DIR
