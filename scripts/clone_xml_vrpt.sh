@@ -65,11 +65,7 @@ if [ $sync_update != "true" ] || [ ! -d $MD5_DIR ] || [ $relations -eq 0 ] ; the
 fi
 
 WORK_DIR=pg_work
-
-if [ $sync_update != "true" ] ; then
- DATA_DIR=$WORK_DIR/work
-fi
-
+DATA_DIR=$WORK_DIR/work
 ERR_DIR=$WORK_DIR/err
 
 rm -rf $WORK_DIR
