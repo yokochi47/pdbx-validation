@@ -23,10 +23,10 @@
        targetNamespace="http://pdbml.pdb.org/schema/pdbx-validation-v2.xsd"
        elementFormDefault="qualified" attributeFormDefault="unqualified">
       <xsd:annotation>
-        <xsd:appinfo>PDBML-validation Schema v2.332</xsd:appinfo>
+        <xsd:appinfo>PDBML-validation Schema v2.333</xsd:appinfo>
         <xsd:documentation source="http://pdbml.pdb.org/schema/pdbx-validation-v2.xsd" xml:lang="en">
 
-PDBXML-validation Schema translated from wwPDB Validation Information Dictionary v2.332, which is backward compatible with the PDBx/mmCIF Dictionary v5.332:
+PDBXML-validation Schema translated from wwPDB Validation Information Dictionary v2.333, which is backward compatible with the PDBx/mmCIF Dictionary v5.333:
  http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
 
         </xsd:documentation>
