@@ -44,8 +44,8 @@
 --
 
 --
--- PDBML-validation Schema v2.332
--- PDBXML-validation Schema translated from wwPDB Validation Information Dictionary v2.332, which is backward compatible with the PDBx/mmCIF Dictionary v5.332: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
+-- PDBML-validation Schema v2.333
+-- PDBXML-validation Schema translated from wwPDB Validation Information Dictionary v2.333, which is backward compatible with the PDBx/mmCIF Dictionary v5.333: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
 -- URI-reference = http://pdbml.pdb.org/schema/pdbx-validation-v2.xsd
 --
 
@@ -1244,7 +1244,7 @@ CREATE TABLE struct_ncs_dom (
 
 --
 -- (quoted from struct_ncs_operType)
--- Data items in the STRUCT_NCS_OPER category describe the noncrystallographic symmetry operations. Each operator is specified as a matrix and a subsequent translation vector. Operators need not represent proper rotations. Example 1 - based on laboratory records for the protein NS1. <PDBxv:struct_ncs_operCategory> <PDBxv:struct_ncs_oper id="ncsop1"> <PDBxv:code>given</PDBxv:code> <PDBxv:details> Matrix and translation vector for pseudo-twofold operation.</PDBxv:details> <PDBxv:matrix11>0.247</PDBxv:matrix11> <PDBxv:matrix12>0.935</PDBxv:matrix12> <PDBxv:matrix13>0.256</PDBxv:matrix13> <PDBxv:matrix21>0.929</PDBxv:matrix21> <PDBxv:matrix22>0.153</PDBxv:matrix22> <PDBxv:matrix23>0.337</PDBxv:matrix23> <PDBxv:matrix31>0.276</PDBxv:matrix31> <PDBxv:matrix32>0.321</PDBxv:matrix32> <PDBxv:matrix33>-0.906</PDBxv:matrix33> <PDBxv:vector1>-8.253</PDBxv:vector1> <PDBxv:vector2>-11.743</PDBxv:vector2> <PDBxv:vector3>-1.782</PDBxv:vector3> </PDBxv:struct_ncs_oper> </PDBxv:struct_ncs_operCategory>
+-- Data items in the STRUCT_NCS_OPER category describe the noncrystallographic symmetry operations. Each operator is specified as a matrix and a subsequent translation vector. Operators need not represent proper rotations. Example 1 - based on laboratory records for the protein NS1. <PDBxv:struct_ncs_operCategory> <PDBxv:struct_ncs_oper id="1"> <PDBxv:code>given</PDBxv:code> <PDBxv:details> Matrix and translation vector for pseudo-twofold operation.</PDBxv:details> <PDBxv:matrix11>0.247</PDBxv:matrix11> <PDBxv:matrix12>0.935</PDBxv:matrix12> <PDBxv:matrix13>0.256</PDBxv:matrix13> <PDBxv:matrix21>0.929</PDBxv:matrix21> <PDBxv:matrix22>0.153</PDBxv:matrix22> <PDBxv:matrix23>0.337</PDBxv:matrix23> <PDBxv:matrix31>0.276</PDBxv:matrix31> <PDBxv:matrix32>0.321</PDBxv:matrix32> <PDBxv:matrix33>-0.906</PDBxv:matrix33> <PDBxv:vector1>-8.253</PDBxv:vector1> <PDBxv:vector2>-11.743</PDBxv:vector2> <PDBxv:vector3>-1.782</PDBxv:vector3> </PDBxv:struct_ncs_oper> </PDBxv:struct_ncs_operCategory>
 -- URI-reference = http://pdbml.pdb.org/dictionaries/mmcif_pdbx_v50.dic/Categories/struct_ncs_oper.html
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v2.xsd (PDBxv), schema location: pdbx-validation-v2.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
@@ -1269,7 +1269,7 @@ CREATE TABLE struct_ncs_oper (
 	vector2 DECIMAL ,
 	vector3 DECIMAL ,
 -- ATTRIBUTE
-	id TEXT NOT NULL
+	id INTEGER NOT NULL
 );
 
 --
@@ -7641,7 +7641,7 @@ CREATE TABLE struct_ncs_dom_lim (
 
 --
 -- (quoted from struct_ncs_ens_genType)
--- Data items in the STRUCT_NCS_ENS_GEN category list domains related by a noncrystallographic symmetry operation and identify the operator. Example 1 - based on laboratory records for the collagen-like peptide, HYP-. <PDBxv:struct_ncs_ens_genCategory> <PDBxv:struct_ncs_ens_gen dom_id_1="d1" dom_id_2="d2" ens_id="en1" oper_id="ncsop1"></PDBxv:struct_ncs_ens_gen> </PDBxv:struct_ncs_ens_genCategory>
+-- Data items in the STRUCT_NCS_ENS_GEN category list domains related by a noncrystallographic symmetry operation and identify the operator. Example 1 - based on laboratory records for the collagen-like peptide, HYP-. <PDBxv:struct_ncs_ens_genCategory> <PDBxv:struct_ncs_ens_gen dom_id_1="d1" dom_id_2="d2" ens_id="en1" oper_id="1"></PDBxv:struct_ncs_ens_gen> </PDBxv:struct_ncs_ens_genCategory>
 -- URI-reference = http://pdbml.pdb.org/dictionaries/mmcif_pdbx_v50.dic/Categories/struct_ncs_ens_gen.html
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v2.xsd (PDBxv), schema location: pdbx-validation-v2.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
@@ -7656,7 +7656,7 @@ CREATE TABLE struct_ncs_ens_gen (
 -- ATTRIBUTE
 	ens_id TEXT NOT NULL ,
 -- ATTRIBUTE
-	oper_id TEXT NOT NULL
+	oper_id INTEGER NOT NULL
 );
 
 --

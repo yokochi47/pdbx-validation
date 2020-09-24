@@ -44,8 +44,8 @@
 --
 
 --
--- PDBML Schema v5.332
--- PDBML Schema translated from the PDBx/mmCIF Dictionary v5.332: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
+-- PDBML Schema v5.333
+-- PDBML Schema translated from the PDBx/mmCIF Dictionary v5.333: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
 -- URI-reference = http://pdbml.pdb.org/schema/pdbx-v50.xsd
 --
 
@@ -1916,7 +1916,7 @@ CREATE TABLE pdbx_view_category_group (
 
 --
 -- (quoted from struct_ncs_operType)
--- Data items in the STRUCT_NCS_OPER category describe the noncrystallographic symmetry operations. Each operator is specified as a matrix and a subsequent translation vector. Operators need not represent proper rotations. Example 1 - based on laboratory records for the protein NS1. <PDBx:struct_ncs_operCategory> <PDBx:struct_ncs_oper id="ncsop1"> <PDBx:code>given</PDBx:code> <PDBx:details> Matrix and translation vector for pseudo-twofold operation.</PDBx:details> <PDBx:matrix11>0.247</PDBx:matrix11> <PDBx:matrix12>0.935</PDBx:matrix12> <PDBx:matrix13>0.256</PDBx:matrix13> <PDBx:matrix21>0.929</PDBx:matrix21> <PDBx:matrix22>0.153</PDBx:matrix22> <PDBx:matrix23>0.337</PDBx:matrix23> <PDBx:matrix31>0.276</PDBx:matrix31> <PDBx:matrix32>0.321</PDBx:matrix32> <PDBx:matrix33>-0.906</PDBx:matrix33> <PDBx:vector1>-8.253</PDBx:vector1> <PDBx:vector2>-11.743</PDBx:vector2> <PDBx:vector3>-1.782</PDBx:vector3> </PDBx:struct_ncs_oper> </PDBx:struct_ncs_operCategory>
+-- Data items in the STRUCT_NCS_OPER category describe the noncrystallographic symmetry operations. Each operator is specified as a matrix and a subsequent translation vector. Operators need not represent proper rotations. Example 1 - based on laboratory records for the protein NS1. <PDBx:struct_ncs_operCategory> <PDBx:struct_ncs_oper id="1"> <PDBx:code>given</PDBx:code> <PDBx:details> Matrix and translation vector for pseudo-twofold operation.</PDBx:details> <PDBx:matrix11>0.247</PDBx:matrix11> <PDBx:matrix12>0.935</PDBx:matrix12> <PDBx:matrix13>0.256</PDBx:matrix13> <PDBx:matrix21>0.929</PDBx:matrix21> <PDBx:matrix22>0.153</PDBx:matrix22> <PDBx:matrix23>0.337</PDBx:matrix23> <PDBx:matrix31>0.276</PDBx:matrix31> <PDBx:matrix32>0.321</PDBx:matrix32> <PDBx:matrix33>-0.906</PDBx:matrix33> <PDBx:vector1>-8.253</PDBx:vector1> <PDBx:vector2>-11.743</PDBx:vector2> <PDBx:vector3>-1.782</PDBx:vector3> </PDBx:struct_ncs_oper> </PDBx:struct_ncs_operCategory>
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
@@ -1940,7 +1940,7 @@ CREATE TABLE struct_ncs_oper (
 	vector2 DECIMAL ,
 	vector3 DECIMAL ,
 -- ATTRIBUTE
-	id TEXT NOT NULL
+	id INTEGER NOT NULL
 );
 
 --
@@ -7791,7 +7791,7 @@ CREATE TYPE ENUM_pdbx_database_status_author_release_status_code AS ENUM ( 'REL'
 DROP TYPE IF EXISTS ENUM_pdbx_database_status_dep_release_code_coordinates CASCADE;
 CREATE TYPE ENUM_pdbx_database_status_dep_release_code_coordinates AS ENUM ( 'RELEASE NOW', 'HOLD FOR PUBLICATION', 'HOLD FOR 4 WEEKS', 'HOLD FOR 6 WEEKS', 'HOLD FOR 8 WEEKS', 'HOLD FOR 6 MONTHS', 'HOLD FOR 1 YEAR' );
 DROP TYPE IF EXISTS ENUM_pdbx_database_status_dep_release_code_nmr_constraints CASCADE;
-CREATE TYPE ENUM_pdbx_database_status_dep_release_code_nmr_constraints AS ENUM ( 'RELEASE NOW', 'HOLD FOR PUBLICATION', 'HOLD FOR 6 MONTHS', 'HOLD FOR 1 YEAR' );
+CREATE TYPE ENUM_pdbx_database_status_dep_release_code_nmr_constraints AS ENUM ( 'RELEASE NOW', 'HOLD FOR PUBLICATION', 'HOLD FOR 4 WEEKS', 'HOLD FOR 6 MONTHS', 'HOLD FOR 1 YEAR' );
 DROP TYPE IF EXISTS ENUM_pdbx_database_status_dep_release_code_nmr_data CASCADE;
 CREATE TYPE ENUM_pdbx_database_status_dep_release_code_nmr_data AS ENUM ( 'RELEASE NOW', 'HOLD FOR PUBLICATION', 'HOLD FOR 6 MONTHS', 'HOLD FOR 1 YEAR' );
 DROP TYPE IF EXISTS ENUM_pdbx_database_status_dep_release_code_sequence CASCADE;
@@ -10072,7 +10072,7 @@ CREATE TABLE pdbx_nmr_chem_shift_experiment (
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_nmr_chem_shift_ref_atom_group CASCADE;
-CREATE TYPE ENUM_pdbx_nmr_chem_shift_ref_atom_group AS ENUM ( 'carbonyl carbon', 'fluorine', 'methyl carbon', 'methyl carbons', 'methyl protons', 'methylene protons', 'nitrogen', 'protons', 'phosphorus' );
+CREATE TYPE ENUM_pdbx_nmr_chem_shift_ref_atom_group AS ENUM ( 'carbonyl carbon', 'fluorine', 'methyl carbon', 'methyl carbons', 'methyl protons', 'methylene carbons', 'methylene protons', 'nitrogen', 'protons', 'phosphorus' );
 DROP TYPE IF EXISTS ENUM_pdbx_nmr_chem_shift_ref_chem_shift_units CASCADE;
 CREATE TYPE ENUM_pdbx_nmr_chem_shift_ref_chem_shift_units AS ENUM ( 'ppm', 'Hz' );
 DROP TYPE IF EXISTS ENUM_pdbx_nmr_chem_shift_ref_external_ref_axis CASCADE;
@@ -12300,7 +12300,7 @@ CREATE TABLE pdbx_struct_assembly_auth_evidence (
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_struct_assembly_auth_evidence_depositor_info_experime CASCADE;
-CREATE TYPE ENUM_pdbx_struct_assembly_auth_evidence_depositor_info_experime AS ENUM ( 'gel filtration', 'light scattering', 'homology', 'equilibrium centrifugation', 'mass spectrometry', 'SAXS', 'immunoprecipitation', 'isothermal titration calorimetry', 'cross-linking', 'native gel electrophoresis', 'microscopy', 'assay for oligomerization', 'scanning transmission electron microscopy', 'surface plasmon resonance', 'fluorescence resonance energy transfer', 'none' );
+CREATE TYPE ENUM_pdbx_struct_assembly_auth_evidence_depositor_info_experime AS ENUM ( 'gel filtration', 'light scattering', 'homology', 'equilibrium centrifugation', 'mass spectrometry', 'SAXS', 'immunoprecipitation', 'isothermal titration calorimetry', 'cross-linking', 'native gel electrophoresis', 'microscopy', 'assay for oligomerization', 'scanning transmission electron microscopy', 'surface plasmon resonance', 'fluorescence resonance energy transfer', 'NMR relaxation study', 'none' );
 CREATE TABLE pdbx_struct_assembly_auth_evidence_depositor_info (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
@@ -12711,7 +12711,7 @@ CREATE TABLE pdbx_struct_ncs_virus_gen (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
 	asym_id TEXT ,
-	oper_id TEXT ,
+	oper_id INTEGER ,
 	pdb_chain_id TEXT ,
 -- ATTRIBUTE
 	id TEXT NOT NULL
@@ -15788,7 +15788,7 @@ CREATE TABLE struct_ncs_dom_lim (
 
 --
 -- (quoted from struct_ncs_ens_genType)
--- Data items in the STRUCT_NCS_ENS_GEN category list domains related by a noncrystallographic symmetry operation and identify the operator. Example 1 - based on laboratory records for the collagen-like peptide, HYP-. <PDBx:struct_ncs_ens_genCategory> <PDBx:struct_ncs_ens_gen dom_id_1="d1" dom_id_2="d2" ens_id="en1" oper_id="ncsop1"></PDBx:struct_ncs_ens_gen> </PDBx:struct_ncs_ens_genCategory>
+-- Data items in the STRUCT_NCS_ENS_GEN category list domains related by a noncrystallographic symmetry operation and identify the operator. Example 1 - based on laboratory records for the collagen-like peptide, HYP-. <PDBx:struct_ncs_ens_genCategory> <PDBx:struct_ncs_ens_gen dom_id_1="d1" dom_id_2="d2" ens_id="en1" oper_id="1"></PDBx:struct_ncs_ens_gen> </PDBx:struct_ncs_ens_genCategory>
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
@@ -15802,7 +15802,7 @@ CREATE TABLE struct_ncs_ens_gen (
 -- ATTRIBUTE
 	ens_id TEXT NOT NULL ,
 -- ATTRIBUTE
-	oper_id TEXT NOT NULL
+	oper_id INTEGER NOT NULL
 );
 
 --
