@@ -1726,6 +1726,26 @@
       </PDBo:has_em_entity_assembly_recombinant>
   </xsl:template>
 
+  <xsl:template match="PDBx:datablock/PDBx:em_entity_assembly_syntheticCategory/PDBx:em_entity_assembly_synthetic">
+      <PDBo:has_em_entity_assembly_synthetic>
+      <PDBo:em_entity_assembly_synthetic rdf:about="{$base}/em_entity_assembly_synthetic/{translate(@entity_assembly_id,' ^','_')},{translate(@id,' ^','_')}">
+      <PDBo:of_datablock rdf:resource="{$base}"/>
+      <xsl:if test="@entity_assembly_id!=''">
+        <PDBo:reference_to_em_entity_assembly>
+	  <rdf:Description  rdf:about="{$base}/em_entity_assembly/{translate(@entity_assembly_id,' ^','_')}">
+	    <PDBo:referenced_by_em_entity_assembly_synthetic rdf:resource="{$base}/em_entity_assembly_synthetic/{translate(@entity_assembly_id,' ^','_')},{translate(@id,' ^','_')}"/>
+	  </rdf:Description>
+        </PDBo:reference_to_em_entity_assembly>
+        <!-- em_entity_assemblyKeyref_0_0_3_0 -->
+      </xsl:if>
+      <xsl:apply-templates select="@*"/>
+      <xsl:apply-templates select="@*" mode="linked"/>
+      <xsl:apply-templates/>
+      <xsl:apply-templates mode="linked"/>
+      </PDBo:em_entity_assembly_synthetic>
+      </PDBo:has_em_entity_assembly_synthetic>
+  </xsl:template>
+
   <xsl:template match="PDBx:datablock/PDBx:em_euler_angle_assignmentCategory/PDBx:em_euler_angle_assignment">
       <PDBo:has_em_euler_angle_assignment>
       <PDBo:em_euler_angle_assignment rdf:about="{$base}/em_euler_angle_assignment/{translate(@id,' ^','_')}">
@@ -2272,7 +2292,7 @@
 	    <PDBo:referenced_by_em_virus_entity rdf:resource="{$base}/em_virus_entity/{translate(@entity_assembly_id,' ^','_')},{translate(@id,' ^','_')}"/>
 	  </rdf:Description>
         </PDBo:reference_to_em_entity_assembly>
-        <!-- em_entity_assemblyKeyref_0_0_3_0 -->
+        <!-- em_entity_assemblyKeyref_0_0_4_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -2292,7 +2312,7 @@
 	    <PDBo:referenced_by_em_virus_natural_host rdf:resource="{$base}/em_virus_natural_host/{translate(@entity_assembly_id,' ^','_')},{translate(@id,' ^','_')}"/>
 	  </rdf:Description>
         </PDBo:reference_to_em_entity_assembly>
-        <!-- em_entity_assemblyKeyref_0_0_4_0 -->
+        <!-- em_entity_assemblyKeyref_0_0_5_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -2312,7 +2332,7 @@
 	    <PDBo:referenced_by_em_virus_shell rdf:resource="{$base}/em_virus_shell/{translate(@entity_assembly_id,' ^','_')},{translate(@id,' ^','_')}"/>
 	  </rdf:Description>
         </PDBo:reference_to_em_entity_assembly>
-        <!-- em_entity_assemblyKeyref_0_0_5_0 -->
+        <!-- em_entity_assemblyKeyref_0_0_6_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -3812,6 +3832,18 @@
       <xsl:apply-templates mode="linked"/>
       </PDBo:pdbx_database_PDB_obs_spr>
       </PDBo:has_pdbx_database_PDB_obs_spr>
+  </xsl:template>
+
+  <xsl:template match="PDBx:datablock/PDBx:pdbx_database_doiCategory/PDBx:pdbx_database_doi">
+      <PDBo:has_pdbx_database_doi>
+      <PDBo:pdbx_database_doi rdf:about="{$base}/pdbx_database_doi/{translate(@db_name,' ^','_')}">
+      <PDBo:of_datablock rdf:resource="{$base}"/>
+      <xsl:apply-templates select="@*"/>
+      <xsl:apply-templates select="@*" mode="linked"/>
+      <xsl:apply-templates/>
+      <xsl:apply-templates mode="linked"/>
+      </PDBo:pdbx_database_doi>
+      </PDBo:has_pdbx_database_doi>
   </xsl:template>
 
   <xsl:template match="PDBx:datablock/PDBx:pdbx_database_messageCategory/PDBx:pdbx_database_message">
