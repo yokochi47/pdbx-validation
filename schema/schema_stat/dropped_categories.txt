@@ -143,6 +143,7 @@ pdbx_construct_feature
 pdbx_contact_author WWPDB_LOCAL
 pdbx_coord WWPDB_LOCAL
 pdbx_crystal_alignment WWPDB_LOCAL
+pdbx_database_doi
 pdbx_database_message
 pdbx_database_PDB_master WWPDB_LOCAL
 pdbx_database_PDB_obs_spr

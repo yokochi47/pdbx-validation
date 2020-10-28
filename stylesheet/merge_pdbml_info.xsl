@@ -244,6 +244,12 @@ Unmatched entry ID in both documents (<xsl:value-of select="$entry_id"/> and <xs
     </xsl:element>
   </xsl:template>
 
+  <xsl:template match="PDBxv:em_entity_assembly_syntheticCategory">
+    <xsl:element name="{name()}">
+      <xsl:apply-templates mode="category-element"/>
+    </xsl:element>
+  </xsl:template>
+
   <xsl:template match="PDBxv:em_experimentCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>

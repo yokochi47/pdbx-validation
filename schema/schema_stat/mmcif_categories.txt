@@ -91,6 +91,7 @@ em_entity_assembly
 em_entity_assembly_molwt
 em_entity_assembly_naturalsource
 em_entity_assembly_recombinant
+em_entity_assembly_synthetic
 em_euler_angle_assignment
 em_experiment
 em_fiducial_markers
@@ -213,6 +214,7 @@ pdbx_contact_author
 pdbx_coord
 pdbx_coordinate_model
 pdbx_crystal_alignment
+pdbx_database_doi
 pdbx_database_message
 pdbx_database_PDB_master
 pdbx_database_PDB_obs_spr

@@ -696,6 +696,26 @@
       </PDBov:has_em_entity_assembly_recombinant>
   </xsl:template>
 
+  <xsl:template match="PDBxv:datablock/PDBxv:em_entity_assembly_syntheticCategory/PDBxv:em_entity_assembly_synthetic">
+      <PDBov:has_em_entity_assembly_synthetic>
+      <PDBov:em_entity_assembly_synthetic rdf:about="{$base}/em_entity_assembly_synthetic/{translate(@entity_assembly_id,' ^','_')},{translate(@id,' ^','_')}">
+      <PDBov:of_datablock rdf:resource="{$base}"/>
+      <xsl:if test="@entity_assembly_id!=''">
+        <PDBov:reference_to_em_entity_assembly>
+	  <rdf:Description  rdf:about="{$base}/em_entity_assembly/{translate(@entity_assembly_id,' ^','_')}">
+	    <PDBov:referenced_by_em_entity_assembly_synthetic rdf:resource="{$base}/em_entity_assembly_synthetic/{translate(@entity_assembly_id,' ^','_')},{translate(@id,' ^','_')}"/>
+	  </rdf:Description>
+        </PDBov:reference_to_em_entity_assembly>
+        <!-- em_entity_assemblyKeyref_0_0_3_0 -->
+      </xsl:if>
+      <xsl:apply-templates select="@*"/>
+      <xsl:apply-templates select="@*" mode="linked"/>
+      <xsl:apply-templates/>
+      <xsl:apply-templates mode="linked"/>
+      </PDBov:em_entity_assembly_synthetic>
+      </PDBov:has_em_entity_assembly_synthetic>
+  </xsl:template>
+
   <xsl:template match="PDBxv:datablock/PDBxv:em_experimentCategory/PDBxv:em_experiment">
       <PDBov:has_em_experiment>
       <PDBov:em_experiment rdf:about="{$base}/em_experiment/{translate(@entry_id,' ^','_')}">
@@ -874,7 +894,7 @@
 	    <PDBov:referenced_by_em_virus_entity rdf:resource="{$base}/em_virus_entity/{translate(@entity_assembly_id,' ^','_')},{translate(@id,' ^','_')}"/>
 	  </rdf:Description>
         </PDBov:reference_to_em_entity_assembly>
-        <!-- em_entity_assemblyKeyref_0_0_3_0 -->
+        <!-- em_entity_assemblyKeyref_0_0_4_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -894,7 +914,7 @@
 	    <PDBov:referenced_by_em_virus_natural_host rdf:resource="{$base}/em_virus_natural_host/{translate(@entity_assembly_id,' ^','_')},{translate(@id,' ^','_')}"/>
 	  </rdf:Description>
         </PDBov:reference_to_em_entity_assembly>
-        <!-- em_entity_assemblyKeyref_0_0_4_0 -->
+        <!-- em_entity_assemblyKeyref_0_0_5_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -914,7 +934,7 @@
 	    <PDBov:referenced_by_em_virus_shell rdf:resource="{$base}/em_virus_shell/{translate(@entity_assembly_id,' ^','_')},{translate(@id,' ^','_')}"/>
 	  </rdf:Description>
         </PDBov:reference_to_em_entity_assembly>
-        <!-- em_entity_assemblyKeyref_0_0_5_0 -->
+        <!-- em_entity_assemblyKeyref_0_0_6_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>

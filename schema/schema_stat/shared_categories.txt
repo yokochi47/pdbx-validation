@@ -31,6 +31,7 @@ em_entity_assembly
 em_entity_assembly_molwt
 em_entity_assembly_naturalsource
 em_entity_assembly_recombinant
+em_entity_assembly_synthetic
 em_experiment
 em_helical_entity
 em_image_processing
