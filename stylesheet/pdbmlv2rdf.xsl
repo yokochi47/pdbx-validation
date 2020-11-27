@@ -1776,6 +1776,38 @@
       </PDBov:has_pdbx_em_raps_marker>
   </xsl:template>
 
+  <xsl:template match="PDBxv:datablock/PDBxv:pdbx_em_raw_rapsCategory/PDBxv:pdbx_em_raw_raps">
+      <PDBov:has_pdbx_em_raw_raps>
+      <PDBov:pdbx_em_raw_raps rdf:about="{$base}/pdbx_em_raw_raps/{translate(@id,' ^','_')}">
+      <PDBov:of_datablock rdf:resource="{$base}"/>
+      <xsl:apply-templates select="@*"/>
+      <xsl:apply-templates select="@*" mode="linked"/>
+      <xsl:apply-templates/>
+      <xsl:apply-templates mode="linked"/>
+      </PDBov:pdbx_em_raw_raps>
+      </PDBov:has_pdbx_em_raw_raps>
+  </xsl:template>
+
+  <xsl:template match="PDBxv:datablock/PDBxv:pdbx_em_raw_raps_markerCategory/PDBxv:pdbx_em_raw_raps_marker">
+      <PDBov:has_pdbx_em_raw_raps_marker>
+      <PDBov:pdbx_em_raw_raps_marker rdf:about="{$base}/pdbx_em_raw_raps_marker/{translate(@ordinal,' ^','_')},{translate(@plot_id,' ^','_')}">
+      <PDBov:of_datablock rdf:resource="{$base}"/>
+      <xsl:if test="@plot_id!=''">
+        <PDBov:reference_to_pdbx_em_raw_raps>
+	  <rdf:Description  rdf:about="{$base}/pdbx_em_raw_raps/{translate(@plot_id,' ^','_')}">
+	    <PDBov:referenced_by_pdbx_em_raw_raps_marker rdf:resource="{$base}/pdbx_em_raw_raps_marker/{translate(@ordinal,' ^','_')},{translate(@plot_id,' ^','_')}"/>
+	  </rdf:Description>
+        </PDBov:reference_to_pdbx_em_raw_raps>
+        <!-- pdbx_em_raw_rapsKeyref_0_0_0_0 -->
+      </xsl:if>
+      <xsl:apply-templates select="@*"/>
+      <xsl:apply-templates select="@*" mode="linked"/>
+      <xsl:apply-templates/>
+      <xsl:apply-templates mode="linked"/>
+      </PDBov:pdbx_em_raw_raps_marker>
+      </PDBov:has_pdbx_em_raw_raps_marker>
+  </xsl:template>
+
   <xsl:template match="PDBxv:datablock/PDBxv:pdbx_em_validate_map_modelCategory/PDBxv:pdbx_em_validate_map_model">
       <PDBov:has_pdbx_em_validate_map_model>
       <PDBov:pdbx_em_validate_map_model rdf:about="{$base}/pdbx_em_validate_map_model/{translate(@id,' ^','_')}">

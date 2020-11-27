@@ -23,7 +23,7 @@
 --  hash key type: unsigned long 64 bits
 --
 -- Statistics of schema:
---  Generated 46 tables (570 fields), 49 views (147 fields), 0 attr groups, 0 model groups in total
+--  Generated 46 tables (572 fields), 50 views (150 fields), 0 attr groups, 0 model groups in total
 --   Orphan tables that can not be reached from the document root:
 --    schema location: wwpdb_validation_v004.xsd
 --      "NotAvailable"
@@ -32,11 +32,11 @@
 --   Schema locations:
 --    wwpdb_validation_v004.xsd
 --   Table types:
---    1 root, 83 root children, 10 admin roots, 1 admin children
+--    1 root, 84 root children, 10 admin roots, 1 admin children
 --   System keys:
---    95 primary keys (27 unique constraints), 86 foreign keys, 145 nested keys (97 as attribute, 1 as attribute group)
+--    96 primary keys (28 unique constraints), 87 foreign keys, 147 nested keys (97 as attribute, 1 as attribute group)
 --   User keys:
---    95 document keys, 0 serial keys, 0 xpath keys
+--    96 document keys, 0 serial keys, 0 xpath keys
 --   Contents:
 --    290 attributes (0 in-place document keys), 0 elements (0 in-place document keys), 6 simple contents (0 in-place document keys, 6 as attribute, 0 as conditional attribute)
 --   Wild cards:
@@ -46,7 +46,7 @@
 --
 
 --
--- COPYRIGHT ***************************************************************** Copyright 2014-2017 EMBL - European Bioinformatics Institute Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. ***************************************************************** This is a XML schema for checking entry-specific validation XML documents from wwPDB. versions published: v1 2014/02/20 http://wwpdb.org/validation/schema/wwpdb_validation_v1.xsd v002 2016/02/25 http://wwpdb.org/validation/schema/wwpdb_validation_v002.xsd v002 2017/08/31 http://wwpdb.org/validation/schema/wwpdb_validation_v002.xsd (with annotations) v003 2019/05/27 http://wwpdb.org/validation/schema/wwpdb_validation_v003.xsd (added local_density, no-ligands-for-buster-report ligands-for-buster-report attribute) v004 2019/10/16 http://wwpdb.org/validation/schema/wwpdb_validation_v004.xsd (added em validation) v004 2019/11/18 http://wwpdb.org/validation/schema/wwpdb_validation_v004.xsd (Updated FSC representation) v004 2020/02/18 http://wwpdb.org/validation/schema/wwpdb_validation_v004.xsd (Added EMDB-deposition-date and EMDB-resolution) $Revision$ *****************************************************************
+-- COPYRIGHT ***************************************************************** Copyright 2014-2017 EMBL - European Bioinformatics Institute Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. ***************************************************************** This is a XML schema for checking entry-specific validation XML documents from wwPDB. versions published: v1 2014/02/20 http://wwpdb.org/validation/schema/wwpdb_validation_v1.xsd v002 2016/02/25 http://wwpdb.org/validation/schema/wwpdb_validation_v002.xsd v002 2017/08/31 http://wwpdb.org/validation/schema/wwpdb_validation_v002.xsd (with annotations) v003 2019/05/27 http://wwpdb.org/validation/schema/wwpdb_validation_v003.xsd (added local_density, no-ligands-for-buster-report ligands-for-buster-report attribute) v004 2019/10/16 http://wwpdb.org/validation/schema/wwpdb_validation_v004.xsd (added em validation) v004 2019/11/18 http://wwpdb.org/validation/schema/wwpdb_validation_v004.xsd (Updated FSC representation) v004 2020/02/18 http://wwpdb.org/validation/schema/wwpdb_validation_v004.xsd (Added EMDB-deposition-date and EMDB-resolution) v004 2020/10/06 http://wwpdb.org/validation/schema/wwpdb_validation_v004.xsd (Added raw map rotationally averaged power spectrum) $Revision$ *****************************************************************
 --
 
 DROP TABLE IF EXISTS atom_name CASCADE;
@@ -161,6 +161,7 @@ CREATE TABLE "ModelledSubgroup" (
 -- ATTRIBUTE
 	chain TEXT ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	resnum INTEGER ,
 -- ATTRIBUTE
 	resname TEXT ,
@@ -177,8 +178,10 @@ CREATE TABLE "ModelledSubgroup" (
 -- ATTRIBUTE
 	seq TEXT ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	ligand_num_clashes INTEGER ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	ligand_num_symm_clashes INTEGER ,
 -- NESTED KEY AS ATTRIBUTE : ligand_clashes_outlier ( ligand_clashes_outlier_id, DELEGATED TO "YesString_id" )
 	ligand_clashes_outlier_id BIGINT CHECK ( ligand_clashes_outlier_id >= 0 ) ,
@@ -187,8 +190,10 @@ CREATE TABLE "ModelledSubgroup" (
 -- NESTED KEY AS ATTRIBUTE : cis_peptide ( cis_peptide_id, DELEGATED TO "YesString_id" )
 	cis_peptide_id BIGINT CHECK ( cis_peptide_id >= 0 ) ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	"NatomsEDS" INTEGER ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	cyrange_domain_id INTEGER ,
 -- ATTRIBUTE
 	validate TEXT ,
@@ -209,6 +214,7 @@ CREATE TABLE "ModelledSubgroup" (
 -- ATTRIBUTE
 	"ligRSRnbrStdev" DECIMAL ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	"ligRSRnumnbrs" INTEGER ,
 -- ATTRIBUTE
 	"ligRSRZ" DECIMAL ,
@@ -237,8 +243,10 @@ CREATE TABLE "ModelledSubgroup" (
 -- ATTRIBUTE
 	mogul_bonds_rmsz DECIMAL ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	mogul_rmsz_numangles INTEGER ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	mogul_rmsz_numbonds INTEGER ,
 -- NESTED KEY AS ATTRIBUTE : ligand_geometry_outlier ( ligand_geometry_outlier_id, DELEGATED TO "YesString_id" )
 	ligand_geometry_outlier_id BIGINT CHECK ( ligand_geometry_outlier_id >= 0 ) ,
@@ -310,8 +318,10 @@ CREATE TABLE "Entry" (
 -- ATTRIBUTE
 	bonds_rmsz DECIMAL ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	num_bonds_rmsz INTEGER ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	num_angles_rmsz INTEGER ,
 -- ATTRIBUTE
 	"num-H-reduce" DECIMAL ,
@@ -338,12 +348,14 @@ CREATE TABLE "Entry" (
 -- ATTRIBUTE
 	xtriage_input_columns TEXT ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	acentric_outliers INTEGER ,
 -- ATTRIBUTE
 	centric_outliers DECIMAL ,
 -- ATTRIBUTE
 	"IoverSigma" TEXT ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	"numMillerIndices" INTEGER ,
 -- ATTRIBUTE
 	"WilsonBestimate" DECIMAL ,
@@ -370,6 +382,7 @@ CREATE TABLE "Entry" (
 -- ATTRIBUTE
 	"DCC_refinement_program" TEXT ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	"num-free-reflections" INTEGER ,
 -- NESTED KEY AS ATTRIBUTE : "percent-free-reflections" ( "percent-free-reflections_id", DELEGATED TO percentage_id )
 	"percent-free-reflections_id" BIGINT CHECK ( "percent-free-reflections_id" >= 0 ) ,
@@ -404,16 +417,22 @@ CREATE TABLE "Entry" (
 -- ATTRIBUTE
 	nmrclust_version TEXT ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	nmrclust_representative_model INTEGER ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	medoid_model INTEGER ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	nmrclust_number_of_outliers INTEGER ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	nmrclust_number_of_models INTEGER ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	nmrclust_number_of_clusters INTEGER ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	cyrange_number_of_domains INTEGER ,
 -- ATTRIBUTE
 	chemical_shift_completeness DECIMAL ,
@@ -462,10 +481,12 @@ CREATE TABLE "Entry" (
 -- NESTED KEY AS ATTRIBUTE : "absolute-percentile-RNAsuiteness" ( "absolute-percentile-RNAsuiteness_id", DELEGATED TO percentile_rank_id )
 	"absolute-percentile-RNAsuiteness_id" BIGINT CHECK ( "absolute-percentile-RNAsuiteness_id" >= 0 ) ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	"numPDBids-absolute-percentile-RNAsuiteness" INTEGER ,
 -- NESTED KEY AS ATTRIBUTE : "relative-percentile-RNAsuiteness" ( "relative-percentile-RNAsuiteness_id", DELEGATED TO percentile_rank_id )
 	"relative-percentile-RNAsuiteness_id" BIGINT CHECK ( "relative-percentile-RNAsuiteness_id" >= 0 ) ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	"numPDBids-relative-percentile-RNAsuiteness" INTEGER ,
 -- ATTRIBUTE
 	"low-resol-relative-percentile-RNAsuiteness" DECIMAL ,
@@ -474,10 +495,12 @@ CREATE TABLE "Entry" (
 -- NESTED KEY AS ATTRIBUTE : "absolute-percentile-clashscore" ( "absolute-percentile-clashscore_id", DELEGATED TO percentile_rank_id )
 	"absolute-percentile-clashscore_id" BIGINT CHECK ( "absolute-percentile-clashscore_id" >= 0 ) ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	"numPDBids-absolute-percentile-clashscore" INTEGER ,
 -- NESTED KEY AS ATTRIBUTE : "relative-percentile-clashscore" ( "relative-percentile-clashscore_id", DELEGATED TO percentile_rank_id )
 	"relative-percentile-clashscore_id" BIGINT CHECK ( "relative-percentile-clashscore_id" >= 0 ) ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	"numPDBids-relative-percentile-clashscore" INTEGER ,
 -- ATTRIBUTE
 	"low-resol-relative-percentile-clashscore" DECIMAL ,
@@ -486,10 +509,12 @@ CREATE TABLE "Entry" (
 -- NESTED KEY AS ATTRIBUTE : "absolute-percentile-percent-rama-outliers" ( "absolute-percentile-percent-rama-outliers_id", DELEGATED TO percentile_rank_id )
 	"absolute-percentile-percent-rama-outliers_id" BIGINT CHECK ( "absolute-percentile-percent-rama-outliers_id" >= 0 ) ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	"numPDBids-absolute-percentile-percent-rama-outliers" INTEGER ,
 -- NESTED KEY AS ATTRIBUTE : "relative-percentile-percent-rama-outliers" ( "relative-percentile-percent-rama-outliers_id", DELEGATED TO percentile_rank_id )
 	"relative-percentile-percent-rama-outliers_id" BIGINT CHECK ( "relative-percentile-percent-rama-outliers_id" >= 0 ) ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	"numPDBids-relative-percentile-percent-rama-outliers" INTEGER ,
 -- ATTRIBUTE
 	"low-resol-relative-percentile-percent-rama-outliers" DECIMAL ,
@@ -498,10 +523,12 @@ CREATE TABLE "Entry" (
 -- NESTED KEY AS ATTRIBUTE : "absolute-percentile-percent-rota-outliers" ( "absolute-percentile-percent-rota-outliers_id", DELEGATED TO percentile_rank_id )
 	"absolute-percentile-percent-rota-outliers_id" BIGINT CHECK ( "absolute-percentile-percent-rota-outliers_id" >= 0 ) ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	"numPDBids-absolute-percentile-percent-rota-outliers" INTEGER ,
 -- NESTED KEY AS ATTRIBUTE : "relative-percentile-percent-rota-outliers" ( "relative-percentile-percent-rota-outliers_id", DELEGATED TO percentile_rank_id )
 	"relative-percentile-percent-rota-outliers_id" BIGINT CHECK ( "relative-percentile-percent-rota-outliers_id" >= 0 ) ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	"numPDBids-relative-percentile-percent-rota-outliers" INTEGER ,
 -- ATTRIBUTE
 	"low-resol-relative-percentile-percent-rota-outliers" DECIMAL ,
@@ -510,10 +537,12 @@ CREATE TABLE "Entry" (
 -- NESTED KEY AS ATTRIBUTE : "absolute-percentile-DCC_Rfree" ( "absolute-percentile-DCC_Rfree_id", DELEGATED TO percentile_rank_id )
 	"absolute-percentile-DCC_Rfree_id" BIGINT CHECK ( "absolute-percentile-DCC_Rfree_id" >= 0 ) ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	"numPDBids-absolute-percentile-DCC_Rfree" INTEGER ,
 -- NESTED KEY AS ATTRIBUTE : "relative-percentile-DCC_Rfree" ( "relative-percentile-DCC_Rfree_id", DELEGATED TO percentile_rank_id )
 	"relative-percentile-DCC_Rfree_id" BIGINT CHECK ( "relative-percentile-DCC_Rfree_id" >= 0 ) ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	"numPDBids-relative-percentile-DCC_Rfree" INTEGER ,
 -- ATTRIBUTE
 	"low-resol-relative-percentile-DCC_Rfree" DECIMAL ,
@@ -522,10 +551,12 @@ CREATE TABLE "Entry" (
 -- NESTED KEY AS ATTRIBUTE : "absolute-percentile-percent-RSRZ-outliers" ( "absolute-percentile-percent-RSRZ-outliers_id", DELEGATED TO percentile_rank_id )
 	"absolute-percentile-percent-RSRZ-outliers_id" BIGINT CHECK ( "absolute-percentile-percent-RSRZ-outliers_id" >= 0 ) ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	"numPDBids-absolute-percentile-percent-RSRZ-outliers" INTEGER ,
 -- NESTED KEY AS ATTRIBUTE : "relative-percentile-percent-RSRZ-outliers" ( "relative-percentile-percent-RSRZ-outliers_id", DELEGATED TO percentile_rank_id )
 	"relative-percentile-percent-RSRZ-outliers_id" BIGINT CHECK ( "relative-percentile-percent-RSRZ-outliers_id" >= 0 ) ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	"numPDBids-relative-percentile-percent-RSRZ-outliers" INTEGER ,
 -- ATTRIBUTE
 	"low-resol-relative-percentile-percent-RSRZ-outliers" DECIMAL ,
@@ -561,6 +592,7 @@ CREATE TABLE chemical_shift_list (
 -- NESTED KEY : assignment_completeness_full_length ( assignment_completeness_full_length_id )
 	assignment_completeness_full_length_id BIGINT CHECK ( assignment_completeness_full_length_id >= 0 ) ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	file_id INTEGER ,
 -- ATTRIBUTE
 	file_name TEXT ,
@@ -571,16 +603,22 @@ CREATE TABLE chemical_shift_list (
 -- ATTRIBUTE
 	type TEXT ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	number_of_errors_while_mapping INTEGER ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	number_of_warnings_while_mapping INTEGER ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	number_of_mapped_shifts INTEGER ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	number_of_parsed_shifts INTEGER ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	total_number_of_shifts INTEGER ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	number_of_unparsed_shifts INTEGER
 );
 
@@ -601,6 +639,8 @@ CREATE TABLE "EM_validation" (
 	map_value_distribution_id BIGINT CHECK ( map_value_distribution_id >= 0 ) ,
 -- NESTED KEY : rotationally_averaged_power_spectrum ( rotationally_averaged_power_spectrum_id, DELEGATED TO graph_id )
 	rotationally_averaged_power_spectrum_id BIGINT CHECK ( rotationally_averaged_power_spectrum_id >= 0 ) ,
+-- NESTED KEY : raw_map_rotationally_averaged_power_spectrum ( raw_map_rotationally_averaged_power_spectrum_id, DELEGATED TO graph_id )
+	raw_map_rotationally_averaged_power_spectrum_id BIGINT CHECK ( raw_map_rotationally_averaged_power_spectrum_id >= 0 ) ,
 -- NESTED KEY : volume_estimate ( volume_estimate_id, DELEGATED TO graph_id )
 	volume_estimate_id BIGINT CHECK ( volume_estimate_id >= 0 ) ,
 -- NESTED KEY : atom_inclusion ( atom_inclusion_id )
@@ -681,6 +721,8 @@ CREATE TABLE graph (
 	map_value_distribution_id BIGINT CHECK ( map_value_distribution_id >= 0 ) ,
 -- FOREIGN KEY : rotationally_averaged_power_spectrum ( rotationally_averaged_power_spectrum_id )
 	rotationally_averaged_power_spectrum_id BIGINT CHECK ( rotationally_averaged_power_spectrum_id >= 0 ) ,
+-- FOREIGN KEY : raw_map_rotationally_averaged_power_spectrum ( raw_map_rotationally_averaged_power_spectrum_id )
+	raw_map_rotationally_averaged_power_spectrum_id BIGINT CHECK ( raw_map_rotationally_averaged_power_spectrum_id >= 0 ) ,
 -- FOREIGN KEY : volume_estimate ( volume_estimate_id )
 	volume_estimate_id BIGINT CHECK ( volume_estimate_id >= 0 ) ,
 -- FOREIGN KEY : all_atoms ( all_atoms_id )
@@ -776,6 +818,7 @@ CREATE TABLE unmapped_chemical_shift (
 -- ATTRIBUTE
 	rescode TEXT ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	resnum INTEGER ,
 -- NESTED KEY AS ATTRIBUTE : atom ( atom_id, DELEGATED TO atom_name_id )
 	atom_id BIGINT CHECK ( atom_id >= 0 ) ,
@@ -807,6 +850,7 @@ CREATE TABLE unparsed_chemical_shift (
 -- ATTRIBUTE
 	rescode TEXT ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	resnum INTEGER ,
 -- NESTED KEY AS ATTRIBUTE : atom ( atom_id, DELEGATED TO atom_name_id )
 	atom_id BIGINT CHECK ( atom_id >= 0 ) ,
@@ -853,6 +897,7 @@ CREATE TABLE random_coil_index (
 -- ATTRIBUTE
 	rescode TEXT ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	resnum INTEGER ,
 -- ATTRIBUTE
 	value DECIMAL
@@ -874,6 +919,7 @@ CREATE TABLE chemical_shift_outlier (
 -- ATTRIBUTE
 	rescode TEXT ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	resnum INTEGER ,
 -- NESTED KEY AS ATTRIBUTE : atom ( atom_id, DELEGATED TO atom_name_id )
 	atom_id BIGINT CHECK ( atom_id >= 0 ) ,
@@ -907,6 +953,7 @@ CREATE TABLE referencing_offset (
 -- ATTRIBUTE
 	value DECIMAL ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	number_of_measurements INTEGER NOT NULL
 );
 
@@ -922,10 +969,13 @@ CREATE TABLE assignment_completeness_well_defined (
 -- FOREIGN KEY : chemical_shift_list ( chemical_shift_list_id )
 	chemical_shift_list_id BIGINT CHECK ( chemical_shift_list_id >= 0 ) ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	number_of_assigned_shifts INTEGER ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	number_of_unassigned_shifts INTEGER ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	number_of_shifts INTEGER ,
 -- ATTRIBUTE
 	type TEXT NOT NULL ,
@@ -945,10 +995,13 @@ CREATE TABLE assignment_completeness_full_length (
 -- FOREIGN KEY : chemical_shift_list ( chemical_shift_list_id )
 	chemical_shift_list_id BIGINT CHECK ( chemical_shift_list_id >= 0 ) ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	number_of_assigned_shifts INTEGER ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	number_of_unassigned_shifts INTEGER ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	number_of_shifts INTEGER ,
 -- ATTRIBUTE
 	type TEXT NOT NULL ,
@@ -1127,6 +1180,7 @@ CREATE TABLE "Model" (
 -- FOREIGN KEY : "wwPDB-validation-information" ( "wwPDB-validation-information_id" )
 	"wwPDB-validation-information_id" BIGINT CHECK ( "wwPDB-validation-information_id" >= 0 ) ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	model INTEGER ,
 -- ATTRIBUTE
 	nmrclust_cluster_id TEXT ,
@@ -1246,6 +1300,7 @@ CREATE TABLE clash (
 -- NESTED KEY AS ATTRIBUTE : atom ( atom_id, DELEGATED TO atom_name_id )
 	atom_id BIGINT CHECK ( atom_id >= 0 ) ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	cid INTEGER NOT NULL ,
 -- ATTRIBUTE
 	clashmag DECIMAL NOT NULL ,
@@ -1269,6 +1324,7 @@ CREATE TABLE "symm-clash" (
 -- ATTRIBUTE
 	symop TEXT NOT NULL ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	scid INTEGER NOT NULL ,
 -- ATTRIBUTE
 	clashmag DECIMAL NOT NULL ,
@@ -1296,6 +1352,7 @@ CREATE TABLE "mog-bond-outlier" (
 -- ATTRIBUTE
 	stdev DECIMAL ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	numobs INTEGER ,
 -- ATTRIBUTE
 	"Zscore" DECIMAL ,
@@ -1323,6 +1380,7 @@ CREATE TABLE "mog-angle-outlier" (
 -- ATTRIBUTE
 	stdev DECIMAL ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	numobs INTEGER ,
 -- ATTRIBUTE
 	"Zscore" DECIMAL ,
@@ -1350,6 +1408,7 @@ CREATE TABLE "mog-torsion-outlier" (
 -- ATTRIBUTE
 	mindiff DECIMAL ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	numobs INTEGER ,
 -- ATTRIBUTE
 	stdev DECIMAL ,
@@ -1377,6 +1436,7 @@ CREATE TABLE "mog-ring-outlier" (
 -- ATTRIBUTE
 	stdev DECIMAL ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	numobs INTEGER
 );
 
@@ -1392,16 +1452,20 @@ CREATE TABLE cyrange_domain (
 -- FOREIGN KEY : "wwPDB-validation-information" ( "wwPDB-validation-information_id" )
 	"wwPDB-validation-information_id" BIGINT CHECK ( "wwPDB-validation-information_id" >= 0 ) ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	domain INTEGER ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	number_of_gaps INTEGER ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	number_of_residues INTEGER ,
 -- ATTRIBUTE
 	percentage_of_core DECIMAL ,
 -- ATTRIBUTE
 	rmsd DECIMAL ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	medoid_model INTEGER ,
 -- ATTRIBUTE
 	medoid_rmsd DECIMAL ,
@@ -1437,8 +1501,10 @@ CREATE TABLE "ModelledEntityInstance" (
 -- ATTRIBUTE
 	bonds_rmsz DECIMAL ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	num_bonds_rmsz INTEGER ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	num_angles_rmsz INTEGER ,
 -- ATTRIBUTE
 	average_residue_inclusion DECIMAL ,
@@ -1856,6 +1922,21 @@ SELECT
 FROM "EM_validation" WHERE rotationally_averaged_power_spectrum_id IS NOT NULL;
 
 --
+-- Contains the data required to plot the rotationally averaged power spectrum graph for the raw map
+-- xmlns: no namespace, schema location: wwpdb_validation_v004.xsd
+-- type: root child (view), content: false, list: false, bridge: true, virtual: false
+--
+CREATE OR REPLACE VIEW raw_map_rotationally_averaged_power_spectrum AS
+SELECT
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id ,
+-- PRIMARY KEY
+	raw_map_rotationally_averaged_power_spectrum_id ,
+-- NESTED KEY : graph ( graph_id )
+	raw_map_rotationally_averaged_power_spectrum_id AS graph_id
+FROM "EM_validation" WHERE raw_map_rotationally_averaged_power_spectrum_id IS NOT NULL;
+
+--
 -- Contains the data required to plot the volume estimate for the primary map
 -- xmlns: no namespace, schema location: wwpdb_validation_v004.xsd
 -- type: root child (view), content: false, list: false, bridge: true, virtual: false
@@ -1885,7 +1966,7 @@ SELECT
 FROM "Entry" WHERE "PDB-resolution_id" IS NOT NULL;
 
 --
--- For X-ray entries: lower data resolution diffraction limit, in Angstroms, as reported in the input mmCIF file, normally taken from mmcif item _refine.ls_d_res_low or if this is not found _reflns.d_resolution_low.
+-- For X-ray entries: lower data resolution diffraction limit, in Angstroms, as reported in the input mmCIF file, normally taken from mmcif item _refine.ls_d_res_high or if this is not found _reflns.d_resolution_high.
 -- xmlns: no namespace, schema location: wwpdb_validation_v004.xsd
 -- type: root child (view), content: false, list: false, bridge: true, virtual: false
 --

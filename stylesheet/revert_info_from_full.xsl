@@ -1968,6 +1968,22 @@ Unmatched type exist in _pdbx_percentile_entity_view.type, <xsl:value-of select=
           </rotationally_averaged_power_spectrum>
         </xsl:for-each>
 
+        <xsl:for-each select="$datablock/PDBxv:pdbx_em_raw_rapsCategory/PDBxv:pdbx_em_raw_raps">
+          <raw_map_rotationally_averaged_power_spectrum>
+            <xsl:attribute name="xTitle"><xsl:value-of select="PDBxv:spatial_frequency_title"/></xsl:attribute>
+            <xsl:attribute name="yTitle"><xsl:value-of select="PDBxv:power_title"/></xsl:attribute>
+            <xsl:attribute name="xUnit"><xsl:value-of select="PDBxv:spatial_frequency_unit"/></xsl:attribute>
+            <xsl:attribute name="yScale"><xsl:value-of select="PDBxv:power_scale"/></xsl:attribute>
+            <xsl:for-each select="$datablock/PDBxv:pdbx_em_raw_raps_markerCategory/PDBxv:pdbx_em_raw_raps_marker">
+              <xsl:sort select="@ordinal" data-type="number"/>
+              <coordinate>
+                <xsl:attribute name="x"><xsl:value-of select="PDBxv:spatial_frequency"/></xsl:attribute>
+                <xsl:attribute name="y"><xsl:value-of select="PDBxv:power"/></xsl:attribute>
+              </coordinate>
+            </xsl:for-each>
+          </raw_map_rotationally_averaged_power_spectrum>
+        </xsl:for-each>
+
         <xsl:for-each select="$datablock/PDBxv:pdbx_em_volume_estimateCategory/PDBxv:pdbx_em_volume_estimate">
           <volume_estimate>
             <xsl:attribute name="xTitle"><xsl:value-of select="PDBxv:contour_level_title"/></xsl:attribute>
