@@ -151,6 +151,7 @@ File path | Document
 
 - **Nov 27, 2020**: Release v2.0.16
 	- Update wwPDB Validation Information Dictionary to 2.336.
+	- Add support for wwPDB validation report (wwpdb_validation_v004.xsd, 2020-10-16)
 
 - **Oct 28, 2020**: Release v2.0.15
 	- Update wwPDB Validation Information Dictionary to 2.335.

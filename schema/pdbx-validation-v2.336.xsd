@@ -13894,7 +13894,7 @@ author_provided_fsc
     <xsd:annotation>
       <xsd:documentation xml:lang="en">
 Data items in the category record Rotationally Averaged Power Spectrum
-(RAPS). The RAPS provides insight into the data processing steps
+(RAPS) for the primary EM volume (map). The RAPS provides insight into the data processing steps
 leading to the map, in terms of:
 CTF correction,
 Temperature factor correction,
@@ -13987,7 +13987,7 @@ This is an integer serial number.
     <xsd:annotation>
       <xsd:documentation xml:lang="en">
 Data items in the category record Rotationally Averaged Power Spectrum
-(RAPS) plot.
+(RAPS) plot for the primary EM volume (map).
 
     Example 1 - based on PDB entry 6RJH.
 &lt;PDBxv:pdbx_em_raps_markerCategory&gt;
@@ -14070,6 +14070,193 @@ The ordered number in the plot marker.
             <xsd:annotation>
               <xsd:documentation xml:lang="en">
 Pointer to attribute id in category pdbx_em_raps. 
+                     </xsd:documentation>
+            </xsd:annotation>
+          </xsd:attribute>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="pdbx_em_raw_rapsType">
+    <xsd:annotation>
+      <xsd:documentation xml:lang="en">
+Data items in the category record Rotationally Averaged Power Spectrum
+(RAPS) for raw EM volume (map). The RAPS provides insight into the data processing steps
+leading to the map, in terms of:
+CTF correction,
+Temperature factor correction,
+Low and/or high-pass filtering,
+Masking artifacts.
+The RAPS is only generated for cubic volumes.
+
+Ref: User guide to the wwPDB EM validation reports
+7. Map analysis
+7.3 Rotationally averaged power spectrum
+
+    Example 1 - based on PDB entry 6RJH.
+&lt;PDBxv:pdbx_em_raw_rapsCategory&gt;
+   &lt;PDBxv:pdbx_em_raw_raps id="1"&gt;
+      &lt;PDBxv:power_scale&gt;log10&lt;/PDBxv:power_scale&gt;
+      &lt;PDBxv:power_title&gt;Intensity&lt;/PDBxv:power_title&gt;
+      &lt;PDBxv:spatial_frequency_title&gt;Spatial frequency&lt;/PDBxv:spatial_frequency_title&gt;
+      &lt;PDBxv:spatial_frequency_unit&gt;1/A&lt;/PDBxv:spatial_frequency_unit&gt;
+   &lt;/PDBxv:pdbx_em_raw_raps&gt;
+&lt;/PDBxv:pdbx_em_raw_rapsCategory&gt;
+
+
+         </xsd:documentation>
+    </xsd:annotation>
+    <xsd:sequence>
+      <xsd:element name="pdbx_em_raw_raps" minOccurs="0" maxOccurs="unbounded">
+        <xsd:complexType>
+          <xsd:all>
+            <xsd:element name="power_scale" minOccurs="0" maxOccurs="1" nillable="true" type="xsd:string">
+              <xsd:annotation>
+                <xsd:documentation xml:lang="en">
+A scale for the power axis of a Rotationally Averaged Power Spectrum
+(RAPS) plot.
+
+See also: https://www.wwpdb.org/validation/2017/EMValidationReportHelp#raps
+log10
+                        </xsd:documentation>
+              </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="power_title" minOccurs="1" maxOccurs="1" type="xsd:string">
+              <xsd:annotation>
+                <xsd:documentation xml:lang="en">
+A title for the power axis of a Rotationally Averaged Power Spectrum
+(RAPS) plot.
+
+See also: https://www.wwpdb.org/validation/2017/EMValidationReportHelp#raps
+Intensity
+                        </xsd:documentation>
+              </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="spatial_frequency_title" minOccurs="1" maxOccurs="1" type="xsd:string">
+              <xsd:annotation>
+                <xsd:documentation xml:lang="en">
+A title for the spatial frequency axis of a Rotationally Averaged
+Power Spectrum (RAPS) plot.
+
+See also: https://www.wwpdb.org/validation/2017/EMValidationReportHelp#raps
+Spatial frequency
+                        </xsd:documentation>
+              </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="spatial_frequency_unit" minOccurs="1" maxOccurs="1" type="xsd:string">
+              <xsd:annotation>
+                <xsd:documentation xml:lang="en">
+A unit for the spatial frequency axis of a Rotationally Averaged
+Power Spectrum (RAPS) plot.
+
+
+See also: https://www.wwpdb.org/validation/2017/EMValidationReportHelp#raps
+1/A
+                        </xsd:documentation>
+              </xsd:annotation>
+            </xsd:element>
+          </xsd:all>
+          <xsd:attribute name="id" use="required" type="xsd:int">
+            <xsd:annotation>
+              <xsd:documentation xml:lang="en">
+The value of attribute id in category pdbx_em_raw_raps must uniquely identify
+ each item in the PDBX_EM_RAW_RAPS list.
+
+This is an integer serial number.
+                     </xsd:documentation>
+            </xsd:annotation>
+          </xsd:attribute>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="pdbx_em_raw_raps_markerType">
+    <xsd:annotation>
+      <xsd:documentation xml:lang="en">
+Data items in the category record Rotationally Averaged Power Spectrum
+(RAPS) plot for raw EM volume (map).
+
+    Example 1 - based on PDB entry 6RJH.
+&lt;PDBxv:pdbx_em_raw_raps_markerCategory&gt;
+   &lt;PDBxv:pdbx_em_raw_raps_marker ordinal="1" plot_id="1"&gt;
+      &lt;PDBxv:power&gt;5.0361312138&lt;/PDBxv:power&gt;
+      &lt;PDBxv:spatial_frequency&gt;0&lt;/PDBxv:spatial_frequency&gt;
+   &lt;/PDBxv:pdbx_em_raw_raps_marker&gt;
+   &lt;PDBxv:pdbx_em_raw_raps_marker ordinal="2" plot_id="1"&gt;
+      &lt;PDBxv:power&gt;4.6874764273&lt;/PDBxv:power&gt;
+      &lt;PDBxv:spatial_frequency&gt;0.0045551653&lt;/PDBxv:spatial_frequency&gt;
+   &lt;/PDBxv:pdbx_em_raw_raps_marker&gt;
+   &lt;PDBxv:pdbx_em_raw_raps_marker ordinal="3" plot_id="1"&gt;
+      &lt;PDBxv:power&gt;4.0158584907&lt;/PDBxv:power&gt;
+      &lt;PDBxv:spatial_frequency&gt;0.0091103306&lt;/PDBxv:spatial_frequency&gt;
+   &lt;/PDBxv:pdbx_em_raw_raps_marker&gt;
+   &lt;PDBxv:pdbx_em_raw_raps_marker ordinal="4" plot_id="1"&gt;
+      &lt;PDBxv:power&gt;3.3080813094&lt;/PDBxv:power&gt;
+      &lt;PDBxv:spatial_frequency&gt;0.0136654959&lt;/PDBxv:spatial_frequency&gt;
+   &lt;/PDBxv:pdbx_em_raw_raps_marker&gt;
+   &lt;PDBxv:pdbx_em_raw_raps_marker ordinal="5" plot_id="1"&gt;
+      &lt;PDBxv:power&gt;3.3633413357&lt;/PDBxv:power&gt;
+      &lt;PDBxv:spatial_frequency&gt;0.0182206612&lt;/PDBxv:spatial_frequency&gt;
+   &lt;/PDBxv:pdbx_em_raw_raps_marker&gt;
+&lt;/PDBxv:pdbx_em_raw_raps_markerCategory&gt;
+
+
+         </xsd:documentation>
+    </xsd:annotation>
+    <xsd:sequence>
+      <xsd:element name="pdbx_em_raw_raps_marker" minOccurs="0" maxOccurs="unbounded">
+        <xsd:complexType>
+          <xsd:all>
+            <xsd:element name="power" minOccurs="1" maxOccurs="1" type="xsd:decimal">
+              <xsd:annotation>
+                <xsd:documentation xml:lang="en">
+The scaled power at a spatial frequency of Rotationally Averaged
+Power Spectrum (RAPS) plot, namely y-axis value of RAPS curve.
+
+RAPS is a measure of the distribution of power into spatial frequency
+(resolution) components composing raw EM volume.
+
+sum(N~i~ |F~i~|^2^)
+RAPS   = -------------------
+sum(N~i~)
+
+N~i~  = the number of all corresponding shell in Fourier space (spatial frequency)
+F~i~  = complex structure factor of raw 3D volume at a spatial frequency
+
+Summation is carried over corresponding shells in Fourier space (spatial frequency).
+
+See also: https://www.wwpdb.org/validation/2017/EMValidationReportHelp#raps
+                        </xsd:documentation>
+              </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="spatial_frequency" minOccurs="1" maxOccurs="1">
+              <xsd:annotation>
+                <xsd:documentation xml:lang="en">
+The spatial frequencies of Rotationally Averaged Power Spectrum (RAPS),
+namely x-axis value of RAPS curve.
+(See '_pdbx_em_raw_raps_marker.power')
+
+See also: https://www.wwpdb.org/validation/2017/EMValidationReportHelp#raps
+                        </xsd:documentation>
+              </xsd:annotation>
+              <xsd:simpleType>
+                <xsd:restriction base="xsd:decimal">
+                  <xsd:minInclusive value="0"/>
+                </xsd:restriction>
+              </xsd:simpleType>
+            </xsd:element>
+          </xsd:all>
+          <xsd:attribute name="ordinal" use="required" type="xsd:int">
+            <xsd:annotation>
+              <xsd:documentation xml:lang="en">
+The ordered number in the plot marker.
+                     </xsd:documentation>
+            </xsd:annotation>
+          </xsd:attribute>
+          <xsd:attribute name="plot_id" use="required" type="xsd:int">
+            <xsd:annotation>
+              <xsd:documentation xml:lang="en">
+Pointer to attribute id in category pdbx_em_raw_raps. 
                      </xsd:documentation>
             </xsd:annotation>
           </xsd:attribute>
@@ -48665,6 +48852,8 @@ identifier.
       <xsd:element name="pdbx_em_fsc_resolutionCategory" type="PDBxv:pdbx_em_fsc_resolutionType" minOccurs="0" maxOccurs="1"/>
       <xsd:element name="pdbx_em_rapsCategory" type="PDBxv:pdbx_em_rapsType" minOccurs="0" maxOccurs="1"/>
       <xsd:element name="pdbx_em_raps_markerCategory" type="PDBxv:pdbx_em_raps_markerType" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="pdbx_em_raw_rapsCategory" type="PDBxv:pdbx_em_raw_rapsType" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="pdbx_em_raw_raps_markerCategory" type="PDBxv:pdbx_em_raw_raps_markerType" minOccurs="0" maxOccurs="1"/>
       <xsd:element name="pdbx_em_validate_map_modelCategory" type="PDBxv:pdbx_em_validate_map_modelType" minOccurs="0" maxOccurs="1"/>
       <xsd:element name="pdbx_em_validate_map_model_entityCategory" type="PDBxv:pdbx_em_validate_map_model_entityType" minOccurs="0" maxOccurs="1"/>
       <xsd:element name="pdbx_em_validate_map_model_overallCategory" type="PDBxv:pdbx_em_validate_map_model_overallType" minOccurs="0" maxOccurs="1"/>
@@ -49686,6 +49875,19 @@ identifier.
     </xsd:keyref>
     <xsd:key name="pdbx_em_raps_markerKey_0">
       <xsd:selector xpath="PDBxv:pdbx_em_raps_markerCategory/PDBxv:pdbx_em_raps_marker"/>
+      <xsd:field xpath="@ordinal"/>
+      <xsd:field xpath="@plot_id"/>
+    </xsd:key>
+    <xsd:key name="pdbx_em_raw_rapsKey_0">
+      <xsd:selector xpath="PDBxv:pdbx_em_raw_rapsCategory/PDBxv:pdbx_em_raw_raps"/>
+      <xsd:field xpath="@id"/>
+    </xsd:key>
+    <xsd:keyref name="pdbx_em_raw_rapsKeyref_0_0_0_0" refer="PDBxv:pdbx_em_raw_rapsKey_0">
+      <xsd:selector xpath="PDBxv:pdbx_em_raw_raps_markerCategory/PDBxv:pdbx_em_raw_raps_marker"/>
+      <xsd:field xpath="@plot_id"/>
+    </xsd:keyref>
+    <xsd:key name="pdbx_em_raw_raps_markerKey_0">
+      <xsd:selector xpath="PDBxv:pdbx_em_raw_raps_markerCategory/PDBxv:pdbx_em_raw_raps_marker"/>
       <xsd:field xpath="@ordinal"/>
       <xsd:field xpath="@plot_id"/>
     </xsd:key>

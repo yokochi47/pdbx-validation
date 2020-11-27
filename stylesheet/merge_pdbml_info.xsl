@@ -640,6 +640,18 @@ Unmatched entry ID in both documents (<xsl:value-of select="$entry_id"/> and <xs
     </xsl:element>
   </xsl:template>
 
+  <xsl:template match="PDBxv:pdbx_em_raw_rapsCategory">
+    <xsl:element name="{name()}">
+      <xsl:apply-templates mode="category-element"/>
+    </xsl:element>
+  </xsl:template>
+
+  <xsl:template match="PDBxv:pdbx_em_raw_raps_markerCategory">
+    <xsl:element name="{name()}">
+      <xsl:apply-templates mode="category-element"/>
+    </xsl:element>
+  </xsl:template>
+
   <xsl:template match="PDBxv:pdbx_em_validate_map_modelCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>

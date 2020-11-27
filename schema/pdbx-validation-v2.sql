@@ -21,7 +21,7 @@
 --  map xsd date type to: sql date type
 --
 -- Statistics of schema:
---  Generated 263 tables (3340 fields), 0 views (0 fields), 0 attr groups, 0 model groups in total
+--  Generated 265 tables (3351 fields), 0 views (0 fields), 0 attr groups, 0 model groups in total
 --   Unnecessary tables by inlining simple content as a primitive data type:
 --    schema location: pdbx-validation-v2.xsd
 --      "S23_esd", chi5, residual_tilt, chi4, "F_squared_calc", "B_iso", chi1, chi3, chi2, pdbx_dist_value, "Luzzati_sigma_a_obs", min_mean_cross_sectional_radii_gyration_esd, pdbx_phase_calc_part_solvent, average_distance_constraint_violation, "B_iso_max", maximum_distance_constraint_violation, "L22_esd", distance_rms_dev, "L33", omega, "T22_esd", "F_calc", nominal_defocus_min, rotation_per_n_subunits, distance_rms_dev_medoid, bond_deviation, "aniso_B22", mean_guiner_radius, "Cartn_z", phase_calc, value, rmsd, "pdbx_F_calc_with_solvent", current, temp, "S13_esd", improper_torsion_angle_rms_dev, beta, "aniso_B33", "Luzzati_coordinate_error_free", angle_phi, energyfilter_lower, angle_kappa, "I", "A_calc", prot_cis, dist, tau4, detector_distance, "S32", "S32_esd", tau1, "L13", tau0, tau3, tau2, "Cartn_x_esd", "A_calc_au", pdbx_solvent_vdw_probe_radii, "T13_esd", atom_deviation, angle_value, diff_density_max_esd, "B_calc", taum, recording_temperature_maximum, covalent_bond_rms_dev, angle_omega, "S21", value_esd, "S33", "F_meas_sigma_au", tilt_angle_min, "L12_esd", calibrated_defocus_min, "L22", "T12_esd", gamma, peptide_planarity_rms_dev_error, "L23", scan_time_backgd, bond_angle_rms_dev, distance_rms_dev_error, pdbx_solvent_shrinkage_radii, clash_magnitude, upper_limit, concentration_range, power, "B_iso_mean", "L11", "S33_esd", "L12", "S31", delta, chamber_temperature, "F_meas", pdbx_collection_time_total, temperature, ambient_pressure_esd, dihedral_angle_target_value, average_torsion_angle_constraint_violation, origin_x, "B_iso_Wilson_estimate", "T23_esd", nu2, nu1, origin_y, nu0, origin_z, nu4, nu3, lower_limit, energyfilter_upper, "S12", "T33", dihedral_angle_value, "A_meas_au", neighbor_macromolecule_distance, "F_meas_au", bond_angle_rms_dev_error, "B_meas", phi, "L11_esd", "P", peptide_planarity_rms_dev, resolution, "Luzzati_sigma_a_free", "B_iso_min", "T11_esd", "T22", "F_meas_sigma", "S13", dihedral_angles_rms_dev_error, "pdbx_res_netI_over_sigmaI_2", "Luzzati_d_res_low_obs", diff_density_rms, maximum_lower_distance_constraint_violation, zeta, "B_calc_au", "S12_esd", "pdbx_F_calc_part_solvent", maximum_upper_distance_constraint_violation, "L13_esd", maximum_torsion_angle_constraint_violation, epsilon, pdbx_solvent_ion_probe_radii, "S22", angle_deviation, max_mean_cross_sectional_radii_gyration, pdbx_phase_calc_with_solvent, "S22_esd", diff_density_max, ambient_temp_esd, rise_per_n_subunits, alpha, "L23_esd", "S23", "S11", "F_squared_sigma", angle_target_value, min_mean_cross_sectional_radii_gyration, neighbor_ligand_distance, diff_density_min, "Cartn_x", "S31_esd", "aniso_B12", psi, "T13", "pdbx_res_netI_over_av_sigmaI_2", angle_psi, improper_torsion_angle, "F_squared_meas", "Cartn_y", "aniso_B11", "Cartn_y_esd", "aniso_B23", dihedral_angles_rms_dev, "L33_esd", "Luzzati_d_res_low_free", "T33_esd", angle_theta, scan_rate, "sigmaI", "Luzzati_coordinate_error_obs", "A_meas", voltage, angle_chi, "B_meas_au", recording_temperature_minimum, mean_guiner_radius_esd, "B_iso_esd", "Cartn_z_esd", diff_density_min_esd, "T11", phase_meas, "T23", nominal_defocus_max, "S21_esd", "F_calc_au", diff_density_rms_esd, max_mean_cross_sectional_radii_gyration_esd, tilt_angle_max, covalent_bond_rms_dev_error, "S11_esd", "aniso_B13", "T12", sampling_size, improper_torsion_angle_rms_dev_error
@@ -30,17 +30,17 @@
 --   Schema locations:
 --    pdbx-validation-v2.xsd
 --   Table types:
---    0 root, 0 root children, 0 admin roots, 263 admin children
+--    0 root, 0 root children, 0 admin roots, 265 admin children
 --   System keys:
 --    0 primary keys (0 unique constraints), 0 foreign keys, 0 nested keys (0 as attribute, 0 as attribute group)
 --   User keys:
---    216 document keys, 0 serial keys, 0 xpath keys
+--    218 document keys, 0 serial keys, 0 xpath keys
 --   Contents:
---    458 attributes (42 in-place document keys), 2666 elements (5 in-place document keys), 0 simple contents (0 in-place document keys, 0 as attribute, 0 as conditional attribute)
+--    461 attributes (42 in-place document keys), 2672 elements (5 in-place document keys), 0 simple contents (0 in-place document keys, 0 as attribute, 0 as conditional attribute)
 --   Wild cards:
 --    0 any elements, 0 any attributes
 --   Constraints:
---    263 unique constraints from xsd:key, 1 unique constraints from xsd:unique, 143 foreign key constraints from xsd:keyref
+--    265 unique constraints from xsd:key, 1 unique constraints from xsd:unique, 144 foreign key constraints from xsd:keyref
 --
 
 --
@@ -135,6 +135,7 @@ DROP TABLE IF EXISTS pdbx_em_fsc_curve_marker CASCADE;
 DROP TABLE IF EXISTS pdbx_em_fsc_cutoff_curve_marker CASCADE;
 DROP TABLE IF EXISTS pdbx_em_fsc_resolution CASCADE;
 DROP TABLE IF EXISTS pdbx_em_raps_marker CASCADE;
+DROP TABLE IF EXISTS pdbx_em_raw_raps_marker CASCADE;
 DROP TABLE IF EXISTS pdbx_em_validate_map_model CASCADE;
 DROP TABLE IF EXISTS pdbx_em_validate_map_model_entity CASCADE;
 DROP TABLE IF EXISTS pdbx_em_validate_map_model_overall CASCADE;
@@ -279,6 +280,7 @@ DROP TABLE IF EXISTS pdbx_domain CASCADE;
 DROP TABLE IF EXISTS pdbx_em_atom_inclusion CASCADE;
 DROP TABLE IF EXISTS pdbx_em_density_distribution CASCADE;
 DROP TABLE IF EXISTS pdbx_em_raps CASCADE;
+DROP TABLE IF EXISTS pdbx_em_raw_raps CASCADE;
 DROP TABLE IF EXISTS pdbx_em_volume_estimate CASCADE;
 DROP TABLE IF EXISTS pdbx_refine_tls CASCADE;
 DROP TABLE IF EXISTS pdbx_struct_assembly CASCADE;
@@ -905,11 +907,28 @@ CREATE TABLE pdbx_em_density_distribution (
 
 --
 -- (quoted from pdbx_em_rapsType)
--- Data items in the category record Rotationally Averaged Power Spectrum (RAPS). The RAPS provides insight into the data processing steps leading to the map, in terms of: CTF correction, Temperature factor correction, Low and/or high-pass filtering, Masking artifacts. The RAPS is only generated for cubic volumes. Ref: User guide to the wwPDB EM validation reports 7. Map analysis 7.3 Rotationally averaged power spectrum Example 1 - based on PDB entry 6RJH. <PDBxv:pdbx_em_rapsCategory> <PDBxv:pdbx_em_raps id="1"> <PDBxv:power_scale>log10</PDBxv:power_scale> <PDBxv:power_title>Intensity</PDBxv:power_title> <PDBxv:spatial_frequency_title>Spatial frequency</PDBxv:spatial_frequency_title> <PDBxv:spatial_frequency_unit>1/A</PDBxv:spatial_frequency_unit> </PDBxv:pdbx_em_raps> </PDBxv:pdbx_em_rapsCategory>
+-- Data items in the category record Rotationally Averaged Power Spectrum (RAPS) for the primary EM volume (map). The RAPS provides insight into the data processing steps leading to the map, in terms of: CTF correction, Temperature factor correction, Low and/or high-pass filtering, Masking artifacts. The RAPS is only generated for cubic volumes. Ref: User guide to the wwPDB EM validation reports 7. Map analysis 7.3 Rotationally averaged power spectrum Example 1 - based on PDB entry 6RJH. <PDBxv:pdbx_em_rapsCategory> <PDBxv:pdbx_em_raps id="1"> <PDBxv:power_scale>log10</PDBxv:power_scale> <PDBxv:power_title>Intensity</PDBxv:power_title> <PDBxv:spatial_frequency_title>Spatial frequency</PDBxv:spatial_frequency_title> <PDBxv:spatial_frequency_unit>1/A</PDBxv:spatial_frequency_unit> </PDBxv:pdbx_em_raps> </PDBxv:pdbx_em_rapsCategory>
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v2.xsd (PDBxv), schema location: pdbx-validation-v2.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_em_raps (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	entry_id TEXT ,
+	power_scale TEXT ,
+	power_title TEXT ,
+	spatial_frequency_title TEXT ,
+	spatial_frequency_unit TEXT ,
+-- ATTRIBUTE
+	id INTEGER NOT NULL
+);
+
+--
+-- (quoted from pdbx_em_raw_rapsType)
+-- Data items in the category record Rotationally Averaged Power Spectrum (RAPS) for raw EM volume (map). The RAPS provides insight into the data processing steps leading to the map, in terms of: CTF correction, Temperature factor correction, Low and/or high-pass filtering, Masking artifacts. The RAPS is only generated for cubic volumes. Ref: User guide to the wwPDB EM validation reports 7. Map analysis 7.3 Rotationally averaged power spectrum Example 1 - based on PDB entry 6RJH. <PDBxv:pdbx_em_raw_rapsCategory> <PDBxv:pdbx_em_raw_raps id="1"> <PDBxv:power_scale>log10</PDBxv:power_scale> <PDBxv:power_title>Intensity</PDBxv:power_title> <PDBxv:spatial_frequency_title>Spatial frequency</PDBxv:spatial_frequency_title> <PDBxv:spatial_frequency_unit>1/A</PDBxv:spatial_frequency_unit> </PDBxv:pdbx_em_raw_raps> </PDBxv:pdbx_em_raw_rapsCategory>
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v2.xsd (PDBxv), schema location: pdbx-validation-v2.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE pdbx_em_raw_raps (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	entry_id TEXT ,
 	power_scale TEXT ,
@@ -3669,11 +3688,29 @@ CREATE TABLE pdbx_em_fsc_resolution (
 
 --
 -- (quoted from pdbx_em_raps_markerType)
--- Data items in the category record Rotationally Averaged Power Spectrum (RAPS) plot. Example 1 - based on PDB entry 6RJH. <PDBxv:pdbx_em_raps_markerCategory> <PDBxv:pdbx_em_raps_marker ordinal="1" plot_id="1"> <PDBxv:power>5.0361312138</PDBxv:power> <PDBxv:spatial_frequency>0</PDBxv:spatial_frequency> </PDBxv:pdbx_em_raps_marker> <PDBxv:pdbx_em_raps_marker ordinal="2" plot_id="1"> <PDBxv:power>4.6874764273</PDBxv:power> <PDBxv:spatial_frequency>0.0045551653</PDBxv:spatial_frequency> </PDBxv:pdbx_em_raps_marker> <PDBxv:pdbx_em_raps_marker ordinal="3" plot_id="1"> <PDBxv:power>4.0158584907</PDBxv:power> <PDBxv:spatial_frequency>0.0091103306</PDBxv:spatial_frequency> </PDBxv:pdbx_em_raps_marker> <PDBxv:pdbx_em_raps_marker ordinal="4" plot_id="1"> <PDBxv:power>3.3080813094</PDBxv:power> <PDBxv:spatial_frequency>0.0136654959</PDBxv:spatial_frequency> </PDBxv:pdbx_em_raps_marker> <PDBxv:pdbx_em_raps_marker ordinal="5" plot_id="1"> <PDBxv:power>3.3633413357</PDBxv:power> <PDBxv:spatial_frequency>0.0182206612</PDBxv:spatial_frequency> </PDBxv:pdbx_em_raps_marker> </PDBxv:pdbx_em_raps_markerCategory>
+-- Data items in the category record Rotationally Averaged Power Spectrum (RAPS) plot for the primary EM volume (map). Example 1 - based on PDB entry 6RJH. <PDBxv:pdbx_em_raps_markerCategory> <PDBxv:pdbx_em_raps_marker ordinal="1" plot_id="1"> <PDBxv:power>5.0361312138</PDBxv:power> <PDBxv:spatial_frequency>0</PDBxv:spatial_frequency> </PDBxv:pdbx_em_raps_marker> <PDBxv:pdbx_em_raps_marker ordinal="2" plot_id="1"> <PDBxv:power>4.6874764273</PDBxv:power> <PDBxv:spatial_frequency>0.0045551653</PDBxv:spatial_frequency> </PDBxv:pdbx_em_raps_marker> <PDBxv:pdbx_em_raps_marker ordinal="3" plot_id="1"> <PDBxv:power>4.0158584907</PDBxv:power> <PDBxv:spatial_frequency>0.0091103306</PDBxv:spatial_frequency> </PDBxv:pdbx_em_raps_marker> <PDBxv:pdbx_em_raps_marker ordinal="4" plot_id="1"> <PDBxv:power>3.3080813094</PDBxv:power> <PDBxv:spatial_frequency>0.0136654959</PDBxv:spatial_frequency> </PDBxv:pdbx_em_raps_marker> <PDBxv:pdbx_em_raps_marker ordinal="5" plot_id="1"> <PDBxv:power>3.3633413357</PDBxv:power> <PDBxv:spatial_frequency>0.0182206612</PDBxv:spatial_frequency> </PDBxv:pdbx_em_raps_marker> </PDBxv:pdbx_em_raps_markerCategory>
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v2.xsd (PDBxv), schema location: pdbx-validation-v2.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE pdbx_em_raps_marker (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	entry_id TEXT ,
+	power DECIMAL ,
+-- xsd:restriction/xsd:minInclusive="0"
+	spatial_frequency DECIMAL CHECK ( spatial_frequency >= 0 ) ,
+-- ATTRIBUTE
+	ordinal INTEGER NOT NULL ,
+-- ATTRIBUTE
+	plot_id INTEGER NOT NULL
+);
+
+--
+-- (quoted from pdbx_em_raw_raps_markerType)
+-- Data items in the category record Rotationally Averaged Power Spectrum (RAPS) plot for raw EM volume (map). Example 1 - based on PDB entry 6RJH. <PDBxv:pdbx_em_raw_raps_markerCategory> <PDBxv:pdbx_em_raw_raps_marker ordinal="1" plot_id="1"> <PDBxv:power>5.0361312138</PDBxv:power> <PDBxv:spatial_frequency>0</PDBxv:spatial_frequency> </PDBxv:pdbx_em_raw_raps_marker> <PDBxv:pdbx_em_raw_raps_marker ordinal="2" plot_id="1"> <PDBxv:power>4.6874764273</PDBxv:power> <PDBxv:spatial_frequency>0.0045551653</PDBxv:spatial_frequency> </PDBxv:pdbx_em_raw_raps_marker> <PDBxv:pdbx_em_raw_raps_marker ordinal="3" plot_id="1"> <PDBxv:power>4.0158584907</PDBxv:power> <PDBxv:spatial_frequency>0.0091103306</PDBxv:spatial_frequency> </PDBxv:pdbx_em_raw_raps_marker> <PDBxv:pdbx_em_raw_raps_marker ordinal="4" plot_id="1"> <PDBxv:power>3.3080813094</PDBxv:power> <PDBxv:spatial_frequency>0.0136654959</PDBxv:spatial_frequency> </PDBxv:pdbx_em_raw_raps_marker> <PDBxv:pdbx_em_raw_raps_marker ordinal="5" plot_id="1"> <PDBxv:power>3.3633413357</PDBxv:power> <PDBxv:spatial_frequency>0.0182206612</PDBxv:spatial_frequency> </PDBxv:pdbx_em_raw_raps_marker> </PDBxv:pdbx_em_raw_raps_markerCategory>
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v2.xsd (PDBxv), schema location: pdbx-validation-v2.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE pdbx_em_raw_raps_marker (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	entry_id TEXT ,
 	power DECIMAL ,
@@ -8243,6 +8280,12 @@ CREATE TABLE symmetry_equiv (
 -- (derived from xsd:key[@name='pdbx_em_raps_markerKey_0'])
 --ALTER TABLE pdbx_em_raps_marker ADD CONSTRAINT UNQ_pdbx_em_raps_marker UNIQUE ( entry_id, ordinal, plot_id );
 
+-- (derived from xsd:key[@name='pdbx_em_raw_rapsKey_0'])
+--ALTER TABLE pdbx_em_raw_raps ADD CONSTRAINT UNQ_pdbx_em_raw_raps UNIQUE ( entry_id, id );
+
+-- (derived from xsd:key[@name='pdbx_em_raw_raps_markerKey_0'])
+--ALTER TABLE pdbx_em_raw_raps_marker ADD CONSTRAINT UNQ_pdbx_em_raw_raps_marker UNIQUE ( entry_id, ordinal, plot_id );
+
 -- (derived from xsd:key[@name='pdbx_em_validate_map_modelKey_0'])
 --ALTER TABLE pdbx_em_validate_map_model ADD CONSTRAINT UNQ_pdbx_em_validate_map_model UNIQUE ( entry_id, id );
 
@@ -9022,6 +9065,9 @@ CREATE TABLE symmetry_equiv (
 
 -- (derived from xsd:keyref[@name='pdbx_em_rapsKeyref_0_0_0_0'])
 --ALTER TABLE pdbx_em_raps_marker ADD CONSTRAINT KR_pdbx_em_rapsKeyref_0_0_0_0 FOREIGN KEY ( plot_id ) REFERENCES pdbx_em_raps ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
+
+-- (derived from xsd:keyref[@name='pdbx_em_raw_rapsKeyref_0_0_0_0'])
+--ALTER TABLE pdbx_em_raw_raps_marker ADD CONSTRAINT KR_pdbx_em_raw_rapsKeyref_0_0_0_0 FOREIGN KEY ( plot_id ) REFERENCES pdbx_em_raw_raps ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
 -- (derived from xsd:keyref[@name='pdbx_em_volume_estimateKeyref_0_0_0_0'])
 --ALTER TABLE pdbx_em_volume_estimate_marker ADD CONSTRAINT KR_pdbx_em_volume_estimateKeyref_0_0_0_0 FOREIGN KEY ( plot_id ) REFERENCES pdbx_em_volume_estimate ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
