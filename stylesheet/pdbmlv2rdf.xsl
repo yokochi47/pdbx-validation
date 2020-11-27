@@ -320,14 +320,6 @@
         </PDBov:reference_to_diffrn>
         <!-- diffrnKeyref_0_0_5_0 -->
       </xsl:if>
-      <xsl:if test="PDBxv:scale_group_code!=''">
-        <PDBov:reference_to_diffrn_scale_group>
-	  <rdf:Description  rdf:about="{$base}/diffrn_scale_group/{translate(PDBxv:scale_group_code,' ^','_')}">
-	    <PDBov:referenced_by_diffrn_refln rdf:resource="{$base}/diffrn_refln/{translate(@diffrn_id,' ^','_')},{translate(@id,' ^','_')}"/>
-	  </rdf:Description>
-        </PDBov:reference_to_diffrn_scale_group>
-        <!-- diffrn_scale_groupKeyref_0_0_0_0 -->
-      </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
       <xsl:apply-templates/>
@@ -942,6 +934,26 @@
       <xsl:apply-templates mode="linked"/>
       </PDBov:em_virus_shell>
       </PDBov:has_em_virus_shell>
+  </xsl:template>
+
+  <xsl:template match="PDBxv:datablock/PDBxv:em_virus_syntheticCategory/PDBxv:em_virus_synthetic">
+      <PDBov:has_em_virus_synthetic>
+      <PDBov:em_virus_synthetic rdf:about="{$base}/em_virus_synthetic/{translate(@entity_assembly_id,' ^','_')},{translate(@id,' ^','_')}">
+      <PDBov:of_datablock rdf:resource="{$base}"/>
+      <xsl:if test="@entity_assembly_id!=''">
+        <PDBov:reference_to_em_entity_assembly>
+	  <rdf:Description  rdf:about="{$base}/em_entity_assembly/{translate(@entity_assembly_id,' ^','_')}">
+	    <PDBov:referenced_by_em_virus_synthetic rdf:resource="{$base}/em_virus_synthetic/{translate(@entity_assembly_id,' ^','_')},{translate(@id,' ^','_')}"/>
+	  </rdf:Description>
+        </PDBov:reference_to_em_entity_assembly>
+        <!-- em_entity_assemblyKeyref_0_0_7_0 -->
+      </xsl:if>
+      <xsl:apply-templates select="@*"/>
+      <xsl:apply-templates select="@*" mode="linked"/>
+      <xsl:apply-templates/>
+      <xsl:apply-templates mode="linked"/>
+      </PDBov:em_virus_synthetic>
+      </PDBov:has_em_virus_synthetic>
   </xsl:template>
 
   <xsl:template match="PDBxv:datablock/PDBxv:em_vitrificationCategory/PDBxv:em_vitrification">
