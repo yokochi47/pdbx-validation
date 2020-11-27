@@ -1,7 +1,7 @@
 ###########################################################################
 #
 # File:  mmcif_pdbx_validation-v2.dic
-# Data:  Fri Nov 27 18:01:16 JST 2020
+# Data:  Fri Nov 27 18:56:16 JST 2020
 #
 # Created from:
 #        mmcif_pdbx_v50.dic   - PDB Exchange Data Dictionary (V5.336)
@@ -765,6 +765,9 @@ data_mmcif_pdbx_validation.dic
 ;
   2.336   2020-11-27
 ;
+      + Support EM validation in wwPDB validation report XML Schema v004 (2020-10-16)
+        + Add '_pdbx_em_raw_raps' category that records Rotationally Averaged Power Spectrum (RAPS) for raw map.
+        + Add '_pdbx_em_raw_raps_marker' category that records Rotationally Averaged Power Spectrum (RAPS) plot for raw map.
 >     + Create category _em_virus_synthetic # added
 >     + Add 'TFE' to _pdbx_nmr_chem_shift_ref.mol_common_name enumeration # not mapped
 >     + Update funding enumerations # not mapped
@@ -64054,7 +64057,7 @@ save_
 save_pdbx_em_raps
     _category.description
 ;              Data items in the category record Rotationally Averaged Power Spectrum
-               (RAPS). The RAPS provides insight into the data processing steps
+               (RAPS) for the primary EM volume (map). The RAPS provides insight into the data processing steps
                leading to the map, in terms of:
                 CTF correction,
                 Temperature factor correction,
@@ -64183,7 +64186,7 @@ save_
 save_pdbx_em_raps_marker
     _category.description
 ;              Data items in the category record Rotationally Averaged Power Spectrum
-               (RAPS) plot.
+               (RAPS) plot for the primary EM volume (map).
 ;
     _category.id                  pdbx_em_raps_marker
     _category.mandatory_code      no
@@ -64294,6 +64297,257 @@ save__pdbx_em_raps_marker.spatial_frequency
                                   0.0   .
 #
     _pdbx_item_aliases.xpath     '/wwPDB-validation-information/EM_validation/rotationally_averaged_power_spectrum/coordinate/@x'
+    _pdbx_item_aliases.schema     wwpdb_validation_v004.xsd
+    _pdbx_item_aliases.version    v004
+save_
+
+######################
+## PDBX_EM_RAW_RAPS ##
+######################
+
+save_pdbx_em_raw_raps
+    _category.description
+;              Data items in the category record Rotationally Averaged Power Spectrum
+               (RAPS) for raw EM volume (map). The RAPS provides insight into the data processing steps
+               leading to the map, in terms of:
+                CTF correction,
+                Temperature factor correction,
+                Low and/or high-pass filtering,
+                Masking artifacts.
+               The RAPS is only generated for cubic volumes.
+
+               Ref: User guide to the wwPDB EM validation reports
+                7. Map analysis
+                 7.3 Rotationally averaged power spectrum
+;
+    _category.id                  pdbx_em_raw_raps
+    _category.mandatory_code      no
+    _category_key.name          '_pdbx_em_raw_raps.id'
+    loop_
+    _category_group.id           'inclusive_group'
+                                 'em_group'
+                                 'validate_vtf_group'
+    loop_
+    _category_examples.detail
+    _category_examples.case
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+;
+    Example 1 - based on PDB entry 6RJH.
+;
+;
+    _pdbx_em_raw_raps.id                        1
+    _pdbx_em_raw_raps.spatial_frequency_title   'Spatial frequency'
+    _pdbx_em_raw_raps.power_title               Intensity
+    _pdbx_em_raw_raps.spatial_frequency_unit    1/A
+    _pdbx_em_raw_raps.power_scale               log10
+;
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+save_
+
+save__pdbx_em_raw_raps.id
+    _item_description.description
+;              The value of _pdbx_em_raw_raps.id must uniquely identify
+               each item in the PDBX_EM_RAW_RAPS list.
+
+               This is an integer serial number.
+;
+    _item.name                  '_pdbx_em_raw_raps.id'
+    _item.category_id             pdbx_em_raw_raps
+    _item.mandatory_code          yes
+    _item_type.code               int
+save_
+
+save__pdbx_em_raw_raps.spatial_frequency_title
+    _item_description.description
+;              A title for the spatial frequency axis of a Rotationally Averaged
+               Power Spectrum (RAPS) plot.
+
+               See also: https://www.wwpdb.org/validation/2017/EMValidationReportHelp#raps
+;
+    _item.name                  '_pdbx_em_raw_raps.spatial_frequency_title'
+    _item.category_id             pdbx_em_raw_raps
+    _item.mandatory_code          yes
+    _item_type.code               text
+    _item_examples.case          'Spatial frequency'
+#
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/EM_validation/raw_map_rotationally_averaged_power_spectrum/@xTitle'
+    _pdbx_item_aliases.schema     wwpdb_validation_v004.xsd
+    _pdbx_item_aliases.version    v004
+save_
+
+save__pdbx_em_raw_raps.spatial_frequency_unit
+    _item_description.description
+;              A unit for the spatial frequency axis of a Rotationally Averaged
+               Power Spectrum (RAPS) plot.
+
+
+               See also: https://www.wwpdb.org/validation/2017/EMValidationReportHelp#raps
+;
+    _item.name                  '_pdbx_em_raw_raps.spatial_frequency_unit'
+    _item.category_id             pdbx_em_raw_raps
+    _item.mandatory_code          yes
+    _item_type.code               text
+    _item_examples.case          '1/A'
+#
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/EM_validation/raw_map_rotationally_averaged_power_spectrum/@xUnit'
+    _pdbx_item_aliases.schema     wwpdb_validation_v004.xsd
+    _pdbx_item_aliases.version    v004
+save_
+
+save__pdbx_em_raw_raps.power_title
+    _item_description.description
+;              A title for the power axis of a Rotationally Averaged Power Spectrum
+               (RAPS) plot.
+
+               See also: https://www.wwpdb.org/validation/2017/EMValidationReportHelp#raps
+;
+    _item.name                  '_pdbx_em_raw_raps.power_title'
+    _item.category_id             pdbx_em_raw_raps
+    _item.mandatory_code          yes
+    _item_type.code               text
+    _item_examples.case          'Intensity'
+#
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/EM_validation/raw_map_rotationally_averaged_power_spectrum/@yTitle'
+    _pdbx_item_aliases.schema     wwpdb_validation_v004.xsd
+    _pdbx_item_aliases.version    v004
+save_
+
+save__pdbx_em_raw_raps.power_scale
+    _item_description.description
+;              A scale for the power axis of a Rotationally Averaged Power Spectrum
+               (RAPS) plot.
+
+               See also: https://www.wwpdb.org/validation/2017/EMValidationReportHelp#raps
+;
+    _item.name                  '_pdbx_em_raw_raps.power_scale'
+    _item.category_id             pdbx_em_raw_raps
+    _item.mandatory_code          no
+    _item_type.code               text
+    _item_examples.case          'log10'
+#
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/EM_validation/raw_map_rotationally_averaged_power_spectrum/@yScale'
+    _pdbx_item_aliases.schema     wwpdb_validation_v004.xsd
+    _pdbx_item_aliases.version    v004
+save_
+
+#############################
+## PDBX_EM_RAW_RAPS_MARKER ##
+#############################
+
+save_pdbx_em_raw_raps_marker
+    _category.description
+;              Data items in the category record Rotationally Averaged Power Spectrum
+               (RAPS) plot for raw EM volume (map).
+;
+    _category.id                  pdbx_em_raw_raps_marker
+    _category.mandatory_code      no
+    loop_
+    _category_key.name          '_pdbx_em_raw_raps_marker.plot_id'
+                                '_pdbx_em_raw_raps_marker.ordinal'
+    loop_
+    _category_group.id           'inclusive_group'
+                                 'em_group'
+                                 'validate_vtf_group'
+    loop_
+    _category_examples.detail
+    _category_examples.case
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+;
+    Example 1 - based on PDB entry 6RJH.
+;
+;
+    loop_
+    _pdbx_em_raw_raps_marker.plot_id
+    _pdbx_em_raw_raps_marker.ordinal
+    _pdbx_em_raw_raps_marker.spatial_frequency
+    _pdbx_em_raw_raps_marker.power
+    1 1   0            5.0361312138
+    1 2   0.0045551653 4.6874764273
+    1 3   0.0091103306 4.0158584907
+    1 4   0.0136654959 3.3080813094
+    1 5   0.0182206612 3.3633413357
+;
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+save_
+
+save__pdbx_em_raw_raps_marker.plot_id
+    _item_description.description
+;              Pointer to _pdbx_em_raw_raps.id.
+;
+    _item.name                  '_pdbx_em_raw_raps_marker.plot_id'
+    _item.category_id             pdbx_em_raw_raps_marker
+    _item.mandatory_code          yes
+    _item_linked.child_name     '_pdbx_em_raw_raps_marker.plot_id'
+    _item_linked.parent_name    '_pdbx_em_raw_raps.id'
+    _item_type.code               int
+#
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/EM_validation/raw_map_rotationally_averaged_power_spectrum'
+    _pdbx_item_aliases.schema     wwpdb_validation_v004.xsd
+    _pdbx_item_aliases.version    v004
+save_
+
+save__pdbx_em_raw_raps_marker.ordinal
+    _item_description.description
+;              The ordered number in the plot marker.
+;
+    _item.name                  '_pdbx_em_raw_raps_marker.ordinal'
+    _item.category_id             pdbx_em_raw_raps_marker
+    _item.mandatory_code          yes
+    _item_type.code               int
+#
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/EM_validation/raw_map_rotationally_averaged_power_spectrum/coodinate'
+    _pdbx_item_aliases.schema     wwpdb_validation_v004.xsd
+    _pdbx_item_aliases.version    v004
+save_
+
+save__pdbx_em_raw_raps_marker.power
+    _item_description.description
+;              The scaled power at a spatial frequency of Rotationally Averaged
+               Power Spectrum (RAPS) plot, namely y-axis value of RAPS curve.
+
+               RAPS is a measure of the distribution of power into spatial frequency
+               (resolution) components composing raw EM volume.
+
+                        sum(N~i~ |F~i~|^2^)
+               RAPS   = -------------------
+                        sum(N~i~)
+
+               N~i~  = the number of all corresponding shell in Fourier space (spatial frequency)
+               F~i~  = complex structure factor of raw 3D volume at a spatial frequency
+
+               Summation is carried over corresponding shells in Fourier space (spatial frequency).
+
+               See also: https://www.wwpdb.org/validation/2017/EMValidationReportHelp#raps
+;
+    _item.name                  '_pdbx_em_raw_raps_marker.power'
+    _item.category_id             pdbx_em_raw_raps_marker
+    _item.mandatory_code          yes
+    _item_type.code               float
+#
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/EM_validation/raw_map_rotationally_averaged_power_spectrum/coordinate/@y'
+    _pdbx_item_aliases.schema     wwpdb_validation_v004.xsd
+    _pdbx_item_aliases.version    v004
+save_
+
+save__pdbx_em_raw_raps_marker.spatial_frequency
+    _item_description.description
+;              The spatial frequencies of Rotationally Averaged Power Spectrum (RAPS),
+               namely x-axis value of RAPS curve.
+               (See '_pdbx_em_raw_raps_marker.power')
+
+               See also: https://www.wwpdb.org/validation/2017/EMValidationReportHelp#raps
+;
+    _item.name                  '_pdbx_em_raw_raps_marker.spatial_frequency'
+    _item.category_id             pdbx_em_raw_raps_marker
+    _item.mandatory_code          yes
+    _item_type.code               float
+    loop_
+    _item_range.minimum
+    _item_range.maximum
+                                  0.0  0.0
+                                  0.0   .
+#
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/EM_validation/raw_map_rotationally_averaged_power_spectrum/coordinate/@x'
     _pdbx_item_aliases.schema     wwpdb_validation_v004.xsd
     _pdbx_item_aliases.version    v004
 save_
@@ -66905,6 +67159,7 @@ pdbx_entity_branch_descriptor       1   pdbx_entity_branch_descriptor:entity:1  
 pdbx_em_density_distribution_marker 1   pdbx_em_density_distribution_marker:pdbx_em_density_distribution:1        . .
 pdbx_em_volume_estimate_marker      1   pdbx_em_volume_estimate_marker:pdbx_em_volume_estimate:1                  . .
 pdbx_em_raps_marker                 1   pdbx_em_raps_marker:pdbx_em_raps:1                                        . .
+pdbx_em_raw_raps_marker             1   pdbx_em_raw_raps_marker:pdbx_em_raw_raps:1                                . .
 pdbx_em_fsc_resolution              1   pdbx_em_fsc_resolution:pdbx_em_fsc_curve:1                                . .
 pdbx_em_fsc_resolution              2   pdbx_em_fsc_resolution:pdbx_em_fsc_cutoff_curve:2                         . .
 pdbx_em_fsc_curve_marker            1   pdbx_em_fsc_curve_marker:pdbx_em_fsc_curve:1                              . .
@@ -67217,6 +67472,7 @@ pdbx_entity_branch_descriptor       1   '_pdbx_entity_branch_descriptor.entity_i
 pdbx_em_density_distribution_marker 1   '_pdbx_em_density_distribution_marker.plot_id'         '_pdbx_em_density_distribution.id'                 pdbx_em_density_distribution
 pdbx_em_volume_estimate_marker      1   '_pdbx_em_volume_estimate_marker.plot_id'              '_pdbx_em_volume_estimate.id'                      pdbx_em_volume_estimate
 pdbx_em_raps_marker                 1   '_pdbx_em_raps_marker.plot_id'                         '_pdbx_em_raps.id'                                 pdbx_em_raps
+pdbx_em_raw_raps_marker             1   '_pdbx_em_raw_raps_marker.plot_id'                     '_pdbx_em_raw_raps.id'                             pdbx_em_raw_raps
 pdbx_em_fsc_resolution              1   '_pdbx_em_fsc_resolution.fsc_curve_id'                 '_pdbx_em_fsc_curve.id'                            pdbx_em_fsc_curve
 pdbx_em_fsc_resolution              2   '_pdbx_em_fsc_resolution.fsc_cutoff_curve_id'          '_pdbx_em_fsc_cutoff_curve.id'                     pdbx_em_fsc_cutoff_curve
 pdbx_em_fsc_curve_marker            1   '_pdbx_em_fsc_curve_marker.plot_id'                    '_pdbx_em_fsc_curve.id'                            pdbx_em_fsc_curve

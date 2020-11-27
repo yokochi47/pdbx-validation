@@ -582,6 +582,30 @@ Unmatched entry ID in both documents (<xsl:value-of select="$entry_id"/> and <xs
     </PDBxv:pdbx_em_raps_markerCategory>
   </xsl:template>
 
+  <xsl:template match="raw_map_rotationally_averaged_power_spectrum">
+    <PDBxv:pdbx_em_raw_rapsCategory>
+      <PDBxv:pdbx_em_raw_raps id="1">
+        <PDBxv:spatial_frequency_title><xsl:value-of select="@xTitle"/></PDBxv:spatial_frequency_title>
+        <PDBxv:power_title><xsl:value-of select="@yTitle"/></PDBxv:power_title>
+        <xsl:if test="@xUnit">
+          <PDBxv:spatial_frequency_unit><xsl:value-of select="@xUnit"/></PDBxv:spatial_frequency_unit>
+        </xsl:if>
+        <xsl:if test="@yScale">
+          <PDBxv:power_scale><xsl:value-of select="@yScale"/></PDBxv:power_scale>
+        </xsl:if>
+      </PDBxv:pdbx_em_raw_raps>
+    </PDBxv:pdbx_em_raw_rapsCategory>
+    <PDBxv:pdbx_em_raw_raps_markerCategory>
+      <xsl:for-each select="coordinate">
+        <xsl:sort select="number(@x)" data-type="number"/>
+        <PDBxv:pdbx_em_raw_raps_marker plot_id="1" ordinal="{position()}">
+          <PDBxv:spatial_frequency><xsl:value-of select="number(@x)"/></PDBxv:spatial_frequency>
+          <PDBxv:power><xsl:value-of select="number(@y)"/></PDBxv:power>
+        </PDBxv:pdbx_em_raw_raps_marker>
+      </xsl:for-each>
+    </PDBxv:pdbx_em_raw_raps_markerCategory>
+  </xsl:template>
+
   <xsl:template match="fsc">
     <xsl:apply-templates/>
   </xsl:template>

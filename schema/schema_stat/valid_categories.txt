@@ -97,6 +97,8 @@ pdbx_em_fsc_cutoff_curve_marker
 pdbx_em_fsc_resolution
 pdbx_em_raps
 pdbx_em_raps_marker
+pdbx_em_raw_raps
+pdbx_em_raw_raps_marker
 pdbx_em_validate_map_model
 pdbx_em_validate_map_model_entity
 pdbx_em_validate_map_model_overall
