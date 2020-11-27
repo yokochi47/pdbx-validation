@@ -21,7 +21,7 @@
 --  map xsd date type to: sql date type
 --
 -- Statistics of schema:
---  Generated 262 tables (3334 fields), 0 views (0 fields), 0 attr groups, 0 model groups in total
+--  Generated 263 tables (3340 fields), 0 views (0 fields), 0 attr groups, 0 model groups in total
 --   Unnecessary tables by inlining simple content as a primitive data type:
 --    schema location: pdbx-validation-v2.xsd
 --      "S23_esd", chi5, residual_tilt, chi4, "F_squared_calc", "B_iso", chi1, chi3, chi2, pdbx_dist_value, "Luzzati_sigma_a_obs", min_mean_cross_sectional_radii_gyration_esd, pdbx_phase_calc_part_solvent, average_distance_constraint_violation, "B_iso_max", maximum_distance_constraint_violation, "L22_esd", distance_rms_dev, "L33", omega, "T22_esd", "F_calc", nominal_defocus_min, rotation_per_n_subunits, distance_rms_dev_medoid, bond_deviation, "aniso_B22", mean_guiner_radius, "Cartn_z", phase_calc, value, rmsd, "pdbx_F_calc_with_solvent", current, temp, "S13_esd", improper_torsion_angle_rms_dev, beta, "aniso_B33", "Luzzati_coordinate_error_free", angle_phi, energyfilter_lower, angle_kappa, "I", "A_calc", prot_cis, dist, tau4, detector_distance, "S32", "S32_esd", tau1, "L13", tau0, tau3, tau2, "Cartn_x_esd", "A_calc_au", pdbx_solvent_vdw_probe_radii, "T13_esd", atom_deviation, angle_value, diff_density_max_esd, "B_calc", taum, recording_temperature_maximum, covalent_bond_rms_dev, angle_omega, "S21", value_esd, "S33", "F_meas_sigma_au", tilt_angle_min, "L12_esd", calibrated_defocus_min, "L22", "T12_esd", gamma, peptide_planarity_rms_dev_error, "L23", scan_time_backgd, bond_angle_rms_dev, distance_rms_dev_error, pdbx_solvent_shrinkage_radii, clash_magnitude, upper_limit, concentration_range, power, "B_iso_mean", "L11", "S33_esd", "L12", "S31", delta, chamber_temperature, "F_meas", pdbx_collection_time_total, temperature, ambient_pressure_esd, dihedral_angle_target_value, average_torsion_angle_constraint_violation, origin_x, "B_iso_Wilson_estimate", "T23_esd", nu2, nu1, origin_y, nu0, origin_z, nu4, nu3, lower_limit, energyfilter_upper, "S12", "T33", dihedral_angle_value, "A_meas_au", neighbor_macromolecule_distance, "F_meas_au", bond_angle_rms_dev_error, "B_meas", phi, "L11_esd", "P", peptide_planarity_rms_dev, resolution, "Luzzati_sigma_a_free", "B_iso_min", "T11_esd", "T22", "F_meas_sigma", "S13", dihedral_angles_rms_dev_error, "pdbx_res_netI_over_sigmaI_2", "Luzzati_d_res_low_obs", diff_density_rms, maximum_lower_distance_constraint_violation, zeta, "B_calc_au", "S12_esd", "pdbx_F_calc_part_solvent", maximum_upper_distance_constraint_violation, "L13_esd", maximum_torsion_angle_constraint_violation, epsilon, pdbx_solvent_ion_probe_radii, "S22", angle_deviation, max_mean_cross_sectional_radii_gyration, pdbx_phase_calc_with_solvent, "S22_esd", diff_density_max, ambient_temp_esd, rise_per_n_subunits, alpha, "L23_esd", "S23", "S11", "F_squared_sigma", angle_target_value, min_mean_cross_sectional_radii_gyration, neighbor_ligand_distance, diff_density_min, "Cartn_x", "S31_esd", "aniso_B12", psi, "T13", "pdbx_res_netI_over_av_sigmaI_2", angle_psi, improper_torsion_angle, "F_squared_meas", "Cartn_y", "aniso_B11", "Cartn_y_esd", "aniso_B23", dihedral_angles_rms_dev, "L33_esd", "Luzzati_d_res_low_free", "T33_esd", angle_theta, scan_rate, "sigmaI", "Luzzati_coordinate_error_obs", "A_meas", voltage, angle_chi, "B_meas_au", recording_temperature_minimum, mean_guiner_radius_esd, "B_iso_esd", "Cartn_z_esd", diff_density_min_esd, "T11", phase_meas, "T23", nominal_defocus_max, "S21_esd", "F_calc_au", diff_density_rms_esd, max_mean_cross_sectional_radii_gyration_esd, tilt_angle_max, covalent_bond_rms_dev_error, "S11_esd", "aniso_B13", "T12", sampling_size, improper_torsion_angle_rms_dev_error
@@ -30,22 +30,22 @@
 --   Schema locations:
 --    pdbx-validation-v2.xsd
 --   Table types:
---    0 root, 0 root children, 0 admin roots, 262 admin children
+--    0 root, 0 root children, 0 admin roots, 263 admin children
 --   System keys:
 --    0 primary keys (0 unique constraints), 0 foreign keys, 0 nested keys (0 as attribute, 0 as attribute group)
 --   User keys:
---    215 document keys, 0 serial keys, 0 xpath keys
+--    216 document keys, 0 serial keys, 0 xpath keys
 --   Contents:
---    456 attributes (42 in-place document keys), 2663 elements (5 in-place document keys), 0 simple contents (0 in-place document keys, 0 as attribute, 0 as conditional attribute)
+--    458 attributes (42 in-place document keys), 2666 elements (5 in-place document keys), 0 simple contents (0 in-place document keys, 0 as attribute, 0 as conditional attribute)
 --   Wild cards:
 --    0 any elements, 0 any attributes
 --   Constraints:
---    262 unique constraints from xsd:key, 1 unique constraints from xsd:unique, 143 foreign key constraints from xsd:keyref
+--    263 unique constraints from xsd:key, 1 unique constraints from xsd:unique, 143 foreign key constraints from xsd:keyref
 --
 
 --
--- PDBML-validation Schema v2.335
--- PDBXML-validation Schema translated from wwPDB Validation Information Dictionary v2.335, which is backward compatible with the PDBx/mmCIF Dictionary v5.335: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
+-- PDBML-validation Schema v2.336
+-- PDBXML-validation Schema translated from wwPDB Validation Information Dictionary v2.336, which is backward compatible with the PDBx/mmCIF Dictionary v5.336: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
 -- URI-reference = http://pdbml.pdb.org/schema/pdbx-validation-v2.xsd
 --
 
@@ -59,6 +59,7 @@ DROP TABLE IF EXISTS diffrn_radiation_wavelength CASCADE;
 DROP TABLE IF EXISTS diffrn_refln CASCADE;
 DROP TABLE IF EXISTS diffrn_reflns CASCADE;
 DROP TABLE IF EXISTS diffrn_reflns_class CASCADE;
+DROP TABLE IF EXISTS diffrn_scale_group CASCADE;
 DROP TABLE IF EXISTS diffrn_source CASCADE;
 DROP TABLE IF EXISTS diffrn_standard_refln CASCADE;
 DROP TABLE IF EXISTS diffrn_standards CASCADE;
@@ -95,6 +96,7 @@ DROP TABLE IF EXISTS em_staining CASCADE;
 DROP TABLE IF EXISTS em_virus_entity CASCADE;
 DROP TABLE IF EXISTS em_virus_natural_host CASCADE;
 DROP TABLE IF EXISTS em_virus_shell CASCADE;
+DROP TABLE IF EXISTS em_virus_synthetic CASCADE;
 DROP TABLE IF EXISTS em_vitrification CASCADE;
 DROP TABLE IF EXISTS em_volume_selection CASCADE;
 DROP TABLE IF EXISTS entity_name_com CASCADE;
@@ -273,7 +275,6 @@ DROP TABLE IF EXISTS struct_site_gen CASCADE;
 DROP TABLE IF EXISTS struct_site_view CASCADE;
 DROP TABLE IF EXISTS symmetry CASCADE;
 DROP TABLE IF EXISTS symmetry_equiv CASCADE;
-DROP TABLE IF EXISTS diffrn_scale_group CASCADE;
 DROP TABLE IF EXISTS pdbx_domain CASCADE;
 DROP TABLE IF EXISTS pdbx_em_atom_inclusion CASCADE;
 DROP TABLE IF EXISTS pdbx_em_density_distribution CASCADE;
@@ -305,9 +306,9 @@ DROP TABLE IF EXISTS "phasing_MIR_der" CASCADE;
 DROP TABLE IF EXISTS struct_ncs_ens CASCADE;
 DROP TABLE IF EXISTS pdbx_audit_revision_history CASCADE;
 DROP TABLE IF EXISTS struct_sheet CASCADE;
-DROP TABLE IF EXISTS em_entity_assembly CASCADE;
 DROP TABLE IF EXISTS pdbx_nmr_assigned_chem_shift_list CASCADE;
 DROP TABLE IF EXISTS phasing_set CASCADE;
+DROP TABLE IF EXISTS em_entity_assembly CASCADE;
 DROP TABLE IF EXISTS diffrn CASCADE;
 DROP TABLE IF EXISTS entity CASCADE;
 DROP TABLE IF EXISTS entry CASCADE;
@@ -851,22 +852,6 @@ CREATE TABLE struct_site (
 	pdbx_num_residues INTEGER ,
 -- ATTRIBUTE
 	id TEXT NOT NULL
-);
-
---
--- (quoted from diffrn_scale_groupType)
--- Data items in the DIFFRN_SCALE_GROUP category record details of the scaling factors applied to place all intensities in the reflection lists on a common scale. Scaling groups might, for example, correspond to each film in a multi-film data set or each crystal in a multi-crystal data set. Example 1 - based on CAD-4 diffractometer data obtained for Yb(S-C5H4N)2(THF)4. <PDBxv:diffrn_scale_groupCategory> <PDBxv:diffrn_scale_group code="A24"> <PDBxv:I_net>1.021</PDBxv:I_net> </PDBxv:diffrn_scale_group> </PDBxv:diffrn_scale_groupCategory>
--- URI-reference = http://pdbml.pdb.org/dictionaries/mmcif_pdbx_v50.dic/Categories/diffrn_scale_group.html
--- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v2.xsd (PDBxv), schema location: pdbx-validation-v2.xsd
--- type: admin child, content: true, list: false, bridge: false, virtual: false
---
-CREATE TABLE diffrn_scale_group (
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	entry_id TEXT ,
--- xsd:restriction/xsd:minInclusive="0"
-	"I_net" DECIMAL CHECK ( "I_net" >= 0 ) ,
--- ATTRIBUTE
-	code TEXT NOT NULL
 );
 
 --
@@ -1636,6 +1621,22 @@ CREATE TABLE diffrn_reflns_class (
 	description TEXT ,
 -- xsd:restriction/xsd:minInclusive="0"
 	number INTEGER CHECK ( number >= 0 ) ,
+-- ATTRIBUTE
+	code TEXT NOT NULL
+);
+
+--
+-- (quoted from diffrn_scale_groupType)
+-- Data items in the DIFFRN_SCALE_GROUP category record details of the scaling factors applied to place all intensities in the reflection lists on a common scale. Scaling groups might, for example, correspond to each film in a multi-film data set or each crystal in a multi-crystal data set. Example 1 - based on CAD-4 diffractometer data obtained for Yb(S-C5H4N)2(THF)4. <PDBxv:diffrn_scale_groupCategory> <PDBxv:diffrn_scale_group code="A24"> <PDBxv:I_net>1.021</PDBxv:I_net> </PDBxv:diffrn_scale_group> </PDBxv:diffrn_scale_groupCategory>
+-- URI-reference = http://pdbml.pdb.org/dictionaries/mmcif_pdbx_v50.dic/Categories/diffrn_scale_group.html
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v2.xsd (PDBxv), schema location: pdbx-validation-v2.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE diffrn_scale_group (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	entry_id TEXT ,
+-- xsd:restriction/xsd:minInclusive="0"
+	"I_net" DECIMAL CHECK ( "I_net" >= 0 ) ,
 -- ATTRIBUTE
 	code TEXT NOT NULL
 );
@@ -2562,6 +2563,25 @@ CREATE TABLE em_virus_shell (
 	diameter DECIMAL CHECK ( diameter > 0.0 ) ,
 	name TEXT ,
 	triangulation TEXT ,
+-- ATTRIBUTE
+	entity_assembly_id TEXT NOT NULL ,
+-- ATTRIBUTE
+	id TEXT NOT NULL
+);
+
+--
+-- (quoted from em_virus_syntheticType)
+-- Data items in this category record details of a synthetic virus entity.
+-- URI-reference = http://pdbml.pdb.org/dictionaries/mmcif_pdbx_v50.dic/Categories/em_virus_synthetic.html
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v2.xsd (PDBxv), schema location: pdbx-validation-v2.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE em_virus_synthetic (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	entry_id TEXT ,
+	ncbi_tax_id TEXT ,
+	organism TEXT ,
+	strain TEXT ,
 -- ATTRIBUTE
 	entity_assembly_id TEXT NOT NULL ,
 -- ATTRIBUTE
@@ -8073,6 +8093,9 @@ CREATE TABLE symmetry_equiv (
 -- (derived from xsd:key[@name='em_virus_shellKey_0'])
 --ALTER TABLE em_virus_shell ADD CONSTRAINT UNQ_em_virus_shell UNIQUE ( entry_id, entity_assembly_id, id );
 
+-- (derived from xsd:key[@name='em_virus_syntheticKey_0'])
+--ALTER TABLE em_virus_synthetic ADD CONSTRAINT UNQ_em_virus_synthetic UNIQUE ( entry_id, entity_assembly_id, id );
+
 -- (derived from xsd:key[@name='em_vitrificationKey_0'])
 --ALTER TABLE em_vitrification ADD CONSTRAINT UNQ_em_vitrification UNIQUE ( entry_id, id, specimen_id );
 
@@ -8748,9 +8771,6 @@ CREATE TABLE symmetry_equiv (
 -- (derived from xsd:keyref[@name='diffrnKeyref_0_0_10_0'])
 --ALTER TABLE pdbx_diffrn_reflns_shell ADD CONSTRAINT KR_diffrnKeyref_0_0_10_0 FOREIGN KEY ( diffrn_id ) REFERENCES diffrn ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
--- (derived from xsd:keyref[@name='diffrn_scale_groupKeyref_0_0_0_0'])
---ALTER TABLE diffrn_refln ADD CONSTRAINT KR_diffrn_scale_groupKeyref_0_0_0_0 FOREIGN KEY ( scale_group_code ) REFERENCES diffrn_scale_group ( code ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
-
 -- (derived from xsd:keyref[@name='em_entity_assemblyKeyref_0_0_0_0'])
 --ALTER TABLE em_entity_assembly_molwt ADD CONSTRAINT KR_em_entity_assemblyKeyref_0_0_0_0 FOREIGN KEY ( entity_assembly_id ) REFERENCES em_entity_assembly ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
@@ -8771,6 +8791,9 @@ CREATE TABLE symmetry_equiv (
 
 -- (derived from xsd:keyref[@name='em_entity_assemblyKeyref_0_0_6_0'])
 --ALTER TABLE em_virus_shell ADD CONSTRAINT KR_em_entity_assemblyKeyref_0_0_6_0 FOREIGN KEY ( entity_assembly_id ) REFERENCES em_entity_assembly ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
+
+-- (derived from xsd:keyref[@name='em_entity_assemblyKeyref_0_0_7_0'])
+--ALTER TABLE em_virus_synthetic ADD CONSTRAINT KR_em_entity_assemblyKeyref_0_0_7_0 FOREIGN KEY ( entity_assembly_id ) REFERENCES em_entity_assembly ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
 -- (derived from xsd:keyref[@name='entityKeyref_0_0_0_0'])
 --ALTER TABLE entity_name_com ADD CONSTRAINT KR_entityKeyref_0_0_0_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;

@@ -133,6 +133,7 @@ em_ultramicrotomy
 em_virus_entity
 em_virus_natural_host
 em_virus_shell
+em_virus_synthetic
 em_vitrification
 em_volume_selection
 entity

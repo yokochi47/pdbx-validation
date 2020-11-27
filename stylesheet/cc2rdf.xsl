@@ -1214,14 +1214,6 @@
         </PDBo:reference_to_diffrn>
         <!-- diffrnKeyref_0_0_5_0 -->
       </xsl:if>
-      <xsl:if test="PDBx:scale_group_code!=''">
-        <PDBo:reference_to_diffrn_scale_group>
-	  <rdf:Description  rdf:about="{$base}/diffrn_scale_group/{translate(PDBx:scale_group_code,' ^','_')}">
-	    <PDBo:referenced_by_diffrn_refln rdf:resource="{$base}/diffrn_refln/{translate(@diffrn_id,' ^','_')},{translate(@id,' ^','_')}"/>
-	  </rdf:Description>
-        </PDBo:reference_to_diffrn_scale_group>
-        <!-- diffrn_scale_groupKeyref_0_0_0_0 -->
-      </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
       <xsl:apply-templates/>
@@ -2340,6 +2332,26 @@
       <xsl:apply-templates mode="linked"/>
       </PDBo:em_virus_shell>
       </PDBo:has_em_virus_shell>
+  </xsl:template>
+
+  <xsl:template match="PDBx:datablock/PDBx:em_virus_syntheticCategory/PDBx:em_virus_synthetic">
+      <PDBo:has_em_virus_synthetic>
+      <PDBo:em_virus_synthetic rdf:about="{$base}/em_virus_synthetic/{translate(@entity_assembly_id,' ^','_')},{translate(@id,' ^','_')}">
+      <PDBo:of_datablock rdf:resource="{$base}"/>
+      <xsl:if test="@entity_assembly_id!=''">
+        <PDBo:reference_to_em_entity_assembly>
+	  <rdf:Description  rdf:about="{$base}/em_entity_assembly/{translate(@entity_assembly_id,' ^','_')}">
+	    <PDBo:referenced_by_em_virus_synthetic rdf:resource="{$base}/em_virus_synthetic/{translate(@entity_assembly_id,' ^','_')},{translate(@id,' ^','_')}"/>
+	  </rdf:Description>
+        </PDBo:reference_to_em_entity_assembly>
+        <!-- em_entity_assemblyKeyref_0_0_7_0 -->
+      </xsl:if>
+      <xsl:apply-templates select="@*"/>
+      <xsl:apply-templates select="@*" mode="linked"/>
+      <xsl:apply-templates/>
+      <xsl:apply-templates mode="linked"/>
+      </PDBo:em_virus_synthetic>
+      </PDBo:has_em_virus_synthetic>
   </xsl:template>
 
   <xsl:template match="PDBx:datablock/PDBx:em_vitrificationCategory/PDBx:em_vitrification">

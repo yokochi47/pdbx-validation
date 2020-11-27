@@ -1359,6 +1359,11 @@ em_virus_shell.entity_assembly_id
 em_virus_shell.id
 em_virus_shell.name
 em_virus_shell.triangulation
+em_virus_synthetic.entity_assembly_id
+em_virus_synthetic.id
+em_virus_synthetic.ncbi_tax_id
+em_virus_synthetic.organism
+em_virus_synthetic.strain
 em_vitrification.chamber_temperature
 em_vitrification.citation_id
 em_vitrification.cryogen_name
