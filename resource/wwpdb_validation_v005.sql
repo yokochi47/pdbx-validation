@@ -23,7 +23,7 @@
 --  hash key type: unsigned long 64 bits
 --
 -- Statistics of schema:
---  Generated 82 tables (946 fields), 112 views (336 fields), 0 attr groups, 0 model groups in total
+--  Generated 79 tables (878 fields), 50 views (150 fields), 0 attr groups, 0 model groups in total
 --   Orphan tables that can not be reached from the document root:
 --    schema location: wwpdb_validation_v005.xsd
 --      "NotAvailable"
@@ -32,13 +32,13 @@
 --   Schema locations:
 --    wwpdb_validation_v005.xsd
 --   Table types:
---    1 root, 179 root children, 13 admin roots, 1 admin children
+--    1 root, 117 root children, 10 admin roots, 1 admin children
 --   System keys:
---    194 primary keys (86 unique constraints), 184 foreign keys, 409 nested keys (324 as attribute, 1 as attribute group)
+--    129 primary keys (28 unique constraints), 122 foreign keys, 184 nested keys (99 as attribute, 1 as attribute group)
 --   User keys:
---    194 document keys, 0 serial keys, 0 xpath keys
+--    129 document keys, 0 serial keys, 0 xpath keys
 --   Contents:
---    295 attributes (0 in-place document keys), 0 elements (0 in-place document keys), 6 simple contents (0 in-place document keys, 6 as attribute, 0 as conditional attribute)
+--    458 attributes (0 in-place document keys), 0 elements (0 in-place document keys), 6 simple contents (0 in-place document keys, 6 as attribute, 0 as conditional attribute)
 --   Wild cards:
 --    0 any elements, 0 any attributes
 --   Constraints:
@@ -46,7 +46,7 @@
 --
 
 --
--- COPYRIGHT ***************************************************************** Copyright 2014-2017 EMBL - European Bioinformatics Institute Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. ***************************************************************** This is a XML schema for checking entry-specific validation XML documents from wwPDB. versions published: v1 2014/02/20 http://wwpdb.org/validation/schema/wwpdb_validation_v1.xsd v002 2016/02/25 http://wwpdb.org/validation/schema/wwpdb_validation_v002.xsd v002 2017/08/31 http://wwpdb.org/validation/schema/wwpdb_validation_v002.xsd (with annotations) v003 2019/05/27 http://wwpdb.org/validation/schema/wwpdb_validation_v003.xsd (added local_density, no-ligands-for-buster-report ligands-for-buster-report attribute) v004 2019/10/16 http://wwpdb.org/validation/schema/wwpdb_validation_v004.xsd (added em validation) v004 2019/11/18 http://wwpdb.org/validation/schema/wwpdb_validation_v004.xsd (Updated FSC representation) v004 2020/02/18 http://wwpdb.org/validation/schema/wwpdb_validation_v004.xsd (Added EMDB-deposition-date and EMDB-resolution) v004 2020/10/06 http://wwpdb.org/validation/schema/wwpdb_validation_v004.xsd (Added raw map rotationally averaged power spectrum) v005 2020/10/02 http://wwpdb.org/validation/schema/wwpdb_validation_v005.xsd (Added NMR Restraints analys xml schema) $Revision$ *****************************************************************
+-- COPYRIGHT ***************************************************************** Copyright 2014-2017 EMBL - European Bioinformatics Institute Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. ***************************************************************** This is a XML schema for checking entry-specific validation XML documents from wwPDB. versions published: v1 2014/02/20 http://wwpdb.org/validation/schema/wwpdb_validation_v1.xsd v002 2016/02/25 http://wwpdb.org/validation/schema/wwpdb_validation_v002.xsd v002 2017/08/31 http://wwpdb.org/validation/schema/wwpdb_validation_v002.xsd (with annotations) v003 2019/05/27 http://wwpdb.org/validation/schema/wwpdb_validation_v003.xsd (added local_density, no-ligands-for-buster-report ligands-for-buster-report attribute) v004 2019/10/16 http://wwpdb.org/validation/schema/wwpdb_validation_v004.xsd (added em validation) v004 2019/11/18 http://wwpdb.org/validation/schema/wwpdb_validation_v004.xsd (Updated FSC representation) v004 2020/02/18 http://wwpdb.org/validation/schema/wwpdb_validation_v004.xsd (Added EMDB-deposition-date and EMDB-resolution) v004 2020/10/06 http://wwpdb.org/validation/schema/wwpdb_validation_v004.xsd (Added raw map rotationally averaged power spectrum) v005 2020/10/02 http://wwpdb.org/validation/schema/wwpdb_validation_v005.xsd (Added NMR Restraints analysis xml schema) $Revision$ *****************************************************************
 --
 
 DROP TABLE IF EXISTS atom_name CASCADE;
@@ -63,15 +63,12 @@ DROP TABLE IF EXISTS "YesString" CASCADE;
 DROP TABLE IF EXISTS percentage CASCADE;
 DROP TABLE IF EXISTS "BfactorType" CASCADE;
 DROP TABLE IF EXISTS percentile_rank CASCADE;
-DROP TABLE IF EXISTS string CASCADE;
 DROP TABLE IF EXISTS "Model" CASCADE;
 DROP TABLE IF EXISTS "bond-outlier" CASCADE;
 DROP TABLE IF EXISTS "angle-outlier" CASCADE;
 DROP TABLE IF EXISTS "chiral-outlier" CASCADE;
 DROP TABLE IF EXISTS "plane-outlier" CASCADE;
 DROP TABLE IF EXISTS clash CASCADE;
-DROP TABLE IF EXISTS integer CASCADE;
-DROP TABLE IF EXISTS decimal CASCADE;
 DROP TABLE IF EXISTS distance_violation CASCADE;
 DROP TABLE IF EXISTS "symm-clash" CASCADE;
 DROP TABLE IF EXISTS "mog-bond-outlier" CASCADE;
@@ -164,7 +161,7 @@ CREATE TABLE "wwPDB-validation-information" (
 );
 
 --
--- A "ModelledSubgroup" is an individual occurence of a residue. If there are alternate atoms in the residue each alternate and any alternate atoms is a separate ModelledSubgroup. If there are multiple models then each of these is a separate subgroup.
+-- A "ModelledSubgroup" is an individual occurrence of a residue. If there are alternate atoms in the residue each alternate and any alternate atoms is a separate ModelledSubgroup. If there are multiple models then each of these is a separate subgroup.
 -- xmlns: no namespace, schema location: wwpdb_validation_v005.xsd
 -- type: root child, content: true, list: true, bridge: false, virtual: false
 --
@@ -207,7 +204,6 @@ CREATE TABLE "ModelledSubgroup" (
 -- ATTRIBUTE
 	chain TEXT ,
 -- ATTRIBUTE
--- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	resnum INTEGER ,
 -- ATTRIBUTE
 	resname TEXT ,
@@ -224,10 +220,8 @@ CREATE TABLE "ModelledSubgroup" (
 -- ATTRIBUTE
 	seq TEXT ,
 -- ATTRIBUTE
--- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	ligand_num_clashes INTEGER ,
 -- ATTRIBUTE
--- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	ligand_num_symm_clashes INTEGER ,
 -- NESTED KEY AS ATTRIBUTE : ligand_clashes_outlier ( ligand_clashes_outlier_id, DELEGATED TO "YesString_id" )
 	ligand_clashes_outlier_id BIGINT CHECK ( ligand_clashes_outlier_id >= 0 ) ,
@@ -236,10 +230,8 @@ CREATE TABLE "ModelledSubgroup" (
 -- NESTED KEY AS ATTRIBUTE : cis_peptide ( cis_peptide_id, DELEGATED TO "YesString_id" )
 	cis_peptide_id BIGINT CHECK ( cis_peptide_id >= 0 ) ,
 -- ATTRIBUTE
--- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	"NatomsEDS" INTEGER ,
 -- ATTRIBUTE
--- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	cyrange_domain_id INTEGER ,
 -- ATTRIBUTE
 	validate TEXT ,
@@ -260,12 +252,11 @@ CREATE TABLE "ModelledSubgroup" (
 -- ATTRIBUTE
 	"ligRSRnbrStdev" DECIMAL ,
 -- ATTRIBUTE
--- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	"ligRSRnumnbrs" INTEGER ,
 -- ATTRIBUTE
 	"ligRSRZ" DECIMAL ,
 -- ATTRIBUTE
-	"num-H-reduce" DECIMAL ,
+	"num-H-reduce" INTEGER ,
 -- ATTRIBUTE
 	rama ENUM_ModelledSubgroup_rama ,
 -- ATTRIBUTE
@@ -289,10 +280,8 @@ CREATE TABLE "ModelledSubgroup" (
 -- ATTRIBUTE
 	mogul_bonds_rmsz DECIMAL ,
 -- ATTRIBUTE
--- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	mogul_rmsz_numangles INTEGER ,
 -- ATTRIBUTE
--- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	mogul_rmsz_numbonds INTEGER ,
 -- NESTED KEY AS ATTRIBUTE : ligand_geometry_outlier ( ligand_geometry_outlier_id, DELEGATED TO "YesString_id" )
 	ligand_geometry_outlier_id BIGINT CHECK ( ligand_geometry_outlier_id >= 0 ) ,
@@ -303,7 +292,7 @@ CREATE TABLE "ModelledSubgroup" (
 );
 
 --
--- Analysis resluts of NOE distance restaints in differnt models in the NMR ensemnle
+-- Analysis results of NOE distance restraints in different models in the NMR ensemble
 -- xmlns: no namespace, schema location: wwpdb_validation_v005.xsd
 -- type: root child, content: false, list: false, bridge: false, virtual: false
 --
@@ -326,7 +315,7 @@ CREATE TABLE distance_restraints_analysis (
 );
 
 --
--- Analysis results of dihedral-anlge restrains in the ensemble
+-- Analysis results of dihedral-angle restrains in the ensemble
 -- xmlns: no namespace, schema location: wwpdb_validation_v005.xsd
 -- type: root child, content: false, list: false, bridge: false, virtual: false
 --
@@ -368,7 +357,7 @@ CREATE TABLE "Entry" (
 -- ATTRIBUTE
 	"PDB-deposition-date" TEXT ,
 -- ATTRIBUTE
-	"PDB-revision-number" DECIMAL ,
+	"PDB-revision-number" INTEGER ,
 -- ATTRIBUTE
 	"PDB-revision-date" TEXT ,
 -- NESTED KEY AS ATTRIBUTE : "PDB-resolution" ( "PDB-resolution_id", DELEGATED TO "floatORunavailable_id" )
@@ -410,13 +399,11 @@ CREATE TABLE "Entry" (
 -- ATTRIBUTE
 	bonds_rmsz DECIMAL ,
 -- ATTRIBUTE
--- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	num_bonds_rmsz INTEGER ,
 -- ATTRIBUTE
--- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	num_angles_rmsz INTEGER ,
 -- ATTRIBUTE
-	"num-H-reduce" DECIMAL ,
+	"num-H-reduce" INTEGER ,
 -- ATTRIBUTE
 	clashscore DECIMAL ,
 -- ATTRIBUTE
@@ -440,14 +427,12 @@ CREATE TABLE "Entry" (
 -- ATTRIBUTE
 	xtriage_input_columns TEXT ,
 -- ATTRIBUTE
--- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	acentric_outliers INTEGER ,
 -- ATTRIBUTE
 	centric_outliers DECIMAL ,
 -- ATTRIBUTE
 	"IoverSigma" TEXT ,
 -- ATTRIBUTE
--- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	"numMillerIndices" INTEGER ,
 -- ATTRIBUTE
 	"WilsonBestimate" DECIMAL ,
@@ -474,7 +459,6 @@ CREATE TABLE "Entry" (
 -- ATTRIBUTE
 	"DCC_refinement_program" TEXT ,
 -- ATTRIBUTE
--- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	"num-free-reflections" INTEGER ,
 -- NESTED KEY AS ATTRIBUTE : "percent-free-reflections" ( "percent-free-reflections_id", DELEGATED TO percentage_id )
 	"percent-free-reflections_id" BIGINT CHECK ( "percent-free-reflections_id" >= 0 ) ,
@@ -509,22 +493,16 @@ CREATE TABLE "Entry" (
 -- ATTRIBUTE
 	nmrclust_version TEXT ,
 -- ATTRIBUTE
--- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	nmrclust_representative_model INTEGER ,
 -- ATTRIBUTE
--- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	medoid_model INTEGER ,
 -- ATTRIBUTE
--- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	nmrclust_number_of_outliers INTEGER ,
 -- ATTRIBUTE
--- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	nmrclust_number_of_models INTEGER ,
 -- ATTRIBUTE
--- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	nmrclust_number_of_clusters INTEGER ,
 -- ATTRIBUTE
--- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	cyrange_number_of_domains INTEGER ,
 -- ATTRIBUTE
 	chemical_shift_completeness DECIMAL ,
@@ -573,12 +551,10 @@ CREATE TABLE "Entry" (
 -- NESTED KEY AS ATTRIBUTE : "absolute-percentile-RNAsuiteness" ( "absolute-percentile-RNAsuiteness_id", DELEGATED TO percentile_rank_id )
 	"absolute-percentile-RNAsuiteness_id" BIGINT CHECK ( "absolute-percentile-RNAsuiteness_id" >= 0 ) ,
 -- ATTRIBUTE
--- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	"numPDBids-absolute-percentile-RNAsuiteness" INTEGER ,
 -- NESTED KEY AS ATTRIBUTE : "relative-percentile-RNAsuiteness" ( "relative-percentile-RNAsuiteness_id", DELEGATED TO percentile_rank_id )
 	"relative-percentile-RNAsuiteness_id" BIGINT CHECK ( "relative-percentile-RNAsuiteness_id" >= 0 ) ,
 -- ATTRIBUTE
--- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	"numPDBids-relative-percentile-RNAsuiteness" INTEGER ,
 -- ATTRIBUTE
 	"low-resol-relative-percentile-RNAsuiteness" DECIMAL ,
@@ -587,12 +563,10 @@ CREATE TABLE "Entry" (
 -- NESTED KEY AS ATTRIBUTE : "absolute-percentile-clashscore" ( "absolute-percentile-clashscore_id", DELEGATED TO percentile_rank_id )
 	"absolute-percentile-clashscore_id" BIGINT CHECK ( "absolute-percentile-clashscore_id" >= 0 ) ,
 -- ATTRIBUTE
--- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	"numPDBids-absolute-percentile-clashscore" INTEGER ,
 -- NESTED KEY AS ATTRIBUTE : "relative-percentile-clashscore" ( "relative-percentile-clashscore_id", DELEGATED TO percentile_rank_id )
 	"relative-percentile-clashscore_id" BIGINT CHECK ( "relative-percentile-clashscore_id" >= 0 ) ,
 -- ATTRIBUTE
--- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	"numPDBids-relative-percentile-clashscore" INTEGER ,
 -- ATTRIBUTE
 	"low-resol-relative-percentile-clashscore" DECIMAL ,
@@ -601,12 +575,10 @@ CREATE TABLE "Entry" (
 -- NESTED KEY AS ATTRIBUTE : "absolute-percentile-percent-rama-outliers" ( "absolute-percentile-percent-rama-outliers_id", DELEGATED TO percentile_rank_id )
 	"absolute-percentile-percent-rama-outliers_id" BIGINT CHECK ( "absolute-percentile-percent-rama-outliers_id" >= 0 ) ,
 -- ATTRIBUTE
--- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	"numPDBids-absolute-percentile-percent-rama-outliers" INTEGER ,
 -- NESTED KEY AS ATTRIBUTE : "relative-percentile-percent-rama-outliers" ( "relative-percentile-percent-rama-outliers_id", DELEGATED TO percentile_rank_id )
 	"relative-percentile-percent-rama-outliers_id" BIGINT CHECK ( "relative-percentile-percent-rama-outliers_id" >= 0 ) ,
 -- ATTRIBUTE
--- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	"numPDBids-relative-percentile-percent-rama-outliers" INTEGER ,
 -- ATTRIBUTE
 	"low-resol-relative-percentile-percent-rama-outliers" DECIMAL ,
@@ -615,12 +587,10 @@ CREATE TABLE "Entry" (
 -- NESTED KEY AS ATTRIBUTE : "absolute-percentile-percent-rota-outliers" ( "absolute-percentile-percent-rota-outliers_id", DELEGATED TO percentile_rank_id )
 	"absolute-percentile-percent-rota-outliers_id" BIGINT CHECK ( "absolute-percentile-percent-rota-outliers_id" >= 0 ) ,
 -- ATTRIBUTE
--- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	"numPDBids-absolute-percentile-percent-rota-outliers" INTEGER ,
 -- NESTED KEY AS ATTRIBUTE : "relative-percentile-percent-rota-outliers" ( "relative-percentile-percent-rota-outliers_id", DELEGATED TO percentile_rank_id )
 	"relative-percentile-percent-rota-outliers_id" BIGINT CHECK ( "relative-percentile-percent-rota-outliers_id" >= 0 ) ,
 -- ATTRIBUTE
--- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	"numPDBids-relative-percentile-percent-rota-outliers" INTEGER ,
 -- ATTRIBUTE
 	"low-resol-relative-percentile-percent-rota-outliers" DECIMAL ,
@@ -629,12 +599,10 @@ CREATE TABLE "Entry" (
 -- NESTED KEY AS ATTRIBUTE : "absolute-percentile-DCC_Rfree" ( "absolute-percentile-DCC_Rfree_id", DELEGATED TO percentile_rank_id )
 	"absolute-percentile-DCC_Rfree_id" BIGINT CHECK ( "absolute-percentile-DCC_Rfree_id" >= 0 ) ,
 -- ATTRIBUTE
--- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	"numPDBids-absolute-percentile-DCC_Rfree" INTEGER ,
 -- NESTED KEY AS ATTRIBUTE : "relative-percentile-DCC_Rfree" ( "relative-percentile-DCC_Rfree_id", DELEGATED TO percentile_rank_id )
 	"relative-percentile-DCC_Rfree_id" BIGINT CHECK ( "relative-percentile-DCC_Rfree_id" >= 0 ) ,
 -- ATTRIBUTE
--- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	"numPDBids-relative-percentile-DCC_Rfree" INTEGER ,
 -- ATTRIBUTE
 	"low-resol-relative-percentile-DCC_Rfree" DECIMAL ,
@@ -643,19 +611,17 @@ CREATE TABLE "Entry" (
 -- NESTED KEY AS ATTRIBUTE : "absolute-percentile-percent-RSRZ-outliers" ( "absolute-percentile-percent-RSRZ-outliers_id", DELEGATED TO percentile_rank_id )
 	"absolute-percentile-percent-RSRZ-outliers_id" BIGINT CHECK ( "absolute-percentile-percent-RSRZ-outliers_id" >= 0 ) ,
 -- ATTRIBUTE
--- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	"numPDBids-absolute-percentile-percent-RSRZ-outliers" INTEGER ,
 -- NESTED KEY AS ATTRIBUTE : "relative-percentile-percent-RSRZ-outliers" ( "relative-percentile-percent-RSRZ-outliers_id", DELEGATED TO percentile_rank_id )
 	"relative-percentile-percent-RSRZ-outliers_id" BIGINT CHECK ( "relative-percentile-percent-RSRZ-outliers_id" >= 0 ) ,
 -- ATTRIBUTE
--- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	"numPDBids-relative-percentile-percent-RSRZ-outliers" INTEGER ,
 -- ATTRIBUTE
 	"low-resol-relative-percentile-percent-RSRZ-outliers" DECIMAL ,
 -- ATTRIBUTE
 	"high-resol-relative-percentile-percent-RSRZ-outliers" DECIMAL ,
--- NESTED KEY AS ATTRIBUTE : cs_only ( cs_only_id )
-	cs_only_id BIGINT CHECK ( cs_only_id >= 0 )
+-- ATTRIBUTE
+	cs_only TEXT
 );
 
 --
@@ -686,7 +652,6 @@ CREATE TABLE chemical_shift_list (
 -- NESTED KEY : assignment_completeness_full_length ( assignment_completeness_full_length_id )
 	assignment_completeness_full_length_id BIGINT CHECK ( assignment_completeness_full_length_id >= 0 ) ,
 -- ATTRIBUTE
--- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	file_id INTEGER ,
 -- ATTRIBUTE
 	file_name TEXT ,
@@ -697,22 +662,16 @@ CREATE TABLE chemical_shift_list (
 -- ATTRIBUTE
 	type TEXT ,
 -- ATTRIBUTE
--- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	number_of_errors_while_mapping INTEGER ,
 -- ATTRIBUTE
--- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	number_of_warnings_while_mapping INTEGER ,
 -- ATTRIBUTE
--- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	number_of_mapped_shifts INTEGER ,
 -- ATTRIBUTE
--- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	number_of_parsed_shifts INTEGER ,
 -- ATTRIBUTE
--- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	total_number_of_shifts INTEGER ,
 -- ATTRIBUTE
--- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	number_of_unparsed_shifts INTEGER
 );
 
@@ -744,7 +703,7 @@ CREATE TABLE "EM_validation" (
 );
 
 --
--- Summary of NMR distance and dihedral-angle restraints generated by BMRB Restranints analysis package
+-- Summary of NMR distance and dihedral-angle restraints generated by BMRB Restraints analysis package
 -- xmlns: no namespace, schema location: wwpdb_validation_v005.xsd
 -- type: root child, content: false, list: false, bridge: false, virtual: false
 --
@@ -953,7 +912,7 @@ CREATE TABLE programs (
 );
 
 --
--- Summary of comformationally restriction restraints. All redudent and duplicate restraints are filtered
+-- Summary of conformationally restriction restraints. All redundant and duplicate restraints are filtered
 -- xmlns: no namespace, schema location: wwpdb_validation_v005.xsd
 -- type: root child, content: false, list: true, bridge: true, virtual: false
 --
@@ -968,7 +927,7 @@ CREATE TABLE conformationally_restricting_restraints (
 );
 
 --
--- Summary of distance violations in differnt bins based on its magnetitude of violation
+-- Summary of distance violations in different bins based on its magnitude of violation
 -- xmlns: no namespace, schema location: wwpdb_validation_v005.xsd
 -- type: root child, content: false, list: true, bridge: true, virtual: false
 --
@@ -983,7 +942,7 @@ CREATE TABLE residual_distance_violations (
 );
 
 --
--- Summary of dihedral-angleviolations in differnt bins based on its magnetitude of violation
+-- Summary of dihedral-angle violations in different bins based on its magnitude of violation
 -- xmlns: no namespace, schema location: wwpdb_validation_v005.xsd
 -- type: root child, content: false, list: true, bridge: true, virtual: false
 --
@@ -998,7 +957,7 @@ CREATE TABLE residual_angle_violations (
 );
 
 --
--- Statistics about violated and consistently violated restraints. Restraints that are violated all modles are called consistently violated restraitns.
+-- Statistics about violated and consistently violated restraints. Restraints that are violated all modules are called consistently violated restraints.
 -- xmlns: no namespace, schema location: wwpdb_validation_v005.xsd
 -- type: root child, content: false, list: true, bridge: true, virtual: false
 --
@@ -1015,7 +974,7 @@ CREATE TABLE distance_violations_summary (
 --
 -- Number of violated restraints in a given model
 -- xmlns: no namespace, schema location: wwpdb_validation_v005.xsd
--- type: root child, content: true, list: true, bridge: false, virtual: false
+-- type: root child, content: true, list: true, bridge: true, virtual: false
 --
 CREATE TABLE distance_violations_in_model (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
@@ -1025,22 +984,22 @@ CREATE TABLE distance_violations_in_model (
 	distance_violations_in_models_id BIGINT CHECK ( distance_violations_in_models_id >= 0 ) ,
 -- NESTED KEY : dist_rest_types ( dist_rest_types_id )
 	dist_rest_types_id BIGINT CHECK ( dist_rest_types_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : max_violation ( max_violation_id )
-	max_violation_id BIGINT CHECK ( max_violation_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : mean_violation ( mean_violation_id )
-	mean_violation_id BIGINT CHECK ( mean_violation_id >= 0 ) ,
+-- ATTRIBUTE
+	max_violation DECIMAL ,
+-- ATTRIBUTE
+	mean_violation DECIMAL ,
 -- ATTRIBUTE
 	model TEXT ,
--- NESTED KEY AS ATTRIBUTE : standard_deviation ( standard_deviation_id )
-	standard_deviation_id BIGINT CHECK ( standard_deviation_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : median_violation ( median_violation_id )
-	median_violation_id BIGINT CHECK ( median_violation_id >= 0 )
+-- ATTRIBUTE
+	standard_deviation DECIMAL ,
+-- ATTRIBUTE
+	median_violation DECIMAL
 );
 
 --
 -- Number of violated models for a given set of restraints
 -- xmlns: no namespace, schema location: wwpdb_validation_v005.xsd
--- type: root child, content: false, list: true, bridge: false, virtual: false
+-- type: root child, content: true, list: true, bridge: true, virtual: false
 --
 CREATE TABLE distance_violation_in_ensemble (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
@@ -1050,10 +1009,11 @@ CREATE TABLE distance_violation_in_ensemble (
 	distance_violations_in_ensemble_id BIGINT CHECK ( distance_violations_in_ensemble_id >= 0 ) ,
 -- NESTED KEY : dist_rest_types ( dist_rest_types_id )
 	dist_rest_types_id BIGINT CHECK ( dist_rest_types_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : fraction_of_ensemble_count ( fraction_of_ensemble_count_id )
-	fraction_of_ensemble_count_id BIGINT CHECK ( fraction_of_ensemble_count_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : fraction_of_ensemble_percent ( fraction_of_ensemble_percent_id )
-	fraction_of_ensemble_percent_id BIGINT CHECK ( fraction_of_ensemble_percent_id >= 0 )
+-- ATTRIBUTE
+-- map mathematical concept of integer numbers (xs:integer) to signed int 32 bits
+	fraction_of_ensemble_count INTEGER ,
+-- ATTRIBUTE
+	fraction_of_ensemble_percent DECIMAL
 );
 
 --
@@ -1072,7 +1032,7 @@ CREATE TABLE most_violated_distance_restraints (
 );
 
 --
--- List of all vioated restraints
+-- List of all violated restraints
 -- xmlns: no namespace, schema location: wwpdb_validation_v005.xsd
 -- type: root child, content: false, list: true, bridge: true, virtual: false
 --
@@ -1087,7 +1047,7 @@ CREATE TABLE violated_distance_restraints (
 );
 
 --
--- Statistics about violated and consistently violated restraints. Restraints that are violated all modles are called consistently violated restraitns.
+-- Statistics about violated and consistently violated restraints. Restraints that are violated all models are called consistently violated restraints.
 -- xmlns: no namespace, schema location: wwpdb_validation_v005.xsd
 -- type: root child, content: false, list: true, bridge: true, virtual: false
 --
@@ -1104,7 +1064,7 @@ CREATE TABLE dihedralangle_violations_summary (
 --
 -- Number of violated restraints ina given model
 -- xmlns: no namespace, schema location: wwpdb_validation_v005.xsd
--- type: root child, content: true, list: true, bridge: false, virtual: false
+-- type: root child, content: true, list: true, bridge: true, virtual: false
 --
 CREATE TABLE dihedralangle_violations_in_model (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
@@ -1116,20 +1076,20 @@ CREATE TABLE dihedralangle_violations_in_model (
 	ang_rest_types_id BIGINT CHECK ( ang_rest_types_id >= 0 ) ,
 -- ATTRIBUTE
 	model TEXT ,
--- NESTED KEY AS ATTRIBUTE : max_violation ( max_violation_id )
-	max_violation_id BIGINT CHECK ( max_violation_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : mean_violation ( mean_violation_id )
-	mean_violation_id BIGINT CHECK ( mean_violation_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : standard_deviation ( standard_deviation_id )
-	standard_deviation_id BIGINT CHECK ( standard_deviation_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : median_violation ( median_violation_id )
-	median_violation_id BIGINT CHECK ( median_violation_id >= 0 )
+-- ATTRIBUTE
+	max_violation DECIMAL ,
+-- ATTRIBUTE
+	mean_violation DECIMAL ,
+-- ATTRIBUTE
+	standard_deviation DECIMAL ,
+-- ATTRIBUTE
+	median_violation DECIMAL
 );
 
 --
 -- Number of violated models for a given set of restraints
 -- xmlns: no namespace, schema location: wwpdb_validation_v005.xsd
--- type: root child, content: false, list: true, bridge: false, virtual: false
+-- type: root child, content: true, list: true, bridge: true, virtual: false
 --
 CREATE TABLE dihedralangle_violation_in_ensemble (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
@@ -1139,10 +1099,11 @@ CREATE TABLE dihedralangle_violation_in_ensemble (
 	dihedralangle_violations_in_ensemble_id BIGINT CHECK ( dihedralangle_violations_in_ensemble_id >= 0 ) ,
 -- NESTED KEY : ang_rest_types ( ang_rest_types_id )
 	ang_rest_types_id BIGINT CHECK ( ang_rest_types_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : fraction_of_ensemble_count ( fraction_of_ensemble_count_id )
-	fraction_of_ensemble_count_id BIGINT CHECK ( fraction_of_ensemble_count_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : fraction_of_ensemble_percent ( fraction_of_ensemble_percent_id )
-	fraction_of_ensemble_percent_id BIGINT CHECK ( fraction_of_ensemble_percent_id >= 0 )
+-- ATTRIBUTE
+-- map mathematical concept of integer numbers (xs:integer) to signed int 32 bits
+	fraction_of_ensemble_count INTEGER ,
+-- ATTRIBUTE
+	fraction_of_ensemble_percent DECIMAL
 );
 
 --
@@ -1214,7 +1175,6 @@ CREATE TABLE unmapped_chemical_shift (
 -- ATTRIBUTE
 	rescode TEXT ,
 -- ATTRIBUTE
--- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	resnum INTEGER ,
 -- NESTED KEY AS ATTRIBUTE : atom ( atom_id, DELEGATED TO atom_name_id )
 	atom_id BIGINT CHECK ( atom_id >= 0 ) ,
@@ -1246,7 +1206,6 @@ CREATE TABLE unparsed_chemical_shift (
 -- ATTRIBUTE
 	rescode TEXT ,
 -- ATTRIBUTE
--- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	resnum INTEGER ,
 -- NESTED KEY AS ATTRIBUTE : atom ( atom_id, DELEGATED TO atom_name_id )
 	atom_id BIGINT CHECK ( atom_id >= 0 ) ,
@@ -1293,7 +1252,6 @@ CREATE TABLE random_coil_index (
 -- ATTRIBUTE
 	rescode TEXT ,
 -- ATTRIBUTE
--- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	resnum INTEGER ,
 -- ATTRIBUTE
 	value DECIMAL
@@ -1315,7 +1273,6 @@ CREATE TABLE chemical_shift_outlier (
 -- ATTRIBUTE
 	rescode TEXT ,
 -- ATTRIBUTE
--- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	resnum INTEGER ,
 -- NESTED KEY AS ATTRIBUTE : atom ( atom_id, DELEGATED TO atom_name_id )
 	atom_id BIGINT CHECK ( atom_id >= 0 ) ,
@@ -1349,7 +1306,6 @@ CREATE TABLE referencing_offset (
 -- ATTRIBUTE
 	value DECIMAL ,
 -- ATTRIBUTE
--- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	number_of_measurements INTEGER NOT NULL
 );
 
@@ -1365,13 +1321,10 @@ CREATE TABLE assignment_completeness_well_defined (
 -- FOREIGN KEY : chemical_shift_list ( chemical_shift_list_id )
 	chemical_shift_list_id BIGINT CHECK ( chemical_shift_list_id >= 0 ) ,
 -- ATTRIBUTE
--- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	number_of_assigned_shifts INTEGER ,
 -- ATTRIBUTE
--- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	number_of_unassigned_shifts INTEGER ,
 -- ATTRIBUTE
--- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	number_of_shifts INTEGER ,
 -- ATTRIBUTE
 	type TEXT NOT NULL ,
@@ -1391,13 +1344,10 @@ CREATE TABLE assignment_completeness_full_length (
 -- FOREIGN KEY : chemical_shift_list ( chemical_shift_list_id )
 	chemical_shift_list_id BIGINT CHECK ( chemical_shift_list_id >= 0 ) ,
 -- ATTRIBUTE
--- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	number_of_assigned_shifts INTEGER ,
 -- ATTRIBUTE
--- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	number_of_unassigned_shifts INTEGER ,
 -- ATTRIBUTE
--- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	number_of_shifts INTEGER ,
 -- ATTRIBUTE
 	type TEXT NOT NULL ,
@@ -1565,86 +1515,6 @@ CREATE TABLE percentile_rank (
 );
 
 --
--- This flag indicates where restraitns data is provided or not. If yes, then only chemical shift data provided in parsable format.
--- xmlns: http://www.w3.org/2001/XMLSchema (xsd), schema location: wwpdb_validation_v005.xsd
--- type: admin root, content: false, list: false, bridge: false, virtual: true
---
-CREATE TABLE string (
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
--- PRIMARY KEY
-	string_id BIGINT CHECK ( string_id >= 0 ) PRIMARY KEY ,
--- FOREIGN KEY : cs_only ( cs_only_id )
-	cs_only_id BIGINT CHECK ( cs_only_id >= 0 ) ,
--- FOREIGN KEY : description ( description_id )
-	description_id BIGINT CHECK ( description_id >= 0 ) ,
--- FOREIGN KEY : bins ( bins_id )
-	bins_id BIGINT CHECK ( bins_id >= 0 ) ,
--- FOREIGN KEY : restraint_type ( restraint_type_id )
-	restraint_type_id BIGINT CHECK ( restraint_type_id >= 0 ) ,
--- FOREIGN KEY : dist_rest_type ( dist_rest_type_id )
-	dist_rest_type_id BIGINT CHECK ( dist_rest_type_id >= 0 ) ,
--- FOREIGN KEY : altcode_1 ( altcode_1_id )
-	altcode_1_id BIGINT CHECK ( altcode_1_id >= 0 ) ,
--- FOREIGN KEY : chain_1 ( chain_1_id )
-	chain_1_id BIGINT CHECK ( chain_1_id >= 0 ) ,
--- FOREIGN KEY : resname_1 ( resname_1_id )
-	resname_1_id BIGINT CHECK ( resname_1_id >= 0 ) ,
--- FOREIGN KEY : icode_1 ( icode_1_id )
-	icode_1_id BIGINT CHECK ( icode_1_id >= 0 ) ,
--- FOREIGN KEY : ent_1 ( ent_1_id )
-	ent_1_id BIGINT CHECK ( ent_1_id >= 0 ) ,
--- FOREIGN KEY : said_1 ( said_1_id )
-	said_1_id BIGINT CHECK ( said_1_id >= 0 ) ,
--- FOREIGN KEY : seq_1 ( seq_1_id )
-	seq_1_id BIGINT CHECK ( seq_1_id >= 0 ) ,
--- FOREIGN KEY : chain_2 ( chain_2_id )
-	chain_2_id BIGINT CHECK ( chain_2_id >= 0 ) ,
--- FOREIGN KEY : altcode_2 ( altcode_2_id )
-	altcode_2_id BIGINT CHECK ( altcode_2_id >= 0 ) ,
--- FOREIGN KEY : resname_2 ( resname_2_id )
-	resname_2_id BIGINT CHECK ( resname_2_id >= 0 ) ,
--- FOREIGN KEY : seq_2 ( seq_2_id )
-	seq_2_id BIGINT CHECK ( seq_2_id >= 0 ) ,
--- FOREIGN KEY : said_2 ( said_2_id )
-	said_2_id BIGINT CHECK ( said_2_id >= 0 ) ,
--- FOREIGN KEY : ent_2 ( ent_2_id )
-	ent_2_id BIGINT CHECK ( ent_2_id >= 0 ) ,
--- FOREIGN KEY : icode_2 ( icode_2_id )
-	icode_2_id BIGINT CHECK ( icode_2_id >= 0 ) ,
--- FOREIGN KEY : ang_rest_type ( ang_rest_type_id )
-	ang_rest_type_id BIGINT CHECK ( ang_rest_type_id >= 0 ) ,
--- FOREIGN KEY : altcode_3 ( altcode_3_id )
-	altcode_3_id BIGINT CHECK ( altcode_3_id >= 0 ) ,
--- FOREIGN KEY : chain_3 ( chain_3_id )
-	chain_3_id BIGINT CHECK ( chain_3_id >= 0 ) ,
--- FOREIGN KEY : resname_3 ( resname_3_id )
-	resname_3_id BIGINT CHECK ( resname_3_id >= 0 ) ,
--- FOREIGN KEY : icode_3 ( icode_3_id )
-	icode_3_id BIGINT CHECK ( icode_3_id >= 0 ) ,
--- FOREIGN KEY : ent_3 ( ent_3_id )
-	ent_3_id BIGINT CHECK ( ent_3_id >= 0 ) ,
--- FOREIGN KEY : said_3 ( said_3_id )
-	said_3_id BIGINT CHECK ( said_3_id >= 0 ) ,
--- FOREIGN KEY : seq_3 ( seq_3_id )
-	seq_3_id BIGINT CHECK ( seq_3_id >= 0 ) ,
--- FOREIGN KEY : altcode_4 ( altcode_4_id )
-	altcode_4_id BIGINT CHECK ( altcode_4_id >= 0 ) ,
--- FOREIGN KEY : chain_4 ( chain_4_id )
-	chain_4_id BIGINT CHECK ( chain_4_id >= 0 ) ,
--- FOREIGN KEY : resname_4 ( resname_4_id )
-	resname_4_id BIGINT CHECK ( resname_4_id >= 0 ) ,
--- FOREIGN KEY : icode_4 ( icode_4_id )
-	icode_4_id BIGINT CHECK ( icode_4_id >= 0 ) ,
--- FOREIGN KEY : ent_4 ( ent_4_id )
-	ent_4_id BIGINT CHECK ( ent_4_id >= 0 ) ,
--- FOREIGN KEY : said_4 ( said_4_id )
-	said_4_id BIGINT CHECK ( said_4_id >= 0 ) ,
--- FOREIGN KEY : seq_4 ( seq_4_id )
-	seq_4_id BIGINT CHECK ( seq_4_id >= 0 )
-);
-
---
 -- A "Model" is one of the structures that are described by a PDB entry. Most NMR entries as well as some entries determined by other experimental techniques, contain an ensemble of models (structures). For most NMR entries, the models should be chemically identical - i.e., contain the exact same atoms, and will only differ in the cartesian coordinates of constituent atoms. For older NMR entries, and for non-NMR entries, this is not enforced.
 -- xmlns: no namespace, schema location: wwpdb_validation_v005.xsd
 -- type: root child, content: true, list: false, bridge: false, virtual: false
@@ -1656,7 +1526,6 @@ CREATE TABLE "Model" (
 -- FOREIGN KEY : "wwPDB-validation-information" ( "wwPDB-validation-information_id" )
 	"wwPDB-validation-information_id" BIGINT CHECK ( "wwPDB-validation-information_id" >= 0 ) ,
 -- ATTRIBUTE
--- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	model INTEGER ,
 -- ATTRIBUTE
 	nmrclust_cluster_id TEXT ,
@@ -1776,7 +1645,6 @@ CREATE TABLE clash (
 -- NESTED KEY AS ATTRIBUTE : atom ( atom_id, DELEGATED TO atom_name_id )
 	atom_id BIGINT CHECK ( atom_id >= 0 ) ,
 -- ATTRIBUTE
--- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	cid INTEGER NOT NULL ,
 -- ATTRIBUTE
 	clashmag DECIMAL NOT NULL ,
@@ -1785,89 +1653,9 @@ CREATE TABLE clash (
 );
 
 --
--- An identifier used to uniquely identify a particular restraints loop in the NMR-STAR file
--- xmlns: http://www.w3.org/2001/XMLSchema (xsd), schema location: wwpdb_validation_v005.xsd
--- type: admin root, content: false, list: false, bridge: false, virtual: true
---
-CREATE TABLE integer (
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
--- PRIMARY KEY
-	integer_id BIGINT CHECK ( integer_id >= 0 ) PRIMARY KEY ,
--- FOREIGN KEY : rlist_id ( rlist_id_id )
-	rlist_id_id BIGINT CHECK ( rlist_id_id >= 0 ) ,
--- FOREIGN KEY : rest_id ( rest_id_id )
-	rest_id_id BIGINT CHECK ( rest_id_id >= 0 ) ,
--- FOREIGN KEY : consistently_violated_count ( consistently_violated_count_id )
-	consistently_violated_count_id BIGINT CHECK ( consistently_violated_count_id >= 0 ) ,
--- FOREIGN KEY : restraints_count ( restraints_count_id )
-	restraints_count_id BIGINT CHECK ( restraints_count_id >= 0 ) ,
--- FOREIGN KEY : violated_count ( violated_count_id )
-	violated_count_id BIGINT CHECK ( violated_count_id >= 0 ) ,
--- FOREIGN KEY : violations_count ( violations_count_id )
-	violations_count_id BIGINT CHECK ( violations_count_id >= 0 ) ,
--- FOREIGN KEY : fraction_of_ensemble_count ( fraction_of_ensemble_count_id )
-	fraction_of_ensemble_count_id BIGINT CHECK ( fraction_of_ensemble_count_id >= 0 ) ,
--- FOREIGN KEY : resnum_1 ( resnum_1_id )
-	resnum_1_id BIGINT CHECK ( resnum_1_id >= 0 ) ,
--- FOREIGN KEY : resnum_2 ( resnum_2_id )
-	resnum_2_id BIGINT CHECK ( resnum_2_id >= 0 ) ,
--- FOREIGN KEY : violated_models ( violated_models_id )
-	violated_models_id BIGINT CHECK ( violated_models_id >= 0 ) ,
--- FOREIGN KEY : resnum_3 ( resnum_3_id )
-	resnum_3_id BIGINT CHECK ( resnum_3_id >= 0 ) ,
--- FOREIGN KEY : resnum_4 ( resnum_4_id )
-	resnum_4_id BIGINT CHECK ( resnum_4_id >= 0 )
-);
-
---
--- The absolute value of the distance violation mearured in Angstrom.
--- xmlns: http://www.w3.org/2001/XMLSchema (xsd), schema location: wwpdb_validation_v005.xsd
--- type: admin root, content: false, list: false, bridge: false, virtual: true
---
-CREATE TABLE decimal (
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
--- PRIMARY KEY
-	decimal_id BIGINT CHECK ( decimal_id >= 0 ) PRIMARY KEY ,
--- FOREIGN KEY : dist_violation_value ( dist_violation_value_id )
-	dist_violation_value_id BIGINT CHECK ( dist_violation_value_id >= 0 ) ,
--- FOREIGN KEY : "DihedralAngViolationValue" ( "DihedralAngViolationValue_id" )
-	"DihedralAngViolationValue_id" BIGINT CHECK ( "DihedralAngViolationValue_id" >= 0 ) ,
--- FOREIGN KEY : max_violation ( max_violation_id )
-	max_violation_id BIGINT CHECK ( max_violation_id >= 0 ) ,
--- FOREIGN KEY : violations_per_model ( violations_per_model_id )
-	violations_per_model_id BIGINT CHECK ( violations_per_model_id >= 0 ) ,
--- FOREIGN KEY : consistently_violated_percent_total ( consistently_violated_percent_total_id )
-	consistently_violated_percent_total_id BIGINT CHECK ( consistently_violated_percent_total_id >= 0 ) ,
--- FOREIGN KEY : consistently_violated_percent_type ( consistently_violated_percent_type_id )
-	consistently_violated_percent_type_id BIGINT CHECK ( consistently_violated_percent_type_id >= 0 ) ,
--- FOREIGN KEY : percent_total ( percent_total_id )
-	percent_total_id BIGINT CHECK ( percent_total_id >= 0 ) ,
--- FOREIGN KEY : violated_percent_total ( violated_percent_total_id )
-	violated_percent_total_id BIGINT CHECK ( violated_percent_total_id >= 0 ) ,
--- FOREIGN KEY : violated_percent_type ( violated_percent_type_id )
-	violated_percent_type_id BIGINT CHECK ( violated_percent_type_id >= 0 ) ,
--- FOREIGN KEY : mean_violation ( mean_violation_id )
-	mean_violation_id BIGINT CHECK ( mean_violation_id >= 0 ) ,
--- FOREIGN KEY : standard_deviation ( standard_deviation_id )
-	standard_deviation_id BIGINT CHECK ( standard_deviation_id >= 0 ) ,
--- FOREIGN KEY : median_violation ( median_violation_id )
-	median_violation_id BIGINT CHECK ( median_violation_id >= 0 ) ,
--- FOREIGN KEY : fraction_of_ensemble_percent ( fraction_of_ensemble_percent_id )
-	fraction_of_ensemble_percent_id BIGINT CHECK ( fraction_of_ensemble_percent_id >= 0 ) ,
--- FOREIGN KEY : mean_distance_violation ( mean_distance_violation_id )
-	mean_distance_violation_id BIGINT CHECK ( mean_distance_violation_id >= 0 ) ,
--- FOREIGN KEY : violation ( violation_id )
-	violation_id BIGINT CHECK ( violation_id >= 0 ) ,
--- FOREIGN KEY : "MeanAngleViolation" ( "MeanAngleViolation_id" )
-	"MeanAngleViolation_id" BIGINT CHECK ( "MeanAngleViolation_id" >= 0 )
-);
-
---
--- Distance violation calculated by BMRB restraints validation package. If a given pair of atom/group of atoms are not with in the expected range given by NOE distance restrant, then the absoulte value of how far away from the expected rage is given as violation
+-- Distance violation calculated by BMRB restraints validation package. If a given pair of atom/group of atoms are not with in the expected range given by NOE distance restraint, then the absolute value of how far away from the expected rage is given as violation
 -- xmlns: no namespace, schema location: wwpdb_validation_v005.xsd
--- type: root child, content: false, list: false, bridge: false, virtual: false
+-- type: root child, content: true, list: false, bridge: true, virtual: false
 --
 CREATE TABLE distance_violation (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
@@ -1877,12 +1665,14 @@ CREATE TABLE distance_violation (
 	"ModelledSubgroup_id" BIGINT CHECK ( "ModelledSubgroup_id" >= 0 ) ,
 -- NESTED KEY AS ATTRIBUTE : atom ( atom_id, DELEGATED TO atom_name_id )
 	atom_id BIGINT CHECK ( atom_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : rlist_id ( rlist_id_id )
-	rlist_id_id BIGINT CHECK ( rlist_id_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : rest_id ( rest_id_id )
-	rest_id_id BIGINT CHECK ( rest_id_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : dist_violation_value ( dist_violation_value_id )
-	dist_violation_value_id BIGINT CHECK ( dist_violation_value_id >= 0 )
+-- ATTRIBUTE
+-- map mathematical concept of integer numbers (xs:integer) to signed int 32 bits
+	rlist_id INTEGER ,
+-- ATTRIBUTE
+-- map mathematical concept of integer numbers (xs:integer) to signed int 32 bits
+	rest_id INTEGER ,
+-- ATTRIBUTE
+	dist_violation_value DECIMAL
 );
 
 --
@@ -1901,7 +1691,6 @@ CREATE TABLE "symm-clash" (
 -- ATTRIBUTE
 	symop TEXT NOT NULL ,
 -- ATTRIBUTE
--- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	scid INTEGER NOT NULL ,
 -- ATTRIBUTE
 	clashmag DECIMAL NOT NULL ,
@@ -1929,7 +1718,6 @@ CREATE TABLE "mog-bond-outlier" (
 -- ATTRIBUTE
 	stdev DECIMAL ,
 -- ATTRIBUTE
--- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	numobs INTEGER ,
 -- ATTRIBUTE
 	"Zscore" DECIMAL ,
@@ -1957,7 +1745,6 @@ CREATE TABLE "mog-angle-outlier" (
 -- ATTRIBUTE
 	stdev DECIMAL ,
 -- ATTRIBUTE
--- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	numobs INTEGER ,
 -- ATTRIBUTE
 	"Zscore" DECIMAL ,
@@ -1985,7 +1772,6 @@ CREATE TABLE "mog-torsion-outlier" (
 -- ATTRIBUTE
 	mindiff DECIMAL ,
 -- ATTRIBUTE
--- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	numobs INTEGER ,
 -- ATTRIBUTE
 	stdev DECIMAL ,
@@ -2013,14 +1799,13 @@ CREATE TABLE "mog-ring-outlier" (
 -- ATTRIBUTE
 	stdev DECIMAL ,
 -- ATTRIBUTE
--- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	numobs INTEGER
 );
 
 --
--- Dihedral-angle violation is calculated by BMRB restraints validation package. If a given dihedral-angle is not with in the expected range given by dihedral-angle restrants, then the absoulte value of how far away from the expected rage is gven as violation.
+-- Dihedral-angle violation is calculated by BMRB restraints validation package. If a given dihedral-angle is not with in the expected range given by dihedral-angle restraints, then the absolute value of how far away from the expected rage is given as violation.
 -- xmlns: no namespace, schema location: wwpdb_validation_v005.xsd
--- type: root child, content: false, list: false, bridge: false, virtual: false
+-- type: root child, content: true, list: false, bridge: true, virtual: false
 --
 CREATE TABLE dihedral_angle_violation (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
@@ -2030,12 +1815,14 @@ CREATE TABLE dihedral_angle_violation (
 	"ModelledSubgroup_id" BIGINT CHECK ( "ModelledSubgroup_id" >= 0 ) ,
 -- NESTED KEY AS ATTRIBUTE : atom ( atom_id, DELEGATED TO atom_name_id )
 	atom_id BIGINT CHECK ( atom_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : rlist_id ( rlist_id_id )
-	rlist_id_id BIGINT CHECK ( rlist_id_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : rest_id ( rest_id_id )
-	rest_id_id BIGINT CHECK ( rest_id_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : "DihedralAngViolationValue" ( "DihedralAngViolationValue_id" )
-	"DihedralAngViolationValue_id" BIGINT CHECK ( "DihedralAngViolationValue_id" >= 0 )
+-- ATTRIBUTE
+-- map mathematical concept of integer numbers (xs:integer) to signed int 32 bits
+	rlist_id INTEGER ,
+-- ATTRIBUTE
+-- map mathematical concept of integer numbers (xs:integer) to signed int 32 bits
+	rest_id INTEGER ,
+-- ATTRIBUTE
+	"DihedralAngViolationValue" DECIMAL
 );
 
 --
@@ -2050,20 +1837,16 @@ CREATE TABLE cyrange_domain (
 -- FOREIGN KEY : "wwPDB-validation-information" ( "wwPDB-validation-information_id" )
 	"wwPDB-validation-information_id" BIGINT CHECK ( "wwPDB-validation-information_id" >= 0 ) ,
 -- ATTRIBUTE
--- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	domain INTEGER ,
 -- ATTRIBUTE
--- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	number_of_gaps INTEGER ,
 -- ATTRIBUTE
--- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	number_of_residues INTEGER ,
 -- ATTRIBUTE
 	percentage_of_core DECIMAL ,
 -- ATTRIBUTE
 	rmsd DECIMAL ,
 -- ATTRIBUTE
--- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	medoid_model INTEGER ,
 -- ATTRIBUTE
 	medoid_rmsd DECIMAL ,
@@ -2099,10 +1882,8 @@ CREATE TABLE "ModelledEntityInstance" (
 -- ATTRIBUTE
 	bonds_rmsz DECIMAL ,
 -- ATTRIBUTE
--- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	num_bonds_rmsz INTEGER ,
 -- ATTRIBUTE
--- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	num_angles_rmsz INTEGER ,
 -- ATTRIBUTE
 	average_residue_inclusion DECIMAL ,
@@ -2242,9 +2023,9 @@ CREATE TABLE program (
 );
 
 --
--- Number of restraints in different restraint cagtogries are listed here
+-- Number of restraints in different restraint categories are listed here
 -- xmlns: no namespace, schema location: wwpdb_validation_v005.xsd
--- type: root child, content: true, list: false, bridge: true, virtual: false
+-- type: root child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE restraint_summary (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
@@ -2252,8 +2033,8 @@ CREATE TABLE restraint_summary (
 	restraint_summary_id BIGINT CHECK ( restraint_summary_id >= 0 ) ,
 -- FOREIGN KEY : conformationally_restricting_restraints ( conformationally_restricting_restraints_id )
 	conformationally_restricting_restraints_id BIGINT CHECK ( conformationally_restricting_restraints_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : description ( description_id )
-	description_id BIGINT CHECK ( description_id >= 0 ) ,
+-- ATTRIBUTE
+	description TEXT NOT NULL ,
 -- ATTRIBUTE
 	value DECIMAL
 );
@@ -2261,7 +2042,7 @@ CREATE TABLE restraint_summary (
 --
 -- Distance Violation statistics with in the bin
 -- xmlns: no namespace, schema location: wwpdb_validation_v005.xsd
--- type: root child, content: false, list: false, bridge: false, virtual: false
+-- type: root child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE residual_distance_violation (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
@@ -2269,18 +2050,18 @@ CREATE TABLE residual_distance_violation (
 	residual_distance_violation_id BIGINT CHECK ( residual_distance_violation_id >= 0 ) ,
 -- FOREIGN KEY : residual_distance_violations ( residual_distance_violations_id )
 	residual_distance_violations_id BIGINT CHECK ( residual_distance_violations_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : max_violation ( max_violation_id )
-	max_violation_id BIGINT CHECK ( max_violation_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : bins ( bins_id )
-	bins_id BIGINT CHECK ( bins_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : violations_per_model ( violations_per_model_id )
-	violations_per_model_id BIGINT CHECK ( violations_per_model_id >= 0 )
+-- ATTRIBUTE
+	max_violation DECIMAL ,
+-- ATTRIBUTE
+	bins TEXT NOT NULL ,
+-- ATTRIBUTE
+	violations_per_model DECIMAL NOT NULL
 );
 
 --
--- Dihedral-angle Violation statistics with in the bin
+-- Dihedral-angle violation statistics with in the bin
 -- xmlns: no namespace, schema location: wwpdb_validation_v005.xsd
--- type: root child, content: false, list: false, bridge: false, virtual: false
+-- type: root child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE residual_angle_violation (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
@@ -2288,18 +2069,18 @@ CREATE TABLE residual_angle_violation (
 	residual_angle_violation_id BIGINT CHECK ( residual_angle_violation_id >= 0 ) ,
 -- FOREIGN KEY : residual_angle_violations ( residual_angle_violations_id )
 	residual_angle_violations_id BIGINT CHECK ( residual_angle_violations_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : max_violation ( max_violation_id )
-	max_violation_id BIGINT CHECK ( max_violation_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : bins ( bins_id )
-	bins_id BIGINT CHECK ( bins_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : violations_per_model ( violations_per_model_id )
-	violations_per_model_id BIGINT CHECK ( violations_per_model_id >= 0 )
+-- ATTRIBUTE
+	max_violation DECIMAL ,
+-- ATTRIBUTE
+	bins TEXT NOT NULL ,
+-- ATTRIBUTE
+	violations_per_model DECIMAL NOT NULL
 );
 
 --
--- Violated and consistently violaged statistics in differnt restraints type
+-- Violated and consistently violated statistics in different restraints type
 -- xmlns: no namespace, schema location: wwpdb_validation_v005.xsd
--- type: root child, content: false, list: false, bridge: false, virtual: false
+-- type: root child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE distance_violation_summary (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
@@ -2307,30 +2088,33 @@ CREATE TABLE distance_violation_summary (
 	distance_violation_summary_id BIGINT CHECK ( distance_violation_summary_id >= 0 ) ,
 -- FOREIGN KEY : distance_violations_summary ( distance_violations_summary_id )
 	distance_violations_summary_id BIGINT CHECK ( distance_violations_summary_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : restraint_type ( restraint_type_id )
-	restraint_type_id BIGINT CHECK ( restraint_type_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : consistently_violated_count ( consistently_violated_count_id )
-	consistently_violated_count_id BIGINT CHECK ( consistently_violated_count_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : consistently_violated_percent_total ( consistently_violated_percent_total_id )
-	consistently_violated_percent_total_id BIGINT CHECK ( consistently_violated_percent_total_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : consistently_violated_percent_type ( consistently_violated_percent_type_id )
-	consistently_violated_percent_type_id BIGINT CHECK ( consistently_violated_percent_type_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : restraints_count ( restraints_count_id )
-	restraints_count_id BIGINT CHECK ( restraints_count_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : violated_count ( violated_count_id )
-	violated_count_id BIGINT CHECK ( violated_count_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : percent_total ( percent_total_id )
-	percent_total_id BIGINT CHECK ( percent_total_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : violated_percent_total ( violated_percent_total_id )
-	violated_percent_total_id BIGINT CHECK ( violated_percent_total_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : violated_percent_type ( violated_percent_type_id )
-	violated_percent_type_id BIGINT CHECK ( violated_percent_type_id >= 0 )
+-- ATTRIBUTE
+	restraint_type TEXT ,
+-- ATTRIBUTE
+-- map mathematical concept of integer numbers (xs:integer) to signed int 32 bits
+	consistently_violated_count INTEGER ,
+-- ATTRIBUTE
+	consistently_violated_percent_total DECIMAL NOT NULL ,
+-- ATTRIBUTE
+	consistently_violated_percent_type DECIMAL NOT NULL ,
+-- ATTRIBUTE
+-- map mathematical concept of integer numbers (xs:integer) to signed int 32 bits
+	restraints_count INTEGER ,
+-- ATTRIBUTE
+-- map mathematical concept of integer numbers (xs:integer) to signed int 32 bits
+	violated_count INTEGER ,
+-- ATTRIBUTE
+	percent_total DECIMAL ,
+-- ATTRIBUTE
+	violated_percent_total DECIMAL ,
+-- ATTRIBUTE
+	violated_percent_type DECIMAL
 );
 
 --
 -- The type to distance restraint (Intraresidue, sequential, etc.. ) and its violations
 -- xmlns: no namespace, schema location: wwpdb_validation_v005.xsd
--- type: root child, content: false, list: false, bridge: false, virtual: false
+-- type: root child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE dist_rest_types (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
@@ -2338,10 +2122,11 @@ CREATE TABLE dist_rest_types (
 	dist_rest_types_id BIGINT CHECK ( dist_rest_types_id >= 0 ) ,
 -- FOREIGN KEY : distance_violations_in_model ( distance_violations_in_model_id )
 	distance_violations_in_model_id BIGINT CHECK ( distance_violations_in_model_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : dist_rest_type ( dist_rest_type_id )
-	dist_rest_type_id BIGINT CHECK ( dist_rest_type_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : violations_count ( violations_count_id )
-	violations_count_id BIGINT CHECK ( violations_count_id >= 0 ) ,
+-- ATTRIBUTE
+	dist_rest_type TEXT ,
+-- ATTRIBUTE
+-- map mathematical concept of integer numbers (xs:integer) to signed int 32 bits
+	violations_count INTEGER ,
 -- FOREIGN KEY : distance_violation_in_ensemble ( distance_violation_in_ensemble_id )
 	distance_violation_in_ensemble_id BIGINT CHECK ( distance_violation_in_ensemble_id >= 0 )
 );
@@ -2349,7 +2134,7 @@ CREATE TABLE dist_rest_types (
 --
 -- Restraints that are violated in 'n' models
 -- xmlns: no namespace, schema location: wwpdb_validation_v005.xsd
--- type: root child, content: false, list: false, bridge: false, virtual: false
+-- type: root child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE most_violated_distance_restraint (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
@@ -2357,50 +2142,55 @@ CREATE TABLE most_violated_distance_restraint (
 	most_violated_distance_restraint_id BIGINT CHECK ( most_violated_distance_restraint_id >= 0 ) ,
 -- FOREIGN KEY : most_violated_distance_restraints ( most_violated_distance_restraints_id )
 	most_violated_distance_restraints_id BIGINT CHECK ( most_violated_distance_restraints_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : altcode_1 ( altcode_1_id )
-	altcode_1_id BIGINT CHECK ( altcode_1_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : chain_1 ( chain_1_id )
-	chain_1_id BIGINT CHECK ( chain_1_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : resnum_1 ( resnum_1_id )
-	resnum_1_id BIGINT CHECK ( resnum_1_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : resname_1 ( resname_1_id )
-	resname_1_id BIGINT CHECK ( resname_1_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : icode_1 ( icode_1_id )
-	icode_1_id BIGINT CHECK ( icode_1_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : ent_1 ( ent_1_id )
-	ent_1_id BIGINT CHECK ( ent_1_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : said_1 ( said_1_id )
-	said_1_id BIGINT CHECK ( said_1_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : seq_1 ( seq_1_id )
-	seq_1_id BIGINT CHECK ( seq_1_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : chain_2 ( chain_2_id )
-	chain_2_id BIGINT CHECK ( chain_2_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : altcode_2 ( altcode_2_id )
-	altcode_2_id BIGINT CHECK ( altcode_2_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : resnum_2 ( resnum_2_id )
-	resnum_2_id BIGINT CHECK ( resnum_2_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : resname_2 ( resname_2_id )
-	resname_2_id BIGINT CHECK ( resname_2_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : seq_2 ( seq_2_id )
-	seq_2_id BIGINT CHECK ( seq_2_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : said_2 ( said_2_id )
-	said_2_id BIGINT CHECK ( said_2_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : ent_2 ( ent_2_id )
-	ent_2_id BIGINT CHECK ( ent_2_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : icode_2 ( icode_2_id )
-	icode_2_id BIGINT CHECK ( icode_2_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : mean_distance_violation ( mean_distance_violation_id )
-	mean_distance_violation_id BIGINT CHECK ( mean_distance_violation_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : median_violation ( median_violation_id )
-	median_violation_id BIGINT CHECK ( median_violation_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : standard_deviation ( standard_deviation_id )
-	standard_deviation_id BIGINT CHECK ( standard_deviation_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : violated_models ( violated_models_id )
-	violated_models_id BIGINT CHECK ( violated_models_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : rlist_id ( rlist_id_id )
-	rlist_id_id BIGINT CHECK ( rlist_id_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : rest_id ( rest_id_id )
-	rest_id_id BIGINT CHECK ( rest_id_id >= 0 )
+-- ATTRIBUTE
+	altcode_1 TEXT NOT NULL ,
+-- ATTRIBUTE
+	chain_1 TEXT NOT NULL ,
+-- ATTRIBUTE
+-- map mathematical concept of integer numbers (xs:integer) to signed int 32 bits
+	resnum_1 INTEGER NOT NULL ,
+-- ATTRIBUTE
+	resname_1 TEXT NOT NULL ,
+-- ATTRIBUTE
+	icode_1 TEXT NOT NULL ,
+-- ATTRIBUTE
+	ent_1 TEXT NOT NULL ,
+-- ATTRIBUTE
+	said_1 TEXT NOT NULL ,
+-- ATTRIBUTE
+	seq_1 TEXT NOT NULL ,
+-- ATTRIBUTE
+	chain_2 TEXT NOT NULL ,
+-- ATTRIBUTE
+	altcode_2 TEXT NOT NULL ,
+-- ATTRIBUTE
+-- map mathematical concept of integer numbers (xs:integer) to signed int 32 bits
+	resnum_2 INTEGER NOT NULL ,
+-- ATTRIBUTE
+	resname_2 TEXT NOT NULL ,
+-- ATTRIBUTE
+	seq_2 TEXT NOT NULL ,
+-- ATTRIBUTE
+	said_2 TEXT NOT NULL ,
+-- ATTRIBUTE
+	ent_2 TEXT NOT NULL ,
+-- ATTRIBUTE
+	icode_2 TEXT NOT NULL ,
+-- ATTRIBUTE
+	mean_distance_violation DECIMAL ,
+-- ATTRIBUTE
+	median_violation DECIMAL ,
+-- ATTRIBUTE
+	standard_deviation DECIMAL ,
+-- ATTRIBUTE
+-- map mathematical concept of integer numbers (xs:integer) to signed int 32 bits
+	violated_models INTEGER ,
+-- ATTRIBUTE
+-- map mathematical concept of integer numbers (xs:integer) to signed int 32 bits
+	rlist_id INTEGER ,
+-- ATTRIBUTE
+-- map mathematical concept of integer numbers (xs:integer) to signed int 32 bits
+	rest_id INTEGER
 );
 
 --
@@ -2414,52 +2204,56 @@ CREATE TABLE violated_distance_restraint (
 	violated_distance_restraint_id BIGINT CHECK ( violated_distance_restraint_id >= 0 ) ,
 -- FOREIGN KEY : violated_distance_restraints ( violated_distance_restraints_id )
 	violated_distance_restraints_id BIGINT CHECK ( violated_distance_restraints_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : altcode_1 ( altcode_1_id )
-	altcode_1_id BIGINT CHECK ( altcode_1_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : chain_1 ( chain_1_id )
-	chain_1_id BIGINT CHECK ( chain_1_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : resnum_1 ( resnum_1_id )
-	resnum_1_id BIGINT CHECK ( resnum_1_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : resname_1 ( resname_1_id )
-	resname_1_id BIGINT CHECK ( resname_1_id >= 0 ) ,
+-- ATTRIBUTE
+	altcode_1 TEXT NOT NULL ,
+-- ATTRIBUTE
+	chain_1 TEXT NOT NULL ,
+-- ATTRIBUTE
+-- map mathematical concept of integer numbers (xs:integer) to signed int 32 bits
+	resnum_1 INTEGER NOT NULL ,
+-- ATTRIBUTE
+	resname_1 TEXT NOT NULL ,
 -- ATTRIBUTE
 	model TEXT ,
--- NESTED KEY AS ATTRIBUTE : icode_1 ( icode_1_id )
-	icode_1_id BIGINT CHECK ( icode_1_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : ent_1 ( ent_1_id )
-	ent_1_id BIGINT CHECK ( ent_1_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : said_1 ( said_1_id )
-	said_1_id BIGINT CHECK ( said_1_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : seq_1 ( seq_1_id )
-	seq_1_id BIGINT CHECK ( seq_1_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : chain_2 ( chain_2_id )
-	chain_2_id BIGINT CHECK ( chain_2_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : altcode_2 ( altcode_2_id )
-	altcode_2_id BIGINT CHECK ( altcode_2_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : resnum_2 ( resnum_2_id )
-	resnum_2_id BIGINT CHECK ( resnum_2_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : resname_2 ( resname_2_id )
-	resname_2_id BIGINT CHECK ( resname_2_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : seq_2 ( seq_2_id )
-	seq_2_id BIGINT CHECK ( seq_2_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : said_2 ( said_2_id )
-	said_2_id BIGINT CHECK ( said_2_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : ent_2 ( ent_2_id )
-	ent_2_id BIGINT CHECK ( ent_2_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : icode_2 ( icode_2_id )
-	icode_2_id BIGINT CHECK ( icode_2_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : violation ( violation_id )
-	violation_id BIGINT CHECK ( violation_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : rlist_id ( rlist_id_id )
-	rlist_id_id BIGINT CHECK ( rlist_id_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : rest_id ( rest_id_id )
-	rest_id_id BIGINT CHECK ( rest_id_id >= 0 )
+-- ATTRIBUTE
+	icode_1 TEXT NOT NULL ,
+-- ATTRIBUTE
+	ent_1 TEXT NOT NULL ,
+-- ATTRIBUTE
+	said_1 TEXT NOT NULL ,
+-- ATTRIBUTE
+	seq_1 TEXT NOT NULL ,
+-- ATTRIBUTE
+	chain_2 TEXT NOT NULL ,
+-- ATTRIBUTE
+	altcode_2 TEXT NOT NULL ,
+-- ATTRIBUTE
+-- map mathematical concept of integer numbers (xs:integer) to signed int 32 bits
+	resnum_2 INTEGER NOT NULL ,
+-- ATTRIBUTE
+	resname_2 TEXT NOT NULL ,
+-- ATTRIBUTE
+	seq_2 TEXT NOT NULL ,
+-- ATTRIBUTE
+	said_2 TEXT NOT NULL ,
+-- ATTRIBUTE
+	ent_2 TEXT NOT NULL ,
+-- ATTRIBUTE
+	icode_2 TEXT NOT NULL ,
+-- ATTRIBUTE
+	violation DECIMAL ,
+-- ATTRIBUTE
+-- map mathematical concept of integer numbers (xs:integer) to signed int 32 bits
+	rlist_id INTEGER ,
+-- ATTRIBUTE
+-- map mathematical concept of integer numbers (xs:integer) to signed int 32 bits
+	rest_id INTEGER
 );
 
 --
--- Violated and consistently violaged statistics in differnt restraints type
+-- Violated and consistently violated statistics in different restraints type
 -- xmlns: no namespace, schema location: wwpdb_validation_v005.xsd
--- type: root child, content: false, list: false, bridge: false, virtual: false
+-- type: root child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE dihedralangle_violation_summary (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
@@ -2467,30 +2261,33 @@ CREATE TABLE dihedralangle_violation_summary (
 	dihedralangle_violation_summary_id BIGINT CHECK ( dihedralangle_violation_summary_id >= 0 ) ,
 -- FOREIGN KEY : dihedralangle_violations_summary ( dihedralangle_violations_summary_id )
 	dihedralangle_violations_summary_id BIGINT CHECK ( dihedralangle_violations_summary_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : restraint_type ( restraint_type_id )
-	restraint_type_id BIGINT CHECK ( restraint_type_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : consistently_violated_count ( consistently_violated_count_id )
-	consistently_violated_count_id BIGINT CHECK ( consistently_violated_count_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : consistently_violated_percent_total ( consistently_violated_percent_total_id )
-	consistently_violated_percent_total_id BIGINT CHECK ( consistently_violated_percent_total_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : consistently_violated_percent_type ( consistently_violated_percent_type_id )
-	consistently_violated_percent_type_id BIGINT CHECK ( consistently_violated_percent_type_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : restraints_count ( restraints_count_id )
-	restraints_count_id BIGINT CHECK ( restraints_count_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : violated_count ( violated_count_id )
-	violated_count_id BIGINT CHECK ( violated_count_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : percent_total ( percent_total_id )
-	percent_total_id BIGINT CHECK ( percent_total_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : violated_percent_total ( violated_percent_total_id )
-	violated_percent_total_id BIGINT CHECK ( violated_percent_total_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : violated_percent_type ( violated_percent_type_id )
-	violated_percent_type_id BIGINT CHECK ( violated_percent_type_id >= 0 )
+-- ATTRIBUTE
+	restraint_type TEXT ,
+-- ATTRIBUTE
+-- map mathematical concept of integer numbers (xs:integer) to signed int 32 bits
+	consistently_violated_count INTEGER ,
+-- ATTRIBUTE
+	consistently_violated_percent_total DECIMAL NOT NULL ,
+-- ATTRIBUTE
+	consistently_violated_percent_type DECIMAL NOT NULL ,
+-- ATTRIBUTE
+-- map mathematical concept of integer numbers (xs:integer) to signed int 32 bits
+	restraints_count INTEGER ,
+-- ATTRIBUTE
+-- map mathematical concept of integer numbers (xs:integer) to signed int 32 bits
+	violated_count INTEGER ,
+-- ATTRIBUTE
+	percent_total DECIMAL ,
+-- ATTRIBUTE
+	violated_percent_total DECIMAL ,
+-- ATTRIBUTE
+	violated_percent_type DECIMAL
 );
 
 --
--- The type to dihedral-anlge restraint (PHI,PSIetc ) and its violations
+-- The type to dihedral-angle restraint (PHI,PSIetc ) and its violations
 -- xmlns: no namespace, schema location: wwpdb_validation_v005.xsd
--- type: root child, content: false, list: false, bridge: false, virtual: false
+-- type: root child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE ang_rest_types (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
@@ -2498,10 +2295,11 @@ CREATE TABLE ang_rest_types (
 	ang_rest_types_id BIGINT CHECK ( ang_rest_types_id >= 0 ) ,
 -- FOREIGN KEY : dihedralangle_violations_in_model ( dihedralangle_violations_in_model_id )
 	dihedralangle_violations_in_model_id BIGINT CHECK ( dihedralangle_violations_in_model_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : ang_rest_type ( ang_rest_type_id )
-	ang_rest_type_id BIGINT CHECK ( ang_rest_type_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : violations_count ( violations_count_id )
-	violations_count_id BIGINT CHECK ( violations_count_id >= 0 ) ,
+-- ATTRIBUTE
+	ang_rest_type TEXT ,
+-- ATTRIBUTE
+-- map mathematical concept of integer numbers (xs:integer) to signed int 32 bits
+	violations_count INTEGER ,
 -- FOREIGN KEY : dihedralangle_violation_in_ensemble ( dihedralangle_violation_in_ensemble_id )
 	dihedralangle_violation_in_ensemble_id BIGINT CHECK ( dihedralangle_violation_in_ensemble_id >= 0 )
 );
@@ -2509,7 +2307,7 @@ CREATE TABLE ang_rest_types (
 --
 -- Restraints that are violated in 'n' models
 -- xmlns: no namespace, schema location: wwpdb_validation_v005.xsd
--- type: root child, content: false, list: false, bridge: false, virtual: false
+-- type: root child, content: true, list: false, bridge: false, virtual: false
 --
 CREATE TABLE most_violated_dihedralangle_restraint (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
@@ -2517,88 +2315,96 @@ CREATE TABLE most_violated_dihedralangle_restraint (
 	most_violated_dihedralangle_restraint_id BIGINT CHECK ( most_violated_dihedralangle_restraint_id >= 0 ) ,
 -- FOREIGN KEY : most_violated_dihedralangle_restraints ( most_violated_dihedralangle_restraints_id )
 	most_violated_dihedralangle_restraints_id BIGINT CHECK ( most_violated_dihedralangle_restraints_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : altcode_1 ( altcode_1_id )
-	altcode_1_id BIGINT CHECK ( altcode_1_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : chain_1 ( chain_1_id )
-	chain_1_id BIGINT CHECK ( chain_1_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : resnum_1 ( resnum_1_id )
-	resnum_1_id BIGINT CHECK ( resnum_1_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : resname_1 ( resname_1_id )
-	resname_1_id BIGINT CHECK ( resname_1_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : icode_1 ( icode_1_id )
-	icode_1_id BIGINT CHECK ( icode_1_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : ent_1 ( ent_1_id )
-	ent_1_id BIGINT CHECK ( ent_1_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : said_1 ( said_1_id )
-	said_1_id BIGINT CHECK ( said_1_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : seq_1 ( seq_1_id )
-	seq_1_id BIGINT CHECK ( seq_1_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : chain_2 ( chain_2_id )
-	chain_2_id BIGINT CHECK ( chain_2_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : altcode_2 ( altcode_2_id )
-	altcode_2_id BIGINT CHECK ( altcode_2_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : resnum_2 ( resnum_2_id )
-	resnum_2_id BIGINT CHECK ( resnum_2_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : resname_2 ( resname_2_id )
-	resname_2_id BIGINT CHECK ( resname_2_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : seq_2 ( seq_2_id )
-	seq_2_id BIGINT CHECK ( seq_2_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : said_2 ( said_2_id )
-	said_2_id BIGINT CHECK ( said_2_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : ent_2 ( ent_2_id )
-	ent_2_id BIGINT CHECK ( ent_2_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : icode_2 ( icode_2_id )
-	icode_2_id BIGINT CHECK ( icode_2_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : "MeanAngleViolation" ( "MeanAngleViolation_id" )
-	"MeanAngleViolation_id" BIGINT CHECK ( "MeanAngleViolation_id" >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : standard_deviation ( standard_deviation_id )
-	standard_deviation_id BIGINT CHECK ( standard_deviation_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : median_violation ( median_violation_id )
-	median_violation_id BIGINT CHECK ( median_violation_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : violations_count ( violations_count_id )
-	violations_count_id BIGINT CHECK ( violations_count_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : altcode_3 ( altcode_3_id )
-	altcode_3_id BIGINT CHECK ( altcode_3_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : chain_3 ( chain_3_id )
-	chain_3_id BIGINT CHECK ( chain_3_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : resnum_3 ( resnum_3_id )
-	resnum_3_id BIGINT CHECK ( resnum_3_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : resname_3 ( resname_3_id )
-	resname_3_id BIGINT CHECK ( resname_3_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : icode_3 ( icode_3_id )
-	icode_3_id BIGINT CHECK ( icode_3_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : ent_3 ( ent_3_id )
-	ent_3_id BIGINT CHECK ( ent_3_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : said_3 ( said_3_id )
-	said_3_id BIGINT CHECK ( said_3_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : seq_3 ( seq_3_id )
-	seq_3_id BIGINT CHECK ( seq_3_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : altcode_4 ( altcode_4_id )
-	altcode_4_id BIGINT CHECK ( altcode_4_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : chain_4 ( chain_4_id )
-	chain_4_id BIGINT CHECK ( chain_4_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : resnum_4 ( resnum_4_id )
-	resnum_4_id BIGINT CHECK ( resnum_4_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : resname_4 ( resname_4_id )
-	resname_4_id BIGINT CHECK ( resname_4_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : icode_4 ( icode_4_id )
-	icode_4_id BIGINT CHECK ( icode_4_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : ent_4 ( ent_4_id )
-	ent_4_id BIGINT CHECK ( ent_4_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : said_4 ( said_4_id )
-	said_4_id BIGINT CHECK ( said_4_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : seq_4 ( seq_4_id )
-	seq_4_id BIGINT CHECK ( seq_4_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : violated_models ( violated_models_id )
-	violated_models_id BIGINT CHECK ( violated_models_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : rlist_id ( rlist_id_id )
-	rlist_id_id BIGINT CHECK ( rlist_id_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : rest_id ( rest_id_id )
-	rest_id_id BIGINT CHECK ( rest_id_id >= 0 )
+-- ATTRIBUTE
+	altcode_1 TEXT NOT NULL ,
+-- ATTRIBUTE
+	chain_1 TEXT NOT NULL ,
+-- ATTRIBUTE
+-- map mathematical concept of integer numbers (xs:integer) to signed int 32 bits
+	resnum_1 INTEGER NOT NULL ,
+-- ATTRIBUTE
+	resname_1 TEXT NOT NULL ,
+-- ATTRIBUTE
+	icode_1 TEXT NOT NULL ,
+-- ATTRIBUTE
+	ent_1 TEXT NOT NULL ,
+-- ATTRIBUTE
+	said_1 TEXT NOT NULL ,
+-- ATTRIBUTE
+	seq_1 TEXT NOT NULL ,
+-- ATTRIBUTE
+	chain_2 TEXT NOT NULL ,
+-- ATTRIBUTE
+	altcode_2 TEXT NOT NULL ,
+-- ATTRIBUTE
+-- map mathematical concept of integer numbers (xs:integer) to signed int 32 bits
+	resnum_2 INTEGER NOT NULL ,
+-- ATTRIBUTE
+	resname_2 TEXT NOT NULL ,
+-- ATTRIBUTE
+	seq_2 TEXT NOT NULL ,
+-- ATTRIBUTE
+	said_2 TEXT NOT NULL ,
+-- ATTRIBUTE
+	ent_2 TEXT NOT NULL ,
+-- ATTRIBUTE
+	icode_2 TEXT NOT NULL ,
+-- ATTRIBUTE
+	"MeanAngleViolation" DECIMAL ,
+-- ATTRIBUTE
+	standard_deviation DECIMAL ,
+-- ATTRIBUTE
+	median_violation DECIMAL ,
+-- ATTRIBUTE
+-- map mathematical concept of integer numbers (xs:integer) to signed int 32 bits
+	violations_count INTEGER ,
+-- ATTRIBUTE
+	altcode_3 TEXT NOT NULL ,
+-- ATTRIBUTE
+	chain_3 TEXT NOT NULL ,
+-- ATTRIBUTE
+-- map mathematical concept of integer numbers (xs:integer) to signed int 32 bits
+	resnum_3 INTEGER NOT NULL ,
+-- ATTRIBUTE
+	resname_3 TEXT NOT NULL ,
+-- ATTRIBUTE
+	icode_3 TEXT NOT NULL ,
+-- ATTRIBUTE
+	ent_3 TEXT NOT NULL ,
+-- ATTRIBUTE
+	said_3 TEXT NOT NULL ,
+-- ATTRIBUTE
+	seq_3 TEXT NOT NULL ,
+-- ATTRIBUTE
+	altcode_4 TEXT NOT NULL ,
+-- ATTRIBUTE
+	chain_4 TEXT NOT NULL ,
+-- ATTRIBUTE
+-- map mathematical concept of integer numbers (xs:integer) to signed int 32 bits
+	resnum_4 INTEGER NOT NULL ,
+-- ATTRIBUTE
+	resname_4 TEXT NOT NULL ,
+-- ATTRIBUTE
+	icode_4 TEXT NOT NULL ,
+-- ATTRIBUTE
+	ent_4 TEXT NOT NULL ,
+-- ATTRIBUTE
+	said_4 TEXT NOT NULL ,
+-- ATTRIBUTE
+	seq_4 TEXT NOT NULL ,
+-- ATTRIBUTE
+-- map mathematical concept of integer numbers (xs:integer) to signed int 32 bits
+	violated_models INTEGER ,
+-- ATTRIBUTE
+-- map mathematical concept of integer numbers (xs:integer) to signed int 32 bits
+	rlist_id INTEGER ,
+-- ATTRIBUTE
+-- map mathematical concept of integer numbers (xs:integer) to signed int 32 bits
+	rest_id INTEGER
 );
 
 --
--- Details about perticular dihedral-anlge violation
+-- Details about particular dihedral-angle violation
 -- xmlns: no namespace, schema location: wwpdb_validation_v005.xsd
 -- type: root child, content: true, list: false, bridge: false, virtual: false
 --
@@ -2608,78 +2414,84 @@ CREATE TABLE violated_dihedralangle_restraint (
 	violated_dihedralangle_restraint_id BIGINT CHECK ( violated_dihedralangle_restraint_id >= 0 ) ,
 -- FOREIGN KEY : violated_dihedralangle_restraints ( violated_dihedralangle_restraints_id )
 	violated_dihedralangle_restraints_id BIGINT CHECK ( violated_dihedralangle_restraints_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : altcode_1 ( altcode_1_id )
-	altcode_1_id BIGINT CHECK ( altcode_1_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : chain_1 ( chain_1_id )
-	chain_1_id BIGINT CHECK ( chain_1_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : resnum_1 ( resnum_1_id )
-	resnum_1_id BIGINT CHECK ( resnum_1_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : resname_1 ( resname_1_id )
-	resname_1_id BIGINT CHECK ( resname_1_id >= 0 ) ,
+-- ATTRIBUTE
+	altcode_1 TEXT NOT NULL ,
+-- ATTRIBUTE
+	chain_1 TEXT NOT NULL ,
+-- ATTRIBUTE
+-- map mathematical concept of integer numbers (xs:integer) to signed int 32 bits
+	resnum_1 INTEGER NOT NULL ,
+-- ATTRIBUTE
+	resname_1 TEXT NOT NULL ,
 -- ATTRIBUTE
 	model TEXT ,
--- NESTED KEY AS ATTRIBUTE : icode_1 ( icode_1_id )
-	icode_1_id BIGINT CHECK ( icode_1_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : ent_1 ( ent_1_id )
-	ent_1_id BIGINT CHECK ( ent_1_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : said_1 ( said_1_id )
-	said_1_id BIGINT CHECK ( said_1_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : seq_1 ( seq_1_id )
-	seq_1_id BIGINT CHECK ( seq_1_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : chain_2 ( chain_2_id )
-	chain_2_id BIGINT CHECK ( chain_2_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : altcode_2 ( altcode_2_id )
-	altcode_2_id BIGINT CHECK ( altcode_2_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : resnum_2 ( resnum_2_id )
-	resnum_2_id BIGINT CHECK ( resnum_2_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : resname_2 ( resname_2_id )
-	resname_2_id BIGINT CHECK ( resname_2_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : seq_2 ( seq_2_id )
-	seq_2_id BIGINT CHECK ( seq_2_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : said_2 ( said_2_id )
-	said_2_id BIGINT CHECK ( said_2_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : ent_2 ( ent_2_id )
-	ent_2_id BIGINT CHECK ( ent_2_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : icode_2 ( icode_2_id )
-	icode_2_id BIGINT CHECK ( icode_2_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : violation ( violation_id )
-	violation_id BIGINT CHECK ( violation_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : altcode_3 ( altcode_3_id )
-	altcode_3_id BIGINT CHECK ( altcode_3_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : chain_3 ( chain_3_id )
-	chain_3_id BIGINT CHECK ( chain_3_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : resnum_3 ( resnum_3_id )
-	resnum_3_id BIGINT CHECK ( resnum_3_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : resname_3 ( resname_3_id )
-	resname_3_id BIGINT CHECK ( resname_3_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : icode_3 ( icode_3_id )
-	icode_3_id BIGINT CHECK ( icode_3_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : ent_3 ( ent_3_id )
-	ent_3_id BIGINT CHECK ( ent_3_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : said_3 ( said_3_id )
-	said_3_id BIGINT CHECK ( said_3_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : seq_3 ( seq_3_id )
-	seq_3_id BIGINT CHECK ( seq_3_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : altcode_4 ( altcode_4_id )
-	altcode_4_id BIGINT CHECK ( altcode_4_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : chain_4 ( chain_4_id )
-	chain_4_id BIGINT CHECK ( chain_4_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : resnum_4 ( resnum_4_id )
-	resnum_4_id BIGINT CHECK ( resnum_4_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : resname_4 ( resname_4_id )
-	resname_4_id BIGINT CHECK ( resname_4_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : icode_4 ( icode_4_id )
-	icode_4_id BIGINT CHECK ( icode_4_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : ent_4 ( ent_4_id )
-	ent_4_id BIGINT CHECK ( ent_4_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : said_4 ( said_4_id )
-	said_4_id BIGINT CHECK ( said_4_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : seq_4 ( seq_4_id )
-	seq_4_id BIGINT CHECK ( seq_4_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : rlist_id ( rlist_id_id )
-	rlist_id_id BIGINT CHECK ( rlist_id_id >= 0 ) ,
--- NESTED KEY AS ATTRIBUTE : rest_id ( rest_id_id )
-	rest_id_id BIGINT CHECK ( rest_id_id >= 0 )
+-- ATTRIBUTE
+	icode_1 TEXT NOT NULL ,
+-- ATTRIBUTE
+	ent_1 TEXT NOT NULL ,
+-- ATTRIBUTE
+	said_1 TEXT NOT NULL ,
+-- ATTRIBUTE
+	seq_1 TEXT NOT NULL ,
+-- ATTRIBUTE
+	chain_2 TEXT NOT NULL ,
+-- ATTRIBUTE
+	altcode_2 TEXT NOT NULL ,
+-- ATTRIBUTE
+-- map mathematical concept of integer numbers (xs:integer) to signed int 32 bits
+	resnum_2 INTEGER NOT NULL ,
+-- ATTRIBUTE
+	resname_2 TEXT NOT NULL ,
+-- ATTRIBUTE
+	seq_2 TEXT NOT NULL ,
+-- ATTRIBUTE
+	said_2 TEXT NOT NULL ,
+-- ATTRIBUTE
+	ent_2 TEXT NOT NULL ,
+-- ATTRIBUTE
+	icode_2 TEXT NOT NULL ,
+-- ATTRIBUTE
+	violation DECIMAL ,
+-- ATTRIBUTE
+	altcode_3 TEXT NOT NULL ,
+-- ATTRIBUTE
+	chain_3 TEXT NOT NULL ,
+-- ATTRIBUTE
+-- map mathematical concept of integer numbers (xs:integer) to signed int 32 bits
+	resnum_3 INTEGER NOT NULL ,
+-- ATTRIBUTE
+	resname_3 TEXT NOT NULL ,
+-- ATTRIBUTE
+	icode_3 TEXT NOT NULL ,
+-- ATTRIBUTE
+	ent_3 TEXT NOT NULL ,
+-- ATTRIBUTE
+	said_3 TEXT NOT NULL ,
+-- ATTRIBUTE
+	seq_3 TEXT NOT NULL ,
+-- ATTRIBUTE
+	altcode_4 TEXT NOT NULL ,
+-- ATTRIBUTE
+	chain_4 TEXT NOT NULL ,
+-- ATTRIBUTE
+-- map mathematical concept of integer numbers (xs:integer) to signed int 32 bits
+	resnum_4 INTEGER NOT NULL ,
+-- ATTRIBUTE
+	resname_4 TEXT NOT NULL ,
+-- ATTRIBUTE
+	icode_4 TEXT NOT NULL ,
+-- ATTRIBUTE
+	ent_4 TEXT NOT NULL ,
+-- ATTRIBUTE
+	said_4 TEXT NOT NULL ,
+-- ATTRIBUTE
+	seq_4 TEXT NOT NULL ,
+-- ATTRIBUTE
+-- map mathematical concept of integer numbers (xs:integer) to signed int 32 bits
+	rlist_id INTEGER ,
+-- ATTRIBUTE
+-- map mathematical concept of integer numbers (xs:integer) to signed int 32 bits
+	rest_id INTEGER
 );
 
 --
@@ -2874,141 +2686,6 @@ SELECT
 FROM "angle-outlier" WHERE atom2_id IS NOT NULL;
 
 --
--- An identifier used to uniquely identify a particular restraints loop in the NMR-STAR file
--- xmlns: no namespace, schema location: wwpdb_validation_v005.xsd
--- type: root child (view), content: false, list: false, bridge: true, virtual: false
---
-CREATE OR REPLACE VIEW rlist_id AS
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	rlist_id_id ,
--- NESTED KEY AS ATTRIBUTE : integer ( integer_id )
-	rlist_id_id AS integer_id
-FROM distance_violation WHERE rlist_id_id IS NOT NULL
-UNION ALL
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	rlist_id_id ,
--- NESTED KEY AS ATTRIBUTE : integer ( integer_id )
-	rlist_id_id AS integer_id
-FROM dihedral_angle_violation WHERE rlist_id_id IS NOT NULL
-UNION ALL
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	rlist_id_id ,
--- NESTED KEY AS ATTRIBUTE : integer ( integer_id )
-	rlist_id_id AS integer_id
-FROM most_violated_distance_restraint WHERE rlist_id_id IS NOT NULL
-UNION ALL
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	rlist_id_id ,
--- NESTED KEY AS ATTRIBUTE : integer ( integer_id )
-	rlist_id_id AS integer_id
-FROM violated_distance_restraint WHERE rlist_id_id IS NOT NULL
-UNION ALL
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	rlist_id_id ,
--- NESTED KEY AS ATTRIBUTE : integer ( integer_id )
-	rlist_id_id AS integer_id
-FROM most_violated_dihedralangle_restraint WHERE rlist_id_id IS NOT NULL
-UNION ALL
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	rlist_id_id ,
--- NESTED KEY AS ATTRIBUTE : integer ( integer_id )
-	rlist_id_id AS integer_id
-FROM violated_dihedralangle_restraint WHERE rlist_id_id IS NOT NULL;
-
---
--- An identifier used to uniquely identify a restraint with in a particular restraint loop in NMR-STAR file
--- xmlns: no namespace, schema location: wwpdb_validation_v005.xsd
--- type: root child (view), content: false, list: false, bridge: true, virtual: false
---
-CREATE OR REPLACE VIEW rest_id AS
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	rest_id_id ,
--- NESTED KEY AS ATTRIBUTE : integer ( integer_id )
-	rest_id_id AS integer_id
-FROM distance_violation WHERE rest_id_id IS NOT NULL
-UNION ALL
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	rest_id_id ,
--- NESTED KEY AS ATTRIBUTE : integer ( integer_id )
-	rest_id_id AS integer_id
-FROM dihedral_angle_violation WHERE rest_id_id IS NOT NULL
-UNION ALL
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	rest_id_id ,
--- NESTED KEY AS ATTRIBUTE : integer ( integer_id )
-	rest_id_id AS integer_id
-FROM most_violated_distance_restraint WHERE rest_id_id IS NOT NULL
-UNION ALL
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	rest_id_id ,
--- NESTED KEY AS ATTRIBUTE : integer ( integer_id )
-	rest_id_id AS integer_id
-FROM violated_distance_restraint WHERE rest_id_id IS NOT NULL
-UNION ALL
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	rest_id_id ,
--- NESTED KEY AS ATTRIBUTE : integer ( integer_id )
-	rest_id_id AS integer_id
-FROM most_violated_dihedralangle_restraint WHERE rest_id_id IS NOT NULL
-UNION ALL
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	rest_id_id ,
--- NESTED KEY AS ATTRIBUTE : integer ( integer_id )
-	rest_id_id AS integer_id
-FROM violated_dihedralangle_restraint WHERE rest_id_id IS NOT NULL;
-
---
--- The absolute value of the distance violation mearured in Angstrom.
--- xmlns: no namespace, schema location: wwpdb_validation_v005.xsd
--- type: root child (view), content: false, list: false, bridge: true, virtual: false
---
-CREATE OR REPLACE VIEW dist_violation_value AS
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	dist_violation_value_id ,
--- NESTED KEY AS ATTRIBUTE : decimal ( decimal_id )
-	dist_violation_value_id AS decimal_id
-FROM distance_violation WHERE dist_violation_value_id IS NOT NULL;
-
---
 -- The local density is the percentage of observed Mogul torsion angles within certain units of the query torsion angle. Units depend on the parameter being analyzed. Example: local_density="17.5"
 -- xmlns: no namespace, schema location: wwpdb_validation_v005.xsd
 -- type: root child (view), content: false, list: false, bridge: true, virtual: false
@@ -3022,21 +2699,6 @@ SELECT
 -- NESTED KEY AS ATTRIBUTE : percentage ( percentage_id )
 	local_density_id AS percentage_id
 FROM "mog-torsion-outlier" WHERE local_density_id IS NOT NULL;
-
---
--- The absolute value of the dihedal-angle violation measure in degrees
--- xmlns: no namespace, schema location: wwpdb_validation_v005.xsd
--- type: root child (view), content: false, list: false, bridge: true, virtual: false
---
-CREATE OR REPLACE VIEW "DihedralAngViolationValue" AS
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	"DihedralAngViolationValue_id" ,
--- NESTED KEY AS ATTRIBUTE : decimal ( decimal_id )
-	"DihedralAngViolationValue_id" AS decimal_id
-FROM dihedral_angle_violation WHERE "DihedralAngViolationValue_id" IS NOT NULL;
 
 --
 -- The "all" percentile rank for the property percent-RSRZ-outliers for the chain/model (The proportion of residues that are RSRZ outliers reported as a percentage). The comparison will be to the set of all structures determined by X-ray crystallography deposited, up to the date included in the program name="percentiles" version, where the percent-RSRZ-outliers was successfully calculated. Example: absolute_RSRZ_percentile="39.90" N.B. this is the chain/model equivalent of the overall (all chain) category "absolute-percentile-percent-RSRZ-outliers" X-ray entry specific, produced by the percentiles step of the validation pipeline software.
@@ -3097,1662 +2759,6 @@ SELECT
 -- NESTED KEY : graph ( graph_id )
 	backbone_id AS graph_id
 FROM atom_inclusion WHERE backbone_id IS NOT NULL;
-
---
--- The desription of the restraint type
--- xmlns: no namespace, schema location: wwpdb_validation_v005.xsd
--- type: root child (view), content: false, list: false, bridge: true, virtual: false
---
-CREATE OR REPLACE VIEW description AS
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	description_id ,
--- NESTED KEY AS ATTRIBUTE : string ( string_id )
-	description_id AS string_id
-FROM restraint_summary WHERE description_id IS NOT NULL;
-
---
--- The violations are binned as small, medium and large violations based on its absolute value.
--- xmlns: no namespace, schema location: wwpdb_validation_v005.xsd
--- type: root child (view), content: false, list: false, bridge: true, virtual: false
---
-CREATE OR REPLACE VIEW bins AS
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	bins_id ,
--- NESTED KEY AS ATTRIBUTE : string ( string_id )
-	bins_id AS string_id
-FROM residual_distance_violation WHERE bins_id IS NOT NULL
-UNION ALL
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	bins_id ,
--- NESTED KEY AS ATTRIBUTE : string ( string_id )
-	bins_id AS string_id
-FROM residual_angle_violation WHERE bins_id IS NOT NULL;
-
---
--- Average number of violations per model is calculated by dividing the total number of violations in each bin by the size of the ensemble.
--- xmlns: no namespace, schema location: wwpdb_validation_v005.xsd
--- type: root child (view), content: false, list: false, bridge: true, virtual: false
---
-CREATE OR REPLACE VIEW violations_per_model AS
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	violations_per_model_id ,
--- NESTED KEY AS ATTRIBUTE : decimal ( decimal_id )
-	violations_per_model_id AS decimal_id
-FROM residual_distance_violation WHERE violations_per_model_id IS NOT NULL
-UNION ALL
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	violations_per_model_id ,
--- NESTED KEY AS ATTRIBUTE : decimal ( decimal_id )
-	violations_per_model_id AS decimal_id
-FROM residual_angle_violation WHERE violations_per_model_id IS NOT NULL;
-
---
--- The restraint type (intraresidue, sequential, medium, long, inter-chain,backbone-backbone,backbone-sidechain,sidechain-sidechain)
--- xmlns: no namespace, schema location: wwpdb_validation_v005.xsd
--- type: root child (view), content: false, list: false, bridge: true, virtual: false
---
-CREATE OR REPLACE VIEW restraint_type AS
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	restraint_type_id ,
--- NESTED KEY AS ATTRIBUTE : string ( string_id )
-	restraint_type_id AS string_id
-FROM distance_violation_summary WHERE restraint_type_id IS NOT NULL
-UNION ALL
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	restraint_type_id ,
--- NESTED KEY AS ATTRIBUTE : string ( string_id )
-	restraint_type_id AS string_id
-FROM dihedralangle_violation_summary WHERE restraint_type_id IS NOT NULL;
-
---
--- Numer of restraints that are violated in all models
--- xmlns: no namespace, schema location: wwpdb_validation_v005.xsd
--- type: root child (view), content: false, list: false, bridge: true, virtual: false
---
-CREATE OR REPLACE VIEW consistently_violated_count AS
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	consistently_violated_count_id ,
--- NESTED KEY AS ATTRIBUTE : integer ( integer_id )
-	consistently_violated_count_id AS integer_id
-FROM distance_violation_summary WHERE consistently_violated_count_id IS NOT NULL
-UNION ALL
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	consistently_violated_count_id ,
--- NESTED KEY AS ATTRIBUTE : integer ( integer_id )
-	consistently_violated_count_id AS integer_id
-FROM dihedralangle_violation_summary WHERE consistently_violated_count_id IS NOT NULL;
-
---
--- Percentage of restraints that are violated in all models against total number of restraints
--- xmlns: no namespace, schema location: wwpdb_validation_v005.xsd
--- type: root child (view), content: false, list: false, bridge: true, virtual: false
---
-CREATE OR REPLACE VIEW consistently_violated_percent_total AS
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	consistently_violated_percent_total_id ,
--- NESTED KEY AS ATTRIBUTE : decimal ( decimal_id )
-	consistently_violated_percent_total_id AS decimal_id
-FROM distance_violation_summary WHERE consistently_violated_percent_total_id IS NOT NULL
-UNION ALL
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	consistently_violated_percent_total_id ,
--- NESTED KEY AS ATTRIBUTE : decimal ( decimal_id )
-	consistently_violated_percent_total_id AS decimal_id
-FROM dihedralangle_violation_summary WHERE consistently_violated_percent_total_id IS NOT NULL;
-
---
--- Percentage of restraints that are violated in all models against number of restraints in a given restraint type
--- xmlns: no namespace, schema location: wwpdb_validation_v005.xsd
--- type: root child (view), content: false, list: false, bridge: true, virtual: false
---
-CREATE OR REPLACE VIEW consistently_violated_percent_type AS
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	consistently_violated_percent_type_id ,
--- NESTED KEY AS ATTRIBUTE : decimal ( decimal_id )
-	consistently_violated_percent_type_id AS decimal_id
-FROM distance_violation_summary WHERE consistently_violated_percent_type_id IS NOT NULL
-UNION ALL
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	consistently_violated_percent_type_id ,
--- NESTED KEY AS ATTRIBUTE : decimal ( decimal_id )
-	consistently_violated_percent_type_id AS decimal_id
-FROM dihedralangle_violation_summary WHERE consistently_violated_percent_type_id IS NOT NULL;
-
---
--- Number of restraints in a given restraint type
--- xmlns: no namespace, schema location: wwpdb_validation_v005.xsd
--- type: root child (view), content: false, list: false, bridge: true, virtual: false
---
-CREATE OR REPLACE VIEW restraints_count AS
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	restraints_count_id ,
--- NESTED KEY AS ATTRIBUTE : integer ( integer_id )
-	restraints_count_id AS integer_id
-FROM distance_violation_summary WHERE restraints_count_id IS NOT NULL
-UNION ALL
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	restraints_count_id ,
--- NESTED KEY AS ATTRIBUTE : integer ( integer_id )
-	restraints_count_id AS integer_id
-FROM dihedralangle_violation_summary WHERE restraints_count_id IS NOT NULL;
-
---
--- Number of restraints that are violated that are violated at leaset in one model
--- xmlns: no namespace, schema location: wwpdb_validation_v005.xsd
--- type: root child (view), content: false, list: false, bridge: true, virtual: false
---
-CREATE OR REPLACE VIEW violated_count AS
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	violated_count_id ,
--- NESTED KEY AS ATTRIBUTE : integer ( integer_id )
-	violated_count_id AS integer_id
-FROM distance_violation_summary WHERE violated_count_id IS NOT NULL
-UNION ALL
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	violated_count_id ,
--- NESTED KEY AS ATTRIBUTE : integer ( integer_id )
-	violated_count_id AS integer_id
-FROM dihedralangle_violation_summary WHERE violated_count_id IS NOT NULL;
-
---
--- Percentage of restraints in agiven restraint type
--- xmlns: no namespace, schema location: wwpdb_validation_v005.xsd
--- type: root child (view), content: false, list: false, bridge: true, virtual: false
---
-CREATE OR REPLACE VIEW percent_total AS
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	percent_total_id ,
--- NESTED KEY AS ATTRIBUTE : decimal ( decimal_id )
-	percent_total_id AS decimal_id
-FROM distance_violation_summary WHERE percent_total_id IS NOT NULL
-UNION ALL
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	percent_total_id ,
--- NESTED KEY AS ATTRIBUTE : decimal ( decimal_id )
-	percent_total_id AS decimal_id
-FROM dihedralangle_violation_summary WHERE percent_total_id IS NOT NULL;
-
---
--- Percentage of restraints that are violated at leaset in one model in given restraint type against the total restraints
--- xmlns: no namespace, schema location: wwpdb_validation_v005.xsd
--- type: root child (view), content: false, list: false, bridge: true, virtual: false
---
-CREATE OR REPLACE VIEW violated_percent_total AS
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	violated_percent_total_id ,
--- NESTED KEY AS ATTRIBUTE : decimal ( decimal_id )
-	violated_percent_total_id AS decimal_id
-FROM distance_violation_summary WHERE violated_percent_total_id IS NOT NULL
-UNION ALL
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	violated_percent_total_id ,
--- NESTED KEY AS ATTRIBUTE : decimal ( decimal_id )
-	violated_percent_total_id AS decimal_id
-FROM dihedralangle_violation_summary WHERE violated_percent_total_id IS NOT NULL;
-
---
--- Percentage of restraints that are violated at least in one model against the total number of restatins in a givne restarints type
--- xmlns: no namespace, schema location: wwpdb_validation_v005.xsd
--- type: root child (view), content: false, list: false, bridge: true, virtual: false
---
-CREATE OR REPLACE VIEW violated_percent_type AS
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	violated_percent_type_id ,
--- NESTED KEY AS ATTRIBUTE : decimal ( decimal_id )
-	violated_percent_type_id AS decimal_id
-FROM distance_violation_summary WHERE violated_percent_type_id IS NOT NULL
-UNION ALL
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	violated_percent_type_id ,
--- NESTED KEY AS ATTRIBUTE : decimal ( decimal_id )
-	violated_percent_type_id AS decimal_id
-FROM dihedralangle_violation_summary WHERE violated_percent_type_id IS NOT NULL;
-
---
--- The type of distance restraint(intraresidue, sequential, etc...)
--- xmlns: no namespace, schema location: wwpdb_validation_v005.xsd
--- type: root child (view), content: false, list: false, bridge: true, virtual: false
---
-CREATE OR REPLACE VIEW dist_rest_type AS
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	dist_rest_type_id ,
--- NESTED KEY AS ATTRIBUTE : string ( string_id )
-	dist_rest_type_id AS string_id
-FROM dist_rest_types WHERE dist_rest_type_id IS NOT NULL;
-
---
--- Number of violated restraints
--- xmlns: no namespace, schema location: wwpdb_validation_v005.xsd
--- type: root child (view), content: false, list: false, bridge: true, virtual: false
---
-CREATE OR REPLACE VIEW violations_count AS
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	violations_count_id ,
--- NESTED KEY AS ATTRIBUTE : integer ( integer_id )
-	violations_count_id AS integer_id
-FROM dist_rest_types WHERE violations_count_id IS NOT NULL
-UNION ALL
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	violations_count_id ,
--- NESTED KEY AS ATTRIBUTE : integer ( integer_id )
-	violations_count_id AS integer_id
-FROM ang_rest_types WHERE violations_count_id IS NOT NULL
-UNION ALL
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	violations_count_id ,
--- NESTED KEY AS ATTRIBUTE : integer ( integer_id )
-	violations_count_id AS integer_id
-FROM most_violated_dihedralangle_restraint WHERE violations_count_id IS NOT NULL;
-
---
--- This attribute will be set if the ModelledSubgroup has atoms with the alternate position indicator set. Normally one character but can be up to 3. Example altcode="A" Obtained from _atom_site.label_alt_id
--- xmlns: no namespace, schema location: wwpdb_validation_v005.xsd
--- type: root child (view), content: false, list: false, bridge: true, virtual: false
---
-CREATE OR REPLACE VIEW altcode_1 AS
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	altcode_1_id ,
--- NESTED KEY AS ATTRIBUTE : string ( string_id )
-	altcode_1_id AS string_id
-FROM most_violated_distance_restraint WHERE altcode_1_id IS NOT NULL
-UNION ALL
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	altcode_1_id ,
--- NESTED KEY AS ATTRIBUTE : string ( string_id )
-	altcode_1_id AS string_id
-FROM violated_distance_restraint WHERE altcode_1_id IS NOT NULL
-UNION ALL
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	altcode_1_id ,
--- NESTED KEY AS ATTRIBUTE : string ( string_id )
-	altcode_1_id AS string_id
-FROM most_violated_dihedralangle_restraint WHERE altcode_1_id IS NOT NULL
-UNION ALL
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	altcode_1_id ,
--- NESTED KEY AS ATTRIBUTE : string ( string_id )
-	altcode_1_id AS string_id
-FROM violated_dihedralangle_restraint WHERE altcode_1_id IS NOT NULL;
-
---
--- The chain identifier for the residue or chain obtained from cif item _atom_site.auth_asym_id. Currently this is limited to 5 characters. Example: chain="A"
--- xmlns: no namespace, schema location: wwpdb_validation_v005.xsd
--- type: root child (view), content: false, list: false, bridge: true, virtual: false
---
-CREATE OR REPLACE VIEW chain_1 AS
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	chain_1_id ,
--- NESTED KEY AS ATTRIBUTE : string ( string_id )
-	chain_1_id AS string_id
-FROM most_violated_distance_restraint WHERE chain_1_id IS NOT NULL
-UNION ALL
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	chain_1_id ,
--- NESTED KEY AS ATTRIBUTE : string ( string_id )
-	chain_1_id AS string_id
-FROM violated_distance_restraint WHERE chain_1_id IS NOT NULL
-UNION ALL
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	chain_1_id ,
--- NESTED KEY AS ATTRIBUTE : string ( string_id )
-	chain_1_id AS string_id
-FROM most_violated_dihedralangle_restraint WHERE chain_1_id IS NOT NULL
-UNION ALL
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	chain_1_id ,
--- NESTED KEY AS ATTRIBUTE : string ( string_id )
-	chain_1_id AS string_id
-FROM violated_dihedralangle_restraint WHERE chain_1_id IS NOT NULL;
-
---
--- The residue number aka sequence id for a residue. Obtainned from _atom_site.auth_seq_id Example: resnum="8"
--- xmlns: no namespace, schema location: wwpdb_validation_v005.xsd
--- type: root child (view), content: false, list: false, bridge: true, virtual: false
---
-CREATE OR REPLACE VIEW resnum_1 AS
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	resnum_1_id ,
--- NESTED KEY AS ATTRIBUTE : integer ( integer_id )
-	resnum_1_id AS integer_id
-FROM most_violated_distance_restraint WHERE resnum_1_id IS NOT NULL
-UNION ALL
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	resnum_1_id ,
--- NESTED KEY AS ATTRIBUTE : integer ( integer_id )
-	resnum_1_id AS integer_id
-FROM violated_distance_restraint WHERE resnum_1_id IS NOT NULL
-UNION ALL
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	resnum_1_id ,
--- NESTED KEY AS ATTRIBUTE : integer ( integer_id )
-	resnum_1_id AS integer_id
-FROM most_violated_dihedralangle_restraint WHERE resnum_1_id IS NOT NULL
-UNION ALL
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	resnum_1_id ,
--- NESTED KEY AS ATTRIBUTE : integer ( integer_id )
-	resnum_1_id AS integer_id
-FROM violated_dihedralangle_restraint WHERE resnum_1_id IS NOT NULL;
-
---
--- The "residue type", this is the name of the chemical component from the PDB chemical component dictionary. Obtained from _atom_site.auth_comp_id Example resname="GLY"
--- xmlns: no namespace, schema location: wwpdb_validation_v005.xsd
--- type: root child (view), content: false, list: false, bridge: true, virtual: false
---
-CREATE OR REPLACE VIEW resname_1 AS
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	resname_1_id ,
--- NESTED KEY AS ATTRIBUTE : string ( string_id )
-	resname_1_id AS string_id
-FROM most_violated_distance_restraint WHERE resname_1_id IS NOT NULL
-UNION ALL
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	resname_1_id ,
--- NESTED KEY AS ATTRIBUTE : string ( string_id )
-	resname_1_id AS string_id
-FROM violated_distance_restraint WHERE resname_1_id IS NOT NULL
-UNION ALL
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	resname_1_id ,
--- NESTED KEY AS ATTRIBUTE : string ( string_id )
-	resname_1_id AS string_id
-FROM most_violated_dihedralangle_restraint WHERE resname_1_id IS NOT NULL
-UNION ALL
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	resname_1_id ,
--- NESTED KEY AS ATTRIBUTE : string ( string_id )
-	resname_1_id AS string_id
-FROM violated_dihedralangle_restraint WHERE resname_1_id IS NOT NULL;
-
---
--- Insertion code for residue from _atom_site.pdbx_PDB_ins_code Example: icode=" "
--- xmlns: no namespace, schema location: wwpdb_validation_v005.xsd
--- type: root child (view), content: false, list: false, bridge: true, virtual: false
---
-CREATE OR REPLACE VIEW icode_1 AS
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	icode_1_id ,
--- NESTED KEY AS ATTRIBUTE : string ( string_id )
-	icode_1_id AS string_id
-FROM most_violated_distance_restraint WHERE icode_1_id IS NOT NULL
-UNION ALL
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	icode_1_id ,
--- NESTED KEY AS ATTRIBUTE : string ( string_id )
-	icode_1_id AS string_id
-FROM violated_distance_restraint WHERE icode_1_id IS NOT NULL
-UNION ALL
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	icode_1_id ,
--- NESTED KEY AS ATTRIBUTE : string ( string_id )
-	icode_1_id AS string_id
-FROM most_violated_dihedralangle_restraint WHERE icode_1_id IS NOT NULL
-UNION ALL
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	icode_1_id ,
--- NESTED KEY AS ATTRIBUTE : string ( string_id )
-	icode_1_id AS string_id
-FROM violated_dihedralangle_restraint WHERE icode_1_id IS NOT NULL;
-
---
--- The entity id for the residue or chain. This is from item _atom_site.label_entity_id that is a pointer to _entity.id in the ENTITY category. Example: ent="3".
--- xmlns: no namespace, schema location: wwpdb_validation_v005.xsd
--- type: root child (view), content: false, list: false, bridge: true, virtual: false
---
-CREATE OR REPLACE VIEW ent_1 AS
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	ent_1_id ,
--- NESTED KEY AS ATTRIBUTE : string ( string_id )
-	ent_1_id AS string_id
-FROM most_violated_distance_restraint WHERE ent_1_id IS NOT NULL
-UNION ALL
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	ent_1_id ,
--- NESTED KEY AS ATTRIBUTE : string ( string_id )
-	ent_1_id AS string_id
-FROM violated_distance_restraint WHERE ent_1_id IS NOT NULL
-UNION ALL
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	ent_1_id ,
--- NESTED KEY AS ATTRIBUTE : string ( string_id )
-	ent_1_id AS string_id
-FROM most_violated_dihedralangle_restraint WHERE ent_1_id IS NOT NULL
-UNION ALL
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	ent_1_id ,
--- NESTED KEY AS ATTRIBUTE : string ( string_id )
-	ent_1_id AS string_id
-FROM violated_dihedralangle_restraint WHERE ent_1_id IS NOT NULL;
-
---
--- The_atom_site.label_asym_id label for the residue. Normally this is the same as the chain. Example: said="A"
--- xmlns: no namespace, schema location: wwpdb_validation_v005.xsd
--- type: root child (view), content: false, list: false, bridge: true, virtual: false
---
-CREATE OR REPLACE VIEW said_1 AS
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	said_1_id ,
--- NESTED KEY AS ATTRIBUTE : string ( string_id )
-	said_1_id AS string_id
-FROM most_violated_distance_restraint WHERE said_1_id IS NOT NULL
-UNION ALL
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	said_1_id ,
--- NESTED KEY AS ATTRIBUTE : string ( string_id )
-	said_1_id AS string_id
-FROM violated_distance_restraint WHERE said_1_id IS NOT NULL
-UNION ALL
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	said_1_id ,
--- NESTED KEY AS ATTRIBUTE : string ( string_id )
-	said_1_id AS string_id
-FROM most_violated_dihedralangle_restraint WHERE said_1_id IS NOT NULL
-UNION ALL
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	said_1_id ,
--- NESTED KEY AS ATTRIBUTE : string ( string_id )
-	said_1_id AS string_id
-FROM violated_dihedralangle_restraint WHERE said_1_id IS NOT NULL;
-
---
--- From cif item _atom_site.label_seq_id "a pointer to _entity_poly_seq.num" Example: seq="20" for a residue in a polymer Example: seq="." for a non-polymeric residue eg ligand or water.
--- xmlns: no namespace, schema location: wwpdb_validation_v005.xsd
--- type: root child (view), content: false, list: false, bridge: true, virtual: false
---
-CREATE OR REPLACE VIEW seq_1 AS
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	seq_1_id ,
--- NESTED KEY AS ATTRIBUTE : string ( string_id )
-	seq_1_id AS string_id
-FROM most_violated_distance_restraint WHERE seq_1_id IS NOT NULL
-UNION ALL
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	seq_1_id ,
--- NESTED KEY AS ATTRIBUTE : string ( string_id )
-	seq_1_id AS string_id
-FROM violated_distance_restraint WHERE seq_1_id IS NOT NULL
-UNION ALL
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	seq_1_id ,
--- NESTED KEY AS ATTRIBUTE : string ( string_id )
-	seq_1_id AS string_id
-FROM most_violated_dihedralangle_restraint WHERE seq_1_id IS NOT NULL
-UNION ALL
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	seq_1_id ,
--- NESTED KEY AS ATTRIBUTE : string ( string_id )
-	seq_1_id AS string_id
-FROM violated_dihedralangle_restraint WHERE seq_1_id IS NOT NULL;
-
---
--- The chain identifier for the residue or chain obtained from cif item _atom_site.auth_asym_id. Currently this is limited to 5 characters. Example: chain="A"
--- xmlns: no namespace, schema location: wwpdb_validation_v005.xsd
--- type: root child (view), content: false, list: false, bridge: true, virtual: false
---
-CREATE OR REPLACE VIEW chain_2 AS
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	chain_2_id ,
--- NESTED KEY AS ATTRIBUTE : string ( string_id )
-	chain_2_id AS string_id
-FROM most_violated_distance_restraint WHERE chain_2_id IS NOT NULL
-UNION ALL
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	chain_2_id ,
--- NESTED KEY AS ATTRIBUTE : string ( string_id )
-	chain_2_id AS string_id
-FROM violated_distance_restraint WHERE chain_2_id IS NOT NULL
-UNION ALL
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	chain_2_id ,
--- NESTED KEY AS ATTRIBUTE : string ( string_id )
-	chain_2_id AS string_id
-FROM most_violated_dihedralangle_restraint WHERE chain_2_id IS NOT NULL
-UNION ALL
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	chain_2_id ,
--- NESTED KEY AS ATTRIBUTE : string ( string_id )
-	chain_2_id AS string_id
-FROM violated_dihedralangle_restraint WHERE chain_2_id IS NOT NULL;
-
---
--- This attribute will be set if the ModelledSubgroup has atoms with the alternate position indicator set. Normally one character but can be up to 3. Example altcode="A" Obtained from _atom_site.label_alt_id
--- xmlns: no namespace, schema location: wwpdb_validation_v005.xsd
--- type: root child (view), content: false, list: false, bridge: true, virtual: false
---
-CREATE OR REPLACE VIEW altcode_2 AS
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	altcode_2_id ,
--- NESTED KEY AS ATTRIBUTE : string ( string_id )
-	altcode_2_id AS string_id
-FROM most_violated_distance_restraint WHERE altcode_2_id IS NOT NULL
-UNION ALL
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	altcode_2_id ,
--- NESTED KEY AS ATTRIBUTE : string ( string_id )
-	altcode_2_id AS string_id
-FROM violated_distance_restraint WHERE altcode_2_id IS NOT NULL
-UNION ALL
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	altcode_2_id ,
--- NESTED KEY AS ATTRIBUTE : string ( string_id )
-	altcode_2_id AS string_id
-FROM most_violated_dihedralangle_restraint WHERE altcode_2_id IS NOT NULL
-UNION ALL
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	altcode_2_id ,
--- NESTED KEY AS ATTRIBUTE : string ( string_id )
-	altcode_2_id AS string_id
-FROM violated_dihedralangle_restraint WHERE altcode_2_id IS NOT NULL;
-
---
--- The residue number aka sequence id for a residue. Obtainned from _atom_site.auth_seq_id Example: resnum="8"
--- xmlns: no namespace, schema location: wwpdb_validation_v005.xsd
--- type: root child (view), content: false, list: false, bridge: true, virtual: false
---
-CREATE OR REPLACE VIEW resnum_2 AS
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	resnum_2_id ,
--- NESTED KEY AS ATTRIBUTE : integer ( integer_id )
-	resnum_2_id AS integer_id
-FROM most_violated_distance_restraint WHERE resnum_2_id IS NOT NULL
-UNION ALL
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	resnum_2_id ,
--- NESTED KEY AS ATTRIBUTE : integer ( integer_id )
-	resnum_2_id AS integer_id
-FROM violated_distance_restraint WHERE resnum_2_id IS NOT NULL
-UNION ALL
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	resnum_2_id ,
--- NESTED KEY AS ATTRIBUTE : integer ( integer_id )
-	resnum_2_id AS integer_id
-FROM most_violated_dihedralangle_restraint WHERE resnum_2_id IS NOT NULL
-UNION ALL
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	resnum_2_id ,
--- NESTED KEY AS ATTRIBUTE : integer ( integer_id )
-	resnum_2_id AS integer_id
-FROM violated_dihedralangle_restraint WHERE resnum_2_id IS NOT NULL;
-
---
--- The "residue type", this is the name of the chemical component from the PDB chemical component dictionary. Obtained from _atom_site.auth_comp_id Example resname="GLY"
--- xmlns: no namespace, schema location: wwpdb_validation_v005.xsd
--- type: root child (view), content: false, list: false, bridge: true, virtual: false
---
-CREATE OR REPLACE VIEW resname_2 AS
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	resname_2_id ,
--- NESTED KEY AS ATTRIBUTE : string ( string_id )
-	resname_2_id AS string_id
-FROM most_violated_distance_restraint WHERE resname_2_id IS NOT NULL
-UNION ALL
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	resname_2_id ,
--- NESTED KEY AS ATTRIBUTE : string ( string_id )
-	resname_2_id AS string_id
-FROM violated_distance_restraint WHERE resname_2_id IS NOT NULL
-UNION ALL
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	resname_2_id ,
--- NESTED KEY AS ATTRIBUTE : string ( string_id )
-	resname_2_id AS string_id
-FROM most_violated_dihedralangle_restraint WHERE resname_2_id IS NOT NULL
-UNION ALL
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	resname_2_id ,
--- NESTED KEY AS ATTRIBUTE : string ( string_id )
-	resname_2_id AS string_id
-FROM violated_dihedralangle_restraint WHERE resname_2_id IS NOT NULL;
-
---
--- From cif item _atom_site.label_seq_id "a pointer to _entity_poly_seq.num" Example: seq="20" for a residue in a polymer Example: seq="." for a non-polymeric residue eg ligand or water.
--- xmlns: no namespace, schema location: wwpdb_validation_v005.xsd
--- type: root child (view), content: false, list: false, bridge: true, virtual: false
---
-CREATE OR REPLACE VIEW seq_2 AS
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	seq_2_id ,
--- NESTED KEY AS ATTRIBUTE : string ( string_id )
-	seq_2_id AS string_id
-FROM most_violated_distance_restraint WHERE seq_2_id IS NOT NULL
-UNION ALL
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	seq_2_id ,
--- NESTED KEY AS ATTRIBUTE : string ( string_id )
-	seq_2_id AS string_id
-FROM violated_distance_restraint WHERE seq_2_id IS NOT NULL
-UNION ALL
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	seq_2_id ,
--- NESTED KEY AS ATTRIBUTE : string ( string_id )
-	seq_2_id AS string_id
-FROM most_violated_dihedralangle_restraint WHERE seq_2_id IS NOT NULL
-UNION ALL
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	seq_2_id ,
--- NESTED KEY AS ATTRIBUTE : string ( string_id )
-	seq_2_id AS string_id
-FROM violated_dihedralangle_restraint WHERE seq_2_id IS NOT NULL;
-
---
--- The_atom_site.label_asym_id label for the residue. Normally this is the same as the chain. Example: said="A"
--- xmlns: no namespace, schema location: wwpdb_validation_v005.xsd
--- type: root child (view), content: false, list: false, bridge: true, virtual: false
---
-CREATE OR REPLACE VIEW said_2 AS
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	said_2_id ,
--- NESTED KEY AS ATTRIBUTE : string ( string_id )
-	said_2_id AS string_id
-FROM most_violated_distance_restraint WHERE said_2_id IS NOT NULL
-UNION ALL
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	said_2_id ,
--- NESTED KEY AS ATTRIBUTE : string ( string_id )
-	said_2_id AS string_id
-FROM violated_distance_restraint WHERE said_2_id IS NOT NULL
-UNION ALL
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	said_2_id ,
--- NESTED KEY AS ATTRIBUTE : string ( string_id )
-	said_2_id AS string_id
-FROM most_violated_dihedralangle_restraint WHERE said_2_id IS NOT NULL
-UNION ALL
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	said_2_id ,
--- NESTED KEY AS ATTRIBUTE : string ( string_id )
-	said_2_id AS string_id
-FROM violated_dihedralangle_restraint WHERE said_2_id IS NOT NULL;
-
---
--- The entity id for the residue or chain. This is from item _atom_site.label_entity_id that is a pointer to _entity.id in the ENTITY category. Example: ent="3".
--- xmlns: no namespace, schema location: wwpdb_validation_v005.xsd
--- type: root child (view), content: false, list: false, bridge: true, virtual: false
---
-CREATE OR REPLACE VIEW ent_2 AS
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	ent_2_id ,
--- NESTED KEY AS ATTRIBUTE : string ( string_id )
-	ent_2_id AS string_id
-FROM most_violated_distance_restraint WHERE ent_2_id IS NOT NULL
-UNION ALL
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	ent_2_id ,
--- NESTED KEY AS ATTRIBUTE : string ( string_id )
-	ent_2_id AS string_id
-FROM violated_distance_restraint WHERE ent_2_id IS NOT NULL
-UNION ALL
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	ent_2_id ,
--- NESTED KEY AS ATTRIBUTE : string ( string_id )
-	ent_2_id AS string_id
-FROM most_violated_dihedralangle_restraint WHERE ent_2_id IS NOT NULL
-UNION ALL
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	ent_2_id ,
--- NESTED KEY AS ATTRIBUTE : string ( string_id )
-	ent_2_id AS string_id
-FROM violated_dihedralangle_restraint WHERE ent_2_id IS NOT NULL;
-
---
--- Insertion code for residue from _atom_site.pdbx_PDB_ins_code Example: icode=" "
--- xmlns: no namespace, schema location: wwpdb_validation_v005.xsd
--- type: root child (view), content: false, list: false, bridge: true, virtual: false
---
-CREATE OR REPLACE VIEW icode_2 AS
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	icode_2_id ,
--- NESTED KEY AS ATTRIBUTE : string ( string_id )
-	icode_2_id AS string_id
-FROM most_violated_distance_restraint WHERE icode_2_id IS NOT NULL
-UNION ALL
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	icode_2_id ,
--- NESTED KEY AS ATTRIBUTE : string ( string_id )
-	icode_2_id AS string_id
-FROM violated_distance_restraint WHERE icode_2_id IS NOT NULL
-UNION ALL
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	icode_2_id ,
--- NESTED KEY AS ATTRIBUTE : string ( string_id )
-	icode_2_id AS string_id
-FROM most_violated_dihedralangle_restraint WHERE icode_2_id IS NOT NULL
-UNION ALL
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	icode_2_id ,
--- NESTED KEY AS ATTRIBUTE : string ( string_id )
-	icode_2_id AS string_id
-FROM violated_dihedralangle_restraint WHERE icode_2_id IS NOT NULL;
-
---
--- Mean distance violation over the violated models
--- xmlns: no namespace, schema location: wwpdb_validation_v005.xsd
--- type: root child (view), content: false, list: false, bridge: true, virtual: false
---
-CREATE OR REPLACE VIEW mean_distance_violation AS
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	mean_distance_violation_id ,
--- NESTED KEY AS ATTRIBUTE : decimal ( decimal_id )
-	mean_distance_violation_id AS decimal_id
-FROM most_violated_distance_restraint WHERE mean_distance_violation_id IS NOT NULL;
-
---
--- Number of violated models for a perticular restraint
--- xmlns: no namespace, schema location: wwpdb_validation_v005.xsd
--- type: root child (view), content: false, list: false, bridge: true, virtual: false
---
-CREATE OR REPLACE VIEW violated_models AS
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	violated_models_id ,
--- NESTED KEY AS ATTRIBUTE : integer ( integer_id )
-	violated_models_id AS integer_id
-FROM most_violated_distance_restraint WHERE violated_models_id IS NOT NULL
-UNION ALL
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	violated_models_id ,
--- NESTED KEY AS ATTRIBUTE : integer ( integer_id )
-	violated_models_id AS integer_id
-FROM most_violated_dihedralangle_restraint WHERE violated_models_id IS NOT NULL;
-
---
--- absolute value of the violation
--- xmlns: no namespace, schema location: wwpdb_validation_v005.xsd
--- type: root child (view), content: false, list: false, bridge: true, virtual: false
---
-CREATE OR REPLACE VIEW violation AS
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	violation_id ,
--- NESTED KEY AS ATTRIBUTE : decimal ( decimal_id )
-	violation_id AS decimal_id
-FROM violated_distance_restraint WHERE violation_id IS NOT NULL
-UNION ALL
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	violation_id ,
--- NESTED KEY AS ATTRIBUTE : decimal ( decimal_id )
-	violation_id AS decimal_id
-FROM violated_dihedralangle_restraint WHERE violation_id IS NOT NULL;
-
---
--- The type of dihedral-anlge restraint(PHI,PSI,etc)
--- xmlns: no namespace, schema location: wwpdb_validation_v005.xsd
--- type: root child (view), content: false, list: false, bridge: true, virtual: false
---
-CREATE OR REPLACE VIEW ang_rest_type AS
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	ang_rest_type_id ,
--- NESTED KEY AS ATTRIBUTE : string ( string_id )
-	ang_rest_type_id AS string_id
-FROM ang_rest_types WHERE ang_rest_type_id IS NOT NULL;
-
---
--- Mean value of dihedral-angle violation over all violated models
--- xmlns: no namespace, schema location: wwpdb_validation_v005.xsd
--- type: root child (view), content: false, list: false, bridge: true, virtual: false
---
-CREATE OR REPLACE VIEW "MeanAngleViolation" AS
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	"MeanAngleViolation_id" ,
--- NESTED KEY AS ATTRIBUTE : decimal ( decimal_id )
-	"MeanAngleViolation_id" AS decimal_id
-FROM most_violated_dihedralangle_restraint WHERE "MeanAngleViolation_id" IS NOT NULL;
-
---
--- This attribute will be set if the ModelledSubgroup has atoms with the alternate position indicator set. Normally one character but can be up to 3. Example altcode="A" Obtained from _atom_site.label_alt_id
--- xmlns: no namespace, schema location: wwpdb_validation_v005.xsd
--- type: root child (view), content: false, list: false, bridge: true, virtual: false
---
-CREATE OR REPLACE VIEW altcode_3 AS
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	altcode_3_id ,
--- NESTED KEY AS ATTRIBUTE : string ( string_id )
-	altcode_3_id AS string_id
-FROM most_violated_dihedralangle_restraint WHERE altcode_3_id IS NOT NULL
-UNION ALL
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	altcode_3_id ,
--- NESTED KEY AS ATTRIBUTE : string ( string_id )
-	altcode_3_id AS string_id
-FROM violated_dihedralangle_restraint WHERE altcode_3_id IS NOT NULL;
-
---
--- The chain identifier for the residue or chain obtained from cif item _atom_site.auth_asym_id. Currently this is limited to 5 characters. Example: chain="A"
--- xmlns: no namespace, schema location: wwpdb_validation_v005.xsd
--- type: root child (view), content: false, list: false, bridge: true, virtual: false
---
-CREATE OR REPLACE VIEW chain_3 AS
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	chain_3_id ,
--- NESTED KEY AS ATTRIBUTE : string ( string_id )
-	chain_3_id AS string_id
-FROM most_violated_dihedralangle_restraint WHERE chain_3_id IS NOT NULL
-UNION ALL
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	chain_3_id ,
--- NESTED KEY AS ATTRIBUTE : string ( string_id )
-	chain_3_id AS string_id
-FROM violated_dihedralangle_restraint WHERE chain_3_id IS NOT NULL;
-
---
--- The residue number aka sequence id for a residue. Obtainned from _atom_site.auth_seq_id Example: resnum="8"
--- xmlns: no namespace, schema location: wwpdb_validation_v005.xsd
--- type: root child (view), content: false, list: false, bridge: true, virtual: false
---
-CREATE OR REPLACE VIEW resnum_3 AS
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	resnum_3_id ,
--- NESTED KEY AS ATTRIBUTE : integer ( integer_id )
-	resnum_3_id AS integer_id
-FROM most_violated_dihedralangle_restraint WHERE resnum_3_id IS NOT NULL
-UNION ALL
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	resnum_3_id ,
--- NESTED KEY AS ATTRIBUTE : integer ( integer_id )
-	resnum_3_id AS integer_id
-FROM violated_dihedralangle_restraint WHERE resnum_3_id IS NOT NULL;
-
---
--- The "residue type", this is the name of the chemical component from the PDB chemical component dictionary. Obtained from _atom_site.auth_comp_id Example resname="GLY"
--- xmlns: no namespace, schema location: wwpdb_validation_v005.xsd
--- type: root child (view), content: false, list: false, bridge: true, virtual: false
---
-CREATE OR REPLACE VIEW resname_3 AS
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	resname_3_id ,
--- NESTED KEY AS ATTRIBUTE : string ( string_id )
-	resname_3_id AS string_id
-FROM most_violated_dihedralangle_restraint WHERE resname_3_id IS NOT NULL
-UNION ALL
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	resname_3_id ,
--- NESTED KEY AS ATTRIBUTE : string ( string_id )
-	resname_3_id AS string_id
-FROM violated_dihedralangle_restraint WHERE resname_3_id IS NOT NULL;
-
---
--- Insertion code for residue from _atom_site.pdbx_PDB_ins_code Example: icode=" "
--- xmlns: no namespace, schema location: wwpdb_validation_v005.xsd
--- type: root child (view), content: false, list: false, bridge: true, virtual: false
---
-CREATE OR REPLACE VIEW icode_3 AS
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	icode_3_id ,
--- NESTED KEY AS ATTRIBUTE : string ( string_id )
-	icode_3_id AS string_id
-FROM most_violated_dihedralangle_restraint WHERE icode_3_id IS NOT NULL
-UNION ALL
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	icode_3_id ,
--- NESTED KEY AS ATTRIBUTE : string ( string_id )
-	icode_3_id AS string_id
-FROM violated_dihedralangle_restraint WHERE icode_3_id IS NOT NULL;
-
---
--- The entity id for the residue or chain. This is from item _atom_site.label_entity_id that is a pointer to _entity.id in the ENTITY category. Example: ent="3".
--- xmlns: no namespace, schema location: wwpdb_validation_v005.xsd
--- type: root child (view), content: false, list: false, bridge: true, virtual: false
---
-CREATE OR REPLACE VIEW ent_3 AS
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	ent_3_id ,
--- NESTED KEY AS ATTRIBUTE : string ( string_id )
-	ent_3_id AS string_id
-FROM most_violated_dihedralangle_restraint WHERE ent_3_id IS NOT NULL
-UNION ALL
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	ent_3_id ,
--- NESTED KEY AS ATTRIBUTE : string ( string_id )
-	ent_3_id AS string_id
-FROM violated_dihedralangle_restraint WHERE ent_3_id IS NOT NULL;
-
---
--- The_atom_site.label_asym_id label for the residue. Normally this is the same as the chain. Example: said="A"
--- xmlns: no namespace, schema location: wwpdb_validation_v005.xsd
--- type: root child (view), content: false, list: false, bridge: true, virtual: false
---
-CREATE OR REPLACE VIEW said_3 AS
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	said_3_id ,
--- NESTED KEY AS ATTRIBUTE : string ( string_id )
-	said_3_id AS string_id
-FROM most_violated_dihedralangle_restraint WHERE said_3_id IS NOT NULL
-UNION ALL
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	said_3_id ,
--- NESTED KEY AS ATTRIBUTE : string ( string_id )
-	said_3_id AS string_id
-FROM violated_dihedralangle_restraint WHERE said_3_id IS NOT NULL;
-
---
--- From cif item _atom_site.label_seq_id "a pointer to _entity_poly_seq.num" Example: seq="20" for a residue in a polymer Example: seq="." for a non-polymeric residue eg ligand or water.
--- xmlns: no namespace, schema location: wwpdb_validation_v005.xsd
--- type: root child (view), content: false, list: false, bridge: true, virtual: false
---
-CREATE OR REPLACE VIEW seq_3 AS
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	seq_3_id ,
--- NESTED KEY AS ATTRIBUTE : string ( string_id )
-	seq_3_id AS string_id
-FROM most_violated_dihedralangle_restraint WHERE seq_3_id IS NOT NULL
-UNION ALL
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	seq_3_id ,
--- NESTED KEY AS ATTRIBUTE : string ( string_id )
-	seq_3_id AS string_id
-FROM violated_dihedralangle_restraint WHERE seq_3_id IS NOT NULL;
-
---
--- This attribute will be set if the ModelledSubgroup has atoms with the alternate position indicator set. Normally one character but can be up to 3. Example altcode="A" Obtained from _atom_site.label_alt_id
--- xmlns: no namespace, schema location: wwpdb_validation_v005.xsd
--- type: root child (view), content: false, list: false, bridge: true, virtual: false
---
-CREATE OR REPLACE VIEW altcode_4 AS
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	altcode_4_id ,
--- NESTED KEY AS ATTRIBUTE : string ( string_id )
-	altcode_4_id AS string_id
-FROM most_violated_dihedralangle_restraint WHERE altcode_4_id IS NOT NULL
-UNION ALL
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	altcode_4_id ,
--- NESTED KEY AS ATTRIBUTE : string ( string_id )
-	altcode_4_id AS string_id
-FROM violated_dihedralangle_restraint WHERE altcode_4_id IS NOT NULL;
-
---
--- The chain identifier for the residue or chain obtained from cif item _atom_site.auth_asym_id. Currently this is limited to 5 characters. Example: chain="A"
--- xmlns: no namespace, schema location: wwpdb_validation_v005.xsd
--- type: root child (view), content: false, list: false, bridge: true, virtual: false
---
-CREATE OR REPLACE VIEW chain_4 AS
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	chain_4_id ,
--- NESTED KEY AS ATTRIBUTE : string ( string_id )
-	chain_4_id AS string_id
-FROM most_violated_dihedralangle_restraint WHERE chain_4_id IS NOT NULL
-UNION ALL
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	chain_4_id ,
--- NESTED KEY AS ATTRIBUTE : string ( string_id )
-	chain_4_id AS string_id
-FROM violated_dihedralangle_restraint WHERE chain_4_id IS NOT NULL;
-
---
--- The residue number aka sequence id for a residue. Obtainned from _atom_site.auth_seq_id Example: resnum="8"
--- xmlns: no namespace, schema location: wwpdb_validation_v005.xsd
--- type: root child (view), content: false, list: false, bridge: true, virtual: false
---
-CREATE OR REPLACE VIEW resnum_4 AS
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	resnum_4_id ,
--- NESTED KEY AS ATTRIBUTE : integer ( integer_id )
-	resnum_4_id AS integer_id
-FROM most_violated_dihedralangle_restraint WHERE resnum_4_id IS NOT NULL
-UNION ALL
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	resnum_4_id ,
--- NESTED KEY AS ATTRIBUTE : integer ( integer_id )
-	resnum_4_id AS integer_id
-FROM violated_dihedralangle_restraint WHERE resnum_4_id IS NOT NULL;
-
---
--- The "residue type", this is the name of the chemical component from the PDB chemical component dictionary. Obtained from _atom_site.auth_comp_id Example resname="GLY"
--- xmlns: no namespace, schema location: wwpdb_validation_v005.xsd
--- type: root child (view), content: false, list: false, bridge: true, virtual: false
---
-CREATE OR REPLACE VIEW resname_4 AS
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	resname_4_id ,
--- NESTED KEY AS ATTRIBUTE : string ( string_id )
-	resname_4_id AS string_id
-FROM most_violated_dihedralangle_restraint WHERE resname_4_id IS NOT NULL
-UNION ALL
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	resname_4_id ,
--- NESTED KEY AS ATTRIBUTE : string ( string_id )
-	resname_4_id AS string_id
-FROM violated_dihedralangle_restraint WHERE resname_4_id IS NOT NULL;
-
---
--- Insertion code for residue from _atom_site.pdbx_PDB_ins_code Example: icode=" "
--- xmlns: no namespace, schema location: wwpdb_validation_v005.xsd
--- type: root child (view), content: false, list: false, bridge: true, virtual: false
---
-CREATE OR REPLACE VIEW icode_4 AS
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	icode_4_id ,
--- NESTED KEY AS ATTRIBUTE : string ( string_id )
-	icode_4_id AS string_id
-FROM most_violated_dihedralangle_restraint WHERE icode_4_id IS NOT NULL
-UNION ALL
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	icode_4_id ,
--- NESTED KEY AS ATTRIBUTE : string ( string_id )
-	icode_4_id AS string_id
-FROM violated_dihedralangle_restraint WHERE icode_4_id IS NOT NULL;
-
---
--- The entity id for the residue or chain. This is from item _atom_site.label_entity_id that is a pointer to _entity.id in the ENTITY category. Example: ent="3".
--- xmlns: no namespace, schema location: wwpdb_validation_v005.xsd
--- type: root child (view), content: false, list: false, bridge: true, virtual: false
---
-CREATE OR REPLACE VIEW ent_4 AS
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	ent_4_id ,
--- NESTED KEY AS ATTRIBUTE : string ( string_id )
-	ent_4_id AS string_id
-FROM most_violated_dihedralangle_restraint WHERE ent_4_id IS NOT NULL
-UNION ALL
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	ent_4_id ,
--- NESTED KEY AS ATTRIBUTE : string ( string_id )
-	ent_4_id AS string_id
-FROM violated_dihedralangle_restraint WHERE ent_4_id IS NOT NULL;
-
---
--- The_atom_site.label_asym_id label for the residue. Normally this is the same as the chain. Example: said="A"
--- xmlns: no namespace, schema location: wwpdb_validation_v005.xsd
--- type: root child (view), content: false, list: false, bridge: true, virtual: false
---
-CREATE OR REPLACE VIEW said_4 AS
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	said_4_id ,
--- NESTED KEY AS ATTRIBUTE : string ( string_id )
-	said_4_id AS string_id
-FROM most_violated_dihedralangle_restraint WHERE said_4_id IS NOT NULL
-UNION ALL
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	said_4_id ,
--- NESTED KEY AS ATTRIBUTE : string ( string_id )
-	said_4_id AS string_id
-FROM violated_dihedralangle_restraint WHERE said_4_id IS NOT NULL;
-
---
--- From cif item _atom_site.label_seq_id "a pointer to _entity_poly_seq.num" Example: seq="20" for a residue in a polymer Example: seq="." for a non-polymeric residue eg ligand or water.
--- xmlns: no namespace, schema location: wwpdb_validation_v005.xsd
--- type: root child (view), content: false, list: false, bridge: true, virtual: false
---
-CREATE OR REPLACE VIEW seq_4 AS
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	seq_4_id ,
--- NESTED KEY AS ATTRIBUTE : string ( string_id )
-	seq_4_id AS string_id
-FROM most_violated_dihedralangle_restraint WHERE seq_4_id IS NOT NULL
-UNION ALL
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	seq_4_id ,
--- NESTED KEY AS ATTRIBUTE : string ( string_id )
-	seq_4_id AS string_id
-FROM violated_dihedralangle_restraint WHERE seq_4_id IS NOT NULL;
-
---
--- The maximum value of distance violation with in the gv=iven bin
--- xmlns: no namespace, schema location: wwpdb_validation_v005.xsd
--- type: root child (view), content: false, list: false, bridge: true, virtual: false
---
-CREATE OR REPLACE VIEW max_violation AS
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
-	max_violation_id ,
--- NESTED KEY AS ATTRIBUTE : decimal ( decimal_id )
-	max_violation_id AS decimal_id
-FROM residual_distance_violation WHERE max_violation_id IS NOT NULL
-UNION ALL
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
-	max_violation_id ,
--- NESTED KEY AS ATTRIBUTE : decimal ( decimal_id )
-	max_violation_id AS decimal_id
-FROM residual_angle_violation WHERE max_violation_id IS NOT NULL
-UNION ALL
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
-	max_violation_id ,
--- NESTED KEY AS ATTRIBUTE : decimal ( decimal_id )
-	max_violation_id AS decimal_id
-FROM distance_violations_in_model WHERE max_violation_id IS NOT NULL
-UNION ALL
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
-	max_violation_id ,
--- NESTED KEY AS ATTRIBUTE : decimal ( decimal_id )
-	max_violation_id AS decimal_id
-FROM dihedralangle_violations_in_model WHERE max_violation_id IS NOT NULL;
-
---
--- The mean value of the violation of a given restraint in an ensemble
--- xmlns: no namespace, schema location: wwpdb_validation_v005.xsd
--- type: root child (view), content: false, list: false, bridge: true, virtual: false
---
-CREATE OR REPLACE VIEW mean_violation AS
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
-	mean_violation_id ,
--- NESTED KEY AS ATTRIBUTE : decimal ( decimal_id )
-	mean_violation_id AS decimal_id
-FROM distance_violations_in_model WHERE mean_violation_id IS NOT NULL
-UNION ALL
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
-	mean_violation_id ,
--- NESTED KEY AS ATTRIBUTE : decimal ( decimal_id )
-	mean_violation_id AS decimal_id
-FROM dihedralangle_violations_in_model WHERE mean_violation_id IS NOT NULL;
-
---
--- The standard deviation of the value of the violations of a given restraint in an ensemble
--- xmlns: no namespace, schema location: wwpdb_validation_v005.xsd
--- type: root child (view), content: false, list: false, bridge: true, virtual: false
---
-CREATE OR REPLACE VIEW standard_deviation AS
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
-	standard_deviation_id ,
--- NESTED KEY AS ATTRIBUTE : decimal ( decimal_id )
-	standard_deviation_id AS decimal_id
-FROM distance_violations_in_model WHERE standard_deviation_id IS NOT NULL
-UNION ALL
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
-	standard_deviation_id ,
--- NESTED KEY AS ATTRIBUTE : decimal ( decimal_id )
-	standard_deviation_id AS decimal_id
-FROM most_violated_distance_restraint WHERE standard_deviation_id IS NOT NULL
-UNION ALL
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
-	standard_deviation_id ,
--- NESTED KEY AS ATTRIBUTE : decimal ( decimal_id )
-	standard_deviation_id AS decimal_id
-FROM dihedralangle_violations_in_model WHERE standard_deviation_id IS NOT NULL
-UNION ALL
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
-	standard_deviation_id ,
--- NESTED KEY AS ATTRIBUTE : decimal ( decimal_id )
-	standard_deviation_id AS decimal_id
-FROM most_violated_dihedralangle_restraint WHERE standard_deviation_id IS NOT NULL;
-
---
--- The median value of the violation of a given restraint in an ensemble
--- xmlns: no namespace, schema location: wwpdb_validation_v005.xsd
--- type: root child (view), content: false, list: false, bridge: true, virtual: false
---
-CREATE OR REPLACE VIEW median_violation AS
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
-	median_violation_id ,
--- NESTED KEY AS ATTRIBUTE : decimal ( decimal_id )
-	median_violation_id AS decimal_id
-FROM distance_violations_in_model WHERE median_violation_id IS NOT NULL
-UNION ALL
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
-	median_violation_id ,
--- NESTED KEY AS ATTRIBUTE : decimal ( decimal_id )
-	median_violation_id AS decimal_id
-FROM most_violated_distance_restraint WHERE median_violation_id IS NOT NULL
-UNION ALL
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
-	median_violation_id ,
--- NESTED KEY AS ATTRIBUTE : decimal ( decimal_id )
-	median_violation_id AS decimal_id
-FROM dihedralangle_violations_in_model WHERE median_violation_id IS NOT NULL
-UNION ALL
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
-	median_violation_id ,
--- NESTED KEY AS ATTRIBUTE : decimal ( decimal_id )
-	median_violation_id AS decimal_id
-FROM most_violated_dihedralangle_restraint WHERE median_violation_id IS NOT NULL;
-
---
--- Numbre of violated models for given set of violated restraints
--- xmlns: no namespace, schema location: wwpdb_validation_v005.xsd
--- type: root child (view), content: false, list: false, bridge: true, virtual: false
---
-CREATE OR REPLACE VIEW fraction_of_ensemble_count AS
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
-	fraction_of_ensemble_count_id ,
--- NESTED KEY AS ATTRIBUTE : integer ( integer_id )
-	fraction_of_ensemble_count_id AS integer_id
-FROM distance_violation_in_ensemble WHERE fraction_of_ensemble_count_id IS NOT NULL
-UNION ALL
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
-	fraction_of_ensemble_count_id ,
--- NESTED KEY AS ATTRIBUTE : integer ( integer_id )
-	fraction_of_ensemble_count_id AS integer_id
-FROM dihedralangle_violation_in_ensemble WHERE fraction_of_ensemble_count_id IS NOT NULL;
-
---
--- Percentage of violated models for given set of violated restraints
--- xmlns: no namespace, schema location: wwpdb_validation_v005.xsd
--- type: root child (view), content: false, list: false, bridge: true, virtual: false
---
-CREATE OR REPLACE VIEW fraction_of_ensemble_percent AS
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
-	fraction_of_ensemble_percent_id ,
--- NESTED KEY AS ATTRIBUTE : decimal ( decimal_id )
-	fraction_of_ensemble_percent_id AS decimal_id
-FROM distance_violation_in_ensemble WHERE fraction_of_ensemble_percent_id IS NOT NULL
-UNION ALL
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
-	fraction_of_ensemble_percent_id ,
--- NESTED KEY AS ATTRIBUTE : decimal ( decimal_id )
-	fraction_of_ensemble_percent_id AS decimal_id
-FROM dihedralangle_violation_in_ensemble WHERE fraction_of_ensemble_percent_id IS NOT NULL;
 
 --
 -- Contains the data required to plot the map-value distribution graph for the primary map
@@ -5233,20 +3239,6 @@ SELECT
 -- NESTED KEY AS ATTRIBUTE : percentile_rank ( percentile_rank_id )
 	"relative-percentile-percent-RSRZ-outliers_id" AS percentile_rank_id
 FROM "Entry" WHERE "relative-percentile-percent-RSRZ-outliers_id" IS NOT NULL;
-
---
--- This flag indicates where restraitns data is provided or not. If yes, then only chemical shift data provided in parsable format.
--- xmlns: no namespace, schema location: wwpdb_validation_v005.xsd
--- type: root child (view), content: false, list: false, bridge: true, virtual: false
---
-CREATE OR REPLACE VIEW cs_only AS
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
-	cs_only_id ,
--- NESTED KEY AS ATTRIBUTE : string ( string_id )
-	cs_only_id AS string_id
-FROM "Entry" WHERE cs_only_id IS NOT NULL;
 
 --
 -- If the residue is a ligand and involved in clashes this will be set to yes: Example: ligand_clashes_outlier="yes".
