@@ -3,7 +3,7 @@
   version="1.0"
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xmlns:PDBxv="http://pdbml.pdb.org/schema/pdbx-validation-v2.xsd">
+  xmlns:PDBxv="http://pdbml.pdb.org/schema/pdbx-validation-v3.xsd">
 
   <xsl:output method="text"/>
   <xsl:strip-space elements="*"/>

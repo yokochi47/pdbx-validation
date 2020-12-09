@@ -3,7 +3,7 @@
   version="1.0"
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xmlns:PDBxv="http://pdbml.pdb.org/schema/pdbx-validation-v2.xsd">
+  xmlns:PDBxv="http://pdbml.pdb.org/schema/pdbx-validation-v3.xsd">
 
   <xsl:param name="info_alt_file" required="yes"/>
   <xsl:param name="info_alt" select="document($info_alt_file)"/>
@@ -29,7 +29,7 @@ Unmatched entry ID in both documents (<xsl:value-of select="$entry_id"/> and <xs
       </xsl:call-template>
     </xsl:if>
 
-    <PDBxv:datablock datablockName="{$datablock_name}" xsi:schemaLocation="http://pdbml.pdb.org/schema/pdbx-validation-v2.xsd pdbx-validation-v2.xsd">
+    <PDBxv:datablock datablockName="{$datablock_name}" xsi:schemaLocation="http://pdbml.pdb.org/schema/pdbx-validation-v3.xsd pdbx-validation-v3.xsd">
       <xsl:apply-templates select="PDBxv:datablock/*[not(local-name()='em_adminCategory' or local-name()='pdbx_validate_rmsd_angleCategory' or local-name()='pdbx_validate_rmsd_bondCategory' or local-name()='pdbx_validate_close_contactCategory' or local-name()='pdbx_validate_symm_contactCategory')]"/>
       <xsl:apply-templates select="$alt_datablock/*[not(local-name()='entryCategory' or local-name()='em_adminCategory' or local-name()='pdbx_validate_rmsd_angleCategory' or local-name()='pdbx_validate_rmsd_bondCategory' or local-name()='pdbx_validate_close_contactCategory' or local-name()='pdbx_validate_symm_contactCategory')]"/>
 
@@ -784,6 +784,66 @@ Unmatched entry ID in both documents (<xsl:value-of select="$entry_id"/> and <xs
     </xsl:element>
   </xsl:template>
 
+  <xsl:template match="PDBxv:pdbx_nmr_dihedral_angle_violationCategory">
+    <xsl:element name="{name()}">
+      <xsl:apply-templates mode="category-element"/>
+    </xsl:element>
+  </xsl:template>
+
+  <xsl:template match="PDBxv:pdbx_nmr_dihedral_angle_violation_ensembleCategory">
+    <xsl:element name="{name()}">
+      <xsl:apply-templates mode="category-element"/>
+    </xsl:element>
+  </xsl:template>
+
+  <xsl:template match="PDBxv:pdbx_nmr_dihedral_angle_violation_modelCategory">
+    <xsl:element name="{name()}">
+      <xsl:apply-templates mode="category-element"/>
+    </xsl:element>
+  </xsl:template>
+
+  <xsl:template match="PDBxv:pdbx_nmr_dihedral_angle_violation_pluralCategory">
+    <xsl:element name="{name()}">
+      <xsl:apply-templates mode="category-element"/>
+    </xsl:element>
+  </xsl:template>
+
+  <xsl:template match="PDBxv:pdbx_nmr_dihedral_angle_violation_summaryCategory">
+    <xsl:element name="{name()}">
+      <xsl:apply-templates mode="category-element"/>
+    </xsl:element>
+  </xsl:template>
+
+  <xsl:template match="PDBxv:pdbx_nmr_distance_violationCategory">
+    <xsl:element name="{name()}">
+      <xsl:apply-templates mode="category-element"/>
+    </xsl:element>
+  </xsl:template>
+
+  <xsl:template match="PDBxv:pdbx_nmr_distance_violation_ensembleCategory">
+    <xsl:element name="{name()}">
+      <xsl:apply-templates mode="category-element"/>
+    </xsl:element>
+  </xsl:template>
+
+  <xsl:template match="PDBxv:pdbx_nmr_distance_violation_modelCategory">
+    <xsl:element name="{name()}">
+      <xsl:apply-templates mode="category-element"/>
+    </xsl:element>
+  </xsl:template>
+
+  <xsl:template match="PDBxv:pdbx_nmr_distance_violation_pluralCategory">
+    <xsl:element name="{name()}">
+      <xsl:apply-templates mode="category-element"/>
+    </xsl:element>
+  </xsl:template>
+
+  <xsl:template match="PDBxv:pdbx_nmr_distance_violation_summaryCategory">
+    <xsl:element name="{name()}">
+      <xsl:apply-templates mode="category-element"/>
+    </xsl:element>
+  </xsl:template>
+
   <xsl:template match="PDBxv:pdbx_nmr_ensembleCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
@@ -827,6 +887,24 @@ Unmatched entry ID in both documents (<xsl:value-of select="$entry_id"/> and <xs
   </xsl:template>
 
   <xsl:template match="PDBxv:pdbx_nmr_representativeCategory">
+    <xsl:element name="{name()}">
+      <xsl:apply-templates mode="category-element"/>
+    </xsl:element>
+  </xsl:template>
+
+  <xsl:template match="PDBxv:pdbx_nmr_restraint_listCategory">
+    <xsl:element name="{name()}">
+      <xsl:apply-templates mode="category-element"/>
+    </xsl:element>
+  </xsl:template>
+
+  <xsl:template match="PDBxv:pdbx_nmr_restraint_summaryCategory">
+    <xsl:element name="{name()}">
+      <xsl:apply-templates mode="category-element"/>
+    </xsl:element>
+  </xsl:template>
+
+  <xsl:template match="PDBxv:pdbx_nmr_restraint_violationCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>

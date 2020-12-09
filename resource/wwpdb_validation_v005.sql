@@ -23,7 +23,7 @@
 --  hash key type: unsigned long 64 bits
 --
 -- Statistics of schema:
---  Generated 79 tables (878 fields), 50 views (150 fields), 0 attr groups, 0 model groups in total
+--  Generated 79 tables (879 fields), 50 views (150 fields), 0 attr groups, 0 model groups in total
 --   Orphan tables that can not be reached from the document root:
 --    schema location: wwpdb_validation_v005.xsd
 --      "NotAvailable"
@@ -38,7 +38,7 @@
 --   User keys:
 --    129 document keys, 0 serial keys, 0 xpath keys
 --   Contents:
---    458 attributes (0 in-place document keys), 0 elements (0 in-place document keys), 6 simple contents (0 in-place document keys, 6 as attribute, 0 as conditional attribute)
+--    459 attributes (0 in-place document keys), 0 elements (0 in-place document keys), 6 simple contents (0 in-place document keys, 6 as attribute, 0 as conditional attribute)
 --   Wild cards:
 --    0 any elements, 0 any attributes
 --   Constraints:
@@ -75,7 +75,7 @@ DROP TABLE IF EXISTS "mog-bond-outlier" CASCADE;
 DROP TABLE IF EXISTS "mog-angle-outlier" CASCADE;
 DROP TABLE IF EXISTS "mog-torsion-outlier" CASCADE;
 DROP TABLE IF EXISTS "mog-ring-outlier" CASCADE;
-DROP TABLE IF EXISTS dihedral_angle_violation CASCADE;
+DROP TABLE IF EXISTS dihedralangle_violation CASCADE;
 DROP TABLE IF EXISTS cyrange_domain CASCADE;
 DROP TABLE IF EXISTS "ModelledEntityInstance" CASCADE;
 DROP TABLE IF EXISTS "RecommendedContourLevel" CASCADE;
@@ -84,7 +84,6 @@ DROP TABLE IF EXISTS fsc_intersection CASCADE;
 DROP TABLE IF EXISTS resolution_intersections CASCADE;
 DROP TABLE IF EXISTS fsc_curves CASCADE;
 DROP TABLE IF EXISTS fsc_indicator_curves CASCADE;
-DROP TABLE IF EXISTS program CASCADE;
 DROP TABLE IF EXISTS restraint_summary CASCADE;
 DROP TABLE IF EXISTS residual_distance_violation CASCADE;
 DROP TABLE IF EXISTS residual_angle_violation CASCADE;
@@ -96,10 +95,10 @@ DROP TABLE IF EXISTS dihedralangle_violation_summary CASCADE;
 DROP TABLE IF EXISTS ang_rest_types CASCADE;
 DROP TABLE IF EXISTS most_violated_dihedralangle_restraint CASCADE;
 DROP TABLE IF EXISTS violated_dihedralangle_restraint CASCADE;
+DROP TABLE IF EXISTS program CASCADE;
 DROP TABLE IF EXISTS coordinate CASCADE;
 DROP TABLE IF EXISTS graph CASCADE;
 DROP TABLE IF EXISTS intersection CASCADE;
-DROP TABLE IF EXISTS programs CASCADE;
 DROP TABLE IF EXISTS conformationally_restricting_restraints CASCADE;
 DROP TABLE IF EXISTS residual_distance_violations CASCADE;
 DROP TABLE IF EXISTS residual_angle_violations CASCADE;
@@ -113,6 +112,7 @@ DROP TABLE IF EXISTS dihedralangle_violations_in_model CASCADE;
 DROP TABLE IF EXISTS dihedralangle_violation_in_ensemble CASCADE;
 DROP TABLE IF EXISTS most_violated_dihedralangle_restraints CASCADE;
 DROP TABLE IF EXISTS violated_dihedralangle_restraints CASCADE;
+DROP TABLE IF EXISTS programs CASCADE;
 DROP TABLE IF EXISTS distance_violations_in_models CASCADE;
 DROP TABLE IF EXISTS distance_violations_in_ensemble CASCADE;
 DROP TABLE IF EXISTS dihedralangle_violations_in_models CASCADE;
@@ -150,14 +150,14 @@ CREATE TABLE "wwPDB-validation-information" (
 	"ModelledEntityInstance_id" BIGINT CHECK ( "ModelledEntityInstance_id" >= 0 ) ,
 -- NESTED KEY : "EM_validation" ( "EM_validation_id" )
 	"EM_validation_id" BIGINT CHECK ( "EM_validation_id" >= 0 ) ,
--- NESTED KEY : programs ( programs_id )
-	programs_id BIGINT CHECK ( programs_id >= 0 ) ,
 -- NESTED KEY : "NMR_restraints_analysis" ( "NMR_restraints_analysis_id" )
 	"NMR_restraints_analysis_id" BIGINT CHECK ( "NMR_restraints_analysis_id" >= 0 ) ,
 -- NESTED KEY : distance_restraints_analysis ( distance_restraints_analysis_id )
 	distance_restraints_analysis_id BIGINT CHECK ( distance_restraints_analysis_id >= 0 ) ,
 -- NESTED KEY : dihedralangle_restraints_analysis ( dihedralangle_restraints_analysis_id )
-	dihedralangle_restraints_analysis_id BIGINT CHECK ( dihedralangle_restraints_analysis_id >= 0 )
+	dihedralangle_restraints_analysis_id BIGINT CHECK ( dihedralangle_restraints_analysis_id >= 0 ) ,
+-- NESTED KEY : programs ( programs_id )
+	programs_id BIGINT CHECK ( programs_id >= 0 )
 );
 
 --
@@ -199,11 +199,12 @@ CREATE TABLE "ModelledSubgroup" (
 	"mog-torsion-outlier_id" BIGINT CHECK ( "mog-torsion-outlier_id" >= 0 ) ,
 -- NESTED KEY : "mog-ring-outlier" ( "mog-ring-outlier_id" )
 	"mog-ring-outlier_id" BIGINT CHECK ( "mog-ring-outlier_id" >= 0 ) ,
--- NESTED KEY : dihedral_angle_violation ( dihedral_angle_violation_id )
-	dihedral_angle_violation_id BIGINT CHECK ( dihedral_angle_violation_id >= 0 ) ,
+-- NESTED KEY : dihedralangle_violation ( dihedralangle_violation_id )
+	dihedralangle_violation_id BIGINT CHECK ( dihedralangle_violation_id >= 0 ) ,
 -- ATTRIBUTE
 	chain TEXT ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	resnum INTEGER ,
 -- ATTRIBUTE
 	resname TEXT ,
@@ -220,8 +221,10 @@ CREATE TABLE "ModelledSubgroup" (
 -- ATTRIBUTE
 	seq TEXT ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	ligand_num_clashes INTEGER ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	ligand_num_symm_clashes INTEGER ,
 -- NESTED KEY AS ATTRIBUTE : ligand_clashes_outlier ( ligand_clashes_outlier_id, DELEGATED TO "YesString_id" )
 	ligand_clashes_outlier_id BIGINT CHECK ( ligand_clashes_outlier_id >= 0 ) ,
@@ -230,8 +233,10 @@ CREATE TABLE "ModelledSubgroup" (
 -- NESTED KEY AS ATTRIBUTE : cis_peptide ( cis_peptide_id, DELEGATED TO "YesString_id" )
 	cis_peptide_id BIGINT CHECK ( cis_peptide_id >= 0 ) ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	"NatomsEDS" INTEGER ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	cyrange_domain_id INTEGER ,
 -- ATTRIBUTE
 	validate TEXT ,
@@ -252,10 +257,12 @@ CREATE TABLE "ModelledSubgroup" (
 -- ATTRIBUTE
 	"ligRSRnbrStdev" DECIMAL ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	"ligRSRnumnbrs" INTEGER ,
 -- ATTRIBUTE
 	"ligRSRZ" DECIMAL ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	"num-H-reduce" INTEGER ,
 -- ATTRIBUTE
 	rama ENUM_ModelledSubgroup_rama ,
@@ -280,8 +287,10 @@ CREATE TABLE "ModelledSubgroup" (
 -- ATTRIBUTE
 	mogul_bonds_rmsz DECIMAL ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	mogul_rmsz_numangles INTEGER ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	mogul_rmsz_numbonds INTEGER ,
 -- NESTED KEY AS ATTRIBUTE : ligand_geometry_outlier ( ligand_geometry_outlier_id, DELEGATED TO "YesString_id" )
 	ligand_geometry_outlier_id BIGINT CHECK ( ligand_geometry_outlier_id >= 0 ) ,
@@ -357,6 +366,7 @@ CREATE TABLE "Entry" (
 -- ATTRIBUTE
 	"PDB-deposition-date" TEXT ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	"PDB-revision-number" INTEGER ,
 -- ATTRIBUTE
 	"PDB-revision-date" TEXT ,
@@ -399,10 +409,13 @@ CREATE TABLE "Entry" (
 -- ATTRIBUTE
 	bonds_rmsz DECIMAL ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	num_bonds_rmsz INTEGER ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	num_angles_rmsz INTEGER ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	"num-H-reduce" INTEGER ,
 -- ATTRIBUTE
 	clashscore DECIMAL ,
@@ -427,12 +440,14 @@ CREATE TABLE "Entry" (
 -- ATTRIBUTE
 	xtriage_input_columns TEXT ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	acentric_outliers INTEGER ,
 -- ATTRIBUTE
 	centric_outliers DECIMAL ,
 -- ATTRIBUTE
 	"IoverSigma" TEXT ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	"numMillerIndices" INTEGER ,
 -- ATTRIBUTE
 	"WilsonBestimate" DECIMAL ,
@@ -459,6 +474,7 @@ CREATE TABLE "Entry" (
 -- ATTRIBUTE
 	"DCC_refinement_program" TEXT ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	"num-free-reflections" INTEGER ,
 -- NESTED KEY AS ATTRIBUTE : "percent-free-reflections" ( "percent-free-reflections_id", DELEGATED TO percentage_id )
 	"percent-free-reflections_id" BIGINT CHECK ( "percent-free-reflections_id" >= 0 ) ,
@@ -493,16 +509,22 @@ CREATE TABLE "Entry" (
 -- ATTRIBUTE
 	nmrclust_version TEXT ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	nmrclust_representative_model INTEGER ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	medoid_model INTEGER ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	nmrclust_number_of_outliers INTEGER ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	nmrclust_number_of_models INTEGER ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	nmrclust_number_of_clusters INTEGER ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	cyrange_number_of_domains INTEGER ,
 -- ATTRIBUTE
 	chemical_shift_completeness DECIMAL ,
@@ -551,10 +573,12 @@ CREATE TABLE "Entry" (
 -- NESTED KEY AS ATTRIBUTE : "absolute-percentile-RNAsuiteness" ( "absolute-percentile-RNAsuiteness_id", DELEGATED TO percentile_rank_id )
 	"absolute-percentile-RNAsuiteness_id" BIGINT CHECK ( "absolute-percentile-RNAsuiteness_id" >= 0 ) ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	"numPDBids-absolute-percentile-RNAsuiteness" INTEGER ,
 -- NESTED KEY AS ATTRIBUTE : "relative-percentile-RNAsuiteness" ( "relative-percentile-RNAsuiteness_id", DELEGATED TO percentile_rank_id )
 	"relative-percentile-RNAsuiteness_id" BIGINT CHECK ( "relative-percentile-RNAsuiteness_id" >= 0 ) ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	"numPDBids-relative-percentile-RNAsuiteness" INTEGER ,
 -- ATTRIBUTE
 	"low-resol-relative-percentile-RNAsuiteness" DECIMAL ,
@@ -563,10 +587,12 @@ CREATE TABLE "Entry" (
 -- NESTED KEY AS ATTRIBUTE : "absolute-percentile-clashscore" ( "absolute-percentile-clashscore_id", DELEGATED TO percentile_rank_id )
 	"absolute-percentile-clashscore_id" BIGINT CHECK ( "absolute-percentile-clashscore_id" >= 0 ) ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	"numPDBids-absolute-percentile-clashscore" INTEGER ,
 -- NESTED KEY AS ATTRIBUTE : "relative-percentile-clashscore" ( "relative-percentile-clashscore_id", DELEGATED TO percentile_rank_id )
 	"relative-percentile-clashscore_id" BIGINT CHECK ( "relative-percentile-clashscore_id" >= 0 ) ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	"numPDBids-relative-percentile-clashscore" INTEGER ,
 -- ATTRIBUTE
 	"low-resol-relative-percentile-clashscore" DECIMAL ,
@@ -575,10 +601,12 @@ CREATE TABLE "Entry" (
 -- NESTED KEY AS ATTRIBUTE : "absolute-percentile-percent-rama-outliers" ( "absolute-percentile-percent-rama-outliers_id", DELEGATED TO percentile_rank_id )
 	"absolute-percentile-percent-rama-outliers_id" BIGINT CHECK ( "absolute-percentile-percent-rama-outliers_id" >= 0 ) ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	"numPDBids-absolute-percentile-percent-rama-outliers" INTEGER ,
 -- NESTED KEY AS ATTRIBUTE : "relative-percentile-percent-rama-outliers" ( "relative-percentile-percent-rama-outliers_id", DELEGATED TO percentile_rank_id )
 	"relative-percentile-percent-rama-outliers_id" BIGINT CHECK ( "relative-percentile-percent-rama-outliers_id" >= 0 ) ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	"numPDBids-relative-percentile-percent-rama-outliers" INTEGER ,
 -- ATTRIBUTE
 	"low-resol-relative-percentile-percent-rama-outliers" DECIMAL ,
@@ -587,10 +615,12 @@ CREATE TABLE "Entry" (
 -- NESTED KEY AS ATTRIBUTE : "absolute-percentile-percent-rota-outliers" ( "absolute-percentile-percent-rota-outliers_id", DELEGATED TO percentile_rank_id )
 	"absolute-percentile-percent-rota-outliers_id" BIGINT CHECK ( "absolute-percentile-percent-rota-outliers_id" >= 0 ) ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	"numPDBids-absolute-percentile-percent-rota-outliers" INTEGER ,
 -- NESTED KEY AS ATTRIBUTE : "relative-percentile-percent-rota-outliers" ( "relative-percentile-percent-rota-outliers_id", DELEGATED TO percentile_rank_id )
 	"relative-percentile-percent-rota-outliers_id" BIGINT CHECK ( "relative-percentile-percent-rota-outliers_id" >= 0 ) ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	"numPDBids-relative-percentile-percent-rota-outliers" INTEGER ,
 -- ATTRIBUTE
 	"low-resol-relative-percentile-percent-rota-outliers" DECIMAL ,
@@ -599,10 +629,12 @@ CREATE TABLE "Entry" (
 -- NESTED KEY AS ATTRIBUTE : "absolute-percentile-DCC_Rfree" ( "absolute-percentile-DCC_Rfree_id", DELEGATED TO percentile_rank_id )
 	"absolute-percentile-DCC_Rfree_id" BIGINT CHECK ( "absolute-percentile-DCC_Rfree_id" >= 0 ) ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	"numPDBids-absolute-percentile-DCC_Rfree" INTEGER ,
 -- NESTED KEY AS ATTRIBUTE : "relative-percentile-DCC_Rfree" ( "relative-percentile-DCC_Rfree_id", DELEGATED TO percentile_rank_id )
 	"relative-percentile-DCC_Rfree_id" BIGINT CHECK ( "relative-percentile-DCC_Rfree_id" >= 0 ) ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	"numPDBids-relative-percentile-DCC_Rfree" INTEGER ,
 -- ATTRIBUTE
 	"low-resol-relative-percentile-DCC_Rfree" DECIMAL ,
@@ -611,10 +643,12 @@ CREATE TABLE "Entry" (
 -- NESTED KEY AS ATTRIBUTE : "absolute-percentile-percent-RSRZ-outliers" ( "absolute-percentile-percent-RSRZ-outliers_id", DELEGATED TO percentile_rank_id )
 	"absolute-percentile-percent-RSRZ-outliers_id" BIGINT CHECK ( "absolute-percentile-percent-RSRZ-outliers_id" >= 0 ) ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	"numPDBids-absolute-percentile-percent-RSRZ-outliers" INTEGER ,
 -- NESTED KEY AS ATTRIBUTE : "relative-percentile-percent-RSRZ-outliers" ( "relative-percentile-percent-RSRZ-outliers_id", DELEGATED TO percentile_rank_id )
 	"relative-percentile-percent-RSRZ-outliers_id" BIGINT CHECK ( "relative-percentile-percent-RSRZ-outliers_id" >= 0 ) ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	"numPDBids-relative-percentile-percent-RSRZ-outliers" INTEGER ,
 -- ATTRIBUTE
 	"low-resol-relative-percentile-percent-RSRZ-outliers" DECIMAL ,
@@ -652,6 +686,7 @@ CREATE TABLE chemical_shift_list (
 -- NESTED KEY : assignment_completeness_full_length ( assignment_completeness_full_length_id )
 	assignment_completeness_full_length_id BIGINT CHECK ( assignment_completeness_full_length_id >= 0 ) ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	file_id INTEGER ,
 -- ATTRIBUTE
 	file_name TEXT ,
@@ -662,16 +697,22 @@ CREATE TABLE chemical_shift_list (
 -- ATTRIBUTE
 	type TEXT ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	number_of_errors_while_mapping INTEGER ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	number_of_warnings_while_mapping INTEGER ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	number_of_mapped_shifts INTEGER ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	number_of_parsed_shifts INTEGER ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	total_number_of_shifts INTEGER ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	number_of_unparsed_shifts INTEGER
 );
 
@@ -897,21 +938,6 @@ CREATE TABLE intersection (
 );
 
 --
--- A list of programs used by the validation pipeline.
--- xmlns: no namespace, schema location: wwpdb_validation_v005.xsd
--- type: root child, content: false, list: true, bridge: true, virtual: false
---
-CREATE TABLE programs (
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
-	programs_id BIGINT CHECK ( programs_id >= 0 ) ,
--- FOREIGN KEY : "wwPDB-validation-information" ( "wwPDB-validation-information_id" )
-	"wwPDB-validation-information_id" BIGINT CHECK ( "wwPDB-validation-information_id" >= 0 ) ,
--- NESTED KEY : program ( program_id )
-	program_id BIGINT CHECK ( program_id >= 0 )
-);
-
---
 -- Summary of conformationally restriction restraints. All redundant and duplicate restraints are filtered
 -- xmlns: no namespace, schema location: wwpdb_validation_v005.xsd
 -- type: root child, content: false, list: true, bridge: true, virtual: false
@@ -1010,7 +1036,7 @@ CREATE TABLE distance_violation_in_ensemble (
 -- NESTED KEY : dist_rest_types ( dist_rest_types_id )
 	dist_rest_types_id BIGINT CHECK ( dist_rest_types_id >= 0 ) ,
 -- ATTRIBUTE
--- map mathematical concept of integer numbers (xs:integer) to signed int 32 bits
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	fraction_of_ensemble_count INTEGER ,
 -- ATTRIBUTE
 	fraction_of_ensemble_percent DECIMAL
@@ -1100,7 +1126,7 @@ CREATE TABLE dihedralangle_violation_in_ensemble (
 -- NESTED KEY : ang_rest_types ( ang_rest_types_id )
 	ang_rest_types_id BIGINT CHECK ( ang_rest_types_id >= 0 ) ,
 -- ATTRIBUTE
--- map mathematical concept of integer numbers (xs:integer) to signed int 32 bits
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	fraction_of_ensemble_count INTEGER ,
 -- ATTRIBUTE
 	fraction_of_ensemble_percent DECIMAL
@@ -1134,6 +1160,21 @@ CREATE TABLE violated_dihedralangle_restraints (
 	dihedralangle_restraints_analysis_id BIGINT CHECK ( dihedralangle_restraints_analysis_id >= 0 ) ,
 -- NESTED KEY : violated_dihedralangle_restraint ( violated_dihedralangle_restraint_id )
 	violated_dihedralangle_restraint_id BIGINT CHECK ( violated_dihedralangle_restraint_id >= 0 )
+);
+
+--
+-- A list of programs used by the validation pipeline.
+-- xmlns: no namespace, schema location: wwpdb_validation_v005.xsd
+-- type: root child, content: false, list: true, bridge: true, virtual: false
+--
+CREATE TABLE programs (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+	programs_id BIGINT CHECK ( programs_id >= 0 ) ,
+-- FOREIGN KEY : "wwPDB-validation-information" ( "wwPDB-validation-information_id" )
+	"wwPDB-validation-information_id" BIGINT CHECK ( "wwPDB-validation-information_id" >= 0 ) ,
+-- NESTED KEY : program ( program_id )
+	program_id BIGINT CHECK ( program_id >= 0 )
 );
 
 --
@@ -1175,6 +1216,7 @@ CREATE TABLE unmapped_chemical_shift (
 -- ATTRIBUTE
 	rescode TEXT ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	resnum INTEGER ,
 -- NESTED KEY AS ATTRIBUTE : atom ( atom_id, DELEGATED TO atom_name_id )
 	atom_id BIGINT CHECK ( atom_id >= 0 ) ,
@@ -1206,6 +1248,7 @@ CREATE TABLE unparsed_chemical_shift (
 -- ATTRIBUTE
 	rescode TEXT ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	resnum INTEGER ,
 -- NESTED KEY AS ATTRIBUTE : atom ( atom_id, DELEGATED TO atom_name_id )
 	atom_id BIGINT CHECK ( atom_id >= 0 ) ,
@@ -1252,6 +1295,7 @@ CREATE TABLE random_coil_index (
 -- ATTRIBUTE
 	rescode TEXT ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	resnum INTEGER ,
 -- ATTRIBUTE
 	value DECIMAL
@@ -1273,6 +1317,7 @@ CREATE TABLE chemical_shift_outlier (
 -- ATTRIBUTE
 	rescode TEXT ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	resnum INTEGER ,
 -- NESTED KEY AS ATTRIBUTE : atom ( atom_id, DELEGATED TO atom_name_id )
 	atom_id BIGINT CHECK ( atom_id >= 0 ) ,
@@ -1306,6 +1351,7 @@ CREATE TABLE referencing_offset (
 -- ATTRIBUTE
 	value DECIMAL ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	number_of_measurements INTEGER NOT NULL
 );
 
@@ -1321,10 +1367,13 @@ CREATE TABLE assignment_completeness_well_defined (
 -- FOREIGN KEY : chemical_shift_list ( chemical_shift_list_id )
 	chemical_shift_list_id BIGINT CHECK ( chemical_shift_list_id >= 0 ) ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	number_of_assigned_shifts INTEGER ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	number_of_unassigned_shifts INTEGER ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	number_of_shifts INTEGER ,
 -- ATTRIBUTE
 	type TEXT NOT NULL ,
@@ -1344,10 +1393,13 @@ CREATE TABLE assignment_completeness_full_length (
 -- FOREIGN KEY : chemical_shift_list ( chemical_shift_list_id )
 	chemical_shift_list_id BIGINT CHECK ( chemical_shift_list_id >= 0 ) ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	number_of_assigned_shifts INTEGER ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	number_of_unassigned_shifts INTEGER ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	number_of_shifts INTEGER ,
 -- ATTRIBUTE
 	type TEXT NOT NULL ,
@@ -1526,6 +1578,7 @@ CREATE TABLE "Model" (
 -- FOREIGN KEY : "wwPDB-validation-information" ( "wwPDB-validation-information_id" )
 	"wwPDB-validation-information_id" BIGINT CHECK ( "wwPDB-validation-information_id" >= 0 ) ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	model INTEGER ,
 -- ATTRIBUTE
 	nmrclust_cluster_id TEXT ,
@@ -1645,6 +1698,7 @@ CREATE TABLE clash (
 -- NESTED KEY AS ATTRIBUTE : atom ( atom_id, DELEGATED TO atom_name_id )
 	atom_id BIGINT CHECK ( atom_id >= 0 ) ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	cid INTEGER NOT NULL ,
 -- ATTRIBUTE
 	clashmag DECIMAL NOT NULL ,
@@ -1666,10 +1720,10 @@ CREATE TABLE distance_violation (
 -- NESTED KEY AS ATTRIBUTE : atom ( atom_id, DELEGATED TO atom_name_id )
 	atom_id BIGINT CHECK ( atom_id >= 0 ) ,
 -- ATTRIBUTE
--- map mathematical concept of integer numbers (xs:integer) to signed int 32 bits
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	rlist_id INTEGER ,
 -- ATTRIBUTE
--- map mathematical concept of integer numbers (xs:integer) to signed int 32 bits
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	rest_id INTEGER ,
 -- ATTRIBUTE
 	dist_violation_value DECIMAL
@@ -1691,6 +1745,7 @@ CREATE TABLE "symm-clash" (
 -- ATTRIBUTE
 	symop TEXT NOT NULL ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	scid INTEGER NOT NULL ,
 -- ATTRIBUTE
 	clashmag DECIMAL NOT NULL ,
@@ -1718,6 +1773,7 @@ CREATE TABLE "mog-bond-outlier" (
 -- ATTRIBUTE
 	stdev DECIMAL ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	numobs INTEGER ,
 -- ATTRIBUTE
 	"Zscore" DECIMAL ,
@@ -1745,6 +1801,7 @@ CREATE TABLE "mog-angle-outlier" (
 -- ATTRIBUTE
 	stdev DECIMAL ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	numobs INTEGER ,
 -- ATTRIBUTE
 	"Zscore" DECIMAL ,
@@ -1772,6 +1829,7 @@ CREATE TABLE "mog-torsion-outlier" (
 -- ATTRIBUTE
 	mindiff DECIMAL ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	numobs INTEGER ,
 -- ATTRIBUTE
 	stdev DECIMAL ,
@@ -1799,6 +1857,7 @@ CREATE TABLE "mog-ring-outlier" (
 -- ATTRIBUTE
 	stdev DECIMAL ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	numobs INTEGER
 );
 
@@ -1807,19 +1866,19 @@ CREATE TABLE "mog-ring-outlier" (
 -- xmlns: no namespace, schema location: wwpdb_validation_v005.xsd
 -- type: root child, content: true, list: false, bridge: true, virtual: false
 --
-CREATE TABLE dihedral_angle_violation (
+CREATE TABLE dihedralangle_violation (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
-	dihedral_angle_violation_id BIGINT CHECK ( dihedral_angle_violation_id >= 0 ) ,
+	dihedralangle_violation_id BIGINT CHECK ( dihedralangle_violation_id >= 0 ) ,
 -- FOREIGN KEY : "ModelledSubgroup" ( "ModelledSubgroup_id" )
 	"ModelledSubgroup_id" BIGINT CHECK ( "ModelledSubgroup_id" >= 0 ) ,
 -- NESTED KEY AS ATTRIBUTE : atom ( atom_id, DELEGATED TO atom_name_id )
 	atom_id BIGINT CHECK ( atom_id >= 0 ) ,
 -- ATTRIBUTE
--- map mathematical concept of integer numbers (xs:integer) to signed int 32 bits
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	rlist_id INTEGER ,
 -- ATTRIBUTE
--- map mathematical concept of integer numbers (xs:integer) to signed int 32 bits
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	rest_id INTEGER ,
 -- ATTRIBUTE
 	"DihedralAngViolationValue" DECIMAL
@@ -1837,16 +1896,20 @@ CREATE TABLE cyrange_domain (
 -- FOREIGN KEY : "wwPDB-validation-information" ( "wwPDB-validation-information_id" )
 	"wwPDB-validation-information_id" BIGINT CHECK ( "wwPDB-validation-information_id" >= 0 ) ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	domain INTEGER ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	number_of_gaps INTEGER ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	number_of_residues INTEGER ,
 -- ATTRIBUTE
 	percentage_of_core DECIMAL ,
 -- ATTRIBUTE
 	rmsd DECIMAL ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	medoid_model INTEGER ,
 -- ATTRIBUTE
 	medoid_rmsd DECIMAL ,
@@ -1882,8 +1945,10 @@ CREATE TABLE "ModelledEntityInstance" (
 -- ATTRIBUTE
 	bonds_rmsz DECIMAL ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	num_bonds_rmsz INTEGER ,
 -- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	num_angles_rmsz INTEGER ,
 -- ATTRIBUTE
 	average_residue_inclusion DECIMAL ,
@@ -2004,25 +2069,6 @@ CREATE TABLE fsc_indicator_curves (
 );
 
 --
--- An individual program used by the validation pipeline. Normally this corresponds to a "step" but not always.
--- xmlns: no namespace, schema location: wwpdb_validation_v005.xsd
--- type: root child, content: true, list: false, bridge: false, virtual: false
---
-CREATE TABLE program (
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
-	program_id BIGINT CHECK ( program_id >= 0 ) ,
--- FOREIGN KEY : programs ( programs_id )
-	programs_id BIGINT CHECK ( programs_id >= 0 ) ,
--- ATTRIBUTE
-	name TEXT NOT NULL ,
--- ATTRIBUTE
-	properties TEXT NOT NULL ,
--- ATTRIBUTE
-	version TEXT NOT NULL
-);
-
---
 -- Number of restraints in different restraint categories are listed here
 -- xmlns: no namespace, schema location: wwpdb_validation_v005.xsd
 -- type: root child, content: true, list: false, bridge: false, virtual: false
@@ -2091,17 +2137,19 @@ CREATE TABLE distance_violation_summary (
 -- ATTRIBUTE
 	restraint_type TEXT ,
 -- ATTRIBUTE
--- map mathematical concept of integer numbers (xs:integer) to signed int 32 bits
+	restraint_sub_type TEXT ,
+-- ATTRIBUTE
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	consistently_violated_count INTEGER ,
 -- ATTRIBUTE
 	consistently_violated_percent_total DECIMAL NOT NULL ,
 -- ATTRIBUTE
 	consistently_violated_percent_type DECIMAL NOT NULL ,
 -- ATTRIBUTE
--- map mathematical concept of integer numbers (xs:integer) to signed int 32 bits
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	restraints_count INTEGER ,
 -- ATTRIBUTE
--- map mathematical concept of integer numbers (xs:integer) to signed int 32 bits
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	violated_count INTEGER ,
 -- ATTRIBUTE
 	percent_total DECIMAL ,
@@ -2125,7 +2173,7 @@ CREATE TABLE dist_rest_types (
 -- ATTRIBUTE
 	dist_rest_type TEXT ,
 -- ATTRIBUTE
--- map mathematical concept of integer numbers (xs:integer) to signed int 32 bits
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	violations_count INTEGER ,
 -- FOREIGN KEY : distance_violation_in_ensemble ( distance_violation_in_ensemble_id )
 	distance_violation_in_ensemble_id BIGINT CHECK ( distance_violation_in_ensemble_id >= 0 )
@@ -2147,7 +2195,7 @@ CREATE TABLE most_violated_distance_restraint (
 -- ATTRIBUTE
 	chain_1 TEXT NOT NULL ,
 -- ATTRIBUTE
--- map mathematical concept of integer numbers (xs:integer) to signed int 32 bits
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	resnum_1 INTEGER NOT NULL ,
 -- ATTRIBUTE
 	resname_1 TEXT NOT NULL ,
@@ -2164,7 +2212,7 @@ CREATE TABLE most_violated_distance_restraint (
 -- ATTRIBUTE
 	altcode_2 TEXT NOT NULL ,
 -- ATTRIBUTE
--- map mathematical concept of integer numbers (xs:integer) to signed int 32 bits
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	resnum_2 INTEGER NOT NULL ,
 -- ATTRIBUTE
 	resname_2 TEXT NOT NULL ,
@@ -2183,13 +2231,13 @@ CREATE TABLE most_violated_distance_restraint (
 -- ATTRIBUTE
 	standard_deviation DECIMAL ,
 -- ATTRIBUTE
--- map mathematical concept of integer numbers (xs:integer) to signed int 32 bits
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	violated_models INTEGER ,
 -- ATTRIBUTE
--- map mathematical concept of integer numbers (xs:integer) to signed int 32 bits
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	rlist_id INTEGER ,
 -- ATTRIBUTE
--- map mathematical concept of integer numbers (xs:integer) to signed int 32 bits
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	rest_id INTEGER
 );
 
@@ -2209,7 +2257,7 @@ CREATE TABLE violated_distance_restraint (
 -- ATTRIBUTE
 	chain_1 TEXT NOT NULL ,
 -- ATTRIBUTE
--- map mathematical concept of integer numbers (xs:integer) to signed int 32 bits
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	resnum_1 INTEGER NOT NULL ,
 -- ATTRIBUTE
 	resname_1 TEXT NOT NULL ,
@@ -2228,7 +2276,7 @@ CREATE TABLE violated_distance_restraint (
 -- ATTRIBUTE
 	altcode_2 TEXT NOT NULL ,
 -- ATTRIBUTE
--- map mathematical concept of integer numbers (xs:integer) to signed int 32 bits
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	resnum_2 INTEGER NOT NULL ,
 -- ATTRIBUTE
 	resname_2 TEXT NOT NULL ,
@@ -2243,10 +2291,10 @@ CREATE TABLE violated_distance_restraint (
 -- ATTRIBUTE
 	violation DECIMAL ,
 -- ATTRIBUTE
--- map mathematical concept of integer numbers (xs:integer) to signed int 32 bits
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	rlist_id INTEGER ,
 -- ATTRIBUTE
--- map mathematical concept of integer numbers (xs:integer) to signed int 32 bits
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	rest_id INTEGER
 );
 
@@ -2264,17 +2312,17 @@ CREATE TABLE dihedralangle_violation_summary (
 -- ATTRIBUTE
 	restraint_type TEXT ,
 -- ATTRIBUTE
--- map mathematical concept of integer numbers (xs:integer) to signed int 32 bits
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	consistently_violated_count INTEGER ,
 -- ATTRIBUTE
 	consistently_violated_percent_total DECIMAL NOT NULL ,
 -- ATTRIBUTE
 	consistently_violated_percent_type DECIMAL NOT NULL ,
 -- ATTRIBUTE
--- map mathematical concept of integer numbers (xs:integer) to signed int 32 bits
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	restraints_count INTEGER ,
 -- ATTRIBUTE
--- map mathematical concept of integer numbers (xs:integer) to signed int 32 bits
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	violated_count INTEGER ,
 -- ATTRIBUTE
 	percent_total DECIMAL ,
@@ -2298,7 +2346,7 @@ CREATE TABLE ang_rest_types (
 -- ATTRIBUTE
 	ang_rest_type TEXT ,
 -- ATTRIBUTE
--- map mathematical concept of integer numbers (xs:integer) to signed int 32 bits
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	violations_count INTEGER ,
 -- FOREIGN KEY : dihedralangle_violation_in_ensemble ( dihedralangle_violation_in_ensemble_id )
 	dihedralangle_violation_in_ensemble_id BIGINT CHECK ( dihedralangle_violation_in_ensemble_id >= 0 )
@@ -2320,7 +2368,7 @@ CREATE TABLE most_violated_dihedralangle_restraint (
 -- ATTRIBUTE
 	chain_1 TEXT NOT NULL ,
 -- ATTRIBUTE
--- map mathematical concept of integer numbers (xs:integer) to signed int 32 bits
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	resnum_1 INTEGER NOT NULL ,
 -- ATTRIBUTE
 	resname_1 TEXT NOT NULL ,
@@ -2337,7 +2385,7 @@ CREATE TABLE most_violated_dihedralangle_restraint (
 -- ATTRIBUTE
 	altcode_2 TEXT NOT NULL ,
 -- ATTRIBUTE
--- map mathematical concept of integer numbers (xs:integer) to signed int 32 bits
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	resnum_2 INTEGER NOT NULL ,
 -- ATTRIBUTE
 	resname_2 TEXT NOT NULL ,
@@ -2356,14 +2404,14 @@ CREATE TABLE most_violated_dihedralangle_restraint (
 -- ATTRIBUTE
 	median_violation DECIMAL ,
 -- ATTRIBUTE
--- map mathematical concept of integer numbers (xs:integer) to signed int 32 bits
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	violations_count INTEGER ,
 -- ATTRIBUTE
 	altcode_3 TEXT NOT NULL ,
 -- ATTRIBUTE
 	chain_3 TEXT NOT NULL ,
 -- ATTRIBUTE
--- map mathematical concept of integer numbers (xs:integer) to signed int 32 bits
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	resnum_3 INTEGER NOT NULL ,
 -- ATTRIBUTE
 	resname_3 TEXT NOT NULL ,
@@ -2380,7 +2428,7 @@ CREATE TABLE most_violated_dihedralangle_restraint (
 -- ATTRIBUTE
 	chain_4 TEXT NOT NULL ,
 -- ATTRIBUTE
--- map mathematical concept of integer numbers (xs:integer) to signed int 32 bits
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	resnum_4 INTEGER NOT NULL ,
 -- ATTRIBUTE
 	resname_4 TEXT NOT NULL ,
@@ -2393,13 +2441,13 @@ CREATE TABLE most_violated_dihedralangle_restraint (
 -- ATTRIBUTE
 	seq_4 TEXT NOT NULL ,
 -- ATTRIBUTE
--- map mathematical concept of integer numbers (xs:integer) to signed int 32 bits
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	violated_models INTEGER ,
 -- ATTRIBUTE
--- map mathematical concept of integer numbers (xs:integer) to signed int 32 bits
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	rlist_id INTEGER ,
 -- ATTRIBUTE
--- map mathematical concept of integer numbers (xs:integer) to signed int 32 bits
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	rest_id INTEGER
 );
 
@@ -2419,7 +2467,7 @@ CREATE TABLE violated_dihedralangle_restraint (
 -- ATTRIBUTE
 	chain_1 TEXT NOT NULL ,
 -- ATTRIBUTE
--- map mathematical concept of integer numbers (xs:integer) to signed int 32 bits
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	resnum_1 INTEGER NOT NULL ,
 -- ATTRIBUTE
 	resname_1 TEXT NOT NULL ,
@@ -2438,7 +2486,7 @@ CREATE TABLE violated_dihedralangle_restraint (
 -- ATTRIBUTE
 	altcode_2 TEXT NOT NULL ,
 -- ATTRIBUTE
--- map mathematical concept of integer numbers (xs:integer) to signed int 32 bits
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	resnum_2 INTEGER NOT NULL ,
 -- ATTRIBUTE
 	resname_2 TEXT NOT NULL ,
@@ -2457,7 +2505,7 @@ CREATE TABLE violated_dihedralangle_restraint (
 -- ATTRIBUTE
 	chain_3 TEXT NOT NULL ,
 -- ATTRIBUTE
--- map mathematical concept of integer numbers (xs:integer) to signed int 32 bits
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	resnum_3 INTEGER NOT NULL ,
 -- ATTRIBUTE
 	resname_3 TEXT NOT NULL ,
@@ -2474,7 +2522,7 @@ CREATE TABLE violated_dihedralangle_restraint (
 -- ATTRIBUTE
 	chain_4 TEXT NOT NULL ,
 -- ATTRIBUTE
--- map mathematical concept of integer numbers (xs:integer) to signed int 32 bits
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	resnum_4 INTEGER NOT NULL ,
 -- ATTRIBUTE
 	resname_4 TEXT NOT NULL ,
@@ -2487,11 +2535,30 @@ CREATE TABLE violated_dihedralangle_restraint (
 -- ATTRIBUTE
 	seq_4 TEXT NOT NULL ,
 -- ATTRIBUTE
--- map mathematical concept of integer numbers (xs:integer) to signed int 32 bits
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	rlist_id INTEGER ,
 -- ATTRIBUTE
--- map mathematical concept of integer numbers (xs:integer) to signed int 32 bits
+-- map mathematical concept of integer numbers (xsd:integer) to signed int 32 bits
 	rest_id INTEGER
+);
+
+--
+-- An individual program used by the validation pipeline. Normally this corresponds to a "step" but not always.
+-- xmlns: no namespace, schema location: wwpdb_validation_v005.xsd
+-- type: root child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE program (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+	program_id BIGINT CHECK ( program_id >= 0 ) ,
+-- FOREIGN KEY : programs ( programs_id )
+	programs_id BIGINT CHECK ( programs_id >= 0 ) ,
+-- ATTRIBUTE
+	name TEXT NOT NULL ,
+-- ATTRIBUTE
+	properties TEXT NOT NULL ,
+-- ATTRIBUTE
+	version TEXT NOT NULL
 );
 
 --
@@ -2596,7 +2663,7 @@ SELECT
 	atom_id ,
 -- NESTED KEY AS ATTRIBUTE : atom_name ( atom_name_id )
 	atom_id AS atom_name_id
-FROM dihedral_angle_violation WHERE atom_id IS NOT NULL;
+FROM dihedralangle_violation WHERE atom_id IS NOT NULL;
 
 --
 -- An atom name for the first atom in a bond or angle outlier. Atom names are from cif item _atom_site.label_atom_id and _chem_comp_atom.atom_id. Currently limited to 4 characters. Example: atom="NE2"

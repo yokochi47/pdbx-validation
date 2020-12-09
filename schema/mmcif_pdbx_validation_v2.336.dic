@@ -65707,9 +65707,9 @@ save__pdbx_em_atom_inclusion_marker.contour_level
     '/wwPDB-validation-information/EM_validation/atom_inclusion/backbone/coordinate/@x'     wwpdb_validation_v004.xsd    v004
 save_
 
-#######################################
-## PDB_EM_VALIDATE_MAP_MODEL_OVERALL ##
-#######################################
+########################################
+## PDBX_EM_VALIDATE_MAP_MODEL_OVERALL ##
+########################################
 
 save_pdbx_em_validate_map_model_overall
     _category.description

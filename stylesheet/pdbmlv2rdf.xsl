@@ -8,8 +8,8 @@
   xmlns:dc="http://purl.org/dc/elements/1.1/"
   xmlns:dcterms="http://purl.org/dc/terms/"
   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-  xmlns:PDBxv="http://pdbml.pdb.org/schema/pdbx-validation-v2.xsd"
-  xmlns:PDBov="https://rdf.wwpdb.org/schema/pdbx-validation-v2.owl#"
+  xmlns:PDBxv="http://pdbml.pdb.org/schema/pdbx-validation-v3.xsd"
+  xmlns:PDBov="https://rdf.wwpdb.org/schema/pdbx-validation-v3.owl#"
   exclude-result-prefixes="PDBxv">
 
   <xsl:param name="wurcs2glytoucan" select="'https://raw.githubusercontent.com/yokochi47/pdbx-validation/master/wurcs2glytoucan/glytoucan.xml'" required="no"/>
@@ -2224,6 +2224,126 @@
       </PDBov:has_pdbx_nmr_details>
   </xsl:template>
 
+  <xsl:template match="PDBxv:datablock/PDBxv:pdbx_nmr_dihedral_angle_violationCategory/PDBxv:pdbx_nmr_dihedral_angle_violation">
+      <PDBov:has_pdbx_nmr_dihedral_angle_violation>
+      <PDBov:pdbx_nmr_dihedral_angle_violation rdf:about="{$base}/pdbx_nmr_dihedral_angle_violation/{translate(@list_id,' ^','_')},{translate(@restraint_id,' ^','_')}">
+      <PDBov:of_datablock rdf:resource="{$base}"/>
+      <xsl:apply-templates select="@*"/>
+      <xsl:apply-templates select="@*" mode="linked"/>
+      <xsl:apply-templates/>
+      <xsl:apply-templates mode="linked"/>
+      </PDBov:pdbx_nmr_dihedral_angle_violation>
+      </PDBov:has_pdbx_nmr_dihedral_angle_violation>
+  </xsl:template>
+
+  <xsl:template match="PDBxv:datablock/PDBxv:pdbx_nmr_dihedral_angle_violation_ensembleCategory/PDBxv:pdbx_nmr_dihedral_angle_violation_ensemble">
+      <PDBov:has_pdbx_nmr_dihedral_angle_violation_ensemble>
+      <PDBov:pdbx_nmr_dihedral_angle_violation_ensemble rdf:about="{$base}/pdbx_nmr_dihedral_angle_violation_ensemble/{translate(@fraction_count,' ^','_')}">
+      <PDBov:of_datablock rdf:resource="{$base}"/>
+      <xsl:apply-templates select="@*"/>
+      <xsl:apply-templates select="@*" mode="linked"/>
+      <xsl:apply-templates/>
+      <xsl:apply-templates mode="linked"/>
+      </PDBov:pdbx_nmr_dihedral_angle_violation_ensemble>
+      </PDBov:has_pdbx_nmr_dihedral_angle_violation_ensemble>
+  </xsl:template>
+
+  <xsl:template match="PDBxv:datablock/PDBxv:pdbx_nmr_dihedral_angle_violation_modelCategory/PDBxv:pdbx_nmr_dihedral_angle_violation_model">
+      <PDBov:has_pdbx_nmr_dihedral_angle_violation_model>
+      <PDBov:pdbx_nmr_dihedral_angle_violation_model rdf:about="{$base}/pdbx_nmr_dihedral_angle_violation_model/{translate(@PDB_model_num,' ^','_')}">
+      <PDBov:of_datablock rdf:resource="{$base}"/>
+      <xsl:apply-templates select="@*"/>
+      <xsl:apply-templates select="@*" mode="linked"/>
+      <xsl:apply-templates/>
+      <xsl:apply-templates mode="linked"/>
+      </PDBov:pdbx_nmr_dihedral_angle_violation_model>
+      </PDBov:has_pdbx_nmr_dihedral_angle_violation_model>
+  </xsl:template>
+
+  <xsl:template match="PDBxv:datablock/PDBxv:pdbx_nmr_dihedral_angle_violation_pluralCategory/PDBxv:pdbx_nmr_dihedral_angle_violation_plural">
+      <PDBov:has_pdbx_nmr_dihedral_angle_violation_plural>
+      <PDBov:pdbx_nmr_dihedral_angle_violation_plural rdf:about="{$base}/pdbx_nmr_dihedral_angle_violation_plural/{translate(@list_id,' ^','_')},{translate(@restraint_id,' ^','_')}">
+      <PDBov:of_datablock rdf:resource="{$base}"/>
+      <xsl:apply-templates select="@*"/>
+      <xsl:apply-templates select="@*" mode="linked"/>
+      <xsl:apply-templates/>
+      <xsl:apply-templates mode="linked"/>
+      </PDBov:pdbx_nmr_dihedral_angle_violation_plural>
+      </PDBov:has_pdbx_nmr_dihedral_angle_violation_plural>
+  </xsl:template>
+
+  <xsl:template match="PDBxv:datablock/PDBxv:pdbx_nmr_dihedral_angle_violation_summaryCategory/PDBxv:pdbx_nmr_dihedral_angle_violation_summary">
+      <PDBov:has_pdbx_nmr_dihedral_angle_violation_summary>
+      <PDBov:pdbx_nmr_dihedral_angle_violation_summary rdf:about="{$base}/pdbx_nmr_dihedral_angle_violation_summary/{translate(@type,' ^','_')}">
+      <PDBov:of_datablock rdf:resource="{$base}"/>
+      <xsl:apply-templates select="@*"/>
+      <xsl:apply-templates select="@*" mode="linked"/>
+      <xsl:apply-templates/>
+      <xsl:apply-templates mode="linked"/>
+      </PDBov:pdbx_nmr_dihedral_angle_violation_summary>
+      </PDBov:has_pdbx_nmr_dihedral_angle_violation_summary>
+  </xsl:template>
+
+  <xsl:template match="PDBxv:datablock/PDBxv:pdbx_nmr_distance_violationCategory/PDBxv:pdbx_nmr_distance_violation">
+      <PDBov:has_pdbx_nmr_distance_violation>
+      <PDBov:pdbx_nmr_distance_violation rdf:about="{$base}/pdbx_nmr_distance_violation/{translate(@list_id,' ^','_')},{translate(@restraint_id,' ^','_')}">
+      <PDBov:of_datablock rdf:resource="{$base}"/>
+      <xsl:apply-templates select="@*"/>
+      <xsl:apply-templates select="@*" mode="linked"/>
+      <xsl:apply-templates/>
+      <xsl:apply-templates mode="linked"/>
+      </PDBov:pdbx_nmr_distance_violation>
+      </PDBov:has_pdbx_nmr_distance_violation>
+  </xsl:template>
+
+  <xsl:template match="PDBxv:datablock/PDBxv:pdbx_nmr_distance_violation_ensembleCategory/PDBxv:pdbx_nmr_distance_violation_ensemble">
+      <PDBov:has_pdbx_nmr_distance_violation_ensemble>
+      <PDBov:pdbx_nmr_distance_violation_ensemble rdf:about="{$base}/pdbx_nmr_distance_violation_ensemble/{translate(@fraction_count,' ^','_')}">
+      <PDBov:of_datablock rdf:resource="{$base}"/>
+      <xsl:apply-templates select="@*"/>
+      <xsl:apply-templates select="@*" mode="linked"/>
+      <xsl:apply-templates/>
+      <xsl:apply-templates mode="linked"/>
+      </PDBov:pdbx_nmr_distance_violation_ensemble>
+      </PDBov:has_pdbx_nmr_distance_violation_ensemble>
+  </xsl:template>
+
+  <xsl:template match="PDBxv:datablock/PDBxv:pdbx_nmr_distance_violation_modelCategory/PDBxv:pdbx_nmr_distance_violation_model">
+      <PDBov:has_pdbx_nmr_distance_violation_model>
+      <PDBov:pdbx_nmr_distance_violation_model rdf:about="{$base}/pdbx_nmr_distance_violation_model/{translate(@PDB_model_num,' ^','_')}">
+      <PDBov:of_datablock rdf:resource="{$base}"/>
+      <xsl:apply-templates select="@*"/>
+      <xsl:apply-templates select="@*" mode="linked"/>
+      <xsl:apply-templates/>
+      <xsl:apply-templates mode="linked"/>
+      </PDBov:pdbx_nmr_distance_violation_model>
+      </PDBov:has_pdbx_nmr_distance_violation_model>
+  </xsl:template>
+
+  <xsl:template match="PDBxv:datablock/PDBxv:pdbx_nmr_distance_violation_pluralCategory/PDBxv:pdbx_nmr_distance_violation_plural">
+      <PDBov:has_pdbx_nmr_distance_violation_plural>
+      <PDBov:pdbx_nmr_distance_violation_plural rdf:about="{$base}/pdbx_nmr_distance_violation_plural/{translate(@list_id,' ^','_')},{translate(@restraint_id,' ^','_')}">
+      <PDBov:of_datablock rdf:resource="{$base}"/>
+      <xsl:apply-templates select="@*"/>
+      <xsl:apply-templates select="@*" mode="linked"/>
+      <xsl:apply-templates/>
+      <xsl:apply-templates mode="linked"/>
+      </PDBov:pdbx_nmr_distance_violation_plural>
+      </PDBov:has_pdbx_nmr_distance_violation_plural>
+  </xsl:template>
+
+  <xsl:template match="PDBxv:datablock/PDBxv:pdbx_nmr_distance_violation_summaryCategory/PDBxv:pdbx_nmr_distance_violation_summary">
+      <PDBov:has_pdbx_nmr_distance_violation_summary>
+      <PDBov:pdbx_nmr_distance_violation_summary rdf:about="{$base}/pdbx_nmr_distance_violation_summary/{translate(@subtype,' ^','_')},{translate(@type,' ^','_')}">
+      <PDBov:of_datablock rdf:resource="{$base}"/>
+      <xsl:apply-templates select="@*"/>
+      <xsl:apply-templates select="@*" mode="linked"/>
+      <xsl:apply-templates/>
+      <xsl:apply-templates mode="linked"/>
+      </PDBov:pdbx_nmr_distance_violation_summary>
+      </PDBov:has_pdbx_nmr_distance_violation_summary>
+  </xsl:template>
+
   <xsl:template match="PDBxv:datablock/PDBxv:pdbx_nmr_ensembleCategory/PDBxv:pdbx_nmr_ensemble">
       <PDBov:has_pdbx_nmr_ensemble>
       <PDBov:pdbx_nmr_ensemble rdf:about="{$base}/pdbx_nmr_ensemble/{translate(@entry_id,' ^','_')}">
@@ -2360,6 +2480,50 @@
       </PDBov:has_pdbx_nmr_representative>
   </xsl:template>
 
+  <xsl:template match="PDBxv:datablock/PDBxv:pdbx_nmr_restraint_listCategory/PDBxv:pdbx_nmr_restraint_list">
+      <PDBov:has_pdbx_nmr_restraint_list>
+      <PDBov:pdbx_nmr_restraint_list rdf:about="{$base}/pdbx_nmr_restraint_list/{translate(@id,' ^','_')},{translate(@type,' ^','_')}">
+      <PDBov:of_datablock rdf:resource="{$base}"/>
+      <xsl:apply-templates select="@*"/>
+      <xsl:apply-templates select="@*" mode="linked"/>
+      <xsl:apply-templates/>
+      <xsl:apply-templates mode="linked"/>
+      </PDBov:pdbx_nmr_restraint_list>
+      </PDBov:has_pdbx_nmr_restraint_list>
+  </xsl:template>
+
+  <xsl:template match="PDBxv:datablock/PDBxv:pdbx_nmr_restraint_summaryCategory/PDBxv:pdbx_nmr_restraint_summary">
+      <PDBov:has_pdbx_nmr_restraint_summary>
+      <PDBov:pdbx_nmr_restraint_summary rdf:about="{$base}/pdbx_nmr_restraint_summary/{translate(@entry_id,' ^','_')}">
+      <PDBov:of_datablock rdf:resource="{$base}"/>
+      <xsl:if test="@entry_id!=''">
+        <PDBov:reference_to_entry>
+	  <rdf:Description  rdf:about="{$base}/entry/{translate(@entry_id,' ^','_')}">
+	    <PDBov:referenced_by_pdbx_nmr_restraint_summary rdf:resource="{$base}/pdbx_nmr_restraint_summary/{translate(@entry_id,' ^','_')}"/>
+	  </rdf:Description>
+        </PDBov:reference_to_entry>
+        <!-- entryKeyref_0_0_25_0 -->
+      </xsl:if>
+      <xsl:apply-templates select="@*"/>
+      <xsl:apply-templates select="@*" mode="linked"/>
+      <xsl:apply-templates/>
+      <xsl:apply-templates mode="linked"/>
+      </PDBov:pdbx_nmr_restraint_summary>
+      </PDBov:has_pdbx_nmr_restraint_summary>
+  </xsl:template>
+
+  <xsl:template match="PDBxv:datablock/PDBxv:pdbx_nmr_restraint_violationCategory/PDBxv:pdbx_nmr_restraint_violation">
+      <PDBov:has_pdbx_nmr_restraint_violation>
+      <PDBov:pdbx_nmr_restraint_violation rdf:about="{$base}/pdbx_nmr_restraint_violation/{translate(@type,' ^','_')}">
+      <PDBov:of_datablock rdf:resource="{$base}"/>
+      <xsl:apply-templates select="@*"/>
+      <xsl:apply-templates select="@*" mode="linked"/>
+      <xsl:apply-templates/>
+      <xsl:apply-templates mode="linked"/>
+      </PDBov:pdbx_nmr_restraint_violation>
+      </PDBov:has_pdbx_nmr_restraint_violation>
+  </xsl:template>
+
   <xsl:template match="PDBxv:datablock/PDBxv:pdbx_nmr_softwareCategory/PDBxv:pdbx_nmr_software">
       <PDBov:has_pdbx_nmr_software>
       <PDBov:pdbx_nmr_software rdf:about="{$base}/pdbx_nmr_software/{translate(@ordinal,' ^','_')}">
@@ -2478,7 +2642,7 @@
 	    <PDBov:referenced_by_pdbx_percentile_list rdf:resource="{$base}/pdbx_percentile_list/{translate(@entry_id,' ^','_')}"/>
 	  </rdf:Description>
         </PDBov:reference_to_entry>
-        <!-- entryKeyref_0_0_25_0 -->
+        <!-- entryKeyref_0_0_26_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -2498,7 +2662,7 @@
 	    <PDBov:referenced_by_pdbx_percentile_view rdf:resource="{$base}/pdbx_percentile_view/{translate(@conditions_id,' ^','_')},{translate(@entry_id,' ^','_')},{translate(@type,' ^','_')}"/>
 	  </rdf:Description>
         </PDBov:reference_to_entry>
-        <!-- entryKeyref_0_0_26_0 -->
+        <!-- entryKeyref_0_0_27_0 -->
       </xsl:if>
       <xsl:if test="@conditions_id!=''">
         <PDBov:reference_to_pdbx_percentile_conditions>
@@ -2610,7 +2774,7 @@
 	    <PDBov:referenced_by_pdbx_point_symmetry rdf:resource="{$base}/pdbx_point_symmetry/{translate(@entry_id,' ^','_')}"/>
 	  </rdf:Description>
         </PDBov:reference_to_entry>
-        <!-- entryKeyref_0_0_27_0 -->
+        <!-- entryKeyref_0_0_28_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -2678,7 +2842,7 @@
 	    <PDBov:referenced_by_pdbx_refine rdf:resource="{$base}/pdbx_refine/{translate(@entry_id,' ^','_')},{translate(@pdbx_refine_id,' ^','_')}"/>
 	  </rdf:Description>
         </PDBov:reference_to_entry>
-        <!-- entryKeyref_0_0_28_0 -->
+        <!-- entryKeyref_0_0_29_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -2766,7 +2930,7 @@
 	    <PDBov:referenced_by_pdbx_soln_scatter rdf:resource="{$base}/pdbx_soln_scatter/{translate(@entry_id,' ^','_')},{translate(@id,' ^','_')}"/>
 	  </rdf:Description>
         </PDBov:reference_to_entry>
-        <!-- entryKeyref_0_0_29_0 -->
+        <!-- entryKeyref_0_0_30_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -3006,7 +3170,7 @@
 	    <PDBov:referenced_by_pdbx_struct_nmr_ens_clust rdf:resource="{$base}/pdbx_struct_nmr_ens_clust/{translate(@entry_id,' ^','_')}"/>
 	  </rdf:Description>
         </PDBov:reference_to_entry>
-        <!-- entryKeyref_0_0_30_0 -->
+        <!-- entryKeyref_0_0_31_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -3410,7 +3574,7 @@
 	    <PDBov:referenced_by_phasing_MAD rdf:resource="{$base}/phasing_MAD/{translate(@entry_id,' ^','_')}"/>
 	  </rdf:Description>
         </PDBov:reference_to_entry>
-        <!-- entryKeyref_0_0_31_0 -->
+        <!-- entryKeyref_0_0_32_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -3510,7 +3674,7 @@
 	    <PDBov:referenced_by_phasing_MIR rdf:resource="{$base}/phasing_MIR/{translate(@entry_id,' ^','_')}"/>
 	  </rdf:Description>
         </PDBov:reference_to_entry>
-        <!-- entryKeyref_0_0_32_0 -->
+        <!-- entryKeyref_0_0_33_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -3630,7 +3794,7 @@
 	    <PDBov:referenced_by_phasing_averaging rdf:resource="{$base}/phasing_averaging/{translate(@entry_id,' ^','_')}"/>
 	  </rdf:Description>
         </PDBov:reference_to_entry>
-        <!-- entryKeyref_0_0_33_0 -->
+        <!-- entryKeyref_0_0_34_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -3650,7 +3814,7 @@
 	    <PDBov:referenced_by_phasing_isomorphous rdf:resource="{$base}/phasing_isomorphous/{translate(@entry_id,' ^','_')}"/>
 	  </rdf:Description>
         </PDBov:reference_to_entry>
-        <!-- entryKeyref_0_0_34_0 -->
+        <!-- entryKeyref_0_0_35_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -3702,7 +3866,7 @@
 	    <PDBov:referenced_by_refine rdf:resource="{$base}/refine/{translate(@entry_id,' ^','_')},{translate(@pdbx_refine_id,' ^','_')}"/>
 	  </rdf:Description>
         </PDBov:reference_to_entry>
-        <!-- entryKeyref_0_0_35_0 -->
+        <!-- entryKeyref_0_0_36_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -3734,7 +3898,7 @@
 	    <PDBov:referenced_by_refine_analyze rdf:resource="{$base}/refine_analyze/{translate(@entry_id,' ^','_')},{translate(@pdbx_refine_id,' ^','_')}"/>
 	  </rdf:Description>
         </PDBov:reference_to_entry>
-        <!-- entryKeyref_0_0_36_0 -->
+        <!-- entryKeyref_0_0_37_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -3874,7 +4038,7 @@
 	    <PDBov:referenced_by_reflns rdf:resource="{$base}/reflns/{translate(@pdbx_ordinal,' ^','_')}"/>
 	  </rdf:Description>
         </PDBov:reference_to_entry>
-        <!-- entryKeyref_0_0_37_0 -->
+        <!-- entryKeyref_0_0_38_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -3954,7 +4118,7 @@
 	    <PDBov:referenced_by_struct rdf:resource="{$base}/struct/{translate(@entry_id,' ^','_')}"/>
 	  </rdf:Description>
         </PDBov:reference_to_entry>
-        <!-- entryKeyref_0_0_38_0 -->
+        <!-- entryKeyref_0_0_39_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -4089,7 +4253,7 @@
 	    <PDBov:referenced_by_struct_mon_details rdf:resource="{$base}/struct_mon_details/{translate(@entry_id,' ^','_')}"/>
 	  </rdf:Description>
         </PDBov:reference_to_entry>
-        <!-- entryKeyref_0_0_39_0 -->
+        <!-- entryKeyref_0_0_40_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -4441,7 +4605,7 @@
 	    <PDBov:referenced_by_symmetry rdf:resource="{$base}/symmetry/{translate(@entry_id,' ^','_')}"/>
 	  </rdf:Description>
         </PDBov:reference_to_entry>
-        <!-- entryKeyref_0_0_40_0 -->
+        <!-- entryKeyref_0_0_41_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>

@@ -14,14 +14,14 @@ The pdbx-validation is a generation tool of alternative [wwPDB validation report
 
 File path | Document
 --------- | --------
-[schema/mmcif_pdbx_validation_v2.dic](https://github.com/yokochi47/pdbx-validation/blob/master/schema/mmcif_pdbx_validation_v2.336.dic) | wwPDB Validation Information Dictionary (v2.336)
-[schema/pdbx-validation-v2.xsd](https://github.com/yokochi47/pdbx-validation/blob/master/schema/pdbx-validation-v2.336.xsd) | PDBML-validation Schema (v2.336)
-[schema/pdbx-validation-v2.owl](https://github.com/yokochi47/pdbx-validation/blob/master/schema/pdbx-validation-v2.336.owl) | PDB/OWL-validation (v2.336)
+[schema/mmcif_pdbx_validation_v3.dic](https://github.com/yokochi47/pdbx-validation/blob/master/schema/mmcif_pdbx_validation_v3.336.dic) | wwPDB Validation Information Dictionary (v3.336)
+[schema/pdbx-validation-v3.xsd](https://github.com/yokochi47/pdbx-validation/blob/master/schema/pdbx-validation-v3.336.xsd) | PDBML-validation Schema (v3.336)
+[schema/pdbx-validation-v3.owl](https://github.com/yokochi47/pdbx-validation/blob/master/schema/pdbx-validation-v3.336.owl) | PDB/OWL-validation (v3.336)
 [schema/mmcif_ddl.dic](https://github.com/yokochi47/pdbx-validation/blob/master/schema/mmcif_ddl_v2.3.0.dic) | extended mmCIF DDL Core Dictionary (dubbed as v2.3.0)
 [resource/mmcif_pdbx_v50.dic](http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic) | PDB Exchange Data Dictionary (v5.336)
 [resource/pdbx-v50.xsd](https://github.com/yokochi47/pdbx-validation/blob/master/resource/pdbx-v50.xsd) | PDBML Schema (v5.336)
 [resource/pdbx-v50.owl](https://github.com/yokochi47/pdbx-validation/blob/master/resource/pdbx-v50.owl) | PDBx ontology, ontology for PDB/RDF (v5.336)
-[resource/wwpdb_validation_v004.xsd](https://github.com/yokochi47/pdbx-validation/blob/master/resource/wwpdb_validation_v004.xsd) | XML Schema for wwPDB validation reports (v004, rev n/a)
+[resource/wwpdb_validation_v005.xsd](https://github.com/yokochi47/pdbx-validation/blob/master/resource/wwpdb_validation_v005.xsd) | XML Schema for wwPDB validation reports (v005, rev n/a)
 [scripts](https://github.com/yokochi47/pdbx-validation/blob/master/scripts) | a directory contains scripts invoked by the 'run_vrpt_all.sh' script
 [virtuoso_scripts](https://github.com/yokochi47/pdbx-validation/blob/master/virtuoso_scripts) | a directory contains scripts for uploading PDB/RDF-validation to local SPARQL endpoint
 [stylesheet](https://github.com/yokochi47/pdbx-validation/blob/master/stylesheet) | a directory contains XSL style sheets for generation of alternative wwPDB validation reports
@@ -148,6 +148,22 @@ File path | Document
 - [**Virtuoso**](https://www.openlinksw.com/wiki/main/Main), oprionally used as SPARQL endpoint of PDB/RDF-validation.
 
 ## Release notes
+
+- **Dec 9, 2020**: Release v3.0.0
+	- Support XML Schema for wwPDB validation report (wwpdb_validation_v005.xsd).
+		- Add '_pdbx_nmr_restraint_list' category that records list of NMR restraints.
+		- Add '_pdbx_nmr_restraint_summary' category that records sumarry of conformationally restricting restraints.
+		- Add '_pdbx_nmr_restraint_violation' category that records residual violations of conformationally restricting restraints in different bins.
+		- Add '_pdbx_nmr_distance_violation_summary' category that records violations of distance restraints.
+		- Add '_pdbx_nmr_distance_violation_model' category that records violations of distance restraints for each model.
+		- Add '_pdbx_nmr_distance_violation_ensemble' category that records violations of distance restraints for each virtual ensemble alternating the size of an ensemble.
+		- Add '_pdbx_nmr_distance_violation_plural' category that records potentially severe violations of distance restraints, which occurred in multiple coordinate models of the ensemble.
+		- Add '_pdbx_nmr_distance_violation' category that records all distance restraint violations of the ensemble.
+		- Add '_pdbx_nmr_dihedral_angle_violation_summary' category that records violations of dihedral angle restraints.
+		- Add '_pdbx_nmr_dihedral_angle_violation_model' category that records violations of dihedral angle restraints for each model.
+		- Add '_pdbx_nmr_dihedral_angle_violation_ensemble' category that records violations of dihedral angle restraints for each virtual ensemble alternating the size of an ensemble.
+		- Add '_pdbx_nmr_dihedral_angle_violation_plural' category that records potentially severe violations of dihedral angle restraints, which occurred in multiple coordinate models of the ensemble.
+		- Add '_pdbx_nmr_dihedral_angle_violation' category that records all dihedral angle restraint violations of the ensemble.
 
 - **Nov 27, 2020**: Release v2.0.16
 	- Update wwPDB Validation Information Dictionary to 2.336.

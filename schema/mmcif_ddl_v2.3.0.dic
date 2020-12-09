@@ -338,9 +338,10 @@ data_mmcif_ddl.dic
 ;      Changes: (MY) -
        + Merge core dictionary update of 2.1.16 and 2.1.17
 ;
-       2.3.0   2019-08-23
+       2.3.0   2020-12-09
 ;      Changes: (MY) -
        + Merge core dictionary update of 2.2.1
+       + Relax construct for aliasnode
         Changes (JW):
          +  Add items _method_list.method_source and _method_list.implementation_source
          +  Make item _method_list.inline optional
@@ -385,7 +386,7 @@ data_mmcif_ddl.dic
       '_[^\t\n "]+'
 # Added by MY
      aliasnode char    'XPath 1.0 expression for node selection ignoring namespace'
-      '(\/[^\t\n ]+)+'
+      '(\/[^\t\n]+)+'
      idname  uchar     'A data item name component or identifier'
       '[_A-Za-z0-9]+'
      any     char      'Any data type'

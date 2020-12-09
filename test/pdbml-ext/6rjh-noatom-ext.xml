@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PDBxv:datablock xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                 xmlns:PDBxv="http://pdbml.pdb.org/schema/pdbx-validation-v2.xsd"
+                 xmlns:PDBxv="http://pdbml.pdb.org/schema/pdbx-validation-v3.xsd"
                  datablockName="6RJH-noatom-ext"
-                 xsi:schemaLocation="http://pdbml.pdb.org/schema/pdbx-validation-v2.xsd pdbx-validation-v2.xsd">
+                 xsi:schemaLocation="http://pdbml.pdb.org/schema/pdbx-validation-v3.xsd pdbx-validation-v3.xsd">
    <PDBxv:em_3d_fittingCategory>
       <PDBxv:em_3d_fitting entry_id="6RJH" id="1"/>
    </PDBxv:em_3d_fittingCategory>

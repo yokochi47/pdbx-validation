@@ -4,7 +4,7 @@
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xmlns:PDBx="http://pdbml.pdb.org/schema/pdbx-v50.xsd"
-  xmlns:PDBxv="http://pdbml.pdb.org/schema/pdbx-validation-v2.xsd"
+  xmlns:PDBxv="http://pdbml.pdb.org/schema/pdbx-validation-v3.xsd"
   exclude-result-prefixes="PDBx">
 
   <xsl:param name="info_file" required="yes"/>
@@ -62,7 +62,7 @@ Unmatched entry ID in both documents (<xsl:value-of select="$entry_id"/> and <xs
       </xsl:call-template>
     </xsl:if>
 
-    <PDBxv:datablock datablockName="{$datablock_name}" xsi:schemaLocation="http://pdbml.pdb.org/schema/pdbx-validation-v2.xsd pdbx-validation-v2.xsd">
+    <PDBxv:datablock datablockName="{$datablock_name}" xsi:schemaLocation="http://pdbml.pdb.org/schema/pdbx-validation-v3.xsd pdbx-validation-v3.xsd">
       <xsl:apply-templates select="PDBx:datablock/*"/>
     </PDBxv:datablock>
   </xsl:template>
@@ -805,6 +805,66 @@ Unmatched entry ID in both documents (<xsl:value-of select="$entry_id"/> and <xs
     </xsl:element>
   </xsl:template>
 
+  <xsl:template match="PDBx:pdbx_nmr_dihedral_angle_violationCategory">
+    <xsl:element name="PDBxv:{local-name()}">
+      <xsl:apply-templates mode="category-element"/>
+    </xsl:element>
+  </xsl:template>
+
+  <xsl:template match="PDBx:pdbx_nmr_dihedral_angle_violation_ensembleCategory">
+    <xsl:element name="PDBxv:{local-name()}">
+      <xsl:apply-templates mode="category-element"/>
+    </xsl:element>
+  </xsl:template>
+
+  <xsl:template match="PDBx:pdbx_nmr_dihedral_angle_violation_modelCategory">
+    <xsl:element name="PDBxv:{local-name()}">
+      <xsl:apply-templates mode="category-element"/>
+    </xsl:element>
+  </xsl:template>
+
+  <xsl:template match="PDBx:pdbx_nmr_dihedral_angle_violation_pluralCategory">
+    <xsl:element name="PDBxv:{local-name()}">
+      <xsl:apply-templates mode="category-element"/>
+    </xsl:element>
+  </xsl:template>
+
+  <xsl:template match="PDBx:pdbx_nmr_dihedral_angle_violation_summaryCategory">
+    <xsl:element name="PDBxv:{local-name()}">
+      <xsl:apply-templates mode="category-element"/>
+    </xsl:element>
+  </xsl:template>
+
+  <xsl:template match="PDBx:pdbx_nmr_distance_violationCategory">
+    <xsl:element name="PDBxv:{local-name()}">
+      <xsl:apply-templates mode="category-element"/>
+    </xsl:element>
+  </xsl:template>
+
+  <xsl:template match="PDBx:pdbx_nmr_distance_violation_ensembleCategory">
+    <xsl:element name="PDBxv:{local-name()}">
+      <xsl:apply-templates mode="category-element"/>
+    </xsl:element>
+  </xsl:template>
+
+  <xsl:template match="PDBx:pdbx_nmr_distance_violation_modelCategory">
+    <xsl:element name="PDBxv:{local-name()}">
+      <xsl:apply-templates mode="category-element"/>
+    </xsl:element>
+  </xsl:template>
+
+  <xsl:template match="PDBx:pdbx_nmr_distance_violation_pluralCategory">
+    <xsl:element name="PDBxv:{local-name()}">
+      <xsl:apply-templates mode="category-element"/>
+    </xsl:element>
+  </xsl:template>
+
+  <xsl:template match="PDBx:pdbx_nmr_distance_violation_summaryCategory">
+    <xsl:element name="PDBxv:{local-name()}">
+      <xsl:apply-templates mode="category-element"/>
+    </xsl:element>
+  </xsl:template>
+
   <xsl:template match="PDBx:pdbx_nmr_ensembleCategory">
     <xsl:element name="PDBxv:{local-name()}">
       <xsl:apply-templates mode="category-element"/>
@@ -848,6 +908,24 @@ Unmatched entry ID in both documents (<xsl:value-of select="$entry_id"/> and <xs
   </xsl:template>
 
   <xsl:template match="PDBx:pdbx_nmr_representativeCategory">
+    <xsl:element name="PDBxv:{local-name()}">
+      <xsl:apply-templates mode="category-element"/>
+    </xsl:element>
+  </xsl:template>
+
+  <xsl:template match="PDBx:pdbx_nmr_restraint_listCategory">
+    <xsl:element name="PDBxv:{local-name()}">
+      <xsl:apply-templates mode="category-element"/>
+    </xsl:element>
+  </xsl:template>
+
+  <xsl:template match="PDBx:pdbx_nmr_restraint_summaryCategory">
+    <xsl:element name="PDBxv:{local-name()}">
+      <xsl:apply-templates mode="category-element"/>
+    </xsl:element>
+  </xsl:template>
+
+  <xsl:template match="PDBx:pdbx_nmr_restraint_violationCategory">
     <xsl:element name="PDBxv:{local-name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>

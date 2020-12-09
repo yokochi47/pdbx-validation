@@ -22,8 +22,8 @@
   xmlns:dc="http://purl.org/dc/elements/1.1/"
   xmlns:dcterms="http://purl.org/dc/terms/"
   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-  xmlns:PDBxv="http://pdbml.pdb.org/schema/pdbx-validation-v2.xsd"
-  xmlns:PDBov="https://rdf.wwpdb.org/schema/pdbx-validation-v2.owl#"
+  xmlns:PDBxv="http://pdbml.pdb.org/schema/pdbx-validation-v3.xsd"
+  xmlns:PDBov="https://rdf.wwpdb.org/schema/pdbx-validation-v3.owl#"
   exclude-result-prefixes="PDBxv"&gt;
 </xsl2:text>
     <xsl2:apply-templates/>
