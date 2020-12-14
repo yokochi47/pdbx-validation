@@ -117,6 +117,10 @@ for pdbml_file in $WORK_DIR/$PDBML/*.xml ; do
 
  pdbid=`basename $pdbml_file -noatom.xml`
 
+ if [ $pdbid != '2loy' ] ; then
+  continue
+ fi
+
  #exptl_method=`java -jar $SAXON -s:$pdbml_file -xsl:stylesheet/exptl_method.xsl`
  exptl_method=`xsltproc stylesheet/exptl_method.xsl $pdbml_file`
 

@@ -21,7 +21,7 @@ File path | Document
 [resource/mmcif_pdbx_v50.dic](http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic) | PDB Exchange Data Dictionary (v5.336)
 [resource/pdbx-v50.xsd](https://github.com/yokochi47/pdbx-validation/blob/master/resource/pdbx-v50.xsd) | PDBML Schema (v5.336)
 [resource/pdbx-v50.owl](https://github.com/yokochi47/pdbx-validation/blob/master/resource/pdbx-v50.owl) | PDBx ontology, ontology for PDB/RDF (v5.336)
-[resource/wwpdb_validation_v005.xsd](https://github.com/yokochi47/pdbx-validation/blob/master/resource/wwpdb_validation_v005.xsd) | XML Schema for wwPDB validation reports (v005, rev n/a)
+[resource/wwpdb_validation_v5.01.xsd](https://github.com/yokochi47/pdbx-validation/blob/master/resource/wwpdb_validation_v5.01.xsd) | XML Schema for wwPDB validation reports (v5.01, rev 2020-12-10)
 [scripts](https://github.com/yokochi47/pdbx-validation/blob/master/scripts) | a directory contains scripts invoked by the 'run_vrpt_all.sh' script
 [virtuoso_scripts](https://github.com/yokochi47/pdbx-validation/blob/master/virtuoso_scripts) | a directory contains scripts for uploading PDB/RDF-validation to local SPARQL endpoint
 [stylesheet](https://github.com/yokochi47/pdbx-validation/blob/master/stylesheet) | a directory contains XSL style sheets for generation of alternative wwPDB validation reports
@@ -58,6 +58,21 @@ File path | Document
 		- Original source: [5u9b_validation.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/validation-info/5u9b_validation.xml)
 		- Reverted from PDBML-validation: [5u9b_validation.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/validation-info-rev-from-full/5u9b_validation.xml)
 		- Reverted from PDBML-validation-alt and PDBML-noatom: [5u9b_validation.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/validation-info-rev-from-alt/5u9b_validation.xml)
+
+- PDB ID: [2LOY](https://pdbj.org/mine/summary/2loy), Exptl. method: SOLUTION NMR with NMR restraint validation (v5.01, 2020-12-10)
+	- PDBx/mmCIF format
+		- mmCIF-validation: [2loy-validation-full.cif](https://github.com/yokochi47/pdbx-validation/blob/master/test/mmcif-validation/2loy-validation-full.cif)
+		- mmCIF-validation-alt: [2loy-validation-alt.cif](https://github.com/yokochi47/pdbx-validation/blob/master/test/mmcif-validation-alt/2loy-validation-alt.cif)
+	- PDBML format
+		- PDBML-validation: [2loy-validation-full.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/XML-validation/2loy-validation-full.xml)
+		- PDBML-validation-alt: [2loy-validation-alt.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/validation-info-alt/2loy-validation-alt.xml)
+	- PDB/RDF format
+		- PDB/RDF-validation: [2loy-validation-full.rdf](https://github.com/yokochi47/pdbx-validation/blob/master/test/RDF-validation/2loy-validation-full.rdf)
+		- PDB/RDF-validation-alt: [2loy-validation-alt.rdf](https://github.com/yokochi47/pdbx-validation/blob/master/test/RDF-validation-alt/2loy-validation-alt.rdf)
+	- wwPDB validation report (XML format)
+		- Original source: [2loy_validation.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/validation-info/2loy_validation.xml)
+		- Reverted from PDBML-validation: [2loy_validation.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/validation-info-rev-from-full/2loy_validation.xml)
+		- Reverted from PDBML-validation-alt and PDBML-noatom: [2loy_validation.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/validation-info-rev-from-alt/2loy_validation.xml)
 
 - PDB ID: [5H0S](https://pdbj.org/mine/summary/5h0s), Exptl. method: ELECTRON MICROSCOPY
 	- PDBx/mmCIF format
@@ -149,8 +164,8 @@ File path | Document
 
 ## Release notes
 
-- **Dec 9, 2020**: Release v3.0.0
-	- Support XML Schema for wwPDB validation report (wwpdb_validation_v005.xsd).
+- **Dec 14, 2020**: Release v3.0.0
+	- Support XML Schema for wwPDB validation report (wwpdb_validation_v5.01.xsd).
 		- Add '_pdbx_nmr_restraint_list' category that records list of NMR restraints.
 		- Add '_pdbx_nmr_restraint_summary' category that records sumarry of conformationally restricting restraints.
 		- Add '_pdbx_nmr_restraint_violation' category that records residual violations of conformationally restricting restraints in different bins.

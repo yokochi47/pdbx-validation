@@ -37,7 +37,7 @@
 
   <xsl:template match="$datablock">
 
-    <wwPDB-validation-information xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://wwpdb.org/validation/schema/wwpdb_validation_v004.xsd">
+    <wwPDB-validation-information xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://wwpdb.org/validation/schema/wwpdb_validation_v5.01.xsd">
       <Entry>
         <xsl:call-template name="Entry"/>
       </Entry>

@@ -2226,7 +2226,7 @@
 
   <xsl:template match="PDBxv:datablock/PDBxv:pdbx_nmr_dihedral_angle_violationCategory/PDBxv:pdbx_nmr_dihedral_angle_violation">
       <PDBov:has_pdbx_nmr_dihedral_angle_violation>
-      <PDBov:pdbx_nmr_dihedral_angle_violation rdf:about="{$base}/pdbx_nmr_dihedral_angle_violation/{translate(@list_id,' ^','_')},{translate(@restraint_id,' ^','_')}">
+      <PDBov:pdbx_nmr_dihedral_angle_violation rdf:about="{$base}/pdbx_nmr_dihedral_angle_violation/{translate(@ordinal,' ^','_')}">
       <PDBov:of_datablock rdf:resource="{$base}"/>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -2262,7 +2262,7 @@
 
   <xsl:template match="PDBxv:datablock/PDBxv:pdbx_nmr_dihedral_angle_violation_pluralCategory/PDBxv:pdbx_nmr_dihedral_angle_violation_plural">
       <PDBov:has_pdbx_nmr_dihedral_angle_violation_plural>
-      <PDBov:pdbx_nmr_dihedral_angle_violation_plural rdf:about="{$base}/pdbx_nmr_dihedral_angle_violation_plural/{translate(@list_id,' ^','_')},{translate(@restraint_id,' ^','_')}">
+      <PDBov:pdbx_nmr_dihedral_angle_violation_plural rdf:about="{$base}/pdbx_nmr_dihedral_angle_violation_plural/{translate(@ordinal,' ^','_')}">
       <PDBov:of_datablock rdf:resource="{$base}"/>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -2286,7 +2286,7 @@
 
   <xsl:template match="PDBxv:datablock/PDBxv:pdbx_nmr_distance_violationCategory/PDBxv:pdbx_nmr_distance_violation">
       <PDBov:has_pdbx_nmr_distance_violation>
-      <PDBov:pdbx_nmr_distance_violation rdf:about="{$base}/pdbx_nmr_distance_violation/{translate(@list_id,' ^','_')},{translate(@restraint_id,' ^','_')}">
+      <PDBov:pdbx_nmr_distance_violation rdf:about="{$base}/pdbx_nmr_distance_violation/{translate(@ordinal,' ^','_')}">
       <PDBov:of_datablock rdf:resource="{$base}"/>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -2322,7 +2322,7 @@
 
   <xsl:template match="PDBxv:datablock/PDBxv:pdbx_nmr_distance_violation_pluralCategory/PDBxv:pdbx_nmr_distance_violation_plural">
       <PDBov:has_pdbx_nmr_distance_violation_plural>
-      <PDBov:pdbx_nmr_distance_violation_plural rdf:about="{$base}/pdbx_nmr_distance_violation_plural/{translate(@list_id,' ^','_')},{translate(@restraint_id,' ^','_')}">
+      <PDBov:pdbx_nmr_distance_violation_plural rdf:about="{$base}/pdbx_nmr_distance_violation_plural/{translate(@ordinal,' ^','_')}">
       <PDBov:of_datablock rdf:resource="{$base}"/>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
