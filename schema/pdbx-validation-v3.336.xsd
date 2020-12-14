@@ -16412,7 +16412,7 @@ of the ensemble.
 
 Ref: User guide to the wwPDB NMR validation reports
 10. Dihedral-angle violation analysis
-10.5 All dihedral-angle violations
+10.5 All violated dihedral-angle restraints
 
          </xsd:documentation>
     </xsd:annotation>
@@ -16735,6 +16735,21 @@ This data item is a pointer to attribute label_alt_id in category atom_site in t
                         </xsd:documentation>
               </xsd:annotation>
             </xsd:element>
+            <xsd:element name="list_id" minOccurs="1" maxOccurs="1" type="xsd:int">
+              <xsd:annotation>
+                <xsd:documentation xml:lang="en">
+Pointer to attribute id in category pdbx_nmr_restraint_list. 
+                        </xsd:documentation>
+              </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="restraint_id" minOccurs="1" maxOccurs="1" type="xsd:int">
+              <xsd:annotation>
+                <xsd:documentation xml:lang="en">
+An integer value that uniquely identifies dihedral angle restraint
+in a list.
+                        </xsd:documentation>
+              </xsd:annotation>
+            </xsd:element>
             <xsd:element name="violation" minOccurs="0" maxOccurs="1" nillable="true">
               <xsd:annotation>
                 <xsd:documentation xml:lang="en">
@@ -16749,18 +16764,10 @@ for a particular dihedral angle restraint.
               </xsd:simpleType>
             </xsd:element>
           </xsd:all>
-          <xsd:attribute name="list_id" use="required" type="xsd:int">
+          <xsd:attribute name="ordinal" use="required" type="xsd:int">
             <xsd:annotation>
               <xsd:documentation xml:lang="en">
-Pointer to attribute id in category pdbx_nmr_restraint_list. 
-                     </xsd:documentation>
-            </xsd:annotation>
-          </xsd:attribute>
-          <xsd:attribute name="restraint_id" use="required" type="xsd:int">
-            <xsd:annotation>
-              <xsd:documentation xml:lang="en">
-An integer value that uniquely identifies dihedral angle restraint
-in a list.
+The ordered number in the violated restraints.
                      </xsd:documentation>
             </xsd:annotation>
           </xsd:attribute>
@@ -17574,6 +17581,13 @@ This data item is a pointer to attribute label_alt_id in category atom_site in t
                         </xsd:documentation>
               </xsd:annotation>
             </xsd:element>
+            <xsd:element name="list_id" minOccurs="1" maxOccurs="1" type="xsd:int">
+              <xsd:annotation>
+                <xsd:documentation xml:lang="en">
+Pointer to attribute id in category pdbx_nmr_restraint_list. 
+                        </xsd:documentation>
+              </xsd:annotation>
+            </xsd:element>
             <xsd:element name="median_violation" minOccurs="1" maxOccurs="1">
               <xsd:annotation>
                 <xsd:documentation xml:lang="en">
@@ -17586,6 +17600,14 @@ for a particular dihedral angle restraint in the models violated.
                   <xsd:minExclusive value="0.0"/>
                 </xsd:restriction>
               </xsd:simpleType>
+            </xsd:element>
+            <xsd:element name="restraint_id" minOccurs="1" maxOccurs="1" type="xsd:int">
+              <xsd:annotation>
+                <xsd:documentation xml:lang="en">
+An integer value that uniquely identifies dihedral angle restraint
+in a list.
+                        </xsd:documentation>
+              </xsd:annotation>
             </xsd:element>
             <xsd:element name="standard_deviation" minOccurs="1" maxOccurs="1">
               <xsd:annotation>
@@ -17614,18 +17636,10 @@ dihedral angle restraint.
               </xsd:simpleType>
             </xsd:element>
           </xsd:all>
-          <xsd:attribute name="list_id" use="required" type="xsd:int">
+          <xsd:attribute name="ordinal" use="required" type="xsd:int">
             <xsd:annotation>
               <xsd:documentation xml:lang="en">
-Pointer to attribute id in category pdbx_nmr_restraint_list. 
-                     </xsd:documentation>
-            </xsd:annotation>
-          </xsd:attribute>
-          <xsd:attribute name="restraint_id" use="required" type="xsd:int">
-            <xsd:annotation>
-              <xsd:documentation xml:lang="en">
-An integer value that uniquely identifies dihedral angle restraint
-in a list.
+The ordered number in the violated restraints.
                      </xsd:documentation>
             </xsd:annotation>
           </xsd:attribute>
@@ -17778,7 +17792,7 @@ of the ensemble.
 
 Ref: User guide to the wwPDB NMR validation reports
 9. Distance violation analysis
-9.5 All distance violations
+9.5 All violated distance restraints
 
          </xsd:documentation>
     </xsd:annotation>
@@ -17947,6 +17961,21 @@ This data item is a pointer to attribute label_alt_id in category atom_site in t
                         </xsd:documentation>
               </xsd:annotation>
             </xsd:element>
+            <xsd:element name="list_id" minOccurs="1" maxOccurs="1" type="xsd:int">
+              <xsd:annotation>
+                <xsd:documentation xml:lang="en">
+Pointer to attribute id in category pdbx_nmr_restraint_list. 
+                        </xsd:documentation>
+              </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="restraint_id" minOccurs="1" maxOccurs="1" type="xsd:int">
+              <xsd:annotation>
+                <xsd:documentation xml:lang="en">
+An integer value that uniquely identifies distance restraint
+in a list.
+                        </xsd:documentation>
+              </xsd:annotation>
+            </xsd:element>
             <xsd:element name="violation" minOccurs="0" maxOccurs="1" nillable="true">
               <xsd:annotation>
                 <xsd:documentation xml:lang="en">
@@ -17961,18 +17990,10 @@ for a particular distance restraint.
               </xsd:simpleType>
             </xsd:element>
           </xsd:all>
-          <xsd:attribute name="list_id" use="required" type="xsd:int">
+          <xsd:attribute name="ordinal" use="required" type="xsd:int">
             <xsd:annotation>
               <xsd:documentation xml:lang="en">
-Pointer to attribute id in category pdbx_nmr_restraint_list. 
-                     </xsd:documentation>
-            </xsd:annotation>
-          </xsd:attribute>
-          <xsd:attribute name="restraint_id" use="required" type="xsd:int">
-            <xsd:annotation>
-              <xsd:documentation xml:lang="en">
-An integer value that uniquely identifies distance restraint
-in a list.
+The ordered number in the violated restraints.
                      </xsd:documentation>
             </xsd:annotation>
           </xsd:attribute>
@@ -18437,6 +18458,13 @@ This data item is a pointer to attribute label_alt_id in category atom_site in t
                         </xsd:documentation>
               </xsd:annotation>
             </xsd:element>
+            <xsd:element name="list_id" minOccurs="1" maxOccurs="1" type="xsd:int">
+              <xsd:annotation>
+                <xsd:documentation xml:lang="en">
+Pointer to attribute id in category pdbx_nmr_restraint_list. 
+                        </xsd:documentation>
+              </xsd:annotation>
+            </xsd:element>
             <xsd:element name="median_violation" minOccurs="1" maxOccurs="1">
               <xsd:annotation>
                 <xsd:documentation xml:lang="en">
@@ -18449,6 +18477,14 @@ for a particular distance restraint in the models violated.
                   <xsd:minExclusive value="0.0"/>
                 </xsd:restriction>
               </xsd:simpleType>
+            </xsd:element>
+            <xsd:element name="restraint_id" minOccurs="1" maxOccurs="1" type="xsd:int">
+              <xsd:annotation>
+                <xsd:documentation xml:lang="en">
+An integer value that uniquely identifies distance restraint
+in a list.
+                        </xsd:documentation>
+              </xsd:annotation>
             </xsd:element>
             <xsd:element name="standard_deviation" minOccurs="1" maxOccurs="1">
               <xsd:annotation>
@@ -18477,18 +18513,10 @@ distance restraint.
               </xsd:simpleType>
             </xsd:element>
           </xsd:all>
-          <xsd:attribute name="list_id" use="required" type="xsd:int">
+          <xsd:attribute name="ordinal" use="required" type="xsd:int">
             <xsd:annotation>
               <xsd:documentation xml:lang="en">
-Pointer to attribute id in category pdbx_nmr_restraint_list. 
-                     </xsd:documentation>
-            </xsd:annotation>
-          </xsd:attribute>
-          <xsd:attribute name="restraint_id" use="required" type="xsd:int">
-            <xsd:annotation>
-              <xsd:documentation xml:lang="en">
-An integer value that uniquely identifies distance restraint
-in a list.
+The ordered number in the violated restraints.
                      </xsd:documentation>
             </xsd:annotation>
           </xsd:attribute>
@@ -52620,8 +52648,7 @@ identifier.
     </xsd:key>
     <xsd:key name="pdbx_nmr_dihedral_angle_violationKey_0">
       <xsd:selector xpath="PDBxv:pdbx_nmr_dihedral_angle_violationCategory/PDBxv:pdbx_nmr_dihedral_angle_violation"/>
-      <xsd:field xpath="@list_id"/>
-      <xsd:field xpath="@restraint_id"/>
+      <xsd:field xpath="@ordinal"/>
     </xsd:key>
     <xsd:key name="pdbx_nmr_dihedral_angle_violation_ensembleKey_0">
       <xsd:selector xpath="PDBxv:pdbx_nmr_dihedral_angle_violation_ensembleCategory/PDBxv:pdbx_nmr_dihedral_angle_violation_ensemble"/>
@@ -52633,8 +52660,7 @@ identifier.
     </xsd:key>
     <xsd:key name="pdbx_nmr_dihedral_angle_violation_pluralKey_0">
       <xsd:selector xpath="PDBxv:pdbx_nmr_dihedral_angle_violation_pluralCategory/PDBxv:pdbx_nmr_dihedral_angle_violation_plural"/>
-      <xsd:field xpath="@list_id"/>
-      <xsd:field xpath="@restraint_id"/>
+      <xsd:field xpath="@ordinal"/>
     </xsd:key>
     <xsd:key name="pdbx_nmr_dihedral_angle_violation_summaryKey_0">
       <xsd:selector xpath="PDBxv:pdbx_nmr_dihedral_angle_violation_summaryCategory/PDBxv:pdbx_nmr_dihedral_angle_violation_summary"/>
@@ -52642,8 +52668,7 @@ identifier.
     </xsd:key>
     <xsd:key name="pdbx_nmr_distance_violationKey_0">
       <xsd:selector xpath="PDBxv:pdbx_nmr_distance_violationCategory/PDBxv:pdbx_nmr_distance_violation"/>
-      <xsd:field xpath="@list_id"/>
-      <xsd:field xpath="@restraint_id"/>
+      <xsd:field xpath="@ordinal"/>
     </xsd:key>
     <xsd:key name="pdbx_nmr_distance_violation_ensembleKey_0">
       <xsd:selector xpath="PDBxv:pdbx_nmr_distance_violation_ensembleCategory/PDBxv:pdbx_nmr_distance_violation_ensemble"/>
@@ -52655,8 +52680,7 @@ identifier.
     </xsd:key>
     <xsd:key name="pdbx_nmr_distance_violation_pluralKey_0">
       <xsd:selector xpath="PDBxv:pdbx_nmr_distance_violation_pluralCategory/PDBxv:pdbx_nmr_distance_violation_plural"/>
-      <xsd:field xpath="@list_id"/>
-      <xsd:field xpath="@restraint_id"/>
+      <xsd:field xpath="@ordinal"/>
     </xsd:key>
     <xsd:key name="pdbx_nmr_distance_violation_summaryKey_0">
       <xsd:selector xpath="PDBxv:pdbx_nmr_distance_violation_summaryCategory/PDBxv:pdbx_nmr_distance_violation_summary"/>

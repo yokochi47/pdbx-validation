@@ -1,7 +1,7 @@
 ###########################################################################
 #
 # File:  mmcif_pdbx_validation-v3.dic
-# Data:  Wed Dec  9 17:35:18 JST 2020
+# Data:  Mon Dec 14 10:31:47 JST 2020
 #
 # Created from:
 #        mmcif_pdbx_v50.dic   - PDB Exchange Data Dictionary (V5.336)
@@ -332,7 +332,7 @@ data_mmcif_pdbx_validation.dic
 >     + Remove use of non_negative_int as regular expression incorrect
 >     + Add citation_doi and exp_data_doi for use in citation and pdbx_related_exp_data_set # not mapped
       + Update item range of '_em_entity_assembly.parent_id' allows non-negative int
-      + Update units for _em_imaging.c2_aperture_diameter from millimetres to micrometres
+      + Update units for _em_imaging.c2_aperture_diameter from millimeters to micrometers
 ;
   1.302   2018-11-26
 ;
@@ -718,7 +718,7 @@ data_mmcif_pdbx_validation.dic
 >     + Remove ranges for _diffrn_source.pdbx_wavelength_list as not compatible with code type 'line' # merged
 >     + Update funding enumerations # not mapped
 >     + Add SHELXT to _software.name enumeration # not mapped
->     + Remove obsolete enumberations from chem_comp.type 'D-saccharide 1,4 and 1,6 linking',
+>     + Remove obsolete enumerations from chem_comp.type 'D-saccharide 1,4 and 1,6 linking',
 >        'L-saccharide 1,4 and 1,4 linking', 'L-saccharide 1,4 and 1,6 linking',
 >        'D-saccharide 1,4 and 1,4 linking' # not mapped
 >     + Close the enumerations for _pdbx_nmr_constraint_file.constraint_subtype and
@@ -736,7 +736,7 @@ data_mmcif_pdbx_validation.dic
 >     + Update funding enumerations # not mapped
 >     + Add advisory limits for _em_focused_io_beam.final_thickness
 >       and _emd_sectioning_focused_ion_beam.final_thickness # not mapped
->     + Add  'methylene carbons' to _pdbx_nmr_chem_shift_ref.atom_group enumeraton # not mapped
+>     + Add  'methylene carbons' to _pdbx_nmr_chem_shift_ref.atom_group enumeration # not mapped
 >     + Change type of struct_ncs_oper.id, struct_ncs_end_gen.oper_id, pdbx_struct_ncs_virus_gen.oper_id
 >       to int to match current PDB practice # merged
 >     + Change _pdbx_struct_assembly.details mandatory based on current use. # merged
@@ -774,11 +774,11 @@ data_mmcif_pdbx_validation.dic
 >     + Make _diffrn_refln.standard_code and _diffrn_refln.scale_group_code
 >       non-mandatory # merged
 ;
-  3.336   2020-12-09
+  3.336   2020-12-14
 ;
       + Support NMR restraints validation in wwPDB validation report XML Schema v005
         + Add '_pdbx_nmr_restraint_list' category that records list of NMR restraints.
-        + Add '_pdbx_nmr_restraint_summary' category that records sumarry of conformationally restricting restraints.
+        + Add '_pdbx_nmr_restraint_summary' category that records summary of conformationally restricting restraints.
         + Add '_pdbx_nmr_restraint_violation' category that records residual violations
                of conformationally restricting restraints in different bins.
         + Add '_pdbx_nmr_distance_violation_summary' category that records violations of distance restraints.
@@ -67472,7 +67472,7 @@ save__pdbx_nmr_distance_violation_summary.type
      interchain      'interchain distance restraints'
      all             'all distance restraints without classification based on residue number gap'
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/distance_restraints_analysis/distance_violations_summary/distance_violation_summary/@restraint_type'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/distance_restraints_analysis/distance_violations_summary/distance_violation_summary/@restraint_type'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -67493,7 +67493,7 @@ save__pdbx_nmr_distance_violation_summary.subtype
      sidechain-sidechain     'distance restraints between two side chain atoms'
      all                     'all distance restraints without backbone/side chain classification'
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/distance_restraints_analysis/distance_violations_summary/distance_violation_summary/@restraint_sub_type'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/distance_restraints_analysis/distance_violations_summary/distance_violation_summary/@restraint_sub_type'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -67512,7 +67512,7 @@ save__pdbx_nmr_distance_violation_summary.restraints_count
     _item_range.minimum           .   0
                                   0   0
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/distance_restraints_analysis/distance_violations_summary/distance_violation_summary/@restraints_count'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/distance_restraints_analysis/distance_violations_summary/distance_violation_summary/@restraints_count'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -67527,7 +67527,7 @@ save__pdbx_nmr_distance_violation_summary.restraints_percent
     _item.mandatory_code          no
     _item_type.code               float
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/distance_restraints_analysis/distance_violations_summary/distance_violation_summary/@percent_total'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/distance_restraints_analysis/distance_violations_summary/distance_violation_summary/@percent_total'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -67546,7 +67546,7 @@ save__pdbx_nmr_distance_violation_summary.violations_count
     _item_range.minimum           .   0
                                   0   0
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/distance_restraints_analysis/distance_violations_summary/distance_violation_summary/@violated_count'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/distance_restraints_analysis/distance_violations_summary/distance_violation_summary/@violated_count'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -67561,7 +67561,7 @@ save__pdbx_nmr_distance_violation_summary.violations_percent
     _item.mandatory_code          no
     _item_type.code               float
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/distance_restraints_analysis/distance_violations_summary/distance_violation_summary/@violated_percent_total'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/distance_restraints_analysis/distance_violations_summary/distance_violation_summary/@violated_percent_total'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -67576,7 +67576,7 @@ save__pdbx_nmr_distance_violation_summary.violations_percent_type
     _item.mandatory_code          no
     _item_type.code               float
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/distance_restraints_analysis/distance_violations_summary/distance_violation_summary/@violated_percent_type'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/distance_restraints_analysis/distance_violations_summary/distance_violation_summary/@violated_percent_type'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -67595,7 +67595,7 @@ save__pdbx_nmr_distance_violation_summary.consistent_violations_count
     _item_range.minimum           .   0
                                   0   0
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/distance_restraints_analysis/distance_violations_summary/distance_violation_summary/@consistently_violated_count'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/distance_restraints_analysis/distance_violations_summary/distance_violation_summary/@consistently_violated_count'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -67610,7 +67610,7 @@ save__pdbx_nmr_distance_violation_summary.consistent_violations_percent
     _item.mandatory_code          no
     _item_type.code               float
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/distance_restraints_analysis/distance_violations_summary/distance_violation_summary/@consistently_violated_percent_total'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/distance_restraints_analysis/distance_violations_summary/distance_violation_summary/@consistently_violated_percent_total'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -67625,7 +67625,7 @@ save__pdbx_nmr_distance_violation_summary.consistent_violations_percent_type
     _item.mandatory_code          no
     _item_type.code               float
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/distance_restraints_analysis/distance_violations_summary/distance_violation_summary/@consistently_violated_percent_type'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/distance_restraints_analysis/distance_violations_summary/distance_violation_summary/@consistently_violated_percent_type'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -67665,7 +67665,7 @@ save__pdbx_nmr_distance_violation_model.PDB_model_num
     _pdbx_item_external_ref.dictionary    mmcif_pdbx.dic
     _pdbx_item_external_ref.version       5
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/distance_restraints_analysis/distance_violations_in_models/distance_violations_in_model/@model'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/distance_restraints_analysis/distance_violations_in_models/distance_violations_in_model/@model'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -67683,7 +67683,7 @@ save__pdbx_nmr_distance_violation_model.maximum_violation
     _item_range.maximum           .
     _item_range.minimum           0.0
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/distance_restraints_analysis/distance_violations_in_models/distance_violations_in_model/@max_violation'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/distance_restraints_analysis/distance_violations_in_models/distance_violations_in_model/@max_violation'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -67701,7 +67701,7 @@ save__pdbx_nmr_distance_violation_model.average_violation
     _item_range.maximum           .
     _item_range.minimum           0.0
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/distance_restraints_analysis/distance_violations_in_models/distance_violations_in_model/@mean_violation'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/distance_restraints_analysis/distance_violations_in_models/distance_violations_in_model/@mean_violation'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -67719,7 +67719,7 @@ save__pdbx_nmr_distance_violation_model.median_violation
     _item_range.maximum           .
     _item_range.minimum           0.0
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/distance_restraints_analysis/distance_violations_in_models/distance_violations_in_model/@median_violation'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/distance_restraints_analysis/distance_violations_in_models/distance_violations_in_model/@median_violation'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -67737,7 +67737,7 @@ save__pdbx_nmr_distance_violation_model.standard_deviation
     _item_range.maximum           .
     _item_range.minimum           0.0
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/distance_restraints_analysis/distance_violations_in_models/distance_violations_in_model/@standard_deviation'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/distance_restraints_analysis/distance_violations_in_models/distance_violations_in_model/@standard_deviation'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -67755,7 +67755,7 @@ save__pdbx_nmr_distance_violation_model.violations_count
     _item_range.maximum
     _item_range.minimum           .   0
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/distance_restraints_analysis/distance_violations_in_models/distance_violations_in_model/dist_rest_types[@dist_rest_type="Total"]/@violations_count'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/distance_restraints_analysis/distance_violations_in_models/distance_violations_in_model/dist_rest_types[@dist_rest_type="Total"]/@violations_count'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -67774,7 +67774,7 @@ save__pdbx_nmr_distance_violation_model.intraresidue_violations_count
     _item_range.minimum           .   0
                                   0   0
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/distance_restraints_analysis/distance_violations_in_models/distance_violations_in_model/dist_rest_types[@dist_rest_type="Intra-residue"]/@violations_count'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/distance_restraints_analysis/distance_violations_in_models/distance_violations_in_model/dist_rest_types[@dist_rest_type="Intra-residue"]/@violations_count'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -67793,7 +67793,7 @@ save__pdbx_nmr_distance_violation_model.sequential_violations_count
     _item_range.minimum           .   0
                                   0   0
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/distance_restraints_analysis/distance_violations_in_models/distance_violations_in_model/dist_rest_types[@dist_rest_type="Sequential"]/@violations_count'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/distance_restraints_analysis/distance_violations_in_models/distance_violations_in_model/dist_rest_types[@dist_rest_type="Sequential"]/@violations_count'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -67812,7 +67812,7 @@ save__pdbx_nmr_distance_violation_model.medium_range_violations_count
     _item_range.minimum           .   0
                                   0   0
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/distance_restraints_analysis/distance_violations_in_models/distance_violations_in_model/dist_rest_types[@dist_rest_type="MediumRange"]/@violations_count'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/distance_restraints_analysis/distance_violations_in_models/distance_violations_in_model/dist_rest_types[@dist_rest_type="MediumRange"]/@violations_count'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -67831,7 +67831,7 @@ save__pdbx_nmr_distance_violation_model.long_range_violations_count
     _item_range.minimum           .   0
                                   0   0
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/distance_restraints_analysis/distance_violations_in_models/distance_violations_in_model/dist_rest_types[@dist_rest_type="LongRange"]/@violations_count'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/distance_restraints_analysis/distance_violations_in_models/distance_violations_in_model/dist_rest_types[@dist_rest_type="LongRange"]/@violations_count'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -67849,7 +67849,7 @@ save__pdbx_nmr_distance_violation_model.interchain_violations_count
     _item_range.maximum
     _item_range.minimum           .   0
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/distance_restraints_analysis/distance_violations_in_models/distance_violations_in_model/dist_rest_types[@dist_rest_type="InterChain"]/@violations_count'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/distance_restraints_analysis/distance_violations_in_models/distance_violations_in_model/dist_rest_types[@dist_rest_type="InterChain"]/@violations_count'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -67886,7 +67886,7 @@ save__pdbx_nmr_distance_violation_ensemble.fraction_count
     _item.mandatory_code          yes
     _item_type.code               int
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/distance_restraints_analysis/distance_violations_in_ensemble/distance_violation_in_ensemble/@fraction_of_ensemble_count'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/distance_restraints_analysis/distance_violations_in_ensemble/distance_violation_in_ensemble/@fraction_of_ensemble_count'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -67901,7 +67901,7 @@ save__pdbx_nmr_distance_violation_ensemble.fraction_percent
     _item.mandatory_code          yes
     _item_type.code               float
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/distance_restraints_analysis/distance_violations_in_ensemble/distance_violation_in_ensemble/@fraction_of_ensemble_percent'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/distance_restraints_analysis/distance_violations_in_ensemble/distance_violation_in_ensemble/@fraction_of_ensemble_percent'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -67919,7 +67919,7 @@ save__pdbx_nmr_distance_violation_ensemble.violations_count
     _item_range.maximum
     _item_range.minimum           .   0
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/distance_restraints_analysis/distance_violations_in_ensemble/distance_violation_in_ensemble/dist_rest_types[@dist_rest_type="Total"]/@violations_count'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/distance_restraints_analysis/distance_violations_in_ensemble/distance_violation_in_ensemble/dist_rest_types[@dist_rest_type="Total"]/@violations_count'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -67938,7 +67938,7 @@ save__pdbx_nmr_distance_violation_ensemble.intraresidue_violations_count
     _item_range.minimum           .   0
                                   0   0
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/distance_restraints_analysis/distance_violations_in_ensemble/distance_violation_in_ensemble/dist_rest_types[@dist_rest_type="Intra-residue"]/@violations_count'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/distance_restraints_analysis/distance_violations_in_ensemble/distance_violation_in_ensemble/dist_rest_types[@dist_rest_type="Intra-residue"]/@violations_count'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -67957,7 +67957,7 @@ save__pdbx_nmr_distance_violation_ensemble.sequential_violations_count
     _item_range.minimum           .   0
                                   0   0
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/distance_restraints_analysis/distance_violations_in_ensemble/distance_violation_in_ensemble/dist_rest_types[@dist_rest_type="Sequential"]/@violations_count'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/distance_restraints_analysis/distance_violations_in_ensemble/distance_violation_in_ensemble/dist_rest_types[@dist_rest_type="Sequential"]/@violations_count'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -67976,7 +67976,7 @@ save__pdbx_nmr_distance_violation_ensemble.medium_range_violations_count
     _item_range.minimum           .   0
                                   0   0
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/distance_restraints_analysis/distance_violations_in_ensemble/distance_violation_in_ensemble/dist_rest_types[@dist_rest_type="MediumRange"]/@violations_count'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/distance_restraints_analysis/distance_violations_in_ensemble/distance_violation_in_ensemble/dist_rest_types[@dist_rest_type="MediumRange"]/@violations_count'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -67995,7 +67995,7 @@ save__pdbx_nmr_distance_violation_ensemble.long_range_violations_count
     _item_range.minimum           .   0
                                   0   0
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/distance_restraints_analysis/distance_violations_in_ensemble/distance_violation_in_ensemble/dist_rest_types[@dist_rest_type="LongRange"]/@violations_count'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/distance_restraints_analysis/distance_violations_in_ensemble/distance_violation_in_ensemble/dist_rest_types[@dist_rest_type="LongRange"]/@violations_count'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -68013,7 +68013,7 @@ save__pdbx_nmr_distance_violation_ensemble.interchain_violations_count
     _item_range.maximum
     _item_range.minimum           .   0
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/distance_restraints_analysis/distance_violations_in_ensemble/distance_violation_in_ensemble/dist_rest_types[@dist_rest_type="InterChain"]/@violations_count'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/distance_restraints_analysis/distance_violations_in_ensemble/distance_violation_in_ensemble/dist_rest_types[@dist_rest_type="InterChain"]/@violations_count'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -68034,14 +68034,25 @@ save_pdbx_nmr_distance_violation_plural
 ;
     _category.id                  pdbx_nmr_distance_violation_plural
     _category.mandatory_code      no
-    loop_
-    _category_key.name
-                                '_pdbx_nmr_distance_violation_plural.list_id'
-                                '_pdbx_nmr_distance_violation_plural.restraint_id'
+    _category_key.name          '_pdbx_nmr_distance_violation_plural.ordinal'
     loop_
     _category_group.id           'inclusive_group'
                                  'nmr_group'
                                  'validate_vtf_group'
+save_
+
+save__pdbx_nmr_distance_violation_plural.ordinal
+    _item_description.description
+;              The ordered number in the violated restraints.
+;
+    _item.name                  '_pdbx_nmr_distance_violation_plural.ordinal'
+    _item.category_id             pdbx_nmr_distance_violation_plural
+    _item.mandatory_code          yes
+    _item_type.code               int
+#
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/distance_restraints_analysis/most_violated_distance_restraints/most_violated_distance_restraint'
+    _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
+    _pdbx_item_aliases.version    v005
 save_
 
 save__pdbx_nmr_distance_violation_plural.list_id
@@ -68055,7 +68066,7 @@ save__pdbx_nmr_distance_violation_plural.list_id
     _item_linked.parent_name    '_pdbx_nmr_restraint_list.id'
     _item_type.code               int
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/distance_restraints_analysis/most_violated_distance_restraints/most_violated_distance_restraint/@rlist_id'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/distance_restraints_analysis/most_violated_distance_restraints/most_violated_distance_restraint/@rlist_id'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -68070,7 +68081,7 @@ save__pdbx_nmr_distance_violation_plural.restraint_id
     _item.mandatory_code          yes
     _item_type.code               int
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/distance_restraints_analysis/most_violated_distance_restraints/most_violated_distance_restraint/@rest_id'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/distance_restraints_analysis/most_violated_distance_restraints/most_violated_distance_restraint/@rest_id'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -68089,7 +68100,7 @@ save__pdbx_nmr_distance_violation_plural.violation_models_count
     _item_range.minimum           .   2
                                   2   2
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/distance_restraints_analysis/most_violated_distance_restraints/most_violated_distance_restraint/@violated_models'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/distance_restraints_analysis/most_violated_distance_restraints/most_violated_distance_restraint/@violated_models'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -68107,7 +68118,7 @@ save__pdbx_nmr_distance_violation_plural.average_violation
     _item_range.maximum           .
     _item_range.minimum           0.0
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/distance_restraints_analysis/most_violated_distance_restraints/most_violated_distance_restraint/@mean_distance_violation'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/distance_restraints_analysis/most_violated_distance_restraints/most_violated_distance_restraint/@mean_distance_violation'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -68125,7 +68136,7 @@ save__pdbx_nmr_distance_violation_plural.median_violation
     _item_range.maximum           .
     _item_range.minimum           0.0
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/distance_restraints_analysis/most_violated_distance_restraints/most_violated_distance_restraint/@median_violation'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/distance_restraints_analysis/most_violated_distance_restraints/most_violated_distance_restraint/@median_violation'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -68143,7 +68154,7 @@ save__pdbx_nmr_distance_violation_plural.standard_deviation
     _item_range.maximum           .
     _item_range.minimum           0.0
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/distance_restraints_analysis/most_violated_distance_restraints/most_violated_distance_restraint/@standard_deviation'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/distance_restraints_analysis/most_violated_distance_restraints/most_violated_distance_restraint/@standard_deviation'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -68165,7 +68176,7 @@ save__pdbx_nmr_distance_violation_plural.entity_id_1
     _pdbx_item_external_ref.dictionary    mmcif_pdbx.dic
     _pdbx_item_external_ref.version       5
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/distance_restraints_analysis/most_violated_distance_restraints/most_violated_distance_restraint/@ent_1'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/distance_restraints_analysis/most_violated_distance_restraints/most_violated_distance_restraint/@ent_1'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -68187,7 +68198,7 @@ save__pdbx_nmr_distance_violation_plural.auth_asym_id_1
     _pdbx_item_external_ref.dictionary    mmcif_pdbx.dic
     _pdbx_item_external_ref.version       5
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/distance_restraints_analysis/most_violated_distance_restraints/most_violated_distance_restraint/@chain_1'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/distance_restraints_analysis/most_violated_distance_restraints/most_violated_distance_restraint/@chain_1'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -68209,7 +68220,7 @@ save__pdbx_nmr_distance_violation_plural.auth_atom_id_1
     _pdbx_item_external_ref.dictionary    mmcif_pdbx.dic
     _pdbx_item_external_ref.version       5
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/distance_restraints_analysis/most_violated_distance_restraints/most_violated_distance_restraint/@atom_1'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/distance_restraints_analysis/most_violated_distance_restraints/most_violated_distance_restraint/@atom_1'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -68231,7 +68242,7 @@ save__pdbx_nmr_distance_violation_plural.auth_comp_id_1
     _pdbx_item_external_ref.dictionary    mmcif_pdbx.dic
     _pdbx_item_external_ref.version       5
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/distance_restraints_analysis/most_violated_distance_restraints/most_violated_distance_restraint/@res_name_1'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/distance_restraints_analysis/most_violated_distance_restraints/most_violated_distance_restraint/@res_name_1'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -68253,7 +68264,7 @@ save__pdbx_nmr_distance_violation_plural.auth_seq_id_1
     _pdbx_item_external_ref.dictionary    mmcif_pdbx.dic
     _pdbx_item_external_ref.version       5
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/distance_restraints_analysis/most_violated_distance_restraints/most_violated_distance_restraint/@resnum_1'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/distance_restraints_analysis/most_violated_distance_restraints/most_violated_distance_restraint/@resnum_1'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -68275,7 +68286,7 @@ save__pdbx_nmr_distance_violation_plural.auth_atom_id_2
     _pdbx_item_external_ref.dictionary    mmcif_pdbx.dic
     _pdbx_item_external_ref.version       5
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/distance_restraints_analysis/most_violated_distance_restraints/most_violated_distance_restraint/@atom_2'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/distance_restraints_analysis/most_violated_distance_restraints/most_violated_distance_restraint/@atom_2'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -68297,7 +68308,7 @@ save__pdbx_nmr_distance_violation_plural.entity_id_2
     _pdbx_item_external_ref.dictionary    mmcif_pdbx.dic
     _pdbx_item_external_ref.version       5
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/distance_restraints_analysis/most_violated_distance_restraints/most_violated_distance_restraint/@ent_2'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/distance_restraints_analysis/most_violated_distance_restraints/most_violated_distance_restraint/@ent_2'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -68319,7 +68330,7 @@ save__pdbx_nmr_distance_violation_plural.auth_asym_id_2
     _pdbx_item_external_ref.dictionary    mmcif_pdbx.dic
     _pdbx_item_external_ref.version       5
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/distance_restraints_analysis/most_violated_distance_restraints/most_violated_distance_restraint/@chain_2'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/distance_restraints_analysis/most_violated_distance_restraints/most_violated_distance_restraint/@chain_2'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
    _pdbx_item_aliases.version    v005
 save_
@@ -68341,7 +68352,7 @@ save__pdbx_nmr_distance_violation_plural.auth_comp_id_2
     _pdbx_item_external_ref.dictionary    mmcif_pdbx.dic
     _pdbx_item_external_ref.version       5
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/distance_restraints_analysis/most_violated_distance_restraints/most_violated_distance_restraint/@resname_2'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/distance_restraints_analysis/most_violated_distance_restraints/most_violated_distance_restraint/@resname_2'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -68363,7 +68374,7 @@ save__pdbx_nmr_distance_violation_plural.auth_seq_id_2
     _pdbx_item_external_ref.dictionary    mmcif_pdbx.dic
     _pdbx_item_external_ref.version       5
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/distance_restraints_analysis/most_violated_distance_restraints/most_violated_distance_restraint/@resnum_2'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/distance_restraints_analysis/most_violated_distance_restraints/most_violated_distance_restraint/@resnum_2'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -68386,7 +68397,7 @@ save__pdbx_nmr_distance_violation_plural.PDB_ins_code_1
     _pdbx_item_external_ref.dictionary    mmcif_pdbx.dic
     _pdbx_item_external_ref.version       5
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/distance_restraints_analysis/most_violated_distance_restraints/most_violated_distance_restraint/@icode_1'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/distance_restraints_analysis/most_violated_distance_restraints/most_violated_distance_restraint/@icode_1'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -68408,7 +68419,7 @@ save__pdbx_nmr_distance_violation_plural.PDB_ins_code_2
     _pdbx_item_external_ref.dictionary    mmcif_pdbx.dic
     _pdbx_item_external_ref.version       5
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/distance_restraints_analysis/most_violated_distance_restraints/most_violated_distance_restraint/@icode_2'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/distance_restraints_analysis/most_violated_distance_restraints/most_violated_distance_restraint/@icode_2'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -68430,7 +68441,7 @@ save__pdbx_nmr_distance_violation_plural.label_alt_id_1
     _pdbx_item_external_ref.dictionary    mmcif_pdbx.dic
     _pdbx_item_external_ref.version       5
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/distance_restraints_analysis/most_violated_distance_restraints/most_violated_distance_restraint/@altcode_1'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/distance_restraints_analysis/most_violated_distance_restraints/most_violated_distance_restraint/@altcode_1'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -68452,7 +68463,7 @@ save__pdbx_nmr_distance_violation_plural.label_alt_id_2
     _pdbx_item_external_ref.dictionary    mmcif_pdbx.dic
     _pdbx_item_external_ref.version       5
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/distance_restraints_analysis/most_violated_distance_restraints/most_violated_distance_restraint/@altcode_2'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/distance_restraints_analysis/most_violated_distance_restraints/most_violated_distance_restraint/@altcode_2'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -68468,18 +68479,29 @@ save_pdbx_nmr_distance_violation
 
                Ref: User guide to the wwPDB NMR validation reports
                 9. Distance violation analysis
-                 9.5 All distance violations
+                 9.5 All violated distance restraints
 ;
     _category.id                  pdbx_nmr_distance_violation
     _category.mandatory_code      no
-    loop_
-    _category_key.name
-                                '_pdbx_nmr_distance_violation.list_id'
-                                '_pdbx_nmr_distance_violation.restraint_id'
+    _category_key.name          '_pdbx_nmr_distance_violation.ordinal'
     loop_
     _category_group.id           'inclusive_group'
                                  'nmr_group'
                                  'validate_vtf_group'
+save_
+
+save__pdbx_nmr_distance_violation.ordinal
+    _item_description.description
+;              The ordered number in the violated restraints.
+;
+    _item.name                  '_pdbx_nmr_distance_violation.ordinal'
+    _item.category_id             pdbx_nmr_distance_violation
+    _item.mandatory_code          yes
+    _item_type.code               int
+#
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/distance_restraints_analysis/violated_distance_restraints/violated_distance_restraint'
+    _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
+    _pdbx_item_aliases.version    v005
 save_
 
 save__pdbx_nmr_distance_violation.list_id
@@ -68493,7 +68515,7 @@ save__pdbx_nmr_distance_violation.list_id
     _item_linked.parent_name    '_pdbx_nmr_restraint_list.id'
     _item_type.code               int
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/distance_restraints_analysis/violated_distance_restraints/violated_distance_restraint/@rlist_id'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/distance_restraints_analysis/violated_distance_restraints/violated_distance_restraint/@rlist_id'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -68508,7 +68530,7 @@ save__pdbx_nmr_distance_violation.restraint_id
     _item.mandatory_code          yes
     _item_type.code               int
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/distance_restraints_analysis/violated_distance_restraints/violated_distance_restraint/@rest_id'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/distance_restraints_analysis/violated_distance_restraints/violated_distance_restraint/@rest_id'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -68526,7 +68548,7 @@ save__pdbx_nmr_distance_violation.PDB_model_num
     _pdbx_item_external_ref.dictionary    mmcif_pdbx.dic
     _pdbx_item_external_ref.version       5
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/distance_restraints_analysis/violated_distance_restraints/violated_distance_restraint/@model'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/distance_restraints_analysis/violated_distance_restraints/violated_distance_restraint/@model'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -68544,7 +68566,7 @@ save__pdbx_nmr_distance_violation.violation
     _item_range.maximum           .
     _item_range.minimum           0.0
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/distance_restraints_analysis/violated_distance_restraints/violated_distance_restraint/@violation'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/distance_restraints_analysis/violated_distance_restraints/violated_distance_restraint/@violation'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -68566,7 +68588,7 @@ save__pdbx_nmr_distance_violation.entity_id_1
     _pdbx_item_external_ref.dictionary    mmcif_pdbx.dic
     _pdbx_item_external_ref.version       5
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/distance_restraints_analysis/violated_distance_restraints/violated_distance_restraint/@ent_1'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/distance_restraints_analysis/violated_distance_restraints/violated_distance_restraint/@ent_1'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -68588,7 +68610,7 @@ save__pdbx_nmr_distance_violation.auth_asym_id_1
     _pdbx_item_external_ref.dictionary    mmcif_pdbx.dic
     _pdbx_item_external_ref.version       5
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/distance_restraints_analysis/violated_distance_restraints/violated_distance_restraint/@chain_1'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/distance_restraints_analysis/violated_distance_restraints/violated_distance_restraint/@chain_1'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -68610,7 +68632,7 @@ save__pdbx_nmr_distance_violation.auth_atom_id_1
     _pdbx_item_external_ref.dictionary    mmcif_pdbx.dic
     _pdbx_item_external_ref.version       5
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/distance_restraints_analysis/violated_distance_restraints/violated_distance_restraint/@atom_1'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/distance_restraints_analysis/violated_distance_restraints/violated_distance_restraint/@atom_1'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -68632,7 +68654,7 @@ save__pdbx_nmr_distance_violation.auth_comp_id_1
     _pdbx_item_external_ref.dictionary    mmcif_pdbx.dic
     _pdbx_item_external_ref.version       5
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/distance_restraints_analysis/violated_distance_restraints/violated_distance_restraint/@res_name_1'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/distance_restraints_analysis/violated_distance_restraints/violated_distance_restraint/@res_name_1'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -68654,7 +68676,7 @@ save__pdbx_nmr_distance_violation.auth_seq_id_1
     _pdbx_item_external_ref.dictionary    mmcif_pdbx.dic
     _pdbx_item_external_ref.version       5
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/distance_restraints_analysis/violated_distance_restraints/violated_distance_restraint/@resnum_1'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/distance_restraints_analysis/violated_distance_restraints/violated_distance_restraint/@resnum_1'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -68676,7 +68698,7 @@ save__pdbx_nmr_distance_violation.auth_atom_id_2
     _pdbx_item_external_ref.dictionary    mmcif_pdbx.dic
     _pdbx_item_external_ref.version       5
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/distance_restraints_analysis/violated_distance_restraints/violated_distance_restraint/@atom_2'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/distance_restraints_analysis/violated_distance_restraints/violated_distance_restraint/@atom_2'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -68698,7 +68720,7 @@ save__pdbx_nmr_distance_violation.entity_id_2
     _pdbx_item_external_ref.dictionary    mmcif_pdbx.dic
     _pdbx_item_external_ref.version       5
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/distance_restraints_analysis/violated_distance_restraints/violated_distance_restraint/@ent_2'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/distance_restraints_analysis/violated_distance_restraints/violated_distance_restraint/@ent_2'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -68720,7 +68742,7 @@ save__pdbx_nmr_distance_violation.auth_asym_id_2
     _pdbx_item_external_ref.dictionary    mmcif_pdbx.dic
     _pdbx_item_external_ref.version       5
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/distance_restraints_analysis/violated_distance_restraints/violated_distance_restraint/@chain_2'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/distance_restraints_analysis/violated_distance_restraints/violated_distance_restraint/@chain_2'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
    _pdbx_item_aliases.version    v005
 save_
@@ -68742,7 +68764,7 @@ save__pdbx_nmr_distance_violation.auth_comp_id_2
     _pdbx_item_external_ref.dictionary    mmcif_pdbx.dic
     _pdbx_item_external_ref.version       5
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/distance_restraints_analysis/violated_distance_restraints/violated_distance_restraint/@resname_2'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/distance_restraints_analysis/violated_distance_restraints/violated_distance_restraint/@resname_2'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -68764,7 +68786,7 @@ save__pdbx_nmr_distance_violation.auth_seq_id_2
     _pdbx_item_external_ref.dictionary    mmcif_pdbx.dic
     _pdbx_item_external_ref.version       5
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/distance_restraints_analysis/violated_distance_restraints/violated_distance_restraint/@resnum_2'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/distance_restraints_analysis/violated_distance_restraints/violated_distance_restraint/@resnum_2'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -68787,7 +68809,7 @@ save__pdbx_nmr_distance_violation.PDB_ins_code_1
     _pdbx_item_external_ref.dictionary    mmcif_pdbx.dic
     _pdbx_item_external_ref.version       5
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/distance_restraints_analysis/violated_distance_restraints/violated_distance_restraint/@icode_1'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/distance_restraints_analysis/violated_distance_restraints/violated_distance_restraint/@icode_1'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -68809,7 +68831,7 @@ save__pdbx_nmr_distance_violation.PDB_ins_code_2
     _pdbx_item_external_ref.dictionary    mmcif_pdbx.dic
     _pdbx_item_external_ref.version       5
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/distance_restraints_analysis/violated_distance_restraints/violated_distance_restraint/@icode_2'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/distance_restraints_analysis/violated_distance_restraints/violated_distance_restraint/@icode_2'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -68831,7 +68853,7 @@ save__pdbx_nmr_distance_violation.label_alt_id_1
     _pdbx_item_external_ref.dictionary    mmcif_pdbx.dic
     _pdbx_item_external_ref.version       5
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/distance_restraints_analysis/violated_distance_restraints/violated_distance_restraint/@altcode_1'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/distance_restraints_analysis/violated_distance_restraints/violated_distance_restraint/@altcode_1'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -68853,7 +68875,7 @@ save__pdbx_nmr_distance_violation.label_alt_id_2
     _pdbx_item_external_ref.dictionary    mmcif_pdbx.dic
     _pdbx_item_external_ref.version       5
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/distance_restraints_analysis/violated_distance_restraints/violated_distance_restraint/@altcode_2'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/distance_restraints_analysis/violated_distance_restraints/violated_distance_restraint/@altcode_2'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -68920,7 +68942,7 @@ save__pdbx_nmr_dihedral_angle_violation_summary.type
      chi42     "protein side-chain torsion angle chi4, variant 2 for GLU (uncharged) residue"
      all       'all dihedral angle restraints without classification'
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/dihedralangle_restraints_analysis/dihedralangle_violations_summary/dihedralangle_violation_summary/@restraint_type'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/dihedralangle_violations_summary/dihedralangle_violation_summary/@restraint_type'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -68939,7 +68961,7 @@ save__pdbx_nmr_dihedral_angle_violation_summary.restraints_count
     _item_range.minimum           .   0
                                   0   0
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/dihedralangle_restraints_analysis/dihedralangle_violations_summary/dihedralangle_violation_summary/@restraints_count'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/dihedralangle_violations_summary/dihedralangle_violation_summary/@restraints_count'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -68954,7 +68976,7 @@ save__pdbx_nmr_dihedral_angle_violation_summary.restraints_percent
     _item.mandatory_code          no
     _item_type.code               float
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/dihedralangle_restraints_analysis/dihedralangle_violations_summary/dihedralangle_violation_summary/@percent_total'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/dihedralangle_violations_summary/dihedralangle_violation_summary/@percent_total'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -68973,7 +68995,7 @@ save__pdbx_nmr_dihedral_angle_violation_summary.violations_count
     _item_range.minimum           .   0
                                   0   0
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/dihedralangle_restraints_analysis/dihedralangle_violations_summary/dihedralangle_violation_summary/@violated_count'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/dihedralangle_violations_summary/dihedralangle_violation_summary/@violated_count'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -68988,7 +69010,7 @@ save__pdbx_nmr_dihedral_angle_violation_summary.violations_percent
     _item.mandatory_code          no
     _item_type.code               float
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/dihedralangle_restraints_analysis/dihedralangle_violations_summary/dihedralangle_violation_summary/@violated_percent_total'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/dihedralangle_violations_summary/dihedralangle_violation_summary/@violated_percent_total'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -69003,7 +69025,7 @@ save__pdbx_nmr_dihedral_angle_violation_summary.violations_percent_type
     _item.mandatory_code          no
     _item_type.code               float
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/dihedralangle_restraints_analysis/dihedralangle_violations_summary/dihedralangle_violation_summary/@violated_percent_type'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/dihedralangle_violations_summary/dihedralangle_violation_summary/@violated_percent_type'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -69022,7 +69044,7 @@ save__pdbx_nmr_dihedral_angle_violation_summary.consistent_violations_count
     _item_range.minimum           .   0
                                   0   0
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/dihedralangle_restraints_analysis/dihedralangle_violations_summary/dihedralangle_violation_summary/@consistently_violated_count'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/dihedralangle_violations_summary/dihedralangle_violation_summary/@consistently_violated_count'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -69037,7 +69059,7 @@ save__pdbx_nmr_dihedral_angle_violation_summary.consistent_violations_percent
     _item.mandatory_code          no
     _item_type.code               float
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/dihedralangle_restraints_analysis/dihedralangle_violations_summary/dihedralangle_violation_summary/@consistently_violated_percent_total'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/dihedralangle_violations_summary/dihedralangle_violation_summary/@consistently_violated_percent_total'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -69052,7 +69074,7 @@ save__pdbx_nmr_dihedral_angle_violation_summary.consistent_violations_percent_ty
     _item.mandatory_code          no
     _item_type.code               float
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/dihedralangle_restraints_analysis/dihedralangle_violations_summary/dihedralangle_violation_summary/@consistently_violated_percent_type'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/dihedralangle_violations_summary/dihedralangle_violation_summary/@consistently_violated_percent_type'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -69092,7 +69114,7 @@ save__pdbx_nmr_dihedral_angle_violation_model.PDB_model_num
     _pdbx_item_external_ref.dictionary    mmcif_pdbx.dic
     _pdbx_item_external_ref.version       5
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/dihedralangle_restraints_analysis/dihedralangle_violations_in_models/dihedralangle_violations_in_model/@model'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/dihedralangle_violations_in_models/dihedralangle_violations_in_model/@model'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -69110,7 +69132,7 @@ save__pdbx_nmr_dihedral_angle_violation_model.maximum_violation
     _item_range.maximum           .
     _item_range.minimum           0.0
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/dihedralangle_restraints_analysis/dihedralangle_violations_in_models/dihedralangle_violations_in_model/@max_violation'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/dihedralangle_violations_in_models/dihedralangle_violations_in_model/@max_violation'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -69128,7 +69150,7 @@ save__pdbx_nmr_dihedral_angle_violation_model.average_violation
     _item_range.maximum           .
     _item_range.minimum           0.0
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/dihedralangle_restraints_analysis/dihedralangle_violations_in_models/dihedralangle_violations_in_model/@mean_violation'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/dihedralangle_violations_in_models/dihedralangle_violations_in_model/@mean_violation'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -69146,7 +69168,7 @@ save__pdbx_nmr_dihedral_angle_violation_model.median_violation
     _item_range.maximum           .
     _item_range.minimum           0.0
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/dihedralangle_restraints_analysis/dihedralangle_violations_in_models/dihedralangle_violations_in_model/@median_violation'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/dihedralangle_violations_in_models/dihedralangle_violations_in_model/@median_violation'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -69164,7 +69186,7 @@ save__pdbx_nmr_dihedral_angle_violation_model.standard_deviation
     _item_range.maximum           .
     _item_range.minimum           0.0
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/dihedralangle_restraints_analysis/dihedralangle_violations_in_models/dihedralangle_violations_in_model/@standard_deviation'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/dihedralangle_violations_in_models/dihedralangle_violations_in_model/@standard_deviation'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -69182,7 +69204,7 @@ save__pdbx_nmr_dihedral_angle_violation_model.violations_count
     _item_range.maximum
     _item_range.minimum           .   0
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/dihedralangle_restraints_analysis/dihedralangle_violations_in_models/dihedralangle_violations_in_model/ang_rest_types[@ang_rest_type="Total"]/@violations_count'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/dihedralangle_violations_in_models/dihedralangle_violations_in_model/ang_rest_types[@ang_rest_type="Total"]/@violations_count'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -69201,7 +69223,7 @@ save__pdbx_nmr_dihedral_angle_violation_model.phi_violations_count
     _item_range.minimum           .   0
                                   0   0
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/dihedralangle_restraints_analysis/dihedralangle_violations_in_models/dihedralangle_violations_in_model/ang_rest_types[@ang_rest_type="PHI"]/@violations_count'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/dihedralangle_violations_in_models/dihedralangle_violations_in_model/ang_rest_types[@ang_rest_type="PHI"]/@violations_count'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -69238,7 +69260,7 @@ save__pdbx_nmr_dihedral_angle_violation_ensemble.fraction_count
     _item.mandatory_code          yes
     _item_type.code               int
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/dihedralangle_restraints_analysis/dihedralangle_violations_in_ensemble/dihedralangle_violation_in_ensemble/@fraction_of_ensemble_count'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/dihedralangle_violations_in_ensemble/dihedralangle_violation_in_ensemble/@fraction_of_ensemble_count'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -69253,7 +69275,7 @@ save__pdbx_nmr_dihedral_angle_violation_ensemble.fraction_percent
     _item.mandatory_code          yes
     _item_type.code               float
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/dihedralangle_restraints_analysis/dihedralangle_violations_in_ensemble/dihedralangle_violation_in_ensemble/@fraction_of_ensemble_percent'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/dihedralangle_violations_in_ensemble/dihedralangle_violation_in_ensemble/@fraction_of_ensemble_percent'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -69271,7 +69293,7 @@ save__pdbx_nmr_dihedral_angle_violation_ensemble.violations_count
     _item_range.maximum
     _item_range.minimum           .   0
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/dihedralangle_restraints_analysis/dihedralangle_violations_in_ensemble/dihedralangle_violation_in_ensemble/ang_rest_types[@ang_rest_type="Total"]/@violations_count'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/dihedralangle_violations_in_ensemble/dihedralangle_violation_in_ensemble/ang_rest_types[@ang_rest_type="Total"]/@violations_count'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -69290,7 +69312,7 @@ save__pdbx_nmr_dihedral_angle_violation_ensemble.phi_violations_count
     _item_range.minimum           .   0
                                   0   0
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/dihedralangle_restraints_analysis/dihedralangle_violations_in_ensemble/dihedralangle_violation_in_ensemble/ang_rest_types[@ang_rest_type="PHI"]/@violations_count'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/dihedralangle_violations_in_ensemble/dihedralangle_violation_in_ensemble/ang_rest_types[@ang_rest_type="PHI"]/@violations_count'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -69309,7 +69331,7 @@ save__pdbx_nmr_dihedral_angle_violation_ensemble.psi_violations_count
     _item_range.minimum           .   0
                                   0   0
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/dihedralangle_restraints_analysis/dihedralangle_violations_in_ensemble/dihedralangle_violation_in_ensemble/ang_rest_types[@ang_rest_type="PSI"]/@violations_count'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/dihedralangle_violations_in_ensemble/dihedralangle_violation_in_ensemble/ang_rest_types[@ang_rest_type="PSI"]/@violations_count'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -69328,7 +69350,7 @@ save__pdbx_nmr_dihedral_angle_violation_ensemble.omega_violations_count
     _item_range.minimum           .   0
                                   0   0
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/dihedralangle_restraints_analysis/dihedralangle_violations_in_ensemble/dihedralangle_violation_in_ensemble/ang_rest_types[@ang_rest_type="OMEGA"]/@violations_count'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/dihedralangle_violations_in_ensemble/dihedralangle_violation_in_ensemble/ang_rest_types[@ang_rest_type="OMEGA"]/@violations_count'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -69347,7 +69369,7 @@ save__pdbx_nmr_dihedral_angle_violation_ensemble.chi1_violations_count
     _item_range.minimum           .   0
                                   0   0
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/dihedralangle_restraints_analysis/dihedralangle_violations_in_ensemble/dihedralangle_violation_in_ensemble/ang_rest_types[@ang_rest_type="CHI1"]/@violations_count'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/dihedralangle_violations_in_ensemble/dihedralangle_violation_in_ensemble/ang_rest_types[@ang_rest_type="CHI1"]/@violations_count'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -69366,7 +69388,7 @@ save__pdbx_nmr_dihedral_angle_violation_ensemble.chi2_violations_count
     _item_range.minimum           .   0
                                   0   0
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/dihedralangle_restraints_analysis/dihedralangle_violations_in_ensemble/dihedralangle_violation_in_ensemble/ang_rest_types[@ang_rest_type="CHI2"]/@violations_count'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/dihedralangle_violations_in_ensemble/dihedralangle_violation_in_ensemble/ang_rest_types[@ang_rest_type="CHI2"]/@violations_count'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -69385,7 +69407,7 @@ save__pdbx_nmr_dihedral_angle_violation_ensemble.chi3_violations_count
     _item_range.minimum           .   0
                                   0   0
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/dihedralangle_restraints_analysis/dihedralangle_violations_in_ensemble/dihedralangle_violation_in_ensemble/ang_rest_types[@ang_rest_type="CHI3"]/@violations_count'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/dihedralangle_violations_in_ensemble/dihedralangle_violation_in_ensemble/ang_rest_types[@ang_rest_type="CHI3"]/@violations_count'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -69404,7 +69426,7 @@ save__pdbx_nmr_dihedral_angle_violation_ensemble.chi4_violations_count
     _item_range.minimum           .   0
                                   0   0
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/dihedralangle_restraints_analysis/dihedralangle_violations_in_ensemble/dihedralangle_violation_in_ensemble/ang_rest_types[@ang_rest_type="CHI4"]/@violations_count'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/dihedralangle_violations_in_ensemble/dihedralangle_violation_in_ensemble/ang_rest_types[@ang_rest_type="CHI4"]/@violations_count'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -69423,7 +69445,7 @@ save__pdbx_nmr_dihedral_angle_violation_ensemble.chi5_violations_count
     _item_range.minimum           .   0
                                   0   0
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/dihedralangle_restraints_analysis/dihedralangle_violations_in_ensemble/dihedralangle_violation_in_ensemble/ang_rest_types[@ang_rest_type="CHI5"]/@violations_count'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/dihedralangle_violations_in_ensemble/dihedralangle_violation_in_ensemble/ang_rest_types[@ang_rest_type="CHI5"]/@violations_count'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -69442,7 +69464,7 @@ save__pdbx_nmr_dihedral_angle_violation_ensemble.alpha_violations_count
     _item_range.minimum           .   0
                                   0   0
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/dihedralangle_restraints_analysis/dihedralangle_violations_in_ensemble/dihedralangle_violation_in_ensemble/ang_rest_types[@ang_rest_type="ALPHA"]/@violations_count'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/dihedralangle_violations_in_ensemble/dihedralangle_violation_in_ensemble/ang_rest_types[@ang_rest_type="ALPHA"]/@violations_count'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -69461,7 +69483,7 @@ save__pdbx_nmr_dihedral_angle_violation_ensemble.beta_violations_count
     _item_range.minimum           .   0
                                   0   0
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/dihedralangle_restraints_analysis/dihedralangle_violations_in_ensemble/dihedralangle_violation_in_ensemble/ang_rest_types[@ang_rest_type="BETA"]/@violations_count'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/dihedralangle_violations_in_ensemble/dihedralangle_violation_in_ensemble/ang_rest_types[@ang_rest_type="BETA"]/@violations_count'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -69480,7 +69502,7 @@ save__pdbx_nmr_dihedral_angle_violation_ensemble.gamma_violations_count
     _item_range.minimum           .   0
                                   0   0
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/dihedralangle_restraints_analysis/dihedralangle_violations_in_ensemble/dihedralangle_violation_in_ensemble/ang_rest_types[@ang_rest_type="GAMMA"]/@violations_count'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/dihedralangle_violations_in_ensemble/dihedralangle_violation_in_ensemble/ang_rest_types[@ang_rest_type="GAMMA"]/@violations_count'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -69499,7 +69521,7 @@ save__pdbx_nmr_dihedral_angle_violation_ensemble.delta_violations_count
     _item_range.minimum           .   0
                                   0   0
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/dihedralangle_restraints_analysis/dihedralangle_violations_in_ensemble/dihedralangle_violation_in_ensemble/ang_rest_types[@ang_rest_type="DELTA"]/@violations_count'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/dihedralangle_violations_in_ensemble/dihedralangle_violation_in_ensemble/ang_rest_types[@ang_rest_type="DELTA"]/@violations_count'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -69518,7 +69540,7 @@ save__pdbx_nmr_dihedral_angle_violation_ensemble.epsilon_violations_count
     _item_range.minimum           .   0
                                   0   0
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/dihedralangle_restraints_analysis/dihedralangle_violations_in_ensemble/dihedralangle_violation_in_ensemble/ang_rest_types[@ang_rest_type="EPSILON"]/@violations_count'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/dihedralangle_violations_in_ensemble/dihedralangle_violation_in_ensemble/ang_rest_types[@ang_rest_type="EPSILON"]/@violations_count'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -69537,7 +69559,7 @@ save__pdbx_nmr_dihedral_angle_violation_ensemble.zeta_violations_count
     _item_range.minimum           .   0
                                   0   0
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/dihedralangle_restraints_analysis/dihedralangle_violations_in_ensemble/dihedralangle_violation_in_ensemble/ang_rest_types[@ang_rest_type="ZETA"]/@violations_count'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/dihedralangle_violations_in_ensemble/dihedralangle_violation_in_ensemble/ang_rest_types[@ang_rest_type="ZETA"]/@violations_count'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -69556,7 +69578,7 @@ save__pdbx_nmr_dihedral_angle_violation_ensemble.nu0_violations_count
     _item_range.minimum           .   0
                                   0   0
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/dihedralangle_restraints_analysis/dihedralangle_violations_in_ensemble/dihedralangle_violation_in_ensemble/ang_rest_types[@ang_rest_type="NU0"]/@violations_count'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/dihedralangle_violations_in_ensemble/dihedralangle_violation_in_ensemble/ang_rest_types[@ang_rest_type="NU0"]/@violations_count'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -69575,7 +69597,7 @@ save__pdbx_nmr_dihedral_angle_violation_ensemble.nu1_violations_count
     _item_range.minimum           .   0
                                   0   0
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/dihedralangle_restraints_analysis/dihedralangle_violations_in_ensemble/dihedralangle_violation_in_ensemble/ang_rest_types[@ang_rest_type="NU1"]/@violations_count'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/dihedralangle_violations_in_ensemble/dihedralangle_violation_in_ensemble/ang_rest_types[@ang_rest_type="NU1"]/@violations_count'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -69594,7 +69616,7 @@ save__pdbx_nmr_dihedral_angle_violation_ensemble.nu2_violations_count
     _item_range.minimum           .   0
                                   0   0
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/dihedralangle_restraints_analysis/dihedralangle_violations_in_ensemble/dihedralangle_violation_in_ensemble/ang_rest_types[@ang_rest_type="NU2"]/@violations_count'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/dihedralangle_violations_in_ensemble/dihedralangle_violation_in_ensemble/ang_rest_types[@ang_rest_type="NU2"]/@violations_count'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -69613,7 +69635,7 @@ save__pdbx_nmr_dihedral_angle_violation_ensemble.nu3_violations_count
     _item_range.minimum           .   0
                                   0   0
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/dihedralangle_restraints_analysis/dihedralangle_violations_in_ensemble/dihedralangle_violation_in_ensemble/ang_rest_types[@ang_rest_type="NU3"]/@violations_count'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/dihedralangle_violations_in_ensemble/dihedralangle_violation_in_ensemble/ang_rest_types[@ang_rest_type="NU3"]/@violations_count'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -69632,7 +69654,7 @@ save__pdbx_nmr_dihedral_angle_violation_ensemble.nu4_violations_count
     _item_range.minimum           .   0
                                   0   0
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/dihedralangle_restraints_analysis/dihedralangle_violations_in_ensemble/dihedralangle_violation_in_ensemble/ang_rest_types[@ang_rest_type="NU4"]/@violations_count'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/dihedralangle_violations_in_ensemble/dihedralangle_violation_in_ensemble/ang_rest_types[@ang_rest_type="NU4"]/@violations_count'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -69651,7 +69673,7 @@ save__pdbx_nmr_dihedral_angle_violation_ensemble.chi21_violations_count
     _item_range.minimum           .   0
                                   0   0
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/dihedralangle_restraints_analysis/dihedralangle_violations_in_ensemble/dihedralangle_violation_in_ensemble/ang_rest_types[@ang_rest_type="CHI21"]/@violations_count'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/dihedralangle_violations_in_ensemble/dihedralangle_violation_in_ensemble/ang_rest_types[@ang_rest_type="CHI21"]/@violations_count'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -69670,7 +69692,7 @@ save__pdbx_nmr_dihedral_angle_violation_ensemble.chi22_violations_count
     _item_range.minimum           .   0
                                   0   0
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/dihedralangle_restraints_analysis/dihedralangle_violations_in_ensemble/dihedralangle_violation_in_ensemble/ang_rest_types[@ang_rest_type="CHI22"]/@violations_count'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/dihedralangle_violations_in_ensemble/dihedralangle_violation_in_ensemble/ang_rest_types[@ang_rest_type="CHI22"]/@violations_count'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -69689,7 +69711,7 @@ save__pdbx_nmr_dihedral_angle_violation_ensemble.chi31_violations_count
     _item_range.minimum           .   0
                                   0   0
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/dihedralangle_restraints_analysis/dihedralangle_violations_in_ensemble/dihedralangle_violation_in_ensemble/ang_rest_types[@ang_rest_type="CHI31"]/@violations_count'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/dihedralangle_violations_in_ensemble/dihedralangle_violation_in_ensemble/ang_rest_types[@ang_rest_type="CHI31"]/@violations_count'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -69708,7 +69730,7 @@ save__pdbx_nmr_dihedral_angle_violation_ensemble.chi32_violations_count
     _item_range.minimum           .   0
                                   0   0
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/dihedralangle_restraints_analysis/dihedralangle_violations_in_ensemble/dihedralangle_violation_in_ensemble/ang_rest_types[@ang_rest_type="CHI32"]/@violations_count'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/dihedralangle_violations_in_ensemble/dihedralangle_violation_in_ensemble/ang_rest_types[@ang_rest_type="CHI32"]/@violations_count'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -69727,7 +69749,7 @@ save__pdbx_nmr_dihedral_angle_violation_ensemble.chi42_violations_count
     _item_range.minimum           .   0
                                   0   0
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/dihedralangle_restraints_analysis/dihedralangle_violations_in_ensemble/dihedralangle_violation_in_ensemble/ang_rest_types[@ang_rest_type="CHI42"]/@violations_count'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/dihedralangle_violations_in_ensemble/dihedralangle_violation_in_ensemble/ang_rest_types[@ang_rest_type="CHI42"]/@violations_count'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -69748,14 +69770,25 @@ save_pdbx_nmr_dihedral_angle_violation_plural
 ;
     _category.id                  pdbx_nmr_dihedral_angle_violation_plural
     _category.mandatory_code      no
-    loop_
-    _category_key.name
-                                '_pdbx_nmr_dihedral_angle_violation_plural.list_id'
-                                '_pdbx_nmr_dihedral_angle_violation_plural.restraint_id'
+    _category_key.name          '_pdbx_nmr_dihedral_angle_violation_plural.ordinal'
     loop_
     _category_group.id           'inclusive_group'
                                  'nmr_group'
                                  'validate_vtf_group'
+save_
+
+save__pdbx_nmr_dihedral_angle_violation_plural.ordinal
+    _item_description.description
+;              The ordered number in the violated restraints.
+;
+    _item.name                  '_pdbx_nmr_dihedral_angle_violation_plural.ordinal'
+    _item.category_id             pdbx_nmr_dihedral_angle_violation_plural
+    _item.mandatory_code          yes
+    _item_type.code               int
+#
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/most_violated_dihedralangle_restraints/most_violated_dihedralangle_restraint'
+    _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
+    _pdbx_item_aliases.version    v005
 save_
 
 save__pdbx_nmr_dihedral_angle_violation_plural.list_id
@@ -69769,7 +69802,7 @@ save__pdbx_nmr_dihedral_angle_violation_plural.list_id
     _item_linked.parent_name    '_pdbx_nmr_restraint_list.id'
     _item_type.code               int
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/dihedralangle_restraints_analysis/most_violated_dihedralangle_restraints/most_violated_dihedralangle_restraint/@rlist_id'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/most_violated_dihedralangle_restraints/most_violated_dihedralangle_restraint/@rlist_id'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -69784,7 +69817,7 @@ save__pdbx_nmr_dihedral_angle_violation_plural.restraint_id
     _item.mandatory_code          yes
     _item_type.code               int
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/dihedralangle_restraints_analysis/most_violated_dihedralangle_restraints/most_violated_dihedralangle_restraint/@rest_id'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/most_violated_dihedralangle_restraints/most_violated_dihedralangle_restraint/@rest_id'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -69803,7 +69836,7 @@ save__pdbx_nmr_dihedral_angle_violation_plural.violation_models_count
     _item_range.minimum           .   2
                                   2   2
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/dihedralangle_restraints_analysis/most_violated_dihedralangle_restraints/most_violated_dihedralangle_restraint/@violated_models'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/most_violated_dihedralangle_restraints/most_violated_dihedralangle_restraint/@violated_models'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -69821,7 +69854,7 @@ save__pdbx_nmr_dihedral_angle_violation_plural.average_violation
     _item_range.maximum           .
     _item_range.minimum           0.0
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/dihedralangle_restraints_analysis/most_violated_dihedralangle_restraints/most_violated_dihedralangle_restraint/@mean_dihedralangle_violation'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/most_violated_dihedralangle_restraints/most_violated_dihedralangle_restraint/@mean_dihedralangle_violation'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -69839,7 +69872,7 @@ save__pdbx_nmr_dihedral_angle_violation_plural.median_violation
     _item_range.maximum           .
     _item_range.minimum           0.0
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/dihedralangle_restraints_analysis/most_violated_dihedralangle_restraints/most_violated_dihedralangle_restraint/@median_violation'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/most_violated_dihedralangle_restraints/most_violated_dihedralangle_restraint/@median_violation'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -69857,7 +69890,7 @@ save__pdbx_nmr_dihedral_angle_violation_plural.standard_deviation
     _item_range.maximum           .
     _item_range.minimum           0.0
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/dihedralangle_restraints_analysis/most_violated_dihedralangle_restraints/most_violated_dihedralangle_restraint/@standard_deviation'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/most_violated_dihedralangle_restraints/most_violated_dihedralangle_restraint/@standard_deviation'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -69879,7 +69912,7 @@ save__pdbx_nmr_dihedral_angle_violation_plural.entity_id_1
     _pdbx_item_external_ref.dictionary    mmcif_pdbx.dic
     _pdbx_item_external_ref.version       5
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/dihedralangle_restraints_analysis/most_violated_dihedralangle_restraints/most_violated_dihedralangle_restraint/@ent_1'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/most_violated_dihedralangle_restraints/most_violated_dihedralangle_restraint/@ent_1'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -69901,7 +69934,7 @@ save__pdbx_nmr_dihedral_angle_violation_plural.auth_asym_id_1
     _pdbx_item_external_ref.dictionary    mmcif_pdbx.dic
     _pdbx_item_external_ref.version       5
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/dihedralangle_restraints_analysis/most_violated_dihedralangle_restraints/most_violated_dihedralangle_restraint/@chain_1'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/most_violated_dihedralangle_restraints/most_violated_dihedralangle_restraint/@chain_1'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -69923,7 +69956,7 @@ save__pdbx_nmr_dihedral_angle_violation_plural.auth_atom_id_1
     _pdbx_item_external_ref.dictionary    mmcif_pdbx.dic
     _pdbx_item_external_ref.version       5
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/dihedralangle_restraints_analysis/most_violated_dihedralangle_restraints/most_violated_dihedralangle_restraint/@atom_1'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/most_violated_dihedralangle_restraints/most_violated_dihedralangle_restraint/@atom_1'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -69945,7 +69978,7 @@ save__pdbx_nmr_dihedral_angle_violation_plural.auth_comp_id_1
     _pdbx_item_external_ref.dictionary    mmcif_pdbx.dic
     _pdbx_item_external_ref.version       5
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/dihedralangle_restraints_analysis/most_violated_dihedralangle_restraints/most_violated_dihedralangle_restraint/@res_name_1'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/most_violated_dihedralangle_restraints/most_violated_dihedralangle_restraint/@res_name_1'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -69967,7 +70000,7 @@ save__pdbx_nmr_dihedral_angle_violation_plural.auth_seq_id_1
     _pdbx_item_external_ref.dictionary    mmcif_pdbx.dic
     _pdbx_item_external_ref.version       5
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/dihedralangle_restraints_analysis/most_violated_dihedralangle_restraints/most_violated_dihedralangle_restraint/@resnum_1'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/most_violated_dihedralangle_restraints/most_violated_dihedralangle_restraint/@resnum_1'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -69989,7 +70022,7 @@ save__pdbx_nmr_dihedral_angle_violation_plural.auth_atom_id_2
     _pdbx_item_external_ref.dictionary    mmcif_pdbx.dic
     _pdbx_item_external_ref.version       5
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/dihedralangle_restraints_analysis/most_violated_dihedralangle_restraints/most_violated_dihedralangle_restraint/@atom_2'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/most_violated_dihedralangle_restraints/most_violated_dihedralangle_restraint/@atom_2'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -70011,7 +70044,7 @@ save__pdbx_nmr_dihedral_angle_violation_plural.entity_id_2
     _pdbx_item_external_ref.dictionary    mmcif_pdbx.dic
     _pdbx_item_external_ref.version       5
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/dihedralangle_restraints_analysis/most_violated_dihedralangle_restraints/most_violated_dihedralangle_restraint/@ent_2'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/most_violated_dihedralangle_restraints/most_violated_dihedralangle_restraint/@ent_2'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -70033,7 +70066,7 @@ save__pdbx_nmr_dihedral_angle_violation_plural.auth_asym_id_2
     _pdbx_item_external_ref.dictionary    mmcif_pdbx.dic
     _pdbx_item_external_ref.version       5
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/dihedralangle_restraints_analysis/most_violated_dihedralangle_restraints/most_violated_dihedralangle_restraint/@chain_2'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/most_violated_dihedralangle_restraints/most_violated_dihedralangle_restraint/@chain_2'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
    _pdbx_item_aliases.version    v005
 save_
@@ -70055,7 +70088,7 @@ save__pdbx_nmr_dihedral_angle_violation_plural.auth_comp_id_2
     _pdbx_item_external_ref.dictionary    mmcif_pdbx.dic
     _pdbx_item_external_ref.version       5
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/dihedralangle_restraints_analysis/most_violated_dihedralangle_restraints/most_violated_dihedralangle_restraint/@resname_2'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/most_violated_dihedralangle_restraints/most_violated_dihedralangle_restraint/@resname_2'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -70077,7 +70110,7 @@ save__pdbx_nmr_dihedral_angle_violation_plural.auth_seq_id_2
     _pdbx_item_external_ref.dictionary    mmcif_pdbx.dic
     _pdbx_item_external_ref.version       5
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/dihedralangle_restraints_analysis/most_violated_dihedralangle_restraints/most_violated_dihedralangle_restraint/@resnum_2'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/most_violated_dihedralangle_restraints/most_violated_dihedralangle_restraint/@resnum_2'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -70099,7 +70132,7 @@ save__pdbx_nmr_dihedral_angle_violation_plural.auth_atom_id_3
     _pdbx_item_external_ref.dictionary    mmcif_pdbx.dic
     _pdbx_item_external_ref.version       5
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/dihedralangle_restraints_analysis/most_violated_dihedralangle_restraints/most_violated_dihedralangle_restraint/@atom_3'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/most_violated_dihedralangle_restraints/most_violated_dihedralangle_restraint/@atom_3'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -70121,7 +70154,7 @@ save__pdbx_nmr_dihedral_angle_violation_plural.entity_id_3
     _pdbx_item_external_ref.dictionary    mmcif_pdbx.dic
     _pdbx_item_external_ref.version       5
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/dihedralangle_restraints_analysis/most_violated_dihedralangle_restraints/most_violated_dihedralangle_restraint/@ent_3'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/most_violated_dihedralangle_restraints/most_violated_dihedralangle_restraint/@ent_3'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -70143,7 +70176,7 @@ save__pdbx_nmr_dihedral_angle_violation_plural.auth_asym_id_3
     _pdbx_item_external_ref.dictionary    mmcif_pdbx.dic
     _pdbx_item_external_ref.version       5
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/dihedralangle_restraints_analysis/most_violated_dihedralangle_restraints/most_violated_dihedralangle_restraint/@chain_3'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/most_violated_dihedralangle_restraints/most_violated_dihedralangle_restraint/@chain_3'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
    _pdbx_item_aliases.version    v005
 save_
@@ -70165,7 +70198,7 @@ save__pdbx_nmr_dihedral_angle_violation_plural.auth_comp_id_3
     _pdbx_item_external_ref.dictionary    mmcif_pdbx.dic
     _pdbx_item_external_ref.version       5
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/dihedralangle_restraints_analysis/most_violated_dihedralangle_restraints/most_violated_dihedralangle_restraint/@resname_3'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/most_violated_dihedralangle_restraints/most_violated_dihedralangle_restraint/@resname_3'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -70187,7 +70220,7 @@ save__pdbx_nmr_dihedral_angle_violation_plural.auth_seq_id_3
     _pdbx_item_external_ref.dictionary    mmcif_pdbx.dic
     _pdbx_item_external_ref.version       5
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/dihedralangle_restraints_analysis/most_violated_dihedralangle_restraints/most_violated_dihedralangle_restraint/@resnum_3'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/most_violated_dihedralangle_restraints/most_violated_dihedralangle_restraint/@resnum_3'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -70209,7 +70242,7 @@ save__pdbx_nmr_dihedral_angle_violation_plural.auth_atom_id_4
     _pdbx_item_external_ref.dictionary    mmcif_pdbx.dic
     _pdbx_item_external_ref.version       5
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/dihedralangle_restraints_analysis/most_violated_dihedralangle_restraints/most_violated_dihedralangle_restraint/@atom_4'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/most_violated_dihedralangle_restraints/most_violated_dihedralangle_restraint/@atom_4'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -70231,7 +70264,7 @@ save__pdbx_nmr_dihedral_angle_violation_plural.entity_id_4
     _pdbx_item_external_ref.dictionary    mmcif_pdbx.dic
     _pdbx_item_external_ref.version       5
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/dihedralangle_restraints_analysis/most_violated_dihedralangle_restraints/most_violated_dihedralangle_restraint/@ent_4'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/most_violated_dihedralangle_restraints/most_violated_dihedralangle_restraint/@ent_4'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -70253,7 +70286,7 @@ save__pdbx_nmr_dihedral_angle_violation_plural.auth_asym_id_4
     _pdbx_item_external_ref.dictionary    mmcif_pdbx.dic
     _pdbx_item_external_ref.version       5
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/dihedralangle_restraints_analysis/most_violated_dihedralangle_restraints/most_violated_dihedralangle_restraint/@chain_4'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/most_violated_dihedralangle_restraints/most_violated_dihedralangle_restraint/@chain_4'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
    _pdbx_item_aliases.version    v005
 save_
@@ -70275,7 +70308,7 @@ save__pdbx_nmr_dihedral_angle_violation_plural.auth_comp_id_4
     _pdbx_item_external_ref.dictionary    mmcif_pdbx.dic
     _pdbx_item_external_ref.version       5
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/dihedralangle_restraints_analysis/most_violated_dihedralangle_restraints/most_violated_dihedralangle_restraint/@resname_4'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/most_violated_dihedralangle_restraints/most_violated_dihedralangle_restraint/@resname_4'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -70297,7 +70330,7 @@ save__pdbx_nmr_dihedral_angle_violation_plural.auth_seq_id_4
     _pdbx_item_external_ref.dictionary    mmcif_pdbx.dic
     _pdbx_item_external_ref.version       5
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/dihedralangle_restraints_analysis/most_violated_dihedralangle_restraints/most_violated_dihedralangle_restraint/@resnum_4'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/most_violated_dihedralangle_restraints/most_violated_dihedralangle_restraint/@resnum_4'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -70319,7 +70352,7 @@ save__pdbx_nmr_dihedral_angle_violation_plural.PDB_ins_code_1
     _pdbx_item_external_ref.dictionary    mmcif_pdbx.dic
     _pdbx_item_external_ref.version       5
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/dihedralangle_restraints_analysis/most_violated_dihedralangle_restraints/most_violated_dihedralangle_restraint/@icode_1'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/most_violated_dihedralangle_restraints/most_violated_dihedralangle_restraint/@icode_1'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -70341,7 +70374,7 @@ save__pdbx_nmr_dihedral_angle_violation_plural.PDB_ins_code_2
     _pdbx_item_external_ref.dictionary    mmcif_pdbx.dic
     _pdbx_item_external_ref.version       5
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/dihedralangle_restraints_analysis/most_violated_dihedralangle_restraints/most_violated_dihedralangle_restraint/@icode_2'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/most_violated_dihedralangle_restraints/most_violated_dihedralangle_restraint/@icode_2'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -70363,7 +70396,7 @@ save__pdbx_nmr_dihedral_angle_violation_plural.PDB_ins_code_3
     _pdbx_item_external_ref.dictionary    mmcif_pdbx.dic
     _pdbx_item_external_ref.version       5
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/dihedralangle_restraints_analysis/most_violated_dihedralangle_restraints/most_violated_dihedralangle_restraint/@icode_3'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/most_violated_dihedralangle_restraints/most_violated_dihedralangle_restraint/@icode_3'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -70385,7 +70418,7 @@ save__pdbx_nmr_dihedral_angle_violation_plural.PDB_ins_code_4
     _pdbx_item_external_ref.dictionary    mmcif_pdbx.dic
     _pdbx_item_external_ref.version       5
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/dihedralangle_restraints_analysis/most_violated_dihedralangle_restraints/most_violated_dihedralangle_restraint/@icode_4'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/most_violated_dihedralangle_restraints/most_violated_dihedralangle_restraint/@icode_4'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -70407,7 +70440,7 @@ save__pdbx_nmr_dihedral_angle_violation_plural.label_alt_id_1
     _pdbx_item_external_ref.dictionary    mmcif_pdbx.dic
     _pdbx_item_external_ref.version       5
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/dihedralangle_restraints_analysis/most_violated_dihedralangle_restraints/most_violated_dihedralangle_restraint/@altcode_1'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/most_violated_dihedralangle_restraints/most_violated_dihedralangle_restraint/@altcode_1'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -70429,7 +70462,7 @@ save__pdbx_nmr_dihedral_angle_violation_plural.label_alt_id_2
     _pdbx_item_external_ref.dictionary    mmcif_pdbx.dic
     _pdbx_item_external_ref.version       5
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/dihedralangle_restraints_analysis/most_violated_dihedralangle_restraints/most_violated_dihedralangle_restraint/@altcode_2'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/most_violated_dihedralangle_restraints/most_violated_dihedralangle_restraint/@altcode_2'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -70451,7 +70484,7 @@ save__pdbx_nmr_dihedral_angle_violation_plural.label_alt_id_3
     _pdbx_item_external_ref.dictionary    mmcif_pdbx.dic
     _pdbx_item_external_ref.version       5
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/dihedralangle_restraints_analysis/most_violated_dihedralangle_restraints/most_violated_dihedralangle_restraint/@altcode_3'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/most_violated_dihedralangle_restraints/most_violated_dihedralangle_restraint/@altcode_3'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -70473,7 +70506,7 @@ save__pdbx_nmr_dihedral_angle_violation_plural.label_alt_id_4
     _pdbx_item_external_ref.dictionary    mmcif_pdbx.dic
     _pdbx_item_external_ref.version       5
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/dihedralangle_restraints_analysis/most_violated_dihedralangle_restraints/most_violated_dihedralangle_restraint/@altcode_4'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/most_violated_dihedralangle_restraints/most_violated_dihedralangle_restraint/@altcode_4'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -70489,18 +70522,29 @@ save_pdbx_nmr_dihedral_angle_violation
 
                Ref: User guide to the wwPDB NMR validation reports
                 10. Dihedral-angle violation analysis
-                 10.5 All dihedral-angle violations
+                 10.5 All violated dihedral-angle restraints
 ;
     _category.id                  pdbx_nmr_dihedral_angle_violation
     _category.mandatory_code      no
-    loop_
-    _category_key.name
-                                '_pdbx_nmr_dihedral_angle_violation.list_id'
-                                '_pdbx_nmr_dihedral_angle_violation.restraint_id'
+    _category_key.name          '_pdbx_nmr_dihedral_angle_violation.ordinal'
     loop_
     _category_group.id           'inclusive_group'
                                  'nmr_group'
                                  'validate_vtf_group'
+save_
+
+save__pdbx_nmr_dihedral_angle_violation.ordinal
+    _item_description.description
+;              The ordered number in the violated restraints.
+;   
+    _item.name                  '_pdbx_nmr_dihedral_angle_violation.ordinal'
+    _item.category_id             pdbx_nmr_dihedral_angle_violation
+    _item.mandatory_code          yes
+    _item_type.code               int
+#
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/violated_dihedralangle_restraints/violated_dihedralangle_restraint'
+    _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
+    _pdbx_item_aliases.version    v005
 save_
 
 save__pdbx_nmr_dihedral_angle_violation.list_id
@@ -70514,7 +70558,7 @@ save__pdbx_nmr_dihedral_angle_violation.list_id
     _item_linked.parent_name    '_pdbx_nmr_restraint_list.id'
     _item_type.code               int
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/dihedralangle_restraints_analysis/violated_dihedralangle_restraints/violated_dihedralangle_restraint/@rlist_id'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/violated_dihedralangle_restraints/violated_dihedralangle_restraint/@rlist_id'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -70529,7 +70573,7 @@ save__pdbx_nmr_dihedral_angle_violation.restraint_id
     _item.mandatory_code          yes
     _item_type.code               int
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/dihedralangle_restraints_analysis/violated_dihedralangle_restraints/violated_dihedralangle_restraint/@rest_id'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/violated_dihedralangle_restraints/violated_dihedralangle_restraint/@rest_id'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -70547,7 +70591,7 @@ save__pdbx_nmr_dihedral_angle_violation.PDB_model_num
     _pdbx_item_external_ref.dictionary    mmcif_pdbx.dic
     _pdbx_item_external_ref.version       5
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/dihedralangle_restraints_analysis/violated_dihedralangle_restraints/violated_dihedralangle_restraint/@model'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/violated_dihedralangle_restraints/violated_dihedralangle_restraint/@model'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -70565,7 +70609,7 @@ save__pdbx_nmr_dihedral_angle_violation.violation
     _item_range.maximum           .
     _item_range.minimum           0.0
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/dihedralangle_restraints_analysis/violated_dihedralangle_restraints/violated_dihedralangle_restraint/@violation'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/violated_dihedralangle_restraints/violated_dihedralangle_restraint/@violation'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -70587,7 +70631,7 @@ save__pdbx_nmr_dihedral_angle_violation.entity_id_1
     _pdbx_item_external_ref.dictionary    mmcif_pdbx.dic
     _pdbx_item_external_ref.version       5
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/dihedralangle_restraints_analysis/violated_dihedralangle_restraints/violated_dihedralangle_restraint/@ent_1'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/violated_dihedralangle_restraints/violated_dihedralangle_restraint/@ent_1'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -70609,7 +70653,7 @@ save__pdbx_nmr_dihedral_angle_violation.auth_asym_id_1
     _pdbx_item_external_ref.dictionary    mmcif_pdbx.dic
     _pdbx_item_external_ref.version       5
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/dihedralangle_restraints_analysis/violated_dihedralangle_restraints/violated_dihedralangle_restraint/@chain_1'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/violated_dihedralangle_restraints/violated_dihedralangle_restraint/@chain_1'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -70631,7 +70675,7 @@ save__pdbx_nmr_dihedral_angle_violation.auth_atom_id_1
     _pdbx_item_external_ref.dictionary    mmcif_pdbx.dic
     _pdbx_item_external_ref.version       5
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/dihedralangle_restraints_analysis/violated_dihedralangle_restraints/violated_dihedralangle_restraint/@atom_1'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/violated_dihedralangle_restraints/violated_dihedralangle_restraint/@atom_1'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -70653,7 +70697,7 @@ save__pdbx_nmr_dihedral_angle_violation.auth_comp_id_1
     _pdbx_item_external_ref.dictionary    mmcif_pdbx.dic
     _pdbx_item_external_ref.version       5
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/dihedralangle_restraints_analysis/violated_dihedralangle_restraints/violated_dihedralangle_restraint/@res_name_1'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/violated_dihedralangle_restraints/violated_dihedralangle_restraint/@res_name_1'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -70675,7 +70719,7 @@ save__pdbx_nmr_dihedral_angle_violation.auth_seq_id_1
     _pdbx_item_external_ref.dictionary    mmcif_pdbx.dic
     _pdbx_item_external_ref.version       5
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/dihedralangle_restraints_analysis/violated_dihedralangle_restraints/violated_dihedralangle_restraint/@resnum_1'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/violated_dihedralangle_restraints/violated_dihedralangle_restraint/@resnum_1'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -70697,7 +70741,7 @@ save__pdbx_nmr_dihedral_angle_violation.auth_atom_id_2
     _pdbx_item_external_ref.dictionary    mmcif_pdbx.dic
     _pdbx_item_external_ref.version       5
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/dihedralangle_restraints_analysis/violated_dihedralangle_restraints/violated_dihedralangle_restraint/@atom_2'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/violated_dihedralangle_restraints/violated_dihedralangle_restraint/@atom_2'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -70719,7 +70763,7 @@ save__pdbx_nmr_dihedral_angle_violation.entity_id_2
     _pdbx_item_external_ref.dictionary    mmcif_pdbx.dic
     _pdbx_item_external_ref.version       5
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/dihedralangle_restraints_analysis/violated_dihedralangle_restraints/violated_dihedralangle_restraint/@ent_2'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/violated_dihedralangle_restraints/violated_dihedralangle_restraint/@ent_2'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -70741,7 +70785,7 @@ save__pdbx_nmr_dihedral_angle_violation.auth_asym_id_2
     _pdbx_item_external_ref.dictionary    mmcif_pdbx.dic
     _pdbx_item_external_ref.version       5
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/dihedralangle_restraints_analysis/violated_dihedralangle_restraints/violated_dihedralangle_restraint/@chain_2'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/violated_dihedralangle_restraints/violated_dihedralangle_restraint/@chain_2'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
    _pdbx_item_aliases.version    v005
 save_
@@ -70763,7 +70807,7 @@ save__pdbx_nmr_dihedral_angle_violation.auth_comp_id_2
     _pdbx_item_external_ref.dictionary    mmcif_pdbx.dic
     _pdbx_item_external_ref.version       5
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/dihedralangle_restraints_analysis/violated_dihedralangle_restraints/violated_dihedralangle_restraint/@resname_2'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/violated_dihedralangle_restraints/violated_dihedralangle_restraint/@resname_2'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -70785,7 +70829,7 @@ save__pdbx_nmr_dihedral_angle_violation.auth_seq_id_2
     _pdbx_item_external_ref.dictionary    mmcif_pdbx.dic
     _pdbx_item_external_ref.version       5
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/dihedralangle_restraints_analysis/violated_dihedralangle_restraints/violated_dihedralangle_restraint/@resnum_2'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/violated_dihedralangle_restraints/violated_dihedralangle_restraint/@resnum_2'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -70807,7 +70851,7 @@ save__pdbx_nmr_dihedral_angle_violation.auth_atom_id_3
     _pdbx_item_external_ref.dictionary    mmcif_pdbx.dic
     _pdbx_item_external_ref.version       5
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/dihedralangle_restraints_analysis/violated_dihedralangle_restraints/violated_dihedralangle_restraint/@atom_3'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/violated_dihedralangle_restraints/violated_dihedralangle_restraint/@atom_3'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -70829,7 +70873,7 @@ save__pdbx_nmr_dihedral_angle_violation.entity_id_3
     _pdbx_item_external_ref.dictionary    mmcif_pdbx.dic
     _pdbx_item_external_ref.version       5
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/dihedralangle_restraints_analysis/violated_dihedralangle_restraints/violated_dihedralangle_restraint/@ent_3'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/violated_dihedralangle_restraints/violated_dihedralangle_restraint/@ent_3'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -70851,7 +70895,7 @@ save__pdbx_nmr_dihedral_angle_violation.auth_asym_id_3
     _pdbx_item_external_ref.dictionary    mmcif_pdbx.dic
     _pdbx_item_external_ref.version       5
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/dihedralangle_restraints_analysis/violated_dihedralangle_restraints/violated_dihedralangle_restraint/@chain_3'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/violated_dihedralangle_restraints/violated_dihedralangle_restraint/@chain_3'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
    _pdbx_item_aliases.version    v005
 save_
@@ -70873,7 +70917,7 @@ save__pdbx_nmr_dihedral_angle_violation.auth_comp_id_3
     _pdbx_item_external_ref.dictionary    mmcif_pdbx.dic
     _pdbx_item_external_ref.version       5
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/dihedralangle_restraints_analysis/violated_dihedralangle_restraints/violated_dihedralangle_restraint/@resname_3'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/violated_dihedralangle_restraints/violated_dihedralangle_restraint/@resname_3'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -70895,7 +70939,7 @@ save__pdbx_nmr_dihedral_angle_violation.auth_seq_id_3
     _pdbx_item_external_ref.dictionary    mmcif_pdbx.dic
     _pdbx_item_external_ref.version       5
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/dihedralangle_restraints_analysis/violated_dihedralangle_restraints/violated_dihedralangle_restraint/@resnum_3'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/violated_dihedralangle_restraints/violated_dihedralangle_restraint/@resnum_3'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -70917,7 +70961,7 @@ save__pdbx_nmr_dihedral_angle_violation.auth_atom_id_4
     _pdbx_item_external_ref.dictionary    mmcif_pdbx.dic
     _pdbx_item_external_ref.version       5
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/dihedralangle_restraints_analysis/violated_dihedralangle_restraints/violated_dihedralangle_restraint/@atom_4'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/violated_dihedralangle_restraints/violated_dihedralangle_restraint/@atom_4'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -70939,7 +70983,7 @@ save__pdbx_nmr_dihedral_angle_violation.entity_id_4
     _pdbx_item_external_ref.dictionary    mmcif_pdbx.dic
     _pdbx_item_external_ref.version       5
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/dihedralangle_restraints_analysis/violated_dihedralangle_restraints/violated_dihedralangle_restraint/@ent_4'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/violated_dihedralangle_restraints/violated_dihedralangle_restraint/@ent_4'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -70961,7 +71005,7 @@ save__pdbx_nmr_dihedral_angle_violation.auth_asym_id_4
     _pdbx_item_external_ref.dictionary    mmcif_pdbx.dic
     _pdbx_item_external_ref.version       5
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/dihedralangle_restraints_analysis/violated_dihedralangle_restraints/violated_dihedralangle_restraint/@chain_4'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/violated_dihedralangle_restraints/violated_dihedralangle_restraint/@chain_4'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
    _pdbx_item_aliases.version    v005
 save_
@@ -70983,7 +71027,7 @@ save__pdbx_nmr_dihedral_angle_violation.auth_comp_id_4
     _pdbx_item_external_ref.dictionary    mmcif_pdbx.dic
     _pdbx_item_external_ref.version       5
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/dihedralangle_restraints_analysis/violated_dihedralangle_restraints/violated_dihedralangle_restraint/@resname_4'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/violated_dihedralangle_restraints/violated_dihedralangle_restraint/@resname_4'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -71005,7 +71049,7 @@ save__pdbx_nmr_dihedral_angle_violation.auth_seq_id_4
     _pdbx_item_external_ref.dictionary    mmcif_pdbx.dic
     _pdbx_item_external_ref.version       5
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/dihedralangle_restraints_analysis/violated_dihedralangle_restraints/violated_dihedralangle_restraint/@resnum_4'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/violated_dihedralangle_restraints/violated_dihedralangle_restraint/@resnum_4'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -71027,7 +71071,7 @@ save__pdbx_nmr_dihedral_angle_violation.PDB_ins_code_1
     _pdbx_item_external_ref.dictionary    mmcif_pdbx.dic
     _pdbx_item_external_ref.version       5
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/dihedralangle_restraints_analysis/violated_dihedralangle_restraints/violated_dihedralangle_restraint/@icode_1'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/violated_dihedralangle_restraints/violated_dihedralangle_restraint/@icode_1'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -71049,7 +71093,7 @@ save__pdbx_nmr_dihedral_angle_violation.PDB_ins_code_2
     _pdbx_item_external_ref.dictionary    mmcif_pdbx.dic
     _pdbx_item_external_ref.version       5
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/dihedralangle_restraints_analysis/violated_dihedralangle_restraints/violated_dihedralangle_restraint/@icode_2'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/violated_dihedralangle_restraints/violated_dihedralangle_restraint/@icode_2'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -71071,7 +71115,7 @@ save__pdbx_nmr_dihedral_angle_violation.PDB_ins_code_3
     _pdbx_item_external_ref.dictionary    mmcif_pdbx.dic
     _pdbx_item_external_ref.version       5
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/dihedralangle_restraints_analysis/violated_dihedralangle_restraints/violated_dihedralangle_restraint/@icode_3'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/violated_dihedralangle_restraints/violated_dihedralangle_restraint/@icode_3'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -71093,7 +71137,7 @@ save__pdbx_nmr_dihedral_angle_violation.PDB_ins_code_4
     _pdbx_item_external_ref.dictionary    mmcif_pdbx.dic
     _pdbx_item_external_ref.version       5
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/dihedralangle_restraints_analysis/violated_dihedralangle_restraints/violated_dihedralangle_restraint/@icode_4'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/violated_dihedralangle_restraints/violated_dihedralangle_restraint/@icode_4'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -71115,7 +71159,7 @@ save__pdbx_nmr_dihedral_angle_violation.label_alt_id_1
     _pdbx_item_external_ref.dictionary    mmcif_pdbx.dic
     _pdbx_item_external_ref.version       5
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/dihedralangle_restraints_analysis/violated_dihedralangle_restraints/violated_dihedralangle_restraint/@altcode_1'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/violated_dihedralangle_restraints/violated_dihedralangle_restraint/@altcode_1'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -71137,7 +71181,7 @@ save__pdbx_nmr_dihedral_angle_violation.label_alt_id_2
     _pdbx_item_external_ref.dictionary    mmcif_pdbx.dic
     _pdbx_item_external_ref.version       5
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/dihedralangle_restraints_analysis/violated_dihedralangle_restraints/violated_dihedralangle_restraint/@altcode_2'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/violated_dihedralangle_restraints/violated_dihedralangle_restraint/@altcode_2'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -71159,7 +71203,7 @@ save__pdbx_nmr_dihedral_angle_violation.label_alt_id_3
     _pdbx_item_external_ref.dictionary    mmcif_pdbx.dic
     _pdbx_item_external_ref.version       5
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/dihedralangle_restraints_analysis/violated_dihedralangle_restraints/violated_dihedralangle_restraint/@altcode_3'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/violated_dihedralangle_restraints/violated_dihedralangle_restraint/@altcode_3'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_
@@ -71181,7 +71225,7 @@ save__pdbx_nmr_dihedral_angle_violation.label_alt_id_4
     _pdbx_item_external_ref.dictionary    mmcif_pdbx.dic
     _pdbx_item_external_ref.version       5
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/NMR_restraints_analysis/dihedralangle_restraints_analysis/violated_dihedralangle_restraints/violated_dihedralangle_restraint/@altcode_4'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/violated_dihedralangle_restraints/violated_dihedralangle_restraint/@altcode_4'
     _pdbx_item_aliases.schema     wwpdb_validation_v005.xsd
     _pdbx_item_aliases.version    v005
 save_

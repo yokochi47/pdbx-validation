@@ -21,7 +21,7 @@
 --  map xsd date type to: sql date type
 --
 -- Statistics of schema:
---  Generated 278 tables (3561 fields), 0 views (0 fields), 0 attr groups, 0 model groups in total
+--  Generated 278 tables (3565 fields), 0 views (0 fields), 0 attr groups, 0 model groups in total
 --   Unnecessary tables by inlining simple content as a primitive data type:
 --    schema location: pdbx-validation-v3.xsd
 --      angle_theta, "Cartn_y", distance_rms_dev, improper_torsion_angle_rms_dev, nominal_defocus_max, "Luzzati_d_res_low_obs", "B_iso", "L33", improper_torsion_angle, phase_meas, omega, scan_rate, "F_calc_au", rise_per_n_subunits, "T12_esd", "Cartn_x", neighbor_ligand_distance, concentration_range, "aniso_B13", "L33_esd", "S32_esd", "S13_esd", covalent_bond_rms_dev, tau0, nu4, nu3, distance_rms_dev_error, nu2, "A_calc_au", nu1, prot_cis, nu0, "L11", "L23", "S31", "aniso_B12", current, "B_iso_min", dihedral_angles_rms_dev, "Luzzati_sigma_a_free", "P", "Cartn_z", phi, angle_target_value, diff_density_min, "F_squared_calc", dist, "L22", "aniso_B23", "F_meas", "aniso_B11", energyfilter_upper, "B_iso_Wilson_estimate", improper_torsion_angle_rms_dev_error, tau3, tau4, angle_deviation, tau1, tau2, power, taum, "Luzzati_sigma_a_obs", voltage, "S21", "S33", "L22_esd", "Cartn_x_esd", "B_iso_max", "sigmaI", "S22_esd", "T22_esd", min_mean_cross_sectional_radii_gyration_esd, angle_phi, "Cartn_y_esd", diff_density_min_esd, resolution, "Luzzati_d_res_low_free", value, "B_iso_esd", "S32", pdbx_phase_calc_with_solvent, ambient_temp_esd, maximum_distance_constraint_violation, "L12", "L13", pdbx_collection_time_total, "F_meas_sigma", "F_squared_meas", temp, gamma, rmsd, "F_calc", "A_meas_au", "pdbx_res_netI_over_sigmaI_2", calibrated_defocus_min, "L11_esd", "S33_esd", origin_x, origin_y, origin_z, "S11", "S23", ambient_pressure_esd, "T11_esd", psi, beta, angle_kappa, "L12_esd", temperature, "S23_esd", "B_calc_au", "S22", neighbor_macromolecule_distance, chi4, chi3, chi2, chi1, clash_magnitude, "F_squared_sigma", maximum_upper_distance_constraint_violation, diff_density_rms_esd, chi5, tilt_angle_min, angle_omega, max_mean_cross_sectional_radii_gyration, distance_rms_dev_medoid, "T22", "S13", chamber_temperature, value_esd, "S31_esd", pdbx_phase_calc_part_solvent, min_mean_cross_sectional_radii_gyration, average_torsion_angle_constraint_violation, delta, diff_density_rms, recording_temperature_minimum, atom_deviation, "S12", "T33", dihedral_angle_target_value, maximum_lower_distance_constraint_violation, "B_iso_mean", mean_guiner_radius_esd, peptide_planarity_rms_dev_error, "I", upper_limit, "T12", rotation_per_n_subunits, diff_density_max, energyfilter_lower, epsilon, "S12_esd", sampling_size, mean_guiner_radius, "Cartn_z_esd", "T11", "B_meas_au", "T23", "L13_esd", "T13_esd", bond_deviation, max_mean_cross_sectional_radii_gyration_esd, zeta, "L23_esd", "aniso_B22", "Luzzati_coordinate_error_obs", "pdbx_F_calc_with_solvent", phase_calc, "pdbx_F_calc_part_solvent", pdbx_solvent_vdw_probe_radii, average_distance_constraint_violation, "T23_esd", dihedral_angle_value, "T13", "A_meas", "F_meas_sigma_au", recording_temperature_maximum, maximum_torsion_angle_constraint_violation, "aniso_B33", "S21_esd", scan_time_backgd, "Luzzati_coordinate_error_free", lower_limit, peptide_planarity_rms_dev, "T33_esd", "pdbx_res_netI_over_av_sigmaI_2", alpha, "S11_esd", dihedral_angles_rms_dev_error, angle_chi, angle_value, diff_density_max_esd, pdbx_solvent_ion_probe_radii, "B_calc", pdbx_solvent_shrinkage_radii, "B_meas", covalent_bond_rms_dev_error, bond_angle_rms_dev_error, detector_distance, pdbx_dist_value, residual_tilt, "F_meas_au", tilt_angle_max, nominal_defocus_min, bond_angle_rms_dev, angle_psi, "A_calc"
@@ -36,7 +36,7 @@
 --   User keys:
 --    230 document keys, 0 serial keys, 0 xpath keys
 --   Contents:
---    480 attributes (43 in-place document keys), 2851 elements (5 in-place document keys), 0 simple contents (0 in-place document keys, 0 as attribute, 0 as conditional attribute)
+--    476 attributes (43 in-place document keys), 2859 elements (5 in-place document keys), 0 simple contents (0 in-place document keys, 0 as attribute, 0 as conditional attribute)
 --   Wild cards:
 --    0 any elements, 0 any attributes
 --   Constraints:
@@ -4171,7 +4171,7 @@ CREATE TABLE pdbx_nmr_details (
 
 --
 -- (quoted from pdbx_nmr_dihedral_angle_violationType)
--- Data items in the category record all dihedral angle restraint violations of the ensemble. Ref: User guide to the wwPDB NMR validation reports 10. Dihedral-angle violation analysis 10.5 All dihedral-angle violations
+-- Data items in the category record all dihedral angle restraint violations of the ensemble. Ref: User guide to the wwPDB NMR validation reports 10. Dihedral-angle violation analysis 10.5 All violated dihedral-angle restraints
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v3.xsd (PDBxv), schema location: pdbx-validation-v3.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
@@ -4207,12 +4207,12 @@ CREATE TABLE pdbx_nmr_dihedral_angle_violation (
 	label_alt_id_2 TEXT ,
 	label_alt_id_3 TEXT ,
 	label_alt_id_4 TEXT ,
+	list_id INTEGER ,
+	restraint_id INTEGER ,
 -- xsd:restriction/xsd:minExclusive="0.0"
 	violation DECIMAL CHECK ( violation > 0.0 ) ,
 -- ATTRIBUTE
-	list_id INTEGER NOT NULL ,
--- ATTRIBUTE
-	restraint_id INTEGER NOT NULL
+	ordinal INTEGER NOT NULL
 );
 
 --
@@ -4343,16 +4343,16 @@ CREATE TABLE pdbx_nmr_dihedral_angle_violation_plural (
 	label_alt_id_2 TEXT ,
 	label_alt_id_3 TEXT ,
 	label_alt_id_4 TEXT ,
+	list_id INTEGER ,
 -- xsd:restriction/xsd:minExclusive="0.0"
 	median_violation DECIMAL CHECK ( median_violation > 0.0 ) ,
+	restraint_id INTEGER ,
 -- xsd:restriction/xsd:minExclusive="0.0"
 	standard_deviation DECIMAL CHECK ( standard_deviation > 0.0 ) ,
 -- xsd:restriction/xsd:minInclusive="2"
 	violation_models_count INTEGER CHECK ( violation_models_count >= 2 ) ,
 -- ATTRIBUTE
-	list_id INTEGER NOT NULL ,
--- ATTRIBUTE
-	restraint_id INTEGER NOT NULL
+	ordinal INTEGER NOT NULL
 );
 
 --
@@ -4383,7 +4383,7 @@ CREATE TABLE pdbx_nmr_dihedral_angle_violation_summary (
 
 --
 -- (quoted from pdbx_nmr_distance_violationType)
--- Data items in the category record all distance restraint violations of the ensemble. Ref: User guide to the wwPDB NMR validation reports 9. Distance violation analysis 9.5 All distance violations
+-- Data items in the category record all distance restraint violations of the ensemble. Ref: User guide to the wwPDB NMR validation reports 9. Distance violation analysis 9.5 All violated distance restraints
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v3.xsd (PDBxv), schema location: pdbx-validation-v3.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
@@ -4405,12 +4405,12 @@ CREATE TABLE pdbx_nmr_distance_violation (
 	entity_id_2 TEXT ,
 	label_alt_id_1 TEXT ,
 	label_alt_id_2 TEXT ,
+	list_id INTEGER ,
+	restraint_id INTEGER ,
 -- xsd:restriction/xsd:minExclusive="0.0"
 	violation DECIMAL CHECK ( violation > 0.0 ) ,
 -- ATTRIBUTE
-	list_id INTEGER NOT NULL ,
--- ATTRIBUTE
-	restraint_id INTEGER NOT NULL
+	ordinal INTEGER NOT NULL
 );
 
 --
@@ -4497,16 +4497,16 @@ CREATE TABLE pdbx_nmr_distance_violation_plural (
 	entity_id_2 TEXT ,
 	label_alt_id_1 TEXT ,
 	label_alt_id_2 TEXT ,
+	list_id INTEGER ,
 -- xsd:restriction/xsd:minExclusive="0.0"
 	median_violation DECIMAL CHECK ( median_violation > 0.0 ) ,
+	restraint_id INTEGER ,
 -- xsd:restriction/xsd:minExclusive="0.0"
 	standard_deviation DECIMAL CHECK ( standard_deviation > 0.0 ) ,
 -- xsd:restriction/xsd:minInclusive="2"
 	violation_models_count INTEGER CHECK ( violation_models_count >= 2 ) ,
 -- ATTRIBUTE
-	list_id INTEGER NOT NULL ,
--- ATTRIBUTE
-	restraint_id INTEGER NOT NULL
+	ordinal INTEGER NOT NULL
 );
 
 --
@@ -8815,7 +8815,7 @@ CREATE TABLE symmetry_equiv (
 --ALTER TABLE pdbx_nmr_details ADD CONSTRAINT UNQ_pdbx_nmr_details UNIQUE ( entry_id );
 
 -- (derived from xsd:key[@name='pdbx_nmr_dihedral_angle_violationKey_0'])
---ALTER TABLE pdbx_nmr_dihedral_angle_violation ADD CONSTRAINT UNQ_pdbx_nmr_dihedral_angle_violation UNIQUE ( entry_id, list_id, restraint_id );
+--ALTER TABLE pdbx_nmr_dihedral_angle_violation ADD CONSTRAINT UNQ_pdbx_nmr_dihedral_angle_violation UNIQUE ( entry_id, ordinal );
 
 -- (derived from xsd:key[@name='pdbx_nmr_dihedral_angle_violation_ensembleKey_0'])
 --ALTER TABLE pdbx_nmr_dihedral_angle_violation_ensemble ADD CONSTRAINT UNQ_pdbx_nmr_dihedral_angle_violation_ensemble UNIQUE ( entry_id, fraction_count );
@@ -8824,13 +8824,13 @@ CREATE TABLE symmetry_equiv (
 --ALTER TABLE pdbx_nmr_dihedral_angle_violation_model ADD CONSTRAINT UNQ_pdbx_nmr_dihedral_angle_violation_model UNIQUE ( entry_id, "PDB_model_num" );
 
 -- (derived from xsd:key[@name='pdbx_nmr_dihedral_angle_violation_pluralKey_0'])
---ALTER TABLE pdbx_nmr_dihedral_angle_violation_plural ADD CONSTRAINT UNQ_pdbx_nmr_dihedral_angle_violation_plural UNIQUE ( entry_id, list_id, restraint_id );
+--ALTER TABLE pdbx_nmr_dihedral_angle_violation_plural ADD CONSTRAINT UNQ_pdbx_nmr_dihedral_angle_violation_plural UNIQUE ( entry_id, ordinal );
 
 -- (derived from xsd:key[@name='pdbx_nmr_dihedral_angle_violation_summaryKey_0'])
 --ALTER TABLE pdbx_nmr_dihedral_angle_violation_summary ADD CONSTRAINT UNQ_pdbx_nmr_dihedral_angle_violation_summary UNIQUE ( entry_id, type );
 
 -- (derived from xsd:key[@name='pdbx_nmr_distance_violationKey_0'])
---ALTER TABLE pdbx_nmr_distance_violation ADD CONSTRAINT UNQ_pdbx_nmr_distance_violation UNIQUE ( entry_id, list_id, restraint_id );
+--ALTER TABLE pdbx_nmr_distance_violation ADD CONSTRAINT UNQ_pdbx_nmr_distance_violation UNIQUE ( entry_id, ordinal );
 
 -- (derived from xsd:key[@name='pdbx_nmr_distance_violation_ensembleKey_0'])
 --ALTER TABLE pdbx_nmr_distance_violation_ensemble ADD CONSTRAINT UNQ_pdbx_nmr_distance_violation_ensemble UNIQUE ( entry_id, fraction_count );
@@ -8839,7 +8839,7 @@ CREATE TABLE symmetry_equiv (
 --ALTER TABLE pdbx_nmr_distance_violation_model ADD CONSTRAINT UNQ_pdbx_nmr_distance_violation_model UNIQUE ( entry_id, "PDB_model_num" );
 
 -- (derived from xsd:key[@name='pdbx_nmr_distance_violation_pluralKey_0'])
---ALTER TABLE pdbx_nmr_distance_violation_plural ADD CONSTRAINT UNQ_pdbx_nmr_distance_violation_plural UNIQUE ( entry_id, list_id, restraint_id );
+--ALTER TABLE pdbx_nmr_distance_violation_plural ADD CONSTRAINT UNQ_pdbx_nmr_distance_violation_plural UNIQUE ( entry_id, ordinal );
 
 -- (derived from xsd:key[@name='pdbx_nmr_distance_violation_summaryKey_0'])
 --ALTER TABLE pdbx_nmr_distance_violation_summary ADD CONSTRAINT UNQ_pdbx_nmr_distance_violation_summary UNIQUE ( entry_id, subtype, type );
