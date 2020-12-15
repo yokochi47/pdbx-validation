@@ -2238,7 +2238,7 @@
 
   <xsl:template match="PDBxv:datablock/PDBxv:pdbx_nmr_dihedral_angle_violation_ensembleCategory/PDBxv:pdbx_nmr_dihedral_angle_violation_ensemble">
       <PDBov:has_pdbx_nmr_dihedral_angle_violation_ensemble>
-      <PDBov:pdbx_nmr_dihedral_angle_violation_ensemble rdf:about="{$base}/pdbx_nmr_dihedral_angle_violation_ensemble/{translate(@fraction_count,' ^','_')}">
+      <PDBov:pdbx_nmr_dihedral_angle_violation_ensemble rdf:about="{$base}/pdbx_nmr_dihedral_angle_violation_ensemble/{translate(@fraction_ensemble_size,' ^','_')}">
       <PDBov:of_datablock rdf:resource="{$base}"/>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -2298,7 +2298,7 @@
 
   <xsl:template match="PDBxv:datablock/PDBxv:pdbx_nmr_distance_violation_ensembleCategory/PDBxv:pdbx_nmr_distance_violation_ensemble">
       <PDBov:has_pdbx_nmr_distance_violation_ensemble>
-      <PDBov:pdbx_nmr_distance_violation_ensemble rdf:about="{$base}/pdbx_nmr_distance_violation_ensemble/{translate(@fraction_count,' ^','_')}">
+      <PDBov:pdbx_nmr_distance_violation_ensemble rdf:about="{$base}/pdbx_nmr_distance_violation_ensemble/{translate(@fraction_ensemble_size,' ^','_')}">
       <PDBov:of_datablock rdf:resource="{$base}"/>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -2514,7 +2514,7 @@
 
   <xsl:template match="PDBxv:datablock/PDBxv:pdbx_nmr_restraint_violationCategory/PDBxv:pdbx_nmr_restraint_violation">
       <PDBov:has_pdbx_nmr_restraint_violation>
-      <PDBov:pdbx_nmr_restraint_violation rdf:about="{$base}/pdbx_nmr_restraint_violation/{translate(@type,' ^','_')}">
+      <PDBov:pdbx_nmr_restraint_violation rdf:about="{$base}/pdbx_nmr_restraint_violation/{translate(@ordinal,' ^','_')},{translate(@type,' ^','_')}">
       <PDBov:of_datablock rdf:resource="{$base}"/>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
