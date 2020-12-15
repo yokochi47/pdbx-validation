@@ -895,10 +895,10 @@ Atom type of atom inclusion plot, <xsl:value-of select="name()"/>, is not listed
               <PDBxv:unmapped_restraints_total><xsl:value-of select="@value"/></PDBxv:unmapped_restraints_total>
             </xsl:when>
             <xsl:when test="@description='Number of restraints per residue'">
-              <PDBxv:average_restraints_per_residue><xsl:value-of select="@value"/></PDBxv:average_restraints_per_residue>
+              <PDBxv:restraints_per_residue><xsl:value-of select="@value"/></PDBxv:restraints_per_residue>
             </xsl:when>
             <xsl:when test="@description='Number of long range restraints per residue'">
-              <PDBxv:average_long_range_restraints_per_residue><xsl:value-of select="@value"/></PDBxv:average_long_range_restraints_per_residue>
+              <PDBxv:long_range_restraints_per_residue><xsl:value-of select="@value"/></PDBxv:long_range_restraints_per_residue>
             </xsl:when>
             <xsl:otherwise>
               <xsl:call-template name="error_handler">
@@ -939,7 +939,7 @@ Restraint residual violation bins, <xsl:value-of select="@bins"/>, is not listed
             </xsl:choose>
             <PDBxv:maximum_violation_in_bin><xsl:value-of select="@max_violation"/></PDBxv:maximum_violation_in_bin>
             <PDBxv:bin_units>A</PDBxv:bin_units>
-            <PDBxv:average_violation_count_per_model><xsl:value-of select="@violations_per_model"/></PDBxv:average_violation_count_per_model>
+            <PDBxv:violations_per_model><xsl:value-of select="@violations_per_model"/></PDBxv:violations_per_model>
           </PDBxv:pdbx_nmr_restraint_violation>
         </xsl:for-each>
         <xsl:for-each select="../residual_angle_violations/residual_angle_violation">
@@ -967,7 +967,7 @@ Restraint residual violation bins, <xsl:value-of select="@bins"/>, is not listed
             </xsl:choose>
             <PDBxv:maximum_violation_in_bin><xsl:value-of select="@max_violation"/></PDBxv:maximum_violation_in_bin>
             <PDBxv:bin_units>degrees</PDBxv:bin_units>
-            <PDBxv:average_violation_count_per_model><xsl:value-of select="@violations_per_model"/></PDBxv:average_violation_count_per_model>
+            <PDBxv:violations_per_model><xsl:value-of select="@violations_per_model"/></PDBxv:violations_per_model>
           </PDBxv:pdbx_nmr_restraint_violation>
         </xsl:for-each>
       </PDBxv:pdbx_nmr_restraint_violationCategory>
@@ -1014,13 +1014,13 @@ Restraint type, <xsl:value-of select="@restraint_type"/>, is not listed in XSLT 
           </xsl:choose>
           <xsl:choose>
             <xsl:when test="@restraint_sub_type='BackboneBackbone'">
-              <xsl:attribute name="subtype">backbone-backbone</xsl:attribute>
+              <xsl:attribute name="subtype">backbone_backbone</xsl:attribute>
             </xsl:when>
             <xsl:when test="@restraint_sub_type='BackboneSidechain'">
-              <xsl:attribute name="subtype">backbone-sidechain</xsl:attribute>
+              <xsl:attribute name="subtype">backbone_sidechain</xsl:attribute>
             </xsl:when>
             <xsl:when test="@restraint_sub_type='SidechainSidechain'">
-              <xsl:attribute name="subtype">sidechain-sidechain</xsl:attribute>
+              <xsl:attribute name="subtype">sidechain_sidechain</xsl:attribute>
             </xsl:when>
             <xsl:when test="@restraint_sub_type='all'">
               <xsl:attribute name="subtype">all</xsl:attribute>
@@ -1150,6 +1150,10 @@ Distance restraint type, <xsl:value-of select="@dist_rest_type"/>, is not listed
           <PDBxv:auth_comp_id_2><xsl:value-of select="@resname_2"/></PDBxv:auth_comp_id_2>
           <PDBxv:auth_atom_id_1><xsl:value-of select="@atom_1"/></PDBxv:auth_atom_id_1>
           <PDBxv:auth_atom_id_2><xsl:value-of select="@atom_2"/></PDBxv:auth_atom_id_2>
+          <PDBxv:label_asym_id_1><xsl:value-of select="@said_1"/></PDBxv:label_asym_id_1>
+          <PDBxv:label_asym_id_2><xsl:value-of select="@said_2"/></PDBxv:label_asym_id_2>
+          <PDBxv:label_seq_id_1><xsl:value-of select="@seq_1"/></PDBxv:label_seq_id_1>
+          <PDBxv:label_seq_id_2><xsl:value-of select="@seq_2"/></PDBxv:label_seq_id_2>
           <PDBxv:PDB_ins_code_1><xsl:value-of select="@icode_1"/></PDBxv:PDB_ins_code_1>
           <PDBxv:PDB_ins_code_2><xsl:value-of select="@icode_2"/></PDBxv:PDB_ins_code_2>
           <PDBxv:label_alt_id_1><xsl:value-of select="@altcode_1"/></PDBxv:label_alt_id_1>
@@ -1177,6 +1181,10 @@ Distance restraint type, <xsl:value-of select="@dist_rest_type"/>, is not listed
           <PDBxv:auth_comp_id_2><xsl:value-of select="@resname_2"/></PDBxv:auth_comp_id_2>
           <PDBxv:auth_atom_id_1><xsl:value-of select="@atom_1"/></PDBxv:auth_atom_id_1>
           <PDBxv:auth_atom_id_2><xsl:value-of select="@atom_2"/></PDBxv:auth_atom_id_2>
+          <PDBxv:label_asym_id_1><xsl:value-of select="@said_1"/></PDBxv:label_asym_id_1>
+          <PDBxv:label_asym_id_2><xsl:value-of select="@said_2"/></PDBxv:label_asym_id_2>
+          <PDBxv:label_seq_id_1><xsl:value-of select="@seq_1"/></PDBxv:label_seq_id_1>
+          <PDBxv:label_seq_id_2><xsl:value-of select="@seq_2"/></PDBxv:label_seq_id_2>
           <PDBxv:PDB_ins_code_1><xsl:value-of select="@icode_1"/></PDBxv:PDB_ins_code_1>
           <PDBxv:PDB_ins_code_2><xsl:value-of select="@icode_2"/></PDBxv:PDB_ins_code_2>
           <PDBxv:label_alt_id_1><xsl:value-of select="@altcode_1"/></PDBxv:label_alt_id_1>
@@ -1515,6 +1523,11 @@ Dihedral angle restraint type, <xsl:value-of select="@ang_rest_type"/>, is not l
           <PDBxv:auth_atom_id_2><xsl:value-of select="@atom_2"/></PDBxv:auth_atom_id_2>
           <PDBxv:auth_atom_id_3><xsl:value-of select="@atom_3"/></PDBxv:auth_atom_id_3>
           <PDBxv:auth_atom_id_4><xsl:value-of select="@atom_4"/></PDBxv:auth_atom_id_4>
+          <PDBxv:label_asym_id><xsl:value-of select="@said_1"/></PDBxv:label_asym_id>
+          <PDBxv:label_seq_id_1><xsl:value-of select="@seq_1"/></PDBxv:label_seq_id_1>
+          <PDBxv:label_seq_id_2><xsl:value-of select="@seq_2"/></PDBxv:label_seq_id_2>
+          <PDBxv:label_seq_id_3><xsl:value-of select="@seq_3"/></PDBxv:label_seq_id_3>
+          <PDBxv:label_seq_id_4><xsl:value-of select="@seq_4"/></PDBxv:label_seq_id_4>
           <PDBxv:PDB_ins_code_1><xsl:value-of select="@icode_1"/></PDBxv:PDB_ins_code_1>
           <PDBxv:PDB_ins_code_2><xsl:value-of select="@icode_2"/></PDBxv:PDB_ins_code_2>
           <PDBxv:PDB_ins_code_3><xsl:value-of select="@icode_3"/></PDBxv:PDB_ins_code_3>
@@ -1550,6 +1563,11 @@ Dihedral angle restraint type, <xsl:value-of select="@ang_rest_type"/>, is not l
           <PDBxv:auth_atom_id_2><xsl:value-of select="@atom_2"/></PDBxv:auth_atom_id_2>
           <PDBxv:auth_atom_id_3><xsl:value-of select="@atom_3"/></PDBxv:auth_atom_id_3>
           <PDBxv:auth_atom_id_4><xsl:value-of select="@atom_4"/></PDBxv:auth_atom_id_4>
+          <PDBxv:label_asym_id><xsl:value-of select="@said_1"/></PDBxv:label_asym_id>
+          <PDBxv:label_seq_id_1><xsl:value-of select="@seq_1"/></PDBxv:label_seq_id_1>
+          <PDBxv:label_seq_id_2><xsl:value-of select="@seq_2"/></PDBxv:label_seq_id_2>
+          <PDBxv:label_seq_id_3><xsl:value-of select="@seq_3"/></PDBxv:label_seq_id_3>
+          <PDBxv:label_seq_id_4><xsl:value-of select="@seq_4"/></PDBxv:label_seq_id_4>
           <PDBxv:PDB_ins_code_1><xsl:value-of select="@icode_1"/></PDBxv:PDB_ins_code_1>
           <PDBxv:PDB_ins_code_2><xsl:value-of select="@icode_2"/></PDBxv:PDB_ins_code_2>
           <PDBxv:PDB_ins_code_3><xsl:value-of select="@icode_3"/></PDBxv:PDB_ins_code_3>

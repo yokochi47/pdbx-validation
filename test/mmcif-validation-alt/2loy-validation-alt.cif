@@ -4315,19 +4315,19 @@ _pdbx_nmr_restraint_list.type
 1 distance       
 1 dihedral_angle 
 # 
-_pdbx_nmr_restraint_summary.entry_id                                    2LOY 
-_pdbx_nmr_restraint_summary.distance_restraints_total                   1100 
-_pdbx_nmr_restraint_summary.intraresidue_total_count                    95 
-_pdbx_nmr_restraint_summary.sequential_total_count                      282 
-_pdbx_nmr_restraint_summary.medium_range_total_count                    311 
-_pdbx_nmr_restraint_summary.long_range_total_count                      412 
-_pdbx_nmr_restraint_summary.interchain_total_count                      0 
-_pdbx_nmr_restraint_summary.dihedral_angle_restraints_total             293 
-_pdbx_nmr_restraint_summary.hydrogen_bond_restraints_total              252 
-_pdbx_nmr_restraint_summary.disulfide_bond_restraints_total             0 
-_pdbx_nmr_restraint_summary.unmapped_restraints_total                   0 
-_pdbx_nmr_restraint_summary.average_restraints_per_residue              5.8 
-_pdbx_nmr_restraint_summary.average_long_range_restraints_per_residue   2.2 
+_pdbx_nmr_restraint_summary.entry_id                            2LOY 
+_pdbx_nmr_restraint_summary.distance_restraints_total           1100 
+_pdbx_nmr_restraint_summary.intraresidue_total_count            95 
+_pdbx_nmr_restraint_summary.sequential_total_count              282 
+_pdbx_nmr_restraint_summary.medium_range_total_count            311 
+_pdbx_nmr_restraint_summary.long_range_total_count              412 
+_pdbx_nmr_restraint_summary.interchain_total_count              0 
+_pdbx_nmr_restraint_summary.dihedral_angle_restraints_total     293 
+_pdbx_nmr_restraint_summary.hydrogen_bond_restraints_total      252 
+_pdbx_nmr_restraint_summary.disulfide_bond_restraints_total     0 
+_pdbx_nmr_restraint_summary.unmapped_restraints_total           0 
+_pdbx_nmr_restraint_summary.restraints_per_residue              5.8 
+_pdbx_nmr_restraint_summary.long_range_restraints_per_residue   2.2 
 # 
 loop_
 _pdbx_nmr_restraint_violation.type 
@@ -4336,7 +4336,7 @@ _pdbx_nmr_restraint_violation.limit_bin_max
 _pdbx_nmr_restraint_violation.limit_bin_min 
 _pdbx_nmr_restraint_violation.maximum_violation_in_bin 
 _pdbx_nmr_restraint_violation.bin_units 
-_pdbx_nmr_restraint_violation.average_violation_count_per_model 
+_pdbx_nmr_restraint_violation.violations_per_model 
 distance       1 0.2  0.1  0.2   A       6.5  
 distance       2 0.5  0.2  0.33  A       1.1  
 distance       3 ?    0.5  0.0   A       0.0  
@@ -4356,29 +4356,29 @@ _pdbx_nmr_distance_violation_summary.consistent_violations_count
 _pdbx_nmr_distance_violation_summary.consistent_violations_percent 
 _pdbx_nmr_distance_violation_summary.consistent_violations_percent_type 
 intraresidue all                 95   8.6   3  0.3 3.2  0 0.0 0.0 
-intraresidue backbone-backbone   0    0.0   0  0.0 0.0  0 0.0 0.0 
-intraresidue backbone-sidechain  95   8.6   3  0.3 3.2  0 0.0 0.0 
-intraresidue sidechain-sidechain 0    0.0   0  0.0 0.0  0 0.0 0.0 
+intraresidue backbone_backbone   0    0.0   0  0.0 0.0  0 0.0 0.0 
+intraresidue backbone_sidechain  95   8.6   3  0.3 3.2  0 0.0 0.0 
+intraresidue sidechain_sidechain 0    0.0   0  0.0 0.0  0 0.0 0.0 
 sequential   all                 282  25.6  20 1.8 7.1  0 0.0 0.0 
-sequential   backbone-backbone   144  13.1  10 0.9 6.9  0 0.0 0.0 
-sequential   backbone-sidechain  117  10.6  10 0.9 8.5  0 0.0 0.0 
-sequential   sidechain-sidechain 21   1.9   0  0.0 0.0  0 0.0 0.0 
+sequential   backbone_backbone   144  13.1  10 0.9 6.9  0 0.0 0.0 
+sequential   backbone_sidechain  117  10.6  10 0.9 8.5  0 0.0 0.0 
+sequential   sidechain_sidechain 21   1.9   0  0.0 0.0  0 0.0 0.0 
 medium_range all                 311  28.3  23 2.1 7.4  0 0.0 0.0 
-medium_range backbone-backbone   181  16.5  9  0.8 5.0  0 0.0 0.0 
-medium_range backbone-sidechain  93   8.5   10 0.9 10.8 0 0.0 0.0 
-medium_range sidechain-sidechain 37   3.4   4  0.4 10.8 0 0.0 0.0 
+medium_range backbone_backbone   181  16.5  9  0.8 5.0  0 0.0 0.0 
+medium_range backbone_sidechain  93   8.5   10 0.9 10.8 0 0.0 0.0 
+medium_range sidechain_sidechain 37   3.4   4  0.4 10.8 0 0.0 0.0 
 long_range   all                 412  37.5  36 3.3 8.7  0 0.0 0.0 
-long_range   backbone-backbone   110  10.0  5  0.5 4.5  0 0.0 0.0 
-long_range   backbone-sidechain  152  13.8  18 1.6 11.8 0 0.0 0.0 
-long_range   sidechain-sidechain 150  13.6  13 1.2 8.7  0 0.0 0.0 
+long_range   backbone_backbone   110  10.0  5  0.5 4.5  0 0.0 0.0 
+long_range   backbone_sidechain  152  13.8  18 1.6 11.8 0 0.0 0.0 
+long_range   sidechain_sidechain 150  13.6  13 1.2 8.7  0 0.0 0.0 
 interchain   all                 0    0.0   0  0.0 0.0  0 0.0 0.0 
-interchain   backbone-backbone   0    0.0   0  0.0 0.0  0 0.0 0.0 
-interchain   backbone-sidechain  0    0.0   0  0.0 0.0  0 0.0 0.0 
-interchain   sidechain-sidechain 0    0.0   0  0.0 0.0  0 0.0 0.0 
+interchain   backbone_backbone   0    0.0   0  0.0 0.0  0 0.0 0.0 
+interchain   backbone_sidechain  0    0.0   0  0.0 0.0  0 0.0 0.0 
+interchain   sidechain_sidechain 0    0.0   0  0.0 0.0  0 0.0 0.0 
 all          all                 1100 100.0 82 7.5 7.5  0 0.0 0.0 
-all          backbone-backbone   435  39.5  24 2.2 5.5  0 0.0 0.0 
-all          backbone-sidechain  457  41.5  41 3.7 9.0  0 0.0 0.0 
-all          sidechain-sidechain 208  18.9  17 1.5 8.2  0 0.0 0.0 
+all          backbone_backbone   435  39.5  24 2.2 5.5  0 0.0 0.0 
+all          backbone_sidechain  457  41.5  41 3.7 9.0  0 0.0 0.0 
+all          sidechain_sidechain 208  18.9  17 1.5 8.2  0 0.0 0.0 
 # 
 loop_
 _pdbx_nmr_distance_violation_model.PDB_model_num 
@@ -4461,94 +4461,182 @@ _pdbx_nmr_distance_violation_plural.auth_comp_id_1
 _pdbx_nmr_distance_violation_plural.auth_comp_id_2 
 _pdbx_nmr_distance_violation_plural.auth_atom_id_1 
 _pdbx_nmr_distance_violation_plural.auth_atom_id_2 
+_pdbx_nmr_distance_violation_plural.label_asym_id_1 
+_pdbx_nmr_distance_violation_plural.label_asym_id_2 
+_pdbx_nmr_distance_violation_plural.label_seq_id_1 
+_pdbx_nmr_distance_violation_plural.label_seq_id_2 
 _pdbx_nmr_distance_violation_plural.PDB_ins_code_1 
 _pdbx_nmr_distance_violation_plural.PDB_ins_code_2 
 _pdbx_nmr_distance_violation_plural.label_alt_id_1 
 _pdbx_nmr_distance_violation_plural.label_alt_id_2 
-1  1 455  11 0.24 0.23 0.04 1 1 A A 8   11  PHE ASP H    H    ? ? . . 
-2  1 874  8  0.17 0.16 0.06 1 1 A A 64  66  VAL ARG HG21 H    ? ? . . 
-3  1 874  8  0.17 0.16 0.06 1 1 A A 64  66  VAL ARG HG22 H    ? ? . . 
-4  1 874  8  0.17 0.16 0.06 1 1 A A 64  66  VAL ARG HG23 H    ? ? . . 
-5  1 391  7  0.14 0.14 0.02 1 1 A A 23  26  VAL LEU HG11 H    ? ? . . 
-6  1 391  7  0.14 0.14 0.02 1 1 A A 23  26  VAL LEU HG12 H    ? ? . . 
-7  1 391  7  0.14 0.14 0.02 1 1 A A 23  26  VAL LEU HG13 H    ? ? . . 
-8  1 93   7  0.14 0.13 0.02 1 1 A A 39  40  GLU GLY H    H    ? ? . . 
-9  1 950  6  0.19 0.17 0.07 1 1 A A 160 166 ASP VAL H    HG11 ? ? . . 
-10 1 950  6  0.19 0.17 0.07 1 1 A A 160 166 ASP VAL H    HG12 ? ? . . 
-11 1 950  6  0.19 0.17 0.07 1 1 A A 160 166 ASP VAL H    HG13 ? ? . . 
-12 1 950  6  0.19 0.17 0.07 1 1 A A 160 166 ASP VAL H    HG21 ? ? . . 
-13 1 950  6  0.19 0.17 0.07 1 1 A A 160 166 ASP VAL H    HG22 ? ? . . 
-14 1 950  6  0.19 0.17 0.07 1 1 A A 160 166 ASP VAL H    HG23 ? ? . . 
-15 1 79   6  0.17 0.15 0.05 1 1 A A 13  14  LEU SER H    H    ? ? . . 
-16 1 860  5  0.13 0.13 0.01 1 1 A A 139 153 PHE VAL H    HG21 ? ? . . 
-17 1 860  5  0.13 0.13 0.01 1 1 A A 139 153 PHE VAL H    HG22 ? ? . . 
-18 1 860  5  0.13 0.13 0.01 1 1 A A 139 153 PHE VAL H    HG23 ? ? . . 
-19 1 1009 4  0.13 0.14 0.01 1 1 A A 155 170 ILE MET H    O    ? ? . . 
-20 1 751  3  0.2  0.21 0.04 1 1 A A 36  44  VAL LEU HG11 HD21 ? ? . . 
-21 1 751  3  0.2  0.21 0.04 1 1 A A 36  44  VAL LEU HG11 HD22 ? ? . . 
-22 1 751  3  0.2  0.21 0.04 1 1 A A 36  44  VAL LEU HG11 HD23 ? ? . . 
-23 1 751  3  0.2  0.21 0.04 1 1 A A 36  44  VAL LEU HG12 HD21 ? ? . . 
-24 1 751  3  0.2  0.21 0.04 1 1 A A 36  44  VAL LEU HG12 HD22 ? ? . . 
-25 1 751  3  0.2  0.21 0.04 1 1 A A 36  44  VAL LEU HG12 HD23 ? ? . . 
-26 1 751  3  0.2  0.21 0.04 1 1 A A 36  44  VAL LEU HG13 HD21 ? ? . . 
-27 1 751  3  0.2  0.21 0.04 1 1 A A 36  44  VAL LEU HG13 HD22 ? ? . . 
-28 1 751  3  0.2  0.21 0.04 1 1 A A 36  44  VAL LEU HG13 HD23 ? ? . . 
-29 1 241  3  0.16 0.17 0.04 1 1 A A 37  66  ARG ARG H    H    ? ? . . 
-30 1 862  3  0.13 0.13 0.01 1 1 A A 62  64  GLU VAL H    HG21 ? ? . . 
-31 1 862  3  0.13 0.13 0.01 1 1 A A 62  64  GLU VAL H    HG22 ? ? . . 
-32 1 862  3  0.13 0.13 0.01 1 1 A A 62  64  GLU VAL H    HG23 ? ? . . 
-33 1 500  3  0.12 0.12 0.0  1 1 A A 138 153 PHE VAL HD1  HG21 ? ? . . 
-34 1 500  3  0.12 0.12 0.0  1 1 A A 138 153 PHE VAL HD1  HG22 ? ? . . 
-35 1 500  3  0.12 0.12 0.0  1 1 A A 138 153 PHE VAL HD1  HG23 ? ? . . 
-36 1 500  3  0.12 0.12 0.0  1 1 A A 138 153 PHE VAL HD2  HG21 ? ? . . 
-37 1 500  3  0.12 0.12 0.0  1 1 A A 138 153 PHE VAL HD2  HG22 ? ? . . 
-38 1 500  3  0.12 0.12 0.0  1 1 A A 138 153 PHE VAL HD2  HG23 ? ? . . 
-39 1 540  3  0.12 0.12 0.0  1 1 A A 133 136 PHE LEU HD1  HD21 ? ? . . 
-40 1 540  3  0.12 0.12 0.0  1 1 A A 133 136 PHE LEU HD1  HD22 ? ? . . 
-41 1 540  3  0.12 0.12 0.0  1 1 A A 133 136 PHE LEU HD1  HD23 ? ? . . 
-42 1 540  3  0.12 0.12 0.0  1 1 A A 133 136 PHE LEU HD2  HD21 ? ? . . 
-43 1 540  3  0.12 0.12 0.0  1 1 A A 133 136 PHE LEU HD2  HD22 ? ? . . 
-44 1 540  3  0.12 0.12 0.0  1 1 A A 133 136 PHE LEU HD2  HD23 ? ? . . 
-45 1 663  3  0.11 0.11 0.0  1 1 A A 149 151 GLU GLY H    H    ? ? . . 
-46 1 50   2  0.27 0.27 0.01 1 1 A A 80  80  ASN ASN H    HD22 ? ? . . 
-47 1 415  2  0.19 0.19 0.02 1 1 A A 131 134 ASP LYS H    H    ? ? . . 
-48 1 243  2  0.18 0.18 0.01 1 1 A A 66  72  ARG LEU H    HD21 ? ? . . 
-49 1 243  2  0.18 0.18 0.01 1 1 A A 66  72  ARG LEU H    HD22 ? ? . . 
-50 1 243  2  0.18 0.18 0.01 1 1 A A 66  72  ARG LEU H    HD23 ? ? . . 
-51 1 100  2  0.16 0.16 0.04 1 1 A A 58  59  ASP GLY H    H    ? ? . . 
-52 1 942  2  0.15 0.15 0.0  1 1 A A 135 136 ASN LEU HD21 H    ? ? . . 
-53 1 942  2  0.15 0.15 0.0  1 1 A A 135 136 ASN LEU HD22 H    ? ? . . 
-54 1 160  2  0.14 0.14 0.03 1 1 A A 44  44  LEU LEU H    HD11 ? ? . . 
-55 1 160  2  0.14 0.14 0.03 1 1 A A 44  44  LEU LEU H    HD12 ? ? . . 
-56 1 160  2  0.14 0.14 0.03 1 1 A A 44  44  LEU LEU H    HD13 ? ? . . 
-57 1 517  2  0.13 0.13 0.0  1 1 A A 127 133 LEU PHE HD11 HD1  ? ? . . 
-58 1 517  2  0.13 0.13 0.0  1 1 A A 127 133 LEU PHE HD11 HD2  ? ? . . 
-59 1 517  2  0.13 0.13 0.0  1 1 A A 127 133 LEU PHE HD12 HD1  ? ? . . 
-60 1 517  2  0.13 0.13 0.0  1 1 A A 127 133 LEU PHE HD12 HD2  ? ? . . 
-61 1 517  2  0.13 0.13 0.0  1 1 A A 127 133 LEU PHE HD13 HD1  ? ? . . 
-62 1 517  2  0.13 0.13 0.0  1 1 A A 127 133 LEU PHE HD13 HD2  ? ? . . 
-63 1 341  2  0.12 0.12 0.0  1 1 A A 95  98  PHE ASN HD1  H    ? ? . . 
-64 1 341  2  0.12 0.12 0.0  1 1 A A 95  98  PHE ASN HD2  H    ? ? . . 
-65 1 609  2  0.12 0.12 0.01 1 1 A A 80  82  ASN TYR H    H    ? ? . . 
-66 1 291  2  0.12 0.12 0.01 1 1 A A 182 183 LEU GLU HD21 H    ? ? . . 
-67 1 291  2  0.12 0.12 0.01 1 1 A A 182 183 LEU GLU HD22 H    ? ? . . 
-68 1 291  2  0.12 0.12 0.01 1 1 A A 182 183 LEU GLU HD23 H    ? ? . . 
-69 1 829  2  0.12 0.12 0.0  1 1 A A 124 128 VAL LEU HG11 H    ? ? . . 
-70 1 829  2  0.12 0.12 0.0  1 1 A A 124 128 VAL LEU HG12 H    ? ? . . 
-71 1 829  2  0.12 0.12 0.0  1 1 A A 124 128 VAL LEU HG13 H    ? ? . . 
-72 1 553  2  0.11 0.11 0.0  1 1 A A 124 128 VAL LEU HG11 HD21 ? ? . . 
-73 1 553  2  0.11 0.11 0.0  1 1 A A 124 128 VAL LEU HG11 HD22 ? ? . . 
-74 1 553  2  0.11 0.11 0.0  1 1 A A 124 128 VAL LEU HG11 HD23 ? ? . . 
-75 1 553  2  0.11 0.11 0.0  1 1 A A 124 128 VAL LEU HG12 HD21 ? ? . . 
-76 1 553  2  0.11 0.11 0.0  1 1 A A 124 128 VAL LEU HG12 HD22 ? ? . . 
-77 1 553  2  0.11 0.11 0.0  1 1 A A 124 128 VAL LEU HG12 HD23 ? ? . . 
-78 1 553  2  0.11 0.11 0.0  1 1 A A 124 128 VAL LEU HG13 HD21 ? ? . . 
-79 1 553  2  0.11 0.11 0.0  1 1 A A 124 128 VAL LEU HG13 HD22 ? ? . . 
-80 1 553  2  0.11 0.11 0.0  1 1 A A 124 128 VAL LEU HG13 HD23 ? ? . . 
-81 1 265  2  0.11 0.11 0.0  1 1 A A 70  72  ILE LEU H    HD11 ? ? . . 
-82 1 265  2  0.11 0.11 0.0  1 1 A A 70  72  ILE LEU H    HD12 ? ? . . 
-83 1 265  2  0.11 0.11 0.0  1 1 A A 70  72  ILE LEU H    HD13 ? ? . . 
-84 1 648  2  0.11 0.11 0.0  1 1 A A 56  57  GLU ASP H    H    ? ? . . 
+1  1 455  11 0.24 0.23 0.04 1 1 A A 8   11  PHE ASP H    H    A A 8   11  ? ? 
+. . 
+2  1 874  8  0.17 0.16 0.06 1 1 A A 64  66  VAL ARG HG21 H    A A 64  66  ? ? 
+. . 
+3  1 874  8  0.17 0.16 0.06 1 1 A A 64  66  VAL ARG HG22 H    A A 64  66  ? ? 
+. . 
+4  1 874  8  0.17 0.16 0.06 1 1 A A 64  66  VAL ARG HG23 H    A A 64  66  ? ? 
+. . 
+5  1 391  7  0.14 0.14 0.02 1 1 A A 23  26  VAL LEU HG11 H    A A 23  26  ? ? 
+. . 
+6  1 391  7  0.14 0.14 0.02 1 1 A A 23  26  VAL LEU HG12 H    A A 23  26  ? ? 
+. . 
+7  1 391  7  0.14 0.14 0.02 1 1 A A 23  26  VAL LEU HG13 H    A A 23  26  ? ? 
+. . 
+8  1 93   7  0.14 0.13 0.02 1 1 A A 39  40  GLU GLY H    H    A A 39  40  ? ? 
+. . 
+9  1 950  6  0.19 0.17 0.07 1 1 A A 160 166 ASP VAL H    HG11 A A 160 166 ? ? 
+. . 
+10 1 950  6  0.19 0.17 0.07 1 1 A A 160 166 ASP VAL H    HG12 A A 160 166 ? ? 
+. . 
+11 1 950  6  0.19 0.17 0.07 1 1 A A 160 166 ASP VAL H    HG13 A A 160 166 ? ? 
+. . 
+12 1 950  6  0.19 0.17 0.07 1 1 A A 160 166 ASP VAL H    HG21 A A 160 166 ? ? 
+. . 
+13 1 950  6  0.19 0.17 0.07 1 1 A A 160 166 ASP VAL H    HG22 A A 160 166 ? ? 
+. . 
+14 1 950  6  0.19 0.17 0.07 1 1 A A 160 166 ASP VAL H    HG23 A A 160 166 ? ? 
+. . 
+15 1 79   6  0.17 0.15 0.05 1 1 A A 13  14  LEU SER H    H    A A 13  14  ? ? 
+. . 
+16 1 860  5  0.13 0.13 0.01 1 1 A A 139 153 PHE VAL H    HG21 A A 139 153 ? ? 
+. . 
+17 1 860  5  0.13 0.13 0.01 1 1 A A 139 153 PHE VAL H    HG22 A A 139 153 ? ? 
+. . 
+18 1 860  5  0.13 0.13 0.01 1 1 A A 139 153 PHE VAL H    HG23 A A 139 153 ? ? 
+. . 
+19 1 1009 4  0.13 0.14 0.01 1 1 A A 155 170 ILE MET H    O    A A 155 170 ? ? 
+. . 
+20 1 751  3  0.2  0.21 0.04 1 1 A A 36  44  VAL LEU HG11 HD21 A A 36  44  ? ? 
+. . 
+21 1 751  3  0.2  0.21 0.04 1 1 A A 36  44  VAL LEU HG11 HD22 A A 36  44  ? ? 
+. . 
+22 1 751  3  0.2  0.21 0.04 1 1 A A 36  44  VAL LEU HG11 HD23 A A 36  44  ? ? 
+. . 
+23 1 751  3  0.2  0.21 0.04 1 1 A A 36  44  VAL LEU HG12 HD21 A A 36  44  ? ? 
+. . 
+24 1 751  3  0.2  0.21 0.04 1 1 A A 36  44  VAL LEU HG12 HD22 A A 36  44  ? ? 
+. . 
+25 1 751  3  0.2  0.21 0.04 1 1 A A 36  44  VAL LEU HG12 HD23 A A 36  44  ? ? 
+. . 
+26 1 751  3  0.2  0.21 0.04 1 1 A A 36  44  VAL LEU HG13 HD21 A A 36  44  ? ? 
+. . 
+27 1 751  3  0.2  0.21 0.04 1 1 A A 36  44  VAL LEU HG13 HD22 A A 36  44  ? ? 
+. . 
+28 1 751  3  0.2  0.21 0.04 1 1 A A 36  44  VAL LEU HG13 HD23 A A 36  44  ? ? 
+. . 
+29 1 241  3  0.16 0.17 0.04 1 1 A A 37  66  ARG ARG H    H    A A 37  66  ? ? 
+. . 
+30 1 862  3  0.13 0.13 0.01 1 1 A A 62  64  GLU VAL H    HG21 A A 62  64  ? ? 
+. . 
+31 1 862  3  0.13 0.13 0.01 1 1 A A 62  64  GLU VAL H    HG22 A A 62  64  ? ? 
+. . 
+32 1 862  3  0.13 0.13 0.01 1 1 A A 62  64  GLU VAL H    HG23 A A 62  64  ? ? 
+. . 
+33 1 500  3  0.12 0.12 0.0  1 1 A A 138 153 PHE VAL HD1  HG21 A A 138 153 ? ? 
+. . 
+34 1 500  3  0.12 0.12 0.0  1 1 A A 138 153 PHE VAL HD1  HG22 A A 138 153 ? ? 
+. . 
+35 1 500  3  0.12 0.12 0.0  1 1 A A 138 153 PHE VAL HD1  HG23 A A 138 153 ? ? 
+. . 
+36 1 500  3  0.12 0.12 0.0  1 1 A A 138 153 PHE VAL HD2  HG21 A A 138 153 ? ? 
+. . 
+37 1 500  3  0.12 0.12 0.0  1 1 A A 138 153 PHE VAL HD2  HG22 A A 138 153 ? ? 
+. . 
+38 1 500  3  0.12 0.12 0.0  1 1 A A 138 153 PHE VAL HD2  HG23 A A 138 153 ? ? 
+. . 
+39 1 540  3  0.12 0.12 0.0  1 1 A A 133 136 PHE LEU HD1  HD21 A A 133 136 ? ? 
+. . 
+40 1 540  3  0.12 0.12 0.0  1 1 A A 133 136 PHE LEU HD1  HD22 A A 133 136 ? ? 
+. . 
+41 1 540  3  0.12 0.12 0.0  1 1 A A 133 136 PHE LEU HD1  HD23 A A 133 136 ? ? 
+. . 
+42 1 540  3  0.12 0.12 0.0  1 1 A A 133 136 PHE LEU HD2  HD21 A A 133 136 ? ? 
+. . 
+43 1 540  3  0.12 0.12 0.0  1 1 A A 133 136 PHE LEU HD2  HD22 A A 133 136 ? ? 
+. . 
+44 1 540  3  0.12 0.12 0.0  1 1 A A 133 136 PHE LEU HD2  HD23 A A 133 136 ? ? 
+. . 
+45 1 663  3  0.11 0.11 0.0  1 1 A A 149 151 GLU GLY H    H    A A 149 151 ? ? 
+. . 
+46 1 50   2  0.27 0.27 0.01 1 1 A A 80  80  ASN ASN H    HD22 A A 80  80  ? ? 
+. . 
+47 1 415  2  0.19 0.19 0.02 1 1 A A 131 134 ASP LYS H    H    A A 131 134 ? ? 
+. . 
+48 1 243  2  0.18 0.18 0.01 1 1 A A 66  72  ARG LEU H    HD21 A A 66  72  ? ? 
+. . 
+49 1 243  2  0.18 0.18 0.01 1 1 A A 66  72  ARG LEU H    HD22 A A 66  72  ? ? 
+. . 
+50 1 243  2  0.18 0.18 0.01 1 1 A A 66  72  ARG LEU H    HD23 A A 66  72  ? ? 
+. . 
+51 1 100  2  0.16 0.16 0.04 1 1 A A 58  59  ASP GLY H    H    A A 58  59  ? ? 
+. . 
+52 1 942  2  0.15 0.15 0.0  1 1 A A 135 136 ASN LEU HD21 H    A A 135 136 ? ? 
+. . 
+53 1 942  2  0.15 0.15 0.0  1 1 A A 135 136 ASN LEU HD22 H    A A 135 136 ? ? 
+. . 
+54 1 160  2  0.14 0.14 0.03 1 1 A A 44  44  LEU LEU H    HD11 A A 44  44  ? ? 
+. . 
+55 1 160  2  0.14 0.14 0.03 1 1 A A 44  44  LEU LEU H    HD12 A A 44  44  ? ? 
+. . 
+56 1 160  2  0.14 0.14 0.03 1 1 A A 44  44  LEU LEU H    HD13 A A 44  44  ? ? 
+. . 
+57 1 517  2  0.13 0.13 0.0  1 1 A A 127 133 LEU PHE HD11 HD1  A A 127 133 ? ? 
+. . 
+58 1 517  2  0.13 0.13 0.0  1 1 A A 127 133 LEU PHE HD11 HD2  A A 127 133 ? ? 
+. . 
+59 1 517  2  0.13 0.13 0.0  1 1 A A 127 133 LEU PHE HD12 HD1  A A 127 133 ? ? 
+. . 
+60 1 517  2  0.13 0.13 0.0  1 1 A A 127 133 LEU PHE HD12 HD2  A A 127 133 ? ? 
+. . 
+61 1 517  2  0.13 0.13 0.0  1 1 A A 127 133 LEU PHE HD13 HD1  A A 127 133 ? ? 
+. . 
+62 1 517  2  0.13 0.13 0.0  1 1 A A 127 133 LEU PHE HD13 HD2  A A 127 133 ? ? 
+. . 
+63 1 341  2  0.12 0.12 0.0  1 1 A A 95  98  PHE ASN HD1  H    A A 95  98  ? ? 
+. . 
+64 1 341  2  0.12 0.12 0.0  1 1 A A 95  98  PHE ASN HD2  H    A A 95  98  ? ? 
+. . 
+65 1 609  2  0.12 0.12 0.01 1 1 A A 80  82  ASN TYR H    H    A A 80  82  ? ? 
+. . 
+66 1 291  2  0.12 0.12 0.01 1 1 A A 182 183 LEU GLU HD21 H    A A 182 183 ? ? 
+. . 
+67 1 291  2  0.12 0.12 0.01 1 1 A A 182 183 LEU GLU HD22 H    A A 182 183 ? ? 
+. . 
+68 1 291  2  0.12 0.12 0.01 1 1 A A 182 183 LEU GLU HD23 H    A A 182 183 ? ? 
+. . 
+69 1 829  2  0.12 0.12 0.0  1 1 A A 124 128 VAL LEU HG11 H    A A 124 128 ? ? 
+. . 
+70 1 829  2  0.12 0.12 0.0  1 1 A A 124 128 VAL LEU HG12 H    A A 124 128 ? ? 
+. . 
+71 1 829  2  0.12 0.12 0.0  1 1 A A 124 128 VAL LEU HG13 H    A A 124 128 ? ? 
+. . 
+72 1 553  2  0.11 0.11 0.0  1 1 A A 124 128 VAL LEU HG11 HD21 A A 124 128 ? ? 
+. . 
+73 1 553  2  0.11 0.11 0.0  1 1 A A 124 128 VAL LEU HG11 HD22 A A 124 128 ? ? 
+. . 
+74 1 553  2  0.11 0.11 0.0  1 1 A A 124 128 VAL LEU HG11 HD23 A A 124 128 ? ? 
+. . 
+75 1 553  2  0.11 0.11 0.0  1 1 A A 124 128 VAL LEU HG12 HD21 A A 124 128 ? ? 
+. . 
+76 1 553  2  0.11 0.11 0.0  1 1 A A 124 128 VAL LEU HG12 HD22 A A 124 128 ? ? 
+. . 
+77 1 553  2  0.11 0.11 0.0  1 1 A A 124 128 VAL LEU HG12 HD23 A A 124 128 ? ? 
+. . 
+78 1 553  2  0.11 0.11 0.0  1 1 A A 124 128 VAL LEU HG13 HD21 A A 124 128 ? ? 
+. . 
+79 1 553  2  0.11 0.11 0.0  1 1 A A 124 128 VAL LEU HG13 HD22 A A 124 128 ? ? 
+. . 
+80 1 553  2  0.11 0.11 0.0  1 1 A A 124 128 VAL LEU HG13 HD23 A A 124 128 ? ? 
+. . 
+81 1 265  2  0.11 0.11 0.0  1 1 A A 70  72  ILE LEU H    HD11 A A 70  72  ? ? 
+. . 
+82 1 265  2  0.11 0.11 0.0  1 1 A A 70  72  ILE LEU H    HD12 A A 70  72  ? ? 
+. . 
+83 1 265  2  0.11 0.11 0.0  1 1 A A 70  72  ILE LEU H    HD13 A A 70  72  ? ? 
+. . 
+84 1 648  2  0.11 0.11 0.0  1 1 A A 56  57  GLU ASP H    H    A A 56  57  ? ? 
+. . 
 # 
 loop_
 _pdbx_nmr_distance_violation.ordinal 
@@ -4566,469 +4654,473 @@ _pdbx_nmr_distance_violation.auth_comp_id_1
 _pdbx_nmr_distance_violation.auth_comp_id_2 
 _pdbx_nmr_distance_violation.auth_atom_id_1 
 _pdbx_nmr_distance_violation.auth_atom_id_2 
+_pdbx_nmr_distance_violation.label_asym_id_1 
+_pdbx_nmr_distance_violation.label_asym_id_2 
+_pdbx_nmr_distance_violation.label_seq_id_1 
+_pdbx_nmr_distance_violation.label_seq_id_2 
 _pdbx_nmr_distance_violation.PDB_ins_code_1 
 _pdbx_nmr_distance_violation.PDB_ins_code_2 
 _pdbx_nmr_distance_violation.label_alt_id_1 
 _pdbx_nmr_distance_violation.label_alt_id_2 
-1   1 950  10 0.33 1 1 A A 160 166 ASP VAL H    HG11 ? ? . . 
-2   1 950  10 0.33 1 1 A A 160 166 ASP VAL H    HG12 ? ? . . 
-3   1 950  10 0.33 1 1 A A 160 166 ASP VAL H    HG13 ? ? . . 
-4   1 950  10 0.33 1 1 A A 160 166 ASP VAL H    HG21 ? ? . . 
-5   1 950  10 0.33 1 1 A A 160 166 ASP VAL H    HG22 ? ? . . 
-6   1 950  10 0.33 1 1 A A 160 166 ASP VAL H    HG23 ? ? . . 
-7   1 455  14 0.32 1 1 A A 8   11  PHE ASP H    H    ? ? . . 
-8   1 874  20 0.31 1 1 A A 64  66  VAL ARG HG21 H    ? ? . . 
-9   1 874  20 0.31 1 1 A A 64  66  VAL ARG HG22 H    ? ? . . 
-10  1 874  20 0.31 1 1 A A 64  66  VAL ARG HG23 H    ? ? . . 
-11  1 50   4  0.27 1 1 A A 80  80  ASN ASN H    HD22 ? ? . . 
-12  1 455  11 0.27 1 1 A A 8   11  PHE ASP H    H    ? ? . . 
-13  1 79   18 0.26 1 1 A A 13  14  LEU SER H    H    ? ? . . 
-14  1 50   12 0.26 1 1 A A 80  80  ASN ASN H    HD22 ? ? . . 
-15  1 751  9  0.25 1 1 A A 36  44  VAL LEU HG11 HD21 ? ? . . 
-16  1 751  9  0.25 1 1 A A 36  44  VAL LEU HG11 HD22 ? ? . . 
-17  1 751  9  0.25 1 1 A A 36  44  VAL LEU HG11 HD23 ? ? . . 
-18  1 751  9  0.25 1 1 A A 36  44  VAL LEU HG12 HD21 ? ? . . 
-19  1 751  9  0.25 1 1 A A 36  44  VAL LEU HG12 HD22 ? ? . . 
-20  1 751  9  0.25 1 1 A A 36  44  VAL LEU HG12 HD23 ? ? . . 
-21  1 751  9  0.25 1 1 A A 36  44  VAL LEU HG13 HD21 ? ? . . 
-22  1 751  9  0.25 1 1 A A 36  44  VAL LEU HG13 HD22 ? ? . . 
-23  1 751  9  0.25 1 1 A A 36  44  VAL LEU HG13 HD23 ? ? . . 
-24  1 455  1  0.25 1 1 A A 8   11  PHE ASP H    H    ? ? . . 
-25  1 455  2  0.25 1 1 A A 8   11  PHE ASP H    H    ? ? . . 
-26  1 455  3  0.25 1 1 A A 8   11  PHE ASP H    H    ? ? . . 
-27  1 101  17 0.25 1 1 A A 150 151 ASN GLY H    H    ? ? . . 
-28  1 950  20 0.23 1 1 A A 160 166 ASP VAL H    HG11 ? ? . . 
-29  1 950  20 0.23 1 1 A A 160 166 ASP VAL H    HG12 ? ? . . 
-30  1 950  20 0.23 1 1 A A 160 166 ASP VAL H    HG13 ? ? . . 
-31  1 950  20 0.23 1 1 A A 160 166 ASP VAL H    HG21 ? ? . . 
-32  1 950  20 0.23 1 1 A A 160 166 ASP VAL H    HG22 ? ? . . 
-33  1 950  20 0.23 1 1 A A 160 166 ASP VAL H    HG23 ? ? . . 
-34  1 455  10 0.23 1 1 A A 8   11  PHE ASP H    H    ? ? . . 
-35  1 455  20 0.23 1 1 A A 8   11  PHE ASP H    H    ? ? . . 
-36  1 322  20 0.23 1 1 A A 28  171 TYR LEU HD1  H    ? ? . . 
-37  1 322  20 0.23 1 1 A A 28  171 TYR LEU HD2  H    ? ? . . 
-38  1 79   10 0.22 1 1 A A 13  14  LEU SER H    H    ? ? . . 
-39  1 455  18 0.22 1 1 A A 8   11  PHE ASP H    H    ? ? . . 
-40  1 874  13 0.21 1 1 A A 64  66  VAL ARG HG21 H    ? ? . . 
-41  1 874  13 0.21 1 1 A A 64  66  VAL ARG HG22 H    ? ? . . 
-42  1 874  13 0.21 1 1 A A 64  66  VAL ARG HG23 H    ? ? . . 
-43  1 751  19 0.21 1 1 A A 36  44  VAL LEU HG11 HD21 ? ? . . 
-44  1 751  19 0.21 1 1 A A 36  44  VAL LEU HG11 HD22 ? ? . . 
-45  1 751  19 0.21 1 1 A A 36  44  VAL LEU HG11 HD23 ? ? . . 
-46  1 751  19 0.21 1 1 A A 36  44  VAL LEU HG12 HD21 ? ? . . 
-47  1 751  19 0.21 1 1 A A 36  44  VAL LEU HG12 HD22 ? ? . . 
-48  1 751  19 0.21 1 1 A A 36  44  VAL LEU HG12 HD23 ? ? . . 
-49  1 751  19 0.21 1 1 A A 36  44  VAL LEU HG13 HD21 ? ? . . 
-50  1 751  19 0.21 1 1 A A 36  44  VAL LEU HG13 HD22 ? ? . . 
-51  1 751  19 0.21 1 1 A A 36  44  VAL LEU HG13 HD23 ? ? . . 
-52  1 455  16 0.21 1 1 A A 8   11  PHE ASP H    H    ? ? . . 
-53  1 415  3  0.21 1 1 A A 131 134 ASP LYS H    H    ? ? . . 
-54  1 100  6  0.21 1 1 A A 58  59  ASP GLY H    H    ? ? . . 
-55  1 455  12 0.2  1 1 A A 8   11  PHE ASP H    H    ? ? . . 
-56  1 241  13 0.2  1 1 A A 37  66  ARG ARG H    H    ? ? . . 
-57  1 874  2  0.19 1 1 A A 64  66  VAL ARG HG21 H    ? ? . . 
-58  1 874  2  0.19 1 1 A A 64  66  VAL ARG HG22 H    ? ? . . 
-59  1 874  2  0.19 1 1 A A 64  66  VAL ARG HG23 H    ? ? . . 
-60  1 243  11 0.19 1 1 A A 66  72  ARG LEU H    HD21 ? ? . . 
-61  1 243  11 0.19 1 1 A A 66  72  ARG LEU H    HD22 ? ? . . 
-62  1 243  11 0.19 1 1 A A 66  72  ARG LEU H    HD23 ? ? . . 
-63  1 647  13 0.18 1 1 A A 103 105 MET LYS H    H    ? ? . . 
-64  1 463  14 0.18 1 1 A A 16  18  ASP PHE H    H    ? ? . . 
-65  1 243  17 0.18 1 1 A A 66  72  ARG LEU H    HD21 ? ? . . 
-66  1 243  17 0.18 1 1 A A 66  72  ARG LEU H    HD22 ? ? . . 
-67  1 243  17 0.18 1 1 A A 66  72  ARG LEU H    HD23 ? ? . . 
-68  1 191  18 0.18 1 1 A A 64  65  VAL GLU HG11 H    ? ? . . 
-69  1 191  18 0.18 1 1 A A 64  65  VAL GLU HG12 H    ? ? . . 
-70  1 191  18 0.18 1 1 A A 64  65  VAL GLU HG13 H    ? ? . . 
-71  1 950  7  0.17 1 1 A A 160 166 ASP VAL H    HG11 ? ? . . 
-72  1 950  7  0.17 1 1 A A 160 166 ASP VAL H    HG12 ? ? . . 
-73  1 950  7  0.17 1 1 A A 160 166 ASP VAL H    HG13 ? ? . . 
-74  1 950  7  0.17 1 1 A A 160 166 ASP VAL H    HG21 ? ? . . 
-75  1 950  7  0.17 1 1 A A 160 166 ASP VAL H    HG22 ? ? . . 
-76  1 950  7  0.17 1 1 A A 160 166 ASP VAL H    HG23 ? ? . . 
-77  1 950  13 0.17 1 1 A A 160 166 ASP VAL H    HG11 ? ? . . 
-78  1 950  13 0.17 1 1 A A 160 166 ASP VAL H    HG12 ? ? . . 
-79  1 950  13 0.17 1 1 A A 160 166 ASP VAL H    HG13 ? ? . . 
-80  1 950  13 0.17 1 1 A A 160 166 ASP VAL H    HG21 ? ? . . 
-81  1 950  13 0.17 1 1 A A 160 166 ASP VAL H    HG22 ? ? . . 
-82  1 950  13 0.17 1 1 A A 160 166 ASP VAL H    HG23 ? ? . . 
-83  1 93   6  0.17 1 1 A A 39  40  GLU GLY H    H    ? ? . . 
-84  1 919  7  0.17 1 1 A A 18  73  PHE ASN HZ   HD21 ? ? . . 
-85  1 919  7  0.17 1 1 A A 18  73  PHE ASN HZ   HD22 ? ? . . 
-86  1 730  11 0.17 1 1 A A 27  120 VAL ILE HG11 HD11 ? ? . . 
-87  1 730  11 0.17 1 1 A A 27  120 VAL ILE HG11 HD12 ? ? . . 
-88  1 730  11 0.17 1 1 A A 27  120 VAL ILE HG11 HD13 ? ? . . 
-89  1 730  11 0.17 1 1 A A 27  120 VAL ILE HG12 HD11 ? ? . . 
-90  1 730  11 0.17 1 1 A A 27  120 VAL ILE HG12 HD12 ? ? . . 
-91  1 730  11 0.17 1 1 A A 27  120 VAL ILE HG12 HD13 ? ? . . 
-92  1 730  11 0.17 1 1 A A 27  120 VAL ILE HG13 HD11 ? ? . . 
-93  1 730  11 0.17 1 1 A A 27  120 VAL ILE HG13 HD12 ? ? . . 
-94  1 730  11 0.17 1 1 A A 27  120 VAL ILE HG13 HD13 ? ? . . 
-95  1 455  19 0.17 1 1 A A 8   11  PHE ASP H    H    ? ? . . 
-96  1 415  8  0.17 1 1 A A 131 134 ASP LYS H    H    ? ? . . 
-97  1 405  8  0.17 1 1 A A 24  25  ASP ASP H    H    ? ? . . 
-98  1 241  10 0.17 1 1 A A 37  66  ARG ARG H    H    ? ? . . 
-99  1 108  10 0.17 1 1 A A 15  18  SER PHE H    HD1  ? ? . . 
-100 1 108  10 0.17 1 1 A A 15  18  SER PHE H    HD2  ? ? . . 
-101 1 93   15 0.16 1 1 A A 39  40  GLU GLY H    H    ? ? . . 
-102 1 89   3  0.16 1 1 A A 162 163 ASP GLY H    H    ? ? . . 
-103 1 874  6  0.16 1 1 A A 64  66  VAL ARG HG21 H    ? ? . . 
-104 1 874  6  0.16 1 1 A A 64  66  VAL ARG HG22 H    ? ? . . 
-105 1 874  6  0.16 1 1 A A 64  66  VAL ARG HG23 H    ? ? . . 
-106 1 874  18 0.16 1 1 A A 64  66  VAL ARG HG21 H    ? ? . . 
-107 1 874  18 0.16 1 1 A A 64  66  VAL ARG HG22 H    ? ? . . 
-108 1 874  18 0.16 1 1 A A 64  66  VAL ARG HG23 H    ? ? . . 
-109 1 462  14 0.16 1 1 A A 182 183 LEU GLU H    H    ? ? . . 
-110 1 391  2  0.16 1 1 A A 23  26  VAL LEU HG11 H    ? ? . . 
-111 1 391  2  0.16 1 1 A A 23  26  VAL LEU HG12 H    ? ? . . 
-112 1 391  2  0.16 1 1 A A 23  26  VAL LEU HG13 H    ? ? . . 
-113 1 391  18 0.16 1 1 A A 23  26  VAL LEU HG11 H    ? ? . . 
-114 1 391  18 0.16 1 1 A A 23  26  VAL LEU HG12 H    ? ? . . 
-115 1 391  18 0.16 1 1 A A 23  26  VAL LEU HG13 H    ? ? . . 
-116 1 160  2  0.16 1 1 A A 44  44  LEU LEU H    HD11 ? ? . . 
-117 1 160  2  0.16 1 1 A A 44  44  LEU LEU H    HD12 ? ? . . 
-118 1 160  2  0.16 1 1 A A 44  44  LEU LEU H    HD13 ? ? . . 
-119 1 947  14 0.15 1 1 A A 152 176 GLN ILE HE21 HD11 ? ? . . 
-120 1 947  14 0.15 1 1 A A 152 176 GLN ILE HE21 HD12 ? ? . . 
-121 1 947  14 0.15 1 1 A A 152 176 GLN ILE HE21 HD13 ? ? . . 
-122 1 947  14 0.15 1 1 A A 152 176 GLN ILE HE22 HD11 ? ? . . 
-123 1 947  14 0.15 1 1 A A 152 176 GLN ILE HE22 HD12 ? ? . . 
-124 1 947  14 0.15 1 1 A A 152 176 GLN ILE HE22 HD13 ? ? . . 
-125 1 942  12 0.15 1 1 A A 135 136 ASN LEU HD21 H    ? ? . . 
-126 1 942  12 0.15 1 1 A A 135 136 ASN LEU HD22 H    ? ? . . 
-127 1 929  2  0.15 1 1 A A 106 107 ASN ASN HD21 H    ? ? . . 
-128 1 929  2  0.15 1 1 A A 106 107 ASN ASN HD22 H    ? ? . . 
-129 1 865  6  0.15 1 1 A A 7   8   ILE PHE HD11 H    ? ? . . 
-130 1 865  6  0.15 1 1 A A 7   8   ILE PHE HD12 H    ? ? . . 
-131 1 865  6  0.15 1 1 A A 7   8   ILE PHE HD13 H    ? ? . . 
-132 1 862  7  0.15 1 1 A A 62  64  GLU VAL H    HG21 ? ? . . 
-133 1 862  7  0.15 1 1 A A 62  64  GLU VAL H    HG22 ? ? . . 
-134 1 862  7  0.15 1 1 A A 62  64  GLU VAL H    HG23 ? ? . . 
-135 1 79   17 0.15 1 1 A A 13  14  LEU SER H    H    ? ? . . 
-136 1 751  3  0.15 1 1 A A 36  44  VAL LEU HG11 HD21 ? ? . . 
-137 1 751  3  0.15 1 1 A A 36  44  VAL LEU HG11 HD22 ? ? . . 
-138 1 751  3  0.15 1 1 A A 36  44  VAL LEU HG11 HD23 ? ? . . 
-139 1 751  3  0.15 1 1 A A 36  44  VAL LEU HG12 HD21 ? ? . . 
-140 1 751  3  0.15 1 1 A A 36  44  VAL LEU HG12 HD22 ? ? . . 
-141 1 751  3  0.15 1 1 A A 36  44  VAL LEU HG12 HD23 ? ? . . 
-142 1 751  3  0.15 1 1 A A 36  44  VAL LEU HG13 HD21 ? ? . . 
-143 1 751  3  0.15 1 1 A A 36  44  VAL LEU HG13 HD22 ? ? . . 
-144 1 751  3  0.15 1 1 A A 36  44  VAL LEU HG13 HD23 ? ? . . 
-145 1 655  7  0.15 1 1 A A 52  53  GLU GLU H    H    ? ? . . 
-146 1 391  3  0.15 1 1 A A 23  26  VAL LEU HG11 H    ? ? . . 
-147 1 391  3  0.15 1 1 A A 23  26  VAL LEU HG12 H    ? ? . . 
-148 1 391  3  0.15 1 1 A A 23  26  VAL LEU HG13 H    ? ? . . 
-149 1 384  16 0.15 1 1 A A 104 108 GLU ARG H    H    ? ? . . 
-150 1 194  11 0.15 1 1 A A 176 177 ILE ILE HD11 H    ? ? . . 
-151 1 194  11 0.15 1 1 A A 176 177 ILE ILE HD12 H    ? ? . . 
-152 1 194  11 0.15 1 1 A A 176 177 ILE ILE HD13 H    ? ? . . 
-153 1 192  19 0.15 1 1 A A 37  72  ARG LEU H    HD21 ? ? . . 
-154 1 192  19 0.15 1 1 A A 37  72  ARG LEU H    HD22 ? ? . . 
-155 1 192  19 0.15 1 1 A A 37  72  ARG LEU H    HD23 ? ? . . 
-156 1 98   20 0.14 1 1 A A 36  67  VAL GLY HG11 H    ? ? . . 
-157 1 98   20 0.14 1 1 A A 36  67  VAL GLY HG12 H    ? ? . . 
-158 1 98   20 0.14 1 1 A A 36  67  VAL GLY HG13 H    ? ? . . 
-159 1 942  14 0.14 1 1 A A 135 136 ASN LEU HD21 H    ? ? . . 
-160 1 942  14 0.14 1 1 A A 135 136 ASN LEU HD22 H    ? ? . . 
-161 1 93   16 0.14 1 1 A A 39  40  GLU GLY H    H    ? ? . . 
-162 1 901  8  0.14 1 1 A A 156 169 ILE LEU H    HD11 ? ? . . 
-163 1 901  8  0.14 1 1 A A 156 169 ILE LEU H    HD12 ? ? . . 
-164 1 901  8  0.14 1 1 A A 156 169 ILE LEU H    HD13 ? ? . . 
-165 1 90   9  0.14 1 1 A A 161 163 VAL GLY H    H    ? ? . . 
-166 1 860  7  0.14 1 1 A A 139 153 PHE VAL H    HG21 ? ? . . 
-167 1 860  7  0.14 1 1 A A 139 153 PHE VAL H    HG22 ? ? . . 
-168 1 860  7  0.14 1 1 A A 139 153 PHE VAL H    HG23 ? ? . . 
-169 1 820  9  0.14 1 1 A A 76  140 LEU ILE HD21 H    ? ? . . 
-170 1 820  9  0.14 1 1 A A 76  140 LEU ILE HD22 H    ? ? . . 
-171 1 820  9  0.14 1 1 A A 76  140 LEU ILE HD23 H    ? ? . . 
-172 1 808  10 0.14 1 1 A A 121 125 GLN VAL HE22 HG11 ? ? . . 
-173 1 808  10 0.14 1 1 A A 121 125 GLN VAL HE22 HG12 ? ? . . 
-174 1 808  10 0.14 1 1 A A 121 125 GLN VAL HE22 HG13 ? ? . . 
-175 1 79   4  0.14 1 1 A A 13  14  LEU SER H    H    ? ? . . 
-176 1 79   13 0.14 1 1 A A 13  14  LEU SER H    H    ? ? . . 
-177 1 766  10 0.14 1 1 A A 77  140 VAL ILE HG11 HD11 ? ? . . 
-178 1 766  10 0.14 1 1 A A 77  140 VAL ILE HG11 HD12 ? ? . . 
-179 1 766  10 0.14 1 1 A A 77  140 VAL ILE HG11 HD13 ? ? . . 
-180 1 766  10 0.14 1 1 A A 77  140 VAL ILE HG12 HD11 ? ? . . 
-181 1 766  10 0.14 1 1 A A 77  140 VAL ILE HG12 HD12 ? ? . . 
-182 1 766  10 0.14 1 1 A A 77  140 VAL ILE HG12 HD13 ? ? . . 
-183 1 766  10 0.14 1 1 A A 77  140 VAL ILE HG13 HD11 ? ? . . 
-184 1 766  10 0.14 1 1 A A 77  140 VAL ILE HG13 HD12 ? ? . . 
-185 1 766  10 0.14 1 1 A A 77  140 VAL ILE HG13 HD13 ? ? . . 
-186 1 76   2  0.14 1 1 A A 4   14  TYR SER HD1  H    ? ? . . 
-187 1 76   2  0.14 1 1 A A 4   14  TYR SER HD2  H    ? ? . . 
-188 1 650  1  0.14 1 1 A A 38  41  LYS GLU H    H    ? ? . . 
-189 1 391  9  0.14 1 1 A A 23  26  VAL LEU HG11 H    ? ? . . 
-190 1 391  9  0.14 1 1 A A 23  26  VAL LEU HG12 H    ? ? . . 
-191 1 391  9  0.14 1 1 A A 23  26  VAL LEU HG13 H    ? ? . . 
-192 1 288  2  0.14 1 1 A A 2   3   LEU ILE HD11 H    ? ? . . 
-193 1 288  2  0.14 1 1 A A 2   3   LEU ILE HD12 H    ? ? . . 
-194 1 288  2  0.14 1 1 A A 2   3   LEU ILE HD13 H    ? ? . . 
-195 1 174  18 0.14 1 1 A A 22  28  LEU TYR H    HD1  ? ? . . 
-196 1 174  18 0.14 1 1 A A 22  28  LEU TYR H    HD2  ? ? . . 
-197 1 1009 6  0.14 1 1 A A 155 170 ILE MET H    O    ? ? . . 
-198 1 1009 11 0.14 1 1 A A 155 170 ILE MET H    O    ? ? . . 
-199 1 977  3  0.13 1 1 A A 2   16  LEU ASP H    O    ? ? . . 
-200 1 951  10 0.13 1 1 A A 161 166 VAL VAL H    HG11 ? ? . . 
-201 1 951  10 0.13 1 1 A A 161 166 VAL VAL H    HG12 ? ? . . 
-202 1 951  10 0.13 1 1 A A 161 166 VAL VAL H    HG13 ? ? . . 
-203 1 951  10 0.13 1 1 A A 161 166 VAL VAL H    HG21 ? ? . . 
-204 1 951  10 0.13 1 1 A A 161 166 VAL VAL H    HG22 ? ? . . 
-205 1 951  10 0.13 1 1 A A 161 166 VAL VAL H    HG23 ? ? . . 
-206 1 950  14 0.13 1 1 A A 160 166 ASP VAL H    HG11 ? ? . . 
-207 1 950  14 0.13 1 1 A A 160 166 ASP VAL H    HG12 ? ? . . 
-208 1 950  14 0.13 1 1 A A 160 166 ASP VAL H    HG13 ? ? . . 
-209 1 950  14 0.13 1 1 A A 160 166 ASP VAL H    HG21 ? ? . . 
-210 1 950  14 0.13 1 1 A A 160 166 ASP VAL H    HG22 ? ? . . 
-211 1 950  14 0.13 1 1 A A 160 166 ASP VAL H    HG23 ? ? . . 
-212 1 93   2  0.13 1 1 A A 39  40  GLU GLY H    H    ? ? . . 
-213 1 874  14 0.13 1 1 A A 64  66  VAL ARG HG21 H    ? ? . . 
-214 1 874  14 0.13 1 1 A A 64  66  VAL ARG HG22 H    ? ? . . 
-215 1 874  14 0.13 1 1 A A 64  66  VAL ARG HG23 H    ? ? . . 
-216 1 862  14 0.13 1 1 A A 62  64  GLU VAL H    HG21 ? ? . . 
-217 1 862  14 0.13 1 1 A A 62  64  GLU VAL H    HG22 ? ? . . 
-218 1 862  14 0.13 1 1 A A 62  64  GLU VAL H    HG23 ? ? . . 
-219 1 860  15 0.13 1 1 A A 139 153 PHE VAL H    HG21 ? ? . . 
-220 1 860  15 0.13 1 1 A A 139 153 PHE VAL H    HG22 ? ? . . 
-221 1 860  15 0.13 1 1 A A 139 153 PHE VAL H    HG23 ? ? . . 
-222 1 860  16 0.13 1 1 A A 139 153 PHE VAL H    HG21 ? ? . . 
-223 1 860  16 0.13 1 1 A A 139 153 PHE VAL H    HG22 ? ? . . 
-224 1 860  16 0.13 1 1 A A 139 153 PHE VAL H    HG23 ? ? . . 
-225 1 860  19 0.13 1 1 A A 139 153 PHE VAL H    HG21 ? ? . . 
-226 1 860  19 0.13 1 1 A A 139 153 PHE VAL H    HG22 ? ? . . 
-227 1 860  19 0.13 1 1 A A 139 153 PHE VAL H    HG23 ? ? . . 
-228 1 797  15 0.13 1 1 A A 92  96  ILE MET HD11 H    ? ? . . 
-229 1 797  15 0.13 1 1 A A 92  96  ILE MET HD12 H    ? ? . . 
-230 1 797  15 0.13 1 1 A A 92  96  ILE MET HD13 H    ? ? . . 
-231 1 756  9  0.13 1 1 A A 2   182 LEU LEU HD21 HD21 ? ? . . 
-232 1 756  9  0.13 1 1 A A 2   182 LEU LEU HD21 HD22 ? ? . . 
-233 1 756  9  0.13 1 1 A A 2   182 LEU LEU HD21 HD23 ? ? . . 
-234 1 756  9  0.13 1 1 A A 2   182 LEU LEU HD22 HD21 ? ? . . 
-235 1 756  9  0.13 1 1 A A 2   182 LEU LEU HD22 HD22 ? ? . . 
-236 1 756  9  0.13 1 1 A A 2   182 LEU LEU HD22 HD23 ? ? . . 
-237 1 756  9  0.13 1 1 A A 2   182 LEU LEU HD23 HD21 ? ? . . 
-238 1 756  9  0.13 1 1 A A 2   182 LEU LEU HD23 HD22 ? ? . . 
-239 1 756  9  0.13 1 1 A A 2   182 LEU LEU HD23 HD23 ? ? . . 
-240 1 743  20 0.13 1 1 A A 42  44  ILE LEU HD11 HD11 ? ? . . 
-241 1 743  20 0.13 1 1 A A 42  44  ILE LEU HD11 HD12 ? ? . . 
-242 1 743  20 0.13 1 1 A A 42  44  ILE LEU HD11 HD13 ? ? . . 
-243 1 743  20 0.13 1 1 A A 42  44  ILE LEU HD12 HD11 ? ? . . 
-244 1 743  20 0.13 1 1 A A 42  44  ILE LEU HD12 HD12 ? ? . . 
-245 1 743  20 0.13 1 1 A A 42  44  ILE LEU HD12 HD13 ? ? . . 
-246 1 743  20 0.13 1 1 A A 42  44  ILE LEU HD13 HD11 ? ? . . 
-247 1 743  20 0.13 1 1 A A 42  44  ILE LEU HD13 HD12 ? ? . . 
-248 1 743  20 0.13 1 1 A A 42  44  ILE LEU HD13 HD13 ? ? . . 
-249 1 609  2  0.13 1 1 A A 80  82  ASN TYR H    H    ? ? . . 
-250 1 601  9  0.13 1 1 A A 28  171 TYR LEU HD1  HD11 ? ? . . 
-251 1 601  9  0.13 1 1 A A 28  171 TYR LEU HD1  HD12 ? ? . . 
-252 1 601  9  0.13 1 1 A A 28  171 TYR LEU HD1  HD13 ? ? . . 
-253 1 601  9  0.13 1 1 A A 28  171 TYR LEU HD2  HD11 ? ? . . 
-254 1 601  9  0.13 1 1 A A 28  171 TYR LEU HD2  HD12 ? ? . . 
-255 1 601  9  0.13 1 1 A A 28  171 TYR LEU HD2  HD13 ? ? . . 
-256 1 517  3  0.13 1 1 A A 127 133 LEU PHE HD11 HD1  ? ? . . 
-257 1 517  3  0.13 1 1 A A 127 133 LEU PHE HD11 HD2  ? ? . . 
-258 1 517  3  0.13 1 1 A A 127 133 LEU PHE HD12 HD1  ? ? . . 
-259 1 517  3  0.13 1 1 A A 127 133 LEU PHE HD12 HD2  ? ? . . 
-260 1 517  3  0.13 1 1 A A 127 133 LEU PHE HD13 HD1  ? ? . . 
-261 1 517  3  0.13 1 1 A A 127 133 LEU PHE HD13 HD2  ? ? . . 
-262 1 517  4  0.13 1 1 A A 127 133 LEU PHE HD11 HD1  ? ? . . 
-263 1 517  4  0.13 1 1 A A 127 133 LEU PHE HD11 HD2  ? ? . . 
-264 1 517  4  0.13 1 1 A A 127 133 LEU PHE HD12 HD1  ? ? . . 
-265 1 517  4  0.13 1 1 A A 127 133 LEU PHE HD12 HD2  ? ? . . 
-266 1 517  4  0.13 1 1 A A 127 133 LEU PHE HD13 HD1  ? ? . . 
-267 1 517  4  0.13 1 1 A A 127 133 LEU PHE HD13 HD2  ? ? . . 
-268 1 500  20 0.13 1 1 A A 138 153 PHE VAL HD1  HG21 ? ? . . 
-269 1 500  20 0.13 1 1 A A 138 153 PHE VAL HD1  HG22 ? ? . . 
-270 1 500  20 0.13 1 1 A A 138 153 PHE VAL HD1  HG23 ? ? . . 
-271 1 500  20 0.13 1 1 A A 138 153 PHE VAL HD2  HG21 ? ? . . 
-272 1 500  20 0.13 1 1 A A 138 153 PHE VAL HD2  HG22 ? ? . . 
-273 1 500  20 0.13 1 1 A A 138 153 PHE VAL HD2  HG23 ? ? . . 
-274 1 391  12 0.13 1 1 A A 23  26  VAL LEU HG11 H    ? ? . . 
-275 1 391  12 0.13 1 1 A A 23  26  VAL LEU HG12 H    ? ? . . 
-276 1 391  12 0.13 1 1 A A 23  26  VAL LEU HG13 H    ? ? . . 
-277 1 388  12 0.13 1 1 A A 116 174 PHE GLU HD1  H    ? ? . . 
-278 1 388  12 0.13 1 1 A A 116 174 PHE GLU HD2  H    ? ? . . 
-279 1 291  4  0.13 1 1 A A 182 183 LEU GLU HD21 H    ? ? . . 
-280 1 291  4  0.13 1 1 A A 182 183 LEU GLU HD22 H    ? ? . . 
-281 1 291  4  0.13 1 1 A A 182 183 LEU GLU HD23 H    ? ? . . 
-282 1 107  9  0.13 1 1 A A 54  55  GLY ALA H    H    ? ? . . 
-283 1 1009 17 0.13 1 1 A A 155 170 ILE MET H    O    ? ? . . 
-284 1 995  7  0.12 1 1 A A 79  138 MET PHE O    H    ? ? . . 
-285 1 963  7  0.12 1 1 A A 100 113 ILE VAL HD11 HG11 ? ? . . 
-286 1 963  7  0.12 1 1 A A 100 113 ILE VAL HD11 HG12 ? ? . . 
-287 1 963  7  0.12 1 1 A A 100 113 ILE VAL HD11 HG13 ? ? . . 
-288 1 963  7  0.12 1 1 A A 100 113 ILE VAL HD12 HG11 ? ? . . 
-289 1 963  7  0.12 1 1 A A 100 113 ILE VAL HD12 HG12 ? ? . . 
-290 1 963  7  0.12 1 1 A A 100 113 ILE VAL HD12 HG13 ? ? . . 
-291 1 963  7  0.12 1 1 A A 100 113 ILE VAL HD13 HG11 ? ? . . 
-292 1 963  7  0.12 1 1 A A 100 113 ILE VAL HD13 HG12 ? ? . . 
-293 1 963  7  0.12 1 1 A A 100 113 ILE VAL HD13 HG13 ? ? . . 
-294 1 960  7  0.12 1 1 A A 113 100 VAL ILE HG11 HD11 ? ? . . 
-295 1 960  7  0.12 1 1 A A 113 100 VAL ILE HG11 HD12 ? ? . . 
-296 1 960  7  0.12 1 1 A A 113 100 VAL ILE HG11 HD13 ? ? . . 
-297 1 960  7  0.12 1 1 A A 113 100 VAL ILE HG12 HD11 ? ? . . 
-298 1 960  7  0.12 1 1 A A 113 100 VAL ILE HG12 HD12 ? ? . . 
-299 1 960  7  0.12 1 1 A A 113 100 VAL ILE HG12 HD13 ? ? . . 
-300 1 960  7  0.12 1 1 A A 113 100 VAL ILE HG13 HD11 ? ? . . 
-301 1 960  7  0.12 1 1 A A 113 100 VAL ILE HG13 HD12 ? ? . . 
-302 1 960  7  0.12 1 1 A A 113 100 VAL ILE HG13 HD13 ? ? . . 
-303 1 93   8  0.12 1 1 A A 39  40  GLU GLY H    H    ? ? . . 
-304 1 93   18 0.12 1 1 A A 39  40  GLU GLY H    H    ? ? . . 
-305 1 874  15 0.12 1 1 A A 64  66  VAL ARG HG21 H    ? ? . . 
-306 1 874  15 0.12 1 1 A A 64  66  VAL ARG HG22 H    ? ? . . 
-307 1 874  15 0.12 1 1 A A 64  66  VAL ARG HG23 H    ? ? . . 
-308 1 862  4  0.12 1 1 A A 62  64  GLU VAL H    HG21 ? ? . . 
-309 1 862  4  0.12 1 1 A A 62  64  GLU VAL H    HG22 ? ? . . 
-310 1 862  4  0.12 1 1 A A 62  64  GLU VAL H    HG23 ? ? . . 
-311 1 860  8  0.12 1 1 A A 139 153 PHE VAL H    HG21 ? ? . . 
-312 1 860  8  0.12 1 1 A A 139 153 PHE VAL H    HG22 ? ? . . 
-313 1 860  8  0.12 1 1 A A 139 153 PHE VAL H    HG23 ? ? . . 
-314 1 832  20 0.12 1 1 A A 120 174 ILE GLU HD11 H    ? ? . . 
-315 1 832  20 0.12 1 1 A A 120 174 ILE GLU HD12 H    ? ? . . 
-316 1 832  20 0.12 1 1 A A 120 174 ILE GLU HD13 H    ? ? . . 
-317 1 829  12 0.12 1 1 A A 124 128 VAL LEU HG11 H    ? ? . . 
-318 1 829  12 0.12 1 1 A A 124 128 VAL LEU HG12 H    ? ? . . 
-319 1 829  12 0.12 1 1 A A 124 128 VAL LEU HG13 H    ? ? . . 
-320 1 829  13 0.12 1 1 A A 124 128 VAL LEU HG11 H    ? ? . . 
-321 1 829  13 0.12 1 1 A A 124 128 VAL LEU HG12 H    ? ? . . 
-322 1 829  13 0.12 1 1 A A 124 128 VAL LEU HG13 H    ? ? . . 
-323 1 814  9  0.12 1 1 A A 27  173 VAL LYS HG11 H    ? ? . . 
-324 1 814  9  0.12 1 1 A A 27  173 VAL LYS HG12 H    ? ? . . 
-325 1 814  9  0.12 1 1 A A 27  173 VAL LYS HG13 H    ? ? . . 
-326 1 79   20 0.12 1 1 A A 13  14  LEU SER H    H    ? ? . . 
-327 1 648  3  0.12 1 1 A A 56  57  GLU ASP H    H    ? ? . . 
-328 1 553  19 0.12 1 1 A A 124 128 VAL LEU HG11 HD21 ? ? . . 
-329 1 553  19 0.12 1 1 A A 124 128 VAL LEU HG11 HD22 ? ? . . 
-330 1 553  19 0.12 1 1 A A 124 128 VAL LEU HG11 HD23 ? ? . . 
-331 1 553  19 0.12 1 1 A A 124 128 VAL LEU HG12 HD21 ? ? . . 
-332 1 553  19 0.12 1 1 A A 124 128 VAL LEU HG12 HD22 ? ? . . 
-333 1 553  19 0.12 1 1 A A 124 128 VAL LEU HG12 HD23 ? ? . . 
-334 1 553  19 0.12 1 1 A A 124 128 VAL LEU HG13 HD21 ? ? . . 
-335 1 553  19 0.12 1 1 A A 124 128 VAL LEU HG13 HD22 ? ? . . 
-336 1 553  19 0.12 1 1 A A 124 128 VAL LEU HG13 HD23 ? ? . . 
-337 1 540  8  0.12 1 1 A A 133 136 PHE LEU HD1  HD21 ? ? . . 
-338 1 540  8  0.12 1 1 A A 133 136 PHE LEU HD1  HD22 ? ? . . 
-339 1 540  8  0.12 1 1 A A 133 136 PHE LEU HD1  HD23 ? ? . . 
-340 1 540  8  0.12 1 1 A A 133 136 PHE LEU HD2  HD21 ? ? . . 
-341 1 540  8  0.12 1 1 A A 133 136 PHE LEU HD2  HD22 ? ? . . 
-342 1 540  8  0.12 1 1 A A 133 136 PHE LEU HD2  HD23 ? ? . . 
-343 1 540  17 0.12 1 1 A A 133 136 PHE LEU HD1  HD21 ? ? . . 
-344 1 540  17 0.12 1 1 A A 133 136 PHE LEU HD1  HD22 ? ? . . 
-345 1 540  17 0.12 1 1 A A 133 136 PHE LEU HD1  HD23 ? ? . . 
-346 1 540  17 0.12 1 1 A A 133 136 PHE LEU HD2  HD21 ? ? . . 
-347 1 540  17 0.12 1 1 A A 133 136 PHE LEU HD2  HD22 ? ? . . 
-348 1 540  17 0.12 1 1 A A 133 136 PHE LEU HD2  HD23 ? ? . . 
-349 1 500  10 0.12 1 1 A A 138 153 PHE VAL HD1  HG21 ? ? . . 
-350 1 500  10 0.12 1 1 A A 138 153 PHE VAL HD1  HG22 ? ? . . 
-351 1 500  10 0.12 1 1 A A 138 153 PHE VAL HD1  HG23 ? ? . . 
-352 1 500  10 0.12 1 1 A A 138 153 PHE VAL HD2  HG21 ? ? . . 
-353 1 500  10 0.12 1 1 A A 138 153 PHE VAL HD2  HG22 ? ? . . 
-354 1 500  10 0.12 1 1 A A 138 153 PHE VAL HD2  HG23 ? ? . . 
-355 1 500  16 0.12 1 1 A A 138 153 PHE VAL HD1  HG21 ? ? . . 
-356 1 500  16 0.12 1 1 A A 138 153 PHE VAL HD1  HG22 ? ? . . 
-357 1 500  16 0.12 1 1 A A 138 153 PHE VAL HD1  HG23 ? ? . . 
-358 1 500  16 0.12 1 1 A A 138 153 PHE VAL HD2  HG21 ? ? . . 
-359 1 500  16 0.12 1 1 A A 138 153 PHE VAL HD2  HG22 ? ? . . 
-360 1 500  16 0.12 1 1 A A 138 153 PHE VAL HD2  HG23 ? ? . . 
-361 1 449  9  0.12 1 1 A A 4   15  TYR SER HD1  H    ? ? . . 
-362 1 449  9  0.12 1 1 A A 4   15  TYR SER HD2  H    ? ? . . 
-363 1 40   9  0.12 1 1 A A 158 158 TYR TYR H    HD1  ? ? . . 
-364 1 40   9  0.12 1 1 A A 158 158 TYR TYR H    HD2  ? ? . . 
-365 1 391  10 0.12 1 1 A A 23  26  VAL LEU HG11 H    ? ? . . 
-366 1 391  10 0.12 1 1 A A 23  26  VAL LEU HG12 H    ? ? . . 
-367 1 391  10 0.12 1 1 A A 23  26  VAL LEU HG13 H    ? ? . . 
-368 1 341  13 0.12 1 1 A A 95  98  PHE ASN HD1  H    ? ? . . 
-369 1 341  13 0.12 1 1 A A 95  98  PHE ASN HD2  H    ? ? . . 
-370 1 341  18 0.12 1 1 A A 95  98  PHE ASN HD1  H    ? ? . . 
-371 1 341  18 0.12 1 1 A A 95  98  PHE ASN HD2  H    ? ? . . 
-372 1 265  11 0.12 1 1 A A 70  72  ILE LEU H    HD11 ? ? . . 
-373 1 265  11 0.12 1 1 A A 70  72  ILE LEU H    HD12 ? ? . . 
-374 1 265  11 0.12 1 1 A A 70  72  ILE LEU H    HD13 ? ? . . 
-375 1 223  14 0.12 1 1 A A 6   13  ASP LEU H    HD11 ? ? . . 
-376 1 223  14 0.12 1 1 A A 6   13  ASP LEU H    HD12 ? ? . . 
-377 1 223  14 0.12 1 1 A A 6   13  ASP LEU H    HD13 ? ? . . 
-378 1 222  7  0.12 1 1 A A 109 113 ASP VAL H    HG21 ? ? . . 
-379 1 222  7  0.12 1 1 A A 109 113 ASP VAL H    HG22 ? ? . . 
-380 1 222  7  0.12 1 1 A A 109 113 ASP VAL H    HG23 ? ? . . 
-381 1 159  18 0.12 1 1 A A 2   179 LEU GLU HD11 H    ? ? . . 
-382 1 159  18 0.12 1 1 A A 2   179 LEU GLU HD12 H    ? ? . . 
-383 1 159  18 0.12 1 1 A A 2   179 LEU GLU HD13 H    ? ? . . 
-384 1 148  5  0.12 1 1 A A 71  78  VAL GLU HG11 H    ? ? . . 
-385 1 148  5  0.12 1 1 A A 71  78  VAL GLU HG12 H    ? ? . . 
-386 1 148  5  0.12 1 1 A A 71  78  VAL GLU HG13 H    ? ? . . 
-387 1 116  2  0.12 1 1 A A 74  76  HIS LEU H    HD11 ? ? . . 
-388 1 116  2  0.12 1 1 A A 74  76  HIS LEU H    HD12 ? ? . . 
-389 1 116  2  0.12 1 1 A A 74  76  HIS LEU H    HD13 ? ? . . 
-390 1 105  4  0.12 1 1 A A 127 128 LEU LEU HD21 H    ? ? . . 
-391 1 105  4  0.12 1 1 A A 127 128 LEU LEU HD22 H    ? ? . . 
-392 1 105  4  0.12 1 1 A A 127 128 LEU LEU HD23 H    ? ? . . 
-393 1 100  4  0.12 1 1 A A 58  59  ASP GLY H    H    ? ? . . 
-394 1 950  5  0.11 1 1 A A 160 166 ASP VAL H    HG11 ? ? . . 
-395 1 950  5  0.11 1 1 A A 160 166 ASP VAL H    HG12 ? ? . . 
-396 1 950  5  0.11 1 1 A A 160 166 ASP VAL H    HG13 ? ? . . 
-397 1 950  5  0.11 1 1 A A 160 166 ASP VAL H    HG21 ? ? . . 
-398 1 950  5  0.11 1 1 A A 160 166 ASP VAL H    HG22 ? ? . . 
-399 1 950  5  0.11 1 1 A A 160 166 ASP VAL H    HG23 ? ? . . 
-400 1 93   13 0.11 1 1 A A 39  40  GLU GLY H    H    ? ? . . 
-401 1 874  16 0.11 1 1 A A 64  66  VAL ARG HG21 H    ? ? . . 
-402 1 874  16 0.11 1 1 A A 64  66  VAL ARG HG22 H    ? ? . . 
-403 1 874  16 0.11 1 1 A A 64  66  VAL ARG HG23 H    ? ? . . 
-404 1 798  5  0.11 1 1 A A 169 170 LEU MET HD21 H    ? ? . . 
-405 1 798  5  0.11 1 1 A A 169 170 LEU MET HD22 H    ? ? . . 
-406 1 798  5  0.11 1 1 A A 169 170 LEU MET HD23 H    ? ? . . 
-407 1 663  5  0.11 1 1 A A 149 151 GLU GLY H    H    ? ? . . 
-408 1 663  13 0.11 1 1 A A 149 151 GLU GLY H    H    ? ? . . 
-409 1 663  14 0.11 1 1 A A 149 151 GLU GLY H    H    ? ? . . 
-410 1 648  1  0.11 1 1 A A 56  57  GLU ASP H    H    ? ? . . 
-411 1 609  12 0.11 1 1 A A 80  82  ASN TYR H    H    ? ? . . 
-412 1 561  17 0.11 1 1 A A 28  176 TYR ILE HD1  HD11 ? ? . . 
-413 1 561  17 0.11 1 1 A A 28  176 TYR ILE HD1  HD12 ? ? . . 
-414 1 561  17 0.11 1 1 A A 28  176 TYR ILE HD1  HD13 ? ? . . 
-415 1 561  17 0.11 1 1 A A 28  176 TYR ILE HD2  HD11 ? ? . . 
-416 1 561  17 0.11 1 1 A A 28  176 TYR ILE HD2  HD12 ? ? . . 
-417 1 561  17 0.11 1 1 A A 28  176 TYR ILE HD2  HD13 ? ? . . 
-418 1 553  20 0.11 1 1 A A 124 128 VAL LEU HG11 HD21 ? ? . . 
-419 1 553  20 0.11 1 1 A A 124 128 VAL LEU HG11 HD22 ? ? . . 
-420 1 553  20 0.11 1 1 A A 124 128 VAL LEU HG11 HD23 ? ? . . 
-421 1 553  20 0.11 1 1 A A 124 128 VAL LEU HG12 HD21 ? ? . . 
-422 1 553  20 0.11 1 1 A A 124 128 VAL LEU HG12 HD22 ? ? . . 
-423 1 553  20 0.11 1 1 A A 124 128 VAL LEU HG12 HD23 ? ? . . 
-424 1 553  20 0.11 1 1 A A 124 128 VAL LEU HG13 HD21 ? ? . . 
-425 1 553  20 0.11 1 1 A A 124 128 VAL LEU HG13 HD22 ? ? . . 
-426 1 553  20 0.11 1 1 A A 124 128 VAL LEU HG13 HD23 ? ? . . 
-427 1 552  9  0.11 1 1 A A 13  169 LEU LEU HD21 HD21 ? ? . . 
-428 1 552  9  0.11 1 1 A A 13  169 LEU LEU HD21 HD22 ? ? . . 
-429 1 552  9  0.11 1 1 A A 13  169 LEU LEU HD21 HD23 ? ? . . 
-430 1 552  9  0.11 1 1 A A 13  169 LEU LEU HD22 HD21 ? ? . . 
-431 1 552  9  0.11 1 1 A A 13  169 LEU LEU HD22 HD22 ? ? . . 
-432 1 552  9  0.11 1 1 A A 13  169 LEU LEU HD22 HD23 ? ? . . 
-433 1 552  9  0.11 1 1 A A 13  169 LEU LEU HD23 HD21 ? ? . . 
-434 1 552  9  0.11 1 1 A A 13  169 LEU LEU HD23 HD22 ? ? . . 
-435 1 552  9  0.11 1 1 A A 13  169 LEU LEU HD23 HD23 ? ? . . 
-436 1 540  3  0.11 1 1 A A 133 136 PHE LEU HD1  HD21 ? ? . . 
-437 1 540  3  0.11 1 1 A A 133 136 PHE LEU HD1  HD22 ? ? . . 
-438 1 540  3  0.11 1 1 A A 133 136 PHE LEU HD1  HD23 ? ? . . 
-439 1 540  3  0.11 1 1 A A 133 136 PHE LEU HD2  HD21 ? ? . . 
-440 1 540  3  0.11 1 1 A A 133 136 PHE LEU HD2  HD22 ? ? . . 
-441 1 540  3  0.11 1 1 A A 133 136 PHE LEU HD2  HD23 ? ? . . 
-442 1 391  20 0.11 1 1 A A 23  26  VAL LEU HG11 H    ? ? . . 
-443 1 391  20 0.11 1 1 A A 23  26  VAL LEU HG12 H    ? ? . . 
-444 1 391  20 0.11 1 1 A A 23  26  VAL LEU HG13 H    ? ? . . 
-445 1 291  19 0.11 1 1 A A 182 183 LEU GLU HD21 H    ? ? . . 
-446 1 291  19 0.11 1 1 A A 182 183 LEU GLU HD22 H    ? ? . . 
-447 1 291  19 0.11 1 1 A A 182 183 LEU GLU HD23 H    ? ? . . 
-448 1 265  18 0.11 1 1 A A 70  72  ILE LEU H    HD11 ? ? . . 
-449 1 265  18 0.11 1 1 A A 70  72  ILE LEU H    HD12 ? ? . . 
-450 1 265  18 0.11 1 1 A A 70  72  ILE LEU H    HD13 ? ? . . 
-451 1 241  7  0.11 1 1 A A 37  66  ARG ARG H    H    ? ? . . 
-452 1 183  7  0.11 1 1 A A 171 172 LEU VAL HD21 H    ? ? . . 
-453 1 183  7  0.11 1 1 A A 171 172 LEU VAL HD22 H    ? ? . . 
-454 1 183  7  0.11 1 1 A A 171 172 LEU VAL HD23 H    ? ? . . 
-455 1 160  3  0.11 1 1 A A 44  44  LEU LEU H    HD11 ? ? . . 
-456 1 160  3  0.11 1 1 A A 44  44  LEU LEU H    HD12 ? ? . . 
-457 1 160  3  0.11 1 1 A A 44  44  LEU LEU H    HD13 ? ? . . 
-458 1 1033 13 0.11 1 1 A A 35  67  VAL GLY O    H    ? ? . . 
-459 1 1009 5  0.11 1 1 A A 155 170 ILE MET H    O    ? ? . . 
+1   1 950  10 0.33 1 1 A A 160 166 ASP VAL H    HG11 A A 160 166 ? ? . . 
+2   1 950  10 0.33 1 1 A A 160 166 ASP VAL H    HG12 A A 160 166 ? ? . . 
+3   1 950  10 0.33 1 1 A A 160 166 ASP VAL H    HG13 A A 160 166 ? ? . . 
+4   1 950  10 0.33 1 1 A A 160 166 ASP VAL H    HG21 A A 160 166 ? ? . . 
+5   1 950  10 0.33 1 1 A A 160 166 ASP VAL H    HG22 A A 160 166 ? ? . . 
+6   1 950  10 0.33 1 1 A A 160 166 ASP VAL H    HG23 A A 160 166 ? ? . . 
+7   1 455  14 0.32 1 1 A A 8   11  PHE ASP H    H    A A 8   11  ? ? . . 
+8   1 874  20 0.31 1 1 A A 64  66  VAL ARG HG21 H    A A 64  66  ? ? . . 
+9   1 874  20 0.31 1 1 A A 64  66  VAL ARG HG22 H    A A 64  66  ? ? . . 
+10  1 874  20 0.31 1 1 A A 64  66  VAL ARG HG23 H    A A 64  66  ? ? . . 
+11  1 50   4  0.27 1 1 A A 80  80  ASN ASN H    HD22 A A 80  80  ? ? . . 
+12  1 455  11 0.27 1 1 A A 8   11  PHE ASP H    H    A A 8   11  ? ? . . 
+13  1 79   18 0.26 1 1 A A 13  14  LEU SER H    H    A A 13  14  ? ? . . 
+14  1 50   12 0.26 1 1 A A 80  80  ASN ASN H    HD22 A A 80  80  ? ? . . 
+15  1 751  9  0.25 1 1 A A 36  44  VAL LEU HG11 HD21 A A 36  44  ? ? . . 
+16  1 751  9  0.25 1 1 A A 36  44  VAL LEU HG11 HD22 A A 36  44  ? ? . . 
+17  1 751  9  0.25 1 1 A A 36  44  VAL LEU HG11 HD23 A A 36  44  ? ? . . 
+18  1 751  9  0.25 1 1 A A 36  44  VAL LEU HG12 HD21 A A 36  44  ? ? . . 
+19  1 751  9  0.25 1 1 A A 36  44  VAL LEU HG12 HD22 A A 36  44  ? ? . . 
+20  1 751  9  0.25 1 1 A A 36  44  VAL LEU HG12 HD23 A A 36  44  ? ? . . 
+21  1 751  9  0.25 1 1 A A 36  44  VAL LEU HG13 HD21 A A 36  44  ? ? . . 
+22  1 751  9  0.25 1 1 A A 36  44  VAL LEU HG13 HD22 A A 36  44  ? ? . . 
+23  1 751  9  0.25 1 1 A A 36  44  VAL LEU HG13 HD23 A A 36  44  ? ? . . 
+24  1 455  1  0.25 1 1 A A 8   11  PHE ASP H    H    A A 8   11  ? ? . . 
+25  1 455  2  0.25 1 1 A A 8   11  PHE ASP H    H    A A 8   11  ? ? . . 
+26  1 455  3  0.25 1 1 A A 8   11  PHE ASP H    H    A A 8   11  ? ? . . 
+27  1 101  17 0.25 1 1 A A 150 151 ASN GLY H    H    A A 150 151 ? ? . . 
+28  1 950  20 0.23 1 1 A A 160 166 ASP VAL H    HG11 A A 160 166 ? ? . . 
+29  1 950  20 0.23 1 1 A A 160 166 ASP VAL H    HG12 A A 160 166 ? ? . . 
+30  1 950  20 0.23 1 1 A A 160 166 ASP VAL H    HG13 A A 160 166 ? ? . . 
+31  1 950  20 0.23 1 1 A A 160 166 ASP VAL H    HG21 A A 160 166 ? ? . . 
+32  1 950  20 0.23 1 1 A A 160 166 ASP VAL H    HG22 A A 160 166 ? ? . . 
+33  1 950  20 0.23 1 1 A A 160 166 ASP VAL H    HG23 A A 160 166 ? ? . . 
+34  1 455  10 0.23 1 1 A A 8   11  PHE ASP H    H    A A 8   11  ? ? . . 
+35  1 455  20 0.23 1 1 A A 8   11  PHE ASP H    H    A A 8   11  ? ? . . 
+36  1 322  20 0.23 1 1 A A 28  171 TYR LEU HD1  H    A A 28  171 ? ? . . 
+37  1 322  20 0.23 1 1 A A 28  171 TYR LEU HD2  H    A A 28  171 ? ? . . 
+38  1 79   10 0.22 1 1 A A 13  14  LEU SER H    H    A A 13  14  ? ? . . 
+39  1 455  18 0.22 1 1 A A 8   11  PHE ASP H    H    A A 8   11  ? ? . . 
+40  1 874  13 0.21 1 1 A A 64  66  VAL ARG HG21 H    A A 64  66  ? ? . . 
+41  1 874  13 0.21 1 1 A A 64  66  VAL ARG HG22 H    A A 64  66  ? ? . . 
+42  1 874  13 0.21 1 1 A A 64  66  VAL ARG HG23 H    A A 64  66  ? ? . . 
+43  1 751  19 0.21 1 1 A A 36  44  VAL LEU HG11 HD21 A A 36  44  ? ? . . 
+44  1 751  19 0.21 1 1 A A 36  44  VAL LEU HG11 HD22 A A 36  44  ? ? . . 
+45  1 751  19 0.21 1 1 A A 36  44  VAL LEU HG11 HD23 A A 36  44  ? ? . . 
+46  1 751  19 0.21 1 1 A A 36  44  VAL LEU HG12 HD21 A A 36  44  ? ? . . 
+47  1 751  19 0.21 1 1 A A 36  44  VAL LEU HG12 HD22 A A 36  44  ? ? . . 
+48  1 751  19 0.21 1 1 A A 36  44  VAL LEU HG12 HD23 A A 36  44  ? ? . . 
+49  1 751  19 0.21 1 1 A A 36  44  VAL LEU HG13 HD21 A A 36  44  ? ? . . 
+50  1 751  19 0.21 1 1 A A 36  44  VAL LEU HG13 HD22 A A 36  44  ? ? . . 
+51  1 751  19 0.21 1 1 A A 36  44  VAL LEU HG13 HD23 A A 36  44  ? ? . . 
+52  1 455  16 0.21 1 1 A A 8   11  PHE ASP H    H    A A 8   11  ? ? . . 
+53  1 415  3  0.21 1 1 A A 131 134 ASP LYS H    H    A A 131 134 ? ? . . 
+54  1 100  6  0.21 1 1 A A 58  59  ASP GLY H    H    A A 58  59  ? ? . . 
+55  1 455  12 0.2  1 1 A A 8   11  PHE ASP H    H    A A 8   11  ? ? . . 
+56  1 241  13 0.2  1 1 A A 37  66  ARG ARG H    H    A A 37  66  ? ? . . 
+57  1 874  2  0.19 1 1 A A 64  66  VAL ARG HG21 H    A A 64  66  ? ? . . 
+58  1 874  2  0.19 1 1 A A 64  66  VAL ARG HG22 H    A A 64  66  ? ? . . 
+59  1 874  2  0.19 1 1 A A 64  66  VAL ARG HG23 H    A A 64  66  ? ? . . 
+60  1 243  11 0.19 1 1 A A 66  72  ARG LEU H    HD21 A A 66  72  ? ? . . 
+61  1 243  11 0.19 1 1 A A 66  72  ARG LEU H    HD22 A A 66  72  ? ? . . 
+62  1 243  11 0.19 1 1 A A 66  72  ARG LEU H    HD23 A A 66  72  ? ? . . 
+63  1 647  13 0.18 1 1 A A 103 105 MET LYS H    H    A A 103 105 ? ? . . 
+64  1 463  14 0.18 1 1 A A 16  18  ASP PHE H    H    A A 16  18  ? ? . . 
+65  1 243  17 0.18 1 1 A A 66  72  ARG LEU H    HD21 A A 66  72  ? ? . . 
+66  1 243  17 0.18 1 1 A A 66  72  ARG LEU H    HD22 A A 66  72  ? ? . . 
+67  1 243  17 0.18 1 1 A A 66  72  ARG LEU H    HD23 A A 66  72  ? ? . . 
+68  1 191  18 0.18 1 1 A A 64  65  VAL GLU HG11 H    A A 64  65  ? ? . . 
+69  1 191  18 0.18 1 1 A A 64  65  VAL GLU HG12 H    A A 64  65  ? ? . . 
+70  1 191  18 0.18 1 1 A A 64  65  VAL GLU HG13 H    A A 64  65  ? ? . . 
+71  1 950  7  0.17 1 1 A A 160 166 ASP VAL H    HG11 A A 160 166 ? ? . . 
+72  1 950  7  0.17 1 1 A A 160 166 ASP VAL H    HG12 A A 160 166 ? ? . . 
+73  1 950  7  0.17 1 1 A A 160 166 ASP VAL H    HG13 A A 160 166 ? ? . . 
+74  1 950  7  0.17 1 1 A A 160 166 ASP VAL H    HG21 A A 160 166 ? ? . . 
+75  1 950  7  0.17 1 1 A A 160 166 ASP VAL H    HG22 A A 160 166 ? ? . . 
+76  1 950  7  0.17 1 1 A A 160 166 ASP VAL H    HG23 A A 160 166 ? ? . . 
+77  1 950  13 0.17 1 1 A A 160 166 ASP VAL H    HG11 A A 160 166 ? ? . . 
+78  1 950  13 0.17 1 1 A A 160 166 ASP VAL H    HG12 A A 160 166 ? ? . . 
+79  1 950  13 0.17 1 1 A A 160 166 ASP VAL H    HG13 A A 160 166 ? ? . . 
+80  1 950  13 0.17 1 1 A A 160 166 ASP VAL H    HG21 A A 160 166 ? ? . . 
+81  1 950  13 0.17 1 1 A A 160 166 ASP VAL H    HG22 A A 160 166 ? ? . . 
+82  1 950  13 0.17 1 1 A A 160 166 ASP VAL H    HG23 A A 160 166 ? ? . . 
+83  1 93   6  0.17 1 1 A A 39  40  GLU GLY H    H    A A 39  40  ? ? . . 
+84  1 919  7  0.17 1 1 A A 18  73  PHE ASN HZ   HD21 A A 18  73  ? ? . . 
+85  1 919  7  0.17 1 1 A A 18  73  PHE ASN HZ   HD22 A A 18  73  ? ? . . 
+86  1 730  11 0.17 1 1 A A 27  120 VAL ILE HG11 HD11 A A 27  120 ? ? . . 
+87  1 730  11 0.17 1 1 A A 27  120 VAL ILE HG11 HD12 A A 27  120 ? ? . . 
+88  1 730  11 0.17 1 1 A A 27  120 VAL ILE HG11 HD13 A A 27  120 ? ? . . 
+89  1 730  11 0.17 1 1 A A 27  120 VAL ILE HG12 HD11 A A 27  120 ? ? . . 
+90  1 730  11 0.17 1 1 A A 27  120 VAL ILE HG12 HD12 A A 27  120 ? ? . . 
+91  1 730  11 0.17 1 1 A A 27  120 VAL ILE HG12 HD13 A A 27  120 ? ? . . 
+92  1 730  11 0.17 1 1 A A 27  120 VAL ILE HG13 HD11 A A 27  120 ? ? . . 
+93  1 730  11 0.17 1 1 A A 27  120 VAL ILE HG13 HD12 A A 27  120 ? ? . . 
+94  1 730  11 0.17 1 1 A A 27  120 VAL ILE HG13 HD13 A A 27  120 ? ? . . 
+95  1 455  19 0.17 1 1 A A 8   11  PHE ASP H    H    A A 8   11  ? ? . . 
+96  1 415  8  0.17 1 1 A A 131 134 ASP LYS H    H    A A 131 134 ? ? . . 
+97  1 405  8  0.17 1 1 A A 24  25  ASP ASP H    H    A A 24  25  ? ? . . 
+98  1 241  10 0.17 1 1 A A 37  66  ARG ARG H    H    A A 37  66  ? ? . . 
+99  1 108  10 0.17 1 1 A A 15  18  SER PHE H    HD1  A A 15  18  ? ? . . 
+100 1 108  10 0.17 1 1 A A 15  18  SER PHE H    HD2  A A 15  18  ? ? . . 
+101 1 93   15 0.16 1 1 A A 39  40  GLU GLY H    H    A A 39  40  ? ? . . 
+102 1 89   3  0.16 1 1 A A 162 163 ASP GLY H    H    A A 162 163 ? ? . . 
+103 1 874  6  0.16 1 1 A A 64  66  VAL ARG HG21 H    A A 64  66  ? ? . . 
+104 1 874  6  0.16 1 1 A A 64  66  VAL ARG HG22 H    A A 64  66  ? ? . . 
+105 1 874  6  0.16 1 1 A A 64  66  VAL ARG HG23 H    A A 64  66  ? ? . . 
+106 1 874  18 0.16 1 1 A A 64  66  VAL ARG HG21 H    A A 64  66  ? ? . . 
+107 1 874  18 0.16 1 1 A A 64  66  VAL ARG HG22 H    A A 64  66  ? ? . . 
+108 1 874  18 0.16 1 1 A A 64  66  VAL ARG HG23 H    A A 64  66  ? ? . . 
+109 1 462  14 0.16 1 1 A A 182 183 LEU GLU H    H    A A 182 183 ? ? . . 
+110 1 391  2  0.16 1 1 A A 23  26  VAL LEU HG11 H    A A 23  26  ? ? . . 
+111 1 391  2  0.16 1 1 A A 23  26  VAL LEU HG12 H    A A 23  26  ? ? . . 
+112 1 391  2  0.16 1 1 A A 23  26  VAL LEU HG13 H    A A 23  26  ? ? . . 
+113 1 391  18 0.16 1 1 A A 23  26  VAL LEU HG11 H    A A 23  26  ? ? . . 
+114 1 391  18 0.16 1 1 A A 23  26  VAL LEU HG12 H    A A 23  26  ? ? . . 
+115 1 391  18 0.16 1 1 A A 23  26  VAL LEU HG13 H    A A 23  26  ? ? . . 
+116 1 160  2  0.16 1 1 A A 44  44  LEU LEU H    HD11 A A 44  44  ? ? . . 
+117 1 160  2  0.16 1 1 A A 44  44  LEU LEU H    HD12 A A 44  44  ? ? . . 
+118 1 160  2  0.16 1 1 A A 44  44  LEU LEU H    HD13 A A 44  44  ? ? . . 
+119 1 947  14 0.15 1 1 A A 152 176 GLN ILE HE21 HD11 A A 152 176 ? ? . . 
+120 1 947  14 0.15 1 1 A A 152 176 GLN ILE HE21 HD12 A A 152 176 ? ? . . 
+121 1 947  14 0.15 1 1 A A 152 176 GLN ILE HE21 HD13 A A 152 176 ? ? . . 
+122 1 947  14 0.15 1 1 A A 152 176 GLN ILE HE22 HD11 A A 152 176 ? ? . . 
+123 1 947  14 0.15 1 1 A A 152 176 GLN ILE HE22 HD12 A A 152 176 ? ? . . 
+124 1 947  14 0.15 1 1 A A 152 176 GLN ILE HE22 HD13 A A 152 176 ? ? . . 
+125 1 942  12 0.15 1 1 A A 135 136 ASN LEU HD21 H    A A 135 136 ? ? . . 
+126 1 942  12 0.15 1 1 A A 135 136 ASN LEU HD22 H    A A 135 136 ? ? . . 
+127 1 929  2  0.15 1 1 A A 106 107 ASN ASN HD21 H    A A 106 107 ? ? . . 
+128 1 929  2  0.15 1 1 A A 106 107 ASN ASN HD22 H    A A 106 107 ? ? . . 
+129 1 865  6  0.15 1 1 A A 7   8   ILE PHE HD11 H    A A 7   8   ? ? . . 
+130 1 865  6  0.15 1 1 A A 7   8   ILE PHE HD12 H    A A 7   8   ? ? . . 
+131 1 865  6  0.15 1 1 A A 7   8   ILE PHE HD13 H    A A 7   8   ? ? . . 
+132 1 862  7  0.15 1 1 A A 62  64  GLU VAL H    HG21 A A 62  64  ? ? . . 
+133 1 862  7  0.15 1 1 A A 62  64  GLU VAL H    HG22 A A 62  64  ? ? . . 
+134 1 862  7  0.15 1 1 A A 62  64  GLU VAL H    HG23 A A 62  64  ? ? . . 
+135 1 79   17 0.15 1 1 A A 13  14  LEU SER H    H    A A 13  14  ? ? . . 
+136 1 751  3  0.15 1 1 A A 36  44  VAL LEU HG11 HD21 A A 36  44  ? ? . . 
+137 1 751  3  0.15 1 1 A A 36  44  VAL LEU HG11 HD22 A A 36  44  ? ? . . 
+138 1 751  3  0.15 1 1 A A 36  44  VAL LEU HG11 HD23 A A 36  44  ? ? . . 
+139 1 751  3  0.15 1 1 A A 36  44  VAL LEU HG12 HD21 A A 36  44  ? ? . . 
+140 1 751  3  0.15 1 1 A A 36  44  VAL LEU HG12 HD22 A A 36  44  ? ? . . 
+141 1 751  3  0.15 1 1 A A 36  44  VAL LEU HG12 HD23 A A 36  44  ? ? . . 
+142 1 751  3  0.15 1 1 A A 36  44  VAL LEU HG13 HD21 A A 36  44  ? ? . . 
+143 1 751  3  0.15 1 1 A A 36  44  VAL LEU HG13 HD22 A A 36  44  ? ? . . 
+144 1 751  3  0.15 1 1 A A 36  44  VAL LEU HG13 HD23 A A 36  44  ? ? . . 
+145 1 655  7  0.15 1 1 A A 52  53  GLU GLU H    H    A A 52  53  ? ? . . 
+146 1 391  3  0.15 1 1 A A 23  26  VAL LEU HG11 H    A A 23  26  ? ? . . 
+147 1 391  3  0.15 1 1 A A 23  26  VAL LEU HG12 H    A A 23  26  ? ? . . 
+148 1 391  3  0.15 1 1 A A 23  26  VAL LEU HG13 H    A A 23  26  ? ? . . 
+149 1 384  16 0.15 1 1 A A 104 108 GLU ARG H    H    A A 104 108 ? ? . . 
+150 1 194  11 0.15 1 1 A A 176 177 ILE ILE HD11 H    A A 176 177 ? ? . . 
+151 1 194  11 0.15 1 1 A A 176 177 ILE ILE HD12 H    A A 176 177 ? ? . . 
+152 1 194  11 0.15 1 1 A A 176 177 ILE ILE HD13 H    A A 176 177 ? ? . . 
+153 1 192  19 0.15 1 1 A A 37  72  ARG LEU H    HD21 A A 37  72  ? ? . . 
+154 1 192  19 0.15 1 1 A A 37  72  ARG LEU H    HD22 A A 37  72  ? ? . . 
+155 1 192  19 0.15 1 1 A A 37  72  ARG LEU H    HD23 A A 37  72  ? ? . . 
+156 1 98   20 0.14 1 1 A A 36  67  VAL GLY HG11 H    A A 36  67  ? ? . . 
+157 1 98   20 0.14 1 1 A A 36  67  VAL GLY HG12 H    A A 36  67  ? ? . . 
+158 1 98   20 0.14 1 1 A A 36  67  VAL GLY HG13 H    A A 36  67  ? ? . . 
+159 1 942  14 0.14 1 1 A A 135 136 ASN LEU HD21 H    A A 135 136 ? ? . . 
+160 1 942  14 0.14 1 1 A A 135 136 ASN LEU HD22 H    A A 135 136 ? ? . . 
+161 1 93   16 0.14 1 1 A A 39  40  GLU GLY H    H    A A 39  40  ? ? . . 
+162 1 901  8  0.14 1 1 A A 156 169 ILE LEU H    HD11 A A 156 169 ? ? . . 
+163 1 901  8  0.14 1 1 A A 156 169 ILE LEU H    HD12 A A 156 169 ? ? . . 
+164 1 901  8  0.14 1 1 A A 156 169 ILE LEU H    HD13 A A 156 169 ? ? . . 
+165 1 90   9  0.14 1 1 A A 161 163 VAL GLY H    H    A A 161 163 ? ? . . 
+166 1 860  7  0.14 1 1 A A 139 153 PHE VAL H    HG21 A A 139 153 ? ? . . 
+167 1 860  7  0.14 1 1 A A 139 153 PHE VAL H    HG22 A A 139 153 ? ? . . 
+168 1 860  7  0.14 1 1 A A 139 153 PHE VAL H    HG23 A A 139 153 ? ? . . 
+169 1 820  9  0.14 1 1 A A 76  140 LEU ILE HD21 H    A A 76  140 ? ? . . 
+170 1 820  9  0.14 1 1 A A 76  140 LEU ILE HD22 H    A A 76  140 ? ? . . 
+171 1 820  9  0.14 1 1 A A 76  140 LEU ILE HD23 H    A A 76  140 ? ? . . 
+172 1 808  10 0.14 1 1 A A 121 125 GLN VAL HE22 HG11 A A 121 125 ? ? . . 
+173 1 808  10 0.14 1 1 A A 121 125 GLN VAL HE22 HG12 A A 121 125 ? ? . . 
+174 1 808  10 0.14 1 1 A A 121 125 GLN VAL HE22 HG13 A A 121 125 ? ? . . 
+175 1 79   4  0.14 1 1 A A 13  14  LEU SER H    H    A A 13  14  ? ? . . 
+176 1 79   13 0.14 1 1 A A 13  14  LEU SER H    H    A A 13  14  ? ? . . 
+177 1 766  10 0.14 1 1 A A 77  140 VAL ILE HG11 HD11 A A 77  140 ? ? . . 
+178 1 766  10 0.14 1 1 A A 77  140 VAL ILE HG11 HD12 A A 77  140 ? ? . . 
+179 1 766  10 0.14 1 1 A A 77  140 VAL ILE HG11 HD13 A A 77  140 ? ? . . 
+180 1 766  10 0.14 1 1 A A 77  140 VAL ILE HG12 HD11 A A 77  140 ? ? . . 
+181 1 766  10 0.14 1 1 A A 77  140 VAL ILE HG12 HD12 A A 77  140 ? ? . . 
+182 1 766  10 0.14 1 1 A A 77  140 VAL ILE HG12 HD13 A A 77  140 ? ? . . 
+183 1 766  10 0.14 1 1 A A 77  140 VAL ILE HG13 HD11 A A 77  140 ? ? . . 
+184 1 766  10 0.14 1 1 A A 77  140 VAL ILE HG13 HD12 A A 77  140 ? ? . . 
+185 1 766  10 0.14 1 1 A A 77  140 VAL ILE HG13 HD13 A A 77  140 ? ? . . 
+186 1 76   2  0.14 1 1 A A 4   14  TYR SER HD1  H    A A 4   14  ? ? . . 
+187 1 76   2  0.14 1 1 A A 4   14  TYR SER HD2  H    A A 4   14  ? ? . . 
+188 1 650  1  0.14 1 1 A A 38  41  LYS GLU H    H    A A 38  41  ? ? . . 
+189 1 391  9  0.14 1 1 A A 23  26  VAL LEU HG11 H    A A 23  26  ? ? . . 
+190 1 391  9  0.14 1 1 A A 23  26  VAL LEU HG12 H    A A 23  26  ? ? . . 
+191 1 391  9  0.14 1 1 A A 23  26  VAL LEU HG13 H    A A 23  26  ? ? . . 
+192 1 288  2  0.14 1 1 A A 2   3   LEU ILE HD11 H    A A 2   3   ? ? . . 
+193 1 288  2  0.14 1 1 A A 2   3   LEU ILE HD12 H    A A 2   3   ? ? . . 
+194 1 288  2  0.14 1 1 A A 2   3   LEU ILE HD13 H    A A 2   3   ? ? . . 
+195 1 174  18 0.14 1 1 A A 22  28  LEU TYR H    HD1  A A 22  28  ? ? . . 
+196 1 174  18 0.14 1 1 A A 22  28  LEU TYR H    HD2  A A 22  28  ? ? . . 
+197 1 1009 6  0.14 1 1 A A 155 170 ILE MET H    O    A A 155 170 ? ? . . 
+198 1 1009 11 0.14 1 1 A A 155 170 ILE MET H    O    A A 155 170 ? ? . . 
+199 1 977  3  0.13 1 1 A A 2   16  LEU ASP H    O    A A 2   16  ? ? . . 
+200 1 951  10 0.13 1 1 A A 161 166 VAL VAL H    HG11 A A 161 166 ? ? . . 
+201 1 951  10 0.13 1 1 A A 161 166 VAL VAL H    HG12 A A 161 166 ? ? . . 
+202 1 951  10 0.13 1 1 A A 161 166 VAL VAL H    HG13 A A 161 166 ? ? . . 
+203 1 951  10 0.13 1 1 A A 161 166 VAL VAL H    HG21 A A 161 166 ? ? . . 
+204 1 951  10 0.13 1 1 A A 161 166 VAL VAL H    HG22 A A 161 166 ? ? . . 
+205 1 951  10 0.13 1 1 A A 161 166 VAL VAL H    HG23 A A 161 166 ? ? . . 
+206 1 950  14 0.13 1 1 A A 160 166 ASP VAL H    HG11 A A 160 166 ? ? . . 
+207 1 950  14 0.13 1 1 A A 160 166 ASP VAL H    HG12 A A 160 166 ? ? . . 
+208 1 950  14 0.13 1 1 A A 160 166 ASP VAL H    HG13 A A 160 166 ? ? . . 
+209 1 950  14 0.13 1 1 A A 160 166 ASP VAL H    HG21 A A 160 166 ? ? . . 
+210 1 950  14 0.13 1 1 A A 160 166 ASP VAL H    HG22 A A 160 166 ? ? . . 
+211 1 950  14 0.13 1 1 A A 160 166 ASP VAL H    HG23 A A 160 166 ? ? . . 
+212 1 93   2  0.13 1 1 A A 39  40  GLU GLY H    H    A A 39  40  ? ? . . 
+213 1 874  14 0.13 1 1 A A 64  66  VAL ARG HG21 H    A A 64  66  ? ? . . 
+214 1 874  14 0.13 1 1 A A 64  66  VAL ARG HG22 H    A A 64  66  ? ? . . 
+215 1 874  14 0.13 1 1 A A 64  66  VAL ARG HG23 H    A A 64  66  ? ? . . 
+216 1 862  14 0.13 1 1 A A 62  64  GLU VAL H    HG21 A A 62  64  ? ? . . 
+217 1 862  14 0.13 1 1 A A 62  64  GLU VAL H    HG22 A A 62  64  ? ? . . 
+218 1 862  14 0.13 1 1 A A 62  64  GLU VAL H    HG23 A A 62  64  ? ? . . 
+219 1 860  15 0.13 1 1 A A 139 153 PHE VAL H    HG21 A A 139 153 ? ? . . 
+220 1 860  15 0.13 1 1 A A 139 153 PHE VAL H    HG22 A A 139 153 ? ? . . 
+221 1 860  15 0.13 1 1 A A 139 153 PHE VAL H    HG23 A A 139 153 ? ? . . 
+222 1 860  16 0.13 1 1 A A 139 153 PHE VAL H    HG21 A A 139 153 ? ? . . 
+223 1 860  16 0.13 1 1 A A 139 153 PHE VAL H    HG22 A A 139 153 ? ? . . 
+224 1 860  16 0.13 1 1 A A 139 153 PHE VAL H    HG23 A A 139 153 ? ? . . 
+225 1 860  19 0.13 1 1 A A 139 153 PHE VAL H    HG21 A A 139 153 ? ? . . 
+226 1 860  19 0.13 1 1 A A 139 153 PHE VAL H    HG22 A A 139 153 ? ? . . 
+227 1 860  19 0.13 1 1 A A 139 153 PHE VAL H    HG23 A A 139 153 ? ? . . 
+228 1 797  15 0.13 1 1 A A 92  96  ILE MET HD11 H    A A 92  96  ? ? . . 
+229 1 797  15 0.13 1 1 A A 92  96  ILE MET HD12 H    A A 92  96  ? ? . . 
+230 1 797  15 0.13 1 1 A A 92  96  ILE MET HD13 H    A A 92  96  ? ? . . 
+231 1 756  9  0.13 1 1 A A 2   182 LEU LEU HD21 HD21 A A 2   182 ? ? . . 
+232 1 756  9  0.13 1 1 A A 2   182 LEU LEU HD21 HD22 A A 2   182 ? ? . . 
+233 1 756  9  0.13 1 1 A A 2   182 LEU LEU HD21 HD23 A A 2   182 ? ? . . 
+234 1 756  9  0.13 1 1 A A 2   182 LEU LEU HD22 HD21 A A 2   182 ? ? . . 
+235 1 756  9  0.13 1 1 A A 2   182 LEU LEU HD22 HD22 A A 2   182 ? ? . . 
+236 1 756  9  0.13 1 1 A A 2   182 LEU LEU HD22 HD23 A A 2   182 ? ? . . 
+237 1 756  9  0.13 1 1 A A 2   182 LEU LEU HD23 HD21 A A 2   182 ? ? . . 
+238 1 756  9  0.13 1 1 A A 2   182 LEU LEU HD23 HD22 A A 2   182 ? ? . . 
+239 1 756  9  0.13 1 1 A A 2   182 LEU LEU HD23 HD23 A A 2   182 ? ? . . 
+240 1 743  20 0.13 1 1 A A 42  44  ILE LEU HD11 HD11 A A 42  44  ? ? . . 
+241 1 743  20 0.13 1 1 A A 42  44  ILE LEU HD11 HD12 A A 42  44  ? ? . . 
+242 1 743  20 0.13 1 1 A A 42  44  ILE LEU HD11 HD13 A A 42  44  ? ? . . 
+243 1 743  20 0.13 1 1 A A 42  44  ILE LEU HD12 HD11 A A 42  44  ? ? . . 
+244 1 743  20 0.13 1 1 A A 42  44  ILE LEU HD12 HD12 A A 42  44  ? ? . . 
+245 1 743  20 0.13 1 1 A A 42  44  ILE LEU HD12 HD13 A A 42  44  ? ? . . 
+246 1 743  20 0.13 1 1 A A 42  44  ILE LEU HD13 HD11 A A 42  44  ? ? . . 
+247 1 743  20 0.13 1 1 A A 42  44  ILE LEU HD13 HD12 A A 42  44  ? ? . . 
+248 1 743  20 0.13 1 1 A A 42  44  ILE LEU HD13 HD13 A A 42  44  ? ? . . 
+249 1 609  2  0.13 1 1 A A 80  82  ASN TYR H    H    A A 80  82  ? ? . . 
+250 1 601  9  0.13 1 1 A A 28  171 TYR LEU HD1  HD11 A A 28  171 ? ? . . 
+251 1 601  9  0.13 1 1 A A 28  171 TYR LEU HD1  HD12 A A 28  171 ? ? . . 
+252 1 601  9  0.13 1 1 A A 28  171 TYR LEU HD1  HD13 A A 28  171 ? ? . . 
+253 1 601  9  0.13 1 1 A A 28  171 TYR LEU HD2  HD11 A A 28  171 ? ? . . 
+254 1 601  9  0.13 1 1 A A 28  171 TYR LEU HD2  HD12 A A 28  171 ? ? . . 
+255 1 601  9  0.13 1 1 A A 28  171 TYR LEU HD2  HD13 A A 28  171 ? ? . . 
+256 1 517  3  0.13 1 1 A A 127 133 LEU PHE HD11 HD1  A A 127 133 ? ? . . 
+257 1 517  3  0.13 1 1 A A 127 133 LEU PHE HD11 HD2  A A 127 133 ? ? . . 
+258 1 517  3  0.13 1 1 A A 127 133 LEU PHE HD12 HD1  A A 127 133 ? ? . . 
+259 1 517  3  0.13 1 1 A A 127 133 LEU PHE HD12 HD2  A A 127 133 ? ? . . 
+260 1 517  3  0.13 1 1 A A 127 133 LEU PHE HD13 HD1  A A 127 133 ? ? . . 
+261 1 517  3  0.13 1 1 A A 127 133 LEU PHE HD13 HD2  A A 127 133 ? ? . . 
+262 1 517  4  0.13 1 1 A A 127 133 LEU PHE HD11 HD1  A A 127 133 ? ? . . 
+263 1 517  4  0.13 1 1 A A 127 133 LEU PHE HD11 HD2  A A 127 133 ? ? . . 
+264 1 517  4  0.13 1 1 A A 127 133 LEU PHE HD12 HD1  A A 127 133 ? ? . . 
+265 1 517  4  0.13 1 1 A A 127 133 LEU PHE HD12 HD2  A A 127 133 ? ? . . 
+266 1 517  4  0.13 1 1 A A 127 133 LEU PHE HD13 HD1  A A 127 133 ? ? . . 
+267 1 517  4  0.13 1 1 A A 127 133 LEU PHE HD13 HD2  A A 127 133 ? ? . . 
+268 1 500  20 0.13 1 1 A A 138 153 PHE VAL HD1  HG21 A A 138 153 ? ? . . 
+269 1 500  20 0.13 1 1 A A 138 153 PHE VAL HD1  HG22 A A 138 153 ? ? . . 
+270 1 500  20 0.13 1 1 A A 138 153 PHE VAL HD1  HG23 A A 138 153 ? ? . . 
+271 1 500  20 0.13 1 1 A A 138 153 PHE VAL HD2  HG21 A A 138 153 ? ? . . 
+272 1 500  20 0.13 1 1 A A 138 153 PHE VAL HD2  HG22 A A 138 153 ? ? . . 
+273 1 500  20 0.13 1 1 A A 138 153 PHE VAL HD2  HG23 A A 138 153 ? ? . . 
+274 1 391  12 0.13 1 1 A A 23  26  VAL LEU HG11 H    A A 23  26  ? ? . . 
+275 1 391  12 0.13 1 1 A A 23  26  VAL LEU HG12 H    A A 23  26  ? ? . . 
+276 1 391  12 0.13 1 1 A A 23  26  VAL LEU HG13 H    A A 23  26  ? ? . . 
+277 1 388  12 0.13 1 1 A A 116 174 PHE GLU HD1  H    A A 116 174 ? ? . . 
+278 1 388  12 0.13 1 1 A A 116 174 PHE GLU HD2  H    A A 116 174 ? ? . . 
+279 1 291  4  0.13 1 1 A A 182 183 LEU GLU HD21 H    A A 182 183 ? ? . . 
+280 1 291  4  0.13 1 1 A A 182 183 LEU GLU HD22 H    A A 182 183 ? ? . . 
+281 1 291  4  0.13 1 1 A A 182 183 LEU GLU HD23 H    A A 182 183 ? ? . . 
+282 1 107  9  0.13 1 1 A A 54  55  GLY ALA H    H    A A 54  55  ? ? . . 
+283 1 1009 17 0.13 1 1 A A 155 170 ILE MET H    O    A A 155 170 ? ? . . 
+284 1 995  7  0.12 1 1 A A 79  138 MET PHE O    H    A A 79  138 ? ? . . 
+285 1 963  7  0.12 1 1 A A 100 113 ILE VAL HD11 HG11 A A 100 113 ? ? . . 
+286 1 963  7  0.12 1 1 A A 100 113 ILE VAL HD11 HG12 A A 100 113 ? ? . . 
+287 1 963  7  0.12 1 1 A A 100 113 ILE VAL HD11 HG13 A A 100 113 ? ? . . 
+288 1 963  7  0.12 1 1 A A 100 113 ILE VAL HD12 HG11 A A 100 113 ? ? . . 
+289 1 963  7  0.12 1 1 A A 100 113 ILE VAL HD12 HG12 A A 100 113 ? ? . . 
+290 1 963  7  0.12 1 1 A A 100 113 ILE VAL HD12 HG13 A A 100 113 ? ? . . 
+291 1 963  7  0.12 1 1 A A 100 113 ILE VAL HD13 HG11 A A 100 113 ? ? . . 
+292 1 963  7  0.12 1 1 A A 100 113 ILE VAL HD13 HG12 A A 100 113 ? ? . . 
+293 1 963  7  0.12 1 1 A A 100 113 ILE VAL HD13 HG13 A A 100 113 ? ? . . 
+294 1 960  7  0.12 1 1 A A 113 100 VAL ILE HG11 HD11 A A 113 100 ? ? . . 
+295 1 960  7  0.12 1 1 A A 113 100 VAL ILE HG11 HD12 A A 113 100 ? ? . . 
+296 1 960  7  0.12 1 1 A A 113 100 VAL ILE HG11 HD13 A A 113 100 ? ? . . 
+297 1 960  7  0.12 1 1 A A 113 100 VAL ILE HG12 HD11 A A 113 100 ? ? . . 
+298 1 960  7  0.12 1 1 A A 113 100 VAL ILE HG12 HD12 A A 113 100 ? ? . . 
+299 1 960  7  0.12 1 1 A A 113 100 VAL ILE HG12 HD13 A A 113 100 ? ? . . 
+300 1 960  7  0.12 1 1 A A 113 100 VAL ILE HG13 HD11 A A 113 100 ? ? . . 
+301 1 960  7  0.12 1 1 A A 113 100 VAL ILE HG13 HD12 A A 113 100 ? ? . . 
+302 1 960  7  0.12 1 1 A A 113 100 VAL ILE HG13 HD13 A A 113 100 ? ? . . 
+303 1 93   8  0.12 1 1 A A 39  40  GLU GLY H    H    A A 39  40  ? ? . . 
+304 1 93   18 0.12 1 1 A A 39  40  GLU GLY H    H    A A 39  40  ? ? . . 
+305 1 874  15 0.12 1 1 A A 64  66  VAL ARG HG21 H    A A 64  66  ? ? . . 
+306 1 874  15 0.12 1 1 A A 64  66  VAL ARG HG22 H    A A 64  66  ? ? . . 
+307 1 874  15 0.12 1 1 A A 64  66  VAL ARG HG23 H    A A 64  66  ? ? . . 
+308 1 862  4  0.12 1 1 A A 62  64  GLU VAL H    HG21 A A 62  64  ? ? . . 
+309 1 862  4  0.12 1 1 A A 62  64  GLU VAL H    HG22 A A 62  64  ? ? . . 
+310 1 862  4  0.12 1 1 A A 62  64  GLU VAL H    HG23 A A 62  64  ? ? . . 
+311 1 860  8  0.12 1 1 A A 139 153 PHE VAL H    HG21 A A 139 153 ? ? . . 
+312 1 860  8  0.12 1 1 A A 139 153 PHE VAL H    HG22 A A 139 153 ? ? . . 
+313 1 860  8  0.12 1 1 A A 139 153 PHE VAL H    HG23 A A 139 153 ? ? . . 
+314 1 832  20 0.12 1 1 A A 120 174 ILE GLU HD11 H    A A 120 174 ? ? . . 
+315 1 832  20 0.12 1 1 A A 120 174 ILE GLU HD12 H    A A 120 174 ? ? . . 
+316 1 832  20 0.12 1 1 A A 120 174 ILE GLU HD13 H    A A 120 174 ? ? . . 
+317 1 829  12 0.12 1 1 A A 124 128 VAL LEU HG11 H    A A 124 128 ? ? . . 
+318 1 829  12 0.12 1 1 A A 124 128 VAL LEU HG12 H    A A 124 128 ? ? . . 
+319 1 829  12 0.12 1 1 A A 124 128 VAL LEU HG13 H    A A 124 128 ? ? . . 
+320 1 829  13 0.12 1 1 A A 124 128 VAL LEU HG11 H    A A 124 128 ? ? . . 
+321 1 829  13 0.12 1 1 A A 124 128 VAL LEU HG12 H    A A 124 128 ? ? . . 
+322 1 829  13 0.12 1 1 A A 124 128 VAL LEU HG13 H    A A 124 128 ? ? . . 
+323 1 814  9  0.12 1 1 A A 27  173 VAL LYS HG11 H    A A 27  173 ? ? . . 
+324 1 814  9  0.12 1 1 A A 27  173 VAL LYS HG12 H    A A 27  173 ? ? . . 
+325 1 814  9  0.12 1 1 A A 27  173 VAL LYS HG13 H    A A 27  173 ? ? . . 
+326 1 79   20 0.12 1 1 A A 13  14  LEU SER H    H    A A 13  14  ? ? . . 
+327 1 648  3  0.12 1 1 A A 56  57  GLU ASP H    H    A A 56  57  ? ? . . 
+328 1 553  19 0.12 1 1 A A 124 128 VAL LEU HG11 HD21 A A 124 128 ? ? . . 
+329 1 553  19 0.12 1 1 A A 124 128 VAL LEU HG11 HD22 A A 124 128 ? ? . . 
+330 1 553  19 0.12 1 1 A A 124 128 VAL LEU HG11 HD23 A A 124 128 ? ? . . 
+331 1 553  19 0.12 1 1 A A 124 128 VAL LEU HG12 HD21 A A 124 128 ? ? . . 
+332 1 553  19 0.12 1 1 A A 124 128 VAL LEU HG12 HD22 A A 124 128 ? ? . . 
+333 1 553  19 0.12 1 1 A A 124 128 VAL LEU HG12 HD23 A A 124 128 ? ? . . 
+334 1 553  19 0.12 1 1 A A 124 128 VAL LEU HG13 HD21 A A 124 128 ? ? . . 
+335 1 553  19 0.12 1 1 A A 124 128 VAL LEU HG13 HD22 A A 124 128 ? ? . . 
+336 1 553  19 0.12 1 1 A A 124 128 VAL LEU HG13 HD23 A A 124 128 ? ? . . 
+337 1 540  8  0.12 1 1 A A 133 136 PHE LEU HD1  HD21 A A 133 136 ? ? . . 
+338 1 540  8  0.12 1 1 A A 133 136 PHE LEU HD1  HD22 A A 133 136 ? ? . . 
+339 1 540  8  0.12 1 1 A A 133 136 PHE LEU HD1  HD23 A A 133 136 ? ? . . 
+340 1 540  8  0.12 1 1 A A 133 136 PHE LEU HD2  HD21 A A 133 136 ? ? . . 
+341 1 540  8  0.12 1 1 A A 133 136 PHE LEU HD2  HD22 A A 133 136 ? ? . . 
+342 1 540  8  0.12 1 1 A A 133 136 PHE LEU HD2  HD23 A A 133 136 ? ? . . 
+343 1 540  17 0.12 1 1 A A 133 136 PHE LEU HD1  HD21 A A 133 136 ? ? . . 
+344 1 540  17 0.12 1 1 A A 133 136 PHE LEU HD1  HD22 A A 133 136 ? ? . . 
+345 1 540  17 0.12 1 1 A A 133 136 PHE LEU HD1  HD23 A A 133 136 ? ? . . 
+346 1 540  17 0.12 1 1 A A 133 136 PHE LEU HD2  HD21 A A 133 136 ? ? . . 
+347 1 540  17 0.12 1 1 A A 133 136 PHE LEU HD2  HD22 A A 133 136 ? ? . . 
+348 1 540  17 0.12 1 1 A A 133 136 PHE LEU HD2  HD23 A A 133 136 ? ? . . 
+349 1 500  10 0.12 1 1 A A 138 153 PHE VAL HD1  HG21 A A 138 153 ? ? . . 
+350 1 500  10 0.12 1 1 A A 138 153 PHE VAL HD1  HG22 A A 138 153 ? ? . . 
+351 1 500  10 0.12 1 1 A A 138 153 PHE VAL HD1  HG23 A A 138 153 ? ? . . 
+352 1 500  10 0.12 1 1 A A 138 153 PHE VAL HD2  HG21 A A 138 153 ? ? . . 
+353 1 500  10 0.12 1 1 A A 138 153 PHE VAL HD2  HG22 A A 138 153 ? ? . . 
+354 1 500  10 0.12 1 1 A A 138 153 PHE VAL HD2  HG23 A A 138 153 ? ? . . 
+355 1 500  16 0.12 1 1 A A 138 153 PHE VAL HD1  HG21 A A 138 153 ? ? . . 
+356 1 500  16 0.12 1 1 A A 138 153 PHE VAL HD1  HG22 A A 138 153 ? ? . . 
+357 1 500  16 0.12 1 1 A A 138 153 PHE VAL HD1  HG23 A A 138 153 ? ? . . 
+358 1 500  16 0.12 1 1 A A 138 153 PHE VAL HD2  HG21 A A 138 153 ? ? . . 
+359 1 500  16 0.12 1 1 A A 138 153 PHE VAL HD2  HG22 A A 138 153 ? ? . . 
+360 1 500  16 0.12 1 1 A A 138 153 PHE VAL HD2  HG23 A A 138 153 ? ? . . 
+361 1 449  9  0.12 1 1 A A 4   15  TYR SER HD1  H    A A 4   15  ? ? . . 
+362 1 449  9  0.12 1 1 A A 4   15  TYR SER HD2  H    A A 4   15  ? ? . . 
+363 1 40   9  0.12 1 1 A A 158 158 TYR TYR H    HD1  A A 158 158 ? ? . . 
+364 1 40   9  0.12 1 1 A A 158 158 TYR TYR H    HD2  A A 158 158 ? ? . . 
+365 1 391  10 0.12 1 1 A A 23  26  VAL LEU HG11 H    A A 23  26  ? ? . . 
+366 1 391  10 0.12 1 1 A A 23  26  VAL LEU HG12 H    A A 23  26  ? ? . . 
+367 1 391  10 0.12 1 1 A A 23  26  VAL LEU HG13 H    A A 23  26  ? ? . . 
+368 1 341  13 0.12 1 1 A A 95  98  PHE ASN HD1  H    A A 95  98  ? ? . . 
+369 1 341  13 0.12 1 1 A A 95  98  PHE ASN HD2  H    A A 95  98  ? ? . . 
+370 1 341  18 0.12 1 1 A A 95  98  PHE ASN HD1  H    A A 95  98  ? ? . . 
+371 1 341  18 0.12 1 1 A A 95  98  PHE ASN HD2  H    A A 95  98  ? ? . . 
+372 1 265  11 0.12 1 1 A A 70  72  ILE LEU H    HD11 A A 70  72  ? ? . . 
+373 1 265  11 0.12 1 1 A A 70  72  ILE LEU H    HD12 A A 70  72  ? ? . . 
+374 1 265  11 0.12 1 1 A A 70  72  ILE LEU H    HD13 A A 70  72  ? ? . . 
+375 1 223  14 0.12 1 1 A A 6   13  ASP LEU H    HD11 A A 6   13  ? ? . . 
+376 1 223  14 0.12 1 1 A A 6   13  ASP LEU H    HD12 A A 6   13  ? ? . . 
+377 1 223  14 0.12 1 1 A A 6   13  ASP LEU H    HD13 A A 6   13  ? ? . . 
+378 1 222  7  0.12 1 1 A A 109 113 ASP VAL H    HG21 A A 109 113 ? ? . . 
+379 1 222  7  0.12 1 1 A A 109 113 ASP VAL H    HG22 A A 109 113 ? ? . . 
+380 1 222  7  0.12 1 1 A A 109 113 ASP VAL H    HG23 A A 109 113 ? ? . . 
+381 1 159  18 0.12 1 1 A A 2   179 LEU GLU HD11 H    A A 2   179 ? ? . . 
+382 1 159  18 0.12 1 1 A A 2   179 LEU GLU HD12 H    A A 2   179 ? ? . . 
+383 1 159  18 0.12 1 1 A A 2   179 LEU GLU HD13 H    A A 2   179 ? ? . . 
+384 1 148  5  0.12 1 1 A A 71  78  VAL GLU HG11 H    A A 71  78  ? ? . . 
+385 1 148  5  0.12 1 1 A A 71  78  VAL GLU HG12 H    A A 71  78  ? ? . . 
+386 1 148  5  0.12 1 1 A A 71  78  VAL GLU HG13 H    A A 71  78  ? ? . . 
+387 1 116  2  0.12 1 1 A A 74  76  HIS LEU H    HD11 A A 74  76  ? ? . . 
+388 1 116  2  0.12 1 1 A A 74  76  HIS LEU H    HD12 A A 74  76  ? ? . . 
+389 1 116  2  0.12 1 1 A A 74  76  HIS LEU H    HD13 A A 74  76  ? ? . . 
+390 1 105  4  0.12 1 1 A A 127 128 LEU LEU HD21 H    A A 127 128 ? ? . . 
+391 1 105  4  0.12 1 1 A A 127 128 LEU LEU HD22 H    A A 127 128 ? ? . . 
+392 1 105  4  0.12 1 1 A A 127 128 LEU LEU HD23 H    A A 127 128 ? ? . . 
+393 1 100  4  0.12 1 1 A A 58  59  ASP GLY H    H    A A 58  59  ? ? . . 
+394 1 950  5  0.11 1 1 A A 160 166 ASP VAL H    HG11 A A 160 166 ? ? . . 
+395 1 950  5  0.11 1 1 A A 160 166 ASP VAL H    HG12 A A 160 166 ? ? . . 
+396 1 950  5  0.11 1 1 A A 160 166 ASP VAL H    HG13 A A 160 166 ? ? . . 
+397 1 950  5  0.11 1 1 A A 160 166 ASP VAL H    HG21 A A 160 166 ? ? . . 
+398 1 950  5  0.11 1 1 A A 160 166 ASP VAL H    HG22 A A 160 166 ? ? . . 
+399 1 950  5  0.11 1 1 A A 160 166 ASP VAL H    HG23 A A 160 166 ? ? . . 
+400 1 93   13 0.11 1 1 A A 39  40  GLU GLY H    H    A A 39  40  ? ? . . 
+401 1 874  16 0.11 1 1 A A 64  66  VAL ARG HG21 H    A A 64  66  ? ? . . 
+402 1 874  16 0.11 1 1 A A 64  66  VAL ARG HG22 H    A A 64  66  ? ? . . 
+403 1 874  16 0.11 1 1 A A 64  66  VAL ARG HG23 H    A A 64  66  ? ? . . 
+404 1 798  5  0.11 1 1 A A 169 170 LEU MET HD21 H    A A 169 170 ? ? . . 
+405 1 798  5  0.11 1 1 A A 169 170 LEU MET HD22 H    A A 169 170 ? ? . . 
+406 1 798  5  0.11 1 1 A A 169 170 LEU MET HD23 H    A A 169 170 ? ? . . 
+407 1 663  5  0.11 1 1 A A 149 151 GLU GLY H    H    A A 149 151 ? ? . . 
+408 1 663  13 0.11 1 1 A A 149 151 GLU GLY H    H    A A 149 151 ? ? . . 
+409 1 663  14 0.11 1 1 A A 149 151 GLU GLY H    H    A A 149 151 ? ? . . 
+410 1 648  1  0.11 1 1 A A 56  57  GLU ASP H    H    A A 56  57  ? ? . . 
+411 1 609  12 0.11 1 1 A A 80  82  ASN TYR H    H    A A 80  82  ? ? . . 
+412 1 561  17 0.11 1 1 A A 28  176 TYR ILE HD1  HD11 A A 28  176 ? ? . . 
+413 1 561  17 0.11 1 1 A A 28  176 TYR ILE HD1  HD12 A A 28  176 ? ? . . 
+414 1 561  17 0.11 1 1 A A 28  176 TYR ILE HD1  HD13 A A 28  176 ? ? . . 
+415 1 561  17 0.11 1 1 A A 28  176 TYR ILE HD2  HD11 A A 28  176 ? ? . . 
+416 1 561  17 0.11 1 1 A A 28  176 TYR ILE HD2  HD12 A A 28  176 ? ? . . 
+417 1 561  17 0.11 1 1 A A 28  176 TYR ILE HD2  HD13 A A 28  176 ? ? . . 
+418 1 553  20 0.11 1 1 A A 124 128 VAL LEU HG11 HD21 A A 124 128 ? ? . . 
+419 1 553  20 0.11 1 1 A A 124 128 VAL LEU HG11 HD22 A A 124 128 ? ? . . 
+420 1 553  20 0.11 1 1 A A 124 128 VAL LEU HG11 HD23 A A 124 128 ? ? . . 
+421 1 553  20 0.11 1 1 A A 124 128 VAL LEU HG12 HD21 A A 124 128 ? ? . . 
+422 1 553  20 0.11 1 1 A A 124 128 VAL LEU HG12 HD22 A A 124 128 ? ? . . 
+423 1 553  20 0.11 1 1 A A 124 128 VAL LEU HG12 HD23 A A 124 128 ? ? . . 
+424 1 553  20 0.11 1 1 A A 124 128 VAL LEU HG13 HD21 A A 124 128 ? ? . . 
+425 1 553  20 0.11 1 1 A A 124 128 VAL LEU HG13 HD22 A A 124 128 ? ? . . 
+426 1 553  20 0.11 1 1 A A 124 128 VAL LEU HG13 HD23 A A 124 128 ? ? . . 
+427 1 552  9  0.11 1 1 A A 13  169 LEU LEU HD21 HD21 A A 13  169 ? ? . . 
+428 1 552  9  0.11 1 1 A A 13  169 LEU LEU HD21 HD22 A A 13  169 ? ? . . 
+429 1 552  9  0.11 1 1 A A 13  169 LEU LEU HD21 HD23 A A 13  169 ? ? . . 
+430 1 552  9  0.11 1 1 A A 13  169 LEU LEU HD22 HD21 A A 13  169 ? ? . . 
+431 1 552  9  0.11 1 1 A A 13  169 LEU LEU HD22 HD22 A A 13  169 ? ? . . 
+432 1 552  9  0.11 1 1 A A 13  169 LEU LEU HD22 HD23 A A 13  169 ? ? . . 
+433 1 552  9  0.11 1 1 A A 13  169 LEU LEU HD23 HD21 A A 13  169 ? ? . . 
+434 1 552  9  0.11 1 1 A A 13  169 LEU LEU HD23 HD22 A A 13  169 ? ? . . 
+435 1 552  9  0.11 1 1 A A 13  169 LEU LEU HD23 HD23 A A 13  169 ? ? . . 
+436 1 540  3  0.11 1 1 A A 133 136 PHE LEU HD1  HD21 A A 133 136 ? ? . . 
+437 1 540  3  0.11 1 1 A A 133 136 PHE LEU HD1  HD22 A A 133 136 ? ? . . 
+438 1 540  3  0.11 1 1 A A 133 136 PHE LEU HD1  HD23 A A 133 136 ? ? . . 
+439 1 540  3  0.11 1 1 A A 133 136 PHE LEU HD2  HD21 A A 133 136 ? ? . . 
+440 1 540  3  0.11 1 1 A A 133 136 PHE LEU HD2  HD22 A A 133 136 ? ? . . 
+441 1 540  3  0.11 1 1 A A 133 136 PHE LEU HD2  HD23 A A 133 136 ? ? . . 
+442 1 391  20 0.11 1 1 A A 23  26  VAL LEU HG11 H    A A 23  26  ? ? . . 
+443 1 391  20 0.11 1 1 A A 23  26  VAL LEU HG12 H    A A 23  26  ? ? . . 
+444 1 391  20 0.11 1 1 A A 23  26  VAL LEU HG13 H    A A 23  26  ? ? . . 
+445 1 291  19 0.11 1 1 A A 182 183 LEU GLU HD21 H    A A 182 183 ? ? . . 
+446 1 291  19 0.11 1 1 A A 182 183 LEU GLU HD22 H    A A 182 183 ? ? . . 
+447 1 291  19 0.11 1 1 A A 182 183 LEU GLU HD23 H    A A 182 183 ? ? . . 
+448 1 265  18 0.11 1 1 A A 70  72  ILE LEU H    HD11 A A 70  72  ? ? . . 
+449 1 265  18 0.11 1 1 A A 70  72  ILE LEU H    HD12 A A 70  72  ? ? . . 
+450 1 265  18 0.11 1 1 A A 70  72  ILE LEU H    HD13 A A 70  72  ? ? . . 
+451 1 241  7  0.11 1 1 A A 37  66  ARG ARG H    H    A A 37  66  ? ? . . 
+452 1 183  7  0.11 1 1 A A 171 172 LEU VAL HD21 H    A A 171 172 ? ? . . 
+453 1 183  7  0.11 1 1 A A 171 172 LEU VAL HD22 H    A A 171 172 ? ? . . 
+454 1 183  7  0.11 1 1 A A 171 172 LEU VAL HD23 H    A A 171 172 ? ? . . 
+455 1 160  3  0.11 1 1 A A 44  44  LEU LEU H    HD11 A A 44  44  ? ? . . 
+456 1 160  3  0.11 1 1 A A 44  44  LEU LEU H    HD12 A A 44  44  ? ? . . 
+457 1 160  3  0.11 1 1 A A 44  44  LEU LEU H    HD13 A A 44  44  ? ? . . 
+458 1 1033 13 0.11 1 1 A A 35  67  VAL GLY O    H    A A 35  67  ? ? . . 
+459 1 1009 5  0.11 1 1 A A 155 170 ILE MET H    O    A A 155 170 ? ? . . 
 # 
 loop_
 _pdbx_nmr_dihedral_angle_violation_summary.type 
@@ -5132,6 +5224,11 @@ _pdbx_nmr_dihedral_angle_violation_plural.auth_atom_id_1
 _pdbx_nmr_dihedral_angle_violation_plural.auth_atom_id_2 
 _pdbx_nmr_dihedral_angle_violation_plural.auth_atom_id_3 
 _pdbx_nmr_dihedral_angle_violation_plural.auth_atom_id_4 
+_pdbx_nmr_dihedral_angle_violation_plural.label_asym_id 
+_pdbx_nmr_dihedral_angle_violation_plural.label_seq_id_1 
+_pdbx_nmr_dihedral_angle_violation_plural.label_seq_id_2 
+_pdbx_nmr_dihedral_angle_violation_plural.label_seq_id_3 
+_pdbx_nmr_dihedral_angle_violation_plural.label_seq_id_4 
 _pdbx_nmr_dihedral_angle_violation_plural.PDB_ins_code_1 
 _pdbx_nmr_dihedral_angle_violation_plural.PDB_ins_code_2 
 _pdbx_nmr_dihedral_angle_violation_plural.PDB_ins_code_3 
@@ -5141,149 +5238,149 @@ _pdbx_nmr_dihedral_angle_violation_plural.label_alt_id_2
 _pdbx_nmr_dihedral_angle_violation_plural.label_alt_id_3 
 _pdbx_nmr_dihedral_angle_violation_plural.label_alt_id_4 
 1  1 175 15 6.63   1.04  1.04  1 A 133 133 133 134 PHE PHE PHE LYS N  CA C  N 
-? ? ? ? . . . . 
+A 133 133 133 134 ? ? ? ? . . . . 
 2  1 230 15 2.29   0.7   0.7   1 A 170 170 170 171 MET MET MET LEU N  CA C  N 
-? ? ? ? . . . . 
+A 170 170 170 171 ? ? ? ? . . . . 
 3  1 167 15 2.23   0.74  0.74  1 A 128 128 128 129 LEU LEU LEU ALA N  CA C  N 
-? ? ? ? . . . . 
+A 128 128 128 129 ? ? ? ? . . . . 
 4  1 271 13 88.85  67.11 67.11 1 A 133 133 133 133 PHE PHE PHE PHE CA CB CG 
-CD1 ? ? ? ? . . . . 
+CD1 A 133 133 133 133 ? ? ? ? . . . . 
 5  1 86  13 2.35   1.05  1.05  1 A 84  84  84  85  ASP ASP ASP ALA N  CA C  N 
-? ? ? ? . . . . 
+A 84  84  84  85  ? ? ? ? . . . . 
 6  1 16  12 3.41   1.39  1.39  1 A 9   9   9   10  THR THR THR ASP N  CA C  N 
-? ? ? ? . . . . 
+A 9   9   9   10  ? ? ? ? . . . . 
 7  1 22  12 3.02   1.35  1.35  1 A 12  12  12  13  GLU GLU GLU LEU N  CA C  N 
-? ? ? ? . . . . 
+A 12  12  12  13  ? ? ? ? . . . . 
 8  1 255 11 2.92   0.87  0.87  1 A 19  19  19  20  PRO PRO PRO MET N  CA C  N 
-? ? ? ? . . . . 
+A 19  19  19  20  ? ? ? ? . . . . 
 9  1 19  11 2.54   1.09  1.09  1 A 10  11  11  11  ASP ASP ASP ASP C  N  CA C 
-? ? ? ? . . . . 
+A 10  11  11  11  ? ? ? ? . . . . 
 10 1 243 11 2.44   0.81  0.81  1 A 177 177 177 178 ILE ILE ILE GLU N  CA C  N 
-? ? ? ? . . . . 
+A 177 177 177 178 ? ? ? ? . . . . 
 11 1 253 11 2.22   0.6   0.6   1 A 26  26  26  27  LEU LEU LEU VAL N  CA C  N 
-? ? ? ? . . . . 
+A 26  26  26  27  ? ? ? ? . . . . 
 12 1 14  10 5.23   2.64  2.64  1 A 8   8   8   9   PHE PHE PHE THR N  CA C  N 
-? ? ? ? . . . . 
+A 8   8   8   9   ? ? ? ? . . . . 
 13 1 35  10 2.42   0.86  0.86  1 A 27  28  28  28  VAL TYR TYR TYR C  N  CA C 
-? ? ? ? . . . . 
+A 27  28  28  28  ? ? ? ? . . . . 
 14 1 293 9  95.31  66.17 66.17 1 A 30  30  30  30  PHE PHE PHE PHE CA CB CG 
-CD1 ? ? ? ? . . . . 
+CD1 A 30  30  30  30  ? ? ? ? . . . . 
 15 1 13  9  4.61   1.29  1.29  1 A 7   8   8   8   ILE PHE PHE PHE C  N  CA C 
-? ? ? ? . . . . 
+A 7   8   8   8   ? ? ? ? . . . . 
 16 1 52  9  2.92   1.02  1.02  1 A 37  37  37  38  ARG ARG ARG LYS N  CA C  N 
-? ? ? ? . . . . 
+A 37  37  37  38  ? ? ? ? . . . . 
 17 1 172 9  2.7    1.26  1.26  1 A 131 132 132 132 ASP ARG ARG ARG C  N  CA C 
-? ? ? ? . . . . 
+A 131 132 132 132 ? ? ? ? . . . . 
 18 1 4   9  2.46   0.89  0.89  1 A 3   3   3   4   ILE ILE ILE TYR N  CA C  N 
-? ? ? ? . . . . 
+A 3   3   3   4   ? ? ? ? . . . . 
 19 1 18  8  8.95   1.34  1.34  1 A 10  10  10  11  ASP ASP ASP ASP N  CA C  N 
-? ? ? ? . . . . 
+A 10  10  10  11  ? ? ? ? . . . . 
 20 1 180 8  2.35   1.03  1.03  1 A 135 136 136 136 ASN LEU LEU LEU C  N  CA C 
-? ? ? ? . . . . 
+A 135 136 136 136 ? ? ? ? . . . . 
 21 1 57  8  2.2    0.85  0.85  1 A 67  68  68  68  GLY ILE ILE ILE C  N  CA C 
-? ? ? ? . . . . 
+A 67  68  68  68  ? ? ? ? . . . . 
 22 1 251 8  2.17   0.82  0.82  1 A 181 181 181 182 CYS CYS CYS LEU N  CA C  N 
-? ? ? ? . . . . 
+A 181 181 181 182 ? ? ? ? . . . . 
 23 1 83  8  1.86   0.39  0.39  1 A 82  83  83  83  TYR GLU GLU GLU C  N  CA C 
-? ? ? ? . . . . 
+A 82  83  83  83  ? ? ? ? . . . . 
 24 1 54  7  2.99   0.9   0.9   1 A 38  38  38  39  LYS LYS LYS GLU N  CA C  N 
-? ? ? ? . . . . 
+A 38  38  38  39  ? ? ? ? . . . . 
 25 1 53  7  1.97   0.66  0.66  1 A 37  38  38  38  ARG LYS LYS LYS C  N  CA C 
-? ? ? ? . . . . 
+A 37  38  38  38  ? ? ? ? . . . . 
 26 1 214 7  1.94   0.69  0.69  1 A 159 160 160 160 ARG ASP ASP ASP C  N  CA C 
-? ? ? ? . . . . 
+A 159 160 160 160 ? ? ? ? . . . . 
 27 1 77  7  1.93   0.77  0.77  1 A 78  79  79  79  GLU MET MET MET C  N  CA C 
-? ? ? ? . . . . 
+A 78  79  79  79  ? ? ? ? . . . . 
 28 1 227 7  1.77   0.55  0.55  1 A 168 169 169 169 THR LEU LEU LEU C  N  CA C 
-? ? ? ? . . . . 
+A 168 169 169 169 ? ? ? ? . . . . 
 29 1 279 7  1.6    0.36  0.36  1 A 82  82  82  82  TYR TYR TYR TYR CA CB CG 
-CD1 ? ? ? ? . . . . 
+CD1 A 82  82  82  82  ? ? ? ? . . . . 
 30 1 15  6  5.87   2.11  2.11  1 A 8   9   9   9   PHE THR THR THR C  N  CA C 
-? ? ? ? . . . . 
+A 8   9   9   9   ? ? ? ? . . . . 
 31 1 21  6  3.08   0.78  0.78  1 A 11  12  12  12  ASP GLU GLU GLU C  N  CA C 
-? ? ? ? . . . . 
+A 11  12  12  12  ? ? ? ? . . . . 
 32 1 17  5  2.32   0.98  0.98  1 A 9   10  10  10  THR ASP ASP ASP C  N  CA C 
-? ? ? ? . . . . 
+A 9   10  10  10  ? ? ? ? . . . . 
 33 1 23  5  2.2    1.19  1.19  1 A 13  14  14  14  LEU SER SER SER C  N  CA C 
-? ? ? ? . . . . 
+A 13  14  14  14  ? ? ? ? . . . . 
 34 1 38  5  2.06   0.58  0.58  1 A 29  29  29  30  GLU GLU GLU PHE N  CA C  N 
-? ? ? ? . . . . 
+A 29  29  29  30  ? ? ? ? . . . . 
 35 1 220 5  1.92   0.32  0.32  1 A 164 165 165 165 THR GLU GLU GLU C  N  CA C 
-? ? ? ? . . . . 
+A 164 165 165 165 ? ? ? ? . . . . 
 36 1 3   5  1.88   0.67  0.67  1 A 2   3   3   3   LEU ILE ILE ILE C  N  CA C 
-? ? ? ? . . . . 
+A 2   3   3   3   ? ? ? ? . . . . 
 37 1 199 5  1.56   0.29  0.29  1 A 146 146 146 147 GLU GLU GLU GLY N  CA C  N 
-? ? ? ? . . . . 
+A 146 146 146 147 ? ? ? ? . . . . 
 38 1 270 4  4.1    0.44  0.44  1 A 133 133 133 133 PHE PHE PHE PHE N  CA CB CG 
-? ? ? ? . . . . 
+A 133 133 133 133 ? ? ? ? . . . . 
 39 1 25  4  2.45   0.35  0.35  1 A 19  20  20  20  PRO MET MET MET C  N  CA C 
-? ? ? ? . . . . 
+A 19  20  20  20  ? ? ? ? . . . . 
 40 1 223 4  2.4    0.78  0.78  1 A 166 166 166 167 VAL VAL VAL PRO N  CA C  N 
-? ? ? ? . . . . 
+A 166 166 166 167 ? ? ? ? . . . . 
 41 1 36  4  2.25   0.17  0.17  1 A 28  28  28  29  TYR TYR TYR GLU N  CA C  N 
-? ? ? ? . . . . 
+A 28  28  28  29  ? ? ? ? . . . . 
 42 1 2   4  2.08   0.08  0.08  1 A 2   2   2   3   LEU LEU LEU ILE N  CA C  N 
-? ? ? ? . . . . 
+A 2   2   2   3   ? ? ? ? . . . . 
 43 1 171 4  1.95   0.44  0.44  1 A 131 131 131 132 ASP ASP ASP ARG N  CA C  N 
-? ? ? ? . . . . 
+A 131 131 131 132 ? ? ? ? . . . . 
 44 1 40  4  1.8    0.55  0.55  1 A 30  30  30  31  PHE PHE PHE LYS N  CA C  N 
-? ? ? ? . . . . 
+A 30  30  30  31  ? ? ? ? . . . . 
 45 1 78  4  1.5    0.25  0.25  1 A 79  79  79  80  MET MET MET ASN N  CA C  N 
-? ? ? ? . . . . 
+A 79  79  79  80  ? ? ? ? . . . . 
 46 1 265 3  147.07 3.6   3.6   1 A 95  95  95  95  PHE PHE PHE PHE CA CB CG 
-CD1 ? ? ? ? . . . . 
+CD1 A 95  95  95  95  ? ? ? ? . . . . 
 47 1 24  3  2.53   0.48  0.48  1 A 14  14  14  15  SER SER SER SER N  CA C  N 
-? ? ? ? . . . . 
+A 14  14  14  15  ? ? ? ? . . . . 
 48 1 183 3  2.4    0.98  0.98  1 A 137 137 137 138 ALA ALA ALA PHE N  CA C  N 
-? ? ? ? . . . . 
+A 137 137 137 138 ? ? ? ? . . . . 
 49 1 5   3  2.3    0.91  0.91  1 A 3   4   4   4   ILE TYR TYR TYR C  N  CA C 
-? ? ? ? . . . . 
+A 3   4   4   4   ? ? ? ? . . . . 
 50 1 224 3  2.27   0.69  0.69  1 A 167 167 167 168 PRO PRO PRO THR N  CA C  N 
-? ? ? ? . . . . 
+A 167 167 167 168 ? ? ? ? . . . . 
 51 1 82  3  2.13   0.66  0.66  1 A 82  82  82  83  TYR TYR TYR GLU N  CA C  N 
-? ? ? ? . . . . 
+A 82  82  82  83  ? ? ? ? . . . . 
 52 1 55  3  2.13   0.57  0.57  1 A 65  66  66  66  GLU ARG ARG ARG C  N  CA C 
-? ? ? ? . . . . 
+A 65  66  66  66  ? ? ? ? . . . . 
 53 1 249 3  1.83   0.53  0.53  1 A 180 180 180 181 LYS LYS LYS CYS N  CA C  N 
-? ? ? ? . . . . 
+A 180 180 180 181 ? ? ? ? . . . . 
 54 1 6   3  1.73   0.42  0.42  1 A 4   4   4   5   TYR TYR TYR LYS N  CA C  N 
-? ? ? ? . . . . 
+A 4   4   4   5   ? ? ? ? . . . . 
 55 1 72  3  1.43   0.4   0.4   1 A 75  75  75  76  LYS LYS LYS LEU N  CA C  N 
-? ? ? ? . . . . 
+A 75  75  75  76  ? ? ? ? . . . . 
 56 1 252 3  1.27   0.05  0.05  1 A 25  26  26  26  ASP LEU LEU LEU C  N  CA C 
-? ? ? ? . . . . 
+A 25  26  26  26  ? ? ? ? . . . . 
 57 1 246 2  2.95   0.25  0.25  1 A 178 179 179 179 GLU GLU GLU GLU C  N  CA C 
-? ? ? ? . . . . 
-58 1 207 2  2.2    0.0   0.0   1 A 155 155 155 156 ILE ILE ILE ILE N  CA C  N 
-? ? ? ? . . . . 
+A 178 179 179 179 ? ? ? ? . . . . 
+58 1 207 2  2.2    2.2   0.0   1 A 155 155 155 156 ILE ILE ILE ILE N  CA C  N 
+A 155 155 155 156 ? ? ? ? . . . . 
 59 1 245 2  2.1    0.4   0.4   1 A 178 178 178 179 GLU GLU GLU GLU N  CA C  N 
-? ? ? ? . . . . 
+A 178 178 178 179 ? ? ? ? . . . . 
 60 1 7   2  2.1    1.0   1.0   1 A 4   5   5   5   TYR LYS LYS LYS C  N  CA C 
-? ? ? ? . . . . 
+A 4   5   5   5   ? ? ? ? . . . . 
 61 1 129 2  2.1    0.2   0.2   1 A 105 106 106 106 LYS ASN ASN ASN C  N  CA C 
-? ? ? ? . . . . 
+A 105 106 106 106 ? ? ? ? . . . . 
 62 1 222 2  1.95   0.65  0.65  1 A 165 166 166 166 GLU VAL VAL VAL C  N  CA C 
-? ? ? ? . . . . 
+A 165 166 166 166 ? ? ? ? . . . . 
 63 1 274 2  1.95   0.65  0.65  1 A 91  91  91  91  TYR TYR TYR TYR N  CA CB CG 
-? ? ? ? . . . . 
+A 91  91  91  91  ? ? ? ? . . . . 
 64 1 70  2  1.85   0.75  0.75  1 A 74  74  74  75  HIS HIS HIS LYS N  CA C  N 
-? ? ? ? . . . . 
+A 74  74  74  75  ? ? ? ? . . . . 
 65 1 200 2  1.85   0.25  0.25  1 A 151 152 152 152 GLY GLN GLN GLN C  N  CA C 
-? ? ? ? . . . . 
+A 151 152 152 152 ? ? ? ? . . . . 
 66 1 275 2  1.8    0.7   0.7   1 A 91  91  91  91  TYR TYR TYR TYR CA CB CG 
-CD1 ? ? ? ? . . . . 
+CD1 A 91  91  91  91  ? ? ? ? . . . . 
 67 1 216 2  1.8    0.7   0.7   1 A 160 161 161 161 ASP VAL VAL VAL C  N  CA C 
-? ? ? ? . . . . 
+A 160 161 161 161 ? ? ? ? . . . . 
 68 1 247 2  1.6    0.3   0.3   1 A 179 179 179 180 GLU GLU GLU LYS N  CA C  N 
-? ? ? ? . . . . 
+A 179 179 179 180 ? ? ? ? . . . . 
 69 1 51  2  1.6    0.3   0.3   1 A 36  37  37  37  VAL ARG ARG ARG C  N  CA C 
-? ? ? ? . . . . 
+A 36  37  37  37  ? ? ? ? . . . . 
 70 1 213 2  1.55   0.35  0.35  1 A 158 158 158 159 TYR TYR TYR ARG N  CA C  N 
-? ? ? ? . . . . 
+A 158 158 158 159 ? ? ? ? . . . . 
 71 1 239 2  1.35   0.05  0.05  1 A 174 175 175 175 GLU ALA ALA ALA C  N  CA C 
-? ? ? ? . . . . 
+A 174 175 175 175 ? ? ? ? . . . . 
 72 1 169 2  1.35   0.05  0.05  1 A 130 130 130 131 LYS LYS LYS ASP N  CA C  N 
-? ? ? ? . . . . 
+A 130 130 130 131 ? ? ? ? . . . . 
 # 
 loop_
 _pdbx_nmr_dihedral_angle_violation.ordinal 
@@ -5305,6 +5402,11 @@ _pdbx_nmr_dihedral_angle_violation.auth_atom_id_1
 _pdbx_nmr_dihedral_angle_violation.auth_atom_id_2 
 _pdbx_nmr_dihedral_angle_violation.auth_atom_id_3 
 _pdbx_nmr_dihedral_angle_violation.auth_atom_id_4 
+_pdbx_nmr_dihedral_angle_violation.label_asym_id 
+_pdbx_nmr_dihedral_angle_violation.label_seq_id_1 
+_pdbx_nmr_dihedral_angle_violation.label_seq_id_2 
+_pdbx_nmr_dihedral_angle_violation.label_seq_id_3 
+_pdbx_nmr_dihedral_angle_violation.label_seq_id_4 
 _pdbx_nmr_dihedral_angle_violation.PDB_ins_code_1 
 _pdbx_nmr_dihedral_angle_violation.PDB_ins_code_2 
 _pdbx_nmr_dihedral_angle_violation.PDB_ins_code_3 
@@ -5313,920 +5415,920 @@ _pdbx_nmr_dihedral_angle_violation.label_alt_id_1
 _pdbx_nmr_dihedral_angle_violation.label_alt_id_2 
 _pdbx_nmr_dihedral_angle_violation.label_alt_id_3 
 _pdbx_nmr_dihedral_angle_violation.label_alt_id_4 
-1   1 265 20 150.5 1 A 95  95  95  95  PHE PHE PHE PHE CA CB CG CD1 ? ? ? ? . 
-. . . 
-2   1 265 5  148.6 1 A 95  95  95  95  PHE PHE PHE PHE CA CB CG CD1 ? ? ? ? . 
-. . . 
-3   1 281 17 147.8 1 A 116 116 116 116 PHE PHE PHE PHE CA CB CG CD1 ? ? ? ? . 
-. . . 
-4   1 271 11 146.6 1 A 133 133 133 133 PHE PHE PHE PHE CA CB CG CD1 ? ? ? ? . 
-. . . 
-5   1 293 6  146.0 1 A 30  30  30  30  PHE PHE PHE PHE CA CB CG CD1 ? ? ? ? . 
-. . . 
-6   1 271 13 145.6 1 A 133 133 133 133 PHE PHE PHE PHE CA CB CG CD1 ? ? ? ? . 
-. . . 
-7   1 271 15 144.8 1 A 133 133 133 133 PHE PHE PHE PHE CA CB CG CD1 ? ? ? ? . 
-. . . 
-8   1 293 11 144.7 1 A 30  30  30  30  PHE PHE PHE PHE CA CB CG CD1 ? ? ? ? . 
-. . . 
-9   1 293 10 143.6 1 A 30  30  30  30  PHE PHE PHE PHE CA CB CG CD1 ? ? ? ? . 
-. . . 
-10  1 265 12 142.1 1 A 95  95  95  95  PHE PHE PHE PHE CA CB CG CD1 ? ? ? ? . 
-. . . 
-11  1 271 9  141.6 1 A 133 133 133 133 PHE PHE PHE PHE CA CB CG CD1 ? ? ? ? . 
-. . . 
-12  1 271 1  141.4 1 A 133 133 133 133 PHE PHE PHE PHE CA CB CG CD1 ? ? ? ? . 
-. . . 
-13  1 293 1  141.0 1 A 30  30  30  30  PHE PHE PHE PHE CA CB CG CD1 ? ? ? ? . 
-. . . 
-14  1 293 9  140.4 1 A 30  30  30  30  PHE PHE PHE PHE CA CB CG CD1 ? ? ? ? . 
-. . . 
-15  1 271 18 139.4 1 A 133 133 133 133 PHE PHE PHE PHE CA CB CG CD1 ? ? ? ? . 
-. . . 
-16  1 271 19 138.4 1 A 133 133 133 133 PHE PHE PHE PHE CA CB CG CD1 ? ? ? ? . 
-. . . 
-17  1 271 16 137.1 1 A 133 133 133 133 PHE PHE PHE PHE CA CB CG CD1 ? ? ? ? . 
-. . . 
-18  1 293 2  136.7 1 A 30  30  30  30  PHE PHE PHE PHE CA CB CG CD1 ? ? ? ? . 
-. . . 
-19  1 18  13 11.6  1 A 10  10  10  11  ASP ASP ASP ASP N  CA C  N   ? ? ? ? . 
-. . . 
-20  1 14  17 10.7  1 A 8   8   8   9   PHE PHE PHE THR N  CA C  N   ? ? ? ? . 
-. . . 
-21  1 18  4  9.7   1 A 10  10  10  11  ASP ASP ASP ASP N  CA C  N   ? ? ? ? . 
-. . . 
-22  1 18  7  9.7   1 A 10  10  10  11  ASP ASP ASP ASP N  CA C  N   ? ? ? ? . 
-. . . 
-23  1 18  15 9.2   1 A 10  10  10  11  ASP ASP ASP ASP N  CA C  N   ? ? ? ? . 
-. . . 
-24  1 18  17 8.8   1 A 10  10  10  11  ASP ASP ASP ASP N  CA C  N   ? ? ? ? . 
-. . . 
-25  1 175 5  8.8   1 A 133 133 133 134 PHE PHE PHE LYS N  CA C  N   ? ? ? ? . 
-. . . 
-26  1 175 10 8.4   1 A 133 133 133 134 PHE PHE PHE LYS N  CA C  N   ? ? ? ? . 
-. . . 
-27  1 175 1  7.9   1 A 133 133 133 134 PHE PHE PHE LYS N  CA C  N   ? ? ? ? . 
-. . . 
-28  1 15  9  7.8   1 A 8   9   9   9   PHE THR THR THR C  N  CA C   ? ? ? ? . 
-. . . 
-29  1 18  5  7.6   1 A 10  10  10  11  ASP ASP ASP ASP N  CA C  N   ? ? ? ? . 
-. . . 
-30  1 15  15 7.6   1 A 8   9   9   9   PHE THR THR THR C  N  CA C   ? ? ? ? . 
-. . . 
-31  1 18  8  7.5   1 A 10  10  10  11  ASP ASP ASP ASP N  CA C  N   ? ? ? ? . 
-. . . 
-32  1 18  9  7.5   1 A 10  10  10  11  ASP ASP ASP ASP N  CA C  N   ? ? ? ? . 
-. . . 
-33  1 14  15 7.5   1 A 8   8   8   9   PHE PHE PHE THR N  CA C  N   ? ? ? ? . 
-. . . 
-34  1 175 18 7.0   1 A 133 133 133 134 PHE PHE PHE LYS N  CA C  N   ? ? ? ? . 
-. . . 
-35  1 175 11 6.9   1 A 133 133 133 134 PHE PHE PHE LYS N  CA C  N   ? ? ? ? . 
-. . . 
-36  1 15  7  6.8   1 A 8   9   9   9   PHE THR THR THR C  N  CA C   ? ? ? ? . 
-. . . 
-37  1 14  9  6.8   1 A 8   8   8   9   PHE PHE PHE THR N  CA C  N   ? ? ? ? . 
-. . . 
-38  1 14  13 6.8   1 A 8   8   8   9   PHE PHE PHE THR N  CA C  N   ? ? ? ? . 
-. . . 
-39  1 175 2  6.7   1 A 133 133 133 134 PHE PHE PHE LYS N  CA C  N   ? ? ? ? . 
-. . . 
-40  1 175 14 6.6   1 A 133 133 133 134 PHE PHE PHE LYS N  CA C  N   ? ? ? ? . 
-. . . 
-41  1 13  2  6.5   1 A 7   8   8   8   ILE PHE PHE PHE C  N  CA C   ? ? ? ? . 
-. . . 
-42  1 175 6  6.4   1 A 133 133 133 134 PHE PHE PHE LYS N  CA C  N   ? ? ? ? . 
-. . . 
-43  1 13  20 6.4   1 A 7   8   8   8   ILE PHE PHE PHE C  N  CA C   ? ? ? ? . 
-. . . 
-44  1 175 16 6.3   1 A 133 133 133 134 PHE PHE PHE LYS N  CA C  N   ? ? ? ? . 
-. . . 
-45  1 175 20 6.3   1 A 133 133 133 134 PHE PHE PHE LYS N  CA C  N   ? ? ? ? . 
-. . . 
-46  1 175 19 6.2   1 A 133 133 133 134 PHE PHE PHE LYS N  CA C  N   ? ? ? ? . 
-. . . 
-47  1 14  7  6.1   1 A 8   8   8   9   PHE PHE PHE THR N  CA C  N   ? ? ? ? . 
-. . . 
-48  1 175 9  5.9   1 A 133 133 133 134 PHE PHE PHE LYS N  CA C  N   ? ? ? ? . 
-. . . 
-49  1 15  17 5.9   1 A 8   9   9   9   PHE THR THR THR C  N  CA C   ? ? ? ? . 
-. . . 
-50  1 175 13 5.8   1 A 133 133 133 134 PHE PHE PHE LYS N  CA C  N   ? ? ? ? . 
-. . . 
-51  1 13  10 5.8   1 A 7   8   8   8   ILE PHE PHE PHE C  N  CA C   ? ? ? ? . 
-. . . 
-52  1 16  1  5.7   1 A 9   9   9   10  THR THR THR ASP N  CA C  N   ? ? ? ? . 
-. . . 
-53  1 15  13 5.6   1 A 8   9   9   9   PHE THR THR THR C  N  CA C   ? ? ? ? . 
-. . . 
-54  1 271 12 5.5   1 A 133 133 133 133 PHE PHE PHE PHE CA CB CG CD1 ? ? ? ? . 
-. . . 
-55  1 175 7  5.5   1 A 133 133 133 134 PHE PHE PHE LYS N  CA C  N   ? ? ? ? . 
-. . . 
-56  1 16  18 5.3   1 A 9   9   9   10  THR THR THR ASP N  CA C  N   ? ? ? ? . 
-. . . 
-57  1 52  13 5.1   1 A 37  37  37  38  ARG ARG ARG LYS N  CA C  N   ? ? ? ? . 
-. . . 
-58  1 13  11 5.1   1 A 7   8   8   8   ILE PHE PHE PHE C  N  CA C   ? ? ? ? . 
-. . . 
-59  1 22  5  4.9   1 A 12  12  12  13  GLU GLU GLU LEU N  CA C  N   ? ? ? ? . 
-. . . 
-60  1 270 12 4.8   1 A 133 133 133 133 PHE PHE PHE PHE N  CA CB CG  ? ? ? ? . 
-. . . 
-61  1 10  6  4.8   1 A 6   6   6   7   ASP ASP ASP ILE N  CA C  N   ? ? ? ? . 
-. . . 
-62  1 86  2  4.7   1 A 84  84  84  85  ASP ASP ASP ALA N  CA C  N   ? ? ? ? . 
-. . . 
-63  1 54  18 4.7   1 A 38  38  38  39  LYS LYS LYS GLU N  CA C  N   ? ? ? ? . 
-. . . 
-64  1 22  4  4.7   1 A 12  12  12  13  GLU GLU GLU LEU N  CA C  N   ? ? ? ? . 
-. . . 
-65  1 175 15 4.7   1 A 133 133 133 134 PHE PHE PHE LYS N  CA C  N   ? ? ? ? . 
-. . . 
-66  1 172 19 4.6   1 A 131 132 132 132 ASP ARG ARG ARG C  N  CA C   ? ? ? ? . 
-. . . 
-67  1 23  7  4.5   1 A 13  14  14  14  LEU SER SER SER C  N  CA C   ? ? ? ? . 
-. . . 
-68  1 21  1  4.5   1 A 11  12  12  12  ASP GLU GLU GLU C  N  CA C   ? ? ? ? . 
-. . . 
-69  1 16  14 4.5   1 A 9   9   9   10  THR THR THR ASP N  CA C  N   ? ? ? ? . 
-. . . 
-70  1 271 8  4.4   1 A 133 133 133 133 PHE PHE PHE PHE CA CB CG CD1 ? ? ? ? . 
-. . . 
-71  1 22  15 4.4   1 A 12  12  12  13  GLU GLU GLU LEU N  CA C  N   ? ? ? ? . 
-. . . 
-72  1 19  7  4.4   1 A 10  11  11  11  ASP ASP ASP ASP C  N  CA C   ? ? ? ? . 
-. . . 
-73  1 19  15 4.3   1 A 10  11  11  11  ASP ASP ASP ASP C  N  CA C   ? ? ? ? . 
-. . . 
-74  1 172 1  4.3   1 A 131 132 132 132 ASP ARG ARG ARG C  N  CA C   ? ? ? ? . 
-. . . 
-75  1 264 8  4.2   1 A 95  95  95  95  PHE PHE PHE PHE N  CA CB CG  ? ? ? ? . 
-. . . 
-76  1 255 4  4.2   1 A 19  19  19  20  PRO PRO PRO MET N  CA C  N   ? ? ? ? . 
-. . . 
-77  1 22  14 4.2   1 A 12  12  12  13  GLU GLU GLU LEU N  CA C  N   ? ? ? ? . 
-. . . 
-78  1 270 8  4.1   1 A 133 133 133 133 PHE PHE PHE PHE N  CA CB CG  ? ? ? ? . 
-. . . 
-79  1 255 20 4.1   1 A 19  19  19  20  PRO PRO PRO MET N  CA C  N   ? ? ? ? . 
-. . . 
-80  1 16  12 4.1   1 A 9   9   9   10  THR THR THR ASP N  CA C  N   ? ? ? ? . 
-. . . 
-81  1 13  3  4.1   1 A 7   8   8   8   ILE PHE PHE PHE C  N  CA C   ? ? ? ? . 
-. . . 
-82  1 52  7  4.0   1 A 37  37  37  38  ARG ARG ARG LYS N  CA C  N   ? ? ? ? . 
-. . . 
-83  1 4   16 4.0   1 A 3   3   3   4   ILE ILE ILE TYR N  CA C  N   ? ? ? ? . 
-. . . 
-84  1 255 19 4.0   1 A 19  19  19  20  PRO PRO PRO MET N  CA C  N   ? ? ? ? . 
-. . . 
-85  1 16  8  4.0   1 A 9   9   9   10  THR THR THR ASP N  CA C  N   ? ? ? ? . 
-. . . 
-86  1 86  4  3.9   1 A 84  84  84  85  ASP ASP ASP ALA N  CA C  N   ? ? ? ? . 
-. . . 
-87  1 57  10 3.9   1 A 67  68  68  68  GLY ILE ILE ILE C  N  CA C   ? ? ? ? . 
-. . . 
-88  1 270 4  3.9   1 A 133 133 133 133 PHE PHE PHE PHE N  CA CB CG  ? ? ? ? . 
-. . . 
-89  1 172 9  3.9   1 A 131 132 132 132 ASP ARG ARG ARG C  N  CA C   ? ? ? ? . 
-. . . 
-90  1 16  19 3.9   1 A 9   9   9   10  THR THR THR ASP N  CA C  N   ? ? ? ? . 
-. . . 
-91  1 13  14 3.9   1 A 7   8   8   8   ILE PHE PHE PHE C  N  CA C   ? ? ? ? . 
-. . . 
-92  1 251 14 3.8   1 A 181 181 181 182 CYS CYS CYS LEU N  CA C  N   ? ? ? ? . 
-. . . 
-93  1 243 17 3.8   1 A 177 177 177 178 ILE ILE ILE GLU N  CA C  N   ? ? ? ? . 
-. . . 
-94  1 230 11 3.8   1 A 170 170 170 171 MET MET MET LEU N  CA C  N   ? ? ? ? . 
-. . . 
-95  1 19  9  3.8   1 A 10  11  11  11  ASP ASP ASP ASP C  N  CA C   ? ? ? ? . 
-. . . 
-96  1 180 6  3.8   1 A 135 136 136 136 ASN LEU LEU LEU C  N  CA C   ? ? ? ? . 
-. . . 
-97  1 180 13 3.8   1 A 135 136 136 136 ASN LEU LEU LEU C  N  CA C   ? ? ? ? . 
-. . . 
-98  1 14  4  3.8   1 A 8   8   8   9   PHE PHE PHE THR N  CA C  N   ? ? ? ? . 
-. . . 
-99  1 86  19 3.7   1 A 84  84  84  85  ASP ASP ASP ALA N  CA C  N   ? ? ? ? . 
-. . . 
-100 1 4   11 3.7   1 A 3   3   3   4   ILE ILE ILE TYR N  CA C  N   ? ? ? ? . 
-. . . 
-101 1 230 7  3.7   1 A 170 170 170 171 MET MET MET LEU N  CA C  N   ? ? ? ? . 
-. . . 
-102 1 22  16 3.7   1 A 12  12  12  13  GLU GLU GLU LEU N  CA C  N   ? ? ? ? . 
-. . . 
-103 1 17  14 3.7   1 A 9   10  10  10  THR ASP ASP ASP C  N  CA C   ? ? ? ? . 
-. . . 
-104 1 54  10 3.6   1 A 38  38  38  39  LYS LYS LYS GLU N  CA C  N   ? ? ? ? . 
-. . . 
-105 1 35  18 3.6   1 A 27  28  28  28  VAL TYR TYR TYR C  N  CA C   ? ? ? ? . 
-. . . 
-106 1 271 3  3.6   1 A 133 133 133 133 PHE PHE PHE PHE CA CB CG CD1 ? ? ? ? . 
-. . . 
-107 1 270 17 3.6   1 A 133 133 133 133 PHE PHE PHE PHE N  CA CB CG  ? ? ? ? . 
-. . . 
-108 1 243 18 3.6   1 A 177 177 177 178 ILE ILE ILE GLU N  CA C  N   ? ? ? ? . 
-. . . 
-109 1 22  17 3.6   1 A 12  12  12  13  GLU GLU GLU LEU N  CA C  N   ? ? ? ? . 
-. . . 
-110 1 21  14 3.6   1 A 11  12  12  12  ASP GLU GLU GLU C  N  CA C   ? ? ? ? . 
-. . . 
-111 1 183 13 3.6   1 A 137 137 137 138 ALA ALA ALA PHE N  CA C  N   ? ? ? ? . 
-. . . 
-112 1 271 4  3.5   1 A 133 133 133 133 PHE PHE PHE PHE CA CB CG CD1 ? ? ? ? . 
-. . . 
-113 1 223 15 3.5   1 A 166 166 166 167 VAL VAL VAL PRO N  CA C  N   ? ? ? ? . 
-. . . 
-114 1 77  5  3.4   1 A 78  79  79  79  GLU MET MET MET C  N  CA C   ? ? ? ? . 
-. . . 
-115 1 243 13 3.4   1 A 177 177 177 178 ILE ILE ILE GLU N  CA C  N   ? ? ? ? . 
-. . . 
-116 1 167 19 3.4   1 A 128 128 128 129 LEU LEU LEU ALA N  CA C  N   ? ? ? ? . 
-. . . 
-117 1 13  16 3.4   1 A 7   8   8   8   ILE PHE PHE PHE C  N  CA C   ? ? ? ? . 
-. . . 
-118 1 5   9  3.3   1 A 3   4   4   4   ILE TYR TYR TYR C  N  CA C   ? ? ? ? . 
-. . . 
-119 1 35  3  3.3   1 A 27  28  28  28  VAL TYR TYR TYR C  N  CA C   ? ? ? ? . 
-. . . 
-120 1 35  13 3.3   1 A 27  28  28  28  VAL TYR TYR TYR C  N  CA C   ? ? ? ? . 
-. . . 
-121 1 255 18 3.3   1 A 19  19  19  20  PRO PRO PRO MET N  CA C  N   ? ? ? ? . 
-. . . 
-122 1 180 9  3.3   1 A 135 136 136 136 ASN LEU LEU LEU C  N  CA C   ? ? ? ? . 
-. . . 
-123 1 167 9  3.3   1 A 128 128 128 129 LEU LEU LEU ALA N  CA C  N   ? ? ? ? . 
-. . . 
-124 1 13  1  3.3   1 A 7   8   8   8   ILE PHE PHE PHE C  N  CA C   ? ? ? ? . 
-. . . 
-125 1 54  12 3.2   1 A 38  38  38  39  LYS LYS LYS GLU N  CA C  N   ? ? ? ? . 
-. . . 
-126 1 253 9  3.2   1 A 26  26  26  27  LEU LEU LEU VAL N  CA C  N   ? ? ? ? . 
-. . . 
-127 1 246 20 3.2   1 A 178 179 179 179 GLU GLU GLU GLU C  N  CA C   ? ? ? ? . 
-. . . 
-128 1 24  13 3.2   1 A 14  14  14  15  SER SER SER SER N  CA C  N   ? ? ? ? . 
-. . . 
-129 1 230 2  3.2   1 A 170 170 170 171 MET MET MET LEU N  CA C  N   ? ? ? ? . 
-. . . 
-130 1 172 11 3.2   1 A 131 132 132 132 ASP ARG ARG ARG C  N  CA C   ? ? ? ? . 
-. . . 
-131 1 1   3  3.2   1 A 1   2   2   2   MET LEU LEU LEU C  N  CA C   ? ? ? ? . 
-. . . 
-132 1 7   8  3.1   1 A 4   5   5   5   TYR LYS LYS LYS C  N  CA C   ? ? ? ? . 
-. . . 
-133 1 52  10 3.1   1 A 37  37  37  38  ARG ARG ARG LYS N  CA C  N   ? ? ? ? . 
-. . . 
-134 1 52  18 3.1   1 A 37  37  37  38  ARG ARG ARG LYS N  CA C  N   ? ? ? ? . 
-. . . 
-135 1 271 17 3.1   1 A 133 133 133 133 PHE PHE PHE PHE CA CB CG CD1 ? ? ? ? . 
-. . . 
-136 1 22  9  3.1   1 A 12  12  12  13  GLU GLU GLU LEU N  CA C  N   ? ? ? ? . 
-. . . 
-137 1 214 19 3.1   1 A 159 160 160 160 ARG ASP ASP ASP C  N  CA C   ? ? ? ? . 
-. . . 
-138 1 168 11 3.1   1 A 129 130 130 130 ALA LYS LYS LYS C  N  CA C   ? ? ? ? . 
-. . . 
-139 1 16  3  3.1   1 A 9   9   9   10  THR THR THR ASP N  CA C  N   ? ? ? ? . 
-. . . 
-140 1 82  10 3.0   1 A 82  82  82  83  TYR TYR TYR GLU N  CA C  N   ? ? ? ? . 
-. . . 
-141 1 54  16 3.0   1 A 38  38  38  39  LYS LYS LYS GLU N  CA C  N   ? ? ? ? . 
-. . . 
-142 1 35  6  3.0   1 A 27  28  28  28  VAL TYR TYR TYR C  N  CA C   ? ? ? ? . 
-. . . 
-143 1 35  8  3.0   1 A 27  28  28  28  VAL TYR TYR TYR C  N  CA C   ? ? ? ? . 
-. . . 
-144 1 3   5  3.0   1 A 2   3   3   3   LEU ILE ILE ILE C  N  CA C   ? ? ? ? . 
-. . . 
-145 1 255 13 3.0   1 A 19  19  19  20  PRO PRO PRO MET N  CA C  N   ? ? ? ? . 
-. . . 
-146 1 253 3  3.0   1 A 26  26  26  27  LEU LEU LEU VAL N  CA C  N   ? ? ? ? . 
-. . . 
-147 1 25  20 3.0   1 A 19  20  20  20  PRO MET MET MET C  N  CA C   ? ? ? ? . 
-. . . 
-148 1 21  2  3.0   1 A 11  12  12  12  ASP GLU GLU GLU C  N  CA C   ? ? ? ? . 
-. . . 
-149 1 167 4  3.0   1 A 128 128 128 129 LEU LEU LEU ALA N  CA C  N   ? ? ? ? . 
-. . . 
-150 1 16  6  3.0   1 A 9   9   9   10  THR THR THR ASP N  CA C  N   ? ? ? ? . 
-. . . 
-151 1 14  8  3.0   1 A 8   8   8   9   PHE PHE PHE THR N  CA C  N   ? ? ? ? . 
-. . . 
-152 1 13  18 3.0   1 A 7   8   8   8   ILE PHE PHE PHE C  N  CA C   ? ? ? ? . 
-. . . 
-153 1 53  16 2.9   1 A 37  38  38  38  ARG LYS LYS LYS C  N  CA C   ? ? ? ? . 
-. . . 
-154 1 4   10 2.9   1 A 3   3   3   4   ILE ILE ILE TYR N  CA C  N   ? ? ? ? . 
-. . . 
-155 1 38  11 2.9   1 A 29  29  29  30  GLU GLU GLU PHE N  CA C  N   ? ? ? ? . 
-. . . 
-156 1 253 16 2.9   1 A 26  26  26  27  LEU LEU LEU VAL N  CA C  N   ? ? ? ? . 
-. . . 
-157 1 227 6  2.9   1 A 168 169 169 169 THR LEU LEU LEU C  N  CA C   ? ? ? ? . 
-. . . 
-158 1 224 16 2.9   1 A 167 167 167 168 PRO PRO PRO THR N  CA C  N   ? ? ? ? . 
-. . . 
-159 1 214 8  2.9   1 A 159 160 160 160 ARG ASP ASP ASP C  N  CA C   ? ? ? ? . 
-. . . 
-160 1 167 7  2.9   1 A 128 128 128 129 LEU LEU LEU ALA N  CA C  N   ? ? ? ? . 
-. . . 
-161 1 167 8  2.9   1 A 128 128 128 129 LEU LEU LEU ALA N  CA C  N   ? ? ? ? . 
-. . . 
-162 1 16  20 2.9   1 A 9   9   9   10  THR THR THR ASP N  CA C  N   ? ? ? ? . 
-. . . 
-163 1 86  9  2.8   1 A 84  84  84  85  ASP ASP ASP ALA N  CA C  N   ? ? ? ? . 
-. . . 
-164 1 57  15 2.8   1 A 67  68  68  68  GLY ILE ILE ILE C  N  CA C   ? ? ? ? . 
-. . . 
-165 1 55  20 2.8   1 A 65  66  66  66  GLU ARG ARG ARG C  N  CA C   ? ? ? ? . 
-. . . 
-166 1 255 17 2.8   1 A 19  19  19  20  PRO PRO PRO MET N  CA C  N   ? ? ? ? . 
-. . . 
-167 1 251 5  2.8   1 A 181 181 181 182 CYS CYS CYS LEU N  CA C  N   ? ? ? ? . 
-. . . 
-168 1 21  3  2.8   1 A 11  12  12  12  ASP GLU GLU GLU C  N  CA C   ? ? ? ? . 
-. . . 
-169 1 17  18 2.8   1 A 9   10  10  10  THR ASP ASP ASP C  N  CA C   ? ? ? ? . 
-. . . 
-170 1 77  6  2.7   1 A 78  79  79  79  GLU MET MET MET C  N  CA C   ? ? ? ? . 
-. . . 
-171 1 53  3  2.7   1 A 37  38  38  38  ARG LYS LYS LYS C  N  CA C   ? ? ? ? . 
-. . . 
-172 1 40  1  2.7   1 A 30  30  30  31  PHE PHE PHE LYS N  CA C  N   ? ? ? ? . 
-. . . 
-173 1 255 9  2.7   1 A 19  19  19  20  PRO PRO PRO MET N  CA C  N   ? ? ? ? . 
-. . . 
-174 1 246 6  2.7   1 A 178 179 179 179 GLU GLU GLU GLU C  N  CA C   ? ? ? ? . 
-. . . 
-175 1 17  1  2.7   1 A 9   10  10  10  THR ASP ASP ASP C  N  CA C   ? ? ? ? . 
-. . . 
-176 1 14  18 2.7   1 A 8   8   8   9   PHE PHE PHE THR N  CA C  N   ? ? ? ? . 
-. . . 
-177 1 83  18 2.6   1 A 82  83  83  83  TYR GLU GLU GLU C  N  CA C   ? ? ? ? . 
-. . . 
-178 1 70  12 2.6   1 A 74  74  74  75  HIS HIS HIS LYS N  CA C  N   ? ? ? ? . 
-. . . 
-179 1 52  2  2.6   1 A 37  37  37  38  ARG ARG ARG LYS N  CA C  N   ? ? ? ? . 
-. . . 
-180 1 4   12 2.6   1 A 3   3   3   4   ILE ILE ILE TYR N  CA C  N   ? ? ? ? . 
-. . . 
-181 1 274 7  2.6   1 A 91  91  91  91  TYR TYR TYR TYR N  CA CB CG  ? ? ? ? . 
-. . . 
-182 1 255 15 2.6   1 A 19  19  19  20  PRO PRO PRO MET N  CA C  N   ? ? ? ? . 
-. . . 
-183 1 253 8  2.6   1 A 26  26  26  27  LEU LEU LEU VAL N  CA C  N   ? ? ? ? . 
-. . . 
-184 1 243 10 2.6   1 A 177 177 177 178 ILE ILE ILE GLU N  CA C  N   ? ? ? ? . 
-. . . 
-185 1 224 4  2.6   1 A 167 167 167 168 PRO PRO PRO THR N  CA C  N   ? ? ? ? . 
-. . . 
-186 1 222 5  2.6   1 A 165 166 166 166 GLU VAL VAL VAL C  N  CA C   ? ? ? ? . 
-. . . 
-187 1 171 11 2.6   1 A 131 131 131 132 ASP ASP ASP ARG N  CA C  N   ? ? ? ? . 
-. . . 
-188 1 14  6  2.6   1 A 8   8   8   9   PHE PHE PHE THR N  CA C  N   ? ? ? ? . 
-. . . 
-189 1 57  14 2.5   1 A 67  68  68  68  GLY ILE ILE ILE C  N  CA C   ? ? ? ? . 
-. . . 
-190 1 57  18 2.5   1 A 67  68  68  68  GLY ILE ILE ILE C  N  CA C   ? ? ? ? . 
-. . . 
-191 1 52  5  2.5   1 A 37  37  37  38  ARG ARG ARG LYS N  CA C  N   ? ? ? ? . 
-. . . 
-192 1 5   18 2.5   1 A 3   4   4   4   ILE TYR TYR TYR C  N  CA C   ? ? ? ? . 
-. . . 
-193 1 38  1  2.5   1 A 29  29  29  30  GLU GLU GLU PHE N  CA C  N   ? ? ? ? . 
-. . . 
-194 1 293 16 2.5   1 A 30  30  30  30  PHE PHE PHE PHE CA CB CG CD1 ? ? ? ? . 
-. . . 
-195 1 275 20 2.5   1 A 91  91  91  91  TYR TYR TYR TYR CA CB CG CD1 ? ? ? ? . 
-. . . 
-196 1 251 9  2.5   1 A 181 181 181 182 CYS CYS CYS LEU N  CA C  N   ? ? ? ? . 
-. . . 
-197 1 25  6  2.5   1 A 19  20  20  20  PRO MET MET MET C  N  CA C   ? ? ? ? . 
-. . . 
-198 1 249 2  2.5   1 A 180 180 180 181 LYS LYS LYS CYS N  CA C  N   ? ? ? ? . 
-. . . 
-199 1 245 2  2.5   1 A 178 178 178 179 GLU GLU GLU GLU N  CA C  N   ? ? ? ? . 
-. . . 
-200 1 223 3  2.5   1 A 166 166 166 167 VAL VAL VAL PRO N  CA C  N   ? ? ? ? . 
-. . . 
-201 1 220 8  2.5   1 A 164 165 165 165 THR GLU GLU GLU C  N  CA C   ? ? ? ? . 
-. . . 
-202 1 216 11 2.5   1 A 160 161 161 161 ASP VAL VAL VAL C  N  CA C   ? ? ? ? . 
-. . . 
-203 1 21  16 2.5   1 A 11  12  12  12  ASP GLU GLU GLU C  N  CA C   ? ? ? ? . 
-. . . 
-204 1 172 15 2.5   1 A 131 132 132 132 ASP ARG ARG ARG C  N  CA C   ? ? ? ? . 
-. . . 
-205 1 167 2  2.5   1 A 128 128 128 129 LEU LEU LEU ALA N  CA C  N   ? ? ? ? . 
-. . . 
-206 1 84  14 2.4   1 A 83  83  83  84  GLU GLU GLU ASP N  CA C  N   ? ? ? ? . 
-. . . 
-207 1 54  8  2.4   1 A 38  38  38  39  LYS LYS LYS GLU N  CA C  N   ? ? ? ? . 
-. . . 
-208 1 43  8  2.4   1 A 32  33  33  33  GLY LYS LYS LYS C  N  CA C   ? ? ? ? . 
-. . . 
-209 1 36  3  2.4   1 A 28  28  28  29  TYR TYR TYR GLU N  CA C  N   ? ? ? ? . 
-. . . 
-210 1 36  16 2.4   1 A 28  28  28  29  TYR TYR TYR GLU N  CA C  N   ? ? ? ? . 
-. . . 
-211 1 251 6  2.4   1 A 181 181 181 182 CYS CYS CYS LEU N  CA C  N   ? ? ? ? . 
-. . . 
-212 1 243 16 2.4   1 A 177 177 177 178 ILE ILE ILE GLU N  CA C  N   ? ? ? ? . 
-. . . 
-213 1 230 9  2.4   1 A 170 170 170 171 MET MET MET LEU N  CA C  N   ? ? ? ? . 
-. . . 
-214 1 230 18 2.4   1 A 170 170 170 171 MET MET MET LEU N  CA C  N   ? ? ? ? . 
-. . . 
-215 1 202 15 2.4   1 A 152 153 153 153 GLN VAL VAL VAL C  N  CA C   ? ? ? ? . 
-. . . 
-216 1 19  8  2.4   1 A 10  11  11  11  ASP ASP ASP ASP C  N  CA C   ? ? ? ? . 
-. . . 
-217 1 19  17 2.4   1 A 10  11  11  11  ASP ASP ASP ASP C  N  CA C   ? ? ? ? . 
-. . . 
-218 1 183 9  2.4   1 A 137 137 137 138 ALA ALA ALA PHE N  CA C  N   ? ? ? ? . 
-. . . 
-219 1 167 20 2.4   1 A 128 128 128 129 LEU LEU LEU ALA N  CA C  N   ? ? ? ? . 
-. . . 
-220 1 9   16 2.3   1 A 5   6   6   6   LYS ASP ASP ASP C  N  CA C   ? ? ? ? . 
-. . . 
-221 1 83  14 2.3   1 A 82  83  83  83  TYR GLU GLU GLU C  N  CA C   ? ? ? ? . 
-. . . 
-222 1 6   19 2.3   1 A 4   4   4   5   TYR TYR TYR LYS N  CA C  N   ? ? ? ? . 
-. . . 
-223 1 53  7  2.3   1 A 37  38  38  38  ARG LYS LYS LYS C  N  CA C   ? ? ? ? . 
-. . . 
-224 1 52  1  2.3   1 A 37  37  37  38  ARG ARG ARG LYS N  CA C  N   ? ? ? ? . 
-. . . 
-225 1 50  3  2.3   1 A 36  36  36  37  VAL VAL VAL ARG N  CA C  N   ? ? ? ? . 
-. . . 
-226 1 3   13 2.3   1 A 2   3   3   3   LEU ILE ILE ILE C  N  CA C   ? ? ? ? . 
-. . . 
-227 1 253 13 2.3   1 A 26  26  26  27  LEU LEU LEU VAL N  CA C  N   ? ? ? ? . 
-. . . 
-228 1 243 8  2.3   1 A 177 177 177 178 ILE ILE ILE GLU N  CA C  N   ? ? ? ? . 
-. . . 
-229 1 24  6  2.3   1 A 14  14  14  15  SER SER SER SER N  CA C  N   ? ? ? ? . 
-. . . 
-230 1 230 12 2.3   1 A 170 170 170 171 MET MET MET LEU N  CA C  N   ? ? ? ? . 
-. . . 
-231 1 223 6  2.3   1 A 166 166 166 167 VAL VAL VAL PRO N  CA C  N   ? ? ? ? . 
-. . . 
-232 1 19  19 2.3   1 A 10  11  11  11  ASP ASP ASP ASP C  N  CA C   ? ? ? ? . 
-. . . 
-233 1 14  5  2.3   1 A 8   8   8   9   PHE PHE PHE THR N  CA C  N   ? ? ? ? . 
-. . . 
-234 1 129 15 2.3   1 A 105 106 106 106 LYS ASN ASN ASN C  N  CA C   ? ? ? ? . 
-. . . 
-235 1 86  8  2.2   1 A 84  84  84  85  ASP ASP ASP ALA N  CA C  N   ? ? ? ? . 
-. . . 
-236 1 86  14 2.2   1 A 84  84  84  85  ASP ASP ASP ALA N  CA C  N   ? ? ? ? . 
-. . . 
-237 1 55  13 2.2   1 A 65  66  66  66  GLU ARG ARG ARG C  N  CA C   ? ? ? ? . 
-. . . 
-238 1 4   8  2.2   1 A 3   3   3   4   ILE ILE ILE TYR N  CA C  N   ? ? ? ? . 
-. . . 
-239 1 36  15 2.2   1 A 28  28  28  29  TYR TYR TYR GLU N  CA C  N   ? ? ? ? . 
-. . . 
-240 1 25  5  2.2   1 A 19  20  20  20  PRO MET MET MET C  N  CA C   ? ? ? ? . 
-. . . 
-241 1 230 8  2.2   1 A 170 170 170 171 MET MET MET LEU N  CA C  N   ? ? ? ? . 
-. . . 
-242 1 22  8  2.2   1 A 12  12  12  13  GLU GLU GLU LEU N  CA C  N   ? ? ? ? . 
-. . . 
-243 1 207 11 2.2   1 A 155 155 155 156 ILE ILE ILE ILE N  CA C  N   ? ? ? ? . 
-. . . 
-244 1 207 12 2.2   1 A 155 155 155 156 ILE ILE ILE ILE N  CA C  N   ? ? ? ? . 
-. . . 
-245 1 2   14 2.2   1 A 2   2   2   3   LEU LEU LEU ILE N  CA C  N   ? ? ? ? . 
-. . . 
-246 1 19  5  2.2   1 A 10  11  11  11  ASP ASP ASP ASP C  N  CA C   ? ? ? ? . 
-. . . 
-247 1 54  3  2.1   1 A 38  38  38  39  LYS LYS LYS GLU N  CA C  N   ? ? ? ? . 
-. . . 
-248 1 53  10 2.1   1 A 37  38  38  38  ARG LYS LYS LYS C  N  CA C   ? ? ? ? . 
-. . . 
-249 1 52  12 2.1   1 A 37  37  37  38  ARG ARG ARG LYS N  CA C  N   ? ? ? ? . 
-. . . 
-250 1 279 15 2.1   1 A 82  82  82  82  TYR TYR TYR TYR CA CB CG CD1 ? ? ? ? . 
-. . . 
-251 1 253 6  2.1   1 A 26  26  26  27  LEU LEU LEU VAL N  CA C  N   ? ? ? ? . 
-. . . 
-252 1 25  2  2.1   1 A 19  20  20  20  PRO MET MET MET C  N  CA C   ? ? ? ? . 
-. . . 
-253 1 243 9  2.1   1 A 177 177 177 178 ILE ILE ILE GLU N  CA C  N   ? ? ? ? . 
-. . . 
-254 1 24  17 2.1   1 A 14  14  14  15  SER SER SER SER N  CA C  N   ? ? ? ? . 
-. . . 
-255 1 230 13 2.1   1 A 170 170 170 171 MET MET MET LEU N  CA C  N   ? ? ? ? . 
-. . . 
-256 1 227 9  2.1   1 A 168 169 169 169 THR LEU LEU LEU C  N  CA C   ? ? ? ? . 
-. . . 
-257 1 21  19 2.1   1 A 11  12  12  12  ASP GLU GLU GLU C  N  CA C   ? ? ? ? . 
-. . . 
-258 1 200 11 2.1   1 A 151 152 152 152 GLY GLN GLN GLN C  N  CA C   ? ? ? ? . 
-. . . 
-259 1 2   19 2.1   1 A 2   2   2   3   LEU LEU LEU ILE N  CA C  N   ? ? ? ? . 
-. . . 
-260 1 171 1  2.1   1 A 131 131 131 132 ASP ASP ASP ARG N  CA C  N   ? ? ? ? . 
-. . . 
-261 1 167 13 2.1   1 A 128 128 128 129 LEU LEU LEU ALA N  CA C  N   ? ? ? ? . 
-. . . 
-262 1 82  6  2.0   1 A 82  82  82  83  TYR TYR TYR GLU N  CA C  N   ? ? ? ? . 
-. . . 
-263 1 8   20 2.0   1 A 5   5   5   6   LYS LYS LYS ASP N  CA C  N   ? ? ? ? . 
-. . . 
-264 1 72  5  2.0   1 A 75  75  75  76  LYS LYS LYS LEU N  CA C  N   ? ? ? ? . 
-. . . 
-265 1 48  17 2.0   1 A 35  35  35  36  VAL VAL VAL VAL N  CA C  N   ? ? ? ? . 
-. . . 
-266 1 4   19 2.0   1 A 3   3   3   4   ILE ILE ILE TYR N  CA C  N   ? ? ? ? . 
-. . . 
-267 1 38  17 2.0   1 A 29  29  29  30  GLU GLU GLU PHE N  CA C  N   ? ? ? ? . 
-. . . 
-268 1 36  17 2.0   1 A 28  28  28  29  TYR TYR TYR GLU N  CA C  N   ? ? ? ? . 
-. . . 
-269 1 35  7  2.0   1 A 27  28  28  28  VAL TYR TYR TYR C  N  CA C   ? ? ? ? . 
-. . . 
-270 1 279 18 2.0   1 A 82  82  82  82  TYR TYR TYR TYR CA CB CG CD1 ? ? ? ? . 
-. . . 
-271 1 243 6  2.0   1 A 177 177 177 178 ILE ILE ILE GLU N  CA C  N   ? ? ? ? . 
-. . . 
-272 1 243 7  2.0   1 A 177 177 177 178 ILE ILE ILE GLU N  CA C  N   ? ? ? ? . 
-. . . 
-273 1 230 5  2.0   1 A 170 170 170 171 MET MET MET LEU N  CA C  N   ? ? ? ? . 
-. . . 
-274 1 220 4  2.0   1 A 164 165 165 165 THR GLU GLU GLU C  N  CA C   ? ? ? ? . 
-. . . 
-275 1 2   3  2.0   1 A 2   2   2   3   LEU LEU LEU ILE N  CA C  N   ? ? ? ? . 
-. . . 
-276 1 2   8  2.0   1 A 2   2   2   3   LEU LEU LEU ILE N  CA C  N   ? ? ? ? . 
-. . . 
-277 1 199 20 2.0   1 A 146 146 146 147 GLU GLU GLU GLY N  CA C  N   ? ? ? ? . 
-. . . 
-278 1 19  13 2.0   1 A 10  11  11  11  ASP ASP ASP ASP C  N  CA C   ? ? ? ? . 
-. . . 
-279 1 167 1  2.0   1 A 128 128 128 129 LEU LEU LEU ALA N  CA C  N   ? ? ? ? . 
-. . . 
-280 1 167 11 2.0   1 A 128 128 128 129 LEU LEU LEU ALA N  CA C  N   ? ? ? ? . 
-. . . 
-281 1 83  5  1.9   1 A 82  83  83  83  TYR GLU GLU GLU C  N  CA C   ? ? ? ? . 
-. . . 
-282 1 77  16 1.9   1 A 78  79  79  79  GLU MET MET MET C  N  CA C   ? ? ? ? . 
-. . . 
-283 1 57  12 1.9   1 A 67  68  68  68  GLY ILE ILE ILE C  N  CA C   ? ? ? ? . 
-. . . 
-284 1 54  20 1.9   1 A 38  38  38  39  LYS LYS LYS GLU N  CA C  N   ? ? ? ? . 
-. . . 
-285 1 51  11 1.9   1 A 36  37  37  37  VAL ARG ARG ARG C  N  CA C   ? ? ? ? . 
-. . . 
-286 1 255 7  1.9   1 A 19  19  19  20  PRO PRO PRO MET N  CA C  N   ? ? ? ? . 
-. . . 
-287 1 255 8  1.9   1 A 19  19  19  20  PRO PRO PRO MET N  CA C  N   ? ? ? ? . 
-. . . 
-288 1 253 11 1.9   1 A 26  26  26  27  LEU LEU LEU VAL N  CA C  N   ? ? ? ? . 
-. . . 
-289 1 251 1  1.9   1 A 181 181 181 182 CYS CYS CYS LEU N  CA C  N   ? ? ? ? . 
-. . . 
-290 1 247 6  1.9   1 A 179 179 179 180 GLU GLU GLU LYS N  CA C  N   ? ? ? ? . 
-. . . 
-291 1 242 3  1.9   1 A 176 177 177 177 ILE ILE ILE ILE C  N  CA C   ? ? ? ? . 
-. . . 
-292 1 230 1  1.9   1 A 170 170 170 171 MET MET MET LEU N  CA C  N   ? ? ? ? . 
-. . . 
-293 1 230 20 1.9   1 A 170 170 170 171 MET MET MET LEU N  CA C  N   ? ? ? ? . 
-. . . 
-294 1 23  1  1.9   1 A 13  14  14  14  LEU SER SER SER C  N  CA C   ? ? ? ? . 
-. . . 
-295 1 23  12 1.9   1 A 13  14  14  14  LEU SER SER SER C  N  CA C   ? ? ? ? . 
-. . . 
-296 1 213 16 1.9   1 A 158 158 158 159 TYR TYR TYR ARG N  CA C  N   ? ? ? ? . 
-. . . 
-297 1 198 20 1.9   1 A 145 146 146 146 ALA GLU GLU GLU C  N  CA C   ? ? ? ? . 
-. . . 
-298 1 180 12 1.9   1 A 135 136 136 136 ASN LEU LEU LEU C  N  CA C   ? ? ? ? . 
-. . . 
-299 1 16  10 1.9   1 A 9   9   9   10  THR THR THR ASP N  CA C  N   ? ? ? ? . 
-. . . 
-300 1 129 17 1.9   1 A 105 106 106 106 LYS ASN ASN ASN C  N  CA C   ? ? ? ? . 
-. . . 
-301 1 86  5  1.8   1 A 84  84  84  85  ASP ASP ASP ALA N  CA C  N   ? ? ? ? . 
-. . . 
-302 1 86  7  1.8   1 A 84  84  84  85  ASP ASP ASP ALA N  CA C  N   ? ? ? ? . 
-. . . 
-303 1 86  10 1.8   1 A 84  84  84  85  ASP ASP ASP ALA N  CA C  N   ? ? ? ? . 
-. . . 
-304 1 83  6  1.8   1 A 82  83  83  83  TYR GLU GLU GLU C  N  CA C   ? ? ? ? . 
-. . . 
-305 1 83  11 1.8   1 A 82  83  83  83  TYR GLU GLU GLU C  N  CA C   ? ? ? ? . 
-. . . 
-306 1 78  20 1.8   1 A 79  79  79  80  MET MET MET ASN N  CA C  N   ? ? ? ? . 
-. . . 
-307 1 4   9  1.8   1 A 3   3   3   4   ILE ILE ILE TYR N  CA C  N   ? ? ? ? . 
-. . . 
-308 1 4   20 1.8   1 A 3   3   3   4   ILE ILE ILE TYR N  CA C  N   ? ? ? ? . 
-. . . 
-309 1 35  11 1.8   1 A 27  28  28  28  VAL TYR TYR TYR C  N  CA C   ? ? ? ? . 
-. . . 
-310 1 279 16 1.8   1 A 82  82  82  82  TYR TYR TYR TYR CA CB CG CD1 ? ? ? ? . 
-. . . 
-311 1 266 3  1.8   1 A 136 136 136 136 LEU LEU LEU LEU N  CA CB CG  ? ? ? ? . 
-. . . 
-312 1 249 20 1.8   1 A 180 180 180 181 LYS LYS LYS CYS N  CA C  N   ? ? ? ? . 
-. . . 
-313 1 248 1  1.8   1 A 179 180 180 180 GLU LYS LYS LYS C  N  CA C   ? ? ? ? . 
-. . . 
-314 1 230 14 1.8   1 A 170 170 170 171 MET MET MET LEU N  CA C  N   ? ? ? ? . 
-. . . 
-315 1 227 7  1.8   1 A 168 169 169 169 THR LEU LEU LEU C  N  CA C   ? ? ? ? . 
-. . . 
-316 1 220 2  1.8   1 A 164 165 165 165 THR GLU GLU GLU C  N  CA C   ? ? ? ? . 
-. . . 
-317 1 214 11 1.8   1 A 159 160 160 160 ARG ASP ASP ASP C  N  CA C   ? ? ? ? . 
-. . . 
-318 1 201 14 1.8   1 A 152 152 152 153 GLN GLN GLN VAL N  CA C  N   ? ? ? ? . 
-. . . 
-319 1 19  16 1.8   1 A 10  11  11  11  ASP ASP ASP ASP C  N  CA C   ? ? ? ? . 
-. . . 
-320 1 180 18 1.8   1 A 135 136 136 136 ASN LEU LEU LEU C  N  CA C   ? ? ? ? . 
-. . . 
-321 1 167 17 1.8   1 A 128 128 128 129 LEU LEU LEU ALA N  CA C  N   ? ? ? ? . 
-. . . 
-322 1 83  2  1.7   1 A 82  83  83  83  TYR GLU GLU GLU C  N  CA C   ? ? ? ? . 
-. . . 
-323 1 77  10 1.7   1 A 78  79  79  79  GLU MET MET MET C  N  CA C   ? ? ? ? . 
-. . . 
-324 1 40  20 1.7   1 A 30  30  30  31  PHE PHE PHE LYS N  CA C  N   ? ? ? ? . 
-. . . 
-325 1 39  17 1.7   1 A 29  30  30  30  GLU PHE PHE PHE C  N  CA C   ? ? ? ? . 
-. . . 
-326 1 253 15 1.7   1 A 26  26  26  27  LEU LEU LEU VAL N  CA C  N   ? ? ? ? . 
-. . . 
-327 1 253 18 1.7   1 A 26  26  26  27  LEU LEU LEU VAL N  CA C  N   ? ? ? ? . 
-. . . 
-328 1 245 5  1.7   1 A 178 178 178 179 GLU GLU GLU GLU N  CA C  N   ? ? ? ? . 
-. . . 
-329 1 220 17 1.7   1 A 164 165 165 165 THR GLU GLU GLU C  N  CA C   ? ? ? ? . 
-. . . 
-330 1 211 19 1.7   1 A 157 157 157 158 GLU GLU GLU TYR N  CA C  N   ? ? ? ? . 
-. . . 
-331 1 197 8  1.7   1 A 145 145 145 146 ALA ALA ALA GLU N  CA C  N   ? ? ? ? . 
-. . . 
-332 1 180 15 1.7   1 A 135 136 136 136 ASN LEU LEU LEU C  N  CA C   ? ? ? ? . 
-. . . 
-333 1 172 16 1.7   1 A 131 132 132 132 ASP ARG ARG ARG C  N  CA C   ? ? ? ? . 
-. . . 
-334 1 86  13 1.6   1 A 84  84  84  85  ASP ASP ASP ALA N  CA C  N   ? ? ? ? . 
-. . . 
-335 1 86  16 1.6   1 A 84  84  84  85  ASP ASP ASP ALA N  CA C  N   ? ? ? ? . 
-. . . 
-336 1 78  12 1.6   1 A 79  79  79  80  MET MET MET ASN N  CA C  N   ? ? ? ? . 
-. . . 
-337 1 6   3  1.6   1 A 4   4   4   5   TYR TYR TYR LYS N  CA C  N   ? ? ? ? . 
-. . . 
-338 1 40  14 1.6   1 A 30  30  30  31  PHE PHE PHE LYS N  CA C  N   ? ? ? ? . 
-. . . 
-339 1 38  9  1.6   1 A 29  29  29  30  GLU GLU GLU PHE N  CA C  N   ? ? ? ? . 
-. . . 
-340 1 286 3  1.6   1 A 88  88  88  88  PHE PHE PHE PHE N  CA CB CG  ? ? ? ? . 
-. . . 
-341 1 279 6  1.6   1 A 82  82  82  82  TYR TYR TYR TYR CA CB CG CD1 ? ? ? ? . 
-. . . 
-342 1 255 14 1.6   1 A 19  19  19  20  PRO PRO PRO MET N  CA C  N   ? ? ? ? . 
-. . . 
-343 1 253 12 1.6   1 A 26  26  26  27  LEU LEU LEU VAL N  CA C  N   ? ? ? ? . 
-. . . 
-344 1 230 15 1.6   1 A 170 170 170 171 MET MET MET LEU N  CA C  N   ? ? ? ? . 
-. . . 
-345 1 230 19 1.6   1 A 170 170 170 171 MET MET MET LEU N  CA C  N   ? ? ? ? . 
-. . . 
-346 1 23  13 1.6   1 A 13  14  14  14  LEU SER SER SER C  N  CA C   ? ? ? ? . 
-. . . 
-347 1 227 18 1.6   1 A 168 169 169 169 THR LEU LEU LEU C  N  CA C   ? ? ? ? . 
-. . . 
-348 1 227 19 1.6   1 A 168 169 169 169 THR LEU LEU LEU C  N  CA C   ? ? ? ? . 
-. . . 
-349 1 220 19 1.6   1 A 164 165 165 165 THR GLU GLU GLU C  N  CA C   ? ? ? ? . 
-. . . 
-350 1 214 3  1.6   1 A 159 160 160 160 ARG ASP ASP ASP C  N  CA C   ? ? ? ? . 
-. . . 
-351 1 200 14 1.6   1 A 151 152 152 152 GLY GLN GLN GLN C  N  CA C   ? ? ? ? . 
-. . . 
-352 1 199 1  1.6   1 A 146 146 146 147 GLU GLU GLU GLY N  CA C  N   ? ? ? ? . 
-. . . 
-353 1 199 17 1.6   1 A 146 146 146 147 GLU GLU GLU GLY N  CA C  N   ? ? ? ? . 
-. . . 
-354 1 172 14 1.6   1 A 131 132 132 132 ASP ARG ARG ARG C  N  CA C   ? ? ? ? . 
-. . . 
-355 1 171 6  1.6   1 A 131 131 131 132 ASP ASP ASP ARG N  CA C  N   ? ? ? ? . 
-. . . 
-356 1 131 8  1.6   1 A 108 108 108 109 ARG ARG ARG ASP N  CA C  N   ? ? ? ? . 
-. . . 
-357 1 78  4  1.5   1 A 79  79  79  80  MET MET MET ASN N  CA C  N   ? ? ? ? . 
-. . . 
-358 1 57  7  1.5   1 A 67  68  68  68  GLY ILE ILE ILE C  N  CA C   ? ? ? ? . 
-. . . 
-359 1 53  5  1.5   1 A 37  38  38  38  ARG LYS LYS LYS C  N  CA C   ? ? ? ? . 
-. . . 
-360 1 52  8  1.5   1 A 37  37  37  38  ARG ARG ARG LYS N  CA C  N   ? ? ? ? . 
-. . . 
-361 1 35  14 1.5   1 A 27  28  28  28  VAL TYR TYR TYR C  N  CA C   ? ? ? ? . 
-. . . 
-362 1 3   3  1.5   1 A 2   3   3   3   LEU ILE ILE ILE C  N  CA C   ? ? ? ? . 
-. . . 
-363 1 293 7  1.5   1 A 30  30  30  30  PHE PHE PHE PHE CA CB CG CD1 ? ? ? ? . 
-. . . 
-364 1 230 3  1.5   1 A 170 170 170 171 MET MET MET LEU N  CA C  N   ? ? ? ? . 
-. . . 
-365 1 22  7  1.5   1 A 12  12  12  13  GLU GLU GLU LEU N  CA C  N   ? ? ? ? . 
-. . . 
-366 1 22  11 1.5   1 A 12  12  12  13  GLU GLU GLU LEU N  CA C  N   ? ? ? ? . 
-. . . 
-367 1 214 2  1.5   1 A 159 160 160 160 ARG ASP ASP ASP C  N  CA C   ? ? ? ? . 
-. . . 
-368 1 214 4  1.5   1 A 159 160 160 160 ARG ASP ASP ASP C  N  CA C   ? ? ? ? . 
-. . . 
-369 1 199 14 1.5   1 A 146 146 146 147 GLU GLU GLU GLY N  CA C  N   ? ? ? ? . 
-. . . 
-370 1 171 19 1.5   1 A 131 131 131 132 ASP ASP ASP ARG N  CA C  N   ? ? ? ? . 
-. . . 
-371 1 167 18 1.5   1 A 128 128 128 129 LEU LEU LEU ALA N  CA C  N   ? ? ? ? . 
-. . . 
-372 1 15  5  1.5   1 A 8   9   9   9   PHE THR THR THR C  N  CA C   ? ? ? ? . 
-. . . 
-373 1 83  1  1.4   1 A 82  83  83  83  TYR GLU GLU GLU C  N  CA C   ? ? ? ? . 
-. . . 
-374 1 83  12 1.4   1 A 82  83  83  83  TYR GLU GLU GLU C  N  CA C   ? ? ? ? . 
-. . . 
-375 1 82  7  1.4   1 A 82  82  82  83  TYR TYR TYR GLU N  CA C  N   ? ? ? ? . 
-. . . 
-376 1 55  12 1.4   1 A 65  66  66  66  GLU ARG ARG ARG C  N  CA C   ? ? ? ? . 
-. . . 
-377 1 35  4  1.4   1 A 27  28  28  28  VAL TYR TYR TYR C  N  CA C   ? ? ? ? . 
-. . . 
-378 1 293 3  1.4   1 A 30  30  30  30  PHE PHE PHE PHE CA CB CG CD1 ? ? ? ? . 
-. . . 
-379 1 28  10 1.4   1 A 21  21  21  22  LYS LYS LYS LEU N  CA C  N   ? ? ? ? . 
-. . . 
-380 1 279 12 1.4   1 A 82  82  82  82  TYR TYR TYR TYR CA CB CG CD1 ? ? ? ? . 
-. . . 
-381 1 253 17 1.4   1 A 26  26  26  27  LEU LEU LEU VAL N  CA C  N   ? ? ? ? . 
-. . . 
-382 1 251 7  1.4   1 A 181 181 181 182 CYS CYS CYS LEU N  CA C  N   ? ? ? ? . 
-. . . 
-383 1 243 12 1.4   1 A 177 177 177 178 ILE ILE ILE GLU N  CA C  N   ? ? ? ? . 
-. . . 
-384 1 239 17 1.4   1 A 174 175 175 175 GLU ALA ALA ALA C  N  CA C   ? ? ? ? . 
-. . . 
-385 1 218 2  1.4   1 A 163 164 164 164 GLY THR THR THR C  N  CA C   ? ? ? ? . 
-. . . 
-386 1 172 6  1.4   1 A 131 132 132 132 ASP ARG ARG ARG C  N  CA C   ? ? ? ? . 
-. . . 
-387 1 169 6  1.4   1 A 130 130 130 131 LYS LYS LYS ASP N  CA C  N   ? ? ? ? . 
-. . . 
-388 1 167 12 1.4   1 A 128 128 128 129 LEU LEU LEU ALA N  CA C  N   ? ? ? ? . 
-. . . 
-389 1 86  1  1.3   1 A 84  84  84  85  ASP ASP ASP ALA N  CA C  N   ? ? ? ? . 
-. . . 
-390 1 80  10 1.3   1 A 81  81  81  82  CYS CYS CYS TYR N  CA C  N   ? ? ? ? . 
-. . . 
-391 1 77  1  1.3   1 A 78  79  79  79  GLU MET MET MET C  N  CA C   ? ? ? ? . 
-. . . 
-392 1 77  17 1.3   1 A 78  79  79  79  GLU MET MET MET C  N  CA C   ? ? ? ? . 
-. . . 
-393 1 6   20 1.3   1 A 4   4   4   5   TYR TYR TYR LYS N  CA C  N   ? ? ? ? . 
-. . . 
-394 1 58  2  1.3   1 A 68  68  68  69  ILE ILE ILE ASP N  CA C  N   ? ? ? ? . 
-. . . 
-395 1 57  5  1.3   1 A 67  68  68  68  GLY ILE ILE ILE C  N  CA C   ? ? ? ? . 
-. . . 
-396 1 51  20 1.3   1 A 36  37  37  37  VAL ARG ARG ARG C  N  CA C   ? ? ? ? . 
-. . . 
-397 1 46  18 1.3   1 A 34  34  34  35  HIS HIS HIS VAL N  CA C  N   ? ? ? ? . 
-. . . 
-398 1 38  18 1.3   1 A 29  29  29  30  GLU GLU GLU PHE N  CA C  N   ? ? ? ? . 
-. . . 
-399 1 35  10 1.3   1 A 27  28  28  28  VAL TYR TYR TYR C  N  CA C   ? ? ? ? . 
-. . . 
-400 1 3   6  1.3   1 A 2   3   3   3   LEU ILE ILE ILE C  N  CA C   ? ? ? ? . 
-. . . 
-401 1 3   15 1.3   1 A 2   3   3   3   LEU ILE ILE ILE C  N  CA C   ? ? ? ? . 
-. . . 
-402 1 274 15 1.3   1 A 91  91  91  91  TYR TYR TYR TYR N  CA CB CG  ? ? ? ? . 
-. . . 
-403 1 252 8  1.3   1 A 25  26  26  26  ASP LEU LEU LEU C  N  CA C   ? ? ? ? . 
-. . . 
-404 1 252 12 1.3   1 A 25  26  26  26  ASP LEU LEU LEU C  N  CA C   ? ? ? ? . 
-. . . 
-405 1 251 12 1.3   1 A 181 181 181 182 CYS CYS CYS LEU N  CA C  N   ? ? ? ? . 
-. . . 
-406 1 251 20 1.3   1 A 181 181 181 182 CYS CYS CYS LEU N  CA C  N   ? ? ? ? . 
-. . . 
-407 1 247 20 1.3   1 A 179 179 179 180 GLU GLU GLU LYS N  CA C  N   ? ? ? ? . 
-. . . 
-408 1 239 13 1.3   1 A 174 175 175 175 GLU ALA ALA ALA C  N  CA C   ? ? ? ? . 
-. . . 
-409 1 227 5  1.3   1 A 168 169 169 169 THR LEU LEU LEU C  N  CA C   ? ? ? ? . 
-. . . 
-410 1 224 5  1.3   1 A 167 167 167 168 PRO PRO PRO THR N  CA C  N   ? ? ? ? . 
-. . . 
-411 1 223 19 1.3   1 A 166 166 166 167 VAL VAL VAL PRO N  CA C  N   ? ? ? ? . 
-. . . 
-412 1 222 9  1.3   1 A 165 166 166 166 GLU VAL VAL VAL C  N  CA C   ? ? ? ? . 
-. . . 
-413 1 22  19 1.3   1 A 12  12  12  13  GLU GLU GLU LEU N  CA C  N   ? ? ? ? . 
-. . . 
-414 1 180 20 1.3   1 A 135 136 136 136 ASN LEU LEU LEU C  N  CA C   ? ? ? ? . 
-. . . 
-415 1 169 7  1.3   1 A 130 130 130 131 LYS LYS LYS ASP N  CA C  N   ? ? ? ? . 
-. . . 
-416 1 16  2  1.3   1 A 9   9   9   10  THR THR THR ASP N  CA C  N   ? ? ? ? . 
-. . . 
-417 1 86  6  1.2   1 A 84  84  84  85  ASP ASP ASP ALA N  CA C  N   ? ? ? ? . 
-. . . 
-418 1 77  19 1.2   1 A 78  79  79  79  GLU MET MET MET C  N  CA C   ? ? ? ? . 
-. . . 
-419 1 72  12 1.2   1 A 75  75  75  76  LYS LYS LYS LEU N  CA C  N   ? ? ? ? . 
-. . . 
-420 1 57  1  1.2   1 A 67  68  68  68  GLY ILE ILE ILE C  N  CA C   ? ? ? ? . 
-. . . 
-421 1 53  17 1.2   1 A 37  38  38  38  ARG LYS LYS LYS C  N  CA C   ? ? ? ? . 
-. . . 
-422 1 40  16 1.2   1 A 30  30  30  31  PHE PHE PHE LYS N  CA C  N   ? ? ? ? . 
-. . . 
-423 1 279 3  1.2   1 A 82  82  82  82  TYR TYR TYR TYR CA CB CG CD1 ? ? ? ? . 
-. . . 
-424 1 252 6  1.2   1 A 25  26  26  26  ASP LEU LEU LEU C  N  CA C   ? ? ? ? . 
-. . . 
-425 1 249 7  1.2   1 A 180 180 180 181 LYS LYS LYS CYS N  CA C  N   ? ? ? ? . 
-. . . 
-426 1 243 5  1.2   1 A 177 177 177 178 ILE ILE ILE GLU N  CA C  N   ? ? ? ? . 
-. . . 
-427 1 22  2  1.2   1 A 12  12  12  13  GLU GLU GLU LEU N  CA C  N   ? ? ? ? . 
-. . . 
-428 1 214 17 1.2   1 A 159 160 160 160 ARG ASP ASP ASP C  N  CA C   ? ? ? ? . 
-. . . 
-429 1 213 7  1.2   1 A 158 158 158 159 TYR TYR TYR ARG N  CA C  N   ? ? ? ? . 
-. . . 
-430 1 206 12 1.2   1 A 154 155 155 155 ALA ILE ILE ILE C  N  CA C   ? ? ? ? . 
-. . . 
-431 1 19  3  1.2   1 A 10  11  11  11  ASP ASP ASP ASP C  N  CA C   ? ? ? ? . 
-. . . 
-432 1 183 18 1.2   1 A 137 137 137 138 ALA ALA ALA PHE N  CA C  N   ? ? ? ? . 
-. . . 
-433 1 182 9  1.2   1 A 136 137 137 137 LEU ALA ALA ALA C  N  CA C   ? ? ? ? . 
-. . . 
-434 1 180 14 1.2   1 A 135 136 136 136 ASN LEU LEU LEU C  N  CA C   ? ? ? ? . 
-. . . 
-435 1 17  12 1.2   1 A 9   10  10  10  THR ASP ASP ASP C  N  CA C   ? ? ? ? . 
-. . . 
-436 1 17  20 1.2   1 A 9   10  10  10  THR ASP ASP ASP C  N  CA C   ? ? ? ? . 
-. . . 
-437 1 16  16 1.2   1 A 9   9   9   10  THR THR THR ASP N  CA C  N   ? ? ? ? . 
-. . . 
-438 1 78  8  1.1   1 A 79  79  79  80  MET MET MET ASN N  CA C  N   ? ? ? ? . 
-. . . 
-439 1 72  10 1.1   1 A 75  75  75  76  LYS LYS LYS LEU N  CA C  N   ? ? ? ? . 
-. . . 
-440 1 70  3  1.1   1 A 74  74  74  75  HIS HIS HIS LYS N  CA C  N   ? ? ? ? . 
-. . . 
-441 1 7   5  1.1   1 A 4   5   5   5   TYR LYS LYS LYS C  N  CA C   ? ? ? ? . 
-. . . 
-442 1 53  14 1.1   1 A 37  38  38  38  ARG LYS LYS LYS C  N  CA C   ? ? ? ? . 
-. . . 
-443 1 5   4  1.1   1 A 3   4   4   4   ILE TYR TYR TYR C  N  CA C   ? ? ? ? . 
-. . . 
-444 1 4   13 1.1   1 A 3   3   3   4   ILE ILE ILE TYR N  CA C  N   ? ? ? ? . 
-. . . 
-445 1 279 9  1.1   1 A 82  82  82  82  TYR TYR TYR TYR CA CB CG CD1 ? ? ? ? . 
-. . . 
-446 1 275 17 1.1   1 A 91  91  91  91  TYR TYR TYR TYR CA CB CG CD1 ? ? ? ? . 
-. . . 
-447 1 244 2  1.1   1 A 177 178 178 178 ILE GLU GLU GLU C  N  CA C   ? ? ? ? . 
-. . . 
-448 1 23  11 1.1   1 A 13  14  14  14  LEU SER SER SER C  N  CA C   ? ? ? ? . 
-. . . 
-449 1 227 1  1.1   1 A 168 169 169 169 THR LEU LEU LEU C  N  CA C   ? ? ? ? . 
-. . . 
-450 1 216 16 1.1   1 A 160 161 161 161 ASP VAL VAL VAL C  N  CA C   ? ? ? ? . 
-. . . 
-451 1 199 19 1.1   1 A 146 146 146 147 GLU GLU GLU GLY N  CA C  N   ? ? ? ? . 
-. . . 
-452 1 19  1  1.1   1 A 10  11  11  11  ASP ASP ASP ASP C  N  CA C   ? ? ? ? . 
-. . . 
-453 1 178 17 1.1   1 A 134 135 135 135 LYS ASN ASN ASN C  N  CA C   ? ? ? ? . 
-. . . 
-454 1 172 18 1.1   1 A 131 132 132 132 ASP ARG ARG ARG C  N  CA C   ? ? ? ? . 
-. . . 
-455 1 167 6  1.1   1 A 128 128 128 129 LEU LEU LEU ALA N  CA C  N   ? ? ? ? . 
-. . . 
-456 1 167 16 1.1   1 A 128 128 128 129 LEU LEU LEU ALA N  CA C  N   ? ? ? ? . 
-. . . 
-457 1 11  18 1.1   1 A 6   7   7   7   ASP ILE ILE ILE C  N  CA C   ? ? ? ? . 
-. . . 
+1   1 265 20 150.5 1 A 95  95  95  95  PHE PHE PHE PHE CA CB CG CD1 A 95  95  
+95  95  ? ? ? ? . . . . 
+2   1 265 5  148.6 1 A 95  95  95  95  PHE PHE PHE PHE CA CB CG CD1 A 95  95  
+95  95  ? ? ? ? . . . . 
+3   1 281 17 147.8 1 A 116 116 116 116 PHE PHE PHE PHE CA CB CG CD1 A 116 116 
+116 116 ? ? ? ? . . . . 
+4   1 271 11 146.6 1 A 133 133 133 133 PHE PHE PHE PHE CA CB CG CD1 A 133 133 
+133 133 ? ? ? ? . . . . 
+5   1 293 6  146.0 1 A 30  30  30  30  PHE PHE PHE PHE CA CB CG CD1 A 30  30  
+30  30  ? ? ? ? . . . . 
+6   1 271 13 145.6 1 A 133 133 133 133 PHE PHE PHE PHE CA CB CG CD1 A 133 133 
+133 133 ? ? ? ? . . . . 
+7   1 271 15 144.8 1 A 133 133 133 133 PHE PHE PHE PHE CA CB CG CD1 A 133 133 
+133 133 ? ? ? ? . . . . 
+8   1 293 11 144.7 1 A 30  30  30  30  PHE PHE PHE PHE CA CB CG CD1 A 30  30  
+30  30  ? ? ? ? . . . . 
+9   1 293 10 143.6 1 A 30  30  30  30  PHE PHE PHE PHE CA CB CG CD1 A 30  30  
+30  30  ? ? ? ? . . . . 
+10  1 265 12 142.1 1 A 95  95  95  95  PHE PHE PHE PHE CA CB CG CD1 A 95  95  
+95  95  ? ? ? ? . . . . 
+11  1 271 9  141.6 1 A 133 133 133 133 PHE PHE PHE PHE CA CB CG CD1 A 133 133 
+133 133 ? ? ? ? . . . . 
+12  1 271 1  141.4 1 A 133 133 133 133 PHE PHE PHE PHE CA CB CG CD1 A 133 133 
+133 133 ? ? ? ? . . . . 
+13  1 293 1  141.0 1 A 30  30  30  30  PHE PHE PHE PHE CA CB CG CD1 A 30  30  
+30  30  ? ? ? ? . . . . 
+14  1 293 9  140.4 1 A 30  30  30  30  PHE PHE PHE PHE CA CB CG CD1 A 30  30  
+30  30  ? ? ? ? . . . . 
+15  1 271 18 139.4 1 A 133 133 133 133 PHE PHE PHE PHE CA CB CG CD1 A 133 133 
+133 133 ? ? ? ? . . . . 
+16  1 271 19 138.4 1 A 133 133 133 133 PHE PHE PHE PHE CA CB CG CD1 A 133 133 
+133 133 ? ? ? ? . . . . 
+17  1 271 16 137.1 1 A 133 133 133 133 PHE PHE PHE PHE CA CB CG CD1 A 133 133 
+133 133 ? ? ? ? . . . . 
+18  1 293 2  136.7 1 A 30  30  30  30  PHE PHE PHE PHE CA CB CG CD1 A 30  30  
+30  30  ? ? ? ? . . . . 
+19  1 18  13 11.6  1 A 10  10  10  11  ASP ASP ASP ASP N  CA C  N   A 10  10  
+10  11  ? ? ? ? . . . . 
+20  1 14  17 10.7  1 A 8   8   8   9   PHE PHE PHE THR N  CA C  N   A 8   8   
+8   9   ? ? ? ? . . . . 
+21  1 18  4  9.7   1 A 10  10  10  11  ASP ASP ASP ASP N  CA C  N   A 10  10  
+10  11  ? ? ? ? . . . . 
+22  1 18  7  9.7   1 A 10  10  10  11  ASP ASP ASP ASP N  CA C  N   A 10  10  
+10  11  ? ? ? ? . . . . 
+23  1 18  15 9.2   1 A 10  10  10  11  ASP ASP ASP ASP N  CA C  N   A 10  10  
+10  11  ? ? ? ? . . . . 
+24  1 18  17 8.8   1 A 10  10  10  11  ASP ASP ASP ASP N  CA C  N   A 10  10  
+10  11  ? ? ? ? . . . . 
+25  1 175 5  8.8   1 A 133 133 133 134 PHE PHE PHE LYS N  CA C  N   A 133 133 
+133 134 ? ? ? ? . . . . 
+26  1 175 10 8.4   1 A 133 133 133 134 PHE PHE PHE LYS N  CA C  N   A 133 133 
+133 134 ? ? ? ? . . . . 
+27  1 175 1  7.9   1 A 133 133 133 134 PHE PHE PHE LYS N  CA C  N   A 133 133 
+133 134 ? ? ? ? . . . . 
+28  1 15  9  7.8   1 A 8   9   9   9   PHE THR THR THR C  N  CA C   A 8   9   
+9   9   ? ? ? ? . . . . 
+29  1 18  5  7.6   1 A 10  10  10  11  ASP ASP ASP ASP N  CA C  N   A 10  10  
+10  11  ? ? ? ? . . . . 
+30  1 15  15 7.6   1 A 8   9   9   9   PHE THR THR THR C  N  CA C   A 8   9   
+9   9   ? ? ? ? . . . . 
+31  1 18  8  7.5   1 A 10  10  10  11  ASP ASP ASP ASP N  CA C  N   A 10  10  
+10  11  ? ? ? ? . . . . 
+32  1 18  9  7.5   1 A 10  10  10  11  ASP ASP ASP ASP N  CA C  N   A 10  10  
+10  11  ? ? ? ? . . . . 
+33  1 14  15 7.5   1 A 8   8   8   9   PHE PHE PHE THR N  CA C  N   A 8   8   
+8   9   ? ? ? ? . . . . 
+34  1 175 18 7.0   1 A 133 133 133 134 PHE PHE PHE LYS N  CA C  N   A 133 133 
+133 134 ? ? ? ? . . . . 
+35  1 175 11 6.9   1 A 133 133 133 134 PHE PHE PHE LYS N  CA C  N   A 133 133 
+133 134 ? ? ? ? . . . . 
+36  1 15  7  6.8   1 A 8   9   9   9   PHE THR THR THR C  N  CA C   A 8   9   
+9   9   ? ? ? ? . . . . 
+37  1 14  9  6.8   1 A 8   8   8   9   PHE PHE PHE THR N  CA C  N   A 8   8   
+8   9   ? ? ? ? . . . . 
+38  1 14  13 6.8   1 A 8   8   8   9   PHE PHE PHE THR N  CA C  N   A 8   8   
+8   9   ? ? ? ? . . . . 
+39  1 175 2  6.7   1 A 133 133 133 134 PHE PHE PHE LYS N  CA C  N   A 133 133 
+133 134 ? ? ? ? . . . . 
+40  1 175 14 6.6   1 A 133 133 133 134 PHE PHE PHE LYS N  CA C  N   A 133 133 
+133 134 ? ? ? ? . . . . 
+41  1 13  2  6.5   1 A 7   8   8   8   ILE PHE PHE PHE C  N  CA C   A 7   8   
+8   8   ? ? ? ? . . . . 
+42  1 175 6  6.4   1 A 133 133 133 134 PHE PHE PHE LYS N  CA C  N   A 133 133 
+133 134 ? ? ? ? . . . . 
+43  1 13  20 6.4   1 A 7   8   8   8   ILE PHE PHE PHE C  N  CA C   A 7   8   
+8   8   ? ? ? ? . . . . 
+44  1 175 16 6.3   1 A 133 133 133 134 PHE PHE PHE LYS N  CA C  N   A 133 133 
+133 134 ? ? ? ? . . . . 
+45  1 175 20 6.3   1 A 133 133 133 134 PHE PHE PHE LYS N  CA C  N   A 133 133 
+133 134 ? ? ? ? . . . . 
+46  1 175 19 6.2   1 A 133 133 133 134 PHE PHE PHE LYS N  CA C  N   A 133 133 
+133 134 ? ? ? ? . . . . 
+47  1 14  7  6.1   1 A 8   8   8   9   PHE PHE PHE THR N  CA C  N   A 8   8   
+8   9   ? ? ? ? . . . . 
+48  1 175 9  5.9   1 A 133 133 133 134 PHE PHE PHE LYS N  CA C  N   A 133 133 
+133 134 ? ? ? ? . . . . 
+49  1 15  17 5.9   1 A 8   9   9   9   PHE THR THR THR C  N  CA C   A 8   9   
+9   9   ? ? ? ? . . . . 
+50  1 175 13 5.8   1 A 133 133 133 134 PHE PHE PHE LYS N  CA C  N   A 133 133 
+133 134 ? ? ? ? . . . . 
+51  1 13  10 5.8   1 A 7   8   8   8   ILE PHE PHE PHE C  N  CA C   A 7   8   
+8   8   ? ? ? ? . . . . 
+52  1 16  1  5.7   1 A 9   9   9   10  THR THR THR ASP N  CA C  N   A 9   9   
+9   10  ? ? ? ? . . . . 
+53  1 15  13 5.6   1 A 8   9   9   9   PHE THR THR THR C  N  CA C   A 8   9   
+9   9   ? ? ? ? . . . . 
+54  1 271 12 5.5   1 A 133 133 133 133 PHE PHE PHE PHE CA CB CG CD1 A 133 133 
+133 133 ? ? ? ? . . . . 
+55  1 175 7  5.5   1 A 133 133 133 134 PHE PHE PHE LYS N  CA C  N   A 133 133 
+133 134 ? ? ? ? . . . . 
+56  1 16  18 5.3   1 A 9   9   9   10  THR THR THR ASP N  CA C  N   A 9   9   
+9   10  ? ? ? ? . . . . 
+57  1 52  13 5.1   1 A 37  37  37  38  ARG ARG ARG LYS N  CA C  N   A 37  37  
+37  38  ? ? ? ? . . . . 
+58  1 13  11 5.1   1 A 7   8   8   8   ILE PHE PHE PHE C  N  CA C   A 7   8   
+8   8   ? ? ? ? . . . . 
+59  1 22  5  4.9   1 A 12  12  12  13  GLU GLU GLU LEU N  CA C  N   A 12  12  
+12  13  ? ? ? ? . . . . 
+60  1 270 12 4.8   1 A 133 133 133 133 PHE PHE PHE PHE N  CA CB CG  A 133 133 
+133 133 ? ? ? ? . . . . 
+61  1 10  6  4.8   1 A 6   6   6   7   ASP ASP ASP ILE N  CA C  N   A 6   6   
+6   7   ? ? ? ? . . . . 
+62  1 86  2  4.7   1 A 84  84  84  85  ASP ASP ASP ALA N  CA C  N   A 84  84  
+84  85  ? ? ? ? . . . . 
+63  1 54  18 4.7   1 A 38  38  38  39  LYS LYS LYS GLU N  CA C  N   A 38  38  
+38  39  ? ? ? ? . . . . 
+64  1 22  4  4.7   1 A 12  12  12  13  GLU GLU GLU LEU N  CA C  N   A 12  12  
+12  13  ? ? ? ? . . . . 
+65  1 175 15 4.7   1 A 133 133 133 134 PHE PHE PHE LYS N  CA C  N   A 133 133 
+133 134 ? ? ? ? . . . . 
+66  1 172 19 4.6   1 A 131 132 132 132 ASP ARG ARG ARG C  N  CA C   A 131 132 
+132 132 ? ? ? ? . . . . 
+67  1 23  7  4.5   1 A 13  14  14  14  LEU SER SER SER C  N  CA C   A 13  14  
+14  14  ? ? ? ? . . . . 
+68  1 21  1  4.5   1 A 11  12  12  12  ASP GLU GLU GLU C  N  CA C   A 11  12  
+12  12  ? ? ? ? . . . . 
+69  1 16  14 4.5   1 A 9   9   9   10  THR THR THR ASP N  CA C  N   A 9   9   
+9   10  ? ? ? ? . . . . 
+70  1 271 8  4.4   1 A 133 133 133 133 PHE PHE PHE PHE CA CB CG CD1 A 133 133 
+133 133 ? ? ? ? . . . . 
+71  1 22  15 4.4   1 A 12  12  12  13  GLU GLU GLU LEU N  CA C  N   A 12  12  
+12  13  ? ? ? ? . . . . 
+72  1 19  7  4.4   1 A 10  11  11  11  ASP ASP ASP ASP C  N  CA C   A 10  11  
+11  11  ? ? ? ? . . . . 
+73  1 19  15 4.3   1 A 10  11  11  11  ASP ASP ASP ASP C  N  CA C   A 10  11  
+11  11  ? ? ? ? . . . . 
+74  1 172 1  4.3   1 A 131 132 132 132 ASP ARG ARG ARG C  N  CA C   A 131 132 
+132 132 ? ? ? ? . . . . 
+75  1 264 8  4.2   1 A 95  95  95  95  PHE PHE PHE PHE N  CA CB CG  A 95  95  
+95  95  ? ? ? ? . . . . 
+76  1 255 4  4.2   1 A 19  19  19  20  PRO PRO PRO MET N  CA C  N   A 19  19  
+19  20  ? ? ? ? . . . . 
+77  1 22  14 4.2   1 A 12  12  12  13  GLU GLU GLU LEU N  CA C  N   A 12  12  
+12  13  ? ? ? ? . . . . 
+78  1 270 8  4.1   1 A 133 133 133 133 PHE PHE PHE PHE N  CA CB CG  A 133 133 
+133 133 ? ? ? ? . . . . 
+79  1 255 20 4.1   1 A 19  19  19  20  PRO PRO PRO MET N  CA C  N   A 19  19  
+19  20  ? ? ? ? . . . . 
+80  1 16  12 4.1   1 A 9   9   9   10  THR THR THR ASP N  CA C  N   A 9   9   
+9   10  ? ? ? ? . . . . 
+81  1 13  3  4.1   1 A 7   8   8   8   ILE PHE PHE PHE C  N  CA C   A 7   8   
+8   8   ? ? ? ? . . . . 
+82  1 52  7  4.0   1 A 37  37  37  38  ARG ARG ARG LYS N  CA C  N   A 37  37  
+37  38  ? ? ? ? . . . . 
+83  1 4   16 4.0   1 A 3   3   3   4   ILE ILE ILE TYR N  CA C  N   A 3   3   
+3   4   ? ? ? ? . . . . 
+84  1 255 19 4.0   1 A 19  19  19  20  PRO PRO PRO MET N  CA C  N   A 19  19  
+19  20  ? ? ? ? . . . . 
+85  1 16  8  4.0   1 A 9   9   9   10  THR THR THR ASP N  CA C  N   A 9   9   
+9   10  ? ? ? ? . . . . 
+86  1 86  4  3.9   1 A 84  84  84  85  ASP ASP ASP ALA N  CA C  N   A 84  84  
+84  85  ? ? ? ? . . . . 
+87  1 57  10 3.9   1 A 67  68  68  68  GLY ILE ILE ILE C  N  CA C   A 67  68  
+68  68  ? ? ? ? . . . . 
+88  1 270 4  3.9   1 A 133 133 133 133 PHE PHE PHE PHE N  CA CB CG  A 133 133 
+133 133 ? ? ? ? . . . . 
+89  1 172 9  3.9   1 A 131 132 132 132 ASP ARG ARG ARG C  N  CA C   A 131 132 
+132 132 ? ? ? ? . . . . 
+90  1 16  19 3.9   1 A 9   9   9   10  THR THR THR ASP N  CA C  N   A 9   9   
+9   10  ? ? ? ? . . . . 
+91  1 13  14 3.9   1 A 7   8   8   8   ILE PHE PHE PHE C  N  CA C   A 7   8   
+8   8   ? ? ? ? . . . . 
+92  1 251 14 3.8   1 A 181 181 181 182 CYS CYS CYS LEU N  CA C  N   A 181 181 
+181 182 ? ? ? ? . . . . 
+93  1 243 17 3.8   1 A 177 177 177 178 ILE ILE ILE GLU N  CA C  N   A 177 177 
+177 178 ? ? ? ? . . . . 
+94  1 230 11 3.8   1 A 170 170 170 171 MET MET MET LEU N  CA C  N   A 170 170 
+170 171 ? ? ? ? . . . . 
+95  1 19  9  3.8   1 A 10  11  11  11  ASP ASP ASP ASP C  N  CA C   A 10  11  
+11  11  ? ? ? ? . . . . 
+96  1 180 6  3.8   1 A 135 136 136 136 ASN LEU LEU LEU C  N  CA C   A 135 136 
+136 136 ? ? ? ? . . . . 
+97  1 180 13 3.8   1 A 135 136 136 136 ASN LEU LEU LEU C  N  CA C   A 135 136 
+136 136 ? ? ? ? . . . . 
+98  1 14  4  3.8   1 A 8   8   8   9   PHE PHE PHE THR N  CA C  N   A 8   8   
+8   9   ? ? ? ? . . . . 
+99  1 86  19 3.7   1 A 84  84  84  85  ASP ASP ASP ALA N  CA C  N   A 84  84  
+84  85  ? ? ? ? . . . . 
+100 1 4   11 3.7   1 A 3   3   3   4   ILE ILE ILE TYR N  CA C  N   A 3   3   
+3   4   ? ? ? ? . . . . 
+101 1 230 7  3.7   1 A 170 170 170 171 MET MET MET LEU N  CA C  N   A 170 170 
+170 171 ? ? ? ? . . . . 
+102 1 22  16 3.7   1 A 12  12  12  13  GLU GLU GLU LEU N  CA C  N   A 12  12  
+12  13  ? ? ? ? . . . . 
+103 1 17  14 3.7   1 A 9   10  10  10  THR ASP ASP ASP C  N  CA C   A 9   10  
+10  10  ? ? ? ? . . . . 
+104 1 54  10 3.6   1 A 38  38  38  39  LYS LYS LYS GLU N  CA C  N   A 38  38  
+38  39  ? ? ? ? . . . . 
+105 1 35  18 3.6   1 A 27  28  28  28  VAL TYR TYR TYR C  N  CA C   A 27  28  
+28  28  ? ? ? ? . . . . 
+106 1 271 3  3.6   1 A 133 133 133 133 PHE PHE PHE PHE CA CB CG CD1 A 133 133 
+133 133 ? ? ? ? . . . . 
+107 1 270 17 3.6   1 A 133 133 133 133 PHE PHE PHE PHE N  CA CB CG  A 133 133 
+133 133 ? ? ? ? . . . . 
+108 1 243 18 3.6   1 A 177 177 177 178 ILE ILE ILE GLU N  CA C  N   A 177 177 
+177 178 ? ? ? ? . . . . 
+109 1 22  17 3.6   1 A 12  12  12  13  GLU GLU GLU LEU N  CA C  N   A 12  12  
+12  13  ? ? ? ? . . . . 
+110 1 21  14 3.6   1 A 11  12  12  12  ASP GLU GLU GLU C  N  CA C   A 11  12  
+12  12  ? ? ? ? . . . . 
+111 1 183 13 3.6   1 A 137 137 137 138 ALA ALA ALA PHE N  CA C  N   A 137 137 
+137 138 ? ? ? ? . . . . 
+112 1 271 4  3.5   1 A 133 133 133 133 PHE PHE PHE PHE CA CB CG CD1 A 133 133 
+133 133 ? ? ? ? . . . . 
+113 1 223 15 3.5   1 A 166 166 166 167 VAL VAL VAL PRO N  CA C  N   A 166 166 
+166 167 ? ? ? ? . . . . 
+114 1 77  5  3.4   1 A 78  79  79  79  GLU MET MET MET C  N  CA C   A 78  79  
+79  79  ? ? ? ? . . . . 
+115 1 243 13 3.4   1 A 177 177 177 178 ILE ILE ILE GLU N  CA C  N   A 177 177 
+177 178 ? ? ? ? . . . . 
+116 1 167 19 3.4   1 A 128 128 128 129 LEU LEU LEU ALA N  CA C  N   A 128 128 
+128 129 ? ? ? ? . . . . 
+117 1 13  16 3.4   1 A 7   8   8   8   ILE PHE PHE PHE C  N  CA C   A 7   8   
+8   8   ? ? ? ? . . . . 
+118 1 5   9  3.3   1 A 3   4   4   4   ILE TYR TYR TYR C  N  CA C   A 3   4   
+4   4   ? ? ? ? . . . . 
+119 1 35  3  3.3   1 A 27  28  28  28  VAL TYR TYR TYR C  N  CA C   A 27  28  
+28  28  ? ? ? ? . . . . 
+120 1 35  13 3.3   1 A 27  28  28  28  VAL TYR TYR TYR C  N  CA C   A 27  28  
+28  28  ? ? ? ? . . . . 
+121 1 255 18 3.3   1 A 19  19  19  20  PRO PRO PRO MET N  CA C  N   A 19  19  
+19  20  ? ? ? ? . . . . 
+122 1 180 9  3.3   1 A 135 136 136 136 ASN LEU LEU LEU C  N  CA C   A 135 136 
+136 136 ? ? ? ? . . . . 
+123 1 167 9  3.3   1 A 128 128 128 129 LEU LEU LEU ALA N  CA C  N   A 128 128 
+128 129 ? ? ? ? . . . . 
+124 1 13  1  3.3   1 A 7   8   8   8   ILE PHE PHE PHE C  N  CA C   A 7   8   
+8   8   ? ? ? ? . . . . 
+125 1 54  12 3.2   1 A 38  38  38  39  LYS LYS LYS GLU N  CA C  N   A 38  38  
+38  39  ? ? ? ? . . . . 
+126 1 253 9  3.2   1 A 26  26  26  27  LEU LEU LEU VAL N  CA C  N   A 26  26  
+26  27  ? ? ? ? . . . . 
+127 1 246 20 3.2   1 A 178 179 179 179 GLU GLU GLU GLU C  N  CA C   A 178 179 
+179 179 ? ? ? ? . . . . 
+128 1 24  13 3.2   1 A 14  14  14  15  SER SER SER SER N  CA C  N   A 14  14  
+14  15  ? ? ? ? . . . . 
+129 1 230 2  3.2   1 A 170 170 170 171 MET MET MET LEU N  CA C  N   A 170 170 
+170 171 ? ? ? ? . . . . 
+130 1 172 11 3.2   1 A 131 132 132 132 ASP ARG ARG ARG C  N  CA C   A 131 132 
+132 132 ? ? ? ? . . . . 
+131 1 1   3  3.2   1 A 1   2   2   2   MET LEU LEU LEU C  N  CA C   A 1   2   
+2   2   ? ? ? ? . . . . 
+132 1 7   8  3.1   1 A 4   5   5   5   TYR LYS LYS LYS C  N  CA C   A 4   5   
+5   5   ? ? ? ? . . . . 
+133 1 52  10 3.1   1 A 37  37  37  38  ARG ARG ARG LYS N  CA C  N   A 37  37  
+37  38  ? ? ? ? . . . . 
+134 1 52  18 3.1   1 A 37  37  37  38  ARG ARG ARG LYS N  CA C  N   A 37  37  
+37  38  ? ? ? ? . . . . 
+135 1 271 17 3.1   1 A 133 133 133 133 PHE PHE PHE PHE CA CB CG CD1 A 133 133 
+133 133 ? ? ? ? . . . . 
+136 1 22  9  3.1   1 A 12  12  12  13  GLU GLU GLU LEU N  CA C  N   A 12  12  
+12  13  ? ? ? ? . . . . 
+137 1 214 19 3.1   1 A 159 160 160 160 ARG ASP ASP ASP C  N  CA C   A 159 160 
+160 160 ? ? ? ? . . . . 
+138 1 168 11 3.1   1 A 129 130 130 130 ALA LYS LYS LYS C  N  CA C   A 129 130 
+130 130 ? ? ? ? . . . . 
+139 1 16  3  3.1   1 A 9   9   9   10  THR THR THR ASP N  CA C  N   A 9   9   
+9   10  ? ? ? ? . . . . 
+140 1 82  10 3.0   1 A 82  82  82  83  TYR TYR TYR GLU N  CA C  N   A 82  82  
+82  83  ? ? ? ? . . . . 
+141 1 54  16 3.0   1 A 38  38  38  39  LYS LYS LYS GLU N  CA C  N   A 38  38  
+38  39  ? ? ? ? . . . . 
+142 1 35  6  3.0   1 A 27  28  28  28  VAL TYR TYR TYR C  N  CA C   A 27  28  
+28  28  ? ? ? ? . . . . 
+143 1 35  8  3.0   1 A 27  28  28  28  VAL TYR TYR TYR C  N  CA C   A 27  28  
+28  28  ? ? ? ? . . . . 
+144 1 3   5  3.0   1 A 2   3   3   3   LEU ILE ILE ILE C  N  CA C   A 2   3   
+3   3   ? ? ? ? . . . . 
+145 1 255 13 3.0   1 A 19  19  19  20  PRO PRO PRO MET N  CA C  N   A 19  19  
+19  20  ? ? ? ? . . . . 
+146 1 253 3  3.0   1 A 26  26  26  27  LEU LEU LEU VAL N  CA C  N   A 26  26  
+26  27  ? ? ? ? . . . . 
+147 1 25  20 3.0   1 A 19  20  20  20  PRO MET MET MET C  N  CA C   A 19  20  
+20  20  ? ? ? ? . . . . 
+148 1 21  2  3.0   1 A 11  12  12  12  ASP GLU GLU GLU C  N  CA C   A 11  12  
+12  12  ? ? ? ? . . . . 
+149 1 167 4  3.0   1 A 128 128 128 129 LEU LEU LEU ALA N  CA C  N   A 128 128 
+128 129 ? ? ? ? . . . . 
+150 1 16  6  3.0   1 A 9   9   9   10  THR THR THR ASP N  CA C  N   A 9   9   
+9   10  ? ? ? ? . . . . 
+151 1 14  8  3.0   1 A 8   8   8   9   PHE PHE PHE THR N  CA C  N   A 8   8   
+8   9   ? ? ? ? . . . . 
+152 1 13  18 3.0   1 A 7   8   8   8   ILE PHE PHE PHE C  N  CA C   A 7   8   
+8   8   ? ? ? ? . . . . 
+153 1 53  16 2.9   1 A 37  38  38  38  ARG LYS LYS LYS C  N  CA C   A 37  38  
+38  38  ? ? ? ? . . . . 
+154 1 4   10 2.9   1 A 3   3   3   4   ILE ILE ILE TYR N  CA C  N   A 3   3   
+3   4   ? ? ? ? . . . . 
+155 1 38  11 2.9   1 A 29  29  29  30  GLU GLU GLU PHE N  CA C  N   A 29  29  
+29  30  ? ? ? ? . . . . 
+156 1 253 16 2.9   1 A 26  26  26  27  LEU LEU LEU VAL N  CA C  N   A 26  26  
+26  27  ? ? ? ? . . . . 
+157 1 227 6  2.9   1 A 168 169 169 169 THR LEU LEU LEU C  N  CA C   A 168 169 
+169 169 ? ? ? ? . . . . 
+158 1 224 16 2.9   1 A 167 167 167 168 PRO PRO PRO THR N  CA C  N   A 167 167 
+167 168 ? ? ? ? . . . . 
+159 1 214 8  2.9   1 A 159 160 160 160 ARG ASP ASP ASP C  N  CA C   A 159 160 
+160 160 ? ? ? ? . . . . 
+160 1 167 7  2.9   1 A 128 128 128 129 LEU LEU LEU ALA N  CA C  N   A 128 128 
+128 129 ? ? ? ? . . . . 
+161 1 167 8  2.9   1 A 128 128 128 129 LEU LEU LEU ALA N  CA C  N   A 128 128 
+128 129 ? ? ? ? . . . . 
+162 1 16  20 2.9   1 A 9   9   9   10  THR THR THR ASP N  CA C  N   A 9   9   
+9   10  ? ? ? ? . . . . 
+163 1 86  9  2.8   1 A 84  84  84  85  ASP ASP ASP ALA N  CA C  N   A 84  84  
+84  85  ? ? ? ? . . . . 
+164 1 57  15 2.8   1 A 67  68  68  68  GLY ILE ILE ILE C  N  CA C   A 67  68  
+68  68  ? ? ? ? . . . . 
+165 1 55  20 2.8   1 A 65  66  66  66  GLU ARG ARG ARG C  N  CA C   A 65  66  
+66  66  ? ? ? ? . . . . 
+166 1 255 17 2.8   1 A 19  19  19  20  PRO PRO PRO MET N  CA C  N   A 19  19  
+19  20  ? ? ? ? . . . . 
+167 1 251 5  2.8   1 A 181 181 181 182 CYS CYS CYS LEU N  CA C  N   A 181 181 
+181 182 ? ? ? ? . . . . 
+168 1 21  3  2.8   1 A 11  12  12  12  ASP GLU GLU GLU C  N  CA C   A 11  12  
+12  12  ? ? ? ? . . . . 
+169 1 17  18 2.8   1 A 9   10  10  10  THR ASP ASP ASP C  N  CA C   A 9   10  
+10  10  ? ? ? ? . . . . 
+170 1 77  6  2.7   1 A 78  79  79  79  GLU MET MET MET C  N  CA C   A 78  79  
+79  79  ? ? ? ? . . . . 
+171 1 53  3  2.7   1 A 37  38  38  38  ARG LYS LYS LYS C  N  CA C   A 37  38  
+38  38  ? ? ? ? . . . . 
+172 1 40  1  2.7   1 A 30  30  30  31  PHE PHE PHE LYS N  CA C  N   A 30  30  
+30  31  ? ? ? ? . . . . 
+173 1 255 9  2.7   1 A 19  19  19  20  PRO PRO PRO MET N  CA C  N   A 19  19  
+19  20  ? ? ? ? . . . . 
+174 1 246 6  2.7   1 A 178 179 179 179 GLU GLU GLU GLU C  N  CA C   A 178 179 
+179 179 ? ? ? ? . . . . 
+175 1 17  1  2.7   1 A 9   10  10  10  THR ASP ASP ASP C  N  CA C   A 9   10  
+10  10  ? ? ? ? . . . . 
+176 1 14  18 2.7   1 A 8   8   8   9   PHE PHE PHE THR N  CA C  N   A 8   8   
+8   9   ? ? ? ? . . . . 
+177 1 83  18 2.6   1 A 82  83  83  83  TYR GLU GLU GLU C  N  CA C   A 82  83  
+83  83  ? ? ? ? . . . . 
+178 1 70  12 2.6   1 A 74  74  74  75  HIS HIS HIS LYS N  CA C  N   A 74  74  
+74  75  ? ? ? ? . . . . 
+179 1 52  2  2.6   1 A 37  37  37  38  ARG ARG ARG LYS N  CA C  N   A 37  37  
+37  38  ? ? ? ? . . . . 
+180 1 4   12 2.6   1 A 3   3   3   4   ILE ILE ILE TYR N  CA C  N   A 3   3   
+3   4   ? ? ? ? . . . . 
+181 1 274 7  2.6   1 A 91  91  91  91  TYR TYR TYR TYR N  CA CB CG  A 91  91  
+91  91  ? ? ? ? . . . . 
+182 1 255 15 2.6   1 A 19  19  19  20  PRO PRO PRO MET N  CA C  N   A 19  19  
+19  20  ? ? ? ? . . . . 
+183 1 253 8  2.6   1 A 26  26  26  27  LEU LEU LEU VAL N  CA C  N   A 26  26  
+26  27  ? ? ? ? . . . . 
+184 1 243 10 2.6   1 A 177 177 177 178 ILE ILE ILE GLU N  CA C  N   A 177 177 
+177 178 ? ? ? ? . . . . 
+185 1 224 4  2.6   1 A 167 167 167 168 PRO PRO PRO THR N  CA C  N   A 167 167 
+167 168 ? ? ? ? . . . . 
+186 1 222 5  2.6   1 A 165 166 166 166 GLU VAL VAL VAL C  N  CA C   A 165 166 
+166 166 ? ? ? ? . . . . 
+187 1 171 11 2.6   1 A 131 131 131 132 ASP ASP ASP ARG N  CA C  N   A 131 131 
+131 132 ? ? ? ? . . . . 
+188 1 14  6  2.6   1 A 8   8   8   9   PHE PHE PHE THR N  CA C  N   A 8   8   
+8   9   ? ? ? ? . . . . 
+189 1 57  14 2.5   1 A 67  68  68  68  GLY ILE ILE ILE C  N  CA C   A 67  68  
+68  68  ? ? ? ? . . . . 
+190 1 57  18 2.5   1 A 67  68  68  68  GLY ILE ILE ILE C  N  CA C   A 67  68  
+68  68  ? ? ? ? . . . . 
+191 1 52  5  2.5   1 A 37  37  37  38  ARG ARG ARG LYS N  CA C  N   A 37  37  
+37  38  ? ? ? ? . . . . 
+192 1 5   18 2.5   1 A 3   4   4   4   ILE TYR TYR TYR C  N  CA C   A 3   4   
+4   4   ? ? ? ? . . . . 
+193 1 38  1  2.5   1 A 29  29  29  30  GLU GLU GLU PHE N  CA C  N   A 29  29  
+29  30  ? ? ? ? . . . . 
+194 1 293 16 2.5   1 A 30  30  30  30  PHE PHE PHE PHE CA CB CG CD1 A 30  30  
+30  30  ? ? ? ? . . . . 
+195 1 275 20 2.5   1 A 91  91  91  91  TYR TYR TYR TYR CA CB CG CD1 A 91  91  
+91  91  ? ? ? ? . . . . 
+196 1 251 9  2.5   1 A 181 181 181 182 CYS CYS CYS LEU N  CA C  N   A 181 181 
+181 182 ? ? ? ? . . . . 
+197 1 25  6  2.5   1 A 19  20  20  20  PRO MET MET MET C  N  CA C   A 19  20  
+20  20  ? ? ? ? . . . . 
+198 1 249 2  2.5   1 A 180 180 180 181 LYS LYS LYS CYS N  CA C  N   A 180 180 
+180 181 ? ? ? ? . . . . 
+199 1 245 2  2.5   1 A 178 178 178 179 GLU GLU GLU GLU N  CA C  N   A 178 178 
+178 179 ? ? ? ? . . . . 
+200 1 223 3  2.5   1 A 166 166 166 167 VAL VAL VAL PRO N  CA C  N   A 166 166 
+166 167 ? ? ? ? . . . . 
+201 1 220 8  2.5   1 A 164 165 165 165 THR GLU GLU GLU C  N  CA C   A 164 165 
+165 165 ? ? ? ? . . . . 
+202 1 216 11 2.5   1 A 160 161 161 161 ASP VAL VAL VAL C  N  CA C   A 160 161 
+161 161 ? ? ? ? . . . . 
+203 1 21  16 2.5   1 A 11  12  12  12  ASP GLU GLU GLU C  N  CA C   A 11  12  
+12  12  ? ? ? ? . . . . 
+204 1 172 15 2.5   1 A 131 132 132 132 ASP ARG ARG ARG C  N  CA C   A 131 132 
+132 132 ? ? ? ? . . . . 
+205 1 167 2  2.5   1 A 128 128 128 129 LEU LEU LEU ALA N  CA C  N   A 128 128 
+128 129 ? ? ? ? . . . . 
+206 1 84  14 2.4   1 A 83  83  83  84  GLU GLU GLU ASP N  CA C  N   A 83  83  
+83  84  ? ? ? ? . . . . 
+207 1 54  8  2.4   1 A 38  38  38  39  LYS LYS LYS GLU N  CA C  N   A 38  38  
+38  39  ? ? ? ? . . . . 
+208 1 43  8  2.4   1 A 32  33  33  33  GLY LYS LYS LYS C  N  CA C   A 32  33  
+33  33  ? ? ? ? . . . . 
+209 1 36  3  2.4   1 A 28  28  28  29  TYR TYR TYR GLU N  CA C  N   A 28  28  
+28  29  ? ? ? ? . . . . 
+210 1 36  16 2.4   1 A 28  28  28  29  TYR TYR TYR GLU N  CA C  N   A 28  28  
+28  29  ? ? ? ? . . . . 
+211 1 251 6  2.4   1 A 181 181 181 182 CYS CYS CYS LEU N  CA C  N   A 181 181 
+181 182 ? ? ? ? . . . . 
+212 1 243 16 2.4   1 A 177 177 177 178 ILE ILE ILE GLU N  CA C  N   A 177 177 
+177 178 ? ? ? ? . . . . 
+213 1 230 9  2.4   1 A 170 170 170 171 MET MET MET LEU N  CA C  N   A 170 170 
+170 171 ? ? ? ? . . . . 
+214 1 230 18 2.4   1 A 170 170 170 171 MET MET MET LEU N  CA C  N   A 170 170 
+170 171 ? ? ? ? . . . . 
+215 1 202 15 2.4   1 A 152 153 153 153 GLN VAL VAL VAL C  N  CA C   A 152 153 
+153 153 ? ? ? ? . . . . 
+216 1 19  8  2.4   1 A 10  11  11  11  ASP ASP ASP ASP C  N  CA C   A 10  11  
+11  11  ? ? ? ? . . . . 
+217 1 19  17 2.4   1 A 10  11  11  11  ASP ASP ASP ASP C  N  CA C   A 10  11  
+11  11  ? ? ? ? . . . . 
+218 1 183 9  2.4   1 A 137 137 137 138 ALA ALA ALA PHE N  CA C  N   A 137 137 
+137 138 ? ? ? ? . . . . 
+219 1 167 20 2.4   1 A 128 128 128 129 LEU LEU LEU ALA N  CA C  N   A 128 128 
+128 129 ? ? ? ? . . . . 
+220 1 9   16 2.3   1 A 5   6   6   6   LYS ASP ASP ASP C  N  CA C   A 5   6   
+6   6   ? ? ? ? . . . . 
+221 1 83  14 2.3   1 A 82  83  83  83  TYR GLU GLU GLU C  N  CA C   A 82  83  
+83  83  ? ? ? ? . . . . 
+222 1 6   19 2.3   1 A 4   4   4   5   TYR TYR TYR LYS N  CA C  N   A 4   4   
+4   5   ? ? ? ? . . . . 
+223 1 53  7  2.3   1 A 37  38  38  38  ARG LYS LYS LYS C  N  CA C   A 37  38  
+38  38  ? ? ? ? . . . . 
+224 1 52  1  2.3   1 A 37  37  37  38  ARG ARG ARG LYS N  CA C  N   A 37  37  
+37  38  ? ? ? ? . . . . 
+225 1 50  3  2.3   1 A 36  36  36  37  VAL VAL VAL ARG N  CA C  N   A 36  36  
+36  37  ? ? ? ? . . . . 
+226 1 3   13 2.3   1 A 2   3   3   3   LEU ILE ILE ILE C  N  CA C   A 2   3   
+3   3   ? ? ? ? . . . . 
+227 1 253 13 2.3   1 A 26  26  26  27  LEU LEU LEU VAL N  CA C  N   A 26  26  
+26  27  ? ? ? ? . . . . 
+228 1 243 8  2.3   1 A 177 177 177 178 ILE ILE ILE GLU N  CA C  N   A 177 177 
+177 178 ? ? ? ? . . . . 
+229 1 24  6  2.3   1 A 14  14  14  15  SER SER SER SER N  CA C  N   A 14  14  
+14  15  ? ? ? ? . . . . 
+230 1 230 12 2.3   1 A 170 170 170 171 MET MET MET LEU N  CA C  N   A 170 170 
+170 171 ? ? ? ? . . . . 
+231 1 223 6  2.3   1 A 166 166 166 167 VAL VAL VAL PRO N  CA C  N   A 166 166 
+166 167 ? ? ? ? . . . . 
+232 1 19  19 2.3   1 A 10  11  11  11  ASP ASP ASP ASP C  N  CA C   A 10  11  
+11  11  ? ? ? ? . . . . 
+233 1 14  5  2.3   1 A 8   8   8   9   PHE PHE PHE THR N  CA C  N   A 8   8   
+8   9   ? ? ? ? . . . . 
+234 1 129 15 2.3   1 A 105 106 106 106 LYS ASN ASN ASN C  N  CA C   A 105 106 
+106 106 ? ? ? ? . . . . 
+235 1 86  8  2.2   1 A 84  84  84  85  ASP ASP ASP ALA N  CA C  N   A 84  84  
+84  85  ? ? ? ? . . . . 
+236 1 86  14 2.2   1 A 84  84  84  85  ASP ASP ASP ALA N  CA C  N   A 84  84  
+84  85  ? ? ? ? . . . . 
+237 1 55  13 2.2   1 A 65  66  66  66  GLU ARG ARG ARG C  N  CA C   A 65  66  
+66  66  ? ? ? ? . . . . 
+238 1 4   8  2.2   1 A 3   3   3   4   ILE ILE ILE TYR N  CA C  N   A 3   3   
+3   4   ? ? ? ? . . . . 
+239 1 36  15 2.2   1 A 28  28  28  29  TYR TYR TYR GLU N  CA C  N   A 28  28  
+28  29  ? ? ? ? . . . . 
+240 1 25  5  2.2   1 A 19  20  20  20  PRO MET MET MET C  N  CA C   A 19  20  
+20  20  ? ? ? ? . . . . 
+241 1 230 8  2.2   1 A 170 170 170 171 MET MET MET LEU N  CA C  N   A 170 170 
+170 171 ? ? ? ? . . . . 
+242 1 22  8  2.2   1 A 12  12  12  13  GLU GLU GLU LEU N  CA C  N   A 12  12  
+12  13  ? ? ? ? . . . . 
+243 1 207 11 2.2   1 A 155 155 155 156 ILE ILE ILE ILE N  CA C  N   A 155 155 
+155 156 ? ? ? ? . . . . 
+244 1 207 12 2.2   1 A 155 155 155 156 ILE ILE ILE ILE N  CA C  N   A 155 155 
+155 156 ? ? ? ? . . . . 
+245 1 2   14 2.2   1 A 2   2   2   3   LEU LEU LEU ILE N  CA C  N   A 2   2   
+2   3   ? ? ? ? . . . . 
+246 1 19  5  2.2   1 A 10  11  11  11  ASP ASP ASP ASP C  N  CA C   A 10  11  
+11  11  ? ? ? ? . . . . 
+247 1 54  3  2.1   1 A 38  38  38  39  LYS LYS LYS GLU N  CA C  N   A 38  38  
+38  39  ? ? ? ? . . . . 
+248 1 53  10 2.1   1 A 37  38  38  38  ARG LYS LYS LYS C  N  CA C   A 37  38  
+38  38  ? ? ? ? . . . . 
+249 1 52  12 2.1   1 A 37  37  37  38  ARG ARG ARG LYS N  CA C  N   A 37  37  
+37  38  ? ? ? ? . . . . 
+250 1 279 15 2.1   1 A 82  82  82  82  TYR TYR TYR TYR CA CB CG CD1 A 82  82  
+82  82  ? ? ? ? . . . . 
+251 1 253 6  2.1   1 A 26  26  26  27  LEU LEU LEU VAL N  CA C  N   A 26  26  
+26  27  ? ? ? ? . . . . 
+252 1 25  2  2.1   1 A 19  20  20  20  PRO MET MET MET C  N  CA C   A 19  20  
+20  20  ? ? ? ? . . . . 
+253 1 243 9  2.1   1 A 177 177 177 178 ILE ILE ILE GLU N  CA C  N   A 177 177 
+177 178 ? ? ? ? . . . . 
+254 1 24  17 2.1   1 A 14  14  14  15  SER SER SER SER N  CA C  N   A 14  14  
+14  15  ? ? ? ? . . . . 
+255 1 230 13 2.1   1 A 170 170 170 171 MET MET MET LEU N  CA C  N   A 170 170 
+170 171 ? ? ? ? . . . . 
+256 1 227 9  2.1   1 A 168 169 169 169 THR LEU LEU LEU C  N  CA C   A 168 169 
+169 169 ? ? ? ? . . . . 
+257 1 21  19 2.1   1 A 11  12  12  12  ASP GLU GLU GLU C  N  CA C   A 11  12  
+12  12  ? ? ? ? . . . . 
+258 1 200 11 2.1   1 A 151 152 152 152 GLY GLN GLN GLN C  N  CA C   A 151 152 
+152 152 ? ? ? ? . . . . 
+259 1 2   19 2.1   1 A 2   2   2   3   LEU LEU LEU ILE N  CA C  N   A 2   2   
+2   3   ? ? ? ? . . . . 
+260 1 171 1  2.1   1 A 131 131 131 132 ASP ASP ASP ARG N  CA C  N   A 131 131 
+131 132 ? ? ? ? . . . . 
+261 1 167 13 2.1   1 A 128 128 128 129 LEU LEU LEU ALA N  CA C  N   A 128 128 
+128 129 ? ? ? ? . . . . 
+262 1 82  6  2.0   1 A 82  82  82  83  TYR TYR TYR GLU N  CA C  N   A 82  82  
+82  83  ? ? ? ? . . . . 
+263 1 8   20 2.0   1 A 5   5   5   6   LYS LYS LYS ASP N  CA C  N   A 5   5   
+5   6   ? ? ? ? . . . . 
+264 1 72  5  2.0   1 A 75  75  75  76  LYS LYS LYS LEU N  CA C  N   A 75  75  
+75  76  ? ? ? ? . . . . 
+265 1 48  17 2.0   1 A 35  35  35  36  VAL VAL VAL VAL N  CA C  N   A 35  35  
+35  36  ? ? ? ? . . . . 
+266 1 4   19 2.0   1 A 3   3   3   4   ILE ILE ILE TYR N  CA C  N   A 3   3   
+3   4   ? ? ? ? . . . . 
+267 1 38  17 2.0   1 A 29  29  29  30  GLU GLU GLU PHE N  CA C  N   A 29  29  
+29  30  ? ? ? ? . . . . 
+268 1 36  17 2.0   1 A 28  28  28  29  TYR TYR TYR GLU N  CA C  N   A 28  28  
+28  29  ? ? ? ? . . . . 
+269 1 35  7  2.0   1 A 27  28  28  28  VAL TYR TYR TYR C  N  CA C   A 27  28  
+28  28  ? ? ? ? . . . . 
+270 1 279 18 2.0   1 A 82  82  82  82  TYR TYR TYR TYR CA CB CG CD1 A 82  82  
+82  82  ? ? ? ? . . . . 
+271 1 243 6  2.0   1 A 177 177 177 178 ILE ILE ILE GLU N  CA C  N   A 177 177 
+177 178 ? ? ? ? . . . . 
+272 1 243 7  2.0   1 A 177 177 177 178 ILE ILE ILE GLU N  CA C  N   A 177 177 
+177 178 ? ? ? ? . . . . 
+273 1 230 5  2.0   1 A 170 170 170 171 MET MET MET LEU N  CA C  N   A 170 170 
+170 171 ? ? ? ? . . . . 
+274 1 220 4  2.0   1 A 164 165 165 165 THR GLU GLU GLU C  N  CA C   A 164 165 
+165 165 ? ? ? ? . . . . 
+275 1 2   3  2.0   1 A 2   2   2   3   LEU LEU LEU ILE N  CA C  N   A 2   2   
+2   3   ? ? ? ? . . . . 
+276 1 2   8  2.0   1 A 2   2   2   3   LEU LEU LEU ILE N  CA C  N   A 2   2   
+2   3   ? ? ? ? . . . . 
+277 1 199 20 2.0   1 A 146 146 146 147 GLU GLU GLU GLY N  CA C  N   A 146 146 
+146 147 ? ? ? ? . . . . 
+278 1 19  13 2.0   1 A 10  11  11  11  ASP ASP ASP ASP C  N  CA C   A 10  11  
+11  11  ? ? ? ? . . . . 
+279 1 167 1  2.0   1 A 128 128 128 129 LEU LEU LEU ALA N  CA C  N   A 128 128 
+128 129 ? ? ? ? . . . . 
+280 1 167 11 2.0   1 A 128 128 128 129 LEU LEU LEU ALA N  CA C  N   A 128 128 
+128 129 ? ? ? ? . . . . 
+281 1 83  5  1.9   1 A 82  83  83  83  TYR GLU GLU GLU C  N  CA C   A 82  83  
+83  83  ? ? ? ? . . . . 
+282 1 77  16 1.9   1 A 78  79  79  79  GLU MET MET MET C  N  CA C   A 78  79  
+79  79  ? ? ? ? . . . . 
+283 1 57  12 1.9   1 A 67  68  68  68  GLY ILE ILE ILE C  N  CA C   A 67  68  
+68  68  ? ? ? ? . . . . 
+284 1 54  20 1.9   1 A 38  38  38  39  LYS LYS LYS GLU N  CA C  N   A 38  38  
+38  39  ? ? ? ? . . . . 
+285 1 51  11 1.9   1 A 36  37  37  37  VAL ARG ARG ARG C  N  CA C   A 36  37  
+37  37  ? ? ? ? . . . . 
+286 1 255 7  1.9   1 A 19  19  19  20  PRO PRO PRO MET N  CA C  N   A 19  19  
+19  20  ? ? ? ? . . . . 
+287 1 255 8  1.9   1 A 19  19  19  20  PRO PRO PRO MET N  CA C  N   A 19  19  
+19  20  ? ? ? ? . . . . 
+288 1 253 11 1.9   1 A 26  26  26  27  LEU LEU LEU VAL N  CA C  N   A 26  26  
+26  27  ? ? ? ? . . . . 
+289 1 251 1  1.9   1 A 181 181 181 182 CYS CYS CYS LEU N  CA C  N   A 181 181 
+181 182 ? ? ? ? . . . . 
+290 1 247 6  1.9   1 A 179 179 179 180 GLU GLU GLU LYS N  CA C  N   A 179 179 
+179 180 ? ? ? ? . . . . 
+291 1 242 3  1.9   1 A 176 177 177 177 ILE ILE ILE ILE C  N  CA C   A 176 177 
+177 177 ? ? ? ? . . . . 
+292 1 230 1  1.9   1 A 170 170 170 171 MET MET MET LEU N  CA C  N   A 170 170 
+170 171 ? ? ? ? . . . . 
+293 1 230 20 1.9   1 A 170 170 170 171 MET MET MET LEU N  CA C  N   A 170 170 
+170 171 ? ? ? ? . . . . 
+294 1 23  1  1.9   1 A 13  14  14  14  LEU SER SER SER C  N  CA C   A 13  14  
+14  14  ? ? ? ? . . . . 
+295 1 23  12 1.9   1 A 13  14  14  14  LEU SER SER SER C  N  CA C   A 13  14  
+14  14  ? ? ? ? . . . . 
+296 1 213 16 1.9   1 A 158 158 158 159 TYR TYR TYR ARG N  CA C  N   A 158 158 
+158 159 ? ? ? ? . . . . 
+297 1 198 20 1.9   1 A 145 146 146 146 ALA GLU GLU GLU C  N  CA C   A 145 146 
+146 146 ? ? ? ? . . . . 
+298 1 180 12 1.9   1 A 135 136 136 136 ASN LEU LEU LEU C  N  CA C   A 135 136 
+136 136 ? ? ? ? . . . . 
+299 1 16  10 1.9   1 A 9   9   9   10  THR THR THR ASP N  CA C  N   A 9   9   
+9   10  ? ? ? ? . . . . 
+300 1 129 17 1.9   1 A 105 106 106 106 LYS ASN ASN ASN C  N  CA C   A 105 106 
+106 106 ? ? ? ? . . . . 
+301 1 86  5  1.8   1 A 84  84  84  85  ASP ASP ASP ALA N  CA C  N   A 84  84  
+84  85  ? ? ? ? . . . . 
+302 1 86  7  1.8   1 A 84  84  84  85  ASP ASP ASP ALA N  CA C  N   A 84  84  
+84  85  ? ? ? ? . . . . 
+303 1 86  10 1.8   1 A 84  84  84  85  ASP ASP ASP ALA N  CA C  N   A 84  84  
+84  85  ? ? ? ? . . . . 
+304 1 83  6  1.8   1 A 82  83  83  83  TYR GLU GLU GLU C  N  CA C   A 82  83  
+83  83  ? ? ? ? . . . . 
+305 1 83  11 1.8   1 A 82  83  83  83  TYR GLU GLU GLU C  N  CA C   A 82  83  
+83  83  ? ? ? ? . . . . 
+306 1 78  20 1.8   1 A 79  79  79  80  MET MET MET ASN N  CA C  N   A 79  79  
+79  80  ? ? ? ? . . . . 
+307 1 4   9  1.8   1 A 3   3   3   4   ILE ILE ILE TYR N  CA C  N   A 3   3   
+3   4   ? ? ? ? . . . . 
+308 1 4   20 1.8   1 A 3   3   3   4   ILE ILE ILE TYR N  CA C  N   A 3   3   
+3   4   ? ? ? ? . . . . 
+309 1 35  11 1.8   1 A 27  28  28  28  VAL TYR TYR TYR C  N  CA C   A 27  28  
+28  28  ? ? ? ? . . . . 
+310 1 279 16 1.8   1 A 82  82  82  82  TYR TYR TYR TYR CA CB CG CD1 A 82  82  
+82  82  ? ? ? ? . . . . 
+311 1 266 3  1.8   1 A 136 136 136 136 LEU LEU LEU LEU N  CA CB CG  A 136 136 
+136 136 ? ? ? ? . . . . 
+312 1 249 20 1.8   1 A 180 180 180 181 LYS LYS LYS CYS N  CA C  N   A 180 180 
+180 181 ? ? ? ? . . . . 
+313 1 248 1  1.8   1 A 179 180 180 180 GLU LYS LYS LYS C  N  CA C   A 179 180 
+180 180 ? ? ? ? . . . . 
+314 1 230 14 1.8   1 A 170 170 170 171 MET MET MET LEU N  CA C  N   A 170 170 
+170 171 ? ? ? ? . . . . 
+315 1 227 7  1.8   1 A 168 169 169 169 THR LEU LEU LEU C  N  CA C   A 168 169 
+169 169 ? ? ? ? . . . . 
+316 1 220 2  1.8   1 A 164 165 165 165 THR GLU GLU GLU C  N  CA C   A 164 165 
+165 165 ? ? ? ? . . . . 
+317 1 214 11 1.8   1 A 159 160 160 160 ARG ASP ASP ASP C  N  CA C   A 159 160 
+160 160 ? ? ? ? . . . . 
+318 1 201 14 1.8   1 A 152 152 152 153 GLN GLN GLN VAL N  CA C  N   A 152 152 
+152 153 ? ? ? ? . . . . 
+319 1 19  16 1.8   1 A 10  11  11  11  ASP ASP ASP ASP C  N  CA C   A 10  11  
+11  11  ? ? ? ? . . . . 
+320 1 180 18 1.8   1 A 135 136 136 136 ASN LEU LEU LEU C  N  CA C   A 135 136 
+136 136 ? ? ? ? . . . . 
+321 1 167 17 1.8   1 A 128 128 128 129 LEU LEU LEU ALA N  CA C  N   A 128 128 
+128 129 ? ? ? ? . . . . 
+322 1 83  2  1.7   1 A 82  83  83  83  TYR GLU GLU GLU C  N  CA C   A 82  83  
+83  83  ? ? ? ? . . . . 
+323 1 77  10 1.7   1 A 78  79  79  79  GLU MET MET MET C  N  CA C   A 78  79  
+79  79  ? ? ? ? . . . . 
+324 1 40  20 1.7   1 A 30  30  30  31  PHE PHE PHE LYS N  CA C  N   A 30  30  
+30  31  ? ? ? ? . . . . 
+325 1 39  17 1.7   1 A 29  30  30  30  GLU PHE PHE PHE C  N  CA C   A 29  30  
+30  30  ? ? ? ? . . . . 
+326 1 253 15 1.7   1 A 26  26  26  27  LEU LEU LEU VAL N  CA C  N   A 26  26  
+26  27  ? ? ? ? . . . . 
+327 1 253 18 1.7   1 A 26  26  26  27  LEU LEU LEU VAL N  CA C  N   A 26  26  
+26  27  ? ? ? ? . . . . 
+328 1 245 5  1.7   1 A 178 178 178 179 GLU GLU GLU GLU N  CA C  N   A 178 178 
+178 179 ? ? ? ? . . . . 
+329 1 220 17 1.7   1 A 164 165 165 165 THR GLU GLU GLU C  N  CA C   A 164 165 
+165 165 ? ? ? ? . . . . 
+330 1 211 19 1.7   1 A 157 157 157 158 GLU GLU GLU TYR N  CA C  N   A 157 157 
+157 158 ? ? ? ? . . . . 
+331 1 197 8  1.7   1 A 145 145 145 146 ALA ALA ALA GLU N  CA C  N   A 145 145 
+145 146 ? ? ? ? . . . . 
+332 1 180 15 1.7   1 A 135 136 136 136 ASN LEU LEU LEU C  N  CA C   A 135 136 
+136 136 ? ? ? ? . . . . 
+333 1 172 16 1.7   1 A 131 132 132 132 ASP ARG ARG ARG C  N  CA C   A 131 132 
+132 132 ? ? ? ? . . . . 
+334 1 86  13 1.6   1 A 84  84  84  85  ASP ASP ASP ALA N  CA C  N   A 84  84  
+84  85  ? ? ? ? . . . . 
+335 1 86  16 1.6   1 A 84  84  84  85  ASP ASP ASP ALA N  CA C  N   A 84  84  
+84  85  ? ? ? ? . . . . 
+336 1 78  12 1.6   1 A 79  79  79  80  MET MET MET ASN N  CA C  N   A 79  79  
+79  80  ? ? ? ? . . . . 
+337 1 6   3  1.6   1 A 4   4   4   5   TYR TYR TYR LYS N  CA C  N   A 4   4   
+4   5   ? ? ? ? . . . . 
+338 1 40  14 1.6   1 A 30  30  30  31  PHE PHE PHE LYS N  CA C  N   A 30  30  
+30  31  ? ? ? ? . . . . 
+339 1 38  9  1.6   1 A 29  29  29  30  GLU GLU GLU PHE N  CA C  N   A 29  29  
+29  30  ? ? ? ? . . . . 
+340 1 286 3  1.6   1 A 88  88  88  88  PHE PHE PHE PHE N  CA CB CG  A 88  88  
+88  88  ? ? ? ? . . . . 
+341 1 279 6  1.6   1 A 82  82  82  82  TYR TYR TYR TYR CA CB CG CD1 A 82  82  
+82  82  ? ? ? ? . . . . 
+342 1 255 14 1.6   1 A 19  19  19  20  PRO PRO PRO MET N  CA C  N   A 19  19  
+19  20  ? ? ? ? . . . . 
+343 1 253 12 1.6   1 A 26  26  26  27  LEU LEU LEU VAL N  CA C  N   A 26  26  
+26  27  ? ? ? ? . . . . 
+344 1 230 15 1.6   1 A 170 170 170 171 MET MET MET LEU N  CA C  N   A 170 170 
+170 171 ? ? ? ? . . . . 
+345 1 230 19 1.6   1 A 170 170 170 171 MET MET MET LEU N  CA C  N   A 170 170 
+170 171 ? ? ? ? . . . . 
+346 1 23  13 1.6   1 A 13  14  14  14  LEU SER SER SER C  N  CA C   A 13  14  
+14  14  ? ? ? ? . . . . 
+347 1 227 18 1.6   1 A 168 169 169 169 THR LEU LEU LEU C  N  CA C   A 168 169 
+169 169 ? ? ? ? . . . . 
+348 1 227 19 1.6   1 A 168 169 169 169 THR LEU LEU LEU C  N  CA C   A 168 169 
+169 169 ? ? ? ? . . . . 
+349 1 220 19 1.6   1 A 164 165 165 165 THR GLU GLU GLU C  N  CA C   A 164 165 
+165 165 ? ? ? ? . . . . 
+350 1 214 3  1.6   1 A 159 160 160 160 ARG ASP ASP ASP C  N  CA C   A 159 160 
+160 160 ? ? ? ? . . . . 
+351 1 200 14 1.6   1 A 151 152 152 152 GLY GLN GLN GLN C  N  CA C   A 151 152 
+152 152 ? ? ? ? . . . . 
+352 1 199 1  1.6   1 A 146 146 146 147 GLU GLU GLU GLY N  CA C  N   A 146 146 
+146 147 ? ? ? ? . . . . 
+353 1 199 17 1.6   1 A 146 146 146 147 GLU GLU GLU GLY N  CA C  N   A 146 146 
+146 147 ? ? ? ? . . . . 
+354 1 172 14 1.6   1 A 131 132 132 132 ASP ARG ARG ARG C  N  CA C   A 131 132 
+132 132 ? ? ? ? . . . . 
+355 1 171 6  1.6   1 A 131 131 131 132 ASP ASP ASP ARG N  CA C  N   A 131 131 
+131 132 ? ? ? ? . . . . 
+356 1 131 8  1.6   1 A 108 108 108 109 ARG ARG ARG ASP N  CA C  N   A 108 108 
+108 109 ? ? ? ? . . . . 
+357 1 78  4  1.5   1 A 79  79  79  80  MET MET MET ASN N  CA C  N   A 79  79  
+79  80  ? ? ? ? . . . . 
+358 1 57  7  1.5   1 A 67  68  68  68  GLY ILE ILE ILE C  N  CA C   A 67  68  
+68  68  ? ? ? ? . . . . 
+359 1 53  5  1.5   1 A 37  38  38  38  ARG LYS LYS LYS C  N  CA C   A 37  38  
+38  38  ? ? ? ? . . . . 
+360 1 52  8  1.5   1 A 37  37  37  38  ARG ARG ARG LYS N  CA C  N   A 37  37  
+37  38  ? ? ? ? . . . . 
+361 1 35  14 1.5   1 A 27  28  28  28  VAL TYR TYR TYR C  N  CA C   A 27  28  
+28  28  ? ? ? ? . . . . 
+362 1 3   3  1.5   1 A 2   3   3   3   LEU ILE ILE ILE C  N  CA C   A 2   3   
+3   3   ? ? ? ? . . . . 
+363 1 293 7  1.5   1 A 30  30  30  30  PHE PHE PHE PHE CA CB CG CD1 A 30  30  
+30  30  ? ? ? ? . . . . 
+364 1 230 3  1.5   1 A 170 170 170 171 MET MET MET LEU N  CA C  N   A 170 170 
+170 171 ? ? ? ? . . . . 
+365 1 22  7  1.5   1 A 12  12  12  13  GLU GLU GLU LEU N  CA C  N   A 12  12  
+12  13  ? ? ? ? . . . . 
+366 1 22  11 1.5   1 A 12  12  12  13  GLU GLU GLU LEU N  CA C  N   A 12  12  
+12  13  ? ? ? ? . . . . 
+367 1 214 2  1.5   1 A 159 160 160 160 ARG ASP ASP ASP C  N  CA C   A 159 160 
+160 160 ? ? ? ? . . . . 
+368 1 214 4  1.5   1 A 159 160 160 160 ARG ASP ASP ASP C  N  CA C   A 159 160 
+160 160 ? ? ? ? . . . . 
+369 1 199 14 1.5   1 A 146 146 146 147 GLU GLU GLU GLY N  CA C  N   A 146 146 
+146 147 ? ? ? ? . . . . 
+370 1 171 19 1.5   1 A 131 131 131 132 ASP ASP ASP ARG N  CA C  N   A 131 131 
+131 132 ? ? ? ? . . . . 
+371 1 167 18 1.5   1 A 128 128 128 129 LEU LEU LEU ALA N  CA C  N   A 128 128 
+128 129 ? ? ? ? . . . . 
+372 1 15  5  1.5   1 A 8   9   9   9   PHE THR THR THR C  N  CA C   A 8   9   
+9   9   ? ? ? ? . . . . 
+373 1 83  1  1.4   1 A 82  83  83  83  TYR GLU GLU GLU C  N  CA C   A 82  83  
+83  83  ? ? ? ? . . . . 
+374 1 83  12 1.4   1 A 82  83  83  83  TYR GLU GLU GLU C  N  CA C   A 82  83  
+83  83  ? ? ? ? . . . . 
+375 1 82  7  1.4   1 A 82  82  82  83  TYR TYR TYR GLU N  CA C  N   A 82  82  
+82  83  ? ? ? ? . . . . 
+376 1 55  12 1.4   1 A 65  66  66  66  GLU ARG ARG ARG C  N  CA C   A 65  66  
+66  66  ? ? ? ? . . . . 
+377 1 35  4  1.4   1 A 27  28  28  28  VAL TYR TYR TYR C  N  CA C   A 27  28  
+28  28  ? ? ? ? . . . . 
+378 1 293 3  1.4   1 A 30  30  30  30  PHE PHE PHE PHE CA CB CG CD1 A 30  30  
+30  30  ? ? ? ? . . . . 
+379 1 28  10 1.4   1 A 21  21  21  22  LYS LYS LYS LEU N  CA C  N   A 21  21  
+21  22  ? ? ? ? . . . . 
+380 1 279 12 1.4   1 A 82  82  82  82  TYR TYR TYR TYR CA CB CG CD1 A 82  82  
+82  82  ? ? ? ? . . . . 
+381 1 253 17 1.4   1 A 26  26  26  27  LEU LEU LEU VAL N  CA C  N   A 26  26  
+26  27  ? ? ? ? . . . . 
+382 1 251 7  1.4   1 A 181 181 181 182 CYS CYS CYS LEU N  CA C  N   A 181 181 
+181 182 ? ? ? ? . . . . 
+383 1 243 12 1.4   1 A 177 177 177 178 ILE ILE ILE GLU N  CA C  N   A 177 177 
+177 178 ? ? ? ? . . . . 
+384 1 239 17 1.4   1 A 174 175 175 175 GLU ALA ALA ALA C  N  CA C   A 174 175 
+175 175 ? ? ? ? . . . . 
+385 1 218 2  1.4   1 A 163 164 164 164 GLY THR THR THR C  N  CA C   A 163 164 
+164 164 ? ? ? ? . . . . 
+386 1 172 6  1.4   1 A 131 132 132 132 ASP ARG ARG ARG C  N  CA C   A 131 132 
+132 132 ? ? ? ? . . . . 
+387 1 169 6  1.4   1 A 130 130 130 131 LYS LYS LYS ASP N  CA C  N   A 130 130 
+130 131 ? ? ? ? . . . . 
+388 1 167 12 1.4   1 A 128 128 128 129 LEU LEU LEU ALA N  CA C  N   A 128 128 
+128 129 ? ? ? ? . . . . 
+389 1 86  1  1.3   1 A 84  84  84  85  ASP ASP ASP ALA N  CA C  N   A 84  84  
+84  85  ? ? ? ? . . . . 
+390 1 80  10 1.3   1 A 81  81  81  82  CYS CYS CYS TYR N  CA C  N   A 81  81  
+81  82  ? ? ? ? . . . . 
+391 1 77  1  1.3   1 A 78  79  79  79  GLU MET MET MET C  N  CA C   A 78  79  
+79  79  ? ? ? ? . . . . 
+392 1 77  17 1.3   1 A 78  79  79  79  GLU MET MET MET C  N  CA C   A 78  79  
+79  79  ? ? ? ? . . . . 
+393 1 6   20 1.3   1 A 4   4   4   5   TYR TYR TYR LYS N  CA C  N   A 4   4   
+4   5   ? ? ? ? . . . . 
+394 1 58  2  1.3   1 A 68  68  68  69  ILE ILE ILE ASP N  CA C  N   A 68  68  
+68  69  ? ? ? ? . . . . 
+395 1 57  5  1.3   1 A 67  68  68  68  GLY ILE ILE ILE C  N  CA C   A 67  68  
+68  68  ? ? ? ? . . . . 
+396 1 51  20 1.3   1 A 36  37  37  37  VAL ARG ARG ARG C  N  CA C   A 36  37  
+37  37  ? ? ? ? . . . . 
+397 1 46  18 1.3   1 A 34  34  34  35  HIS HIS HIS VAL N  CA C  N   A 34  34  
+34  35  ? ? ? ? . . . . 
+398 1 38  18 1.3   1 A 29  29  29  30  GLU GLU GLU PHE N  CA C  N   A 29  29  
+29  30  ? ? ? ? . . . . 
+399 1 35  10 1.3   1 A 27  28  28  28  VAL TYR TYR TYR C  N  CA C   A 27  28  
+28  28  ? ? ? ? . . . . 
+400 1 3   6  1.3   1 A 2   3   3   3   LEU ILE ILE ILE C  N  CA C   A 2   3   
+3   3   ? ? ? ? . . . . 
+401 1 3   15 1.3   1 A 2   3   3   3   LEU ILE ILE ILE C  N  CA C   A 2   3   
+3   3   ? ? ? ? . . . . 
+402 1 274 15 1.3   1 A 91  91  91  91  TYR TYR TYR TYR N  CA CB CG  A 91  91  
+91  91  ? ? ? ? . . . . 
+403 1 252 8  1.3   1 A 25  26  26  26  ASP LEU LEU LEU C  N  CA C   A 25  26  
+26  26  ? ? ? ? . . . . 
+404 1 252 12 1.3   1 A 25  26  26  26  ASP LEU LEU LEU C  N  CA C   A 25  26  
+26  26  ? ? ? ? . . . . 
+405 1 251 12 1.3   1 A 181 181 181 182 CYS CYS CYS LEU N  CA C  N   A 181 181 
+181 182 ? ? ? ? . . . . 
+406 1 251 20 1.3   1 A 181 181 181 182 CYS CYS CYS LEU N  CA C  N   A 181 181 
+181 182 ? ? ? ? . . . . 
+407 1 247 20 1.3   1 A 179 179 179 180 GLU GLU GLU LYS N  CA C  N   A 179 179 
+179 180 ? ? ? ? . . . . 
+408 1 239 13 1.3   1 A 174 175 175 175 GLU ALA ALA ALA C  N  CA C   A 174 175 
+175 175 ? ? ? ? . . . . 
+409 1 227 5  1.3   1 A 168 169 169 169 THR LEU LEU LEU C  N  CA C   A 168 169 
+169 169 ? ? ? ? . . . . 
+410 1 224 5  1.3   1 A 167 167 167 168 PRO PRO PRO THR N  CA C  N   A 167 167 
+167 168 ? ? ? ? . . . . 
+411 1 223 19 1.3   1 A 166 166 166 167 VAL VAL VAL PRO N  CA C  N   A 166 166 
+166 167 ? ? ? ? . . . . 
+412 1 222 9  1.3   1 A 165 166 166 166 GLU VAL VAL VAL C  N  CA C   A 165 166 
+166 166 ? ? ? ? . . . . 
+413 1 22  19 1.3   1 A 12  12  12  13  GLU GLU GLU LEU N  CA C  N   A 12  12  
+12  13  ? ? ? ? . . . . 
+414 1 180 20 1.3   1 A 135 136 136 136 ASN LEU LEU LEU C  N  CA C   A 135 136 
+136 136 ? ? ? ? . . . . 
+415 1 169 7  1.3   1 A 130 130 130 131 LYS LYS LYS ASP N  CA C  N   A 130 130 
+130 131 ? ? ? ? . . . . 
+416 1 16  2  1.3   1 A 9   9   9   10  THR THR THR ASP N  CA C  N   A 9   9   
+9   10  ? ? ? ? . . . . 
+417 1 86  6  1.2   1 A 84  84  84  85  ASP ASP ASP ALA N  CA C  N   A 84  84  
+84  85  ? ? ? ? . . . . 
+418 1 77  19 1.2   1 A 78  79  79  79  GLU MET MET MET C  N  CA C   A 78  79  
+79  79  ? ? ? ? . . . . 
+419 1 72  12 1.2   1 A 75  75  75  76  LYS LYS LYS LEU N  CA C  N   A 75  75  
+75  76  ? ? ? ? . . . . 
+420 1 57  1  1.2   1 A 67  68  68  68  GLY ILE ILE ILE C  N  CA C   A 67  68  
+68  68  ? ? ? ? . . . . 
+421 1 53  17 1.2   1 A 37  38  38  38  ARG LYS LYS LYS C  N  CA C   A 37  38  
+38  38  ? ? ? ? . . . . 
+422 1 40  16 1.2   1 A 30  30  30  31  PHE PHE PHE LYS N  CA C  N   A 30  30  
+30  31  ? ? ? ? . . . . 
+423 1 279 3  1.2   1 A 82  82  82  82  TYR TYR TYR TYR CA CB CG CD1 A 82  82  
+82  82  ? ? ? ? . . . . 
+424 1 252 6  1.2   1 A 25  26  26  26  ASP LEU LEU LEU C  N  CA C   A 25  26  
+26  26  ? ? ? ? . . . . 
+425 1 249 7  1.2   1 A 180 180 180 181 LYS LYS LYS CYS N  CA C  N   A 180 180 
+180 181 ? ? ? ? . . . . 
+426 1 243 5  1.2   1 A 177 177 177 178 ILE ILE ILE GLU N  CA C  N   A 177 177 
+177 178 ? ? ? ? . . . . 
+427 1 22  2  1.2   1 A 12  12  12  13  GLU GLU GLU LEU N  CA C  N   A 12  12  
+12  13  ? ? ? ? . . . . 
+428 1 214 17 1.2   1 A 159 160 160 160 ARG ASP ASP ASP C  N  CA C   A 159 160 
+160 160 ? ? ? ? . . . . 
+429 1 213 7  1.2   1 A 158 158 158 159 TYR TYR TYR ARG N  CA C  N   A 158 158 
+158 159 ? ? ? ? . . . . 
+430 1 206 12 1.2   1 A 154 155 155 155 ALA ILE ILE ILE C  N  CA C   A 154 155 
+155 155 ? ? ? ? . . . . 
+431 1 19  3  1.2   1 A 10  11  11  11  ASP ASP ASP ASP C  N  CA C   A 10  11  
+11  11  ? ? ? ? . . . . 
+432 1 183 18 1.2   1 A 137 137 137 138 ALA ALA ALA PHE N  CA C  N   A 137 137 
+137 138 ? ? ? ? . . . . 
+433 1 182 9  1.2   1 A 136 137 137 137 LEU ALA ALA ALA C  N  CA C   A 136 137 
+137 137 ? ? ? ? . . . . 
+434 1 180 14 1.2   1 A 135 136 136 136 ASN LEU LEU LEU C  N  CA C   A 135 136 
+136 136 ? ? ? ? . . . . 
+435 1 17  12 1.2   1 A 9   10  10  10  THR ASP ASP ASP C  N  CA C   A 9   10  
+10  10  ? ? ? ? . . . . 
+436 1 17  20 1.2   1 A 9   10  10  10  THR ASP ASP ASP C  N  CA C   A 9   10  
+10  10  ? ? ? ? . . . . 
+437 1 16  16 1.2   1 A 9   9   9   10  THR THR THR ASP N  CA C  N   A 9   9   
+9   10  ? ? ? ? . . . . 
+438 1 78  8  1.1   1 A 79  79  79  80  MET MET MET ASN N  CA C  N   A 79  79  
+79  80  ? ? ? ? . . . . 
+439 1 72  10 1.1   1 A 75  75  75  76  LYS LYS LYS LEU N  CA C  N   A 75  75  
+75  76  ? ? ? ? . . . . 
+440 1 70  3  1.1   1 A 74  74  74  75  HIS HIS HIS LYS N  CA C  N   A 74  74  
+74  75  ? ? ? ? . . . . 
+441 1 7   5  1.1   1 A 4   5   5   5   TYR LYS LYS LYS C  N  CA C   A 4   5   
+5   5   ? ? ? ? . . . . 
+442 1 53  14 1.1   1 A 37  38  38  38  ARG LYS LYS LYS C  N  CA C   A 37  38  
+38  38  ? ? ? ? . . . . 
+443 1 5   4  1.1   1 A 3   4   4   4   ILE TYR TYR TYR C  N  CA C   A 3   4   
+4   4   ? ? ? ? . . . . 
+444 1 4   13 1.1   1 A 3   3   3   4   ILE ILE ILE TYR N  CA C  N   A 3   3   
+3   4   ? ? ? ? . . . . 
+445 1 279 9  1.1   1 A 82  82  82  82  TYR TYR TYR TYR CA CB CG CD1 A 82  82  
+82  82  ? ? ? ? . . . . 
+446 1 275 17 1.1   1 A 91  91  91  91  TYR TYR TYR TYR CA CB CG CD1 A 91  91  
+91  91  ? ? ? ? . . . . 
+447 1 244 2  1.1   1 A 177 178 178 178 ILE GLU GLU GLU C  N  CA C   A 177 178 
+178 178 ? ? ? ? . . . . 
+448 1 23  11 1.1   1 A 13  14  14  14  LEU SER SER SER C  N  CA C   A 13  14  
+14  14  ? ? ? ? . . . . 
+449 1 227 1  1.1   1 A 168 169 169 169 THR LEU LEU LEU C  N  CA C   A 168 169 
+169 169 ? ? ? ? . . . . 
+450 1 216 16 1.1   1 A 160 161 161 161 ASP VAL VAL VAL C  N  CA C   A 160 161 
+161 161 ? ? ? ? . . . . 
+451 1 199 19 1.1   1 A 146 146 146 147 GLU GLU GLU GLY N  CA C  N   A 146 146 
+146 147 ? ? ? ? . . . . 
+452 1 19  1  1.1   1 A 10  11  11  11  ASP ASP ASP ASP C  N  CA C   A 10  11  
+11  11  ? ? ? ? . . . . 
+453 1 178 17 1.1   1 A 134 135 135 135 LYS ASN ASN ASN C  N  CA C   A 134 135 
+135 135 ? ? ? ? . . . . 
+454 1 172 18 1.1   1 A 131 132 132 132 ASP ARG ARG ARG C  N  CA C   A 131 132 
+132 132 ? ? ? ? . . . . 
+455 1 167 6  1.1   1 A 128 128 128 129 LEU LEU LEU ALA N  CA C  N   A 128 128 
+128 129 ? ? ? ? . . . . 
+456 1 167 16 1.1   1 A 128 128 128 129 LEU LEU LEU ALA N  CA C  N   A 128 128 
+128 129 ? ? ? ? . . . . 
+457 1 11  18 1.1   1 A 6   7   7   7   ASP ILE ILE ILE C  N  CA C   A 6   7   
+7   7   ? ? ? ? . . . . 
 # 
 loop_
 _pdbx_validation_software.ordinal 

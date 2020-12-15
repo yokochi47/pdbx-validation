@@ -1,7 +1,7 @@
 ###########################################################################
 #
 # File:  mmcif_pdbx_validation-v3.dic
-# Date:  Mon Dec 14 18:13:09 JST 2020
+# Date:  Tue Dec 15 13:15:47 JST 2020
 #
 # Created from:
 #        mmcif_pdbx_v50.dic   - PDB Exchange Data Dictionary (V5.336)
@@ -67238,11 +67238,11 @@ save__pdbx_nmr_restraint_summary.unmapped_restraints_total
     _pdbx_item_aliases.version    v5.01
 save_
 
-save__pdbx_nmr_restraint_summary.average_restraints_per_residue
+save__pdbx_nmr_restraint_summary.restraints_per_residue
     _item_description.description
 ;              The average number of restraints per residue.
 ;
-    _item.name                  '_pdbx_nmr_restraint_summary.average_restraints_per_residue'
+    _item.name                  '_pdbx_nmr_restraint_summary.restraints_per_residue'
     _item.category_id             pdbx_nmr_restraint_summary
     _item.mandatory_code          no
     _item_type.code               float
@@ -67260,11 +67260,11 @@ save__pdbx_nmr_restraint_summary.average_restraints_per_residue
     _pdbx_item_aliases.version    v5.01
 save_
 
-save__pdbx_nmr_restraint_summary.average_long_range_restraints_per_residue
+save__pdbx_nmr_restraint_summary.long_range_restraints_per_residue
     _item_description.description
 ;              The average number of long range restraints per residue.
 ;
-    _item.name                  '_pdbx_nmr_restraint_summary.average_long_range_restraints_per_residue'
+    _item.name                  '_pdbx_nmr_restraint_summary.long_range_restraints_per_residue'
     _item.category_id             pdbx_nmr_restraint_summary
     _item.mandatory_code          no
     _item_type.code               float
@@ -67429,12 +67429,12 @@ save__pdbx_nmr_restraint_violation.bin_units
         'Hz'         'reciprocal seconds for RDC restraints'
 save_
 
-save__pdbx_nmr_restraint_violation.average_violation_count_per_model
+save__pdbx_nmr_restraint_violation.violations_per_model
     _item_description.description
 ;              The average number of residual violations per model
                in a particular bin.
 ;
-    _item.name                  '_pdbx_nmr_restraint_violation.average_violation_count_per_model'
+    _item.name                  '_pdbx_nmr_restraint_violation.violations_per_model'
     _item.category_id             pdbx_nmr_restraint_violation
     _item.mandatory_code          no
     _item_type.code               float
@@ -67448,8 +67448,8 @@ save__pdbx_nmr_restraint_violation.average_violation_count_per_model
     _pdbx_item_aliases.xpath
     _pdbx_item_aliases.schema
     _pdbx_item_aliases.version
-    '/wwPDB-validation-information/NMR_restraints_analysis/residual_distance_violations/residual_distance_violation/@average_violations_per_model'    wwpdb_validation_v5.01.xsd   v5.01
-    '/wwPDB-validation-information/NMR_restraints_analysis/residual_angle_violations/residual_angle_violation/@average_violations_per_model'          wwpdb_validation_v5.01.xsd   v5.01
+    '/wwPDB-validation-information/NMR_restraints_analysis/residual_distance_violations/residual_distance_violation/@violations_per_model'    wwpdb_validation_v5.01.xsd   v5.01
+    '/wwPDB-validation-information/NMR_restraints_analysis/residual_angle_violations/residual_angle_violation/@violations_per_model'          wwpdb_validation_v5.01.xsd   v5.01
 save_
 
 #######################################
@@ -67486,8 +67486,6 @@ save__pdbx_nmr_distance_violation_summary.type
     _item.category_id             pdbx_nmr_distance_violation_summary
     _item.mandatory_code          yes
     _item_type.code               code
-    _item_linked.child_name     '_pdbx_nmr_distance_violation_summary.type'
-    _item_linked.parent_name    '_pdbx_nmr_restraint_list.type'
     loop_
     _item_enumeration.value
     _item_enumeration.detail
@@ -67514,9 +67512,9 @@ save__pdbx_nmr_distance_violation_summary.subtype
     _item_type.code               code
     loop_
     _item_enumeration.value
-     backbone-backbone       'distance restraints between two backbone atoms'
-     backbone-sidechain      'distance restraints between backbone atom and side chaini atom'
-     sidechain-sidechain     'distance restraints between two side chain atoms'
+     backbone_backbone       'distance restraints between two backbone atoms'
+     backbone_sidechain      'distance restraints between backbone atom and side chaini atom'
+     sidechain_sidechain     'distance restraints between two side chain atoms'
      all                     'all distance restraints without backbone/side chain classification'
 #
     _pdbx_item_aliases.xpath     '/wwPDB-validation-information/distance_restraints_analysis/distance_violations_summary/distance_violation_summary/@restraint_sub_type'
@@ -68276,7 +68274,7 @@ save__pdbx_nmr_distance_violation_plural.auth_comp_id_1
     _pdbx_item_external_ref.dictionary    mmcif_pdbx.dic
     _pdbx_item_external_ref.version       5
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/distance_restraints_analysis/most_violated_distance_restraints/most_violated_distance_restraint/@res_name_1'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/distance_restraints_analysis/most_violated_distance_restraints/most_violated_distance_restraint/@resname_1'
     _pdbx_item_aliases.schema     wwpdb_validation_v5.01.xsd
     _pdbx_item_aliases.version    v5.01
 save_
@@ -68413,6 +68411,93 @@ save__pdbx_nmr_distance_violation_plural.auth_seq_id_2
     _pdbx_item_aliases.version    v5.01
 save_
 
+save__pdbx_nmr_distance_violation_plural.label_asym_id_1
+    _item_description.description
+;              Part of the identifier of the first of the two atom sites
+               that define a distance restraint.
+
+               This data item is a pointer to _atom_site.label_asym_id in the
+               ATOM_SITE category.
+;
+    _item.name                  '_pdbx_nmr_distance_violation_plural.label_asym_id_1'
+    _item.category_id             pdbx_nmr_distance_violation_plural
+    _item.mandatory_code          yes
+    _item_type.code               code
+    _pdbx_item_external_ref.child_name  '_pdbx_nmr_distance_violation_plural.label_asym_id_1'
+    _pdbx_item_external_ref.parent_name '_atom_site.label_asym_id'
+    _pdbx_item_external_ref.dictionary    mmcif_pdbx.dic
+    _pdbx_item_external_ref.version       5
+#
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/distance_restraints_analysis/most_violated_distance_restraints/most_violated_distance_restraint/@said_1'
+    _pdbx_item_aliases.schema     wwpdb_validation_v5.01.xsd
+   _pdbx_item_aliases.version    v5.01
+save_
+
+save__pdbx_nmr_distance_violation_plural.label_asym_id_2
+    _item_description.description
+;              Part of the identifier of the second of the two atom sites
+               that define a distance restraint.
+
+               This data item is a pointer to _atom_site.label_asym_id in the
+               ATOM_SITE category.
+;
+    _item.name                  '_pdbx_nmr_distance_violation_plural.label_asym_id_2'
+    _item.category_id             pdbx_nmr_distance_violation_plural
+    _item.mandatory_code          yes
+    _item_type.code               code
+    _pdbx_item_external_ref.child_name  '_pdbx_nmr_distance_violation_plural.label_asym_id_2'
+    _pdbx_item_external_ref.parent_name '_atom_site.label_asym_id'
+    _pdbx_item_external_ref.dictionary    mmcif_pdbx.dic
+    _pdbx_item_external_ref.version       5
+#
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/distance_restraints_analysis/most_violated_distance_restraints/most_violated_distance_restraint/@said_2'
+    _pdbx_item_aliases.schema     wwpdb_validation_v5.01.xsd
+   _pdbx_item_aliases.version    v5.01
+save_
+
+save__pdbx_nmr_distance_violation_plural.label_seq_id_1
+    _item_description.description
+;              Part of the identifier of the first of the two atom sites
+               that define a distance restraint.
+
+               This data item is a pointer to _atom_site.label_seq_id in the
+               ATOM_SITE category.
+;
+    _item.name                  '_pdbx_nmr_distance_violation_plural.label_seq_id_1'
+    _item.category_id             pdbx_nmr_distance_violation_plural
+    _item.mandatory_code          yes
+    _item_type.code               code
+    _pdbx_item_external_ref.child_name  '_pdbx_nmr_distance_violation_plural.label_seq_id_1'
+    _pdbx_item_external_ref.parent_name '_atom_site.label_seq_id'
+    _pdbx_item_external_ref.dictionary    mmcif_pdbx.dic
+    _pdbx_item_external_ref.version       5
+#
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/distance_restraints_analysis/most_violated_distance_restraints/most_violated_distance_restraint/@seq_1'
+    _pdbx_item_aliases.schema     wwpdb_validation_v5.01.xsd
+    _pdbx_item_aliases.version    v5.01
+save_
+
+save__pdbx_nmr_distance_violation_plural.label_seq_id_2
+    _item_description.description
+;              Part of the identifier of the second of the two atom sites
+               that define a distance restraint.
+
+               This data item is a pointer to _atom_site.label_seq_id in the
+               ATOM_SITE category.
+;
+    _item.name                  '_pdbx_nmr_distance_violation_plural.label_seq_id_2'
+    _item.category_id             pdbx_nmr_distance_violation_plural
+    _item.mandatory_code          yes
+    _item_type.code               code
+    _pdbx_item_external_ref.child_name  '_pdbx_nmr_distance_violation_plural.label_seq_id_2'
+    _pdbx_item_external_ref.parent_name '_atom_site.label_seq_id'
+    _pdbx_item_external_ref.dictionary    mmcif_pdbx.dic
+    _pdbx_item_external_ref.version       5
+#
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/distance_restraints_analysis/most_violated_distance_restraints/most_violated_distance_restraint/@seq_2'
+    _pdbx_item_aliases.schema     wwpdb_validation_v5.01.xsd
+    _pdbx_item_aliases.version    v5.01
+save_
 
 save__pdbx_nmr_distance_violation_plural.PDB_ins_code_1
     _item_description.description
@@ -68688,7 +68773,7 @@ save__pdbx_nmr_distance_violation.auth_comp_id_1
     _pdbx_item_external_ref.dictionary    mmcif_pdbx.dic
     _pdbx_item_external_ref.version       5
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/distance_restraints_analysis/violated_distance_restraints/violated_distance_restraint/@res_name_1'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/distance_restraints_analysis/violated_distance_restraints/violated_distance_restraint/@resname_1'
     _pdbx_item_aliases.schema     wwpdb_validation_v5.01.xsd
     _pdbx_item_aliases.version    v5.01
 save_
@@ -68825,6 +68910,93 @@ save__pdbx_nmr_distance_violation.auth_seq_id_2
     _pdbx_item_aliases.version    v5.01
 save_
 
+save__pdbx_nmr_distance_violation.label_asym_id_1
+    _item_description.description
+;              Part of the identifier of the first of the two atom sites
+               that define a distance restraint.
+
+               This data item is a pointer to _atom_site.label_asym_id in the
+               ATOM_SITE category.
+;
+    _item.name                  '_pdbx_nmr_distance_violation.label_asym_id_1'
+    _item.category_id             pdbx_nmr_distance_violation
+    _item.mandatory_code          yes
+    _item_type.code               code
+    _pdbx_item_external_ref.child_name  '_pdbx_nmr_distance_violation.label_asym_id_1'
+    _pdbx_item_external_ref.parent_name '_atom_site.label_asym_id'
+    _pdbx_item_external_ref.dictionary    mmcif_pdbx.dic
+    _pdbx_item_external_ref.version       5
+#
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/distance_restraints_analysis/violated_distance_restraints/violated_distance_restraint/@said_1'
+    _pdbx_item_aliases.schema     wwpdb_validation_v5.01.xsd
+   _pdbx_item_aliases.version    v5.01
+save_
+
+save__pdbx_nmr_distance_violation.label_asym_id_2
+    _item_description.description
+;              Part of the identifier of the second of the two atom sites
+               that define a distance restraint.
+
+               This data item is a pointer to _atom_site.label_asym_id in the
+               ATOM_SITE category.
+;
+    _item.name                  '_pdbx_nmr_distance_violation.label_asym_id_2'
+    _item.category_id             pdbx_nmr_distance_violation
+    _item.mandatory_code          yes
+    _item_type.code               code
+    _pdbx_item_external_ref.child_name  '_pdbx_nmr_distance_violation.label_asym_id_2'
+    _pdbx_item_external_ref.parent_name '_atom_site.label_asym_id'
+    _pdbx_item_external_ref.dictionary    mmcif_pdbx.dic
+    _pdbx_item_external_ref.version       5
+#
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/distance_restraints_analysis/violated_distance_restraints/violated_distance_restraint/@said_2'
+    _pdbx_item_aliases.schema     wwpdb_validation_v5.01.xsd
+   _pdbx_item_aliases.version    v5.01
+save_
+
+save__pdbx_nmr_distance_violation.label_seq_id_1
+    _item_description.description
+;              Part of the identifier of the first of the two atom sites
+               that define a distance restraint.
+
+               This data item is a pointer to _atom_site.label_seq_id in the
+               ATOM_SITE category.
+;
+    _item.name                  '_pdbx_nmr_distance_violation.label_seq_id_1'
+    _item.category_id             pdbx_nmr_distance_violation
+    _item.mandatory_code          yes
+    _item_type.code               code
+    _pdbx_item_external_ref.child_name  '_pdbx_nmr_distance_violation.label_seq_id_1'
+    _pdbx_item_external_ref.parent_name '_atom_site.label_seq_id'
+    _pdbx_item_external_ref.dictionary    mmcif_pdbx.dic
+    _pdbx_item_external_ref.version       5
+#
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/distance_restraints_analysis/violated_distance_restraints/violated_distance_restraint/@seq_1'
+    _pdbx_item_aliases.schema     wwpdb_validation_v5.01.xsd
+    _pdbx_item_aliases.version    v5.01
+save_
+
+save__pdbx_nmr_distance_violation.label_seq_id_2
+    _item_description.description
+;              Part of the identifier of the second of the two atom sites
+               that define a distance restraint.
+
+               This data item is a pointer to _atom_site.label_seq_id in the
+               ATOM_SITE category.
+;
+    _item.name                  '_pdbx_nmr_distance_violation.label_seq_id_2'
+    _item.category_id             pdbx_nmr_distance_violation
+    _item.mandatory_code          yes
+    _item_type.code               code
+    _pdbx_item_external_ref.child_name  '_pdbx_nmr_distance_violation.label_seq_id_2'
+    _pdbx_item_external_ref.parent_name '_atom_site.label_seq_id'
+    _pdbx_item_external_ref.dictionary    mmcif_pdbx.dic
+    _pdbx_item_external_ref.version       5
+#
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/distance_restraints_analysis/violated_distance_restraints/violated_distance_restraint/@seq_2'
+    _pdbx_item_aliases.schema     wwpdb_validation_v5.01.xsd
+    _pdbx_item_aliases.version    v5.01
+save_
 
 save__pdbx_nmr_distance_violation.PDB_ins_code_1
     _item_description.description
@@ -68945,8 +69117,6 @@ save__pdbx_nmr_dihedral_angle_violation_summary.type
     _item.category_id             pdbx_nmr_dihedral_angle_violation_summary
     _item.mandatory_code          yes
     _item_type.code               code
-    _item_linked.child_name     '_pdbx_nmr_dihedral_angle_violation_summary.type'
-    _item_linked.parent_name    '_pdbx_nmr_restraint_list.type'
     loop_
     _item_enumeration.value
     _item_enumeration.detail
@@ -70405,9 +70575,14 @@ save__pdbx_nmr_dihedral_angle_violation_plural.auth_asym_id
     _pdbx_item_external_ref.dictionary    mmcif_pdbx.dic
     _pdbx_item_external_ref.version       5
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/most_violated_dihedralangle_restraints/most_violated_dihedralangle_restraint/@chain_1'
-    _pdbx_item_aliases.schema     wwpdb_validation_v5.01.xsd
-    _pdbx_item_aliases.version    v5.01
+    loop_
+    _pdbx_item_aliases.xpath
+    _pdbx_item_aliases.schema
+    _pdbx_item_aliases.version
+    '/wwPDB-validation-information/dihedralangle_restraints_analysis/most_violated_dihedralangle_restraints/most_violated_dihedralangle_restraint/@chain_1'   wwpdb_validation_v5.01.xsd   v5.01
+    '/wwPDB-validation-information/dihedralangle_restraints_analysis/most_violated_dihedralangle_restraints/most_violated_dihedralangle_restraint/@chain_2'   wwpdb_validation_v5.01.xsd   v5.01
+    '/wwPDB-validation-information/dihedralangle_restraints_analysis/most_violated_dihedralangle_restraints/most_violated_dihedralangle_restraint/@chain_3'   wwpdb_validation_v5.01.xsd   v5.01
+    '/wwPDB-validation-information/dihedralangle_restraints_analysis/most_violated_dihedralangle_restraints/most_violated_dihedralangle_restraint/@chain_4'   wwpdb_validation_v5.01.xsd   v5.01
 save_
 
 save__pdbx_nmr_dihedral_angle_violation_plural.auth_atom_id_1
@@ -70449,7 +70624,7 @@ save__pdbx_nmr_dihedral_angle_violation_plural.auth_comp_id_1
     _pdbx_item_external_ref.dictionary    mmcif_pdbx.dic
     _pdbx_item_external_ref.version       5
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/most_violated_dihedralangle_restraints/most_violated_dihedralangle_restraint/@res_name_1'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/most_violated_dihedralangle_restraints/most_violated_dihedralangle_restraint/@resname_1'
     _pdbx_item_aliases.schema     wwpdb_validation_v5.01.xsd
     _pdbx_item_aliases.version    v5.01
 save_
@@ -70670,6 +70845,118 @@ save__pdbx_nmr_dihedral_angle_violation_plural.auth_seq_id_4
     _pdbx_item_external_ref.version       5
 #
     _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/most_violated_dihedralangle_restraints/most_violated_dihedralangle_restraint/@resnum_4'
+    _pdbx_item_aliases.schema     wwpdb_validation_v5.01.xsd
+    _pdbx_item_aliases.version    v5.01
+save_
+
+save__pdbx_nmr_dihedral_angle_violation_plural.label_asym_id
+    _item_description.description
+;              This data item is a pointer to _atom_site.label_asym_id in the
+               ATOM_SITE category.
+;
+    _item.name                  '_pdbx_nmr_dihedral_angle_violation_plural.label_asym_id'
+    _item.category_id             pdbx_nmr_dihedral_angle_violation_plural
+    _item.mandatory_code          yes
+    _item_type.code               code
+    _pdbx_item_external_ref.child_name  '_pdbx_nmr_dihedral_angle_violation_plural.label_asym_id'
+    _pdbx_item_external_ref.parent_name '_atom_site.label_asym_id'
+    _pdbx_item_external_ref.dictionary    mmcif_pdbx.dic
+    _pdbx_item_external_ref.version       5
+#
+    loop_
+    _pdbx_item_aliases.xpath
+    _pdbx_item_aliases.schema
+    _pdbx_item_aliases.version
+    '/wwPDB-validation-information/dihedralangle_restraints_analysis/most_violated_dihedralangle_restraints/most_violated_dihedralangle_restraint/@said_1'   wwpdb_validation_v5.01.xsd   v5.01
+    '/wwPDB-validation-information/dihedralangle_restraints_analysis/most_violated_dihedralangle_restraints/most_violated_dihedralangle_restraint/@said_2'   wwpdb_validation_v5.01.xsd   v5.01
+    '/wwPDB-validation-information/dihedralangle_restraints_analysis/most_violated_dihedralangle_restraints/most_violated_dihedralangle_restraint/@said_3'   wwpdb_validation_v5.01.xsd   v5.01
+    '/wwPDB-validation-information/dihedralangle_restraints_analysis/most_violated_dihedralangle_restraints/most_violated_dihedralangle_restraint/@said_4'   wwpdb_validation_v5.01.xsd   v5.01
+save_
+
+save__pdbx_nmr_dihedral_angle_violation_plural.label_seq_id_1
+    _item_description.description
+;              Part of the identifier of the first of the four atom sites
+               that define a dihedral angle restraint.
+
+               This data item is a pointer to _atom_site.label_seq_id in the
+               ATOM_SITE category.
+;
+    _item.name                  '_pdbx_nmr_dihedral_angle_violation_plural.label_seq_id_1'
+    _item.category_id             pdbx_nmr_dihedral_angle_violation_plural
+    _item.mandatory_code          yes
+    _item_type.code               code
+    _pdbx_item_external_ref.child_name  '_pdbx_nmr_dihedral_angle_violation_plural.label_seq_id_1'
+    _pdbx_item_external_ref.parent_name '_atom_site.label_seq_id'
+    _pdbx_item_external_ref.dictionary    mmcif_pdbx.dic
+    _pdbx_item_external_ref.version       5
+#
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/most_violated_dihedralangle_restraints/most_violated_dihedralangle_restraint/@seq_1'
+    _pdbx_item_aliases.schema     wwpdb_validation_v5.01.xsd
+    _pdbx_item_aliases.version    v5.01
+save_
+
+save__pdbx_nmr_dihedral_angle_violation_plural.label_seq_id_2
+    _item_description.description
+;              Part of the identifier of the second of the four atom sites
+               that define a dihedral angle restraint.
+
+               This data item is a pointer to _atom_site.label_seq_id in the
+               ATOM_SITE category.
+;
+    _item.name                  '_pdbx_nmr_dihedral_angle_violation_plural.label_seq_id_2'
+    _item.category_id             pdbx_nmr_dihedral_angle_violation_plural
+    _item.mandatory_code          yes
+    _item_type.code               code
+    _pdbx_item_external_ref.child_name  '_pdbx_nmr_dihedral_angle_violation_plural.label_seq_id_2'
+    _pdbx_item_external_ref.parent_name '_atom_site.label_seq_id'
+    _pdbx_item_external_ref.dictionary    mmcif_pdbx.dic
+    _pdbx_item_external_ref.version       5
+#
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/most_violated_dihedralangle_restraints/most_violated_dihedralangle_restraint/@seq_2'
+    _pdbx_item_aliases.schema     wwpdb_validation_v5.01.xsd
+    _pdbx_item_aliases.version    v5.01
+save_
+
+save__pdbx_nmr_dihedral_angle_violation_plural.label_seq_id_3
+    _item_description.description
+;              Part of the identifier of the third of the four atom sites
+               that define a dihedral angle restraint.
+
+               This data item is a pointer to _atom_site.label_seq_id in the
+               ATOM_SITE category.
+;
+    _item.name                  '_pdbx_nmr_dihedral_angle_violation_plural.label_seq_id_3'
+    _item.category_id             pdbx_nmr_dihedral_angle_violation_plural
+    _item.mandatory_code          yes
+    _item_type.code               code
+    _pdbx_item_external_ref.child_name  '_pdbx_nmr_dihedral_angle_violation_plural.label_seq_id_3'
+    _pdbx_item_external_ref.parent_name '_atom_site.label_seq_id'
+    _pdbx_item_external_ref.dictionary    mmcif_pdbx.dic
+    _pdbx_item_external_ref.version       5
+#
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/most_violated_dihedralangle_restraints/most_violated_dihedralangle_restraint/@seq_3'
+    _pdbx_item_aliases.schema     wwpdb_validation_v5.01.xsd
+    _pdbx_item_aliases.version    v5.01
+save_
+
+save__pdbx_nmr_dihedral_angle_violation_plural.label_seq_id_4
+    _item_description.description
+;              Part of the identifier of the fourth of the four atom sites
+               that define a dihedral angle restraint.
+
+               This data item is a pointer to _atom_site.label_seq_id in the
+               ATOM_SITE category.
+;
+    _item.name                  '_pdbx_nmr_dihedral_angle_violation_plural.label_seq_id_4'
+    _item.category_id             pdbx_nmr_dihedral_angle_violation_plural
+    _item.mandatory_code          yes
+    _item_type.code               code
+    _pdbx_item_external_ref.child_name  '_pdbx_nmr_dihedral_angle_violation_plural.label_seq_id_4'
+    _pdbx_item_external_ref.parent_name '_atom_site.label_seq_id'
+    _pdbx_item_external_ref.dictionary    mmcif_pdbx.dic
+    _pdbx_item_external_ref.version       5
+#
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/most_violated_dihedralangle_restraints/most_violated_dihedralangle_restraint/@seq_4'
     _pdbx_item_aliases.schema     wwpdb_validation_v5.01.xsd
     _pdbx_item_aliases.version    v5.01
 save_
@@ -70986,9 +71273,14 @@ save__pdbx_nmr_dihedral_angle_violation.auth_asym_id
     _pdbx_item_external_ref.dictionary    mmcif_pdbx.dic
     _pdbx_item_external_ref.version       5
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/violated_dihedralangle_restraints/violated_dihedralangle_restraint/@chain_1'
-    _pdbx_item_aliases.schema     wwpdb_validation_v5.01.xsd
-    _pdbx_item_aliases.version    v5.01
+    loop_
+    _pdbx_item_aliases.xpath
+    _pdbx_item_aliases.schema
+    _pdbx_item_aliases.version
+    '/wwPDB-validation-information/dihedralangle_restraints_analysis/violated_dihedralangle_restraints/violated_dihedralangle_restraint/@chain_1'   wwpdb_validation_v5.01.xsd   v5.01
+    '/wwPDB-validation-information/dihedralangle_restraints_analysis/violated_dihedralangle_restraints/violated_dihedralangle_restraint/@chain_2'   wwpdb_validation_v5.01.xsd   v5.01
+    '/wwPDB-validation-information/dihedralangle_restraints_analysis/violated_dihedralangle_restraints/violated_dihedralangle_restraint/@chain_3'   wwpdb_validation_v5.01.xsd   v5.01
+    '/wwPDB-validation-information/dihedralangle_restraints_analysis/violated_dihedralangle_restraints/violated_dihedralangle_restraint/@chain_4'   wwpdb_validation_v5.01.xsd   v5.01
 save_
 
 save__pdbx_nmr_dihedral_angle_violation.auth_atom_id_1
@@ -71030,7 +71322,7 @@ save__pdbx_nmr_dihedral_angle_violation.auth_comp_id_1
     _pdbx_item_external_ref.dictionary    mmcif_pdbx.dic
     _pdbx_item_external_ref.version       5
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/violated_dihedralangle_restraints/violated_dihedralangle_restraint/@res_name_1'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/violated_dihedralangle_restraints/violated_dihedralangle_restraint/@resname_1'
     _pdbx_item_aliases.schema     wwpdb_validation_v5.01.xsd
     _pdbx_item_aliases.version    v5.01
 save_
@@ -71251,6 +71543,118 @@ save__pdbx_nmr_dihedral_angle_violation.auth_seq_id_4
     _pdbx_item_external_ref.version       5
 #
     _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/violated_dihedralangle_restraints/violated_dihedralangle_restraint/@resnum_4'
+    _pdbx_item_aliases.schema     wwpdb_validation_v5.01.xsd
+    _pdbx_item_aliases.version    v5.01
+save_
+
+save__pdbx_nmr_dihedral_angle_violation.label_asym_id
+    _item_description.description
+;              This data item is a pointer to _atom_site.label_asym_id in the
+               ATOM_SITE category.
+;
+    _item.name                  '_pdbx_nmr_dihedral_angle_violation.label_asym_id'
+    _item.category_id             pdbx_nmr_dihedral_angle_violation
+    _item.mandatory_code          yes
+    _item_type.code               code
+    _pdbx_item_external_ref.child_name  '_pdbx_nmr_dihedral_angle_violation.label_asym_id'
+    _pdbx_item_external_ref.parent_name '_atom_site.label_asym_id'
+    _pdbx_item_external_ref.dictionary    mmcif_pdbx.dic
+    _pdbx_item_external_ref.version       5
+#
+    loop_
+    _pdbx_item_aliases.xpath
+    _pdbx_item_aliases.schema
+    _pdbx_item_aliases.version
+    '/wwPDB-validation-information/dihedralangle_restraints_analysis/violated_dihedralangle_restraints/violated_dihedralangle_restraint/@said_1'   wwpdb_validation_v5.01.xsd   v5.01
+    '/wwPDB-validation-information/dihedralangle_restraints_analysis/violated_dihedralangle_restraints/violated_dihedralangle_restraint/@said_2'   wwpdb_validation_v5.01.xsd   v5.01
+    '/wwPDB-validation-information/dihedralangle_restraints_analysis/violated_dihedralangle_restraints/violated_dihedralangle_restraint/@said_3'   wwpdb_validation_v5.01.xsd   v5.01
+    '/wwPDB-validation-information/dihedralangle_restraints_analysis/violated_dihedralangle_restraints/violated_dihedralangle_restraint/@said_4'   wwpdb_validation_v5.01.xsd   v5.01
+save_
+
+save__pdbx_nmr_dihedral_angle_violation.label_seq_id_1
+    _item_description.description
+;              Part of the identifier of the first of the four atom sites
+               that define a dihedral angle restraint.
+
+               This data item is a pointer to _atom_site.label_seq_id in the
+               ATOM_SITE category.
+;
+    _item.name                  '_pdbx_nmr_dihedral_angle_violation.label_seq_id_1'
+    _item.category_id             pdbx_nmr_dihedral_angle_violation
+    _item.mandatory_code          yes
+    _item_type.code               code
+    _pdbx_item_external_ref.child_name  '_pdbx_nmr_dihedral_angle_violation.label_seq_id_1'
+    _pdbx_item_external_ref.parent_name '_atom_site.label_seq_id'
+    _pdbx_item_external_ref.dictionary    mmcif_pdbx.dic
+    _pdbx_item_external_ref.version       5
+#
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/violated_dihedralangle_restraints/violated_dihedralangle_restraint/@seq_1'
+    _pdbx_item_aliases.schema     wwpdb_validation_v5.01.xsd
+    _pdbx_item_aliases.version    v5.01
+save_
+
+save__pdbx_nmr_dihedral_angle_violation.label_seq_id_2
+    _item_description.description
+;              Part of the identifier of the second of the four atom sites
+               that define a dihedral angle restraint.
+
+               This data item is a pointer to _atom_site.label_seq_id in the
+               ATOM_SITE category.
+;
+    _item.name                  '_pdbx_nmr_dihedral_angle_violation.label_seq_id_2'
+    _item.category_id             pdbx_nmr_dihedral_angle_violation
+    _item.mandatory_code          yes
+    _item_type.code               code
+    _pdbx_item_external_ref.child_name  '_pdbx_nmr_dihedral_angle_violation.label_seq_id_2'
+    _pdbx_item_external_ref.parent_name '_atom_site.label_seq_id'
+    _pdbx_item_external_ref.dictionary    mmcif_pdbx.dic
+    _pdbx_item_external_ref.version       5
+#
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/violated_dihedralangle_restraints/violated_dihedralangle_restraint/@seq_2'
+    _pdbx_item_aliases.schema     wwpdb_validation_v5.01.xsd
+    _pdbx_item_aliases.version    v5.01
+save_
+
+save__pdbx_nmr_dihedral_angle_violation.label_seq_id_3
+    _item_description.description
+;              Part of the identifier of the third of the four atom sites
+               that define a dihedral angle restraint.
+
+               This data item is a pointer to _atom_site.label_seq_id in the
+               ATOM_SITE category.
+;
+    _item.name                  '_pdbx_nmr_dihedral_angle_violation.label_seq_id_3'
+    _item.category_id             pdbx_nmr_dihedral_angle_violation
+    _item.mandatory_code          yes
+    _item_type.code               code
+    _pdbx_item_external_ref.child_name  '_pdbx_nmr_dihedral_angle_violation.label_seq_id_3'
+    _pdbx_item_external_ref.parent_name '_atom_site.label_seq_id'
+    _pdbx_item_external_ref.dictionary    mmcif_pdbx.dic
+    _pdbx_item_external_ref.version       5
+#
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/violated_dihedralangle_restraints/violated_dihedralangle_restraint/@seq_3'
+    _pdbx_item_aliases.schema     wwpdb_validation_v5.01.xsd
+    _pdbx_item_aliases.version    v5.01
+save_
+
+save__pdbx_nmr_dihedral_angle_violation.label_seq_id_4
+    _item_description.description
+;              Part of the identifier of the fourth of the four atom sites
+               that define a dihedral angle restraint.
+
+               This data item is a pointer to _atom_site.label_seq_id in the
+               ATOM_SITE category.
+;
+    _item.name                  '_pdbx_nmr_dihedral_angle_violation.label_seq_id_4'
+    _item.category_id             pdbx_nmr_dihedral_angle_violation
+    _item.mandatory_code          yes
+    _item_type.code               code
+    _pdbx_item_external_ref.child_name  '_pdbx_nmr_dihedral_angle_violation.label_seq_id_4'
+    _pdbx_item_external_ref.parent_name '_atom_site.label_seq_id'
+    _pdbx_item_external_ref.dictionary    mmcif_pdbx.dic
+    _pdbx_item_external_ref.version       5
+#
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/violated_dihedralangle_restraints/violated_dihedralangle_restraint/@seq_4'
     _pdbx_item_aliases.schema     wwpdb_validation_v5.01.xsd
     _pdbx_item_aliases.version    v5.01
 save_
@@ -71707,10 +72111,8 @@ pdbx_em_validate_map_model_overall  1   pdbx_em_validate_map_model_overall:entry
 
 pdbx_nmr_restraint_summary          1   pdbx_nmr_restraint_summary:entry:1                                        . .
 pdbx_nmr_restraint_violation        1   pdbx_nmr_restraint_violation:pdbx_nmr_restraint_list:1                    . .
-pdbx_nmr_distance_violation_summary 1   pdbx_nmr_distance_violation_summary:pdbx_nmr_restraint_list:1             . .
 pdbx_nmr_distance_violation_plural  1   pdbx_nmr_distance_violation_plural:pdbx_nmr_restraint_list:1              . .
 pdbx_nmr_distance_violation         1   pdbx_nmr_distance_violation:pdbx_nmr_restraint_list:1                     . .
-pdbx_nmr_dihedral_angle_violation_summary   1   pdbx_nmr_dihedral_angle_violation_summary:pdbx_nmr_restraint_list:1   . .
 pdbx_nmr_dihedral_angle_violation_plural   1   pdbx_nmr_dihedral_angle_violation_plural:pdbx_nmr_restraint_list:1   . .
 pdbx_nmr_dihedral_angle_violation   1   pdbx_nmr_dihedral_angle_violation:pdbx_nmr_restraint_list:1               . .
 
@@ -72031,10 +72433,8 @@ pdbx_em_validate_map_model_overall  1   '_pdbx_em_validate_map_model_overall.ent
 
 pdbx_nmr_restraint_summary          1   '_pdbx_nmr_restraint_summary.entry_id'                 '_entry.id'                                        entry
 pdbx_nmr_restraint_violation        1   '_pdbx_nmr_restraint_violation.type'                   '_pdbx_nmr_restraint_list.type'                    pdbx_nmr_restraint_list
-pdbx_nmr_distance_violation_summary 1   '_pdbx_nmr_distance_violation_summary.type'            '_pdbx_nmr_restraint_list.type'                    pdbx_nmr_restraint_list
 pdbx_nmr_distance_violation_plural  1   '_pdbx_nmr_distance_violation_plural.list_id'          '_pdbx_nmr_restraint_list.id'                      pdbx_nmr_restraint_list
 pdbx_nmr_distance_violation         1   '_pdbx_nmr_distance_violation.list_id'                 '_pdbx_nmr_restraint_list.id'                      pdbx_nmr_restraint_list
-pdbx_nmr_dihedral_angle_violation_summary   1   '_pdbx_nmr_dihedral_angle_violation_summary.type'   '_pdbx_nmr_restraint_list.type'               pdbx_nmr_restraint_list
 pdbx_nmr_dihedral_angle_violation_plural   1   '_pdbx_nmr_dihedral_angle_violation_plural.list_id'   '_pdbx_nmr_restraint_list.id'                pdbx_nmr_restraint_list
 pdbx_nmr_dihedral_angle_violation   1   '_pdbx_nmr_dihedral_angle_violation.list_id'           '_pdbx_nmr_restraint_list.id'                      pdbx_nmr_restraint_list
 

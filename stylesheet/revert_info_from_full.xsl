@@ -88,6 +88,16 @@
         <xsl:call-template name="EM_validation"/>
       </xsl:if>
 
+      <xsl:if test="$nmr=true() and PDBxv:pdbx_nmr_restraint_listCategory/PDBxv:pdbx_nmr_restraint_list">
+        <xsl:call-template name="NMR_restraints_analysis"/>
+        <xsl:if test="PDBxv:pdbx_nmr_restraint_listCategory/PDBxv:pdbx_nmr_restraint_list[@type='distance']">
+          <xsl:call-template name="distance_restraints_analysis"/>
+        </xsl:if>
+        <xsl:if test="PDBxv:pdbx_nmr_restraint_listCategory/PDBxv:pdbx_nmr_restraint_list[@type='dihedral_angle']">
+          <xsl:call-template name="dihedralangle_restraints_analysis"/>
+        </xsl:if>
+      </xsl:if>
+
       <programs>
         <xsl:apply-templates select="PDBxv:pdbx_validation_softwareCategory/*"/>
       </programs>
@@ -212,6 +222,15 @@
         <xsl:attribute name="chemical_shift_completeness"><xsl:value-of select="format-number(number(PDBxv:number_assigned_chem_shifts_well_formed) div number(PDBxv:number_target_shifts_well_formed) * 100,'0.00')"/></xsl:attribute>
         <xsl:attribute name="chemical_shift_completeness_full_length"><xsl:value-of select="format-number(number(PDBxv:number_assigned_chem_shifts) div number(PDBxv:number_target_shifts) * 100,'0.00')"/></xsl:attribute>
       </xsl:for-each>
+
+      <xsl:choose>
+        <xsl:when test="PDBxv:pdbx_nmr_restraint_listCategory/PDBxv:pdbx_nmr_restraint_list">
+          <xsl:attribute name="cs_only">no</xsl:attribute>
+        </xsl:when>
+        <xsl:otherwise>
+          <xsl:attribute name="cs_only">yes</xsl:attribute>
+        </xsl:otherwise>
+      </xsl:choose>
 
     </xsl:if>
 
@@ -1930,7 +1949,6 @@ Unmatched type exist in _pdbx_percentile_entity_view.type, <xsl:value-of select=
 
   <xsl:template name="EM_validation">
     <xsl:for-each select="PDBxv:pdbx_em_validate_map_model_overallCategory/PDBxv:pdbx_em_validate_map_model_overall[PDBxv:recommended_contour_level!='']">
-
       <EM_validation>
 
         <RecommendedContourLevel>
@@ -2179,6 +2197,676 @@ Criteria for FSC offset curve, <xsl:value-of select="PDBxv:title"/>, is not list
 
       </EM_validation>
     </xsl:for-each>
+  </xsl:template>
+
+  <!-- NMR restraint validation: NMR_restraints_analysis -->
+
+  <xsl:template name="NMR_restraints_analysis">
+    <NMR_restraints_analysis>
+
+      <conformationally_restricting_restraints>
+        <xsl:for-each select="PDBxv:pdbx_nmr_restraint_summaryCategory/PDBxv:pdbx_nmr_restraint_summary">
+          <xsl:if test="PDBxv:distance_restraints_total">
+            <restraint_summary description="Total distance restraints" value="{PDBxv:distance_restraints_total}"/>
+          </xsl:if>
+          <xsl:if test="PDBxv:intraresidue_total_count">
+            <restraint_summary description="Intra-residue (|i-j|=0)" value="{PDBxv:intraresidue_total_count}"/>
+          </xsl:if>
+          <xsl:if test="PDBxv:sequential_total_count">
+            <restraint_summary description="Sequential (|i-j|=1)" value="{PDBxv:sequential_total_count}"/>
+          </xsl:if>
+          <xsl:if test="PDBxv:medium_range_total_count">
+            <restraint_summary description="Medium range (|i-j|&gt;1 and |i-j|&lt;5)" value="{PDBxv:medium_range_total_count}"/>
+          </xsl:if>
+          <xsl:if test="PDBxv:long_range_total_count">
+            <restraint_summary description="Long range (|i-j|&gt;=5)" value="{PDBxv:long_range_total_count}"/>
+          </xsl:if>
+          <xsl:if test="PDBxv:interchain_total_count">
+            <restraint_summary description="Inter-chain" value="{PDBxv:interchain_total_count}"/>
+          </xsl:if>
+          <xsl:if test="PDBxv:dihedral_angle_restraints_total">
+            <restraint_summary description="Total dihedral-angle restraints" value="{PDBxv:dihedral_angle_restraints_total}"/>
+          </xsl:if>
+          <xsl:if test="PDBxv:hydrogen_bond_restraints_total">
+            <restraint_summary description="Total hydrogen bond restraints" value="{PDBxv:hydrogen_bond_restraints_total}"/>
+          </xsl:if>
+          <xsl:if test="PDBxv:disulfide_bond_restraints_total">
+            <restraint_summary description="Total disulfide bond restraints" value="{PDBxv:disulfide_bond_restraints_total}"/>
+          </xsl:if>
+          <xsl:if test="PDBxv:unmapped_restraints_total">
+            <restraint_summary description="Number of unmapped restraints" value="{PDBxv:unmapped_restraints_total}"/>
+          </xsl:if>
+          <xsl:if test="PDBxv:restraints_per_residue">
+            <restraint_summary description="Number of restraints per residue" value="{PDBxv:restraints_per_residue}"/>
+          </xsl:if>
+          <xsl:if test="PDBxv:long_range_restraints_per_residue">
+            <restraint_summary description="Number of long range restraints per residue" value="{PDBxv:long_range_restraints_per_residue}"/>
+          </xsl:if>
+        </xsl:for-each>
+      </conformationally_restricting_restraints>
+
+      <xsl:if test="PDBxv:pdbx_nmr_restraint_listCategory/PDBxv:pdbx_nmr_restraint_list[@type='distance']">
+        <residual_distance_violations>
+          <xsl:for-each select="PDBxv:pdbx_nmr_restraint_violationCategory/PDBxv:pdbx_nmr_restraint_violation[@type='distance']">
+            <xsl:sort select="@ordinal"/>
+            <residual_distance_violation>
+              <xsl:choose>
+                <xsl:when test="PDBxv:limit_bin_max!='?'">
+                  <xsl:attribute name="bins"><xsl:value-of select="concat(PDBxv:limit_bin_min,'-',PDBxv:limit_bin_max)"/></xsl:attribute>
+                </xsl:when>
+                <xsl:otherwise>
+                  <xsl:attribute name="bins"><xsl:value-of select="concat('&gt;',PDBxv:limit_bin_min)"/></xsl:attribute>
+                </xsl:otherwise>
+              </xsl:choose>
+              <xsl:attribute name="max_violation"><xsl:value-of select="PDBxv:maximum_violation_in_bin"/></xsl:attribute>
+              <xsl:attribute name="violations_per_model"><xsl:value-of select="PDBxv:violations_per_model"/></xsl:attribute>
+            </residual_distance_violation>
+          </xsl:for-each>
+        </residual_distance_violations>
+      </xsl:if>
+
+      <xsl:if test="PDBxv:pdbx_nmr_restraint_listCategory/PDBxv:pdbx_nmr_restraint_list[@type='dihedral_angle']">
+        <residual_angle_violations>
+          <xsl:for-each select="PDBxv:pdbx_nmr_restraint_violationCategory/PDBxv:pdbx_nmr_restraint_violation[@type='dihedral_angle']">
+            <xsl:sort select="@ordinal"/>
+            <residual_angle_violation>
+              <xsl:choose>
+                <xsl:when test="PDBxv:limit_bin_max!='?'">
+                  <xsl:attribute name="bins"><xsl:value-of select="concat(PDBxv:limit_bin_min,'-',PDBxv:limit_bin_max)"/></xsl:attribute>
+                </xsl:when>
+                <xsl:otherwise>
+                  <xsl:attribute name="bins"><xsl:value-of select="concat('&gt;',PDBxv:limit_bin_min)"/></xsl:attribute>
+                </xsl:otherwise>
+              </xsl:choose>
+              <xsl:attribute name="max_violation"><xsl:value-of select="PDBxv:maximum_violation_in_bin"/></xsl:attribute>
+              <xsl:attribute name="violations_per_model"><xsl:value-of select="PDBxv:violations_per_model"/></xsl:attribute>
+            </residual_angle_violation>
+          </xsl:for-each>
+        </residual_angle_violations>
+      </xsl:if>
+
+    </NMR_restraints_analysis>
+  </xsl:template>
+
+  <!-- NMR restraint validation: distance_restraints_analysis -->
+
+  <xsl:template name="distance_restraints_analysis">
+    <distance_restraints_analysis>
+
+      <xsl:if test="PDBxv:pdbx_nmr_distance_violation_summaryCategory/PDBxv:pdbx_nmr_distance_violation_summary">
+        <distance_violations_summary>
+          <xsl:for-each select="PDBxv:pdbx_nmr_distance_violation_summaryCategory/PDBxv:pdbx_nmr_distance_violation_summary">
+            <distance_violation_summary>
+              <xsl:choose>
+                <xsl:when test="@type='intraresidue'">
+                  <xsl:attribute name="restraint_type">Intra-residue</xsl:attribute>
+                </xsl:when>
+                <xsl:when test="@type='sequential'">
+                  <xsl:attribute name="restraint_type">Sequential</xsl:attribute>
+                </xsl:when>
+                <xsl:when test="@type='medium_range'">
+                  <xsl:attribute name="restraint_type">MediumRange</xsl:attribute>
+                </xsl:when>
+                <xsl:when test="@type='long_range'">
+                  <xsl:attribute name="restraint_type">LongRange</xsl:attribute>
+                </xsl:when>
+                <xsl:when test="@type='interchain'">
+                  <xsl:attribute name="restraint_type">InterChain</xsl:attribute>
+                </xsl:when>
+                <xsl:when test="@type='all'">
+                  <xsl:attribute name="restraint_type">Total</xsl:attribute>
+                </xsl:when>
+                <xsl:otherwise>
+                  <xsl:call-template name="error_handler">
+                    <xsl:with-param name="terminate">yes</xsl:with-param>
+                    <xsl:with-param name="error_message">
+Distance restraint type , <xsl:value-of select="@type"/>, is not listed in XSLT code.
+                    </xsl:with-param>
+                  </xsl:call-template>
+                </xsl:otherwise>
+              </xsl:choose>
+              <xsl:choose>
+                <xsl:when test="@subtype='backbone_backbone'">
+                  <xsl:attribute name="restraint_sub_type">BackboneBackbone</xsl:attribute>
+                </xsl:when>
+                <xsl:when test="@subtype='backbone_sidechain'">
+                  <xsl:attribute name="restraint_sub_type">BackboneSidechain</xsl:attribute>
+                </xsl:when>
+                <xsl:when test="@subtype='sidechain_sidechain'">
+                  <xsl:attribute name="restraint_sub_type">SidechainSidechain</xsl:attribute>
+                </xsl:when>
+                <xsl:when test="@subtype='all'">
+                  <xsl:attribute name="restraint_sub_type">all</xsl:attribute>
+                </xsl:when>
+                <xsl:otherwise>
+                  <xsl:call-template name="error_handler">
+                    <xsl:with-param name="terminate">yes</xsl:with-param>
+                    <xsl:with-param name="error_message">
+Distance restraint subtype , <xsl:value-of select="@subtype"/>, is not listed in XSLT code.
+                    </xsl:with-param>
+                  </xsl:call-template>
+                </xsl:otherwise>
+              </xsl:choose>
+              <xsl:attribute name="restraints_count"><xsl:value-of select="PDBxv:restraints_count"/></xsl:attribute>
+              <xsl:attribute name="percent_total"><xsl:value-of select="PDBxv:restraints_percent"/></xsl:attribute>
+              <xsl:attribute name="violated_count"><xsl:value-of select="PDBxv:violations_count"/></xsl:attribute>
+              <xsl:attribute name="violated_percent_total"><xsl:value-of select="PDBxv:violations_percent"/></xsl:attribute>
+              <xsl:attribute name="violated_percent_type"><xsl:value-of select="PDBxv:violations_percent_type"/></xsl:attribute>
+              <xsl:attribute name="consistently_violated_count"><xsl:value-of select="PDBxv:consistent_violations_count"/></xsl:attribute>
+              <xsl:attribute name="consistently_violated_percent_total"><xsl:value-of select="PDBxv:consistent_violations_percent"/></xsl:attribute>
+              <xsl:attribute name="consistently_violated_percent_type"><xsl:value-of select="PDBxv:consistent_violations_percent_type"/></xsl:attribute>
+            </distance_violation_summary>
+          </xsl:for-each>
+        </distance_violations_summary>
+      </xsl:if>
+
+      <xsl:if test="PDBxv:pdbx_nmr_distance_violation_modelCategory/PDBxv:pdbx_nmr_distance_violation_model">
+        <distance_violations_in_models>
+          <xsl:for-each select="PDBxv:pdbx_nmr_distance_violation_modelCategory/PDBxv:pdbx_nmr_distance_violation_model">
+            <distance_violations_in_model model="{@PDB_model_num}">
+              <xsl:attribute name="max_violation"><xsl:value-of select="PDBxv:maximum_violation"/></xsl:attribute>
+              <xsl:attribute name="mean_violation"><xsl:value-of select="PDBxv:average_violation"/></xsl:attribute>
+              <xsl:attribute name="standard_deviation"><xsl:value-of select="PDBxv:standard_deviation"/></xsl:attribute>
+              <xsl:if test="PDBxv:violations_count">
+                <dist_rest_types dist_rest_type="Total" violations_count="{PDBxv:violations_count}"/>
+              </xsl:if>
+              <xsl:if test="PDBxv:intraresidue_violations_count">
+                <dist_rest_types dist_rest_type="Intra-residue" violations_count="{PDBxv:intraresidue_violations_count}"/>
+              </xsl:if>
+              <xsl:if test="PDBxv:sequential_violations_count">
+                <dist_rest_types dist_rest_type="Sequential" violations_count="{PDBxv:sequential_violations_count}"/>
+              </xsl:if>
+              <xsl:if test="PDBxv:medium_range_violations_count">
+                <dist_rest_types dist_rest_type="MediumRange" violations_count="{PDBxv:medium_range_violations_count}"/>
+              </xsl:if>
+              <xsl:if test="PDBxv:long_range_violations_count">
+                <dist_rest_types dist_rest_type="LongRange" violations_count="{PDBxv:long_range_violations_count}"/>
+              </xsl:if>
+              <xsl:if test="PDBxv:interchain_violations_count">
+                <dist_rest_types dist_rest_type="InterChain" violations_count="{PDBxv:interchain_violations_count}"/>
+              </xsl:if>
+            </distance_violations_in_model>
+          </xsl:for-each>
+        </distance_violations_in_models>
+      </xsl:if>
+
+      <xsl:if test="PDBxv:pdbx_nmr_distance_violation_ensembleCategory/PDBxv:pdbx_nmr_distance_violation_ensemble">
+        <distance_violations_in_ensemble>
+          <xsl:for-each select="PDBxv:pdbx_nmr_distance_violation_ensembleCategory/PDBxv:pdbx_nmr_distance_violation_ensemble">
+            <distance_violation_in_ensemble fraction_of_ensemble_count="{@fraction_ensemble_size}" fraction_of_ensemble_percent="{PDBxv:fraction_ensemble_percent}">
+              <xsl:if test="PDBxv:violations_count">
+                <dist_rest_types dist_rest_type="Total" violations_count="{PDBxv:violations_count}"/>
+              </xsl:if>
+              <xsl:if test="PDBxv:intraresidue_violations_count">
+                <dist_rest_types dist_rest_type="Intra-residue" violations_count="{PDBxv:intraresidue_violations_count}"/>
+              </xsl:if>
+              <xsl:if test="PDBxv:sequential_violations_count">
+                <dist_rest_types dist_rest_type="Sequential" violations_count="{PDBxv:sequential_violations_count}"/>
+              </xsl:if>
+              <xsl:if test="PDBxv:medium_range_violations_count">
+                <dist_rest_types dist_rest_type="MediumRange" violations_count="{PDBxv:medium_range_violations_count}"/>
+              </xsl:if>
+              <xsl:if test="PDBxv:long_range_violations_count">
+                <dist_rest_types dist_rest_type="LongRange" violations_count="{PDBxv:long_range_violations_count}"/>
+              </xsl:if>
+              <xsl:if test="PDBxv:interchain_violations_count">
+                <dist_rest_types dist_rest_type="InterChain" violations_count="{PDBxv:interchain_violations_count}"/>
+              </xsl:if>
+            </distance_violation_in_ensemble>
+          </xsl:for-each>
+        </distance_violations_in_ensemble>
+      </xsl:if>
+
+      <xsl:if test="PDBxv:pdbx_nmr_distance_violation_pluralCategory/PDBxv:pdbx_nmr_distance_violation_plural">
+        <most_violated_distance_restraints>
+          <xsl:for-each select="PDBxv:pdbx_nmr_distance_violation_pluralCategory/PDBxv:pdbx_nmr_distance_violation_plural">
+            <xsl:sort select="@ordinal"/>
+            <most_violated_distance_restraint>
+              <xsl:attribute name="rlist_id"><xsl:value-of select="PDBxv:list_id"/></xsl:attribute>
+              <xsl:attribute name="rest_id"><xsl:value-of select="PDBxv:restraint_id"/></xsl:attribute>
+              <xsl:attribute name="violated_models"><xsl:value-of select="PDBxv:violation_models_count"/></xsl:attribute>
+              <xsl:attribute name="mean_distance_violation"><xsl:value-of select="PDBxv:average_violation"/></xsl:attribute>
+              <xsl:attribute name="median_violation"><xsl:value-of select="PDBxv:median_violation"/></xsl:attribute>
+              <xsl:attribute name="standard_deviation"><xsl:value-of select="PDBxv:standard_deviation"/></xsl:attribute>
+              <xsl:attribute name="ent_1"><xsl:value-of select="PDBxv:entity_id_1"/></xsl:attribute>
+              <xsl:attribute name="ent_2"><xsl:value-of select="PDBxv:entity_id_2"/></xsl:attribute>
+              <xsl:attribute name="chain_1"><xsl:value-of select="PDBxv:auth_asym_id_1"/></xsl:attribute>
+              <xsl:attribute name="chain_2"><xsl:value-of select="PDBxv:auth_asym_id_2"/></xsl:attribute>
+              <xsl:attribute name="resnum_1"><xsl:value-of select="PDBxv:auth_seq_id_1"/></xsl:attribute>
+              <xsl:attribute name="resnum_2"><xsl:value-of select="PDBxv:auth_seq_id_2"/></xsl:attribute>
+              <xsl:attribute name="resname_1"><xsl:value-of select="PDBxv:auth_comp_id_1"/></xsl:attribute>
+              <xsl:attribute name="resname_2"><xsl:value-of select="PDBxv:auth_comp_id_2"/></xsl:attribute>
+              <xsl:attribute name="atom_1"><xsl:value-of select="PDBxv:auth_atom_id_1"/></xsl:attribute>
+              <xsl:attribute name="atom_2"><xsl:value-of select="PDBxv:auth_atom_id_2"/></xsl:attribute>
+              <xsl:attribute name="said_1"><xsl:value-of select="PDBxv:label_asym_id_1"/></xsl:attribute>
+              <xsl:attribute name="said_2"><xsl:value-of select="PDBxv:label_asym_id_2"/></xsl:attribute>
+              <xsl:attribute name="seq_1"><xsl:value-of select="PDBxv:label_seq_id_1"/></xsl:attribute>
+              <xsl:attribute name="seq_2"><xsl:value-of select="PDBxv:label_seq_id_2"/></xsl:attribute>
+              <xsl:attribute name="icode_1"><xsl:value-of select="PDBxv:PDB_ins_code_1"/></xsl:attribute>
+              <xsl:attribute name="icode_2"><xsl:value-of select="PDBxv:PDB_ins_code_2"/></xsl:attribute>
+              <xsl:attribute name="altcode_1"><xsl:value-of select="PDBxv:label_alt_id_1"/></xsl:attribute>
+              <xsl:attribute name="altcode_2"><xsl:value-of select="PDBxv:label_alt_id_2"/></xsl:attribute>
+            </most_violated_distance_restraint>
+          </xsl:for-each>
+        </most_violated_distance_restraints>
+      </xsl:if>
+
+      <xsl:if test="PDBxv:pdbx_nmr_distance_violationCategory/PDBxv:pdbx_nmr_distance_violation">
+        <violated_distance_restraints>
+          <xsl:for-each select="PDBxv:pdbx_nmr_distance_violationCategory/PDBxv:pdbx_nmr_distance_violation">
+            <xsl:sort select="@ordinal"/>
+            <violated_distance_restraint>
+              <xsl:attribute name="rlist_id"><xsl:value-of select="PDBxv:list_id"/></xsl:attribute>
+              <xsl:attribute name="rest_id"><xsl:value-of select="PDBxv:restraint_id"/></xsl:attribute>
+              <xsl:attribute name="model"><xsl:value-of select="PDBxv:PDB_model_num"/></xsl:attribute>
+              <xsl:attribute name="violation"><xsl:value-of select="PDBxv:violation"/></xsl:attribute>
+              <xsl:attribute name="ent_1"><xsl:value-of select="PDBxv:entity_id_1"/></xsl:attribute>
+              <xsl:attribute name="ent_2"><xsl:value-of select="PDBxv:entity_id_2"/></xsl:attribute>
+              <xsl:attribute name="chain_1"><xsl:value-of select="PDBxv:auth_asym_id_1"/></xsl:attribute>
+              <xsl:attribute name="chain_2"><xsl:value-of select="PDBxv:auth_asym_id_2"/></xsl:attribute>
+              <xsl:attribute name="resnum_1"><xsl:value-of select="PDBxv:auth_seq_id_1"/></xsl:attribute>
+              <xsl:attribute name="resnum_2"><xsl:value-of select="PDBxv:auth_seq_id_2"/></xsl:attribute>
+              <xsl:attribute name="resname_1"><xsl:value-of select="PDBxv:auth_comp_id_1"/></xsl:attribute>
+              <xsl:attribute name="resname_2"><xsl:value-of select="PDBxv:auth_comp_id_2"/></xsl:attribute>
+              <xsl:attribute name="atom_1"><xsl:value-of select="PDBxv:auth_atom_id_1"/></xsl:attribute>
+              <xsl:attribute name="atom_2"><xsl:value-of select="PDBxv:auth_atom_id_2"/></xsl:attribute>
+              <xsl:attribute name="said_1"><xsl:value-of select="PDBxv:label_asym_id_1"/></xsl:attribute>
+              <xsl:attribute name="said_2"><xsl:value-of select="PDBxv:label_asym_id_2"/></xsl:attribute>
+              <xsl:attribute name="seq_1"><xsl:value-of select="PDBxv:label_seq_id_1"/></xsl:attribute>
+              <xsl:attribute name="seq_2"><xsl:value-of select="PDBxv:label_seq_id_2"/></xsl:attribute>
+              <xsl:attribute name="icode_1"><xsl:value-of select="PDBxv:PDB_ins_code_1"/></xsl:attribute>
+              <xsl:attribute name="icode_2"><xsl:value-of select="PDBxv:PDB_ins_code_2"/></xsl:attribute>
+              <xsl:attribute name="altcode_1"><xsl:value-of select="PDBxv:label_alt_id_1"/></xsl:attribute>
+              <xsl:attribute name="altcode_2"><xsl:value-of select="PDBxv:label_alt_id_2"/></xsl:attribute>
+            </violated_distance_restraint>
+          </xsl:for-each>
+        </violated_distance_restraints>
+      </xsl:if>
+
+    </distance_restraints_analysis>
+  </xsl:template>
+
+  <!-- NMR restraint validation: dihedralangle_restraints_analysis -->
+
+  <xsl:template name="dihedralangle_restraints_analysis">
+    <dihedralangle_restraints_analysis>
+
+      <xsl:if test="PDBxv:pdbx_nmr_dihedral_angle_violation_summaryCategory/PDBxv:pdbx_nmr_dihedral_angle_violation_summary">
+        <dihedralangle_violations_summary>
+          <xsl:for-each select="PDBxv:pdbx_nmr_dihedral_angle_violation_summaryCategory/PDBxv:pdbx_nmr_dihedral_angle_violation_summary">
+            <dihedralangle_violation_summary>
+              <xsl:choose>
+                <xsl:when test="@type='phi'">
+                  <xsl:attribute name="restraint_type">PHI</xsl:attribute>
+                </xsl:when>
+                <xsl:when test="@type='psi'">
+                  <xsl:attribute name="restraint_type">PSI</xsl:attribute>
+                </xsl:when>
+                <xsl:when test="@type='omega'">
+                  <xsl:attribute name="restraint_type">OMEGA</xsl:attribute>
+                </xsl:when>
+                <xsl:when test="@type='chi1'">
+                  <xsl:attribute name="restraint_type">CHI1</xsl:attribute>
+                </xsl:when>
+                <xsl:when test="@type='chi2'">
+                  <xsl:attribute name="restraint_type">CHI2</xsl:attribute>
+                </xsl:when>
+                <xsl:when test="@type='chi3'">
+                  <xsl:attribute name="restraint_type">CHI3</xsl:attribute>
+                </xsl:when>
+                <xsl:when test="@type='chi4'">
+                  <xsl:attribute name="restraint_type">CHI4</xsl:attribute>
+                </xsl:when>
+                <xsl:when test="@type='chi5'">
+                  <xsl:attribute name="restraint_type">CHI5</xsl:attribute>
+                </xsl:when>
+                <xsl:when test="@type='alpha'">
+                  <xsl:attribute name="restraint_type">ALPHA</xsl:attribute>
+                </xsl:when>
+                <xsl:when test="@type='beta'">
+                  <xsl:attribute name="restraint_type">BETA</xsl:attribute>
+                </xsl:when>
+                <xsl:when test="@type='gamma'">
+                  <xsl:attribute name="restraint_type">GAMMA</xsl:attribute>
+                </xsl:when>
+                <xsl:when test="@type='delta'">
+                  <xsl:attribute name="restraint_type">DELTA</xsl:attribute>
+                </xsl:when>
+                <xsl:when test="@type='epsilon'">
+                  <xsl:attribute name="restraint_type">EPSILON</xsl:attribute>
+                </xsl:when>
+                <xsl:when test="@type='zeta'">
+                  <xsl:attribute name="restraint_type">ZETA</xsl:attribute>
+                </xsl:when>
+                <xsl:when test="@type='nu0'">
+                  <xsl:attribute name="restraint_type">NU0</xsl:attribute>
+                </xsl:when>
+                <xsl:when test="@type='nu1'">
+                  <xsl:attribute name="restraint_type">NU1</xsl:attribute>
+                </xsl:when>
+                <xsl:when test="@type='nu2'">
+                  <xsl:attribute name="restraint_type">NU2</xsl:attribute>
+                </xsl:when>
+                <xsl:when test="@type='nu3'">
+                  <xsl:attribute name="restraint_type">NU3</xsl:attribute>
+                </xsl:when>
+                <xsl:when test="@type='nu4'">
+                  <xsl:attribute name="restraint_type">NU4</xsl:attribute>
+                </xsl:when>
+                <xsl:when test="@type='chi21'">
+                  <xsl:attribute name="restraint_type">CHI21</xsl:attribute>
+                </xsl:when>
+                <xsl:when test="@type='chi22'">
+                  <xsl:attribute name="restraint_type">CHI22</xsl:attribute>
+                </xsl:when>
+                <xsl:when test="@type='chi31'">
+                  <xsl:attribute name="restraint_type">CHI31</xsl:attribute>
+                </xsl:when>
+                <xsl:when test="@type='chi32'">
+                  <xsl:attribute name="restraint_type">CHI32</xsl:attribute>
+                </xsl:when>
+                <xsl:when test="@type='chi42'">
+                  <xsl:attribute name="restraint_type">CHI42</xsl:attribute>
+                </xsl:when>
+                <xsl:when test="@type='all'">
+                  <xsl:attribute name="restraint_type">Total</xsl:attribute>
+                </xsl:when>
+                <xsl:otherwise>
+                  <xsl:call-template name="error_handler">
+                    <xsl:with-param name="terminate">yes</xsl:with-param>
+                    <xsl:with-param name="error_message">
+Dihedral angle restraint type , <xsl:value-of select="@type"/>, is not listed in XSLT code.
+                    </xsl:with-param>
+                  </xsl:call-template>
+                </xsl:otherwise>
+              </xsl:choose>
+              <xsl:attribute name="restraints_count"><xsl:value-of select="PDBxv:restraints_count"/></xsl:attribute>
+              <xsl:attribute name="percent_total"><xsl:value-of select="PDBxv:restraints_percent"/></xsl:attribute>
+              <xsl:attribute name="violated_count"><xsl:value-of select="PDBxv:violations_count"/></xsl:attribute>
+              <xsl:attribute name="violated_percent_total"><xsl:value-of select="PDBxv:violations_percent"/></xsl:attribute>
+              <xsl:attribute name="violated_percent_type"><xsl:value-of select="PDBxv:violations_percent_type"/></xsl:attribute>
+              <xsl:attribute name="consistently_violated_count"><xsl:value-of select="PDBxv:consistent_violations_count"/></xsl:attribute>
+              <xsl:attribute name="consistently_violated_percent_total"><xsl:value-of select="PDBxv:consistent_violations_percent"/></xsl:attribute>
+              <xsl:attribute name="consistently_violated_percent_type"><xsl:value-of select="PDBxv:consistent_violations_percent_type"/></xsl:attribute>
+            </dihedralangle_violation_summary>
+          </xsl:for-each>
+        </dihedralangle_violations_summary>
+      </xsl:if>
+
+      <xsl:if test="PDBxv:pdbx_nmr_dihedral_angle_violation_modelCategory/PDBxv:pdbx_nmr_dihedral_angle_violation_model">
+        <dihedralangle_violations_in_models>
+          <xsl:for-each select="PDBxv:pdbx_nmr_dihedral_angle_violation_modelCategory/PDBxv:pdbx_nmr_dihedral_angle_violation_model">
+            <dihedralangle_violations_in_model model="{@PDB_model_num}">
+              <xsl:attribute name="max_violation"><xsl:value-of select="PDBxv:maximum_violation"/></xsl:attribute>
+              <xsl:attribute name="mean_violation"><xsl:value-of select="PDBxv:average_violation"/></xsl:attribute>
+              <xsl:attribute name="standard_deviation"><xsl:value-of select="PDBxv:standard_deviation"/></xsl:attribute>
+              <xsl:if test="PDBxv:violations_count">
+                <ang_rest_types ang_rest_type="Total" violations_count="{PDBxv:violations_count}"/>
+              </xsl:if>
+              <xsl:if test="PDBxv:phi_violations_count">
+                <ang_rest_types ang_rest_type="PHI" violations_count="{PDBxv:phi_violations_count}"/>
+              </xsl:if>
+              <xsl:if test="PDBxv:psi_violations_count">
+                <ang_rest_types ang_rest_type="PSI" violations_count="{PDBxv:psi_violations_count}"/>
+              </xsl:if>
+              <xsl:if test="PDBxv:omega_violations_count">
+                <ang_rest_types ang_rest_type="OMEGA" violations_count="{PDBxv:omega_violations_count}"/>
+              </xsl:if>
+              <xsl:if test="PDBxv:chi1_violations_count">
+                <ang_rest_types ang_rest_type="CHI1" violations_count="{PDBxv:chi1_violations_count}"/>
+              </xsl:if>
+              <xsl:if test="PDBxv:chi2_violations_count">
+                <ang_rest_types ang_rest_type="CHI2" violations_count="{PDBxv:chi2_violations_count}"/>
+              </xsl:if>
+              <xsl:if test="PDBxv:chi3_violations_count">
+                <ang_rest_types ang_rest_type="CHI3" violations_count="{PDBxv:chi3_violations_count}"/>
+              </xsl:if>
+              <xsl:if test="PDBxv:chi4_violations_count">
+                <ang_rest_types ang_rest_type="CHI4" violations_count="{PDBxv:chi4_violations_count}"/>
+              </xsl:if>
+              <xsl:if test="PDBxv:chi5_violations_count">
+                <ang_rest_types ang_rest_type="CHI5" violations_count="{PDBxv:chi5_violations_count}"/>
+              </xsl:if>
+              <xsl:if test="PDBxv:alpha_violations_count">
+                <ang_rest_types ang_rest_type="ALPHA" violations_count="{PDBxv:alpha_violations_count}"/>
+              </xsl:if>
+              <xsl:if test="PDBxv:beta_violations_count">
+                <ang_rest_types ang_rest_type="BETA" violations_count="{PDBxv:beta_violations_count}"/>
+              </xsl:if>
+              <xsl:if test="PDBxv:gamma_violations_count">
+                <ang_rest_types ang_rest_type="GAMMA" violations_count="{PDBxv:gamma_violations_count}"/>
+              </xsl:if>
+              <xsl:if test="PDBxv:delta_violations_count">
+                <ang_rest_types ang_rest_type="DELTA" violations_count="{PDBxv:delta_violations_count}"/>
+              </xsl:if>
+              <xsl:if test="PDBxv:epsilon_violations_count">
+                <ang_rest_types ang_rest_type="EPSILON" violations_count="{PDBxv:epsilon_violations_count}"/>
+              </xsl:if>
+              <xsl:if test="PDBxv:zeta_violations_count">
+                <ang_rest_types ang_rest_type="ZETA" violations_count="{PDBxv:zeta_violations_count}"/>
+              </xsl:if>
+              <xsl:if test="PDBxv:nu0_violations_count">
+                <ang_rest_types ang_rest_type="NU0" violations_count="{PDBxv:nu0_violations_count}"/>
+              </xsl:if>
+              <xsl:if test="PDBxv:nu1_violations_count">
+                <ang_rest_types ang_rest_type="NU1" violations_count="{PDBxv:nu1_violations_count}"/>
+              </xsl:if>
+              <xsl:if test="PDBxv:nu2_violations_count">
+                <ang_rest_types ang_rest_type="NU2" violations_count="{PDBxv:nu2_violations_count}"/>
+              </xsl:if>
+              <xsl:if test="PDBxv:nu3_violations_count">
+                <ang_rest_types ang_rest_type="NU3" violations_count="{PDBxv:nu3_violations_count}"/>
+              </xsl:if>
+              <xsl:if test="PDBxv:nu4_violations_count">
+                <ang_rest_types ang_rest_type="NU4" violations_count="{PDBxv:nu4_violations_count}"/>
+              </xsl:if>
+              <xsl:if test="PDBxv:chi21_violations_count">
+                <ang_rest_types ang_rest_type="CHI21" violations_count="{PDBxv:chi21_violations_count}"/>
+              </xsl:if>
+              <xsl:if test="PDBxv:chi22_violations_count">
+                <ang_rest_types ang_rest_type="CHI22" violations_count="{PDBxv:chi22_violations_count}"/>
+              </xsl:if>
+              <xsl:if test="PDBxv:chi31_violations_count">
+                <ang_rest_types ang_rest_type="CHI31" violations_count="{PDBxv:chi31_violations_count}"/>
+              </xsl:if>
+              <xsl:if test="PDBxv:chi32_violations_count">
+                <ang_rest_types ang_rest_type="CHI32" violations_count="{PDBxv:chi32_violations_count}"/>
+              </xsl:if>
+              <xsl:if test="PDBxv:chi42_violations_count">
+                <ang_rest_types ang_rest_type="CHI42" violations_count="{PDBxv:chi42_violations_count}"/>
+              </xsl:if>
+            </dihedralangle_violations_in_model>
+          </xsl:for-each>
+        </dihedralangle_violations_in_models>
+      </xsl:if>
+
+      <xsl:if test="PDBxv:pdbx_nmr_dihedral_angle_violation_ensembleCategory/PDBxv:pdbx_nmr_dihedral_angle_violation_ensemble">
+        <dihedralangle_violations_in_ensemble>
+          <xsl:for-each select="PDBxv:pdbx_nmr_dihedral_angle_violation_ensembleCategory/PDBxv:pdbx_nmr_dihedral_angle_violation_ensemble">
+            <dihedralangle_violation_in_ensemble fraction_of_ensemble_count="{@fraction_ensemble_size}" fraction_of_ensemble_percent="{PDBxv:fraction_ensemble_percent}">
+              <xsl:if test="PDBxv:violations_count">
+                <ang_rest_types ang_rest_type="Total" violations_count="{PDBxv:violations_count}"/>
+              </xsl:if>
+              <xsl:if test="PDBxv:phi_violations_count">
+                <ang_rest_types ang_rest_type="PHI" violations_count="{PDBxv:phi_violations_count}"/>
+              </xsl:if>
+              <xsl:if test="PDBxv:psi_violations_count">
+                <ang_rest_types ang_rest_type="PSI" violations_count="{PDBxv:psi_violations_count}"/>
+              </xsl:if>
+              <xsl:if test="PDBxv:omega_violations_count">
+                <ang_rest_types ang_rest_type="OMEGA" violations_count="{PDBxv:omega_violations_count}"/>
+              </xsl:if>
+              <xsl:if test="PDBxv:chi1_violations_count">
+                <ang_rest_types ang_rest_type="CHI1" violations_count="{PDBxv:chi1_violations_count}"/>
+              </xsl:if>
+              <xsl:if test="PDBxv:chi2_violations_count">
+                <ang_rest_types ang_rest_type="CHI2" violations_count="{PDBxv:chi2_violations_count}"/>
+              </xsl:if>
+              <xsl:if test="PDBxv:chi3_violations_count">
+                <ang_rest_types ang_rest_type="CHI3" violations_count="{PDBxv:chi3_violations_count}"/>
+              </xsl:if>
+              <xsl:if test="PDBxv:chi4_violations_count">
+                <ang_rest_types ang_rest_type="CHI4" violations_count="{PDBxv:chi4_violations_count}"/>
+              </xsl:if>
+              <xsl:if test="PDBxv:chi5_violations_count">
+                <ang_rest_types ang_rest_type="CHI5" violations_count="{PDBxv:chi5_violations_count}"/>
+              </xsl:if>
+              <xsl:if test="PDBxv:alpha_violations_count">
+                <ang_rest_types ang_rest_type="ALPHA" violations_count="{PDBxv:alpha_violations_count}"/>
+              </xsl:if>
+              <xsl:if test="PDBxv:beta_violations_count">
+                <ang_rest_types ang_rest_type="BETA" violations_count="{PDBxv:beta_violations_count}"/>
+              </xsl:if>
+              <xsl:if test="PDBxv:gamma_violations_count">
+                <ang_rest_types ang_rest_type="GAMMA" violations_count="{PDBxv:gamma_violations_count}"/>
+              </xsl:if>
+              <xsl:if test="PDBxv:delta_violations_count">
+                <ang_rest_types ang_rest_type="DELTA" violations_count="{PDBxv:delta_violations_count}"/>
+              </xsl:if>
+              <xsl:if test="PDBxv:epsilon_violations_count">
+                <ang_rest_types ang_rest_type="EPSILON" violations_count="{PDBxv:epsilon_violations_count}"/>
+              </xsl:if>
+              <xsl:if test="PDBxv:zeta_violations_count">
+                <ang_rest_types ang_rest_type="ZETA" violations_count="{PDBxv:zeta_violations_count}"/>
+              </xsl:if>
+              <xsl:if test="PDBxv:nu0_violations_count">
+                <ang_rest_types ang_rest_type="NU0" violations_count="{PDBxv:nu0_violations_count}"/>
+              </xsl:if>
+              <xsl:if test="PDBxv:nu1_violations_count">
+                <ang_rest_types ang_rest_type="NU1" violations_count="{PDBxv:nu1_violations_count}"/>
+              </xsl:if>
+              <xsl:if test="PDBxv:nu2_violations_count">
+                <ang_rest_types ang_rest_type="NU2" violations_count="{PDBxv:nu2_violations_count}"/>
+              </xsl:if>
+              <xsl:if test="PDBxv:nu3_violations_count">
+                <ang_rest_types ang_rest_type="NU3" violations_count="{PDBxv:nu3_violations_count}"/>
+              </xsl:if>
+              <xsl:if test="PDBxv:nu4_violations_count">
+                <ang_rest_types ang_rest_type="NU4" violations_count="{PDBxv:nu4_violations_count}"/>
+              </xsl:if>
+              <xsl:if test="PDBxv:chi21_violations_count">
+                <ang_rest_types ang_rest_type="CHI21" violations_count="{PDBxv:chi21_violations_count}"/>
+              </xsl:if>
+              <xsl:if test="PDBxv:chi22_violations_count">
+                <ang_rest_types ang_rest_type="CHI22" violations_count="{PDBxv:chi22_violations_count}"/>
+              </xsl:if>
+              <xsl:if test="PDBxv:chi31_violations_count">
+                <ang_rest_types ang_rest_type="CHI31" violations_count="{PDBxv:chi31_violations_count}"/>
+              </xsl:if>
+              <xsl:if test="PDBxv:chi32_violations_count">
+                <ang_rest_types ang_rest_type="CHI32" violations_count="{PDBxv:chi32_violations_count}"/>
+              </xsl:if>
+              <xsl:if test="PDBxv:chi42_violations_count">
+                <ang_rest_types ang_rest_type="CHI42" violations_count="{PDBxv:chi42_violations_count}"/>
+              </xsl:if>
+            </dihedralangle_violation_in_ensemble>
+          </xsl:for-each>
+        </dihedralangle_violations_in_ensemble>
+      </xsl:if>
+
+      <xsl:if test="PDBxv:pdbx_nmr_dihedral_angle_violation_pluralCategory/PDBxv:pdbx_nmr_dihedral_angle_violation_plural">
+        <most_violated_dihedralangle_restraints>
+          <xsl:for-each select="PDBxv:pdbx_nmr_dihedral_angle_violation_pluralCategory/PDBxv:pdbx_nmr_dihedral_angle_violation_plural">
+            <xsl:sort select="@ordinal"/>
+            <most_violated_dihedralangle_restraint>
+              <xsl:attribute name="rlist_id"><xsl:value-of select="PDBxv:list_id"/></xsl:attribute>
+              <xsl:attribute name="rest_id"><xsl:value-of select="PDBxv:restraint_id"/></xsl:attribute>
+              <xsl:attribute name="violations_count"><xsl:value-of select="PDBxv:violation_models_count"/></xsl:attribute>
+              <xsl:attribute name="MeanAngleViolation"><xsl:value-of select="PDBxv:average_violation"/></xsl:attribute>
+              <xsl:attribute name="median_violation"><xsl:value-of select="PDBxv:median_violation"/></xsl:attribute>
+              <xsl:attribute name="standard_deviation"><xsl:value-of select="PDBxv:standard_deviation"/></xsl:attribute>
+              <xsl:attribute name="ent_1"><xsl:value-of select="PDBxv:entity_id"/></xsl:attribute>
+              <xsl:attribute name="ent_2"><xsl:value-of select="PDBxv:entity_id"/></xsl:attribute>
+              <xsl:attribute name="ent_3"><xsl:value-of select="PDBxv:entity_id"/></xsl:attribute>
+              <xsl:attribute name="ent_4"><xsl:value-of select="PDBxv:entity_id"/></xsl:attribute>
+              <xsl:attribute name="chain_1"><xsl:value-of select="PDBxv:auth_asym_id"/></xsl:attribute>
+              <xsl:attribute name="chain_2"><xsl:value-of select="PDBxv:auth_asym_id"/></xsl:attribute>
+              <xsl:attribute name="chain_3"><xsl:value-of select="PDBxv:auth_asym_id"/></xsl:attribute>
+              <xsl:attribute name="chain_4"><xsl:value-of select="PDBxv:auth_asym_id"/></xsl:attribute>
+              <xsl:attribute name="resnum_1"><xsl:value-of select="PDBxv:auth_seq_id_1"/></xsl:attribute>
+              <xsl:attribute name="resnum_2"><xsl:value-of select="PDBxv:auth_seq_id_2"/></xsl:attribute>
+              <xsl:attribute name="resnum_3"><xsl:value-of select="PDBxv:auth_seq_id_3"/></xsl:attribute>
+              <xsl:attribute name="resnum_4"><xsl:value-of select="PDBxv:auth_seq_id_4"/></xsl:attribute>
+              <xsl:attribute name="resname_1"><xsl:value-of select="PDBxv:auth_comp_id_1"/></xsl:attribute>
+              <xsl:attribute name="resname_2"><xsl:value-of select="PDBxv:auth_comp_id_2"/></xsl:attribute>
+              <xsl:attribute name="resname_3"><xsl:value-of select="PDBxv:auth_comp_id_3"/></xsl:attribute>
+              <xsl:attribute name="resname_4"><xsl:value-of select="PDBxv:auth_comp_id_4"/></xsl:attribute>
+              <xsl:attribute name="atom_1"><xsl:value-of select="PDBxv:auth_atom_id_1"/></xsl:attribute>
+              <xsl:attribute name="atom_2"><xsl:value-of select="PDBxv:auth_atom_id_2"/></xsl:attribute>
+              <xsl:attribute name="atom_3"><xsl:value-of select="PDBxv:auth_atom_id_3"/></xsl:attribute>
+              <xsl:attribute name="atom_4"><xsl:value-of select="PDBxv:auth_atom_id_4"/></xsl:attribute>
+              <xsl:attribute name="said_1"><xsl:value-of select="PDBxv:label_asym_id"/></xsl:attribute>
+              <xsl:attribute name="said_2"><xsl:value-of select="PDBxv:label_asym_id"/></xsl:attribute>
+              <xsl:attribute name="said_3"><xsl:value-of select="PDBxv:label_asym_id"/></xsl:attribute>
+              <xsl:attribute name="said_4"><xsl:value-of select="PDBxv:label_asym_id"/></xsl:attribute>
+              <xsl:attribute name="seq_1"><xsl:value-of select="PDBxv:label_seq_id_1"/></xsl:attribute>
+              <xsl:attribute name="seq_2"><xsl:value-of select="PDBxv:label_seq_id_2"/></xsl:attribute>
+              <xsl:attribute name="seq_3"><xsl:value-of select="PDBxv:label_seq_id_3"/></xsl:attribute>
+              <xsl:attribute name="seq_4"><xsl:value-of select="PDBxv:label_seq_id_4"/></xsl:attribute>
+              <xsl:attribute name="icode_1"><xsl:value-of select="PDBxv:PDB_ins_code_1"/></xsl:attribute>
+              <xsl:attribute name="icode_2"><xsl:value-of select="PDBxv:PDB_ins_code_2"/></xsl:attribute>
+              <xsl:attribute name="icode_3"><xsl:value-of select="PDBxv:PDB_ins_code_3"/></xsl:attribute>
+              <xsl:attribute name="icode_4"><xsl:value-of select="PDBxv:PDB_ins_code_4"/></xsl:attribute>
+              <xsl:attribute name="altcode_1"><xsl:value-of select="PDBxv:label_alt_id_1"/></xsl:attribute>
+              <xsl:attribute name="altcode_2"><xsl:value-of select="PDBxv:label_alt_id_2"/></xsl:attribute>
+              <xsl:attribute name="altcode_3"><xsl:value-of select="PDBxv:label_alt_id_3"/></xsl:attribute>
+              <xsl:attribute name="altcode_4"><xsl:value-of select="PDBxv:label_alt_id_4"/></xsl:attribute>
+            </most_violated_dihedralangle_restraint>
+          </xsl:for-each>
+        </most_violated_dihedralangle_restraints>
+      </xsl:if>
+
+      <xsl:if test="PDBxv:pdbx_nmr_dihedral_angle_violationCategory/PDBxv:pdbx_nmr_dihedral_angle_violation">
+        <violated_dihedralangle_restraints>
+          <xsl:for-each select="PDBxv:pdbx_nmr_dihedral_angle_violationCategory/PDBxv:pdbx_nmr_dihedral_angle_violation">
+            <xsl:sort select="@ordinal"/>
+            <violated_dihedralangle_restraint>
+              <xsl:attribute name="rlist_id"><xsl:value-of select="PDBxv:list_id"/></xsl:attribute>
+              <xsl:attribute name="rest_id"><xsl:value-of select="PDBxv:restraint_id"/></xsl:attribute>
+              <xsl:attribute name="model"><xsl:value-of select="PDBxv:PDB_model_num"/></xsl:attribute>
+              <xsl:attribute name="violation"><xsl:value-of select="PDBxv:violation"/></xsl:attribute>
+              <xsl:attribute name="ent_1"><xsl:value-of select="PDBxv:entity_id"/></xsl:attribute>
+              <xsl:attribute name="ent_2"><xsl:value-of select="PDBxv:entity_id"/></xsl:attribute>
+              <xsl:attribute name="ent_3"><xsl:value-of select="PDBxv:entity_id"/></xsl:attribute>
+              <xsl:attribute name="ent_4"><xsl:value-of select="PDBxv:entity_id"/></xsl:attribute>
+              <xsl:attribute name="chain_1"><xsl:value-of select="PDBxv:auth_asym_id"/></xsl:attribute>
+              <xsl:attribute name="chain_2"><xsl:value-of select="PDBxv:auth_asym_id"/></xsl:attribute>
+              <xsl:attribute name="chain_3"><xsl:value-of select="PDBxv:auth_asym_id"/></xsl:attribute>
+              <xsl:attribute name="chain_4"><xsl:value-of select="PDBxv:auth_asym_id"/></xsl:attribute>
+              <xsl:attribute name="resnum_1"><xsl:value-of select="PDBxv:auth_seq_id_1"/></xsl:attribute>
+              <xsl:attribute name="resnum_2"><xsl:value-of select="PDBxv:auth_seq_id_2"/></xsl:attribute>
+              <xsl:attribute name="resnum_3"><xsl:value-of select="PDBxv:auth_seq_id_3"/></xsl:attribute>
+              <xsl:attribute name="resnum_4"><xsl:value-of select="PDBxv:auth_seq_id_4"/></xsl:attribute>
+              <xsl:attribute name="resname_1"><xsl:value-of select="PDBxv:auth_comp_id_1"/></xsl:attribute>
+              <xsl:attribute name="resname_2"><xsl:value-of select="PDBxv:auth_comp_id_2"/></xsl:attribute>
+              <xsl:attribute name="resname_3"><xsl:value-of select="PDBxv:auth_comp_id_3"/></xsl:attribute>
+              <xsl:attribute name="resname_4"><xsl:value-of select="PDBxv:auth_comp_id_4"/></xsl:attribute>
+              <xsl:attribute name="atom_1"><xsl:value-of select="PDBxv:auth_atom_id_1"/></xsl:attribute>
+              <xsl:attribute name="atom_2"><xsl:value-of select="PDBxv:auth_atom_id_2"/></xsl:attribute>
+              <xsl:attribute name="atom_3"><xsl:value-of select="PDBxv:auth_atom_id_3"/></xsl:attribute>
+              <xsl:attribute name="atom_4"><xsl:value-of select="PDBxv:auth_atom_id_4"/></xsl:attribute>
+              <xsl:attribute name="said_1"><xsl:value-of select="PDBxv:label_asym_id"/></xsl:attribute>
+              <xsl:attribute name="said_2"><xsl:value-of select="PDBxv:label_asym_id"/></xsl:attribute>
+              <xsl:attribute name="said_3"><xsl:value-of select="PDBxv:label_asym_id"/></xsl:attribute>
+              <xsl:attribute name="said_4"><xsl:value-of select="PDBxv:label_asym_id"/></xsl:attribute>
+              <xsl:attribute name="seq_1"><xsl:value-of select="PDBxv:label_seq_id_1"/></xsl:attribute>
+              <xsl:attribute name="seq_2"><xsl:value-of select="PDBxv:label_seq_id_2"/></xsl:attribute>
+              <xsl:attribute name="seq_3"><xsl:value-of select="PDBxv:label_seq_id_3"/></xsl:attribute>
+              <xsl:attribute name="seq_4"><xsl:value-of select="PDBxv:label_seq_id_4"/></xsl:attribute>
+              <xsl:attribute name="icode_1"><xsl:value-of select="PDBxv:PDB_ins_code_1"/></xsl:attribute>
+              <xsl:attribute name="icode_2"><xsl:value-of select="PDBxv:PDB_ins_code_2"/></xsl:attribute>
+              <xsl:attribute name="icode_3"><xsl:value-of select="PDBxv:PDB_ins_code_3"/></xsl:attribute>
+              <xsl:attribute name="icode_4"><xsl:value-of select="PDBxv:PDB_ins_code_4"/></xsl:attribute>
+              <xsl:attribute name="altcode_1"><xsl:value-of select="PDBxv:label_alt_id_1"/></xsl:attribute>
+              <xsl:attribute name="altcode_2"><xsl:value-of select="PDBxv:label_alt_id_2"/></xsl:attribute>
+              <xsl:attribute name="altcode_3"><xsl:value-of select="PDBxv:label_alt_id_3"/></xsl:attribute>
+              <xsl:attribute name="altcode_4"><xsl:value-of select="PDBxv:label_alt_id_4"/></xsl:attribute>
+            </violated_dihedralangle_restraint>
+          </xsl:for-each>
+        </violated_dihedralangle_restraints>
+      </xsl:if>
+
+    </dihedralangle_restraints_analysis>
   </xsl:template>
 
   <xsl:template match="*[@xsi:nil='true']"/>

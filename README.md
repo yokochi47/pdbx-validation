@@ -164,7 +164,7 @@ File path | Document
 
 ## Release notes
 
-- **Dec 14, 2020**: Release v3.0.0
+- **Dec 15, 2020**: Release v3.0.0
 	- Support XML Schema for wwPDB validation report (wwpdb_validation_v5.01.xsd).
 		- Add '_pdbx_nmr_restraint_list' category that records list of NMR restraints.
 		- Add '_pdbx_nmr_restraint_summary' category that records sumarry of conformationally restricting restraints.

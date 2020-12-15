@@ -16663,6 +16663,58 @@ This data item is a pointer to attribute label_alt_id in category atom_site in t
                         </xsd:documentation>
               </xsd:annotation>
             </xsd:element>
+            <xsd:element name="label_asym_id" minOccurs="1" maxOccurs="1" type="xsd:string">
+              <xsd:annotation>
+                <xsd:documentation xml:lang="en">
+This data item is a pointer to attribute label_asym_id in category atom_site in the
+ ATOM_SITE category.
+                        </xsd:documentation>
+              </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="label_seq_id_1" minOccurs="1" maxOccurs="1" type="xsd:string">
+              <xsd:annotation>
+                <xsd:documentation xml:lang="en">
+Part of the identifier of the first of the four atom sites
+that define a dihedral angle restraint.
+
+This data item is a pointer to attribute label_seq_id in category atom_site in the
+ ATOM_SITE category.
+                        </xsd:documentation>
+              </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="label_seq_id_2" minOccurs="1" maxOccurs="1" type="xsd:string">
+              <xsd:annotation>
+                <xsd:documentation xml:lang="en">
+Part of the identifier of the second of the four atom sites
+that define a dihedral angle restraint.
+
+This data item is a pointer to attribute label_seq_id in category atom_site in the
+ ATOM_SITE category.
+                        </xsd:documentation>
+              </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="label_seq_id_3" minOccurs="1" maxOccurs="1" type="xsd:string">
+              <xsd:annotation>
+                <xsd:documentation xml:lang="en">
+Part of the identifier of the third of the four atom sites
+that define a dihedral angle restraint.
+
+This data item is a pointer to attribute label_seq_id in category atom_site in the
+ ATOM_SITE category.
+                        </xsd:documentation>
+              </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="label_seq_id_4" minOccurs="1" maxOccurs="1" type="xsd:string">
+              <xsd:annotation>
+                <xsd:documentation xml:lang="en">
+Part of the identifier of the fourth of the four atom sites
+that define a dihedral angle restraint.
+
+This data item is a pointer to attribute label_seq_id in category atom_site in the
+ ATOM_SITE category.
+                        </xsd:documentation>
+              </xsd:annotation>
+            </xsd:element>
             <xsd:element name="list_id" minOccurs="1" maxOccurs="1" type="xsd:int">
               <xsd:annotation>
                 <xsd:documentation xml:lang="en">
@@ -17736,6 +17788,58 @@ This data item is a pointer to attribute label_alt_id in category atom_site in t
                         </xsd:documentation>
               </xsd:annotation>
             </xsd:element>
+            <xsd:element name="label_asym_id" minOccurs="1" maxOccurs="1" type="xsd:string">
+              <xsd:annotation>
+                <xsd:documentation xml:lang="en">
+This data item is a pointer to attribute label_asym_id in category atom_site in the
+ ATOM_SITE category.
+                        </xsd:documentation>
+              </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="label_seq_id_1" minOccurs="1" maxOccurs="1" type="xsd:string">
+              <xsd:annotation>
+                <xsd:documentation xml:lang="en">
+Part of the identifier of the first of the four atom sites
+that define a dihedral angle restraint.
+
+This data item is a pointer to attribute label_seq_id in category atom_site in the
+ ATOM_SITE category.
+                        </xsd:documentation>
+              </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="label_seq_id_2" minOccurs="1" maxOccurs="1" type="xsd:string">
+              <xsd:annotation>
+                <xsd:documentation xml:lang="en">
+Part of the identifier of the second of the four atom sites
+that define a dihedral angle restraint.
+
+This data item is a pointer to attribute label_seq_id in category atom_site in the
+ ATOM_SITE category.
+                        </xsd:documentation>
+              </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="label_seq_id_3" minOccurs="1" maxOccurs="1" type="xsd:string">
+              <xsd:annotation>
+                <xsd:documentation xml:lang="en">
+Part of the identifier of the third of the four atom sites
+that define a dihedral angle restraint.
+
+This data item is a pointer to attribute label_seq_id in category atom_site in the
+ ATOM_SITE category.
+                        </xsd:documentation>
+              </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="label_seq_id_4" minOccurs="1" maxOccurs="1" type="xsd:string">
+              <xsd:annotation>
+                <xsd:documentation xml:lang="en">
+Part of the identifier of the fourth of the four atom sites
+that define a dihedral angle restraint.
+
+This data item is a pointer to attribute label_seq_id in category atom_site in the
+ ATOM_SITE category.
+                        </xsd:documentation>
+              </xsd:annotation>
+            </xsd:element>
             <xsd:element name="list_id" minOccurs="1" maxOccurs="1" type="xsd:int">
               <xsd:annotation>
                 <xsd:documentation xml:lang="en">
@@ -18112,6 +18216,50 @@ An optional identifier of the second of the two atoms that
 define a distance restraint.
 
 This data item is a pointer to attribute label_alt_id in category atom_site in the
+ ATOM_SITE category.
+                        </xsd:documentation>
+              </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="label_asym_id_1" minOccurs="1" maxOccurs="1" type="xsd:string">
+              <xsd:annotation>
+                <xsd:documentation xml:lang="en">
+Part of the identifier of the first of the two atom sites
+that define a distance restraint.
+
+This data item is a pointer to attribute label_asym_id in category atom_site in the
+ ATOM_SITE category.
+                        </xsd:documentation>
+              </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="label_asym_id_2" minOccurs="1" maxOccurs="1" type="xsd:string">
+              <xsd:annotation>
+                <xsd:documentation xml:lang="en">
+Part of the identifier of the second of the two atom sites
+that define a distance restraint.
+
+This data item is a pointer to attribute label_asym_id in category atom_site in the
+ ATOM_SITE category.
+                        </xsd:documentation>
+              </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="label_seq_id_1" minOccurs="1" maxOccurs="1" type="xsd:string">
+              <xsd:annotation>
+                <xsd:documentation xml:lang="en">
+Part of the identifier of the first of the two atom sites
+that define a distance restraint.
+
+This data item is a pointer to attribute label_seq_id in category atom_site in the
+ ATOM_SITE category.
+                        </xsd:documentation>
+              </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="label_seq_id_2" minOccurs="1" maxOccurs="1" type="xsd:string">
+              <xsd:annotation>
+                <xsd:documentation xml:lang="en">
+Part of the identifier of the second of the two atom sites
+that define a distance restraint.
+
+This data item is a pointer to attribute label_seq_id in category atom_site in the
  ATOM_SITE category.
                         </xsd:documentation>
               </xsd:annotation>
@@ -18613,6 +18761,50 @@ This data item is a pointer to attribute label_alt_id in category atom_site in t
                         </xsd:documentation>
               </xsd:annotation>
             </xsd:element>
+            <xsd:element name="label_asym_id_1" minOccurs="1" maxOccurs="1" type="xsd:string">
+              <xsd:annotation>
+                <xsd:documentation xml:lang="en">
+Part of the identifier of the first of the two atom sites
+that define a distance restraint.
+
+This data item is a pointer to attribute label_asym_id in category atom_site in the
+ ATOM_SITE category.
+                        </xsd:documentation>
+              </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="label_asym_id_2" minOccurs="1" maxOccurs="1" type="xsd:string">
+              <xsd:annotation>
+                <xsd:documentation xml:lang="en">
+Part of the identifier of the second of the two atom sites
+that define a distance restraint.
+
+This data item is a pointer to attribute label_asym_id in category atom_site in the
+ ATOM_SITE category.
+                        </xsd:documentation>
+              </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="label_seq_id_1" minOccurs="1" maxOccurs="1" type="xsd:string">
+              <xsd:annotation>
+                <xsd:documentation xml:lang="en">
+Part of the identifier of the first of the two atom sites
+that define a distance restraint.
+
+This data item is a pointer to attribute label_seq_id in category atom_site in the
+ ATOM_SITE category.
+                        </xsd:documentation>
+              </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="label_seq_id_2" minOccurs="1" maxOccurs="1" type="xsd:string">
+              <xsd:annotation>
+                <xsd:documentation xml:lang="en">
+Part of the identifier of the second of the two atom sites
+that define a distance restraint.
+
+This data item is a pointer to attribute label_seq_id in category atom_site in the
+ ATOM_SITE category.
+                        </xsd:documentation>
+              </xsd:annotation>
+            </xsd:element>
             <xsd:element name="list_id" minOccurs="1" maxOccurs="1" type="xsd:int">
               <xsd:annotation>
                 <xsd:documentation xml:lang="en">
@@ -18784,11 +18976,11 @@ atom classification of either backbone or side chain atoms.
             </xsd:annotation>
             <xsd:simpleType>
               <xsd:restriction base="xsd:string">
-                <xsd:enumeration value="backbone-backbone"/>
+                <xsd:enumeration value="backbone_backbone"/>
                 <xsd:enumeration value="distance restraints between two backbone atoms"/>
-                <xsd:enumeration value="backbone-sidechain"/>
+                <xsd:enumeration value="backbone_sidechain"/>
                 <xsd:enumeration value="distance restraints between backbone atom and side chaini atom"/>
-                <xsd:enumeration value="sidechain-sidechain"/>
+                <xsd:enumeration value="sidechain_sidechain"/>
                 <xsd:enumeration value="distance restraints between two side chain atoms"/>
                 <xsd:enumeration value="all"/>
                 <xsd:enumeration value="all distance restraints without backbone/side chain classification"/>
@@ -20357,32 +20549,6 @@ Ref: User guide to the wwPDB NMR validation reports
       <xsd:element name="pdbx_nmr_restraint_summary" minOccurs="0" maxOccurs="unbounded">
         <xsd:complexType>
           <xsd:all>
-            <xsd:element name="average_long_range_restraints_per_residue" minOccurs="0" maxOccurs="1" nillable="true">
-              <xsd:annotation>
-                <xsd:documentation xml:lang="en">
-The average number of long range restraints per residue.
-2.2
-                        </xsd:documentation>
-              </xsd:annotation>
-              <xsd:simpleType>
-                <xsd:restriction base="xsd:decimal">
-                  <xsd:minInclusive value="0"/>
-                </xsd:restriction>
-              </xsd:simpleType>
-            </xsd:element>
-            <xsd:element name="average_restraints_per_residue" minOccurs="0" maxOccurs="1" nillable="true">
-              <xsd:annotation>
-                <xsd:documentation xml:lang="en">
-The average number of restraints per residue.
-5.8
-                        </xsd:documentation>
-              </xsd:annotation>
-              <xsd:simpleType>
-                <xsd:restriction base="xsd:decimal">
-                  <xsd:minInclusive value="0"/>
-                </xsd:restriction>
-              </xsd:simpleType>
-            </xsd:element>
             <xsd:element name="dihedral_angle_restraints_total" minOccurs="0" maxOccurs="1" nillable="true">
               <xsd:annotation>
                 <xsd:documentation xml:lang="en">
@@ -20470,6 +20636,19 @@ used in the final structure calculation.
                 </xsd:restriction>
               </xsd:simpleType>
             </xsd:element>
+            <xsd:element name="long_range_restraints_per_residue" minOccurs="0" maxOccurs="1" nillable="true">
+              <xsd:annotation>
+                <xsd:documentation xml:lang="en">
+The average number of long range restraints per residue.
+2.2
+                        </xsd:documentation>
+              </xsd:annotation>
+              <xsd:simpleType>
+                <xsd:restriction base="xsd:decimal">
+                  <xsd:minInclusive value="0"/>
+                </xsd:restriction>
+              </xsd:simpleType>
+            </xsd:element>
             <xsd:element name="long_range_total_count" minOccurs="0" maxOccurs="1" nillable="true">
               <xsd:annotation>
                 <xsd:documentation xml:lang="en">
@@ -20494,6 +20673,19 @@ in the final structure calculation.
               </xsd:annotation>
               <xsd:simpleType>
                 <xsd:restriction base="xsd:int">
+                  <xsd:minInclusive value="0"/>
+                </xsd:restriction>
+              </xsd:simpleType>
+            </xsd:element>
+            <xsd:element name="restraints_per_residue" minOccurs="0" maxOccurs="1" nillable="true">
+              <xsd:annotation>
+                <xsd:documentation xml:lang="en">
+The average number of restraints per residue.
+5.8
+                        </xsd:documentation>
+              </xsd:annotation>
+              <xsd:simpleType>
+                <xsd:restriction base="xsd:decimal">
                   <xsd:minInclusive value="0"/>
                 </xsd:restriction>
               </xsd:simpleType>
@@ -20553,19 +20745,6 @@ Ref: User guide to the wwPDB NMR validation reports
       <xsd:element name="pdbx_nmr_restraint_violation" minOccurs="0" maxOccurs="unbounded">
         <xsd:complexType>
           <xsd:all>
-            <xsd:element name="average_violation_count_per_model" minOccurs="0" maxOccurs="1" nillable="true">
-              <xsd:annotation>
-                <xsd:documentation xml:lang="en">
-The average number of residual violations per model
-in a particular bin.
-                        </xsd:documentation>
-              </xsd:annotation>
-              <xsd:simpleType>
-                <xsd:restriction base="xsd:decimal">
-                  <xsd:minInclusive value="0"/>
-                </xsd:restriction>
-              </xsd:simpleType>
-            </xsd:element>
             <xsd:element name="bin_units" minOccurs="1" maxOccurs="1">
               <xsd:annotation>
                 <xsd:documentation xml:lang="en">
@@ -20617,6 +20796,19 @@ The value defines an inclusive minimum limit of a bin.
               <xsd:annotation>
                 <xsd:documentation xml:lang="en">
 The maximum value of residual violation in a particular bin.
+                        </xsd:documentation>
+              </xsd:annotation>
+              <xsd:simpleType>
+                <xsd:restriction base="xsd:decimal">
+                  <xsd:minInclusive value="0"/>
+                </xsd:restriction>
+              </xsd:simpleType>
+            </xsd:element>
+            <xsd:element name="violations_per_model" minOccurs="0" maxOccurs="1" nillable="true">
+              <xsd:annotation>
+                <xsd:documentation xml:lang="en">
+The average number of residual violations per model
+in a particular bin.
                         </xsd:documentation>
               </xsd:annotation>
               <xsd:simpleType>
