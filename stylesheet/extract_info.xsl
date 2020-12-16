@@ -119,6 +119,10 @@
     </xsl:choose>
   </xsl:variable>
 
+  <xsl:variable name="nmr_models">
+    <xsl:value-of select="/wwPDB-validation-information/Entry/@nmrclust_number_of_models"/>
+  </xsl:variable>
+
   <xsl:variable name="count_programs">
     <xsl:value-of select="count(/wwPDB-validation-information/programs/program)"/>
   </xsl:variable>
@@ -879,7 +883,7 @@ Atom type of atom inclusion plot, <xsl:value-of select="name()"/>, is not listed
             <xsl:when test="@description='Medium range (|i-j|&gt;1 and |i-j|&lt;5)'">
               <PDBxv:medium_range_total_count><xsl:value-of select="@value"/></PDBxv:medium_range_total_count>
             </xsl:when>
-            <xsl:when test="@description='Long range (|i-j|&gt;=5)'">
+            <xsl:when test="@description='Long range (|i-j|&gt;=5)' or @description='Long range (|i-j|$\geq$5)'">
               <PDBxv:long_range_total_count><xsl:value-of select="@value"/></PDBxv:long_range_total_count>
             </xsl:when>
             <xsl:when test="@description='Total dihedral-angle restraints'">
@@ -985,6 +989,8 @@ Restraint residual violation bins, <xsl:value-of select="@bins"/>, is not listed
       <xsl:for-each select="distance_violation_summary">
         <PDBxv:pdbx_nmr_distance_violation_summary>
           <xsl:choose>
+          <xsl:when test="@restraint_sub_type"> <!-- v5.1 or later -->
+          <xsl:choose>
             <xsl:when test="@restraint_type='Intra-residue'">
               <xsl:attribute name="type">intraresidue</xsl:attribute>
             </xsl:when>
@@ -1029,10 +1035,123 @@ Restraint type, <xsl:value-of select="@restraint_type"/>, is not listed in XSLT 
               <xsl:call-template name="error_handler">
                 <xsl:with-param name="terminate">yes</xsl:with-param>
                 <xsl:with-param name="error_message">
-Restraint type, <xsl:value-of select="@restraint_sub_type"/>, is not listed in XSLT code.
+Restraint sub type, <xsl:value-of select="@restraint_sub_type"/>, is not listed in XSLT code.
                 </xsl:with-param>
               </xsl:call-template>
             </xsl:otherwise>
+          </xsl:choose>
+          </xsl:when>
+          <xsl:otherwise> <!-- v005 -->
+          <xsl:choose>
+            <xsl:when test="@restraint_type='Intra-residue'">
+              <xsl:attribute name="type">intraresidue</xsl:attribute>
+              <xsl:attribute name="subtype">all</xsl:attribute>
+            </xsl:when>
+            <xsl:when test="@restraint_type='Sequential'">
+              <xsl:attribute name="type">sequential</xsl:attribute>
+              <xsl:attribute name="subtype">all</xsl:attribute>
+            </xsl:when>
+            <xsl:when test="@restraint_type='MediumRange'">
+              <xsl:attribute name="type">medium_range</xsl:attribute>
+              <xsl:attribute name="subtype">all</xsl:attribute>
+            </xsl:when>
+            <xsl:when test="@restraint_type='LongRange'">
+              <xsl:attribute name="type">long_range</xsl:attribute>
+              <xsl:attribute name="subtype">all</xsl:attribute>
+            </xsl:when>
+            <xsl:when test="@restraint_type='InterChain'">
+              <xsl:attribute name="type">interchain</xsl:attribute>
+              <xsl:attribute name="subtype">all</xsl:attribute>
+            </xsl:when>
+            <xsl:when test="@restraint_type='Total'">
+              <xsl:attribute name="type">all</xsl:attribute>
+              <xsl:attribute name="subtype">all</xsl:attribute>
+            </xsl:when>
+            <xsl:when test="@restraint_type='BackboneBackbone'">
+              <xsl:for-each select="preceding-sibling::distance_violation_summary[@restraint_type!='BackboneBackbone' and @restraint_type!='BackboneSidechain' and @restraint_type!='SidechainSidechain']">
+                <xsl:choose>
+                  <xsl:when test="@restraint_type='Intra-residue'">
+                    <xsl:attribute name="type">intraresidue</xsl:attribute>
+                  </xsl:when>
+                  <xsl:when test="@restraint_type='Sequential'">
+                    <xsl:attribute name="type">sequential</xsl:attribute>
+                  </xsl:when>
+                  <xsl:when test="@restraint_type='MediumRange'">
+                    <xsl:attribute name="type">medium_range</xsl:attribute>
+                  </xsl:when>
+                  <xsl:when test="@restraint_type='LongRange'">
+                    <xsl:attribute name="type">long_range</xsl:attribute>
+                  </xsl:when>
+                  <xsl:when test="@restraint_type='InterChain'">
+                    <xsl:attribute name="type">interchain</xsl:attribute>
+                  </xsl:when>
+                  <xsl:when test="@restraint_type='Total'">
+                    <xsl:attribute name="type">all</xsl:attribute>
+                  </xsl:when>
+                </xsl:choose>
+              </xsl:for-each>
+              <xsl:attribute name="subtype">backbone_backbone</xsl:attribute>
+            </xsl:when>
+            <xsl:when test="@restraint_type='BackboneSidechain'">
+              <xsl:for-each select="preceding-sibling::distance_violation_summary[@restraint_type!='BackboneBackbone' and @restraint_type!='BackboneSidechain' and @restraint_type!='SidechainSidechain']">
+                <xsl:choose>
+                  <xsl:when test="@restraint_type='Intra-residue'">
+                    <xsl:attribute name="type">intraresidue</xsl:attribute>
+                  </xsl:when>
+                  <xsl:when test="@restraint_type='Sequential'">
+                    <xsl:attribute name="type">sequential</xsl:attribute>
+                  </xsl:when>
+                  <xsl:when test="@restraint_type='MediumRange'">
+                    <xsl:attribute name="type">medium_range</xsl:attribute>
+                  </xsl:when>
+                  <xsl:when test="@restraint_type='LongRange'">
+                    <xsl:attribute name="type">long_range</xsl:attribute>
+                  </xsl:when>
+                  <xsl:when test="@restraint_type='InterChain'">
+                    <xsl:attribute name="type">interchain</xsl:attribute>
+                  </xsl:when>
+                  <xsl:when test="@restraint_type='Total'">
+                    <xsl:attribute name="type">all</xsl:attribute>
+                  </xsl:when>
+                </xsl:choose>
+              </xsl:for-each>
+              <xsl:attribute name="subtype">backbone_sidechain</xsl:attribute>
+            </xsl:when>
+            <xsl:when test="@restraint_type='SidechainSidechain'">
+              <xsl:for-each select="preceding-sibling::distance_violation_summary[@restraint_type!='BackboneBackbone' and @restraint_type!='BackboneSidechain' and @restraint_type!='SidechainSidechain']">
+                <xsl:choose>
+                  <xsl:when test="@restraint_type='Intra-residue'">
+                    <xsl:attribute name="type">intraresidue</xsl:attribute>
+                  </xsl:when>
+                  <xsl:when test="@restraint_type='Sequential'">
+                    <xsl:attribute name="type">sequential</xsl:attribute>
+                  </xsl:when>
+                  <xsl:when test="@restraint_type='MediumRange'">
+                    <xsl:attribute name="type">medium_range</xsl:attribute>
+                  </xsl:when>
+                  <xsl:when test="@restraint_type='LongRange'">
+                    <xsl:attribute name="type">long_range</xsl:attribute>
+                  </xsl:when>
+                  <xsl:when test="@restraint_type='InterChain'">
+                    <xsl:attribute name="type">interchain</xsl:attribute>
+                  </xsl:when>
+                  <xsl:when test="@restraint_type='Total'">
+                    <xsl:attribute name="type">all</xsl:attribute>
+                  </xsl:when>
+                </xsl:choose>
+              </xsl:for-each>
+              <xsl:attribute name="subtype">sidechain_sidechain</xsl:attribute>
+            </xsl:when>
+            <xsl:otherwise>
+              <xsl:call-template name="error_handler">
+                <xsl:with-param name="terminate">yes</xsl:with-param>
+                <xsl:with-param name="error_message">
+Restraint type, <xsl:value-of select="@restraint_type"/>, is not listed in XSLT code.
+                </xsl:with-param>
+              </xsl:call-template>
+            </xsl:otherwise>
+          </xsl:choose>
+          </xsl:otherwise>
           </xsl:choose>
           <PDBxv:restraints_count><xsl:value-of select="@restraints_count"/></PDBxv:restraints_count>
           <PDBxv:restraints_percent><xsl:value-of select="@percent_total"/></PDBxv:restraints_percent>
@@ -1094,7 +1213,14 @@ Distance restraint type, <xsl:value-of select="@dist_rest_type"/>, is not listed
     <PDBxv:pdbx_nmr_distance_violation_ensembleCategory>
       <xsl:for-each select="distance_violation_in_ensemble">
         <PDBxv:pdbx_nmr_distance_violation_ensemble fraction_ensemble_size="{@fraction_of_ensemble_count}">
-          <PDBxv:fraction_ensemble_percent><xsl:value-of select="@fraction_of_ensemble_percent"/></PDBxv:fraction_ensemble_percent>
+          <xsl:choose>
+          <xsl:when test="@fraction_of_ensemble_percent"> <!-- v5.1 or later -->
+            <PDBxv:fraction_ensemble_percent><xsl:value-of select="@fraction_of_ensemble_percent"/></PDBxv:fraction_ensemble_percent>
+          </xsl:when>
+          <xsl:otherwise> <!-- v005 -->
+            <PDBxv:fraction_ensemble_percent><xsl:value-of select="format-number(number(@fraction_of_ensemble_count) div number($nmr_models) * 100.0,'0.0')"/></PDBxv:fraction_ensemble_percent>
+          </xsl:otherwise>
+          </xsl:choose>
           <xsl:for-each select="dist_rest_types">
             <xsl:choose>
               <xsl:when test="@dist_rest_type='Total'">
@@ -1148,8 +1274,16 @@ Distance restraint type, <xsl:value-of select="@dist_rest_type"/>, is not listed
           <PDBxv:auth_seq_id_2><xsl:value-of select="@resnum_2"/></PDBxv:auth_seq_id_2>
           <PDBxv:auth_comp_id_1><xsl:value-of select="@resname_1"/></PDBxv:auth_comp_id_1>
           <PDBxv:auth_comp_id_2><xsl:value-of select="@resname_2"/></PDBxv:auth_comp_id_2>
+          <xsl:choose>
+          <xsl:when test="@atom_1"> <!-- v5.1 or later -->
           <PDBxv:auth_atom_id_1><xsl:value-of select="@atom_1"/></PDBxv:auth_atom_id_1>
           <PDBxv:auth_atom_id_2><xsl:value-of select="@atom_2"/></PDBxv:auth_atom_id_2>
+          </xsl:when>
+          <xsl:otherwise> <!-- v005 -->
+          <PDBxv:auth_atom_id_1>?</PDBxv:auth_atom_id_1>
+          <PDBxv:auth_atom_id_2>?</PDBxv:auth_atom_id_2>
+          </xsl:otherwise>
+          </xsl:choose>
           <PDBxv:label_asym_id_1><xsl:value-of select="@said_1"/></PDBxv:label_asym_id_1>
           <PDBxv:label_asym_id_2><xsl:value-of select="@said_2"/></PDBxv:label_asym_id_2>
           <PDBxv:label_seq_id_1><xsl:value-of select="@seq_1"/></PDBxv:label_seq_id_1>
@@ -1179,8 +1313,16 @@ Distance restraint type, <xsl:value-of select="@dist_rest_type"/>, is not listed
           <PDBxv:auth_seq_id_2><xsl:value-of select="@resnum_2"/></PDBxv:auth_seq_id_2>
           <PDBxv:auth_comp_id_1><xsl:value-of select="@resname_1"/></PDBxv:auth_comp_id_1>
           <PDBxv:auth_comp_id_2><xsl:value-of select="@resname_2"/></PDBxv:auth_comp_id_2>
+          <xsl:choose>
+          <xsl:when test="@atom_1"> <!-- v5.1 or later -->
           <PDBxv:auth_atom_id_1><xsl:value-of select="@atom_1"/></PDBxv:auth_atom_id_1>
           <PDBxv:auth_atom_id_2><xsl:value-of select="@atom_2"/></PDBxv:auth_atom_id_2>
+          </xsl:when>
+          <xsl:otherwise> <!-- v005 -->
+          <PDBxv:auth_atom_id_1>?</PDBxv:auth_atom_id_1>
+          <PDBxv:auth_atom_id_2>?</PDBxv:auth_atom_id_2>
+          </xsl:otherwise>
+          </xsl:choose>
           <PDBxv:label_asym_id_1><xsl:value-of select="@said_1"/></PDBxv:label_asym_id_1>
           <PDBxv:label_asym_id_2><xsl:value-of select="@said_2"/></PDBxv:label_asym_id_2>
           <PDBxv:label_seq_id_1><xsl:value-of select="@seq_1"/></PDBxv:label_seq_id_1>
@@ -1406,7 +1548,14 @@ Dihedral angle restraint type, <xsl:value-of select="@ang_rest_type"/>, is not l
     <PDBxv:pdbx_nmr_dihedral_angle_violation_ensembleCategory>
       <xsl:for-each select="dihedralangle_violation_in_ensemble">
         <PDBxv:pdbx_nmr_dihedral_angle_violation_ensemble fraction_ensemble_size="{@fraction_of_ensemble_count}">
-          <PDBxv:fraction_ensemble_percent><xsl:value-of select="@fraction_of_ensemble_percent"/></PDBxv:fraction_ensemble_percent>
+          <xsl:choose>
+          <xsl:when test="@fraction_of_ensemble_percent"> <!-- v5.1 or later -->
+            <PDBxv:fraction_ensemble_percent><xsl:value-of select="@fraction_of_ensemble_percent"/></PDBxv:fraction_ensemble_percent>
+          </xsl:when>
+          <xsl:otherwise> <!-- v005 -->
+            <PDBxv:fraction_ensemble_percent><xsl:value-of select="format-number(number(@fraction_of_ensemble_count) div number($nmr_models) * 100.0,'0.0')"/></PDBxv:fraction_ensemble_percent>
+          </xsl:otherwise>
+          </xsl:choose>
           <xsl:for-each select="ang_rest_types">
             <xsl:choose>
               <xsl:when test="@ang_rest_type='Total'">
@@ -1519,10 +1668,20 @@ Dihedral angle restraint type, <xsl:value-of select="@ang_rest_type"/>, is not l
           <PDBxv:auth_comp_id_2><xsl:value-of select="@resname_2"/></PDBxv:auth_comp_id_2>
           <PDBxv:auth_comp_id_3><xsl:value-of select="@resname_3"/></PDBxv:auth_comp_id_3>
           <PDBxv:auth_comp_id_4><xsl:value-of select="@resname_4"/></PDBxv:auth_comp_id_4>
+          <xsl:choose>
+          <xsl:when test="@atom_1"> <!-- v5. -->
           <PDBxv:auth_atom_id_1><xsl:value-of select="@atom_1"/></PDBxv:auth_atom_id_1>
           <PDBxv:auth_atom_id_2><xsl:value-of select="@atom_2"/></PDBxv:auth_atom_id_2>
           <PDBxv:auth_atom_id_3><xsl:value-of select="@atom_3"/></PDBxv:auth_atom_id_3>
           <PDBxv:auth_atom_id_4><xsl:value-of select="@atom_4"/></PDBxv:auth_atom_id_4>
+          </xsl:when>
+          <xsl:otherwise>
+          <PDBxv:auth_atom_id_1>?</PDBxv:auth_atom_id_1>
+          <PDBxv:auth_atom_id_2>?</PDBxv:auth_atom_id_2>
+          <PDBxv:auth_atom_id_3>?</PDBxv:auth_atom_id_3>
+          <PDBxv:auth_atom_id_4>?</PDBxv:auth_atom_id_4>
+          </xsl:otherwise>
+          </xsl:choose>
           <PDBxv:label_asym_id><xsl:value-of select="@said_1"/></PDBxv:label_asym_id>
           <PDBxv:label_seq_id_1><xsl:value-of select="@seq_1"/></PDBxv:label_seq_id_1>
           <PDBxv:label_seq_id_2><xsl:value-of select="@seq_2"/></PDBxv:label_seq_id_2>
@@ -1559,10 +1718,20 @@ Dihedral angle restraint type, <xsl:value-of select="@ang_rest_type"/>, is not l
           <PDBxv:auth_comp_id_2><xsl:value-of select="@resname_2"/></PDBxv:auth_comp_id_2>
           <PDBxv:auth_comp_id_3><xsl:value-of select="@resname_3"/></PDBxv:auth_comp_id_3>
           <PDBxv:auth_comp_id_4><xsl:value-of select="@resname_4"/></PDBxv:auth_comp_id_4>
+          <xsl:choose>
+          <xsl:when test="@atom_1"> <!-- v5.1 or later -->
           <PDBxv:auth_atom_id_1><xsl:value-of select="@atom_1"/></PDBxv:auth_atom_id_1>
           <PDBxv:auth_atom_id_2><xsl:value-of select="@atom_2"/></PDBxv:auth_atom_id_2>
           <PDBxv:auth_atom_id_3><xsl:value-of select="@atom_3"/></PDBxv:auth_atom_id_3>
           <PDBxv:auth_atom_id_4><xsl:value-of select="@atom_4"/></PDBxv:auth_atom_id_4>
+          </xsl:when>
+          <xsl:otherwise> <!-- v005 -->
+          <PDBxv:auth_atom_id_1>?</PDBxv:auth_atom_id_1>
+          <PDBxv:auth_atom_id_2>?</PDBxv:auth_atom_id_2>
+          <PDBxv:auth_atom_id_3>?</PDBxv:auth_atom_id_3>
+          <PDBxv:auth_atom_id_4>?</PDBxv:auth_atom_id_4>
+          </xsl:otherwise>
+          </xsl:choose>
           <PDBxv:label_asym_id><xsl:value-of select="@said_1"/></PDBxv:label_asym_id>
           <PDBxv:label_seq_id_1><xsl:value-of select="@seq_1"/></PDBxv:label_seq_id_1>
           <PDBxv:label_seq_id_2><xsl:value-of select="@seq_2"/></PDBxv:label_seq_id_2>
