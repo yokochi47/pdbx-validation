@@ -989,7 +989,7 @@ Restraint residual violation bins, <xsl:value-of select="@bins"/>, is not listed
       <xsl:for-each select="distance_violation_summary">
         <PDBxv:pdbx_nmr_distance_violation_summary>
           <xsl:choose>
-          <xsl:when test="@restraint_sub_type"> <!-- v5.1 or later -->
+          <xsl:when test="@restraint_sub_type"> <!-- v5.01 or later -->
           <xsl:choose>
             <xsl:when test="@restraint_type='Intra-residue'">
               <xsl:attribute name="type">intraresidue</xsl:attribute>
@@ -1214,7 +1214,7 @@ Distance restraint type, <xsl:value-of select="@dist_rest_type"/>, is not listed
       <xsl:for-each select="distance_violation_in_ensemble">
         <PDBxv:pdbx_nmr_distance_violation_ensemble fraction_ensemble_size="{@fraction_of_ensemble_count}">
           <xsl:choose>
-          <xsl:when test="@fraction_of_ensemble_percent"> <!-- v5.1 or later -->
+          <xsl:when test="@fraction_of_ensemble_percent"> <!-- v5.01 or later -->
             <PDBxv:fraction_ensemble_percent><xsl:value-of select="@fraction_of_ensemble_percent"/></PDBxv:fraction_ensemble_percent>
           </xsl:when>
           <xsl:otherwise> <!-- v005 -->
@@ -1275,7 +1275,7 @@ Distance restraint type, <xsl:value-of select="@dist_rest_type"/>, is not listed
           <PDBxv:auth_comp_id_1><xsl:value-of select="@resname_1"/></PDBxv:auth_comp_id_1>
           <PDBxv:auth_comp_id_2><xsl:value-of select="@resname_2"/></PDBxv:auth_comp_id_2>
           <xsl:choose>
-          <xsl:when test="@atom_1"> <!-- v5.1 or later -->
+          <xsl:when test="@atom_1"> <!-- v5.01 or later -->
           <PDBxv:auth_atom_id_1><xsl:value-of select="@atom_1"/></PDBxv:auth_atom_id_1>
           <PDBxv:auth_atom_id_2><xsl:value-of select="@atom_2"/></PDBxv:auth_atom_id_2>
           </xsl:when>
@@ -1314,7 +1314,7 @@ Distance restraint type, <xsl:value-of select="@dist_rest_type"/>, is not listed
           <PDBxv:auth_comp_id_1><xsl:value-of select="@resname_1"/></PDBxv:auth_comp_id_1>
           <PDBxv:auth_comp_id_2><xsl:value-of select="@resname_2"/></PDBxv:auth_comp_id_2>
           <xsl:choose>
-          <xsl:when test="@atom_1"> <!-- v5.1 or later -->
+          <xsl:when test="@atom_1"> <!-- v5.01 or later -->
           <PDBxv:auth_atom_id_1><xsl:value-of select="@atom_1"/></PDBxv:auth_atom_id_1>
           <PDBxv:auth_atom_id_2><xsl:value-of select="@atom_2"/></PDBxv:auth_atom_id_2>
           </xsl:when>
@@ -1549,7 +1549,7 @@ Dihedral angle restraint type, <xsl:value-of select="@ang_rest_type"/>, is not l
       <xsl:for-each select="dihedralangle_violation_in_ensemble">
         <PDBxv:pdbx_nmr_dihedral_angle_violation_ensemble fraction_ensemble_size="{@fraction_of_ensemble_count}">
           <xsl:choose>
-          <xsl:when test="@fraction_of_ensemble_percent"> <!-- v5.1 or later -->
+          <xsl:when test="@fraction_of_ensemble_percent"> <!-- v5.01 or later -->
             <PDBxv:fraction_ensemble_percent><xsl:value-of select="@fraction_of_ensemble_percent"/></PDBxv:fraction_ensemble_percent>
           </xsl:when>
           <xsl:otherwise> <!-- v005 -->
@@ -1719,7 +1719,7 @@ Dihedral angle restraint type, <xsl:value-of select="@ang_rest_type"/>, is not l
           <PDBxv:auth_comp_id_3><xsl:value-of select="@resname_3"/></PDBxv:auth_comp_id_3>
           <PDBxv:auth_comp_id_4><xsl:value-of select="@resname_4"/></PDBxv:auth_comp_id_4>
           <xsl:choose>
-          <xsl:when test="@atom_1"> <!-- v5.1 or later -->
+          <xsl:when test="@atom_1"> <!-- v5.01 or later -->
           <PDBxv:auth_atom_id_1><xsl:value-of select="@atom_1"/></PDBxv:auth_atom_id_1>
           <PDBxv:auth_atom_id_2><xsl:value-of select="@atom_2"/></PDBxv:auth_atom_id_2>
           <PDBxv:auth_atom_id_3><xsl:value-of select="@atom_3"/></PDBxv:auth_atom_id_3>
