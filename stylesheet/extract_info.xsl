@@ -883,7 +883,7 @@ Atom type of atom inclusion plot, <xsl:value-of select="name()"/>, is not listed
             <xsl:when test="@description='Medium range (|i-j|&gt;1 and |i-j|&lt;5)'">
               <PDBxv:medium_range_total_count><xsl:value-of select="@value"/></PDBxv:medium_range_total_count>
             </xsl:when>
-            <xsl:when test="@description='Long range (|i-j|&gt;=5)' or @description='Long range (|i-j|$\geq$5)'">
+            <xsl:when test="@description='Long range (|i-j|&gt;=5)' or @description='Long range (|i-j|$\geq$5)'"> <!-- v005 -->
               <PDBxv:long_range_total_count><xsl:value-of select="@value"/></PDBxv:long_range_total_count>
             </xsl:when>
             <xsl:when test="@description='Total dihedral-angle restraints'">
@@ -1257,6 +1257,7 @@ Distance restraint type, <xsl:value-of select="@dist_rest_type"/>, is not listed
   </xsl:template>
 
   <xsl:template match="most_violated_distance_restraints">
+    <xsl:variable name="violated_distance_restraints"><xsl:value-of select="../violated_distance_restraints"/></xsl:variable>
     <PDBxv:pdbx_nmr_distance_violation_pluralCategory>
       <xsl:for-each select="most_violated_distance_restraint">
         <PDBxv:pdbx_nmr_distance_violation_plural ordinal="{position()}">
@@ -1274,24 +1275,73 @@ Distance restraint type, <xsl:value-of select="@dist_rest_type"/>, is not listed
           <PDBxv:auth_seq_id_2><xsl:value-of select="@resnum_2"/></PDBxv:auth_seq_id_2>
           <PDBxv:auth_comp_id_1><xsl:value-of select="@resname_1"/></PDBxv:auth_comp_id_1>
           <PDBxv:auth_comp_id_2><xsl:value-of select="@resname_2"/></PDBxv:auth_comp_id_2>
+          <xsl:variable name="icode_1"><xsl:value-of select="translate(@icode_1,'?.','  ')"/></xsl:variable>
+          <xsl:variable name="icode_2"><xsl:value-of select="translate(@icode_2,'?.','  ')"/></xsl:variable>
+          <xsl:variable name="altcode_1"><xsl:value-of select="translate(@altcode_1,'?.','  ')"/></xsl:variable>
+          <xsl:variable name="altcode_2"><xsl:value-of select="translate(@altcode_2,'?.','  ')"/></xsl:variable>
           <xsl:choose>
           <xsl:when test="@atom_1"> <!-- v5.01 or later -->
           <PDBxv:auth_atom_id_1><xsl:value-of select="@atom_1"/></PDBxv:auth_atom_id_1>
           <PDBxv:auth_atom_id_2><xsl:value-of select="@atom_2"/></PDBxv:auth_atom_id_2>
           </xsl:when>
           <xsl:otherwise> <!-- v005 -->
-          <PDBxv:auth_atom_id_1>?</PDBxv:auth_atom_id_1>
-          <PDBxv:auth_atom_id_2>?</PDBxv:auth_atom_id_2>
+          <xsl:variable name="rlist_id"><xsl:value-of select="@rlist_id"/></xsl:variable>
+          <xsl:variable name="rest_id"><xsl:value-of select="@rest_id"/></xsl:variable>
+          <xsl:variable name="models">
+            <xsl:for-each select="1 to $nmr_models">
+              <xsl:variable name="_model"><xsl:value-of select="."/></xsl:variable>
+              <xsl:if test="$violated_distance_restraints/violated_distance_restraint[@rlist_id=$rlist_id and @rest_id=$rest_id and @model=$_model]">
+                <xsl:value-of select="concat($_model,',')"/>
+              </xsl:if>
+            </xsl:for-each>
+          </xsl:variable>
+          <xsl:variable name="rep_model"><xsl:value-of select="substring-before($models,',')"/></xsl:variable>
+          <xsl:variable name="chain_1"><xsl:value-of select="@chain_1"/></xsl:variable>
+          <xsl:variable name="chain_2"><xsl:value-of select="@chain_2"/></xsl:variable>
+          <xsl:variable name="resnum_1"><xsl:value-of select="@resnum_1"/></xsl:variable>
+          <xsl:variable name="resnum_2"><xsl:value-of select="@resnum_2"/></xsl:variable>
+          <xsl:variable name="uniq"><xsl:value-of select="count(//violated_distance_restraints/violated_distance_restraint[@rlist_id=$rlist_id and @rest_id=$rest_id and @model=$rep_model])"/></xsl:variable>
+          <xsl:variable name="intrares"><xsl:value-of select="$chain_1=$chain_2 and $resnum_1=$resnum_2"/></xsl:variable>
+          <xsl:choose>
+            <xsl:when test="$uniq=1 and $intrares=false()">
+              <xsl:variable name="atom_1">
+                <xsl:for-each select="/wwPDB-validation-information/ModelledSubgroup[@model=$rep_model and @resnum=$resnum_1 and @icode=$icode_1]/distance_violation[@rlist_id=$rlist_id and @rest_id=$rest_id]">
+                  <xsl:value-of select="@atom"/>
+                </xsl:for-each>
+              </xsl:variable>
+              <xsl:variable name="atom_2">
+                <xsl:for-each select="/wwPDB-validation-information/ModelledSubgroup[@model=$rep_model and @resnum=$resnum_2 and @icode=$icode_2]/distance_violation[@rlist_id=$rlist_id and @rest_id=$rest_id]">
+                  <xsl:value-of select="@atom"/>
+                </xsl:for-each>
+              </xsl:variable>
+              <PDBxv:auth_atom_id_1><xsl:value-of select="$atom_1"/></PDBxv:auth_atom_id_1>
+              <PDBxv:auth_atom_id_2><xsl:value-of select="$atom_2"/></PDBxv:auth_atom_id_2>
+            </xsl:when>
+            <xsl:when test="$uniq=1 and $intrares=true()">
+              <xsl:variable name="_atoms">
+                <xsl:for-each select="/wwPDB-validation-information/ModelledSubgroup[@model=$rep_model and @resnum=$resnum_1 and @icode=$icode_1]/distance_violation[@rlist_id=$rlist_id and @rest_id=$rest_id]">
+                  <xsl:value-of select="concat(@atom,',')"/>
+                </xsl:for-each>
+              </xsl:variable>
+              <xsl:variable name="atoms"><xsl:value-of select="substring($_atoms,1,string-length($_atoms)-1)"/></xsl:variable>
+              <PDBxv:auth_atom_id_1><xsl:value-of select="substring-before($atoms,',')"/></PDBxv:auth_atom_id_1>
+              <PDBxv:auth_atom_id_2><xsl:value-of select="substring-after($atoms,',')"/></PDBxv:auth_atom_id_2>
+            </xsl:when>
+            <xsl:otherwise>
+              <PDBxv:auth_atom_id_1>?</PDBxv:auth_atom_id_1>
+              <PDBxv:auth_atom_id_2>?</PDBxv:auth_atom_id_2>
+            </xsl:otherwise>
+          </xsl:choose>
           </xsl:otherwise>
           </xsl:choose>
           <PDBxv:label_asym_id_1><xsl:value-of select="@said_1"/></PDBxv:label_asym_id_1>
           <PDBxv:label_asym_id_2><xsl:value-of select="@said_2"/></PDBxv:label_asym_id_2>
           <PDBxv:label_seq_id_1><xsl:value-of select="@seq_1"/></PDBxv:label_seq_id_1>
           <PDBxv:label_seq_id_2><xsl:value-of select="@seq_2"/></PDBxv:label_seq_id_2>
-          <PDBxv:PDB_ins_code_1><xsl:value-of select="@icode_1"/></PDBxv:PDB_ins_code_1>
-          <PDBxv:PDB_ins_code_2><xsl:value-of select="@icode_2"/></PDBxv:PDB_ins_code_2>
-          <PDBxv:label_alt_id_1><xsl:value-of select="@altcode_1"/></PDBxv:label_alt_id_1>
-          <PDBxv:label_alt_id_2><xsl:value-of select="@altcode_2"/></PDBxv:label_alt_id_2>
+          <PDBxv:PDB_ins_code_1><xsl:value-of select="translate($icode_1,' ','?')"/></PDBxv:PDB_ins_code_1>
+          <PDBxv:PDB_ins_code_2><xsl:value-of select="translate($icode_2,' ','?')"/></PDBxv:PDB_ins_code_2>
+          <PDBxv:label_alt_id_1><xsl:value-of select="translate($altcode_1,' ','.')"/></PDBxv:label_alt_id_1>
+          <PDBxv:label_alt_id_2><xsl:value-of select="translate($altcode_2,' ','.')"/></PDBxv:label_alt_id_2>
         </PDBxv:pdbx_nmr_distance_violation_plural>
       </xsl:for-each>
     </PDBxv:pdbx_nmr_distance_violation_pluralCategory>
@@ -1313,24 +1363,65 @@ Distance restraint type, <xsl:value-of select="@dist_rest_type"/>, is not listed
           <PDBxv:auth_seq_id_2><xsl:value-of select="@resnum_2"/></PDBxv:auth_seq_id_2>
           <PDBxv:auth_comp_id_1><xsl:value-of select="@resname_1"/></PDBxv:auth_comp_id_1>
           <PDBxv:auth_comp_id_2><xsl:value-of select="@resname_2"/></PDBxv:auth_comp_id_2>
+          <xsl:variable name="icode_1"><xsl:value-of select="translate(@icode_1,'?.','  ')"/></xsl:variable>
+          <xsl:variable name="icode_2"><xsl:value-of select="translate(@icode_2,'?.','  ')"/></xsl:variable>
+          <xsl:variable name="altcode_1"><xsl:value-of select="translate(@altcode_1,'?.','  ')"/></xsl:variable>
+          <xsl:variable name="altcode_2"><xsl:value-of select="translate(@altcode_2,'?.','  ')"/></xsl:variable>
           <xsl:choose>
           <xsl:when test="@atom_1"> <!-- v5.01 or later -->
           <PDBxv:auth_atom_id_1><xsl:value-of select="@atom_1"/></PDBxv:auth_atom_id_1>
           <PDBxv:auth_atom_id_2><xsl:value-of select="@atom_2"/></PDBxv:auth_atom_id_2>
           </xsl:when>
           <xsl:otherwise> <!-- v005 -->
-          <PDBxv:auth_atom_id_1>?</PDBxv:auth_atom_id_1>
-          <PDBxv:auth_atom_id_2>?</PDBxv:auth_atom_id_2>
+          <xsl:variable name="rlist_id"><xsl:value-of select="@rlist_id"/></xsl:variable>
+          <xsl:variable name="rest_id"><xsl:value-of select="@rest_id"/></xsl:variable>
+          <xsl:variable name="model"><xsl:value-of select="@model"/></xsl:variable>
+          <xsl:variable name="chain_1"><xsl:value-of select="@chain_1"/></xsl:variable>
+          <xsl:variable name="chain_2"><xsl:value-of select="@chain_2"/></xsl:variable>
+          <xsl:variable name="resnum_1"><xsl:value-of select="@resnum_1"/></xsl:variable>
+          <xsl:variable name="resnum_2"><xsl:value-of select="@resnum_2"/></xsl:variable>
+          <xsl:variable name="uniq"><xsl:value-of select="count(//violated_distance_restraints/violated_distance_restraint[@rlist_id=$rlist_id and @rest_id=$rest_id and @model=$model])"/></xsl:variable>
+          <xsl:variable name="intrares"><xsl:value-of select="$chain_1=$chain_2 and $resnum_1=$resnum_2"/></xsl:variable>
+          <xsl:choose>
+            <xsl:when test="$uniq=1 and $intrares=false()">
+              <xsl:variable name="atom_1">
+                <xsl:for-each select="/wwPDB-validation-information/ModelledSubgroup[@model=$model and @resnum=$resnum_1 and @icode=$icode_1]/distance_violation[@rlist_id=$rlist_id and @rest_id=$rest_id]">
+                  <xsl:value-of select="@atom"/>
+                </xsl:for-each>
+              </xsl:variable>
+              <xsl:variable name="atom_2">
+                <xsl:for-each select="/wwPDB-validation-information/ModelledSubgroup[@model=$model and @resnum=$resnum_2 and @icode=$icode_2]/distance_violation[@rlist_id=$rlist_id and @rest_id=$rest_id]">
+                  <xsl:value-of select="@atom"/>
+                </xsl:for-each>
+              </xsl:variable>
+              <PDBxv:auth_atom_id_1><xsl:value-of select="$atom_1"/></PDBxv:auth_atom_id_1>
+              <PDBxv:auth_atom_id_2><xsl:value-of select="$atom_2"/></PDBxv:auth_atom_id_2>
+            </xsl:when>
+            <xsl:when test="$uniq=1 and $intrares=true()">
+              <xsl:variable name="_atoms">
+                <xsl:for-each select="/wwPDB-validation-information/ModelledSubgroup[@model=$model and @resnum=$resnum_1 and @icode=$icode_1]/distance_violation[@rlist_id=$rlist_id and @rest_id=$rest_id]">
+                  <xsl:value-of select="concat(@atom,',')"/>
+                </xsl:for-each>
+              </xsl:variable>
+              <xsl:variable name="atoms"><xsl:value-of select="substring($_atoms,1,string-length($_atoms)-1)"/></xsl:variable>
+              <PDBxv:auth_atom_id_1><xsl:value-of select="substring-before($atoms,',')"/></PDBxv:auth_atom_id_1>
+              <PDBxv:auth_atom_id_2><xsl:value-of select="substring-after($atoms,',')"/></PDBxv:auth_atom_id_2>
+            </xsl:when>
+            <xsl:otherwise>
+              <PDBxv:auth_atom_id_1>?</PDBxv:auth_atom_id_1>
+              <PDBxv:auth_atom_id_2>?</PDBxv:auth_atom_id_2>
+            </xsl:otherwise>
+          </xsl:choose>
           </xsl:otherwise>
           </xsl:choose>
           <PDBxv:label_asym_id_1><xsl:value-of select="@said_1"/></PDBxv:label_asym_id_1>
           <PDBxv:label_asym_id_2><xsl:value-of select="@said_2"/></PDBxv:label_asym_id_2>
           <PDBxv:label_seq_id_1><xsl:value-of select="@seq_1"/></PDBxv:label_seq_id_1>
           <PDBxv:label_seq_id_2><xsl:value-of select="@seq_2"/></PDBxv:label_seq_id_2>
-          <PDBxv:PDB_ins_code_1><xsl:value-of select="@icode_1"/></PDBxv:PDB_ins_code_1>
-          <PDBxv:PDB_ins_code_2><xsl:value-of select="@icode_2"/></PDBxv:PDB_ins_code_2>
-          <PDBxv:label_alt_id_1><xsl:value-of select="@altcode_1"/></PDBxv:label_alt_id_1>
-          <PDBxv:label_alt_id_2><xsl:value-of select="@altcode_2"/></PDBxv:label_alt_id_2>
+          <PDBxv:PDB_ins_code_1><xsl:value-of select="translate($icode_1,' ','?')"/></PDBxv:PDB_ins_code_1>
+          <PDBxv:PDB_ins_code_2><xsl:value-of select="translate($icode_2,' ','?')"/></PDBxv:PDB_ins_code_2>
+          <PDBxv:label_alt_id_1><xsl:value-of select="translate($altcode_1,' ','.')"/></PDBxv:label_alt_id_1>
+          <PDBxv:label_alt_id_2><xsl:value-of select="translate($altcode_2,' ','.')"/></PDBxv:label_alt_id_2>
         </PDBxv:pdbx_nmr_distance_violation>
       </xsl:for-each>
     </PDBxv:pdbx_nmr_distance_violationCategory>
@@ -1668,8 +1759,16 @@ Dihedral angle restraint type, <xsl:value-of select="@ang_rest_type"/>, is not l
           <PDBxv:auth_comp_id_2><xsl:value-of select="@resname_2"/></PDBxv:auth_comp_id_2>
           <PDBxv:auth_comp_id_3><xsl:value-of select="@resname_3"/></PDBxv:auth_comp_id_3>
           <PDBxv:auth_comp_id_4><xsl:value-of select="@resname_4"/></PDBxv:auth_comp_id_4>
+          <xsl:variable name="icode_1"><xsl:value-of select="translate(@icode_1,'?.','  ')"/></xsl:variable>
+          <xsl:variable name="icode_2"><xsl:value-of select="translate(@icode_2,'?.','  ')"/></xsl:variable>
+          <xsl:variable name="icode_3"><xsl:value-of select="translate(@icode_3,'?.','  ')"/></xsl:variable>
+          <xsl:variable name="icode_4"><xsl:value-of select="translate(@icode_4,'?.','  ')"/></xsl:variable>
+          <xsl:variable name="altcode_1"><xsl:value-of select="translate(@altcode_1,'?.','  ')"/></xsl:variable>
+          <xsl:variable name="altcode_2"><xsl:value-of select="translate(@altcode_2,'?.','  ')"/></xsl:variable>
+          <xsl:variable name="altcode_3"><xsl:value-of select="translate(@altcode_3,'?.','  ')"/></xsl:variable>
+          <xsl:variable name="altcode_4"><xsl:value-of select="translate(@altcode_4,'?.','  ')"/></xsl:variable>
           <xsl:choose>
-          <xsl:when test="@atom_1"> <!-- v5. -->
+          <xsl:when test="@atom_1"> <!-- v5.01 or later -->
           <PDBxv:auth_atom_id_1><xsl:value-of select="@atom_1"/></PDBxv:auth_atom_id_1>
           <PDBxv:auth_atom_id_2><xsl:value-of select="@atom_2"/></PDBxv:auth_atom_id_2>
           <PDBxv:auth_atom_id_3><xsl:value-of select="@atom_3"/></PDBxv:auth_atom_id_3>
@@ -1687,14 +1786,14 @@ Dihedral angle restraint type, <xsl:value-of select="@ang_rest_type"/>, is not l
           <PDBxv:label_seq_id_2><xsl:value-of select="@seq_2"/></PDBxv:label_seq_id_2>
           <PDBxv:label_seq_id_3><xsl:value-of select="@seq_3"/></PDBxv:label_seq_id_3>
           <PDBxv:label_seq_id_4><xsl:value-of select="@seq_4"/></PDBxv:label_seq_id_4>
-          <PDBxv:PDB_ins_code_1><xsl:value-of select="@icode_1"/></PDBxv:PDB_ins_code_1>
-          <PDBxv:PDB_ins_code_2><xsl:value-of select="@icode_2"/></PDBxv:PDB_ins_code_2>
-          <PDBxv:PDB_ins_code_3><xsl:value-of select="@icode_3"/></PDBxv:PDB_ins_code_3>
-          <PDBxv:PDB_ins_code_4><xsl:value-of select="@icode_4"/></PDBxv:PDB_ins_code_4>
-          <PDBxv:label_alt_id_1><xsl:value-of select="@altcode_1"/></PDBxv:label_alt_id_1>
-          <PDBxv:label_alt_id_2><xsl:value-of select="@altcode_2"/></PDBxv:label_alt_id_2>
-          <PDBxv:label_alt_id_3><xsl:value-of select="@altcode_3"/></PDBxv:label_alt_id_3>
-          <PDBxv:label_alt_id_4><xsl:value-of select="@altcode_4"/></PDBxv:label_alt_id_4>
+          <PDBxv:PDB_ins_code_1><xsl:value-of select="translate($icode_1,' ','?')"/></PDBxv:PDB_ins_code_1>
+          <PDBxv:PDB_ins_code_2><xsl:value-of select="translate($icode_2,' ','?')"/></PDBxv:PDB_ins_code_2>
+          <PDBxv:PDB_ins_code_3><xsl:value-of select="translate($icode_3,' ','?')"/></PDBxv:PDB_ins_code_3>
+          <PDBxv:PDB_ins_code_4><xsl:value-of select="translate($icode_4,' ','?')"/></PDBxv:PDB_ins_code_4>
+          <PDBxv:label_alt_id_1><xsl:value-of select="translate($altcode_1,' ','.')"/></PDBxv:label_alt_id_1>
+          <PDBxv:label_alt_id_2><xsl:value-of select="translate($altcode_2,' ','.')"/></PDBxv:label_alt_id_2>
+          <PDBxv:label_alt_id_3><xsl:value-of select="translate($altcode_3,' ','.')"/></PDBxv:label_alt_id_3>
+          <PDBxv:label_alt_id_4><xsl:value-of select="translate($altcode_4,' ','.')"/></PDBxv:label_alt_id_4>
         </PDBxv:pdbx_nmr_dihedral_angle_violation_plural>
       </xsl:for-each>
     </PDBxv:pdbx_nmr_dihedral_angle_violation_pluralCategory>
@@ -1718,6 +1817,14 @@ Dihedral angle restraint type, <xsl:value-of select="@ang_rest_type"/>, is not l
           <PDBxv:auth_comp_id_2><xsl:value-of select="@resname_2"/></PDBxv:auth_comp_id_2>
           <PDBxv:auth_comp_id_3><xsl:value-of select="@resname_3"/></PDBxv:auth_comp_id_3>
           <PDBxv:auth_comp_id_4><xsl:value-of select="@resname_4"/></PDBxv:auth_comp_id_4>
+          <xsl:variable name="icode_1"><xsl:value-of select="translate(@icode_1,'?.','  ')"/></xsl:variable>
+          <xsl:variable name="icode_2"><xsl:value-of select="translate(@icode_2,'?.','  ')"/></xsl:variable>
+          <xsl:variable name="icode_3"><xsl:value-of select="translate(@icode_3,'?.','  ')"/></xsl:variable>
+          <xsl:variable name="icode_4"><xsl:value-of select="translate(@icode_4,'?.','  ')"/></xsl:variable>
+          <xsl:variable name="altcode_1"><xsl:value-of select="translate(@altcode_1,'?.','  ')"/></xsl:variable>
+          <xsl:variable name="altcode_2"><xsl:value-of select="translate(@altcode_2,'?.','  ')"/></xsl:variable>
+          <xsl:variable name="altcode_3"><xsl:value-of select="translate(@altcode_3,'?.','  ')"/></xsl:variable>
+          <xsl:variable name="altcode_4"><xsl:value-of select="translate(@altcode_4,'?.','  ')"/></xsl:variable>
           <xsl:choose>
           <xsl:when test="@atom_1"> <!-- v5.01 or later -->
           <PDBxv:auth_atom_id_1><xsl:value-of select="@atom_1"/></PDBxv:auth_atom_id_1>
@@ -1737,14 +1844,14 @@ Dihedral angle restraint type, <xsl:value-of select="@ang_rest_type"/>, is not l
           <PDBxv:label_seq_id_2><xsl:value-of select="@seq_2"/></PDBxv:label_seq_id_2>
           <PDBxv:label_seq_id_3><xsl:value-of select="@seq_3"/></PDBxv:label_seq_id_3>
           <PDBxv:label_seq_id_4><xsl:value-of select="@seq_4"/></PDBxv:label_seq_id_4>
-          <PDBxv:PDB_ins_code_1><xsl:value-of select="@icode_1"/></PDBxv:PDB_ins_code_1>
-          <PDBxv:PDB_ins_code_2><xsl:value-of select="@icode_2"/></PDBxv:PDB_ins_code_2>
-          <PDBxv:PDB_ins_code_3><xsl:value-of select="@icode_3"/></PDBxv:PDB_ins_code_3>
-          <PDBxv:PDB_ins_code_4><xsl:value-of select="@icode_4"/></PDBxv:PDB_ins_code_4>
-          <PDBxv:label_alt_id_1><xsl:value-of select="@altcode_1"/></PDBxv:label_alt_id_1>
-          <PDBxv:label_alt_id_2><xsl:value-of select="@altcode_2"/></PDBxv:label_alt_id_2>
-          <PDBxv:label_alt_id_3><xsl:value-of select="@altcode_3"/></PDBxv:label_alt_id_3>
-          <PDBxv:label_alt_id_4><xsl:value-of select="@altcode_4"/></PDBxv:label_alt_id_4>
+          <PDBxv:PDB_ins_code_1><xsl:value-of select="translate($icode_1,' ','?')"/></PDBxv:PDB_ins_code_1>
+          <PDBxv:PDB_ins_code_2><xsl:value-of select="translate($icode_2,' ','?')"/></PDBxv:PDB_ins_code_2>
+          <PDBxv:PDB_ins_code_3><xsl:value-of select="translate($icode_3,' ','?')"/></PDBxv:PDB_ins_code_3>
+          <PDBxv:PDB_ins_code_4><xsl:value-of select="translate($icode_4,' ','?')"/></PDBxv:PDB_ins_code_4>
+          <PDBxv:label_alt_id_1><xsl:value-of select="translate($altcode_1,' ','.')"/></PDBxv:label_alt_id_1>
+          <PDBxv:label_alt_id_2><xsl:value-of select="translate($altcode_2,' ','.')"/></PDBxv:label_alt_id_2>
+          <PDBxv:label_alt_id_3><xsl:value-of select="translate($altcode_3,' ','.')"/></PDBxv:label_alt_id_3>
+          <PDBxv:label_alt_id_4><xsl:value-of select="translate($altcode_4,' ','.')"/></PDBxv:label_alt_id_4>
         </PDBxv:pdbx_nmr_dihedral_angle_violation>
       </xsl:for-each>
     </PDBxv:pdbx_nmr_dihedral_angle_violationCategory>

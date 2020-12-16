@@ -1316,7 +1316,7 @@ Unmatched type exist in _pdbx_nmr_assigned_chem_shift_list.nmr_star_consistency_
           <xsl:attribute name="icode"><xsl:value-of select="$pdb_ins_code"/></xsl:attribute>
         </xsl:when>
         <xsl:otherwise>
-          <xsl:attribute name="icode"/>
+          <xsl:attribute name="icode"> </xsl:attribute>
         </xsl:otherwise>
       </xsl:choose>
       <xsl:choose>
@@ -1324,7 +1324,7 @@ Unmatched type exist in _pdbx_nmr_assigned_chem_shift_list.nmr_star_consistency_
           <xsl:attribute name="altcode"><xsl:value-of select="$alt_id"/></xsl:attribute>
         </xsl:when>
         <xsl:otherwise>
-          <xsl:attribute name="altcode"/>
+          <xsl:attribute name="altcode"> </xsl:attribute>
         </xsl:otherwise>
       </xsl:choose>
 
@@ -2596,10 +2596,10 @@ Distance restraint subtype , <xsl:value-of select="@subtype"/>, is not listed in
               <xsl:attribute name="said_2"><xsl:value-of select="PDBxv:label_asym_id_2"/></xsl:attribute>
               <xsl:attribute name="seq_1"><xsl:value-of select="PDBxv:label_seq_id_1"/></xsl:attribute>
               <xsl:attribute name="seq_2"><xsl:value-of select="PDBxv:label_seq_id_2"/></xsl:attribute>
-              <xsl:attribute name="icode_1"><xsl:value-of select="PDBxv:PDB_ins_code_1"/></xsl:attribute>
-              <xsl:attribute name="icode_2"><xsl:value-of select="PDBxv:PDB_ins_code_2"/></xsl:attribute>
-              <xsl:attribute name="altcode_1"><xsl:value-of select="PDBxv:label_alt_id_1"/></xsl:attribute>
-              <xsl:attribute name="altcode_2"><xsl:value-of select="PDBxv:label_alt_id_2"/></xsl:attribute>
+              <xsl:attribute name="icode_1"><xsl:value-of select="translate(PDBxv:PDB_ins_code_1,'?.','  ')"/></xsl:attribute>
+              <xsl:attribute name="icode_2"><xsl:value-of select="translate(PDBxv:PDB_ins_code_2,'?.','  ')"/></xsl:attribute>
+              <xsl:attribute name="altcode_1"><xsl:value-of select="translate(PDBxv:label_alt_id_1,'?.','  ')"/></xsl:attribute>
+              <xsl:attribute name="altcode_2"><xsl:value-of select="translate(PDBxv:label_alt_id_2,'?.','  ')"/></xsl:attribute>
             </most_violated_distance_restraint>
           </xsl:for-each>
         </most_violated_distance_restraints>
@@ -2628,10 +2628,10 @@ Distance restraint subtype , <xsl:value-of select="@subtype"/>, is not listed in
               <xsl:attribute name="said_2"><xsl:value-of select="PDBxv:label_asym_id_2"/></xsl:attribute>
               <xsl:attribute name="seq_1"><xsl:value-of select="PDBxv:label_seq_id_1"/></xsl:attribute>
               <xsl:attribute name="seq_2"><xsl:value-of select="PDBxv:label_seq_id_2"/></xsl:attribute>
-              <xsl:attribute name="icode_1"><xsl:value-of select="PDBxv:PDB_ins_code_1"/></xsl:attribute>
-              <xsl:attribute name="icode_2"><xsl:value-of select="PDBxv:PDB_ins_code_2"/></xsl:attribute>
-              <xsl:attribute name="altcode_1"><xsl:value-of select="PDBxv:label_alt_id_1"/></xsl:attribute>
-              <xsl:attribute name="altcode_2"><xsl:value-of select="PDBxv:label_alt_id_2"/></xsl:attribute>
+              <xsl:attribute name="icode_1"><xsl:value-of select="translate(PDBxv:PDB_ins_code_1,'?.','  ')"/></xsl:attribute>
+              <xsl:attribute name="icode_2"><xsl:value-of select="translate(PDBxv:PDB_ins_code_2,'?.','  ')"/></xsl:attribute>
+              <xsl:attribute name="altcode_1"><xsl:value-of select="translate(PDBxv:label_alt_id_1,'?.','  ')"/></xsl:attribute>
+              <xsl:attribute name="altcode_2"><xsl:value-of select="translate(PDBxv:label_alt_id_2,'?.','  ')"/></xsl:attribute>
             </violated_distance_restraint>
           </xsl:for-each>
         </violated_distance_restraints>
@@ -2957,14 +2957,14 @@ Dihedral angle restraint type , <xsl:value-of select="@type"/>, is not listed in
               <xsl:attribute name="seq_2"><xsl:value-of select="PDBxv:label_seq_id_2"/></xsl:attribute>
               <xsl:attribute name="seq_3"><xsl:value-of select="PDBxv:label_seq_id_3"/></xsl:attribute>
               <xsl:attribute name="seq_4"><xsl:value-of select="PDBxv:label_seq_id_4"/></xsl:attribute>
-              <xsl:attribute name="icode_1"><xsl:value-of select="PDBxv:PDB_ins_code_1"/></xsl:attribute>
-              <xsl:attribute name="icode_2"><xsl:value-of select="PDBxv:PDB_ins_code_2"/></xsl:attribute>
-              <xsl:attribute name="icode_3"><xsl:value-of select="PDBxv:PDB_ins_code_3"/></xsl:attribute>
-              <xsl:attribute name="icode_4"><xsl:value-of select="PDBxv:PDB_ins_code_4"/></xsl:attribute>
-              <xsl:attribute name="altcode_1"><xsl:value-of select="PDBxv:label_alt_id_1"/></xsl:attribute>
-              <xsl:attribute name="altcode_2"><xsl:value-of select="PDBxv:label_alt_id_2"/></xsl:attribute>
-              <xsl:attribute name="altcode_3"><xsl:value-of select="PDBxv:label_alt_id_3"/></xsl:attribute>
-              <xsl:attribute name="altcode_4"><xsl:value-of select="PDBxv:label_alt_id_4"/></xsl:attribute>
+              <xsl:attribute name="icode_1"><xsl:value-of select="translate(PDBxv:PDB_ins_code_1,'?.','  ')"/></xsl:attribute>
+              <xsl:attribute name="icode_2"><xsl:value-of select="translate(PDBxv:PDB_ins_code_2,'?.','  ')"/></xsl:attribute>
+              <xsl:attribute name="icode_3"><xsl:value-of select="translate(PDBxv:PDB_ins_code_3,'?.','  ')"/></xsl:attribute>
+              <xsl:attribute name="icode_4"><xsl:value-of select="translate(PDBxv:PDB_ins_code_4,'?.','  ')"/></xsl:attribute>
+              <xsl:attribute name="altcode_1"><xsl:value-of select="translate(PDBxv:label_alt_id_1,'?.','  ')"/></xsl:attribute>
+              <xsl:attribute name="altcode_2"><xsl:value-of select="translate(PDBxv:label_alt_id_2,'?.','  ')"/></xsl:attribute>
+              <xsl:attribute name="altcode_3"><xsl:value-of select="translate(PDBxv:label_alt_id_3,'?.','  ')"/></xsl:attribute>
+              <xsl:attribute name="altcode_4"><xsl:value-of select="translate(PDBxv:label_alt_id_4,'?.','  ')"/></xsl:attribute>
             </most_violated_dihedralangle_restraint>
           </xsl:for-each>
         </most_violated_dihedralangle_restraints>
@@ -3007,14 +3007,14 @@ Dihedral angle restraint type , <xsl:value-of select="@type"/>, is not listed in
               <xsl:attribute name="seq_2"><xsl:value-of select="PDBxv:label_seq_id_2"/></xsl:attribute>
               <xsl:attribute name="seq_3"><xsl:value-of select="PDBxv:label_seq_id_3"/></xsl:attribute>
               <xsl:attribute name="seq_4"><xsl:value-of select="PDBxv:label_seq_id_4"/></xsl:attribute>
-              <xsl:attribute name="icode_1"><xsl:value-of select="PDBxv:PDB_ins_code_1"/></xsl:attribute>
-              <xsl:attribute name="icode_2"><xsl:value-of select="PDBxv:PDB_ins_code_2"/></xsl:attribute>
-              <xsl:attribute name="icode_3"><xsl:value-of select="PDBxv:PDB_ins_code_3"/></xsl:attribute>
-              <xsl:attribute name="icode_4"><xsl:value-of select="PDBxv:PDB_ins_code_4"/></xsl:attribute>
-              <xsl:attribute name="altcode_1"><xsl:value-of select="PDBxv:label_alt_id_1"/></xsl:attribute>
-              <xsl:attribute name="altcode_2"><xsl:value-of select="PDBxv:label_alt_id_2"/></xsl:attribute>
-              <xsl:attribute name="altcode_3"><xsl:value-of select="PDBxv:label_alt_id_3"/></xsl:attribute>
-              <xsl:attribute name="altcode_4"><xsl:value-of select="PDBxv:label_alt_id_4"/></xsl:attribute>
+              <xsl:attribute name="icode_1"><xsl:value-of select="translate(PDBxv:PDB_ins_code_1,'?.','  ')"/></xsl:attribute>
+              <xsl:attribute name="icode_2"><xsl:value-of select="translate(PDBxv:PDB_ins_code_2,'?.','  ')"/></xsl:attribute>
+              <xsl:attribute name="icode_3"><xsl:value-of select="translate(PDBxv:PDB_ins_code_3,'?.','  ')"/></xsl:attribute>
+              <xsl:attribute name="icode_4"><xsl:value-of select="translate(PDBxv:PDB_ins_code_4,'?.','  ')"/></xsl:attribute>
+              <xsl:attribute name="altcode_1"><xsl:value-of select="translate(PDBxv:label_alt_id_1,'?.','  ')"/></xsl:attribute>
+              <xsl:attribute name="altcode_2"><xsl:value-of select="translate(PDBxv:label_alt_id_2,'?.','  ')"/></xsl:attribute>
+              <xsl:attribute name="altcode_3"><xsl:value-of select="translate(PDBxv:label_alt_id_3,'?.','  ')"/></xsl:attribute>
+              <xsl:attribute name="altcode_4"><xsl:value-of select="translate(PDBxv:label_alt_id_4,'?.','  ')"/></xsl:attribute>
             </violated_dihedralangle_restraint>
           </xsl:for-each>
         </violated_dihedralangle_restraints>
