@@ -44,6 +44,27 @@
     <xsl:value-of select="$datablock/PDBxv:pdbx_struct_nmr_ens_clustCategory/PDBxv:pdbx_struct_nmr_ens_clust/PDBxv:conformers_total_number"/>
   </xsl:variable>
 
+  <xsl:variable name="cs_only">
+    <xsl:choose>
+      <xsl:when test="$datablock/PDBxv:pdbx_nmr_restraint_listCategory/PDBxv:pdbx_nmr_restraint_list">no</xsl:when>
+      <xsl:otherwise>yes</xsl:otherwise>
+    </xsl:choose>
+  </xsl:variable>
+
+  <xsl:variable name="dist_rest">
+    <xsl:choose>
+      <xsl:when test="$datablock/PDBxv:pdbx_nmr_restraint_listCategory/PDBxv:pdbx_nmr_restraint_list[@type='distance']">yes</xsl:when>
+      <xsl:otherwise>no</xsl:otherwise>
+    </xsl:choose>
+  </xsl:variable>
+
+  <xsl:variable name="dihed_rest">
+    <xsl:choose>
+      <xsl:when test="$datablock/PDBxv:pdbx_nmr_restraint_listCategory/PDBxv:pdbx_nmr_restraint_list[@type='dihedral_angle']">yes</xsl:when>
+      <xsl:otherwise>no</xsl:otherwise>
+    </xsl:choose>
+  </xsl:variable>
+
   <!-- Level 1 -->
 
   <xsl:template match="$datablock">
@@ -108,12 +129,12 @@ Unmatched entry ID in both documents (<xsl:value-of select="$entry_id"/> and <xs
         <xsl:call-template name="EM_validation"/>
       </xsl:if>
 
-      <xsl:if test="$nmr=true() and PDBxv:pdbx_nmr_restraint_listCategory/PDBxv:pdbx_nmr_restraint_list">
+      <xsl:if test="$cs_only='no'">
         <xsl:call-template name="NMR_restraints_analysis"/>
-        <xsl:if test="PDBxv:pdbx_nmr_restraint_listCategory/PDBxv:pdbx_nmr_restraint_list[@type='distance']">
+        <xsl:if test="$dist_rest='yes'">
           <xsl:call-template name="distance_restraints_analysis"/>
         </xsl:if>
-        <xsl:if test="PDBxv:pdbx_nmr_restraint_listCategory/PDBxv:pdbx_nmr_restraint_list[@type='dihedral_angle']">
+        <xsl:if test="$dihed_rest='yes'">
           <xsl:call-template name="dihedralangle_restraints_analysis"/>
         </xsl:if>
       </xsl:if>
@@ -257,14 +278,7 @@ Unmatched entry ID in both documents (<xsl:value-of select="$entry_id"/> and <xs
         <xsl:attribute name="chemical_shift_completeness_full_length"><xsl:value-of select="format-number(number(PDBxv:number_assigned_chem_shifts) div number(PDBxv:number_target_shifts) * 100,'0.00')"/></xsl:attribute>
       </xsl:for-each>
 
-      <xsl:choose>
-        <xsl:when test="PDBxv:pdbx_nmr_restraint_listCategory/PDBxv:pdbx_nmr_restraint_list">
-          <xsl:attribute name="cs_only">no</xsl:attribute>
-        </xsl:when>
-        <xsl:otherwise>
-          <xsl:attribute name="cs_only">yes</xsl:attribute>
-        </xsl:otherwise>
-      </xsl:choose>
+      <xsl:attribute name="cs_only"><xsl:value-of select="$cs_only"/></xsl:attribute>
 
     </xsl:if>
 
@@ -1783,6 +1797,104 @@ Unmatched type exist in _pdbx_nmr_assigned_chem_shift_list.nmr_star_consistency_
         </xsl:if>
 
       </xsl:for-each>
+
+      <!-- distance_violation -->
+
+      <xsl:if test="$dist_rest='yes'">
+
+        <xsl:for-each select="$datablock/PDBxv:pdbx_nmr_distance_violationCategory/PDBxv:pdbx_nmr_distance_violation[PDBxv:PDB_model_num=$model and ((PDBxv:auth_asym_id_1=$strand_id and PDBxv:auth_comp_id_1=$mon_id and PDBxv:auth_seq_id_1=$pdb_seq_num and ($alt_id='' or PDBxv:label_alt_id_1=$alt_id)) or (PDBxv:auth_asym_id_2=$strand_id and PDBxv:auth_comp_id_2=$mon_id and PDBxv:auth_seq_id_2=$pdb_seq_num and ($alt_id='' or PDBxv:label_alt_id_2=$alt_id))) and PDBxv:violation]">
+
+          <xsl:if test="PDBxv:auth_asym_id_1=$strand_id and PDBxv:auth_comp_id_1=$mon_id and PDBxv:auth_seq_id_1=$pdb_seq_num and ($alt_id='' or PDBxv:label_alt_id_1=$alt_id)">
+
+            <distance_violation>
+
+              <xsl:attribute name="atom"><xsl:value-of select="PDBxv:auth_atom_id_1"/></xsl:attribute>
+              <xsl:attribute name="dist_violation_value"><xsl:value-of select="PDBxv:violation"/></xsl:attribute>
+              <xsl:attribute name="rest_id"><xsl:value-of select="PDBxv:restraint_id"/></xsl:attribute>
+              <xsl:attribute name="rlist_id"><xsl:value-of select="PDBxv:list_id"/></xsl:attribute>
+
+            </distance_violation>
+
+          </xsl:if>
+
+          <xsl:if test="PDBxv:auth_asym_id_2=$strand_id and PDBxv:auth_comp_id_2=$mon_id and PDBxv:auth_seq_id_2=$pdb_seq_num and ($alt_id='' or PDBxv:label_alt_id_2=$alt_id)">
+
+            <distance_violation>
+
+              <xsl:attribute name="atom"><xsl:value-of select="PDBxv:auth_atom_id_2"/></xsl:attribute>
+              <xsl:attribute name="dist_violation_value"><xsl:value-of select="PDBxv:violation"/></xsl:attribute>
+              <xsl:attribute name="rest_id"><xsl:value-of select="PDBxv:restraint_id"/></xsl:attribute>
+              <xsl:attribute name="rlist_id"><xsl:value-of select="PDBxv:list_id"/></xsl:attribute>
+
+            </distance_violation>
+
+          </xsl:if>
+
+        </xsl:for-each>
+
+      </xsl:if>
+
+      <!-- dihedralangle_violation -->
+
+      <xsl:if test="$dihed_rest='yes'">
+
+        <xsl:for-each select="$datablock/PDBxv:pdbx_nmr_dihedral_angle_violationCategory/PDBxv:pdbx_nmr_dihedral_angle_violation[PDBxv:PDB_model_num=$model and PDBxv:auth_asym_id=$strand_id and ((PDBxv:auth_comp_id_1=$mon_id and PDBxv:auth_seq_id_1=$pdb_seq_num and ($alt_id='' or PDBxv:label_alt_id_1=$alt_id)) or (PDBxv:auth_comp_id_2=$mon_id and PDBxv:auth_seq_id_2=$pdb_seq_num and ($alt_id='' or PDBxv:label_alt_id_2=$alt_id)) or (PDBxv:auth_comp_id_3=$mon_id and PDBxv:auth_seq_id_3=$pdb_seq_num and ($alt_id='' or PDBxv:label_alt_id_3=$alt_id)) or (PDBxv:auth_comp_id_4=$mon_id and PDBxv:auth_seq_id_4=$pdb_seq_num and ($alt_id='' or PDBxv:label_alt_id_4=$alt_id))) and PDBxv:violation]">
+
+          <xsl:if test="PDBxv:auth_comp_id_1=$mon_id and PDBxv:auth_seq_id_1=$pdb_seq_num and ($alt_id='' or PDBxv:label_alt_id_1=$alt_id)">
+
+            <dihedralangle_violation>
+
+              <xsl:attribute name="atom"><xsl:value-of select="PDBxv:auth_atom_id_1"/></xsl:attribute>
+              <xsl:attribute name="DihedralAngViolationValue"><xsl:value-of select="PDBxv:violation"/></xsl:attribute>
+              <xsl:attribute name="rest_id"><xsl:value-of select="PDBxv:restraint_id"/></xsl:attribute>
+              <xsl:attribute name="rlist_id"><xsl:value-of select="PDBxv:list_id"/></xsl:attribute>
+
+            </dihedralangle_violation>
+
+          </xsl:if>
+
+          <xsl:if test="PDBxv:auth_comp_id_2=$mon_id and PDBxv:auth_seq_id_2=$pdb_seq_num and ($alt_id='' or PDBxv:label_alt_id_2=$alt_id)">
+
+            <dihedralangle_violation>
+
+              <xsl:attribute name="atom"><xsl:value-of select="PDBxv:auth_atom_id_2"/></xsl:attribute>
+              <xsl:attribute name="DihedralAngViolationValue"><xsl:value-of select="PDBxv:violation"/></xsl:attribute>
+              <xsl:attribute name="rest_id"><xsl:value-of select="PDBxv:restraint_id"/></xsl:attribute>
+              <xsl:attribute name="rlist_id"><xsl:value-of select="PDBxv:list_id"/></xsl:attribute>
+
+            </dihedralangle_violation>
+
+          </xsl:if>
+
+          <xsl:if test="PDBxv:auth_comp_id_3=$mon_id and PDBxv:auth_seq_id_3=$pdb_seq_num and ($alt_id='' or PDBxv:label_alt_id_3=$alt_id)">
+
+            <dihedralangle_violation>
+
+              <xsl:attribute name="atom"><xsl:value-of select="PDBxv:auth_atom_id_3"/></xsl:attribute>
+              <xsl:attribute name="DihedralAngViolationValue"><xsl:value-of select="PDBxv:violation"/></xsl:attribute>
+              <xsl:attribute name="rest_id"><xsl:value-of select="PDBxv:restraint_id"/></xsl:attribute>
+              <xsl:attribute name="rlist_id"><xsl:value-of select="PDBxv:list_id"/></xsl:attribute>
+
+            </dihedralangle_violation>
+
+          </xsl:if>
+
+          <xsl:if test="PDBxv:auth_comp_id_4=$mon_id and PDBxv:auth_seq_id_4=$pdb_seq_num and ($alt_id='' or PDBxv:label_alt_id_4=$alt_id)">
+
+            <dihedralangle_violation>
+
+              <xsl:attribute name="atom"><xsl:value-of select="PDBxv:auth_atom_id_4"/></xsl:attribute>
+              <xsl:attribute name="DihedralAngViolationValue"><xsl:value-of select="PDBxv:violation"/></xsl:attribute>
+              <xsl:attribute name="rest_id"><xsl:value-of select="PDBxv:restraint_id"/></xsl:attribute>
+              <xsl:attribute name="rlist_id"><xsl:value-of select="PDBxv:list_id"/></xsl:attribute>
+
+            </dihedralangle_violation>
+
+          </xsl:if>
+
+        </xsl:for-each>
+
+      </xsl:if>
 
     </ModelledSubgroup>
 
