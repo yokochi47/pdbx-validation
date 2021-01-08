@@ -165,7 +165,7 @@ File path | Document
 ## Release notes
 
 - **Jan 8, 2021**: Release v3.0.1
-	- Update wwPDB Validation Information Dictionary to 2.337.
+	- Update wwPDB Validation Information Dictionary to 3.337.
 
 - **Dec 16, 2020**: Release v3.0.0
 	- Support XML Schema for wwPDB validation report (wwpdb_validation_v5.01.xsd).
