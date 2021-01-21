@@ -527,6 +527,7 @@ citation.language
 citation.page_first
 citation.page_last
 citation.pdbx_database_id_DOI
+citation.pdbx_database_id_patent
 citation.pdbx_database_id_PubMed
 citation.title
 citation.unpublished_flag
