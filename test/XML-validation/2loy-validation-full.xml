@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<PDBxv:datablock xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:PDBxv="http://pdbml.pdb.org/schema/pdbx-validation-v3.xsd" datablockName="2LOY-validation-full" xsi:schemaLocation="http://pdbml.pdb.org/schema/pdbx-validation-v3.xsd pdbx-validation-v3.xsd">
+<PDBxv:datablock xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:PDBxv="http://pdbml.pdb.org/schema/pdbx-validation-v4.xsd" datablockName="2LOY-validation-full" xsi:schemaLocation="http://pdbml.pdb.org/schema/pdbx-validation-v4.xsd pdbx-validation-v4.xsd">
   <PDBxv:entityCategory>
     <PDBxv:entity id="1">
       <PDBxv:formula_weight>21642.564</PDBxv:formula_weight>
@@ -658,7 +658,7 @@ VDGTEVPTLMLVKEAIIEEKCLEHHHHHH</PDBxv:pdbx_seq_one_letter_code_can>
       <PDBxv:status_code>REL</PDBxv:status_code>
       <PDBxv:status_code_cs>REL</PDBxv:status_code_cs>
       <PDBxv:status_code_mr>REL</PDBxv:status_code_mr>
-      <PDBxv:validation_created_date>2020-12-14</PDBxv:validation_created_date>
+      <PDBxv:validation_created_date>2021-01-26</PDBxv:validation_created_date>
     </PDBxv:pdbx_database_status>
   </PDBxv:pdbx_database_statusCategory>
   <PDBxv:pdbx_nmr_constraintsCategory>
@@ -6790,7 +6790,7 @@ VDGTEVPTLMLVKEAIIEEKC</PDBxv:pdbx_seq_one_letter_code>
   </PDBxv:struct_sheet_rangeCategory>
   <PDBxv:pdbx_nmr_assigned_chem_shift_listCategory>
     <PDBxv:pdbx_nmr_assigned_chem_shift_list id="1">
-      <PDBxv:data_file_name>D_800380_nmr-data-str_P1.cif.V12</PDBxv:data_file_name>
+      <PDBxv:data_file_name>D_800385_nmr-data-str_P1.cif.V12</PDBxv:data_file_name>
       <PDBxv:label>nef_chemical_shift_list_bmr16833.str</PDBxv:label>
       <PDBxv:nmr_star_consistency_flag>Y</PDBxv:nmr_star_consistency_flag>
       <PDBxv:number_chem_shifts>1275</PDBxv:number_chem_shifts>
@@ -59309,7 +59309,7 @@ VDGTEVPTLMLVKEAIIEEKC</PDBxv:pdbx_seq_one_letter_code>
       <PDBxv:restraint_id>175</PDBxv:restraint_id>
       <PDBxv:violation_models_count>15</PDBxv:violation_models_count>
       <PDBxv:average_violation>6.63</PDBxv:average_violation>
-      <PDBxv:median_violation>1.04</PDBxv:median_violation>
+      <PDBxv:median_violation>6.4</PDBxv:median_violation>
       <PDBxv:standard_deviation>1.04</PDBxv:standard_deviation>
       <PDBxv:entity_id>1</PDBxv:entity_id>
       <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
@@ -59344,7 +59344,7 @@ VDGTEVPTLMLVKEAIIEEKC</PDBxv:pdbx_seq_one_letter_code>
       <PDBxv:restraint_id>230</PDBxv:restraint_id>
       <PDBxv:violation_models_count>15</PDBxv:violation_models_count>
       <PDBxv:average_violation>2.29</PDBxv:average_violation>
-      <PDBxv:median_violation>0.7</PDBxv:median_violation>
+      <PDBxv:median_violation>2.1</PDBxv:median_violation>
       <PDBxv:standard_deviation>0.7</PDBxv:standard_deviation>
       <PDBxv:entity_id>1</PDBxv:entity_id>
       <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
@@ -59379,7 +59379,7 @@ VDGTEVPTLMLVKEAIIEEKC</PDBxv:pdbx_seq_one_letter_code>
       <PDBxv:restraint_id>167</PDBxv:restraint_id>
       <PDBxv:violation_models_count>15</PDBxv:violation_models_count>
       <PDBxv:average_violation>2.23</PDBxv:average_violation>
-      <PDBxv:median_violation>0.74</PDBxv:median_violation>
+      <PDBxv:median_violation>2.1</PDBxv:median_violation>
       <PDBxv:standard_deviation>0.74</PDBxv:standard_deviation>
       <PDBxv:entity_id>1</PDBxv:entity_id>
       <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
@@ -59414,7 +59414,7 @@ VDGTEVPTLMLVKEAIIEEKC</PDBxv:pdbx_seq_one_letter_code>
       <PDBxv:restraint_id>271</PDBxv:restraint_id>
       <PDBxv:violation_models_count>13</PDBxv:violation_models_count>
       <PDBxv:average_violation>88.85</PDBxv:average_violation>
-      <PDBxv:median_violation>67.11</PDBxv:median_violation>
+      <PDBxv:median_violation>138.4</PDBxv:median_violation>
       <PDBxv:standard_deviation>67.11</PDBxv:standard_deviation>
       <PDBxv:entity_id>1</PDBxv:entity_id>
       <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
@@ -59449,7 +59449,7 @@ VDGTEVPTLMLVKEAIIEEKC</PDBxv:pdbx_seq_one_letter_code>
       <PDBxv:restraint_id>86</PDBxv:restraint_id>
       <PDBxv:violation_models_count>13</PDBxv:violation_models_count>
       <PDBxv:average_violation>2.35</PDBxv:average_violation>
-      <PDBxv:median_violation>1.05</PDBxv:median_violation>
+      <PDBxv:median_violation>1.8</PDBxv:median_violation>
       <PDBxv:standard_deviation>1.05</PDBxv:standard_deviation>
       <PDBxv:entity_id>1</PDBxv:entity_id>
       <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
@@ -59484,7 +59484,7 @@ VDGTEVPTLMLVKEAIIEEKC</PDBxv:pdbx_seq_one_letter_code>
       <PDBxv:restraint_id>16</PDBxv:restraint_id>
       <PDBxv:violation_models_count>12</PDBxv:violation_models_count>
       <PDBxv:average_violation>3.41</PDBxv:average_violation>
-      <PDBxv:median_violation>1.39</PDBxv:median_violation>
+      <PDBxv:median_violation>3.5</PDBxv:median_violation>
       <PDBxv:standard_deviation>1.39</PDBxv:standard_deviation>
       <PDBxv:entity_id>1</PDBxv:entity_id>
       <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
@@ -59519,7 +59519,7 @@ VDGTEVPTLMLVKEAIIEEKC</PDBxv:pdbx_seq_one_letter_code>
       <PDBxv:restraint_id>22</PDBxv:restraint_id>
       <PDBxv:violation_models_count>12</PDBxv:violation_models_count>
       <PDBxv:average_violation>3.02</PDBxv:average_violation>
-      <PDBxv:median_violation>1.35</PDBxv:median_violation>
+      <PDBxv:median_violation>3.35</PDBxv:median_violation>
       <PDBxv:standard_deviation>1.35</PDBxv:standard_deviation>
       <PDBxv:entity_id>1</PDBxv:entity_id>
       <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
@@ -59554,7 +59554,7 @@ VDGTEVPTLMLVKEAIIEEKC</PDBxv:pdbx_seq_one_letter_code>
       <PDBxv:restraint_id>255</PDBxv:restraint_id>
       <PDBxv:violation_models_count>11</PDBxv:violation_models_count>
       <PDBxv:average_violation>2.92</PDBxv:average_violation>
-      <PDBxv:median_violation>0.87</PDBxv:median_violation>
+      <PDBxv:median_violation>2.8</PDBxv:median_violation>
       <PDBxv:standard_deviation>0.87</PDBxv:standard_deviation>
       <PDBxv:entity_id>1</PDBxv:entity_id>
       <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
@@ -59589,7 +59589,7 @@ VDGTEVPTLMLVKEAIIEEKC</PDBxv:pdbx_seq_one_letter_code>
       <PDBxv:restraint_id>19</PDBxv:restraint_id>
       <PDBxv:violation_models_count>11</PDBxv:violation_models_count>
       <PDBxv:average_violation>2.54</PDBxv:average_violation>
-      <PDBxv:median_violation>1.09</PDBxv:median_violation>
+      <PDBxv:median_violation>2.3</PDBxv:median_violation>
       <PDBxv:standard_deviation>1.09</PDBxv:standard_deviation>
       <PDBxv:entity_id>1</PDBxv:entity_id>
       <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
@@ -59624,7 +59624,7 @@ VDGTEVPTLMLVKEAIIEEKC</PDBxv:pdbx_seq_one_letter_code>
       <PDBxv:restraint_id>243</PDBxv:restraint_id>
       <PDBxv:violation_models_count>11</PDBxv:violation_models_count>
       <PDBxv:average_violation>2.44</PDBxv:average_violation>
-      <PDBxv:median_violation>0.81</PDBxv:median_violation>
+      <PDBxv:median_violation>2.3</PDBxv:median_violation>
       <PDBxv:standard_deviation>0.81</PDBxv:standard_deviation>
       <PDBxv:entity_id>1</PDBxv:entity_id>
       <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
@@ -59659,7 +59659,7 @@ VDGTEVPTLMLVKEAIIEEKC</PDBxv:pdbx_seq_one_letter_code>
       <PDBxv:restraint_id>253</PDBxv:restraint_id>
       <PDBxv:violation_models_count>11</PDBxv:violation_models_count>
       <PDBxv:average_violation>2.22</PDBxv:average_violation>
-      <PDBxv:median_violation>0.6</PDBxv:median_violation>
+      <PDBxv:median_violation>2.1</PDBxv:median_violation>
       <PDBxv:standard_deviation>0.6</PDBxv:standard_deviation>
       <PDBxv:entity_id>1</PDBxv:entity_id>
       <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
@@ -59694,7 +59694,7 @@ VDGTEVPTLMLVKEAIIEEKC</PDBxv:pdbx_seq_one_letter_code>
       <PDBxv:restraint_id>14</PDBxv:restraint_id>
       <PDBxv:violation_models_count>10</PDBxv:violation_models_count>
       <PDBxv:average_violation>5.23</PDBxv:average_violation>
-      <PDBxv:median_violation>2.64</PDBxv:median_violation>
+      <PDBxv:median_violation>4.95</PDBxv:median_violation>
       <PDBxv:standard_deviation>2.64</PDBxv:standard_deviation>
       <PDBxv:entity_id>1</PDBxv:entity_id>
       <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
@@ -59729,7 +59729,7 @@ VDGTEVPTLMLVKEAIIEEKC</PDBxv:pdbx_seq_one_letter_code>
       <PDBxv:restraint_id>35</PDBxv:restraint_id>
       <PDBxv:violation_models_count>10</PDBxv:violation_models_count>
       <PDBxv:average_violation>2.42</PDBxv:average_violation>
-      <PDBxv:median_violation>0.86</PDBxv:median_violation>
+      <PDBxv:median_violation>2.5</PDBxv:median_violation>
       <PDBxv:standard_deviation>0.86</PDBxv:standard_deviation>
       <PDBxv:entity_id>1</PDBxv:entity_id>
       <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
@@ -59764,7 +59764,7 @@ VDGTEVPTLMLVKEAIIEEKC</PDBxv:pdbx_seq_one_letter_code>
       <PDBxv:restraint_id>293</PDBxv:restraint_id>
       <PDBxv:violation_models_count>9</PDBxv:violation_models_count>
       <PDBxv:average_violation>95.31</PDBxv:average_violation>
-      <PDBxv:median_violation>66.17</PDBxv:median_violation>
+      <PDBxv:median_violation>140.4</PDBxv:median_violation>
       <PDBxv:standard_deviation>66.17</PDBxv:standard_deviation>
       <PDBxv:entity_id>1</PDBxv:entity_id>
       <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
@@ -59799,7 +59799,7 @@ VDGTEVPTLMLVKEAIIEEKC</PDBxv:pdbx_seq_one_letter_code>
       <PDBxv:restraint_id>13</PDBxv:restraint_id>
       <PDBxv:violation_models_count>9</PDBxv:violation_models_count>
       <PDBxv:average_violation>4.61</PDBxv:average_violation>
-      <PDBxv:median_violation>1.29</PDBxv:median_violation>
+      <PDBxv:median_violation>4.1</PDBxv:median_violation>
       <PDBxv:standard_deviation>1.29</PDBxv:standard_deviation>
       <PDBxv:entity_id>1</PDBxv:entity_id>
       <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
@@ -59834,7 +59834,7 @@ VDGTEVPTLMLVKEAIIEEKC</PDBxv:pdbx_seq_one_letter_code>
       <PDBxv:restraint_id>52</PDBxv:restraint_id>
       <PDBxv:violation_models_count>9</PDBxv:violation_models_count>
       <PDBxv:average_violation>2.92</PDBxv:average_violation>
-      <PDBxv:median_violation>1.02</PDBxv:median_violation>
+      <PDBxv:median_violation>2.6</PDBxv:median_violation>
       <PDBxv:standard_deviation>1.02</PDBxv:standard_deviation>
       <PDBxv:entity_id>1</PDBxv:entity_id>
       <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
@@ -59869,7 +59869,7 @@ VDGTEVPTLMLVKEAIIEEKC</PDBxv:pdbx_seq_one_letter_code>
       <PDBxv:restraint_id>172</PDBxv:restraint_id>
       <PDBxv:violation_models_count>9</PDBxv:violation_models_count>
       <PDBxv:average_violation>2.7</PDBxv:average_violation>
-      <PDBxv:median_violation>1.26</PDBxv:median_violation>
+      <PDBxv:median_violation>2.5</PDBxv:median_violation>
       <PDBxv:standard_deviation>1.26</PDBxv:standard_deviation>
       <PDBxv:entity_id>1</PDBxv:entity_id>
       <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
@@ -59904,7 +59904,7 @@ VDGTEVPTLMLVKEAIIEEKC</PDBxv:pdbx_seq_one_letter_code>
       <PDBxv:restraint_id>4</PDBxv:restraint_id>
       <PDBxv:violation_models_count>9</PDBxv:violation_models_count>
       <PDBxv:average_violation>2.46</PDBxv:average_violation>
-      <PDBxv:median_violation>0.89</PDBxv:median_violation>
+      <PDBxv:median_violation>2.2</PDBxv:median_violation>
       <PDBxv:standard_deviation>0.89</PDBxv:standard_deviation>
       <PDBxv:entity_id>1</PDBxv:entity_id>
       <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
@@ -59939,7 +59939,7 @@ VDGTEVPTLMLVKEAIIEEKC</PDBxv:pdbx_seq_one_letter_code>
       <PDBxv:restraint_id>18</PDBxv:restraint_id>
       <PDBxv:violation_models_count>8</PDBxv:violation_models_count>
       <PDBxv:average_violation>8.95</PDBxv:average_violation>
-      <PDBxv:median_violation>1.34</PDBxv:median_violation>
+      <PDBxv:median_violation>9.0</PDBxv:median_violation>
       <PDBxv:standard_deviation>1.34</PDBxv:standard_deviation>
       <PDBxv:entity_id>1</PDBxv:entity_id>
       <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
@@ -59974,7 +59974,7 @@ VDGTEVPTLMLVKEAIIEEKC</PDBxv:pdbx_seq_one_letter_code>
       <PDBxv:restraint_id>180</PDBxv:restraint_id>
       <PDBxv:violation_models_count>8</PDBxv:violation_models_count>
       <PDBxv:average_violation>2.35</PDBxv:average_violation>
-      <PDBxv:median_violation>1.03</PDBxv:median_violation>
+      <PDBxv:median_violation>1.85</PDBxv:median_violation>
       <PDBxv:standard_deviation>1.03</PDBxv:standard_deviation>
       <PDBxv:entity_id>1</PDBxv:entity_id>
       <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
@@ -60009,7 +60009,7 @@ VDGTEVPTLMLVKEAIIEEKC</PDBxv:pdbx_seq_one_letter_code>
       <PDBxv:restraint_id>57</PDBxv:restraint_id>
       <PDBxv:violation_models_count>8</PDBxv:violation_models_count>
       <PDBxv:average_violation>2.2</PDBxv:average_violation>
-      <PDBxv:median_violation>0.85</PDBxv:median_violation>
+      <PDBxv:median_violation>2.2</PDBxv:median_violation>
       <PDBxv:standard_deviation>0.85</PDBxv:standard_deviation>
       <PDBxv:entity_id>1</PDBxv:entity_id>
       <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
@@ -60044,7 +60044,7 @@ VDGTEVPTLMLVKEAIIEEKC</PDBxv:pdbx_seq_one_letter_code>
       <PDBxv:restraint_id>251</PDBxv:restraint_id>
       <PDBxv:violation_models_count>8</PDBxv:violation_models_count>
       <PDBxv:average_violation>2.17</PDBxv:average_violation>
-      <PDBxv:median_violation>0.82</PDBxv:median_violation>
+      <PDBxv:median_violation>2.15</PDBxv:median_violation>
       <PDBxv:standard_deviation>0.82</PDBxv:standard_deviation>
       <PDBxv:entity_id>1</PDBxv:entity_id>
       <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
@@ -60079,7 +60079,7 @@ VDGTEVPTLMLVKEAIIEEKC</PDBxv:pdbx_seq_one_letter_code>
       <PDBxv:restraint_id>83</PDBxv:restraint_id>
       <PDBxv:violation_models_count>8</PDBxv:violation_models_count>
       <PDBxv:average_violation>1.86</PDBxv:average_violation>
-      <PDBxv:median_violation>0.39</PDBxv:median_violation>
+      <PDBxv:median_violation>1.8</PDBxv:median_violation>
       <PDBxv:standard_deviation>0.39</PDBxv:standard_deviation>
       <PDBxv:entity_id>1</PDBxv:entity_id>
       <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
@@ -60114,7 +60114,7 @@ VDGTEVPTLMLVKEAIIEEKC</PDBxv:pdbx_seq_one_letter_code>
       <PDBxv:restraint_id>54</PDBxv:restraint_id>
       <PDBxv:violation_models_count>7</PDBxv:violation_models_count>
       <PDBxv:average_violation>2.99</PDBxv:average_violation>
-      <PDBxv:median_violation>0.9</PDBxv:median_violation>
+      <PDBxv:median_violation>3.0</PDBxv:median_violation>
       <PDBxv:standard_deviation>0.9</PDBxv:standard_deviation>
       <PDBxv:entity_id>1</PDBxv:entity_id>
       <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
@@ -60149,7 +60149,7 @@ VDGTEVPTLMLVKEAIIEEKC</PDBxv:pdbx_seq_one_letter_code>
       <PDBxv:restraint_id>53</PDBxv:restraint_id>
       <PDBxv:violation_models_count>7</PDBxv:violation_models_count>
       <PDBxv:average_violation>1.97</PDBxv:average_violation>
-      <PDBxv:median_violation>0.66</PDBxv:median_violation>
+      <PDBxv:median_violation>2.1</PDBxv:median_violation>
       <PDBxv:standard_deviation>0.66</PDBxv:standard_deviation>
       <PDBxv:entity_id>1</PDBxv:entity_id>
       <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
@@ -60184,7 +60184,7 @@ VDGTEVPTLMLVKEAIIEEKC</PDBxv:pdbx_seq_one_letter_code>
       <PDBxv:restraint_id>214</PDBxv:restraint_id>
       <PDBxv:violation_models_count>7</PDBxv:violation_models_count>
       <PDBxv:average_violation>1.94</PDBxv:average_violation>
-      <PDBxv:median_violation>0.69</PDBxv:median_violation>
+      <PDBxv:median_violation>1.6</PDBxv:median_violation>
       <PDBxv:standard_deviation>0.69</PDBxv:standard_deviation>
       <PDBxv:entity_id>1</PDBxv:entity_id>
       <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
@@ -60219,7 +60219,7 @@ VDGTEVPTLMLVKEAIIEEKC</PDBxv:pdbx_seq_one_letter_code>
       <PDBxv:restraint_id>77</PDBxv:restraint_id>
       <PDBxv:violation_models_count>7</PDBxv:violation_models_count>
       <PDBxv:average_violation>1.93</PDBxv:average_violation>
-      <PDBxv:median_violation>0.77</PDBxv:median_violation>
+      <PDBxv:median_violation>1.7</PDBxv:median_violation>
       <PDBxv:standard_deviation>0.77</PDBxv:standard_deviation>
       <PDBxv:entity_id>1</PDBxv:entity_id>
       <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
@@ -60254,7 +60254,7 @@ VDGTEVPTLMLVKEAIIEEKC</PDBxv:pdbx_seq_one_letter_code>
       <PDBxv:restraint_id>227</PDBxv:restraint_id>
       <PDBxv:violation_models_count>7</PDBxv:violation_models_count>
       <PDBxv:average_violation>1.77</PDBxv:average_violation>
-      <PDBxv:median_violation>0.55</PDBxv:median_violation>
+      <PDBxv:median_violation>1.6</PDBxv:median_violation>
       <PDBxv:standard_deviation>0.55</PDBxv:standard_deviation>
       <PDBxv:entity_id>1</PDBxv:entity_id>
       <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
@@ -60289,7 +60289,7 @@ VDGTEVPTLMLVKEAIIEEKC</PDBxv:pdbx_seq_one_letter_code>
       <PDBxv:restraint_id>279</PDBxv:restraint_id>
       <PDBxv:violation_models_count>7</PDBxv:violation_models_count>
       <PDBxv:average_violation>1.6</PDBxv:average_violation>
-      <PDBxv:median_violation>0.36</PDBxv:median_violation>
+      <PDBxv:median_violation>1.6</PDBxv:median_violation>
       <PDBxv:standard_deviation>0.36</PDBxv:standard_deviation>
       <PDBxv:entity_id>1</PDBxv:entity_id>
       <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
@@ -60324,7 +60324,7 @@ VDGTEVPTLMLVKEAIIEEKC</PDBxv:pdbx_seq_one_letter_code>
       <PDBxv:restraint_id>15</PDBxv:restraint_id>
       <PDBxv:violation_models_count>6</PDBxv:violation_models_count>
       <PDBxv:average_violation>5.87</PDBxv:average_violation>
-      <PDBxv:median_violation>2.11</PDBxv:median_violation>
+      <PDBxv:median_violation>6.35</PDBxv:median_violation>
       <PDBxv:standard_deviation>2.11</PDBxv:standard_deviation>
       <PDBxv:entity_id>1</PDBxv:entity_id>
       <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
@@ -60359,7 +60359,7 @@ VDGTEVPTLMLVKEAIIEEKC</PDBxv:pdbx_seq_one_letter_code>
       <PDBxv:restraint_id>21</PDBxv:restraint_id>
       <PDBxv:violation_models_count>6</PDBxv:violation_models_count>
       <PDBxv:average_violation>3.08</PDBxv:average_violation>
-      <PDBxv:median_violation>0.78</PDBxv:median_violation>
+      <PDBxv:median_violation>2.9</PDBxv:median_violation>
       <PDBxv:standard_deviation>0.78</PDBxv:standard_deviation>
       <PDBxv:entity_id>1</PDBxv:entity_id>
       <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
@@ -60394,7 +60394,7 @@ VDGTEVPTLMLVKEAIIEEKC</PDBxv:pdbx_seq_one_letter_code>
       <PDBxv:restraint_id>17</PDBxv:restraint_id>
       <PDBxv:violation_models_count>5</PDBxv:violation_models_count>
       <PDBxv:average_violation>2.32</PDBxv:average_violation>
-      <PDBxv:median_violation>0.98</PDBxv:median_violation>
+      <PDBxv:median_violation>2.7</PDBxv:median_violation>
       <PDBxv:standard_deviation>0.98</PDBxv:standard_deviation>
       <PDBxv:entity_id>1</PDBxv:entity_id>
       <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
@@ -60429,7 +60429,7 @@ VDGTEVPTLMLVKEAIIEEKC</PDBxv:pdbx_seq_one_letter_code>
       <PDBxv:restraint_id>23</PDBxv:restraint_id>
       <PDBxv:violation_models_count>5</PDBxv:violation_models_count>
       <PDBxv:average_violation>2.2</PDBxv:average_violation>
-      <PDBxv:median_violation>1.19</PDBxv:median_violation>
+      <PDBxv:median_violation>1.9</PDBxv:median_violation>
       <PDBxv:standard_deviation>1.19</PDBxv:standard_deviation>
       <PDBxv:entity_id>1</PDBxv:entity_id>
       <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
@@ -60464,7 +60464,7 @@ VDGTEVPTLMLVKEAIIEEKC</PDBxv:pdbx_seq_one_letter_code>
       <PDBxv:restraint_id>38</PDBxv:restraint_id>
       <PDBxv:violation_models_count>5</PDBxv:violation_models_count>
       <PDBxv:average_violation>2.06</PDBxv:average_violation>
-      <PDBxv:median_violation>0.58</PDBxv:median_violation>
+      <PDBxv:median_violation>2.0</PDBxv:median_violation>
       <PDBxv:standard_deviation>0.58</PDBxv:standard_deviation>
       <PDBxv:entity_id>1</PDBxv:entity_id>
       <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
@@ -60499,7 +60499,7 @@ VDGTEVPTLMLVKEAIIEEKC</PDBxv:pdbx_seq_one_letter_code>
       <PDBxv:restraint_id>220</PDBxv:restraint_id>
       <PDBxv:violation_models_count>5</PDBxv:violation_models_count>
       <PDBxv:average_violation>1.92</PDBxv:average_violation>
-      <PDBxv:median_violation>0.32</PDBxv:median_violation>
+      <PDBxv:median_violation>1.8</PDBxv:median_violation>
       <PDBxv:standard_deviation>0.32</PDBxv:standard_deviation>
       <PDBxv:entity_id>1</PDBxv:entity_id>
       <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
@@ -60534,7 +60534,7 @@ VDGTEVPTLMLVKEAIIEEKC</PDBxv:pdbx_seq_one_letter_code>
       <PDBxv:restraint_id>3</PDBxv:restraint_id>
       <PDBxv:violation_models_count>5</PDBxv:violation_models_count>
       <PDBxv:average_violation>1.88</PDBxv:average_violation>
-      <PDBxv:median_violation>0.67</PDBxv:median_violation>
+      <PDBxv:median_violation>1.5</PDBxv:median_violation>
       <PDBxv:standard_deviation>0.67</PDBxv:standard_deviation>
       <PDBxv:entity_id>1</PDBxv:entity_id>
       <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
@@ -60569,7 +60569,7 @@ VDGTEVPTLMLVKEAIIEEKC</PDBxv:pdbx_seq_one_letter_code>
       <PDBxv:restraint_id>199</PDBxv:restraint_id>
       <PDBxv:violation_models_count>5</PDBxv:violation_models_count>
       <PDBxv:average_violation>1.56</PDBxv:average_violation>
-      <PDBxv:median_violation>0.29</PDBxv:median_violation>
+      <PDBxv:median_violation>1.6</PDBxv:median_violation>
       <PDBxv:standard_deviation>0.29</PDBxv:standard_deviation>
       <PDBxv:entity_id>1</PDBxv:entity_id>
       <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
@@ -60604,7 +60604,7 @@ VDGTEVPTLMLVKEAIIEEKC</PDBxv:pdbx_seq_one_letter_code>
       <PDBxv:restraint_id>270</PDBxv:restraint_id>
       <PDBxv:violation_models_count>4</PDBxv:violation_models_count>
       <PDBxv:average_violation>4.1</PDBxv:average_violation>
-      <PDBxv:median_violation>0.44</PDBxv:median_violation>
+      <PDBxv:median_violation>4.0</PDBxv:median_violation>
       <PDBxv:standard_deviation>0.44</PDBxv:standard_deviation>
       <PDBxv:entity_id>1</PDBxv:entity_id>
       <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
@@ -60639,7 +60639,7 @@ VDGTEVPTLMLVKEAIIEEKC</PDBxv:pdbx_seq_one_letter_code>
       <PDBxv:restraint_id>25</PDBxv:restraint_id>
       <PDBxv:violation_models_count>4</PDBxv:violation_models_count>
       <PDBxv:average_violation>2.45</PDBxv:average_violation>
-      <PDBxv:median_violation>0.35</PDBxv:median_violation>
+      <PDBxv:median_violation>2.35</PDBxv:median_violation>
       <PDBxv:standard_deviation>0.35</PDBxv:standard_deviation>
       <PDBxv:entity_id>1</PDBxv:entity_id>
       <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
@@ -60674,7 +60674,7 @@ VDGTEVPTLMLVKEAIIEEKC</PDBxv:pdbx_seq_one_letter_code>
       <PDBxv:restraint_id>223</PDBxv:restraint_id>
       <PDBxv:violation_models_count>4</PDBxv:violation_models_count>
       <PDBxv:average_violation>2.4</PDBxv:average_violation>
-      <PDBxv:median_violation>0.78</PDBxv:median_violation>
+      <PDBxv:median_violation>2.4</PDBxv:median_violation>
       <PDBxv:standard_deviation>0.78</PDBxv:standard_deviation>
       <PDBxv:entity_id>1</PDBxv:entity_id>
       <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
@@ -60709,7 +60709,7 @@ VDGTEVPTLMLVKEAIIEEKC</PDBxv:pdbx_seq_one_letter_code>
       <PDBxv:restraint_id>36</PDBxv:restraint_id>
       <PDBxv:violation_models_count>4</PDBxv:violation_models_count>
       <PDBxv:average_violation>2.25</PDBxv:average_violation>
-      <PDBxv:median_violation>0.17</PDBxv:median_violation>
+      <PDBxv:median_violation>2.3</PDBxv:median_violation>
       <PDBxv:standard_deviation>0.17</PDBxv:standard_deviation>
       <PDBxv:entity_id>1</PDBxv:entity_id>
       <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
@@ -60744,7 +60744,7 @@ VDGTEVPTLMLVKEAIIEEKC</PDBxv:pdbx_seq_one_letter_code>
       <PDBxv:restraint_id>2</PDBxv:restraint_id>
       <PDBxv:violation_models_count>4</PDBxv:violation_models_count>
       <PDBxv:average_violation>2.08</PDBxv:average_violation>
-      <PDBxv:median_violation>0.08</PDBxv:median_violation>
+      <PDBxv:median_violation>2.05</PDBxv:median_violation>
       <PDBxv:standard_deviation>0.08</PDBxv:standard_deviation>
       <PDBxv:entity_id>1</PDBxv:entity_id>
       <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
@@ -60779,7 +60779,7 @@ VDGTEVPTLMLVKEAIIEEKC</PDBxv:pdbx_seq_one_letter_code>
       <PDBxv:restraint_id>171</PDBxv:restraint_id>
       <PDBxv:violation_models_count>4</PDBxv:violation_models_count>
       <PDBxv:average_violation>1.95</PDBxv:average_violation>
-      <PDBxv:median_violation>0.44</PDBxv:median_violation>
+      <PDBxv:median_violation>1.85</PDBxv:median_violation>
       <PDBxv:standard_deviation>0.44</PDBxv:standard_deviation>
       <PDBxv:entity_id>1</PDBxv:entity_id>
       <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
@@ -60814,7 +60814,7 @@ VDGTEVPTLMLVKEAIIEEKC</PDBxv:pdbx_seq_one_letter_code>
       <PDBxv:restraint_id>40</PDBxv:restraint_id>
       <PDBxv:violation_models_count>4</PDBxv:violation_models_count>
       <PDBxv:average_violation>1.8</PDBxv:average_violation>
-      <PDBxv:median_violation>0.55</PDBxv:median_violation>
+      <PDBxv:median_violation>1.65</PDBxv:median_violation>
       <PDBxv:standard_deviation>0.55</PDBxv:standard_deviation>
       <PDBxv:entity_id>1</PDBxv:entity_id>
       <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
@@ -60849,7 +60849,7 @@ VDGTEVPTLMLVKEAIIEEKC</PDBxv:pdbx_seq_one_letter_code>
       <PDBxv:restraint_id>78</PDBxv:restraint_id>
       <PDBxv:violation_models_count>4</PDBxv:violation_models_count>
       <PDBxv:average_violation>1.5</PDBxv:average_violation>
-      <PDBxv:median_violation>0.25</PDBxv:median_violation>
+      <PDBxv:median_violation>1.55</PDBxv:median_violation>
       <PDBxv:standard_deviation>0.25</PDBxv:standard_deviation>
       <PDBxv:entity_id>1</PDBxv:entity_id>
       <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
@@ -60884,7 +60884,7 @@ VDGTEVPTLMLVKEAIIEEKC</PDBxv:pdbx_seq_one_letter_code>
       <PDBxv:restraint_id>265</PDBxv:restraint_id>
       <PDBxv:violation_models_count>3</PDBxv:violation_models_count>
       <PDBxv:average_violation>147.07</PDBxv:average_violation>
-      <PDBxv:median_violation>3.6</PDBxv:median_violation>
+      <PDBxv:median_violation>148.6</PDBxv:median_violation>
       <PDBxv:standard_deviation>3.6</PDBxv:standard_deviation>
       <PDBxv:entity_id>1</PDBxv:entity_id>
       <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
@@ -60919,7 +60919,7 @@ VDGTEVPTLMLVKEAIIEEKC</PDBxv:pdbx_seq_one_letter_code>
       <PDBxv:restraint_id>24</PDBxv:restraint_id>
       <PDBxv:violation_models_count>3</PDBxv:violation_models_count>
       <PDBxv:average_violation>2.53</PDBxv:average_violation>
-      <PDBxv:median_violation>0.48</PDBxv:median_violation>
+      <PDBxv:median_violation>2.3</PDBxv:median_violation>
       <PDBxv:standard_deviation>0.48</PDBxv:standard_deviation>
       <PDBxv:entity_id>1</PDBxv:entity_id>
       <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
@@ -60954,7 +60954,7 @@ VDGTEVPTLMLVKEAIIEEKC</PDBxv:pdbx_seq_one_letter_code>
       <PDBxv:restraint_id>183</PDBxv:restraint_id>
       <PDBxv:violation_models_count>3</PDBxv:violation_models_count>
       <PDBxv:average_violation>2.4</PDBxv:average_violation>
-      <PDBxv:median_violation>0.98</PDBxv:median_violation>
+      <PDBxv:median_violation>2.4</PDBxv:median_violation>
       <PDBxv:standard_deviation>0.98</PDBxv:standard_deviation>
       <PDBxv:entity_id>1</PDBxv:entity_id>
       <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
@@ -60989,7 +60989,7 @@ VDGTEVPTLMLVKEAIIEEKC</PDBxv:pdbx_seq_one_letter_code>
       <PDBxv:restraint_id>5</PDBxv:restraint_id>
       <PDBxv:violation_models_count>3</PDBxv:violation_models_count>
       <PDBxv:average_violation>2.3</PDBxv:average_violation>
-      <PDBxv:median_violation>0.91</PDBxv:median_violation>
+      <PDBxv:median_violation>2.5</PDBxv:median_violation>
       <PDBxv:standard_deviation>0.91</PDBxv:standard_deviation>
       <PDBxv:entity_id>1</PDBxv:entity_id>
       <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
@@ -61024,7 +61024,7 @@ VDGTEVPTLMLVKEAIIEEKC</PDBxv:pdbx_seq_one_letter_code>
       <PDBxv:restraint_id>224</PDBxv:restraint_id>
       <PDBxv:violation_models_count>3</PDBxv:violation_models_count>
       <PDBxv:average_violation>2.27</PDBxv:average_violation>
-      <PDBxv:median_violation>0.69</PDBxv:median_violation>
+      <PDBxv:median_violation>2.6</PDBxv:median_violation>
       <PDBxv:standard_deviation>0.69</PDBxv:standard_deviation>
       <PDBxv:entity_id>1</PDBxv:entity_id>
       <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
@@ -61059,7 +61059,7 @@ VDGTEVPTLMLVKEAIIEEKC</PDBxv:pdbx_seq_one_letter_code>
       <PDBxv:restraint_id>82</PDBxv:restraint_id>
       <PDBxv:violation_models_count>3</PDBxv:violation_models_count>
       <PDBxv:average_violation>2.13</PDBxv:average_violation>
-      <PDBxv:median_violation>0.66</PDBxv:median_violation>
+      <PDBxv:median_violation>2.0</PDBxv:median_violation>
       <PDBxv:standard_deviation>0.66</PDBxv:standard_deviation>
       <PDBxv:entity_id>1</PDBxv:entity_id>
       <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
@@ -61094,7 +61094,7 @@ VDGTEVPTLMLVKEAIIEEKC</PDBxv:pdbx_seq_one_letter_code>
       <PDBxv:restraint_id>55</PDBxv:restraint_id>
       <PDBxv:violation_models_count>3</PDBxv:violation_models_count>
       <PDBxv:average_violation>2.13</PDBxv:average_violation>
-      <PDBxv:median_violation>0.57</PDBxv:median_violation>
+      <PDBxv:median_violation>2.2</PDBxv:median_violation>
       <PDBxv:standard_deviation>0.57</PDBxv:standard_deviation>
       <PDBxv:entity_id>1</PDBxv:entity_id>
       <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
@@ -61129,7 +61129,7 @@ VDGTEVPTLMLVKEAIIEEKC</PDBxv:pdbx_seq_one_letter_code>
       <PDBxv:restraint_id>249</PDBxv:restraint_id>
       <PDBxv:violation_models_count>3</PDBxv:violation_models_count>
       <PDBxv:average_violation>1.83</PDBxv:average_violation>
-      <PDBxv:median_violation>0.53</PDBxv:median_violation>
+      <PDBxv:median_violation>1.8</PDBxv:median_violation>
       <PDBxv:standard_deviation>0.53</PDBxv:standard_deviation>
       <PDBxv:entity_id>1</PDBxv:entity_id>
       <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
@@ -61164,7 +61164,7 @@ VDGTEVPTLMLVKEAIIEEKC</PDBxv:pdbx_seq_one_letter_code>
       <PDBxv:restraint_id>6</PDBxv:restraint_id>
       <PDBxv:violation_models_count>3</PDBxv:violation_models_count>
       <PDBxv:average_violation>1.73</PDBxv:average_violation>
-      <PDBxv:median_violation>0.42</PDBxv:median_violation>
+      <PDBxv:median_violation>1.6</PDBxv:median_violation>
       <PDBxv:standard_deviation>0.42</PDBxv:standard_deviation>
       <PDBxv:entity_id>1</PDBxv:entity_id>
       <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
@@ -61199,7 +61199,7 @@ VDGTEVPTLMLVKEAIIEEKC</PDBxv:pdbx_seq_one_letter_code>
       <PDBxv:restraint_id>72</PDBxv:restraint_id>
       <PDBxv:violation_models_count>3</PDBxv:violation_models_count>
       <PDBxv:average_violation>1.43</PDBxv:average_violation>
-      <PDBxv:median_violation>0.4</PDBxv:median_violation>
+      <PDBxv:median_violation>1.2</PDBxv:median_violation>
       <PDBxv:standard_deviation>0.4</PDBxv:standard_deviation>
       <PDBxv:entity_id>1</PDBxv:entity_id>
       <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
@@ -61234,7 +61234,7 @@ VDGTEVPTLMLVKEAIIEEKC</PDBxv:pdbx_seq_one_letter_code>
       <PDBxv:restraint_id>252</PDBxv:restraint_id>
       <PDBxv:violation_models_count>3</PDBxv:violation_models_count>
       <PDBxv:average_violation>1.27</PDBxv:average_violation>
-      <PDBxv:median_violation>0.05</PDBxv:median_violation>
+      <PDBxv:median_violation>1.3</PDBxv:median_violation>
       <PDBxv:standard_deviation>0.05</PDBxv:standard_deviation>
       <PDBxv:entity_id>1</PDBxv:entity_id>
       <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
@@ -61269,7 +61269,7 @@ VDGTEVPTLMLVKEAIIEEKC</PDBxv:pdbx_seq_one_letter_code>
       <PDBxv:restraint_id>246</PDBxv:restraint_id>
       <PDBxv:violation_models_count>2</PDBxv:violation_models_count>
       <PDBxv:average_violation>2.95</PDBxv:average_violation>
-      <PDBxv:median_violation>0.25</PDBxv:median_violation>
+      <PDBxv:median_violation>2.95</PDBxv:median_violation>
       <PDBxv:standard_deviation>0.25</PDBxv:standard_deviation>
       <PDBxv:entity_id>1</PDBxv:entity_id>
       <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
@@ -61339,7 +61339,7 @@ VDGTEVPTLMLVKEAIIEEKC</PDBxv:pdbx_seq_one_letter_code>
       <PDBxv:restraint_id>245</PDBxv:restraint_id>
       <PDBxv:violation_models_count>2</PDBxv:violation_models_count>
       <PDBxv:average_violation>2.1</PDBxv:average_violation>
-      <PDBxv:median_violation>0.4</PDBxv:median_violation>
+      <PDBxv:median_violation>2.1</PDBxv:median_violation>
       <PDBxv:standard_deviation>0.4</PDBxv:standard_deviation>
       <PDBxv:entity_id>1</PDBxv:entity_id>
       <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
@@ -61374,7 +61374,7 @@ VDGTEVPTLMLVKEAIIEEKC</PDBxv:pdbx_seq_one_letter_code>
       <PDBxv:restraint_id>7</PDBxv:restraint_id>
       <PDBxv:violation_models_count>2</PDBxv:violation_models_count>
       <PDBxv:average_violation>2.1</PDBxv:average_violation>
-      <PDBxv:median_violation>1.0</PDBxv:median_violation>
+      <PDBxv:median_violation>2.1</PDBxv:median_violation>
       <PDBxv:standard_deviation>1.0</PDBxv:standard_deviation>
       <PDBxv:entity_id>1</PDBxv:entity_id>
       <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
@@ -61409,7 +61409,7 @@ VDGTEVPTLMLVKEAIIEEKC</PDBxv:pdbx_seq_one_letter_code>
       <PDBxv:restraint_id>129</PDBxv:restraint_id>
       <PDBxv:violation_models_count>2</PDBxv:violation_models_count>
       <PDBxv:average_violation>2.1</PDBxv:average_violation>
-      <PDBxv:median_violation>0.2</PDBxv:median_violation>
+      <PDBxv:median_violation>2.1</PDBxv:median_violation>
       <PDBxv:standard_deviation>0.2</PDBxv:standard_deviation>
       <PDBxv:entity_id>1</PDBxv:entity_id>
       <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
@@ -61444,7 +61444,7 @@ VDGTEVPTLMLVKEAIIEEKC</PDBxv:pdbx_seq_one_letter_code>
       <PDBxv:restraint_id>222</PDBxv:restraint_id>
       <PDBxv:violation_models_count>2</PDBxv:violation_models_count>
       <PDBxv:average_violation>1.95</PDBxv:average_violation>
-      <PDBxv:median_violation>0.65</PDBxv:median_violation>
+      <PDBxv:median_violation>1.95</PDBxv:median_violation>
       <PDBxv:standard_deviation>0.65</PDBxv:standard_deviation>
       <PDBxv:entity_id>1</PDBxv:entity_id>
       <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
@@ -61479,7 +61479,7 @@ VDGTEVPTLMLVKEAIIEEKC</PDBxv:pdbx_seq_one_letter_code>
       <PDBxv:restraint_id>274</PDBxv:restraint_id>
       <PDBxv:violation_models_count>2</PDBxv:violation_models_count>
       <PDBxv:average_violation>1.95</PDBxv:average_violation>
-      <PDBxv:median_violation>0.65</PDBxv:median_violation>
+      <PDBxv:median_violation>1.95</PDBxv:median_violation>
       <PDBxv:standard_deviation>0.65</PDBxv:standard_deviation>
       <PDBxv:entity_id>1</PDBxv:entity_id>
       <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
@@ -61514,7 +61514,7 @@ VDGTEVPTLMLVKEAIIEEKC</PDBxv:pdbx_seq_one_letter_code>
       <PDBxv:restraint_id>70</PDBxv:restraint_id>
       <PDBxv:violation_models_count>2</PDBxv:violation_models_count>
       <PDBxv:average_violation>1.85</PDBxv:average_violation>
-      <PDBxv:median_violation>0.75</PDBxv:median_violation>
+      <PDBxv:median_violation>1.85</PDBxv:median_violation>
       <PDBxv:standard_deviation>0.75</PDBxv:standard_deviation>
       <PDBxv:entity_id>1</PDBxv:entity_id>
       <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
@@ -61549,7 +61549,7 @@ VDGTEVPTLMLVKEAIIEEKC</PDBxv:pdbx_seq_one_letter_code>
       <PDBxv:restraint_id>200</PDBxv:restraint_id>
       <PDBxv:violation_models_count>2</PDBxv:violation_models_count>
       <PDBxv:average_violation>1.85</PDBxv:average_violation>
-      <PDBxv:median_violation>0.25</PDBxv:median_violation>
+      <PDBxv:median_violation>1.85</PDBxv:median_violation>
       <PDBxv:standard_deviation>0.25</PDBxv:standard_deviation>
       <PDBxv:entity_id>1</PDBxv:entity_id>
       <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
@@ -61584,7 +61584,7 @@ VDGTEVPTLMLVKEAIIEEKC</PDBxv:pdbx_seq_one_letter_code>
       <PDBxv:restraint_id>275</PDBxv:restraint_id>
       <PDBxv:violation_models_count>2</PDBxv:violation_models_count>
       <PDBxv:average_violation>1.8</PDBxv:average_violation>
-      <PDBxv:median_violation>0.7</PDBxv:median_violation>
+      <PDBxv:median_violation>1.8</PDBxv:median_violation>
       <PDBxv:standard_deviation>0.7</PDBxv:standard_deviation>
       <PDBxv:entity_id>1</PDBxv:entity_id>
       <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
@@ -61619,7 +61619,7 @@ VDGTEVPTLMLVKEAIIEEKC</PDBxv:pdbx_seq_one_letter_code>
       <PDBxv:restraint_id>216</PDBxv:restraint_id>
       <PDBxv:violation_models_count>2</PDBxv:violation_models_count>
       <PDBxv:average_violation>1.8</PDBxv:average_violation>
-      <PDBxv:median_violation>0.7</PDBxv:median_violation>
+      <PDBxv:median_violation>1.8</PDBxv:median_violation>
       <PDBxv:standard_deviation>0.7</PDBxv:standard_deviation>
       <PDBxv:entity_id>1</PDBxv:entity_id>
       <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
@@ -61654,7 +61654,7 @@ VDGTEVPTLMLVKEAIIEEKC</PDBxv:pdbx_seq_one_letter_code>
       <PDBxv:restraint_id>247</PDBxv:restraint_id>
       <PDBxv:violation_models_count>2</PDBxv:violation_models_count>
       <PDBxv:average_violation>1.6</PDBxv:average_violation>
-      <PDBxv:median_violation>0.3</PDBxv:median_violation>
+      <PDBxv:median_violation>1.6</PDBxv:median_violation>
       <PDBxv:standard_deviation>0.3</PDBxv:standard_deviation>
       <PDBxv:entity_id>1</PDBxv:entity_id>
       <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
@@ -61689,7 +61689,7 @@ VDGTEVPTLMLVKEAIIEEKC</PDBxv:pdbx_seq_one_letter_code>
       <PDBxv:restraint_id>51</PDBxv:restraint_id>
       <PDBxv:violation_models_count>2</PDBxv:violation_models_count>
       <PDBxv:average_violation>1.6</PDBxv:average_violation>
-      <PDBxv:median_violation>0.3</PDBxv:median_violation>
+      <PDBxv:median_violation>1.6</PDBxv:median_violation>
       <PDBxv:standard_deviation>0.3</PDBxv:standard_deviation>
       <PDBxv:entity_id>1</PDBxv:entity_id>
       <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
@@ -61724,7 +61724,7 @@ VDGTEVPTLMLVKEAIIEEKC</PDBxv:pdbx_seq_one_letter_code>
       <PDBxv:restraint_id>213</PDBxv:restraint_id>
       <PDBxv:violation_models_count>2</PDBxv:violation_models_count>
       <PDBxv:average_violation>1.55</PDBxv:average_violation>
-      <PDBxv:median_violation>0.35</PDBxv:median_violation>
+      <PDBxv:median_violation>1.55</PDBxv:median_violation>
       <PDBxv:standard_deviation>0.35</PDBxv:standard_deviation>
       <PDBxv:entity_id>1</PDBxv:entity_id>
       <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
@@ -61759,7 +61759,7 @@ VDGTEVPTLMLVKEAIIEEKC</PDBxv:pdbx_seq_one_letter_code>
       <PDBxv:restraint_id>239</PDBxv:restraint_id>
       <PDBxv:violation_models_count>2</PDBxv:violation_models_count>
       <PDBxv:average_violation>1.35</PDBxv:average_violation>
-      <PDBxv:median_violation>0.05</PDBxv:median_violation>
+      <PDBxv:median_violation>1.35</PDBxv:median_violation>
       <PDBxv:standard_deviation>0.05</PDBxv:standard_deviation>
       <PDBxv:entity_id>1</PDBxv:entity_id>
       <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
@@ -61794,7 +61794,7 @@ VDGTEVPTLMLVKEAIIEEKC</PDBxv:pdbx_seq_one_letter_code>
       <PDBxv:restraint_id>169</PDBxv:restraint_id>
       <PDBxv:violation_models_count>2</PDBxv:violation_models_count>
       <PDBxv:average_violation>1.35</PDBxv:average_violation>
-      <PDBxv:median_violation>0.05</PDBxv:median_violation>
+      <PDBxv:median_violation>1.35</PDBxv:median_violation>
       <PDBxv:standard_deviation>0.05</PDBxv:standard_deviation>
       <PDBxv:entity_id>1</PDBxv:entity_id>
       <PDBxv:auth_asym_id>A</PDBxv:auth_asym_id>
@@ -76922,32 +76922,32 @@ VDGTEVPTLMLVKEAIIEEKC</PDBxv:pdbx_seq_one_letter_code>
       <PDBxv:details>numPDBids-absolute-percentile-clashscore,absolute-percentile-percent-rota-outliers,relative-percentile-clashscore,numPDBids-absolute-percentile-percent-rota-outliers,numPDBids-absolute-percentile-percent-rama-outliers,numPDBids-relative-percentile-percent-rota-outliers,numPDBids-relative-percentile-percent-rama-outliers,relative-percentile-percent-rota-outliers,numPDBids-relative-percentile-clashscore,no-percentile-property,relative-percentile-percent-rama-outliers,absolute-percentile-percent-rama-outliers,absolute-percentile-clashscore</PDBxv:details>
     </PDBxv:pdbx_validation_software>
     <PDBxv:pdbx_validation_software ordinal="3">
+      <PDBxv:name>validation-pipeline</PDBxv:name>
+      <PDBxv:version>2.17.dev9</PDBxv:version>
+      <PDBxv:classification>mmcif data extractor</PDBxv:classification>
+      <PDBxv:details>PDB-Rfree,chemicalshiftsInputFilename,coordinatesInputFilename,PDB-resolution,cs_only,reflectionsInputFilename,PDB-R,percentilebins,PDB-resolution-low,pdbid,attemptedValidationSteps,XMLcreationDate</PDBxv:details>
+    </PDBxv:pdbx_validation_software>
+    <PDBxv:pdbx_validation_software ordinal="4">
+      <PDBxv:name>coreclust</PDBxv:name>
+      <PDBxv:version>2.17.dev9</PDBxv:version>
+      <PDBxv:classification>assessment of nmr ensemble structure</PDBxv:classification>
+      <PDBxv:details>nmrclust_cluster_id,nmrclust_representative_model,nmrclust_number_of_models,residue_string,medoid_model,cyrange_error,rmsd,nmrclust_representative,number_of_residues,cyrange_version,nmrclust_version,cyrange_domain_id,percentage_of_core,nmrclust_number_of_outliers,cyrange_number_of_domains,nmrclust_number_of_clusters,validate,nmrclust_error,medoid_rmsd,number_of_gaps</PDBxv:details>
+    </PDBxv:pdbx_validation_software>
+    <PDBxv:pdbx_validation_software ordinal="5">
       <PDBxv:name>coreclust</PDBxv:name>
       <PDBxv:version>unknown</PDBxv:version>
       <PDBxv:classification>assessment of nmr ensemble structure</PDBxv:classification>
       <PDBxv:details>nmr_models_consistency_flag</PDBxv:details>
     </PDBxv:pdbx_validation_software>
-    <PDBxv:pdbx_validation_software ordinal="4">
-      <PDBxv:name>validation-pipeline</PDBxv:name>
-      <PDBxv:version>2.16.dev4</PDBxv:version>
-      <PDBxv:classification>mmcif data extractor</PDBxv:classification>
-      <PDBxv:details>PDB-Rfree,chemicalshiftsInputFilename,coordinatesInputFilename,PDB-resolution,cs_only,reflectionsInputFilename,PDB-R,percentilebins,PDB-resolution-low,pdbid,attemptedValidationSteps,XMLcreationDate</PDBxv:details>
-    </PDBxv:pdbx_validation_software>
-    <PDBxv:pdbx_validation_software ordinal="5">
+    <PDBxv:pdbx_validation_software ordinal="6">
       <PDBxv:name>nmrwriter</PDBxv:name>
-      <PDBxv:version>2.16.dev4</PDBxv:version>
+      <PDBxv:version>2.17.dev9</PDBxv:version>
       <PDBxv:classification>geometric validation of nmr ensemble structure</PDBxv:classification>
       <PDBxv:details>clashscore,percent-rota-outliers,percent-rama-outliers</PDBxv:details>
     </PDBxv:pdbx_validation_software>
-    <PDBxv:pdbx_validation_software ordinal="6">
-      <PDBxv:name>coreclust</PDBxv:name>
-      <PDBxv:version>2.16.dev4</PDBxv:version>
-      <PDBxv:classification>assessment of nmr ensemble structure</PDBxv:classification>
-      <PDBxv:details>nmrclust_cluster_id,nmrclust_representative_model,nmrclust_number_of_models,residue_string,medoid_model,cyrange_error,rmsd,nmrclust_representative,number_of_residues,cyrange_version,nmrclust_version,cyrange_domain_id,percentage_of_core,nmrclust_number_of_outliers,cyrange_number_of_domains,nmrclust_number_of_clusters,validate,nmrclust_error,medoid_rmsd,number_of_gaps</PDBxv:details>
-    </PDBxv:pdbx_validation_software>
     <PDBxv:pdbx_validation_software ordinal="7">
       <PDBxv:name>chemicalshifts</PDBxv:name>
-      <PDBxv:version>2.16.dev4</PDBxv:version>
+      <PDBxv:version>2.17.dev9</PDBxv:version>
       <PDBxv:classification>assessment of nmr assigned chemical shifts</PDBxv:classification>
       <PDBxv:details>rci_version,shiftchecker_version,chemical_shift_completeness,panav_version,chemical_shift_completeness_full_length</PDBxv:details>
     </PDBxv:pdbx_validation_software>
@@ -76973,7 +76973,7 @@ VDGTEVPTLMLVKEAIIEEKC</PDBxv:pdbx_seq_one_letter_code>
     </PDBxv:pdbx_validation_software>
     <PDBxv:pdbx_validation_software ordinal="12">
       <PDBxv:name>shiftchecker</PDBxv:name>
-      <PDBxv:version>2.16.dev4</PDBxv:version>
+      <PDBxv:version>2.17.dev9</PDBxv:version>
       <PDBxv:classification>nmr chemical shift validation</PDBxv:classification>
     </PDBxv:pdbx_validation_software>
   </PDBxv:pdbx_validation_softwareCategory>

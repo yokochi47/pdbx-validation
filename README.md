@@ -14,14 +14,14 @@ The pdbx-validation is a generation tool of alternative [wwPDB validation report
 
 File path | Document
 --------- | --------
-[schema/mmcif_pdbx_validation_v3.dic](https://github.com/yokochi47/pdbx-validation/blob/master/schema/mmcif_pdbx_validation_v3.338.dic) | wwPDB Validation Information Dictionary (v3.338)
-[schema/pdbx-validation-v3.xsd](https://github.com/yokochi47/pdbx-validation/blob/master/schema/pdbx-validation-v3.338.xsd) | PDBML-validation Schema (v3.338)
-[schema/pdbx-validation-v3.owl](https://github.com/yokochi47/pdbx-validation/blob/master/schema/pdbx-validation-v3.338.owl) | PDB/OWL-validation (v3.338)
+[schema/mmcif_pdbx_validation_v4.dic](https://github.com/yokochi47/pdbx-validation/blob/master/schema/mmcif_pdbx_validation_v4.338.dic) | wwPDB Validation Information Dictionary (v4.338)
+[schema/pdbx-validation-v4.xsd](https://github.com/yokochi47/pdbx-validation/blob/master/schema/pdbx-validation-v4.338.xsd) | PDBML-validation Schema (v4.338)
+[schema/pdbx-validation-v4.owl](https://github.com/yokochi47/pdbx-validation/blob/master/schema/pdbx-validation-v4.338.owl) | PDB/OWL-validation (v4.338)
 [schema/mmcif_ddl.dic](https://github.com/yokochi47/pdbx-validation/blob/master/schema/mmcif_ddl_v2.3.0.dic) | extended mmCIF DDL Core Dictionary (dubbed as v2.3.0)
 [resource/mmcif_pdbx_v50.dic](http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic) | PDB Exchange Data Dictionary (v5.338)
 [resource/pdbx-v50.xsd](https://github.com/yokochi47/pdbx-validation/blob/master/resource/pdbx-v50.xsd) | PDBML Schema (v5.338)
 [resource/pdbx-v50.owl](https://github.com/yokochi47/pdbx-validation/blob/master/resource/pdbx-v50.owl) | PDBx ontology, ontology for PDB/RDF (v5.338)
-[resource/wwpdb_validation_v5.01.xsd](https://github.com/yokochi47/pdbx-validation/blob/master/resource/wwpdb_validation_v5.01.xsd) | XML Schema for wwPDB validation reports (v5.01, rev 2020-12-10)
+[resource/wwpdb_validation_v6.00.xsd](https://github.com/yokochi47/pdbx-validation/blob/master/resource/wwpdb_validation_v6.00.xsd) | XML Schema for wwPDB validation reports (v6.00, rev 2021-01-22)
 [scripts](https://github.com/yokochi47/pdbx-validation/blob/master/scripts) | a directory contains scripts invoked by the 'run_vrpt_all.sh' script
 [virtuoso_scripts](https://github.com/yokochi47/pdbx-validation/blob/master/virtuoso_scripts) | a directory contains scripts for uploading PDB/RDF-validation to local SPARQL endpoint
 [stylesheet](https://github.com/yokochi47/pdbx-validation/blob/master/stylesheet) | a directory contains XSL style sheets for generation of alternative wwPDB validation reports
@@ -59,7 +59,7 @@ File path | Document
 		- Reverted from PDBML-validation: [5u9b_validation.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/validation-info-rev-from-full/5u9b_validation.xml)
 		- Reverted from PDBML-validation-alt and PDBML-noatom: [5u9b_validation.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/validation-info-rev-from-alt/5u9b_validation.xml)
 
-- PDB ID: [2LOY](https://pdbj.org/mine/summary/2loy), Exptl. method: SOLUTION NMR with NMR restraint validation (v5.01, 2020-12-10)
+- PDB ID: [2LOY](https://pdbj.org/mine/summary/2loy), Exptl. method: SOLUTION NMR with NMR restraint validation (v6.00, 2021-01-22)
 	- PDBx/mmCIF format
 		- mmCIF-validation: [2loy-validation-full.cif](https://github.com/yokochi47/pdbx-validation/blob/master/test/mmcif-validation/2loy-validation-full.cif)
 		- mmCIF-validation-alt: [2loy-validation-alt.cif](https://github.com/yokochi47/pdbx-validation/blob/master/test/mmcif-validation-alt/2loy-validation-alt.cif)
@@ -164,9 +164,11 @@ File path | Document
 
 ## Release notes
 
+- **Jan 26, 2021**: Release v4.0.0
+	- Support XML Schema for wwPDB validation report (wwpdb_validation_v6.00.xsd).
+
 - **Jan 21, 2021**: Release v3.0.2
 	- Update wwPDB Validation Information Dictionary to 3.338.
-	- Add XML Schema for wwPDB validation report (wwpdb_validation_v6.00.xsd).
 
 - **Jan 8, 2021**: Release v3.0.1
 	- Update wwPDB Validation Information Dictionary to 3.337.

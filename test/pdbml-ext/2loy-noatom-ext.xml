@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PDBxv:datablock xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                 xmlns:PDBxv="http://pdbml.pdb.org/schema/pdbx-validation-v3.xsd"
+                 xmlns:PDBxv="http://pdbml.pdb.org/schema/pdbx-validation-v4.xsd"
                  datablockName="2LOY-noatom-ext"
-                 xsi:schemaLocation="http://pdbml.pdb.org/schema/pdbx-validation-v3.xsd pdbx-validation-v3.xsd">
+                 xsi:schemaLocation="http://pdbml.pdb.org/schema/pdbx-validation-v4.xsd pdbx-validation-v4.xsd">
    <PDBxv:entityCategory>
       <PDBxv:entity id="1">
          <PDBxv:formula_weight>21642.564</PDBxv:formula_weight>
@@ -667,7 +667,7 @@ VDGTEVPTLMLVKEAIIEEKCLEHHHHHH</PDBxv:pdbx_seq_one_letter_code_can>
          <PDBxv:status_code>REL</PDBxv:status_code>
          <PDBxv:status_code_cs>REL</PDBxv:status_code_cs>
          <PDBxv:status_code_mr>REL</PDBxv:status_code_mr>
-         <PDBxv:validation_created_date>2020-12-14</PDBxv:validation_created_date>
+         <PDBxv:validation_created_date>2021-01-26</PDBxv:validation_created_date>
       </PDBxv:pdbx_database_status>
    </PDBxv:pdbx_database_statusCategory>
    <PDBxv:pdbx_nmr_constraintsCategory>

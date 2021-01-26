@@ -28,11 +28,11 @@ MMCIF_VALID_ALT=mmcif-validation-alt
 PDBML_XSD=resource/pdbx-v50.xsd
 PDBML_SQL=resource/pdbx-v50.sql
 
-WWPDB_VALIDATION_XSD=resource/wwpdb_validation_v5.01.xsd
-WWPDB_VALIDATION_SQL=resource/wwpdb_validation_v5.01.sql
+WWPDB_VALIDATION_XSD=resource/wwpdb_validation_v6.00.xsd
+WWPDB_VALIDATION_SQL=resource/wwpdb_validation_v6.00.sql
 
-PDBX_VALIDATION_XSD=schema/pdbx-validation-v3.xsd
-PDBX_VALIDATION_SQL=schema/pdbx-validation-v3.sql
+PDBX_VALIDATION_XSD=schema/pdbx-validation-v4.xsd
+PDBX_VALIDATION_SQL=schema/pdbx-validation-v4.sql
 
 XSD2EXT_PDBML_XSL=stylesheet/xsd2extract_pdbml.xsl
 

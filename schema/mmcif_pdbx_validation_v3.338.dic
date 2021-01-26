@@ -30279,7 +30279,7 @@ save_
 
 save__pdbx_nmr_constraints.NOE_intraresidue_total_count
     _item_description.description
-;              The total number of all intraresidue, |i-j|=0, NOE constraints
+;              The total number of intraresidue, |i-j|=0, NOE constraints
                used in the final structure calculation.
 ;
     _item.name                  '_pdbx_nmr_constraints.NOE_intraresidue_total_count'
@@ -67101,7 +67101,7 @@ save_
 
 save__pdbx_nmr_restraint_summary.intraresidue_total_count
     _item_description.description
-;              The total number of all intraresidue, |i-j|=0, distance restraints
+;              The total number of intraresidue, |i-j|=0, distance restraints
                used in the final structure calculation.
 ;
     _item.name                  '_pdbx_nmr_restraint_summary.intraresidue_total_count'
@@ -67846,7 +67846,7 @@ save_
 
 save__pdbx_nmr_distance_violation_model.intraresidue_violations_count
     _item_description.description
-;              The total number of all intraresidue, |i-j|=0, distance restraint violations
+;              The total number of intraresidue, |i-j|=0, distance restraint violations
                in a particular coordinate model.
 ;
     _item.name                  '_pdbx_nmr_distance_violation_model.intraresidue_violations_count'
@@ -68012,7 +68012,7 @@ save_
 
 save__pdbx_nmr_distance_violation_ensemble.intraresidue_violations_count
     _item_description.description
-;              The total number of all intraresidue, |i-j|=0, distance restraint violations
+;              The total number of intraresidue, |i-j|=0, distance restraint violations
                in a particular coordinate model.
 ;
     _item.name                  '_pdbx_nmr_distance_violation_ensemble.intraresidue_violations_count'
@@ -68421,7 +68421,7 @@ save__pdbx_nmr_distance_violation_plural.auth_asym_id_2
 #
     _pdbx_item_aliases.xpath     '/wwPDB-validation-information/distance_restraints_analysis/most_violated_distance_restraints/most_violated_distance_restraint/@chain_2'
     _pdbx_item_aliases.schema     wwpdb_validation_v5.01.xsd
-   _pdbx_item_aliases.version    v5.01
+    _pdbx_item_aliases.version    v5.01
 save_
 
 save__pdbx_nmr_distance_violation_plural.auth_comp_id_2
@@ -68487,7 +68487,7 @@ save__pdbx_nmr_distance_violation_plural.label_asym_id_1
 #
     _pdbx_item_aliases.xpath     '/wwPDB-validation-information/distance_restraints_analysis/most_violated_distance_restraints/most_violated_distance_restraint/@said_1'
     _pdbx_item_aliases.schema     wwpdb_validation_v5.01.xsd
-   _pdbx_item_aliases.version    v5.01
+    _pdbx_item_aliases.version    v5.01
 save_
 
 save__pdbx_nmr_distance_violation_plural.label_asym_id_2
@@ -68509,7 +68509,7 @@ save__pdbx_nmr_distance_violation_plural.label_asym_id_2
 #
     _pdbx_item_aliases.xpath     '/wwPDB-validation-information/distance_restraints_analysis/most_violated_distance_restraints/most_violated_distance_restraint/@said_2'
     _pdbx_item_aliases.schema     wwpdb_validation_v5.01.xsd
-   _pdbx_item_aliases.version    v5.01
+    _pdbx_item_aliases.version    v5.01
 save_
 
 save__pdbx_nmr_distance_violation_plural.label_seq_id_1
@@ -68920,7 +68920,7 @@ save__pdbx_nmr_distance_violation.auth_asym_id_2
 #
     _pdbx_item_aliases.xpath     '/wwPDB-validation-information/distance_restraints_analysis/violated_distance_restraints/violated_distance_restraint/@chain_2'
     _pdbx_item_aliases.schema     wwpdb_validation_v5.01.xsd
-   _pdbx_item_aliases.version    v5.01
+    _pdbx_item_aliases.version    v5.01
 save_
 
 save__pdbx_nmr_distance_violation.auth_comp_id_2
@@ -68986,7 +68986,7 @@ save__pdbx_nmr_distance_violation.label_asym_id_1
 #
     _pdbx_item_aliases.xpath     '/wwPDB-validation-information/distance_restraints_analysis/violated_distance_restraints/violated_distance_restraint/@said_1'
     _pdbx_item_aliases.schema     wwpdb_validation_v5.01.xsd
-   _pdbx_item_aliases.version    v5.01
+    _pdbx_item_aliases.version    v5.01
 save_
 
 save__pdbx_nmr_distance_violation.label_asym_id_2
@@ -69008,7 +69008,7 @@ save__pdbx_nmr_distance_violation.label_asym_id_2
 #
     _pdbx_item_aliases.xpath     '/wwPDB-validation-information/distance_restraints_analysis/violated_distance_restraints/violated_distance_restraint/@said_2'
     _pdbx_item_aliases.schema     wwpdb_validation_v5.01.xsd
-   _pdbx_item_aliases.version    v5.01
+    _pdbx_item_aliases.version    v5.01
 save_
 
 save__pdbx_nmr_distance_violation.label_seq_id_1
@@ -70538,7 +70538,7 @@ save__pdbx_nmr_dihedral_angle_violation_plural.violation_models_count
     _item_range.minimum           .   2
                                   2   2
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/most_violated_dihedralangle_restraints/most_violated_dihedralangle_restraint/@violated_models'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/most_violated_dihedralangle_restraints/most_violated_dihedralangle_restraint/@violations_count'
     _pdbx_item_aliases.schema     wwpdb_validation_v5.01.xsd
     _pdbx_item_aliases.version    v5.01
 save_

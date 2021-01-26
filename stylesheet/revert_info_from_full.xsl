@@ -3,7 +3,7 @@
   version="2.0"
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xmlns:PDBxv="http://pdbml.pdb.org/schema/pdbx-validation-v3.xsd">
+  xmlns:PDBxv="http://pdbml.pdb.org/schema/pdbx-validation-v4.xsd">
 
   <xsl:output method="xml" indent="yes"/>
   <xsl:strip-space elements="*"/>
@@ -2883,8 +2883,8 @@ Dihedral angle restraint type , <xsl:value-of select="@type"/>, is not listed in
             <most_violated_dihedralangle_restraint>
               <xsl:attribute name="rlist_id"><xsl:value-of select="PDBxv:list_id"/></xsl:attribute>
               <xsl:attribute name="rest_id"><xsl:value-of select="PDBxv:restraint_id"/></xsl:attribute>
-              <xsl:attribute name="violations_count"><xsl:value-of select="PDBxv:violation_models_count"/></xsl:attribute>
-              <xsl:attribute name="MeanAngleViolation"><xsl:value-of select="PDBxv:average_violation"/></xsl:attribute>
+              <xsl:attribute name="violated_models"><xsl:value-of select="PDBxv:violation_models_count"/></xsl:attribute>
+              <xsl:attribute name="mean_angle_violation"><xsl:value-of select="PDBxv:average_violation"/></xsl:attribute>
               <xsl:attribute name="median_violation"><xsl:value-of select="PDBxv:median_violation"/></xsl:attribute>
               <xsl:attribute name="standard_deviation"><xsl:value-of select="PDBxv:standard_deviation"/></xsl:attribute>
               <xsl:attribute name="ent_1"><xsl:value-of select="PDBxv:entity_id"/></xsl:attribute>

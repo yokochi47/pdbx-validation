@@ -3,7 +3,7 @@
   version="2.0"
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xmlns:PDBxv="http://pdbml.pdb.org/schema/pdbx-validation-v3.xsd">
+  xmlns:PDBxv="http://pdbml.pdb.org/schema/pdbx-validation-v4.xsd">
 
   <xsl:param name="pdbml_ext_file" required="yes"/>
   <xsl:param name="pdbml_ext" select="document($pdbml_ext_file)"/>
@@ -170,7 +170,7 @@ Unmatched entry ID in both documents (<xsl:value-of select="$entry_id"/> and <xs
       </xsl:call-template>
     </xsl:if>
 
-    <PDBxv:datablock datablockName="{$datablock_name}" xsi:schemaLocation="http://pdbml.pdb.org/schema/pdbx-validation-v3.xsd pdbx-validation-v3.xsd">
+    <PDBxv:datablock datablockName="{$datablock_name}" xsi:schemaLocation="http://pdbml.pdb.org/schema/pdbx-validation-v4.xsd pdbx-validation-v4.xsd">
       <PDBxv:entryCategory>
         <PDBxv:entry id="{$entry_id}"/>
       </PDBxv:entryCategory>
@@ -1745,8 +1745,8 @@ Dihedral angle restraint type, <xsl:value-of select="@ang_rest_type"/>, is not l
         <PDBxv:pdbx_nmr_dihedral_angle_violation_plural ordinal="{position()}">
           <PDBxv:list_id><xsl:value-of select="@rlist_id"/></PDBxv:list_id>
           <PDBxv:restraint_id><xsl:value-of select="@rest_id"/></PDBxv:restraint_id>
-          <PDBxv:violation_models_count><xsl:value-of select="@violations_count"/></PDBxv:violation_models_count>
-          <PDBxv:average_violation><xsl:value-of select="@MeanAngleViolation"/></PDBxv:average_violation>
+          <PDBxv:violation_models_count><xsl:value-of select="@violated_models"/></PDBxv:violation_models_count>
+          <PDBxv:average_violation><xsl:value-of select="@mean_angle_violation"/></PDBxv:average_violation>
           <PDBxv:median_violation><xsl:value-of select="@median_violation"/></PDBxv:median_violation>
           <PDBxv:standard_deviation><xsl:value-of select="@standard_deviation"/></PDBxv:standard_deviation>
           <PDBxv:entity_id><xsl:value-of select="@ent_1"/></PDBxv:entity_id>

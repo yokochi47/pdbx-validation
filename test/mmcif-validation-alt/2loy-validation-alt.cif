@@ -4,7 +4,7 @@ _entry.id   2LOY
 # 
 _pdbx_nmr_assigned_chem_shift_list.id                            1 
 _pdbx_nmr_assigned_chem_shift_list.data_file_name                
-D_800380_nmr-data-str_P1.cif.V12 
+D_800385_nmr-data-str_P1.cif.V12 
 _pdbx_nmr_assigned_chem_shift_list.label                         
 nef_chemical_shift_list_bmr16833.str 
 _pdbx_nmr_assigned_chem_shift_list.nmr_star_consistency_flag     Y 
@@ -5237,149 +5237,149 @@ _pdbx_nmr_dihedral_angle_violation_plural.label_alt_id_1
 _pdbx_nmr_dihedral_angle_violation_plural.label_alt_id_2 
 _pdbx_nmr_dihedral_angle_violation_plural.label_alt_id_3 
 _pdbx_nmr_dihedral_angle_violation_plural.label_alt_id_4 
-1  1 175 15 6.63   1.04  1.04  1 A 133 133 133 134 PHE PHE PHE LYS N  CA C  N 
+1  1 175 15 6.63   6.4   1.04  1 A 133 133 133 134 PHE PHE PHE LYS N  CA C  N 
 A 133 133 133 134 ? ? ? ? . . . . 
-2  1 230 15 2.29   0.7   0.7   1 A 170 170 170 171 MET MET MET LEU N  CA C  N 
+2  1 230 15 2.29   2.1   0.7   1 A 170 170 170 171 MET MET MET LEU N  CA C  N 
 A 170 170 170 171 ? ? ? ? . . . . 
-3  1 167 15 2.23   0.74  0.74  1 A 128 128 128 129 LEU LEU LEU ALA N  CA C  N 
+3  1 167 15 2.23   2.1   0.74  1 A 128 128 128 129 LEU LEU LEU ALA N  CA C  N 
 A 128 128 128 129 ? ? ? ? . . . . 
-4  1 271 13 88.85  67.11 67.11 1 A 133 133 133 133 PHE PHE PHE PHE CA CB CG 
+4  1 271 13 88.85  138.4 67.11 1 A 133 133 133 133 PHE PHE PHE PHE CA CB CG 
 CD1 A 133 133 133 133 ? ? ? ? . . . . 
-5  1 86  13 2.35   1.05  1.05  1 A 84  84  84  85  ASP ASP ASP ALA N  CA C  N 
+5  1 86  13 2.35   1.8   1.05  1 A 84  84  84  85  ASP ASP ASP ALA N  CA C  N 
 A 84  84  84  85  ? ? ? ? . . . . 
-6  1 16  12 3.41   1.39  1.39  1 A 9   9   9   10  THR THR THR ASP N  CA C  N 
+6  1 16  12 3.41   3.5   1.39  1 A 9   9   9   10  THR THR THR ASP N  CA C  N 
 A 9   9   9   10  ? ? ? ? . . . . 
-7  1 22  12 3.02   1.35  1.35  1 A 12  12  12  13  GLU GLU GLU LEU N  CA C  N 
+7  1 22  12 3.02   3.35  1.35  1 A 12  12  12  13  GLU GLU GLU LEU N  CA C  N 
 A 12  12  12  13  ? ? ? ? . . . . 
-8  1 255 11 2.92   0.87  0.87  1 A 19  19  19  20  PRO PRO PRO MET N  CA C  N 
+8  1 255 11 2.92   2.8   0.87  1 A 19  19  19  20  PRO PRO PRO MET N  CA C  N 
 A 19  19  19  20  ? ? ? ? . . . . 
-9  1 19  11 2.54   1.09  1.09  1 A 10  11  11  11  ASP ASP ASP ASP C  N  CA C 
+9  1 19  11 2.54   2.3   1.09  1 A 10  11  11  11  ASP ASP ASP ASP C  N  CA C 
 A 10  11  11  11  ? ? ? ? . . . . 
-10 1 243 11 2.44   0.81  0.81  1 A 177 177 177 178 ILE ILE ILE GLU N  CA C  N 
+10 1 243 11 2.44   2.3   0.81  1 A 177 177 177 178 ILE ILE ILE GLU N  CA C  N 
 A 177 177 177 178 ? ? ? ? . . . . 
-11 1 253 11 2.22   0.6   0.6   1 A 26  26  26  27  LEU LEU LEU VAL N  CA C  N 
+11 1 253 11 2.22   2.1   0.6   1 A 26  26  26  27  LEU LEU LEU VAL N  CA C  N 
 A 26  26  26  27  ? ? ? ? . . . . 
-12 1 14  10 5.23   2.64  2.64  1 A 8   8   8   9   PHE PHE PHE THR N  CA C  N 
+12 1 14  10 5.23   4.95  2.64  1 A 8   8   8   9   PHE PHE PHE THR N  CA C  N 
 A 8   8   8   9   ? ? ? ? . . . . 
-13 1 35  10 2.42   0.86  0.86  1 A 27  28  28  28  VAL TYR TYR TYR C  N  CA C 
+13 1 35  10 2.42   2.5   0.86  1 A 27  28  28  28  VAL TYR TYR TYR C  N  CA C 
 A 27  28  28  28  ? ? ? ? . . . . 
-14 1 293 9  95.31  66.17 66.17 1 A 30  30  30  30  PHE PHE PHE PHE CA CB CG 
+14 1 293 9  95.31  140.4 66.17 1 A 30  30  30  30  PHE PHE PHE PHE CA CB CG 
 CD1 A 30  30  30  30  ? ? ? ? . . . . 
-15 1 13  9  4.61   1.29  1.29  1 A 7   8   8   8   ILE PHE PHE PHE C  N  CA C 
+15 1 13  9  4.61   4.1   1.29  1 A 7   8   8   8   ILE PHE PHE PHE C  N  CA C 
 A 7   8   8   8   ? ? ? ? . . . . 
-16 1 52  9  2.92   1.02  1.02  1 A 37  37  37  38  ARG ARG ARG LYS N  CA C  N 
+16 1 52  9  2.92   2.6   1.02  1 A 37  37  37  38  ARG ARG ARG LYS N  CA C  N 
 A 37  37  37  38  ? ? ? ? . . . . 
-17 1 172 9  2.7    1.26  1.26  1 A 131 132 132 132 ASP ARG ARG ARG C  N  CA C 
+17 1 172 9  2.7    2.5   1.26  1 A 131 132 132 132 ASP ARG ARG ARG C  N  CA C 
 A 131 132 132 132 ? ? ? ? . . . . 
-18 1 4   9  2.46   0.89  0.89  1 A 3   3   3   4   ILE ILE ILE TYR N  CA C  N 
+18 1 4   9  2.46   2.2   0.89  1 A 3   3   3   4   ILE ILE ILE TYR N  CA C  N 
 A 3   3   3   4   ? ? ? ? . . . . 
-19 1 18  8  8.95   1.34  1.34  1 A 10  10  10  11  ASP ASP ASP ASP N  CA C  N 
+19 1 18  8  8.95   9.0   1.34  1 A 10  10  10  11  ASP ASP ASP ASP N  CA C  N 
 A 10  10  10  11  ? ? ? ? . . . . 
-20 1 180 8  2.35   1.03  1.03  1 A 135 136 136 136 ASN LEU LEU LEU C  N  CA C 
+20 1 180 8  2.35   1.85  1.03  1 A 135 136 136 136 ASN LEU LEU LEU C  N  CA C 
 A 135 136 136 136 ? ? ? ? . . . . 
-21 1 57  8  2.2    0.85  0.85  1 A 67  68  68  68  GLY ILE ILE ILE C  N  CA C 
+21 1 57  8  2.2    2.2   0.85  1 A 67  68  68  68  GLY ILE ILE ILE C  N  CA C 
 A 67  68  68  68  ? ? ? ? . . . . 
-22 1 251 8  2.17   0.82  0.82  1 A 181 181 181 182 CYS CYS CYS LEU N  CA C  N 
+22 1 251 8  2.17   2.15  0.82  1 A 181 181 181 182 CYS CYS CYS LEU N  CA C  N 
 A 181 181 181 182 ? ? ? ? . . . . 
-23 1 83  8  1.86   0.39  0.39  1 A 82  83  83  83  TYR GLU GLU GLU C  N  CA C 
+23 1 83  8  1.86   1.8   0.39  1 A 82  83  83  83  TYR GLU GLU GLU C  N  CA C 
 A 82  83  83  83  ? ? ? ? . . . . 
-24 1 54  7  2.99   0.9   0.9   1 A 38  38  38  39  LYS LYS LYS GLU N  CA C  N 
+24 1 54  7  2.99   3.0   0.9   1 A 38  38  38  39  LYS LYS LYS GLU N  CA C  N 
 A 38  38  38  39  ? ? ? ? . . . . 
-25 1 53  7  1.97   0.66  0.66  1 A 37  38  38  38  ARG LYS LYS LYS C  N  CA C 
+25 1 53  7  1.97   2.1   0.66  1 A 37  38  38  38  ARG LYS LYS LYS C  N  CA C 
 A 37  38  38  38  ? ? ? ? . . . . 
-26 1 214 7  1.94   0.69  0.69  1 A 159 160 160 160 ARG ASP ASP ASP C  N  CA C 
+26 1 214 7  1.94   1.6   0.69  1 A 159 160 160 160 ARG ASP ASP ASP C  N  CA C 
 A 159 160 160 160 ? ? ? ? . . . . 
-27 1 77  7  1.93   0.77  0.77  1 A 78  79  79  79  GLU MET MET MET C  N  CA C 
+27 1 77  7  1.93   1.7   0.77  1 A 78  79  79  79  GLU MET MET MET C  N  CA C 
 A 78  79  79  79  ? ? ? ? . . . . 
-28 1 227 7  1.77   0.55  0.55  1 A 168 169 169 169 THR LEU LEU LEU C  N  CA C 
+28 1 227 7  1.77   1.6   0.55  1 A 168 169 169 169 THR LEU LEU LEU C  N  CA C 
 A 168 169 169 169 ? ? ? ? . . . . 
-29 1 279 7  1.6    0.36  0.36  1 A 82  82  82  82  TYR TYR TYR TYR CA CB CG 
+29 1 279 7  1.6    1.6   0.36  1 A 82  82  82  82  TYR TYR TYR TYR CA CB CG 
 CD1 A 82  82  82  82  ? ? ? ? . . . . 
-30 1 15  6  5.87   2.11  2.11  1 A 8   9   9   9   PHE THR THR THR C  N  CA C 
+30 1 15  6  5.87   6.35  2.11  1 A 8   9   9   9   PHE THR THR THR C  N  CA C 
 A 8   9   9   9   ? ? ? ? . . . . 
-31 1 21  6  3.08   0.78  0.78  1 A 11  12  12  12  ASP GLU GLU GLU C  N  CA C 
+31 1 21  6  3.08   2.9   0.78  1 A 11  12  12  12  ASP GLU GLU GLU C  N  CA C 
 A 11  12  12  12  ? ? ? ? . . . . 
-32 1 17  5  2.32   0.98  0.98  1 A 9   10  10  10  THR ASP ASP ASP C  N  CA C 
+32 1 17  5  2.32   2.7   0.98  1 A 9   10  10  10  THR ASP ASP ASP C  N  CA C 
 A 9   10  10  10  ? ? ? ? . . . . 
-33 1 23  5  2.2    1.19  1.19  1 A 13  14  14  14  LEU SER SER SER C  N  CA C 
+33 1 23  5  2.2    1.9   1.19  1 A 13  14  14  14  LEU SER SER SER C  N  CA C 
 A 13  14  14  14  ? ? ? ? . . . . 
-34 1 38  5  2.06   0.58  0.58  1 A 29  29  29  30  GLU GLU GLU PHE N  CA C  N 
+34 1 38  5  2.06   2.0   0.58  1 A 29  29  29  30  GLU GLU GLU PHE N  CA C  N 
 A 29  29  29  30  ? ? ? ? . . . . 
-35 1 220 5  1.92   0.32  0.32  1 A 164 165 165 165 THR GLU GLU GLU C  N  CA C 
+35 1 220 5  1.92   1.8   0.32  1 A 164 165 165 165 THR GLU GLU GLU C  N  CA C 
 A 164 165 165 165 ? ? ? ? . . . . 
-36 1 3   5  1.88   0.67  0.67  1 A 2   3   3   3   LEU ILE ILE ILE C  N  CA C 
+36 1 3   5  1.88   1.5   0.67  1 A 2   3   3   3   LEU ILE ILE ILE C  N  CA C 
 A 2   3   3   3   ? ? ? ? . . . . 
-37 1 199 5  1.56   0.29  0.29  1 A 146 146 146 147 GLU GLU GLU GLY N  CA C  N 
+37 1 199 5  1.56   1.6   0.29  1 A 146 146 146 147 GLU GLU GLU GLY N  CA C  N 
 A 146 146 146 147 ? ? ? ? . . . . 
-38 1 270 4  4.1    0.44  0.44  1 A 133 133 133 133 PHE PHE PHE PHE N  CA CB CG 
+38 1 270 4  4.1    4.0   0.44  1 A 133 133 133 133 PHE PHE PHE PHE N  CA CB CG 
 A 133 133 133 133 ? ? ? ? . . . . 
-39 1 25  4  2.45   0.35  0.35  1 A 19  20  20  20  PRO MET MET MET C  N  CA C 
+39 1 25  4  2.45   2.35  0.35  1 A 19  20  20  20  PRO MET MET MET C  N  CA C 
 A 19  20  20  20  ? ? ? ? . . . . 
-40 1 223 4  2.4    0.78  0.78  1 A 166 166 166 167 VAL VAL VAL PRO N  CA C  N 
+40 1 223 4  2.4    2.4   0.78  1 A 166 166 166 167 VAL VAL VAL PRO N  CA C  N 
 A 166 166 166 167 ? ? ? ? . . . . 
-41 1 36  4  2.25   0.17  0.17  1 A 28  28  28  29  TYR TYR TYR GLU N  CA C  N 
+41 1 36  4  2.25   2.3   0.17  1 A 28  28  28  29  TYR TYR TYR GLU N  CA C  N 
 A 28  28  28  29  ? ? ? ? . . . . 
-42 1 2   4  2.08   0.08  0.08  1 A 2   2   2   3   LEU LEU LEU ILE N  CA C  N 
+42 1 2   4  2.08   2.05  0.08  1 A 2   2   2   3   LEU LEU LEU ILE N  CA C  N 
 A 2   2   2   3   ? ? ? ? . . . . 
-43 1 171 4  1.95   0.44  0.44  1 A 131 131 131 132 ASP ASP ASP ARG N  CA C  N 
+43 1 171 4  1.95   1.85  0.44  1 A 131 131 131 132 ASP ASP ASP ARG N  CA C  N 
 A 131 131 131 132 ? ? ? ? . . . . 
-44 1 40  4  1.8    0.55  0.55  1 A 30  30  30  31  PHE PHE PHE LYS N  CA C  N 
+44 1 40  4  1.8    1.65  0.55  1 A 30  30  30  31  PHE PHE PHE LYS N  CA C  N 
 A 30  30  30  31  ? ? ? ? . . . . 
-45 1 78  4  1.5    0.25  0.25  1 A 79  79  79  80  MET MET MET ASN N  CA C  N 
+45 1 78  4  1.5    1.55  0.25  1 A 79  79  79  80  MET MET MET ASN N  CA C  N 
 A 79  79  79  80  ? ? ? ? . . . . 
-46 1 265 3  147.07 3.6   3.6   1 A 95  95  95  95  PHE PHE PHE PHE CA CB CG 
+46 1 265 3  147.07 148.6 3.6   1 A 95  95  95  95  PHE PHE PHE PHE CA CB CG 
 CD1 A 95  95  95  95  ? ? ? ? . . . . 
-47 1 24  3  2.53   0.48  0.48  1 A 14  14  14  15  SER SER SER SER N  CA C  N 
+47 1 24  3  2.53   2.3   0.48  1 A 14  14  14  15  SER SER SER SER N  CA C  N 
 A 14  14  14  15  ? ? ? ? . . . . 
-48 1 183 3  2.4    0.98  0.98  1 A 137 137 137 138 ALA ALA ALA PHE N  CA C  N 
+48 1 183 3  2.4    2.4   0.98  1 A 137 137 137 138 ALA ALA ALA PHE N  CA C  N 
 A 137 137 137 138 ? ? ? ? . . . . 
-49 1 5   3  2.3    0.91  0.91  1 A 3   4   4   4   ILE TYR TYR TYR C  N  CA C 
+49 1 5   3  2.3    2.5   0.91  1 A 3   4   4   4   ILE TYR TYR TYR C  N  CA C 
 A 3   4   4   4   ? ? ? ? . . . . 
-50 1 224 3  2.27   0.69  0.69  1 A 167 167 167 168 PRO PRO PRO THR N  CA C  N 
+50 1 224 3  2.27   2.6   0.69  1 A 167 167 167 168 PRO PRO PRO THR N  CA C  N 
 A 167 167 167 168 ? ? ? ? . . . . 
-51 1 82  3  2.13   0.66  0.66  1 A 82  82  82  83  TYR TYR TYR GLU N  CA C  N 
+51 1 82  3  2.13   2.0   0.66  1 A 82  82  82  83  TYR TYR TYR GLU N  CA C  N 
 A 82  82  82  83  ? ? ? ? . . . . 
-52 1 55  3  2.13   0.57  0.57  1 A 65  66  66  66  GLU ARG ARG ARG C  N  CA C 
+52 1 55  3  2.13   2.2   0.57  1 A 65  66  66  66  GLU ARG ARG ARG C  N  CA C 
 A 65  66  66  66  ? ? ? ? . . . . 
-53 1 249 3  1.83   0.53  0.53  1 A 180 180 180 181 LYS LYS LYS CYS N  CA C  N 
+53 1 249 3  1.83   1.8   0.53  1 A 180 180 180 181 LYS LYS LYS CYS N  CA C  N 
 A 180 180 180 181 ? ? ? ? . . . . 
-54 1 6   3  1.73   0.42  0.42  1 A 4   4   4   5   TYR TYR TYR LYS N  CA C  N 
+54 1 6   3  1.73   1.6   0.42  1 A 4   4   4   5   TYR TYR TYR LYS N  CA C  N 
 A 4   4   4   5   ? ? ? ? . . . . 
-55 1 72  3  1.43   0.4   0.4   1 A 75  75  75  76  LYS LYS LYS LEU N  CA C  N 
+55 1 72  3  1.43   1.2   0.4   1 A 75  75  75  76  LYS LYS LYS LEU N  CA C  N 
 A 75  75  75  76  ? ? ? ? . . . . 
-56 1 252 3  1.27   0.05  0.05  1 A 25  26  26  26  ASP LEU LEU LEU C  N  CA C 
+56 1 252 3  1.27   1.3   0.05  1 A 25  26  26  26  ASP LEU LEU LEU C  N  CA C 
 A 25  26  26  26  ? ? ? ? . . . . 
-57 1 246 2  2.95   0.25  0.25  1 A 178 179 179 179 GLU GLU GLU GLU C  N  CA C 
+57 1 246 2  2.95   2.95  0.25  1 A 178 179 179 179 GLU GLU GLU GLU C  N  CA C 
 A 178 179 179 179 ? ? ? ? . . . . 
 58 1 207 2  2.2    2.2   0.0   1 A 155 155 155 156 ILE ILE ILE ILE N  CA C  N 
 A 155 155 155 156 ? ? ? ? . . . . 
-59 1 245 2  2.1    0.4   0.4   1 A 178 178 178 179 GLU GLU GLU GLU N  CA C  N 
+59 1 245 2  2.1    2.1   0.4   1 A 178 178 178 179 GLU GLU GLU GLU N  CA C  N 
 A 178 178 178 179 ? ? ? ? . . . . 
-60 1 7   2  2.1    1.0   1.0   1 A 4   5   5   5   TYR LYS LYS LYS C  N  CA C 
+60 1 7   2  2.1    2.1   1.0   1 A 4   5   5   5   TYR LYS LYS LYS C  N  CA C 
 A 4   5   5   5   ? ? ? ? . . . . 
-61 1 129 2  2.1    0.2   0.2   1 A 105 106 106 106 LYS ASN ASN ASN C  N  CA C 
+61 1 129 2  2.1    2.1   0.2   1 A 105 106 106 106 LYS ASN ASN ASN C  N  CA C 
 A 105 106 106 106 ? ? ? ? . . . . 
-62 1 222 2  1.95   0.65  0.65  1 A 165 166 166 166 GLU VAL VAL VAL C  N  CA C 
+62 1 222 2  1.95   1.95  0.65  1 A 165 166 166 166 GLU VAL VAL VAL C  N  CA C 
 A 165 166 166 166 ? ? ? ? . . . . 
-63 1 274 2  1.95   0.65  0.65  1 A 91  91  91  91  TYR TYR TYR TYR N  CA CB CG 
+63 1 274 2  1.95   1.95  0.65  1 A 91  91  91  91  TYR TYR TYR TYR N  CA CB CG 
 A 91  91  91  91  ? ? ? ? . . . . 
-64 1 70  2  1.85   0.75  0.75  1 A 74  74  74  75  HIS HIS HIS LYS N  CA C  N 
+64 1 70  2  1.85   1.85  0.75  1 A 74  74  74  75  HIS HIS HIS LYS N  CA C  N 
 A 74  74  74  75  ? ? ? ? . . . . 
-65 1 200 2  1.85   0.25  0.25  1 A 151 152 152 152 GLY GLN GLN GLN C  N  CA C 
+65 1 200 2  1.85   1.85  0.25  1 A 151 152 152 152 GLY GLN GLN GLN C  N  CA C 
 A 151 152 152 152 ? ? ? ? . . . . 
-66 1 275 2  1.8    0.7   0.7   1 A 91  91  91  91  TYR TYR TYR TYR CA CB CG 
+66 1 275 2  1.8    1.8   0.7   1 A 91  91  91  91  TYR TYR TYR TYR CA CB CG 
 CD1 A 91  91  91  91  ? ? ? ? . . . . 
-67 1 216 2  1.8    0.7   0.7   1 A 160 161 161 161 ASP VAL VAL VAL C  N  CA C 
+67 1 216 2  1.8    1.8   0.7   1 A 160 161 161 161 ASP VAL VAL VAL C  N  CA C 
 A 160 161 161 161 ? ? ? ? . . . . 
-68 1 247 2  1.6    0.3   0.3   1 A 179 179 179 180 GLU GLU GLU LYS N  CA C  N 
+68 1 247 2  1.6    1.6   0.3   1 A 179 179 179 180 GLU GLU GLU LYS N  CA C  N 
 A 179 179 179 180 ? ? ? ? . . . . 
-69 1 51  2  1.6    0.3   0.3   1 A 36  37  37  37  VAL ARG ARG ARG C  N  CA C 
+69 1 51  2  1.6    1.6   0.3   1 A 36  37  37  37  VAL ARG ARG ARG C  N  CA C 
 A 36  37  37  37  ? ? ? ? . . . . 
-70 1 213 2  1.55   0.35  0.35  1 A 158 158 158 159 TYR TYR TYR ARG N  CA C  N 
+70 1 213 2  1.55   1.55  0.35  1 A 158 158 158 159 TYR TYR TYR ARG N  CA C  N 
 A 158 158 158 159 ? ? ? ? . . . . 
-71 1 239 2  1.35   0.05  0.05  1 A 174 175 175 175 GLU ALA ALA ALA C  N  CA C 
+71 1 239 2  1.35   1.35  0.05  1 A 174 175 175 175 GLU ALA ALA ALA C  N  CA C 
 A 174 175 175 175 ? ? ? ? . . . . 
-72 1 169 2  1.35   0.05  0.05  1 A 130 130 130 131 LYS LYS LYS ASP N  CA C  N 
+72 1 169 2  1.35   1.35  0.05  1 A 130 130 130 131 LYS LYS LYS ASP N  CA C  N 
 A 130 130 130 131 ? ? ? ? . . . . 
 # 
 loop_
@@ -6344,18 +6344,18 @@ _pdbx_validation_software.details
 'percentile rank calculation'                            
 ;numPDBids-absolute-percentile-clashscore,absolute-percentile-percent-rota-outliers,relative-percentile-clashscore,numPDBids-absolute-percentile-percent-rota-outliers,numPDBids-absolute-percentile-percent-rama-outliers,numPDBids-relative-percentile-percent-rota-outliers,numPDBids-relative-percentile-percent-rama-outliers,relative-percentile-percent-rota-outliers,numPDBids-relative-percentile-clashscore,no-percentile-property,relative-percentile-percent-rama-outliers,absolute-percentile-percent-rama-outliers,absolute-percentile-clashscore
 ;
-3  coreclust           unknown 'assessment of nmr ensemble structure' 
-nmr_models_consistency_flag 
-4  validation-pipeline 2.16.dev4 'mmcif data extractor' 
+3  validation-pipeline 2.17.dev9 'mmcif data extractor' 
 ;PDB-Rfree,chemicalshiftsInputFilename,coordinatesInputFilename,PDB-resolution,cs_only,reflectionsInputFilename,PDB-R,percentilebins,PDB-resolution-low,pdbid,attemptedValidationSteps,XMLcreationDate
 ;
-5  nmrwriter           2.16.dev4 
-'geometric validation of nmr ensemble structure'         
-clashscore,percent-rota-outliers,percent-rama-outliers 
-6  coreclust           2.16.dev4 'assessment of nmr ensemble structure' 
+4  coreclust           2.17.dev9 'assessment of nmr ensemble structure' 
 ;nmrclust_cluster_id,nmrclust_representative_model,nmrclust_number_of_models,residue_string,medoid_model,cyrange_error,rmsd,nmrclust_representative,number_of_residues,cyrange_version,nmrclust_version,cyrange_domain_id,percentage_of_core,nmrclust_number_of_outliers,cyrange_number_of_domains,nmrclust_number_of_clusters,validate,nmrclust_error,medoid_rmsd,number_of_gaps
 ;
-7  chemicalshifts      2.16.dev4 'assessment of nmr assigned chemical shifts' 
+5  coreclust           unknown 'assessment of nmr ensemble structure' 
+nmr_models_consistency_flag 
+6  nmrwriter           2.17.dev9 
+'geometric validation of nmr ensemble structure'         
+clashscore,percent-rota-outliers,percent-rama-outliers 
+7  chemicalshifts      2.17.dev9 'assessment of nmr assigned chemical shifts' 
 ;rci_version,shiftchecker_version,chemical_shift_completeness,panav_version,chemical_shift_completeness_full_length
 ;
 8  cyrange             
@@ -6368,5 +6368,5 @@ clashscore,percent-rota-outliers,percent-rama-outliers
 'nmr chemical shift validation and reference correction' ? 
 11 rci                 'v_1n_11_5_13_A (Berjanski et al., 2005)' 
 'random coil index prediction from nmr chemical shifts'  ? 
-12 shiftchecker        2.16.dev4 'nmr chemical shift validation' ? 
+12 shiftchecker        2.17.dev9 'nmr chemical shift validation' ? 
 # 

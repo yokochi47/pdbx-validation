@@ -6,7 +6,7 @@
          xmlns:dc="http://purl.org/dc/elements/1.1/"
          xmlns:dcterms="http://purl.org/dc/terms/"
          xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-         xmlns:PDBov="https://rdf.wwpdb.org/schema/pdbx-validation-v3.owl#">
+         xmlns:PDBov="https://rdf.wwpdb.org/schema/pdbx-validation-v4.owl#">
    <PDBov:datablock rdf:about="https://rdf.wwpdb.org/pdb-validation/5B1L">
       <dcterms:identifier>5B1L</dcterms:identifier>
       <skos:altLabel>5b1l</skos:altLabel>

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PDBxv:datablock xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                 xmlns:PDBxv="http://pdbml.pdb.org/schema/pdbx-validation-v3.xsd"
+                 xmlns:PDBxv="http://pdbml.pdb.org/schema/pdbx-validation-v4.xsd"
                  datablockName="5B1L-noatom-ext"
-                 xsi:schemaLocation="http://pdbml.pdb.org/schema/pdbx-validation-v3.xsd pdbx-validation-v3.xsd">
+                 xsi:schemaLocation="http://pdbml.pdb.org/schema/pdbx-validation-v4.xsd pdbx-validation-v4.xsd">
    <PDBxv:diffrnCategory>
       <PDBxv:diffrn id="1">
          <PDBxv:ambient_temp>100</PDBxv:ambient_temp>

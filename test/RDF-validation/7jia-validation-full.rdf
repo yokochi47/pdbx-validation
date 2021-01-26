@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:PDBov="https://rdf.wwpdb.org/schema/pdbx-validation-v3.owl#">
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:PDBov="https://rdf.wwpdb.org/schema/pdbx-validation-v4.owl#">
   <PDBov:datablock rdf:about="https://rdf.wwpdb.org/pdb-validation/7JIA">
     <dcterms:identifier>7JIA</dcterms:identifier>
     <skos:altLabel>7jia</skos:altLabel>
