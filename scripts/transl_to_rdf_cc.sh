@@ -6,7 +6,7 @@ if [ ! -e $SAXON ] ; then
  ./scripts/update_extlibs.sh
 fi
 
-if [ ! -e $PDBX_XSD ] || [ ! -e $CC2RDF_XSL ] ; then
+if [ ! -e $PDBML_XSD ] || [ ! -e $CC2RDF_XSL ] ; then
  ( cd resource; ./update_pdbx_xsd.sh; ./update_pdbx_owl.sh )
 fi
 
@@ -14,7 +14,7 @@ err=pdbx2cc2rdf.err
 
 if [ ! -e $CC2RDF_XSL ] ; then
 
- java -jar $SAXON -s:$PDBX_XSD -xsl:$PDBX2CC2RDF_XSL -o:$CC2RDF_XSL 2> $err || ( cat $err ; exit 1 )
+ java -jar $SAXON -s:$PDBML_XSD -xsl:$PDBX2CC2RDF_XSL -o:$CC2RDF_XSL 2> $err || ( cat $err ; exit 1 )
 
  rm -f $err
 

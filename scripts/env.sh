@@ -79,8 +79,6 @@ if [ ! `which xmllint 2> /dev/null` ] ; then
  has_xmllint_command=false
 fi
 
-PDBX_XSD=resource/pdbx-v50.xsd
-
 PDBML_CC=chem_comp/PDBML
 
 PDBX2PDBML2RDF_XSL=stylesheet/pdbx2pdbml2rdf.xsl

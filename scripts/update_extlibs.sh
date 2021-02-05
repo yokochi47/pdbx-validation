@@ -19,7 +19,7 @@ fi
 EXTLIBS=./extlibs
 
 SAXON=Saxon-HE
-SAXON_VER=9.9.1-7
+SAXON_VER=10.3
 
 XSD2PGSCHEMA=xsd2pgschema
 XSD2PGSCHEMA_VER=4.[0-9].[0-9]

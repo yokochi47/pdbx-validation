@@ -1,9 +1,21 @@
 #!/bin/bash
 
+source ../scripts/env.sh
+
 mmcif_dic=../resource/mmcif_pdbx_v50.dic
 valid_dic=mmcif_pdbx_validation.dic
 
-valid_xsd=../resource/wwpdb_validation_v004.xsd
+valid_xsd=../$WWPDB_VALIDATION_XSD
+
+if [ -e $valid_dic ] ; then
+
+ arg=(`grep dictionary.version $valid_dic`)
+ dic_ver=${arg[1]}
+ dic_major_ver=${dic_ver%%.*}
+
+fi
+
+valid_owl=pdbx-validation-v$dic_major_ver.owl
 
 schema_stat=schema_stat
 
@@ -349,8 +361,6 @@ echo "  "$linked_items items linked to `basename $valid_xsd`.
 #
 
 echo
-
-valid_owl=pdbx-validation-v1.owl
 
 echo statistics of $valid_owl:
 

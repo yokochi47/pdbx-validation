@@ -6,13 +6,13 @@ if [ ! -e $SAXON ] || [ ! -e $XSD2PGSCHEMA ] ; then
  ./scripts/update_extlibs.sh
 fi
 
-if [ ! -e $PDBX_XSD ] || [ ! -e $PDBML2RDF_XSL ] ; then
+if [ ! -e $PDBML_XSD ] || [ ! -e $PDBML2RDF_XSL ] ; then
  ( cd resource; ./update_pdbx_xsd.sh; ./update_pdbx_owl.sh )
 fi
 
 if [ ! -e $PDBML2RDF_XSL ] ; then
 
- java -jar $SAXON -s:$PDBX_XSD -xsl:$PDBX2PDBML2RDF_XSL -o:$PDBML2RDF_XSL || ( echo $0 aborted. ; exit 1 )
+ java -jar $SAXON -s:$PDBML_XSD -xsl:$PDBX2PDBML2RDF_XSL -o:$PDBML2RDF_XSL || ( echo $0 aborted. ; exit 1 )
 
  echo Generated: $PDBML2RDF_XSL
 

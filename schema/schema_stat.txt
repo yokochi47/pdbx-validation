@@ -8,14 +8,14 @@ statistics of mmcif_pdbx_validation.dic:
   63 extended items in shared categories (see schema_stat/extended_items.txt for details).
   2808 shared items from mmcif_pdbx_v50.dic (WWPDB_LOCAL:3, see schema_stat/shared_items.txt for details).
   193 dropped items from mmcif_pdbx_v50.dic (WWPDB_DEPRECATED:13, WWPDB_LOCAL:160, see schema_stat/dropped_items.txt for details).
-  691 items linked to wwpdb_validation_v004.xsd.
+  691 items linked to wwpdb_validation_v6.00.xsd.
 
-statistics of pdbx-validation-v1.owl:
- has 483 classes.
+statistics of pdbx-validation-v4.owl:
+ has 559 classes.
   2 same classes of PDB/OWL.
-  433 equivalent classes of PDB/OWL.
- has 3726 properties (object: 508, datatype: 3218).
-  23 same properties of PDB/OWL.
-  3830 equivalent properties of PDB/OWL.
+  447 equivalent classes of PDB/OWL.
+ has 4237 properties (object: 589, datatype: 3648).
+  24 same properties of PDB/OWL.
+  3932 equivalent properties of PDB/OWL.
   134 equivalent properties of BMRB/OWL.
 

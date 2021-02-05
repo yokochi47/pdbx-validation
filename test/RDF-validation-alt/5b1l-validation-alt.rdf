@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rdf:RDF xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-         xmlns:owl="http://www.w3.org/2002/07/owl#"
+<rdf:RDF xmlns:PDBov="https://rdf.wwpdb.org/schema/pdbx-validation-v4.owl#"
          xmlns:dc="http://purl.org/dc/elements/1.1/"
          xmlns:dcterms="http://purl.org/dc/terms/"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
          xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-         xmlns:PDBov="https://rdf.wwpdb.org/schema/pdbx-validation-v4.owl#">
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
    <PDBov:datablock rdf:about="https://rdf.wwpdb.org/pdb-validation/5B1L">
       <dcterms:identifier>5B1L</dcterms:identifier>
       <skos:altLabel>5b1l</skos:altLabel>

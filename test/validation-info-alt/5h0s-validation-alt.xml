@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<PDBxv:datablock xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:PDBxv="http://pdbml.pdb.org/schema/pdbx-validation-v4.xsd" datablockName="5H0S-validation-alt" xsi:schemaLocation="http://pdbml.pdb.org/schema/pdbx-validation-v4.xsd pdbx-validation-v4.xsd">
+<PDBxv:datablock xmlns:PDBxv="http://pdbml.pdb.org/schema/pdbx-validation-v4.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" datablockName="5H0S-validation-alt" xsi:schemaLocation="http://pdbml.pdb.org/schema/pdbx-validation-v4.xsd pdbx-validation-v4.xsd">
   <PDBxv:entryCategory>
     <PDBxv:entry id="5H0S"/>
   </PDBxv:entryCategory>
