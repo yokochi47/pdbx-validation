@@ -6,7 +6,7 @@ if [ $MAXPROCS = 0 ] ; then
  MAXPROCS=1
 fi
 
-SAXON=extlibs/saxon9he.jar
+SAXON=extlibs/saxon-he.jar
 XSD2PGSCHEMA=extlibs/xsd2pgschema.jar
 
 PDBML_NOATOM=XML-noatom

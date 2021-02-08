@@ -1,5 +1,7 @@
 #!/bin/sh
 
+source ../scripts/env.sh
+
 if [ ! `which DictToSdb` ] || [ ! `which Dict2XMLSchema` ] || [ ! `which Dict2XMLSchema` ]; then
 
  echo "Please install MMCIF Dictionary Suite (http://sw-tools.pdb.org/)."
@@ -57,7 +59,7 @@ pattern=3,4s/$DIC_PREFIX.xsd/$DIC_PREFIX-v$DIC_MAJOR_VER.xsd/
 
 sed '2,6d' $DIC_PREFIX-v$DIC_VER.xsd | sed $pattern > $DIC_PREFIX.xsd~
 
-SAXON=../extlibs/saxon9he.jar
+SAXON=../$SAXON
 
 if [ ! -e $SAXON ] ; then
  ( cd ..; ./scripts/update_extlibs.sh )

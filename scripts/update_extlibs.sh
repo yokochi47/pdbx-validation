@@ -27,7 +27,7 @@ XSD2PGSCHEMA_VER=4.[0-9].[0-9]
 mkdir -p $EXTLIBS
 
 mvn dependency:copy -Dartifact=net.sf.saxon:$SAXON:$SAXON_VER
-mv \$\{project.basedir\}/target/dependency/$SAXON-$SAXON_VER.jar $EXTLIBS/saxon9he.jar
+mv \$\{project.basedir\}/target/dependency/$SAXON-$SAXON_VER.jar $EXTLIBS/saxon-he.jar
 rm -rf \$\{project.basedir\}
 
 cd $EXTLIBS

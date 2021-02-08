@@ -1,6 +1,8 @@
 #!/bin/bash
 
-SAXON=../extlibs/saxon9he.jar
+source ../scripts/env.sh
+
+SAXON=../$SAXON
 
 if [ ! -e $SAXON ] ; then
  ( cd ..; ./scripts/update_extlibs.sh )
