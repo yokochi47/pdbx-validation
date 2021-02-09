@@ -84,7 +84,9 @@ do
 
   new_chk_sum=`md5sum $cif_gz_file | cut -d ' ' -f 1`
 
-  if [ -e $chk_sum_file ] ; then
+  diag_log=$cif_label-diag.log
+
+  if [ -e $chk_sum_file ] && [ ! -e $diag_log ] ; then
 
    old_chk_sum=`head -n 1 $chk_sum_file`
 
@@ -111,7 +113,6 @@ do
 
   gunzip -c $cif_gz_file > $cif_dir/$cif_file || exit 1
 
-  diag_log=$cif_label-diag.log
   parser_log=$cif_label-parser.log
 
   rm -f $cif_dir/$diag_log $cif_dir/$parser_log
