@@ -10754,7 +10754,7 @@ Twin fractions determined by REFMAC.
                         </xsd:documentation>
               </xsd:annotation>
             </xsd:element>
-            <xsd:element name="twin_fraction_xtriage" minOccurs="0" maxOccurs="1" nillable="true" type="xsd:decimal">
+            <xsd:element name="twin_fraction_xtriage" minOccurs="0" maxOccurs="1" nillable="true" type="xsd:string">
               <xsd:annotation>
                 <xsd:documentation xml:lang="en" source="http://mmcif.wwpdb.org/dictionaries/mmcif_pdbx_v50.dic/Items/_pdbx_dcc_density.twin_fraction_xtriage.html">
 The twin fraction determined by Xtriage.

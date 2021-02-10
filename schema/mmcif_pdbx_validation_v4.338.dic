@@ -1,7 +1,7 @@
 ###########################################################################
 #
 # File:  mmcif_pdbx_validation-v4.dic
-# Date:  Mon Feb  8 19:23:41 JST 2021
+# Date:  Wed Feb 10 12:12:46 JST 2021
 #
 # Created from:
 #        mmcif_pdbx_v50.dic   - PDB Exchange Data Dictionary (V5.338)
@@ -824,9 +824,9 @@ data_mmcif_pdbx_validation.dic
 ;
       + Support NMR restraints validation in wwPDB validation report XML Schema v6.00
 ;
-  4.338-1   2021-02-08
+  4.338-1   2021-02-10
 ;
-      - Revert item type of _pdbx_dcc_density.twin_fraction_xtriage from float-list to the original float defined.
+      - Fix float-list type definition.
 ;
 
 #
@@ -1218,10 +1218,10 @@ data_mmcif_pdbx_validation.dic
                exp_data_doi        char '10\.[0-9]{4,9}/[-._;()/:A-Za-z0-9]+'  'Experimental dataset DOI'
                deposition_email    uchar '[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9.-]+' 'code item types/single words  (case insensitive) ...'
 # Added by MY
-#               float-list     numb
-#               '-?(([0-9]+)[.]?|([0-9]*[.][0-9]+))([(][0-9]+[)])?([eE][+-]?[0-9]+)?( -?(([0-9]+)[.]?|([0-9]*[.][0-9]+))([(][0-9]+[)])?([eE][+-]?[0-9]+)?)+'
-#;              space-separated sequence of float item types are the subset of numbers that are the floating numbers.
-#;
+               float-list     numb
+               '-?(([0-9]+)[.]?|([0-9]*[.][0-9]+))([(][0-9]+[)])?([eE][+-]?[0-9]+)?( -?(([0-9]+)[.]?|([0-9]*[.][0-9]+))([(][0-9]+[)])?([eE][+-]?[0-9]+)?)?'
+;              space-separated sequence of float item types are the subset of numbers that are the floating numbers.
+;
 
 
 #####################
@@ -56006,7 +56006,7 @@ save__pdbx_dcc_density.twin_fraction_xtriage
     _item.name                  '_pdbx_dcc_density.twin_fraction_xtriage'
     _item.category_id             pdbx_dcc_density
     _item.mandatory_code          no
-    _item_type.code               float # float-list
+    _item_type.code               float-list
 # Need to extract fraction value from TwinFraction
     _pdbx_item_aliases.xpath     '/wwPDB-validation-information/Entry/@TwinFraction'
     _pdbx_item_aliases.schema     wwpdb_validation_v6.00.xsd
