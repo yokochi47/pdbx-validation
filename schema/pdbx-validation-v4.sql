@@ -749,8 +749,8 @@ CREATE TABLE pdbx_percentile_conditions (
 	entry_id TEXT ,
 	ls_d_res_high DECIMAL ,
 	ls_d_res_low DECIMAL ,
--- xsd:restriction/xsd:minInclusive="1"
-	number_entries_total INTEGER CHECK ( number_entries_total >= 1 ) ,
+-- xsd:restriction/xsd:minInclusive="0"
+	number_entries_total INTEGER CHECK ( number_entries_total >= 0 ) ,
 -- ATTRIBUTE
 	id INTEGER NOT NULL
 );

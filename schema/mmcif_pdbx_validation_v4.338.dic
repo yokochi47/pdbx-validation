@@ -1,7 +1,7 @@
 ###########################################################################
 #
 # File:  mmcif_pdbx_validation-v4.dic
-# Date:  Wed Feb 10 12:12:46 JST 2021
+# Date:  Tue Feb 16 13:27:57 JST 2021
 #
 # Created from:
 #        mmcif_pdbx_v50.dic   - PDB Exchange Data Dictionary (V5.338)
@@ -827,6 +827,10 @@ data_mmcif_pdbx_validation.dic
   4.338-1   2021-02-10
 ;
       - Fix float-list type definition.
+;
+  4.338-2   2021-02-16
+;
+      - Change range of _pdbx_percentile_conditions.number_entries_total
 ;
 
 #
@@ -59267,8 +59271,8 @@ save__pdbx_percentile_conditions.number_entries_total
     _item.mandatory_code          no # for the case that /wwPDB-validation-information/Entry/@no-percentile-property='true'.
     loop_
     _item_range.maximum
-    _item_range.minimum           .   1
-                                  1   1
+    _item_range.minimum           .   0
+                                  0   0
     _item_type.code               int
 #
     loop_
