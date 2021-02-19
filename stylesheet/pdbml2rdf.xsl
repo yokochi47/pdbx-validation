@@ -6889,6 +6889,18 @@
       </PDBo:has_pdbx_refine_tls_group>
   </xsl:template>
 
+  <xsl:template match="PDBx:datablock/PDBx:pdbx_refln_signal_binningCategory/PDBx:pdbx_refln_signal_binning">
+      <PDBo:has_pdbx_refln_signal_binning>
+      <PDBo:pdbx_refln_signal_binning rdf:about="{$base}/pdbx_refln_signal_binning/{translate(@ordinal,' ^','_')}">
+      <PDBo:of_datablock rdf:resource="{$base}"/>
+      <xsl:apply-templates select="@*"/>
+      <xsl:apply-templates select="@*" mode="linked"/>
+      <xsl:apply-templates/>
+      <xsl:apply-templates mode="linked"/>
+      </PDBo:pdbx_refln_signal_binning>
+      </PDBo:has_pdbx_refln_signal_binning>
+  </xsl:template>
+
   <xsl:template match="PDBx:datablock/PDBx:pdbx_reflns_twinCategory/PDBx:pdbx_reflns_twin">
       <PDBo:has_pdbx_reflns_twin>
       <PDBo:pdbx_reflns_twin rdf:about="{$base}/pdbx_reflns_twin/{translate(@crystal_id,' ^','_')},{translate(@diffrn_id,' ^','_')},{translate(@operator,' ^','_')}">

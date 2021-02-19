@@ -119,6 +119,7 @@ pdbx_refine
 pdbx_refine_component
 pdbx_refine_tls
 pdbx_refine_tls_group
+pdbx_refln_signal_binning
 pdbx_reflns_twin
 pdbx_re_refinement
 pdbx_sequence_range

@@ -2896,6 +2896,18 @@
       </PDBov:has_pdbx_refine_tls_group>
   </xsl:template>
 
+  <xsl:template match="PDBxv:datablock/PDBxv:pdbx_refln_signal_binningCategory/PDBxv:pdbx_refln_signal_binning">
+      <PDBov:has_pdbx_refln_signal_binning>
+      <PDBov:pdbx_refln_signal_binning rdf:about="{$base}/pdbx_refln_signal_binning/{translate(@ordinal,' ^','_')}">
+      <PDBov:of_datablock rdf:resource="{$base}"/>
+      <xsl:apply-templates select="@*"/>
+      <xsl:apply-templates select="@*" mode="linked"/>
+      <xsl:apply-templates/>
+      <xsl:apply-templates mode="linked"/>
+      </PDBov:pdbx_refln_signal_binning>
+      </PDBov:has_pdbx_refln_signal_binning>
+  </xsl:template>
+
   <xsl:template match="PDBxv:datablock/PDBxv:pdbx_reflns_twinCategory/PDBxv:pdbx_reflns_twin">
       <PDBov:has_pdbx_reflns_twin>
       <PDBov:pdbx_reflns_twin rdf:about="{$base}/pdbx_reflns_twin/{translate(@crystal_id,' ^','_')},{translate(@diffrn_id,' ^','_')},{translate(@operator,' ^','_')}">

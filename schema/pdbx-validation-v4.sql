@@ -21,31 +21,31 @@
 --  map xsd date type to: sql date type
 --
 -- Statistics of schema:
---  Generated 278 tables (3598 fields), 0 views (0 fields), 0 attr groups, 0 model groups in total
+--  Generated 279 tables (3652 fields), 0 views (0 fields), 0 attr groups, 0 model groups in total
 --   Unnecessary tables by inlining simple content as a primitive data type:
 --    schema location: pdbx-validation-v4.xsd
---      improper_torsion_angle_rms_dev_error, mean_guiner_radius, recording_temperature_minimum, angle_value, bond_angle_rms_dev, "B_iso", diff_density_max_esd, "L22", "B_calc", distance_rms_dev, "B_calc_au", pdbx_phase_calc_part_solvent, improper_torsion_angle_rms_dev, "S22_esd", atom_deviation, "S31", "A_meas", "pdbx_F_calc_part_solvent", upper_limit, psi, "L23", prot_cis, "L11", "L23_esd", "T23_esd", "F_meas_au", "sigmaI", omega, "S32", resolution, residual_tilt, "Luzzati_sigma_a_free", "F_squared_calc", "L12", distance_rms_dev_medoid, pdbx_solvent_shrinkage_radii, current, chamber_temperature, chi1, chi2, chi3, chi4, chi5, "S21", "S33", scan_time_backgd, maximum_upper_distance_constraint_violation, "L13", "A_calc", "T12_esd", "S12_esd", "Luzzati_d_res_low_free", value, "B_meas", sampling_size, "S22", value_esd, "Cartn_y_esd", pdbx_solvent_vdw_probe_radii, "S13_esd", "B_meas_au", origin_y, origin_z, origin_x, "Cartn_z_esd", peptide_planarity_rms_dev, "P", phi, pdbx_collection_time_total, dihedral_angle_value, "B_iso_Wilson_estimate", zeta, maximum_lower_distance_constraint_violation, energyfilter_lower, "S11", "S23", nu1, "F_meas_sigma", nu2, nu3, "L12_esd", "F_calc_au", diff_density_min, nu4, nu0, "T33", tilt_angle_min, phase_meas, nominal_defocus_min, "S32_esd", "S12", calibrated_defocus_min, rise_per_n_subunits, "aniso_B33", "Luzzati_d_res_low_obs", pdbx_solvent_ion_probe_radii, "Luzzati_coordinate_error_free", "T22", lower_limit, "Luzzati_coordinate_error_obs", "S13", "T11_esd", "L11_esd", "aniso_B22", "S23_esd", concentration_range, "T23", max_mean_cross_sectional_radii_gyration_esd, "T11", clash_magnitude, angle_target_value, dihedral_angles_rms_dev, min_mean_cross_sectional_radii_gyration_esd, "L22_esd", neighbor_ligand_distance, tau0, "S21_esd", tau1, "aniso_B11", "aniso_B23", average_distance_constraint_violation, "B_iso_esd", maximum_distance_constraint_violation, "T12", max_mean_cross_sectional_radii_gyration, "A_calc_au", "S33_esd", "pdbx_F_calc_with_solvent", phase_calc, bond_angle_rms_dev_error, nominal_defocus_max, "aniso_B12", "B_iso_max", bond_deviation, angle_phi, min_mean_cross_sectional_radii_gyration, "T13", delta, distance_rms_dev_error, "B_iso_mean", recording_temperature_maximum, energyfilter_upper, covalent_bond_rms_dev, "F_squared_meas", epsilon, "aniso_B13", angle_theta, "F_meas_sigma_au", mean_guiner_radius_esd, angle_deviation, dihedral_angles_rms_dev_error, "T22_esd", peptide_planarity_rms_dev_error, "pdbx_res_netI_over_sigmaI_2", "Luzzati_sigma_a_obs", "Cartn_z", detector_distance, "S31_esd", beta, "L13_esd", "F_squared_sigma", voltage, angle_kappa, ambient_pressure_esd, "T13_esd", gamma, rotation_per_n_subunits, "Cartn_y", temp, covalent_bond_rms_dev_error, rmsd, "S11_esd", temperature, "A_meas_au", alpha, "Cartn_x_esd", "Cartn_x", "F_calc", power, diff_density_min_esd, ambient_temp_esd, neighbor_macromolecule_distance, "I", diff_density_max, angle_psi, "L33_esd", dihedral_angle_target_value, taum, angle_omega, pdbx_dist_value, scan_rate, "T33_esd", tau2, tau3, tau4, "B_iso_min", pdbx_phase_calc_with_solvent, tilt_angle_max, "F_meas", angle_chi, diff_density_rms_esd, average_torsion_angle_constraint_violation, maximum_torsion_angle_constraint_violation, "L33", diff_density_rms, dist, improper_torsion_angle, "pdbx_res_netI_over_av_sigmaI_2"
+--      improper_torsion_angle_rms_dev_error, mean_guiner_radius, recording_temperature_minimum, angle_value, bond_angle_rms_dev, "B_iso", diff_density_max_esd, "L22", "B_calc", distance_rms_dev, "B_calc_au", pdbx_phase_calc_part_solvent, improper_torsion_angle_rms_dev, "S22_esd", atom_deviation, "S31", "A_meas", "pdbx_F_calc_part_solvent", upper_limit, psi, "L23", prot_cis, "L11", "L23_esd", "T23_esd", "F_meas_au", "sigmaI", omega, "S32", resolution, residual_tilt, "Luzzati_sigma_a_free", "F_squared_calc", "L12", distance_rms_dev_medoid, pdbx_solvent_shrinkage_radii, current, chamber_temperature, chi1, pdbx_rotation_angle, chi2, chi3, chi4, chi5, "S21", "S33", scan_time_backgd, maximum_upper_distance_constraint_violation, pdbx_scan_angle, "L13", "A_calc", "T12_esd", "S12_esd", "Luzzati_d_res_low_free", value, "B_meas", sampling_size, "S22", value_esd, "Cartn_y_esd", pdbx_solvent_vdw_probe_radii, "S13_esd", "B_meas_au", origin_y, origin_z, origin_x, "Cartn_z_esd", peptide_planarity_rms_dev, "P", phi, pdbx_collection_time_total, dihedral_angle_value, "B_iso_Wilson_estimate", zeta, maximum_lower_distance_constraint_violation, energyfilter_lower, "S11", "S23", nu1, "F_meas_sigma", nu2, nu3, "L12_esd", "F_calc_au", diff_density_min, nu4, nu0, "T33", tilt_angle_min, phase_meas, nominal_defocus_min, "S32_esd", "S12", calibrated_defocus_min, rise_per_n_subunits, "aniso_B33", "Luzzati_d_res_low_obs", pdbx_solvent_ion_probe_radii, "Luzzati_coordinate_error_free", "T22", lower_limit, "Luzzati_coordinate_error_obs", "S13", "T11_esd", "L11_esd", "aniso_B22", "S23_esd", concentration_range, "T23", max_mean_cross_sectional_radii_gyration_esd, "T11", clash_magnitude, angle_target_value, dihedral_angles_rms_dev, min_mean_cross_sectional_radii_gyration_esd, "L22_esd", neighbor_ligand_distance, tau0, "S21_esd", tau1, "aniso_B11", "aniso_B23", average_distance_constraint_violation, "B_iso_esd", maximum_distance_constraint_violation, "T12", max_mean_cross_sectional_radii_gyration, "A_calc_au", "S33_esd", "pdbx_F_calc_with_solvent", phase_calc, bond_angle_rms_dev_error, nominal_defocus_max, "aniso_B12", "B_iso_max", bond_deviation, angle_phi, min_mean_cross_sectional_radii_gyration, "T13", delta, distance_rms_dev_error, "B_iso_mean", recording_temperature_maximum, energyfilter_upper, covalent_bond_rms_dev, "F_squared_meas", epsilon, "aniso_B13", angle_theta, "F_meas_sigma_au", mean_guiner_radius_esd, angle_deviation, dihedral_angles_rms_dev_error, "T22_esd", peptide_planarity_rms_dev_error, "pdbx_res_netI_over_sigmaI_2", "Luzzati_sigma_a_obs", "Cartn_z", detector_distance, "S31_esd", beta, "L13_esd", "F_squared_sigma", voltage, angle_kappa, ambient_pressure_esd, "T13_esd", gamma, rotation_per_n_subunits, "Cartn_y", temp, covalent_bond_rms_dev_error, rmsd, "S11_esd", temperature, "A_meas_au", alpha, "Cartn_x_esd", "Cartn_x", "F_calc", power, diff_density_min_esd, ambient_temp_esd, neighbor_macromolecule_distance, "I", diff_density_max, angle_psi, "L33_esd", dihedral_angle_target_value, taum, angle_omega, pdbx_dist_value, scan_rate, "T33_esd", tau2, tau3, tau4, "B_iso_min", pdbx_phase_calc_with_solvent, tilt_angle_max, "F_meas", angle_chi, diff_density_rms_esd, average_torsion_angle_constraint_violation, maximum_torsion_angle_constraint_violation, "L33", diff_density_rms, dist, improper_torsion_angle, "pdbx_res_netI_over_av_sigmaI_2"
 --   Namespaces:
 --    http://www.w3.org/2001/XMLSchema (xsd), http://pdbml.pdb.org/schema/pdbx-validation-v4.xsd (PDBxv)
 --   Schema locations:
 --    pdbx-validation-v4.xsd
 --   Table types:
---    0 root, 0 root children, 0 admin roots, 278 admin children
+--    0 root, 0 root children, 0 admin roots, 279 admin children
 --   System keys:
 --    0 primary keys (0 unique constraints), 0 foreign keys, 0 nested keys (0 as attribute, 0 as attribute group)
 --   User keys:
---    230 document keys, 0 serial keys, 0 xpath keys
+--    231 document keys, 0 serial keys, 0 xpath keys
 --   Contents:
---    477 attributes (43 in-place document keys), 2891 elements (5 in-place document keys), 0 simple contents (0 in-place document keys, 0 as attribute, 0 as conditional attribute)
+--    478 attributes (43 in-place document keys), 2943 elements (5 in-place document keys), 0 simple contents (0 in-place document keys, 0 as attribute, 0 as conditional attribute)
 --   Wild cards:
 --    0 any elements, 0 any attributes
 --   Constraints:
---    278 unique constraints from xsd:key, 1 unique constraints from xsd:unique, 145 foreign key constraints from xsd:keyref
+--    279 unique constraints from xsd:key, 1 unique constraints from xsd:unique, 145 foreign key constraints from xsd:keyref
 --
 
 --
--- PDBML-validation Schema v4.338
--- PDBXML-validation Schema translated from wwPDB Validation Information Dictionary v4.338, which is backward compatible with the PDBx/mmCIF Dictionary v5.338: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
+-- PDBML-validation Schema v4.339
+-- PDBXML-validation Schema translated from wwPDB Validation Information Dictionary v4.339, which is backward compatible with the PDBx/mmCIF Dictionary v5.339: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
 -- URI-reference = http://pdbml.pdb.org/schema/pdbx-validation-v4.xsd
 --
 
@@ -198,6 +198,7 @@ DROP TABLE IF EXISTS pdbx_re_refinement CASCADE;
 DROP TABLE IF EXISTS pdbx_refine CASCADE;
 DROP TABLE IF EXISTS pdbx_refine_component CASCADE;
 DROP TABLE IF EXISTS pdbx_refine_tls_group CASCADE;
+DROP TABLE IF EXISTS pdbx_refln_signal_binning CASCADE;
 DROP TABLE IF EXISTS pdbx_reflns_twin CASCADE;
 DROP TABLE IF EXISTS pdbx_sequence_range CASCADE;
 DROP TABLE IF EXISTS pdbx_soln_scatter CASCADE;
@@ -1554,7 +1555,15 @@ CREATE TABLE diffrn_refln (
 	intensity_sigma DECIMAL ,
 -- xsd:restriction/xsd:minInclusive="0"
 	intensity_u DECIMAL CHECK ( intensity_u >= 0 ) ,
-	pdbx_image_id INTEGER ,
+	pdbx_detector_x DECIMAL ,
+	pdbx_detector_y DECIMAL ,
+-- xsd:restriction/xsd:minExclusive="0"
+	pdbx_image_id INTEGER CHECK ( pdbx_image_id > 0 ) ,
+-- omit an attribute having a fixed value: @units="degrees"
+	pdbx_rotation_angle DECIMAL ,
+-- xsd:restriction/xsd:minExclusive="0.0"
+	pdbx_scale_value DECIMAL CHECK ( pdbx_scale_value > 0.0 ) ,
+-- omit an attribute having a fixed value: @units="degrees"
 	pdbx_scan_angle DECIMAL ,
 	scale_group_code TEXT ,
 	scan_mode ENUM_diffrn_refln_scan_mode ,
@@ -5482,6 +5491,22 @@ CREATE TABLE pdbx_refine_tls_group (
 );
 
 --
+-- (quoted from pdbx_refln_signal_binningType)
+-- The binning of the per-reflection signal generated by the software specified by attribute pdbx_signal_software_id. in category reflns If any reflections have a signal >= to the highest threshold specified, an additional bin should be inferred to hold them. Examples 1 - based on an internal STARANISO run <PDBxv:pdbx_refln_signal_binningCategory> <PDBxv:pdbx_refln_signal_binning ordinal="1"> <PDBxv:upper_threshold>1.20</PDBxv:upper_threshold> </PDBxv:pdbx_refln_signal_binning> <PDBxv:pdbx_refln_signal_binning ordinal="2"> <PDBxv:upper_threshold>7.22</PDBxv:upper_threshold> </PDBxv:pdbx_refln_signal_binning> <PDBxv:pdbx_refln_signal_binning ordinal="3"> <PDBxv:upper_threshold>19.00</PDBxv:upper_threshold> </PDBxv:pdbx_refln_signal_binning> <PDBxv:pdbx_refln_signal_binning ordinal="4"> <PDBxv:upper_threshold>36.81</PDBxv:upper_threshold> </PDBxv:pdbx_refln_signal_binning> <PDBxv:pdbx_refln_signal_binning ordinal="5"> <PDBxv:upper_threshold>48.87</PDBxv:upper_threshold> </PDBxv:pdbx_refln_signal_binning> <PDBxv:pdbx_refln_signal_binning ordinal="6"> <PDBxv:upper_threshold>53.84</PDBxv:upper_threshold> </PDBxv:pdbx_refln_signal_binning> <PDBxv:pdbx_refln_signal_binning ordinal="7"> <PDBxv:upper_threshold>57.69</PDBxv:upper_threshold> </PDBxv:pdbx_refln_signal_binning> </PDBxv:pdbx_refln_signal_binningCategory>
+-- URI-reference = http://pdbml.pdb.org/dictionaries/mmcif_pdbx_v50.dic/Categories/pdbx_refln_signal_binning.html
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v4.xsd (PDBxv), schema location: pdbx-validation-v4.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE pdbx_refln_signal_binning (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	entry_id TEXT ,
+	upper_threshold DECIMAL ,
+-- ATTRIBUTE
+-- xsd:restriction/xsd:minExclusive="0"
+	ordinal INTEGER CHECK ( ordinal > 0 ) NOT NULL
+);
+
+--
 -- (quoted from pdbx_reflns_twinType)
 -- Details decribing crystallographic twinning. Example 1 - <PDBxv:pdbx_reflns_twinCategory> <PDBxv:pdbx_reflns_twin crystal_id="1" diffrn_id="1" operator="h,-h-k,-l"> <PDBxv:fraction>.43</PDBxv:fraction> <PDBxv:mean_F_square_over_mean_F2>.84</PDBxv:mean_F_square_over_mean_F2> <PDBxv:mean_I2_over_mean_I_square>1.3</PDBxv:mean_I2_over_mean_I_square> <PDBxv:type>merohedral</PDBxv:type> </PDBxv:pdbx_reflns_twin> </PDBxv:pdbx_reflns_twinCategory>
 -- URI-reference = http://pdbml.pdb.org/dictionaries/mmcif_pdbx_v50.dic/Categories/pdbx_reflns_twin.html
@@ -7457,6 +7482,8 @@ CREATE TABLE refine_occupancy (
 --
 DROP TYPE IF EXISTS ENUM_refln_include_status CASCADE;
 CREATE TYPE ENUM_refln_include_status AS ENUM ( 'o', '<', '-', 'x', 'h', 'l' );
+DROP TYPE IF EXISTS ENUM_refln_pdbx_signal_status CASCADE;
+CREATE TYPE ENUM_refln_pdbx_signal_status AS ENUM ( 'm', 'o', 'u' );
 DROP TYPE IF EXISTS ENUM_refln_refinement_status CASCADE;
 CREATE TYPE ENUM_refln_refinement_status AS ENUM ( 'incl', 'excl', 'extn' );
 DROP TYPE IF EXISTS ENUM_refln_status CASCADE;
@@ -7541,6 +7568,8 @@ CREATE TABLE refln (
 -- omit an attribute having a fixed value: @units="degrees"
 	pdbx_phase_calc_with_solvent DECIMAL ,
 	pdbx_r_free_flag INTEGER ,
+	pdbx_signal DECIMAL ,
+	pdbx_signal_status ENUM_refln_pdbx_signal_status ,
 -- omit an attribute having a fixed value: @units="degrees"
 	phase_calc DECIMAL ,
 -- omit an attribute having a fixed value: @units="degrees"
@@ -7597,6 +7626,10 @@ CREATE TABLE refln_sys_abs (
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v4.xsd (PDBxv), schema location: pdbx-validation-v4.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
+DROP TYPE IF EXISTS ENUM_reflns_pdbx_orthogonalization_convention CASCADE;
+CREATE TYPE ENUM_reflns_pdbx_orthogonalization_convention AS ENUM ( 'pdb' );
+DROP TYPE IF EXISTS ENUM_reflns_pdbx_signal_type CASCADE;
+CREATE TYPE ENUM_reflns_pdbx_signal_type AS ENUM ( 'local <I/sigmaI>', 'local wCC_half' );
 CREATE TABLE reflns (
 -- omit an attribute having a fixed value: @units="angstroms_squared"
 	"B_iso_Wilson_estimate" DECIMAL ,
@@ -7640,6 +7673,9 @@ CREATE TABLE reflns (
 -- xsd:restriction/xsd:minExclusive="0"
 	"pdbx_CC_half" DECIMAL CHECK ( "pdbx_CC_half" > 0 AND "pdbx_CC_half" <= 1 ) ,
 -- xsd:restriction/xsd:maxInclusive="1"
+-- xsd:restriction/xsd:minInclusive="-1"
+	"pdbx_CC_half_anomalous" DECIMAL CHECK ( "pdbx_CC_half_anomalous" >= -1 AND "pdbx_CC_half_anomalous" <= 1 ) ,
+-- xsd:restriction/xsd:maxInclusive="1"
 -- xsd:restriction/xsd:minInclusive="0"
 	"pdbx_CC_star" DECIMAL CHECK ( "pdbx_CC_star" >= 0 AND "pdbx_CC_star" <= 1 ) ,
 -- xsd:restriction/xsd:maxExclusive="2"
@@ -7655,6 +7691,74 @@ CREATE TABLE reflns (
 -- xsd:restriction/xsd:minExclusive="0.0"
 	"pdbx_Rrim_I_all" DECIMAL CHECK ( "pdbx_Rrim_I_all" > 0.0 AND "pdbx_Rrim_I_all" < 5.0 ) ,
 	"pdbx_Rsym_value" DECIMAL ,
+-- xsd:restriction/xsd:minInclusive="0"
+	"pdbx_absDiff_over_sigma_anomalous" DECIMAL CHECK ( "pdbx_absDiff_over_sigma_anomalous" >= 0 ) ,
+-- xsd:restriction/xsd:minExclusive="0.0"
+	"pdbx_aniso_B_tensor_eigenvalue_1" DECIMAL CHECK ( "pdbx_aniso_B_tensor_eigenvalue_1" > 0.0 ) ,
+-- xsd:restriction/xsd:minExclusive="0.0"
+	"pdbx_aniso_B_tensor_eigenvalue_2" DECIMAL CHECK ( "pdbx_aniso_B_tensor_eigenvalue_2" > 0.0 ) ,
+-- xsd:restriction/xsd:minExclusive="0.0"
+	"pdbx_aniso_B_tensor_eigenvalue_3" DECIMAL CHECK ( "pdbx_aniso_B_tensor_eigenvalue_3" > 0.0 ) ,
+-- xsd:restriction/xsd:maxInclusive="1"
+-- xsd:restriction/xsd:minInclusive="-1"
+	"pdbx_aniso_B_tensor_eigenvector_1_ortho1" DECIMAL CHECK ( "pdbx_aniso_B_tensor_eigenvector_1_ortho1" >= -1 AND "pdbx_aniso_B_tensor_eigenvector_1_ortho1" <= 1 ) ,
+-- xsd:restriction/xsd:maxInclusive="1"
+-- xsd:restriction/xsd:minInclusive="-1"
+	"pdbx_aniso_B_tensor_eigenvector_1_ortho2" DECIMAL CHECK ( "pdbx_aniso_B_tensor_eigenvector_1_ortho2" >= -1 AND "pdbx_aniso_B_tensor_eigenvector_1_ortho2" <= 1 ) ,
+-- xsd:restriction/xsd:maxInclusive="1"
+-- xsd:restriction/xsd:minInclusive="-1"
+	"pdbx_aniso_B_tensor_eigenvector_1_ortho3" DECIMAL CHECK ( "pdbx_aniso_B_tensor_eigenvector_1_ortho3" >= -1 AND "pdbx_aniso_B_tensor_eigenvector_1_ortho3" <= 1 ) ,
+-- xsd:restriction/xsd:maxInclusive="1"
+-- xsd:restriction/xsd:minInclusive="-1"
+	"pdbx_aniso_B_tensor_eigenvector_2_ortho1" DECIMAL CHECK ( "pdbx_aniso_B_tensor_eigenvector_2_ortho1" >= -1 AND "pdbx_aniso_B_tensor_eigenvector_2_ortho1" <= 1 ) ,
+-- xsd:restriction/xsd:maxInclusive="1"
+-- xsd:restriction/xsd:minInclusive="-1"
+	"pdbx_aniso_B_tensor_eigenvector_2_ortho2" DECIMAL CHECK ( "pdbx_aniso_B_tensor_eigenvector_2_ortho2" >= -1 AND "pdbx_aniso_B_tensor_eigenvector_2_ortho2" <= 1 ) ,
+-- xsd:restriction/xsd:maxInclusive="1"
+-- xsd:restriction/xsd:minInclusive="-1"
+	"pdbx_aniso_B_tensor_eigenvector_2_ortho3" DECIMAL CHECK ( "pdbx_aniso_B_tensor_eigenvector_2_ortho3" >= -1 AND "pdbx_aniso_B_tensor_eigenvector_2_ortho3" <= 1 ) ,
+-- xsd:restriction/xsd:maxInclusive="1"
+-- xsd:restriction/xsd:minInclusive="-1"
+	"pdbx_aniso_B_tensor_eigenvector_3_ortho1" DECIMAL CHECK ( "pdbx_aniso_B_tensor_eigenvector_3_ortho1" >= -1 AND "pdbx_aniso_B_tensor_eigenvector_3_ortho1" <= 1 ) ,
+-- xsd:restriction/xsd:maxInclusive="1"
+-- xsd:restriction/xsd:minInclusive="-1"
+	"pdbx_aniso_B_tensor_eigenvector_3_ortho2" DECIMAL CHECK ( "pdbx_aniso_B_tensor_eigenvector_3_ortho2" >= -1 AND "pdbx_aniso_B_tensor_eigenvector_3_ortho2" <= 1 ) ,
+-- xsd:restriction/xsd:maxInclusive="1"
+-- xsd:restriction/xsd:minInclusive="-1"
+	"pdbx_aniso_B_tensor_eigenvector_3_ortho3" DECIMAL CHECK ( "pdbx_aniso_B_tensor_eigenvector_3_ortho3" >= -1 AND "pdbx_aniso_B_tensor_eigenvector_3_ortho3" <= 1 ) ,
+-- xsd:restriction/xsd:minExclusive="0.0"
+	pdbx_aniso_diffraction_limit_1 DECIMAL CHECK ( pdbx_aniso_diffraction_limit_1 > 0.0 ) ,
+-- xsd:restriction/xsd:minExclusive="0.0"
+	pdbx_aniso_diffraction_limit_2 DECIMAL CHECK ( pdbx_aniso_diffraction_limit_2 > 0.0 ) ,
+-- xsd:restriction/xsd:minExclusive="0.0"
+	pdbx_aniso_diffraction_limit_3 DECIMAL CHECK ( pdbx_aniso_diffraction_limit_3 > 0.0 ) ,
+-- xsd:restriction/xsd:maxInclusive="1"
+-- xsd:restriction/xsd:minInclusive="-1"
+	pdbx_aniso_diffraction_limit_axis_1_ortho1 DECIMAL CHECK ( pdbx_aniso_diffraction_limit_axis_1_ortho1 >= -1 AND pdbx_aniso_diffraction_limit_axis_1_ortho1 <= 1 ) ,
+-- xsd:restriction/xsd:maxInclusive="1"
+-- xsd:restriction/xsd:minInclusive="-1"
+	pdbx_aniso_diffraction_limit_axis_1_ortho2 DECIMAL CHECK ( pdbx_aniso_diffraction_limit_axis_1_ortho2 >= -1 AND pdbx_aniso_diffraction_limit_axis_1_ortho2 <= 1 ) ,
+-- xsd:restriction/xsd:maxInclusive="1"
+-- xsd:restriction/xsd:minInclusive="-1"
+	pdbx_aniso_diffraction_limit_axis_1_ortho3 DECIMAL CHECK ( pdbx_aniso_diffraction_limit_axis_1_ortho3 >= -1 AND pdbx_aniso_diffraction_limit_axis_1_ortho3 <= 1 ) ,
+-- xsd:restriction/xsd:maxInclusive="1"
+-- xsd:restriction/xsd:minInclusive="-1"
+	pdbx_aniso_diffraction_limit_axis_2_ortho1 DECIMAL CHECK ( pdbx_aniso_diffraction_limit_axis_2_ortho1 >= -1 AND pdbx_aniso_diffraction_limit_axis_2_ortho1 <= 1 ) ,
+-- xsd:restriction/xsd:maxInclusive="1"
+-- xsd:restriction/xsd:minInclusive="-1"
+	pdbx_aniso_diffraction_limit_axis_2_ortho2 DECIMAL CHECK ( pdbx_aniso_diffraction_limit_axis_2_ortho2 >= -1 AND pdbx_aniso_diffraction_limit_axis_2_ortho2 <= 1 ) ,
+-- xsd:restriction/xsd:maxInclusive="1"
+-- xsd:restriction/xsd:minInclusive="-1"
+	pdbx_aniso_diffraction_limit_axis_2_ortho3 DECIMAL CHECK ( pdbx_aniso_diffraction_limit_axis_2_ortho3 >= -1 AND pdbx_aniso_diffraction_limit_axis_2_ortho3 <= 1 ) ,
+-- xsd:restriction/xsd:maxInclusive="1"
+-- xsd:restriction/xsd:minInclusive="-1"
+	pdbx_aniso_diffraction_limit_axis_3_ortho1 DECIMAL CHECK ( pdbx_aniso_diffraction_limit_axis_3_ortho1 >= -1 AND pdbx_aniso_diffraction_limit_axis_3_ortho1 <= 1 ) ,
+-- xsd:restriction/xsd:maxInclusive="1"
+-- xsd:restriction/xsd:minInclusive="-1"
+	pdbx_aniso_diffraction_limit_axis_3_ortho2 DECIMAL CHECK ( pdbx_aniso_diffraction_limit_axis_3_ortho2 >= -1 AND pdbx_aniso_diffraction_limit_axis_3_ortho2 <= 1 ) ,
+-- xsd:restriction/xsd:maxInclusive="1"
+-- xsd:restriction/xsd:minInclusive="-1"
+	pdbx_aniso_diffraction_limit_axis_3_ortho3 DECIMAL CHECK ( pdbx_aniso_diffraction_limit_axis_3_ortho3 >= -1 AND pdbx_aniso_diffraction_limit_axis_3_ortho3 <= 1 ) ,
 	pdbx_chi_squared DECIMAL ,
 	pdbx_d_opt DECIMAL ,
 -- xsd:restriction/xsd:minInclusive="0"
@@ -7667,12 +7771,34 @@ CREATE TABLE reflns (
 	"pdbx_netI_over_sigmaI" DECIMAL ,
 -- xsd:restriction/xsd:minInclusive="0"
 	pdbx_number_measured_all INTEGER CHECK ( pdbx_number_measured_all >= 0 ) ,
+	pdbx_observed_signal_threshold DECIMAL ,
+	pdbx_orthogonalization_convention ENUM_reflns_pdbx_orthogonalization_convention ,
+-- xsd:restriction/xsd:maxInclusive="100"
+-- xsd:restriction/xsd:minInclusive="0"
+	pdbx_percent_possible_anomalous DECIMAL CHECK ( pdbx_percent_possible_anomalous >= 0 AND pdbx_percent_possible_anomalous <= 100 ) ,
+-- xsd:restriction/xsd:maxInclusive="100"
+-- xsd:restriction/xsd:minInclusive="0"
+	pdbx_percent_possible_ellipsoidal DECIMAL CHECK ( pdbx_percent_possible_ellipsoidal >= 0 AND pdbx_percent_possible_ellipsoidal <= 100 ) ,
+-- xsd:restriction/xsd:maxInclusive="100"
+-- xsd:restriction/xsd:minInclusive="0"
+	pdbx_percent_possible_ellipsoidal_anomalous DECIMAL CHECK ( pdbx_percent_possible_ellipsoidal_anomalous >= 0 AND pdbx_percent_possible_ellipsoidal_anomalous <= 100 ) ,
+-- xsd:restriction/xsd:maxInclusive="100"
+-- xsd:restriction/xsd:minInclusive="0"
+	pdbx_percent_possible_spherical DECIMAL CHECK ( pdbx_percent_possible_spherical >= 0 AND pdbx_percent_possible_spherical <= 100 ) ,
+-- xsd:restriction/xsd:maxInclusive="100"
+-- xsd:restriction/xsd:minInclusive="0"
+	pdbx_percent_possible_spherical_anomalous DECIMAL CHECK ( pdbx_percent_possible_spherical_anomalous >= 0 AND pdbx_percent_possible_spherical_anomalous <= 100 ) ,
 	pdbx_redundancy DECIMAL ,
+-- xsd:restriction/xsd:minInclusive="1"
+	pdbx_redundancy_anomalous DECIMAL CHECK ( pdbx_redundancy_anomalous >= 1 ) ,
 -- omit an attribute having a fixed value: @units="angstroms"
 	"pdbx_res_netI_over_av_sigmaI_2" DECIMAL ,
 -- omit an attribute having a fixed value: @units="angstroms"
 	"pdbx_res_netI_over_sigmaI_2" DECIMAL ,
 	pdbx_scaling_rejects INTEGER ,
+	pdbx_signal_details TEXT ,
+	pdbx_signal_software_id TEXT ,
+	pdbx_signal_type ENUM_reflns_pdbx_signal_type ,
 -- xsd:restriction/xsd:maxInclusive="100"
 -- xsd:restriction/xsd:minInclusive="0"
 	percent_possible_obs DECIMAL CHECK ( percent_possible_obs >= 0 AND percent_possible_obs <= 100 ) ,
@@ -7781,6 +7907,9 @@ CREATE TABLE reflns_shell (
 -- xsd:restriction/xsd:minExclusive="0"
 	"pdbx_CC_half" DECIMAL CHECK ( "pdbx_CC_half" > 0 AND "pdbx_CC_half" <= 1 ) ,
 -- xsd:restriction/xsd:maxInclusive="1"
+-- xsd:restriction/xsd:minInclusive="-1"
+	"pdbx_CC_half_anomalous" DECIMAL CHECK ( "pdbx_CC_half_anomalous" >= -1 AND "pdbx_CC_half_anomalous" <= 1 ) ,
+-- xsd:restriction/xsd:maxInclusive="1"
 -- xsd:restriction/xsd:minInclusive="0"
 	"pdbx_CC_star" DECIMAL CHECK ( "pdbx_CC_star" >= 0 AND "pdbx_CC_star" <= 1 ) ,
 -- xsd:restriction/xsd:maxExclusive="10"
@@ -7792,11 +7921,30 @@ CREATE TABLE reflns_shell (
 	"pdbx_Rrim_I_all" DECIMAL CHECK ( "pdbx_Rrim_I_all" > 0.0 ) ,
 -- xsd:restriction/xsd:minInclusive="0"
 	"pdbx_Rsym_value" DECIMAL CHECK ( "pdbx_Rsym_value" >= 0 ) ,
+-- xsd:restriction/xsd:minInclusive="0"
+	"pdbx_absDiff_over_sigma_anomalous" DECIMAL CHECK ( "pdbx_absDiff_over_sigma_anomalous" >= 0 ) ,
 	pdbx_chi_squared DECIMAL ,
 	pdbx_diffrn_id TEXT ,
 	"pdbx_netI_over_sigmaI_all" DECIMAL ,
 	"pdbx_netI_over_sigmaI_obs" DECIMAL ,
+-- xsd:restriction/xsd:maxInclusive="100"
+-- xsd:restriction/xsd:minInclusive="0"
+	pdbx_percent_possible_anomalous DECIMAL CHECK ( pdbx_percent_possible_anomalous >= 0 AND pdbx_percent_possible_anomalous <= 100 ) ,
+-- xsd:restriction/xsd:maxInclusive="100"
+-- xsd:restriction/xsd:minInclusive="0"
+	pdbx_percent_possible_ellipsoidal DECIMAL CHECK ( pdbx_percent_possible_ellipsoidal >= 0 AND pdbx_percent_possible_ellipsoidal <= 100 ) ,
+-- xsd:restriction/xsd:maxInclusive="100"
+-- xsd:restriction/xsd:minInclusive="0"
+	pdbx_percent_possible_ellipsoidal_anomalous DECIMAL CHECK ( pdbx_percent_possible_ellipsoidal_anomalous >= 0 AND pdbx_percent_possible_ellipsoidal_anomalous <= 100 ) ,
+-- xsd:restriction/xsd:maxInclusive="100"
+-- xsd:restriction/xsd:minInclusive="0"
+	pdbx_percent_possible_spherical DECIMAL CHECK ( pdbx_percent_possible_spherical >= 0 AND pdbx_percent_possible_spherical <= 100 ) ,
+-- xsd:restriction/xsd:maxInclusive="100"
+-- xsd:restriction/xsd:minInclusive="0"
+	pdbx_percent_possible_spherical_anomalous DECIMAL CHECK ( pdbx_percent_possible_spherical_anomalous >= 0 AND pdbx_percent_possible_spherical_anomalous <= 100 ) ,
 	pdbx_redundancy DECIMAL ,
+-- xsd:restriction/xsd:minInclusive="1"
+	pdbx_redundancy_anomalous DECIMAL CHECK ( pdbx_redundancy_anomalous >= 1 ) ,
 	pdbx_rejects INTEGER ,
 -- xsd:restriction/xsd:minInclusive="0"
 	percent_possible_all DECIMAL CHECK ( percent_possible_all >= 0 ) ,
@@ -9002,6 +9150,9 @@ CREATE TABLE symmetry_equiv (
 
 -- (derived from xsd:key[@name='pdbx_refine_tls_groupKey_0'])
 --ALTER TABLE pdbx_refine_tls_group ADD CONSTRAINT UNQ_pdbx_refine_tls_group UNIQUE ( entry_id, id );
+
+-- (derived from xsd:key[@name='pdbx_refln_signal_binningKey_0'])
+--ALTER TABLE pdbx_refln_signal_binning ADD CONSTRAINT UNQ_pdbx_refln_signal_binning UNIQUE ( entry_id, ordinal );
 
 -- (derived from xsd:key[@name='pdbx_reflns_twinKey_0'])
 --ALTER TABLE pdbx_reflns_twin ADD CONSTRAINT UNQ_pdbx_reflns_twin UNIQUE ( entry_id, crystal_id, diffrn_id, operator );

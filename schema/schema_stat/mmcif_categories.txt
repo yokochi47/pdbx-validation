@@ -394,6 +394,7 @@ pdbx_refine_component
 pdbx_refine_ls_restr_ncs
 pdbx_refine_tls
 pdbx_refine_tls_group
+pdbx_refln_signal_binning
 pdbx_reflns_twin
 pdbx_related_exp_data_set
 pdbx_remediation_atom_site_mapping

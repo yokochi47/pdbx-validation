@@ -1069,6 +1069,12 @@ Unmatched entry ID in both documents (<xsl:value-of select="$entry_id"/> and <xs
     </xsl:element>
   </xsl:template>
 
+  <xsl:template match="PDBx:pdbx_refln_signal_binningCategory">
+    <xsl:element name="PDBxv:{local-name()}">
+      <xsl:apply-templates mode="category-element"/>
+    </xsl:element>
+  </xsl:template>
+
   <xsl:template match="PDBx:pdbx_reflns_twinCategory">
     <xsl:element name="PDBxv:{local-name()}">
       <xsl:apply-templates mode="category-element"/>
