@@ -23,7 +23,7 @@ fi
 
 #./scripts/compress_pdbml_vrpt.sh
 
-if [[ $(find wurcs2glytoucan/glytoucan.xml -mtime +4) ]] ; then
+if [[ $(find $_WURCS_CATALOG_XML -mtime +4) ]] ; then
  ( cd wurcs2glytoucan; ./update_glytoucan.sh )
 fi
 

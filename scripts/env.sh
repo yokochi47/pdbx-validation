@@ -90,8 +90,8 @@ CC2RDF_XSL=stylesheet/cc2rdf.xsl
 PDBML2WURCS_XSL=stylesheet/pdbml2wurcs.xsl
 PDBMLV2WURCS_XSL=stylesheet/pdbmlv2wurcs.xsl
 
-GLYTOUCAN_XML=../wurcs2glytoucan/glytoucan.xml
-_GLYTOUCAN_XML=wurcs2glytoucan/glytoucan.xml
+WURCS_CATALOG_XML=../wurcs2glytoucan/wurcs_catalog.xml
+_WURCS_CATALOG_XML=wurcs2glytoucan/wurcs_catalog.xml
 
 RDF=RDF
 

@@ -26,7 +26,7 @@ fi
 
 ./scripts/update_pdbml.sh $MTIME_OPT || exit $?
 
-if [[ $(find wurcs2glytoucan/glytoucan.xml -mtime +4) ]] ; then
+if [[ $(find $_WURCS_CATALOG_XML -mtime +4) ]] ; then
  ( cd wurcs2glytoucan; ./update_glytoucan.sh )
 fi
 

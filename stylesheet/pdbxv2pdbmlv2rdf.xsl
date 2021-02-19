@@ -168,7 +168,7 @@
 
   &lt;xsl:template match="PDBxv:pdbx_entity_branch_descriptor/PDBxv:descriptor[../PDBxv:type='WURCS' and text()!='']" mode="linked"&gt;
     &lt;xsl:variable name="wurcs_id">&lt;xsl:value-of select="text()"/&gt;&lt;/xsl:variable&gt;
-    &lt;xsl:for-each select="$glytoucan/mapping/wurcs[@id=$wurcs_id]"&gt;
+    &lt;xsl:for-each select="$glytoucan/catalog/wurcs[@id=$wurcs_id]"&gt;
       &lt;xsl:if test="text()!=''"&gt;
         &lt;PDBov:link_to_glycoinfo rdf:resource="{$glycoinfo}{text()}" rdfs:label="glytoucan:{text()}"/&gt;
         &lt;rdfs:seeAlso rdf:resource="{$idorg}glytoucan/{text()}" rdfs:label="glytoucan:{text()}"/&gt;

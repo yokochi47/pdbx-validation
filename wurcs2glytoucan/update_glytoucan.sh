@@ -4,7 +4,7 @@ end_point=https://ts.glytoucan.org/sparql
 limit=500
 
 glytoucan_lock=glytoucan.lock
-glytoucan_xml=glytoucan.xml
+wurcs_catalog_xml=wurcs_catalog.xml
 
 function query() {
  offset=${1:-0}
@@ -47,9 +47,9 @@ function query_recursive() {
   printf "\rRetrieved %s entries..." $((offset + $(echo -e "${result}" | wc -l))) >&2
   for line in ${result} ; do
    if [ $(($i % 2)) == 0 ] ; then
-    echo -n '<wurcs id='$(echo $line | sed 's/</\&lt;/g; s/>/\&gt;/g')'>' >> $glytoucan_xml
+    echo -n '<wurcs id='$(echo $line | sed 's/</\&lt;/g; s/>/\&gt;/g')'>' >> $wurcs_catalog_xml
    else
-    echo $(echo $line | xargs)'</wurcs>' >> $glytoucan_xml
+    echo $(echo $line | xargs)'</wurcs>' >> $wurcs_catalog_xml
    fi
    let i++
   done
@@ -60,7 +60,7 @@ function query_recursive() {
 }
 
 if [ -e $glytoucan_lock ] ; then
- $glytoucan_lock exists.
+ echo $glytoucan_lock exists.
  exit 1
 fi
 
@@ -68,22 +68,22 @@ touch $glytoucan_lock
 
 old_xml_size=0
 
-if [ -e $glytoucan_xml ] ; then
- old_xml_size=`wc -l $glytoucan_xml`
- mv -f $glytoucan_xml $glytoucan_xml.bk
+if [ -e $wurcs_catalog_xml ] ; then
+ old_xml_size=`wc -l $wurcs_catalog_xml`
+ mv -f $wurcs_catalog_xml $wurcs_catalog_xml.bk
 fi
 
-echo '<mapping>' > $glytoucan_xml
+echo '<catalog>' > $wurcs_catalog_xml
 
 query_recursive
 
-echo '</mapping>' >> $glytoucan_xml
+echo '</catalog>' >> $wurcs_catalog_xml
 
-new_xml_size=`wc -l $glytoucan_xml`
+new_xml_size=`wc -l $wurcs_catalog_xml`
 
-[ -e $glytoucan_xml.bk ] && [ $((new_xml_size + 100)) -lt $old_xml_size ] && mv -f $glytoucan_xml.bk $glytoucan_xml
+[ -e $wurcs_catalog_xml.bk ] && [ $((new_xml_size + 100)) -lt $old_xml_size ] && mv -f $wurcs_catalog_xml.bk $wurcs_catalog_xml
 
-rm -f $glytoucan_lock $glytoucan_xml.bk
+rm -f $glytoucan_lock $wurcs_catalog_xml.bk
 
-echo $glytoucan_xml is up-to-date.
+echo $wurcs_catalog_xml is up-to-date.
 

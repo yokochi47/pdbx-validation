@@ -167,9 +167,9 @@ for pdbml_file in $WORK_DIR/$PDBML/*.xml ; do
  has_glycan=`xsltproc $PDBMLV2WURCS_XSL $pdbml_vrpt_file`
 
  if [ -z "$has_glycan" ] ; then
-  xsltproc -o $rdf_vrpt_file --param wurcs2glytoucan $_GLYTOUCAN_XML $PDBMLV2RDF_XSL $pdbml_vrpt_file || ( echo $0 aborted. ; exit 1 )
+  xsltproc -o $rdf_vrpt_file --param wurcs2glytoucan $_WURCS_CATALOG_XML $PDBMLV2RDF_XSL $pdbml_vrpt_file || ( echo $0 aborted. ; exit 1 )
  else
-  java -jar $SAXON -s:$pdbml_vrpt_file -xsl:$PDBMLV2RDF_XSL -o:$rdf_vrpt_file wurcs2glytoucan=$GLYTOUCAN_XML || ( echo $0 aborted. ; exit 1 )
+  java -jar $SAXON -s:$pdbml_vrpt_file -xsl:$PDBMLV2RDF_XSL -o:$rdf_vrpt_file wurcs2glytoucan=$WURCS_CATALOG_XML || ( echo $0 aborted. ; exit 1 )
  fi
 
  echo " generated: "$rdf_vrpt_file
@@ -182,7 +182,7 @@ for pdbml_file in $WORK_DIR/$PDBML/*.xml ; do
  info_alt_file=$WORK_DIR/$VALID_INFO_ALT/$pdbid-validation-alt.xml
  rdf_vrpt_alt_file=$WORK_DIR/$RDF_VALID_ALT/$pdbid-validation-alt.rdf
 
- java -jar $SAXON -s:$info_alt_file -xsl:$PDBMLV2RDF_XSL -o:$rdf_vrpt_alt_file wurcs2glytoucan=$GLYTOUCAN_XML || ( echo $0 aborted. ; exit 1 )
+ java -jar $SAXON -s:$info_alt_file -xsl:$PDBMLV2RDF_XSL -o:$rdf_vrpt_alt_file wurcs2glytoucan=$WURCS_CATALOG_XML || ( echo $0 aborted. ; exit 1 )
 
  echo " generated: "$rdf_vrpt_alt_file
 

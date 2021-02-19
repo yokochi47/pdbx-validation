@@ -65,9 +65,9 @@ for pdbml_file in $WORK_DIR/$PDBML/*.xml ; do
  rdf_file=$WORK_DIR/$RDF/$pdbid.rdf
 
  if [ -z "$has_glycan" ] ; then
-  xsltproc -o $rdf_file --param wurcs2glytoucan $_GLYTOUCAN_XML $PDBML2RDF_XSL $pdbml_file
+  xsltproc -o $rdf_file --param wurcs2glytoucan $_WURCS_CATALOG_XML $PDBML2RDF_XSL $pdbml_file
  else
-  java -jar $SAXON -s:$pdbml_file -xsl:$PDBML2RDF_XSL -o:$rdf_file wurcs2glytoucan=$GLYTOUCAN_XML || ( echo $0 aborted. ; exit 1 )
+  java -jar $SAXON -s:$pdbml_file -xsl:$PDBML2RDF_XSL -o:$rdf_file wurcs2glytoucan=$WURCS_CATALOG_XML || ( echo $0 aborted. ; exit 1 )
  fi
 
  echo " generated: "$rdf_file

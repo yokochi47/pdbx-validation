@@ -86,7 +86,7 @@ fi
 xml_total=`ls $XML_VALID 2> /dev/null | wc -l 2> /dev/null`
 rdf_total=`ls $RDF_VALID 2> /dev/null | wc -l 2> /dev/null`
 
-if [[ $(find wurcs2glytoucan/glytoucan.xml -mtime +4) ]] ; then
+if [[ $(find $_WURCS_CATALOG_XML -mtime +4) ]] ; then
  ( cd wurcs2glytoucan; ./update_glytoucan.sh )
 fi
 
