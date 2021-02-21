@@ -72684,7 +72684,7 @@ save__reflns.pdbx_percent_possible_ellipsoidal
     _item_aliases.version
                                 '_reflns.gphl_percent_possible_ellipsoidal_obs'   gphl-proc-extension.dic        0.0
                                 '_reflns.gphl_percent_possible_ellipsoidal_obs'   gphl-proc-aniso-extension.dic  0.0
-     save_
+save_
 
 save__reflns.pdbx_percent_possible_spherical
     _item_description.description
@@ -72715,7 +72715,7 @@ save__reflns.pdbx_percent_possible_spherical
                                 '_reflns.gphl_percent_possible_spherical_obs'   gphl-proc-extension.dic        0.0
                                 '_reflns.gphl_percent_possible_spherical'       gphl-proc-aniso-extension.dic  0.0
 
-     save_
+save_
 
 save__reflns.pdbx_percent_possible_ellipsoidal_anomalous
     _item_description.description
@@ -72745,7 +72745,7 @@ save__reflns.pdbx_percent_possible_ellipsoidal_anomalous
     _item_aliases.version
                                 '_reflns.gphl_percent_possible_ellipsoidal_obs_anomalous'   gphl-proc-extension.dic        0.0
                                 '_reflns.gphl_percent_possible_ellipsoidal_anomalous'       gphl-proc-aniso-extension.dic  0.0
-     save_
+save_
 
 save__reflns.pdbx_percent_possible_spherical_anomalous
     _item_description.description
@@ -72776,7 +72776,7 @@ save__reflns.pdbx_percent_possible_spherical_anomalous
     _item_aliases.version
                                 '_reflns.gphl_percent_possible_spherical_obs_anomalous'   gphl-proc-extension.dic        0.0
                                 '_reflns.gphl_percent_possible_spherical_anomalous'       gphl-proc-aniso-extension.dic  0.0
-     save_
+save_
 
 ###########################
 ## Category REFLNS_SHELL ##
@@ -72811,7 +72811,7 @@ save__reflns_shell.pdbx_percent_possible_ellipsoidal
                                 '_reflns_shell.gphl_percent_possible_ellipsoidal_all'   gphl-proc-extension.dic        0.0
                                 '_reflns_shell.gphl_percent_possible_ellipsoidal'       gphl-proc-aniso-extension.dic  0.0
 
-     save_
+save_
 
 save__reflns_shell.pdbx_percent_possible_spherical
     _item_description.description
@@ -72841,7 +72841,7 @@ save__reflns_shell.pdbx_percent_possible_spherical
     _item_aliases.version
                                 '_reflns_shell.gphl_percent_possible_spherical_all'   gphl-proc-extension.dic        0.0
                                 '_reflns_shell.gphl_percent_possible_spherical'       gphl-proc-aniso-extension.dic  0.0
-     save_
+save_
 
 save__reflns_shell.pdbx_percent_possible_ellipsoidal_anomalous
     _item_description.description
@@ -72871,7 +72871,7 @@ save__reflns_shell.pdbx_percent_possible_ellipsoidal_anomalous
     _item_aliases.version
                                 '_reflns_shell.gphl_percent_possible_ellipsoidal_obs_anomalous'   gphl-proc-extension.dic        0.0
                                 '_reflns_shell.gphl_percent_possible_ellipsoidal_anomalous'       gphl-proc-aniso-extension.dic  0.0
-     save_
+save_
 
 save__reflns_shell.pdbx_percent_possible_spherical_anomalous
     _item_description.description
@@ -72903,7 +72903,7 @@ save__reflns_shell.pdbx_percent_possible_spherical_anomalous
     _item_aliases.version
                                 '_reflns_shell.gphl_percent_possible_spherical_obs_anomalous'   gphl-proc-extension.dic        0.0
                                 '_reflns_shell.gphl_percent_possible_spherical'                 gphl-proc-aniso-extension.dic  0.0
-     save_
+save_
 
 #
 # Statistics relating to isotropic, anomalous diffraction
@@ -73023,7 +73023,7 @@ save__reflns.pdbx_percent_possible_anomalous
     _item_aliases.version
                                 '_reflns.gphl_percent_possible_obs_anomalous' gphl-proc-extension.dic                  0.0
 				'_reflns.gphl_percent_possible_anomalous'     gphl-proc-anomalous-stats-extension.dic  0.0
-     save_
+save_
 
 ###########################
 ## Category REFLNS_SHELL ##
@@ -73139,7 +73139,7 @@ save__reflns_shell.pdbx_percent_possible_anomalous
     _item_aliases.version
                                 '_reflns_shell.gphl_percent_possible_obs_anomalous'  gphl-proc-extension.dic 0.0
 				'_reflns_shell.gphl_percent_possible_anomalous'      gphl-proc-anomalous-stats-extension.dic  0.0
-     save_
+save_
 
 #
 # Items relating to an application-defined per-reflection signal and its use
@@ -73393,7 +73393,7 @@ save__diffrn_refln.pdbx_detector_x
     _item_aliases.alias_name    '_diffrn_refln.gphl_detector_x'
     _item_aliases.dictionary      gphl-proc-unmerged-extension.dic
     _item_aliases.version         0.0
-     save_
+save_
 
 save__diffrn_refln.pdbx_detector_y
     _item_description.description
@@ -73414,7 +73414,7 @@ save__diffrn_refln.pdbx_detector_y
     _item_aliases.alias_name    '_diffrn_refln.gphl_detector_y'
     _item_aliases.dictionary      gphl-proc-unmerged-extension.dic
     _item_aliases.version         0.0
-     save_
+save_
 
 save__diffrn_refln.pdbx_rotation_angle
     _item_description.description
@@ -73431,7 +73431,7 @@ save__diffrn_refln.pdbx_rotation_angle
     _item_aliases.alias_name    '_diffrn_refln.gphl_rotation_angle'
     _item_aliases.dictionary      gphl-proc-unmerged-extension.dic
     _item_aliases.version         0.0
-     save_
+save_
 
 save__diffrn_refln.pdbx_scale_value
     _item_description.description
@@ -73450,7 +73450,7 @@ save__diffrn_refln.pdbx_scale_value
     _item_aliases.alias_name    '_diffrn_refln.gphl_scale_value'
     _item_aliases.dictionary      gphl-proc-unmerged-extension.dic
     _item_aliases.version         0.0
-     save_
+save_
 #
 
 loop_
