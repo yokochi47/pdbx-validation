@@ -66,24 +66,13 @@ fi
 
 touch $glytoucan_lock
 
-old_xml_size=0
-
-if [ -e $wurcs_catalog_xml ] ; then
- old_xml_size=`wc -l $wurcs_catalog_xml`
- mv -f $wurcs_catalog_xml $wurcs_catalog_xml.bk
-fi
-
 echo '<catalog>' > $wurcs_catalog_xml
 
 query_recursive
 
 echo '</catalog>' >> $wurcs_catalog_xml
 
-new_xml_size=`wc -l $wurcs_catalog_xml`
-
-[ -e $wurcs_catalog_xml.bk ] && [ $((new_xml_size + 100)) -lt $old_xml_size ] && mv -f $wurcs_catalog_xml.bk $wurcs_catalog_xml
-
-rm -f $glytoucan_lock $wurcs_catalog_xml.bk
+rm -f $glytoucan_lock
 
 echo $wurcs_catalog_xml is up-to-date.
 
