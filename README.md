@@ -164,7 +164,7 @@ File path | Document
 
 ## Release notes
 
---**Mar 16, 2021**: Release v4.0.3
+- **Mar 16, 2021**: Release v4.0.3
 	- Update wwPDB Validation Information Dictionary to 4.341.
 
 - **Mar 15, 2021**: Release v4.0.2
