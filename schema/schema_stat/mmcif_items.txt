@@ -1958,6 +1958,9 @@ pdbx_atom_site_aniso_tls.U_tls[3][3]
 pdbx_audit_author.address
 pdbx_audit_author.name
 pdbx_audit_author.ordinal
+pdbx_audit_conform.dict_location
+pdbx_audit_conform.dict_name
+pdbx_audit_conform.dict_version
 pdbx_audit_conform_extension.extension_dict_location
 pdbx_audit_conform_extension.extension_dict_name
 pdbx_audit_conform_extension.extension_dict_version

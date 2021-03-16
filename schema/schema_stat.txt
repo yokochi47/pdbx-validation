@@ -2,7 +2,7 @@ statistics of mmcif_pdbx_validation.dic:
  has 279 categories.
   55 new categories (see schema_stat/new_categories.txt for details).
   224 shared categories from mmcif_pdbx_v50.dic (CHEM_COMP_INT:5, WWPDB_LOCAL:9, see schema_stat/shared_categories.txt for details).
-  340 dropped categories from mmcif_pdbx_v50.dic (RCSB_LOCAL:1, WWPDB_DEPRECATED:2, WWPDB_LOCAL:150, see schema_stat/dropped_categories.txt for details).
+  341 dropped categories from mmcif_pdbx_v50.dic (RCSB_LOCAL:1, WWPDB_DEPRECATED:2, WWPDB_LOCAL:150, see schema_stat/dropped_categories.txt for details).
  has 3421 items.
   560 new items (see schema_stat/new_items.txt for details).
   63 extended items in shared categories (see schema_stat/extended_items.txt for details).

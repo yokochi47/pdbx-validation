@@ -169,6 +169,7 @@ pdbx_atlas
 pdbx_atom_site_aniso_tls
 pdbx_audit
 pdbx_audit_author
+pdbx_audit_conform
 pdbx_audit_conform_extension
 pdbx_audit_revision_category
 pdbx_audit_revision_details

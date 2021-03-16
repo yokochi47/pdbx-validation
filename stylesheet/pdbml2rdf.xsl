@@ -2985,6 +2985,18 @@
       </PDBo:has_pdbx_audit_author>
   </xsl:template>
 
+  <xsl:template match="PDBx:datablock/PDBx:pdbx_audit_conformCategory/PDBx:pdbx_audit_conform">
+      <PDBo:has_pdbx_audit_conform>
+      <PDBo:pdbx_audit_conform rdf:about="{$base}/pdbx_audit_conform/{translate(@dict_name,' ^','_')},{translate(@dict_version,' ^','_')}">
+      <PDBo:of_datablock rdf:resource="{$base}"/>
+      <xsl:apply-templates select="@*"/>
+      <xsl:apply-templates select="@*" mode="linked"/>
+      <xsl:apply-templates/>
+      <xsl:apply-templates mode="linked"/>
+      </PDBo:pdbx_audit_conform>
+      </PDBo:has_pdbx_audit_conform>
+  </xsl:template>
+
   <xsl:template match="PDBx:datablock/PDBx:pdbx_audit_conform_extensionCategory/PDBx:pdbx_audit_conform_extension">
       <PDBo:has_pdbx_audit_conform_extension>
       <PDBo:pdbx_audit_conform_extension rdf:about="{$base}/pdbx_audit_conform_extension/{translate(@extension_dict_name,' ^','_')},{translate(@extension_dict_version,' ^','_')}">

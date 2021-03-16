@@ -105,6 +105,7 @@ ndb_struct_feature_na
 pdbx_atlas WWPDB_LOCAL
 pdbx_atom_site_aniso_tls
 pdbx_audit
+pdbx_audit_conform
 pdbx_audit_conform_extension WWPDB_LOCAL
 pdbx_audit_support
 pdbx_buffer
