@@ -23,7 +23,8 @@
   xmlns:owl="http://www.w3.org/2002/07/owl#"
   xmlns:dc="http://purl.org/dc/elements/1.1/"
   xmlns:dcterms="http://purl.org/dc/terms/"
-  xmlns:skos="http://www.w3.org/2004/02/skos/core#"&gt;
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:ext="http://exslt.org/common" exclude-result-prefixes="ext"&gt;
 </xsl2:text>
     <xsl2:apply-templates/>
     <xsl2:text disable-output-escaping="yes">
@@ -148,8 +149,43 @@
   &lt;/xsl:template&gt;
 
   &lt;xsl:template match="PDBx:entity/PDBx:pdbx_ec[text()!='']" mode="linked"&gt;
-    &lt;PDBo:link_to_enzyme rdf:resource="{$enzyme}{text()}" rdfs:label="enzyme:{text()}"/&gt;
-    &lt;rdfs:seeAlso rdf:resource="{$idorg}ec-code/{text()}" rdfs:label="ec-code:{text()}"/&gt;
+    &lt;xsl:variable name="ec_norm"&gt;&lt;xsl:value-of select="normalize-space(text())"/&gt;&lt;/xsl:variable&gt;
+    &lt;xsl:if test="$ec_norm!=''"&gt;
+      &lt;xsl:variable name="ec_list"&gt;
+        &lt;xsl:call-template name="tokenize"&gt;
+          &lt;xsl:with-param name="string" select="$ec_norm"/&gt;
+          &lt;xsl:with-param name="delimiter"&gt;,&lt;/xsl:with-param&gt;
+        &lt;/xsl:call-template&gt;
+      &lt;/xsl:variable&gt;
+      &lt;xsl:for-each select="ext:node-set($ec_list)/token"&gt;
+        &lt;xsl:variable name="ec"&gt;&lt;xsl:value-of select="normalize-space(text())"/&gt;&lt;/xsl:variable&gt;
+        &lt;xsl:if test="string-length($ec)!=0"&gt;
+          &lt;PDBo:link_to_enzyme rdf:resource="{$enzyme}{$ec}" rdfs:label="enzyme:{$ec}"/&gt;
+          &lt;rdfs:seeAlso rdf:resource="{$idorg}ec-code/{$ec}" rdfs:label="ec-code:{$ec}"/&gt;
+        &lt;/xsl:if&gt;
+      &lt;/xsl:for-each&gt;
+    &lt;/xsl:if&gt;
+  &lt;/xsl:template&gt;
+    
+  &lt;xsl:template name="tokenize"&gt;
+    &lt;xsl:param name="string"/&gt;
+    &lt;xsl:param name="delimiter"/&gt;
+    &lt;xsl:choose&gt;
+      &lt;xsl:when test="$delimiter and contains($string,$delimiter)"&gt;
+        &lt;token&gt;
+          &lt;xsl:value-of select="substring-before($string,$delimiter)"/&gt;
+        &lt;/token&gt;
+        &lt;xsl:call-template name="tokenize"&gt;
+          &lt;xsl:with-param name="string" select="substring-after($string,$delimiter)"/&gt;
+          &lt;xsl:with-param name="delimiter" select="$delimiter"/&gt;
+        &lt;/xsl:call-template&gt;
+      &lt;/xsl:when&gt;
+      &lt;xsl:otherwise&gt;
+        &lt;token&gt;
+          &lt;xsl:value-of select="$string"/&gt;
+        &lt;/token&gt;
+      &lt;/xsl:otherwise&gt;
+    &lt;/xsl:choose&gt;
   &lt;/xsl:template&gt;
 
   &lt;xsl:template match="PDBx:struct_ref/PDBx:pdbx_db_accession[../PDBx:db_name='UNP' and text()!='']" mode="linked"&gt;

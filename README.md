@@ -164,6 +164,9 @@ File path | Document
 
 ## Release notes
 
+- **Apr 6, 2021**: Release v4.0.4
+	- Modify XSLT to handle multiple enzyme commission numbers.
+
 - **Mar 16, 2021**: Release v4.0.3
 	- Update wwPDB Validation Information Dictionary to 4.341.
 

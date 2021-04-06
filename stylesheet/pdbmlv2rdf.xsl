@@ -10,7 +10,7 @@
   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
   xmlns:PDBxv="http://pdbml.pdb.org/schema/pdbx-validation-v4.xsd"
   xmlns:PDBov="https://rdf.wwpdb.org/schema/pdbx-validation-v4.owl#"
-  exclude-result-prefixes="PDBxv">
+  xmlns:ext="http://exslt.org/common" exclude-result-prefixes="PDBxv ext">
 
   <xsl:param name="wurcs2glytoucan" select="'https://raw.githubusercontent.com/yokochi47/pdbx-validation/master/wurcs2glytoucan/glytoucan.xml'" required="no"/>
   <xsl:param name="glytoucan" select="document($wurcs2glytoucan)"/>
@@ -131,8 +131,43 @@
   </xsl:template>
 
   <xsl:template match="PDBxv:entity/PDBxv:pdbx_ec[text()!='']" mode="linked">
-    <PDBov:link_to_enzyme rdf:resource="{$enzyme}{text()}" rdfs:label="enzyme:{text()}"/>
-    <rdfs:seeAlso rdf:resource="{$idorg}ec-code/{text()}" rdfs:label="ec-code:{text()}"/>
+    <xsl:variable name="ec_norm"><xsl:value-of select="normalize-space(text())"/></xsl:variable>
+    <xsl:if test="$ec_norm!=''">
+      <xsl:variable name="ec_list">
+        <xsl:call-template name="tokenize">
+          <xsl:with-param name="string" select="$ec_norm"/>
+          <xsl:with-param name="delimiter">,</xsl:with-param>
+        </xsl:call-template>
+      </xsl:variable>
+      <xsl:for-each select="ext:node-set($ec_list)/token">
+        <xsl:variable name="ec"><xsl:value-of select="normalize-space(text())"/></xsl:variable>
+        <xsl:if test="string-length($ec)!=0">
+          <PDBov:link_to_enzyme rdf:resource="{$enzyme}{$ec}" rdfs:label="enzyme:{$ec}"/>
+          <rdfs:seeAlso rdf:resource="{$idorg}ec-code/{$ec}" rdfs:label="ec-code:{$ec}"/>
+        </xsl:if>
+      </xsl:for-each>
+    </xsl:if>
+  </xsl:template>
+    
+  <xsl:template name="tokenize">
+    <xsl:param name="string"/>
+    <xsl:param name="delimiter"/>
+    <xsl:choose>
+      <xsl:when test="$delimiter and contains($string,$delimiter)">
+        <token>
+          <xsl:value-of select="substring-before($string,$delimiter)"/>
+        </token>
+        <xsl:call-template name="tokenize">
+          <xsl:with-param name="string" select="substring-after($string,$delimiter)"/>
+          <xsl:with-param name="delimiter" select="$delimiter"/>
+        </xsl:call-template>
+      </xsl:when>
+      <xsl:otherwise>
+        <token>
+          <xsl:value-of select="$string"/>
+        </token>
+      </xsl:otherwise>
+    </xsl:choose>
   </xsl:template>
 
   <xsl:template match="PDBxv:struct_ref/PDBxv:pdbx_db_accession[../PDBxv:db_name='UNP' and text()!='']" mode="linked">
