@@ -164,7 +164,7 @@ File path | Document
 
 ## Release notes
 
-- **Apr 27, 2021**: Release v4.0.5
+- **Apr 29, 2021**: Release v4.0.5
 	- Update wwPDB Validation Information Dictionary to 4.342.
 	- Update extended mmCIF DDL Core Dictionary to v2.3.1.
 
