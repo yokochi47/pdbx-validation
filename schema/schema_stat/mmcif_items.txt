@@ -886,6 +886,7 @@ em_assembly.mol_wt_theo
 em_assembly.name
 em_assembly.num_components
 em_author_list.author
+em_author_list.identifier_ORCID
 em_author_list.ordinal
 em_buffer_component.buffer_id
 em_buffer_component.concentration
@@ -2299,6 +2300,7 @@ pdbx_database_remark.text
 pdbx_database_status.author_approval_type
 pdbx_database_status.author_release_status_code
 pdbx_database_status.auth_req_rel_date
+pdbx_database_status.date_accepted_terms_and_conditions
 pdbx_database_status.date_author_approval
 pdbx_database_status.date_author_release_request
 pdbx_database_status.date_begin_deposition
@@ -2672,6 +2674,7 @@ pdbx_depui_entry_details.validated_contact_email
 pdbx_depui_entry_details.wwpdb_site_id
 pdbx_depui_status_flags.corresponding_author_status
 pdbx_depui_status_flags.dep_dataset_id
+pdbx_depui_status_flags.has_accepted_assemblies
 pdbx_depui_status_flags.has_accepted_terms_and_conditions
 pdbx_depui_status_flags.has_cyclic_symmetry
 pdbx_depui_status_flags.has_helical_symmetry

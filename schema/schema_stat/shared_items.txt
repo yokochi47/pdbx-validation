@@ -2702,7 +2702,7 @@ struct_ncs_oper.vector[1]
 struct_ncs_oper.vector[2]
 struct_ncs_oper.vector[3]
 struct.pdbx_CASP_flag
-struct.pdbx_descriptor
+struct.pdbx_descriptor WWPDB_LOCAL
 struct.pdbx_formula_weight
 struct.pdbx_formula_weight_method
 struct.pdbx_model_details

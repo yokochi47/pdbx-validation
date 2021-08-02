@@ -49,6 +49,7 @@ pdbx_database_status.post_rel_status WWPDB_LOCAL
 pdbx_database_status.post_rel_recvd_coord WWPDB_LOCAL
 pdbx_database_status.post_rel_recvd_coord_date WWPDB_LOCAL
 atom_site.pdbx_auth_atom_name WWPDB_LOCAL
+struct.pdbx_descriptor WWPDB_LOCAL
 entry.pdbx_DOI WWPDB_LOCAL
 atom_site.pdbx_auth_comp_id WWPDB_LOCAL
 atom_site.pdbx_auth_asym_id WWPDB_LOCAL
@@ -190,6 +191,7 @@ pdbx_database_status.date_released_to_PDB WWPDB_LOCAL
 pdbx_database_status.skip_PDB_REMARK_500 WWPDB_LOCAL
 pdbx_database_status.skip_PDB_REMARK WWPDB_LOCAL
 pdbx_database_status.title_suppression WWPDB_LOCAL
+pdbx_database_status.date_accepted_terms_and_conditions WWPDB_LOCAL
 pdbx_dbref.pdb_id_code WWPDB_LOCAL
 pdbx_dbref.chain_id WWPDB_LOCAL
 pdbx_dbref.begin_res_number WWPDB_LOCAL
