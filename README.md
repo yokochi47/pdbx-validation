@@ -17,7 +17,7 @@ File path | Document
 [schema/mmcif_pdbx_validation_v4.dic](https://github.com/yokochi47/pdbx-validation/blob/master/schema/mmcif_pdbx_validation_v4.347.dic) | wwPDB Validation Information Dictionary (v4.347)
 [schema/pdbx-validation-v4.xsd](https://github.com/yokochi47/pdbx-validation/blob/master/schema/pdbx-validation-v4.347.xsd) | PDBML-validation Schema (v4.347)
 [schema/pdbx-validation-v4.owl](https://github.com/yokochi47/pdbx-validation/blob/master/schema/pdbx-validation-v4.347.owl) | PDB/OWL-validation (v4.347)
-[schema/mmcif_ddl.dic](https://github.com/yokochi47/pdbx-validation/blob/master/schema/mmcif_ddl_v2.3.1.dic) | extended mmCIF DDL Core Dictionary (dubbed as v2.3.1)
+[schema/mmcif_ddl.dic](https://github.com/yokochi47/pdbx-validation/blob/master/schema/mmcif_ddl_v2.4.1.dic) | extended mmCIF DDL Core Dictionary (dubbed as v2.4.1)
 [resource/mmcif_pdbx_v50.dic](http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic) | PDB Exchange Data Dictionary (v5.347)
 [resource/pdbx-v50.xsd](https://github.com/yokochi47/pdbx-validation/blob/master/resource/pdbx-v50.xsd) | PDBML Schema (v5.347)
 [resource/pdbx-v50.owl](https://github.com/yokochi47/pdbx-validation/blob/master/resource/pdbx-v50.owl) | PDBx ontology, ontology for PDB/RDF (v5.347)
@@ -164,8 +164,9 @@ File path | Document
 
 ## Release notes
 
-- **Aug 2, 2020**: Release v4.0.6
+- **Aug 3, 2020**: Release v4.0.6
 	- Update wwPDB Validation Information Dictionary to 4.347.
+	- Update extended mmCIF DDL Core Dictionary to v2.4.1.
 
 - **Apr 29, 2021**: Release v4.0.5
 	- Update wwPDB Validation Information Dictionary to 4.342.
