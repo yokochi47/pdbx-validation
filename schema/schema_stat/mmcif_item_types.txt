@@ -1,5 +1,8 @@
 atom_site.footnote_id WWPDB_LOCAL
 audit_author.address WWPDB_LOCAL
+struct.pdbx_center_of_mass_x WWPDB_LOCAL
+struct.pdbx_center_of_mass_y WWPDB_LOCAL
+struct.pdbx_center_of_mass_z WWPDB_LOCAL
 pdbx_database_status.author_release_status_code WWPDB_LOCAL
 pdbx_database_status.dep_release_code_coordinates WWPDB_LOCAL
 pdbx_database_status.dep_release_code_sequence WWPDB_LOCAL
@@ -80,6 +83,7 @@ em_entity_assembly.ebi_engineered WWPDB_LOCAL
 em_entity_assembly.ebi_expression_system WWPDB_LOCAL
 em_entity_assembly.ebi_expression_system_plasmid WWPDB_LOCAL
 em_entity_assembly.mutant_flag WWPDB_LOCAL
+em_entity_assembly.chimera WWPDB_LOCAL
 em_virus_entity.virus_host_species WWPDB_DEPRECATED
 em_virus_entity.virus_host_growth_cell WWPDB_DEPRECATED
 em_virus_entity.ictvdb_id WWPDB_DEPRECATED

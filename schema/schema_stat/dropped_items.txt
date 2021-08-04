@@ -19,6 +19,7 @@ em_ctf_correction.phase_reversal WWPDB_LOCAL
 em_ctf_correction.phase_reversal_anisotropic WWPDB_LOCAL
 em_ctf_correction.phase_reversal_correction_space WWPDB_LOCAL
 em_entity_assembly.assembly_id WWPDB_LOCAL
+em_entity_assembly.chimera WWPDB_LOCAL
 em_entity_assembly.ebi_cell WWPDB_LOCAL
 em_entity_assembly.ebi_cellular_location WWPDB_LOCAL
 em_entity_assembly.ebi_engineered WWPDB_LOCAL
@@ -190,5 +191,8 @@ struct_conn.pdbx_ptnr1_sugar_name WWPDB_LOCAL
 struct_conn.pdbx_ptnr3_auth_ins_code WWPDB_LOCAL
 struct_mon_prot_cis.pdbx_auth_ins_code WWPDB_LOCAL
 struct_mon_prot_cis.pdbx_auth_ins_code_2 WWPDB_LOCAL
+struct.pdbx_center_of_mass_x WWPDB_LOCAL
+struct.pdbx_center_of_mass_y WWPDB_LOCAL
+struct.pdbx_center_of_mass_z WWPDB_LOCAL
 struct.pdbx_details WWPDB_LOCAL
 struct.pdbx_title_text WWPDB_LOCAL

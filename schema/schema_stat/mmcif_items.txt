@@ -972,6 +972,7 @@ em_embedding.id
 em_embedding.material
 em_embedding.specimen_id
 em_entity_assembly.assembly_id
+em_entity_assembly.chimera
 em_entity_assembly.details
 em_entity_assembly.ebi_cell
 em_entity_assembly.ebi_cellular_location
@@ -6156,6 +6157,9 @@ struct_ncs_oper.vector[1]
 struct_ncs_oper.vector[2]
 struct_ncs_oper.vector[3]
 struct.pdbx_CASP_flag
+struct.pdbx_center_of_mass_x
+struct.pdbx_center_of_mass_y
+struct.pdbx_center_of_mass_z
 struct.pdbx_descriptor
 struct.pdbx_details
 struct.pdbx_formula_weight
