@@ -13,8 +13,13 @@ which DictToSdb
 which Dict2XMLSchema
 which Dict2XMLSchema
 
+DIC_LATEST_FILE=mmcif_pdbx_validation-v4.dic
+
 DDL_FILE=mmcif_ddl.dic
 DIC_FILE=mmcif_pdbx_validation.dic
+
+rm -f $DIC_FILE
+cp -f $DIC_LATEST_FILE $DIC_FILE
 
 DIC_PREFIX=pdbx-validation
 NAME_SPACE=PDBxv
