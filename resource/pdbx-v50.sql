@@ -21,7 +21,7 @@
 --  map xsd date type to: sql date type
 --
 -- Statistics of schema:
---  Generated 565 tables (6901 fields), 0 views (0 fields), 0 attr groups, 0 model groups in total
+--  Generated 568 tables (6949 fields), 0 views (0 fields), 0 attr groups, 0 model groups in total
 --   Unnecessary tables by inlining simple content as a primitive data type:
 --    schema location: pdbx-v50.xsd
 --      temperature, final_thickness, "B_calc", zeta, "L23", "L11", "pdbx_F_calc_with_solvent", time, "model_Cartn_y_esd", diffr_phi, "B_iso_or_equiv", pdbx_solvent_vdw_probe_radii, maximum_torsion_angle_constraint_violation, "A_meas_au", lower_limit, "F_meas", "S31", "F_meas_au", "Cartn_x_esd", length_a_esd, "L22", "F_squared_calc", volume_three, mean_guiner_radius, reciprocal_angle_beta_esd, beta_tolerance, maximum_upper_distance_constraint_violation, bond_deviation, nominal_defocus_min, resolution, pdbx_mosaicity_esd, "B33", angle, "B_iso_min", "U_equiv_geom_mean_esd", psi, "U33_esd", bond_angle_rms_dev, "S33_esd", angle_gamma_esd, pdbx_crystal_direction_3, dihedral_angles_rms_dev, pdbx_crystal_direction_2, "angle_DHA_esd", epsilon, pdbx_crystal_direction_1, bond, "aniso_U22", induction_temperature, average_torsion_angle_constraint_violation, "L33", angle_phi, "aniso_B11_esd", pdbx_solvent_ion_probe_radii, "aniso_B33_esd", "dist_HA_esd", "B_calc_au", culture_temperature, "S23_esd", sample_volume, diffr_kappa, reciprocal_length_a_esd, peptide_planarity_rms_dev, "sigmaI", recording_temperature_minimum, pdbx_solvent_shrinkage_radii, "aniso_U33", maximum_lower_distance_constraint_violation, culture_time, "aniso_U22_esd", column_volume, tilt_angle_min, prot_cis, electron_dose, scan_time_backgd, "aniso_B23_esd", protein_yield, "B_equiv_geom_mean_esd", calibrated_defocus_min, "F_squared_meas", "B22_esd", "aniso_U12", pdbx_dist_value, "U11_esd", induction_timepoint, "L12_esd", "T11_esd", "model_Cartn_y", energyfilter_lower, alpha, pressure, atom_deviation, "U13", improper_torsion_angle_rms_dev_error, "B12_esd", "T12_esd", "aniso_U13_esd", "pdbx_model_Cartn_y_ideal", "A_calc_au", pdbx_phase_calc_part_solvent, reciprocal_angle_gamma_esd, "aniso_U11", "aniso_U23", angle_value, "F_squared_sigma", buffer_volume, covalent_bond_rms_dev, reciprocal_angle_alpha_esd, "L13_esd", "model_Cartn_x", "T13_esd", rotation_per_n_subunits, diff_density_min, "B_iso", "U12", angle_omega, energyfilter_upper, mean_guiner_radius_esd, "A_meas", "aniso_U23_esd", storage_temperature, mol_wt_theo, tau1, distance_rms_dev, tau2, tau3, tau4, "U23", "I", flow_rate, dist, "A_calc", angle_deviation, temperature_decomposition_esd, nominal_defocus_max, "B_iso_mean", "U11", "aniso_U33_esd", dist_esd, "aniso_U13", value_esd, upper_limit, "B_meas", cleavage_time, "pdbx_res_netI_over_av_sigmaI_2", "model_Cartn_z", density_meas_temp_esd, "T13", maximum_distance_constraint_violation, tau0, "B11_esd", angle_beta_esd, "L22_esd", "T22_esd", "U22", gamma_tolerance, temp, "U_tls22", phase_calc, angle_chi, "aniso_B22_esd", improper_torsion_angle_rms_dev, diff_density_max_esd, sample_concentration, rmsd, "pdbx_F_calc_part_solvent", cleavage_temperature, "pdbx_res_netI_over_sigmaI_2", "Luzzati_sigma_a_obs", "Luzzati_coordinate_error_free", temperature_sublimation_esd, "F_meas_sigma", "U33", "model_Cartn_z_esd", "T12", dihedral_angles_rms_dev_error, pdbx_scan_angle, "B_iso_or_equiv_esd", angle_target_value, "Cartn_y_esd", angle_psi, "U_tls11", bond_angle_rms_dev_error, "B23_esd", "U_iso_or_equiv_esd", volume_esd, "U_tls23", pdbx_phase_calc_with_solvent, taum, "S22_esd", diffr_chi, "T23", "B", pressure_esd, column_temperature, "T11", min_mean_cross_sectional_radii_gyration_esd, "Luzzati_d_res_low_free", chi2, chi1, "L23_esd", chi4, chi3, "aniso_B22", pdbx_collection_time_total, chi5, angle_alpha_esd, scan_rate, neighbor_ligand_distance, length_b_esd, "T23_esd", pdbx_crystal_diffrn_lifetime, peptide_planarity_rms_dev_error, "S13", "Ro", "T22", voltage, "S32_esd", beta, average_distance_constraint_violation, "aniso_B33", energy_window, dev, "U_tls33", "S13_esd", "model_Cartn_x_esd", "L11_esd", volume_three_esd, protein_volume, residual_tilt, value, "T33_esd", angle_kappa, rise_per_n_subunits, reciprocal_length_c_esd, "L33_esd", "S12", scat_length_neutron, "T33", "S11_esd", improper_torsion_angle, current, "aniso_B12", alpha_tolerance, "Luzzati_coordinate_error_obs", "P", gamma, diff_density_rms_esd, "B13_esd", phi, "aniso_U12_esd", neighbor_macromolecule_distance, "pre_Cartn_x", "B_iso_Wilson_estimate", "B12", ambient_temp_esd, "Cartn_z", "F_calc", "pdbx_model_Cartn_x_ideal", ambient_pressure_esd, pdbx_crystal_diffrn_limit, yield_pooled_fractions, "U12_esd", "S12_esd", phase_meas, "pdbx_model_Cartn_z_ideal", recording_temperature_maximum, "S23", diff_density_max, "aniso_B13_esd", tilt_angle_max, "S11", origin_y, origin_x, nu4, nu3, nu2, nu1, "aniso_B11", nu0, "aniso_B23", max_mean_cross_sectional_radii_gyration, angle_theta, covalent_bond_rms_dev_error, "Luzzati_d_res_low_obs", origin_z, power, "dist_DA_esd", "B13", min_mean_cross_sectional_radii_gyration, temp_esd, culture_volume, inducer_concentration, "S22", "B_meas_au", "U22_esd", pdbx_mosaicity, omega, length_c_esd, pdbx_rotation_angle, diff_density_min_esd, "S31_esd", "pre_Cartn_z", "U_tls12", volume_pooled_fractions, "B_iso_esd", "U13_esd", delta, detector_distance, "Cartn_x", "B22", "U23_esd", diffr_psi, distance_rms_dev_error, "S21", max_mean_cross_sectional_radii_gyration_esd, "S33", "L12", "B_iso_max", "aniso_B13", reciprocal_length_b_esd, diff_density_rms, "Luzzati_sigma_a_free", "aniso_B12_esd", protein_concentration, mol_wt_exp, concentration_range, "pre_Cartn_y", "S21_esd", "F_calc_au", "U_tls13", "Cartn_z_esd", "B33_esd", "B23", sampling_size, "B11", "Cartn_y", chamber_temperature, "aniso_U11_esd", density_meas_esd, "dist_DH_esd", multiplicity_of_infection, "L13", "F_meas_sigma_au", "S32"
@@ -30,22 +30,22 @@
 --   Schema locations:
 --    pdbx-v50.xsd
 --   Table types:
---    0 root, 0 root children, 0 admin roots, 565 admin children
+--    0 root, 0 root children, 0 admin roots, 568 admin children
 --   System keys:
 --    0 primary keys (0 unique constraints), 0 foreign keys, 0 nested keys (0 as attribute, 0 as attribute group)
 --   User keys:
---    565 document keys, 0 serial keys, 0 xpath keys
+--    568 document keys, 0 serial keys, 0 xpath keys
 --   Contents:
---    1032 attributes (0 in-place document keys), 5304 elements (0 in-place document keys), 0 simple contents (0 in-place document keys, 0 as attribute, 0 as conditional attribute)
+--    1047 attributes (0 in-place document keys), 5334 elements (0 in-place document keys), 0 simple contents (0 in-place document keys, 0 as attribute, 0 as conditional attribute)
 --   Wild cards:
 --    0 any elements, 0 any attributes
 --   Constraints:
---    565 unique constraints from xsd:key, 1 unique constraints from xsd:unique, 347 foreign key constraints from xsd:keyref
+--    568 unique constraints from xsd:key, 1 unique constraints from xsd:unique, 350 foreign key constraints from xsd:keyref
 --
 
 --
--- PDBML Schema v5.348
--- PDBML Schema translated from the PDBx/mmCIF Dictionary v5.348: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
+-- PDBML Schema v5.349
+-- PDBML Schema translated from the PDBx/mmCIF Dictionary v5.349: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
 -- URI-reference = http://pdbml.pdb.org/schema/pdbx-v50.xsd
 --
 
@@ -427,6 +427,9 @@ DROP TABLE IF EXISTS pdbx_serial_crystallography_measurement CASCADE;
 DROP TABLE IF EXISTS pdbx_serial_crystallography_sample_delivery CASCADE;
 DROP TABLE IF EXISTS pdbx_serial_crystallography_sample_delivery_fixed_target CASCADE;
 DROP TABLE IF EXISTS pdbx_serial_crystallography_sample_delivery_injection CASCADE;
+DROP TABLE IF EXISTS pdbx_sifts_unp_segments CASCADE;
+DROP TABLE IF EXISTS pdbx_sifts_xref_db CASCADE;
+DROP TABLE IF EXISTS pdbx_sifts_xref_db_segments CASCADE;
 DROP TABLE IF EXISTS pdbx_soln_scatter CASCADE;
 DROP TABLE IF EXISTS pdbx_soln_scatter_model CASCADE;
 DROP TABLE IF EXISTS pdbx_solvent_atom_site_mapping CASCADE;
@@ -601,7 +604,6 @@ DROP TABLE IF EXISTS pdbx_reference_molecule CASCADE;
 DROP TABLE IF EXISTS pdbx_reference_molecule_family CASCADE;
 DROP TABLE IF EXISTS atom_type CASCADE;
 DROP TABLE IF EXISTS pdbx_construct CASCADE;
-DROP TABLE IF EXISTS struct_asym CASCADE;
 DROP TABLE IF EXISTS struct_sheet CASCADE;
 DROP TABLE IF EXISTS struct_biol CASCADE;
 DROP TABLE IF EXISTS chem_comp_atom CASCADE;
@@ -609,6 +611,7 @@ DROP TABLE IF EXISTS chem_link CASCADE;
 DROP TABLE IF EXISTS phasing_set CASCADE;
 DROP TABLE IF EXISTS em_entity_assembly CASCADE;
 DROP TABLE IF EXISTS pdbx_buffer CASCADE;
+DROP TABLE IF EXISTS struct_asym CASCADE;
 DROP TABLE IF EXISTS diffrn CASCADE;
 DROP TABLE IF EXISTS exptl_crystal CASCADE;
 DROP TABLE IF EXISTS chem_comp CASCADE;
@@ -923,6 +926,35 @@ CREATE TABLE pdbx_buffer (
 );
 
 --
+-- (quoted from struct_asymType)
+-- Data items in the STRUCT_ASYM category record details about the structural elements in the asymmetric unit. Example 1 - based on PDB entry 5HVP and laboratory records for the structure corresponding to PDB entry 5HVP. <PDBx:struct_asymCategory> <PDBx:struct_asym id="A"> <PDBx:details>one monomer of the dimeric enzyme</PDBx:details> <PDBx:entity_id>1</PDBx:entity_id> </PDBx:struct_asym> <PDBx:struct_asym id="B"> <PDBx:details>one monomer of the dimeric enzyme</PDBx:details> <PDBx:entity_id>1</PDBx:entity_id> </PDBx:struct_asym> <PDBx:struct_asym id="C"> <PDBx:details>one partially occupied position for the inhibitor</PDBx:details> <PDBx:entity_id>2</PDBx:entity_id> </PDBx:struct_asym> <PDBx:struct_asym id="D"> <PDBx:details>one partially occupied position for the inhibitor</PDBx:details> <PDBx:entity_id>2</PDBx:entity_id> </PDBx:struct_asym> </PDBx:struct_asymCategory>
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+DROP TYPE IF EXISTS ENUM_struct_asym_pdbx_blank_PDB_chainid_flag CASCADE;
+CREATE TYPE ENUM_struct_asym_pdbx_blank_PDB_chainid_flag AS ENUM ( 'Y', 'N' );
+DROP TYPE IF EXISTS ENUM_struct_asym_pdbx_type CASCADE;
+CREATE TYPE ENUM_struct_asym_pdbx_type AS ENUM ( 'ATOMN', 'ATOMP', 'ATOMS', 'HETAD', 'HETAS', 'HETAI', 'HETAIN', 'HETAC', 'HETIC' );
+CREATE TABLE struct_asym (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+	details TEXT ,
+	entity_id TEXT ,
+	"pdbx_PDB_id" TEXT ,
+	pdbx_alt_id TEXT ,
+	"pdbx_blank_PDB_chainid_flag" ENUM_struct_asym_pdbx_blank_PDB_chainid_flag ,
+	pdbx_fraction_per_asym_unit TEXT ,
+	pdbx_missing_num_begin_of_chain_in_seqres INTEGER ,
+	pdbx_missing_num_begin_of_chain_not_in_seqres INTEGER ,
+	pdbx_missing_num_end_of_chain_not_in_seqres INTEGER ,
+	pdbx_modified TEXT ,
+	pdbx_order INTEGER ,
+	pdbx_type ENUM_struct_asym_pdbx_type ,
+-- ATTRIBUTE
+	id TEXT NOT NULL
+);
+
+--
 -- (quoted from chem_comp_atomType)
 -- Data items in the CHEM_COMP_ATOM category record details about the atoms in a chemical component. Specifying the atomic coordinates for the components in this category is an alternative to specifying the structure of the component via bonds, angles, planes etc. in the appropriate CHEM_COMP subcategories. Example 1 - based on PDB entry 5HVP and laboratory records for the structure corresponding to PDB entry 5HVP. <PDBx:chem_comp_atomCategory> <PDBx:chem_comp_atom atom_id="N" comp_id="phe"> <PDBx:model_Cartn_x>1.20134</PDBx:model_Cartn_x> <PDBx:model_Cartn_y>0.84658</PDBx:model_Cartn_y> <PDBx:model_Cartn_z>0.00000</PDBx:model_Cartn_z> <PDBx:substruct_code>main</PDBx:substruct_code> <PDBx:type_symbol>N</PDBx:type_symbol> </PDBx:chem_comp_atom> <PDBx:chem_comp_atom atom_id="CA" comp_id="phe"> <PDBx:model_Cartn_x>0.00000</PDBx:model_Cartn_x> <PDBx:model_Cartn_y>0.00000</PDBx:model_Cartn_y> <PDBx:model_Cartn_z>0.00000</PDBx:model_Cartn_z> <PDBx:substruct_code>main</PDBx:substruct_code> <PDBx:type_symbol>C</PDBx:type_symbol> </PDBx:chem_comp_atom> <PDBx:chem_comp_atom atom_id="C" comp_id="phe"> <PDBx:model_Cartn_x>-1.25029</PDBx:model_Cartn_x> <PDBx:model_Cartn_y>0.88107</PDBx:model_Cartn_y> <PDBx:model_Cartn_z>0.00000</PDBx:model_Cartn_z> <PDBx:substruct_code>main</PDBx:substruct_code> <PDBx:type_symbol>C</PDBx:type_symbol> </PDBx:chem_comp_atom> <PDBx:chem_comp_atom atom_id="O" comp_id="phe"> <PDBx:model_Cartn_x>-2.18525</PDBx:model_Cartn_x> <PDBx:model_Cartn_y>0.66029</PDBx:model_Cartn_y> <PDBx:model_Cartn_z>-0.78409</PDBx:model_Cartn_z> <PDBx:substruct_code>main</PDBx:substruct_code> <PDBx:type_symbol>O</PDBx:type_symbol> </PDBx:chem_comp_atom> <PDBx:chem_comp_atom atom_id="CB" comp_id="phe"> <PDBx:model_Cartn_x>0.00662</PDBx:model_Cartn_x> <PDBx:model_Cartn_y>-1.03603</PDBx:model_Cartn_y> <PDBx:model_Cartn_z>1.11081</PDBx:model_Cartn_z> <PDBx:substruct_code>side</PDBx:substruct_code> <PDBx:type_symbol>C</PDBx:type_symbol> </PDBx:chem_comp_atom> <PDBx:chem_comp_atom atom_id="CG" comp_id="phe"> <PDBx:model_Cartn_x>0.03254</PDBx:model_Cartn_x> <PDBx:model_Cartn_y>-0.49711</PDBx:model_Cartn_y> <PDBx:model_Cartn_z>2.50951</PDBx:model_Cartn_z> <PDBx:substruct_code>side</PDBx:substruct_code> <PDBx:type_symbol>C</PDBx:type_symbol> </PDBx:chem_comp_atom> <PDBx:chem_comp_atom atom_id="CD1" comp_id="phe"> <PDBx:model_Cartn_x>-1.15813</PDBx:model_Cartn_x> <PDBx:model_Cartn_y>-0.12084</PDBx:model_Cartn_y> <PDBx:model_Cartn_z>3.13467</PDBx:model_Cartn_z> <PDBx:substruct_code>side</PDBx:substruct_code> <PDBx:type_symbol>C</PDBx:type_symbol> </PDBx:chem_comp_atom> <PDBx:chem_comp_atom atom_id="CE1" comp_id="phe"> <PDBx:model_Cartn_x>-1.15720</PDBx:model_Cartn_x> <PDBx:model_Cartn_y>0.38038</PDBx:model_Cartn_y> <PDBx:model_Cartn_z>4.42732</PDBx:model_Cartn_z> <PDBx:substruct_code>side</PDBx:substruct_code> <PDBx:type_symbol>C</PDBx:type_symbol> </PDBx:chem_comp_atom> <PDBx:chem_comp_atom atom_id="CZ" comp_id="phe"> <PDBx:model_Cartn_x>0.05385</PDBx:model_Cartn_x> <PDBx:model_Cartn_y>0.51332</PDBx:model_Cartn_y> <PDBx:model_Cartn_z>5.11032</PDBx:model_Cartn_z> <PDBx:substruct_code>side</PDBx:substruct_code> <PDBx:type_symbol>C</PDBx:type_symbol> </PDBx:chem_comp_atom> <PDBx:chem_comp_atom atom_id="CE2" comp_id="phe"> <PDBx:model_Cartn_x>1.26137</PDBx:model_Cartn_x> <PDBx:model_Cartn_y>0.11613</PDBx:model_Cartn_y> <PDBx:model_Cartn_z>4.50975</PDBx:model_Cartn_z> <PDBx:substruct_code>side</PDBx:substruct_code> <PDBx:type_symbol>C</PDBx:type_symbol> </PDBx:chem_comp_atom> <PDBx:chem_comp_atom atom_id="CD2" comp_id="phe"> <PDBx:model_Cartn_x>1.23668</PDBx:model_Cartn_x> <PDBx:model_Cartn_y>-0.38351</PDBx:model_Cartn_y> <PDBx:model_Cartn_z>3.20288</PDBx:model_Cartn_z> <PDBx:substruct_code>side</PDBx:substruct_code> <PDBx:type_symbol>C</PDBx:type_symbol> </PDBx:chem_comp_atom> <PDBx:chem_comp_atom atom_id="N" comp_id="val"> <PDBx:model_Cartn_x>1.20134</PDBx:model_Cartn_x> <PDBx:model_Cartn_y>0.84658</PDBx:model_Cartn_y> <PDBx:model_Cartn_z>0.00000</PDBx:model_Cartn_z> <PDBx:substruct_code>main</PDBx:substruct_code> <PDBx:type_symbol>N</PDBx:type_symbol> </PDBx:chem_comp_atom> <PDBx:chem_comp_atom atom_id="CA" comp_id="val"> <PDBx:model_Cartn_x>0.00000</PDBx:model_Cartn_x> <PDBx:model_Cartn_y>0.00000</PDBx:model_Cartn_y> <PDBx:model_Cartn_z>0.00000</PDBx:model_Cartn_z> <PDBx:substruct_code>main</PDBx:substruct_code> <PDBx:type_symbol>C</PDBx:type_symbol> </PDBx:chem_comp_atom> <PDBx:chem_comp_atom atom_id="C" comp_id="val"> <PDBx:model_Cartn_x>-1.25029</PDBx:model_Cartn_x> <PDBx:model_Cartn_y>0.88107</PDBx:model_Cartn_y> <PDBx:model_Cartn_z>0.00000</PDBx:model_Cartn_z> <PDBx:substruct_code>main</PDBx:substruct_code> <PDBx:type_symbol>C</PDBx:type_symbol> </PDBx:chem_comp_atom> <PDBx:chem_comp_atom atom_id="O" comp_id="val"> <PDBx:model_Cartn_x>-2.18525</PDBx:model_Cartn_x> <PDBx:model_Cartn_y>0.66029</PDBx:model_Cartn_y> <PDBx:model_Cartn_z>-0.78409</PDBx:model_Cartn_z> <PDBx:substruct_code>main</PDBx:substruct_code> <PDBx:type_symbol>O</PDBx:type_symbol> </PDBx:chem_comp_atom> <PDBx:chem_comp_atom atom_id="CB" comp_id="val"> <PDBx:model_Cartn_x>0.05260</PDBx:model_Cartn_x> <PDBx:model_Cartn_y>-0.99339</PDBx:model_Cartn_y> <PDBx:model_Cartn_z>1.17429</PDBx:model_Cartn_z> <PDBx:substruct_code>side</PDBx:substruct_code> <PDBx:type_symbol>C</PDBx:type_symbol> </PDBx:chem_comp_atom> <PDBx:chem_comp_atom atom_id="CG1" comp_id="val"> <PDBx:model_Cartn_x>-0.13288</PDBx:model_Cartn_x> <PDBx:model_Cartn_y>-0.31545</PDBx:model_Cartn_y> <PDBx:model_Cartn_z>2.52668</PDBx:model_Cartn_z> <PDBx:substruct_code>side</PDBx:substruct_code> <PDBx:type_symbol>C</PDBx:type_symbol> </PDBx:chem_comp_atom> <PDBx:chem_comp_atom atom_id="CG2" comp_id="val"> <PDBx:model_Cartn_x>-0.94265</PDBx:model_Cartn_x> <PDBx:model_Cartn_y>-2.12930</PDBx:model_Cartn_y> <PDBx:model_Cartn_z>0.99811</PDBx:model_Cartn_z> <PDBx:substruct_code>side</PDBx:substruct_code> <PDBx:type_symbol>C</PDBx:type_symbol> </PDBx:chem_comp_atom> </PDBx:chem_comp_atomCategory>
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
@@ -1135,35 +1167,6 @@ CREATE TABLE pdbx_construct (
 	robot_id TEXT ,
 	seq TEXT ,
 	type ENUM_pdbx_construct_type ,
--- ATTRIBUTE
-	id TEXT NOT NULL
-);
-
---
--- (quoted from struct_asymType)
--- Data items in the STRUCT_ASYM category record details about the structural elements in the asymmetric unit. Example 1 - based on PDB entry 5HVP and laboratory records for the structure corresponding to PDB entry 5HVP. <PDBx:struct_asymCategory> <PDBx:struct_asym id="A"> <PDBx:details>one monomer of the dimeric enzyme</PDBx:details> <PDBx:entity_id>1</PDBx:entity_id> </PDBx:struct_asym> <PDBx:struct_asym id="B"> <PDBx:details>one monomer of the dimeric enzyme</PDBx:details> <PDBx:entity_id>1</PDBx:entity_id> </PDBx:struct_asym> <PDBx:struct_asym id="C"> <PDBx:details>one partially occupied position for the inhibitor</PDBx:details> <PDBx:entity_id>2</PDBx:entity_id> </PDBx:struct_asym> <PDBx:struct_asym id="D"> <PDBx:details>one partially occupied position for the inhibitor</PDBx:details> <PDBx:entity_id>2</PDBx:entity_id> </PDBx:struct_asym> </PDBx:struct_asymCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
--- type: admin child, content: true, list: false, bridge: false, virtual: false
---
-DROP TYPE IF EXISTS ENUM_struct_asym_pdbx_blank_PDB_chainid_flag CASCADE;
-CREATE TYPE ENUM_struct_asym_pdbx_blank_PDB_chainid_flag AS ENUM ( 'Y', 'N' );
-DROP TYPE IF EXISTS ENUM_struct_asym_pdbx_type CASCADE;
-CREATE TYPE ENUM_struct_asym_pdbx_type AS ENUM ( 'ATOMN', 'ATOMP', 'ATOMS', 'HETAD', 'HETAS', 'HETAI', 'HETAIN', 'HETAC', 'HETIC' );
-CREATE TABLE struct_asym (
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
-	details TEXT ,
-	entity_id TEXT ,
-	"pdbx_PDB_id" TEXT ,
-	pdbx_alt_id TEXT ,
-	"pdbx_blank_PDB_chainid_flag" ENUM_struct_asym_pdbx_blank_PDB_chainid_flag ,
-	pdbx_fraction_per_asym_unit TEXT ,
-	pdbx_missing_num_begin_of_chain_in_seqres INTEGER ,
-	pdbx_missing_num_begin_of_chain_not_in_seqres INTEGER ,
-	pdbx_missing_num_end_of_chain_not_in_seqres INTEGER ,
-	pdbx_modified TEXT ,
-	pdbx_order INTEGER ,
-	pdbx_type ENUM_struct_asym_pdbx_type ,
 -- ATTRIBUTE
 	id TEXT NOT NULL
 );
@@ -2478,9 +2481,14 @@ CREATE TABLE atom_site (
 -- xsd:restriction/xsd:minInclusive="-8"
 	pdbx_formal_charge INTEGER CHECK ( pdbx_formal_charge >= -8 AND pdbx_formal_charge <= 8 ) ,
 	"pdbx_group_NDB" TEXT ,
+	pdbx_label_index INTEGER ,
 	pdbx_label_seq_num TEXT ,
 	pdbx_ncs_dom_id TEXT ,
 	pdbx_not_in_asym TEXT ,
+	pdbx_sifts_xref_db_acc TEXT ,
+	pdbx_sifts_xref_db_name TEXT ,
+	pdbx_sifts_xref_db_num TEXT ,
+	pdbx_sifts_xref_db_res TEXT ,
 	pdbx_struct_group_id TEXT ,
 	pdbx_tls_group_id TEXT ,
 	refinement_flags ENUM_atom_site_refinement_flags ,
@@ -4864,6 +4872,8 @@ CREATE TABLE em_image_recording (
 	average_exposure_time DECIMAL CHECK ( average_exposure_time > 0.0 AND average_exposure_time < 240.0 ) ,
 -- xsd:restriction/xsd:minExclusive="0.0"
 	avg_electron_dose_per_image DECIMAL CHECK ( avg_electron_dose_per_image > 0.0 ) ,
+-- xsd:restriction/xsd:minInclusive="0"
+	avg_electron_dose_per_subtomogram DECIMAL CHECK ( avg_electron_dose_per_subtomogram >= 0 ) ,
 	details TEXT ,
 	detector_mode ENUM_em_image_recording_detector_mode ,
 	film_or_detector_model TEXT ,
@@ -5089,7 +5099,7 @@ CREATE TYPE ENUM_em_map_endian_type AS ENUM ( 'big', 'little' );
 DROP TYPE IF EXISTS ENUM_em_map_format CASCADE;
 CREATE TYPE ENUM_em_map_format AS ENUM ( 'CCP4' );
 DROP TYPE IF EXISTS ENUM_em_map_type CASCADE;
-CREATE TYPE ENUM_em_map_type AS ENUM ( 'primary map', 'half map', 'additional map', 'mask' );
+CREATE TYPE ENUM_em_map_type AS ENUM ( 'primary map', 'half map', 'additional map', 'mask', 'raw map', 'FSC half map mask', 'FSC map-model mask', 'alignment mask', 'focused refinement mask', '3D classification map', 'focus refinement map', 'segmentation' );
 CREATE TABLE em_map (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
@@ -12209,6 +12219,101 @@ CREATE TABLE pdbx_serial_crystallography_sample_delivery_injection (
 );
 
 --
+-- (quoted from pdbx_sifts_unp_segmentsType)
+-- pdbx_sifts_unp_segments describes residue-range based cross-references specific to UniProt. Example 1 - <PDBx:pdbx_sifts_unp_segmentsCategory> <PDBx:pdbx_sifts_unp_segments asym_id="A" entity_id="1" instance_id="1" segment_id="1" unp_acc="A0A5J6CYR6"> <PDBx:best_mapping>Y</PDBx:best_mapping> <PDBx:identity>0.95</PDBx:identity> <PDBx:seq_id_end>260</PDBx:seq_id_end> <PDBx:seq_id_start>26</PDBx:seq_id_start> <PDBx:unp_end>238</PDBx:unp_end> <PDBx:unp_start>2</PDBx:unp_start> </PDBx:pdbx_sifts_unp_segments> </PDBx:pdbx_sifts_unp_segmentsCategory>
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+DROP TYPE IF EXISTS ENUM_pdbx_sifts_unp_segments_best_mapping CASCADE;
+CREATE TYPE ENUM_pdbx_sifts_unp_segments_best_mapping AS ENUM ( 'Y', 'N' );
+CREATE TABLE pdbx_sifts_unp_segments (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+	best_mapping ENUM_pdbx_sifts_unp_segments_best_mapping ,
+-- xsd:restriction/xsd:maxInclusive="1"
+-- xsd:restriction/xsd:minInclusive="0"
+	identity DECIMAL CHECK ( identity >= 0 AND identity <= 1 ) ,
+	seq_id_end INTEGER ,
+	seq_id_start INTEGER ,
+	unp_end INTEGER ,
+	unp_start INTEGER ,
+-- ATTRIBUTE
+	asym_id TEXT NOT NULL ,
+-- ATTRIBUTE
+	entity_id TEXT NOT NULL ,
+-- ATTRIBUTE
+	instance_id INTEGER NOT NULL ,
+-- ATTRIBUTE
+	segment_id INTEGER NOT NULL ,
+-- ATTRIBUTE
+	unp_acc TEXT NOT NULL
+);
+
+--
+-- (quoted from pdbx_sifts_xref_dbType)
+-- pdbx_sifts_xref_db describes residue-level cross-references to external databases. Example 1 - <PDBx:pdbx_sifts_xref_dbCategory> <PDBx:pdbx_sifts_xref_db asym_id="A" entity_id="1" seq_id="254" seq_id_ordinal="1"> <PDBx:mh_id>1</PDBx:mh_id> <PDBx:mon_id>ILE</PDBx:mon_id> <PDBx:mon_id_one_letter_code>I</PDBx:mon_id_one_letter_code> <PDBx:observed>1</PDBx:observed> <PDBx:res_type xsi:nil="true" /> <PDBx:unp_acc>P00720</PDBx:unp_acc> <PDBx:unp_instance_id>1</PDBx:unp_instance_id> <PDBx:unp_num>50</PDBx:unp_num> <PDBx:unp_res>I</PDBx:unp_res> <PDBx:unp_segment_id>1</PDBx:unp_segment_id> <PDBx:xref_db_acc>PF14843</PDBx:xref_db_acc> <PDBx:xref_db_instance_id>1</PDBx:xref_db_instance_id> <PDBx:xref_db_name>Pfam</PDBx:xref_db_name> <PDBx:xref_db_segment_id>1</PDBx:xref_db_segment_id> <PDBx:xref_domain_name xsi:nil="true" /> </PDBx:pdbx_sifts_xref_db> </PDBx:pdbx_sifts_xref_dbCategory>
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+DROP TYPE IF EXISTS ENUM_pdbx_sifts_xref_db_observed CASCADE;
+CREATE TYPE ENUM_pdbx_sifts_xref_db_observed AS ENUM ( 'Y', 'N' );
+DROP TYPE IF EXISTS ENUM_pdbx_sifts_xref_db_res_type CASCADE;
+CREATE TYPE ENUM_pdbx_sifts_xref_db_res_type AS ENUM ( 'engineered mutation', 'cloning artifact', 'variant', 'expression tag', 'insertion', 'deletion', 'chromophore', 'linker', 'conflict', 'acetylation', 'amidation', 'initiating methionine', 'modified residue', 'microheterogeneity', 'microheterogeneity/modified residue' );
+CREATE TABLE pdbx_sifts_xref_db (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+	mh_id INTEGER ,
+	mon_id TEXT ,
+	mon_id_one_letter_code TEXT ,
+	observed ENUM_pdbx_sifts_xref_db_observed ,
+	res_type ENUM_pdbx_sifts_xref_db_res_type ,
+	unp_acc TEXT ,
+	unp_instance_id INTEGER ,
+	unp_num INTEGER ,
+	unp_res TEXT ,
+	unp_segment_id INTEGER ,
+	xref_db_acc TEXT ,
+	xref_db_instance_id INTEGER ,
+	xref_db_name TEXT ,
+	xref_db_segment_id INTEGER ,
+	xref_domain_name TEXT ,
+-- ATTRIBUTE
+	asym_id TEXT NOT NULL ,
+-- ATTRIBUTE
+	entity_id TEXT NOT NULL ,
+-- ATTRIBUTE
+	seq_id INTEGER NOT NULL ,
+-- ATTRIBUTE
+	seq_id_ordinal INTEGER NOT NULL
+);
+
+--
+-- (quoted from pdbx_sifts_xref_db_segmentsType)
+-- pdbx_sifts_xref_db_segments describes residue-range based cross-references to external databases. Example 1 - <PDBx:pdbx_sifts_xref_db_segmentsCategory> <PDBx:pdbx_sifts_xref_db_segments asym_id="A" entity_id="1" instance_id="1" segment_id="1" xref_db="SCOP2B" xref_db_acc="8102030"> <PDBx:domain_name>SF</PDBx:domain_name> <PDBx:seq_id_end>252</PDBx:seq_id_end> <PDBx:seq_id_start>26</PDBx:seq_id_start> </PDBx:pdbx_sifts_xref_db_segments> </PDBx:pdbx_sifts_xref_db_segmentsCategory>
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE pdbx_sifts_xref_db_segments (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+	domain_name TEXT ,
+	seq_id_end INTEGER ,
+	seq_id_start INTEGER ,
+-- ATTRIBUTE
+	asym_id TEXT NOT NULL ,
+-- ATTRIBUTE
+	entity_id TEXT NOT NULL ,
+-- ATTRIBUTE
+	instance_id INTEGER NOT NULL ,
+-- ATTRIBUTE
+	segment_id INTEGER NOT NULL ,
+-- ATTRIBUTE
+	xref_db TEXT NOT NULL ,
+-- ATTRIBUTE
+	xref_db_acc TEXT NOT NULL
+);
+
+--
 -- (quoted from pdbx_soln_scatterType)
 -- Data items in the PDBX_SOLN_SCATTER category record details about a solution scattering experiment Example 1 - based on PDB entry 1HAQ <PDBx:pdbx_soln_scatterCategory> <PDBx:pdbx_soln_scatter entry_id="1HAQ" id="1"> <PDBx:buffer_name>tris</PDBx:buffer_name> <PDBx:concentration_range>0.7 - 14</PDBx:concentration_range> <PDBx:detector_specific xsi:nil="true" /> <PDBx:detector_type>500-channel quadrant</PDBx:detector_type> <PDBx:max_mean_cross_sectional_radii_gyration>1.7</PDBx:max_mean_cross_sectional_radii_gyration> <PDBx:max_mean_cross_sectional_radii_gyration_esd>0.1</PDBx:max_mean_cross_sectional_radii_gyration_esd> <PDBx:mean_guiner_radius>11.1</PDBx:mean_guiner_radius> <PDBx:mean_guiner_radius_esd>0.4</PDBx:mean_guiner_radius_esd> <PDBx:min_mean_cross_sectional_radii_gyration>4.4</PDBx:min_mean_cross_sectional_radii_gyration> <PDBx:min_mean_cross_sectional_radii_gyration_esd>0.2</PDBx:min_mean_cross_sectional_radii_gyration_esd> <PDBx:num_time_frames>10</PDBx:num_time_frames> <PDBx:protein_length>40</PDBx:protein_length> <PDBx:sample_pH xsi:nil="true" /> <PDBx:source_beamline>2.1</PDBx:source_beamline> <PDBx:source_beamline_instrument xsi:nil="true" /> <PDBx:source_class>synchrotron</PDBx:source_class> <PDBx:source_type>SRS BEAMLINE 2.1</PDBx:source_type> <PDBx:temperature>288</PDBx:temperature> <PDBx:type>x-ray</PDBx:type> </PDBx:pdbx_soln_scatter> <PDBx:pdbx_soln_scatter entry_id="1HAQ" id="2"> <PDBx:buffer_name>PBS in 99.9&#37; D2O</PDBx:buffer_name> <PDBx:concentration_range>0.4 - 9.6</PDBx:concentration_range> <PDBx:detector_specific xsi:nil="true" /> <PDBx:detector_type>area</PDBx:detector_type> <PDBx:max_mean_cross_sectional_radii_gyration>1.51</PDBx:max_mean_cross_sectional_radii_gyration> <PDBx:max_mean_cross_sectional_radii_gyration_esd>0.06</PDBx:max_mean_cross_sectional_radii_gyration_esd> <PDBx:mean_guiner_radius>11.3</PDBx:mean_guiner_radius> <PDBx:mean_guiner_radius_esd>0.4</PDBx:mean_guiner_radius_esd> <PDBx:min_mean_cross_sectional_radii_gyration>3.9</PDBx:min_mean_cross_sectional_radii_gyration> <PDBx:min_mean_cross_sectional_radii_gyration_esd>0.2</PDBx:min_mean_cross_sectional_radii_gyration_esd> <PDBx:num_time_frames xsi:nil="true" /> <PDBx:protein_length>37.0 - 39.0</PDBx:protein_length> <PDBx:sample_pH xsi:nil="true" /> <PDBx:source_beamline xsi:nil="true" /> <PDBx:source_beamline_instrument>D11, D22</PDBx:source_beamline_instrument> <PDBx:source_class>neutron source</PDBx:source_class> <PDBx:source_type>ILL</PDBx:source_type> <PDBx:temperature xsi:nil="true" /> <PDBx:type>neutron</PDBx:type> </PDBx:pdbx_soln_scatter> <PDBx:pdbx_soln_scatter entry_id="1HAQ" id="3"> <PDBx:buffer_name>PBS in 99.9&#37; D2O</PDBx:buffer_name> <PDBx:concentration_range>3.7, 6.1</PDBx:concentration_range> <PDBx:detector_specific xsi:nil="true" /> <PDBx:detector_type>AREA (TIME-OF-FLIGHT)</PDBx:detector_type> <PDBx:max_mean_cross_sectional_radii_gyration xsi:nil="true" /> <PDBx:max_mean_cross_sectional_radii_gyration_esd xsi:nil="true" /> <PDBx:mean_guiner_radius>11.7</PDBx:mean_guiner_radius> <PDBx:mean_guiner_radius_esd>0.5</PDBx:mean_guiner_radius_esd> <PDBx:min_mean_cross_sectional_radii_gyration xsi:nil="true" /> <PDBx:min_mean_cross_sectional_radii_gyration_esd xsi:nil="true" /> <PDBx:num_time_frames xsi:nil="true" /> <PDBx:protein_length>40.0</PDBx:protein_length> <PDBx:sample_pH xsi:nil="true" /> <PDBx:source_beamline>Pulsed Neutron</PDBx:source_beamline> <PDBx:source_beamline_instrument>LOQ</PDBx:source_beamline_instrument> <PDBx:source_class>neutron source</PDBx:source_class> <PDBx:source_type>ISIS</PDBx:source_type> <PDBx:temperature xsi:nil="true" /> <PDBx:type>neutron</PDBx:type> </PDBx:pdbx_soln_scatter> </PDBx:pdbx_soln_scatterCategory>
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
@@ -17593,6 +17698,15 @@ CREATE TABLE valence_ref (
 -- (derived from xsd:key[@name='pdbx_serial_crystallography_sample_delivery_injectionKey_0'])
 --ALTER TABLE pdbx_serial_crystallography_sample_delivery_injection ADD CONSTRAINT UNQ_pdbx_serial_crystallography_sample_delivery_injection UNIQUE ( document_id, diffrn_id );
 
+-- (derived from xsd:key[@name='pdbx_sifts_unp_segmentsKey_0'])
+--ALTER TABLE pdbx_sifts_unp_segments ADD CONSTRAINT UNQ_pdbx_sifts_unp_segments UNIQUE ( document_id, asym_id, entity_id, instance_id, segment_id, unp_acc );
+
+-- (derived from xsd:key[@name='pdbx_sifts_xref_dbKey_0'])
+--ALTER TABLE pdbx_sifts_xref_db ADD CONSTRAINT UNQ_pdbx_sifts_xref_db UNIQUE ( document_id, asym_id, entity_id, seq_id, seq_id_ordinal );
+
+-- (derived from xsd:key[@name='pdbx_sifts_xref_db_segmentsKey_0'])
+--ALTER TABLE pdbx_sifts_xref_db_segments ADD CONSTRAINT UNQ_pdbx_sifts_xref_db_segments UNIQUE ( document_id, asym_id, entity_id, instance_id, segment_id, xref_db, xref_db_acc );
+
 -- (derived from xsd:key[@name='pdbx_soln_scatterKey_0'])
 --ALTER TABLE pdbx_soln_scatter ADD CONSTRAINT UNQ_pdbx_soln_scatter UNIQUE ( document_id, entry_id, id );
 
@@ -19007,10 +19121,19 @@ CREATE TABLE valence_ref (
 --ALTER TABLE pdbx_molecule ADD CONSTRAINT KR_struct_asymKeyref_1_0_2_0 FOREIGN KEY ( asym_id ) REFERENCES struct_asym ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
 -- (derived from xsd:keyref[@name='struct_asymKeyref_1_0_3_0'])
---ALTER TABLE pdbx_struct_ncs_virus_gen ADD CONSTRAINT KR_struct_asymKeyref_1_0_3_0 FOREIGN KEY ( asym_id ) REFERENCES struct_asym ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
+--ALTER TABLE pdbx_sifts_unp_segments ADD CONSTRAINT KR_struct_asymKeyref_1_0_3_0 FOREIGN KEY ( asym_id ) REFERENCES struct_asym ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
 -- (derived from xsd:keyref[@name='struct_asymKeyref_1_0_4_0'])
---ALTER TABLE struct_biol_gen ADD CONSTRAINT KR_struct_asymKeyref_1_0_4_0 FOREIGN KEY ( asym_id ) REFERENCES struct_asym ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
+--ALTER TABLE pdbx_sifts_xref_db ADD CONSTRAINT KR_struct_asymKeyref_1_0_4_0 FOREIGN KEY ( asym_id ) REFERENCES struct_asym ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
+
+-- (derived from xsd:keyref[@name='struct_asymKeyref_1_0_5_0'])
+--ALTER TABLE pdbx_sifts_xref_db_segments ADD CONSTRAINT KR_struct_asymKeyref_1_0_5_0 FOREIGN KEY ( asym_id ) REFERENCES struct_asym ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
+
+-- (derived from xsd:keyref[@name='struct_asymKeyref_1_0_6_0'])
+--ALTER TABLE pdbx_struct_ncs_virus_gen ADD CONSTRAINT KR_struct_asymKeyref_1_0_6_0 FOREIGN KEY ( asym_id ) REFERENCES struct_asym ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
+
+-- (derived from xsd:keyref[@name='struct_asymKeyref_1_0_7_0'])
+--ALTER TABLE struct_biol_gen ADD CONSTRAINT KR_struct_asymKeyref_1_0_7_0 FOREIGN KEY ( asym_id ) REFERENCES struct_asym ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
 -- (derived from xsd:keyref[@name='struct_biolKeyref_0_0_0_0'])
 --ALTER TABLE pdbx_entity_assembly ADD CONSTRAINT KR_struct_biolKeyref_0_0_0_0 FOREIGN KEY ( biol_id ) REFERENCES struct_biol ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;

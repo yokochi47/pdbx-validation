@@ -7189,6 +7189,66 @@
       </PDBo:has_pdbx_serial_crystallography_sample_delivery_injection>
   </xsl:template>
 
+  <xsl:template match="PDBx:datablock/PDBx:pdbx_sifts_unp_segmentsCategory/PDBx:pdbx_sifts_unp_segments">
+      <PDBo:has_pdbx_sifts_unp_segments>
+      <PDBo:pdbx_sifts_unp_segments rdf:about="{$base}/pdbx_sifts_unp_segments/{translate(@asym_id,' ^','_')},{translate(@entity_id,' ^','_')},{translate(@instance_id,' ^','_')},{translate(@segment_id,' ^','_')},{translate(@unp_acc,' ^','_')}">
+      <PDBo:of_datablock rdf:resource="{$base}"/>
+      <xsl:if test="@asym_id!=''">
+        <PDBo:reference_to_struct_asym>
+	  <rdf:Description  rdf:about="{$base}/struct_asym/{translate(@asym_id,' ^','_')}">
+	    <PDBo:referenced_by_pdbx_sifts_unp_segments rdf:resource="{$base}/pdbx_sifts_unp_segments/{translate(@asym_id,' ^','_')},{translate(@entity_id,' ^','_')},{translate(@instance_id,' ^','_')},{translate(@segment_id,' ^','_')},{translate(@unp_acc,' ^','_')}"/>
+	  </rdf:Description>
+        </PDBo:reference_to_struct_asym>
+        <!-- struct_asymKeyref_1_0_3_0 -->
+      </xsl:if>
+      <xsl:apply-templates select="@*"/>
+      <xsl:apply-templates select="@*" mode="linked"/>
+      <xsl:apply-templates/>
+      <xsl:apply-templates mode="linked"/>
+      </PDBo:pdbx_sifts_unp_segments>
+      </PDBo:has_pdbx_sifts_unp_segments>
+  </xsl:template>
+
+  <xsl:template match="PDBx:datablock/PDBx:pdbx_sifts_xref_dbCategory/PDBx:pdbx_sifts_xref_db">
+      <PDBo:has_pdbx_sifts_xref_db>
+      <PDBo:pdbx_sifts_xref_db rdf:about="{$base}/pdbx_sifts_xref_db/{translate(@asym_id,' ^','_')},{translate(@entity_id,' ^','_')},{translate(@seq_id,' ^','_')},{translate(@seq_id_ordinal,' ^','_')}">
+      <PDBo:of_datablock rdf:resource="{$base}"/>
+      <xsl:if test="@asym_id!=''">
+        <PDBo:reference_to_struct_asym>
+	  <rdf:Description  rdf:about="{$base}/struct_asym/{translate(@asym_id,' ^','_')}">
+	    <PDBo:referenced_by_pdbx_sifts_xref_db rdf:resource="{$base}/pdbx_sifts_xref_db/{translate(@asym_id,' ^','_')},{translate(@entity_id,' ^','_')},{translate(@seq_id,' ^','_')},{translate(@seq_id_ordinal,' ^','_')}"/>
+	  </rdf:Description>
+        </PDBo:reference_to_struct_asym>
+        <!-- struct_asymKeyref_1_0_4_0 -->
+      </xsl:if>
+      <xsl:apply-templates select="@*"/>
+      <xsl:apply-templates select="@*" mode="linked"/>
+      <xsl:apply-templates/>
+      <xsl:apply-templates mode="linked"/>
+      </PDBo:pdbx_sifts_xref_db>
+      </PDBo:has_pdbx_sifts_xref_db>
+  </xsl:template>
+
+  <xsl:template match="PDBx:datablock/PDBx:pdbx_sifts_xref_db_segmentsCategory/PDBx:pdbx_sifts_xref_db_segments">
+      <PDBo:has_pdbx_sifts_xref_db_segments>
+      <PDBo:pdbx_sifts_xref_db_segments rdf:about="{$base}/pdbx_sifts_xref_db_segments/{translate(@asym_id,' ^','_')},{translate(@entity_id,' ^','_')},{translate(@instance_id,' ^','_')},{translate(@segment_id,' ^','_')},{translate(@xref_db,' ^','_')},{translate(@xref_db_acc,' ^','_')}">
+      <PDBo:of_datablock rdf:resource="{$base}"/>
+      <xsl:if test="@asym_id!=''">
+        <PDBo:reference_to_struct_asym>
+	  <rdf:Description  rdf:about="{$base}/struct_asym/{translate(@asym_id,' ^','_')}">
+	    <PDBo:referenced_by_pdbx_sifts_xref_db_segments rdf:resource="{$base}/pdbx_sifts_xref_db_segments/{translate(@asym_id,' ^','_')},{translate(@entity_id,' ^','_')},{translate(@instance_id,' ^','_')},{translate(@segment_id,' ^','_')},{translate(@xref_db,' ^','_')},{translate(@xref_db_acc,' ^','_')}"/>
+	  </rdf:Description>
+        </PDBo:reference_to_struct_asym>
+        <!-- struct_asymKeyref_1_0_5_0 -->
+      </xsl:if>
+      <xsl:apply-templates select="@*"/>
+      <xsl:apply-templates select="@*" mode="linked"/>
+      <xsl:apply-templates/>
+      <xsl:apply-templates mode="linked"/>
+      </PDBo:pdbx_sifts_xref_db_segments>
+      </PDBo:has_pdbx_sifts_xref_db_segments>
+  </xsl:template>
+
   <xsl:template match="PDBx:datablock/PDBx:pdbx_soln_scatterCategory/PDBx:pdbx_soln_scatter">
       <PDBo:has_pdbx_soln_scatter>
       <PDBo:pdbx_soln_scatter rdf:about="{$base}/pdbx_soln_scatter/{translate(@entry_id,' ^','_')},{translate(@id,' ^','_')}">
@@ -7635,7 +7695,7 @@
 	    <PDBo:referenced_by_pdbx_struct_ncs_virus_gen rdf:resource="{$base}/pdbx_struct_ncs_virus_gen/{translate(@id,' ^','_')}"/>
 	  </rdf:Description>
         </PDBo:reference_to_struct_asym>
-        <!-- struct_asymKeyref_1_0_3_0 -->
+        <!-- struct_asymKeyref_1_0_6_0 -->
       </xsl:if>
       <xsl:if test="PDBx:oper_id!=''">
         <PDBo:reference_to_struct_ncs_oper>
@@ -8950,7 +9010,7 @@
 	    <PDBo:referenced_by_struct_biol_gen rdf:resource="{$base}/struct_biol_gen/{translate(@asym_id,' ^','_')},{translate(@biol_id,' ^','_')},{translate(@symmetry,' ^','_')}"/>
 	  </rdf:Description>
         </PDBo:reference_to_struct_asym>
-        <!-- struct_asymKeyref_1_0_4_0 -->
+        <!-- struct_asymKeyref_1_0_7_0 -->
       </xsl:if>
       <xsl:if test="@biol_id!=''">
         <PDBo:reference_to_struct_biol>

@@ -21,7 +21,7 @@
 --  map xsd date type to: sql date type
 --
 -- Statistics of schema:
---  Generated 279 tables (3652 fields), 0 views (0 fields), 0 attr groups, 0 model groups in total
+--  Generated 282 tables (3695 fields), 0 views (0 fields), 0 attr groups, 0 model groups in total
 --   Unnecessary tables by inlining simple content as a primitive data type:
 --    schema location: pdbx-validation-v4.xsd
 --      improper_torsion_angle_rms_dev_error, mean_guiner_radius, recording_temperature_minimum, angle_value, bond_angle_rms_dev, "B_iso", diff_density_max_esd, "L22", "B_calc", distance_rms_dev, "B_calc_au", pdbx_phase_calc_part_solvent, improper_torsion_angle_rms_dev, "S22_esd", atom_deviation, "S31", "A_meas", "pdbx_F_calc_part_solvent", upper_limit, psi, "L23", prot_cis, "L11", "L23_esd", "T23_esd", "F_meas_au", "sigmaI", omega, "S32", resolution, residual_tilt, "Luzzati_sigma_a_free", "F_squared_calc", "L12", distance_rms_dev_medoid, pdbx_solvent_shrinkage_radii, current, chamber_temperature, chi1, pdbx_rotation_angle, chi2, chi3, chi4, chi5, "S21", "S33", scan_time_backgd, maximum_upper_distance_constraint_violation, pdbx_scan_angle, "L13", "A_calc", "T12_esd", "S12_esd", "Luzzati_d_res_low_free", value, "B_meas", sampling_size, "S22", value_esd, "Cartn_y_esd", pdbx_solvent_vdw_probe_radii, "S13_esd", "B_meas_au", origin_y, origin_z, origin_x, "Cartn_z_esd", peptide_planarity_rms_dev, "P", phi, pdbx_collection_time_total, dihedral_angle_value, "B_iso_Wilson_estimate", zeta, maximum_lower_distance_constraint_violation, energyfilter_lower, "S11", "S23", nu1, "F_meas_sigma", nu2, nu3, "L12_esd", "F_calc_au", diff_density_min, nu4, nu0, "T33", tilt_angle_min, phase_meas, nominal_defocus_min, "S32_esd", "S12", calibrated_defocus_min, rise_per_n_subunits, "aniso_B33", "Luzzati_d_res_low_obs", pdbx_solvent_ion_probe_radii, "Luzzati_coordinate_error_free", "T22", lower_limit, "Luzzati_coordinate_error_obs", "S13", "T11_esd", "L11_esd", "aniso_B22", "S23_esd", concentration_range, "T23", max_mean_cross_sectional_radii_gyration_esd, "T11", clash_magnitude, angle_target_value, dihedral_angles_rms_dev, min_mean_cross_sectional_radii_gyration_esd, "L22_esd", neighbor_ligand_distance, tau0, "S21_esd", tau1, "aniso_B11", "aniso_B23", average_distance_constraint_violation, "B_iso_esd", maximum_distance_constraint_violation, "T12", max_mean_cross_sectional_radii_gyration, "A_calc_au", "S33_esd", "pdbx_F_calc_with_solvent", phase_calc, bond_angle_rms_dev_error, nominal_defocus_max, "aniso_B12", "B_iso_max", bond_deviation, angle_phi, min_mean_cross_sectional_radii_gyration, "T13", delta, distance_rms_dev_error, "B_iso_mean", recording_temperature_maximum, energyfilter_upper, covalent_bond_rms_dev, "F_squared_meas", epsilon, "aniso_B13", angle_theta, "F_meas_sigma_au", mean_guiner_radius_esd, angle_deviation, dihedral_angles_rms_dev_error, "T22_esd", peptide_planarity_rms_dev_error, "pdbx_res_netI_over_sigmaI_2", "Luzzati_sigma_a_obs", "Cartn_z", detector_distance, "S31_esd", beta, "L13_esd", "F_squared_sigma", voltage, angle_kappa, ambient_pressure_esd, "T13_esd", gamma, rotation_per_n_subunits, "Cartn_y", temp, covalent_bond_rms_dev_error, rmsd, "S11_esd", temperature, "A_meas_au", alpha, "Cartn_x_esd", "Cartn_x", "F_calc", power, diff_density_min_esd, ambient_temp_esd, neighbor_macromolecule_distance, "I", diff_density_max, angle_psi, "L33_esd", dihedral_angle_target_value, taum, angle_omega, pdbx_dist_value, scan_rate, "T33_esd", tau2, tau3, tau4, "B_iso_min", pdbx_phase_calc_with_solvent, tilt_angle_max, "F_meas", angle_chi, diff_density_rms_esd, average_torsion_angle_constraint_violation, maximum_torsion_angle_constraint_violation, "L33", diff_density_rms, dist, improper_torsion_angle, "pdbx_res_netI_over_av_sigmaI_2"
@@ -30,22 +30,22 @@
 --   Schema locations:
 --    pdbx-validation-v4.xsd
 --   Table types:
---    0 root, 0 root children, 0 admin roots, 279 admin children
+--    0 root, 0 root children, 0 admin roots, 282 admin children
 --   System keys:
 --    0 primary keys (0 unique constraints), 0 foreign keys, 0 nested keys (0 as attribute, 0 as attribute group)
 --   User keys:
---    231 document keys, 0 serial keys, 0 xpath keys
+--    234 document keys, 0 serial keys, 0 xpath keys
 --   Contents:
---    478 attributes (43 in-place document keys), 2943 elements (5 in-place document keys), 0 simple contents (0 in-place document keys, 0 as attribute, 0 as conditional attribute)
+--    493 attributes (43 in-place document keys), 2968 elements (5 in-place document keys), 0 simple contents (0 in-place document keys, 0 as attribute, 0 as conditional attribute)
 --   Wild cards:
 --    0 any elements, 0 any attributes
 --   Constraints:
---    279 unique constraints from xsd:key, 1 unique constraints from xsd:unique, 145 foreign key constraints from xsd:keyref
+--    282 unique constraints from xsd:key, 1 unique constraints from xsd:unique, 148 foreign key constraints from xsd:keyref
 --
 
 --
--- PDBML-validation Schema v4.348
--- PDBXML-validation Schema translated from wwPDB Validation Information Dictionary v4.348, which is backward compatible with the PDBx/mmCIF Dictionary v5.348: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
+-- PDBML-validation Schema v4.349
+-- PDBXML-validation Schema translated from wwPDB Validation Information Dictionary v4.349, which is backward compatible with the PDBx/mmCIF Dictionary v5.349: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
 -- URI-reference = http://pdbml.pdb.org/schema/pdbx-validation-v4.xsd
 --
 
@@ -201,6 +201,9 @@ DROP TABLE IF EXISTS pdbx_refine_tls_group CASCADE;
 DROP TABLE IF EXISTS pdbx_refln_signal_binning CASCADE;
 DROP TABLE IF EXISTS pdbx_reflns_twin CASCADE;
 DROP TABLE IF EXISTS pdbx_sequence_range CASCADE;
+DROP TABLE IF EXISTS pdbx_sifts_unp_segments CASCADE;
+DROP TABLE IF EXISTS pdbx_sifts_xref_db CASCADE;
+DROP TABLE IF EXISTS pdbx_sifts_xref_db_segments CASCADE;
 DROP TABLE IF EXISTS pdbx_soln_scatter CASCADE;
 DROP TABLE IF EXISTS pdbx_soln_scatter_model CASCADE;
 DROP TABLE IF EXISTS pdbx_struct_assembly_gen CASCADE;
@@ -302,7 +305,6 @@ DROP TABLE IF EXISTS pdbx_struct_nmr_ens_dom CASCADE;
 DROP TABLE IF EXISTS pdbx_validate_planes CASCADE;
 DROP TABLE IF EXISTS pdbx_validate_rmsd_ring CASCADE;
 DROP TABLE IF EXISTS pdbx_validate_rmsd_torsion CASCADE;
-DROP TABLE IF EXISTS struct_asym CASCADE;
 DROP TABLE IF EXISTS struct_conf_type CASCADE;
 DROP TABLE IF EXISTS struct_ncs_dom CASCADE;
 DROP TABLE IF EXISTS struct_ncs_oper CASCADE;
@@ -321,6 +323,7 @@ DROP TABLE IF EXISTS "phasing_MAD_expt" CASCADE;
 DROP TABLE IF EXISTS "phasing_MIR_der" CASCADE;
 DROP TABLE IF EXISTS struct_ncs_ens CASCADE;
 DROP TABLE IF EXISTS pdbx_audit_revision_history CASCADE;
+DROP TABLE IF EXISTS struct_asym CASCADE;
 DROP TABLE IF EXISTS struct_sheet CASCADE;
 DROP TABLE IF EXISTS pdbx_nmr_assigned_chem_shift_list CASCADE;
 DROP TABLE IF EXISTS phasing_set CASCADE;
@@ -554,6 +557,26 @@ CREATE TABLE pdbx_audit_revision_history (
 	data_content_type ENUM_pdbx_audit_revision_history_data_content_type NOT NULL ,
 -- ATTRIBUTE
 	ordinal INTEGER NOT NULL
+);
+
+--
+-- (quoted from struct_asymType)
+-- Data items in the STRUCT_ASYM category record details about the structural elements in the asymmetric unit. Example 1 - based on PDB entry 5HVP and laboratory records for the structure corresponding to PDB entry 5HVP. <PDBxv:struct_asymCategory> <PDBxv:struct_asym id="A"> <PDBxv:details>one monomer of the dimeric enzyme</PDBxv:details> <PDBxv:entity_id>1</PDBxv:entity_id> </PDBxv:struct_asym> <PDBxv:struct_asym id="B"> <PDBxv:details>one monomer of the dimeric enzyme</PDBxv:details> <PDBxv:entity_id>1</PDBxv:entity_id> </PDBxv:struct_asym> <PDBxv:struct_asym id="C"> <PDBxv:details>one partially occupied position for the inhibitor</PDBxv:details> <PDBxv:entity_id>2</PDBxv:entity_id> </PDBxv:struct_asym> <PDBxv:struct_asym id="D"> <PDBxv:details>one partially occupied position for the inhibitor</PDBxv:details> <PDBxv:entity_id>2</PDBxv:entity_id> </PDBxv:struct_asym> </PDBxv:struct_asymCategory>
+-- URI-reference = http://pdbml.pdb.org/dictionaries/mmcif_pdbx_v50.dic/Categories/struct_asym.html
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v4.xsd (PDBxv), schema location: pdbx-validation-v4.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+DROP TYPE IF EXISTS ENUM_struct_asym_pdbx_blank_PDB_chainid_flag CASCADE;
+CREATE TYPE ENUM_struct_asym_pdbx_blank_PDB_chainid_flag AS ENUM ( 'Y', 'N' );
+CREATE TABLE struct_asym (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	entry_id TEXT ,
+	details TEXT ,
+	entity_id TEXT ,
+	"pdbx_blank_PDB_chainid_flag" ENUM_struct_asym_pdbx_blank_PDB_chainid_flag ,
+	pdbx_modified TEXT ,
+-- ATTRIBUTE
+	id TEXT NOT NULL
 );
 
 --
@@ -1204,26 +1227,6 @@ CREATE TABLE pdbx_validate_rmsd_torsion (
 	percent_dihedral_angles_fitted_to_kb DECIMAL CHECK ( percent_dihedral_angles_fitted_to_kb >= 0 AND percent_dihedral_angles_fitted_to_kb <= 100 ) ,
 -- ATTRIBUTE
 	id INTEGER NOT NULL
-);
-
---
--- (quoted from struct_asymType)
--- Data items in the STRUCT_ASYM category record details about the structural elements in the asymmetric unit. Example 1 - based on PDB entry 5HVP and laboratory records for the structure corresponding to PDB entry 5HVP. <PDBxv:struct_asymCategory> <PDBxv:struct_asym id="A"> <PDBxv:details>one monomer of the dimeric enzyme</PDBxv:details> <PDBxv:entity_id>1</PDBxv:entity_id> </PDBxv:struct_asym> <PDBxv:struct_asym id="B"> <PDBxv:details>one monomer of the dimeric enzyme</PDBxv:details> <PDBxv:entity_id>1</PDBxv:entity_id> </PDBxv:struct_asym> <PDBxv:struct_asym id="C"> <PDBxv:details>one partially occupied position for the inhibitor</PDBxv:details> <PDBxv:entity_id>2</PDBxv:entity_id> </PDBxv:struct_asym> <PDBxv:struct_asym id="D"> <PDBxv:details>one partially occupied position for the inhibitor</PDBxv:details> <PDBxv:entity_id>2</PDBxv:entity_id> </PDBxv:struct_asym> </PDBxv:struct_asymCategory>
--- URI-reference = http://pdbml.pdb.org/dictionaries/mmcif_pdbx_v50.dic/Categories/struct_asym.html
--- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v4.xsd (PDBxv), schema location: pdbx-validation-v4.xsd
--- type: admin child, content: true, list: false, bridge: false, virtual: false
---
-DROP TYPE IF EXISTS ENUM_struct_asym_pdbx_blank_PDB_chainid_flag CASCADE;
-CREATE TYPE ENUM_struct_asym_pdbx_blank_PDB_chainid_flag AS ENUM ( 'Y', 'N' );
-CREATE TABLE struct_asym (
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	entry_id TEXT ,
-	details TEXT ,
-	entity_id TEXT ,
-	"pdbx_blank_PDB_chainid_flag" ENUM_struct_asym_pdbx_blank_PDB_chainid_flag ,
-	pdbx_modified TEXT ,
--- ATTRIBUTE
-	id TEXT NOT NULL
 );
 
 --
@@ -2286,6 +2289,8 @@ CREATE TABLE em_image_recording (
 	average_exposure_time DECIMAL CHECK ( average_exposure_time > 0.0 AND average_exposure_time < 240.0 ) ,
 -- xsd:restriction/xsd:minExclusive="0.0"
 	avg_electron_dose_per_image DECIMAL CHECK ( avg_electron_dose_per_image > 0.0 ) ,
+-- xsd:restriction/xsd:minInclusive="0"
+	avg_electron_dose_per_subtomogram DECIMAL CHECK ( avg_electron_dose_per_subtomogram >= 0 ) ,
 	details TEXT ,
 	detector_mode ENUM_em_image_recording_detector_mode ,
 	film_or_detector_model TEXT ,
@@ -5565,6 +5570,104 @@ CREATE TABLE pdbx_sequence_range (
 	end_label_seq_id INTEGER NOT NULL ,
 -- ATTRIBUTE
 	seq_range_id TEXT NOT NULL
+);
+
+--
+-- (quoted from pdbx_sifts_unp_segmentsType)
+-- pdbx_sifts_unp_segments describes residue-range based cross-references specific to UniProt. Example 1 - <PDBxv:pdbx_sifts_unp_segmentsCategory> <PDBxv:pdbx_sifts_unp_segments asym_id="A" entity_id="1" instance_id="1" segment_id="1" unp_acc="A0A5J6CYR6"> <PDBxv:best_mapping>Y</PDBxv:best_mapping> <PDBxv:identity>0.95</PDBxv:identity> <PDBxv:seq_id_end>260</PDBxv:seq_id_end> <PDBxv:seq_id_start>26</PDBxv:seq_id_start> <PDBxv:unp_end>238</PDBxv:unp_end> <PDBxv:unp_start>2</PDBxv:unp_start> </PDBxv:pdbx_sifts_unp_segments> </PDBxv:pdbx_sifts_unp_segmentsCategory>
+-- URI-reference = http://pdbml.pdb.org/dictionaries/mmcif_pdbx_v50.dic/Categories/pdbx_sifts_unp_segments.html
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v4.xsd (PDBxv), schema location: pdbx-validation-v4.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+DROP TYPE IF EXISTS ENUM_pdbx_sifts_unp_segments_best_mapping CASCADE;
+CREATE TYPE ENUM_pdbx_sifts_unp_segments_best_mapping AS ENUM ( 'Y', 'N' );
+CREATE TABLE pdbx_sifts_unp_segments (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	entry_id TEXT ,
+	best_mapping ENUM_pdbx_sifts_unp_segments_best_mapping ,
+-- xsd:restriction/xsd:maxInclusive="1"
+-- xsd:restriction/xsd:minInclusive="0"
+	identity DECIMAL CHECK ( identity >= 0 AND identity <= 1 ) ,
+	seq_id_end INTEGER ,
+	seq_id_start INTEGER ,
+	unp_end INTEGER ,
+	unp_start INTEGER ,
+-- ATTRIBUTE
+	asym_id TEXT NOT NULL ,
+-- ATTRIBUTE
+	entity_id TEXT NOT NULL ,
+-- ATTRIBUTE
+	instance_id INTEGER NOT NULL ,
+-- ATTRIBUTE
+	segment_id INTEGER NOT NULL ,
+-- ATTRIBUTE
+	unp_acc TEXT NOT NULL
+);
+
+--
+-- (quoted from pdbx_sifts_xref_dbType)
+-- pdbx_sifts_xref_db describes residue-level cross-references to external databases. Example 1 - <PDBxv:pdbx_sifts_xref_dbCategory> <PDBxv:pdbx_sifts_xref_db asym_id="A" entity_id="1" seq_id="254" seq_id_ordinal="1"> <PDBxv:mh_id>1</PDBxv:mh_id> <PDBxv:mon_id>ILE</PDBxv:mon_id> <PDBxv:mon_id_one_letter_code>I</PDBxv:mon_id_one_letter_code> <PDBxv:observed>1</PDBxv:observed> <PDBxv:res_type xsi:nil="true" /> <PDBxv:unp_acc>P00720</PDBxv:unp_acc> <PDBxv:unp_instance_id>1</PDBxv:unp_instance_id> <PDBxv:unp_num>50</PDBxv:unp_num> <PDBxv:unp_res>I</PDBxv:unp_res> <PDBxv:unp_segment_id>1</PDBxv:unp_segment_id> <PDBxv:xref_db_acc>PF14843</PDBxv:xref_db_acc> <PDBxv:xref_db_instance_id>1</PDBxv:xref_db_instance_id> <PDBxv:xref_db_name>Pfam</PDBxv:xref_db_name> <PDBxv:xref_db_segment_id>1</PDBxv:xref_db_segment_id> <PDBxv:xref_domain_name xsi:nil="true" /> </PDBxv:pdbx_sifts_xref_db> </PDBxv:pdbx_sifts_xref_dbCategory>
+-- URI-reference = http://pdbml.pdb.org/dictionaries/mmcif_pdbx_v50.dic/Categories/pdbx_sifts_xref_db.html
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v4.xsd (PDBxv), schema location: pdbx-validation-v4.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+DROP TYPE IF EXISTS ENUM_pdbx_sifts_xref_db_observed CASCADE;
+CREATE TYPE ENUM_pdbx_sifts_xref_db_observed AS ENUM ( 'Y', 'N' );
+DROP TYPE IF EXISTS ENUM_pdbx_sifts_xref_db_res_type CASCADE;
+CREATE TYPE ENUM_pdbx_sifts_xref_db_res_type AS ENUM ( 'engineered mutation', 'cloning artifact', 'variant', 'expression tag', 'insertion', 'deletion', 'chromophore', 'linker', 'conflict', 'acetylation', 'amidation', 'initiating methionine', 'modified residue', 'microheterogeneity', 'microheterogeneity/modified residue' );
+CREATE TABLE pdbx_sifts_xref_db (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	entry_id TEXT ,
+	mh_id INTEGER ,
+	mon_id TEXT ,
+	mon_id_one_letter_code TEXT ,
+	observed ENUM_pdbx_sifts_xref_db_observed ,
+	res_type ENUM_pdbx_sifts_xref_db_res_type ,
+	unp_acc TEXT ,
+	unp_instance_id INTEGER ,
+	unp_num INTEGER ,
+	unp_res TEXT ,
+	unp_segment_id INTEGER ,
+	xref_db_acc TEXT ,
+	xref_db_instance_id INTEGER ,
+	xref_db_name TEXT ,
+	xref_db_segment_id INTEGER ,
+	xref_domain_name TEXT ,
+-- ATTRIBUTE
+	asym_id TEXT NOT NULL ,
+-- ATTRIBUTE
+	entity_id TEXT NOT NULL ,
+-- ATTRIBUTE
+	seq_id INTEGER NOT NULL ,
+-- ATTRIBUTE
+	seq_id_ordinal INTEGER NOT NULL
+);
+
+--
+-- (quoted from pdbx_sifts_xref_db_segmentsType)
+-- pdbx_sifts_xref_db_segments describes residue-range based cross-references to external databases. Example 1 - <PDBxv:pdbx_sifts_xref_db_segmentsCategory> <PDBxv:pdbx_sifts_xref_db_segments asym_id="A" entity_id="1" instance_id="1" segment_id="1" xref_db="SCOP2B" xref_db_acc="8102030"> <PDBxv:domain_name>SF</PDBxv:domain_name> <PDBxv:seq_id_end>252</PDBxv:seq_id_end> <PDBxv:seq_id_start>26</PDBxv:seq_id_start> </PDBxv:pdbx_sifts_xref_db_segments> </PDBxv:pdbx_sifts_xref_db_segmentsCategory>
+-- URI-reference = http://pdbml.pdb.org/dictionaries/mmcif_pdbx_v50.dic/Categories/pdbx_sifts_xref_db_segments.html
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v4.xsd (PDBxv), schema location: pdbx-validation-v4.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE pdbx_sifts_xref_db_segments (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	entry_id TEXT ,
+	domain_name TEXT ,
+	seq_id_end INTEGER ,
+	seq_id_start INTEGER ,
+-- ATTRIBUTE
+	asym_id TEXT NOT NULL ,
+-- ATTRIBUTE
+	entity_id TEXT NOT NULL ,
+-- ATTRIBUTE
+	instance_id INTEGER NOT NULL ,
+-- ATTRIBUTE
+	segment_id INTEGER NOT NULL ,
+-- ATTRIBUTE
+	xref_db TEXT NOT NULL ,
+-- ATTRIBUTE
+	xref_db_acc TEXT NOT NULL
 );
 
 --
@@ -9162,6 +9265,15 @@ CREATE TABLE symmetry_equiv (
 -- (derived from xsd:key[@name='pdbx_sequence_rangeKey_0'])
 --ALTER TABLE pdbx_sequence_range ADD CONSTRAINT UNQ_pdbx_sequence_range UNIQUE ( entry_id, beg_label_alt_id, beg_label_asym_id, beg_label_comp_id, beg_label_seq_id, end_label_alt_id, end_label_asym_id, end_label_comp_id, end_label_seq_id, seq_range_id );
 
+-- (derived from xsd:key[@name='pdbx_sifts_unp_segmentsKey_0'])
+--ALTER TABLE pdbx_sifts_unp_segments ADD CONSTRAINT UNQ_pdbx_sifts_unp_segments UNIQUE ( entry_id, asym_id, entity_id, instance_id, segment_id, unp_acc );
+
+-- (derived from xsd:key[@name='pdbx_sifts_xref_dbKey_0'])
+--ALTER TABLE pdbx_sifts_xref_db ADD CONSTRAINT UNQ_pdbx_sifts_xref_db UNIQUE ( entry_id, asym_id, entity_id, seq_id, seq_id_ordinal );
+
+-- (derived from xsd:key[@name='pdbx_sifts_xref_db_segmentsKey_0'])
+--ALTER TABLE pdbx_sifts_xref_db_segments ADD CONSTRAINT UNQ_pdbx_sifts_xref_db_segments UNIQUE ( entry_id, asym_id, entity_id, instance_id, segment_id, xref_db, xref_db_acc );
+
 -- (derived from xsd:key[@name='pdbx_soln_scatterKey_0'])
 --ALTER TABLE pdbx_soln_scatter ADD CONSTRAINT UNQ_pdbx_soln_scatter UNIQUE ( entry_id, id );
 
@@ -9875,6 +9987,15 @@ CREATE TABLE symmetry_equiv (
 
 -- (derived from xsd:keyref[@name='struct_asymKeyref_0_0_0_0'])
 --ALTER TABLE pdbx_coordinate_model ADD CONSTRAINT KR_struct_asymKeyref_0_0_0_0 FOREIGN KEY ( asym_id ) REFERENCES struct_asym ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
+
+-- (derived from xsd:keyref[@name='struct_asymKeyref_0_0_1_0'])
+--ALTER TABLE pdbx_sifts_unp_segments ADD CONSTRAINT KR_struct_asymKeyref_0_0_1_0 FOREIGN KEY ( asym_id ) REFERENCES struct_asym ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
+
+-- (derived from xsd:keyref[@name='struct_asymKeyref_0_0_2_0'])
+--ALTER TABLE pdbx_sifts_xref_db ADD CONSTRAINT KR_struct_asymKeyref_0_0_2_0 FOREIGN KEY ( asym_id ) REFERENCES struct_asym ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
+
+-- (derived from xsd:keyref[@name='struct_asymKeyref_0_0_3_0'])
+--ALTER TABLE pdbx_sifts_xref_db_segments ADD CONSTRAINT KR_struct_asymKeyref_0_0_3_0 FOREIGN KEY ( asym_id ) REFERENCES struct_asym ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
 -- (derived from xsd:keyref[@name='struct_biolKeyref_0_0_0_0'])
 --ALTER TABLE pdbx_entity_assembly ADD CONSTRAINT KR_struct_biolKeyref_0_0_0_0 FOREIGN KEY ( biol_id ) REFERENCES struct_biol ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;

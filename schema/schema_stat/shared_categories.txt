@@ -123,6 +123,9 @@ pdbx_refln_signal_binning
 pdbx_reflns_twin
 pdbx_re_refinement
 pdbx_sequence_range
+pdbx_sifts_unp_segments
+pdbx_sifts_xref_db
+pdbx_sifts_xref_db_segments
 pdbx_soln_scatter
 pdbx_soln_scatter_model
 pdbx_struct_assembly
