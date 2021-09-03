@@ -124,13 +124,13 @@ File path | Document
 - Bulk download via HTTP protocol
 
 	- [mmCIF-validation (full specification)](https://bmrbpub.pdbj.org/archive/mmcif-vrpt/)
-	- [mmCIF-validation-alt (lightweight version @ PDBj FTP server)](http://ftp.pdbj.org/mine2/data/vrpt/mmcif/)
+	- [mmCIF-validation-alt (lightweight version @ PDBj FTP server)](https://data.pdbj.org/pdbjplus/data/vrpt/mmcif/)
 
 	- [PDBML-validation (full specification)](https://bmrbpub.pdbj.org/archive/pdbml-vrpt/)
-	- [PDBML-validation-alt (lightweight version @ PDBj FTP server)](http://ftp.pdbj.org/XML/vrpt-alt/)
+	- [PDBML-validation-alt (lightweight version @ PDBj FTP server)](https://data.pdbj.org/pdbjplus/data/vrpt/xml/)
 
 	- [PDB/RDF-validation (full specification)](https://bmrbpub.pdbj.org/archive/wwpdb-rdf-vrpt/)
-	- [PDB/RDF-validation-alt (lightweight version @ PDBj FTP server)](http://ftp.pdbj.org/RDF/vrpt-alt/)
+	- [PDB/RDF-validation-alt (lightweight version @ PDBj FTP server)](https://data.pdbj.org/pdbjplus/data/vrpt/rdf/)
 
 - Bulk download via rsync protocol
 
@@ -166,6 +166,7 @@ File path | Document
 
 - **Sep 2, 2021**: Release v4.0.8
 	- Update wwPDB Validation Information Dictionary to 4.349.
+	- Update PDBj's data server URLs (data.pdbj.org).
 
 - **Aug 4, 2021**: Release v4.0.7
 	- Update wwPDB Validation Information Dictionary to 4.348.
