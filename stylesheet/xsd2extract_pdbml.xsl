@@ -14,7 +14,7 @@
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xmlns:PDBx="http://pdbml.pdb.org/schema/pdbx-v50.xsd"
-  xmlns:PDBxv="http://pdbml.pdb.org/schema/pdbx-validation-v4.xsd"
+  xmlns:VRPTx="http://pdbml.pdb.org/schema/pdbx-validation-v4.xsd"
   exclude-result-prefixes="PDBx"&gt;
 </xsl2:text>
     <xsl2:apply-templates/>
@@ -79,22 +79,22 @@ Unmatched entry ID in both documents (&lt;xsl:value-of select="$entry_id"/&gt; a
       &lt;/xsl:call-template&gt;
     &lt;/xsl:if&gt;
 
-    &lt;PDBxv:datablock datablockName="{$datablock_name}" xsi:schemaLocation="http://pdbml.pdb.org/schema/pdbx-validation-v4.xsd pdbx-validation-v4.xsd"&gt;
+    &lt;VRPTx:datablock datablockName="{$datablock_name}" xsi:schemaLocation="http://pdbml.pdb.org/schema/pdbx-validation-v4.xsd pdbx-validation-v4.xsd"&gt;
       &lt;xsl:apply-templates select="PDBx:datablock/*"/&gt;
-    &lt;/PDBxv:datablock&gt;
+    &lt;/VRPTx:datablock&gt;
   &lt;/xsl:template&gt;
 </xsl2:text>
       <xsl2:call-template name="categories"/>
     <xsl2:text disable-output-escaping="yes">
   &lt;xsl:template match="PDBx:*" mode="category-element"&gt;
-    &lt;xsl:element name="PDBxv:{local-name()}"&gt;
+    &lt;xsl:element name="VRPTx:{local-name()}"&gt;
       &lt;xsl:apply-templates select="@*|node()" mode="data-item"/&gt;
       &lt;xsl:choose&gt;
         &lt;xsl:when test="local-name()='pdbx_database_status'"&gt;
-          &lt;xsl:element name="PDBxv:validation_created_date"&gt;&lt;xsl:value-of select="$validation_created_date"/&gt;&lt;/xsl:element&gt;
+          &lt;xsl:element name="VRPTx:validation_created_date"&gt;&lt;xsl:value-of select="$validation_created_date"/&gt;&lt;/xsl:element&gt;
         &lt;/xsl:when&gt;
         &lt;xsl:when test="local-name()='pdbx_nmr_ensemble'"&gt;
-          &lt;xsl:element name="PDBxv:atom_consistency_flag"&gt;
+          &lt;xsl:element name="VRPTx:atom_consistency_flag"&gt;
             &lt;xsl:choose&gt;
               &lt;xsl:when test="$nmr_models_consistency_flag='True'"&gt;Y&lt;/xsl:when&gt;
               &lt;xsl:otherwise&gt;N&lt;/xsl:otherwise&gt;
@@ -110,7 +110,7 @@ Unmatched entry ID in both documents (&lt;xsl:value-of select="$entry_id"/&gt; a
   &lt;/xsl:template&gt;
 
   &lt;xsl:template match="PDBx:*" mode="data-item"&gt;
-    &lt;xsl:element name="PDBxv:{local-name()}"&gt;
+    &lt;xsl:element name="VRPTx:{local-name()}"&gt;
       &lt;xsl:apply-templates select="@*|node()" mode="data-item"/&gt;
     &lt;/xsl:element&gt;
   &lt;/xsl:template&gt;
@@ -159,7 +159,7 @@ Unmatched entry ID in both documents (&lt;xsl:value-of select="$entry_id"/&gt; a
     <xsl2:param name="name"/>
     <xsl2:text disable-output-escaping="yes">
   &lt;xsl:template match="PDBx:</xsl2:text><xsl2:value-of select="$name"/><xsl2:text disable-output-escaping="yes">"&gt;
-    &lt;xsl:element name="PDBxv:{local-name()}"&gt;
+    &lt;xsl:element name="VRPTx:{local-name()}"&gt;
       &lt;xsl:apply-templates mode="category-element"/&gt;
     &lt;/xsl:element&gt;
   &lt;/xsl:template&gt;

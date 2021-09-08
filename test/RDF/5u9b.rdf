@@ -3344,16 +3344,6 @@ INGRNNLIQQKN</PDBo:entity_poly.pdbx_seq_one_letter_code_can>
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,MET,1"/>
               </rdf:Description>
             </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,MET,1">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,MET,1"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,MET,1">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,MET,1"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_struct_asym>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/struct_asym/1,A">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,MET,1"/>
@@ -3375,16 +3365,6 @@ INGRNNLIQQKN</PDBo:entity_poly.pdbx_seq_one_letter_code_can>
         <PDBo:has_pdbx_poly_seq_scheme>
           <PDBo:pdbx_poly_seq_scheme rdf:about="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,ALA,2">
             <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/pdb/5U9B"/>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,ALA,2">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,ALA,2"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,ALA,2">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,ALA,2"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_entity_poly_seq>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,ALA,2">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,ALA,2"/>
@@ -3416,16 +3396,6 @@ INGRNNLIQQKN</PDBo:entity_poly.pdbx_seq_one_letter_code_can>
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,VAL,3"/>
               </rdf:Description>
             </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,VAL,3">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,VAL,3"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,VAL,3">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,VAL,3"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_struct_asym>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/struct_asym/1,A">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,VAL,3"/>
@@ -3447,16 +3417,6 @@ INGRNNLIQQKN</PDBo:entity_poly.pdbx_seq_one_letter_code_can>
         <PDBo:has_pdbx_poly_seq_scheme>
           <PDBo:pdbx_poly_seq_scheme rdf:about="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,SER,4">
             <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/pdb/5U9B"/>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,SER,4">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,SER,4"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,SER,4">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,SER,4"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_entity_poly_seq>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,SER,4">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,SER,4"/>
@@ -3488,16 +3448,6 @@ INGRNNLIQQKN</PDBo:entity_poly.pdbx_seq_one_letter_code_can>
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,VAL,5"/>
               </rdf:Description>
             </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,VAL,5">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,VAL,5"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,VAL,5">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,VAL,5"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_struct_asym>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/struct_asym/1,A">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,VAL,5"/>
@@ -3519,16 +3469,6 @@ INGRNNLIQQKN</PDBo:entity_poly.pdbx_seq_one_letter_code_can>
         <PDBo:has_pdbx_poly_seq_scheme>
           <PDBo:pdbx_poly_seq_scheme rdf:about="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,THR,6">
             <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/pdb/5U9B"/>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,THR,6">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,THR,6"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,THR,6">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,THR,6"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_entity_poly_seq>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,THR,6">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,THR,6"/>
@@ -3560,16 +3500,6 @@ INGRNNLIQQKN</PDBo:entity_poly.pdbx_seq_one_letter_code_can>
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,PRO,7"/>
               </rdf:Description>
             </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,PRO,7">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,PRO,7"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,PRO,7">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,PRO,7"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_struct_asym>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/struct_asym/1,A">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,PRO,7"/>
@@ -3591,16 +3521,6 @@ INGRNNLIQQKN</PDBo:entity_poly.pdbx_seq_one_letter_code_can>
         <PDBo:has_pdbx_poly_seq_scheme>
           <PDBo:pdbx_poly_seq_scheme rdf:about="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,ILE,8">
             <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/pdb/5U9B"/>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,ILE,8">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,ILE,8"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,ILE,8">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,ILE,8"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_entity_poly_seq>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,ILE,8">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,ILE,8"/>
@@ -3632,16 +3552,6 @@ INGRNNLIQQKN</PDBo:entity_poly.pdbx_seq_one_letter_code_can>
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,ARG,9"/>
               </rdf:Description>
             </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,ARG,9">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,ARG,9"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,ARG,9">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,ARG,9"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_struct_asym>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/struct_asym/1,A">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,ARG,9"/>
@@ -3663,16 +3573,6 @@ INGRNNLIQQKN</PDBo:entity_poly.pdbx_seq_one_letter_code_can>
         <PDBo:has_pdbx_poly_seq_scheme>
           <PDBo:pdbx_poly_seq_scheme rdf:about="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,ASP,10">
             <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/pdb/5U9B"/>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,ASP,10">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,ASP,10"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,ASP,10">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,ASP,10"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_entity_poly_seq>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,ASP,10">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,ASP,10"/>
@@ -3704,16 +3604,6 @@ INGRNNLIQQKN</PDBo:entity_poly.pdbx_seq_one_letter_code_can>
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,THR,11"/>
               </rdf:Description>
             </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,THR,11">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,THR,11"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,THR,11">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,THR,11"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_struct_asym>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/struct_asym/1,A">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,THR,11"/>
@@ -3735,16 +3625,6 @@ INGRNNLIQQKN</PDBo:entity_poly.pdbx_seq_one_letter_code_can>
         <PDBo:has_pdbx_poly_seq_scheme>
           <PDBo:pdbx_poly_seq_scheme rdf:about="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,LYS,12">
             <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/pdb/5U9B"/>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,LYS,12">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,LYS,12"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,LYS,12">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,LYS,12"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_entity_poly_seq>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,LYS,12">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,LYS,12"/>
@@ -3776,16 +3656,6 @@ INGRNNLIQQKN</PDBo:entity_poly.pdbx_seq_one_letter_code_can>
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,TRP,13"/>
               </rdf:Description>
             </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,TRP,13">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,TRP,13"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,TRP,13">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,TRP,13"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_struct_asym>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/struct_asym/1,A">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,TRP,13"/>
@@ -3807,16 +3677,6 @@ INGRNNLIQQKN</PDBo:entity_poly.pdbx_seq_one_letter_code_can>
         <PDBo:has_pdbx_poly_seq_scheme>
           <PDBo:pdbx_poly_seq_scheme rdf:about="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,LEU,14">
             <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/pdb/5U9B"/>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,LEU,14">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,LEU,14"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,LEU,14">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,LEU,14"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_entity_poly_seq>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,LEU,14">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,LEU,14"/>
@@ -3848,16 +3708,6 @@ INGRNNLIQQKN</PDBo:entity_poly.pdbx_seq_one_letter_code_can>
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,THR,15"/>
               </rdf:Description>
             </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,THR,15">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,THR,15"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,THR,15">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,THR,15"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_struct_asym>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/struct_asym/1,A">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,THR,15"/>
@@ -3879,16 +3729,6 @@ INGRNNLIQQKN</PDBo:entity_poly.pdbx_seq_one_letter_code_can>
         <PDBo:has_pdbx_poly_seq_scheme>
           <PDBo:pdbx_poly_seq_scheme rdf:about="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,LEU,16">
             <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/pdb/5U9B"/>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,LEU,16">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,LEU,16"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,LEU,16">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,LEU,16"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_entity_poly_seq>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,LEU,16">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,LEU,16"/>
@@ -3920,16 +3760,6 @@ INGRNNLIQQKN</PDBo:entity_poly.pdbx_seq_one_letter_code_can>
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,GLU,17"/>
               </rdf:Description>
             </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,GLU,17">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,GLU,17"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,GLU,17">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,GLU,17"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_struct_asym>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/struct_asym/1,A">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,GLU,17"/>
@@ -3951,16 +3781,6 @@ INGRNNLIQQKN</PDBo:entity_poly.pdbx_seq_one_letter_code_can>
         <PDBo:has_pdbx_poly_seq_scheme>
           <PDBo:pdbx_poly_seq_scheme rdf:about="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,VAL,18">
             <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/pdb/5U9B"/>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,VAL,18">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,VAL,18"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,VAL,18">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,VAL,18"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_entity_poly_seq>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,VAL,18">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,VAL,18"/>
@@ -3992,16 +3812,6 @@ INGRNNLIQQKN</PDBo:entity_poly.pdbx_seq_one_letter_code_can>
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,CYS,19"/>
               </rdf:Description>
             </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,CYS,19">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,CYS,19"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,CYS,19">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,CYS,19"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_struct_asym>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/struct_asym/1,A">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,CYS,19"/>
@@ -4023,16 +3833,6 @@ INGRNNLIQQKN</PDBo:entity_poly.pdbx_seq_one_letter_code_can>
         <PDBo:has_pdbx_poly_seq_scheme>
           <PDBo:pdbx_poly_seq_scheme rdf:about="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,ARG,20">
             <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/pdb/5U9B"/>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,ARG,20">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,ARG,20"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,ARG,20">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,ARG,20"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_entity_poly_seq>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,ARG,20">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,ARG,20"/>
@@ -4064,16 +3864,6 @@ INGRNNLIQQKN</PDBo:entity_poly.pdbx_seq_one_letter_code_can>
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,GLU,21"/>
               </rdf:Description>
             </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,GLU,21">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,GLU,21"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,GLU,21">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,GLU,21"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_struct_asym>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/struct_asym/1,A">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,GLU,21"/>
@@ -4095,16 +3885,6 @@ INGRNNLIQQKN</PDBo:entity_poly.pdbx_seq_one_letter_code_can>
         <PDBo:has_pdbx_poly_seq_scheme>
           <PDBo:pdbx_poly_seq_scheme rdf:about="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,PHE,22">
             <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/pdb/5U9B"/>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,PHE,22">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,PHE,22"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,PHE,22">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,PHE,22"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_entity_poly_seq>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,PHE,22">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,PHE,22"/>
@@ -4136,16 +3916,6 @@ INGRNNLIQQKN</PDBo:entity_poly.pdbx_seq_one_letter_code_can>
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,GLN,23"/>
               </rdf:Description>
             </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,GLN,23">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,GLN,23"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,GLN,23">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,GLN,23"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_struct_asym>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/struct_asym/1,A">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,GLN,23"/>
@@ -4167,16 +3937,6 @@ INGRNNLIQQKN</PDBo:entity_poly.pdbx_seq_one_letter_code_can>
         <PDBo:has_pdbx_poly_seq_scheme>
           <PDBo:pdbx_poly_seq_scheme rdf:about="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,ARG,24">
             <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/pdb/5U9B"/>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,ARG,24">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,ARG,24"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,ARG,24">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,ARG,24"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_entity_poly_seq>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,ARG,24">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,ARG,24"/>
@@ -4208,16 +3968,6 @@ INGRNNLIQQKN</PDBo:entity_poly.pdbx_seq_one_letter_code_can>
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,GLY,25"/>
               </rdf:Description>
             </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,GLY,25">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,GLY,25"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,GLY,25">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,GLY,25"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_struct_asym>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/struct_asym/1,A">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,GLY,25"/>
@@ -4239,16 +3989,6 @@ INGRNNLIQQKN</PDBo:entity_poly.pdbx_seq_one_letter_code_can>
         <PDBo:has_pdbx_poly_seq_scheme>
           <PDBo:pdbx_poly_seq_scheme rdf:about="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,THR,26">
             <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/pdb/5U9B"/>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,THR,26">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,THR,26"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,THR,26">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,THR,26"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_entity_poly_seq>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,THR,26">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,THR,26"/>
@@ -4280,16 +4020,6 @@ INGRNNLIQQKN</PDBo:entity_poly.pdbx_seq_one_letter_code_can>
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,CYS,27"/>
               </rdf:Description>
             </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,CYS,27">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,CYS,27"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,CYS,27">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,CYS,27"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_struct_asym>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/struct_asym/1,A">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,CYS,27"/>
@@ -4311,16 +4041,6 @@ INGRNNLIQQKN</PDBo:entity_poly.pdbx_seq_one_letter_code_can>
         <PDBo:has_pdbx_poly_seq_scheme>
           <PDBo:pdbx_poly_seq_scheme rdf:about="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,SER,28">
             <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/pdb/5U9B"/>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,SER,28">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,SER,28"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,SER,28">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,SER,28"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_entity_poly_seq>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,SER,28">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,SER,28"/>
@@ -4352,16 +4072,6 @@ INGRNNLIQQKN</PDBo:entity_poly.pdbx_seq_one_letter_code_can>
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,ARG,29"/>
               </rdf:Description>
             </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,ARG,29">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,ARG,29"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,ARG,29">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,ARG,29"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_struct_asym>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/struct_asym/1,A">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,ARG,29"/>
@@ -4383,16 +4093,6 @@ INGRNNLIQQKN</PDBo:entity_poly.pdbx_seq_one_letter_code_can>
         <PDBo:has_pdbx_poly_seq_scheme>
           <PDBo:pdbx_poly_seq_scheme rdf:about="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,PRO,30">
             <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/pdb/5U9B"/>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,PRO,30">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,PRO,30"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,PRO,30">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,PRO,30"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_entity_poly_seq>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,PRO,30">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,PRO,30"/>
@@ -4424,16 +4124,6 @@ INGRNNLIQQKN</PDBo:entity_poly.pdbx_seq_one_letter_code_can>
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,ASP,31"/>
               </rdf:Description>
             </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,ASP,31">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,ASP,31"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,ASP,31">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,ASP,31"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_struct_asym>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/struct_asym/1,A">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,ASP,31"/>
@@ -4455,16 +4145,6 @@ INGRNNLIQQKN</PDBo:entity_poly.pdbx_seq_one_letter_code_can>
         <PDBo:has_pdbx_poly_seq_scheme>
           <PDBo:pdbx_poly_seq_scheme rdf:about="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,THR,32">
             <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/pdb/5U9B"/>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,THR,32">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,THR,32"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,THR,32">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,THR,32"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_entity_poly_seq>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,THR,32">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,THR,32"/>
@@ -4496,16 +4176,6 @@ INGRNNLIQQKN</PDBo:entity_poly.pdbx_seq_one_letter_code_can>
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,GLU,33"/>
               </rdf:Description>
             </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,GLU,33">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,GLU,33"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,GLU,33">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,GLU,33"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_struct_asym>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/struct_asym/1,A">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,GLU,33"/>
@@ -4527,16 +4197,6 @@ INGRNNLIQQKN</PDBo:entity_poly.pdbx_seq_one_letter_code_can>
         <PDBo:has_pdbx_poly_seq_scheme>
           <PDBo:pdbx_poly_seq_scheme rdf:about="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,CYS,34">
             <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/pdb/5U9B"/>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,CYS,34">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,CYS,34"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,CYS,34">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,CYS,34"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_entity_poly_seq>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,CYS,34">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,CYS,34"/>
@@ -4568,16 +4228,6 @@ INGRNNLIQQKN</PDBo:entity_poly.pdbx_seq_one_letter_code_can>
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,LYS,35"/>
               </rdf:Description>
             </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,LYS,35">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,LYS,35"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,LYS,35">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,LYS,35"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_struct_asym>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/struct_asym/1,A">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,LYS,35"/>
@@ -4599,16 +4249,6 @@ INGRNNLIQQKN</PDBo:entity_poly.pdbx_seq_one_letter_code_can>
         <PDBo:has_pdbx_poly_seq_scheme>
           <PDBo:pdbx_poly_seq_scheme rdf:about="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,PHE,36">
             <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/pdb/5U9B"/>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,PHE,36">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,PHE,36"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,PHE,36">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,PHE,36"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_entity_poly_seq>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,PHE,36">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,PHE,36"/>
@@ -4640,16 +4280,6 @@ INGRNNLIQQKN</PDBo:entity_poly.pdbx_seq_one_letter_code_can>
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,ALA,37"/>
               </rdf:Description>
             </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,ALA,37">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,ALA,37"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,ALA,37">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,ALA,37"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_struct_asym>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/struct_asym/1,A">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,ALA,37"/>
@@ -4671,16 +4301,6 @@ INGRNNLIQQKN</PDBo:entity_poly.pdbx_seq_one_letter_code_can>
         <PDBo:has_pdbx_poly_seq_scheme>
           <PDBo:pdbx_poly_seq_scheme rdf:about="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,HIS,38">
             <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/pdb/5U9B"/>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,HIS,38">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,HIS,38"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,HIS,38">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,HIS,38"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_entity_poly_seq>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,HIS,38">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,HIS,38"/>
@@ -4712,16 +4332,6 @@ INGRNNLIQQKN</PDBo:entity_poly.pdbx_seq_one_letter_code_can>
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,PRO,39"/>
               </rdf:Description>
             </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,PRO,39">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,PRO,39"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,PRO,39">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,PRO,39"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_struct_asym>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/struct_asym/1,A">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,PRO,39"/>
@@ -4743,16 +4353,6 @@ INGRNNLIQQKN</PDBo:entity_poly.pdbx_seq_one_letter_code_can>
         <PDBo:has_pdbx_poly_seq_scheme>
           <PDBo:pdbx_poly_seq_scheme rdf:about="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,SER,40">
             <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/pdb/5U9B"/>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,SER,40">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,SER,40"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,SER,40">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,SER,40"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_entity_poly_seq>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,SER,40">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,SER,40"/>
@@ -4784,16 +4384,6 @@ INGRNNLIQQKN</PDBo:entity_poly.pdbx_seq_one_letter_code_can>
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,LYS,41"/>
               </rdf:Description>
             </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,LYS,41">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,LYS,41"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,LYS,41">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,LYS,41"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_struct_asym>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/struct_asym/1,A">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,LYS,41"/>
@@ -4815,16 +4405,6 @@ INGRNNLIQQKN</PDBo:entity_poly.pdbx_seq_one_letter_code_can>
         <PDBo:has_pdbx_poly_seq_scheme>
           <PDBo:pdbx_poly_seq_scheme rdf:about="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,SER,42">
             <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/pdb/5U9B"/>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,SER,42">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,SER,42"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,SER,42">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,SER,42"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_entity_poly_seq>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,SER,42">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,SER,42"/>
@@ -4856,16 +4436,6 @@ INGRNNLIQQKN</PDBo:entity_poly.pdbx_seq_one_letter_code_can>
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,CYS,43"/>
               </rdf:Description>
             </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,CYS,43">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,CYS,43"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,CYS,43">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,CYS,43"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_struct_asym>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/struct_asym/1,A">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,CYS,43"/>
@@ -4887,16 +4457,6 @@ INGRNNLIQQKN</PDBo:entity_poly.pdbx_seq_one_letter_code_can>
         <PDBo:has_pdbx_poly_seq_scheme>
           <PDBo:pdbx_poly_seq_scheme rdf:about="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,GLN,44">
             <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/pdb/5U9B"/>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,GLN,44">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,GLN,44"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,GLN,44">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,GLN,44"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_entity_poly_seq>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,GLN,44">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,GLN,44"/>
@@ -4928,16 +4488,6 @@ INGRNNLIQQKN</PDBo:entity_poly.pdbx_seq_one_letter_code_can>
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,VAL,45"/>
               </rdf:Description>
             </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,VAL,45">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,VAL,45"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,VAL,45">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,VAL,45"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_struct_asym>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/struct_asym/1,A">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,VAL,45"/>
@@ -4959,16 +4509,6 @@ INGRNNLIQQKN</PDBo:entity_poly.pdbx_seq_one_letter_code_can>
         <PDBo:has_pdbx_poly_seq_scheme>
           <PDBo:pdbx_poly_seq_scheme rdf:about="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,GLU,46">
             <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/pdb/5U9B"/>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,GLU,46">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,GLU,46"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,GLU,46">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,GLU,46"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_entity_poly_seq>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,GLU,46">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,GLU,46"/>
@@ -5000,16 +4540,6 @@ INGRNNLIQQKN</PDBo:entity_poly.pdbx_seq_one_letter_code_can>
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,ASN,47"/>
               </rdf:Description>
             </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,ASN,47">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,ASN,47"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,ASN,47">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,ASN,47"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_struct_asym>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/struct_asym/1,A">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,ASN,47"/>
@@ -5031,16 +4561,6 @@ INGRNNLIQQKN</PDBo:entity_poly.pdbx_seq_one_letter_code_can>
         <PDBo:has_pdbx_poly_seq_scheme>
           <PDBo:pdbx_poly_seq_scheme rdf:about="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,GLY,48">
             <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/pdb/5U9B"/>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,GLY,48">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,GLY,48"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,GLY,48">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,GLY,48"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_entity_poly_seq>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,GLY,48">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,GLY,48"/>
@@ -5072,16 +4592,6 @@ INGRNNLIQQKN</PDBo:entity_poly.pdbx_seq_one_letter_code_can>
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,ARG,49"/>
               </rdf:Description>
             </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,ARG,49">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,ARG,49"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,ARG,49">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,ARG,49"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_struct_asym>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/struct_asym/1,A">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,ARG,49"/>
@@ -5103,16 +4613,6 @@ INGRNNLIQQKN</PDBo:entity_poly.pdbx_seq_one_letter_code_can>
         <PDBo:has_pdbx_poly_seq_scheme>
           <PDBo:pdbx_poly_seq_scheme rdf:about="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,VAL,50">
             <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/pdb/5U9B"/>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,VAL,50">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,VAL,50"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,VAL,50">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,VAL,50"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_entity_poly_seq>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,VAL,50">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,VAL,50"/>
@@ -5144,16 +4644,6 @@ INGRNNLIQQKN</PDBo:entity_poly.pdbx_seq_one_letter_code_can>
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,ILE,51"/>
               </rdf:Description>
             </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,ILE,51">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,ILE,51"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,ILE,51">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,ILE,51"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_struct_asym>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/struct_asym/1,A">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,ILE,51"/>
@@ -5175,16 +4665,6 @@ INGRNNLIQQKN</PDBo:entity_poly.pdbx_seq_one_letter_code_can>
         <PDBo:has_pdbx_poly_seq_scheme>
           <PDBo:pdbx_poly_seq_scheme rdf:about="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,ALA,52">
             <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/pdb/5U9B"/>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,ALA,52">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,ALA,52"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,ALA,52">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,ALA,52"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_entity_poly_seq>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,ALA,52">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,ALA,52"/>
@@ -5216,16 +4696,6 @@ INGRNNLIQQKN</PDBo:entity_poly.pdbx_seq_one_letter_code_can>
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,CYS,53"/>
               </rdf:Description>
             </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,CYS,53">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,CYS,53"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,CYS,53">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,CYS,53"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_struct_asym>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/struct_asym/1,A">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,CYS,53"/>
@@ -5247,16 +4717,6 @@ INGRNNLIQQKN</PDBo:entity_poly.pdbx_seq_one_letter_code_can>
         <PDBo:has_pdbx_poly_seq_scheme>
           <PDBo:pdbx_poly_seq_scheme rdf:about="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,PHE,54">
             <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/pdb/5U9B"/>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,PHE,54">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,PHE,54"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,PHE,54">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,PHE,54"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_entity_poly_seq>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,PHE,54">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,PHE,54"/>
@@ -5288,16 +4748,6 @@ INGRNNLIQQKN</PDBo:entity_poly.pdbx_seq_one_letter_code_can>
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,ASP,55"/>
               </rdf:Description>
             </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,ASP,55">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,ASP,55"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,ASP,55">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,ASP,55"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_struct_asym>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/struct_asym/1,A">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,ASP,55"/>
@@ -5319,16 +4769,6 @@ INGRNNLIQQKN</PDBo:entity_poly.pdbx_seq_one_letter_code_can>
         <PDBo:has_pdbx_poly_seq_scheme>
           <PDBo:pdbx_poly_seq_scheme rdf:about="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,SER,56">
             <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/pdb/5U9B"/>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,SER,56">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,SER,56"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,SER,56">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,SER,56"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_entity_poly_seq>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,SER,56">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,SER,56"/>
@@ -5360,16 +4800,6 @@ INGRNNLIQQKN</PDBo:entity_poly.pdbx_seq_one_letter_code_can>
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,LEU,57"/>
               </rdf:Description>
             </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,LEU,57">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,LEU,57"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,LEU,57">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,LEU,57"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_struct_asym>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/struct_asym/1,A">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,LEU,57"/>
@@ -5391,16 +4821,6 @@ INGRNNLIQQKN</PDBo:entity_poly.pdbx_seq_one_letter_code_can>
         <PDBo:has_pdbx_poly_seq_scheme>
           <PDBo:pdbx_poly_seq_scheme rdf:about="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,LYS,58">
             <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/pdb/5U9B"/>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,LYS,58">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,LYS,58"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,LYS,58">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,LYS,58"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_entity_poly_seq>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,LYS,58">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,LYS,58"/>
@@ -5432,16 +4852,6 @@ INGRNNLIQQKN</PDBo:entity_poly.pdbx_seq_one_letter_code_can>
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,GLY,59"/>
               </rdf:Description>
             </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,GLY,59">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,GLY,59"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,GLY,59">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,GLY,59"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_struct_asym>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/struct_asym/1,A">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,GLY,59"/>
@@ -5463,16 +4873,6 @@ INGRNNLIQQKN</PDBo:entity_poly.pdbx_seq_one_letter_code_can>
         <PDBo:has_pdbx_poly_seq_scheme>
           <PDBo:pdbx_poly_seq_scheme rdf:about="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,ARG,60">
             <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/pdb/5U9B"/>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,ARG,60">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,ARG,60"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,ARG,60">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,ARG,60"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_entity_poly_seq>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,ARG,60">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,ARG,60"/>
@@ -5504,16 +4904,6 @@ INGRNNLIQQKN</PDBo:entity_poly.pdbx_seq_one_letter_code_can>
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,CYS,61"/>
               </rdf:Description>
             </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,CYS,61">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,CYS,61"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,CYS,61">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,CYS,61"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_struct_asym>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/struct_asym/1,A">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,CYS,61"/>
@@ -5535,16 +4925,6 @@ INGRNNLIQQKN</PDBo:entity_poly.pdbx_seq_one_letter_code_can>
         <PDBo:has_pdbx_poly_seq_scheme>
           <PDBo:pdbx_poly_seq_scheme rdf:about="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,SER,62">
             <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/pdb/5U9B"/>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,SER,62">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,SER,62"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,SER,62">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,SER,62"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_entity_poly_seq>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,SER,62">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,SER,62"/>
@@ -5576,16 +4956,6 @@ INGRNNLIQQKN</PDBo:entity_poly.pdbx_seq_one_letter_code_can>
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,ARG,63"/>
               </rdf:Description>
             </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,ARG,63">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,ARG,63"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,ARG,63">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,ARG,63"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_struct_asym>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/struct_asym/1,A">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,ARG,63"/>
@@ -5607,16 +4977,6 @@ INGRNNLIQQKN</PDBo:entity_poly.pdbx_seq_one_letter_code_can>
         <PDBo:has_pdbx_poly_seq_scheme>
           <PDBo:pdbx_poly_seq_scheme rdf:about="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,GLU,64">
             <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/pdb/5U9B"/>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,GLU,64">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,GLU,64"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,GLU,64">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,GLU,64"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_entity_poly_seq>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,GLU,64">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,GLU,64"/>
@@ -5648,16 +5008,6 @@ INGRNNLIQQKN</PDBo:entity_poly.pdbx_seq_one_letter_code_can>
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,ASN,65"/>
               </rdf:Description>
             </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,ASN,65">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,ASN,65"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,ASN,65">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,ASN,65"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_struct_asym>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/struct_asym/1,A">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,ASN,65"/>
@@ -5679,16 +5029,6 @@ INGRNNLIQQKN</PDBo:entity_poly.pdbx_seq_one_letter_code_can>
         <PDBo:has_pdbx_poly_seq_scheme>
           <PDBo:pdbx_poly_seq_scheme rdf:about="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,CYS,66">
             <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/pdb/5U9B"/>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,CYS,66">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,CYS,66"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,CYS,66">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,CYS,66"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_entity_poly_seq>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,CYS,66">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,CYS,66"/>
@@ -5720,16 +5060,6 @@ INGRNNLIQQKN</PDBo:entity_poly.pdbx_seq_one_letter_code_can>
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,LYS,67"/>
               </rdf:Description>
             </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,LYS,67">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,LYS,67"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,LYS,67">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,LYS,67"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_struct_asym>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/struct_asym/1,A">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,LYS,67"/>
@@ -5751,16 +5081,6 @@ INGRNNLIQQKN</PDBo:entity_poly.pdbx_seq_one_letter_code_can>
         <PDBo:has_pdbx_poly_seq_scheme>
           <PDBo:pdbx_poly_seq_scheme rdf:about="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,TYR,68">
             <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/pdb/5U9B"/>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,TYR,68">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,TYR,68"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,TYR,68">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,TYR,68"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_entity_poly_seq>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,TYR,68">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,TYR,68"/>
@@ -5792,16 +5112,6 @@ INGRNNLIQQKN</PDBo:entity_poly.pdbx_seq_one_letter_code_can>
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,LEU,69"/>
               </rdf:Description>
             </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,LEU,69">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,LEU,69"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,LEU,69">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,LEU,69"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_struct_asym>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/struct_asym/1,A">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,LEU,69"/>
@@ -5823,16 +5133,6 @@ INGRNNLIQQKN</PDBo:entity_poly.pdbx_seq_one_letter_code_can>
         <PDBo:has_pdbx_poly_seq_scheme>
           <PDBo:pdbx_poly_seq_scheme rdf:about="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,HIS,70">
             <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/pdb/5U9B"/>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,HIS,70">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,HIS,70"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,HIS,70">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,HIS,70"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_entity_poly_seq>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,HIS,70">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,HIS,70"/>
@@ -5864,16 +5164,6 @@ INGRNNLIQQKN</PDBo:entity_poly.pdbx_seq_one_letter_code_can>
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,PRO,71"/>
               </rdf:Description>
             </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,PRO,71">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,PRO,71"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,PRO,71">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,PRO,71"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_struct_asym>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/struct_asym/1,A">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,PRO,71"/>
@@ -5895,16 +5185,6 @@ INGRNNLIQQKN</PDBo:entity_poly.pdbx_seq_one_letter_code_can>
         <PDBo:has_pdbx_poly_seq_scheme>
           <PDBo:pdbx_poly_seq_scheme rdf:about="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,PRO,72">
             <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/pdb/5U9B"/>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,PRO,72">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,PRO,72"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,PRO,72">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,PRO,72"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_entity_poly_seq>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,PRO,72">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,PRO,72"/>
@@ -5936,16 +5216,6 @@ INGRNNLIQQKN</PDBo:entity_poly.pdbx_seq_one_letter_code_can>
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,PRO,73"/>
               </rdf:Description>
             </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,PRO,73">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,PRO,73"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,PRO,73">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,PRO,73"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_struct_asym>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/struct_asym/1,A">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,PRO,73"/>
@@ -5967,16 +5237,6 @@ INGRNNLIQQKN</PDBo:entity_poly.pdbx_seq_one_letter_code_can>
         <PDBo:has_pdbx_poly_seq_scheme>
           <PDBo:pdbx_poly_seq_scheme rdf:about="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,HIS,74">
             <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/pdb/5U9B"/>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,HIS,74">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,HIS,74"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,HIS,74">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,HIS,74"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_entity_poly_seq>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,HIS,74">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,HIS,74"/>
@@ -6008,16 +5268,6 @@ INGRNNLIQQKN</PDBo:entity_poly.pdbx_seq_one_letter_code_can>
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,LEU,75"/>
               </rdf:Description>
             </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,LEU,75">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,LEU,75"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,LEU,75">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,LEU,75"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_struct_asym>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/struct_asym/1,A">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,LEU,75"/>
@@ -6039,16 +5289,6 @@ INGRNNLIQQKN</PDBo:entity_poly.pdbx_seq_one_letter_code_can>
         <PDBo:has_pdbx_poly_seq_scheme>
           <PDBo:pdbx_poly_seq_scheme rdf:about="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,LYS,76">
             <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/pdb/5U9B"/>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,LYS,76">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,LYS,76"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,LYS,76">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,LYS,76"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_entity_poly_seq>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,LYS,76">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,LYS,76"/>
@@ -6080,16 +5320,6 @@ INGRNNLIQQKN</PDBo:entity_poly.pdbx_seq_one_letter_code_can>
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,THR,77"/>
               </rdf:Description>
             </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,THR,77">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,THR,77"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,THR,77">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,THR,77"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_struct_asym>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/struct_asym/1,A">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,THR,77"/>
@@ -6111,16 +5341,6 @@ INGRNNLIQQKN</PDBo:entity_poly.pdbx_seq_one_letter_code_can>
         <PDBo:has_pdbx_poly_seq_scheme>
           <PDBo:pdbx_poly_seq_scheme rdf:about="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,GLN,78">
             <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/pdb/5U9B"/>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,GLN,78">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,GLN,78"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,GLN,78">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,GLN,78"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_entity_poly_seq>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,GLN,78">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,GLN,78"/>
@@ -6152,16 +5372,6 @@ INGRNNLIQQKN</PDBo:entity_poly.pdbx_seq_one_letter_code_can>
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,LEU,79"/>
               </rdf:Description>
             </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,LEU,79">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,LEU,79"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,LEU,79">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,LEU,79"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_struct_asym>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/struct_asym/1,A">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,LEU,79"/>
@@ -6183,16 +5393,6 @@ INGRNNLIQQKN</PDBo:entity_poly.pdbx_seq_one_letter_code_can>
         <PDBo:has_pdbx_poly_seq_scheme>
           <PDBo:pdbx_poly_seq_scheme rdf:about="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,GLU,80">
             <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/pdb/5U9B"/>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,GLU,80">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,GLU,80"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,GLU,80">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,GLU,80"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_entity_poly_seq>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,GLU,80">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,GLU,80"/>
@@ -6224,16 +5424,6 @@ INGRNNLIQQKN</PDBo:entity_poly.pdbx_seq_one_letter_code_can>
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,ILE,81"/>
               </rdf:Description>
             </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,ILE,81">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,ILE,81"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,ILE,81">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,ILE,81"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_struct_asym>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/struct_asym/1,A">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,ILE,81"/>
@@ -6255,16 +5445,6 @@ INGRNNLIQQKN</PDBo:entity_poly.pdbx_seq_one_letter_code_can>
         <PDBo:has_pdbx_poly_seq_scheme>
           <PDBo:pdbx_poly_seq_scheme rdf:about="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,ASN,82">
             <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/pdb/5U9B"/>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,ASN,82">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,ASN,82"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,ASN,82">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,ASN,82"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_entity_poly_seq>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,ASN,82">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,ASN,82"/>
@@ -6296,16 +5476,6 @@ INGRNNLIQQKN</PDBo:entity_poly.pdbx_seq_one_letter_code_can>
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,GLY,83"/>
               </rdf:Description>
             </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,GLY,83">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,GLY,83"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,GLY,83">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,GLY,83"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_struct_asym>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/struct_asym/1,A">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,GLY,83"/>
@@ -6327,16 +5497,6 @@ INGRNNLIQQKN</PDBo:entity_poly.pdbx_seq_one_letter_code_can>
         <PDBo:has_pdbx_poly_seq_scheme>
           <PDBo:pdbx_poly_seq_scheme rdf:about="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,ARG,84">
             <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/pdb/5U9B"/>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,ARG,84">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,ARG,84"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,ARG,84">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,ARG,84"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_entity_poly_seq>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,ARG,84">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,ARG,84"/>
@@ -6368,16 +5528,6 @@ INGRNNLIQQKN</PDBo:entity_poly.pdbx_seq_one_letter_code_can>
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,ASN,85"/>
               </rdf:Description>
             </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,ASN,85">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,ASN,85"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,ASN,85">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,ASN,85"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_struct_asym>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/struct_asym/1,A">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,ASN,85"/>
@@ -6399,16 +5549,6 @@ INGRNNLIQQKN</PDBo:entity_poly.pdbx_seq_one_letter_code_can>
         <PDBo:has_pdbx_poly_seq_scheme>
           <PDBo:pdbx_poly_seq_scheme rdf:about="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,ASN,86">
             <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/pdb/5U9B"/>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,ASN,86">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,ASN,86"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,ASN,86">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,ASN,86"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_entity_poly_seq>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,ASN,86">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,ASN,86"/>
@@ -6440,16 +5580,6 @@ INGRNNLIQQKN</PDBo:entity_poly.pdbx_seq_one_letter_code_can>
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,LEU,87"/>
               </rdf:Description>
             </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,LEU,87">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,LEU,87"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,LEU,87">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,LEU,87"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_struct_asym>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/struct_asym/1,A">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,LEU,87"/>
@@ -6471,16 +5601,6 @@ INGRNNLIQQKN</PDBo:entity_poly.pdbx_seq_one_letter_code_can>
         <PDBo:has_pdbx_poly_seq_scheme>
           <PDBo:pdbx_poly_seq_scheme rdf:about="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,ILE,88">
             <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/pdb/5U9B"/>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,ILE,88">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,ILE,88"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,ILE,88">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,ILE,88"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_entity_poly_seq>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,ILE,88">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,ILE,88"/>
@@ -6512,16 +5632,6 @@ INGRNNLIQQKN</PDBo:entity_poly.pdbx_seq_one_letter_code_can>
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,GLN,89"/>
               </rdf:Description>
             </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,GLN,89">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,GLN,89"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,GLN,89">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,GLN,89"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_struct_asym>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/struct_asym/1,A">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,GLN,89"/>
@@ -6543,16 +5653,6 @@ INGRNNLIQQKN</PDBo:entity_poly.pdbx_seq_one_letter_code_can>
         <PDBo:has_pdbx_poly_seq_scheme>
           <PDBo:pdbx_poly_seq_scheme rdf:about="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,GLN,90">
             <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/pdb/5U9B"/>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,GLN,90">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,GLN,90"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,GLN,90">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,GLN,90"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_entity_poly_seq>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,GLN,90">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,GLN,90"/>
@@ -6584,16 +5684,6 @@ INGRNNLIQQKN</PDBo:entity_poly.pdbx_seq_one_letter_code_can>
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,LYS,91"/>
               </rdf:Description>
             </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,LYS,91">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,LYS,91"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,LYS,91">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,LYS,91"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_struct_asym>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/struct_asym/1,A">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,LYS,91"/>
@@ -6615,16 +5705,6 @@ INGRNNLIQQKN</PDBo:entity_poly.pdbx_seq_one_letter_code_can>
         <PDBo:has_pdbx_poly_seq_scheme>
           <PDBo:pdbx_poly_seq_scheme rdf:about="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,ASN,92">
             <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/pdb/5U9B"/>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,ASN,92">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,ASN,92"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,ASN,92">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,ASN,92"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_entity_poly_seq>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/1,ASN,92">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/A,1,ASN,92"/>
@@ -6656,16 +5736,6 @@ INGRNNLIQQKN</PDBo:entity_poly.pdbx_seq_one_letter_code_can>
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/B,2,G,1"/>
               </rdf:Description>
             </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/2,G,1">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/B,2,G,1"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/2,G,1">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/B,2,G,1"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_struct_asym>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/struct_asym/2,B">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/B,2,G,1"/>
@@ -6687,16 +5757,6 @@ INGRNNLIQQKN</PDBo:entity_poly.pdbx_seq_one_letter_code_can>
         <PDBo:has_pdbx_poly_seq_scheme>
           <PDBo:pdbx_poly_seq_scheme rdf:about="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/B,2,U,2">
             <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/pdb/5U9B"/>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/2,U,2">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/B,2,U,2"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/2,U,2">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/B,2,U,2"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_entity_poly_seq>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/2,U,2">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/B,2,U,2"/>
@@ -6728,16 +5788,6 @@ INGRNNLIQQKN</PDBo:entity_poly.pdbx_seq_one_letter_code_can>
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/B,2,C,3"/>
               </rdf:Description>
             </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/2,C,3">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/B,2,C,3"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/2,C,3">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/B,2,C,3"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_struct_asym>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/struct_asym/2,B">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/B,2,C,3"/>
@@ -6759,16 +5809,6 @@ INGRNNLIQQKN</PDBo:entity_poly.pdbx_seq_one_letter_code_can>
         <PDBo:has_pdbx_poly_seq_scheme>
           <PDBo:pdbx_poly_seq_scheme rdf:about="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/B,2,U,4">
             <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/pdb/5U9B"/>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/2,U,4">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/B,2,U,4"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/2,U,4">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/B,2,U,4"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_entity_poly_seq>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/2,U,4">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/B,2,U,4"/>
@@ -6800,16 +5840,6 @@ INGRNNLIQQKN</PDBo:entity_poly.pdbx_seq_one_letter_code_can>
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/B,2,C,5"/>
               </rdf:Description>
             </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/2,C,5">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/B,2,C,5"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/2,C,5">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/B,2,C,5"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_struct_asym>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/struct_asym/2,B">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/B,2,C,5"/>
@@ -6831,16 +5861,6 @@ INGRNNLIQQKN</PDBo:entity_poly.pdbx_seq_one_letter_code_can>
         <PDBo:has_pdbx_poly_seq_scheme>
           <PDBo:pdbx_poly_seq_scheme rdf:about="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/B,2,G,6">
             <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/pdb/5U9B"/>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/2,G,6">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/B,2,G,6"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/2,G,6">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/B,2,G,6"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_entity_poly_seq>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/2,G,6">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/B,2,G,6"/>
@@ -6872,16 +5892,6 @@ INGRNNLIQQKN</PDBo:entity_poly.pdbx_seq_one_letter_code_can>
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/B,2,C,7"/>
               </rdf:Description>
             </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/2,C,7">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/B,2,C,7"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/2,C,7">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/B,2,C,7"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_struct_asym>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/struct_asym/2,B">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/B,2,C,7"/>
@@ -6903,16 +5913,6 @@ INGRNNLIQQKN</PDBo:entity_poly.pdbx_seq_one_letter_code_can>
         <PDBo:has_pdbx_poly_seq_scheme>
           <PDBo:pdbx_poly_seq_scheme rdf:about="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/B,2,U,8">
             <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/pdb/5U9B"/>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/2,U,8">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/B,2,U,8"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/2,U,8">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/B,2,U,8"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_entity_poly_seq>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/2,U,8">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/B,2,U,8"/>
@@ -6944,16 +5944,6 @@ INGRNNLIQQKN</PDBo:entity_poly.pdbx_seq_one_letter_code_can>
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/B,2,U,9"/>
               </rdf:Description>
             </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/2,U,9">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/B,2,U,9"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/2,U,9">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/B,2,U,9"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_struct_asym>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/struct_asym/2,B">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/B,2,U,9"/>
@@ -6975,16 +5965,6 @@ INGRNNLIQQKN</PDBo:entity_poly.pdbx_seq_one_letter_code_can>
         <PDBo:has_pdbx_poly_seq_scheme>
           <PDBo:pdbx_poly_seq_scheme rdf:about="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/B,2,U,10">
             <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/pdb/5U9B"/>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/2,U,10">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/B,2,U,10"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/2,U,10">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/B,2,U,10"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_entity_poly_seq>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/2,U,10">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/B,2,U,10"/>
@@ -7016,16 +5996,6 @@ INGRNNLIQQKN</PDBo:entity_poly.pdbx_seq_one_letter_code_can>
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/B,2,U,11"/>
               </rdf:Description>
             </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/2,U,11">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/B,2,U,11"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/2,U,11">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/B,2,U,11"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_struct_asym>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/struct_asym/2,B">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/B,2,U,11"/>
@@ -7047,16 +6017,6 @@ INGRNNLIQQKN</PDBo:entity_poly.pdbx_seq_one_letter_code_can>
         <PDBo:has_pdbx_poly_seq_scheme>
           <PDBo:pdbx_poly_seq_scheme rdf:about="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/B,2,C,12">
             <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/pdb/5U9B"/>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/2,C,12">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/B,2,C,12"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/2,C,12">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/B,2,C,12"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_entity_poly_seq>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/2,C,12">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/B,2,C,12"/>
@@ -7088,16 +6048,6 @@ INGRNNLIQQKN</PDBo:entity_poly.pdbx_seq_one_letter_code_can>
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/B,2,C,13"/>
               </rdf:Description>
             </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/2,C,13">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/B,2,C,13"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/2,C,13">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/B,2,C,13"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_struct_asym>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/struct_asym/2,B">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/B,2,C,13"/>
@@ -7124,16 +6074,6 @@ INGRNNLIQQKN</PDBo:entity_poly.pdbx_seq_one_letter_code_can>
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/B,2,C,14"/>
               </rdf:Description>
             </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/2,C,14">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/B,2,C,14"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/2,C,14">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/B,2,C,14"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_struct_asym>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/struct_asym/2,B">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/B,2,C,14"/>
@@ -7155,16 +6095,6 @@ INGRNNLIQQKN</PDBo:entity_poly.pdbx_seq_one_letter_code_can>
         <PDBo:has_pdbx_poly_seq_scheme>
           <PDBo:pdbx_poly_seq_scheme rdf:about="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/B,2,C,15">
             <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/pdb/5U9B"/>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/2,C,15">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/B,2,C,15"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
-            <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/2,C,15">
-                <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/B,2,C,15"/>
-              </rdf:Description>
-            </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_entity_poly_seq>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/entity_poly_seq/2,C,15">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_poly_seq_scheme/B,2,C,15"/>

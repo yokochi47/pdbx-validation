@@ -4402,22 +4402,6 @@
       <PDBo:has_pdbx_entity_branch_link>
       <PDBo:pdbx_entity_branch_link rdf:about="{$base}/pdbx_entity_branch_link/{translate(@link_id,' ^','_')}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
-      <xsl:if test="PDBx:atom_id_1!='' and PDBx:leaving_atom_id_1!=''">
-        <PDBo:reference_to_chem_comp_atom>
-	  <rdf:Description  rdf:about="{$base}/chem_comp_atom/{translate(PDBx:atom_id_1,' ^','_')},{translate(PDBx:leaving_atom_id_1,' ^','_')}">
-	    <PDBo:referenced_by_pdbx_entity_branch_link rdf:resource="{$base}/pdbx_entity_branch_link/{translate(@link_id,' ^','_')}"/>
-	  </rdf:Description>
-        </PDBo:reference_to_chem_comp_atom>
-        <!-- chem_comp_atomKeyref_3_0_0_0 -->
-      </xsl:if>
-      <xsl:if test="PDBx:atom_id_2!='' and PDBx:leaving_atom_id_2!=''">
-        <PDBo:reference_to_chem_comp_atom>
-	  <rdf:Description  rdf:about="{$base}/chem_comp_atom/{translate(PDBx:atom_id_2,' ^','_')},{translate(PDBx:leaving_atom_id_2,' ^','_')}">
-	    <PDBo:referenced_by_pdbx_entity_branch_link rdf:resource="{$base}/pdbx_entity_branch_link/{translate(@link_id,' ^','_')}"/>
-	  </rdf:Description>
-        </PDBo:reference_to_chem_comp_atom>
-        <!-- chem_comp_atomKeyref_3_0_0_1 -->
-      </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
       <xsl:apply-templates/>
@@ -4621,22 +4605,6 @@
 	  </rdf:Description>
         </PDBo:reference_to_entity_poly_seq>
         <!-- entity_poly_seqKeyref_0_0_0_0 -->
-      </xsl:if>
-      <xsl:if test="PDBx:entity_id!='' and PDBx:comp_id_1!='' and PDBx:entity_comp_num_1!=''">
-        <PDBo:reference_to_entity_poly_seq>
-	  <rdf:Description  rdf:about="{$base}/entity_poly_seq/{translate(PDBx:entity_id,' ^','_')},{translate(PDBx:comp_id_1,' ^','_')},{translate(PDBx:entity_comp_num_1,' ^','_')}">
-	    <PDBo:referenced_by_pdbx_entity_poly_comp_link_list rdf:resource="{$base}/pdbx_entity_poly_comp_link_list/{translate(@link_id,' ^','_')}"/>
-	  </rdf:Description>
-        </PDBo:reference_to_entity_poly_seq>
-        <!-- entity_poly_seqKeyref_2_0_0_0 -->
-      </xsl:if>
-      <xsl:if test="PDBx:entity_id!='' and PDBx:comp_id_1!='' and PDBx:entity_comp_num_1!=''">
-        <PDBo:reference_to_entity_poly_seq>
-	  <rdf:Description  rdf:about="{$base}/entity_poly_seq/{translate(PDBx:entity_id,' ^','_')},{translate(PDBx:comp_id_1,' ^','_')},{translate(PDBx:entity_comp_num_1,' ^','_')}">
-	    <PDBo:referenced_by_pdbx_entity_poly_comp_link_list rdf:resource="{$base}/pdbx_entity_poly_comp_link_list/{translate(@link_id,' ^','_')}"/>
-	  </rdf:Description>
-        </PDBo:reference_to_entity_poly_seq>
-        <!-- entity_poly_seqKeyref_4_0_0_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -6578,14 +6546,6 @@
         </PDBo:reference_to_pdbx_reference_linked_entity_comp_list>
         <!-- pdbx_reference_linked_entity_comp_listKeyref_0_0_0_0 -->
       </xsl:if>
-      <xsl:if test="@linked_entity_id!='' and PDBx:list_id_1!=''">
-        <PDBo:reference_to_pdbx_reference_linked_entity_comp_list>
-	  <rdf:Description  rdf:about="{$base}/pdbx_reference_linked_entity_comp_list/{translate(@linked_entity_id,' ^','_')},{translate(PDBx:list_id_1,' ^','_')}">
-	    <PDBo:referenced_by_pdbx_reference_linked_entity_comp_link rdf:resource="{$base}/pdbx_reference_linked_entity_comp_link/{translate(@link_id,' ^','_')},{translate(@linked_entity_id,' ^','_')}"/>
-	  </rdf:Description>
-        </PDBo:reference_to_pdbx_reference_linked_entity_comp_list>
-        <!-- pdbx_reference_linked_entity_comp_listKeyref_2_0_0_0 -->
-      </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
       <xsl:apply-templates/>
@@ -6625,14 +6585,6 @@
 	  </rdf:Description>
         </PDBo:reference_to_pdbx_reference_linked_entity_comp_list>
         <!-- pdbx_reference_linked_entity_comp_listKeyref_0_0_1_0 -->
-      </xsl:if>
-      <xsl:if test="@linked_entity_id!='' and PDBx:from_list_id!=''">
-        <PDBo:reference_to_pdbx_reference_linked_entity_comp_list>
-	  <rdf:Description  rdf:about="{$base}/pdbx_reference_linked_entity_comp_list/{translate(@linked_entity_id,' ^','_')},{translate(PDBx:from_list_id,' ^','_')}">
-	    <PDBo:referenced_by_pdbx_reference_linked_entity_link rdf:resource="{$base}/pdbx_reference_linked_entity_link/{translate(@link_id,' ^','_')},{translate(@linked_entity_id,' ^','_')}"/>
-	  </rdf:Description>
-        </PDBo:reference_to_pdbx_reference_linked_entity_comp_list>
-        <!-- pdbx_reference_linked_entity_comp_listKeyref_2_0_1_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -7778,14 +7730,6 @@
       <PDBo:has_pdbx_struct_special_symmetry>
       <PDBo:pdbx_struct_special_symmetry rdf:about="{$base}/pdbx_struct_special_symmetry/{translate(@id,' ^','_')}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
-      <xsl:if test="PDBx:auth_comp_id!=''">
-        <PDBo:reference_to_chem_comp>
-	  <rdf:Description  rdf:about="{$base}/chem_comp/{translate(PDBx:auth_comp_id,' ^','_')}">
-	    <PDBo:referenced_by_pdbx_struct_special_symmetry rdf:resource="{$base}/pdbx_struct_special_symmetry/{translate(@id,' ^','_')}"/>
-	  </rdf:Description>
-        </PDBo:reference_to_chem_comp>
-        <!-- chem_compKeyref_2_0_0_0 -->
-      </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
       <xsl:apply-templates/>

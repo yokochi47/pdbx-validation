@@ -44,8 +44,8 @@ EXT_INFO_XSL=stylesheet/extract_info.xsl
 XSD2MERGE_PDBML_INFO_XSL=stylesheet/xsd2merge_pdbml_info.xsl
 MERGE_PDBML_INFO_XSL=stylesheet/merge_pdbml_info.xsl
 
-PDBXV2PDBMLV2RDF_XSL=stylesheet/pdbxv2pdbmlv2rdf.xsl
-PDBMLV2RDF_XSL=stylesheet/pdbmlv2rdf.xsl
+VRPTX2VRPTML2RDF_XSL=stylesheet/vrptx2vrptml2rdf.xsl
+VRPTML2RDF_XSL=stylesheet/vrptml2rdf.xsl
 
 REVERT_INFO_FROM_FULL_XSL=stylesheet/revert_info_from_full.xsl
 REVERT_INFO_FROM_ALT_NOATOM_XSL=stylesheet/revert_info_from_alt_noatom.xsl
@@ -88,7 +88,7 @@ PDBX2CC2RDF_XSL=stylesheet/pdbx2cc2rdf.xsl
 CC2RDF_XSL=stylesheet/cc2rdf.xsl
 
 PDBML2WURCS_XSL=stylesheet/pdbml2wurcs.xsl
-PDBMLV2WURCS_XSL=stylesheet/pdbmlv2wurcs.xsl
+VRPTML2WURCS_XSL=stylesheet/vrptml2wurcs.xsl
 
 WURCS_CATALOG_XML=../wurcs2glytoucan/wurcs_catalog.xml
 _WURCS_CATALOG_XML=wurcs2glytoucan/wurcs_catalog.xml

@@ -63,15 +63,15 @@ do
 
   if ( [ ! -e $rdf_vrpt_file ] && [ ! -e $div_dir/`basename $rdf_vrpt_file`.gz ] ) || [ -e $err_file ] ; then
 
-   #has_glycan=`java -jar $SAXON -s:$pdbml_vrpt_file -xsl:$PDBMLV2WURCS_XSL`
-   has_glycan=`xsltproc $PDBMLV2WURCS_XSL $pdbml_vrpt_file`
+   #has_glycan=`java -jar $SAXON -s:$pdbml_vrpt_file -xsl:$VRPTML2WURCS_XSL`
+   has_glycan=`xsltproc $VRPTML2WURCS_XSL $pdbml_vrpt_file`
    #grep WURCS $pdbml_vrpt_file > /dev/null
    #has_glycan=$?
 
    if [ -z "$has_glycan" ] ; then
-    xsltproc -o $rdf_vrpt_file --param wurcs2glytoucan $_WURCS_CATALOG_XML $PDBMLV2RDF_XSL $pdbml_vrpt_file 2> $err_file && rm -f $err_file || ( rm -f $rdf_vrpt_file ; cat $err_file ; exit 1 )
+    xsltproc -o $rdf_vrpt_file --param wurcs2glytoucan $_WURCS_CATALOG_XML $VRPTML2RDF_XSL $pdbml_vrpt_file 2> $err_file && rm -f $err_file || ( rm -f $rdf_vrpt_file ; cat $err_file ; exit 1 )
    else
-    java -jar $SAXON -s:$pdbml_vrpt_file -xsl:$PDBMLV2RDF_XSL -o:$rdf_vrpt_file wurcs2glytoucan=$WURCS_CATALOG_XML 2> $err_file && rm -f $err_file || ( rm -f $rdf_vrpt_file ; cat $err_file ; exit 1 )
+    java -jar $SAXON -s:$pdbml_vrpt_file -xsl:$VRPTML2RDF_XSL -o:$rdf_vrpt_file wurcs2glytoucan=$WURCS_CATALOG_XML 2> $err_file && rm -f $err_file || ( rm -f $rdf_vrpt_file ; cat $err_file ; exit 1 )
    fi
 
    if [ $has_rapper_command != "false" ] ; then

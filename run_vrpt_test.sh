@@ -26,11 +26,11 @@ if [ ! -e $MERGE_PDBML_INFO_XSL ] ; then
 
 fi
 
-if [ ! -e $PDBMLV2RDF_XSL ] ; then
+if [ ! -e $VRPTML2RDF_XSL ] ; then
 
- java -jar $SAXON -s:$PDBX_VALIDATION_XSD -xsl:$PDBXV2PDBMLV2RDF_XSL -o:$PDBMLV2RDF_XSL || ( echo $0 aborted. ; exit 1 )
+ java -jar $SAXON -s:$PDBX_VALIDATION_XSD -xsl:$VRPTX2VRPTML2RDF_XSL -o:$VRPTML2RDF_XSL || ( echo $0 aborted. ; exit 1 )
 
- echo Generated: $PDBMLV2RDF_XSL
+ echo Generated: $VRPTML2RDF_XSL
 
 fi
 
@@ -163,13 +163,13 @@ for pdbml_file in $WORK_DIR/$PDBML/*.xml ; do
  echo " validated: "$pdbml_vrpt_file
 
  rdf_vrpt_file=$WORK_DIR/$RDF_VALID/$pdbid-validation-full.rdf
- #has_glycan=`java -jar $SAXON -s:$pdbml_vrpt_file -xsl:$PDBMLV2WURCS_XSL`
- has_glycan=`xsltproc $PDBMLV2WURCS_XSL $pdbml_vrpt_file`
+ #has_glycan=`java -jar $SAXON -s:$pdbml_vrpt_file -xsl:$VRPTML2WURCS_XSL`
+ has_glycan=`xsltproc $VRPTML2WURCS_XSL $pdbml_vrpt_file`
 
  if [ -z "$has_glycan" ] ; then
-  xsltproc -o $rdf_vrpt_file --param wurcs2glytoucan $_WURCS_CATALOG_XML $PDBMLV2RDF_XSL $pdbml_vrpt_file || ( echo $0 aborted. ; exit 1 )
+  xsltproc -o $rdf_vrpt_file --param wurcs2glytoucan $_WURCS_CATALOG_XML $VRPTML2RDF_XSL $pdbml_vrpt_file || ( echo $0 aborted. ; exit 1 )
  else
-  java -jar $SAXON -s:$pdbml_vrpt_file -xsl:$PDBMLV2RDF_XSL -o:$rdf_vrpt_file wurcs2glytoucan=$WURCS_CATALOG_XML || ( echo $0 aborted. ; exit 1 )
+  java -jar $SAXON -s:$pdbml_vrpt_file -xsl:$VRPTML2RDF_XSL -o:$rdf_vrpt_file wurcs2glytoucan=$WURCS_CATALOG_XML || ( echo $0 aborted. ; exit 1 )
  fi
 
  echo " generated: "$rdf_vrpt_file
@@ -182,7 +182,7 @@ for pdbml_file in $WORK_DIR/$PDBML/*.xml ; do
  info_alt_file=$WORK_DIR/$VALID_INFO_ALT/$pdbid-validation-alt.xml
  rdf_vrpt_alt_file=$WORK_DIR/$RDF_VALID_ALT/$pdbid-validation-alt.rdf
 
- java -jar $SAXON -s:$info_alt_file -xsl:$PDBMLV2RDF_XSL -o:$rdf_vrpt_alt_file wurcs2glytoucan=$WURCS_CATALOG_XML || ( echo $0 aborted. ; exit 1 )
+ java -jar $SAXON -s:$info_alt_file -xsl:$VRPTML2RDF_XSL -o:$rdf_vrpt_alt_file wurcs2glytoucan=$WURCS_CATALOG_XML || ( echo $0 aborted. ; exit 1 )
 
  echo " generated: "$rdf_vrpt_alt_file
 

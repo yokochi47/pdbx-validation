@@ -13,7 +13,7 @@
   version="1.0"
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xmlns:PDBxv="http://pdbml.pdb.org/schema/pdbx-validation-v4.xsd"&gt;
+  xmlns:VRPTx="http://pdbml.pdb.org/schema/pdbx-validation-v4.xsd"&gt;
 </xsl2:text>
     <xsl2:apply-templates/>
     <xsl2:text disable-output-escaping="yes">
@@ -27,15 +27,15 @@
   &lt;xsl:param name="info_alt_file" required="yes"/&gt;
   &lt;xsl:param name="info_alt" select="document($info_alt_file)"/&gt;
 
-  &lt;xsl:param name="alt_datablock" select="$info_alt/PDBxv:datablock"/&gt;
+  &lt;xsl:param name="alt_datablock" select="$info_alt/VRPTx:datablock"/&gt;
 
   &lt;xsl:output method="xml" indent="yes"/&gt;
   &lt;xsl:strip-space elements="*"/&gt;
 
-  &lt;xsl:variable name="entry_id"&gt;&lt;xsl:value-of select="/PDBxv:datablock/PDBxv:entryCategory/PDBxv:entry/@id"/&gt;&lt;/xsl:variable&gt;
+  &lt;xsl:variable name="entry_id"&gt;&lt;xsl:value-of select="/VRPTx:datablock/VRPTx:entryCategory/VRPTx:entry/@id"/&gt;&lt;/xsl:variable&gt;
   &lt;xsl:variable name="datablock_name"&gt;&lt;xsl:value-of select="concat($entry_id,'-validation-full')"/&gt;&lt;/xsl:variable&gt;
 
-  &lt;xsl:variable name="pdb_id"&gt;&lt;xsl:value-of select="$alt_datablock/PDBxv:entryCategory/PDBxv:entry/@id"/&gt;&lt;/xsl:variable&gt;
+  &lt;xsl:variable name="pdb_id"&gt;&lt;xsl:value-of select="$alt_datablock/VRPTx:entryCategory/VRPTx:entry/@id"/&gt;&lt;/xsl:variable&gt;
 
   &lt;xsl:template match="/"&gt;
 
@@ -48,8 +48,8 @@ Unmatched entry ID in both documents (&lt;xsl:value-of select="$entry_id"/&gt; a
       &lt;/xsl:call-template&gt;
     &lt;/xsl:if&gt;
 
-    &lt;PDBxv:datablock datablockName="{$datablock_name}" xsi:schemaLocation="http://pdbml.pdb.org/schema/pdbx-validation-v4.xsd pdbx-validation-v4.xsd"&gt;
-      &lt;xsl:apply-templates select="PDBxv:datablock/*[not(</xsl2:text>
+    &lt;VRPTx:datablock datablockName="{$datablock_name}" xsi:schemaLocation="http://pdbml.pdb.org/schema/pdbx-validation-v4.xsd pdbx-validation-v4.xsd"&gt;
+      &lt;xsl:apply-templates select="VRPTx:datablock/*[not(</xsl2:text>
 
     <xsl2:for-each select="tokenize($merge_categories,' ')">
       <xsl2:text disable-output-escaping="yes">local-name()='</xsl2:text><xsl2:value-of select="."/><xsl2:text disable-output-escaping="yes">Category'</xsl2:text>
@@ -73,12 +73,12 @@ Unmatched entry ID in both documents (&lt;xsl:value-of select="$entry_id"/&gt; a
 </xsl2:text>
     </xsl2:for-each>
     <xsl2:text disable-output-escaping="yes">
-    &lt;/PDBxv:datablock&gt;
+    &lt;/VRPTx:datablock&gt;
   &lt;/xsl:template&gt;
 </xsl2:text>
     <xsl2:call-template name="categories"/>
       <xsl2:text disable-output-escaping="yes">
-  &lt;xsl:template match="PDBxv:*" mode="category-element"&gt;
+  &lt;xsl:template match="VRPTx:*" mode="category-element"&gt;
     &lt;xsl:element name="{name()}"&gt;
       &lt;xsl:apply-templates select="@*|node()" mode="data-item"/&gt;
     &lt;/xsl:element&gt;
@@ -88,7 +88,7 @@ Unmatched entry ID in both documents (&lt;xsl:value-of select="$entry_id"/&gt; a
     &lt;xsl:copy/&gt;
   &lt;/xsl:template&gt;
 
-  &lt;xsl:template match="PDBxv:*" mode="data-item"&gt;
+  &lt;xsl:template match="VRPTx:*" mode="data-item"&gt;
     &lt;xsl:element name="{name()}"&gt;
       &lt;xsl:apply-templates select="@*|node()" mode="data-item"/&gt;
     &lt;/xsl:element&gt;
@@ -125,13 +125,13 @@ Unmatched entry ID in both documents (&lt;xsl:value-of select="$entry_id"/&gt; a
     <xsl2:for-each select="tokenize($merge_categories,' ')">
       <xsl2:text disable-output-escaping="yes">
   &lt;xsl:template name="merge_</xsl2:text><xsl2:value-of select="."/><xsl2:text disable-output-escaping="yes">"&gt;
-    &lt;xsl:if test="PDBxv:datablock/PDBxv:</xsl2:text><xsl2:value-of select="."/><xsl2:text disable-output-escaping="yes">Category or $alt_datablock/PDBxv:</xsl2:text><xsl2:value-of select="."/><xsl2:text disable-output-escaping="yes">Category"&gt;
-      &lt;xsl:element name="PDBxv:</xsl2:text><xsl2:value-of select="."/><xsl2:text disable-output-escaping="yes">Category"&gt;
-        &lt;xsl:if test="PDBxv:datablock/PDBxv:</xsl2:text><xsl2:value-of select="."/><xsl2:text disable-output-escaping="yes">Category"&gt;
-          &lt;xsl:apply-templates select="PDBxv:datablock/PDBxv:</xsl2:text><xsl2:value-of select="."/><xsl2:text disable-output-escaping="yes">Category/*" mode="category-element"/&gt;
+    &lt;xsl:if test="VRPTx:datablock/VRPTx:</xsl2:text><xsl2:value-of select="."/><xsl2:text disable-output-escaping="yes">Category or $alt_datablock/VRPTx:</xsl2:text><xsl2:value-of select="."/><xsl2:text disable-output-escaping="yes">Category"&gt;
+      &lt;xsl:element name="VRPTx:</xsl2:text><xsl2:value-of select="."/><xsl2:text disable-output-escaping="yes">Category"&gt;
+        &lt;xsl:if test="VRPTx:datablock/VRPTx:</xsl2:text><xsl2:value-of select="."/><xsl2:text disable-output-escaping="yes">Category"&gt;
+          &lt;xsl:apply-templates select="VRPTx:datablock/VRPTx:</xsl2:text><xsl2:value-of select="."/><xsl2:text disable-output-escaping="yes">Category/*" mode="category-element"/&gt;
         &lt;/xsl:if&gt;
-        &lt;xsl:if test="$alt_datablock/PDBxv:</xsl2:text><xsl2:value-of select="."/><xsl2:text disable-output-escaping="yes">Category"&gt;
-          &lt;xsl:apply-templates select="$alt_datablock/PDBxv:</xsl2:text><xsl2:value-of select="."/><xsl2:text disable-output-escaping="yes">Category/*" mode="category-element"/&gt;
+        &lt;xsl:if test="$alt_datablock/VRPTx:</xsl2:text><xsl2:value-of select="."/><xsl2:text disable-output-escaping="yes">Category"&gt;
+          &lt;xsl:apply-templates select="$alt_datablock/VRPTx:</xsl2:text><xsl2:value-of select="."/><xsl2:text disable-output-escaping="yes">Category/*" mode="category-element"/&gt;
         &lt;/xsl:if&gt;
       &lt;/xsl:element&gt;
     &lt;/xsl:if&gt;
@@ -156,7 +156,7 @@ Unmatched entry ID in both documents (&lt;xsl:value-of select="$entry_id"/&gt; a
   <xsl2:template name="category">
     <xsl2:param name="name"/>
     <xsl2:text disable-output-escaping="yes">
-  &lt;xsl:template match="PDBxv:</xsl2:text><xsl2:value-of select="$name"/><xsl2:text disable-output-escaping="yes">"&gt;
+  &lt;xsl:template match="VRPTx:</xsl2:text><xsl2:value-of select="$name"/><xsl2:text disable-output-escaping="yes">"&gt;
     &lt;xsl:element name="{name()}"&gt;
       &lt;xsl:apply-templates mode="category-element"/&gt;
     &lt;/xsl:element&gt;

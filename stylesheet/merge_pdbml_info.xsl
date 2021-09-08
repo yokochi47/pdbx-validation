@@ -3,20 +3,20 @@
   version="1.0"
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xmlns:PDBxv="http://pdbml.pdb.org/schema/pdbx-validation-v4.xsd">
+  xmlns:VRPTx="http://pdbml.pdb.org/schema/pdbx-validation-v4.xsd">
 
   <xsl:param name="info_alt_file" required="yes"/>
   <xsl:param name="info_alt" select="document($info_alt_file)"/>
 
-  <xsl:param name="alt_datablock" select="$info_alt/PDBxv:datablock"/>
+  <xsl:param name="alt_datablock" select="$info_alt/VRPTx:datablock"/>
 
   <xsl:output method="xml" indent="yes"/>
   <xsl:strip-space elements="*"/>
 
-  <xsl:variable name="entry_id"><xsl:value-of select="/PDBxv:datablock/PDBxv:entryCategory/PDBxv:entry/@id"/></xsl:variable>
+  <xsl:variable name="entry_id"><xsl:value-of select="/VRPTx:datablock/VRPTx:entryCategory/VRPTx:entry/@id"/></xsl:variable>
   <xsl:variable name="datablock_name"><xsl:value-of select="concat($entry_id,'-validation-full')"/></xsl:variable>
 
-  <xsl:variable name="pdb_id"><xsl:value-of select="$alt_datablock/PDBxv:entryCategory/PDBxv:entry/@id"/></xsl:variable>
+  <xsl:variable name="pdb_id"><xsl:value-of select="$alt_datablock/VRPTx:entryCategory/VRPTx:entry/@id"/></xsl:variable>
 
   <xsl:template match="/">
 
@@ -29,8 +29,8 @@ Unmatched entry ID in both documents (<xsl:value-of select="$entry_id"/> and <xs
       </xsl:call-template>
     </xsl:if>
 
-    <PDBxv:datablock datablockName="{$datablock_name}" xsi:schemaLocation="http://pdbml.pdb.org/schema/pdbx-validation-v4.xsd pdbx-validation-v4.xsd">
-      <xsl:apply-templates select="PDBxv:datablock/*[not(local-name()='em_adminCategory' or local-name()='pdbx_validate_rmsd_angleCategory' or local-name()='pdbx_validate_rmsd_bondCategory' or local-name()='pdbx_validate_close_contactCategory' or local-name()='pdbx_validate_symm_contactCategory')]"/>
+    <VRPTx:datablock datablockName="{$datablock_name}" xsi:schemaLocation="http://pdbml.pdb.org/schema/pdbx-validation-v4.xsd pdbx-validation-v4.xsd">
+      <xsl:apply-templates select="VRPTx:datablock/*[not(local-name()='em_adminCategory' or local-name()='pdbx_validate_rmsd_angleCategory' or local-name()='pdbx_validate_rmsd_bondCategory' or local-name()='pdbx_validate_close_contactCategory' or local-name()='pdbx_validate_symm_contactCategory')]"/>
       <xsl:apply-templates select="$alt_datablock/*[not(local-name()='entryCategory' or local-name()='em_adminCategory' or local-name()='pdbx_validate_rmsd_angleCategory' or local-name()='pdbx_validate_rmsd_bondCategory' or local-name()='pdbx_validate_close_contactCategory' or local-name()='pdbx_validate_symm_contactCategory')]"/>
 
       <xsl:call-template name="merge_em_admin"/>
@@ -43,1684 +43,1702 @@ Unmatched entry ID in both documents (<xsl:value-of select="$entry_id"/> and <xs
 
       <xsl:call-template name="merge_pdbx_validate_symm_contact"/>
 
-    </PDBxv:datablock>
+    </VRPTx:datablock>
   </xsl:template>
 
-  <xsl:template match="PDBxv:diffrnCategory">
+  <xsl:template match="VRPTx:diffrnCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:diffrn_attenuatorCategory">
+  <xsl:template match="VRPTx:diffrn_attenuatorCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:diffrn_detectorCategory">
+  <xsl:template match="VRPTx:diffrn_detectorCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:diffrn_measurementCategory">
+  <xsl:template match="VRPTx:diffrn_measurementCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:diffrn_orient_matrixCategory">
+  <xsl:template match="VRPTx:diffrn_orient_matrixCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:diffrn_orient_reflnCategory">
+  <xsl:template match="VRPTx:diffrn_orient_reflnCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:diffrn_radiationCategory">
+  <xsl:template match="VRPTx:diffrn_radiationCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:diffrn_radiation_wavelengthCategory">
+  <xsl:template match="VRPTx:diffrn_radiation_wavelengthCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:diffrn_reflnCategory">
+  <xsl:template match="VRPTx:diffrn_reflnCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:diffrn_reflnsCategory">
+  <xsl:template match="VRPTx:diffrn_reflnsCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:diffrn_reflns_classCategory">
+  <xsl:template match="VRPTx:diffrn_reflns_classCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:diffrn_scale_groupCategory">
+  <xsl:template match="VRPTx:diffrn_scale_groupCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:diffrn_sourceCategory">
+  <xsl:template match="VRPTx:diffrn_sourceCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:diffrn_standard_reflnCategory">
+  <xsl:template match="VRPTx:diffrn_standard_reflnCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:diffrn_standardsCategory">
+  <xsl:template match="VRPTx:diffrn_standardsCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:em_2d_crystal_entityCategory">
+  <xsl:template match="VRPTx:em_2d_crystal_entityCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:em_3d_crystal_entityCategory">
+  <xsl:template match="VRPTx:em_3d_crystal_entityCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:em_3d_fittingCategory">
+  <xsl:template match="VRPTx:em_3d_fittingCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:em_3d_fitting_listCategory">
+  <xsl:template match="VRPTx:em_3d_fitting_listCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:em_3d_reconstructionCategory">
+  <xsl:template match="VRPTx:em_3d_reconstructionCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:em_adminCategory">
+  <xsl:template match="VRPTx:em_adminCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:em_bufferCategory">
+  <xsl:template match="VRPTx:em_bufferCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:em_buffer_componentCategory">
+  <xsl:template match="VRPTx:em_buffer_componentCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:em_crystal_formationCategory">
+  <xsl:template match="VRPTx:em_crystal_formationCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:em_ctf_correctionCategory">
+  <xsl:template match="VRPTx:em_ctf_correctionCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:em_diffractionCategory">
+  <xsl:template match="VRPTx:em_diffractionCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:em_diffraction_shellCategory">
+  <xsl:template match="VRPTx:em_diffraction_shellCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:em_diffraction_statsCategory">
+  <xsl:template match="VRPTx:em_diffraction_statsCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:em_embeddingCategory">
+  <xsl:template match="VRPTx:em_embeddingCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:em_entity_assemblyCategory">
+  <xsl:template match="VRPTx:em_entity_assemblyCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:em_entity_assembly_molwtCategory">
+  <xsl:template match="VRPTx:em_entity_assembly_molwtCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:em_entity_assembly_naturalsourceCategory">
+  <xsl:template match="VRPTx:em_entity_assembly_naturalsourceCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:em_entity_assembly_recombinantCategory">
+  <xsl:template match="VRPTx:em_entity_assembly_recombinantCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:em_entity_assembly_syntheticCategory">
+  <xsl:template match="VRPTx:em_entity_assembly_syntheticCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:em_experimentCategory">
+  <xsl:template match="VRPTx:em_experimentCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:em_helical_entityCategory">
+  <xsl:template match="VRPTx:em_helical_entityCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:em_image_processingCategory">
+  <xsl:template match="VRPTx:em_image_processingCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:em_image_recordingCategory">
+  <xsl:template match="VRPTx:em_image_recordingCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:em_image_scansCategory">
+  <xsl:template match="VRPTx:em_image_scansCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:em_imagingCategory">
+  <xsl:template match="VRPTx:em_imagingCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:em_imaging_opticsCategory">
+  <xsl:template match="VRPTx:em_imaging_opticsCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:em_particle_selectionCategory">
+  <xsl:template match="VRPTx:em_particle_selectionCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:em_single_particle_entityCategory">
+  <xsl:template match="VRPTx:em_single_particle_entityCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:em_softwareCategory">
+  <xsl:template match="VRPTx:em_softwareCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:em_specimenCategory">
+  <xsl:template match="VRPTx:em_specimenCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:em_stainingCategory">
+  <xsl:template match="VRPTx:em_stainingCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:em_virus_entityCategory">
+  <xsl:template match="VRPTx:em_virus_entityCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:em_virus_natural_hostCategory">
+  <xsl:template match="VRPTx:em_virus_natural_hostCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:em_virus_shellCategory">
+  <xsl:template match="VRPTx:em_virus_shellCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:em_virus_syntheticCategory">
+  <xsl:template match="VRPTx:em_virus_syntheticCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:em_vitrificationCategory">
+  <xsl:template match="VRPTx:em_vitrificationCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:em_volume_selectionCategory">
+  <xsl:template match="VRPTx:em_volume_selectionCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:entityCategory">
+  <xsl:template match="VRPTx:entityCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:entity_name_comCategory">
+  <xsl:template match="VRPTx:entity_name_comCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:entity_name_sysCategory">
+  <xsl:template match="VRPTx:entity_name_sysCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:entity_polyCategory">
+  <xsl:template match="VRPTx:entity_polyCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:entity_poly_seqCategory">
+  <xsl:template match="VRPTx:entity_poly_seqCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:entryCategory">
+  <xsl:template match="VRPTx:entryCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:entry_linkCategory">
+  <xsl:template match="VRPTx:entry_linkCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:exptlCategory">
+  <xsl:template match="VRPTx:exptlCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:ndb_struct_conf_naCategory">
+  <xsl:template match="VRPTx:ndb_struct_conf_naCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:ndb_struct_na_base_pairCategory">
+  <xsl:template match="VRPTx:ndb_struct_na_base_pairCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:ndb_struct_na_base_pair_stepCategory">
+  <xsl:template match="VRPTx:ndb_struct_na_base_pair_stepCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_audit_authorCategory">
+  <xsl:template match="VRPTx:pdbx_audit_authorCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_audit_revision_categoryCategory">
+  <xsl:template match="VRPTx:pdbx_audit_revision_categoryCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_audit_revision_detailsCategory">
+  <xsl:template match="VRPTx:pdbx_audit_revision_detailsCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_audit_revision_groupCategory">
+  <xsl:template match="VRPTx:pdbx_audit_revision_groupCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_audit_revision_historyCategory">
+  <xsl:template match="VRPTx:pdbx_audit_revision_historyCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_audit_revision_itemCategory">
+  <xsl:template match="VRPTx:pdbx_audit_revision_itemCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_bond_distance_limitsCategory">
+  <xsl:template match="VRPTx:pdbx_bond_distance_limitsCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_branch_schemeCategory">
+  <xsl:template match="VRPTx:pdbx_branch_schemeCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_coordinate_modelCategory">
+  <xsl:template match="VRPTx:pdbx_coordinate_modelCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_database_relatedCategory">
+  <xsl:template match="VRPTx:pdbx_database_relatedCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_database_statusCategory">
+  <xsl:template match="VRPTx:pdbx_database_statusCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_dcc_densityCategory">
+  <xsl:template match="VRPTx:pdbx_dcc_densityCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_dcc_density_corrCategory">
+  <xsl:template match="VRPTx:pdbx_dcc_density_corrCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_dcc_entity_geometryCategory">
+  <xsl:template match="VRPTx:pdbx_dcc_entity_geometryCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_dcc_geometryCategory">
+  <xsl:template match="VRPTx:pdbx_dcc_geometryCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_dcc_mapCategory">
+  <xsl:template match="VRPTx:pdbx_dcc_mapCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_dcc_map_overallCategory">
+  <xsl:template match="VRPTx:pdbx_dcc_map_overallCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_dcc_mapmanCategory">
+  <xsl:template match="VRPTx:pdbx_dcc_mapmanCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_dcc_mon_geometryCategory">
+  <xsl:template match="VRPTx:pdbx_dcc_mon_geometryCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_dcc_rscc_mapmanCategory">
+  <xsl:template match="VRPTx:pdbx_dcc_rscc_mapmanCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_dcc_rscc_mapman_overallCategory">
+  <xsl:template match="VRPTx:pdbx_dcc_rscc_mapman_overallCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_diffrn_reflns_shellCategory">
+  <xsl:template match="VRPTx:pdbx_diffrn_reflns_shellCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_distant_solvent_atomsCategory">
+  <xsl:template match="VRPTx:pdbx_distant_solvent_atomsCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_domainCategory">
+  <xsl:template match="VRPTx:pdbx_domainCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_domain_rangeCategory">
+  <xsl:template match="VRPTx:pdbx_domain_rangeCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_em_atom_inclusionCategory">
+  <xsl:template match="VRPTx:pdbx_em_atom_inclusionCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_em_atom_inclusion_markerCategory">
+  <xsl:template match="VRPTx:pdbx_em_atom_inclusion_markerCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_em_density_distributionCategory">
+  <xsl:template match="VRPTx:pdbx_em_density_distributionCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_em_density_distribution_markerCategory">
+  <xsl:template match="VRPTx:pdbx_em_density_distribution_markerCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_em_fsc_curveCategory">
+  <xsl:template match="VRPTx:pdbx_em_fsc_curveCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_em_fsc_curve_markerCategory">
+  <xsl:template match="VRPTx:pdbx_em_fsc_curve_markerCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_em_fsc_cutoff_curveCategory">
+  <xsl:template match="VRPTx:pdbx_em_fsc_cutoff_curveCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_em_fsc_cutoff_curve_markerCategory">
+  <xsl:template match="VRPTx:pdbx_em_fsc_cutoff_curve_markerCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_em_fsc_resolutionCategory">
+  <xsl:template match="VRPTx:pdbx_em_fsc_resolutionCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_em_rapsCategory">
+  <xsl:template match="VRPTx:pdbx_em_rapsCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_em_raps_markerCategory">
+  <xsl:template match="VRPTx:pdbx_em_raps_markerCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_em_raw_rapsCategory">
+  <xsl:template match="VRPTx:pdbx_em_raw_rapsCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_em_raw_raps_markerCategory">
+  <xsl:template match="VRPTx:pdbx_em_raw_raps_markerCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_em_validate_map_modelCategory">
+  <xsl:template match="VRPTx:pdbx_em_validate_map_modelCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_em_validate_map_model_entityCategory">
+  <xsl:template match="VRPTx:pdbx_em_validate_map_model_entityCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_em_validate_map_model_overallCategory">
+  <xsl:template match="VRPTx:pdbx_em_validate_map_model_overallCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_em_volume_estimateCategory">
+  <xsl:template match="VRPTx:pdbx_em_volume_estimateCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_em_volume_estimate_markerCategory">
+  <xsl:template match="VRPTx:pdbx_em_volume_estimate_markerCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_entity_assemblyCategory">
+  <xsl:template match="VRPTx:pdbx_entity_assemblyCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_entity_branchCategory">
+  <xsl:template match="VRPTx:pdbx_entity_branchCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_entity_branch_descriptorCategory">
+  <xsl:template match="VRPTx:pdbx_entity_branch_descriptorCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_entity_branch_linkCategory">
+  <xsl:template match="VRPTx:pdbx_entity_branch_linkCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_entity_branch_listCategory">
+  <xsl:template match="VRPTx:pdbx_entity_branch_listCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_entity_descriptorCategory">
+  <xsl:template match="VRPTx:pdbx_entity_descriptorCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_entity_nonpolyCategory">
+  <xsl:template match="VRPTx:pdbx_entity_nonpolyCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_entity_poly_comp_link_listCategory">
+  <xsl:template match="VRPTx:pdbx_entity_poly_comp_link_listCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_entry_detailsCategory">
+  <xsl:template match="VRPTx:pdbx_entry_detailsCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_helical_symmetryCategory">
+  <xsl:template match="VRPTx:pdbx_helical_symmetryCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_missing_nmr_star_itemCategory">
+  <xsl:template match="VRPTx:pdbx_missing_nmr_star_itemCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_nmr_assigned_chem_shift_listCategory">
+  <xsl:template match="VRPTx:pdbx_nmr_assigned_chem_shift_listCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_nmr_chem_shift_annotationCategory">
+  <xsl:template match="VRPTx:pdbx_nmr_chem_shift_annotationCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_nmr_chem_shift_completenessCategory">
+  <xsl:template match="VRPTx:pdbx_nmr_chem_shift_completenessCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_nmr_chem_shift_re_offsetCategory">
+  <xsl:template match="VRPTx:pdbx_nmr_chem_shift_re_offsetCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_nmr_constraintsCategory">
+  <xsl:template match="VRPTx:pdbx_nmr_constraintsCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_nmr_detailsCategory">
+  <xsl:template match="VRPTx:pdbx_nmr_detailsCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_nmr_dihedral_angle_violationCategory">
+  <xsl:template match="VRPTx:pdbx_nmr_dihedral_angle_violationCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_nmr_dihedral_angle_violation_ensembleCategory">
+  <xsl:template match="VRPTx:pdbx_nmr_dihedral_angle_violation_ensembleCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_nmr_dihedral_angle_violation_modelCategory">
+  <xsl:template match="VRPTx:pdbx_nmr_dihedral_angle_violation_modelCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_nmr_dihedral_angle_violation_pluralCategory">
+  <xsl:template match="VRPTx:pdbx_nmr_dihedral_angle_violation_pluralCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_nmr_dihedral_angle_violation_summaryCategory">
+  <xsl:template match="VRPTx:pdbx_nmr_dihedral_angle_violation_summaryCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_nmr_distance_violationCategory">
+  <xsl:template match="VRPTx:pdbx_nmr_distance_violationCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_nmr_distance_violation_ensembleCategory">
+  <xsl:template match="VRPTx:pdbx_nmr_distance_violation_ensembleCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_nmr_distance_violation_modelCategory">
+  <xsl:template match="VRPTx:pdbx_nmr_distance_violation_modelCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_nmr_distance_violation_pluralCategory">
+  <xsl:template match="VRPTx:pdbx_nmr_distance_violation_pluralCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_nmr_distance_violation_summaryCategory">
+  <xsl:template match="VRPTx:pdbx_nmr_distance_violation_summaryCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_nmr_ensembleCategory">
+  <xsl:template match="VRPTx:pdbx_nmr_ensembleCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_nmr_ensemble_rmsCategory">
+  <xsl:template match="VRPTx:pdbx_nmr_ensemble_rmsCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_nmr_exptlCategory">
+  <xsl:template match="VRPTx:pdbx_nmr_exptlCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_nmr_exptl_sampleCategory">
+  <xsl:template match="VRPTx:pdbx_nmr_exptl_sampleCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_nmr_exptl_sample_conditionsCategory">
+  <xsl:template match="VRPTx:pdbx_nmr_exptl_sample_conditionsCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_nmr_force_constantsCategory">
+  <xsl:template match="VRPTx:pdbx_nmr_force_constantsCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_nmr_refineCategory">
+  <xsl:template match="VRPTx:pdbx_nmr_refineCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_nmr_representativeCategory">
+  <xsl:template match="VRPTx:pdbx_nmr_representativeCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_nmr_restraint_listCategory">
+  <xsl:template match="VRPTx:pdbx_nmr_restraint_listCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_nmr_restraint_summaryCategory">
+  <xsl:template match="VRPTx:pdbx_nmr_restraint_summaryCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_nmr_restraint_violationCategory">
+  <xsl:template match="VRPTx:pdbx_nmr_restraint_violationCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_nmr_softwareCategory">
+  <xsl:template match="VRPTx:pdbx_nmr_softwareCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_nmr_spectrometerCategory">
+  <xsl:template match="VRPTx:pdbx_nmr_spectrometerCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_nmr_unmapped_chem_shiftCategory">
+  <xsl:template match="VRPTx:pdbx_nmr_unmapped_chem_shiftCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_nmr_unparsed_chem_shiftCategory">
+  <xsl:template match="VRPTx:pdbx_nmr_unparsed_chem_shiftCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_nonpoly_schemeCategory">
+  <xsl:template match="VRPTx:pdbx_nonpoly_schemeCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_percentile_conditionsCategory">
+  <xsl:template match="VRPTx:pdbx_percentile_conditionsCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_percentile_entity_viewCategory">
+  <xsl:template match="VRPTx:pdbx_percentile_entity_viewCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_percentile_listCategory">
+  <xsl:template match="VRPTx:pdbx_percentile_listCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_percentile_viewCategory">
+  <xsl:template match="VRPTx:pdbx_percentile_viewCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_phasing_MAD_setCategory">
+  <xsl:template match="VRPTx:pdbx_phasing_MAD_setCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_phasing_MAD_set_shellCategory">
+  <xsl:template match="VRPTx:pdbx_phasing_MAD_set_shellCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_phasing_MAD_set_siteCategory">
+  <xsl:template match="VRPTx:pdbx_phasing_MAD_set_siteCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_phasing_MAD_shellCategory">
+  <xsl:template match="VRPTx:pdbx_phasing_MAD_shellCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_phasing_MRCategory">
+  <xsl:template match="VRPTx:pdbx_phasing_MRCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_phasing_dmCategory">
+  <xsl:template match="VRPTx:pdbx_phasing_dmCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_phasing_dm_shellCategory">
+  <xsl:template match="VRPTx:pdbx_phasing_dm_shellCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_point_symmetryCategory">
+  <xsl:template match="VRPTx:pdbx_point_symmetryCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_poly_seq_schemeCategory">
+  <xsl:template match="VRPTx:pdbx_poly_seq_schemeCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_re_refinementCategory">
+  <xsl:template match="VRPTx:pdbx_re_refinementCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_refineCategory">
+  <xsl:template match="VRPTx:pdbx_refineCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_refine_componentCategory">
+  <xsl:template match="VRPTx:pdbx_refine_componentCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_refine_tlsCategory">
+  <xsl:template match="VRPTx:pdbx_refine_tlsCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_refine_tls_groupCategory">
+  <xsl:template match="VRPTx:pdbx_refine_tls_groupCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_refln_signal_binningCategory">
+  <xsl:template match="VRPTx:pdbx_refln_signal_binningCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_reflns_twinCategory">
+  <xsl:template match="VRPTx:pdbx_reflns_twinCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_sequence_rangeCategory">
+  <xsl:template match="VRPTx:pdbx_sequence_rangeCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_soln_scatterCategory">
+  <xsl:template match="VRPTx:pdbx_sifts_unp_segmentsCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_soln_scatter_modelCategory">
+  <xsl:template match="VRPTx:pdbx_sifts_xref_dbCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_struct_assemblyCategory">
+  <xsl:template match="VRPTx:pdbx_sifts_xref_db_segmentsCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_struct_assembly_genCategory">
+  <xsl:template match="VRPTx:pdbx_soln_scatterCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_struct_assembly_propCategory">
+  <xsl:template match="VRPTx:pdbx_soln_scatter_modelCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_struct_asym_genCategory">
+  <xsl:template match="VRPTx:pdbx_struct_assemblyCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_struct_chem_comp_diagnosticsCategory">
+  <xsl:template match="VRPTx:pdbx_struct_assembly_genCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_struct_conn_angleCategory">
+  <xsl:template match="VRPTx:pdbx_struct_assembly_propCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_struct_entity_instCategory">
+  <xsl:template match="VRPTx:pdbx_struct_asym_genCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_struct_group_component_rangeCategory">
+  <xsl:template match="VRPTx:pdbx_struct_chem_comp_diagnosticsCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_struct_group_componentsCategory">
+  <xsl:template match="VRPTx:pdbx_struct_conn_angleCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_struct_group_listCategory">
+  <xsl:template match="VRPTx:pdbx_struct_entity_instCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_struct_infoCategory">
+  <xsl:template match="VRPTx:pdbx_struct_group_component_rangeCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_struct_legacy_oper_listCategory">
+  <xsl:template match="VRPTx:pdbx_struct_group_componentsCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_struct_mod_residueCategory">
+  <xsl:template match="VRPTx:pdbx_struct_group_listCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_struct_msym_genCategory">
+  <xsl:template match="VRPTx:pdbx_struct_infoCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_struct_nmr_ens_clustCategory">
+  <xsl:template match="VRPTx:pdbx_struct_legacy_oper_listCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_struct_nmr_ens_clust_genCategory">
+  <xsl:template match="VRPTx:pdbx_struct_mod_residueCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_struct_nmr_ens_domCategory">
+  <xsl:template match="VRPTx:pdbx_struct_msym_genCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_struct_nmr_ens_dom_limCategory">
+  <xsl:template match="VRPTx:pdbx_struct_nmr_ens_clustCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_struct_oper_listCategory">
+  <xsl:template match="VRPTx:pdbx_struct_nmr_ens_clust_genCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_struct_ref_seq_deletionCategory">
+  <xsl:template match="VRPTx:pdbx_struct_nmr_ens_domCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_struct_ref_seq_insertionCategory">
+  <xsl:template match="VRPTx:pdbx_struct_nmr_ens_dom_limCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_struct_sheet_hbondCategory">
+  <xsl:template match="VRPTx:pdbx_struct_oper_listCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_struct_special_symmetryCategory">
+  <xsl:template match="VRPTx:pdbx_struct_ref_seq_deletionCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_unobs_or_zero_occ_atomsCategory">
+  <xsl:template match="VRPTx:pdbx_struct_ref_seq_insertionCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_unobs_or_zero_occ_residuesCategory">
+  <xsl:template match="VRPTx:pdbx_struct_sheet_hbondCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_validate_chiralCategory">
+  <xsl:template match="VRPTx:pdbx_struct_special_symmetryCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_validate_close_contactCategory">
+  <xsl:template match="VRPTx:pdbx_unobs_or_zero_occ_atomsCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_validate_main_chain_planeCategory">
+  <xsl:template match="VRPTx:pdbx_unobs_or_zero_occ_residuesCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_validate_nmr_chem_shiftCategory">
+  <xsl:template match="VRPTx:pdbx_validate_chiralCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_validate_peptide_omegaCategory">
+  <xsl:template match="VRPTx:pdbx_validate_close_contactCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_validate_planesCategory">
+  <xsl:template match="VRPTx:pdbx_validate_main_chain_planeCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_validate_planes_atomCategory">
+  <xsl:template match="VRPTx:pdbx_validate_nmr_chem_shiftCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_validate_polymer_linkageCategory">
+  <xsl:template match="VRPTx:pdbx_validate_peptide_omegaCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_validate_rmsd_angleCategory">
+  <xsl:template match="VRPTx:pdbx_validate_planesCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_validate_rmsd_bondCategory">
+  <xsl:template match="VRPTx:pdbx_validate_planes_atomCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_validate_rmsd_ringCategory">
+  <xsl:template match="VRPTx:pdbx_validate_polymer_linkageCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_validate_rmsd_rings_atomCategory">
+  <xsl:template match="VRPTx:pdbx_validate_rmsd_angleCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_validate_rmsd_torsionCategory">
+  <xsl:template match="VRPTx:pdbx_validate_rmsd_bondCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_validate_rmsd_torsions_atomCategory">
+  <xsl:template match="VRPTx:pdbx_validate_rmsd_ringCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_validate_symm_contactCategory">
+  <xsl:template match="VRPTx:pdbx_validate_rmsd_rings_atomCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_validate_torsionCategory">
+  <xsl:template match="VRPTx:pdbx_validate_rmsd_torsionCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:pdbx_validation_softwareCategory">
+  <xsl:template match="VRPTx:pdbx_validate_rmsd_torsions_atomCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:phasingCategory">
+  <xsl:template match="VRPTx:pdbx_validate_symm_contactCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:phasing_MADCategory">
+  <xsl:template match="VRPTx:pdbx_validate_torsionCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:phasing_MAD_clustCategory">
+  <xsl:template match="VRPTx:pdbx_validation_softwareCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:phasing_MAD_exptCategory">
+  <xsl:template match="VRPTx:phasingCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:phasing_MAD_ratioCategory">
+  <xsl:template match="VRPTx:phasing_MADCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:phasing_MAD_setCategory">
+  <xsl:template match="VRPTx:phasing_MAD_clustCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:phasing_MIRCategory">
+  <xsl:template match="VRPTx:phasing_MAD_exptCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:phasing_MIR_derCategory">
+  <xsl:template match="VRPTx:phasing_MAD_ratioCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:phasing_MIR_der_reflnCategory">
+  <xsl:template match="VRPTx:phasing_MAD_setCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:phasing_MIR_der_shellCategory">
+  <xsl:template match="VRPTx:phasing_MIRCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:phasing_MIR_der_siteCategory">
+  <xsl:template match="VRPTx:phasing_MIR_derCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:phasing_MIR_shellCategory">
+  <xsl:template match="VRPTx:phasing_MIR_der_reflnCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:phasing_averagingCategory">
+  <xsl:template match="VRPTx:phasing_MIR_der_shellCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:phasing_isomorphousCategory">
+  <xsl:template match="VRPTx:phasing_MIR_der_siteCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:phasing_setCategory">
+  <xsl:template match="VRPTx:phasing_MIR_shellCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:phasing_set_reflnCategory">
+  <xsl:template match="VRPTx:phasing_averagingCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:refineCategory">
+  <xsl:template match="VRPTx:phasing_isomorphousCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:refine_B_isoCategory">
+  <xsl:template match="VRPTx:phasing_setCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:refine_analyzeCategory">
+  <xsl:template match="VRPTx:phasing_set_reflnCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:refine_funct_minimizedCategory">
+  <xsl:template match="VRPTx:refineCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:refine_histCategory">
+  <xsl:template match="VRPTx:refine_B_isoCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:refine_ls_classCategory">
+  <xsl:template match="VRPTx:refine_analyzeCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:refine_ls_restrCategory">
+  <xsl:template match="VRPTx:refine_funct_minimizedCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:refine_ls_restr_ncsCategory">
+  <xsl:template match="VRPTx:refine_histCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:refine_ls_restr_typeCategory">
+  <xsl:template match="VRPTx:refine_ls_classCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:refine_ls_shellCategory">
+  <xsl:template match="VRPTx:refine_ls_restrCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:refine_occupancyCategory">
+  <xsl:template match="VRPTx:refine_ls_restr_ncsCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:reflnCategory">
+  <xsl:template match="VRPTx:refine_ls_restr_typeCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:refln_sys_absCategory">
+  <xsl:template match="VRPTx:refine_ls_shellCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:reflnsCategory">
+  <xsl:template match="VRPTx:refine_occupancyCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:reflns_classCategory">
+  <xsl:template match="VRPTx:reflnCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:reflns_scaleCategory">
+  <xsl:template match="VRPTx:refln_sys_absCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:reflns_shellCategory">
+  <xsl:template match="VRPTx:reflnsCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:space_groupCategory">
+  <xsl:template match="VRPTx:reflns_classCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:space_group_symopCategory">
+  <xsl:template match="VRPTx:reflns_scaleCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:structCategory">
+  <xsl:template match="VRPTx:reflns_shellCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:struct_asymCategory">
+  <xsl:template match="VRPTx:space_groupCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:struct_biolCategory">
+  <xsl:template match="VRPTx:space_group_symopCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:struct_biol_viewCategory">
+  <xsl:template match="VRPTx:structCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:struct_confCategory">
+  <xsl:template match="VRPTx:struct_asymCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:struct_conf_typeCategory">
+  <xsl:template match="VRPTx:struct_biolCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:struct_connCategory">
+  <xsl:template match="VRPTx:struct_biol_viewCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:struct_conn_typeCategory">
+  <xsl:template match="VRPTx:struct_confCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:struct_mon_detailsCategory">
+  <xsl:template match="VRPTx:struct_conf_typeCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:struct_mon_nuclCategory">
+  <xsl:template match="VRPTx:struct_connCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:struct_mon_protCategory">
+  <xsl:template match="VRPTx:struct_conn_typeCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:struct_mon_prot_cisCategory">
+  <xsl:template match="VRPTx:struct_mon_detailsCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:struct_ncs_domCategory">
+  <xsl:template match="VRPTx:struct_mon_nuclCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:struct_ncs_dom_limCategory">
+  <xsl:template match="VRPTx:struct_mon_protCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:struct_ncs_ensCategory">
+  <xsl:template match="VRPTx:struct_mon_prot_cisCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:struct_ncs_ens_genCategory">
+  <xsl:template match="VRPTx:struct_ncs_domCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:struct_ncs_operCategory">
+  <xsl:template match="VRPTx:struct_ncs_dom_limCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:struct_refCategory">
+  <xsl:template match="VRPTx:struct_ncs_ensCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:struct_ref_seqCategory">
+  <xsl:template match="VRPTx:struct_ncs_ens_genCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:struct_ref_seq_difCategory">
+  <xsl:template match="VRPTx:struct_ncs_operCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:struct_sheetCategory">
+  <xsl:template match="VRPTx:struct_refCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:struct_sheet_hbondCategory">
+  <xsl:template match="VRPTx:struct_ref_seqCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:struct_sheet_orderCategory">
+  <xsl:template match="VRPTx:struct_ref_seq_difCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:struct_sheet_rangeCategory">
+  <xsl:template match="VRPTx:struct_sheetCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:struct_sheet_topologyCategory">
+  <xsl:template match="VRPTx:struct_sheet_hbondCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:struct_siteCategory">
+  <xsl:template match="VRPTx:struct_sheet_orderCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:struct_site_genCategory">
+  <xsl:template match="VRPTx:struct_sheet_rangeCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:struct_site_viewCategory">
+  <xsl:template match="VRPTx:struct_sheet_topologyCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:symmetryCategory">
+  <xsl:template match="VRPTx:struct_siteCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:symmetry_equivCategory">
+  <xsl:template match="VRPTx:struct_site_genCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PDBxv:*" mode="category-element">
+  <xsl:template match="VRPTx:struct_site_viewCategory">
+    <xsl:element name="{name()}">
+      <xsl:apply-templates mode="category-element"/>
+    </xsl:element>
+  </xsl:template>
+
+  <xsl:template match="VRPTx:symmetryCategory">
+    <xsl:element name="{name()}">
+      <xsl:apply-templates mode="category-element"/>
+    </xsl:element>
+  </xsl:template>
+
+  <xsl:template match="VRPTx:symmetry_equivCategory">
+    <xsl:element name="{name()}">
+      <xsl:apply-templates mode="category-element"/>
+    </xsl:element>
+  </xsl:template>
+
+  <xsl:template match="VRPTx:*" mode="category-element">
     <xsl:element name="{name()}">
       <xsl:apply-templates select="@*|node()" mode="data-item"/>
     </xsl:element>
@@ -1730,7 +1748,7 @@ Unmatched entry ID in both documents (<xsl:value-of select="$entry_id"/> and <xs
     <xsl:copy/>
   </xsl:template>
 
-  <xsl:template match="PDBxv:*" mode="data-item">
+  <xsl:template match="VRPTx:*" mode="data-item">
     <xsl:element name="{name()}">
       <xsl:apply-templates select="@*|node()" mode="data-item"/>
     </xsl:element>
@@ -1764,65 +1782,65 @@ Unmatched entry ID in both documents (<xsl:value-of select="$entry_id"/> and <xs
   </xsl:template>
 
   <xsl:template name="merge_em_admin">
-    <xsl:if test="PDBxv:datablock/PDBxv:em_adminCategory or $alt_datablock/PDBxv:em_adminCategory">
-      <xsl:element name="PDBxv:em_adminCategory">
-        <xsl:if test="PDBxv:datablock/PDBxv:em_adminCategory">
-          <xsl:apply-templates select="PDBxv:datablock/PDBxv:em_adminCategory/*" mode="category-element"/>
+    <xsl:if test="VRPTx:datablock/VRPTx:em_adminCategory or $alt_datablock/VRPTx:em_adminCategory">
+      <xsl:element name="VRPTx:em_adminCategory">
+        <xsl:if test="VRPTx:datablock/VRPTx:em_adminCategory">
+          <xsl:apply-templates select="VRPTx:datablock/VRPTx:em_adminCategory/*" mode="category-element"/>
         </xsl:if>
-        <xsl:if test="$alt_datablock/PDBxv:em_adminCategory">
-          <xsl:apply-templates select="$alt_datablock/PDBxv:em_adminCategory/*" mode="category-element"/>
+        <xsl:if test="$alt_datablock/VRPTx:em_adminCategory">
+          <xsl:apply-templates select="$alt_datablock/VRPTx:em_adminCategory/*" mode="category-element"/>
         </xsl:if>
       </xsl:element>
     </xsl:if>
   </xsl:template>
 
   <xsl:template name="merge_pdbx_validate_rmsd_angle">
-    <xsl:if test="PDBxv:datablock/PDBxv:pdbx_validate_rmsd_angleCategory or $alt_datablock/PDBxv:pdbx_validate_rmsd_angleCategory">
-      <xsl:element name="PDBxv:pdbx_validate_rmsd_angleCategory">
-        <xsl:if test="PDBxv:datablock/PDBxv:pdbx_validate_rmsd_angleCategory">
-          <xsl:apply-templates select="PDBxv:datablock/PDBxv:pdbx_validate_rmsd_angleCategory/*" mode="category-element"/>
+    <xsl:if test="VRPTx:datablock/VRPTx:pdbx_validate_rmsd_angleCategory or $alt_datablock/VRPTx:pdbx_validate_rmsd_angleCategory">
+      <xsl:element name="VRPTx:pdbx_validate_rmsd_angleCategory">
+        <xsl:if test="VRPTx:datablock/VRPTx:pdbx_validate_rmsd_angleCategory">
+          <xsl:apply-templates select="VRPTx:datablock/VRPTx:pdbx_validate_rmsd_angleCategory/*" mode="category-element"/>
         </xsl:if>
-        <xsl:if test="$alt_datablock/PDBxv:pdbx_validate_rmsd_angleCategory">
-          <xsl:apply-templates select="$alt_datablock/PDBxv:pdbx_validate_rmsd_angleCategory/*" mode="category-element"/>
+        <xsl:if test="$alt_datablock/VRPTx:pdbx_validate_rmsd_angleCategory">
+          <xsl:apply-templates select="$alt_datablock/VRPTx:pdbx_validate_rmsd_angleCategory/*" mode="category-element"/>
         </xsl:if>
       </xsl:element>
     </xsl:if>
   </xsl:template>
 
   <xsl:template name="merge_pdbx_validate_rmsd_bond">
-    <xsl:if test="PDBxv:datablock/PDBxv:pdbx_validate_rmsd_bondCategory or $alt_datablock/PDBxv:pdbx_validate_rmsd_bondCategory">
-      <xsl:element name="PDBxv:pdbx_validate_rmsd_bondCategory">
-        <xsl:if test="PDBxv:datablock/PDBxv:pdbx_validate_rmsd_bondCategory">
-          <xsl:apply-templates select="PDBxv:datablock/PDBxv:pdbx_validate_rmsd_bondCategory/*" mode="category-element"/>
+    <xsl:if test="VRPTx:datablock/VRPTx:pdbx_validate_rmsd_bondCategory or $alt_datablock/VRPTx:pdbx_validate_rmsd_bondCategory">
+      <xsl:element name="VRPTx:pdbx_validate_rmsd_bondCategory">
+        <xsl:if test="VRPTx:datablock/VRPTx:pdbx_validate_rmsd_bondCategory">
+          <xsl:apply-templates select="VRPTx:datablock/VRPTx:pdbx_validate_rmsd_bondCategory/*" mode="category-element"/>
         </xsl:if>
-        <xsl:if test="$alt_datablock/PDBxv:pdbx_validate_rmsd_bondCategory">
-          <xsl:apply-templates select="$alt_datablock/PDBxv:pdbx_validate_rmsd_bondCategory/*" mode="category-element"/>
+        <xsl:if test="$alt_datablock/VRPTx:pdbx_validate_rmsd_bondCategory">
+          <xsl:apply-templates select="$alt_datablock/VRPTx:pdbx_validate_rmsd_bondCategory/*" mode="category-element"/>
         </xsl:if>
       </xsl:element>
     </xsl:if>
   </xsl:template>
 
   <xsl:template name="merge_pdbx_validate_close_contact">
-    <xsl:if test="PDBxv:datablock/PDBxv:pdbx_validate_close_contactCategory or $alt_datablock/PDBxv:pdbx_validate_close_contactCategory">
-      <xsl:element name="PDBxv:pdbx_validate_close_contactCategory">
-        <xsl:if test="PDBxv:datablock/PDBxv:pdbx_validate_close_contactCategory">
-          <xsl:apply-templates select="PDBxv:datablock/PDBxv:pdbx_validate_close_contactCategory/*" mode="category-element"/>
+    <xsl:if test="VRPTx:datablock/VRPTx:pdbx_validate_close_contactCategory or $alt_datablock/VRPTx:pdbx_validate_close_contactCategory">
+      <xsl:element name="VRPTx:pdbx_validate_close_contactCategory">
+        <xsl:if test="VRPTx:datablock/VRPTx:pdbx_validate_close_contactCategory">
+          <xsl:apply-templates select="VRPTx:datablock/VRPTx:pdbx_validate_close_contactCategory/*" mode="category-element"/>
         </xsl:if>
-        <xsl:if test="$alt_datablock/PDBxv:pdbx_validate_close_contactCategory">
-          <xsl:apply-templates select="$alt_datablock/PDBxv:pdbx_validate_close_contactCategory/*" mode="category-element"/>
+        <xsl:if test="$alt_datablock/VRPTx:pdbx_validate_close_contactCategory">
+          <xsl:apply-templates select="$alt_datablock/VRPTx:pdbx_validate_close_contactCategory/*" mode="category-element"/>
         </xsl:if>
       </xsl:element>
     </xsl:if>
   </xsl:template>
 
   <xsl:template name="merge_pdbx_validate_symm_contact">
-    <xsl:if test="PDBxv:datablock/PDBxv:pdbx_validate_symm_contactCategory or $alt_datablock/PDBxv:pdbx_validate_symm_contactCategory">
-      <xsl:element name="PDBxv:pdbx_validate_symm_contactCategory">
-        <xsl:if test="PDBxv:datablock/PDBxv:pdbx_validate_symm_contactCategory">
-          <xsl:apply-templates select="PDBxv:datablock/PDBxv:pdbx_validate_symm_contactCategory/*" mode="category-element"/>
+    <xsl:if test="VRPTx:datablock/VRPTx:pdbx_validate_symm_contactCategory or $alt_datablock/VRPTx:pdbx_validate_symm_contactCategory">
+      <xsl:element name="VRPTx:pdbx_validate_symm_contactCategory">
+        <xsl:if test="VRPTx:datablock/VRPTx:pdbx_validate_symm_contactCategory">
+          <xsl:apply-templates select="VRPTx:datablock/VRPTx:pdbx_validate_symm_contactCategory/*" mode="category-element"/>
         </xsl:if>
-        <xsl:if test="$alt_datablock/PDBxv:pdbx_validate_symm_contactCategory">
-          <xsl:apply-templates select="$alt_datablock/PDBxv:pdbx_validate_symm_contactCategory/*" mode="category-element"/>
+        <xsl:if test="$alt_datablock/VRPTx:pdbx_validate_symm_contactCategory">
+          <xsl:apply-templates select="$alt_datablock/VRPTx:pdbx_validate_symm_contactCategory/*" mode="category-element"/>
         </xsl:if>
       </xsl:element>
     </xsl:if>

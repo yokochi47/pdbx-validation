@@ -22,7 +22,7 @@ rm -f $DIC_FILE
 cp -f $DIC_LATEST_FILE $DIC_FILE
 
 DIC_PREFIX=pdbx-validation
-NAME_SPACE=PDBxv
+NAME_SPACE=VRPTx
 
 rm -f $DIC_FILE-parser.log $DIC_FILE-diag.log
 
@@ -102,15 +102,15 @@ tagmap_xml_file=tagmap.xml
 
 java -jar $SAXON -it:main -xsl:$TAGMAP2XML_XSL -o:$tagmap_xml_file tagmap_csv_file=$tagmap_csv_file
 
-# Generate PDB/OWL-validation
+# Generate VRPT/OWL
 
-PDBXV2OWL_XSL=../stylesheet/pdbxv2owl.xsl
+VRPTX2OWL_XSL=../stylesheet/vrptx2owl.xsl
 
 pdbx_owl_file=../resource/pdbx-v50.owl
 
 tagmap_xml_file=../schema/$tagmap_xml_file
 
-java -jar $SAXON -s:$DIC_PREFIX-v$DIC_MAJOR_VER.xsd -xsl:$PDBXV2OWL_XSL -o:$DIC_PREFIX-v$DIC_VER.owl pdbx_owl_file=$pdbx_owl_file tagmap_xml_file=$tagmap_xml_file
+java -jar $SAXON -s:$DIC_PREFIX-v$DIC_MAJOR_VER.xsd -xsl:$VRPTX2OWL_XSL -o:$DIC_PREFIX-v$DIC_VER.owl pdbx_owl_file=$pdbx_owl_file tagmap_xml_file=$tagmap_xml_file
 
 rm -f $DIC_PREFIX-v$DIC_MAJOR_VER.owl
 
@@ -118,7 +118,7 @@ ln -s $DIC_PREFIX-v$DIC_VER.owl $DIC_PREFIX-v$DIC_MAJOR_VER.owl
 
 echo Generated: $DIC_PREFIX-v$DIC_MAJOR_VER.owl
 
-# Generate HTML representation of PDBML-validation Schema
+# Generate HTML representation of VRPT Schema
 
 XS3P_XSLT_CODE=../stylesheet/xs3p.xsl
 

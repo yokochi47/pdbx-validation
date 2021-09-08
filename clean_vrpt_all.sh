@@ -22,7 +22,7 @@ rm -f *_list *_total url_mirror
 
 rm -rf extlibs
 
-rm -f $EXT_PDBML_XSL $MERGE_PDBML_INFO_XSL $PDBMLV2RDF_XSL
+rm -f $EXT_PDBML_XSL $MERGE_PDBML_INFO_XSL $VRPTML2RDF_XSL
 
 WORK_DIR=.
 

@@ -10,16 +10,16 @@ if [ ! -e $PDBX_VALIDATION_XSD ] ; then
  ( cd schema; ./update_schema.sh )
 fi
 
-err=pdbxv2pdbmlv2rdf.err
+err=vrpt2pdbml2rdf.err
 
-if [ ! -e $PDBMLV2RDF_XSL ] ; then
+if [ ! -e $VRPTML2RDF_XSL ] ; then
 
- java -jar $SAXON -s:$PDBX_VALIDATION_XSD -xsl:$PDBXV2PDBMLV2RDF_XSL -o:$PDBMLV2RDF_XSL 2> $err || ( cat $err ; exit 1 )
+ java -jar $SAXON -s:$PDBX_VALIDATION_XSD -xsl:$VRPTX2VRPTML2RDF_XSL -o:$VRPTML2RDF_XSL 2> $err || ( cat $err ; exit 1 )
 
  rm -f $err
 
  echo
- echo Generated: $PDBMLV2RDF_XSL
+ echo Generated: $VRPTML2RDF_XSL
 
 fi
 

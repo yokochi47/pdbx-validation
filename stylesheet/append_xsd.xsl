@@ -5,7 +5,7 @@
   xmlns:xsd="http://www.w3.org/2001/XMLSchema"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xmlns:PDBx="http://pdbml.pdb.org/schema/pdbx-v50.xsd"
-  xmlns:PDBxv="http://pdbml.pdb.org/schema/pdbx-validation-v4.xsd"
+  xmlns:VRPTx="http://pdbml.pdb.org/schema/pdbx-validation-v4.xsd"
   exclude-result-prefixes="PDBx xsi">
 
   <xsl:param name="pdbx_xsd_file" required="yes"/>
@@ -19,7 +19,7 @@
 
   <xsl:template match="/xsd:schema">
     <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-       xmlns:PDBxv="http://pdbml.pdb.org/schema/pdbx-validation-v4.xsd"
+       xmlns:VRPTx="http://pdbml.pdb.org/schema/pdbx-validation-v4.xsd"
        targetNamespace="http://pdbml.pdb.org/schema/pdbx-validation-v4.xsd"
        elementFormDefault="qualified" attributeFormDefault="unqualified">
       <xsd:annotation>

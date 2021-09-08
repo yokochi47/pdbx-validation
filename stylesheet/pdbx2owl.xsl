@@ -186,22 +186,37 @@
 
       <owl:ObjectProperty rdf:ID="link_to_go">
 	<rdfs:subPropertyOf rdf:resource="#html_link_to"/>
-	<rdfs:comment xml:lang="en">external link to gene ontology.</rdfs:comment>
+	<rdfs:comment xml:lang="en">external link to GO (gene ontology).</rdfs:comment>
+      </owl:ObjectProperty>
+
+      <owl:ObjectProperty rdf:ID="link_to_interpro">
+        <rdfs:subPropertyOf rdf:resource="#html_link_to"/>
+        <rdfs:comment xml:lang="en">external link to InterPro.</rdfs:comment>
+      </owl:ObjectProperty>
+
+      <owl:ObjectProperty rdf:ID="link_to_pfam">
+        <rdfs:subPropertyOf rdf:resource="#html_link_to"/>
+        <rdfs:comment xml:lang="en">external link to Pfam.</rdfs:comment>
+      </owl:ObjectProperty>
+
+      <owl:ObjectProperty rdf:ID="link_to_cath_domain">
+        <rdfs:subPropertyOf rdf:resource="#html_link_to"/>
+        <rdfs:comment xml:lang="en">external link to CATH domain.</rdfs:comment>
+      </owl:ObjectProperty>
+
+      <owl:ObjectProperty rdf:ID="link_to_scop">
+        <rdfs:subPropertyOf rdf:resource="#html_link_to"/>
+        <rdfs:comment xml:lang="en">external link to SCOP, SCOP2, and SCOP2B.</rdfs:comment>
+      </owl:ObjectProperty>
+
+      <owl:ObjectProperty rdf:ID="link_to_ensemble">
+        <rdfs:subPropertyOf rdf:resource="#html_link_to"/>
+        <rdfs:comment xml:lang="en">external link to Ensemble (Eukaryotic Genome).</rdfs:comment>
       </owl:ObjectProperty>
 
       <owl:ObjectProperty rdf:ID="link_to_chem_comp">
 	<rdfs:subPropertyOf rdf:resource="#rdf_link_to"/>
 	<rdfs:comment xml:lang="en">external link to mmCIF chemical component.</rdfs:comment>
-      </owl:ObjectProperty>
-
-      <owl:ObjectProperty rdf:ID="link_to_parent_chem_comp">
-	<rdfs:subPropertyOf rdf:resource="#link_to_chem_comp"/>
-	<rdfs:comment xml:lang="en">external link to mmCIF parent chemical component.</rdfs:comment>
-      </owl:ObjectProperty>
-
-      <owl:ObjectProperty rdf:ID="region_match_to">
-	<rdfs:subPropertyOf rdf:resource="#rdf_link_to"/>
-	<rdfs:comment xml:lang="en">match to UniProt region according to SIFTS (PDBe).</rdfs:comment>
       </owl:ObjectProperty>
 
       <xsl:apply-templates/>
