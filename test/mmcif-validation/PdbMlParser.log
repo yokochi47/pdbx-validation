@@ -1,0 +1,5 @@
+Fatal Error in PdbMlParserHandler [fatalError() method]:
+Fatal Error at file:
+/home/yokochi/Applications/pdbx-validation/test/XML-validation/7kld-validation-full.xml, line 1, char 1.
+Message: invalid document structure.
+

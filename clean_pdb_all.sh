@@ -28,7 +28,9 @@ WORK_DIR=.
 
 rm -rf $WORK_DIR/$RDF
 
-rm -rf $WORK_DIR/chk_sum_*
+for dir in chk_sum_*; do
+ cd $dir; find . -type f | xargs rm -f; cd ..; rmdir $dir
+done
 
 WORK_DIR=test
 

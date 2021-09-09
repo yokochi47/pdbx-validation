@@ -27,6 +27,7 @@
   <xsl:variable name="pdb_link">https://rdf.wwpdb.org/pdb/</xsl:variable>
   <xsl:variable name="bmrb_link">https://bmrbpub.pdbj.org/rdf/bmr</xsl:variable>
   <xsl:variable name="chem_comp">https://rdf.wwpdb.org/cc/</xsl:variable>
+  <xsl:variable name="prd">https://rdf.wwpdb.org/prd/</xsl:variable>
   <xsl:variable name="pdbj">https://pdbj.org/pdb/</xsl:variable>
   <xsl:variable name="rcsb">https://www.rcsb.org/pdb/explore.do?structureId=</xsl:variable>
   <xsl:variable name="pdbe">https://www.ebi.ac.uk/pdbe/entry/pdb/</xsl:variable>
@@ -106,6 +107,18 @@
   <!-- level 4 (linked data) -->
   <xsl:template match="PDBx:chem_comp/@id" mode="linked">
     <PDBo:link_to_chem_comp rdf:resource="{$chem_comp}{.}"/>
+  </xsl:template>
+
+  <xsl:template match="PDBx:pdbx_molecule/@prd_id" mode="linked">
+    <PDBo:link_to_prd rdf:resource="{$prd}{.}"/>
+  </xsl:template>
+
+  <xsl:template match="PDBx:pdbx_molecule_features/@prd_id" mode="linked">
+    <PDBo:link_to_prd rdf:resource="{$prd}{.}"/>
+  </xsl:template>
+
+  <xsl:template match="PDBx:pdbx_linked_entity/PDBx:prd_id[text()!='']" mode="linked">
+    <PDBo:link_to_prd rdf:resource="{$prd}{text()}"/>
   </xsl:template>
 
   <xsl:template match="PDBx:citation/PDBx:pdbx_database_id_DOI[text()!='']" mode="linked">

@@ -215,8 +215,18 @@
       </owl:ObjectProperty>
 
       <owl:ObjectProperty rdf:ID="link_to_chem_comp">
-	<rdfs:subPropertyOf rdf:resource="#rdf_link_to"/>
-	<rdfs:comment xml:lang="en">external link to mmCIF chemical component.</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="#rdf_link_to"/>
+        <rdfs:comment xml:lang="en">external link to chemical component in CCD.</rdfs:comment>
+      </owl:ObjectProperty>
+
+      <owl:ObjectProperty rdf:ID="link_to_parent_chem_comp">
+        <rdfs:subPropertyOf rdf:resource="#link_to_chem_comp"/>
+        <rdfs:comment xml:lang="en">external link to parental chemical component in CCD.</rdfs:comment>
+      </owl:ObjectProperty>
+
+      <owl:ObjectProperty rdf:ID="link_to_prd">
+        <rdfs:subPropertyOf rdf:resource="#rdf_link_to"/>
+        <rdfs:comment xml:lang="en">external link to peptide reference in PRD (a part of BIRD, Biologically Interesting molecules Reference Dictionary).</rdfs:comment>
       </owl:ObjectProperty>
 
       <xsl:apply-templates/>

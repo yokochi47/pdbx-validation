@@ -47,6 +47,7 @@
   &lt;xsl:variable name="pdb_link"&gt;https://rdf.wwpdb.org/pdb/&lt;/xsl:variable&gt;
   &lt;xsl:variable name="bmrb_link"&gt;https://bmrbpub.pdbj.org/rdf/bmr&lt;/xsl:variable&gt;
   &lt;xsl:variable name="chem_comp"&gt;https://rdf.wwpdb.org/cc/&lt;/xsl:variable&gt;
+  &lt;xsl:variable name="prd"&gt;https://rdf.wwpdb.org/prd/&lt;/xsl:variable&gt;
   &lt;xsl:variable name="pdbj"&gt;https://pdbj.org/pdb/&lt;/xsl:variable&gt;
   &lt;xsl:variable name="rcsb"&gt;https://www.rcsb.org/pdb/explore.do?structureId=&lt;/xsl:variable&gt;
   &lt;xsl:variable name="pdbe"&gt;https://www.ebi.ac.uk/pdbe/entry/pdb/&lt;/xsl:variable&gt;
@@ -130,6 +131,18 @@
   &lt;!-- level 4 (linked data) --&gt;
   &lt;xsl:template match="VRPTx:chem_comp/@id" mode="linked"&gt;
     &lt;VRPTo:link_to_chem_comp rdf:resource="{$chem_comp}{.}"/&gt;
+  &lt;/xsl:template&gt;
+
+  &lt;xsl:template match="PDBx:pdbx_molecule/@prd_id" mode="linked"&gt;
+    &lt;VRPTo:link_to_prd rdf:resource="{$prd}{.}"/&gt;
+  &lt;/xsl:template&gt;
+
+  &lt;xsl:template match="PDBx:pdbx_molecule_features/@prd_id" mode="linked"&gt;
+    &lt;VRPTo:link_to_prd rdf:resource="{$prd}{.}"/&gt;
+  &lt;/xsl:template&gt;
+
+  &lt;xsl:template match="PDBx:pdbx_linked_entity/PDBx:prd_id[text()!='']" mode="linked"&gt;
+    &lt;VRPTo:link_to_prd rdf:resource="{$prd}{text()}"/&gt;
   &lt;/xsl:template&gt;
 
   &lt;xsl:template match="VRPTx:citation/VRPTx:pdbx_database_id_DOI[text()!='']" mode="linked"&gt;

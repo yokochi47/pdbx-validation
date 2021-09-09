@@ -14,8 +14,8 @@ statistics of pdbx-validation-v4.owl:
  has 567 classes.
   2 same classes of PDB/OWL.
   455 equivalent classes of PDB/OWL.
- has 4345 properties (object: 600, datatype: 3745).
-  27 same properties of PDB/OWL.
+ has 4346 properties (object: 601, datatype: 3745).
+  28 same properties of PDB/OWL.
   4045 equivalent properties of PDB/OWL.
   134 equivalent properties of BMRB/OWL.
 

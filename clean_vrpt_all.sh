@@ -28,7 +28,9 @@ WORK_DIR=.
 
 rm -rf $WORK_DIR/$PDBML_EXT $WORK_DIR/$VALID_INFO_ALT $WORK_DIR/$XML_VALID $WORK_DIR/$RDF_VALID $WORK_DIR/$MMCIF_VALID $WORK_DIR/$XML_VALID_ALT $WORK_DIR/$RDF_VALID_ALT $WORK_DIR/$MMCIF_VALID_ALT
 
-rm -rf $WORK_DIR/chk_sum_*
+for dir in chk_sum_*; do
+ cd $dir; find . -type f | xargs rm -f; cd ..; rmdir $dir
+done
 
 WORK_DIR=test
 

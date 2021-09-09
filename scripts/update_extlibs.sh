@@ -30,11 +30,13 @@ mvn dependency:copy -Dartifact=net.sf.saxon:$SAXON:$SAXON_VER
 mv \$\{project.basedir\}/target/dependency/$SAXON-$SAXON_VER.jar $EXTLIBS/saxon-he.jar
 rm -rf \$\{project.basedir\}
 
+wget https://repo1.maven.org/maven2/net/sf/xsd2pgschema/$XSD2PGSCHEMA/$XSD2PGSCHEMA_VER/$XSD2PGSCHEMA-$XSD2PGSCHEMA_VER-jar-with-dependencies.jar -O $EXTLIBS/xsd2pgschema.jar
+<<REMARK
 mvn dependency:copy -Dartifact=net.sf.xsd2pgschema:$XSD2PGSCHEMA:$XSD2PGSCHEMA_VER
 mv \$\{project.basedir\}/target/dependency/$XSD2PGSCHEMA-$XSD2PGSCHEMA_VER.jar $EXTLIBS/xsd2pgschema.jar
 rm -rf \$\{project.basedir\}
 
-<<REMARK
+
 cd $EXTLIBS
 
 git clone git://git.code.sf.net/p/xsd2pgschema/code xsd2pgschema-code

@@ -164,13 +164,14 @@ File path | Document
 
 ## Release notes
 
-- **Sep 8, 2021**: Release v4.1.0
+- **Sep 9, 2021**: Release v4.1.0
 	- Change prefixes as follows.
 		- xmlns:VRPTx="http://pdbml.pdb.org/schema/pdbx-validation-v4.xsd"
 		- xmlns:VRPTo="https://rdf.wwpdb.org/schema/pdbx-validation-v4.owl#"
 	- Add supports for '_pdbx_sifts_xref_db', '_pdbx_sifts_xref_db_segments', and '_pdbx_sifts_unp_segments' categories of PDBx/mmCIF Dictionary (v5.349).
 		- Update PDB/OWL, VRPT/OWL, XSLT codes to support external databases: GO, InterPro, Pfam, CATH domain, SCOP/SCOP2/SCOP2B, Ensemble.
 	- Change software requirement of mmCIF Dictionary Suite.
+	- Add RDF link to Peptide Reference Dictionary (PRD) in BIRD (Biologically Interesting molecule Reference Dictionary).
 
 - **Sep 2, 2021**: Release v4.0.8
 	- Update wwPDB Validation Information Dictionary to 4.349.
