@@ -28,10 +28,7 @@
   <xsl:variable name="doi">https://doi.org/</xsl:variable>
   <xsl:variable name="pubmed">https://www.ncbi.nlm.nih.gov/pubmed/</xsl:variable>
   <xsl:variable name="taxonomy">http://purl.uniprot.org/taxonomy/</xsl:variable>
-  <xsl:variable name="genbank">https://www.ncbi.nlm.nih.gov/nuccore/</xsl:variable>
-  <xsl:variable name="uniprot">http://purl.uniprot.org/uniprot/</xsl:variable>
   <xsl:variable name="enzyme">http://purl.uniprot.org/enzyme/</xsl:variable>
-  <xsl:variable name="go">http://amigo.geneontology.org/amigo/term/GO:/</xsl:variable>
 
   <xsl:template match="/">
     <rdf:RDF>
