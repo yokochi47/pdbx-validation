@@ -59,8 +59,12 @@
   &lt;xsl:variable name="doi"&gt;https://doi.org/&lt;/xsl:variable&gt;
   &lt;xsl:variable name="pubmed"&gt;https://www.ncbi.nlm.nih.gov/pubmed/&lt;/xsl:variable&gt;
   &lt;xsl:variable name="taxonomy"&gt;http://purl.uniprot.org/taxonomy/&lt;/xsl:variable&gt;
-  &lt;xsl:variable name="genbank"&gt;https://www.ncbi.nlm.nih.gov/nuccore/&lt;/xsl:variable&gt;
   &lt;xsl:variable name="uniprot"&gt;http://purl.uniprot.org/uniprot/&lt;/xsl:variable&gt;
+  &lt;xsl:variable name="genbank"&gt;https://www.ncbi.nlm.nih.gov/nuccore/&lt;/xsl:variable&gt;
+  &lt;xsl:variable name="embl"&gt;https://www.ncbi.nlm.nih.gov/nuccore/&lt;/xsl:variable&gt;
+  &lt;xsl:variable name="pir"&gt;https://www.ncbi.nlm.nih.gov/nuccore/&lt;/xsl:variable&gt;
+  &lt;xsl:variable name="refseq"&gt;https://www.ncbi.nlm.nih.gov/protein/&lt;/xsl:variable&gt;
+  &lt;xsl:variable name="norine"&gt;https://bioinfo.lifl.fr/norine/result.jsp?ID=&lt;/xsl:variable&gt;
   &lt;xsl:variable name="enzyme"&gt;http://purl.uniprot.org/enzyme/&lt;/xsl:variable&gt;
   &lt;xsl:variable name="go"&gt;http://amigo.geneontology.org/amigo/term/GO:/&lt;/xsl:variable&gt;
   &lt;xsl:variable name="interpro"&gt;https://www.ebi.ac.uk/interpro/entry/&lt;/xsl:variable&gt;
@@ -211,6 +215,46 @@
     &lt;rdfs:seeAlso rdf:resource="{$idorg}uniprot/{text()}" rdfs:label="uniprot:{text()}"/&gt;
   &lt;/xsl:template&gt;
 
+  &lt;xsl:template match="PDBx:struct_ref/PDBx:db_code[(../PDBx:db_name='GB' or ../PDBx:db_name='GB ' or ../PDBx:db_name='gb' or ../PDBx:db_name='TPG') and text()!='']" mode="linked"&gt;
+    &lt;PDBo:link_to_genbank rdf:resource="{$genbank}{text()}" rdfs:label="ncbiprotein:{text()}"/&gt;
+    &lt;rdfs:seeAlso rdf:resource="{$idorg}ncbiprotein/{text()}" rdfs:label="ncbiprotein:{text()}"/&gt;
+  &lt;/xsl:template&gt;
+
+  &lt;xsl:template match="PDBx:struct_ref/PDBx:db_code[(../PDBx:db_name='EMBL' or ../PDBx:db_name='GENP') and text()!='']" mode="linked"&gt;
+    &lt;PDBo:link_to_embl rdf:resource="{$embl}{text()}" rdfs:label="ncbiprotein:{text()}"/&gt;
+    &lt;rdfs:seeAlso rdf:resource="{$idorg}ncbiprotein/{text()}" rdfs:label="ncbiprotein:{text()}"/&gt;
+  &lt;/xsl:template&gt;
+
+  &lt;xsl:template match="PDBx:struct_ref/PDBx:db_code[../PDBx:db_name='TREMBL' and string-length(text())=6 and contains(substring(text(),0,1),'OPQ') and contains(substring(text(),1,1),'0123456789')]" mode="linked"&gt;
+    &lt;PDBo:link_to_uniprot rdf:resource="{$uniprot}{text()}" rdfs:label="uniprot:{text()}"/&gt;
+    &lt;rdfs:seeAlso rdf:resource="{$idorg}uniprot/{text()}" rdfs:label="uniprot:{text()}"/&gt;
+  &lt;/xsl:template&gt;
+
+  &lt;xsl:template match="PDBx:struct_ref/PDBx:db_code[../PDBx:db_name='TREMBL' and text()!='' and not(string-length(text())=6 and contains(substring(text(),0,1),'OPQ') and contains(substring(text(),1,1),'0123456789'))]" mode="linked"&gt;
+    &lt;PDBo:link_to_embl rdf:resource="{$embl}{text()}" rdfs:label="ncbiprotein:{text()}"/&gt;
+    &lt;rdfs:seeAlso rdf:resource="{$idorg}ncbiprotein/{text()}" rdfs:label="ncbiprotein:{text()}"/&gt;
+  &lt;/xsl:template&gt;
+
+  &lt;xsl:template match="PDBx:struct_ref/PDBx:db_code[../PDBx:db_name='PIR' and text()!='']" mode="linked"&gt;
+    &lt;PDBo:link_to_pir rdf:resource="{$pir}{text()}" rdfs:label="ncbiprotein:{text()}"/&gt;
+    &lt;rdfs:seeAlso rdf:resource="{$idorg}ncbiprotein/{text()}" rdfs:label="ncbiprotein:{text()}"/&gt;
+  &lt;/xsl:template&gt;
+
+  &lt;xsl:template match="PDBx:struct_ref/PDBx:db_code[../PDBx:db_name='REF' and text()!='']" mode="linked"&gt;
+    &lt;PDBo:link_to_refseq rdf:resource="{$refseq}{text()}" rdfs:label="refseq:{text()}"/&gt;
+    &lt;rdfs:seeAlso rdf:resource="{$idorg}refseq/{text()}" rdfs:label="refseq:{text()}"/&gt;
+  &lt;/xsl:template&gt;
+
+  &lt;xsl:template match="PDBx:struct_ref/PDBx:db_code[../PDBx:db_name='PRF' and text()!='']" mode="linked"&gt;
+    &lt;PDBo:link_to_sequence_db rdf:resource="{$pir}{text()}" rdfs:label="ncbiprotein:{text()}"/&gt;
+    &lt;rdfs:seeAlso rdf:resource="{$idorg}ncbiprotein/{text()}" rdfs:label="ncbiprotein:{text()}"/&gt;
+  &lt;/xsl:template&gt;
+
+  &lt;xsl:template match="PDBx:struct_ref/PDBx:db_code[../PDBx:db_name='NOR' and text()!='']" mode="linked"&gt;
+    &lt;PDBo:link_to_norine rdf:resource="{$norine}{text()}" rdfs:label="norine:{text()}"/&gt;
+    &lt;rdfs:seeAlso rdf:resource="{$idorg}norine/{text()}" rdfs:label="norine:{text()}"/&gt;
+  &lt;/xsl:template&gt;
+
   &lt;xsl:template match="PDBx:pdbx_sifts_xref_db/PDBx:unp_acc[text()!='']" mode="linked"&gt;
     &lt;PDBo:link_to_uniprot rdf:resource="{$uniprot}{text()}" rdfs:label="uniprot:{text()}"/&gt;
     &lt;rdfs:seeAlso rdf:resource="{$idorg}uniprot/{text()}" rdfs:label="uniprot:{text()}"/&gt;
@@ -249,11 +293,6 @@
   &lt;xsl:template match="PDBx:pdbx_sifts_xref_db_segments/PDBx:xref_db_acc[../PDBx:xref_db_name='Ensemble' and text()!='']" mode="linked"&gt;
     &lt;PDBo:link_to_ensemble rdf:resource="{$ensemble}{text()}" rdfs:label="ensemble:{text()}"/&gt;
     &lt;rdfs:seeAlso rdf:resource="{$idorg}ensemble/{text()}" rdfs:label="ensemble:{text()}"/&gt;
-  &lt;/xsl:template&gt;
-
-  &lt;xsl:template match="PDBx:struct_ref/PDBx:db_code[../PDBx:db_name='GB' and text()!='']" mode="linked"&gt;
-    &lt;PDBo:link_to_genbank rdf:resource="{$genbank}{text()}" rdfs:label="genbank:{text()}"/&gt;
-    &lt;rdfs:seeAlso rdf:resource="{$idorg}insdc/{text()}" rdfs:label="nuccore:{text()}"/&gt;
   &lt;/xsl:template&gt;
 
   &lt;xsl:template match="PDBx:pdbx_entity_branch_descriptor/PDBx:descriptor[../PDBx:type='WURCS' and text()!='']" mode="linked"&gt;

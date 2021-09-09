@@ -26,6 +26,7 @@
   <xsl:variable name="pdb_link">https://rdf.wwpdb.org/pdb/</xsl:variable>
   <xsl:variable name="bmrb_link">https://bmrbpub.pdbj.org/rdf/bmr</xsl:variable>
   <xsl:variable name="chem_comp">https://rdf.wwpdb.org/cc/</xsl:variable>
+  <xsl:variable name="prd">https://rdf.wwpdb.org/prd/</xsl:variable>
   <xsl:variable name="pdbj">https://pdbj.org/pdb/</xsl:variable>
   <xsl:variable name="rcsb">https://www.rcsb.org/pdb/explore.do?structureId=</xsl:variable>
   <xsl:variable name="pdbe">https://www.ebi.ac.uk/pdbe/entry/pdb/</xsl:variable>
@@ -37,8 +38,12 @@
   <xsl:variable name="doi">https://doi.org/</xsl:variable>
   <xsl:variable name="pubmed">https://www.ncbi.nlm.nih.gov/pubmed/</xsl:variable>
   <xsl:variable name="taxonomy">http://purl.uniprot.org/taxonomy/</xsl:variable>
-  <xsl:variable name="genbank">https://www.ncbi.nlm.nih.gov/nuccore/</xsl:variable>
   <xsl:variable name="uniprot">http://purl.uniprot.org/uniprot/</xsl:variable>
+  <xsl:variable name="genbank">https://www.ncbi.nlm.nih.gov/nuccore/</xsl:variable>
+  <xsl:variable name="embl">https://www.ncbi.nlm.nih.gov/nuccore/</xsl:variable>
+  <xsl:variable name="pir">https://www.ncbi.nlm.nih.gov/nuccore/</xsl:variable>
+  <xsl:variable name="refseq">https://www.ncbi.nlm.nih.gov/protein/</xsl:variable>
+  <xsl:variable name="norine">https://bioinfo.lifl.fr/norine/result.jsp?ID=</xsl:variable>
   <xsl:variable name="enzyme">http://purl.uniprot.org/enzyme/</xsl:variable>
   <xsl:variable name="go">http://amigo.geneontology.org/amigo/term/GO:/</xsl:variable>
   <xsl:variable name="interpro">https://www.ebi.ac.uk/interpro/entry/</xsl:variable>
@@ -111,6 +116,18 @@
     <VRPTo:link_to_chem_comp rdf:resource="{$chem_comp}{.}"/>
   </xsl:template>
 
+  <xsl:template match="VRPTx:pdbx_molecule/@prd_id" mode="linked">
+    <VRPTo:link_to_prd rdf:resource="{$prd}{.}"/>
+  </xsl:template>
+
+  <xsl:template match="VRPTx:pdbx_molecule_features/@prd_id" mode="linked">
+    <VRPTo:link_to_prd rdf:resource="{$prd}{.}"/>
+  </xsl:template>
+
+  <xsl:template match="VRPTx:pdbx_linked_entity/VRPTx:prd_id[text()!='']" mode="linked">
+    <VRPTo:link_to_prd rdf:resource="{$prd}{text()}"/>
+  </xsl:template>
+
   <xsl:template match="VRPTx:citation/VRPTx:pdbx_database_id_DOI[text()!='']" mode="linked">
     <VRPTo:link_to_doi rdf:resource="{$doi}{text()}" rdfs:label="doi:{text()}"/>
   </xsl:template>
@@ -180,6 +197,46 @@
     <rdfs:seeAlso rdf:resource="{$idorg}uniprot/{text()}" rdfs:label="uniprot:{text()}"/>
   </xsl:template>
 
+  <xsl:template match="VRPTx:struct_ref/VRPTx:db_code[(../VRPTx:db_name='GB' or ../VRPTx:db_name='GB ' or ../VRPTx:db_name='gb' or ../VRPTx:db_name='TPG') and text()!='']" mode="linked">
+    <VRPTo:link_to_genbank rdf:resource="{$genbank}{text()}" rdfs:label="ncbiprotein:{text()}"/>
+    <rdfs:seeAlso rdf:resource="{$idorg}ncbiprotein/{text()}" rdfs:label="ncbiprotein:{text()}"/>
+  </xsl:template>
+
+  <xsl:template match="VRPTx:struct_ref/VRPTx:db_code[(../VRPTx:db_name='EMBL' or ../VRPTx:db_name='GENP') and text()!='']" mode="linked">
+    <VRPTo:link_to_embl rdf:resource="{$embl}{text()}" rdfs:label="ncbiprotein:{text()}"/>
+    <rdfs:seeAlso rdf:resource="{$idorg}ncbiprotein/{text()}" rdfs:label="ncbiprotein:{text()}"/>
+  </xsl:template>
+
+  <xsl:template match="VRPTx:struct_ref/VRPTx:pdbx_db_accession[../VRPTx:db_name='TREMBL' and string-length(text())=6 and contains(substring(text(),0,1),'OPQ') and contains(substring(text(),1,1),'0123456789')]" mode="linked">
+    <VRPTo:link_to_uniprot rdf:resource="{$uniprot}{text()}" rdfs:label="uniprot:{text()}"/>
+    <rdfs:seeAlso rdf:resource="{$idorg}uniprot/{text()}" rdfs:label="uniprot:{text()}"/>
+  </xsl:template>
+
+  <xsl:template match="VRPTx:struct_ref/VRPTx:pdbx_db_accession[../VRPTx:db_name='TREMBL' and text()!='' and not(string-length(text())=6 and contains(substring(text(),0,1),'OPQ') and contains(substring(text(),1,1),'0123456789'))]" mode="linked">
+    <VRPTo:link_to_embl rdf:resource="{$embl}{text()}" rdfs:label="ncbiprotein:{text()}"/>
+    <rdfs:seeAlso rdf:resource="{$idorg}ncbiprotein/{text()}" rdfs:label="ncbiprotein:{text()}"/>
+  </xsl:template>
+
+  <xsl:template match="VRPTx:struct_ref/VRPTx:db_code[../VRPTx:db_name='PIR' and text()!='']" mode="linked">
+    <VRPTo:link_to_pir rdf:resource="{$pir}{text()}" rdfs:label="ncbiprotein:{text()}"/>
+    <rdfs:seeAlso rdf:resource="{$idorg}ncbiprotein/{text()}" rdfs:label="ncbiprotein:{text()}"/>
+  </xsl:template>
+
+  <xsl:template match="VRPTx:struct_ref/VRPTx:db_code[../VRPTx:db_name='REF' and text()!='']" mode="linked">
+    <VRPTo:link_to_refseq rdf:resource="{$refseq}{text()}" rdfs:label="refseq:{text()}"/>
+    <rdfs:seeAlso rdf:resource="{$idorg}refseq/{text()}" rdfs:label="refseq:{text()}"/>
+  </xsl:template>
+
+  <xsl:template match="VRPTx:struct_ref/VRPTx:db_code[../VRPTx:db_name='PRF' and text()!='']" mode="linked">
+    <VRPTo:link_to_sequence_db rdf:resource="{$pir}{text()}" rdfs:label="ncbiprotein:{text()}"/>
+    <rdfs:seeAlso rdf:resource="{$idorg}ncbiprotein/{text()}" rdfs:label="ncbiprotein:{text()}"/>
+  </xsl:template>
+
+  <xsl:template match="VRPTx:struct_ref/VRPTx:db_code[../VRPTx:db_name='NOR' and text()!='']" mode="linked">
+    <VRPTo:link_to_norine rdf:resource="{$norine}{text()}" rdfs:label="norine:{text()}"/>
+    <rdfs:seeAlso rdf:resource="{$idorg}norine/{text()}" rdfs:label="norine:{text()}"/>
+  </xsl:template>
+
   <xsl:template match="VRPTx:pdbx_sifts_xref_db/VRPTx:unp_acc[text()!='']" mode="linked">
     <VRPTo:link_to_uniprot rdf:resource="{$uniprot}{text()}" rdfs:label="uniprot:{text()}"/>
     <rdfs:seeAlso rdf:resource="{$idorg}uniprot/{text()}" rdfs:label="uniprot:{text()}"/>
@@ -218,11 +275,6 @@
   <xsl:template match="VRPTx:pdbx_sifts_xref_db_segments/VRPTx:xref_db_acc[../VRPTx:xref_db_name='Ensemble' and text()!='']" mode="linked">
     <VRPTo:link_to_ensemble rdf:resource="{$ensemble}{text()}" rdfs:label="ensemble:{text()}"/>
     <rdfs:seeAlso rdf:resource="{$idorg}ensemble/{text()}" rdfs:label="ensemble:{text()}"/>
-  </xsl:template>
-
-  <xsl:template match="VRPTx:struct_ref/VRPTx:db_code[../VRPTx:db_name='GB' and text()!='']" mode="linked">
-    <VRPTo:link_to_genbank rdf:resource="{$genbank}{text()}" rdfs:label="genbank:{text()}"/>
-    <rdfs:seeAlso rdf:resource="{$idorg}insdc/{text()}" rdfs:label="nuccore:{text()}"/>
   </xsl:template>
 
   <xsl:template match="VRPTx:pdbx_entity_branch_descriptor/VRPTx:descriptor[../VRPTx:type='WURCS' and text()!='']" mode="linked">

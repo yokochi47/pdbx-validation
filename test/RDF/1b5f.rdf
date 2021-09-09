@@ -37564,6 +37564,8 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
             <PDBo:struct_ref.db_name>EMBL</PDBo:struct_ref.db_name>
             <PDBo:struct_ref.entity_id>1</PDBo:struct_ref.entity_id>
             <PDBo:struct_ref.pdbx_db_accession>CAB4134</PDBo:struct_ref.pdbx_db_accession>
+            <PDBo:link_to_embl rdf:resource="https://www.ncbi.nlm.nih.gov/nuccore/AJ132884" rdfs:label="ncbiprotein:AJ132884"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/ncbiprotein/AJ132884" rdfs:label="ncbiprotein:AJ132884"/>
           </PDBo:struct_ref>
         </PDBo:has_struct_ref>
         <PDBo:has_struct_ref>
@@ -37579,6 +37581,8 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
             <PDBo:struct_ref.db_name>EMBL</PDBo:struct_ref.db_name>
             <PDBo:struct_ref.entity_id>2</PDBo:struct_ref.entity_id>
             <PDBo:struct_ref.pdbx_db_accession>CAB4134</PDBo:struct_ref.pdbx_db_accession>
+            <PDBo:link_to_embl rdf:resource="https://www.ncbi.nlm.nih.gov/nuccore/AJ132884" rdfs:label="ncbiprotein:AJ132884"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/ncbiprotein/AJ132884" rdfs:label="ncbiprotein:AJ132884"/>
           </PDBo:struct_ref>
         </PDBo:has_struct_ref>
       </PDBo:struct_refCategory>

@@ -196,6 +196,27 @@
         <owl:sameAs rdf:resource="PDBo:link_to_embl"/>
       </owl:ObjectProperty>
 
+      <owl:ObjectProperty rdf:ID="link_to_norine">
+        <rdfs:subPropertyOf rdf:resource="#link_to_sequence_db"/>
+        <rdfs:subPropertyOf rdf:resource="#html_link_to"/>
+        <rdfs:comment xml:lang="en">external link to NORINE.</rdfs:comment>
+        <owl:sameAs rdf:resource="PDBo:link_to_norine"/>
+      </owl:ObjectProperty>
+
+      <owl:ObjectProperty rdf:ID="link_to_pir">
+        <rdfs:subPropertyOf rdf:resource="#link_to_sequence_db"/>
+        <rdfs:subPropertyOf rdf:resource="#html_link_to"/>
+        <rdfs:comment xml:lang="en">external link to PIR.</rdfs:comment>
+        <owl:sameAs rdf:resource="PDBo:link_to_pir"/>
+      </owl:ObjectProperty>
+
+      <owl:ObjectProperty rdf:ID="link_to_refseq">
+        <rdfs:subPropertyOf rdf:resource="#link_to_sequence_db"/>
+        <rdfs:subPropertyOf rdf:resource="#html_link_to"/>
+        <rdfs:comment xml:lang="en">external link to RefSeq.</rdfs:comment>
+        <owl:sameAs rdf:resource="PDBo:link_to_refseq"/>
+      </owl:ObjectProperty>
+
       <owl:ObjectProperty rdf:ID="link_to_glycoinfo">
         <rdfs:subPropertyOf rdf:resource="#link_to_sequence_db"/>
         <rdfs:subPropertyOf rdf:resource="#rdf_link_to"/>
