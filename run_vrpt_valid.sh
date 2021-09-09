@@ -26,42 +26,42 @@ if [ -d $VALID_INFO_ALT ] ; then
  ./scripts/validate_all_xml.sh -d $VALID_INFO_ALT $DELETE_OPT
 fi
 REMARK
-# PDBML-validation
+# VRPT PDBML
 
 if [ -d $XML_VALID ] ; then
 # ./scripts/validate_all_xml.sh -d $XML_VALID $DELETE_OPT
  ./scripts/validate_all_xml_gz.sh -d $XML_VALID $DELETE_OPT
 fi
 
-# PDBML-validation-alt
+# VRPT PDBML-alt
 
 if [ -d $XML_VALID_ALT ] ; then
 # ./scripts/validate_all_xml.sh -d $XML_VALID_ALT $DELETE_OPT
  ./scripts/validate_all_xml_gz.sh -d $XML_VALID_ALT $DELETE_OPT
 fi
 
-# PDB/RDF-validation
+# VRPT/RDF
 
 if [ -d $RDF_VALID ] ; then
 # ./scripts/validate_all_rdf.sh -d $RDF_VALID $DELETE_OPT
  ./scripts/validate_all_rdf_gz.sh -d $RDF_VALID $DELETE_OPT
 fi
 
-# PDB/RDF-validation-alt
+# VRPT/RDF-alt
 
 if [ -d $RDF_VALID_ALT ] ; then
 # ./scripts/validate_all_rdf.sh -d $RDF_VALID_ALT $DELETE_OPT
  ./scripts/validate_all_rdf_gz.sh -d $RDF_VALID_ALT $DELETE_OPT
 fi
 
-# mmCIF-validation
+# VRPT mmCIF
 
 if [ -d $MMCIF_VALID ] ; then
 # ./scripts/validate_all_mmcif.sh -d $MMCIF_VALID $DELETE_OPT
  ./scripts/validate_all_mmcif_gz.sh -d $MMCIF_VALID $DELETE_OPT
 fi
 
-# mmCIF-validation-alt
+# VRPT mmCIF-alt
 
 if [ -d $MMCIF_VALID_ALT ] ; then
 # ./scripts/validate_all_mmcif.sh -d $MMCIF_VALID_ALT $DELETE_OPT

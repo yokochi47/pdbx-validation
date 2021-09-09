@@ -43,7 +43,7 @@ total=`find $XML_VALID_ALT -maxdepth 2 -name '*.xml.gz' | wc -l 2> /dev/null`
 if [ $total != $last ] ; then
 
  echo
- echo Translating PDBML-validation-alt to mmCIF-validation-alt...
+ echo Translating VRPT PDBML-alt to VRPT mmCIF-alt...
 
  pdbml_file_list=pdbml_to_mmcif_alt_file_list
 

@@ -2,7 +2,7 @@
 
 source ./scripts/env.sh
 
-DB_NAME="PDBML-validation-alt"
+DB_NAME="VRPT PDBML-alt"
 
 if [ ! -d $VALID_INFO_ALT ] ; then
  ./scripts/extract_info.sh

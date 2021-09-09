@@ -1,6 +1,6 @@
 ﻿# pdbx-validation
 
-The pdbx-validation is a generation tool of alternative [wwPDB validation reports](https://www.wwpdb.org/validation/validation-reports) where validation metrics are reorganized using the familiar mmCIF naming scheme and categories. It includes [PDBx/mmCIF](http://mmcif.wwpdb.org/) compatible versions of validation reports (**mmCIF-validation** and **PDBML-validation**), RDF version of validation reports (**VRPT/RDF**), and a series of ontologies; **wwPDB Validation Information Dictionary**, **VRPT PDBML Schema**, and **VRPT/OWL**.
+The pdbx-validation is a generation tool of alternative [wwPDB validation reports](https://www.wwpdb.org/validation/validation-reports) where validation metrics are reorganized using the familiar mmCIF naming scheme and categories. It includes [PDBx/mmCIF](http://mmcif.wwpdb.org/) compatible versions of validation reports (**VRPT mmCIF** and **VRPT PDBML**), RDF version of validation reports (**VRPT/RDF**), and a series of ontologies; **wwPDB Validation Information Dictionary**, **VRPT PDBML Schema**, and **VRPT/OWL**.
 
 ## Usage
 
@@ -31,119 +31,119 @@ File path | Document
 
 - PDB ID: [5B1L](https://pdbj.org/mine/summary/5b1l), Exptl. method: X-RAY DIFFRACTION
 	- PDBx/mmCIF format
-		- mmCIF-validation: [5b1l-validation-full.cif](https://github.com/yokochi47/pdbx-validation/blob/master/test/mmcif-validation/5b1l-validation-full.cif)
-		- mmCIF-validation-alt: [5b1l-validation-alt.cif](https://github.com/yokochi47/pdbx-validation/blob/master/test/mmcif-validation-alt/5b1l-validation-alt.cif)
+		- VRPT mmCIF: [5b1l-validation-full.cif](https://github.com/yokochi47/pdbx-validation/blob/master/test/mmcif-validation/5b1l-validation-full.cif)
+		- VRPT mmCIF-alt: [5b1l-validation-alt.cif](https://github.com/yokochi47/pdbx-validation/blob/master/test/mmcif-validation-alt/5b1l-validation-alt.cif)
 	- PDBML format
-		- PDBML-validation: [5b1l-validation-full.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/XML-validation/5b1l-validation-full.xml)
-		- PDBML-validation-alt: [5b1l-validation-alt.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/validation-info-alt/5b1l-validation-alt.xml)
+		- VRPT PDBML: [5b1l-validation-full.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/XML-validation/5b1l-validation-full.xml)
+		- VRPT PDBML-alt: [5b1l-validation-alt.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/validation-info-alt/5b1l-validation-alt.xml)
 	- PDB/RDF format
 		- VRPT/RDF: [5b1l-validation-full.rdf](https://github.com/yokochi47/pdbx-validation/blob/master/test/RDF-validation/5b1l-validation-full.rdf)
 		- VRPT/RDF-alt: [5b1l-validation-alt.rdf](https://github.com/yokochi47/pdbx-validation/blob/master/test/RDF-validation-alt/5b1l-validation-alt.rdf)
 	- wwPDB validation report (XML format)
 		- Original source: [5b1l_validation.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/validation-info/5b1l_validation.xml)
-		- Reverted from PDBML-validation: [5b1l_validation.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/validation-info-rev-from-full/5b1l_validation.xml)
-		- Reverted from PDBML-validation-alt and PDBML-noatom: [5b1l_validation.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/validation-info-rev-from-alt/5b1l_validation.xml)
+		- Reverted from VRPT PDBML: [5b1l_validation.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/validation-info-rev-from-full/5b1l_validation.xml)
+		- Reverted from VRPT PDBML-alt and PDBML-noatom: [5b1l_validation.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/validation-info-rev-from-alt/5b1l_validation.xml)
 
 - PDB ID: [5U9B](https://pdbj.org/mine/summary/5u9b), Exptl. method: SOLUTION NMR
 	- PDBx/mmCIF format
-		- mmCIF-validation: [5u9b-validation-full.cif](https://github.com/yokochi47/pdbx-validation/blob/master/test/mmcif-validation/5u9b-validation-full.cif)
-		- mmCIF-validation-alt: [5u9b-validation-alt.cif](https://github.com/yokochi47/pdbx-validation/blob/master/test/mmcif-validation-alt/5u9b-validation-alt.cif)
+		- VRPT mmCIF: [5u9b-validation-full.cif](https://github.com/yokochi47/pdbx-validation/blob/master/test/mmcif-validation/5u9b-validation-full.cif)
+		- VRPT mmCIF-alt: [5u9b-validation-alt.cif](https://github.com/yokochi47/pdbx-validation/blob/master/test/mmcif-validation-alt/5u9b-validation-alt.cif)
 	- PDBML format
-		- PDBML-validation: [5u9b-validation-full.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/XML-validation/5u9b-validation-full.xml)
-		- PDBML-validation-alt: [5u9b-validation-alt.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/validation-info-alt/5u9b-validation-alt.xml)
+		- VRPT PDBML: [5u9b-validation-full.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/XML-validation/5u9b-validation-full.xml)
+		- VRPT PDBML-alt: [5u9b-validation-alt.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/validation-info-alt/5u9b-validation-alt.xml)
 	- PDB/RDF format
 		- VRPT/RDF: [5u9b-validation-full.rdf](https://github.com/yokochi47/pdbx-validation/blob/master/test/RDF-validation/5u9b-validation-full.rdf)
 		- VRPT/RDF-alt: [5u9b-validation-alt.rdf](https://github.com/yokochi47/pdbx-validation/blob/master/test/RDF-validation-alt/5u9b-validation-alt.rdf)
 	- wwPDB validation report (XML format)
 		- Original source: [5u9b_validation.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/validation-info/5u9b_validation.xml)
-		- Reverted from PDBML-validation: [5u9b_validation.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/validation-info-rev-from-full/5u9b_validation.xml)
-		- Reverted from PDBML-validation-alt and PDBML-noatom: [5u9b_validation.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/validation-info-rev-from-alt/5u9b_validation.xml)
+		- Reverted from VRPT PDBML: [5u9b_validation.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/validation-info-rev-from-full/5u9b_validation.xml)
+		- Reverted from VRPT PDBML-alt and PDBML-noatom: [5u9b_validation.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/validation-info-rev-from-alt/5u9b_validation.xml)
 
 - PDB ID: [2LOY](https://pdbj.org/mine/summary/2loy), Exptl. method: SOLUTION NMR with NMR restraint validation (v6.00, 2021-01-22)
 	- PDBx/mmCIF format
-		- mmCIF-validation: [2loy-validation-full.cif](https://github.com/yokochi47/pdbx-validation/blob/master/test/mmcif-validation/2loy-validation-full.cif)
-		- mmCIF-validation-alt: [2loy-validation-alt.cif](https://github.com/yokochi47/pdbx-validation/blob/master/test/mmcif-validation-alt/2loy-validation-alt.cif)
+		- VRPT mmCIF: [2loy-validation-full.cif](https://github.com/yokochi47/pdbx-validation/blob/master/test/mmcif-validation/2loy-validation-full.cif)
+		- VRPT mmCIF-alt: [2loy-validation-alt.cif](https://github.com/yokochi47/pdbx-validation/blob/master/test/mmcif-validation-alt/2loy-validation-alt.cif)
 	- PDBML format
-		- PDBML-validation: [2loy-validation-full.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/XML-validation/2loy-validation-full.xml)
-		- PDBML-validation-alt: [2loy-validation-alt.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/validation-info-alt/2loy-validation-alt.xml)
+		- VRPT PDBML: [2loy-validation-full.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/XML-validation/2loy-validation-full.xml)
+		- VRPT PDBML-alt: [2loy-validation-alt.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/validation-info-alt/2loy-validation-alt.xml)
 	- PDB/RDF format
 		- VRPT/RDF: [2loy-validation-full.rdf](https://github.com/yokochi47/pdbx-validation/blob/master/test/RDF-validation/2loy-validation-full.rdf)
 		- VRPT/RDF-alt: [2loy-validation-alt.rdf](https://github.com/yokochi47/pdbx-validation/blob/master/test/RDF-validation-alt/2loy-validation-alt.rdf)
 	- wwPDB validation report (XML format)
 		- Original source: [2loy_validation.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/validation-info/2loy_validation.xml)
-		- Reverted from PDBML-validation: [2loy_validation.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/validation-info-rev-from-full/2loy_validation.xml)
-		- Reverted from PDBML-validation-alt and PDBML-noatom: [2loy_validation.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/validation-info-rev-from-alt/2loy_validation.xml)
+		- Reverted from VRPT PDBML: [2loy_validation.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/validation-info-rev-from-full/2loy_validation.xml)
+		- Reverted from VRPT PDBML-alt and PDBML-noatom: [2loy_validation.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/validation-info-rev-from-alt/2loy_validation.xml)
 
 - PDB ID: [5H0S](https://pdbj.org/mine/summary/5h0s), Exptl. method: ELECTRON MICROSCOPY
 	- PDBx/mmCIF format
-		- mmCIF-validation: [5h0s-validation-full.cif](https://github.com/yokochi47/pdbx-validation/blob/master/test/mmcif-validation/5h0s-validation-full.cif)
-		- mmCIF-validation-alt: [5h0s-validation-alt.cif](https://github.com/yokochi47/pdbx-validation/blob/master/test/mmcif-validation-alt/5h0s-validation-alt.cif)
+		- VRPT mmCIF: [5h0s-validation-full.cif](https://github.com/yokochi47/pdbx-validation/blob/master/test/mmcif-validation/5h0s-validation-full.cif)
+		- VRPT mmCIF-alt: [5h0s-validation-alt.cif](https://github.com/yokochi47/pdbx-validation/blob/master/test/mmcif-validation-alt/5h0s-validation-alt.cif)
 	- PDBML format
-		- PDBML-validation: [5h0s-validation-full.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/XML-validation/5h0s-validation-full.xml)
-		- PDBML-validation-alt: [5h0s-validation-alt.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/validation-info-alt/5h0s-validation-alt.xml)
+		- VRPT PDBML: [5h0s-validation-full.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/XML-validation/5h0s-validation-full.xml)
+		- VRPT PDBML-alt: [5h0s-validation-alt.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/validation-info-alt/5h0s-validation-alt.xml)
 	- PDB/RDF format
 		- VRPT/RDF: [5h0s-validation-full.rdf](https://github.com/yokochi47/pdbx-validation/blob/master/test/RDF-validation/5h0s-validation-full.rdf)
 		- VRPT/RDF-alt: [5h0s-validation-alt.rdf](https://github.com/yokochi47/pdbx-validation/blob/master/test/RDF-validation-alt/5h0s-validation-alt.rdf)
 	- wwPDB validation report (XML format)
 		- Original source: [5h0s_validation.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/validation-info/5h0s_validation.xml)
-		- Reverted from PDBML-validation: [5h0s_validation.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/validation-info-rev-from-full/5h0s_validation.xml)
-		- Reverted from PDBML-validation-alt and PDBML-noatom: [5h0s_validation.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/validation-info-rev-from-alt/5h0s_validation.xml)
+		- Reverted from VRPT PDBML: [5h0s_validation.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/validation-info-rev-from-full/5h0s_validation.xml)
+		- Reverted from VRPT PDBML-alt and PDBML-noatom: [5h0s_validation.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/validation-info-rev-from-alt/5h0s_validation.xml)
 
 - PDB ID: [6RJH](https://pdbj.org/mine/summary/6rjh), Exptl. method: ELECTRON MICROSCOPY with EM map/model validation (v004, 2019-11-18)
 	- PDBx/mmCIF format
-		- mmCIF-validation: [6rjh-validation-full.cif](https://github.com/yokochi47/pdbx-validation/blob/master/test/mmcif-validation/6rjh-validation-full.cif)
-		- mmCIF-validation-alt: [6rjh-validation-alt.cif](https://github.com/yokochi47/pdbx-validation/blob/master/test/mmcif-validation-alt/6rjh-validation-alt.cif)
+		- VRPT mmCIF: [6rjh-validation-full.cif](https://github.com/yokochi47/pdbx-validation/blob/master/test/mmcif-validation/6rjh-validation-full.cif)
+		- VRPT mmCIF-alt: [6rjh-validation-alt.cif](https://github.com/yokochi47/pdbx-validation/blob/master/test/mmcif-validation-alt/6rjh-validation-alt.cif)
 	- PDBML format
-		- PDBML-validation: [6rjh-validation-full.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/XML-validation/6rjh-validation-full.xml)
-		- PDBML-validation-alt: [6rjh-validation-alt.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/validation-info-alt/6rjh-validation-alt.xml)
+		- VRPT PDBML: [6rjh-validation-full.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/XML-validation/6rjh-validation-full.xml)
+		- VRPT PDBML-alt: [6rjh-validation-alt.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/validation-info-alt/6rjh-validation-alt.xml)
 	- PDB/RDF format
 		- VRPT/RDF: [6rjh-validation-full.rdf](https://github.com/yokochi47/pdbx-validation/blob/master/test/RDF-validation/6rjh-validation-full.rdf)
 		- VRPT/RDF-alt: [6rjh-validation-alt.rdf](https://github.com/yokochi47/pdbx-validation/blob/master/test/RDF-validation-alt/6rjh-validation-alt.rdf)
 	- wwPDB validation report (XML format)
 		- Original source: [6rjh_validation.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/validation-info/6rjh_validation.xml)
-		- Reverted from PDBML-validation: [6rjh_validation.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/validation-info-rev-from-full/6rjh_validation.xml)
-		- Reverted from PDBML-validation-alt and PDBML-noatom: [6rjh_validation.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/validation-info-rev-from-alt/6rjh_validation.xml)
+		- Reverted from VRPT PDBML: [6rjh_validation.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/validation-info-rev-from-full/6rjh_validation.xml)
+		- Reverted from VRPT PDBML-alt and PDBML-noatom: [6rjh_validation.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/validation-info-rev-from-alt/6rjh_validation.xml)
 
 - PDB ID: [6XEY](https://pdbj.org/mine/summary/6xey), Exptl. method: ELECTRON MICROSCOPY with EM map/model validation (v004, 2020-02-18)
 	- PDBx/mmCIF format
-		- mmCIF-validation: [6xey-validation-full.cif](https://github.com/yokochi47/pdbx-validation/blob/master/test/mmcif-validation/6xey-validation-full.cif)
-		- mmCIF-validation-alt: [6xey-validation-alt.cif](https://github.com/yokochi47/pdbx-validation/blob/master/test/mmcif-validation-alt/6xey-validation-alt.cif)
+		- VRPT mmCIF: [6xey-validation-full.cif](https://github.com/yokochi47/pdbx-validation/blob/master/test/mmcif-validation/6xey-validation-full.cif)
+		- VRPT mmCIF-alt: [6xey-validation-alt.cif](https://github.com/yokochi47/pdbx-validation/blob/master/test/mmcif-validation-alt/6xey-validation-alt.cif)
 	- PDBML format
-		- PDBML-validation: [6xey-validation-full.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/XML-validation/6xey-validation-full.xml)
-		- PDBML-validation-alt: [6xey-validation-alt.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/validation-info-alt/6xey-validation-alt.xml)
+		- VRPT PDBML: [6xey-validation-full.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/XML-validation/6xey-validation-full.xml)
+		- VRPT PDBML-alt: [6xey-validation-alt.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/validation-info-alt/6xey-validation-alt.xml)
 	- PDB/RDF format
 		- VRPT/RDF: [6xey-validation-full.rdf](https://github.com/yokochi47/pdbx-validation/blob/master/test/RDF-validation/6xey-validation-full.rdf)
 		- VRPT/RDF-alt: [6xey-validation-alt.rdf](https://github.com/yokochi47/pdbx-validation/blob/master/test/RDF-validation-alt/6xey-validation-alt.rdf)
 	- wwPDB validation report (XML format)
 		- Original source: [6xey_validation.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/validation-info/6xey_validation.xml)
-		- Reverted from PDBML-validation: [6xey_validation.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/validation-info-rev-from-full/6xey_validation.xml)
-		- Reverted from PDBML-validation-alt and PDBML-noatom: [6xey_validation.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/validation-info-rev-from-alt/6xey_validation.xml)
+		- Reverted from VRPT PDBML: [6xey_validation.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/validation-info-rev-from-full/6xey_validation.xml)
+		- Reverted from VRPT PDBML-alt and PDBML-noatom: [6xey_validation.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/validation-info-rev-from-alt/6xey_validation.xml)
 
 ## Bulk download service of alternative wwPDB validation reports
 
 - Bulk download via HTTP protocol
 
-	- [mmCIF-validation (full specification)](https://bmrbpub.pdbj.org/archive/mmcif-vrpt/)
-	- [mmCIF-validation-alt (lightweight version @ PDBj FTP server)](https://data.pdbj.org/pdbjplus/data/vrpt/mmcif/)
+	- [VRPT mmCIF (full specification)](https://bmrbpub.pdbj.org/archive/mmcif-vrpt/)
+	- [VRPT mmCIF-alt (lightweight version @ PDBj FTP server)](https://data.pdbj.org/pdbjplus/data/vrpt/mmcif/)
 
-	- [PDBML-validation (full specification)](https://bmrbpub.pdbj.org/archive/pdbml-vrpt/)
-	- [PDBML-validation-alt (lightweight version @ PDBj FTP server)](https://data.pdbj.org/pdbjplus/data/vrpt/xml/)
+	- [VRPT PDBML (full specification)](https://bmrbpub.pdbj.org/archive/pdbml-vrpt/)
+	- [VRPT PDBML-alt (lightweight version @ PDBj FTP server)](https://data.pdbj.org/pdbjplus/data/vrpt/xml/)
 
 	- [VRPT/RDF (full specification)](https://bmrbpub.pdbj.org/archive/wwpdb-rdf-vrpt/)
 	- [VRPT/RDF-alt (lightweight version @ PDBj FTP server)](https://data.pdbj.org/pdbjplus/data/vrpt/rdf/)
 
 - Bulk download via rsync protocol
 
-	- mmCIF-validation (full specification):<br />
+	- VRPT mmCIF (full specification):<br />
 	 `% rsync -av --delete rsync://bmrbpub.pdbj.org/mmcif-vrpt .`
 
-	- PDBML-validation (full specification):<br />
+	- VRPT PDBML (full specification):<br />
 	 `% rsync -av --delete rsync://bmrbpub.pdbj.org/pdbml-vrpt .`
 
 	- VRPT/RDF (full specification):<br />
 	 `% rsync -av --delete rsync://bmrbpub.pdbj.org/wwpdb-rdf-vrpt .`
 
-- [PDBML-validation-alt PostgreSQL dump file](https://bmrbpub.pdbj.org/resources.html)
+- [VRPT PDBML-alt PostgreSQL dump file](https://bmrbpub.pdbj.org/resources.html)
 
 - [SPARQL endpoint for VRPT/RDF-alt](https://bmrbpub.pdbj.org/examples.html)
 
@@ -341,7 +341,7 @@ File path | Document
 
 - **Feb 23, 2019**: Release v1.5.1
 	- Rename 'revert_info.xsl' to 'revert_info_from_full.xsl'.
-	- Enable mutual transformation between PDBML-validation-alt and wwPDB Validation Reports (XML).
+	- Enable mutual transformation between VRPT PDBML-alt and wwPDB Validation Reports (XML).
 		- Add 'revert_info_from_alt_noatom.xsl', 'validation_created_date.xsl', and 'nmr_atom_consistency.xsl' style sheets for the translation.
 	- Enable parallel mmCIF and RDF syntax validation with check sum calculation.
 	- Add script 'calc_schema_stat.sh', which reports statistics of wwPDB Validation Information Dictionary and difference with PDB Exchange Data Dictionary.
@@ -390,9 +390,9 @@ File path | Document
 		- Add '_pdbx_dcc_entity_geometry.number_bonds' with link to /wwPDB-validation-information/ModelledEntityInstance/@num_angles_rmsz
 		- Add '_pdbx_dcc_geometry.number_angles' with link to /wwPDB-validation-information/Entry/@num_bonds_rmsz
 		- Add '_pdbx_dcc_geometry.number_bonds' with link to /wwPDB-validation-information/Entry/@num_angles_rmsz
-	- Enable mutual transformation between PDBML-validation and wwPDB Validation Reports (XML).
+	- Enable mutual transformation between VRPT PDBML and wwPDB Validation Reports (XML).
 		- Add 'revert_info.xsl' style sheet for the translation.
-		- Modify 'run_test.sh' script which include translation from PDBML-validation to wwPDB Validation Reports (XML).
+		- Modify 'run_test.sh' script which include translation from VRPT PDBML to wwPDB Validation Reports (XML).
 	- Update wwPDB Validation Information Dictionary from v1.303 to 1.305.
 	- Apply XML beautifier using xmllint command, if possible.
 
@@ -403,7 +403,7 @@ File path | Document
 	- Revise style sheet to support unpaired steric clash (a solo clash/@cid).
 	- Change directory name containing uncompressed validation reports from validation_info to validation-info.
 	- Add mmCIF syntax validation when mmCIF Dictionary Suite is available (CifCheck).
-	- Validate ambiguity code while translation of PDBML-validation.
+	- Validate ambiguity code while translation of VRPT PDBML.
 
 - **Dec 19, 2018**: Release v1.4.0
 	- Add '_pdbx_nmr_chem_shift_annotation.id' and set category key along with '_pdbx_nmr_chem_shift_annotation.list_id'.
@@ -426,7 +426,7 @@ File path | Document
 
 - **Nov 8, 2018**: Release v1.3.8
 	- Update wwPDB Validation Information Dictionary from v1.299 to 1.300.
-	- Replace all xsd:integer of PDBML Schema and PDBML-validation Schema by xsd:int.
+	- Replace all xsd:integer of PDBML Schema and VRPT PDBML Schema by xsd:int.
 	- Retrieve '_pdbx_audit_revision_category', 'pdbx_audit_revision_item' categories.
 	- Retrieve '_diffrn_detector.pdbx_frequency'.
 	- Add XML Schema validation script 'run_valid.sh'.
@@ -446,9 +446,9 @@ File path | Document
 
 - **Jul 18, 2018**: Release v1.3.4
 	- Change check sum directory name from chk_sum_pdbx_valid to chk_sum_pdbml_valid.
-	- Add PDBML-validation-alt, which is a lightweight version of PDBML-validation by omitting PDBML-noatom content.
+	- Add VRPT PDBML-alt, which is a lightweight version of VRPT PDBML by omitting PDBML-noatom content.
 	- Add PDB/validation-alt, which is a lightweight version of VRPT/RDF by omitting PDBML-noatom content.
-	- Add PostgreSQL data migration script for PDBML-validation-alt.
+	- Add PostgreSQL data migration script for VRPT PDBML-alt.
 	- Add Virtuoso data upload script for VRPT/RDF-alt.
 	- Add PostgreSQL data migration script for PDBML-noatom.
 
@@ -475,7 +475,7 @@ File path | Document
 
 - **Apr 5, 2018**: Release v1.2.1
 	- Fix style sheet to handle null RSR value, null medoid model number.
-	- Enable differential XML Schema validation of compressed PDBML-validation.
+	- Enable differential XML Schema validation of compressed VRPT PDBML.
 
 - **Mar 23, 2018**: Release v1.2.0
 	- Update PostgreSQL data migration scripts, in which differential update is enabled.
@@ -491,9 +491,9 @@ File path | Document
 	- Changed dictionary version from v0 to v1.
 
 - **Feb 16, 2018**: Release v0.1.0
-	- Revise PDBML-validation Schema using xsd:minInclusive and xsd:maxExclusive without xsd:union.
+	- Revise VRPT PDBML Schema using xsd:minInclusive and xsd:maxExclusive without xsd:union.
 	- Fix VRPT/OWL lacking XSD data type definition.
-	- Add validate_all_gz.sh script to perform XML Schema validation of compressed PDBML-validation.
+	- Add validate_all_gz.sh script to perform XML Schema validation of compressed VRPT PDBML.
 
 - **Feb 15, 2018**: Release v0.0.9
 	- Add ontology relationship between VRPT/OWL and PDBx ontology.
@@ -502,9 +502,9 @@ File path | Document
 	- PDB mirror server is selectable from rsync.rcsb.org, ftp.pdbj.org, rsync.ebi.ac.uk based on network response.
 
 - **Feb 13, 2018**: Release v0.0.8
-	- Change directory: from pdbml-validtion to XML-validation, which contains compressed PDBML-validation.
+	- Change directory: from pdbml-validtion to XML-validation, which contains compressed VRPT PDBML.
 	- Change directory: from rdf-validation to RDF-validation, which contains compressed VRPT/RDF.
-	- Add source URL in PDBML-validation Schema pointing PDBx/mmCIF dictionary browser.
+	- Add source URL in VRPT PDBML Schema pointing PDBx/mmCIF dictionary browser.
 
 - **Feb 9, 2018**: Release v0.0.7
 	- Add gzip compression scripts: compress_pdbml_validation.sh and compress_rdf_validation.sh
@@ -532,14 +532,14 @@ File path | Document
 	- Update 'run_test.sh' script which allows to add PDB IDs.
 
 - **Feb 2, 2018**: Release v0.0.2
-	- Change directory names and file extension of PDBML-validation.
+	- Change directory names and file extension of VRPT PDBML.
 	- Implement consistency checker about entry ID in XSL style sheet.
 	- Avoid XSLT error for entries used other experimental method such as NEUTRON DIFFRACTION.
 	- Add 'clean_all.sh' script.
 	- Append current PDBx Ontology (pdbx-v50.owl) in resource directory.
-	- Append PostgreSQL DDL for wwPDB validation (resource/wwpdb_validation_v002.sql) information and PDBML-validation (schema/pdbx-validation-v0.sql).
+	- Append PostgreSQL DDL for wwPDB validation (resource/wwpdb_validation_v002.sql) information and VRPT PDBML (schema/pdbx-validation-v0.sql).
 	- Add VRPT/OWL, ontology for VRPT/RDF.
 	- Add script 'scripts/translate_to_rdf.sh' for generation of VRPT/RDF.
 - **Feb 1, 2018**: Release v0.0.1
-	- Generate PDBML-validation from PDBML-noatom and wwPDB Validation Information.
+	- Generate VRPT PDBML from PDBML-noatom and wwPDB Validation Information.
 

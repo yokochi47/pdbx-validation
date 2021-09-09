@@ -2,9 +2,9 @@
 
 source ./scripts/env.sh
 
-# Set PDBML-validation by default
+# Set VRPT PDBML by default
 XML_DIR=$XML_VALID
-# Set PDBML-validation-alt
+# Set VRPT PDBML-alt
 #XML_DIR=$XML_VALID_ALT
 
 DELETE=false

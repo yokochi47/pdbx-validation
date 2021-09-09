@@ -2,7 +2,7 @@
 
 source ./scripts/env.sh
 
-DB_NAME="PDB/RDF-validation-alt"
+DB_NAME="VRPT/RDF-alt"
 
 if [ ! -d $RDF_VALID_ALT ] ; then
  ./scripts/transl_to_rdf_vrpt_alt.sh

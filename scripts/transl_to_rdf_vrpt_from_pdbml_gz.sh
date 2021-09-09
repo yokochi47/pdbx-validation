@@ -36,7 +36,7 @@ err=`find $RDF_VALID -mindepth 1 -name '*.err' | wc -l 2> /dev/null`
 if [ $err != 0 ] || [ $total != $last ] ; then
 
  echo
- echo Translating compressed PDBML-validation to PDB/RDF-validation...
+ echo Translating compressed VRPT PDBML to VRPT/RDF...
 
  pdbml_file_list=pdbml_gz_to_rdf_file_list
 

@@ -2,7 +2,7 @@
 
 source ./scripts/env.sh
 
-DB_NAME="PDBML-validation"
+DB_NAME="VRPT PDBML"
 
 if [ ! -d $XML_VALID ] ; then
  ./scripts/merge_pdbml_info.sh

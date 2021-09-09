@@ -2,7 +2,7 @@
 
 source ./scripts/env.sh
 
-DB_NAME="mmCIF-validation"
+DB_NAME="VRPT mmCIF"
 
 if [ ! -d $MMCIF_VALID ] ; then
  ./scripts/transl_to_mmcif_vrpt.sh

@@ -42,7 +42,7 @@ total=`find $XML_VALID -maxdepth 1 -name '*.xml' | wc -l 2> /dev/null`
 if [ $total != $last ] ; then
 
  echo
- echo Translating PDBML-validation to mmCIF-validation...
+ echo Translating VRPT PDBML to VRPT mmCIF...
 
  pdbml_file_list=pdbml_to_mmcif_file_list
 

@@ -42,7 +42,7 @@ total=`find $XML_VALID -mindepth 2 -name '*.xml.gz' | wc -l 2> /dev/null`
 if [ $total != $last ] ; then
 
  echo
- echo Translating compressed PDBML-validation to mmCIF-validation...
+ echo Translating compressed VRPT PDBML to VRPT mmCIF...
 
  pdbml_file_list=pdbml_gz_to_mmcif_file_list
 

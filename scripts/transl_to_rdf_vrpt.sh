@@ -36,7 +36,7 @@ err=`find $RDF_VALID -maxdepth 1 -name '*.err' | wc -l 2> /dev/null`
 if [ $err != 0 ] || [ $total != $last ] ; then
 
  echo
- echo Translating PDBML-validation to PDB/RDF-validation...
+ echo Translating VRPT PDBML to VRPT/RDF...
 
  pdbml_file_list=pdbml_to_rdf_file_list
 
