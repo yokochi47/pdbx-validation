@@ -22,7 +22,7 @@ SAXON=Saxon-HE
 SAXON_VER=10.5
 
 XSD2PGSCHEMA=xsd2pgschema
-XSD2PGSCHEMA_VER=4.[0-9].[0-9]
+XSD2PGSCHEMA_VER=4.2.1
 
 mkdir -p $EXTLIBS
 
@@ -30,6 +30,11 @@ mvn dependency:copy -Dartifact=net.sf.saxon:$SAXON:$SAXON_VER
 mv \$\{project.basedir\}/target/dependency/$SAXON-$SAXON_VER.jar $EXTLIBS/saxon-he.jar
 rm -rf \$\{project.basedir\}
 
+mvn dependency:copy -Dartifact=net.sf.xsd2pgschema:$XSD2PGSCHEMA:$XSD2PGSCHEMA_VER
+mv \$\{project.basedir\}/target/dependency/$XSD2PGSCHEMA-$XSD2PGSCHEMA_VER.jar $EXTLIBS/xsd2pgschema.jar
+rm -rf \$\{project.basedir\}
+
+<<REMARK
 cd $EXTLIBS
 
 git clone git://git.code.sf.net/p/xsd2pgschema/code xsd2pgschema-code
@@ -41,4 +46,4 @@ mvn package
 mv target/$XSD2PGSCHEMA-$XSD2PGSCHEMA_VER-jar-with-dependencies.jar ../$XSD2PGSCHEMA.jar
 
 rm -rf ../xsd2pgschema-code
-
+REMARK
