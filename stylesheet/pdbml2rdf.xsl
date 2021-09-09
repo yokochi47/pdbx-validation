@@ -235,11 +235,6 @@
     <rdfs:seeAlso rdf:resource="{$idorg}insdc/{text()}" rdfs:label="nuccore:{text()}"/>
   </xsl:template>
 
-  <xsl:template match="PDBx:struct_ref/PDBx:db_code[../PDBx:db_name='GB' and text()!='']" mode="linked">
-    <PDBo:link_to_genbank rdf:resource="{$genbank}{text()}" rdfs:label="genbank:{text()}"/>
-    <rdfs:seeAlso rdf:resource="{$idorg}insdc/{text()}" rdfs:label="nuccore:{text()}"/>
-  </xsl:template>
-
   <xsl:template match="PDBx:pdbx_entity_branch_descriptor/PDBx:descriptor[../PDBx:type='WURCS' and text()!='']" mode="linked">
     <xsl:variable name="wurcs_id"><xsl:value-of select="text()"/></xsl:variable>
     <xsl:for-each select="$glytoucan/catalog/wurcs[@id=$wurcs_id]">

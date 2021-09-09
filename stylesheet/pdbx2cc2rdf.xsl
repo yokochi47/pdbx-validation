@@ -182,16 +182,6 @@
     &lt;/xsl:choose&gt;
   &lt;/xsl:template&gt;
 
-  &lt;xsl:template match="PDBx:struct_ref/PDBx:pdbx_db_accession[../PDBx:db_name='UNP' and text()!='']" mode="linked"&gt;
-    &lt;PDBo:link_to_uniprot rdf:resource="{$uniprot}{text()}" rdfs:label="uniprot:{text()}"/&gt;
-    &lt;rdfs:seeAlso rdf:resource="{$idorg}uniprot/{text()}" rdfs:label="uniprot:{text()}"/&gt;
-  &lt;/xsl:template&gt;
-
-  &lt;xsl:template match="PDBx:struct_ref/PDBx:db_code[../PDBx:db_name='GB' and text()!='']" mode="linked"&gt;
-    &lt;PDBo:link_to_genbank rdf:resource="{$genbank}{text()}" rdfs:label="genbank:{text()}"/&gt;
-    &lt;rdfs:seeAlso rdf:resource="{$idorg}insdc/{text()}" rdfs:label="nuccore:{text()}"/&gt;
-  &lt;/xsl:template&gt;
-
   &lt;xsl:template match="PDBx:pdbx_database_related[@db_name='PDB' and @content_type!='split']/@db_id" mode="linked"&gt;
     &lt;PDBo:link_to_pdb rdf:resource="{$pdb_link}{.}"/&gt;
   &lt;/xsl:template&gt;

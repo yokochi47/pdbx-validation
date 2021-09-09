@@ -256,11 +256,6 @@
     &lt;rdfs:seeAlso rdf:resource="{$idorg}insdc/{text()}" rdfs:label="nuccore:{text()}"/&gt;
   &lt;/xsl:template&gt;
 
-  &lt;xsl:template match="PDBx:struct_ref/PDBx:db_code[../PDBx:db_name='GB' and text()!='']" mode="linked"&gt;
-    &lt;PDBo:link_to_genbank rdf:resource="{$genbank}{text()}" rdfs:label="genbank:{text()}"/&gt;
-    &lt;rdfs:seeAlso rdf:resource="{$idorg}insdc/{text()}" rdfs:label="nuccore:{text()}"/&gt;
-  &lt;/xsl:template&gt;
-
   &lt;xsl:template match="PDBx:pdbx_entity_branch_descriptor/PDBx:descriptor[../PDBx:type='WURCS' and text()!='']" mode="linked"&gt;
     &lt;xsl:variable name="wurcs_id">&lt;xsl:value-of select="text()"/&gt;&lt;/xsl:variable&gt;
     &lt;xsl:for-each select="$glytoucan/catalog/wurcs[@id=$wurcs_id]"&gt;
