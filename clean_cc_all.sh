@@ -28,9 +28,9 @@ WORK_DIR=.
 
 rm -rf $WORK_DIR/$COMPONENTS_RDF
 
+rm -rf $WORK_DIR/chk_sum_*
+
 WORK_DIR=test
 
 rm -rf $WORK_DIR/$COMPONENTS_RDF
-
-rm -rf $WORK_DIR/chk_sum_*
 
