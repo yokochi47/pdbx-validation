@@ -63,7 +63,12 @@ else
 fi
 
 #total=`ls $VALID_INFO_ALT 2> /dev/null | wc -l 2> /dev/null`
-total=`find $XML_VALID_ALT -mindepth 2 -name '*.xml.gz' | wc -l 2> /dev/null`
+
+total=0
+
+if [ -d $XML_VALID_ALT ] ; then
+ total=`find $XML_VALID_ALT -mindepth 2 -name '*.xml.gz' | wc -l 2> /dev/null`
+fi
 
 #if [ -d $VALID_INFO_ALT ] && [ $total -gt $huge_number ] ; then
 if [ -d $XML_VALID_ALT ] && [ $total -gt $huge_number ] ; then
