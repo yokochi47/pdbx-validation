@@ -28,7 +28,7 @@ WORK_DIR=.
 
 rm -rf $WORK_DIR/$COMPONENTS_RDF
 
-for dir in chk_sum_*; do
+for dir in chk_sum_pdbml_cc; do
  cd $dir; find . -type f | xargs rm -f; cd ..; rmdir $dir
 done
 

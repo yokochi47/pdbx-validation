@@ -28,7 +28,7 @@ WORK_DIR=.
 
 rm -rf $WORK_DIR/$RDF
 
-for dir in chk_sum_*; do
+for dir in chk_sum_pdbml_noatom; do
  cd $dir; find . -type f | xargs rm -f; cd ..; rmdir $dir
 done
 
