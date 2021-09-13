@@ -1,10 +1,10 @@
 ###########################################################################
 #
 # File:  mmcif_pdbx_validation-v4.dic
-# Date:  Thu Sep  2 18:04:48 JST 2021
+# Date:  Mon Sep 13 09:24:25 JST 2021
 #
 # Created from:
-#        mmcif_pdbx_v50.dic   - PDB Exchange Data Dictionary (V5.349)
+#        mmcif_pdbx_v50.dic   - PDB Exchange Data Dictionary (V5.350)
 #        http://wwpdb.org/validation/schema/wwpdb_validation_v6.00.xsd
 #         - a XML schema for wwPDB validation reports, v6.00, rev. 2021-01-22
 #
@@ -31,7 +31,7 @@ data_mmcif_pdbx_validation.dic
 
     _dictionary.title           mmcif_pdbx_validation.dic
     _dictionary.datablock_id    mmcif_pdbx_validation.dic
-    _dictionary.version         4.349
+    _dictionary.version         4.350
 #
     loop_
     _dictionary_history.version
@@ -942,6 +942,12 @@ data_mmcif_pdbx_validation.dic
 >       _atom_site.pdbx_sifts_xref_db_acc, _atom_site.pdbx_sifts_xref_db_num,
 >       _atom_site.pdbx_sifts_xref_db_res
 ;
+  4.350   2021-09-13
+;
+>     + Correct advisory limits for _em_image_recording.avg_electron_dose_per_subtomogram # merged
+>     + Extend _pdbx_audit_support.funding_organization enumeration. # not mapped
+;
+
 
 #
 ###########################################################################
@@ -53922,8 +53928,8 @@ save__em_image_recording.avg_electron_dose_per_subtomogram
     _pdbx_item_range.name
     _pdbx_item_range.minimum
     _pdbx_item_range.maximum
-     '_em_image_recording.avg_electron_dose_per_subtomogram'  0 0
-     '_em_image_recording.avg_electron_dose_per_subtomogram'  0 200
+     '_em_image_recording.avg_electron_dose_per_subtomogram'  10 10
+     '_em_image_recording.avg_electron_dose_per_subtomogram'  10 200
 save_
 
 save__em_image_recording.avg_electron_dose_per_image

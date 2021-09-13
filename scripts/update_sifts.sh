@@ -1,0 +1,147 @@
+#!/bin/bash
+
+source ./scripts/env.sh
+
+MTIME=
+
+ARGV=`getopt --long -o "m:" "$@"`
+eval set -- "$ARGV"
+while true ; do
+ case "$1" in
+ -m)
+  MTIME=$2
+  shift
+ ;;
+ *)
+  break
+ ;;
+ esac
+ shift
+done
+
+DB_NAME=SIFTS
+
+SRC_DIR=$SIFTS_XML_URL
+XML_DIR=$SIFTS_XML
+
+weekday=`date -u +"%w"`
+
+if [ ! -e $XSD2PGSCHEMA ] ; then
+ ./scripts/update_extlibs.sh
+fi
+
+if [ $weekday -ge 1 ] && [ $weekday -le 4 ] ; then
+
+ wget -c -r -nv -np ftp://$SRC_DIR -nH 2> /dev/null
+
+ MD5_DIR=chk_sum_shifts_xml
+
+ chk_sum_log=shifts_xml_log
+
+ java -classpath $XSD2PGSCHEMA chksumstat --xml $SRC_DIR --xml-file-ext gz --sync $MD5_DIR --update --verbose > $chk_sum_log
+
+ if [ ! -z $MTIME ] ; then
+  find $SRC_DIR -name "*.xml.gz" -mtime $MTIME | cut -d '/' -f 3 | cut -d '-' -f 1 > $chk_sum_log
+ fi
+<<REMARK
+ if [ -d $RDF_VALID_ALT ] ; then
+  while read pdb_id ; do
+   [ -z "$pdb_id" ] || [[ "$pdb_id" =~ ^#.* ]] && continue
+   rm -f $RDF_VALID_ALT/$pdb_id-validation-alt.rdf
+  done < $chk_sum_log
+ fi
+
+ if [ -d $RDF_VALID ] ; then
+  while read pdb_id ; do
+   [ -z "$pdb_id" ] || [[ "$pdb_id" =~ ^#.* ]] && continue
+   rm -f $RDF_VALID/$pdb_id-validation-full.rdf
+  done < $chk_sum_log
+ fi
+
+ if [ -d $RDF ] ; then
+  while read pdb_id ; do
+   [ -z "$pdb_id" ] || [[ "$pdb_id" =~ ^#.* ]] && continue
+   rm -f $RDF/$pdb_id.rdf
+  done < $chk_sum_log
+ fi
+
+ if [ -d $RDF_VALID_ALT ] ; then
+  while read pdb_id ; do
+   [ -z "$pdb_id" ] || [[ "$pdb_id" =~ ^#.* ]] && continue
+   rm -f $RDF_VALID_ALT/${pdb_id:1:2}/$pdb_id-validation-alt.rdf.gz
+  done < $chk_sum_log
+ fi
+
+ if [ -d $RDF_VALID ] ; then
+  while read pdb_id ; do
+   [ -z "$pdb_id" ] || [[ "$pdb_id" =~ ^#.* ]] && continue
+   rm -f $RDF_VALID/${pdb_id:1:2}/$pdb_id-validation-full.rdf.gz
+  done < $chk_sum_log
+ fi
+
+ if [ -d $RDF ] ; then
+  while read pdb_id ; do
+   [ -z "$pdb_id" ] || [[ "$pdb_id" =~ ^#.* ]] && continue
+   rm -f $RDF/$pdb_id.rdf.gz
+  done < $chk_sum_log
+ fi
+REMARK
+ rm -f $chk_sum_log
+
+fi
+
+xml_file_total=sifts_xml_file_total
+
+if [ -z $MTIME ] ; then
+ MTIME=-4
+fi
+
+updated=`find $SRC_DIR/* -name "*.xml.gz" -mtime $MTIME | wc -l 2> /dev/null`
+
+if [ $updated = 0 ] || [ ! -e $xml_file_total ] ; then
+
+ last=0
+
+ if [ -e $xml_file_total ] ; then
+  last=`cat $xml_file_total`
+ fi
+
+ total=`find $SRC_DIR/* -name '*.xml.gz' | wc -l 2> /dev/null`
+
+ if [ $total = $last ] ; then
+
+  echo $DB_NAME" ("$SRC_DIR") is up-to-date."
+
+ else
+
+   echo $total > $xml_file_total
+
+ fi
+
+fi
+
+date -u +"%b %d, %Y" > /tmp/sifts_xml-last
+
+gz_file_list=`echo ${SRC_DIR,,}_gz_file_list | tr '-' _`
+
+mkdir -p $XML_DIR
+
+find $SRC_DIR/* -name '*.xml.gz' > $gz_file_list
+
+while read gz_file
+do
+
+ xml_file=`basename $gz_file .gz`
+
+ if [ ! -e $XML_DIR/$xml_file ] ; then
+  cp $gz_file $XML_DIR
+ fi
+
+done < $gz_file_list
+
+rm -f $gz_file_list
+
+find $XML_DIR -type f -name "*.gz" -exec gunzip {} +
+
+echo Unzipped $DB_NAME" ("$XML_DIR") is up-to-date."
+

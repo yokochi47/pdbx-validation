@@ -33,10 +33,10 @@
 
       <owl:Ontology rdf:about="https://rdf.wwpdb.org/schema/pdbx-v50.owl">
 	<rdfs:label>PDBx ontology</rdfs:label>
-	<rdfs:comment xml:lang="en">The PDBx OWL ontology translated from the PDBML schema.</rdfs:comment>
+	<rdfs:comment xml:lang="en">The OWL ontology for PDB/RDF, generated from the PDBML Schema.</rdfs:comment>
         <rdfs:seeAlso rdf:resource="http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic"/>
         <rdfs:seeAlso rdf:resource="http://mmcif.wwpdb.org/schema/pdbx-v50.xsd"/>
-        <owl:versionIRI rdf:resource="https://rdf.wwpdb.org/schema/pdbx-v50.owl/5.349"/>
+        <owl:versionIRI rdf:resource="https://rdf.wwpdb.org/schema/pdbx-v50.owl/5.350"/>
       </owl:Ontology>
 
       <owl:Class rdf:ID="Category">

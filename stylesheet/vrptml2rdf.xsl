@@ -207,12 +207,12 @@
     <rdfs:seeAlso rdf:resource="{$idorg}ncbiprotein/{text()}" rdfs:label="ncbiprotein:{text()}"/>
   </xsl:template>
 
-  <xsl:template match="VRPTx:struct_ref/VRPTx:pdbx_db_accession[../VRPTx:db_name='TREMBL' and string-length(text())=6 and contains(substring(text(),0,1),'OPQ') and contains(substring(text(),1,1),'0123456789')]" mode="linked">
+  <xsl:template match="VRPTx:struct_ref/VRPTx:db_code[../VRPTx:db_name='TREMBL' and string-length(text())=6 and contains(substring(text(),0,1),'OPQ') and contains(substring(text(),1,1),'0123456789')]" mode="linked">
     <VRPTo:link_to_uniprot rdf:resource="{$uniprot}{text()}" rdfs:label="uniprot:{text()}"/>
     <rdfs:seeAlso rdf:resource="{$idorg}uniprot/{text()}" rdfs:label="uniprot:{text()}"/>
   </xsl:template>
 
-  <xsl:template match="VRPTx:struct_ref/VRPTx:pdbx_db_accession[../VRPTx:db_name='TREMBL' and text()!='' and not(string-length(text())=6 and contains(substring(text(),0,1),'OPQ') and contains(substring(text(),1,1),'0123456789'))]" mode="linked">
+  <xsl:template match="VRPTx:struct_ref/VRPTx:db_code[../VRPTx:db_name='TREMBL' and text()!='' and not(string-length(text())=6 and contains(substring(text(),0,1),'OPQ') and contains(substring(text(),1,1),'0123456789'))]" mode="linked">
     <VRPTo:link_to_embl rdf:resource="{$embl}{text()}" rdfs:label="ncbiprotein:{text()}"/>
     <rdfs:seeAlso rdf:resource="{$idorg}ncbiprotein/{text()}" rdfs:label="ncbiprotein:{text()}"/>
   </xsl:template>

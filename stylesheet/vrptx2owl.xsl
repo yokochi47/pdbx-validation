@@ -41,10 +41,10 @@
 
       <owl:Ontology rdf:about="https://rdf.wwpdb.org/schema/pdbx-validation-v4.owl">
 	<rdfs:label>VRPT/OWL</rdfs:label>
-	<rdfs:comment xml:lang="en">The OWL ontology for VRPT/RDF.</rdfs:comment>
+	<rdfs:comment xml:lang="en">The OWL ontology for VRPT/RDF, generated from the VRPT PDBML Schema.</rdfs:comment>
         <rdfs:seeAlso rdf:resource="https://rdf.wwpdb.org/schema/pdbx-validation-v4.dic"/>
         <rdfs:seeAlso rdf:resource="https://rdf.wwpdb.org/schema/pdbx-validation-v4.xsd"/>
-        <owl:versionIRI rdf:resource="https://rdf.wwpdb.org/schema/pdbx-validation-v4.owl/4.349"/>
+        <owl:versionIRI rdf:resource="https://rdf.wwpdb.org/schema/pdbx-validation-v4.owl/4.350"/>
       </owl:Ontology>
 
       <owl:Class rdf:ID="Category">

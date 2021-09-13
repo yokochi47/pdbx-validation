@@ -98,6 +98,9 @@ RDF=RDF
 COMPONENTS_XML=components-xml
 COMPONENTS_RDF=components-rdf
 
+SIFTS_XML_URL=ftp.ebi.ac.uk/pub/databases/msd/sifts/xml
+SIFTS_XML=sifts_xml
+
 function mk_div_dir() {
  if [ ! -d $1 ] ; then
   [ -e $1 ] && rm -f $1
