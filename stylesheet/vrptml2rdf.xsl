@@ -237,42 +237,22 @@
     <rdfs:seeAlso rdf:resource="{$idorg}norine/{text()}" rdfs:label="norine:{text()}"/>
   </xsl:template>
 
-  <xsl:template match="VRPTx:pdbx_sifts_xref_db/VRPTx:unp_acc[text()!='']" mode="linked">
-    <VRPTo:link_to_uniprot rdf:resource="{$uniprot}{text()}" rdfs:label="uniprot:{text()}"/>
-    <rdfs:seeAlso rdf:resource="{$idorg}uniprot/{text()}" rdfs:label="uniprot:{text()}"/>
-  </xsl:template>
-
   <xsl:template match="VRPTx:pdbx_sifts_unp_segments/VRPTx:unp_acc[text()!='']" mode="linked">
     <VRPTo:link_to_uniprot rdf:resource="{$uniprot}{text()}" rdfs:label="uniprot:{text()}"/>
     <rdfs:seeAlso rdf:resource="{$idorg}uniprot/{text()}" rdfs:label="uniprot:{text()}"/>
   </xsl:template>
 
-  <xsl:template match="VRPTx:pdbx_sifts_xref_db/VRPTx:xref_db_acc[../VRPTx:xref_db_name='GO' and text()!='']" mode="linked">
-    <VRPTo:link_to_go rdf:resource="{$go}{text()}" rdfs:label="go:{text()}"/>
-    <rdfs:seeAlso rdf:resource="{$idorg}go/{text()}" rdfs:label="go:{text()}"/>
-  </xsl:template>
-
-  <xsl:template match="VRPTx:pdbx_sifts_xref_db/VRPTx:xref_db_acc[../VRPTx:xref_db_name='InterPro' and text()!='']" mode="linked">
-    <VRPTo:link_to_interpro rdf:resource="{$interpro}{text()}" rdfs:label="interpro:{text()}"/>
-    <rdfs:seeAlso rdf:resource="{$idorg}interpro/{text()}" rdfs:label="interpro:{text()}"/>
-  </xsl:template>
-
-  <xsl:template match="VRPTx:pdbx_sifts_xref_db/VRPTx:xref_db_acc[../VRPTx:xref_db_name='Pfam' and text()!='']" mode="linked">
-    <VRPTo:link_to_pfam rdf:resource="{$pfam}{text()}" rdfs:label="pfam:{text()}"/>
-    <rdfs:seeAlso rdf:resource="{$idorg}pfam/{text()}" rdfs:label="pfam:{text()}"/>
-  </xsl:template>
-
-  <xsl:template match="VRPTx:pdbx_sifts_xref_db_segments/VRPTx:xref_db_acc[../VRPTx:xref_db_name='CATH' and text()!='']" mode="linked">
+  <xsl:template match="VRPTx:pdbx_sifts_xref_db_segments/VRPTx:xref_db_acc[../VRPTx:xref_db='CATH' and text()!='']" mode="linked">
     <VRPTo:link_to_cath_domain rdf:resource="{$cath_domain}{text()}" rdfs:label="cath.domain:{text()}"/>
     <rdfs:seeAlso rdf:resource="{$idorg}cath.domain/{text()}" rdfs:label="cath.domain:{text()}"/>
   </xsl:template>
 
-  <xsl:template match="VRPTx:pdbx_sifts_xref_db_segments/VRPTx:xref_db_acc[(../VRPTx:xref_db_name='SCOP' or ../VRPTx:xref_db_name='SCOP2' or ../VRPTx:xref_db_name='SCOP2B') and text()!='']" mode="linked">
+  <xsl:template match="VRPTx:pdbx_sifts_xref_db_segments/VRPTx:xref_db_acc[(../VRPTx:xref_db='SCOP' or ../VRPTx:xref_db='SCOP2' or ../VRPTx:xref_db='SCOP2B') and text()!='']" mode="linked">
     <VRPTo:link_to_scop rdf:resource="{$scop}{text()}" rdfs:label="scop:{text()}"/>
     <rdfs:seeAlso rdf:resource="{$idorg}scop/{text()}" rdfs:label="scop:{text()}"/>
   </xsl:template>
 
-  <xsl:template match="VRPTx:pdbx_sifts_xref_db_segments/VRPTx:xref_db_acc[../VRPTx:xref_db_name='Ensemble' and text()!='']" mode="linked">
+  <xsl:template match="VRPTx:pdbx_sifts_xref_db_segments/VRPTx:xref_db_acc[../VRPTx:xref_db='Ensemble' and text()!='']" mode="linked">
     <VRPTo:link_to_ensemble rdf:resource="{$ensemble}{text()}" rdfs:label="ensemble:{text()}"/>
     <rdfs:seeAlso rdf:resource="{$idorg}ensemble/{text()}" rdfs:label="ensemble:{text()}"/>
   </xsl:template>

@@ -35,8 +35,6 @@ PDBX_VALIDATION_XSD=schema/pdbx-validation-v4.xsd
 PDBX_VALIDATION_SQL=schema/pdbx-validation-v4.sql
 
 XSD2EXT_PDBML_XSL=stylesheet/xsd2extract_pdbml.xsl
-
-XSD2EXT_PDBML_XSL=stylesheet/xsd2extract_pdbml.xsl
 EXT_PDBML_XSL=stylesheet/extract_pdbml.xsl
 
 EXT_INFO_XSL=stylesheet/extract_info.xsl
@@ -100,6 +98,13 @@ COMPONENTS_RDF=components-rdf
 
 SIFTS_XML_URL=ftp.ebi.ac.uk/pub/databases/msd/sifts/xml
 SIFTS_XML=sifts_xml
+
+PDBML_SIFTS=pdbml-sifts
+
+PDBML_NOATOM_SIFTS=XML-noatom-sifts
+
+XSD2MERGE_PDBML_SIFTS_XSL=stylesheet/xsd2merge_pdbml_sifts.xsl
+MERGE_PDBML_SIFTS_XSL=stylesheet/merge_pdbml_sifts.xsl
 
 function mk_div_dir() {
  if [ ! -d $1 ] ; then

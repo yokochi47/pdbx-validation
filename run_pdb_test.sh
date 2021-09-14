@@ -10,6 +10,14 @@ if [ ! -e $PDBML_XSD ] || [ ! -e $PDBML2RDF_XSL ] ; then
  ( cd resource; ./update_pdbx_xsd.sh; ./update_pdbx_owl.sh )
 fi
 
+if [ ! -e $MERGE_PDBML_SIFTS_XSL ] ; then
+
+ java -jar $SAXON -s:$PDBML_XSD -xsl:$XSD2MERGE_PDBML_SIFTS_XSL -o:$MERGE_PDBML_SIFTS_XSL || ( echo $0 aborted. ; exit 1 )
+
+ echo Generated: $MERGE_PDBML_SIFTS_XSL
+
+fi
+
 if [ ! -e $PDBML2RDF_XSL ] ; then
 
  java -jar $SAXON -s:$PDBML_XSD -xsl:$PDBX2PDBML2RDF_XSL -o:$PDBML2RDF_XSL || ( echo $0 aborted. ; exit 1 )
@@ -44,10 +52,19 @@ for arg ; do
 
    fi
 
+   sifts_xml_file=$WORK_DIR/$SIFTS_XML/$pdbid.xml
+
+   if [ ! -e $sifts_xml_file ] ; then
+
+    wget ftp://$SIFTS_XML_URL/$pdbid.xml.gz -P $WORK_DIR/$SIFTS_XML; gunzip $sifts_xml_file.gz
+
+   fi
+
  fi
 
 done
 
+mkdir -p $WORK_DIR/$PDBML_SIFTS
 mkdir -p $WORK_DIR/$RDF
 
 for pdbml_file in $WORK_DIR/$PDBML/*.xml ; do
@@ -62,12 +79,24 @@ for pdbml_file in $WORK_DIR/$PDBML/*.xml ; do
  echo
  echo Processing PDB ID: ${pdbid^^}, "Exptl. method: "$exptl_method" ..."
 
+ sifts_xml_file=$WORK_DIR/$SIFTS_XML/$pdbid.xml
+ pdbml_sifts_file=$WORK_DIR/$PDBML_SIFTS/$pdbid-noatom-sifts.xml
+
+ #xsltproc stylesheet/check_sifts.xsl $sifts_xml_file
+ #echo
+
+ if [ -e $sifts_xml_file ] && [ -s $sifts_xml_fil ] ; then
+  java -jar $SAXON -s:$pdbml_file -xsl:$MERGE_PDBML_SIFTS_XSL -o:$pdbml_sifts_file sifts_file=../$sifts_xml_file
+ else
+  cp -f $pdbml_file $pdbml_sifts_file
+ fi
+
  rdf_file=$WORK_DIR/$RDF/$pdbid.rdf
 
  if [ -z "$has_glycan" ] ; then
-  xsltproc -o $rdf_file --param wurcs2glytoucan $_WURCS_CATALOG_XML $PDBML2RDF_XSL $pdbml_file
+  xsltproc -o $rdf_file --param wurcs2glytoucan $_WURCS_CATALOG_XML $PDBML2RDF_XSL $pdbml_sifts_file
  else
-  java -jar $SAXON -s:$pdbml_file -xsl:$PDBML2RDF_XSL -o:$rdf_file wurcs2glytoucan=$WURCS_CATALOG_XML || ( echo $0 aborted. ; exit 1 )
+  java -jar $SAXON -s:$pdbml_sifts_file -xsl:$PDBML2RDF_XSL -o:$rdf_file wurcs2glytoucan=$WURCS_CATALOG_XML || ( echo $0 aborted. ; exit 1 )
  fi
 
  echo " generated: "$rdf_file

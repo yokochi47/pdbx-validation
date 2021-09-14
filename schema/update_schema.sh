@@ -126,6 +126,14 @@ java -jar $SAXON -s:$DIC_PREFIX-v$DIC_MAJOR_VER.xsd -xsl:$XS3P_XSLT_CODE -o:$DIC
 
 echo Generated: $DIC_PREFIX-v$DIC_MAJOR_VER.html
 
+java -jar $SAXON -s:$DIC_PREFIX-v$DIC_MAJOR_VER.xsd -xsl:../$XSD2EXT_PDBML_XSL -o:../$EXT_PDBML_XSL
+
+echo Generated: ../$EXT_PDBML_XSL
+
+java -jar $SAXON -s:$DIC_PREFIX-v$DIC_MAJOR_VER.xsd -xsl:../$XSD2MERGE_PDBML_INFO_XSL -o:../$MERGE_PDBML_INFO_XSL
+
+echo Generated: ../$MERGE_PDBML_INFO_XSL
+
 ./calc_schema_stat.sh > schema_stat.txt
 
 cat schema_stat.txt

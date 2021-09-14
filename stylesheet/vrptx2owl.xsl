@@ -271,10 +271,10 @@
         <owl:sameAs rdf:resource="PDBo:link_to_pfam"/>
       </owl:ObjectProperty>
 
-      <owl:ObjectProperty rdf:ID="link_to_cath_domain">
+      <owl:ObjectProperty rdf:ID="link_to_cath">
         <rdfs:subPropertyOf rdf:resource="#html_link_to"/>
-        <rdfs:comment xml:lang="en">external link to CATH domain.</rdfs:comment>
-        <owl:sameAs rdf:resource="PDBo:link_to_cath_domain"/>
+        <rdfs:comment xml:lang="en">external link to CATH.</rdfs:comment>
+        <owl:sameAs rdf:resource="PDBo:link_to_cath"/>
       </owl:ObjectProperty>
 
       <owl:ObjectProperty rdf:ID="link_to_scop">
@@ -283,10 +283,10 @@
         <owl:sameAs rdf:resource="PDBo:link_to_scop"/>
       </owl:ObjectProperty>
 
-      <owl:ObjectProperty rdf:ID="link_to_ensemble">
+      <owl:ObjectProperty rdf:ID="link_to_ensembl">
         <rdfs:subPropertyOf rdf:resource="#html_link_to"/>
-        <rdfs:comment xml:lang="en">external link to Ensemble (Eukaryotic Genome).</rdfs:comment>
-        <owl:sameAs rdf:resource="PDBo:link_to_ensemble"/>
+        <rdfs:comment xml:lang="en">external link to Ensembl (Eukaryotic Genome).</rdfs:comment>
+        <owl:sameAs rdf:resource="PDBo:link_to_ensembl"/>
       </owl:ObjectProperty>
 
       <owl:ObjectProperty rdf:ID="link_to_chem_comp">

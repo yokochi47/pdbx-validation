@@ -31,3 +31,7 @@ java -jar $SAXON -s:$PDBML_XSD -xsl:$PDBX2CC2RDF_XSL -o:$CC2RDF_XSL || ( echo $0
 
 echo Generated: $CC2RDF_XSL
 
+java -jar $SAXON -s:$PDBML_XSD -xsl:../$XSD2MERGE_PDBML_SIFTS_XSL -o:../$MERGE_PDBML_SIFTS_XSL || ( echo $0 aborted. ; exit 1 )
+
+echo Generated: ../$MERGE_PDBML_SIFTS_XSL
+

@@ -66,12 +66,12 @@
   &lt;xsl:variable name="refseq"&gt;https://www.ncbi.nlm.nih.gov/protein/&lt;/xsl:variable&gt;
   &lt;xsl:variable name="norine"&gt;https://bioinfo.lifl.fr/norine/result.jsp?ID=&lt;/xsl:variable&gt;
   &lt;xsl:variable name="enzyme"&gt;http://purl.uniprot.org/enzyme/&lt;/xsl:variable&gt;
-  &lt;xsl:variable name="go"&gt;http://amigo.geneontology.org/amigo/term/GO:/&lt;/xsl:variable&gt;
+  &lt;xsl:variable name="go"&gt;http://amigo.geneontology.org/amigo/term/GO:&lt;/xsl:variable&gt;
   &lt;xsl:variable name="interpro"&gt;https://www.ebi.ac.uk/interpro/entry/&lt;/xsl:variable&gt;
   &lt;xsl:variable name="pfam"&gt;http://pfam.xfam.org/family/&lt;/xsl:variable&gt;
-  &lt;xsl:variable name="cath_domain"&gt;http://www.cathdb.info/domain/&lt;/xsl:variable&gt;
-  &lt;xsl:variable name="scop"&gt;http://scop.mrc-lmb.cam.ac.uk/scop/search.cgi?sunid=&lt;/xsl:variable&gt;
-  &lt;xsl:variable name="ensemble"&gt;https://www.ensembl.org/id/&lt;/xsl:variable&gt;
+  &lt;xsl:variable name="cath"&gt;http://www.cathdb.info/cathnode/&lt;/xsl:variable&gt;
+  &lt;xsl:variable name="scop"&gt;http://scop.berkeley.edu/sunid=&lt;/xsl:variable&gt;
+  &lt;xsl:variable name="ensembl"&gt;https://www.ensembl.org/id/&lt;/xsl:variable&gt;
   &lt;xsl:variable name="glycoinfo"&gt;http://rdf.glycoinfo.org/glycan/&lt;/xsl:variable&gt;
 
   &lt;xsl:template match="/"&gt;
@@ -255,44 +255,39 @@
     &lt;rdfs:seeAlso rdf:resource="{$idorg}norine/{text()}" rdfs:label="norine:{text()}"/&gt;
   &lt;/xsl:template&gt;
 
-  &lt;xsl:template match="PDBx:pdbx_sifts_xref_db/PDBx:unp_acc[text()!='']" mode="linked"&gt;
-    &lt;PDBo:link_to_uniprot rdf:resource="{$uniprot}{text()}" rdfs:label="uniprot:{text()}"/&gt;
-    &lt;rdfs:seeAlso rdf:resource="{$idorg}uniprot/{text()}" rdfs:label="uniprot:{text()}"/&gt;
+  &lt;xsl:template match="PDBx:pdbx_sifts_unp_segments[@unp_acc!='']/@unp_acc" mode="linked"&gt;
+    &lt;PDBo:link_to_uniprot rdf:resource="{$uniprot}{.}" rdfs:label="uniprot:{.}"/&gt;
+    &lt;rdfs:seeAlso rdf:resource="{$idorg}uniprot/{.}" rdfs:label="uniprot:{.}"/&gt;
   &lt;/xsl:template&gt;
 
-  &lt;xsl:template match="PDBx:pdbx_sifts_unp_segments/PDBx:unp_acc[text()!='']" mode="linked"&gt;
-    &lt;PDBo:link_to_uniprot rdf:resource="{$uniprot}{text()}" rdfs:label="uniprot:{text()}"/&gt;
-    &lt;rdfs:seeAlso rdf:resource="{$idorg}uniprot/{text()}" rdfs:label="uniprot:{text()}"/&gt;
+  &lt;xsl:template match="PDBx:pdbx_sifts_xref_db_segments[@xref_db='GO' and @xref_db_acc!='']/@xref_db_acc" mode="linked"&gt;
+    &lt;PDBo:link_to_go rdf:resource="{$go}{.}" rdfs:label="go:{.}"/&gt;
+    &lt;rdfs:seeAlso rdf:resource="{$idorg}go/GO:{.}" rdfs:label="go:{.}"/&gt;
   &lt;/xsl:template&gt;
 
-  &lt;xsl:template match="PDBx:pdbx_sifts_xref_db/PDBx:xref_db_acc[../PDBx:xref_db_name='GO' and text()!='']" mode="linked"&gt;
-    &lt;PDBo:link_to_go rdf:resource="{$go}{text()}" rdfs:label="go:{text()}"/&gt;
-    &lt;rdfs:seeAlso rdf:resource="{$idorg}go/{text()}" rdfs:label="go:{text()}"/&gt;
+  &lt;xsl:template match="PDBx:pdbx_sifts_xref_db_segments[@xref_db='InterPro' and @xref_db_acc!='']/@xref_db_acc" mode="linked"&gt;
+    &lt;PDBo:link_to_interpro rdf:resource="{$interpro}{.}" rdfs:label="interpro:{.}"/&gt;
+    &lt;rdfs:seeAlso rdf:resource="{$idorg}interpro/{.}" rdfs:label="interpro:{.}"/&gt;
   &lt;/xsl:template&gt;
 
-  &lt;xsl:template match="PDBx:pdbx_sifts_xref_db/PDBx:xref_db_acc[../PDBx:xref_db_name='InterPro' and text()!='']" mode="linked"&gt;
-    &lt;PDBo:link_to_interpro rdf:resource="{$interpro}{text()}" rdfs:label="interpro:{text()}"/&gt;
-    &lt;rdfs:seeAlso rdf:resource="{$idorg}interpro/{text()}" rdfs:label="interpro:{text()}"/&gt;
+  &lt;xsl:template match="PDBx:pdbx_sifts_xref_db_segments[@xref_db='Pfam' and @xref_db_acc!='']/@xref_db_acc" mode="linked"&gt;
+    &lt;PDBo:link_to_pfam rdf:resource="{$pfam}{.}" rdfs:label="pfam:{.}"/&gt;
+    &lt;rdfs:seeAlso rdf:resource="{$idorg}pfam/{.}" rdfs:label="pfam:{.}"/&gt;
   &lt;/xsl:template&gt;
 
-  &lt;xsl:template match="PDBx:pdbx_sifts_xref_db/PDBx:xref_db_acc[../PDBx:xref_db_name='Pfam' and text()!='']" mode="linked"&gt;
-    &lt;PDBo:link_to_pfam rdf:resource="{$pfam}{text()}" rdfs:label="pfam:{text()}"/&gt;
-    &lt;rdfs:seeAlso rdf:resource="{$idorg}pfam/{text()}" rdfs:label="pfam:{text()}"/&gt;
+  &lt;xsl:template match="PDBx:pdbx_sifts_xref_db_segments[@xref_db='CATH' and @xref_db_acc!='']/@xref_db_acc" mode="linked"&gt;
+    &lt;PDBo:link_to_cath rdf:resource="{$cath}{.}" rdfs:label="cath:{.}"/&gt;
+    &lt;rdfs:seeAlso rdf:resource="{$idorg}cath/{.}" rdfs:label="cath:{.}"/&gt;
   &lt;/xsl:template&gt;
 
-  &lt;xsl:template match="PDBx:pdbx_sifts_xref_db_segments/PDBx:xref_db_acc[../PDBx:xref_db_name='CATH' and text()!='']" mode="linked"&gt;
-    &lt;PDBo:link_to_cath_domain rdf:resource="{$cath_domain}{text()}" rdfs:label="cath.domain:{text()}"/&gt;
-    &lt;rdfs:seeAlso rdf:resource="{$idorg}cath.domain/{text()}" rdfs:label="cath.domain:{text()}"/&gt;
+  &lt;xsl:template match="PDBx:pdbx_sifts_xref_db_segments[(@xref_db='SCOP' or @xref_db='SCOP2' or @xref_db='SCOP2B') and @xref_db_acc!='']/@xref_db_acc" mode="linked"&gt;
+    &lt;PDBo:link_to_scop rdf:resource="{$scop}{.}" rdfs:label="scop:{.}"/&gt;
+    &lt;rdfs:seeAlso rdf:resource="{$idorg}scop/{.}" rdfs:label="scop:{.}"/&gt;
   &lt;/xsl:template&gt;
 
-  &lt;xsl:template match="PDBx:pdbx_sifts_xref_db_segments/PDBx:xref_db_acc[(../PDBx:xref_db_name='SCOP' or ../PDBx:xref_db_name='SCOP2' or ../PDBx:xref_db_name='SCOP2B') and text()!='']" mode="linked"&gt;
-    &lt;PDBo:link_to_scop rdf:resource="{$scop}{text()}" rdfs:label="scop:{text()}"/&gt;
-    &lt;rdfs:seeAlso rdf:resource="{$idorg}scop/{text()}" rdfs:label="scop:{text()}"/&gt;
-  &lt;/xsl:template&gt;
-
-  &lt;xsl:template match="PDBx:pdbx_sifts_xref_db_segments/PDBx:xref_db_acc[../PDBx:xref_db_name='Ensemble' and text()!='']" mode="linked"&gt;
-    &lt;PDBo:link_to_ensemble rdf:resource="{$ensemble}{text()}" rdfs:label="ensemble:{text()}"/&gt;
-    &lt;rdfs:seeAlso rdf:resource="{$idorg}ensemble/{text()}" rdfs:label="ensemble:{text()}"/&gt;
+  &lt;xsl:template match="PDBx:pdbx_sifts_xref_db_segments[@xref_db='Ensembl' and @xref_db_acc!='']/@xref_db_acc" mode="linked"&gt;
+    &lt;PDBo:link_to_ensembl rdf:resource="{$ensembl}{.}" rdfs:label="ensembl:{.}"/&gt;
+    &lt;rdfs:seeAlso rdf:resource="{$idorg}ensembl/{.}" rdfs:label="ensembl:{.}"/&gt;
   &lt;/xsl:template&gt;
 
   &lt;xsl:template match="PDBx:pdbx_entity_branch_descriptor/PDBx:descriptor[../PDBx:type='WURCS' and text()!='']" mode="linked"&gt;
