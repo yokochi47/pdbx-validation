@@ -32,11 +32,23 @@ fi
 
 if [ $weekday -ge 1 ] && [ $weekday -le 4 ] ; then
 
- wget -c -r -nv -np ftp://$SRC_DIR -nH 2> /dev/null
+ #wget -c -r -nv -np ftp://$SRC_DIR -nH 2> /dev/null
 
- MD5_DIR=chk_sum_shifts_xml
+ pdb_chain_uniprot_tsv=pdb_chain_uniprot.tsv
+ sifts_xml_list=sifts_xml_list
+ sifts_xml_url=${SIFTS_XML_URL//\//\\\/}
 
- chk_sum_log=shifts_xml_log
+ rm -f $pdb_chain_uniprot_tsv*
+
+ wget ftp://ftp.ebi.ac.uk/pub/databases/msd/sifts/flatfiles/tsv/$pdb_chain_uniprot_tsv.gz && gunzip $pdb_chain_uniprot_tsv.gz
+ sed -e "1,2d" $pdb_chain_uniprot_tsv | cut -f 1 | uniq | sed -e "s/^/ftp:\/\/$sifts_xml_url\//" | sed -e "s/$/\.xml.gz/" > $sifts_xml_list
+ aria2c -i $sifts_xml_list -j $MAXPROCS -d $SIFTS_XML_URL --allow-overwrite=true --auto-file-renaming=false
+
+ rm -f $pdb_chain_uniprot_tsv $sifts_xml_list
+
+ MD5_DIR=chk_sum_sifts_xml
+
+ chk_sum_log=sifts_xml_log
 
  java -classpath $XSD2PGSCHEMA chksumstat --xml $SRC_DIR --xml-file-ext gz --sync $MD5_DIR --update --verbose > $chk_sum_log
 
@@ -96,7 +108,7 @@ if [ -z $MTIME ] ; then
  MTIME=-4
 fi
 
-updated=`find $SRC_DIR/* -name "*.xml.gz" -mtime $MTIME | wc -l 2> /dev/null`
+updated=`find $SRC_DIR -name "*.xml.gz" -mtime $MTIME | wc -l 2> /dev/null`
 
 if [ $updated = 0 ] || [ ! -e $xml_file_total ] ; then
 
@@ -106,7 +118,7 @@ if [ $updated = 0 ] || [ ! -e $xml_file_total ] ; then
   last=`cat $xml_file_total`
  fi
 
- total=`find $SRC_DIR/* -name '*.xml.gz' | wc -l 2> /dev/null`
+ total=`find $SRC_DIR -name '*.xml.gz' | wc -l 2> /dev/null`
 
  if [ $total = $last ] ; then
 
@@ -114,7 +126,7 @@ if [ $updated = 0 ] || [ ! -e $xml_file_total ] ; then
 
  else
 
-   echo $total > $xml_file_total
+  echo $total > $xml_file_total
 
  fi
 
@@ -126,7 +138,7 @@ gz_file_list=`echo ${SRC_DIR,,}_gz_file_list | tr '-' _`
 
 mkdir -p $XML_DIR
 
-find $SRC_DIR/* -name '*.xml.gz' > $gz_file_list
+find $SRC_DIR -name '*.xml.gz' > $gz_file_list
 
 while read gz_file
 do

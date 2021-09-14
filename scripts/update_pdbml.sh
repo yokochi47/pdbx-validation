@@ -259,7 +259,7 @@ if [ -z $MTIME ] ; then
  MTIME=-4
 fi
 
-updated=`find $SRC_DIR/* -name "*.xml.gz" -mtime $MTIME | wc -l 2> /dev/null`
+updated=`find $SRC_DIR -name "*.xml.gz" -mtime $MTIME | wc -l 2> /dev/null`
 
 if [ $updated = 0 ] || [ ! -e $xml_file_total ] ; then
 
@@ -269,7 +269,7 @@ if [ $updated = 0 ] || [ ! -e $xml_file_total ] ; then
   last=`cat $xml_file_total`
  fi
 
- total=`find $SRC_DIR/* -name '*.xml.gz' | wc -l 2> /dev/null`
+ total=`find $SRC_DIR -name '*.xml.gz' | wc -l 2> /dev/null`
 
  if [ $total = $last ] ; then
 
@@ -287,7 +287,7 @@ if [ $updated = 0 ] || [ ! -e $xml_file_total ] ; then
 REMARK
  else
 
-   echo $total > $xml_file_total
+  echo $total > $xml_file_total
 
  fi
 
@@ -301,7 +301,7 @@ gz_file_list=`echo ${SRC_DIR,,}_gz_file_list | tr '-' _`
 
 mkdir -p $XML_DIR
 
-find $SRC_DIR/* -name '*.xml.gz' > $gz_file_list
+find $SRC_DIR -name '*.xml.gz' > $gz_file_list
 
 while read gz_file
 do

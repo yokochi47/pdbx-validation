@@ -267,7 +267,7 @@ if [ $updated = 0 ] || [ ! -e $xml_file_total ] ; then
 REMARK
  else
 
-   echo $total > $xml_file_total
+  echo $total > $xml_file_total
 
  fi
 
