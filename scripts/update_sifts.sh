@@ -35,16 +35,22 @@ if [ $weekday -ge 1 ] && [ $weekday -le 4 ] ; then
  #wget -c -r -nv -np ftp://$SRC_DIR -nH 2> /dev/null
 
  pdb_chain_uniprot_tsv=pdb_chain_uniprot.tsv
+ sifts_xml_all=shifts_xml_all
+ sifts_xml_unz=shifts_xml_unz
+ sifts_xml_new=shifts_xml_new
  sifts_xml_list=sifts_xml_list
  sifts_xml_url=${SIFTS_XML_URL//\//\\\/}
 
  rm -f $pdb_chain_uniprot_tsv*
 
  wget ftp://ftp.ebi.ac.uk/pub/databases/msd/sifts/flatfiles/tsv/$pdb_chain_uniprot_tsv.gz && gunzip $pdb_chain_uniprot_tsv.gz
- sed -e "1,2d" $pdb_chain_uniprot_tsv | cut -f 1 | uniq | sed -e "s/^/ftp:\/\/$sifts_xml_url\//" | sed -e "s/$/\.xml.gz/" > $sifts_xml_list
+ sed -e "1,2d" $pdb_chain_uniprot_tsv | cut -f 1 | uniq > $sifts_xml_all
+ find $XML_DIR -name "*.xml" | cut -d '/' -f 2 | cut -d '.' -f 1 | sort > $sifts_xml_unz
+ comm -23 $sifts_xml_all $sifts_xml_unz > $sifts_xml_new
+ sed -e "s/^/ftp:\/\/$sifts_xml_url\//" $sifts_xml_new | sed -e "s/$/\.xml.gz/" > $sifts_xml_list
  aria2c -i $sifts_xml_list -j $MAXPROCS -d $SIFTS_XML_URL --allow-overwrite=true --auto-file-renaming=false
 
- rm -f $pdb_chain_uniprot_tsv $sifts_xml_list
+ rm -f $pdb_chain_uniprot_tsv $sifts_xml_list $sifts_xml_all $sifts_xml_unz $sifsts_xml_new
 
  MD5_DIR=chk_sum_sifts_xml
 
