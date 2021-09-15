@@ -35,6 +35,8 @@ if [ ! -z $MTIME ] ; then
  MTIME_OPT="-m "$MTIME
 fi
 
+./scripts/update_sifts.sh $MTIME_OPT || exit $?
+
 ./scripts/update_pdbml.sh $MTIME_OPT || exit $?
 
 ./scripts/update_vrpt.sh $MTIME_OPT || exit $?

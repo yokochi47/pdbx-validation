@@ -56,8 +56,8 @@ do
 
   fi
 
-#  pdb_id=`basename $pdbml_file -noatom.xml`
-  pdb_id=`basename $pdbml_gz_file -noatom.xml.gz`
+  #pdb_id=`basename $pdbml_gz_file -noatom.xml.gz`
+  pdb_id=`basename $pdbml_gz_file -noatom-sifts.xml.gz`
   rdf_file=$WORK_DIR/$pdb_id.rdf
   rdf_gz_file=$WORK_DIR/$pdb_id.rdf.gz
   err_file=$WORK_DIR/transl_to_rdf_pdb_$pdb_id.err

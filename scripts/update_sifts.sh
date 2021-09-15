@@ -35,9 +35,9 @@ if [ $weekday -ge 1 ] && [ $weekday -le 4 ] ; then
  #wget -c -r -nv -np ftp://$SRC_DIR -nH 2> /dev/null
 
  pdb_chain_uniprot_tsv=pdb_chain_uniprot.tsv
- sifts_xml_all=shifts_xml_all
- sifts_xml_unz=shifts_xml_unz
- sifts_xml_new=shifts_xml_new
+ sifts_xml_all=sifts_xml_all
+ sifts_xml_unz=sifts_xml_unz
+ sifts_xml_new=sifts_xml_new
  sifts_xml_list=sifts_xml_list
  sifts_xml_url=${SIFTS_XML_URL//\//\\\/}
 
@@ -50,7 +50,7 @@ if [ $weekday -ge 1 ] && [ $weekday -le 4 ] ; then
  sed -e "s/^/ftp:\/\/$sifts_xml_url\//" $sifts_xml_new | sed -e "s/$/\.xml.gz/" > $sifts_xml_list
  aria2c -i $sifts_xml_list -j $MAXPROCS -d $SIFTS_XML_URL --allow-overwrite=true --auto-file-renaming=false
 
- rm -f $pdb_chain_uniprot_tsv $sifts_xml_list $sifts_xml_all $sifts_xml_unz $sifsts_xml_new
+ rm -f $pdb_chain_uniprot_tsv $sifts_xml_list $sifts_xml_all $sifts_xml_unz $sifts_xml_new
 
  MD5_DIR=chk_sum_sifts_xml
 
@@ -61,7 +61,42 @@ if [ $weekday -ge 1 ] && [ $weekday -le 4 ] ; then
  if [ ! -z $MTIME ] ; then
   find $SRC_DIR -name "*.xml.gz" -mtime $MTIME | cut -d '/' -f 3 | cut -d '-' -f 1 > $chk_sum_log
  fi
-<<REMARK
+
+ if [ -d $PDBML_SIFTS ] ; then
+  while read pdb_id ; do
+   [ -z "$pdb_id" ] || [[ "$pdb_id" =~ ^#.* ]] && continue
+   rm -f $PDBML_SIFTS/${pdb_id:1:2}/$pdb_id-noatom-sifts.xml.gz
+  done < $chk_sum_log
+ fi
+
+ if [ -d $PDBML_EXT ] ; then
+  while read pdb_id ; do
+   [ -z "$pdb_id" ] || [[ "$pdb_id" =~ ^#.* ]] && continue
+   rm -f $PDBML_EXT/$pdb_id-noatom-ext.xml.gz
+  done < $chk_sum_log
+ fi
+
+ if [ -d $VALID_INFO_ALT ] ; then
+  while read pdb_id ; do
+   [ -z "$pdb_id" ] || [[ "$pdb_id" =~ ^#.* ]] && continue
+   rm -f $VALID_INFO_ALT/$pdb_id-validation-alt.xml
+  done < $chk_sum_log
+ fi
+
+ if [ -d $XML_VALID_ALT ] ; then
+  while read pdb_id ; do
+   [ -z "$pdb_id" ] || [[ "$pdb_id" =~ ^#.* ]] && continue
+   rm -f $XML_VALID_ALT/$pdb_id-validation-alt.xml
+  done < $chk_sum_log
+ fi
+
+ if [ -d $XML_VALID ] ; then
+  while read pdb_id ; do
+   [ -z "$pdb_id" ] || [[ "$pdb_id" =~ ^#.* ]] && continue
+   rm -f $XML_VALID/$pdb_id-validation-full.xml
+  done < $chk_sum_log
+ fi
+
  if [ -d $RDF_VALID_ALT ] ; then
   while read pdb_id ; do
    [ -z "$pdb_id" ] || [[ "$pdb_id" =~ ^#.* ]] && continue
@@ -80,6 +115,34 @@ if [ $weekday -ge 1 ] && [ $weekday -le 4 ] ; then
   while read pdb_id ; do
    [ -z "$pdb_id" ] || [[ "$pdb_id" =~ ^#.* ]] && continue
    rm -f $RDF/$pdb_id.rdf
+  done < $chk_sum_log
+ fi
+
+ if [ -d $MMCIF_VALID_ALT ] ; then
+  while read pdb_id ; do
+   [ -z "$pdb_id" ] || [[ "$pdb_id" =~ ^#.* ]] && continue
+   rm -f $MMCIF_VALID_ALT/$pdb_id-validation-alt.cif
+  done < $chk_sum_log
+ fi
+
+ if [ -d $MMCIF_VALID ] ; then
+  while read pdb_id ; do
+   [ -z "$pdb_id" ] || [[ "$pdb_id" =~ ^#.* ]] && continue
+   rm -f $MMCIF_VALID/$pdb_id-validation-full.cif
+  done < $chk_sum_log
+ fi
+
+ if [ -d $XML_VALID_ALT ] ; then
+  while read pdb_id ; do
+   [ -z "$pdb_id" ] || [[ "$pdb_id" =~ ^#.* ]] && continue
+   rm -f $XML_VALID_ALT/${pdb_id:1:2}/$pdb_id-validation-alt.xml.gz
+  done < $chk_sum_log
+ fi
+
+ if [ -d $XML_VALID ] ; then
+  while read pdb_id ; do
+   [ -z "$pdb_id" ] || [[ "$pdb_id" =~ ^#.* ]] && continue
+   rm -f $XML_VALID/${pdb_id:1:2}/$pdb_id-validation-full.xml.gz
   done < $chk_sum_log
  fi
 
@@ -103,12 +166,26 @@ if [ $weekday -ge 1 ] && [ $weekday -le 4 ] ; then
    rm -f $RDF/$pdb_id.rdf.gz
   done < $chk_sum_log
  fi
-REMARK
+
+ if [ -d $MMCIF_VALID_ALT ] ; then
+  while read pdb_id ; do
+   [ -z "$pdb_id" ] || [[ "$pdb_id" =~ ^#.* ]] && continue
+   rm -f $MMCIF_VALID_ALT/${pdb_id:1:2}/$pdb_id-validation-alt.cif.gz
+  done < $chk_sum_log
+ fi
+
+ if [ -d $MMCIF_VALID ] ; then
+  while read pdb_id ; do
+   [ -z "$pdb_id" ] || [[ "$pdb_id" =~ ^#.* ]] && continue
+   rm -f $MMCIF_VALID/${pdb_id:1:2}/$pdb_id-validation-full.cif.gz
+  done < $chk_sum_log
+ fi
+
  rm -f $chk_sum_log
 
 fi
 
-xml_file_total=sifts_xml_file_total
+xml_file_total=sifts_file_total
 
 if [ -z $MTIME ] ; then
  MTIME=-4

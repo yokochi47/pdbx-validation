@@ -164,9 +164,11 @@ File path | Document
 
 ## Release notes
 
+- **Sep 15, 2021**: Release v4.2.0
+	- Integrate SIFT dataset.
+
 - **Sep 13, 2021**: Release v4.1.1
 	- Update wwPDB Validation Information Dictionary to 4.350.
-	- Add update script for SIFT dataset for future work.
 
 - **Sep 9, 2021**: Release v4.1.0
 	- Change prefixes as follows.

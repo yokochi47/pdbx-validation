@@ -129,14 +129,14 @@ if [ $weekday -ge 1 ] && [ $weekday -le 4 ] ; then
  if [ ! -z $MTIME ] ; then
   find $SRC_DIR -name "*.xml.gz" -mtime $MTIME | cut -d '/' -f 3 | cut -d '-' -f 1 > $chk_sum_log
  fi
-<<REMARK
- if [ -d $XML_DIR ] ; then
+
+ if [ -d $PDBML_SIFTS ] ; then
   while read pdb_id ; do
    [ -z "$pdb_id" ] || [[ "$pdb_id" =~ ^#.* ]] && continue
-   rm -f $XML_DIR/$pdb_id-noatom.xml
+   rm -f $PDBML_SIFTS/${pdb_id:1:2}/$pdb_id-noatom-sifts.xml.gz
   done < $chk_sum_log
  fi
-REMARK
+
  if [ -d $PDBML_EXT ] ; then
   while read pdb_id ; do
    [ -z "$pdb_id" ] || [[ "$pdb_id" =~ ^#.* ]] && continue

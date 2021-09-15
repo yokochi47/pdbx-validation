@@ -23,15 +23,23 @@ if [ ! -e $PDBML2RDF_XSL ] ; then
 
 fi
 
+if [ ! -d $SIFTS_XML ] ; then
+ ./scripts/update_sifts.sh
+fi
+
 if [ ! -d $PDBML_NOATOM ] ; then
  ./scripts/update_pdbml.sh
+fi
+
+if [ ! -d $PDBML_NOATOM_SIFTS ] ; then
+ ./scripts/merge_pdbml_sifts.sh
 fi
 
 mkdir -p $RDF
 
 last=`find $RDF -maxdepth 1 -name '*.rdf.gz' | wc -l 2> /dev/null`
-#total=`find $PDBML -maxdepth 1 -name '*.xml' | wc -l 2> /dev/null`
-total=`find $PDBML_NOATOM -maxdepth 2 -name '*-noatom.xml.gz' | wc -l 2> /dev/null`
+#total=`find $PDBML_NOATOM -maxdepth 2 -name '*-noatom.xml.gz' | wc -l 2> /dev/null`
+total=`find $PDBML_NOATOM_SIFTS -maxdepth 2 -name '*-noatom-sifts.xml.gz' | wc -l 2> /dev/null`
 err=`find $RDF -maxdepth 1 -name '*.err' | wc -l 2> /dev/null`
 
 if [ $err != 0 ] || [ $total != $last ] ; then
@@ -41,8 +49,8 @@ if [ $err != 0 ] || [ $total != $last ] ; then
 
  pdbml_file_list=pdbml_to_rdf_pdb_file_list
 
-# find $PDBML -maxdepth 1 -name '*.xml' > $pdbml_file_list
- find $PDBML_NOATOM -maxdepth 2 -name '*-noatom.xml.gz' > $pdbml_file_list
+ #find $PDBML_NOATOM -maxdepth 2 -name '*-noatom.xml.gz' > $pdbml_file_list
+ find $PDBML_NOATOM_SIFTS -maxdepth 2 -name '*-noatom-sifts.xml.gz' > $pdbml_file_list
 
  for proc_id in `seq 1 $MAXPROCS` ; do
 

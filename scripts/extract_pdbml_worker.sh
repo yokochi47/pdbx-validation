@@ -61,10 +61,9 @@ do
 
   fi
 
-#  pdb_id=`basename $pdbml_file -noatom.xml`
-  pdb_id=`basename $pdbml_gz_file -noatom.xml.gz`
+  #pdb_id=`basename $pdbml_gz_file -noatom.xml.gz`
+  pdb_id=`basename $pdbml_gz_file -noatom-sifts.xml.gz`
   pdbml_ext_file=$WORK_DIR/$pdb_id-noatom-ext.xml
-#  info_file=$VALID_INFO/$pdb_id"_validation.xml"
   info_gz_file=$VALID_REPORT/${pdb_id:1:2}/$pdb_id/$pdb_id"_validation.xml.gz"
   err_file=$WORK_DIR/extract_pdbml_$pdb_id.err
 
