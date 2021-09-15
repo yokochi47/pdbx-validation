@@ -22,11 +22,11 @@ rm -f *_list *_total url_mirror
 
 rm -rf extlibs
 
-rm -f $PDBML2RDF_XSL
+rm -f $MERGE_PDBML_INFO_XSL $PDBML2RDF_XSL
 
 WORK_DIR=.
 
-rm -rf $WORK_DIR/$RDF
+rm -rf $WORK_DIR/$PDBML_NOATOM_SIFTS $WORK_DIR/$RDF
 
 for dir in chk_sum_pdbml_noatom; do
  cd $dir; find . -type f | xargs rm -f; cd ..; rmdir $dir
@@ -34,5 +34,5 @@ done
 
 WORK_DIR=test
 
-rm -rf $WORK_DIR/$RDF
+rm -rf $WORK_DIR/$PDBML_NOATOM_SIFTS $WORK_DIR/$RDF
 

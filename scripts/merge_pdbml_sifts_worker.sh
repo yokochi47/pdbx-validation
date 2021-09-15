@@ -83,37 +83,46 @@ do
     cp $pdbml_gz_file $div_dir/$pdb_id-noatom-sifts.xml.gz
 
    fi
-   
+
   elif ( ( [ ! -e $pdbml_sifts_file ] && [ ! -e $div_dir/`basename $pdbml_sifts_file`.gz ] ) || [ -e $err_file ] ); then
 
    pdbml_file=${pdbml_gz_file%.*} # remove the last '.gz'
    gunzip -c $pdbml_gz_file > $pdbml_file || exit 1
 
-   java -jar $SAXON -s:$pdbml_file -xsl:$MERGE_PDBML_SIFTS_XSL -o:$pdbml_sifts_file sifts_file=../$sifts_xml_file 2> $err_file && rm -f $err_file $pdbml_file || ( rm -f $pdbml_file $pdbml_sifts_file ; cat $err_file ; exit 1 )
+   java -jar $SAXON -s:$pdbml_file -xsl:$MERGE_PDBML_SIFTS_XSL -o:$pdbml_sifts_file sifts_file=../$sifts_xml_file 2> $err_file && rm -f $err_file $pdbml_file || ( rm -f $pdbml_file $pdbml_sifts_file ; cat $err_file )
 
-   xml_pretty $pdbml_sifts_file
+   if [ -e $pdbml_sifts_file ] ; then
 
-   mk_div_dir $div_dir
+    xml_pretty $pdbml_sifts_file
 
-   if [ $VALIDATE = 'true' ] ; then
+    mk_div_dir $div_dir
 
-    java -classpath $XSD2PGSCHEMA xmlvalidator --xsd $PDBML_XSD --xml $pdbml_sifts_file > /dev/null 2> $err_file
+    if [ $VALIDATE = 'true' ] ; then
 
-    if [ $? = 0 ] && [ -s $pdbml_sifts_file ] ; then
-     rm -f $err_file
+     java -classpath $XSD2PGSCHEMA xmlvalidator --xsd $PDBML_XSD --xml $pdbml_sifts_file > /dev/null 2> $err_file
+
+     if [ $? = 0 ] && [ -s $pdbml_sifts_file ] ; then
+      rm -f $err_file
+      gzip_in_div_dir $pdbml_sifts_file $div_dir
+      if [ $proc_id_mod = 0 ] ; then
+       echo -e -n "\rDone "$((proc_id + 1)) of $total ...
+      fi
+     else
+      cat $err_file
+     fi
+
+    elif [ -s $pdbml_sifts_file ] ; then
      gzip_in_div_dir $pdbml_sifts_file $div_dir
      if [ $proc_id_mod = 0 ] ; then
       echo -e -n "\rDone "$((proc_id + 1)) of $total ...
      fi
-    else
-     cat $err_file
     fi
 
-   elif [ -s $pdbml_sifts_file ] ; then
-    gzip_in_div_dir $pdbml_sifts_file $div_dir
-    if [ $proc_id_mod = 0 ] ; then
-     echo -e -n "\rDone "$((proc_id + 1)) of $total ...
-    fi
+   else
+
+    mk_div_dir $div_dir
+    cp $pdbml_gz_file $div_dir/$pdb_id-noatom-sifts.xml.gz
+
    fi
 
   fi
