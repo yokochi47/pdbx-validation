@@ -89,7 +89,7 @@ do
    pdbml_file=${pdbml_gz_file%.*} # remove the last '.gz'
    gunzip -c $pdbml_gz_file > $pdbml_file || exit 1
 
-   java -jar $SAXON -s:$pdbml_file -xsl:$MERGE_PDBML_SIFTS_XSL -o:$pdbml_sifts_file sifts_file=../$sifts_xml_file 2> $err_file && rm -f $err_file $pdbml_file || ( rm -f $pdbml_file $pdbml_sifts_file ; cat $err_file )
+   java -jar $SAXON -s:$pdbml_file -xsl:$MERGE_PDBML_SIFTS_XSL -o:$pdbml_sifts_file sifts_file=../$sifts_xml_file 2> $err_file && rm -f $err_file $pdbml_file || ( rm -f $pdbml_file $pdbml_sifts_file $sifts_xml_file ; cat $err_file )
 
    if [ -e $pdbml_sifts_file ] ; then
 
