@@ -15717,8 +15717,7 @@ NQLSISPVRDETGNVVAFVGVQTDVTA</PDBo:struct_ref.pdbx_seq_one_letter_code>
             <PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>8095379</PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>
             <PDBo:pdbx_sifts_xref_db_segments.segment_id>1</PDBo:pdbx_sifts_xref_db_segments.segment_id>
             <PDBo:pdbx_sifts_xref_db_segments.instance_id>1</PDBo:pdbx_sifts_xref_db_segments.instance_id>
-            <PDBo:link_to_scop rdf:resource="http://scop.berkeley.edu/sunid=8095379" rdfs:label="scop:8095379"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/scop/8095379" rdfs:label="scop:8095379"/>
+            <PDBo:link_to_scop rdf:resource="https://scop2.mrc-lmb.cam.ac.uk/term/8095379" rdfs:label="scop2:8095379"/>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start>2</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end>107</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
           </PDBo:pdbx_sifts_xref_db_segments>
@@ -15757,8 +15756,7 @@ NQLSISPVRDETGNVVAFVGVQTDVTA</PDBo:struct_ref.pdbx_seq_one_letter_code>
             <PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>8095379</PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>
             <PDBo:pdbx_sifts_xref_db_segments.segment_id>1</PDBo:pdbx_sifts_xref_db_segments.segment_id>
             <PDBo:pdbx_sifts_xref_db_segments.instance_id>1</PDBo:pdbx_sifts_xref_db_segments.instance_id>
-            <PDBo:link_to_scop rdf:resource="http://scop.berkeley.edu/sunid=8095379" rdfs:label="scop:8095379"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/scop/8095379" rdfs:label="scop:8095379"/>
+            <PDBo:link_to_scop rdf:resource="https://scop2.mrc-lmb.cam.ac.uk/term/8095379" rdfs:label="scop2:8095379"/>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start>2</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end>105</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
           </PDBo:pdbx_sifts_xref_db_segments>

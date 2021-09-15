@@ -3568,7 +3568,7 @@ Unmatched entry ID in both documents (<xsl:value-of select="$entry_id"/> and <xs
           <xsl:variable name="xref_db"><xsl:value-of select="@dbSource"/></xsl:variable>
           <xsl:variable name="xref_db_acc">
             <xsl:choose>
-              <xsl:when test="contains(@dbAccessionId,':')">
+              <xsl:when test="contains(@dbAccessionId,':') and @dbSource!='GO'">
                 <xsl:value-of select="substring-after(@dbAccessionId,':')"/>
               </xsl:when>
               <xsl:otherwise>
@@ -3608,7 +3608,7 @@ Unmatched entry ID in both documents (<xsl:value-of select="$entry_id"/> and <xs
   </xsl:template>
 
   <xsl:template name="merge_pdbx_sifts_xref_db_segments">
-    <xsl:if test="PDBx:datablock/PDBx:pdbx_sifts_xref_db_segmentsCategory or $sifts_entry/sifts:entity/sifts:segment">
+    <xsl:if test="PDBx:datablock/PDBx:pdbx_sifts_xref_db_segmentsCategory or $sifts_entry/sifts:entity/sifts:segment/sifts:listMapRegion/sifts:mapRegion/sifts:db[@dbSource!='PDB' and @dbSource!='UniProt' and @dbSource!='EC']">
       <xsl:element name="PDBx:pdbx_sifts_xref_db_segmentsCategory">
         <xsl:choose>
           <xsl:when test="PDBx:datablock/PDBx:pdbx_sifts_xref_db_segmentsCategory">

@@ -670,6 +670,16 @@
       <VRPTx:end_label_seq_id>24</VRPTx:end_label_seq_id>
     </VRPTx:struct_sheet_range>
   </VRPTx:struct_sheet_rangeCategory>
+  <VRPTx:pdbx_sifts_unp_segmentsCategory>
+    <VRPTx:pdbx_sifts_unp_segments entity_id="" asym_id="A" unp_acc="Q8QGN9" segment_id="1" instance_id="1">
+      <VRPTx:unp_start>796</VRPTx:unp_start>
+      <VRPTx:unp_end>819</VRPTx:unp_end>
+      <VRPTx:seq_id_start>1</VRPTx:seq_id_start>
+      <VRPTx:seq_id_end>24</VRPTx:seq_id_end>
+      <VRPTx:best_mapping>Y</VRPTx:best_mapping>
+      <VRPTx:identity>1.000</VRPTx:identity>
+    </VRPTx:pdbx_sifts_unp_segments>
+  </VRPTx:pdbx_sifts_unp_segmentsCategory>
   <VRPTx:pdbx_nmr_assigned_chem_shift_listCategory>
     <VRPTx:pdbx_nmr_assigned_chem_shift_list id="1">
       <VRPTx:data_file_name>working_cs.cif</VRPTx:data_file_name>

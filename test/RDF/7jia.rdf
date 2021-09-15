@@ -2261,8 +2261,5 @@
         </PDBo:has_pdbx_sifts_unp_segments>
       </PDBo:pdbx_sifts_unp_segmentsCategory>
     </PDBo:has_pdbx_sifts_unp_segmentsCategory>
-    <PDBo:has_pdbx_sifts_xref_db_segmentsCategory>
-      <PDBo:pdbx_sifts_xref_db_segmentsCategory rdf:about="https://rdf.wwpdb.org/pdb/7JIA/pdbx_sifts_xref_db_segmentsCategory"/>
-    </PDBo:has_pdbx_sifts_xref_db_segmentsCategory>
   </PDBo:datablock>
 </rdf:RDF>

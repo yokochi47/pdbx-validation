@@ -15223,21 +15223,21 @@ INGRNNLIQQKN</PDBo:struct_ref.pdbx_seq_one_letter_code>
     <PDBo:has_pdbx_sifts_xref_db_segmentsCategory>
       <PDBo:pdbx_sifts_xref_db_segmentsCategory rdf:about="https://rdf.wwpdb.org/pdb/5U9B/pdbx_sifts_xref_db_segmentsCategory">
         <PDBo:has_pdbx_sifts_xref_db_segments>
-          <PDBo:pdbx_sifts_xref_db_segments rdf:about="https://rdf.wwpdb.org/pdb/5U9B/pdbx_sifts_xref_db_segments/A,,1,1,GO,0046872">
+          <PDBo:pdbx_sifts_xref_db_segments rdf:about="https://rdf.wwpdb.org/pdb/5U9B/pdbx_sifts_xref_db_segments/A,,1,1,GO,GO:0046872">
             <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/pdb/5U9B"/>
             <PDBo:reference_to_struct_asym>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/5U9B/struct_asym/A">
-                <PDBo:referenced_by_pdbx_sifts_xref_db_segments rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_sifts_xref_db_segments/A,,1,1,GO,0046872"/>
+                <PDBo:referenced_by_pdbx_sifts_xref_db_segments rdf:resource="https://rdf.wwpdb.org/pdb/5U9B/pdbx_sifts_xref_db_segments/A,,1,1,GO,GO:0046872"/>
               </rdf:Description>
             </PDBo:reference_to_struct_asym>
             <PDBo:pdbx_sifts_xref_db_segments.entity_id/>
             <PDBo:pdbx_sifts_xref_db_segments.asym_id>A</PDBo:pdbx_sifts_xref_db_segments.asym_id>
             <PDBo:pdbx_sifts_xref_db_segments.xref_db>GO</PDBo:pdbx_sifts_xref_db_segments.xref_db>
-            <PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>0046872</PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>
+            <PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>GO:0046872</PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>
             <PDBo:pdbx_sifts_xref_db_segments.segment_id>1</PDBo:pdbx_sifts_xref_db_segments.segment_id>
             <PDBo:pdbx_sifts_xref_db_segments.instance_id>1</PDBo:pdbx_sifts_xref_db_segments.instance_id>
-            <PDBo:link_to_go rdf:resource="http://amigo.geneontology.org/amigo/term/GO:0046872" rdfs:label="go:0046872"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:0046872" rdfs:label="go:0046872"/>
+            <PDBo:link_to_go rdf:resource="http://amigo.geneontology.org/amigo/term/GO:0046872" rdfs:label="GO:0046872"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/GO:0046872" rdfs:label="GO:0046872"/>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start>1</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end>92</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
           </PDBo:pdbx_sifts_xref_db_segments>

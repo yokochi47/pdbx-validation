@@ -45531,7 +45531,7 @@ VANGQVGIPKLEVDHISFSNVVSMMTANIRTGDDMAVERVNPDDVRAINIRNA</PDBx:pdbx_seq_one_letter_
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="A"
                                         xref_db="GO"
-                                        xref_db_acc="0019028"
+                                        xref_db_acc="GO:0019028"
                                         segment_id="1"
                                         instance_id="1">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -45540,7 +45540,7 @@ VANGQVGIPKLEVDHISFSNVVSMMTANIRTGDDMAVERVNPDDVRAINIRNA</PDBx:pdbx_seq_one_letter_
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="A"
                                         xref_db="GO"
-                                        xref_db_acc="0039616"
+                                        xref_db_acc="GO:0039616"
                                         segment_id="1"
                                         instance_id="2">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -45549,7 +45549,7 @@ VANGQVGIPKLEVDHISFSNVVSMMTANIRTGDDMAVERVNPDDVRAINIRNA</PDBx:pdbx_seq_one_letter_
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="A"
                                         xref_db="GO"
-                                        xref_db_acc="0039625"
+                                        xref_db_acc="GO:0039625"
                                         segment_id="1"
                                         instance_id="3">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -45558,7 +45558,7 @@ VANGQVGIPKLEVDHISFSNVVSMMTANIRTGDDMAVERVNPDDVRAINIRNA</PDBx:pdbx_seq_one_letter_
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="B"
                                         xref_db="GO"
-                                        xref_db_acc="0019028"
+                                        xref_db_acc="GO:0019028"
                                         segment_id="1"
                                         instance_id="1">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -45567,7 +45567,7 @@ VANGQVGIPKLEVDHISFSNVVSMMTANIRTGDDMAVERVNPDDVRAINIRNA</PDBx:pdbx_seq_one_letter_
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="B"
                                         xref_db="GO"
-                                        xref_db_acc="0039616"
+                                        xref_db_acc="GO:0039616"
                                         segment_id="1"
                                         instance_id="2">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -45576,7 +45576,7 @@ VANGQVGIPKLEVDHISFSNVVSMMTANIRTGDDMAVERVNPDDVRAINIRNA</PDBx:pdbx_seq_one_letter_
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="B"
                                         xref_db="GO"
-                                        xref_db_acc="0039625"
+                                        xref_db_acc="GO:0039625"
                                         segment_id="1"
                                         instance_id="3">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>

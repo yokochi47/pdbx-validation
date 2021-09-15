@@ -45,14 +45,13 @@ for arg ; do
  if [[ $pdbid =~ [0-9][0-9a-z]{3} ]] ; then
 
    pdbml_file=$WORK_DIR/$PDBML/$pdbid-noatom.xml
+   sifts_xml_file=$WORK_DIR/$SIFTS_XML/$pdbid.xml
 
    if [ ! -e $pdbml_file ] ; then
 
     wget ftp://ftp.wwpdb.org/pub/pdb/data/structures/all/XML-noatom/$pdbid-noatom.xml.gz -P $WORK_DIR/pdbml; gunzip $pdbml_file.gz
 
    fi
-
-   sifts_xml_file=$WORK_DIR/$SIFTS_XML/$pdbid.xml
 
    if [ ! -e $sifts_xml_file ] ; then
 

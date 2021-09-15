@@ -57697,7 +57697,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="A"
                                         xref_db="GO"
-                                        xref_db_acc="0005506"
+                                        xref_db_acc="GO:0005506"
                                         segment_id="1"
                                         instance_id="1">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -57706,7 +57706,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="A"
                                         xref_db="GO"
-                                        xref_db_acc="0005737"
+                                        xref_db_acc="GO:0005737"
                                         segment_id="1"
                                         instance_id="2">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -57715,7 +57715,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="A"
                                         xref_db="GO"
-                                        xref_db_acc="0006826"
+                                        xref_db_acc="GO:0006826"
                                         segment_id="1"
                                         instance_id="3">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -57724,7 +57724,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="A"
                                         xref_db="GO"
-                                        xref_db_acc="0006879"
+                                        xref_db_acc="GO:0006879"
                                         segment_id="1"
                                         instance_id="4">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -57733,7 +57733,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="A"
                                         xref_db="GO"
-                                        xref_db_acc="0006879"
+                                        xref_db_acc="GO:0006879"
                                         segment_id="1"
                                         instance_id="5">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -57742,7 +57742,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="A"
                                         xref_db="GO"
-                                        xref_db_acc="0006880"
+                                        xref_db_acc="GO:0006880"
                                         segment_id="1"
                                         instance_id="6">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -57751,7 +57751,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="A"
                                         xref_db="GO"
-                                        xref_db_acc="0008043"
+                                        xref_db_acc="GO:0008043"
                                         segment_id="1"
                                         instance_id="7">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -57760,7 +57760,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="A"
                                         xref_db="GO"
-                                        xref_db_acc="0008198"
+                                        xref_db_acc="GO:0008198"
                                         segment_id="1"
                                         instance_id="8">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -57769,7 +57769,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="A"
                                         xref_db="GO"
-                                        xref_db_acc="0008199"
+                                        xref_db_acc="GO:0008199"
                                         segment_id="1"
                                         instance_id="9">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -57778,7 +57778,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="A"
                                         xref_db="GO"
-                                        xref_db_acc="0008199"
+                                        xref_db_acc="GO:0008199"
                                         segment_id="1"
                                         instance_id="10">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -57787,7 +57787,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="A"
                                         xref_db="GO"
-                                        xref_db_acc="0008199"
+                                        xref_db_acc="GO:0008199"
                                         segment_id="1"
                                         instance_id="11">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -57796,7 +57796,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="A"
                                         xref_db="GO"
-                                        xref_db_acc="0046872"
+                                        xref_db_acc="GO:0046872"
                                         segment_id="1"
                                         instance_id="12">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -57949,7 +57949,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="B"
                                         xref_db="GO"
-                                        xref_db_acc="0005506"
+                                        xref_db_acc="GO:0005506"
                                         segment_id="1"
                                         instance_id="1">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -57958,7 +57958,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="B"
                                         xref_db="GO"
-                                        xref_db_acc="0005737"
+                                        xref_db_acc="GO:0005737"
                                         segment_id="1"
                                         instance_id="2">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -57967,7 +57967,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="B"
                                         xref_db="GO"
-                                        xref_db_acc="0006826"
+                                        xref_db_acc="GO:0006826"
                                         segment_id="1"
                                         instance_id="3">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -57976,7 +57976,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="B"
                                         xref_db="GO"
-                                        xref_db_acc="0006879"
+                                        xref_db_acc="GO:0006879"
                                         segment_id="1"
                                         instance_id="4">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -57985,7 +57985,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="B"
                                         xref_db="GO"
-                                        xref_db_acc="0006879"
+                                        xref_db_acc="GO:0006879"
                                         segment_id="1"
                                         instance_id="5">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -57994,7 +57994,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="B"
                                         xref_db="GO"
-                                        xref_db_acc="0006880"
+                                        xref_db_acc="GO:0006880"
                                         segment_id="1"
                                         instance_id="6">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -58003,7 +58003,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="B"
                                         xref_db="GO"
-                                        xref_db_acc="0008043"
+                                        xref_db_acc="GO:0008043"
                                         segment_id="1"
                                         instance_id="7">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -58012,7 +58012,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="B"
                                         xref_db="GO"
-                                        xref_db_acc="0008198"
+                                        xref_db_acc="GO:0008198"
                                         segment_id="1"
                                         instance_id="8">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -58021,7 +58021,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="B"
                                         xref_db="GO"
-                                        xref_db_acc="0008199"
+                                        xref_db_acc="GO:0008199"
                                         segment_id="1"
                                         instance_id="9">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -58030,7 +58030,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="B"
                                         xref_db="GO"
-                                        xref_db_acc="0008199"
+                                        xref_db_acc="GO:0008199"
                                         segment_id="1"
                                         instance_id="10">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -58039,7 +58039,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="B"
                                         xref_db="GO"
-                                        xref_db_acc="0008199"
+                                        xref_db_acc="GO:0008199"
                                         segment_id="1"
                                         instance_id="11">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -58048,7 +58048,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="B"
                                         xref_db="GO"
-                                        xref_db_acc="0046872"
+                                        xref_db_acc="GO:0046872"
                                         segment_id="1"
                                         instance_id="12">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -58201,7 +58201,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="C"
                                         xref_db="GO"
-                                        xref_db_acc="0005506"
+                                        xref_db_acc="GO:0005506"
                                         segment_id="1"
                                         instance_id="1">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -58210,7 +58210,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="C"
                                         xref_db="GO"
-                                        xref_db_acc="0005737"
+                                        xref_db_acc="GO:0005737"
                                         segment_id="1"
                                         instance_id="2">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -58219,7 +58219,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="C"
                                         xref_db="GO"
-                                        xref_db_acc="0006826"
+                                        xref_db_acc="GO:0006826"
                                         segment_id="1"
                                         instance_id="3">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -58228,7 +58228,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="C"
                                         xref_db="GO"
-                                        xref_db_acc="0006879"
+                                        xref_db_acc="GO:0006879"
                                         segment_id="1"
                                         instance_id="4">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -58237,7 +58237,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="C"
                                         xref_db="GO"
-                                        xref_db_acc="0006879"
+                                        xref_db_acc="GO:0006879"
                                         segment_id="1"
                                         instance_id="5">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -58246,7 +58246,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="C"
                                         xref_db="GO"
-                                        xref_db_acc="0006880"
+                                        xref_db_acc="GO:0006880"
                                         segment_id="1"
                                         instance_id="6">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -58255,7 +58255,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="C"
                                         xref_db="GO"
-                                        xref_db_acc="0008043"
+                                        xref_db_acc="GO:0008043"
                                         segment_id="1"
                                         instance_id="7">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -58264,7 +58264,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="C"
                                         xref_db="GO"
-                                        xref_db_acc="0008198"
+                                        xref_db_acc="GO:0008198"
                                         segment_id="1"
                                         instance_id="8">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -58273,7 +58273,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="C"
                                         xref_db="GO"
-                                        xref_db_acc="0008199"
+                                        xref_db_acc="GO:0008199"
                                         segment_id="1"
                                         instance_id="9">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -58282,7 +58282,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="C"
                                         xref_db="GO"
-                                        xref_db_acc="0008199"
+                                        xref_db_acc="GO:0008199"
                                         segment_id="1"
                                         instance_id="10">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -58291,7 +58291,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="C"
                                         xref_db="GO"
-                                        xref_db_acc="0008199"
+                                        xref_db_acc="GO:0008199"
                                         segment_id="1"
                                         instance_id="11">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -58300,7 +58300,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="C"
                                         xref_db="GO"
-                                        xref_db_acc="0046872"
+                                        xref_db_acc="GO:0046872"
                                         segment_id="1"
                                         instance_id="12">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -58453,7 +58453,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="D"
                                         xref_db="GO"
-                                        xref_db_acc="0005506"
+                                        xref_db_acc="GO:0005506"
                                         segment_id="1"
                                         instance_id="1">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -58462,7 +58462,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="D"
                                         xref_db="GO"
-                                        xref_db_acc="0005737"
+                                        xref_db_acc="GO:0005737"
                                         segment_id="1"
                                         instance_id="2">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -58471,7 +58471,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="D"
                                         xref_db="GO"
-                                        xref_db_acc="0006826"
+                                        xref_db_acc="GO:0006826"
                                         segment_id="1"
                                         instance_id="3">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -58480,7 +58480,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="D"
                                         xref_db="GO"
-                                        xref_db_acc="0006879"
+                                        xref_db_acc="GO:0006879"
                                         segment_id="1"
                                         instance_id="4">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -58489,7 +58489,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="D"
                                         xref_db="GO"
-                                        xref_db_acc="0006879"
+                                        xref_db_acc="GO:0006879"
                                         segment_id="1"
                                         instance_id="5">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -58498,7 +58498,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="D"
                                         xref_db="GO"
-                                        xref_db_acc="0006880"
+                                        xref_db_acc="GO:0006880"
                                         segment_id="1"
                                         instance_id="6">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -58507,7 +58507,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="D"
                                         xref_db="GO"
-                                        xref_db_acc="0008043"
+                                        xref_db_acc="GO:0008043"
                                         segment_id="1"
                                         instance_id="7">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -58516,7 +58516,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="D"
                                         xref_db="GO"
-                                        xref_db_acc="0008198"
+                                        xref_db_acc="GO:0008198"
                                         segment_id="1"
                                         instance_id="8">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -58525,7 +58525,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="D"
                                         xref_db="GO"
-                                        xref_db_acc="0008199"
+                                        xref_db_acc="GO:0008199"
                                         segment_id="1"
                                         instance_id="9">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -58534,7 +58534,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="D"
                                         xref_db="GO"
-                                        xref_db_acc="0008199"
+                                        xref_db_acc="GO:0008199"
                                         segment_id="1"
                                         instance_id="10">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -58543,7 +58543,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="D"
                                         xref_db="GO"
-                                        xref_db_acc="0008199"
+                                        xref_db_acc="GO:0008199"
                                         segment_id="1"
                                         instance_id="11">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -58552,7 +58552,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="D"
                                         xref_db="GO"
-                                        xref_db_acc="0046872"
+                                        xref_db_acc="GO:0046872"
                                         segment_id="1"
                                         instance_id="12">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -58705,7 +58705,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="E"
                                         xref_db="GO"
-                                        xref_db_acc="0005506"
+                                        xref_db_acc="GO:0005506"
                                         segment_id="1"
                                         instance_id="1">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -58714,7 +58714,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="E"
                                         xref_db="GO"
-                                        xref_db_acc="0005737"
+                                        xref_db_acc="GO:0005737"
                                         segment_id="1"
                                         instance_id="2">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -58723,7 +58723,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="E"
                                         xref_db="GO"
-                                        xref_db_acc="0006826"
+                                        xref_db_acc="GO:0006826"
                                         segment_id="1"
                                         instance_id="3">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -58732,7 +58732,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="E"
                                         xref_db="GO"
-                                        xref_db_acc="0006879"
+                                        xref_db_acc="GO:0006879"
                                         segment_id="1"
                                         instance_id="4">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -58741,7 +58741,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="E"
                                         xref_db="GO"
-                                        xref_db_acc="0006879"
+                                        xref_db_acc="GO:0006879"
                                         segment_id="1"
                                         instance_id="5">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -58750,7 +58750,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="E"
                                         xref_db="GO"
-                                        xref_db_acc="0006880"
+                                        xref_db_acc="GO:0006880"
                                         segment_id="1"
                                         instance_id="6">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -58759,7 +58759,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="E"
                                         xref_db="GO"
-                                        xref_db_acc="0008043"
+                                        xref_db_acc="GO:0008043"
                                         segment_id="1"
                                         instance_id="7">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -58768,7 +58768,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="E"
                                         xref_db="GO"
-                                        xref_db_acc="0008198"
+                                        xref_db_acc="GO:0008198"
                                         segment_id="1"
                                         instance_id="8">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -58777,7 +58777,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="E"
                                         xref_db="GO"
-                                        xref_db_acc="0008199"
+                                        xref_db_acc="GO:0008199"
                                         segment_id="1"
                                         instance_id="9">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -58786,7 +58786,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="E"
                                         xref_db="GO"
-                                        xref_db_acc="0008199"
+                                        xref_db_acc="GO:0008199"
                                         segment_id="1"
                                         instance_id="10">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -58795,7 +58795,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="E"
                                         xref_db="GO"
-                                        xref_db_acc="0008199"
+                                        xref_db_acc="GO:0008199"
                                         segment_id="1"
                                         instance_id="11">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -58804,7 +58804,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="E"
                                         xref_db="GO"
-                                        xref_db_acc="0046872"
+                                        xref_db_acc="GO:0046872"
                                         segment_id="1"
                                         instance_id="12">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -58957,7 +58957,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="F"
                                         xref_db="GO"
-                                        xref_db_acc="0005506"
+                                        xref_db_acc="GO:0005506"
                                         segment_id="1"
                                         instance_id="1">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -58966,7 +58966,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="F"
                                         xref_db="GO"
-                                        xref_db_acc="0005737"
+                                        xref_db_acc="GO:0005737"
                                         segment_id="1"
                                         instance_id="2">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -58975,7 +58975,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="F"
                                         xref_db="GO"
-                                        xref_db_acc="0006826"
+                                        xref_db_acc="GO:0006826"
                                         segment_id="1"
                                         instance_id="3">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -58984,7 +58984,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="F"
                                         xref_db="GO"
-                                        xref_db_acc="0006879"
+                                        xref_db_acc="GO:0006879"
                                         segment_id="1"
                                         instance_id="4">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -58993,7 +58993,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="F"
                                         xref_db="GO"
-                                        xref_db_acc="0006879"
+                                        xref_db_acc="GO:0006879"
                                         segment_id="1"
                                         instance_id="5">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -59002,7 +59002,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="F"
                                         xref_db="GO"
-                                        xref_db_acc="0006880"
+                                        xref_db_acc="GO:0006880"
                                         segment_id="1"
                                         instance_id="6">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -59011,7 +59011,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="F"
                                         xref_db="GO"
-                                        xref_db_acc="0008043"
+                                        xref_db_acc="GO:0008043"
                                         segment_id="1"
                                         instance_id="7">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -59020,7 +59020,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="F"
                                         xref_db="GO"
-                                        xref_db_acc="0008198"
+                                        xref_db_acc="GO:0008198"
                                         segment_id="1"
                                         instance_id="8">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -59029,7 +59029,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="F"
                                         xref_db="GO"
-                                        xref_db_acc="0008199"
+                                        xref_db_acc="GO:0008199"
                                         segment_id="1"
                                         instance_id="9">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -59038,7 +59038,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="F"
                                         xref_db="GO"
-                                        xref_db_acc="0008199"
+                                        xref_db_acc="GO:0008199"
                                         segment_id="1"
                                         instance_id="10">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -59047,7 +59047,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="F"
                                         xref_db="GO"
-                                        xref_db_acc="0008199"
+                                        xref_db_acc="GO:0008199"
                                         segment_id="1"
                                         instance_id="11">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -59056,7 +59056,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="F"
                                         xref_db="GO"
-                                        xref_db_acc="0046872"
+                                        xref_db_acc="GO:0046872"
                                         segment_id="1"
                                         instance_id="12">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -59209,7 +59209,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="G"
                                         xref_db="GO"
-                                        xref_db_acc="0005506"
+                                        xref_db_acc="GO:0005506"
                                         segment_id="1"
                                         instance_id="1">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -59218,7 +59218,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="G"
                                         xref_db="GO"
-                                        xref_db_acc="0005737"
+                                        xref_db_acc="GO:0005737"
                                         segment_id="1"
                                         instance_id="2">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -59227,7 +59227,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="G"
                                         xref_db="GO"
-                                        xref_db_acc="0006826"
+                                        xref_db_acc="GO:0006826"
                                         segment_id="1"
                                         instance_id="3">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -59236,7 +59236,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="G"
                                         xref_db="GO"
-                                        xref_db_acc="0006879"
+                                        xref_db_acc="GO:0006879"
                                         segment_id="1"
                                         instance_id="4">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -59245,7 +59245,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="G"
                                         xref_db="GO"
-                                        xref_db_acc="0006879"
+                                        xref_db_acc="GO:0006879"
                                         segment_id="1"
                                         instance_id="5">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -59254,7 +59254,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="G"
                                         xref_db="GO"
-                                        xref_db_acc="0006880"
+                                        xref_db_acc="GO:0006880"
                                         segment_id="1"
                                         instance_id="6">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -59263,7 +59263,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="G"
                                         xref_db="GO"
-                                        xref_db_acc="0008043"
+                                        xref_db_acc="GO:0008043"
                                         segment_id="1"
                                         instance_id="7">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -59272,7 +59272,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="G"
                                         xref_db="GO"
-                                        xref_db_acc="0008198"
+                                        xref_db_acc="GO:0008198"
                                         segment_id="1"
                                         instance_id="8">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -59281,7 +59281,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="G"
                                         xref_db="GO"
-                                        xref_db_acc="0008199"
+                                        xref_db_acc="GO:0008199"
                                         segment_id="1"
                                         instance_id="9">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -59290,7 +59290,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="G"
                                         xref_db="GO"
-                                        xref_db_acc="0008199"
+                                        xref_db_acc="GO:0008199"
                                         segment_id="1"
                                         instance_id="10">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -59299,7 +59299,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="G"
                                         xref_db="GO"
-                                        xref_db_acc="0008199"
+                                        xref_db_acc="GO:0008199"
                                         segment_id="1"
                                         instance_id="11">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -59308,7 +59308,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="G"
                                         xref_db="GO"
-                                        xref_db_acc="0046872"
+                                        xref_db_acc="GO:0046872"
                                         segment_id="1"
                                         instance_id="12">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -59461,7 +59461,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="H"
                                         xref_db="GO"
-                                        xref_db_acc="0005506"
+                                        xref_db_acc="GO:0005506"
                                         segment_id="1"
                                         instance_id="1">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -59470,7 +59470,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="H"
                                         xref_db="GO"
-                                        xref_db_acc="0005737"
+                                        xref_db_acc="GO:0005737"
                                         segment_id="1"
                                         instance_id="2">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -59479,7 +59479,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="H"
                                         xref_db="GO"
-                                        xref_db_acc="0006826"
+                                        xref_db_acc="GO:0006826"
                                         segment_id="1"
                                         instance_id="3">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -59488,7 +59488,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="H"
                                         xref_db="GO"
-                                        xref_db_acc="0006879"
+                                        xref_db_acc="GO:0006879"
                                         segment_id="1"
                                         instance_id="4">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -59497,7 +59497,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="H"
                                         xref_db="GO"
-                                        xref_db_acc="0006879"
+                                        xref_db_acc="GO:0006879"
                                         segment_id="1"
                                         instance_id="5">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -59506,7 +59506,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="H"
                                         xref_db="GO"
-                                        xref_db_acc="0006880"
+                                        xref_db_acc="GO:0006880"
                                         segment_id="1"
                                         instance_id="6">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -59515,7 +59515,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="H"
                                         xref_db="GO"
-                                        xref_db_acc="0008043"
+                                        xref_db_acc="GO:0008043"
                                         segment_id="1"
                                         instance_id="7">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -59524,7 +59524,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="H"
                                         xref_db="GO"
-                                        xref_db_acc="0008198"
+                                        xref_db_acc="GO:0008198"
                                         segment_id="1"
                                         instance_id="8">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -59533,7 +59533,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="H"
                                         xref_db="GO"
-                                        xref_db_acc="0008199"
+                                        xref_db_acc="GO:0008199"
                                         segment_id="1"
                                         instance_id="9">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -59542,7 +59542,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="H"
                                         xref_db="GO"
-                                        xref_db_acc="0008199"
+                                        xref_db_acc="GO:0008199"
                                         segment_id="1"
                                         instance_id="10">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -59551,7 +59551,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="H"
                                         xref_db="GO"
-                                        xref_db_acc="0008199"
+                                        xref_db_acc="GO:0008199"
                                         segment_id="1"
                                         instance_id="11">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -59560,7 +59560,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="H"
                                         xref_db="GO"
-                                        xref_db_acc="0046872"
+                                        xref_db_acc="GO:0046872"
                                         segment_id="1"
                                         instance_id="12">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -59713,7 +59713,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="I"
                                         xref_db="GO"
-                                        xref_db_acc="0005506"
+                                        xref_db_acc="GO:0005506"
                                         segment_id="1"
                                         instance_id="1">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -59722,7 +59722,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="I"
                                         xref_db="GO"
-                                        xref_db_acc="0005737"
+                                        xref_db_acc="GO:0005737"
                                         segment_id="1"
                                         instance_id="2">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -59731,7 +59731,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="I"
                                         xref_db="GO"
-                                        xref_db_acc="0006826"
+                                        xref_db_acc="GO:0006826"
                                         segment_id="1"
                                         instance_id="3">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -59740,7 +59740,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="I"
                                         xref_db="GO"
-                                        xref_db_acc="0006879"
+                                        xref_db_acc="GO:0006879"
                                         segment_id="1"
                                         instance_id="4">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -59749,7 +59749,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="I"
                                         xref_db="GO"
-                                        xref_db_acc="0006879"
+                                        xref_db_acc="GO:0006879"
                                         segment_id="1"
                                         instance_id="5">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -59758,7 +59758,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="I"
                                         xref_db="GO"
-                                        xref_db_acc="0006880"
+                                        xref_db_acc="GO:0006880"
                                         segment_id="1"
                                         instance_id="6">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -59767,7 +59767,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="I"
                                         xref_db="GO"
-                                        xref_db_acc="0008043"
+                                        xref_db_acc="GO:0008043"
                                         segment_id="1"
                                         instance_id="7">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -59776,7 +59776,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="I"
                                         xref_db="GO"
-                                        xref_db_acc="0008198"
+                                        xref_db_acc="GO:0008198"
                                         segment_id="1"
                                         instance_id="8">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -59785,7 +59785,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="I"
                                         xref_db="GO"
-                                        xref_db_acc="0008199"
+                                        xref_db_acc="GO:0008199"
                                         segment_id="1"
                                         instance_id="9">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -59794,7 +59794,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="I"
                                         xref_db="GO"
-                                        xref_db_acc="0008199"
+                                        xref_db_acc="GO:0008199"
                                         segment_id="1"
                                         instance_id="10">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -59803,7 +59803,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="I"
                                         xref_db="GO"
-                                        xref_db_acc="0008199"
+                                        xref_db_acc="GO:0008199"
                                         segment_id="1"
                                         instance_id="11">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -59812,7 +59812,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="I"
                                         xref_db="GO"
-                                        xref_db_acc="0046872"
+                                        xref_db_acc="GO:0046872"
                                         segment_id="1"
                                         instance_id="12">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -59965,7 +59965,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="J"
                                         xref_db="GO"
-                                        xref_db_acc="0005506"
+                                        xref_db_acc="GO:0005506"
                                         segment_id="1"
                                         instance_id="1">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -59974,7 +59974,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="J"
                                         xref_db="GO"
-                                        xref_db_acc="0005737"
+                                        xref_db_acc="GO:0005737"
                                         segment_id="1"
                                         instance_id="2">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -59983,7 +59983,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="J"
                                         xref_db="GO"
-                                        xref_db_acc="0006826"
+                                        xref_db_acc="GO:0006826"
                                         segment_id="1"
                                         instance_id="3">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -59992,7 +59992,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="J"
                                         xref_db="GO"
-                                        xref_db_acc="0006879"
+                                        xref_db_acc="GO:0006879"
                                         segment_id="1"
                                         instance_id="4">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -60001,7 +60001,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="J"
                                         xref_db="GO"
-                                        xref_db_acc="0006879"
+                                        xref_db_acc="GO:0006879"
                                         segment_id="1"
                                         instance_id="5">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -60010,7 +60010,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="J"
                                         xref_db="GO"
-                                        xref_db_acc="0006880"
+                                        xref_db_acc="GO:0006880"
                                         segment_id="1"
                                         instance_id="6">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -60019,7 +60019,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="J"
                                         xref_db="GO"
-                                        xref_db_acc="0008043"
+                                        xref_db_acc="GO:0008043"
                                         segment_id="1"
                                         instance_id="7">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -60028,7 +60028,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="J"
                                         xref_db="GO"
-                                        xref_db_acc="0008198"
+                                        xref_db_acc="GO:0008198"
                                         segment_id="1"
                                         instance_id="8">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -60037,7 +60037,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="J"
                                         xref_db="GO"
-                                        xref_db_acc="0008199"
+                                        xref_db_acc="GO:0008199"
                                         segment_id="1"
                                         instance_id="9">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -60046,7 +60046,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="J"
                                         xref_db="GO"
-                                        xref_db_acc="0008199"
+                                        xref_db_acc="GO:0008199"
                                         segment_id="1"
                                         instance_id="10">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -60055,7 +60055,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="J"
                                         xref_db="GO"
-                                        xref_db_acc="0008199"
+                                        xref_db_acc="GO:0008199"
                                         segment_id="1"
                                         instance_id="11">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -60064,7 +60064,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="J"
                                         xref_db="GO"
-                                        xref_db_acc="0046872"
+                                        xref_db_acc="GO:0046872"
                                         segment_id="1"
                                         instance_id="12">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -60217,7 +60217,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="K"
                                         xref_db="GO"
-                                        xref_db_acc="0005506"
+                                        xref_db_acc="GO:0005506"
                                         segment_id="1"
                                         instance_id="1">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -60226,7 +60226,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="K"
                                         xref_db="GO"
-                                        xref_db_acc="0005737"
+                                        xref_db_acc="GO:0005737"
                                         segment_id="1"
                                         instance_id="2">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -60235,7 +60235,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="K"
                                         xref_db="GO"
-                                        xref_db_acc="0006826"
+                                        xref_db_acc="GO:0006826"
                                         segment_id="1"
                                         instance_id="3">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -60244,7 +60244,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="K"
                                         xref_db="GO"
-                                        xref_db_acc="0006879"
+                                        xref_db_acc="GO:0006879"
                                         segment_id="1"
                                         instance_id="4">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -60253,7 +60253,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="K"
                                         xref_db="GO"
-                                        xref_db_acc="0006879"
+                                        xref_db_acc="GO:0006879"
                                         segment_id="1"
                                         instance_id="5">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -60262,7 +60262,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="K"
                                         xref_db="GO"
-                                        xref_db_acc="0006880"
+                                        xref_db_acc="GO:0006880"
                                         segment_id="1"
                                         instance_id="6">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -60271,7 +60271,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="K"
                                         xref_db="GO"
-                                        xref_db_acc="0008043"
+                                        xref_db_acc="GO:0008043"
                                         segment_id="1"
                                         instance_id="7">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -60280,7 +60280,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="K"
                                         xref_db="GO"
-                                        xref_db_acc="0008198"
+                                        xref_db_acc="GO:0008198"
                                         segment_id="1"
                                         instance_id="8">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -60289,7 +60289,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="K"
                                         xref_db="GO"
-                                        xref_db_acc="0008199"
+                                        xref_db_acc="GO:0008199"
                                         segment_id="1"
                                         instance_id="9">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -60298,7 +60298,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="K"
                                         xref_db="GO"
-                                        xref_db_acc="0008199"
+                                        xref_db_acc="GO:0008199"
                                         segment_id="1"
                                         instance_id="10">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -60307,7 +60307,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="K"
                                         xref_db="GO"
-                                        xref_db_acc="0008199"
+                                        xref_db_acc="GO:0008199"
                                         segment_id="1"
                                         instance_id="11">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -60316,7 +60316,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="K"
                                         xref_db="GO"
-                                        xref_db_acc="0046872"
+                                        xref_db_acc="GO:0046872"
                                         segment_id="1"
                                         instance_id="12">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -60469,7 +60469,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="L"
                                         xref_db="GO"
-                                        xref_db_acc="0005506"
+                                        xref_db_acc="GO:0005506"
                                         segment_id="1"
                                         instance_id="1">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -60478,7 +60478,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="L"
                                         xref_db="GO"
-                                        xref_db_acc="0005737"
+                                        xref_db_acc="GO:0005737"
                                         segment_id="1"
                                         instance_id="2">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -60487,7 +60487,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="L"
                                         xref_db="GO"
-                                        xref_db_acc="0006826"
+                                        xref_db_acc="GO:0006826"
                                         segment_id="1"
                                         instance_id="3">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -60496,7 +60496,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="L"
                                         xref_db="GO"
-                                        xref_db_acc="0006879"
+                                        xref_db_acc="GO:0006879"
                                         segment_id="1"
                                         instance_id="4">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -60505,7 +60505,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="L"
                                         xref_db="GO"
-                                        xref_db_acc="0006879"
+                                        xref_db_acc="GO:0006879"
                                         segment_id="1"
                                         instance_id="5">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -60514,7 +60514,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="L"
                                         xref_db="GO"
-                                        xref_db_acc="0006880"
+                                        xref_db_acc="GO:0006880"
                                         segment_id="1"
                                         instance_id="6">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -60523,7 +60523,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="L"
                                         xref_db="GO"
-                                        xref_db_acc="0008043"
+                                        xref_db_acc="GO:0008043"
                                         segment_id="1"
                                         instance_id="7">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -60532,7 +60532,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="L"
                                         xref_db="GO"
-                                        xref_db_acc="0008198"
+                                        xref_db_acc="GO:0008198"
                                         segment_id="1"
                                         instance_id="8">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -60541,7 +60541,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="L"
                                         xref_db="GO"
-                                        xref_db_acc="0008199"
+                                        xref_db_acc="GO:0008199"
                                         segment_id="1"
                                         instance_id="9">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -60550,7 +60550,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="L"
                                         xref_db="GO"
-                                        xref_db_acc="0008199"
+                                        xref_db_acc="GO:0008199"
                                         segment_id="1"
                                         instance_id="10">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -60559,7 +60559,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="L"
                                         xref_db="GO"
-                                        xref_db_acc="0008199"
+                                        xref_db_acc="GO:0008199"
                                         segment_id="1"
                                         instance_id="11">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -60568,7 +60568,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="L"
                                         xref_db="GO"
-                                        xref_db_acc="0046872"
+                                        xref_db_acc="GO:0046872"
                                         segment_id="1"
                                         instance_id="12">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -60721,7 +60721,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="M"
                                         xref_db="GO"
-                                        xref_db_acc="0005506"
+                                        xref_db_acc="GO:0005506"
                                         segment_id="1"
                                         instance_id="1">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -60730,7 +60730,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="M"
                                         xref_db="GO"
-                                        xref_db_acc="0005737"
+                                        xref_db_acc="GO:0005737"
                                         segment_id="1"
                                         instance_id="2">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -60739,7 +60739,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="M"
                                         xref_db="GO"
-                                        xref_db_acc="0006826"
+                                        xref_db_acc="GO:0006826"
                                         segment_id="1"
                                         instance_id="3">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -60748,7 +60748,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="M"
                                         xref_db="GO"
-                                        xref_db_acc="0006879"
+                                        xref_db_acc="GO:0006879"
                                         segment_id="1"
                                         instance_id="4">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -60757,7 +60757,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="M"
                                         xref_db="GO"
-                                        xref_db_acc="0006879"
+                                        xref_db_acc="GO:0006879"
                                         segment_id="1"
                                         instance_id="5">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -60766,7 +60766,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="M"
                                         xref_db="GO"
-                                        xref_db_acc="0006880"
+                                        xref_db_acc="GO:0006880"
                                         segment_id="1"
                                         instance_id="6">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -60775,7 +60775,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="M"
                                         xref_db="GO"
-                                        xref_db_acc="0008043"
+                                        xref_db_acc="GO:0008043"
                                         segment_id="1"
                                         instance_id="7">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -60784,7 +60784,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="M"
                                         xref_db="GO"
-                                        xref_db_acc="0008198"
+                                        xref_db_acc="GO:0008198"
                                         segment_id="1"
                                         instance_id="8">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -60793,7 +60793,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="M"
                                         xref_db="GO"
-                                        xref_db_acc="0008199"
+                                        xref_db_acc="GO:0008199"
                                         segment_id="1"
                                         instance_id="9">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -60802,7 +60802,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="M"
                                         xref_db="GO"
-                                        xref_db_acc="0008199"
+                                        xref_db_acc="GO:0008199"
                                         segment_id="1"
                                         instance_id="10">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -60811,7 +60811,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="M"
                                         xref_db="GO"
-                                        xref_db_acc="0008199"
+                                        xref_db_acc="GO:0008199"
                                         segment_id="1"
                                         instance_id="11">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -60820,7 +60820,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="M"
                                         xref_db="GO"
-                                        xref_db_acc="0046872"
+                                        xref_db_acc="GO:0046872"
                                         segment_id="1"
                                         instance_id="12">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -60973,7 +60973,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="N"
                                         xref_db="GO"
-                                        xref_db_acc="0005506"
+                                        xref_db_acc="GO:0005506"
                                         segment_id="1"
                                         instance_id="1">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -60982,7 +60982,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="N"
                                         xref_db="GO"
-                                        xref_db_acc="0005737"
+                                        xref_db_acc="GO:0005737"
                                         segment_id="1"
                                         instance_id="2">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -60991,7 +60991,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="N"
                                         xref_db="GO"
-                                        xref_db_acc="0006826"
+                                        xref_db_acc="GO:0006826"
                                         segment_id="1"
                                         instance_id="3">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -61000,7 +61000,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="N"
                                         xref_db="GO"
-                                        xref_db_acc="0006879"
+                                        xref_db_acc="GO:0006879"
                                         segment_id="1"
                                         instance_id="4">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -61009,7 +61009,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="N"
                                         xref_db="GO"
-                                        xref_db_acc="0006879"
+                                        xref_db_acc="GO:0006879"
                                         segment_id="1"
                                         instance_id="5">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -61018,7 +61018,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="N"
                                         xref_db="GO"
-                                        xref_db_acc="0006880"
+                                        xref_db_acc="GO:0006880"
                                         segment_id="1"
                                         instance_id="6">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -61027,7 +61027,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="N"
                                         xref_db="GO"
-                                        xref_db_acc="0008043"
+                                        xref_db_acc="GO:0008043"
                                         segment_id="1"
                                         instance_id="7">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -61036,7 +61036,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="N"
                                         xref_db="GO"
-                                        xref_db_acc="0008198"
+                                        xref_db_acc="GO:0008198"
                                         segment_id="1"
                                         instance_id="8">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -61045,7 +61045,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="N"
                                         xref_db="GO"
-                                        xref_db_acc="0008199"
+                                        xref_db_acc="GO:0008199"
                                         segment_id="1"
                                         instance_id="9">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -61054,7 +61054,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="N"
                                         xref_db="GO"
-                                        xref_db_acc="0008199"
+                                        xref_db_acc="GO:0008199"
                                         segment_id="1"
                                         instance_id="10">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -61063,7 +61063,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="N"
                                         xref_db="GO"
-                                        xref_db_acc="0008199"
+                                        xref_db_acc="GO:0008199"
                                         segment_id="1"
                                         instance_id="11">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -61072,7 +61072,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="N"
                                         xref_db="GO"
-                                        xref_db_acc="0046872"
+                                        xref_db_acc="GO:0046872"
                                         segment_id="1"
                                         instance_id="12">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -61225,7 +61225,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="O"
                                         xref_db="GO"
-                                        xref_db_acc="0005506"
+                                        xref_db_acc="GO:0005506"
                                         segment_id="1"
                                         instance_id="1">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -61234,7 +61234,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="O"
                                         xref_db="GO"
-                                        xref_db_acc="0005737"
+                                        xref_db_acc="GO:0005737"
                                         segment_id="1"
                                         instance_id="2">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -61243,7 +61243,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="O"
                                         xref_db="GO"
-                                        xref_db_acc="0006826"
+                                        xref_db_acc="GO:0006826"
                                         segment_id="1"
                                         instance_id="3">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -61252,7 +61252,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="O"
                                         xref_db="GO"
-                                        xref_db_acc="0006879"
+                                        xref_db_acc="GO:0006879"
                                         segment_id="1"
                                         instance_id="4">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -61261,7 +61261,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="O"
                                         xref_db="GO"
-                                        xref_db_acc="0006879"
+                                        xref_db_acc="GO:0006879"
                                         segment_id="1"
                                         instance_id="5">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -61270,7 +61270,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="O"
                                         xref_db="GO"
-                                        xref_db_acc="0006880"
+                                        xref_db_acc="GO:0006880"
                                         segment_id="1"
                                         instance_id="6">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -61279,7 +61279,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="O"
                                         xref_db="GO"
-                                        xref_db_acc="0008043"
+                                        xref_db_acc="GO:0008043"
                                         segment_id="1"
                                         instance_id="7">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -61288,7 +61288,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="O"
                                         xref_db="GO"
-                                        xref_db_acc="0008198"
+                                        xref_db_acc="GO:0008198"
                                         segment_id="1"
                                         instance_id="8">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -61297,7 +61297,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="O"
                                         xref_db="GO"
-                                        xref_db_acc="0008199"
+                                        xref_db_acc="GO:0008199"
                                         segment_id="1"
                                         instance_id="9">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -61306,7 +61306,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="O"
                                         xref_db="GO"
-                                        xref_db_acc="0008199"
+                                        xref_db_acc="GO:0008199"
                                         segment_id="1"
                                         instance_id="10">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -61315,7 +61315,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="O"
                                         xref_db="GO"
-                                        xref_db_acc="0008199"
+                                        xref_db_acc="GO:0008199"
                                         segment_id="1"
                                         instance_id="11">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -61324,7 +61324,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="O"
                                         xref_db="GO"
-                                        xref_db_acc="0046872"
+                                        xref_db_acc="GO:0046872"
                                         segment_id="1"
                                         instance_id="12">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -61477,7 +61477,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="P"
                                         xref_db="GO"
-                                        xref_db_acc="0005506"
+                                        xref_db_acc="GO:0005506"
                                         segment_id="1"
                                         instance_id="1">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -61486,7 +61486,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="P"
                                         xref_db="GO"
-                                        xref_db_acc="0005737"
+                                        xref_db_acc="GO:0005737"
                                         segment_id="1"
                                         instance_id="2">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -61495,7 +61495,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="P"
                                         xref_db="GO"
-                                        xref_db_acc="0006826"
+                                        xref_db_acc="GO:0006826"
                                         segment_id="1"
                                         instance_id="3">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -61504,7 +61504,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="P"
                                         xref_db="GO"
-                                        xref_db_acc="0006879"
+                                        xref_db_acc="GO:0006879"
                                         segment_id="1"
                                         instance_id="4">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -61513,7 +61513,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="P"
                                         xref_db="GO"
-                                        xref_db_acc="0006879"
+                                        xref_db_acc="GO:0006879"
                                         segment_id="1"
                                         instance_id="5">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -61522,7 +61522,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="P"
                                         xref_db="GO"
-                                        xref_db_acc="0006880"
+                                        xref_db_acc="GO:0006880"
                                         segment_id="1"
                                         instance_id="6">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -61531,7 +61531,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="P"
                                         xref_db="GO"
-                                        xref_db_acc="0008043"
+                                        xref_db_acc="GO:0008043"
                                         segment_id="1"
                                         instance_id="7">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -61540,7 +61540,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="P"
                                         xref_db="GO"
-                                        xref_db_acc="0008198"
+                                        xref_db_acc="GO:0008198"
                                         segment_id="1"
                                         instance_id="8">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -61549,7 +61549,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="P"
                                         xref_db="GO"
-                                        xref_db_acc="0008199"
+                                        xref_db_acc="GO:0008199"
                                         segment_id="1"
                                         instance_id="9">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -61558,7 +61558,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="P"
                                         xref_db="GO"
-                                        xref_db_acc="0008199"
+                                        xref_db_acc="GO:0008199"
                                         segment_id="1"
                                         instance_id="10">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -61567,7 +61567,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="P"
                                         xref_db="GO"
-                                        xref_db_acc="0008199"
+                                        xref_db_acc="GO:0008199"
                                         segment_id="1"
                                         instance_id="11">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -61576,7 +61576,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="P"
                                         xref_db="GO"
-                                        xref_db_acc="0046872"
+                                        xref_db_acc="GO:0046872"
                                         segment_id="1"
                                         instance_id="12">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -61729,7 +61729,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="Q"
                                         xref_db="GO"
-                                        xref_db_acc="0005506"
+                                        xref_db_acc="GO:0005506"
                                         segment_id="1"
                                         instance_id="1">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -61738,7 +61738,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="Q"
                                         xref_db="GO"
-                                        xref_db_acc="0005737"
+                                        xref_db_acc="GO:0005737"
                                         segment_id="1"
                                         instance_id="2">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -61747,7 +61747,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="Q"
                                         xref_db="GO"
-                                        xref_db_acc="0006826"
+                                        xref_db_acc="GO:0006826"
                                         segment_id="1"
                                         instance_id="3">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -61756,7 +61756,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="Q"
                                         xref_db="GO"
-                                        xref_db_acc="0006879"
+                                        xref_db_acc="GO:0006879"
                                         segment_id="1"
                                         instance_id="4">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -61765,7 +61765,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="Q"
                                         xref_db="GO"
-                                        xref_db_acc="0006879"
+                                        xref_db_acc="GO:0006879"
                                         segment_id="1"
                                         instance_id="5">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -61774,7 +61774,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="Q"
                                         xref_db="GO"
-                                        xref_db_acc="0006880"
+                                        xref_db_acc="GO:0006880"
                                         segment_id="1"
                                         instance_id="6">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -61783,7 +61783,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="Q"
                                         xref_db="GO"
-                                        xref_db_acc="0008043"
+                                        xref_db_acc="GO:0008043"
                                         segment_id="1"
                                         instance_id="7">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -61792,7 +61792,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="Q"
                                         xref_db="GO"
-                                        xref_db_acc="0008198"
+                                        xref_db_acc="GO:0008198"
                                         segment_id="1"
                                         instance_id="8">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -61801,7 +61801,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="Q"
                                         xref_db="GO"
-                                        xref_db_acc="0008199"
+                                        xref_db_acc="GO:0008199"
                                         segment_id="1"
                                         instance_id="9">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -61810,7 +61810,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="Q"
                                         xref_db="GO"
-                                        xref_db_acc="0008199"
+                                        xref_db_acc="GO:0008199"
                                         segment_id="1"
                                         instance_id="10">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -61819,7 +61819,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="Q"
                                         xref_db="GO"
-                                        xref_db_acc="0008199"
+                                        xref_db_acc="GO:0008199"
                                         segment_id="1"
                                         instance_id="11">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -61828,7 +61828,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="Q"
                                         xref_db="GO"
-                                        xref_db_acc="0046872"
+                                        xref_db_acc="GO:0046872"
                                         segment_id="1"
                                         instance_id="12">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -61981,7 +61981,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="R"
                                         xref_db="GO"
-                                        xref_db_acc="0005506"
+                                        xref_db_acc="GO:0005506"
                                         segment_id="1"
                                         instance_id="1">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -61990,7 +61990,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="R"
                                         xref_db="GO"
-                                        xref_db_acc="0005737"
+                                        xref_db_acc="GO:0005737"
                                         segment_id="1"
                                         instance_id="2">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -61999,7 +61999,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="R"
                                         xref_db="GO"
-                                        xref_db_acc="0006826"
+                                        xref_db_acc="GO:0006826"
                                         segment_id="1"
                                         instance_id="3">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -62008,7 +62008,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="R"
                                         xref_db="GO"
-                                        xref_db_acc="0006879"
+                                        xref_db_acc="GO:0006879"
                                         segment_id="1"
                                         instance_id="4">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -62017,7 +62017,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="R"
                                         xref_db="GO"
-                                        xref_db_acc="0006879"
+                                        xref_db_acc="GO:0006879"
                                         segment_id="1"
                                         instance_id="5">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -62026,7 +62026,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="R"
                                         xref_db="GO"
-                                        xref_db_acc="0006880"
+                                        xref_db_acc="GO:0006880"
                                         segment_id="1"
                                         instance_id="6">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -62035,7 +62035,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="R"
                                         xref_db="GO"
-                                        xref_db_acc="0008043"
+                                        xref_db_acc="GO:0008043"
                                         segment_id="1"
                                         instance_id="7">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -62044,7 +62044,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="R"
                                         xref_db="GO"
-                                        xref_db_acc="0008198"
+                                        xref_db_acc="GO:0008198"
                                         segment_id="1"
                                         instance_id="8">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -62053,7 +62053,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="R"
                                         xref_db="GO"
-                                        xref_db_acc="0008199"
+                                        xref_db_acc="GO:0008199"
                                         segment_id="1"
                                         instance_id="9">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -62062,7 +62062,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="R"
                                         xref_db="GO"
-                                        xref_db_acc="0008199"
+                                        xref_db_acc="GO:0008199"
                                         segment_id="1"
                                         instance_id="10">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -62071,7 +62071,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="R"
                                         xref_db="GO"
-                                        xref_db_acc="0008199"
+                                        xref_db_acc="GO:0008199"
                                         segment_id="1"
                                         instance_id="11">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -62080,7 +62080,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="R"
                                         xref_db="GO"
-                                        xref_db_acc="0046872"
+                                        xref_db_acc="GO:0046872"
                                         segment_id="1"
                                         instance_id="12">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -62233,7 +62233,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="S"
                                         xref_db="GO"
-                                        xref_db_acc="0005506"
+                                        xref_db_acc="GO:0005506"
                                         segment_id="1"
                                         instance_id="1">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -62242,7 +62242,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="S"
                                         xref_db="GO"
-                                        xref_db_acc="0005737"
+                                        xref_db_acc="GO:0005737"
                                         segment_id="1"
                                         instance_id="2">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -62251,7 +62251,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="S"
                                         xref_db="GO"
-                                        xref_db_acc="0006826"
+                                        xref_db_acc="GO:0006826"
                                         segment_id="1"
                                         instance_id="3">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -62260,7 +62260,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="S"
                                         xref_db="GO"
-                                        xref_db_acc="0006879"
+                                        xref_db_acc="GO:0006879"
                                         segment_id="1"
                                         instance_id="4">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -62269,7 +62269,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="S"
                                         xref_db="GO"
-                                        xref_db_acc="0006879"
+                                        xref_db_acc="GO:0006879"
                                         segment_id="1"
                                         instance_id="5">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -62278,7 +62278,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="S"
                                         xref_db="GO"
-                                        xref_db_acc="0006880"
+                                        xref_db_acc="GO:0006880"
                                         segment_id="1"
                                         instance_id="6">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -62287,7 +62287,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="S"
                                         xref_db="GO"
-                                        xref_db_acc="0008043"
+                                        xref_db_acc="GO:0008043"
                                         segment_id="1"
                                         instance_id="7">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -62296,7 +62296,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="S"
                                         xref_db="GO"
-                                        xref_db_acc="0008198"
+                                        xref_db_acc="GO:0008198"
                                         segment_id="1"
                                         instance_id="8">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -62305,7 +62305,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="S"
                                         xref_db="GO"
-                                        xref_db_acc="0008199"
+                                        xref_db_acc="GO:0008199"
                                         segment_id="1"
                                         instance_id="9">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -62314,7 +62314,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="S"
                                         xref_db="GO"
-                                        xref_db_acc="0008199"
+                                        xref_db_acc="GO:0008199"
                                         segment_id="1"
                                         instance_id="10">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -62323,7 +62323,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="S"
                                         xref_db="GO"
-                                        xref_db_acc="0008199"
+                                        xref_db_acc="GO:0008199"
                                         segment_id="1"
                                         instance_id="11">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -62332,7 +62332,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="S"
                                         xref_db="GO"
-                                        xref_db_acc="0046872"
+                                        xref_db_acc="GO:0046872"
                                         segment_id="1"
                                         instance_id="12">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -62485,7 +62485,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="T"
                                         xref_db="GO"
-                                        xref_db_acc="0005506"
+                                        xref_db_acc="GO:0005506"
                                         segment_id="1"
                                         instance_id="1">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -62494,7 +62494,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="T"
                                         xref_db="GO"
-                                        xref_db_acc="0005737"
+                                        xref_db_acc="GO:0005737"
                                         segment_id="1"
                                         instance_id="2">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -62503,7 +62503,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="T"
                                         xref_db="GO"
-                                        xref_db_acc="0006826"
+                                        xref_db_acc="GO:0006826"
                                         segment_id="1"
                                         instance_id="3">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -62512,7 +62512,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="T"
                                         xref_db="GO"
-                                        xref_db_acc="0006879"
+                                        xref_db_acc="GO:0006879"
                                         segment_id="1"
                                         instance_id="4">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -62521,7 +62521,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="T"
                                         xref_db="GO"
-                                        xref_db_acc="0006879"
+                                        xref_db_acc="GO:0006879"
                                         segment_id="1"
                                         instance_id="5">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -62530,7 +62530,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="T"
                                         xref_db="GO"
-                                        xref_db_acc="0006880"
+                                        xref_db_acc="GO:0006880"
                                         segment_id="1"
                                         instance_id="6">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -62539,7 +62539,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="T"
                                         xref_db="GO"
-                                        xref_db_acc="0008043"
+                                        xref_db_acc="GO:0008043"
                                         segment_id="1"
                                         instance_id="7">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -62548,7 +62548,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="T"
                                         xref_db="GO"
-                                        xref_db_acc="0008198"
+                                        xref_db_acc="GO:0008198"
                                         segment_id="1"
                                         instance_id="8">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -62557,7 +62557,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="T"
                                         xref_db="GO"
-                                        xref_db_acc="0008199"
+                                        xref_db_acc="GO:0008199"
                                         segment_id="1"
                                         instance_id="9">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -62566,7 +62566,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="T"
                                         xref_db="GO"
-                                        xref_db_acc="0008199"
+                                        xref_db_acc="GO:0008199"
                                         segment_id="1"
                                         instance_id="10">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -62575,7 +62575,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="T"
                                         xref_db="GO"
-                                        xref_db_acc="0008199"
+                                        xref_db_acc="GO:0008199"
                                         segment_id="1"
                                         instance_id="11">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -62584,7 +62584,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="T"
                                         xref_db="GO"
-                                        xref_db_acc="0046872"
+                                        xref_db_acc="GO:0046872"
                                         segment_id="1"
                                         instance_id="12">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -62737,7 +62737,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="U"
                                         xref_db="GO"
-                                        xref_db_acc="0005506"
+                                        xref_db_acc="GO:0005506"
                                         segment_id="1"
                                         instance_id="1">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -62746,7 +62746,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="U"
                                         xref_db="GO"
-                                        xref_db_acc="0005737"
+                                        xref_db_acc="GO:0005737"
                                         segment_id="1"
                                         instance_id="2">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -62755,7 +62755,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="U"
                                         xref_db="GO"
-                                        xref_db_acc="0006826"
+                                        xref_db_acc="GO:0006826"
                                         segment_id="1"
                                         instance_id="3">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -62764,7 +62764,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="U"
                                         xref_db="GO"
-                                        xref_db_acc="0006879"
+                                        xref_db_acc="GO:0006879"
                                         segment_id="1"
                                         instance_id="4">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -62773,7 +62773,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="U"
                                         xref_db="GO"
-                                        xref_db_acc="0006879"
+                                        xref_db_acc="GO:0006879"
                                         segment_id="1"
                                         instance_id="5">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -62782,7 +62782,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="U"
                                         xref_db="GO"
-                                        xref_db_acc="0006880"
+                                        xref_db_acc="GO:0006880"
                                         segment_id="1"
                                         instance_id="6">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -62791,7 +62791,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="U"
                                         xref_db="GO"
-                                        xref_db_acc="0008043"
+                                        xref_db_acc="GO:0008043"
                                         segment_id="1"
                                         instance_id="7">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -62800,7 +62800,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="U"
                                         xref_db="GO"
-                                        xref_db_acc="0008198"
+                                        xref_db_acc="GO:0008198"
                                         segment_id="1"
                                         instance_id="8">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -62809,7 +62809,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="U"
                                         xref_db="GO"
-                                        xref_db_acc="0008199"
+                                        xref_db_acc="GO:0008199"
                                         segment_id="1"
                                         instance_id="9">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -62818,7 +62818,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="U"
                                         xref_db="GO"
-                                        xref_db_acc="0008199"
+                                        xref_db_acc="GO:0008199"
                                         segment_id="1"
                                         instance_id="10">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -62827,7 +62827,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="U"
                                         xref_db="GO"
-                                        xref_db_acc="0008199"
+                                        xref_db_acc="GO:0008199"
                                         segment_id="1"
                                         instance_id="11">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -62836,7 +62836,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="U"
                                         xref_db="GO"
-                                        xref_db_acc="0046872"
+                                        xref_db_acc="GO:0046872"
                                         segment_id="1"
                                         instance_id="12">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -62989,7 +62989,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="V"
                                         xref_db="GO"
-                                        xref_db_acc="0005506"
+                                        xref_db_acc="GO:0005506"
                                         segment_id="1"
                                         instance_id="1">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -62998,7 +62998,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="V"
                                         xref_db="GO"
-                                        xref_db_acc="0005737"
+                                        xref_db_acc="GO:0005737"
                                         segment_id="1"
                                         instance_id="2">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -63007,7 +63007,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="V"
                                         xref_db="GO"
-                                        xref_db_acc="0006826"
+                                        xref_db_acc="GO:0006826"
                                         segment_id="1"
                                         instance_id="3">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -63016,7 +63016,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="V"
                                         xref_db="GO"
-                                        xref_db_acc="0006879"
+                                        xref_db_acc="GO:0006879"
                                         segment_id="1"
                                         instance_id="4">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -63025,7 +63025,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="V"
                                         xref_db="GO"
-                                        xref_db_acc="0006879"
+                                        xref_db_acc="GO:0006879"
                                         segment_id="1"
                                         instance_id="5">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -63034,7 +63034,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="V"
                                         xref_db="GO"
-                                        xref_db_acc="0006880"
+                                        xref_db_acc="GO:0006880"
                                         segment_id="1"
                                         instance_id="6">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -63043,7 +63043,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="V"
                                         xref_db="GO"
-                                        xref_db_acc="0008043"
+                                        xref_db_acc="GO:0008043"
                                         segment_id="1"
                                         instance_id="7">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -63052,7 +63052,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="V"
                                         xref_db="GO"
-                                        xref_db_acc="0008198"
+                                        xref_db_acc="GO:0008198"
                                         segment_id="1"
                                         instance_id="8">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -63061,7 +63061,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="V"
                                         xref_db="GO"
-                                        xref_db_acc="0008199"
+                                        xref_db_acc="GO:0008199"
                                         segment_id="1"
                                         instance_id="9">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -63070,7 +63070,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="V"
                                         xref_db="GO"
-                                        xref_db_acc="0008199"
+                                        xref_db_acc="GO:0008199"
                                         segment_id="1"
                                         instance_id="10">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -63079,7 +63079,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="V"
                                         xref_db="GO"
-                                        xref_db_acc="0008199"
+                                        xref_db_acc="GO:0008199"
                                         segment_id="1"
                                         instance_id="11">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -63088,7 +63088,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="V"
                                         xref_db="GO"
-                                        xref_db_acc="0046872"
+                                        xref_db_acc="GO:0046872"
                                         segment_id="1"
                                         instance_id="12">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -63241,7 +63241,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="W"
                                         xref_db="GO"
-                                        xref_db_acc="0005506"
+                                        xref_db_acc="GO:0005506"
                                         segment_id="1"
                                         instance_id="1">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -63250,7 +63250,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="W"
                                         xref_db="GO"
-                                        xref_db_acc="0005737"
+                                        xref_db_acc="GO:0005737"
                                         segment_id="1"
                                         instance_id="2">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -63259,7 +63259,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="W"
                                         xref_db="GO"
-                                        xref_db_acc="0006826"
+                                        xref_db_acc="GO:0006826"
                                         segment_id="1"
                                         instance_id="3">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -63268,7 +63268,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="W"
                                         xref_db="GO"
-                                        xref_db_acc="0006879"
+                                        xref_db_acc="GO:0006879"
                                         segment_id="1"
                                         instance_id="4">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -63277,7 +63277,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="W"
                                         xref_db="GO"
-                                        xref_db_acc="0006879"
+                                        xref_db_acc="GO:0006879"
                                         segment_id="1"
                                         instance_id="5">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -63286,7 +63286,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="W"
                                         xref_db="GO"
-                                        xref_db_acc="0006880"
+                                        xref_db_acc="GO:0006880"
                                         segment_id="1"
                                         instance_id="6">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -63295,7 +63295,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="W"
                                         xref_db="GO"
-                                        xref_db_acc="0008043"
+                                        xref_db_acc="GO:0008043"
                                         segment_id="1"
                                         instance_id="7">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -63304,7 +63304,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="W"
                                         xref_db="GO"
-                                        xref_db_acc="0008198"
+                                        xref_db_acc="GO:0008198"
                                         segment_id="1"
                                         instance_id="8">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -63313,7 +63313,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="W"
                                         xref_db="GO"
-                                        xref_db_acc="0008199"
+                                        xref_db_acc="GO:0008199"
                                         segment_id="1"
                                         instance_id="9">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -63322,7 +63322,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="W"
                                         xref_db="GO"
-                                        xref_db_acc="0008199"
+                                        xref_db_acc="GO:0008199"
                                         segment_id="1"
                                         instance_id="10">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -63331,7 +63331,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="W"
                                         xref_db="GO"
-                                        xref_db_acc="0008199"
+                                        xref_db_acc="GO:0008199"
                                         segment_id="1"
                                         instance_id="11">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -63340,7 +63340,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="W"
                                         xref_db="GO"
-                                        xref_db_acc="0046872"
+                                        xref_db_acc="GO:0046872"
                                         segment_id="1"
                                         instance_id="12">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -63493,7 +63493,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="X"
                                         xref_db="GO"
-                                        xref_db_acc="0005506"
+                                        xref_db_acc="GO:0005506"
                                         segment_id="1"
                                         instance_id="1">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -63502,7 +63502,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="X"
                                         xref_db="GO"
-                                        xref_db_acc="0005737"
+                                        xref_db_acc="GO:0005737"
                                         segment_id="1"
                                         instance_id="2">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -63511,7 +63511,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="X"
                                         xref_db="GO"
-                                        xref_db_acc="0006826"
+                                        xref_db_acc="GO:0006826"
                                         segment_id="1"
                                         instance_id="3">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -63520,7 +63520,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="X"
                                         xref_db="GO"
-                                        xref_db_acc="0006879"
+                                        xref_db_acc="GO:0006879"
                                         segment_id="1"
                                         instance_id="4">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -63529,7 +63529,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="X"
                                         xref_db="GO"
-                                        xref_db_acc="0006879"
+                                        xref_db_acc="GO:0006879"
                                         segment_id="1"
                                         instance_id="5">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -63538,7 +63538,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="X"
                                         xref_db="GO"
-                                        xref_db_acc="0006880"
+                                        xref_db_acc="GO:0006880"
                                         segment_id="1"
                                         instance_id="6">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -63547,7 +63547,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="X"
                                         xref_db="GO"
-                                        xref_db_acc="0008043"
+                                        xref_db_acc="GO:0008043"
                                         segment_id="1"
                                         instance_id="7">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -63556,7 +63556,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="X"
                                         xref_db="GO"
-                                        xref_db_acc="0008198"
+                                        xref_db_acc="GO:0008198"
                                         segment_id="1"
                                         instance_id="8">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -63565,7 +63565,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="X"
                                         xref_db="GO"
-                                        xref_db_acc="0008199"
+                                        xref_db_acc="GO:0008199"
                                         segment_id="1"
                                         instance_id="9">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -63574,7 +63574,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="X"
                                         xref_db="GO"
-                                        xref_db_acc="0008199"
+                                        xref_db_acc="GO:0008199"
                                         segment_id="1"
                                         instance_id="10">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -63583,7 +63583,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="X"
                                         xref_db="GO"
-                                        xref_db_acc="0008199"
+                                        xref_db_acc="GO:0008199"
                                         segment_id="1"
                                         instance_id="11">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -63592,7 +63592,7 @@ GEYLFERLTLK</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="X"
                                         xref_db="GO"
-                                        xref_db_acc="0046872"
+                                        xref_db_acc="GO:0046872"
                                         segment_id="1"
                                         instance_id="12">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>

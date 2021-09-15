@@ -9135,7 +9135,7 @@ INGRNNLIQQKN</PDBx:pdbx_seq_one_letter_code>
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="A"
                                         xref_db="GO"
-                                        xref_db_acc="0046872"
+                                        xref_db_acc="GO:0046872"
                                         segment_id="1"
                                         instance_id="1">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>

@@ -313,6 +313,18 @@ _struct_sheet_range.end_label_seq_id
 1 AA1 A THR 12 A THR 12 A CYS 14 A CYS 14 
 2 AA1 A GLY 22 A GLY 22 A CYS 24 A CYS 24 
 # 
+_pdbx_sifts_unp_segments.entity_id      . 
+_pdbx_sifts_unp_segments.asym_id        A 
+_pdbx_sifts_unp_segments.unp_acc        Q8QGN9 
+_pdbx_sifts_unp_segments.segment_id     1 
+_pdbx_sifts_unp_segments.instance_id    1 
+_pdbx_sifts_unp_segments.unp_start      796 
+_pdbx_sifts_unp_segments.unp_end        819 
+_pdbx_sifts_unp_segments.seq_id_start   1 
+_pdbx_sifts_unp_segments.seq_id_end     24 
+_pdbx_sifts_unp_segments.best_mapping   Y 
+_pdbx_sifts_unp_segments.identity       1.000 
+# 
 _pdbx_nmr_assigned_chem_shift_list.id                            1 
 _pdbx_nmr_assigned_chem_shift_list.data_file_name                working_cs.cif 
 _pdbx_nmr_assigned_chem_shift_list.label                         

@@ -45,11 +45,12 @@
   <xsl:variable name="refseq">https://www.ncbi.nlm.nih.gov/protein/</xsl:variable>
   <xsl:variable name="norine">https://bioinfo.lifl.fr/norine/result.jsp?ID=</xsl:variable>
   <xsl:variable name="enzyme">http://purl.uniprot.org/enzyme/</xsl:variable>
-  <xsl:variable name="go">http://amigo.geneontology.org/amigo/term/GO:</xsl:variable>
+  <xsl:variable name="go">http://amigo.geneontology.org/amigo/term/</xsl:variable>
   <xsl:variable name="interpro">https://www.ebi.ac.uk/interpro/entry/</xsl:variable>
   <xsl:variable name="pfam">http://pfam.xfam.org/family/</xsl:variable>
   <xsl:variable name="cath">http://www.cathdb.info/cathnode/</xsl:variable>
   <xsl:variable name="scop">http://scop.berkeley.edu/sunid=</xsl:variable>
+  <xsl:variable name="scop2">https://scop2.mrc-lmb.cam.ac.uk/term/</xsl:variable>
   <xsl:variable name="ensembl">https://www.ensembl.org/id/</xsl:variable>
   <xsl:variable name="glycoinfo">http://rdf.glycoinfo.org/glycan/</xsl:variable>
 
@@ -240,8 +241,8 @@
   </xsl:template>
 
   <xsl:template match="PDBx:pdbx_sifts_xref_db_segments[@xref_db='GO' and @xref_db_acc!='']/@xref_db_acc" mode="linked">
-    <PDBo:link_to_go rdf:resource="{$go}{.}" rdfs:label="go:{.}"/>
-    <rdfs:seeAlso rdf:resource="{$idorg}go/GO:{.}" rdfs:label="go:{.}"/>
+    <PDBo:link_to_go rdf:resource="{$go}{.}" rdfs:label="{.}"/>
+    <rdfs:seeAlso rdf:resource="{$idorg}{.}" rdfs:label="{.}"/>
   </xsl:template>
 
   <xsl:template match="PDBx:pdbx_sifts_xref_db_segments[@xref_db='InterPro' and @xref_db_acc!='']/@xref_db_acc" mode="linked">
@@ -259,9 +260,13 @@
     <rdfs:seeAlso rdf:resource="{$idorg}cath/{.}" rdfs:label="cath:{.}"/>
   </xsl:template>
 
-  <xsl:template match="PDBx:pdbx_sifts_xref_db_segments[(@xref_db='SCOP' or @xref_db='SCOP2' or @xref_db='SCOP2B') and @xref_db_acc!='']/@xref_db_acc" mode="linked">
+  <xsl:template match="PDBx:pdbx_sifts_xref_db_segments[@xref_db='SCOP' and @xref_db_acc!='']/@xref_db_acc" mode="linked">
     <PDBo:link_to_scop rdf:resource="{$scop}{.}" rdfs:label="scop:{.}"/>
     <rdfs:seeAlso rdf:resource="{$idorg}scop/{.}" rdfs:label="scop:{.}"/>
+  </xsl:template>
+
+  <xsl:template match="PDBx:pdbx_sifts_xref_db_segments[(@xref_db='SCOP2' or @xref_db='SCOP2B') and @xref_db_acc!='']/@xref_db_acc" mode="linked">
+    <PDBo:link_to_scop rdf:resource="{$scop2}{.}" rdfs:label="scop2:{.}"/>
   </xsl:template>
 
   <xsl:template match="PDBx:pdbx_sifts_xref_db_segments[@xref_db='Ensembl' and @xref_db_acc!='']/@xref_db_acc" mode="linked">

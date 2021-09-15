@@ -10,6 +10,14 @@ if [ ! -e $PDBX_VALIDATION_XSD ] ; then
  ( cd schema; ./update_schema.sh )
 fi
 
+if [ ! -e $MERGE_PDBML_SIFTS_XSL ] ; then
+
+ java -jar $SAXON -s:$PDBML_XSD -xsl:$XSD2MERGE_PDBML_SIFTS_XSL -o:$MERGE_PDBML_SIFTS_XSL || ( echo $0 aborted. ; exit 1 )
+
+ echo Generated: $MERGE_PDBML_SIFTS_XSL
+
+fi
+
 if [ ! -e $EXT_PDBML_XSL ] ; then
 
  java -jar $SAXON -s:$PDBX_VALIDATION_XSD -xsl:$XSD2EXT_PDBML_XSL -o:$EXT_PDBML_XSL || ( echo $0 aborted. ; exit 1 )
@@ -59,6 +67,7 @@ for arg ; do
 
    pdbml_file=$WORK_DIR/$PDBML/$pdbid-noatom.xml
    info_file=$WORK_DIR/$VALID_INFO/$pdbid"_validation.xml"
+   sifts_xml_file=$WORK_DIR/$SIFTS_XML/$pdbid.xml
 
    if [ ! -e $pdbml_file ] ; then
 
@@ -72,10 +81,17 @@ for arg ; do
 
    fi
 
+   if [ ! -e $sifts_xml_file ] ; then
+
+    wget ftp://$SIFTS_XML_URL/$pdbid.xml.gz -P $WORK_DIR/$SIFTS_XML; gunzip $sifts_xml_file.gz
+
+   fi
+
  fi
 
 done
 
+mkdir -p $WORK_DIR/$PDBML_SIFTS
 mkdir -p $WORK_DIR/$PDBML_EXT
 mkdir -p $WORK_DIR/$VALID_INFO_ALT
 mkdir -p $WORK_DIR/$XML_VALID
@@ -123,10 +139,22 @@ for pdbml_file in $WORK_DIR/$PDBML/*.xml ; do
  echo
  echo Processing PDB ID: ${pdbid^^}, "Exptl. method: "$exptl_method" ..."
 
+ sifts_xml_file=$WORK_DIR/$SIFTS_XML/$pdbid.xml
+ pdbml_sifts_file=$WORK_DIR/$PDBML_SIFTS/$pdbid-noatom-sifts.xml
+
+ #xsltproc stylesheet/check_sifts.xsl $sifts_xml_file
+ #echo
+
+ if [ -e $sifts_xml_file ] && [ -s $sifts_xml_fil ] ; then
+  java -jar $SAXON -s:$pdbml_file -xsl:$MERGE_PDBML_SIFTS_XSL -o:$pdbml_sifts_file sifts_file=../$sifts_xml_file
+ else
+  cp -f $pdbml_file $pdbml_sifts_file
+ fi
+
  pdbml_ext_file=$WORK_DIR/$PDBML_EXT/$pdbid-noatom-ext.xml
  info_file=../$WORK_DIR/$VALID_INFO/$pdbid"_validation.xml"
 
- java -jar $SAXON -s:$pdbml_file -xsl:$EXT_PDBML_XSL -o:$pdbml_ext_file info_file=$info_file || ( echo $0 aborted. ; exit 1 )
+ java -jar $SAXON -s:$pdbml_sifts_file -xsl:$EXT_PDBML_XSL -o:$pdbml_ext_file info_file=$info_file || ( echo $0 aborted. ; exit 1 )
 
  echo " extracted: "$pdbml_ext_file
 

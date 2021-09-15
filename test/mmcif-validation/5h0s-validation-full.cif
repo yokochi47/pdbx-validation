@@ -5364,6 +5364,37 @@ _struct_sheet_range.end_label_seq_id
 1 AC6 C THR 1174 B THR 1174 C ALA 1175 B ALA 1175 
 2 AC6 C HIS 1203 B HIS 1203 C LEU 1204 B LEU 1204 
 # 
+loop_
+_pdbx_sifts_unp_segments.entity_id 
+_pdbx_sifts_unp_segments.asym_id 
+_pdbx_sifts_unp_segments.unp_acc 
+_pdbx_sifts_unp_segments.segment_id 
+_pdbx_sifts_unp_segments.instance_id 
+_pdbx_sifts_unp_segments.unp_start 
+_pdbx_sifts_unp_segments.unp_end 
+_pdbx_sifts_unp_segments.seq_id_start 
+_pdbx_sifts_unp_segments.seq_id_end 
+_pdbx_sifts_unp_segments.best_mapping 
+_pdbx_sifts_unp_segments.identity 
+. A Q6TS43 1 1 1 1333 1 1333 Y 1.000 
+. B Q6TS43 1 1 1 1333 1 1333 Y 1.000 
+# 
+loop_
+_pdbx_sifts_xref_db_segments.entity_id 
+_pdbx_sifts_xref_db_segments.asym_id 
+_pdbx_sifts_xref_db_segments.xref_db 
+_pdbx_sifts_xref_db_segments.xref_db_acc 
+_pdbx_sifts_xref_db_segments.segment_id 
+_pdbx_sifts_xref_db_segments.instance_id 
+_pdbx_sifts_xref_db_segments.seq_id_start 
+_pdbx_sifts_xref_db_segments.seq_id_end 
+. A GO GO:0019028 1 1 1 1333 
+. A GO GO:0039616 1 2 1 1333 
+. A GO GO:0039625 1 3 1 1333 
+. B GO GO:0019028 1 1 1 1333 
+. B GO GO:0039616 1 2 1 1333 
+. B GO GO:0039625 1 3 1 1333 
+# 
 _pdbx_percentile_list.entry_id   5H0S 
 _pdbx_percentile_list.name       all,em 
 # 

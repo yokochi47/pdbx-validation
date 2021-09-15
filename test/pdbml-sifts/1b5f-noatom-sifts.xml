@@ -17236,7 +17236,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="A"
                                         xref_db="GO"
-                                        xref_db_acc="0004190"
+                                        xref_db_acc="GO:0004190"
                                         segment_id="1"
                                         instance_id="1">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -17245,7 +17245,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="A"
                                         xref_db="GO"
-                                        xref_db_acc="0004190"
+                                        xref_db_acc="GO:0004190"
                                         segment_id="1"
                                         instance_id="2">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -17254,7 +17254,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="A"
                                         xref_db="GO"
-                                        xref_db_acc="0006508"
+                                        xref_db_acc="GO:0006508"
                                         segment_id="1"
                                         instance_id="3">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -17263,7 +17263,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="A"
                                         xref_db="GO"
-                                        xref_db_acc="0006508"
+                                        xref_db_acc="GO:0006508"
                                         segment_id="1"
                                         instance_id="4">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -17362,7 +17362,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="B"
                                         xref_db="GO"
-                                        xref_db_acc="0004190"
+                                        xref_db_acc="GO:0004190"
                                         segment_id="1"
                                         instance_id="1">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -17371,7 +17371,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="B"
                                         xref_db="GO"
-                                        xref_db_acc="0006508"
+                                        xref_db_acc="GO:0006508"
                                         segment_id="1"
                                         instance_id="2">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -17434,7 +17434,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="C"
                                         xref_db="GO"
-                                        xref_db_acc="0004190"
+                                        xref_db_acc="GO:0004190"
                                         segment_id="1"
                                         instance_id="1">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -17443,7 +17443,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="C"
                                         xref_db="GO"
-                                        xref_db_acc="0004190"
+                                        xref_db_acc="GO:0004190"
                                         segment_id="1"
                                         instance_id="2">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -17452,7 +17452,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="C"
                                         xref_db="GO"
-                                        xref_db_acc="0006508"
+                                        xref_db_acc="GO:0006508"
                                         segment_id="1"
                                         instance_id="3">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -17461,7 +17461,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="C"
                                         xref_db="GO"
-                                        xref_db_acc="0006508"
+                                        xref_db_acc="GO:0006508"
                                         segment_id="1"
                                         instance_id="4">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -17560,7 +17560,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="D"
                                         xref_db="GO"
-                                        xref_db_acc="0004190"
+                                        xref_db_acc="GO:0004190"
                                         segment_id="1"
                                         instance_id="1">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
@@ -17569,7 +17569,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
       <PDBx:pdbx_sifts_xref_db_segments entity_id=""
                                         asym_id="D"
                                         xref_db="GO"
-                                        xref_db_acc="0006508"
+                                        xref_db_acc="GO:0006508"
                                         segment_id="1"
                                         instance_id="2">
          <PDBx:seq_id_start>1</PDBx:seq_id_start>

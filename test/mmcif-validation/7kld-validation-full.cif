@@ -1521,6 +1521,35 @@ _symmetry.Int_Tables_number       5
 _symmetry.space_group_name_H-M    'I 1 2 1' 
 _symmetry.space_group_name_Hall   'C 2y (x,y,-x+z)' 
 # 
+loop_
+_pdbx_sifts_unp_segments.entity_id 
+_pdbx_sifts_unp_segments.asym_id 
+_pdbx_sifts_unp_segments.unp_acc 
+_pdbx_sifts_unp_segments.segment_id 
+_pdbx_sifts_unp_segments.instance_id 
+_pdbx_sifts_unp_segments.unp_start 
+_pdbx_sifts_unp_segments.unp_end 
+_pdbx_sifts_unp_segments.seq_id_start 
+_pdbx_sifts_unp_segments.seq_id_end 
+_pdbx_sifts_unp_segments.best_mapping 
+_pdbx_sifts_unp_segments.identity 
+. A W8U5D2 1 1 1 106 1 106 Y 1.000 
+. B W8U5D2 1 1 1 106 1 106 Y 1.000 
+. D W8U5D2 1 1 1 106 1 106 Y 1.000 
+# 
+loop_
+_pdbx_sifts_xref_db_segments.entity_id 
+_pdbx_sifts_xref_db_segments.asym_id 
+_pdbx_sifts_xref_db_segments.xref_db 
+_pdbx_sifts_xref_db_segments.xref_db_acc 
+_pdbx_sifts_xref_db_segments.segment_id 
+_pdbx_sifts_xref_db_segments.instance_id 
+_pdbx_sifts_xref_db_segments.seq_id_start 
+_pdbx_sifts_xref_db_segments.seq_id_end 
+. A Pfam PF04327 1 1 1 102 
+. B Pfam PF04327 1 1 1 102 
+. D Pfam PF04327 1 1 1 102 
+# 
 _pdbx_percentile_list.entry_id   7KLD 
 _pdbx_percentile_list.name       all,2.25,xray 
 # 

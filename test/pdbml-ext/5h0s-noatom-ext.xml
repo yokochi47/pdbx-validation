@@ -45216,4 +45216,86 @@ VANGQVGIPKLEVDHISFSNVVSMMTANIRTGDDMAVERVNPDDVRAINIRNA</VRPTx:pdbx_seq_one_letter
          <VRPTx:end_label_seq_id>1204</VRPTx:end_label_seq_id>
       </VRPTx:struct_sheet_range>
    </VRPTx:struct_sheet_rangeCategory>
+   <VRPTx:pdbx_sifts_unp_segmentsCategory>
+      <VRPTx:pdbx_sifts_unp_segments entity_id=""
+                                     asym_id="A"
+                                     unp_acc="Q6TS43"
+                                     segment_id="1"
+                                     instance_id="1">
+         <VRPTx:unp_start>1</VRPTx:unp_start>
+         <VRPTx:unp_end>1333</VRPTx:unp_end>
+         <VRPTx:seq_id_start>1</VRPTx:seq_id_start>
+         <VRPTx:seq_id_end>1333</VRPTx:seq_id_end>
+         <VRPTx:best_mapping>Y</VRPTx:best_mapping>
+         <VRPTx:identity>1.000</VRPTx:identity>
+      </VRPTx:pdbx_sifts_unp_segments>
+      <VRPTx:pdbx_sifts_unp_segments entity_id=""
+                                     asym_id="B"
+                                     unp_acc="Q6TS43"
+                                     segment_id="1"
+                                     instance_id="1">
+         <VRPTx:unp_start>1</VRPTx:unp_start>
+         <VRPTx:unp_end>1333</VRPTx:unp_end>
+         <VRPTx:seq_id_start>1</VRPTx:seq_id_start>
+         <VRPTx:seq_id_end>1333</VRPTx:seq_id_end>
+         <VRPTx:best_mapping>Y</VRPTx:best_mapping>
+         <VRPTx:identity>1.000</VRPTx:identity>
+      </VRPTx:pdbx_sifts_unp_segments>
+   </VRPTx:pdbx_sifts_unp_segmentsCategory>
+   <VRPTx:pdbx_sifts_xref_db_segmentsCategory>
+      <VRPTx:pdbx_sifts_xref_db_segments entity_id=""
+                                         asym_id="A"
+                                         xref_db="GO"
+                                         xref_db_acc="GO:0019028"
+                                         segment_id="1"
+                                         instance_id="1">
+         <VRPTx:seq_id_start>1</VRPTx:seq_id_start>
+         <VRPTx:seq_id_end>1333</VRPTx:seq_id_end>
+      </VRPTx:pdbx_sifts_xref_db_segments>
+      <VRPTx:pdbx_sifts_xref_db_segments entity_id=""
+                                         asym_id="A"
+                                         xref_db="GO"
+                                         xref_db_acc="GO:0039616"
+                                         segment_id="1"
+                                         instance_id="2">
+         <VRPTx:seq_id_start>1</VRPTx:seq_id_start>
+         <VRPTx:seq_id_end>1333</VRPTx:seq_id_end>
+      </VRPTx:pdbx_sifts_xref_db_segments>
+      <VRPTx:pdbx_sifts_xref_db_segments entity_id=""
+                                         asym_id="A"
+                                         xref_db="GO"
+                                         xref_db_acc="GO:0039625"
+                                         segment_id="1"
+                                         instance_id="3">
+         <VRPTx:seq_id_start>1</VRPTx:seq_id_start>
+         <VRPTx:seq_id_end>1333</VRPTx:seq_id_end>
+      </VRPTx:pdbx_sifts_xref_db_segments>
+      <VRPTx:pdbx_sifts_xref_db_segments entity_id=""
+                                         asym_id="B"
+                                         xref_db="GO"
+                                         xref_db_acc="GO:0019028"
+                                         segment_id="1"
+                                         instance_id="1">
+         <VRPTx:seq_id_start>1</VRPTx:seq_id_start>
+         <VRPTx:seq_id_end>1333</VRPTx:seq_id_end>
+      </VRPTx:pdbx_sifts_xref_db_segments>
+      <VRPTx:pdbx_sifts_xref_db_segments entity_id=""
+                                         asym_id="B"
+                                         xref_db="GO"
+                                         xref_db_acc="GO:0039616"
+                                         segment_id="1"
+                                         instance_id="2">
+         <VRPTx:seq_id_start>1</VRPTx:seq_id_start>
+         <VRPTx:seq_id_end>1333</VRPTx:seq_id_end>
+      </VRPTx:pdbx_sifts_xref_db_segments>
+      <VRPTx:pdbx_sifts_xref_db_segments entity_id=""
+                                         asym_id="B"
+                                         xref_db="GO"
+                                         xref_db_acc="GO:0039625"
+                                         segment_id="1"
+                                         instance_id="3">
+         <VRPTx:seq_id_start>1</VRPTx:seq_id_start>
+         <VRPTx:seq_id_end>1333</VRPTx:seq_id_end>
+      </VRPTx:pdbx_sifts_xref_db_segments>
+   </VRPTx:pdbx_sifts_xref_db_segmentsCategory>
 </VRPTx:datablock>

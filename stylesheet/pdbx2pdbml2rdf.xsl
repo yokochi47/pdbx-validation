@@ -66,11 +66,12 @@
   &lt;xsl:variable name="refseq"&gt;https://www.ncbi.nlm.nih.gov/protein/&lt;/xsl:variable&gt;
   &lt;xsl:variable name="norine"&gt;https://bioinfo.lifl.fr/norine/result.jsp?ID=&lt;/xsl:variable&gt;
   &lt;xsl:variable name="enzyme"&gt;http://purl.uniprot.org/enzyme/&lt;/xsl:variable&gt;
-  &lt;xsl:variable name="go"&gt;http://amigo.geneontology.org/amigo/term/GO:&lt;/xsl:variable&gt;
+  &lt;xsl:variable name="go"&gt;http://amigo.geneontology.org/amigo/term/&lt;/xsl:variable&gt;
   &lt;xsl:variable name="interpro"&gt;https://www.ebi.ac.uk/interpro/entry/&lt;/xsl:variable&gt;
   &lt;xsl:variable name="pfam"&gt;http://pfam.xfam.org/family/&lt;/xsl:variable&gt;
   &lt;xsl:variable name="cath"&gt;http://www.cathdb.info/cathnode/&lt;/xsl:variable&gt;
   &lt;xsl:variable name="scop"&gt;http://scop.berkeley.edu/sunid=&lt;/xsl:variable&gt;
+  &lt;xsl:variable name="scop2"&gt;https://scop2.mrc-lmb.cam.ac.uk/term/&lt;/xsl:variable&gt;
   &lt;xsl:variable name="ensembl"&gt;https://www.ensembl.org/id/&lt;/xsl:variable&gt;
   &lt;xsl:variable name="glycoinfo"&gt;http://rdf.glycoinfo.org/glycan/&lt;/xsl:variable&gt;
 
@@ -261,8 +262,8 @@
   &lt;/xsl:template&gt;
 
   &lt;xsl:template match="PDBx:pdbx_sifts_xref_db_segments[@xref_db='GO' and @xref_db_acc!='']/@xref_db_acc" mode="linked"&gt;
-    &lt;PDBo:link_to_go rdf:resource="{$go}{.}" rdfs:label="go:{.}"/&gt;
-    &lt;rdfs:seeAlso rdf:resource="{$idorg}go/GO:{.}" rdfs:label="go:{.}"/&gt;
+    &lt;PDBo:link_to_go rdf:resource="{$go}{.}" rdfs:label="{.}"/&gt;
+    &lt;rdfs:seeAlso rdf:resource="{$idorg}{.}" rdfs:label="{.}"/&gt;
   &lt;/xsl:template&gt;
 
   &lt;xsl:template match="PDBx:pdbx_sifts_xref_db_segments[@xref_db='InterPro' and @xref_db_acc!='']/@xref_db_acc" mode="linked"&gt;
@@ -280,9 +281,13 @@
     &lt;rdfs:seeAlso rdf:resource="{$idorg}cath/{.}" rdfs:label="cath:{.}"/&gt;
   &lt;/xsl:template&gt;
 
-  &lt;xsl:template match="PDBx:pdbx_sifts_xref_db_segments[(@xref_db='SCOP' or @xref_db='SCOP2' or @xref_db='SCOP2B') and @xref_db_acc!='']/@xref_db_acc" mode="linked"&gt;
+  &lt;xsl:template match="PDBx:pdbx_sifts_xref_db_segments[@xref_db='SCOP' and @xref_db_acc!='']/@xref_db_acc" mode="linked"&gt;
     &lt;PDBo:link_to_scop rdf:resource="{$scop}{.}" rdfs:label="scop:{.}"/&gt;
     &lt;rdfs:seeAlso rdf:resource="{$idorg}scop/{.}" rdfs:label="scop:{.}"/&gt;
+  &lt;/xsl:template&gt;
+
+  &lt;xsl:template match="PDBx:pdbx_sifts_xref_db_segments[(@xref_db='SCOP2' or @xref_db='SCOP2B') and @xref_db_acc!='']/@xref_db_acc" mode="linked"&gt;
+    &lt;PDBo:link_to_scop rdf:resource="{$scop2}{.}" rdfs:label="scop2:{.}"/&gt;
   &lt;/xsl:template&gt;
 
   &lt;xsl:template match="PDBx:pdbx_sifts_xref_db_segments[@xref_db='Ensembl' and @xref_db_acc!='']/@xref_db_acc" mode="linked"&gt;
