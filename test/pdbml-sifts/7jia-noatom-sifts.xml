@@ -847,7 +847,7 @@
       </PDBx:struct_sheet_range>
    </PDBx:struct_sheet_rangeCategory>
    <PDBx:pdbx_sifts_unp_segmentsCategory>
-      <PDBx:pdbx_sifts_unp_segments entity_id=""
+      <PDBx:pdbx_sifts_unp_segments entity_id="1"
                                     asym_id="A"
                                     unp_acc="Q8QGN9"
                                     segment_id="1"

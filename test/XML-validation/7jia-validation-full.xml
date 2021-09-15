@@ -671,7 +671,7 @@
     </VRPTx:struct_sheet_range>
   </VRPTx:struct_sheet_rangeCategory>
   <VRPTx:pdbx_sifts_unp_segmentsCategory>
-    <VRPTx:pdbx_sifts_unp_segments entity_id="" asym_id="A" unp_acc="Q8QGN9" segment_id="1" instance_id="1">
+    <VRPTx:pdbx_sifts_unp_segments entity_id="1" asym_id="A" unp_acc="Q8QGN9" segment_id="1" instance_id="1">
       <VRPTx:unp_start>796</VRPTx:unp_start>
       <VRPTx:unp_end>819</VRPTx:unp_end>
       <VRPTx:seq_id_start>1</VRPTx:seq_id_start>

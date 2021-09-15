@@ -13959,14 +13959,14 @@ NQLSISPVRDETGNVVAFVGVQTDVTA</VRPTo:struct_ref.pdbx_seq_one_letter_code>
     <VRPTo:has_pdbx_sifts_unp_segmentsCategory>
       <VRPTo:pdbx_sifts_unp_segmentsCategory rdf:about="https://rdf.wwpdb.org/pdb-validation/7AB7/pdbx_sifts_unp_segmentsCategory">
         <VRPTo:has_pdbx_sifts_unp_segments>
-          <VRPTo:pdbx_sifts_unp_segments rdf:about="https://rdf.wwpdb.org/pdb-validation/7AB7/pdbx_sifts_unp_segments/A,,1,1,B8GAY9">
+          <VRPTo:pdbx_sifts_unp_segments rdf:about="https://rdf.wwpdb.org/pdb-validation/7AB7/pdbx_sifts_unp_segments/A,1,1,1,B8GAY9">
             <VRPTo:of_datablock rdf:resource="https://rdf.wwpdb.org/pdb-validation/7AB7"/>
             <VRPTo:reference_to_struct_asym>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb-validation/7AB7/struct_asym/A">
-                <VRPTo:referenced_by_pdbx_sifts_unp_segments rdf:resource="https://rdf.wwpdb.org/pdb-validation/7AB7/pdbx_sifts_unp_segments/A,,1,1,B8GAY9"/>
+                <VRPTo:referenced_by_pdbx_sifts_unp_segments rdf:resource="https://rdf.wwpdb.org/pdb-validation/7AB7/pdbx_sifts_unp_segments/A,1,1,1,B8GAY9"/>
               </rdf:Description>
             </VRPTo:reference_to_struct_asym>
-            <VRPTo:pdbx_sifts_unp_segments.entity_id/>
+            <VRPTo:pdbx_sifts_unp_segments.entity_id>1</VRPTo:pdbx_sifts_unp_segments.entity_id>
             <VRPTo:pdbx_sifts_unp_segments.asym_id>A</VRPTo:pdbx_sifts_unp_segments.asym_id>
             <VRPTo:pdbx_sifts_unp_segments.unp_acc>B8GAY9</VRPTo:pdbx_sifts_unp_segments.unp_acc>
             <VRPTo:pdbx_sifts_unp_segments.segment_id>1</VRPTo:pdbx_sifts_unp_segments.segment_id>
@@ -13982,14 +13982,14 @@ NQLSISPVRDETGNVVAFVGVQTDVTA</VRPTo:struct_ref.pdbx_seq_one_letter_code>
           </VRPTo:pdbx_sifts_unp_segments>
         </VRPTo:has_pdbx_sifts_unp_segments>
         <VRPTo:has_pdbx_sifts_unp_segments>
-          <VRPTo:pdbx_sifts_unp_segments rdf:about="https://rdf.wwpdb.org/pdb-validation/7AB7/pdbx_sifts_unp_segments/B,,1,1,B8GAY9">
+          <VRPTo:pdbx_sifts_unp_segments rdf:about="https://rdf.wwpdb.org/pdb-validation/7AB7/pdbx_sifts_unp_segments/B,1,1,1,B8GAY9">
             <VRPTo:of_datablock rdf:resource="https://rdf.wwpdb.org/pdb-validation/7AB7"/>
             <VRPTo:reference_to_struct_asym>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb-validation/7AB7/struct_asym/B">
-                <VRPTo:referenced_by_pdbx_sifts_unp_segments rdf:resource="https://rdf.wwpdb.org/pdb-validation/7AB7/pdbx_sifts_unp_segments/B,,1,1,B8GAY9"/>
+                <VRPTo:referenced_by_pdbx_sifts_unp_segments rdf:resource="https://rdf.wwpdb.org/pdb-validation/7AB7/pdbx_sifts_unp_segments/B,1,1,1,B8GAY9"/>
               </rdf:Description>
             </VRPTo:reference_to_struct_asym>
-            <VRPTo:pdbx_sifts_unp_segments.entity_id/>
+            <VRPTo:pdbx_sifts_unp_segments.entity_id>1</VRPTo:pdbx_sifts_unp_segments.entity_id>
             <VRPTo:pdbx_sifts_unp_segments.asym_id>B</VRPTo:pdbx_sifts_unp_segments.asym_id>
             <VRPTo:pdbx_sifts_unp_segments.unp_acc>B8GAY9</VRPTo:pdbx_sifts_unp_segments.unp_acc>
             <VRPTo:pdbx_sifts_unp_segments.segment_id>1</VRPTo:pdbx_sifts_unp_segments.segment_id>
@@ -14009,14 +14009,14 @@ NQLSISPVRDETGNVVAFVGVQTDVTA</VRPTo:struct_ref.pdbx_seq_one_letter_code>
     <VRPTo:has_pdbx_sifts_xref_db_segmentsCategory>
       <VRPTo:pdbx_sifts_xref_db_segmentsCategory rdf:about="https://rdf.wwpdb.org/pdb-validation/7AB7/pdbx_sifts_xref_db_segmentsCategory">
         <VRPTo:has_pdbx_sifts_xref_db_segments>
-          <VRPTo:pdbx_sifts_xref_db_segments rdf:about="https://rdf.wwpdb.org/pdb-validation/7AB7/pdbx_sifts_xref_db_segments/A,,1,1,SCOP2B,8095379">
+          <VRPTo:pdbx_sifts_xref_db_segments rdf:about="https://rdf.wwpdb.org/pdb-validation/7AB7/pdbx_sifts_xref_db_segments/A,1,1,1,SCOP2B,8095379">
             <VRPTo:of_datablock rdf:resource="https://rdf.wwpdb.org/pdb-validation/7AB7"/>
             <VRPTo:reference_to_struct_asym>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb-validation/7AB7/struct_asym/A">
-                <VRPTo:referenced_by_pdbx_sifts_xref_db_segments rdf:resource="https://rdf.wwpdb.org/pdb-validation/7AB7/pdbx_sifts_xref_db_segments/A,,1,1,SCOP2B,8095379"/>
+                <VRPTo:referenced_by_pdbx_sifts_xref_db_segments rdf:resource="https://rdf.wwpdb.org/pdb-validation/7AB7/pdbx_sifts_xref_db_segments/A,1,1,1,SCOP2B,8095379"/>
               </rdf:Description>
             </VRPTo:reference_to_struct_asym>
-            <VRPTo:pdbx_sifts_xref_db_segments.entity_id/>
+            <VRPTo:pdbx_sifts_xref_db_segments.entity_id>1</VRPTo:pdbx_sifts_xref_db_segments.entity_id>
             <VRPTo:pdbx_sifts_xref_db_segments.asym_id>A</VRPTo:pdbx_sifts_xref_db_segments.asym_id>
             <VRPTo:pdbx_sifts_xref_db_segments.xref_db>SCOP2B</VRPTo:pdbx_sifts_xref_db_segments.xref_db>
             <VRPTo:pdbx_sifts_xref_db_segments.xref_db_acc>8095379</VRPTo:pdbx_sifts_xref_db_segments.xref_db_acc>
@@ -14028,14 +14028,14 @@ NQLSISPVRDETGNVVAFVGVQTDVTA</VRPTo:struct_ref.pdbx_seq_one_letter_code>
           </VRPTo:pdbx_sifts_xref_db_segments>
         </VRPTo:has_pdbx_sifts_xref_db_segments>
         <VRPTo:has_pdbx_sifts_xref_db_segments>
-          <VRPTo:pdbx_sifts_xref_db_segments rdf:about="https://rdf.wwpdb.org/pdb-validation/7AB7/pdbx_sifts_xref_db_segments/A,,2,1,Pfam,PF13426">
+          <VRPTo:pdbx_sifts_xref_db_segments rdf:about="https://rdf.wwpdb.org/pdb-validation/7AB7/pdbx_sifts_xref_db_segments/A,1,2,1,Pfam,PF13426">
             <VRPTo:of_datablock rdf:resource="https://rdf.wwpdb.org/pdb-validation/7AB7"/>
             <VRPTo:reference_to_struct_asym>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb-validation/7AB7/struct_asym/A">
-                <VRPTo:referenced_by_pdbx_sifts_xref_db_segments rdf:resource="https://rdf.wwpdb.org/pdb-validation/7AB7/pdbx_sifts_xref_db_segments/A,,2,1,Pfam,PF13426"/>
+                <VRPTo:referenced_by_pdbx_sifts_xref_db_segments rdf:resource="https://rdf.wwpdb.org/pdb-validation/7AB7/pdbx_sifts_xref_db_segments/A,1,2,1,Pfam,PF13426"/>
               </rdf:Description>
             </VRPTo:reference_to_struct_asym>
-            <VRPTo:pdbx_sifts_xref_db_segments.entity_id/>
+            <VRPTo:pdbx_sifts_xref_db_segments.entity_id>1</VRPTo:pdbx_sifts_xref_db_segments.entity_id>
             <VRPTo:pdbx_sifts_xref_db_segments.asym_id>A</VRPTo:pdbx_sifts_xref_db_segments.asym_id>
             <VRPTo:pdbx_sifts_xref_db_segments.xref_db>Pfam</VRPTo:pdbx_sifts_xref_db_segments.xref_db>
             <VRPTo:pdbx_sifts_xref_db_segments.xref_db_acc>PF13426</VRPTo:pdbx_sifts_xref_db_segments.xref_db_acc>
@@ -14048,14 +14048,14 @@ NQLSISPVRDETGNVVAFVGVQTDVTA</VRPTo:struct_ref.pdbx_seq_one_letter_code>
           </VRPTo:pdbx_sifts_xref_db_segments>
         </VRPTo:has_pdbx_sifts_xref_db_segments>
         <VRPTo:has_pdbx_sifts_xref_db_segments>
-          <VRPTo:pdbx_sifts_xref_db_segments rdf:about="https://rdf.wwpdb.org/pdb-validation/7AB7/pdbx_sifts_xref_db_segments/B,,1,1,SCOP2B,8095379">
+          <VRPTo:pdbx_sifts_xref_db_segments rdf:about="https://rdf.wwpdb.org/pdb-validation/7AB7/pdbx_sifts_xref_db_segments/B,1,1,1,SCOP2B,8095379">
             <VRPTo:of_datablock rdf:resource="https://rdf.wwpdb.org/pdb-validation/7AB7"/>
             <VRPTo:reference_to_struct_asym>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb-validation/7AB7/struct_asym/B">
-                <VRPTo:referenced_by_pdbx_sifts_xref_db_segments rdf:resource="https://rdf.wwpdb.org/pdb-validation/7AB7/pdbx_sifts_xref_db_segments/B,,1,1,SCOP2B,8095379"/>
+                <VRPTo:referenced_by_pdbx_sifts_xref_db_segments rdf:resource="https://rdf.wwpdb.org/pdb-validation/7AB7/pdbx_sifts_xref_db_segments/B,1,1,1,SCOP2B,8095379"/>
               </rdf:Description>
             </VRPTo:reference_to_struct_asym>
-            <VRPTo:pdbx_sifts_xref_db_segments.entity_id/>
+            <VRPTo:pdbx_sifts_xref_db_segments.entity_id>1</VRPTo:pdbx_sifts_xref_db_segments.entity_id>
             <VRPTo:pdbx_sifts_xref_db_segments.asym_id>B</VRPTo:pdbx_sifts_xref_db_segments.asym_id>
             <VRPTo:pdbx_sifts_xref_db_segments.xref_db>SCOP2B</VRPTo:pdbx_sifts_xref_db_segments.xref_db>
             <VRPTo:pdbx_sifts_xref_db_segments.xref_db_acc>8095379</VRPTo:pdbx_sifts_xref_db_segments.xref_db_acc>
@@ -14067,14 +14067,14 @@ NQLSISPVRDETGNVVAFVGVQTDVTA</VRPTo:struct_ref.pdbx_seq_one_letter_code>
           </VRPTo:pdbx_sifts_xref_db_segments>
         </VRPTo:has_pdbx_sifts_xref_db_segments>
         <VRPTo:has_pdbx_sifts_xref_db_segments>
-          <VRPTo:pdbx_sifts_xref_db_segments rdf:about="https://rdf.wwpdb.org/pdb-validation/7AB7/pdbx_sifts_xref_db_segments/B,,2,1,Pfam,PF13426">
+          <VRPTo:pdbx_sifts_xref_db_segments rdf:about="https://rdf.wwpdb.org/pdb-validation/7AB7/pdbx_sifts_xref_db_segments/B,1,2,1,Pfam,PF13426">
             <VRPTo:of_datablock rdf:resource="https://rdf.wwpdb.org/pdb-validation/7AB7"/>
             <VRPTo:reference_to_struct_asym>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb-validation/7AB7/struct_asym/B">
-                <VRPTo:referenced_by_pdbx_sifts_xref_db_segments rdf:resource="https://rdf.wwpdb.org/pdb-validation/7AB7/pdbx_sifts_xref_db_segments/B,,2,1,Pfam,PF13426"/>
+                <VRPTo:referenced_by_pdbx_sifts_xref_db_segments rdf:resource="https://rdf.wwpdb.org/pdb-validation/7AB7/pdbx_sifts_xref_db_segments/B,1,2,1,Pfam,PF13426"/>
               </rdf:Description>
             </VRPTo:reference_to_struct_asym>
-            <VRPTo:pdbx_sifts_xref_db_segments.entity_id/>
+            <VRPTo:pdbx_sifts_xref_db_segments.entity_id>1</VRPTo:pdbx_sifts_xref_db_segments.entity_id>
             <VRPTo:pdbx_sifts_xref_db_segments.asym_id>B</VRPTo:pdbx_sifts_xref_db_segments.asym_id>
             <VRPTo:pdbx_sifts_xref_db_segments.xref_db>Pfam</VRPTo:pdbx_sifts_xref_db_segments.xref_db>
             <VRPTo:pdbx_sifts_xref_db_segments.xref_db_acc>PF13426</VRPTo:pdbx_sifts_xref_db_segments.xref_db_acc>

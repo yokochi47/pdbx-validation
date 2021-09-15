@@ -15654,14 +15654,14 @@ NQLSISPVRDETGNVVAFVGVQTDVTA</PDBo:struct_ref.pdbx_seq_one_letter_code>
     <PDBo:has_pdbx_sifts_unp_segmentsCategory>
       <PDBo:pdbx_sifts_unp_segmentsCategory rdf:about="https://rdf.wwpdb.org/pdb/7AB7/pdbx_sifts_unp_segmentsCategory">
         <PDBo:has_pdbx_sifts_unp_segments>
-          <PDBo:pdbx_sifts_unp_segments rdf:about="https://rdf.wwpdb.org/pdb/7AB7/pdbx_sifts_unp_segments/A,,1,1,B8GAY9">
+          <PDBo:pdbx_sifts_unp_segments rdf:about="https://rdf.wwpdb.org/pdb/7AB7/pdbx_sifts_unp_segments/A,1,1,1,B8GAY9">
             <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/pdb/7AB7"/>
             <PDBo:reference_to_struct_asym>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/7AB7/struct_asym/A">
-                <PDBo:referenced_by_pdbx_sifts_unp_segments rdf:resource="https://rdf.wwpdb.org/pdb/7AB7/pdbx_sifts_unp_segments/A,,1,1,B8GAY9"/>
+                <PDBo:referenced_by_pdbx_sifts_unp_segments rdf:resource="https://rdf.wwpdb.org/pdb/7AB7/pdbx_sifts_unp_segments/A,1,1,1,B8GAY9"/>
               </rdf:Description>
             </PDBo:reference_to_struct_asym>
-            <PDBo:pdbx_sifts_unp_segments.entity_id/>
+            <PDBo:pdbx_sifts_unp_segments.entity_id>1</PDBo:pdbx_sifts_unp_segments.entity_id>
             <PDBo:pdbx_sifts_unp_segments.asym_id>A</PDBo:pdbx_sifts_unp_segments.asym_id>
             <PDBo:pdbx_sifts_unp_segments.unp_acc>B8GAY9</PDBo:pdbx_sifts_unp_segments.unp_acc>
             <PDBo:pdbx_sifts_unp_segments.segment_id>1</PDBo:pdbx_sifts_unp_segments.segment_id>
@@ -15677,14 +15677,14 @@ NQLSISPVRDETGNVVAFVGVQTDVTA</PDBo:struct_ref.pdbx_seq_one_letter_code>
           </PDBo:pdbx_sifts_unp_segments>
         </PDBo:has_pdbx_sifts_unp_segments>
         <PDBo:has_pdbx_sifts_unp_segments>
-          <PDBo:pdbx_sifts_unp_segments rdf:about="https://rdf.wwpdb.org/pdb/7AB7/pdbx_sifts_unp_segments/B,,1,1,B8GAY9">
+          <PDBo:pdbx_sifts_unp_segments rdf:about="https://rdf.wwpdb.org/pdb/7AB7/pdbx_sifts_unp_segments/B,1,1,1,B8GAY9">
             <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/pdb/7AB7"/>
             <PDBo:reference_to_struct_asym>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/7AB7/struct_asym/B">
-                <PDBo:referenced_by_pdbx_sifts_unp_segments rdf:resource="https://rdf.wwpdb.org/pdb/7AB7/pdbx_sifts_unp_segments/B,,1,1,B8GAY9"/>
+                <PDBo:referenced_by_pdbx_sifts_unp_segments rdf:resource="https://rdf.wwpdb.org/pdb/7AB7/pdbx_sifts_unp_segments/B,1,1,1,B8GAY9"/>
               </rdf:Description>
             </PDBo:reference_to_struct_asym>
-            <PDBo:pdbx_sifts_unp_segments.entity_id/>
+            <PDBo:pdbx_sifts_unp_segments.entity_id>1</PDBo:pdbx_sifts_unp_segments.entity_id>
             <PDBo:pdbx_sifts_unp_segments.asym_id>B</PDBo:pdbx_sifts_unp_segments.asym_id>
             <PDBo:pdbx_sifts_unp_segments.unp_acc>B8GAY9</PDBo:pdbx_sifts_unp_segments.unp_acc>
             <PDBo:pdbx_sifts_unp_segments.segment_id>1</PDBo:pdbx_sifts_unp_segments.segment_id>
@@ -15704,14 +15704,14 @@ NQLSISPVRDETGNVVAFVGVQTDVTA</PDBo:struct_ref.pdbx_seq_one_letter_code>
     <PDBo:has_pdbx_sifts_xref_db_segmentsCategory>
       <PDBo:pdbx_sifts_xref_db_segmentsCategory rdf:about="https://rdf.wwpdb.org/pdb/7AB7/pdbx_sifts_xref_db_segmentsCategory">
         <PDBo:has_pdbx_sifts_xref_db_segments>
-          <PDBo:pdbx_sifts_xref_db_segments rdf:about="https://rdf.wwpdb.org/pdb/7AB7/pdbx_sifts_xref_db_segments/A,,1,1,SCOP2B,8095379">
+          <PDBo:pdbx_sifts_xref_db_segments rdf:about="https://rdf.wwpdb.org/pdb/7AB7/pdbx_sifts_xref_db_segments/A,1,1,1,SCOP2B,8095379">
             <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/pdb/7AB7"/>
             <PDBo:reference_to_struct_asym>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/7AB7/struct_asym/A">
-                <PDBo:referenced_by_pdbx_sifts_xref_db_segments rdf:resource="https://rdf.wwpdb.org/pdb/7AB7/pdbx_sifts_xref_db_segments/A,,1,1,SCOP2B,8095379"/>
+                <PDBo:referenced_by_pdbx_sifts_xref_db_segments rdf:resource="https://rdf.wwpdb.org/pdb/7AB7/pdbx_sifts_xref_db_segments/A,1,1,1,SCOP2B,8095379"/>
               </rdf:Description>
             </PDBo:reference_to_struct_asym>
-            <PDBo:pdbx_sifts_xref_db_segments.entity_id/>
+            <PDBo:pdbx_sifts_xref_db_segments.entity_id>1</PDBo:pdbx_sifts_xref_db_segments.entity_id>
             <PDBo:pdbx_sifts_xref_db_segments.asym_id>A</PDBo:pdbx_sifts_xref_db_segments.asym_id>
             <PDBo:pdbx_sifts_xref_db_segments.xref_db>SCOP2B</PDBo:pdbx_sifts_xref_db_segments.xref_db>
             <PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>8095379</PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>
@@ -15723,14 +15723,14 @@ NQLSISPVRDETGNVVAFVGVQTDVTA</PDBo:struct_ref.pdbx_seq_one_letter_code>
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
         <PDBo:has_pdbx_sifts_xref_db_segments>
-          <PDBo:pdbx_sifts_xref_db_segments rdf:about="https://rdf.wwpdb.org/pdb/7AB7/pdbx_sifts_xref_db_segments/A,,2,1,Pfam,PF13426">
+          <PDBo:pdbx_sifts_xref_db_segments rdf:about="https://rdf.wwpdb.org/pdb/7AB7/pdbx_sifts_xref_db_segments/A,1,2,1,Pfam,PF13426">
             <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/pdb/7AB7"/>
             <PDBo:reference_to_struct_asym>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/7AB7/struct_asym/A">
-                <PDBo:referenced_by_pdbx_sifts_xref_db_segments rdf:resource="https://rdf.wwpdb.org/pdb/7AB7/pdbx_sifts_xref_db_segments/A,,2,1,Pfam,PF13426"/>
+                <PDBo:referenced_by_pdbx_sifts_xref_db_segments rdf:resource="https://rdf.wwpdb.org/pdb/7AB7/pdbx_sifts_xref_db_segments/A,1,2,1,Pfam,PF13426"/>
               </rdf:Description>
             </PDBo:reference_to_struct_asym>
-            <PDBo:pdbx_sifts_xref_db_segments.entity_id/>
+            <PDBo:pdbx_sifts_xref_db_segments.entity_id>1</PDBo:pdbx_sifts_xref_db_segments.entity_id>
             <PDBo:pdbx_sifts_xref_db_segments.asym_id>A</PDBo:pdbx_sifts_xref_db_segments.asym_id>
             <PDBo:pdbx_sifts_xref_db_segments.xref_db>Pfam</PDBo:pdbx_sifts_xref_db_segments.xref_db>
             <PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>PF13426</PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>
@@ -15743,14 +15743,14 @@ NQLSISPVRDETGNVVAFVGVQTDVTA</PDBo:struct_ref.pdbx_seq_one_letter_code>
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
         <PDBo:has_pdbx_sifts_xref_db_segments>
-          <PDBo:pdbx_sifts_xref_db_segments rdf:about="https://rdf.wwpdb.org/pdb/7AB7/pdbx_sifts_xref_db_segments/B,,1,1,SCOP2B,8095379">
+          <PDBo:pdbx_sifts_xref_db_segments rdf:about="https://rdf.wwpdb.org/pdb/7AB7/pdbx_sifts_xref_db_segments/B,1,1,1,SCOP2B,8095379">
             <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/pdb/7AB7"/>
             <PDBo:reference_to_struct_asym>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/7AB7/struct_asym/B">
-                <PDBo:referenced_by_pdbx_sifts_xref_db_segments rdf:resource="https://rdf.wwpdb.org/pdb/7AB7/pdbx_sifts_xref_db_segments/B,,1,1,SCOP2B,8095379"/>
+                <PDBo:referenced_by_pdbx_sifts_xref_db_segments rdf:resource="https://rdf.wwpdb.org/pdb/7AB7/pdbx_sifts_xref_db_segments/B,1,1,1,SCOP2B,8095379"/>
               </rdf:Description>
             </PDBo:reference_to_struct_asym>
-            <PDBo:pdbx_sifts_xref_db_segments.entity_id/>
+            <PDBo:pdbx_sifts_xref_db_segments.entity_id>1</PDBo:pdbx_sifts_xref_db_segments.entity_id>
             <PDBo:pdbx_sifts_xref_db_segments.asym_id>B</PDBo:pdbx_sifts_xref_db_segments.asym_id>
             <PDBo:pdbx_sifts_xref_db_segments.xref_db>SCOP2B</PDBo:pdbx_sifts_xref_db_segments.xref_db>
             <PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>8095379</PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>
@@ -15762,14 +15762,14 @@ NQLSISPVRDETGNVVAFVGVQTDVTA</PDBo:struct_ref.pdbx_seq_one_letter_code>
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
         <PDBo:has_pdbx_sifts_xref_db_segments>
-          <PDBo:pdbx_sifts_xref_db_segments rdf:about="https://rdf.wwpdb.org/pdb/7AB7/pdbx_sifts_xref_db_segments/B,,2,1,Pfam,PF13426">
+          <PDBo:pdbx_sifts_xref_db_segments rdf:about="https://rdf.wwpdb.org/pdb/7AB7/pdbx_sifts_xref_db_segments/B,1,2,1,Pfam,PF13426">
             <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/pdb/7AB7"/>
             <PDBo:reference_to_struct_asym>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/7AB7/struct_asym/B">
-                <PDBo:referenced_by_pdbx_sifts_xref_db_segments rdf:resource="https://rdf.wwpdb.org/pdb/7AB7/pdbx_sifts_xref_db_segments/B,,2,1,Pfam,PF13426"/>
+                <PDBo:referenced_by_pdbx_sifts_xref_db_segments rdf:resource="https://rdf.wwpdb.org/pdb/7AB7/pdbx_sifts_xref_db_segments/B,1,2,1,Pfam,PF13426"/>
               </rdf:Description>
             </PDBo:reference_to_struct_asym>
-            <PDBo:pdbx_sifts_xref_db_segments.entity_id/>
+            <PDBo:pdbx_sifts_xref_db_segments.entity_id>1</PDBo:pdbx_sifts_xref_db_segments.entity_id>
             <PDBo:pdbx_sifts_xref_db_segments.asym_id>B</PDBo:pdbx_sifts_xref_db_segments.asym_id>
             <PDBo:pdbx_sifts_xref_db_segments.xref_db>Pfam</PDBo:pdbx_sifts_xref_db_segments.xref_db>
             <PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>PF13426</PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>

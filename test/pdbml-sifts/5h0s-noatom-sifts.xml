@@ -45502,7 +45502,7 @@ VANGQVGIPKLEVDHISFSNVVSMMTANIRTGDDMAVERVNPDDVRAINIRNA</PDBx:pdbx_seq_one_letter_
       </PDBx:struct_sheet_range>
    </PDBx:struct_sheet_rangeCategory>
    <PDBx:pdbx_sifts_unp_segmentsCategory>
-      <PDBx:pdbx_sifts_unp_segments entity_id=""
+      <PDBx:pdbx_sifts_unp_segments entity_id="1"
                                     asym_id="A"
                                     unp_acc="Q6TS43"
                                     segment_id="1"
@@ -45514,7 +45514,7 @@ VANGQVGIPKLEVDHISFSNVVSMMTANIRTGDDMAVERVNPDDVRAINIRNA</PDBx:pdbx_seq_one_letter_
          <PDBx:best_mapping>Y</PDBx:best_mapping>
          <PDBx:identity>1.000</PDBx:identity>
       </PDBx:pdbx_sifts_unp_segments>
-      <PDBx:pdbx_sifts_unp_segments entity_id=""
+      <PDBx:pdbx_sifts_unp_segments entity_id="1"
                                     asym_id="B"
                                     unp_acc="Q6TS43"
                                     segment_id="1"
@@ -45528,7 +45528,7 @@ VANGQVGIPKLEVDHISFSNVVSMMTANIRTGDDMAVERVNPDDVRAINIRNA</PDBx:pdbx_seq_one_letter_
       </PDBx:pdbx_sifts_unp_segments>
    </PDBx:pdbx_sifts_unp_segmentsCategory>
    <PDBx:pdbx_sifts_xref_db_segmentsCategory>
-      <PDBx:pdbx_sifts_xref_db_segments entity_id=""
+      <PDBx:pdbx_sifts_xref_db_segments entity_id="1"
                                         asym_id="A"
                                         xref_db="GO"
                                         xref_db_acc="GO:0019028"
@@ -45537,7 +45537,7 @@ VANGQVGIPKLEVDHISFSNVVSMMTANIRTGDDMAVERVNPDDVRAINIRNA</PDBx:pdbx_seq_one_letter_
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
          <PDBx:seq_id_end>1333</PDBx:seq_id_end>
       </PDBx:pdbx_sifts_xref_db_segments>
-      <PDBx:pdbx_sifts_xref_db_segments entity_id=""
+      <PDBx:pdbx_sifts_xref_db_segments entity_id="1"
                                         asym_id="A"
                                         xref_db="GO"
                                         xref_db_acc="GO:0039616"
@@ -45546,7 +45546,7 @@ VANGQVGIPKLEVDHISFSNVVSMMTANIRTGDDMAVERVNPDDVRAINIRNA</PDBx:pdbx_seq_one_letter_
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
          <PDBx:seq_id_end>1333</PDBx:seq_id_end>
       </PDBx:pdbx_sifts_xref_db_segments>
-      <PDBx:pdbx_sifts_xref_db_segments entity_id=""
+      <PDBx:pdbx_sifts_xref_db_segments entity_id="1"
                                         asym_id="A"
                                         xref_db="GO"
                                         xref_db_acc="GO:0039625"
@@ -45555,7 +45555,7 @@ VANGQVGIPKLEVDHISFSNVVSMMTANIRTGDDMAVERVNPDDVRAINIRNA</PDBx:pdbx_seq_one_letter_
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
          <PDBx:seq_id_end>1333</PDBx:seq_id_end>
       </PDBx:pdbx_sifts_xref_db_segments>
-      <PDBx:pdbx_sifts_xref_db_segments entity_id=""
+      <PDBx:pdbx_sifts_xref_db_segments entity_id="1"
                                         asym_id="B"
                                         xref_db="GO"
                                         xref_db_acc="GO:0019028"
@@ -45564,7 +45564,7 @@ VANGQVGIPKLEVDHISFSNVVSMMTANIRTGDDMAVERVNPDDVRAINIRNA</PDBx:pdbx_seq_one_letter_
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
          <PDBx:seq_id_end>1333</PDBx:seq_id_end>
       </PDBx:pdbx_sifts_xref_db_segments>
-      <PDBx:pdbx_sifts_xref_db_segments entity_id=""
+      <PDBx:pdbx_sifts_xref_db_segments entity_id="1"
                                         asym_id="B"
                                         xref_db="GO"
                                         xref_db_acc="GO:0039616"
@@ -45573,7 +45573,7 @@ VANGQVGIPKLEVDHISFSNVVSMMTANIRTGDDMAVERVNPDDVRAINIRNA</PDBx:pdbx_seq_one_letter_
          <PDBx:seq_id_start>1</PDBx:seq_id_start>
          <PDBx:seq_id_end>1333</PDBx:seq_id_end>
       </PDBx:pdbx_sifts_xref_db_segments>
-      <PDBx:pdbx_sifts_xref_db_segments entity_id=""
+      <PDBx:pdbx_sifts_xref_db_segments entity_id="1"
                                         asym_id="B"
                                         xref_db="GO"
                                         xref_db_acc="GO:0039625"

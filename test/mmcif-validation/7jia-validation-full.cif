@@ -313,7 +313,7 @@ _struct_sheet_range.end_label_seq_id
 1 AA1 A THR 12 A THR 12 A CYS 14 A CYS 14 
 2 AA1 A GLY 22 A GLY 22 A CYS 24 A CYS 24 
 # 
-_pdbx_sifts_unp_segments.entity_id      . 
+_pdbx_sifts_unp_segments.entity_id      1 
 _pdbx_sifts_unp_segments.asym_id        A 
 _pdbx_sifts_unp_segments.unp_acc        Q8QGN9 
 _pdbx_sifts_unp_segments.segment_id     1 

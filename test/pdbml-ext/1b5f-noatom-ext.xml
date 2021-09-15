@@ -16707,7 +16707,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
       </VRPTx:symmetry>
    </VRPTx:symmetryCategory>
    <VRPTx:pdbx_sifts_unp_segmentsCategory>
-      <VRPTx:pdbx_sifts_unp_segments entity_id=""
+      <VRPTx:pdbx_sifts_unp_segments entity_id="1"
                                      asym_id="A"
                                      unp_acc="Q9XFX3"
                                      segment_id="1"
@@ -16719,7 +16719,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
          <VRPTx:best_mapping>Y</VRPTx:best_mapping>
          <VRPTx:identity>1.000</VRPTx:identity>
       </VRPTx:pdbx_sifts_unp_segments>
-      <VRPTx:pdbx_sifts_unp_segments entity_id=""
+      <VRPTx:pdbx_sifts_unp_segments entity_id="2"
                                      asym_id="B"
                                      unp_acc="Q9XFX3"
                                      segment_id="1"
@@ -16731,7 +16731,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
          <VRPTx:best_mapping>Y</VRPTx:best_mapping>
          <VRPTx:identity>1.000</VRPTx:identity>
       </VRPTx:pdbx_sifts_unp_segments>
-      <VRPTx:pdbx_sifts_unp_segments entity_id=""
+      <VRPTx:pdbx_sifts_unp_segments entity_id="1"
                                      asym_id="C"
                                      unp_acc="Q9XFX3"
                                      segment_id="1"
@@ -16743,7 +16743,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
          <VRPTx:best_mapping>Y</VRPTx:best_mapping>
          <VRPTx:identity>1.000</VRPTx:identity>
       </VRPTx:pdbx_sifts_unp_segments>
-      <VRPTx:pdbx_sifts_unp_segments entity_id=""
+      <VRPTx:pdbx_sifts_unp_segments entity_id="2"
                                      asym_id="D"
                                      unp_acc="Q9XFX3"
                                      segment_id="1"
@@ -16757,7 +16757,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
       </VRPTx:pdbx_sifts_unp_segments>
    </VRPTx:pdbx_sifts_unp_segmentsCategory>
    <VRPTx:pdbx_sifts_xref_db_segmentsCategory>
-      <VRPTx:pdbx_sifts_xref_db_segments entity_id=""
+      <VRPTx:pdbx_sifts_xref_db_segments entity_id="1"
                                          asym_id="A"
                                          xref_db="GO"
                                          xref_db_acc="GO:0004190"
@@ -16766,7 +16766,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
          <VRPTx:seq_id_start>1</VRPTx:seq_id_start>
          <VRPTx:seq_id_end>239</VRPTx:seq_id_end>
       </VRPTx:pdbx_sifts_xref_db_segments>
-      <VRPTx:pdbx_sifts_xref_db_segments entity_id=""
+      <VRPTx:pdbx_sifts_xref_db_segments entity_id="1"
                                          asym_id="A"
                                          xref_db="GO"
                                          xref_db_acc="GO:0004190"
@@ -16775,7 +16775,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
          <VRPTx:seq_id_start>1</VRPTx:seq_id_start>
          <VRPTx:seq_id_end>239</VRPTx:seq_id_end>
       </VRPTx:pdbx_sifts_xref_db_segments>
-      <VRPTx:pdbx_sifts_xref_db_segments entity_id=""
+      <VRPTx:pdbx_sifts_xref_db_segments entity_id="1"
                                          asym_id="A"
                                          xref_db="GO"
                                          xref_db_acc="GO:0006508"
@@ -16784,7 +16784,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
          <VRPTx:seq_id_start>1</VRPTx:seq_id_start>
          <VRPTx:seq_id_end>239</VRPTx:seq_id_end>
       </VRPTx:pdbx_sifts_xref_db_segments>
-      <VRPTx:pdbx_sifts_xref_db_segments entity_id=""
+      <VRPTx:pdbx_sifts_xref_db_segments entity_id="1"
                                          asym_id="A"
                                          xref_db="GO"
                                          xref_db_acc="GO:0006508"
@@ -16793,7 +16793,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
          <VRPTx:seq_id_start>1</VRPTx:seq_id_start>
          <VRPTx:seq_id_end>239</VRPTx:seq_id_end>
       </VRPTx:pdbx_sifts_xref_db_segments>
-      <VRPTx:pdbx_sifts_xref_db_segments entity_id=""
+      <VRPTx:pdbx_sifts_xref_db_segments entity_id="1"
                                          asym_id="A"
                                          xref_db="InterPro"
                                          xref_db_acc="IPR021109"
@@ -16802,7 +16802,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
          <VRPTx:seq_id_start>1</VRPTx:seq_id_start>
          <VRPTx:seq_id_end>169</VRPTx:seq_id_end>
       </VRPTx:pdbx_sifts_xref_db_segments>
-      <VRPTx:pdbx_sifts_xref_db_segments entity_id=""
+      <VRPTx:pdbx_sifts_xref_db_segments entity_id="1"
                                          asym_id="A"
                                          xref_db="InterPro"
                                          xref_db_acc="IPR021109"
@@ -16811,7 +16811,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
          <VRPTx:seq_id_start>170</VRPTx:seq_id_start>
          <VRPTx:seq_id_end>238</VRPTx:seq_id_end>
       </VRPTx:pdbx_sifts_xref_db_segments>
-      <VRPTx:pdbx_sifts_xref_db_segments entity_id=""
+      <VRPTx:pdbx_sifts_xref_db_segments entity_id="1"
                                          asym_id="A"
                                          xref_db="InterPro"
                                          xref_db_acc="IPR033121"
@@ -16820,7 +16820,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
          <VRPTx:seq_id_start>14</VRPTx:seq_id_start>
          <VRPTx:seq_id_end>238</VRPTx:seq_id_end>
       </VRPTx:pdbx_sifts_xref_db_segments>
-      <VRPTx:pdbx_sifts_xref_db_segments entity_id=""
+      <VRPTx:pdbx_sifts_xref_db_segments entity_id="1"
                                          asym_id="A"
                                          xref_db="InterPro"
                                          xref_db_acc="IPR001461"
@@ -16829,7 +16829,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
          <VRPTx:seq_id_start>21</VRPTx:seq_id_start>
          <VRPTx:seq_id_end>41</VRPTx:seq_id_end>
       </VRPTx:pdbx_sifts_xref_db_segments>
-      <VRPTx:pdbx_sifts_xref_db_segments entity_id=""
+      <VRPTx:pdbx_sifts_xref_db_segments entity_id="1"
                                          asym_id="A"
                                          xref_db="InterPro"
                                          xref_db_acc="IPR001461"
@@ -16838,7 +16838,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
          <VRPTx:seq_id_start>9</VRPTx:seq_id_start>
          <VRPTx:seq_id_end>237</VRPTx:seq_id_end>
       </VRPTx:pdbx_sifts_xref_db_segments>
-      <VRPTx:pdbx_sifts_xref_db_segments entity_id=""
+      <VRPTx:pdbx_sifts_xref_db_segments entity_id="1"
                                          asym_id="A"
                                          xref_db="InterPro"
                                          xref_db_acc="IPR021109"
@@ -16847,7 +16847,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
          <VRPTx:seq_id_start>3</VRPTx:seq_id_start>
          <VRPTx:seq_id_end>238</VRPTx:seq_id_end>
       </VRPTx:pdbx_sifts_xref_db_segments>
-      <VRPTx:pdbx_sifts_xref_db_segments entity_id=""
+      <VRPTx:pdbx_sifts_xref_db_segments entity_id="1"
                                          asym_id="A"
                                          xref_db="InterPro"
                                          xref_db_acc="IPR001461"
@@ -16856,7 +16856,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
          <VRPTx:seq_id_start>213</VRPTx:seq_id_start>
          <VRPTx:seq_id_end>224</VRPTx:seq_id_end>
       </VRPTx:pdbx_sifts_xref_db_segments>
-      <VRPTx:pdbx_sifts_xref_db_segments entity_id=""
+      <VRPTx:pdbx_sifts_xref_db_segments entity_id="1"
                                          asym_id="A"
                                          xref_db="InterPro"
                                          xref_db_acc="IPR001461"
@@ -16865,7 +16865,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
          <VRPTx:seq_id_start>163</VRPTx:seq_id_start>
          <VRPTx:seq_id_end>176</VRPTx:seq_id_end>
       </VRPTx:pdbx_sifts_xref_db_segments>
-      <VRPTx:pdbx_sifts_xref_db_segments entity_id=""
+      <VRPTx:pdbx_sifts_xref_db_segments entity_id="1"
                                          asym_id="A"
                                          xref_db="CATH"
                                          xref_db_acc="2.40.70.10"
@@ -16874,7 +16874,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
          <VRPTx:seq_id_start>1</VRPTx:seq_id_start>
          <VRPTx:seq_id_end>239</VRPTx:seq_id_end>
       </VRPTx:pdbx_sifts_xref_db_segments>
-      <VRPTx:pdbx_sifts_xref_db_segments entity_id=""
+      <VRPTx:pdbx_sifts_xref_db_segments entity_id="1"
                                          asym_id="A"
                                          xref_db="SCOP"
                                          xref_db_acc="26836"
@@ -16883,7 +16883,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
          <VRPTx:seq_id_start>1</VRPTx:seq_id_start>
          <VRPTx:seq_id_end>239</VRPTx:seq_id_end>
       </VRPTx:pdbx_sifts_xref_db_segments>
-      <VRPTx:pdbx_sifts_xref_db_segments entity_id=""
+      <VRPTx:pdbx_sifts_xref_db_segments entity_id="2"
                                          asym_id="B"
                                          xref_db="GO"
                                          xref_db_acc="GO:0004190"
@@ -16892,7 +16892,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
          <VRPTx:seq_id_start>1</VRPTx:seq_id_start>
          <VRPTx:seq_id_end>87</VRPTx:seq_id_end>
       </VRPTx:pdbx_sifts_xref_db_segments>
-      <VRPTx:pdbx_sifts_xref_db_segments entity_id=""
+      <VRPTx:pdbx_sifts_xref_db_segments entity_id="2"
                                          asym_id="B"
                                          xref_db="GO"
                                          xref_db_acc="GO:0006508"
@@ -16901,7 +16901,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
          <VRPTx:seq_id_start>1</VRPTx:seq_id_start>
          <VRPTx:seq_id_end>87</VRPTx:seq_id_end>
       </VRPTx:pdbx_sifts_xref_db_segments>
-      <VRPTx:pdbx_sifts_xref_db_segments entity_id=""
+      <VRPTx:pdbx_sifts_xref_db_segments entity_id="2"
                                          asym_id="B"
                                          xref_db="InterPro"
                                          xref_db_acc="IPR033121"
@@ -16910,7 +16910,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
          <VRPTx:seq_id_start>2</VRPTx:seq_id_start>
          <VRPTx:seq_id_end>86</VRPTx:seq_id_end>
       </VRPTx:pdbx_sifts_xref_db_segments>
-      <VRPTx:pdbx_sifts_xref_db_segments entity_id=""
+      <VRPTx:pdbx_sifts_xref_db_segments entity_id="2"
                                          asym_id="B"
                                          xref_db="InterPro"
                                          xref_db_acc="IPR021109"
@@ -16919,7 +16919,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
          <VRPTx:seq_id_start>3</VRPTx:seq_id_start>
          <VRPTx:seq_id_end>86</VRPTx:seq_id_end>
       </VRPTx:pdbx_sifts_xref_db_segments>
-      <VRPTx:pdbx_sifts_xref_db_segments entity_id=""
+      <VRPTx:pdbx_sifts_xref_db_segments entity_id="2"
                                          asym_id="B"
                                          xref_db="InterPro"
                                          xref_db_acc="IPR021109"
@@ -16928,7 +16928,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
          <VRPTx:seq_id_start>2</VRPTx:seq_id_start>
          <VRPTx:seq_id_end>87</VRPTx:seq_id_end>
       </VRPTx:pdbx_sifts_xref_db_segments>
-      <VRPTx:pdbx_sifts_xref_db_segments entity_id=""
+      <VRPTx:pdbx_sifts_xref_db_segments entity_id="2"
                                          asym_id="B"
                                          xref_db="InterPro"
                                          xref_db_acc="IPR001461"
@@ -16937,7 +16937,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
          <VRPTx:seq_id_start>2</VRPTx:seq_id_start>
          <VRPTx:seq_id_end>84</VRPTx:seq_id_end>
       </VRPTx:pdbx_sifts_xref_db_segments>
-      <VRPTx:pdbx_sifts_xref_db_segments entity_id=""
+      <VRPTx:pdbx_sifts_xref_db_segments entity_id="2"
                                          asym_id="B"
                                          xref_db="CATH"
                                          xref_db_acc="2.40.70.10"
@@ -16946,7 +16946,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
          <VRPTx:seq_id_start>1</VRPTx:seq_id_start>
          <VRPTx:seq_id_end>87</VRPTx:seq_id_end>
       </VRPTx:pdbx_sifts_xref_db_segments>
-      <VRPTx:pdbx_sifts_xref_db_segments entity_id=""
+      <VRPTx:pdbx_sifts_xref_db_segments entity_id="2"
                                          asym_id="B"
                                          xref_db="SCOP"
                                          xref_db_acc="26836"
@@ -16955,7 +16955,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
          <VRPTx:seq_id_start>1</VRPTx:seq_id_start>
          <VRPTx:seq_id_end>87</VRPTx:seq_id_end>
       </VRPTx:pdbx_sifts_xref_db_segments>
-      <VRPTx:pdbx_sifts_xref_db_segments entity_id=""
+      <VRPTx:pdbx_sifts_xref_db_segments entity_id="1"
                                          asym_id="C"
                                          xref_db="GO"
                                          xref_db_acc="GO:0004190"
@@ -16964,7 +16964,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
          <VRPTx:seq_id_start>1</VRPTx:seq_id_start>
          <VRPTx:seq_id_end>239</VRPTx:seq_id_end>
       </VRPTx:pdbx_sifts_xref_db_segments>
-      <VRPTx:pdbx_sifts_xref_db_segments entity_id=""
+      <VRPTx:pdbx_sifts_xref_db_segments entity_id="1"
                                          asym_id="C"
                                          xref_db="GO"
                                          xref_db_acc="GO:0004190"
@@ -16973,7 +16973,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
          <VRPTx:seq_id_start>1</VRPTx:seq_id_start>
          <VRPTx:seq_id_end>239</VRPTx:seq_id_end>
       </VRPTx:pdbx_sifts_xref_db_segments>
-      <VRPTx:pdbx_sifts_xref_db_segments entity_id=""
+      <VRPTx:pdbx_sifts_xref_db_segments entity_id="1"
                                          asym_id="C"
                                          xref_db="GO"
                                          xref_db_acc="GO:0006508"
@@ -16982,7 +16982,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
          <VRPTx:seq_id_start>1</VRPTx:seq_id_start>
          <VRPTx:seq_id_end>239</VRPTx:seq_id_end>
       </VRPTx:pdbx_sifts_xref_db_segments>
-      <VRPTx:pdbx_sifts_xref_db_segments entity_id=""
+      <VRPTx:pdbx_sifts_xref_db_segments entity_id="1"
                                          asym_id="C"
                                          xref_db="GO"
                                          xref_db_acc="GO:0006508"
@@ -16991,7 +16991,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
          <VRPTx:seq_id_start>1</VRPTx:seq_id_start>
          <VRPTx:seq_id_end>239</VRPTx:seq_id_end>
       </VRPTx:pdbx_sifts_xref_db_segments>
-      <VRPTx:pdbx_sifts_xref_db_segments entity_id=""
+      <VRPTx:pdbx_sifts_xref_db_segments entity_id="1"
                                          asym_id="C"
                                          xref_db="InterPro"
                                          xref_db_acc="IPR021109"
@@ -17000,7 +17000,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
          <VRPTx:seq_id_start>170</VRPTx:seq_id_start>
          <VRPTx:seq_id_end>238</VRPTx:seq_id_end>
       </VRPTx:pdbx_sifts_xref_db_segments>
-      <VRPTx:pdbx_sifts_xref_db_segments entity_id=""
+      <VRPTx:pdbx_sifts_xref_db_segments entity_id="1"
                                          asym_id="C"
                                          xref_db="InterPro"
                                          xref_db_acc="IPR001461"
@@ -17009,7 +17009,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
          <VRPTx:seq_id_start>213</VRPTx:seq_id_start>
          <VRPTx:seq_id_end>224</VRPTx:seq_id_end>
       </VRPTx:pdbx_sifts_xref_db_segments>
-      <VRPTx:pdbx_sifts_xref_db_segments entity_id=""
+      <VRPTx:pdbx_sifts_xref_db_segments entity_id="1"
                                          asym_id="C"
                                          xref_db="InterPro"
                                          xref_db_acc="IPR021109"
@@ -17018,7 +17018,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
          <VRPTx:seq_id_start>1</VRPTx:seq_id_start>
          <VRPTx:seq_id_end>169</VRPTx:seq_id_end>
       </VRPTx:pdbx_sifts_xref_db_segments>
-      <VRPTx:pdbx_sifts_xref_db_segments entity_id=""
+      <VRPTx:pdbx_sifts_xref_db_segments entity_id="1"
                                          asym_id="C"
                                          xref_db="InterPro"
                                          xref_db_acc="IPR001461"
@@ -17027,7 +17027,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
          <VRPTx:seq_id_start>21</VRPTx:seq_id_start>
          <VRPTx:seq_id_end>41</VRPTx:seq_id_end>
       </VRPTx:pdbx_sifts_xref_db_segments>
-      <VRPTx:pdbx_sifts_xref_db_segments entity_id=""
+      <VRPTx:pdbx_sifts_xref_db_segments entity_id="1"
                                          asym_id="C"
                                          xref_db="InterPro"
                                          xref_db_acc="IPR001461"
@@ -17036,7 +17036,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
          <VRPTx:seq_id_start>163</VRPTx:seq_id_start>
          <VRPTx:seq_id_end>176</VRPTx:seq_id_end>
       </VRPTx:pdbx_sifts_xref_db_segments>
-      <VRPTx:pdbx_sifts_xref_db_segments entity_id=""
+      <VRPTx:pdbx_sifts_xref_db_segments entity_id="1"
                                          asym_id="C"
                                          xref_db="InterPro"
                                          xref_db_acc="IPR021109"
@@ -17045,7 +17045,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
          <VRPTx:seq_id_start>3</VRPTx:seq_id_start>
          <VRPTx:seq_id_end>238</VRPTx:seq_id_end>
       </VRPTx:pdbx_sifts_xref_db_segments>
-      <VRPTx:pdbx_sifts_xref_db_segments entity_id=""
+      <VRPTx:pdbx_sifts_xref_db_segments entity_id="1"
                                          asym_id="C"
                                          xref_db="InterPro"
                                          xref_db_acc="IPR033121"
@@ -17054,7 +17054,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
          <VRPTx:seq_id_start>14</VRPTx:seq_id_start>
          <VRPTx:seq_id_end>238</VRPTx:seq_id_end>
       </VRPTx:pdbx_sifts_xref_db_segments>
-      <VRPTx:pdbx_sifts_xref_db_segments entity_id=""
+      <VRPTx:pdbx_sifts_xref_db_segments entity_id="1"
                                          asym_id="C"
                                          xref_db="InterPro"
                                          xref_db_acc="IPR001461"
@@ -17063,7 +17063,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
          <VRPTx:seq_id_start>9</VRPTx:seq_id_start>
          <VRPTx:seq_id_end>237</VRPTx:seq_id_end>
       </VRPTx:pdbx_sifts_xref_db_segments>
-      <VRPTx:pdbx_sifts_xref_db_segments entity_id=""
+      <VRPTx:pdbx_sifts_xref_db_segments entity_id="1"
                                          asym_id="C"
                                          xref_db="CATH"
                                          xref_db_acc="2.40.70.10"
@@ -17072,7 +17072,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
          <VRPTx:seq_id_start>2</VRPTx:seq_id_start>
          <VRPTx:seq_id_end>239</VRPTx:seq_id_end>
       </VRPTx:pdbx_sifts_xref_db_segments>
-      <VRPTx:pdbx_sifts_xref_db_segments entity_id=""
+      <VRPTx:pdbx_sifts_xref_db_segments entity_id="1"
                                          asym_id="C"
                                          xref_db="SCOP"
                                          xref_db_acc="26837"
@@ -17081,7 +17081,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
          <VRPTx:seq_id_start>1</VRPTx:seq_id_start>
          <VRPTx:seq_id_end>239</VRPTx:seq_id_end>
       </VRPTx:pdbx_sifts_xref_db_segments>
-      <VRPTx:pdbx_sifts_xref_db_segments entity_id=""
+      <VRPTx:pdbx_sifts_xref_db_segments entity_id="2"
                                          asym_id="D"
                                          xref_db="GO"
                                          xref_db_acc="GO:0004190"
@@ -17090,7 +17090,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
          <VRPTx:seq_id_start>1</VRPTx:seq_id_start>
          <VRPTx:seq_id_end>87</VRPTx:seq_id_end>
       </VRPTx:pdbx_sifts_xref_db_segments>
-      <VRPTx:pdbx_sifts_xref_db_segments entity_id=""
+      <VRPTx:pdbx_sifts_xref_db_segments entity_id="2"
                                          asym_id="D"
                                          xref_db="GO"
                                          xref_db_acc="GO:0006508"
@@ -17099,7 +17099,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
          <VRPTx:seq_id_start>1</VRPTx:seq_id_start>
          <VRPTx:seq_id_end>87</VRPTx:seq_id_end>
       </VRPTx:pdbx_sifts_xref_db_segments>
-      <VRPTx:pdbx_sifts_xref_db_segments entity_id=""
+      <VRPTx:pdbx_sifts_xref_db_segments entity_id="2"
                                          asym_id="D"
                                          xref_db="InterPro"
                                          xref_db_acc="IPR033121"
@@ -17108,7 +17108,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
          <VRPTx:seq_id_start>2</VRPTx:seq_id_start>
          <VRPTx:seq_id_end>86</VRPTx:seq_id_end>
       </VRPTx:pdbx_sifts_xref_db_segments>
-      <VRPTx:pdbx_sifts_xref_db_segments entity_id=""
+      <VRPTx:pdbx_sifts_xref_db_segments entity_id="2"
                                          asym_id="D"
                                          xref_db="InterPro"
                                          xref_db_acc="IPR021109"
@@ -17117,7 +17117,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
          <VRPTx:seq_id_start>2</VRPTx:seq_id_start>
          <VRPTx:seq_id_end>87</VRPTx:seq_id_end>
       </VRPTx:pdbx_sifts_xref_db_segments>
-      <VRPTx:pdbx_sifts_xref_db_segments entity_id=""
+      <VRPTx:pdbx_sifts_xref_db_segments entity_id="2"
                                          asym_id="D"
                                          xref_db="InterPro"
                                          xref_db_acc="IPR001461"
@@ -17126,7 +17126,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
          <VRPTx:seq_id_start>2</VRPTx:seq_id_start>
          <VRPTx:seq_id_end>84</VRPTx:seq_id_end>
       </VRPTx:pdbx_sifts_xref_db_segments>
-      <VRPTx:pdbx_sifts_xref_db_segments entity_id=""
+      <VRPTx:pdbx_sifts_xref_db_segments entity_id="2"
                                          asym_id="D"
                                          xref_db="InterPro"
                                          xref_db_acc="IPR021109"
@@ -17135,7 +17135,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
          <VRPTx:seq_id_start>3</VRPTx:seq_id_start>
          <VRPTx:seq_id_end>86</VRPTx:seq_id_end>
       </VRPTx:pdbx_sifts_xref_db_segments>
-      <VRPTx:pdbx_sifts_xref_db_segments entity_id=""
+      <VRPTx:pdbx_sifts_xref_db_segments entity_id="2"
                                          asym_id="D"
                                          xref_db="CATH"
                                          xref_db_acc="2.40.70.10"
@@ -17144,7 +17144,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
          <VRPTx:seq_id_start>1</VRPTx:seq_id_start>
          <VRPTx:seq_id_end>87</VRPTx:seq_id_end>
       </VRPTx:pdbx_sifts_xref_db_segments>
-      <VRPTx:pdbx_sifts_xref_db_segments entity_id=""
+      <VRPTx:pdbx_sifts_xref_db_segments entity_id="2"
                                          asym_id="D"
                                          xref_db="SCOP"
                                          xref_db_acc="26837"

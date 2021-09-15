@@ -10626,7 +10626,7 @@ LILQTMLVSLQTIEEEYNENIRLNYK</VRPTx:pdbx_seq_one_letter_code>
     </VRPTx:symmetry>
   </VRPTx:symmetryCategory>
   <VRPTx:pdbx_sifts_unp_segmentsCategory>
-    <VRPTx:pdbx_sifts_unp_segments entity_id="" asym_id="A" unp_acc="W8U5D2" segment_id="1" instance_id="1">
+    <VRPTx:pdbx_sifts_unp_segments entity_id="1" asym_id="A" unp_acc="W8U5D2" segment_id="1" instance_id="1">
       <VRPTx:unp_start>1</VRPTx:unp_start>
       <VRPTx:unp_end>106</VRPTx:unp_end>
       <VRPTx:seq_id_start>1</VRPTx:seq_id_start>
@@ -10634,7 +10634,7 @@ LILQTMLVSLQTIEEEYNENIRLNYK</VRPTx:pdbx_seq_one_letter_code>
       <VRPTx:best_mapping>Y</VRPTx:best_mapping>
       <VRPTx:identity>1.000</VRPTx:identity>
     </VRPTx:pdbx_sifts_unp_segments>
-    <VRPTx:pdbx_sifts_unp_segments entity_id="" asym_id="B" unp_acc="W8U5D2" segment_id="1" instance_id="1">
+    <VRPTx:pdbx_sifts_unp_segments entity_id="1" asym_id="B" unp_acc="W8U5D2" segment_id="1" instance_id="1">
       <VRPTx:unp_start>1</VRPTx:unp_start>
       <VRPTx:unp_end>106</VRPTx:unp_end>
       <VRPTx:seq_id_start>1</VRPTx:seq_id_start>
@@ -10642,7 +10642,7 @@ LILQTMLVSLQTIEEEYNENIRLNYK</VRPTx:pdbx_seq_one_letter_code>
       <VRPTx:best_mapping>Y</VRPTx:best_mapping>
       <VRPTx:identity>1.000</VRPTx:identity>
     </VRPTx:pdbx_sifts_unp_segments>
-    <VRPTx:pdbx_sifts_unp_segments entity_id="" asym_id="D" unp_acc="W8U5D2" segment_id="1" instance_id="1">
+    <VRPTx:pdbx_sifts_unp_segments entity_id="1" asym_id="D" unp_acc="W8U5D2" segment_id="1" instance_id="1">
       <VRPTx:unp_start>1</VRPTx:unp_start>
       <VRPTx:unp_end>106</VRPTx:unp_end>
       <VRPTx:seq_id_start>1</VRPTx:seq_id_start>
@@ -10652,15 +10652,15 @@ LILQTMLVSLQTIEEEYNENIRLNYK</VRPTx:pdbx_seq_one_letter_code>
     </VRPTx:pdbx_sifts_unp_segments>
   </VRPTx:pdbx_sifts_unp_segmentsCategory>
   <VRPTx:pdbx_sifts_xref_db_segmentsCategory>
-    <VRPTx:pdbx_sifts_xref_db_segments entity_id="" asym_id="A" xref_db="Pfam" xref_db_acc="PF04327" segment_id="1" instance_id="1">
+    <VRPTx:pdbx_sifts_xref_db_segments entity_id="1" asym_id="A" xref_db="Pfam" xref_db_acc="PF04327" segment_id="1" instance_id="1">
       <VRPTx:seq_id_start>1</VRPTx:seq_id_start>
       <VRPTx:seq_id_end>102</VRPTx:seq_id_end>
     </VRPTx:pdbx_sifts_xref_db_segments>
-    <VRPTx:pdbx_sifts_xref_db_segments entity_id="" asym_id="B" xref_db="Pfam" xref_db_acc="PF04327" segment_id="1" instance_id="1">
+    <VRPTx:pdbx_sifts_xref_db_segments entity_id="1" asym_id="B" xref_db="Pfam" xref_db_acc="PF04327" segment_id="1" instance_id="1">
       <VRPTx:seq_id_start>1</VRPTx:seq_id_start>
       <VRPTx:seq_id_end>102</VRPTx:seq_id_end>
     </VRPTx:pdbx_sifts_xref_db_segments>
-    <VRPTx:pdbx_sifts_xref_db_segments entity_id="" asym_id="D" xref_db="Pfam" xref_db_acc="PF04327" segment_id="1" instance_id="1">
+    <VRPTx:pdbx_sifts_xref_db_segments entity_id="1" asym_id="D" xref_db="Pfam" xref_db_acc="PF04327" segment_id="1" instance_id="1">
       <VRPTx:seq_id_start>1</VRPTx:seq_id_start>
       <VRPTx:seq_id_end>102</VRPTx:seq_id_end>
     </VRPTx:pdbx_sifts_xref_db_segments>

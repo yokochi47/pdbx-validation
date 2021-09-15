@@ -19,7 +19,9 @@
   <xsl:output method="xml" indent="yes"/>
   <xsl:strip-space elements="*"/>
 
-  <xsl:variable name="entry_id"><xsl:value-of select="/PDBx:datablock/PDBx:entryCategory/PDBx:entry/@id"/></xsl:variable>
+  <xsl:variable name="datablock" select="/PDBx:datablock"/>
+
+  <xsl:variable name="entry_id"><xsl:value-of select="$datablock/PDBx:entryCategory/PDBx:entry/@id"/></xsl:variable>
   <xsl:variable name="datablock_name"><xsl:value-of select="concat($entry_id,'-noatom')"/></xsl:variable>
 
   <xsl:variable name="pdb_id"><xsl:value-of select="translate($sifts_entry/@dbAccessionId,'abcdefghijklmnopqrstuvwxyz','ABCDEFGHIJKLMNOPQRSTUVWXYZ')"/></xsl:variable>
@@ -3501,7 +3503,7 @@ Unmatched entry ID in both documents (<xsl:value-of select="$entry_id"/> and <xs
     <xsl:for-each select="$sifts_entry/sifts:entity">
 
       <xsl:variable name="asym_id"><xsl:value-of select="@entityId"/></xsl:variable>
-      <xsl:variable name="entity_id"><xsl:value-of select="PDBx:datablock/PDBx:pdbx_poly_seq_schemeCategory/PDBx:pdbx_poly_seq_scheme[@asym_id=$asym_id][1]/@entity_id"/></xsl:variable>
+      <xsl:variable name="entity_id"><xsl:value-of select="$datablock/PDBx:pdbx_poly_seq_schemeCategory/PDBx:pdbx_poly_seq_scheme[@asym_id=$asym_id][1]/@entity_id"/></xsl:variable>
 
       <xsl:for-each select="sifts:segment">
         <xsl:variable name="segment_id"><xsl:value-of select="position()"/></xsl:variable>
@@ -3554,7 +3556,7 @@ Unmatched entry ID in both documents (<xsl:value-of select="$entry_id"/> and <xs
     <xsl:for-each select="$sifts_entry/sifts:entity">
 
       <xsl:variable name="asym_id"><xsl:value-of select="@entityId"/></xsl:variable>
-      <xsl:variable name="entity_id"><xsl:value-of select="PDBx:datablock/PDBx:pdbx_poly_seq_schemeCategory/PDBx:pdbx_poly_seq_scheme[@asym_id=$asym_id][1]/@entity_id"/></xsl:variable>
+      <xsl:variable name="entity_id"><xsl:value-of select="$datablock/PDBx:pdbx_poly_seq_schemeCategory/PDBx:pdbx_poly_seq_scheme[@asym_id=$asym_id][1]/@entity_id"/></xsl:variable>
 
       <xsl:for-each select="sifts:segment">
         <xsl:variable name="segment_id"><xsl:value-of select="position()"/></xsl:variable>

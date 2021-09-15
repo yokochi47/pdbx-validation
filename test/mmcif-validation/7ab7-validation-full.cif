@@ -1171,8 +1171,8 @@ _pdbx_sifts_unp_segments.seq_id_start
 _pdbx_sifts_unp_segments.seq_id_end 
 _pdbx_sifts_unp_segments.best_mapping 
 _pdbx_sifts_unp_segments.identity 
-. A B8GAY9 1 1 47 153 1 107 Y 1.000 
-. B B8GAY9 1 1 47 153 1 107 Y 1.000 
+1 A B8GAY9 1 1 47 153 1 107 Y 1.000 
+1 B B8GAY9 1 1 47 153 1 107 Y 1.000 
 # 
 loop_
 _pdbx_sifts_xref_db_segments.entity_id 
@@ -1183,10 +1183,10 @@ _pdbx_sifts_xref_db_segments.segment_id
 _pdbx_sifts_xref_db_segments.instance_id 
 _pdbx_sifts_xref_db_segments.seq_id_start 
 _pdbx_sifts_xref_db_segments.seq_id_end 
-. A SCOP2B 8095379 1 1 2 107 
-. A Pfam   PF13426 1 2 2 107 
-. B SCOP2B 8095379 1 1 2 105 
-. B Pfam   PF13426 1 2 2 107 
+1 A SCOP2B 8095379 1 1 2 107 
+1 A Pfam   PF13426 1 2 2 107 
+1 B SCOP2B 8095379 1 1 2 105 
+1 B Pfam   PF13426 1 2 2 107 
 # 
 _pdbx_percentile_list.entry_id   7AB7 
 _pdbx_percentile_list.name       all,1.8,xray 

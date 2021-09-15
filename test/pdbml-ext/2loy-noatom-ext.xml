@@ -6798,7 +6798,7 @@ VDGTEVPTLMLVKEAIIEEKC</VRPTx:pdbx_seq_one_letter_code>
       </VRPTx:struct_sheet_range>
    </VRPTx:struct_sheet_rangeCategory>
    <VRPTx:pdbx_sifts_unp_segmentsCategory>
-      <VRPTx:pdbx_sifts_unp_segments entity_id=""
+      <VRPTx:pdbx_sifts_unp_segments entity_id="1"
                                      asym_id="A"
                                      unp_acc="Q93573"
                                      segment_id="1"
@@ -6812,7 +6812,7 @@ VDGTEVPTLMLVKEAIIEEKC</VRPTx:pdbx_seq_one_letter_code>
       </VRPTx:pdbx_sifts_unp_segments>
    </VRPTx:pdbx_sifts_unp_segmentsCategory>
    <VRPTx:pdbx_sifts_xref_db_segmentsCategory>
-      <VRPTx:pdbx_sifts_xref_db_segments entity_id=""
+      <VRPTx:pdbx_sifts_xref_db_segments entity_id="1"
                                          asym_id="A"
                                          xref_db="GO"
                                          xref_db_acc="GO:0005509"
@@ -6821,7 +6821,7 @@ VDGTEVPTLMLVKEAIIEEKC</VRPTx:pdbx_seq_one_letter_code>
          <VRPTx:seq_id_start>1</VRPTx:seq_id_start>
          <VRPTx:seq_id_end>181</VRPTx:seq_id_end>
       </VRPTx:pdbx_sifts_xref_db_segments>
-      <VRPTx:pdbx_sifts_xref_db_segments entity_id=""
+      <VRPTx:pdbx_sifts_xref_db_segments entity_id="1"
                                          asym_id="A"
                                          xref_db="GO"
                                          xref_db_acc="GO:0005737"
@@ -6830,7 +6830,7 @@ VDGTEVPTLMLVKEAIIEEKC</VRPTx:pdbx_seq_one_letter_code>
          <VRPTx:seq_id_start>1</VRPTx:seq_id_start>
          <VRPTx:seq_id_end>181</VRPTx:seq_id_end>
       </VRPTx:pdbx_sifts_xref_db_segments>
-      <VRPTx:pdbx_sifts_xref_db_segments entity_id=""
+      <VRPTx:pdbx_sifts_xref_db_segments entity_id="1"
                                          asym_id="A"
                                          xref_db="GO"
                                          xref_db_acc="GO:0005737"
@@ -6839,7 +6839,7 @@ VDGTEVPTLMLVKEAIIEEKC</VRPTx:pdbx_seq_one_letter_code>
          <VRPTx:seq_id_start>1</VRPTx:seq_id_start>
          <VRPTx:seq_id_end>181</VRPTx:seq_id_end>
       </VRPTx:pdbx_sifts_xref_db_segments>
-      <VRPTx:pdbx_sifts_xref_db_segments entity_id=""
+      <VRPTx:pdbx_sifts_xref_db_segments entity_id="1"
                                          asym_id="A"
                                          xref_db="GO"
                                          xref_db_acc="GO:0005737"
@@ -6848,7 +6848,7 @@ VDGTEVPTLMLVKEAIIEEKC</VRPTx:pdbx_seq_one_letter_code>
          <VRPTx:seq_id_start>1</VRPTx:seq_id_start>
          <VRPTx:seq_id_end>181</VRPTx:seq_id_end>
       </VRPTx:pdbx_sifts_xref_db_segments>
-      <VRPTx:pdbx_sifts_xref_db_segments entity_id=""
+      <VRPTx:pdbx_sifts_xref_db_segments entity_id="1"
                                          asym_id="A"
                                          xref_db="GO"
                                          xref_db_acc="GO:0005783"
@@ -6857,7 +6857,7 @@ VDGTEVPTLMLVKEAIIEEKC</VRPTx:pdbx_seq_one_letter_code>
          <VRPTx:seq_id_start>1</VRPTx:seq_id_start>
          <VRPTx:seq_id_end>181</VRPTx:seq_id_end>
       </VRPTx:pdbx_sifts_xref_db_segments>
-      <VRPTx:pdbx_sifts_xref_db_segments entity_id=""
+      <VRPTx:pdbx_sifts_xref_db_segments entity_id="1"
                                          asym_id="A"
                                          xref_db="InterPro"
                                          xref_db_acc="IPR018105"
@@ -6866,7 +6866,7 @@ VDGTEVPTLMLVKEAIIEEKC</VRPTx:pdbx_seq_one_letter_code>
          <VRPTx:seq_id_start>1</VRPTx:seq_id_start>
          <VRPTx:seq_id_end>181</VRPTx:seq_id_end>
       </VRPTx:pdbx_sifts_xref_db_segments>
-      <VRPTx:pdbx_sifts_xref_db_segments entity_id=""
+      <VRPTx:pdbx_sifts_xref_db_segments entity_id="1"
                                          asym_id="A"
                                          xref_db="InterPro"
                                          xref_db_acc="IPR011057"
@@ -6875,7 +6875,7 @@ VDGTEVPTLMLVKEAIIEEKC</VRPTx:pdbx_seq_one_letter_code>
          <VRPTx:seq_id_start>1</VRPTx:seq_id_start>
          <VRPTx:seq_id_end>181</VRPTx:seq_id_end>
       </VRPTx:pdbx_sifts_xref_db_segments>
-      <VRPTx:pdbx_sifts_xref_db_segments entity_id=""
+      <VRPTx:pdbx_sifts_xref_db_segments entity_id="1"
                                          asym_id="A"
                                          xref_db="InterPro"
                                          xref_db_acc="IPR018105"
@@ -6884,7 +6884,7 @@ VDGTEVPTLMLVKEAIIEEKC</VRPTx:pdbx_seq_one_letter_code>
          <VRPTx:seq_id_start>1</VRPTx:seq_id_start>
          <VRPTx:seq_id_end>176</VRPTx:seq_id_end>
       </VRPTx:pdbx_sifts_xref_db_segments>
-      <VRPTx:pdbx_sifts_xref_db_segments entity_id=""
+      <VRPTx:pdbx_sifts_xref_db_segments entity_id="1"
                                          asym_id="A"
                                          xref_db="InterPro"
                                          xref_db_acc="IPR018105"
@@ -6893,7 +6893,7 @@ VDGTEVPTLMLVKEAIIEEKC</VRPTx:pdbx_seq_one_letter_code>
          <VRPTx:seq_id_start>1</VRPTx:seq_id_start>
          <VRPTx:seq_id_end>181</VRPTx:seq_id_end>
       </VRPTx:pdbx_sifts_xref_db_segments>
-      <VRPTx:pdbx_sifts_xref_db_segments entity_id=""
+      <VRPTx:pdbx_sifts_xref_db_segments entity_id="1"
                                          asym_id="A"
                                          xref_db="InterPro"
                                          xref_db_acc="IPR011057"
@@ -6902,7 +6902,7 @@ VDGTEVPTLMLVKEAIIEEKC</VRPTx:pdbx_seq_one_letter_code>
          <VRPTx:seq_id_start>1</VRPTx:seq_id_start>
          <VRPTx:seq_id_end>181</VRPTx:seq_id_end>
       </VRPTx:pdbx_sifts_xref_db_segments>
-      <VRPTx:pdbx_sifts_xref_db_segments entity_id=""
+      <VRPTx:pdbx_sifts_xref_db_segments entity_id="1"
                                          asym_id="A"
                                          xref_db="InterPro"
                                          xref_db_acc="IPR011323"
@@ -6911,7 +6911,7 @@ VDGTEVPTLMLVKEAIIEEKC</VRPTx:pdbx_seq_one_letter_code>
          <VRPTx:seq_id_start>1</VRPTx:seq_id_start>
          <VRPTx:seq_id_end>181</VRPTx:seq_id_end>
       </VRPTx:pdbx_sifts_xref_db_segments>
-      <VRPTx:pdbx_sifts_xref_db_segments entity_id=""
+      <VRPTx:pdbx_sifts_xref_db_segments entity_id="1"
                                          asym_id="A"
                                          xref_db="InterPro"
                                          xref_db_acc="IPR018105"
@@ -6920,7 +6920,7 @@ VDGTEVPTLMLVKEAIIEEKC</VRPTx:pdbx_seq_one_letter_code>
          <VRPTx:seq_id_start>46</VRPTx:seq_id_start>
          <VRPTx:seq_id_end>57</VRPTx:seq_id_end>
       </VRPTx:pdbx_sifts_xref_db_segments>
-      <VRPTx:pdbx_sifts_xref_db_segments entity_id=""
+      <VRPTx:pdbx_sifts_xref_db_segments entity_id="1"
                                          asym_id="A"
                                          xref_db="InterPro"
                                          xref_db_acc="IPR018105"
@@ -6929,7 +6929,7 @@ VDGTEVPTLMLVKEAIIEEKC</VRPTx:pdbx_seq_one_letter_code>
          <VRPTx:seq_id_start>1</VRPTx:seq_id_start>
          <VRPTx:seq_id_end>21</VRPTx:seq_id_end>
       </VRPTx:pdbx_sifts_xref_db_segments>
-      <VRPTx:pdbx_sifts_xref_db_segments entity_id=""
+      <VRPTx:pdbx_sifts_xref_db_segments entity_id="1"
                                          asym_id="A"
                                          xref_db="InterPro"
                                          xref_db_acc="IPR018105"
@@ -6938,7 +6938,7 @@ VDGTEVPTLMLVKEAIIEEKC</VRPTx:pdbx_seq_one_letter_code>
          <VRPTx:seq_id_start>60</VRPTx:seq_id_start>
          <VRPTx:seq_id_end>79</VRPTx:seq_id_end>
       </VRPTx:pdbx_sifts_xref_db_segments>
-      <VRPTx:pdbx_sifts_xref_db_segments entity_id=""
+      <VRPTx:pdbx_sifts_xref_db_segments entity_id="1"
                                          asym_id="A"
                                          xref_db="CATH"
                                          xref_db_acc="2.170.150.10"
@@ -6947,7 +6947,7 @@ VDGTEVPTLMLVKEAIIEEKC</VRPTx:pdbx_seq_one_letter_code>
          <VRPTx:seq_id_start>1</VRPTx:seq_id_start>
          <VRPTx:seq_id_end>181</VRPTx:seq_id_end>
       </VRPTx:pdbx_sifts_xref_db_segments>
-      <VRPTx:pdbx_sifts_xref_db_segments entity_id=""
+      <VRPTx:pdbx_sifts_xref_db_segments entity_id="1"
                                          asym_id="A"
                                          xref_db="SCOP2B"
                                          xref_db_acc="8077409"
@@ -6956,7 +6956,7 @@ VDGTEVPTLMLVKEAIIEEKC</VRPTx:pdbx_seq_one_letter_code>
          <VRPTx:seq_id_start>1</VRPTx:seq_id_start>
          <VRPTx:seq_id_end>181</VRPTx:seq_id_end>
       </VRPTx:pdbx_sifts_xref_db_segments>
-      <VRPTx:pdbx_sifts_xref_db_segments entity_id=""
+      <VRPTx:pdbx_sifts_xref_db_segments entity_id="1"
                                          asym_id="A"
                                          xref_db="Pfam"
                                          xref_db_acc="PF00838"
@@ -6965,7 +6965,7 @@ VDGTEVPTLMLVKEAIIEEKC</VRPTx:pdbx_seq_one_letter_code>
          <VRPTx:seq_id_start>1</VRPTx:seq_id_start>
          <VRPTx:seq_id_end>177</VRPTx:seq_id_end>
       </VRPTx:pdbx_sifts_xref_db_segments>
-      <VRPTx:pdbx_sifts_xref_db_segments entity_id=""
+      <VRPTx:pdbx_sifts_xref_db_segments entity_id="1"
                                          asym_id="A"
                                          xref_db="GO"
                                          xref_db_acc="GO:0005509"
@@ -6974,7 +6974,7 @@ VDGTEVPTLMLVKEAIIEEKC</VRPTx:pdbx_seq_one_letter_code>
          <VRPTx:seq_id_start>182</VRPTx:seq_id_start>
          <VRPTx:seq_id_end>189</VRPTx:seq_id_end>
       </VRPTx:pdbx_sifts_xref_db_segments>
-      <VRPTx:pdbx_sifts_xref_db_segments entity_id=""
+      <VRPTx:pdbx_sifts_xref_db_segments entity_id="1"
                                          asym_id="A"
                                          xref_db="GO"
                                          xref_db_acc="GO:0005737"
@@ -6983,7 +6983,7 @@ VDGTEVPTLMLVKEAIIEEKC</VRPTx:pdbx_seq_one_letter_code>
          <VRPTx:seq_id_start>182</VRPTx:seq_id_start>
          <VRPTx:seq_id_end>189</VRPTx:seq_id_end>
       </VRPTx:pdbx_sifts_xref_db_segments>
-      <VRPTx:pdbx_sifts_xref_db_segments entity_id=""
+      <VRPTx:pdbx_sifts_xref_db_segments entity_id="1"
                                          asym_id="A"
                                          xref_db="GO"
                                          xref_db_acc="GO:0005737"
@@ -6992,7 +6992,7 @@ VDGTEVPTLMLVKEAIIEEKC</VRPTx:pdbx_seq_one_letter_code>
          <VRPTx:seq_id_start>182</VRPTx:seq_id_start>
          <VRPTx:seq_id_end>189</VRPTx:seq_id_end>
       </VRPTx:pdbx_sifts_xref_db_segments>
-      <VRPTx:pdbx_sifts_xref_db_segments entity_id=""
+      <VRPTx:pdbx_sifts_xref_db_segments entity_id="1"
                                          asym_id="A"
                                          xref_db="GO"
                                          xref_db_acc="GO:0005737"
@@ -7001,7 +7001,7 @@ VDGTEVPTLMLVKEAIIEEKC</VRPTx:pdbx_seq_one_letter_code>
          <VRPTx:seq_id_start>182</VRPTx:seq_id_start>
          <VRPTx:seq_id_end>189</VRPTx:seq_id_end>
       </VRPTx:pdbx_sifts_xref_db_segments>
-      <VRPTx:pdbx_sifts_xref_db_segments entity_id=""
+      <VRPTx:pdbx_sifts_xref_db_segments entity_id="1"
                                          asym_id="A"
                                          xref_db="GO"
                                          xref_db_acc="GO:0005783"
@@ -7010,7 +7010,7 @@ VDGTEVPTLMLVKEAIIEEKC</VRPTx:pdbx_seq_one_letter_code>
          <VRPTx:seq_id_start>182</VRPTx:seq_id_start>
          <VRPTx:seq_id_end>189</VRPTx:seq_id_end>
       </VRPTx:pdbx_sifts_xref_db_segments>
-      <VRPTx:pdbx_sifts_xref_db_segments entity_id=""
+      <VRPTx:pdbx_sifts_xref_db_segments entity_id="1"
                                          asym_id="A"
                                          xref_db="InterPro"
                                          xref_db_acc="IPR011323"
@@ -7019,7 +7019,7 @@ VDGTEVPTLMLVKEAIIEEKC</VRPTx:pdbx_seq_one_letter_code>
          <VRPTx:seq_id_start>182</VRPTx:seq_id_start>
          <VRPTx:seq_id_end>189</VRPTx:seq_id_end>
       </VRPTx:pdbx_sifts_xref_db_segments>
-      <VRPTx:pdbx_sifts_xref_db_segments entity_id=""
+      <VRPTx:pdbx_sifts_xref_db_segments entity_id="1"
                                          asym_id="A"
                                          xref_db="CATH"
                                          xref_db_acc="2.170.150.10"

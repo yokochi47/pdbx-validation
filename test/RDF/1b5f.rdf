@@ -39443,14 +39443,14 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
     <PDBo:has_pdbx_sifts_unp_segmentsCategory>
       <PDBo:pdbx_sifts_unp_segmentsCategory rdf:about="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_unp_segmentsCategory">
         <PDBo:has_pdbx_sifts_unp_segments>
-          <PDBo:pdbx_sifts_unp_segments rdf:about="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_unp_segments/A,,1,1,Q9XFX3">
+          <PDBo:pdbx_sifts_unp_segments rdf:about="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_unp_segments/A,1,1,1,Q9XFX3">
             <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/pdb/1B5F"/>
             <PDBo:reference_to_struct_asym>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/1B5F/struct_asym/A">
-                <PDBo:referenced_by_pdbx_sifts_unp_segments rdf:resource="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_unp_segments/A,,1,1,Q9XFX3"/>
+                <PDBo:referenced_by_pdbx_sifts_unp_segments rdf:resource="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_unp_segments/A,1,1,1,Q9XFX3"/>
               </rdf:Description>
             </PDBo:reference_to_struct_asym>
-            <PDBo:pdbx_sifts_unp_segments.entity_id/>
+            <PDBo:pdbx_sifts_unp_segments.entity_id>1</PDBo:pdbx_sifts_unp_segments.entity_id>
             <PDBo:pdbx_sifts_unp_segments.asym_id>A</PDBo:pdbx_sifts_unp_segments.asym_id>
             <PDBo:pdbx_sifts_unp_segments.unp_acc>Q9XFX3</PDBo:pdbx_sifts_unp_segments.unp_acc>
             <PDBo:pdbx_sifts_unp_segments.segment_id>1</PDBo:pdbx_sifts_unp_segments.segment_id>
@@ -39466,14 +39466,14 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
           </PDBo:pdbx_sifts_unp_segments>
         </PDBo:has_pdbx_sifts_unp_segments>
         <PDBo:has_pdbx_sifts_unp_segments>
-          <PDBo:pdbx_sifts_unp_segments rdf:about="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_unp_segments/B,,1,1,Q9XFX3">
+          <PDBo:pdbx_sifts_unp_segments rdf:about="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_unp_segments/B,2,1,1,Q9XFX3">
             <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/pdb/1B5F"/>
             <PDBo:reference_to_struct_asym>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/1B5F/struct_asym/B">
-                <PDBo:referenced_by_pdbx_sifts_unp_segments rdf:resource="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_unp_segments/B,,1,1,Q9XFX3"/>
+                <PDBo:referenced_by_pdbx_sifts_unp_segments rdf:resource="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_unp_segments/B,2,1,1,Q9XFX3"/>
               </rdf:Description>
             </PDBo:reference_to_struct_asym>
-            <PDBo:pdbx_sifts_unp_segments.entity_id/>
+            <PDBo:pdbx_sifts_unp_segments.entity_id>2</PDBo:pdbx_sifts_unp_segments.entity_id>
             <PDBo:pdbx_sifts_unp_segments.asym_id>B</PDBo:pdbx_sifts_unp_segments.asym_id>
             <PDBo:pdbx_sifts_unp_segments.unp_acc>Q9XFX3</PDBo:pdbx_sifts_unp_segments.unp_acc>
             <PDBo:pdbx_sifts_unp_segments.segment_id>1</PDBo:pdbx_sifts_unp_segments.segment_id>
@@ -39489,14 +39489,14 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
           </PDBo:pdbx_sifts_unp_segments>
         </PDBo:has_pdbx_sifts_unp_segments>
         <PDBo:has_pdbx_sifts_unp_segments>
-          <PDBo:pdbx_sifts_unp_segments rdf:about="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_unp_segments/C,,1,1,Q9XFX3">
+          <PDBo:pdbx_sifts_unp_segments rdf:about="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_unp_segments/C,1,1,1,Q9XFX3">
             <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/pdb/1B5F"/>
             <PDBo:reference_to_struct_asym>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/1B5F/struct_asym/C">
-                <PDBo:referenced_by_pdbx_sifts_unp_segments rdf:resource="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_unp_segments/C,,1,1,Q9XFX3"/>
+                <PDBo:referenced_by_pdbx_sifts_unp_segments rdf:resource="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_unp_segments/C,1,1,1,Q9XFX3"/>
               </rdf:Description>
             </PDBo:reference_to_struct_asym>
-            <PDBo:pdbx_sifts_unp_segments.entity_id/>
+            <PDBo:pdbx_sifts_unp_segments.entity_id>1</PDBo:pdbx_sifts_unp_segments.entity_id>
             <PDBo:pdbx_sifts_unp_segments.asym_id>C</PDBo:pdbx_sifts_unp_segments.asym_id>
             <PDBo:pdbx_sifts_unp_segments.unp_acc>Q9XFX3</PDBo:pdbx_sifts_unp_segments.unp_acc>
             <PDBo:pdbx_sifts_unp_segments.segment_id>1</PDBo:pdbx_sifts_unp_segments.segment_id>
@@ -39512,14 +39512,14 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
           </PDBo:pdbx_sifts_unp_segments>
         </PDBo:has_pdbx_sifts_unp_segments>
         <PDBo:has_pdbx_sifts_unp_segments>
-          <PDBo:pdbx_sifts_unp_segments rdf:about="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_unp_segments/D,,1,1,Q9XFX3">
+          <PDBo:pdbx_sifts_unp_segments rdf:about="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_unp_segments/D,2,1,1,Q9XFX3">
             <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/pdb/1B5F"/>
             <PDBo:reference_to_struct_asym>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/1B5F/struct_asym/D">
-                <PDBo:referenced_by_pdbx_sifts_unp_segments rdf:resource="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_unp_segments/D,,1,1,Q9XFX3"/>
+                <PDBo:referenced_by_pdbx_sifts_unp_segments rdf:resource="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_unp_segments/D,2,1,1,Q9XFX3"/>
               </rdf:Description>
             </PDBo:reference_to_struct_asym>
-            <PDBo:pdbx_sifts_unp_segments.entity_id/>
+            <PDBo:pdbx_sifts_unp_segments.entity_id>2</PDBo:pdbx_sifts_unp_segments.entity_id>
             <PDBo:pdbx_sifts_unp_segments.asym_id>D</PDBo:pdbx_sifts_unp_segments.asym_id>
             <PDBo:pdbx_sifts_unp_segments.unp_acc>Q9XFX3</PDBo:pdbx_sifts_unp_segments.unp_acc>
             <PDBo:pdbx_sifts_unp_segments.segment_id>1</PDBo:pdbx_sifts_unp_segments.segment_id>
@@ -39539,14 +39539,14 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
     <PDBo:has_pdbx_sifts_xref_db_segmentsCategory>
       <PDBo:pdbx_sifts_xref_db_segmentsCategory rdf:about="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segmentsCategory">
         <PDBo:has_pdbx_sifts_xref_db_segments>
-          <PDBo:pdbx_sifts_xref_db_segments rdf:about="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/A,,1,1,GO,GO:0004190">
+          <PDBo:pdbx_sifts_xref_db_segments rdf:about="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/A,1,1,1,GO,GO:0004190">
             <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/pdb/1B5F"/>
             <PDBo:reference_to_struct_asym>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/1B5F/struct_asym/A">
-                <PDBo:referenced_by_pdbx_sifts_xref_db_segments rdf:resource="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/A,,1,1,GO,GO:0004190"/>
+                <PDBo:referenced_by_pdbx_sifts_xref_db_segments rdf:resource="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/A,1,1,1,GO,GO:0004190"/>
               </rdf:Description>
             </PDBo:reference_to_struct_asym>
-            <PDBo:pdbx_sifts_xref_db_segments.entity_id/>
+            <PDBo:pdbx_sifts_xref_db_segments.entity_id>1</PDBo:pdbx_sifts_xref_db_segments.entity_id>
             <PDBo:pdbx_sifts_xref_db_segments.asym_id>A</PDBo:pdbx_sifts_xref_db_segments.asym_id>
             <PDBo:pdbx_sifts_xref_db_segments.xref_db>GO</PDBo:pdbx_sifts_xref_db_segments.xref_db>
             <PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>GO:0004190</PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>
@@ -39559,14 +39559,14 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
         <PDBo:has_pdbx_sifts_xref_db_segments>
-          <PDBo:pdbx_sifts_xref_db_segments rdf:about="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/A,,2,1,GO,GO:0004190">
+          <PDBo:pdbx_sifts_xref_db_segments rdf:about="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/A,1,2,1,GO,GO:0004190">
             <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/pdb/1B5F"/>
             <PDBo:reference_to_struct_asym>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/1B5F/struct_asym/A">
-                <PDBo:referenced_by_pdbx_sifts_xref_db_segments rdf:resource="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/A,,2,1,GO,GO:0004190"/>
+                <PDBo:referenced_by_pdbx_sifts_xref_db_segments rdf:resource="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/A,1,2,1,GO,GO:0004190"/>
               </rdf:Description>
             </PDBo:reference_to_struct_asym>
-            <PDBo:pdbx_sifts_xref_db_segments.entity_id/>
+            <PDBo:pdbx_sifts_xref_db_segments.entity_id>1</PDBo:pdbx_sifts_xref_db_segments.entity_id>
             <PDBo:pdbx_sifts_xref_db_segments.asym_id>A</PDBo:pdbx_sifts_xref_db_segments.asym_id>
             <PDBo:pdbx_sifts_xref_db_segments.xref_db>GO</PDBo:pdbx_sifts_xref_db_segments.xref_db>
             <PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>GO:0004190</PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>
@@ -39579,14 +39579,14 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
         <PDBo:has_pdbx_sifts_xref_db_segments>
-          <PDBo:pdbx_sifts_xref_db_segments rdf:about="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/A,,3,1,GO,GO:0006508">
+          <PDBo:pdbx_sifts_xref_db_segments rdf:about="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/A,1,3,1,GO,GO:0006508">
             <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/pdb/1B5F"/>
             <PDBo:reference_to_struct_asym>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/1B5F/struct_asym/A">
-                <PDBo:referenced_by_pdbx_sifts_xref_db_segments rdf:resource="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/A,,3,1,GO,GO:0006508"/>
+                <PDBo:referenced_by_pdbx_sifts_xref_db_segments rdf:resource="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/A,1,3,1,GO,GO:0006508"/>
               </rdf:Description>
             </PDBo:reference_to_struct_asym>
-            <PDBo:pdbx_sifts_xref_db_segments.entity_id/>
+            <PDBo:pdbx_sifts_xref_db_segments.entity_id>1</PDBo:pdbx_sifts_xref_db_segments.entity_id>
             <PDBo:pdbx_sifts_xref_db_segments.asym_id>A</PDBo:pdbx_sifts_xref_db_segments.asym_id>
             <PDBo:pdbx_sifts_xref_db_segments.xref_db>GO</PDBo:pdbx_sifts_xref_db_segments.xref_db>
             <PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>GO:0006508</PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>
@@ -39599,14 +39599,14 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
         <PDBo:has_pdbx_sifts_xref_db_segments>
-          <PDBo:pdbx_sifts_xref_db_segments rdf:about="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/A,,4,1,GO,GO:0006508">
+          <PDBo:pdbx_sifts_xref_db_segments rdf:about="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/A,1,4,1,GO,GO:0006508">
             <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/pdb/1B5F"/>
             <PDBo:reference_to_struct_asym>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/1B5F/struct_asym/A">
-                <PDBo:referenced_by_pdbx_sifts_xref_db_segments rdf:resource="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/A,,4,1,GO,GO:0006508"/>
+                <PDBo:referenced_by_pdbx_sifts_xref_db_segments rdf:resource="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/A,1,4,1,GO,GO:0006508"/>
               </rdf:Description>
             </PDBo:reference_to_struct_asym>
-            <PDBo:pdbx_sifts_xref_db_segments.entity_id/>
+            <PDBo:pdbx_sifts_xref_db_segments.entity_id>1</PDBo:pdbx_sifts_xref_db_segments.entity_id>
             <PDBo:pdbx_sifts_xref_db_segments.asym_id>A</PDBo:pdbx_sifts_xref_db_segments.asym_id>
             <PDBo:pdbx_sifts_xref_db_segments.xref_db>GO</PDBo:pdbx_sifts_xref_db_segments.xref_db>
             <PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>GO:0006508</PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>
@@ -39619,14 +39619,14 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
         <PDBo:has_pdbx_sifts_xref_db_segments>
-          <PDBo:pdbx_sifts_xref_db_segments rdf:about="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/A,,5,1,InterPro,IPR021109">
+          <PDBo:pdbx_sifts_xref_db_segments rdf:about="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/A,1,5,1,InterPro,IPR021109">
             <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/pdb/1B5F"/>
             <PDBo:reference_to_struct_asym>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/1B5F/struct_asym/A">
-                <PDBo:referenced_by_pdbx_sifts_xref_db_segments rdf:resource="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/A,,5,1,InterPro,IPR021109"/>
+                <PDBo:referenced_by_pdbx_sifts_xref_db_segments rdf:resource="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/A,1,5,1,InterPro,IPR021109"/>
               </rdf:Description>
             </PDBo:reference_to_struct_asym>
-            <PDBo:pdbx_sifts_xref_db_segments.entity_id/>
+            <PDBo:pdbx_sifts_xref_db_segments.entity_id>1</PDBo:pdbx_sifts_xref_db_segments.entity_id>
             <PDBo:pdbx_sifts_xref_db_segments.asym_id>A</PDBo:pdbx_sifts_xref_db_segments.asym_id>
             <PDBo:pdbx_sifts_xref_db_segments.xref_db>InterPro</PDBo:pdbx_sifts_xref_db_segments.xref_db>
             <PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>IPR021109</PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>
@@ -39639,14 +39639,14 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
         <PDBo:has_pdbx_sifts_xref_db_segments>
-          <PDBo:pdbx_sifts_xref_db_segments rdf:about="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/A,,6,1,InterPro,IPR021109">
+          <PDBo:pdbx_sifts_xref_db_segments rdf:about="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/A,1,6,1,InterPro,IPR021109">
             <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/pdb/1B5F"/>
             <PDBo:reference_to_struct_asym>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/1B5F/struct_asym/A">
-                <PDBo:referenced_by_pdbx_sifts_xref_db_segments rdf:resource="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/A,,6,1,InterPro,IPR021109"/>
+                <PDBo:referenced_by_pdbx_sifts_xref_db_segments rdf:resource="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/A,1,6,1,InterPro,IPR021109"/>
               </rdf:Description>
             </PDBo:reference_to_struct_asym>
-            <PDBo:pdbx_sifts_xref_db_segments.entity_id/>
+            <PDBo:pdbx_sifts_xref_db_segments.entity_id>1</PDBo:pdbx_sifts_xref_db_segments.entity_id>
             <PDBo:pdbx_sifts_xref_db_segments.asym_id>A</PDBo:pdbx_sifts_xref_db_segments.asym_id>
             <PDBo:pdbx_sifts_xref_db_segments.xref_db>InterPro</PDBo:pdbx_sifts_xref_db_segments.xref_db>
             <PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>IPR021109</PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>
@@ -39659,14 +39659,14 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
         <PDBo:has_pdbx_sifts_xref_db_segments>
-          <PDBo:pdbx_sifts_xref_db_segments rdf:about="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/A,,7,1,InterPro,IPR033121">
+          <PDBo:pdbx_sifts_xref_db_segments rdf:about="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/A,1,7,1,InterPro,IPR033121">
             <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/pdb/1B5F"/>
             <PDBo:reference_to_struct_asym>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/1B5F/struct_asym/A">
-                <PDBo:referenced_by_pdbx_sifts_xref_db_segments rdf:resource="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/A,,7,1,InterPro,IPR033121"/>
+                <PDBo:referenced_by_pdbx_sifts_xref_db_segments rdf:resource="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/A,1,7,1,InterPro,IPR033121"/>
               </rdf:Description>
             </PDBo:reference_to_struct_asym>
-            <PDBo:pdbx_sifts_xref_db_segments.entity_id/>
+            <PDBo:pdbx_sifts_xref_db_segments.entity_id>1</PDBo:pdbx_sifts_xref_db_segments.entity_id>
             <PDBo:pdbx_sifts_xref_db_segments.asym_id>A</PDBo:pdbx_sifts_xref_db_segments.asym_id>
             <PDBo:pdbx_sifts_xref_db_segments.xref_db>InterPro</PDBo:pdbx_sifts_xref_db_segments.xref_db>
             <PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>IPR033121</PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>
@@ -39679,14 +39679,14 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
         <PDBo:has_pdbx_sifts_xref_db_segments>
-          <PDBo:pdbx_sifts_xref_db_segments rdf:about="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/A,,8,1,InterPro,IPR001461">
+          <PDBo:pdbx_sifts_xref_db_segments rdf:about="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/A,1,8,1,InterPro,IPR001461">
             <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/pdb/1B5F"/>
             <PDBo:reference_to_struct_asym>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/1B5F/struct_asym/A">
-                <PDBo:referenced_by_pdbx_sifts_xref_db_segments rdf:resource="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/A,,8,1,InterPro,IPR001461"/>
+                <PDBo:referenced_by_pdbx_sifts_xref_db_segments rdf:resource="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/A,1,8,1,InterPro,IPR001461"/>
               </rdf:Description>
             </PDBo:reference_to_struct_asym>
-            <PDBo:pdbx_sifts_xref_db_segments.entity_id/>
+            <PDBo:pdbx_sifts_xref_db_segments.entity_id>1</PDBo:pdbx_sifts_xref_db_segments.entity_id>
             <PDBo:pdbx_sifts_xref_db_segments.asym_id>A</PDBo:pdbx_sifts_xref_db_segments.asym_id>
             <PDBo:pdbx_sifts_xref_db_segments.xref_db>InterPro</PDBo:pdbx_sifts_xref_db_segments.xref_db>
             <PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>IPR001461</PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>
@@ -39699,14 +39699,14 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
         <PDBo:has_pdbx_sifts_xref_db_segments>
-          <PDBo:pdbx_sifts_xref_db_segments rdf:about="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/A,,9,1,InterPro,IPR001461">
+          <PDBo:pdbx_sifts_xref_db_segments rdf:about="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/A,1,9,1,InterPro,IPR001461">
             <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/pdb/1B5F"/>
             <PDBo:reference_to_struct_asym>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/1B5F/struct_asym/A">
-                <PDBo:referenced_by_pdbx_sifts_xref_db_segments rdf:resource="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/A,,9,1,InterPro,IPR001461"/>
+                <PDBo:referenced_by_pdbx_sifts_xref_db_segments rdf:resource="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/A,1,9,1,InterPro,IPR001461"/>
               </rdf:Description>
             </PDBo:reference_to_struct_asym>
-            <PDBo:pdbx_sifts_xref_db_segments.entity_id/>
+            <PDBo:pdbx_sifts_xref_db_segments.entity_id>1</PDBo:pdbx_sifts_xref_db_segments.entity_id>
             <PDBo:pdbx_sifts_xref_db_segments.asym_id>A</PDBo:pdbx_sifts_xref_db_segments.asym_id>
             <PDBo:pdbx_sifts_xref_db_segments.xref_db>InterPro</PDBo:pdbx_sifts_xref_db_segments.xref_db>
             <PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>IPR001461</PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>
@@ -39719,14 +39719,14 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
         <PDBo:has_pdbx_sifts_xref_db_segments>
-          <PDBo:pdbx_sifts_xref_db_segments rdf:about="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/A,,10,1,InterPro,IPR021109">
+          <PDBo:pdbx_sifts_xref_db_segments rdf:about="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/A,1,10,1,InterPro,IPR021109">
             <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/pdb/1B5F"/>
             <PDBo:reference_to_struct_asym>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/1B5F/struct_asym/A">
-                <PDBo:referenced_by_pdbx_sifts_xref_db_segments rdf:resource="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/A,,10,1,InterPro,IPR021109"/>
+                <PDBo:referenced_by_pdbx_sifts_xref_db_segments rdf:resource="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/A,1,10,1,InterPro,IPR021109"/>
               </rdf:Description>
             </PDBo:reference_to_struct_asym>
-            <PDBo:pdbx_sifts_xref_db_segments.entity_id/>
+            <PDBo:pdbx_sifts_xref_db_segments.entity_id>1</PDBo:pdbx_sifts_xref_db_segments.entity_id>
             <PDBo:pdbx_sifts_xref_db_segments.asym_id>A</PDBo:pdbx_sifts_xref_db_segments.asym_id>
             <PDBo:pdbx_sifts_xref_db_segments.xref_db>InterPro</PDBo:pdbx_sifts_xref_db_segments.xref_db>
             <PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>IPR021109</PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>
@@ -39739,14 +39739,14 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
         <PDBo:has_pdbx_sifts_xref_db_segments>
-          <PDBo:pdbx_sifts_xref_db_segments rdf:about="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/A,,11,1,InterPro,IPR001461">
+          <PDBo:pdbx_sifts_xref_db_segments rdf:about="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/A,1,11,1,InterPro,IPR001461">
             <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/pdb/1B5F"/>
             <PDBo:reference_to_struct_asym>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/1B5F/struct_asym/A">
-                <PDBo:referenced_by_pdbx_sifts_xref_db_segments rdf:resource="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/A,,11,1,InterPro,IPR001461"/>
+                <PDBo:referenced_by_pdbx_sifts_xref_db_segments rdf:resource="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/A,1,11,1,InterPro,IPR001461"/>
               </rdf:Description>
             </PDBo:reference_to_struct_asym>
-            <PDBo:pdbx_sifts_xref_db_segments.entity_id/>
+            <PDBo:pdbx_sifts_xref_db_segments.entity_id>1</PDBo:pdbx_sifts_xref_db_segments.entity_id>
             <PDBo:pdbx_sifts_xref_db_segments.asym_id>A</PDBo:pdbx_sifts_xref_db_segments.asym_id>
             <PDBo:pdbx_sifts_xref_db_segments.xref_db>InterPro</PDBo:pdbx_sifts_xref_db_segments.xref_db>
             <PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>IPR001461</PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>
@@ -39759,14 +39759,14 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
         <PDBo:has_pdbx_sifts_xref_db_segments>
-          <PDBo:pdbx_sifts_xref_db_segments rdf:about="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/A,,12,1,InterPro,IPR001461">
+          <PDBo:pdbx_sifts_xref_db_segments rdf:about="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/A,1,12,1,InterPro,IPR001461">
             <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/pdb/1B5F"/>
             <PDBo:reference_to_struct_asym>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/1B5F/struct_asym/A">
-                <PDBo:referenced_by_pdbx_sifts_xref_db_segments rdf:resource="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/A,,12,1,InterPro,IPR001461"/>
+                <PDBo:referenced_by_pdbx_sifts_xref_db_segments rdf:resource="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/A,1,12,1,InterPro,IPR001461"/>
               </rdf:Description>
             </PDBo:reference_to_struct_asym>
-            <PDBo:pdbx_sifts_xref_db_segments.entity_id/>
+            <PDBo:pdbx_sifts_xref_db_segments.entity_id>1</PDBo:pdbx_sifts_xref_db_segments.entity_id>
             <PDBo:pdbx_sifts_xref_db_segments.asym_id>A</PDBo:pdbx_sifts_xref_db_segments.asym_id>
             <PDBo:pdbx_sifts_xref_db_segments.xref_db>InterPro</PDBo:pdbx_sifts_xref_db_segments.xref_db>
             <PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>IPR001461</PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>
@@ -39779,14 +39779,14 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
         <PDBo:has_pdbx_sifts_xref_db_segments>
-          <PDBo:pdbx_sifts_xref_db_segments rdf:about="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/A,,13,1,CATH,2.40.70.10">
+          <PDBo:pdbx_sifts_xref_db_segments rdf:about="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/A,1,13,1,CATH,2.40.70.10">
             <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/pdb/1B5F"/>
             <PDBo:reference_to_struct_asym>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/1B5F/struct_asym/A">
-                <PDBo:referenced_by_pdbx_sifts_xref_db_segments rdf:resource="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/A,,13,1,CATH,2.40.70.10"/>
+                <PDBo:referenced_by_pdbx_sifts_xref_db_segments rdf:resource="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/A,1,13,1,CATH,2.40.70.10"/>
               </rdf:Description>
             </PDBo:reference_to_struct_asym>
-            <PDBo:pdbx_sifts_xref_db_segments.entity_id/>
+            <PDBo:pdbx_sifts_xref_db_segments.entity_id>1</PDBo:pdbx_sifts_xref_db_segments.entity_id>
             <PDBo:pdbx_sifts_xref_db_segments.asym_id>A</PDBo:pdbx_sifts_xref_db_segments.asym_id>
             <PDBo:pdbx_sifts_xref_db_segments.xref_db>CATH</PDBo:pdbx_sifts_xref_db_segments.xref_db>
             <PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>2.40.70.10</PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>
@@ -39799,14 +39799,14 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
         <PDBo:has_pdbx_sifts_xref_db_segments>
-          <PDBo:pdbx_sifts_xref_db_segments rdf:about="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/A,,14,1,SCOP,26836">
+          <PDBo:pdbx_sifts_xref_db_segments rdf:about="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/A,1,14,1,SCOP,26836">
             <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/pdb/1B5F"/>
             <PDBo:reference_to_struct_asym>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/1B5F/struct_asym/A">
-                <PDBo:referenced_by_pdbx_sifts_xref_db_segments rdf:resource="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/A,,14,1,SCOP,26836"/>
+                <PDBo:referenced_by_pdbx_sifts_xref_db_segments rdf:resource="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/A,1,14,1,SCOP,26836"/>
               </rdf:Description>
             </PDBo:reference_to_struct_asym>
-            <PDBo:pdbx_sifts_xref_db_segments.entity_id/>
+            <PDBo:pdbx_sifts_xref_db_segments.entity_id>1</PDBo:pdbx_sifts_xref_db_segments.entity_id>
             <PDBo:pdbx_sifts_xref_db_segments.asym_id>A</PDBo:pdbx_sifts_xref_db_segments.asym_id>
             <PDBo:pdbx_sifts_xref_db_segments.xref_db>SCOP</PDBo:pdbx_sifts_xref_db_segments.xref_db>
             <PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>26836</PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>
@@ -39819,14 +39819,14 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
         <PDBo:has_pdbx_sifts_xref_db_segments>
-          <PDBo:pdbx_sifts_xref_db_segments rdf:about="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/B,,1,1,GO,GO:0004190">
+          <PDBo:pdbx_sifts_xref_db_segments rdf:about="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/B,2,1,1,GO,GO:0004190">
             <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/pdb/1B5F"/>
             <PDBo:reference_to_struct_asym>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/1B5F/struct_asym/B">
-                <PDBo:referenced_by_pdbx_sifts_xref_db_segments rdf:resource="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/B,,1,1,GO,GO:0004190"/>
+                <PDBo:referenced_by_pdbx_sifts_xref_db_segments rdf:resource="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/B,2,1,1,GO,GO:0004190"/>
               </rdf:Description>
             </PDBo:reference_to_struct_asym>
-            <PDBo:pdbx_sifts_xref_db_segments.entity_id/>
+            <PDBo:pdbx_sifts_xref_db_segments.entity_id>2</PDBo:pdbx_sifts_xref_db_segments.entity_id>
             <PDBo:pdbx_sifts_xref_db_segments.asym_id>B</PDBo:pdbx_sifts_xref_db_segments.asym_id>
             <PDBo:pdbx_sifts_xref_db_segments.xref_db>GO</PDBo:pdbx_sifts_xref_db_segments.xref_db>
             <PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>GO:0004190</PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>
@@ -39839,14 +39839,14 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
         <PDBo:has_pdbx_sifts_xref_db_segments>
-          <PDBo:pdbx_sifts_xref_db_segments rdf:about="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/B,,2,1,GO,GO:0006508">
+          <PDBo:pdbx_sifts_xref_db_segments rdf:about="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/B,2,2,1,GO,GO:0006508">
             <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/pdb/1B5F"/>
             <PDBo:reference_to_struct_asym>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/1B5F/struct_asym/B">
-                <PDBo:referenced_by_pdbx_sifts_xref_db_segments rdf:resource="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/B,,2,1,GO,GO:0006508"/>
+                <PDBo:referenced_by_pdbx_sifts_xref_db_segments rdf:resource="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/B,2,2,1,GO,GO:0006508"/>
               </rdf:Description>
             </PDBo:reference_to_struct_asym>
-            <PDBo:pdbx_sifts_xref_db_segments.entity_id/>
+            <PDBo:pdbx_sifts_xref_db_segments.entity_id>2</PDBo:pdbx_sifts_xref_db_segments.entity_id>
             <PDBo:pdbx_sifts_xref_db_segments.asym_id>B</PDBo:pdbx_sifts_xref_db_segments.asym_id>
             <PDBo:pdbx_sifts_xref_db_segments.xref_db>GO</PDBo:pdbx_sifts_xref_db_segments.xref_db>
             <PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>GO:0006508</PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>
@@ -39859,14 +39859,14 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
         <PDBo:has_pdbx_sifts_xref_db_segments>
-          <PDBo:pdbx_sifts_xref_db_segments rdf:about="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/B,,3,1,InterPro,IPR033121">
+          <PDBo:pdbx_sifts_xref_db_segments rdf:about="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/B,2,3,1,InterPro,IPR033121">
             <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/pdb/1B5F"/>
             <PDBo:reference_to_struct_asym>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/1B5F/struct_asym/B">
-                <PDBo:referenced_by_pdbx_sifts_xref_db_segments rdf:resource="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/B,,3,1,InterPro,IPR033121"/>
+                <PDBo:referenced_by_pdbx_sifts_xref_db_segments rdf:resource="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/B,2,3,1,InterPro,IPR033121"/>
               </rdf:Description>
             </PDBo:reference_to_struct_asym>
-            <PDBo:pdbx_sifts_xref_db_segments.entity_id/>
+            <PDBo:pdbx_sifts_xref_db_segments.entity_id>2</PDBo:pdbx_sifts_xref_db_segments.entity_id>
             <PDBo:pdbx_sifts_xref_db_segments.asym_id>B</PDBo:pdbx_sifts_xref_db_segments.asym_id>
             <PDBo:pdbx_sifts_xref_db_segments.xref_db>InterPro</PDBo:pdbx_sifts_xref_db_segments.xref_db>
             <PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>IPR033121</PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>
@@ -39879,14 +39879,14 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
         <PDBo:has_pdbx_sifts_xref_db_segments>
-          <PDBo:pdbx_sifts_xref_db_segments rdf:about="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/B,,4,1,InterPro,IPR021109">
+          <PDBo:pdbx_sifts_xref_db_segments rdf:about="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/B,2,4,1,InterPro,IPR021109">
             <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/pdb/1B5F"/>
             <PDBo:reference_to_struct_asym>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/1B5F/struct_asym/B">
-                <PDBo:referenced_by_pdbx_sifts_xref_db_segments rdf:resource="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/B,,4,1,InterPro,IPR021109"/>
+                <PDBo:referenced_by_pdbx_sifts_xref_db_segments rdf:resource="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/B,2,4,1,InterPro,IPR021109"/>
               </rdf:Description>
             </PDBo:reference_to_struct_asym>
-            <PDBo:pdbx_sifts_xref_db_segments.entity_id/>
+            <PDBo:pdbx_sifts_xref_db_segments.entity_id>2</PDBo:pdbx_sifts_xref_db_segments.entity_id>
             <PDBo:pdbx_sifts_xref_db_segments.asym_id>B</PDBo:pdbx_sifts_xref_db_segments.asym_id>
             <PDBo:pdbx_sifts_xref_db_segments.xref_db>InterPro</PDBo:pdbx_sifts_xref_db_segments.xref_db>
             <PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>IPR021109</PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>
@@ -39899,14 +39899,14 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
         <PDBo:has_pdbx_sifts_xref_db_segments>
-          <PDBo:pdbx_sifts_xref_db_segments rdf:about="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/B,,5,1,InterPro,IPR021109">
+          <PDBo:pdbx_sifts_xref_db_segments rdf:about="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/B,2,5,1,InterPro,IPR021109">
             <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/pdb/1B5F"/>
             <PDBo:reference_to_struct_asym>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/1B5F/struct_asym/B">
-                <PDBo:referenced_by_pdbx_sifts_xref_db_segments rdf:resource="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/B,,5,1,InterPro,IPR021109"/>
+                <PDBo:referenced_by_pdbx_sifts_xref_db_segments rdf:resource="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/B,2,5,1,InterPro,IPR021109"/>
               </rdf:Description>
             </PDBo:reference_to_struct_asym>
-            <PDBo:pdbx_sifts_xref_db_segments.entity_id/>
+            <PDBo:pdbx_sifts_xref_db_segments.entity_id>2</PDBo:pdbx_sifts_xref_db_segments.entity_id>
             <PDBo:pdbx_sifts_xref_db_segments.asym_id>B</PDBo:pdbx_sifts_xref_db_segments.asym_id>
             <PDBo:pdbx_sifts_xref_db_segments.xref_db>InterPro</PDBo:pdbx_sifts_xref_db_segments.xref_db>
             <PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>IPR021109</PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>
@@ -39919,14 +39919,14 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
         <PDBo:has_pdbx_sifts_xref_db_segments>
-          <PDBo:pdbx_sifts_xref_db_segments rdf:about="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/B,,6,1,InterPro,IPR001461">
+          <PDBo:pdbx_sifts_xref_db_segments rdf:about="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/B,2,6,1,InterPro,IPR001461">
             <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/pdb/1B5F"/>
             <PDBo:reference_to_struct_asym>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/1B5F/struct_asym/B">
-                <PDBo:referenced_by_pdbx_sifts_xref_db_segments rdf:resource="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/B,,6,1,InterPro,IPR001461"/>
+                <PDBo:referenced_by_pdbx_sifts_xref_db_segments rdf:resource="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/B,2,6,1,InterPro,IPR001461"/>
               </rdf:Description>
             </PDBo:reference_to_struct_asym>
-            <PDBo:pdbx_sifts_xref_db_segments.entity_id/>
+            <PDBo:pdbx_sifts_xref_db_segments.entity_id>2</PDBo:pdbx_sifts_xref_db_segments.entity_id>
             <PDBo:pdbx_sifts_xref_db_segments.asym_id>B</PDBo:pdbx_sifts_xref_db_segments.asym_id>
             <PDBo:pdbx_sifts_xref_db_segments.xref_db>InterPro</PDBo:pdbx_sifts_xref_db_segments.xref_db>
             <PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>IPR001461</PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>
@@ -39939,14 +39939,14 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
         <PDBo:has_pdbx_sifts_xref_db_segments>
-          <PDBo:pdbx_sifts_xref_db_segments rdf:about="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/B,,7,1,CATH,2.40.70.10">
+          <PDBo:pdbx_sifts_xref_db_segments rdf:about="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/B,2,7,1,CATH,2.40.70.10">
             <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/pdb/1B5F"/>
             <PDBo:reference_to_struct_asym>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/1B5F/struct_asym/B">
-                <PDBo:referenced_by_pdbx_sifts_xref_db_segments rdf:resource="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/B,,7,1,CATH,2.40.70.10"/>
+                <PDBo:referenced_by_pdbx_sifts_xref_db_segments rdf:resource="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/B,2,7,1,CATH,2.40.70.10"/>
               </rdf:Description>
             </PDBo:reference_to_struct_asym>
-            <PDBo:pdbx_sifts_xref_db_segments.entity_id/>
+            <PDBo:pdbx_sifts_xref_db_segments.entity_id>2</PDBo:pdbx_sifts_xref_db_segments.entity_id>
             <PDBo:pdbx_sifts_xref_db_segments.asym_id>B</PDBo:pdbx_sifts_xref_db_segments.asym_id>
             <PDBo:pdbx_sifts_xref_db_segments.xref_db>CATH</PDBo:pdbx_sifts_xref_db_segments.xref_db>
             <PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>2.40.70.10</PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>
@@ -39959,14 +39959,14 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
         <PDBo:has_pdbx_sifts_xref_db_segments>
-          <PDBo:pdbx_sifts_xref_db_segments rdf:about="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/B,,8,1,SCOP,26836">
+          <PDBo:pdbx_sifts_xref_db_segments rdf:about="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/B,2,8,1,SCOP,26836">
             <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/pdb/1B5F"/>
             <PDBo:reference_to_struct_asym>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/1B5F/struct_asym/B">
-                <PDBo:referenced_by_pdbx_sifts_xref_db_segments rdf:resource="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/B,,8,1,SCOP,26836"/>
+                <PDBo:referenced_by_pdbx_sifts_xref_db_segments rdf:resource="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/B,2,8,1,SCOP,26836"/>
               </rdf:Description>
             </PDBo:reference_to_struct_asym>
-            <PDBo:pdbx_sifts_xref_db_segments.entity_id/>
+            <PDBo:pdbx_sifts_xref_db_segments.entity_id>2</PDBo:pdbx_sifts_xref_db_segments.entity_id>
             <PDBo:pdbx_sifts_xref_db_segments.asym_id>B</PDBo:pdbx_sifts_xref_db_segments.asym_id>
             <PDBo:pdbx_sifts_xref_db_segments.xref_db>SCOP</PDBo:pdbx_sifts_xref_db_segments.xref_db>
             <PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>26836</PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>
@@ -39979,14 +39979,14 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
         <PDBo:has_pdbx_sifts_xref_db_segments>
-          <PDBo:pdbx_sifts_xref_db_segments rdf:about="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/C,,1,1,GO,GO:0004190">
+          <PDBo:pdbx_sifts_xref_db_segments rdf:about="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/C,1,1,1,GO,GO:0004190">
             <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/pdb/1B5F"/>
             <PDBo:reference_to_struct_asym>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/1B5F/struct_asym/C">
-                <PDBo:referenced_by_pdbx_sifts_xref_db_segments rdf:resource="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/C,,1,1,GO,GO:0004190"/>
+                <PDBo:referenced_by_pdbx_sifts_xref_db_segments rdf:resource="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/C,1,1,1,GO,GO:0004190"/>
               </rdf:Description>
             </PDBo:reference_to_struct_asym>
-            <PDBo:pdbx_sifts_xref_db_segments.entity_id/>
+            <PDBo:pdbx_sifts_xref_db_segments.entity_id>1</PDBo:pdbx_sifts_xref_db_segments.entity_id>
             <PDBo:pdbx_sifts_xref_db_segments.asym_id>C</PDBo:pdbx_sifts_xref_db_segments.asym_id>
             <PDBo:pdbx_sifts_xref_db_segments.xref_db>GO</PDBo:pdbx_sifts_xref_db_segments.xref_db>
             <PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>GO:0004190</PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>
@@ -39999,14 +39999,14 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
         <PDBo:has_pdbx_sifts_xref_db_segments>
-          <PDBo:pdbx_sifts_xref_db_segments rdf:about="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/C,,2,1,GO,GO:0004190">
+          <PDBo:pdbx_sifts_xref_db_segments rdf:about="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/C,1,2,1,GO,GO:0004190">
             <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/pdb/1B5F"/>
             <PDBo:reference_to_struct_asym>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/1B5F/struct_asym/C">
-                <PDBo:referenced_by_pdbx_sifts_xref_db_segments rdf:resource="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/C,,2,1,GO,GO:0004190"/>
+                <PDBo:referenced_by_pdbx_sifts_xref_db_segments rdf:resource="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/C,1,2,1,GO,GO:0004190"/>
               </rdf:Description>
             </PDBo:reference_to_struct_asym>
-            <PDBo:pdbx_sifts_xref_db_segments.entity_id/>
+            <PDBo:pdbx_sifts_xref_db_segments.entity_id>1</PDBo:pdbx_sifts_xref_db_segments.entity_id>
             <PDBo:pdbx_sifts_xref_db_segments.asym_id>C</PDBo:pdbx_sifts_xref_db_segments.asym_id>
             <PDBo:pdbx_sifts_xref_db_segments.xref_db>GO</PDBo:pdbx_sifts_xref_db_segments.xref_db>
             <PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>GO:0004190</PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>
@@ -40019,14 +40019,14 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
         <PDBo:has_pdbx_sifts_xref_db_segments>
-          <PDBo:pdbx_sifts_xref_db_segments rdf:about="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/C,,3,1,GO,GO:0006508">
+          <PDBo:pdbx_sifts_xref_db_segments rdf:about="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/C,1,3,1,GO,GO:0006508">
             <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/pdb/1B5F"/>
             <PDBo:reference_to_struct_asym>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/1B5F/struct_asym/C">
-                <PDBo:referenced_by_pdbx_sifts_xref_db_segments rdf:resource="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/C,,3,1,GO,GO:0006508"/>
+                <PDBo:referenced_by_pdbx_sifts_xref_db_segments rdf:resource="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/C,1,3,1,GO,GO:0006508"/>
               </rdf:Description>
             </PDBo:reference_to_struct_asym>
-            <PDBo:pdbx_sifts_xref_db_segments.entity_id/>
+            <PDBo:pdbx_sifts_xref_db_segments.entity_id>1</PDBo:pdbx_sifts_xref_db_segments.entity_id>
             <PDBo:pdbx_sifts_xref_db_segments.asym_id>C</PDBo:pdbx_sifts_xref_db_segments.asym_id>
             <PDBo:pdbx_sifts_xref_db_segments.xref_db>GO</PDBo:pdbx_sifts_xref_db_segments.xref_db>
             <PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>GO:0006508</PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>
@@ -40039,14 +40039,14 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
         <PDBo:has_pdbx_sifts_xref_db_segments>
-          <PDBo:pdbx_sifts_xref_db_segments rdf:about="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/C,,4,1,GO,GO:0006508">
+          <PDBo:pdbx_sifts_xref_db_segments rdf:about="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/C,1,4,1,GO,GO:0006508">
             <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/pdb/1B5F"/>
             <PDBo:reference_to_struct_asym>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/1B5F/struct_asym/C">
-                <PDBo:referenced_by_pdbx_sifts_xref_db_segments rdf:resource="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/C,,4,1,GO,GO:0006508"/>
+                <PDBo:referenced_by_pdbx_sifts_xref_db_segments rdf:resource="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/C,1,4,1,GO,GO:0006508"/>
               </rdf:Description>
             </PDBo:reference_to_struct_asym>
-            <PDBo:pdbx_sifts_xref_db_segments.entity_id/>
+            <PDBo:pdbx_sifts_xref_db_segments.entity_id>1</PDBo:pdbx_sifts_xref_db_segments.entity_id>
             <PDBo:pdbx_sifts_xref_db_segments.asym_id>C</PDBo:pdbx_sifts_xref_db_segments.asym_id>
             <PDBo:pdbx_sifts_xref_db_segments.xref_db>GO</PDBo:pdbx_sifts_xref_db_segments.xref_db>
             <PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>GO:0006508</PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>
@@ -40059,14 +40059,14 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
         <PDBo:has_pdbx_sifts_xref_db_segments>
-          <PDBo:pdbx_sifts_xref_db_segments rdf:about="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/C,,5,1,InterPro,IPR021109">
+          <PDBo:pdbx_sifts_xref_db_segments rdf:about="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/C,1,5,1,InterPro,IPR021109">
             <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/pdb/1B5F"/>
             <PDBo:reference_to_struct_asym>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/1B5F/struct_asym/C">
-                <PDBo:referenced_by_pdbx_sifts_xref_db_segments rdf:resource="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/C,,5,1,InterPro,IPR021109"/>
+                <PDBo:referenced_by_pdbx_sifts_xref_db_segments rdf:resource="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/C,1,5,1,InterPro,IPR021109"/>
               </rdf:Description>
             </PDBo:reference_to_struct_asym>
-            <PDBo:pdbx_sifts_xref_db_segments.entity_id/>
+            <PDBo:pdbx_sifts_xref_db_segments.entity_id>1</PDBo:pdbx_sifts_xref_db_segments.entity_id>
             <PDBo:pdbx_sifts_xref_db_segments.asym_id>C</PDBo:pdbx_sifts_xref_db_segments.asym_id>
             <PDBo:pdbx_sifts_xref_db_segments.xref_db>InterPro</PDBo:pdbx_sifts_xref_db_segments.xref_db>
             <PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>IPR021109</PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>
@@ -40079,14 +40079,14 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
         <PDBo:has_pdbx_sifts_xref_db_segments>
-          <PDBo:pdbx_sifts_xref_db_segments rdf:about="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/C,,6,1,InterPro,IPR001461">
+          <PDBo:pdbx_sifts_xref_db_segments rdf:about="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/C,1,6,1,InterPro,IPR001461">
             <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/pdb/1B5F"/>
             <PDBo:reference_to_struct_asym>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/1B5F/struct_asym/C">
-                <PDBo:referenced_by_pdbx_sifts_xref_db_segments rdf:resource="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/C,,6,1,InterPro,IPR001461"/>
+                <PDBo:referenced_by_pdbx_sifts_xref_db_segments rdf:resource="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/C,1,6,1,InterPro,IPR001461"/>
               </rdf:Description>
             </PDBo:reference_to_struct_asym>
-            <PDBo:pdbx_sifts_xref_db_segments.entity_id/>
+            <PDBo:pdbx_sifts_xref_db_segments.entity_id>1</PDBo:pdbx_sifts_xref_db_segments.entity_id>
             <PDBo:pdbx_sifts_xref_db_segments.asym_id>C</PDBo:pdbx_sifts_xref_db_segments.asym_id>
             <PDBo:pdbx_sifts_xref_db_segments.xref_db>InterPro</PDBo:pdbx_sifts_xref_db_segments.xref_db>
             <PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>IPR001461</PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>
@@ -40099,14 +40099,14 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
         <PDBo:has_pdbx_sifts_xref_db_segments>
-          <PDBo:pdbx_sifts_xref_db_segments rdf:about="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/C,,7,1,InterPro,IPR021109">
+          <PDBo:pdbx_sifts_xref_db_segments rdf:about="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/C,1,7,1,InterPro,IPR021109">
             <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/pdb/1B5F"/>
             <PDBo:reference_to_struct_asym>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/1B5F/struct_asym/C">
-                <PDBo:referenced_by_pdbx_sifts_xref_db_segments rdf:resource="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/C,,7,1,InterPro,IPR021109"/>
+                <PDBo:referenced_by_pdbx_sifts_xref_db_segments rdf:resource="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/C,1,7,1,InterPro,IPR021109"/>
               </rdf:Description>
             </PDBo:reference_to_struct_asym>
-            <PDBo:pdbx_sifts_xref_db_segments.entity_id/>
+            <PDBo:pdbx_sifts_xref_db_segments.entity_id>1</PDBo:pdbx_sifts_xref_db_segments.entity_id>
             <PDBo:pdbx_sifts_xref_db_segments.asym_id>C</PDBo:pdbx_sifts_xref_db_segments.asym_id>
             <PDBo:pdbx_sifts_xref_db_segments.xref_db>InterPro</PDBo:pdbx_sifts_xref_db_segments.xref_db>
             <PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>IPR021109</PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>
@@ -40119,14 +40119,14 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
         <PDBo:has_pdbx_sifts_xref_db_segments>
-          <PDBo:pdbx_sifts_xref_db_segments rdf:about="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/C,,8,1,InterPro,IPR001461">
+          <PDBo:pdbx_sifts_xref_db_segments rdf:about="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/C,1,8,1,InterPro,IPR001461">
             <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/pdb/1B5F"/>
             <PDBo:reference_to_struct_asym>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/1B5F/struct_asym/C">
-                <PDBo:referenced_by_pdbx_sifts_xref_db_segments rdf:resource="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/C,,8,1,InterPro,IPR001461"/>
+                <PDBo:referenced_by_pdbx_sifts_xref_db_segments rdf:resource="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/C,1,8,1,InterPro,IPR001461"/>
               </rdf:Description>
             </PDBo:reference_to_struct_asym>
-            <PDBo:pdbx_sifts_xref_db_segments.entity_id/>
+            <PDBo:pdbx_sifts_xref_db_segments.entity_id>1</PDBo:pdbx_sifts_xref_db_segments.entity_id>
             <PDBo:pdbx_sifts_xref_db_segments.asym_id>C</PDBo:pdbx_sifts_xref_db_segments.asym_id>
             <PDBo:pdbx_sifts_xref_db_segments.xref_db>InterPro</PDBo:pdbx_sifts_xref_db_segments.xref_db>
             <PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>IPR001461</PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>
@@ -40139,14 +40139,14 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
         <PDBo:has_pdbx_sifts_xref_db_segments>
-          <PDBo:pdbx_sifts_xref_db_segments rdf:about="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/C,,9,1,InterPro,IPR001461">
+          <PDBo:pdbx_sifts_xref_db_segments rdf:about="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/C,1,9,1,InterPro,IPR001461">
             <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/pdb/1B5F"/>
             <PDBo:reference_to_struct_asym>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/1B5F/struct_asym/C">
-                <PDBo:referenced_by_pdbx_sifts_xref_db_segments rdf:resource="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/C,,9,1,InterPro,IPR001461"/>
+                <PDBo:referenced_by_pdbx_sifts_xref_db_segments rdf:resource="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/C,1,9,1,InterPro,IPR001461"/>
               </rdf:Description>
             </PDBo:reference_to_struct_asym>
-            <PDBo:pdbx_sifts_xref_db_segments.entity_id/>
+            <PDBo:pdbx_sifts_xref_db_segments.entity_id>1</PDBo:pdbx_sifts_xref_db_segments.entity_id>
             <PDBo:pdbx_sifts_xref_db_segments.asym_id>C</PDBo:pdbx_sifts_xref_db_segments.asym_id>
             <PDBo:pdbx_sifts_xref_db_segments.xref_db>InterPro</PDBo:pdbx_sifts_xref_db_segments.xref_db>
             <PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>IPR001461</PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>
@@ -40159,14 +40159,14 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
         <PDBo:has_pdbx_sifts_xref_db_segments>
-          <PDBo:pdbx_sifts_xref_db_segments rdf:about="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/C,,10,1,InterPro,IPR021109">
+          <PDBo:pdbx_sifts_xref_db_segments rdf:about="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/C,1,10,1,InterPro,IPR021109">
             <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/pdb/1B5F"/>
             <PDBo:reference_to_struct_asym>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/1B5F/struct_asym/C">
-                <PDBo:referenced_by_pdbx_sifts_xref_db_segments rdf:resource="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/C,,10,1,InterPro,IPR021109"/>
+                <PDBo:referenced_by_pdbx_sifts_xref_db_segments rdf:resource="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/C,1,10,1,InterPro,IPR021109"/>
               </rdf:Description>
             </PDBo:reference_to_struct_asym>
-            <PDBo:pdbx_sifts_xref_db_segments.entity_id/>
+            <PDBo:pdbx_sifts_xref_db_segments.entity_id>1</PDBo:pdbx_sifts_xref_db_segments.entity_id>
             <PDBo:pdbx_sifts_xref_db_segments.asym_id>C</PDBo:pdbx_sifts_xref_db_segments.asym_id>
             <PDBo:pdbx_sifts_xref_db_segments.xref_db>InterPro</PDBo:pdbx_sifts_xref_db_segments.xref_db>
             <PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>IPR021109</PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>
@@ -40179,14 +40179,14 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
         <PDBo:has_pdbx_sifts_xref_db_segments>
-          <PDBo:pdbx_sifts_xref_db_segments rdf:about="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/C,,11,1,InterPro,IPR033121">
+          <PDBo:pdbx_sifts_xref_db_segments rdf:about="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/C,1,11,1,InterPro,IPR033121">
             <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/pdb/1B5F"/>
             <PDBo:reference_to_struct_asym>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/1B5F/struct_asym/C">
-                <PDBo:referenced_by_pdbx_sifts_xref_db_segments rdf:resource="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/C,,11,1,InterPro,IPR033121"/>
+                <PDBo:referenced_by_pdbx_sifts_xref_db_segments rdf:resource="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/C,1,11,1,InterPro,IPR033121"/>
               </rdf:Description>
             </PDBo:reference_to_struct_asym>
-            <PDBo:pdbx_sifts_xref_db_segments.entity_id/>
+            <PDBo:pdbx_sifts_xref_db_segments.entity_id>1</PDBo:pdbx_sifts_xref_db_segments.entity_id>
             <PDBo:pdbx_sifts_xref_db_segments.asym_id>C</PDBo:pdbx_sifts_xref_db_segments.asym_id>
             <PDBo:pdbx_sifts_xref_db_segments.xref_db>InterPro</PDBo:pdbx_sifts_xref_db_segments.xref_db>
             <PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>IPR033121</PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>
@@ -40199,14 +40199,14 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
         <PDBo:has_pdbx_sifts_xref_db_segments>
-          <PDBo:pdbx_sifts_xref_db_segments rdf:about="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/C,,12,1,InterPro,IPR001461">
+          <PDBo:pdbx_sifts_xref_db_segments rdf:about="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/C,1,12,1,InterPro,IPR001461">
             <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/pdb/1B5F"/>
             <PDBo:reference_to_struct_asym>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/1B5F/struct_asym/C">
-                <PDBo:referenced_by_pdbx_sifts_xref_db_segments rdf:resource="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/C,,12,1,InterPro,IPR001461"/>
+                <PDBo:referenced_by_pdbx_sifts_xref_db_segments rdf:resource="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/C,1,12,1,InterPro,IPR001461"/>
               </rdf:Description>
             </PDBo:reference_to_struct_asym>
-            <PDBo:pdbx_sifts_xref_db_segments.entity_id/>
+            <PDBo:pdbx_sifts_xref_db_segments.entity_id>1</PDBo:pdbx_sifts_xref_db_segments.entity_id>
             <PDBo:pdbx_sifts_xref_db_segments.asym_id>C</PDBo:pdbx_sifts_xref_db_segments.asym_id>
             <PDBo:pdbx_sifts_xref_db_segments.xref_db>InterPro</PDBo:pdbx_sifts_xref_db_segments.xref_db>
             <PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>IPR001461</PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>
@@ -40219,14 +40219,14 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
         <PDBo:has_pdbx_sifts_xref_db_segments>
-          <PDBo:pdbx_sifts_xref_db_segments rdf:about="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/C,,13,1,CATH,2.40.70.10">
+          <PDBo:pdbx_sifts_xref_db_segments rdf:about="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/C,1,13,1,CATH,2.40.70.10">
             <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/pdb/1B5F"/>
             <PDBo:reference_to_struct_asym>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/1B5F/struct_asym/C">
-                <PDBo:referenced_by_pdbx_sifts_xref_db_segments rdf:resource="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/C,,13,1,CATH,2.40.70.10"/>
+                <PDBo:referenced_by_pdbx_sifts_xref_db_segments rdf:resource="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/C,1,13,1,CATH,2.40.70.10"/>
               </rdf:Description>
             </PDBo:reference_to_struct_asym>
-            <PDBo:pdbx_sifts_xref_db_segments.entity_id/>
+            <PDBo:pdbx_sifts_xref_db_segments.entity_id>1</PDBo:pdbx_sifts_xref_db_segments.entity_id>
             <PDBo:pdbx_sifts_xref_db_segments.asym_id>C</PDBo:pdbx_sifts_xref_db_segments.asym_id>
             <PDBo:pdbx_sifts_xref_db_segments.xref_db>CATH</PDBo:pdbx_sifts_xref_db_segments.xref_db>
             <PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>2.40.70.10</PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>
@@ -40239,14 +40239,14 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
         <PDBo:has_pdbx_sifts_xref_db_segments>
-          <PDBo:pdbx_sifts_xref_db_segments rdf:about="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/C,,14,1,SCOP,26837">
+          <PDBo:pdbx_sifts_xref_db_segments rdf:about="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/C,1,14,1,SCOP,26837">
             <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/pdb/1B5F"/>
             <PDBo:reference_to_struct_asym>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/1B5F/struct_asym/C">
-                <PDBo:referenced_by_pdbx_sifts_xref_db_segments rdf:resource="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/C,,14,1,SCOP,26837"/>
+                <PDBo:referenced_by_pdbx_sifts_xref_db_segments rdf:resource="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/C,1,14,1,SCOP,26837"/>
               </rdf:Description>
             </PDBo:reference_to_struct_asym>
-            <PDBo:pdbx_sifts_xref_db_segments.entity_id/>
+            <PDBo:pdbx_sifts_xref_db_segments.entity_id>1</PDBo:pdbx_sifts_xref_db_segments.entity_id>
             <PDBo:pdbx_sifts_xref_db_segments.asym_id>C</PDBo:pdbx_sifts_xref_db_segments.asym_id>
             <PDBo:pdbx_sifts_xref_db_segments.xref_db>SCOP</PDBo:pdbx_sifts_xref_db_segments.xref_db>
             <PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>26837</PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>
@@ -40259,14 +40259,14 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
         <PDBo:has_pdbx_sifts_xref_db_segments>
-          <PDBo:pdbx_sifts_xref_db_segments rdf:about="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/D,,1,1,GO,GO:0004190">
+          <PDBo:pdbx_sifts_xref_db_segments rdf:about="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/D,2,1,1,GO,GO:0004190">
             <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/pdb/1B5F"/>
             <PDBo:reference_to_struct_asym>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/1B5F/struct_asym/D">
-                <PDBo:referenced_by_pdbx_sifts_xref_db_segments rdf:resource="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/D,,1,1,GO,GO:0004190"/>
+                <PDBo:referenced_by_pdbx_sifts_xref_db_segments rdf:resource="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/D,2,1,1,GO,GO:0004190"/>
               </rdf:Description>
             </PDBo:reference_to_struct_asym>
-            <PDBo:pdbx_sifts_xref_db_segments.entity_id/>
+            <PDBo:pdbx_sifts_xref_db_segments.entity_id>2</PDBo:pdbx_sifts_xref_db_segments.entity_id>
             <PDBo:pdbx_sifts_xref_db_segments.asym_id>D</PDBo:pdbx_sifts_xref_db_segments.asym_id>
             <PDBo:pdbx_sifts_xref_db_segments.xref_db>GO</PDBo:pdbx_sifts_xref_db_segments.xref_db>
             <PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>GO:0004190</PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>
@@ -40279,14 +40279,14 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
         <PDBo:has_pdbx_sifts_xref_db_segments>
-          <PDBo:pdbx_sifts_xref_db_segments rdf:about="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/D,,2,1,GO,GO:0006508">
+          <PDBo:pdbx_sifts_xref_db_segments rdf:about="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/D,2,2,1,GO,GO:0006508">
             <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/pdb/1B5F"/>
             <PDBo:reference_to_struct_asym>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/1B5F/struct_asym/D">
-                <PDBo:referenced_by_pdbx_sifts_xref_db_segments rdf:resource="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/D,,2,1,GO,GO:0006508"/>
+                <PDBo:referenced_by_pdbx_sifts_xref_db_segments rdf:resource="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/D,2,2,1,GO,GO:0006508"/>
               </rdf:Description>
             </PDBo:reference_to_struct_asym>
-            <PDBo:pdbx_sifts_xref_db_segments.entity_id/>
+            <PDBo:pdbx_sifts_xref_db_segments.entity_id>2</PDBo:pdbx_sifts_xref_db_segments.entity_id>
             <PDBo:pdbx_sifts_xref_db_segments.asym_id>D</PDBo:pdbx_sifts_xref_db_segments.asym_id>
             <PDBo:pdbx_sifts_xref_db_segments.xref_db>GO</PDBo:pdbx_sifts_xref_db_segments.xref_db>
             <PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>GO:0006508</PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>
@@ -40299,14 +40299,14 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
         <PDBo:has_pdbx_sifts_xref_db_segments>
-          <PDBo:pdbx_sifts_xref_db_segments rdf:about="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/D,,3,1,InterPro,IPR033121">
+          <PDBo:pdbx_sifts_xref_db_segments rdf:about="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/D,2,3,1,InterPro,IPR033121">
             <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/pdb/1B5F"/>
             <PDBo:reference_to_struct_asym>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/1B5F/struct_asym/D">
-                <PDBo:referenced_by_pdbx_sifts_xref_db_segments rdf:resource="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/D,,3,1,InterPro,IPR033121"/>
+                <PDBo:referenced_by_pdbx_sifts_xref_db_segments rdf:resource="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/D,2,3,1,InterPro,IPR033121"/>
               </rdf:Description>
             </PDBo:reference_to_struct_asym>
-            <PDBo:pdbx_sifts_xref_db_segments.entity_id/>
+            <PDBo:pdbx_sifts_xref_db_segments.entity_id>2</PDBo:pdbx_sifts_xref_db_segments.entity_id>
             <PDBo:pdbx_sifts_xref_db_segments.asym_id>D</PDBo:pdbx_sifts_xref_db_segments.asym_id>
             <PDBo:pdbx_sifts_xref_db_segments.xref_db>InterPro</PDBo:pdbx_sifts_xref_db_segments.xref_db>
             <PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>IPR033121</PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>
@@ -40319,14 +40319,14 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
         <PDBo:has_pdbx_sifts_xref_db_segments>
-          <PDBo:pdbx_sifts_xref_db_segments rdf:about="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/D,,4,1,InterPro,IPR021109">
+          <PDBo:pdbx_sifts_xref_db_segments rdf:about="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/D,2,4,1,InterPro,IPR021109">
             <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/pdb/1B5F"/>
             <PDBo:reference_to_struct_asym>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/1B5F/struct_asym/D">
-                <PDBo:referenced_by_pdbx_sifts_xref_db_segments rdf:resource="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/D,,4,1,InterPro,IPR021109"/>
+                <PDBo:referenced_by_pdbx_sifts_xref_db_segments rdf:resource="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/D,2,4,1,InterPro,IPR021109"/>
               </rdf:Description>
             </PDBo:reference_to_struct_asym>
-            <PDBo:pdbx_sifts_xref_db_segments.entity_id/>
+            <PDBo:pdbx_sifts_xref_db_segments.entity_id>2</PDBo:pdbx_sifts_xref_db_segments.entity_id>
             <PDBo:pdbx_sifts_xref_db_segments.asym_id>D</PDBo:pdbx_sifts_xref_db_segments.asym_id>
             <PDBo:pdbx_sifts_xref_db_segments.xref_db>InterPro</PDBo:pdbx_sifts_xref_db_segments.xref_db>
             <PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>IPR021109</PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>
@@ -40339,14 +40339,14 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
         <PDBo:has_pdbx_sifts_xref_db_segments>
-          <PDBo:pdbx_sifts_xref_db_segments rdf:about="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/D,,5,1,InterPro,IPR001461">
+          <PDBo:pdbx_sifts_xref_db_segments rdf:about="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/D,2,5,1,InterPro,IPR001461">
             <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/pdb/1B5F"/>
             <PDBo:reference_to_struct_asym>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/1B5F/struct_asym/D">
-                <PDBo:referenced_by_pdbx_sifts_xref_db_segments rdf:resource="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/D,,5,1,InterPro,IPR001461"/>
+                <PDBo:referenced_by_pdbx_sifts_xref_db_segments rdf:resource="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/D,2,5,1,InterPro,IPR001461"/>
               </rdf:Description>
             </PDBo:reference_to_struct_asym>
-            <PDBo:pdbx_sifts_xref_db_segments.entity_id/>
+            <PDBo:pdbx_sifts_xref_db_segments.entity_id>2</PDBo:pdbx_sifts_xref_db_segments.entity_id>
             <PDBo:pdbx_sifts_xref_db_segments.asym_id>D</PDBo:pdbx_sifts_xref_db_segments.asym_id>
             <PDBo:pdbx_sifts_xref_db_segments.xref_db>InterPro</PDBo:pdbx_sifts_xref_db_segments.xref_db>
             <PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>IPR001461</PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>
@@ -40359,14 +40359,14 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
         <PDBo:has_pdbx_sifts_xref_db_segments>
-          <PDBo:pdbx_sifts_xref_db_segments rdf:about="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/D,,6,1,InterPro,IPR021109">
+          <PDBo:pdbx_sifts_xref_db_segments rdf:about="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/D,2,6,1,InterPro,IPR021109">
             <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/pdb/1B5F"/>
             <PDBo:reference_to_struct_asym>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/1B5F/struct_asym/D">
-                <PDBo:referenced_by_pdbx_sifts_xref_db_segments rdf:resource="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/D,,6,1,InterPro,IPR021109"/>
+                <PDBo:referenced_by_pdbx_sifts_xref_db_segments rdf:resource="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/D,2,6,1,InterPro,IPR021109"/>
               </rdf:Description>
             </PDBo:reference_to_struct_asym>
-            <PDBo:pdbx_sifts_xref_db_segments.entity_id/>
+            <PDBo:pdbx_sifts_xref_db_segments.entity_id>2</PDBo:pdbx_sifts_xref_db_segments.entity_id>
             <PDBo:pdbx_sifts_xref_db_segments.asym_id>D</PDBo:pdbx_sifts_xref_db_segments.asym_id>
             <PDBo:pdbx_sifts_xref_db_segments.xref_db>InterPro</PDBo:pdbx_sifts_xref_db_segments.xref_db>
             <PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>IPR021109</PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>
@@ -40379,14 +40379,14 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
         <PDBo:has_pdbx_sifts_xref_db_segments>
-          <PDBo:pdbx_sifts_xref_db_segments rdf:about="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/D,,7,1,CATH,2.40.70.10">
+          <PDBo:pdbx_sifts_xref_db_segments rdf:about="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/D,2,7,1,CATH,2.40.70.10">
             <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/pdb/1B5F"/>
             <PDBo:reference_to_struct_asym>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/1B5F/struct_asym/D">
-                <PDBo:referenced_by_pdbx_sifts_xref_db_segments rdf:resource="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/D,,7,1,CATH,2.40.70.10"/>
+                <PDBo:referenced_by_pdbx_sifts_xref_db_segments rdf:resource="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/D,2,7,1,CATH,2.40.70.10"/>
               </rdf:Description>
             </PDBo:reference_to_struct_asym>
-            <PDBo:pdbx_sifts_xref_db_segments.entity_id/>
+            <PDBo:pdbx_sifts_xref_db_segments.entity_id>2</PDBo:pdbx_sifts_xref_db_segments.entity_id>
             <PDBo:pdbx_sifts_xref_db_segments.asym_id>D</PDBo:pdbx_sifts_xref_db_segments.asym_id>
             <PDBo:pdbx_sifts_xref_db_segments.xref_db>CATH</PDBo:pdbx_sifts_xref_db_segments.xref_db>
             <PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>2.40.70.10</PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>
@@ -40399,14 +40399,14 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
           </PDBo:pdbx_sifts_xref_db_segments>
         </PDBo:has_pdbx_sifts_xref_db_segments>
         <PDBo:has_pdbx_sifts_xref_db_segments>
-          <PDBo:pdbx_sifts_xref_db_segments rdf:about="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/D,,8,1,SCOP,26837">
+          <PDBo:pdbx_sifts_xref_db_segments rdf:about="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/D,2,8,1,SCOP,26837">
             <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/pdb/1B5F"/>
             <PDBo:reference_to_struct_asym>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb/1B5F/struct_asym/D">
-                <PDBo:referenced_by_pdbx_sifts_xref_db_segments rdf:resource="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/D,,8,1,SCOP,26837"/>
+                <PDBo:referenced_by_pdbx_sifts_xref_db_segments rdf:resource="https://rdf.wwpdb.org/pdb/1B5F/pdbx_sifts_xref_db_segments/D,2,8,1,SCOP,26837"/>
               </rdf:Description>
             </PDBo:reference_to_struct_asym>
-            <PDBo:pdbx_sifts_xref_db_segments.entity_id/>
+            <PDBo:pdbx_sifts_xref_db_segments.entity_id>2</PDBo:pdbx_sifts_xref_db_segments.entity_id>
             <PDBo:pdbx_sifts_xref_db_segments.asym_id>D</PDBo:pdbx_sifts_xref_db_segments.asym_id>
             <PDBo:pdbx_sifts_xref_db_segments.xref_db>SCOP</PDBo:pdbx_sifts_xref_db_segments.xref_db>
             <PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>26837</PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>

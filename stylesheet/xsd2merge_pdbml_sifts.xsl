@@ -38,7 +38,9 @@
   &lt;xsl:output method="xml" indent="yes"/&gt;
   &lt;xsl:strip-space elements="*"/&gt;
 
-  &lt;xsl:variable name="entry_id"&gt;&lt;xsl:value-of select="/PDBx:datablock/PDBx:entryCategory/PDBx:entry/@id"/&gt;&lt;/xsl:variable&gt;
+  &lt;xsl:variable name="datablock" select="/PDBx:datablock"/&gt;
+
+  &lt;xsl:variable name="entry_id"&gt;&lt;xsl:value-of select="$datablock/PDBx:entryCategory/PDBx:entry/@id"/&gt;&lt;/xsl:variable&gt;
   &lt;xsl:variable name="datablock_name"&gt;&lt;xsl:value-of select="concat($entry_id,'-noatom')"/&gt;&lt;/xsl:variable&gt;
 
   &lt;xsl:variable name="pdb_id"&gt;&lt;xsl:value-of select="translate($sifts_entry/@dbAccessionId,'abcdefghijklmnopqrstuvwxyz','ABCDEFGHIJKLMNOPQRSTUVWXYZ')"/&gt;&lt;/xsl:variable&gt;
@@ -124,7 +126,7 @@ Unmatched entry ID in both documents (&lt;xsl:value-of select="$entry_id"/&gt; a
     &lt;xsl:for-each select="$sifts_entry/sifts:entity"&gt;
 
       &lt;xsl:variable name="asym_id"&gt;&lt;xsl:value-of select="@entityId"/&gt;&lt;/xsl:variable&gt;
-      &lt;xsl:variable name="entity_id"&gt;&lt;xsl:value-of select="PDBx:datablock/PDBx:pdbx_poly_seq_schemeCategory/PDBx:pdbx_poly_seq_scheme[@asym_id=$asym_id][1]/@entity_id"/&gt;&lt;/xsl:variable&gt;
+      &lt;xsl:variable name="entity_id"&gt;&lt;xsl:value-of select="$datablock/PDBx:pdbx_poly_seq_schemeCategory/PDBx:pdbx_poly_seq_scheme[@asym_id=$asym_id][1]/@entity_id"/&gt;&lt;/xsl:variable&gt;
 
       &lt;xsl:for-each select="sifts:segment"&gt;
         &lt;xsl:variable name="segment_id"&gt;&lt;xsl:value-of select="position()"/&gt;&lt;/xsl:variable&gt;
@@ -177,7 +179,7 @@ Unmatched entry ID in both documents (&lt;xsl:value-of select="$entry_id"/&gt; a
     &lt;xsl:for-each select="$sifts_entry/sifts:entity"&gt;
 
       &lt;xsl:variable name="asym_id"&gt;&lt;xsl:value-of select="@entityId"/&gt;&lt;/xsl:variable&gt;
-      &lt;xsl:variable name="entity_id"&gt;&lt;xsl:value-of select="PDBx:datablock/PDBx:pdbx_poly_seq_schemeCategory/PDBx:pdbx_poly_seq_scheme[@asym_id=$asym_id][1]/@entity_id"/&gt;&lt;/xsl:variable&gt;
+      &lt;xsl:variable name="entity_id"&gt;&lt;xsl:value-of select="$datablock/PDBx:pdbx_poly_seq_schemeCategory/PDBx:pdbx_poly_seq_scheme[@asym_id=$asym_id][1]/@entity_id"/&gt;&lt;/xsl:variable&gt;
 
       &lt;xsl:for-each select="sifts:segment"&gt;
         &lt;xsl:variable name="segment_id"&gt;&lt;xsl:value-of select="position()"/&gt;&lt;/xsl:variable&gt;

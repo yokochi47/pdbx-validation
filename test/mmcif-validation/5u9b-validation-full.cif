@@ -809,7 +809,7 @@ _struct_site_gen.symmetry
 7 AC2 A CYS 66 A ? CYS 66 4 1_555 
 8 AC2 A HIS 70 A ? HIS 70 4 1_555 
 # 
-_pdbx_sifts_unp_segments.entity_id      . 
+_pdbx_sifts_unp_segments.entity_id      1 
 _pdbx_sifts_unp_segments.asym_id        A 
 _pdbx_sifts_unp_segments.unp_acc        Q9NR56 
 _pdbx_sifts_unp_segments.segment_id     1 
@@ -830,16 +830,16 @@ _pdbx_sifts_xref_db_segments.segment_id
 _pdbx_sifts_xref_db_segments.instance_id 
 _pdbx_sifts_xref_db_segments.seq_id_start 
 _pdbx_sifts_xref_db_segments.seq_id_end 
-. A GO       GO:0046872      1 1  1  92 
-. A Ensembl  ENSG00000152601 1 2  59 92 
-. A Ensembl  ENSG00000152601 1 3  1  58 
-. A Ensembl  ENSG00000152601 1 4  1  58 
-. A Ensembl  ENSG00000152601 1 5  59 92 
-. A InterPro IPR000571       1 6  47 72 
-. A InterPro IPR000571       1 7  14 40 
-. A CATH     3.30.1370.210   1 8  1  92 
-. A Pfam     PF14608         1 9  19 39 
-. A Pfam     PF14608         1 10 52 71 
+1 A GO       GO:0046872      1 1  1  92 
+1 A Ensembl  ENSG00000152601 1 2  59 92 
+1 A Ensembl  ENSG00000152601 1 3  1  58 
+1 A Ensembl  ENSG00000152601 1 4  1  58 
+1 A Ensembl  ENSG00000152601 1 5  59 92 
+1 A InterPro IPR000571       1 6  47 72 
+1 A InterPro IPR000571       1 7  14 40 
+1 A CATH     3.30.1370.210   1 8  1  92 
+1 A Pfam     PF14608         1 9  19 39 
+1 A Pfam     PF14608         1 10 52 71 
 # 
 _pdbx_nmr_assigned_chem_shift_list.id                            1 
 _pdbx_nmr_assigned_chem_shift_list.data_file_name                5u9b_cs.str 

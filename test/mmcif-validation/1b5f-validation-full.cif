@@ -2556,10 +2556,10 @@ _pdbx_sifts_unp_segments.seq_id_start
 _pdbx_sifts_unp_segments.seq_id_end 
 _pdbx_sifts_unp_segments.best_mapping 
 _pdbx_sifts_unp_segments.identity 
-. A Q9XFX3 1 1 71  309 1 239 Y 1.000 
-. B Q9XFX3 1 1 418 504 1 87  Y 1.000 
-. C Q9XFX3 1 1 71  309 1 239 Y 1.000 
-. D Q9XFX3 1 1 418 504 1 87  Y 1.000 
+1 A Q9XFX3 1 1 71  309 1 239 Y 1.000 
+2 B Q9XFX3 1 1 418 504 1 87  Y 1.000 
+1 C Q9XFX3 1 1 71  309 1 239 Y 1.000 
+2 D Q9XFX3 1 1 418 504 1 87  Y 1.000 
 # 
 loop_
 _pdbx_sifts_xref_db_segments.entity_id 
@@ -2570,50 +2570,50 @@ _pdbx_sifts_xref_db_segments.segment_id
 _pdbx_sifts_xref_db_segments.instance_id 
 _pdbx_sifts_xref_db_segments.seq_id_start 
 _pdbx_sifts_xref_db_segments.seq_id_end 
-. A GO       GO:0004190 1 1  1   239 
-. A GO       GO:0004190 1 2  1   239 
-. A GO       GO:0006508 1 3  1   239 
-. A GO       GO:0006508 1 4  1   239 
-. A InterPro IPR021109  1 5  1   169 
-. A InterPro IPR021109  1 6  170 238 
-. A InterPro IPR033121  1 7  14  238 
-. A InterPro IPR001461  1 8  21  41  
-. A InterPro IPR001461  1 9  9   237 
-. A InterPro IPR021109  1 10 3   238 
-. A InterPro IPR001461  1 11 213 224 
-. A InterPro IPR001461  1 12 163 176 
-. A CATH     2.40.70.10 1 13 1   239 
-. A SCOP     26836      1 14 1   239 
-. B GO       GO:0004190 1 1  1   87  
-. B GO       GO:0006508 1 2  1   87  
-. B InterPro IPR033121  1 3  2   86  
-. B InterPro IPR021109  1 4  3   86  
-. B InterPro IPR021109  1 5  2   87  
-. B InterPro IPR001461  1 6  2   84  
-. B CATH     2.40.70.10 1 7  1   87  
-. B SCOP     26836      1 8  1   87  
-. C GO       GO:0004190 1 1  1   239 
-. C GO       GO:0004190 1 2  1   239 
-. C GO       GO:0006508 1 3  1   239 
-. C GO       GO:0006508 1 4  1   239 
-. C InterPro IPR021109  1 5  170 238 
-. C InterPro IPR001461  1 6  213 224 
-. C InterPro IPR021109  1 7  1   169 
-. C InterPro IPR001461  1 8  21  41  
-. C InterPro IPR001461  1 9  163 176 
-. C InterPro IPR021109  1 10 3   238 
-. C InterPro IPR033121  1 11 14  238 
-. C InterPro IPR001461  1 12 9   237 
-. C CATH     2.40.70.10 1 13 2   239 
-. C SCOP     26837      1 14 1   239 
-. D GO       GO:0004190 1 1  1   87  
-. D GO       GO:0006508 1 2  1   87  
-. D InterPro IPR033121  1 3  2   86  
-. D InterPro IPR021109  1 4  2   87  
-. D InterPro IPR001461  1 5  2   84  
-. D InterPro IPR021109  1 6  3   86  
-. D CATH     2.40.70.10 1 7  1   87  
-. D SCOP     26837      1 8  1   87  
+1 A GO       GO:0004190 1 1  1   239 
+1 A GO       GO:0004190 1 2  1   239 
+1 A GO       GO:0006508 1 3  1   239 
+1 A GO       GO:0006508 1 4  1   239 
+1 A InterPro IPR021109  1 5  1   169 
+1 A InterPro IPR021109  1 6  170 238 
+1 A InterPro IPR033121  1 7  14  238 
+1 A InterPro IPR001461  1 8  21  41  
+1 A InterPro IPR001461  1 9  9   237 
+1 A InterPro IPR021109  1 10 3   238 
+1 A InterPro IPR001461  1 11 213 224 
+1 A InterPro IPR001461  1 12 163 176 
+1 A CATH     2.40.70.10 1 13 1   239 
+1 A SCOP     26836      1 14 1   239 
+2 B GO       GO:0004190 1 1  1   87  
+2 B GO       GO:0006508 1 2  1   87  
+2 B InterPro IPR033121  1 3  2   86  
+2 B InterPro IPR021109  1 4  3   86  
+2 B InterPro IPR021109  1 5  2   87  
+2 B InterPro IPR001461  1 6  2   84  
+2 B CATH     2.40.70.10 1 7  1   87  
+2 B SCOP     26836      1 8  1   87  
+1 C GO       GO:0004190 1 1  1   239 
+1 C GO       GO:0004190 1 2  1   239 
+1 C GO       GO:0006508 1 3  1   239 
+1 C GO       GO:0006508 1 4  1   239 
+1 C InterPro IPR021109  1 5  170 238 
+1 C InterPro IPR001461  1 6  213 224 
+1 C InterPro IPR021109  1 7  1   169 
+1 C InterPro IPR001461  1 8  21  41  
+1 C InterPro IPR001461  1 9  163 176 
+1 C InterPro IPR021109  1 10 3   238 
+1 C InterPro IPR033121  1 11 14  238 
+1 C InterPro IPR001461  1 12 9   237 
+1 C CATH     2.40.70.10 1 13 2   239 
+1 C SCOP     26837      1 14 1   239 
+2 D GO       GO:0004190 1 1  1   87  
+2 D GO       GO:0006508 1 2  1   87  
+2 D InterPro IPR033121  1 3  2   86  
+2 D InterPro IPR021109  1 4  2   87  
+2 D InterPro IPR001461  1 5  2   84  
+2 D InterPro IPR021109  1 6  3   86  
+2 D CATH     2.40.70.10 1 7  1   87  
+2 D SCOP     26837      1 8  1   87  
 # 
 _pdbx_percentile_list.entry_id   1B5F 
 _pdbx_percentile_list.name       all,1.72,xray 

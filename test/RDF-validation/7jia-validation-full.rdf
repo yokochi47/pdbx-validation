@@ -1678,14 +1678,14 @@
     <VRPTo:has_pdbx_sifts_unp_segmentsCategory>
       <VRPTo:pdbx_sifts_unp_segmentsCategory rdf:about="https://rdf.wwpdb.org/pdb-validation/7JIA/pdbx_sifts_unp_segmentsCategory">
         <VRPTo:has_pdbx_sifts_unp_segments>
-          <VRPTo:pdbx_sifts_unp_segments rdf:about="https://rdf.wwpdb.org/pdb-validation/7JIA/pdbx_sifts_unp_segments/A,,1,1,Q8QGN9">
+          <VRPTo:pdbx_sifts_unp_segments rdf:about="https://rdf.wwpdb.org/pdb-validation/7JIA/pdbx_sifts_unp_segments/A,1,1,1,Q8QGN9">
             <VRPTo:of_datablock rdf:resource="https://rdf.wwpdb.org/pdb-validation/7JIA"/>
             <VRPTo:reference_to_struct_asym>
               <rdf:Description rdf:about="https://rdf.wwpdb.org/pdb-validation/7JIA/struct_asym/A">
-                <VRPTo:referenced_by_pdbx_sifts_unp_segments rdf:resource="https://rdf.wwpdb.org/pdb-validation/7JIA/pdbx_sifts_unp_segments/A,,1,1,Q8QGN9"/>
+                <VRPTo:referenced_by_pdbx_sifts_unp_segments rdf:resource="https://rdf.wwpdb.org/pdb-validation/7JIA/pdbx_sifts_unp_segments/A,1,1,1,Q8QGN9"/>
               </rdf:Description>
             </VRPTo:reference_to_struct_asym>
-            <VRPTo:pdbx_sifts_unp_segments.entity_id/>
+            <VRPTo:pdbx_sifts_unp_segments.entity_id>1</VRPTo:pdbx_sifts_unp_segments.entity_id>
             <VRPTo:pdbx_sifts_unp_segments.asym_id>A</VRPTo:pdbx_sifts_unp_segments.asym_id>
             <VRPTo:pdbx_sifts_unp_segments.unp_acc>Q8QGN9</VRPTo:pdbx_sifts_unp_segments.unp_acc>
             <VRPTo:pdbx_sifts_unp_segments.segment_id>1</VRPTo:pdbx_sifts_unp_segments.segment_id>
