@@ -119,22 +119,22 @@ File path | Document
 		- Reverted from VRPT PDBML: [6xey_validation.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/validation-info-rev-from-full/6xey_validation.xml)
 		- Reverted from VRPT PDBML-alt and PDBML-noatom: [6xey_validation.xml](https://github.com/yokochi47/pdbx-validation/blob/master/test/validation-info-rev-from-alt/6xey_validation.xml)
 
-## Bulk download service of alternative wwPDB validation reports
+## Bulk download service of full specification or lightweight alternative version of wwPDB validation reports
 
 - Bulk download via HTTP protocol
 
-	- [VRPT mmCIF (full specification)](https://bmrbpub.pdbj.org/archive/mmcif-vrpt/)
-	- [VRPT mmCIF-alt (lightweight version @ PDBj FTP server)](https://data.pdbj.org/pdbjplus/data/vrpt/mmcif/)
-	- [VRPT mmCIF (full specification @ PDBj FTP server)](https://data.pdbj.org/pdbjplus/data/vrpt/mmcif-full/)
+	- [VRPT mmCIF (full specification @ BMRBj data server)](https://bmrbpub.pdbj.org/archive/mmcif-vrpt/)
+	- [VRPT mmCIF (full specification @ PDBj data server)](https://data.pdbj.org/pdbjplus/data/vrpt/mmcif-full/)
+	- [VRPT mmCIF-alt (lightweight alternative version @ PDBj data server)](https://data.pdbj.org/pdbjplus/data/vrpt/mmcif/)
 	
 
-	- [VRPT PDBML (full specification)](https://bmrbpub.pdbj.org/archive/pdbml-vrpt/)
-	- [VRPT PDBML-alt (lightweight version @ PDBj FTP server)](https://data.pdbj.org/pdbjplus/data/vrpt/xml/)
-	- [VRPT PDBML (full specification @ PDBj FTP server)](https://data.pdbj.org/pdbjplus/data/vrpt/xml-full/)
+	- [VRPT PDBML (full specification @ BMRBj data server)](https://bmrbpub.pdbj.org/archive/pdbml-vrpt/)
+	- [VRPT PDBML (full specification @ PDBj data server)](https://data.pdbj.org/pdbjplus/data/vrpt/xml-full/)
+	- [VRPT PDBML-alt (lightweight alternative version @ PDBj data server)](https://data.pdbj.org/pdbjplus/data/vrpt/xml/)
 
-	- [VRPT/RDF (full specification)](https://bmrbpub.pdbj.org/archive/wwpdb-rdf-vrpt/)
-	- [VRPT/RDF-alt (lightweight version @ PDBj FTP server)](https://data.pdbj.org/pdbjplus/data/vrpt/rdf/)
-	- [VRPT/RDF (full specification @ PDBj FTP server)](https://data.pdbj.org/pdbjplus/data/vrpt/rdf-full/)
+	- [VRPT/RDF (full specification @ BMRBj data server)](https://bmrbpub.pdbj.org/archive/wwpdb-rdf-vrpt/)
+	- [VRPT/RDF (full specification @ PDBj data server)](https://data.pdbj.org/pdbjplus/data/vrpt/rdf-full/)
+	- [VRPT/RDF-alt (lightweight alternative version @ PDBj data server)](https://data.pdbj.org/pdbjplus/data/vrpt/rdf/)
 
 - Bulk download via rsync protocol
 
@@ -152,6 +152,8 @@ File path | Document
 - [SPARQL endpoint for VRPT/RDF-alt](https://bmrbpub.pdbj.org/examples.html)
 
 - [PDBj Mine2 SQL search](https://pdbj.org/help/mine-sql)
+
+- [NBDC RDF Portal](https://integbio.jp/rdf/)
 
 ## Software requirements
 
