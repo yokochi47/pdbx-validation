@@ -7,23 +7,23 @@ if [ ! -d $SIFTS_XML ] ; then
  exit 1
 fi
 
-sifts_file_list=sifts_file_list
+sifts_xml_file_list=sifts_xml_file_list
 
-find $SIFTS_XML -name '*.xml' > $sifts_file_list
+find $SIFTS_XML -name '*.xml' > $sifts_xml_file_list
 
-while read sifts_file
+while read sifts_xml_file
 do
 
- pdb_id=`basename $sifts_file .xml`
+ pdb_id=`basename $sifts_xml_file .xml`
 
- sed -n 2,2p $sifts_file | grep 'dbAccessionId="'$pdb_id'"' > /dev/null
+ sed -n 2,2p $sifts_xml_file | grep 'dbAccessionId="'$pdb_id'"' > /dev/null
 
  if [ $? != 0 ] ; then
-  echo deleting $sifts_file
-  rm -f $sifts_file
+  echo deleting $sifts_xml_file
+  rm -f $sifts_xml_file
  fi
 
-done < $sifts_file_list
+done < $sifts_xml_file_list
 
-rm -f $sifts_file_list
+rm -f $sifts_xml_file_list
 

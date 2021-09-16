@@ -185,7 +185,7 @@ if [ $weekday -ge 1 ] && [ $weekday -le 4 ] ; then
 
 fi
 
-xml_file_total=sifts_file_total
+xml_file_total=sifts_xml_file_total
 
 if [ -z $MTIME ] ; then
  MTIME=-4
