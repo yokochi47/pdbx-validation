@@ -274,17 +274,7 @@ if [ $updated = 0 ] || [ ! -e $xml_file_total ] ; then
  if [ $total = $last ] ; then
 
   echo $DB_NAME" ("$SRC_DIR") is up-to-date."
-<<REMARK
-  if [ -d $XML_DIR ] ; then
 
-   unzipped=`find $XML_DIR -maxdepth 1 -name '*.xml' | wc -l 2> /dev/null`
-
-   if [ $total = $unzipped ] ; then
-    exit 0
-   fi
-
-  fi
-REMARK
  else
 
   echo $total > $xml_file_total
@@ -294,29 +284,4 @@ REMARK
 fi
 
 date -u +"%b %d, %Y" > /tmp/pdbml-last
-
-exit ### do not uncompress
-
-gz_file_list=`echo ${SRC_DIR,,}_gz_file_list | tr '-' _`
-
-mkdir -p $XML_DIR
-
-find $SRC_DIR -name '*.xml.gz' > $gz_file_list
-
-while read gz_file
-do
-
- xml_file=`basename $gz_file .gz`
-
- if [ ! -e $XML_DIR/$xml_file ] ; then
-  cp $gz_file $XML_DIR
- fi
-
-done < $gz_file_list
-
-rm -f $gz_file_list
-
-find $XML_DIR -type f -name "*.gz" -exec gunzip {} +
-
-echo Unzipped $DB_NAME" ("$XML_DIR") is up-to-date."
 

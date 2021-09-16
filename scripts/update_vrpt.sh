@@ -130,14 +130,7 @@ if [ $weekday -ge 1 ] && [ $weekday -le 4 ] ; then
  if [ ! -z $MTIME ] ; then
   find $SRC_DIR -name "*_validation.xml.gz" -mtime $MTIME | cut -d '/' -f 4 | cut -d '_' -f 1 > $chk_sum_log
  fi
-<<REMARK
- if [ -d $XML_DIR ] ; then
-  while read pdb_id ; do
-   [ -z "$pdb_id" ] || [[ "$pdb_id" =~ ^#.* ]] && continue
-   rm -f $XML_DIR/$pdb_id"_validation.xml"
-  done < $chk_sum_log
- fi
-REMARK
+
  if [ -d $VALID_INFO_ALT ] ; then
   while read pdb_id ; do
    [ -z "$pdb_id" ] || [[ "$pdb_id" =~ ^#.* ]] && continue
@@ -254,17 +247,7 @@ if [ $updated = 0 ] || [ ! -e $xml_file_total ] ; then
  if [ $total = $last ] ; then
 
   echo $DB_NAME" ("$SRC_DIR") is up-to-date."
-<<REMARK
-  if [ -d $XML_DIR ] ; then
 
-   unzipped=`find $XML_DIR -maxdepth 1 -name '*.xml' | wc -l 2> /dev/null`
-
-   if [ $total = $unzipped ] ; then
-    exit 0
-   fi
-
-  fi
-REMARK
  else
 
   echo $total > $xml_file_total
@@ -274,29 +257,4 @@ REMARK
 fi
 
 date -u +"%b %d, %Y" > /tmp/pdb-vrpt-last
-
-exit ### do not uncompress
-
-gz_file_list=`echo ${SRC_DIR,,}_gz_file_list | tr '-' _`
-
-mkdir -p $XML_DIR
-
-find $SRC_DIR -regextype posix-egrep -regex '.*/[0-9][0-9a-z]{3}_validation.xml.gz' > $gz_file_list
-
-while read gz_file
-do
-
- xml_file=`basename $gz_file .gz`
-
- if [ ! -e $XML_DIR/$xml_file ] ; then
-  cp $gz_file $XML_DIR
- fi
-
-done < $gz_file_list
-
-rm -f $gz_file_list
-
-find $XML_DIR -type f -name "*.gz" -exec gunzip {} +
-
-echo Unzipped $ALT_NAME" ("$XML_DIR") is up-to-date."
 
