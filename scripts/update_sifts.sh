@@ -238,5 +238,7 @@ rm -f $gz_file_list
 
 find $XML_DIR -type f -name "*.gz" -exec gunzip {} +
 
+./scripts/clean_invalid_sifts.sh
+
 echo Unzipped $DB_NAME" ("$XML_DIR") is up-to-date."
 
