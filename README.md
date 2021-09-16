@@ -124,16 +124,13 @@ File path | Document
 - Bulk download via HTTP protocol
 
 	- [VRPT mmCIF (full specification @ BMRBj data server)](https://bmrbpub.pdbj.org/archive/mmcif-vrpt/)
-	- [VRPT mmCIF (full specification @ PDBj data server)](https://data.pdbj.org/pdbjplus/data/vrpt/mmcif-full/)
 	- [VRPT mmCIF-alt (lightweight alternative version @ PDBj data server)](https://data.pdbj.org/pdbjplus/data/vrpt/mmcif/)
 	
 
 	- [VRPT PDBML (full specification @ BMRBj data server)](https://bmrbpub.pdbj.org/archive/pdbml-vrpt/)
-	- [VRPT PDBML (full specification @ PDBj data server)](https://data.pdbj.org/pdbjplus/data/vrpt/xml-full/)
 	- [VRPT PDBML-alt (lightweight alternative version @ PDBj data server)](https://data.pdbj.org/pdbjplus/data/vrpt/xml/)
 
 	- [VRPT/RDF (full specification @ BMRBj data server)](https://bmrbpub.pdbj.org/archive/wwpdb-rdf-vrpt/)
-	- [VRPT/RDF (full specification @ PDBj data server)](https://data.pdbj.org/pdbjplus/data/vrpt/rdf-full/)
 	- [VRPT/RDF-alt (lightweight alternative version @ PDBj data server)](https://data.pdbj.org/pdbjplus/data/vrpt/rdf/)
 
 - Bulk download via rsync protocol
