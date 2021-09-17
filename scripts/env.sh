@@ -107,6 +107,8 @@ PDBML_NOATOM_SIFTS=XML-noatom-sifts
 XSD2MERGE_PDBML_SIFTS_XSL=stylesheet/xsd2merge_pdbml_sifts.xsl
 MERGE_PDBML_SIFTS_XSL=stylesheet/merge_pdbml_sifts.xsl
 
+MMCIF_BIRD=pub/pdb/refdata/bird
+
 function mk_div_dir() {
  if [ ! -d $1 ] ; then
   [ -e $1 ] && rm -f $1

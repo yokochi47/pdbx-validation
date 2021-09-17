@@ -10,10 +10,6 @@ if [ $has_xml2mmcif_command = "false" ] ; then
 
 fi
 
-if [ ! -e $SAXON ] ; then
- ./scripts/update_extlibs.sh
-fi
-
 if [ ! -e $PDBX_VALIDATION_XSD ] ; then
  ( cd schema; ./update_schema.sh )
 fi

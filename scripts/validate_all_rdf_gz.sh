@@ -5,7 +5,7 @@ source ./scripts/env.sh
 if [ $has_rapper_command = "false" ] ; then
 
  echo "rapper: command not found..."
- echo "Please install Raptor RDF Syntax Library (http://librdf.org/raptor/)."
+ echo "Please install Raptor RDF Syntax Library (https://librdf.org/raptor/)."
  exit 1
 
 fi

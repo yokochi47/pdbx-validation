@@ -5,7 +5,7 @@ source ./scripts/env.sh
 if [ $has_cifcheck_command = "false" ] ; then
 
  echo "CifCheck: command not found..."
- echo "Please install MMCIF Dictionary Suite (http://sw-tools.pdb.org/)."
+ echo "Please install MMCIF Dictionary Suite (https://sw-tools.rcsb.org)."
  exit 1
 
 fi
