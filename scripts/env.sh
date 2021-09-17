@@ -12,7 +12,8 @@ XSD2PGSCHEMA=extlibs/xsd2pgschema.jar
 PDBML_NOATOM=XML-noatom
 VALID_REPORT=validation_reports
 
-PDBML=pdbml
+PDBML=pdbml # used in test directory
+
 PDBML_EXT=pdbml-ext
 VALID_INFO=validation-info
 VALID_INFO_ALT=validation-info-alt
@@ -99,7 +100,7 @@ COMPONENTS_RDF=components-rdf
 SIFTS_XML_URL=ftp.ebi.ac.uk/pub/databases/msd/sifts/xml
 SIFTS_XML=sifts_xml
 
-PDBML_SIFTS=pdbml-sifts
+PDBML_SIFTS=pdbml-sifts # used in test directory
 
 PDBML_NOATOM_SIFTS=XML-noatom-sifts
 
