@@ -170,7 +170,7 @@ File path | Document
 ## Release notes
 
 - **Sep 17, 2021**: Release v4.2.0
-	- Integration of [SIFTS](https://www.ebi.ac.uk/pdbe/docs/sifts/) into PDB/RDF that includes HTML links to GO, InterPro, Pfam, CATH domain, SCOP/SCOP2/SCOP2B, and Ensemble from '_pdbx_sifts_xref_db_segments' category.
+	- Integration of [SIFTS](https://www.ebi.ac.uk/pdbe/docs/sifts/) into PDB/RDF that includes HTML links to GO, InterPro, Pfam, CATH domain, SCOP/SCOP2/SCOP2B, and Ensembl from '_pdbx_sifts_xref_db_segments' category.
 	- Add HTML links to EMDB and SASBDB entries from '_pdbx_database_related' category.
 
 - **Sep 13, 2021**: Release v4.1.1
@@ -181,7 +181,7 @@ File path | Document
 		- xmlns:VRPTx="http://pdbml.pdb.org/schema/pdbx-validation-v4.xsd"
 		- xmlns:VRPTo="https://rdf.wwpdb.org/schema/pdbx-validation-v4.owl#"
 	- Add supports for '_pdbx_sifts_xref_db', '_pdbx_sifts_xref_db_segments', and '_pdbx_sifts_unp_segments' categories of PDBx/mmCIF Dictionary (v5.349).
-		- Update PDB/OWL, VRPT/OWL, XSLT codes to support external databases: GO, InterPro, Pfam, CATH domain, SCOP/SCOP2/SCOP2B, and Ensemble.
+		- Update PDB/OWL, VRPT/OWL, XSLT codes to support external databases: GO, InterPro, Pfam, CATH domain, SCOP/SCOP2/SCOP2B, and Ensembl.
 	- Change software requirement of mmCIF Dictionary Suite.
 	- Add RDF link to Peptide Reference Dictionary (PRD) in BIRD (Biologically Interesting molecule Reference Dictionary).
 	- Add supports for '_struct_ref.pdbx_db_code'.
