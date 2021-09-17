@@ -49,7 +49,7 @@ if [ $weekday -ge 1 ] && [ $weekday -le 4 ] ; then
  if [ -d $COMPONENTS_RDF ] ; then
   while read cc_id ; do
    [ -z "$cc_id" ] || [[ "$cc_id" =~ ^#.* ]] && continue
-   rm -f $COMPONENTS_RDF/$cc_id.rdf
+   rm -f $COMPONENTS_RDF/$cc_id.rdf*
   done < $chk_sum_log
  fi
 

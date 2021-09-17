@@ -111,6 +111,10 @@ MMCIF_BIRD=pub/pdb/refdata/bird
 XML_BIRD=XML-bird
 RDF_BIRD=RDF-bird
 
+pdbx_dic=mmcif_pdbx.dic
+pdbx_odb=pdbx.odb
+pdbx_sdb=pdbx.sdb
+
 function mk_div_dir() {
  if [ ! -d $1 ] ; then
   [ -e $1 ] && rm -f $1
