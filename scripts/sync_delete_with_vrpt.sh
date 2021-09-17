@@ -20,6 +20,19 @@ if [ -d $VALID_INFO ] ; then
 
 fi
 
+if [ -d $PDBML_NOATOM_SIFTS ] ; then
+
+ find $PDBML_NOATOM_SIFTS -maxdepth 1 -name '*.xml' | cut -d '/' -f 2 | cut -d '-' -f 1 > $pdb_id_list
+
+ while read pdb_id ; do
+  if [ ! -e $SRC_DIR/${pdb_id:1:2}/$pdb_id/$pdb_id$src_file_ext ] ; then
+   echo deleting $PDBML_NOATOM_SIFTS/$pdb_id-noatom-sifts.xml.gz
+   rm -f $PDBML_NOATOM_SIFTS/$pdb_id-noatom-shifts.xml.gz
+  fi
+ done < $pdb_id_list
+
+fi
+
 if [ -d $PDBML_EXT ] ; then
 
  find $PDBML_EXT -maxdepth 1 -name '*.xml' | cut -d '/' -f 2 | cut -d '-' -f 1 > $pdb_id_list

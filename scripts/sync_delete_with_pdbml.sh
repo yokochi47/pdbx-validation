@@ -7,14 +7,14 @@ pdb_id_list=sync_pdbml_pdb_id_list
 SRC_DIR=$PDBML_NOATOM
 src_file_ext=-noatom.xml.gz
 
-if [ -d $PDBML ] ; then
+if [ -d $PDBML_NOATOM_SIFTS ] ; then
 
- find $PDBML -maxdepth 1 -name '*.xml' | cut -d '/' -f 2 | cut -d '-' -f 1 > $pdb_id_list
+ find $PDBML_NOATOM_SIFTS -maxdepth 1 -name '*.xml' | cut -d '/' -f 2 | cut -d '-' -f 1 > $pdb_id_list
 
  while read pdb_id ; do
   if [ ! -e $SRC_DIR/${pdb_id:1:2}/$pdb_id$src_file_ext ] ; then
-   echo deleting $PDBML/$pdb_id-noatom.xml
-   rm -f $PDBML/$pdb_id-noatom.xml
+   echo deleting $PDBML_NOATOM_SIFTS/$pdb_id-noatom-sifts.xml.gz
+   rm -f $PDBML_NOATOM_SIFTS/$pdb_id-noatom-sifts.xml.gz
   fi
  done < $pdb_id_list
 
