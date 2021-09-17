@@ -163,6 +163,16 @@
         <rdfs:comment xml:lang="en">link to associated BMRB entry.</rdfs:comment>
       </owl:ObjectProperty>
 
+      <owl:ObjectProperty rdf:ID="link_to_emdb">
+        <rdfs:subPropertyOf rdf:resource="#html_link_to"/>
+        <rdfs:comment xml:lang="en">link to associated EMDB entry.</rdfs:comment>
+      </owl:ObjectProperty>
+
+      <owl:ObjectProperty rdf:ID="link_to_sasbdb">
+        <rdfs:subPropertyOf rdf:resource="#html_link_to"/>
+        <rdfs:comment xml:lang="en">link to associated SASBDB entry.</rdfs:comment>
+      </owl:ObjectProperty>
+
       <owl:ObjectProperty rdf:ID="link_to_pubmed">
 	<rdfs:subPropertyOf rdf:resource="#html_link_to"/>
 	<rdfs:comment xml:lang="en">external link to PubMed.</rdfs:comment>

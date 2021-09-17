@@ -24,7 +24,6 @@
   <xsl:variable name="base">https://rdf.wwpdb.org/pdb-validation/<xsl:value-of select="$PDBID"/></xsl:variable>
   <xsl:variable name="base_lower">https://rdf.wwpdb.org/pdb/<xsl:value-of select="$pdbid"/></xsl:variable>
   <xsl:variable name="pdb_link">https://rdf.wwpdb.org/pdb/</xsl:variable>
-  <xsl:variable name="bmrb_link">https://bmrbpub.pdbj.org/rdf/bmr</xsl:variable>
   <xsl:variable name="chem_comp">https://rdf.wwpdb.org/cc/</xsl:variable>
   <xsl:variable name="prd">https://rdf.wwpdb.org/prd/</xsl:variable>
   <xsl:variable name="pdbj">https://pdbj.org/pdb/</xsl:variable>
@@ -34,6 +33,9 @@
   <xsl:variable name="pdbml_noatom">ftp://ftp.wwpdb.org/pub/pdb/data/structures/all/XML-noatom/</xsl:variable>
   <xsl:variable name="pdbml_extatom">ftp://ftp.wwpdb.org/pub/pdb/data/structures/all/XML-extatom/</xsl:variable>
   <xsl:variable name="vrpt">ftp://ftp.wwpdb.org/pub/pdb/validation_reports/<xsl:value-of select="substring($pdbid,2,2)"/>/<xsl:value-of select="$pdbid"/>/</xsl:variable>
+  <xsl:variable name="bmrb">https://bmrbpub.pdbj.org/rdf/bmr</xsl:variable>
+  <xsl:variable name="emdb">https://www.ebi.ac.uk/emdb/</xsl:variable>
+  <xsl:variable name="sasbdb">https://www.sasbdb.org/data/</xsl:variable>
   <xsl:variable name="idorg">http://identifiers.org/</xsl:variable>
   <xsl:variable name="doi">https://doi.org/</xsl:variable>
   <xsl:variable name="pubmed">https://www.ncbi.nlm.nih.gov/pubmed/</xsl:variable>
@@ -135,22 +137,22 @@
 
   <xsl:template match="VRPTx:citation/VRPTx:pdbx_database_id_PubMed[text()!='']" mode="linked">
     <VRPTo:link_to_pubmed rdf:resource="{$pubmed}{text()}" rdfs:label="pubmed:{text()}"/>
-    <dcterms:references rdf:resource="{$idorg}pubmed/{text()}" rdfs:label="pubmed:{text()}"/>
+    <dcterms:references rdf:resource="{$idorg}pubmed:{text()}" rdfs:label="pubmed:{text()}"/>
   </xsl:template>
 
   <xsl:template match="VRPTx:entity_src_gen/VRPTx:pdbx_gene_src_ncbi_taxonomy_id[text()!='']" mode="linked">
     <VRPTo:link_to_taxonomy_source rdf:resource="{$taxonomy}{text()}" rdfs:label="taxonomy:{text()}"/>
-    <rdfs:seeAlso rdf:resource="{$idorg}taxonomy/{text()}" rdfs:label="taxonomy:{text()}"/>
+    <rdfs:seeAlso rdf:resource="{$idorg}taxonomy:{text()}" rdfs:label="taxonomy:{text()}"/>
   </xsl:template>
 
   <xsl:template match="VRPTx:entity_src_gen/VRPTx:pdbx_host_org_ncbi_taxonomy_id[text()!='']" mode="linked">
     <VRPTo:link_to_taxonomy_host rdf:resource="{$taxonomy}{text()}" rdfs:label="taxonomy:{text()}"/>
-    <rdfs:seeAlso rdf:resource="{$idorg}taxonomy/{text()}" rdfs:label="taxonomy:{text()}"/>
+    <rdfs:seeAlso rdf:resource="{$idorg}taxonomy:{text()}" rdfs:label="taxonomy:{text()}"/>
   </xsl:template>
 
   <xsl:template match="VRPTx:entity_src_nat/VRPTx:pdbx_ncbi_taxonomy_id[text()!='']" mode="linked">
     <VRPTo:link_to_taxonomy_source rdf:resource="{$taxonomy}{text()}" rdfs:label="taxonomy:{text()}"/>
-    <rdfs:seeAlso rdf:resource="{$idorg}taxonomy/{text()}" rdfs:label="taxonomy:{text()}"/>
+    <rdfs:seeAlso rdf:resource="{$idorg}taxonomy:{text()}" rdfs:label="taxonomy:{text()}"/>
   </xsl:template>
 
   <xsl:template match="VRPTx:entity/VRPTx:pdbx_ec[text()!='']" mode="linked">
@@ -166,7 +168,7 @@
         <xsl:variable name="ec"><xsl:value-of select="normalize-space(text())"/></xsl:variable>
         <xsl:if test="string-length($ec)!=0">
           <VRPTo:link_to_enzyme rdf:resource="{$enzyme}{$ec}" rdfs:label="enzyme:{$ec}"/>
-          <rdfs:seeAlso rdf:resource="{$idorg}ec-code/{$ec}" rdfs:label="ec-code:{$ec}"/>
+          <rdfs:seeAlso rdf:resource="{$idorg}ec-code:{$ec}" rdfs:label="ec-code:{$ec}"/>
         </xsl:if>
       </xsl:for-each>
     </xsl:if>
@@ -195,52 +197,52 @@
 
   <xsl:template match="VRPTx:struct_ref/VRPTx:pdbx_db_accession[../VRPTx:db_name='UNP' and text()!='']" mode="linked">
     <VRPTo:link_to_uniprot rdf:resource="{$uniprot}{text()}" rdfs:label="uniprot:{text()}"/>
-    <rdfs:seeAlso rdf:resource="{$idorg}uniprot/{text()}" rdfs:label="uniprot:{text()}"/>
+    <rdfs:seeAlso rdf:resource="{$idorg}uniprot:{text()}" rdfs:label="uniprot:{text()}"/>
   </xsl:template>
 
   <xsl:template match="VRPTx:struct_ref/VRPTx:db_code[(../VRPTx:db_name='GB' or ../VRPTx:db_name='GB ' or ../VRPTx:db_name='gb' or ../VRPTx:db_name='TPG') and text()!='']" mode="linked">
     <VRPTo:link_to_genbank rdf:resource="{$genbank}{text()}" rdfs:label="ncbiprotein:{text()}"/>
-    <rdfs:seeAlso rdf:resource="{$idorg}ncbiprotein/{text()}" rdfs:label="ncbiprotein:{text()}"/>
+    <rdfs:seeAlso rdf:resource="{$idorg}ncbiprotein:{text()}" rdfs:label="ncbiprotein:{text()}"/>
   </xsl:template>
 
   <xsl:template match="VRPTx:struct_ref/VRPTx:db_code[(../VRPTx:db_name='EMBL' or ../VRPTx:db_name='GENP') and text()!='']" mode="linked">
     <VRPTo:link_to_embl rdf:resource="{$embl}{text()}" rdfs:label="ncbiprotein:{text()}"/>
-    <rdfs:seeAlso rdf:resource="{$idorg}ncbiprotein/{text()}" rdfs:label="ncbiprotein:{text()}"/>
+    <rdfs:seeAlso rdf:resource="{$idorg}ncbiprotein:{text()}" rdfs:label="ncbiprotein:{text()}"/>
   </xsl:template>
 
   <xsl:template match="VRPTx:struct_ref/VRPTx:db_code[../VRPTx:db_name='TREMBL' and string-length(text())=6 and contains(substring(text(),0,1),'OPQ') and contains(substring(text(),1,1),'0123456789')]" mode="linked">
     <VRPTo:link_to_uniprot rdf:resource="{$uniprot}{text()}" rdfs:label="uniprot:{text()}"/>
-    <rdfs:seeAlso rdf:resource="{$idorg}uniprot/{text()}" rdfs:label="uniprot:{text()}"/>
+    <rdfs:seeAlso rdf:resource="{$idorg}uniprot:{text()}" rdfs:label="uniprot:{text()}"/>
   </xsl:template>
 
   <xsl:template match="VRPTx:struct_ref/VRPTx:db_code[../VRPTx:db_name='TREMBL' and text()!='' and not(string-length(text())=6 and contains(substring(text(),0,1),'OPQ') and contains(substring(text(),1,1),'0123456789'))]" mode="linked">
     <VRPTo:link_to_embl rdf:resource="{$embl}{text()}" rdfs:label="ncbiprotein:{text()}"/>
-    <rdfs:seeAlso rdf:resource="{$idorg}ncbiprotein/{text()}" rdfs:label="ncbiprotein:{text()}"/>
+    <rdfs:seeAlso rdf:resource="{$idorg}ncbiprotein:{text()}" rdfs:label="ncbiprotein:{text()}"/>
   </xsl:template>
 
   <xsl:template match="VRPTx:struct_ref/VRPTx:db_code[../VRPTx:db_name='PIR' and text()!='']" mode="linked">
     <VRPTo:link_to_pir rdf:resource="{$pir}{text()}" rdfs:label="ncbiprotein:{text()}"/>
-    <rdfs:seeAlso rdf:resource="{$idorg}ncbiprotein/{text()}" rdfs:label="ncbiprotein:{text()}"/>
+    <rdfs:seeAlso rdf:resource="{$idorg}ncbiprotein:{text()}" rdfs:label="ncbiprotein:{text()}"/>
   </xsl:template>
 
   <xsl:template match="VRPTx:struct_ref/VRPTx:db_code[../VRPTx:db_name='REF' and text()!='']" mode="linked">
     <VRPTo:link_to_refseq rdf:resource="{$refseq}{text()}" rdfs:label="refseq:{text()}"/>
-    <rdfs:seeAlso rdf:resource="{$idorg}refseq/{text()}" rdfs:label="refseq:{text()}"/>
+    <rdfs:seeAlso rdf:resource="{$idorg}refseq:{text()}" rdfs:label="refseq:{text()}"/>
   </xsl:template>
 
   <xsl:template match="VRPTx:struct_ref/VRPTx:db_code[../VRPTx:db_name='PRF' and text()!='']" mode="linked">
     <VRPTo:link_to_sequence_db rdf:resource="{$pir}{text()}" rdfs:label="ncbiprotein:{text()}"/>
-    <rdfs:seeAlso rdf:resource="{$idorg}ncbiprotein/{text()}" rdfs:label="ncbiprotein:{text()}"/>
+    <rdfs:seeAlso rdf:resource="{$idorg}ncbiprotein:{text()}" rdfs:label="ncbiprotein:{text()}"/>
   </xsl:template>
 
   <xsl:template match="VRPTx:struct_ref/VRPTx:db_code[../VRPTx:db_name='NOR' and text()!='']" mode="linked">
     <VRPTo:link_to_norine rdf:resource="{$norine}{text()}" rdfs:label="norine:{text()}"/>
-    <rdfs:seeAlso rdf:resource="{$idorg}norine/{text()}" rdfs:label="norine:{text()}"/>
+    <rdfs:seeAlso rdf:resource="{$idorg}norine:{text()}" rdfs:label="norine:{text()}"/>
   </xsl:template>
 
   <xsl:template match="VRPTx:pdbx_sifts_unp_segments[@unp_acc!='']/@unp_acc" mode="linked">
     <VRPTo:link_to_uniprot rdf:resource="{$uniprot}{.}" rdfs:label="uniprot:{.}"/>
-    <rdfs:seeAlso rdf:resource="{$idorg}uniprot/{.}" rdfs:label="uniprot:{.}"/>
+    <rdfs:seeAlso rdf:resource="{$idorg}uniprot:{.}" rdfs:label="uniprot:{.}"/>
   </xsl:template>
 
   <xsl:template match="VRPTx:pdbx_sifts_xref_db_segments[@xref_db='GO' and @xref_db_acc!='']/@xref_db_acc" mode="linked">
@@ -250,22 +252,22 @@
 
   <xsl:template match="VRPTx:pdbx_sifts_xref_db_segments[@xref_db='InterPro' and @xref_db_acc!='']/@xref_db_acc" mode="linked">
     <VRPTo:link_to_interpro rdf:resource="{$interpro}{.}" rdfs:label="interpro:{.}"/>
-    <rdfs:seeAlso rdf:resource="{$idorg}interpro/{.}" rdfs:label="interpro:{.}"/>
+    <rdfs:seeAlso rdf:resource="{$idorg}interpro:{.}" rdfs:label="interpro:{.}"/>
   </xsl:template>
 
   <xsl:template match="VRPTx:pdbx_sifts_xref_db_segments[@xref_db='Pfam' and @xref_db_acc!='']/@xref_db_acc" mode="linked">
     <VRPTo:link_to_pfam rdf:resource="{$pfam}{.}" rdfs:label="pfam:{.}"/>
-    <rdfs:seeAlso rdf:resource="{$idorg}pfam/{.}" rdfs:label="pfam:{.}"/>
+    <rdfs:seeAlso rdf:resource="{$idorg}pfam:{.}" rdfs:label="pfam:{.}"/>
   </xsl:template>
 
   <xsl:template match="VRPTx:pdbx_sifts_xref_db_segments[@xref_db='CATH' and @xref_db_acc!='']/@xref_db_acc" mode="linked">
     <VRPTo:link_to_cath rdf:resource="{$cath}{.}" rdfs:label="cath:{.}"/>
-    <rdfs:seeAlso rdf:resource="{$idorg}cath/{.}" rdfs:label="cath:{.}"/>
+    <rdfs:seeAlso rdf:resource="{$idorg}cath:{.}" rdfs:label="cath:{.}"/>
   </xsl:template>
 
   <xsl:template match="VRPTx:pdbx_sifts_xref_db_segments[@xref_db='SCOP' and @xref_db_acc!='']/@xref_db_acc" mode="linked">
     <VRPTo:link_to_scop rdf:resource="{$scop}{.}" rdfs:label="scop:{.}"/>
-    <rdfs:seeAlso rdf:resource="{$idorg}scop/{.}" rdfs:label="scop:{.}"/>
+    <rdfs:seeAlso rdf:resource="{$idorg}scop:{.}" rdfs:label="scop:{.}"/>
   </xsl:template>
 
   <xsl:template match="VRPTx:pdbx_sifts_xref_db_segments[(@xref_db='SCOP2' or @xref_db='SCOP2B') and @xref_db_acc!='']/@xref_db_acc" mode="linked">
@@ -274,7 +276,7 @@
 
   <xsl:template match="VRPTx:pdbx_sifts_xref_db_segments[@xref_db='Ensembl' and @xref_db_acc!='']/@xref_db_acc" mode="linked">
     <VRPTo:link_to_ensembl rdf:resource="{$ensembl}{.}" rdfs:label="ensembl:{.}"/>
-    <rdfs:seeAlso rdf:resource="{$idorg}ensembl/{.}" rdfs:label="ensembl:{.}"/>
+    <rdfs:seeAlso rdf:resource="{$idorg}ensembl:{.}" rdfs:label="ensembl:{.}"/>
   </xsl:template>
 
   <xsl:template match="VRPTx:pdbx_entity_branch_descriptor/VRPTx:descriptor[../VRPTx:type='WURCS' and text()!='']" mode="linked">
@@ -282,7 +284,7 @@
     <xsl:for-each select="$glytoucan/catalog/wurcs[@id=$wurcs_id]">
       <xsl:if test="text()!=''">
         <VRPTo:link_to_glycoinfo rdf:resource="{$glycoinfo}{text()}" rdfs:label="glytoucan:{text()}"/>
-        <rdfs:seeAlso rdf:resource="{$idorg}glytoucan/{text()}" rdfs:label="glytoucan:{text()}"/>
+        <rdfs:seeAlso rdf:resource="{$idorg}glytoucan:{text()}" rdfs:label="glytoucan:{text()}"/>
       </xsl:if>
     </xsl:for-each>
   </xsl:template>
@@ -300,7 +302,18 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:pdbx_database_related[@db_name='BMRB']/@db_id" mode="linked">
-    <VRPTo:link_to_bmrb rdf:resource="{$bmrb_link}{.}"/>
+    <VRPTo:link_to_bmrb rdf:resource="{$bmrb}{.}" rdfs:label="bmrb:{.}"/>
+    <rdfs:seeAlso rdf:resource="{$idorg}bmrb:{.}" rdfs:label="bmrb:{.}"/>
+  </xsl:template>
+
+  <xsl:template match="VRPTx:pdbx_database_related[@db_name='EMDB']/@db_id" mode="linked">
+    <VRPTo:link_to_emdb rdf:resource="{$emdb}{.}" rdfs:label="emdb:{.}"/>
+    <rdfs:seeAlso rdf:resource="{$idorg}emdb:{.}" rdfs:label="emdb:{.}"/>
+  </xsl:template>
+
+  <xsl:template match="VRPTx:pdbx_database_related[@db_name='SASBDB']/@db_id" mode="linked">
+    <VRPTo:link_to_sasbdb rdf:resource="{$sasbdb}{.}" rdfs:label="sasbdb:{.}"/>
+    <rdfs:seeAlso rdf:resource="{$idorg}sasbdb:{.}" rdfs:label="sasbdb:{.}"/>
   </xsl:template>
 
   <!-- level-3 templates follow -->

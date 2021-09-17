@@ -447,7 +447,7 @@
             <PDBo:citation.year>1999</PDBo:citation.year>
             <PDBo:link_to_doi rdf:resource="https://doi.org/10.1074/jbc.274.39.27694" rdfs:label="doi:10.1074/jbc.274.39.27694"/>
             <PDBo:link_to_pubmed rdf:resource="https://www.ncbi.nlm.nih.gov/pubmed/10488111" rdfs:label="pubmed:10488111"/>
-            <dcterms:references rdf:resource="http://identifiers.org/pubmed/10488111" rdfs:label="pubmed:10488111"/>
+            <dcterms:references rdf:resource="http://identifiers.org/pubmed:10488111" rdfs:label="pubmed:10488111"/>
           </PDBo:citation>
         </PDBo:has_citation>
         <PDBo:has_citation>
@@ -1000,7 +1000,7 @@ MOLECULE 2 COMPOSED BY CHAINS C(1-238) AND D (243-326). N-LINKED CARBOHYDRATES (
             <PDBo:entity.src_method>nat</PDBo:entity.src_method>
             <PDBo:entity.type>polymer</PDBo:entity.type>
             <PDBo:link_to_enzyme rdf:resource="http://purl.uniprot.org/enzyme/3.4.23.-" rdfs:label="enzyme:3.4.23.-"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/ec-code/3.4.23.-" rdfs:label="ec-code:3.4.23.-"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/ec-code:3.4.23.-" rdfs:label="ec-code:3.4.23.-"/>
           </PDBo:entity>
         </PDBo:has_entity>
         <PDBo:has_entity>
@@ -1021,7 +1021,7 @@ MOLECULE 2 COMPOSED BY CHAINS C(1-238) AND D (243-326). N-LINKED CARBOHYDRATES (
             <PDBo:entity.src_method>nat</PDBo:entity.src_method>
             <PDBo:entity.type>polymer</PDBo:entity.type>
             <PDBo:link_to_enzyme rdf:resource="http://purl.uniprot.org/enzyme/3.4.23.-" rdfs:label="enzyme:3.4.23.-"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/ec-code/3.4.23.-" rdfs:label="ec-code:3.4.23.-"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/ec-code:3.4.23.-" rdfs:label="ec-code:3.4.23.-"/>
           </PDBo:entity>
         </PDBo:has_entity>
         <PDBo:has_entity>
@@ -7343,7 +7343,7 @@ VGFAEAA</PDBo:entity_poly.pdbx_seq_one_letter_code_can>
             <PDBo:entity_src_nat.pdbx_organism_scientific>Cynara cardunculus</PDBo:entity_src_nat.pdbx_organism_scientific>
             <PDBo:entity_src_nat.tissue>PAPILLAR EPIDERMIS OF THE STIGMA</PDBo:entity_src_nat.tissue>
             <PDBo:link_to_taxonomy_source rdf:resource="http://purl.uniprot.org/taxonomy/4265" rdfs:label="taxonomy:4265"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/taxonomy/4265" rdfs:label="taxonomy:4265"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/taxonomy:4265" rdfs:label="taxonomy:4265"/>
           </PDBo:entity_src_nat>
         </PDBo:has_entity_src_nat>
         <PDBo:has_entity_src_nat>
@@ -7364,7 +7364,7 @@ VGFAEAA</PDBo:entity_poly.pdbx_seq_one_letter_code_can>
             <PDBo:entity_src_nat.pdbx_organism_scientific>Cynara cardunculus</PDBo:entity_src_nat.pdbx_organism_scientific>
             <PDBo:entity_src_nat.tissue>PAPILLAR EPIDERMIS OF THE STIGMA</PDBo:entity_src_nat.tissue>
             <PDBo:link_to_taxonomy_source rdf:resource="http://purl.uniprot.org/taxonomy/4265" rdfs:label="taxonomy:4265"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/taxonomy/4265" rdfs:label="taxonomy:4265"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/taxonomy:4265" rdfs:label="taxonomy:4265"/>
           </PDBo:entity_src_nat>
         </PDBo:has_entity_src_nat>
       </PDBo:entity_src_natCategory>
@@ -9137,7 +9137,7 @@ VGFAEAA</PDBo:entity_poly.pdbx_seq_one_letter_code_can>
             <PDBo:pdbx_entity_branch_descriptor.program_version>1.1.0</PDBo:pdbx_entity_branch_descriptor.program_version>
             <PDBo:pdbx_entity_branch_descriptor.type>WURCS</PDBo:pdbx_entity_branch_descriptor.type>
             <PDBo:link_to_glycoinfo rdf:resource="http://rdf.glycoinfo.org/glycan/G17689EW" rdfs:label="glytoucan:G17689EW"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/glytoucan/G17689EW" rdfs:label="glytoucan:G17689EW"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/glytoucan:G17689EW" rdfs:label="glytoucan:G17689EW"/>
           </PDBo:pdbx_entity_branch_descriptor>
         </PDBo:has_pdbx_entity_branch_descriptor>
         <PDBo:has_pdbx_entity_branch_descriptor>
@@ -9186,7 +9186,7 @@ VGFAEAA</PDBo:entity_poly.pdbx_seq_one_letter_code_can>
             <PDBo:pdbx_entity_branch_descriptor.program_version>1.1.0</PDBo:pdbx_entity_branch_descriptor.program_version>
             <PDBo:pdbx_entity_branch_descriptor.type>WURCS</PDBo:pdbx_entity_branch_descriptor.type>
             <PDBo:link_to_glycoinfo rdf:resource="http://rdf.glycoinfo.org/glycan/G18638YB" rdfs:label="glytoucan:G18638YB"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/glytoucan/G18638YB" rdfs:label="glytoucan:G18638YB"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/glytoucan:G18638YB" rdfs:label="glytoucan:G18638YB"/>
           </PDBo:pdbx_entity_branch_descriptor>
         </PDBo:has_pdbx_entity_branch_descriptor>
         <PDBo:has_pdbx_entity_branch_descriptor>
@@ -9235,7 +9235,7 @@ VGFAEAA</PDBo:entity_poly.pdbx_seq_one_letter_code_can>
             <PDBo:pdbx_entity_branch_descriptor.program_version>1.1.0</PDBo:pdbx_entity_branch_descriptor.program_version>
             <PDBo:pdbx_entity_branch_descriptor.type>WURCS</PDBo:pdbx_entity_branch_descriptor.type>
             <PDBo:link_to_glycoinfo rdf:resource="http://rdf.glycoinfo.org/glycan/G43648DB" rdfs:label="glytoucan:G43648DB"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/glytoucan/G43648DB" rdfs:label="glytoucan:G43648DB"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/glytoucan:G43648DB" rdfs:label="glytoucan:G43648DB"/>
           </PDBo:pdbx_entity_branch_descriptor>
         </PDBo:has_pdbx_entity_branch_descriptor>
         <PDBo:has_pdbx_entity_branch_descriptor>
@@ -9284,7 +9284,7 @@ VGFAEAA</PDBo:entity_poly.pdbx_seq_one_letter_code_can>
             <PDBo:pdbx_entity_branch_descriptor.program_version>1.1.0</PDBo:pdbx_entity_branch_descriptor.program_version>
             <PDBo:pdbx_entity_branch_descriptor.type>WURCS</PDBo:pdbx_entity_branch_descriptor.type>
             <PDBo:link_to_glycoinfo rdf:resource="http://rdf.glycoinfo.org/glycan/G73622RM" rdfs:label="glytoucan:G73622RM"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/glytoucan/G73622RM" rdfs:label="glytoucan:G73622RM"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/glytoucan:G73622RM" rdfs:label="glytoucan:G73622RM"/>
           </PDBo:pdbx_entity_branch_descriptor>
         </PDBo:has_pdbx_entity_branch_descriptor>
         <PDBo:has_pdbx_entity_branch_descriptor>
@@ -37565,7 +37565,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
             <PDBo:struct_ref.entity_id>1</PDBo:struct_ref.entity_id>
             <PDBo:struct_ref.pdbx_db_accession>CAB4134</PDBo:struct_ref.pdbx_db_accession>
             <PDBo:link_to_embl rdf:resource="https://www.ncbi.nlm.nih.gov/nuccore/AJ132884" rdfs:label="ncbiprotein:AJ132884"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/ncbiprotein/AJ132884" rdfs:label="ncbiprotein:AJ132884"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/ncbiprotein:AJ132884" rdfs:label="ncbiprotein:AJ132884"/>
           </PDBo:struct_ref>
         </PDBo:has_struct_ref>
         <PDBo:has_struct_ref>
@@ -37582,7 +37582,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
             <PDBo:struct_ref.entity_id>2</PDBo:struct_ref.entity_id>
             <PDBo:struct_ref.pdbx_db_accession>CAB4134</PDBo:struct_ref.pdbx_db_accession>
             <PDBo:link_to_embl rdf:resource="https://www.ncbi.nlm.nih.gov/nuccore/AJ132884" rdfs:label="ncbiprotein:AJ132884"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/ncbiprotein/AJ132884" rdfs:label="ncbiprotein:AJ132884"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/ncbiprotein:AJ132884" rdfs:label="ncbiprotein:AJ132884"/>
           </PDBo:struct_ref>
         </PDBo:has_struct_ref>
       </PDBo:struct_refCategory>
@@ -39456,7 +39456,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
             <PDBo:pdbx_sifts_unp_segments.segment_id>1</PDBo:pdbx_sifts_unp_segments.segment_id>
             <PDBo:pdbx_sifts_unp_segments.instance_id>1</PDBo:pdbx_sifts_unp_segments.instance_id>
             <PDBo:link_to_uniprot rdf:resource="http://purl.uniprot.org/uniprot/Q9XFX3" rdfs:label="uniprot:Q9XFX3"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/Q9XFX3" rdfs:label="uniprot:Q9XFX3"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot:Q9XFX3" rdfs:label="uniprot:Q9XFX3"/>
             <PDBo:pdbx_sifts_unp_segments.unp_start>71</PDBo:pdbx_sifts_unp_segments.unp_start>
             <PDBo:pdbx_sifts_unp_segments.unp_end>309</PDBo:pdbx_sifts_unp_segments.unp_end>
             <PDBo:pdbx_sifts_unp_segments.seq_id_start>1</PDBo:pdbx_sifts_unp_segments.seq_id_start>
@@ -39479,7 +39479,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
             <PDBo:pdbx_sifts_unp_segments.segment_id>1</PDBo:pdbx_sifts_unp_segments.segment_id>
             <PDBo:pdbx_sifts_unp_segments.instance_id>1</PDBo:pdbx_sifts_unp_segments.instance_id>
             <PDBo:link_to_uniprot rdf:resource="http://purl.uniprot.org/uniprot/Q9XFX3" rdfs:label="uniprot:Q9XFX3"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/Q9XFX3" rdfs:label="uniprot:Q9XFX3"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot:Q9XFX3" rdfs:label="uniprot:Q9XFX3"/>
             <PDBo:pdbx_sifts_unp_segments.unp_start>418</PDBo:pdbx_sifts_unp_segments.unp_start>
             <PDBo:pdbx_sifts_unp_segments.unp_end>504</PDBo:pdbx_sifts_unp_segments.unp_end>
             <PDBo:pdbx_sifts_unp_segments.seq_id_start>1</PDBo:pdbx_sifts_unp_segments.seq_id_start>
@@ -39502,7 +39502,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
             <PDBo:pdbx_sifts_unp_segments.segment_id>1</PDBo:pdbx_sifts_unp_segments.segment_id>
             <PDBo:pdbx_sifts_unp_segments.instance_id>1</PDBo:pdbx_sifts_unp_segments.instance_id>
             <PDBo:link_to_uniprot rdf:resource="http://purl.uniprot.org/uniprot/Q9XFX3" rdfs:label="uniprot:Q9XFX3"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/Q9XFX3" rdfs:label="uniprot:Q9XFX3"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot:Q9XFX3" rdfs:label="uniprot:Q9XFX3"/>
             <PDBo:pdbx_sifts_unp_segments.unp_start>71</PDBo:pdbx_sifts_unp_segments.unp_start>
             <PDBo:pdbx_sifts_unp_segments.unp_end>309</PDBo:pdbx_sifts_unp_segments.unp_end>
             <PDBo:pdbx_sifts_unp_segments.seq_id_start>1</PDBo:pdbx_sifts_unp_segments.seq_id_start>
@@ -39525,7 +39525,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
             <PDBo:pdbx_sifts_unp_segments.segment_id>1</PDBo:pdbx_sifts_unp_segments.segment_id>
             <PDBo:pdbx_sifts_unp_segments.instance_id>1</PDBo:pdbx_sifts_unp_segments.instance_id>
             <PDBo:link_to_uniprot rdf:resource="http://purl.uniprot.org/uniprot/Q9XFX3" rdfs:label="uniprot:Q9XFX3"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/Q9XFX3" rdfs:label="uniprot:Q9XFX3"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot:Q9XFX3" rdfs:label="uniprot:Q9XFX3"/>
             <PDBo:pdbx_sifts_unp_segments.unp_start>418</PDBo:pdbx_sifts_unp_segments.unp_start>
             <PDBo:pdbx_sifts_unp_segments.unp_end>504</PDBo:pdbx_sifts_unp_segments.unp_end>
             <PDBo:pdbx_sifts_unp_segments.seq_id_start>1</PDBo:pdbx_sifts_unp_segments.seq_id_start>
@@ -39633,7 +39633,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
             <PDBo:pdbx_sifts_xref_db_segments.segment_id>1</PDBo:pdbx_sifts_xref_db_segments.segment_id>
             <PDBo:pdbx_sifts_xref_db_segments.instance_id>5</PDBo:pdbx_sifts_xref_db_segments.instance_id>
             <PDBo:link_to_interpro rdf:resource="https://www.ebi.ac.uk/interpro/entry/IPR021109" rdfs:label="interpro:IPR021109"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/interpro/IPR021109" rdfs:label="interpro:IPR021109"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/interpro:IPR021109" rdfs:label="interpro:IPR021109"/>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start>1</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end>169</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
           </PDBo:pdbx_sifts_xref_db_segments>
@@ -39653,7 +39653,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
             <PDBo:pdbx_sifts_xref_db_segments.segment_id>1</PDBo:pdbx_sifts_xref_db_segments.segment_id>
             <PDBo:pdbx_sifts_xref_db_segments.instance_id>6</PDBo:pdbx_sifts_xref_db_segments.instance_id>
             <PDBo:link_to_interpro rdf:resource="https://www.ebi.ac.uk/interpro/entry/IPR021109" rdfs:label="interpro:IPR021109"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/interpro/IPR021109" rdfs:label="interpro:IPR021109"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/interpro:IPR021109" rdfs:label="interpro:IPR021109"/>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start>170</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end>238</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
           </PDBo:pdbx_sifts_xref_db_segments>
@@ -39673,7 +39673,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
             <PDBo:pdbx_sifts_xref_db_segments.segment_id>1</PDBo:pdbx_sifts_xref_db_segments.segment_id>
             <PDBo:pdbx_sifts_xref_db_segments.instance_id>7</PDBo:pdbx_sifts_xref_db_segments.instance_id>
             <PDBo:link_to_interpro rdf:resource="https://www.ebi.ac.uk/interpro/entry/IPR033121" rdfs:label="interpro:IPR033121"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/interpro/IPR033121" rdfs:label="interpro:IPR033121"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/interpro:IPR033121" rdfs:label="interpro:IPR033121"/>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start>14</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end>238</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
           </PDBo:pdbx_sifts_xref_db_segments>
@@ -39693,7 +39693,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
             <PDBo:pdbx_sifts_xref_db_segments.segment_id>1</PDBo:pdbx_sifts_xref_db_segments.segment_id>
             <PDBo:pdbx_sifts_xref_db_segments.instance_id>8</PDBo:pdbx_sifts_xref_db_segments.instance_id>
             <PDBo:link_to_interpro rdf:resource="https://www.ebi.ac.uk/interpro/entry/IPR001461" rdfs:label="interpro:IPR001461"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/interpro/IPR001461" rdfs:label="interpro:IPR001461"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/interpro:IPR001461" rdfs:label="interpro:IPR001461"/>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start>21</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end>41</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
           </PDBo:pdbx_sifts_xref_db_segments>
@@ -39713,7 +39713,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
             <PDBo:pdbx_sifts_xref_db_segments.segment_id>1</PDBo:pdbx_sifts_xref_db_segments.segment_id>
             <PDBo:pdbx_sifts_xref_db_segments.instance_id>9</PDBo:pdbx_sifts_xref_db_segments.instance_id>
             <PDBo:link_to_interpro rdf:resource="https://www.ebi.ac.uk/interpro/entry/IPR001461" rdfs:label="interpro:IPR001461"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/interpro/IPR001461" rdfs:label="interpro:IPR001461"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/interpro:IPR001461" rdfs:label="interpro:IPR001461"/>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start>9</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end>237</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
           </PDBo:pdbx_sifts_xref_db_segments>
@@ -39733,7 +39733,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
             <PDBo:pdbx_sifts_xref_db_segments.segment_id>1</PDBo:pdbx_sifts_xref_db_segments.segment_id>
             <PDBo:pdbx_sifts_xref_db_segments.instance_id>10</PDBo:pdbx_sifts_xref_db_segments.instance_id>
             <PDBo:link_to_interpro rdf:resource="https://www.ebi.ac.uk/interpro/entry/IPR021109" rdfs:label="interpro:IPR021109"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/interpro/IPR021109" rdfs:label="interpro:IPR021109"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/interpro:IPR021109" rdfs:label="interpro:IPR021109"/>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start>3</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end>238</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
           </PDBo:pdbx_sifts_xref_db_segments>
@@ -39753,7 +39753,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
             <PDBo:pdbx_sifts_xref_db_segments.segment_id>1</PDBo:pdbx_sifts_xref_db_segments.segment_id>
             <PDBo:pdbx_sifts_xref_db_segments.instance_id>11</PDBo:pdbx_sifts_xref_db_segments.instance_id>
             <PDBo:link_to_interpro rdf:resource="https://www.ebi.ac.uk/interpro/entry/IPR001461" rdfs:label="interpro:IPR001461"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/interpro/IPR001461" rdfs:label="interpro:IPR001461"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/interpro:IPR001461" rdfs:label="interpro:IPR001461"/>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start>213</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end>224</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
           </PDBo:pdbx_sifts_xref_db_segments>
@@ -39773,7 +39773,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
             <PDBo:pdbx_sifts_xref_db_segments.segment_id>1</PDBo:pdbx_sifts_xref_db_segments.segment_id>
             <PDBo:pdbx_sifts_xref_db_segments.instance_id>12</PDBo:pdbx_sifts_xref_db_segments.instance_id>
             <PDBo:link_to_interpro rdf:resource="https://www.ebi.ac.uk/interpro/entry/IPR001461" rdfs:label="interpro:IPR001461"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/interpro/IPR001461" rdfs:label="interpro:IPR001461"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/interpro:IPR001461" rdfs:label="interpro:IPR001461"/>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start>163</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end>176</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
           </PDBo:pdbx_sifts_xref_db_segments>
@@ -39793,7 +39793,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
             <PDBo:pdbx_sifts_xref_db_segments.segment_id>1</PDBo:pdbx_sifts_xref_db_segments.segment_id>
             <PDBo:pdbx_sifts_xref_db_segments.instance_id>13</PDBo:pdbx_sifts_xref_db_segments.instance_id>
             <PDBo:link_to_cath rdf:resource="http://www.cathdb.info/cathnode/2.40.70.10" rdfs:label="cath:2.40.70.10"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/cath/2.40.70.10" rdfs:label="cath:2.40.70.10"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/cath:2.40.70.10" rdfs:label="cath:2.40.70.10"/>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start>1</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end>239</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
           </PDBo:pdbx_sifts_xref_db_segments>
@@ -39813,7 +39813,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
             <PDBo:pdbx_sifts_xref_db_segments.segment_id>1</PDBo:pdbx_sifts_xref_db_segments.segment_id>
             <PDBo:pdbx_sifts_xref_db_segments.instance_id>14</PDBo:pdbx_sifts_xref_db_segments.instance_id>
             <PDBo:link_to_scop rdf:resource="http://scop.berkeley.edu/sunid=26836" rdfs:label="scop:26836"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/scop/26836" rdfs:label="scop:26836"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/scop:26836" rdfs:label="scop:26836"/>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start>1</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end>239</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
           </PDBo:pdbx_sifts_xref_db_segments>
@@ -39873,7 +39873,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
             <PDBo:pdbx_sifts_xref_db_segments.segment_id>1</PDBo:pdbx_sifts_xref_db_segments.segment_id>
             <PDBo:pdbx_sifts_xref_db_segments.instance_id>3</PDBo:pdbx_sifts_xref_db_segments.instance_id>
             <PDBo:link_to_interpro rdf:resource="https://www.ebi.ac.uk/interpro/entry/IPR033121" rdfs:label="interpro:IPR033121"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/interpro/IPR033121" rdfs:label="interpro:IPR033121"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/interpro:IPR033121" rdfs:label="interpro:IPR033121"/>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start>2</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end>86</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
           </PDBo:pdbx_sifts_xref_db_segments>
@@ -39893,7 +39893,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
             <PDBo:pdbx_sifts_xref_db_segments.segment_id>1</PDBo:pdbx_sifts_xref_db_segments.segment_id>
             <PDBo:pdbx_sifts_xref_db_segments.instance_id>4</PDBo:pdbx_sifts_xref_db_segments.instance_id>
             <PDBo:link_to_interpro rdf:resource="https://www.ebi.ac.uk/interpro/entry/IPR021109" rdfs:label="interpro:IPR021109"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/interpro/IPR021109" rdfs:label="interpro:IPR021109"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/interpro:IPR021109" rdfs:label="interpro:IPR021109"/>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start>3</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end>86</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
           </PDBo:pdbx_sifts_xref_db_segments>
@@ -39913,7 +39913,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
             <PDBo:pdbx_sifts_xref_db_segments.segment_id>1</PDBo:pdbx_sifts_xref_db_segments.segment_id>
             <PDBo:pdbx_sifts_xref_db_segments.instance_id>5</PDBo:pdbx_sifts_xref_db_segments.instance_id>
             <PDBo:link_to_interpro rdf:resource="https://www.ebi.ac.uk/interpro/entry/IPR021109" rdfs:label="interpro:IPR021109"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/interpro/IPR021109" rdfs:label="interpro:IPR021109"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/interpro:IPR021109" rdfs:label="interpro:IPR021109"/>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start>2</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end>87</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
           </PDBo:pdbx_sifts_xref_db_segments>
@@ -39933,7 +39933,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
             <PDBo:pdbx_sifts_xref_db_segments.segment_id>1</PDBo:pdbx_sifts_xref_db_segments.segment_id>
             <PDBo:pdbx_sifts_xref_db_segments.instance_id>6</PDBo:pdbx_sifts_xref_db_segments.instance_id>
             <PDBo:link_to_interpro rdf:resource="https://www.ebi.ac.uk/interpro/entry/IPR001461" rdfs:label="interpro:IPR001461"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/interpro/IPR001461" rdfs:label="interpro:IPR001461"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/interpro:IPR001461" rdfs:label="interpro:IPR001461"/>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start>2</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end>84</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
           </PDBo:pdbx_sifts_xref_db_segments>
@@ -39953,7 +39953,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
             <PDBo:pdbx_sifts_xref_db_segments.segment_id>1</PDBo:pdbx_sifts_xref_db_segments.segment_id>
             <PDBo:pdbx_sifts_xref_db_segments.instance_id>7</PDBo:pdbx_sifts_xref_db_segments.instance_id>
             <PDBo:link_to_cath rdf:resource="http://www.cathdb.info/cathnode/2.40.70.10" rdfs:label="cath:2.40.70.10"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/cath/2.40.70.10" rdfs:label="cath:2.40.70.10"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/cath:2.40.70.10" rdfs:label="cath:2.40.70.10"/>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start>1</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end>87</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
           </PDBo:pdbx_sifts_xref_db_segments>
@@ -39973,7 +39973,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
             <PDBo:pdbx_sifts_xref_db_segments.segment_id>1</PDBo:pdbx_sifts_xref_db_segments.segment_id>
             <PDBo:pdbx_sifts_xref_db_segments.instance_id>8</PDBo:pdbx_sifts_xref_db_segments.instance_id>
             <PDBo:link_to_scop rdf:resource="http://scop.berkeley.edu/sunid=26836" rdfs:label="scop:26836"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/scop/26836" rdfs:label="scop:26836"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/scop:26836" rdfs:label="scop:26836"/>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start>1</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end>87</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
           </PDBo:pdbx_sifts_xref_db_segments>
@@ -40073,7 +40073,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
             <PDBo:pdbx_sifts_xref_db_segments.segment_id>1</PDBo:pdbx_sifts_xref_db_segments.segment_id>
             <PDBo:pdbx_sifts_xref_db_segments.instance_id>5</PDBo:pdbx_sifts_xref_db_segments.instance_id>
             <PDBo:link_to_interpro rdf:resource="https://www.ebi.ac.uk/interpro/entry/IPR021109" rdfs:label="interpro:IPR021109"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/interpro/IPR021109" rdfs:label="interpro:IPR021109"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/interpro:IPR021109" rdfs:label="interpro:IPR021109"/>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start>170</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end>238</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
           </PDBo:pdbx_sifts_xref_db_segments>
@@ -40093,7 +40093,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
             <PDBo:pdbx_sifts_xref_db_segments.segment_id>1</PDBo:pdbx_sifts_xref_db_segments.segment_id>
             <PDBo:pdbx_sifts_xref_db_segments.instance_id>6</PDBo:pdbx_sifts_xref_db_segments.instance_id>
             <PDBo:link_to_interpro rdf:resource="https://www.ebi.ac.uk/interpro/entry/IPR001461" rdfs:label="interpro:IPR001461"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/interpro/IPR001461" rdfs:label="interpro:IPR001461"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/interpro:IPR001461" rdfs:label="interpro:IPR001461"/>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start>213</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end>224</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
           </PDBo:pdbx_sifts_xref_db_segments>
@@ -40113,7 +40113,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
             <PDBo:pdbx_sifts_xref_db_segments.segment_id>1</PDBo:pdbx_sifts_xref_db_segments.segment_id>
             <PDBo:pdbx_sifts_xref_db_segments.instance_id>7</PDBo:pdbx_sifts_xref_db_segments.instance_id>
             <PDBo:link_to_interpro rdf:resource="https://www.ebi.ac.uk/interpro/entry/IPR021109" rdfs:label="interpro:IPR021109"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/interpro/IPR021109" rdfs:label="interpro:IPR021109"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/interpro:IPR021109" rdfs:label="interpro:IPR021109"/>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start>1</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end>169</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
           </PDBo:pdbx_sifts_xref_db_segments>
@@ -40133,7 +40133,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
             <PDBo:pdbx_sifts_xref_db_segments.segment_id>1</PDBo:pdbx_sifts_xref_db_segments.segment_id>
             <PDBo:pdbx_sifts_xref_db_segments.instance_id>8</PDBo:pdbx_sifts_xref_db_segments.instance_id>
             <PDBo:link_to_interpro rdf:resource="https://www.ebi.ac.uk/interpro/entry/IPR001461" rdfs:label="interpro:IPR001461"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/interpro/IPR001461" rdfs:label="interpro:IPR001461"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/interpro:IPR001461" rdfs:label="interpro:IPR001461"/>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start>21</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end>41</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
           </PDBo:pdbx_sifts_xref_db_segments>
@@ -40153,7 +40153,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
             <PDBo:pdbx_sifts_xref_db_segments.segment_id>1</PDBo:pdbx_sifts_xref_db_segments.segment_id>
             <PDBo:pdbx_sifts_xref_db_segments.instance_id>9</PDBo:pdbx_sifts_xref_db_segments.instance_id>
             <PDBo:link_to_interpro rdf:resource="https://www.ebi.ac.uk/interpro/entry/IPR001461" rdfs:label="interpro:IPR001461"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/interpro/IPR001461" rdfs:label="interpro:IPR001461"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/interpro:IPR001461" rdfs:label="interpro:IPR001461"/>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start>163</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end>176</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
           </PDBo:pdbx_sifts_xref_db_segments>
@@ -40173,7 +40173,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
             <PDBo:pdbx_sifts_xref_db_segments.segment_id>1</PDBo:pdbx_sifts_xref_db_segments.segment_id>
             <PDBo:pdbx_sifts_xref_db_segments.instance_id>10</PDBo:pdbx_sifts_xref_db_segments.instance_id>
             <PDBo:link_to_interpro rdf:resource="https://www.ebi.ac.uk/interpro/entry/IPR021109" rdfs:label="interpro:IPR021109"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/interpro/IPR021109" rdfs:label="interpro:IPR021109"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/interpro:IPR021109" rdfs:label="interpro:IPR021109"/>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start>3</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end>238</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
           </PDBo:pdbx_sifts_xref_db_segments>
@@ -40193,7 +40193,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
             <PDBo:pdbx_sifts_xref_db_segments.segment_id>1</PDBo:pdbx_sifts_xref_db_segments.segment_id>
             <PDBo:pdbx_sifts_xref_db_segments.instance_id>11</PDBo:pdbx_sifts_xref_db_segments.instance_id>
             <PDBo:link_to_interpro rdf:resource="https://www.ebi.ac.uk/interpro/entry/IPR033121" rdfs:label="interpro:IPR033121"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/interpro/IPR033121" rdfs:label="interpro:IPR033121"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/interpro:IPR033121" rdfs:label="interpro:IPR033121"/>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start>14</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end>238</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
           </PDBo:pdbx_sifts_xref_db_segments>
@@ -40213,7 +40213,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
             <PDBo:pdbx_sifts_xref_db_segments.segment_id>1</PDBo:pdbx_sifts_xref_db_segments.segment_id>
             <PDBo:pdbx_sifts_xref_db_segments.instance_id>12</PDBo:pdbx_sifts_xref_db_segments.instance_id>
             <PDBo:link_to_interpro rdf:resource="https://www.ebi.ac.uk/interpro/entry/IPR001461" rdfs:label="interpro:IPR001461"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/interpro/IPR001461" rdfs:label="interpro:IPR001461"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/interpro:IPR001461" rdfs:label="interpro:IPR001461"/>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start>9</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end>237</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
           </PDBo:pdbx_sifts_xref_db_segments>
@@ -40233,7 +40233,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
             <PDBo:pdbx_sifts_xref_db_segments.segment_id>1</PDBo:pdbx_sifts_xref_db_segments.segment_id>
             <PDBo:pdbx_sifts_xref_db_segments.instance_id>13</PDBo:pdbx_sifts_xref_db_segments.instance_id>
             <PDBo:link_to_cath rdf:resource="http://www.cathdb.info/cathnode/2.40.70.10" rdfs:label="cath:2.40.70.10"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/cath/2.40.70.10" rdfs:label="cath:2.40.70.10"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/cath:2.40.70.10" rdfs:label="cath:2.40.70.10"/>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start>2</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end>239</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
           </PDBo:pdbx_sifts_xref_db_segments>
@@ -40253,7 +40253,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
             <PDBo:pdbx_sifts_xref_db_segments.segment_id>1</PDBo:pdbx_sifts_xref_db_segments.segment_id>
             <PDBo:pdbx_sifts_xref_db_segments.instance_id>14</PDBo:pdbx_sifts_xref_db_segments.instance_id>
             <PDBo:link_to_scop rdf:resource="http://scop.berkeley.edu/sunid=26837" rdfs:label="scop:26837"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/scop/26837" rdfs:label="scop:26837"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/scop:26837" rdfs:label="scop:26837"/>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start>1</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end>239</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
           </PDBo:pdbx_sifts_xref_db_segments>
@@ -40313,7 +40313,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
             <PDBo:pdbx_sifts_xref_db_segments.segment_id>1</PDBo:pdbx_sifts_xref_db_segments.segment_id>
             <PDBo:pdbx_sifts_xref_db_segments.instance_id>3</PDBo:pdbx_sifts_xref_db_segments.instance_id>
             <PDBo:link_to_interpro rdf:resource="https://www.ebi.ac.uk/interpro/entry/IPR033121" rdfs:label="interpro:IPR033121"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/interpro/IPR033121" rdfs:label="interpro:IPR033121"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/interpro:IPR033121" rdfs:label="interpro:IPR033121"/>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start>2</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end>86</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
           </PDBo:pdbx_sifts_xref_db_segments>
@@ -40333,7 +40333,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
             <PDBo:pdbx_sifts_xref_db_segments.segment_id>1</PDBo:pdbx_sifts_xref_db_segments.segment_id>
             <PDBo:pdbx_sifts_xref_db_segments.instance_id>4</PDBo:pdbx_sifts_xref_db_segments.instance_id>
             <PDBo:link_to_interpro rdf:resource="https://www.ebi.ac.uk/interpro/entry/IPR021109" rdfs:label="interpro:IPR021109"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/interpro/IPR021109" rdfs:label="interpro:IPR021109"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/interpro:IPR021109" rdfs:label="interpro:IPR021109"/>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start>2</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end>87</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
           </PDBo:pdbx_sifts_xref_db_segments>
@@ -40353,7 +40353,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
             <PDBo:pdbx_sifts_xref_db_segments.segment_id>1</PDBo:pdbx_sifts_xref_db_segments.segment_id>
             <PDBo:pdbx_sifts_xref_db_segments.instance_id>5</PDBo:pdbx_sifts_xref_db_segments.instance_id>
             <PDBo:link_to_interpro rdf:resource="https://www.ebi.ac.uk/interpro/entry/IPR001461" rdfs:label="interpro:IPR001461"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/interpro/IPR001461" rdfs:label="interpro:IPR001461"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/interpro:IPR001461" rdfs:label="interpro:IPR001461"/>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start>2</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end>84</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
           </PDBo:pdbx_sifts_xref_db_segments>
@@ -40373,7 +40373,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
             <PDBo:pdbx_sifts_xref_db_segments.segment_id>1</PDBo:pdbx_sifts_xref_db_segments.segment_id>
             <PDBo:pdbx_sifts_xref_db_segments.instance_id>6</PDBo:pdbx_sifts_xref_db_segments.instance_id>
             <PDBo:link_to_interpro rdf:resource="https://www.ebi.ac.uk/interpro/entry/IPR021109" rdfs:label="interpro:IPR021109"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/interpro/IPR021109" rdfs:label="interpro:IPR021109"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/interpro:IPR021109" rdfs:label="interpro:IPR021109"/>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start>3</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end>86</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
           </PDBo:pdbx_sifts_xref_db_segments>
@@ -40393,7 +40393,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
             <PDBo:pdbx_sifts_xref_db_segments.segment_id>1</PDBo:pdbx_sifts_xref_db_segments.segment_id>
             <PDBo:pdbx_sifts_xref_db_segments.instance_id>7</PDBo:pdbx_sifts_xref_db_segments.instance_id>
             <PDBo:link_to_cath rdf:resource="http://www.cathdb.info/cathnode/2.40.70.10" rdfs:label="cath:2.40.70.10"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/cath/2.40.70.10" rdfs:label="cath:2.40.70.10"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/cath:2.40.70.10" rdfs:label="cath:2.40.70.10"/>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start>1</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end>87</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
           </PDBo:pdbx_sifts_xref_db_segments>
@@ -40413,7 +40413,7 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
             <PDBo:pdbx_sifts_xref_db_segments.segment_id>1</PDBo:pdbx_sifts_xref_db_segments.segment_id>
             <PDBo:pdbx_sifts_xref_db_segments.instance_id>8</PDBo:pdbx_sifts_xref_db_segments.instance_id>
             <PDBo:link_to_scop rdf:resource="http://scop.berkeley.edu/sunid=26837" rdfs:label="scop:26837"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/scop/26837" rdfs:label="scop:26837"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/scop:26837" rdfs:label="scop:26837"/>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start>1</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end>87</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
           </PDBo:pdbx_sifts_xref_db_segments>

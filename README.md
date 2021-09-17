@@ -167,8 +167,9 @@ File path | Document
 
 ## Release notes
 
-- **Sep 15, 2021**: Release v4.2.0
-	- Integrate SIFT dataset.
+- **Sep 17, 2021**: Release v4.2.0
+	- Integration of SIFT dataset.
+	- Add EMDB, SASBDB RDF links from '_pdbx_database_related' category.
 
 - **Sep 13, 2021**: Release v4.1.1
 	- Update wwPDB Validation Information Dictionary to 4.350.
