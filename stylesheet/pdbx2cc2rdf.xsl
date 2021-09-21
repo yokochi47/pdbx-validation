@@ -17,7 +17,7 @@
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xmlns:PDBx="http://pdbml.pdb.org/schema/pdbx-v50.xsd"
-  xmlns:PDBo="https://rdf.wwpdb.org/schema/pdbx-v50.owl#"
+  xmlns:PDBo="http://rdf.wwpdb.org/schema/pdbx-v50.owl#"
   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
   xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -37,10 +37,10 @@
   &lt;xsl:strip-space elements="*"/&gt;
   &lt;xsl:variable name="PDBID"&gt;&lt;xsl:value-of select="/PDBx:datablock/@datablockName"/&gt;&lt;/xsl:variable&gt;
   &lt;xsl:variable name="pdbid"&gt;&lt;xsl:value-of select="translate($PDBID,'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz')"/&gt;&lt;/xsl:variable&gt;
-  &lt;xsl:variable name="base"&gt;https://rdf.wwpdb.org/cc/&lt;xsl:value-of select="$PDBID"/&gt;&lt;/xsl:variable&gt;
-  &lt;xsl:variable name="base_lower"&gt;https://rdf.wwpdb.org/cc/&lt;xsl:value-of select="$pdbid"/&gt;&lt;/xsl:variable&gt;
-  &lt;xsl:variable name="pdb_link"&gt;https://rdf.wwpdb.org/pdb/&lt;/xsl:variable&gt;
-  &lt;xsl:variable name="chem_comp"&gt;https://rdf.wwpdb.org/cc/&lt;/xsl:variable&gt;
+  &lt;xsl:variable name="base"&gt;http://rdf.wwpdb.org/cc/&lt;xsl:value-of select="$PDBID"/&gt;&lt;/xsl:variable&gt;
+  &lt;xsl:variable name="base_lower"&gt;http://rdf.wwpdb.org/cc/&lt;xsl:value-of select="$pdbid"/&gt;&lt;/xsl:variable&gt;
+  &lt;xsl:variable name="pdb_link"&gt;http://rdf.wwpdb.org/pdb/&lt;/xsl:variable&gt;
+  &lt;xsl:variable name="chem_comp"&gt;http://rdf.wwpdb.org/cc/&lt;/xsl:variable&gt;
   &lt;xsl:variable name="pdbj"&gt;https://pdbj.org/chemie/summary/&lt;/xsl:variable&gt;
   &lt;xsl:variable name="rcsb"&gt;https://www3.rcsb.org/ligand/&lt;/xsl:variable&gt;
   &lt;xsl:variable name="pdbe"&gt;https://www.ebi.ac.uk/pdbe-srv/pdbechem/chemicalCompound/show/&lt;/xsl:variable&gt;

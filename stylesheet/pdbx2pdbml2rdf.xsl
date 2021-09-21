@@ -17,7 +17,7 @@
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xmlns:PDBx="http://pdbml.pdb.org/schema/pdbx-v50.xsd"
-  xmlns:PDBo="https://rdf.wwpdb.org/schema/pdbx-v50.owl#"
+  xmlns:PDBo="http://rdf.wwpdb.org/schema/pdbx-v50.owl#"
   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
   xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -42,19 +42,19 @@
   &lt;xsl:variable name="PDBID"&gt;&lt;xsl:value-of select="/PDBx:datablock/PDBx:entryCategory/PDBx:entry/@id"/&gt;&lt;/xsl:variable&gt;
   &lt;xsl:variable name="pdbid"&gt;&lt;xsl:value-of select="translate($PDBID,'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz')"/&gt;&lt;/xsl:variable&gt;
   &lt;xsl:variable name="pdb_doi"&gt;&lt;xsl:value-of select="concat('10.2210/pdb',$pdbid,'/pdb')"/&gt;&lt;/xsl:variable&gt;
-  &lt;xsl:variable name="base"&gt;https://rdf.wwpdb.org/pdb/&lt;xsl:value-of select="$PDBID"/&gt;&lt;/xsl:variable&gt;
-  &lt;xsl:variable name="base_lower"&gt;https://rdf.wwpdb.org/pdb/&lt;xsl:value-of select="$pdbid"/&gt;&lt;/xsl:variable&gt;
-  &lt;xsl:variable name="vrpt_base"&gt;https://rdf.wwpdb.org/pdb-validation/&lt;xsl:value-of select="$PDBID"/&gt;&lt;/xsl:variable&gt;
-  &lt;xsl:variable name="pdb_link"&gt;https://rdf.wwpdb.org/pdb/&lt;/xsl:variable&gt;
-  &lt;xsl:variable name="chem_comp"&gt;https://rdf.wwpdb.org/cc/&lt;/xsl:variable&gt;
-  &lt;xsl:variable name="prd"&gt;https://rdf.wwpdb.org/prd/&lt;/xsl:variable&gt;
+  &lt;xsl:variable name="base"&gt;http://rdf.wwpdb.org/pdb/&lt;xsl:value-of select="$PDBID"/&gt;&lt;/xsl:variable&gt;
+  &lt;xsl:variable name="base_lower"&gt;http://rdf.wwpdb.org/pdb/&lt;xsl:value-of select="$pdbid"/&gt;&lt;/xsl:variable&gt;
+  &lt;xsl:variable name="vrpt_base"&gt;http://rdf.wwpdb.org/vrpt/&lt;xsl:value-of select="$PDBID"/&gt;&lt;/xsl:variable&gt;
+  &lt;xsl:variable name="pdb_link"&gt;http://rdf.wwpdb.org/pdb/&lt;/xsl:variable&gt;
+  &lt;xsl:variable name="chem_comp"&gt;http://rdf.wwpdb.org/cc/&lt;/xsl:variable&gt;
+  &lt;xsl:variable name="prd"&gt;http://rdf.wwpdb.org/prd/&lt;/xsl:variable&gt;
   &lt;xsl:variable name="pdbj"&gt;https://pdbj.org/pdb/&lt;/xsl:variable&gt;
   &lt;xsl:variable name="rcsb"&gt;https://www.rcsb.org/pdb/explore.do?structureId=&lt;/xsl:variable&gt;
   &lt;xsl:variable name="pdbe"&gt;https://www.ebi.ac.uk/pdbe/entry/pdb/&lt;/xsl:variable&gt;
   &lt;xsl:variable name="pdbml"&gt;ftp://ftp.wwpdb.org/pub/pdb/data/structures/all/XML/&lt;/xsl:variable&gt;
   &lt;xsl:variable name="pdbml_noatom"&gt;ftp://ftp.wwpdb.org/pub/pdb/data/structures/all/XML-noatom/&lt;/xsl:variable&gt;
   &lt;xsl:variable name="pdbml_extatom"&gt;ftp://ftp.wwpdb.org/pub/pdb/data/structures/all/XML-extatom/&lt;/xsl:variable&gt;
-  &lt;xsl:variable name="bmrb"&gt;https://bmrbpub.pdbj.org/rdf/bmr&lt;/xsl:variable&gt;
+  &lt;xsl:variable name="bmrb"&gt;http://bmrbpub.pdbj.org/rdf/bmr&lt;/xsl:variable&gt;
   &lt;xsl:variable name="emdb"&gt;https://www.ebi.ac.uk/emdb/&lt;/xsl:variable&gt;
   &lt;xsl:variable name="sasbdb"&gt;https://www.sasbdb.org/data/&lt;/xsl:variable&gt;
   &lt;xsl:variable name="idorg"&gt;http://identifiers.org/&lt;/xsl:variable&gt;

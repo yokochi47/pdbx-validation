@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:PDBx="http://pdbml.pdb.org/schema/pdbx-v50.xsd" xmlns:PDBo="https://rdf.wwpdb.org/schema/pdbx-v50.owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
-  <PDBo:datablock rdf:about="https://rdf.wwpdb.org/cc/ATP">
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:PDBx="http://pdbml.pdb.org/schema/pdbx-v50.xsd" xmlns:PDBo="http://rdf.wwpdb.org/schema/pdbx-v50.owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+  <PDBo:datablock rdf:about="http://rdf.wwpdb.org/cc/ATP">
     <dcterms:identifier>ATP</dcterms:identifier>
     <skos:altLabel>atp</skos:altLabel>
     <dc:title>ADENOSINE-5'-TRIPHOSPHATE</dc:title>
@@ -9,10 +9,10 @@
     <rdfs:seeAlso rdf:resource="https://www.ebi.ac.uk/pdbe-srv/pdbechem/chemicalCompound/show/ATP"/>
     <PDBo:datablockName>ATP</PDBo:datablockName>
     <PDBo:has_chem_compCategory>
-      <PDBo:chem_compCategory rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_compCategory">
+      <PDBo:chem_compCategory rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_compCategory">
         <PDBo:has_chem_comp>
-          <PDBo:chem_comp rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
-            <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/cc/ATP"/>
+          <PDBo:chem_comp rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/cc/ATP"/>
             <PDBo:chem_comp.id>ATP</PDBo:chem_comp.id>
             <PDBo:chem_comp.formula>C10 H16 N5 O13 P3</PDBo:chem_comp.formula>
             <PDBo:chem_comp.formula_weight>507.181</PDBo:chem_comp.formula_weight>
@@ -29,19 +29,19 @@
             <PDBo:chem_comp.pdbx_type>HETAIN</PDBo:chem_comp.pdbx_type>
             <PDBo:chem_comp.three_letter_code>ATP</PDBo:chem_comp.three_letter_code>
             <PDBo:chem_comp.type>non-polymer</PDBo:chem_comp.type>
-            <PDBo:link_to_pdb rdf:resource="https://rdf.wwpdb.org/pdb/1B0U"/>
+            <PDBo:link_to_pdb rdf:resource="http://rdf.wwpdb.org/pdb/1B0U"/>
           </PDBo:chem_comp>
         </PDBo:has_chem_comp>
       </PDBo:chem_compCategory>
     </PDBo:has_chem_compCategory>
     <PDBo:has_chem_comp_atomCategory>
-      <PDBo:chem_comp_atomCategory rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atomCategory">
+      <PDBo:chem_comp_atomCategory rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atomCategory">
         <PDBo:has_chem_comp_atom>
-          <PDBo:chem_comp_atom rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/PG,ATP">
-            <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/cc/ATP"/>
+          <PDBo:chem_comp_atom rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/PG,ATP">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/cc/ATP"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
-                <PDBo:referenced_by_chem_comp_atom rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/PG,ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
+                <PDBo:referenced_by_chem_comp_atom rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/PG,ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:chem_comp_atom.atom_id>PG</PDBo:chem_comp_atom.atom_id>
@@ -65,11 +65,11 @@
           </PDBo:chem_comp_atom>
         </PDBo:has_chem_comp_atom>
         <PDBo:has_chem_comp_atom>
-          <PDBo:chem_comp_atom rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/O1G,ATP">
-            <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/cc/ATP"/>
+          <PDBo:chem_comp_atom rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/O1G,ATP">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/cc/ATP"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
-                <PDBo:referenced_by_chem_comp_atom rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/O1G,ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
+                <PDBo:referenced_by_chem_comp_atom rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/O1G,ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:chem_comp_atom.atom_id>O1G</PDBo:chem_comp_atom.atom_id>
@@ -93,11 +93,11 @@
           </PDBo:chem_comp_atom>
         </PDBo:has_chem_comp_atom>
         <PDBo:has_chem_comp_atom>
-          <PDBo:chem_comp_atom rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/O2G,ATP">
-            <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/cc/ATP"/>
+          <PDBo:chem_comp_atom rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/O2G,ATP">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/cc/ATP"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
-                <PDBo:referenced_by_chem_comp_atom rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/O2G,ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
+                <PDBo:referenced_by_chem_comp_atom rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/O2G,ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:chem_comp_atom.atom_id>O2G</PDBo:chem_comp_atom.atom_id>
@@ -121,11 +121,11 @@
           </PDBo:chem_comp_atom>
         </PDBo:has_chem_comp_atom>
         <PDBo:has_chem_comp_atom>
-          <PDBo:chem_comp_atom rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/O3G,ATP">
-            <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/cc/ATP"/>
+          <PDBo:chem_comp_atom rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/O3G,ATP">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/cc/ATP"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
-                <PDBo:referenced_by_chem_comp_atom rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/O3G,ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
+                <PDBo:referenced_by_chem_comp_atom rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/O3G,ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:chem_comp_atom.atom_id>O3G</PDBo:chem_comp_atom.atom_id>
@@ -149,11 +149,11 @@
           </PDBo:chem_comp_atom>
         </PDBo:has_chem_comp_atom>
         <PDBo:has_chem_comp_atom>
-          <PDBo:chem_comp_atom rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/PB,ATP">
-            <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/cc/ATP"/>
+          <PDBo:chem_comp_atom rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/PB,ATP">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/cc/ATP"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
-                <PDBo:referenced_by_chem_comp_atom rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/PB,ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
+                <PDBo:referenced_by_chem_comp_atom rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/PB,ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:chem_comp_atom.atom_id>PB</PDBo:chem_comp_atom.atom_id>
@@ -177,11 +177,11 @@
           </PDBo:chem_comp_atom>
         </PDBo:has_chem_comp_atom>
         <PDBo:has_chem_comp_atom>
-          <PDBo:chem_comp_atom rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/O1B,ATP">
-            <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/cc/ATP"/>
+          <PDBo:chem_comp_atom rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/O1B,ATP">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/cc/ATP"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
-                <PDBo:referenced_by_chem_comp_atom rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/O1B,ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
+                <PDBo:referenced_by_chem_comp_atom rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/O1B,ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:chem_comp_atom.atom_id>O1B</PDBo:chem_comp_atom.atom_id>
@@ -205,11 +205,11 @@
           </PDBo:chem_comp_atom>
         </PDBo:has_chem_comp_atom>
         <PDBo:has_chem_comp_atom>
-          <PDBo:chem_comp_atom rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/O2B,ATP">
-            <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/cc/ATP"/>
+          <PDBo:chem_comp_atom rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/O2B,ATP">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/cc/ATP"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
-                <PDBo:referenced_by_chem_comp_atom rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/O2B,ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
+                <PDBo:referenced_by_chem_comp_atom rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/O2B,ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:chem_comp_atom.atom_id>O2B</PDBo:chem_comp_atom.atom_id>
@@ -233,11 +233,11 @@
           </PDBo:chem_comp_atom>
         </PDBo:has_chem_comp_atom>
         <PDBo:has_chem_comp_atom>
-          <PDBo:chem_comp_atom rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/O3B,ATP">
-            <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/cc/ATP"/>
+          <PDBo:chem_comp_atom rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/O3B,ATP">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/cc/ATP"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
-                <PDBo:referenced_by_chem_comp_atom rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/O3B,ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
+                <PDBo:referenced_by_chem_comp_atom rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/O3B,ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:chem_comp_atom.atom_id>O3B</PDBo:chem_comp_atom.atom_id>
@@ -261,11 +261,11 @@
           </PDBo:chem_comp_atom>
         </PDBo:has_chem_comp_atom>
         <PDBo:has_chem_comp_atom>
-          <PDBo:chem_comp_atom rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/PA,ATP">
-            <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/cc/ATP"/>
+          <PDBo:chem_comp_atom rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/PA,ATP">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/cc/ATP"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
-                <PDBo:referenced_by_chem_comp_atom rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/PA,ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
+                <PDBo:referenced_by_chem_comp_atom rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/PA,ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:chem_comp_atom.atom_id>PA</PDBo:chem_comp_atom.atom_id>
@@ -289,11 +289,11 @@
           </PDBo:chem_comp_atom>
         </PDBo:has_chem_comp_atom>
         <PDBo:has_chem_comp_atom>
-          <PDBo:chem_comp_atom rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/O1A,ATP">
-            <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/cc/ATP"/>
+          <PDBo:chem_comp_atom rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/O1A,ATP">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/cc/ATP"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
-                <PDBo:referenced_by_chem_comp_atom rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/O1A,ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
+                <PDBo:referenced_by_chem_comp_atom rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/O1A,ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:chem_comp_atom.atom_id>O1A</PDBo:chem_comp_atom.atom_id>
@@ -317,11 +317,11 @@
           </PDBo:chem_comp_atom>
         </PDBo:has_chem_comp_atom>
         <PDBo:has_chem_comp_atom>
-          <PDBo:chem_comp_atom rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/O2A,ATP">
-            <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/cc/ATP"/>
+          <PDBo:chem_comp_atom rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/O2A,ATP">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/cc/ATP"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
-                <PDBo:referenced_by_chem_comp_atom rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/O2A,ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
+                <PDBo:referenced_by_chem_comp_atom rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/O2A,ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:chem_comp_atom.atom_id>O2A</PDBo:chem_comp_atom.atom_id>
@@ -345,11 +345,11 @@
           </PDBo:chem_comp_atom>
         </PDBo:has_chem_comp_atom>
         <PDBo:has_chem_comp_atom>
-          <PDBo:chem_comp_atom rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/O3A,ATP">
-            <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/cc/ATP"/>
+          <PDBo:chem_comp_atom rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/O3A,ATP">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/cc/ATP"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
-                <PDBo:referenced_by_chem_comp_atom rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/O3A,ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
+                <PDBo:referenced_by_chem_comp_atom rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/O3A,ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:chem_comp_atom.atom_id>O3A</PDBo:chem_comp_atom.atom_id>
@@ -373,11 +373,11 @@
           </PDBo:chem_comp_atom>
         </PDBo:has_chem_comp_atom>
         <PDBo:has_chem_comp_atom>
-          <PDBo:chem_comp_atom rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/O5',ATP">
-            <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/cc/ATP"/>
+          <PDBo:chem_comp_atom rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/O5',ATP">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/cc/ATP"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
-                <PDBo:referenced_by_chem_comp_atom rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/O5',ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
+                <PDBo:referenced_by_chem_comp_atom rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/O5',ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:chem_comp_atom.atom_id>O5'</PDBo:chem_comp_atom.atom_id>
@@ -401,11 +401,11 @@
           </PDBo:chem_comp_atom>
         </PDBo:has_chem_comp_atom>
         <PDBo:has_chem_comp_atom>
-          <PDBo:chem_comp_atom rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/C5',ATP">
-            <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/cc/ATP"/>
+          <PDBo:chem_comp_atom rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/C5',ATP">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/cc/ATP"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
-                <PDBo:referenced_by_chem_comp_atom rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/C5',ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
+                <PDBo:referenced_by_chem_comp_atom rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/C5',ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:chem_comp_atom.atom_id>C5'</PDBo:chem_comp_atom.atom_id>
@@ -429,11 +429,11 @@
           </PDBo:chem_comp_atom>
         </PDBo:has_chem_comp_atom>
         <PDBo:has_chem_comp_atom>
-          <PDBo:chem_comp_atom rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/C4',ATP">
-            <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/cc/ATP"/>
+          <PDBo:chem_comp_atom rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/C4',ATP">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/cc/ATP"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
-                <PDBo:referenced_by_chem_comp_atom rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/C4',ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
+                <PDBo:referenced_by_chem_comp_atom rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/C4',ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:chem_comp_atom.atom_id>C4'</PDBo:chem_comp_atom.atom_id>
@@ -457,11 +457,11 @@
           </PDBo:chem_comp_atom>
         </PDBo:has_chem_comp_atom>
         <PDBo:has_chem_comp_atom>
-          <PDBo:chem_comp_atom rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/O4',ATP">
-            <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/cc/ATP"/>
+          <PDBo:chem_comp_atom rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/O4',ATP">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/cc/ATP"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
-                <PDBo:referenced_by_chem_comp_atom rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/O4',ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
+                <PDBo:referenced_by_chem_comp_atom rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/O4',ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:chem_comp_atom.atom_id>O4'</PDBo:chem_comp_atom.atom_id>
@@ -485,11 +485,11 @@
           </PDBo:chem_comp_atom>
         </PDBo:has_chem_comp_atom>
         <PDBo:has_chem_comp_atom>
-          <PDBo:chem_comp_atom rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/C3',ATP">
-            <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/cc/ATP"/>
+          <PDBo:chem_comp_atom rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/C3',ATP">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/cc/ATP"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
-                <PDBo:referenced_by_chem_comp_atom rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/C3',ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
+                <PDBo:referenced_by_chem_comp_atom rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/C3',ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:chem_comp_atom.atom_id>C3'</PDBo:chem_comp_atom.atom_id>
@@ -513,11 +513,11 @@
           </PDBo:chem_comp_atom>
         </PDBo:has_chem_comp_atom>
         <PDBo:has_chem_comp_atom>
-          <PDBo:chem_comp_atom rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/O3',ATP">
-            <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/cc/ATP"/>
+          <PDBo:chem_comp_atom rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/O3',ATP">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/cc/ATP"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
-                <PDBo:referenced_by_chem_comp_atom rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/O3',ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
+                <PDBo:referenced_by_chem_comp_atom rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/O3',ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:chem_comp_atom.atom_id>O3'</PDBo:chem_comp_atom.atom_id>
@@ -541,11 +541,11 @@
           </PDBo:chem_comp_atom>
         </PDBo:has_chem_comp_atom>
         <PDBo:has_chem_comp_atom>
-          <PDBo:chem_comp_atom rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/C2',ATP">
-            <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/cc/ATP"/>
+          <PDBo:chem_comp_atom rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/C2',ATP">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/cc/ATP"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
-                <PDBo:referenced_by_chem_comp_atom rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/C2',ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
+                <PDBo:referenced_by_chem_comp_atom rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/C2',ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:chem_comp_atom.atom_id>C2'</PDBo:chem_comp_atom.atom_id>
@@ -569,11 +569,11 @@
           </PDBo:chem_comp_atom>
         </PDBo:has_chem_comp_atom>
         <PDBo:has_chem_comp_atom>
-          <PDBo:chem_comp_atom rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/O2',ATP">
-            <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/cc/ATP"/>
+          <PDBo:chem_comp_atom rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/O2',ATP">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/cc/ATP"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
-                <PDBo:referenced_by_chem_comp_atom rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/O2',ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
+                <PDBo:referenced_by_chem_comp_atom rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/O2',ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:chem_comp_atom.atom_id>O2'</PDBo:chem_comp_atom.atom_id>
@@ -597,11 +597,11 @@
           </PDBo:chem_comp_atom>
         </PDBo:has_chem_comp_atom>
         <PDBo:has_chem_comp_atom>
-          <PDBo:chem_comp_atom rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/C1',ATP">
-            <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/cc/ATP"/>
+          <PDBo:chem_comp_atom rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/C1',ATP">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/cc/ATP"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
-                <PDBo:referenced_by_chem_comp_atom rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/C1',ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
+                <PDBo:referenced_by_chem_comp_atom rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/C1',ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:chem_comp_atom.atom_id>C1'</PDBo:chem_comp_atom.atom_id>
@@ -625,11 +625,11 @@
           </PDBo:chem_comp_atom>
         </PDBo:has_chem_comp_atom>
         <PDBo:has_chem_comp_atom>
-          <PDBo:chem_comp_atom rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/N9,ATP">
-            <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/cc/ATP"/>
+          <PDBo:chem_comp_atom rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/N9,ATP">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/cc/ATP"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
-                <PDBo:referenced_by_chem_comp_atom rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/N9,ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
+                <PDBo:referenced_by_chem_comp_atom rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/N9,ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:chem_comp_atom.atom_id>N9</PDBo:chem_comp_atom.atom_id>
@@ -653,11 +653,11 @@
           </PDBo:chem_comp_atom>
         </PDBo:has_chem_comp_atom>
         <PDBo:has_chem_comp_atom>
-          <PDBo:chem_comp_atom rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/C8,ATP">
-            <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/cc/ATP"/>
+          <PDBo:chem_comp_atom rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/C8,ATP">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/cc/ATP"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
-                <PDBo:referenced_by_chem_comp_atom rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/C8,ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
+                <PDBo:referenced_by_chem_comp_atom rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/C8,ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:chem_comp_atom.atom_id>C8</PDBo:chem_comp_atom.atom_id>
@@ -681,11 +681,11 @@
           </PDBo:chem_comp_atom>
         </PDBo:has_chem_comp_atom>
         <PDBo:has_chem_comp_atom>
-          <PDBo:chem_comp_atom rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/N7,ATP">
-            <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/cc/ATP"/>
+          <PDBo:chem_comp_atom rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/N7,ATP">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/cc/ATP"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
-                <PDBo:referenced_by_chem_comp_atom rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/N7,ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
+                <PDBo:referenced_by_chem_comp_atom rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/N7,ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:chem_comp_atom.atom_id>N7</PDBo:chem_comp_atom.atom_id>
@@ -709,11 +709,11 @@
           </PDBo:chem_comp_atom>
         </PDBo:has_chem_comp_atom>
         <PDBo:has_chem_comp_atom>
-          <PDBo:chem_comp_atom rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/C5,ATP">
-            <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/cc/ATP"/>
+          <PDBo:chem_comp_atom rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/C5,ATP">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/cc/ATP"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
-                <PDBo:referenced_by_chem_comp_atom rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/C5,ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
+                <PDBo:referenced_by_chem_comp_atom rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/C5,ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:chem_comp_atom.atom_id>C5</PDBo:chem_comp_atom.atom_id>
@@ -737,11 +737,11 @@
           </PDBo:chem_comp_atom>
         </PDBo:has_chem_comp_atom>
         <PDBo:has_chem_comp_atom>
-          <PDBo:chem_comp_atom rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/C6,ATP">
-            <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/cc/ATP"/>
+          <PDBo:chem_comp_atom rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/C6,ATP">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/cc/ATP"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
-                <PDBo:referenced_by_chem_comp_atom rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/C6,ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
+                <PDBo:referenced_by_chem_comp_atom rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/C6,ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:chem_comp_atom.atom_id>C6</PDBo:chem_comp_atom.atom_id>
@@ -765,11 +765,11 @@
           </PDBo:chem_comp_atom>
         </PDBo:has_chem_comp_atom>
         <PDBo:has_chem_comp_atom>
-          <PDBo:chem_comp_atom rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/N6,ATP">
-            <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/cc/ATP"/>
+          <PDBo:chem_comp_atom rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/N6,ATP">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/cc/ATP"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
-                <PDBo:referenced_by_chem_comp_atom rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/N6,ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
+                <PDBo:referenced_by_chem_comp_atom rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/N6,ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:chem_comp_atom.atom_id>N6</PDBo:chem_comp_atom.atom_id>
@@ -793,11 +793,11 @@
           </PDBo:chem_comp_atom>
         </PDBo:has_chem_comp_atom>
         <PDBo:has_chem_comp_atom>
-          <PDBo:chem_comp_atom rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/N1,ATP">
-            <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/cc/ATP"/>
+          <PDBo:chem_comp_atom rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/N1,ATP">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/cc/ATP"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
-                <PDBo:referenced_by_chem_comp_atom rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/N1,ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
+                <PDBo:referenced_by_chem_comp_atom rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/N1,ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:chem_comp_atom.atom_id>N1</PDBo:chem_comp_atom.atom_id>
@@ -821,11 +821,11 @@
           </PDBo:chem_comp_atom>
         </PDBo:has_chem_comp_atom>
         <PDBo:has_chem_comp_atom>
-          <PDBo:chem_comp_atom rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/C2,ATP">
-            <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/cc/ATP"/>
+          <PDBo:chem_comp_atom rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/C2,ATP">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/cc/ATP"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
-                <PDBo:referenced_by_chem_comp_atom rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/C2,ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
+                <PDBo:referenced_by_chem_comp_atom rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/C2,ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:chem_comp_atom.atom_id>C2</PDBo:chem_comp_atom.atom_id>
@@ -849,11 +849,11 @@
           </PDBo:chem_comp_atom>
         </PDBo:has_chem_comp_atom>
         <PDBo:has_chem_comp_atom>
-          <PDBo:chem_comp_atom rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/N3,ATP">
-            <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/cc/ATP"/>
+          <PDBo:chem_comp_atom rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/N3,ATP">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/cc/ATP"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
-                <PDBo:referenced_by_chem_comp_atom rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/N3,ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
+                <PDBo:referenced_by_chem_comp_atom rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/N3,ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:chem_comp_atom.atom_id>N3</PDBo:chem_comp_atom.atom_id>
@@ -877,11 +877,11 @@
           </PDBo:chem_comp_atom>
         </PDBo:has_chem_comp_atom>
         <PDBo:has_chem_comp_atom>
-          <PDBo:chem_comp_atom rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/C4,ATP">
-            <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/cc/ATP"/>
+          <PDBo:chem_comp_atom rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/C4,ATP">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/cc/ATP"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
-                <PDBo:referenced_by_chem_comp_atom rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/C4,ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
+                <PDBo:referenced_by_chem_comp_atom rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/C4,ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:chem_comp_atom.atom_id>C4</PDBo:chem_comp_atom.atom_id>
@@ -905,11 +905,11 @@
           </PDBo:chem_comp_atom>
         </PDBo:has_chem_comp_atom>
         <PDBo:has_chem_comp_atom>
-          <PDBo:chem_comp_atom rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/HOG2,ATP">
-            <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/cc/ATP"/>
+          <PDBo:chem_comp_atom rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/HOG2,ATP">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/cc/ATP"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
-                <PDBo:referenced_by_chem_comp_atom rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/HOG2,ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
+                <PDBo:referenced_by_chem_comp_atom rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/HOG2,ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:chem_comp_atom.atom_id>HOG2</PDBo:chem_comp_atom.atom_id>
@@ -933,11 +933,11 @@
           </PDBo:chem_comp_atom>
         </PDBo:has_chem_comp_atom>
         <PDBo:has_chem_comp_atom>
-          <PDBo:chem_comp_atom rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/HOG3,ATP">
-            <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/cc/ATP"/>
+          <PDBo:chem_comp_atom rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/HOG3,ATP">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/cc/ATP"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
-                <PDBo:referenced_by_chem_comp_atom rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/HOG3,ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
+                <PDBo:referenced_by_chem_comp_atom rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/HOG3,ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:chem_comp_atom.atom_id>HOG3</PDBo:chem_comp_atom.atom_id>
@@ -961,11 +961,11 @@
           </PDBo:chem_comp_atom>
         </PDBo:has_chem_comp_atom>
         <PDBo:has_chem_comp_atom>
-          <PDBo:chem_comp_atom rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/HOB2,ATP">
-            <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/cc/ATP"/>
+          <PDBo:chem_comp_atom rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/HOB2,ATP">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/cc/ATP"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
-                <PDBo:referenced_by_chem_comp_atom rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/HOB2,ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
+                <PDBo:referenced_by_chem_comp_atom rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/HOB2,ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:chem_comp_atom.atom_id>HOB2</PDBo:chem_comp_atom.atom_id>
@@ -989,11 +989,11 @@
           </PDBo:chem_comp_atom>
         </PDBo:has_chem_comp_atom>
         <PDBo:has_chem_comp_atom>
-          <PDBo:chem_comp_atom rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/HOA2,ATP">
-            <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/cc/ATP"/>
+          <PDBo:chem_comp_atom rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/HOA2,ATP">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/cc/ATP"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
-                <PDBo:referenced_by_chem_comp_atom rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/HOA2,ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
+                <PDBo:referenced_by_chem_comp_atom rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/HOA2,ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:chem_comp_atom.atom_id>HOA2</PDBo:chem_comp_atom.atom_id>
@@ -1017,11 +1017,11 @@
           </PDBo:chem_comp_atom>
         </PDBo:has_chem_comp_atom>
         <PDBo:has_chem_comp_atom>
-          <PDBo:chem_comp_atom rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/H5'1,ATP">
-            <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/cc/ATP"/>
+          <PDBo:chem_comp_atom rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/H5'1,ATP">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/cc/ATP"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
-                <PDBo:referenced_by_chem_comp_atom rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/H5'1,ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
+                <PDBo:referenced_by_chem_comp_atom rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/H5'1,ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:chem_comp_atom.atom_id>H5'1</PDBo:chem_comp_atom.atom_id>
@@ -1045,11 +1045,11 @@
           </PDBo:chem_comp_atom>
         </PDBo:has_chem_comp_atom>
         <PDBo:has_chem_comp_atom>
-          <PDBo:chem_comp_atom rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/H5'2,ATP">
-            <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/cc/ATP"/>
+          <PDBo:chem_comp_atom rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/H5'2,ATP">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/cc/ATP"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
-                <PDBo:referenced_by_chem_comp_atom rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/H5'2,ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
+                <PDBo:referenced_by_chem_comp_atom rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/H5'2,ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:chem_comp_atom.atom_id>H5'2</PDBo:chem_comp_atom.atom_id>
@@ -1073,11 +1073,11 @@
           </PDBo:chem_comp_atom>
         </PDBo:has_chem_comp_atom>
         <PDBo:has_chem_comp_atom>
-          <PDBo:chem_comp_atom rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/H4',ATP">
-            <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/cc/ATP"/>
+          <PDBo:chem_comp_atom rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/H4',ATP">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/cc/ATP"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
-                <PDBo:referenced_by_chem_comp_atom rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/H4',ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
+                <PDBo:referenced_by_chem_comp_atom rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/H4',ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:chem_comp_atom.atom_id>H4'</PDBo:chem_comp_atom.atom_id>
@@ -1101,11 +1101,11 @@
           </PDBo:chem_comp_atom>
         </PDBo:has_chem_comp_atom>
         <PDBo:has_chem_comp_atom>
-          <PDBo:chem_comp_atom rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/H3',ATP">
-            <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/cc/ATP"/>
+          <PDBo:chem_comp_atom rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/H3',ATP">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/cc/ATP"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
-                <PDBo:referenced_by_chem_comp_atom rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/H3',ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
+                <PDBo:referenced_by_chem_comp_atom rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/H3',ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:chem_comp_atom.atom_id>H3'</PDBo:chem_comp_atom.atom_id>
@@ -1129,11 +1129,11 @@
           </PDBo:chem_comp_atom>
         </PDBo:has_chem_comp_atom>
         <PDBo:has_chem_comp_atom>
-          <PDBo:chem_comp_atom rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/HO3',ATP">
-            <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/cc/ATP"/>
+          <PDBo:chem_comp_atom rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/HO3',ATP">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/cc/ATP"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
-                <PDBo:referenced_by_chem_comp_atom rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/HO3',ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
+                <PDBo:referenced_by_chem_comp_atom rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/HO3',ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:chem_comp_atom.atom_id>HO3'</PDBo:chem_comp_atom.atom_id>
@@ -1157,11 +1157,11 @@
           </PDBo:chem_comp_atom>
         </PDBo:has_chem_comp_atom>
         <PDBo:has_chem_comp_atom>
-          <PDBo:chem_comp_atom rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/H2',ATP">
-            <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/cc/ATP"/>
+          <PDBo:chem_comp_atom rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/H2',ATP">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/cc/ATP"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
-                <PDBo:referenced_by_chem_comp_atom rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/H2',ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
+                <PDBo:referenced_by_chem_comp_atom rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/H2',ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:chem_comp_atom.atom_id>H2'</PDBo:chem_comp_atom.atom_id>
@@ -1185,11 +1185,11 @@
           </PDBo:chem_comp_atom>
         </PDBo:has_chem_comp_atom>
         <PDBo:has_chem_comp_atom>
-          <PDBo:chem_comp_atom rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/HO2',ATP">
-            <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/cc/ATP"/>
+          <PDBo:chem_comp_atom rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/HO2',ATP">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/cc/ATP"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
-                <PDBo:referenced_by_chem_comp_atom rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/HO2',ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
+                <PDBo:referenced_by_chem_comp_atom rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/HO2',ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:chem_comp_atom.atom_id>HO2'</PDBo:chem_comp_atom.atom_id>
@@ -1213,11 +1213,11 @@
           </PDBo:chem_comp_atom>
         </PDBo:has_chem_comp_atom>
         <PDBo:has_chem_comp_atom>
-          <PDBo:chem_comp_atom rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/H1',ATP">
-            <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/cc/ATP"/>
+          <PDBo:chem_comp_atom rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/H1',ATP">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/cc/ATP"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
-                <PDBo:referenced_by_chem_comp_atom rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/H1',ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
+                <PDBo:referenced_by_chem_comp_atom rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/H1',ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:chem_comp_atom.atom_id>H1'</PDBo:chem_comp_atom.atom_id>
@@ -1241,11 +1241,11 @@
           </PDBo:chem_comp_atom>
         </PDBo:has_chem_comp_atom>
         <PDBo:has_chem_comp_atom>
-          <PDBo:chem_comp_atom rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/H8,ATP">
-            <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/cc/ATP"/>
+          <PDBo:chem_comp_atom rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/H8,ATP">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/cc/ATP"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
-                <PDBo:referenced_by_chem_comp_atom rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/H8,ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
+                <PDBo:referenced_by_chem_comp_atom rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/H8,ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:chem_comp_atom.atom_id>H8</PDBo:chem_comp_atom.atom_id>
@@ -1269,11 +1269,11 @@
           </PDBo:chem_comp_atom>
         </PDBo:has_chem_comp_atom>
         <PDBo:has_chem_comp_atom>
-          <PDBo:chem_comp_atom rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/HN61,ATP">
-            <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/cc/ATP"/>
+          <PDBo:chem_comp_atom rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/HN61,ATP">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/cc/ATP"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
-                <PDBo:referenced_by_chem_comp_atom rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/HN61,ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
+                <PDBo:referenced_by_chem_comp_atom rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/HN61,ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:chem_comp_atom.atom_id>HN61</PDBo:chem_comp_atom.atom_id>
@@ -1297,11 +1297,11 @@
           </PDBo:chem_comp_atom>
         </PDBo:has_chem_comp_atom>
         <PDBo:has_chem_comp_atom>
-          <PDBo:chem_comp_atom rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/HN62,ATP">
-            <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/cc/ATP"/>
+          <PDBo:chem_comp_atom rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/HN62,ATP">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/cc/ATP"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
-                <PDBo:referenced_by_chem_comp_atom rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/HN62,ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
+                <PDBo:referenced_by_chem_comp_atom rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/HN62,ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:chem_comp_atom.atom_id>HN62</PDBo:chem_comp_atom.atom_id>
@@ -1325,11 +1325,11 @@
           </PDBo:chem_comp_atom>
         </PDBo:has_chem_comp_atom>
         <PDBo:has_chem_comp_atom>
-          <PDBo:chem_comp_atom rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/H2,ATP">
-            <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/cc/ATP"/>
+          <PDBo:chem_comp_atom rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/H2,ATP">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/cc/ATP"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
-                <PDBo:referenced_by_chem_comp_atom rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/H2,ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
+                <PDBo:referenced_by_chem_comp_atom rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/H2,ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:chem_comp_atom.atom_id>H2</PDBo:chem_comp_atom.atom_id>
@@ -1355,23 +1355,23 @@
       </PDBo:chem_comp_atomCategory>
     </PDBo:has_chem_comp_atomCategory>
     <PDBo:has_chem_comp_bondCategory>
-      <PDBo:chem_comp_bondCategory rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_bondCategory">
+      <PDBo:chem_comp_bondCategory rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_bondCategory">
         <PDBo:has_chem_comp_bond>
-          <PDBo:chem_comp_bond rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/PG,O1G,ATP">
-            <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/cc/ATP"/>
+          <PDBo:chem_comp_bond rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/PG,O1G,ATP">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/cc/ATP"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/PG,O1G,ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/PG,O1G,ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:reference_to_chem_comp_atom>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/PG,ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/PG,O1G,ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/PG,ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/PG,O1G,ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp_atom>
             <PDBo:reference_to_chem_comp_atom>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/O1G,ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/PG,O1G,ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/O1G,ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/PG,O1G,ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp_atom>
             <PDBo:chem_comp_bond.atom_id_1>PG</PDBo:chem_comp_bond.atom_id_1>
@@ -1384,21 +1384,21 @@
           </PDBo:chem_comp_bond>
         </PDBo:has_chem_comp_bond>
         <PDBo:has_chem_comp_bond>
-          <PDBo:chem_comp_bond rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/PG,O2G,ATP">
-            <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/cc/ATP"/>
+          <PDBo:chem_comp_bond rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/PG,O2G,ATP">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/cc/ATP"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/PG,O2G,ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/PG,O2G,ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:reference_to_chem_comp_atom>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/PG,ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/PG,O2G,ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/PG,ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/PG,O2G,ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp_atom>
             <PDBo:reference_to_chem_comp_atom>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/O2G,ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/PG,O2G,ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/O2G,ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/PG,O2G,ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp_atom>
             <PDBo:chem_comp_bond.atom_id_1>PG</PDBo:chem_comp_bond.atom_id_1>
@@ -1411,21 +1411,21 @@
           </PDBo:chem_comp_bond>
         </PDBo:has_chem_comp_bond>
         <PDBo:has_chem_comp_bond>
-          <PDBo:chem_comp_bond rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/PG,O3G,ATP">
-            <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/cc/ATP"/>
+          <PDBo:chem_comp_bond rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/PG,O3G,ATP">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/cc/ATP"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/PG,O3G,ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/PG,O3G,ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:reference_to_chem_comp_atom>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/PG,ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/PG,O3G,ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/PG,ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/PG,O3G,ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp_atom>
             <PDBo:reference_to_chem_comp_atom>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/O3G,ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/PG,O3G,ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/O3G,ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/PG,O3G,ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp_atom>
             <PDBo:chem_comp_bond.atom_id_1>PG</PDBo:chem_comp_bond.atom_id_1>
@@ -1438,21 +1438,21 @@
           </PDBo:chem_comp_bond>
         </PDBo:has_chem_comp_bond>
         <PDBo:has_chem_comp_bond>
-          <PDBo:chem_comp_bond rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/PG,O3B,ATP">
-            <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/cc/ATP"/>
+          <PDBo:chem_comp_bond rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/PG,O3B,ATP">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/cc/ATP"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/PG,O3B,ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/PG,O3B,ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:reference_to_chem_comp_atom>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/PG,ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/PG,O3B,ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/PG,ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/PG,O3B,ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp_atom>
             <PDBo:reference_to_chem_comp_atom>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/O3B,ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/PG,O3B,ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/O3B,ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/PG,O3B,ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp_atom>
             <PDBo:chem_comp_bond.atom_id_1>PG</PDBo:chem_comp_bond.atom_id_1>
@@ -1465,21 +1465,21 @@
           </PDBo:chem_comp_bond>
         </PDBo:has_chem_comp_bond>
         <PDBo:has_chem_comp_bond>
-          <PDBo:chem_comp_bond rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/O2G,HOG2,ATP">
-            <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/cc/ATP"/>
+          <PDBo:chem_comp_bond rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/O2G,HOG2,ATP">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/cc/ATP"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/O2G,HOG2,ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/O2G,HOG2,ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:reference_to_chem_comp_atom>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/O2G,ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/O2G,HOG2,ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/O2G,ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/O2G,HOG2,ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp_atom>
             <PDBo:reference_to_chem_comp_atom>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/HOG2,ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/O2G,HOG2,ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/HOG2,ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/O2G,HOG2,ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp_atom>
             <PDBo:chem_comp_bond.atom_id_1>O2G</PDBo:chem_comp_bond.atom_id_1>
@@ -1492,21 +1492,21 @@
           </PDBo:chem_comp_bond>
         </PDBo:has_chem_comp_bond>
         <PDBo:has_chem_comp_bond>
-          <PDBo:chem_comp_bond rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/O3G,HOG3,ATP">
-            <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/cc/ATP"/>
+          <PDBo:chem_comp_bond rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/O3G,HOG3,ATP">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/cc/ATP"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/O3G,HOG3,ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/O3G,HOG3,ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:reference_to_chem_comp_atom>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/O3G,ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/O3G,HOG3,ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/O3G,ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/O3G,HOG3,ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp_atom>
             <PDBo:reference_to_chem_comp_atom>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/HOG3,ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/O3G,HOG3,ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/HOG3,ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/O3G,HOG3,ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp_atom>
             <PDBo:chem_comp_bond.atom_id_1>O3G</PDBo:chem_comp_bond.atom_id_1>
@@ -1519,21 +1519,21 @@
           </PDBo:chem_comp_bond>
         </PDBo:has_chem_comp_bond>
         <PDBo:has_chem_comp_bond>
-          <PDBo:chem_comp_bond rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/PB,O1B,ATP">
-            <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/cc/ATP"/>
+          <PDBo:chem_comp_bond rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/PB,O1B,ATP">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/cc/ATP"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/PB,O1B,ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/PB,O1B,ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:reference_to_chem_comp_atom>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/PB,ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/PB,O1B,ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/PB,ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/PB,O1B,ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp_atom>
             <PDBo:reference_to_chem_comp_atom>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/O1B,ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/PB,O1B,ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/O1B,ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/PB,O1B,ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp_atom>
             <PDBo:chem_comp_bond.atom_id_1>PB</PDBo:chem_comp_bond.atom_id_1>
@@ -1546,21 +1546,21 @@
           </PDBo:chem_comp_bond>
         </PDBo:has_chem_comp_bond>
         <PDBo:has_chem_comp_bond>
-          <PDBo:chem_comp_bond rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/PB,O2B,ATP">
-            <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/cc/ATP"/>
+          <PDBo:chem_comp_bond rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/PB,O2B,ATP">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/cc/ATP"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/PB,O2B,ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/PB,O2B,ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:reference_to_chem_comp_atom>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/PB,ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/PB,O2B,ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/PB,ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/PB,O2B,ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp_atom>
             <PDBo:reference_to_chem_comp_atom>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/O2B,ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/PB,O2B,ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/O2B,ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/PB,O2B,ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp_atom>
             <PDBo:chem_comp_bond.atom_id_1>PB</PDBo:chem_comp_bond.atom_id_1>
@@ -1573,21 +1573,21 @@
           </PDBo:chem_comp_bond>
         </PDBo:has_chem_comp_bond>
         <PDBo:has_chem_comp_bond>
-          <PDBo:chem_comp_bond rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/PB,O3B,ATP">
-            <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/cc/ATP"/>
+          <PDBo:chem_comp_bond rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/PB,O3B,ATP">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/cc/ATP"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/PB,O3B,ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/PB,O3B,ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:reference_to_chem_comp_atom>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/PB,ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/PB,O3B,ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/PB,ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/PB,O3B,ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp_atom>
             <PDBo:reference_to_chem_comp_atom>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/O3B,ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/PB,O3B,ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/O3B,ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/PB,O3B,ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp_atom>
             <PDBo:chem_comp_bond.atom_id_1>PB</PDBo:chem_comp_bond.atom_id_1>
@@ -1600,21 +1600,21 @@
           </PDBo:chem_comp_bond>
         </PDBo:has_chem_comp_bond>
         <PDBo:has_chem_comp_bond>
-          <PDBo:chem_comp_bond rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/PB,O3A,ATP">
-            <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/cc/ATP"/>
+          <PDBo:chem_comp_bond rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/PB,O3A,ATP">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/cc/ATP"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/PB,O3A,ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/PB,O3A,ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:reference_to_chem_comp_atom>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/PB,ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/PB,O3A,ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/PB,ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/PB,O3A,ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp_atom>
             <PDBo:reference_to_chem_comp_atom>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/O3A,ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/PB,O3A,ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/O3A,ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/PB,O3A,ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp_atom>
             <PDBo:chem_comp_bond.atom_id_1>PB</PDBo:chem_comp_bond.atom_id_1>
@@ -1627,21 +1627,21 @@
           </PDBo:chem_comp_bond>
         </PDBo:has_chem_comp_bond>
         <PDBo:has_chem_comp_bond>
-          <PDBo:chem_comp_bond rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/O2B,HOB2,ATP">
-            <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/cc/ATP"/>
+          <PDBo:chem_comp_bond rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/O2B,HOB2,ATP">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/cc/ATP"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/O2B,HOB2,ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/O2B,HOB2,ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:reference_to_chem_comp_atom>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/O2B,ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/O2B,HOB2,ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/O2B,ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/O2B,HOB2,ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp_atom>
             <PDBo:reference_to_chem_comp_atom>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/HOB2,ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/O2B,HOB2,ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/HOB2,ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/O2B,HOB2,ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp_atom>
             <PDBo:chem_comp_bond.atom_id_1>O2B</PDBo:chem_comp_bond.atom_id_1>
@@ -1654,21 +1654,21 @@
           </PDBo:chem_comp_bond>
         </PDBo:has_chem_comp_bond>
         <PDBo:has_chem_comp_bond>
-          <PDBo:chem_comp_bond rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/PA,O1A,ATP">
-            <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/cc/ATP"/>
+          <PDBo:chem_comp_bond rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/PA,O1A,ATP">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/cc/ATP"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/PA,O1A,ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/PA,O1A,ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:reference_to_chem_comp_atom>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/PA,ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/PA,O1A,ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/PA,ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/PA,O1A,ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp_atom>
             <PDBo:reference_to_chem_comp_atom>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/O1A,ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/PA,O1A,ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/O1A,ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/PA,O1A,ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp_atom>
             <PDBo:chem_comp_bond.atom_id_1>PA</PDBo:chem_comp_bond.atom_id_1>
@@ -1681,21 +1681,21 @@
           </PDBo:chem_comp_bond>
         </PDBo:has_chem_comp_bond>
         <PDBo:has_chem_comp_bond>
-          <PDBo:chem_comp_bond rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/PA,O2A,ATP">
-            <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/cc/ATP"/>
+          <PDBo:chem_comp_bond rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/PA,O2A,ATP">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/cc/ATP"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/PA,O2A,ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/PA,O2A,ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:reference_to_chem_comp_atom>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/PA,ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/PA,O2A,ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/PA,ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/PA,O2A,ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp_atom>
             <PDBo:reference_to_chem_comp_atom>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/O2A,ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/PA,O2A,ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/O2A,ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/PA,O2A,ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp_atom>
             <PDBo:chem_comp_bond.atom_id_1>PA</PDBo:chem_comp_bond.atom_id_1>
@@ -1708,21 +1708,21 @@
           </PDBo:chem_comp_bond>
         </PDBo:has_chem_comp_bond>
         <PDBo:has_chem_comp_bond>
-          <PDBo:chem_comp_bond rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/PA,O3A,ATP">
-            <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/cc/ATP"/>
+          <PDBo:chem_comp_bond rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/PA,O3A,ATP">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/cc/ATP"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/PA,O3A,ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/PA,O3A,ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:reference_to_chem_comp_atom>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/PA,ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/PA,O3A,ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/PA,ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/PA,O3A,ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp_atom>
             <PDBo:reference_to_chem_comp_atom>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/O3A,ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/PA,O3A,ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/O3A,ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/PA,O3A,ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp_atom>
             <PDBo:chem_comp_bond.atom_id_1>PA</PDBo:chem_comp_bond.atom_id_1>
@@ -1735,21 +1735,21 @@
           </PDBo:chem_comp_bond>
         </PDBo:has_chem_comp_bond>
         <PDBo:has_chem_comp_bond>
-          <PDBo:chem_comp_bond rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/PA,O5',ATP">
-            <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/cc/ATP"/>
+          <PDBo:chem_comp_bond rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/PA,O5',ATP">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/cc/ATP"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/PA,O5',ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/PA,O5',ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:reference_to_chem_comp_atom>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/PA,ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/PA,O5',ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/PA,ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/PA,O5',ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp_atom>
             <PDBo:reference_to_chem_comp_atom>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/O5',ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/PA,O5',ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/O5',ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/PA,O5',ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp_atom>
             <PDBo:chem_comp_bond.atom_id_1>PA</PDBo:chem_comp_bond.atom_id_1>
@@ -1762,21 +1762,21 @@
           </PDBo:chem_comp_bond>
         </PDBo:has_chem_comp_bond>
         <PDBo:has_chem_comp_bond>
-          <PDBo:chem_comp_bond rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/O2A,HOA2,ATP">
-            <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/cc/ATP"/>
+          <PDBo:chem_comp_bond rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/O2A,HOA2,ATP">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/cc/ATP"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/O2A,HOA2,ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/O2A,HOA2,ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:reference_to_chem_comp_atom>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/O2A,ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/O2A,HOA2,ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/O2A,ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/O2A,HOA2,ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp_atom>
             <PDBo:reference_to_chem_comp_atom>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/HOA2,ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/O2A,HOA2,ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/HOA2,ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/O2A,HOA2,ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp_atom>
             <PDBo:chem_comp_bond.atom_id_1>O2A</PDBo:chem_comp_bond.atom_id_1>
@@ -1789,21 +1789,21 @@
           </PDBo:chem_comp_bond>
         </PDBo:has_chem_comp_bond>
         <PDBo:has_chem_comp_bond>
-          <PDBo:chem_comp_bond rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/O5',C5',ATP">
-            <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/cc/ATP"/>
+          <PDBo:chem_comp_bond rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/O5',C5',ATP">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/cc/ATP"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/O5',C5',ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/O5',C5',ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:reference_to_chem_comp_atom>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/O5',ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/O5',C5',ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/O5',ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/O5',C5',ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp_atom>
             <PDBo:reference_to_chem_comp_atom>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/C5',ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/O5',C5',ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/C5',ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/O5',C5',ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp_atom>
             <PDBo:chem_comp_bond.atom_id_1>O5'</PDBo:chem_comp_bond.atom_id_1>
@@ -1816,21 +1816,21 @@
           </PDBo:chem_comp_bond>
         </PDBo:has_chem_comp_bond>
         <PDBo:has_chem_comp_bond>
-          <PDBo:chem_comp_bond rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C5',C4',ATP">
-            <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/cc/ATP"/>
+          <PDBo:chem_comp_bond rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C5',C4',ATP">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/cc/ATP"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C5',C4',ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C5',C4',ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:reference_to_chem_comp_atom>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/C5',ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C5',C4',ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/C5',ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C5',C4',ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp_atom>
             <PDBo:reference_to_chem_comp_atom>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/C4',ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C5',C4',ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/C4',ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C5',C4',ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp_atom>
             <PDBo:chem_comp_bond.atom_id_1>C5'</PDBo:chem_comp_bond.atom_id_1>
@@ -1843,21 +1843,21 @@
           </PDBo:chem_comp_bond>
         </PDBo:has_chem_comp_bond>
         <PDBo:has_chem_comp_bond>
-          <PDBo:chem_comp_bond rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C5',H5'1,ATP">
-            <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/cc/ATP"/>
+          <PDBo:chem_comp_bond rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C5',H5'1,ATP">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/cc/ATP"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C5',H5'1,ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C5',H5'1,ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:reference_to_chem_comp_atom>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/C5',ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C5',H5'1,ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/C5',ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C5',H5'1,ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp_atom>
             <PDBo:reference_to_chem_comp_atom>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/H5'1,ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C5',H5'1,ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/H5'1,ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C5',H5'1,ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp_atom>
             <PDBo:chem_comp_bond.atom_id_1>C5'</PDBo:chem_comp_bond.atom_id_1>
@@ -1870,21 +1870,21 @@
           </PDBo:chem_comp_bond>
         </PDBo:has_chem_comp_bond>
         <PDBo:has_chem_comp_bond>
-          <PDBo:chem_comp_bond rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C5',H5'2,ATP">
-            <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/cc/ATP"/>
+          <PDBo:chem_comp_bond rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C5',H5'2,ATP">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/cc/ATP"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C5',H5'2,ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C5',H5'2,ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:reference_to_chem_comp_atom>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/C5',ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C5',H5'2,ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/C5',ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C5',H5'2,ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp_atom>
             <PDBo:reference_to_chem_comp_atom>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/H5'2,ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C5',H5'2,ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/H5'2,ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C5',H5'2,ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp_atom>
             <PDBo:chem_comp_bond.atom_id_1>C5'</PDBo:chem_comp_bond.atom_id_1>
@@ -1897,21 +1897,21 @@
           </PDBo:chem_comp_bond>
         </PDBo:has_chem_comp_bond>
         <PDBo:has_chem_comp_bond>
-          <PDBo:chem_comp_bond rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C4',O4',ATP">
-            <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/cc/ATP"/>
+          <PDBo:chem_comp_bond rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C4',O4',ATP">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/cc/ATP"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C4',O4',ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C4',O4',ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:reference_to_chem_comp_atom>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/C4',ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C4',O4',ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/C4',ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C4',O4',ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp_atom>
             <PDBo:reference_to_chem_comp_atom>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/O4',ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C4',O4',ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/O4',ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C4',O4',ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp_atom>
             <PDBo:chem_comp_bond.atom_id_1>C4'</PDBo:chem_comp_bond.atom_id_1>
@@ -1924,21 +1924,21 @@
           </PDBo:chem_comp_bond>
         </PDBo:has_chem_comp_bond>
         <PDBo:has_chem_comp_bond>
-          <PDBo:chem_comp_bond rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C4',C3',ATP">
-            <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/cc/ATP"/>
+          <PDBo:chem_comp_bond rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C4',C3',ATP">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/cc/ATP"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C4',C3',ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C4',C3',ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:reference_to_chem_comp_atom>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/C4',ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C4',C3',ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/C4',ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C4',C3',ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp_atom>
             <PDBo:reference_to_chem_comp_atom>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/C3',ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C4',C3',ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/C3',ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C4',C3',ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp_atom>
             <PDBo:chem_comp_bond.atom_id_1>C4'</PDBo:chem_comp_bond.atom_id_1>
@@ -1951,21 +1951,21 @@
           </PDBo:chem_comp_bond>
         </PDBo:has_chem_comp_bond>
         <PDBo:has_chem_comp_bond>
-          <PDBo:chem_comp_bond rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C4',H4',ATP">
-            <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/cc/ATP"/>
+          <PDBo:chem_comp_bond rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C4',H4',ATP">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/cc/ATP"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C4',H4',ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C4',H4',ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:reference_to_chem_comp_atom>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/C4',ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C4',H4',ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/C4',ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C4',H4',ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp_atom>
             <PDBo:reference_to_chem_comp_atom>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/H4',ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C4',H4',ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/H4',ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C4',H4',ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp_atom>
             <PDBo:chem_comp_bond.atom_id_1>C4'</PDBo:chem_comp_bond.atom_id_1>
@@ -1978,21 +1978,21 @@
           </PDBo:chem_comp_bond>
         </PDBo:has_chem_comp_bond>
         <PDBo:has_chem_comp_bond>
-          <PDBo:chem_comp_bond rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/O4',C1',ATP">
-            <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/cc/ATP"/>
+          <PDBo:chem_comp_bond rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/O4',C1',ATP">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/cc/ATP"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/O4',C1',ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/O4',C1',ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:reference_to_chem_comp_atom>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/O4',ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/O4',C1',ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/O4',ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/O4',C1',ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp_atom>
             <PDBo:reference_to_chem_comp_atom>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/C1',ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/O4',C1',ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/C1',ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/O4',C1',ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp_atom>
             <PDBo:chem_comp_bond.atom_id_1>O4'</PDBo:chem_comp_bond.atom_id_1>
@@ -2005,21 +2005,21 @@
           </PDBo:chem_comp_bond>
         </PDBo:has_chem_comp_bond>
         <PDBo:has_chem_comp_bond>
-          <PDBo:chem_comp_bond rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C3',O3',ATP">
-            <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/cc/ATP"/>
+          <PDBo:chem_comp_bond rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C3',O3',ATP">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/cc/ATP"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C3',O3',ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C3',O3',ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:reference_to_chem_comp_atom>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/C3',ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C3',O3',ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/C3',ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C3',O3',ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp_atom>
             <PDBo:reference_to_chem_comp_atom>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/O3',ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C3',O3',ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/O3',ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C3',O3',ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp_atom>
             <PDBo:chem_comp_bond.atom_id_1>C3'</PDBo:chem_comp_bond.atom_id_1>
@@ -2032,21 +2032,21 @@
           </PDBo:chem_comp_bond>
         </PDBo:has_chem_comp_bond>
         <PDBo:has_chem_comp_bond>
-          <PDBo:chem_comp_bond rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C3',C2',ATP">
-            <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/cc/ATP"/>
+          <PDBo:chem_comp_bond rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C3',C2',ATP">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/cc/ATP"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C3',C2',ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C3',C2',ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:reference_to_chem_comp_atom>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/C3',ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C3',C2',ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/C3',ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C3',C2',ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp_atom>
             <PDBo:reference_to_chem_comp_atom>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/C2',ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C3',C2',ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/C2',ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C3',C2',ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp_atom>
             <PDBo:chem_comp_bond.atom_id_1>C3'</PDBo:chem_comp_bond.atom_id_1>
@@ -2059,21 +2059,21 @@
           </PDBo:chem_comp_bond>
         </PDBo:has_chem_comp_bond>
         <PDBo:has_chem_comp_bond>
-          <PDBo:chem_comp_bond rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C3',H3',ATP">
-            <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/cc/ATP"/>
+          <PDBo:chem_comp_bond rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C3',H3',ATP">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/cc/ATP"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C3',H3',ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C3',H3',ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:reference_to_chem_comp_atom>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/C3',ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C3',H3',ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/C3',ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C3',H3',ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp_atom>
             <PDBo:reference_to_chem_comp_atom>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/H3',ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C3',H3',ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/H3',ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C3',H3',ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp_atom>
             <PDBo:chem_comp_bond.atom_id_1>C3'</PDBo:chem_comp_bond.atom_id_1>
@@ -2086,21 +2086,21 @@
           </PDBo:chem_comp_bond>
         </PDBo:has_chem_comp_bond>
         <PDBo:has_chem_comp_bond>
-          <PDBo:chem_comp_bond rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/O3',HO3',ATP">
-            <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/cc/ATP"/>
+          <PDBo:chem_comp_bond rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/O3',HO3',ATP">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/cc/ATP"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/O3',HO3',ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/O3',HO3',ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:reference_to_chem_comp_atom>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/O3',ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/O3',HO3',ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/O3',ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/O3',HO3',ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp_atom>
             <PDBo:reference_to_chem_comp_atom>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/HO3',ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/O3',HO3',ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/HO3',ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/O3',HO3',ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp_atom>
             <PDBo:chem_comp_bond.atom_id_1>O3'</PDBo:chem_comp_bond.atom_id_1>
@@ -2113,21 +2113,21 @@
           </PDBo:chem_comp_bond>
         </PDBo:has_chem_comp_bond>
         <PDBo:has_chem_comp_bond>
-          <PDBo:chem_comp_bond rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C2',O2',ATP">
-            <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/cc/ATP"/>
+          <PDBo:chem_comp_bond rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C2',O2',ATP">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/cc/ATP"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C2',O2',ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C2',O2',ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:reference_to_chem_comp_atom>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/C2',ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C2',O2',ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/C2',ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C2',O2',ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp_atom>
             <PDBo:reference_to_chem_comp_atom>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/O2',ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C2',O2',ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/O2',ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C2',O2',ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp_atom>
             <PDBo:chem_comp_bond.atom_id_1>C2'</PDBo:chem_comp_bond.atom_id_1>
@@ -2140,21 +2140,21 @@
           </PDBo:chem_comp_bond>
         </PDBo:has_chem_comp_bond>
         <PDBo:has_chem_comp_bond>
-          <PDBo:chem_comp_bond rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C2',C1',ATP">
-            <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/cc/ATP"/>
+          <PDBo:chem_comp_bond rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C2',C1',ATP">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/cc/ATP"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C2',C1',ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C2',C1',ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:reference_to_chem_comp_atom>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/C2',ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C2',C1',ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/C2',ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C2',C1',ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp_atom>
             <PDBo:reference_to_chem_comp_atom>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/C1',ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C2',C1',ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/C1',ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C2',C1',ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp_atom>
             <PDBo:chem_comp_bond.atom_id_1>C2'</PDBo:chem_comp_bond.atom_id_1>
@@ -2167,21 +2167,21 @@
           </PDBo:chem_comp_bond>
         </PDBo:has_chem_comp_bond>
         <PDBo:has_chem_comp_bond>
-          <PDBo:chem_comp_bond rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C2',H2',ATP">
-            <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/cc/ATP"/>
+          <PDBo:chem_comp_bond rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C2',H2',ATP">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/cc/ATP"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C2',H2',ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C2',H2',ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:reference_to_chem_comp_atom>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/C2',ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C2',H2',ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/C2',ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C2',H2',ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp_atom>
             <PDBo:reference_to_chem_comp_atom>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/H2',ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C2',H2',ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/H2',ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C2',H2',ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp_atom>
             <PDBo:chem_comp_bond.atom_id_1>C2'</PDBo:chem_comp_bond.atom_id_1>
@@ -2194,21 +2194,21 @@
           </PDBo:chem_comp_bond>
         </PDBo:has_chem_comp_bond>
         <PDBo:has_chem_comp_bond>
-          <PDBo:chem_comp_bond rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/O2',HO2',ATP">
-            <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/cc/ATP"/>
+          <PDBo:chem_comp_bond rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/O2',HO2',ATP">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/cc/ATP"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/O2',HO2',ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/O2',HO2',ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:reference_to_chem_comp_atom>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/O2',ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/O2',HO2',ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/O2',ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/O2',HO2',ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp_atom>
             <PDBo:reference_to_chem_comp_atom>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/HO2',ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/O2',HO2',ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/HO2',ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/O2',HO2',ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp_atom>
             <PDBo:chem_comp_bond.atom_id_1>O2'</PDBo:chem_comp_bond.atom_id_1>
@@ -2221,21 +2221,21 @@
           </PDBo:chem_comp_bond>
         </PDBo:has_chem_comp_bond>
         <PDBo:has_chem_comp_bond>
-          <PDBo:chem_comp_bond rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C1',N9,ATP">
-            <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/cc/ATP"/>
+          <PDBo:chem_comp_bond rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C1',N9,ATP">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/cc/ATP"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C1',N9,ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C1',N9,ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:reference_to_chem_comp_atom>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/C1',ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C1',N9,ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/C1',ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C1',N9,ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp_atom>
             <PDBo:reference_to_chem_comp_atom>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/N9,ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C1',N9,ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/N9,ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C1',N9,ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp_atom>
             <PDBo:chem_comp_bond.atom_id_1>C1'</PDBo:chem_comp_bond.atom_id_1>
@@ -2248,21 +2248,21 @@
           </PDBo:chem_comp_bond>
         </PDBo:has_chem_comp_bond>
         <PDBo:has_chem_comp_bond>
-          <PDBo:chem_comp_bond rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C1',H1',ATP">
-            <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/cc/ATP"/>
+          <PDBo:chem_comp_bond rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C1',H1',ATP">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/cc/ATP"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C1',H1',ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C1',H1',ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:reference_to_chem_comp_atom>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/C1',ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C1',H1',ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/C1',ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C1',H1',ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp_atom>
             <PDBo:reference_to_chem_comp_atom>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/H1',ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C1',H1',ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/H1',ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C1',H1',ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp_atom>
             <PDBo:chem_comp_bond.atom_id_1>C1'</PDBo:chem_comp_bond.atom_id_1>
@@ -2275,21 +2275,21 @@
           </PDBo:chem_comp_bond>
         </PDBo:has_chem_comp_bond>
         <PDBo:has_chem_comp_bond>
-          <PDBo:chem_comp_bond rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/N9,C8,ATP">
-            <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/cc/ATP"/>
+          <PDBo:chem_comp_bond rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/N9,C8,ATP">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/cc/ATP"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/N9,C8,ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/N9,C8,ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:reference_to_chem_comp_atom>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/N9,ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/N9,C8,ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/N9,ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/N9,C8,ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp_atom>
             <PDBo:reference_to_chem_comp_atom>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/C8,ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/N9,C8,ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/C8,ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/N9,C8,ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp_atom>
             <PDBo:chem_comp_bond.atom_id_1>N9</PDBo:chem_comp_bond.atom_id_1>
@@ -2302,21 +2302,21 @@
           </PDBo:chem_comp_bond>
         </PDBo:has_chem_comp_bond>
         <PDBo:has_chem_comp_bond>
-          <PDBo:chem_comp_bond rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/N9,C4,ATP">
-            <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/cc/ATP"/>
+          <PDBo:chem_comp_bond rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/N9,C4,ATP">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/cc/ATP"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/N9,C4,ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/N9,C4,ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:reference_to_chem_comp_atom>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/N9,ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/N9,C4,ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/N9,ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/N9,C4,ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp_atom>
             <PDBo:reference_to_chem_comp_atom>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/C4,ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/N9,C4,ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/C4,ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/N9,C4,ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp_atom>
             <PDBo:chem_comp_bond.atom_id_1>N9</PDBo:chem_comp_bond.atom_id_1>
@@ -2329,21 +2329,21 @@
           </PDBo:chem_comp_bond>
         </PDBo:has_chem_comp_bond>
         <PDBo:has_chem_comp_bond>
-          <PDBo:chem_comp_bond rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C8,N7,ATP">
-            <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/cc/ATP"/>
+          <PDBo:chem_comp_bond rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C8,N7,ATP">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/cc/ATP"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C8,N7,ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C8,N7,ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:reference_to_chem_comp_atom>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/C8,ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C8,N7,ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/C8,ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C8,N7,ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp_atom>
             <PDBo:reference_to_chem_comp_atom>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/N7,ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C8,N7,ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/N7,ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C8,N7,ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp_atom>
             <PDBo:chem_comp_bond.atom_id_1>C8</PDBo:chem_comp_bond.atom_id_1>
@@ -2356,21 +2356,21 @@
           </PDBo:chem_comp_bond>
         </PDBo:has_chem_comp_bond>
         <PDBo:has_chem_comp_bond>
-          <PDBo:chem_comp_bond rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C8,H8,ATP">
-            <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/cc/ATP"/>
+          <PDBo:chem_comp_bond rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C8,H8,ATP">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/cc/ATP"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C8,H8,ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C8,H8,ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:reference_to_chem_comp_atom>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/C8,ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C8,H8,ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/C8,ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C8,H8,ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp_atom>
             <PDBo:reference_to_chem_comp_atom>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/H8,ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C8,H8,ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/H8,ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C8,H8,ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp_atom>
             <PDBo:chem_comp_bond.atom_id_1>C8</PDBo:chem_comp_bond.atom_id_1>
@@ -2383,21 +2383,21 @@
           </PDBo:chem_comp_bond>
         </PDBo:has_chem_comp_bond>
         <PDBo:has_chem_comp_bond>
-          <PDBo:chem_comp_bond rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/N7,C5,ATP">
-            <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/cc/ATP"/>
+          <PDBo:chem_comp_bond rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/N7,C5,ATP">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/cc/ATP"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/N7,C5,ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/N7,C5,ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:reference_to_chem_comp_atom>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/N7,ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/N7,C5,ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/N7,ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/N7,C5,ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp_atom>
             <PDBo:reference_to_chem_comp_atom>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/C5,ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/N7,C5,ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/C5,ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/N7,C5,ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp_atom>
             <PDBo:chem_comp_bond.atom_id_1>N7</PDBo:chem_comp_bond.atom_id_1>
@@ -2410,21 +2410,21 @@
           </PDBo:chem_comp_bond>
         </PDBo:has_chem_comp_bond>
         <PDBo:has_chem_comp_bond>
-          <PDBo:chem_comp_bond rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C5,C6,ATP">
-            <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/cc/ATP"/>
+          <PDBo:chem_comp_bond rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C5,C6,ATP">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/cc/ATP"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C5,C6,ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C5,C6,ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:reference_to_chem_comp_atom>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/C5,ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C5,C6,ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/C5,ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C5,C6,ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp_atom>
             <PDBo:reference_to_chem_comp_atom>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/C6,ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C5,C6,ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/C6,ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C5,C6,ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp_atom>
             <PDBo:chem_comp_bond.atom_id_1>C5</PDBo:chem_comp_bond.atom_id_1>
@@ -2437,21 +2437,21 @@
           </PDBo:chem_comp_bond>
         </PDBo:has_chem_comp_bond>
         <PDBo:has_chem_comp_bond>
-          <PDBo:chem_comp_bond rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C5,C4,ATP">
-            <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/cc/ATP"/>
+          <PDBo:chem_comp_bond rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C5,C4,ATP">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/cc/ATP"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C5,C4,ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C5,C4,ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:reference_to_chem_comp_atom>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/C5,ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C5,C4,ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/C5,ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C5,C4,ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp_atom>
             <PDBo:reference_to_chem_comp_atom>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/C4,ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C5,C4,ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/C4,ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C5,C4,ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp_atom>
             <PDBo:chem_comp_bond.atom_id_1>C5</PDBo:chem_comp_bond.atom_id_1>
@@ -2464,21 +2464,21 @@
           </PDBo:chem_comp_bond>
         </PDBo:has_chem_comp_bond>
         <PDBo:has_chem_comp_bond>
-          <PDBo:chem_comp_bond rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C6,N6,ATP">
-            <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/cc/ATP"/>
+          <PDBo:chem_comp_bond rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C6,N6,ATP">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/cc/ATP"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C6,N6,ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C6,N6,ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:reference_to_chem_comp_atom>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/C6,ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C6,N6,ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/C6,ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C6,N6,ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp_atom>
             <PDBo:reference_to_chem_comp_atom>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/N6,ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C6,N6,ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/N6,ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C6,N6,ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp_atom>
             <PDBo:chem_comp_bond.atom_id_1>C6</PDBo:chem_comp_bond.atom_id_1>
@@ -2491,21 +2491,21 @@
           </PDBo:chem_comp_bond>
         </PDBo:has_chem_comp_bond>
         <PDBo:has_chem_comp_bond>
-          <PDBo:chem_comp_bond rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C6,N1,ATP">
-            <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/cc/ATP"/>
+          <PDBo:chem_comp_bond rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C6,N1,ATP">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/cc/ATP"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C6,N1,ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C6,N1,ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:reference_to_chem_comp_atom>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/C6,ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C6,N1,ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/C6,ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C6,N1,ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp_atom>
             <PDBo:reference_to_chem_comp_atom>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/N1,ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C6,N1,ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/N1,ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C6,N1,ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp_atom>
             <PDBo:chem_comp_bond.atom_id_1>C6</PDBo:chem_comp_bond.atom_id_1>
@@ -2518,21 +2518,21 @@
           </PDBo:chem_comp_bond>
         </PDBo:has_chem_comp_bond>
         <PDBo:has_chem_comp_bond>
-          <PDBo:chem_comp_bond rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/N6,HN61,ATP">
-            <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/cc/ATP"/>
+          <PDBo:chem_comp_bond rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/N6,HN61,ATP">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/cc/ATP"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/N6,HN61,ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/N6,HN61,ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:reference_to_chem_comp_atom>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/N6,ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/N6,HN61,ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/N6,ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/N6,HN61,ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp_atom>
             <PDBo:reference_to_chem_comp_atom>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/HN61,ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/N6,HN61,ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/HN61,ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/N6,HN61,ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp_atom>
             <PDBo:chem_comp_bond.atom_id_1>N6</PDBo:chem_comp_bond.atom_id_1>
@@ -2545,21 +2545,21 @@
           </PDBo:chem_comp_bond>
         </PDBo:has_chem_comp_bond>
         <PDBo:has_chem_comp_bond>
-          <PDBo:chem_comp_bond rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/N6,HN62,ATP">
-            <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/cc/ATP"/>
+          <PDBo:chem_comp_bond rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/N6,HN62,ATP">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/cc/ATP"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/N6,HN62,ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/N6,HN62,ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:reference_to_chem_comp_atom>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/N6,ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/N6,HN62,ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/N6,ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/N6,HN62,ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp_atom>
             <PDBo:reference_to_chem_comp_atom>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/HN62,ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/N6,HN62,ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/HN62,ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/N6,HN62,ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp_atom>
             <PDBo:chem_comp_bond.atom_id_1>N6</PDBo:chem_comp_bond.atom_id_1>
@@ -2572,21 +2572,21 @@
           </PDBo:chem_comp_bond>
         </PDBo:has_chem_comp_bond>
         <PDBo:has_chem_comp_bond>
-          <PDBo:chem_comp_bond rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/N1,C2,ATP">
-            <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/cc/ATP"/>
+          <PDBo:chem_comp_bond rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/N1,C2,ATP">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/cc/ATP"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/N1,C2,ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/N1,C2,ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:reference_to_chem_comp_atom>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/N1,ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/N1,C2,ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/N1,ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/N1,C2,ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp_atom>
             <PDBo:reference_to_chem_comp_atom>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/C2,ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/N1,C2,ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/C2,ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/N1,C2,ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp_atom>
             <PDBo:chem_comp_bond.atom_id_1>N1</PDBo:chem_comp_bond.atom_id_1>
@@ -2599,21 +2599,21 @@
           </PDBo:chem_comp_bond>
         </PDBo:has_chem_comp_bond>
         <PDBo:has_chem_comp_bond>
-          <PDBo:chem_comp_bond rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C2,N3,ATP">
-            <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/cc/ATP"/>
+          <PDBo:chem_comp_bond rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C2,N3,ATP">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/cc/ATP"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C2,N3,ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C2,N3,ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:reference_to_chem_comp_atom>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/C2,ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C2,N3,ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/C2,ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C2,N3,ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp_atom>
             <PDBo:reference_to_chem_comp_atom>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/N3,ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C2,N3,ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/N3,ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C2,N3,ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp_atom>
             <PDBo:chem_comp_bond.atom_id_1>C2</PDBo:chem_comp_bond.atom_id_1>
@@ -2626,21 +2626,21 @@
           </PDBo:chem_comp_bond>
         </PDBo:has_chem_comp_bond>
         <PDBo:has_chem_comp_bond>
-          <PDBo:chem_comp_bond rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C2,H2,ATP">
-            <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/cc/ATP"/>
+          <PDBo:chem_comp_bond rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C2,H2,ATP">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/cc/ATP"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C2,H2,ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C2,H2,ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:reference_to_chem_comp_atom>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/C2,ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C2,H2,ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/C2,ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C2,H2,ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp_atom>
             <PDBo:reference_to_chem_comp_atom>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/H2,ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C2,H2,ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/H2,ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/C2,H2,ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp_atom>
             <PDBo:chem_comp_bond.atom_id_1>C2</PDBo:chem_comp_bond.atom_id_1>
@@ -2653,21 +2653,21 @@
           </PDBo:chem_comp_bond>
         </PDBo:has_chem_comp_bond>
         <PDBo:has_chem_comp_bond>
-          <PDBo:chem_comp_bond rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/N3,C4,ATP">
-            <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/cc/ATP"/>
+          <PDBo:chem_comp_bond rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/N3,C4,ATP">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/cc/ATP"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/N3,C4,ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/N3,C4,ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:reference_to_chem_comp_atom>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/N3,ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/N3,C4,ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/N3,ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/N3,C4,ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp_atom>
             <PDBo:reference_to_chem_comp_atom>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp_atom/C4,ATP">
-                <PDBo:referenced_by_chem_comp_bond rdf:resource="https://rdf.wwpdb.org/cc/ATP/chem_comp_bond/N3,C4,ATP"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp_atom/C4,ATP">
+                <PDBo:referenced_by_chem_comp_bond rdf:resource="http://rdf.wwpdb.org/cc/ATP/chem_comp_bond/N3,C4,ATP"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp_atom>
             <PDBo:chem_comp_bond.atom_id_1>N3</PDBo:chem_comp_bond.atom_id_1>
@@ -2682,13 +2682,13 @@
       </PDBo:chem_comp_bondCategory>
     </PDBo:has_chem_comp_bondCategory>
     <PDBo:has_pdbx_chem_comp_auditCategory>
-      <PDBo:pdbx_chem_comp_auditCategory rdf:about="https://rdf.wwpdb.org/cc/ATP/pdbx_chem_comp_auditCategory">
+      <PDBo:pdbx_chem_comp_auditCategory rdf:about="http://rdf.wwpdb.org/cc/ATP/pdbx_chem_comp_auditCategory">
         <PDBo:has_pdbx_chem_comp_audit>
-          <PDBo:pdbx_chem_comp_audit rdf:about="https://rdf.wwpdb.org/cc/ATP/pdbx_chem_comp_audit/Create_component,ATP,1999-07-08">
-            <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/cc/ATP"/>
+          <PDBo:pdbx_chem_comp_audit rdf:about="http://rdf.wwpdb.org/cc/ATP/pdbx_chem_comp_audit/Create_component,ATP,1999-07-08">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/cc/ATP"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
-                <PDBo:referenced_by_pdbx_chem_comp_audit rdf:resource="https://rdf.wwpdb.org/cc/ATP/pdbx_chem_comp_audit/Create_component,ATP,1999-07-08"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
+                <PDBo:referenced_by_pdbx_chem_comp_audit rdf:resource="http://rdf.wwpdb.org/cc/ATP/pdbx_chem_comp_audit/Create_component,ATP,1999-07-08"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:pdbx_chem_comp_audit.action_type>Create component</PDBo:pdbx_chem_comp_audit.action_type>
@@ -2698,11 +2698,11 @@
           </PDBo:pdbx_chem_comp_audit>
         </PDBo:has_pdbx_chem_comp_audit>
         <PDBo:has_pdbx_chem_comp_audit>
-          <PDBo:pdbx_chem_comp_audit rdf:about="https://rdf.wwpdb.org/cc/ATP/pdbx_chem_comp_audit/Modify_descriptor,ATP,2011-06-04">
-            <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/cc/ATP"/>
+          <PDBo:pdbx_chem_comp_audit rdf:about="http://rdf.wwpdb.org/cc/ATP/pdbx_chem_comp_audit/Modify_descriptor,ATP,2011-06-04">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/cc/ATP"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
-                <PDBo:referenced_by_pdbx_chem_comp_audit rdf:resource="https://rdf.wwpdb.org/cc/ATP/pdbx_chem_comp_audit/Modify_descriptor,ATP,2011-06-04"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
+                <PDBo:referenced_by_pdbx_chem_comp_audit rdf:resource="http://rdf.wwpdb.org/cc/ATP/pdbx_chem_comp_audit/Modify_descriptor,ATP,2011-06-04"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:pdbx_chem_comp_audit.action_type>Modify descriptor</PDBo:pdbx_chem_comp_audit.action_type>
@@ -2714,13 +2714,13 @@
       </PDBo:pdbx_chem_comp_auditCategory>
     </PDBo:has_pdbx_chem_comp_auditCategory>
     <PDBo:has_pdbx_chem_comp_descriptorCategory>
-      <PDBo:pdbx_chem_comp_descriptorCategory rdf:about="https://rdf.wwpdb.org/cc/ATP/pdbx_chem_comp_descriptorCategory">
+      <PDBo:pdbx_chem_comp_descriptorCategory rdf:about="http://rdf.wwpdb.org/cc/ATP/pdbx_chem_comp_descriptorCategory">
         <PDBo:has_pdbx_chem_comp_descriptor>
-          <PDBo:pdbx_chem_comp_descriptor rdf:about="https://rdf.wwpdb.org/cc/ATP/pdbx_chem_comp_descriptor/ATP,ACDLabs,10.04,SMILES">
-            <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/cc/ATP"/>
+          <PDBo:pdbx_chem_comp_descriptor rdf:about="http://rdf.wwpdb.org/cc/ATP/pdbx_chem_comp_descriptor/ATP,ACDLabs,10.04,SMILES">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/cc/ATP"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
-                <PDBo:referenced_by_pdbx_chem_comp_descriptor rdf:resource="https://rdf.wwpdb.org/cc/ATP/pdbx_chem_comp_descriptor/ATP,ACDLabs,10.04,SMILES"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
+                <PDBo:referenced_by_pdbx_chem_comp_descriptor rdf:resource="http://rdf.wwpdb.org/cc/ATP/pdbx_chem_comp_descriptor/ATP,ACDLabs,10.04,SMILES"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:pdbx_chem_comp_descriptor.comp_id>ATP</PDBo:pdbx_chem_comp_descriptor.comp_id>
@@ -2731,11 +2731,11 @@
           </PDBo:pdbx_chem_comp_descriptor>
         </PDBo:has_pdbx_chem_comp_descriptor>
         <PDBo:has_pdbx_chem_comp_descriptor>
-          <PDBo:pdbx_chem_comp_descriptor rdf:about="https://rdf.wwpdb.org/cc/ATP/pdbx_chem_comp_descriptor/ATP,CACTVS,3.341,SMILES_CANONICAL">
-            <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/cc/ATP"/>
+          <PDBo:pdbx_chem_comp_descriptor rdf:about="http://rdf.wwpdb.org/cc/ATP/pdbx_chem_comp_descriptor/ATP,CACTVS,3.341,SMILES_CANONICAL">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/cc/ATP"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
-                <PDBo:referenced_by_pdbx_chem_comp_descriptor rdf:resource="https://rdf.wwpdb.org/cc/ATP/pdbx_chem_comp_descriptor/ATP,CACTVS,3.341,SMILES_CANONICAL"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
+                <PDBo:referenced_by_pdbx_chem_comp_descriptor rdf:resource="http://rdf.wwpdb.org/cc/ATP/pdbx_chem_comp_descriptor/ATP,CACTVS,3.341,SMILES_CANONICAL"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:pdbx_chem_comp_descriptor.comp_id>ATP</PDBo:pdbx_chem_comp_descriptor.comp_id>
@@ -2746,11 +2746,11 @@
           </PDBo:pdbx_chem_comp_descriptor>
         </PDBo:has_pdbx_chem_comp_descriptor>
         <PDBo:has_pdbx_chem_comp_descriptor>
-          <PDBo:pdbx_chem_comp_descriptor rdf:about="https://rdf.wwpdb.org/cc/ATP/pdbx_chem_comp_descriptor/ATP,CACTVS,3.341,SMILES">
-            <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/cc/ATP"/>
+          <PDBo:pdbx_chem_comp_descriptor rdf:about="http://rdf.wwpdb.org/cc/ATP/pdbx_chem_comp_descriptor/ATP,CACTVS,3.341,SMILES">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/cc/ATP"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
-                <PDBo:referenced_by_pdbx_chem_comp_descriptor rdf:resource="https://rdf.wwpdb.org/cc/ATP/pdbx_chem_comp_descriptor/ATP,CACTVS,3.341,SMILES"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
+                <PDBo:referenced_by_pdbx_chem_comp_descriptor rdf:resource="http://rdf.wwpdb.org/cc/ATP/pdbx_chem_comp_descriptor/ATP,CACTVS,3.341,SMILES"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:pdbx_chem_comp_descriptor.comp_id>ATP</PDBo:pdbx_chem_comp_descriptor.comp_id>
@@ -2761,11 +2761,11 @@
           </PDBo:pdbx_chem_comp_descriptor>
         </PDBo:has_pdbx_chem_comp_descriptor>
         <PDBo:has_pdbx_chem_comp_descriptor>
-          <PDBo:pdbx_chem_comp_descriptor rdf:about="https://rdf.wwpdb.org/cc/ATP/pdbx_chem_comp_descriptor/ATP,OpenEye_OEToolkits,1.5.0,SMILES_CANONICAL">
-            <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/cc/ATP"/>
+          <PDBo:pdbx_chem_comp_descriptor rdf:about="http://rdf.wwpdb.org/cc/ATP/pdbx_chem_comp_descriptor/ATP,OpenEye_OEToolkits,1.5.0,SMILES_CANONICAL">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/cc/ATP"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
-                <PDBo:referenced_by_pdbx_chem_comp_descriptor rdf:resource="https://rdf.wwpdb.org/cc/ATP/pdbx_chem_comp_descriptor/ATP,OpenEye_OEToolkits,1.5.0,SMILES_CANONICAL"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
+                <PDBo:referenced_by_pdbx_chem_comp_descriptor rdf:resource="http://rdf.wwpdb.org/cc/ATP/pdbx_chem_comp_descriptor/ATP,OpenEye_OEToolkits,1.5.0,SMILES_CANONICAL"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:pdbx_chem_comp_descriptor.comp_id>ATP</PDBo:pdbx_chem_comp_descriptor.comp_id>
@@ -2776,11 +2776,11 @@
           </PDBo:pdbx_chem_comp_descriptor>
         </PDBo:has_pdbx_chem_comp_descriptor>
         <PDBo:has_pdbx_chem_comp_descriptor>
-          <PDBo:pdbx_chem_comp_descriptor rdf:about="https://rdf.wwpdb.org/cc/ATP/pdbx_chem_comp_descriptor/ATP,OpenEye_OEToolkits,1.5.0,SMILES">
-            <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/cc/ATP"/>
+          <PDBo:pdbx_chem_comp_descriptor rdf:about="http://rdf.wwpdb.org/cc/ATP/pdbx_chem_comp_descriptor/ATP,OpenEye_OEToolkits,1.5.0,SMILES">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/cc/ATP"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
-                <PDBo:referenced_by_pdbx_chem_comp_descriptor rdf:resource="https://rdf.wwpdb.org/cc/ATP/pdbx_chem_comp_descriptor/ATP,OpenEye_OEToolkits,1.5.0,SMILES"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
+                <PDBo:referenced_by_pdbx_chem_comp_descriptor rdf:resource="http://rdf.wwpdb.org/cc/ATP/pdbx_chem_comp_descriptor/ATP,OpenEye_OEToolkits,1.5.0,SMILES"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:pdbx_chem_comp_descriptor.comp_id>ATP</PDBo:pdbx_chem_comp_descriptor.comp_id>
@@ -2791,11 +2791,11 @@
           </PDBo:pdbx_chem_comp_descriptor>
         </PDBo:has_pdbx_chem_comp_descriptor>
         <PDBo:has_pdbx_chem_comp_descriptor>
-          <PDBo:pdbx_chem_comp_descriptor rdf:about="https://rdf.wwpdb.org/cc/ATP/pdbx_chem_comp_descriptor/ATP,InChI,1.03,InChI">
-            <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/cc/ATP"/>
+          <PDBo:pdbx_chem_comp_descriptor rdf:about="http://rdf.wwpdb.org/cc/ATP/pdbx_chem_comp_descriptor/ATP,InChI,1.03,InChI">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/cc/ATP"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
-                <PDBo:referenced_by_pdbx_chem_comp_descriptor rdf:resource="https://rdf.wwpdb.org/cc/ATP/pdbx_chem_comp_descriptor/ATP,InChI,1.03,InChI"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
+                <PDBo:referenced_by_pdbx_chem_comp_descriptor rdf:resource="http://rdf.wwpdb.org/cc/ATP/pdbx_chem_comp_descriptor/ATP,InChI,1.03,InChI"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:pdbx_chem_comp_descriptor.comp_id>ATP</PDBo:pdbx_chem_comp_descriptor.comp_id>
@@ -2806,11 +2806,11 @@
           </PDBo:pdbx_chem_comp_descriptor>
         </PDBo:has_pdbx_chem_comp_descriptor>
         <PDBo:has_pdbx_chem_comp_descriptor>
-          <PDBo:pdbx_chem_comp_descriptor rdf:about="https://rdf.wwpdb.org/cc/ATP/pdbx_chem_comp_descriptor/ATP,InChI,1.03,InChIKey">
-            <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/cc/ATP"/>
+          <PDBo:pdbx_chem_comp_descriptor rdf:about="http://rdf.wwpdb.org/cc/ATP/pdbx_chem_comp_descriptor/ATP,InChI,1.03,InChIKey">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/cc/ATP"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
-                <PDBo:referenced_by_pdbx_chem_comp_descriptor rdf:resource="https://rdf.wwpdb.org/cc/ATP/pdbx_chem_comp_descriptor/ATP,InChI,1.03,InChIKey"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
+                <PDBo:referenced_by_pdbx_chem_comp_descriptor rdf:resource="http://rdf.wwpdb.org/cc/ATP/pdbx_chem_comp_descriptor/ATP,InChI,1.03,InChIKey"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:pdbx_chem_comp_descriptor.comp_id>ATP</PDBo:pdbx_chem_comp_descriptor.comp_id>
@@ -2823,13 +2823,13 @@
       </PDBo:pdbx_chem_comp_descriptorCategory>
     </PDBo:has_pdbx_chem_comp_descriptorCategory>
     <PDBo:has_pdbx_chem_comp_identifierCategory>
-      <PDBo:pdbx_chem_comp_identifierCategory rdf:about="https://rdf.wwpdb.org/cc/ATP/pdbx_chem_comp_identifierCategory">
+      <PDBo:pdbx_chem_comp_identifierCategory rdf:about="http://rdf.wwpdb.org/cc/ATP/pdbx_chem_comp_identifierCategory">
         <PDBo:has_pdbx_chem_comp_identifier>
-          <PDBo:pdbx_chem_comp_identifier rdf:about="https://rdf.wwpdb.org/cc/ATP/pdbx_chem_comp_identifier/ATP,ACDLabs,10.04,SYSTEMATIC_NAME">
-            <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/cc/ATP"/>
+          <PDBo:pdbx_chem_comp_identifier rdf:about="http://rdf.wwpdb.org/cc/ATP/pdbx_chem_comp_identifier/ATP,ACDLabs,10.04,SYSTEMATIC_NAME">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/cc/ATP"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
-                <PDBo:referenced_by_pdbx_chem_comp_identifier rdf:resource="https://rdf.wwpdb.org/cc/ATP/pdbx_chem_comp_identifier/ATP,ACDLabs,10.04,SYSTEMATIC_NAME"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
+                <PDBo:referenced_by_pdbx_chem_comp_identifier rdf:resource="http://rdf.wwpdb.org/cc/ATP/pdbx_chem_comp_identifier/ATP,ACDLabs,10.04,SYSTEMATIC_NAME"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:pdbx_chem_comp_identifier.comp_id>ATP</PDBo:pdbx_chem_comp_identifier.comp_id>
@@ -2840,11 +2840,11 @@
           </PDBo:pdbx_chem_comp_identifier>
         </PDBo:has_pdbx_chem_comp_identifier>
         <PDBo:has_pdbx_chem_comp_identifier>
-          <PDBo:pdbx_chem_comp_identifier rdf:about="https://rdf.wwpdb.org/cc/ATP/pdbx_chem_comp_identifier/ATP,OpenEye_OEToolkits,1.5.0,SYSTEMATIC_NAME">
-            <PDBo:of_datablock rdf:resource="https://rdf.wwpdb.org/cc/ATP"/>
+          <PDBo:pdbx_chem_comp_identifier rdf:about="http://rdf.wwpdb.org/cc/ATP/pdbx_chem_comp_identifier/ATP,OpenEye_OEToolkits,1.5.0,SYSTEMATIC_NAME">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/cc/ATP"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="https://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
-                <PDBo:referenced_by_pdbx_chem_comp_identifier rdf:resource="https://rdf.wwpdb.org/cc/ATP/pdbx_chem_comp_identifier/ATP,OpenEye_OEToolkits,1.5.0,SYSTEMATIC_NAME"/>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_comp/ATP">
+                <PDBo:referenced_by_pdbx_chem_comp_identifier rdf:resource="http://rdf.wwpdb.org/cc/ATP/pdbx_chem_comp_identifier/ATP,OpenEye_OEToolkits,1.5.0,SYSTEMATIC_NAME"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:pdbx_chem_comp_identifier.comp_id>ATP</PDBo:pdbx_chem_comp_identifier.comp_id>

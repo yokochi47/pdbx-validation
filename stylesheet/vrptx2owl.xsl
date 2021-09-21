@@ -26,25 +26,25 @@
 
   <xsl:template match="/">
     <xsl:text disable-output-escaping="yes">
-&lt;?xml-stylesheet type="text/xsl" href="https://rdf.wwpdb.org/schema/pdbxowl.xsl"?&gt;
+&lt;?xml-stylesheet type="text/xsl" href="https://rdf.wwpdb.org/schema/vrptxowl.xsl"?&gt;
 </xsl:text>
     <rdf:RDF
-       xml:base="https://rdf.wwpdb.org/schema/pdbx-validation-v4.owl"
+       xml:base="http://rdf.wwpdb.org/schema/pdbx-validation-v4.owl"
        xmlns:xml="http://www.w3.org/XML/1998/namespace"
        xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
        xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
        xmlns:owl="http://www.w3.org/2002/07/owl#"
        xmlns:dc="http://purl.org/dc/elements/1.1/"
        xmlns:dcterms="http://purl.org/dc/terms/"
-       xmlns:PDBo="https://rdf.wwpdb.org/schema/pdbx-v50.owl#"
-       xmlns:BMRBo="https://bmrbpub.pdbj.org/schema/mmcif_nmr-star.owl#">
+       xmlns:PDBo="http://rdf.wwpdb.org/schema/pdbx-v50.owl#"
+       xmlns:BMRBo="http://bmrbpub.pdbj.org/schema/mmcif_nmr-star.owl#">
 
-      <owl:Ontology rdf:about="https://rdf.wwpdb.org/schema/pdbx-validation-v4.owl">
+      <owl:Ontology rdf:about="http://rdf.wwpdb.org/schema/pdbx-validation-v4.owl">
 	<rdfs:label>VRPT/OWL</rdfs:label>
 	<rdfs:comment xml:lang="en">The OWL ontology for VRPT/RDF, generated from the VRPT PDBML Schema.</rdfs:comment>
-        <rdfs:seeAlso rdf:resource="https://rdf.wwpdb.org/schema/pdbx-validation-v4.dic"/>
-        <rdfs:seeAlso rdf:resource="https://rdf.wwpdb.org/schema/pdbx-validation-v4.xsd"/>
-        <owl:versionIRI rdf:resource="https://rdf.wwpdb.org/schema/pdbx-validation-v4.owl/4.350"/>
+        <rdfs:seeAlso rdf:resource="http://rdf.wwpdb.org/schema/pdbx-validation-v4.dic"/>
+        <rdfs:seeAlso rdf:resource="http://rdf.wwpdb.org/schema/pdbx-validation-v4.xsd"/>
+        <owl:versionIRI rdf:resource="http://rdf.wwpdb.org/schema/pdbx-validation-v4.owl/4.350"/>
       </owl:Ontology>
 
       <owl:Class rdf:ID="Category">

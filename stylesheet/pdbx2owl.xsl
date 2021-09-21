@@ -23,7 +23,7 @@
 &lt;?xml-stylesheet type="text/xsl" href="https://rdf.wwpdb.org/schema/pdbxowl.xsl"?&gt;
 </xsl:text>
     <rdf:RDF
-       xml:base="https://rdf.wwpdb.org/schema/pdbx-v50.owl"
+       xml:base="http://rdf.wwpdb.org/schema/pdbx-v50.owl"
        xmlns:xml="http://www.w3.org/XML/1998/namespace"
        xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
        xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
@@ -31,12 +31,12 @@
        xmlns:dc="http://purl.org/dc/elements/1.1/"
        xmlns:dcterms="http://purl.org/dc/terms/">
 
-      <owl:Ontology rdf:about="https://rdf.wwpdb.org/schema/pdbx-v50.owl">
+      <owl:Ontology rdf:about="http://rdf.wwpdb.org/schema/pdbx-v50.owl">
 	<rdfs:label>PDBx ontology</rdfs:label>
 	<rdfs:comment xml:lang="en">The OWL ontology for PDB/RDF, generated from the PDBML Schema.</rdfs:comment>
         <rdfs:seeAlso rdf:resource="http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic"/>
         <rdfs:seeAlso rdf:resource="http://mmcif.wwpdb.org/schema/pdbx-v50.xsd"/>
-        <owl:versionIRI rdf:resource="https://rdf.wwpdb.org/schema/pdbx-v50.owl/5.350"/>
+        <owl:versionIRI rdf:resource="http://rdf.wwpdb.org/schema/pdbx-v50.owl/5.350"/>
       </owl:Ontology>
 
       <owl:Class rdf:ID="Category">

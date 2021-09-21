@@ -3,7 +3,7 @@
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xmlns:PDBx="http://pdbml.pdb.org/schema/pdbx-v50.xsd"
-  xmlns:PDBo="https://rdf.wwpdb.org/schema/pdbx-v50.owl#"
+  xmlns:PDBo="http://rdf.wwpdb.org/schema/pdbx-v50.owl#"
   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
   xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -21,19 +21,19 @@
   <xsl:variable name="PDBID"><xsl:value-of select="/PDBx:datablock/PDBx:entryCategory/PDBx:entry/@id"/></xsl:variable>
   <xsl:variable name="pdbid"><xsl:value-of select="translate($PDBID,'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz')"/></xsl:variable>
   <xsl:variable name="pdb_doi"><xsl:value-of select="concat('10.2210/pdb',$pdbid,'/pdb')"/></xsl:variable>
-  <xsl:variable name="base">https://rdf.wwpdb.org/pdb/<xsl:value-of select="$PDBID"/></xsl:variable>
-  <xsl:variable name="base_lower">https://rdf.wwpdb.org/pdb/<xsl:value-of select="$pdbid"/></xsl:variable>
-  <xsl:variable name="vrpt_base">https://rdf.wwpdb.org/pdb-validation/<xsl:value-of select="$PDBID"/></xsl:variable>
-  <xsl:variable name="pdb_link">https://rdf.wwpdb.org/pdb/</xsl:variable>
-  <xsl:variable name="chem_comp">https://rdf.wwpdb.org/cc/</xsl:variable>
-  <xsl:variable name="prd">https://rdf.wwpdb.org/prd/</xsl:variable>
+  <xsl:variable name="base">http://rdf.wwpdb.org/pdb/<xsl:value-of select="$PDBID"/></xsl:variable>
+  <xsl:variable name="base_lower">http://rdf.wwpdb.org/pdb/<xsl:value-of select="$pdbid"/></xsl:variable>
+  <xsl:variable name="vrpt_base">http://rdf.wwpdb.org/vrpt/<xsl:value-of select="$PDBID"/></xsl:variable>
+  <xsl:variable name="pdb_link">http://rdf.wwpdb.org/pdb/</xsl:variable>
+  <xsl:variable name="chem_comp">http://rdf.wwpdb.org/cc/</xsl:variable>
+  <xsl:variable name="prd">http://rdf.wwpdb.org/prd/</xsl:variable>
   <xsl:variable name="pdbj">https://pdbj.org/pdb/</xsl:variable>
   <xsl:variable name="rcsb">https://www.rcsb.org/pdb/explore.do?structureId=</xsl:variable>
   <xsl:variable name="pdbe">https://www.ebi.ac.uk/pdbe/entry/pdb/</xsl:variable>
   <xsl:variable name="pdbml">ftp://ftp.wwpdb.org/pub/pdb/data/structures/all/XML/</xsl:variable>
   <xsl:variable name="pdbml_noatom">ftp://ftp.wwpdb.org/pub/pdb/data/structures/all/XML-noatom/</xsl:variable>
   <xsl:variable name="pdbml_extatom">ftp://ftp.wwpdb.org/pub/pdb/data/structures/all/XML-extatom/</xsl:variable>
-  <xsl:variable name="bmrb">https://bmrbpub.pdbj.org/rdf/bmr</xsl:variable>
+  <xsl:variable name="bmrb">http://bmrbpub.pdbj.org/rdf/bmr</xsl:variable>
   <xsl:variable name="emdb">https://www.ebi.ac.uk/emdb/</xsl:variable>
   <xsl:variable name="sasbdb">https://www.sasbdb.org/data/</xsl:variable>
   <xsl:variable name="idorg">http://identifiers.org/</xsl:variable>
