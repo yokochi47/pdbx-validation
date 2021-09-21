@@ -3539,7 +3539,14 @@ Unmatched entry ID in both documents (<xsl:value-of select="$entry_id"/> and <xs
                 <PDBx:best_mapping>N</PDBx:best_mapping>
               </xsl:otherwise>
             </xsl:choose>
-            <PDBx:identity><xsl:value-of select="format-number($seq_id_range div $range,'0.000')"/></PDBx:identity>
+            <xsl:choose>
+              <xsl:when test="$seq_id_range > $range">
+                <PDBx:identity>1.000</PDBx:identity>
+              </xsl:when>
+              <xsl:otherwise>
+                <PDBx:identity><xsl:value-of select="format-number($seq_id_range div $range,'0.000')"/></PDBx:identity>
+              </xsl:otherwise>
+            </xsl:choose>
 
           </PDBx:pdbx_sifts_unp_segments>
 

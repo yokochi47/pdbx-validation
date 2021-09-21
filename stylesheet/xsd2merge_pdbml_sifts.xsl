@@ -162,7 +162,14 @@ Unmatched entry ID in both documents (&lt;xsl:value-of select="$entry_id"/&gt; a
                 &lt;PDBx:best_mapping&gt;N&lt;/PDBx:best_mapping&gt;
               &lt;/xsl:otherwise&gt;
             &lt;/xsl:choose&gt;
-            &lt;PDBx:identity&gt;&lt;xsl:value-of select="format-number($seq_id_range div $range,'0.000')"/&gt;&lt;/PDBx:identity&gt;
+            &lt;xsl:choose&gt;
+              &lt;xsl:when test="$seq_id_range &gt; $range"&gt;
+                &lt;PDBx:identity&gt;1.000&lt;/PDBx:identity&gt;
+              &lt;/xsl:when&gt;
+              &lt;xsl:otherwise&gt;
+                &lt;PDBx:identity&gt;&lt;xsl:value-of select="format-number($seq_id_range div $range,'0.000')"/&gt;&lt;/PDBx:identity&gt;
+              &lt;/xsl:otherwise&gt;
+            &lt;/xsl:choose&gt;
 
           &lt;/PDBx:pdbx_sifts_unp_segments&gt;
 
