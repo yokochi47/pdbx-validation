@@ -115,6 +115,8 @@ pdbx_dic=mmcif_pdbx.dic
 pdbx_odb=pdbx.odb
 pdbx_sdb=pdbx.sdb
 
+PDBML_PRD=$XML_BIRD/prd
+
 function mk_div_dir() {
  if [ ! -d $1 ] ; then
   [ -e $1 ] && rm -f $1

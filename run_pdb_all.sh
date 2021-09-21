@@ -28,6 +28,8 @@ fi
 
 ./scripts/update_pdbml.sh $MTIME_OPT || exit $?
 
+./scripts/merge_pdbml_sifts.sh $MTIME_OPT || exit $?
+
 if [[ $(find $_WURCS_CATALOG_XML -mtime +4) ]] ; then
  ( cd wurcs2glytoucan; ./update_glytoucan.sh )
 fi

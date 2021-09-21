@@ -50,11 +50,13 @@ ext_info_exit_code=0
 
 if [ -d $PDBML_EXT ] && [ $total -gt $huge_number ] ; then
 
+ ./scripts/merge_pdbml_sifts.sh
  ./scripts/extract_pdbml.sh $VALID_OPT
  ext_pdbml_exit_code=$?
 
 else
 
+ ./scripts/merge_pdbml_sifts.sh
  ./scripts/extract_pdbml.sh
  ext_pdbml_exit_code=$?
 
