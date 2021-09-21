@@ -173,7 +173,6 @@ File path | Document
 
 	- Change namespace URIs:
 		- xmlns:PDBo="http://rdf.wwpdb.org/schema/pdbx-v50.owl#"
-		- xmlns:VRPTx="http://rdf.wwpdb.org/schema/pdbx-validation-v4.xsd"
 		- xmlns:VRPTo="http://rdf.wwpdb.org/schema/pdbx-validation-v4.owl#"
 
 - **Sep 17, 2021**: Release v4.2.0
