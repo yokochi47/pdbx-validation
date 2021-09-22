@@ -16,15 +16,15 @@
   version="1.0"
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xmlns:PDBx="http://pdbml.pdb.org/schema/pdbx-v50.xsd"
-  xmlns:PDBo="http://rdf.wwpdb.org/schema/pdbx-v50.owl#"
   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
   xmlns:owl="http://www.w3.org/2002/07/owl#"
   xmlns:dc="http://purl.org/dc/elements/1.1/"
   xmlns:dcterms="http://purl.org/dc/terms/"
   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-  xmlns:ext="http://exslt.org/common" exclude-result-prefixes="ext"&gt;
+  xmlns:PDBx="http://pdbml.pdb.org/schema/pdbx-v50.xsd"
+  xmlns:PDBo="http://rdf.wwpdb.org/schema/pdbx-v50.owl#"
+  xmlns:ext="http://exslt.org/common" exclude-result-prefixes="PDBx ext"&gt;
 </xsl2:text>
     <xsl2:apply-templates/>
     <xsl2:text disable-output-escaping="yes">
@@ -44,37 +44,38 @@
   &lt;xsl:variable name="pdb_doi"&gt;&lt;xsl:value-of select="concat('10.2210/pdb',$pdbid,'/pdb')"/&gt;&lt;/xsl:variable&gt;
   &lt;xsl:variable name="base"&gt;http://rdf.wwpdb.org/pdb/&lt;xsl:value-of select="$PDBID"/&gt;&lt;/xsl:variable&gt;
   &lt;xsl:variable name="base_lower"&gt;http://rdf.wwpdb.org/pdb/&lt;xsl:value-of select="$pdbid"/&gt;&lt;/xsl:variable&gt;
-  &lt;xsl:variable name="vrpt_base"&gt;http://rdf.wwpdb.org/vrpt/&lt;xsl:value-of select="$PDBID"/&gt;&lt;/xsl:variable&gt;
+  &lt;xsl:variable name="vrpt"&gt;http://rdf.wwpdb.org/vrpt/&lt;xsl:value-of select="$PDBID"/&gt;&lt;/xsl:variable&gt;
   &lt;xsl:variable name="pdb_link"&gt;http://rdf.wwpdb.org/pdb/&lt;/xsl:variable&gt;
   &lt;xsl:variable name="chem_comp"&gt;http://rdf.wwpdb.org/cc/&lt;/xsl:variable&gt;
   &lt;xsl:variable name="prd"&gt;http://rdf.wwpdb.org/prd/&lt;/xsl:variable&gt;
-  &lt;xsl:variable name="pdbj"&gt;https://pdbj.org/pdb/&lt;/xsl:variable&gt;
-  &lt;xsl:variable name="rcsb"&gt;https://www.rcsb.org/pdb/explore.do?structureId=&lt;/xsl:variable&gt;
-  &lt;xsl:variable name="pdbe"&gt;https://www.ebi.ac.uk/pdbe/entry/pdb/&lt;/xsl:variable&gt;
+  &lt;xsl:variable name="pdbj"&gt;http://pdbj.org/pdb/&lt;/xsl:variable&gt;
+  &lt;xsl:variable name="rcsb"&gt;http://www.rcsb.org/pdb/explore.do?structureId=&lt;/xsl:variable&gt;
+  &lt;xsl:variable name="pdbe"&gt;http://www.ebi.ac.uk/pdbe/entry/pdb/&lt;/xsl:variable&gt;
   &lt;xsl:variable name="pdbml"&gt;ftp://ftp.wwpdb.org/pub/pdb/data/structures/all/XML/&lt;/xsl:variable&gt;
   &lt;xsl:variable name="pdbml_noatom"&gt;ftp://ftp.wwpdb.org/pub/pdb/data/structures/all/XML-noatom/&lt;/xsl:variable&gt;
   &lt;xsl:variable name="pdbml_extatom"&gt;ftp://ftp.wwpdb.org/pub/pdb/data/structures/all/XML-extatom/&lt;/xsl:variable&gt;
   &lt;xsl:variable name="bmrb"&gt;http://bmrbpub.pdbj.org/rdf/bmr&lt;/xsl:variable&gt;
-  &lt;xsl:variable name="emdb"&gt;https://www.ebi.ac.uk/emdb/&lt;/xsl:variable&gt;
-  &lt;xsl:variable name="sasbdb"&gt;https://www.sasbdb.org/data/&lt;/xsl:variable&gt;
+  &lt;xsl:variable name="emdb"&gt;http://www.ebi.ac.uk/emdb/&lt;/xsl:variable&gt;
+  &lt;xsl:variable name="sasbdb"&gt;http://www.sasbdb.org/data/&lt;/xsl:variable&gt;
   &lt;xsl:variable name="idorg"&gt;http://identifiers.org/&lt;/xsl:variable&gt;
-  &lt;xsl:variable name="doi"&gt;https://doi.org/&lt;/xsl:variable&gt;
-  &lt;xsl:variable name="pubmed"&gt;https://www.ncbi.nlm.nih.gov/pubmed/&lt;/xsl:variable&gt;
+  &lt;xsl:variable name="doi"&gt;http://doi.org/&lt;/xsl:variable&gt;
+  &lt;xsl:variable name="orcid"&gt;http://orcid.org/&lt;/xsl:variable&gt;
+  &lt;xsl:variable name="pubmed"&gt;http://rdf.ncbi.nlm.nih.gov/pubmed/&lt;/xsl:variable&gt;
   &lt;xsl:variable name="taxonomy"&gt;http://purl.uniprot.org/taxonomy/&lt;/xsl:variable&gt;
   &lt;xsl:variable name="uniprot"&gt;http://purl.uniprot.org/uniprot/&lt;/xsl:variable&gt;
-  &lt;xsl:variable name="genbank"&gt;https://www.ncbi.nlm.nih.gov/nuccore/&lt;/xsl:variable&gt;
-  &lt;xsl:variable name="embl"&gt;https://www.ncbi.nlm.nih.gov/nuccore/&lt;/xsl:variable&gt;
-  &lt;xsl:variable name="pir"&gt;https://www.ncbi.nlm.nih.gov/nuccore/&lt;/xsl:variable&gt;
-  &lt;xsl:variable name="refseq"&gt;https://www.ncbi.nlm.nih.gov/protein/&lt;/xsl:variable&gt;
-  &lt;xsl:variable name="norine"&gt;https://bioinfo.lifl.fr/norine/result.jsp?ID=&lt;/xsl:variable&gt;
+  &lt;xsl:variable name="genbank"&gt;http://www.ncbi.nlm.nih.gov/protein/&lt;/xsl:variable&gt;
+  &lt;xsl:variable name="embl"&gt;http://www.ncbi.nlm.nih.gov/protein/&lt;/xsl:variable&gt;
+  &lt;xsl:variable name="pir"&gt;http://www.ncbi.nlm.nih.gov/protein/&lt;/xsl:variable&gt;
+  &lt;xsl:variable name="refseq"&gt;http://www.ncbi.nlm.nih.gov/protein/&lt;/xsl:variable&gt;
+  &lt;xsl:variable name="norine"&gt;http://bioinfo.lifl.fr/norine/result.jsp?ID=&lt;/xsl:variable&gt;
   &lt;xsl:variable name="enzyme"&gt;http://purl.uniprot.org/enzyme/&lt;/xsl:variable&gt;
   &lt;xsl:variable name="go"&gt;http://amigo.geneontology.org/amigo/term/&lt;/xsl:variable&gt;
-  &lt;xsl:variable name="interpro"&gt;https://www.ebi.ac.uk/interpro/entry/&lt;/xsl:variable&gt;
+  &lt;xsl:variable name="interpro"&gt;http://www.ebi.ac.uk/interpro/entry/&lt;/xsl:variable&gt;
   &lt;xsl:variable name="pfam"&gt;http://pfam.xfam.org/family/&lt;/xsl:variable&gt;
   &lt;xsl:variable name="cath"&gt;http://www.cathdb.info/cathnode/&lt;/xsl:variable&gt;
   &lt;xsl:variable name="scop"&gt;http://scop.berkeley.edu/sunid=&lt;/xsl:variable&gt;
-  &lt;xsl:variable name="scop2"&gt;https://scop2.mrc-lmb.cam.ac.uk/term/&lt;/xsl:variable&gt;
-  &lt;xsl:variable name="ensembl"&gt;https://www.ensembl.org/id/&lt;/xsl:variable&gt;
+  &lt;xsl:variable name="scop2"&gt;http://scop2.mrc-lmb.cam.ac.uk/term/&lt;/xsl:variable&gt;
+  &lt;xsl:variable name="ensembl"&gt;http://www.ensembl.org/id/&lt;/xsl:variable&gt;
   &lt;xsl:variable name="glycoinfo"&gt;http://rdf.glycoinfo.org/glycan/&lt;/xsl:variable&gt;
 
   &lt;xsl:template match="/"&gt;
@@ -86,14 +87,14 @@
   &lt;!-- level 1 --&gt;
   &lt;xsl:template match="/PDBx:datablock"&gt;
     &lt;PDBo:datablock rdf:about="{$base}"&gt;
+      &lt;dcterms:references rdf:resource="{$doi}{$pdb_doi}" rdfs:label="doi:{$pdb_doi}"/&gt;
       &lt;dcterms:identifier&gt;&lt;xsl:value-of select="$PDBID"/&gt;&lt;/dcterms:identifier&gt;
       &lt;skos:altLabel&gt;&lt;xsl:value-of select="$pdbid"/&gt;&lt;/skos:altLabel&gt;
       &lt;dc:title&gt;&lt;xsl:value-of select="PDBx:structCategory/PDBx:struct/PDBx:title/text()"/&gt;&lt;/dc:title&gt;
       &lt;PDBo:link_to_pdbml rdf:resource="{$pdbml}{$pdbid}.xml.gz"/&gt;
       &lt;PDBo:link_to_pdbml_noatom rdf:resource="{$pdbml_noatom}{$pdbid}-noatom.xml.gz"/&gt;
       &lt;PDBo:link_to_pdbml_extatom rdf:resource="{$pdbml_extatom}{$pdbid}-extatom.xml.gz"/&gt;
-      &lt;PDBo:link_to_vrpt rdf:resource="{$vrpt_base}"/&gt;
-      &lt;PDBo:link_to_doi rdf:resource="{$doi}{$pdb_doi}" rdfs:label="doi:{$pdb_doi}"/&gt;
+      &lt;PDBo:link_to_vrpt rdf:resource="{$vrpt}"/&gt;
       &lt;owl:sameAs rdf:resource="{$base_lower}"/&gt;
       &lt;rdfs:seeAlso rdf:resource="{$pdbj}{$PDBID}"/&gt;
       &lt;rdfs:seeAlso rdf:resource="{$rcsb}{$PDBID}"/&gt;
@@ -185,7 +186,7 @@
       &lt;xsl:for-each select="ext:node-set($ec_list)/token"&gt;
         &lt;xsl:variable name="ec"&gt;&lt;xsl:value-of select="normalize-space(text())"/&gt;&lt;/xsl:variable&gt;
         &lt;xsl:if test="string-length($ec)!=0"&gt;
-          &lt;PDBo:link_to_enzyme rdf:resource="{$enzyme}{$ec}" rdfs:label="enzyme:{$ec}"/&gt;
+          &lt;PDBo:link_to_enzyme rdf:resource="{$enzyme}{$ec}" rdfs:label="ec-code:{$ec}"/&gt;
           &lt;rdfs:seeAlso rdf:resource="{$idorg}ec-code:{$ec}" rdfs:label="ec-code:{$ec}"/&gt;
         &lt;/xsl:if&gt;
       &lt;/xsl:for-each&gt;
@@ -332,6 +333,26 @@
   &lt;xsl:template match="PDBx:pdbx_database_related[@db_name='SASBDB']/@db_id" mode="linked"&gt;
     &lt;PDBo:link_to_sasbdb rdf:resource="{$sasbdb}{.}" rdfs:label="sasbdb:{.}"/&gt;
     &lt;rdfs:seeAlso rdf:resource="{$idorg}sasbdb:{.}" rdfs:label="sasbdb:{.}"/&gt;
+  &lt;/xsl:template&gt;
+
+  &lt;xsl:template match="PDBx:citation_author/PDBx:identifier_ORCID[text()!='']" mode="linked"&gt;
+    &lt;PDBo:link_to_orcid rdf:resource="{$orcid}{text()}" rdfs:label="orcid:{text()}"/&gt;
+    &lt;rdfs:seeAlso rdf:resource="{$idorg}orcid:{text()}" rdfs:label="orcid:{text()}"/&gt;
+  &lt;/xsl:template&gt;
+
+  &lt;xsl:template match="PDBx:audit_author/PDBx:identifier_ORCID[text()!='']" mode="linked"&gt;
+    &lt;PDBo:link_to_orcid rdf:resource="{$orcid}{text()}" rdfs:label="orcid:{text()}"/&gt;
+    &lt;rdfs:seeAlso rdf:resource="{$idorg}orcid:{text()}" rdfs:label="orcid:{text()}"/&gt;
+  &lt;/xsl:template&gt;
+
+  &lt;xsl:template match="PDBx:em_author_list/PDBx:identifier_ORCID[text()!='']" mode="linked"&gt;
+    &lt;PDBo:link_to_orcid rdf:resource="{$orcid}{text()}" rdfs:label="orcid:{text()}"/&gt;
+    &lt;rdfs:seeAlso rdf:resource="{$idorg}orcid:{text()}" rdfs:label="orcid:{text()}"/&gt;
+  &lt;/xsl:template&gt;
+
+  &lt;xsl:template match="PDBx:pdbx_contact_author/PDBx:identifier_ORCID[text()!='']" mode="linked"&gt;
+    &lt;PDBo:link_to_orcid rdf:resource="{$orcid}{text()}" rdfs:label="orcid:{text()}"/&gt;
+    &lt;rdfs:seeAlso rdf:resource="{$idorg}orcid:{text()}" rdfs:label="orcid:{text()}"/&gt;
   &lt;/xsl:template&gt;
 
   &lt;!-- level-3 templates follow --&gt;</xsl2:text>

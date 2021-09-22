@@ -187,6 +187,21 @@
         <rdfs:comment xml:lang="en">external link to glycoinfo.org.</rdfs:comment>
       </owl:ObjectProperty>
 
+      <owl:ObjectProperty rdf:ID="link_to_kegg_comp">
+        <rdfs:subPropertyOf rdf:resource="#html_link_to"/>
+        <rdfs:comment xml:lang="en">external link to KEGG Compound.</rdfs:comment>
+      </owl:ObjectProperty>
+
+      <owl:ObjectProperty rdf:ID="link_to_nadb">
+        <rdfs:subPropertyOf rdf:resource="#html_link_to"/>
+        <rdfs:comment xml:lang="en">external link to Novel Antibiotics Data Base.</rdfs:comment>
+      </owl:ObjectProperty>
+
+      <owl:ObjectProperty rdf:ID="link_to_orcid">
+        <rdfs:subPropertyOf rdf:resource="#html_link_to"/>
+        <rdfs:comment xml:lang="en">external link to ORCiD (Open Researcher and Contributor ID).</rdfs:comment>
+      </owl:ObjectProperty>
+
       <owl:ObjectProperty rdf:ID="link_to_doi">
 	<rdfs:subPropertyOf rdf:resource="#html_link_to"/>
 	<rdfs:comment xml:lang="en">external link to DOI (digital object identifier).</rdfs:comment>

@@ -2,31 +2,27 @@
   version="1.0"
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xmlns:PDBx="http://pdbml.pdb.org/schema/pdbx-v50.xsd"
-  xmlns:PDBo="http://rdf.wwpdb.org/schema/pdbx-v50.owl#"
   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
   xmlns:owl="http://www.w3.org/2002/07/owl#"
   xmlns:dc="http://purl.org/dc/elements/1.1/"
   xmlns:dcterms="http://purl.org/dc/terms/"
-  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-  xmlns:ext="http://exslt.org/common" exclude-result-prefixes="ext">
+  xmlns:PDBx="http://pdbml.pdb.org/schema/pdbx-v50.xsd"
+  xmlns:PDBo="http://rdf.wwpdb.org/schema/pdbx-v50.owl#"
+  xmlns:ext="http://exslt.org/common" exclude-result-prefixes="PDBx ext">
 
   <xsl:output method="xml" indent="yes"/>
   <xsl:strip-space elements="*"/>
   <xsl:variable name="PDBID"><xsl:value-of select="/PDBx:datablock/@datablockName"/></xsl:variable>
-  <xsl:variable name="pdbid"><xsl:value-of select="translate($PDBID,'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz')"/></xsl:variable>
   <xsl:variable name="base">http://rdf.wwpdb.org/cc/<xsl:value-of select="$PDBID"/></xsl:variable>
-  <xsl:variable name="base_lower">http://rdf.wwpdb.org/cc/<xsl:value-of select="$pdbid"/></xsl:variable>
   <xsl:variable name="pdb_link">http://rdf.wwpdb.org/pdb/</xsl:variable>
   <xsl:variable name="chem_comp">http://rdf.wwpdb.org/cc/</xsl:variable>
-  <xsl:variable name="pdbj">https://pdbj.org/chemie/summary/</xsl:variable>
-  <xsl:variable name="rcsb">https://www3.rcsb.org/ligand/</xsl:variable>
-  <xsl:variable name="pdbe">https://www.ebi.ac.uk/pdbe-srv/pdbechem/chemicalCompound/show/</xsl:variable>
-
+  <xsl:variable name="pdbj">http://pdbj.org/chemie/summary/</xsl:variable>
+  <xsl:variable name="rcsb">http://www.rcsb.org/ligand/</xsl:variable>
+  <xsl:variable name="pdbe">http://www.ebi.ac.uk/pdbe-srv/pdbechem/chemicalCompound/show/</xsl:variable>
   <xsl:variable name="idorg">http://identifiers.org/</xsl:variable>
-  <xsl:variable name="doi">https://doi.org/</xsl:variable>
-  <xsl:variable name="pubmed">https://www.ncbi.nlm.nih.gov/pubmed/</xsl:variable>
+  <xsl:variable name="doi">http://doi.org/</xsl:variable>
+  <xsl:variable name="pubmed">http://www.ncbi.nlm.nih.gov/pubmed/</xsl:variable>
   <xsl:variable name="taxonomy">http://purl.uniprot.org/taxonomy/</xsl:variable>
   <xsl:variable name="enzyme">http://purl.uniprot.org/enzyme/</xsl:variable>
 
@@ -40,9 +36,7 @@
   <xsl:template match="/PDBx:datablock">
     <PDBo:datablock rdf:about="{$base}">
       <dcterms:identifier><xsl:value-of select="$PDBID"/></dcterms:identifier>
-      <skos:altLabel><xsl:value-of select="$pdbid"/></skos:altLabel>
       <dc:title><xsl:value-of select="PDBx:chem_compCategory/PDBx:chem_comp/PDBx:name/text()"/></dc:title>
-    
       <rdfs:seeAlso rdf:resource="{$pdbj}{$PDBID}"/>
       <rdfs:seeAlso rdf:resource="{$rcsb}{$PDBID}"/>
       <rdfs:seeAlso rdf:resource="{$pdbe}{$PDBID}"/>
@@ -150,15 +144,18 @@
   </xsl:template>
 
   <xsl:template match="PDBx:pdbx_database_related[@db_name='PDB' and @content_type!='split']/@db_id" mode="linked">
-    <PDBo:link_to_pdb rdf:resource="{$pdb_link}{.}"/>
+    <xsl:variable name="upper_code"><xsl:value-of select="translate(.,'abcdefghijklmnopqrstuvwxyz','ABCDEFGHIJKLMNOPQRSTUVWXYZ')"/></xsl:variable>
+    <PDBo:link_to_pdb rdf:resource="{$pdb_link}{$upper_code}"/>
   </xsl:template>
 
   <xsl:template match="PDBx:pdbx_database_related[@db_name='PDB' and @content_type='split']/@db_id" mode="linked">
-    <PDBo:link_to_pdb_split rdf:resource="{$pdb_link}{.}"/>
+    <xsl:variable name="upper_code"><xsl:value-of select="translate(.,'abcdefghijklmnopqrstuvwxyz','ABCDEFGHIJKLMNOPQRSTUVWXYZ')"/></xsl:variable>
+    <PDBo:link_to_pdb_split rdf:resource="{$pdb_link}{$upper_code}"/>
   </xsl:template>
 
-  <xsl:template match="PDBx:chem_comp/PDBx:pdbx_model_coordinates_db_code" mode="linked">
-    <PDBo:link_to_pdb rdf:resource="{$pdb_link}{text()}"/>
+  <xsl:template match="PDBx:pdbx_reference_molecule/PDBx:representative_PDB_id_code[text()!='']" mode="linked">
+    <xsl:variable name="upper_code"><xsl:value-of select="translate(text(),'abcdefghijklmnopqrstuvwxyz','ABCDEFGHIJKLMNOPQRSTUVWXYZ')"/></xsl:variable>
+    <PDBo:link_to_pdb rdf:resource="{$pdb_link}{$upper_code}"/>
   </xsl:template>
   <!-- level-3 templates follow -->
   <xsl:template match="PDBx:datablock/PDBx:atom_siteCategory/PDBx:atom_site">

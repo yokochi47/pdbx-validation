@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:PDBx="http://pdbml.pdb.org/schema/pdbx-v50.xsd" xmlns:PDBo="http://rdf.wwpdb.org/schema/pdbx-v50.owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:PDBo="http://rdf.wwpdb.org/schema/pdbx-v50.owl#">
   <PDBo:datablock rdf:about="http://rdf.wwpdb.org/pdb/7KLD">
+    <dcterms:references rdf:resource="http://doi.org/10.2210/pdb7kld/pdb" rdfs:label="doi:10.2210/pdb7kld/pdb"/>
     <dcterms:identifier>7KLD</dcterms:identifier>
     <skos:altLabel>7kld</skos:altLabel>
     <dc:title>Crystal Structure of an Essential Ribosomal Processing Protease Prp from S. aureus in complex with a covalently linked product Peptide</dc:title>
@@ -8,11 +9,10 @@
     <PDBo:link_to_pdbml_noatom rdf:resource="ftp://ftp.wwpdb.org/pub/pdb/data/structures/all/XML-noatom/7kld-noatom.xml.gz"/>
     <PDBo:link_to_pdbml_extatom rdf:resource="ftp://ftp.wwpdb.org/pub/pdb/data/structures/all/XML-extatom/7kld-extatom.xml.gz"/>
     <PDBo:link_to_vrpt rdf:resource="http://rdf.wwpdb.org/vrpt/7KLD"/>
-    <PDBo:link_to_doi rdf:resource="https://doi.org/10.2210/pdb7kld/pdb" rdfs:label="doi:10.2210/pdb7kld/pdb"/>
     <owl:sameAs rdf:resource="http://rdf.wwpdb.org/pdb/7kld"/>
-    <rdfs:seeAlso rdf:resource="https://pdbj.org/pdb/7KLD"/>
-    <rdfs:seeAlso rdf:resource="https://www.rcsb.org/pdb/explore.do?structureId=7KLD"/>
-    <rdfs:seeAlso rdf:resource="https://www.ebi.ac.uk/pdbe/entry/pdb/7KLD"/>
+    <rdfs:seeAlso rdf:resource="http://pdbj.org/pdb/7KLD"/>
+    <rdfs:seeAlso rdf:resource="http://www.rcsb.org/pdb/explore.do?structureId=7KLD"/>
+    <rdfs:seeAlso rdf:resource="http://www.ebi.ac.uk/pdbe/entry/pdb/7KLD"/>
     <PDBo:datablockName>7KLD-noatom</PDBo:datablockName>
     <PDBo:has_atom_sitesCategory>
       <PDBo:atom_sitesCategory rdf:about="http://rdf.wwpdb.org/pdb/7KLD/atom_sitesCategory">
@@ -125,6 +125,8 @@
             <PDBo:audit_author.pdbx_ordinal>1</PDBo:audit_author.pdbx_ordinal>
             <PDBo:audit_author.identifier_ORCID>0000-0003-4846-3445</PDBo:audit_author.identifier_ORCID>
             <PDBo:audit_author.name>Wright, H.T.</PDBo:audit_author.name>
+            <PDBo:link_to_orcid rdf:resource="http://orcid.org/0000-0003-4846-3445" rdfs:label="orcid:0000-0003-4846-3445"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/orcid:0000-0003-4846-3445" rdfs:label="orcid:0000-0003-4846-3445"/>
           </PDBo:audit_author>
         </PDBo:has_audit_author>
         <PDBo:has_audit_author>
@@ -133,6 +135,8 @@
             <PDBo:audit_author.pdbx_ordinal>2</PDBo:audit_author.pdbx_ordinal>
             <PDBo:audit_author.identifier_ORCID>0000-0003-4674-4024</PDBo:audit_author.identifier_ORCID>
             <PDBo:audit_author.name>Peterson, D.</PDBo:audit_author.name>
+            <PDBo:link_to_orcid rdf:resource="http://orcid.org/0000-0003-4674-4024" rdfs:label="orcid:0000-0003-4674-4024"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/orcid:0000-0003-4674-4024" rdfs:label="orcid:0000-0003-4674-4024"/>
           </PDBo:audit_author>
         </PDBo:has_audit_author>
       </PDBo:audit_authorCategory>
@@ -465,6 +469,8 @@
             <PDBo:citation_author.name>Wright, H.T.</PDBo:citation_author.name>
             <PDBo:citation_author.ordinal>1</PDBo:citation_author.ordinal>
             <PDBo:citation_author.identifier_ORCID>0000-0003-4846-3445</PDBo:citation_author.identifier_ORCID>
+            <PDBo:link_to_orcid rdf:resource="http://orcid.org/0000-0003-4846-3445" rdfs:label="orcid:0000-0003-4846-3445"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/orcid:0000-0003-4846-3445" rdfs:label="orcid:0000-0003-4846-3445"/>
           </PDBo:citation_author>
         </PDBo:has_citation_author>
         <PDBo:has_citation_author>
@@ -479,6 +485,8 @@
             <PDBo:citation_author.name>Peterson, D.</PDBo:citation_author.name>
             <PDBo:citation_author.ordinal>2</PDBo:citation_author.ordinal>
             <PDBo:citation_author.identifier_ORCID>0000-0003-4674-4024</PDBo:citation_author.identifier_ORCID>
+            <PDBo:link_to_orcid rdf:resource="http://orcid.org/0000-0003-4674-4024" rdfs:label="orcid:0000-0003-4674-4024"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/orcid:0000-0003-4674-4024" rdfs:label="orcid:0000-0003-4674-4024"/>
           </PDBo:citation_author>
         </PDBo:has_citation_author>
         <PDBo:has_citation_author>

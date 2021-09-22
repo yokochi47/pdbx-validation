@@ -1,12 +1,11 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:PDBx="http://pdbml.pdb.org/schema/pdbx-v50.xsd" xmlns:PDBo="http://rdf.wwpdb.org/schema/pdbx-v50.owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:PDBo="http://rdf.wwpdb.org/schema/pdbx-v50.owl#">
   <PDBo:datablock rdf:about="http://rdf.wwpdb.org/cc/ATP">
     <dcterms:identifier>ATP</dcterms:identifier>
-    <skos:altLabel>atp</skos:altLabel>
     <dc:title>ADENOSINE-5'-TRIPHOSPHATE</dc:title>
-    <rdfs:seeAlso rdf:resource="https://pdbj.org/chemie/summary/ATP"/>
-    <rdfs:seeAlso rdf:resource="https://www3.rcsb.org/ligand/ATP"/>
-    <rdfs:seeAlso rdf:resource="https://www.ebi.ac.uk/pdbe-srv/pdbechem/chemicalCompound/show/ATP"/>
+    <rdfs:seeAlso rdf:resource="http://pdbj.org/chemie/summary/ATP"/>
+    <rdfs:seeAlso rdf:resource="http://www.rcsb.org/ligand/ATP"/>
+    <rdfs:seeAlso rdf:resource="http://www.ebi.ac.uk/pdbe-srv/pdbechem/chemicalCompound/show/ATP"/>
     <PDBo:datablockName>ATP</PDBo:datablockName>
     <PDBo:has_chem_compCategory>
       <PDBo:chem_compCategory rdf:about="http://rdf.wwpdb.org/cc/ATP/chem_compCategory">
@@ -29,7 +28,6 @@
             <PDBo:chem_comp.pdbx_type>HETAIN</PDBo:chem_comp.pdbx_type>
             <PDBo:chem_comp.three_letter_code>ATP</PDBo:chem_comp.three_letter_code>
             <PDBo:chem_comp.type>non-polymer</PDBo:chem_comp.type>
-            <PDBo:link_to_pdb rdf:resource="http://rdf.wwpdb.org/pdb/1B0U"/>
           </PDBo:chem_comp>
         </PDBo:has_chem_comp>
       </PDBo:chem_compCategory>

@@ -37,7 +37,7 @@ fi
 
 mkdir -p $RDF
 
-last=`find $RDF -maxdepth 1 -name '*.rdf.gz' | wc -l 2> /dev/null`
+last=`find $RDF -maxdepth 2 -name '*.rdf.gz' | wc -l 2> /dev/null`
 #total=`find $PDBML_NOATOM -maxdepth 2 -name '*-noatom.xml.gz' | wc -l 2> /dev/null`
 total=`find $PDBML_NOATOM_SIFTS -maxdepth 2 -name '*-noatom-sifts.xml.gz' | wc -l 2> /dev/null`
 err=`find $RDF -maxdepth 1 -name '*.err' | wc -l 2> /dev/null`

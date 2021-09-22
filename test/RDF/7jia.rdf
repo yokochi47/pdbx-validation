@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:PDBx="http://pdbml.pdb.org/schema/pdbx-v50.xsd" xmlns:PDBo="http://rdf.wwpdb.org/schema/pdbx-v50.owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:PDBo="http://rdf.wwpdb.org/schema/pdbx-v50.owl#">
   <PDBo:datablock rdf:about="http://rdf.wwpdb.org/pdb/7JIA">
+    <dcterms:references rdf:resource="http://doi.org/10.2210/pdb7jia/pdb" rdfs:label="doi:10.2210/pdb7jia/pdb"/>
     <dcterms:identifier>7JIA</dcterms:identifier>
     <skos:altLabel>7jia</skos:altLabel>
     <dc:title>Structure of truncated zebrafish granulin AaE</dc:title>
@@ -8,11 +9,10 @@
     <PDBo:link_to_pdbml_noatom rdf:resource="ftp://ftp.wwpdb.org/pub/pdb/data/structures/all/XML-noatom/7jia-noatom.xml.gz"/>
     <PDBo:link_to_pdbml_extatom rdf:resource="ftp://ftp.wwpdb.org/pub/pdb/data/structures/all/XML-extatom/7jia-extatom.xml.gz"/>
     <PDBo:link_to_vrpt rdf:resource="http://rdf.wwpdb.org/vrpt/7JIA"/>
-    <PDBo:link_to_doi rdf:resource="https://doi.org/10.2210/pdb7jia/pdb" rdfs:label="doi:10.2210/pdb7jia/pdb"/>
     <owl:sameAs rdf:resource="http://rdf.wwpdb.org/pdb/7jia"/>
-    <rdfs:seeAlso rdf:resource="https://pdbj.org/pdb/7JIA"/>
-    <rdfs:seeAlso rdf:resource="https://www.rcsb.org/pdb/explore.do?structureId=7JIA"/>
-    <rdfs:seeAlso rdf:resource="https://www.ebi.ac.uk/pdbe/entry/pdb/7JIA"/>
+    <rdfs:seeAlso rdf:resource="http://pdbj.org/pdb/7JIA"/>
+    <rdfs:seeAlso rdf:resource="http://www.rcsb.org/pdb/explore.do?structureId=7JIA"/>
+    <rdfs:seeAlso rdf:resource="http://www.ebi.ac.uk/pdbe/entry/pdb/7JIA"/>
     <PDBo:datablockName>7JIA-noatom</PDBo:datablockName>
     <PDBo:has_atom_sitesCategory>
       <PDBo:atom_sitesCategory rdf:about="http://rdf.wwpdb.org/pdb/7JIA/atom_sitesCategory">
@@ -255,8 +255,8 @@
             <PDBo:citation.pdbx_database_id_PubMed>32781704</PDBo:citation.pdbx_database_id_PubMed>
             <PDBo:citation.title>Folding of Truncated Granulin Peptides.</PDBo:citation.title>
             <PDBo:citation.year>2020</PDBo:citation.year>
-            <PDBo:link_to_doi rdf:resource="https://doi.org/10.3390/biom10081152" rdfs:label="doi:10.3390/biom10081152"/>
-            <PDBo:link_to_pubmed rdf:resource="https://www.ncbi.nlm.nih.gov/pubmed/32781704" rdfs:label="pubmed:32781704"/>
+            <PDBo:link_to_doi rdf:resource="http://doi.org/10.3390/biom10081152" rdfs:label="doi:10.3390/biom10081152"/>
+            <PDBo:link_to_pubmed rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/32781704" rdfs:label="pubmed:32781704"/>
             <dcterms:references rdf:resource="http://identifiers.org/pubmed:32781704" rdfs:label="pubmed:32781704"/>
           </PDBo:citation>
         </PDBo:has_citation>
@@ -328,6 +328,8 @@
             <PDBo:citation_author.name>Smout, M.J.</PDBo:citation_author.name>
             <PDBo:citation_author.ordinal>5</PDBo:citation_author.ordinal>
             <PDBo:citation_author.identifier_ORCID>0000-0001-6937-0112</PDBo:citation_author.identifier_ORCID>
+            <PDBo:link_to_orcid rdf:resource="http://orcid.org/0000-0001-6937-0112" rdfs:label="orcid:0000-0001-6937-0112"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/orcid:0000-0001-6937-0112" rdfs:label="orcid:0000-0001-6937-0112"/>
           </PDBo:citation_author>
         </PDBo:has_citation_author>
         <PDBo:has_citation_author>
@@ -342,6 +344,8 @@
             <PDBo:citation_author.name>Daly, N.L.</PDBo:citation_author.name>
             <PDBo:citation_author.ordinal>6</PDBo:citation_author.ordinal>
             <PDBo:citation_author.identifier_ORCID>0000-0002-4697-6602</PDBo:citation_author.identifier_ORCID>
+            <PDBo:link_to_orcid rdf:resource="http://orcid.org/0000-0002-4697-6602" rdfs:label="orcid:0000-0002-4697-6602"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/orcid:0000-0002-4697-6602" rdfs:label="orcid:0000-0002-4697-6602"/>
           </PDBo:citation_author>
         </PDBo:has_citation_author>
       </PDBo:citation_authorCategory>

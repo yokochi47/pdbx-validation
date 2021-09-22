@@ -8,20 +8,20 @@
          xmlns:skos="http://www.w3.org/2004/02/skos/core#"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
    <VRPTo:datablock rdf:about="http://rdf.wwpdb.org/vrpt/1B5F">
+      <dcterms:references rdf:resource="http://doi.org/10.2210/pdb1b5f/pdb"
+                          rdfs:label="doi:10.2210/pdb1b5f/pdb"/>
       <dcterms:identifier>1B5F</dcterms:identifier>
       <skos:altLabel>1b5f</skos:altLabel>
-      <dc:title/>
+      <dc:title>wwPDB validation report of PDB entry 1B5F</dc:title>
       <VRPTo:link_to_pdb_src rdf:resource="http://rdf.wwpdb.org/pdb/1b5f"/>
       <VRPTo:link_to_pdbml rdf:resource="ftp://ftp.wwpdb.org/pub/pdb/data/structures/all/XML/1b5f.xml.gz"/>
       <VRPTo:link_to_pdbml_noatom rdf:resource="ftp://ftp.wwpdb.org/pub/pdb/data/structures/all/XML-noatom/1b5f-noatom.xml.gz"/>
       <VRPTo:link_to_pdbml_extatom rdf:resource="ftp://ftp.wwpdb.org/pub/pdb/data/structures/all/XML-extatom/1b5f-extatom.xml.gz"/>
       <VRPTo:link_to_xml_vrpt rdf:resource="ftp://ftp.wwpdb.org/pub/pdb/validation_reports/b5/1b5f/1b5f_validation.xml.gz"/>
-      <VRPTo:link_to_doi rdf:resource="https://doi.org/10.2210/pdb1b5f/pdb"
-                         rdfs:label="doi:10.2210/pdb1b5f/pdb"/>
       <owl:sameAs rdf:resource="http://rdf.wwpdb.org/pdb/1b5f"/>
-      <rdfs:seeAlso rdf:resource="https://pdbj.org/pdb/1B5F"/>
-      <rdfs:seeAlso rdf:resource="https://www.rcsb.org/pdb/explore.do?structureId=1B5F"/>
-      <rdfs:seeAlso rdf:resource="https://www.ebi.ac.uk/pdbe/entry/pdb/1B5F"/>
+      <rdfs:seeAlso rdf:resource="http://pdbj.org/pdb/1B5F"/>
+      <rdfs:seeAlso rdf:resource="http://www.rcsb.org/pdb/explore.do?structureId=1B5F"/>
+      <rdfs:seeAlso rdf:resource="http://www.ebi.ac.uk/pdbe/entry/pdb/1B5F"/>
       <VRPTo:datablockName>1B5F-validation-alt</VRPTo:datablockName>
       <VRPTo:has_entryCategory>
          <VRPTo:entryCategory rdf:about="http://rdf.wwpdb.org/vrpt/1B5F/entryCategory">

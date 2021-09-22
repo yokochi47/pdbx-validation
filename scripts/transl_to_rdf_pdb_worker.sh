@@ -59,10 +59,10 @@ do
   #pdb_id=`basename $pdbml_gz_file -noatom.xml.gz`
   pdb_id=`basename $pdbml_gz_file -noatom-sifts.xml.gz`
   rdf_file=$WORK_DIR/$pdb_id.rdf
-  rdf_gz_file=$WORK_DIR/$pdb_id.rdf.gz
+  div_dir=$WORK_DIR/${pdb_id:1:2}
   err_file=$WORK_DIR/transl_to_rdf_pdb_$pdb_id.err
 
-  if ( [ ! -e $rdf_file ] && [ ! -e $rdf_gz_file ] ) || [ -e $err_file ] ; then
+  if ( [ ! -e $rdf_file ] && [ ! -e $div_dir/`basename $rdf_file`.gz  ] ) || [ -e $err_file ] ; then
 
    pdbml_file=${pdbml_gz_file%.*} # remove the last '.gz'
    gunzip -c $pdbml_gz_file > $pdbml_file || exit 1
@@ -82,8 +82,10 @@ do
     rapper -q -c $rdf_file 2> $err_file && rm -f $err_file || ( cat $err_file ; exit 1 )
    fi
 
+   mk_div_dir $div_dir
+
    if [ -s $rdf_file ] ; then
-    gzip $rdf_file
+    gzip_in_div_dir $rdf_file $div_dir
     if [ $proc_id_mod = 0 ] ; then
      echo -e -n "\rDone "$((proc_id + 1)) of $total ...
     fi

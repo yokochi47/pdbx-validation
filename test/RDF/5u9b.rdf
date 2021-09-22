@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:PDBx="http://pdbml.pdb.org/schema/pdbx-v50.xsd" xmlns:PDBo="http://rdf.wwpdb.org/schema/pdbx-v50.owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:PDBo="http://rdf.wwpdb.org/schema/pdbx-v50.owl#">
   <PDBo:datablock rdf:about="http://rdf.wwpdb.org/pdb/5U9B">
+    <dcterms:references rdf:resource="http://doi.org/10.2210/pdb5u9b/pdb" rdfs:label="doi:10.2210/pdb5u9b/pdb"/>
     <dcterms:identifier>5U9B</dcterms:identifier>
     <skos:altLabel>5u9b</skos:altLabel>
     <dc:title>Solution structure of the zinc fingers 1 and 2 of MBNL1 in complex with human cardiac troponin T pre-mRNA</dc:title>
@@ -8,11 +9,10 @@
     <PDBo:link_to_pdbml_noatom rdf:resource="ftp://ftp.wwpdb.org/pub/pdb/data/structures/all/XML-noatom/5u9b-noatom.xml.gz"/>
     <PDBo:link_to_pdbml_extatom rdf:resource="ftp://ftp.wwpdb.org/pub/pdb/data/structures/all/XML-extatom/5u9b-extatom.xml.gz"/>
     <PDBo:link_to_vrpt rdf:resource="http://rdf.wwpdb.org/vrpt/5U9B"/>
-    <PDBo:link_to_doi rdf:resource="https://doi.org/10.2210/pdb5u9b/pdb" rdfs:label="doi:10.2210/pdb5u9b/pdb"/>
     <owl:sameAs rdf:resource="http://rdf.wwpdb.org/pdb/5u9b"/>
-    <rdfs:seeAlso rdf:resource="https://pdbj.org/pdb/5U9B"/>
-    <rdfs:seeAlso rdf:resource="https://www.rcsb.org/pdb/explore.do?structureId=5U9B"/>
-    <rdfs:seeAlso rdf:resource="https://www.ebi.ac.uk/pdbe/entry/pdb/5U9B"/>
+    <rdfs:seeAlso rdf:resource="http://pdbj.org/pdb/5U9B"/>
+    <rdfs:seeAlso rdf:resource="http://www.rcsb.org/pdb/explore.do?structureId=5U9B"/>
+    <rdfs:seeAlso rdf:resource="http://www.ebi.ac.uk/pdbe/entry/pdb/5U9B"/>
     <PDBo:datablockName>5U9B-noatom</PDBo:datablockName>
     <PDBo:has_atom_sitesCategory>
       <PDBo:atom_sitesCategory rdf:about="http://rdf.wwpdb.org/pdb/5U9B/atom_sitesCategory">
@@ -454,8 +454,8 @@
             <PDBo:citation.pdbx_database_id_PubMed>28718627</PDBo:citation.pdbx_database_id_PubMed>
             <PDBo:citation.title>Structural Basis for Interaction of the Tandem Zinc Finger Domains of Human Muscleblind with Cognate RNA from Human Cardiac Troponin T.</PDBo:citation.title>
             <PDBo:citation.year>2017</PDBo:citation.year>
-            <PDBo:link_to_doi rdf:resource="https://doi.org/10.1021/acs.biochem.7b00484" rdfs:label="doi:10.1021/acs.biochem.7b00484"/>
-            <PDBo:link_to_pubmed rdf:resource="https://www.ncbi.nlm.nih.gov/pubmed/28718627" rdfs:label="pubmed:28718627"/>
+            <PDBo:link_to_doi rdf:resource="http://doi.org/10.1021/acs.biochem.7b00484" rdfs:label="doi:10.1021/acs.biochem.7b00484"/>
+            <PDBo:link_to_pubmed rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/28718627" rdfs:label="pubmed:28718627"/>
             <dcterms:references rdf:resource="http://identifiers.org/pubmed:28718627" rdfs:label="pubmed:28718627"/>
           </PDBo:citation>
         </PDBo:has_citation>
@@ -15257,7 +15257,7 @@ INGRNNLIQQKN</PDBo:struct_ref.pdbx_seq_one_letter_code>
             <PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>ENSG00000152601</PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>
             <PDBo:pdbx_sifts_xref_db_segments.segment_id>1</PDBo:pdbx_sifts_xref_db_segments.segment_id>
             <PDBo:pdbx_sifts_xref_db_segments.instance_id>2</PDBo:pdbx_sifts_xref_db_segments.instance_id>
-            <PDBo:link_to_ensembl rdf:resource="https://www.ensembl.org/id/ENSG00000152601" rdfs:label="ensembl:ENSG00000152601"/>
+            <PDBo:link_to_ensembl rdf:resource="http://www.ensembl.org/id/ENSG00000152601" rdfs:label="ensembl:ENSG00000152601"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/ensembl:ENSG00000152601" rdfs:label="ensembl:ENSG00000152601"/>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start>59</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end>92</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
@@ -15277,7 +15277,7 @@ INGRNNLIQQKN</PDBo:struct_ref.pdbx_seq_one_letter_code>
             <PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>ENSG00000152601</PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>
             <PDBo:pdbx_sifts_xref_db_segments.segment_id>1</PDBo:pdbx_sifts_xref_db_segments.segment_id>
             <PDBo:pdbx_sifts_xref_db_segments.instance_id>3</PDBo:pdbx_sifts_xref_db_segments.instance_id>
-            <PDBo:link_to_ensembl rdf:resource="https://www.ensembl.org/id/ENSG00000152601" rdfs:label="ensembl:ENSG00000152601"/>
+            <PDBo:link_to_ensembl rdf:resource="http://www.ensembl.org/id/ENSG00000152601" rdfs:label="ensembl:ENSG00000152601"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/ensembl:ENSG00000152601" rdfs:label="ensembl:ENSG00000152601"/>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start>1</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end>58</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
@@ -15297,7 +15297,7 @@ INGRNNLIQQKN</PDBo:struct_ref.pdbx_seq_one_letter_code>
             <PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>ENSG00000152601</PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>
             <PDBo:pdbx_sifts_xref_db_segments.segment_id>1</PDBo:pdbx_sifts_xref_db_segments.segment_id>
             <PDBo:pdbx_sifts_xref_db_segments.instance_id>4</PDBo:pdbx_sifts_xref_db_segments.instance_id>
-            <PDBo:link_to_ensembl rdf:resource="https://www.ensembl.org/id/ENSG00000152601" rdfs:label="ensembl:ENSG00000152601"/>
+            <PDBo:link_to_ensembl rdf:resource="http://www.ensembl.org/id/ENSG00000152601" rdfs:label="ensembl:ENSG00000152601"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/ensembl:ENSG00000152601" rdfs:label="ensembl:ENSG00000152601"/>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start>1</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end>58</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
@@ -15317,7 +15317,7 @@ INGRNNLIQQKN</PDBo:struct_ref.pdbx_seq_one_letter_code>
             <PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>ENSG00000152601</PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>
             <PDBo:pdbx_sifts_xref_db_segments.segment_id>1</PDBo:pdbx_sifts_xref_db_segments.segment_id>
             <PDBo:pdbx_sifts_xref_db_segments.instance_id>5</PDBo:pdbx_sifts_xref_db_segments.instance_id>
-            <PDBo:link_to_ensembl rdf:resource="https://www.ensembl.org/id/ENSG00000152601" rdfs:label="ensembl:ENSG00000152601"/>
+            <PDBo:link_to_ensembl rdf:resource="http://www.ensembl.org/id/ENSG00000152601" rdfs:label="ensembl:ENSG00000152601"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/ensembl:ENSG00000152601" rdfs:label="ensembl:ENSG00000152601"/>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start>59</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end>92</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
@@ -15337,7 +15337,7 @@ INGRNNLIQQKN</PDBo:struct_ref.pdbx_seq_one_letter_code>
             <PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>IPR000571</PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>
             <PDBo:pdbx_sifts_xref_db_segments.segment_id>1</PDBo:pdbx_sifts_xref_db_segments.segment_id>
             <PDBo:pdbx_sifts_xref_db_segments.instance_id>6</PDBo:pdbx_sifts_xref_db_segments.instance_id>
-            <PDBo:link_to_interpro rdf:resource="https://www.ebi.ac.uk/interpro/entry/IPR000571" rdfs:label="interpro:IPR000571"/>
+            <PDBo:link_to_interpro rdf:resource="http://www.ebi.ac.uk/interpro/entry/IPR000571" rdfs:label="interpro:IPR000571"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/interpro:IPR000571" rdfs:label="interpro:IPR000571"/>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start>47</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end>72</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
@@ -15357,7 +15357,7 @@ INGRNNLIQQKN</PDBo:struct_ref.pdbx_seq_one_letter_code>
             <PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>IPR000571</PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>
             <PDBo:pdbx_sifts_xref_db_segments.segment_id>1</PDBo:pdbx_sifts_xref_db_segments.segment_id>
             <PDBo:pdbx_sifts_xref_db_segments.instance_id>7</PDBo:pdbx_sifts_xref_db_segments.instance_id>
-            <PDBo:link_to_interpro rdf:resource="https://www.ebi.ac.uk/interpro/entry/IPR000571" rdfs:label="interpro:IPR000571"/>
+            <PDBo:link_to_interpro rdf:resource="http://www.ebi.ac.uk/interpro/entry/IPR000571" rdfs:label="interpro:IPR000571"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/interpro:IPR000571" rdfs:label="interpro:IPR000571"/>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start>14</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end>40</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>

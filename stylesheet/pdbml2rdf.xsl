@@ -2,15 +2,15 @@
   version="1.0"
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xmlns:PDBx="http://pdbml.pdb.org/schema/pdbx-v50.xsd"
-  xmlns:PDBo="http://rdf.wwpdb.org/schema/pdbx-v50.owl#"
   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
   xmlns:owl="http://www.w3.org/2002/07/owl#"
   xmlns:dc="http://purl.org/dc/elements/1.1/"
   xmlns:dcterms="http://purl.org/dc/terms/"
   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-  xmlns:ext="http://exslt.org/common" exclude-result-prefixes="ext">
+  xmlns:PDBx="http://pdbml.pdb.org/schema/pdbx-v50.xsd"
+  xmlns:PDBo="http://rdf.wwpdb.org/schema/pdbx-v50.owl#"
+  xmlns:ext="http://exslt.org/common" exclude-result-prefixes="PDBx ext">
 
   <xsl:param name="wurcs2glytoucan" select="'https://raw.githubusercontent.com/yokochi47/pdbx-validation/master/wurcs2glytoucan/glytoucan.xml'" required="no"/>
   <xsl:param name="glytoucan" select="document($wurcs2glytoucan)"/>
@@ -23,37 +23,38 @@
   <xsl:variable name="pdb_doi"><xsl:value-of select="concat('10.2210/pdb',$pdbid,'/pdb')"/></xsl:variable>
   <xsl:variable name="base">http://rdf.wwpdb.org/pdb/<xsl:value-of select="$PDBID"/></xsl:variable>
   <xsl:variable name="base_lower">http://rdf.wwpdb.org/pdb/<xsl:value-of select="$pdbid"/></xsl:variable>
-  <xsl:variable name="vrpt_base">http://rdf.wwpdb.org/vrpt/<xsl:value-of select="$PDBID"/></xsl:variable>
+  <xsl:variable name="vrpt">http://rdf.wwpdb.org/vrpt/<xsl:value-of select="$PDBID"/></xsl:variable>
   <xsl:variable name="pdb_link">http://rdf.wwpdb.org/pdb/</xsl:variable>
   <xsl:variable name="chem_comp">http://rdf.wwpdb.org/cc/</xsl:variable>
   <xsl:variable name="prd">http://rdf.wwpdb.org/prd/</xsl:variable>
-  <xsl:variable name="pdbj">https://pdbj.org/pdb/</xsl:variable>
-  <xsl:variable name="rcsb">https://www.rcsb.org/pdb/explore.do?structureId=</xsl:variable>
-  <xsl:variable name="pdbe">https://www.ebi.ac.uk/pdbe/entry/pdb/</xsl:variable>
+  <xsl:variable name="pdbj">http://pdbj.org/pdb/</xsl:variable>
+  <xsl:variable name="rcsb">http://www.rcsb.org/pdb/explore.do?structureId=</xsl:variable>
+  <xsl:variable name="pdbe">http://www.ebi.ac.uk/pdbe/entry/pdb/</xsl:variable>
   <xsl:variable name="pdbml">ftp://ftp.wwpdb.org/pub/pdb/data/structures/all/XML/</xsl:variable>
   <xsl:variable name="pdbml_noatom">ftp://ftp.wwpdb.org/pub/pdb/data/structures/all/XML-noatom/</xsl:variable>
   <xsl:variable name="pdbml_extatom">ftp://ftp.wwpdb.org/pub/pdb/data/structures/all/XML-extatom/</xsl:variable>
   <xsl:variable name="bmrb">http://bmrbpub.pdbj.org/rdf/bmr</xsl:variable>
-  <xsl:variable name="emdb">https://www.ebi.ac.uk/emdb/</xsl:variable>
-  <xsl:variable name="sasbdb">https://www.sasbdb.org/data/</xsl:variable>
+  <xsl:variable name="emdb">http://www.ebi.ac.uk/emdb/</xsl:variable>
+  <xsl:variable name="sasbdb">http://www.sasbdb.org/data/</xsl:variable>
   <xsl:variable name="idorg">http://identifiers.org/</xsl:variable>
-  <xsl:variable name="doi">https://doi.org/</xsl:variable>
-  <xsl:variable name="pubmed">https://www.ncbi.nlm.nih.gov/pubmed/</xsl:variable>
+  <xsl:variable name="doi">http://doi.org/</xsl:variable>
+  <xsl:variable name="orcid">http://orcid.org/</xsl:variable>
+  <xsl:variable name="pubmed">http://rdf.ncbi.nlm.nih.gov/pubmed/</xsl:variable>
   <xsl:variable name="taxonomy">http://purl.uniprot.org/taxonomy/</xsl:variable>
   <xsl:variable name="uniprot">http://purl.uniprot.org/uniprot/</xsl:variable>
-  <xsl:variable name="genbank">https://www.ncbi.nlm.nih.gov/nuccore/</xsl:variable>
-  <xsl:variable name="embl">https://www.ncbi.nlm.nih.gov/nuccore/</xsl:variable>
-  <xsl:variable name="pir">https://www.ncbi.nlm.nih.gov/nuccore/</xsl:variable>
-  <xsl:variable name="refseq">https://www.ncbi.nlm.nih.gov/protein/</xsl:variable>
-  <xsl:variable name="norine">https://bioinfo.lifl.fr/norine/result.jsp?ID=</xsl:variable>
+  <xsl:variable name="genbank">http://www.ncbi.nlm.nih.gov/protein/</xsl:variable>
+  <xsl:variable name="embl">http://www.ncbi.nlm.nih.gov/protein/</xsl:variable>
+  <xsl:variable name="pir">http://www.ncbi.nlm.nih.gov/protein/</xsl:variable>
+  <xsl:variable name="refseq">http://www.ncbi.nlm.nih.gov/protein/</xsl:variable>
+  <xsl:variable name="norine">http://bioinfo.lifl.fr/norine/result.jsp?ID=</xsl:variable>
   <xsl:variable name="enzyme">http://purl.uniprot.org/enzyme/</xsl:variable>
   <xsl:variable name="go">http://amigo.geneontology.org/amigo/term/</xsl:variable>
-  <xsl:variable name="interpro">https://www.ebi.ac.uk/interpro/entry/</xsl:variable>
+  <xsl:variable name="interpro">http://www.ebi.ac.uk/interpro/entry/</xsl:variable>
   <xsl:variable name="pfam">http://pfam.xfam.org/family/</xsl:variable>
   <xsl:variable name="cath">http://www.cathdb.info/cathnode/</xsl:variable>
   <xsl:variable name="scop">http://scop.berkeley.edu/sunid=</xsl:variable>
-  <xsl:variable name="scop2">https://scop2.mrc-lmb.cam.ac.uk/term/</xsl:variable>
-  <xsl:variable name="ensembl">https://www.ensembl.org/id/</xsl:variable>
+  <xsl:variable name="scop2">http://scop2.mrc-lmb.cam.ac.uk/term/</xsl:variable>
+  <xsl:variable name="ensembl">http://www.ensembl.org/id/</xsl:variable>
   <xsl:variable name="glycoinfo">http://rdf.glycoinfo.org/glycan/</xsl:variable>
 
   <xsl:template match="/">
@@ -65,14 +66,14 @@
   <!-- level 1 -->
   <xsl:template match="/PDBx:datablock">
     <PDBo:datablock rdf:about="{$base}">
+      <dcterms:references rdf:resource="{$doi}{$pdb_doi}" rdfs:label="doi:{$pdb_doi}"/>
       <dcterms:identifier><xsl:value-of select="$PDBID"/></dcterms:identifier>
       <skos:altLabel><xsl:value-of select="$pdbid"/></skos:altLabel>
       <dc:title><xsl:value-of select="PDBx:structCategory/PDBx:struct/PDBx:title/text()"/></dc:title>
       <PDBo:link_to_pdbml rdf:resource="{$pdbml}{$pdbid}.xml.gz"/>
       <PDBo:link_to_pdbml_noatom rdf:resource="{$pdbml_noatom}{$pdbid}-noatom.xml.gz"/>
       <PDBo:link_to_pdbml_extatom rdf:resource="{$pdbml_extatom}{$pdbid}-extatom.xml.gz"/>
-      <PDBo:link_to_vrpt rdf:resource="{$vrpt_base}"/>
-      <PDBo:link_to_doi rdf:resource="{$doi}{$pdb_doi}" rdfs:label="doi:{$pdb_doi}"/>
+      <PDBo:link_to_vrpt rdf:resource="{$vrpt}"/>
       <owl:sameAs rdf:resource="{$base_lower}"/>
       <rdfs:seeAlso rdf:resource="{$pdbj}{$PDBID}"/>
       <rdfs:seeAlso rdf:resource="{$rcsb}{$PDBID}"/>
@@ -164,7 +165,7 @@
       <xsl:for-each select="ext:node-set($ec_list)/token">
         <xsl:variable name="ec"><xsl:value-of select="normalize-space(text())"/></xsl:variable>
         <xsl:if test="string-length($ec)!=0">
-          <PDBo:link_to_enzyme rdf:resource="{$enzyme}{$ec}" rdfs:label="enzyme:{$ec}"/>
+          <PDBo:link_to_enzyme rdf:resource="{$enzyme}{$ec}" rdfs:label="ec-code:{$ec}"/>
           <rdfs:seeAlso rdf:resource="{$idorg}ec-code:{$ec}" rdfs:label="ec-code:{$ec}"/>
         </xsl:if>
       </xsl:for-each>
@@ -311,6 +312,26 @@
   <xsl:template match="PDBx:pdbx_database_related[@db_name='SASBDB']/@db_id" mode="linked">
     <PDBo:link_to_sasbdb rdf:resource="{$sasbdb}{.}" rdfs:label="sasbdb:{.}"/>
     <rdfs:seeAlso rdf:resource="{$idorg}sasbdb:{.}" rdfs:label="sasbdb:{.}"/>
+  </xsl:template>
+
+  <xsl:template match="PDBx:citation_author/PDBx:identifier_ORCID[text()!='']" mode="linked">
+    <PDBo:link_to_orcid rdf:resource="{$orcid}{text()}" rdfs:label="orcid:{text()}"/>
+    <rdfs:seeAlso rdf:resource="{$idorg}orcid:{text()}" rdfs:label="orcid:{text()}"/>
+  </xsl:template>
+
+  <xsl:template match="PDBx:audit_author/PDBx:identifier_ORCID[text()!='']" mode="linked">
+    <PDBo:link_to_orcid rdf:resource="{$orcid}{text()}" rdfs:label="orcid:{text()}"/>
+    <rdfs:seeAlso rdf:resource="{$idorg}orcid:{text()}" rdfs:label="orcid:{text()}"/>
+  </xsl:template>
+
+  <xsl:template match="PDBx:em_author_list/PDBx:identifier_ORCID[text()!='']" mode="linked">
+    <PDBo:link_to_orcid rdf:resource="{$orcid}{text()}" rdfs:label="orcid:{text()}"/>
+    <rdfs:seeAlso rdf:resource="{$idorg}orcid:{text()}" rdfs:label="orcid:{text()}"/>
+  </xsl:template>
+
+  <xsl:template match="PDBx:pdbx_contact_author/PDBx:identifier_ORCID[text()!='']" mode="linked">
+    <PDBo:link_to_orcid rdf:resource="{$orcid}{text()}" rdfs:label="orcid:{text()}"/>
+    <rdfs:seeAlso rdf:resource="{$idorg}orcid:{text()}" rdfs:label="orcid:{text()}"/>
   </xsl:template>
 
   <!-- level-3 templates follow -->

@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:PDBx="http://pdbml.pdb.org/schema/pdbx-v50.xsd" xmlns:PDBo="http://rdf.wwpdb.org/schema/pdbx-v50.owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:PDBo="http://rdf.wwpdb.org/schema/pdbx-v50.owl#">
   <PDBo:datablock rdf:about="http://rdf.wwpdb.org/pdb/2LOY">
+    <dcterms:references rdf:resource="http://doi.org/10.2210/pdb2loy/pdb" rdfs:label="doi:10.2210/pdb2loy/pdb"/>
     <dcterms:identifier>2LOY</dcterms:identifier>
     <skos:altLabel>2loy</skos:altLabel>
     <dc:title>Refined Miminal Constraint Solution NMR Structure of Translationally-controlled tumor protein (TCTP) from Caenorhabditis elegans, Northeast Structural Genomics Consortium Target WR73</dc:title>
@@ -8,11 +9,10 @@
     <PDBo:link_to_pdbml_noatom rdf:resource="ftp://ftp.wwpdb.org/pub/pdb/data/structures/all/XML-noatom/2loy-noatom.xml.gz"/>
     <PDBo:link_to_pdbml_extatom rdf:resource="ftp://ftp.wwpdb.org/pub/pdb/data/structures/all/XML-extatom/2loy-extatom.xml.gz"/>
     <PDBo:link_to_vrpt rdf:resource="http://rdf.wwpdb.org/vrpt/2LOY"/>
-    <PDBo:link_to_doi rdf:resource="https://doi.org/10.2210/pdb2loy/pdb" rdfs:label="doi:10.2210/pdb2loy/pdb"/>
     <owl:sameAs rdf:resource="http://rdf.wwpdb.org/pdb/2loy"/>
-    <rdfs:seeAlso rdf:resource="https://pdbj.org/pdb/2LOY"/>
-    <rdfs:seeAlso rdf:resource="https://www.rcsb.org/pdb/explore.do?structureId=2LOY"/>
-    <rdfs:seeAlso rdf:resource="https://www.ebi.ac.uk/pdbe/entry/pdb/2LOY"/>
+    <rdfs:seeAlso rdf:resource="http://pdbj.org/pdb/2LOY"/>
+    <rdfs:seeAlso rdf:resource="http://www.rcsb.org/pdb/explore.do?structureId=2LOY"/>
+    <rdfs:seeAlso rdf:resource="http://www.ebi.ac.uk/pdbe/entry/pdb/2LOY"/>
     <PDBo:datablockName>2LOY-noatom</PDBo:datablockName>
     <PDBo:has_atom_sitesCategory>
       <PDBo:atom_sitesCategory rdf:about="http://rdf.wwpdb.org/pdb/2LOY/atom_sitesCategory">
@@ -437,8 +437,8 @@
             <PDBo:citation.pdbx_database_id_PubMed>22733734</PDBo:citation.pdbx_database_id_PubMed>
             <PDBo:citation.title>Determination of solution structures of proteins up to 40 kDa using CS-Rosetta with sparse NMR data from deuterated samples.</PDBo:citation.title>
             <PDBo:citation.year>2012</PDBo:citation.year>
-            <PDBo:link_to_doi rdf:resource="https://doi.org/10.1073/pnas.1203013109" rdfs:label="doi:10.1073/pnas.1203013109"/>
-            <PDBo:link_to_pubmed rdf:resource="https://www.ncbi.nlm.nih.gov/pubmed/22733734" rdfs:label="pubmed:22733734"/>
+            <PDBo:link_to_doi rdf:resource="http://doi.org/10.1073/pnas.1203013109" rdfs:label="doi:10.1073/pnas.1203013109"/>
+            <PDBo:link_to_pubmed rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/22733734" rdfs:label="pubmed:22733734"/>
             <dcterms:references rdf:resource="http://identifiers.org/pubmed:22733734" rdfs:label="pubmed:22733734"/>
           </PDBo:citation>
         </PDBo:has_citation>
@@ -16785,7 +16785,7 @@ VDGTEVPTLMLVKEAIIEEKC</PDBo:struct_ref.pdbx_seq_one_letter_code>
             <PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>IPR018105</PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>
             <PDBo:pdbx_sifts_xref_db_segments.segment_id>1</PDBo:pdbx_sifts_xref_db_segments.segment_id>
             <PDBo:pdbx_sifts_xref_db_segments.instance_id>6</PDBo:pdbx_sifts_xref_db_segments.instance_id>
-            <PDBo:link_to_interpro rdf:resource="https://www.ebi.ac.uk/interpro/entry/IPR018105" rdfs:label="interpro:IPR018105"/>
+            <PDBo:link_to_interpro rdf:resource="http://www.ebi.ac.uk/interpro/entry/IPR018105" rdfs:label="interpro:IPR018105"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/interpro:IPR018105" rdfs:label="interpro:IPR018105"/>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start>1</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end>181</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
@@ -16805,7 +16805,7 @@ VDGTEVPTLMLVKEAIIEEKC</PDBo:struct_ref.pdbx_seq_one_letter_code>
             <PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>IPR011057</PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>
             <PDBo:pdbx_sifts_xref_db_segments.segment_id>1</PDBo:pdbx_sifts_xref_db_segments.segment_id>
             <PDBo:pdbx_sifts_xref_db_segments.instance_id>7</PDBo:pdbx_sifts_xref_db_segments.instance_id>
-            <PDBo:link_to_interpro rdf:resource="https://www.ebi.ac.uk/interpro/entry/IPR011057" rdfs:label="interpro:IPR011057"/>
+            <PDBo:link_to_interpro rdf:resource="http://www.ebi.ac.uk/interpro/entry/IPR011057" rdfs:label="interpro:IPR011057"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/interpro:IPR011057" rdfs:label="interpro:IPR011057"/>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start>1</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end>181</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
@@ -16825,7 +16825,7 @@ VDGTEVPTLMLVKEAIIEEKC</PDBo:struct_ref.pdbx_seq_one_letter_code>
             <PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>IPR018105</PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>
             <PDBo:pdbx_sifts_xref_db_segments.segment_id>1</PDBo:pdbx_sifts_xref_db_segments.segment_id>
             <PDBo:pdbx_sifts_xref_db_segments.instance_id>8</PDBo:pdbx_sifts_xref_db_segments.instance_id>
-            <PDBo:link_to_interpro rdf:resource="https://www.ebi.ac.uk/interpro/entry/IPR018105" rdfs:label="interpro:IPR018105"/>
+            <PDBo:link_to_interpro rdf:resource="http://www.ebi.ac.uk/interpro/entry/IPR018105" rdfs:label="interpro:IPR018105"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/interpro:IPR018105" rdfs:label="interpro:IPR018105"/>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start>1</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end>176</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
@@ -16845,7 +16845,7 @@ VDGTEVPTLMLVKEAIIEEKC</PDBo:struct_ref.pdbx_seq_one_letter_code>
             <PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>IPR018105</PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>
             <PDBo:pdbx_sifts_xref_db_segments.segment_id>1</PDBo:pdbx_sifts_xref_db_segments.segment_id>
             <PDBo:pdbx_sifts_xref_db_segments.instance_id>9</PDBo:pdbx_sifts_xref_db_segments.instance_id>
-            <PDBo:link_to_interpro rdf:resource="https://www.ebi.ac.uk/interpro/entry/IPR018105" rdfs:label="interpro:IPR018105"/>
+            <PDBo:link_to_interpro rdf:resource="http://www.ebi.ac.uk/interpro/entry/IPR018105" rdfs:label="interpro:IPR018105"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/interpro:IPR018105" rdfs:label="interpro:IPR018105"/>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start>1</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end>181</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
@@ -16865,7 +16865,7 @@ VDGTEVPTLMLVKEAIIEEKC</PDBo:struct_ref.pdbx_seq_one_letter_code>
             <PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>IPR011057</PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>
             <PDBo:pdbx_sifts_xref_db_segments.segment_id>1</PDBo:pdbx_sifts_xref_db_segments.segment_id>
             <PDBo:pdbx_sifts_xref_db_segments.instance_id>10</PDBo:pdbx_sifts_xref_db_segments.instance_id>
-            <PDBo:link_to_interpro rdf:resource="https://www.ebi.ac.uk/interpro/entry/IPR011057" rdfs:label="interpro:IPR011057"/>
+            <PDBo:link_to_interpro rdf:resource="http://www.ebi.ac.uk/interpro/entry/IPR011057" rdfs:label="interpro:IPR011057"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/interpro:IPR011057" rdfs:label="interpro:IPR011057"/>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start>1</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end>181</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
@@ -16885,7 +16885,7 @@ VDGTEVPTLMLVKEAIIEEKC</PDBo:struct_ref.pdbx_seq_one_letter_code>
             <PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>IPR011323</PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>
             <PDBo:pdbx_sifts_xref_db_segments.segment_id>1</PDBo:pdbx_sifts_xref_db_segments.segment_id>
             <PDBo:pdbx_sifts_xref_db_segments.instance_id>11</PDBo:pdbx_sifts_xref_db_segments.instance_id>
-            <PDBo:link_to_interpro rdf:resource="https://www.ebi.ac.uk/interpro/entry/IPR011323" rdfs:label="interpro:IPR011323"/>
+            <PDBo:link_to_interpro rdf:resource="http://www.ebi.ac.uk/interpro/entry/IPR011323" rdfs:label="interpro:IPR011323"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/interpro:IPR011323" rdfs:label="interpro:IPR011323"/>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start>1</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end>181</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
@@ -16905,7 +16905,7 @@ VDGTEVPTLMLVKEAIIEEKC</PDBo:struct_ref.pdbx_seq_one_letter_code>
             <PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>IPR018105</PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>
             <PDBo:pdbx_sifts_xref_db_segments.segment_id>1</PDBo:pdbx_sifts_xref_db_segments.segment_id>
             <PDBo:pdbx_sifts_xref_db_segments.instance_id>12</PDBo:pdbx_sifts_xref_db_segments.instance_id>
-            <PDBo:link_to_interpro rdf:resource="https://www.ebi.ac.uk/interpro/entry/IPR018105" rdfs:label="interpro:IPR018105"/>
+            <PDBo:link_to_interpro rdf:resource="http://www.ebi.ac.uk/interpro/entry/IPR018105" rdfs:label="interpro:IPR018105"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/interpro:IPR018105" rdfs:label="interpro:IPR018105"/>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start>46</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end>57</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
@@ -16925,7 +16925,7 @@ VDGTEVPTLMLVKEAIIEEKC</PDBo:struct_ref.pdbx_seq_one_letter_code>
             <PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>IPR018105</PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>
             <PDBo:pdbx_sifts_xref_db_segments.segment_id>1</PDBo:pdbx_sifts_xref_db_segments.segment_id>
             <PDBo:pdbx_sifts_xref_db_segments.instance_id>13</PDBo:pdbx_sifts_xref_db_segments.instance_id>
-            <PDBo:link_to_interpro rdf:resource="https://www.ebi.ac.uk/interpro/entry/IPR018105" rdfs:label="interpro:IPR018105"/>
+            <PDBo:link_to_interpro rdf:resource="http://www.ebi.ac.uk/interpro/entry/IPR018105" rdfs:label="interpro:IPR018105"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/interpro:IPR018105" rdfs:label="interpro:IPR018105"/>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start>1</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end>21</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
@@ -16945,7 +16945,7 @@ VDGTEVPTLMLVKEAIIEEKC</PDBo:struct_ref.pdbx_seq_one_letter_code>
             <PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>IPR018105</PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>
             <PDBo:pdbx_sifts_xref_db_segments.segment_id>1</PDBo:pdbx_sifts_xref_db_segments.segment_id>
             <PDBo:pdbx_sifts_xref_db_segments.instance_id>14</PDBo:pdbx_sifts_xref_db_segments.instance_id>
-            <PDBo:link_to_interpro rdf:resource="https://www.ebi.ac.uk/interpro/entry/IPR018105" rdfs:label="interpro:IPR018105"/>
+            <PDBo:link_to_interpro rdf:resource="http://www.ebi.ac.uk/interpro/entry/IPR018105" rdfs:label="interpro:IPR018105"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/interpro:IPR018105" rdfs:label="interpro:IPR018105"/>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start>60</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end>79</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
@@ -16985,7 +16985,7 @@ VDGTEVPTLMLVKEAIIEEKC</PDBo:struct_ref.pdbx_seq_one_letter_code>
             <PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>8077409</PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>
             <PDBo:pdbx_sifts_xref_db_segments.segment_id>1</PDBo:pdbx_sifts_xref_db_segments.segment_id>
             <PDBo:pdbx_sifts_xref_db_segments.instance_id>16</PDBo:pdbx_sifts_xref_db_segments.instance_id>
-            <PDBo:link_to_scop rdf:resource="https://scop2.mrc-lmb.cam.ac.uk/term/8077409" rdfs:label="scop2:8077409"/>
+            <PDBo:link_to_scop rdf:resource="http://scop2.mrc-lmb.cam.ac.uk/term/8077409" rdfs:label="scop2:8077409"/>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start>1</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end>181</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
           </PDBo:pdbx_sifts_xref_db_segments>
@@ -17124,7 +17124,7 @@ VDGTEVPTLMLVKEAIIEEKC</PDBo:struct_ref.pdbx_seq_one_letter_code>
             <PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>IPR011323</PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>
             <PDBo:pdbx_sifts_xref_db_segments.segment_id>2</PDBo:pdbx_sifts_xref_db_segments.segment_id>
             <PDBo:pdbx_sifts_xref_db_segments.instance_id>6</PDBo:pdbx_sifts_xref_db_segments.instance_id>
-            <PDBo:link_to_interpro rdf:resource="https://www.ebi.ac.uk/interpro/entry/IPR011323" rdfs:label="interpro:IPR011323"/>
+            <PDBo:link_to_interpro rdf:resource="http://www.ebi.ac.uk/interpro/entry/IPR011323" rdfs:label="interpro:IPR011323"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/interpro:IPR011323" rdfs:label="interpro:IPR011323"/>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start>182</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end>189</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>

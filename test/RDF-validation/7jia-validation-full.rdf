@@ -1,19 +1,19 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:VRPTo="http://rdf.wwpdb.org/schema/pdbx-validation-v4.owl#">
   <VRPTo:datablock rdf:about="http://rdf.wwpdb.org/vrpt/7JIA">
+    <dcterms:references rdf:resource="http://doi.org/10.2210/pdb7jia/pdb" rdfs:label="doi:10.2210/pdb7jia/pdb"/>
     <dcterms:identifier>7JIA</dcterms:identifier>
     <skos:altLabel>7jia</skos:altLabel>
-    <dc:title>Structure of truncated zebrafish granulin AaE</dc:title>
+    <dc:title>wwPDB validation report of PDB entry 7JIA</dc:title>
     <VRPTo:link_to_pdb_src rdf:resource="http://rdf.wwpdb.org/pdb/7jia"/>
     <VRPTo:link_to_pdbml rdf:resource="ftp://ftp.wwpdb.org/pub/pdb/data/structures/all/XML/7jia.xml.gz"/>
     <VRPTo:link_to_pdbml_noatom rdf:resource="ftp://ftp.wwpdb.org/pub/pdb/data/structures/all/XML-noatom/7jia-noatom.xml.gz"/>
     <VRPTo:link_to_pdbml_extatom rdf:resource="ftp://ftp.wwpdb.org/pub/pdb/data/structures/all/XML-extatom/7jia-extatom.xml.gz"/>
     <VRPTo:link_to_xml_vrpt rdf:resource="ftp://ftp.wwpdb.org/pub/pdb/validation_reports/ji/7jia/7jia_validation.xml.gz"/>
-    <VRPTo:link_to_doi rdf:resource="https://doi.org/10.2210/pdb7jia/pdb" rdfs:label="doi:10.2210/pdb7jia/pdb"/>
     <owl:sameAs rdf:resource="http://rdf.wwpdb.org/pdb/7jia"/>
-    <rdfs:seeAlso rdf:resource="https://pdbj.org/pdb/7JIA"/>
-    <rdfs:seeAlso rdf:resource="https://www.rcsb.org/pdb/explore.do?structureId=7JIA"/>
-    <rdfs:seeAlso rdf:resource="https://www.ebi.ac.uk/pdbe/entry/pdb/7JIA"/>
+    <rdfs:seeAlso rdf:resource="http://pdbj.org/pdb/7JIA"/>
+    <rdfs:seeAlso rdf:resource="http://www.rcsb.org/pdb/explore.do?structureId=7JIA"/>
+    <rdfs:seeAlso rdf:resource="http://www.ebi.ac.uk/pdbe/entry/pdb/7JIA"/>
     <VRPTo:datablockName>7JIA-validation-full</VRPTo:datablockName>
     <VRPTo:has_entityCategory>
       <VRPTo:entityCategory rdf:about="http://rdf.wwpdb.org/vrpt/7JIA/entityCategory">

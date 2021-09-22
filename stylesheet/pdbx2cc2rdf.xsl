@@ -16,15 +16,14 @@
   version="1.0"
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xmlns:PDBx="http://pdbml.pdb.org/schema/pdbx-v50.xsd"
-  xmlns:PDBo="http://rdf.wwpdb.org/schema/pdbx-v50.owl#"
   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
   xmlns:owl="http://www.w3.org/2002/07/owl#"
   xmlns:dc="http://purl.org/dc/elements/1.1/"
   xmlns:dcterms="http://purl.org/dc/terms/"
-  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-  xmlns:ext="http://exslt.org/common" exclude-result-prefixes="ext"&gt;
+  xmlns:PDBx="http://pdbml.pdb.org/schema/pdbx-v50.xsd"
+  xmlns:PDBo="http://rdf.wwpdb.org/schema/pdbx-v50.owl#"
+  xmlns:ext="http://exslt.org/common" exclude-result-prefixes="PDBx ext"&gt;
 </xsl2:text>
     <xsl2:apply-templates/>
     <xsl2:text disable-output-escaping="yes">
@@ -36,22 +35,15 @@
   &lt;xsl:output method="xml" indent="yes"/&gt;
   &lt;xsl:strip-space elements="*"/&gt;
   &lt;xsl:variable name="PDBID"&gt;&lt;xsl:value-of select="/PDBx:datablock/@datablockName"/&gt;&lt;/xsl:variable&gt;
-  &lt;xsl:variable name="pdbid"&gt;&lt;xsl:value-of select="translate($PDBID,'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz')"/&gt;&lt;/xsl:variable&gt;
   &lt;xsl:variable name="base"&gt;http://rdf.wwpdb.org/cc/&lt;xsl:value-of select="$PDBID"/&gt;&lt;/xsl:variable&gt;
-  &lt;xsl:variable name="base_lower"&gt;http://rdf.wwpdb.org/cc/&lt;xsl:value-of select="$pdbid"/&gt;&lt;/xsl:variable&gt;
   &lt;xsl:variable name="pdb_link"&gt;http://rdf.wwpdb.org/pdb/&lt;/xsl:variable&gt;
   &lt;xsl:variable name="chem_comp"&gt;http://rdf.wwpdb.org/cc/&lt;/xsl:variable&gt;
-  &lt;xsl:variable name="pdbj"&gt;https://pdbj.org/chemie/summary/&lt;/xsl:variable&gt;
-  &lt;xsl:variable name="rcsb"&gt;https://www3.rcsb.org/ligand/&lt;/xsl:variable&gt;
-  &lt;xsl:variable name="pdbe"&gt;https://www.ebi.ac.uk/pdbe-srv/pdbechem/chemicalCompound/show/&lt;/xsl:variable&gt;
-<!--
-  &lt;xsl:variable name="pdbml"&gt;ftp://ftp.wwpdb.org/pub/pdb/data/structures/all/XML/&lt;/xsl:variable&gt;
-  &lt;xsl:variable name="pdbml_noatom"&gt;ftp://ftp.wwpdb.org/pub/pdb/data/structures/all/XML-noatom/&lt;/xsl:variable&gt;
-  &lt;xsl:variable name="pdbml_extatom"&gt;ftp://ftp.wwpdb.org/pub/pdb/data/structures/all/XML-extatom/&lt;/xsl:variable&gt;
--->
+  &lt;xsl:variable name="pdbj"&gt;http://pdbj.org/chemie/summary/&lt;/xsl:variable&gt;
+  &lt;xsl:variable name="rcsb"&gt;http://www.rcsb.org/ligand/&lt;/xsl:variable&gt;
+  &lt;xsl:variable name="pdbe"&gt;http://www.ebi.ac.uk/pdbe-srv/pdbechem/chemicalCompound/show/&lt;/xsl:variable&gt;
   &lt;xsl:variable name="idorg"&gt;http://identifiers.org/&lt;/xsl:variable&gt;
-  &lt;xsl:variable name="doi"&gt;https://doi.org/&lt;/xsl:variable&gt;
-  &lt;xsl:variable name="pubmed"&gt;https://www.ncbi.nlm.nih.gov/pubmed/&lt;/xsl:variable&gt;
+  &lt;xsl:variable name="doi"&gt;http://doi.org/&lt;/xsl:variable&gt;
+  &lt;xsl:variable name="pubmed"&gt;http://www.ncbi.nlm.nih.gov/pubmed/&lt;/xsl:variable&gt;
   &lt;xsl:variable name="taxonomy"&gt;http://purl.uniprot.org/taxonomy/&lt;/xsl:variable&gt;
   &lt;xsl:variable name="enzyme"&gt;http://purl.uniprot.org/enzyme/&lt;/xsl:variable&gt;
 
@@ -65,14 +57,7 @@
   &lt;xsl:template match="/PDBx:datablock"&gt;
     &lt;PDBo:datablock rdf:about="{$base}"&gt;
       &lt;dcterms:identifier&gt;&lt;xsl:value-of select="$PDBID"/&gt;&lt;/dcterms:identifier&gt;
-      &lt;skos:altLabel&gt;&lt;xsl:value-of select="$pdbid"/&gt;&lt;/skos:altLabel&gt;
       &lt;dc:title&gt;&lt;xsl:value-of select="PDBx:chem_compCategory/PDBx:chem_comp/PDBx:name/text()"/&gt;&lt;/dc:title&gt;
-    <!--
-      &lt;PDBo:link_to_pdbml rdf:resource="{$pdbml}{$pdbid}.xml.gz"/&gt;
-      &lt;PDBo:link_to_pdbml_noatom rdf:resource="{$pdbml_noatom}{$pdbid}-noatom.xml.gz"/&gt;
-      &lt;PDBo:link_to_pdbml_extatom rdf:resource="{$pdbml_extatom}{$pdbid}-extatom.xml.gz"/&gt;
-      &lt;owl:sameAs rdf:resource="{$base_lower}"/&gt;
-    -->
       &lt;rdfs:seeAlso rdf:resource="{$pdbj}{$PDBID}"/&gt;
       &lt;rdfs:seeAlso rdf:resource="{$rcsb}{$PDBID}"/&gt;
       &lt;rdfs:seeAlso rdf:resource="{$pdbe}{$PDBID}"/&gt;
@@ -180,15 +165,18 @@
   &lt;/xsl:template&gt;
 
   &lt;xsl:template match="PDBx:pdbx_database_related[@db_name='PDB' and @content_type!='split']/@db_id" mode="linked"&gt;
-    &lt;PDBo:link_to_pdb rdf:resource="{$pdb_link}{.}"/&gt;
+    &lt;xsl:variable name="upper_code"&gt;&lt;xsl:value-of select="translate(.,'abcdefghijklmnopqrstuvwxyz','ABCDEFGHIJKLMNOPQRSTUVWXYZ')"/&gt;&lt;/xsl:variable&gt;
+    &lt;PDBo:link_to_pdb rdf:resource="{$pdb_link}{$upper_code}"/&gt;
   &lt;/xsl:template&gt;
 
   &lt;xsl:template match="PDBx:pdbx_database_related[@db_name='PDB' and @content_type='split']/@db_id" mode="linked"&gt;
-    &lt;PDBo:link_to_pdb_split rdf:resource="{$pdb_link}{.}"/&gt;
+    &lt;xsl:variable name="upper_code"&gt;&lt;xsl:value-of select="translate(.,'abcdefghijklmnopqrstuvwxyz','ABCDEFGHIJKLMNOPQRSTUVWXYZ')"/&gt;&lt;/xsl:variable&gt;
+    &lt;PDBo:link_to_pdb_split rdf:resource="{$pdb_link}{$upper_code}"/&gt;
   &lt;/xsl:template&gt;
 
-  &lt;xsl:template match="PDBx:chem_comp/PDBx:pdbx_model_coordinates_db_code" mode="linked"&gt;
-    &lt;PDBo:link_to_pdb rdf:resource="{$pdb_link}{text()}"/&gt;
+  &lt;xsl:template match="PDBx:pdbx_reference_molecule/PDBx:representative_PDB_id_code[text()!='']" mode="linked"&gt;
+    &lt;xsl:variable name="upper_code"&gt;&lt;xsl:value-of select="translate(text(),'abcdefghijklmnopqrstuvwxyz','ABCDEFGHIJKLMNOPQRSTUVWXYZ')"/&gt;&lt;/xsl:variable&gt;
+    &lt;PDBo:link_to_pdb rdf:resource="{$pdb_link}{$upper_code}"/&gt;
   &lt;/xsl:template&gt;
   &lt;!-- level-3 templates follow --&gt;</xsl2:text>
     <xsl2:call-template name="key_category"/>

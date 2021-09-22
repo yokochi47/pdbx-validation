@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:PDBx="http://pdbml.pdb.org/schema/pdbx-v50.xsd" xmlns:PDBo="http://rdf.wwpdb.org/schema/pdbx-v50.owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:PDBo="http://rdf.wwpdb.org/schema/pdbx-v50.owl#">
   <PDBo:datablock rdf:about="http://rdf.wwpdb.org/pdb/7AB7">
+    <dcterms:references rdf:resource="http://doi.org/10.2210/pdb7ab7/pdb" rdfs:label="doi:10.2210/pdb7ab7/pdb"/>
     <dcterms:identifier>7AB7</dcterms:identifier>
     <skos:altLabel>7ab7</skos:altLabel>
     <dc:title>Structure of Chloroflexus aggregans flavin based fluorescent protein (CagFbFP) I52T Q148K variant</dc:title>
@@ -8,11 +9,10 @@
     <PDBo:link_to_pdbml_noatom rdf:resource="ftp://ftp.wwpdb.org/pub/pdb/data/structures/all/XML-noatom/7ab7-noatom.xml.gz"/>
     <PDBo:link_to_pdbml_extatom rdf:resource="ftp://ftp.wwpdb.org/pub/pdb/data/structures/all/XML-extatom/7ab7-extatom.xml.gz"/>
     <PDBo:link_to_vrpt rdf:resource="http://rdf.wwpdb.org/vrpt/7AB7"/>
-    <PDBo:link_to_doi rdf:resource="https://doi.org/10.2210/pdb7ab7/pdb" rdfs:label="doi:10.2210/pdb7ab7/pdb"/>
     <owl:sameAs rdf:resource="http://rdf.wwpdb.org/pdb/7ab7"/>
-    <rdfs:seeAlso rdf:resource="https://pdbj.org/pdb/7AB7"/>
-    <rdfs:seeAlso rdf:resource="https://www.rcsb.org/pdb/explore.do?structureId=7AB7"/>
-    <rdfs:seeAlso rdf:resource="https://www.ebi.ac.uk/pdbe/entry/pdb/7AB7"/>
+    <rdfs:seeAlso rdf:resource="http://pdbj.org/pdb/7AB7"/>
+    <rdfs:seeAlso rdf:resource="http://www.rcsb.org/pdb/explore.do?structureId=7AB7"/>
+    <rdfs:seeAlso rdf:resource="http://www.ebi.ac.uk/pdbe/entry/pdb/7AB7"/>
     <PDBo:datablockName>7AB7-noatom</PDBo:datablockName>
     <PDBo:has_atom_sitesCategory>
       <PDBo:atom_sitesCategory rdf:about="http://rdf.wwpdb.org/pdb/7AB7/atom_sitesCategory">
@@ -448,8 +448,8 @@
             <PDBo:citation.pdbx_database_id_PubMed>33862085</PDBo:citation.pdbx_database_id_PubMed>
             <PDBo:citation.title>The molecular basis of spectral tuning in blue- and red-shifted flavin-binding fluorescent proteins.</PDBo:citation.title>
             <PDBo:citation.year>2021</PDBo:citation.year>
-            <PDBo:link_to_doi rdf:resource="https://doi.org/10.1016/j.jbc.2021.100662" rdfs:label="doi:10.1016/j.jbc.2021.100662"/>
-            <PDBo:link_to_pubmed rdf:resource="https://www.ncbi.nlm.nih.gov/pubmed/33862085" rdfs:label="pubmed:33862085"/>
+            <PDBo:link_to_doi rdf:resource="http://doi.org/10.1016/j.jbc.2021.100662" rdfs:label="doi:10.1016/j.jbc.2021.100662"/>
+            <PDBo:link_to_pubmed rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/33862085" rdfs:label="pubmed:33862085"/>
             <dcterms:references rdf:resource="http://identifiers.org/pubmed:33862085" rdfs:label="pubmed:33862085"/>
           </PDBo:citation>
         </PDBo:has_citation>
@@ -462,7 +462,7 @@
             <PDBo:citation.pdbx_database_id_DOI>10.1101/2021.01.08.425906</PDBo:citation.pdbx_database_id_DOI>
             <PDBo:citation.title>Structural and mechanistic insight into spectral tuning in flavin-binding fluorescent proteins</PDBo:citation.title>
             <PDBo:citation.year>2021</PDBo:citation.year>
-            <PDBo:link_to_doi rdf:resource="https://doi.org/10.1101/2021.01.08.425906" rdfs:label="doi:10.1101/2021.01.08.425906"/>
+            <PDBo:link_to_doi rdf:resource="http://doi.org/10.1101/2021.01.08.425906" rdfs:label="doi:10.1101/2021.01.08.425906"/>
           </PDBo:citation>
         </PDBo:has_citation>
       </PDBo:citationCategory>
@@ -15717,7 +15717,7 @@ NQLSISPVRDETGNVVAFVGVQTDVTA</PDBo:struct_ref.pdbx_seq_one_letter_code>
             <PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>8095379</PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>
             <PDBo:pdbx_sifts_xref_db_segments.segment_id>1</PDBo:pdbx_sifts_xref_db_segments.segment_id>
             <PDBo:pdbx_sifts_xref_db_segments.instance_id>1</PDBo:pdbx_sifts_xref_db_segments.instance_id>
-            <PDBo:link_to_scop rdf:resource="https://scop2.mrc-lmb.cam.ac.uk/term/8095379" rdfs:label="scop2:8095379"/>
+            <PDBo:link_to_scop rdf:resource="http://scop2.mrc-lmb.cam.ac.uk/term/8095379" rdfs:label="scop2:8095379"/>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start>2</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end>107</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
           </PDBo:pdbx_sifts_xref_db_segments>
@@ -15756,7 +15756,7 @@ NQLSISPVRDETGNVVAFVGVQTDVTA</PDBo:struct_ref.pdbx_seq_one_letter_code>
             <PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>8095379</PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>
             <PDBo:pdbx_sifts_xref_db_segments.segment_id>1</PDBo:pdbx_sifts_xref_db_segments.segment_id>
             <PDBo:pdbx_sifts_xref_db_segments.instance_id>1</PDBo:pdbx_sifts_xref_db_segments.instance_id>
-            <PDBo:link_to_scop rdf:resource="https://scop2.mrc-lmb.cam.ac.uk/term/8095379" rdfs:label="scop2:8095379"/>
+            <PDBo:link_to_scop rdf:resource="http://scop2.mrc-lmb.cam.ac.uk/term/8095379" rdfs:label="scop2:8095379"/>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start>2</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end>105</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
           </PDBo:pdbx_sifts_xref_db_segments>
