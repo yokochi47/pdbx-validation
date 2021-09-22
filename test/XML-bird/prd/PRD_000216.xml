@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<PDBx:datablock datablockName="PRD_000216"
+   xmlns:PDBx="http://pdbml.pdb.org/schema/pdbx-v50.xsd"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://pdbml.pdb.org/schema/pdbx-v50.xsd pdbx-v50.xsd">
+
+   <PDBx:pdbx_prd_auditCategory>
+      <PDBx:pdbx_prd_audit action_type="Create molecule" date="2012-02-08" prd_id="PRD_000216">
+         <PDBx:processing_site>RCSB</PDBx:processing_site>
+      </PDBx:pdbx_prd_audit>
+      <PDBx:pdbx_prd_audit action_type="Other modification" date="2012-07-09" prd_id="PRD_000216">
+         <PDBx:processing_site>PDBe</PDBx:processing_site>
+      </PDBx:pdbx_prd_audit>
+      <PDBx:pdbx_prd_audit action_type="Initial release" date="2012-12-12" prd_id="PRD_000216">
+         <PDBx:processing_site>RCSB</PDBx:processing_site>
+      </PDBx:pdbx_prd_audit>
+      <PDBx:pdbx_prd_audit action_type="Other modification" date="2013-06-03" prd_id="PRD_000216">
+         <PDBx:processing_site>RCSB</PDBx:processing_site>
+      </PDBx:pdbx_prd_audit>
+   </PDBx:pdbx_prd_auditCategory>
+   <PDBx:pdbx_reference_entity_listCategory>
+      <PDBx:pdbx_reference_entity_list component_id="1" prd_id="PRD_000216" ref_entity_id="1">
+         <PDBx:details>LEUPEPTIN</PDBx:details>
+         <PDBx:type>polymer</PDBx:type>
+      </PDBx:pdbx_reference_entity_list>
+   </PDBx:pdbx_reference_entity_listCategory>
+   <PDBx:pdbx_reference_entity_polyCategory>
+      <PDBx:pdbx_reference_entity_poly prd_id="PRD_000216" ref_entity_id="1">
+         <PDBx:db_code>NOR00487</PDBx:db_code>
+         <PDBx:db_name>NOR</PDBx:db_name>
+         <PDBx:type>peptide-like</PDBx:type>
+      </PDBx:pdbx_reference_entity_poly>
+   </PDBx:pdbx_reference_entity_polyCategory>
+   <PDBx:pdbx_reference_entity_poly_linkCategory>
+      <PDBx:pdbx_reference_entity_poly_link component_id="1" link_id="1" prd_id="PRD_000216" ref_entity_id="1">
+         <PDBx:atom_id_1>C</PDBx:atom_id_1>
+         <PDBx:atom_id_2>N</PDBx:atom_id_2>
+         <PDBx:comp_id_1>ACE</PDBx:comp_id_1>
+         <PDBx:comp_id_2>LEU</PDBx:comp_id_2>
+         <PDBx:entity_seq_num_1>1</PDBx:entity_seq_num_1>
+         <PDBx:entity_seq_num_2>2</PDBx:entity_seq_num_2>
+         <PDBx:value_order>sing</PDBx:value_order>
+      </PDBx:pdbx_reference_entity_poly_link>
+      <PDBx:pdbx_reference_entity_poly_link component_id="1" link_id="2" prd_id="PRD_000216" ref_entity_id="1">
+         <PDBx:atom_id_1>C</PDBx:atom_id_1>
+         <PDBx:atom_id_2>N</PDBx:atom_id_2>
+         <PDBx:comp_id_1>LEU</PDBx:comp_id_1>
+         <PDBx:comp_id_2>LEU</PDBx:comp_id_2>
+         <PDBx:entity_seq_num_1>2</PDBx:entity_seq_num_1>
+         <PDBx:entity_seq_num_2>3</PDBx:entity_seq_num_2>
+         <PDBx:value_order>sing</PDBx:value_order>
+      </PDBx:pdbx_reference_entity_poly_link>
+      <PDBx:pdbx_reference_entity_poly_link component_id="1" link_id="3" prd_id="PRD_000216" ref_entity_id="1">
+         <PDBx:atom_id_1>C</PDBx:atom_id_1>
+         <PDBx:atom_id_2>N</PDBx:atom_id_2>
+         <PDBx:comp_id_1>LEU</PDBx:comp_id_1>
+         <PDBx:comp_id_2>AR7</PDBx:comp_id_2>
+         <PDBx:entity_seq_num_1>3</PDBx:entity_seq_num_1>
+         <PDBx:entity_seq_num_2>4</PDBx:entity_seq_num_2>
+         <PDBx:value_order>sing</PDBx:value_order>
+      </PDBx:pdbx_reference_entity_poly_link>
+   </PDBx:pdbx_reference_entity_poly_linkCategory>
+   <PDBx:pdbx_reference_entity_poly_seqCategory>
+      <PDBx:pdbx_reference_entity_poly_seq hetero="N" mon_id="ACE" num="1" prd_id="PRD_000216" ref_entity_id="1">
+         <PDBx:observed>Y</PDBx:observed>
+      </PDBx:pdbx_reference_entity_poly_seq>
+      <PDBx:pdbx_reference_entity_poly_seq hetero="N" mon_id="LEU" num="2" prd_id="PRD_000216" ref_entity_id="1">
+         <PDBx:observed>Y</PDBx:observed>
+         <PDBx:parent_mon_id>LEU</PDBx:parent_mon_id>
+      </PDBx:pdbx_reference_entity_poly_seq>
+      <PDBx:pdbx_reference_entity_poly_seq hetero="N" mon_id="LEU" num="3" prd_id="PRD_000216" ref_entity_id="1">
+         <PDBx:observed>Y</PDBx:observed>
+         <PDBx:parent_mon_id>LEU</PDBx:parent_mon_id>
+      </PDBx:pdbx_reference_entity_poly_seq>
+      <PDBx:pdbx_reference_entity_poly_seq hetero="N" mon_id="AR7" num="4" prd_id="PRD_000216" ref_entity_id="1">
+         <PDBx:observed>Y</PDBx:observed>
+         <PDBx:parent_mon_id>ARG</PDBx:parent_mon_id>
+      </PDBx:pdbx_reference_entity_poly_seq>
+   </PDBx:pdbx_reference_entity_poly_seqCategory>
+   <PDBx:pdbx_reference_entity_sequenceCategory>
+      <PDBx:pdbx_reference_entity_sequence prd_id="PRD_000216" ref_entity_id="1">
+         <PDBx:NRP_flag>Y</PDBx:NRP_flag>
+         <PDBx:type>peptide-like</PDBx:type>
+      </PDBx:pdbx_reference_entity_sequence>
+   </PDBx:pdbx_reference_entity_sequenceCategory>
+   <PDBx:pdbx_reference_entity_src_natCategory>
+      <PDBx:pdbx_reference_entity_src_nat ordinal="1" prd_id="PRD_000216" ref_entity_id="1">
+         <PDBx:db_code>Novel Antibiotics DataBase</PDBx:db_code>
+         <PDBx:db_name>220065</PDBx:db_name>
+         <PDBx:organism_scientific>Actinomycetes Streptomyces roseus MA 839-A1</PDBx:organism_scientific>
+         <PDBx:source>PubMed</PDBx:source>
+         <PDBx:taxid>66430</PDBx:taxid>
+      </PDBx:pdbx_reference_entity_src_nat>
+      <PDBx:pdbx_reference_entity_src_nat ordinal="2" prd_id="PRD_000216" ref_entity_id="1">
+         <PDBx:db_code>Novel Antibiotics DataBase</PDBx:db_code>
+         <PDBx:db_name>220065</PDBx:db_name>
+         <PDBx:organism_scientific>Actinomycetes Streptomyces roseus MB262-M1</PDBx:organism_scientific>
+         <PDBx:source>PubMed</PDBx:source>
+         <PDBx:taxid>66430</PDBx:taxid>
+      </PDBx:pdbx_reference_entity_src_nat>
+   </PDBx:pdbx_reference_entity_src_natCategory>
+   <PDBx:pdbx_reference_moleculeCategory>
+      <PDBx:pdbx_reference_molecule prd_id="PRD_000216">
+         <PDBx:class>Enzyme inhibitor</PDBx:class>
+         <PDBx:formula>C20 H41 N6 O5</PDBx:formula>
+         <PDBx:formula_weight>445.577</PDBx:formula_weight>
+         <PDBx:name>LEUPEPTIN</PDBx:name>
+         <PDBx:release_status>REL</PDBx:release_status>
+         <PDBx:represent_as>polymer</PDBx:represent_as>
+         <PDBx:representative_PDB_id_code>2f9n</PDBx:representative_PDB_id_code>
+         <PDBx:type>Oligopeptide</PDBx:type>
+      </PDBx:pdbx_reference_molecule>
+   </PDBx:pdbx_reference_moleculeCategory>
+</PDBx:datablock>

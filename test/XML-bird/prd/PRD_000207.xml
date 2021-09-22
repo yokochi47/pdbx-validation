@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<PDBx:datablock datablockName="PRD_000207"
+   xmlns:PDBx="http://pdbml.pdb.org/schema/pdbx-v50.xsd"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://pdbml.pdb.org/schema/pdbx-v50.xsd pdbx-v50.xsd">
+
+   <PDBx:pdbx_prd_auditCategory>
+      <PDBx:pdbx_prd_audit action_type="Create molecule" date="2012-02-08" prd_id="PRD_000207">
+         <PDBx:processing_site>RCSB</PDBx:processing_site>
+      </PDBx:pdbx_prd_audit>
+      <PDBx:pdbx_prd_audit action_type="Other modification" date="2012-07-09" prd_id="PRD_000207">
+         <PDBx:processing_site>PDBe</PDBx:processing_site>
+      </PDBx:pdbx_prd_audit>
+      <PDBx:pdbx_prd_audit action_type="Initial release" date="2012-12-12" prd_id="PRD_000207">
+         <PDBx:processing_site>RCSB</PDBx:processing_site>
+      </PDBx:pdbx_prd_audit>
+      <PDBx:pdbx_prd_audit action_type="Other modification" date="2013-06-03" prd_id="PRD_000207">
+         <PDBx:processing_site>RCSB</PDBx:processing_site>
+      </PDBx:pdbx_prd_audit>
+      <PDBx:pdbx_prd_audit action_type="Other modification" date="2017-05-04" prd_id="PRD_000207">
+         <PDBx:processing_site>RCSB</PDBx:processing_site>
+      </PDBx:pdbx_prd_audit>
+      <PDBx:pdbx_prd_audit action_type="Other modification" date="2020-07-29" prd_id="PRD_000207">
+         <PDBx:processing_site>RCSB</PDBx:processing_site>
+      </PDBx:pdbx_prd_audit>
+   </PDBx:pdbx_prd_auditCategory>
+   <PDBx:pdbx_reference_entity_linkCategory>
+      <PDBx:pdbx_reference_entity_link link_id="1" prd_id="PRD_000207">
+         <PDBx:atom_id_1>O4</PDBx:atom_id_1>
+         <PDBx:atom_id_2>C1</PDBx:atom_id_2>
+         <PDBx:comp_id_1>GHP</PDBx:comp_id_1>
+         <PDBx:comp_id_2>BGC</PDBx:comp_id_2>
+         <PDBx:component_1>1</PDBx:component_1>
+         <PDBx:component_2>3</PDBx:component_2>
+         <PDBx:entity_seq_num_1>4</PDBx:entity_seq_num_1>
+         <PDBx:link_class>PN</PDBx:link_class>
+         <PDBx:ref_entity_id_1>1</PDBx:ref_entity_id_1>
+         <PDBx:ref_entity_id_2>3</PDBx:ref_entity_id_2>
+         <PDBx:value_order>sing</PDBx:value_order>
+      </PDBx:pdbx_reference_entity_link>
+      <PDBx:pdbx_reference_entity_link link_id="2" prd_id="PRD_000207">
+         <PDBx:atom_id_1>OC</PDBx:atom_id_1>
+         <PDBx:atom_id_2>C1</PDBx:atom_id_2>
+         <PDBx:comp_id_1>OMX</PDBx:comp_id_1>
+         <PDBx:comp_id_2>ERE</PDBx:comp_id_2>
+         <PDBx:component_1>1</PDBx:component_1>
+         <PDBx:component_2>2</PDBx:component_2>
+         <PDBx:entity_seq_num_1>6</PDBx:entity_seq_num_1>
+         <PDBx:link_class>PN</PDBx:link_class>
+         <PDBx:ref_entity_id_1>1</PDBx:ref_entity_id_1>
+         <PDBx:ref_entity_id_2>2</PDBx:ref_entity_id_2>
+         <PDBx:value_order>sing</PDBx:value_order>
+      </PDBx:pdbx_reference_entity_link>
+      <PDBx:pdbx_reference_entity_link link_id="3" prd_id="PRD_000207">
+         <PDBx:atom_id_1>O2</PDBx:atom_id_1>
+         <PDBx:atom_id_2>C1</PDBx:atom_id_2>
+         <PDBx:comp_id_1>BGC</PDBx:comp_id_1>
+         <PDBx:comp_id_2>RAM</PDBx:comp_id_2>
+         <PDBx:component_1>3</PDBx:component_1>
+         <PDBx:component_2>4</PDBx:component_2>
+         <PDBx:link_class>NN</PDBx:link_class>
+         <PDBx:ref_entity_id_1>3</PDBx:ref_entity_id_1>
+         <PDBx:ref_entity_id_2>4</PDBx:ref_entity_id_2>
+         <PDBx:value_order>sing</PDBx:value_order>
+      </PDBx:pdbx_reference_entity_link>
+   </PDBx:pdbx_reference_entity_linkCategory>
+   <PDBx:pdbx_reference_entity_listCategory>
+      <PDBx:pdbx_reference_entity_list component_id="1" prd_id="PRD_000207" ref_entity_id="1">
+         <PDBx:details>PEPTIDE LIKE SEQUENCE RESIDUES 1 TO 7</PDBx:details>
+         <PDBx:type>polymer</PDBx:type>
+      </PDBx:pdbx_reference_entity_list>
+      <PDBx:pdbx_reference_entity_list component_id="2" prd_id="PRD_000207" ref_entity_id="2">
+         <PDBx:details>ERE</PDBx:details>
+         <PDBx:type>non-polymer</PDBx:type>
+      </PDBx:pdbx_reference_entity_list>
+      <PDBx:pdbx_reference_entity_list component_id="3" prd_id="PRD_000207" ref_entity_id="3">
+         <PDBx:details>BGC</PDBx:details>
+         <PDBx:type>non-polymer</PDBx:type>
+      </PDBx:pdbx_reference_entity_list>
+      <PDBx:pdbx_reference_entity_list component_id="4" prd_id="PRD_000207" ref_entity_id="4">
+         <PDBx:details>RAM</PDBx:details>
+         <PDBx:type>non-polymer</PDBx:type>
+      </PDBx:pdbx_reference_entity_list>
+   </PDBx:pdbx_reference_entity_listCategory>
+   <PDBx:pdbx_reference_entity_nonpolyCategory>
+      <PDBx:pdbx_reference_entity_nonpoly prd_id="PRD_000207" ref_entity_id="2">
+         <PDBx:chem_comp_id>ERE</PDBx:chem_comp_id>
+         <PDBx:name>4-EPI-VANCOSAMINE</PDBx:name>
+      </PDBx:pdbx_reference_entity_nonpoly>
+      <PDBx:pdbx_reference_entity_nonpoly prd_id="PRD_000207" ref_entity_id="3">
+         <PDBx:chem_comp_id>BGC</PDBx:chem_comp_id>
+         <PDBx:name>BETA-D-GLUCOSE</PDBx:name>
+      </PDBx:pdbx_reference_entity_nonpoly>
+      <PDBx:pdbx_reference_entity_nonpoly prd_id="PRD_000207" ref_entity_id="4">
+         <PDBx:chem_comp_id>RAM</PDBx:chem_comp_id>
+         <PDBx:name>ALPHA-L-RHAMNOSE</PDBx:name>
+      </PDBx:pdbx_reference_entity_nonpoly>
+   </PDBx:pdbx_reference_entity_nonpolyCategory>
+   <PDBx:pdbx_reference_entity_polyCategory>
+      <PDBx:pdbx_reference_entity_poly prd_id="PRD_000207" ref_entity_id="1">
+         <PDBx:db_code>NOR00692</PDBx:db_code>
+         <PDBx:db_name>NOR</PDBx:db_name>
+         <PDBx:type>peptide-like</PDBx:type>
+      </PDBx:pdbx_reference_entity_poly>
+   </PDBx:pdbx_reference_entity_polyCategory>
+   <PDBx:pdbx_reference_entity_poly_linkCategory>
+      <PDBx:pdbx_reference_entity_poly_link component_id="1" link_id="1" prd_id="PRD_000207" ref_entity_id="1">
+         <PDBx:atom_id_1>C</PDBx:atom_id_1>
+         <PDBx:atom_id_2>N</PDBx:atom_id_2>
+         <PDBx:comp_id_1>MLU</PDBx:comp_id_1>
+         <PDBx:comp_id_2>OMZ</PDBx:comp_id_2>
+         <PDBx:entity_seq_num_1>1</PDBx:entity_seq_num_1>
+         <PDBx:entity_seq_num_2>2</PDBx:entity_seq_num_2>
+         <PDBx:value_order>sing</PDBx:value_order>
+      </PDBx:pdbx_reference_entity_poly_link>
+      <PDBx:pdbx_reference_entity_poly_link component_id="1" link_id="2" prd_id="PRD_000207" ref_entity_id="1">
+         <PDBx:atom_id_1>C</PDBx:atom_id_1>
+         <PDBx:atom_id_2>N</PDBx:atom_id_2>
+         <PDBx:comp_id_1>OMZ</PDBx:comp_id_1>
+         <PDBx:comp_id_2>ASN</PDBx:comp_id_2>
+         <PDBx:entity_seq_num_1>2</PDBx:entity_seq_num_1>
+         <PDBx:entity_seq_num_2>3</PDBx:entity_seq_num_2>
+         <PDBx:value_order>sing</PDBx:value_order>
+      </PDBx:pdbx_reference_entity_poly_link>
+      <PDBx:pdbx_reference_entity_poly_link component_id="1" link_id="3" prd_id="PRD_000207" ref_entity_id="1">
+         <PDBx:atom_id_1>OH</PDBx:atom_id_1>
+         <PDBx:atom_id_2>C5</PDBx:atom_id_2>
+         <PDBx:comp_id_1>OMZ</PDBx:comp_id_1>
+         <PDBx:comp_id_2>GHP</PDBx:comp_id_2>
+         <PDBx:entity_seq_num_1>2</PDBx:entity_seq_num_1>
+         <PDBx:entity_seq_num_2>4</PDBx:entity_seq_num_2>
+         <PDBx:value_order>sing</PDBx:value_order>
+      </PDBx:pdbx_reference_entity_poly_link>
+      <PDBx:pdbx_reference_entity_poly_link component_id="1" link_id="4" prd_id="PRD_000207" ref_entity_id="1">
+         <PDBx:atom_id_1>C</PDBx:atom_id_1>
+         <PDBx:atom_id_2>N</PDBx:atom_id_2>
+         <PDBx:comp_id_1>ASN</PDBx:comp_id_1>
+         <PDBx:comp_id_2>GHP</PDBx:comp_id_2>
+         <PDBx:entity_seq_num_1>3</PDBx:entity_seq_num_1>
+         <PDBx:entity_seq_num_2>4</PDBx:entity_seq_num_2>
+         <PDBx:value_order>sing</PDBx:value_order>
+      </PDBx:pdbx_reference_entity_poly_link>
+      <PDBx:pdbx_reference_entity_poly_link component_id="1" link_id="5" prd_id="PRD_000207" ref_entity_id="1">
+         <PDBx:atom_id_1>C</PDBx:atom_id_1>
+         <PDBx:atom_id_2>N</PDBx:atom_id_2>
+         <PDBx:comp_id_1>GHP</PDBx:comp_id_1>
+         <PDBx:comp_id_2>GHP</PDBx:comp_id_2>
+         <PDBx:entity_seq_num_1>4</PDBx:entity_seq_num_1>
+         <PDBx:entity_seq_num_2>5</PDBx:entity_seq_num_2>
+         <PDBx:value_order>sing</PDBx:value_order>
+      </PDBx:pdbx_reference_entity_poly_link>
+      <PDBx:pdbx_reference_entity_poly_link component_id="1" link_id="6" prd_id="PRD_000207" ref_entity_id="1">
+         <PDBx:atom_id_1>C3</PDBx:atom_id_1>
+         <PDBx:atom_id_2>OH</PDBx:atom_id_2>
+         <PDBx:comp_id_1>GHP</PDBx:comp_id_1>
+         <PDBx:comp_id_2>OMX</PDBx:comp_id_2>
+         <PDBx:entity_seq_num_1>4</PDBx:entity_seq_num_1>
+         <PDBx:entity_seq_num_2>6</PDBx:entity_seq_num_2>
+         <PDBx:value_order>sing</PDBx:value_order>
+      </PDBx:pdbx_reference_entity_poly_link>
+      <PDBx:pdbx_reference_entity_poly_link component_id="1" link_id="7" prd_id="PRD_000207" ref_entity_id="1">
+         <PDBx:atom_id_1>C</PDBx:atom_id_1>
+         <PDBx:atom_id_2>N</PDBx:atom_id_2>
+         <PDBx:comp_id_1>GHP</PDBx:comp_id_1>
+         <PDBx:comp_id_2>OMX</PDBx:comp_id_2>
+         <PDBx:entity_seq_num_1>5</PDBx:entity_seq_num_1>
+         <PDBx:entity_seq_num_2>6</PDBx:entity_seq_num_2>
+         <PDBx:value_order>sing</PDBx:value_order>
+      </PDBx:pdbx_reference_entity_poly_link>
+      <PDBx:pdbx_reference_entity_poly_link component_id="1" link_id="8" prd_id="PRD_000207" ref_entity_id="1">
+         <PDBx:atom_id_1>C3</PDBx:atom_id_1>
+         <PDBx:atom_id_2>CG1</PDBx:atom_id_2>
+         <PDBx:comp_id_1>GHP</PDBx:comp_id_1>
+         <PDBx:comp_id_2>3FG</PDBx:comp_id_2>
+         <PDBx:entity_seq_num_1>5</PDBx:entity_seq_num_1>
+         <PDBx:entity_seq_num_2>7</PDBx:entity_seq_num_2>
+         <PDBx:value_order>sing</PDBx:value_order>
+      </PDBx:pdbx_reference_entity_poly_link>
+      <PDBx:pdbx_reference_entity_poly_link component_id="1" link_id="9" prd_id="PRD_000207" ref_entity_id="1">
+         <PDBx:atom_id_1>C</PDBx:atom_id_1>
+         <PDBx:atom_id_2>N</PDBx:atom_id_2>
+         <PDBx:comp_id_1>OMX</PDBx:comp_id_1>
+         <PDBx:comp_id_2>3FG</PDBx:comp_id_2>
+         <PDBx:entity_seq_num_1>6</PDBx:entity_seq_num_1>
+         <PDBx:entity_seq_num_2>7</PDBx:entity_seq_num_2>
+         <PDBx:value_order>sing</PDBx:value_order>
+      </PDBx:pdbx_reference_entity_poly_link>
+   </PDBx:pdbx_reference_entity_poly_linkCategory>
+   <PDBx:pdbx_reference_entity_poly_seqCategory>
+      <PDBx:pdbx_reference_entity_poly_seq hetero="N" mon_id="MLU" num="1" prd_id="PRD_000207" ref_entity_id="1">
+         <PDBx:observed>Y</PDBx:observed>
+         <PDBx:parent_mon_id>LEU</PDBx:parent_mon_id>
+      </PDBx:pdbx_reference_entity_poly_seq>
+      <PDBx:pdbx_reference_entity_poly_seq hetero="N" mon_id="OMZ" num="2" prd_id="PRD_000207" ref_entity_id="1">
+         <PDBx:observed>Y</PDBx:observed>
+         <PDBx:parent_mon_id>TYR</PDBx:parent_mon_id>
+      </PDBx:pdbx_reference_entity_poly_seq>
+      <PDBx:pdbx_reference_entity_poly_seq hetero="N" mon_id="ASN" num="3" prd_id="PRD_000207" ref_entity_id="1">
+         <PDBx:observed>Y</PDBx:observed>
+         <PDBx:parent_mon_id>ASN</PDBx:parent_mon_id>
+      </PDBx:pdbx_reference_entity_poly_seq>
+      <PDBx:pdbx_reference_entity_poly_seq hetero="N" mon_id="GHP" num="4" prd_id="PRD_000207" ref_entity_id="1">
+         <PDBx:observed>Y</PDBx:observed>
+         <PDBx:parent_mon_id>PHE</PDBx:parent_mon_id>
+      </PDBx:pdbx_reference_entity_poly_seq>
+      <PDBx:pdbx_reference_entity_poly_seq hetero="N" mon_id="GHP" num="5" prd_id="PRD_000207" ref_entity_id="1">
+         <PDBx:observed>Y</PDBx:observed>
+         <PDBx:parent_mon_id>PHE</PDBx:parent_mon_id>
+      </PDBx:pdbx_reference_entity_poly_seq>
+      <PDBx:pdbx_reference_entity_poly_seq hetero="N" mon_id="OMX" num="6" prd_id="PRD_000207" ref_entity_id="1">
+         <PDBx:observed>Y</PDBx:observed>
+         <PDBx:parent_mon_id>TYR</PDBx:parent_mon_id>
+      </PDBx:pdbx_reference_entity_poly_seq>
+      <PDBx:pdbx_reference_entity_poly_seq hetero="N" mon_id="3FG" num="7" prd_id="PRD_000207" ref_entity_id="1">
+         <PDBx:observed>Y</PDBx:observed>
+         <PDBx:parent_mon_id>PHE</PDBx:parent_mon_id>
+      </PDBx:pdbx_reference_entity_poly_seq>
+   </PDBx:pdbx_reference_entity_poly_seqCategory>
+   <PDBx:pdbx_reference_entity_sequenceCategory>
+      <PDBx:pdbx_reference_entity_sequence prd_id="PRD_000207" ref_entity_id="1">
+         <PDBx:NRP_flag>Y</PDBx:NRP_flag>
+         <PDBx:type>peptide-like</PDBx:type>
+      </PDBx:pdbx_reference_entity_sequence>
+   </PDBx:pdbx_reference_entity_sequenceCategory>
+   <PDBx:pdbx_reference_entity_src_natCategory>
+      <PDBx:pdbx_reference_entity_src_nat ordinal="1" prd_id="PRD_000207" ref_entity_id="1">
+         <PDBx:organism_scientific>Kibdellosporangium deccaensis DSM4763</PDBx:organism_scientific>
+         <PDBx:source>URL</PDBx:source>
+      </PDBx:pdbx_reference_entity_src_nat>
+      <PDBx:pdbx_reference_entity_src_nat ordinal="2" prd_id="PRD_000207" ref_entity_id="1">
+         <PDBx:db_code>430189</PDBx:db_code>
+         <PDBx:db_name>NADB</PDBx:db_name>
+         <PDBx:organism_scientific>Amycolatopsis orientalis</PDBx:organism_scientific>
+         <PDBx:taxid>31958</PDBx:taxid>
+      </PDBx:pdbx_reference_entity_src_nat>
+      <PDBx:pdbx_reference_entity_src_nat ordinal="3" prd_id="PRD_000207" ref_entity_id="1">
+         <PDBx:db_code>1hh3</PDBx:db_code>
+         <PDBx:db_name>PDB</PDBx:db_name>
+         <PDBx:organism_scientific>HIL Actinomycete culture Y-86,36910 (DSM 4763)</PDBx:organism_scientific>
+         <PDBx:taxid>100235</PDBx:taxid>
+      </PDBx:pdbx_reference_entity_src_nat>
+      <PDBx:pdbx_reference_entity_src_nat ordinal="4" prd_id="PRD_000207" ref_entity_id="1">
+         <PDBx:db_code>420095</PDBx:db_code>
+         <PDBx:db_name>NADB</PDBx:db_name>
+         <PDBx:organism_scientific>Nocardia nov. sp.</PDBx:organism_scientific>
+         <PDBx:taxid>163672</PDBx:taxid>
+      </PDBx:pdbx_reference_entity_src_nat>
+      <PDBx:pdbx_reference_entity_src_nat ordinal="5" prd_id="PRD_000207" ref_entity_id="1">
+         <PDBx:organism_scientific>Amycolatopsis decaplanina sp. nov. Strain DSM 44594</PDBx:organism_scientific>
+         <PDBx:source>DOI</PDBx:source>
+         <PDBx:taxid>208441</PDBx:taxid>
+      </PDBx:pdbx_reference_entity_src_nat>
+   </PDBx:pdbx_reference_entity_src_natCategory>
+   <PDBx:pdbx_reference_moleculeCategory>
+      <PDBx:pdbx_reference_molecule prd_id="PRD_000207">
+         <PDBx:class>Antibiotic</PDBx:class>
+         <PDBx:compound_details>DECAPLANIN IS A TRICYCLIC GLYCOPEPTIDE. HERE, DECAPLSNIN IS REPRESENTED BY GROUPING TOGETHER THE SEQUENCE (SEQRES) AND
+THE THREE LIGANDS (HET) BGC, ERE AND RAM.</PDBx:compound_details>
+         <PDBx:description>DECAPLANIN IS A TRICYCLIC GLYCOPEPTIDE. THE SCAFFOLD IS A HEPTAPEPTIDE WITH THE CONFIGURATION D-D-L-D-D-L-L,
+GLYCOSYLATED</PDBx:description>
+         <PDBx:formula>C72 H86 Cl N9 O28</PDBx:formula>
+         <PDBx:formula_weight>1560.950</PDBx:formula_weight>
+         <PDBx:name>Decaplanin</PDBx:name>
+         <PDBx:release_status>REL</PDBx:release_status>
+         <PDBx:represent_as>polymer</PDBx:represent_as>
+         <PDBx:representative_PDB_id_code>1hh3</PDBx:representative_PDB_id_code>
+         <PDBx:type>Glycopeptide</PDBx:type>
+      </PDBx:pdbx_reference_molecule>
+   </PDBx:pdbx_reference_moleculeCategory>
+</PDBx:datablock>

@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<PDBx:datablock datablockName="PRD_000001"
+   xmlns:PDBx="http://pdbml.pdb.org/schema/pdbx-v50.xsd"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://pdbml.pdb.org/schema/pdbx-v50.xsd pdbx-v50.xsd">
+
+   <PDBx:pdbx_prd_auditCategory>
+      <PDBx:pdbx_prd_audit action_type="Create molecule" date="2012-02-01" prd_id="PRD_000001">
+         <PDBx:processing_site>RCSB</PDBx:processing_site>
+      </PDBx:pdbx_prd_audit>
+      <PDBx:pdbx_prd_audit action_type="Other modification" date="2012-07-09" prd_id="PRD_000001">
+         <PDBx:processing_site>PDBe</PDBx:processing_site>
+      </PDBx:pdbx_prd_audit>
+      <PDBx:pdbx_prd_audit action_type="Initial release" date="2012-12-12" prd_id="PRD_000001">
+         <PDBx:processing_site>RCSB</PDBx:processing_site>
+      </PDBx:pdbx_prd_audit>
+      <PDBx:pdbx_prd_audit action_type="Other modification" date="2013-06-03" prd_id="PRD_000001">
+         <PDBx:processing_site>RCSB</PDBx:processing_site>
+      </PDBx:pdbx_prd_audit>
+      <PDBx:pdbx_prd_audit action_type="Other modification" date="2013-08-02" prd_id="PRD_000001">
+         <PDBx:processing_site>RCSB</PDBx:processing_site>
+      </PDBx:pdbx_prd_audit>
+      <PDBx:pdbx_prd_audit action_type="Other modification" date="2017-05-04" prd_id="PRD_000001">
+         <PDBx:processing_site>RCSB</PDBx:processing_site>
+      </PDBx:pdbx_prd_audit>
+   </PDBx:pdbx_prd_auditCategory>
+   <PDBx:pdbx_reference_entity_listCategory>
+      <PDBx:pdbx_reference_entity_list component_id="1" prd_id="PRD_000001" ref_entity_id="1">
+         <PDBx:details>PEPTIDE LIKE SEQUENCE RESIDUES 1 TO 11</PDBx:details>
+         <PDBx:type>polymer</PDBx:type>
+      </PDBx:pdbx_reference_entity_list>
+   </PDBx:pdbx_reference_entity_listCategory>
+   <PDBx:pdbx_reference_entity_polyCategory>
+      <PDBx:pdbx_reference_entity_poly prd_id="PRD_000001" ref_entity_id="1">
+         <PDBx:db_code>NOR00228</PDBx:db_code>
+         <PDBx:db_name>NOR</PDBx:db_name>
+         <PDBx:type>peptide-like</PDBx:type>
+      </PDBx:pdbx_reference_entity_poly>
+   </PDBx:pdbx_reference_entity_polyCategory>
+   <PDBx:pdbx_reference_entity_poly_linkCategory>
+      <PDBx:pdbx_reference_entity_poly_link component_id="1" link_id="1" prd_id="PRD_000001" ref_entity_id="1">
+         <PDBx:atom_id_1>C</PDBx:atom_id_1>
+         <PDBx:atom_id_2>N</PDBx:atom_id_2>
+         <PDBx:comp_id_1>THR</PDBx:comp_id_1>
+         <PDBx:comp_id_2>DVA</PDBx:comp_id_2>
+         <PDBx:entity_seq_num_1>1</PDBx:entity_seq_num_1>
+         <PDBx:entity_seq_num_2>2</PDBx:entity_seq_num_2>
+         <PDBx:value_order>sing</PDBx:value_order>
+      </PDBx:pdbx_reference_entity_poly_link>
+      <PDBx:pdbx_reference_entity_poly_link component_id="1" link_id="2" prd_id="PRD_000001" ref_entity_id="1">
+         <PDBx:atom_id_1>OG1</PDBx:atom_id_1>
+         <PDBx:atom_id_2>C</PDBx:atom_id_2>
+         <PDBx:comp_id_1>THR</PDBx:comp_id_1>
+         <PDBx:comp_id_2>MVA</PDBx:comp_id_2>
+         <PDBx:entity_seq_num_1>1</PDBx:entity_seq_num_1>
+         <PDBx:entity_seq_num_2>5</PDBx:entity_seq_num_2>
+         <PDBx:value_order>sing</PDBx:value_order>
+      </PDBx:pdbx_reference_entity_poly_link>
+      <PDBx:pdbx_reference_entity_poly_link component_id="1" link_id="3" prd_id="PRD_000001" ref_entity_id="1">
+         <PDBx:atom_id_1>N</PDBx:atom_id_1>
+         <PDBx:atom_id_2>C</PDBx:atom_id_2>
+         <PDBx:comp_id_1>THR</PDBx:comp_id_1>
+         <PDBx:comp_id_2>PXZ</PDBx:comp_id_2>
+         <PDBx:entity_seq_num_1>1</PDBx:entity_seq_num_1>
+         <PDBx:entity_seq_num_2>6</PDBx:entity_seq_num_2>
+         <PDBx:value_order>sing</PDBx:value_order>
+      </PDBx:pdbx_reference_entity_poly_link>
+      <PDBx:pdbx_reference_entity_poly_link component_id="1" link_id="4" prd_id="PRD_000001" ref_entity_id="1">
+         <PDBx:atom_id_1>C</PDBx:atom_id_1>
+         <PDBx:atom_id_2>N</PDBx:atom_id_2>
+         <PDBx:comp_id_1>DVA</PDBx:comp_id_1>
+         <PDBx:comp_id_2>PRO</PDBx:comp_id_2>
+         <PDBx:entity_seq_num_1>2</PDBx:entity_seq_num_1>
+         <PDBx:entity_seq_num_2>3</PDBx:entity_seq_num_2>
+         <PDBx:value_order>sing</PDBx:value_order>
+      </PDBx:pdbx_reference_entity_poly_link>
+      <PDBx:pdbx_reference_entity_poly_link component_id="1" link_id="5" prd_id="PRD_000001" ref_entity_id="1">
+         <PDBx:atom_id_1>C</PDBx:atom_id_1>
+         <PDBx:atom_id_2>N</PDBx:atom_id_2>
+         <PDBx:comp_id_1>PRO</PDBx:comp_id_1>
+         <PDBx:comp_id_2>SAR</PDBx:comp_id_2>
+         <PDBx:entity_seq_num_1>3</PDBx:entity_seq_num_1>
+         <PDBx:entity_seq_num_2>4</PDBx:entity_seq_num_2>
+         <PDBx:value_order>sing</PDBx:value_order>
+      </PDBx:pdbx_reference_entity_poly_link>
+      <PDBx:pdbx_reference_entity_poly_link component_id="1" link_id="6" prd_id="PRD_000001" ref_entity_id="1">
+         <PDBx:atom_id_1>C</PDBx:atom_id_1>
+         <PDBx:atom_id_2>N</PDBx:atom_id_2>
+         <PDBx:comp_id_1>SAR</PDBx:comp_id_1>
+         <PDBx:comp_id_2>MVA</PDBx:comp_id_2>
+         <PDBx:entity_seq_num_1>4</PDBx:entity_seq_num_1>
+         <PDBx:entity_seq_num_2>5</PDBx:entity_seq_num_2>
+         <PDBx:value_order>sing</PDBx:value_order>
+      </PDBx:pdbx_reference_entity_poly_link>
+      <PDBx:pdbx_reference_entity_poly_link component_id="1" link_id="7" prd_id="PRD_000001" ref_entity_id="1">
+         <PDBx:atom_id_1>C&apos;</PDBx:atom_id_1>
+         <PDBx:atom_id_2>N</PDBx:atom_id_2>
+         <PDBx:comp_id_1>PXZ</PDBx:comp_id_1>
+         <PDBx:comp_id_2>THR</PDBx:comp_id_2>
+         <PDBx:entity_seq_num_1>6</PDBx:entity_seq_num_1>
+         <PDBx:entity_seq_num_2>7</PDBx:entity_seq_num_2>
+         <PDBx:value_order>sing</PDBx:value_order>
+      </PDBx:pdbx_reference_entity_poly_link>
+      <PDBx:pdbx_reference_entity_poly_link component_id="1" link_id="8" prd_id="PRD_000001" ref_entity_id="1">
+         <PDBx:atom_id_1>C</PDBx:atom_id_1>
+         <PDBx:atom_id_2>N</PDBx:atom_id_2>
+         <PDBx:comp_id_1>THR</PDBx:comp_id_1>
+         <PDBx:comp_id_2>DVA</PDBx:comp_id_2>
+         <PDBx:entity_seq_num_1>7</PDBx:entity_seq_num_1>
+         <PDBx:entity_seq_num_2>8</PDBx:entity_seq_num_2>
+         <PDBx:value_order>sing</PDBx:value_order>
+      </PDBx:pdbx_reference_entity_poly_link>
+      <PDBx:pdbx_reference_entity_poly_link component_id="1" link_id="9" prd_id="PRD_000001" ref_entity_id="1">
+         <PDBx:atom_id_1>OG1</PDBx:atom_id_1>
+         <PDBx:atom_id_2>C</PDBx:atom_id_2>
+         <PDBx:comp_id_1>THR</PDBx:comp_id_1>
+         <PDBx:comp_id_2>MVA</PDBx:comp_id_2>
+         <PDBx:entity_seq_num_1>7</PDBx:entity_seq_num_1>
+         <PDBx:entity_seq_num_2>11</PDBx:entity_seq_num_2>
+         <PDBx:value_order>sing</PDBx:value_order>
+      </PDBx:pdbx_reference_entity_poly_link>
+      <PDBx:pdbx_reference_entity_poly_link component_id="1" link_id="10" prd_id="PRD_000001" ref_entity_id="1">
+         <PDBx:atom_id_1>C</PDBx:atom_id_1>
+         <PDBx:atom_id_2>N</PDBx:atom_id_2>
+         <PDBx:comp_id_1>DVA</PDBx:comp_id_1>
+         <PDBx:comp_id_2>PRO</PDBx:comp_id_2>
+         <PDBx:entity_seq_num_1>8</PDBx:entity_seq_num_1>
+         <PDBx:entity_seq_num_2>9</PDBx:entity_seq_num_2>
+         <PDBx:value_order>sing</PDBx:value_order>
+      </PDBx:pdbx_reference_entity_poly_link>
+      <PDBx:pdbx_reference_entity_poly_link component_id="1" link_id="11" prd_id="PRD_000001" ref_entity_id="1">
+         <PDBx:atom_id_1>C</PDBx:atom_id_1>
+         <PDBx:atom_id_2>N</PDBx:atom_id_2>
+         <PDBx:comp_id_1>PRO</PDBx:comp_id_1>
+         <PDBx:comp_id_2>SAR</PDBx:comp_id_2>
+         <PDBx:entity_seq_num_1>9</PDBx:entity_seq_num_1>
+         <PDBx:entity_seq_num_2>10</PDBx:entity_seq_num_2>
+         <PDBx:value_order>sing</PDBx:value_order>
+      </PDBx:pdbx_reference_entity_poly_link>
+      <PDBx:pdbx_reference_entity_poly_link component_id="1" link_id="12" prd_id="PRD_000001" ref_entity_id="1">
+         <PDBx:atom_id_1>C</PDBx:atom_id_1>
+         <PDBx:atom_id_2>N</PDBx:atom_id_2>
+         <PDBx:comp_id_1>SAR</PDBx:comp_id_1>
+         <PDBx:comp_id_2>MVA</PDBx:comp_id_2>
+         <PDBx:entity_seq_num_1>10</PDBx:entity_seq_num_1>
+         <PDBx:entity_seq_num_2>11</PDBx:entity_seq_num_2>
+         <PDBx:value_order>sing</PDBx:value_order>
+      </PDBx:pdbx_reference_entity_poly_link>
+   </PDBx:pdbx_reference_entity_poly_linkCategory>
+   <PDBx:pdbx_reference_entity_poly_seqCategory>
+      <PDBx:pdbx_reference_entity_poly_seq hetero="N" mon_id="THR" num="1" prd_id="PRD_000001" ref_entity_id="1">
+         <PDBx:observed>Y</PDBx:observed>
+         <PDBx:parent_mon_id>THR</PDBx:parent_mon_id>
+      </PDBx:pdbx_reference_entity_poly_seq>
+      <PDBx:pdbx_reference_entity_poly_seq hetero="N" mon_id="DVA" num="2" prd_id="PRD_000001" ref_entity_id="1">
+         <PDBx:observed>Y</PDBx:observed>
+         <PDBx:parent_mon_id>VAL</PDBx:parent_mon_id>
+      </PDBx:pdbx_reference_entity_poly_seq>
+      <PDBx:pdbx_reference_entity_poly_seq hetero="N" mon_id="PRO" num="3" prd_id="PRD_000001" ref_entity_id="1">
+         <PDBx:observed>Y</PDBx:observed>
+         <PDBx:parent_mon_id>PRO</PDBx:parent_mon_id>
+      </PDBx:pdbx_reference_entity_poly_seq>
+      <PDBx:pdbx_reference_entity_poly_seq hetero="N" mon_id="SAR" num="4" prd_id="PRD_000001" ref_entity_id="1">
+         <PDBx:observed>Y</PDBx:observed>
+         <PDBx:parent_mon_id>GLY</PDBx:parent_mon_id>
+      </PDBx:pdbx_reference_entity_poly_seq>
+      <PDBx:pdbx_reference_entity_poly_seq hetero="N" mon_id="MVA" num="5" prd_id="PRD_000001" ref_entity_id="1">
+         <PDBx:observed>Y</PDBx:observed>
+         <PDBx:parent_mon_id>VAL</PDBx:parent_mon_id>
+      </PDBx:pdbx_reference_entity_poly_seq>
+      <PDBx:pdbx_reference_entity_poly_seq hetero="N" mon_id="PXZ" num="6" prd_id="PRD_000001" ref_entity_id="1">
+         <PDBx:observed>Y</PDBx:observed>
+      </PDBx:pdbx_reference_entity_poly_seq>
+      <PDBx:pdbx_reference_entity_poly_seq hetero="N" mon_id="THR" num="7" prd_id="PRD_000001" ref_entity_id="1">
+         <PDBx:observed>Y</PDBx:observed>
+         <PDBx:parent_mon_id>THR</PDBx:parent_mon_id>
+      </PDBx:pdbx_reference_entity_poly_seq>
+      <PDBx:pdbx_reference_entity_poly_seq hetero="N" mon_id="DVA" num="8" prd_id="PRD_000001" ref_entity_id="1">
+         <PDBx:observed>Y</PDBx:observed>
+         <PDBx:parent_mon_id>VAL</PDBx:parent_mon_id>
+      </PDBx:pdbx_reference_entity_poly_seq>
+      <PDBx:pdbx_reference_entity_poly_seq hetero="N" mon_id="PRO" num="9" prd_id="PRD_000001" ref_entity_id="1">
+         <PDBx:observed>Y</PDBx:observed>
+         <PDBx:parent_mon_id>PRO</PDBx:parent_mon_id>
+      </PDBx:pdbx_reference_entity_poly_seq>
+      <PDBx:pdbx_reference_entity_poly_seq hetero="N" mon_id="SAR" num="10" prd_id="PRD_000001" ref_entity_id="1">
+         <PDBx:observed>Y</PDBx:observed>
+         <PDBx:parent_mon_id>GLY</PDBx:parent_mon_id>
+      </PDBx:pdbx_reference_entity_poly_seq>
+      <PDBx:pdbx_reference_entity_poly_seq hetero="N" mon_id="MVA" num="11" prd_id="PRD_000001" ref_entity_id="1">
+         <PDBx:observed>Y</PDBx:observed>
+         <PDBx:parent_mon_id>VAL</PDBx:parent_mon_id>
+      </PDBx:pdbx_reference_entity_poly_seq>
+   </PDBx:pdbx_reference_entity_poly_seqCategory>
+   <PDBx:pdbx_reference_entity_sequenceCategory>
+      <PDBx:pdbx_reference_entity_sequence prd_id="PRD_000001" ref_entity_id="1">
+         <PDBx:NRP_flag>Y</PDBx:NRP_flag>
+         <PDBx:type>peptide-like</PDBx:type>
+      </PDBx:pdbx_reference_entity_sequence>
+   </PDBx:pdbx_reference_entity_sequenceCategory>
+   <PDBx:pdbx_reference_entity_src_natCategory>
+      <PDBx:pdbx_reference_entity_src_nat ordinal="1" prd_id="PRD_000001" ref_entity_id="1">
+         <PDBx:db_code>D00214</PDBx:db_code>
+         <PDBx:db_name>KEGG</PDBx:db_name>
+         <PDBx:organism_scientific>Streptomyces parvulus</PDBx:organism_scientific>
+         <PDBx:taxid>146923</PDBx:taxid>
+      </PDBx:pdbx_reference_entity_src_nat>
+      <PDBx:pdbx_reference_entity_src_nat ordinal="2" prd_id="PRD_000001" ref_entity_id="1">
+         <PDBx:db_code>C06770</PDBx:db_code>
+         <PDBx:db_name>KEGG</PDBx:db_name>
+         <PDBx:organism_scientific>Streptomyces chrysomallus</PDBx:organism_scientific>
+      </PDBx:pdbx_reference_entity_src_nat>
+      <PDBx:pdbx_reference_entity_src_nat ordinal="3" prd_id="PRD_000001" ref_entity_id="1">
+         <PDBx:db_code>NOR00228</PDBx:db_code>
+         <PDBx:db_name>Norine</PDBx:db_name>
+         <PDBx:organism_scientific>Streptomyces anulatus</PDBx:organism_scientific>
+         <PDBx:taxid>1892</PDBx:taxid>
+      </PDBx:pdbx_reference_entity_src_nat>
+      <PDBx:pdbx_reference_entity_src_nat ordinal="4" prd_id="PRD_000001" ref_entity_id="1">
+         <PDBx:db_code>NOR00228</PDBx:db_code>
+         <PDBx:db_name>Norine</PDBx:db_name>
+         <PDBx:organism_scientific>Streptomyces antibioticus</PDBx:organism_scientific>
+         <PDBx:taxid>1890</PDBx:taxid>
+      </PDBx:pdbx_reference_entity_src_nat>
+      <PDBx:pdbx_reference_entity_src_nat ordinal="5" prd_id="PRD_000001" ref_entity_id="1">
+         <PDBx:db_code>NOR00228</PDBx:db_code>
+         <PDBx:db_name>Norine</PDBx:db_name>
+         <PDBx:organism_scientific>Streptomyces parvulus</PDBx:organism_scientific>
+         <PDBx:taxid>146923</PDBx:taxid>
+      </PDBx:pdbx_reference_entity_src_nat>
+   </PDBx:pdbx_reference_entity_src_natCategory>
+   <PDBx:pdbx_reference_moleculeCategory>
+      <PDBx:pdbx_reference_molecule prd_id="PRD_000001">
+         <PDBx:class>Antibiotic</PDBx:class>
+         <PDBx:compound_details>ACTINOMYCIN D IS A BICYCLIC PEPTIDE, A MEMBER OF THE
+ACTINOMYCIN FAMILY.
+HERE, ACTINOMYCIN D IS REPRESENTED BY THE SEQUENCE (SEQRES)</PDBx:compound_details>
+         <PDBx:description>ACTINOMYCIN D CONSISTS OF TWO PENTAMER
+RINGS LINKED BY THE CHROMOPHORE (PXZ)</PDBx:description>
+         <PDBx:formula>C62 H86 N12 O16</PDBx:formula>
+         <PDBx:formula_weight>1255.5</PDBx:formula_weight>
+         <PDBx:name>Actinomycin D</PDBx:name>
+         <PDBx:release_status>REL</PDBx:release_status>
+         <PDBx:represent_as>polymer</PDBx:represent_as>
+         <PDBx:representative_PDB_id_code>1a7y</PDBx:representative_PDB_id_code>
+         <PDBx:type>Polypeptide</PDBx:type>
+      </PDBx:pdbx_reference_molecule>
+   </PDBx:pdbx_reference_moleculeCategory>
+</PDBx:datablock>

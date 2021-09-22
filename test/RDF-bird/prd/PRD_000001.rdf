@@ -1,0 +1,778 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:PDBo="http://rdf.wwpdb.org/schema/pdbx-v50.owl#">
+  <PDBo:datablock rdf:about="http://rdf.wwpdb.org/prd/PRD_000001">
+    <dcterms:identifier>PRD_000001</dcterms:identifier>
+    <dc:title>Actinomycin D</dc:title>
+    <rdfs:seeAlso rdf:resource="http://pdbj.org/bird/summary/PRD_000001"/>
+    <rdfs:seeAlso rdf:resource="http://www.rcsb.org/ligand/PRD_000001"/>
+    <PDBo:datablockName>PRD_000001</PDBo:datablockName>
+    <PDBo:has_pdbx_prd_auditCategory>
+      <PDBo:pdbx_prd_auditCategory rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_prd_auditCategory">
+        <PDBo:has_pdbx_prd_audit>
+          <PDBo:pdbx_prd_audit rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_prd_audit/Create_molecule,2012-02-01,PRD_000001">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001"/>
+            <PDBo:reference_to_pdbx_reference_molecule>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_molecule/PRD_000001">
+                <PDBo:referenced_by_pdbx_prd_audit rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_prd_audit/Create_molecule,2012-02-01,PRD_000001"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_reference_molecule>
+            <PDBo:pdbx_prd_audit.action_type>Create molecule</PDBo:pdbx_prd_audit.action_type>
+            <PDBo:pdbx_prd_audit.date>2012-02-01</PDBo:pdbx_prd_audit.date>
+            <PDBo:pdbx_prd_audit.prd_id>PRD_000001</PDBo:pdbx_prd_audit.prd_id>
+            <PDBo:pdbx_prd_audit.processing_site>RCSB</PDBo:pdbx_prd_audit.processing_site>
+          </PDBo:pdbx_prd_audit>
+        </PDBo:has_pdbx_prd_audit>
+        <PDBo:has_pdbx_prd_audit>
+          <PDBo:pdbx_prd_audit rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_prd_audit/Other_modification,2012-07-09,PRD_000001">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001"/>
+            <PDBo:reference_to_pdbx_reference_molecule>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_molecule/PRD_000001">
+                <PDBo:referenced_by_pdbx_prd_audit rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_prd_audit/Other_modification,2012-07-09,PRD_000001"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_reference_molecule>
+            <PDBo:pdbx_prd_audit.action_type>Other modification</PDBo:pdbx_prd_audit.action_type>
+            <PDBo:pdbx_prd_audit.date>2012-07-09</PDBo:pdbx_prd_audit.date>
+            <PDBo:pdbx_prd_audit.prd_id>PRD_000001</PDBo:pdbx_prd_audit.prd_id>
+            <PDBo:pdbx_prd_audit.processing_site>PDBe</PDBo:pdbx_prd_audit.processing_site>
+          </PDBo:pdbx_prd_audit>
+        </PDBo:has_pdbx_prd_audit>
+        <PDBo:has_pdbx_prd_audit>
+          <PDBo:pdbx_prd_audit rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_prd_audit/Initial_release,2012-12-12,PRD_000001">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001"/>
+            <PDBo:reference_to_pdbx_reference_molecule>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_molecule/PRD_000001">
+                <PDBo:referenced_by_pdbx_prd_audit rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_prd_audit/Initial_release,2012-12-12,PRD_000001"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_reference_molecule>
+            <PDBo:pdbx_prd_audit.action_type>Initial release</PDBo:pdbx_prd_audit.action_type>
+            <PDBo:pdbx_prd_audit.date>2012-12-12</PDBo:pdbx_prd_audit.date>
+            <PDBo:pdbx_prd_audit.prd_id>PRD_000001</PDBo:pdbx_prd_audit.prd_id>
+            <PDBo:pdbx_prd_audit.processing_site>RCSB</PDBo:pdbx_prd_audit.processing_site>
+          </PDBo:pdbx_prd_audit>
+        </PDBo:has_pdbx_prd_audit>
+        <PDBo:has_pdbx_prd_audit>
+          <PDBo:pdbx_prd_audit rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_prd_audit/Other_modification,2013-06-03,PRD_000001">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001"/>
+            <PDBo:reference_to_pdbx_reference_molecule>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_molecule/PRD_000001">
+                <PDBo:referenced_by_pdbx_prd_audit rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_prd_audit/Other_modification,2013-06-03,PRD_000001"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_reference_molecule>
+            <PDBo:pdbx_prd_audit.action_type>Other modification</PDBo:pdbx_prd_audit.action_type>
+            <PDBo:pdbx_prd_audit.date>2013-06-03</PDBo:pdbx_prd_audit.date>
+            <PDBo:pdbx_prd_audit.prd_id>PRD_000001</PDBo:pdbx_prd_audit.prd_id>
+            <PDBo:pdbx_prd_audit.processing_site>RCSB</PDBo:pdbx_prd_audit.processing_site>
+          </PDBo:pdbx_prd_audit>
+        </PDBo:has_pdbx_prd_audit>
+        <PDBo:has_pdbx_prd_audit>
+          <PDBo:pdbx_prd_audit rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_prd_audit/Other_modification,2013-08-02,PRD_000001">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001"/>
+            <PDBo:reference_to_pdbx_reference_molecule>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_molecule/PRD_000001">
+                <PDBo:referenced_by_pdbx_prd_audit rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_prd_audit/Other_modification,2013-08-02,PRD_000001"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_reference_molecule>
+            <PDBo:pdbx_prd_audit.action_type>Other modification</PDBo:pdbx_prd_audit.action_type>
+            <PDBo:pdbx_prd_audit.date>2013-08-02</PDBo:pdbx_prd_audit.date>
+            <PDBo:pdbx_prd_audit.prd_id>PRD_000001</PDBo:pdbx_prd_audit.prd_id>
+            <PDBo:pdbx_prd_audit.processing_site>RCSB</PDBo:pdbx_prd_audit.processing_site>
+          </PDBo:pdbx_prd_audit>
+        </PDBo:has_pdbx_prd_audit>
+        <PDBo:has_pdbx_prd_audit>
+          <PDBo:pdbx_prd_audit rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_prd_audit/Other_modification,2017-05-04,PRD_000001">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001"/>
+            <PDBo:reference_to_pdbx_reference_molecule>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_molecule/PRD_000001">
+                <PDBo:referenced_by_pdbx_prd_audit rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_prd_audit/Other_modification,2017-05-04,PRD_000001"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_reference_molecule>
+            <PDBo:pdbx_prd_audit.action_type>Other modification</PDBo:pdbx_prd_audit.action_type>
+            <PDBo:pdbx_prd_audit.date>2017-05-04</PDBo:pdbx_prd_audit.date>
+            <PDBo:pdbx_prd_audit.prd_id>PRD_000001</PDBo:pdbx_prd_audit.prd_id>
+            <PDBo:pdbx_prd_audit.processing_site>RCSB</PDBo:pdbx_prd_audit.processing_site>
+          </PDBo:pdbx_prd_audit>
+        </PDBo:has_pdbx_prd_audit>
+      </PDBo:pdbx_prd_auditCategory>
+    </PDBo:has_pdbx_prd_auditCategory>
+    <PDBo:has_pdbx_reference_entity_listCategory>
+      <PDBo:pdbx_reference_entity_listCategory rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_listCategory">
+        <PDBo:has_pdbx_reference_entity_list>
+          <PDBo:pdbx_reference_entity_list rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_list/1,PRD_000001,1">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001"/>
+            <PDBo:reference_to_pdbx_reference_molecule>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_molecule/PRD_000001">
+                <PDBo:referenced_by_pdbx_reference_entity_list rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_list/1,PRD_000001,1"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_reference_molecule>
+            <PDBo:pdbx_reference_entity_list.component_id>1</PDBo:pdbx_reference_entity_list.component_id>
+            <PDBo:pdbx_reference_entity_list.prd_id>PRD_000001</PDBo:pdbx_reference_entity_list.prd_id>
+            <PDBo:pdbx_reference_entity_list.ref_entity_id>1</PDBo:pdbx_reference_entity_list.ref_entity_id>
+            <PDBo:pdbx_reference_entity_list.details>PEPTIDE LIKE SEQUENCE RESIDUES 1 TO 11</PDBo:pdbx_reference_entity_list.details>
+            <PDBo:pdbx_reference_entity_list.type>polymer</PDBo:pdbx_reference_entity_list.type>
+          </PDBo:pdbx_reference_entity_list>
+        </PDBo:has_pdbx_reference_entity_list>
+      </PDBo:pdbx_reference_entity_listCategory>
+    </PDBo:has_pdbx_reference_entity_listCategory>
+    <PDBo:has_pdbx_reference_entity_polyCategory>
+      <PDBo:pdbx_reference_entity_polyCategory rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_polyCategory">
+        <PDBo:has_pdbx_reference_entity_poly>
+          <PDBo:pdbx_reference_entity_poly rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly/PRD_000001,1">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001"/>
+            <PDBo:pdbx_reference_entity_poly.prd_id>PRD_000001</PDBo:pdbx_reference_entity_poly.prd_id>
+            <PDBo:pdbx_reference_entity_poly.ref_entity_id>1</PDBo:pdbx_reference_entity_poly.ref_entity_id>
+            <PDBo:pdbx_reference_entity_poly.db_code>NOR00228</PDBo:pdbx_reference_entity_poly.db_code>
+            <PDBo:pdbx_reference_entity_poly.db_name>NOR</PDBo:pdbx_reference_entity_poly.db_name>
+            <PDBo:pdbx_reference_entity_poly.type>peptide-like</PDBo:pdbx_reference_entity_poly.type>
+            <PDBo:link_to_norine rdf:resource="http://bioinfo.lifl.fr/norine/result.jsp?ID=NOR00228" rdfs:label="norine:NOR00228"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/norine:NOR00228" rdfs:label="norine:NOR00228"/>
+          </PDBo:pdbx_reference_entity_poly>
+        </PDBo:has_pdbx_reference_entity_poly>
+      </PDBo:pdbx_reference_entity_polyCategory>
+    </PDBo:has_pdbx_reference_entity_polyCategory>
+    <PDBo:has_pdbx_reference_entity_poly_linkCategory>
+      <PDBo:pdbx_reference_entity_poly_linkCategory rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly_linkCategory">
+        <PDBo:has_pdbx_reference_entity_poly_link>
+          <PDBo:pdbx_reference_entity_poly_link rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly_link/1,1,PRD_000001,1">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001"/>
+            <PDBo:reference_to_pdbx_reference_entity_list>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_list/1,PRD_000001,1">
+                <PDBo:referenced_by_pdbx_reference_entity_poly_link rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly_link/1,1,PRD_000001,1"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_reference_entity_list>
+            <PDBo:reference_to_pdbx_reference_entity_poly>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly/PRD_000001,1">
+                <PDBo:referenced_by_pdbx_reference_entity_poly_link rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly_link/1,1,PRD_000001,1"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_reference_entity_poly>
+            <PDBo:pdbx_reference_entity_poly_link.component_id>1</PDBo:pdbx_reference_entity_poly_link.component_id>
+            <PDBo:pdbx_reference_entity_poly_link.link_id>1</PDBo:pdbx_reference_entity_poly_link.link_id>
+            <PDBo:pdbx_reference_entity_poly_link.prd_id>PRD_000001</PDBo:pdbx_reference_entity_poly_link.prd_id>
+            <PDBo:pdbx_reference_entity_poly_link.ref_entity_id>1</PDBo:pdbx_reference_entity_poly_link.ref_entity_id>
+            <PDBo:pdbx_reference_entity_poly_link.atom_id_1>C</PDBo:pdbx_reference_entity_poly_link.atom_id_1>
+            <PDBo:pdbx_reference_entity_poly_link.atom_id_2>N</PDBo:pdbx_reference_entity_poly_link.atom_id_2>
+            <PDBo:pdbx_reference_entity_poly_link.comp_id_1>THR</PDBo:pdbx_reference_entity_poly_link.comp_id_1>
+            <PDBo:pdbx_reference_entity_poly_link.comp_id_2>DVA</PDBo:pdbx_reference_entity_poly_link.comp_id_2>
+            <PDBo:pdbx_reference_entity_poly_link.entity_seq_num_1>1</PDBo:pdbx_reference_entity_poly_link.entity_seq_num_1>
+            <PDBo:pdbx_reference_entity_poly_link.entity_seq_num_2>2</PDBo:pdbx_reference_entity_poly_link.entity_seq_num_2>
+            <PDBo:pdbx_reference_entity_poly_link.value_order>sing</PDBo:pdbx_reference_entity_poly_link.value_order>
+          </PDBo:pdbx_reference_entity_poly_link>
+        </PDBo:has_pdbx_reference_entity_poly_link>
+        <PDBo:has_pdbx_reference_entity_poly_link>
+          <PDBo:pdbx_reference_entity_poly_link rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly_link/1,2,PRD_000001,1">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001"/>
+            <PDBo:reference_to_pdbx_reference_entity_list>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_list/1,PRD_000001,1">
+                <PDBo:referenced_by_pdbx_reference_entity_poly_link rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly_link/1,2,PRD_000001,1"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_reference_entity_list>
+            <PDBo:reference_to_pdbx_reference_entity_poly>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly/PRD_000001,1">
+                <PDBo:referenced_by_pdbx_reference_entity_poly_link rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly_link/1,2,PRD_000001,1"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_reference_entity_poly>
+            <PDBo:pdbx_reference_entity_poly_link.component_id>1</PDBo:pdbx_reference_entity_poly_link.component_id>
+            <PDBo:pdbx_reference_entity_poly_link.link_id>2</PDBo:pdbx_reference_entity_poly_link.link_id>
+            <PDBo:pdbx_reference_entity_poly_link.prd_id>PRD_000001</PDBo:pdbx_reference_entity_poly_link.prd_id>
+            <PDBo:pdbx_reference_entity_poly_link.ref_entity_id>1</PDBo:pdbx_reference_entity_poly_link.ref_entity_id>
+            <PDBo:pdbx_reference_entity_poly_link.atom_id_1>OG1</PDBo:pdbx_reference_entity_poly_link.atom_id_1>
+            <PDBo:pdbx_reference_entity_poly_link.atom_id_2>C</PDBo:pdbx_reference_entity_poly_link.atom_id_2>
+            <PDBo:pdbx_reference_entity_poly_link.comp_id_1>THR</PDBo:pdbx_reference_entity_poly_link.comp_id_1>
+            <PDBo:pdbx_reference_entity_poly_link.comp_id_2>MVA</PDBo:pdbx_reference_entity_poly_link.comp_id_2>
+            <PDBo:pdbx_reference_entity_poly_link.entity_seq_num_1>1</PDBo:pdbx_reference_entity_poly_link.entity_seq_num_1>
+            <PDBo:pdbx_reference_entity_poly_link.entity_seq_num_2>5</PDBo:pdbx_reference_entity_poly_link.entity_seq_num_2>
+            <PDBo:pdbx_reference_entity_poly_link.value_order>sing</PDBo:pdbx_reference_entity_poly_link.value_order>
+          </PDBo:pdbx_reference_entity_poly_link>
+        </PDBo:has_pdbx_reference_entity_poly_link>
+        <PDBo:has_pdbx_reference_entity_poly_link>
+          <PDBo:pdbx_reference_entity_poly_link rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly_link/1,3,PRD_000001,1">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001"/>
+            <PDBo:reference_to_pdbx_reference_entity_list>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_list/1,PRD_000001,1">
+                <PDBo:referenced_by_pdbx_reference_entity_poly_link rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly_link/1,3,PRD_000001,1"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_reference_entity_list>
+            <PDBo:reference_to_pdbx_reference_entity_poly>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly/PRD_000001,1">
+                <PDBo:referenced_by_pdbx_reference_entity_poly_link rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly_link/1,3,PRD_000001,1"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_reference_entity_poly>
+            <PDBo:pdbx_reference_entity_poly_link.component_id>1</PDBo:pdbx_reference_entity_poly_link.component_id>
+            <PDBo:pdbx_reference_entity_poly_link.link_id>3</PDBo:pdbx_reference_entity_poly_link.link_id>
+            <PDBo:pdbx_reference_entity_poly_link.prd_id>PRD_000001</PDBo:pdbx_reference_entity_poly_link.prd_id>
+            <PDBo:pdbx_reference_entity_poly_link.ref_entity_id>1</PDBo:pdbx_reference_entity_poly_link.ref_entity_id>
+            <PDBo:pdbx_reference_entity_poly_link.atom_id_1>N</PDBo:pdbx_reference_entity_poly_link.atom_id_1>
+            <PDBo:pdbx_reference_entity_poly_link.atom_id_2>C</PDBo:pdbx_reference_entity_poly_link.atom_id_2>
+            <PDBo:pdbx_reference_entity_poly_link.comp_id_1>THR</PDBo:pdbx_reference_entity_poly_link.comp_id_1>
+            <PDBo:pdbx_reference_entity_poly_link.comp_id_2>PXZ</PDBo:pdbx_reference_entity_poly_link.comp_id_2>
+            <PDBo:pdbx_reference_entity_poly_link.entity_seq_num_1>1</PDBo:pdbx_reference_entity_poly_link.entity_seq_num_1>
+            <PDBo:pdbx_reference_entity_poly_link.entity_seq_num_2>6</PDBo:pdbx_reference_entity_poly_link.entity_seq_num_2>
+            <PDBo:pdbx_reference_entity_poly_link.value_order>sing</PDBo:pdbx_reference_entity_poly_link.value_order>
+          </PDBo:pdbx_reference_entity_poly_link>
+        </PDBo:has_pdbx_reference_entity_poly_link>
+        <PDBo:has_pdbx_reference_entity_poly_link>
+          <PDBo:pdbx_reference_entity_poly_link rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly_link/1,4,PRD_000001,1">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001"/>
+            <PDBo:reference_to_pdbx_reference_entity_list>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_list/1,PRD_000001,1">
+                <PDBo:referenced_by_pdbx_reference_entity_poly_link rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly_link/1,4,PRD_000001,1"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_reference_entity_list>
+            <PDBo:reference_to_pdbx_reference_entity_poly>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly/PRD_000001,1">
+                <PDBo:referenced_by_pdbx_reference_entity_poly_link rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly_link/1,4,PRD_000001,1"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_reference_entity_poly>
+            <PDBo:pdbx_reference_entity_poly_link.component_id>1</PDBo:pdbx_reference_entity_poly_link.component_id>
+            <PDBo:pdbx_reference_entity_poly_link.link_id>4</PDBo:pdbx_reference_entity_poly_link.link_id>
+            <PDBo:pdbx_reference_entity_poly_link.prd_id>PRD_000001</PDBo:pdbx_reference_entity_poly_link.prd_id>
+            <PDBo:pdbx_reference_entity_poly_link.ref_entity_id>1</PDBo:pdbx_reference_entity_poly_link.ref_entity_id>
+            <PDBo:pdbx_reference_entity_poly_link.atom_id_1>C</PDBo:pdbx_reference_entity_poly_link.atom_id_1>
+            <PDBo:pdbx_reference_entity_poly_link.atom_id_2>N</PDBo:pdbx_reference_entity_poly_link.atom_id_2>
+            <PDBo:pdbx_reference_entity_poly_link.comp_id_1>DVA</PDBo:pdbx_reference_entity_poly_link.comp_id_1>
+            <PDBo:pdbx_reference_entity_poly_link.comp_id_2>PRO</PDBo:pdbx_reference_entity_poly_link.comp_id_2>
+            <PDBo:pdbx_reference_entity_poly_link.entity_seq_num_1>2</PDBo:pdbx_reference_entity_poly_link.entity_seq_num_1>
+            <PDBo:pdbx_reference_entity_poly_link.entity_seq_num_2>3</PDBo:pdbx_reference_entity_poly_link.entity_seq_num_2>
+            <PDBo:pdbx_reference_entity_poly_link.value_order>sing</PDBo:pdbx_reference_entity_poly_link.value_order>
+          </PDBo:pdbx_reference_entity_poly_link>
+        </PDBo:has_pdbx_reference_entity_poly_link>
+        <PDBo:has_pdbx_reference_entity_poly_link>
+          <PDBo:pdbx_reference_entity_poly_link rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly_link/1,5,PRD_000001,1">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001"/>
+            <PDBo:reference_to_pdbx_reference_entity_list>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_list/1,PRD_000001,1">
+                <PDBo:referenced_by_pdbx_reference_entity_poly_link rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly_link/1,5,PRD_000001,1"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_reference_entity_list>
+            <PDBo:reference_to_pdbx_reference_entity_poly>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly/PRD_000001,1">
+                <PDBo:referenced_by_pdbx_reference_entity_poly_link rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly_link/1,5,PRD_000001,1"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_reference_entity_poly>
+            <PDBo:pdbx_reference_entity_poly_link.component_id>1</PDBo:pdbx_reference_entity_poly_link.component_id>
+            <PDBo:pdbx_reference_entity_poly_link.link_id>5</PDBo:pdbx_reference_entity_poly_link.link_id>
+            <PDBo:pdbx_reference_entity_poly_link.prd_id>PRD_000001</PDBo:pdbx_reference_entity_poly_link.prd_id>
+            <PDBo:pdbx_reference_entity_poly_link.ref_entity_id>1</PDBo:pdbx_reference_entity_poly_link.ref_entity_id>
+            <PDBo:pdbx_reference_entity_poly_link.atom_id_1>C</PDBo:pdbx_reference_entity_poly_link.atom_id_1>
+            <PDBo:pdbx_reference_entity_poly_link.atom_id_2>N</PDBo:pdbx_reference_entity_poly_link.atom_id_2>
+            <PDBo:pdbx_reference_entity_poly_link.comp_id_1>PRO</PDBo:pdbx_reference_entity_poly_link.comp_id_1>
+            <PDBo:pdbx_reference_entity_poly_link.comp_id_2>SAR</PDBo:pdbx_reference_entity_poly_link.comp_id_2>
+            <PDBo:pdbx_reference_entity_poly_link.entity_seq_num_1>3</PDBo:pdbx_reference_entity_poly_link.entity_seq_num_1>
+            <PDBo:pdbx_reference_entity_poly_link.entity_seq_num_2>4</PDBo:pdbx_reference_entity_poly_link.entity_seq_num_2>
+            <PDBo:pdbx_reference_entity_poly_link.value_order>sing</PDBo:pdbx_reference_entity_poly_link.value_order>
+          </PDBo:pdbx_reference_entity_poly_link>
+        </PDBo:has_pdbx_reference_entity_poly_link>
+        <PDBo:has_pdbx_reference_entity_poly_link>
+          <PDBo:pdbx_reference_entity_poly_link rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly_link/1,6,PRD_000001,1">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001"/>
+            <PDBo:reference_to_pdbx_reference_entity_list>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_list/1,PRD_000001,1">
+                <PDBo:referenced_by_pdbx_reference_entity_poly_link rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly_link/1,6,PRD_000001,1"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_reference_entity_list>
+            <PDBo:reference_to_pdbx_reference_entity_poly>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly/PRD_000001,1">
+                <PDBo:referenced_by_pdbx_reference_entity_poly_link rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly_link/1,6,PRD_000001,1"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_reference_entity_poly>
+            <PDBo:pdbx_reference_entity_poly_link.component_id>1</PDBo:pdbx_reference_entity_poly_link.component_id>
+            <PDBo:pdbx_reference_entity_poly_link.link_id>6</PDBo:pdbx_reference_entity_poly_link.link_id>
+            <PDBo:pdbx_reference_entity_poly_link.prd_id>PRD_000001</PDBo:pdbx_reference_entity_poly_link.prd_id>
+            <PDBo:pdbx_reference_entity_poly_link.ref_entity_id>1</PDBo:pdbx_reference_entity_poly_link.ref_entity_id>
+            <PDBo:pdbx_reference_entity_poly_link.atom_id_1>C</PDBo:pdbx_reference_entity_poly_link.atom_id_1>
+            <PDBo:pdbx_reference_entity_poly_link.atom_id_2>N</PDBo:pdbx_reference_entity_poly_link.atom_id_2>
+            <PDBo:pdbx_reference_entity_poly_link.comp_id_1>SAR</PDBo:pdbx_reference_entity_poly_link.comp_id_1>
+            <PDBo:pdbx_reference_entity_poly_link.comp_id_2>MVA</PDBo:pdbx_reference_entity_poly_link.comp_id_2>
+            <PDBo:pdbx_reference_entity_poly_link.entity_seq_num_1>4</PDBo:pdbx_reference_entity_poly_link.entity_seq_num_1>
+            <PDBo:pdbx_reference_entity_poly_link.entity_seq_num_2>5</PDBo:pdbx_reference_entity_poly_link.entity_seq_num_2>
+            <PDBo:pdbx_reference_entity_poly_link.value_order>sing</PDBo:pdbx_reference_entity_poly_link.value_order>
+          </PDBo:pdbx_reference_entity_poly_link>
+        </PDBo:has_pdbx_reference_entity_poly_link>
+        <PDBo:has_pdbx_reference_entity_poly_link>
+          <PDBo:pdbx_reference_entity_poly_link rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly_link/1,7,PRD_000001,1">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001"/>
+            <PDBo:reference_to_pdbx_reference_entity_list>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_list/1,PRD_000001,1">
+                <PDBo:referenced_by_pdbx_reference_entity_poly_link rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly_link/1,7,PRD_000001,1"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_reference_entity_list>
+            <PDBo:reference_to_pdbx_reference_entity_poly>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly/PRD_000001,1">
+                <PDBo:referenced_by_pdbx_reference_entity_poly_link rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly_link/1,7,PRD_000001,1"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_reference_entity_poly>
+            <PDBo:pdbx_reference_entity_poly_link.component_id>1</PDBo:pdbx_reference_entity_poly_link.component_id>
+            <PDBo:pdbx_reference_entity_poly_link.link_id>7</PDBo:pdbx_reference_entity_poly_link.link_id>
+            <PDBo:pdbx_reference_entity_poly_link.prd_id>PRD_000001</PDBo:pdbx_reference_entity_poly_link.prd_id>
+            <PDBo:pdbx_reference_entity_poly_link.ref_entity_id>1</PDBo:pdbx_reference_entity_poly_link.ref_entity_id>
+            <PDBo:pdbx_reference_entity_poly_link.atom_id_1>C'</PDBo:pdbx_reference_entity_poly_link.atom_id_1>
+            <PDBo:pdbx_reference_entity_poly_link.atom_id_2>N</PDBo:pdbx_reference_entity_poly_link.atom_id_2>
+            <PDBo:pdbx_reference_entity_poly_link.comp_id_1>PXZ</PDBo:pdbx_reference_entity_poly_link.comp_id_1>
+            <PDBo:pdbx_reference_entity_poly_link.comp_id_2>THR</PDBo:pdbx_reference_entity_poly_link.comp_id_2>
+            <PDBo:pdbx_reference_entity_poly_link.entity_seq_num_1>6</PDBo:pdbx_reference_entity_poly_link.entity_seq_num_1>
+            <PDBo:pdbx_reference_entity_poly_link.entity_seq_num_2>7</PDBo:pdbx_reference_entity_poly_link.entity_seq_num_2>
+            <PDBo:pdbx_reference_entity_poly_link.value_order>sing</PDBo:pdbx_reference_entity_poly_link.value_order>
+          </PDBo:pdbx_reference_entity_poly_link>
+        </PDBo:has_pdbx_reference_entity_poly_link>
+        <PDBo:has_pdbx_reference_entity_poly_link>
+          <PDBo:pdbx_reference_entity_poly_link rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly_link/1,8,PRD_000001,1">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001"/>
+            <PDBo:reference_to_pdbx_reference_entity_list>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_list/1,PRD_000001,1">
+                <PDBo:referenced_by_pdbx_reference_entity_poly_link rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly_link/1,8,PRD_000001,1"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_reference_entity_list>
+            <PDBo:reference_to_pdbx_reference_entity_poly>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly/PRD_000001,1">
+                <PDBo:referenced_by_pdbx_reference_entity_poly_link rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly_link/1,8,PRD_000001,1"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_reference_entity_poly>
+            <PDBo:pdbx_reference_entity_poly_link.component_id>1</PDBo:pdbx_reference_entity_poly_link.component_id>
+            <PDBo:pdbx_reference_entity_poly_link.link_id>8</PDBo:pdbx_reference_entity_poly_link.link_id>
+            <PDBo:pdbx_reference_entity_poly_link.prd_id>PRD_000001</PDBo:pdbx_reference_entity_poly_link.prd_id>
+            <PDBo:pdbx_reference_entity_poly_link.ref_entity_id>1</PDBo:pdbx_reference_entity_poly_link.ref_entity_id>
+            <PDBo:pdbx_reference_entity_poly_link.atom_id_1>C</PDBo:pdbx_reference_entity_poly_link.atom_id_1>
+            <PDBo:pdbx_reference_entity_poly_link.atom_id_2>N</PDBo:pdbx_reference_entity_poly_link.atom_id_2>
+            <PDBo:pdbx_reference_entity_poly_link.comp_id_1>THR</PDBo:pdbx_reference_entity_poly_link.comp_id_1>
+            <PDBo:pdbx_reference_entity_poly_link.comp_id_2>DVA</PDBo:pdbx_reference_entity_poly_link.comp_id_2>
+            <PDBo:pdbx_reference_entity_poly_link.entity_seq_num_1>7</PDBo:pdbx_reference_entity_poly_link.entity_seq_num_1>
+            <PDBo:pdbx_reference_entity_poly_link.entity_seq_num_2>8</PDBo:pdbx_reference_entity_poly_link.entity_seq_num_2>
+            <PDBo:pdbx_reference_entity_poly_link.value_order>sing</PDBo:pdbx_reference_entity_poly_link.value_order>
+          </PDBo:pdbx_reference_entity_poly_link>
+        </PDBo:has_pdbx_reference_entity_poly_link>
+        <PDBo:has_pdbx_reference_entity_poly_link>
+          <PDBo:pdbx_reference_entity_poly_link rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly_link/1,9,PRD_000001,1">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001"/>
+            <PDBo:reference_to_pdbx_reference_entity_list>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_list/1,PRD_000001,1">
+                <PDBo:referenced_by_pdbx_reference_entity_poly_link rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly_link/1,9,PRD_000001,1"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_reference_entity_list>
+            <PDBo:reference_to_pdbx_reference_entity_poly>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly/PRD_000001,1">
+                <PDBo:referenced_by_pdbx_reference_entity_poly_link rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly_link/1,9,PRD_000001,1"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_reference_entity_poly>
+            <PDBo:pdbx_reference_entity_poly_link.component_id>1</PDBo:pdbx_reference_entity_poly_link.component_id>
+            <PDBo:pdbx_reference_entity_poly_link.link_id>9</PDBo:pdbx_reference_entity_poly_link.link_id>
+            <PDBo:pdbx_reference_entity_poly_link.prd_id>PRD_000001</PDBo:pdbx_reference_entity_poly_link.prd_id>
+            <PDBo:pdbx_reference_entity_poly_link.ref_entity_id>1</PDBo:pdbx_reference_entity_poly_link.ref_entity_id>
+            <PDBo:pdbx_reference_entity_poly_link.atom_id_1>OG1</PDBo:pdbx_reference_entity_poly_link.atom_id_1>
+            <PDBo:pdbx_reference_entity_poly_link.atom_id_2>C</PDBo:pdbx_reference_entity_poly_link.atom_id_2>
+            <PDBo:pdbx_reference_entity_poly_link.comp_id_1>THR</PDBo:pdbx_reference_entity_poly_link.comp_id_1>
+            <PDBo:pdbx_reference_entity_poly_link.comp_id_2>MVA</PDBo:pdbx_reference_entity_poly_link.comp_id_2>
+            <PDBo:pdbx_reference_entity_poly_link.entity_seq_num_1>7</PDBo:pdbx_reference_entity_poly_link.entity_seq_num_1>
+            <PDBo:pdbx_reference_entity_poly_link.entity_seq_num_2>11</PDBo:pdbx_reference_entity_poly_link.entity_seq_num_2>
+            <PDBo:pdbx_reference_entity_poly_link.value_order>sing</PDBo:pdbx_reference_entity_poly_link.value_order>
+          </PDBo:pdbx_reference_entity_poly_link>
+        </PDBo:has_pdbx_reference_entity_poly_link>
+        <PDBo:has_pdbx_reference_entity_poly_link>
+          <PDBo:pdbx_reference_entity_poly_link rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly_link/1,10,PRD_000001,1">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001"/>
+            <PDBo:reference_to_pdbx_reference_entity_list>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_list/1,PRD_000001,1">
+                <PDBo:referenced_by_pdbx_reference_entity_poly_link rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly_link/1,10,PRD_000001,1"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_reference_entity_list>
+            <PDBo:reference_to_pdbx_reference_entity_poly>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly/PRD_000001,1">
+                <PDBo:referenced_by_pdbx_reference_entity_poly_link rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly_link/1,10,PRD_000001,1"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_reference_entity_poly>
+            <PDBo:pdbx_reference_entity_poly_link.component_id>1</PDBo:pdbx_reference_entity_poly_link.component_id>
+            <PDBo:pdbx_reference_entity_poly_link.link_id>10</PDBo:pdbx_reference_entity_poly_link.link_id>
+            <PDBo:pdbx_reference_entity_poly_link.prd_id>PRD_000001</PDBo:pdbx_reference_entity_poly_link.prd_id>
+            <PDBo:pdbx_reference_entity_poly_link.ref_entity_id>1</PDBo:pdbx_reference_entity_poly_link.ref_entity_id>
+            <PDBo:pdbx_reference_entity_poly_link.atom_id_1>C</PDBo:pdbx_reference_entity_poly_link.atom_id_1>
+            <PDBo:pdbx_reference_entity_poly_link.atom_id_2>N</PDBo:pdbx_reference_entity_poly_link.atom_id_2>
+            <PDBo:pdbx_reference_entity_poly_link.comp_id_1>DVA</PDBo:pdbx_reference_entity_poly_link.comp_id_1>
+            <PDBo:pdbx_reference_entity_poly_link.comp_id_2>PRO</PDBo:pdbx_reference_entity_poly_link.comp_id_2>
+            <PDBo:pdbx_reference_entity_poly_link.entity_seq_num_1>8</PDBo:pdbx_reference_entity_poly_link.entity_seq_num_1>
+            <PDBo:pdbx_reference_entity_poly_link.entity_seq_num_2>9</PDBo:pdbx_reference_entity_poly_link.entity_seq_num_2>
+            <PDBo:pdbx_reference_entity_poly_link.value_order>sing</PDBo:pdbx_reference_entity_poly_link.value_order>
+          </PDBo:pdbx_reference_entity_poly_link>
+        </PDBo:has_pdbx_reference_entity_poly_link>
+        <PDBo:has_pdbx_reference_entity_poly_link>
+          <PDBo:pdbx_reference_entity_poly_link rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly_link/1,11,PRD_000001,1">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001"/>
+            <PDBo:reference_to_pdbx_reference_entity_list>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_list/1,PRD_000001,1">
+                <PDBo:referenced_by_pdbx_reference_entity_poly_link rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly_link/1,11,PRD_000001,1"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_reference_entity_list>
+            <PDBo:reference_to_pdbx_reference_entity_poly>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly/PRD_000001,1">
+                <PDBo:referenced_by_pdbx_reference_entity_poly_link rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly_link/1,11,PRD_000001,1"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_reference_entity_poly>
+            <PDBo:pdbx_reference_entity_poly_link.component_id>1</PDBo:pdbx_reference_entity_poly_link.component_id>
+            <PDBo:pdbx_reference_entity_poly_link.link_id>11</PDBo:pdbx_reference_entity_poly_link.link_id>
+            <PDBo:pdbx_reference_entity_poly_link.prd_id>PRD_000001</PDBo:pdbx_reference_entity_poly_link.prd_id>
+            <PDBo:pdbx_reference_entity_poly_link.ref_entity_id>1</PDBo:pdbx_reference_entity_poly_link.ref_entity_id>
+            <PDBo:pdbx_reference_entity_poly_link.atom_id_1>C</PDBo:pdbx_reference_entity_poly_link.atom_id_1>
+            <PDBo:pdbx_reference_entity_poly_link.atom_id_2>N</PDBo:pdbx_reference_entity_poly_link.atom_id_2>
+            <PDBo:pdbx_reference_entity_poly_link.comp_id_1>PRO</PDBo:pdbx_reference_entity_poly_link.comp_id_1>
+            <PDBo:pdbx_reference_entity_poly_link.comp_id_2>SAR</PDBo:pdbx_reference_entity_poly_link.comp_id_2>
+            <PDBo:pdbx_reference_entity_poly_link.entity_seq_num_1>9</PDBo:pdbx_reference_entity_poly_link.entity_seq_num_1>
+            <PDBo:pdbx_reference_entity_poly_link.entity_seq_num_2>10</PDBo:pdbx_reference_entity_poly_link.entity_seq_num_2>
+            <PDBo:pdbx_reference_entity_poly_link.value_order>sing</PDBo:pdbx_reference_entity_poly_link.value_order>
+          </PDBo:pdbx_reference_entity_poly_link>
+        </PDBo:has_pdbx_reference_entity_poly_link>
+        <PDBo:has_pdbx_reference_entity_poly_link>
+          <PDBo:pdbx_reference_entity_poly_link rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly_link/1,12,PRD_000001,1">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001"/>
+            <PDBo:reference_to_pdbx_reference_entity_list>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_list/1,PRD_000001,1">
+                <PDBo:referenced_by_pdbx_reference_entity_poly_link rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly_link/1,12,PRD_000001,1"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_reference_entity_list>
+            <PDBo:reference_to_pdbx_reference_entity_poly>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly/PRD_000001,1">
+                <PDBo:referenced_by_pdbx_reference_entity_poly_link rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly_link/1,12,PRD_000001,1"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_reference_entity_poly>
+            <PDBo:pdbx_reference_entity_poly_link.component_id>1</PDBo:pdbx_reference_entity_poly_link.component_id>
+            <PDBo:pdbx_reference_entity_poly_link.link_id>12</PDBo:pdbx_reference_entity_poly_link.link_id>
+            <PDBo:pdbx_reference_entity_poly_link.prd_id>PRD_000001</PDBo:pdbx_reference_entity_poly_link.prd_id>
+            <PDBo:pdbx_reference_entity_poly_link.ref_entity_id>1</PDBo:pdbx_reference_entity_poly_link.ref_entity_id>
+            <PDBo:pdbx_reference_entity_poly_link.atom_id_1>C</PDBo:pdbx_reference_entity_poly_link.atom_id_1>
+            <PDBo:pdbx_reference_entity_poly_link.atom_id_2>N</PDBo:pdbx_reference_entity_poly_link.atom_id_2>
+            <PDBo:pdbx_reference_entity_poly_link.comp_id_1>SAR</PDBo:pdbx_reference_entity_poly_link.comp_id_1>
+            <PDBo:pdbx_reference_entity_poly_link.comp_id_2>MVA</PDBo:pdbx_reference_entity_poly_link.comp_id_2>
+            <PDBo:pdbx_reference_entity_poly_link.entity_seq_num_1>10</PDBo:pdbx_reference_entity_poly_link.entity_seq_num_1>
+            <PDBo:pdbx_reference_entity_poly_link.entity_seq_num_2>11</PDBo:pdbx_reference_entity_poly_link.entity_seq_num_2>
+            <PDBo:pdbx_reference_entity_poly_link.value_order>sing</PDBo:pdbx_reference_entity_poly_link.value_order>
+          </PDBo:pdbx_reference_entity_poly_link>
+        </PDBo:has_pdbx_reference_entity_poly_link>
+      </PDBo:pdbx_reference_entity_poly_linkCategory>
+    </PDBo:has_pdbx_reference_entity_poly_linkCategory>
+    <PDBo:has_pdbx_reference_entity_poly_seqCategory>
+      <PDBo:pdbx_reference_entity_poly_seqCategory rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly_seqCategory">
+        <PDBo:has_pdbx_reference_entity_poly_seq>
+          <PDBo:pdbx_reference_entity_poly_seq rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly_seq/N,THR,1,PRD_000001,1">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001"/>
+            <PDBo:reference_to_pdbx_reference_entity_poly>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly/PRD_000001,1">
+                <PDBo:referenced_by_pdbx_reference_entity_poly_seq rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly_seq/N,THR,1,PRD_000001,1"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_reference_entity_poly>
+            <PDBo:pdbx_reference_entity_poly_seq.hetero>N</PDBo:pdbx_reference_entity_poly_seq.hetero>
+            <PDBo:pdbx_reference_entity_poly_seq.mon_id>THR</PDBo:pdbx_reference_entity_poly_seq.mon_id>
+            <PDBo:pdbx_reference_entity_poly_seq.num>1</PDBo:pdbx_reference_entity_poly_seq.num>
+            <PDBo:pdbx_reference_entity_poly_seq.prd_id>PRD_000001</PDBo:pdbx_reference_entity_poly_seq.prd_id>
+            <PDBo:pdbx_reference_entity_poly_seq.ref_entity_id>1</PDBo:pdbx_reference_entity_poly_seq.ref_entity_id>
+            <PDBo:link_to_chem_comp rdf:resource="http://rdf.wwpdb.org/cc/THR"/>
+            <PDBo:pdbx_reference_entity_poly_seq.observed>Y</PDBo:pdbx_reference_entity_poly_seq.observed>
+            <PDBo:pdbx_reference_entity_poly_seq.parent_mon_id>THR</PDBo:pdbx_reference_entity_poly_seq.parent_mon_id>
+            <PDBo:link_to_parent_chem_comp rdf:resource="http://rdf.wwpdb.org/cc/THR"/>
+          </PDBo:pdbx_reference_entity_poly_seq>
+        </PDBo:has_pdbx_reference_entity_poly_seq>
+        <PDBo:has_pdbx_reference_entity_poly_seq>
+          <PDBo:pdbx_reference_entity_poly_seq rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly_seq/N,DVA,2,PRD_000001,1">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001"/>
+            <PDBo:reference_to_pdbx_reference_entity_poly>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly/PRD_000001,1">
+                <PDBo:referenced_by_pdbx_reference_entity_poly_seq rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly_seq/N,DVA,2,PRD_000001,1"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_reference_entity_poly>
+            <PDBo:pdbx_reference_entity_poly_seq.hetero>N</PDBo:pdbx_reference_entity_poly_seq.hetero>
+            <PDBo:pdbx_reference_entity_poly_seq.mon_id>DVA</PDBo:pdbx_reference_entity_poly_seq.mon_id>
+            <PDBo:pdbx_reference_entity_poly_seq.num>2</PDBo:pdbx_reference_entity_poly_seq.num>
+            <PDBo:pdbx_reference_entity_poly_seq.prd_id>PRD_000001</PDBo:pdbx_reference_entity_poly_seq.prd_id>
+            <PDBo:pdbx_reference_entity_poly_seq.ref_entity_id>1</PDBo:pdbx_reference_entity_poly_seq.ref_entity_id>
+            <PDBo:link_to_chem_comp rdf:resource="http://rdf.wwpdb.org/cc/DVA"/>
+            <PDBo:pdbx_reference_entity_poly_seq.observed>Y</PDBo:pdbx_reference_entity_poly_seq.observed>
+            <PDBo:pdbx_reference_entity_poly_seq.parent_mon_id>VAL</PDBo:pdbx_reference_entity_poly_seq.parent_mon_id>
+            <PDBo:link_to_parent_chem_comp rdf:resource="http://rdf.wwpdb.org/cc/VAL"/>
+          </PDBo:pdbx_reference_entity_poly_seq>
+        </PDBo:has_pdbx_reference_entity_poly_seq>
+        <PDBo:has_pdbx_reference_entity_poly_seq>
+          <PDBo:pdbx_reference_entity_poly_seq rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly_seq/N,PRO,3,PRD_000001,1">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001"/>
+            <PDBo:reference_to_pdbx_reference_entity_poly>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly/PRD_000001,1">
+                <PDBo:referenced_by_pdbx_reference_entity_poly_seq rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly_seq/N,PRO,3,PRD_000001,1"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_reference_entity_poly>
+            <PDBo:pdbx_reference_entity_poly_seq.hetero>N</PDBo:pdbx_reference_entity_poly_seq.hetero>
+            <PDBo:pdbx_reference_entity_poly_seq.mon_id>PRO</PDBo:pdbx_reference_entity_poly_seq.mon_id>
+            <PDBo:pdbx_reference_entity_poly_seq.num>3</PDBo:pdbx_reference_entity_poly_seq.num>
+            <PDBo:pdbx_reference_entity_poly_seq.prd_id>PRD_000001</PDBo:pdbx_reference_entity_poly_seq.prd_id>
+            <PDBo:pdbx_reference_entity_poly_seq.ref_entity_id>1</PDBo:pdbx_reference_entity_poly_seq.ref_entity_id>
+            <PDBo:link_to_chem_comp rdf:resource="http://rdf.wwpdb.org/cc/PRO"/>
+            <PDBo:pdbx_reference_entity_poly_seq.observed>Y</PDBo:pdbx_reference_entity_poly_seq.observed>
+            <PDBo:pdbx_reference_entity_poly_seq.parent_mon_id>PRO</PDBo:pdbx_reference_entity_poly_seq.parent_mon_id>
+            <PDBo:link_to_parent_chem_comp rdf:resource="http://rdf.wwpdb.org/cc/PRO"/>
+          </PDBo:pdbx_reference_entity_poly_seq>
+        </PDBo:has_pdbx_reference_entity_poly_seq>
+        <PDBo:has_pdbx_reference_entity_poly_seq>
+          <PDBo:pdbx_reference_entity_poly_seq rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly_seq/N,SAR,4,PRD_000001,1">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001"/>
+            <PDBo:reference_to_pdbx_reference_entity_poly>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly/PRD_000001,1">
+                <PDBo:referenced_by_pdbx_reference_entity_poly_seq rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly_seq/N,SAR,4,PRD_000001,1"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_reference_entity_poly>
+            <PDBo:pdbx_reference_entity_poly_seq.hetero>N</PDBo:pdbx_reference_entity_poly_seq.hetero>
+            <PDBo:pdbx_reference_entity_poly_seq.mon_id>SAR</PDBo:pdbx_reference_entity_poly_seq.mon_id>
+            <PDBo:pdbx_reference_entity_poly_seq.num>4</PDBo:pdbx_reference_entity_poly_seq.num>
+            <PDBo:pdbx_reference_entity_poly_seq.prd_id>PRD_000001</PDBo:pdbx_reference_entity_poly_seq.prd_id>
+            <PDBo:pdbx_reference_entity_poly_seq.ref_entity_id>1</PDBo:pdbx_reference_entity_poly_seq.ref_entity_id>
+            <PDBo:link_to_chem_comp rdf:resource="http://rdf.wwpdb.org/cc/SAR"/>
+            <PDBo:pdbx_reference_entity_poly_seq.observed>Y</PDBo:pdbx_reference_entity_poly_seq.observed>
+            <PDBo:pdbx_reference_entity_poly_seq.parent_mon_id>GLY</PDBo:pdbx_reference_entity_poly_seq.parent_mon_id>
+            <PDBo:link_to_parent_chem_comp rdf:resource="http://rdf.wwpdb.org/cc/GLY"/>
+          </PDBo:pdbx_reference_entity_poly_seq>
+        </PDBo:has_pdbx_reference_entity_poly_seq>
+        <PDBo:has_pdbx_reference_entity_poly_seq>
+          <PDBo:pdbx_reference_entity_poly_seq rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly_seq/N,MVA,5,PRD_000001,1">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001"/>
+            <PDBo:reference_to_pdbx_reference_entity_poly>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly/PRD_000001,1">
+                <PDBo:referenced_by_pdbx_reference_entity_poly_seq rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly_seq/N,MVA,5,PRD_000001,1"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_reference_entity_poly>
+            <PDBo:pdbx_reference_entity_poly_seq.hetero>N</PDBo:pdbx_reference_entity_poly_seq.hetero>
+            <PDBo:pdbx_reference_entity_poly_seq.mon_id>MVA</PDBo:pdbx_reference_entity_poly_seq.mon_id>
+            <PDBo:pdbx_reference_entity_poly_seq.num>5</PDBo:pdbx_reference_entity_poly_seq.num>
+            <PDBo:pdbx_reference_entity_poly_seq.prd_id>PRD_000001</PDBo:pdbx_reference_entity_poly_seq.prd_id>
+            <PDBo:pdbx_reference_entity_poly_seq.ref_entity_id>1</PDBo:pdbx_reference_entity_poly_seq.ref_entity_id>
+            <PDBo:link_to_chem_comp rdf:resource="http://rdf.wwpdb.org/cc/MVA"/>
+            <PDBo:pdbx_reference_entity_poly_seq.observed>Y</PDBo:pdbx_reference_entity_poly_seq.observed>
+            <PDBo:pdbx_reference_entity_poly_seq.parent_mon_id>VAL</PDBo:pdbx_reference_entity_poly_seq.parent_mon_id>
+            <PDBo:link_to_parent_chem_comp rdf:resource="http://rdf.wwpdb.org/cc/VAL"/>
+          </PDBo:pdbx_reference_entity_poly_seq>
+        </PDBo:has_pdbx_reference_entity_poly_seq>
+        <PDBo:has_pdbx_reference_entity_poly_seq>
+          <PDBo:pdbx_reference_entity_poly_seq rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly_seq/N,PXZ,6,PRD_000001,1">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001"/>
+            <PDBo:reference_to_pdbx_reference_entity_poly>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly/PRD_000001,1">
+                <PDBo:referenced_by_pdbx_reference_entity_poly_seq rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly_seq/N,PXZ,6,PRD_000001,1"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_reference_entity_poly>
+            <PDBo:pdbx_reference_entity_poly_seq.hetero>N</PDBo:pdbx_reference_entity_poly_seq.hetero>
+            <PDBo:pdbx_reference_entity_poly_seq.mon_id>PXZ</PDBo:pdbx_reference_entity_poly_seq.mon_id>
+            <PDBo:pdbx_reference_entity_poly_seq.num>6</PDBo:pdbx_reference_entity_poly_seq.num>
+            <PDBo:pdbx_reference_entity_poly_seq.prd_id>PRD_000001</PDBo:pdbx_reference_entity_poly_seq.prd_id>
+            <PDBo:pdbx_reference_entity_poly_seq.ref_entity_id>1</PDBo:pdbx_reference_entity_poly_seq.ref_entity_id>
+            <PDBo:link_to_chem_comp rdf:resource="http://rdf.wwpdb.org/cc/PXZ"/>
+            <PDBo:pdbx_reference_entity_poly_seq.observed>Y</PDBo:pdbx_reference_entity_poly_seq.observed>
+          </PDBo:pdbx_reference_entity_poly_seq>
+        </PDBo:has_pdbx_reference_entity_poly_seq>
+        <PDBo:has_pdbx_reference_entity_poly_seq>
+          <PDBo:pdbx_reference_entity_poly_seq rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly_seq/N,THR,7,PRD_000001,1">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001"/>
+            <PDBo:reference_to_pdbx_reference_entity_poly>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly/PRD_000001,1">
+                <PDBo:referenced_by_pdbx_reference_entity_poly_seq rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly_seq/N,THR,7,PRD_000001,1"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_reference_entity_poly>
+            <PDBo:pdbx_reference_entity_poly_seq.hetero>N</PDBo:pdbx_reference_entity_poly_seq.hetero>
+            <PDBo:pdbx_reference_entity_poly_seq.mon_id>THR</PDBo:pdbx_reference_entity_poly_seq.mon_id>
+            <PDBo:pdbx_reference_entity_poly_seq.num>7</PDBo:pdbx_reference_entity_poly_seq.num>
+            <PDBo:pdbx_reference_entity_poly_seq.prd_id>PRD_000001</PDBo:pdbx_reference_entity_poly_seq.prd_id>
+            <PDBo:pdbx_reference_entity_poly_seq.ref_entity_id>1</PDBo:pdbx_reference_entity_poly_seq.ref_entity_id>
+            <PDBo:link_to_chem_comp rdf:resource="http://rdf.wwpdb.org/cc/THR"/>
+            <PDBo:pdbx_reference_entity_poly_seq.observed>Y</PDBo:pdbx_reference_entity_poly_seq.observed>
+            <PDBo:pdbx_reference_entity_poly_seq.parent_mon_id>THR</PDBo:pdbx_reference_entity_poly_seq.parent_mon_id>
+            <PDBo:link_to_parent_chem_comp rdf:resource="http://rdf.wwpdb.org/cc/THR"/>
+          </PDBo:pdbx_reference_entity_poly_seq>
+        </PDBo:has_pdbx_reference_entity_poly_seq>
+        <PDBo:has_pdbx_reference_entity_poly_seq>
+          <PDBo:pdbx_reference_entity_poly_seq rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly_seq/N,DVA,8,PRD_000001,1">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001"/>
+            <PDBo:reference_to_pdbx_reference_entity_poly>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly/PRD_000001,1">
+                <PDBo:referenced_by_pdbx_reference_entity_poly_seq rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly_seq/N,DVA,8,PRD_000001,1"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_reference_entity_poly>
+            <PDBo:pdbx_reference_entity_poly_seq.hetero>N</PDBo:pdbx_reference_entity_poly_seq.hetero>
+            <PDBo:pdbx_reference_entity_poly_seq.mon_id>DVA</PDBo:pdbx_reference_entity_poly_seq.mon_id>
+            <PDBo:pdbx_reference_entity_poly_seq.num>8</PDBo:pdbx_reference_entity_poly_seq.num>
+            <PDBo:pdbx_reference_entity_poly_seq.prd_id>PRD_000001</PDBo:pdbx_reference_entity_poly_seq.prd_id>
+            <PDBo:pdbx_reference_entity_poly_seq.ref_entity_id>1</PDBo:pdbx_reference_entity_poly_seq.ref_entity_id>
+            <PDBo:link_to_chem_comp rdf:resource="http://rdf.wwpdb.org/cc/DVA"/>
+            <PDBo:pdbx_reference_entity_poly_seq.observed>Y</PDBo:pdbx_reference_entity_poly_seq.observed>
+            <PDBo:pdbx_reference_entity_poly_seq.parent_mon_id>VAL</PDBo:pdbx_reference_entity_poly_seq.parent_mon_id>
+            <PDBo:link_to_parent_chem_comp rdf:resource="http://rdf.wwpdb.org/cc/VAL"/>
+          </PDBo:pdbx_reference_entity_poly_seq>
+        </PDBo:has_pdbx_reference_entity_poly_seq>
+        <PDBo:has_pdbx_reference_entity_poly_seq>
+          <PDBo:pdbx_reference_entity_poly_seq rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly_seq/N,PRO,9,PRD_000001,1">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001"/>
+            <PDBo:reference_to_pdbx_reference_entity_poly>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly/PRD_000001,1">
+                <PDBo:referenced_by_pdbx_reference_entity_poly_seq rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly_seq/N,PRO,9,PRD_000001,1"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_reference_entity_poly>
+            <PDBo:pdbx_reference_entity_poly_seq.hetero>N</PDBo:pdbx_reference_entity_poly_seq.hetero>
+            <PDBo:pdbx_reference_entity_poly_seq.mon_id>PRO</PDBo:pdbx_reference_entity_poly_seq.mon_id>
+            <PDBo:pdbx_reference_entity_poly_seq.num>9</PDBo:pdbx_reference_entity_poly_seq.num>
+            <PDBo:pdbx_reference_entity_poly_seq.prd_id>PRD_000001</PDBo:pdbx_reference_entity_poly_seq.prd_id>
+            <PDBo:pdbx_reference_entity_poly_seq.ref_entity_id>1</PDBo:pdbx_reference_entity_poly_seq.ref_entity_id>
+            <PDBo:link_to_chem_comp rdf:resource="http://rdf.wwpdb.org/cc/PRO"/>
+            <PDBo:pdbx_reference_entity_poly_seq.observed>Y</PDBo:pdbx_reference_entity_poly_seq.observed>
+            <PDBo:pdbx_reference_entity_poly_seq.parent_mon_id>PRO</PDBo:pdbx_reference_entity_poly_seq.parent_mon_id>
+            <PDBo:link_to_parent_chem_comp rdf:resource="http://rdf.wwpdb.org/cc/PRO"/>
+          </PDBo:pdbx_reference_entity_poly_seq>
+        </PDBo:has_pdbx_reference_entity_poly_seq>
+        <PDBo:has_pdbx_reference_entity_poly_seq>
+          <PDBo:pdbx_reference_entity_poly_seq rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly_seq/N,SAR,10,PRD_000001,1">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001"/>
+            <PDBo:reference_to_pdbx_reference_entity_poly>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly/PRD_000001,1">
+                <PDBo:referenced_by_pdbx_reference_entity_poly_seq rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly_seq/N,SAR,10,PRD_000001,1"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_reference_entity_poly>
+            <PDBo:pdbx_reference_entity_poly_seq.hetero>N</PDBo:pdbx_reference_entity_poly_seq.hetero>
+            <PDBo:pdbx_reference_entity_poly_seq.mon_id>SAR</PDBo:pdbx_reference_entity_poly_seq.mon_id>
+            <PDBo:pdbx_reference_entity_poly_seq.num>10</PDBo:pdbx_reference_entity_poly_seq.num>
+            <PDBo:pdbx_reference_entity_poly_seq.prd_id>PRD_000001</PDBo:pdbx_reference_entity_poly_seq.prd_id>
+            <PDBo:pdbx_reference_entity_poly_seq.ref_entity_id>1</PDBo:pdbx_reference_entity_poly_seq.ref_entity_id>
+            <PDBo:link_to_chem_comp rdf:resource="http://rdf.wwpdb.org/cc/SAR"/>
+            <PDBo:pdbx_reference_entity_poly_seq.observed>Y</PDBo:pdbx_reference_entity_poly_seq.observed>
+            <PDBo:pdbx_reference_entity_poly_seq.parent_mon_id>GLY</PDBo:pdbx_reference_entity_poly_seq.parent_mon_id>
+            <PDBo:link_to_parent_chem_comp rdf:resource="http://rdf.wwpdb.org/cc/GLY"/>
+          </PDBo:pdbx_reference_entity_poly_seq>
+        </PDBo:has_pdbx_reference_entity_poly_seq>
+        <PDBo:has_pdbx_reference_entity_poly_seq>
+          <PDBo:pdbx_reference_entity_poly_seq rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly_seq/N,MVA,11,PRD_000001,1">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001"/>
+            <PDBo:reference_to_pdbx_reference_entity_poly>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly/PRD_000001,1">
+                <PDBo:referenced_by_pdbx_reference_entity_poly_seq rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly_seq/N,MVA,11,PRD_000001,1"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_reference_entity_poly>
+            <PDBo:pdbx_reference_entity_poly_seq.hetero>N</PDBo:pdbx_reference_entity_poly_seq.hetero>
+            <PDBo:pdbx_reference_entity_poly_seq.mon_id>MVA</PDBo:pdbx_reference_entity_poly_seq.mon_id>
+            <PDBo:pdbx_reference_entity_poly_seq.num>11</PDBo:pdbx_reference_entity_poly_seq.num>
+            <PDBo:pdbx_reference_entity_poly_seq.prd_id>PRD_000001</PDBo:pdbx_reference_entity_poly_seq.prd_id>
+            <PDBo:pdbx_reference_entity_poly_seq.ref_entity_id>1</PDBo:pdbx_reference_entity_poly_seq.ref_entity_id>
+            <PDBo:link_to_chem_comp rdf:resource="http://rdf.wwpdb.org/cc/MVA"/>
+            <PDBo:pdbx_reference_entity_poly_seq.observed>Y</PDBo:pdbx_reference_entity_poly_seq.observed>
+            <PDBo:pdbx_reference_entity_poly_seq.parent_mon_id>VAL</PDBo:pdbx_reference_entity_poly_seq.parent_mon_id>
+            <PDBo:link_to_parent_chem_comp rdf:resource="http://rdf.wwpdb.org/cc/VAL"/>
+          </PDBo:pdbx_reference_entity_poly_seq>
+        </PDBo:has_pdbx_reference_entity_poly_seq>
+      </PDBo:pdbx_reference_entity_poly_seqCategory>
+    </PDBo:has_pdbx_reference_entity_poly_seqCategory>
+    <PDBo:has_pdbx_reference_entity_sequenceCategory>
+      <PDBo:pdbx_reference_entity_sequenceCategory rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_sequenceCategory">
+        <PDBo:has_pdbx_reference_entity_sequence>
+          <PDBo:pdbx_reference_entity_sequence rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_sequence/PRD_000001,1">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001"/>
+            <PDBo:pdbx_reference_entity_sequence.prd_id>PRD_000001</PDBo:pdbx_reference_entity_sequence.prd_id>
+            <PDBo:pdbx_reference_entity_sequence.ref_entity_id>1</PDBo:pdbx_reference_entity_sequence.ref_entity_id>
+            <PDBo:pdbx_reference_entity_sequence.NRP_flag>Y</PDBo:pdbx_reference_entity_sequence.NRP_flag>
+            <PDBo:pdbx_reference_entity_sequence.type>peptide-like</PDBo:pdbx_reference_entity_sequence.type>
+          </PDBo:pdbx_reference_entity_sequence>
+        </PDBo:has_pdbx_reference_entity_sequence>
+      </PDBo:pdbx_reference_entity_sequenceCategory>
+    </PDBo:has_pdbx_reference_entity_sequenceCategory>
+    <PDBo:has_pdbx_reference_entity_src_natCategory>
+      <PDBo:pdbx_reference_entity_src_natCategory rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_src_natCategory">
+        <PDBo:has_pdbx_reference_entity_src_nat>
+          <PDBo:pdbx_reference_entity_src_nat rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_src_nat/1,PRD_000001,1">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001"/>
+            <PDBo:pdbx_reference_entity_src_nat.ordinal>1</PDBo:pdbx_reference_entity_src_nat.ordinal>
+            <PDBo:pdbx_reference_entity_src_nat.prd_id>PRD_000001</PDBo:pdbx_reference_entity_src_nat.prd_id>
+            <PDBo:pdbx_reference_entity_src_nat.ref_entity_id>1</PDBo:pdbx_reference_entity_src_nat.ref_entity_id>
+            <PDBo:pdbx_reference_entity_src_nat.db_code>D00214</PDBo:pdbx_reference_entity_src_nat.db_code>
+            <PDBo:pdbx_reference_entity_src_nat.db_name>KEGG</PDBo:pdbx_reference_entity_src_nat.db_name>
+            <PDBo:pdbx_reference_entity_src_nat.organism_scientific>Streptomyces parvulus</PDBo:pdbx_reference_entity_src_nat.organism_scientific>
+            <PDBo:pdbx_reference_entity_src_nat.taxid>146923</PDBo:pdbx_reference_entity_src_nat.taxid>
+            <PDBo:link_to_kegg_comp rdf:resource="http://www.kegg.jp/entry/D00214" rdfs:label="kegg.compound:D00214"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/kegg.compound:D00214" rdfs:label="kegg.compound:D00214"/>
+            <PDBo:link_to_taxonomy_source rdf:resource="http://purl.uniprot.org/taxonomy/146923" rdfs:label="taxonomy:146923"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/taxonomy/146923" rdfs:label="taxonomy:146923"/>
+          </PDBo:pdbx_reference_entity_src_nat>
+        </PDBo:has_pdbx_reference_entity_src_nat>
+        <PDBo:has_pdbx_reference_entity_src_nat>
+          <PDBo:pdbx_reference_entity_src_nat rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_src_nat/2,PRD_000001,1">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001"/>
+            <PDBo:pdbx_reference_entity_src_nat.ordinal>2</PDBo:pdbx_reference_entity_src_nat.ordinal>
+            <PDBo:pdbx_reference_entity_src_nat.prd_id>PRD_000001</PDBo:pdbx_reference_entity_src_nat.prd_id>
+            <PDBo:pdbx_reference_entity_src_nat.ref_entity_id>1</PDBo:pdbx_reference_entity_src_nat.ref_entity_id>
+            <PDBo:pdbx_reference_entity_src_nat.db_code>C06770</PDBo:pdbx_reference_entity_src_nat.db_code>
+            <PDBo:pdbx_reference_entity_src_nat.db_name>KEGG</PDBo:pdbx_reference_entity_src_nat.db_name>
+            <PDBo:pdbx_reference_entity_src_nat.organism_scientific>Streptomyces chrysomallus</PDBo:pdbx_reference_entity_src_nat.organism_scientific>
+            <PDBo:link_to_kegg_comp rdf:resource="http://www.kegg.jp/entry/C06770" rdfs:label="kegg.compound:C06770"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/kegg.compound:C06770" rdfs:label="kegg.compound:C06770"/>
+          </PDBo:pdbx_reference_entity_src_nat>
+        </PDBo:has_pdbx_reference_entity_src_nat>
+        <PDBo:has_pdbx_reference_entity_src_nat>
+          <PDBo:pdbx_reference_entity_src_nat rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_src_nat/3,PRD_000001,1">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001"/>
+            <PDBo:pdbx_reference_entity_src_nat.ordinal>3</PDBo:pdbx_reference_entity_src_nat.ordinal>
+            <PDBo:pdbx_reference_entity_src_nat.prd_id>PRD_000001</PDBo:pdbx_reference_entity_src_nat.prd_id>
+            <PDBo:pdbx_reference_entity_src_nat.ref_entity_id>1</PDBo:pdbx_reference_entity_src_nat.ref_entity_id>
+            <PDBo:pdbx_reference_entity_src_nat.db_code>NOR00228</PDBo:pdbx_reference_entity_src_nat.db_code>
+            <PDBo:pdbx_reference_entity_src_nat.db_name>Norine</PDBo:pdbx_reference_entity_src_nat.db_name>
+            <PDBo:pdbx_reference_entity_src_nat.organism_scientific>Streptomyces anulatus</PDBo:pdbx_reference_entity_src_nat.organism_scientific>
+            <PDBo:pdbx_reference_entity_src_nat.taxid>1892</PDBo:pdbx_reference_entity_src_nat.taxid>
+            <PDBo:link_to_norine rdf:resource="http://bioinfo.lifl.fr/norine/result.jsp?ID=NOR00228" rdfs:label="norine:NOR00228"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/norine:NOR00228" rdfs:label="norine:NOR00228"/>
+            <PDBo:link_to_taxonomy_source rdf:resource="http://purl.uniprot.org/taxonomy/1892" rdfs:label="taxonomy:1892"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/taxonomy/1892" rdfs:label="taxonomy:1892"/>
+          </PDBo:pdbx_reference_entity_src_nat>
+        </PDBo:has_pdbx_reference_entity_src_nat>
+        <PDBo:has_pdbx_reference_entity_src_nat>
+          <PDBo:pdbx_reference_entity_src_nat rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_src_nat/4,PRD_000001,1">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001"/>
+            <PDBo:pdbx_reference_entity_src_nat.ordinal>4</PDBo:pdbx_reference_entity_src_nat.ordinal>
+            <PDBo:pdbx_reference_entity_src_nat.prd_id>PRD_000001</PDBo:pdbx_reference_entity_src_nat.prd_id>
+            <PDBo:pdbx_reference_entity_src_nat.ref_entity_id>1</PDBo:pdbx_reference_entity_src_nat.ref_entity_id>
+            <PDBo:pdbx_reference_entity_src_nat.db_code>NOR00228</PDBo:pdbx_reference_entity_src_nat.db_code>
+            <PDBo:pdbx_reference_entity_src_nat.db_name>Norine</PDBo:pdbx_reference_entity_src_nat.db_name>
+            <PDBo:pdbx_reference_entity_src_nat.organism_scientific>Streptomyces antibioticus</PDBo:pdbx_reference_entity_src_nat.organism_scientific>
+            <PDBo:pdbx_reference_entity_src_nat.taxid>1890</PDBo:pdbx_reference_entity_src_nat.taxid>
+            <PDBo:link_to_norine rdf:resource="http://bioinfo.lifl.fr/norine/result.jsp?ID=NOR00228" rdfs:label="norine:NOR00228"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/norine:NOR00228" rdfs:label="norine:NOR00228"/>
+            <PDBo:link_to_taxonomy_source rdf:resource="http://purl.uniprot.org/taxonomy/1890" rdfs:label="taxonomy:1890"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/taxonomy/1890" rdfs:label="taxonomy:1890"/>
+          </PDBo:pdbx_reference_entity_src_nat>
+        </PDBo:has_pdbx_reference_entity_src_nat>
+        <PDBo:has_pdbx_reference_entity_src_nat>
+          <PDBo:pdbx_reference_entity_src_nat rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_src_nat/5,PRD_000001,1">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001"/>
+            <PDBo:pdbx_reference_entity_src_nat.ordinal>5</PDBo:pdbx_reference_entity_src_nat.ordinal>
+            <PDBo:pdbx_reference_entity_src_nat.prd_id>PRD_000001</PDBo:pdbx_reference_entity_src_nat.prd_id>
+            <PDBo:pdbx_reference_entity_src_nat.ref_entity_id>1</PDBo:pdbx_reference_entity_src_nat.ref_entity_id>
+            <PDBo:pdbx_reference_entity_src_nat.db_code>NOR00228</PDBo:pdbx_reference_entity_src_nat.db_code>
+            <PDBo:pdbx_reference_entity_src_nat.db_name>Norine</PDBo:pdbx_reference_entity_src_nat.db_name>
+            <PDBo:pdbx_reference_entity_src_nat.organism_scientific>Streptomyces parvulus</PDBo:pdbx_reference_entity_src_nat.organism_scientific>
+            <PDBo:pdbx_reference_entity_src_nat.taxid>146923</PDBo:pdbx_reference_entity_src_nat.taxid>
+            <PDBo:link_to_norine rdf:resource="http://bioinfo.lifl.fr/norine/result.jsp?ID=NOR00228" rdfs:label="norine:NOR00228"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/norine:NOR00228" rdfs:label="norine:NOR00228"/>
+            <PDBo:link_to_taxonomy_source rdf:resource="http://purl.uniprot.org/taxonomy/146923" rdfs:label="taxonomy:146923"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/taxonomy/146923" rdfs:label="taxonomy:146923"/>
+          </PDBo:pdbx_reference_entity_src_nat>
+        </PDBo:has_pdbx_reference_entity_src_nat>
+      </PDBo:pdbx_reference_entity_src_natCategory>
+    </PDBo:has_pdbx_reference_entity_src_natCategory>
+    <PDBo:has_pdbx_reference_moleculeCategory>
+      <PDBo:pdbx_reference_moleculeCategory rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_moleculeCategory">
+        <PDBo:has_pdbx_reference_molecule>
+          <PDBo:pdbx_reference_molecule rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_molecule/PRD_000001">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001"/>
+            <PDBo:pdbx_reference_molecule.prd_id>PRD_000001</PDBo:pdbx_reference_molecule.prd_id>
+            <PDBo:pdbx_reference_molecule.class>Antibiotic</PDBo:pdbx_reference_molecule.class>
+            <PDBo:pdbx_reference_molecule.compound_details>ACTINOMYCIN D IS A BICYCLIC PEPTIDE, A MEMBER OF THE
+ACTINOMYCIN FAMILY.
+HERE, ACTINOMYCIN D IS REPRESENTED BY THE SEQUENCE (SEQRES)</PDBo:pdbx_reference_molecule.compound_details>
+            <PDBo:pdbx_reference_molecule.description>ACTINOMYCIN D CONSISTS OF TWO PENTAMER
+RINGS LINKED BY THE CHROMOPHORE (PXZ)</PDBo:pdbx_reference_molecule.description>
+            <PDBo:pdbx_reference_molecule.formula>C62 H86 N12 O16</PDBo:pdbx_reference_molecule.formula>
+            <PDBo:pdbx_reference_molecule.formula_weight>1255.5</PDBo:pdbx_reference_molecule.formula_weight>
+            <PDBo:pdbx_reference_molecule.name>Actinomycin D</PDBo:pdbx_reference_molecule.name>
+            <PDBo:pdbx_reference_molecule.release_status>REL</PDBo:pdbx_reference_molecule.release_status>
+            <PDBo:pdbx_reference_molecule.represent_as>polymer</PDBo:pdbx_reference_molecule.represent_as>
+            <PDBo:pdbx_reference_molecule.representative_PDB_id_code>1a7y</PDBo:pdbx_reference_molecule.representative_PDB_id_code>
+            <PDBo:pdbx_reference_molecule.type>Polypeptide</PDBo:pdbx_reference_molecule.type>
+            <PDBo:link_to_pdb rdf:resource="http://rdf.wwpdb.org/pdb/1A7Y"/>
+          </PDBo:pdbx_reference_molecule>
+        </PDBo:has_pdbx_reference_molecule>
+      </PDBo:pdbx_reference_moleculeCategory>
+    </PDBo:has_pdbx_reference_moleculeCategory>
+  </PDBo:datablock>
+</rdf:RDF>

@@ -220,7 +220,7 @@
     &lt;rdfs:seeAlso rdf:resource="{$idorg}uniprot:{text()}" rdfs:label="uniprot:{text()}"/&gt;
   &lt;/xsl:template&gt;
 
-  &lt;xsl:template match="PDBx:pdbx_reference_entity_src_nat/PDBx:db_code[(../PDBx:db_name='NORINE' or ../PDBx:db_name='Norine' ../PDBx:db_name='  Norine') and text()!='']" mode="linked"&gt;
+  &lt;xsl:template match="PDBx:pdbx_reference_entity_src_nat/PDBx:db_code[(../PDBx:db_name='NORINE' or ../PDBx:db_name='Norine' or ../PDBx:db_name='  Norine') and text()!='']" mode="linked"&gt;
     &lt;PDBo:link_to_norine rdf:resource="{$norine}{text()}" rdfs:label="norine:{text()}"/&gt;
     &lt;rdfs:seeAlso rdf:resource="{$idorg}norine:{text()}" rdfs:label="norine:{text()}"/&gt;
   &lt;/xsl:template&gt;
@@ -232,19 +232,16 @@
 
   &lt;xsl:template match="PDBx:pdbx_reference_entity_src_nat/PDBx:db_code[../PDBx:db_name='NADB' and text()!='']" mode="linked"&gt;
     &lt;xsl:choose&gt;
-      &lt;xsl:when test="number(text()) &lt; 36000"/&gt;
+      &lt;xsl:when test="number(text()) &#38;lt; 360000"&gt;
         &lt;PDBo:link_to_nadb rdf:resource="{$nadb1}{text()}" rdfs:label="nadb:{text()}"/&gt;
       &lt;/xsl:when&gt;
-      &lt;xsl:when test="number(text()) &lt; 46000"/&gt;
+      &lt;xsl:when test="number(text()) &#38;lt; 460000"&gt;
         &lt;PDBo:link_to_nadb rdf:resource="{$nadb2}{text()}" rdfs:label="nadb:{text()}"/&gt;
       &lt;/xsl:when&gt;
-      &lt;xsl:when test="number(text()) &lt; 46000"/&gt;
-        &lt;PDBo:link_to_nadb rdf:resource="{$nadb2}{text()}" rdfs:label="nadb:{text()}"/&gt;
-      &lt;/xsl:when&gt;
-      &lt;xsl:when test="number(text()) &lt; 51000"/&gt;
+      &lt;xsl:when test="number(text()) &#38;lt; 510000"&gt;
         &lt;PDBo:link_to_nadb rdf:resource="{$nadb3}{text()}" rdfs:label="nadb:{text()}"/&gt;
       &lt;/xsl:when&gt;
-      &lt;xsl:when test="number(text()) &lt; 55000"/&gt;
+      &lt;xsl:when test="number(text()) &#38;lt; 550000"&gt;
         &lt;PDBo:link_to_nadb rdf:resource="{$nadb4}{text()}" rdfs:label="nadb:{text()}"/&gt;
       &lt;/xsl:when&gt;
       &lt;xsl:otherwise&gt;
@@ -255,20 +252,17 @@
 
   &lt;xsl:template match="PDBx:pdbx_reference_entity_src_nat/PDBx:db_name[../PDBx:db_code='Novel Antibiotics DataBase' and text()!='']" mode="linked"&gt;
     &lt;xsl:choose&gt;
-      &lt;xsl:when test="number(text()) &lt; 36000"/&gt;
+      &lt;xsl:when test="number(text()) &#38;lt; 360000"&gt;
         &lt;PDBo:link_to_nadb rdf:resource="{$nadb1}{text()}" rdfs:label="nadb:{text()}"/&gt;
       &lt;/xsl:when&gt; 
-      &lt;xsl:when test="number(text()) &lt; 46000"/&gt;
+      &lt;xsl:when test="number(text()) &#38;lt; 460000"&gt;
         &lt;PDBo:link_to_nadb rdf:resource="{$nadb2}{text()}" rdfs:label="nadb:{text()}"/&gt;
       &lt;/xsl:when&gt;
-      &lt;xsl:when test="number(text()) &lt; 46000"/&gt;
-        &lt;PDBo:link_to_nadb rdf:resource="{$nadb2}{text()}" rdfs:label="nadb:{text()}"/&gt;
-      &lt;/xsl:when&gt;
-      &lt;xsl:when test="number(text()) &lt; 51000"/&gt;
+      &lt;xsl:when test="number(text()) &#38;lt; 510000"&gt;
         &lt;PDBo:link_to_nadb rdf:resource="{$nadb3}{text()}" rdfs:label="nadb:{text()}"/&gt;
       &lt;/xsl:when&gt;
-      &lt;xsl:when test="number(text()) &lt; 55000"/&gt;
-        &lt;PDBo:link_to_nadb rdf:resource="{$nadb4}{text()}" rdfs:label="nadb:{text()}"/&gt;
+      &lt;xsl:when test="number(text()) &#38;lt; 550000"&gt;
+        &lt;PDBo:link_to_nadb rdf:resource="{$nadb3}{text()}" rdfs:label="nadb:{text()}"/&gt;
       &lt;/xsl:when&gt;
       &lt;xsl:otherwise&gt;
         &lt;PDBo:link_to_nadb rdf:resource="{$nadb5}{text()}" rdfs:label="nadb:{text()}"/&gt;
@@ -281,7 +275,7 @@
     &lt;PDBo:link_to_pdb rdf:resource="{$pdb_link}{$upper_code}"/&gt;
   &lt;/xsl:template&gt;
 
-  &lt;xsl:template match="PDBx:pdbx_reference_entity_src_nat/PDBx:tax_id[text()!='']" mode="linked"&gt;
+  &lt;xsl:template match="PDBx:pdbx_reference_entity_src_nat/PDBx:taxid[text()!='']" mode="linked"&gt;
     &lt;PDBo:link_to_taxonomy_source rdf:resource="{$taxonomy}{text()}" rdfs:label="taxonomy:{text()}"/&gt;
     &lt;rdfs:seeAlso rdf:resource="{$idorg}taxonomy/{text()}" rdfs:label="taxonomy:{text()}"/&gt;
   &lt;/xsl:template&gt;
