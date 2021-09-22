@@ -24,17 +24,9 @@ if [ ! -z $MTIME ] ; then
  MTIME_OPT="-m "$MTIME
 fi
 
-./scripts/update_sifts.sh $MTIME_OPT || exit $?
+./scripts/update_bird.sh $MTIME_OPT || exit $?
 
-./scripts/update_pdbml.sh $MTIME_OPT || exit $?
-
-./scripts/merge_pdbml_sifts.sh $MTIME_OPT || exit $?
-
-if [[ $(find $_WURCS_CATALOG_XML -mtime +4) ]] ; then
- ( cd wurcs2glytoucan; ./update_glytoucan.sh )
-fi
-
-./scripts/transl_to_rdf_pdb.sh
+./scripts/transl_to_rdf_prd.sh
 
 echo
 echo Everything is up-to-date.
