@@ -133,12 +133,22 @@ do
   find $DST_DIR -name "*.xml" -mtime $MTIME | cut -d '/' -f 3 | cut -d '.' -f 1 > $chk_sum_log
  fi
 
+ XML_DIR=$XML_BIRD/$subdir
+
+ if [ -d $XML_DIR ] ; then
+  while read bird_id ; do
+   [ -z "$bird_id" ] || [[ "$bird_id" =~ ^#.* ]] && continue
+   rm -f $XML_DIR/$bird_id.xml
+  done < $chk_sum_log
+ fi
+
  RDF_DIR=$RDF_BIRD/$subdir
 
  if [ -d $RDF_DIR ] ; then
   while read bird_id ; do
    [ -z "$bird_id" ] || [[ "$bird_id" =~ ^#.* ]] && continue
-   rm -f $RDF_DIR/$bird_id.rdf*
+   rm -f $RDF_DIR/$bird_id.rdf
+   rm -f $RDF_DIR/${bird_id: -1}/$bird_id.rdf.gz
   done < $chk_sum_log
  fi
 
