@@ -9,12 +9,12 @@ if [ $MAXPROCS = 0 ] ; then
  MAXPROCS=1
 fi
 
-DB_NAME=pdb-validation
+DB_NAME=cc
 
-rm -f /tmp/pdbxv-virtuoso-last
+rm -f /tmp/cc-virtuoso-last
 
 init=false
-change=`find $RDF_VALID -name '*.rdf.gz' -mtime -4 | wc -l`
+change=`find $RDF_CC -name '*.rdf.gz' -mtime -4 | wc -l`
 
 which isql &> /dev/null
 
@@ -30,7 +30,7 @@ fi
 
 sleep 180
 
-GRAPH_URI=https://rdf.wwpdb.org/$DB_NAME
+GRAPH_URI=http://rdf.wwpdb.org/$DB_NAME
 
 graph_exist=`./virtuoso_scripts/ask_graph_existance.sh $GRAPH_URI` || exit 1
 
@@ -57,14 +57,14 @@ esac
 
 isql $VIRTUOSO_DB_PORT $VIRTUOSO_DB_USER $VIRTUOSO_DB_PASS exec="status();" || exit 1
 
-rm -rf $RDF_VALID_LINK
-mkdir -p $RDF_VALID_LINK
+rm -rf $RDF_CC_LINK
+mkdir -p $RDF_CC_LINK
 
-cd $RDF_VALID_LINK
+cd $RDF_CC_LINK
 
 rdf_file_list=rdf_file_list
 
-find ../$RDF_VALID -type f -iname "*.rdf.gz" > $rdf_file_list
+find ../$RDF_CC -type f -iname "*.rdf.gz" > $rdf_file_list
 
 while read rdf_file
 do
@@ -114,7 +114,7 @@ wait
 
 isql $VIRTUOSO_DB_PORT $VIRTUOSO_DB_USER $VIRTUOSO_DB_PASS exec="checkpoint;" || exit 1
 
-date -u +"%b %d, %Y" > /tmp/pdbxv-virtuoso-last
+date -u +"%b %d, %Y" > /tmp/cc-virtuoso-last
 
 echo "RDF->VIRTUOSO (prefix:"$DB_NAME") is completed."
 

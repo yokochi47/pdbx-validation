@@ -4,5 +4,8 @@ VIRTUOSO_DB_PORT=1111
 VIRTUOSO_DB_USER=dba
 VIRTUOSO_DB_PASS=dba
 
+RDF_LINK=RDF-link
+RDF_CC_LINK=RDF-chem_comp-link
+RDF_BIRD_LINK=RDF-bird-link
 RDF_VALID_LINK=RDF-validation-link
 
