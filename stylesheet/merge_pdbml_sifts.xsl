@@ -3602,7 +3602,7 @@ Unmatched entry ID in both documents (<xsl:value-of select="$entry_id"/> and <xs
   </xsl:template>
 
   <xsl:template name="merge_pdbx_sifts_unp_segments">
-    <xsl:if test="PDBx:datablock/PDBx:pdbx_sifts_unp_segmentsCategory or $sifts_entry/sifts:entity/sifts:segment">
+    <xsl:if test="PDBx:datablock/PDBx:pdbx_sifts_unp_segmentsCategory or $sifts_entry/sifts:entity/sifts:segment/sifts:listMapRegion/sifts:mapRegion/sifts:db[@dbSource='UniProt']">
       <xsl:element name="PDBx:pdbx_sifts_unp_segmentsCategory">
         <xsl:choose>
           <xsl:when test="PDBx:datablock/PDBx:pdbx_sifts_unp_segmentsCategory">

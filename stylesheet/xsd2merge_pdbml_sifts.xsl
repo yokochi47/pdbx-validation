@@ -228,7 +228,7 @@ Unmatched entry ID in both documents (&lt;xsl:value-of select="$entry_id"/&gt; a
     <xsl2:for-each select="tokenize($merge_categories,' ')">
       <xsl2:text disable-output-escaping="yes">
   &lt;xsl:template name="merge_</xsl2:text><xsl2:value-of select="."/><xsl2:text disable-output-escaping="yes">"&gt;
-    &lt;xsl:if test="PDBx:datablock/PDBx:</xsl2:text><xsl2:value-of select="."/><xsl2:text disable-output-escaping="yes">Category or $sifts_entry/sifts:entity/sifts:segment</xsl2:text><xsl2:if test=".='pdbx_sifts_xref_db_segments'">/sifts:listMapRegion/sifts:mapRegion/sifts:db[@dbSource!='PDB' and @dbSource!='UniProt' and @dbSource!='EC']</xsl2:if><xsl2:text disable-output-escaping="yes">"&gt;
+    &lt;xsl:if test="PDBx:datablock/PDBx:</xsl2:text><xsl2:value-of select="."/><xsl2:text disable-output-escaping="yes">Category or $sifts_entry/sifts:entity/sifts:segment</xsl2:text><xsl2:if test=".='pdbx_sifts_unp_segments'">/sifts:listMapRegion/sifts:mapRegion/sifts:db[@dbSource='UniProt']</xsl2:if><xsl2:if test=".='pdbx_sifts_xref_db_segments'">/sifts:listMapRegion/sifts:mapRegion/sifts:db[@dbSource!='PDB' and @dbSource!='UniProt' and @dbSource!='EC']</xsl2:if><xsl2:text disable-output-escaping="yes">"&gt;
       &lt;xsl:element name="PDBx:</xsl2:text><xsl2:value-of select="."/><xsl2:text disable-output-escaping="yes">Category"&gt;
         &lt;xsl:choose&gt;
           &lt;xsl:when test="PDBx:datablock/PDBx:</xsl2:text><xsl2:value-of select="."/><xsl2:text disable-output-escaping="yes">Category"&gt;

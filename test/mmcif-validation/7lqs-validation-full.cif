@@ -1,0 +1,1085 @@
+data_7LQS-validation-full
+# 
+_entity.id                         1 
+_entity.formula_weight             1608.818 
+_entity.pdbx_description           'Alpha-conotoxin CIC' 
+_entity.pdbx_number_of_molecules   1 
+_entity.src_method                 syn 
+_entity.type                       polymer 
+# 
+_entity_poly.entity_id                      1 
+_entity_poly.nstd_linkage                   no 
+_entity_poly.nstd_monomer                   no 
+_entity_poly.pdbx_seq_one_letter_code       CCSNPACQVQHSDLC 
+_entity_poly.pdbx_seq_one_letter_code_can   CCSNPACQVQHSDLC 
+_entity_poly.pdbx_strand_id                 A 
+_entity_poly.type                           'polypeptide(L)' 
+# 
+loop_
+_entity_poly_seq.entity_id 
+_entity_poly_seq.mon_id 
+_entity_poly_seq.num 
+_entity_poly_seq.hetero 
+1 CYS 1  n 
+1 CYS 2  n 
+1 SER 3  n 
+1 ASN 4  n 
+1 PRO 5  n 
+1 ALA 6  n 
+1 CYS 7  n 
+1 GLN 8  n 
+1 VAL 9  n 
+1 GLN 10 n 
+1 HIS 11 n 
+1 SER 12 n 
+1 ASP 13 n 
+1 LEU 14 n 
+1 CYS 15 n 
+# 
+_entry.id   7LQS 
+# 
+_exptl.entry_id   7LQS 
+_exptl.method     'SOLUTION NMR' 
+# 
+_pdbx_audit_revision_details.data_content_type   'Structure model' 
+_pdbx_audit_revision_details.ordinal             1 
+_pdbx_audit_revision_details.revision_ordinal    1 
+_pdbx_audit_revision_details.provider            repository 
+_pdbx_audit_revision_details.type                'Initial release' 
+# 
+_pdbx_audit_revision_history.data_content_type   'Structure model' 
+_pdbx_audit_revision_history.ordinal             1 
+_pdbx_audit_revision_history.major_revision      1 
+_pdbx_audit_revision_history.minor_revision      0 
+_pdbx_audit_revision_history.revision_date       2021-04-21 
+# 
+loop_
+_pdbx_database_related.content_type 
+_pdbx_database_related.db_id 
+_pdbx_database_related.db_name 
+_pdbx_database_related.details 
+unspecified 7LQR  PDB  'Native toxin'                         
+unspecified 30860 BMRB 'Structure of truncated conotoxin CIC' 
+# 
+_pdbx_database_status.entry_id                        7LQS 
+_pdbx_database_status.SG_entry                        N 
+_pdbx_database_status.deposit_site                    RCSB 
+_pdbx_database_status.pdb_format_compatible           Y 
+_pdbx_database_status.process_site                    RCSB 
+_pdbx_database_status.recvd_initial_deposition_date   2021-02-15 
+_pdbx_database_status.status_code                     REL 
+_pdbx_database_status.status_code_nmr_data            REL 
+_pdbx_database_status.validation_created_date         2021-04-12 
+# 
+_pdbx_nmr_ensemble.entry_id                             7LQS 
+_pdbx_nmr_ensemble.conformer_selection_criteria         'target function' 
+_pdbx_nmr_ensemble.conformers_calculated_total_number   100 
+_pdbx_nmr_ensemble.conformers_submitted_total_number    20 
+_pdbx_nmr_ensemble.atom_consistency_flag                Y 
+# 
+loop_
+_pdbx_nmr_exptl.conditions_id 
+_pdbx_nmr_exptl.experiment_id 
+_pdbx_nmr_exptl.solution_id 
+_pdbx_nmr_exptl.sample_state 
+_pdbx_nmr_exptl.spectrometer_id 
+_pdbx_nmr_exptl.type 
+1 1 1 isotropic 1 '2D 1H-1H TOCSY' 
+1 2 1 isotropic 1 '2D 1H-1H NOESY' 
+1 3 1 isotropic 1 '2D 1H-1H COSY'  
+1 4 1 isotropic 1 '2D 1H-13C HSQC' 
+1 5 1 isotropic 1 '2D 1H-15N HSQC' 
+# 
+_pdbx_nmr_exptl_sample.component             delta-CIC 
+_pdbx_nmr_exptl_sample.solution_id           1 
+_pdbx_nmr_exptl_sample.concentration         1 
+_pdbx_nmr_exptl_sample.concentration_units   mM 
+_pdbx_nmr_exptl_sample.isotopic_labeling     'natural abundance' 
+# 
+_pdbx_nmr_exptl_sample_conditions.conditions_id          1 
+_pdbx_nmr_exptl_sample_conditions.ionic_strength         1 
+_pdbx_nmr_exptl_sample_conditions.ionic_strength_units   'Not defined' 
+_pdbx_nmr_exptl_sample_conditions.label                  1 
+_pdbx_nmr_exptl_sample_conditions.pH                     3.5 
+_pdbx_nmr_exptl_sample_conditions.pH_units               pH 
+_pdbx_nmr_exptl_sample_conditions.pressure               ambient 
+_pdbx_nmr_exptl_sample_conditions.temperature            290 
+_pdbx_nmr_exptl_sample_conditions.temperature_units      K 
+# 
+_pdbx_nmr_refine.entry_id           7LQS 
+_pdbx_nmr_refine.software_ordinal   3 
+_pdbx_nmr_refine.method             'torsion angle dynamics' 
+# 
+_pdbx_nmr_representative.entry_id             7LQS 
+_pdbx_nmr_representative.conformer_id         1 
+_pdbx_nmr_representative.selection_criteria   'lowest energy' 
+# 
+loop_
+_pdbx_nmr_software.ordinal 
+_pdbx_nmr_software.authors 
+_pdbx_nmr_software.classification 
+_pdbx_nmr_software.name 
+1 'Bruker Biospin'                    collection              TopSpin 
+2 CCPN                                'data analysis'         
+'CcpNmr Analysis' 
+3 'Guntert, Mumenthaler and Wuthrich' refinement              CYANA 
+4 'Guntert, Mumenthaler and Wuthrich' 'structure calculation' CYANA 
+# 
+_pdbx_nmr_spectrometer.spectrometer_id   1 
+_pdbx_nmr_spectrometer.field_strength    600 
+_pdbx_nmr_spectrometer.manufacturer      Bruker 
+_pdbx_nmr_spectrometer.model             AVANCE 
+# 
+loop_
+_pdbx_poly_seq_scheme.asym_id 
+_pdbx_poly_seq_scheme.entity_id 
+_pdbx_poly_seq_scheme.mon_id 
+_pdbx_poly_seq_scheme.seq_id 
+_pdbx_poly_seq_scheme.auth_mon_id 
+_pdbx_poly_seq_scheme.auth_seq_num 
+_pdbx_poly_seq_scheme.hetero 
+_pdbx_poly_seq_scheme.ndb_seq_num 
+_pdbx_poly_seq_scheme.pdb_ins_code 
+_pdbx_poly_seq_scheme.pdb_mon_id 
+_pdbx_poly_seq_scheme.pdb_seq_num 
+_pdbx_poly_seq_scheme.pdb_strand_id 
+A 1 CYS 1  CYS 1  n 1  ? CYS 1  A 
+A 1 CYS 2  CYS 2  n 2  ? CYS 2  A 
+A 1 SER 3  SER 3  n 3  ? SER 3  A 
+A 1 ASN 4  ASN 4  n 4  ? ASN 4  A 
+A 1 PRO 5  PRO 5  n 5  ? PRO 5  A 
+A 1 ALA 6  ALA 6  n 6  ? ALA 6  A 
+A 1 CYS 7  CYS 7  n 7  ? CYS 7  A 
+A 1 GLN 8  GLN 8  n 8  ? GLN 8  A 
+A 1 VAL 9  VAL 9  n 9  ? VAL 9  A 
+A 1 GLN 10 GLN 10 n 10 ? GLN 10 A 
+A 1 HIS 11 HIS 11 n 11 ? HIS 11 A 
+A 1 SER 12 SER 12 n 12 ? SER 12 A 
+A 1 ASP 13 ASP 13 n 13 ? ASP 13 A 
+A 1 LEU 14 LEU 14 n 14 ? LEU 14 A 
+A 1 CYS 15 CYS 15 n 15 ? CYS 15 A 
+# 
+_pdbx_struct_assembly.id                   1 
+_pdbx_struct_assembly.details              author_defined_assembly 
+_pdbx_struct_assembly.oligomeric_count     1 
+_pdbx_struct_assembly.oligomeric_details   monomeric 
+# 
+_pdbx_struct_assembly_gen.assembly_id       1 
+_pdbx_struct_assembly_gen.asym_id_list      A 
+_pdbx_struct_assembly_gen.oper_expression   1 
+# 
+_pdbx_struct_oper_list.id             1 
+_pdbx_struct_oper_list.matrix[1][1]   1.0000000000 
+_pdbx_struct_oper_list.matrix[1][2]   0.0000000000 
+_pdbx_struct_oper_list.matrix[1][3]   0.0000000000 
+_pdbx_struct_oper_list.matrix[2][1]   0.0000000000 
+_pdbx_struct_oper_list.matrix[2][2]   1.0000000000 
+_pdbx_struct_oper_list.matrix[2][3]   0.0000000000 
+_pdbx_struct_oper_list.matrix[3][1]   0.0000000000 
+_pdbx_struct_oper_list.matrix[3][2]   0.0000000000 
+_pdbx_struct_oper_list.matrix[3][3]   1.0000000000 
+_pdbx_struct_oper_list.name           1_555 
+_pdbx_struct_oper_list.type           'identity operation' 
+_pdbx_struct_oper_list.vector[1]      0.0000000000 
+_pdbx_struct_oper_list.vector[2]      0.0000000000 
+_pdbx_struct_oper_list.vector[3]      0.0000000000 
+# 
+loop_
+_pdbx_validate_torsion.id 
+_pdbx_validate_torsion.PDB_model_num 
+_pdbx_validate_torsion.auth_asym_id 
+_pdbx_validate_torsion.auth_comp_id 
+_pdbx_validate_torsion.auth_seq_id 
+_pdbx_validate_torsion.phi 
+_pdbx_validate_torsion.psi 
+1  1  A SER 3  -94.13  44.92  
+2  1  A HIS 11 -62.70  94.59  
+3  2  A CYS 2  -149.74 -47.05 
+4  2  A HIS 11 -108.71 40.21  
+5  2  A ASP 13 -163.75 109.04 
+6  3  A CYS 2  -131.90 -49.21 
+7  3  A HIS 11 -91.25  49.32  
+8  4  A CYS 2  -103.55 -62.08 
+9  5  A ASP 13 -173.80 113.55 
+10 6  A SER 3  -176.61 85.04  
+11 6  A HIS 11 -95.27  55.21  
+12 6  A LEU 14 -176.55 124.97 
+13 7  A SER 3  -90.98  55.62  
+14 7  A HIS 11 -93.15  56.80  
+15 7  A ASP 13 -166.04 109.58 
+16 8  A SER 3  -153.71 67.86  
+17 8  A HIS 11 -69.29  94.55  
+18 8  A ASP 13 -54.56  -71.64 
+19 9  A SER 3  -96.70  36.24  
+20 9  A HIS 11 -129.09 -71.80 
+21 9  A ASP 13 -165.41 113.90 
+22 10 A CYS 2  -142.34 -42.49 
+23 10 A SER 3  -96.65  -64.92 
+24 10 A HIS 11 -109.40 53.84  
+25 10 A ASP 13 -102.97 42.94  
+26 11 A HIS 11 -98.24  40.96  
+27 11 A ASP 13 -174.75 118.74 
+28 12 A CYS 2  -93.85  -64.33 
+29 12 A GLN 10 -118.60 73.59  
+30 12 A LEU 14 -172.60 142.66 
+31 13 A CYS 2  -138.46 -51.33 
+32 13 A LEU 14 -84.01  -72.87 
+33 14 A CYS 2  -129.35 -70.06 
+34 15 A SER 3  -106.63 70.02  
+35 15 A ASP 13 -91.86  47.18  
+36 15 A LEU 14 -101.70 -63.06 
+37 17 A SER 3  -50.60  -74.64 
+38 18 A CYS 2  -129.57 -55.02 
+39 18 A SER 3  -119.74 75.11  
+40 18 A SER 12 -98.56  37.40  
+41 20 A CYS 2  -126.66 -64.06 
+42 20 A SER 3  -147.97 56.65  
+43 20 A ASP 13 -117.92 73.82  
+44 20 A LEU 14 -121.47 -65.40 
+# 
+_struct.entry_id          7LQS 
+_struct.pdbx_CASP_flag    N 
+_struct.pdbx_descriptor   'Alpha-conotoxin CIC' 
+_struct.title             'Structure of truncated conotoxin CIC' 
+# 
+_struct_asym.id                            A 
+_struct_asym.entity_id                     1 
+_struct_asym.pdbx_blank_PDB_chainid_flag   N 
+_struct_asym.pdbx_modified                 N 
+# 
+_struct_conf.id                      HELX_P1 
+_struct_conf.beg_auth_asym_id        A 
+_struct_conf.beg_auth_comp_id        ASN 
+_struct_conf.beg_auth_seq_id         4 
+_struct_conf.beg_label_asym_id       A 
+_struct_conf.beg_label_comp_id       ASN 
+_struct_conf.beg_label_seq_id        4 
+_struct_conf.conf_type_id            HELX_P 
+_struct_conf.end_auth_asym_id        A 
+_struct_conf.end_auth_comp_id        GLN 
+_struct_conf.end_auth_seq_id         10 
+_struct_conf.end_label_asym_id       A 
+_struct_conf.end_label_comp_id       GLN 
+_struct_conf.end_label_seq_id        10 
+_struct_conf.pdbx_PDB_helix_class    1 
+_struct_conf.pdbx_PDB_helix_id       AA1 
+_struct_conf.pdbx_PDB_helix_length   7 
+# 
+_struct_conf_type.id   HELX_P 
+# 
+loop_
+_struct_conn.id 
+_struct_conn.conn_type_id 
+_struct_conn.pdbx_dist_value 
+_struct_conn.ptnr1_auth_asym_id 
+_struct_conn.ptnr1_auth_comp_id 
+_struct_conn.ptnr1_auth_seq_id 
+_struct_conn.ptnr1_label_asym_id 
+_struct_conn.ptnr1_label_atom_id 
+_struct_conn.ptnr1_label_comp_id 
+_struct_conn.ptnr1_label_seq_id 
+_struct_conn.ptnr1_symmetry 
+_struct_conn.ptnr2_auth_asym_id 
+_struct_conn.ptnr2_auth_comp_id 
+_struct_conn.ptnr2_auth_seq_id 
+_struct_conn.ptnr2_label_asym_id 
+_struct_conn.ptnr2_label_atom_id 
+_struct_conn.ptnr2_label_comp_id 
+_struct_conn.ptnr2_label_seq_id 
+_struct_conn.ptnr2_symmetry 
+disulf1 disulf 2.006 A CYS 1 A SG CYS 1 1_555 A CYS 7  A SG CYS 7  1_555 
+disulf2 disulf 2.030 A CYS 2 A SG CYS 2 1_555 A CYS 15 A SG CYS 15 1_555 
+# 
+_struct_conn_type.id   disulf 
+# 
+_struct_ref.id                  1 
+_struct_ref.db_code             7LQS 
+_struct_ref.db_name             PDB 
+_struct_ref.entity_id           1 
+_struct_ref.pdbx_align_begin    1 
+_struct_ref.pdbx_db_accession   7LQS 
+# 
+_struct_ref_seq.align_id                  1 
+_struct_ref_seq.db_align_beg              1 
+_struct_ref_seq.db_align_end              15 
+_struct_ref_seq.pdbx_PDB_id_code          7LQS 
+_struct_ref_seq.pdbx_auth_seq_align_beg   1 
+_struct_ref_seq.pdbx_auth_seq_align_end   15 
+_struct_ref_seq.pdbx_db_accession         7LQS 
+_struct_ref_seq.pdbx_strand_id            A 
+_struct_ref_seq.ref_id                    1 
+_struct_ref_seq.seq_align_beg             1 
+_struct_ref_seq.seq_align_end             15 
+# 
+_pdbx_nmr_assigned_chem_shift_list.id                            1 
+_pdbx_nmr_assigned_chem_shift_list.data_file_name                working_cs.cif 
+_pdbx_nmr_assigned_chem_shift_list.label                         
+nef_chemical_shift_list_dcic.prot 
+_pdbx_nmr_assigned_chem_shift_list.nmr_star_consistency_flag     Y 
+_pdbx_nmr_assigned_chem_shift_list.number_chem_shifts            124 
+_pdbx_nmr_assigned_chem_shift_list.number_map_errors             0 
+_pdbx_nmr_assigned_chem_shift_list.number_map_warnings           0 
+_pdbx_nmr_assigned_chem_shift_list.number_mapped_chem_shifts     124 
+_pdbx_nmr_assigned_chem_shift_list.number_parsed_chem_shifts     124 
+_pdbx_nmr_assigned_chem_shift_list.number_unparsed_chem_shifts   0 
+# 
+loop_
+_pdbx_nmr_chem_shift_annotation.list_id 
+_pdbx_nmr_chem_shift_annotation.id 
+_pdbx_nmr_chem_shift_annotation.auth_asym_id 
+_pdbx_nmr_chem_shift_annotation.auth_comp_id 
+_pdbx_nmr_chem_shift_annotation.auth_seq_id 
+_pdbx_nmr_chem_shift_annotation.random_coil_index 
+1 1  A GLN 10 0.174 
+1 2  A HIS 11 0.156 
+1 3  A SER 12 0.183 
+1 4  A ASP 13 0.272 
+1 5  A LEU 14 0.371 
+1 6  A CYS 15 0.438 
+1 7  A CYS 2  0.130 
+1 8  A SER 3  0.119 
+1 9  A ASN 4  0.103 
+1 10 A PRO 5  0.076 
+1 11 A ALA 6  0.059 
+1 12 A CYS 7  0.049 
+1 13 A GLN 8  0.104 
+1 14 A VAL 9  0.138 
+# 
+loop_
+_pdbx_nmr_chem_shift_completeness.list_id 
+_pdbx_nmr_chem_shift_completeness.atom_group 
+_pdbx_nmr_chem_shift_completeness.atom_type 
+_pdbx_nmr_chem_shift_completeness.number_assigned_chem_shifts_well_formed 
+_pdbx_nmr_chem_shift_completeness.number_target_shifts_well_formed 
+_pdbx_nmr_chem_shift_completeness.number_unassigned_chem_shifts_well_formed 
+_pdbx_nmr_chem_shift_completeness.number_assigned_chem_shifts 
+_pdbx_nmr_chem_shift_completeness.number_target_shifts 
+_pdbx_nmr_chem_shift_completeness.number_unassigned_chem_shifts 
+1 stereomethyl stereomethyl 2   2   0  2   2   0  
+1 overall      Total        114 150 36 114 158 44 
+1 backbone     Total        51  68  17 51  73  22 
+1 sidechain    Total        59  75  16 59  78  19 
+1 aromatic     Total        4   7   3  4   7   3  
+1 overall      H            65  76  11 65  80  15 
+1 backbone     H            26  27  1  26  29  3  
+1 sidechain    H            37  45  8  37  47  10 
+1 aromatic     H            2   4   2  2   4   2  
+1 overall      C            37  57  20 37  60  23 
+1 backbone     C            14  28  14 14  30  16 
+1 sidechain    C            21  27  6  21  28  7  
+1 aromatic     C            2   2   0  2   2   0  
+1 overall      N            12  17  5  12  18  6  
+1 backbone     N            11  13  2  11  14  3  
+1 sidechain    N            1   3   2  1   3   2  
+1 aromatic     N            0   1   1  0   1   1  
+# 
+loop_
+_pdbx_nmr_chem_shift_re_offset.list_id 
+_pdbx_nmr_chem_shift_re_offset.atom_type 
+_pdbx_nmr_chem_shift_re_offset.correction_val 
+_pdbx_nmr_chem_shift_re_offset.correction_val_err 
+_pdbx_nmr_chem_shift_re_offset.correction_val_esd 
+_pdbx_nmr_chem_shift_re_offset.number_chem_shifts 
+1 C  0.00 0.50 0.00 0  
+1 CA 0.00 0.50 0.00 14 
+1 CB 0.00 0.50 0.00 12 
+1 N  0.00 0.50 0.00 11 
+# 
+_pdbx_percentile_list.entry_id   7LQS 
+_pdbx_percentile_list.name       all,nmr 
+# 
+loop_
+_pdbx_percentile_view.entry_id 
+_pdbx_percentile_view.conditions_id 
+_pdbx_percentile_view.type 
+_pdbx_percentile_view.conditions_label 
+_pdbx_percentile_view.rank 
+7LQS 1 all_atom_clashscore          absolute 85.8 
+7LQS 2 all_atom_clashscore          relative 77.2 
+7LQS 3 Ramachandran_outlier_percent absolute 23.5 
+7LQS 4 Ramachandran_outlier_percent relative 70.7 
+7LQS 5 rotamer_outliers_percent     absolute 9.2  
+7LQS 6 rotamer_outliers_percent     relative 53.1 
+# 
+loop_
+_pdbx_percentile_conditions.id 
+_pdbx_percentile_conditions.number_entries_total 
+1 158937 
+2 12864  
+3 154571 
+4 11451  
+5 154315 
+6 11428  
+# 
+loop_
+_pdbx_percentile_entity_view.conditions_id 
+_pdbx_percentile_entity_view.type 
+_pdbx_percentile_entity_view.label_asym_id 
+_pdbx_percentile_entity_view.PDB_model_num 
+_pdbx_percentile_entity_view.entity_id 
+_pdbx_percentile_entity_view.auth_asym_id 
+_pdbx_percentile_entity_view.conditions_label 
+_pdbx_percentile_entity_view.rank 
+3 Ramachandran_outlier_percent A 1  1 A absolute 100.00 
+4 Ramachandran_outlier_percent A 1  1 A relative 100.00 
+5 rotamer_outliers_percent     A 1  1 A absolute 3.02   
+6 rotamer_outliers_percent     A 1  1 A relative 3.02   
+3 Ramachandran_outlier_percent A 2  1 A absolute 100.00 
+4 Ramachandran_outlier_percent A 2  1 A relative 100.00 
+5 rotamer_outliers_percent     A 2  1 A absolute 14.45  
+6 rotamer_outliers_percent     A 2  1 A relative 14.45  
+3 Ramachandran_outlier_percent A 3  1 A absolute 100.00 
+4 Ramachandran_outlier_percent A 3  1 A relative 100.00 
+5 rotamer_outliers_percent     A 3  1 A absolute 3.02   
+6 rotamer_outliers_percent     A 3  1 A relative 3.02   
+3 Ramachandran_outlier_percent A 4  1 A absolute 100.00 
+4 Ramachandran_outlier_percent A 4  1 A relative 100.00 
+5 rotamer_outliers_percent     A 4  1 A absolute 0.81   
+6 rotamer_outliers_percent     A 4  1 A relative 0.81   
+3 Ramachandran_outlier_percent A 5  1 A absolute 100.00 
+4 Ramachandran_outlier_percent A 5  1 A relative 100.00 
+5 rotamer_outliers_percent     A 5  1 A absolute 14.45  
+6 rotamer_outliers_percent     A 5  1 A relative 14.45  
+3 Ramachandran_outlier_percent A 6  1 A absolute 0.75   
+4 Ramachandran_outlier_percent A 6  1 A relative 0.75   
+5 rotamer_outliers_percent     A 6  1 A absolute 0.81   
+6 rotamer_outliers_percent     A 6  1 A relative 0.81   
+3 Ramachandran_outlier_percent A 7  1 A absolute 100.00 
+4 Ramachandran_outlier_percent A 7  1 A relative 100.00 
+5 rotamer_outliers_percent     A 7  1 A absolute 14.45  
+6 rotamer_outliers_percent     A 7  1 A relative 14.45  
+3 Ramachandran_outlier_percent A 8  1 A absolute 100.00 
+4 Ramachandran_outlier_percent A 8  1 A relative 100.00 
+5 rotamer_outliers_percent     A 8  1 A absolute 0.81   
+6 rotamer_outliers_percent     A 8  1 A relative 0.81   
+3 Ramachandran_outlier_percent A 9  1 A absolute 100.00 
+4 Ramachandran_outlier_percent A 9  1 A relative 100.00 
+5 rotamer_outliers_percent     A 9  1 A absolute 3.02   
+6 rotamer_outliers_percent     A 9  1 A relative 3.02   
+3 Ramachandran_outlier_percent A 10 1 A absolute 100.00 
+4 Ramachandran_outlier_percent A 10 1 A relative 100.00 
+5 rotamer_outliers_percent     A 10 1 A absolute 14.45  
+6 rotamer_outliers_percent     A 10 1 A relative 14.45  
+3 Ramachandran_outlier_percent A 11 1 A absolute 100.00 
+4 Ramachandran_outlier_percent A 11 1 A relative 100.00 
+5 rotamer_outliers_percent     A 11 1 A absolute 3.02   
+6 rotamer_outliers_percent     A 11 1 A relative 3.02   
+3 Ramachandran_outlier_percent A 12 1 A absolute 100.00 
+4 Ramachandran_outlier_percent A 12 1 A relative 100.00 
+5 rotamer_outliers_percent     A 12 1 A absolute 3.02   
+6 rotamer_outliers_percent     A 12 1 A relative 3.02   
+3 Ramachandran_outlier_percent A 13 1 A absolute 100.00 
+4 Ramachandran_outlier_percent A 13 1 A relative 100.00 
+5 rotamer_outliers_percent     A 13 1 A absolute 0.81   
+6 rotamer_outliers_percent     A 13 1 A relative 0.81   
+3 Ramachandran_outlier_percent A 14 1 A absolute 100.00 
+4 Ramachandran_outlier_percent A 14 1 A relative 100.00 
+5 rotamer_outliers_percent     A 14 1 A absolute 3.02   
+6 rotamer_outliers_percent     A 14 1 A relative 3.02   
+3 Ramachandran_outlier_percent A 15 1 A absolute 100.00 
+4 Ramachandran_outlier_percent A 15 1 A relative 100.00 
+5 rotamer_outliers_percent     A 15 1 A absolute 14.45  
+6 rotamer_outliers_percent     A 15 1 A relative 14.45  
+3 Ramachandran_outlier_percent A 16 1 A absolute 100.00 
+4 Ramachandran_outlier_percent A 16 1 A relative 100.00 
+5 rotamer_outliers_percent     A 16 1 A absolute 3.02   
+6 rotamer_outliers_percent     A 16 1 A relative 3.02   
+3 Ramachandran_outlier_percent A 17 1 A absolute 0.75   
+4 Ramachandran_outlier_percent A 17 1 A relative 0.75   
+5 rotamer_outliers_percent     A 17 1 A absolute 100.00 
+6 rotamer_outliers_percent     A 17 1 A relative 100.00 
+3 Ramachandran_outlier_percent A 18 1 A absolute 100.00 
+4 Ramachandran_outlier_percent A 18 1 A relative 100.00 
+5 rotamer_outliers_percent     A 18 1 A absolute 14.45  
+6 rotamer_outliers_percent     A 18 1 A relative 14.45  
+3 Ramachandran_outlier_percent A 19 1 A absolute 100.00 
+4 Ramachandran_outlier_percent A 19 1 A relative 100.00 
+5 rotamer_outliers_percent     A 19 1 A absolute 14.45  
+6 rotamer_outliers_percent     A 19 1 A relative 14.45  
+3 Ramachandran_outlier_percent A 20 1 A absolute 100.00 
+4 Ramachandran_outlier_percent A 20 1 A relative 100.00 
+5 rotamer_outliers_percent     A 20 1 A absolute 14.45  
+6 rotamer_outliers_percent     A 20 1 A relative 14.45  
+# 
+_pdbx_dcc_geometry.entry_id                                       7LQS 
+_pdbx_dcc_geometry.Ramachandran_outlier_percent                   0.77 
+_pdbx_dcc_geometry.Ramachandran_outlier_percent_nmr_well_formed   0.77 
+_pdbx_dcc_geometry.all_atom_clashscore                            2.25 
+_pdbx_dcc_geometry.all_atom_clashscore_nmr_well_formed            2.13 
+_pdbx_dcc_geometry.angle_overall_rmsz                             0.30 
+_pdbx_dcc_geometry.bond_overall_rmsz                              0.18 
+_pdbx_dcc_geometry.number_angles                                  2920 
+_pdbx_dcc_geometry.number_bonds                                   2160 
+_pdbx_dcc_geometry.rotamer_outliers_percent                       12.14 
+_pdbx_dcc_geometry.rotamer_outliers_percent_nmr_well_formed       11.15 
+# 
+loop_
+_pdbx_dcc_entity_geometry.label_asym_id 
+_pdbx_dcc_entity_geometry.PDB_model_num 
+_pdbx_dcc_entity_geometry.entity_id 
+_pdbx_dcc_entity_geometry.auth_asym_id 
+_pdbx_dcc_entity_geometry.angle_overall_rmsz 
+_pdbx_dcc_entity_geometry.bond_overall_rmsz 
+_pdbx_dcc_entity_geometry.number_angles 
+_pdbx_dcc_entity_geometry.number_bonds 
+A 1  1 A 0.30 0.18 146 108 
+A 2  1 A 0.30 0.18 146 108 
+A 3  1 A 0.30 0.18 146 108 
+A 4  1 A 0.30 0.18 146 108 
+A 5  1 A 0.30 0.18 146 108 
+A 6  1 A 0.30 0.18 146 108 
+A 7  1 A 0.30 0.18 146 108 
+A 8  1 A 0.30 0.18 146 108 
+A 9  1 A 0.30 0.18 146 108 
+A 10 1 A 0.30 0.18 146 108 
+A 11 1 A 0.30 0.18 146 108 
+A 12 1 A 0.30 0.18 146 108 
+A 13 1 A 0.30 0.18 146 108 
+A 14 1 A 0.30 0.18 146 108 
+A 15 1 A 0.30 0.18 146 108 
+A 16 1 A 0.30 0.18 146 108 
+A 17 1 A 0.30 0.18 146 108 
+A 18 1 A 0.30 0.18 146 108 
+A 19 1 A 0.30 0.18 146 108 
+A 20 1 A 0.30 0.18 146 108 
+# 
+loop_
+_struct_mon_prot.pdbx_id 
+_struct_mon_prot.PDB_model_num 
+_struct_mon_prot.auth_asym_id 
+_struct_mon_prot.auth_comp_id 
+_struct_mon_prot.auth_seq_id 
+_struct_mon_prot.pdbx_rotamer 
+_struct_mon_prot.phi 
+_struct_mon_prot.psi 
+_struct_mon_prot.pdbx_Ramachandran_region 
+1   1  A CYS 1  p       ?      ?      ?       
+2   1  A CYS 2  OUTLIER -172.3 169.6  Favored 
+3   1  A SER 3  p       -94.1  44.9   Allowed 
+4   1  A ASN 4  m120    -109.5 160.6  Favored 
+5   1  A PRO 5  Cg_endo -69.8  -33.2  Favored 
+6   1  A ALA 6  ?       -84.2  -43.2  Favored 
+7   1  A CYS 7  OUTLIER -52.4  -46.6  Favored 
+8   1  A GLN 8  pt20    -60.1  -37.5  Favored 
+9   1  A VAL 9  t       -71.4  -47.1  Favored 
+10  1  A GLN 10 mm-40   -124.5 123.9  Favored 
+11  1  A HIS 11 t60     -62.7  94.6   Allowed 
+12  1  A SER 12 p       -135.2 106.1  Favored 
+13  1  A ASP 13 p-10    -75.9  72.7   Favored 
+14  1  A LEU 14 tp      -88.9  -38.8  Favored 
+15  1  A CYS 15 m       ?      ?      ?       
+16  2  A CYS 1  t       ?      ?      ?       
+17  2  A CYS 2  t       -149.7 -47.0  Allowed 
+18  2  A SER 3  m       -120.4 36.4   Favored 
+19  2  A ASN 4  m120    -100.5 160.6  Favored 
+20  2  A PRO 5  Cg_endo -69.8  -47.8  Allowed 
+21  2  A ALA 6  ?       -67.8  -42.1  Favored 
+22  2  A CYS 7  t       -52.8  -40.6  Favored 
+23  2  A GLN 8  tt0     -56.0  -36.1  Favored 
+24  2  A VAL 9  t       -56.2  -38.2  Favored 
+25  2  A GLN 10 mt-30   -87.2  149.3  Favored 
+26  2  A HIS 11 t60     -108.7 40.2   Allowed 
+27  2  A SER 12 OUTLIER -128.3 37.3   Favored 
+28  2  A ASP 13 m-20    -163.8 109.0  Allowed 
+29  2  A LEU 14 tt      -92.1  138.9  Favored 
+30  2  A CYS 15 t       ?      ?      ?       
+31  3  A CYS 1  t       ?      ?      ?       
+32  3  A CYS 2  OUTLIER -131.9 -49.2  Allowed 
+33  3  A SER 3  m       -146.1 64.1   Allowed 
+34  3  A ASN 4  m-80    -120.4 160.6  Favored 
+35  3  A PRO 5  Cg_endo -69.7  -47.5  Allowed 
+36  3  A ALA 6  ?       -61.8  -36.0  Favored 
+37  3  A CYS 7  OUTLIER -81.3  -36.2  Favored 
+38  3  A GLN 8  tt0     -52.2  -52.8  Favored 
+39  3  A VAL 9  p       -66.5  -35.5  Favored 
+40  3  A GLN 10 tt0     -62.6  168.9  Favored 
+41  3  A HIS 11 p80     -91.2  49.3   Allowed 
+42  3  A SER 12 p       -125.9 75.0   Allowed 
+43  3  A ASP 13 t70     -68.3  -52.4  Favored 
+44  3  A LEU 14 mt      -54.5  131.7  Favored 
+45  3  A CYS 15 t       ?      ?      ?       
+46  4  A CYS 1  OUTLIER ?      ?      ?       
+47  4  A CYS 2  OUTLIER -103.5 -62.1  Allowed 
+48  4  A SER 3  m       -125.8 53.1   Allowed 
+49  4  A ASN 4  OUTLIER -100.8 160.6  Favored 
+50  4  A PRO 5  Cg_endo -69.7  -45.2  Allowed 
+51  4  A ALA 6  ?       -72.6  -45.3  Favored 
+52  4  A CYS 7  t       -55.0  -36.6  Favored 
+53  4  A GLN 8  tm0?    -60.9  -36.2  Favored 
+54  4  A VAL 9  t       -52.3  -36.0  Favored 
+55  4  A GLN 10 mt-30   -78.8  172.9  Favored 
+56  4  A HIS 11 m170    -90.3  -38.9  Favored 
+57  4  A SER 12 t       -77.8  76.7   Favored 
+58  4  A ASP 13 t0      -127.6 44.7   Favored 
+59  4  A LEU 14 mm?     -98.0  114.1  Favored 
+60  4  A CYS 15 m       ?      ?      ?       
+61  5  A CYS 1  t       ?      ?      ?       
+62  5  A CYS 2  m       -52.0  -36.1  Favored 
+63  5  A SER 3  m       -52.0  -36.3  Favored 
+64  5  A ASN 4  m-20    -88.5  160.5  Favored 
+65  5  A PRO 5  Cg_endo -69.7  -34.6  Favored 
+66  5  A ALA 6  ?       -51.6  -52.5  Favored 
+67  5  A CYS 7  OUTLIER -69.1  -36.1  Favored 
+68  5  A GLN 8  tt0     -62.3  -39.4  Favored 
+69  5  A VAL 9  t       -62.8  -48.6  Favored 
+70  5  A GLN 10 mt-30   -73.2  146.2  Favored 
+71  5  A HIS 11 t60     -118.2 42.1   Favored 
+72  5  A SER 12 m       -133.3 37.5   Favored 
+73  5  A ASP 13 t70     -173.8 113.5  Allowed 
+74  5  A LEU 14 pp      -108.7 151.2  Favored 
+75  5  A CYS 15 p       ?      ?      ?       
+76  6  A CYS 1  m       ?      ?      ?       
+77  6  A CYS 2  t       -92.2  -36.4  Favored 
+78  6  A SER 3  p       -176.6 85.0   OUTLIER 
+79  6  A ASN 4  OUTLIER -140.8 160.5  Favored 
+80  6  A PRO 5  Cg_endo -69.7  -48.4  Allowed 
+81  6  A ALA 6  ?       -54.8  -36.2  Favored 
+82  6  A CYS 7  OUTLIER -85.9  -36.1  Favored 
+83  6  A GLN 8  tt0     -52.0  -52.7  Favored 
+84  6  A VAL 9  p       -55.0  -35.6  Favored 
+85  6  A GLN 10 mt-30   -80.5  -179.3 Favored 
+86  6  A HIS 11 m80     -95.3  55.2   Allowed 
+87  6  A SER 12 t       -138.0 107.6  Favored 
+88  6  A ASP 13 m-20    -136.1 89.3   Favored 
+89  6  A LEU 14 OUTLIER -176.6 125.0  Allowed 
+90  6  A CYS 15 m       ?      ?      ?       
+91  7  A CYS 1  t       ?      ?      ?       
+92  7  A CYS 2  OUTLIER -63.4  169.7  Favored 
+93  7  A SER 3  p       -91.0  55.6   Favored 
+94  7  A ASN 4  m120    -144.5 160.5  Favored 
+95  7  A PRO 5  Cg_endo -69.8  -35.0  Favored 
+96  7  A ALA 6  ?       -53.6  -37.6  Favored 
+97  7  A CYS 7  t       -80.8  -36.3  Favored 
+98  7  A GLN 8  tm0?    -60.0  -49.9  Favored 
+99  7  A VAL 9  p       -62.4  -36.0  Favored 
+100 7  A GLN 10 pt20    -153.9 136.6  Favored 
+101 7  A HIS 11 m80     -93.2  56.8   Favored 
+102 7  A SER 12 p       -127.3 38.5   Favored 
+103 7  A ASP 13 t70     -166.0 109.6  Allowed 
+104 7  A LEU 14 tp      -96.3  149.1  Favored 
+105 7  A CYS 15 p       ?      ?      ?       
+106 8  A CYS 1  OUTLIER ?      ?      ?       
+107 8  A CYS 2  t       -52.0  -36.7  Favored 
+108 8  A SER 3  m       -153.7 67.9   Allowed 
+109 8  A ASN 4  m120    -133.6 160.5  Favored 
+110 8  A PRO 5  Cg_endo -69.8  -48.3  Allowed 
+111 8  A ALA 6  ?       -54.0  -51.6  Favored 
+112 8  A CYS 7  OUTLIER -69.3  -36.9  Favored 
+113 8  A GLN 8  tt0     -54.6  -37.4  Favored 
+114 8  A VAL 9  t       -51.8  -46.6  Favored 
+115 8  A GLN 10 pt20    -91.2  174.7  Favored 
+116 8  A HIS 11 m170    -69.3  94.5   Allowed 
+117 8  A SER 12 t       -114.2 92.5   Favored 
+118 8  A ASP 13 OUTLIER -54.6  -71.6  Allowed 
+119 8  A LEU 14 tp      -173.2 155.6  Favored 
+120 8  A CYS 15 p       ?      ?      ?       
+121 9  A CYS 1  OUTLIER ?      ?      ?       
+122 9  A CYS 2  m       -82.0  -170.7 Favored 
+123 9  A SER 3  m       -96.7  36.2   Allowed 
+124 9  A ASN 4  m120    -117.4 160.5  Favored 
+125 9  A PRO 5  Cg_endo -69.8  -34.1  Favored 
+126 9  A ALA 6  ?       -55.4  -39.0  Favored 
+127 9  A CYS 7  OUTLIER -90.7  -36.7  Favored 
+128 9  A GLN 8  tt0     -53.5  -46.0  Favored 
+129 9  A VAL 9  p       -56.9  -37.7  Favored 
+130 9  A GLN 10 pt20    -94.5  174.0  Favored 
+131 9  A HIS 11 m-70    -129.1 -71.8  Allowed 
+132 9  A SER 12 t       -81.2  67.6   Favored 
+133 9  A ASP 13 m-20    -165.4 113.9  Allowed 
+134 9  A LEU 14 tt      -69.0  151.6  Favored 
+135 9  A CYS 15 m       ?      ?      ?       
+136 10 A CYS 1  p       ?      ?      ?       
+137 10 A CYS 2  m       -142.3 -42.5  Allowed 
+138 10 A SER 3  t       -96.7  -64.9  Allowed 
+139 10 A ASN 4  m120    -115.4 160.6  Favored 
+140 10 A PRO 5  Cg_endo -69.8  -33.0  Favored 
+141 10 A ALA 6  ?       -51.7  -45.3  Favored 
+142 10 A CYS 7  t       -52.9  -36.4  Favored 
+143 10 A GLN 8  tp-100  -53.8  -38.4  Favored 
+144 10 A VAL 9  t       -70.8  -39.1  Favored 
+145 10 A GLN 10 tt0     -62.8  169.2  Favored 
+146 10 A HIS 11 OUTLIER -109.4 53.8   Allowed 
+147 10 A SER 12 t       -139.3 107.7  Favored 
+148 10 A ASP 13 t70     -103.0 42.9   Allowed 
+149 10 A LEU 14 pp      -58.6  -36.1  Favored 
+150 10 A CYS 15 p       ?      ?      ?       
+151 11 A CYS 1  p       ?      ?      ?       
+152 11 A CYS 2  m       -122.5 -38.0  Favored 
+153 11 A SER 3  p       -137.3 83.8   Favored 
+154 11 A ASN 4  OUTLIER -140.0 160.6  Favored 
+155 11 A PRO 5  Cg_endo -69.7  -35.7  Favored 
+156 11 A ALA 6  ?       -87.2  -35.4  Favored 
+157 11 A CYS 7  t       -51.9  -48.6  Favored 
+158 11 A GLN 8  OUTLIER -57.8  -35.1  Favored 
+159 11 A VAL 9  t       -61.1  -47.7  Favored 
+160 11 A GLN 10 mt-30   -102.0 110.5  Favored 
+161 11 A HIS 11 t-160   -98.2  41.0   Allowed 
+162 11 A SER 12 m       -113.0 43.6   Allowed 
+163 11 A ASP 13 t70     -174.8 118.7  Allowed 
+164 11 A LEU 14 mm?     -52.1  166.1  Allowed 
+165 11 A CYS 15 t       ?      ?      ?       
+166 12 A CYS 1  OUTLIER ?      ?      ?       
+167 12 A CYS 2  m       -93.8  -64.3  Allowed 
+168 12 A SER 3  m       -139.6 84.1   Allowed 
+169 12 A ASN 4  OUTLIER -158.6 160.2  Favored 
+170 12 A PRO 5  Cg_endo -69.8  -33.0  Favored 
+171 12 A ALA 6  ?       -59.4  -40.3  Favored 
+172 12 A CYS 7  t       -54.9  -35.9  Favored 
+173 12 A GLN 8  tt0     -51.9  -36.0  Favored 
+174 12 A VAL 9  t       -74.8  -48.3  Favored 
+175 12 A GLN 10 mp0     -118.6 73.6   Allowed 
+176 12 A HIS 11 t-80    -102.0 106.8  Favored 
+177 12 A SER 12 m       -108.4 36.2   Favored 
+178 12 A ASP 13 t0      52.0   49.6   Favored 
+179 12 A LEU 14 tp      -172.6 142.7  Allowed 
+180 12 A CYS 15 m       ?      ?      ?       
+181 13 A CYS 1  OUTLIER ?      ?      ?       
+182 13 A CYS 2  m       -138.5 -51.3  Allowed 
+183 13 A SER 3  m       -122.6 37.2   Favored 
+184 13 A ASN 4  m-80    -119.5 160.6  Favored 
+185 13 A PRO 5  Cg_endo -69.7  -35.9  Favored 
+186 13 A ALA 6  ?       -59.6  -35.6  Favored 
+187 13 A CYS 7  OUTLIER -91.2  -35.0  Favored 
+188 13 A GLN 8  tm0?    -51.6  -36.1  Favored 
+189 13 A VAL 9  p       -51.4  -33.7  Favored 
+190 13 A GLN 10 mm-40   -114.4 134.0  Favored 
+191 13 A HIS 11 p-80    -123.4 95.5   Favored 
+192 13 A SER 12 m       -121.6 36.5   Favored 
+193 13 A ASP 13 t0      52.0   43.6   Favored 
+194 13 A LEU 14 tp      -84.0  -72.9  Allowed 
+195 13 A CYS 15 OUTLIER ?      ?      ?       
+196 14 A CYS 1  m       ?      ?      ?       
+197 14 A CYS 2  t       -129.3 -70.1  Allowed 
+198 14 A SER 3  m       -155.6 96.4   Allowed 
+199 14 A ASN 4  m-20    -148.3 160.6  Favored 
+200 14 A PRO 5  Cg_endo -69.7  -35.1  Favored 
+201 14 A ALA 6  ?       -87.0  -34.9  Favored 
+202 14 A CYS 7  OUTLIER -51.8  -35.7  Favored 
+203 14 A GLN 8  pt20    -51.7  -33.6  Favored 
+204 14 A VAL 9  t       -56.9  -44.3  Favored 
+205 14 A GLN 10 OUTLIER -63.4  163.3  Favored 
+206 14 A HIS 11 t-80    -71.4  -37.3  Favored 
+207 14 A SER 12 t       -96.2  90.6   Favored 
+208 14 A ASP 13 p-10    -96.4  -36.1  Favored 
+209 14 A LEU 14 mp      -51.9  137.1  Favored 
+210 14 A CYS 15 t       ?      ?      ?       
+211 15 A CYS 1  p       ?      ?      ?       
+212 15 A CYS 2  p       -51.5  -41.8  Favored 
+213 15 A SER 3  t       -106.6 70.0   Allowed 
+214 15 A ASN 4  OUTLIER -129.5 160.5  Favored 
+215 15 A PRO 5  Cg_endo -69.8  -48.3  Allowed 
+216 15 A ALA 6  ?       -86.3  -46.3  Favored 
+217 15 A CYS 7  t       -51.7  -35.7  Favored 
+218 15 A GLN 8  tp60    -51.7  -35.9  Favored 
+219 15 A VAL 9  t       -76.6  -35.6  Favored 
+220 15 A GLN 10 tt0     -81.2  147.4  Favored 
+221 15 A HIS 11 t-80    -85.1  99.8   Favored 
+222 15 A SER 12 p       -126.6 104.8  Favored 
+223 15 A ASP 13 t70     -91.9  47.2   Allowed 
+224 15 A LEU 14 tt      -101.7 -63.1  Allowed 
+225 15 A CYS 15 t       ?      ?      ?       
+226 16 A CYS 1  t       ?      ?      ?       
+227 16 A CYS 2  m       -52.0  -36.2  Favored 
+228 16 A SER 3  p       -52.0  -36.2  Favored 
+229 16 A ASN 4  m-20    -88.5  160.6  Favored 
+230 16 A PRO 5  Cg_endo -69.8  -34.5  Favored 
+231 16 A ALA 6  ?       -51.7  -52.4  Favored 
+232 16 A CYS 7  OUTLIER -69.9  -36.1  Favored 
+233 16 A GLN 8  OUTLIER -57.0  -41.2  Favored 
+234 16 A VAL 9  t       -57.1  -37.5  Favored 
+235 16 A GLN 10 tp-100  -81.8  134.7  Favored 
+236 16 A HIS 11 m170    -70.1  92.5   Allowed 
+237 16 A SER 12 t       -117.4 92.3   Favored 
+238 16 A ASP 13 t70     -57.8  -60.0  Favored 
+239 16 A LEU 14 mt      -78.3  119.3  Favored 
+240 16 A CYS 15 t       ?      ?      ?       
+241 17 A CYS 1  m       ?      ?      ?       
+242 17 A CYS 2  m       -120.8 -33.3  Favored 
+243 17 A SER 3  t       -50.6  -74.6  OUTLIER 
+244 17 A ASN 4  m120    -104.2 159.9  Favored 
+245 17 A PRO 5  Cg_endo -69.8  -31.4  Favored 
+246 17 A ALA 6  ?       -50.4  -52.6  Favored 
+247 17 A CYS 7  t       -57.8  -42.9  Favored 
+248 17 A GLN 8  tt0     -52.7  -36.2  Favored 
+249 17 A VAL 9  t       -51.7  -35.9  Favored 
+250 17 A GLN 10 tt0     -62.1  163.9  Favored 
+251 17 A HIS 11 p-80    -52.5  -37.2  Favored 
+252 17 A SER 12 m       -79.3  85.0   Favored 
+253 17 A ASP 13 p-10    -94.2  -38.4  Favored 
+254 17 A LEU 14 tp      -52.0  144.2  Favored 
+255 17 A CYS 15 m       ?      ?      ?       
+256 18 A CYS 1  p       ?      ?      ?       
+257 18 A CYS 2  m       -129.6 -55.0  Allowed 
+258 18 A SER 3  p       -119.7 75.1   Allowed 
+259 18 A ASN 4  m-80    -145.0 160.6  Favored 
+260 18 A PRO 5  Cg_endo -69.8  -48.3  Allowed 
+261 18 A ALA 6  ?       -57.1  -35.3  Favored 
+262 18 A CYS 7  t       -79.6  -35.6  Favored 
+263 18 A GLN 8  mt-30   -56.7  -53.0  Favored 
+264 18 A VAL 9  m       -56.9  -34.1  Favored 
+265 18 A GLN 10 mt-30   -152.1 111.9  Favored 
+266 18 A HIS 11 p80     -126.9 119.5  Favored 
+267 18 A SER 12 m       -98.6  37.4   Allowed 
+268 18 A ASP 13 m-20    55.1   43.2   Favored 
+269 18 A LEU 14 OUTLIER -122.6 128.8  Favored 
+270 18 A CYS 15 t       ?      ?      ?       
+271 19 A CYS 1  p       ?      ?      ?       
+272 19 A CYS 2  t       -61.9  166.5  Favored 
+273 19 A SER 3  p       -95.7  67.2   Favored 
+274 19 A ASN 4  m-20    -145.1 160.6  Favored 
+275 19 A PRO 5  Cg_endo -69.8  -32.5  Favored 
+276 19 A ALA 6  ?       -51.5  -35.7  Favored 
+277 19 A CYS 7  t       -65.2  -35.9  Favored 
+278 19 A GLN 8  tp60    -68.8  -52.9  Favored 
+279 19 A VAL 9  m       -60.4  -36.5  Favored 
+280 19 A GLN 10 mt-30   -155.8 157.1  Favored 
+281 19 A HIS 11 OUTLIER -77.5  60.0   Favored 
+282 19 A SER 12 p       -90.1  88.3   Favored 
+283 19 A ASP 13 p30     -52.0  -36.1  Favored 
+284 19 A LEU 14 tp      -52.5  126.4  Favored 
+285 19 A CYS 15 t       ?      ?      ?       
+286 20 A CYS 1  t       ?      ?      ?       
+287 20 A CYS 2  m       -126.7 -64.1  Allowed 
+288 20 A SER 3  m       -148.0 56.6   Allowed 
+289 20 A ASN 4  m-80    -113.1 160.6  Favored 
+290 20 A PRO 5  Cg_endo -69.8  -41.3  Favored 
+291 20 A ALA 6  ?       -56.3  -35.7  Favored 
+292 20 A CYS 7  OUTLIER -90.8  -36.1  Favored 
+293 20 A GLN 8  mt-30   -52.1  -43.4  Favored 
+294 20 A VAL 9  m       -59.7  -35.5  Favored 
+295 20 A GLN 10 mm100   -87.1  176.9  Favored 
+296 20 A HIS 11 m80     -91.7  83.7   Favored 
+297 20 A SER 12 t       -135.4 101.6  Favored 
+298 20 A ASP 13 p30     -117.9 73.8   Allowed 
+299 20 A LEU 14 tp      -121.5 -65.4  Allowed 
+300 20 A CYS 15 t       ?      ?      ?       
+# 
+_pdbx_struct_nmr_ens_clust.entry_id                  7LQS 
+_pdbx_struct_nmr_ens_clust.clusters_total_number     4 
+_pdbx_struct_nmr_ens_clust.conformers_total_number   20 
+_pdbx_struct_nmr_ens_clust.outliers_total_number     1 
+# 
+loop_
+_pdbx_struct_nmr_ens_clust_gen.PDB_model_num 
+_pdbx_struct_nmr_ens_clust_gen.cluster_id 
+_pdbx_struct_nmr_ens_clust_gen.medoid_conformer 
+1  4       Y 
+2  3       N 
+3  1       Y 
+4  1       N 
+5  3       Y 
+6  1       N 
+7  4       N 
+8  1       N 
+9  outlier N 
+10 1       N 
+11 3       N 
+12 2       N 
+13 2       Y 
+14 1       N 
+15 2       N 
+16 2       N 
+17 1       N 
+18 2       N 
+19 4       N 
+20 1       N 
+# 
+_pdbx_struct_nmr_ens_dom.id                        1 
+_pdbx_struct_nmr_ens_dom.medoid_model_number       3 
+_pdbx_struct_nmr_ens_dom.distance_rms_dev          1.190 
+_pdbx_struct_nmr_ens_dom.distance_rms_dev_medoid   0.874 
+_pdbx_struct_nmr_ens_dom.number_of_gaps            0 
+_pdbx_struct_nmr_ens_dom.number_of_monomers        14 
+_pdbx_struct_nmr_ens_dom.percent_of_core           100.000 
+# 
+_pdbx_struct_nmr_ens_dom_lim.dom_id             1 
+_pdbx_struct_nmr_ens_dom_lim.component_id       1 
+_pdbx_struct_nmr_ens_dom_lim.beg_auth_asym_id   A 
+_pdbx_struct_nmr_ens_dom_lim.beg_auth_seq_id    2 
+_pdbx_struct_nmr_ens_dom_lim.beg_auth_comp_id   CYS 
+_pdbx_struct_nmr_ens_dom_lim.end_auth_asym_id   A 
+_pdbx_struct_nmr_ens_dom_lim.end_auth_seq_id    15 
+_pdbx_struct_nmr_ens_dom_lim.end_auth_comp_id   CYS 
+# 
+_pdbx_nmr_restraint_list.id     1 
+_pdbx_nmr_restraint_list.type   distance 
+# 
+_pdbx_nmr_restraint_summary.entry_id                            7LQS 
+_pdbx_nmr_restraint_summary.distance_restraints_total           88 
+_pdbx_nmr_restraint_summary.intraresidue_total_count            36 
+_pdbx_nmr_restraint_summary.sequential_total_count              45 
+_pdbx_nmr_restraint_summary.medium_range_total_count            7 
+_pdbx_nmr_restraint_summary.long_range_total_count              0 
+_pdbx_nmr_restraint_summary.interchain_total_count              0 
+_pdbx_nmr_restraint_summary.dihedral_angle_restraints_total     0 
+_pdbx_nmr_restraint_summary.hydrogen_bond_restraints_total      0 
+_pdbx_nmr_restraint_summary.disulfide_bond_restraints_total     0 
+_pdbx_nmr_restraint_summary.unmapped_restraints_total           88 
+_pdbx_nmr_restraint_summary.restraints_per_residue              5.9 
+_pdbx_nmr_restraint_summary.long_range_restraints_per_residue   0.0 
+# 
+loop_
+_pdbx_nmr_distance_violation_summary.type 
+_pdbx_nmr_distance_violation_summary.subtype 
+_pdbx_nmr_distance_violation_summary.restraints_count 
+_pdbx_nmr_distance_violation_summary.restraints_percent 
+_pdbx_nmr_distance_violation_summary.violations_count 
+_pdbx_nmr_distance_violation_summary.violations_percent 
+_pdbx_nmr_distance_violation_summary.violations_percent_type 
+_pdbx_nmr_distance_violation_summary.consistent_violations_count 
+_pdbx_nmr_distance_violation_summary.consistent_violations_percent 
+_pdbx_nmr_distance_violation_summary.consistent_violations_percent_type 
+intraresidue all                 36 40.9  0 0.0 0.0 0 0.0 0.0 
+intraresidue backbone_backbone   0  0.0   0 0.0 0.0 0 0.0 0.0 
+intraresidue backbone_sidechain  34 38.6  0 0.0 0.0 0 0.0 0.0 
+intraresidue sidechain_sidechain 2  2.3   0 0.0 0.0 0 0.0 0.0 
+sequential   all                 45 51.1  0 0.0 0.0 0 0.0 0.0 
+sequential   backbone_backbone   11 12.5  0 0.0 0.0 0 0.0 0.0 
+sequential   backbone_sidechain  28 31.8  0 0.0 0.0 0 0.0 0.0 
+sequential   sidechain_sidechain 6  6.8   0 0.0 0.0 0 0.0 0.0 
+medium_range all                 7  8.0   0 0.0 0.0 0 0.0 0.0 
+medium_range backbone_backbone   1  1.1   0 0.0 0.0 0 0.0 0.0 
+medium_range backbone_sidechain  5  5.7   0 0.0 0.0 0 0.0 0.0 
+medium_range sidechain_sidechain 1  1.1   0 0.0 0.0 0 0.0 0.0 
+long_range   all                 0  0.0   0 0.0 0.0 0 0.0 0.0 
+long_range   backbone_backbone   0  0.0   0 0.0 0.0 0 0.0 0.0 
+long_range   backbone_sidechain  0  0.0   0 0.0 0.0 0 0.0 0.0 
+long_range   sidechain_sidechain 0  0.0   0 0.0 0.0 0 0.0 0.0 
+interchain   all                 0  0.0   0 0.0 0.0 0 0.0 0.0 
+interchain   backbone_backbone   0  0.0   0 0.0 0.0 0 0.0 0.0 
+interchain   backbone_sidechain  0  0.0   0 0.0 0.0 0 0.0 0.0 
+interchain   sidechain_sidechain 0  0.0   0 0.0 0.0 0 0.0 0.0 
+all          all                 88 100.0 0 0.0 0.0 0 0.0 0.0 
+all          backbone_backbone   12 13.6  0 0.0 0.0 0 0.0 0.0 
+all          backbone_sidechain  67 76.1  0 0.0 0.0 0 0.0 0.0 
+all          sidechain_sidechain 9  10.2  0 0.0 0.0 0 0.0 0.0 
+# 
+loop_
+_pdbx_nmr_distance_violation_model.PDB_model_num 
+_pdbx_nmr_distance_violation_model.maximum_violation 
+_pdbx_nmr_distance_violation_model.average_violation 
+_pdbx_nmr_distance_violation_model.median_violation 
+_pdbx_nmr_distance_violation_model.standard_deviation 
+_pdbx_nmr_distance_violation_model.intraresidue_violations_count 
+_pdbx_nmr_distance_violation_model.sequential_violations_count 
+_pdbx_nmr_distance_violation_model.medium_range_violations_count 
+_pdbx_nmr_distance_violation_model.long_range_violations_count 
+_pdbx_nmr_distance_violation_model.interchain_violations_count 
+_pdbx_nmr_distance_violation_model.violations_count 
+1  0.0 0.0 0.0 0.0 0 0 0 0 0 0 
+2  0.0 0.0 0.0 0.0 0 0 0 0 0 0 
+3  0.0 0.0 0.0 0.0 0 0 0 0 0 0 
+4  0.0 0.0 0.0 0.0 0 0 0 0 0 0 
+5  0.0 0.0 0.0 0.0 0 0 0 0 0 0 
+6  0.0 0.0 0.0 0.0 0 0 0 0 0 0 
+7  0.0 0.0 0.0 0.0 0 0 0 0 0 0 
+8  0.0 0.0 0.0 0.0 0 0 0 0 0 0 
+9  0.0 0.0 0.0 0.0 0 0 0 0 0 0 
+10 0.0 0.0 0.0 0.0 0 0 0 0 0 0 
+11 0.0 0.0 0.0 0.0 0 0 0 0 0 0 
+12 0.0 0.0 0.0 0.0 0 0 0 0 0 0 
+13 0.0 0.0 0.0 0.0 0 0 0 0 0 0 
+14 0.0 0.0 0.0 0.0 0 0 0 0 0 0 
+15 0.0 0.0 0.0 0.0 0 0 0 0 0 0 
+16 0.0 0.0 0.0 0.0 0 0 0 0 0 0 
+17 0.0 0.0 0.0 0.0 0 0 0 0 0 0 
+18 0.0 0.0 0.0 0.0 0 0 0 0 0 0 
+19 0.0 0.0 0.0 0.0 0 0 0 0 0 0 
+20 0.0 0.0 0.0 0.0 0 0 0 0 0 0 
+# 
+loop_
+_pdbx_nmr_distance_violation_ensemble.fraction_ensemble_size 
+_pdbx_nmr_distance_violation_ensemble.fraction_ensemble_percent 
+_pdbx_nmr_distance_violation_ensemble.intraresidue_violations_count 
+_pdbx_nmr_distance_violation_ensemble.sequential_violations_count 
+_pdbx_nmr_distance_violation_ensemble.medium_range_violations_count 
+_pdbx_nmr_distance_violation_ensemble.long_range_violations_count 
+_pdbx_nmr_distance_violation_ensemble.interchain_violations_count 
+_pdbx_nmr_distance_violation_ensemble.violations_count 
+1  5.0   0 0 0 0 0 0 
+2  10.0  0 0 0 0 0 0 
+3  15.0  0 0 0 0 0 0 
+4  20.0  0 0 0 0 0 0 
+5  25.0  0 0 0 0 0 0 
+6  30.0  0 0 0 0 0 0 
+7  35.0  0 0 0 0 0 0 
+8  40.0  0 0 0 0 0 0 
+9  45.0  0 0 0 0 0 0 
+10 50.0  0 0 0 0 0 0 
+11 55.0  0 0 0 0 0 0 
+12 60.0  0 0 0 0 0 0 
+13 65.0  0 0 0 0 0 0 
+14 70.0  0 0 0 0 0 0 
+15 75.0  0 0 0 0 0 0 
+16 80.0  0 0 0 0 0 0 
+17 85.0  0 0 0 0 0 0 
+18 90.0  0 0 0 0 0 0 
+19 95.0  0 0 0 0 0 0 
+20 100.0 0 0 0 0 0 0 
+# 
+loop_
+_pdbx_validation_software.ordinal 
+_pdbx_validation_software.name 
+_pdbx_validation_software.version 
+_pdbx_validation_software.classification 
+_pdbx_validation_software.details 
+1  validation-pipeline 2.18 'mmcif data extractor' 
+;cs_only,protein-DNA-RNA-entities,percentilebins,attemptedValidationSteps,PDB-revision-number,pdbid,PDB-R,PDB-revision-date,PDB-Rfree,PDB-deposition-date,XMLcreationDate,PDB-resolution-low,PDB-resolution
+;
+2  molprobity          4.02b-467 'geometric validation' 
+;clash,bond-outlier,relative_rama_percentile,angle-outlier,absolute_rama_percentile,clashscore-full-length,phi,angles_rmsz,percent-rota-outliers-full-length,bonds_rmsz,relative_sidechain_percentile,num-H-reduce,absolute_sidechain_percentile,psi,rama,percent-rama-outliers-full-length,num_bonds_rmsz,rota,num_angles_rmsz
+;
+3  mogul               unknown 'geometric validation' no-ligands-for-mogul 
+4  buster-report       unknown 
+'geometric validation package for ligand chemistry in protein x-ray structures' 
+no-ligands-for-buster-report 
+5  coreclust           unknown 'assessment of nmr ensemble structure' 
+nmr_models_consistency_flag 
+6  coreclust           2.18 'assessment of nmr ensemble structure' 
+;cyrange_domain_id,nmrclust_version,percentage_of_core,number_of_residues,cyrange_version,residue_string,nmrclust_representative,medoid_model,number_of_gaps,cyrange_error,rmsd,nmrclust_number_of_models,nmrclust_number_of_clusters,nmrclust_number_of_outliers,medoid_rmsd,nmrclust_error,validate,nmrclust_representative_model,cyrange_number_of_domains,nmrclust_cluster_id
+;
+7  chemicalshifts      2.18 'assessment of nmr assigned chemical shifts' 
+;panav_version,chemical_shift_completeness_full_length,rci_version,chemical_shift_completeness,shiftchecker_version
+;
+8  percentiles         
+'20191225.v01 (using entries in the PDB archive December 25th 2019)' 
+'percentile rank calculation' 
+;numPDBids-relative-percentile-percent-rota-outliers,no-percentile-property,numPDBids-relative-percentile-clashscore,numPDBids-absolute-percentile-clashscore,absolute-percentile-clashscore,absolute-percentile-percent-rota-outliers,relative-percentile-clashscore,numPDBids-absolute-percentile-percent-rota-outliers,relative-percentile-percent-rota-outliers,numPDBids-relative-percentile-percent-rama-outliers,relative-percentile-percent-rama-outliers,absolute-percentile-percent-rama-outliers,numPDBids-absolute-percentile-percent-rama-outliers
+;
+9  nmrwriter           2.18 'geometric validation of nmr ensemble structure' 
+percent-rota-outliers,percent-rama-outliers,clashscore 
+10 cyrange             
+;Kirchner and G\"{u}ntert (2011)
+;
+'domain identification of nmr ensemble structure' ? 
+11 nmrclust            'Kelley et al. (1996)' 
+'classification of nmr ensemble structure' ? 
+12 panav               'Wang et al. (2010)' 
+'nmr chemical shift validation and reference correction' ? 
+13 rci                 'v_1n_11_5_13_A (Berjanski et al., 2005)' 
+'random coil index prediction from nmr chemical shifts' ? 
+14 shiftchecker        2.18 'nmr chemical shift validation' ? 
+# 
+loop_
+_pdbx_validate_close_contact.id 
+_pdbx_validate_close_contact.PDB_model_num 
+_pdbx_validate_close_contact.auth_asym_id_1 
+_pdbx_validate_close_contact.auth_comp_id_1 
+_pdbx_validate_close_contact.auth_seq_id_1 
+_pdbx_validate_close_contact.auth_atom_id_1 
+_pdbx_validate_close_contact.auth_asym_id_2 
+_pdbx_validate_close_contact.auth_comp_id_2 
+_pdbx_validate_close_contact.auth_seq_id_2 
+_pdbx_validate_close_contact.auth_atom_id_2 
+_pdbx_validate_close_contact.clash_magnitude 
+_pdbx_validate_close_contact.dist 
+1 5  A PRO 5  O    A VAL 9  HG23 0.60 1.95 
+2 8  A PRO 5  O    A VAL 9  HG23 0.44 2.13 
+3 9  A LEU 14 HD23 A CYS 15 N    0.47 2.24 
+4 10 A CYS 1  SG   A CYS 15 SG   0.45 3.15 
+5 10 A LEU 14 HD12 A CYS 15 N    0.44 2.28 
+6 12 A VAL 9  HG12 A GLN 10 OE1  0.53 2.03 
+7 13 A ALA 6  O    A VAL 9  HG12 0.45 2.12 
+8 16 A PRO 5  O    A VAL 9  HG23 0.50 2.06 
+9 18 A LEU 14 HD13 A CYS 15 N    0.46 2.26 
+# 

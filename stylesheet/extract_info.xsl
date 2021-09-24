@@ -1167,6 +1167,7 @@ Restraint type, <xsl:value-of select="@restraint_type"/>, is not listed in XSLT 
   </xsl:template>
 
   <xsl:template match="distance_violations_in_models">
+    <xsl:if test="node()">
     <VRPTx:pdbx_nmr_distance_violation_modelCategory>
       <xsl:for-each select="distance_violations_in_model">
         <VRPTx:pdbx_nmr_distance_violation_model PDB_model_num="{@model}">
@@ -1207,9 +1208,11 @@ Distance restraint type, <xsl:value-of select="@dist_rest_type"/>, is not listed
         </VRPTx:pdbx_nmr_distance_violation_model>
       </xsl:for-each>
     </VRPTx:pdbx_nmr_distance_violation_modelCategory>
+    </xsl:if>
   </xsl:template>
 
   <xsl:template match="distance_violations_in_ensemble">
+    <xsl:if test="node()">
     <VRPTx:pdbx_nmr_distance_violation_ensembleCategory>
       <xsl:for-each select="distance_violation_in_ensemble">
         <VRPTx:pdbx_nmr_distance_violation_ensemble fraction_ensemble_size="{@fraction_of_ensemble_count}">
@@ -1254,9 +1257,11 @@ Distance restraint type, <xsl:value-of select="@dist_rest_type"/>, is not listed
         </VRPTx:pdbx_nmr_distance_violation_ensemble>
       </xsl:for-each>
     </VRPTx:pdbx_nmr_distance_violation_ensembleCategory>
+    </xsl:if>
   </xsl:template>
 
   <xsl:template match="most_violated_distance_restraints">
+    <xsl:if test="node()">
     <xsl:variable name="violated_distance_restraints"><xsl:value-of select="../violated_distance_restraints"/></xsl:variable>
     <VRPTx:pdbx_nmr_distance_violation_pluralCategory>
       <xsl:for-each select="most_violated_distance_restraint">
@@ -1345,9 +1350,11 @@ Distance restraint type, <xsl:value-of select="@dist_rest_type"/>, is not listed
         </VRPTx:pdbx_nmr_distance_violation_plural>
       </xsl:for-each>
     </VRPTx:pdbx_nmr_distance_violation_pluralCategory>
+    </xsl:if>
   </xsl:template>
 
   <xsl:template match="violated_distance_restraints">
+    <xsl:if test="node()">
     <VRPTx:pdbx_nmr_distance_violationCategory>
       <xsl:for-each select="violated_distance_restraint">
         <VRPTx:pdbx_nmr_distance_violation ordinal="{position()}">
@@ -1425,6 +1432,7 @@ Distance restraint type, <xsl:value-of select="@dist_rest_type"/>, is not listed
         </VRPTx:pdbx_nmr_distance_violation>
       </xsl:for-each>
     </VRPTx:pdbx_nmr_distance_violationCategory>
+    </xsl:if>
   </xsl:template>
 
   <!-- NMR restraint validation: dihedralangle_restraints_analysis -->
@@ -1536,6 +1544,7 @@ Restraint type, <xsl:value-of select="@restraint_type"/>, is not listed in XSLT 
   </xsl:template>
 
   <xsl:template match="dihedralangle_violations_in_models">
+    <xsl:if test="node()">
     <VRPTx:pdbx_nmr_dihedral_angle_violation_modelCategory>
       <xsl:for-each select="dihedralangle_violations_in_model">
         <VRPTx:pdbx_nmr_dihedral_angle_violation_model PDB_model_num="{@model}">
@@ -1633,9 +1642,11 @@ Dihedral angle restraint type, <xsl:value-of select="@ang_rest_type"/>, is not l
         </VRPTx:pdbx_nmr_dihedral_angle_violation_model>
       </xsl:for-each>
     </VRPTx:pdbx_nmr_dihedral_angle_violation_modelCategory>
+    </xsl:if>
   </xsl:template>
 
   <xsl:template match="dihedralangle_violations_in_ensemble">
+    <xsl:if test="node()">
     <VRPTx:pdbx_nmr_dihedral_angle_violation_ensembleCategory>
       <xsl:for-each select="dihedralangle_violation_in_ensemble">
         <VRPTx:pdbx_nmr_dihedral_angle_violation_ensemble fraction_ensemble_size="{@fraction_of_ensemble_count}">
@@ -1737,9 +1748,11 @@ Dihedral angle restraint type, <xsl:value-of select="@ang_rest_type"/>, is not l
         </VRPTx:pdbx_nmr_dihedral_angle_violation_ensemble>
       </xsl:for-each>
     </VRPTx:pdbx_nmr_dihedral_angle_violation_ensembleCategory>
+    </xsl:if>
   </xsl:template>
 
   <xsl:template match="most_violated_dihedralangle_restraints">
+    <xsl:if test="node()">
     <VRPTx:pdbx_nmr_dihedral_angle_violation_pluralCategory>
       <xsl:for-each select="most_violated_dihedralangle_restraint">
         <VRPTx:pdbx_nmr_dihedral_angle_violation_plural ordinal="{position()}">
@@ -1797,9 +1810,11 @@ Dihedral angle restraint type, <xsl:value-of select="@ang_rest_type"/>, is not l
         </VRPTx:pdbx_nmr_dihedral_angle_violation_plural>
       </xsl:for-each>
     </VRPTx:pdbx_nmr_dihedral_angle_violation_pluralCategory>
+    </xsl:if>
   </xsl:template>
 
   <xsl:template match="violated_dihedralangle_restraints">
+    <xsl:if test="node()">
     <VRPTx:pdbx_nmr_dihedral_angle_violationCategory>
       <xsl:for-each select="violated_dihedralangle_restraint">
         <VRPTx:pdbx_nmr_dihedral_angle_violation ordinal="{position()}">
@@ -1855,6 +1870,7 @@ Dihedral angle restraint type, <xsl:value-of select="@ang_rest_type"/>, is not l
         </VRPTx:pdbx_nmr_dihedral_angle_violation>
       </xsl:for-each>
     </VRPTx:pdbx_nmr_dihedral_angle_violationCategory>
+    </xsl:if>
   </xsl:template>
 
   <xsl:template match="programs">

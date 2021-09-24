@@ -1,0 +1,817 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wwPDB-validation-information xmlns:PDBx="http://pdbml.pdb.org/schema/pdbx-v50.xsd" xmlns:VRPTx="http://pdbml.pdb.org/schema/pdbx-validation-v4.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://wwpdb.org/validation/schema/wwpdb_validation_v5.01.xsd">
+  <Entry pdbid="7LQS" XMLcreationDate="2021-04-12" PDB-deposition-date="2021-02-15" PDB-revision-number="1" PDB-revision-date="2021-04-21" PDB-resolution="NotAvailable" PDB-resolution-low="NotAvailable" protein-DNA-RNA-entities="1" angles_rmsz="0.30" bonds_rmsz="0.18" num_angles_rmsz="2920" num_bonds_rmsz="2160" clashscore="2.13" clashscore-full-length="2.25" percent-rama-outliers="0.77" percent-rama-outliers-full-length="0.77" percent-rota-outliers="11.15" percent-rota-outliers-full-length="12.14" nmr_models_consistency_flag="False" cyrange_error="success" nmrclust_error="success" nmrclust_representative_model="3" medoid_model="3" nmrclust_number_of_outliers="1" nmrclust_number_of_models="20" nmrclust_number_of_clusters="4" cyrange_number_of_domains="1" chemical_shift_completeness="76.00" chemical_shift_completeness_full_length="72.15" cs_only="no" percentilebins="all,nmr" absolute-percentile-clashscore="77.2" numPDBids-absolute-percentile-clashscore="12864" absolute-percentile-percent-rama-outliers="70.7" numPDBids-absolute-percentile-percent-rama-outliers="11451" absolute-percentile-percent-rota-outliers="53.1" numPDBids-absolute-percentile-percent-rota-outliers="11428" attemptedValidationSteps="validation-pipeline,molprobity,mogul,buster-report,coreclust,coreclust,chemicalshifts,percentiles,nmrwriter" cyrange_version="Kirchner and G\&quot;{u}ntert (2011)" nmrclust_version="Kelley et al. (1996)" panav_version="Wang et al. (2010)" rci_version="v_1n_11_5_13_A (Berjanski et al., 2005)" shiftchecker_version="2.18">
+    <chemical_shift_list file_id="1" file_name="working_cs.cif" block_name="nef_chemical_shift_list_dcic.prot" list_id="1" type="full" number_of_errors_while_mapping="0" number_of_warnings_while_mapping="0" number_of_mapped_shifts="124" number_of_parsed_shifts="124" total_number_of_shifts="124" number_of_unparsed_shifts="0">
+      <random_coil_index chain="A" rescode="GLN" resnum="10" value="0.174"/>
+      <random_coil_index chain="A" rescode="HIS" resnum="11" value="0.156"/>
+      <random_coil_index chain="A" rescode="SER" resnum="12" value="0.183"/>
+      <random_coil_index chain="A" rescode="ASP" resnum="13" value="0.272"/>
+      <random_coil_index chain="A" rescode="LEU" resnum="14" value="0.371"/>
+      <random_coil_index chain="A" rescode="CYS" resnum="15" value="0.438"/>
+      <random_coil_index chain="A" rescode="CYS" resnum="2" value="0.130"/>
+      <random_coil_index chain="A" rescode="SER" resnum="3" value="0.119"/>
+      <random_coil_index chain="A" rescode="ASN" resnum="4" value="0.103"/>
+      <random_coil_index chain="A" rescode="PRO" resnum="5" value="0.076"/>
+      <random_coil_index chain="A" rescode="ALA" resnum="6" value="0.059"/>
+      <random_coil_index chain="A" rescode="CYS" resnum="7" value="0.049"/>
+      <random_coil_index chain="A" rescode="GLN" resnum="8" value="0.104"/>
+      <random_coil_index chain="A" rescode="VAL" resnum="9" value="0.138"/>
+      <referencing_offset atom="C" value="0.00" uncertainty="0.50" precision="0.00" number_of_measurements="0"/>
+      <referencing_offset atom="CA" value="0.00" uncertainty="0.50" precision="0.00" number_of_measurements="14"/>
+      <referencing_offset atom="CB" value="0.00" uncertainty="0.50" precision="0.00" number_of_measurements="12"/>
+      <referencing_offset atom="N" value="0.00" uncertainty="0.50" precision="0.00" number_of_measurements="11"/>
+      <assignment_completeness_well_defined type="stereomethyl" element="stereomethyl" number_of_assigned_shifts="2" number_of_shifts="2" number_of_unassigned_shifts="0"/>
+      <assignment_completeness_well_defined type="overall" element="Total" number_of_assigned_shifts="114" number_of_shifts="150" number_of_unassigned_shifts="36"/>
+      <assignment_completeness_well_defined type="backbone" element="Total" number_of_assigned_shifts="51" number_of_shifts="68" number_of_unassigned_shifts="17"/>
+      <assignment_completeness_well_defined type="sidechain" element="Total" number_of_assigned_shifts="59" number_of_shifts="75" number_of_unassigned_shifts="16"/>
+      <assignment_completeness_well_defined type="aromatic" element="Total" number_of_assigned_shifts="4" number_of_shifts="7" number_of_unassigned_shifts="3"/>
+      <assignment_completeness_well_defined type="overall" element="H" number_of_assigned_shifts="65" number_of_shifts="76" number_of_unassigned_shifts="11"/>
+      <assignment_completeness_well_defined type="backbone" element="H" number_of_assigned_shifts="26" number_of_shifts="27" number_of_unassigned_shifts="1"/>
+      <assignment_completeness_well_defined type="sidechain" element="H" number_of_assigned_shifts="37" number_of_shifts="45" number_of_unassigned_shifts="8"/>
+      <assignment_completeness_well_defined type="aromatic" element="H" number_of_assigned_shifts="2" number_of_shifts="4" number_of_unassigned_shifts="2"/>
+      <assignment_completeness_well_defined type="overall" element="C" number_of_assigned_shifts="37" number_of_shifts="57" number_of_unassigned_shifts="20"/>
+      <assignment_completeness_well_defined type="backbone" element="C" number_of_assigned_shifts="14" number_of_shifts="28" number_of_unassigned_shifts="14"/>
+      <assignment_completeness_well_defined type="sidechain" element="C" number_of_assigned_shifts="21" number_of_shifts="27" number_of_unassigned_shifts="6"/>
+      <assignment_completeness_well_defined type="aromatic" element="C" number_of_assigned_shifts="2" number_of_shifts="2" number_of_unassigned_shifts="0"/>
+      <assignment_completeness_well_defined type="overall" element="N" number_of_assigned_shifts="12" number_of_shifts="17" number_of_unassigned_shifts="5"/>
+      <assignment_completeness_well_defined type="backbone" element="N" number_of_assigned_shifts="11" number_of_shifts="13" number_of_unassigned_shifts="2"/>
+      <assignment_completeness_well_defined type="sidechain" element="N" number_of_assigned_shifts="1" number_of_shifts="3" number_of_unassigned_shifts="2"/>
+      <assignment_completeness_well_defined type="aromatic" element="N" number_of_assigned_shifts="0" number_of_shifts="1" number_of_unassigned_shifts="1"/>
+      <assignment_completeness_full_length type="stereomethyl" element="stereomethyl" number_of_assigned_shifts="2" number_of_shifts="2" number_of_unassigned_shifts="0"/>
+      <assignment_completeness_full_length type="overall" element="Total" number_of_assigned_shifts="114" number_of_shifts="158" number_of_unassigned_shifts="44"/>
+      <assignment_completeness_full_length type="backbone" element="Total" number_of_assigned_shifts="51" number_of_shifts="73" number_of_unassigned_shifts="22"/>
+      <assignment_completeness_full_length type="sidechain" element="Total" number_of_assigned_shifts="59" number_of_shifts="78" number_of_unassigned_shifts="19"/>
+      <assignment_completeness_full_length type="aromatic" element="Total" number_of_assigned_shifts="4" number_of_shifts="7" number_of_unassigned_shifts="3"/>
+      <assignment_completeness_full_length type="overall" element="H" number_of_assigned_shifts="65" number_of_shifts="80" number_of_unassigned_shifts="15"/>
+      <assignment_completeness_full_length type="backbone" element="H" number_of_assigned_shifts="26" number_of_shifts="29" number_of_unassigned_shifts="3"/>
+      <assignment_completeness_full_length type="sidechain" element="H" number_of_assigned_shifts="37" number_of_shifts="47" number_of_unassigned_shifts="10"/>
+      <assignment_completeness_full_length type="aromatic" element="H" number_of_assigned_shifts="2" number_of_shifts="4" number_of_unassigned_shifts="2"/>
+      <assignment_completeness_full_length type="overall" element="C" number_of_assigned_shifts="37" number_of_shifts="60" number_of_unassigned_shifts="23"/>
+      <assignment_completeness_full_length type="backbone" element="C" number_of_assigned_shifts="14" number_of_shifts="30" number_of_unassigned_shifts="16"/>
+      <assignment_completeness_full_length type="sidechain" element="C" number_of_assigned_shifts="21" number_of_shifts="28" number_of_unassigned_shifts="7"/>
+      <assignment_completeness_full_length type="aromatic" element="C" number_of_assigned_shifts="2" number_of_shifts="2" number_of_unassigned_shifts="0"/>
+      <assignment_completeness_full_length type="overall" element="N" number_of_assigned_shifts="12" number_of_shifts="18" number_of_unassigned_shifts="6"/>
+      <assignment_completeness_full_length type="backbone" element="N" number_of_assigned_shifts="11" number_of_shifts="14" number_of_unassigned_shifts="3"/>
+      <assignment_completeness_full_length type="sidechain" element="N" number_of_assigned_shifts="1" number_of_shifts="3" number_of_unassigned_shifts="2"/>
+      <assignment_completeness_full_length type="aromatic" element="N" number_of_assigned_shifts="0" number_of_shifts="1" number_of_unassigned_shifts="1"/>
+    </chemical_shift_list>
+  </Entry>
+  <Model model="1" nmrclust_cluster_id="4" nmrclust_representative="True"/>
+  <Model model="2" nmrclust_cluster_id="3"/>
+  <Model model="3" nmrclust_cluster_id="1" nmrclust_representative="True"/>
+  <Model model="4" nmrclust_cluster_id="1"/>
+  <Model model="5" nmrclust_cluster_id="3" nmrclust_representative="True"/>
+  <Model model="6" nmrclust_cluster_id="1"/>
+  <Model model="7" nmrclust_cluster_id="4"/>
+  <Model model="8" nmrclust_cluster_id="1"/>
+  <Model model="9" nmrclust_cluster_id="outlier"/>
+  <Model model="10" nmrclust_cluster_id="1"/>
+  <Model model="11" nmrclust_cluster_id="3"/>
+  <Model model="12" nmrclust_cluster_id="2"/>
+  <Model model="13" nmrclust_cluster_id="2" nmrclust_representative="True"/>
+  <Model model="14" nmrclust_cluster_id="1"/>
+  <Model model="15" nmrclust_cluster_id="2"/>
+  <Model model="16" nmrclust_cluster_id="2"/>
+  <Model model="17" nmrclust_cluster_id="1"/>
+  <Model model="18" nmrclust_cluster_id="2"/>
+  <Model model="19" nmrclust_cluster_id="4"/>
+  <Model model="20" nmrclust_cluster_id="1"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="CYS" seq="1" resnum="1" icode="" altcode="" rota="p" validate="False"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="CYS" seq="2" resnum="2" icode="" altcode="" phi="-172.3" psi="169.6" rama="Favored" rota="OUTLIER" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="SER" seq="3" resnum="3" icode="" altcode="" phi="-94.1" psi="44.9" rama="Allowed" rota="p" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="ASN" seq="4" resnum="4" icode="" altcode="" phi="-109.5" psi="160.6" rama="Favored" rota="m120" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="PRO" seq="5" resnum="5" icode="" altcode="" phi="-69.8" psi="-33.2" rama="Favored" rota="Cg_endo" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="ALA" seq="6" resnum="6" icode="" altcode="" phi="-84.2" psi="-43.2" rama="Favored" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="CYS" seq="7" resnum="7" icode="" altcode="" phi="-52.4" psi="-46.6" rama="Favored" rota="OUTLIER" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="GLN" seq="8" resnum="8" icode="" altcode="" phi="-60.1" psi="-37.5" rama="Favored" rota="pt20" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="VAL" seq="9" resnum="9" icode="" altcode="" phi="-71.4" psi="-47.1" rama="Favored" rota="t" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="GLN" seq="10" resnum="10" icode="" altcode="" phi="-124.5" psi="123.9" rama="Favored" rota="mm-40" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="HIS" seq="11" resnum="11" icode="" altcode="" phi="-62.7" psi="94.6" rama="Allowed" rota="t60" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="SER" seq="12" resnum="12" icode="" altcode="" phi="-135.2" psi="106.1" rama="Favored" rota="p" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="ASP" seq="13" resnum="13" icode="" altcode="" phi="-75.9" psi="72.7" rama="Favored" rota="p-10" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="LEU" seq="14" resnum="14" icode="" altcode="" phi="-88.9" psi="-38.8" rama="Favored" rota="tp" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="CYS" seq="15" resnum="15" icode="" altcode="" rota="m" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="2" chain="A" said="A" ent="1" resname="CYS" seq="1" resnum="1" icode="" altcode="" rota="t" validate="False"/>
+  <ModelledSubgroup model="2" chain="A" said="A" ent="1" resname="CYS" seq="2" resnum="2" icode="" altcode="" phi="-149.7" psi="-47.0" rama="Allowed" rota="t" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="2" chain="A" said="A" ent="1" resname="SER" seq="3" resnum="3" icode="" altcode="" phi="-120.4" psi="36.4" rama="Favored" rota="m" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="2" chain="A" said="A" ent="1" resname="ASN" seq="4" resnum="4" icode="" altcode="" phi="-100.5" psi="160.6" rama="Favored" rota="m120" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="2" chain="A" said="A" ent="1" resname="PRO" seq="5" resnum="5" icode="" altcode="" phi="-69.8" psi="-47.8" rama="Allowed" rota="Cg_endo" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="2" chain="A" said="A" ent="1" resname="ALA" seq="6" resnum="6" icode="" altcode="" phi="-67.8" psi="-42.1" rama="Favored" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="2" chain="A" said="A" ent="1" resname="CYS" seq="7" resnum="7" icode="" altcode="" phi="-52.8" psi="-40.6" rama="Favored" rota="t" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="2" chain="A" said="A" ent="1" resname="GLN" seq="8" resnum="8" icode="" altcode="" phi="-56.0" psi="-36.1" rama="Favored" rota="tt0" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="2" chain="A" said="A" ent="1" resname="VAL" seq="9" resnum="9" icode="" altcode="" phi="-56.2" psi="-38.2" rama="Favored" rota="t" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="2" chain="A" said="A" ent="1" resname="GLN" seq="10" resnum="10" icode="" altcode="" phi="-87.2" psi="149.3" rama="Favored" rota="mt-30" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="2" chain="A" said="A" ent="1" resname="HIS" seq="11" resnum="11" icode="" altcode="" phi="-108.7" psi="40.2" rama="Allowed" rota="t60" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="2" chain="A" said="A" ent="1" resname="SER" seq="12" resnum="12" icode="" altcode="" phi="-128.3" psi="37.3" rama="Favored" rota="OUTLIER" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="2" chain="A" said="A" ent="1" resname="ASP" seq="13" resnum="13" icode="" altcode="" phi="-163.8" psi="109.0" rama="Allowed" rota="m-20" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="2" chain="A" said="A" ent="1" resname="LEU" seq="14" resnum="14" icode="" altcode="" phi="-92.1" psi="138.9" rama="Favored" rota="tt" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="2" chain="A" said="A" ent="1" resname="CYS" seq="15" resnum="15" icode="" altcode="" rota="t" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="3" chain="A" said="A" ent="1" resname="CYS" seq="1" resnum="1" icode="" altcode="" rota="t" validate="False"/>
+  <ModelledSubgroup model="3" chain="A" said="A" ent="1" resname="CYS" seq="2" resnum="2" icode="" altcode="" phi="-131.9" psi="-49.2" rama="Allowed" rota="OUTLIER" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="3" chain="A" said="A" ent="1" resname="SER" seq="3" resnum="3" icode="" altcode="" phi="-146.1" psi="64.1" rama="Allowed" rota="m" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="3" chain="A" said="A" ent="1" resname="ASN" seq="4" resnum="4" icode="" altcode="" phi="-120.4" psi="160.6" rama="Favored" rota="m-80" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="3" chain="A" said="A" ent="1" resname="PRO" seq="5" resnum="5" icode="" altcode="" phi="-69.7" psi="-47.5" rama="Allowed" rota="Cg_endo" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="3" chain="A" said="A" ent="1" resname="ALA" seq="6" resnum="6" icode="" altcode="" phi="-61.8" psi="-36.0" rama="Favored" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="3" chain="A" said="A" ent="1" resname="CYS" seq="7" resnum="7" icode="" altcode="" phi="-81.3" psi="-36.2" rama="Favored" rota="OUTLIER" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="3" chain="A" said="A" ent="1" resname="GLN" seq="8" resnum="8" icode="" altcode="" phi="-52.2" psi="-52.8" rama="Favored" rota="tt0" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="3" chain="A" said="A" ent="1" resname="VAL" seq="9" resnum="9" icode="" altcode="" phi="-66.5" psi="-35.5" rama="Favored" rota="p" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="3" chain="A" said="A" ent="1" resname="GLN" seq="10" resnum="10" icode="" altcode="" phi="-62.6" psi="168.9" rama="Favored" rota="tt0" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="3" chain="A" said="A" ent="1" resname="HIS" seq="11" resnum="11" icode="" altcode="" phi="-91.2" psi="49.3" rama="Allowed" rota="p80" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="3" chain="A" said="A" ent="1" resname="SER" seq="12" resnum="12" icode="" altcode="" phi="-125.9" psi="75.0" rama="Allowed" rota="p" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="3" chain="A" said="A" ent="1" resname="ASP" seq="13" resnum="13" icode="" altcode="" phi="-68.3" psi="-52.4" rama="Favored" rota="t70" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="3" chain="A" said="A" ent="1" resname="LEU" seq="14" resnum="14" icode="" altcode="" phi="-54.5" psi="131.7" rama="Favored" rota="mt" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="3" chain="A" said="A" ent="1" resname="CYS" seq="15" resnum="15" icode="" altcode="" rota="t" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="4" chain="A" said="A" ent="1" resname="CYS" seq="1" resnum="1" icode="" altcode="" rota="OUTLIER" validate="False"/>
+  <ModelledSubgroup model="4" chain="A" said="A" ent="1" resname="CYS" seq="2" resnum="2" icode="" altcode="" phi="-103.5" psi="-62.1" rama="Allowed" rota="OUTLIER" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="4" chain="A" said="A" ent="1" resname="SER" seq="3" resnum="3" icode="" altcode="" phi="-125.8" psi="53.1" rama="Allowed" rota="m" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="4" chain="A" said="A" ent="1" resname="ASN" seq="4" resnum="4" icode="" altcode="" phi="-100.8" psi="160.6" rama="Favored" rota="OUTLIER" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="4" chain="A" said="A" ent="1" resname="PRO" seq="5" resnum="5" icode="" altcode="" phi="-69.7" psi="-45.2" rama="Allowed" rota="Cg_endo" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="4" chain="A" said="A" ent="1" resname="ALA" seq="6" resnum="6" icode="" altcode="" phi="-72.6" psi="-45.3" rama="Favored" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="4" chain="A" said="A" ent="1" resname="CYS" seq="7" resnum="7" icode="" altcode="" phi="-55.0" psi="-36.6" rama="Favored" rota="t" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="4" chain="A" said="A" ent="1" resname="GLN" seq="8" resnum="8" icode="" altcode="" phi="-60.9" psi="-36.2" rama="Favored" rota="tm0?" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="4" chain="A" said="A" ent="1" resname="VAL" seq="9" resnum="9" icode="" altcode="" phi="-52.3" psi="-36.0" rama="Favored" rota="t" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="4" chain="A" said="A" ent="1" resname="GLN" seq="10" resnum="10" icode="" altcode="" phi="-78.8" psi="172.9" rama="Favored" rota="mt-30" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="4" chain="A" said="A" ent="1" resname="HIS" seq="11" resnum="11" icode="" altcode="" phi="-90.3" psi="-38.9" rama="Favored" rota="m170" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="4" chain="A" said="A" ent="1" resname="SER" seq="12" resnum="12" icode="" altcode="" phi="-77.8" psi="76.7" rama="Favored" rota="t" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="4" chain="A" said="A" ent="1" resname="ASP" seq="13" resnum="13" icode="" altcode="" phi="-127.6" psi="44.7" rama="Favored" rota="t0" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="4" chain="A" said="A" ent="1" resname="LEU" seq="14" resnum="14" icode="" altcode="" phi="-98.0" psi="114.1" rama="Favored" rota="mm?" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="4" chain="A" said="A" ent="1" resname="CYS" seq="15" resnum="15" icode="" altcode="" rota="m" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="5" chain="A" said="A" ent="1" resname="CYS" seq="1" resnum="1" icode="" altcode="" rota="t" validate="False"/>
+  <ModelledSubgroup model="5" chain="A" said="A" ent="1" resname="CYS" seq="2" resnum="2" icode="" altcode="" phi="-52.0" psi="-36.1" rama="Favored" rota="m" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="5" chain="A" said="A" ent="1" resname="SER" seq="3" resnum="3" icode="" altcode="" phi="-52.0" psi="-36.3" rama="Favored" rota="m" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="5" chain="A" said="A" ent="1" resname="ASN" seq="4" resnum="4" icode="" altcode="" phi="-88.5" psi="160.5" rama="Favored" rota="m-20" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="5" chain="A" said="A" ent="1" resname="PRO" seq="5" resnum="5" icode="" altcode="" phi="-69.7" psi="-34.6" rama="Favored" rota="Cg_endo" cyrange_domain_id="1" validate="True">
+    <clash cid="1" atom="O" dist="1.95" clashmag="0.60"/>
+  </ModelledSubgroup>
+  <ModelledSubgroup model="5" chain="A" said="A" ent="1" resname="ALA" seq="6" resnum="6" icode="" altcode="" phi="-51.6" psi="-52.5" rama="Favored" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="5" chain="A" said="A" ent="1" resname="CYS" seq="7" resnum="7" icode="" altcode="" phi="-69.1" psi="-36.1" rama="Favored" rota="OUTLIER" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="5" chain="A" said="A" ent="1" resname="GLN" seq="8" resnum="8" icode="" altcode="" phi="-62.3" psi="-39.4" rama="Favored" rota="tt0" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="5" chain="A" said="A" ent="1" resname="VAL" seq="9" resnum="9" icode="" altcode="" phi="-62.8" psi="-48.6" rama="Favored" rota="t" cyrange_domain_id="1" validate="True">
+    <clash cid="1" atom="HG23" dist="1.95" clashmag="0.60"/>
+  </ModelledSubgroup>
+  <ModelledSubgroup model="5" chain="A" said="A" ent="1" resname="GLN" seq="10" resnum="10" icode="" altcode="" phi="-73.2" psi="146.2" rama="Favored" rota="mt-30" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="5" chain="A" said="A" ent="1" resname="HIS" seq="11" resnum="11" icode="" altcode="" phi="-118.2" psi="42.1" rama="Favored" rota="t60" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="5" chain="A" said="A" ent="1" resname="SER" seq="12" resnum="12" icode="" altcode="" phi="-133.3" psi="37.5" rama="Favored" rota="m" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="5" chain="A" said="A" ent="1" resname="ASP" seq="13" resnum="13" icode="" altcode="" phi="-173.8" psi="113.5" rama="Allowed" rota="t70" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="5" chain="A" said="A" ent="1" resname="LEU" seq="14" resnum="14" icode="" altcode="" phi="-108.7" psi="151.2" rama="Favored" rota="pp" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="5" chain="A" said="A" ent="1" resname="CYS" seq="15" resnum="15" icode="" altcode="" rota="p" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="6" chain="A" said="A" ent="1" resname="CYS" seq="1" resnum="1" icode="" altcode="" rota="m" validate="False"/>
+  <ModelledSubgroup model="6" chain="A" said="A" ent="1" resname="CYS" seq="2" resnum="2" icode="" altcode="" phi="-92.2" psi="-36.4" rama="Favored" rota="t" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="6" chain="A" said="A" ent="1" resname="SER" seq="3" resnum="3" icode="" altcode="" phi="-176.6" psi="85.0" rama="OUTLIER" rota="p" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="6" chain="A" said="A" ent="1" resname="ASN" seq="4" resnum="4" icode="" altcode="" phi="-140.8" psi="160.5" rama="Favored" rota="OUTLIER" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="6" chain="A" said="A" ent="1" resname="PRO" seq="5" resnum="5" icode="" altcode="" phi="-69.7" psi="-48.4" rama="Allowed" rota="Cg_endo" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="6" chain="A" said="A" ent="1" resname="ALA" seq="6" resnum="6" icode="" altcode="" phi="-54.8" psi="-36.2" rama="Favored" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="6" chain="A" said="A" ent="1" resname="CYS" seq="7" resnum="7" icode="" altcode="" phi="-85.9" psi="-36.1" rama="Favored" rota="OUTLIER" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="6" chain="A" said="A" ent="1" resname="GLN" seq="8" resnum="8" icode="" altcode="" phi="-52.0" psi="-52.7" rama="Favored" rota="tt0" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="6" chain="A" said="A" ent="1" resname="VAL" seq="9" resnum="9" icode="" altcode="" phi="-55.0" psi="-35.6" rama="Favored" rota="p" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="6" chain="A" said="A" ent="1" resname="GLN" seq="10" resnum="10" icode="" altcode="" phi="-80.5" psi="-179.3" rama="Favored" rota="mt-30" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="6" chain="A" said="A" ent="1" resname="HIS" seq="11" resnum="11" icode="" altcode="" phi="-95.3" psi="55.2" rama="Allowed" rota="m80" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="6" chain="A" said="A" ent="1" resname="SER" seq="12" resnum="12" icode="" altcode="" phi="-138.0" psi="107.6" rama="Favored" rota="t" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="6" chain="A" said="A" ent="1" resname="ASP" seq="13" resnum="13" icode="" altcode="" phi="-136.1" psi="89.3" rama="Favored" rota="m-20" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="6" chain="A" said="A" ent="1" resname="LEU" seq="14" resnum="14" icode="" altcode="" phi="-176.6" psi="125.0" rama="Allowed" rota="OUTLIER" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="6" chain="A" said="A" ent="1" resname="CYS" seq="15" resnum="15" icode="" altcode="" rota="m" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="7" chain="A" said="A" ent="1" resname="CYS" seq="1" resnum="1" icode="" altcode="" rota="t" validate="False"/>
+  <ModelledSubgroup model="7" chain="A" said="A" ent="1" resname="CYS" seq="2" resnum="2" icode="" altcode="" phi="-63.4" psi="169.7" rama="Favored" rota="OUTLIER" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="7" chain="A" said="A" ent="1" resname="SER" seq="3" resnum="3" icode="" altcode="" phi="-91.0" psi="55.6" rama="Favored" rota="p" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="7" chain="A" said="A" ent="1" resname="ASN" seq="4" resnum="4" icode="" altcode="" phi="-144.5" psi="160.5" rama="Favored" rota="m120" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="7" chain="A" said="A" ent="1" resname="PRO" seq="5" resnum="5" icode="" altcode="" phi="-69.8" psi="-35.0" rama="Favored" rota="Cg_endo" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="7" chain="A" said="A" ent="1" resname="ALA" seq="6" resnum="6" icode="" altcode="" phi="-53.6" psi="-37.6" rama="Favored" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="7" chain="A" said="A" ent="1" resname="CYS" seq="7" resnum="7" icode="" altcode="" phi="-80.8" psi="-36.3" rama="Favored" rota="t" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="7" chain="A" said="A" ent="1" resname="GLN" seq="8" resnum="8" icode="" altcode="" phi="-60.0" psi="-49.9" rama="Favored" rota="tm0?" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="7" chain="A" said="A" ent="1" resname="VAL" seq="9" resnum="9" icode="" altcode="" phi="-62.4" psi="-36.0" rama="Favored" rota="p" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="7" chain="A" said="A" ent="1" resname="GLN" seq="10" resnum="10" icode="" altcode="" phi="-153.9" psi="136.6" rama="Favored" rota="pt20" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="7" chain="A" said="A" ent="1" resname="HIS" seq="11" resnum="11" icode="" altcode="" phi="-93.2" psi="56.8" rama="Favored" rota="m80" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="7" chain="A" said="A" ent="1" resname="SER" seq="12" resnum="12" icode="" altcode="" phi="-127.3" psi="38.5" rama="Favored" rota="p" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="7" chain="A" said="A" ent="1" resname="ASP" seq="13" resnum="13" icode="" altcode="" phi="-166.0" psi="109.6" rama="Allowed" rota="t70" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="7" chain="A" said="A" ent="1" resname="LEU" seq="14" resnum="14" icode="" altcode="" phi="-96.3" psi="149.1" rama="Favored" rota="tp" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="7" chain="A" said="A" ent="1" resname="CYS" seq="15" resnum="15" icode="" altcode="" rota="p" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="8" chain="A" said="A" ent="1" resname="CYS" seq="1" resnum="1" icode="" altcode="" rota="OUTLIER" validate="False"/>
+  <ModelledSubgroup model="8" chain="A" said="A" ent="1" resname="CYS" seq="2" resnum="2" icode="" altcode="" phi="-52.0" psi="-36.7" rama="Favored" rota="t" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="8" chain="A" said="A" ent="1" resname="SER" seq="3" resnum="3" icode="" altcode="" phi="-153.7" psi="67.9" rama="Allowed" rota="m" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="8" chain="A" said="A" ent="1" resname="ASN" seq="4" resnum="4" icode="" altcode="" phi="-133.6" psi="160.5" rama="Favored" rota="m120" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="8" chain="A" said="A" ent="1" resname="PRO" seq="5" resnum="5" icode="" altcode="" phi="-69.8" psi="-48.3" rama="Allowed" rota="Cg_endo" cyrange_domain_id="1" validate="True">
+    <clash cid="2" atom="O" dist="2.13" clashmag="0.44"/>
+  </ModelledSubgroup>
+  <ModelledSubgroup model="8" chain="A" said="A" ent="1" resname="ALA" seq="6" resnum="6" icode="" altcode="" phi="-54.0" psi="-51.6" rama="Favored" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="8" chain="A" said="A" ent="1" resname="CYS" seq="7" resnum="7" icode="" altcode="" phi="-69.3" psi="-36.9" rama="Favored" rota="OUTLIER" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="8" chain="A" said="A" ent="1" resname="GLN" seq="8" resnum="8" icode="" altcode="" phi="-54.6" psi="-37.4" rama="Favored" rota="tt0" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="8" chain="A" said="A" ent="1" resname="VAL" seq="9" resnum="9" icode="" altcode="" phi="-51.8" psi="-46.6" rama="Favored" rota="t" cyrange_domain_id="1" validate="True">
+    <clash cid="2" atom="HG23" dist="2.13" clashmag="0.44"/>
+  </ModelledSubgroup>
+  <ModelledSubgroup model="8" chain="A" said="A" ent="1" resname="GLN" seq="10" resnum="10" icode="" altcode="" phi="-91.2" psi="174.7" rama="Favored" rota="pt20" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="8" chain="A" said="A" ent="1" resname="HIS" seq="11" resnum="11" icode="" altcode="" phi="-69.3" psi="94.5" rama="Allowed" rota="m170" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="8" chain="A" said="A" ent="1" resname="SER" seq="12" resnum="12" icode="" altcode="" phi="-114.2" psi="92.5" rama="Favored" rota="t" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="8" chain="A" said="A" ent="1" resname="ASP" seq="13" resnum="13" icode="" altcode="" phi="-54.6" psi="-71.6" rama="Allowed" rota="OUTLIER" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="8" chain="A" said="A" ent="1" resname="LEU" seq="14" resnum="14" icode="" altcode="" phi="-173.2" psi="155.6" rama="Favored" rota="tp" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="8" chain="A" said="A" ent="1" resname="CYS" seq="15" resnum="15" icode="" altcode="" rota="p" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="9" chain="A" said="A" ent="1" resname="CYS" seq="1" resnum="1" icode="" altcode="" rota="OUTLIER" validate="False"/>
+  <ModelledSubgroup model="9" chain="A" said="A" ent="1" resname="CYS" seq="2" resnum="2" icode="" altcode="" phi="-82.0" psi="-170.7" rama="Favored" rota="m" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="9" chain="A" said="A" ent="1" resname="SER" seq="3" resnum="3" icode="" altcode="" phi="-96.7" psi="36.2" rama="Allowed" rota="m" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="9" chain="A" said="A" ent="1" resname="ASN" seq="4" resnum="4" icode="" altcode="" phi="-117.4" psi="160.5" rama="Favored" rota="m120" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="9" chain="A" said="A" ent="1" resname="PRO" seq="5" resnum="5" icode="" altcode="" phi="-69.8" psi="-34.1" rama="Favored" rota="Cg_endo" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="9" chain="A" said="A" ent="1" resname="ALA" seq="6" resnum="6" icode="" altcode="" phi="-55.4" psi="-39.0" rama="Favored" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="9" chain="A" said="A" ent="1" resname="CYS" seq="7" resnum="7" icode="" altcode="" phi="-90.7" psi="-36.7" rama="Favored" rota="OUTLIER" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="9" chain="A" said="A" ent="1" resname="GLN" seq="8" resnum="8" icode="" altcode="" phi="-53.5" psi="-46.0" rama="Favored" rota="tt0" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="9" chain="A" said="A" ent="1" resname="VAL" seq="9" resnum="9" icode="" altcode="" phi="-56.9" psi="-37.7" rama="Favored" rota="p" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="9" chain="A" said="A" ent="1" resname="GLN" seq="10" resnum="10" icode="" altcode="" phi="-94.5" psi="174.0" rama="Favored" rota="pt20" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="9" chain="A" said="A" ent="1" resname="HIS" seq="11" resnum="11" icode="" altcode="" phi="-129.1" psi="-71.8" rama="Allowed" rota="m-70" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="9" chain="A" said="A" ent="1" resname="SER" seq="12" resnum="12" icode="" altcode="" phi="-81.2" psi="67.6" rama="Favored" rota="t" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="9" chain="A" said="A" ent="1" resname="ASP" seq="13" resnum="13" icode="" altcode="" phi="-165.4" psi="113.9" rama="Allowed" rota="m-20" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="9" chain="A" said="A" ent="1" resname="LEU" seq="14" resnum="14" icode="" altcode="" phi="-69.0" psi="151.6" rama="Favored" rota="tt" cyrange_domain_id="1" validate="True">
+    <clash cid="3" atom="HD23" dist="2.24" clashmag="0.47"/>
+  </ModelledSubgroup>
+  <ModelledSubgroup model="9" chain="A" said="A" ent="1" resname="CYS" seq="15" resnum="15" icode="" altcode="" rota="m" cyrange_domain_id="1" validate="True">
+    <clash cid="3" atom="N" dist="2.24" clashmag="0.47"/>
+  </ModelledSubgroup>
+  <ModelledSubgroup model="10" chain="A" said="A" ent="1" resname="CYS" seq="1" resnum="1" icode="" altcode="" rota="p" validate="False">
+    <clash cid="4" atom="SG" dist="3.15" clashmag="0.45"/>
+  </ModelledSubgroup>
+  <ModelledSubgroup model="10" chain="A" said="A" ent="1" resname="CYS" seq="2" resnum="2" icode="" altcode="" phi="-142.3" psi="-42.5" rama="Allowed" rota="m" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="10" chain="A" said="A" ent="1" resname="SER" seq="3" resnum="3" icode="" altcode="" phi="-96.7" psi="-64.9" rama="Allowed" rota="t" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="10" chain="A" said="A" ent="1" resname="ASN" seq="4" resnum="4" icode="" altcode="" phi="-115.4" psi="160.6" rama="Favored" rota="m120" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="10" chain="A" said="A" ent="1" resname="PRO" seq="5" resnum="5" icode="" altcode="" phi="-69.8" psi="-33.0" rama="Favored" rota="Cg_endo" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="10" chain="A" said="A" ent="1" resname="ALA" seq="6" resnum="6" icode="" altcode="" phi="-51.7" psi="-45.3" rama="Favored" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="10" chain="A" said="A" ent="1" resname="CYS" seq="7" resnum="7" icode="" altcode="" phi="-52.9" psi="-36.4" rama="Favored" rota="t" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="10" chain="A" said="A" ent="1" resname="GLN" seq="8" resnum="8" icode="" altcode="" phi="-53.8" psi="-38.4" rama="Favored" rota="tp-100" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="10" chain="A" said="A" ent="1" resname="VAL" seq="9" resnum="9" icode="" altcode="" phi="-70.8" psi="-39.1" rama="Favored" rota="t" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="10" chain="A" said="A" ent="1" resname="GLN" seq="10" resnum="10" icode="" altcode="" phi="-62.8" psi="169.2" rama="Favored" rota="tt0" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="10" chain="A" said="A" ent="1" resname="HIS" seq="11" resnum="11" icode="" altcode="" phi="-109.4" psi="53.8" rama="Allowed" rota="OUTLIER" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="10" chain="A" said="A" ent="1" resname="SER" seq="12" resnum="12" icode="" altcode="" phi="-139.3" psi="107.7" rama="Favored" rota="t" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="10" chain="A" said="A" ent="1" resname="ASP" seq="13" resnum="13" icode="" altcode="" phi="-103.0" psi="42.9" rama="Allowed" rota="t70" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="10" chain="A" said="A" ent="1" resname="LEU" seq="14" resnum="14" icode="" altcode="" phi="-58.6" psi="-36.1" rama="Favored" rota="pp" cyrange_domain_id="1" validate="True">
+    <clash cid="5" atom="HD12" dist="2.28" clashmag="0.44"/>
+  </ModelledSubgroup>
+  <ModelledSubgroup model="10" chain="A" said="A" ent="1" resname="CYS" seq="15" resnum="15" icode="" altcode="" rota="p" cyrange_domain_id="1" validate="True">
+    <clash cid="4" atom="SG" dist="3.15" clashmag="0.45"/>
+    <clash cid="5" atom="N" dist="2.28" clashmag="0.44"/>
+  </ModelledSubgroup>
+  <ModelledSubgroup model="11" chain="A" said="A" ent="1" resname="CYS" seq="1" resnum="1" icode="" altcode="" rota="p" validate="False"/>
+  <ModelledSubgroup model="11" chain="A" said="A" ent="1" resname="CYS" seq="2" resnum="2" icode="" altcode="" phi="-122.5" psi="-38.0" rama="Favored" rota="m" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="11" chain="A" said="A" ent="1" resname="SER" seq="3" resnum="3" icode="" altcode="" phi="-137.3" psi="83.8" rama="Favored" rota="p" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="11" chain="A" said="A" ent="1" resname="ASN" seq="4" resnum="4" icode="" altcode="" phi="-140.0" psi="160.6" rama="Favored" rota="OUTLIER" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="11" chain="A" said="A" ent="1" resname="PRO" seq="5" resnum="5" icode="" altcode="" phi="-69.7" psi="-35.7" rama="Favored" rota="Cg_endo" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="11" chain="A" said="A" ent="1" resname="ALA" seq="6" resnum="6" icode="" altcode="" phi="-87.2" psi="-35.4" rama="Favored" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="11" chain="A" said="A" ent="1" resname="CYS" seq="7" resnum="7" icode="" altcode="" phi="-51.9" psi="-48.6" rama="Favored" rota="t" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="11" chain="A" said="A" ent="1" resname="GLN" seq="8" resnum="8" icode="" altcode="" phi="-57.8" psi="-35.1" rama="Favored" rota="OUTLIER" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="11" chain="A" said="A" ent="1" resname="VAL" seq="9" resnum="9" icode="" altcode="" phi="-61.1" psi="-47.7" rama="Favored" rota="t" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="11" chain="A" said="A" ent="1" resname="GLN" seq="10" resnum="10" icode="" altcode="" phi="-102.0" psi="110.5" rama="Favored" rota="mt-30" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="11" chain="A" said="A" ent="1" resname="HIS" seq="11" resnum="11" icode="" altcode="" phi="-98.2" psi="41.0" rama="Allowed" rota="t-160" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="11" chain="A" said="A" ent="1" resname="SER" seq="12" resnum="12" icode="" altcode="" phi="-113.0" psi="43.6" rama="Allowed" rota="m" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="11" chain="A" said="A" ent="1" resname="ASP" seq="13" resnum="13" icode="" altcode="" phi="-174.8" psi="118.7" rama="Allowed" rota="t70" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="11" chain="A" said="A" ent="1" resname="LEU" seq="14" resnum="14" icode="" altcode="" phi="-52.1" psi="166.1" rama="Allowed" rota="mm?" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="11" chain="A" said="A" ent="1" resname="CYS" seq="15" resnum="15" icode="" altcode="" rota="t" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="12" chain="A" said="A" ent="1" resname="CYS" seq="1" resnum="1" icode="" altcode="" rota="OUTLIER" validate="False"/>
+  <ModelledSubgroup model="12" chain="A" said="A" ent="1" resname="CYS" seq="2" resnum="2" icode="" altcode="" phi="-93.8" psi="-64.3" rama="Allowed" rota="m" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="12" chain="A" said="A" ent="1" resname="SER" seq="3" resnum="3" icode="" altcode="" phi="-139.6" psi="84.1" rama="Allowed" rota="m" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="12" chain="A" said="A" ent="1" resname="ASN" seq="4" resnum="4" icode="" altcode="" phi="-158.6" psi="160.2" rama="Favored" rota="OUTLIER" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="12" chain="A" said="A" ent="1" resname="PRO" seq="5" resnum="5" icode="" altcode="" phi="-69.8" psi="-33.0" rama="Favored" rota="Cg_endo" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="12" chain="A" said="A" ent="1" resname="ALA" seq="6" resnum="6" icode="" altcode="" phi="-59.4" psi="-40.3" rama="Favored" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="12" chain="A" said="A" ent="1" resname="CYS" seq="7" resnum="7" icode="" altcode="" phi="-54.9" psi="-35.9" rama="Favored" rota="t" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="12" chain="A" said="A" ent="1" resname="GLN" seq="8" resnum="8" icode="" altcode="" phi="-51.9" psi="-36.0" rama="Favored" rota="tt0" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="12" chain="A" said="A" ent="1" resname="VAL" seq="9" resnum="9" icode="" altcode="" phi="-74.8" psi="-48.3" rama="Favored" rota="t" cyrange_domain_id="1" validate="True">
+    <clash cid="6" atom="HG12" dist="2.03" clashmag="0.53"/>
+  </ModelledSubgroup>
+  <ModelledSubgroup model="12" chain="A" said="A" ent="1" resname="GLN" seq="10" resnum="10" icode="" altcode="" phi="-118.6" psi="73.6" rama="Allowed" rota="mp0" cyrange_domain_id="1" validate="True">
+    <clash cid="6" atom="OE1" dist="2.03" clashmag="0.53"/>
+  </ModelledSubgroup>
+  <ModelledSubgroup model="12" chain="A" said="A" ent="1" resname="HIS" seq="11" resnum="11" icode="" altcode="" phi="-102.0" psi="106.8" rama="Favored" rota="t-80" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="12" chain="A" said="A" ent="1" resname="SER" seq="12" resnum="12" icode="" altcode="" phi="-108.4" psi="36.2" rama="Favored" rota="m" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="12" chain="A" said="A" ent="1" resname="ASP" seq="13" resnum="13" icode="" altcode="" phi="52.0" psi="49.6" rama="Favored" rota="t0" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="12" chain="A" said="A" ent="1" resname="LEU" seq="14" resnum="14" icode="" altcode="" phi="-172.6" psi="142.7" rama="Allowed" rota="tp" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="12" chain="A" said="A" ent="1" resname="CYS" seq="15" resnum="15" icode="" altcode="" rota="m" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="13" chain="A" said="A" ent="1" resname="CYS" seq="1" resnum="1" icode="" altcode="" rota="OUTLIER" validate="False"/>
+  <ModelledSubgroup model="13" chain="A" said="A" ent="1" resname="CYS" seq="2" resnum="2" icode="" altcode="" phi="-138.5" psi="-51.3" rama="Allowed" rota="m" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="13" chain="A" said="A" ent="1" resname="SER" seq="3" resnum="3" icode="" altcode="" phi="-122.6" psi="37.2" rama="Favored" rota="m" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="13" chain="A" said="A" ent="1" resname="ASN" seq="4" resnum="4" icode="" altcode="" phi="-119.5" psi="160.6" rama="Favored" rota="m-80" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="13" chain="A" said="A" ent="1" resname="PRO" seq="5" resnum="5" icode="" altcode="" phi="-69.7" psi="-35.9" rama="Favored" rota="Cg_endo" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="13" chain="A" said="A" ent="1" resname="ALA" seq="6" resnum="6" icode="" altcode="" phi="-59.6" psi="-35.6" rama="Favored" cyrange_domain_id="1" validate="True">
+    <clash cid="7" atom="O" dist="2.12" clashmag="0.45"/>
+  </ModelledSubgroup>
+  <ModelledSubgroup model="13" chain="A" said="A" ent="1" resname="CYS" seq="7" resnum="7" icode="" altcode="" phi="-91.2" psi="-35.0" rama="Favored" rota="OUTLIER" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="13" chain="A" said="A" ent="1" resname="GLN" seq="8" resnum="8" icode="" altcode="" phi="-51.6" psi="-36.1" rama="Favored" rota="tm0?" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="13" chain="A" said="A" ent="1" resname="VAL" seq="9" resnum="9" icode="" altcode="" phi="-51.4" psi="-33.7" rama="Favored" rota="p" cyrange_domain_id="1" validate="True">
+    <clash cid="7" atom="HG12" dist="2.12" clashmag="0.45"/>
+  </ModelledSubgroup>
+  <ModelledSubgroup model="13" chain="A" said="A" ent="1" resname="GLN" seq="10" resnum="10" icode="" altcode="" phi="-114.4" psi="134.0" rama="Favored" rota="mm-40" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="13" chain="A" said="A" ent="1" resname="HIS" seq="11" resnum="11" icode="" altcode="" phi="-123.4" psi="95.5" rama="Favored" rota="p-80" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="13" chain="A" said="A" ent="1" resname="SER" seq="12" resnum="12" icode="" altcode="" phi="-121.6" psi="36.5" rama="Favored" rota="m" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="13" chain="A" said="A" ent="1" resname="ASP" seq="13" resnum="13" icode="" altcode="" phi="52.0" psi="43.6" rama="Favored" rota="t0" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="13" chain="A" said="A" ent="1" resname="LEU" seq="14" resnum="14" icode="" altcode="" phi="-84.0" psi="-72.9" rama="Allowed" rota="tp" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="13" chain="A" said="A" ent="1" resname="CYS" seq="15" resnum="15" icode="" altcode="" rota="OUTLIER" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="14" chain="A" said="A" ent="1" resname="CYS" seq="1" resnum="1" icode="" altcode="" rota="m" validate="False"/>
+  <ModelledSubgroup model="14" chain="A" said="A" ent="1" resname="CYS" seq="2" resnum="2" icode="" altcode="" phi="-129.3" psi="-70.1" rama="Allowed" rota="t" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="14" chain="A" said="A" ent="1" resname="SER" seq="3" resnum="3" icode="" altcode="" phi="-155.6" psi="96.4" rama="Allowed" rota="m" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="14" chain="A" said="A" ent="1" resname="ASN" seq="4" resnum="4" icode="" altcode="" phi="-148.3" psi="160.6" rama="Favored" rota="m-20" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="14" chain="A" said="A" ent="1" resname="PRO" seq="5" resnum="5" icode="" altcode="" phi="-69.7" psi="-35.1" rama="Favored" rota="Cg_endo" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="14" chain="A" said="A" ent="1" resname="ALA" seq="6" resnum="6" icode="" altcode="" phi="-87.0" psi="-34.9" rama="Favored" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="14" chain="A" said="A" ent="1" resname="CYS" seq="7" resnum="7" icode="" altcode="" phi="-51.8" psi="-35.7" rama="Favored" rota="OUTLIER" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="14" chain="A" said="A" ent="1" resname="GLN" seq="8" resnum="8" icode="" altcode="" phi="-51.7" psi="-33.6" rama="Favored" rota="pt20" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="14" chain="A" said="A" ent="1" resname="VAL" seq="9" resnum="9" icode="" altcode="" phi="-56.9" psi="-44.3" rama="Favored" rota="t" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="14" chain="A" said="A" ent="1" resname="GLN" seq="10" resnum="10" icode="" altcode="" phi="-63.4" psi="163.3" rama="Favored" rota="OUTLIER" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="14" chain="A" said="A" ent="1" resname="HIS" seq="11" resnum="11" icode="" altcode="" phi="-71.4" psi="-37.3" rama="Favored" rota="t-80" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="14" chain="A" said="A" ent="1" resname="SER" seq="12" resnum="12" icode="" altcode="" phi="-96.2" psi="90.6" rama="Favored" rota="t" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="14" chain="A" said="A" ent="1" resname="ASP" seq="13" resnum="13" icode="" altcode="" phi="-96.4" psi="-36.1" rama="Favored" rota="p-10" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="14" chain="A" said="A" ent="1" resname="LEU" seq="14" resnum="14" icode="" altcode="" phi="-51.9" psi="137.1" rama="Favored" rota="mp" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="14" chain="A" said="A" ent="1" resname="CYS" seq="15" resnum="15" icode="" altcode="" rota="t" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="15" chain="A" said="A" ent="1" resname="CYS" seq="1" resnum="1" icode="" altcode="" rota="p" validate="False"/>
+  <ModelledSubgroup model="15" chain="A" said="A" ent="1" resname="CYS" seq="2" resnum="2" icode="" altcode="" phi="-51.5" psi="-41.8" rama="Favored" rota="p" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="15" chain="A" said="A" ent="1" resname="SER" seq="3" resnum="3" icode="" altcode="" phi="-106.6" psi="70.0" rama="Allowed" rota="t" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="15" chain="A" said="A" ent="1" resname="ASN" seq="4" resnum="4" icode="" altcode="" phi="-129.5" psi="160.5" rama="Favored" rota="OUTLIER" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="15" chain="A" said="A" ent="1" resname="PRO" seq="5" resnum="5" icode="" altcode="" phi="-69.8" psi="-48.3" rama="Allowed" rota="Cg_endo" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="15" chain="A" said="A" ent="1" resname="ALA" seq="6" resnum="6" icode="" altcode="" phi="-86.3" psi="-46.3" rama="Favored" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="15" chain="A" said="A" ent="1" resname="CYS" seq="7" resnum="7" icode="" altcode="" phi="-51.7" psi="-35.7" rama="Favored" rota="t" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="15" chain="A" said="A" ent="1" resname="GLN" seq="8" resnum="8" icode="" altcode="" phi="-51.7" psi="-35.9" rama="Favored" rota="tp60" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="15" chain="A" said="A" ent="1" resname="VAL" seq="9" resnum="9" icode="" altcode="" phi="-76.6" psi="-35.6" rama="Favored" rota="t" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="15" chain="A" said="A" ent="1" resname="GLN" seq="10" resnum="10" icode="" altcode="" phi="-81.2" psi="147.4" rama="Favored" rota="tt0" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="15" chain="A" said="A" ent="1" resname="HIS" seq="11" resnum="11" icode="" altcode="" phi="-85.1" psi="99.8" rama="Favored" rota="t-80" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="15" chain="A" said="A" ent="1" resname="SER" seq="12" resnum="12" icode="" altcode="" phi="-126.6" psi="104.8" rama="Favored" rota="p" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="15" chain="A" said="A" ent="1" resname="ASP" seq="13" resnum="13" icode="" altcode="" phi="-91.9" psi="47.2" rama="Allowed" rota="t70" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="15" chain="A" said="A" ent="1" resname="LEU" seq="14" resnum="14" icode="" altcode="" phi="-101.7" psi="-63.1" rama="Allowed" rota="tt" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="15" chain="A" said="A" ent="1" resname="CYS" seq="15" resnum="15" icode="" altcode="" rota="t" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="16" chain="A" said="A" ent="1" resname="CYS" seq="1" resnum="1" icode="" altcode="" rota="t" validate="False"/>
+  <ModelledSubgroup model="16" chain="A" said="A" ent="1" resname="CYS" seq="2" resnum="2" icode="" altcode="" phi="-52.0" psi="-36.2" rama="Favored" rota="m" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="16" chain="A" said="A" ent="1" resname="SER" seq="3" resnum="3" icode="" altcode="" phi="-52.0" psi="-36.2" rama="Favored" rota="p" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="16" chain="A" said="A" ent="1" resname="ASN" seq="4" resnum="4" icode="" altcode="" phi="-88.5" psi="160.6" rama="Favored" rota="m-20" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="16" chain="A" said="A" ent="1" resname="PRO" seq="5" resnum="5" icode="" altcode="" phi="-69.8" psi="-34.5" rama="Favored" rota="Cg_endo" cyrange_domain_id="1" validate="True">
+    <clash cid="8" atom="O" dist="2.06" clashmag="0.50"/>
+  </ModelledSubgroup>
+  <ModelledSubgroup model="16" chain="A" said="A" ent="1" resname="ALA" seq="6" resnum="6" icode="" altcode="" phi="-51.7" psi="-52.4" rama="Favored" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="16" chain="A" said="A" ent="1" resname="CYS" seq="7" resnum="7" icode="" altcode="" phi="-69.9" psi="-36.1" rama="Favored" rota="OUTLIER" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="16" chain="A" said="A" ent="1" resname="GLN" seq="8" resnum="8" icode="" altcode="" phi="-57.0" psi="-41.2" rama="Favored" rota="OUTLIER" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="16" chain="A" said="A" ent="1" resname="VAL" seq="9" resnum="9" icode="" altcode="" phi="-57.1" psi="-37.5" rama="Favored" rota="t" cyrange_domain_id="1" validate="True">
+    <clash cid="8" atom="HG23" dist="2.06" clashmag="0.50"/>
+  </ModelledSubgroup>
+  <ModelledSubgroup model="16" chain="A" said="A" ent="1" resname="GLN" seq="10" resnum="10" icode="" altcode="" phi="-81.8" psi="134.7" rama="Favored" rota="tp-100" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="16" chain="A" said="A" ent="1" resname="HIS" seq="11" resnum="11" icode="" altcode="" phi="-70.1" psi="92.5" rama="Allowed" rota="m170" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="16" chain="A" said="A" ent="1" resname="SER" seq="12" resnum="12" icode="" altcode="" phi="-117.4" psi="92.3" rama="Favored" rota="t" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="16" chain="A" said="A" ent="1" resname="ASP" seq="13" resnum="13" icode="" altcode="" phi="-57.8" psi="-60.0" rama="Favored" rota="t70" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="16" chain="A" said="A" ent="1" resname="LEU" seq="14" resnum="14" icode="" altcode="" phi="-78.3" psi="119.3" rama="Favored" rota="mt" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="16" chain="A" said="A" ent="1" resname="CYS" seq="15" resnum="15" icode="" altcode="" rota="t" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="17" chain="A" said="A" ent="1" resname="CYS" seq="1" resnum="1" icode="" altcode="" rota="m" validate="False"/>
+  <ModelledSubgroup model="17" chain="A" said="A" ent="1" resname="CYS" seq="2" resnum="2" icode="" altcode="" phi="-120.8" psi="-33.3" rama="Favored" rota="m" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="17" chain="A" said="A" ent="1" resname="SER" seq="3" resnum="3" icode="" altcode="" phi="-50.6" psi="-74.6" rama="OUTLIER" rota="t" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="17" chain="A" said="A" ent="1" resname="ASN" seq="4" resnum="4" icode="" altcode="" phi="-104.2" psi="159.9" rama="Favored" rota="m120" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="17" chain="A" said="A" ent="1" resname="PRO" seq="5" resnum="5" icode="" altcode="" phi="-69.8" psi="-31.4" rama="Favored" rota="Cg_endo" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="17" chain="A" said="A" ent="1" resname="ALA" seq="6" resnum="6" icode="" altcode="" phi="-50.4" psi="-52.6" rama="Favored" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="17" chain="A" said="A" ent="1" resname="CYS" seq="7" resnum="7" icode="" altcode="" phi="-57.8" psi="-42.9" rama="Favored" rota="t" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="17" chain="A" said="A" ent="1" resname="GLN" seq="8" resnum="8" icode="" altcode="" phi="-52.7" psi="-36.2" rama="Favored" rota="tt0" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="17" chain="A" said="A" ent="1" resname="VAL" seq="9" resnum="9" icode="" altcode="" phi="-51.7" psi="-35.9" rama="Favored" rota="t" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="17" chain="A" said="A" ent="1" resname="GLN" seq="10" resnum="10" icode="" altcode="" phi="-62.1" psi="163.9" rama="Favored" rota="tt0" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="17" chain="A" said="A" ent="1" resname="HIS" seq="11" resnum="11" icode="" altcode="" phi="-52.5" psi="-37.2" rama="Favored" rota="p-80" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="17" chain="A" said="A" ent="1" resname="SER" seq="12" resnum="12" icode="" altcode="" phi="-79.3" psi="85.0" rama="Favored" rota="m" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="17" chain="A" said="A" ent="1" resname="ASP" seq="13" resnum="13" icode="" altcode="" phi="-94.2" psi="-38.4" rama="Favored" rota="p-10" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="17" chain="A" said="A" ent="1" resname="LEU" seq="14" resnum="14" icode="" altcode="" phi="-52.0" psi="144.2" rama="Favored" rota="tp" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="17" chain="A" said="A" ent="1" resname="CYS" seq="15" resnum="15" icode="" altcode="" rota="m" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="18" chain="A" said="A" ent="1" resname="CYS" seq="1" resnum="1" icode="" altcode="" rota="p" validate="False"/>
+  <ModelledSubgroup model="18" chain="A" said="A" ent="1" resname="CYS" seq="2" resnum="2" icode="" altcode="" phi="-129.6" psi="-55.0" rama="Allowed" rota="m" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="18" chain="A" said="A" ent="1" resname="SER" seq="3" resnum="3" icode="" altcode="" phi="-119.7" psi="75.1" rama="Allowed" rota="p" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="18" chain="A" said="A" ent="1" resname="ASN" seq="4" resnum="4" icode="" altcode="" phi="-145.0" psi="160.6" rama="Favored" rota="m-80" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="18" chain="A" said="A" ent="1" resname="PRO" seq="5" resnum="5" icode="" altcode="" phi="-69.8" psi="-48.3" rama="Allowed" rota="Cg_endo" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="18" chain="A" said="A" ent="1" resname="ALA" seq="6" resnum="6" icode="" altcode="" phi="-57.1" psi="-35.3" rama="Favored" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="18" chain="A" said="A" ent="1" resname="CYS" seq="7" resnum="7" icode="" altcode="" phi="-79.6" psi="-35.6" rama="Favored" rota="t" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="18" chain="A" said="A" ent="1" resname="GLN" seq="8" resnum="8" icode="" altcode="" phi="-56.7" psi="-53.0" rama="Favored" rota="mt-30" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="18" chain="A" said="A" ent="1" resname="VAL" seq="9" resnum="9" icode="" altcode="" phi="-56.9" psi="-34.1" rama="Favored" rota="m" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="18" chain="A" said="A" ent="1" resname="GLN" seq="10" resnum="10" icode="" altcode="" phi="-152.1" psi="111.9" rama="Favored" rota="mt-30" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="18" chain="A" said="A" ent="1" resname="HIS" seq="11" resnum="11" icode="" altcode="" phi="-126.9" psi="119.5" rama="Favored" rota="p80" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="18" chain="A" said="A" ent="1" resname="SER" seq="12" resnum="12" icode="" altcode="" phi="-98.6" psi="37.4" rama="Allowed" rota="m" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="18" chain="A" said="A" ent="1" resname="ASP" seq="13" resnum="13" icode="" altcode="" phi="55.1" psi="43.2" rama="Favored" rota="m-20" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="18" chain="A" said="A" ent="1" resname="LEU" seq="14" resnum="14" icode="" altcode="" phi="-122.6" psi="128.8" rama="Favored" rota="OUTLIER" cyrange_domain_id="1" validate="True">
+    <clash cid="9" atom="HD13" dist="2.26" clashmag="0.46"/>
+  </ModelledSubgroup>
+  <ModelledSubgroup model="18" chain="A" said="A" ent="1" resname="CYS" seq="15" resnum="15" icode="" altcode="" rota="t" cyrange_domain_id="1" validate="True">
+    <clash cid="9" atom="N" dist="2.26" clashmag="0.46"/>
+  </ModelledSubgroup>
+  <ModelledSubgroup model="19" chain="A" said="A" ent="1" resname="CYS" seq="1" resnum="1" icode="" altcode="" rota="p" validate="False"/>
+  <ModelledSubgroup model="19" chain="A" said="A" ent="1" resname="CYS" seq="2" resnum="2" icode="" altcode="" phi="-61.9" psi="166.5" rama="Favored" rota="t" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="19" chain="A" said="A" ent="1" resname="SER" seq="3" resnum="3" icode="" altcode="" phi="-95.7" psi="67.2" rama="Favored" rota="p" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="19" chain="A" said="A" ent="1" resname="ASN" seq="4" resnum="4" icode="" altcode="" phi="-145.1" psi="160.6" rama="Favored" rota="m-20" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="19" chain="A" said="A" ent="1" resname="PRO" seq="5" resnum="5" icode="" altcode="" phi="-69.8" psi="-32.5" rama="Favored" rota="Cg_endo" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="19" chain="A" said="A" ent="1" resname="ALA" seq="6" resnum="6" icode="" altcode="" phi="-51.5" psi="-35.7" rama="Favored" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="19" chain="A" said="A" ent="1" resname="CYS" seq="7" resnum="7" icode="" altcode="" phi="-65.2" psi="-35.9" rama="Favored" rota="t" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="19" chain="A" said="A" ent="1" resname="GLN" seq="8" resnum="8" icode="" altcode="" phi="-68.8" psi="-52.9" rama="Favored" rota="tp60" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="19" chain="A" said="A" ent="1" resname="VAL" seq="9" resnum="9" icode="" altcode="" phi="-60.4" psi="-36.5" rama="Favored" rota="m" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="19" chain="A" said="A" ent="1" resname="GLN" seq="10" resnum="10" icode="" altcode="" phi="-155.8" psi="157.1" rama="Favored" rota="mt-30" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="19" chain="A" said="A" ent="1" resname="HIS" seq="11" resnum="11" icode="" altcode="" phi="-77.5" psi="60.0" rama="Favored" rota="OUTLIER" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="19" chain="A" said="A" ent="1" resname="SER" seq="12" resnum="12" icode="" altcode="" phi="-90.1" psi="88.3" rama="Favored" rota="p" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="19" chain="A" said="A" ent="1" resname="ASP" seq="13" resnum="13" icode="" altcode="" phi="-52.0" psi="-36.1" rama="Favored" rota="p30" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="19" chain="A" said="A" ent="1" resname="LEU" seq="14" resnum="14" icode="" altcode="" phi="-52.5" psi="126.4" rama="Favored" rota="tp" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="19" chain="A" said="A" ent="1" resname="CYS" seq="15" resnum="15" icode="" altcode="" rota="t" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="20" chain="A" said="A" ent="1" resname="CYS" seq="1" resnum="1" icode="" altcode="" rota="t" validate="False"/>
+  <ModelledSubgroup model="20" chain="A" said="A" ent="1" resname="CYS" seq="2" resnum="2" icode="" altcode="" phi="-126.7" psi="-64.1" rama="Allowed" rota="m" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="20" chain="A" said="A" ent="1" resname="SER" seq="3" resnum="3" icode="" altcode="" phi="-148.0" psi="56.6" rama="Allowed" rota="m" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="20" chain="A" said="A" ent="1" resname="ASN" seq="4" resnum="4" icode="" altcode="" phi="-113.1" psi="160.6" rama="Favored" rota="m-80" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="20" chain="A" said="A" ent="1" resname="PRO" seq="5" resnum="5" icode="" altcode="" phi="-69.8" psi="-41.3" rama="Favored" rota="Cg_endo" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="20" chain="A" said="A" ent="1" resname="ALA" seq="6" resnum="6" icode="" altcode="" phi="-56.3" psi="-35.7" rama="Favored" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="20" chain="A" said="A" ent="1" resname="CYS" seq="7" resnum="7" icode="" altcode="" phi="-90.8" psi="-36.1" rama="Favored" rota="OUTLIER" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="20" chain="A" said="A" ent="1" resname="GLN" seq="8" resnum="8" icode="" altcode="" phi="-52.1" psi="-43.4" rama="Favored" rota="mt-30" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="20" chain="A" said="A" ent="1" resname="VAL" seq="9" resnum="9" icode="" altcode="" phi="-59.7" psi="-35.5" rama="Favored" rota="m" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="20" chain="A" said="A" ent="1" resname="GLN" seq="10" resnum="10" icode="" altcode="" phi="-87.1" psi="176.9" rama="Favored" rota="mm100" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="20" chain="A" said="A" ent="1" resname="HIS" seq="11" resnum="11" icode="" altcode="" phi="-91.7" psi="83.7" rama="Favored" rota="m80" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="20" chain="A" said="A" ent="1" resname="SER" seq="12" resnum="12" icode="" altcode="" phi="-135.4" psi="101.6" rama="Favored" rota="t" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="20" chain="A" said="A" ent="1" resname="ASP" seq="13" resnum="13" icode="" altcode="" phi="-117.9" psi="73.8" rama="Allowed" rota="p30" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="20" chain="A" said="A" ent="1" resname="LEU" seq="14" resnum="14" icode="" altcode="" phi="-121.5" psi="-65.4" rama="Allowed" rota="tp" cyrange_domain_id="1" validate="True"/>
+  <ModelledSubgroup model="20" chain="A" said="A" ent="1" resname="CYS" seq="15" resnum="15" icode="" altcode="" rota="t" cyrange_domain_id="1" validate="True"/>
+  <cyrange_domain domain="1" medoid_model="3" medoid_rmsd="0.874" rmsd="1.190" number_of_gaps="0" number_of_residues="14" percentage_of_core="100.000" residue_string="A:2-A:15"/>
+  <ModelledEntityInstance model="1" chain="A" said="A" ent="1" absolute_rama_percentile="100.00" absolute_sidechain_percentile="14.45" angles_rmsz="0.30" bonds_rmsz="0.18" num_angles_rmsz="146" num_bonds_rmsz="108"/>
+  <ModelledEntityInstance model="2" chain="A" said="A" ent="1" absolute_rama_percentile="100.00" absolute_sidechain_percentile="14.45" angles_rmsz="0.30" bonds_rmsz="0.18" num_angles_rmsz="146" num_bonds_rmsz="108"/>
+  <ModelledEntityInstance model="3" chain="A" said="A" ent="1" absolute_rama_percentile="100.00" absolute_sidechain_percentile="14.45" angles_rmsz="0.30" bonds_rmsz="0.18" num_angles_rmsz="146" num_bonds_rmsz="108"/>
+  <ModelledEntityInstance model="4" chain="A" said="A" ent="1" absolute_rama_percentile="100.00" absolute_sidechain_percentile="14.45" angles_rmsz="0.30" bonds_rmsz="0.18" num_angles_rmsz="146" num_bonds_rmsz="108"/>
+  <ModelledEntityInstance model="5" chain="A" said="A" ent="1" absolute_rama_percentile="100.00" absolute_sidechain_percentile="14.45" angles_rmsz="0.30" bonds_rmsz="0.18" num_angles_rmsz="146" num_bonds_rmsz="108"/>
+  <ModelledEntityInstance model="6" chain="A" said="A" ent="1" absolute_rama_percentile="100.00" absolute_sidechain_percentile="14.45" angles_rmsz="0.30" bonds_rmsz="0.18" num_angles_rmsz="146" num_bonds_rmsz="108"/>
+  <ModelledEntityInstance model="7" chain="A" said="A" ent="1" absolute_rama_percentile="100.00" absolute_sidechain_percentile="14.45" angles_rmsz="0.30" bonds_rmsz="0.18" num_angles_rmsz="146" num_bonds_rmsz="108"/>
+  <ModelledEntityInstance model="8" chain="A" said="A" ent="1" absolute_rama_percentile="100.00" absolute_sidechain_percentile="14.45" angles_rmsz="0.30" bonds_rmsz="0.18" num_angles_rmsz="146" num_bonds_rmsz="108"/>
+  <ModelledEntityInstance model="9" chain="A" said="A" ent="1" absolute_rama_percentile="100.00" absolute_sidechain_percentile="14.45" angles_rmsz="0.30" bonds_rmsz="0.18" num_angles_rmsz="146" num_bonds_rmsz="108"/>
+  <ModelledEntityInstance model="10" chain="A" said="A" ent="1" absolute_rama_percentile="100.00" absolute_sidechain_percentile="14.45" angles_rmsz="0.30" bonds_rmsz="0.18" num_angles_rmsz="146" num_bonds_rmsz="108"/>
+  <ModelledEntityInstance model="11" chain="A" said="A" ent="1" absolute_rama_percentile="100.00" absolute_sidechain_percentile="14.45" angles_rmsz="0.30" bonds_rmsz="0.18" num_angles_rmsz="146" num_bonds_rmsz="108"/>
+  <ModelledEntityInstance model="12" chain="A" said="A" ent="1" absolute_rama_percentile="100.00" absolute_sidechain_percentile="14.45" angles_rmsz="0.30" bonds_rmsz="0.18" num_angles_rmsz="146" num_bonds_rmsz="108"/>
+  <ModelledEntityInstance model="13" chain="A" said="A" ent="1" absolute_rama_percentile="100.00" absolute_sidechain_percentile="14.45" angles_rmsz="0.30" bonds_rmsz="0.18" num_angles_rmsz="146" num_bonds_rmsz="108"/>
+  <ModelledEntityInstance model="14" chain="A" said="A" ent="1" absolute_rama_percentile="100.00" absolute_sidechain_percentile="14.45" angles_rmsz="0.30" bonds_rmsz="0.18" num_angles_rmsz="146" num_bonds_rmsz="108"/>
+  <ModelledEntityInstance model="15" chain="A" said="A" ent="1" absolute_rama_percentile="100.00" absolute_sidechain_percentile="14.45" angles_rmsz="0.30" bonds_rmsz="0.18" num_angles_rmsz="146" num_bonds_rmsz="108"/>
+  <ModelledEntityInstance model="16" chain="A" said="A" ent="1" absolute_rama_percentile="100.00" absolute_sidechain_percentile="14.45" angles_rmsz="0.30" bonds_rmsz="0.18" num_angles_rmsz="146" num_bonds_rmsz="108"/>
+  <ModelledEntityInstance model="17" chain="A" said="A" ent="1" absolute_rama_percentile="100.00" absolute_sidechain_percentile="14.45" angles_rmsz="0.30" bonds_rmsz="0.18" num_angles_rmsz="146" num_bonds_rmsz="108"/>
+  <ModelledEntityInstance model="18" chain="A" said="A" ent="1" absolute_rama_percentile="100.00" absolute_sidechain_percentile="14.45" angles_rmsz="0.30" bonds_rmsz="0.18" num_angles_rmsz="146" num_bonds_rmsz="108"/>
+  <ModelledEntityInstance model="19" chain="A" said="A" ent="1" absolute_rama_percentile="100.00" absolute_sidechain_percentile="14.45" angles_rmsz="0.30" bonds_rmsz="0.18" num_angles_rmsz="146" num_bonds_rmsz="108"/>
+  <ModelledEntityInstance model="20" chain="A" said="A" ent="1" absolute_rama_percentile="100.00" absolute_sidechain_percentile="14.45" angles_rmsz="0.30" bonds_rmsz="0.18" num_angles_rmsz="146" num_bonds_rmsz="108"/>
+  <NMR_restraints_analysis>
+    <conformationally_restricting_restraints>
+      <restraint_summary description="Total distance restraints" value="88"/>
+      <restraint_summary description="Intra-residue (|i-j|=0)" value="36"/>
+      <restraint_summary description="Sequential (|i-j|=1)" value="45"/>
+      <restraint_summary description="Medium range (|i-j|&gt;1 and |i-j|&lt;5)" value="7"/>
+      <restraint_summary description="Long range (|i-j|&gt;=5)" value="0"/>
+      <restraint_summary description="Inter-chain" value="0"/>
+      <restraint_summary description="Total dihedral-angle restraints" value="0"/>
+      <restraint_summary description="Total hydrogen bond restraints" value="0"/>
+      <restraint_summary description="Total disulfide bond restraints" value="0"/>
+      <restraint_summary description="Number of unmapped restraints" value="88"/>
+      <restraint_summary description="Number of restraints per residue" value="5.9"/>
+      <restraint_summary description="Number of long range restraints per residue" value="0.0"/>
+    </conformationally_restricting_restraints>
+    <residual_distance_violations/>
+  </NMR_restraints_analysis>
+  <distance_restraints_analysis>
+    <distance_violations_summary>
+      <distance_violation_summary restraint_type="Intra-residue" restraint_sub_type="all" restraints_count="36" percent_total="40.9" violated_count="0" violated_percent_total="0.0" violated_percent_type="0.0" consistently_violated_count="0" consistently_violated_percent_total="0.0" consistently_violated_percent_type="0.0"/>
+      <distance_violation_summary restraint_type="Intra-residue" restraint_sub_type="BackboneBackbone" restraints_count="0" percent_total="0.0" violated_count="0" violated_percent_total="0.0" violated_percent_type="0.0" consistently_violated_count="0" consistently_violated_percent_total="0.0" consistently_violated_percent_type="0.0"/>
+      <distance_violation_summary restraint_type="Intra-residue" restraint_sub_type="BackboneSidechain" restraints_count="34" percent_total="38.6" violated_count="0" violated_percent_total="0.0" violated_percent_type="0.0" consistently_violated_count="0" consistently_violated_percent_total="0.0" consistently_violated_percent_type="0.0"/>
+      <distance_violation_summary restraint_type="Intra-residue" restraint_sub_type="SidechainSidechain" restraints_count="2" percent_total="2.3" violated_count="0" violated_percent_total="0.0" violated_percent_type="0.0" consistently_violated_count="0" consistently_violated_percent_total="0.0" consistently_violated_percent_type="0.0"/>
+      <distance_violation_summary restraint_type="Sequential" restraint_sub_type="all" restraints_count="45" percent_total="51.1" violated_count="0" violated_percent_total="0.0" violated_percent_type="0.0" consistently_violated_count="0" consistently_violated_percent_total="0.0" consistently_violated_percent_type="0.0"/>
+      <distance_violation_summary restraint_type="Sequential" restraint_sub_type="BackboneBackbone" restraints_count="11" percent_total="12.5" violated_count="0" violated_percent_total="0.0" violated_percent_type="0.0" consistently_violated_count="0" consistently_violated_percent_total="0.0" consistently_violated_percent_type="0.0"/>
+      <distance_violation_summary restraint_type="Sequential" restraint_sub_type="BackboneSidechain" restraints_count="28" percent_total="31.8" violated_count="0" violated_percent_total="0.0" violated_percent_type="0.0" consistently_violated_count="0" consistently_violated_percent_total="0.0" consistently_violated_percent_type="0.0"/>
+      <distance_violation_summary restraint_type="Sequential" restraint_sub_type="SidechainSidechain" restraints_count="6" percent_total="6.8" violated_count="0" violated_percent_total="0.0" violated_percent_type="0.0" consistently_violated_count="0" consistently_violated_percent_total="0.0" consistently_violated_percent_type="0.0"/>
+      <distance_violation_summary restraint_type="MediumRange" restraint_sub_type="all" restraints_count="7" percent_total="8.0" violated_count="0" violated_percent_total="0.0" violated_percent_type="0.0" consistently_violated_count="0" consistently_violated_percent_total="0.0" consistently_violated_percent_type="0.0"/>
+      <distance_violation_summary restraint_type="MediumRange" restraint_sub_type="BackboneBackbone" restraints_count="1" percent_total="1.1" violated_count="0" violated_percent_total="0.0" violated_percent_type="0.0" consistently_violated_count="0" consistently_violated_percent_total="0.0" consistently_violated_percent_type="0.0"/>
+      <distance_violation_summary restraint_type="MediumRange" restraint_sub_type="BackboneSidechain" restraints_count="5" percent_total="5.7" violated_count="0" violated_percent_total="0.0" violated_percent_type="0.0" consistently_violated_count="0" consistently_violated_percent_total="0.0" consistently_violated_percent_type="0.0"/>
+      <distance_violation_summary restraint_type="MediumRange" restraint_sub_type="SidechainSidechain" restraints_count="1" percent_total="1.1" violated_count="0" violated_percent_total="0.0" violated_percent_type="0.0" consistently_violated_count="0" consistently_violated_percent_total="0.0" consistently_violated_percent_type="0.0"/>
+      <distance_violation_summary restraint_type="LongRange" restraint_sub_type="all" restraints_count="0" percent_total="0.0" violated_count="0" violated_percent_total="0.0" violated_percent_type="0.0" consistently_violated_count="0" consistently_violated_percent_total="0.0" consistently_violated_percent_type="0.0"/>
+      <distance_violation_summary restraint_type="LongRange" restraint_sub_type="BackboneBackbone" restraints_count="0" percent_total="0.0" violated_count="0" violated_percent_total="0.0" violated_percent_type="0.0" consistently_violated_count="0" consistently_violated_percent_total="0.0" consistently_violated_percent_type="0.0"/>
+      <distance_violation_summary restraint_type="LongRange" restraint_sub_type="BackboneSidechain" restraints_count="0" percent_total="0.0" violated_count="0" violated_percent_total="0.0" violated_percent_type="0.0" consistently_violated_count="0" consistently_violated_percent_total="0.0" consistently_violated_percent_type="0.0"/>
+      <distance_violation_summary restraint_type="LongRange" restraint_sub_type="SidechainSidechain" restraints_count="0" percent_total="0.0" violated_count="0" violated_percent_total="0.0" violated_percent_type="0.0" consistently_violated_count="0" consistently_violated_percent_total="0.0" consistently_violated_percent_type="0.0"/>
+      <distance_violation_summary restraint_type="InterChain" restraint_sub_type="all" restraints_count="0" percent_total="0.0" violated_count="0" violated_percent_total="0.0" violated_percent_type="0.0" consistently_violated_count="0" consistently_violated_percent_total="0.0" consistently_violated_percent_type="0.0"/>
+      <distance_violation_summary restraint_type="InterChain" restraint_sub_type="BackboneBackbone" restraints_count="0" percent_total="0.0" violated_count="0" violated_percent_total="0.0" violated_percent_type="0.0" consistently_violated_count="0" consistently_violated_percent_total="0.0" consistently_violated_percent_type="0.0"/>
+      <distance_violation_summary restraint_type="InterChain" restraint_sub_type="BackboneSidechain" restraints_count="0" percent_total="0.0" violated_count="0" violated_percent_total="0.0" violated_percent_type="0.0" consistently_violated_count="0" consistently_violated_percent_total="0.0" consistently_violated_percent_type="0.0"/>
+      <distance_violation_summary restraint_type="InterChain" restraint_sub_type="SidechainSidechain" restraints_count="0" percent_total="0.0" violated_count="0" violated_percent_total="0.0" violated_percent_type="0.0" consistently_violated_count="0" consistently_violated_percent_total="0.0" consistently_violated_percent_type="0.0"/>
+      <distance_violation_summary restraint_type="Total" restraint_sub_type="all" restraints_count="88" percent_total="100.0" violated_count="0" violated_percent_total="0.0" violated_percent_type="0.0" consistently_violated_count="0" consistently_violated_percent_total="0.0" consistently_violated_percent_type="0.0"/>
+      <distance_violation_summary restraint_type="Total" restraint_sub_type="BackboneBackbone" restraints_count="12" percent_total="13.6" violated_count="0" violated_percent_total="0.0" violated_percent_type="0.0" consistently_violated_count="0" consistently_violated_percent_total="0.0" consistently_violated_percent_type="0.0"/>
+      <distance_violation_summary restraint_type="Total" restraint_sub_type="BackboneSidechain" restraints_count="67" percent_total="76.1" violated_count="0" violated_percent_total="0.0" violated_percent_type="0.0" consistently_violated_count="0" consistently_violated_percent_total="0.0" consistently_violated_percent_type="0.0"/>
+      <distance_violation_summary restraint_type="Total" restraint_sub_type="SidechainSidechain" restraints_count="9" percent_total="10.2" violated_count="0" violated_percent_total="0.0" violated_percent_type="0.0" consistently_violated_count="0" consistently_violated_percent_total="0.0" consistently_violated_percent_type="0.0"/>
+    </distance_violations_summary>
+    <distance_violations_in_models>
+      <distance_violations_in_model model="1" max_violation="0.0" mean_violation="0.0" standard_deviation="0.0">
+        <dist_rest_types dist_rest_type="Total" violations_count="0"/>
+        <dist_rest_types dist_rest_type="Intra-residue" violations_count="0"/>
+        <dist_rest_types dist_rest_type="Sequential" violations_count="0"/>
+        <dist_rest_types dist_rest_type="MediumRange" violations_count="0"/>
+        <dist_rest_types dist_rest_type="LongRange" violations_count="0"/>
+        <dist_rest_types dist_rest_type="InterChain" violations_count="0"/>
+      </distance_violations_in_model>
+      <distance_violations_in_model model="2" max_violation="0.0" mean_violation="0.0" standard_deviation="0.0">
+        <dist_rest_types dist_rest_type="Total" violations_count="0"/>
+        <dist_rest_types dist_rest_type="Intra-residue" violations_count="0"/>
+        <dist_rest_types dist_rest_type="Sequential" violations_count="0"/>
+        <dist_rest_types dist_rest_type="MediumRange" violations_count="0"/>
+        <dist_rest_types dist_rest_type="LongRange" violations_count="0"/>
+        <dist_rest_types dist_rest_type="InterChain" violations_count="0"/>
+      </distance_violations_in_model>
+      <distance_violations_in_model model="3" max_violation="0.0" mean_violation="0.0" standard_deviation="0.0">
+        <dist_rest_types dist_rest_type="Total" violations_count="0"/>
+        <dist_rest_types dist_rest_type="Intra-residue" violations_count="0"/>
+        <dist_rest_types dist_rest_type="Sequential" violations_count="0"/>
+        <dist_rest_types dist_rest_type="MediumRange" violations_count="0"/>
+        <dist_rest_types dist_rest_type="LongRange" violations_count="0"/>
+        <dist_rest_types dist_rest_type="InterChain" violations_count="0"/>
+      </distance_violations_in_model>
+      <distance_violations_in_model model="4" max_violation="0.0" mean_violation="0.0" standard_deviation="0.0">
+        <dist_rest_types dist_rest_type="Total" violations_count="0"/>
+        <dist_rest_types dist_rest_type="Intra-residue" violations_count="0"/>
+        <dist_rest_types dist_rest_type="Sequential" violations_count="0"/>
+        <dist_rest_types dist_rest_type="MediumRange" violations_count="0"/>
+        <dist_rest_types dist_rest_type="LongRange" violations_count="0"/>
+        <dist_rest_types dist_rest_type="InterChain" violations_count="0"/>
+      </distance_violations_in_model>
+      <distance_violations_in_model model="5" max_violation="0.0" mean_violation="0.0" standard_deviation="0.0">
+        <dist_rest_types dist_rest_type="Total" violations_count="0"/>
+        <dist_rest_types dist_rest_type="Intra-residue" violations_count="0"/>
+        <dist_rest_types dist_rest_type="Sequential" violations_count="0"/>
+        <dist_rest_types dist_rest_type="MediumRange" violations_count="0"/>
+        <dist_rest_types dist_rest_type="LongRange" violations_count="0"/>
+        <dist_rest_types dist_rest_type="InterChain" violations_count="0"/>
+      </distance_violations_in_model>
+      <distance_violations_in_model model="6" max_violation="0.0" mean_violation="0.0" standard_deviation="0.0">
+        <dist_rest_types dist_rest_type="Total" violations_count="0"/>
+        <dist_rest_types dist_rest_type="Intra-residue" violations_count="0"/>
+        <dist_rest_types dist_rest_type="Sequential" violations_count="0"/>
+        <dist_rest_types dist_rest_type="MediumRange" violations_count="0"/>
+        <dist_rest_types dist_rest_type="LongRange" violations_count="0"/>
+        <dist_rest_types dist_rest_type="InterChain" violations_count="0"/>
+      </distance_violations_in_model>
+      <distance_violations_in_model model="7" max_violation="0.0" mean_violation="0.0" standard_deviation="0.0">
+        <dist_rest_types dist_rest_type="Total" violations_count="0"/>
+        <dist_rest_types dist_rest_type="Intra-residue" violations_count="0"/>
+        <dist_rest_types dist_rest_type="Sequential" violations_count="0"/>
+        <dist_rest_types dist_rest_type="MediumRange" violations_count="0"/>
+        <dist_rest_types dist_rest_type="LongRange" violations_count="0"/>
+        <dist_rest_types dist_rest_type="InterChain" violations_count="0"/>
+      </distance_violations_in_model>
+      <distance_violations_in_model model="8" max_violation="0.0" mean_violation="0.0" standard_deviation="0.0">
+        <dist_rest_types dist_rest_type="Total" violations_count="0"/>
+        <dist_rest_types dist_rest_type="Intra-residue" violations_count="0"/>
+        <dist_rest_types dist_rest_type="Sequential" violations_count="0"/>
+        <dist_rest_types dist_rest_type="MediumRange" violations_count="0"/>
+        <dist_rest_types dist_rest_type="LongRange" violations_count="0"/>
+        <dist_rest_types dist_rest_type="InterChain" violations_count="0"/>
+      </distance_violations_in_model>
+      <distance_violations_in_model model="9" max_violation="0.0" mean_violation="0.0" standard_deviation="0.0">
+        <dist_rest_types dist_rest_type="Total" violations_count="0"/>
+        <dist_rest_types dist_rest_type="Intra-residue" violations_count="0"/>
+        <dist_rest_types dist_rest_type="Sequential" violations_count="0"/>
+        <dist_rest_types dist_rest_type="MediumRange" violations_count="0"/>
+        <dist_rest_types dist_rest_type="LongRange" violations_count="0"/>
+        <dist_rest_types dist_rest_type="InterChain" violations_count="0"/>
+      </distance_violations_in_model>
+      <distance_violations_in_model model="10" max_violation="0.0" mean_violation="0.0" standard_deviation="0.0">
+        <dist_rest_types dist_rest_type="Total" violations_count="0"/>
+        <dist_rest_types dist_rest_type="Intra-residue" violations_count="0"/>
+        <dist_rest_types dist_rest_type="Sequential" violations_count="0"/>
+        <dist_rest_types dist_rest_type="MediumRange" violations_count="0"/>
+        <dist_rest_types dist_rest_type="LongRange" violations_count="0"/>
+        <dist_rest_types dist_rest_type="InterChain" violations_count="0"/>
+      </distance_violations_in_model>
+      <distance_violations_in_model model="11" max_violation="0.0" mean_violation="0.0" standard_deviation="0.0">
+        <dist_rest_types dist_rest_type="Total" violations_count="0"/>
+        <dist_rest_types dist_rest_type="Intra-residue" violations_count="0"/>
+        <dist_rest_types dist_rest_type="Sequential" violations_count="0"/>
+        <dist_rest_types dist_rest_type="MediumRange" violations_count="0"/>
+        <dist_rest_types dist_rest_type="LongRange" violations_count="0"/>
+        <dist_rest_types dist_rest_type="InterChain" violations_count="0"/>
+      </distance_violations_in_model>
+      <distance_violations_in_model model="12" max_violation="0.0" mean_violation="0.0" standard_deviation="0.0">
+        <dist_rest_types dist_rest_type="Total" violations_count="0"/>
+        <dist_rest_types dist_rest_type="Intra-residue" violations_count="0"/>
+        <dist_rest_types dist_rest_type="Sequential" violations_count="0"/>
+        <dist_rest_types dist_rest_type="MediumRange" violations_count="0"/>
+        <dist_rest_types dist_rest_type="LongRange" violations_count="0"/>
+        <dist_rest_types dist_rest_type="InterChain" violations_count="0"/>
+      </distance_violations_in_model>
+      <distance_violations_in_model model="13" max_violation="0.0" mean_violation="0.0" standard_deviation="0.0">
+        <dist_rest_types dist_rest_type="Total" violations_count="0"/>
+        <dist_rest_types dist_rest_type="Intra-residue" violations_count="0"/>
+        <dist_rest_types dist_rest_type="Sequential" violations_count="0"/>
+        <dist_rest_types dist_rest_type="MediumRange" violations_count="0"/>
+        <dist_rest_types dist_rest_type="LongRange" violations_count="0"/>
+        <dist_rest_types dist_rest_type="InterChain" violations_count="0"/>
+      </distance_violations_in_model>
+      <distance_violations_in_model model="14" max_violation="0.0" mean_violation="0.0" standard_deviation="0.0">
+        <dist_rest_types dist_rest_type="Total" violations_count="0"/>
+        <dist_rest_types dist_rest_type="Intra-residue" violations_count="0"/>
+        <dist_rest_types dist_rest_type="Sequential" violations_count="0"/>
+        <dist_rest_types dist_rest_type="MediumRange" violations_count="0"/>
+        <dist_rest_types dist_rest_type="LongRange" violations_count="0"/>
+        <dist_rest_types dist_rest_type="InterChain" violations_count="0"/>
+      </distance_violations_in_model>
+      <distance_violations_in_model model="15" max_violation="0.0" mean_violation="0.0" standard_deviation="0.0">
+        <dist_rest_types dist_rest_type="Total" violations_count="0"/>
+        <dist_rest_types dist_rest_type="Intra-residue" violations_count="0"/>
+        <dist_rest_types dist_rest_type="Sequential" violations_count="0"/>
+        <dist_rest_types dist_rest_type="MediumRange" violations_count="0"/>
+        <dist_rest_types dist_rest_type="LongRange" violations_count="0"/>
+        <dist_rest_types dist_rest_type="InterChain" violations_count="0"/>
+      </distance_violations_in_model>
+      <distance_violations_in_model model="16" max_violation="0.0" mean_violation="0.0" standard_deviation="0.0">
+        <dist_rest_types dist_rest_type="Total" violations_count="0"/>
+        <dist_rest_types dist_rest_type="Intra-residue" violations_count="0"/>
+        <dist_rest_types dist_rest_type="Sequential" violations_count="0"/>
+        <dist_rest_types dist_rest_type="MediumRange" violations_count="0"/>
+        <dist_rest_types dist_rest_type="LongRange" violations_count="0"/>
+        <dist_rest_types dist_rest_type="InterChain" violations_count="0"/>
+      </distance_violations_in_model>
+      <distance_violations_in_model model="17" max_violation="0.0" mean_violation="0.0" standard_deviation="0.0">
+        <dist_rest_types dist_rest_type="Total" violations_count="0"/>
+        <dist_rest_types dist_rest_type="Intra-residue" violations_count="0"/>
+        <dist_rest_types dist_rest_type="Sequential" violations_count="0"/>
+        <dist_rest_types dist_rest_type="MediumRange" violations_count="0"/>
+        <dist_rest_types dist_rest_type="LongRange" violations_count="0"/>
+        <dist_rest_types dist_rest_type="InterChain" violations_count="0"/>
+      </distance_violations_in_model>
+      <distance_violations_in_model model="18" max_violation="0.0" mean_violation="0.0" standard_deviation="0.0">
+        <dist_rest_types dist_rest_type="Total" violations_count="0"/>
+        <dist_rest_types dist_rest_type="Intra-residue" violations_count="0"/>
+        <dist_rest_types dist_rest_type="Sequential" violations_count="0"/>
+        <dist_rest_types dist_rest_type="MediumRange" violations_count="0"/>
+        <dist_rest_types dist_rest_type="LongRange" violations_count="0"/>
+        <dist_rest_types dist_rest_type="InterChain" violations_count="0"/>
+      </distance_violations_in_model>
+      <distance_violations_in_model model="19" max_violation="0.0" mean_violation="0.0" standard_deviation="0.0">
+        <dist_rest_types dist_rest_type="Total" violations_count="0"/>
+        <dist_rest_types dist_rest_type="Intra-residue" violations_count="0"/>
+        <dist_rest_types dist_rest_type="Sequential" violations_count="0"/>
+        <dist_rest_types dist_rest_type="MediumRange" violations_count="0"/>
+        <dist_rest_types dist_rest_type="LongRange" violations_count="0"/>
+        <dist_rest_types dist_rest_type="InterChain" violations_count="0"/>
+      </distance_violations_in_model>
+      <distance_violations_in_model model="20" max_violation="0.0" mean_violation="0.0" standard_deviation="0.0">
+        <dist_rest_types dist_rest_type="Total" violations_count="0"/>
+        <dist_rest_types dist_rest_type="Intra-residue" violations_count="0"/>
+        <dist_rest_types dist_rest_type="Sequential" violations_count="0"/>
+        <dist_rest_types dist_rest_type="MediumRange" violations_count="0"/>
+        <dist_rest_types dist_rest_type="LongRange" violations_count="0"/>
+        <dist_rest_types dist_rest_type="InterChain" violations_count="0"/>
+      </distance_violations_in_model>
+    </distance_violations_in_models>
+    <distance_violations_in_ensemble>
+      <distance_violation_in_ensemble fraction_of_ensemble_count="1" fraction_of_ensemble_percent="5.0">
+        <dist_rest_types dist_rest_type="Total" violations_count="0"/>
+        <dist_rest_types dist_rest_type="Intra-residue" violations_count="0"/>
+        <dist_rest_types dist_rest_type="Sequential" violations_count="0"/>
+        <dist_rest_types dist_rest_type="MediumRange" violations_count="0"/>
+        <dist_rest_types dist_rest_type="LongRange" violations_count="0"/>
+        <dist_rest_types dist_rest_type="InterChain" violations_count="0"/>
+      </distance_violation_in_ensemble>
+      <distance_violation_in_ensemble fraction_of_ensemble_count="2" fraction_of_ensemble_percent="10.0">
+        <dist_rest_types dist_rest_type="Total" violations_count="0"/>
+        <dist_rest_types dist_rest_type="Intra-residue" violations_count="0"/>
+        <dist_rest_types dist_rest_type="Sequential" violations_count="0"/>
+        <dist_rest_types dist_rest_type="MediumRange" violations_count="0"/>
+        <dist_rest_types dist_rest_type="LongRange" violations_count="0"/>
+        <dist_rest_types dist_rest_type="InterChain" violations_count="0"/>
+      </distance_violation_in_ensemble>
+      <distance_violation_in_ensemble fraction_of_ensemble_count="3" fraction_of_ensemble_percent="15.0">
+        <dist_rest_types dist_rest_type="Total" violations_count="0"/>
+        <dist_rest_types dist_rest_type="Intra-residue" violations_count="0"/>
+        <dist_rest_types dist_rest_type="Sequential" violations_count="0"/>
+        <dist_rest_types dist_rest_type="MediumRange" violations_count="0"/>
+        <dist_rest_types dist_rest_type="LongRange" violations_count="0"/>
+        <dist_rest_types dist_rest_type="InterChain" violations_count="0"/>
+      </distance_violation_in_ensemble>
+      <distance_violation_in_ensemble fraction_of_ensemble_count="4" fraction_of_ensemble_percent="20.0">
+        <dist_rest_types dist_rest_type="Total" violations_count="0"/>
+        <dist_rest_types dist_rest_type="Intra-residue" violations_count="0"/>
+        <dist_rest_types dist_rest_type="Sequential" violations_count="0"/>
+        <dist_rest_types dist_rest_type="MediumRange" violations_count="0"/>
+        <dist_rest_types dist_rest_type="LongRange" violations_count="0"/>
+        <dist_rest_types dist_rest_type="InterChain" violations_count="0"/>
+      </distance_violation_in_ensemble>
+      <distance_violation_in_ensemble fraction_of_ensemble_count="5" fraction_of_ensemble_percent="25.0">
+        <dist_rest_types dist_rest_type="Total" violations_count="0"/>
+        <dist_rest_types dist_rest_type="Intra-residue" violations_count="0"/>
+        <dist_rest_types dist_rest_type="Sequential" violations_count="0"/>
+        <dist_rest_types dist_rest_type="MediumRange" violations_count="0"/>
+        <dist_rest_types dist_rest_type="LongRange" violations_count="0"/>
+        <dist_rest_types dist_rest_type="InterChain" violations_count="0"/>
+      </distance_violation_in_ensemble>
+      <distance_violation_in_ensemble fraction_of_ensemble_count="6" fraction_of_ensemble_percent="30.0">
+        <dist_rest_types dist_rest_type="Total" violations_count="0"/>
+        <dist_rest_types dist_rest_type="Intra-residue" violations_count="0"/>
+        <dist_rest_types dist_rest_type="Sequential" violations_count="0"/>
+        <dist_rest_types dist_rest_type="MediumRange" violations_count="0"/>
+        <dist_rest_types dist_rest_type="LongRange" violations_count="0"/>
+        <dist_rest_types dist_rest_type="InterChain" violations_count="0"/>
+      </distance_violation_in_ensemble>
+      <distance_violation_in_ensemble fraction_of_ensemble_count="7" fraction_of_ensemble_percent="35.0">
+        <dist_rest_types dist_rest_type="Total" violations_count="0"/>
+        <dist_rest_types dist_rest_type="Intra-residue" violations_count="0"/>
+        <dist_rest_types dist_rest_type="Sequential" violations_count="0"/>
+        <dist_rest_types dist_rest_type="MediumRange" violations_count="0"/>
+        <dist_rest_types dist_rest_type="LongRange" violations_count="0"/>
+        <dist_rest_types dist_rest_type="InterChain" violations_count="0"/>
+      </distance_violation_in_ensemble>
+      <distance_violation_in_ensemble fraction_of_ensemble_count="8" fraction_of_ensemble_percent="40.0">
+        <dist_rest_types dist_rest_type="Total" violations_count="0"/>
+        <dist_rest_types dist_rest_type="Intra-residue" violations_count="0"/>
+        <dist_rest_types dist_rest_type="Sequential" violations_count="0"/>
+        <dist_rest_types dist_rest_type="MediumRange" violations_count="0"/>
+        <dist_rest_types dist_rest_type="LongRange" violations_count="0"/>
+        <dist_rest_types dist_rest_type="InterChain" violations_count="0"/>
+      </distance_violation_in_ensemble>
+      <distance_violation_in_ensemble fraction_of_ensemble_count="9" fraction_of_ensemble_percent="45.0">
+        <dist_rest_types dist_rest_type="Total" violations_count="0"/>
+        <dist_rest_types dist_rest_type="Intra-residue" violations_count="0"/>
+        <dist_rest_types dist_rest_type="Sequential" violations_count="0"/>
+        <dist_rest_types dist_rest_type="MediumRange" violations_count="0"/>
+        <dist_rest_types dist_rest_type="LongRange" violations_count="0"/>
+        <dist_rest_types dist_rest_type="InterChain" violations_count="0"/>
+      </distance_violation_in_ensemble>
+      <distance_violation_in_ensemble fraction_of_ensemble_count="10" fraction_of_ensemble_percent="50.0">
+        <dist_rest_types dist_rest_type="Total" violations_count="0"/>
+        <dist_rest_types dist_rest_type="Intra-residue" violations_count="0"/>
+        <dist_rest_types dist_rest_type="Sequential" violations_count="0"/>
+        <dist_rest_types dist_rest_type="MediumRange" violations_count="0"/>
+        <dist_rest_types dist_rest_type="LongRange" violations_count="0"/>
+        <dist_rest_types dist_rest_type="InterChain" violations_count="0"/>
+      </distance_violation_in_ensemble>
+      <distance_violation_in_ensemble fraction_of_ensemble_count="11" fraction_of_ensemble_percent="55.0">
+        <dist_rest_types dist_rest_type="Total" violations_count="0"/>
+        <dist_rest_types dist_rest_type="Intra-residue" violations_count="0"/>
+        <dist_rest_types dist_rest_type="Sequential" violations_count="0"/>
+        <dist_rest_types dist_rest_type="MediumRange" violations_count="0"/>
+        <dist_rest_types dist_rest_type="LongRange" violations_count="0"/>
+        <dist_rest_types dist_rest_type="InterChain" violations_count="0"/>
+      </distance_violation_in_ensemble>
+      <distance_violation_in_ensemble fraction_of_ensemble_count="12" fraction_of_ensemble_percent="60.0">
+        <dist_rest_types dist_rest_type="Total" violations_count="0"/>
+        <dist_rest_types dist_rest_type="Intra-residue" violations_count="0"/>
+        <dist_rest_types dist_rest_type="Sequential" violations_count="0"/>
+        <dist_rest_types dist_rest_type="MediumRange" violations_count="0"/>
+        <dist_rest_types dist_rest_type="LongRange" violations_count="0"/>
+        <dist_rest_types dist_rest_type="InterChain" violations_count="0"/>
+      </distance_violation_in_ensemble>
+      <distance_violation_in_ensemble fraction_of_ensemble_count="13" fraction_of_ensemble_percent="65.0">
+        <dist_rest_types dist_rest_type="Total" violations_count="0"/>
+        <dist_rest_types dist_rest_type="Intra-residue" violations_count="0"/>
+        <dist_rest_types dist_rest_type="Sequential" violations_count="0"/>
+        <dist_rest_types dist_rest_type="MediumRange" violations_count="0"/>
+        <dist_rest_types dist_rest_type="LongRange" violations_count="0"/>
+        <dist_rest_types dist_rest_type="InterChain" violations_count="0"/>
+      </distance_violation_in_ensemble>
+      <distance_violation_in_ensemble fraction_of_ensemble_count="14" fraction_of_ensemble_percent="70.0">
+        <dist_rest_types dist_rest_type="Total" violations_count="0"/>
+        <dist_rest_types dist_rest_type="Intra-residue" violations_count="0"/>
+        <dist_rest_types dist_rest_type="Sequential" violations_count="0"/>
+        <dist_rest_types dist_rest_type="MediumRange" violations_count="0"/>
+        <dist_rest_types dist_rest_type="LongRange" violations_count="0"/>
+        <dist_rest_types dist_rest_type="InterChain" violations_count="0"/>
+      </distance_violation_in_ensemble>
+      <distance_violation_in_ensemble fraction_of_ensemble_count="15" fraction_of_ensemble_percent="75.0">
+        <dist_rest_types dist_rest_type="Total" violations_count="0"/>
+        <dist_rest_types dist_rest_type="Intra-residue" violations_count="0"/>
+        <dist_rest_types dist_rest_type="Sequential" violations_count="0"/>
+        <dist_rest_types dist_rest_type="MediumRange" violations_count="0"/>
+        <dist_rest_types dist_rest_type="LongRange" violations_count="0"/>
+        <dist_rest_types dist_rest_type="InterChain" violations_count="0"/>
+      </distance_violation_in_ensemble>
+      <distance_violation_in_ensemble fraction_of_ensemble_count="16" fraction_of_ensemble_percent="80.0">
+        <dist_rest_types dist_rest_type="Total" violations_count="0"/>
+        <dist_rest_types dist_rest_type="Intra-residue" violations_count="0"/>
+        <dist_rest_types dist_rest_type="Sequential" violations_count="0"/>
+        <dist_rest_types dist_rest_type="MediumRange" violations_count="0"/>
+        <dist_rest_types dist_rest_type="LongRange" violations_count="0"/>
+        <dist_rest_types dist_rest_type="InterChain" violations_count="0"/>
+      </distance_violation_in_ensemble>
+      <distance_violation_in_ensemble fraction_of_ensemble_count="17" fraction_of_ensemble_percent="85.0">
+        <dist_rest_types dist_rest_type="Total" violations_count="0"/>
+        <dist_rest_types dist_rest_type="Intra-residue" violations_count="0"/>
+        <dist_rest_types dist_rest_type="Sequential" violations_count="0"/>
+        <dist_rest_types dist_rest_type="MediumRange" violations_count="0"/>
+        <dist_rest_types dist_rest_type="LongRange" violations_count="0"/>
+        <dist_rest_types dist_rest_type="InterChain" violations_count="0"/>
+      </distance_violation_in_ensemble>
+      <distance_violation_in_ensemble fraction_of_ensemble_count="18" fraction_of_ensemble_percent="90.0">
+        <dist_rest_types dist_rest_type="Total" violations_count="0"/>
+        <dist_rest_types dist_rest_type="Intra-residue" violations_count="0"/>
+        <dist_rest_types dist_rest_type="Sequential" violations_count="0"/>
+        <dist_rest_types dist_rest_type="MediumRange" violations_count="0"/>
+        <dist_rest_types dist_rest_type="LongRange" violations_count="0"/>
+        <dist_rest_types dist_rest_type="InterChain" violations_count="0"/>
+      </distance_violation_in_ensemble>
+      <distance_violation_in_ensemble fraction_of_ensemble_count="19" fraction_of_ensemble_percent="95.0">
+        <dist_rest_types dist_rest_type="Total" violations_count="0"/>
+        <dist_rest_types dist_rest_type="Intra-residue" violations_count="0"/>
+        <dist_rest_types dist_rest_type="Sequential" violations_count="0"/>
+        <dist_rest_types dist_rest_type="MediumRange" violations_count="0"/>
+        <dist_rest_types dist_rest_type="LongRange" violations_count="0"/>
+        <dist_rest_types dist_rest_type="InterChain" violations_count="0"/>
+      </distance_violation_in_ensemble>
+      <distance_violation_in_ensemble fraction_of_ensemble_count="20" fraction_of_ensemble_percent="100.0">
+        <dist_rest_types dist_rest_type="Total" violations_count="0"/>
+        <dist_rest_types dist_rest_type="Intra-residue" violations_count="0"/>
+        <dist_rest_types dist_rest_type="Sequential" violations_count="0"/>
+        <dist_rest_types dist_rest_type="MediumRange" violations_count="0"/>
+        <dist_rest_types dist_rest_type="LongRange" violations_count="0"/>
+        <dist_rest_types dist_rest_type="InterChain" violations_count="0"/>
+      </distance_violation_in_ensemble>
+    </distance_violations_in_ensemble>
+    <most_violated_distance_restraints/>
+    <violated_distance_restraints/>
+  </distance_restraints_analysis>
+  <programs>
+    <program name="validation-pipeline" properties="cs_only,protein-DNA-RNA-entities,percentilebins,attemptedValidationSteps,PDB-revision-number,pdbid,PDB-R,PDB-revision-date,PDB-Rfree,PDB-deposition-date,XMLcreationDate,PDB-resolution-low,PDB-resolution" version="2.18"/>
+    <program name="molprobity" properties="clash,bond-outlier,relative_rama_percentile,angle-outlier,absolute_rama_percentile,clashscore-full-length,phi,angles_rmsz,percent-rota-outliers-full-length,bonds_rmsz,relative_sidechain_percentile,num-H-reduce,absolute_sidechain_percentile,psi,rama,percent-rama-outliers-full-length,num_bonds_rmsz,rota,num_angles_rmsz" version="4.02b-467"/>
+    <program name="mogul" properties="no-ligands-for-mogul" version="unknown"/>
+    <program name="buster-report" properties="no-ligands-for-buster-report" version="unknown"/>
+    <program name="coreclust" properties="nmr_models_consistency_flag" version="unknown"/>
+    <program name="coreclust" properties="cyrange_domain_id,nmrclust_version,percentage_of_core,number_of_residues,cyrange_version,residue_string,nmrclust_representative,medoid_model,number_of_gaps,cyrange_error,rmsd,nmrclust_number_of_models,nmrclust_number_of_clusters,nmrclust_number_of_outliers,medoid_rmsd,nmrclust_error,validate,nmrclust_representative_model,cyrange_number_of_domains,nmrclust_cluster_id" version="2.18"/>
+    <program name="chemicalshifts" properties="panav_version,chemical_shift_completeness_full_length,rci_version,chemical_shift_completeness,shiftchecker_version" version="2.18"/>
+    <program name="percentiles" properties="numPDBids-relative-percentile-percent-rota-outliers,no-percentile-property,numPDBids-relative-percentile-clashscore,numPDBids-absolute-percentile-clashscore,absolute-percentile-clashscore,absolute-percentile-percent-rota-outliers,relative-percentile-clashscore,numPDBids-absolute-percentile-percent-rota-outliers,relative-percentile-percent-rota-outliers,numPDBids-relative-percentile-percent-rama-outliers,relative-percentile-percent-rama-outliers,absolute-percentile-percent-rama-outliers,numPDBids-absolute-percentile-percent-rama-outliers" version="20191225.v01 (using entries in the PDB archive December 25th 2019)"/>
+    <program name="nmrwriter" properties="percent-rota-outliers,percent-rama-outliers,clashscore" version="2.18"/>
+  </programs>
+</wwPDB-validation-information>
