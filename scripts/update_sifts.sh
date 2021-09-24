@@ -85,10 +85,6 @@ if [ $weekday -ge 1 ] && [ $weekday -le 4 ] ; then
 
  java -classpath $XSD2PGSCHEMA chksumstat --xml $SRC_DIR --xml-file-ext gz --sync $MD5_DIR --update --verbose > $chk_sum_log
 
- if [ ! -z $MTIME ] ; then
-  find $SRC_DIR -name "*.xml.gz" -mtime $MTIME | cut -d '/' -f 7 | cut -d '.' -f 1 > $chk_sum_log
- fi
-
  if [ -d $PDBML_SIFTS ] ; then
   while read pdb_id ; do
    [ -z "$pdb_id" ] || [[ "$pdb_id" =~ ^#.* ]] && continue

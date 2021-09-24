@@ -131,10 +131,6 @@ do
 
  java -classpath $XSD2PGSCHEMA chksumstat --xml $DST_DIR --sync $MD5_DIR --update --verbose > $chk_sum_log
 
- if [ ! -z $MTIME ] ; then
-  find $DST_DIR -name "*.xml" -mtime $MTIME | cut -d '/' -f 3 | cut -d '.' -f 1 > $chk_sum_log
- fi
-
  XML_DIR=$XML_BIRD/$subdir
 
  if [ -d $XML_DIR ] ; then
