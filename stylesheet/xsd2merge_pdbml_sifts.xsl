@@ -132,7 +132,7 @@ Unmatched entry ID in both documents (&lt;xsl:value-of select="$entry_id"/&gt; a
         &lt;xsl:variable name="segment_id"&gt;&lt;xsl:value-of select="position()"/&gt;&lt;/xsl:variable&gt;
         &lt;xsl:variable name="seq_id_start"&gt;&lt;xsl:value-of select="@start"/&gt;&lt;/xsl:variable&gt;
         &lt;xsl:variable name="seq_id_end"&gt;&lt;xsl:value-of select="@end"/&gt;&lt;/xsl:variable&gt;
-        &lt;xsl:variable name="seq_id_range"&gt;&lt;xsl:value-of select="number(@end) - number(@start)"/&gt;&lt;/xsl:variable&gt;
+        &lt;xsl:variable name="seq_id_range"&gt;&lt;xsl:value-of select="number(@end) - number(@start) + 1"/&gt;&lt;/xsl:variable&gt;
 
         &lt;xsl:variable name="max_range"&gt;
           &lt;xsl:for-each select="sifts:listMapRegion/sifts:mapRegion/sifts:db[@dbSource='UniProt']"&gt;
@@ -148,7 +148,7 @@ Unmatched entry ID in both documents (&lt;xsl:value-of select="$entry_id"/&gt; a
 
           &lt;PDBx:pdbx_sifts_unp_segments entity_id="{$entity_id}" asym_id="{$asym_id}" unp_acc="{$unp_acc}" segment_id="{$segment_id}" instance_id="{$instance_id}"&gt;
 
-            &lt;xsl:variable name="range"&gt;&lt;xsl:value-of select="number(@end) - number(@start)"/&gt;&lt;/xsl:variable&gt;
+            &lt;xsl:variable name="range"&gt;&lt;xsl:value-of select="number(@end) - number(@start) + 1"/&gt;&lt;/xsl:variable&gt;
 
             &lt;PDBx:unp_start&gt;&lt;xsl:value-of select="@start"/&gt;&lt;/PDBx:unp_start&gt;
             &lt;PDBx:unp_end&gt;&lt;xsl:value-of select="@end"/&gt;&lt;/PDBx:unp_end&gt;

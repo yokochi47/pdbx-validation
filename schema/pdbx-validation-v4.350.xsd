@@ -13162,7 +13162,7 @@ the primary EM volume.
       <xsd:element name="pdbx_em_density_distribution_marker" minOccurs="0" maxOccurs="unbounded">
         <xsd:complexType>
           <xsd:all>
-            <xsd:element name="map_value" minOccurs="1" maxOccurs="1" type="xsd:decimal">
+            <xsd:element name="map_value" minOccurs="1" maxOccurs="1" type="xsd:double">
               <xsd:annotation>
                 <xsd:documentation xml:lang="en">
 A certain map-value for the primary EM volume.
@@ -14721,7 +14721,7 @@ See also: https://www.wwpdb.org/validation/2017/EMValidationReportHelp#volume_es
                         </xsd:documentation>
               </xsd:annotation>
             </xsd:element>
-            <xsd:element name="enclosed_volume" minOccurs="1" maxOccurs="1" type="xsd:decimal">
+            <xsd:element name="enclosed_volume" minOccurs="1" maxOccurs="1" type="xsd:double">
               <xsd:annotation>
                 <xsd:documentation xml:lang="en">
 The enclosed volume by a given contour level.

@@ -3642,7 +3642,7 @@ CREATE TABLE pdbx_em_atom_inclusion_marker (
 CREATE TABLE pdbx_em_density_distribution_marker (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	entry_id TEXT ,
-	map_value DECIMAL ,
+	map_value DOUBLE PRECISION ,
 	voxel_count DECIMAL ,
 -- ATTRIBUTE
 	ordinal INTEGER NOT NULL ,
@@ -3822,7 +3822,7 @@ CREATE TABLE pdbx_em_volume_estimate_marker (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	entry_id TEXT ,
 	contour_level DECIMAL ,
-	enclosed_volume DECIMAL ,
+	enclosed_volume DOUBLE PRECISION ,
 -- ATTRIBUTE
 	ordinal INTEGER NOT NULL ,
 -- ATTRIBUTE

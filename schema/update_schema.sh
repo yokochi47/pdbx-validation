@@ -59,6 +59,8 @@ if [ -e $DIC_FILE ] ; then
 fi
 
 sed -i -e "s/xsd:integer/xsd:int/g" $DIC_PREFIX-v$DIC_VER.xsd
+sed -i -e 's/xsd:element name="enclosed_volume" minOccurs="1" maxOccurs="1" type="xsd:decimal"/xsd:element name="enclosed_volume" minOccurs="1" maxOccurs="1" type="xsd:double"/' $DIC_PREFIX-v$DIC_VER.xsd
+sed -i -e 's/xsd:element name="map_value" minOccurs="1" maxOccurs="1" type="xsd:decimal"/xsd:element name="map_value" minOccurs="1" maxOccurs="1" type="xsd:double"/' $DIC_PREFIX-v$DIC_VER.xsd
 
 pattern=3,4s/$DIC_PREFIX.xsd/$DIC_PREFIX-v$DIC_MAJOR_VER.xsd/
 

@@ -3509,7 +3509,7 @@ Unmatched entry ID in both documents (<xsl:value-of select="$entry_id"/> and <xs
         <xsl:variable name="segment_id"><xsl:value-of select="position()"/></xsl:variable>
         <xsl:variable name="seq_id_start"><xsl:value-of select="@start"/></xsl:variable>
         <xsl:variable name="seq_id_end"><xsl:value-of select="@end"/></xsl:variable>
-        <xsl:variable name="seq_id_range"><xsl:value-of select="number(@end) - number(@start)"/></xsl:variable>
+        <xsl:variable name="seq_id_range"><xsl:value-of select="number(@end) - number(@start) + 1"/></xsl:variable>
 
         <xsl:variable name="max_range">
           <xsl:for-each select="sifts:listMapRegion/sifts:mapRegion/sifts:db[@dbSource='UniProt']">
@@ -3525,7 +3525,7 @@ Unmatched entry ID in both documents (<xsl:value-of select="$entry_id"/> and <xs
 
           <PDBx:pdbx_sifts_unp_segments entity_id="{$entity_id}" asym_id="{$asym_id}" unp_acc="{$unp_acc}" segment_id="{$segment_id}" instance_id="{$instance_id}">
 
-            <xsl:variable name="range"><xsl:value-of select="number(@end) - number(@start)"/></xsl:variable>
+            <xsl:variable name="range"><xsl:value-of select="number(@end) - number(@start) + 1"/></xsl:variable>
 
             <PDBx:unp_start><xsl:value-of select="@start"/></PDBx:unp_start>
             <PDBx:unp_end><xsl:value-of select="@end"/></PDBx:unp_end>
