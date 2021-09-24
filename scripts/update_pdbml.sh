@@ -115,7 +115,7 @@ if [ ! -e $XSD2PGSCHEMA ] ; then
  ./scripts/update_extlibs.sh
 fi
 
-if [ $weekday -ge 1 ] && [ $weekday -le 4 ] ; then
+if ( [ $weekday -ge 1 ] && [ $weekday -le 4 ] ) || [ ! -d $SRC_DIR ] ; then
 
  rsync -avz --delete $RSYNC_PORT $PDB_MIRROR::$RSYNC_BASE_DIR/$SRC_DIR/ $SRC_DIR
 

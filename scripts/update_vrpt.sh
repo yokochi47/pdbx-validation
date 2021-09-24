@@ -116,7 +116,7 @@ if [ ! -e $XSD2PGSCHEMA ] ; then
  ./scripts/update_extlibs.sh
 fi
 
-if [ $weekday -ge 1 ] && [ $weekday -le 4 ] ; then
+if ( [ $weekday -ge 1 ] && [ $weekday -le 4 ] ) || [ ! -d $SRC_DIR ] ; then
 
  MD5_DIR=chk_sum_xml_vrpt
  FILE_EXT_DIGEST=_validation
