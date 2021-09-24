@@ -11,19 +11,20 @@ sifts_xml_file_list=sifts_xml_file_list
 
 find $SIFTS_XML -name '*.xml' > $sifts_xml_file_list
 
-while read sifts_xml_file
-do
+for proc_id in `seq 1 $MAXPROCS` ; do
 
- pdb_id=`basename $sifts_xml_file .xml`
+ ./scripts/delete_invalid_sifts_worker.sh -l $sifts_xml_file_list -n $proc_id"of"$MAXPROCS &
 
- sed -n 2,2p $sifts_xml_file | grep 'dbAccessionId="'$pdb_id'"' > /dev/null
+done
 
- if [ $? != 0 ] ; then
-  echo deleting $sifts_xml_file
-  rm -f $sifts_xml_file
- fi
+if [ $? != 0 ] ; then
 
-done < $sifts_xml_file_list
+ echo $0 aborted.
+ exit 1
+
+fi
+
+wait
 
 rm -f $sifts_xml_file_list
 
