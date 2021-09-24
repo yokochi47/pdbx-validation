@@ -178,7 +178,7 @@ File path | Document
 	- Revise RDF directory trees.
 	- Add resources for PRD/RDF.
 	- Fix stylesheets to remove category element that has no children. (PDB ID: 7lqs)
-	- Fix XSD type of '_pdbx_em_volume_estimate_marker.enclosed_volume' and '_pdbx_em_density_distribution_marker.map_value' (xsd:double).
+	- Fix XSD data type of '_pdbx_em_volume_estimate_marker.enclosed_volume' and '_pdbx_em_density_distribution_marker.map_value' (xsd:double).
 
 - **Sep 17, 2021**: Release v4.2.0
 	- Integration of [SIFTS](https://www.ebi.ac.uk/pdbe/docs/sifts/) into PDB/RDF that includes HTML links to GO, InterPro, Pfam, CATH domain, SCOP/SCOP2/SCOP2B, and Ensembl from '_pdbx_sifts_xref_db_segments' category.
