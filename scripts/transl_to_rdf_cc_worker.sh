@@ -42,30 +42,31 @@ PROC_ID=$(($PROC_ID - 1))
 proc_id=0
 total=`wc -l < $FILE_LIST`
 
-while read pdbml_gz_file
+while read pdbml_file
 do
 
  proc_id_mod=$(($proc_id % $MAXPROCS))
 
  if [ $proc_id_mod = $PROC_ID ] ; then
 
-  if [ ! -e $pdbml_gz_file ] ; then
+  if [ ! -e $pdbml_file ] ; then
 
    let proc_id++
    continue
 
   fi
 
-  cc_id=`basename $pdbml_gz_file .xml.gz`
+  cc_id=`basename $pdbml_file .xml`
   rdf_file=$WORK_DIR/$cc_id.rdf
   div_dir=$WORK_DIR/${cc_id: -1}
   err_file=$WORK_DIR/transl_to_rdf_cc_$cc_id.err
 
   if ( [ ! -e $rdf_file ] && [ ! -e $div_dir/`basename $rdf_file`.gz ] ) || [ -e $err_file ] ; then
 
-   pdbml_file=${pdbml_gz_file%.*} # remove the last '.gz'
+   #pdbml_file=${pdbml_gz_file%.*} # remove the last '.gz'
 
-   gunzip -c $pdbml_gz_file | xsltproc -o $rdf_file $CC2RDF_XSL - 2> $err_file && rm -f $err_file || ( rm -f $rdf_file ; cat $err_file ; exit 1 )
+   #gunzip -c $pdbml_gz_file | xsltproc -o $rdf_file $CC2RDF_XSL - 2> $err_file && rm -f $err_file || ( rm -f $rdf_file ; cat $err_file ; exit 1 )
+   xsltproc -o $rdf_file $CC2RDF_XSL $pdbml_file 2> $err_file && rm -f $err_file || ( rm -f $rdf_file ; cat $err_file ; exit 1 )
 
    if [ $has_rapper_command != "false" ] ; then
     rapper -q -c $rdf_file 2> $err_file && rm -f $err_file || ( cat $err_file ; exit 1 )

@@ -23,15 +23,20 @@ if [ ! -e $CC2RDF_XSL ] ; then
 
 fi
 
-if [ ! -d $PDBML_CC ] ; then
+#if [ ! -d $PDBML_CC ] ; then
+# ./scripts/update_cc.sh
+#fi
+
+if [ ! -d $XML_CC ] ; then
  ./scripts/update_cc.sh
 fi
 
-mkdir -p $COMPONENTS_RDF
+mkdir -p $RDF_CC
 
-last=`find $COMPONENTS_RDF -maxdepth 2 -name '*.rdf.gz' | wc -l 2> /dev/null`
-total=`find $PDBML_CC -maxdepth 1 -name '*.xml.gz' | wc -l 2> /dev/null`
-err=`find $COMPONENTS_RDF -maxdepth 1 -name '*.err' | wc -l 2> /dev/null`
+last=`find $RDF_CC -maxdepth 2 -name '*.rdf.gz' | wc -l 2> /dev/null`
+#total=`find $PDBML_CC -maxdepth 1 -name '*.xml.gz' | wc -l 2> /dev/null`
+total=`find $XML_CC -maxdepth 1 -name '*.xml' | wc -l 2> /dev/null`
+err=`find $RDF_CC -maxdepth 1 -name '*.err' | wc -l 2> /dev/null`
 
 if [ $err != 0 ] || [ $total != $last ] ; then
 
@@ -40,11 +45,12 @@ if [ $err != 0 ] || [ $total != $last ] ; then
 
  pdbml_file_list=pdbml_to_rdf_cc_file_list
 
- find $PDBML_CC -maxdepth 1 -name '*.xml.gz' > $pdbml_file_list
+ #find $PDBML_CC -maxdepth 1 -name '*.xml.gz' > $pdbml_file_list
+ find $XML_CC -maxdepth 1 -name '*.xml' > $pdbml_file_list
 
  for proc_id in `seq 1 $MAXPROCS` ; do
 
-  ./scripts/transl_to_rdf_cc_worker.sh -d $COMPONENTS_RDF -l $pdbml_file_list -n $proc_id"of"$MAXPROCS &
+  ./scripts/transl_to_rdf_cc_worker.sh -d $RDF_CC -l $pdbml_file_list -n $proc_id"of"$MAXPROCS &
 
  done
 
@@ -63,5 +69,5 @@ if [ $err != 0 ] || [ $total != $last ] ; then
 
 fi
 
-echo $COMPONENTS_RDF is up-to-date.
+echo $RDF_CC is up-to-date.
 

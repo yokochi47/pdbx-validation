@@ -160,6 +160,7 @@ File path | Document
 - [**Apache Maven (mvn)**](https://maven.apache.org), used to install external libraries.
 - [**Git (git)**](https://git-scm.com), used to install external libraries.
 - [**xsltproc**](http://xmlsoft.org/XSLT/), used to XSL translation v1.0.
+- [**aria2**](https://aria2.github.io/), used to accelerate FTP download.
 - [**mmCIF Dictionary Suite**](https://sw-tools.rcsb.org/apps/MMCIF-DICT-SUITE/index.html), optionally used to generate VRPT PDBML Schema from the wwPDB Validation Information Dictionary.
 - [**PDBML2CIF**](https://sw-tools.rcsb.org/apps/PDBML2CIF/index.html), optionally, used to generate mmCIF version of wwPDB validation reports.
 - [**Raptor RDF Syntax Library**](https://librdf.org/raptor/), optionally, used to validate RDF syntax.

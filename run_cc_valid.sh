@@ -20,8 +20,8 @@ done
 
 # chem_comp/RDF
 
-if [ -d $COMPONENTS_RDF ] ; then
-# ./scripts/validate_all_rdf.sh -d $COMPONENTS_RDF $DELETE_OPT
- ./scripts/validate_all_rdf_gz.sh -d $COMPONENTS_RDF $DELETE_OPT -m 2
+if [ -d $RDF_CC ] ; then
+# ./scripts/validate_all_rdf.sh -d $RDF_CC $DELETE_OPT
+ ./scripts/validate_all_rdf_gz.sh -d $RDF_CC $DELETE_OPT -m 2
 fi
 

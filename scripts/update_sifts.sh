@@ -2,6 +2,14 @@
 
 source ./scripts/env.sh
 
+if [ ! `which aria2c` ] ; then
+
+ echo "aria2c: command not found..."
+ echo "Please install aria2 (https://aria2.github.io/ZZ)."
+ exit 1
+
+fi
+
 MTIME=
 
 ARGV=`getopt --long -o "m:" "$@"`
@@ -38,19 +46,38 @@ if [ $weekday -ge 1 ] && [ $weekday -le 4 ] ; then
  sifts_xml_all=sifts_xml_all
  sifts_xml_unz=sifts_xml_unz
  sifts_xml_new=sifts_xml_new
+ sifts_xml_del=sifts_xml_del
  sifts_xml_list=sifts_xml_list
- sifts_xml_url=${SIFTS_XML_URL//\//\\\/}
+ sifts_xml_url=${SRC_DIR//\//\\\/}
 
  rm -f $pdb_chain_uniprot_tsv*
 
  wget ftp://ftp.ebi.ac.uk/pub/databases/msd/sifts/flatfiles/tsv/$pdb_chain_uniprot_tsv.gz && gunzip $pdb_chain_uniprot_tsv.gz
- sed -e "1,2d" $pdb_chain_uniprot_tsv | cut -f 1 | uniq > $sifts_xml_all
+ sed -e "1,2d" $pdb_chain_uniprot_tsv | cut -f 1 | uniq | sort > $sifts_xml_all
+ find $XML_DIR -name '*.xml' -size 0 -delete
  find $XML_DIR -name "*.xml" | cut -d '/' -f 2 | cut -d '.' -f 1 | sort > $sifts_xml_unz
  comm -23 $sifts_xml_all $sifts_xml_unz > $sifts_xml_new
- sed -e "s/^/ftp:\/\/$sifts_xml_url\//" $sifts_xml_new | sed -e "s/$/\.xml.gz/" > $sifts_xml_list
- aria2c -i $sifts_xml_list -j $MAXPROCS -d $SIFTS_XML_URL --allow-overwrite=true --auto-file-renaming=false
 
- rm -f $pdb_chain_uniprot_tsv $sifts_xml_list $sifts_xml_all $sifts_xml_unz $sifts_xml_new
+ comm -13 $sifts_xml_all $sifts_xml_unz > $sifts_xml_del
+
+ if [ -d $PDBML_SIFTS ] ; then
+  while read pdb_id ; do
+   [ -z "$pdb_id" ] || [[ "$pdb_id" =~ ^#.* ]] && continue
+   rm -f $PDBML_SIFTS/${pdb_id:1:2}/$pdb_id-noatom-sifts.xml.gz
+  done < $sifts_xml_del
+ fi
+
+ if [ -d $PDBML_EXT ] ; then
+  while read pdb_id ; do
+   [ -z "$pdb_id" ] || [[ "$pdb_id" =~ ^#.* ]] && continue
+   rm -f $PDBML_EXT/$pdb_id-noatom-ext.xml.gz
+  done < $sifts_xml_del
+ fi
+
+ sed -e "s/^/ftp:\/\/$sifts_xml_url\//" $sifts_xml_new | sed -e "s/$/\.xml.gz/" > $sifts_xml_list
+ aria2c -i $sifts_xml_list -j $MAXPROCS -d $SRC_DIR --allow-overwrite=true --auto-file-renaming=false
+
+ rm -f $pdb_chain_uniprot_tsv $sifts_xml_list $sifts_xml_all $sifts_xml_unz $sifts_xml_new $sifts_xml_del
 
  MD5_DIR=chk_sum_sifts_xml
 

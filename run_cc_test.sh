@@ -30,16 +30,16 @@ WORK_DIR=test
 
 # chem_comp/RDF
 
-mkdir -p $WORK_DIR/$COMPONENTS_RDF
+mkdir -p $WORK_DIR/$RDF_CC
 
-for pdbml_file in $WORK_DIR/$COMPONENTS_XML/*.xml ; do
+for pdbml_file in $WORK_DIR/$XML_CC/*.xml ; do
 
  ccid=`basename $pdbml_file .xml`
 
  echo
  echo Processing Chem comp ID: ${ccid^^}" ..."
 
- rdf_file=$WORK_DIR/$COMPONENTS_RDF/$ccid.rdf
+ rdf_file=$WORK_DIR/$RDF_CC/$ccid.rdf
 
  #java -jar $SAXON -s:$pdbml_file -xsl:$CC2RDF_XSL -o:$rdf_file || ( echo $0 aborted. ; exit 1 )
  xsltproc -o $rdf_file $CC2RDF_XSL $pdbml_file || ( echo $0 aborted. ; exit 1 )

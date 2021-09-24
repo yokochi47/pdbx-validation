@@ -6,5 +6,5 @@ rm -f $CC2RDF_XSL
 
 WORK_DIR=test
 
-rm -rf $WORK_DIR/$COMPONENTS_RDF
+rm -rf $WORK_DIR/$RDF_CC
 

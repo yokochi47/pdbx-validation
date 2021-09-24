@@ -38,6 +38,8 @@ if [ ! -e $XSD2PGSCHEMA ] ; then
  ./scripts/update_extlibs.sh
 fi
 
+mkdir -p $SRC_DIR
+
 if [ $weekday -ge 1 ] && [ $weekday -le 4 ] ; then
 
  wget -c -r -nv -np https://$PDB_MIRROR/$SRC_DIR/ -nH -R index.html* 2> /dev/null
@@ -100,7 +102,7 @@ do
 
  done
 
- cif_bird_file_list=cir_bird_file_list
+ cif_bird_file_list=cif_bird_file_list
 
  find $SRC_DIR/$subdir -name "*.cif" > $cif_bird_file_list
 

@@ -78,7 +78,7 @@ if [ ! `which xmllint 2> /dev/null` ] ; then
  has_xmllint_command=false
 fi
 
-PDBML_CC=chem_comp/PDBML
+#PDBML_CC=chem_comp/PDBML
 
 PDBX2PDBML2RDF_XSL=stylesheet/pdbx2pdbml2rdf.xsl
 PDBML2RDF_XSL=stylesheet/pdbml2rdf.xsl
@@ -97,9 +97,6 @@ _WURCS_CATALOG_XML=wurcs2glytoucan/wurcs_catalog.xml
 
 RDF=RDF
 
-COMPONENTS_XML=components-xml
-COMPONENTS_RDF=components-rdf
-
 SIFTS_XML_URL=ftp.ebi.ac.uk/pub/databases/msd/sifts/xml
 SIFTS_XML=sifts_xml
 
@@ -110,8 +107,12 @@ PDBML_NOATOM_SIFTS=XML-noatom-sifts
 XSD2MERGE_PDBML_SIFTS_XSL=stylesheet/xsd2merge_pdbml_sifts.xsl
 MERGE_PDBML_SIFTS_XSL=stylesheet/merge_pdbml_sifts.xsl
 
+CC_CIF_URL=ftp.pdbj.org/pub/pdb/refdata/chem_comp
+MMCIF_CC=pub/pdb/refdata/chem_comp
 MMCIF_BIRD=pub/pdb/refdata/bird
+XML_CC=XML-chem_comp
 XML_BIRD=XML-bird
+RDF_CC=RDF-chem_comp
 RDF_BIRD=RDF-bird
 
 pdbx_dic=mmcif_pdbx.dic
