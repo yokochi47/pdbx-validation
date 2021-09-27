@@ -287,9 +287,9 @@
             <PDBo:pdbx_reference_entity_src_nat.organism_scientific>Actinomycetes Streptomyces roseus MA 839-A1</PDBo:pdbx_reference_entity_src_nat.organism_scientific>
             <PDBo:pdbx_reference_entity_src_nat.source>PubMed</PDBo:pdbx_reference_entity_src_nat.source>
             <PDBo:pdbx_reference_entity_src_nat.taxid>66430</PDBo:pdbx_reference_entity_src_nat.taxid>
-            <PDBo:link_to_nadb rdf:resource="http://www.antibiotics.or.jp/journal/database/data-1.HTM#220065" rdfs:label="nadb:220065"/>
+            <PDBo:link_to_nadb rdf:resource="http://www.nih.go.jp/~jun/NADB/show.cgi/220065.html" rdfs:label="nadb:220065"/>
             <PDBo:link_to_taxonomy_source rdf:resource="http://purl.uniprot.org/taxonomy/66430" rdfs:label="taxonomy:66430"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/taxonomy/66430" rdfs:label="taxonomy:66430"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/taxonomy:66430" rdfs:label="taxonomy:66430"/>
           </PDBo:pdbx_reference_entity_src_nat>
         </PDBo:has_pdbx_reference_entity_src_nat>
         <PDBo:has_pdbx_reference_entity_src_nat>
@@ -303,9 +303,9 @@
             <PDBo:pdbx_reference_entity_src_nat.organism_scientific>Actinomycetes Streptomyces roseus MB262-M1</PDBo:pdbx_reference_entity_src_nat.organism_scientific>
             <PDBo:pdbx_reference_entity_src_nat.source>PubMed</PDBo:pdbx_reference_entity_src_nat.source>
             <PDBo:pdbx_reference_entity_src_nat.taxid>66430</PDBo:pdbx_reference_entity_src_nat.taxid>
-            <PDBo:link_to_nadb rdf:resource="http://www.antibiotics.or.jp/journal/database/data-1.HTM#220065" rdfs:label="nadb:220065"/>
+            <PDBo:link_to_nadb rdf:resource="http://www.nih.go.jp/~jun/NADB/show.cgi/220065.html" rdfs:label="nadb:220065"/>
             <PDBo:link_to_taxonomy_source rdf:resource="http://purl.uniprot.org/taxonomy/66430" rdfs:label="taxonomy:66430"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/taxonomy/66430" rdfs:label="taxonomy:66430"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/taxonomy:66430" rdfs:label="taxonomy:66430"/>
           </PDBo:pdbx_reference_entity_src_nat>
         </PDBo:has_pdbx_reference_entity_src_nat>
       </PDBo:pdbx_reference_entity_src_natCategory>

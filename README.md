@@ -170,6 +170,10 @@ File path | Document
 
 ## Release notes
 
+- **Sep 27, 2021**: Release v4.4.0
+	- Add resources for FAM/RDF.
+		- Update PDB/OWL, VRPT/OWL, XSLT codes to support external databases: CCDC, PubChem-Substance, ChemSpider, CAS, ChEBI, MeSH, ChEMBL, BindingDB, DrugBank, ChemDB.
+
 - **Sep 24, 2021**: Release v4.3.0
 	- Change namespace URIs:
 		- xmlns:PDBo="http://rdf.wwpdb.org/schema/pdbx-v50.owl#"

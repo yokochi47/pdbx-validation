@@ -1,0 +1,821 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<PDBx:datablock datablockName="FAM_001012"
+   xmlns:PDBx="http://pdbml.pdb.org/schema/pdbx-v50.xsd"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://pdbml.pdb.org/schema/pdbx-v50.xsd pdbx-v50.xsd">
+
+   <PDBx:citationCategory>
+      <PDBx:citation id="1">
+         <PDBx:journal_abbrev>Arch Pharm (Weinheim)</PDBx:journal_abbrev>
+         <PDBx:journal_volume>331</PDBx:journal_volume>
+         <PDBx:page_first>87</PDBx:page_first>
+         <PDBx:page_last>89</PDBx:page_last>
+         <PDBx:pdbx_database_id_PubMed>9557134</PDBx:pdbx_database_id_PubMed>
+         <PDBx:title>KNI-577, a potent small-sized HIV protease inhibitor based on the dipeptide containing the hydroxymethylcarbonyl isostere as an ideal transition-state mimic.</PDBx:title>
+         <PDBx:year>1998</PDBx:year>
+      </PDBx:citation>
+      <PDBx:citation id="2">
+         <PDBx:journal_abbrev>Adv Exp Med Biol.</PDBx:journal_abbrev>
+         <PDBx:journal_volume>362</PDBx:journal_volume>
+         <PDBx:page_first>445</PDBx:page_first>
+         <PDBx:page_last>449</PDBx:page_last>
+         <PDBx:pdbx_database_id_PubMed>8540355</PDBx:pdbx_database_id_PubMed>
+         <PDBx:title>Structure of HIV-1 protease with KNI-272: a transition state mimetic inhibitor containing allophenylnorstatine.</PDBx:title>
+         <PDBx:year>1995</PDBx:year>
+      </PDBx:citation>
+      <PDBx:citation id="3">
+         <PDBx:journal_abbrev>Nippon Rinsho.</PDBx:journal_abbrev>
+         <PDBx:journal_volume>51</PDBx:journal_volume>
+         <PDBx:page_first>S139</PDBx:page_first>
+         <PDBx:page_last>S145</PDBx:page_last>
+         <PDBx:pdbx_database_id_PubMed>8271377</PDBx:pdbx_database_id_PubMed>
+         <PDBx:title>Kynostatin (KNI)-272--a rationally designed tripeptide inhibitor of HIV protease</PDBx:title>
+         <PDBx:year>1993</PDBx:year>
+      </PDBx:citation>
+   </PDBx:citationCategory>
+   <PDBx:citation_authorCategory>
+      <PDBx:citation_author citation_id="1" name="Kiso, Y." ordinal="1"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="1" name="Yamaguchi, S." ordinal="2"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="1" name="Matsumoto, H." ordinal="3"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="1" name="Mimoto, T." ordinal="4"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="1" name="Kato, R." ordinal="5"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="1" name="Nojima, S." ordinal="6"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="1" name="Takaku, H." ordinal="7"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="1" name="Fukazawa, T." ordinal="8"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="1" name="Kimura, T." ordinal="9"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="1" name="Akaji, K." ordinal="10"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="2" name="Baldwin, E.T." ordinal="11"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="2" name="Bhat, T.N." ordinal="12"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="2" name="Gulnik, S." ordinal="13"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="2" name="Liu, B." ordinal="14"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="2" name="Kiso, Y." ordinal="15"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="2" name="Mitsuya, H." ordinal="16"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="2" name="Erickson, J.W." ordinal="17"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="3" name="Kiso, Y." ordinal="18"></PDBx:citation_author>
+   </PDBx:citation_authorCategory>
+   <PDBx:pdbx_family_prd_auditCategory>
+      <PDBx:pdbx_family_prd_audit action_type="Create family" date="2012-02-08" family_prd_id="FAM_001012">
+         <PDBx:processing_site>RCSB</PDBx:processing_site>
+      </PDBx:pdbx_family_prd_audit>
+      <PDBx:pdbx_family_prd_audit action_type="Initial release" date="2013-10-16" family_prd_id="FAM_001012">
+         <PDBx:processing_site>RCSB</PDBx:processing_site>
+      </PDBx:pdbx_family_prd_audit>
+   </PDBx:pdbx_family_prd_auditCategory>
+   <PDBx:pdbx_reference_molecule_annotationCategory>
+      <PDBx:pdbx_reference_molecule_annotation family_prd_id="FAM_001012" ordinal="1">
+         <PDBx:prd_id>PRD_000562</PDBx:prd_id>
+         <PDBx:source>PMID:8590019</PDBx:source>
+         <PDBx:text>Inhibitor of HIV-1 protease, EC: 3.4.23.16</PDBx:text>
+         <PDBx:type>function</PDBx:type>
+      </PDBx:pdbx_reference_molecule_annotation>
+      <PDBx:pdbx_reference_molecule_annotation family_prd_id="FAM_001012" ordinal="2">
+         <PDBx:prd_id>PRD_000566</PDBx:prd_id>
+         <PDBx:source>PMID:11926820</PDBx:source>
+         <PDBx:text>Inhibitor of HIV protease, EC: 3.4.23.16</PDBx:text>
+         <PDBx:type>function</PDBx:type>
+      </PDBx:pdbx_reference_molecule_annotation>
+      <PDBx:pdbx_reference_molecule_annotation family_prd_id="FAM_001012" ordinal="3">
+         <PDBx:prd_id>PRD_000567</PDBx:prd_id>
+         <PDBx:source>PMID:15103623</PDBx:source>
+         <PDBx:text>Inhibitor of HIV-1 protease, EC: 3.4.23.16</PDBx:text>
+         <PDBx:type>function</PDBx:type>
+      </PDBx:pdbx_reference_molecule_annotation>
+      <PDBx:pdbx_reference_molecule_annotation family_prd_id="FAM_001012" ordinal="4">
+         <PDBx:prd_id>PRD_000572</PDBx:prd_id>
+         <PDBx:source>DOI:10.2210/pdb3nls/pdb</PDBx:source>
+         <PDBx:text>Inhibitor or HIV-1 protease, EC: 3.4.23.16</PDBx:text>
+         <PDBx:type>Function</PDBx:type>
+      </PDBx:pdbx_reference_molecule_annotation>
+      <PDBx:pdbx_reference_molecule_annotation family_prd_id="FAM_001012" ordinal="5">
+         <PDBx:prd_id>PRD_000575</PDBx:prd_id>
+         <PDBx:source>PMID:20028396</PDBx:source>
+         <PDBx:text>Inhibitor of HIV-1 protease, EC: 3.4.23.16</PDBx:text>
+         <PDBx:type>Function</PDBx:type>
+      </PDBx:pdbx_reference_molecule_annotation>
+      <PDBx:pdbx_reference_molecule_annotation family_prd_id="FAM_001012" ordinal="6">
+         <PDBx:prd_id>PRD_000575</PDBx:prd_id>
+         <PDBx:source>PMID:21521654</PDBx:source>
+         <PDBx:text>Inhibitor of Plasmepsin-1, EC: 3.4.23.38</PDBx:text>
+         <PDBx:type>Function</PDBx:type>
+      </PDBx:pdbx_reference_molecule_annotation>
+      <PDBx:pdbx_reference_molecule_annotation family_prd_id="FAM_001012" ordinal="7">
+         <PDBx:prd_id>PRD_000575</PDBx:prd_id>
+         <PDBx:source>PMID:19285084</PDBx:source>
+         <PDBx:text>Inhibitor of histo-aspartic protease</PDBx:text>
+         <PDBx:type>Function</PDBx:type>
+      </PDBx:pdbx_reference_molecule_annotation>
+      <PDBx:pdbx_reference_molecule_annotation family_prd_id="FAM_001012" ordinal="8">
+         <PDBx:prd_id>PRD_000576</PDBx:prd_id>
+         <PDBx:source>PMID:17581235</PDBx:source>
+         <PDBx:text>Inhibitor of HIV-1 protease, EC: 3.4.23.16</PDBx:text>
+         <PDBx:type>Function</PDBx:type>
+      </PDBx:pdbx_reference_molecule_annotation>
+      <PDBx:pdbx_reference_molecule_annotation family_prd_id="FAM_001012" ordinal="9">
+         <PDBx:prd_id>PRD_000577</PDBx:prd_id>
+         <PDBx:source>PMID:20600105</PDBx:source>
+         <PDBx:text>Inhibitor of Human T-cell leukemia virus type 1 protease</PDBx:text>
+         <PDBx:type>Function</PDBx:type>
+      </PDBx:pdbx_reference_molecule_annotation>
+      <PDBx:pdbx_reference_molecule_annotation family_prd_id="FAM_001012" ordinal="10">
+         <PDBx:prd_id>PRD_000578</PDBx:prd_id>
+         <PDBx:source>PMID:20600105</PDBx:source>
+         <PDBx:text>Inhibitor of Human T-cell leukemia virus type 1 protease</PDBx:text>
+         <PDBx:type>Function</PDBx:type>
+      </PDBx:pdbx_reference_molecule_annotation>
+      <PDBx:pdbx_reference_molecule_annotation family_prd_id="FAM_001012" ordinal="11">
+         <PDBx:prd_id>PRD_000579</PDBx:prd_id>
+         <PDBx:source>PMID:20600105</PDBx:source>
+         <PDBx:text>Inhibitor of Human T-cell leukemia virus type 1 protease</PDBx:text>
+         <PDBx:type>Function</PDBx:type>
+      </PDBx:pdbx_reference_molecule_annotation>
+      <PDBx:pdbx_reference_molecule_annotation family_prd_id="FAM_001012" ordinal="12">
+         <PDBx:prd_id>PRD_000580</PDBx:prd_id>
+         <PDBx:source>PMID:20600105</PDBx:source>
+         <PDBx:text>Inhibitor of Human T-cell leukemia virus type 1 protease</PDBx:text>
+         <PDBx:type>Function</PDBx:type>
+      </PDBx:pdbx_reference_molecule_annotation>
+      <PDBx:pdbx_reference_molecule_annotation family_prd_id="FAM_001012" ordinal="13">
+         <PDBx:prd_id>PRD_000581</PDBx:prd_id>
+         <PDBx:source>PMID:20600105</PDBx:source>
+         <PDBx:text>Inhibitor of Human T-cell leukemia virus type 1 protease</PDBx:text>
+         <PDBx:type>Function</PDBx:type>
+      </PDBx:pdbx_reference_molecule_annotation>
+      <PDBx:pdbx_reference_molecule_annotation family_prd_id="FAM_001012" ordinal="14">
+         <PDBx:prd_id>PRD_000582</PDBx:prd_id>
+         <PDBx:source>PMID:20028396</PDBx:source>
+         <PDBx:text>Inhibitor of HIV-1 protease, EC: 3.4.23.16</PDBx:text>
+         <PDBx:type>Function</PDBx:type>
+      </PDBx:pdbx_reference_molecule_annotation>
+      <PDBx:pdbx_reference_molecule_annotation family_prd_id="FAM_001012" ordinal="15">
+         <PDBx:prd_id>PRD_000583</PDBx:prd_id>
+         <PDBx:source>PMID:19954246</PDBx:source>
+         <PDBx:text>Inhibitor of HIV-1 protease, EC: 3.4.23.16</PDBx:text>
+         <PDBx:type>Function</PDBx:type>
+      </PDBx:pdbx_reference_molecule_annotation>
+      <PDBx:pdbx_reference_molecule_annotation family_prd_id="FAM_001012" ordinal="16">
+         <PDBx:prd_id>PRD_000584</PDBx:prd_id>
+         <PDBx:source>PMID:19954246</PDBx:source>
+         <PDBx:text>Inhibitor of HIV-1 protease, EC: 3.4.23.16</PDBx:text>
+         <PDBx:type>Function</PDBx:type>
+      </PDBx:pdbx_reference_molecule_annotation>
+      <PDBx:pdbx_reference_molecule_annotation family_prd_id="FAM_001012" ordinal="17">
+         <PDBx:prd_id>PRD_000585</PDBx:prd_id>
+         <PDBx:source>PMID:17581235</PDBx:source>
+         <PDBx:text>Inhibitor of HIV-1 protease, EC: 3.4.23.16</PDBx:text>
+         <PDBx:type>Function</PDBx:type>
+      </PDBx:pdbx_reference_molecule_annotation>
+      <PDBx:pdbx_reference_molecule_annotation family_prd_id="FAM_001012" ordinal="18">
+         <PDBx:prd_id>PRD_001055</PDBx:prd_id>
+         <PDBx:source>PMID:21928835</PDBx:source>
+         <PDBx:text>Inhibitor of histo-aspartic protease</PDBx:text>
+         <PDBx:type>Function</PDBx:type>
+      </PDBx:pdbx_reference_molecule_annotation>
+   </PDBx:pdbx_reference_molecule_annotationCategory>
+   <PDBx:pdbx_reference_molecule_familyCategory>
+      <PDBx:pdbx_reference_molecule_family family_prd_id="FAM_001012">
+         <PDBx:name>allophenylnorstatine containing aspartic protease inhibitors</PDBx:name>
+         <PDBx:release_status>REL</PDBx:release_status>
+      </PDBx:pdbx_reference_molecule_family>
+   </PDBx:pdbx_reference_molecule_familyCategory>
+   <PDBx:pdbx_reference_molecule_featuresCategory>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_001012" ordinal="1" prd_id="PRD_000562">
+         <PDBx:source>PubChem</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>External_Reference_ID</PDBx:type>
+         <PDBx:value>60927</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_001012" ordinal="2" prd_id="PRD_000562">
+         <PDBx:source>BindingDB</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>External_Reference_ID</PDBx:type>
+         <PDBx:value>579</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_001012" ordinal="3" prd_id="PRD_000562">
+         <PDBx:source>ChEBI</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>External_Reference_ID</PDBx:type>
+         <PDBx:value>377419</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_001012" ordinal="4" prd_id="PRD_000562">
+         <PDBx:source>ChEMBL</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>External_Reference_ID</PDBx:type>
+         <PDBx:value>414640</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_001012" ordinal="5" prd_id="PRD_000562">
+         <PDBx:source>ChemSpider</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>External_Reference_ID</PDBx:type>
+         <PDBx:value>54898</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_001012" ordinal="6" prd_id="PRD_000562">
+         <PDBx:source>LeadScope</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>External_Reference_ID</PDBx:type>
+         <PDBx:value>LS-151155</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_001012" ordinal="7" prd_id="PRD_000562">
+         <PDBx:source>KEGG</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>KEGG_Compound_ID</PDBx:type>
+         <PDBx:value>C15655</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_001012" ordinal="8" prd_id="PRD_000562">
+         <PDBx:source>ChemIDplus</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>External_Reference_ID</PDBx:type>
+         <PDBx:value>147318818</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_001012" ordinal="9" prd_id="PRD_000562">
+         <PDBx:source>CAS</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>External_Reference_ID</PDBx:type>
+         <PDBx:value>147318-81-8</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_001012" ordinal="10" prd_id="PRD_000562">
+         <PDBx:source>MESH</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>External_Reference_ID</PDBx:type>
+         <PDBx:value>C077822</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_001012" ordinal="11" prd_id="PRD_000566">
+         <PDBx:source>PubChem</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>External_Reference_ID</PDBx:type>
+         <PDBx:value>446837</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_001012" ordinal="12" prd_id="PRD_000566">
+         <PDBx:source>CAS</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>External_Reference_ID</PDBx:type>
+         <PDBx:value>186538-00-1</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_001012" ordinal="13" prd_id="PRD_000566">
+         <PDBx:source>BindingDB</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>External_Reference_ID</PDBx:type>
+         <PDBx:value>580</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_001012" ordinal="14" prd_id="PRD_000566">
+         <PDBx:source>BindingDB</PDBx:source>
+         <PDBx:source_ordinal>2</PDBx:source_ordinal>
+         <PDBx:type>External_Reference_ID</PDBx:type>
+         <PDBx:value>780</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_001012" ordinal="15" prd_id="PRD_000566">
+         <PDBx:source>ChEMBL</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>External_Reference_ID</PDBx:type>
+         <PDBx:value>300891</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_001012" ordinal="16" prd_id="PRD_000566">
+         <PDBx:source>ChemSpider</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>External_Reference_ID</PDBx:type>
+         <PDBx:value>394090</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_001012" ordinal="17" prd_id="PRD_000566">
+         <PDBx:source>ChemIDplus</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>External_Reference_ID</PDBx:type>
+         <PDBx:value>186538001</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_001012" ordinal="18" prd_id="PRD_000566">
+         <PDBx:source>ChEBI</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>External_Reference_ID</PDBx:type>
+         <PDBx:value>178591</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_001012" ordinal="19" prd_id="PRD_000566">
+         <PDBx:source>MESH</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>External_Reference_ID</PDBx:type>
+         <PDBx:value>C120671</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_001012" ordinal="20" prd_id="PRD_000566">
+         <PDBx:source>DrugBank</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>External_Reference_ID</PDBx:type>
+         <PDBx:value>DB02668</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_001012" ordinal="21" prd_id="PRD_000567">
+         <PDBx:source>PubChem</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>External_Reference_ID</PDBx:type>
+         <PDBx:value>154072</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_001012" ordinal="22" prd_id="PRD_000567">
+         <PDBx:source>BindingDB</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>External_Reference_ID</PDBx:type>
+         <PDBx:value>714</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_001012" ordinal="23" prd_id="PRD_000567">
+         <PDBx:source>ChEMBL</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>External_Reference_ID</PDBx:type>
+         <PDBx:value>54191</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_001012" ordinal="24" prd_id="PRD_000567">
+         <PDBx:source>ChemSpider</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>External_Reference_ID</PDBx:type>
+         <PDBx:value>135784</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_001012" ordinal="25" prd_id="PRD_000567">
+         <PDBx:source>ChemIDplus</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>External_Reference_ID</PDBx:type>
+         <PDBx:value>186537859</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_001012" ordinal="26" prd_id="PRD_000567">
+         <PDBx:source>CAS</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>External_Reference_ID</PDBx:type>
+         <PDBx:value>186537-85-9</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_001012" ordinal="27" prd_id="PRD_000567">
+         <PDBx:source>ChEBI</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>External_Reference_ID</PDBx:type>
+         <PDBx:value>179297</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_001012" ordinal="28" prd_id="PRD_000572">
+         <PDBx:source>ChemSpider</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>External_Reference_ID</PDBx:type>
+         <PDBx:value>9585863</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_001012" ordinal="29" prd_id="PRD_000572">
+         <PDBx:source>PubChem</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>External_Reference_ID</PDBx:type>
+         <PDBx:value>11410970</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_001012" ordinal="30" prd_id="PRD_000572">
+         <PDBx:source>PubChem</PDBx:source>
+         <PDBx:source_ordinal>2</PDBx:source_ordinal>
+         <PDBx:type>External_Reference_ID</PDBx:type>
+         <PDBx:value>45482529</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_001012" ordinal="31" prd_id="PRD_000572">
+         <PDBx:source>BindingDB</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>External_Reference_ID</PDBx:type>
+         <PDBx:value>50299000</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_001012" ordinal="32" prd_id="PRD_000572">
+         <PDBx:source>ChEMBL</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>External_Reference_ID</PDBx:type>
+         <PDBx:value>584192</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_001012" ordinal="33" prd_id="PRD_000572">
+         <PDBx:source>ChEBI</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>External_Reference_ID</PDBx:type>
+         <PDBx:value>670359</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_001012" ordinal="34" prd_id="PRD_000575">
+         <PDBx:source>PubChem</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>External_Reference_ID</PDBx:type>
+         <PDBx:value>9895503</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_001012" ordinal="35" prd_id="PRD_000575">
+         <PDBx:source>ChEBI</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>External_Reference_ID</PDBx:type>
+         <PDBx:value>483805</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_001012" ordinal="36" prd_id="PRD_000575">
+         <PDBx:source>BindingDB</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>External_Reference_ID</PDBx:type>
+         <PDBx:value>50209559</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_001012" ordinal="37" prd_id="PRD_000575">
+         <PDBx:source>ChEMBL</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>External_Reference_ID</PDBx:type>
+         <PDBx:value>231522</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_001012" ordinal="38" prd_id="PRD_000575">
+         <PDBx:source>ChemSpider</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>External_Reference_ID</PDBx:type>
+         <PDBx:value>8071169</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_001012" ordinal="39" prd_id="PRD_000576">
+         <PDBx:source>PubChem</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>External_Reference_ID</PDBx:type>
+         <PDBx:value>16122613</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_001012" ordinal="40" prd_id="PRD_000576">
+         <PDBx:source>ChemSpider</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>External_Reference_ID</PDBx:type>
+         <PDBx:value>17279528</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_001012" ordinal="41" prd_id="PRD_000577">
+         <PDBx:source>PubChem</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>External_Reference_ID</PDBx:type>
+         <PDBx:value>46238528</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_001012" ordinal="42" prd_id="PRD_000578">
+         <PDBx:source>PubChem</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>External_Reference_ID</PDBx:type>
+         <PDBx:value>44593400</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_001012" ordinal="43" prd_id="PRD_000578">
+         <PDBx:source>ChEBI</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>External_Reference_ID</PDBx:type>
+         <PDBx:value>547637</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_001012" ordinal="44" prd_id="PRD_000578">
+         <PDBx:source>BindingDB</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>External_Reference_ID</PDBx:type>
+         <PDBx:value>50242882</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_001012" ordinal="45" prd_id="PRD_000578">
+         <PDBx:source>ChEMBL</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>External_Reference_ID</PDBx:type>
+         <PDBx:value>499979</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_001012" ordinal="46" prd_id="PRD_000579">
+         <PDBx:source>PubChem</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>External_Reference_ID</PDBx:type>
+         <PDBx:value>46238529</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_001012" ordinal="47" prd_id="PRD_000580">
+         <PDBx:source>PubChem</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>External_Reference_ID</PDBx:type>
+         <PDBx:value>46238530</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_001012" ordinal="48" prd_id="PRD_000581">
+         <PDBx:source>PubChem</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>External_Reference_ID</PDBx:type>
+         <PDBx:value>46238531</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_001012" ordinal="49" prd_id="PRD_000582">
+         <PDBx:source>PubChem</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>External_Reference_ID</PDBx:type>
+         <PDBx:value>44588310</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_001012" ordinal="50" prd_id="PRD_000582">
+         <PDBx:source>ChEBI</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>External_Reference_ID</PDBx:type>
+         <PDBx:value>613263</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_001012" ordinal="51" prd_id="PRD_000582">
+         <PDBx:source>BindingDB</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>External_Reference_ID</PDBx:type>
+         <PDBx:value>50273738</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_001012" ordinal="52" prd_id="PRD_000582">
+         <PDBx:source>ChEMBL</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>External_Reference_ID</PDBx:type>
+         <PDBx:value>510300</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_001012" ordinal="53" prd_id="PRD_000583">
+         <PDBx:source>PubChem</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>External_Reference_ID</PDBx:type>
+         <PDBx:value>44588309</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_001012" ordinal="54" prd_id="PRD_000583">
+         <PDBx:source>ChEBI</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>External_Reference_ID</PDBx:type>
+         <PDBx:value>613262</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_001012" ordinal="55" prd_id="PRD_000583">
+         <PDBx:source>BindingDB</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>External_Reference_ID</PDBx:type>
+         <PDBx:value>50273737</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_001012" ordinal="56" prd_id="PRD_000583">
+         <PDBx:source>ChEMBL</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>External_Reference_ID</PDBx:type>
+         <PDBx:value>509191</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_001012" ordinal="57" prd_id="PRD_000584">
+         <PDBx:source>PubChem</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>External_Reference_ID</PDBx:type>
+         <PDBx:value>9872768</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_001012" ordinal="58" prd_id="PRD_000584">
+         <PDBx:source>ChEBI</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>External_Reference_ID</PDBx:type>
+         <PDBx:value>672793</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_001012" ordinal="59" prd_id="PRD_000584">
+         <PDBx:source>ChEMBL</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>External_Reference_ID</PDBx:type>
+         <PDBx:value>573975</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_001012" ordinal="60" prd_id="PRD_000584">
+         <PDBx:source>ChemSpider</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>External_Reference_ID</PDBx:type>
+         <PDBx:value>8048457</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_001012" ordinal="61" prd_id="PRD_000585">
+         <PDBx:source>PubChem</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>External_Reference_ID</PDBx:type>
+         <PDBx:value>16122614</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_001012" ordinal="62" prd_id="PRD_000585">
+         <PDBx:source>ChEBI</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>External_Reference_ID</PDBx:type>
+         <PDBx:value>483924</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_001012" ordinal="63" prd_id="PRD_000585">
+         <PDBx:source>BindingDB</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>External_Reference_ID</PDBx:type>
+         <PDBx:value>50209552</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_001012" ordinal="64" prd_id="PRD_000585">
+         <PDBx:source>ChEMBL</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>External_Reference_ID</PDBx:type>
+         <PDBx:value>440965</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_001012" ordinal="65" prd_id="PRD_000585">
+         <PDBx:source>ChemSpider</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>External_Reference_ID</PDBx:type>
+         <PDBx:value>17279529</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_001012" ordinal="66" prd_id="PRD_001055">
+         <PDBx:source>PubChem</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>External_Reference_ID</PDBx:type>
+         <PDBx:value>44425681</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_001012" ordinal="67" prd_id="PRD_001055">
+         <PDBx:source>ChEMBL</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>External_Reference_ID</PDBx:type>
+         <PDBx:value>411610</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+   </PDBx:pdbx_reference_molecule_featuresCategory>
+   <PDBx:pdbx_reference_molecule_listCategory>
+      <PDBx:pdbx_reference_molecule_list family_prd_id="FAM_001012" prd_id="PRD_000562"></PDBx:pdbx_reference_molecule_list>
+      <PDBx:pdbx_reference_molecule_list family_prd_id="FAM_001012" prd_id="PRD_000566"></PDBx:pdbx_reference_molecule_list>
+      <PDBx:pdbx_reference_molecule_list family_prd_id="FAM_001012" prd_id="PRD_000567"></PDBx:pdbx_reference_molecule_list>
+      <PDBx:pdbx_reference_molecule_list family_prd_id="FAM_001012" prd_id="PRD_000572"></PDBx:pdbx_reference_molecule_list>
+      <PDBx:pdbx_reference_molecule_list family_prd_id="FAM_001012" prd_id="PRD_000575"></PDBx:pdbx_reference_molecule_list>
+      <PDBx:pdbx_reference_molecule_list family_prd_id="FAM_001012" prd_id="PRD_000576"></PDBx:pdbx_reference_molecule_list>
+      <PDBx:pdbx_reference_molecule_list family_prd_id="FAM_001012" prd_id="PRD_000577"></PDBx:pdbx_reference_molecule_list>
+      <PDBx:pdbx_reference_molecule_list family_prd_id="FAM_001012" prd_id="PRD_000578"></PDBx:pdbx_reference_molecule_list>
+      <PDBx:pdbx_reference_molecule_list family_prd_id="FAM_001012" prd_id="PRD_000579"></PDBx:pdbx_reference_molecule_list>
+      <PDBx:pdbx_reference_molecule_list family_prd_id="FAM_001012" prd_id="PRD_000580"></PDBx:pdbx_reference_molecule_list>
+      <PDBx:pdbx_reference_molecule_list family_prd_id="FAM_001012" prd_id="PRD_000581"></PDBx:pdbx_reference_molecule_list>
+      <PDBx:pdbx_reference_molecule_list family_prd_id="FAM_001012" prd_id="PRD_000582"></PDBx:pdbx_reference_molecule_list>
+      <PDBx:pdbx_reference_molecule_list family_prd_id="FAM_001012" prd_id="PRD_000583"></PDBx:pdbx_reference_molecule_list>
+      <PDBx:pdbx_reference_molecule_list family_prd_id="FAM_001012" prd_id="PRD_000584"></PDBx:pdbx_reference_molecule_list>
+      <PDBx:pdbx_reference_molecule_list family_prd_id="FAM_001012" prd_id="PRD_000585"></PDBx:pdbx_reference_molecule_list>
+      <PDBx:pdbx_reference_molecule_list family_prd_id="FAM_001012" prd_id="PRD_001055"></PDBx:pdbx_reference_molecule_list>
+   </PDBx:pdbx_reference_molecule_listCategory>
+   <PDBx:pdbx_reference_molecule_synonymsCategory>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_001012" ordinal="1" prd_id="PRD_000562">
+         <PDBx:name>KNI-272</PDBx:name>
+         <PDBx:source>PDB</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_001012" ordinal="2" prd_id="PRD_000562">
+         <PDBx:name>(N-TERT-BUTYL-THIOPROLINE)-(5-ISOQUINOLYLOXYACETYL-METHYLTHIOALANINE)-ALLOPHENYLNORSTATINE</PDBx:name>
+         <PDBx:source>PDB</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_001012" ordinal="3" prd_id="PRD_000562">
+         <PDBx:name>kni-272</PDBx:name>
+         <PDBx:source>PubChem</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_001012" ordinal="4" prd_id="PRD_000562">
+         <PDBx:name>Kynostatin 272</PDBx:name>
+         <PDBx:source>PubChem</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_001012" ordinal="5" prd_id="PRD_000562">
+         <PDBx:name>Kynostatin-272</PDBx:name>
+         <PDBx:source>PubChem</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_001012" ordinal="6" prd_id="PRD_000562">
+         <PDBx:name>iQoa-Mta-Apns-Thz-NH-tBu</PDBx:name>
+         <PDBx:source>PubChem</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_001012" ordinal="7" prd_id="PRD_000562">
+         <PDBx:name>4-Thiazolidinecarboxamide, N-(1,1-dimethylethyl)-3-(2-hydroxy-3-((2-(((5-isoquinolinyloxy)acetyl)amino)-3-(methylthio)-1-oxopropyl)amino)-1-oxo-4-phenylbutyl)-, (4R-(3(2S*,3S*(R*)),4R*))-</PDBx:name>
+         <PDBx:source>PubChem</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_001012" ordinal="8" prd_id="PRD_000562">
+         <PDBx:name>5Isoquinoline-O-CH2-CO-Mta-(2S,3S)-AHPBA-Thz-NH-tBu</PDBx:name>
+         <PDBx:source>PubChem</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_001012" ordinal="9" prd_id="PRD_000562">
+         <PDBx:name>(R)-3-((2S,3S)-2-Hydroxy-3-{(R)-2-[2-(isoquinolin-5-yloxy)-acetylamino]-3-methylsulfanyl-propionylamino}-4-phenyl-butyryl)-thiazolidine-4-carboxylic acid tert-butylamide</PDBx:name>
+         <PDBx:source>PubChem</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_001012" ordinal="10" prd_id="PRD_000562">
+         <PDBx:name>(R)-N-tert-butyl-3-((2S,3S)-2-hydroxy-3-((R)-2-(2-(isoquinolin-5-yloxy)acetamido)-3-(methylthio)propanamido)-4-phenylbutanoyl)thiazolidine-4-carboxamide</PDBx:name>
+         <PDBx:source>PubChem</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_001012" ordinal="11" prd_id="PRD_000562">
+         <PDBx:name>N-(1,1-Dimethylethyl)-3-[2-hydroxy-3-[[2-[[(5-isoquinolinyloxy)acetyl]amino]-3-methylthio)-1-oxopropyl]amino]-1-oxo-4-phenylbutyl]-4-thiazolidinecarboxamide, [4R-[3[2S*,3S*(R*)],4R*]]</PDBx:name>
+         <PDBx:source>PubChem</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_001012" ordinal="12" prd_id="PRD_000562">
+         <PDBx:name>(4R)-N-tert-butyl-3-[(2S,3S)-2-hydroxy-3-[[(2R)-2-[(2-isoquinolin-5-yloxyacetyl)amino]-3-methylsulfanylpropanoyl]amino]-4-phenylbutanoyl]-1,3-thiazolidine-4-carboxamide</PDBx:name>
+         <PDBx:source>PubChem</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_001012" ordinal="13" prd_id="PRD_000562">
+         <PDBx:name>KNI 272</PDBx:name>
+         <PDBx:source>SciFinder</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_001012" ordinal="14" prd_id="PRD_000562">
+         <PDBx:name>Kynostatin</PDBx:name>
+         <PDBx:source>SciFinder</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_001012" ordinal="15" prd_id="PRD_000562">
+         <PDBx:name>Kynostatin 272</PDBx:name>
+         <PDBx:source>SciFinder</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_001012" ordinal="16" prd_id="PRD_000562">
+         <PDBx:name>NSC 651714</PDBx:name>
+         <PDBx:source>SciFinder</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_001012" ordinal="17" prd_id="PRD_000566">
+         <PDBx:name>JE-2147</PDBx:name>
+         <PDBx:source>PDB</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_001012" ordinal="18" prd_id="PRD_000566">
+         <PDBx:name>AG1776</PDBx:name>
+         <PDBx:source>PDB</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_001012" ordinal="19" prd_id="PRD_000566">
+         <PDBx:name>KNI-764</PDBx:name>
+         <PDBx:source>PubChem</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_001012" ordinal="20" prd_id="PRD_000566">
+         <PDBx:name>4-Thiazolidinecarboxamide, 3-((2S,3S)-2-hydroxy-3-((3-hydroxy-2-methylbenzoyl)amino)-1-oxo-4-phenylbutyl)-5,5-dimethyl-N-((2-methylphenyl)methyl)-, (4R)-</PDBx:name>
+         <PDBx:source>PubChem</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_001012" ordinal="21" prd_id="PRD_000566">
+         <PDBx:name>(R)-3-[(2S,3S)-2-Hydroxy-3-(3-hydroxy-2-methyl-benzoylamino)-4-phenyl-butyryl]-5,5-dimethyl-thiazolidine-4-carboxylic acid 2-methyl-benzylamide</PDBx:name>
+         <PDBx:source>PubChem</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_001012" ordinal="22" prd_id="PRD_000566">
+         <PDBx:name>(R)-N-(2-METHYLBENZYL)-3-[(2S,3S)-2-HYDROXY-3-(3-HYDROXY-2-METHYLBENZOYL)AMINO-4-PHENYLBUTANOYL]-5,5-DIMETHYL-1,3-THIAZOLIDINE-4-CARBOXAMIDE</PDBx:name>
+         <PDBx:source>PubChem</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_001012" ordinal="23" prd_id="PRD_000566">
+         <PDBx:name>(4R)-3-[(2S,3S)-2-hydroxy-3-[(3-hydroxy-2-methylbenzoyl)amino]-4-phenylbutanoyl]-5,5-dimethyl-N-[(2-methylphenyl)methyl]-1,3-thiazolidine-4-carboxamide</PDBx:name>
+         <PDBx:source>PubChem</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_001012" ordinal="24" prd_id="PRD_000566">
+         <PDBx:name>AG 1776</PDBx:name>
+         <PDBx:source>Scifinder</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_001012" ordinal="25" prd_id="PRD_000566">
+         <PDBx:name>JE 2147</PDBx:name>
+         <PDBx:source>Scifinder</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_001012" ordinal="26" prd_id="PRD_000566">
+         <PDBx:name>KNI 764</PDBx:name>
+         <PDBx:source>Scifinder</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_001012" ordinal="27" prd_id="PRD_000566">
+         <PDBx:name>SM 319777</PDBx:name>
+         <PDBx:source>Scifinder</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_001012" ordinal="28" prd_id="PRD_000567">
+         <PDBx:name>JE-533</PDBx:name>
+         <PDBx:source>PubChem</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_001012" ordinal="29" prd_id="PRD_000567">
+         <PDBx:name>Je 533</PDBx:name>
+         <PDBx:source>PubChem</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_001012" ordinal="30" prd_id="PRD_000567">
+         <PDBx:name>KNI-577</PDBx:name>
+         <PDBx:source>PubChem</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_001012" ordinal="31" prd_id="PRD_000567">
+         <PDBx:name>(R)-3-[(2S,3S)-2-Hydroxy-3-(3-hydroxy-2-methyl-benzoylamino)-4-phenyl-butyryl]-5,5-dimethyl-thiazolidine-4-carboxylic acid tert-butylamide</PDBx:name>
+         <PDBx:source>PubChem</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_001012" ordinal="32" prd_id="PRD_000567">
+         <PDBx:name>4-Thiazolidinecarboxamide, N-(1,1-dimethylethyl)-3-((2S,3S)-2-hydroxy-3-((3-hydroxy-2-methylbenzoyl)amino)-1-oxo-4-phenylbutyl)-5,5-dimethyl-,(4R)-</PDBx:name>
+         <PDBx:source>PubChem</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_001012" ordinal="33" prd_id="PRD_000567">
+         <PDBx:name>N-(3-{(4R)-4-[N-(tert-butyl)carbamoyl]-5,5-dimethyl(1,3-thiazolidin-3-yl)}(1S,2S)-2-hydroxy-3-oxo-1-benzylpropyl) (3-hydroxy-2-methylphenyl)carboxamide</PDBx:name>
+         <PDBx:source>PubChem</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_001012" ordinal="34" prd_id="PRD_000567">
+         <PDBx:name>(4R)-N-tert-butyl-3-[(2S,3S)-2-hydroxy-3-[(3-hydroxy-2-methylbenzoyl)amino]-4-phenylbutanoyl]-5,5-dimethyl-1,3-thiazolidine-4-carboxamide</PDBx:name>
+         <PDBx:source>PubChem</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_001012" ordinal="35" prd_id="PRD_000567">
+         <PDBx:name>JE 533</PDBx:name>
+         <PDBx:source>Scifinder</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_001012" ordinal="36" prd_id="PRD_000567">
+         <PDBx:name>KNI 577</PDBx:name>
+         <PDBx:source>Scifinder</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_001012" ordinal="37" prd_id="PRD_000576">
+         <PDBx:name>(4R)-N-[(1S,2R)-2-hydroxy-2,3-dihydro-1H-inden-1-yl]-3-[(2S,3S)-2-hydroxy-3-[[(2R)-2-[(2-isoquinolin-5-yloxyacetyl)amino]-3-methylsulfonylpropanoyl]amino]-4-phenylbutanoyl]-5,5-dimethyl-1,3-thiazolidine-4-carboxamide</PDBx:name>
+         <PDBx:source>PubChem</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_001012" ordinal="38" prd_id="PRD_000585">
+         <PDBx:name>(4R)-N-[(1S,2R)-2-hydroxy-2,3-dihydro-1H-inden-1-yl]-3-[(2S,3S)-2-hydroxy-3-[[(2R)-2-[(2-isoquinolin-5-yloxyacetyl)amino]-3-methylsulfanylpropanoyl]amino]-4-phenylbutanoyl]-5,5-dimethyl-1,3-thiazolidine-4-carboxamide</PDBx:name>
+         <PDBx:source>PubChem</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_001012" ordinal="39" prd_id="PRD_000584">
+         <PDBx:name>(R)-N-(2-Methylallyl)-3-[(2S,3S)-3-(4-amino-2,6-dimethyphenoxyacetyl)</PDBx:name>
+         <PDBx:source>PubChem</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_001012" ordinal="40" prd_id="PRD_000584">
+         <PDBx:name>(4R)-3-[(2S,3S)-3-[[2-(4-amino-2,6-dimethylphenoxy)acetyl]amino]-2-hydroxy-4-phenylbutanoyl]-5,5-dimethyl-N-(2-methylprop-2-enyl)-1,3-thiazolidine-4-carboxamide</PDBx:name>
+         <PDBx:source>PubChem</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_001012" ordinal="41" prd_id="PRD_000575">
+         <PDBx:name>(4R)-3-[(2S,3S)-3-[[2-(2,6-dimethylphenoxy)acetyl]amino]-2-hydroxy-4-phenylbutanoyl]-N-[(1S,2R)-2-hydroxy-2,3-dihydro-1H-inden-1-yl]-5,5-dimethyl-1,3-thiazolidine-4-carboxamide</PDBx:name>
+         <PDBx:source>PubChem</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_001012" ordinal="42" prd_id="PRD_000582">
+         <PDBx:name>(4R)-3-[(2S,3S)-3-[[2-(2,6-dichlorophenoxy)acetyl]amino]-2-hydroxy-4-phenylbutanoyl]-N-[(1S,2R)-2-hydroxy-2,3-dihydro-1H-inden-1-yl]-5,5-dimethyl-1,3-thiazolidine-4-carboxamide</PDBx:name>
+         <PDBx:source>PubChem</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_001012" ordinal="43" prd_id="PRD_000583">
+         <PDBx:name>(4R)-3-[(2S,3S)-3-[[2-(2,6-difluorophenoxy)acetyl]amino]-2-hydroxy-4-phenylbutanoyl]-N-[(1S,2R)-2-hydroxy-2,3-dihydro-1H-inden-1-yl]-5,5-dimethyl-1,3-thiazolidine-4-carboxamide</PDBx:name>
+         <PDBx:source>PubChem</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_001012" ordinal="44" prd_id="PRD_000577">
+         <PDBx:name>N-[(2s,3s)-4-{(4r)-4-[(2,2-Dimethylpropyl)carbamoyl]-5,5-Dimethyl-1,3-Thiazolidin-3-Yl}-3-Hydroxy-4-Oxo-1-Phenylbutan-2-Yl]-N~2~-{(2s)-2-[(Methoxycarbonyl)amino]-2-Phenylacetyl}-3-Methyl-L-Valinamide</PDBx:name>
+         <PDBx:source>PubChem</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_001012" ordinal="45" prd_id="PRD_000577">
+         <PDBx:name>N-[(1S)-2-[[(2S)-1-[[(2S,3S)-4-[(4R)-4-(2,2-dimethylpropylcarbamoyl)-5,5-dimethyl-1,3-thiazolidin-3-yl]-3-hydroxy-4-oxo-1-phenylbutan-2-yl]amino]-3,3-dimethyl-1-oxobutan-2-yl]amino]-2-oxo-1-phenylethyl]carbamate</PDBx:name>
+         <PDBx:source>PubChem</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_001012" ordinal="46" prd_id="PRD_000578">
+         <PDBx:name>(4r)-3-[(2s,3s)-3-[[(2s)-2-[[(2s)-2-Azanyl-2-Phenyl-Ethanoyl]amino]-3,3-Dimethyl-Butanoyl]amino]-2-Hydroxy-4-Phenyl-Butanoyl]-5,5-Dimethyl-N-(2-Methylpropyl)-1,3-Thiazolidine-4-Carboxamide</PDBx:name>
+         <PDBx:source>PubChem</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_001012" ordinal="47" prd_id="PRD_000578">
+         <PDBx:name>(4R)-3-[(2S,3S)-3-[[(2S)-2-[[(2S)-2-amino-2-phenylacetyl]amino]-3,3-dimethylbutanoyl]amino]-2-hydroxy-4-phenylbutanoyl]-5,5-dimethyl-N-(2-methylpropyl)-1,3-thiazolidine-4-carboxamide</PDBx:name>
+         <PDBx:source>PubChem</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_001012" ordinal="48" prd_id="PRD_000579">
+         <PDBx:name>(4r)-3-[(2s,3s)-3-[[(2s)-2-[[(2s)-2-Azanyl-2-Phenyl-Ethanoyl]amino]-3,3-Dimethyl-Butanoyl]amino]-2-Hydroxy-4-Phenyl-Butanoyl]-5,5-Dimethyl-N-[(2r)-3-Methylbutan-2-Yl]-1,3-Thiazolidine-4-Carboxamide</PDBx:name>
+         <PDBx:source>PubChem</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_001012" ordinal="49" prd_id="PRD_000579">
+         <PDBx:name>(4R)-3-[(2S,3S)-3-[[(2S)-2-[[(2S)-2-amino-2-phenylacetyl]amino]-3,3-dimethylbutanoyl]amino]-2-hydroxy-4-phenylbutanoyl]-5,5-dimethyl-N-[(2R)-3-methylbutan-2-yl]-1,3-thiazolidine-4-carboxamide</PDBx:name>
+         <PDBx:source>PubChem</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_001012" ordinal="50" prd_id="PRD_000580">
+         <PDBx:name>(4r)-3-[(2s,3s)-3-[[(2s)-2-[[(2s)-2-Azanyl-2-Phenyl-Ethanoyl]amino]-3,3-Dimethyl-Butanoyl]amino]-2-Hydroxy-4-Phenyl-Butanoyl]-N-[(2r)-3,3-Dimethylbutan-2-Yl]-5,5-Dimethyl-1,3-Thiazolidine-4-Carboxamide</PDBx:name>
+         <PDBx:source>PubChem</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_001012" ordinal="51" prd_id="PRD_000580">
+         <PDBx:name>(4R)-3-[(2S,3S)-3-[[(2S)-2-[[(2S)-2-amino-2-phenylacetyl]amino]-3,3-dimethylbutanoyl]amino]-2-hydroxy-4-phenylbutanoyl]-N-[(2R)-3,3-dimethylbutan-2-yl]-5,5-dimethyl-1,3-thiazolidine-4-carboxamide</PDBx:name>
+         <PDBx:source>PubChem</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_001012" ordinal="52" prd_id="PRD_000581">
+         <PDBx:name>N-{(1s,2s)-1-Benzyl-3-[(4r)-5,5-Dimethyl-4-{[(1r)-1,2,2-Trimethylpropyl]carbamoyl}-1,3-Thiazolidin-3-Yl]-2-Hydroxy-3-Oxopropyl}-3-Methyl-N~2~-{(2s)-2-[(Morpholin-4-Ylacetyl)amino]-2-Phenylacetyl}-L-Valinamide</PDBx:name>
+         <PDBx:source>PubChem</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_001012" ordinal="53" prd_id="PRD_000581">
+         <PDBx:name>(4R)-N-[(2R)-3,3-dimethylbutan-2-yl]-3-[(2S,3S)-3-[[(2S)-3,3-dimethyl-2-[[(2S)-2-[(2-morpholin-4-ylacetyl)amino]-2-phenylacetyl]amino]butanoyl]amino]-2-hydroxy-4-phenylbutanoyl]-5,5-dimethyl-1,3-thiazolidine-4-carboxamide</PDBx:name>
+         <PDBx:source>PubChem</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_001012" ordinal="54" prd_id="PRD_001055">
+         <PDBx:name>(4r)-N-[(1s,2r)-2-Hydroxy-2,3-Dihydro-1h-Inden-1-Yl]-3-[(2s,3s)-2-Hydroxy-3-{[s-Methyl-N-(Phenylacetyl)-L-Cysteinyl]amino}-4-Phenylbutanoyl]-5,5-Dimethyl-1,3-Thiazolidine-4-Carboxamide</PDBx:name>
+         <PDBx:source>PubChem</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+   </PDBx:pdbx_reference_molecule_synonymsCategory>
+</PDBx:datablock>

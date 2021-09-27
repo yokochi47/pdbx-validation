@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<PDBx:datablock datablockName="FAM_000077"
+   xmlns:PDBx="http://pdbml.pdb.org/schema/pdbx-v50.xsd"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://pdbml.pdb.org/schema/pdbx-v50.xsd pdbx-v50.xsd">
+
+   <PDBx:citationCategory>
+      <PDBx:citation id="1">
+         <PDBx:journal_abbrev>Proc.Nat.Acad.Sci.(USA)</PDBx:journal_abbrev>
+         <PDBx:journal_volume>99</PDBx:journal_volume>
+         <PDBx:page_first>2696</PDBx:page_first>
+         <PDBx:page_last>2701</PDBx:page_last>
+         <PDBx:pdbx_database_id_DOI>10.1073/pnas.052709699</PDBx:pdbx_database_id_DOI>
+         <PDBx:title> Microcin E492, a channel-forming bacteriocin from Klebsiella pneumoniae, induces apoptosis in some human cell lines</PDBx:title>
+         <PDBx:year>2002</PDBx:year>
+      </PDBx:citation>
+      <PDBx:citation id="2">
+         <PDBx:journal_abbrev>FEBS J.</PDBx:journal_abbrev>
+         <PDBx:journal_volume>275</PDBx:journal_volume>
+         <PDBx:page_first>4088</PDBx:page_first>
+         <PDBx:page_last>4096</PDBx:page_last>
+         <PDBx:pdbx_database_id_PubMed>18616579</PDBx:pdbx_database_id_PubMed>
+         <PDBx:title> Microcin J25 induces the opening of the mitochondrial transition pore and cytochrome c release through superoxide generation.</PDBx:title>
+         <PDBx:year>2008</PDBx:year>
+      </PDBx:citation>
+      <PDBx:citation id="3">
+         <PDBx:journal_abbrev>Science</PDBx:journal_abbrev>
+         <PDBx:journal_volume>274</PDBx:journal_volume>
+         <PDBx:page_first>1188</PDBx:page_first>
+         <PDBx:page_last>1193</PDBx:page_last>
+         <PDBx:pdbx_database_id_DOI>10.1126/science.274.5290.1188</PDBx:pdbx_database_id_DOI>
+         <PDBx:title> From Peptide Precursors to Oxazole and Thiazole-Containing Peptide Antibiotics: Microcin B17 Synthase</PDBx:title>
+         <PDBx:year>1996</PDBx:year>
+      </PDBx:citation>
+      <PDBx:citation id="4">
+         <PDBx:journal_abbrev>J. Am. Chem. Soc.,</PDBx:journal_abbrev>
+         <PDBx:journal_volume>125</PDBx:journal_volume>
+         <PDBx:page_first>12464</PDBx:page_first>
+         <PDBx:page_last>12474</PDBx:page_last>
+         <PDBx:pdbx_database_id_DOI>10.1021/ja0367703</PDBx:pdbx_database_id_DOI>
+         <PDBx:title> Microcin J25 Has a Threaded Sidechain-to-Backbone Ring Structure and Not a Head-to-Tail Cyclized Backbone</PDBx:title>
+         <PDBx:year>2003</PDBx:year>
+      </PDBx:citation>
+      <PDBx:citation id="5">
+         <PDBx:journal_abbrev>Current Pharmaceutical Biotechnology</PDBx:journal_abbrev>
+         <PDBx:journal_volume>10</PDBx:journal_volume>
+         <PDBx:page_first>74</PDBx:page_first>
+         <PDBx:page_last>85</PDBx:page_last>
+         <PDBx:pdbx_database_id_DOI>10.2174/138920109787048643</PDBx:pdbx_database_id_DOI>
+         <PDBx:title> Antibacterial and Antitumorigenic Properties of Microcin E492, a Pore-Forming Bacteriocin</PDBx:title>
+         <PDBx:year>2009</PDBx:year>
+      </PDBx:citation>
+      <PDBx:citation id="6">
+         <PDBx:journal_abbrev>Journal of Colloid and Interface Science</PDBx:journal_abbrev>
+         <PDBx:journal_volume>285</PDBx:journal_volume>
+         <PDBx:page_first>118</PDBx:page_first>
+         <PDBx:page_last>124</PDBx:page_last>
+         <PDBx:pdbx_database_id_DOI>10.1016/j.jcis.2004.11.025</PDBx:pdbx_database_id_DOI>
+         <PDBx:title> Penetration and interactions of the antimicrobial peptide, microcin J25, into uncharged phospholipid monolayers</PDBx:title>
+         <PDBx:year>2005</PDBx:year>
+      </PDBx:citation>
+      <PDBx:citation id="7">
+         <PDBx:journal_abbrev>J. Mol. Biol.</PDBx:journal_abbrev>
+         <PDBx:journal_volume>307</PDBx:journal_volume>
+         <PDBx:page_first>1223</PDBx:page_first>
+         <PDBx:page_last>1234</PDBx:page_last>
+         <PDBx:pdbx_database_id_DOI>10.1006/jmbi.2001.4562</PDBx:pdbx_database_id_DOI>
+         <PDBx:title> The Antibiotic Microcin B17 is a DNA Gyrase Poison: Characterisation of the Mode of Inhibition</PDBx:title>
+         <PDBx:year>2001</PDBx:year>
+      </PDBx:citation>
+      <PDBx:citation id="8">
+         <PDBx:journal_abbrev>J Bacteriol.</PDBx:journal_abbrev>
+         <PDBx:journal_volume>174</PDBx:journal_volume>
+         <PDBx:page_first>7428</PDBx:page_first>
+         <PDBx:page_last>7435</PDBx:page_last>
+         <PDBx:pdbx_database_id_PubMed>207439</PDBx:pdbx_database_id_PubMed>
+         <PDBx:title>Microcin 25, a novel antimicrobial peptide produced by Escherichia coli.</PDBx:title>
+         <PDBx:year>1992</PDBx:year>
+      </PDBx:citation>
+      <PDBx:citation id="9">
+         <PDBx:journal_abbrev>Biochimie</PDBx:journal_abbrev>
+         <PDBx:journal_volume>84</PDBx:journal_volume>
+         <PDBx:page_first>521</PDBx:page_first>
+         <PDBx:page_last>529</PDBx:page_last>
+         <PDBx:pdbx_database_id_PubMed>12423796</PDBx:pdbx_database_id_PubMed>
+         <PDBx:title>The regulation of microcin B, C and J operons</PDBx:title>
+         <PDBx:year>2002</PDBx:year>
+      </PDBx:citation>
+      <PDBx:citation id="10">
+         <PDBx:journal_abbrev>Chemistry &amp; Biology</PDBx:journal_abbrev>
+         <PDBx:journal_volume>6</PDBx:journal_volume>
+         <PDBx:page_first>305</PDBx:page_first>
+         <PDBx:page_last>318</PDBx:page_last>
+         <PDBx:pdbx_database_id_PubMed>10322125</PDBx:pdbx_database_id_PubMed>
+         <PDBx:title> In vivo processing and antibiotic activity of microcin B17 analogs with varying ring content and altered bisheterocyclic sites</PDBx:title>
+         <PDBx:year>1999</PDBx:year>
+      </PDBx:citation>
+      <PDBx:citation id="11">
+         <PDBx:journal_abbrev>FEBS Letters</PDBx:journal_abbrev>
+         <PDBx:journal_volume>357</PDBx:journal_volume>
+         <PDBx:page_first>235</PDBx:page_first>
+         <PDBx:page_last>238</PDBx:page_last>
+         <PDBx:pdbx_database_id_DOI>10.1016/0014-5793(94)01345-2</PDBx:pdbx_database_id_DOI>
+         <PDBx:title>Structure of microcin C51, a new antibiotic with a broad spectrum of activity</PDBx:title>
+         <PDBx:year>1995</PDBx:year>
+      </PDBx:citation>
+      <PDBx:citation id="12">
+         <PDBx:journal_abbrev>The Journal of Biological Chemistry</PDBx:journal_abbrev>
+         <PDBx:journal_volume>270</PDBx:journal_volume>
+         <PDBx:page_first>23520</PDBx:page_first>
+         <PDBx:page_last>23532</PDBx:page_last>
+         <PDBx:pdbx_database_id_DOI>10.1074/jbc.270.40.23520</PDBx:pdbx_database_id_DOI>
+         <PDBx:title>Chemical Structure and Translation Inhibition Studies of the Antibiotic Microcin C7</PDBx:title>
+         <PDBx:year>1995</PDBx:year>
+      </PDBx:citation>
+      <PDBx:citation id="13">
+         <PDBx:journal_abbrev>The Journal of Antibiotics</PDBx:journal_abbrev>
+         <PDBx:journal_volume>36</PDBx:journal_volume>
+         <PDBx:page_first>325</PDBx:page_first>
+         <PDBx:page_last>327</PDBx:page_last>
+         <PDBx:pdbx_database_id_PubMed>6339460</PDBx:pdbx_database_id_PubMed>
+         <PDBx:title>Microcin 15N: a second antibiotic from escherichia coli lp15</PDBx:title>
+         <PDBx:year>1982</PDBx:year>
+      </PDBx:citation>
+      <PDBx:citation id="14">
+         <PDBx:journal_abbrev>J. Am. Chem. Soc.</PDBx:journal_abbrev>
+         <PDBx:journal_volume>125</PDBx:journal_volume>
+         <PDBx:page_first>12475</PDBx:page_first>
+         <PDBx:page_last>12483</PDBx:page_last>
+         <PDBx:pdbx_database_id_PubMed>14531691</PDBx:pdbx_database_id_PubMed>
+         <PDBx:title>Structure of microcin J25, a peptide inhibitor of bacterial RNA polymerase, is a lassoed tail </PDBx:title>
+         <PDBx:year>2003</PDBx:year>
+      </PDBx:citation>
+      <PDBx:citation id="15">
+         <PDBx:journal_abbrev>J. Am. Chem. Soc.</PDBx:journal_abbrev>
+         <PDBx:journal_volume>125</PDBx:journal_volume>
+         <PDBx:page_first>12382</PDBx:page_first>
+         <PDBx:page_last>12383</PDBx:page_last>
+         <PDBx:pdbx_database_id_PubMed>14531661</PDBx:pdbx_database_id_PubMed>
+         <PDBx:title>Structure of antibacterial peptide microcin J25: a 21-residue lariat protoknot</PDBx:title>
+         <PDBx:year>2003</PDBx:year>
+      </PDBx:citation>
+      <PDBx:citation id="16">
+         <PDBx:journal_abbrev>Mol. Cell</PDBx:journal_abbrev>
+         <PDBx:journal_volume>14</PDBx:journal_volume>
+         <PDBx:page_first>753</PDBx:page_first>
+         <PDBx:page_last>762</PDBx:page_last>
+         <PDBx:pdbx_database_id_PubMed>15200953</PDBx:pdbx_database_id_PubMed>
+         <PDBx:title>Molecular mechanism of transcription inhibition by peptide antibiotic microcin J25</PDBx:title>
+         <PDBx:year>2004</PDBx:year>
+      </PDBx:citation>
+      <PDBx:citation id="17">
+         <PDBx:journal_abbrev>Antimicrobial Agents and Chemotherapy</PDBx:journal_abbrev>
+         <PDBx:journal_volume>45</PDBx:journal_volume>
+         <PDBx:page_first>969</PDBx:page_first>
+         <PDBx:page_last>972</PDBx:page_last>
+         <PDBx:pdbx_database_id_DOI>10.1128/AAC.45.3.969-972.2001</PDBx:pdbx_database_id_DOI>
+         <PDBx:title> The Structure, Function, and Origin of the Microcin H47 ATP-Binding Cassette Exporter Indicate Its Relatedness to That of Colicin V</PDBx:title>
+         <PDBx:year>2001</PDBx:year>
+      </PDBx:citation>
+      <PDBx:citation id="18">
+         <PDBx:journal_abbrev>Proc Natl Acad Sci U S A.</PDBx:journal_abbrev>
+         <PDBx:journal_volume>91</PDBx:journal_volume>
+         <PDBx:page_first>4519</PDBx:page_first>
+         <PDBx:page_last>4523</PDBx:page_last>
+         <PDBx:pdbx_database_id_PubMed>8183941</PDBx:pdbx_database_id_PubMed>
+         <PDBx:title>Posttranslational Modifications in Microcin B17 Define an Additional Class of DNA Gyrase Inhibitor</PDBx:title>
+         <PDBx:year>1994</PDBx:year>
+      </PDBx:citation>
+   </PDBx:citationCategory>
+   <PDBx:citation_authorCategory>
+      <PDBx:citation_author citation_id="1" name="Hetz, C." ordinal="1"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="1" name="Bono, M.R." ordinal="2"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="1" name="Barros, L.F." ordinal="3"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="1" name="Lagos, R." ordinal="4"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="2" name="Niklison, C.M." ordinal="5"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="2" name="Bellomio, A." ordinal="6"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="2" name="Dupuy, F." ordinal="7"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="2" name="Arcuri, B." ordinal="8"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="2" name="Minahk, C." ordinal="9"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="2" name="Morero, R." ordinal="10"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="3" name="Li, Y.-M." ordinal="11"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="3" name="Milne, J.C." ordinal="12"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="3" name="Madison, L.L." ordinal="13"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="3" name="Kolter, R." ordinal="14"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="3" name="Walsh, C.T." ordinal="15"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="4" name="Rosengren, K.J." ordinal="16"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="4" name="Clark, R.J." ordinal="17"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="4" name="Daly, N.L." ordinal="18"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="4" name="Goransson, U." ordinal="19"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="4" name="Jones, A." ordinal="20"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="4" name="Craik, D.J." ordinal="21"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="5" name="Lagos, R." ordinal="22"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="5" name="Tello, M." ordinal="23"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="5" name="Mercado, G." ordinal="24"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="5" name="Garcia, V." ordinal="25"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="5" name="Monasterio, O." ordinal="26"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="6" name="Bellomio, A." ordinal="27"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="6" name="Oliveira, R.G." ordinal="28"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="6" name="Maggio, B." ordinal="29"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="6" name="Morero, R.D." ordinal="30"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="7" name="Heddle, J.G." ordinal="31"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="7" name="Blance, S.J." ordinal="32"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="7" name="Zamble, D.B." ordinal="33"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="7" name="Hollfelder, F." ordinal="34"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="7" name="Miller, D.A." ordinal="35"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="7" name="Wentzell, L.M." ordinal="36"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="7" name="Walsh, C.T." ordinal="37"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="7" name="Maxwell, A." ordinal="38"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="8" name="Salomon, R.A." ordinal="39"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="8" name="Farias, R.N." ordinal="40"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="9" name="Moreno, F." ordinal="41"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="9" name="Gonzalez-Pastor, J.E." ordinal="42"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="9" name="Baquero, M.-R." ordinal="43"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="9" name="Bravo, D." ordinal="44"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="10" name="Roy, R.S." ordinal="45"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="10" name="Kelleher, N.L." ordinal="46"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="10" name="Milne, J.C." ordinal="47"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="10" name="Walsh, C.T." ordinal="48"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="11" name="Metlitskaya, A.Z." ordinal="49"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="11" name="Katrukha, G.S." ordinal="50"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="11" name="Shashkov, A.S." ordinal="51"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="11" name="Zaitsev, D.A." ordinal="52"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="11" name="Egorov, Ts.A." ordinal="53"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="11" name="Khmel, I.A." ordinal="54"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="12" name="Guijarro, J.I." ordinal="55"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="12" name="Gonzalez-Pastor, J.E." ordinal="56"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="12" name="Baleux, F." ordinal="57"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="12" name="San Mill, J.L." ordinal="58"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="12" name="Castilla, M.A." ordinal="59"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="12" name="Rico, M." ordinal="60"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="12" name="Moreno, F." ordinal="61"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="12" name="Delepierre, M." ordinal="62"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="13" name="Aguilar, A." ordinal="63"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="13" name="Baquero, F." ordinal="64"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="13" name="Martinez, J.L." ordinal="65"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="13" name="Asensio, C." ordinal="66"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="14" name="Wilson, K.-A." ordinal="67"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="14" name="Kalkum, M." ordinal="68"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="14" name="Ottesen, J." ordinal="69"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="14" name="Yuzenkova, J." ordinal="70"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="14" name="Chait, B.T." ordinal="71"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="14" name="Landick, R." ordinal="72"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="14" name="Muir, T." ordinal="73"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="14" name="Severinov, K." ordinal="74"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="14" name="Darst, S.A." ordinal="75"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="15" name="Bayro, M.J." ordinal="76"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="15" name="Mukhopadhyay, J." ordinal="77"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="15" name="Swapna, G.V.T." ordinal="78"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="15" name="Huang, J.Y." ordinal="79"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="15" name="Ma, L.-C." ordinal="80"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="15" name="Sineva, E." ordinal="81"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="15" name="Dawson, P.E." ordinal="82"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="15" name="Montelione, G.T." ordinal="83"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="15" name="Ebright, R.H." ordinal="84"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="16" name="Adelman, K." ordinal="85"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="16" name="Yuzenkova, J." ordinal="86"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="16" name="La Porta, A." ordinal="87"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="16" name="Zenkin, N." ordinal="88"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="16" name="Lee, J." ordinal="89"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="16" name="Lis, J.T." ordinal="90"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="16" name="Borukhov, S." ordinal="91"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="16" name="Wang, M.D." ordinal="92"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="16" name="Severinov, K." ordinal="93"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="17" name="Azpiroz, M.F." ordinal="94"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="17" name="Rodriguez, E." ordinal="95"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="17" name="Lavina, M." ordinal="96"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="18" name="Yorgey, P." ordinal="97"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="18" name="Lee, J." ordinal="98"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="18" name="Kordel, J." ordinal="99"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="18" name="Vivas, E." ordinal="100"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="18" name="Warner, P." ordinal="101"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="18" name="Jebaratnam, D." ordinal="102"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="18" name="Kolter, R." ordinal="103"></PDBx:citation_author>
+   </PDBx:citation_authorCategory>
+   <PDBx:pdbx_family_prd_auditCategory>
+      <PDBx:pdbx_family_prd_audit action_type="Create family" date="2012-02-08" family_prd_id="FAM_000077">
+         <PDBx:processing_site>RCSB</PDBx:processing_site>
+      </PDBx:pdbx_family_prd_audit>
+      <PDBx:pdbx_family_prd_audit action_type="Initial release" date="2013-10-16" family_prd_id="FAM_000077">
+         <PDBx:processing_site>RCSB</PDBx:processing_site>
+      </PDBx:pdbx_family_prd_audit>
+   </PDBx:pdbx_family_prd_auditCategory>
+   <PDBx:pdbx_reference_molecule_annotationCategory>
+      <PDBx:pdbx_reference_molecule_annotation family_prd_id="FAM_000077" ordinal="1">
+         <PDBx:prd_id>PRD_000183</PDBx:prd_id>
+         <PDBx:source>Bactibase</PDBx:source>
+         <PDBx:text>Inhibits protein translation by blocking aspartyl-tRNA synthetase function and inhibiting production of aminoacetylated tRNA-Asp.</PDBx:text>
+         <PDBx:type>Mechanism of action</PDBx:type>
+      </PDBx:pdbx_reference_molecule_annotation>
+      <PDBx:pdbx_reference_molecule_annotation family_prd_id="FAM_000077" ordinal="2">
+         <PDBx:prd_id>PRD_000183</PDBx:prd_id>
+         <PDBx:source>Bactibase</PDBx:source>
+         <PDBx:text>Post-translational modification: The peptide moiety allows entry into the bacterial cell, where it undergoes proteolytic cleavage to release the aspartyl adenylate analog, which is responsible for aspartyl-tRNA synthetase inhibition. Can be processed by the non-specificoligopeptidases pepA, pepB and pepN.</PDBx:text>
+         <PDBx:type>Structure</PDBx:type>
+      </PDBx:pdbx_reference_molecule_annotation>
+      <PDBx:pdbx_reference_molecule_annotation family_prd_id="FAM_000077" ordinal="3">
+         <PDBx:prd_id>PRD_000184</PDBx:prd_id>
+         <PDBx:source>Bactibase</PDBx:source>
+         <PDBx:text>Peptide antibiotic that functions through inhibition of the bacterial DNA-dependent RNA polymerase (RNAP). May inhibit transcription by binding in RNAP secondary channel and blocking nucleotide substrates access to the catalytic center. Also acts on the cytoplasmic membrane of Salmonella newport, producing alteration of membrane permeability and disruption of the subsequent gradient dissipation, which inhibits several processes essential for cell viability, such as oxygen consumption. Induces bacterial filamentation in susceptible cells in a non-SOS-dependent way, but this phenotype may result from impaired transcription of genes coding for cell division proteins.</PDBx:text>
+         <PDBx:type>Mechanism of Action</PDBx:type>
+      </PDBx:pdbx_reference_molecule_annotation>
+      <PDBx:pdbx_reference_molecule_annotation family_prd_id="FAM_000077" ordinal="4">
+         <PDBx:prd_id>PRD_001126</PDBx:prd_id>
+         <PDBx:source>PMID:19494832</PDBx:source>
+         <PDBx:text>Substrate of MccB</PDBx:text>
+         <PDBx:type>Function</PDBx:type>
+      </PDBx:pdbx_reference_molecule_annotation>
+      <PDBx:pdbx_reference_molecule_annotation family_prd_id="FAM_000077" ordinal="5">
+         <PDBx:prd_id>PRD_001129</PDBx:prd_id>
+         <PDBx:source>PMID:19494832</PDBx:source>
+         <PDBx:text>Reaction intermediate of MccB</PDBx:text>
+         <PDBx:type>Function</PDBx:type>
+      </PDBx:pdbx_reference_molecule_annotation>
+   </PDBx:pdbx_reference_molecule_annotationCategory>
+   <PDBx:pdbx_reference_molecule_familyCategory>
+      <PDBx:pdbx_reference_molecule_family family_prd_id="FAM_000077">
+         <PDBx:name>Microcin</PDBx:name>
+         <PDBx:release_status>REL</PDBx:release_status>
+      </PDBx:pdbx_reference_molecule_family>
+   </PDBx:pdbx_reference_molecule_familyCategory>
+   <PDBx:pdbx_reference_molecule_featuresCategory>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_000077" ordinal="1" prd_id="PRD_000183">
+         <PDBx:source>UniProt</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>External_Reference_ID</PDBx:type>
+         <PDBx:value>Q47505</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_000077" ordinal="2" prd_id="PRD_000184">
+         <PDBx:source>UniProt</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>External_Reference_ID</PDBx:type>
+         <PDBx:value>Q9X2V7</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_000077" ordinal="3" prd_id="PRD_000183">
+         <PDBx:source>Bactibase</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>External_Reference_ID</PDBx:type>
+         <PDBx:value>BAC207</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_000077" ordinal="4" prd_id="PRD_000184">
+         <PDBx:source>Bactibase</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>External_Reference_ID</PDBx:type>
+         <PDBx:value>BAC015</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+   </PDBx:pdbx_reference_molecule_featuresCategory>
+   <PDBx:pdbx_reference_molecule_listCategory>
+      <PDBx:pdbx_reference_molecule_list family_prd_id="FAM_000077" prd_id="PRD_000183"></PDBx:pdbx_reference_molecule_list>
+      <PDBx:pdbx_reference_molecule_list family_prd_id="FAM_000077" prd_id="PRD_000184"></PDBx:pdbx_reference_molecule_list>
+      <PDBx:pdbx_reference_molecule_list family_prd_id="FAM_000077" prd_id="PRD_001126"></PDBx:pdbx_reference_molecule_list>
+      <PDBx:pdbx_reference_molecule_list family_prd_id="FAM_000077" prd_id="PRD_001129"></PDBx:pdbx_reference_molecule_list>
+   </PDBx:pdbx_reference_molecule_listCategory>
+   <PDBx:pdbx_reference_molecule_synonymsCategory>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_000077" ordinal="1" prd_id="PRD_000183">
+         <PDBx:name>Microcin C7</PDBx:name>
+         <PDBx:source>PDB</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_000077" ordinal="2" prd_id="PRD_000183">
+         <PDBx:name>MccC7</PDBx:name>
+         <PDBx:source>PDB</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_000077" ordinal="3" prd_id="PRD_000183">
+         <PDBx:name>Microcin C51</PDBx:name>
+         <PDBx:source>PDB</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_000077" ordinal="4" prd_id="PRD_000183">
+         <PDBx:name>McC</PDBx:name>
+         <PDBx:source>PDB</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_000077" ordinal="5" prd_id="PRD_000183">
+         <PDBx:name>MccC51</PDBx:name>
+         <PDBx:source>PDB</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_000077" ordinal="6" prd_id="PRD_000183">
+         <PDBx:name>Microcin C</PDBx:name>
+         <PDBx:source>PDB</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_000077" ordinal="7" prd_id="PRD_000184">
+         <PDBx:name>Microcin J25</PDBx:name>
+         <PDBx:source>PDB</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_000077" ordinal="8" prd_id="PRD_001126">
+         <PDBx:name>SeMet-MccA</PDBx:name>
+         <PDBx:source>PDB</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_000077" ordinal="9" prd_id="PRD_001129">
+         <PDBx:name>MccA-N7isoASN</PDBx:name>
+         <PDBx:source>PDB</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+   </PDBx:pdbx_reference_molecule_synonymsCategory>
+</PDBx:datablock>

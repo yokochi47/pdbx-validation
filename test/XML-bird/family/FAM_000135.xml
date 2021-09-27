@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<PDBx:datablock datablockName="FAM_000135"
+   xmlns:PDBx="http://pdbml.pdb.org/schema/pdbx-v50.xsd"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://pdbml.pdb.org/schema/pdbx-v50.xsd pdbx-v50.xsd">
+
+   <PDBx:pdbx_family_prd_auditCategory>
+      <PDBx:pdbx_family_prd_audit action_type="Create family" date="2012-02-08" family_prd_id="FAM_000135">
+         <PDBx:processing_site>RCSB</PDBx:processing_site>
+      </PDBx:pdbx_family_prd_audit>
+      <PDBx:pdbx_family_prd_audit action_type="Initial release" date="2013-10-16" family_prd_id="FAM_000135">
+         <PDBx:processing_site>RCSB</PDBx:processing_site>
+      </PDBx:pdbx_family_prd_audit>
+   </PDBx:pdbx_family_prd_auditCategory>
+   <PDBx:pdbx_reference_molecule_annotationCategory>
+      <PDBx:pdbx_reference_molecule_annotation family_prd_id="FAM_000135" ordinal="1">
+         <PDBx:prd_id>PRD_000262</PDBx:prd_id>
+         <PDBx:source>PubChem</PDBx:source>
+         <PDBx:text>inhibitor of aspartate proteinases</PDBx:text>
+         <PDBx:type>Function</PDBx:type>
+      </PDBx:pdbx_reference_molecule_annotation>
+   </PDBx:pdbx_reference_molecule_annotationCategory>
+   <PDBx:pdbx_reference_molecule_familyCategory>
+      <PDBx:pdbx_reference_molecule_family family_prd_id="FAM_000135">
+         <PDBx:name>azahomostatine oligopeptide inhibitor</PDBx:name>
+         <PDBx:release_status>REL</PDBx:release_status>
+      </PDBx:pdbx_reference_molecule_family>
+   </PDBx:pdbx_reference_molecule_familyCategory>
+   <PDBx:pdbx_reference_molecule_featuresCategory>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_000135" ordinal="1" prd_id="PRD_000262">
+         <PDBx:source>MeSH</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>MeSH_Unique_ID</PDBx:type>
+         <PDBx:value>C061358</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_000135" ordinal="2" prd_id="PRD_000262">
+         <PDBx:source>PubChem</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>External_reference_ID</PDBx:type>
+         <PDBx:value>128801</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_000135" ordinal="3" prd_id="PRD_000262">
+         <PDBx:source>ChemSpider</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>External_reference_ID</PDBx:type>
+         <PDBx:value>114138</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_000135" ordinal="4" prd_id="PRD_000262">
+         <PDBx:source>CAS</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>External_reference_ID</PDBx:type>
+         <PDBx:value>105116-61-8</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+   </PDBx:pdbx_reference_molecule_featuresCategory>
+   <PDBx:pdbx_reference_molecule_listCategory>
+      <PDBx:pdbx_reference_molecule_list family_prd_id="FAM_000135" prd_id="PRD_000262"></PDBx:pdbx_reference_molecule_list>
+   </PDBx:pdbx_reference_molecule_listCategory>
+   <PDBx:pdbx_reference_molecule_synonymsCategory>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_000135" ordinal="1" prd_id="PRD_000262">
+         <PDBx:name>CP-69,799</PDBx:name>
+         <PDBx:source>PDB</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_000135" ordinal="2" prd_id="PRD_000262">
+         <PDBx:name>CP 69799</PDBx:name>
+         <PDBx:source>Scifinder</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_000135" ordinal="3" prd_id="PRD_000262">
+         <PDBx:name>CP 69799</PDBx:name>
+         <PDBx:source>PubChem</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_000135" ordinal="4" prd_id="PRD_000262">
+         <PDBx:name>CP-69,799</PDBx:name>
+         <PDBx:source>PubChem</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_000135" ordinal="5" prd_id="PRD_000262">
+         <PDBx:name>(S-(R*,R*))-N-(N2-(((4-Cyclohexyl-3-((N-(N-((1,1-dimethylethoxy)carbonyl)-L-phenylalanyl)-L-histidyl)amino)-2-hydroxybutyl)(1-methylethyl)amino)carbonyl)-L-lysyl)-L-phenylalanine</PDBx:name>
+         <PDBx:source>PubChem</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_000135" ordinal="6" prd_id="PRD_000262">
+         <PDBx:name>105116-61-8</PDBx:name>
+         <PDBx:source>PubChem</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_000135" ordinal="7" prd_id="PRD_000262">
+         <PDBx:name>L-Phenylalanine, N-(N2-(((4-cyclohexyl-3-((N-(N-((1,1-dimethylethoxy)carbonyl)-L-phenylalanyl)-L-histidyl)amino)-2-hydroxybutyl)(1-methylethyl)amino)carbonyl)-L-lysyl)-, (S-(R*,R*))-</PDBx:name>
+         <PDBx:source>PubChem</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_000135" ordinal="8" prd_id="PRD_000262">
+         <PDBx:name>CP-69,799</PDBx:name>
+         <PDBx:source>ChemSpider</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+   </PDBx:pdbx_reference_molecule_synonymsCategory>
+</PDBx:datablock>

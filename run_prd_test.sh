@@ -6,7 +6,7 @@ if [ ! -e $SAXON ] || [ ! -e $XSD2PGSCHEMA ] ; then
  ./scripts/update_extlibs.sh
 fi
 
-if [ ! -e $PDBML_XSD ] || [ ! -e $PRD2RDF_XSL ] ; then
+if [ ! -e $PDBML_XSD ] ; then
  ( cd resource; ./update_pdbx_xsd.sh; ./update_pdbx_owl.sh )
 fi
 
@@ -34,12 +34,12 @@ mkdir -p $WORK_DIR/$RDF_PRD
 
 for pdbml_file in $WORK_DIR/$PDBML_PRD/*.xml ; do
 
- prdid=`basename $pdbml_file .xml`
+ prd_id=`basename $pdbml_file .xml`
 
  echo
- echo Processing PRD ID: ${prdid^^}" ..."
+ echo Processing PRD ID: ${prd_id^^}" ..."
 
- rdf_file=$WORK_DIR/$RDF_PRD/$prdid.rdf
+ rdf_file=$WORK_DIR/$RDF_PRD/$prd_id.rdf
 
  xsltproc -o $rdf_file $PRD2RDF_XSL $pdbml_file || ( echo $0 aborted. ; exit 1 )
 

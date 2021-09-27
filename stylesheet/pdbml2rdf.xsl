@@ -18,12 +18,12 @@
   <xsl:output method="xml" indent="yes"/>
   <xsl:strip-space elements="*"/>
 
-  <xsl:variable name="PDBID"><xsl:value-of select="/PDBx:datablock/PDBx:entryCategory/PDBx:entry/@id"/></xsl:variable>
-  <xsl:variable name="pdbid"><xsl:value-of select="translate($PDBID,'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz')"/></xsl:variable>
-  <xsl:variable name="pdb_doi"><xsl:value-of select="concat('10.2210/pdb',$pdbid,'/pdb')"/></xsl:variable>
-  <xsl:variable name="base">http://rdf.wwpdb.org/pdb/<xsl:value-of select="$PDBID"/></xsl:variable>
-  <xsl:variable name="base_lower">http://rdf.wwpdb.org/pdb/<xsl:value-of select="$pdbid"/></xsl:variable>
-  <xsl:variable name="vrpt">http://rdf.wwpdb.org/vrpt/<xsl:value-of select="$PDBID"/></xsl:variable>
+  <xsl:variable name="PDB_ID"><xsl:value-of select="/PDBx:datablock/PDBx:entryCategory/PDBx:entry/@id"/></xsl:variable>
+  <xsl:variable name="pdb_id"><xsl:value-of select="translate($PDB_ID,'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz')"/></xsl:variable>
+  <xsl:variable name="pdb_doi"><xsl:value-of select="concat('10.2210/pdb',$pdb_id,'/pdb')"/></xsl:variable>
+  <xsl:variable name="base">http://rdf.wwpdb.org/pdb/<xsl:value-of select="$PDB_ID"/></xsl:variable>
+  <xsl:variable name="base_lower">http://rdf.wwpdb.org/pdb/<xsl:value-of select="$pdb_id"/></xsl:variable>
+  <xsl:variable name="vrpt">http://rdf.wwpdb.org/vrpt/<xsl:value-of select="$PDB_ID"/></xsl:variable>
   <xsl:variable name="pdb_link">http://rdf.wwpdb.org/pdb/</xsl:variable>
   <xsl:variable name="chem_comp">http://rdf.wwpdb.org/cc/</xsl:variable>
   <xsl:variable name="prd">http://rdf.wwpdb.org/prd/</xsl:variable>
@@ -67,17 +67,17 @@
   <xsl:template match="/PDBx:datablock">
     <PDBo:datablock rdf:about="{$base}">
       <dcterms:references rdf:resource="{$doi}{$pdb_doi}" rdfs:label="doi:{$pdb_doi}"/>
-      <dcterms:identifier><xsl:value-of select="$PDBID"/></dcterms:identifier>
-      <skos:altLabel><xsl:value-of select="$pdbid"/></skos:altLabel>
+      <dcterms:identifier><xsl:value-of select="$PDB_ID"/></dcterms:identifier>
+      <skos:altLabel><xsl:value-of select="$pdb_id"/></skos:altLabel>
       <dc:title><xsl:value-of select="PDBx:structCategory/PDBx:struct/PDBx:title/text()"/></dc:title>
-      <PDBo:link_to_pdbml rdf:resource="{$pdbml}{$pdbid}.xml.gz"/>
-      <PDBo:link_to_pdbml_noatom rdf:resource="{$pdbml_noatom}{$pdbid}-noatom.xml.gz"/>
-      <PDBo:link_to_pdbml_extatom rdf:resource="{$pdbml_extatom}{$pdbid}-extatom.xml.gz"/>
+      <PDBo:link_to_pdbml rdf:resource="{$pdbml}{$pdb_id}.xml.gz"/>
+      <PDBo:link_to_pdbml_noatom rdf:resource="{$pdbml_noatom}{$pdb_id}-noatom.xml.gz"/>
+      <PDBo:link_to_pdbml_extatom rdf:resource="{$pdbml_extatom}{$pdb_id}-extatom.xml.gz"/>
       <PDBo:link_to_vrpt rdf:resource="{$vrpt}"/>
       <owl:sameAs rdf:resource="{$base_lower}"/>
-      <rdfs:seeAlso rdf:resource="{$pdbj}{$PDBID}"/>
-      <rdfs:seeAlso rdf:resource="{$rcsb}{$PDBID}"/>
-      <rdfs:seeAlso rdf:resource="{$pdbe}{$PDBID}"/>
+      <rdfs:seeAlso rdf:resource="{$pdbj}{$PDB_ID}"/>
+      <rdfs:seeAlso rdf:resource="{$rcsb}{$PDB_ID}"/>
+      <rdfs:seeAlso rdf:resource="{$pdbe}{$PDB_ID}"/>
 
       <PDBo:datablockName><xsl:value-of select="@datablockName"/></PDBo:datablockName>
       <xsl:apply-templates select="./*"/>

@@ -192,6 +192,11 @@
         <rdfs:comment xml:lang="en">external link to KEGG Compound.</rdfs:comment>
       </owl:ObjectProperty>
 
+      <owl:ObjectProperty rdf:ID="link_to_kegg_drug">
+        <rdfs:subPropertyOf rdf:resource="#html_link_to"/>
+        <rdfs:comment xml:lang="en">external link to KEGG Drug.</rdfs:comment>
+      </owl:ObjectProperty>
+
       <owl:ObjectProperty rdf:ID="link_to_nadb">
         <rdfs:subPropertyOf rdf:resource="#html_link_to"/>
         <rdfs:comment xml:lang="en">external link to Novel Antibiotics Data Base.</rdfs:comment>
@@ -270,6 +275,61 @@
       <owl:ObjectProperty rdf:ID="link_to_prd">
         <rdfs:subPropertyOf rdf:resource="#rdf_link_to"/>
         <rdfs:comment xml:lang="en">external link to peptide reference in PRD (a part of BIRD, Biologically Interesting molecules Reference Dictionary).</rdfs:comment>
+      </owl:ObjectProperty>
+
+      <owl:ObjectProperty rdf:ID="link_to_ccdc">
+        <rdfs:subPropertyOf rdf:resource="#html_link_to"/>
+        <rdfs:comment xml:lang="en">external link to CCDC (Cambridge Crystallographic Data Centre).</rdfs:comment>
+      </owl:ObjectProperty>
+
+      <owl:ObjectProperty rdf:ID="link_to_pubchem_substance">
+        <rdfs:subPropertyOf rdf:resource="#html_link_to"/>
+        <rdfs:comment xml:lang="en">external link to PubChem Substance.</rdfs:comment>
+      </owl:ObjectProperty>
+
+      <owl:ObjectProperty rdf:ID="link_to_chemspider">
+        <rdfs:subPropertyOf rdf:resource="#html_link_to"/>
+        <rdfs:comment xml:lang="en">external link to ChemSpider.</rdfs:comment>
+      </owl:ObjectProperty>
+
+      <owl:ObjectProperty rdf:ID="link_to_cas">
+        <rdfs:subPropertyOf rdf:resource="#html_link_to"/>
+        <rdfs:comment xml:lang="en">external link to CAS.</rdfs:comment>
+      </owl:ObjectProperty>
+
+      <owl:ObjectProperty rdf:ID="link_to_chebi">
+        <rdfs:subPropertyOf rdf:resource="#html_link_to"/>
+        <rdfs:comment xml:lang="en">external link to ChEBI.</rdfs:comment>
+      </owl:ObjectProperty>
+
+      <owl:ObjectProperty rdf:ID="link_to_mesh">
+        <rdfs:subPropertyOf rdf:resource="#html_link_to"/>
+        <rdfs:comment xml:lang="en">external link to MeSH.</rdfs:comment>
+      </owl:ObjectProperty>
+
+      <owl:ObjectProperty rdf:ID="link_to_chemidplus">
+        <rdfs:subPropertyOf rdf:resource="#html_link_to"/>
+        <rdfs:comment xml:lang="en">external link to ChemIDplus.</rdfs:comment>
+      </owl:ObjectProperty>
+
+      <owl:ObjectProperty rdf:ID="link_to_chembl">
+        <rdfs:subPropertyOf rdf:resource="#html_link_to"/>
+        <rdfs:comment xml:lang="en">external link to ChEMBL.</rdfs:comment>
+      </owl:ObjectProperty>
+
+      <owl:ObjectProperty rdf:ID="link_to_bindingdb">
+        <rdfs:subPropertyOf rdf:resource="#html_link_to"/>
+        <rdfs:comment xml:lang="en">external link to BindingDB.</rdfs:comment>
+      </owl:ObjectProperty>
+
+      <owl:ObjectProperty rdf:ID="link_to_drugbank">
+        <rdfs:subPropertyOf rdf:resource="#html_link_to"/>
+        <rdfs:comment xml:lang="en">external link to DrugBank.</rdfs:comment>
+      </owl:ObjectProperty>
+
+      <owl:ObjectProperty rdf:ID="link_to_chemdb">
+        <rdfs:subPropertyOf rdf:resource="#html_link_to"/>
+        <rdfs:comment xml:lang="en">external link to ChemDB.</rdfs:comment>
       </owl:ObjectProperty>
 
       <xsl:apply-templates/>

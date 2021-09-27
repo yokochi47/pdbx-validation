@@ -131,15 +131,6 @@ do
 
  java -classpath $XSD2PGSCHEMA chksumstat --xml $DST_DIR --sync $MD5_DIR --update --verbose > $chk_sum_log
 
- XML_DIR=$XML_BIRD/$subdir
-
- if [ -d $XML_DIR ] ; then
-  while read bird_id ; do
-   [ -z "$bird_id" ] || [[ "$bird_id" =~ ^#.* ]] && continue
-   rm -f $XML_DIR/$bird_id.xml
-  done < $chk_sum_log
- fi
-
  RDF_DIR=$RDF_BIRD/$subdir
 
  if [ -d $RDF_DIR ] ; then

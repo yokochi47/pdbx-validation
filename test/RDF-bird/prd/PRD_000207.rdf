@@ -672,9 +672,9 @@
             <PDBo:pdbx_reference_entity_src_nat.db_name>NADB</PDBo:pdbx_reference_entity_src_nat.db_name>
             <PDBo:pdbx_reference_entity_src_nat.organism_scientific>Amycolatopsis orientalis</PDBo:pdbx_reference_entity_src_nat.organism_scientific>
             <PDBo:pdbx_reference_entity_src_nat.taxid>31958</PDBo:pdbx_reference_entity_src_nat.taxid>
-            <PDBo:link_to_nadb rdf:resource="http://www.antibiotics.or.jp/journal/database/data-2.htm#430189" rdfs:label="nadb:430189"/>
+            <PDBo:link_to_nadb rdf:resource="http://www.nih.go.jp/~jun/NADB/show.cgi/430189.html" rdfs:label="nadb:430189"/>
             <PDBo:link_to_taxonomy_source rdf:resource="http://purl.uniprot.org/taxonomy/31958" rdfs:label="taxonomy:31958"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/taxonomy/31958" rdfs:label="taxonomy:31958"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/taxonomy:31958" rdfs:label="taxonomy:31958"/>
           </PDBo:pdbx_reference_entity_src_nat>
         </PDBo:has_pdbx_reference_entity_src_nat>
         <PDBo:has_pdbx_reference_entity_src_nat>
@@ -689,7 +689,7 @@
             <PDBo:pdbx_reference_entity_src_nat.taxid>100235</PDBo:pdbx_reference_entity_src_nat.taxid>
             <PDBo:link_to_pdb rdf:resource="http://rdf.wwpdb.org/pdb/1HH3"/>
             <PDBo:link_to_taxonomy_source rdf:resource="http://purl.uniprot.org/taxonomy/100235" rdfs:label="taxonomy:100235"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/taxonomy/100235" rdfs:label="taxonomy:100235"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/taxonomy:100235" rdfs:label="taxonomy:100235"/>
           </PDBo:pdbx_reference_entity_src_nat>
         </PDBo:has_pdbx_reference_entity_src_nat>
         <PDBo:has_pdbx_reference_entity_src_nat>
@@ -702,9 +702,9 @@
             <PDBo:pdbx_reference_entity_src_nat.db_name>NADB</PDBo:pdbx_reference_entity_src_nat.db_name>
             <PDBo:pdbx_reference_entity_src_nat.organism_scientific>Nocardia nov. sp.</PDBo:pdbx_reference_entity_src_nat.organism_scientific>
             <PDBo:pdbx_reference_entity_src_nat.taxid>163672</PDBo:pdbx_reference_entity_src_nat.taxid>
-            <PDBo:link_to_nadb rdf:resource="http://www.antibiotics.or.jp/journal/database/data-2.htm#420095" rdfs:label="nadb:420095"/>
+            <PDBo:link_to_nadb rdf:resource="http://www.nih.go.jp/~jun/NADB/show.cgi/420095.html" rdfs:label="nadb:420095"/>
             <PDBo:link_to_taxonomy_source rdf:resource="http://purl.uniprot.org/taxonomy/163672" rdfs:label="taxonomy:163672"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/taxonomy/163672" rdfs:label="taxonomy:163672"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/taxonomy:163672" rdfs:label="taxonomy:163672"/>
           </PDBo:pdbx_reference_entity_src_nat>
         </PDBo:has_pdbx_reference_entity_src_nat>
         <PDBo:has_pdbx_reference_entity_src_nat>
@@ -717,7 +717,7 @@
             <PDBo:pdbx_reference_entity_src_nat.source>DOI</PDBo:pdbx_reference_entity_src_nat.source>
             <PDBo:pdbx_reference_entity_src_nat.taxid>208441</PDBo:pdbx_reference_entity_src_nat.taxid>
             <PDBo:link_to_taxonomy_source rdf:resource="http://purl.uniprot.org/taxonomy/208441" rdfs:label="taxonomy:208441"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/taxonomy/208441" rdfs:label="taxonomy:208441"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/taxonomy:208441" rdfs:label="taxonomy:208441"/>
           </PDBo:pdbx_reference_entity_src_nat>
         </PDBo:has_pdbx_reference_entity_src_nat>
       </PDBo:pdbx_reference_entity_src_natCategory>

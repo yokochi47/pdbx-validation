@@ -6,7 +6,7 @@ if [ ! -e $SAXON ] || [ ! -e $XSD2PGSCHEMA ] ; then
  ./scripts/update_extlibs.sh
 fi
 
-if [ ! -e $PDBML_XSD ] || [ ! -e $CC2RDF_XSL ] ; then
+if [ ! -e $PDBML_XSD ] ; then
  ( cd resource; ./update_pdbx_xsd.sh; ./update_pdbx_owl.sh )
 fi
 
@@ -34,12 +34,12 @@ mkdir -p $WORK_DIR/$RDF_CC
 
 for pdbml_file in $WORK_DIR/$XML_CC/*.xml ; do
 
- ccid=`basename $pdbml_file .xml`
+ cc_id=`basename $pdbml_file .xml`
 
  echo
- echo Processing Chem comp ID: ${ccid^^}" ..."
+ echo Processing Chem comp ID: ${cc_id^^}" ..."
 
- rdf_file=$WORK_DIR/$RDF_CC/$ccid.rdf
+ rdf_file=$WORK_DIR/$RDF_CC/$cc_id.rdf
 
  #java -jar $SAXON -s:$pdbml_file -xsl:$CC2RDF_XSL -o:$rdf_file || ( echo $0 aborted. ; exit 1 )
  xsltproc -o $rdf_file $CC2RDF_XSL $pdbml_file || ( echo $0 aborted. ; exit 1 )

@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<PDBx:datablock datablockName="FAM_000064"
+   xmlns:PDBx="http://pdbml.pdb.org/schema/pdbx-v50.xsd"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://pdbml.pdb.org/schema/pdbx-v50.xsd pdbx-v50.xsd">
+
+   <PDBx:citationCategory>
+      <PDBx:citation id="1">
+         <PDBx:journal_abbrev>J Mol Biol.</PDBx:journal_abbrev>
+         <PDBx:journal_volume>121</PDBx:journal_volume>
+         <PDBx:page_first>41</PDBx:page_first>
+         <PDBx:page_last>54</PDBx:page_last>
+         <PDBx:pdbx_database_id_DOI>10.1016/0022-2836(78)90261-9</PDBx:pdbx_database_id_DOI>
+         <PDBx:pdbx_database_id_PubMed>77905</PDBx:pdbx_database_id_PubMed>
+         <PDBx:title>Helical channels in crystals of gramicidin A and of a cesium--gramicidin A complex: an x-ray diffraction study.</PDBx:title>
+         <PDBx:year>1978</PDBx:year>
+      </PDBx:citation>
+   </PDBx:citationCategory>
+   <PDBx:citation_authorCategory>
+      <PDBx:citation_author citation_id="1" name="Koeppe, R.E." ordinal="1"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="1" name="Hodgson, K.O." ordinal="2"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="1" name="Stryer, L." ordinal="3"></PDBx:citation_author>
+   </PDBx:citation_authorCategory>
+   <PDBx:pdbx_family_prd_auditCategory>
+      <PDBx:pdbx_family_prd_audit action_type="Create family" date="2012-02-08" family_prd_id="FAM_000064">
+         <PDBx:processing_site>RCSB</PDBx:processing_site>
+      </PDBx:pdbx_family_prd_audit>
+      <PDBx:pdbx_family_prd_audit action_type="Initial release" date="2013-10-16" family_prd_id="FAM_000064">
+         <PDBx:processing_site>RCSB</PDBx:processing_site>
+      </PDBx:pdbx_family_prd_audit>
+   </PDBx:pdbx_family_prd_auditCategory>
+   <PDBx:pdbx_reference_molecule_annotationCategory>
+      <PDBx:pdbx_reference_molecule_annotation family_prd_id="FAM_000064" ordinal="1">
+         <PDBx:prd_id>PRD_000152</PDBx:prd_id>
+         <PDBx:source>DrugBank</PDBx:source>
+         <PDBx:text>For treatment of skin lesions, surface wounds and eye infections</PDBx:text>
+         <PDBx:type>Function</PDBx:type>
+      </PDBx:pdbx_reference_molecule_annotation>
+      <PDBx:pdbx_reference_molecule_annotation family_prd_id="FAM_000064" ordinal="2">
+         <PDBx:prd_id>PRD_000152</PDBx:prd_id>
+         <PDBx:source>DrugBank</PDBx:source>
+         <PDBx:text>particularly effective against gram-positive bacteria</PDBx:text>
+         <PDBx:type>Function</PDBx:type>
+      </PDBx:pdbx_reference_molecule_annotation>
+      <PDBx:pdbx_reference_molecule_annotation family_prd_id="FAM_000064" ordinal="3">
+         <PDBx:prd_id>PRD_000152</PDBx:prd_id>
+         <PDBx:source>DrugBank</PDBx:source>
+         <PDBx:text>highly hemolytic, it cannot be administered internally and so is used only on the skin as a lotion or ointment</PDBx:text>
+         <PDBx:type>Function</PDBx:type>
+      </PDBx:pdbx_reference_molecule_annotation>
+      <PDBx:pdbx_reference_molecule_annotation family_prd_id="FAM_000064" ordinal="4">
+         <PDBx:prd_id>PRD_000150</PDBx:prd_id>
+         <PDBx:source>PMID:11570868</PDBx:source>
+         <PDBx:text>channel-forming antibiotic</PDBx:text>
+         <PDBx:type>Function</PDBx:type>
+      </PDBx:pdbx_reference_molecule_annotation>
+      <PDBx:pdbx_reference_molecule_annotation family_prd_id="FAM_000064" ordinal="5">
+         <PDBx:prd_id>PRD_000151</PDBx:prd_id>
+         <PDBx:source>PMID:11570868</PDBx:source>
+         <PDBx:text>channel-forming antibiotic</PDBx:text>
+         <PDBx:type>Function</PDBx:type>
+      </PDBx:pdbx_reference_molecule_annotation>
+      <PDBx:pdbx_reference_molecule_annotation family_prd_id="FAM_000064" ordinal="6">
+         <PDBx:prd_id>PRD_000153</PDBx:prd_id>
+         <PDBx:source>PMID:11570868</PDBx:source>
+         <PDBx:text>channel-forming antibiotic</PDBx:text>
+         <PDBx:type>Function</PDBx:type>
+      </PDBx:pdbx_reference_molecule_annotation>
+      <PDBx:pdbx_reference_molecule_annotation family_prd_id="FAM_000064" ordinal="7">
+         <PDBx:prd_id>PRD_000154</PDBx:prd_id>
+         <PDBx:source>DOI:10.1002/1521-3773(20021104)41:21&lt;4062::AID-ANIE4062&gt;3.0.CO;2-U</PDBx:source>
+         <PDBx:text>D,L-Peptide Ion Channel</PDBx:text>
+         <PDBx:type>Structure</PDBx:type>
+      </PDBx:pdbx_reference_molecule_annotation>
+      <PDBx:pdbx_reference_molecule_annotation family_prd_id="FAM_000064" ordinal="8">
+         <PDBx:prd_id>PRD_000155</PDBx:prd_id>
+         <PDBx:source>PMID:15691331</PDBx:source>
+         <PDBx:text>biological ion channel</PDBx:text>
+         <PDBx:type>Function</PDBx:type>
+      </PDBx:pdbx_reference_molecule_annotation>
+      <PDBx:pdbx_reference_molecule_annotation family_prd_id="FAM_000064" ordinal="9">
+         <PDBx:prd_id>PRD_001127</PDBx:prd_id>
+         <PDBx:source>DOI:10.1021/bi0204286</PDBx:source>
+         <PDBx:text>monovalent cation specific channel</PDBx:text>
+         <PDBx:type>Function</PDBx:type>
+      </PDBx:pdbx_reference_molecule_annotation>
+      <PDBx:pdbx_reference_molecule_annotation family_prd_id="FAM_000064" ordinal="10">
+         <PDBx:prd_id>PRD_001128</PDBx:prd_id>
+         <PDBx:source>DOI:10.1021/bi0204286</PDBx:source>
+         <PDBx:text>monovalent cation specific channel</PDBx:text>
+         <PDBx:type>Function</PDBx:type>
+      </PDBx:pdbx_reference_molecule_annotation>
+      <PDBx:pdbx_reference_molecule_annotation family_prd_id="FAM_000064" ordinal="11">
+         <PDBx:prd_id>PRD_001131</PDBx:prd_id>
+         <PDBx:source>DOI:10.1021/bi0204286</PDBx:source>
+         <PDBx:text>monovalent cation specific channel</PDBx:text>
+         <PDBx:type>Function</PDBx:type>
+      </PDBx:pdbx_reference_molecule_annotation>
+   </PDBx:pdbx_reference_molecule_annotationCategory>
+   <PDBx:pdbx_reference_molecule_familyCategory>
+      <PDBx:pdbx_reference_molecule_family family_prd_id="FAM_000064">
+         <PDBx:name>Linear GRAMICIDIN</PDBx:name>
+         <PDBx:release_status>REL</PDBx:release_status>
+      </PDBx:pdbx_reference_molecule_family>
+   </PDBx:pdbx_reference_molecule_familyCategory>
+   <PDBx:pdbx_reference_molecule_featuresCategory>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_000064" ordinal="1" prd_id="PRD_000150">
+         <PDBx:source>CAS</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>External_Reference_ID</PDBx:type>
+         <PDBx:value>11029-61-1</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_000064" ordinal="2" prd_id="PRD_000150">
+         <PDBx:source>Beilstein</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>External_Reference_ID</PDBx:type>
+         <PDBx:value>8194390</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_000064" ordinal="3" prd_id="PRD_000150">
+         <PDBx:source>PubChem</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>External_Reference_ID</PDBx:type>
+         <PDBx:value>16132269</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_000064" ordinal="4" prd_id="PRD_000150">
+         <PDBx:source>ChemSpider</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>External_Reference_ID</PDBx:type>
+         <PDBx:value>17288928</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_000064" ordinal="5" prd_id="PRD_000150">
+         <PDBx:source>ChemBank</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>External_Reference_ID</PDBx:type>
+         <PDBx:value>3103749</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_000064" ordinal="6" prd_id="PRD_000150">
+         <PDBx:source>KEGG</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>KEGG_Compound_ID</PDBx:type>
+         <PDBx:value>C15830</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_000064" ordinal="7" prd_id="PRD_000150">
+         <PDBx:source>MESH</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>MESH_Unique_ID</PDBx:type>
+         <PDBx:value>D006096</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_000064" ordinal="8" prd_id="PRD_000150">
+         <PDBx:source>MESH</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>MESH_TreeNumber</PDBx:type>
+         <PDBx:value>D04.345.566.850.300</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_000064" ordinal="9" prd_id="PRD_000150">
+         <PDBx:source>MESH</PDBx:source>
+         <PDBx:source_ordinal>2</PDBx:source_ordinal>
+         <PDBx:type>MESH_TreeNumber</PDBx:type>
+         <PDBx:value>D12.644.641.850.300</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_000064" ordinal="10" prd_id="PRD_000150">
+         <PDBx:source>MESH</PDBx:source>
+         <PDBx:source_ordinal>3</PDBx:source_ordinal>
+         <PDBx:type>MESH_TreeNumber</PDBx:type>
+         <PDBx:value>D12.644.905.300</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_000064" ordinal="11" prd_id="PRD_000150">
+         <PDBx:source>MESH</PDBx:source>
+         <PDBx:source_ordinal>4</PDBx:source_ordinal>
+         <PDBx:type>MESH_TreeNumber</PDBx:type>
+         <PDBx:value>D12.776.543.695.221</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_000064" ordinal="12" prd_id="PRD_000151">
+         <PDBx:source>Beilstein</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>External_Reference_ID</PDBx:type>
+         <PDBx:value>8194392</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_000064" ordinal="13" prd_id="PRD_000151">
+         <PDBx:source>PubChem</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>External_Reference_ID</PDBx:type>
+         <PDBx:value>25244501</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_000064" ordinal="14" prd_id="PRD_000151">
+         <PDBx:source>MESH</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>MESH_Unique_ID</PDBx:type>
+         <PDBx:value>D006096</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_000064" ordinal="15" prd_id="PRD_000151">
+         <PDBx:source>MESH</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>MESH_TreeNumber</PDBx:type>
+         <PDBx:value>D04.345.566.850.300</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_000064" ordinal="16" prd_id="PRD_000151">
+         <PDBx:source>MESH</PDBx:source>
+         <PDBx:source_ordinal>2</PDBx:source_ordinal>
+         <PDBx:type>MESH_TreeNumber</PDBx:type>
+         <PDBx:value>D12.644.641.850.300</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_000064" ordinal="17" prd_id="PRD_000151">
+         <PDBx:source>MESH</PDBx:source>
+         <PDBx:source_ordinal>3</PDBx:source_ordinal>
+         <PDBx:type>MESH_TreeNumber</PDBx:type>
+         <PDBx:value>D12.644.905.300</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_000064" ordinal="18" prd_id="PRD_000151">
+         <PDBx:source>MESH</PDBx:source>
+         <PDBx:source_ordinal>4</PDBx:source_ordinal>
+         <PDBx:type>MESH_TreeNumber</PDBx:type>
+         <PDBx:value>D12.776.543.695.221</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_000064" ordinal="19" prd_id="PRD_000152">
+         <PDBx:source>CAS</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>External_Reference_ID</PDBx:type>
+         <PDBx:value>1393-88-0</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_000064" ordinal="20" prd_id="PRD_000152">
+         <PDBx:source>Merck</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>External_Reference_ID</PDBx:type>
+         <PDBx:value>14:532</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_000064" ordinal="21" prd_id="PRD_000152">
+         <PDBx:source>Beilstein</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>External_Reference_ID</PDBx:type>
+         <PDBx:value>10244855</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_000064" ordinal="22" prd_id="PRD_000152">
+         <PDBx:source>DrugBank</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>External_Reference_ID</PDBx:type>
+         <PDBx:value>DB00027</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_000064" ordinal="23" prd_id="PRD_000152">
+         <PDBx:source>PubChem</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>External_Reference_ID</PDBx:type>
+         <PDBx:value>16130140</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_000064" ordinal="24" prd_id="PRD_000152">
+         <PDBx:source>ChemSpider</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>External_Reference_ID</PDBx:type>
+         <PDBx:value>17286916</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_000064" ordinal="25" prd_id="PRD_000152">
+         <PDBx:source>MESH</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>MESH_Unique_ID</PDBx:type>
+         <PDBx:value>D006096</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_000064" ordinal="26" prd_id="PRD_000152">
+         <PDBx:source>MESH</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>MESH_TreeNumber</PDBx:type>
+         <PDBx:value>D04.345.566.850.300</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_000064" ordinal="27" prd_id="PRD_000152">
+         <PDBx:source>MESH</PDBx:source>
+         <PDBx:source_ordinal>2</PDBx:source_ordinal>
+         <PDBx:type>MESH_TreeNumber</PDBx:type>
+         <PDBx:value>D12.644.641.850.300</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_000064" ordinal="28" prd_id="PRD_000152">
+         <PDBx:source>MESH</PDBx:source>
+         <PDBx:source_ordinal>3</PDBx:source_ordinal>
+         <PDBx:type>MESH_TreeNumber</PDBx:type>
+         <PDBx:value>D12.644.905.300</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_000064" ordinal="29" prd_id="PRD_000152">
+         <PDBx:source>MESH</PDBx:source>
+         <PDBx:source_ordinal>4</PDBx:source_ordinal>
+         <PDBx:type>MESH_TreeNumber</PDBx:type>
+         <PDBx:value>D12.776.543.695.221</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_000064" ordinal="30" prd_id="PRD_000152">
+         <PDBx:source>WikiPedia</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>URL</PDBx:type>
+         <PDBx:value>http://en.wikipedia.org/wiki/Gramicidin</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+   </PDBx:pdbx_reference_molecule_featuresCategory>
+   <PDBx:pdbx_reference_molecule_listCategory>
+      <PDBx:pdbx_reference_molecule_list family_prd_id="FAM_000064" prd_id="PRD_000150"></PDBx:pdbx_reference_molecule_list>
+      <PDBx:pdbx_reference_molecule_list family_prd_id="FAM_000064" prd_id="PRD_000151"></PDBx:pdbx_reference_molecule_list>
+      <PDBx:pdbx_reference_molecule_list family_prd_id="FAM_000064" prd_id="PRD_000152"></PDBx:pdbx_reference_molecule_list>
+      <PDBx:pdbx_reference_molecule_list family_prd_id="FAM_000064" prd_id="PRD_000153"></PDBx:pdbx_reference_molecule_list>
+      <PDBx:pdbx_reference_molecule_list family_prd_id="FAM_000064" prd_id="PRD_000154"></PDBx:pdbx_reference_molecule_list>
+      <PDBx:pdbx_reference_molecule_list family_prd_id="FAM_000064" prd_id="PRD_000155"></PDBx:pdbx_reference_molecule_list>
+      <PDBx:pdbx_reference_molecule_list family_prd_id="FAM_000064" prd_id="PRD_001127"></PDBx:pdbx_reference_molecule_list>
+      <PDBx:pdbx_reference_molecule_list family_prd_id="FAM_000064" prd_id="PRD_001128"></PDBx:pdbx_reference_molecule_list>
+      <PDBx:pdbx_reference_molecule_list family_prd_id="FAM_000064" prd_id="PRD_001131"></PDBx:pdbx_reference_molecule_list>
+   </PDBx:pdbx_reference_molecule_listCategory>
+   <PDBx:pdbx_reference_molecule_related_structuresCategory>
+      <PDBx:pdbx_reference_molecule_related_structures family_prd_id="FAM_000064" ordinal="1">
+         <PDBx:citation_id>1</PDBx:citation_id>
+         <PDBx:db_code>ZZZBRG</PDBx:db_code>
+         <PDBx:db_name>CCDC</PDBx:db_name>
+         <PDBx:formula>C99 H140 N20 O32</PDBx:formula>
+         <PDBx:name>Gramicidin A</PDBx:name>
+      </PDBx:pdbx_reference_molecule_related_structures>
+      <PDBx:pdbx_reference_molecule_related_structures family_prd_id="FAM_000064" ordinal="2">
+         <PDBx:citation_id>1</PDBx:citation_id>
+         <PDBx:db_code>ZZZBRG01</PDBx:db_code>
+         <PDBx:db_name>CCDC</PDBx:db_name>
+         <PDBx:formula>C99 H140 N20 O32</PDBx:formula>
+         <PDBx:name>Gramicidin A</PDBx:name>
+      </PDBx:pdbx_reference_molecule_related_structures>
+      <PDBx:pdbx_reference_molecule_related_structures family_prd_id="FAM_000064" ordinal="3">
+         <PDBx:citation_id>1</PDBx:citation_id>
+         <PDBx:db_code>ZZZBRJ</PDBx:db_code>
+         <PDBx:db_name>CCDC</PDBx:db_name>
+         <PDBx:formula>C99 H139 N20 O32 -, Cs +</PDBx:formula>
+         <PDBx:name>Gramicidin A cesium salt</PDBx:name>
+      </PDBx:pdbx_reference_molecule_related_structures>
+   </PDBx:pdbx_reference_molecule_related_structuresCategory>
+   <PDBx:pdbx_reference_molecule_synonymsCategory>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_000064" ordinal="1" prd_id="PRD_000150">
+         <PDBx:name>GRAMICIDIN</PDBx:name>
+         <PDBx:source>PDB</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_000064" ordinal="2" prd_id="PRD_000150">
+         <PDBx:name>HCO-L-Val-Gly-L-Ala-D-Leu-L-Ala-D-Val-L-Val-D-Val-L-Trp-D-Leu-L-Trp-D-Leu-L-Trp-D-Leu-L-Trp-NHCH2-CH2OH</PDBx:name>
+         <PDBx:source>Beilstein</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_000064" ordinal="3" prd_id="PRD_000150">
+         <PDBx:name>Valyl gramicidin</PDBx:name>
+         <PDBx:source>PubChem</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_000064" ordinal="4" prd_id="PRD_000150">
+         <PDBx:name>A Prestwick_799</PDBx:name>
+         <PDBx:source>PubChem</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_000064" ordinal="5" prd_id="PRD_000150">
+         <PDBx:name>GRAMICIDIN A</PDBx:name>
+         <PDBx:source>PubChem</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_000064" ordinal="6" prd_id="PRD_000150">
+         <PDBx:name>1-garamicidin</PDBx:name>
+         <PDBx:source>PubChem</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_000064" ordinal="7" prd_id="PRD_000150">
+         <PDBx:name>Gramicidin A from Bacillus brevis</PDBx:name>
+         <PDBx:source>PubChem</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_000064" ordinal="8" prd_id="PRD_000150">
+         <PDBx:name>CPD-10415</PDBx:name>
+         <PDBx:source>PubChem</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_000064" ordinal="9" prd_id="PRD_000151">
+         <PDBx:name>GRAMICIDIN</PDBx:name>
+         <PDBx:source>PDB</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_000064" ordinal="10" prd_id="PRD_000151">
+         <PDBx:name>Gramicidin B</PDBx:name>
+         <PDBx:source>PubChem</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_000064" ordinal="11" prd_id="PRD_000151">
+         <PDBx:name>CPD-10416</PDBx:name>
+         <PDBx:source>PubChem</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_000064" ordinal="12" prd_id="PRD_000152">
+         <PDBx:name>GRAMICIDIN</PDBx:name>
+         <PDBx:source>PDB</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_000064" ordinal="13" prd_id="PRD_000152">
+         <PDBx:name>amicidin D (Dubos)</PDBx:name>
+         <PDBx:source>Merck</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_000064" ordinal="14" prd_id="PRD_000152">
+         <PDBx:name>linear gramicidins</PDBx:name>
+         <PDBx:source>Merck</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_000064" ordinal="15" prd_id="PRD_000152">
+         <PDBx:name>Gramoderm (Schering)</PDBx:name>
+         <PDBx:source>Merck</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_000064" ordinal="16" prd_id="PRD_000152">
+         <PDBx:name>Neosporin</PDBx:name>
+         <PDBx:source>DrugBank</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_000064" ordinal="17" prd_id="PRD_000152">
+         <PDBx:name>Gramicidin D</PDBx:name>
+         <PDBx:source>DrugBank</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_000064" ordinal="18" prd_id="PRD_000152">
+         <PDBx:name>Neosporin Ophthalmic solution</PDBx:name>
+         <PDBx:source>PubChem</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_000064" ordinal="19" prd_id="PRD_000152">
+         <PDBx:name>Gramicidin</PDBx:name>
+         <PDBx:source>PubChem</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_000064" ordinal="20" prd_id="PRD_000152">
+         <PDBx:name>Gramicidina</PDBx:name>
+         <PDBx:source>PubChem</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_000064" ordinal="21" prd_id="PRD_000152">
+         <PDBx:name>Gramicidine</PDBx:name>
+         <PDBx:source>PubChem</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_000064" ordinal="22" prd_id="PRD_000152">
+         <PDBx:name>Gramicidinum</PDBx:name>
+         <PDBx:source>PubChem</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_000064" ordinal="23" prd_id="PRD_000152">
+         <PDBx:name>(2R)-2-[[(2S)-2-[[(2S)-2-[[(2S)-2-[[(2R)-2-[[(2S)-2-[[(2R)-2-[[(2S)-2-[[2-[[(2S)-2-formamido-3-methylbutanoyl]amino]acetyl]amino]propanoyl]amino]-4-methylpentanoyl]amino]propanoyl]amino]-3-methylbutanoyl]amino]-3-methylbutanoyl]amino]-3-methylbutanoyl]amino]-3-(1H-indol-3-yl)propanoyl]amino]-N-[(2S)-1-[[(2R)-1-[[(2S)-1-[[(2R)-1-[[(2S)-1-(2-hydroxyethylamino)-3-(1H-indol-3-yl)-1-oxopropan-2-yl]amino]-4-methyl-1-oxopentan-2-yl]amino]-3-(1H-indol-3-yl)-1-oxopropan-2-yl]amino]-4-methyl-1-oxopentan-2-yl]amino]-3-(1H-indol-3-yl)-1-oxopropan-2-yl]-4-methylpentanamide</PDBx:name>
+         <PDBx:source>DrugBank</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_000064" ordinal="24" prd_id="PRD_000150">
+         <PDBx:name>VALYL GRAMICIDIN</PDBx:name>
+         <PDBx:source>PDB</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_000064" ordinal="25" prd_id="PRD_000151">
+         <PDBx:name>VAL-GRAMICIDIN B</PDBx:name>
+         <PDBx:source>PDB</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_000064" ordinal="26" prd_id="PRD_000150">
+         <PDBx:name>Gramicidin A</PDBx:name>
+         <PDBx:source>SciFinder</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_000064" ordinal="27" prd_id="PRD_000152">
+         <PDBx:name>Gramicidin D</PDBx:name>
+         <PDBx:source>SciFinder</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_000064" ordinal="28" prd_id="PRD_000152">
+         <PDBx:name>Gramicidin Dubos</PDBx:name>
+         <PDBx:source>SciFinder</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_000064" ordinal="29" prd_id="PRD_001127">
+         <PDBx:name>F1-Gramicidin A</PDBx:name>
+         <PDBx:source>PDB</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_000064" ordinal="30" prd_id="PRD_001128">
+         <PDBx:name>F1-Gramicidin C</PDBx:name>
+         <PDBx:source>PDB</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_000064" ordinal="31" prd_id="PRD_001131">
+         <PDBx:name>G15-Gramicidin A</PDBx:name>
+         <PDBx:source>PDB</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_000064" ordinal="32" prd_id="PRD_000154">
+         <PDBx:name>minigramicidin</PDBx:name>
+         <PDBx:source>PDB</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+   </PDBx:pdbx_reference_molecule_synonymsCategory>
+</PDBx:datablock>

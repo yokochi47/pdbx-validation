@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<PDBx:datablock datablockName="FAM_000353"
+   xmlns:PDBx="http://pdbml.pdb.org/schema/pdbx-v50.xsd"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://pdbml.pdb.org/schema/pdbx-v50.xsd pdbx-v50.xsd">
+
+   <PDBx:pdbx_family_prd_auditCategory>
+      <PDBx:pdbx_family_prd_audit action_type="Create family" date="2012-02-08" family_prd_id="FAM_000353">
+         <PDBx:processing_site>RCSB</PDBx:processing_site>
+      </PDBx:pdbx_family_prd_audit>
+      <PDBx:pdbx_family_prd_audit action_type="Initial release" date="2013-10-16" family_prd_id="FAM_000353">
+         <PDBx:processing_site>RCSB</PDBx:processing_site>
+      </PDBx:pdbx_family_prd_audit>
+   </PDBx:pdbx_family_prd_auditCategory>
+   <PDBx:pdbx_reference_molecule_annotationCategory>
+      <PDBx:pdbx_reference_molecule_annotation family_prd_id="FAM_000353" ordinal="1">
+         <PDBx:prd_id>PRD_000793</PDBx:prd_id>
+         <PDBx:source>PMID:22645124</PDBx:source>
+         <PDBx:text>inhibitor of Streptopain, EC: 3.4.22.10</PDBx:text>
+         <PDBx:type>Function</PDBx:type>
+      </PDBx:pdbx_reference_molecule_annotation>
+   </PDBx:pdbx_reference_molecule_annotationCategory>
+   <PDBx:pdbx_reference_molecule_familyCategory>
+      <PDBx:pdbx_reference_molecule_family family_prd_id="FAM_000353">
+         <PDBx:name>AEIK-aldehyde inhibitor</PDBx:name>
+         <PDBx:release_status>REL</PDBx:release_status>
+      </PDBx:pdbx_reference_molecule_family>
+   </PDBx:pdbx_reference_molecule_familyCategory>
+   <PDBx:pdbx_reference_molecule_featuresCategory>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_000353" ordinal="1" prd_id="PRD_000793">
+         <PDBx:source>PubChem</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>External_Reference_ID</PDBx:type>
+         <PDBx:value>70702291</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+   </PDBx:pdbx_reference_molecule_featuresCategory>
+   <PDBx:pdbx_reference_molecule_listCategory>
+      <PDBx:pdbx_reference_molecule_list family_prd_id="FAM_000353" prd_id="PRD_000793"></PDBx:pdbx_reference_molecule_list>
+   </PDBx:pdbx_reference_molecule_listCategory>
+</PDBx:datablock>

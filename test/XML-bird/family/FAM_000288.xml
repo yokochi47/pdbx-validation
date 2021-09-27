@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<PDBx:datablock datablockName="FAM_000288"
+   xmlns:PDBx="http://pdbml.pdb.org/schema/pdbx-v50.xsd"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://pdbml.pdb.org/schema/pdbx-v50.xsd pdbx-v50.xsd">
+
+   <PDBx:pdbx_family_prd_auditCategory>
+      <PDBx:pdbx_family_prd_audit action_type="Create family" date="2012-02-08" family_prd_id="FAM_000288">
+         <PDBx:processing_site>RCSB</PDBx:processing_site>
+      </PDBx:pdbx_family_prd_audit>
+      <PDBx:pdbx_family_prd_audit action_type="Initial release" date="2013-10-16" family_prd_id="FAM_000288">
+         <PDBx:processing_site>RCSB</PDBx:processing_site>
+      </PDBx:pdbx_family_prd_audit>
+   </PDBx:pdbx_family_prd_auditCategory>
+   <PDBx:pdbx_reference_molecule_annotationCategory>
+      <PDBx:pdbx_reference_molecule_annotation family_prd_id="FAM_000288" ordinal="1">
+         <PDBx:prd_id>PRD_000416</PDBx:prd_id>
+         <PDBx:source>PMID:1304340</PDBx:source>
+         <PDBx:text>Inhibitor of ENDOTHIAPEPSIN, EC: 3.4.23.22</PDBx:text>
+         <PDBx:type>Function</PDBx:type>
+      </PDBx:pdbx_reference_molecule_annotation>
+      <PDBx:pdbx_reference_molecule_annotation family_prd_id="FAM_000288" ordinal="2">
+         <PDBx:prd_id>PRD_000432</PDBx:prd_id>
+         <PDBx:source>PMID:12083527</PDBx:source>
+         <PDBx:text>Inhibitor of ENDOTHIAPEPSIN, EC: 3.4.23.22</PDBx:text>
+         <PDBx:type>Function</PDBx:type>
+      </PDBx:pdbx_reference_molecule_annotation>
+      <PDBx:pdbx_reference_molecule_annotation family_prd_id="FAM_000288" ordinal="3">
+         <PDBx:prd_id>PRD_000432</PDBx:prd_id>
+         <PDBx:source>KEGG</PDBx:source>
+         <PDBx:text>renin inhibitor</PDBx:text>
+         <PDBx:type>Function</PDBx:type>
+      </PDBx:pdbx_reference_molecule_annotation>
+      <PDBx:pdbx_reference_molecule_annotation family_prd_id="FAM_000288" ordinal="4">
+         <PDBx:prd_id>PRD_000392</PDBx:prd_id>
+         <PDBx:source>PMID:8254610</PDBx:source>
+         <PDBx:text>Inhibitor of ENDOTHIAPEPSIN, EC: 3.4.23.22</PDBx:text>
+         <PDBx:type>Function</PDBx:type>
+      </PDBx:pdbx_reference_molecule_annotation>
+   </PDBx:pdbx_reference_molecule_annotationCategory>
+   <PDBx:pdbx_reference_molecule_familyCategory>
+      <PDBx:pdbx_reference_molecule_family family_prd_id="FAM_000288">
+         <PDBx:name>statine and statine derivative containing inhibitors</PDBx:name>
+         <PDBx:release_status>REL</PDBx:release_status>
+      </PDBx:pdbx_reference_molecule_family>
+   </PDBx:pdbx_reference_molecule_familyCategory>
+   <PDBx:pdbx_reference_molecule_featuresCategory>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_000288" ordinal="1" prd_id="PRD_000416">
+         <PDBx:source>PubChem</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>External_reference_ID</PDBx:type>
+         <PDBx:value>445400</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_000288" ordinal="2" prd_id="PRD_000416">
+         <PDBx:source>ChemSpider</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>External_reference_ID</PDBx:type>
+         <PDBx:value>393051</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_000288" ordinal="3" prd_id="PRD_000432">
+         <PDBx:source>MeSH</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>MeSH_Unique_ID</PDBx:type>
+         <PDBx:value>C076964</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_000288" ordinal="4" prd_id="PRD_000432">
+         <PDBx:source>Beilstein</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>External_reference_ID</PDBx:type>
+         <PDBx:value>4776080</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_000288" ordinal="5" prd_id="PRD_000432">
+         <PDBx:source>KEGG</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>KEGG_Drug_ID</PDBx:type>
+         <PDBx:value>D03743</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_000288" ordinal="6" prd_id="PRD_000432">
+         <PDBx:source>PubChem</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>External_reference_ID</PDBx:type>
+         <PDBx:value>64922</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_000288" ordinal="7" prd_id="PRD_000432">
+         <PDBx:source>ChemSpider</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>External_reference_ID</PDBx:type>
+         <PDBx:value>58451</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_000288" ordinal="8" prd_id="PRD_000432">
+         <PDBx:source>CAS</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>External_reference_ID</PDBx:type>
+         <PDBx:value>119625-78-4</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_000288" ordinal="9" prd_id="PRD_000432">
+         <PDBx:source>ChEBI</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>External_reference_ID</PDBx:type>
+         <PDBx:value>196469</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_000288" ordinal="10" prd_id="PRD_000432">
+         <PDBx:source>ChemIDplus</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>External_reference_ID</PDBx:type>
+         <PDBx:value>119625784</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_000288" ordinal="11" prd_id="PRD_000392">
+         <PDBx:source>PubChem</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>External_reference_ID</PDBx:type>
+         <PDBx:value>15018015</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+   </PDBx:pdbx_reference_molecule_featuresCategory>
+   <PDBx:pdbx_reference_molecule_listCategory>
+      <PDBx:pdbx_reference_molecule_list family_prd_id="FAM_000288" prd_id="PRD_000392"></PDBx:pdbx_reference_molecule_list>
+      <PDBx:pdbx_reference_molecule_list family_prd_id="FAM_000288" prd_id="PRD_000416"></PDBx:pdbx_reference_molecule_list>
+      <PDBx:pdbx_reference_molecule_list family_prd_id="FAM_000288" prd_id="PRD_000432"></PDBx:pdbx_reference_molecule_list>
+   </PDBx:pdbx_reference_molecule_listCategory>
+   <PDBx:pdbx_reference_molecule_synonymsCategory>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_000288" ordinal="1" prd_id="PRD_000416">
+         <PDBx:name>CP-81,282</PDBx:name>
+         <PDBx:source>PDB</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_000288" ordinal="2" prd_id="PRD_000416">
+         <PDBx:name>L-Norleucinamide, N-(4-morpholinylcarbonyl)-L-phenylalanyl-N-[(1S)-1-(cyclohexylmethyl)-3,3-difluoro-4-(methylamino)-2,4-dioxobutyl]-(9CI)</PDBx:name>
+         <PDBx:source>Scifinder</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_000288" ordinal="3" prd_id="PRD_000416">
+         <PDBx:name>L-Norleucinamide, N-(4-morpholinylcarbonyl)-L-phenylalanyl-N-[1-(cyclohexylmethyl)-3,3-difluoro-4-(methylamino)-2,4-dioxobutyl]-, (S)-</PDBx:name>
+         <PDBx:source>Scifinder</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_000288" ordinal="4" prd_id="PRD_000416">
+         <PDBx:name>CP 81282</PDBx:name>
+         <PDBx:source>Scifinder</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_000288" ordinal="5" prd_id="PRD_000432">
+         <PDBx:name>L-Cysteinamide, N-(4-morpholinylcarbonyl)-L-phenylalanyl-N-[(1S,2R)-1-(cyclohexylmethyl)-2-hydroxy-3-(1-methylethoxy)-3-oxopropyl]-S-methyl-</PDBx:name>
+         <PDBx:source>Scifinder</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_000288" ordinal="6" prd_id="PRD_000432">
+         <PDBx:name>L-Cysteinamide, N-(4-morpholinylcarbonyl)-L-phenylalanyl-N-[1-(cyclohexylmethyl)-2-hydroxy-3-(1-methylethoxy)-3-oxopropyl]-S-methyl-, [R-(R*,S*)]-</PDBx:name>
+         <PDBx:source>Scifinder</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_000288" ordinal="7" prd_id="PRD_000432">
+         <PDBx:name>CP 80794</PDBx:name>
+         <PDBx:source>Scifinder</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_000288" ordinal="8" prd_id="PRD_000432">
+         <PDBx:name>Terlakiren</PDBx:name>
+         <PDBx:source>Scifinder</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_000288" ordinal="9" prd_id="PRD_000432">
+         <PDBx:name>(2R,3S)-4-Cyclohexyl-2-hydroxy-3-((R)-3-methylsulfanyl-2-{(S)-2-[(morpholine-4-carbonyl)-amino]-3-phenyl-propionylamino}-propionylamino)-butyric acid isopropyl ester</PDBx:name>
+         <PDBx:source>Beilstein</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_000288" ordinal="10" prd_id="PRD_000432">
+         <PDBx:name>Terlakiren</PDBx:name>
+         <PDBx:source>KEGG</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_000288" ordinal="11" prd_id="PRD_000432">
+         <PDBx:name>Terlakiren</PDBx:name>
+         <PDBx:source>PubChem</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_000288" ordinal="12" prd_id="PRD_000432">
+         <PDBx:name>MOR-PHE-CYM-NOR Terlakiren</PDBx:name>
+         <PDBx:source>PubChem</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_000288" ordinal="13" prd_id="PRD_000432">
+         <PDBx:name>Terlakiren</PDBx:name>
+         <PDBx:source>PubChem</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_000288" ordinal="14" prd_id="PRD_000432">
+         <PDBx:name>CID64922</PDBx:name>
+         <PDBx:source>PubChem</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_000288" ordinal="15" prd_id="PRD_000432">
+         <PDBx:name>CP 80794</PDBx:name>
+         <PDBx:source>PubChem</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_000288" ordinal="16" prd_id="PRD_000432">
+         <PDBx:name>D03743</PDBx:name>
+         <PDBx:source>PubChem</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_000288" ordinal="17" prd_id="PRD_000432">
+         <PDBx:name>Isopropyl (alphaR,betaS)-alpha-hydroxy-beta-((R)-3-(methylthio)-2-((S)-alpha-4-morpholinecarboxamidohydrocinnamamido) propionamido)cyclohexanebutyrate</PDBx:name>
+         <PDBx:source>PubChem</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_000288" ordinal="18" prd_id="PRD_000432">
+         <PDBx:name>L-Cysteinamide, N-(4-morpholinylcarbonyl)-L-phenylalanyl-N-(1-(cyclohexylmethyl)-2-hydroxy-3-(1-methylethoxy)-3-oxopropyl)-S-methyl-, (R-(R*,S*))-</PDBx:name>
+         <PDBx:source>PubChem</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_000288" ordinal="19" prd_id="PRD_000432">
+         <PDBx:name>[R-(R*,S* )]-N-(4-Morpholinylcarbonyl)-L-phenylalanyl-N-[1-(cyclohexylmet hyl)-2-hydroxy-3-(1-methylethoxy)-3-oxopropyl]-S-methyl-L-cyste inamide</PDBx:name>
+         <PDBx:source>ChemSpider</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_000288" ordinal="20" prd_id="PRD_000432">
+         <PDBx:name>CP-80,794</PDBx:name>
+         <PDBx:source>ChemSpider</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_000288" ordinal="21" prd_id="PRD_000432">
+         <PDBx:name>Isopropyl (aR,bS)-a-hydroxy-b-[(R)-3-(methylthio)-2-[(S)-a-4-morpholinec arboxamidohydrocinnamamido] propionamido]cyclohexanebutyratesteinamide</PDBx:name>
+         <PDBx:source>ChemSpider</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_000288" ordinal="22" prd_id="PRD_000432">
+         <PDBx:name>Isopropyl (alphaR,betaS)-alpha-hydroxy-beta-((R)-3-(methylthio)-2-((S)-a lpha-4-morpholinecarboxamidohydrocinnamamido)propionamido)cyclo hexanebutyrate</PDBx:name>
+         <PDBx:source>ChemSpider</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+   </PDBx:pdbx_reference_molecule_synonymsCategory>
+</PDBx:datablock>

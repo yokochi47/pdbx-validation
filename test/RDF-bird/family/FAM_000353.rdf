@@ -1,0 +1,110 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:PDBo="http://rdf.wwpdb.org/schema/pdbx-v50.owl#">
+  <PDBo:datablock rdf:about="http://rdf.wwpdb.org/prd/FAM_000353">
+    <dcterms:identifier>FAM_000353</dcterms:identifier>
+    <dc:title>AEIK-aldehyde inhibitor</dc:title>
+    <rdfs:seeAlso rdf:resource="http://pdbj.org/bird/summary/FAM_000353"/>
+    <PDBo:datablockName>FAM_000353</PDBo:datablockName>
+    <PDBo:has_pdbx_family_prd_auditCategory>
+      <PDBo:pdbx_family_prd_auditCategory rdf:about="http://rdf.wwpdb.org/prd/FAM_000353/pdbx_family_prd_auditCategory">
+        <PDBo:has_pdbx_family_prd_audit>
+          <PDBo:pdbx_family_prd_audit rdf:about="http://rdf.wwpdb.org/prd/FAM_000353/pdbx_family_prd_audit/Create_family,2012-02-08,FAM_000353">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/prd/FAM_000353"/>
+            <PDBo:reference_to_pdbx_reference_molecule_family>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/prd/FAM_000353/pdbx_reference_molecule_family/FAM_000353">
+                <PDBo:referenced_by_pdbx_family_prd_audit rdf:resource="http://rdf.wwpdb.org/prd/FAM_000353/pdbx_family_prd_audit/Create_family,2012-02-08,FAM_000353"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_reference_molecule_family>
+            <PDBo:pdbx_family_prd_audit.action_type>Create family</PDBo:pdbx_family_prd_audit.action_type>
+            <PDBo:pdbx_family_prd_audit.date>2012-02-08</PDBo:pdbx_family_prd_audit.date>
+            <PDBo:pdbx_family_prd_audit.family_prd_id>FAM_000353</PDBo:pdbx_family_prd_audit.family_prd_id>
+            <PDBo:pdbx_family_prd_audit.processing_site>RCSB</PDBo:pdbx_family_prd_audit.processing_site>
+          </PDBo:pdbx_family_prd_audit>
+        </PDBo:has_pdbx_family_prd_audit>
+        <PDBo:has_pdbx_family_prd_audit>
+          <PDBo:pdbx_family_prd_audit rdf:about="http://rdf.wwpdb.org/prd/FAM_000353/pdbx_family_prd_audit/Initial_release,2013-10-16,FAM_000353">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/prd/FAM_000353"/>
+            <PDBo:reference_to_pdbx_reference_molecule_family>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/prd/FAM_000353/pdbx_reference_molecule_family/FAM_000353">
+                <PDBo:referenced_by_pdbx_family_prd_audit rdf:resource="http://rdf.wwpdb.org/prd/FAM_000353/pdbx_family_prd_audit/Initial_release,2013-10-16,FAM_000353"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_reference_molecule_family>
+            <PDBo:pdbx_family_prd_audit.action_type>Initial release</PDBo:pdbx_family_prd_audit.action_type>
+            <PDBo:pdbx_family_prd_audit.date>2013-10-16</PDBo:pdbx_family_prd_audit.date>
+            <PDBo:pdbx_family_prd_audit.family_prd_id>FAM_000353</PDBo:pdbx_family_prd_audit.family_prd_id>
+            <PDBo:pdbx_family_prd_audit.processing_site>RCSB</PDBo:pdbx_family_prd_audit.processing_site>
+          </PDBo:pdbx_family_prd_audit>
+        </PDBo:has_pdbx_family_prd_audit>
+      </PDBo:pdbx_family_prd_auditCategory>
+    </PDBo:has_pdbx_family_prd_auditCategory>
+    <PDBo:has_pdbx_reference_molecule_annotationCategory>
+      <PDBo:pdbx_reference_molecule_annotationCategory rdf:about="http://rdf.wwpdb.org/prd/FAM_000353/pdbx_reference_molecule_annotationCategory">
+        <PDBo:has_pdbx_reference_molecule_annotation>
+          <PDBo:pdbx_reference_molecule_annotation rdf:about="http://rdf.wwpdb.org/prd/FAM_000353/pdbx_reference_molecule_annotation/FAM_000353,1">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/prd/FAM_000353"/>
+            <PDBo:pdbx_reference_molecule_annotation.family_prd_id>FAM_000353</PDBo:pdbx_reference_molecule_annotation.family_prd_id>
+            <PDBo:pdbx_reference_molecule_annotation.ordinal>1</PDBo:pdbx_reference_molecule_annotation.ordinal>
+            <PDBo:pdbx_reference_molecule_annotation.prd_id>PRD_000793</PDBo:pdbx_reference_molecule_annotation.prd_id>
+            <PDBo:pdbx_reference_molecule_annotation.source>PMID:22645124</PDBo:pdbx_reference_molecule_annotation.source>
+            <PDBo:pdbx_reference_molecule_annotation.text>inhibitor of Streptopain, EC: 3.4.22.10</PDBo:pdbx_reference_molecule_annotation.text>
+            <PDBo:pdbx_reference_molecule_annotation.type>Function</PDBo:pdbx_reference_molecule_annotation.type>
+            <PDBo:link_to_pubmed rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/22645124" rdfs:label="pubmed:22645124"/>
+            <dcterms:references rdf:resource="http://identifiers.org/pubmed:22645124" rdfs:label="pubmed:22645124"/>
+          </PDBo:pdbx_reference_molecule_annotation>
+        </PDBo:has_pdbx_reference_molecule_annotation>
+      </PDBo:pdbx_reference_molecule_annotationCategory>
+    </PDBo:has_pdbx_reference_molecule_annotationCategory>
+    <PDBo:has_pdbx_reference_molecule_familyCategory>
+      <PDBo:pdbx_reference_molecule_familyCategory rdf:about="http://rdf.wwpdb.org/prd/FAM_000353/pdbx_reference_molecule_familyCategory">
+        <PDBo:has_pdbx_reference_molecule_family>
+          <PDBo:pdbx_reference_molecule_family rdf:about="http://rdf.wwpdb.org/prd/FAM_000353/pdbx_reference_molecule_family/FAM_000353">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/prd/FAM_000353"/>
+            <PDBo:pdbx_reference_molecule_family.family_prd_id>FAM_000353</PDBo:pdbx_reference_molecule_family.family_prd_id>
+            <PDBo:pdbx_reference_molecule_family.name>AEIK-aldehyde inhibitor</PDBo:pdbx_reference_molecule_family.name>
+            <PDBo:pdbx_reference_molecule_family.release_status>REL</PDBo:pdbx_reference_molecule_family.release_status>
+          </PDBo:pdbx_reference_molecule_family>
+        </PDBo:has_pdbx_reference_molecule_family>
+      </PDBo:pdbx_reference_molecule_familyCategory>
+    </PDBo:has_pdbx_reference_molecule_familyCategory>
+    <PDBo:has_pdbx_reference_molecule_featuresCategory>
+      <PDBo:pdbx_reference_molecule_featuresCategory rdf:about="http://rdf.wwpdb.org/prd/FAM_000353/pdbx_reference_molecule_featuresCategory">
+        <PDBo:has_pdbx_reference_molecule_features>
+          <PDBo:pdbx_reference_molecule_features rdf:about="http://rdf.wwpdb.org/prd/FAM_000353/pdbx_reference_molecule_features/FAM_000353,1,PRD_000793">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/prd/FAM_000353"/>
+            <PDBo:reference_to_pdbx_reference_molecule_list>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/prd/FAM_000353/pdbx_reference_molecule_list/FAM_000353,PRD_000793">
+                <PDBo:referenced_by_pdbx_reference_molecule_features rdf:resource="http://rdf.wwpdb.org/prd/FAM_000353/pdbx_reference_molecule_features/FAM_000353,1,PRD_000793"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_reference_molecule_list>
+            <PDBo:pdbx_reference_molecule_features.family_prd_id>FAM_000353</PDBo:pdbx_reference_molecule_features.family_prd_id>
+            <PDBo:pdbx_reference_molecule_features.ordinal>1</PDBo:pdbx_reference_molecule_features.ordinal>
+            <PDBo:pdbx_reference_molecule_features.prd_id>PRD_000793</PDBo:pdbx_reference_molecule_features.prd_id>
+            <PDBo:pdbx_reference_molecule_features.source>PubChem</PDBo:pdbx_reference_molecule_features.source>
+            <PDBo:pdbx_reference_molecule_features.source_ordinal>1</PDBo:pdbx_reference_molecule_features.source_ordinal>
+            <PDBo:pdbx_reference_molecule_features.type>External_Reference_ID</PDBo:pdbx_reference_molecule_features.type>
+            <PDBo:pdbx_reference_molecule_features.value>70702291</PDBo:pdbx_reference_molecule_features.value>
+            <PDBo:link_to_pubchem_substance rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubchem/substance/SID70702291" rdfs:label="pubchem.substance:70702291"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/pubchem.substance:70702291" rdfs:label="pubchem.substance:70702291"/>
+          </PDBo:pdbx_reference_molecule_features>
+        </PDBo:has_pdbx_reference_molecule_features>
+      </PDBo:pdbx_reference_molecule_featuresCategory>
+    </PDBo:has_pdbx_reference_molecule_featuresCategory>
+    <PDBo:has_pdbx_reference_molecule_listCategory>
+      <PDBo:pdbx_reference_molecule_listCategory rdf:about="http://rdf.wwpdb.org/prd/FAM_000353/pdbx_reference_molecule_listCategory">
+        <PDBo:has_pdbx_reference_molecule_list>
+          <PDBo:pdbx_reference_molecule_list rdf:about="http://rdf.wwpdb.org/prd/FAM_000353/pdbx_reference_molecule_list/FAM_000353,PRD_000793">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/prd/FAM_000353"/>
+            <PDBo:reference_to_pdbx_reference_molecule_family>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/prd/FAM_000353/pdbx_reference_molecule_family/FAM_000353">
+                <PDBo:referenced_by_pdbx_reference_molecule_list rdf:resource="http://rdf.wwpdb.org/prd/FAM_000353/pdbx_reference_molecule_list/FAM_000353,PRD_000793"/>
+              </rdf:Description>
+            </PDBo:reference_to_pdbx_reference_molecule_family>
+            <PDBo:pdbx_reference_molecule_list.family_prd_id>FAM_000353</PDBo:pdbx_reference_molecule_list.family_prd_id>
+            <PDBo:pdbx_reference_molecule_list.prd_id>PRD_000793</PDBo:pdbx_reference_molecule_list.prd_id>
+            <PDBo:link_to_prd rdf:resource="http://rdf.wwpdb.org/prd/PRD_000793"/>
+          </PDBo:pdbx_reference_molecule_list>
+        </PDBo:has_pdbx_reference_molecule_list>
+      </PDBo:pdbx_reference_molecule_listCategory>
+    </PDBo:has_pdbx_reference_molecule_listCategory>
+  </PDBo:datablock>
+</rdf:RDF>

@@ -40,22 +40,22 @@ WORK_DIR=test
 
 for arg ; do
 
- pdbid=${arg,,}
+ pdb_id=${arg,,}
 
- if [[ $pdbid =~ [0-9][0-9a-z]{3} ]] ; then
+ if [[ $pdb_id =~ [0-9][0-9a-z]{3} ]] ; then
 
-   pdbml_file=$WORK_DIR/$PDBML/$pdbid-noatom.xml
-   sifts_xml_file=$WORK_DIR/$SIFTS_XML/$pdbid.xml
+   pdbml_file=$WORK_DIR/$PDBML/$pdb_id-noatom.xml
+   sifts_xml_file=$WORK_DIR/$SIFTS_XML/$pdb_id.xml
 
    if [ ! -e $pdbml_file ] ; then
 
-    wget ftp://ftp.wwpdb.org/pub/pdb/data/structures/all/XML-noatom/$pdbid-noatom.xml.gz -P $WORK_DIR/pdbml; gunzip $pdbml_file.gz
+    wget ftp://ftp.wwpdb.org/pub/pdb/data/structures/all/XML-noatom/$pdb_id-noatom.xml.gz -P $WORK_DIR/pdbml; gunzip $pdbml_file.gz
 
    fi
 
    if [ ! -e $sifts_xml_file ] ; then
 
-    wget ftp://$SIFTS_XML_URL/$pdbid.xml.gz -P $WORK_DIR/$SIFTS_XML; gunzip $sifts_xml_file.gz
+    wget ftp://$SIFTS_XML_URL/$pdb_id.xml.gz -P $WORK_DIR/$SIFTS_XML; gunzip $sifts_xml_file.gz
 
    fi
 
@@ -68,7 +68,7 @@ mkdir -p $WORK_DIR/$RDF
 
 for pdbml_file in $WORK_DIR/$PDBML/*.xml ; do
 
- pdbid=`basename $pdbml_file -noatom.xml`
+ pdb_id=`basename $pdbml_file -noatom.xml`
 
  #exptl_method=`java -jar $SAXON -s:$pdbml_file -xsl:stylesheet/exptl_method.xsl`
  exptl_method=`xsltproc stylesheet/exptl_method.xsl $pdbml_file`
@@ -76,10 +76,10 @@ for pdbml_file in $WORK_DIR/$PDBML/*.xml ; do
  has_glycan=`xsltproc $PDBML2WURCS_XSL $pdbml_file`
 
  echo
- echo Processing PDB ID: ${pdbid^^}, "Exptl. method: "$exptl_method" ..."
+ echo Processing PDB ID: ${pdb_id^^}, "Exptl. method: "$exptl_method" ..."
 
- sifts_xml_file=$WORK_DIR/$SIFTS_XML/$pdbid.xml
- pdbml_sifts_file=$WORK_DIR/$PDBML_SIFTS/$pdbid-noatom-sifts.xml
+ sifts_xml_file=$WORK_DIR/$SIFTS_XML/$pdb_id.xml
+ pdbml_sifts_file=$WORK_DIR/$PDBML_SIFTS/$pdb_id-noatom-sifts.xml
 
  #xsltproc stylesheet/check_sifts.xsl $sifts_xml_file
  #echo
@@ -90,7 +90,7 @@ for pdbml_file in $WORK_DIR/$PDBML/*.xml ; do
   cp -f $pdbml_file $pdbml_sifts_file
  fi
 
- rdf_file=$WORK_DIR/$RDF/$pdbid.rdf
+ rdf_file=$WORK_DIR/$RDF/$pdb_id.rdf
 
  if [ -z "$has_glycan" ] ; then
   xsltproc -o $rdf_file --param wurcs2glytoucan $_WURCS_CATALOG_XML $PDBML2RDF_XSL $pdbml_sifts_file

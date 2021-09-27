@@ -61,29 +61,29 @@ WORK_DIR=test
 
 for arg ; do
 
- pdbid=${arg,,}
+ pdb_id=${arg,,}
 
- if [[ $pdbid =~ [0-9][0-9a-z]{3} ]] ; then
+ if [[ $pdb_id =~ [0-9][0-9a-z]{3} ]] ; then
 
-   pdbml_file=$WORK_DIR/$PDBML/$pdbid-noatom.xml
-   info_file=$WORK_DIR/$VALID_INFO/$pdbid"_validation.xml"
-   sifts_xml_file=$WORK_DIR/$SIFTS_XML/$pdbid.xml
+   pdbml_file=$WORK_DIR/$PDBML/$pdb_id-noatom.xml
+   info_file=$WORK_DIR/$VALID_INFO/$pdb_id"_validation.xml"
+   sifts_xml_file=$WORK_DIR/$SIFTS_XML/$pdb_id.xml
 
    if [ ! -e $pdbml_file ] ; then
 
-    wget ftp://ftp.wwpdb.org/pub/pdb/data/structures/all/XML-noatom/$pdbid-noatom.xml.gz -P $WORK_DIR/pdbml; gunzip $pdbml_file.gz
+    wget ftp://ftp.wwpdb.org/pub/pdb/data/structures/all/XML-noatom/$pdb_id-noatom.xml.gz -P $WORK_DIR/pdbml; gunzip $pdbml_file.gz
 
    fi
 
    if [ ! -e $info_file ] ; then
 
-    wget ftp://ftp.wwpdb.org/pub/pdb/validation_reports/${pdbid:1:2}/$pdbid/$pdbid"_validation.xml.gz" -P $WORK_DIR/$VALID_INFO; gunzip $info_file.gz
+    wget ftp://ftp.wwpdb.org/pub/pdb/validation_reports/${pdb_id:1:2}/$pdb_id/$pdb_id"_validation.xml.gz" -P $WORK_DIR/$VALID_INFO; gunzip $info_file.gz
 
    fi
 
    if [ ! -e $sifts_xml_file ] ; then
 
-    wget ftp://$SIFTS_XML_URL/$pdbid.xml.gz -P $WORK_DIR/$SIFTS_XML; gunzip $sifts_xml_file.gz
+    wget ftp://$SIFTS_XML_URL/$pdb_id.xml.gz -P $WORK_DIR/$SIFTS_XML; gunzip $sifts_xml_file.gz
 
    fi
 
@@ -131,16 +131,16 @@ fi
 
 for pdbml_file in $WORK_DIR/$PDBML/*.xml ; do
 
- pdbid=`basename $pdbml_file -noatom.xml`
+ pdb_id=`basename $pdbml_file -noatom.xml`
 
  #exptl_method=`java -jar $SAXON -s:$pdbml_file -xsl:stylesheet/exptl_method.xsl`
  exptl_method=`xsltproc stylesheet/exptl_method.xsl $pdbml_file`
 
  echo
- echo Processing PDB ID: ${pdbid^^}, "Exptl. method: "$exptl_method" ..."
+ echo Processing PDB ID: ${pdb_id^^}, "Exptl. method: "$exptl_method" ..."
 
- sifts_xml_file=$WORK_DIR/$SIFTS_XML/$pdbid.xml
- pdbml_sifts_file=$WORK_DIR/$PDBML_SIFTS/$pdbid-noatom-sifts.xml
+ sifts_xml_file=$WORK_DIR/$SIFTS_XML/$pdb_id.xml
+ pdbml_sifts_file=$WORK_DIR/$PDBML_SIFTS/$pdb_id-noatom-sifts.xml
 
  #xsltproc stylesheet/check_sifts.xsl $sifts_xml_file
  #echo
@@ -151,8 +151,8 @@ for pdbml_file in $WORK_DIR/$PDBML/*.xml ; do
   cp -f $pdbml_file $pdbml_sifts_file
  fi
 
- pdbml_ext_file=$WORK_DIR/$PDBML_EXT/$pdbid-noatom-ext.xml
- info_file=../$WORK_DIR/$VALID_INFO/$pdbid"_validation.xml"
+ pdbml_ext_file=$WORK_DIR/$PDBML_EXT/$pdb_id-noatom-ext.xml
+ info_file=../$WORK_DIR/$VALID_INFO/$pdb_id"_validation.xml"
 
  java -jar $SAXON -s:$pdbml_sifts_file -xsl:$EXT_PDBML_XSL -o:$pdbml_ext_file info_file=$info_file || ( echo $0 aborted. ; exit 1 )
 
@@ -162,8 +162,8 @@ for pdbml_file in $WORK_DIR/$PDBML/*.xml ; do
 
  echo " validated: "$pdbml_ext_file
 
- info_file=$WORK_DIR/$VALID_INFO/$pdbid"_validation.xml"
- info_alt_file=$WORK_DIR/$VALID_INFO_ALT/$pdbid-validation-alt.xml
+ info_file=$WORK_DIR/$VALID_INFO/$pdb_id"_validation.xml"
+ info_alt_file=$WORK_DIR/$VALID_INFO_ALT/$pdb_id-validation-alt.xml
  pdbml_ext_file=../$pdbml_ext_file # add relative path (../) from directory contains target styleseet
 
  java -jar $SAXON -s:$info_file -xsl:$EXT_INFO_XSL -o:$info_alt_file pdbml_ext_file=$pdbml_ext_file || ( echo $0 aborted. ; exit 1 )
@@ -176,9 +176,9 @@ for pdbml_file in $WORK_DIR/$PDBML/*.xml ; do
 
  echo " validated: "$info_alt_file
 
- pdbml_ext_file=$WORK_DIR/$PDBML_EXT/$pdbid-noatom-ext.xml
+ pdbml_ext_file=$WORK_DIR/$PDBML_EXT/$pdb_id-noatom-ext.xml
  info_alt_file=../$info_alt_file # add relative path (../) from directory contains target stylesheet
- pdbml_vrpt_file=$WORK_DIR/$XML_VALID/$pdbid-validation-full.xml
+ pdbml_vrpt_file=$WORK_DIR/$XML_VALID/$pdb_id-validation-full.xml
 
  java -jar $SAXON -s:$pdbml_ext_file -xsl:$MERGE_PDBML_INFO_XSL -o:$pdbml_vrpt_file info_alt_file=$info_alt_file || ( echo $0 aborted. ; exit 1 )
 
@@ -190,7 +190,7 @@ for pdbml_file in $WORK_DIR/$PDBML/*.xml ; do
 
  echo " validated: "$pdbml_vrpt_file
 
- rdf_vrpt_file=$WORK_DIR/$RDF_VALID/$pdbid-validation-full.rdf
+ rdf_vrpt_file=$WORK_DIR/$RDF_VALID/$pdb_id-validation-full.rdf
  #has_glycan=`java -jar $SAXON -s:$pdbml_vrpt_file -xsl:$VRPTML2WURCS_XSL`
  has_glycan=`xsltproc $VRPTML2WURCS_XSL $pdbml_vrpt_file`
 
@@ -207,8 +207,8 @@ for pdbml_file in $WORK_DIR/$PDBML/*.xml ; do
   echo " validated: "$rdf_vrpt_file
  fi
 
- info_alt_file=$WORK_DIR/$VALID_INFO_ALT/$pdbid-validation-alt.xml
- rdf_vrpt_alt_file=$WORK_DIR/$RDF_VALID_ALT/$pdbid-validation-alt.rdf
+ info_alt_file=$WORK_DIR/$VALID_INFO_ALT/$pdb_id-validation-alt.xml
+ rdf_vrpt_alt_file=$WORK_DIR/$RDF_VALID_ALT/$pdb_id-validation-alt.rdf
 
  java -jar $SAXON -s:$info_alt_file -xsl:$VRPTML2RDF_XSL -o:$rdf_vrpt_alt_file wurcs2glytoucan=$WURCS_CATALOG_XML || ( echo $0 aborted. ; exit 1 )
 
@@ -221,8 +221,8 @@ for pdbml_file in $WORK_DIR/$PDBML/*.xml ; do
 
  if [ $has_xml2mmcif_command != "false" ] ; then
 
-  pdbml_vrpt_file=$pdbid-validation-full.xml
-  mmcif_vrpt_file=$pdbid-validation-full.cif
+  pdbml_vrpt_file=$pdb_id-validation-full.xml
+  mmcif_vrpt_file=$pdb_id-validation-full.cif
 
   ( cd $WORK_DIR/$MMCIF_VALID ; xml2mmcif -xml ../$XML_VALID/$pdbml_vrpt_file -dict $pdbx_validation_dic -df $pdbx_validation_odb > /dev/null && mv ../$XML_VALID/$pdbml_vrpt_file.cif $mmcif_vrpt_file )
   ( cd $WORK_DIR/$MMCIF_VALID ; sed -i -e "s/\._\([0-9]\)\(\S*\) /\.\1\2  /" $mmcif_vrpt_file )
@@ -245,8 +245,8 @@ for pdbml_file in $WORK_DIR/$PDBML/*.xml ; do
 
   fi
 
-  info_alt_file=$pdbid-validation-alt.xml
-  mmcif_vrpt_alt_file=$pdbid-validation-alt.cif
+  info_alt_file=$pdb_id-validation-alt.xml
+  mmcif_vrpt_alt_file=$pdb_id-validation-alt.cif
 
   ( cd $WORK_DIR/$MMCIF_VALID_ALT ; xml2mmcif -xml ../$VALID_INFO_ALT/$info_alt_file -dict $pdbx_validation_dic -df $pdbx_validation_odb > /dev/null && mv ../$VALID_INFO_ALT/$info_alt_file.cif $mmcif_vrpt_alt_file )
   ( cd $WORK_DIR/$MMCIF_VALID_ALT ; sed -i -e "s/\._\([0-9]\)\(\S*\) /\.\1\2  /" $mmcif_vrpt_alt_file )
@@ -271,8 +271,8 @@ for pdbml_file in $WORK_DIR/$PDBML/*.xml ; do
 
  fi
 
- pdbml_vrpt_file=$WORK_DIR/$XML_VALID/$pdbid-validation-full.xml
- info_rev_full_file=$WORK_DIR/$VALID_INFO_REV_FROM_FULL/$pdbid"_validation.xml"
+ pdbml_vrpt_file=$WORK_DIR/$XML_VALID/$pdb_id-validation-full.xml
+ info_rev_full_file=$WORK_DIR/$VALID_INFO_REV_FROM_FULL/$pdb_id"_validation.xml"
 
  java -jar $SAXON -s:$pdbml_vrpt_file -xsl:$REVERT_INFO_FROM_FULL_XSL -o:$info_rev_full_file || ( echo $0 aborted. ; exit 1 )
 
@@ -288,11 +288,11 @@ for pdbml_file in $WORK_DIR/$PDBML/*.xml ; do
 
  echo " validated: "$info_rev_full_file
 
- info_alt_file=$WORK_DIR/$VALID_INFO_ALT/$pdbid-validation-alt.xml
- pdbml_file=../$WORK_DIR/$PDBML/$pdbid-noatom.xml
- info_rev_alt_file=$WORK_DIR/$VALID_INFO_REV_FROM_ALT/$pdbid"_validation.xml"
+ info_alt_file=$WORK_DIR/$VALID_INFO_ALT/$pdb_id-validation-alt.xml
+ pdbml_file=../$WORK_DIR/$PDBML/$pdb_id-noatom.xml
+ info_rev_alt_file=$WORK_DIR/$VALID_INFO_REV_FROM_ALT/$pdb_id"_validation.xml"
 
- info_file=$WORK_DIR/$VALID_INFO/$pdbid"_validation.xml"
+ info_file=$WORK_DIR/$VALID_INFO/$pdb_id"_validation.xml"
  validation_created_date=`java -jar $SAXON -s:$info_file -xsl:stylesheet/validation_created_date.xsl`
  nmr_atom_consistency=`java -jar $SAXON -s:$info_file -xsl:stylesheet/nmr_atom_consistency.xsl`
 

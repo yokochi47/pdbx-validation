@@ -54,7 +54,7 @@ if [ ! -d $PDBML_PRD ] ; then
  ./scripts/update_bird.sh
 fi
 
-MD5_DIR=chk_sum_psql_pdbml_noatom
+MD5_DIR=chk_sum_psql_pdbml_prd
 
 relations=`psql -d $DB_NAME -U $DB_USER -c "\d" | wc -l 2> /dev/null`
 

@@ -34,8 +34,8 @@
     <xsl2:text disable-output-escaping="yes">
   &lt;xsl:output method="xml" indent="yes"/&gt;
   &lt;xsl:strip-space elements="*"/&gt;
-  &lt;xsl:variable name="PDBID"&gt;&lt;xsl:value-of select="/PDBx:datablock/@datablockName"/&gt;&lt;/xsl:variable&gt;
-  &lt;xsl:variable name="base"&gt;http://rdf.wwpdb.org/prd/&lt;xsl:value-of select="$PDBID"/&gt;&lt;/xsl:variable&gt;
+  &lt;xsl:variable name="PRD_ID"&gt;&lt;xsl:value-of select="/PDBx:datablock/@datablockName"/&gt;&lt;/xsl:variable&gt;
+  &lt;xsl:variable name="base"&gt;http://rdf.wwpdb.org/prd/&lt;xsl:value-of select="$PRD_ID"/&gt;&lt;/xsl:variable&gt;
   &lt;xsl:variable name="pdb_link"&gt;http://rdf.wwpdb.org/pdb/&lt;/xsl:variable&gt;
   &lt;xsl:variable name="chem_comp"&gt;http://rdf.wwpdb.org/cc/&lt;/xsl:variable&gt;
   &lt;xsl:variable name="prd"&gt;http://rdf.wwpdb.org/prd/&lt;/xsl:variable&gt;
@@ -46,12 +46,13 @@
 -->
   &lt;xsl:variable name="idorg"&gt;http://identifiers.org/&lt;/xsl:variable&gt;
   &lt;xsl:variable name="doi"&gt;http://doi.org/&lt;/xsl:variable&gt;
-  &lt;xsl:variable name="pubmed"&gt;http://www.ncbi.nlm.nih.gov/pubmed/&lt;/xsl:variable&gt;
+  &lt;xsl:variable name="pubmed"&gt;http://rdf.ncbi.nlm.nih.gov/pubmed/&lt;/xsl:variable&gt;
   &lt;xsl:variable name="taxonomy"&gt;http://purl.uniprot.org/taxonomy/&lt;/xsl:variable&gt;
   &lt;xsl:variable name="enzyme"&gt;http://purl.uniprot.org/enzyme/&lt;/xsl:variable&gt;
   &lt;xsl:variable name="uniprot"&gt;http://purl.uniprot.org/uniprot/&lt;/xsl:variable&gt;
   &lt;xsl:variable name="norine"&gt;http://bioinfo.lifl.fr/norine/result.jsp?ID=&lt;/xsl:variable&gt;
   &lt;xsl:variable name="kegg_comp"&gt;http://www.kegg.jp/entry/&lt;/xsl:variable&gt;
+  &lt;xsl:variable name="nadb"&gt;http://www.nih.go.jp/~jun/NADB/show.cgi/&lt;/xsl:variable&gt;
   &lt;xsl:variable name="nadb1"&gt;http://www.antibiotics.or.jp/journal/database/data-1.HTM#&lt;/xsl:variable&gt;
   &lt;xsl:variable name="nadb2"&gt;http://www.antibiotics.or.jp/journal/database/data-2.htm#&lt;/xsl:variable&gt;
   &lt;xsl:variable name="nadb3"&gt;http://www.antibiotics.or.jp/journal/database/data-3.htm#&lt;/xsl:variable&gt;
@@ -67,12 +68,12 @@
   &lt;!-- level 1 --&gt;
   &lt;xsl:template match="/PDBx:datablock"&gt;
     &lt;PDBo:datablock rdf:about="{$base}"&gt;
-      &lt;dcterms:identifier&gt;&lt;xsl:value-of select="$PDBID"/&gt;&lt;/dcterms:identifier&gt;
+      &lt;dcterms:identifier&gt;&lt;xsl:value-of select="$PRD_ID"/&gt;&lt;/dcterms:identifier&gt;
       &lt;dc:title&gt;&lt;xsl:value-of select="PDBx:pdbx_reference_moleculeCategory/PDBx:pdbx_reference_molecule/PDBx:name/text()"/&gt;&lt;/dc:title&gt;
-      &lt;rdfs:seeAlso rdf:resource="{$pdbj}{$PDBID}"/&gt;
-      &lt;rdfs:seeAlso rdf:resource="{$rcsb}{$PDBID}"/&gt;
+      &lt;rdfs:seeAlso rdf:resource="{$pdbj}{$PRD_ID}"/&gt;
+      &lt;rdfs:seeAlso rdf:resource="{$rcsb}{$PRD_ID}"/&gt;
 <!-- TODO
-      &lt;rdfs:seeAlso rdf:resource="{$pdbe}{$PDBID}"/&gt;
+      &lt;rdfs:seeAlso rdf:resource="{$pdbe}{$PRD_ID}"/&gt;
 -->
 
       &lt;PDBo:datablockName&gt;&lt;xsl:value-of select="@datablockName"/&gt;&lt;/PDBo:datablockName&gt;
@@ -127,22 +128,22 @@
 
   &lt;xsl:template match="PDBx:citation/PDBx:pdbx_database_id_PubMed[text()!='']" mode="linked"&gt;
     &lt;PDBo:link_to_pubmed rdf:resource="{$pubmed}{text()}" rdfs:label="pubmed:{text()}"/&gt;
-    &lt;dcterms:references rdf:resource="{$idorg}pubmed/{text()}" rdfs:label="pubmed:{text()}"/&gt;
+    &lt;dcterms:references rdf:resource="{$idorg}pubmed:{text()}" rdfs:label="pubmed:{text()}"/&gt;
   &lt;/xsl:template&gt;
 
   &lt;xsl:template match="PDBx:entity_src_gen/PDBx:pdbx_gene_src_ncbi_taxonomy_id[text()!='']" mode="linked"&gt;
     &lt;PDBo:link_to_taxonomy_source rdf:resource="{$taxonomy}{text()}" rdfs:label="taxonomy:{text()}"/&gt;
-    &lt;rdfs:seeAlso rdf:resource="{$idorg}taxonomy/{text()}" rdfs:label="taxonomy:{text()}"/&gt;
+    &lt;rdfs:seeAlso rdf:resource="{$idorg}taxonomy:{text()}" rdfs:label="taxonomy:{text()}"/&gt;
   &lt;/xsl:template&gt;
 
   &lt;xsl:template match="PDBx:entity_src_gen/PDBx:pdbx_host_org_ncbi_taxonomy_id[text()!='']" mode="linked"&gt;
     &lt;PDBo:link_to_taxonomy_host rdf:resource="{$taxonomy}{text()}" rdfs:label="taxonomy:{text()}"/&gt;
-    &lt;rdfs:seeAlso rdf:resource="{$idorg}taxonomy/{text()}" rdfs:label="taxonomy:{text()}"/&gt;
+    &lt;rdfs:seeAlso rdf:resource="{$idorg}taxonomy:{text()}" rdfs:label="taxonomy:{text()}"/&gt;
   &lt;/xsl:template&gt;
 
   &lt;xsl:template match="PDBx:entity_src_nat/PDBx:pdbx_ncbi_taxonomy_id[text()!='']" mode="linked"&gt;
     &lt;PDBo:link_to_taxonomy_source rdf:resource="{$taxonomy}{text()}" rdfs:label="taxonomy:{text()}"/&gt;
-    &lt;rdfs:seeAlso rdf:resource="{$idorg}taxonomy/{text()}" rdfs:label="taxonomy:{text()}"/&gt;
+    &lt;rdfs:seeAlso rdf:resource="{$idorg}taxonomy:{text()}" rdfs:label="taxonomy:{text()}"/&gt;
   &lt;/xsl:template&gt;
 
   &lt;xsl:template match="PDBx:entity/PDBx:pdbx_ec[text()!='']" mode="linked"&gt;
@@ -158,7 +159,7 @@
         &lt;xsl:variable name="ec"&gt;&lt;xsl:value-of select="normalize-space(text())"/&gt;&lt;/xsl:variable&gt;
         &lt;xsl:if test="string-length($ec)!=0"&gt;
           &lt;PDBo:link_to_enzyme rdf:resource="{$enzyme}{$ec}" rdfs:label="enzyme:{$ec}"/&gt;
-          &lt;rdfs:seeAlso rdf:resource="{$idorg}ec-code/{$ec}" rdfs:label="ec-code:{$ec}"/&gt;
+          &lt;rdfs:seeAlso rdf:resource="{$idorg}ec-code:{$ec}" rdfs:label="ec-code:{$ec}"/&gt;
         &lt;/xsl:if&gt;
       &lt;/xsl:for-each&gt;
     &lt;/xsl:if&gt;
@@ -231,6 +232,8 @@
   &lt;/xsl:template&gt;
 
   &lt;xsl:template match="PDBx:pdbx_reference_entity_src_nat/PDBx:db_code[../PDBx:db_name='NADB' and text()!='']" mode="linked"&gt;
+    &lt;PDBo:link_to_nadb rdf:resource="{$nadb}{text()}.html" rdfs:label="nadb:{text()}"/&gt;
+<!--
     &lt;xsl:choose&gt;
       &lt;xsl:when test="number(text()) &#38;lt; 360000"&gt;
         &lt;PDBo:link_to_nadb rdf:resource="{$nadb1}{text()}" rdfs:label="nadb:{text()}"/&gt;
@@ -248,13 +251,16 @@
         &lt;PDBo:link_to_nadb rdf:resource="{$nadb5}{text()}" rdfs:label="nadb:{text()}"/&gt;
       &lt;/xsl:otherwise&gt;
     &lt;/xsl:choose&gt;
+-->
   &lt;/xsl:template&gt;
 
   &lt;xsl:template match="PDBx:pdbx_reference_entity_src_nat/PDBx:db_name[../PDBx:db_code='Novel Antibiotics DataBase' and text()!='']" mode="linked"&gt;
+    &lt;PDBo:link_to_nadb rdf:resource="{$nadb}{text()}.html" rdfs:label="nadb:{text()}"/&gt;
+<!--
     &lt;xsl:choose&gt;
       &lt;xsl:when test="number(text()) &#38;lt; 360000"&gt;
         &lt;PDBo:link_to_nadb rdf:resource="{$nadb1}{text()}" rdfs:label="nadb:{text()}"/&gt;
-      &lt;/xsl:when&gt; 
+      &lt;/xsl:when&gt;
       &lt;xsl:when test="number(text()) &#38;lt; 460000"&gt;
         &lt;PDBo:link_to_nadb rdf:resource="{$nadb2}{text()}" rdfs:label="nadb:{text()}"/&gt;
       &lt;/xsl:when&gt;
@@ -268,6 +274,7 @@
         &lt;PDBo:link_to_nadb rdf:resource="{$nadb5}{text()}" rdfs:label="nadb:{text()}"/&gt;
       &lt;/xsl:otherwise&gt;
     &lt;/xsl:choose&gt;
+-->
   &lt;/xsl:template&gt;
 
   &lt;xsl:template match="PDBx:pdbx_reference_entity_src_nat/PDBx:db_code[../PDBx:db_name='PDB' and text()!='']" mode="linked"&gt;
@@ -277,7 +284,7 @@
 
   &lt;xsl:template match="PDBx:pdbx_reference_entity_src_nat/PDBx:taxid[text()!='']" mode="linked"&gt;
     &lt;PDBo:link_to_taxonomy_source rdf:resource="{$taxonomy}{text()}" rdfs:label="taxonomy:{text()}"/&gt;
-    &lt;rdfs:seeAlso rdf:resource="{$idorg}taxonomy/{text()}" rdfs:label="taxonomy:{text()}"/&gt;
+    &lt;rdfs:seeAlso rdf:resource="{$idorg}taxonomy:{text()}" rdfs:label="taxonomy:{text()}"/&gt;
   &lt;/xsl:template&gt;
 
   &lt;!-- level-3 templates follow --&gt;</xsl2:text>

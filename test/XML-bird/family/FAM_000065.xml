@@ -1,0 +1,1404 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<PDBx:datablock datablockName="FAM_000065"
+   xmlns:PDBx="http://pdbml.pdb.org/schema/pdbx-v50.xsd"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://pdbml.pdb.org/schema/pdbx-v50.xsd pdbx-v50.xsd">
+
+   <PDBx:citationCategory>
+      <PDBx:citation id="1">
+         <PDBx:journal_abbrev>J Antibiot (Tokyo).</PDBx:journal_abbrev>
+         <PDBx:journal_volume>54</PDBx:journal_volume>
+         <PDBx:page_first>220</PDBx:page_first>
+         <PDBx:page_last>233</PDBx:page_last>
+         <PDBx:pdbx_database_id_PubMed>11372779</PDBx:pdbx_database_id_PubMed>
+         <PDBx:title>Cephaibols, new peptaibol antibiotics with anthelmintic properties from Acremonium tubakii DSM 12774</PDBx:title>
+         <PDBx:year>2001</PDBx:year>
+      </PDBx:citation>
+      <PDBx:citation id="2">
+         <PDBx:journal_abbrev>J. Pept. Sci.</PDBx:journal_abbrev>
+         <PDBx:journal_volume>9</PDBx:journal_volume>
+         <PDBx:page_first>745</PDBx:page_first>
+         <PDBx:page_last>752</PDBx:page_last>
+         <PDBx:pdbx_database_id_DOI>10.1002/psc.496</PDBx:pdbx_database_id_DOI>
+         <PDBx:pdbx_database_id_PubMed>14658793</PDBx:pdbx_database_id_PubMed>
+         <PDBx:title>Crystal structures of cephaibols</PDBx:title>
+         <PDBx:year>2003</PDBx:year>
+      </PDBx:citation>
+      <PDBx:citation id="3">
+         <PDBx:journal_abbrev>Pure and App. Chem.</PDBx:journal_abbrev>
+         <PDBx:journal_volume>62</PDBx:journal_volume>
+         <PDBx:page_first>1417</PDBx:page_first>
+         <PDBx:page_last>1420</PDBx:page_last>
+         <PDBx:title>Structural chemistry and membrane modifying activity of the fungal polypeptides zervamicins, antiamoebins and efrapeptins</PDBx:title>
+         <PDBx:year>1990</PDBx:year>
+      </PDBx:citation>
+      <PDBx:citation id="4">
+         <PDBx:journal_abbrev>Journal of Peptide Science</PDBx:journal_abbrev>
+         <PDBx:journal_volume>3</PDBx:journal_volume>
+         <PDBx:page_first>193</PDBx:page_first>
+         <PDBx:page_last>208</PDBx:page_last>
+         <PDBx:pdbx_database_id_DOI>10.1002/(SICI)1099-1387(199705)3:3&lt;193::AID-PSC101&gt;3.0.CO;2-6</PDBx:pdbx_database_id_DOI>
+         <PDBx:pdbx_database_id_PubMed>9230485</PDBx:pdbx_database_id_PubMed>
+         <PDBx:title>Total synthesis of zervamicin IIB and its deuterium-labelled analogues</PDBx:title>
+         <PDBx:year>1998</PDBx:year>
+      </PDBx:citation>
+      <PDBx:citation id="5">
+         <PDBx:journal_abbrev>Proc Natl Acad Sci U S A.</PDBx:journal_abbrev>
+         <PDBx:journal_volume>83</PDBx:journal_volume>
+         <PDBx:page_first>9284</PDBx:page_first>
+         <PDBx:page_last>9288</PDBx:page_last>
+         <PDBx:pdbx_database_id_PubMed>2432594</PDBx:pdbx_database_id_PubMed>
+         <PDBx:title> Parallel Packing of alpha-helices in Crystals of the Zervamicin IIA Analog Boc-Trp-Ile-Ala-Aib-Ile-Val-Aib-Leu-Aib-Pro-OMe</PDBx:title>
+         <PDBx:year>1986</PDBx:year>
+      </PDBx:citation>
+      <PDBx:citation id="6">
+         <PDBx:journal_abbrev>Proc Natl Acad Sci U S A.</PDBx:journal_abbrev>
+         <PDBx:journal_volume>88</PDBx:journal_volume>
+         <PDBx:page_first>5307</PDBx:page_first>
+         <PDBx:page_last>5311</PDBx:page_last>
+         <PDBx:pdbx_database_id_PubMed>1711227</PDBx:pdbx_database_id_PubMed>
+         <PDBx:title> Crystal structure of [Leu1]zervamicin, a membrane ion-channel peptide: implications for gating mechanisms</PDBx:title>
+         <PDBx:year>1991</PDBx:year>
+      </PDBx:citation>
+      <PDBx:citation id="7">
+         <PDBx:journal_abbrev>Biochemistry and Biophysics</PDBx:journal_abbrev>
+         <PDBx:journal_volume>414</PDBx:journal_volume>
+         <PDBx:page_first>1608</PDBx:page_first>
+         <PDBx:page_last>3091</PDBx:page_last>
+         <PDBx:pdbx_database_id_DOI>10.1134/S1607672907030143</PDBx:pdbx_database_id_DOI>
+         <PDBx:pdbx_database_id_PubMed>17695323</PDBx:pdbx_database_id_PubMed>
+         <PDBx:title>The peptaibol antibiotic zervamicin displays neurotropic activity</PDBx:title>
+         <PDBx:year>2007</PDBx:year>
+      </PDBx:citation>
+      <PDBx:citation id="8">
+         <PDBx:journal_abbrev>Biophysical Journal</PDBx:journal_abbrev>
+         <PDBx:journal_volume>82</PDBx:journal_volume>
+         <PDBx:page_first>762</PDBx:page_first>
+         <PDBx:page_last>771</PDBx:page_last>
+         <PDBx:pdbx_database_id_DOI>10.1016/S0006-3495(02)75438-6</PDBx:pdbx_database_id_DOI>
+         <PDBx:title> Spatial Structure of Zervamicin IIB Bound to DPC Micelles: Implications for Voltage-Gating</PDBx:title>
+         <PDBx:year>2002</PDBx:year>
+      </PDBx:citation>
+      <PDBx:citation id="9">
+         <PDBx:journal_abbrev>J. Am. Chem. Soc.</PDBx:journal_abbrev>
+         <PDBx:journal_volume>103</PDBx:journal_volume>
+         <PDBx:page_first>6517</PDBx:page_first>
+         <PDBx:page_last>6520</PDBx:page_last>
+         <PDBx:pdbx_database_id_DOI>10.1021/ja00411a052</PDBx:pdbx_database_id_DOI>
+         <PDBx:title> Structures of eleven zervamicin and two emerimicin peptide antibiotics studied by fast atom bombardment mass spectrometry</PDBx:title>
+         <PDBx:year>1981</PDBx:year>
+      </PDBx:citation>
+      <PDBx:citation id="10">
+         <PDBx:journal_abbrev>Biochem Biophys Res Commun.</PDBx:journal_abbrev>
+         <PDBx:journal_volume>186</PDBx:journal_volume>
+         <PDBx:page_first>8</PDBx:page_first>
+         <PDBx:page_last>15</PDBx:page_last>
+         <PDBx:pdbx_database_id_PubMed>1378732</PDBx:pdbx_database_id_PubMed>
+         <PDBx:title>Zervamicins, a structurally characterised peptide model for membrane ion channels.</PDBx:title>
+         <PDBx:year>1992</PDBx:year>
+      </PDBx:citation>
+      <PDBx:citation id="11">
+         <PDBx:journal_abbrev>Biopolymers</PDBx:journal_abbrev>
+         <PDBx:journal_volume>40</PDBx:journal_volume>
+         <PDBx:page_first>157</PDBx:page_first>
+         <PDBx:page_last>180</PDBx:page_last>
+         <PDBx:pdbx_database_id_PubMed>8541446</PDBx:pdbx_database_id_PubMed>
+         <PDBx:title> Flexibility in peptide molecules and restraints imposed by hydrogen bonds, the Aib residue, and core inserts</PDBx:title>
+         <PDBx:year>1996</PDBx:year>
+      </PDBx:citation>
+      <PDBx:citation id="12">
+         <PDBx:journal_abbrev>Journal of Peptide Science</PDBx:journal_abbrev>
+         <PDBx:journal_volume>9</PDBx:journal_volume>
+         <PDBx:page_first>729</PDBx:page_first>
+         <PDBx:page_last>744</PDBx:page_last>
+         <PDBx:pdbx_database_id_DOI>10.1002/psc.495</PDBx:pdbx_database_id_DOI>
+         <PDBx:pdbx_database_id_PubMed>14658792</PDBx:pdbx_database_id_PubMed>
+         <PDBx:title>Crystal structure and conformational analysis of ampullosporin A</PDBx:title>
+         <PDBx:year>2003</PDBx:year>
+      </PDBx:citation>
+      <PDBx:citation id="13">
+         <PDBx:journal_abbrev>Acta Crystallogr.,Sect.E:Struct.Rep.Online</PDBx:journal_abbrev>
+         <PDBx:journal_volume>57</PDBx:journal_volume>
+         <PDBx:page_first>O492</PDBx:page_first>
+         <PDBx:page_last>O494</PDBx:page_last>
+         <PDBx:pdbx_database_id_DOI>10.1107/S1600536801007371</PDBx:pdbx_database_id_DOI>
+         <PDBx:title>Tripeptide Z-Aib-Aib-Hyp-OMe</PDBx:title>
+         <PDBx:year>2001</PDBx:year>
+      </PDBx:citation>
+      <PDBx:citation id="14">
+         <PDBx:journal_abbrev>Bioorg.Med.Chem.</PDBx:journal_abbrev>
+         <PDBx:journal_volume>7</PDBx:journal_volume>
+         <PDBx:page_first>119</PDBx:page_first>
+         <PDBx:page_last>131</PDBx:page_last>
+         <PDBx:pdbx_database_id_PubMed>10199662</PDBx:pdbx_database_id_PubMed>
+         <PDBx:title> Determining the occurrence of a 3(10)-helix and an alpha-helix in two different segments of a lipopeptaibol antibiotic using TOAC, a nitroxide spin-labeled C(alpha)-tetrasubstituted alpha-aminoacid</PDBx:title>
+         <PDBx:year>1999</PDBx:year>
+      </PDBx:citation>
+      <PDBx:citation id="15">
+         <PDBx:journal_abbrev>Tetrahedron</PDBx:journal_abbrev>
+         <PDBx:journal_volume>57</PDBx:journal_volume>
+         <PDBx:page_first>2813</PDBx:page_first>
+         <PDBx:page_last>2825</PDBx:page_last>
+         <PDBx:pdbx_database_id_DOI>10.1016/S0040-4020(01)00124-7</PDBx:pdbx_database_id_DOI>
+         <PDBx:title> Peptaibolin: synthesis, 3D-structure, and membrane modifying properties of the natural antibiotic and selected analogues</PDBx:title>
+         <PDBx:year>2001</PDBx:year>
+      </PDBx:citation>
+      <PDBx:citation id="16">
+         <PDBx:journal_abbrev>Biophysical Journal</PDBx:journal_abbrev>
+         <PDBx:journal_volume>87</PDBx:journal_volume>
+         <PDBx:page_first>1705</PDBx:page_first>
+         <PDBx:page_last>1710</PDBx:page_last>
+         <PDBx:pdbx_database_id_DOI>10.1529/biophysj.104.040659</PDBx:pdbx_database_id_DOI>
+         <PDBx:title> Conductance Studies on Trichotoxin_A50E and Implications for Channel Structure</PDBx:title>
+         <PDBx:year>2004</PDBx:year>
+      </PDBx:citation>
+      <PDBx:citation id="17">
+         <PDBx:journal_abbrev>Appl Microbiol.</PDBx:journal_abbrev>
+         <PDBx:journal_volume>23</PDBx:journal_volume>
+         <PDBx:page_first>183</PDBx:page_first>
+         <PDBx:page_last>185</PDBx:page_last>
+         <PDBx:pdbx_database_id_PubMed>380305</PDBx:pdbx_database_id_PubMed>
+         <PDBx:title> New Mycotoxin, Trichotoxin A, from Trichoderma viride Isolated from Southern Leaf Blight-Infected Corn</PDBx:title>
+         <PDBx:year>1972</PDBx:year>
+      </PDBx:citation>
+      <PDBx:citation id="18">
+         <PDBx:journal_abbrev>Biochemical and Biophysical Research Communications</PDBx:journal_abbrev>
+         <PDBx:journal_volume>174</PDBx:journal_volume>
+         <PDBx:page_first>878</PDBx:page_first>
+         <PDBx:page_last>884</PDBx:page_last>
+         <PDBx:pdbx_database_id_DOI>10.1016/0006-291X(91)91499-3</PDBx:pdbx_database_id_DOI>
+         <PDBx:title> Structural flexibility of Aib-containing peptides: The N-terminal tripeptide of trichotoxin</PDBx:title>
+         <PDBx:year>1991</PDBx:year>
+      </PDBx:citation>
+      <PDBx:citation id="19">
+         <PDBx:journal_abbrev>Chem Biodivers.</PDBx:journal_abbrev>
+         <PDBx:journal_volume>5</PDBx:journal_volume>
+         <PDBx:page_first>1694</PDBx:page_first>
+         <PDBx:page_last>1706</PDBx:page_last>
+         <PDBx:pdbx_database_id_DOI>10.1002/cbdv.200890158</PDBx:pdbx_database_id_DOI>
+         <PDBx:pdbx_database_id_PubMed>18816522</PDBx:pdbx_database_id_PubMed>
+         <PDBx:title> The production and characterisation of trichotoxin peptaibols, by Trichoderma asperellum.</PDBx:title>
+         <PDBx:year>2008</PDBx:year>
+      </PDBx:citation>
+      <PDBx:citation id="20">
+         <PDBx:journal_abbrev>Angewandte Chemie International Edition in English</PDBx:journal_abbrev>
+         <PDBx:journal_volume>18</PDBx:journal_volume>
+         <PDBx:page_first>476</PDBx:page_first>
+         <PDBx:page_last>477</PDBx:page_last>
+         <PDBx:pdbx_database_id_DOI>10.1002/anie.197904761</PDBx:pdbx_database_id_DOI>
+         <PDBx:title>The Sequences of the Membrane-Modifying Peptide Antibiotic Trichotoxin A-40</PDBx:title>
+         <PDBx:year>1979</PDBx:year>
+      </PDBx:citation>
+      <PDBx:citation id="21">
+         <PDBx:journal_abbrev>Proc.Nat.Acad.Sci.USA</PDBx:journal_abbrev>
+         <PDBx:journal_volume>95</PDBx:journal_volume>
+         <PDBx:page_first>5501</PDBx:page_first>
+         <PDBx:page_last>5504</PDBx:page_last>
+         <PDBx:pdbx_database_id_PubMed>9576911</PDBx:pdbx_database_id_PubMed>
+         <PDBx:title>Crystal structure of the channel-forming polypeptide antiamoebin in a membrane-mimetic environment</PDBx:title>
+         <PDBx:year>1998</PDBx:year>
+      </PDBx:citation>
+      <PDBx:citation id="22">
+         <PDBx:journal_abbrev>Biochimica et Biophysica Acta (BBA) - Biomembranes</PDBx:journal_abbrev>
+         <PDBx:journal_volume>1237</PDBx:journal_volume>
+         <PDBx:page_first>1</PDBx:page_first>
+         <PDBx:page_last>5</PDBx:page_last>
+         <PDBx:pdbx_database_id_DOI>10.1016/0005-2736(95)00072-B</PDBx:pdbx_database_id_DOI>
+         <PDBx:title>Formation of membrane channels by chrysospermins, new peptaibol antibiotics</PDBx:title>
+         <PDBx:year>1995</PDBx:year>
+      </PDBx:citation>
+      <PDBx:citation id="23">
+         <PDBx:journal_abbrev>Chemistry &amp; Biodiversity</PDBx:journal_abbrev>
+         <PDBx:journal_volume>4</PDBx:journal_volume>
+         <PDBx:page_first>1103</PDBx:page_first>
+         <PDBx:page_last>1115</PDBx:page_last>
+         <PDBx:pdbx_database_id_DOI>10.1002/cbdv.200790099</PDBx:pdbx_database_id_DOI>
+         <PDBx:title>Peptaibol Production by Sepedonium Strains Parasitizing Boletales</PDBx:title>
+         <PDBx:year>2007</PDBx:year>
+      </PDBx:citation>
+      <PDBx:citation id="24">
+         <PDBx:journal_abbrev>The Journal of Antibiotics</PDBx:journal_abbrev>
+         <PDBx:journal_volume>48</PDBx:journal_volume>
+         <PDBx:page_first>977</PDBx:page_first>
+         <PDBx:page_last>989</PDBx:page_last>
+         <PDBx:pdbx_database_id_PubMed>7592066</PDBx:pdbx_database_id_PubMed>
+         <PDBx:title>Chrysospermins v New Peptaibol Antibiotics from Apiocrea chrysosperma Ap101</PDBx:title>
+         <PDBx:year>1995</PDBx:year>
+      </PDBx:citation>
+      <PDBx:citation id="25">
+         <PDBx:journal_abbrev>Biopolymers</PDBx:journal_abbrev>
+         <PDBx:journal_volume>33</PDBx:journal_volume>
+         <PDBx:page_first>401</PDBx:page_first>
+         <PDBx:page_last>407</PDBx:page_last>
+         <PDBx:pdbx_database_id_PubMed>8461451</PDBx:pdbx_database_id_PubMed>
+         <PDBx:title> Accommodation of a D-Phe residue into a right-handed 3(10)-helix: structure of Boc-D-Phe-(Aib)4-Gly-L-Leu-(Aib)2-OMe, an analogue of the amino terminal segment of antiamoebins and emerimicins</PDBx:title>
+         <PDBx:year>1993</PDBx:year>
+      </PDBx:citation>
+      <PDBx:citation id="26">
+         <PDBx:journal_abbrev>Int J Pept Protein Res</PDBx:journal_abbrev>
+         <PDBx:journal_volume>32</PDBx:journal_volume>
+         <PDBx:page_first>544</PDBx:page_first>
+         <PDBx:page_last>555</PDBx:page_last>
+         <PDBx:pdbx_database_id_PubMed>3246479</PDBx:pdbx_database_id_PubMed>
+         <PDBx:title> Conformational effects of chiral alpha,alpha-dialkyl amino acids. I. C-terminal tetrapeptides of emerimicin containing alpha-ethylalanine.</PDBx:title>
+         <PDBx:year>1988</PDBx:year>
+      </PDBx:citation>
+      <PDBx:citation id="27">
+         <PDBx:journal_abbrev>J Biomol Struct Dyn</PDBx:journal_abbrev>
+         <PDBx:journal_volume>3</PDBx:journal_volume>
+         <PDBx:page_first>585</PDBx:page_first>
+         <PDBx:page_last>598</PDBx:page_last>
+         <PDBx:pdbx_database_id_PubMed>3917040</PDBx:pdbx_database_id_PubMed>
+         <PDBx:title> Molecular structure of peptaibol antibiotics: solution conformation and crystal structure of the octapeptide corresponding to the 2-9 sequence of emerimicins III and IV</PDBx:title>
+         <PDBx:year>1985</PDBx:year>
+      </PDBx:citation>
+      <PDBx:citation id="28">
+         <PDBx:journal_abbrev>J Am Chem Soc</PDBx:journal_abbrev>
+         <PDBx:journal_volume>99</PDBx:journal_volume>
+         <PDBx:page_first>5205</PDBx:page_first>
+         <PDBx:page_last>5206</PDBx:page_last>
+         <PDBx:pdbx_database_id_PubMed>874245</PDBx:pdbx_database_id_PubMed>
+         <PDBx:title>Structures of the peptide antibiotics. Emerimicins III and IV 1,2.</PDBx:title>
+         <PDBx:year>1977</PDBx:year>
+      </PDBx:citation>
+      <PDBx:citation id="29">
+         <PDBx:journal_abbrev>J Antibiot (Tokyo)</PDBx:journal_abbrev>
+         <PDBx:journal_volume>27</PDBx:journal_volume>
+         <PDBx:page_first>274</PDBx:page_first>
+         <PDBx:page_last>282</PDBx:page_last>
+         <PDBx:pdbx_database_id_PubMed>4851844</PDBx:pdbx_database_id_PubMed>
+         <PDBx:title> Emerimicins II, 3 and IV, antibiotics produced by Emericellopsis microspora in media supplemented with trans-4-n-propyl-L-proline</PDBx:title>
+         <PDBx:year>1974</PDBx:year>
+      </PDBx:citation>
+      <PDBx:citation id="30">
+         <PDBx:journal_abbrev>Proc Natl Acad Sci U S A</PDBx:journal_abbrev>
+         <PDBx:journal_volume>87</PDBx:journal_volume>
+         <PDBx:page_first>487</PDBx:page_first>
+         <PDBx:page_last>491</PDBx:page_last>
+         <PDBx:pdbx_database_id_PubMed>2296604</PDBx:pdbx_database_id_PubMed>
+         <PDBx:title> Factors governing helical preference of peptides containing multiple alpha,alpha-dialkyl amino acids</PDBx:title>
+         <PDBx:year>1990</PDBx:year>
+      </PDBx:citation>
+      <PDBx:citation id="31">
+         <PDBx:journal_abbrev>Eur. J. Biochem.</PDBx:journal_abbrev>
+         <PDBx:journal_volume>267</PDBx:journal_volume>
+         <PDBx:page_first>1784</PDBx:page_first>
+         <PDBx:page_last>1794</PDBx:page_last>
+         <PDBx:pdbx_database_id_PubMed>10712611</PDBx:pdbx_database_id_PubMed>
+         <PDBx:title> The NMR solution structure of the ion channel peptaibol chrysospermin C bound to dodecylphosphocholine micelles</PDBx:title>
+         <PDBx:year>2000</PDBx:year>
+      </PDBx:citation>
+      <PDBx:citation id="32">
+         <PDBx:journal_abbrev>Biochemistry</PDBx:journal_abbrev>
+         <PDBx:journal_volume>41</PDBx:journal_volume>
+         <PDBx:page_first>12934</PDBx:page_first>
+         <PDBx:page_last>12941</PDBx:page_last>
+         <PDBx:pdbx_database_id_PubMed>12390019</PDBx:pdbx_database_id_PubMed>
+         <PDBx:title> Model for a helical bundle channel based on the high-resolution crystal structure of Trichotoxin_A50E</PDBx:title>
+         <PDBx:year>2002</PDBx:year>
+      </PDBx:citation>
+      <PDBx:citation id="33">
+         <PDBx:journal_abbrev>Biochim. Biophys. Acta</PDBx:journal_abbrev>
+         <PDBx:journal_volume>1461</PDBx:journal_volume>
+         <PDBx:page_first>113</PDBx:page_first>
+         <PDBx:page_last>122</PDBx:page_last>
+         <PDBx:pdbx_database_id_PubMed>10556493</PDBx:pdbx_database_id_PubMed>
+         <PDBx:title> The ion-channel activity of longibrachins LGA I and II: effects of Pro-2/Ala and Gln-18/Glu substitutions on the
+ alamethicin voltage-gated membrane channels</PDBx:title>
+         <PDBx:year>1999</PDBx:year>
+      </PDBx:citation>
+      <PDBx:citation id="34">
+         <PDBx:journal_abbrev>J. Membrane Biol.</PDBx:journal_abbrev>
+         <PDBx:journal_volume>184</PDBx:journal_volume>
+         <PDBx:page_first>1</PDBx:page_first>
+         <PDBx:page_last>12</PDBx:page_last>
+         <PDBx:pdbx_database_id_PubMed>11687873</PDBx:pdbx_database_id_PubMed>
+         <PDBx:title> Voltage-dependent pore formation and antimicrobial activity by alamethicin and analogues</PDBx:title>
+         <PDBx:year>2001</PDBx:year>
+      </PDBx:citation>
+      <PDBx:citation id="35">
+         <PDBx:journal_abbrev>Nature</PDBx:journal_abbrev>
+         <PDBx:journal_volume>300</PDBx:journal_volume>
+         <PDBx:page_first>325</PDBx:page_first>
+         <PDBx:page_last>330</PDBx:page_last>
+         <PDBx:pdbx_database_id_PubMed>6292726</PDBx:pdbx_database_id_PubMed>
+         <PDBx:title> A voltage-gated ion channel model inferred from the crystal structure of alamethicin at 1.5- angstrom resolution</PDBx:title>
+         <PDBx:year>1982</PDBx:year>
+      </PDBx:citation>
+      <PDBx:citation id="36">
+         <PDBx:journal_abbrev>Biophys. J.</PDBx:journal_abbrev>
+         <PDBx:journal_volume>94</PDBx:journal_volume>
+         <PDBx:page_first>3512</PDBx:page_first>
+         <PDBx:page_last>3522</PDBx:page_last>
+         <PDBx:pdbx_database_id_PubMed>18199659</PDBx:pdbx_database_id_PubMed>
+         <PDBx:title> Structure of the alamethicin pore reconstructed by X-ray diffraction analysis</PDBx:title>
+         <PDBx:year>2008</PDBx:year>
+      </PDBx:citation>
+      <PDBx:citation id="37">
+         <PDBx:journal_abbrev>Biochemistry</PDBx:journal_abbrev>
+         <PDBx:journal_volume>38</PDBx:journal_volume>
+         <PDBx:page_first>6144</PDBx:page_first>
+         <PDBx:page_last>6150</PDBx:page_last>
+         <PDBx:pdbx_database_id_PubMed>10320341</PDBx:pdbx_database_id_PubMed>
+         <PDBx:title> An anion-selective analogue of the channel-forming peptide alamethicin</PDBx:title>
+         <PDBx:year>1999</PDBx:year>
+      </PDBx:citation>
+      <PDBx:citation id="38">
+         <PDBx:journal_abbrev>Bioessays</PDBx:journal_abbrev>
+         <PDBx:journal_volume>22</PDBx:journal_volume>
+         <PDBx:page_first>227</PDBx:page_first>
+         <PDBx:page_last>234</PDBx:page_last>
+         <PDBx:pdbx_database_id_PubMed>10684582</PDBx:pdbx_database_id_PubMed>
+         <PDBx:title> Common structural features in gramicidin and other ion channels</PDBx:title>
+         <PDBx:year>2000</PDBx:year>
+      </PDBx:citation>
+      <PDBx:citation id="39">
+         <PDBx:journal_abbrev>Novartis Foundation symposium</PDBx:journal_abbrev>
+         <PDBx:journal_volume>225</PDBx:journal_volume>
+         <PDBx:page_first>128</PDBx:page_first>
+         <PDBx:page_last>141</PDBx:page_last>
+         <PDBx:pdbx_database_id_PubMed>10472052</PDBx:pdbx_database_id_PubMed>
+         <PDBx:title> The mechanism of channel formation by alamethicin as viewed by molecular dynamics simulations</PDBx:title>
+         <PDBx:year>1999</PDBx:year>
+      </PDBx:citation>
+      <PDBx:citation id="40">
+         <PDBx:journal_abbrev>Chem Biodivers.</PDBx:journal_abbrev>
+         <PDBx:journal_volume>4</PDBx:journal_volume>
+         <PDBx:page_first>1338</PDBx:page_first>
+         <PDBx:page_last>1346</PDBx:page_last>
+         <PDBx:pdbx_database_id_PubMed>17589885</PDBx:pdbx_database_id_PubMed>
+         <PDBx:title>Alamethicin : Pore-forming properties F50/5 inserted in a biological membrane</PDBx:title>
+         <PDBx:year>2007</PDBx:year>
+      </PDBx:citation>
+      <PDBx:citation id="41">
+         <PDBx:journal_abbrev>Chem Biodivers.</PDBx:journal_abbrev>
+         <PDBx:journal_volume>4</PDBx:journal_volume>
+         <PDBx:page_first>1323</PDBx:page_first>
+         <PDBx:page_last>1337</PDBx:page_last>
+         <PDBx:pdbx_database_id_PubMed>17589884</PDBx:pdbx_database_id_PubMed>
+         <PDBx:title>Channel-forming activity of alamethicin: effects of covalent tethering</PDBx:title>
+         <PDBx:year>2007</PDBx:year>
+      </PDBx:citation>
+      <PDBx:citation id="42">
+         <PDBx:journal_abbrev>Biochim Biophys Acta</PDBx:journal_abbrev>
+         <PDBx:journal_volume>720</PDBx:journal_volume>
+         <PDBx:page_first>235</PDBx:page_first>
+         <PDBx:page_last>241</PDBx:page_last>
+         <PDBx:pdbx_database_id_PubMed>6285993</PDBx:pdbx_database_id_PubMed>
+         <PDBx:title> Alamethicin or detergent permeabilization of the cell membrane as a tool for adenylate cyclase determination</PDBx:title>
+         <PDBx:year>1982</PDBx:year>
+      </PDBx:citation>
+      <PDBx:citation id="43">
+         <PDBx:journal_abbrev>Chem Biodivers.</PDBx:journal_abbrev>
+         <PDBx:journal_volume>4</PDBx:journal_volume>
+         <PDBx:page_first>1313</PDBx:page_first>
+         <PDBx:page_last>1322</PDBx:page_last>
+         <PDBx:pdbx_database_id_PubMed>17589883</PDBx:pdbx_database_id_PubMed>
+         <PDBx:title> Ligand-induced extramembrane conformation switch controlling alamethicin assembly and the channel current</PDBx:title>
+         <PDBx:year>2007</PDBx:year>
+      </PDBx:citation>
+      <PDBx:citation id="44">
+         <PDBx:journal_abbrev>Chem Biodivers.</PDBx:journal_abbrev>
+         <PDBx:journal_volume>4</PDBx:journal_volume>
+         <PDBx:page_first>1299</PDBx:page_first>
+         <PDBx:page_last>1312</PDBx:page_last>
+         <PDBx:pdbx_database_id_PubMed>17589867</PDBx:pdbx_database_id_PubMed>
+         <PDBx:title> Alamethicin interaction with lipid membranes: a spectroscopic study on synthetic analogues</PDBx:title>
+         <PDBx:year>2007</PDBx:year>
+      </PDBx:citation>
+      <PDBx:citation id="45">
+         <PDBx:journal_abbrev>Biophys J.</PDBx:journal_abbrev>
+         <PDBx:journal_volume>92</PDBx:journal_volume>
+         <PDBx:page_first>4002</PDBx:page_first>
+         <PDBx:page_last>4011</PDBx:page_last>
+         <PDBx:pdbx_database_id_PubMed>17351010</PDBx:pdbx_database_id_PubMed>
+         <PDBx:title> Lipid chain-length dependence for incorporation of alamethicin in membranes: electron paramagnetic resonance studies on TOAC-spin labeled analogs</PDBx:title>
+         <PDBx:year>2007</PDBx:year>
+      </PDBx:citation>
+      <PDBx:citation id="46">
+         <PDBx:journal_abbrev>Biopolymers</PDBx:journal_abbrev>
+         <PDBx:journal_volume>34</PDBx:journal_volume>
+         <PDBx:page_first>721</PDBx:page_first>
+         <PDBx:page_last>735</PDBx:page_last>
+         <PDBx:pdbx_database_id_PubMed>8025219</PDBx:pdbx_database_id_PubMed>
+         <PDBx:title> Conformation of the flexible bent helix of Leu1-zervamicin in crystal C and a possible gating action for ion passage.</PDBx:title>
+         <PDBx:year>1994</PDBx:year>
+      </PDBx:citation>
+      <PDBx:citation id="47">
+         <PDBx:journal_abbrev>Nature Structural Biology</PDBx:journal_abbrev>
+         <PDBx:journal_volume>1</PDBx:journal_volume>
+         <PDBx:page_first>908</PDBx:page_first>
+         <PDBx:page_last>914</PDBx:page_last>
+         <PDBx:pdbx_database_id_DOI>10.1038/nsb1294-908</PDBx:pdbx_database_id_DOI>
+         <PDBx:title>Structure determination of racemic trichogin A IV using centrosymmetric crystals</PDBx:title>
+         <PDBx:year>1994</PDBx:year>
+      </PDBx:citation>
+      <PDBx:citation id="48">
+         <PDBx:journal_abbrev>CrystEngComm</PDBx:journal_abbrev>
+         <PDBx:journal_volume>12</PDBx:journal_volume>
+         <PDBx:page_first>2419</PDBx:page_first>
+         <PDBx:page_last>2423</PDBx:page_last>
+         <PDBx:pdbx_database_id_DOI>10.1039/C001072C</PDBx:pdbx_database_id_DOI>
+         <PDBx:title>Revised electrostatics from invariom refinement of the 18-residue peptaibol antibiotic trichotoxin A50E</PDBx:title>
+         <PDBx:year>2010</PDBx:year>
+      </PDBx:citation>
+      <PDBx:citation id="49">
+         <PDBx:journal_abbrev>Biochemistry</PDBx:journal_abbrev>
+         <PDBx:journal_volume>41</PDBx:journal_volume>
+         <PDBx:page_first>12934</PDBx:page_first>
+         <PDBx:page_last>12941</PDBx:page_last>
+         <PDBx:pdbx_database_id_PubMed>12390019</PDBx:pdbx_database_id_PubMed>
+         <PDBx:title>Model for a helical bundle channel based on the high-resolution crystal structure of trichotoxin_A50E.</PDBx:title>
+         <PDBx:year>2002</PDBx:year>
+      </PDBx:citation>
+   </PDBx:citationCategory>
+   <PDBx:citation_authorCategory>
+      <PDBx:citation_author citation_id="1" name="Schiell, M." ordinal="1"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="1" name="Hofmann, J." ordinal="2"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="1" name="Kurz, M." ordinal="3"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="1" name="Schmidt, F.R." ordinal="4"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="1" name="Vertesy, L." ordinal="5"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="1" name="Vogel, M." ordinal="6"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="1" name="Wink, J." ordinal="7"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="1" name="Seibert, G." ordinal="8"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="2" name="Bunkoczi, G." ordinal="9"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="2" name="Schiell, M." ordinal="10"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="2" name="Vertesy, L." ordinal="11"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="2" name="Sheldrick, G.M." ordinal="12"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="3" name="Krishna, K." ordinal="13"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="3" name="Sukumar, M." ordinal="14"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="3" name="Balaramc, P." ordinal="15"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="4" name="Ogrel, A." ordinal="16"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="4" name="Bloemhoff, W." ordinal="17"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="4" name="Lugtenburg, J." ordinal="18"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="4" name="Raap, J." ordinal="19"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="5" name="Karle, I.L." ordinal="20"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="5" name="Sukumar, M." ordinal="21"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="5" name="Balaram, P." ordinal="22"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="6" name="Karle, I.L." ordinal="23"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="6" name="Flippen-Anderson, J.L." ordinal="24"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="6" name="Agarwalla, S." ordinal="25"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="6" name="Balaram, P." ordinal="26"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="7" name="Ovchinnikova, T.V." ordinal="27"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="7" name="Murashev, A.N." ordinal="28"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="8" name="Shenkarev, Z.O." ordinal="29"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="8" name="Balashova, T.A." ordinal="30"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="8" name="Efremov, R.G." ordinal="31"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="8" name="Yakimenko, Z.A." ordinal="32"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="8" name="Ovchinnikova, T.V." ordinal="33"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="8" name="Raap, J." ordinal="34"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="8" name="Arseniev, A.S." ordinal="35"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="9" name="Rinehart Jr., K.L." ordinal="36"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="9" name="Gaudioso, L.A." ordinal="37"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="9" name="Moore, M.L." ordinal="38"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="9" name="Pandey, R.C." ordinal="39"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="9" name="Carter Cook Jr., J." ordinal="40"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="9" name="Barber, M." ordinal="41"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="9" name="Sedgwick, R.D." ordinal="42"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="9" name="Bordoli, R.S." ordinal="43"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="9" name="Tyler, A.N." ordinal="44"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="9" name="Green, B.N." ordinal="45"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="10" name="Agarwalla, S." ordinal="46"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="10" name="Mellor, I.R." ordinal="47"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="10" name="Sansom, M.S." ordinal="48"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="10" name="Karle, I.L." ordinal="49"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="10" name="Flippen-Anderson, J.L." ordinal="50"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="10" name="Uma, K." ordinal="51"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="10" name="Krishna, K." ordinal="52"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="10" name="Sukumar, M." ordinal="53"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="10" name="Balaram, P." ordinal="54"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="11" name="Karle, I.L." ordinal="55"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="11" name="Flippen-Anderson, J.L." ordinal="56"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="11" name="Agarwalla, S." ordinal="57"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="11" name="Balaram, P." ordinal="58"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="12" name="Karle, I.L." ordinal="59"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="12" name="Kronen, M." ordinal="60"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="12" name="Gorls, H." ordinal="61"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="12" name="Nguyen, H.-H." ordinal="62"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="12" name="Reissmann, S." ordinal="63"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="12" name="Bohl, M." ordinal="64"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="12" name="Suhnel, J." ordinal="65"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="12" name="Gardfe, U." ordinal="66"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="13" name="Gessmann, R." ordinal="67"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="13" name="Bruckner, H." ordinal="68"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="13" name="Kokkinidis, M." ordinal="69"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="14" name="Monaco, V." ordinal="70"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="14" name="Formaggio, F." ordinal="71"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="14" name="Crisma, M." ordinal="72"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="14" name="Toniolo, C." ordinal="73"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="14" name="Hanson, P." ordinal="74"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="14" name="Millhauser, G." ordinal="75"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="14" name="George, C." ordinal="76"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="14" name="Deschamps, J.R." ordinal="77"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="14" name="Flippen-Anderson, J.L." ordinal="78"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="15" name="Crisma, M." ordinal="79"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="15" name="Barazza, A." ordinal="80"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="15" name="Formaggio, F." ordinal="81"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="15" name="Kaptein, B." ordinal="82"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="15" name="Broxterman, Q.B." ordinal="83"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="15" name="Kamphuis, J." ordinal="84"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="15" name="Toniolo, C." ordinal="85"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="16" name="Duclohier, H." ordinal="86"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="16" name="Alder, G.M." ordinal="87"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="16" name="Bashford, C.L." ordinal="88"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="16" name="Bruckner, H." ordinal="89"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="16" name="Chugh, J.K." ordinal="90"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="16" name="Wallace B.A." ordinal="91"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="17" name="Hou, C.T." ordinal="92"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="17" name="Ciegler, A." ordinal="93"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="17" name="Hesseltine C.W." ordinal="94"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="18" name="Gessmann, R." ordinal="95"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="18" name="Brueckner, H." ordinal="96"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="18" name="Kokkinidis, M." ordinal="97"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="19" name="Chutrakul, C." ordinal="98"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="19" name="Alcocer, M." ordinal="99"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="19" name="Bailey, K." ordinal="100"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="19" name="Peberdy, J.F." ordinal="101"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="20" name="Bruckner, H." ordinal="102"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="20" name="Kovnig, W.A." ordinal="103"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="20" name="Greiner, M." ordinal="104"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="20" name="Jung, G." ordinal="105"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="21" name="Karle, I.L." ordinal="106"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="21" name="Perozzo, M.A." ordinal="107"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="21" name="Mishra, V.K." ordinal="108"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="21" name="Balaram, P." ordinal="109"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="22" name="Grigoriev, P." ordinal="110"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="22" name="Schlegel, R." ordinal="111"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="22" name="Dornberger, K." ordinal="112"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="22" name="Grafe, U." ordinal="113"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="23" name="Neuhof, T." ordinal="114"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="23" name="Berg, A." ordinal="115"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="23" name="Besl, H." ordinal="116"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="23" name="Schwecke, T." ordinal="117"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="23" name="Dieckmann, R." ordinal="118"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="23" name="von Dohren, H." ordinal="119"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="24" name="Dornberger, K." ordinal="120"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="24" name="Ihn, W." ordinal="121"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="24" name="Ritzau, M." ordinal="122"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="24" name="Grafe, U." ordinal="123"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="24" name="Schlegel, B." ordinal="124"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="24" name="Fleck, W.F." ordinal="125"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="24" name="Metzger, J.W." ordinal="126"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="25" name="Karle, I.L." ordinal="127"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="25" name="Flippen-Anderson, J.L." ordinal="128"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="25" name="Uma, K." ordinal="129"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="25" name="Balaram, P." ordinal="130"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="26" name="Marshall, G.R." ordinal="131"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="26" name="Clark, J.D." ordinal="132"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="26" name="Dunbar, J.B." ordinal="133"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="26" name="Smith, G.D." ordinal="134"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="26" name="Zabrocki, J." ordinal="135"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="26" name="Redlinski, A.S." ordinal="136"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="26" name="Leplawy, M.T." ordinal="137"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="27" name="Toniolo, C." ordinal="138"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="27" name="Bonora, G.M." ordinal="139"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="27" name="Bavoso, A." ordinal="140"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="27" name="Benedetti, E." ordinal="141"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="27" name="di Blasio, B." ordinal="142"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="27" name="Pavone, V." ordinal="143"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="27" name="Pedone, C." ordinal="144"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="28" name="Pandey, R.C." ordinal="145"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="28" name="Cook, J.C." ordinal="146"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="28" name="Rinehart, K.L." ordinal="147"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="29" name="Argoudelis, A.D." ordinal="148"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="29" name="Johnson, L.E." ordinal="149"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="30" name="Marshall, G.R." ordinal="150"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="30" name="Hodgkin, E.E." ordinal="151"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="30" name="Langs, D.A." ordinal="152"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="30" name="Smith, G.D." ordinal="153"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="30" name="Zabrocki, J." ordinal="154"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="30" name="Leplawy, M.T." ordinal="155"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="31" name="Anders, R." ordinal="156"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="31" name="Ohlenschlager, O." ordinal="157"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="31" name="Sockic, V." ordinal="158"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="31" name="Wenschuh, H." ordinal="159"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="31" name="Heise, B." ordinal="160"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="31" name="Brown, L.R." ordinal="161"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="32" name="Chugh, J.K." ordinal="162"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="32" name="Bruckner, H." ordinal="163"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="32" name="Wallace, B.A." ordinal="164"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="33" name="Cosette, P." ordinal="165"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="33" name="Rebuffat, S." ordinal="166"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="33" name="Bodo, B." ordinal="167"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="33" name="Molle, G." ordinal="168"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="34" name="Duclohier, H." ordinal="169"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="34" name="Wroblewski, H." ordinal="170"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="35" name="Fox, R.O." ordinal="171"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="35" name="Richards, F.M." ordinal="172"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="36" name="Qian, S." ordinal="173"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="36" name="Wang, W." ordinal="174"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="36" name="Yang, L." ordinal="175"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="36" name="Huang, H.W." ordinal="176"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="37" name="Starostin, A.V." ordinal="177"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="37" name="Butan, R." ordinal="178"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="37" name="Borisenko, V." ordinal="179"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="37" name="James, D.A." ordinal="180"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="37" name="Wenschuh, H." ordinal="181"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="37" name="Sansom, M.S.P." ordinal="182"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="37" name="Woolley, G.A." ordinal="183"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="38" name="Wallace, B.A." ordinal="184"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="39" name="Sansom, M.S." ordinal="185"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="39" name="Tieleman, D.P." ordinal="186"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="39" name="Berendsen, H.J." ordinal="187"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="40" name="Vedovato, N." ordinal="188"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="40" name="Baldini, C." ordinal="189"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="40" name="Toniolo, C." ordinal="190"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="40" name="Rispoli, G." ordinal="191"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="41" name="Woolley, G.A." ordinal="192"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="42" name="Bonnafous, J.C." ordinal="193"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="42" name="Dornand, J." ordinal="194"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="42" name="Mani, J.C." ordinal="195"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="43" name="Futaki, S." ordinal="196"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="43" name="Asami, K." ordinal="197"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="44" name="Stella, L." ordinal="198"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="44" name="Burattini, M." ordinal="199"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="44" name="Mazzuca, C." ordinal="200"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="44" name="Palleschi, A." ordinal="201"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="44" name="Venanzi, M." ordinal="202"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="44" name="Coin, I." ordinal="203"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="44" name="Peggion, C." ordinal="204"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="44" name="Toniolo, C." ordinal="205"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="44" name="Pispisa, B." ordinal="206"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="45" name="Marsh, D." ordinal="207"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="45" name="Jost, M." ordinal="208"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="45" name="Peggion, C." ordinal="209"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="45" name="Toniolo, C." ordinal="210"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="46" name="Karle, I.L." ordinal="211"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="46" name="Flippen-Anderson, J.L." ordinal="212"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="46" name="Agarwalla, S." ordinal="213"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="46" name="Balaram, P." ordinal="214"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="47" name="Toniolo, C." ordinal="215"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="47" name="Peggion, C." ordinal="216"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="47" name="Crisma, M." ordinal="217"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="47" name="Formaggio, F." ordinal="218"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="47" name="Shui, X." ordinal="219"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="47" name="Eggleston, D.S." ordinal="220"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="48" name="Dittrich, B." ordinal="221"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="48" name="Bond, C.S." ordinal="222"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="48" name="Kalinowski, R." ordinal="223"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="48" name="Spackman, M.A." ordinal="224"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="48" name="Jayatilaka, D." ordinal="225"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="49" name="Chugh, J.K." ordinal="226"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="49" name="Bruckner, H." ordinal="227"></PDBx:citation_author>
+      <PDBx:citation_author citation_id="49" name="Wallace, B.A." ordinal="228"></PDBx:citation_author>
+   </PDBx:citation_authorCategory>
+   <PDBx:pdbx_family_prd_auditCategory>
+      <PDBx:pdbx_family_prd_audit action_type="Create family" date="2012-02-08" family_prd_id="FAM_000065">
+         <PDBx:processing_site>RCSB</PDBx:processing_site>
+      </PDBx:pdbx_family_prd_audit>
+      <PDBx:pdbx_family_prd_audit action_type="Initial release" date="2013-10-16" family_prd_id="FAM_000065">
+         <PDBx:processing_site>RCSB</PDBx:processing_site>
+      </PDBx:pdbx_family_prd_audit>
+   </PDBx:pdbx_family_prd_auditCategory>
+   <PDBx:pdbx_reference_molecule_annotationCategory>
+      <PDBx:pdbx_reference_molecule_annotation family_prd_id="FAM_000065" ordinal="1">
+         <PDBx:prd_id>PRD_000156</PDBx:prd_id>
+         <PDBx:source>Norine</PDBx:source>
+         <PDBx:text>anthelmintic properties effective against ectoparasites</PDBx:text>
+         <PDBx:type>Function</PDBx:type>
+      </PDBx:pdbx_reference_molecule_annotation>
+      <PDBx:pdbx_reference_molecule_annotation family_prd_id="FAM_000065" ordinal="2">
+         <PDBx:prd_id>PRD_000157</PDBx:prd_id>
+         <PDBx:source>NovelAntibiotics</PDBx:source>
+         <PDBx:text>Antiparasitic</PDBx:text>
+         <PDBx:type>Function</PDBx:type>
+      </PDBx:pdbx_reference_molecule_annotation>
+      <PDBx:pdbx_reference_molecule_annotation family_prd_id="FAM_000065" ordinal="3">
+         <PDBx:prd_id>PRD_000158</PDBx:prd_id>
+         <PDBx:source>NovelAntibiotics</PDBx:source>
+         <PDBx:text>Antibacterial</PDBx:text>
+         <PDBx:type>Function</PDBx:type>
+      </PDBx:pdbx_reference_molecule_annotation>
+      <PDBx:pdbx_reference_molecule_annotation family_prd_id="FAM_000065" ordinal="4">
+         <PDBx:prd_id>PRD_000159</PDBx:prd_id>
+         <PDBx:source>Norine</PDBx:source>
+         <PDBx:text>Antibiotic</PDBx:text>
+         <PDBx:type>Function</PDBx:type>
+      </PDBx:pdbx_reference_molecule_annotation>
+      <PDBx:pdbx_reference_molecule_annotation family_prd_id="FAM_000065" ordinal="5">
+         <PDBx:prd_id>PRD_000159</PDBx:prd_id>
+         <PDBx:source>NovelAntibiotics</PDBx:source>
+         <PDBx:text>Antibacterial</PDBx:text>
+         <PDBx:type>Function</PDBx:type>
+      </PDBx:pdbx_reference_molecule_annotation>
+      <PDBx:pdbx_reference_molecule_annotation family_prd_id="FAM_000065" ordinal="6">
+         <PDBx:prd_id>PRD_000161</PDBx:prd_id>
+         <PDBx:source>PubChem</PDBx:source>
+         <PDBx:text>antiprotozoal</PDBx:text>
+         <PDBx:type>Function</PDBx:type>
+      </PDBx:pdbx_reference_molecule_annotation>
+      <PDBx:pdbx_reference_molecule_annotation family_prd_id="FAM_000065" ordinal="7">
+         <PDBx:prd_id>PRD_000161</PDBx:prd_id>
+         <PDBx:source>PubChem</PDBx:source>
+         <PDBx:text>anthelmintic antibiotic</PDBx:text>
+         <PDBx:type>Function</PDBx:type>
+      </PDBx:pdbx_reference_molecule_annotation>
+      <PDBx:pdbx_reference_molecule_annotation family_prd_id="FAM_000065" ordinal="8">
+         <PDBx:prd_id>PRD_000162</PDBx:prd_id>
+         <PDBx:source>Norine</PDBx:source>
+         <PDBx:text>antibacterial and antifungal drug</PDBx:text>
+         <PDBx:type>Function</PDBx:type>
+      </PDBx:pdbx_reference_molecule_annotation>
+      <PDBx:pdbx_reference_molecule_annotation family_prd_id="FAM_000065" ordinal="9">
+         <PDBx:prd_id>PRD_000162</PDBx:prd_id>
+         <PDBx:source>Norine</PDBx:source>
+         <PDBx:text>intiates the formation of pigment in fungus, such as Phoma destructiva</PDBx:text>
+         <PDBx:type>Function</PDBx:type>
+      </PDBx:pdbx_reference_molecule_annotation>
+      <PDBx:pdbx_reference_molecule_annotation family_prd_id="FAM_000065" ordinal="10">
+         <PDBx:prd_id>PRD_000162</PDBx:prd_id>
+         <PDBx:source>NovelAntibiotics</PDBx:source>
+         <PDBx:text>Antifungal</PDBx:text>
+         <PDBx:type>Function</PDBx:type>
+      </PDBx:pdbx_reference_molecule_annotation>
+      <PDBx:pdbx_reference_molecule_annotation family_prd_id="FAM_000065" ordinal="11">
+         <PDBx:prd_id>PRD_000163</PDBx:prd_id>
+         <PDBx:source>Norine</PDBx:source>
+         <PDBx:text>Forms voltage-gated ion channels in biological membranes</PDBx:text>
+         <PDBx:type>Function</PDBx:type>
+      </PDBx:pdbx_reference_molecule_annotation>
+      <PDBx:pdbx_reference_molecule_annotation family_prd_id="FAM_000065" ordinal="12">
+         <PDBx:prd_id>PRD_000828</PDBx:prd_id>
+         <PDBx:source>PMID:22281739</PDBx:source>
+         <PDBx:text>peptaibol antibiotic</PDBx:text>
+         <PDBx:type>Function</PDBx:type>
+      </PDBx:pdbx_reference_molecule_annotation>
+      <PDBx:pdbx_reference_molecule_annotation family_prd_id="FAM_000065" ordinal="13">
+         <PDBx:prd_id>PRD_000920</PDBx:prd_id>
+         <PDBx:source>PMID:23019149</PDBx:source>
+         <PDBx:text>peptide antibiotic</PDBx:text>
+         <PDBx:type>Function</PDBx:type>
+      </PDBx:pdbx_reference_molecule_annotation>
+      <PDBx:pdbx_reference_molecule_annotation family_prd_id="FAM_000065" ordinal="14">
+         <PDBx:prd_id>PRD_000160</PDBx:prd_id>
+         <PDBx:source>PMID:12390019</PDBx:source>
+         <PDBx:text>peptaibol antibiotic</PDBx:text>
+         <PDBx:type>Function</PDBx:type>
+      </PDBx:pdbx_reference_molecule_annotation>
+      <PDBx:pdbx_reference_molecule_annotation family_prd_id="FAM_000065" ordinal="15">
+         <PDBx:prd_id>PRD_000160</PDBx:prd_id>
+         <PDBx:source>PMID:12390019</PDBx:source>
+         <PDBx:text>forms multimeric transmembrane channels through self-association</PDBx:text>
+         <PDBx:type>Mechanism of action</PDBx:type>
+      </PDBx:pdbx_reference_molecule_annotation>
+   </PDBx:pdbx_reference_molecule_annotationCategory>
+   <PDBx:pdbx_reference_molecule_familyCategory>
+      <PDBx:pdbx_reference_molecule_family family_prd_id="FAM_000065">
+         <PDBx:name>Peptaibol</PDBx:name>
+         <PDBx:release_status>REL</PDBx:release_status>
+      </PDBx:pdbx_reference_molecule_family>
+   </PDBx:pdbx_reference_molecule_familyCategory>
+   <PDBx:pdbx_reference_molecule_featuresCategory>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_000065" ordinal="1" prd_id="PRD_000156">
+         <PDBx:source>CAS</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>External_Reference_ID</PDBx:type>
+         <PDBx:value>304911-38-4</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_000065" ordinal="2" prd_id="PRD_000156">
+         <PDBx:source>Beilstein</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>External_Reference_ID</PDBx:type>
+         <PDBx:value>8897522</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_000065" ordinal="3" prd_id="PRD_000156">
+         <PDBx:source>Norine</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>External_Reference_ID</PDBx:type>
+         <PDBx:value>NOR00969</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_000065" ordinal="4" prd_id="PRD_000156">
+         <PDBx:source>NovelAntibiotics</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>External_Reference_ID</PDBx:type>
+         <PDBx:value>540062</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_000065" ordinal="5" prd_id="PRD_000156">
+         <PDBx:source>MESH</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>MESH_Unique_ID</PDBx:type>
+         <PDBx:value>C491024</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_000065" ordinal="6" prd_id="PRD_000156">
+         <PDBx:source>NADB Cephaibol A</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>URL</PDBx:type>
+         <PDBx:value>http://www.nih.go.jp/~jun/NADB/show.cgi/540062.html</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_000065" ordinal="7" prd_id="PRD_000157">
+         <PDBx:source>CAS</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>External_Reference_ID</PDBx:type>
+         <PDBx:value>304911-39-5</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_000065" ordinal="8" prd_id="PRD_000157">
+         <PDBx:source>Beilstein</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>External_Reference_ID</PDBx:type>
+         <PDBx:value>8897524</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_000065" ordinal="9" prd_id="PRD_000157">
+         <PDBx:source>Norine</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>External_Reference_ID</PDBx:type>
+         <PDBx:value>NOR00971</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_000065" ordinal="10" prd_id="PRD_000157">
+         <PDBx:source>NovelAntibiotics</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>External_Reference_ID</PDBx:type>
+         <PDBx:value>540064</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_000065" ordinal="11" prd_id="PRD_000157">
+         <PDBx:source>MESH</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>MESH_Unique_ID</PDBx:type>
+         <PDBx:value>C491025</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_000065" ordinal="12" prd_id="PRD_000157">
+         <PDBx:source>NADB Cephaibol B</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>URL</PDBx:type>
+         <PDBx:value>http://www.nih.go.jp/~jun/NADB/show.cgi/540064.html</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_000065" ordinal="13" prd_id="PRD_000158">
+         <PDBx:source>CAS</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>External_Reference_ID</PDBx:type>
+         <PDBx:value>304911-40-8</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_000065" ordinal="14" prd_id="PRD_000158">
+         <PDBx:source>Beilstein</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>External_Reference_ID</PDBx:type>
+         <PDBx:value>8897525</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_000065" ordinal="15" prd_id="PRD_000158">
+         <PDBx:source>Norine</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>External_Reference_ID</PDBx:type>
+         <PDBx:value>NOR00972</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_000065" ordinal="16" prd_id="PRD_000158">
+         <PDBx:source>NovelAntibiotics</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>External_Reference_ID</PDBx:type>
+         <PDBx:value>540065</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_000065" ordinal="17" prd_id="PRD_000158">
+         <PDBx:source>MESH</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>MESH_Unique_ID</PDBx:type>
+         <PDBx:value>C491026</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_000065" ordinal="18" prd_id="PRD_000158">
+         <PDBx:source>NADB Cephaibol C</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>URL</PDBx:type>
+         <PDBx:value>http://www.nih.go.jp/~jun/NADB/show.cgi/540065.html</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_000065" ordinal="19" prd_id="PRD_000159">
+         <PDBx:source>CAS</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>External_Reference_ID</PDBx:type>
+         <PDBx:value>79395-85-0</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_000065" ordinal="20" prd_id="PRD_000159">
+         <PDBx:source>Beilstein</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>External_Reference_ID</PDBx:type>
+         <PDBx:value>8826366</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_000065" ordinal="21" prd_id="PRD_000159">
+         <PDBx:source>Norine</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>External_Reference_ID</PDBx:type>
+         <PDBx:value>NOR00984</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_000065" ordinal="22" prd_id="PRD_000159">
+         <PDBx:source>NovelAntibiotics</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>External_Reference_ID</PDBx:type>
+         <PDBx:value>270078</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_000065" ordinal="23" prd_id="PRD_000159">
+         <PDBx:source>MESH</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>MESH_Unique_ID</PDBx:type>
+         <PDBx:value>C077077</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_000065" ordinal="24" prd_id="PRD_000160">
+         <PDBx:source>CAS</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>External_Reference_ID</PDBx:type>
+         <PDBx:value>95263-77-7</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_000065" ordinal="25" prd_id="PRD_000160">
+         <PDBx:source>MESH</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>MESH_Unique_ID</PDBx:type>
+         <PDBx:value>C077673</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_000065" ordinal="26" prd_id="PRD_000161">
+         <PDBx:source>CAS</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>External_Reference_ID</PDBx:type>
+         <PDBx:value>12692-85-2</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_000065" ordinal="27" prd_id="PRD_000161">
+         <PDBx:source>Beilstein</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>External_Reference_ID</PDBx:type>
+         <PDBx:value>9186227</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_000065" ordinal="28" prd_id="PRD_000161">
+         <PDBx:source>Norine</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>External_Reference_ID</PDBx:type>
+         <PDBx:value>NOR00945</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_000065" ordinal="29" prd_id="PRD_000161">
+         <PDBx:source>PubChem</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>External_Reference_ID</PDBx:type>
+         <PDBx:value>16132282</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_000065" ordinal="30" prd_id="PRD_000161">
+         <PDBx:source>ChemSpider</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>External_Reference_ID</PDBx:type>
+         <PDBx:value>17288941</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_000065" ordinal="31" prd_id="PRD_000161">
+         <PDBx:source>MESH</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>MESH_Unique_ID</PDBx:type>
+         <PDBx:value>C006596</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_000065" ordinal="32" prd_id="PRD_000162">
+         <PDBx:source>CAS</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>External_Reference_ID</PDBx:type>
+         <PDBx:value>160791-55-9</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_000065" ordinal="33" prd_id="PRD_000162">
+         <PDBx:source>Norine</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>External_Reference_ID</PDBx:type>
+         <PDBx:value>NOR00981</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_000065" ordinal="34" prd_id="PRD_000162">
+         <PDBx:source>NovelAntibiotics</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>External_Reference_ID</PDBx:type>
+         <PDBx:value>480286</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_000065" ordinal="35" prd_id="PRD_000162">
+         <PDBx:source>MESH</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>MESH_Unique_ID</PDBx:type>
+         <PDBx:value>C096631</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_000065" ordinal="36" prd_id="PRD_000162">
+         <PDBx:source>TC_DataBase</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>External_Reference_ID</PDBx:type>
+         <PDBx:value>1.D.5.1.3</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_000065" ordinal="37" prd_id="PRD_000162">
+         <PDBx:source>NADB</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>URL</PDBx:type>
+         <PDBx:value>http://www.nih.go.jp/~jun/NADB/show.cgi/480284.html</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_000065" ordinal="38" prd_id="PRD_000162">
+         <PDBx:source>NADB</PDBx:source>
+         <PDBx:source_ordinal>2</PDBx:source_ordinal>
+         <PDBx:type>URL</PDBx:type>
+         <PDBx:value>http://www.nih.go.jp/~jun/NADB/show.cgi/480285.html</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_000065" ordinal="39" prd_id="PRD_000162">
+         <PDBx:source>NADB</PDBx:source>
+         <PDBx:source_ordinal>3</PDBx:source_ordinal>
+         <PDBx:type>URL</PDBx:type>
+         <PDBx:value>http://www.nih.go.jp/~jun/NADB/show.cgi/480286.html</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_000065" ordinal="40" prd_id="PRD_000162">
+         <PDBx:source>NADB</PDBx:source>
+         <PDBx:source_ordinal>4</PDBx:source_ordinal>
+         <PDBx:type>URL</PDBx:type>
+         <PDBx:value>http://www.nih.go.jp/~jun/NADB/show.cgi/480287.html</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_000065" ordinal="41" prd_id="PRD_000162">
+         <PDBx:source>PubChem</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>External_Reference_ID</PDBx:type>
+         <PDBx:value>16132327</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_000065" ordinal="42" prd_id="PRD_000163">
+         <PDBx:source>CAS</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>External_Reference_ID</PDBx:type>
+         <PDBx:value>59588-86-2</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_000065" ordinal="43" prd_id="PRD_000163">
+         <PDBx:source>Beilstein</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>External_Reference_ID</PDBx:type>
+         <PDBx:value>5213858</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_000065" ordinal="44" prd_id="PRD_000163">
+         <PDBx:source>Norine</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>External_Reference_ID</PDBx:type>
+         <PDBx:value>NOR00010</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_000065" ordinal="45" prd_id="PRD_000163">
+         <PDBx:source>PubChem</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>External_Reference_ID</PDBx:type>
+         <PDBx:value>16132042</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_000065" ordinal="46" prd_id="PRD_000163">
+         <PDBx:source>ChemSpider</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>External_Reference_ID</PDBx:type>
+         <PDBx:value>17288702</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_000065" ordinal="47" prd_id="PRD_000163">
+         <PDBx:source>ChemDB</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>External_Reference_ID</PDBx:type>
+         <PDBx:value>6680040</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_000065" ordinal="48" prd_id="PRD_000163">
+         <PDBx:source>ChemBank</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>External_Reference_ID</PDBx:type>
+         <PDBx:value>2413</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_000065" ordinal="49" prd_id="PRD_000163">
+         <PDBx:source>MESH</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>MESH_Unique_ID</PDBx:type>
+         <PDBx:value>D000408</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_000065" ordinal="50" prd_id="PRD_000163">
+         <PDBx:source>MESH</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>MESH_TreeNumber</PDBx:type>
+         <PDBx:value>D04.345.566.040</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_000065" ordinal="51" prd_id="PRD_000163">
+         <PDBx:source>MESH</PDBx:source>
+         <PDBx:source_ordinal>2</PDBx:source_ordinal>
+         <PDBx:type>MESH_TreeNumber</PDBx:type>
+         <PDBx:value>D12.644.504.111</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_000065" ordinal="52" prd_id="PRD_000163">
+         <PDBx:source>MESH</PDBx:source>
+         <PDBx:source_ordinal>3</PDBx:source_ordinal>
+         <PDBx:type>MESH_TreeNumber</PDBx:type>
+         <PDBx:value>D12.644.641.040</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_000065" ordinal="53" prd_id="PRD_000163">
+         <PDBx:source>CAS</PDBx:source>
+         <PDBx:source_ordinal>2</PDBx:source_ordinal>
+         <PDBx:type>External_Reference_ID</PDBx:type>
+         <PDBx:value>27061-78-5</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_000065" ordinal="54" prd_id="PRD_000163">
+         <PDBx:source>Fermentek</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>Image</PDBx:type>
+         <PDBx:value>http://www.fermentek.co.il/struct/alamethicin.gif</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_000065" ordinal="55" prd_id="PRD_000163">
+         <PDBx:source>Wiki</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>Image</PDBx:type>
+         <PDBx:value>http://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Alamethicin.png/800px-Alamethicin.png</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_000065" ordinal="56" prd_id="PRD_000163">
+         <PDBx:source>Wiki</PDBx:source>
+         <PDBx:source_ordinal>2</PDBx:source_ordinal>
+         <PDBx:type>Image</PDBx:type>
+         <PDBx:value>http://upload.wikimedia.org/wikipedia/commons/5/58/Alamethicin_ion_channel.jpg</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+      <PDBx:pdbx_reference_molecule_features family_prd_id="FAM_000065" ordinal="57" prd_id="PRD_000163">
+         <PDBx:source>Sigma</PDBx:source>
+         <PDBx:source_ordinal>1</PDBx:source_ordinal>
+         <PDBx:type>Image</PDBx:type>
+         <PDBx:value>http://www.sigmaaldrich.com/structureimages/17/mfcd00151517.gif</PDBx:value>
+      </PDBx:pdbx_reference_molecule_features>
+   </PDBx:pdbx_reference_molecule_featuresCategory>
+   <PDBx:pdbx_reference_molecule_listCategory>
+      <PDBx:pdbx_reference_molecule_list family_prd_id="FAM_000065" prd_id="PRD_000156"></PDBx:pdbx_reference_molecule_list>
+      <PDBx:pdbx_reference_molecule_list family_prd_id="FAM_000065" prd_id="PRD_000157"></PDBx:pdbx_reference_molecule_list>
+      <PDBx:pdbx_reference_molecule_list family_prd_id="FAM_000065" prd_id="PRD_000158"></PDBx:pdbx_reference_molecule_list>
+      <PDBx:pdbx_reference_molecule_list family_prd_id="FAM_000065" prd_id="PRD_000159"></PDBx:pdbx_reference_molecule_list>
+      <PDBx:pdbx_reference_molecule_list family_prd_id="FAM_000065" prd_id="PRD_000160"></PDBx:pdbx_reference_molecule_list>
+      <PDBx:pdbx_reference_molecule_list family_prd_id="FAM_000065" prd_id="PRD_000161"></PDBx:pdbx_reference_molecule_list>
+      <PDBx:pdbx_reference_molecule_list family_prd_id="FAM_000065" prd_id="PRD_000162"></PDBx:pdbx_reference_molecule_list>
+      <PDBx:pdbx_reference_molecule_list family_prd_id="FAM_000065" prd_id="PRD_000163"></PDBx:pdbx_reference_molecule_list>
+      <PDBx:pdbx_reference_molecule_list family_prd_id="FAM_000065" prd_id="PRD_000828"></PDBx:pdbx_reference_molecule_list>
+      <PDBx:pdbx_reference_molecule_list family_prd_id="FAM_000065" prd_id="PRD_000920"></PDBx:pdbx_reference_molecule_list>
+   </PDBx:pdbx_reference_molecule_listCategory>
+   <PDBx:pdbx_reference_molecule_related_structuresCategory>
+      <PDBx:pdbx_reference_molecule_related_structures family_prd_id="FAM_000065" ordinal="1">
+         <PDBx:citation_id>2</PDBx:citation_id>
+         <PDBx:db_code>ETUYOH</PDBx:db_code>
+         <PDBx:db_name>CCDC</PDBx:db_name>
+         <PDBx:formula>C82 H127 N17 O20, C2 H6 O, 11(H2 O)</PDBx:formula>
+         <PDBx:name> Cephaibol A ethonol solvate undecahydrate, seqres A16 PHE*-AIB-AIB-AIB-AIB-GLY-LEU-IVA-AIB-PRO*-GLN-IVA-PRO*-AIB-PRO-PHE*</PDBx:name>
+      </PDBx:pdbx_reference_molecule_related_structures>
+      <PDBx:pdbx_reference_molecule_related_structures family_prd_id="FAM_000065" ordinal="2">
+         <PDBx:citation_id>2</PDBx:citation_id>
+         <PDBx:db_code>ETUYUN</PDBx:db_code>
+         <PDBx:db_name>CCDC</PDBx:db_name>
+         <PDBx:formula>C83 H129 N17 O20, 1.75(C2 H6 O), 8.5(H2 O)</PDBx:formula>
+         <PDBx:name> Cephaibol B ethanol solvate hydrate, seqres A16 PHE*-AIB-AIB-AIB-IVA-GLY-LEU-IVA-AIB-PRO*-GLN-IVA-PRO*-AIB-PRO-PHE*</PDBx:name>
+      </PDBx:pdbx_reference_molecule_related_structures>
+      <PDBx:pdbx_reference_molecule_related_structures family_prd_id="FAM_000065" ordinal="3">
+         <PDBx:citation_id>2</PDBx:citation_id>
+         <PDBx:db_code>ETUZAU</PDBx:db_code>
+         <PDBx:db_name>CCDC</PDBx:db_name>
+         <PDBx:formula>C81 H125 N17 O20, 2.25(C2 H6 O), 9.75(H2 O)</PDBx:formula>
+         <PDBx:name> Cephaibol C ethanol solvate hydrate, seqres A16 PHE*-AIB-AIB-AIB-AIB-GLY-LEU-IVA-AIB-PRO*-GLN-AIB-PRO*-AIB-PRO-PHE*</PDBx:name>
+      </PDBx:pdbx_reference_molecule_related_structures>
+      <PDBx:pdbx_reference_molecule_related_structures family_prd_id="FAM_000065" ordinal="4">
+         <PDBx:citation_id>6</PDBx:citation_id>
+         <PDBx:db_code>KIYPUD</PDBx:db_code>
+         <PDBx:db_name>CCDC</PDBx:db_name>
+         <PDBx:formula>C85 H140 N18 O22, 10(H2 O)</PDBx:formula>
+         <PDBx:name> Acetyl-leucyl-isoleucyl-glutaminyl-isovalyl-isoleucyl-threonyl-alpha-aminoisobutyryl-leucyl-alpha-aminoisobutyryl-4-hydroxyprolyl-glutaminyl-alpha-aminoisobutyryl-4-hydroxyprolyl-alpha-aminoisobutyryl-prolyl-phenylalaninol decahydrate, (Leucyl)zervamicin decahydrate, seqres A16 LEU*-ILE-GLN-IVA-ILE-THR-AIB-LEU-AIB-PRO*-GLN-AIB-PRO*-AIB-PRO-PHE*</PDBx:name>
+      </PDBx:pdbx_reference_molecule_related_structures>
+      <PDBx:pdbx_reference_molecule_related_structures family_prd_id="FAM_000065" ordinal="5">
+         <PDBx:citation_id>12</PDBx:citation_id>
+         <PDBx:db_code>BEKZIB</PDBx:db_code>
+         <PDBx:db_name>CCDC</PDBx:db_name>
+         <PDBx:formula>C77 H127 N19 O19, C2 H3 N, 2(H2 O)</PDBx:formula>
+         <PDBx:name> acetyl-L-tryptophyl-L-alanyl-bis(alpha-aminoisobutyryl)-L-leucyl-alpha-aminoisobutyryl-L-glutaminyl-tris(alpha-aminoisobutyryl)-L-glutaminyl-L-leucyl-alpha-aminoisobutyryl-L-glutaminyl-L-leucinol, Ampullosporin A acetonitrile solvate dihydrate, seqres A15 TRP*-ALA-AIB-AIB-LEU-AIB-GLN-AIB-AIB-AIB-GLN-LEU-AIB-GLN-LEU*</PDBx:name>
+      </PDBx:pdbx_reference_molecule_related_structures>
+      <PDBx:pdbx_reference_molecule_related_structures family_prd_id="FAM_000065" ordinal="6">
+         <PDBx:citation_id>13</PDBx:citation_id>
+         <PDBx:db_code>ICAJEB</PDBx:db_code>
+         <PDBx:db_name>CCDC</PDBx:db_name>
+         <PDBx:formula>C22 H31 N3 O7, C2 H6 O</PDBx:formula>
+         <PDBx:name> methyl 1-(N-(N-(benzyloxycarbonyl)-alpha-aminoisobutyryl)-alpha-aminoisobutyryl)-4-hydroxypyrrolidine-2-carboxylate, segment of peptaibol antibiotics (antiamoebins and emericins IIIIV), seqres A3 AIB*-AIB-PRO*</PDBx:name>
+      </PDBx:pdbx_reference_molecule_related_structures>
+      <PDBx:pdbx_reference_molecule_related_structures family_prd_id="FAM_000065" ordinal="7">
+         <PDBx:citation_id>14</PDBx:citation_id>
+         <PDBx:db_code>HIKKUH</PDBx:db_code>
+         <PDBx:db_name>CCDC</PDBx:db_name>
+         <PDBx:formula>C65 H115 N13 O15, C H3 N O2, H2 O</PDBx:formula>
+         <PDBx:name> N-octanoyl-alpha-aminoisobutyryl-glycyl-leucyl-(2,2,6,6-tetramethylpiperidine-1-oxyl-4-amino-4-carboxyl)-glycyl-glycyl-leucyl-(2,2,6,6-tetramethylpiperidine-1-oxyl-4-amino-4-carboxyl)-glycyl-isoleucyl-leucine methyl ester, Lipopeptaibol, seqres A11 AIB*-GLY-LEU-GLY*-GLY-GLY-LEU-GLY*-GLY-ILE-LEU*</PDBx:name>
+      </PDBx:pdbx_reference_molecule_related_structures>
+      <PDBx:pdbx_reference_molecule_related_structures family_prd_id="FAM_000065" ordinal="8">
+         <PDBx:citation_id>15</PDBx:citation_id>
+         <PDBx:db_code>SUWKEA</PDBx:db_code>
+         <PDBx:db_name>CCDC</PDBx:db_name>
+         <PDBx:formula>C31 H51 N5 O6</PDBx:formula>
+         <PDBx:name> acetyl-L-leucyl-alpha-aminoisobutyryl-L-leucyl-alpha-aminoisobutyryl-L-phenylalaninol, Peptaibolin, AC-L-LEU-AIB-L-LEU-AIB-L-PHOL, seqres A5 LEU*-AIB-LEU-AIB*-PHE*</PDBx:name>
+      </PDBx:pdbx_reference_molecule_related_structures>
+      <PDBx:pdbx_reference_molecule_related_structures family_prd_id="FAM_000065" ordinal="9">
+         <PDBx:citation_id>21</PDBx:citation_id>
+         <PDBx:db_code>FEJQOA</PDBx:db_code>
+         <PDBx:db_name>CCDC</PDBx:db_name>
+         <PDBx:formula>C82 H127 N17 O20, 3(C8 H18 O)</PDBx:formula>
+         <PDBx:name> Antiamoebin I tri-n-octanol clathrate, seqres A16 PHE*-AIB-AIB-AIB-IVA-GLY-LEU-AIB-AIB-PRO*-GLN-IVA-PRO*-AIB-PRO-ALA*</PDBx:name>
+      </PDBx:pdbx_reference_molecule_related_structures>
+      <PDBx:pdbx_reference_molecule_related_structures family_prd_id="FAM_000065" ordinal="10">
+         <PDBx:citation_id>30</PDBx:citation_id>
+         <PDBx:db_code>IVIGOJ</PDBx:db_code>
+         <PDBx:db_name>CCDC</PDBx:db_name>
+         <PDBx:formula>C51 H77 N9 O11, 3(H2 O)</PDBx:formula>
+         <PDBx:name>N-Acetylphenylalanyl-(alpha-aminoisobutyryl)-(alpha-aminoisobutyryl)-(alpha-aminoisobutyryl)-valyl-glycyl-leucyl-(alpha-aminoisobutyryl)-alpha-aminoisobutyric acid benzyl ester trihydrate, Emerimicin-(1-9) benzyl ester
+ seqres A9 PHE*-AIB-AIB-AIB-VAL-GLY-LEU-AIB-AIB*</PDBx:name>
+      </PDBx:pdbx_reference_molecule_related_structures>
+      <PDBx:pdbx_reference_molecule_related_structures family_prd_id="FAM_000065" ordinal="11">
+         <PDBx:citation_id>47</PDBx:citation_id>
+         <PDBx:db_code>MORHUW</PDBx:db_code>
+         <PDBx:db_name>CCDC</PDBx:db_name>
+         <PDBx:formula>2(C52 H95 N11 O12), 9(H2 O)</PDBx:formula>
+         <PDBx:name> rac-trichogin A IV nonahydrate, bis(octanoyl-L-a-amino-isobutyryl-L-glycyl-L-leucyl-L-a-amino-isobutyryl-L-glycyl-L-glycyl-L-leucyl-L-a-amino-isobutyryl-L-glycyl-L-isoleucyl-leucinol) nonahydrate, seqres A11 AIB*-GLY-LEU-AIB-GLY-GLY-LEU-AIB-GLY-ILE-LEU*</PDBx:name>
+      </PDBx:pdbx_reference_molecule_related_structures>
+      <PDBx:pdbx_reference_molecule_related_structures family_prd_id="FAM_000065" ordinal="12">
+         <PDBx:citation_id>48</PDBx:citation_id>
+         <PDBx:db_code>MAMMEU</PDBx:db_code>
+         <PDBx:db_name>CCDC</PDBx:db_name>
+         <PDBx:formula>C78 H137 N20 O21, 0.5(C2 H3 N), 1.75(H2 O)</PDBx:formula>
+         <PDBx:name>Trichotoxin A50E acetonitrile solvate hydrate, seqres A17 AIB*-GLY-AIB-LEU-AIB-GLN-AIB-AIB-AIB-ALA-ALA-AIB-PRO-LEU-AIB-AIB-GLN*</PDBx:name>
+      </PDBx:pdbx_reference_molecule_related_structures>
+      <PDBx:pdbx_reference_molecule_related_structures family_prd_id="FAM_000065" ordinal="13">
+         <PDBx:citation_id>49</PDBx:citation_id>
+         <PDBx:db_code>MAMMEU01</PDBx:db_code>
+         <PDBx:db_name>CCDC</PDBx:db_name>
+         <PDBx:formula>C78 H137 N20 O21, C2 H3 N, 2.5(H2 O)</PDBx:formula>
+         <PDBx:name>Trichotoxin A50E acetonitrile solvate hydrate, seqres A17 AIB*-GLY-AIB-LEU-AIB-GLN-AIB-AIB-AIB-ALA-ALA-AIB-PRO-LEU-AIB-AIB-GLN*</PDBx:name>
+      </PDBx:pdbx_reference_molecule_related_structures>
+   </PDBx:pdbx_reference_molecule_related_structuresCategory>
+   <PDBx:pdbx_reference_molecule_synonymsCategory>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_000065" ordinal="1" prd_id="PRD_000156">
+         <PDBx:name>CEPHAIBOL</PDBx:name>
+         <PDBx:source>PDB</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_000065" ordinal="2" prd_id="PRD_000156">
+         <PDBx:name>Cephaibol A</PDBx:name>
+         <PDBx:source>SciFinder</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_000065" ordinal="3" prd_id="PRD_000157">
+         <PDBx:name>CEPHAIBOL</PDBx:name>
+         <PDBx:source>PDB</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_000065" ordinal="4" prd_id="PRD_000157">
+         <PDBx:name>Cephaibol B</PDBx:name>
+         <PDBx:source>SciFinder</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_000065" ordinal="5" prd_id="PRD_000158">
+         <PDBx:name>CEPHAIBOL</PDBx:name>
+         <PDBx:source>PDB</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_000065" ordinal="6" prd_id="PRD_000158">
+         <PDBx:name>Cephaibol C</PDBx:name>
+         <PDBx:source>SciFinder</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_000065" ordinal="7" prd_id="PRD_000159">
+         <PDBx:name>ZERVAMICIN</PDBx:name>
+         <PDBx:source>PDB</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_000065" ordinal="8" prd_id="PRD_000159">
+         <PDBx:name>Zervamicin IIB</PDBx:name>
+         <PDBx:source>SciFinder</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_000065" ordinal="9" prd_id="PRD_000159">
+         <PDBx:name>Emerimicin IIB</PDBx:name>
+         <PDBx:source>SciFinder</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_000065" ordinal="10" prd_id="PRD_000159">
+         <PDBx:name>Emerimicin IIB</PDBx:name>
+         <PDBx:source>Norine</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_000065" ordinal="11" prd_id="PRD_000159">
+         <PDBx:name>emerimicin</PDBx:name>
+         <PDBx:source>Norine</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_000065" ordinal="12" prd_id="PRD_000160">
+         <PDBx:name>TRICHOTOXIN_A50E</PDBx:name>
+         <PDBx:source>PDB</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_000065" ordinal="13" prd_id="PRD_000160">
+         <PDBx:name>Trichotoxin A50E</PDBx:name>
+         <PDBx:source>SciFinder</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_000065" ordinal="14" prd_id="PRD_000160">
+         <PDBx:name>Trichotoxin A 50G, 16-(2-methylalanine)-(9CI)</PDBx:name>
+         <PDBx:source>SciFinder</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_000065" ordinal="15" prd_id="PRD_000161">
+         <PDBx:name>ANTIAMOEBIN</PDBx:name>
+         <PDBx:source>PDB</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_000065" ordinal="16" prd_id="PRD_000161">
+         <PDBx:name>Antibiotic Tu 165</PDBx:name>
+         <PDBx:source>SciFinder</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_000065" ordinal="17" prd_id="PRD_000161">
+         <PDBx:name>Antiamebin</PDBx:name>
+         <PDBx:source>SciFinder</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_000065" ordinal="18" prd_id="PRD_000161">
+         <PDBx:name>Antibiotic Tu 165</PDBx:name>
+         <PDBx:source>PubChem</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_000065" ordinal="19" prd_id="PRD_000161">
+         <PDBx:name>LS-20757</PDBx:name>
+         <PDBx:source>PubChem</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_000065" ordinal="20" prd_id="PRD_000161">
+         <PDBx:name>Antiamebin</PDBx:name>
+         <PDBx:source>PubChem</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_000065" ordinal="21" prd_id="PRD_000162">
+         <PDBx:name>CHRYSOSPERMIN-C</PDBx:name>
+         <PDBx:source>SciFinder</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_000065" ordinal="22" prd_id="PRD_000163">
+         <PDBx:name>ALAMETHICIN</PDBx:name>
+         <PDBx:source>PDB</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_000065" ordinal="23" prd_id="PRD_000163">
+         <PDBx:name>Alamethicin F 30</PDBx:name>
+         <PDBx:source>SciFinder</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_000065" ordinal="24" prd_id="PRD_000163">
+         <PDBx:name>Alamethicin RF 30</PDBx:name>
+         <PDBx:source>SciFinder</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_000065" ordinal="25" prd_id="PRD_000163">
+         <PDBx:name>Antibiotic U 22324</PDBx:name>
+         <PDBx:source>SciFinder</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_000065" ordinal="26" prd_id="PRD_000163">
+         <PDBx:name>L-Glutamamide</PDBx:name>
+         <PDBx:source>SciFinder</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_000065" ordinal="27" prd_id="PRD_000163">
+         <PDBx:name>Alamethicin gamma</PDBx:name>
+         <PDBx:source>SciFinder</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_000065" ordinal="28" prd_id="PRD_000163">
+         <PDBx:name>Alamethicin gamma</PDBx:name>
+         <PDBx:source>PubChem</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_000065" ordinal="29" prd_id="PRD_000163">
+         <PDBx:name>Alamethicin F 30</PDBx:name>
+         <PDBx:source>PubChem</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_000065" ordinal="30" prd_id="PRD_000163">
+         <PDBx:name>Antibiotic U 22324</PDBx:name>
+         <PDBx:source>PubChem</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_000065" ordinal="31" prd_id="PRD_000163">
+         <PDBx:name>Antibiotic U-22324</PDBx:name>
+         <PDBx:source>PubChem</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_000065" ordinal="32" prd_id="PRD_000163">
+         <PDBx:name>A4665_SIGMA</PDBx:name>
+         <PDBx:source>PubChem</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_000065" ordinal="33" prd_id="PRD_000163">
+         <PDBx:name>Alamethicin from Trichoderma viride</PDBx:name>
+         <PDBx:source>PubChem</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_000065" ordinal="34" prd_id="PRD_000163">
+         <PDBx:name>F-30</PDBx:name>
+         <PDBx:source>PubChem</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_000065" ordinal="35" prd_id="PRD_000163">
+         <PDBx:name>Alamethicin Trichoderma viride</PDBx:name>
+         <PDBx:source>ChemSpider</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_000065" ordinal="36" prd_id="PRD_000163">
+         <PDBx:name>Antibiotic U-22324</PDBx:name>
+         <PDBx:source>ChemSpider</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_000065" ordinal="37" prd_id="PRD_000163">
+         <PDBx:name>Antibiotic U 22324</PDBx:name>
+         <PDBx:source>ChemBank</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_000065" ordinal="38" prd_id="PRD_000163">
+         <PDBx:name>U 22324</PDBx:name>
+         <PDBx:source>ChemBank</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_000065" ordinal="39" prd_id="PRD_000828">
+         <PDBx:name>trichovirin</PDBx:name>
+         <PDBx:source>PDB</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+      <PDBx:pdbx_reference_molecule_synonyms family_prd_id="FAM_000065" ordinal="40" prd_id="PRD_000920">
+         <PDBx:name>Samarosporin</PDBx:name>
+         <PDBx:source>PDB</PDBx:source>
+      </PDBx:pdbx_reference_molecule_synonyms>
+   </PDBx:pdbx_reference_molecule_synonymsCategory>
+</PDBx:datablock>

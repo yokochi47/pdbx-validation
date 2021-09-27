@@ -18,11 +18,11 @@
   <xsl:output method="xml" indent="yes"/>
   <xsl:strip-space elements="*"/>
 
-  <xsl:variable name="PDBID"><xsl:value-of select="/VRPTx:datablock/VRPTx:entryCategory/VRPTx:entry/@id"/></xsl:variable>
-  <xsl:variable name="pdbid"><xsl:value-of select="translate($PDBID,'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz')"/></xsl:variable>
-  <xsl:variable name="pdb_doi"><xsl:value-of select="concat('10.2210/pdb',$pdbid,'/pdb')"/></xsl:variable>
-  <xsl:variable name="base">http://rdf.wwpdb.org/vrpt/<xsl:value-of select="$PDBID"/></xsl:variable>
-  <xsl:variable name="base_lower">http://rdf.wwpdb.org/pdb/<xsl:value-of select="$pdbid"/></xsl:variable>
+  <xsl:variable name="PDB_ID"><xsl:value-of select="/VRPTx:datablock/VRPTx:entryCategory/VRPTx:entry/@id"/></xsl:variable>
+  <xsl:variable name="pdb_id"><xsl:value-of select="translate($PDB_ID,'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz')"/></xsl:variable>
+  <xsl:variable name="pdb_doi"><xsl:value-of select="concat('10.2210/pdb',$pdb_id,'/pdb')"/></xsl:variable>
+  <xsl:variable name="base">http://rdf.wwpdb.org/vrpt/<xsl:value-of select="$PDB_ID"/></xsl:variable>
+  <xsl:variable name="base_lower">http://rdf.wwpdb.org/pdb/<xsl:value-of select="$pdb_id"/></xsl:variable>
   <xsl:variable name="pdb_link">http://rdf.wwpdb.org/pdb/</xsl:variable>
   <xsl:variable name="chem_comp">http://rdf.wwpdb.org/cc/</xsl:variable>
   <xsl:variable name="prd">http://rdf.wwpdb.org/prd/</xsl:variable>
@@ -32,7 +32,7 @@
   <xsl:variable name="pdbml">ftp://ftp.wwpdb.org/pub/pdb/data/structures/all/XML/</xsl:variable>
   <xsl:variable name="pdbml_noatom">ftp://ftp.wwpdb.org/pub/pdb/data/structures/all/XML-noatom/</xsl:variable>
   <xsl:variable name="pdbml_extatom">ftp://ftp.wwpdb.org/pub/pdb/data/structures/all/XML-extatom/</xsl:variable>
-  <xsl:variable name="vrpt">ftp://ftp.wwpdb.org/pub/pdb/validation_reports/<xsl:value-of select="substring($pdbid,2,2)"/>/<xsl:value-of select="$pdbid"/>/</xsl:variable>
+  <xsl:variable name="vrpt">ftp://ftp.wwpdb.org/pub/pdb/validation_reports/<xsl:value-of select="substring($pdb_id,2,2)"/>/<xsl:value-of select="$pdb_id"/>/</xsl:variable>
   <xsl:variable name="bmrb">http://bmrbpub.pdbj.org/rdf/bmr</xsl:variable>
   <xsl:variable name="emdb">http://www.ebi.ac.uk/emdb/</xsl:variable>
   <xsl:variable name="sasbdb">http://www.sasbdb.org/data/</xsl:variable>
@@ -66,18 +66,18 @@
   <xsl:template match="/VRPTx:datablock">
     <VRPTo:datablock rdf:about="{$base}">
       <dcterms:references rdf:resource="{$doi}{$pdb_doi}" rdfs:label="doi:{$pdb_doi}"/>
-      <dcterms:identifier><xsl:value-of select="$PDBID"/></dcterms:identifier>
-      <skos:altLabel><xsl:value-of select="$pdbid"/></skos:altLabel>
-      <dc:title><xsl:value-of select="concat('wwPDB validation report of PDB entry ',$PDBID)"/></dc:title>
-      <VRPTo:link_to_pdb_src rdf:resource="{$pdb_link}{$pdbid}"/>
-      <VRPTo:link_to_pdbml rdf:resource="{$pdbml}{$pdbid}.xml.gz"/>
-      <VRPTo:link_to_pdbml_noatom rdf:resource="{$pdbml_noatom}{$pdbid}-noatom.xml.gz"/>
-      <VRPTo:link_to_pdbml_extatom rdf:resource="{$pdbml_extatom}{$pdbid}-extatom.xml.gz"/>
-      <VRPTo:link_to_xml_vrpt rdf:resource="{$vrpt}{$pdbid}_validation.xml.gz"/>
+      <dcterms:identifier><xsl:value-of select="$PDB_ID"/></dcterms:identifier>
+      <skos:altLabel><xsl:value-of select="$pdb_id"/></skos:altLabel>
+      <dc:title><xsl:value-of select="concat('wwPDB validation report of PDB entry ',$PDB_ID)"/></dc:title>
+      <VRPTo:link_to_pdb_src rdf:resource="{$pdb_link}{$pdb_id}"/>
+      <VRPTo:link_to_pdbml rdf:resource="{$pdbml}{$pdb_id}.xml.gz"/>
+      <VRPTo:link_to_pdbml_noatom rdf:resource="{$pdbml_noatom}{$pdb_id}-noatom.xml.gz"/>
+      <VRPTo:link_to_pdbml_extatom rdf:resource="{$pdbml_extatom}{$pdb_id}-extatom.xml.gz"/>
+      <VRPTo:link_to_xml_vrpt rdf:resource="{$vrpt}{$pdb_id}_validation.xml.gz"/>
       <owl:sameAs rdf:resource="{$base_lower}"/>
-      <rdfs:seeAlso rdf:resource="{$pdbj}{$PDBID}"/>
-      <rdfs:seeAlso rdf:resource="{$rcsb}{$PDBID}"/>
-      <rdfs:seeAlso rdf:resource="{$pdbe}{$PDBID}"/>
+      <rdfs:seeAlso rdf:resource="{$pdbj}{$PDB_ID}"/>
+      <rdfs:seeAlso rdf:resource="{$rcsb}{$PDB_ID}"/>
+      <rdfs:seeAlso rdf:resource="{$pdbe}{$PDB_ID}"/>
 
       <VRPTo:datablockName><xsl:value-of select="@datablockName"/></VRPTo:datablockName>
       <xsl:apply-templates select="./*"/>

@@ -39,12 +39,12 @@
   &lt;xsl:output method="xml" indent="yes"/&gt;
   &lt;xsl:strip-space elements="*"/&gt;
 
-  &lt;xsl:variable name="PDBID"&gt;&lt;xsl:value-of select="/PDBx:datablock/PDBx:entryCategory/PDBx:entry/@id"/&gt;&lt;/xsl:variable&gt;
-  &lt;xsl:variable name="pdbid"&gt;&lt;xsl:value-of select="translate($PDBID,'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz')"/&gt;&lt;/xsl:variable&gt;
-  &lt;xsl:variable name="pdb_doi"&gt;&lt;xsl:value-of select="concat('10.2210/pdb',$pdbid,'/pdb')"/&gt;&lt;/xsl:variable&gt;
-  &lt;xsl:variable name="base"&gt;http://rdf.wwpdb.org/pdb/&lt;xsl:value-of select="$PDBID"/&gt;&lt;/xsl:variable&gt;
-  &lt;xsl:variable name="base_lower"&gt;http://rdf.wwpdb.org/pdb/&lt;xsl:value-of select="$pdbid"/&gt;&lt;/xsl:variable&gt;
-  &lt;xsl:variable name="vrpt"&gt;http://rdf.wwpdb.org/vrpt/&lt;xsl:value-of select="$PDBID"/&gt;&lt;/xsl:variable&gt;
+  &lt;xsl:variable name="PDB_ID"&gt;&lt;xsl:value-of select="/PDBx:datablock/PDBx:entryCategory/PDBx:entry/@id"/&gt;&lt;/xsl:variable&gt;
+  &lt;xsl:variable name="pdb_id"&gt;&lt;xsl:value-of select="translate($PDB_ID,'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz')"/&gt;&lt;/xsl:variable&gt;
+  &lt;xsl:variable name="pdb_doi"&gt;&lt;xsl:value-of select="concat('10.2210/pdb',$pdb_id,'/pdb')"/&gt;&lt;/xsl:variable&gt;
+  &lt;xsl:variable name="base"&gt;http://rdf.wwpdb.org/pdb/&lt;xsl:value-of select="$PDB_ID"/&gt;&lt;/xsl:variable&gt;
+  &lt;xsl:variable name="base_lower"&gt;http://rdf.wwpdb.org/pdb/&lt;xsl:value-of select="$pdb_id"/&gt;&lt;/xsl:variable&gt;
+  &lt;xsl:variable name="vrpt"&gt;http://rdf.wwpdb.org/vrpt/&lt;xsl:value-of select="$PDB_ID"/&gt;&lt;/xsl:variable&gt;
   &lt;xsl:variable name="pdb_link"&gt;http://rdf.wwpdb.org/pdb/&lt;/xsl:variable&gt;
   &lt;xsl:variable name="chem_comp"&gt;http://rdf.wwpdb.org/cc/&lt;/xsl:variable&gt;
   &lt;xsl:variable name="prd"&gt;http://rdf.wwpdb.org/prd/&lt;/xsl:variable&gt;
@@ -88,17 +88,17 @@
   &lt;xsl:template match="/PDBx:datablock"&gt;
     &lt;PDBo:datablock rdf:about="{$base}"&gt;
       &lt;dcterms:references rdf:resource="{$doi}{$pdb_doi}" rdfs:label="doi:{$pdb_doi}"/&gt;
-      &lt;dcterms:identifier&gt;&lt;xsl:value-of select="$PDBID"/&gt;&lt;/dcterms:identifier&gt;
-      &lt;skos:altLabel&gt;&lt;xsl:value-of select="$pdbid"/&gt;&lt;/skos:altLabel&gt;
+      &lt;dcterms:identifier&gt;&lt;xsl:value-of select="$PDB_ID"/&gt;&lt;/dcterms:identifier&gt;
+      &lt;skos:altLabel&gt;&lt;xsl:value-of select="$pdb_id"/&gt;&lt;/skos:altLabel&gt;
       &lt;dc:title&gt;&lt;xsl:value-of select="PDBx:structCategory/PDBx:struct/PDBx:title/text()"/&gt;&lt;/dc:title&gt;
-      &lt;PDBo:link_to_pdbml rdf:resource="{$pdbml}{$pdbid}.xml.gz"/&gt;
-      &lt;PDBo:link_to_pdbml_noatom rdf:resource="{$pdbml_noatom}{$pdbid}-noatom.xml.gz"/&gt;
-      &lt;PDBo:link_to_pdbml_extatom rdf:resource="{$pdbml_extatom}{$pdbid}-extatom.xml.gz"/&gt;
+      &lt;PDBo:link_to_pdbml rdf:resource="{$pdbml}{$pdb_id}.xml.gz"/&gt;
+      &lt;PDBo:link_to_pdbml_noatom rdf:resource="{$pdbml_noatom}{$pdb_id}-noatom.xml.gz"/&gt;
+      &lt;PDBo:link_to_pdbml_extatom rdf:resource="{$pdbml_extatom}{$pdb_id}-extatom.xml.gz"/&gt;
       &lt;PDBo:link_to_vrpt rdf:resource="{$vrpt}"/&gt;
       &lt;owl:sameAs rdf:resource="{$base_lower}"/&gt;
-      &lt;rdfs:seeAlso rdf:resource="{$pdbj}{$PDBID}"/&gt;
-      &lt;rdfs:seeAlso rdf:resource="{$rcsb}{$PDBID}"/&gt;
-      &lt;rdfs:seeAlso rdf:resource="{$pdbe}{$PDBID}"/&gt;
+      &lt;rdfs:seeAlso rdf:resource="{$pdbj}{$PDB_ID}"/&gt;
+      &lt;rdfs:seeAlso rdf:resource="{$rcsb}{$PDB_ID}"/&gt;
+      &lt;rdfs:seeAlso rdf:resource="{$pdbe}{$PDB_ID}"/&gt;
 
       &lt;PDBo:datablockName&gt;&lt;xsl:value-of select="@datablockName"/&gt;&lt;/PDBo:datablockName&gt;
       &lt;xsl:apply-templates select="./*"/&gt;

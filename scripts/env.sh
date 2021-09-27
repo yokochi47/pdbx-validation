@@ -89,6 +89,9 @@ CC2RDF_XSL=stylesheet/cc2rdf.xsl
 PDBX2PRD2RDF_XSL=stylesheet/pdbx2prd2rdf.xsl
 PRD2RDF_XSL=stylesheet/prd2rdf.xsl
 
+PDBX2FAM2RDF_XSL=stylesheet/pdbx2fam2rdf.xsl
+FAM2RDF_XSL=stylesheet/fam2rdf.xsl
+
 PDBML2WURCS_XSL=stylesheet/pdbml2wurcs.xsl
 VRPTML2WURCS_XSL=stylesheet/vrptml2wurcs.xsl
 
@@ -121,6 +124,9 @@ pdbx_sdb=pdbx.sdb
 
 PDBML_PRD=$XML_BIRD/prd
 RDF_PRD=$RDF_BIRD/prd
+
+PDBML_FAM=$XML_BIRD/family
+RDF_FAM=$RDF_BIRD/family
 
 function mk_div_dir() {
  if [ ! -d $1 ] ; then

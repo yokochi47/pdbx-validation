@@ -88,7 +88,9 @@ if [ $weekday -ge 1 ] && [ $weekday -le 4 ] ; then
  do
   echo ftp://$SRC_DIR/${cc_id: -1}/${cc_id}/${cc_id}.cif >> $components_cif_list
  done < $components_cif_new
- aria2c -i $components_cif_list -j $MAXPROCS -d $SRC_DIR --allow-overwrite=true --auto-file-renaming=false
+ if [ -e $components_cif_list ] ; then
+  aria2c -i $components_cif_list -j $MAXPROCS -d $SRC_DIR --allow-overwrite=true --auto-file-renaming=false
+ fi
 
  rm -f $components_cif $components_cif_list $components_cif_all $components_cif_old $components_cif_new $components_cif_del
 
