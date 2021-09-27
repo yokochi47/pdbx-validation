@@ -4,8 +4,9 @@ source ./scripts/env.sh
 
 XML_DIR=
 DELETE=false
+WELL_FORMED=--well-formed
 
-ARGV=`getopt --long -o "d:r" "$@"`
+ARGV=`getopt --long -o "d:rf" "$@"`
 eval set -- "$ARGV"
 while true ; do
  case "$1" in
@@ -15,6 +16,9 @@ while true ; do
  ;;
  -r)
   DELETE=true
+ ;;
+ -f)
+  WELL_FORMED=
  ;;
  *)
   break
@@ -34,9 +38,9 @@ if [ -d $XML_DIR ] ; then
  find $XML_DIR -maxdepth 1 -name '*.xml' -size 0 -exec rm {} +
 
  if [ $DELETE = "true" ] ; then
-  java -classpath $XSD2PGSCHEMA xmlvalidator --xsd $PDBX_VALIDATION_XSD --xml $XML_DIR --sync chk_sum_valid_xml --del-invalid-xml
+  java -classpath $XSD2PGSCHEMA xmlvalidator --xsd $PDBX_VALIDATION_XSD --xml $XML_DIR --sync chk_sum_valid_xml --del-invalid-xml $WELL_FORMED
  else
-  java -classpath $XSD2PGSCHEMA xmlvalidator --xsd $PDBX_VALIDATION_XSD --xml $XML_DIR --sync chk_sum_valid_xml
+  java -classpath $XSD2PGSCHEMA xmlvalidator --xsd $PDBX_VALIDATION_XSD --xml $XML_DIR --sync chk_sum_valid_xml $WELL_FORMED
  fi
 
 fi
