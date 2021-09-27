@@ -14,7 +14,7 @@
   <xsl:output method="xml" indent="yes"/>
   <xsl:strip-space elements="*"/>
   <xsl:variable name="FAM_ID"><xsl:value-of select="/PDBx:datablock/@datablockName"/></xsl:variable>
-  <xsl:variable name="base">http://rdf.wwpdb.org/prd/<xsl:value-of select="$FAM_ID"/></xsl:variable>
+  <xsl:variable name="base">http://rdf.wwpdb.org/fam/<xsl:value-of select="$FAM_ID"/></xsl:variable>
   <xsl:variable name="pdb_link">http://rdf.wwpdb.org/pdb/</xsl:variable>
   <xsl:variable name="chem_comp">http://rdf.wwpdb.org/cc/</xsl:variable>
   <xsl:variable name="prd">http://rdf.wwpdb.org/prd/</xsl:variable>
