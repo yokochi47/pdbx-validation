@@ -106,14 +106,20 @@ do
 
  find $SRC_DIR/$subdir -name "*.cif" > $cif_bird_file_list
 
- while read cif_bird_file
- do
+ for proc_id in `seq 1 $MAXPROCS` ; do
 
-  cif_basename=`basename $cif_bird_file .cif`
+  ./scripts/transl_to_pdbml_bird_worker.sh -d $DST_DIR -l $cif_bird_file_list -n $proc_id"of"$MAXPROCS &
 
-  ( cd $DST_DIR ; mmcif2XML -dictSdbFile $pdbx_sdb -funct mmcif2xml -dictName pdbx_mmcif.dic -ns PDBx -prefix pdbx-v50 -f ../../$cif_bird_file ; mv $cif_basename.cif.xml $cif_basename.xml )
+ done
 
- done < $cif_bird_file_list
+ if [ $? != 0 ] ; then
+
+  echo $0 aborted.
+  exit 1
+
+ fi
+
+ wait
 
  rm -f $cif_bird_file_list
 
