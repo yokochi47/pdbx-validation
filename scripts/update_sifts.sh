@@ -11,14 +11,18 @@ if [ ! `which aria2c` ] ; then
 fi
 
 MTIME=
+FULL_UPDATE=false
 
-ARGV=`getopt --long -o "m:" "$@"`
+ARGV=`getopt --long -o "m:f" "$@"`
 eval set -- "$ARGV"
 while true ; do
  case "$1" in
  -m)
   MTIME=$2
   shift
+ ;;
+ -f)
+  FULL_UPDATE=true
  ;;
  *)
   break
@@ -84,7 +88,9 @@ if [ $weekday -ge 1 ] && [ $weekday -le 4 ] ; then
  chk_sum_log=sifts_xml_log
 
  java -classpath $XSD2PGSCHEMA chksumstat --xml $SRC_DIR --xml-file-ext gz --sync $MD5_DIR --update --verbose > $chk_sum_log
-<<REMARK
+
+ if [ $FULL_UPDATE = "true" ] ; then
+
  if [ -d $PDBML_SIFTS ] ; then
   while read pdb_id ; do
    [ -z "$pdb_id" ] || [[ "$pdb_id" =~ ^#.* ]] && continue
@@ -203,7 +209,9 @@ if [ $weekday -ge 1 ] && [ $weekday -le 4 ] ; then
    rm -f $MMCIF_VALID/${pdb_id:1:2}/$pdb_id-validation-full.cif.gz
   done < $chk_sum_log
  fi
-REMARK
+
+ fi
+
  rm -f $chk_sum_log
 
 fi
