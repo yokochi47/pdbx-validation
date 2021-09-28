@@ -3,6 +3,7 @@
 source ./scripts/env.sh
 
 MTIME=
+FULL_UPDATE=false
 
 ARGV=`getopt --long -o "m:" "$@"`
 eval set -- "$ARGV"
@@ -11,6 +12,9 @@ while true ; do
  -m)
   MTIME=$2
   shift
+ ;;
+ -f)
+  FULL_UPDATE=true
  ;;
  *)
   break
@@ -131,6 +135,8 @@ if ( [ $weekday -ge 1 ] && [ $weekday -le 4 ] ) || [ ! -d $SRC_DIR ] ; then
   find $SRC_DIR -name "*_validation.xml.gz" -mtime $MTIME | cut -d '/' -f 4 | cut -d '_' -f 1 > $chk_sum_log
  fi
 
+ if [ $FULL_UPDATE = "true" ] ; then
+
  if [ -d $VALID_INFO_ALT ] ; then
   while read pdb_id ; do
    [ -z "$pdb_id" ] || [[ "$pdb_id" =~ ^#.* ]] && continue
@@ -220,6 +226,8 @@ if ( [ $weekday -ge 1 ] && [ $weekday -le 4 ] ) || [ ! -d $SRC_DIR ] ; then
    [ -z "$pdb_id" ] || [[ "$pdb_id" =~ ^#.* ]] && continue
    rm -f $MMCIF_VALID/${pdb_id:1:2}/$pdb_id-validation-full.cif.gz
   done < $chk_sum_log
+ fi
+
  fi
 
  rm -f $chk_sum_log
