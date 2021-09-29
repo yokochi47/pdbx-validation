@@ -83,7 +83,8 @@ do
 
    gunzip -c $info_alt_file.gz > $info_alt_file || exit 1
 
-   java -jar $SAXON -s:$pdbml_ext_file -xsl:$MERGE_PDBML_INFO_XSL -o:$pdbml_vrpt_file info_alt_file=../$info_alt_file 2> $err_file && rm -f $err_file $pdbml_ext_file $info_alt_file || ( rm -f $pdbml_ext_file $pdbml_vrpt_file $info_alt_file ; cat $err_file ; exit 1 )
+   xsltproc -o $pdbml_vrpt_file --stringparam info_alt_file ../$info_alt_file $MERGE_PDBML_INFO_XSL $pdbml_ext_file 2> $err_file && rm -f $err_file $pdbml_ext_file $info_alt_file || ( rm -f $pdbml_ext_file $pdbml_vrpt_file $info_alt_file ; cat $err_file ; exit 1 )
+   #java -jar $SAXON -s:$pdbml_ext_file -xsl:$MERGE_PDBML_INFO_XSL -o:$pdbml_vrpt_file info_alt_file=../$info_alt_file 2> $err_file && rm -f $err_file $pdbml_ext_file $info_alt_file || ( rm -f $pdbml_ext_file $pdbml_vrpt_file $info_alt_file ; cat $err_file ; exit 1 )
 
    xml_pretty $pdbml_vrpt_file
 

@@ -85,18 +85,22 @@ for pdbml_file in $WORK_DIR/$PDBML/*.xml ; do
  #echo
 
  if [ -e $sifts_xml_file ] && [ -s $sifts_xml_fil ] ; then
-  java -jar $SAXON -s:$pdbml_file -xsl:$MERGE_PDBML_SIFTS_XSL -o:$pdbml_sifts_file sifts_file=../$sifts_xml_file
+  xsltproc -o $pdbml_sifts_file --stringparam sifts_file ../$sifts_xml_file $MERGE_PDBML_SIFTS_XSL $pdbml_file
+  #java -jar $SAXON -s:$pdbml_file -xsl:$MERGE_PDBML_SIFTS_XSL -o:$pdbml_sifts_file sifts_file=../$sifts_xml_file
+
+  echo " generated: "$pdbml_sifts_file
+
  else
   cp -f $pdbml_file $pdbml_sifts_file
  fi
 
  rdf_file=$WORK_DIR/$RDF/$pdb_id.rdf
 
- if [ -z "$has_glycan" ] ; then
-  xsltproc -o $rdf_file --param wurcs2glytoucan $_WURCS_CATALOG_XML $PDBML2RDF_XSL $pdbml_sifts_file
- else
-  java -jar $SAXON -s:$pdbml_sifts_file -xsl:$PDBML2RDF_XSL -o:$rdf_file wurcs2glytoucan=$WURCS_CATALOG_XML || ( echo $0 aborted. ; exit 1 )
- fi
+ #if [ -z "$has_glycan" ] ; then
+  xsltproc -o $rdf_file --stringparam wurcs2glytoucan $WURCS_CATALOG_XML $PDBML2RDF_XSL $pdbml_sifts_file
+ #else
+ # java -jar $SAXON -s:$pdbml_sifts_file -xsl:$PDBML2RDF_XSL -o:$rdf_file wurcs2glytoucan=$WURCS_CATALOG_XML || ( echo $0 aborted. ; exit 1 )
+ #fi
 
  echo " generated: "$rdf_file
 

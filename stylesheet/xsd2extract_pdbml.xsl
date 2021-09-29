@@ -25,7 +25,7 @@
   <xsl2:template match="/xsd:schema">
     <xsl2:text disable-output-escaping="yes">
   &lt;xsl:param name="info_file" required="yes"/&gt;
-  &lt;xsl:param name="info" select="document($info_file)"/&gt;
+  &lt;xsl:param name="info_entry" select="document($info_file)/wwPDB-validation-information/Entry"/&gt;
 
   &lt;xsl:output method="xml" indent="yes"/&gt;
   &lt;xsl:strip-space elements="*"/&gt;
@@ -33,13 +33,13 @@
   &lt;xsl:variable name="entry_id"&gt;&lt;xsl:value-of select="/PDBx:datablock/PDBx:entryCategory/PDBx:entry/@id"/&gt;&lt;/xsl:variable&gt;
   &lt;xsl:variable name="datablock_name"&gt;&lt;xsl:value-of select="concat(/PDBx:datablock/@datablockName,'-ext')"/&gt;&lt;/xsl:variable&gt;
 
-  &lt;xsl:variable name="pdb_id"&gt;&lt;xsl:value-of select="$info/wwPDB-validation-information/Entry/@pdbid"/&gt;&lt;/xsl:variable&gt;
-  &lt;xsl:variable name="xml_creation_date"&gt;&lt;xsl:value-of select="$info/wwPDB-validation-information/Entry/@XMLcreationDate"/&gt;&lt;/xsl:variable&gt;
+  &lt;xsl:variable name="pdb_id"&gt;&lt;xsl:value-of select="$info_entry/@pdbid"/&gt;&lt;/xsl:variable&gt;
+  &lt;xsl:variable name="xml_creation_date"&gt;&lt;xsl:value-of select="$info_entry/@XMLcreationDate"/&gt;&lt;/xsl:variable&gt;
 
   &lt;xsl:variable name="validation_created_year"&gt;&lt;xsl:value-of select="substring($xml_creation_date,9,4)"/&gt;&lt;/xsl:variable&gt;
   &lt;xsl:variable name="validation_created_day"&gt;&lt;xsl:value-of select="translate(substring($xml_creation_date,5,2),' ','0')"/&gt;&lt;/xsl:variable&gt;
   &lt;xsl:variable name="validation_created_month"&gt;
-    &lt;xsl:variable name="month_name"&gt;&lt;xsl:value-of select="upper-case(substring($xml_creation_date,1,3))"/&gt;&lt;/xsl:variable&gt;
+    &lt;xsl:variable name="month_name"&gt;&lt;xsl:value-of select="translate(substring($xml_creation_date,1,3),'abcdefghijklmnopqrstuvwxyz','ABCDEFGHIJKLMNOPQRSTUVWXYZ')"/&gt;&lt;/xsl:variable&gt;
     &lt;xsl:choose&gt;
       &lt;xsl:when test="$month_name='JAN'"&gt;01&lt;/xsl:when&gt;
       &lt;xsl:when test="$month_name='FEB'"&gt;02&lt;/xsl:when&gt;
@@ -66,7 +66,7 @@ Month name, &lt;xsl:value-of select="$month_name"/&gt;, is not listed in XSLT co
 
   &lt;xsl:variable name="validation_created_date"&gt;&lt;xsl:value-of select="concat($validation_created_year,'-',$validation_created_month,'-',$validation_created_day)"/&gt;&lt;/xsl:variable&gt;
 
-  &lt;xsl:variable name="nmr_models_consistency_flag"&gt;&lt;xsl:value-of select="$info/wwPDB-validation-information/Entry/@nmr_models_consistency_flag"/&gt;&lt;/xsl:variable&gt;
+  &lt;xsl:variable name="nmr_models_consistency_flag"&gt;&lt;xsl:value-of select="$info_entry/@nmr_models_consistency_flag"/&gt;&lt;/xsl:variable&gt;
 
   &lt;xsl:template match="/"&gt;
 

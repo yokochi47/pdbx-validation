@@ -146,7 +146,8 @@ for pdbml_file in $WORK_DIR/$PDBML/*.xml ; do
  #echo
 
  if [ -e $sifts_xml_file ] && [ -s $sifts_xml_fil ] ; then
-  java -jar $SAXON -s:$pdbml_file -xsl:$MERGE_PDBML_SIFTS_XSL -o:$pdbml_sifts_file sifts_file=../$sifts_xml_file
+  xsltproc -o $pdbml_sifts_file --stringparam sifts_file ../$sifts_xml_file $MERGE_PDBML_SIFTS_XSL $pdbml_file
+  #java -jar $SAXON -s:$pdbml_file -xsl:$MERGE_PDBML_SIFTS_XSL -o:$pdbml_sifts_file sifts_file=../$sifts_xml_file
  else
   cp -f $pdbml_file $pdbml_sifts_file
  fi
@@ -154,7 +155,8 @@ for pdbml_file in $WORK_DIR/$PDBML/*.xml ; do
  pdbml_ext_file=$WORK_DIR/$PDBML_EXT/$pdb_id-noatom-ext.xml
  info_file=../$WORK_DIR/$VALID_INFO/$pdb_id"_validation.xml"
 
- java -jar $SAXON -s:$pdbml_sifts_file -xsl:$EXT_PDBML_XSL -o:$pdbml_ext_file info_file=$info_file || ( echo $0 aborted. ; exit 1 )
+ xsltproc -o $pdbml_ext_file --stringparam info_file $info_file $EXT_PDBML_XSL $pdbml_sifts_file || ( echo $0 aborted. ; exit 1 )
+ #java -jar $SAXON -s:$pdbml_sifts_file -xsl:$EXT_PDBML_XSL -o:$pdbml_ext_file info_file=$info_file || ( echo $0 aborted. ; exit 1 )
 
  echo " extracted: "$pdbml_ext_file
 
@@ -166,6 +168,7 @@ for pdbml_file in $WORK_DIR/$PDBML/*.xml ; do
  info_alt_file=$WORK_DIR/$VALID_INFO_ALT/$pdb_id-validation-alt.xml
  pdbml_ext_file=../$pdbml_ext_file # add relative path (../) from directory contains target styleseet
 
+ #xsltproc -o $info_alt_file --stringparam pdbml_ext_file $pdbml_ext_file $EXT_INFO_XSL $info_file || ( echo $0 aborted. ; exit 1 )
  java -jar $SAXON -s:$info_file -xsl:$EXT_INFO_XSL -o:$info_alt_file pdbml_ext_file=$pdbml_ext_file || ( echo $0 aborted. ; exit 1 )
 
  xml_pretty $info_alt_file
@@ -180,7 +183,8 @@ for pdbml_file in $WORK_DIR/$PDBML/*.xml ; do
  info_alt_file=../$info_alt_file # add relative path (../) from directory contains target stylesheet
  pdbml_vrpt_file=$WORK_DIR/$XML_VALID/$pdb_id-validation-full.xml
 
- java -jar $SAXON -s:$pdbml_ext_file -xsl:$MERGE_PDBML_INFO_XSL -o:$pdbml_vrpt_file info_alt_file=$info_alt_file || ( echo $0 aborted. ; exit 1 )
+ xsltproc -o $pdbml_vrpt_file --stringparam info_alt_file $info_alt_file $MERGE_PDBML_INFO_XSL $pdbml_ext_file || ( echo $0 aborted. ; exit 1 )
+ #java -jar $SAXON -s:$pdbml_ext_file -xsl:$MERGE_PDBML_INFO_XSL -o:$pdbml_vrpt_file info_alt_file=$info_alt_file || ( echo $0 aborted. ; exit 1 )
 
  xml_pretty $pdbml_vrpt_file
 
@@ -192,13 +196,13 @@ for pdbml_file in $WORK_DIR/$PDBML/*.xml ; do
 
  rdf_vrpt_file=$WORK_DIR/$RDF_VALID/$pdb_id-validation-full.rdf
  #has_glycan=`java -jar $SAXON -s:$pdbml_vrpt_file -xsl:$VRPTML2WURCS_XSL`
- has_glycan=`xsltproc $VRPTML2WURCS_XSL $pdbml_vrpt_file`
+ #has_glycan=`xsltproc $VRPTML2WURCS_XSL $pdbml_vrpt_file`
 
- if [ -z "$has_glycan" ] ; then
-  xsltproc -o $rdf_vrpt_file --param wurcs2glytoucan $_WURCS_CATALOG_XML $VRPTML2RDF_XSL $pdbml_vrpt_file || ( echo $0 aborted. ; exit 1 )
- else
-  java -jar $SAXON -s:$pdbml_vrpt_file -xsl:$VRPTML2RDF_XSL -o:$rdf_vrpt_file wurcs2glytoucan=$WURCS_CATALOG_XML || ( echo $0 aborted. ; exit 1 )
- fi
+ #if [ -z "$has_glycan" ] ; then
+  xsltproc -o $rdf_vrpt_file --stringparam wurcs2glytoucan $WURCS_CATALOG_XML $VRPTML2RDF_XSL $pdbml_vrpt_file || ( echo $0 aborted. ; exit 1 )
+ #else
+ # java -jar $SAXON -s:$pdbml_vrpt_file -xsl:$VRPTML2RDF_XSL -o:$rdf_vrpt_file wurcs2glytoucan=$WURCS_CATALOG_XML || ( echo $0 aborted. ; exit 1 )
+ #fi
 
  echo " generated: "$rdf_vrpt_file
 
@@ -210,7 +214,8 @@ for pdbml_file in $WORK_DIR/$PDBML/*.xml ; do
  info_alt_file=$WORK_DIR/$VALID_INFO_ALT/$pdb_id-validation-alt.xml
  rdf_vrpt_alt_file=$WORK_DIR/$RDF_VALID_ALT/$pdb_id-validation-alt.rdf
 
- java -jar $SAXON -s:$info_alt_file -xsl:$VRPTML2RDF_XSL -o:$rdf_vrpt_alt_file wurcs2glytoucan=$WURCS_CATALOG_XML || ( echo $0 aborted. ; exit 1 )
+ xsltproc -o $rdf_vrpt_alt_file --stringparam wurcs2glytoucan $WURCS_CATALOG_XML $VRPTML2RDF_XSL $info_alt_file || ( echo $0 aborted. ; exit 1 )
+ #java -jar $SAXON -s:$info_alt_file -xsl:$VRPTML2RDF_XSL -o:$rdf_vrpt_alt_file wurcs2glytoucan=$WURCS_CATALOG_XML || ( echo $0 aborted. ; exit 1 )
 
  echo " generated: "$rdf_vrpt_alt_file
 

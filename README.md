@@ -170,7 +170,7 @@ File path | Document
 
 ## Release notes
 
-- **Sep 27, 2021**: Release v4.4.0
+- **Sep 29, 2021**: Release v4.4.0
 	- Add resources for FAM/RDF.
 		- Update PDB/OWL, VRPT/OWL, XSLT codes to support external databases: CCDC, PubChem-Substance, ChemSpider, CAS, ChEBI, MeSH, ChEMBL, BindingDB, DrugBank, ChemDB.
 

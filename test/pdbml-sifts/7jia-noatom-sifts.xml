@@ -1,863 +1,854 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<PDBx:datablock xmlns:PDBx="http://pdbml.pdb.org/schema/pdbx-v50.xsd"
-                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                datablockName="7JIA-noatom"
-                xsi:schemaLocation="http://pdbml.pdb.org/schema/pdbx-v50.xsd pdbx-v50.xsd">
-   <PDBx:atom_sitesCategory>
-      <PDBx:atom_sites entry_id="7JIA">
-         <PDBx:fract_transf_matrix11>1.000000</PDBx:fract_transf_matrix11>
-         <PDBx:fract_transf_matrix12>0.000000</PDBx:fract_transf_matrix12>
-         <PDBx:fract_transf_matrix13>0.000000</PDBx:fract_transf_matrix13>
-         <PDBx:fract_transf_matrix21>0.000000</PDBx:fract_transf_matrix21>
-         <PDBx:fract_transf_matrix22>1.000000</PDBx:fract_transf_matrix22>
-         <PDBx:fract_transf_matrix23>0.000000</PDBx:fract_transf_matrix23>
-         <PDBx:fract_transf_matrix31>0.000000</PDBx:fract_transf_matrix31>
-         <PDBx:fract_transf_matrix32>0.000000</PDBx:fract_transf_matrix32>
-         <PDBx:fract_transf_matrix33>1.000000</PDBx:fract_transf_matrix33>
-         <PDBx:fract_transf_vector1>0.00000</PDBx:fract_transf_vector1>
-         <PDBx:fract_transf_vector2>0.00000</PDBx:fract_transf_vector2>
-         <PDBx:fract_transf_vector3>0.00000</PDBx:fract_transf_vector3>
-      </PDBx:atom_sites>
-   </PDBx:atom_sitesCategory>
-   <PDBx:atom_typeCategory>
-      <PDBx:atom_type symbol="C"/>
-      <PDBx:atom_type symbol="H"/>
-      <PDBx:atom_type symbol="N"/>
-      <PDBx:atom_type symbol="O"/>
-      <PDBx:atom_type symbol="S"/>
-   </PDBx:atom_typeCategory>
-   <PDBx:audit_authorCategory>
-      <PDBx:audit_author pdbx_ordinal="1">
-         <PDBx:name>Takjoo, R.</PDBx:name>
-      </PDBx:audit_author>
-      <PDBx:audit_author pdbx_ordinal="2">
-         <PDBx:name>Daly, N.L.</PDBx:name>
-      </PDBx:audit_author>
-   </PDBx:audit_authorCategory>
-   <PDBx:audit_conformCategory>
-      <PDBx:audit_conform dict_name="mmcif_pdbx.dic" dict_version="5.331">
-         <PDBx:dict_location>http://mmcif.pdb.org/dictionaries/ascii/mmcif_pdbx.dic</PDBx:dict_location>
-      </PDBx:audit_conform>
-   </PDBx:audit_conformCategory>
-   <PDBx:chem_compCategory>
-      <PDBx:chem_comp id="ASP">
-         <PDBx:formula>C4 H7 N O4</PDBx:formula>
-         <PDBx:formula_weight>133.103</PDBx:formula_weight>
-         <PDBx:mon_nstd_flag>y</PDBx:mon_nstd_flag>
-         <PDBx:name>ASPARTIC ACID</PDBx:name>
-         <PDBx:type>L-peptide linking</PDBx:type>
-      </PDBx:chem_comp>
-      <PDBx:chem_comp id="CYS">
-         <PDBx:formula>C3 H7 N O2 S</PDBx:formula>
-         <PDBx:formula_weight>121.158</PDBx:formula_weight>
-         <PDBx:mon_nstd_flag>y</PDBx:mon_nstd_flag>
-         <PDBx:name>CYSTEINE</PDBx:name>
-         <PDBx:type>L-peptide linking</PDBx:type>
-      </PDBx:chem_comp>
-      <PDBx:chem_comp id="GLN">
-         <PDBx:formula>C5 H10 N2 O3</PDBx:formula>
-         <PDBx:formula_weight>146.144</PDBx:formula_weight>
-         <PDBx:mon_nstd_flag>y</PDBx:mon_nstd_flag>
-         <PDBx:name>GLUTAMINE</PDBx:name>
-         <PDBx:type>L-peptide linking</PDBx:type>
-      </PDBx:chem_comp>
-      <PDBx:chem_comp id="GLU">
-         <PDBx:formula>C5 H9 N O4</PDBx:formula>
-         <PDBx:formula_weight>147.129</PDBx:formula_weight>
-         <PDBx:mon_nstd_flag>y</PDBx:mon_nstd_flag>
-         <PDBx:name>GLUTAMIC ACID</PDBx:name>
-         <PDBx:type>L-peptide linking</PDBx:type>
-      </PDBx:chem_comp>
-      <PDBx:chem_comp id="GLY">
-         <PDBx:formula>C2 H5 N O2</PDBx:formula>
-         <PDBx:formula_weight>75.067</PDBx:formula_weight>
-         <PDBx:mon_nstd_flag>y</PDBx:mon_nstd_flag>
-         <PDBx:name>GLYCINE</PDBx:name>
-         <PDBx:type>peptide linking</PDBx:type>
-      </PDBx:chem_comp>
-      <PDBx:chem_comp id="HIS">
-         <PDBx:formula>C6 H10 N3 O2 1</PDBx:formula>
-         <PDBx:formula_weight>156.162</PDBx:formula_weight>
-         <PDBx:mon_nstd_flag>y</PDBx:mon_nstd_flag>
-         <PDBx:name>HISTIDINE</PDBx:name>
-         <PDBx:type>L-peptide linking</PDBx:type>
-      </PDBx:chem_comp>
-      <PDBx:chem_comp id="PHE">
-         <PDBx:formula>C9 H11 N O2</PDBx:formula>
-         <PDBx:formula_weight>165.189</PDBx:formula_weight>
-         <PDBx:mon_nstd_flag>y</PDBx:mon_nstd_flag>
-         <PDBx:name>PHENYLALANINE</PDBx:name>
-         <PDBx:type>L-peptide linking</PDBx:type>
-      </PDBx:chem_comp>
-      <PDBx:chem_comp id="PRO">
-         <PDBx:formula>C5 H9 N O2</PDBx:formula>
-         <PDBx:formula_weight>115.130</PDBx:formula_weight>
-         <PDBx:mon_nstd_flag>y</PDBx:mon_nstd_flag>
-         <PDBx:name>PROLINE</PDBx:name>
-         <PDBx:type>L-peptide linking</PDBx:type>
-      </PDBx:chem_comp>
-      <PDBx:chem_comp id="SER">
-         <PDBx:formula>C3 H7 N O3</PDBx:formula>
-         <PDBx:formula_weight>105.093</PDBx:formula_weight>
-         <PDBx:mon_nstd_flag>y</PDBx:mon_nstd_flag>
-         <PDBx:name>SERINE</PDBx:name>
-         <PDBx:type>L-peptide linking</PDBx:type>
-      </PDBx:chem_comp>
-      <PDBx:chem_comp id="THR">
-         <PDBx:formula>C4 H9 N O3</PDBx:formula>
-         <PDBx:formula_weight>119.119</PDBx:formula_weight>
-         <PDBx:mon_nstd_flag>y</PDBx:mon_nstd_flag>
-         <PDBx:name>THREONINE</PDBx:name>
-         <PDBx:type>L-peptide linking</PDBx:type>
-      </PDBx:chem_comp>
-      <PDBx:chem_comp id="TRP">
-         <PDBx:formula>C11 H12 N2 O2</PDBx:formula>
-         <PDBx:formula_weight>204.225</PDBx:formula_weight>
-         <PDBx:mon_nstd_flag>y</PDBx:mon_nstd_flag>
-         <PDBx:name>TRYPTOPHAN</PDBx:name>
-         <PDBx:type>L-peptide linking</PDBx:type>
-      </PDBx:chem_comp>
-   </PDBx:chem_compCategory>
-   <PDBx:citationCategory>
-      <PDBx:citation id="primary">
-         <PDBx:country>CH</PDBx:country>
-         <PDBx:journal_abbrev>Biomolecules</PDBx:journal_abbrev>
-         <PDBx:journal_id_ISSN>2218-273X</PDBx:journal_id_ISSN>
-         <PDBx:journal_volume>10</PDBx:journal_volume>
-         <PDBx:pdbx_database_id_DOI>10.3390/biom10081152</PDBx:pdbx_database_id_DOI>
-         <PDBx:pdbx_database_id_PubMed>32781704</PDBx:pdbx_database_id_PubMed>
-         <PDBx:title>Folding of Truncated Granulin Peptides.</PDBx:title>
-         <PDBx:year>2020</PDBx:year>
-      </PDBx:citation>
-   </PDBx:citationCategory>
-   <PDBx:citation_authorCategory>
-      <PDBx:citation_author citation_id="primary" name="Takjoo, R." ordinal="1"/>
-      <PDBx:citation_author citation_id="primary" name="Wilson, D." ordinal="2"/>
-      <PDBx:citation_author citation_id="primary" name="Bansal, P.S." ordinal="3"/>
-      <PDBx:citation_author citation_id="primary" name="Loukas, A." ordinal="4"/>
-      <PDBx:citation_author citation_id="primary" name="Smout, M.J." ordinal="5">
-         <PDBx:identifier_ORCID>0000-0001-6937-0112</PDBx:identifier_ORCID>
-      </PDBx:citation_author>
-      <PDBx:citation_author citation_id="primary" name="Daly, N.L." ordinal="6">
-         <PDBx:identifier_ORCID>0000-0002-4697-6602</PDBx:identifier_ORCID>
-      </PDBx:citation_author>
-   </PDBx:citation_authorCategory>
-   <PDBx:database_2Category>
-      <PDBx:database_2 database_code="7JIA" database_id="PDB"/>
-      <PDBx:database_2 database_code="D_1000250829" database_id="WWPDB"/>
-      <PDBx:database_2 database_code="30780" database_id="BMRB"/>
-   </PDBx:database_2Category>
-   <PDBx:entityCategory>
-      <PDBx:entity id="1">
-         <PDBx:formula_weight>2441.677</PDBx:formula_weight>
-         <PDBx:pdbx_description>Granulin-A</PDBx:pdbx_description>
-         <PDBx:pdbx_number_of_molecules>1</PDBx:pdbx_number_of_molecules>
-         <PDBx:src_method>syn</PDBx:src_method>
-         <PDBx:type>polymer</PDBx:type>
-      </PDBx:entity>
-   </PDBx:entityCategory>
-   <PDBx:entity_polyCategory>
-      <PDBx:entity_poly entity_id="1">
-         <PDBx:nstd_linkage>no</PDBx:nstd_linkage>
-         <PDBx:nstd_monomer>no</PDBx:nstd_monomer>
-         <PDBx:pdbx_seq_one_letter_code>CGGGFSCHDGETCCPTSQTTWGCC</PDBx:pdbx_seq_one_letter_code>
-         <PDBx:pdbx_seq_one_letter_code_can>CGGGFSCHDGETCCPTSQTTWGCC</PDBx:pdbx_seq_one_letter_code_can>
-         <PDBx:pdbx_strand_id>A</PDBx:pdbx_strand_id>
-         <PDBx:type>polypeptide(L)</PDBx:type>
-      </PDBx:entity_poly>
-   </PDBx:entity_polyCategory>
-   <PDBx:entity_poly_seqCategory>
-      <PDBx:entity_poly_seq entity_id="1" mon_id="CYS" num="1">
-         <PDBx:hetero>n</PDBx:hetero>
-      </PDBx:entity_poly_seq>
-      <PDBx:entity_poly_seq entity_id="1" mon_id="GLY" num="2">
-         <PDBx:hetero>n</PDBx:hetero>
-      </PDBx:entity_poly_seq>
-      <PDBx:entity_poly_seq entity_id="1" mon_id="GLY" num="3">
-         <PDBx:hetero>n</PDBx:hetero>
-      </PDBx:entity_poly_seq>
-      <PDBx:entity_poly_seq entity_id="1" mon_id="GLY" num="4">
-         <PDBx:hetero>n</PDBx:hetero>
-      </PDBx:entity_poly_seq>
-      <PDBx:entity_poly_seq entity_id="1" mon_id="PHE" num="5">
-         <PDBx:hetero>n</PDBx:hetero>
-      </PDBx:entity_poly_seq>
-      <PDBx:entity_poly_seq entity_id="1" mon_id="SER" num="6">
-         <PDBx:hetero>n</PDBx:hetero>
-      </PDBx:entity_poly_seq>
-      <PDBx:entity_poly_seq entity_id="1" mon_id="CYS" num="7">
-         <PDBx:hetero>n</PDBx:hetero>
-      </PDBx:entity_poly_seq>
-      <PDBx:entity_poly_seq entity_id="1" mon_id="HIS" num="8">
-         <PDBx:hetero>n</PDBx:hetero>
-      </PDBx:entity_poly_seq>
-      <PDBx:entity_poly_seq entity_id="1" mon_id="ASP" num="9">
-         <PDBx:hetero>n</PDBx:hetero>
-      </PDBx:entity_poly_seq>
-      <PDBx:entity_poly_seq entity_id="1" mon_id="GLY" num="10">
-         <PDBx:hetero>n</PDBx:hetero>
-      </PDBx:entity_poly_seq>
-      <PDBx:entity_poly_seq entity_id="1" mon_id="GLU" num="11">
-         <PDBx:hetero>n</PDBx:hetero>
-      </PDBx:entity_poly_seq>
-      <PDBx:entity_poly_seq entity_id="1" mon_id="THR" num="12">
-         <PDBx:hetero>n</PDBx:hetero>
-      </PDBx:entity_poly_seq>
-      <PDBx:entity_poly_seq entity_id="1" mon_id="CYS" num="13">
-         <PDBx:hetero>n</PDBx:hetero>
-      </PDBx:entity_poly_seq>
-      <PDBx:entity_poly_seq entity_id="1" mon_id="CYS" num="14">
-         <PDBx:hetero>n</PDBx:hetero>
-      </PDBx:entity_poly_seq>
-      <PDBx:entity_poly_seq entity_id="1" mon_id="PRO" num="15">
-         <PDBx:hetero>n</PDBx:hetero>
-      </PDBx:entity_poly_seq>
-      <PDBx:entity_poly_seq entity_id="1" mon_id="THR" num="16">
-         <PDBx:hetero>n</PDBx:hetero>
-      </PDBx:entity_poly_seq>
-      <PDBx:entity_poly_seq entity_id="1" mon_id="SER" num="17">
-         <PDBx:hetero>n</PDBx:hetero>
-      </PDBx:entity_poly_seq>
-      <PDBx:entity_poly_seq entity_id="1" mon_id="GLN" num="18">
-         <PDBx:hetero>n</PDBx:hetero>
-      </PDBx:entity_poly_seq>
-      <PDBx:entity_poly_seq entity_id="1" mon_id="THR" num="19">
-         <PDBx:hetero>n</PDBx:hetero>
-      </PDBx:entity_poly_seq>
-      <PDBx:entity_poly_seq entity_id="1" mon_id="THR" num="20">
-         <PDBx:hetero>n</PDBx:hetero>
-      </PDBx:entity_poly_seq>
-      <PDBx:entity_poly_seq entity_id="1" mon_id="TRP" num="21">
-         <PDBx:hetero>n</PDBx:hetero>
-      </PDBx:entity_poly_seq>
-      <PDBx:entity_poly_seq entity_id="1" mon_id="GLY" num="22">
-         <PDBx:hetero>n</PDBx:hetero>
-      </PDBx:entity_poly_seq>
-      <PDBx:entity_poly_seq entity_id="1" mon_id="CYS" num="23">
-         <PDBx:hetero>n</PDBx:hetero>
-      </PDBx:entity_poly_seq>
-      <PDBx:entity_poly_seq entity_id="1" mon_id="CYS" num="24">
-         <PDBx:hetero>n</PDBx:hetero>
-      </PDBx:entity_poly_seq>
-   </PDBx:entity_poly_seqCategory>
-   <PDBx:entryCategory>
-      <PDBx:entry id="7JIA"/>
-   </PDBx:entryCategory>
-   <PDBx:exptlCategory>
-      <PDBx:exptl entry_id="7JIA" method="SOLUTION NMR"/>
-   </PDBx:exptlCategory>
-   <PDBx:pdbx_audit_revision_detailsCategory>
-      <PDBx:pdbx_audit_revision_details data_content_type="Structure model"
-                                        ordinal="1"
-                                        revision_ordinal="1">
-         <PDBx:provider>repository</PDBx:provider>
-         <PDBx:type>Initial release</PDBx:type>
-      </PDBx:pdbx_audit_revision_details>
-   </PDBx:pdbx_audit_revision_detailsCategory>
-   <PDBx:pdbx_audit_revision_historyCategory>
-      <PDBx:pdbx_audit_revision_history data_content_type="Structure model" ordinal="1">
-         <PDBx:major_revision>1</PDBx:major_revision>
-         <PDBx:minor_revision>0</PDBx:minor_revision>
-         <PDBx:revision_date>2020-08-26</PDBx:revision_date>
-      </PDBx:pdbx_audit_revision_history>
-   </PDBx:pdbx_audit_revision_historyCategory>
-   <PDBx:pdbx_database_relatedCategory>
-      <PDBx:pdbx_database_related content_type="unspecified" db_id="30780" db_name="BMRB">
-         <PDBx:details>Structure of truncated zebrafish granulin AaE</PDBx:details>
-      </PDBx:pdbx_database_related>
-   </PDBx:pdbx_database_relatedCategory>
-   <PDBx:pdbx_database_statusCategory>
-      <PDBx:pdbx_database_status entry_id="7JIA">
-         <PDBx:SG_entry>N</PDBx:SG_entry>
-         <PDBx:deposit_site>RCSB</PDBx:deposit_site>
-         <PDBx:pdb_format_compatible>Y</PDBx:pdb_format_compatible>
-         <PDBx:process_site>RCSB</PDBx:process_site>
-         <PDBx:recvd_initial_deposition_date>2020-07-23</PDBx:recvd_initial_deposition_date>
-         <PDBx:status_code>REL</PDBx:status_code>
-         <PDBx:status_code_nmr_data>REL</PDBx:status_code_nmr_data>
-      </PDBx:pdbx_database_status>
-   </PDBx:pdbx_database_statusCategory>
-   <PDBx:pdbx_entity_src_synCategory>
-      <PDBx:pdbx_entity_src_syn entity_id="1" pdbx_src_id="1">
-         <PDBx:ncbi_taxonomy_id>7955</PDBx:ncbi_taxonomy_id>
-         <PDBx:organism_common_name>Zebrafish</PDBx:organism_common_name>
-         <PDBx:organism_scientific>Danio rerio</PDBx:organism_scientific>
-         <PDBx:pdbx_alt_source_flag>sample</PDBx:pdbx_alt_source_flag>
-         <PDBx:pdbx_beg_seq_num>1</PDBx:pdbx_beg_seq_num>
-         <PDBx:pdbx_end_seq_num>24</PDBx:pdbx_end_seq_num>
-      </PDBx:pdbx_entity_src_syn>
-   </PDBx:pdbx_entity_src_synCategory>
-   <PDBx:pdbx_nmr_ensembleCategory>
-      <PDBx:pdbx_nmr_ensemble entry_id="7JIA">
-         <PDBx:conformer_selection_criteria>target function</PDBx:conformer_selection_criteria>
-         <PDBx:conformers_calculated_total_number>50</PDBx:conformers_calculated_total_number>
-         <PDBx:conformers_submitted_total_number>20</PDBx:conformers_submitted_total_number>
-      </PDBx:pdbx_nmr_ensemble>
-   </PDBx:pdbx_nmr_ensembleCategory>
-   <PDBx:pdbx_nmr_exptlCategory>
-      <PDBx:pdbx_nmr_exptl conditions_id="1" experiment_id="1" solution_id="1">
-         <PDBx:sample_state>isotropic</PDBx:sample_state>
-         <PDBx:spectrometer_id>1</PDBx:spectrometer_id>
-         <PDBx:type>2D 1H-1H TOCSY</PDBx:type>
-      </PDBx:pdbx_nmr_exptl>
-      <PDBx:pdbx_nmr_exptl conditions_id="1" experiment_id="2" solution_id="1">
-         <PDBx:sample_state>isotropic</PDBx:sample_state>
-         <PDBx:spectrometer_id>1</PDBx:spectrometer_id>
-         <PDBx:type>2D 1H-1H NOESY</PDBx:type>
-      </PDBx:pdbx_nmr_exptl>
-      <PDBx:pdbx_nmr_exptl conditions_id="1" experiment_id="3" solution_id="1">
-         <PDBx:sample_state>isotropic</PDBx:sample_state>
-         <PDBx:spectrometer_id>1</PDBx:spectrometer_id>
-         <PDBx:type>2D 1H-1H COSY</PDBx:type>
-      </PDBx:pdbx_nmr_exptl>
-      <PDBx:pdbx_nmr_exptl conditions_id="1" experiment_id="4" solution_id="1">
-         <PDBx:sample_state>isotropic</PDBx:sample_state>
-         <PDBx:spectrometer_id>1</PDBx:spectrometer_id>
-         <PDBx:type>2D 1H-13C HSQC</PDBx:type>
-      </PDBx:pdbx_nmr_exptl>
-      <PDBx:pdbx_nmr_exptl conditions_id="1" experiment_id="5" solution_id="1">
-         <PDBx:sample_state>isotropic</PDBx:sample_state>
-         <PDBx:spectrometer_id>1</PDBx:spectrometer_id>
-         <PDBx:type>2D 1H-15N HSQC</PDBx:type>
-      </PDBx:pdbx_nmr_exptl>
-   </PDBx:pdbx_nmr_exptlCategory>
-   <PDBx:pdbx_nmr_exptl_sampleCategory>
-      <PDBx:pdbx_nmr_exptl_sample component="ZF-N24_3s" solution_id="1">
-         <PDBx:concentration>0.2</PDBx:concentration>
-         <PDBx:concentration_units>mM</PDBx:concentration_units>
-         <PDBx:isotopic_labeling>natural abundance</PDBx:isotopic_labeling>
-      </PDBx:pdbx_nmr_exptl_sample>
-   </PDBx:pdbx_nmr_exptl_sampleCategory>
-   <PDBx:pdbx_nmr_exptl_sample_conditionsCategory>
-      <PDBx:pdbx_nmr_exptl_sample_conditions conditions_id="1">
-         <PDBx:ionic_strength>0</PDBx:ionic_strength>
-         <PDBx:ionic_strength_units>M</PDBx:ionic_strength_units>
-         <PDBx:label>1</PDBx:label>
-         <PDBx:pH>3</PDBx:pH>
-         <PDBx:pH_units>pH</PDBx:pH_units>
-         <PDBx:pressure>ambient</PDBx:pressure>
-         <PDBx:temperature>290</PDBx:temperature>
-         <PDBx:temperature_units>K</PDBx:temperature_units>
-      </PDBx:pdbx_nmr_exptl_sample_conditions>
-   </PDBx:pdbx_nmr_exptl_sample_conditionsCategory>
-   <PDBx:pdbx_nmr_refineCategory>
-      <PDBx:pdbx_nmr_refine entry_id="7JIA" software_ordinal="2">
-         <PDBx:method>torsion angle dynamics</PDBx:method>
-      </PDBx:pdbx_nmr_refine>
-   </PDBx:pdbx_nmr_refineCategory>
-   <PDBx:pdbx_nmr_representativeCategory>
-      <PDBx:pdbx_nmr_representative entry_id="7JIA">
-         <PDBx:conformer_id>1</PDBx:conformer_id>
-         <PDBx:selection_criteria>lowest energy</PDBx:selection_criteria>
-      </PDBx:pdbx_nmr_representative>
-   </PDBx:pdbx_nmr_representativeCategory>
-   <PDBx:pdbx_nmr_sample_detailsCategory>
-      <PDBx:pdbx_nmr_sample_details solution_id="1">
-         <PDBx:contents>0.2 mM ZF-N24_3s, 90% H2O/10% D2O</PDBx:contents>
-         <PDBx:label>1</PDBx:label>
-         <PDBx:solvent_system>90% H2O/10% D2O</PDBx:solvent_system>
-         <PDBx:type>solution</PDBx:type>
-      </PDBx:pdbx_nmr_sample_details>
-   </PDBx:pdbx_nmr_sample_detailsCategory>
-   <PDBx:pdbx_nmr_softwareCategory>
-      <PDBx:pdbx_nmr_software ordinal="1">
-         <PDBx:authors>Bruker Biospin</PDBx:authors>
-         <PDBx:classification>collection</PDBx:classification>
-         <PDBx:name>TopSpin</PDBx:name>
-      </PDBx:pdbx_nmr_software>
-      <PDBx:pdbx_nmr_software ordinal="3">
-         <PDBx:authors>CCPN</PDBx:authors>
-         <PDBx:classification>chemical shift assignment</PDBx:classification>
-         <PDBx:name>CcpNmr Analysis</PDBx:name>
-         <PDBx:version>2</PDBx:version>
-      </PDBx:pdbx_nmr_software>
-      <PDBx:pdbx_nmr_software ordinal="2">
-         <PDBx:authors>Guntert, Mumenthaler and Wuthrich</PDBx:authors>
-         <PDBx:classification>structure calculation</PDBx:classification>
-         <PDBx:name>CYANA</PDBx:name>
-      </PDBx:pdbx_nmr_software>
-   </PDBx:pdbx_nmr_softwareCategory>
-   <PDBx:pdbx_nmr_spectrometerCategory>
-      <PDBx:pdbx_nmr_spectrometer spectrometer_id="1">
-         <PDBx:field_strength>600</PDBx:field_strength>
-         <PDBx:manufacturer>Bruker</PDBx:manufacturer>
-         <PDBx:model>AVANCE</PDBx:model>
-      </PDBx:pdbx_nmr_spectrometer>
-   </PDBx:pdbx_nmr_spectrometerCategory>
-   <PDBx:pdbx_poly_seq_schemeCategory>
-      <PDBx:pdbx_poly_seq_scheme asym_id="A" entity_id="1" mon_id="CYS" seq_id="1">
-         <PDBx:auth_mon_id>CYS</PDBx:auth_mon_id>
-         <PDBx:auth_seq_num>1</PDBx:auth_seq_num>
-         <PDBx:hetero>n</PDBx:hetero>
-         <PDBx:ndb_seq_num>1</PDBx:ndb_seq_num>
-         <PDBx:pdb_ins_code xsi:nil="true"/>
-         <PDBx:pdb_mon_id>CYS</PDBx:pdb_mon_id>
-         <PDBx:pdb_seq_num>1</PDBx:pdb_seq_num>
-         <PDBx:pdb_strand_id>A</PDBx:pdb_strand_id>
-      </PDBx:pdbx_poly_seq_scheme>
-      <PDBx:pdbx_poly_seq_scheme asym_id="A" entity_id="1" mon_id="GLY" seq_id="2">
-         <PDBx:auth_mon_id>GLY</PDBx:auth_mon_id>
-         <PDBx:auth_seq_num>2</PDBx:auth_seq_num>
-         <PDBx:hetero>n</PDBx:hetero>
-         <PDBx:ndb_seq_num>2</PDBx:ndb_seq_num>
-         <PDBx:pdb_ins_code xsi:nil="true"/>
-         <PDBx:pdb_mon_id>GLY</PDBx:pdb_mon_id>
-         <PDBx:pdb_seq_num>2</PDBx:pdb_seq_num>
-         <PDBx:pdb_strand_id>A</PDBx:pdb_strand_id>
-      </PDBx:pdbx_poly_seq_scheme>
-      <PDBx:pdbx_poly_seq_scheme asym_id="A" entity_id="1" mon_id="GLY" seq_id="3">
-         <PDBx:auth_mon_id>GLY</PDBx:auth_mon_id>
-         <PDBx:auth_seq_num>3</PDBx:auth_seq_num>
-         <PDBx:hetero>n</PDBx:hetero>
-         <PDBx:ndb_seq_num>3</PDBx:ndb_seq_num>
-         <PDBx:pdb_ins_code xsi:nil="true"/>
-         <PDBx:pdb_mon_id>GLY</PDBx:pdb_mon_id>
-         <PDBx:pdb_seq_num>3</PDBx:pdb_seq_num>
-         <PDBx:pdb_strand_id>A</PDBx:pdb_strand_id>
-      </PDBx:pdbx_poly_seq_scheme>
-      <PDBx:pdbx_poly_seq_scheme asym_id="A" entity_id="1" mon_id="GLY" seq_id="4">
-         <PDBx:auth_mon_id>GLY</PDBx:auth_mon_id>
-         <PDBx:auth_seq_num>4</PDBx:auth_seq_num>
-         <PDBx:hetero>n</PDBx:hetero>
-         <PDBx:ndb_seq_num>4</PDBx:ndb_seq_num>
-         <PDBx:pdb_ins_code xsi:nil="true"/>
-         <PDBx:pdb_mon_id>GLY</PDBx:pdb_mon_id>
-         <PDBx:pdb_seq_num>4</PDBx:pdb_seq_num>
-         <PDBx:pdb_strand_id>A</PDBx:pdb_strand_id>
-      </PDBx:pdbx_poly_seq_scheme>
-      <PDBx:pdbx_poly_seq_scheme asym_id="A" entity_id="1" mon_id="PHE" seq_id="5">
-         <PDBx:auth_mon_id>PHE</PDBx:auth_mon_id>
-         <PDBx:auth_seq_num>5</PDBx:auth_seq_num>
-         <PDBx:hetero>n</PDBx:hetero>
-         <PDBx:ndb_seq_num>5</PDBx:ndb_seq_num>
-         <PDBx:pdb_ins_code xsi:nil="true"/>
-         <PDBx:pdb_mon_id>PHE</PDBx:pdb_mon_id>
-         <PDBx:pdb_seq_num>5</PDBx:pdb_seq_num>
-         <PDBx:pdb_strand_id>A</PDBx:pdb_strand_id>
-      </PDBx:pdbx_poly_seq_scheme>
-      <PDBx:pdbx_poly_seq_scheme asym_id="A" entity_id="1" mon_id="SER" seq_id="6">
-         <PDBx:auth_mon_id>SER</PDBx:auth_mon_id>
-         <PDBx:auth_seq_num>6</PDBx:auth_seq_num>
-         <PDBx:hetero>n</PDBx:hetero>
-         <PDBx:ndb_seq_num>6</PDBx:ndb_seq_num>
-         <PDBx:pdb_ins_code xsi:nil="true"/>
-         <PDBx:pdb_mon_id>SER</PDBx:pdb_mon_id>
-         <PDBx:pdb_seq_num>6</PDBx:pdb_seq_num>
-         <PDBx:pdb_strand_id>A</PDBx:pdb_strand_id>
-      </PDBx:pdbx_poly_seq_scheme>
-      <PDBx:pdbx_poly_seq_scheme asym_id="A" entity_id="1" mon_id="CYS" seq_id="7">
-         <PDBx:auth_mon_id>CYS</PDBx:auth_mon_id>
-         <PDBx:auth_seq_num>7</PDBx:auth_seq_num>
-         <PDBx:hetero>n</PDBx:hetero>
-         <PDBx:ndb_seq_num>7</PDBx:ndb_seq_num>
-         <PDBx:pdb_ins_code xsi:nil="true"/>
-         <PDBx:pdb_mon_id>CYS</PDBx:pdb_mon_id>
-         <PDBx:pdb_seq_num>7</PDBx:pdb_seq_num>
-         <PDBx:pdb_strand_id>A</PDBx:pdb_strand_id>
-      </PDBx:pdbx_poly_seq_scheme>
-      <PDBx:pdbx_poly_seq_scheme asym_id="A" entity_id="1" mon_id="HIS" seq_id="8">
-         <PDBx:auth_mon_id>HIS</PDBx:auth_mon_id>
-         <PDBx:auth_seq_num>8</PDBx:auth_seq_num>
-         <PDBx:hetero>n</PDBx:hetero>
-         <PDBx:ndb_seq_num>8</PDBx:ndb_seq_num>
-         <PDBx:pdb_ins_code xsi:nil="true"/>
-         <PDBx:pdb_mon_id>HIS</PDBx:pdb_mon_id>
-         <PDBx:pdb_seq_num>8</PDBx:pdb_seq_num>
-         <PDBx:pdb_strand_id>A</PDBx:pdb_strand_id>
-      </PDBx:pdbx_poly_seq_scheme>
-      <PDBx:pdbx_poly_seq_scheme asym_id="A" entity_id="1" mon_id="ASP" seq_id="9">
-         <PDBx:auth_mon_id>ASP</PDBx:auth_mon_id>
-         <PDBx:auth_seq_num>9</PDBx:auth_seq_num>
-         <PDBx:hetero>n</PDBx:hetero>
-         <PDBx:ndb_seq_num>9</PDBx:ndb_seq_num>
-         <PDBx:pdb_ins_code xsi:nil="true"/>
-         <PDBx:pdb_mon_id>ASP</PDBx:pdb_mon_id>
-         <PDBx:pdb_seq_num>9</PDBx:pdb_seq_num>
-         <PDBx:pdb_strand_id>A</PDBx:pdb_strand_id>
-      </PDBx:pdbx_poly_seq_scheme>
-      <PDBx:pdbx_poly_seq_scheme asym_id="A" entity_id="1" mon_id="GLY" seq_id="10">
-         <PDBx:auth_mon_id>GLY</PDBx:auth_mon_id>
-         <PDBx:auth_seq_num>10</PDBx:auth_seq_num>
-         <PDBx:hetero>n</PDBx:hetero>
-         <PDBx:ndb_seq_num>10</PDBx:ndb_seq_num>
-         <PDBx:pdb_ins_code xsi:nil="true"/>
-         <PDBx:pdb_mon_id>GLY</PDBx:pdb_mon_id>
-         <PDBx:pdb_seq_num>10</PDBx:pdb_seq_num>
-         <PDBx:pdb_strand_id>A</PDBx:pdb_strand_id>
-      </PDBx:pdbx_poly_seq_scheme>
-      <PDBx:pdbx_poly_seq_scheme asym_id="A" entity_id="1" mon_id="GLU" seq_id="11">
-         <PDBx:auth_mon_id>GLU</PDBx:auth_mon_id>
-         <PDBx:auth_seq_num>11</PDBx:auth_seq_num>
-         <PDBx:hetero>n</PDBx:hetero>
-         <PDBx:ndb_seq_num>11</PDBx:ndb_seq_num>
-         <PDBx:pdb_ins_code xsi:nil="true"/>
-         <PDBx:pdb_mon_id>GLU</PDBx:pdb_mon_id>
-         <PDBx:pdb_seq_num>11</PDBx:pdb_seq_num>
-         <PDBx:pdb_strand_id>A</PDBx:pdb_strand_id>
-      </PDBx:pdbx_poly_seq_scheme>
-      <PDBx:pdbx_poly_seq_scheme asym_id="A" entity_id="1" mon_id="THR" seq_id="12">
-         <PDBx:auth_mon_id>THR</PDBx:auth_mon_id>
-         <PDBx:auth_seq_num>12</PDBx:auth_seq_num>
-         <PDBx:hetero>n</PDBx:hetero>
-         <PDBx:ndb_seq_num>12</PDBx:ndb_seq_num>
-         <PDBx:pdb_ins_code xsi:nil="true"/>
-         <PDBx:pdb_mon_id>THR</PDBx:pdb_mon_id>
-         <PDBx:pdb_seq_num>12</PDBx:pdb_seq_num>
-         <PDBx:pdb_strand_id>A</PDBx:pdb_strand_id>
-      </PDBx:pdbx_poly_seq_scheme>
-      <PDBx:pdbx_poly_seq_scheme asym_id="A" entity_id="1" mon_id="CYS" seq_id="13">
-         <PDBx:auth_mon_id>CYS</PDBx:auth_mon_id>
-         <PDBx:auth_seq_num>13</PDBx:auth_seq_num>
-         <PDBx:hetero>n</PDBx:hetero>
-         <PDBx:ndb_seq_num>13</PDBx:ndb_seq_num>
-         <PDBx:pdb_ins_code xsi:nil="true"/>
-         <PDBx:pdb_mon_id>CYS</PDBx:pdb_mon_id>
-         <PDBx:pdb_seq_num>13</PDBx:pdb_seq_num>
-         <PDBx:pdb_strand_id>A</PDBx:pdb_strand_id>
-      </PDBx:pdbx_poly_seq_scheme>
-      <PDBx:pdbx_poly_seq_scheme asym_id="A" entity_id="1" mon_id="CYS" seq_id="14">
-         <PDBx:auth_mon_id>CYS</PDBx:auth_mon_id>
-         <PDBx:auth_seq_num>14</PDBx:auth_seq_num>
-         <PDBx:hetero>n</PDBx:hetero>
-         <PDBx:ndb_seq_num>14</PDBx:ndb_seq_num>
-         <PDBx:pdb_ins_code xsi:nil="true"/>
-         <PDBx:pdb_mon_id>CYS</PDBx:pdb_mon_id>
-         <PDBx:pdb_seq_num>14</PDBx:pdb_seq_num>
-         <PDBx:pdb_strand_id>A</PDBx:pdb_strand_id>
-      </PDBx:pdbx_poly_seq_scheme>
-      <PDBx:pdbx_poly_seq_scheme asym_id="A" entity_id="1" mon_id="PRO" seq_id="15">
-         <PDBx:auth_mon_id>PRO</PDBx:auth_mon_id>
-         <PDBx:auth_seq_num>15</PDBx:auth_seq_num>
-         <PDBx:hetero>n</PDBx:hetero>
-         <PDBx:ndb_seq_num>15</PDBx:ndb_seq_num>
-         <PDBx:pdb_ins_code xsi:nil="true"/>
-         <PDBx:pdb_mon_id>PRO</PDBx:pdb_mon_id>
-         <PDBx:pdb_seq_num>15</PDBx:pdb_seq_num>
-         <PDBx:pdb_strand_id>A</PDBx:pdb_strand_id>
-      </PDBx:pdbx_poly_seq_scheme>
-      <PDBx:pdbx_poly_seq_scheme asym_id="A" entity_id="1" mon_id="THR" seq_id="16">
-         <PDBx:auth_mon_id>THR</PDBx:auth_mon_id>
-         <PDBx:auth_seq_num>16</PDBx:auth_seq_num>
-         <PDBx:hetero>n</PDBx:hetero>
-         <PDBx:ndb_seq_num>16</PDBx:ndb_seq_num>
-         <PDBx:pdb_ins_code xsi:nil="true"/>
-         <PDBx:pdb_mon_id>THR</PDBx:pdb_mon_id>
-         <PDBx:pdb_seq_num>16</PDBx:pdb_seq_num>
-         <PDBx:pdb_strand_id>A</PDBx:pdb_strand_id>
-      </PDBx:pdbx_poly_seq_scheme>
-      <PDBx:pdbx_poly_seq_scheme asym_id="A" entity_id="1" mon_id="SER" seq_id="17">
-         <PDBx:auth_mon_id>SER</PDBx:auth_mon_id>
-         <PDBx:auth_seq_num>17</PDBx:auth_seq_num>
-         <PDBx:hetero>n</PDBx:hetero>
-         <PDBx:ndb_seq_num>17</PDBx:ndb_seq_num>
-         <PDBx:pdb_ins_code xsi:nil="true"/>
-         <PDBx:pdb_mon_id>SER</PDBx:pdb_mon_id>
-         <PDBx:pdb_seq_num>17</PDBx:pdb_seq_num>
-         <PDBx:pdb_strand_id>A</PDBx:pdb_strand_id>
-      </PDBx:pdbx_poly_seq_scheme>
-      <PDBx:pdbx_poly_seq_scheme asym_id="A" entity_id="1" mon_id="GLN" seq_id="18">
-         <PDBx:auth_mon_id>GLN</PDBx:auth_mon_id>
-         <PDBx:auth_seq_num>18</PDBx:auth_seq_num>
-         <PDBx:hetero>n</PDBx:hetero>
-         <PDBx:ndb_seq_num>18</PDBx:ndb_seq_num>
-         <PDBx:pdb_ins_code xsi:nil="true"/>
-         <PDBx:pdb_mon_id>GLN</PDBx:pdb_mon_id>
-         <PDBx:pdb_seq_num>18</PDBx:pdb_seq_num>
-         <PDBx:pdb_strand_id>A</PDBx:pdb_strand_id>
-      </PDBx:pdbx_poly_seq_scheme>
-      <PDBx:pdbx_poly_seq_scheme asym_id="A" entity_id="1" mon_id="THR" seq_id="19">
-         <PDBx:auth_mon_id>THR</PDBx:auth_mon_id>
-         <PDBx:auth_seq_num>19</PDBx:auth_seq_num>
-         <PDBx:hetero>n</PDBx:hetero>
-         <PDBx:ndb_seq_num>19</PDBx:ndb_seq_num>
-         <PDBx:pdb_ins_code xsi:nil="true"/>
-         <PDBx:pdb_mon_id>THR</PDBx:pdb_mon_id>
-         <PDBx:pdb_seq_num>19</PDBx:pdb_seq_num>
-         <PDBx:pdb_strand_id>A</PDBx:pdb_strand_id>
-      </PDBx:pdbx_poly_seq_scheme>
-      <PDBx:pdbx_poly_seq_scheme asym_id="A" entity_id="1" mon_id="THR" seq_id="20">
-         <PDBx:auth_mon_id>THR</PDBx:auth_mon_id>
-         <PDBx:auth_seq_num>20</PDBx:auth_seq_num>
-         <PDBx:hetero>n</PDBx:hetero>
-         <PDBx:ndb_seq_num>20</PDBx:ndb_seq_num>
-         <PDBx:pdb_ins_code xsi:nil="true"/>
-         <PDBx:pdb_mon_id>THR</PDBx:pdb_mon_id>
-         <PDBx:pdb_seq_num>20</PDBx:pdb_seq_num>
-         <PDBx:pdb_strand_id>A</PDBx:pdb_strand_id>
-      </PDBx:pdbx_poly_seq_scheme>
-      <PDBx:pdbx_poly_seq_scheme asym_id="A" entity_id="1" mon_id="TRP" seq_id="21">
-         <PDBx:auth_mon_id>TRP</PDBx:auth_mon_id>
-         <PDBx:auth_seq_num>21</PDBx:auth_seq_num>
-         <PDBx:hetero>n</PDBx:hetero>
-         <PDBx:ndb_seq_num>21</PDBx:ndb_seq_num>
-         <PDBx:pdb_ins_code xsi:nil="true"/>
-         <PDBx:pdb_mon_id>TRP</PDBx:pdb_mon_id>
-         <PDBx:pdb_seq_num>21</PDBx:pdb_seq_num>
-         <PDBx:pdb_strand_id>A</PDBx:pdb_strand_id>
-      </PDBx:pdbx_poly_seq_scheme>
-      <PDBx:pdbx_poly_seq_scheme asym_id="A" entity_id="1" mon_id="GLY" seq_id="22">
-         <PDBx:auth_mon_id>GLY</PDBx:auth_mon_id>
-         <PDBx:auth_seq_num>22</PDBx:auth_seq_num>
-         <PDBx:hetero>n</PDBx:hetero>
-         <PDBx:ndb_seq_num>22</PDBx:ndb_seq_num>
-         <PDBx:pdb_ins_code xsi:nil="true"/>
-         <PDBx:pdb_mon_id>GLY</PDBx:pdb_mon_id>
-         <PDBx:pdb_seq_num>22</PDBx:pdb_seq_num>
-         <PDBx:pdb_strand_id>A</PDBx:pdb_strand_id>
-      </PDBx:pdbx_poly_seq_scheme>
-      <PDBx:pdbx_poly_seq_scheme asym_id="A" entity_id="1" mon_id="CYS" seq_id="23">
-         <PDBx:auth_mon_id>CYS</PDBx:auth_mon_id>
-         <PDBx:auth_seq_num>23</PDBx:auth_seq_num>
-         <PDBx:hetero>n</PDBx:hetero>
-         <PDBx:ndb_seq_num>23</PDBx:ndb_seq_num>
-         <PDBx:pdb_ins_code xsi:nil="true"/>
-         <PDBx:pdb_mon_id>CYS</PDBx:pdb_mon_id>
-         <PDBx:pdb_seq_num>23</PDBx:pdb_seq_num>
-         <PDBx:pdb_strand_id>A</PDBx:pdb_strand_id>
-      </PDBx:pdbx_poly_seq_scheme>
-      <PDBx:pdbx_poly_seq_scheme asym_id="A" entity_id="1" mon_id="CYS" seq_id="24">
-         <PDBx:auth_mon_id>CYS</PDBx:auth_mon_id>
-         <PDBx:auth_seq_num>24</PDBx:auth_seq_num>
-         <PDBx:hetero>n</PDBx:hetero>
-         <PDBx:ndb_seq_num>24</PDBx:ndb_seq_num>
-         <PDBx:pdb_ins_code xsi:nil="true"/>
-         <PDBx:pdb_mon_id>CYS</PDBx:pdb_mon_id>
-         <PDBx:pdb_seq_num>24</PDBx:pdb_seq_num>
-         <PDBx:pdb_strand_id>A</PDBx:pdb_strand_id>
-      </PDBx:pdbx_poly_seq_scheme>
-   </PDBx:pdbx_poly_seq_schemeCategory>
-   <PDBx:pdbx_struct_assemblyCategory>
-      <PDBx:pdbx_struct_assembly id="1">
-         <PDBx:details>author_defined_assembly</PDBx:details>
-         <PDBx:oligomeric_count>1</PDBx:oligomeric_count>
-         <PDBx:oligomeric_details>monomeric</PDBx:oligomeric_details>
-      </PDBx:pdbx_struct_assembly>
-   </PDBx:pdbx_struct_assemblyCategory>
-   <PDBx:pdbx_struct_assembly_auth_evidenceCategory>
-      <PDBx:pdbx_struct_assembly_auth_evidence assembly_id="1" id="1">
-         <PDBx:experimental_support>none</PDBx:experimental_support>
-      </PDBx:pdbx_struct_assembly_auth_evidence>
-   </PDBx:pdbx_struct_assembly_auth_evidenceCategory>
-   <PDBx:pdbx_struct_assembly_genCategory>
-      <PDBx:pdbx_struct_assembly_gen assembly_id="1" asym_id_list="A" oper_expression="1"/>
-   </PDBx:pdbx_struct_assembly_genCategory>
-   <PDBx:pdbx_struct_oper_listCategory>
-      <PDBx:pdbx_struct_oper_list id="1">
-         <PDBx:matrix11>1.0000000000</PDBx:matrix11>
-         <PDBx:matrix12>0.0000000000</PDBx:matrix12>
-         <PDBx:matrix13>0.0000000000</PDBx:matrix13>
-         <PDBx:matrix21>0.0000000000</PDBx:matrix21>
-         <PDBx:matrix22>1.0000000000</PDBx:matrix22>
-         <PDBx:matrix23>0.0000000000</PDBx:matrix23>
-         <PDBx:matrix31>0.0000000000</PDBx:matrix31>
-         <PDBx:matrix32>0.0000000000</PDBx:matrix32>
-         <PDBx:matrix33>1.0000000000</PDBx:matrix33>
-         <PDBx:name>1_555</PDBx:name>
-         <PDBx:type>identity operation</PDBx:type>
-         <PDBx:vector1>0.0000000000</PDBx:vector1>
-         <PDBx:vector2>0.0000000000</PDBx:vector2>
-         <PDBx:vector3>0.0000000000</PDBx:vector3>
-      </PDBx:pdbx_struct_oper_list>
-   </PDBx:pdbx_struct_oper_listCategory>
-   <PDBx:pdbx_struct_sheet_hbondCategory>
-      <PDBx:pdbx_struct_sheet_hbond range_id_1="1" range_id_2="2" sheet_id="AA1">
-         <PDBx:range_1_auth_asym_id>A</PDBx:range_1_auth_asym_id>
-         <PDBx:range_1_auth_atom_id>N</PDBx:range_1_auth_atom_id>
-         <PDBx:range_1_auth_comp_id>CYS</PDBx:range_1_auth_comp_id>
-         <PDBx:range_1_auth_seq_id>14</PDBx:range_1_auth_seq_id>
-         <PDBx:range_1_label_asym_id>A</PDBx:range_1_label_asym_id>
-         <PDBx:range_1_label_atom_id>N</PDBx:range_1_label_atom_id>
-         <PDBx:range_1_label_comp_id>CYS</PDBx:range_1_label_comp_id>
-         <PDBx:range_1_label_seq_id>14</PDBx:range_1_label_seq_id>
-         <PDBx:range_2_auth_asym_id>A</PDBx:range_2_auth_asym_id>
-         <PDBx:range_2_auth_atom_id>O</PDBx:range_2_auth_atom_id>
-         <PDBx:range_2_auth_comp_id>GLY</PDBx:range_2_auth_comp_id>
-         <PDBx:range_2_auth_seq_id>22</PDBx:range_2_auth_seq_id>
-         <PDBx:range_2_label_asym_id>A</PDBx:range_2_label_asym_id>
-         <PDBx:range_2_label_atom_id>O</PDBx:range_2_label_atom_id>
-         <PDBx:range_2_label_comp_id>GLY</PDBx:range_2_label_comp_id>
-         <PDBx:range_2_label_seq_id>22</PDBx:range_2_label_seq_id>
-      </PDBx:pdbx_struct_sheet_hbond>
-   </PDBx:pdbx_struct_sheet_hbondCategory>
-   <PDBx:pdbx_validate_torsionCategory>
-      <PDBx:pdbx_validate_torsion id="1">
-         <PDBx:PDB_model_num>11</PDBx:PDB_model_num>
-         <PDBx:auth_asym_id>A</PDBx:auth_asym_id>
-         <PDBx:auth_comp_id>PHE</PDBx:auth_comp_id>
-         <PDBx:auth_seq_id>5</PDBx:auth_seq_id>
-         <PDBx:phi>-62.42</PDBx:phi>
-         <PDBx:psi>-176.15</PDBx:psi>
-      </PDBx:pdbx_validate_torsion>
-      <PDBx:pdbx_validate_torsion id="2">
-         <PDBx:PDB_model_num>19</PDBx:PDB_model_num>
-         <PDBx:auth_asym_id>A</PDBx:auth_asym_id>
-         <PDBx:auth_comp_id>SER</PDBx:auth_comp_id>
-         <PDBx:auth_seq_id>17</PDBx:auth_seq_id>
-         <PDBx:phi>-125.93</PDBx:phi>
-         <PDBx:psi>-169.82</PDBx:psi>
-      </PDBx:pdbx_validate_torsion>
-   </PDBx:pdbx_validate_torsionCategory>
-   <PDBx:structCategory>
-      <PDBx:struct entry_id="7JIA">
-         <PDBx:pdbx_CASP_flag>N</PDBx:pdbx_CASP_flag>
-         <PDBx:pdbx_descriptor>Granulin-A</PDBx:pdbx_descriptor>
-         <PDBx:title>Structure of truncated zebrafish granulin AaE</PDBx:title>
-      </PDBx:struct>
-   </PDBx:structCategory>
-   <PDBx:struct_asymCategory>
-      <PDBx:struct_asym id="A">
-         <PDBx:entity_id>1</PDBx:entity_id>
-         <PDBx:pdbx_blank_PDB_chainid_flag>N</PDBx:pdbx_blank_PDB_chainid_flag>
-         <PDBx:pdbx_modified>N</PDBx:pdbx_modified>
-      </PDBx:struct_asym>
-   </PDBx:struct_asymCategory>
-   <PDBx:struct_connCategory>
-      <PDBx:struct_conn id="disulf1">
-         <PDBx:conn_type_id>disulf</PDBx:conn_type_id>
-         <PDBx:pdbx_dist_value>2.046</PDBx:pdbx_dist_value>
-         <PDBx:ptnr1_auth_asym_id>A</PDBx:ptnr1_auth_asym_id>
-         <PDBx:ptnr1_auth_comp_id>CYS</PDBx:ptnr1_auth_comp_id>
-         <PDBx:ptnr1_auth_seq_id>1</PDBx:ptnr1_auth_seq_id>
-         <PDBx:ptnr1_label_asym_id>A</PDBx:ptnr1_label_asym_id>
-         <PDBx:ptnr1_label_atom_id>SG</PDBx:ptnr1_label_atom_id>
-         <PDBx:ptnr1_label_comp_id>CYS</PDBx:ptnr1_label_comp_id>
-         <PDBx:ptnr1_label_seq_id>1</PDBx:ptnr1_label_seq_id>
-         <PDBx:ptnr1_symmetry>1_555</PDBx:ptnr1_symmetry>
-         <PDBx:ptnr2_auth_asym_id>A</PDBx:ptnr2_auth_asym_id>
-         <PDBx:ptnr2_auth_comp_id>CYS</PDBx:ptnr2_auth_comp_id>
-         <PDBx:ptnr2_auth_seq_id>13</PDBx:ptnr2_auth_seq_id>
-         <PDBx:ptnr2_label_asym_id>A</PDBx:ptnr2_label_asym_id>
-         <PDBx:ptnr2_label_atom_id>SG</PDBx:ptnr2_label_atom_id>
-         <PDBx:ptnr2_label_comp_id>CYS</PDBx:ptnr2_label_comp_id>
-         <PDBx:ptnr2_label_seq_id>13</PDBx:ptnr2_label_seq_id>
-         <PDBx:ptnr2_symmetry>1_555</PDBx:ptnr2_symmetry>
-      </PDBx:struct_conn>
-      <PDBx:struct_conn id="disulf2">
-         <PDBx:conn_type_id>disulf</PDBx:conn_type_id>
-         <PDBx:pdbx_dist_value>2.005</PDBx:pdbx_dist_value>
-         <PDBx:ptnr1_auth_asym_id>A</PDBx:ptnr1_auth_asym_id>
-         <PDBx:ptnr1_auth_comp_id>CYS</PDBx:ptnr1_auth_comp_id>
-         <PDBx:ptnr1_auth_seq_id>7</PDBx:ptnr1_auth_seq_id>
-         <PDBx:ptnr1_label_asym_id>A</PDBx:ptnr1_label_asym_id>
-         <PDBx:ptnr1_label_atom_id>SG</PDBx:ptnr1_label_atom_id>
-         <PDBx:ptnr1_label_comp_id>CYS</PDBx:ptnr1_label_comp_id>
-         <PDBx:ptnr1_label_seq_id>7</PDBx:ptnr1_label_seq_id>
-         <PDBx:ptnr1_symmetry>1_555</PDBx:ptnr1_symmetry>
-         <PDBx:ptnr2_auth_asym_id>A</PDBx:ptnr2_auth_asym_id>
-         <PDBx:ptnr2_auth_comp_id>CYS</PDBx:ptnr2_auth_comp_id>
-         <PDBx:ptnr2_auth_seq_id>23</PDBx:ptnr2_auth_seq_id>
-         <PDBx:ptnr2_label_asym_id>A</PDBx:ptnr2_label_asym_id>
-         <PDBx:ptnr2_label_atom_id>SG</PDBx:ptnr2_label_atom_id>
-         <PDBx:ptnr2_label_comp_id>CYS</PDBx:ptnr2_label_comp_id>
-         <PDBx:ptnr2_label_seq_id>23</PDBx:ptnr2_label_seq_id>
-         <PDBx:ptnr2_symmetry>1_555</PDBx:ptnr2_symmetry>
-      </PDBx:struct_conn>
-      <PDBx:struct_conn id="disulf3">
-         <PDBx:conn_type_id>disulf</PDBx:conn_type_id>
-         <PDBx:pdbx_dist_value>2.008</PDBx:pdbx_dist_value>
-         <PDBx:ptnr1_auth_asym_id>A</PDBx:ptnr1_auth_asym_id>
-         <PDBx:ptnr1_auth_comp_id>CYS</PDBx:ptnr1_auth_comp_id>
-         <PDBx:ptnr1_auth_seq_id>14</PDBx:ptnr1_auth_seq_id>
-         <PDBx:ptnr1_label_asym_id>A</PDBx:ptnr1_label_asym_id>
-         <PDBx:ptnr1_label_atom_id>SG</PDBx:ptnr1_label_atom_id>
-         <PDBx:ptnr1_label_comp_id>CYS</PDBx:ptnr1_label_comp_id>
-         <PDBx:ptnr1_label_seq_id>14</PDBx:ptnr1_label_seq_id>
-         <PDBx:ptnr1_symmetry>1_555</PDBx:ptnr1_symmetry>
-         <PDBx:ptnr2_auth_asym_id>A</PDBx:ptnr2_auth_asym_id>
-         <PDBx:ptnr2_auth_comp_id>CYS</PDBx:ptnr2_auth_comp_id>
-         <PDBx:ptnr2_auth_seq_id>24</PDBx:ptnr2_auth_seq_id>
-         <PDBx:ptnr2_label_asym_id>A</PDBx:ptnr2_label_asym_id>
-         <PDBx:ptnr2_label_atom_id>SG</PDBx:ptnr2_label_atom_id>
-         <PDBx:ptnr2_label_comp_id>CYS</PDBx:ptnr2_label_comp_id>
-         <PDBx:ptnr2_label_seq_id>24</PDBx:ptnr2_label_seq_id>
-         <PDBx:ptnr2_symmetry>1_555</PDBx:ptnr2_symmetry>
-      </PDBx:struct_conn>
-   </PDBx:struct_connCategory>
-   <PDBx:struct_conn_typeCategory>
-      <PDBx:struct_conn_type id="disulf"/>
-   </PDBx:struct_conn_typeCategory>
-   <PDBx:struct_keywordsCategory>
-      <PDBx:struct_keywords entry_id="7JIA">
-         <PDBx:pdbx_keywords>SIGNALING PROTEIN</PDBx:pdbx_keywords>
-         <PDBx:text>disulfide-rich, growth factor, SIGNALING PROTEIN</PDBx:text>
-      </PDBx:struct_keywords>
-   </PDBx:struct_keywordsCategory>
-   <PDBx:struct_refCategory>
-      <PDBx:struct_ref id="1">
-         <PDBx:db_code>Q8QGN9_DANRE</PDBx:db_code>
-         <PDBx:db_name>UNP</PDBx:db_name>
-         <PDBx:entity_id>1</PDBx:entity_id>
-         <PDBx:pdbx_align_begin>796</PDBx:pdbx_align_begin>
-         <PDBx:pdbx_db_accession>Q8QGN9</PDBx:pdbx_db_accession>
-         <PDBx:pdbx_seq_one_letter_code>CGGGFSCHDGETCCPTSQTTWGCC</PDBx:pdbx_seq_one_letter_code>
-      </PDBx:struct_ref>
-   </PDBx:struct_refCategory>
-   <PDBx:struct_ref_seqCategory>
-      <PDBx:struct_ref_seq align_id="1">
-         <PDBx:db_align_beg>796</PDBx:db_align_beg>
-         <PDBx:db_align_end>819</PDBx:db_align_end>
-         <PDBx:pdbx_PDB_id_code>7JIA</PDBx:pdbx_PDB_id_code>
-         <PDBx:pdbx_auth_seq_align_beg>1</PDBx:pdbx_auth_seq_align_beg>
-         <PDBx:pdbx_auth_seq_align_end>24</PDBx:pdbx_auth_seq_align_end>
-         <PDBx:pdbx_db_accession>Q8QGN9</PDBx:pdbx_db_accession>
-         <PDBx:pdbx_strand_id>A</PDBx:pdbx_strand_id>
-         <PDBx:ref_id>1</PDBx:ref_id>
-         <PDBx:seq_align_beg>1</PDBx:seq_align_beg>
-         <PDBx:seq_align_end>24</PDBx:seq_align_end>
-      </PDBx:struct_ref_seq>
-   </PDBx:struct_ref_seqCategory>
-   <PDBx:struct_sheetCategory>
-      <PDBx:struct_sheet id="AA1">
-         <PDBx:number_strands>2</PDBx:number_strands>
-      </PDBx:struct_sheet>
-   </PDBx:struct_sheetCategory>
-   <PDBx:struct_sheet_orderCategory>
-      <PDBx:struct_sheet_order range_id_1="1" range_id_2="2" sheet_id="AA1">
-         <PDBx:sense>anti-parallel</PDBx:sense>
-      </PDBx:struct_sheet_order>
-   </PDBx:struct_sheet_orderCategory>
-   <PDBx:struct_sheet_rangeCategory>
-      <PDBx:struct_sheet_range id="1" sheet_id="AA1">
-         <PDBx:beg_auth_asym_id>A</PDBx:beg_auth_asym_id>
-         <PDBx:beg_auth_comp_id>THR</PDBx:beg_auth_comp_id>
-         <PDBx:beg_auth_seq_id>12</PDBx:beg_auth_seq_id>
-         <PDBx:beg_label_asym_id>A</PDBx:beg_label_asym_id>
-         <PDBx:beg_label_comp_id>THR</PDBx:beg_label_comp_id>
-         <PDBx:beg_label_seq_id>12</PDBx:beg_label_seq_id>
-         <PDBx:end_auth_asym_id>A</PDBx:end_auth_asym_id>
-         <PDBx:end_auth_comp_id>CYS</PDBx:end_auth_comp_id>
-         <PDBx:end_auth_seq_id>14</PDBx:end_auth_seq_id>
-         <PDBx:end_label_asym_id>A</PDBx:end_label_asym_id>
-         <PDBx:end_label_comp_id>CYS</PDBx:end_label_comp_id>
-         <PDBx:end_label_seq_id>14</PDBx:end_label_seq_id>
-      </PDBx:struct_sheet_range>
-      <PDBx:struct_sheet_range id="2" sheet_id="AA1">
-         <PDBx:beg_auth_asym_id>A</PDBx:beg_auth_asym_id>
-         <PDBx:beg_auth_comp_id>GLY</PDBx:beg_auth_comp_id>
-         <PDBx:beg_auth_seq_id>22</PDBx:beg_auth_seq_id>
-         <PDBx:beg_label_asym_id>A</PDBx:beg_label_asym_id>
-         <PDBx:beg_label_comp_id>GLY</PDBx:beg_label_comp_id>
-         <PDBx:beg_label_seq_id>22</PDBx:beg_label_seq_id>
-         <PDBx:end_auth_asym_id>A</PDBx:end_auth_asym_id>
-         <PDBx:end_auth_comp_id>CYS</PDBx:end_auth_comp_id>
-         <PDBx:end_auth_seq_id>24</PDBx:end_auth_seq_id>
-         <PDBx:end_label_asym_id>A</PDBx:end_label_asym_id>
-         <PDBx:end_label_comp_id>CYS</PDBx:end_label_comp_id>
-         <PDBx:end_label_seq_id>24</PDBx:end_label_seq_id>
-      </PDBx:struct_sheet_range>
-   </PDBx:struct_sheet_rangeCategory>
-   <PDBx:pdbx_sifts_unp_segmentsCategory>
-      <PDBx:pdbx_sifts_unp_segments entity_id="1"
-                                    asym_id="A"
-                                    unp_acc="Q8QGN9"
-                                    segment_id="1"
-                                    instance_id="1">
-         <PDBx:unp_start>796</PDBx:unp_start>
-         <PDBx:unp_end>819</PDBx:unp_end>
-         <PDBx:seq_id_start>1</PDBx:seq_id_start>
-         <PDBx:seq_id_end>24</PDBx:seq_id_end>
-         <PDBx:best_mapping>Y</PDBx:best_mapping>
-         <PDBx:identity>1.000</PDBx:identity>
-      </PDBx:pdbx_sifts_unp_segments>
-   </PDBx:pdbx_sifts_unp_segmentsCategory>
+<?xml version="1.0"?>
+<PDBx:datablock xmlns:PDBx="http://pdbml.pdb.org/schema/pdbx-v50.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" datablockName="7JIA-noatom" xsi:schemaLocation="http://pdbml.pdb.org/schema/pdbx-v50.xsd pdbx-v50.xsd">
+  <PDBx:atom_sitesCategory>
+    <PDBx:atom_sites entry_id="7JIA">
+      <PDBx:fract_transf_matrix11>1.000000</PDBx:fract_transf_matrix11>
+      <PDBx:fract_transf_matrix12>0.000000</PDBx:fract_transf_matrix12>
+      <PDBx:fract_transf_matrix13>0.000000</PDBx:fract_transf_matrix13>
+      <PDBx:fract_transf_matrix21>0.000000</PDBx:fract_transf_matrix21>
+      <PDBx:fract_transf_matrix22>1.000000</PDBx:fract_transf_matrix22>
+      <PDBx:fract_transf_matrix23>0.000000</PDBx:fract_transf_matrix23>
+      <PDBx:fract_transf_matrix31>0.000000</PDBx:fract_transf_matrix31>
+      <PDBx:fract_transf_matrix32>0.000000</PDBx:fract_transf_matrix32>
+      <PDBx:fract_transf_matrix33>1.000000</PDBx:fract_transf_matrix33>
+      <PDBx:fract_transf_vector1>0.00000</PDBx:fract_transf_vector1>
+      <PDBx:fract_transf_vector2>0.00000</PDBx:fract_transf_vector2>
+      <PDBx:fract_transf_vector3>0.00000</PDBx:fract_transf_vector3>
+    </PDBx:atom_sites>
+  </PDBx:atom_sitesCategory>
+  <PDBx:atom_typeCategory>
+    <PDBx:atom_type symbol="C"/>
+    <PDBx:atom_type symbol="H"/>
+    <PDBx:atom_type symbol="N"/>
+    <PDBx:atom_type symbol="O"/>
+    <PDBx:atom_type symbol="S"/>
+  </PDBx:atom_typeCategory>
+  <PDBx:audit_authorCategory>
+    <PDBx:audit_author pdbx_ordinal="1">
+      <PDBx:name>Takjoo, R.</PDBx:name>
+    </PDBx:audit_author>
+    <PDBx:audit_author pdbx_ordinal="2">
+      <PDBx:name>Daly, N.L.</PDBx:name>
+    </PDBx:audit_author>
+  </PDBx:audit_authorCategory>
+  <PDBx:audit_conformCategory>
+    <PDBx:audit_conform dict_name="mmcif_pdbx.dic" dict_version="5.331">
+      <PDBx:dict_location>http://mmcif.pdb.org/dictionaries/ascii/mmcif_pdbx.dic</PDBx:dict_location>
+    </PDBx:audit_conform>
+  </PDBx:audit_conformCategory>
+  <PDBx:chem_compCategory>
+    <PDBx:chem_comp id="ASP">
+      <PDBx:formula>C4 H7 N O4</PDBx:formula>
+      <PDBx:formula_weight>133.103</PDBx:formula_weight>
+      <PDBx:mon_nstd_flag>y</PDBx:mon_nstd_flag>
+      <PDBx:name>ASPARTIC ACID</PDBx:name>
+      <PDBx:type>L-peptide linking</PDBx:type>
+    </PDBx:chem_comp>
+    <PDBx:chem_comp id="CYS">
+      <PDBx:formula>C3 H7 N O2 S</PDBx:formula>
+      <PDBx:formula_weight>121.158</PDBx:formula_weight>
+      <PDBx:mon_nstd_flag>y</PDBx:mon_nstd_flag>
+      <PDBx:name>CYSTEINE</PDBx:name>
+      <PDBx:type>L-peptide linking</PDBx:type>
+    </PDBx:chem_comp>
+    <PDBx:chem_comp id="GLN">
+      <PDBx:formula>C5 H10 N2 O3</PDBx:formula>
+      <PDBx:formula_weight>146.144</PDBx:formula_weight>
+      <PDBx:mon_nstd_flag>y</PDBx:mon_nstd_flag>
+      <PDBx:name>GLUTAMINE</PDBx:name>
+      <PDBx:type>L-peptide linking</PDBx:type>
+    </PDBx:chem_comp>
+    <PDBx:chem_comp id="GLU">
+      <PDBx:formula>C5 H9 N O4</PDBx:formula>
+      <PDBx:formula_weight>147.129</PDBx:formula_weight>
+      <PDBx:mon_nstd_flag>y</PDBx:mon_nstd_flag>
+      <PDBx:name>GLUTAMIC ACID</PDBx:name>
+      <PDBx:type>L-peptide linking</PDBx:type>
+    </PDBx:chem_comp>
+    <PDBx:chem_comp id="GLY">
+      <PDBx:formula>C2 H5 N O2</PDBx:formula>
+      <PDBx:formula_weight>75.067</PDBx:formula_weight>
+      <PDBx:mon_nstd_flag>y</PDBx:mon_nstd_flag>
+      <PDBx:name>GLYCINE</PDBx:name>
+      <PDBx:type>peptide linking</PDBx:type>
+    </PDBx:chem_comp>
+    <PDBx:chem_comp id="HIS">
+      <PDBx:formula>C6 H10 N3 O2 1</PDBx:formula>
+      <PDBx:formula_weight>156.162</PDBx:formula_weight>
+      <PDBx:mon_nstd_flag>y</PDBx:mon_nstd_flag>
+      <PDBx:name>HISTIDINE</PDBx:name>
+      <PDBx:type>L-peptide linking</PDBx:type>
+    </PDBx:chem_comp>
+    <PDBx:chem_comp id="PHE">
+      <PDBx:formula>C9 H11 N O2</PDBx:formula>
+      <PDBx:formula_weight>165.189</PDBx:formula_weight>
+      <PDBx:mon_nstd_flag>y</PDBx:mon_nstd_flag>
+      <PDBx:name>PHENYLALANINE</PDBx:name>
+      <PDBx:type>L-peptide linking</PDBx:type>
+    </PDBx:chem_comp>
+    <PDBx:chem_comp id="PRO">
+      <PDBx:formula>C5 H9 N O2</PDBx:formula>
+      <PDBx:formula_weight>115.130</PDBx:formula_weight>
+      <PDBx:mon_nstd_flag>y</PDBx:mon_nstd_flag>
+      <PDBx:name>PROLINE</PDBx:name>
+      <PDBx:type>L-peptide linking</PDBx:type>
+    </PDBx:chem_comp>
+    <PDBx:chem_comp id="SER">
+      <PDBx:formula>C3 H7 N O3</PDBx:formula>
+      <PDBx:formula_weight>105.093</PDBx:formula_weight>
+      <PDBx:mon_nstd_flag>y</PDBx:mon_nstd_flag>
+      <PDBx:name>SERINE</PDBx:name>
+      <PDBx:type>L-peptide linking</PDBx:type>
+    </PDBx:chem_comp>
+    <PDBx:chem_comp id="THR">
+      <PDBx:formula>C4 H9 N O3</PDBx:formula>
+      <PDBx:formula_weight>119.119</PDBx:formula_weight>
+      <PDBx:mon_nstd_flag>y</PDBx:mon_nstd_flag>
+      <PDBx:name>THREONINE</PDBx:name>
+      <PDBx:type>L-peptide linking</PDBx:type>
+    </PDBx:chem_comp>
+    <PDBx:chem_comp id="TRP">
+      <PDBx:formula>C11 H12 N2 O2</PDBx:formula>
+      <PDBx:formula_weight>204.225</PDBx:formula_weight>
+      <PDBx:mon_nstd_flag>y</PDBx:mon_nstd_flag>
+      <PDBx:name>TRYPTOPHAN</PDBx:name>
+      <PDBx:type>L-peptide linking</PDBx:type>
+    </PDBx:chem_comp>
+  </PDBx:chem_compCategory>
+  <PDBx:citationCategory>
+    <PDBx:citation id="primary">
+      <PDBx:country>CH</PDBx:country>
+      <PDBx:journal_abbrev>Biomolecules</PDBx:journal_abbrev>
+      <PDBx:journal_id_ISSN>2218-273X</PDBx:journal_id_ISSN>
+      <PDBx:journal_volume>10</PDBx:journal_volume>
+      <PDBx:pdbx_database_id_DOI>10.3390/biom10081152</PDBx:pdbx_database_id_DOI>
+      <PDBx:pdbx_database_id_PubMed>32781704</PDBx:pdbx_database_id_PubMed>
+      <PDBx:title>Folding of Truncated Granulin Peptides.</PDBx:title>
+      <PDBx:year>2020</PDBx:year>
+    </PDBx:citation>
+  </PDBx:citationCategory>
+  <PDBx:citation_authorCategory>
+    <PDBx:citation_author citation_id="primary" name="Takjoo, R." ordinal="1"/>
+    <PDBx:citation_author citation_id="primary" name="Wilson, D." ordinal="2"/>
+    <PDBx:citation_author citation_id="primary" name="Bansal, P.S." ordinal="3"/>
+    <PDBx:citation_author citation_id="primary" name="Loukas, A." ordinal="4"/>
+    <PDBx:citation_author citation_id="primary" name="Smout, M.J." ordinal="5">
+      <PDBx:identifier_ORCID>0000-0001-6937-0112</PDBx:identifier_ORCID>
+    </PDBx:citation_author>
+    <PDBx:citation_author citation_id="primary" name="Daly, N.L." ordinal="6">
+      <PDBx:identifier_ORCID>0000-0002-4697-6602</PDBx:identifier_ORCID>
+    </PDBx:citation_author>
+  </PDBx:citation_authorCategory>
+  <PDBx:database_2Category>
+    <PDBx:database_2 database_code="7JIA" database_id="PDB"/>
+    <PDBx:database_2 database_code="D_1000250829" database_id="WWPDB"/>
+    <PDBx:database_2 database_code="30780" database_id="BMRB"/>
+  </PDBx:database_2Category>
+  <PDBx:entityCategory>
+    <PDBx:entity id="1">
+      <PDBx:formula_weight>2441.677</PDBx:formula_weight>
+      <PDBx:pdbx_description>Granulin-A</PDBx:pdbx_description>
+      <PDBx:pdbx_number_of_molecules>1</PDBx:pdbx_number_of_molecules>
+      <PDBx:src_method>syn</PDBx:src_method>
+      <PDBx:type>polymer</PDBx:type>
+    </PDBx:entity>
+  </PDBx:entityCategory>
+  <PDBx:entity_polyCategory>
+    <PDBx:entity_poly entity_id="1">
+      <PDBx:nstd_linkage>no</PDBx:nstd_linkage>
+      <PDBx:nstd_monomer>no</PDBx:nstd_monomer>
+      <PDBx:pdbx_seq_one_letter_code>CGGGFSCHDGETCCPTSQTTWGCC</PDBx:pdbx_seq_one_letter_code>
+      <PDBx:pdbx_seq_one_letter_code_can>CGGGFSCHDGETCCPTSQTTWGCC</PDBx:pdbx_seq_one_letter_code_can>
+      <PDBx:pdbx_strand_id>A</PDBx:pdbx_strand_id>
+      <PDBx:type>polypeptide(L)</PDBx:type>
+    </PDBx:entity_poly>
+  </PDBx:entity_polyCategory>
+  <PDBx:entity_poly_seqCategory>
+    <PDBx:entity_poly_seq entity_id="1" mon_id="CYS" num="1">
+      <PDBx:hetero>n</PDBx:hetero>
+    </PDBx:entity_poly_seq>
+    <PDBx:entity_poly_seq entity_id="1" mon_id="GLY" num="2">
+      <PDBx:hetero>n</PDBx:hetero>
+    </PDBx:entity_poly_seq>
+    <PDBx:entity_poly_seq entity_id="1" mon_id="GLY" num="3">
+      <PDBx:hetero>n</PDBx:hetero>
+    </PDBx:entity_poly_seq>
+    <PDBx:entity_poly_seq entity_id="1" mon_id="GLY" num="4">
+      <PDBx:hetero>n</PDBx:hetero>
+    </PDBx:entity_poly_seq>
+    <PDBx:entity_poly_seq entity_id="1" mon_id="PHE" num="5">
+      <PDBx:hetero>n</PDBx:hetero>
+    </PDBx:entity_poly_seq>
+    <PDBx:entity_poly_seq entity_id="1" mon_id="SER" num="6">
+      <PDBx:hetero>n</PDBx:hetero>
+    </PDBx:entity_poly_seq>
+    <PDBx:entity_poly_seq entity_id="1" mon_id="CYS" num="7">
+      <PDBx:hetero>n</PDBx:hetero>
+    </PDBx:entity_poly_seq>
+    <PDBx:entity_poly_seq entity_id="1" mon_id="HIS" num="8">
+      <PDBx:hetero>n</PDBx:hetero>
+    </PDBx:entity_poly_seq>
+    <PDBx:entity_poly_seq entity_id="1" mon_id="ASP" num="9">
+      <PDBx:hetero>n</PDBx:hetero>
+    </PDBx:entity_poly_seq>
+    <PDBx:entity_poly_seq entity_id="1" mon_id="GLY" num="10">
+      <PDBx:hetero>n</PDBx:hetero>
+    </PDBx:entity_poly_seq>
+    <PDBx:entity_poly_seq entity_id="1" mon_id="GLU" num="11">
+      <PDBx:hetero>n</PDBx:hetero>
+    </PDBx:entity_poly_seq>
+    <PDBx:entity_poly_seq entity_id="1" mon_id="THR" num="12">
+      <PDBx:hetero>n</PDBx:hetero>
+    </PDBx:entity_poly_seq>
+    <PDBx:entity_poly_seq entity_id="1" mon_id="CYS" num="13">
+      <PDBx:hetero>n</PDBx:hetero>
+    </PDBx:entity_poly_seq>
+    <PDBx:entity_poly_seq entity_id="1" mon_id="CYS" num="14">
+      <PDBx:hetero>n</PDBx:hetero>
+    </PDBx:entity_poly_seq>
+    <PDBx:entity_poly_seq entity_id="1" mon_id="PRO" num="15">
+      <PDBx:hetero>n</PDBx:hetero>
+    </PDBx:entity_poly_seq>
+    <PDBx:entity_poly_seq entity_id="1" mon_id="THR" num="16">
+      <PDBx:hetero>n</PDBx:hetero>
+    </PDBx:entity_poly_seq>
+    <PDBx:entity_poly_seq entity_id="1" mon_id="SER" num="17">
+      <PDBx:hetero>n</PDBx:hetero>
+    </PDBx:entity_poly_seq>
+    <PDBx:entity_poly_seq entity_id="1" mon_id="GLN" num="18">
+      <PDBx:hetero>n</PDBx:hetero>
+    </PDBx:entity_poly_seq>
+    <PDBx:entity_poly_seq entity_id="1" mon_id="THR" num="19">
+      <PDBx:hetero>n</PDBx:hetero>
+    </PDBx:entity_poly_seq>
+    <PDBx:entity_poly_seq entity_id="1" mon_id="THR" num="20">
+      <PDBx:hetero>n</PDBx:hetero>
+    </PDBx:entity_poly_seq>
+    <PDBx:entity_poly_seq entity_id="1" mon_id="TRP" num="21">
+      <PDBx:hetero>n</PDBx:hetero>
+    </PDBx:entity_poly_seq>
+    <PDBx:entity_poly_seq entity_id="1" mon_id="GLY" num="22">
+      <PDBx:hetero>n</PDBx:hetero>
+    </PDBx:entity_poly_seq>
+    <PDBx:entity_poly_seq entity_id="1" mon_id="CYS" num="23">
+      <PDBx:hetero>n</PDBx:hetero>
+    </PDBx:entity_poly_seq>
+    <PDBx:entity_poly_seq entity_id="1" mon_id="CYS" num="24">
+      <PDBx:hetero>n</PDBx:hetero>
+    </PDBx:entity_poly_seq>
+  </PDBx:entity_poly_seqCategory>
+  <PDBx:entryCategory>
+    <PDBx:entry id="7JIA"/>
+  </PDBx:entryCategory>
+  <PDBx:exptlCategory>
+    <PDBx:exptl entry_id="7JIA" method="SOLUTION NMR"/>
+  </PDBx:exptlCategory>
+  <PDBx:pdbx_audit_revision_detailsCategory>
+    <PDBx:pdbx_audit_revision_details data_content_type="Structure model" ordinal="1" revision_ordinal="1">
+      <PDBx:provider>repository</PDBx:provider>
+      <PDBx:type>Initial release</PDBx:type>
+    </PDBx:pdbx_audit_revision_details>
+  </PDBx:pdbx_audit_revision_detailsCategory>
+  <PDBx:pdbx_audit_revision_historyCategory>
+    <PDBx:pdbx_audit_revision_history data_content_type="Structure model" ordinal="1">
+      <PDBx:major_revision>1</PDBx:major_revision>
+      <PDBx:minor_revision>0</PDBx:minor_revision>
+      <PDBx:revision_date>2020-08-26</PDBx:revision_date>
+    </PDBx:pdbx_audit_revision_history>
+  </PDBx:pdbx_audit_revision_historyCategory>
+  <PDBx:pdbx_database_relatedCategory>
+    <PDBx:pdbx_database_related content_type="unspecified" db_id="30780" db_name="BMRB">
+      <PDBx:details>Structure of truncated zebrafish granulin AaE</PDBx:details>
+    </PDBx:pdbx_database_related>
+  </PDBx:pdbx_database_relatedCategory>
+  <PDBx:pdbx_database_statusCategory>
+    <PDBx:pdbx_database_status entry_id="7JIA">
+      <PDBx:SG_entry>N</PDBx:SG_entry>
+      <PDBx:deposit_site>RCSB</PDBx:deposit_site>
+      <PDBx:pdb_format_compatible>Y</PDBx:pdb_format_compatible>
+      <PDBx:process_site>RCSB</PDBx:process_site>
+      <PDBx:recvd_initial_deposition_date>2020-07-23</PDBx:recvd_initial_deposition_date>
+      <PDBx:status_code>REL</PDBx:status_code>
+      <PDBx:status_code_nmr_data>REL</PDBx:status_code_nmr_data>
+    </PDBx:pdbx_database_status>
+  </PDBx:pdbx_database_statusCategory>
+  <PDBx:pdbx_entity_src_synCategory>
+    <PDBx:pdbx_entity_src_syn entity_id="1" pdbx_src_id="1">
+      <PDBx:ncbi_taxonomy_id>7955</PDBx:ncbi_taxonomy_id>
+      <PDBx:organism_common_name>Zebrafish</PDBx:organism_common_name>
+      <PDBx:organism_scientific>Danio rerio</PDBx:organism_scientific>
+      <PDBx:pdbx_alt_source_flag>sample</PDBx:pdbx_alt_source_flag>
+      <PDBx:pdbx_beg_seq_num>1</PDBx:pdbx_beg_seq_num>
+      <PDBx:pdbx_end_seq_num>24</PDBx:pdbx_end_seq_num>
+    </PDBx:pdbx_entity_src_syn>
+  </PDBx:pdbx_entity_src_synCategory>
+  <PDBx:pdbx_nmr_ensembleCategory>
+    <PDBx:pdbx_nmr_ensemble entry_id="7JIA">
+      <PDBx:conformer_selection_criteria>target function</PDBx:conformer_selection_criteria>
+      <PDBx:conformers_calculated_total_number>50</PDBx:conformers_calculated_total_number>
+      <PDBx:conformers_submitted_total_number>20</PDBx:conformers_submitted_total_number>
+    </PDBx:pdbx_nmr_ensemble>
+  </PDBx:pdbx_nmr_ensembleCategory>
+  <PDBx:pdbx_nmr_exptlCategory>
+    <PDBx:pdbx_nmr_exptl conditions_id="1" experiment_id="1" solution_id="1">
+      <PDBx:sample_state>isotropic</PDBx:sample_state>
+      <PDBx:spectrometer_id>1</PDBx:spectrometer_id>
+      <PDBx:type>2D 1H-1H TOCSY</PDBx:type>
+    </PDBx:pdbx_nmr_exptl>
+    <PDBx:pdbx_nmr_exptl conditions_id="1" experiment_id="2" solution_id="1">
+      <PDBx:sample_state>isotropic</PDBx:sample_state>
+      <PDBx:spectrometer_id>1</PDBx:spectrometer_id>
+      <PDBx:type>2D 1H-1H NOESY</PDBx:type>
+    </PDBx:pdbx_nmr_exptl>
+    <PDBx:pdbx_nmr_exptl conditions_id="1" experiment_id="3" solution_id="1">
+      <PDBx:sample_state>isotropic</PDBx:sample_state>
+      <PDBx:spectrometer_id>1</PDBx:spectrometer_id>
+      <PDBx:type>2D 1H-1H COSY</PDBx:type>
+    </PDBx:pdbx_nmr_exptl>
+    <PDBx:pdbx_nmr_exptl conditions_id="1" experiment_id="4" solution_id="1">
+      <PDBx:sample_state>isotropic</PDBx:sample_state>
+      <PDBx:spectrometer_id>1</PDBx:spectrometer_id>
+      <PDBx:type>2D 1H-13C HSQC</PDBx:type>
+    </PDBx:pdbx_nmr_exptl>
+    <PDBx:pdbx_nmr_exptl conditions_id="1" experiment_id="5" solution_id="1">
+      <PDBx:sample_state>isotropic</PDBx:sample_state>
+      <PDBx:spectrometer_id>1</PDBx:spectrometer_id>
+      <PDBx:type>2D 1H-15N HSQC</PDBx:type>
+    </PDBx:pdbx_nmr_exptl>
+  </PDBx:pdbx_nmr_exptlCategory>
+  <PDBx:pdbx_nmr_exptl_sampleCategory>
+    <PDBx:pdbx_nmr_exptl_sample component="ZF-N24_3s" solution_id="1">
+      <PDBx:concentration>0.2</PDBx:concentration>
+      <PDBx:concentration_units>mM</PDBx:concentration_units>
+      <PDBx:isotopic_labeling>natural abundance</PDBx:isotopic_labeling>
+    </PDBx:pdbx_nmr_exptl_sample>
+  </PDBx:pdbx_nmr_exptl_sampleCategory>
+  <PDBx:pdbx_nmr_exptl_sample_conditionsCategory>
+    <PDBx:pdbx_nmr_exptl_sample_conditions conditions_id="1">
+      <PDBx:ionic_strength>0</PDBx:ionic_strength>
+      <PDBx:ionic_strength_units>M</PDBx:ionic_strength_units>
+      <PDBx:label>1</PDBx:label>
+      <PDBx:pH>3</PDBx:pH>
+      <PDBx:pH_units>pH</PDBx:pH_units>
+      <PDBx:pressure>ambient</PDBx:pressure>
+      <PDBx:temperature>290</PDBx:temperature>
+      <PDBx:temperature_units>K</PDBx:temperature_units>
+    </PDBx:pdbx_nmr_exptl_sample_conditions>
+  </PDBx:pdbx_nmr_exptl_sample_conditionsCategory>
+  <PDBx:pdbx_nmr_refineCategory>
+    <PDBx:pdbx_nmr_refine entry_id="7JIA" software_ordinal="2">
+      <PDBx:method>torsion angle dynamics</PDBx:method>
+    </PDBx:pdbx_nmr_refine>
+  </PDBx:pdbx_nmr_refineCategory>
+  <PDBx:pdbx_nmr_representativeCategory>
+    <PDBx:pdbx_nmr_representative entry_id="7JIA">
+      <PDBx:conformer_id>1</PDBx:conformer_id>
+      <PDBx:selection_criteria>lowest energy</PDBx:selection_criteria>
+    </PDBx:pdbx_nmr_representative>
+  </PDBx:pdbx_nmr_representativeCategory>
+  <PDBx:pdbx_nmr_sample_detailsCategory>
+    <PDBx:pdbx_nmr_sample_details solution_id="1">
+      <PDBx:contents>0.2 mM ZF-N24_3s, 90% H2O/10% D2O</PDBx:contents>
+      <PDBx:label>1</PDBx:label>
+      <PDBx:solvent_system>90% H2O/10% D2O</PDBx:solvent_system>
+      <PDBx:type>solution</PDBx:type>
+    </PDBx:pdbx_nmr_sample_details>
+  </PDBx:pdbx_nmr_sample_detailsCategory>
+  <PDBx:pdbx_nmr_softwareCategory>
+    <PDBx:pdbx_nmr_software ordinal="1">
+      <PDBx:authors>Bruker Biospin</PDBx:authors>
+      <PDBx:classification>collection</PDBx:classification>
+      <PDBx:name>TopSpin</PDBx:name>
+    </PDBx:pdbx_nmr_software>
+    <PDBx:pdbx_nmr_software ordinal="3">
+      <PDBx:authors>CCPN</PDBx:authors>
+      <PDBx:classification>chemical shift assignment</PDBx:classification>
+      <PDBx:name>CcpNmr Analysis</PDBx:name>
+      <PDBx:version>2</PDBx:version>
+    </PDBx:pdbx_nmr_software>
+    <PDBx:pdbx_nmr_software ordinal="2">
+      <PDBx:authors>Guntert, Mumenthaler and Wuthrich</PDBx:authors>
+      <PDBx:classification>structure calculation</PDBx:classification>
+      <PDBx:name>CYANA</PDBx:name>
+    </PDBx:pdbx_nmr_software>
+  </PDBx:pdbx_nmr_softwareCategory>
+  <PDBx:pdbx_nmr_spectrometerCategory>
+    <PDBx:pdbx_nmr_spectrometer spectrometer_id="1">
+      <PDBx:field_strength>600</PDBx:field_strength>
+      <PDBx:manufacturer>Bruker</PDBx:manufacturer>
+      <PDBx:model>AVANCE</PDBx:model>
+    </PDBx:pdbx_nmr_spectrometer>
+  </PDBx:pdbx_nmr_spectrometerCategory>
+  <PDBx:pdbx_poly_seq_schemeCategory>
+    <PDBx:pdbx_poly_seq_scheme asym_id="A" entity_id="1" mon_id="CYS" seq_id="1">
+      <PDBx:auth_mon_id>CYS</PDBx:auth_mon_id>
+      <PDBx:auth_seq_num>1</PDBx:auth_seq_num>
+      <PDBx:hetero>n</PDBx:hetero>
+      <PDBx:ndb_seq_num>1</PDBx:ndb_seq_num>
+      <PDBx:pdb_ins_code xsi:nil="true"/>
+      <PDBx:pdb_mon_id>CYS</PDBx:pdb_mon_id>
+      <PDBx:pdb_seq_num>1</PDBx:pdb_seq_num>
+      <PDBx:pdb_strand_id>A</PDBx:pdb_strand_id>
+    </PDBx:pdbx_poly_seq_scheme>
+    <PDBx:pdbx_poly_seq_scheme asym_id="A" entity_id="1" mon_id="GLY" seq_id="2">
+      <PDBx:auth_mon_id>GLY</PDBx:auth_mon_id>
+      <PDBx:auth_seq_num>2</PDBx:auth_seq_num>
+      <PDBx:hetero>n</PDBx:hetero>
+      <PDBx:ndb_seq_num>2</PDBx:ndb_seq_num>
+      <PDBx:pdb_ins_code xsi:nil="true"/>
+      <PDBx:pdb_mon_id>GLY</PDBx:pdb_mon_id>
+      <PDBx:pdb_seq_num>2</PDBx:pdb_seq_num>
+      <PDBx:pdb_strand_id>A</PDBx:pdb_strand_id>
+    </PDBx:pdbx_poly_seq_scheme>
+    <PDBx:pdbx_poly_seq_scheme asym_id="A" entity_id="1" mon_id="GLY" seq_id="3">
+      <PDBx:auth_mon_id>GLY</PDBx:auth_mon_id>
+      <PDBx:auth_seq_num>3</PDBx:auth_seq_num>
+      <PDBx:hetero>n</PDBx:hetero>
+      <PDBx:ndb_seq_num>3</PDBx:ndb_seq_num>
+      <PDBx:pdb_ins_code xsi:nil="true"/>
+      <PDBx:pdb_mon_id>GLY</PDBx:pdb_mon_id>
+      <PDBx:pdb_seq_num>3</PDBx:pdb_seq_num>
+      <PDBx:pdb_strand_id>A</PDBx:pdb_strand_id>
+    </PDBx:pdbx_poly_seq_scheme>
+    <PDBx:pdbx_poly_seq_scheme asym_id="A" entity_id="1" mon_id="GLY" seq_id="4">
+      <PDBx:auth_mon_id>GLY</PDBx:auth_mon_id>
+      <PDBx:auth_seq_num>4</PDBx:auth_seq_num>
+      <PDBx:hetero>n</PDBx:hetero>
+      <PDBx:ndb_seq_num>4</PDBx:ndb_seq_num>
+      <PDBx:pdb_ins_code xsi:nil="true"/>
+      <PDBx:pdb_mon_id>GLY</PDBx:pdb_mon_id>
+      <PDBx:pdb_seq_num>4</PDBx:pdb_seq_num>
+      <PDBx:pdb_strand_id>A</PDBx:pdb_strand_id>
+    </PDBx:pdbx_poly_seq_scheme>
+    <PDBx:pdbx_poly_seq_scheme asym_id="A" entity_id="1" mon_id="PHE" seq_id="5">
+      <PDBx:auth_mon_id>PHE</PDBx:auth_mon_id>
+      <PDBx:auth_seq_num>5</PDBx:auth_seq_num>
+      <PDBx:hetero>n</PDBx:hetero>
+      <PDBx:ndb_seq_num>5</PDBx:ndb_seq_num>
+      <PDBx:pdb_ins_code xsi:nil="true"/>
+      <PDBx:pdb_mon_id>PHE</PDBx:pdb_mon_id>
+      <PDBx:pdb_seq_num>5</PDBx:pdb_seq_num>
+      <PDBx:pdb_strand_id>A</PDBx:pdb_strand_id>
+    </PDBx:pdbx_poly_seq_scheme>
+    <PDBx:pdbx_poly_seq_scheme asym_id="A" entity_id="1" mon_id="SER" seq_id="6">
+      <PDBx:auth_mon_id>SER</PDBx:auth_mon_id>
+      <PDBx:auth_seq_num>6</PDBx:auth_seq_num>
+      <PDBx:hetero>n</PDBx:hetero>
+      <PDBx:ndb_seq_num>6</PDBx:ndb_seq_num>
+      <PDBx:pdb_ins_code xsi:nil="true"/>
+      <PDBx:pdb_mon_id>SER</PDBx:pdb_mon_id>
+      <PDBx:pdb_seq_num>6</PDBx:pdb_seq_num>
+      <PDBx:pdb_strand_id>A</PDBx:pdb_strand_id>
+    </PDBx:pdbx_poly_seq_scheme>
+    <PDBx:pdbx_poly_seq_scheme asym_id="A" entity_id="1" mon_id="CYS" seq_id="7">
+      <PDBx:auth_mon_id>CYS</PDBx:auth_mon_id>
+      <PDBx:auth_seq_num>7</PDBx:auth_seq_num>
+      <PDBx:hetero>n</PDBx:hetero>
+      <PDBx:ndb_seq_num>7</PDBx:ndb_seq_num>
+      <PDBx:pdb_ins_code xsi:nil="true"/>
+      <PDBx:pdb_mon_id>CYS</PDBx:pdb_mon_id>
+      <PDBx:pdb_seq_num>7</PDBx:pdb_seq_num>
+      <PDBx:pdb_strand_id>A</PDBx:pdb_strand_id>
+    </PDBx:pdbx_poly_seq_scheme>
+    <PDBx:pdbx_poly_seq_scheme asym_id="A" entity_id="1" mon_id="HIS" seq_id="8">
+      <PDBx:auth_mon_id>HIS</PDBx:auth_mon_id>
+      <PDBx:auth_seq_num>8</PDBx:auth_seq_num>
+      <PDBx:hetero>n</PDBx:hetero>
+      <PDBx:ndb_seq_num>8</PDBx:ndb_seq_num>
+      <PDBx:pdb_ins_code xsi:nil="true"/>
+      <PDBx:pdb_mon_id>HIS</PDBx:pdb_mon_id>
+      <PDBx:pdb_seq_num>8</PDBx:pdb_seq_num>
+      <PDBx:pdb_strand_id>A</PDBx:pdb_strand_id>
+    </PDBx:pdbx_poly_seq_scheme>
+    <PDBx:pdbx_poly_seq_scheme asym_id="A" entity_id="1" mon_id="ASP" seq_id="9">
+      <PDBx:auth_mon_id>ASP</PDBx:auth_mon_id>
+      <PDBx:auth_seq_num>9</PDBx:auth_seq_num>
+      <PDBx:hetero>n</PDBx:hetero>
+      <PDBx:ndb_seq_num>9</PDBx:ndb_seq_num>
+      <PDBx:pdb_ins_code xsi:nil="true"/>
+      <PDBx:pdb_mon_id>ASP</PDBx:pdb_mon_id>
+      <PDBx:pdb_seq_num>9</PDBx:pdb_seq_num>
+      <PDBx:pdb_strand_id>A</PDBx:pdb_strand_id>
+    </PDBx:pdbx_poly_seq_scheme>
+    <PDBx:pdbx_poly_seq_scheme asym_id="A" entity_id="1" mon_id="GLY" seq_id="10">
+      <PDBx:auth_mon_id>GLY</PDBx:auth_mon_id>
+      <PDBx:auth_seq_num>10</PDBx:auth_seq_num>
+      <PDBx:hetero>n</PDBx:hetero>
+      <PDBx:ndb_seq_num>10</PDBx:ndb_seq_num>
+      <PDBx:pdb_ins_code xsi:nil="true"/>
+      <PDBx:pdb_mon_id>GLY</PDBx:pdb_mon_id>
+      <PDBx:pdb_seq_num>10</PDBx:pdb_seq_num>
+      <PDBx:pdb_strand_id>A</PDBx:pdb_strand_id>
+    </PDBx:pdbx_poly_seq_scheme>
+    <PDBx:pdbx_poly_seq_scheme asym_id="A" entity_id="1" mon_id="GLU" seq_id="11">
+      <PDBx:auth_mon_id>GLU</PDBx:auth_mon_id>
+      <PDBx:auth_seq_num>11</PDBx:auth_seq_num>
+      <PDBx:hetero>n</PDBx:hetero>
+      <PDBx:ndb_seq_num>11</PDBx:ndb_seq_num>
+      <PDBx:pdb_ins_code xsi:nil="true"/>
+      <PDBx:pdb_mon_id>GLU</PDBx:pdb_mon_id>
+      <PDBx:pdb_seq_num>11</PDBx:pdb_seq_num>
+      <PDBx:pdb_strand_id>A</PDBx:pdb_strand_id>
+    </PDBx:pdbx_poly_seq_scheme>
+    <PDBx:pdbx_poly_seq_scheme asym_id="A" entity_id="1" mon_id="THR" seq_id="12">
+      <PDBx:auth_mon_id>THR</PDBx:auth_mon_id>
+      <PDBx:auth_seq_num>12</PDBx:auth_seq_num>
+      <PDBx:hetero>n</PDBx:hetero>
+      <PDBx:ndb_seq_num>12</PDBx:ndb_seq_num>
+      <PDBx:pdb_ins_code xsi:nil="true"/>
+      <PDBx:pdb_mon_id>THR</PDBx:pdb_mon_id>
+      <PDBx:pdb_seq_num>12</PDBx:pdb_seq_num>
+      <PDBx:pdb_strand_id>A</PDBx:pdb_strand_id>
+    </PDBx:pdbx_poly_seq_scheme>
+    <PDBx:pdbx_poly_seq_scheme asym_id="A" entity_id="1" mon_id="CYS" seq_id="13">
+      <PDBx:auth_mon_id>CYS</PDBx:auth_mon_id>
+      <PDBx:auth_seq_num>13</PDBx:auth_seq_num>
+      <PDBx:hetero>n</PDBx:hetero>
+      <PDBx:ndb_seq_num>13</PDBx:ndb_seq_num>
+      <PDBx:pdb_ins_code xsi:nil="true"/>
+      <PDBx:pdb_mon_id>CYS</PDBx:pdb_mon_id>
+      <PDBx:pdb_seq_num>13</PDBx:pdb_seq_num>
+      <PDBx:pdb_strand_id>A</PDBx:pdb_strand_id>
+    </PDBx:pdbx_poly_seq_scheme>
+    <PDBx:pdbx_poly_seq_scheme asym_id="A" entity_id="1" mon_id="CYS" seq_id="14">
+      <PDBx:auth_mon_id>CYS</PDBx:auth_mon_id>
+      <PDBx:auth_seq_num>14</PDBx:auth_seq_num>
+      <PDBx:hetero>n</PDBx:hetero>
+      <PDBx:ndb_seq_num>14</PDBx:ndb_seq_num>
+      <PDBx:pdb_ins_code xsi:nil="true"/>
+      <PDBx:pdb_mon_id>CYS</PDBx:pdb_mon_id>
+      <PDBx:pdb_seq_num>14</PDBx:pdb_seq_num>
+      <PDBx:pdb_strand_id>A</PDBx:pdb_strand_id>
+    </PDBx:pdbx_poly_seq_scheme>
+    <PDBx:pdbx_poly_seq_scheme asym_id="A" entity_id="1" mon_id="PRO" seq_id="15">
+      <PDBx:auth_mon_id>PRO</PDBx:auth_mon_id>
+      <PDBx:auth_seq_num>15</PDBx:auth_seq_num>
+      <PDBx:hetero>n</PDBx:hetero>
+      <PDBx:ndb_seq_num>15</PDBx:ndb_seq_num>
+      <PDBx:pdb_ins_code xsi:nil="true"/>
+      <PDBx:pdb_mon_id>PRO</PDBx:pdb_mon_id>
+      <PDBx:pdb_seq_num>15</PDBx:pdb_seq_num>
+      <PDBx:pdb_strand_id>A</PDBx:pdb_strand_id>
+    </PDBx:pdbx_poly_seq_scheme>
+    <PDBx:pdbx_poly_seq_scheme asym_id="A" entity_id="1" mon_id="THR" seq_id="16">
+      <PDBx:auth_mon_id>THR</PDBx:auth_mon_id>
+      <PDBx:auth_seq_num>16</PDBx:auth_seq_num>
+      <PDBx:hetero>n</PDBx:hetero>
+      <PDBx:ndb_seq_num>16</PDBx:ndb_seq_num>
+      <PDBx:pdb_ins_code xsi:nil="true"/>
+      <PDBx:pdb_mon_id>THR</PDBx:pdb_mon_id>
+      <PDBx:pdb_seq_num>16</PDBx:pdb_seq_num>
+      <PDBx:pdb_strand_id>A</PDBx:pdb_strand_id>
+    </PDBx:pdbx_poly_seq_scheme>
+    <PDBx:pdbx_poly_seq_scheme asym_id="A" entity_id="1" mon_id="SER" seq_id="17">
+      <PDBx:auth_mon_id>SER</PDBx:auth_mon_id>
+      <PDBx:auth_seq_num>17</PDBx:auth_seq_num>
+      <PDBx:hetero>n</PDBx:hetero>
+      <PDBx:ndb_seq_num>17</PDBx:ndb_seq_num>
+      <PDBx:pdb_ins_code xsi:nil="true"/>
+      <PDBx:pdb_mon_id>SER</PDBx:pdb_mon_id>
+      <PDBx:pdb_seq_num>17</PDBx:pdb_seq_num>
+      <PDBx:pdb_strand_id>A</PDBx:pdb_strand_id>
+    </PDBx:pdbx_poly_seq_scheme>
+    <PDBx:pdbx_poly_seq_scheme asym_id="A" entity_id="1" mon_id="GLN" seq_id="18">
+      <PDBx:auth_mon_id>GLN</PDBx:auth_mon_id>
+      <PDBx:auth_seq_num>18</PDBx:auth_seq_num>
+      <PDBx:hetero>n</PDBx:hetero>
+      <PDBx:ndb_seq_num>18</PDBx:ndb_seq_num>
+      <PDBx:pdb_ins_code xsi:nil="true"/>
+      <PDBx:pdb_mon_id>GLN</PDBx:pdb_mon_id>
+      <PDBx:pdb_seq_num>18</PDBx:pdb_seq_num>
+      <PDBx:pdb_strand_id>A</PDBx:pdb_strand_id>
+    </PDBx:pdbx_poly_seq_scheme>
+    <PDBx:pdbx_poly_seq_scheme asym_id="A" entity_id="1" mon_id="THR" seq_id="19">
+      <PDBx:auth_mon_id>THR</PDBx:auth_mon_id>
+      <PDBx:auth_seq_num>19</PDBx:auth_seq_num>
+      <PDBx:hetero>n</PDBx:hetero>
+      <PDBx:ndb_seq_num>19</PDBx:ndb_seq_num>
+      <PDBx:pdb_ins_code xsi:nil="true"/>
+      <PDBx:pdb_mon_id>THR</PDBx:pdb_mon_id>
+      <PDBx:pdb_seq_num>19</PDBx:pdb_seq_num>
+      <PDBx:pdb_strand_id>A</PDBx:pdb_strand_id>
+    </PDBx:pdbx_poly_seq_scheme>
+    <PDBx:pdbx_poly_seq_scheme asym_id="A" entity_id="1" mon_id="THR" seq_id="20">
+      <PDBx:auth_mon_id>THR</PDBx:auth_mon_id>
+      <PDBx:auth_seq_num>20</PDBx:auth_seq_num>
+      <PDBx:hetero>n</PDBx:hetero>
+      <PDBx:ndb_seq_num>20</PDBx:ndb_seq_num>
+      <PDBx:pdb_ins_code xsi:nil="true"/>
+      <PDBx:pdb_mon_id>THR</PDBx:pdb_mon_id>
+      <PDBx:pdb_seq_num>20</PDBx:pdb_seq_num>
+      <PDBx:pdb_strand_id>A</PDBx:pdb_strand_id>
+    </PDBx:pdbx_poly_seq_scheme>
+    <PDBx:pdbx_poly_seq_scheme asym_id="A" entity_id="1" mon_id="TRP" seq_id="21">
+      <PDBx:auth_mon_id>TRP</PDBx:auth_mon_id>
+      <PDBx:auth_seq_num>21</PDBx:auth_seq_num>
+      <PDBx:hetero>n</PDBx:hetero>
+      <PDBx:ndb_seq_num>21</PDBx:ndb_seq_num>
+      <PDBx:pdb_ins_code xsi:nil="true"/>
+      <PDBx:pdb_mon_id>TRP</PDBx:pdb_mon_id>
+      <PDBx:pdb_seq_num>21</PDBx:pdb_seq_num>
+      <PDBx:pdb_strand_id>A</PDBx:pdb_strand_id>
+    </PDBx:pdbx_poly_seq_scheme>
+    <PDBx:pdbx_poly_seq_scheme asym_id="A" entity_id="1" mon_id="GLY" seq_id="22">
+      <PDBx:auth_mon_id>GLY</PDBx:auth_mon_id>
+      <PDBx:auth_seq_num>22</PDBx:auth_seq_num>
+      <PDBx:hetero>n</PDBx:hetero>
+      <PDBx:ndb_seq_num>22</PDBx:ndb_seq_num>
+      <PDBx:pdb_ins_code xsi:nil="true"/>
+      <PDBx:pdb_mon_id>GLY</PDBx:pdb_mon_id>
+      <PDBx:pdb_seq_num>22</PDBx:pdb_seq_num>
+      <PDBx:pdb_strand_id>A</PDBx:pdb_strand_id>
+    </PDBx:pdbx_poly_seq_scheme>
+    <PDBx:pdbx_poly_seq_scheme asym_id="A" entity_id="1" mon_id="CYS" seq_id="23">
+      <PDBx:auth_mon_id>CYS</PDBx:auth_mon_id>
+      <PDBx:auth_seq_num>23</PDBx:auth_seq_num>
+      <PDBx:hetero>n</PDBx:hetero>
+      <PDBx:ndb_seq_num>23</PDBx:ndb_seq_num>
+      <PDBx:pdb_ins_code xsi:nil="true"/>
+      <PDBx:pdb_mon_id>CYS</PDBx:pdb_mon_id>
+      <PDBx:pdb_seq_num>23</PDBx:pdb_seq_num>
+      <PDBx:pdb_strand_id>A</PDBx:pdb_strand_id>
+    </PDBx:pdbx_poly_seq_scheme>
+    <PDBx:pdbx_poly_seq_scheme asym_id="A" entity_id="1" mon_id="CYS" seq_id="24">
+      <PDBx:auth_mon_id>CYS</PDBx:auth_mon_id>
+      <PDBx:auth_seq_num>24</PDBx:auth_seq_num>
+      <PDBx:hetero>n</PDBx:hetero>
+      <PDBx:ndb_seq_num>24</PDBx:ndb_seq_num>
+      <PDBx:pdb_ins_code xsi:nil="true"/>
+      <PDBx:pdb_mon_id>CYS</PDBx:pdb_mon_id>
+      <PDBx:pdb_seq_num>24</PDBx:pdb_seq_num>
+      <PDBx:pdb_strand_id>A</PDBx:pdb_strand_id>
+    </PDBx:pdbx_poly_seq_scheme>
+  </PDBx:pdbx_poly_seq_schemeCategory>
+  <PDBx:pdbx_struct_assemblyCategory>
+    <PDBx:pdbx_struct_assembly id="1">
+      <PDBx:details>author_defined_assembly</PDBx:details>
+      <PDBx:oligomeric_count>1</PDBx:oligomeric_count>
+      <PDBx:oligomeric_details>monomeric</PDBx:oligomeric_details>
+    </PDBx:pdbx_struct_assembly>
+  </PDBx:pdbx_struct_assemblyCategory>
+  <PDBx:pdbx_struct_assembly_auth_evidenceCategory>
+    <PDBx:pdbx_struct_assembly_auth_evidence assembly_id="1" id="1">
+      <PDBx:experimental_support>none</PDBx:experimental_support>
+    </PDBx:pdbx_struct_assembly_auth_evidence>
+  </PDBx:pdbx_struct_assembly_auth_evidenceCategory>
+  <PDBx:pdbx_struct_assembly_genCategory>
+    <PDBx:pdbx_struct_assembly_gen assembly_id="1" asym_id_list="A" oper_expression="1"/>
+  </PDBx:pdbx_struct_assembly_genCategory>
+  <PDBx:pdbx_struct_oper_listCategory>
+    <PDBx:pdbx_struct_oper_list id="1">
+      <PDBx:matrix11>1.0000000000</PDBx:matrix11>
+      <PDBx:matrix12>0.0000000000</PDBx:matrix12>
+      <PDBx:matrix13>0.0000000000</PDBx:matrix13>
+      <PDBx:matrix21>0.0000000000</PDBx:matrix21>
+      <PDBx:matrix22>1.0000000000</PDBx:matrix22>
+      <PDBx:matrix23>0.0000000000</PDBx:matrix23>
+      <PDBx:matrix31>0.0000000000</PDBx:matrix31>
+      <PDBx:matrix32>0.0000000000</PDBx:matrix32>
+      <PDBx:matrix33>1.0000000000</PDBx:matrix33>
+      <PDBx:name>1_555</PDBx:name>
+      <PDBx:type>identity operation</PDBx:type>
+      <PDBx:vector1>0.0000000000</PDBx:vector1>
+      <PDBx:vector2>0.0000000000</PDBx:vector2>
+      <PDBx:vector3>0.0000000000</PDBx:vector3>
+    </PDBx:pdbx_struct_oper_list>
+  </PDBx:pdbx_struct_oper_listCategory>
+  <PDBx:pdbx_struct_sheet_hbondCategory>
+    <PDBx:pdbx_struct_sheet_hbond range_id_1="1" range_id_2="2" sheet_id="AA1">
+      <PDBx:range_1_auth_asym_id>A</PDBx:range_1_auth_asym_id>
+      <PDBx:range_1_auth_atom_id>N</PDBx:range_1_auth_atom_id>
+      <PDBx:range_1_auth_comp_id>CYS</PDBx:range_1_auth_comp_id>
+      <PDBx:range_1_auth_seq_id>14</PDBx:range_1_auth_seq_id>
+      <PDBx:range_1_label_asym_id>A</PDBx:range_1_label_asym_id>
+      <PDBx:range_1_label_atom_id>N</PDBx:range_1_label_atom_id>
+      <PDBx:range_1_label_comp_id>CYS</PDBx:range_1_label_comp_id>
+      <PDBx:range_1_label_seq_id>14</PDBx:range_1_label_seq_id>
+      <PDBx:range_2_auth_asym_id>A</PDBx:range_2_auth_asym_id>
+      <PDBx:range_2_auth_atom_id>O</PDBx:range_2_auth_atom_id>
+      <PDBx:range_2_auth_comp_id>GLY</PDBx:range_2_auth_comp_id>
+      <PDBx:range_2_auth_seq_id>22</PDBx:range_2_auth_seq_id>
+      <PDBx:range_2_label_asym_id>A</PDBx:range_2_label_asym_id>
+      <PDBx:range_2_label_atom_id>O</PDBx:range_2_label_atom_id>
+      <PDBx:range_2_label_comp_id>GLY</PDBx:range_2_label_comp_id>
+      <PDBx:range_2_label_seq_id>22</PDBx:range_2_label_seq_id>
+    </PDBx:pdbx_struct_sheet_hbond>
+  </PDBx:pdbx_struct_sheet_hbondCategory>
+  <PDBx:pdbx_validate_torsionCategory>
+    <PDBx:pdbx_validate_torsion id="1">
+      <PDBx:PDB_model_num>11</PDBx:PDB_model_num>
+      <PDBx:auth_asym_id>A</PDBx:auth_asym_id>
+      <PDBx:auth_comp_id>PHE</PDBx:auth_comp_id>
+      <PDBx:auth_seq_id>5</PDBx:auth_seq_id>
+      <PDBx:phi>-62.42</PDBx:phi>
+      <PDBx:psi>-176.15</PDBx:psi>
+    </PDBx:pdbx_validate_torsion>
+    <PDBx:pdbx_validate_torsion id="2">
+      <PDBx:PDB_model_num>19</PDBx:PDB_model_num>
+      <PDBx:auth_asym_id>A</PDBx:auth_asym_id>
+      <PDBx:auth_comp_id>SER</PDBx:auth_comp_id>
+      <PDBx:auth_seq_id>17</PDBx:auth_seq_id>
+      <PDBx:phi>-125.93</PDBx:phi>
+      <PDBx:psi>-169.82</PDBx:psi>
+    </PDBx:pdbx_validate_torsion>
+  </PDBx:pdbx_validate_torsionCategory>
+  <PDBx:structCategory>
+    <PDBx:struct entry_id="7JIA">
+      <PDBx:pdbx_CASP_flag>N</PDBx:pdbx_CASP_flag>
+      <PDBx:pdbx_descriptor>Granulin-A</PDBx:pdbx_descriptor>
+      <PDBx:title>Structure of truncated zebrafish granulin AaE</PDBx:title>
+    </PDBx:struct>
+  </PDBx:structCategory>
+  <PDBx:struct_asymCategory>
+    <PDBx:struct_asym id="A">
+      <PDBx:entity_id>1</PDBx:entity_id>
+      <PDBx:pdbx_blank_PDB_chainid_flag>N</PDBx:pdbx_blank_PDB_chainid_flag>
+      <PDBx:pdbx_modified>N</PDBx:pdbx_modified>
+    </PDBx:struct_asym>
+  </PDBx:struct_asymCategory>
+  <PDBx:struct_connCategory>
+    <PDBx:struct_conn id="disulf1">
+      <PDBx:conn_type_id>disulf</PDBx:conn_type_id>
+      <PDBx:pdbx_dist_value>2.046</PDBx:pdbx_dist_value>
+      <PDBx:ptnr1_auth_asym_id>A</PDBx:ptnr1_auth_asym_id>
+      <PDBx:ptnr1_auth_comp_id>CYS</PDBx:ptnr1_auth_comp_id>
+      <PDBx:ptnr1_auth_seq_id>1</PDBx:ptnr1_auth_seq_id>
+      <PDBx:ptnr1_label_asym_id>A</PDBx:ptnr1_label_asym_id>
+      <PDBx:ptnr1_label_atom_id>SG</PDBx:ptnr1_label_atom_id>
+      <PDBx:ptnr1_label_comp_id>CYS</PDBx:ptnr1_label_comp_id>
+      <PDBx:ptnr1_label_seq_id>1</PDBx:ptnr1_label_seq_id>
+      <PDBx:ptnr1_symmetry>1_555</PDBx:ptnr1_symmetry>
+      <PDBx:ptnr2_auth_asym_id>A</PDBx:ptnr2_auth_asym_id>
+      <PDBx:ptnr2_auth_comp_id>CYS</PDBx:ptnr2_auth_comp_id>
+      <PDBx:ptnr2_auth_seq_id>13</PDBx:ptnr2_auth_seq_id>
+      <PDBx:ptnr2_label_asym_id>A</PDBx:ptnr2_label_asym_id>
+      <PDBx:ptnr2_label_atom_id>SG</PDBx:ptnr2_label_atom_id>
+      <PDBx:ptnr2_label_comp_id>CYS</PDBx:ptnr2_label_comp_id>
+      <PDBx:ptnr2_label_seq_id>13</PDBx:ptnr2_label_seq_id>
+      <PDBx:ptnr2_symmetry>1_555</PDBx:ptnr2_symmetry>
+    </PDBx:struct_conn>
+    <PDBx:struct_conn id="disulf2">
+      <PDBx:conn_type_id>disulf</PDBx:conn_type_id>
+      <PDBx:pdbx_dist_value>2.005</PDBx:pdbx_dist_value>
+      <PDBx:ptnr1_auth_asym_id>A</PDBx:ptnr1_auth_asym_id>
+      <PDBx:ptnr1_auth_comp_id>CYS</PDBx:ptnr1_auth_comp_id>
+      <PDBx:ptnr1_auth_seq_id>7</PDBx:ptnr1_auth_seq_id>
+      <PDBx:ptnr1_label_asym_id>A</PDBx:ptnr1_label_asym_id>
+      <PDBx:ptnr1_label_atom_id>SG</PDBx:ptnr1_label_atom_id>
+      <PDBx:ptnr1_label_comp_id>CYS</PDBx:ptnr1_label_comp_id>
+      <PDBx:ptnr1_label_seq_id>7</PDBx:ptnr1_label_seq_id>
+      <PDBx:ptnr1_symmetry>1_555</PDBx:ptnr1_symmetry>
+      <PDBx:ptnr2_auth_asym_id>A</PDBx:ptnr2_auth_asym_id>
+      <PDBx:ptnr2_auth_comp_id>CYS</PDBx:ptnr2_auth_comp_id>
+      <PDBx:ptnr2_auth_seq_id>23</PDBx:ptnr2_auth_seq_id>
+      <PDBx:ptnr2_label_asym_id>A</PDBx:ptnr2_label_asym_id>
+      <PDBx:ptnr2_label_atom_id>SG</PDBx:ptnr2_label_atom_id>
+      <PDBx:ptnr2_label_comp_id>CYS</PDBx:ptnr2_label_comp_id>
+      <PDBx:ptnr2_label_seq_id>23</PDBx:ptnr2_label_seq_id>
+      <PDBx:ptnr2_symmetry>1_555</PDBx:ptnr2_symmetry>
+    </PDBx:struct_conn>
+    <PDBx:struct_conn id="disulf3">
+      <PDBx:conn_type_id>disulf</PDBx:conn_type_id>
+      <PDBx:pdbx_dist_value>2.008</PDBx:pdbx_dist_value>
+      <PDBx:ptnr1_auth_asym_id>A</PDBx:ptnr1_auth_asym_id>
+      <PDBx:ptnr1_auth_comp_id>CYS</PDBx:ptnr1_auth_comp_id>
+      <PDBx:ptnr1_auth_seq_id>14</PDBx:ptnr1_auth_seq_id>
+      <PDBx:ptnr1_label_asym_id>A</PDBx:ptnr1_label_asym_id>
+      <PDBx:ptnr1_label_atom_id>SG</PDBx:ptnr1_label_atom_id>
+      <PDBx:ptnr1_label_comp_id>CYS</PDBx:ptnr1_label_comp_id>
+      <PDBx:ptnr1_label_seq_id>14</PDBx:ptnr1_label_seq_id>
+      <PDBx:ptnr1_symmetry>1_555</PDBx:ptnr1_symmetry>
+      <PDBx:ptnr2_auth_asym_id>A</PDBx:ptnr2_auth_asym_id>
+      <PDBx:ptnr2_auth_comp_id>CYS</PDBx:ptnr2_auth_comp_id>
+      <PDBx:ptnr2_auth_seq_id>24</PDBx:ptnr2_auth_seq_id>
+      <PDBx:ptnr2_label_asym_id>A</PDBx:ptnr2_label_asym_id>
+      <PDBx:ptnr2_label_atom_id>SG</PDBx:ptnr2_label_atom_id>
+      <PDBx:ptnr2_label_comp_id>CYS</PDBx:ptnr2_label_comp_id>
+      <PDBx:ptnr2_label_seq_id>24</PDBx:ptnr2_label_seq_id>
+      <PDBx:ptnr2_symmetry>1_555</PDBx:ptnr2_symmetry>
+    </PDBx:struct_conn>
+  </PDBx:struct_connCategory>
+  <PDBx:struct_conn_typeCategory>
+    <PDBx:struct_conn_type id="disulf"/>
+  </PDBx:struct_conn_typeCategory>
+  <PDBx:struct_keywordsCategory>
+    <PDBx:struct_keywords entry_id="7JIA">
+      <PDBx:pdbx_keywords>SIGNALING PROTEIN</PDBx:pdbx_keywords>
+      <PDBx:text>disulfide-rich, growth factor, SIGNALING PROTEIN</PDBx:text>
+    </PDBx:struct_keywords>
+  </PDBx:struct_keywordsCategory>
+  <PDBx:struct_refCategory>
+    <PDBx:struct_ref id="1">
+      <PDBx:db_code>Q8QGN9_DANRE</PDBx:db_code>
+      <PDBx:db_name>UNP</PDBx:db_name>
+      <PDBx:entity_id>1</PDBx:entity_id>
+      <PDBx:pdbx_align_begin>796</PDBx:pdbx_align_begin>
+      <PDBx:pdbx_db_accession>Q8QGN9</PDBx:pdbx_db_accession>
+      <PDBx:pdbx_seq_one_letter_code>CGGGFSCHDGETCCPTSQTTWGCC</PDBx:pdbx_seq_one_letter_code>
+    </PDBx:struct_ref>
+  </PDBx:struct_refCategory>
+  <PDBx:struct_ref_seqCategory>
+    <PDBx:struct_ref_seq align_id="1">
+      <PDBx:db_align_beg>796</PDBx:db_align_beg>
+      <PDBx:db_align_end>819</PDBx:db_align_end>
+      <PDBx:pdbx_PDB_id_code>7JIA</PDBx:pdbx_PDB_id_code>
+      <PDBx:pdbx_auth_seq_align_beg>1</PDBx:pdbx_auth_seq_align_beg>
+      <PDBx:pdbx_auth_seq_align_end>24</PDBx:pdbx_auth_seq_align_end>
+      <PDBx:pdbx_db_accession>Q8QGN9</PDBx:pdbx_db_accession>
+      <PDBx:pdbx_strand_id>A</PDBx:pdbx_strand_id>
+      <PDBx:ref_id>1</PDBx:ref_id>
+      <PDBx:seq_align_beg>1</PDBx:seq_align_beg>
+      <PDBx:seq_align_end>24</PDBx:seq_align_end>
+    </PDBx:struct_ref_seq>
+  </PDBx:struct_ref_seqCategory>
+  <PDBx:struct_sheetCategory>
+    <PDBx:struct_sheet id="AA1">
+      <PDBx:number_strands>2</PDBx:number_strands>
+    </PDBx:struct_sheet>
+  </PDBx:struct_sheetCategory>
+  <PDBx:struct_sheet_orderCategory>
+    <PDBx:struct_sheet_order range_id_1="1" range_id_2="2" sheet_id="AA1">
+      <PDBx:sense>anti-parallel</PDBx:sense>
+    </PDBx:struct_sheet_order>
+  </PDBx:struct_sheet_orderCategory>
+  <PDBx:struct_sheet_rangeCategory>
+    <PDBx:struct_sheet_range id="1" sheet_id="AA1">
+      <PDBx:beg_auth_asym_id>A</PDBx:beg_auth_asym_id>
+      <PDBx:beg_auth_comp_id>THR</PDBx:beg_auth_comp_id>
+      <PDBx:beg_auth_seq_id>12</PDBx:beg_auth_seq_id>
+      <PDBx:beg_label_asym_id>A</PDBx:beg_label_asym_id>
+      <PDBx:beg_label_comp_id>THR</PDBx:beg_label_comp_id>
+      <PDBx:beg_label_seq_id>12</PDBx:beg_label_seq_id>
+      <PDBx:end_auth_asym_id>A</PDBx:end_auth_asym_id>
+      <PDBx:end_auth_comp_id>CYS</PDBx:end_auth_comp_id>
+      <PDBx:end_auth_seq_id>14</PDBx:end_auth_seq_id>
+      <PDBx:end_label_asym_id>A</PDBx:end_label_asym_id>
+      <PDBx:end_label_comp_id>CYS</PDBx:end_label_comp_id>
+      <PDBx:end_label_seq_id>14</PDBx:end_label_seq_id>
+    </PDBx:struct_sheet_range>
+    <PDBx:struct_sheet_range id="2" sheet_id="AA1">
+      <PDBx:beg_auth_asym_id>A</PDBx:beg_auth_asym_id>
+      <PDBx:beg_auth_comp_id>GLY</PDBx:beg_auth_comp_id>
+      <PDBx:beg_auth_seq_id>22</PDBx:beg_auth_seq_id>
+      <PDBx:beg_label_asym_id>A</PDBx:beg_label_asym_id>
+      <PDBx:beg_label_comp_id>GLY</PDBx:beg_label_comp_id>
+      <PDBx:beg_label_seq_id>22</PDBx:beg_label_seq_id>
+      <PDBx:end_auth_asym_id>A</PDBx:end_auth_asym_id>
+      <PDBx:end_auth_comp_id>CYS</PDBx:end_auth_comp_id>
+      <PDBx:end_auth_seq_id>24</PDBx:end_auth_seq_id>
+      <PDBx:end_label_asym_id>A</PDBx:end_label_asym_id>
+      <PDBx:end_label_comp_id>CYS</PDBx:end_label_comp_id>
+      <PDBx:end_label_seq_id>24</PDBx:end_label_seq_id>
+    </PDBx:struct_sheet_range>
+  </PDBx:struct_sheet_rangeCategory>
+  <PDBx:pdbx_sifts_unp_segmentsCategory>
+    <PDBx:pdbx_sifts_unp_segments entity_id="1" asym_id="A" unp_acc="Q8QGN9" segment_id="1" instance_id="1">
+      <PDBx:unp_start>796</PDBx:unp_start>
+      <PDBx:unp_end>819</PDBx:unp_end>
+      <PDBx:seq_id_start>1</PDBx:seq_id_start>
+      <PDBx:seq_id_end>24</PDBx:seq_id_end>
+      <PDBx:best_mapping>Y</PDBx:best_mapping>
+      <PDBx:identity>1.000</PDBx:identity>
+    </PDBx:pdbx_sifts_unp_segments>
+  </PDBx:pdbx_sifts_unp_segmentsCategory>
 </PDBx:datablock>

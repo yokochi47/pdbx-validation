@@ -8,7 +8,7 @@
   exclude-result-prefixes="PDBx">
 
   <xsl:param name="info_file" required="yes"/>
-  <xsl:param name="info" select="document($info_file)"/>
+  <xsl:param name="info_entry" select="document($info_file)/wwPDB-validation-information/Entry"/>
 
   <xsl:output method="xml" indent="yes"/>
   <xsl:strip-space elements="*"/>
@@ -16,13 +16,13 @@
   <xsl:variable name="entry_id"><xsl:value-of select="/PDBx:datablock/PDBx:entryCategory/PDBx:entry/@id"/></xsl:variable>
   <xsl:variable name="datablock_name"><xsl:value-of select="concat(/PDBx:datablock/@datablockName,'-ext')"/></xsl:variable>
 
-  <xsl:variable name="pdb_id"><xsl:value-of select="$info/wwPDB-validation-information/Entry/@pdbid"/></xsl:variable>
-  <xsl:variable name="xml_creation_date"><xsl:value-of select="$info/wwPDB-validation-information/Entry/@XMLcreationDate"/></xsl:variable>
+  <xsl:variable name="pdb_id"><xsl:value-of select="$info_entry/@pdbid"/></xsl:variable>
+  <xsl:variable name="xml_creation_date"><xsl:value-of select="$info_entry/@XMLcreationDate"/></xsl:variable>
 
   <xsl:variable name="validation_created_year"><xsl:value-of select="substring($xml_creation_date,9,4)"/></xsl:variable>
   <xsl:variable name="validation_created_day"><xsl:value-of select="translate(substring($xml_creation_date,5,2),' ','0')"/></xsl:variable>
   <xsl:variable name="validation_created_month">
-    <xsl:variable name="month_name"><xsl:value-of select="upper-case(substring($xml_creation_date,1,3))"/></xsl:variable>
+    <xsl:variable name="month_name"><xsl:value-of select="translate(substring($xml_creation_date,1,3),'abcdefghijklmnopqrstuvwxyz','ABCDEFGHIJKLMNOPQRSTUVWXYZ')"/></xsl:variable>
     <xsl:choose>
       <xsl:when test="$month_name='JAN'">01</xsl:when>
       <xsl:when test="$month_name='FEB'">02</xsl:when>
@@ -49,7 +49,7 @@ Month name, <xsl:value-of select="$month_name"/>, is not listed in XSLT code.
 
   <xsl:variable name="validation_created_date"><xsl:value-of select="concat($validation_created_year,'-',$validation_created_month,'-',$validation_created_day)"/></xsl:variable>
 
-  <xsl:variable name="nmr_models_consistency_flag"><xsl:value-of select="$info/wwPDB-validation-information/Entry/@nmr_models_consistency_flag"/></xsl:variable>
+  <xsl:variable name="nmr_models_consistency_flag"><xsl:value-of select="$info_entry/@nmr_models_consistency_flag"/></xsl:variable>
 
   <xsl:template match="/">
 

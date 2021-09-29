@@ -31,9 +31,7 @@
   <xsl2:template match="/xsd:schema">
     <xsl2:text disable-output-escaping="yes">
   &lt;xsl:param name="sifts_file" required="yes"/&gt;
-  &lt;xsl:param name="sifts" select="document($sifts_file)"/&gt;
-
-  &lt;xsl:param name="sifts_entry" select="$sifts/sifts:entry"/&gt;
+  &lt;xsl:param name="sifts_entry" select="document($sifts_file)/sifts:entry"/&gt;
 
   &lt;xsl:output method="xml" indent="yes"/&gt;
   &lt;xsl:strip-space elements="*"/&gt;

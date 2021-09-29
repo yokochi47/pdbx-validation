@@ -12,9 +12,7 @@
   exclude-result-prefixes="align data dc rdf sifts">
 
   <xsl:param name="sifts_file" required="yes"/>
-  <xsl:param name="sifts" select="document($sifts_file)"/>
-
-  <xsl:param name="sifts_entry" select="$sifts/sifts:entry"/>
+  <xsl:param name="sifts_entry" select="document($sifts_file)/sifts:entry"/>
 
   <xsl:output method="xml" indent="yes"/>
   <xsl:strip-space elements="*"/>

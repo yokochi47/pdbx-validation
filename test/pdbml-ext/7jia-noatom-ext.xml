@@ -1,692 +1,683 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<VRPTx:datablock xmlns:VRPTx="http://pdbml.pdb.org/schema/pdbx-validation-v4.xsd"
-                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                 datablockName="7JIA-noatom-ext"
-                 xsi:schemaLocation="http://pdbml.pdb.org/schema/pdbx-validation-v4.xsd pdbx-validation-v4.xsd">
-   <VRPTx:entityCategory>
-      <VRPTx:entity id="1">
-         <VRPTx:formula_weight>2441.677</VRPTx:formula_weight>
-         <VRPTx:pdbx_description>Granulin-A</VRPTx:pdbx_description>
-         <VRPTx:pdbx_number_of_molecules>1</VRPTx:pdbx_number_of_molecules>
-         <VRPTx:src_method>syn</VRPTx:src_method>
-         <VRPTx:type>polymer</VRPTx:type>
-      </VRPTx:entity>
-   </VRPTx:entityCategory>
-   <VRPTx:entity_polyCategory>
-      <VRPTx:entity_poly entity_id="1">
-         <VRPTx:nstd_linkage>no</VRPTx:nstd_linkage>
-         <VRPTx:nstd_monomer>no</VRPTx:nstd_monomer>
-         <VRPTx:pdbx_seq_one_letter_code>CGGGFSCHDGETCCPTSQTTWGCC</VRPTx:pdbx_seq_one_letter_code>
-         <VRPTx:pdbx_seq_one_letter_code_can>CGGGFSCHDGETCCPTSQTTWGCC</VRPTx:pdbx_seq_one_letter_code_can>
-         <VRPTx:pdbx_strand_id>A</VRPTx:pdbx_strand_id>
-         <VRPTx:type>polypeptide(L)</VRPTx:type>
-      </VRPTx:entity_poly>
-   </VRPTx:entity_polyCategory>
-   <VRPTx:entity_poly_seqCategory>
-      <VRPTx:entity_poly_seq entity_id="1" mon_id="CYS" num="1">
-         <VRPTx:hetero>n</VRPTx:hetero>
-      </VRPTx:entity_poly_seq>
-      <VRPTx:entity_poly_seq entity_id="1" mon_id="GLY" num="2">
-         <VRPTx:hetero>n</VRPTx:hetero>
-      </VRPTx:entity_poly_seq>
-      <VRPTx:entity_poly_seq entity_id="1" mon_id="GLY" num="3">
-         <VRPTx:hetero>n</VRPTx:hetero>
-      </VRPTx:entity_poly_seq>
-      <VRPTx:entity_poly_seq entity_id="1" mon_id="GLY" num="4">
-         <VRPTx:hetero>n</VRPTx:hetero>
-      </VRPTx:entity_poly_seq>
-      <VRPTx:entity_poly_seq entity_id="1" mon_id="PHE" num="5">
-         <VRPTx:hetero>n</VRPTx:hetero>
-      </VRPTx:entity_poly_seq>
-      <VRPTx:entity_poly_seq entity_id="1" mon_id="SER" num="6">
-         <VRPTx:hetero>n</VRPTx:hetero>
-      </VRPTx:entity_poly_seq>
-      <VRPTx:entity_poly_seq entity_id="1" mon_id="CYS" num="7">
-         <VRPTx:hetero>n</VRPTx:hetero>
-      </VRPTx:entity_poly_seq>
-      <VRPTx:entity_poly_seq entity_id="1" mon_id="HIS" num="8">
-         <VRPTx:hetero>n</VRPTx:hetero>
-      </VRPTx:entity_poly_seq>
-      <VRPTx:entity_poly_seq entity_id="1" mon_id="ASP" num="9">
-         <VRPTx:hetero>n</VRPTx:hetero>
-      </VRPTx:entity_poly_seq>
-      <VRPTx:entity_poly_seq entity_id="1" mon_id="GLY" num="10">
-         <VRPTx:hetero>n</VRPTx:hetero>
-      </VRPTx:entity_poly_seq>
-      <VRPTx:entity_poly_seq entity_id="1" mon_id="GLU" num="11">
-         <VRPTx:hetero>n</VRPTx:hetero>
-      </VRPTx:entity_poly_seq>
-      <VRPTx:entity_poly_seq entity_id="1" mon_id="THR" num="12">
-         <VRPTx:hetero>n</VRPTx:hetero>
-      </VRPTx:entity_poly_seq>
-      <VRPTx:entity_poly_seq entity_id="1" mon_id="CYS" num="13">
-         <VRPTx:hetero>n</VRPTx:hetero>
-      </VRPTx:entity_poly_seq>
-      <VRPTx:entity_poly_seq entity_id="1" mon_id="CYS" num="14">
-         <VRPTx:hetero>n</VRPTx:hetero>
-      </VRPTx:entity_poly_seq>
-      <VRPTx:entity_poly_seq entity_id="1" mon_id="PRO" num="15">
-         <VRPTx:hetero>n</VRPTx:hetero>
-      </VRPTx:entity_poly_seq>
-      <VRPTx:entity_poly_seq entity_id="1" mon_id="THR" num="16">
-         <VRPTx:hetero>n</VRPTx:hetero>
-      </VRPTx:entity_poly_seq>
-      <VRPTx:entity_poly_seq entity_id="1" mon_id="SER" num="17">
-         <VRPTx:hetero>n</VRPTx:hetero>
-      </VRPTx:entity_poly_seq>
-      <VRPTx:entity_poly_seq entity_id="1" mon_id="GLN" num="18">
-         <VRPTx:hetero>n</VRPTx:hetero>
-      </VRPTx:entity_poly_seq>
-      <VRPTx:entity_poly_seq entity_id="1" mon_id="THR" num="19">
-         <VRPTx:hetero>n</VRPTx:hetero>
-      </VRPTx:entity_poly_seq>
-      <VRPTx:entity_poly_seq entity_id="1" mon_id="THR" num="20">
-         <VRPTx:hetero>n</VRPTx:hetero>
-      </VRPTx:entity_poly_seq>
-      <VRPTx:entity_poly_seq entity_id="1" mon_id="TRP" num="21">
-         <VRPTx:hetero>n</VRPTx:hetero>
-      </VRPTx:entity_poly_seq>
-      <VRPTx:entity_poly_seq entity_id="1" mon_id="GLY" num="22">
-         <VRPTx:hetero>n</VRPTx:hetero>
-      </VRPTx:entity_poly_seq>
-      <VRPTx:entity_poly_seq entity_id="1" mon_id="CYS" num="23">
-         <VRPTx:hetero>n</VRPTx:hetero>
-      </VRPTx:entity_poly_seq>
-      <VRPTx:entity_poly_seq entity_id="1" mon_id="CYS" num="24">
-         <VRPTx:hetero>n</VRPTx:hetero>
-      </VRPTx:entity_poly_seq>
-   </VRPTx:entity_poly_seqCategory>
-   <VRPTx:entryCategory>
-      <VRPTx:entry id="7JIA"/>
-   </VRPTx:entryCategory>
-   <VRPTx:exptlCategory>
-      <VRPTx:exptl entry_id="7JIA" method="SOLUTION NMR"/>
-   </VRPTx:exptlCategory>
-   <VRPTx:pdbx_audit_revision_detailsCategory>
-      <VRPTx:pdbx_audit_revision_details data_content_type="Structure model"
-                                         ordinal="1"
-                                         revision_ordinal="1">
-         <VRPTx:provider>repository</VRPTx:provider>
-         <VRPTx:type>Initial release</VRPTx:type>
-      </VRPTx:pdbx_audit_revision_details>
-   </VRPTx:pdbx_audit_revision_detailsCategory>
-   <VRPTx:pdbx_audit_revision_historyCategory>
-      <VRPTx:pdbx_audit_revision_history data_content_type="Structure model" ordinal="1">
-         <VRPTx:major_revision>1</VRPTx:major_revision>
-         <VRPTx:minor_revision>0</VRPTx:minor_revision>
-         <VRPTx:revision_date>2020-08-26</VRPTx:revision_date>
-      </VRPTx:pdbx_audit_revision_history>
-   </VRPTx:pdbx_audit_revision_historyCategory>
-   <VRPTx:pdbx_database_relatedCategory>
-      <VRPTx:pdbx_database_related content_type="unspecified" db_id="30780" db_name="BMRB">
-         <VRPTx:details>Structure of truncated zebrafish granulin AaE</VRPTx:details>
-      </VRPTx:pdbx_database_related>
-   </VRPTx:pdbx_database_relatedCategory>
-   <VRPTx:pdbx_database_statusCategory>
-      <VRPTx:pdbx_database_status entry_id="7JIA">
-         <VRPTx:SG_entry>N</VRPTx:SG_entry>
-         <VRPTx:deposit_site>RCSB</VRPTx:deposit_site>
-         <VRPTx:pdb_format_compatible>Y</VRPTx:pdb_format_compatible>
-         <VRPTx:process_site>RCSB</VRPTx:process_site>
-         <VRPTx:recvd_initial_deposition_date>2020-07-23</VRPTx:recvd_initial_deposition_date>
-         <VRPTx:status_code>REL</VRPTx:status_code>
-         <VRPTx:status_code_nmr_data>REL</VRPTx:status_code_nmr_data>
-         <VRPTx:validation_created_date>2020-12-09</VRPTx:validation_created_date>
-      </VRPTx:pdbx_database_status>
-   </VRPTx:pdbx_database_statusCategory>
-   <VRPTx:pdbx_nmr_ensembleCategory>
-      <VRPTx:pdbx_nmr_ensemble entry_id="7JIA">
-         <VRPTx:conformer_selection_criteria>target function</VRPTx:conformer_selection_criteria>
-         <VRPTx:conformers_calculated_total_number>50</VRPTx:conformers_calculated_total_number>
-         <VRPTx:conformers_submitted_total_number>20</VRPTx:conformers_submitted_total_number>
-         <VRPTx:atom_consistency_flag>Y</VRPTx:atom_consistency_flag>
-      </VRPTx:pdbx_nmr_ensemble>
-   </VRPTx:pdbx_nmr_ensembleCategory>
-   <VRPTx:pdbx_nmr_exptlCategory>
-      <VRPTx:pdbx_nmr_exptl conditions_id="1" experiment_id="1" solution_id="1">
-         <VRPTx:sample_state>isotropic</VRPTx:sample_state>
-         <VRPTx:spectrometer_id>1</VRPTx:spectrometer_id>
-         <VRPTx:type>2D 1H-1H TOCSY</VRPTx:type>
-      </VRPTx:pdbx_nmr_exptl>
-      <VRPTx:pdbx_nmr_exptl conditions_id="1" experiment_id="2" solution_id="1">
-         <VRPTx:sample_state>isotropic</VRPTx:sample_state>
-         <VRPTx:spectrometer_id>1</VRPTx:spectrometer_id>
-         <VRPTx:type>2D 1H-1H NOESY</VRPTx:type>
-      </VRPTx:pdbx_nmr_exptl>
-      <VRPTx:pdbx_nmr_exptl conditions_id="1" experiment_id="3" solution_id="1">
-         <VRPTx:sample_state>isotropic</VRPTx:sample_state>
-         <VRPTx:spectrometer_id>1</VRPTx:spectrometer_id>
-         <VRPTx:type>2D 1H-1H COSY</VRPTx:type>
-      </VRPTx:pdbx_nmr_exptl>
-      <VRPTx:pdbx_nmr_exptl conditions_id="1" experiment_id="4" solution_id="1">
-         <VRPTx:sample_state>isotropic</VRPTx:sample_state>
-         <VRPTx:spectrometer_id>1</VRPTx:spectrometer_id>
-         <VRPTx:type>2D 1H-13C HSQC</VRPTx:type>
-      </VRPTx:pdbx_nmr_exptl>
-      <VRPTx:pdbx_nmr_exptl conditions_id="1" experiment_id="5" solution_id="1">
-         <VRPTx:sample_state>isotropic</VRPTx:sample_state>
-         <VRPTx:spectrometer_id>1</VRPTx:spectrometer_id>
-         <VRPTx:type>2D 1H-15N HSQC</VRPTx:type>
-      </VRPTx:pdbx_nmr_exptl>
-   </VRPTx:pdbx_nmr_exptlCategory>
-   <VRPTx:pdbx_nmr_exptl_sampleCategory>
-      <VRPTx:pdbx_nmr_exptl_sample component="ZF-N24_3s" solution_id="1">
-         <VRPTx:concentration>0.2</VRPTx:concentration>
-         <VRPTx:concentration_units>mM</VRPTx:concentration_units>
-         <VRPTx:isotopic_labeling>natural abundance</VRPTx:isotopic_labeling>
-      </VRPTx:pdbx_nmr_exptl_sample>
-   </VRPTx:pdbx_nmr_exptl_sampleCategory>
-   <VRPTx:pdbx_nmr_exptl_sample_conditionsCategory>
-      <VRPTx:pdbx_nmr_exptl_sample_conditions conditions_id="1">
-         <VRPTx:ionic_strength>0</VRPTx:ionic_strength>
-         <VRPTx:ionic_strength_units>M</VRPTx:ionic_strength_units>
-         <VRPTx:label>1</VRPTx:label>
-         <VRPTx:pH>3</VRPTx:pH>
-         <VRPTx:pH_units>pH</VRPTx:pH_units>
-         <VRPTx:pressure>ambient</VRPTx:pressure>
-         <VRPTx:temperature>290</VRPTx:temperature>
-         <VRPTx:temperature_units>K</VRPTx:temperature_units>
-      </VRPTx:pdbx_nmr_exptl_sample_conditions>
-   </VRPTx:pdbx_nmr_exptl_sample_conditionsCategory>
-   <VRPTx:pdbx_nmr_refineCategory>
-      <VRPTx:pdbx_nmr_refine entry_id="7JIA" software_ordinal="2">
-         <VRPTx:method>torsion angle dynamics</VRPTx:method>
-      </VRPTx:pdbx_nmr_refine>
-   </VRPTx:pdbx_nmr_refineCategory>
-   <VRPTx:pdbx_nmr_representativeCategory>
-      <VRPTx:pdbx_nmr_representative entry_id="7JIA">
-         <VRPTx:conformer_id>1</VRPTx:conformer_id>
-         <VRPTx:selection_criteria>lowest energy</VRPTx:selection_criteria>
-      </VRPTx:pdbx_nmr_representative>
-   </VRPTx:pdbx_nmr_representativeCategory>
-   <VRPTx:pdbx_nmr_softwareCategory>
-      <VRPTx:pdbx_nmr_software ordinal="1">
-         <VRPTx:authors>Bruker Biospin</VRPTx:authors>
-         <VRPTx:classification>collection</VRPTx:classification>
-         <VRPTx:name>TopSpin</VRPTx:name>
-      </VRPTx:pdbx_nmr_software>
-      <VRPTx:pdbx_nmr_software ordinal="3">
-         <VRPTx:authors>CCPN</VRPTx:authors>
-         <VRPTx:classification>chemical shift assignment</VRPTx:classification>
-         <VRPTx:name>CcpNmr Analysis</VRPTx:name>
-         <VRPTx:version>2</VRPTx:version>
-      </VRPTx:pdbx_nmr_software>
-      <VRPTx:pdbx_nmr_software ordinal="2">
-         <VRPTx:authors>Guntert, Mumenthaler and Wuthrich</VRPTx:authors>
-         <VRPTx:classification>structure calculation</VRPTx:classification>
-         <VRPTx:name>CYANA</VRPTx:name>
-      </VRPTx:pdbx_nmr_software>
-   </VRPTx:pdbx_nmr_softwareCategory>
-   <VRPTx:pdbx_nmr_spectrometerCategory>
-      <VRPTx:pdbx_nmr_spectrometer spectrometer_id="1">
-         <VRPTx:field_strength>600</VRPTx:field_strength>
-         <VRPTx:manufacturer>Bruker</VRPTx:manufacturer>
-         <VRPTx:model>AVANCE</VRPTx:model>
-      </VRPTx:pdbx_nmr_spectrometer>
-   </VRPTx:pdbx_nmr_spectrometerCategory>
-   <VRPTx:pdbx_poly_seq_schemeCategory>
-      <VRPTx:pdbx_poly_seq_scheme asym_id="A" entity_id="1" mon_id="CYS" seq_id="1">
-         <VRPTx:auth_mon_id>CYS</VRPTx:auth_mon_id>
-         <VRPTx:auth_seq_num>1</VRPTx:auth_seq_num>
-         <VRPTx:hetero>n</VRPTx:hetero>
-         <VRPTx:ndb_seq_num>1</VRPTx:ndb_seq_num>
-         <VRPTx:pdb_ins_code xsi:nil="true"/>
-         <VRPTx:pdb_mon_id>CYS</VRPTx:pdb_mon_id>
-         <VRPTx:pdb_seq_num>1</VRPTx:pdb_seq_num>
-         <VRPTx:pdb_strand_id>A</VRPTx:pdb_strand_id>
-      </VRPTx:pdbx_poly_seq_scheme>
-      <VRPTx:pdbx_poly_seq_scheme asym_id="A" entity_id="1" mon_id="GLY" seq_id="2">
-         <VRPTx:auth_mon_id>GLY</VRPTx:auth_mon_id>
-         <VRPTx:auth_seq_num>2</VRPTx:auth_seq_num>
-         <VRPTx:hetero>n</VRPTx:hetero>
-         <VRPTx:ndb_seq_num>2</VRPTx:ndb_seq_num>
-         <VRPTx:pdb_ins_code xsi:nil="true"/>
-         <VRPTx:pdb_mon_id>GLY</VRPTx:pdb_mon_id>
-         <VRPTx:pdb_seq_num>2</VRPTx:pdb_seq_num>
-         <VRPTx:pdb_strand_id>A</VRPTx:pdb_strand_id>
-      </VRPTx:pdbx_poly_seq_scheme>
-      <VRPTx:pdbx_poly_seq_scheme asym_id="A" entity_id="1" mon_id="GLY" seq_id="3">
-         <VRPTx:auth_mon_id>GLY</VRPTx:auth_mon_id>
-         <VRPTx:auth_seq_num>3</VRPTx:auth_seq_num>
-         <VRPTx:hetero>n</VRPTx:hetero>
-         <VRPTx:ndb_seq_num>3</VRPTx:ndb_seq_num>
-         <VRPTx:pdb_ins_code xsi:nil="true"/>
-         <VRPTx:pdb_mon_id>GLY</VRPTx:pdb_mon_id>
-         <VRPTx:pdb_seq_num>3</VRPTx:pdb_seq_num>
-         <VRPTx:pdb_strand_id>A</VRPTx:pdb_strand_id>
-      </VRPTx:pdbx_poly_seq_scheme>
-      <VRPTx:pdbx_poly_seq_scheme asym_id="A" entity_id="1" mon_id="GLY" seq_id="4">
-         <VRPTx:auth_mon_id>GLY</VRPTx:auth_mon_id>
-         <VRPTx:auth_seq_num>4</VRPTx:auth_seq_num>
-         <VRPTx:hetero>n</VRPTx:hetero>
-         <VRPTx:ndb_seq_num>4</VRPTx:ndb_seq_num>
-         <VRPTx:pdb_ins_code xsi:nil="true"/>
-         <VRPTx:pdb_mon_id>GLY</VRPTx:pdb_mon_id>
-         <VRPTx:pdb_seq_num>4</VRPTx:pdb_seq_num>
-         <VRPTx:pdb_strand_id>A</VRPTx:pdb_strand_id>
-      </VRPTx:pdbx_poly_seq_scheme>
-      <VRPTx:pdbx_poly_seq_scheme asym_id="A" entity_id="1" mon_id="PHE" seq_id="5">
-         <VRPTx:auth_mon_id>PHE</VRPTx:auth_mon_id>
-         <VRPTx:auth_seq_num>5</VRPTx:auth_seq_num>
-         <VRPTx:hetero>n</VRPTx:hetero>
-         <VRPTx:ndb_seq_num>5</VRPTx:ndb_seq_num>
-         <VRPTx:pdb_ins_code xsi:nil="true"/>
-         <VRPTx:pdb_mon_id>PHE</VRPTx:pdb_mon_id>
-         <VRPTx:pdb_seq_num>5</VRPTx:pdb_seq_num>
-         <VRPTx:pdb_strand_id>A</VRPTx:pdb_strand_id>
-      </VRPTx:pdbx_poly_seq_scheme>
-      <VRPTx:pdbx_poly_seq_scheme asym_id="A" entity_id="1" mon_id="SER" seq_id="6">
-         <VRPTx:auth_mon_id>SER</VRPTx:auth_mon_id>
-         <VRPTx:auth_seq_num>6</VRPTx:auth_seq_num>
-         <VRPTx:hetero>n</VRPTx:hetero>
-         <VRPTx:ndb_seq_num>6</VRPTx:ndb_seq_num>
-         <VRPTx:pdb_ins_code xsi:nil="true"/>
-         <VRPTx:pdb_mon_id>SER</VRPTx:pdb_mon_id>
-         <VRPTx:pdb_seq_num>6</VRPTx:pdb_seq_num>
-         <VRPTx:pdb_strand_id>A</VRPTx:pdb_strand_id>
-      </VRPTx:pdbx_poly_seq_scheme>
-      <VRPTx:pdbx_poly_seq_scheme asym_id="A" entity_id="1" mon_id="CYS" seq_id="7">
-         <VRPTx:auth_mon_id>CYS</VRPTx:auth_mon_id>
-         <VRPTx:auth_seq_num>7</VRPTx:auth_seq_num>
-         <VRPTx:hetero>n</VRPTx:hetero>
-         <VRPTx:ndb_seq_num>7</VRPTx:ndb_seq_num>
-         <VRPTx:pdb_ins_code xsi:nil="true"/>
-         <VRPTx:pdb_mon_id>CYS</VRPTx:pdb_mon_id>
-         <VRPTx:pdb_seq_num>7</VRPTx:pdb_seq_num>
-         <VRPTx:pdb_strand_id>A</VRPTx:pdb_strand_id>
-      </VRPTx:pdbx_poly_seq_scheme>
-      <VRPTx:pdbx_poly_seq_scheme asym_id="A" entity_id="1" mon_id="HIS" seq_id="8">
-         <VRPTx:auth_mon_id>HIS</VRPTx:auth_mon_id>
-         <VRPTx:auth_seq_num>8</VRPTx:auth_seq_num>
-         <VRPTx:hetero>n</VRPTx:hetero>
-         <VRPTx:ndb_seq_num>8</VRPTx:ndb_seq_num>
-         <VRPTx:pdb_ins_code xsi:nil="true"/>
-         <VRPTx:pdb_mon_id>HIS</VRPTx:pdb_mon_id>
-         <VRPTx:pdb_seq_num>8</VRPTx:pdb_seq_num>
-         <VRPTx:pdb_strand_id>A</VRPTx:pdb_strand_id>
-      </VRPTx:pdbx_poly_seq_scheme>
-      <VRPTx:pdbx_poly_seq_scheme asym_id="A" entity_id="1" mon_id="ASP" seq_id="9">
-         <VRPTx:auth_mon_id>ASP</VRPTx:auth_mon_id>
-         <VRPTx:auth_seq_num>9</VRPTx:auth_seq_num>
-         <VRPTx:hetero>n</VRPTx:hetero>
-         <VRPTx:ndb_seq_num>9</VRPTx:ndb_seq_num>
-         <VRPTx:pdb_ins_code xsi:nil="true"/>
-         <VRPTx:pdb_mon_id>ASP</VRPTx:pdb_mon_id>
-         <VRPTx:pdb_seq_num>9</VRPTx:pdb_seq_num>
-         <VRPTx:pdb_strand_id>A</VRPTx:pdb_strand_id>
-      </VRPTx:pdbx_poly_seq_scheme>
-      <VRPTx:pdbx_poly_seq_scheme asym_id="A" entity_id="1" mon_id="GLY" seq_id="10">
-         <VRPTx:auth_mon_id>GLY</VRPTx:auth_mon_id>
-         <VRPTx:auth_seq_num>10</VRPTx:auth_seq_num>
-         <VRPTx:hetero>n</VRPTx:hetero>
-         <VRPTx:ndb_seq_num>10</VRPTx:ndb_seq_num>
-         <VRPTx:pdb_ins_code xsi:nil="true"/>
-         <VRPTx:pdb_mon_id>GLY</VRPTx:pdb_mon_id>
-         <VRPTx:pdb_seq_num>10</VRPTx:pdb_seq_num>
-         <VRPTx:pdb_strand_id>A</VRPTx:pdb_strand_id>
-      </VRPTx:pdbx_poly_seq_scheme>
-      <VRPTx:pdbx_poly_seq_scheme asym_id="A" entity_id="1" mon_id="GLU" seq_id="11">
-         <VRPTx:auth_mon_id>GLU</VRPTx:auth_mon_id>
-         <VRPTx:auth_seq_num>11</VRPTx:auth_seq_num>
-         <VRPTx:hetero>n</VRPTx:hetero>
-         <VRPTx:ndb_seq_num>11</VRPTx:ndb_seq_num>
-         <VRPTx:pdb_ins_code xsi:nil="true"/>
-         <VRPTx:pdb_mon_id>GLU</VRPTx:pdb_mon_id>
-         <VRPTx:pdb_seq_num>11</VRPTx:pdb_seq_num>
-         <VRPTx:pdb_strand_id>A</VRPTx:pdb_strand_id>
-      </VRPTx:pdbx_poly_seq_scheme>
-      <VRPTx:pdbx_poly_seq_scheme asym_id="A" entity_id="1" mon_id="THR" seq_id="12">
-         <VRPTx:auth_mon_id>THR</VRPTx:auth_mon_id>
-         <VRPTx:auth_seq_num>12</VRPTx:auth_seq_num>
-         <VRPTx:hetero>n</VRPTx:hetero>
-         <VRPTx:ndb_seq_num>12</VRPTx:ndb_seq_num>
-         <VRPTx:pdb_ins_code xsi:nil="true"/>
-         <VRPTx:pdb_mon_id>THR</VRPTx:pdb_mon_id>
-         <VRPTx:pdb_seq_num>12</VRPTx:pdb_seq_num>
-         <VRPTx:pdb_strand_id>A</VRPTx:pdb_strand_id>
-      </VRPTx:pdbx_poly_seq_scheme>
-      <VRPTx:pdbx_poly_seq_scheme asym_id="A" entity_id="1" mon_id="CYS" seq_id="13">
-         <VRPTx:auth_mon_id>CYS</VRPTx:auth_mon_id>
-         <VRPTx:auth_seq_num>13</VRPTx:auth_seq_num>
-         <VRPTx:hetero>n</VRPTx:hetero>
-         <VRPTx:ndb_seq_num>13</VRPTx:ndb_seq_num>
-         <VRPTx:pdb_ins_code xsi:nil="true"/>
-         <VRPTx:pdb_mon_id>CYS</VRPTx:pdb_mon_id>
-         <VRPTx:pdb_seq_num>13</VRPTx:pdb_seq_num>
-         <VRPTx:pdb_strand_id>A</VRPTx:pdb_strand_id>
-      </VRPTx:pdbx_poly_seq_scheme>
-      <VRPTx:pdbx_poly_seq_scheme asym_id="A" entity_id="1" mon_id="CYS" seq_id="14">
-         <VRPTx:auth_mon_id>CYS</VRPTx:auth_mon_id>
-         <VRPTx:auth_seq_num>14</VRPTx:auth_seq_num>
-         <VRPTx:hetero>n</VRPTx:hetero>
-         <VRPTx:ndb_seq_num>14</VRPTx:ndb_seq_num>
-         <VRPTx:pdb_ins_code xsi:nil="true"/>
-         <VRPTx:pdb_mon_id>CYS</VRPTx:pdb_mon_id>
-         <VRPTx:pdb_seq_num>14</VRPTx:pdb_seq_num>
-         <VRPTx:pdb_strand_id>A</VRPTx:pdb_strand_id>
-      </VRPTx:pdbx_poly_seq_scheme>
-      <VRPTx:pdbx_poly_seq_scheme asym_id="A" entity_id="1" mon_id="PRO" seq_id="15">
-         <VRPTx:auth_mon_id>PRO</VRPTx:auth_mon_id>
-         <VRPTx:auth_seq_num>15</VRPTx:auth_seq_num>
-         <VRPTx:hetero>n</VRPTx:hetero>
-         <VRPTx:ndb_seq_num>15</VRPTx:ndb_seq_num>
-         <VRPTx:pdb_ins_code xsi:nil="true"/>
-         <VRPTx:pdb_mon_id>PRO</VRPTx:pdb_mon_id>
-         <VRPTx:pdb_seq_num>15</VRPTx:pdb_seq_num>
-         <VRPTx:pdb_strand_id>A</VRPTx:pdb_strand_id>
-      </VRPTx:pdbx_poly_seq_scheme>
-      <VRPTx:pdbx_poly_seq_scheme asym_id="A" entity_id="1" mon_id="THR" seq_id="16">
-         <VRPTx:auth_mon_id>THR</VRPTx:auth_mon_id>
-         <VRPTx:auth_seq_num>16</VRPTx:auth_seq_num>
-         <VRPTx:hetero>n</VRPTx:hetero>
-         <VRPTx:ndb_seq_num>16</VRPTx:ndb_seq_num>
-         <VRPTx:pdb_ins_code xsi:nil="true"/>
-         <VRPTx:pdb_mon_id>THR</VRPTx:pdb_mon_id>
-         <VRPTx:pdb_seq_num>16</VRPTx:pdb_seq_num>
-         <VRPTx:pdb_strand_id>A</VRPTx:pdb_strand_id>
-      </VRPTx:pdbx_poly_seq_scheme>
-      <VRPTx:pdbx_poly_seq_scheme asym_id="A" entity_id="1" mon_id="SER" seq_id="17">
-         <VRPTx:auth_mon_id>SER</VRPTx:auth_mon_id>
-         <VRPTx:auth_seq_num>17</VRPTx:auth_seq_num>
-         <VRPTx:hetero>n</VRPTx:hetero>
-         <VRPTx:ndb_seq_num>17</VRPTx:ndb_seq_num>
-         <VRPTx:pdb_ins_code xsi:nil="true"/>
-         <VRPTx:pdb_mon_id>SER</VRPTx:pdb_mon_id>
-         <VRPTx:pdb_seq_num>17</VRPTx:pdb_seq_num>
-         <VRPTx:pdb_strand_id>A</VRPTx:pdb_strand_id>
-      </VRPTx:pdbx_poly_seq_scheme>
-      <VRPTx:pdbx_poly_seq_scheme asym_id="A" entity_id="1" mon_id="GLN" seq_id="18">
-         <VRPTx:auth_mon_id>GLN</VRPTx:auth_mon_id>
-         <VRPTx:auth_seq_num>18</VRPTx:auth_seq_num>
-         <VRPTx:hetero>n</VRPTx:hetero>
-         <VRPTx:ndb_seq_num>18</VRPTx:ndb_seq_num>
-         <VRPTx:pdb_ins_code xsi:nil="true"/>
-         <VRPTx:pdb_mon_id>GLN</VRPTx:pdb_mon_id>
-         <VRPTx:pdb_seq_num>18</VRPTx:pdb_seq_num>
-         <VRPTx:pdb_strand_id>A</VRPTx:pdb_strand_id>
-      </VRPTx:pdbx_poly_seq_scheme>
-      <VRPTx:pdbx_poly_seq_scheme asym_id="A" entity_id="1" mon_id="THR" seq_id="19">
-         <VRPTx:auth_mon_id>THR</VRPTx:auth_mon_id>
-         <VRPTx:auth_seq_num>19</VRPTx:auth_seq_num>
-         <VRPTx:hetero>n</VRPTx:hetero>
-         <VRPTx:ndb_seq_num>19</VRPTx:ndb_seq_num>
-         <VRPTx:pdb_ins_code xsi:nil="true"/>
-         <VRPTx:pdb_mon_id>THR</VRPTx:pdb_mon_id>
-         <VRPTx:pdb_seq_num>19</VRPTx:pdb_seq_num>
-         <VRPTx:pdb_strand_id>A</VRPTx:pdb_strand_id>
-      </VRPTx:pdbx_poly_seq_scheme>
-      <VRPTx:pdbx_poly_seq_scheme asym_id="A" entity_id="1" mon_id="THR" seq_id="20">
-         <VRPTx:auth_mon_id>THR</VRPTx:auth_mon_id>
-         <VRPTx:auth_seq_num>20</VRPTx:auth_seq_num>
-         <VRPTx:hetero>n</VRPTx:hetero>
-         <VRPTx:ndb_seq_num>20</VRPTx:ndb_seq_num>
-         <VRPTx:pdb_ins_code xsi:nil="true"/>
-         <VRPTx:pdb_mon_id>THR</VRPTx:pdb_mon_id>
-         <VRPTx:pdb_seq_num>20</VRPTx:pdb_seq_num>
-         <VRPTx:pdb_strand_id>A</VRPTx:pdb_strand_id>
-      </VRPTx:pdbx_poly_seq_scheme>
-      <VRPTx:pdbx_poly_seq_scheme asym_id="A" entity_id="1" mon_id="TRP" seq_id="21">
-         <VRPTx:auth_mon_id>TRP</VRPTx:auth_mon_id>
-         <VRPTx:auth_seq_num>21</VRPTx:auth_seq_num>
-         <VRPTx:hetero>n</VRPTx:hetero>
-         <VRPTx:ndb_seq_num>21</VRPTx:ndb_seq_num>
-         <VRPTx:pdb_ins_code xsi:nil="true"/>
-         <VRPTx:pdb_mon_id>TRP</VRPTx:pdb_mon_id>
-         <VRPTx:pdb_seq_num>21</VRPTx:pdb_seq_num>
-         <VRPTx:pdb_strand_id>A</VRPTx:pdb_strand_id>
-      </VRPTx:pdbx_poly_seq_scheme>
-      <VRPTx:pdbx_poly_seq_scheme asym_id="A" entity_id="1" mon_id="GLY" seq_id="22">
-         <VRPTx:auth_mon_id>GLY</VRPTx:auth_mon_id>
-         <VRPTx:auth_seq_num>22</VRPTx:auth_seq_num>
-         <VRPTx:hetero>n</VRPTx:hetero>
-         <VRPTx:ndb_seq_num>22</VRPTx:ndb_seq_num>
-         <VRPTx:pdb_ins_code xsi:nil="true"/>
-         <VRPTx:pdb_mon_id>GLY</VRPTx:pdb_mon_id>
-         <VRPTx:pdb_seq_num>22</VRPTx:pdb_seq_num>
-         <VRPTx:pdb_strand_id>A</VRPTx:pdb_strand_id>
-      </VRPTx:pdbx_poly_seq_scheme>
-      <VRPTx:pdbx_poly_seq_scheme asym_id="A" entity_id="1" mon_id="CYS" seq_id="23">
-         <VRPTx:auth_mon_id>CYS</VRPTx:auth_mon_id>
-         <VRPTx:auth_seq_num>23</VRPTx:auth_seq_num>
-         <VRPTx:hetero>n</VRPTx:hetero>
-         <VRPTx:ndb_seq_num>23</VRPTx:ndb_seq_num>
-         <VRPTx:pdb_ins_code xsi:nil="true"/>
-         <VRPTx:pdb_mon_id>CYS</VRPTx:pdb_mon_id>
-         <VRPTx:pdb_seq_num>23</VRPTx:pdb_seq_num>
-         <VRPTx:pdb_strand_id>A</VRPTx:pdb_strand_id>
-      </VRPTx:pdbx_poly_seq_scheme>
-      <VRPTx:pdbx_poly_seq_scheme asym_id="A" entity_id="1" mon_id="CYS" seq_id="24">
-         <VRPTx:auth_mon_id>CYS</VRPTx:auth_mon_id>
-         <VRPTx:auth_seq_num>24</VRPTx:auth_seq_num>
-         <VRPTx:hetero>n</VRPTx:hetero>
-         <VRPTx:ndb_seq_num>24</VRPTx:ndb_seq_num>
-         <VRPTx:pdb_ins_code xsi:nil="true"/>
-         <VRPTx:pdb_mon_id>CYS</VRPTx:pdb_mon_id>
-         <VRPTx:pdb_seq_num>24</VRPTx:pdb_seq_num>
-         <VRPTx:pdb_strand_id>A</VRPTx:pdb_strand_id>
-      </VRPTx:pdbx_poly_seq_scheme>
-   </VRPTx:pdbx_poly_seq_schemeCategory>
-   <VRPTx:pdbx_struct_assemblyCategory>
-      <VRPTx:pdbx_struct_assembly id="1">
-         <VRPTx:details>author_defined_assembly</VRPTx:details>
-         <VRPTx:oligomeric_count>1</VRPTx:oligomeric_count>
-         <VRPTx:oligomeric_details>monomeric</VRPTx:oligomeric_details>
-      </VRPTx:pdbx_struct_assembly>
-   </VRPTx:pdbx_struct_assemblyCategory>
-   <VRPTx:pdbx_struct_assembly_genCategory>
-      <VRPTx:pdbx_struct_assembly_gen assembly_id="1" asym_id_list="A" oper_expression="1"/>
-   </VRPTx:pdbx_struct_assembly_genCategory>
-   <VRPTx:pdbx_struct_oper_listCategory>
-      <VRPTx:pdbx_struct_oper_list id="1">
-         <VRPTx:matrix11>1.0000000000</VRPTx:matrix11>
-         <VRPTx:matrix12>0.0000000000</VRPTx:matrix12>
-         <VRPTx:matrix13>0.0000000000</VRPTx:matrix13>
-         <VRPTx:matrix21>0.0000000000</VRPTx:matrix21>
-         <VRPTx:matrix22>1.0000000000</VRPTx:matrix22>
-         <VRPTx:matrix23>0.0000000000</VRPTx:matrix23>
-         <VRPTx:matrix31>0.0000000000</VRPTx:matrix31>
-         <VRPTx:matrix32>0.0000000000</VRPTx:matrix32>
-         <VRPTx:matrix33>1.0000000000</VRPTx:matrix33>
-         <VRPTx:name>1_555</VRPTx:name>
-         <VRPTx:type>identity operation</VRPTx:type>
-         <VRPTx:vector1>0.0000000000</VRPTx:vector1>
-         <VRPTx:vector2>0.0000000000</VRPTx:vector2>
-         <VRPTx:vector3>0.0000000000</VRPTx:vector3>
-      </VRPTx:pdbx_struct_oper_list>
-   </VRPTx:pdbx_struct_oper_listCategory>
-   <VRPTx:pdbx_struct_sheet_hbondCategory>
-      <VRPTx:pdbx_struct_sheet_hbond range_id_1="1" range_id_2="2" sheet_id="AA1">
-         <VRPTx:range_1_auth_asym_id>A</VRPTx:range_1_auth_asym_id>
-         <VRPTx:range_1_auth_atom_id>N</VRPTx:range_1_auth_atom_id>
-         <VRPTx:range_1_auth_comp_id>CYS</VRPTx:range_1_auth_comp_id>
-         <VRPTx:range_1_auth_seq_id>14</VRPTx:range_1_auth_seq_id>
-         <VRPTx:range_1_label_asym_id>A</VRPTx:range_1_label_asym_id>
-         <VRPTx:range_1_label_atom_id>N</VRPTx:range_1_label_atom_id>
-         <VRPTx:range_1_label_comp_id>CYS</VRPTx:range_1_label_comp_id>
-         <VRPTx:range_1_label_seq_id>14</VRPTx:range_1_label_seq_id>
-         <VRPTx:range_2_auth_asym_id>A</VRPTx:range_2_auth_asym_id>
-         <VRPTx:range_2_auth_atom_id>O</VRPTx:range_2_auth_atom_id>
-         <VRPTx:range_2_auth_comp_id>GLY</VRPTx:range_2_auth_comp_id>
-         <VRPTx:range_2_auth_seq_id>22</VRPTx:range_2_auth_seq_id>
-         <VRPTx:range_2_label_asym_id>A</VRPTx:range_2_label_asym_id>
-         <VRPTx:range_2_label_atom_id>O</VRPTx:range_2_label_atom_id>
-         <VRPTx:range_2_label_comp_id>GLY</VRPTx:range_2_label_comp_id>
-         <VRPTx:range_2_label_seq_id>22</VRPTx:range_2_label_seq_id>
-      </VRPTx:pdbx_struct_sheet_hbond>
-   </VRPTx:pdbx_struct_sheet_hbondCategory>
-   <VRPTx:pdbx_validate_torsionCategory>
-      <VRPTx:pdbx_validate_torsion id="1">
-         <VRPTx:PDB_model_num>11</VRPTx:PDB_model_num>
-         <VRPTx:auth_asym_id>A</VRPTx:auth_asym_id>
-         <VRPTx:auth_comp_id>PHE</VRPTx:auth_comp_id>
-         <VRPTx:auth_seq_id>5</VRPTx:auth_seq_id>
-         <VRPTx:phi>-62.42</VRPTx:phi>
-         <VRPTx:psi>-176.15</VRPTx:psi>
-      </VRPTx:pdbx_validate_torsion>
-      <VRPTx:pdbx_validate_torsion id="2">
-         <VRPTx:PDB_model_num>19</VRPTx:PDB_model_num>
-         <VRPTx:auth_asym_id>A</VRPTx:auth_asym_id>
-         <VRPTx:auth_comp_id>SER</VRPTx:auth_comp_id>
-         <VRPTx:auth_seq_id>17</VRPTx:auth_seq_id>
-         <VRPTx:phi>-125.93</VRPTx:phi>
-         <VRPTx:psi>-169.82</VRPTx:psi>
-      </VRPTx:pdbx_validate_torsion>
-   </VRPTx:pdbx_validate_torsionCategory>
-   <VRPTx:structCategory>
-      <VRPTx:struct entry_id="7JIA">
-         <VRPTx:pdbx_CASP_flag>N</VRPTx:pdbx_CASP_flag>
-         <VRPTx:pdbx_descriptor>Granulin-A</VRPTx:pdbx_descriptor>
-         <VRPTx:title>Structure of truncated zebrafish granulin AaE</VRPTx:title>
-      </VRPTx:struct>
-   </VRPTx:structCategory>
-   <VRPTx:struct_asymCategory>
-      <VRPTx:struct_asym id="A">
-         <VRPTx:entity_id>1</VRPTx:entity_id>
-         <VRPTx:pdbx_blank_PDB_chainid_flag>N</VRPTx:pdbx_blank_PDB_chainid_flag>
-         <VRPTx:pdbx_modified>N</VRPTx:pdbx_modified>
-      </VRPTx:struct_asym>
-   </VRPTx:struct_asymCategory>
-   <VRPTx:struct_connCategory>
-      <VRPTx:struct_conn id="disulf1">
-         <VRPTx:conn_type_id>disulf</VRPTx:conn_type_id>
-         <VRPTx:pdbx_dist_value>2.046</VRPTx:pdbx_dist_value>
-         <VRPTx:ptnr1_auth_asym_id>A</VRPTx:ptnr1_auth_asym_id>
-         <VRPTx:ptnr1_auth_comp_id>CYS</VRPTx:ptnr1_auth_comp_id>
-         <VRPTx:ptnr1_auth_seq_id>1</VRPTx:ptnr1_auth_seq_id>
-         <VRPTx:ptnr1_label_asym_id>A</VRPTx:ptnr1_label_asym_id>
-         <VRPTx:ptnr1_label_atom_id>SG</VRPTx:ptnr1_label_atom_id>
-         <VRPTx:ptnr1_label_comp_id>CYS</VRPTx:ptnr1_label_comp_id>
-         <VRPTx:ptnr1_label_seq_id>1</VRPTx:ptnr1_label_seq_id>
-         <VRPTx:ptnr1_symmetry>1_555</VRPTx:ptnr1_symmetry>
-         <VRPTx:ptnr2_auth_asym_id>A</VRPTx:ptnr2_auth_asym_id>
-         <VRPTx:ptnr2_auth_comp_id>CYS</VRPTx:ptnr2_auth_comp_id>
-         <VRPTx:ptnr2_auth_seq_id>13</VRPTx:ptnr2_auth_seq_id>
-         <VRPTx:ptnr2_label_asym_id>A</VRPTx:ptnr2_label_asym_id>
-         <VRPTx:ptnr2_label_atom_id>SG</VRPTx:ptnr2_label_atom_id>
-         <VRPTx:ptnr2_label_comp_id>CYS</VRPTx:ptnr2_label_comp_id>
-         <VRPTx:ptnr2_label_seq_id>13</VRPTx:ptnr2_label_seq_id>
-         <VRPTx:ptnr2_symmetry>1_555</VRPTx:ptnr2_symmetry>
-      </VRPTx:struct_conn>
-      <VRPTx:struct_conn id="disulf2">
-         <VRPTx:conn_type_id>disulf</VRPTx:conn_type_id>
-         <VRPTx:pdbx_dist_value>2.005</VRPTx:pdbx_dist_value>
-         <VRPTx:ptnr1_auth_asym_id>A</VRPTx:ptnr1_auth_asym_id>
-         <VRPTx:ptnr1_auth_comp_id>CYS</VRPTx:ptnr1_auth_comp_id>
-         <VRPTx:ptnr1_auth_seq_id>7</VRPTx:ptnr1_auth_seq_id>
-         <VRPTx:ptnr1_label_asym_id>A</VRPTx:ptnr1_label_asym_id>
-         <VRPTx:ptnr1_label_atom_id>SG</VRPTx:ptnr1_label_atom_id>
-         <VRPTx:ptnr1_label_comp_id>CYS</VRPTx:ptnr1_label_comp_id>
-         <VRPTx:ptnr1_label_seq_id>7</VRPTx:ptnr1_label_seq_id>
-         <VRPTx:ptnr1_symmetry>1_555</VRPTx:ptnr1_symmetry>
-         <VRPTx:ptnr2_auth_asym_id>A</VRPTx:ptnr2_auth_asym_id>
-         <VRPTx:ptnr2_auth_comp_id>CYS</VRPTx:ptnr2_auth_comp_id>
-         <VRPTx:ptnr2_auth_seq_id>23</VRPTx:ptnr2_auth_seq_id>
-         <VRPTx:ptnr2_label_asym_id>A</VRPTx:ptnr2_label_asym_id>
-         <VRPTx:ptnr2_label_atom_id>SG</VRPTx:ptnr2_label_atom_id>
-         <VRPTx:ptnr2_label_comp_id>CYS</VRPTx:ptnr2_label_comp_id>
-         <VRPTx:ptnr2_label_seq_id>23</VRPTx:ptnr2_label_seq_id>
-         <VRPTx:ptnr2_symmetry>1_555</VRPTx:ptnr2_symmetry>
-      </VRPTx:struct_conn>
-      <VRPTx:struct_conn id="disulf3">
-         <VRPTx:conn_type_id>disulf</VRPTx:conn_type_id>
-         <VRPTx:pdbx_dist_value>2.008</VRPTx:pdbx_dist_value>
-         <VRPTx:ptnr1_auth_asym_id>A</VRPTx:ptnr1_auth_asym_id>
-         <VRPTx:ptnr1_auth_comp_id>CYS</VRPTx:ptnr1_auth_comp_id>
-         <VRPTx:ptnr1_auth_seq_id>14</VRPTx:ptnr1_auth_seq_id>
-         <VRPTx:ptnr1_label_asym_id>A</VRPTx:ptnr1_label_asym_id>
-         <VRPTx:ptnr1_label_atom_id>SG</VRPTx:ptnr1_label_atom_id>
-         <VRPTx:ptnr1_label_comp_id>CYS</VRPTx:ptnr1_label_comp_id>
-         <VRPTx:ptnr1_label_seq_id>14</VRPTx:ptnr1_label_seq_id>
-         <VRPTx:ptnr1_symmetry>1_555</VRPTx:ptnr1_symmetry>
-         <VRPTx:ptnr2_auth_asym_id>A</VRPTx:ptnr2_auth_asym_id>
-         <VRPTx:ptnr2_auth_comp_id>CYS</VRPTx:ptnr2_auth_comp_id>
-         <VRPTx:ptnr2_auth_seq_id>24</VRPTx:ptnr2_auth_seq_id>
-         <VRPTx:ptnr2_label_asym_id>A</VRPTx:ptnr2_label_asym_id>
-         <VRPTx:ptnr2_label_atom_id>SG</VRPTx:ptnr2_label_atom_id>
-         <VRPTx:ptnr2_label_comp_id>CYS</VRPTx:ptnr2_label_comp_id>
-         <VRPTx:ptnr2_label_seq_id>24</VRPTx:ptnr2_label_seq_id>
-         <VRPTx:ptnr2_symmetry>1_555</VRPTx:ptnr2_symmetry>
-      </VRPTx:struct_conn>
-   </VRPTx:struct_connCategory>
-   <VRPTx:struct_conn_typeCategory>
-      <VRPTx:struct_conn_type id="disulf"/>
-   </VRPTx:struct_conn_typeCategory>
-   <VRPTx:struct_refCategory>
-      <VRPTx:struct_ref id="1">
-         <VRPTx:db_code>Q8QGN9_DANRE</VRPTx:db_code>
-         <VRPTx:db_name>UNP</VRPTx:db_name>
-         <VRPTx:entity_id>1</VRPTx:entity_id>
-         <VRPTx:pdbx_align_begin>796</VRPTx:pdbx_align_begin>
-         <VRPTx:pdbx_db_accession>Q8QGN9</VRPTx:pdbx_db_accession>
-         <VRPTx:pdbx_seq_one_letter_code>CGGGFSCHDGETCCPTSQTTWGCC</VRPTx:pdbx_seq_one_letter_code>
-      </VRPTx:struct_ref>
-   </VRPTx:struct_refCategory>
-   <VRPTx:struct_ref_seqCategory>
-      <VRPTx:struct_ref_seq align_id="1">
-         <VRPTx:db_align_beg>796</VRPTx:db_align_beg>
-         <VRPTx:db_align_end>819</VRPTx:db_align_end>
-         <VRPTx:pdbx_PDB_id_code>7JIA</VRPTx:pdbx_PDB_id_code>
-         <VRPTx:pdbx_auth_seq_align_beg>1</VRPTx:pdbx_auth_seq_align_beg>
-         <VRPTx:pdbx_auth_seq_align_end>24</VRPTx:pdbx_auth_seq_align_end>
-         <VRPTx:pdbx_db_accession>Q8QGN9</VRPTx:pdbx_db_accession>
-         <VRPTx:pdbx_strand_id>A</VRPTx:pdbx_strand_id>
-         <VRPTx:ref_id>1</VRPTx:ref_id>
-         <VRPTx:seq_align_beg>1</VRPTx:seq_align_beg>
-         <VRPTx:seq_align_end>24</VRPTx:seq_align_end>
-      </VRPTx:struct_ref_seq>
-   </VRPTx:struct_ref_seqCategory>
-   <VRPTx:struct_sheetCategory>
-      <VRPTx:struct_sheet id="AA1">
-         <VRPTx:number_strands>2</VRPTx:number_strands>
-      </VRPTx:struct_sheet>
-   </VRPTx:struct_sheetCategory>
-   <VRPTx:struct_sheet_orderCategory>
-      <VRPTx:struct_sheet_order range_id_1="1" range_id_2="2" sheet_id="AA1">
-         <VRPTx:sense>anti-parallel</VRPTx:sense>
-      </VRPTx:struct_sheet_order>
-   </VRPTx:struct_sheet_orderCategory>
-   <VRPTx:struct_sheet_rangeCategory>
-      <VRPTx:struct_sheet_range id="1" sheet_id="AA1">
-         <VRPTx:beg_auth_asym_id>A</VRPTx:beg_auth_asym_id>
-         <VRPTx:beg_auth_comp_id>THR</VRPTx:beg_auth_comp_id>
-         <VRPTx:beg_auth_seq_id>12</VRPTx:beg_auth_seq_id>
-         <VRPTx:beg_label_asym_id>A</VRPTx:beg_label_asym_id>
-         <VRPTx:beg_label_comp_id>THR</VRPTx:beg_label_comp_id>
-         <VRPTx:beg_label_seq_id>12</VRPTx:beg_label_seq_id>
-         <VRPTx:end_auth_asym_id>A</VRPTx:end_auth_asym_id>
-         <VRPTx:end_auth_comp_id>CYS</VRPTx:end_auth_comp_id>
-         <VRPTx:end_auth_seq_id>14</VRPTx:end_auth_seq_id>
-         <VRPTx:end_label_asym_id>A</VRPTx:end_label_asym_id>
-         <VRPTx:end_label_comp_id>CYS</VRPTx:end_label_comp_id>
-         <VRPTx:end_label_seq_id>14</VRPTx:end_label_seq_id>
-      </VRPTx:struct_sheet_range>
-      <VRPTx:struct_sheet_range id="2" sheet_id="AA1">
-         <VRPTx:beg_auth_asym_id>A</VRPTx:beg_auth_asym_id>
-         <VRPTx:beg_auth_comp_id>GLY</VRPTx:beg_auth_comp_id>
-         <VRPTx:beg_auth_seq_id>22</VRPTx:beg_auth_seq_id>
-         <VRPTx:beg_label_asym_id>A</VRPTx:beg_label_asym_id>
-         <VRPTx:beg_label_comp_id>GLY</VRPTx:beg_label_comp_id>
-         <VRPTx:beg_label_seq_id>22</VRPTx:beg_label_seq_id>
-         <VRPTx:end_auth_asym_id>A</VRPTx:end_auth_asym_id>
-         <VRPTx:end_auth_comp_id>CYS</VRPTx:end_auth_comp_id>
-         <VRPTx:end_auth_seq_id>24</VRPTx:end_auth_seq_id>
-         <VRPTx:end_label_asym_id>A</VRPTx:end_label_asym_id>
-         <VRPTx:end_label_comp_id>CYS</VRPTx:end_label_comp_id>
-         <VRPTx:end_label_seq_id>24</VRPTx:end_label_seq_id>
-      </VRPTx:struct_sheet_range>
-   </VRPTx:struct_sheet_rangeCategory>
-   <VRPTx:pdbx_sifts_unp_segmentsCategory>
-      <VRPTx:pdbx_sifts_unp_segments entity_id="1"
-                                     asym_id="A"
-                                     unp_acc="Q8QGN9"
-                                     segment_id="1"
-                                     instance_id="1">
-         <VRPTx:unp_start>796</VRPTx:unp_start>
-         <VRPTx:unp_end>819</VRPTx:unp_end>
-         <VRPTx:seq_id_start>1</VRPTx:seq_id_start>
-         <VRPTx:seq_id_end>24</VRPTx:seq_id_end>
-         <VRPTx:best_mapping>Y</VRPTx:best_mapping>
-         <VRPTx:identity>1.000</VRPTx:identity>
-      </VRPTx:pdbx_sifts_unp_segments>
-   </VRPTx:pdbx_sifts_unp_segmentsCategory>
+<?xml version="1.0"?>
+<VRPTx:datablock xmlns:VRPTx="http://pdbml.pdb.org/schema/pdbx-validation-v4.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" datablockName="7JIA-noatom-ext" xsi:schemaLocation="http://pdbml.pdb.org/schema/pdbx-validation-v4.xsd pdbx-validation-v4.xsd">
+  <VRPTx:entityCategory>
+    <VRPTx:entity id="1">
+      <VRPTx:formula_weight>2441.677</VRPTx:formula_weight>
+      <VRPTx:pdbx_description>Granulin-A</VRPTx:pdbx_description>
+      <VRPTx:pdbx_number_of_molecules>1</VRPTx:pdbx_number_of_molecules>
+      <VRPTx:src_method>syn</VRPTx:src_method>
+      <VRPTx:type>polymer</VRPTx:type>
+    </VRPTx:entity>
+  </VRPTx:entityCategory>
+  <VRPTx:entity_polyCategory>
+    <VRPTx:entity_poly entity_id="1">
+      <VRPTx:nstd_linkage>no</VRPTx:nstd_linkage>
+      <VRPTx:nstd_monomer>no</VRPTx:nstd_monomer>
+      <VRPTx:pdbx_seq_one_letter_code>CGGGFSCHDGETCCPTSQTTWGCC</VRPTx:pdbx_seq_one_letter_code>
+      <VRPTx:pdbx_seq_one_letter_code_can>CGGGFSCHDGETCCPTSQTTWGCC</VRPTx:pdbx_seq_one_letter_code_can>
+      <VRPTx:pdbx_strand_id>A</VRPTx:pdbx_strand_id>
+      <VRPTx:type>polypeptide(L)</VRPTx:type>
+    </VRPTx:entity_poly>
+  </VRPTx:entity_polyCategory>
+  <VRPTx:entity_poly_seqCategory>
+    <VRPTx:entity_poly_seq entity_id="1" mon_id="CYS" num="1">
+      <VRPTx:hetero>n</VRPTx:hetero>
+    </VRPTx:entity_poly_seq>
+    <VRPTx:entity_poly_seq entity_id="1" mon_id="GLY" num="2">
+      <VRPTx:hetero>n</VRPTx:hetero>
+    </VRPTx:entity_poly_seq>
+    <VRPTx:entity_poly_seq entity_id="1" mon_id="GLY" num="3">
+      <VRPTx:hetero>n</VRPTx:hetero>
+    </VRPTx:entity_poly_seq>
+    <VRPTx:entity_poly_seq entity_id="1" mon_id="GLY" num="4">
+      <VRPTx:hetero>n</VRPTx:hetero>
+    </VRPTx:entity_poly_seq>
+    <VRPTx:entity_poly_seq entity_id="1" mon_id="PHE" num="5">
+      <VRPTx:hetero>n</VRPTx:hetero>
+    </VRPTx:entity_poly_seq>
+    <VRPTx:entity_poly_seq entity_id="1" mon_id="SER" num="6">
+      <VRPTx:hetero>n</VRPTx:hetero>
+    </VRPTx:entity_poly_seq>
+    <VRPTx:entity_poly_seq entity_id="1" mon_id="CYS" num="7">
+      <VRPTx:hetero>n</VRPTx:hetero>
+    </VRPTx:entity_poly_seq>
+    <VRPTx:entity_poly_seq entity_id="1" mon_id="HIS" num="8">
+      <VRPTx:hetero>n</VRPTx:hetero>
+    </VRPTx:entity_poly_seq>
+    <VRPTx:entity_poly_seq entity_id="1" mon_id="ASP" num="9">
+      <VRPTx:hetero>n</VRPTx:hetero>
+    </VRPTx:entity_poly_seq>
+    <VRPTx:entity_poly_seq entity_id="1" mon_id="GLY" num="10">
+      <VRPTx:hetero>n</VRPTx:hetero>
+    </VRPTx:entity_poly_seq>
+    <VRPTx:entity_poly_seq entity_id="1" mon_id="GLU" num="11">
+      <VRPTx:hetero>n</VRPTx:hetero>
+    </VRPTx:entity_poly_seq>
+    <VRPTx:entity_poly_seq entity_id="1" mon_id="THR" num="12">
+      <VRPTx:hetero>n</VRPTx:hetero>
+    </VRPTx:entity_poly_seq>
+    <VRPTx:entity_poly_seq entity_id="1" mon_id="CYS" num="13">
+      <VRPTx:hetero>n</VRPTx:hetero>
+    </VRPTx:entity_poly_seq>
+    <VRPTx:entity_poly_seq entity_id="1" mon_id="CYS" num="14">
+      <VRPTx:hetero>n</VRPTx:hetero>
+    </VRPTx:entity_poly_seq>
+    <VRPTx:entity_poly_seq entity_id="1" mon_id="PRO" num="15">
+      <VRPTx:hetero>n</VRPTx:hetero>
+    </VRPTx:entity_poly_seq>
+    <VRPTx:entity_poly_seq entity_id="1" mon_id="THR" num="16">
+      <VRPTx:hetero>n</VRPTx:hetero>
+    </VRPTx:entity_poly_seq>
+    <VRPTx:entity_poly_seq entity_id="1" mon_id="SER" num="17">
+      <VRPTx:hetero>n</VRPTx:hetero>
+    </VRPTx:entity_poly_seq>
+    <VRPTx:entity_poly_seq entity_id="1" mon_id="GLN" num="18">
+      <VRPTx:hetero>n</VRPTx:hetero>
+    </VRPTx:entity_poly_seq>
+    <VRPTx:entity_poly_seq entity_id="1" mon_id="THR" num="19">
+      <VRPTx:hetero>n</VRPTx:hetero>
+    </VRPTx:entity_poly_seq>
+    <VRPTx:entity_poly_seq entity_id="1" mon_id="THR" num="20">
+      <VRPTx:hetero>n</VRPTx:hetero>
+    </VRPTx:entity_poly_seq>
+    <VRPTx:entity_poly_seq entity_id="1" mon_id="TRP" num="21">
+      <VRPTx:hetero>n</VRPTx:hetero>
+    </VRPTx:entity_poly_seq>
+    <VRPTx:entity_poly_seq entity_id="1" mon_id="GLY" num="22">
+      <VRPTx:hetero>n</VRPTx:hetero>
+    </VRPTx:entity_poly_seq>
+    <VRPTx:entity_poly_seq entity_id="1" mon_id="CYS" num="23">
+      <VRPTx:hetero>n</VRPTx:hetero>
+    </VRPTx:entity_poly_seq>
+    <VRPTx:entity_poly_seq entity_id="1" mon_id="CYS" num="24">
+      <VRPTx:hetero>n</VRPTx:hetero>
+    </VRPTx:entity_poly_seq>
+  </VRPTx:entity_poly_seqCategory>
+  <VRPTx:entryCategory>
+    <VRPTx:entry id="7JIA"/>
+  </VRPTx:entryCategory>
+  <VRPTx:exptlCategory>
+    <VRPTx:exptl entry_id="7JIA" method="SOLUTION NMR"/>
+  </VRPTx:exptlCategory>
+  <VRPTx:pdbx_audit_revision_detailsCategory>
+    <VRPTx:pdbx_audit_revision_details data_content_type="Structure model" ordinal="1" revision_ordinal="1">
+      <VRPTx:provider>repository</VRPTx:provider>
+      <VRPTx:type>Initial release</VRPTx:type>
+    </VRPTx:pdbx_audit_revision_details>
+  </VRPTx:pdbx_audit_revision_detailsCategory>
+  <VRPTx:pdbx_audit_revision_historyCategory>
+    <VRPTx:pdbx_audit_revision_history data_content_type="Structure model" ordinal="1">
+      <VRPTx:major_revision>1</VRPTx:major_revision>
+      <VRPTx:minor_revision>0</VRPTx:minor_revision>
+      <VRPTx:revision_date>2020-08-26</VRPTx:revision_date>
+    </VRPTx:pdbx_audit_revision_history>
+  </VRPTx:pdbx_audit_revision_historyCategory>
+  <VRPTx:pdbx_database_relatedCategory>
+    <VRPTx:pdbx_database_related content_type="unspecified" db_id="30780" db_name="BMRB">
+      <VRPTx:details>Structure of truncated zebrafish granulin AaE</VRPTx:details>
+    </VRPTx:pdbx_database_related>
+  </VRPTx:pdbx_database_relatedCategory>
+  <VRPTx:pdbx_database_statusCategory>
+    <VRPTx:pdbx_database_status entry_id="7JIA">
+      <VRPTx:SG_entry>N</VRPTx:SG_entry>
+      <VRPTx:deposit_site>RCSB</VRPTx:deposit_site>
+      <VRPTx:pdb_format_compatible>Y</VRPTx:pdb_format_compatible>
+      <VRPTx:process_site>RCSB</VRPTx:process_site>
+      <VRPTx:recvd_initial_deposition_date>2020-07-23</VRPTx:recvd_initial_deposition_date>
+      <VRPTx:status_code>REL</VRPTx:status_code>
+      <VRPTx:status_code_nmr_data>REL</VRPTx:status_code_nmr_data>
+      <VRPTx:validation_created_date>2020-12-09</VRPTx:validation_created_date>
+    </VRPTx:pdbx_database_status>
+  </VRPTx:pdbx_database_statusCategory>
+  <VRPTx:pdbx_nmr_ensembleCategory>
+    <VRPTx:pdbx_nmr_ensemble entry_id="7JIA">
+      <VRPTx:conformer_selection_criteria>target function</VRPTx:conformer_selection_criteria>
+      <VRPTx:conformers_calculated_total_number>50</VRPTx:conformers_calculated_total_number>
+      <VRPTx:conformers_submitted_total_number>20</VRPTx:conformers_submitted_total_number>
+      <VRPTx:atom_consistency_flag>Y</VRPTx:atom_consistency_flag>
+    </VRPTx:pdbx_nmr_ensemble>
+  </VRPTx:pdbx_nmr_ensembleCategory>
+  <VRPTx:pdbx_nmr_exptlCategory>
+    <VRPTx:pdbx_nmr_exptl conditions_id="1" experiment_id="1" solution_id="1">
+      <VRPTx:sample_state>isotropic</VRPTx:sample_state>
+      <VRPTx:spectrometer_id>1</VRPTx:spectrometer_id>
+      <VRPTx:type>2D 1H-1H TOCSY</VRPTx:type>
+    </VRPTx:pdbx_nmr_exptl>
+    <VRPTx:pdbx_nmr_exptl conditions_id="1" experiment_id="2" solution_id="1">
+      <VRPTx:sample_state>isotropic</VRPTx:sample_state>
+      <VRPTx:spectrometer_id>1</VRPTx:spectrometer_id>
+      <VRPTx:type>2D 1H-1H NOESY</VRPTx:type>
+    </VRPTx:pdbx_nmr_exptl>
+    <VRPTx:pdbx_nmr_exptl conditions_id="1" experiment_id="3" solution_id="1">
+      <VRPTx:sample_state>isotropic</VRPTx:sample_state>
+      <VRPTx:spectrometer_id>1</VRPTx:spectrometer_id>
+      <VRPTx:type>2D 1H-1H COSY</VRPTx:type>
+    </VRPTx:pdbx_nmr_exptl>
+    <VRPTx:pdbx_nmr_exptl conditions_id="1" experiment_id="4" solution_id="1">
+      <VRPTx:sample_state>isotropic</VRPTx:sample_state>
+      <VRPTx:spectrometer_id>1</VRPTx:spectrometer_id>
+      <VRPTx:type>2D 1H-13C HSQC</VRPTx:type>
+    </VRPTx:pdbx_nmr_exptl>
+    <VRPTx:pdbx_nmr_exptl conditions_id="1" experiment_id="5" solution_id="1">
+      <VRPTx:sample_state>isotropic</VRPTx:sample_state>
+      <VRPTx:spectrometer_id>1</VRPTx:spectrometer_id>
+      <VRPTx:type>2D 1H-15N HSQC</VRPTx:type>
+    </VRPTx:pdbx_nmr_exptl>
+  </VRPTx:pdbx_nmr_exptlCategory>
+  <VRPTx:pdbx_nmr_exptl_sampleCategory>
+    <VRPTx:pdbx_nmr_exptl_sample component="ZF-N24_3s" solution_id="1">
+      <VRPTx:concentration>0.2</VRPTx:concentration>
+      <VRPTx:concentration_units>mM</VRPTx:concentration_units>
+      <VRPTx:isotopic_labeling>natural abundance</VRPTx:isotopic_labeling>
+    </VRPTx:pdbx_nmr_exptl_sample>
+  </VRPTx:pdbx_nmr_exptl_sampleCategory>
+  <VRPTx:pdbx_nmr_exptl_sample_conditionsCategory>
+    <VRPTx:pdbx_nmr_exptl_sample_conditions conditions_id="1">
+      <VRPTx:ionic_strength>0</VRPTx:ionic_strength>
+      <VRPTx:ionic_strength_units>M</VRPTx:ionic_strength_units>
+      <VRPTx:label>1</VRPTx:label>
+      <VRPTx:pH>3</VRPTx:pH>
+      <VRPTx:pH_units>pH</VRPTx:pH_units>
+      <VRPTx:pressure>ambient</VRPTx:pressure>
+      <VRPTx:temperature>290</VRPTx:temperature>
+      <VRPTx:temperature_units>K</VRPTx:temperature_units>
+    </VRPTx:pdbx_nmr_exptl_sample_conditions>
+  </VRPTx:pdbx_nmr_exptl_sample_conditionsCategory>
+  <VRPTx:pdbx_nmr_refineCategory>
+    <VRPTx:pdbx_nmr_refine entry_id="7JIA" software_ordinal="2">
+      <VRPTx:method>torsion angle dynamics</VRPTx:method>
+    </VRPTx:pdbx_nmr_refine>
+  </VRPTx:pdbx_nmr_refineCategory>
+  <VRPTx:pdbx_nmr_representativeCategory>
+    <VRPTx:pdbx_nmr_representative entry_id="7JIA">
+      <VRPTx:conformer_id>1</VRPTx:conformer_id>
+      <VRPTx:selection_criteria>lowest energy</VRPTx:selection_criteria>
+    </VRPTx:pdbx_nmr_representative>
+  </VRPTx:pdbx_nmr_representativeCategory>
+  <VRPTx:pdbx_nmr_softwareCategory>
+    <VRPTx:pdbx_nmr_software ordinal="1">
+      <VRPTx:authors>Bruker Biospin</VRPTx:authors>
+      <VRPTx:classification>collection</VRPTx:classification>
+      <VRPTx:name>TopSpin</VRPTx:name>
+    </VRPTx:pdbx_nmr_software>
+    <VRPTx:pdbx_nmr_software ordinal="3">
+      <VRPTx:authors>CCPN</VRPTx:authors>
+      <VRPTx:classification>chemical shift assignment</VRPTx:classification>
+      <VRPTx:name>CcpNmr Analysis</VRPTx:name>
+      <VRPTx:version>2</VRPTx:version>
+    </VRPTx:pdbx_nmr_software>
+    <VRPTx:pdbx_nmr_software ordinal="2">
+      <VRPTx:authors>Guntert, Mumenthaler and Wuthrich</VRPTx:authors>
+      <VRPTx:classification>structure calculation</VRPTx:classification>
+      <VRPTx:name>CYANA</VRPTx:name>
+    </VRPTx:pdbx_nmr_software>
+  </VRPTx:pdbx_nmr_softwareCategory>
+  <VRPTx:pdbx_nmr_spectrometerCategory>
+    <VRPTx:pdbx_nmr_spectrometer spectrometer_id="1">
+      <VRPTx:field_strength>600</VRPTx:field_strength>
+      <VRPTx:manufacturer>Bruker</VRPTx:manufacturer>
+      <VRPTx:model>AVANCE</VRPTx:model>
+    </VRPTx:pdbx_nmr_spectrometer>
+  </VRPTx:pdbx_nmr_spectrometerCategory>
+  <VRPTx:pdbx_poly_seq_schemeCategory>
+    <VRPTx:pdbx_poly_seq_scheme asym_id="A" entity_id="1" mon_id="CYS" seq_id="1">
+      <VRPTx:auth_mon_id>CYS</VRPTx:auth_mon_id>
+      <VRPTx:auth_seq_num>1</VRPTx:auth_seq_num>
+      <VRPTx:hetero>n</VRPTx:hetero>
+      <VRPTx:ndb_seq_num>1</VRPTx:ndb_seq_num>
+      <VRPTx:pdb_ins_code xsi:nil="true"/>
+      <VRPTx:pdb_mon_id>CYS</VRPTx:pdb_mon_id>
+      <VRPTx:pdb_seq_num>1</VRPTx:pdb_seq_num>
+      <VRPTx:pdb_strand_id>A</VRPTx:pdb_strand_id>
+    </VRPTx:pdbx_poly_seq_scheme>
+    <VRPTx:pdbx_poly_seq_scheme asym_id="A" entity_id="1" mon_id="GLY" seq_id="2">
+      <VRPTx:auth_mon_id>GLY</VRPTx:auth_mon_id>
+      <VRPTx:auth_seq_num>2</VRPTx:auth_seq_num>
+      <VRPTx:hetero>n</VRPTx:hetero>
+      <VRPTx:ndb_seq_num>2</VRPTx:ndb_seq_num>
+      <VRPTx:pdb_ins_code xsi:nil="true"/>
+      <VRPTx:pdb_mon_id>GLY</VRPTx:pdb_mon_id>
+      <VRPTx:pdb_seq_num>2</VRPTx:pdb_seq_num>
+      <VRPTx:pdb_strand_id>A</VRPTx:pdb_strand_id>
+    </VRPTx:pdbx_poly_seq_scheme>
+    <VRPTx:pdbx_poly_seq_scheme asym_id="A" entity_id="1" mon_id="GLY" seq_id="3">
+      <VRPTx:auth_mon_id>GLY</VRPTx:auth_mon_id>
+      <VRPTx:auth_seq_num>3</VRPTx:auth_seq_num>
+      <VRPTx:hetero>n</VRPTx:hetero>
+      <VRPTx:ndb_seq_num>3</VRPTx:ndb_seq_num>
+      <VRPTx:pdb_ins_code xsi:nil="true"/>
+      <VRPTx:pdb_mon_id>GLY</VRPTx:pdb_mon_id>
+      <VRPTx:pdb_seq_num>3</VRPTx:pdb_seq_num>
+      <VRPTx:pdb_strand_id>A</VRPTx:pdb_strand_id>
+    </VRPTx:pdbx_poly_seq_scheme>
+    <VRPTx:pdbx_poly_seq_scheme asym_id="A" entity_id="1" mon_id="GLY" seq_id="4">
+      <VRPTx:auth_mon_id>GLY</VRPTx:auth_mon_id>
+      <VRPTx:auth_seq_num>4</VRPTx:auth_seq_num>
+      <VRPTx:hetero>n</VRPTx:hetero>
+      <VRPTx:ndb_seq_num>4</VRPTx:ndb_seq_num>
+      <VRPTx:pdb_ins_code xsi:nil="true"/>
+      <VRPTx:pdb_mon_id>GLY</VRPTx:pdb_mon_id>
+      <VRPTx:pdb_seq_num>4</VRPTx:pdb_seq_num>
+      <VRPTx:pdb_strand_id>A</VRPTx:pdb_strand_id>
+    </VRPTx:pdbx_poly_seq_scheme>
+    <VRPTx:pdbx_poly_seq_scheme asym_id="A" entity_id="1" mon_id="PHE" seq_id="5">
+      <VRPTx:auth_mon_id>PHE</VRPTx:auth_mon_id>
+      <VRPTx:auth_seq_num>5</VRPTx:auth_seq_num>
+      <VRPTx:hetero>n</VRPTx:hetero>
+      <VRPTx:ndb_seq_num>5</VRPTx:ndb_seq_num>
+      <VRPTx:pdb_ins_code xsi:nil="true"/>
+      <VRPTx:pdb_mon_id>PHE</VRPTx:pdb_mon_id>
+      <VRPTx:pdb_seq_num>5</VRPTx:pdb_seq_num>
+      <VRPTx:pdb_strand_id>A</VRPTx:pdb_strand_id>
+    </VRPTx:pdbx_poly_seq_scheme>
+    <VRPTx:pdbx_poly_seq_scheme asym_id="A" entity_id="1" mon_id="SER" seq_id="6">
+      <VRPTx:auth_mon_id>SER</VRPTx:auth_mon_id>
+      <VRPTx:auth_seq_num>6</VRPTx:auth_seq_num>
+      <VRPTx:hetero>n</VRPTx:hetero>
+      <VRPTx:ndb_seq_num>6</VRPTx:ndb_seq_num>
+      <VRPTx:pdb_ins_code xsi:nil="true"/>
+      <VRPTx:pdb_mon_id>SER</VRPTx:pdb_mon_id>
+      <VRPTx:pdb_seq_num>6</VRPTx:pdb_seq_num>
+      <VRPTx:pdb_strand_id>A</VRPTx:pdb_strand_id>
+    </VRPTx:pdbx_poly_seq_scheme>
+    <VRPTx:pdbx_poly_seq_scheme asym_id="A" entity_id="1" mon_id="CYS" seq_id="7">
+      <VRPTx:auth_mon_id>CYS</VRPTx:auth_mon_id>
+      <VRPTx:auth_seq_num>7</VRPTx:auth_seq_num>
+      <VRPTx:hetero>n</VRPTx:hetero>
+      <VRPTx:ndb_seq_num>7</VRPTx:ndb_seq_num>
+      <VRPTx:pdb_ins_code xsi:nil="true"/>
+      <VRPTx:pdb_mon_id>CYS</VRPTx:pdb_mon_id>
+      <VRPTx:pdb_seq_num>7</VRPTx:pdb_seq_num>
+      <VRPTx:pdb_strand_id>A</VRPTx:pdb_strand_id>
+    </VRPTx:pdbx_poly_seq_scheme>
+    <VRPTx:pdbx_poly_seq_scheme asym_id="A" entity_id="1" mon_id="HIS" seq_id="8">
+      <VRPTx:auth_mon_id>HIS</VRPTx:auth_mon_id>
+      <VRPTx:auth_seq_num>8</VRPTx:auth_seq_num>
+      <VRPTx:hetero>n</VRPTx:hetero>
+      <VRPTx:ndb_seq_num>8</VRPTx:ndb_seq_num>
+      <VRPTx:pdb_ins_code xsi:nil="true"/>
+      <VRPTx:pdb_mon_id>HIS</VRPTx:pdb_mon_id>
+      <VRPTx:pdb_seq_num>8</VRPTx:pdb_seq_num>
+      <VRPTx:pdb_strand_id>A</VRPTx:pdb_strand_id>
+    </VRPTx:pdbx_poly_seq_scheme>
+    <VRPTx:pdbx_poly_seq_scheme asym_id="A" entity_id="1" mon_id="ASP" seq_id="9">
+      <VRPTx:auth_mon_id>ASP</VRPTx:auth_mon_id>
+      <VRPTx:auth_seq_num>9</VRPTx:auth_seq_num>
+      <VRPTx:hetero>n</VRPTx:hetero>
+      <VRPTx:ndb_seq_num>9</VRPTx:ndb_seq_num>
+      <VRPTx:pdb_ins_code xsi:nil="true"/>
+      <VRPTx:pdb_mon_id>ASP</VRPTx:pdb_mon_id>
+      <VRPTx:pdb_seq_num>9</VRPTx:pdb_seq_num>
+      <VRPTx:pdb_strand_id>A</VRPTx:pdb_strand_id>
+    </VRPTx:pdbx_poly_seq_scheme>
+    <VRPTx:pdbx_poly_seq_scheme asym_id="A" entity_id="1" mon_id="GLY" seq_id="10">
+      <VRPTx:auth_mon_id>GLY</VRPTx:auth_mon_id>
+      <VRPTx:auth_seq_num>10</VRPTx:auth_seq_num>
+      <VRPTx:hetero>n</VRPTx:hetero>
+      <VRPTx:ndb_seq_num>10</VRPTx:ndb_seq_num>
+      <VRPTx:pdb_ins_code xsi:nil="true"/>
+      <VRPTx:pdb_mon_id>GLY</VRPTx:pdb_mon_id>
+      <VRPTx:pdb_seq_num>10</VRPTx:pdb_seq_num>
+      <VRPTx:pdb_strand_id>A</VRPTx:pdb_strand_id>
+    </VRPTx:pdbx_poly_seq_scheme>
+    <VRPTx:pdbx_poly_seq_scheme asym_id="A" entity_id="1" mon_id="GLU" seq_id="11">
+      <VRPTx:auth_mon_id>GLU</VRPTx:auth_mon_id>
+      <VRPTx:auth_seq_num>11</VRPTx:auth_seq_num>
+      <VRPTx:hetero>n</VRPTx:hetero>
+      <VRPTx:ndb_seq_num>11</VRPTx:ndb_seq_num>
+      <VRPTx:pdb_ins_code xsi:nil="true"/>
+      <VRPTx:pdb_mon_id>GLU</VRPTx:pdb_mon_id>
+      <VRPTx:pdb_seq_num>11</VRPTx:pdb_seq_num>
+      <VRPTx:pdb_strand_id>A</VRPTx:pdb_strand_id>
+    </VRPTx:pdbx_poly_seq_scheme>
+    <VRPTx:pdbx_poly_seq_scheme asym_id="A" entity_id="1" mon_id="THR" seq_id="12">
+      <VRPTx:auth_mon_id>THR</VRPTx:auth_mon_id>
+      <VRPTx:auth_seq_num>12</VRPTx:auth_seq_num>
+      <VRPTx:hetero>n</VRPTx:hetero>
+      <VRPTx:ndb_seq_num>12</VRPTx:ndb_seq_num>
+      <VRPTx:pdb_ins_code xsi:nil="true"/>
+      <VRPTx:pdb_mon_id>THR</VRPTx:pdb_mon_id>
+      <VRPTx:pdb_seq_num>12</VRPTx:pdb_seq_num>
+      <VRPTx:pdb_strand_id>A</VRPTx:pdb_strand_id>
+    </VRPTx:pdbx_poly_seq_scheme>
+    <VRPTx:pdbx_poly_seq_scheme asym_id="A" entity_id="1" mon_id="CYS" seq_id="13">
+      <VRPTx:auth_mon_id>CYS</VRPTx:auth_mon_id>
+      <VRPTx:auth_seq_num>13</VRPTx:auth_seq_num>
+      <VRPTx:hetero>n</VRPTx:hetero>
+      <VRPTx:ndb_seq_num>13</VRPTx:ndb_seq_num>
+      <VRPTx:pdb_ins_code xsi:nil="true"/>
+      <VRPTx:pdb_mon_id>CYS</VRPTx:pdb_mon_id>
+      <VRPTx:pdb_seq_num>13</VRPTx:pdb_seq_num>
+      <VRPTx:pdb_strand_id>A</VRPTx:pdb_strand_id>
+    </VRPTx:pdbx_poly_seq_scheme>
+    <VRPTx:pdbx_poly_seq_scheme asym_id="A" entity_id="1" mon_id="CYS" seq_id="14">
+      <VRPTx:auth_mon_id>CYS</VRPTx:auth_mon_id>
+      <VRPTx:auth_seq_num>14</VRPTx:auth_seq_num>
+      <VRPTx:hetero>n</VRPTx:hetero>
+      <VRPTx:ndb_seq_num>14</VRPTx:ndb_seq_num>
+      <VRPTx:pdb_ins_code xsi:nil="true"/>
+      <VRPTx:pdb_mon_id>CYS</VRPTx:pdb_mon_id>
+      <VRPTx:pdb_seq_num>14</VRPTx:pdb_seq_num>
+      <VRPTx:pdb_strand_id>A</VRPTx:pdb_strand_id>
+    </VRPTx:pdbx_poly_seq_scheme>
+    <VRPTx:pdbx_poly_seq_scheme asym_id="A" entity_id="1" mon_id="PRO" seq_id="15">
+      <VRPTx:auth_mon_id>PRO</VRPTx:auth_mon_id>
+      <VRPTx:auth_seq_num>15</VRPTx:auth_seq_num>
+      <VRPTx:hetero>n</VRPTx:hetero>
+      <VRPTx:ndb_seq_num>15</VRPTx:ndb_seq_num>
+      <VRPTx:pdb_ins_code xsi:nil="true"/>
+      <VRPTx:pdb_mon_id>PRO</VRPTx:pdb_mon_id>
+      <VRPTx:pdb_seq_num>15</VRPTx:pdb_seq_num>
+      <VRPTx:pdb_strand_id>A</VRPTx:pdb_strand_id>
+    </VRPTx:pdbx_poly_seq_scheme>
+    <VRPTx:pdbx_poly_seq_scheme asym_id="A" entity_id="1" mon_id="THR" seq_id="16">
+      <VRPTx:auth_mon_id>THR</VRPTx:auth_mon_id>
+      <VRPTx:auth_seq_num>16</VRPTx:auth_seq_num>
+      <VRPTx:hetero>n</VRPTx:hetero>
+      <VRPTx:ndb_seq_num>16</VRPTx:ndb_seq_num>
+      <VRPTx:pdb_ins_code xsi:nil="true"/>
+      <VRPTx:pdb_mon_id>THR</VRPTx:pdb_mon_id>
+      <VRPTx:pdb_seq_num>16</VRPTx:pdb_seq_num>
+      <VRPTx:pdb_strand_id>A</VRPTx:pdb_strand_id>
+    </VRPTx:pdbx_poly_seq_scheme>
+    <VRPTx:pdbx_poly_seq_scheme asym_id="A" entity_id="1" mon_id="SER" seq_id="17">
+      <VRPTx:auth_mon_id>SER</VRPTx:auth_mon_id>
+      <VRPTx:auth_seq_num>17</VRPTx:auth_seq_num>
+      <VRPTx:hetero>n</VRPTx:hetero>
+      <VRPTx:ndb_seq_num>17</VRPTx:ndb_seq_num>
+      <VRPTx:pdb_ins_code xsi:nil="true"/>
+      <VRPTx:pdb_mon_id>SER</VRPTx:pdb_mon_id>
+      <VRPTx:pdb_seq_num>17</VRPTx:pdb_seq_num>
+      <VRPTx:pdb_strand_id>A</VRPTx:pdb_strand_id>
+    </VRPTx:pdbx_poly_seq_scheme>
+    <VRPTx:pdbx_poly_seq_scheme asym_id="A" entity_id="1" mon_id="GLN" seq_id="18">
+      <VRPTx:auth_mon_id>GLN</VRPTx:auth_mon_id>
+      <VRPTx:auth_seq_num>18</VRPTx:auth_seq_num>
+      <VRPTx:hetero>n</VRPTx:hetero>
+      <VRPTx:ndb_seq_num>18</VRPTx:ndb_seq_num>
+      <VRPTx:pdb_ins_code xsi:nil="true"/>
+      <VRPTx:pdb_mon_id>GLN</VRPTx:pdb_mon_id>
+      <VRPTx:pdb_seq_num>18</VRPTx:pdb_seq_num>
+      <VRPTx:pdb_strand_id>A</VRPTx:pdb_strand_id>
+    </VRPTx:pdbx_poly_seq_scheme>
+    <VRPTx:pdbx_poly_seq_scheme asym_id="A" entity_id="1" mon_id="THR" seq_id="19">
+      <VRPTx:auth_mon_id>THR</VRPTx:auth_mon_id>
+      <VRPTx:auth_seq_num>19</VRPTx:auth_seq_num>
+      <VRPTx:hetero>n</VRPTx:hetero>
+      <VRPTx:ndb_seq_num>19</VRPTx:ndb_seq_num>
+      <VRPTx:pdb_ins_code xsi:nil="true"/>
+      <VRPTx:pdb_mon_id>THR</VRPTx:pdb_mon_id>
+      <VRPTx:pdb_seq_num>19</VRPTx:pdb_seq_num>
+      <VRPTx:pdb_strand_id>A</VRPTx:pdb_strand_id>
+    </VRPTx:pdbx_poly_seq_scheme>
+    <VRPTx:pdbx_poly_seq_scheme asym_id="A" entity_id="1" mon_id="THR" seq_id="20">
+      <VRPTx:auth_mon_id>THR</VRPTx:auth_mon_id>
+      <VRPTx:auth_seq_num>20</VRPTx:auth_seq_num>
+      <VRPTx:hetero>n</VRPTx:hetero>
+      <VRPTx:ndb_seq_num>20</VRPTx:ndb_seq_num>
+      <VRPTx:pdb_ins_code xsi:nil="true"/>
+      <VRPTx:pdb_mon_id>THR</VRPTx:pdb_mon_id>
+      <VRPTx:pdb_seq_num>20</VRPTx:pdb_seq_num>
+      <VRPTx:pdb_strand_id>A</VRPTx:pdb_strand_id>
+    </VRPTx:pdbx_poly_seq_scheme>
+    <VRPTx:pdbx_poly_seq_scheme asym_id="A" entity_id="1" mon_id="TRP" seq_id="21">
+      <VRPTx:auth_mon_id>TRP</VRPTx:auth_mon_id>
+      <VRPTx:auth_seq_num>21</VRPTx:auth_seq_num>
+      <VRPTx:hetero>n</VRPTx:hetero>
+      <VRPTx:ndb_seq_num>21</VRPTx:ndb_seq_num>
+      <VRPTx:pdb_ins_code xsi:nil="true"/>
+      <VRPTx:pdb_mon_id>TRP</VRPTx:pdb_mon_id>
+      <VRPTx:pdb_seq_num>21</VRPTx:pdb_seq_num>
+      <VRPTx:pdb_strand_id>A</VRPTx:pdb_strand_id>
+    </VRPTx:pdbx_poly_seq_scheme>
+    <VRPTx:pdbx_poly_seq_scheme asym_id="A" entity_id="1" mon_id="GLY" seq_id="22">
+      <VRPTx:auth_mon_id>GLY</VRPTx:auth_mon_id>
+      <VRPTx:auth_seq_num>22</VRPTx:auth_seq_num>
+      <VRPTx:hetero>n</VRPTx:hetero>
+      <VRPTx:ndb_seq_num>22</VRPTx:ndb_seq_num>
+      <VRPTx:pdb_ins_code xsi:nil="true"/>
+      <VRPTx:pdb_mon_id>GLY</VRPTx:pdb_mon_id>
+      <VRPTx:pdb_seq_num>22</VRPTx:pdb_seq_num>
+      <VRPTx:pdb_strand_id>A</VRPTx:pdb_strand_id>
+    </VRPTx:pdbx_poly_seq_scheme>
+    <VRPTx:pdbx_poly_seq_scheme asym_id="A" entity_id="1" mon_id="CYS" seq_id="23">
+      <VRPTx:auth_mon_id>CYS</VRPTx:auth_mon_id>
+      <VRPTx:auth_seq_num>23</VRPTx:auth_seq_num>
+      <VRPTx:hetero>n</VRPTx:hetero>
+      <VRPTx:ndb_seq_num>23</VRPTx:ndb_seq_num>
+      <VRPTx:pdb_ins_code xsi:nil="true"/>
+      <VRPTx:pdb_mon_id>CYS</VRPTx:pdb_mon_id>
+      <VRPTx:pdb_seq_num>23</VRPTx:pdb_seq_num>
+      <VRPTx:pdb_strand_id>A</VRPTx:pdb_strand_id>
+    </VRPTx:pdbx_poly_seq_scheme>
+    <VRPTx:pdbx_poly_seq_scheme asym_id="A" entity_id="1" mon_id="CYS" seq_id="24">
+      <VRPTx:auth_mon_id>CYS</VRPTx:auth_mon_id>
+      <VRPTx:auth_seq_num>24</VRPTx:auth_seq_num>
+      <VRPTx:hetero>n</VRPTx:hetero>
+      <VRPTx:ndb_seq_num>24</VRPTx:ndb_seq_num>
+      <VRPTx:pdb_ins_code xsi:nil="true"/>
+      <VRPTx:pdb_mon_id>CYS</VRPTx:pdb_mon_id>
+      <VRPTx:pdb_seq_num>24</VRPTx:pdb_seq_num>
+      <VRPTx:pdb_strand_id>A</VRPTx:pdb_strand_id>
+    </VRPTx:pdbx_poly_seq_scheme>
+  </VRPTx:pdbx_poly_seq_schemeCategory>
+  <VRPTx:pdbx_struct_assemblyCategory>
+    <VRPTx:pdbx_struct_assembly id="1">
+      <VRPTx:details>author_defined_assembly</VRPTx:details>
+      <VRPTx:oligomeric_count>1</VRPTx:oligomeric_count>
+      <VRPTx:oligomeric_details>monomeric</VRPTx:oligomeric_details>
+    </VRPTx:pdbx_struct_assembly>
+  </VRPTx:pdbx_struct_assemblyCategory>
+  <VRPTx:pdbx_struct_assembly_genCategory>
+    <VRPTx:pdbx_struct_assembly_gen assembly_id="1" asym_id_list="A" oper_expression="1"/>
+  </VRPTx:pdbx_struct_assembly_genCategory>
+  <VRPTx:pdbx_struct_oper_listCategory>
+    <VRPTx:pdbx_struct_oper_list id="1">
+      <VRPTx:matrix11>1.0000000000</VRPTx:matrix11>
+      <VRPTx:matrix12>0.0000000000</VRPTx:matrix12>
+      <VRPTx:matrix13>0.0000000000</VRPTx:matrix13>
+      <VRPTx:matrix21>0.0000000000</VRPTx:matrix21>
+      <VRPTx:matrix22>1.0000000000</VRPTx:matrix22>
+      <VRPTx:matrix23>0.0000000000</VRPTx:matrix23>
+      <VRPTx:matrix31>0.0000000000</VRPTx:matrix31>
+      <VRPTx:matrix32>0.0000000000</VRPTx:matrix32>
+      <VRPTx:matrix33>1.0000000000</VRPTx:matrix33>
+      <VRPTx:name>1_555</VRPTx:name>
+      <VRPTx:type>identity operation</VRPTx:type>
+      <VRPTx:vector1>0.0000000000</VRPTx:vector1>
+      <VRPTx:vector2>0.0000000000</VRPTx:vector2>
+      <VRPTx:vector3>0.0000000000</VRPTx:vector3>
+    </VRPTx:pdbx_struct_oper_list>
+  </VRPTx:pdbx_struct_oper_listCategory>
+  <VRPTx:pdbx_struct_sheet_hbondCategory>
+    <VRPTx:pdbx_struct_sheet_hbond range_id_1="1" range_id_2="2" sheet_id="AA1">
+      <VRPTx:range_1_auth_asym_id>A</VRPTx:range_1_auth_asym_id>
+      <VRPTx:range_1_auth_atom_id>N</VRPTx:range_1_auth_atom_id>
+      <VRPTx:range_1_auth_comp_id>CYS</VRPTx:range_1_auth_comp_id>
+      <VRPTx:range_1_auth_seq_id>14</VRPTx:range_1_auth_seq_id>
+      <VRPTx:range_1_label_asym_id>A</VRPTx:range_1_label_asym_id>
+      <VRPTx:range_1_label_atom_id>N</VRPTx:range_1_label_atom_id>
+      <VRPTx:range_1_label_comp_id>CYS</VRPTx:range_1_label_comp_id>
+      <VRPTx:range_1_label_seq_id>14</VRPTx:range_1_label_seq_id>
+      <VRPTx:range_2_auth_asym_id>A</VRPTx:range_2_auth_asym_id>
+      <VRPTx:range_2_auth_atom_id>O</VRPTx:range_2_auth_atom_id>
+      <VRPTx:range_2_auth_comp_id>GLY</VRPTx:range_2_auth_comp_id>
+      <VRPTx:range_2_auth_seq_id>22</VRPTx:range_2_auth_seq_id>
+      <VRPTx:range_2_label_asym_id>A</VRPTx:range_2_label_asym_id>
+      <VRPTx:range_2_label_atom_id>O</VRPTx:range_2_label_atom_id>
+      <VRPTx:range_2_label_comp_id>GLY</VRPTx:range_2_label_comp_id>
+      <VRPTx:range_2_label_seq_id>22</VRPTx:range_2_label_seq_id>
+    </VRPTx:pdbx_struct_sheet_hbond>
+  </VRPTx:pdbx_struct_sheet_hbondCategory>
+  <VRPTx:pdbx_validate_torsionCategory>
+    <VRPTx:pdbx_validate_torsion id="1">
+      <VRPTx:PDB_model_num>11</VRPTx:PDB_model_num>
+      <VRPTx:auth_asym_id>A</VRPTx:auth_asym_id>
+      <VRPTx:auth_comp_id>PHE</VRPTx:auth_comp_id>
+      <VRPTx:auth_seq_id>5</VRPTx:auth_seq_id>
+      <VRPTx:phi>-62.42</VRPTx:phi>
+      <VRPTx:psi>-176.15</VRPTx:psi>
+    </VRPTx:pdbx_validate_torsion>
+    <VRPTx:pdbx_validate_torsion id="2">
+      <VRPTx:PDB_model_num>19</VRPTx:PDB_model_num>
+      <VRPTx:auth_asym_id>A</VRPTx:auth_asym_id>
+      <VRPTx:auth_comp_id>SER</VRPTx:auth_comp_id>
+      <VRPTx:auth_seq_id>17</VRPTx:auth_seq_id>
+      <VRPTx:phi>-125.93</VRPTx:phi>
+      <VRPTx:psi>-169.82</VRPTx:psi>
+    </VRPTx:pdbx_validate_torsion>
+  </VRPTx:pdbx_validate_torsionCategory>
+  <VRPTx:structCategory>
+    <VRPTx:struct entry_id="7JIA">
+      <VRPTx:pdbx_CASP_flag>N</VRPTx:pdbx_CASP_flag>
+      <VRPTx:pdbx_descriptor>Granulin-A</VRPTx:pdbx_descriptor>
+      <VRPTx:title>Structure of truncated zebrafish granulin AaE</VRPTx:title>
+    </VRPTx:struct>
+  </VRPTx:structCategory>
+  <VRPTx:struct_asymCategory>
+    <VRPTx:struct_asym id="A">
+      <VRPTx:entity_id>1</VRPTx:entity_id>
+      <VRPTx:pdbx_blank_PDB_chainid_flag>N</VRPTx:pdbx_blank_PDB_chainid_flag>
+      <VRPTx:pdbx_modified>N</VRPTx:pdbx_modified>
+    </VRPTx:struct_asym>
+  </VRPTx:struct_asymCategory>
+  <VRPTx:struct_connCategory>
+    <VRPTx:struct_conn id="disulf1">
+      <VRPTx:conn_type_id>disulf</VRPTx:conn_type_id>
+      <VRPTx:pdbx_dist_value>2.046</VRPTx:pdbx_dist_value>
+      <VRPTx:ptnr1_auth_asym_id>A</VRPTx:ptnr1_auth_asym_id>
+      <VRPTx:ptnr1_auth_comp_id>CYS</VRPTx:ptnr1_auth_comp_id>
+      <VRPTx:ptnr1_auth_seq_id>1</VRPTx:ptnr1_auth_seq_id>
+      <VRPTx:ptnr1_label_asym_id>A</VRPTx:ptnr1_label_asym_id>
+      <VRPTx:ptnr1_label_atom_id>SG</VRPTx:ptnr1_label_atom_id>
+      <VRPTx:ptnr1_label_comp_id>CYS</VRPTx:ptnr1_label_comp_id>
+      <VRPTx:ptnr1_label_seq_id>1</VRPTx:ptnr1_label_seq_id>
+      <VRPTx:ptnr1_symmetry>1_555</VRPTx:ptnr1_symmetry>
+      <VRPTx:ptnr2_auth_asym_id>A</VRPTx:ptnr2_auth_asym_id>
+      <VRPTx:ptnr2_auth_comp_id>CYS</VRPTx:ptnr2_auth_comp_id>
+      <VRPTx:ptnr2_auth_seq_id>13</VRPTx:ptnr2_auth_seq_id>
+      <VRPTx:ptnr2_label_asym_id>A</VRPTx:ptnr2_label_asym_id>
+      <VRPTx:ptnr2_label_atom_id>SG</VRPTx:ptnr2_label_atom_id>
+      <VRPTx:ptnr2_label_comp_id>CYS</VRPTx:ptnr2_label_comp_id>
+      <VRPTx:ptnr2_label_seq_id>13</VRPTx:ptnr2_label_seq_id>
+      <VRPTx:ptnr2_symmetry>1_555</VRPTx:ptnr2_symmetry>
+    </VRPTx:struct_conn>
+    <VRPTx:struct_conn id="disulf2">
+      <VRPTx:conn_type_id>disulf</VRPTx:conn_type_id>
+      <VRPTx:pdbx_dist_value>2.005</VRPTx:pdbx_dist_value>
+      <VRPTx:ptnr1_auth_asym_id>A</VRPTx:ptnr1_auth_asym_id>
+      <VRPTx:ptnr1_auth_comp_id>CYS</VRPTx:ptnr1_auth_comp_id>
+      <VRPTx:ptnr1_auth_seq_id>7</VRPTx:ptnr1_auth_seq_id>
+      <VRPTx:ptnr1_label_asym_id>A</VRPTx:ptnr1_label_asym_id>
+      <VRPTx:ptnr1_label_atom_id>SG</VRPTx:ptnr1_label_atom_id>
+      <VRPTx:ptnr1_label_comp_id>CYS</VRPTx:ptnr1_label_comp_id>
+      <VRPTx:ptnr1_label_seq_id>7</VRPTx:ptnr1_label_seq_id>
+      <VRPTx:ptnr1_symmetry>1_555</VRPTx:ptnr1_symmetry>
+      <VRPTx:ptnr2_auth_asym_id>A</VRPTx:ptnr2_auth_asym_id>
+      <VRPTx:ptnr2_auth_comp_id>CYS</VRPTx:ptnr2_auth_comp_id>
+      <VRPTx:ptnr2_auth_seq_id>23</VRPTx:ptnr2_auth_seq_id>
+      <VRPTx:ptnr2_label_asym_id>A</VRPTx:ptnr2_label_asym_id>
+      <VRPTx:ptnr2_label_atom_id>SG</VRPTx:ptnr2_label_atom_id>
+      <VRPTx:ptnr2_label_comp_id>CYS</VRPTx:ptnr2_label_comp_id>
+      <VRPTx:ptnr2_label_seq_id>23</VRPTx:ptnr2_label_seq_id>
+      <VRPTx:ptnr2_symmetry>1_555</VRPTx:ptnr2_symmetry>
+    </VRPTx:struct_conn>
+    <VRPTx:struct_conn id="disulf3">
+      <VRPTx:conn_type_id>disulf</VRPTx:conn_type_id>
+      <VRPTx:pdbx_dist_value>2.008</VRPTx:pdbx_dist_value>
+      <VRPTx:ptnr1_auth_asym_id>A</VRPTx:ptnr1_auth_asym_id>
+      <VRPTx:ptnr1_auth_comp_id>CYS</VRPTx:ptnr1_auth_comp_id>
+      <VRPTx:ptnr1_auth_seq_id>14</VRPTx:ptnr1_auth_seq_id>
+      <VRPTx:ptnr1_label_asym_id>A</VRPTx:ptnr1_label_asym_id>
+      <VRPTx:ptnr1_label_atom_id>SG</VRPTx:ptnr1_label_atom_id>
+      <VRPTx:ptnr1_label_comp_id>CYS</VRPTx:ptnr1_label_comp_id>
+      <VRPTx:ptnr1_label_seq_id>14</VRPTx:ptnr1_label_seq_id>
+      <VRPTx:ptnr1_symmetry>1_555</VRPTx:ptnr1_symmetry>
+      <VRPTx:ptnr2_auth_asym_id>A</VRPTx:ptnr2_auth_asym_id>
+      <VRPTx:ptnr2_auth_comp_id>CYS</VRPTx:ptnr2_auth_comp_id>
+      <VRPTx:ptnr2_auth_seq_id>24</VRPTx:ptnr2_auth_seq_id>
+      <VRPTx:ptnr2_label_asym_id>A</VRPTx:ptnr2_label_asym_id>
+      <VRPTx:ptnr2_label_atom_id>SG</VRPTx:ptnr2_label_atom_id>
+      <VRPTx:ptnr2_label_comp_id>CYS</VRPTx:ptnr2_label_comp_id>
+      <VRPTx:ptnr2_label_seq_id>24</VRPTx:ptnr2_label_seq_id>
+      <VRPTx:ptnr2_symmetry>1_555</VRPTx:ptnr2_symmetry>
+    </VRPTx:struct_conn>
+  </VRPTx:struct_connCategory>
+  <VRPTx:struct_conn_typeCategory>
+    <VRPTx:struct_conn_type id="disulf"/>
+  </VRPTx:struct_conn_typeCategory>
+  <VRPTx:struct_refCategory>
+    <VRPTx:struct_ref id="1">
+      <VRPTx:db_code>Q8QGN9_DANRE</VRPTx:db_code>
+      <VRPTx:db_name>UNP</VRPTx:db_name>
+      <VRPTx:entity_id>1</VRPTx:entity_id>
+      <VRPTx:pdbx_align_begin>796</VRPTx:pdbx_align_begin>
+      <VRPTx:pdbx_db_accession>Q8QGN9</VRPTx:pdbx_db_accession>
+      <VRPTx:pdbx_seq_one_letter_code>CGGGFSCHDGETCCPTSQTTWGCC</VRPTx:pdbx_seq_one_letter_code>
+    </VRPTx:struct_ref>
+  </VRPTx:struct_refCategory>
+  <VRPTx:struct_ref_seqCategory>
+    <VRPTx:struct_ref_seq align_id="1">
+      <VRPTx:db_align_beg>796</VRPTx:db_align_beg>
+      <VRPTx:db_align_end>819</VRPTx:db_align_end>
+      <VRPTx:pdbx_PDB_id_code>7JIA</VRPTx:pdbx_PDB_id_code>
+      <VRPTx:pdbx_auth_seq_align_beg>1</VRPTx:pdbx_auth_seq_align_beg>
+      <VRPTx:pdbx_auth_seq_align_end>24</VRPTx:pdbx_auth_seq_align_end>
+      <VRPTx:pdbx_db_accession>Q8QGN9</VRPTx:pdbx_db_accession>
+      <VRPTx:pdbx_strand_id>A</VRPTx:pdbx_strand_id>
+      <VRPTx:ref_id>1</VRPTx:ref_id>
+      <VRPTx:seq_align_beg>1</VRPTx:seq_align_beg>
+      <VRPTx:seq_align_end>24</VRPTx:seq_align_end>
+    </VRPTx:struct_ref_seq>
+  </VRPTx:struct_ref_seqCategory>
+  <VRPTx:struct_sheetCategory>
+    <VRPTx:struct_sheet id="AA1">
+      <VRPTx:number_strands>2</VRPTx:number_strands>
+    </VRPTx:struct_sheet>
+  </VRPTx:struct_sheetCategory>
+  <VRPTx:struct_sheet_orderCategory>
+    <VRPTx:struct_sheet_order range_id_1="1" range_id_2="2" sheet_id="AA1">
+      <VRPTx:sense>anti-parallel</VRPTx:sense>
+    </VRPTx:struct_sheet_order>
+  </VRPTx:struct_sheet_orderCategory>
+  <VRPTx:struct_sheet_rangeCategory>
+    <VRPTx:struct_sheet_range id="1" sheet_id="AA1">
+      <VRPTx:beg_auth_asym_id>A</VRPTx:beg_auth_asym_id>
+      <VRPTx:beg_auth_comp_id>THR</VRPTx:beg_auth_comp_id>
+      <VRPTx:beg_auth_seq_id>12</VRPTx:beg_auth_seq_id>
+      <VRPTx:beg_label_asym_id>A</VRPTx:beg_label_asym_id>
+      <VRPTx:beg_label_comp_id>THR</VRPTx:beg_label_comp_id>
+      <VRPTx:beg_label_seq_id>12</VRPTx:beg_label_seq_id>
+      <VRPTx:end_auth_asym_id>A</VRPTx:end_auth_asym_id>
+      <VRPTx:end_auth_comp_id>CYS</VRPTx:end_auth_comp_id>
+      <VRPTx:end_auth_seq_id>14</VRPTx:end_auth_seq_id>
+      <VRPTx:end_label_asym_id>A</VRPTx:end_label_asym_id>
+      <VRPTx:end_label_comp_id>CYS</VRPTx:end_label_comp_id>
+      <VRPTx:end_label_seq_id>14</VRPTx:end_label_seq_id>
+    </VRPTx:struct_sheet_range>
+    <VRPTx:struct_sheet_range id="2" sheet_id="AA1">
+      <VRPTx:beg_auth_asym_id>A</VRPTx:beg_auth_asym_id>
+      <VRPTx:beg_auth_comp_id>GLY</VRPTx:beg_auth_comp_id>
+      <VRPTx:beg_auth_seq_id>22</VRPTx:beg_auth_seq_id>
+      <VRPTx:beg_label_asym_id>A</VRPTx:beg_label_asym_id>
+      <VRPTx:beg_label_comp_id>GLY</VRPTx:beg_label_comp_id>
+      <VRPTx:beg_label_seq_id>22</VRPTx:beg_label_seq_id>
+      <VRPTx:end_auth_asym_id>A</VRPTx:end_auth_asym_id>
+      <VRPTx:end_auth_comp_id>CYS</VRPTx:end_auth_comp_id>
+      <VRPTx:end_auth_seq_id>24</VRPTx:end_auth_seq_id>
+      <VRPTx:end_label_asym_id>A</VRPTx:end_label_asym_id>
+      <VRPTx:end_label_comp_id>CYS</VRPTx:end_label_comp_id>
+      <VRPTx:end_label_seq_id>24</VRPTx:end_label_seq_id>
+    </VRPTx:struct_sheet_range>
+  </VRPTx:struct_sheet_rangeCategory>
+  <VRPTx:pdbx_sifts_unp_segmentsCategory>
+    <VRPTx:pdbx_sifts_unp_segments entity_id="1" asym_id="A" unp_acc="Q8QGN9" segment_id="1" instance_id="1">
+      <VRPTx:unp_start>796</VRPTx:unp_start>
+      <VRPTx:unp_end>819</VRPTx:unp_end>
+      <VRPTx:seq_id_start>1</VRPTx:seq_id_start>
+      <VRPTx:seq_id_end>24</VRPTx:seq_id_end>
+      <VRPTx:best_mapping>Y</VRPTx:best_mapping>
+      <VRPTx:identity>1.000</VRPTx:identity>
+    </VRPTx:pdbx_sifts_unp_segments>
+  </VRPTx:pdbx_sifts_unp_segmentsCategory>
 </VRPTx:datablock>

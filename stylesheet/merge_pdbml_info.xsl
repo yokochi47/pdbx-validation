@@ -6,9 +6,7 @@
   xmlns:VRPTx="http://pdbml.pdb.org/schema/pdbx-validation-v4.xsd">
 
   <xsl:param name="info_alt_file" required="yes"/>
-  <xsl:param name="info_alt" select="document($info_alt_file)"/>
-
-  <xsl:param name="alt_datablock" select="$info_alt/VRPTx:datablock"/>
+  <xsl:param name="alt_datablock" select="document($info_alt_file)/VRPTx:datablock"/>
 
   <xsl:output method="xml" indent="yes"/>
   <xsl:strip-space elements="*"/>

@@ -25,9 +25,7 @@
   <xsl2:template match="/xsd:schema">
     <xsl2:text disable-output-escaping="yes">
   &lt;xsl:param name="info_alt_file" required="yes"/&gt;
-  &lt;xsl:param name="info_alt" select="document($info_alt_file)"/&gt;
-
-  &lt;xsl:param name="alt_datablock" select="$info_alt/VRPTx:datablock"/&gt;
+  &lt;xsl:param name="alt_datablock" select="document($info_alt_file)/VRPTx:datablock"/&gt;
 
   &lt;xsl:output method="xml" indent="yes"/&gt;
   &lt;xsl:strip-space elements="*"/&gt;

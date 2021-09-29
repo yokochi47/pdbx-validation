@@ -6,9 +6,7 @@
   xmlns:VRPTx="http://pdbml.pdb.org/schema/pdbx-validation-v4.xsd">
 
   <xsl:param name="pdbml_ext_file" required="yes"/>
-  <xsl:param name="pdbml_ext" select="document($pdbml_ext_file)"/>
-
-  <xsl:variable name="ext_datablock" select="$pdbml_ext/VRPTx:datablock"/>
+  <xsl:variable name="ext_datablock" select="document($pdbml_ext_file)/VRPTx:datablock"/>
 
   <xsl:output method="xml" indent="yes"/>
   <xsl:strip-space elements="*"/>
