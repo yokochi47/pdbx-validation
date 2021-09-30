@@ -10,37 +10,37 @@ if [ ! -e $PDBX_VALIDATION_XSD ] ; then
  ( cd schema; ./update_schema.sh )
 fi
 
-if [ ! -e $MERGE_PDBML_SIFTS_XSL ] ; then
+#if [ ! -e $MERGE_PDBML_SIFTS_XSL ] ; then
 
  java -jar $SAXON -s:$PDBML_XSD -xsl:$XSD2MERGE_PDBML_SIFTS_XSL -o:$MERGE_PDBML_SIFTS_XSL || ( echo $0 aborted. ; exit 1 )
 
  echo Generated: $MERGE_PDBML_SIFTS_XSL
 
-fi
+#fi
 
-if [ ! -e $EXT_PDBML_XSL ] ; then
+#if [ ! -e $EXT_PDBML_XSL ] ; then
 
  java -jar $SAXON -s:$PDBX_VALIDATION_XSD -xsl:$XSD2EXT_PDBML_XSL -o:$EXT_PDBML_XSL || ( echo $0 aborted. ; exit 1 )
 
  echo Generated: $EXT_PDBML_XSL
 
-fi
+#fi
 
-if [ ! -e $MERGE_PDBML_INFO_XSL ] ; then
+#if [ ! -e $MERGE_PDBML_INFO_XSL ] ; then
 
  java -jar $SAXON -s:$PDBX_VALIDATION_XSD -xsl:$XSD2MERGE_PDBML_INFO_XSL -o:$MERGE_PDBML_INFO_XSL || ( echo $0 aborted. ; exit 1 )
 
  echo Generated: $MERGE_PDBML_INFO_XSL
 
-fi
+#fi
 
-if [ ! -e $VRPTML2RDF_XSL ] ; then
+#if [ ! -e $VRPTML2RDF_XSL ] ; then
 
  java -jar $SAXON -s:$PDBX_VALIDATION_XSD -xsl:$VRPTX2VRPTML2RDF_XSL -o:$VRPTML2RDF_XSL || ( echo $0 aborted. ; exit 1 )
 
  echo Generated: $VRPTML2RDF_XSL
 
-fi
+#fi
 
 if [ $has_xml2mmcif_command = "false" ] ; then
 

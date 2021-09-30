@@ -15,7 +15,7 @@
    xmlns:owl="http://www.w3.org/2002/07/owl#"
    exclude-result-prefixes="xsd xsi">
 
-  <xsl:output method="xml" indent="yes"/>
+  <xsl:output method="xml" encoding="UTF-8" indent="yes"/>
   <xsl:strip-space elements="*"/>
 
   <xsl:template match="/">

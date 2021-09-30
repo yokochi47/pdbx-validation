@@ -10,7 +10,7 @@
   <xsl:param name="info_file" required="yes"/>
   <xsl:param name="info_entry" select="document($info_file)/wwPDB-validation-information/Entry"/>
 
-  <xsl:output method="xml" indent="yes"/>
+  <xsl:output method="xml" encoding="UTF-8" indent="yes"/>
   <xsl:strip-space elements="*"/>
 
   <xsl:variable name="entry_id"><xsl:value-of select="/PDBx:datablock/PDBx:entryCategory/PDBx:entry/@id"/></xsl:variable>

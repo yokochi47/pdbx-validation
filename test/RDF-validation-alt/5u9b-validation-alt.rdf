@@ -1,16 +1,16 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:VRPTo="http://rdf.wwpdb.org/schema/pdbx-validation-v4.owl#">
   <VRPTo:datablock rdf:about="http://rdf.wwpdb.org/vrpt/5U9B">
     <dcterms:references rdf:resource="http://doi.org/10.2210/pdb5u9b/pdb" rdfs:label="doi:10.2210/pdb5u9b/pdb"/>
-    <dcterms:identifier>5U9B</dcterms:identifier>
-    <skos:altLabel>5u9b</skos:altLabel>
+    <dcterms:identifier>5U9B-validation</dcterms:identifier>
+    <skos:altLabel>5u9b-validation</skos:altLabel>
     <dc:title>wwPDB validation report of PDB entry 5U9B</dc:title>
-    <VRPTo:link_to_pdb_src rdf:resource="http://rdf.wwpdb.org/pdb/5u9b"/>
+    <VRPTo:link_to_pdb_src rdf:resource="http://rdf.wwpdb.org/pdb/5U9B"/>
     <VRPTo:link_to_pdbml rdf:resource="ftp://ftp.wwpdb.org/pub/pdb/data/structures/all/XML/5u9b.xml.gz"/>
     <VRPTo:link_to_pdbml_noatom rdf:resource="ftp://ftp.wwpdb.org/pub/pdb/data/structures/all/XML-noatom/5u9b-noatom.xml.gz"/>
     <VRPTo:link_to_pdbml_extatom rdf:resource="ftp://ftp.wwpdb.org/pub/pdb/data/structures/all/XML-extatom/5u9b-extatom.xml.gz"/>
     <VRPTo:link_to_xml_vrpt rdf:resource="ftp://ftp.wwpdb.org/pub/pdb/validation_reports/u9/5u9b/5u9b_validation.xml.gz"/>
-    <owl:sameAs rdf:resource="http://rdf.wwpdb.org/pdb/5u9b"/>
+    <owl:sameAs rdf:resource="http://rdf.wwpdb.org/vrpt/5u9b"/>
     <rdfs:seeAlso rdf:resource="http://pdbj.org/pdb/5U9B"/>
     <rdfs:seeAlso rdf:resource="http://www.rcsb.org/pdb/explore.do?structureId=5U9B"/>
     <rdfs:seeAlso rdf:resource="http://www.ebi.ac.uk/pdbe/entry/pdb/5U9B"/>

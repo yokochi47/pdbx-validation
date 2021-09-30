@@ -1,16 +1,16 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:VRPTo="http://rdf.wwpdb.org/schema/pdbx-validation-v4.owl#">
   <VRPTo:datablock rdf:about="http://rdf.wwpdb.org/vrpt/7AB7">
     <dcterms:references rdf:resource="http://doi.org/10.2210/pdb7ab7/pdb" rdfs:label="doi:10.2210/pdb7ab7/pdb"/>
-    <dcterms:identifier>7AB7</dcterms:identifier>
-    <skos:altLabel>7ab7</skos:altLabel>
+    <dcterms:identifier>7AB7-validation</dcterms:identifier>
+    <skos:altLabel>7ab7-validation</skos:altLabel>
     <dc:title>wwPDB validation report of PDB entry 7AB7</dc:title>
-    <VRPTo:link_to_pdb_src rdf:resource="http://rdf.wwpdb.org/pdb/7ab7"/>
+    <VRPTo:link_to_pdb_src rdf:resource="http://rdf.wwpdb.org/pdb/7AB7"/>
     <VRPTo:link_to_pdbml rdf:resource="ftp://ftp.wwpdb.org/pub/pdb/data/structures/all/XML/7ab7.xml.gz"/>
     <VRPTo:link_to_pdbml_noatom rdf:resource="ftp://ftp.wwpdb.org/pub/pdb/data/structures/all/XML-noatom/7ab7-noatom.xml.gz"/>
     <VRPTo:link_to_pdbml_extatom rdf:resource="ftp://ftp.wwpdb.org/pub/pdb/data/structures/all/XML-extatom/7ab7-extatom.xml.gz"/>
     <VRPTo:link_to_xml_vrpt rdf:resource="ftp://ftp.wwpdb.org/pub/pdb/validation_reports/ab/7ab7/7ab7_validation.xml.gz"/>
-    <owl:sameAs rdf:resource="http://rdf.wwpdb.org/pdb/7ab7"/>
+    <owl:sameAs rdf:resource="http://rdf.wwpdb.org/vrpt/7ab7"/>
     <rdfs:seeAlso rdf:resource="http://pdbj.org/pdb/7AB7"/>
     <rdfs:seeAlso rdf:resource="http://www.rcsb.org/pdb/explore.do?structureId=7AB7"/>
     <rdfs:seeAlso rdf:resource="http://www.ebi.ac.uk/pdbe/entry/pdb/7AB7"/>

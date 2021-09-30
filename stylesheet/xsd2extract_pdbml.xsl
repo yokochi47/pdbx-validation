@@ -4,7 +4,7 @@
    xmlns:xsl2="http://www.w3.org/1999/XSL/Transform"
    xmlns:xsd="http://www.w3.org/2001/XMLSchema">
 
-  <xsl2:output method="xml" indent="yes"/>
+  <xsl2:output method="xml" encoding="UTF-8" indent="yes"/>
   <xsl2:strip-space elements="*"/>
 
   <xsl2:template match="/">
@@ -27,7 +27,7 @@
   &lt;xsl:param name="info_file" required="yes"/&gt;
   &lt;xsl:param name="info_entry" select="document($info_file)/wwPDB-validation-information/Entry"/&gt;
 
-  &lt;xsl:output method="xml" indent="yes"/&gt;
+  &lt;xsl:output method="xml" encoding="UTF-8" indent="yes"/&gt;
   &lt;xsl:strip-space elements="*"/&gt;
 
   &lt;xsl:variable name="entry_id"&gt;&lt;xsl:value-of select="/PDBx:datablock/PDBx:entryCategory/PDBx:entry/@id"/&gt;&lt;/xsl:variable&gt;

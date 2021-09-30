@@ -8,7 +8,7 @@
   <xsl:param name="info_alt_file" required="yes"/>
   <xsl:param name="alt_datablock" select="document($info_alt_file)/VRPTx:datablock"/>
 
-  <xsl:output method="xml" indent="yes"/>
+  <xsl:output method="xml" encoding="UTF-8" indent="yes"/>
   <xsl:strip-space elements="*"/>
 
   <xsl:variable name="entry_id"><xsl:value-of select="/VRPTx:datablock/VRPTx:entryCategory/VRPTx:entry/@id"/></xsl:variable>

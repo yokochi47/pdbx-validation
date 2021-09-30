@@ -11,7 +11,7 @@
   <xsl:param name="pdbx_xsd_file" required="yes"/>
   <xsl:param name="pdbx_xsd" select="document($pdbx_xsd_file)"/>
 
-  <xsl:output method="xml" indent="yes"/>
+  <xsl:output method="xml" encoding="UTF-8" indent="yes"/>
   <xsl:strip-space elements="*"/>
 
   <xsl:variable name="category_source_url">http://pdbml.pdb.org/dictionaries/mmcif_pdbx_v50.dic/Categories/</xsl:variable>

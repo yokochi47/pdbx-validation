@@ -11,7 +11,7 @@
   xmlns:PDBo="http://rdf.wwpdb.org/schema/pdbx-v50.owl#"
   xmlns:ext="http://exslt.org/common" exclude-result-prefixes="PDBx ext">
 
-  <xsl:output method="xml" indent="yes"/>
+  <xsl:output method="xml" encoding="UTF-8" indent="yes"/>
   <xsl:strip-space elements="*"/>
   <xsl:variable name="PRD_ID"><xsl:value-of select="/PDBx:datablock/@datablockName"/></xsl:variable>
   <xsl:variable name="base">http://rdf.wwpdb.org/prd/<xsl:value-of select="$PRD_ID"/></xsl:variable>

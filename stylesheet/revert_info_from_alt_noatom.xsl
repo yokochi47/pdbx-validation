@@ -14,7 +14,7 @@
   <xsl:param name="validation_created_date"/>
   <xsl:param name="nmr_atom_consistency"/>
 
-  <xsl:output method="xml" indent="yes"/>
+  <xsl:output method="xml" encoding="UTF-8" indent="yes"/>
   <xsl:strip-space elements="*"/>
 
   <xsl:variable name="datablock" select="/VRPTx:datablock"/>

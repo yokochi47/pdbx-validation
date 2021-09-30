@@ -10,13 +10,13 @@ if [ ! -e $PDBML_XSD ] ; then
  ( cd resource; ./update_pdbx_xsd.sh; ./update_pdbx_owl.sh )
 fi
 
-if [ ! -e $CC2RDF_XSL ] ; then
+#if [ ! -e $CC2RDF_XSL ] ; then
 
  java -jar $SAXON -s:$PDBML_XSD -xsl:$PDBX2CC2RDF_XSL -o:$CC2RDF_XSL || ( echo $0 aborted. ; exit 1 )
 
  echo Generated: $CC2RDF_XSL
 
-fi
+#fi
 
 xml_pretty() {
 

@@ -5,7 +5,7 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xmlns:VRPTx="http://pdbml.pdb.org/schema/pdbx-validation-v4.xsd">
 
-  <xsl:output method="xml" indent="yes"/>
+  <xsl:output method="xml" encoding="UTF-8" indent="yes"/>
   <xsl:strip-space elements="*"/>
 
   <xsl:variable name="datablock" select="/VRPTx:datablock"/>

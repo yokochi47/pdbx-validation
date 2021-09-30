@@ -9,7 +9,7 @@
    xmlns:xsl2="http://www.w3.org/1999/XSL/Transform"
    xmlns:xsd="http://www.w3.org/2001/XMLSchema">
 
-  <xsl2:output method="xml" indent="yes"/>
+  <xsl2:output method="xml" encoding="UTF-8" indent="yes"/>
   <xsl2:strip-space elements="*"/>
   <xsl2:template match="/">
     <xsl2:text disable-output-escaping="yes">&lt;xsl:stylesheet
@@ -36,14 +36,14 @@
   &lt;xsl:param name="wurcs2glytoucan" select="'https://raw.githubusercontent.com/yokochi47/pdbx-validation/master/wurcs2glytoucan/glytoucan.xml'" required="no"/&gt;
   &lt;xsl:param name="glytoucan" select="document($wurcs2glytoucan)"/&gt;
 
-  &lt;xsl:output method="xml" indent="yes"/&gt;
+  &lt;xsl:output method="xml" encoding="UTF-8" indent="yes"/&gt;
   &lt;xsl:strip-space elements="*"/&gt;
 
   &lt;xsl:variable name="PDB_ID"&gt;&lt;xsl:value-of select="/VRPTx:datablock/VRPTx:entryCategory/VRPTx:entry/@id"/&gt;&lt;/xsl:variable&gt;
   &lt;xsl:variable name="pdb_id"&gt;&lt;xsl:value-of select="translate($PDB_ID,'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz')"/&gt;&lt;/xsl:variable&gt;
   &lt;xsl:variable name="pdb_doi"&gt;&lt;xsl:value-of select="concat('10.2210/pdb',$pdb_id,'/pdb')"/&gt;&lt;/xsl:variable&gt;
   &lt;xsl:variable name="base"&gt;http://rdf.wwpdb.org/vrpt/&lt;xsl:value-of select="$PDB_ID"/&gt;&lt;/xsl:variable&gt;
-  &lt;xsl:variable name="base_lower"&gt;http://rdf.wwpdb.org/pdb/&lt;xsl:value-of select="$pdb_id"/&gt;&lt;/xsl:variable&gt;
+  &lt;xsl:variable name="base_lower"&gt;http://rdf.wwpdb.org/vrpt/&lt;xsl:value-of select="$pdb_id"/&gt;&lt;/xsl:variable&gt;
   &lt;xsl:variable name="pdb_link"&gt;http://rdf.wwpdb.org/pdb/&lt;/xsl:variable&gt;
   &lt;xsl:variable name="chem_comp"&gt;http://rdf.wwpdb.org/cc/&lt;/xsl:variable&gt;
   &lt;xsl:variable name="prd"&gt;http://rdf.wwpdb.org/prd/&lt;/xsl:variable&gt;
@@ -87,10 +87,10 @@
   &lt;xsl:template match="/VRPTx:datablock"&gt;
     &lt;VRPTo:datablock rdf:about="{$base}"&gt;
       &lt;dcterms:references rdf:resource="{$doi}{$pdb_doi}" rdfs:label="doi:{$pdb_doi}"/&gt;
-      &lt;dcterms:identifier&gt;&lt;xsl:value-of select="$PDB_ID"/&gt;&lt;/dcterms:identifier&gt;
-      &lt;skos:altLabel&gt;&lt;xsl:value-of select="$pdb_id"/&gt;&lt;/skos:altLabel&gt;
+      &lt;dcterms:identifier&gt;&lt;xsl:value-of select="concat($PDB_ID,'-validation')"/&gt;&lt;/dcterms:identifier&gt;
+      &lt;skos:altLabel&gt;&lt;xsl:value-of select="concat($pdb_id,'-validation')"/&gt;&lt;/skos:altLabel&gt;
       &lt;dc:title&gt;&lt;xsl:value-of select="concat('wwPDB validation report of PDB entry ',$PDB_ID)"/&gt;&lt;/dc:title&gt;
-      &lt;VRPTo:link_to_pdb_src rdf:resource="{$pdb_link}{$pdb_id}"/&gt;
+      &lt;VRPTo:link_to_pdb_src rdf:resource="{$pdb_link}{$PDB_ID}"/&gt;
       &lt;VRPTo:link_to_pdbml rdf:resource="{$pdbml}{$pdb_id}.xml.gz"/&gt;
       &lt;VRPTo:link_to_pdbml_noatom rdf:resource="{$pdbml_noatom}{$pdb_id}-noatom.xml.gz"/&gt;
       &lt;VRPTo:link_to_pdbml_extatom rdf:resource="{$pdbml_extatom}{$pdb_id}-extatom.xml.gz"/&gt;

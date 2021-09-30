@@ -7,7 +7,7 @@
 
   <xsl:param name="tagmap_csv_file" required="yes"/>
 
-  <xsl:output method="xml" indent="yes"/>
+  <xsl:output method="xml" encoding="UTF-8" indent="yes"/>
   <xsl:strip-space elements="*"/>
 
   <xsl:template name="main">

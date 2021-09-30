@@ -9,7 +9,7 @@
    xmlns:xsl2="http://www.w3.org/1999/XSL/Transform"
    xmlns:xsd="http://www.w3.org/2001/XMLSchema">
 
-  <xsl2:output method="xml" indent="yes"/>
+  <xsl2:output method="xml" encoding="UTF-8" indent="yes"/>
   <xsl2:strip-space elements="*"/>
   <xsl2:template match="/">
     <xsl2:text disable-output-escaping="yes">&lt;xsl:stylesheet
@@ -36,7 +36,7 @@
   &lt;xsl:param name="wurcs2glytoucan" select="'https://raw.githubusercontent.com/yokochi47/pdbx-validation/master/wurcs2glytoucan/glytoucan.xml'" required="no"/&gt;
   &lt;xsl:param name="glytoucan" select="document($wurcs2glytoucan)"/&gt;
 
-  &lt;xsl:output method="xml" indent="yes"/&gt;
+  &lt;xsl:output method="xml" encoding="UTF-8" indent="yes"/&gt;
   &lt;xsl:strip-space elements="*"/&gt;
 
   &lt;xsl:variable name="PDB_ID"&gt;&lt;xsl:value-of select="/PDBx:datablock/PDBx:entryCategory/PDBx:entry/@id"/&gt;&lt;/xsl:variable&gt;

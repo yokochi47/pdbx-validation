@@ -10,21 +10,21 @@ if [ ! -e $PDBML_XSD ] || [ ! -e $PDBML2RDF_XSL ] ; then
  ( cd resource; ./update_pdbx_xsd.sh; ./update_pdbx_owl.sh )
 fi
 
-if [ ! -e $MERGE_PDBML_SIFTS_XSL ] ; then
+#if [ ! -e $MERGE_PDBML_SIFTS_XSL ] ; then
 
  java -jar $SAXON -s:$PDBML_XSD -xsl:$XSD2MERGE_PDBML_SIFTS_XSL -o:$MERGE_PDBML_SIFTS_XSL || ( echo $0 aborted. ; exit 1 )
 
  echo Generated: $MERGE_PDBML_SIFTS_XSL
 
-fi
+#fi
 
-if [ ! -e $PDBML2RDF_XSL ] ; then
+#if [ ! -e $PDBML2RDF_XSL ] ; then
 
  java -jar $SAXON -s:$PDBML_XSD -xsl:$PDBX2PDBML2RDF_XSL -o:$PDBML2RDF_XSL || ( echo $0 aborted. ; exit 1 )
 
  echo Generated: $PDBML2RDF_XSL
 
-fi
+#fi
 
 xml_pretty() {
 

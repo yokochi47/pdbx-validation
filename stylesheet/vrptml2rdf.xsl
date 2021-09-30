@@ -15,14 +15,14 @@
   <xsl:param name="wurcs2glytoucan" select="'https://raw.githubusercontent.com/yokochi47/pdbx-validation/master/wurcs2glytoucan/glytoucan.xml'" required="no"/>
   <xsl:param name="glytoucan" select="document($wurcs2glytoucan)"/>
 
-  <xsl:output method="xml" indent="yes"/>
+  <xsl:output method="xml" encoding="UTF-8" indent="yes"/>
   <xsl:strip-space elements="*"/>
 
   <xsl:variable name="PDB_ID"><xsl:value-of select="/VRPTx:datablock/VRPTx:entryCategory/VRPTx:entry/@id"/></xsl:variable>
   <xsl:variable name="pdb_id"><xsl:value-of select="translate($PDB_ID,'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz')"/></xsl:variable>
   <xsl:variable name="pdb_doi"><xsl:value-of select="concat('10.2210/pdb',$pdb_id,'/pdb')"/></xsl:variable>
   <xsl:variable name="base">http://rdf.wwpdb.org/vrpt/<xsl:value-of select="$PDB_ID"/></xsl:variable>
-  <xsl:variable name="base_lower">http://rdf.wwpdb.org/pdb/<xsl:value-of select="$pdb_id"/></xsl:variable>
+  <xsl:variable name="base_lower">http://rdf.wwpdb.org/vrpt/<xsl:value-of select="$pdb_id"/></xsl:variable>
   <xsl:variable name="pdb_link">http://rdf.wwpdb.org/pdb/</xsl:variable>
   <xsl:variable name="chem_comp">http://rdf.wwpdb.org/cc/</xsl:variable>
   <xsl:variable name="prd">http://rdf.wwpdb.org/prd/</xsl:variable>
@@ -66,10 +66,10 @@
   <xsl:template match="/VRPTx:datablock">
     <VRPTo:datablock rdf:about="{$base}">
       <dcterms:references rdf:resource="{$doi}{$pdb_doi}" rdfs:label="doi:{$pdb_doi}"/>
-      <dcterms:identifier><xsl:value-of select="$PDB_ID"/></dcterms:identifier>
-      <skos:altLabel><xsl:value-of select="$pdb_id"/></skos:altLabel>
+      <dcterms:identifier><xsl:value-of select="concat($PDB_ID,'-validation')"/></dcterms:identifier>
+      <skos:altLabel><xsl:value-of select="concat($pdb_id,'-validation')"/></skos:altLabel>
       <dc:title><xsl:value-of select="concat('wwPDB validation report of PDB entry ',$PDB_ID)"/></dc:title>
-      <VRPTo:link_to_pdb_src rdf:resource="{$pdb_link}{$pdb_id}"/>
+      <VRPTo:link_to_pdb_src rdf:resource="{$pdb_link}{$PDB_ID}"/>
       <VRPTo:link_to_pdbml rdf:resource="{$pdbml}{$pdb_id}.xml.gz"/>
       <VRPTo:link_to_pdbml_noatom rdf:resource="{$pdbml_noatom}{$pdb_id}-noatom.xml.gz"/>
       <VRPTo:link_to_pdbml_extatom rdf:resource="{$pdbml_extatom}{$pdb_id}-extatom.xml.gz"/>

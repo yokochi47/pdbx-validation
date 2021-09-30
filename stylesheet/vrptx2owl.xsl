@@ -21,7 +21,7 @@
   <xsl:param name="tagmap_xml_file" required="yes"/>
   <xsl:param name="tagmap_xml" select="document($tagmap_xml_file)"/>
 
-  <xsl:output method="xml" indent="yes"/>
+  <xsl:output method="xml" encoding="UTF-8" indent="yes"/>
   <xsl:strip-space elements="*"/>
 
   <xsl:template match="/">
