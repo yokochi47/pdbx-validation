@@ -4,14 +4,18 @@ source ./scripts/env.sh
 
 MTIME=
 MTIME_OPT=
+FULL_OPT=
 
-ARGV=`getopt --long -o "m:" "$@"`
+ARGV=`getopt --long -o "m:f" "$@"`
 eval set -- "$ARGV"
 while true ; do
  case "$1" in
  -m)
   MTIME=$2
   shift
+ ;;
+ -f)
+  FULL_OPT=$1
  ;;
  *)
   break
@@ -24,7 +28,7 @@ if [ ! -z $MTIME ] ; then
  MTIME_OPT="-m "$MTIME
 fi
 
-./scripts/update_sifts.sh $MTIME_OPT || exit $?
+./scripts/update_sifts.sh $MTIME_OPT $FULL_OPT || exit $?
 
 ./scripts/update_pdbml.sh $MTIME_OPT || exit $?
 

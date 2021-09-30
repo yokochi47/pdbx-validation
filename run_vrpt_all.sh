@@ -12,8 +12,9 @@ fi
 MTIME=
 MTIME_OPT=
 VALID_OPT=
+FULL_OPT=
 
-ARGV=`getopt --long -o "m:v" "$@"`
+ARGV=`getopt --long -o "m:vf" "$@"`
 eval set -- "$ARGV"
 while true ; do
  case "$1" in
@@ -23,6 +24,9 @@ while true ; do
  ;;
  -v)
   VALID_OPT=$1
+ ;;
+ -f)
+  FULL_OPT=$1
  ;;
  *)
   break
@@ -35,11 +39,11 @@ if [ ! -z $MTIME ] ; then
  MTIME_OPT="-m "$MTIME
 fi
 
-#./scripts/update_sifts.sh $MTIME_OPT || exit $?
+#./scripts/update_sifts.sh $MTIME_OPT $FULL_OPT || exit $?
 
 #./scripts/update_pdbml.sh $MTIME_OPT || exit $?
 
-./scripts/update_vrpt.sh $MTIME_OPT || exit $?
+./scripts/update_vrpt.sh $MTIME_OPT $FULL_OPT || exit $?
 
 huge_number=100000
 

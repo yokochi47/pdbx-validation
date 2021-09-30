@@ -11,7 +11,7 @@ if [ ! `which aria2c` ] ; then
 fi
 
 MTIME=
-FULL_UPDATE=false
+FULL=false
 
 ARGV=`getopt --long -o "m:f" "$@"`
 eval set -- "$ARGV"
@@ -22,7 +22,7 @@ while true ; do
   shift
  ;;
  -f)
-  FULL_UPDATE=true
+  FULL=true
  ;;
  *)
   break
@@ -89,7 +89,7 @@ if [ $weekday -ge 1 ] && [ $weekday -le 4 ] ; then
 
  java -classpath $XSD2PGSCHEMA chksumstat --xml $SRC_DIR --xml-file-ext gz --sync $MD5_DIR --update --verbose > $chk_sum_log
 
- if [ $FULL_UPDATE = "true" ] ; then
+ if [ $FULL = "true" ] ; then
 
  if [ -d $PDBML_SIFTS ] ; then
   while read pdb_id ; do
