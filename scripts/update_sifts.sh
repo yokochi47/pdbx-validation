@@ -83,7 +83,7 @@ if [ $weekday -ge 1 ] && [ $weekday -le 4 ] ; then
 
  rm -f $pdb_chain_uniprot_tsv $sifts_xml_list $sifts_xml_all $sifts_xml_unz $sifts_xml_new $sifts_xml_del
 
- MD5_DIR=chk_sum_sifts_xml
+ MD5_DIR=chk_sum_xml_sifts
 
  chk_sum_log=sifts_xml_log
 
