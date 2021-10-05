@@ -118,9 +118,9 @@ date -u +"%b %d, %Y" > /tmp/vrpt-virtuoso-last
 
 echo "RDF->VIRTUOSO (prefix:"$DB_NAME") is completed."
 
-echo -n $"Stopping virtuoso-t daemon: "
+#echo -n $"Stopping virtuoso-t daemon: "
 
-isql $VIRTUOSO_DB_PORT $VIRTUOSO_DB_USER $VIRTUOSO_DB_PASS -K
+#isql $VIRTUOSO_DB_PORT $VIRTUOSO_DB_USER $VIRTUOSO_DB_PASS -K
 
 echo
 
