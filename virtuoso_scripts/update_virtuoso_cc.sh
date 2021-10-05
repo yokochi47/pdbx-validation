@@ -118,6 +118,8 @@ date -u +"%b %d, %Y" > /tmp/cc-virtuoso-last
 
 echo "RDF->VIRTUOSO (prefix:"$DB_NAME") is completed."
 
+cd .. ; rm -rf $RDF_CC_LINK
+
 #echo -n $"Stopping virtuoso-t daemon: "
 
 #isql $VIRTUOSO_DB_PORT $VIRTUOSO_DB_USER $VIRTUOSO_DB_PASS -K
