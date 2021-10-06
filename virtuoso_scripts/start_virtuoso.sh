@@ -54,7 +54,7 @@ iter=1
 
 while true ; do
 
- sleep 300
+ sleep 30
 
  isql $VIRTUOSO_DB_PORT $VIRTUOSO_DB_USER $VIRTUOSO_DB_PASS exec="status();" &> /dev/null
 
