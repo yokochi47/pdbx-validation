@@ -28,7 +28,7 @@ fi
 
 #./virtuoso_scripts/start_virtuoso.sh || exit 1
 
-#sleep 180
+#sleep 30
 
 GRAPH_URI=http://rdf.wwpdb.org/$DB_NAME
 
