@@ -131,7 +131,7 @@ File path | Document
 	- [VRPT PDBML (full specification @ PDBj data server)](https://data.pdbj.org/pdbjplus/data/vrpt/xml-full/)
 	- [VRPT PDBML-alt (lightweight alternative version @ PDBj data server)](https://data.pdbj.org/pdbjplus/data/vrpt/xml/)
 
-	- [VRPT/RDF (full specification @ BMRBj data server)](https://bmrbpub.pdbj.org/archive/wwpdb-rdf-vrpt/)
+	- [VRPT/RDF (full specification @ BMRBj data server)](https://bmrbpub.pdbj.org/archive/rdf-vrpt/)
 	- [VRPT/RDF (full specification @ PDBj data server)](https://data.pdbj.org/pdbjplus/data/vrpt/rdf-full/)
 	- [VRPT/RDF-alt (lightweight alternative version @ PDBj data server)](https://data.pdbj.org/pdbjplus/data/vrpt/rdf/)
 
@@ -144,7 +144,7 @@ File path | Document
 	 `% rsync -av --delete rsync://bmrbpub.pdbj.org/pdbml-vrpt .`
 
 	- VRPT/RDF (full specification):<br />
-	 `% rsync -av --delete rsync://bmrbpub.pdbj.org/wwpdb-rdf-vrpt .`
+	 `% rsync -av --delete rsync://bmrbpub.pdbj.org/rdf-vrpt .`
 
 - [VRPT PDBML-alt PostgreSQL dump file](https://bmrbpub.pdbj.org/resources.html)
 
