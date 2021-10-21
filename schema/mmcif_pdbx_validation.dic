@@ -1,10 +1,10 @@
 ###########################################################################
 #
 # File:  mmcif_pdbx_validation-v4.dic
-# Date:  Mon Sep 13 09:24:25 JST 2021
+# Date:  Thu Oct 21 16:05:57 JST 2021
 #
 # Created from:
-#        mmcif_pdbx_v50.dic   - PDB Exchange Data Dictionary (V5.350)
+#        mmcif_pdbx_v50.dic   - PDB Exchange Data Dictionary (V5.351)
 #        http://wwpdb.org/validation/schema/wwpdb_validation_v6.00.xsd
 #         - a XML schema for wwPDB validation reports, v6.00, rev. 2021-01-22
 #
@@ -31,7 +31,7 @@ data_mmcif_pdbx_validation.dic
 
     _dictionary.title           mmcif_pdbx_validation.dic
     _dictionary.datablock_id    mmcif_pdbx_validation.dic
-    _dictionary.version         4.350
+    _dictionary.version         4.351
 #
     loop_
     _dictionary_history.version
@@ -947,6 +947,14 @@ data_mmcif_pdbx_validation.dic
 >     + Correct advisory limits for _em_image_recording.avg_electron_dose_per_subtomogram # merged
 >     + Extend _pdbx_audit_support.funding_organization enumeration. # not mapped
 ;
+  4.351   2021-10-21
+;
+>     + Update deposition help text for _diffrn.abient_temp # merged
+>     + Extend _pdbx_audit_support.funding_organization enumeration. # not mapped
+>     + Add "BRUKER IMUS 3.0 MICROFOCUS" to _diffrn_source.type enumeration # merged
+>     + Add IPET and TomoAlign to _em_software.name enumeration # merged
+>     + Change pdx_item_tye for _pdbx_struct_ref_seq_depositor_info.db_seq_one_letter_code # not mapped
+;
 
 
 #
@@ -1715,7 +1723,7 @@ save_
 
 save__diffrn.ambient_temp
     _item_description.description
-;              The mean temperature in kelvins at which the intensities were
+;              The mean temperature in kelvin at which the intensities were
                measured.
 ;
     _item.name                  '_diffrn.ambient_temp'
@@ -1726,7 +1734,7 @@ save__diffrn.ambient_temp
     _pdbx_item.mandatory_code     yes
    #
     _pdbx_item_description.name         '_diffrn.ambient_temp'
-    _pdbx_item_description.description  'Give the temperature in Kelvin that the data were collected at'
+    _pdbx_item_description.description  'The usual temperature when using cold nitrogen gas stream is around T=100 K'
    #   #
     loop_
     _pdbx_item_range.name
@@ -4292,6 +4300,7 @@ save__diffrn_source.type
      "_diffrn_source.type"  "BRUKER AXS MICROSTAR-H"                         "ROTATING ANODE"
      "_diffrn_source.type"  "BRUKER D8 QUEST"                                "SEALED TUBE"
      "_diffrn_source.type"  "BRUKER IMUS MICROFOCUS"                         "SEALED TUBE"
+     "_diffrn_source.type"  "BRUKER IMUS 3.0 MICROFOCUS"                     "SEALED TUBE"
      "_diffrn_source.type"  "BRUKER METALJET"                                "LIQUID ANODE"
      "_diffrn_source.type"  "BRUKER TURBO X-RAY SOURCE"                      "ROTATING ANODE"
      "_diffrn_source.type"  "BRUKER X8 PROTEUM"                              "ROTATING ANODE"
@@ -54507,6 +54516,7 @@ save__em_software.name
         '_em_software.name'  IMOD                               .
         '_em_software.name'  iMODFIT                            .
         '_em_software.name'  IMP                                .
+        '_em_software.name'  IPET                               .
         '_em_software.name'  ISOLDE                             .
         '_em_software.name'  J3DR                               .
         '_em_software.name'  JADAS                              .
@@ -54566,6 +54576,7 @@ save__em_software.name
         '_em_software.name'  'TOM Toolbox'                      .
         '_em_software.name'  TOMO3D                             .
         '_em_software.name'  TOMOCTF                            .
+        '_em_software.name'  TomoAlign                          .
         '_em_software.name'  Topaz                              .
         '_em_software.name'  'UCSF Chimera'                     .
         '_em_software.name'  'UCSF ChimeraX'                    .
