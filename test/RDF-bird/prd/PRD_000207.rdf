@@ -257,7 +257,7 @@
             <PDBo:pdbx_reference_entity_poly.db_name>NOR</PDBo:pdbx_reference_entity_poly.db_name>
             <PDBo:pdbx_reference_entity_poly.type>peptide-like</PDBo:pdbx_reference_entity_poly.type>
             <PDBo:link_to_norine rdf:resource="http://bioinfo.lifl.fr/norine/result.jsp?ID=NOR00692" rdfs:label="norine:NOR00692"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/norine:NOR00692" rdfs:label="norine:NOR00692"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/norine/NOR00692" rdfs:label="norine:NOR00692"/>
           </PDBo:pdbx_reference_entity_poly>
         </PDBo:has_pdbx_reference_entity_poly>
       </PDBo:pdbx_reference_entity_polyCategory>
@@ -674,7 +674,7 @@
             <PDBo:pdbx_reference_entity_src_nat.taxid>31958</PDBo:pdbx_reference_entity_src_nat.taxid>
             <PDBo:link_to_nadb rdf:resource="http://www.nih.go.jp/~jun/NADB/show.cgi/430189.html" rdfs:label="nadb:430189"/>
             <PDBo:link_to_taxonomy_source rdf:resource="http://purl.uniprot.org/taxonomy/31958" rdfs:label="taxonomy:31958"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/taxonomy:31958" rdfs:label="taxonomy:31958"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/taxonomy/31958" rdfs:label="taxonomy:31958"/>
           </PDBo:pdbx_reference_entity_src_nat>
         </PDBo:has_pdbx_reference_entity_src_nat>
         <PDBo:has_pdbx_reference_entity_src_nat>
@@ -689,7 +689,7 @@
             <PDBo:pdbx_reference_entity_src_nat.taxid>100235</PDBo:pdbx_reference_entity_src_nat.taxid>
             <PDBo:link_to_pdb rdf:resource="http://rdf.wwpdb.org/pdb/1HH3"/>
             <PDBo:link_to_taxonomy_source rdf:resource="http://purl.uniprot.org/taxonomy/100235" rdfs:label="taxonomy:100235"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/taxonomy:100235" rdfs:label="taxonomy:100235"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/taxonomy/100235" rdfs:label="taxonomy:100235"/>
           </PDBo:pdbx_reference_entity_src_nat>
         </PDBo:has_pdbx_reference_entity_src_nat>
         <PDBo:has_pdbx_reference_entity_src_nat>
@@ -704,7 +704,7 @@
             <PDBo:pdbx_reference_entity_src_nat.taxid>163672</PDBo:pdbx_reference_entity_src_nat.taxid>
             <PDBo:link_to_nadb rdf:resource="http://www.nih.go.jp/~jun/NADB/show.cgi/420095.html" rdfs:label="nadb:420095"/>
             <PDBo:link_to_taxonomy_source rdf:resource="http://purl.uniprot.org/taxonomy/163672" rdfs:label="taxonomy:163672"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/taxonomy:163672" rdfs:label="taxonomy:163672"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/taxonomy/163672" rdfs:label="taxonomy:163672"/>
           </PDBo:pdbx_reference_entity_src_nat>
         </PDBo:has_pdbx_reference_entity_src_nat>
         <PDBo:has_pdbx_reference_entity_src_nat>
@@ -717,7 +717,7 @@
             <PDBo:pdbx_reference_entity_src_nat.source>DOI</PDBo:pdbx_reference_entity_src_nat.source>
             <PDBo:pdbx_reference_entity_src_nat.taxid>208441</PDBo:pdbx_reference_entity_src_nat.taxid>
             <PDBo:link_to_taxonomy_source rdf:resource="http://purl.uniprot.org/taxonomy/208441" rdfs:label="taxonomy:208441"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/taxonomy:208441" rdfs:label="taxonomy:208441"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/taxonomy/208441" rdfs:label="taxonomy:208441"/>
           </PDBo:pdbx_reference_entity_src_nat>
         </PDBo:has_pdbx_reference_entity_src_nat>
       </PDBo:pdbx_reference_entity_src_natCategory>

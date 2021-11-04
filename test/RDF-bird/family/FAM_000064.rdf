@@ -21,7 +21,7 @@
             <PDBo:citation.year>1978</PDBo:citation.year>
             <PDBo:link_to_doi rdf:resource="http://doi.org/10.1016/0022-2836(78)90261-9" rdfs:label="doi:10.1016/0022-2836(78)90261-9"/>
             <PDBo:link_to_pubmed rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/77905" rdfs:label="pubmed:77905"/>
-            <dcterms:references rdf:resource="http://identifiers.org/pubmed:77905" rdfs:label="pubmed:77905"/>
+            <dcterms:references rdf:resource="http://identifiers.org/pubmed/77905" rdfs:label="pubmed:77905"/>
           </PDBo:citation>
         </PDBo:has_citation>
       </PDBo:citationCategory>
@@ -146,7 +146,7 @@
             <PDBo:pdbx_reference_molecule_annotation.text>channel-forming antibiotic</PDBo:pdbx_reference_molecule_annotation.text>
             <PDBo:pdbx_reference_molecule_annotation.type>Function</PDBo:pdbx_reference_molecule_annotation.type>
             <PDBo:link_to_pubmed rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/11570868" rdfs:label="pubmed:11570868"/>
-            <dcterms:references rdf:resource="http://identifiers.org/pubmed:11570868" rdfs:label="pubmed:11570868"/>
+            <dcterms:references rdf:resource="http://identifiers.org/pubmed/11570868" rdfs:label="pubmed:11570868"/>
           </PDBo:pdbx_reference_molecule_annotation>
         </PDBo:has_pdbx_reference_molecule_annotation>
         <PDBo:has_pdbx_reference_molecule_annotation>
@@ -159,7 +159,7 @@
             <PDBo:pdbx_reference_molecule_annotation.text>channel-forming antibiotic</PDBo:pdbx_reference_molecule_annotation.text>
             <PDBo:pdbx_reference_molecule_annotation.type>Function</PDBo:pdbx_reference_molecule_annotation.type>
             <PDBo:link_to_pubmed rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/11570868" rdfs:label="pubmed:11570868"/>
-            <dcterms:references rdf:resource="http://identifiers.org/pubmed:11570868" rdfs:label="pubmed:11570868"/>
+            <dcterms:references rdf:resource="http://identifiers.org/pubmed/11570868" rdfs:label="pubmed:11570868"/>
           </PDBo:pdbx_reference_molecule_annotation>
         </PDBo:has_pdbx_reference_molecule_annotation>
         <PDBo:has_pdbx_reference_molecule_annotation>
@@ -172,7 +172,7 @@
             <PDBo:pdbx_reference_molecule_annotation.text>channel-forming antibiotic</PDBo:pdbx_reference_molecule_annotation.text>
             <PDBo:pdbx_reference_molecule_annotation.type>Function</PDBo:pdbx_reference_molecule_annotation.type>
             <PDBo:link_to_pubmed rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/11570868" rdfs:label="pubmed:11570868"/>
-            <dcterms:references rdf:resource="http://identifiers.org/pubmed:11570868" rdfs:label="pubmed:11570868"/>
+            <dcterms:references rdf:resource="http://identifiers.org/pubmed/11570868" rdfs:label="pubmed:11570868"/>
           </PDBo:pdbx_reference_molecule_annotation>
         </PDBo:has_pdbx_reference_molecule_annotation>
         <PDBo:has_pdbx_reference_molecule_annotation>
@@ -197,7 +197,7 @@
             <PDBo:pdbx_reference_molecule_annotation.text>biological ion channel</PDBo:pdbx_reference_molecule_annotation.text>
             <PDBo:pdbx_reference_molecule_annotation.type>Function</PDBo:pdbx_reference_molecule_annotation.type>
             <PDBo:link_to_pubmed rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/15691331" rdfs:label="pubmed:15691331"/>
-            <dcterms:references rdf:resource="http://identifiers.org/pubmed:15691331" rdfs:label="pubmed:15691331"/>
+            <dcterms:references rdf:resource="http://identifiers.org/pubmed/15691331" rdfs:label="pubmed:15691331"/>
           </PDBo:pdbx_reference_molecule_annotation>
         </PDBo:has_pdbx_reference_molecule_annotation>
         <PDBo:has_pdbx_reference_molecule_annotation>
@@ -268,7 +268,7 @@
             <PDBo:pdbx_reference_molecule_features.type>External_Reference_ID</PDBo:pdbx_reference_molecule_features.type>
             <PDBo:pdbx_reference_molecule_features.value>11029-61-1</PDBo:pdbx_reference_molecule_features.value>
             <PDBo:link_to_cas rdf:resource="http://commonchemistry.cas.org/detail?ref=11029-61-1" rdfs:label="cas:11029-61-1"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/cas:11029-61-1" rdfs:label="cas:11029-61-1"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/cas/11029-61-1" rdfs:label="cas:11029-61-1"/>
           </PDBo:pdbx_reference_molecule_features>
         </PDBo:has_pdbx_reference_molecule_features>
         <PDBo:has_pdbx_reference_molecule_features>
@@ -304,7 +304,7 @@
             <PDBo:pdbx_reference_molecule_features.type>External_Reference_ID</PDBo:pdbx_reference_molecule_features.type>
             <PDBo:pdbx_reference_molecule_features.value>16132269</PDBo:pdbx_reference_molecule_features.value>
             <PDBo:link_to_pubchem_substance rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubchem/substance/SID16132269" rdfs:label="pubchem.substance:16132269"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/pubchem.substance:16132269" rdfs:label="pubchem.substance:16132269"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/pubchem.substance/16132269" rdfs:label="pubchem.substance:16132269"/>
           </PDBo:pdbx_reference_molecule_features>
         </PDBo:has_pdbx_reference_molecule_features>
         <PDBo:has_pdbx_reference_molecule_features>
@@ -323,7 +323,7 @@
             <PDBo:pdbx_reference_molecule_features.type>External_Reference_ID</PDBo:pdbx_reference_molecule_features.type>
             <PDBo:pdbx_reference_molecule_features.value>17288928</PDBo:pdbx_reference_molecule_features.value>
             <PDBo:link_to_chemspider rdf:resource="http://www.chemspider.com/Chemical-Structure.17288928.html" rdfs:label="chemspider:17288928"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/chemspider:17288928" rdfs:label="chemspider:17288928"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/chemspider/17288928" rdfs:label="chemspider:17288928"/>
           </PDBo:pdbx_reference_molecule_features>
         </PDBo:has_pdbx_reference_molecule_features>
         <PDBo:has_pdbx_reference_molecule_features>
@@ -359,7 +359,7 @@
             <PDBo:pdbx_reference_molecule_features.type>KEGG_Compound_ID</PDBo:pdbx_reference_molecule_features.type>
             <PDBo:pdbx_reference_molecule_features.value>C15830</PDBo:pdbx_reference_molecule_features.value>
             <PDBo:link_to_kegg_comp rdf:resource="http://www.kegg.jp/entry/C15830" rdfs:label="kegg.compound:C15830"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/kegg.compound:C15830" rdfs:label="kegg.compound:C15830"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/kegg.compound/C15830" rdfs:label="kegg.compound:C15830"/>
           </PDBo:pdbx_reference_molecule_features>
         </PDBo:has_pdbx_reference_molecule_features>
         <PDBo:has_pdbx_reference_molecule_features>
@@ -378,7 +378,7 @@
             <PDBo:pdbx_reference_molecule_features.type>MESH_Unique_ID</PDBo:pdbx_reference_molecule_features.type>
             <PDBo:pdbx_reference_molecule_features.value>D006096</PDBo:pdbx_reference_molecule_features.value>
             <PDBo:link_to_mesh rdf:resource="http://id.nlm.nih.gov/mesh/D006096" rdfs:label="mesh:D006096"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/mesh:D006096" rdfs:label="mesh:D006096"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/mesh/D006096" rdfs:label="mesh:D006096"/>
           </PDBo:pdbx_reference_molecule_features>
         </PDBo:has_pdbx_reference_molecule_features>
         <PDBo:has_pdbx_reference_molecule_features>
@@ -396,8 +396,7 @@
             <PDBo:pdbx_reference_molecule_features.source_ordinal>1</PDBo:pdbx_reference_molecule_features.source_ordinal>
             <PDBo:pdbx_reference_molecule_features.type>MESH_TreeNumber</PDBo:pdbx_reference_molecule_features.type>
             <PDBo:pdbx_reference_molecule_features.value>D04.345.566.850.300</PDBo:pdbx_reference_molecule_features.value>
-            <PDBo:link_to_mesh rdf:resource="http://id.nlm.nih.gov/mesh/D04.345.566.850.300" rdfs:label="mesh:D04.345.566.850.300"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/mesh:D04.345.566.850.300" rdfs:label="mesh:D04.345.566.850.300"/>
+            <PDBo:link_to_mesh rdf:resource="http://id.nlm.nih.gov/mesh/D04.345.566.850.300" rdfs:label="mesh.tree:D04.345.566.850.300"/>
           </PDBo:pdbx_reference_molecule_features>
         </PDBo:has_pdbx_reference_molecule_features>
         <PDBo:has_pdbx_reference_molecule_features>
@@ -415,8 +414,7 @@
             <PDBo:pdbx_reference_molecule_features.source_ordinal>2</PDBo:pdbx_reference_molecule_features.source_ordinal>
             <PDBo:pdbx_reference_molecule_features.type>MESH_TreeNumber</PDBo:pdbx_reference_molecule_features.type>
             <PDBo:pdbx_reference_molecule_features.value>D12.644.641.850.300</PDBo:pdbx_reference_molecule_features.value>
-            <PDBo:link_to_mesh rdf:resource="http://id.nlm.nih.gov/mesh/D12.644.641.850.300" rdfs:label="mesh:D12.644.641.850.300"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/mesh:D12.644.641.850.300" rdfs:label="mesh:D12.644.641.850.300"/>
+            <PDBo:link_to_mesh rdf:resource="http://id.nlm.nih.gov/mesh/D12.644.641.850.300" rdfs:label="mesh.tree:D12.644.641.850.300"/>
           </PDBo:pdbx_reference_molecule_features>
         </PDBo:has_pdbx_reference_molecule_features>
         <PDBo:has_pdbx_reference_molecule_features>
@@ -434,8 +432,7 @@
             <PDBo:pdbx_reference_molecule_features.source_ordinal>3</PDBo:pdbx_reference_molecule_features.source_ordinal>
             <PDBo:pdbx_reference_molecule_features.type>MESH_TreeNumber</PDBo:pdbx_reference_molecule_features.type>
             <PDBo:pdbx_reference_molecule_features.value>D12.644.905.300</PDBo:pdbx_reference_molecule_features.value>
-            <PDBo:link_to_mesh rdf:resource="http://id.nlm.nih.gov/mesh/D12.644.905.300" rdfs:label="mesh:D12.644.905.300"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/mesh:D12.644.905.300" rdfs:label="mesh:D12.644.905.300"/>
+            <PDBo:link_to_mesh rdf:resource="http://id.nlm.nih.gov/mesh/D12.644.905.300" rdfs:label="mesh.tree:D12.644.905.300"/>
           </PDBo:pdbx_reference_molecule_features>
         </PDBo:has_pdbx_reference_molecule_features>
         <PDBo:has_pdbx_reference_molecule_features>
@@ -453,8 +450,7 @@
             <PDBo:pdbx_reference_molecule_features.source_ordinal>4</PDBo:pdbx_reference_molecule_features.source_ordinal>
             <PDBo:pdbx_reference_molecule_features.type>MESH_TreeNumber</PDBo:pdbx_reference_molecule_features.type>
             <PDBo:pdbx_reference_molecule_features.value>D12.776.543.695.221</PDBo:pdbx_reference_molecule_features.value>
-            <PDBo:link_to_mesh rdf:resource="http://id.nlm.nih.gov/mesh/D12.776.543.695.221" rdfs:label="mesh:D12.776.543.695.221"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/mesh:D12.776.543.695.221" rdfs:label="mesh:D12.776.543.695.221"/>
+            <PDBo:link_to_mesh rdf:resource="http://id.nlm.nih.gov/mesh/D12.776.543.695.221" rdfs:label="mesh.tree:D12.776.543.695.221"/>
           </PDBo:pdbx_reference_molecule_features>
         </PDBo:has_pdbx_reference_molecule_features>
         <PDBo:has_pdbx_reference_molecule_features>
@@ -490,7 +486,7 @@
             <PDBo:pdbx_reference_molecule_features.type>External_Reference_ID</PDBo:pdbx_reference_molecule_features.type>
             <PDBo:pdbx_reference_molecule_features.value>25244501</PDBo:pdbx_reference_molecule_features.value>
             <PDBo:link_to_pubchem_substance rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubchem/substance/SID25244501" rdfs:label="pubchem.substance:25244501"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/pubchem.substance:25244501" rdfs:label="pubchem.substance:25244501"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/pubchem.substance/25244501" rdfs:label="pubchem.substance:25244501"/>
           </PDBo:pdbx_reference_molecule_features>
         </PDBo:has_pdbx_reference_molecule_features>
         <PDBo:has_pdbx_reference_molecule_features>
@@ -509,7 +505,7 @@
             <PDBo:pdbx_reference_molecule_features.type>MESH_Unique_ID</PDBo:pdbx_reference_molecule_features.type>
             <PDBo:pdbx_reference_molecule_features.value>D006096</PDBo:pdbx_reference_molecule_features.value>
             <PDBo:link_to_mesh rdf:resource="http://id.nlm.nih.gov/mesh/D006096" rdfs:label="mesh:D006096"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/mesh:D006096" rdfs:label="mesh:D006096"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/mesh/D006096" rdfs:label="mesh:D006096"/>
           </PDBo:pdbx_reference_molecule_features>
         </PDBo:has_pdbx_reference_molecule_features>
         <PDBo:has_pdbx_reference_molecule_features>
@@ -527,8 +523,7 @@
             <PDBo:pdbx_reference_molecule_features.source_ordinal>1</PDBo:pdbx_reference_molecule_features.source_ordinal>
             <PDBo:pdbx_reference_molecule_features.type>MESH_TreeNumber</PDBo:pdbx_reference_molecule_features.type>
             <PDBo:pdbx_reference_molecule_features.value>D04.345.566.850.300</PDBo:pdbx_reference_molecule_features.value>
-            <PDBo:link_to_mesh rdf:resource="http://id.nlm.nih.gov/mesh/D04.345.566.850.300" rdfs:label="mesh:D04.345.566.850.300"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/mesh:D04.345.566.850.300" rdfs:label="mesh:D04.345.566.850.300"/>
+            <PDBo:link_to_mesh rdf:resource="http://id.nlm.nih.gov/mesh/D04.345.566.850.300" rdfs:label="mesh.tree:D04.345.566.850.300"/>
           </PDBo:pdbx_reference_molecule_features>
         </PDBo:has_pdbx_reference_molecule_features>
         <PDBo:has_pdbx_reference_molecule_features>
@@ -546,8 +541,7 @@
             <PDBo:pdbx_reference_molecule_features.source_ordinal>2</PDBo:pdbx_reference_molecule_features.source_ordinal>
             <PDBo:pdbx_reference_molecule_features.type>MESH_TreeNumber</PDBo:pdbx_reference_molecule_features.type>
             <PDBo:pdbx_reference_molecule_features.value>D12.644.641.850.300</PDBo:pdbx_reference_molecule_features.value>
-            <PDBo:link_to_mesh rdf:resource="http://id.nlm.nih.gov/mesh/D12.644.641.850.300" rdfs:label="mesh:D12.644.641.850.300"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/mesh:D12.644.641.850.300" rdfs:label="mesh:D12.644.641.850.300"/>
+            <PDBo:link_to_mesh rdf:resource="http://id.nlm.nih.gov/mesh/D12.644.641.850.300" rdfs:label="mesh.tree:D12.644.641.850.300"/>
           </PDBo:pdbx_reference_molecule_features>
         </PDBo:has_pdbx_reference_molecule_features>
         <PDBo:has_pdbx_reference_molecule_features>
@@ -565,8 +559,7 @@
             <PDBo:pdbx_reference_molecule_features.source_ordinal>3</PDBo:pdbx_reference_molecule_features.source_ordinal>
             <PDBo:pdbx_reference_molecule_features.type>MESH_TreeNumber</PDBo:pdbx_reference_molecule_features.type>
             <PDBo:pdbx_reference_molecule_features.value>D12.644.905.300</PDBo:pdbx_reference_molecule_features.value>
-            <PDBo:link_to_mesh rdf:resource="http://id.nlm.nih.gov/mesh/D12.644.905.300" rdfs:label="mesh:D12.644.905.300"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/mesh:D12.644.905.300" rdfs:label="mesh:D12.644.905.300"/>
+            <PDBo:link_to_mesh rdf:resource="http://id.nlm.nih.gov/mesh/D12.644.905.300" rdfs:label="mesh.tree:D12.644.905.300"/>
           </PDBo:pdbx_reference_molecule_features>
         </PDBo:has_pdbx_reference_molecule_features>
         <PDBo:has_pdbx_reference_molecule_features>
@@ -584,8 +577,7 @@
             <PDBo:pdbx_reference_molecule_features.source_ordinal>4</PDBo:pdbx_reference_molecule_features.source_ordinal>
             <PDBo:pdbx_reference_molecule_features.type>MESH_TreeNumber</PDBo:pdbx_reference_molecule_features.type>
             <PDBo:pdbx_reference_molecule_features.value>D12.776.543.695.221</PDBo:pdbx_reference_molecule_features.value>
-            <PDBo:link_to_mesh rdf:resource="http://id.nlm.nih.gov/mesh/D12.776.543.695.221" rdfs:label="mesh:D12.776.543.695.221"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/mesh:D12.776.543.695.221" rdfs:label="mesh:D12.776.543.695.221"/>
+            <PDBo:link_to_mesh rdf:resource="http://id.nlm.nih.gov/mesh/D12.776.543.695.221" rdfs:label="mesh.tree:D12.776.543.695.221"/>
           </PDBo:pdbx_reference_molecule_features>
         </PDBo:has_pdbx_reference_molecule_features>
         <PDBo:has_pdbx_reference_molecule_features>
@@ -604,7 +596,7 @@
             <PDBo:pdbx_reference_molecule_features.type>External_Reference_ID</PDBo:pdbx_reference_molecule_features.type>
             <PDBo:pdbx_reference_molecule_features.value>1393-88-0</PDBo:pdbx_reference_molecule_features.value>
             <PDBo:link_to_cas rdf:resource="http://commonchemistry.cas.org/detail?ref=1393-88-0" rdfs:label="cas:1393-88-0"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/cas:1393-88-0" rdfs:label="cas:1393-88-0"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/cas/1393-88-0" rdfs:label="cas:1393-88-0"/>
           </PDBo:pdbx_reference_molecule_features>
         </PDBo:has_pdbx_reference_molecule_features>
         <PDBo:has_pdbx_reference_molecule_features>
@@ -657,7 +649,7 @@
             <PDBo:pdbx_reference_molecule_features.type>External_Reference_ID</PDBo:pdbx_reference_molecule_features.type>
             <PDBo:pdbx_reference_molecule_features.value>DB00027</PDBo:pdbx_reference_molecule_features.value>
             <PDBo:link_to_drugbank rdf:resource="http://www.drugbank.ca/drugs/DB00027" rdfs:label="drugbank:DB00027"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/drugbank:DB00027" rdfs:label="drugbank:DB00027"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/drugbank/DB00027" rdfs:label="drugbank:DB00027"/>
           </PDBo:pdbx_reference_molecule_features>
         </PDBo:has_pdbx_reference_molecule_features>
         <PDBo:has_pdbx_reference_molecule_features>
@@ -676,7 +668,7 @@
             <PDBo:pdbx_reference_molecule_features.type>External_Reference_ID</PDBo:pdbx_reference_molecule_features.type>
             <PDBo:pdbx_reference_molecule_features.value>16130140</PDBo:pdbx_reference_molecule_features.value>
             <PDBo:link_to_pubchem_substance rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubchem/substance/SID16130140" rdfs:label="pubchem.substance:16130140"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/pubchem.substance:16130140" rdfs:label="pubchem.substance:16130140"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/pubchem.substance/16130140" rdfs:label="pubchem.substance:16130140"/>
           </PDBo:pdbx_reference_molecule_features>
         </PDBo:has_pdbx_reference_molecule_features>
         <PDBo:has_pdbx_reference_molecule_features>
@@ -695,7 +687,7 @@
             <PDBo:pdbx_reference_molecule_features.type>External_Reference_ID</PDBo:pdbx_reference_molecule_features.type>
             <PDBo:pdbx_reference_molecule_features.value>17286916</PDBo:pdbx_reference_molecule_features.value>
             <PDBo:link_to_chemspider rdf:resource="http://www.chemspider.com/Chemical-Structure.17286916.html" rdfs:label="chemspider:17286916"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/chemspider:17286916" rdfs:label="chemspider:17286916"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/chemspider/17286916" rdfs:label="chemspider:17286916"/>
           </PDBo:pdbx_reference_molecule_features>
         </PDBo:has_pdbx_reference_molecule_features>
         <PDBo:has_pdbx_reference_molecule_features>
@@ -714,7 +706,7 @@
             <PDBo:pdbx_reference_molecule_features.type>MESH_Unique_ID</PDBo:pdbx_reference_molecule_features.type>
             <PDBo:pdbx_reference_molecule_features.value>D006096</PDBo:pdbx_reference_molecule_features.value>
             <PDBo:link_to_mesh rdf:resource="http://id.nlm.nih.gov/mesh/D006096" rdfs:label="mesh:D006096"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/mesh:D006096" rdfs:label="mesh:D006096"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/mesh/D006096" rdfs:label="mesh:D006096"/>
           </PDBo:pdbx_reference_molecule_features>
         </PDBo:has_pdbx_reference_molecule_features>
         <PDBo:has_pdbx_reference_molecule_features>
@@ -732,8 +724,7 @@
             <PDBo:pdbx_reference_molecule_features.source_ordinal>1</PDBo:pdbx_reference_molecule_features.source_ordinal>
             <PDBo:pdbx_reference_molecule_features.type>MESH_TreeNumber</PDBo:pdbx_reference_molecule_features.type>
             <PDBo:pdbx_reference_molecule_features.value>D04.345.566.850.300</PDBo:pdbx_reference_molecule_features.value>
-            <PDBo:link_to_mesh rdf:resource="http://id.nlm.nih.gov/mesh/D04.345.566.850.300" rdfs:label="mesh:D04.345.566.850.300"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/mesh:D04.345.566.850.300" rdfs:label="mesh:D04.345.566.850.300"/>
+            <PDBo:link_to_mesh rdf:resource="http://id.nlm.nih.gov/mesh/D04.345.566.850.300" rdfs:label="mesh.tree:D04.345.566.850.300"/>
           </PDBo:pdbx_reference_molecule_features>
         </PDBo:has_pdbx_reference_molecule_features>
         <PDBo:has_pdbx_reference_molecule_features>
@@ -751,8 +742,7 @@
             <PDBo:pdbx_reference_molecule_features.source_ordinal>2</PDBo:pdbx_reference_molecule_features.source_ordinal>
             <PDBo:pdbx_reference_molecule_features.type>MESH_TreeNumber</PDBo:pdbx_reference_molecule_features.type>
             <PDBo:pdbx_reference_molecule_features.value>D12.644.641.850.300</PDBo:pdbx_reference_molecule_features.value>
-            <PDBo:link_to_mesh rdf:resource="http://id.nlm.nih.gov/mesh/D12.644.641.850.300" rdfs:label="mesh:D12.644.641.850.300"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/mesh:D12.644.641.850.300" rdfs:label="mesh:D12.644.641.850.300"/>
+            <PDBo:link_to_mesh rdf:resource="http://id.nlm.nih.gov/mesh/D12.644.641.850.300" rdfs:label="mesh.tree:D12.644.641.850.300"/>
           </PDBo:pdbx_reference_molecule_features>
         </PDBo:has_pdbx_reference_molecule_features>
         <PDBo:has_pdbx_reference_molecule_features>
@@ -770,8 +760,7 @@
             <PDBo:pdbx_reference_molecule_features.source_ordinal>3</PDBo:pdbx_reference_molecule_features.source_ordinal>
             <PDBo:pdbx_reference_molecule_features.type>MESH_TreeNumber</PDBo:pdbx_reference_molecule_features.type>
             <PDBo:pdbx_reference_molecule_features.value>D12.644.905.300</PDBo:pdbx_reference_molecule_features.value>
-            <PDBo:link_to_mesh rdf:resource="http://id.nlm.nih.gov/mesh/D12.644.905.300" rdfs:label="mesh:D12.644.905.300"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/mesh:D12.644.905.300" rdfs:label="mesh:D12.644.905.300"/>
+            <PDBo:link_to_mesh rdf:resource="http://id.nlm.nih.gov/mesh/D12.644.905.300" rdfs:label="mesh.tree:D12.644.905.300"/>
           </PDBo:pdbx_reference_molecule_features>
         </PDBo:has_pdbx_reference_molecule_features>
         <PDBo:has_pdbx_reference_molecule_features>
@@ -789,8 +778,7 @@
             <PDBo:pdbx_reference_molecule_features.source_ordinal>4</PDBo:pdbx_reference_molecule_features.source_ordinal>
             <PDBo:pdbx_reference_molecule_features.type>MESH_TreeNumber</PDBo:pdbx_reference_molecule_features.type>
             <PDBo:pdbx_reference_molecule_features.value>D12.776.543.695.221</PDBo:pdbx_reference_molecule_features.value>
-            <PDBo:link_to_mesh rdf:resource="http://id.nlm.nih.gov/mesh/D12.776.543.695.221" rdfs:label="mesh:D12.776.543.695.221"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/mesh:D12.776.543.695.221" rdfs:label="mesh:D12.776.543.695.221"/>
+            <PDBo:link_to_mesh rdf:resource="http://id.nlm.nih.gov/mesh/D12.776.543.695.221" rdfs:label="mesh.tree:D12.776.543.695.221"/>
           </PDBo:pdbx_reference_molecule_features>
         </PDBo:has_pdbx_reference_molecule_features>
         <PDBo:has_pdbx_reference_molecule_features>

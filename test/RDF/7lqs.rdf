@@ -84,7 +84,7 @@
             <PDBo:audit_author.identifier_ORCID>0000-0003-1447-9940</PDBo:audit_author.identifier_ORCID>
             <PDBo:audit_author.name>Evans, E.R.J.</PDBo:audit_author.name>
             <PDBo:link_to_orcid rdf:resource="http://orcid.org/0000-0003-1447-9940" rdfs:label="orcid:0000-0003-1447-9940"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/orcid:0000-0003-1447-9940" rdfs:label="orcid:0000-0003-1447-9940"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/orcid/0000-0003-1447-9940" rdfs:label="orcid:0000-0003-1447-9940"/>
           </PDBo:audit_author>
         </PDBo:has_audit_author>
         <PDBo:has_audit_author>
@@ -94,7 +94,7 @@
             <PDBo:audit_author.identifier_ORCID>0000-0002-4697-6602</PDBo:audit_author.identifier_ORCID>
             <PDBo:audit_author.name>Daly, N.L.</PDBo:audit_author.name>
             <PDBo:link_to_orcid rdf:resource="http://orcid.org/0000-0002-4697-6602" rdfs:label="orcid:0000-0002-4697-6602"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/orcid:0000-0002-4697-6602" rdfs:label="orcid:0000-0002-4697-6602"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/orcid/0000-0002-4697-6602" rdfs:label="orcid:0000-0002-4697-6602"/>
           </PDBo:audit_author>
         </PDBo:has_audit_author>
       </PDBo:audit_authorCategory>
@@ -250,7 +250,7 @@
             <PDBo:citation.year>2021</PDBo:citation.year>
             <PDBo:link_to_doi rdf:resource="http://doi.org/10.3390/md19030141" rdfs:label="doi:10.3390/md19030141"/>
             <PDBo:link_to_pubmed rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/33801301" rdfs:label="pubmed:33801301"/>
-            <dcterms:references rdf:resource="http://identifiers.org/pubmed:33801301" rdfs:label="pubmed:33801301"/>
+            <dcterms:references rdf:resource="http://identifiers.org/pubmed/33801301" rdfs:label="pubmed:33801301"/>
           </PDBo:citation>
         </PDBo:has_citation>
       </PDBo:citationCategory>
@@ -270,7 +270,7 @@
             <PDBo:citation_author.ordinal>1</PDBo:citation_author.ordinal>
             <PDBo:citation_author.identifier_ORCID>0000-0002-4273-3080</PDBo:citation_author.identifier_ORCID>
             <PDBo:link_to_orcid rdf:resource="http://orcid.org/0000-0002-4273-3080" rdfs:label="orcid:0000-0002-4273-3080"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/orcid:0000-0002-4273-3080" rdfs:label="orcid:0000-0002-4273-3080"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/orcid/0000-0002-4273-3080" rdfs:label="orcid:0000-0002-4273-3080"/>
           </PDBo:citation_author>
         </PDBo:has_citation_author>
         <PDBo:has_citation_author>
@@ -286,7 +286,7 @@
             <PDBo:citation_author.ordinal>2</PDBo:citation_author.ordinal>
             <PDBo:citation_author.identifier_ORCID>0000-0003-2163-7177</PDBo:citation_author.identifier_ORCID>
             <PDBo:link_to_orcid rdf:resource="http://orcid.org/0000-0003-2163-7177" rdfs:label="orcid:0000-0003-2163-7177"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/orcid:0000-0003-2163-7177" rdfs:label="orcid:0000-0003-2163-7177"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/orcid/0000-0003-2163-7177" rdfs:label="orcid:0000-0003-2163-7177"/>
           </PDBo:citation_author>
         </PDBo:has_citation_author>
         <PDBo:has_citation_author>
@@ -302,7 +302,7 @@
             <PDBo:citation_author.ordinal>3</PDBo:citation_author.ordinal>
             <PDBo:citation_author.identifier_ORCID>0000-0003-1447-9940</PDBo:citation_author.identifier_ORCID>
             <PDBo:link_to_orcid rdf:resource="http://orcid.org/0000-0003-1447-9940" rdfs:label="orcid:0000-0003-1447-9940"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/orcid:0000-0003-1447-9940" rdfs:label="orcid:0000-0003-1447-9940"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/orcid/0000-0003-1447-9940" rdfs:label="orcid:0000-0003-1447-9940"/>
           </PDBo:citation_author>
         </PDBo:has_citation_author>
         <PDBo:has_citation_author>
@@ -331,7 +331,7 @@
             <PDBo:citation_author.ordinal>5</PDBo:citation_author.ordinal>
             <PDBo:citation_author.identifier_ORCID>0000-0002-4697-6602</PDBo:citation_author.identifier_ORCID>
             <PDBo:link_to_orcid rdf:resource="http://orcid.org/0000-0002-4697-6602" rdfs:label="orcid:0000-0002-4697-6602"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/orcid:0000-0002-4697-6602" rdfs:label="orcid:0000-0002-4697-6602"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/orcid/0000-0002-4697-6602" rdfs:label="orcid:0000-0002-4697-6602"/>
           </PDBo:citation_author>
         </PDBo:has_citation_author>
         <PDBo:has_citation_author>
@@ -347,7 +347,7 @@
             <PDBo:citation_author.ordinal>6</PDBo:citation_author.ordinal>
             <PDBo:citation_author.identifier_ORCID>0000-0003-4646-4583</PDBo:citation_author.identifier_ORCID>
             <PDBo:link_to_orcid rdf:resource="http://orcid.org/0000-0003-4646-4583" rdfs:label="orcid:0000-0003-4646-4583"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/orcid:0000-0003-4646-4583" rdfs:label="orcid:0000-0003-4646-4583"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/orcid/0000-0003-4646-4583" rdfs:label="orcid:0000-0003-4646-4583"/>
           </PDBo:citation_author>
         </PDBo:has_citation_author>
         <PDBo:has_citation_author>
@@ -376,7 +376,7 @@
             <PDBo:citation_author.ordinal>8</PDBo:citation_author.ordinal>
             <PDBo:citation_author.identifier_ORCID>0000-0002-2945-1484</PDBo:citation_author.identifier_ORCID>
             <PDBo:link_to_orcid rdf:resource="http://orcid.org/0000-0002-2945-1484" rdfs:label="orcid:0000-0002-2945-1484"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/orcid:0000-0002-2945-1484" rdfs:label="orcid:0000-0002-2945-1484"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/orcid/0000-0002-2945-1484" rdfs:label="orcid:0000-0002-2945-1484"/>
           </PDBo:citation_author>
         </PDBo:has_citation_author>
       </PDBo:citation_authorCategory>
@@ -809,7 +809,7 @@
             <PDBo:pdbx_database_related.db_id>30860</PDBo:pdbx_database_related.db_id>
             <PDBo:pdbx_database_related.db_name>BMRB</PDBo:pdbx_database_related.db_name>
             <PDBo:link_to_bmrb rdf:resource="http://bmrbpub.pdbj.org/rdf/bmr30860" rdfs:label="bmrb:30860"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/bmrb:30860" rdfs:label="bmrb:30860"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/bmrb/30860" rdfs:label="bmrb:30860"/>
             <PDBo:pdbx_database_related.details>Structure of truncated conotoxin CIC</PDBo:pdbx_database_related.details>
           </PDBo:pdbx_database_related>
         </PDBo:has_pdbx_database_related>

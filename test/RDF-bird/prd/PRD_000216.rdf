@@ -96,7 +96,7 @@
             <PDBo:pdbx_reference_entity_poly.db_name>NOR</PDBo:pdbx_reference_entity_poly.db_name>
             <PDBo:pdbx_reference_entity_poly.type>peptide-like</PDBo:pdbx_reference_entity_poly.type>
             <PDBo:link_to_norine rdf:resource="http://bioinfo.lifl.fr/norine/result.jsp?ID=NOR00487" rdfs:label="norine:NOR00487"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/norine:NOR00487" rdfs:label="norine:NOR00487"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/norine/NOR00487" rdfs:label="norine:NOR00487"/>
           </PDBo:pdbx_reference_entity_poly>
         </PDBo:has_pdbx_reference_entity_poly>
       </PDBo:pdbx_reference_entity_polyCategory>
@@ -289,7 +289,7 @@
             <PDBo:pdbx_reference_entity_src_nat.taxid>66430</PDBo:pdbx_reference_entity_src_nat.taxid>
             <PDBo:link_to_nadb rdf:resource="http://www.nih.go.jp/~jun/NADB/show.cgi/220065.html" rdfs:label="nadb:220065"/>
             <PDBo:link_to_taxonomy_source rdf:resource="http://purl.uniprot.org/taxonomy/66430" rdfs:label="taxonomy:66430"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/taxonomy:66430" rdfs:label="taxonomy:66430"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/taxonomy/66430" rdfs:label="taxonomy:66430"/>
           </PDBo:pdbx_reference_entity_src_nat>
         </PDBo:has_pdbx_reference_entity_src_nat>
         <PDBo:has_pdbx_reference_entity_src_nat>
@@ -305,7 +305,7 @@
             <PDBo:pdbx_reference_entity_src_nat.taxid>66430</PDBo:pdbx_reference_entity_src_nat.taxid>
             <PDBo:link_to_nadb rdf:resource="http://www.nih.go.jp/~jun/NADB/show.cgi/220065.html" rdfs:label="nadb:220065"/>
             <PDBo:link_to_taxonomy_source rdf:resource="http://purl.uniprot.org/taxonomy/66430" rdfs:label="taxonomy:66430"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/taxonomy:66430" rdfs:label="taxonomy:66430"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/taxonomy/66430" rdfs:label="taxonomy:66430"/>
           </PDBo:pdbx_reference_entity_src_nat>
         </PDBo:has_pdbx_reference_entity_src_nat>
       </PDBo:pdbx_reference_entity_src_natCategory>

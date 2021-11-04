@@ -11723,7 +11723,7 @@ NQLSISPVRDETGNVVAFVGVKTDVTAHHHHHH</VRPTo:entity_poly.pdbx_seq_one_letter_code_ca
             <VRPTo:struct_ref.pdbx_seq_one_letter_code>MASGMIVTDAGADQPIVFVNRAFSTITGYAPNEVLGRNCRFLQGPQTDAATVARLREAIAAARPIQERILNYRKDGQPFW
 NQLSISPVRDETGNVVAFVGVQTDVTA</VRPTo:struct_ref.pdbx_seq_one_letter_code>
             <VRPTo:link_to_uniprot rdf:resource="http://purl.uniprot.org/uniprot/B8GAY9" rdfs:label="uniprot:B8GAY9"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot:B8GAY9" rdfs:label="uniprot:B8GAY9"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/B8GAY9" rdfs:label="uniprot:B8GAY9"/>
           </VRPTo:struct_ref>
         </VRPTo:has_struct_ref>
       </VRPTo:struct_refCategory>
@@ -13972,7 +13972,7 @@ NQLSISPVRDETGNVVAFVGVQTDVTA</VRPTo:struct_ref.pdbx_seq_one_letter_code>
             <VRPTo:pdbx_sifts_unp_segments.segment_id>1</VRPTo:pdbx_sifts_unp_segments.segment_id>
             <VRPTo:pdbx_sifts_unp_segments.instance_id>1</VRPTo:pdbx_sifts_unp_segments.instance_id>
             <VRPTo:link_to_uniprot rdf:resource="http://purl.uniprot.org/uniprot/B8GAY9" rdfs:label="uniprot:B8GAY9"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot:B8GAY9" rdfs:label="uniprot:B8GAY9"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/B8GAY9" rdfs:label="uniprot:B8GAY9"/>
             <VRPTo:pdbx_sifts_unp_segments.unp_start>47</VRPTo:pdbx_sifts_unp_segments.unp_start>
             <VRPTo:pdbx_sifts_unp_segments.unp_end>153</VRPTo:pdbx_sifts_unp_segments.unp_end>
             <VRPTo:pdbx_sifts_unp_segments.seq_id_start>1</VRPTo:pdbx_sifts_unp_segments.seq_id_start>
@@ -13995,7 +13995,7 @@ NQLSISPVRDETGNVVAFVGVQTDVTA</VRPTo:struct_ref.pdbx_seq_one_letter_code>
             <VRPTo:pdbx_sifts_unp_segments.segment_id>1</VRPTo:pdbx_sifts_unp_segments.segment_id>
             <VRPTo:pdbx_sifts_unp_segments.instance_id>1</VRPTo:pdbx_sifts_unp_segments.instance_id>
             <VRPTo:link_to_uniprot rdf:resource="http://purl.uniprot.org/uniprot/B8GAY9" rdfs:label="uniprot:B8GAY9"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot:B8GAY9" rdfs:label="uniprot:B8GAY9"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/B8GAY9" rdfs:label="uniprot:B8GAY9"/>
             <VRPTo:pdbx_sifts_unp_segments.unp_start>47</VRPTo:pdbx_sifts_unp_segments.unp_start>
             <VRPTo:pdbx_sifts_unp_segments.unp_end>153</VRPTo:pdbx_sifts_unp_segments.unp_end>
             <VRPTo:pdbx_sifts_unp_segments.seq_id_start>1</VRPTo:pdbx_sifts_unp_segments.seq_id_start>
@@ -14042,7 +14042,7 @@ NQLSISPVRDETGNVVAFVGVQTDVTA</VRPTo:struct_ref.pdbx_seq_one_letter_code>
             <VRPTo:pdbx_sifts_xref_db_segments.segment_id>1</VRPTo:pdbx_sifts_xref_db_segments.segment_id>
             <VRPTo:pdbx_sifts_xref_db_segments.instance_id>2</VRPTo:pdbx_sifts_xref_db_segments.instance_id>
             <VRPTo:link_to_pfam rdf:resource="http://pfam.xfam.org/family/PF13426" rdfs:label="pfam:PF13426"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/pfam:PF13426" rdfs:label="pfam:PF13426"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/pfam/PF13426" rdfs:label="pfam:PF13426"/>
             <VRPTo:pdbx_sifts_xref_db_segments.seq_id_start>2</VRPTo:pdbx_sifts_xref_db_segments.seq_id_start>
             <VRPTo:pdbx_sifts_xref_db_segments.seq_id_end>107</VRPTo:pdbx_sifts_xref_db_segments.seq_id_end>
           </VRPTo:pdbx_sifts_xref_db_segments>
@@ -14081,7 +14081,7 @@ NQLSISPVRDETGNVVAFVGVQTDVTA</VRPTo:struct_ref.pdbx_seq_one_letter_code>
             <VRPTo:pdbx_sifts_xref_db_segments.segment_id>1</VRPTo:pdbx_sifts_xref_db_segments.segment_id>
             <VRPTo:pdbx_sifts_xref_db_segments.instance_id>2</VRPTo:pdbx_sifts_xref_db_segments.instance_id>
             <VRPTo:link_to_pfam rdf:resource="http://pfam.xfam.org/family/PF13426" rdfs:label="pfam:PF13426"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/pfam:PF13426" rdfs:label="pfam:PF13426"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/pfam/PF13426" rdfs:label="pfam:PF13426"/>
             <VRPTo:pdbx_sifts_xref_db_segments.seq_id_start>2</VRPTo:pdbx_sifts_xref_db_segments.seq_id_start>
             <VRPTo:pdbx_sifts_xref_db_segments.seq_id_end>107</VRPTo:pdbx_sifts_xref_db_segments.seq_id_end>
           </VRPTo:pdbx_sifts_xref_db_segments>

@@ -343,7 +343,7 @@
             <VRPTo:pdbx_database_related.db_id>30860</VRPTo:pdbx_database_related.db_id>
             <VRPTo:pdbx_database_related.db_name>BMRB</VRPTo:pdbx_database_related.db_name>
             <VRPTo:link_to_bmrb rdf:resource="http://bmrbpub.pdbj.org/rdf/bmr30860" rdfs:label="bmrb:30860"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/bmrb:30860" rdfs:label="bmrb:30860"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/bmrb/30860" rdfs:label="bmrb:30860"/>
             <VRPTo:pdbx_database_related.details>Structure of truncated conotoxin CIC</VRPTo:pdbx_database_related.details>
           </VRPTo:pdbx_database_related>
         </VRPTo:has_pdbx_database_related>

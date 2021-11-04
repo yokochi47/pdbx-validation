@@ -29,6 +29,7 @@
   <xsl:variable name="uniprot">http://purl.uniprot.org/uniprot/</xsl:variable>
   <xsl:variable name="norine">http://bioinfo.lifl.fr/norine/result.jsp?ID=</xsl:variable>
   <xsl:variable name="kegg_comp">http://www.kegg.jp/entry/</xsl:variable>
+  <xsl:variable name="kegg_drug">http://www.kegg.jp/entry/</xsl:variable>
   <xsl:variable name="nadb">http://www.nih.go.jp/~jun/NADB/show.cgi/</xsl:variable>
   <xsl:variable name="nadb1">http://www.antibiotics.or.jp/journal/database/data-1.HTM#</xsl:variable>
   <xsl:variable name="nadb2">http://www.antibiotics.or.jp/journal/database/data-2.htm#</xsl:variable>
@@ -103,22 +104,22 @@
 
   <xsl:template match="PDBx:citation/PDBx:pdbx_database_id_PubMed[text()!='']" mode="linked">
     <PDBo:link_to_pubmed rdf:resource="{$pubmed}{text()}" rdfs:label="pubmed:{text()}"/>
-    <dcterms:references rdf:resource="{$idorg}pubmed:{text()}" rdfs:label="pubmed:{text()}"/>
+    <dcterms:references rdf:resource="{$idorg}pubmed/{text()}" rdfs:label="pubmed:{text()}"/>
   </xsl:template>
 
   <xsl:template match="PDBx:entity_src_gen/PDBx:pdbx_gene_src_ncbi_taxonomy_id[text()!='']" mode="linked">
     <PDBo:link_to_taxonomy_source rdf:resource="{$taxonomy}{text()}" rdfs:label="taxonomy:{text()}"/>
-    <rdfs:seeAlso rdf:resource="{$idorg}taxonomy:{text()}" rdfs:label="taxonomy:{text()}"/>
+    <rdfs:seeAlso rdf:resource="{$idorg}taxonomy/{text()}" rdfs:label="taxonomy:{text()}"/>
   </xsl:template>
 
   <xsl:template match="PDBx:entity_src_gen/PDBx:pdbx_host_org_ncbi_taxonomy_id[text()!='']" mode="linked">
     <PDBo:link_to_taxonomy_host rdf:resource="{$taxonomy}{text()}" rdfs:label="taxonomy:{text()}"/>
-    <rdfs:seeAlso rdf:resource="{$idorg}taxonomy:{text()}" rdfs:label="taxonomy:{text()}"/>
+    <rdfs:seeAlso rdf:resource="{$idorg}taxonomy/{text()}" rdfs:label="taxonomy:{text()}"/>
   </xsl:template>
 
   <xsl:template match="PDBx:entity_src_nat/PDBx:pdbx_ncbi_taxonomy_id[text()!='']" mode="linked">
     <PDBo:link_to_taxonomy_source rdf:resource="{$taxonomy}{text()}" rdfs:label="taxonomy:{text()}"/>
-    <rdfs:seeAlso rdf:resource="{$idorg}taxonomy:{text()}" rdfs:label="taxonomy:{text()}"/>
+    <rdfs:seeAlso rdf:resource="{$idorg}taxonomy/{text()}" rdfs:label="taxonomy:{text()}"/>
   </xsl:template>
 
   <xsl:template match="PDBx:entity/PDBx:pdbx_ec[text()!='']" mode="linked">
@@ -134,7 +135,7 @@
         <xsl:variable name="ec"><xsl:value-of select="normalize-space(text())"/></xsl:variable>
         <xsl:if test="string-length($ec)!=0">
           <PDBo:link_to_enzyme rdf:resource="{$enzyme}{$ec}" rdfs:label="enzyme:{$ec}"/>
-          <rdfs:seeAlso rdf:resource="{$idorg}ec-code:{$ec}" rdfs:label="ec-code:{$ec}"/>
+          <rdfs:seeAlso rdf:resource="{$idorg}ec-code/{$ec}" rdfs:label="ec-code:{$ec}"/>
         </xsl:if>
       </xsl:for-each>
     </xsl:if>
@@ -183,27 +184,32 @@
 
   <xsl:template match="PDBx:pdbx_reference_entity_poly/PDBx:db_code[../PDBx:db_name='UNP' and text()!='']" mode="linked">
     <PDBo:link_to_uniprot rdf:resource="{$uniprot}{text()}" rdfs:label="uniprot:{text()}"/>
-    <rdfs:seeAlso rdf:resource="{$idorg}uniprot:{text()}" rdfs:label="uniprot:{text()}"/>
+    <rdfs:seeAlso rdf:resource="{$idorg}uniprot/{text()}" rdfs:label="uniprot:{text()}"/>
   </xsl:template>
 
   <xsl:template match="PDBx:pdbx_reference_entity_poly/PDBx:db_code[../PDBx:db_name='NOR' and text()!='']" mode="linked">
     <PDBo:link_to_norine rdf:resource="{$norine}{text()}" rdfs:label="norine:{text()}"/>
-    <rdfs:seeAlso rdf:resource="{$idorg}norine:{text()}" rdfs:label="norine:{text()}"/>
+    <rdfs:seeAlso rdf:resource="{$idorg}norine/{text()}" rdfs:label="norine:{text()}"/>
   </xsl:template>
 
   <xsl:template match="PDBx:pdbx_reference_entity_src_nat/PDBx:db_code[(../PDBx:db_name='UNP' or ../PDBx:db_name='UniProtKB' or ../PDBx:db_name='UniProt') and text()!='']" mode="linked">
     <PDBo:link_to_uniprot rdf:resource="{$uniprot}{text()}" rdfs:label="uniprot:{text()}"/>
-    <rdfs:seeAlso rdf:resource="{$idorg}uniprot:{text()}" rdfs:label="uniprot:{text()}"/>
+    <rdfs:seeAlso rdf:resource="{$idorg}uniprot/{text()}" rdfs:label="uniprot:{text()}"/>
   </xsl:template>
 
   <xsl:template match="PDBx:pdbx_reference_entity_src_nat/PDBx:db_code[(../PDBx:db_name='NORINE' or ../PDBx:db_name='Norine' or ../PDBx:db_name='  Norine') and text()!='']" mode="linked">
     <PDBo:link_to_norine rdf:resource="{$norine}{text()}" rdfs:label="norine:{text()}"/>
-    <rdfs:seeAlso rdf:resource="{$idorg}norine:{text()}" rdfs:label="norine:{text()}"/>
+    <rdfs:seeAlso rdf:resource="{$idorg}norine/{text()}" rdfs:label="norine:{text()}"/>
   </xsl:template>
 
-  <xsl:template match="PDBx:pdbx_reference_entity_src_nat/PDBx:db_code[../PDBx:db_name='KEGG' and text()!='']" mode="linked">
+  <xsl:template match="PDBx:pdbx_reference_entity_src_nat/PDBx:db_code[../PDBx:db_name='KEGG' and substring(text(),1,1)='C']" mode="linked">
     <PDBo:link_to_kegg_comp rdf:resource="{$kegg_comp}{text()}" rdfs:label="kegg.compound:{text()}"/>
-    <rdfs:seeAlso rdf:resource="{$idorg}kegg.compound:{text()}" rdfs:label="kegg.compound:{text()}"/>
+    <rdfs:seeAlso rdf:resource="{$idorg}kegg.compound/{text()}" rdfs:label="kegg.compound:{text()}"/>
+  </xsl:template>
+
+  <xsl:template match="PDBx:pdbx_reference_entity_src_nat/PDBx:db_code[../PDBx:db_name='KEGG' and substring(text(),1,1)='D']" mode="linked">
+    <PDBo:link_to_kegg_drug rdf:resource="{$kegg_drug}{text()}" rdfs:label="kegg.drug:{text()}"/>
+    <rdfs:seeAlso rdf:resource="{$idorg}kegg.drug/{text()}" rdfs:label="kegg.drug:{text()}"/>
   </xsl:template>
 
   <xsl:template match="PDBx:pdbx_reference_entity_src_nat/PDBx:db_code[../PDBx:db_name='NADB' and text()!='']" mode="linked">
@@ -223,7 +229,7 @@
 
   <xsl:template match="PDBx:pdbx_reference_entity_src_nat/PDBx:taxid[text()!='']" mode="linked">
     <PDBo:link_to_taxonomy_source rdf:resource="{$taxonomy}{text()}" rdfs:label="taxonomy:{text()}"/>
-    <rdfs:seeAlso rdf:resource="{$idorg}taxonomy:{text()}" rdfs:label="taxonomy:{text()}"/>
+    <rdfs:seeAlso rdf:resource="{$idorg}taxonomy/{text()}" rdfs:label="taxonomy:{text()}"/>
   </xsl:template>
 
   <!-- level-3 templates follow -->

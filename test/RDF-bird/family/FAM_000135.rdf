@@ -82,7 +82,7 @@
             <PDBo:pdbx_reference_molecule_features.type>MeSH_Unique_ID</PDBo:pdbx_reference_molecule_features.type>
             <PDBo:pdbx_reference_molecule_features.value>C061358</PDBo:pdbx_reference_molecule_features.value>
             <PDBo:link_to_mesh rdf:resource="http://id.nlm.nih.gov/mesh/C061358" rdfs:label="mesh:C061358"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/mesh:C061358" rdfs:label="mesh:C061358"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/mesh/C061358" rdfs:label="mesh:C061358"/>
           </PDBo:pdbx_reference_molecule_features>
         </PDBo:has_pdbx_reference_molecule_features>
         <PDBo:has_pdbx_reference_molecule_features>
@@ -101,7 +101,7 @@
             <PDBo:pdbx_reference_molecule_features.type>External_reference_ID</PDBo:pdbx_reference_molecule_features.type>
             <PDBo:pdbx_reference_molecule_features.value>128801</PDBo:pdbx_reference_molecule_features.value>
             <PDBo:link_to_pubchem_substance rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubchem/substance/SID128801" rdfs:label="pubchem.substance:128801"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/pubchem.substance:128801" rdfs:label="pubchem.substance:128801"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/pubchem.substance/128801" rdfs:label="pubchem.substance:128801"/>
           </PDBo:pdbx_reference_molecule_features>
         </PDBo:has_pdbx_reference_molecule_features>
         <PDBo:has_pdbx_reference_molecule_features>
@@ -120,7 +120,7 @@
             <PDBo:pdbx_reference_molecule_features.type>External_reference_ID</PDBo:pdbx_reference_molecule_features.type>
             <PDBo:pdbx_reference_molecule_features.value>114138</PDBo:pdbx_reference_molecule_features.value>
             <PDBo:link_to_chemspider rdf:resource="http://www.chemspider.com/Chemical-Structure.114138.html" rdfs:label="chemspider:114138"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/chemspider:114138" rdfs:label="chemspider:114138"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/chemspider/114138" rdfs:label="chemspider:114138"/>
           </PDBo:pdbx_reference_molecule_features>
         </PDBo:has_pdbx_reference_molecule_features>
         <PDBo:has_pdbx_reference_molecule_features>
@@ -139,7 +139,7 @@
             <PDBo:pdbx_reference_molecule_features.type>External_reference_ID</PDBo:pdbx_reference_molecule_features.type>
             <PDBo:pdbx_reference_molecule_features.value>105116-61-8</PDBo:pdbx_reference_molecule_features.value>
             <PDBo:link_to_cas rdf:resource="http://commonchemistry.cas.org/detail?ref=105116-61-8" rdfs:label="cas:105116-61-8"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/cas:105116-61-8" rdfs:label="cas:105116-61-8"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/cas/105116-61-8" rdfs:label="cas:105116-61-8"/>
           </PDBo:pdbx_reference_molecule_features>
         </PDBo:has_pdbx_reference_molecule_features>
       </PDBo:pdbx_reference_molecule_featuresCategory>

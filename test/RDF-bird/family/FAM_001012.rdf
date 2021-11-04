@@ -19,7 +19,7 @@
             <PDBo:citation.title>KNI-577, a potent small-sized HIV protease inhibitor based on the dipeptide containing the hydroxymethylcarbonyl isostere as an ideal transition-state mimic.</PDBo:citation.title>
             <PDBo:citation.year>1998</PDBo:citation.year>
             <PDBo:link_to_pubmed rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/9557134" rdfs:label="pubmed:9557134"/>
-            <dcterms:references rdf:resource="http://identifiers.org/pubmed:9557134" rdfs:label="pubmed:9557134"/>
+            <dcterms:references rdf:resource="http://identifiers.org/pubmed/9557134" rdfs:label="pubmed:9557134"/>
           </PDBo:citation>
         </PDBo:has_citation>
         <PDBo:has_citation>
@@ -34,7 +34,7 @@
             <PDBo:citation.title>Structure of HIV-1 protease with KNI-272: a transition state mimetic inhibitor containing allophenylnorstatine.</PDBo:citation.title>
             <PDBo:citation.year>1995</PDBo:citation.year>
             <PDBo:link_to_pubmed rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/8540355" rdfs:label="pubmed:8540355"/>
-            <dcterms:references rdf:resource="http://identifiers.org/pubmed:8540355" rdfs:label="pubmed:8540355"/>
+            <dcterms:references rdf:resource="http://identifiers.org/pubmed/8540355" rdfs:label="pubmed:8540355"/>
           </PDBo:citation>
         </PDBo:has_citation>
         <PDBo:has_citation>
@@ -49,7 +49,7 @@
             <PDBo:citation.title>Kynostatin (KNI)-272--a rationally designed tripeptide inhibitor of HIV protease</PDBo:citation.title>
             <PDBo:citation.year>1993</PDBo:citation.year>
             <PDBo:link_to_pubmed rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/8271377" rdfs:label="pubmed:8271377"/>
-            <dcterms:references rdf:resource="http://identifiers.org/pubmed:8271377" rdfs:label="pubmed:8271377"/>
+            <dcterms:references rdf:resource="http://identifiers.org/pubmed/8271377" rdfs:label="pubmed:8271377"/>
           </PDBo:citation>
         </PDBo:has_citation>
       </PDBo:citationCategory>
@@ -336,7 +336,7 @@
             <PDBo:pdbx_reference_molecule_annotation.text>Inhibitor of HIV-1 protease, EC: 3.4.23.16</PDBo:pdbx_reference_molecule_annotation.text>
             <PDBo:pdbx_reference_molecule_annotation.type>function</PDBo:pdbx_reference_molecule_annotation.type>
             <PDBo:link_to_pubmed rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/8590019" rdfs:label="pubmed:8590019"/>
-            <dcterms:references rdf:resource="http://identifiers.org/pubmed:8590019" rdfs:label="pubmed:8590019"/>
+            <dcterms:references rdf:resource="http://identifiers.org/pubmed/8590019" rdfs:label="pubmed:8590019"/>
           </PDBo:pdbx_reference_molecule_annotation>
         </PDBo:has_pdbx_reference_molecule_annotation>
         <PDBo:has_pdbx_reference_molecule_annotation>
@@ -349,7 +349,7 @@
             <PDBo:pdbx_reference_molecule_annotation.text>Inhibitor of HIV protease, EC: 3.4.23.16</PDBo:pdbx_reference_molecule_annotation.text>
             <PDBo:pdbx_reference_molecule_annotation.type>function</PDBo:pdbx_reference_molecule_annotation.type>
             <PDBo:link_to_pubmed rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/11926820" rdfs:label="pubmed:11926820"/>
-            <dcterms:references rdf:resource="http://identifiers.org/pubmed:11926820" rdfs:label="pubmed:11926820"/>
+            <dcterms:references rdf:resource="http://identifiers.org/pubmed/11926820" rdfs:label="pubmed:11926820"/>
           </PDBo:pdbx_reference_molecule_annotation>
         </PDBo:has_pdbx_reference_molecule_annotation>
         <PDBo:has_pdbx_reference_molecule_annotation>
@@ -362,7 +362,7 @@
             <PDBo:pdbx_reference_molecule_annotation.text>Inhibitor of HIV-1 protease, EC: 3.4.23.16</PDBo:pdbx_reference_molecule_annotation.text>
             <PDBo:pdbx_reference_molecule_annotation.type>function</PDBo:pdbx_reference_molecule_annotation.type>
             <PDBo:link_to_pubmed rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/15103623" rdfs:label="pubmed:15103623"/>
-            <dcterms:references rdf:resource="http://identifiers.org/pubmed:15103623" rdfs:label="pubmed:15103623"/>
+            <dcterms:references rdf:resource="http://identifiers.org/pubmed/15103623" rdfs:label="pubmed:15103623"/>
           </PDBo:pdbx_reference_molecule_annotation>
         </PDBo:has_pdbx_reference_molecule_annotation>
         <PDBo:has_pdbx_reference_molecule_annotation>
@@ -387,7 +387,7 @@
             <PDBo:pdbx_reference_molecule_annotation.text>Inhibitor of HIV-1 protease, EC: 3.4.23.16</PDBo:pdbx_reference_molecule_annotation.text>
             <PDBo:pdbx_reference_molecule_annotation.type>Function</PDBo:pdbx_reference_molecule_annotation.type>
             <PDBo:link_to_pubmed rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/20028396" rdfs:label="pubmed:20028396"/>
-            <dcterms:references rdf:resource="http://identifiers.org/pubmed:20028396" rdfs:label="pubmed:20028396"/>
+            <dcterms:references rdf:resource="http://identifiers.org/pubmed/20028396" rdfs:label="pubmed:20028396"/>
           </PDBo:pdbx_reference_molecule_annotation>
         </PDBo:has_pdbx_reference_molecule_annotation>
         <PDBo:has_pdbx_reference_molecule_annotation>
@@ -400,7 +400,7 @@
             <PDBo:pdbx_reference_molecule_annotation.text>Inhibitor of Plasmepsin-1, EC: 3.4.23.38</PDBo:pdbx_reference_molecule_annotation.text>
             <PDBo:pdbx_reference_molecule_annotation.type>Function</PDBo:pdbx_reference_molecule_annotation.type>
             <PDBo:link_to_pubmed rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/21521654" rdfs:label="pubmed:21521654"/>
-            <dcterms:references rdf:resource="http://identifiers.org/pubmed:21521654" rdfs:label="pubmed:21521654"/>
+            <dcterms:references rdf:resource="http://identifiers.org/pubmed/21521654" rdfs:label="pubmed:21521654"/>
           </PDBo:pdbx_reference_molecule_annotation>
         </PDBo:has_pdbx_reference_molecule_annotation>
         <PDBo:has_pdbx_reference_molecule_annotation>
@@ -413,7 +413,7 @@
             <PDBo:pdbx_reference_molecule_annotation.text>Inhibitor of histo-aspartic protease</PDBo:pdbx_reference_molecule_annotation.text>
             <PDBo:pdbx_reference_molecule_annotation.type>Function</PDBo:pdbx_reference_molecule_annotation.type>
             <PDBo:link_to_pubmed rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/19285084" rdfs:label="pubmed:19285084"/>
-            <dcterms:references rdf:resource="http://identifiers.org/pubmed:19285084" rdfs:label="pubmed:19285084"/>
+            <dcterms:references rdf:resource="http://identifiers.org/pubmed/19285084" rdfs:label="pubmed:19285084"/>
           </PDBo:pdbx_reference_molecule_annotation>
         </PDBo:has_pdbx_reference_molecule_annotation>
         <PDBo:has_pdbx_reference_molecule_annotation>
@@ -426,7 +426,7 @@
             <PDBo:pdbx_reference_molecule_annotation.text>Inhibitor of HIV-1 protease, EC: 3.4.23.16</PDBo:pdbx_reference_molecule_annotation.text>
             <PDBo:pdbx_reference_molecule_annotation.type>Function</PDBo:pdbx_reference_molecule_annotation.type>
             <PDBo:link_to_pubmed rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/17581235" rdfs:label="pubmed:17581235"/>
-            <dcterms:references rdf:resource="http://identifiers.org/pubmed:17581235" rdfs:label="pubmed:17581235"/>
+            <dcterms:references rdf:resource="http://identifiers.org/pubmed/17581235" rdfs:label="pubmed:17581235"/>
           </PDBo:pdbx_reference_molecule_annotation>
         </PDBo:has_pdbx_reference_molecule_annotation>
         <PDBo:has_pdbx_reference_molecule_annotation>
@@ -439,7 +439,7 @@
             <PDBo:pdbx_reference_molecule_annotation.text>Inhibitor of Human T-cell leukemia virus type 1 protease</PDBo:pdbx_reference_molecule_annotation.text>
             <PDBo:pdbx_reference_molecule_annotation.type>Function</PDBo:pdbx_reference_molecule_annotation.type>
             <PDBo:link_to_pubmed rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/20600105" rdfs:label="pubmed:20600105"/>
-            <dcterms:references rdf:resource="http://identifiers.org/pubmed:20600105" rdfs:label="pubmed:20600105"/>
+            <dcterms:references rdf:resource="http://identifiers.org/pubmed/20600105" rdfs:label="pubmed:20600105"/>
           </PDBo:pdbx_reference_molecule_annotation>
         </PDBo:has_pdbx_reference_molecule_annotation>
         <PDBo:has_pdbx_reference_molecule_annotation>
@@ -452,7 +452,7 @@
             <PDBo:pdbx_reference_molecule_annotation.text>Inhibitor of Human T-cell leukemia virus type 1 protease</PDBo:pdbx_reference_molecule_annotation.text>
             <PDBo:pdbx_reference_molecule_annotation.type>Function</PDBo:pdbx_reference_molecule_annotation.type>
             <PDBo:link_to_pubmed rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/20600105" rdfs:label="pubmed:20600105"/>
-            <dcterms:references rdf:resource="http://identifiers.org/pubmed:20600105" rdfs:label="pubmed:20600105"/>
+            <dcterms:references rdf:resource="http://identifiers.org/pubmed/20600105" rdfs:label="pubmed:20600105"/>
           </PDBo:pdbx_reference_molecule_annotation>
         </PDBo:has_pdbx_reference_molecule_annotation>
         <PDBo:has_pdbx_reference_molecule_annotation>
@@ -465,7 +465,7 @@
             <PDBo:pdbx_reference_molecule_annotation.text>Inhibitor of Human T-cell leukemia virus type 1 protease</PDBo:pdbx_reference_molecule_annotation.text>
             <PDBo:pdbx_reference_molecule_annotation.type>Function</PDBo:pdbx_reference_molecule_annotation.type>
             <PDBo:link_to_pubmed rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/20600105" rdfs:label="pubmed:20600105"/>
-            <dcterms:references rdf:resource="http://identifiers.org/pubmed:20600105" rdfs:label="pubmed:20600105"/>
+            <dcterms:references rdf:resource="http://identifiers.org/pubmed/20600105" rdfs:label="pubmed:20600105"/>
           </PDBo:pdbx_reference_molecule_annotation>
         </PDBo:has_pdbx_reference_molecule_annotation>
         <PDBo:has_pdbx_reference_molecule_annotation>
@@ -478,7 +478,7 @@
             <PDBo:pdbx_reference_molecule_annotation.text>Inhibitor of Human T-cell leukemia virus type 1 protease</PDBo:pdbx_reference_molecule_annotation.text>
             <PDBo:pdbx_reference_molecule_annotation.type>Function</PDBo:pdbx_reference_molecule_annotation.type>
             <PDBo:link_to_pubmed rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/20600105" rdfs:label="pubmed:20600105"/>
-            <dcterms:references rdf:resource="http://identifiers.org/pubmed:20600105" rdfs:label="pubmed:20600105"/>
+            <dcterms:references rdf:resource="http://identifiers.org/pubmed/20600105" rdfs:label="pubmed:20600105"/>
           </PDBo:pdbx_reference_molecule_annotation>
         </PDBo:has_pdbx_reference_molecule_annotation>
         <PDBo:has_pdbx_reference_molecule_annotation>
@@ -491,7 +491,7 @@
             <PDBo:pdbx_reference_molecule_annotation.text>Inhibitor of Human T-cell leukemia virus type 1 protease</PDBo:pdbx_reference_molecule_annotation.text>
             <PDBo:pdbx_reference_molecule_annotation.type>Function</PDBo:pdbx_reference_molecule_annotation.type>
             <PDBo:link_to_pubmed rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/20600105" rdfs:label="pubmed:20600105"/>
-            <dcterms:references rdf:resource="http://identifiers.org/pubmed:20600105" rdfs:label="pubmed:20600105"/>
+            <dcterms:references rdf:resource="http://identifiers.org/pubmed/20600105" rdfs:label="pubmed:20600105"/>
           </PDBo:pdbx_reference_molecule_annotation>
         </PDBo:has_pdbx_reference_molecule_annotation>
         <PDBo:has_pdbx_reference_molecule_annotation>
@@ -504,7 +504,7 @@
             <PDBo:pdbx_reference_molecule_annotation.text>Inhibitor of HIV-1 protease, EC: 3.4.23.16</PDBo:pdbx_reference_molecule_annotation.text>
             <PDBo:pdbx_reference_molecule_annotation.type>Function</PDBo:pdbx_reference_molecule_annotation.type>
             <PDBo:link_to_pubmed rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/20028396" rdfs:label="pubmed:20028396"/>
-            <dcterms:references rdf:resource="http://identifiers.org/pubmed:20028396" rdfs:label="pubmed:20028396"/>
+            <dcterms:references rdf:resource="http://identifiers.org/pubmed/20028396" rdfs:label="pubmed:20028396"/>
           </PDBo:pdbx_reference_molecule_annotation>
         </PDBo:has_pdbx_reference_molecule_annotation>
         <PDBo:has_pdbx_reference_molecule_annotation>
@@ -517,7 +517,7 @@
             <PDBo:pdbx_reference_molecule_annotation.text>Inhibitor of HIV-1 protease, EC: 3.4.23.16</PDBo:pdbx_reference_molecule_annotation.text>
             <PDBo:pdbx_reference_molecule_annotation.type>Function</PDBo:pdbx_reference_molecule_annotation.type>
             <PDBo:link_to_pubmed rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/19954246" rdfs:label="pubmed:19954246"/>
-            <dcterms:references rdf:resource="http://identifiers.org/pubmed:19954246" rdfs:label="pubmed:19954246"/>
+            <dcterms:references rdf:resource="http://identifiers.org/pubmed/19954246" rdfs:label="pubmed:19954246"/>
           </PDBo:pdbx_reference_molecule_annotation>
         </PDBo:has_pdbx_reference_molecule_annotation>
         <PDBo:has_pdbx_reference_molecule_annotation>
@@ -530,7 +530,7 @@
             <PDBo:pdbx_reference_molecule_annotation.text>Inhibitor of HIV-1 protease, EC: 3.4.23.16</PDBo:pdbx_reference_molecule_annotation.text>
             <PDBo:pdbx_reference_molecule_annotation.type>Function</PDBo:pdbx_reference_molecule_annotation.type>
             <PDBo:link_to_pubmed rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/19954246" rdfs:label="pubmed:19954246"/>
-            <dcterms:references rdf:resource="http://identifiers.org/pubmed:19954246" rdfs:label="pubmed:19954246"/>
+            <dcterms:references rdf:resource="http://identifiers.org/pubmed/19954246" rdfs:label="pubmed:19954246"/>
           </PDBo:pdbx_reference_molecule_annotation>
         </PDBo:has_pdbx_reference_molecule_annotation>
         <PDBo:has_pdbx_reference_molecule_annotation>
@@ -543,7 +543,7 @@
             <PDBo:pdbx_reference_molecule_annotation.text>Inhibitor of HIV-1 protease, EC: 3.4.23.16</PDBo:pdbx_reference_molecule_annotation.text>
             <PDBo:pdbx_reference_molecule_annotation.type>Function</PDBo:pdbx_reference_molecule_annotation.type>
             <PDBo:link_to_pubmed rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/17581235" rdfs:label="pubmed:17581235"/>
-            <dcterms:references rdf:resource="http://identifiers.org/pubmed:17581235" rdfs:label="pubmed:17581235"/>
+            <dcterms:references rdf:resource="http://identifiers.org/pubmed/17581235" rdfs:label="pubmed:17581235"/>
           </PDBo:pdbx_reference_molecule_annotation>
         </PDBo:has_pdbx_reference_molecule_annotation>
         <PDBo:has_pdbx_reference_molecule_annotation>
@@ -556,7 +556,7 @@
             <PDBo:pdbx_reference_molecule_annotation.text>Inhibitor of histo-aspartic protease</PDBo:pdbx_reference_molecule_annotation.text>
             <PDBo:pdbx_reference_molecule_annotation.type>Function</PDBo:pdbx_reference_molecule_annotation.type>
             <PDBo:link_to_pubmed rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/21928835" rdfs:label="pubmed:21928835"/>
-            <dcterms:references rdf:resource="http://identifiers.org/pubmed:21928835" rdfs:label="pubmed:21928835"/>
+            <dcterms:references rdf:resource="http://identifiers.org/pubmed/21928835" rdfs:label="pubmed:21928835"/>
           </PDBo:pdbx_reference_molecule_annotation>
         </PDBo:has_pdbx_reference_molecule_annotation>
       </PDBo:pdbx_reference_molecule_annotationCategory>
@@ -591,7 +591,7 @@
             <PDBo:pdbx_reference_molecule_features.type>External_Reference_ID</PDBo:pdbx_reference_molecule_features.type>
             <PDBo:pdbx_reference_molecule_features.value>60927</PDBo:pdbx_reference_molecule_features.value>
             <PDBo:link_to_pubchem_substance rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubchem/substance/SID60927" rdfs:label="pubchem.substance:60927"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/pubchem.substance:60927" rdfs:label="pubchem.substance:60927"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/pubchem.substance/60927" rdfs:label="pubchem.substance:60927"/>
           </PDBo:pdbx_reference_molecule_features>
         </PDBo:has_pdbx_reference_molecule_features>
         <PDBo:has_pdbx_reference_molecule_features>
@@ -647,7 +647,7 @@
             <PDBo:pdbx_reference_molecule_features.type>External_Reference_ID</PDBo:pdbx_reference_molecule_features.type>
             <PDBo:pdbx_reference_molecule_features.value>414640</PDBo:pdbx_reference_molecule_features.value>
             <PDBo:link_to_chembl rdf:resource="http://www.ebi.ac.uk/chembl/entity/CHEMBL414640" rdfs:label="chembl:CHEMBL414640"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/chembl:CHEMBL414640" rdfs:label="chembl:CHEMBL414640"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/chembl/CHEMBL414640" rdfs:label="chembl:CHEMBL414640"/>
           </PDBo:pdbx_reference_molecule_features>
         </PDBo:has_pdbx_reference_molecule_features>
         <PDBo:has_pdbx_reference_molecule_features>
@@ -666,7 +666,7 @@
             <PDBo:pdbx_reference_molecule_features.type>External_Reference_ID</PDBo:pdbx_reference_molecule_features.type>
             <PDBo:pdbx_reference_molecule_features.value>54898</PDBo:pdbx_reference_molecule_features.value>
             <PDBo:link_to_chemspider rdf:resource="http://www.chemspider.com/Chemical-Structure.54898.html" rdfs:label="chemspider:54898"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/chemspider:54898" rdfs:label="chemspider:54898"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/chemspider/54898" rdfs:label="chemspider:54898"/>
           </PDBo:pdbx_reference_molecule_features>
         </PDBo:has_pdbx_reference_molecule_features>
         <PDBo:has_pdbx_reference_molecule_features>
@@ -702,7 +702,7 @@
             <PDBo:pdbx_reference_molecule_features.type>KEGG_Compound_ID</PDBo:pdbx_reference_molecule_features.type>
             <PDBo:pdbx_reference_molecule_features.value>C15655</PDBo:pdbx_reference_molecule_features.value>
             <PDBo:link_to_kegg_comp rdf:resource="http://www.kegg.jp/entry/C15655" rdfs:label="kegg.compound:C15655"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/kegg.compound:C15655" rdfs:label="kegg.compound:C15655"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/kegg.compound/C15655" rdfs:label="kegg.compound:C15655"/>
           </PDBo:pdbx_reference_molecule_features>
         </PDBo:has_pdbx_reference_molecule_features>
         <PDBo:has_pdbx_reference_molecule_features>
@@ -738,7 +738,7 @@
             <PDBo:pdbx_reference_molecule_features.type>External_Reference_ID</PDBo:pdbx_reference_molecule_features.type>
             <PDBo:pdbx_reference_molecule_features.value>147318-81-8</PDBo:pdbx_reference_molecule_features.value>
             <PDBo:link_to_cas rdf:resource="http://commonchemistry.cas.org/detail?ref=147318-81-8" rdfs:label="cas:147318-81-8"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/cas:147318-81-8" rdfs:label="cas:147318-81-8"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/cas/147318-81-8" rdfs:label="cas:147318-81-8"/>
           </PDBo:pdbx_reference_molecule_features>
         </PDBo:has_pdbx_reference_molecule_features>
         <PDBo:has_pdbx_reference_molecule_features>
@@ -757,7 +757,7 @@
             <PDBo:pdbx_reference_molecule_features.type>External_Reference_ID</PDBo:pdbx_reference_molecule_features.type>
             <PDBo:pdbx_reference_molecule_features.value>C077822</PDBo:pdbx_reference_molecule_features.value>
             <PDBo:link_to_mesh rdf:resource="http://id.nlm.nih.gov/mesh/C077822" rdfs:label="mesh:C077822"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/mesh:C077822" rdfs:label="mesh:C077822"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/mesh/C077822" rdfs:label="mesh:C077822"/>
           </PDBo:pdbx_reference_molecule_features>
         </PDBo:has_pdbx_reference_molecule_features>
         <PDBo:has_pdbx_reference_molecule_features>
@@ -776,7 +776,7 @@
             <PDBo:pdbx_reference_molecule_features.type>External_Reference_ID</PDBo:pdbx_reference_molecule_features.type>
             <PDBo:pdbx_reference_molecule_features.value>446837</PDBo:pdbx_reference_molecule_features.value>
             <PDBo:link_to_pubchem_substance rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubchem/substance/SID446837" rdfs:label="pubchem.substance:446837"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/pubchem.substance:446837" rdfs:label="pubchem.substance:446837"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/pubchem.substance/446837" rdfs:label="pubchem.substance:446837"/>
           </PDBo:pdbx_reference_molecule_features>
         </PDBo:has_pdbx_reference_molecule_features>
         <PDBo:has_pdbx_reference_molecule_features>
@@ -795,7 +795,7 @@
             <PDBo:pdbx_reference_molecule_features.type>External_Reference_ID</PDBo:pdbx_reference_molecule_features.type>
             <PDBo:pdbx_reference_molecule_features.value>186538-00-1</PDBo:pdbx_reference_molecule_features.value>
             <PDBo:link_to_cas rdf:resource="http://commonchemistry.cas.org/detail?ref=186538-00-1" rdfs:label="cas:186538-00-1"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/cas:186538-00-1" rdfs:label="cas:186538-00-1"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/cas/186538-00-1" rdfs:label="cas:186538-00-1"/>
           </PDBo:pdbx_reference_molecule_features>
         </PDBo:has_pdbx_reference_molecule_features>
         <PDBo:has_pdbx_reference_molecule_features>
@@ -850,7 +850,7 @@
             <PDBo:pdbx_reference_molecule_features.type>External_Reference_ID</PDBo:pdbx_reference_molecule_features.type>
             <PDBo:pdbx_reference_molecule_features.value>300891</PDBo:pdbx_reference_molecule_features.value>
             <PDBo:link_to_chembl rdf:resource="http://www.ebi.ac.uk/chembl/entity/CHEMBL300891" rdfs:label="chembl:CHEMBL300891"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/chembl:CHEMBL300891" rdfs:label="chembl:CHEMBL300891"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/chembl/CHEMBL300891" rdfs:label="chembl:CHEMBL300891"/>
           </PDBo:pdbx_reference_molecule_features>
         </PDBo:has_pdbx_reference_molecule_features>
         <PDBo:has_pdbx_reference_molecule_features>
@@ -869,7 +869,7 @@
             <PDBo:pdbx_reference_molecule_features.type>External_Reference_ID</PDBo:pdbx_reference_molecule_features.type>
             <PDBo:pdbx_reference_molecule_features.value>394090</PDBo:pdbx_reference_molecule_features.value>
             <PDBo:link_to_chemspider rdf:resource="http://www.chemspider.com/Chemical-Structure.394090.html" rdfs:label="chemspider:394090"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/chemspider:394090" rdfs:label="chemspider:394090"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/chemspider/394090" rdfs:label="chemspider:394090"/>
           </PDBo:pdbx_reference_molecule_features>
         </PDBo:has_pdbx_reference_molecule_features>
         <PDBo:has_pdbx_reference_molecule_features>
@@ -924,7 +924,7 @@
             <PDBo:pdbx_reference_molecule_features.type>External_Reference_ID</PDBo:pdbx_reference_molecule_features.type>
             <PDBo:pdbx_reference_molecule_features.value>C120671</PDBo:pdbx_reference_molecule_features.value>
             <PDBo:link_to_mesh rdf:resource="http://id.nlm.nih.gov/mesh/C120671" rdfs:label="mesh:C120671"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/mesh:C120671" rdfs:label="mesh:C120671"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/mesh/C120671" rdfs:label="mesh:C120671"/>
           </PDBo:pdbx_reference_molecule_features>
         </PDBo:has_pdbx_reference_molecule_features>
         <PDBo:has_pdbx_reference_molecule_features>
@@ -943,7 +943,7 @@
             <PDBo:pdbx_reference_molecule_features.type>External_Reference_ID</PDBo:pdbx_reference_molecule_features.type>
             <PDBo:pdbx_reference_molecule_features.value>DB02668</PDBo:pdbx_reference_molecule_features.value>
             <PDBo:link_to_drugbank rdf:resource="http://www.drugbank.ca/drugs/DB02668" rdfs:label="drugbank:DB02668"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/drugbank:DB02668" rdfs:label="drugbank:DB02668"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/drugbank/DB02668" rdfs:label="drugbank:DB02668"/>
           </PDBo:pdbx_reference_molecule_features>
         </PDBo:has_pdbx_reference_molecule_features>
         <PDBo:has_pdbx_reference_molecule_features>
@@ -962,7 +962,7 @@
             <PDBo:pdbx_reference_molecule_features.type>External_Reference_ID</PDBo:pdbx_reference_molecule_features.type>
             <PDBo:pdbx_reference_molecule_features.value>154072</PDBo:pdbx_reference_molecule_features.value>
             <PDBo:link_to_pubchem_substance rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubchem/substance/SID154072" rdfs:label="pubchem.substance:154072"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/pubchem.substance:154072" rdfs:label="pubchem.substance:154072"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/pubchem.substance/154072" rdfs:label="pubchem.substance:154072"/>
           </PDBo:pdbx_reference_molecule_features>
         </PDBo:has_pdbx_reference_molecule_features>
         <PDBo:has_pdbx_reference_molecule_features>
@@ -999,7 +999,7 @@
             <PDBo:pdbx_reference_molecule_features.type>External_Reference_ID</PDBo:pdbx_reference_molecule_features.type>
             <PDBo:pdbx_reference_molecule_features.value>54191</PDBo:pdbx_reference_molecule_features.value>
             <PDBo:link_to_chembl rdf:resource="http://www.ebi.ac.uk/chembl/entity/CHEMBL54191" rdfs:label="chembl:CHEMBL54191"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/chembl:CHEMBL54191" rdfs:label="chembl:CHEMBL54191"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/chembl/CHEMBL54191" rdfs:label="chembl:CHEMBL54191"/>
           </PDBo:pdbx_reference_molecule_features>
         </PDBo:has_pdbx_reference_molecule_features>
         <PDBo:has_pdbx_reference_molecule_features>
@@ -1018,7 +1018,7 @@
             <PDBo:pdbx_reference_molecule_features.type>External_Reference_ID</PDBo:pdbx_reference_molecule_features.type>
             <PDBo:pdbx_reference_molecule_features.value>135784</PDBo:pdbx_reference_molecule_features.value>
             <PDBo:link_to_chemspider rdf:resource="http://www.chemspider.com/Chemical-Structure.135784.html" rdfs:label="chemspider:135784"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/chemspider:135784" rdfs:label="chemspider:135784"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/chemspider/135784" rdfs:label="chemspider:135784"/>
           </PDBo:pdbx_reference_molecule_features>
         </PDBo:has_pdbx_reference_molecule_features>
         <PDBo:has_pdbx_reference_molecule_features>
@@ -1054,7 +1054,7 @@
             <PDBo:pdbx_reference_molecule_features.type>External_Reference_ID</PDBo:pdbx_reference_molecule_features.type>
             <PDBo:pdbx_reference_molecule_features.value>186537-85-9</PDBo:pdbx_reference_molecule_features.value>
             <PDBo:link_to_cas rdf:resource="http://commonchemistry.cas.org/detail?ref=186537-85-9" rdfs:label="cas:186537-85-9"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/cas:186537-85-9" rdfs:label="cas:186537-85-9"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/cas/186537-85-9" rdfs:label="cas:186537-85-9"/>
           </PDBo:pdbx_reference_molecule_features>
         </PDBo:has_pdbx_reference_molecule_features>
         <PDBo:has_pdbx_reference_molecule_features>
@@ -1092,7 +1092,7 @@
             <PDBo:pdbx_reference_molecule_features.type>External_Reference_ID</PDBo:pdbx_reference_molecule_features.type>
             <PDBo:pdbx_reference_molecule_features.value>9585863</PDBo:pdbx_reference_molecule_features.value>
             <PDBo:link_to_chemspider rdf:resource="http://www.chemspider.com/Chemical-Structure.9585863.html" rdfs:label="chemspider:9585863"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/chemspider:9585863" rdfs:label="chemspider:9585863"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/chemspider/9585863" rdfs:label="chemspider:9585863"/>
           </PDBo:pdbx_reference_molecule_features>
         </PDBo:has_pdbx_reference_molecule_features>
         <PDBo:has_pdbx_reference_molecule_features>
@@ -1111,7 +1111,7 @@
             <PDBo:pdbx_reference_molecule_features.type>External_Reference_ID</PDBo:pdbx_reference_molecule_features.type>
             <PDBo:pdbx_reference_molecule_features.value>11410970</PDBo:pdbx_reference_molecule_features.value>
             <PDBo:link_to_pubchem_substance rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubchem/substance/SID11410970" rdfs:label="pubchem.substance:11410970"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/pubchem.substance:11410970" rdfs:label="pubchem.substance:11410970"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/pubchem.substance/11410970" rdfs:label="pubchem.substance:11410970"/>
           </PDBo:pdbx_reference_molecule_features>
         </PDBo:has_pdbx_reference_molecule_features>
         <PDBo:has_pdbx_reference_molecule_features>
@@ -1130,7 +1130,7 @@
             <PDBo:pdbx_reference_molecule_features.type>External_Reference_ID</PDBo:pdbx_reference_molecule_features.type>
             <PDBo:pdbx_reference_molecule_features.value>45482529</PDBo:pdbx_reference_molecule_features.value>
             <PDBo:link_to_pubchem_substance rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubchem/substance/SID45482529" rdfs:label="pubchem.substance:45482529"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/pubchem.substance:45482529" rdfs:label="pubchem.substance:45482529"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/pubchem.substance/45482529" rdfs:label="pubchem.substance:45482529"/>
           </PDBo:pdbx_reference_molecule_features>
         </PDBo:has_pdbx_reference_molecule_features>
         <PDBo:has_pdbx_reference_molecule_features>
@@ -1167,7 +1167,7 @@
             <PDBo:pdbx_reference_molecule_features.type>External_Reference_ID</PDBo:pdbx_reference_molecule_features.type>
             <PDBo:pdbx_reference_molecule_features.value>584192</PDBo:pdbx_reference_molecule_features.value>
             <PDBo:link_to_chembl rdf:resource="http://www.ebi.ac.uk/chembl/entity/CHEMBL584192" rdfs:label="chembl:CHEMBL584192"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/chembl:CHEMBL584192" rdfs:label="chembl:CHEMBL584192"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/chembl/CHEMBL584192" rdfs:label="chembl:CHEMBL584192"/>
           </PDBo:pdbx_reference_molecule_features>
         </PDBo:has_pdbx_reference_molecule_features>
         <PDBo:has_pdbx_reference_molecule_features>
@@ -1205,7 +1205,7 @@
             <PDBo:pdbx_reference_molecule_features.type>External_Reference_ID</PDBo:pdbx_reference_molecule_features.type>
             <PDBo:pdbx_reference_molecule_features.value>9895503</PDBo:pdbx_reference_molecule_features.value>
             <PDBo:link_to_pubchem_substance rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubchem/substance/SID9895503" rdfs:label="pubchem.substance:9895503"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/pubchem.substance:9895503" rdfs:label="pubchem.substance:9895503"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/pubchem.substance/9895503" rdfs:label="pubchem.substance:9895503"/>
           </PDBo:pdbx_reference_molecule_features>
         </PDBo:has_pdbx_reference_molecule_features>
         <PDBo:has_pdbx_reference_molecule_features>
@@ -1261,7 +1261,7 @@
             <PDBo:pdbx_reference_molecule_features.type>External_Reference_ID</PDBo:pdbx_reference_molecule_features.type>
             <PDBo:pdbx_reference_molecule_features.value>231522</PDBo:pdbx_reference_molecule_features.value>
             <PDBo:link_to_chembl rdf:resource="http://www.ebi.ac.uk/chembl/entity/CHEMBL231522" rdfs:label="chembl:CHEMBL231522"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/chembl:CHEMBL231522" rdfs:label="chembl:CHEMBL231522"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/chembl/CHEMBL231522" rdfs:label="chembl:CHEMBL231522"/>
           </PDBo:pdbx_reference_molecule_features>
         </PDBo:has_pdbx_reference_molecule_features>
         <PDBo:has_pdbx_reference_molecule_features>
@@ -1280,7 +1280,7 @@
             <PDBo:pdbx_reference_molecule_features.type>External_Reference_ID</PDBo:pdbx_reference_molecule_features.type>
             <PDBo:pdbx_reference_molecule_features.value>8071169</PDBo:pdbx_reference_molecule_features.value>
             <PDBo:link_to_chemspider rdf:resource="http://www.chemspider.com/Chemical-Structure.8071169.html" rdfs:label="chemspider:8071169"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/chemspider:8071169" rdfs:label="chemspider:8071169"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/chemspider/8071169" rdfs:label="chemspider:8071169"/>
           </PDBo:pdbx_reference_molecule_features>
         </PDBo:has_pdbx_reference_molecule_features>
         <PDBo:has_pdbx_reference_molecule_features>
@@ -1299,7 +1299,7 @@
             <PDBo:pdbx_reference_molecule_features.type>External_Reference_ID</PDBo:pdbx_reference_molecule_features.type>
             <PDBo:pdbx_reference_molecule_features.value>16122613</PDBo:pdbx_reference_molecule_features.value>
             <PDBo:link_to_pubchem_substance rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubchem/substance/SID16122613" rdfs:label="pubchem.substance:16122613"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/pubchem.substance:16122613" rdfs:label="pubchem.substance:16122613"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/pubchem.substance/16122613" rdfs:label="pubchem.substance:16122613"/>
           </PDBo:pdbx_reference_molecule_features>
         </PDBo:has_pdbx_reference_molecule_features>
         <PDBo:has_pdbx_reference_molecule_features>
@@ -1318,7 +1318,7 @@
             <PDBo:pdbx_reference_molecule_features.type>External_Reference_ID</PDBo:pdbx_reference_molecule_features.type>
             <PDBo:pdbx_reference_molecule_features.value>17279528</PDBo:pdbx_reference_molecule_features.value>
             <PDBo:link_to_chemspider rdf:resource="http://www.chemspider.com/Chemical-Structure.17279528.html" rdfs:label="chemspider:17279528"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/chemspider:17279528" rdfs:label="chemspider:17279528"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/chemspider/17279528" rdfs:label="chemspider:17279528"/>
           </PDBo:pdbx_reference_molecule_features>
         </PDBo:has_pdbx_reference_molecule_features>
         <PDBo:has_pdbx_reference_molecule_features>
@@ -1337,7 +1337,7 @@
             <PDBo:pdbx_reference_molecule_features.type>External_Reference_ID</PDBo:pdbx_reference_molecule_features.type>
             <PDBo:pdbx_reference_molecule_features.value>46238528</PDBo:pdbx_reference_molecule_features.value>
             <PDBo:link_to_pubchem_substance rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubchem/substance/SID46238528" rdfs:label="pubchem.substance:46238528"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/pubchem.substance:46238528" rdfs:label="pubchem.substance:46238528"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/pubchem.substance/46238528" rdfs:label="pubchem.substance:46238528"/>
           </PDBo:pdbx_reference_molecule_features>
         </PDBo:has_pdbx_reference_molecule_features>
         <PDBo:has_pdbx_reference_molecule_features>
@@ -1356,7 +1356,7 @@
             <PDBo:pdbx_reference_molecule_features.type>External_Reference_ID</PDBo:pdbx_reference_molecule_features.type>
             <PDBo:pdbx_reference_molecule_features.value>44593400</PDBo:pdbx_reference_molecule_features.value>
             <PDBo:link_to_pubchem_substance rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubchem/substance/SID44593400" rdfs:label="pubchem.substance:44593400"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/pubchem.substance:44593400" rdfs:label="pubchem.substance:44593400"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/pubchem.substance/44593400" rdfs:label="pubchem.substance:44593400"/>
           </PDBo:pdbx_reference_molecule_features>
         </PDBo:has_pdbx_reference_molecule_features>
         <PDBo:has_pdbx_reference_molecule_features>
@@ -1412,7 +1412,7 @@
             <PDBo:pdbx_reference_molecule_features.type>External_Reference_ID</PDBo:pdbx_reference_molecule_features.type>
             <PDBo:pdbx_reference_molecule_features.value>499979</PDBo:pdbx_reference_molecule_features.value>
             <PDBo:link_to_chembl rdf:resource="http://www.ebi.ac.uk/chembl/entity/CHEMBL499979" rdfs:label="chembl:CHEMBL499979"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/chembl:CHEMBL499979" rdfs:label="chembl:CHEMBL499979"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/chembl/CHEMBL499979" rdfs:label="chembl:CHEMBL499979"/>
           </PDBo:pdbx_reference_molecule_features>
         </PDBo:has_pdbx_reference_molecule_features>
         <PDBo:has_pdbx_reference_molecule_features>
@@ -1431,7 +1431,7 @@
             <PDBo:pdbx_reference_molecule_features.type>External_Reference_ID</PDBo:pdbx_reference_molecule_features.type>
             <PDBo:pdbx_reference_molecule_features.value>46238529</PDBo:pdbx_reference_molecule_features.value>
             <PDBo:link_to_pubchem_substance rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubchem/substance/SID46238529" rdfs:label="pubchem.substance:46238529"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/pubchem.substance:46238529" rdfs:label="pubchem.substance:46238529"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/pubchem.substance/46238529" rdfs:label="pubchem.substance:46238529"/>
           </PDBo:pdbx_reference_molecule_features>
         </PDBo:has_pdbx_reference_molecule_features>
         <PDBo:has_pdbx_reference_molecule_features>
@@ -1450,7 +1450,7 @@
             <PDBo:pdbx_reference_molecule_features.type>External_Reference_ID</PDBo:pdbx_reference_molecule_features.type>
             <PDBo:pdbx_reference_molecule_features.value>46238530</PDBo:pdbx_reference_molecule_features.value>
             <PDBo:link_to_pubchem_substance rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubchem/substance/SID46238530" rdfs:label="pubchem.substance:46238530"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/pubchem.substance:46238530" rdfs:label="pubchem.substance:46238530"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/pubchem.substance/46238530" rdfs:label="pubchem.substance:46238530"/>
           </PDBo:pdbx_reference_molecule_features>
         </PDBo:has_pdbx_reference_molecule_features>
         <PDBo:has_pdbx_reference_molecule_features>
@@ -1469,7 +1469,7 @@
             <PDBo:pdbx_reference_molecule_features.type>External_Reference_ID</PDBo:pdbx_reference_molecule_features.type>
             <PDBo:pdbx_reference_molecule_features.value>46238531</PDBo:pdbx_reference_molecule_features.value>
             <PDBo:link_to_pubchem_substance rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubchem/substance/SID46238531" rdfs:label="pubchem.substance:46238531"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/pubchem.substance:46238531" rdfs:label="pubchem.substance:46238531"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/pubchem.substance/46238531" rdfs:label="pubchem.substance:46238531"/>
           </PDBo:pdbx_reference_molecule_features>
         </PDBo:has_pdbx_reference_molecule_features>
         <PDBo:has_pdbx_reference_molecule_features>
@@ -1488,7 +1488,7 @@
             <PDBo:pdbx_reference_molecule_features.type>External_Reference_ID</PDBo:pdbx_reference_molecule_features.type>
             <PDBo:pdbx_reference_molecule_features.value>44588310</PDBo:pdbx_reference_molecule_features.value>
             <PDBo:link_to_pubchem_substance rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubchem/substance/SID44588310" rdfs:label="pubchem.substance:44588310"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/pubchem.substance:44588310" rdfs:label="pubchem.substance:44588310"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/pubchem.substance/44588310" rdfs:label="pubchem.substance:44588310"/>
           </PDBo:pdbx_reference_molecule_features>
         </PDBo:has_pdbx_reference_molecule_features>
         <PDBo:has_pdbx_reference_molecule_features>
@@ -1544,7 +1544,7 @@
             <PDBo:pdbx_reference_molecule_features.type>External_Reference_ID</PDBo:pdbx_reference_molecule_features.type>
             <PDBo:pdbx_reference_molecule_features.value>510300</PDBo:pdbx_reference_molecule_features.value>
             <PDBo:link_to_chembl rdf:resource="http://www.ebi.ac.uk/chembl/entity/CHEMBL510300" rdfs:label="chembl:CHEMBL510300"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/chembl:CHEMBL510300" rdfs:label="chembl:CHEMBL510300"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/chembl/CHEMBL510300" rdfs:label="chembl:CHEMBL510300"/>
           </PDBo:pdbx_reference_molecule_features>
         </PDBo:has_pdbx_reference_molecule_features>
         <PDBo:has_pdbx_reference_molecule_features>
@@ -1563,7 +1563,7 @@
             <PDBo:pdbx_reference_molecule_features.type>External_Reference_ID</PDBo:pdbx_reference_molecule_features.type>
             <PDBo:pdbx_reference_molecule_features.value>44588309</PDBo:pdbx_reference_molecule_features.value>
             <PDBo:link_to_pubchem_substance rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubchem/substance/SID44588309" rdfs:label="pubchem.substance:44588309"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/pubchem.substance:44588309" rdfs:label="pubchem.substance:44588309"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/pubchem.substance/44588309" rdfs:label="pubchem.substance:44588309"/>
           </PDBo:pdbx_reference_molecule_features>
         </PDBo:has_pdbx_reference_molecule_features>
         <PDBo:has_pdbx_reference_molecule_features>
@@ -1619,7 +1619,7 @@
             <PDBo:pdbx_reference_molecule_features.type>External_Reference_ID</PDBo:pdbx_reference_molecule_features.type>
             <PDBo:pdbx_reference_molecule_features.value>509191</PDBo:pdbx_reference_molecule_features.value>
             <PDBo:link_to_chembl rdf:resource="http://www.ebi.ac.uk/chembl/entity/CHEMBL509191" rdfs:label="chembl:CHEMBL509191"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/chembl:CHEMBL509191" rdfs:label="chembl:CHEMBL509191"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/chembl/CHEMBL509191" rdfs:label="chembl:CHEMBL509191"/>
           </PDBo:pdbx_reference_molecule_features>
         </PDBo:has_pdbx_reference_molecule_features>
         <PDBo:has_pdbx_reference_molecule_features>
@@ -1638,7 +1638,7 @@
             <PDBo:pdbx_reference_molecule_features.type>External_Reference_ID</PDBo:pdbx_reference_molecule_features.type>
             <PDBo:pdbx_reference_molecule_features.value>9872768</PDBo:pdbx_reference_molecule_features.value>
             <PDBo:link_to_pubchem_substance rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubchem/substance/SID9872768" rdfs:label="pubchem.substance:9872768"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/pubchem.substance:9872768" rdfs:label="pubchem.substance:9872768"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/pubchem.substance/9872768" rdfs:label="pubchem.substance:9872768"/>
           </PDBo:pdbx_reference_molecule_features>
         </PDBo:has_pdbx_reference_molecule_features>
         <PDBo:has_pdbx_reference_molecule_features>
@@ -1676,7 +1676,7 @@
             <PDBo:pdbx_reference_molecule_features.type>External_Reference_ID</PDBo:pdbx_reference_molecule_features.type>
             <PDBo:pdbx_reference_molecule_features.value>573975</PDBo:pdbx_reference_molecule_features.value>
             <PDBo:link_to_chembl rdf:resource="http://www.ebi.ac.uk/chembl/entity/CHEMBL573975" rdfs:label="chembl:CHEMBL573975"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/chembl:CHEMBL573975" rdfs:label="chembl:CHEMBL573975"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/chembl/CHEMBL573975" rdfs:label="chembl:CHEMBL573975"/>
           </PDBo:pdbx_reference_molecule_features>
         </PDBo:has_pdbx_reference_molecule_features>
         <PDBo:has_pdbx_reference_molecule_features>
@@ -1695,7 +1695,7 @@
             <PDBo:pdbx_reference_molecule_features.type>External_Reference_ID</PDBo:pdbx_reference_molecule_features.type>
             <PDBo:pdbx_reference_molecule_features.value>8048457</PDBo:pdbx_reference_molecule_features.value>
             <PDBo:link_to_chemspider rdf:resource="http://www.chemspider.com/Chemical-Structure.8048457.html" rdfs:label="chemspider:8048457"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/chemspider:8048457" rdfs:label="chemspider:8048457"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/chemspider/8048457" rdfs:label="chemspider:8048457"/>
           </PDBo:pdbx_reference_molecule_features>
         </PDBo:has_pdbx_reference_molecule_features>
         <PDBo:has_pdbx_reference_molecule_features>
@@ -1714,7 +1714,7 @@
             <PDBo:pdbx_reference_molecule_features.type>External_Reference_ID</PDBo:pdbx_reference_molecule_features.type>
             <PDBo:pdbx_reference_molecule_features.value>16122614</PDBo:pdbx_reference_molecule_features.value>
             <PDBo:link_to_pubchem_substance rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubchem/substance/SID16122614" rdfs:label="pubchem.substance:16122614"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/pubchem.substance:16122614" rdfs:label="pubchem.substance:16122614"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/pubchem.substance/16122614" rdfs:label="pubchem.substance:16122614"/>
           </PDBo:pdbx_reference_molecule_features>
         </PDBo:has_pdbx_reference_molecule_features>
         <PDBo:has_pdbx_reference_molecule_features>
@@ -1770,7 +1770,7 @@
             <PDBo:pdbx_reference_molecule_features.type>External_Reference_ID</PDBo:pdbx_reference_molecule_features.type>
             <PDBo:pdbx_reference_molecule_features.value>440965</PDBo:pdbx_reference_molecule_features.value>
             <PDBo:link_to_chembl rdf:resource="http://www.ebi.ac.uk/chembl/entity/CHEMBL440965" rdfs:label="chembl:CHEMBL440965"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/chembl:CHEMBL440965" rdfs:label="chembl:CHEMBL440965"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/chembl/CHEMBL440965" rdfs:label="chembl:CHEMBL440965"/>
           </PDBo:pdbx_reference_molecule_features>
         </PDBo:has_pdbx_reference_molecule_features>
         <PDBo:has_pdbx_reference_molecule_features>
@@ -1789,7 +1789,7 @@
             <PDBo:pdbx_reference_molecule_features.type>External_Reference_ID</PDBo:pdbx_reference_molecule_features.type>
             <PDBo:pdbx_reference_molecule_features.value>17279529</PDBo:pdbx_reference_molecule_features.value>
             <PDBo:link_to_chemspider rdf:resource="http://www.chemspider.com/Chemical-Structure.17279529.html" rdfs:label="chemspider:17279529"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/chemspider:17279529" rdfs:label="chemspider:17279529"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/chemspider/17279529" rdfs:label="chemspider:17279529"/>
           </PDBo:pdbx_reference_molecule_features>
         </PDBo:has_pdbx_reference_molecule_features>
         <PDBo:has_pdbx_reference_molecule_features>
@@ -1808,7 +1808,7 @@
             <PDBo:pdbx_reference_molecule_features.type>External_Reference_ID</PDBo:pdbx_reference_molecule_features.type>
             <PDBo:pdbx_reference_molecule_features.value>44425681</PDBo:pdbx_reference_molecule_features.value>
             <PDBo:link_to_pubchem_substance rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubchem/substance/SID44425681" rdfs:label="pubchem.substance:44425681"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/pubchem.substance:44425681" rdfs:label="pubchem.substance:44425681"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/pubchem.substance/44425681" rdfs:label="pubchem.substance:44425681"/>
           </PDBo:pdbx_reference_molecule_features>
         </PDBo:has_pdbx_reference_molecule_features>
         <PDBo:has_pdbx_reference_molecule_features>
@@ -1827,7 +1827,7 @@
             <PDBo:pdbx_reference_molecule_features.type>External_Reference_ID</PDBo:pdbx_reference_molecule_features.type>
             <PDBo:pdbx_reference_molecule_features.value>411610</PDBo:pdbx_reference_molecule_features.value>
             <PDBo:link_to_chembl rdf:resource="http://www.ebi.ac.uk/chembl/entity/CHEMBL411610" rdfs:label="chembl:CHEMBL411610"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/chembl:CHEMBL411610" rdfs:label="chembl:CHEMBL411610"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/chembl/CHEMBL411610" rdfs:label="chembl:CHEMBL411610"/>
           </PDBo:pdbx_reference_molecule_features>
         </PDBo:has_pdbx_reference_molecule_features>
       </PDBo:pdbx_reference_molecule_featuresCategory>

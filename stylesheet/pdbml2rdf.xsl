@@ -135,22 +135,22 @@
 
   <xsl:template match="PDBx:citation/PDBx:pdbx_database_id_PubMed[text()!='']" mode="linked">
     <PDBo:link_to_pubmed rdf:resource="{$pubmed}{text()}" rdfs:label="pubmed:{text()}"/>
-    <dcterms:references rdf:resource="{$idorg}pubmed:{text()}" rdfs:label="pubmed:{text()}"/>
+    <dcterms:references rdf:resource="{$idorg}pubmed/{text()}" rdfs:label="pubmed:{text()}"/>
   </xsl:template>
 
   <xsl:template match="PDBx:entity_src_gen/PDBx:pdbx_gene_src_ncbi_taxonomy_id[text()!='']" mode="linked">
     <PDBo:link_to_taxonomy_source rdf:resource="{$taxonomy}{text()}" rdfs:label="taxonomy:{text()}"/>
-    <rdfs:seeAlso rdf:resource="{$idorg}taxonomy:{text()}" rdfs:label="taxonomy:{text()}"/>
+    <rdfs:seeAlso rdf:resource="{$idorg}taxonomy/{text()}" rdfs:label="taxonomy:{text()}"/>
   </xsl:template>
 
   <xsl:template match="PDBx:entity_src_gen/PDBx:pdbx_host_org_ncbi_taxonomy_id[text()!='']" mode="linked">
     <PDBo:link_to_taxonomy_host rdf:resource="{$taxonomy}{text()}" rdfs:label="taxonomy:{text()}"/>
-    <rdfs:seeAlso rdf:resource="{$idorg}taxonomy:{text()}" rdfs:label="taxonomy:{text()}"/>
+    <rdfs:seeAlso rdf:resource="{$idorg}taxonomy/{text()}" rdfs:label="taxonomy:{text()}"/>
   </xsl:template>
 
   <xsl:template match="PDBx:entity_src_nat/PDBx:pdbx_ncbi_taxonomy_id[text()!='']" mode="linked">
     <PDBo:link_to_taxonomy_source rdf:resource="{$taxonomy}{text()}" rdfs:label="taxonomy:{text()}"/>
-    <rdfs:seeAlso rdf:resource="{$idorg}taxonomy:{text()}" rdfs:label="taxonomy:{text()}"/>
+    <rdfs:seeAlso rdf:resource="{$idorg}taxonomy/{text()}" rdfs:label="taxonomy:{text()}"/>
   </xsl:template>
 
   <xsl:template match="PDBx:entity/PDBx:pdbx_ec[text()!='']" mode="linked">
@@ -166,7 +166,7 @@
         <xsl:variable name="ec"><xsl:value-of select="normalize-space(text())"/></xsl:variable>
         <xsl:if test="string-length($ec)!=0">
           <PDBo:link_to_enzyme rdf:resource="{$enzyme}{$ec}" rdfs:label="ec-code:{$ec}"/>
-          <rdfs:seeAlso rdf:resource="{$idorg}ec-code:{$ec}" rdfs:label="ec-code:{$ec}"/>
+          <rdfs:seeAlso rdf:resource="{$idorg}ec-code/{$ec}" rdfs:label="ec-code:{$ec}"/>
         </xsl:if>
       </xsl:for-each>
     </xsl:if>
@@ -195,52 +195,52 @@
 
   <xsl:template match="PDBx:struct_ref/PDBx:pdbx_db_accession[../PDBx:db_name='UNP' and text()!='']" mode="linked">
     <PDBo:link_to_uniprot rdf:resource="{$uniprot}{text()}" rdfs:label="uniprot:{text()}"/>
-    <rdfs:seeAlso rdf:resource="{$idorg}uniprot:{text()}" rdfs:label="uniprot:{text()}"/>
+    <rdfs:seeAlso rdf:resource="{$idorg}uniprot/{text()}" rdfs:label="uniprot:{text()}"/>
   </xsl:template>
 
   <xsl:template match="PDBx:struct_ref/PDBx:db_code[(../PDBx:db_name='GB' or ../PDBx:db_name='GB ' or ../PDBx:db_name='gb' or ../PDBx:db_name='TPG') and text()!='']" mode="linked">
     <PDBo:link_to_genbank rdf:resource="{$genbank}{text()}" rdfs:label="ncbiprotein:{text()}"/>
-    <rdfs:seeAlso rdf:resource="{$idorg}ncbiprotein:{text()}" rdfs:label="ncbiprotein:{text()}"/>
+    <rdfs:seeAlso rdf:resource="{$idorg}ncbiprotein/{text()}" rdfs:label="ncbiprotein:{text()}"/>
   </xsl:template>
 
   <xsl:template match="PDBx:struct_ref/PDBx:db_code[(../PDBx:db_name='EMBL' or ../PDBx:db_name='GENP') and text()!='']" mode="linked">
     <PDBo:link_to_embl rdf:resource="{$embl}{text()}" rdfs:label="ncbiprotein:{text()}"/>
-    <rdfs:seeAlso rdf:resource="{$idorg}ncbiprotein:{text()}" rdfs:label="ncbiprotein:{text()}"/>
+    <rdfs:seeAlso rdf:resource="{$idorg}ncbiprotein/{text()}" rdfs:label="ncbiprotein:{text()}"/>
   </xsl:template>
 
   <xsl:template match="PDBx:struct_ref/PDBx:db_code[../PDBx:db_name='TREMBL' and string-length(text())=6 and contains(substring(text(),0,1),'OPQ') and contains(substring(text(),1,1),'0123456789')]" mode="linked">
     <PDBo:link_to_uniprot rdf:resource="{$uniprot}{text()}" rdfs:label="uniprot:{text()}"/>
-    <rdfs:seeAlso rdf:resource="{$idorg}uniprot:{text()}" rdfs:label="uniprot:{text()}"/>
+    <rdfs:seeAlso rdf:resource="{$idorg}uniprot/{text()}" rdfs:label="uniprot:{text()}"/>
   </xsl:template>
 
   <xsl:template match="PDBx:struct_ref/PDBx:db_code[../PDBx:db_name='TREMBL' and text()!='' and not(string-length(text())=6 and contains(substring(text(),0,1),'OPQ') and contains(substring(text(),1,1),'0123456789'))]" mode="linked">
     <PDBo:link_to_embl rdf:resource="{$embl}{text()}" rdfs:label="ncbiprotein:{text()}"/>
-    <rdfs:seeAlso rdf:resource="{$idorg}ncbiprotein:{text()}" rdfs:label="ncbiprotein:{text()}"/>
+    <rdfs:seeAlso rdf:resource="{$idorg}ncbiprotein/{text()}" rdfs:label="ncbiprotein:{text()}"/>
   </xsl:template>
 
   <xsl:template match="PDBx:struct_ref/PDBx:db_code[../PDBx:db_name='PIR' and text()!='']" mode="linked">
     <PDBo:link_to_pir rdf:resource="{$pir}{text()}" rdfs:label="ncbiprotein:{text()}"/>
-    <rdfs:seeAlso rdf:resource="{$idorg}ncbiprotein:{text()}" rdfs:label="ncbiprotein:{text()}"/>
+    <rdfs:seeAlso rdf:resource="{$idorg}ncbiprotein/{text()}" rdfs:label="ncbiprotein:{text()}"/>
   </xsl:template>
 
   <xsl:template match="PDBx:struct_ref/PDBx:db_code[../PDBx:db_name='REF' and text()!='']" mode="linked">
     <PDBo:link_to_refseq rdf:resource="{$refseq}{text()}" rdfs:label="refseq:{text()}"/>
-    <rdfs:seeAlso rdf:resource="{$idorg}refseq:{text()}" rdfs:label="refseq:{text()}"/>
+    <rdfs:seeAlso rdf:resource="{$idorg}refseq/{text()}" rdfs:label="refseq:{text()}"/>
   </xsl:template>
 
   <xsl:template match="PDBx:struct_ref/PDBx:db_code[../PDBx:db_name='PRF' and text()!='']" mode="linked">
     <PDBo:link_to_sequence_db rdf:resource="{$pir}{text()}" rdfs:label="ncbiprotein:{text()}"/>
-    <rdfs:seeAlso rdf:resource="{$idorg}ncbiprotein:{text()}" rdfs:label="ncbiprotein:{text()}"/>
+    <rdfs:seeAlso rdf:resource="{$idorg}ncbiprotein/{text()}" rdfs:label="ncbiprotein:{text()}"/>
   </xsl:template>
 
   <xsl:template match="PDBx:struct_ref/PDBx:db_code[../PDBx:db_name='NOR' and text()!='']" mode="linked">
     <PDBo:link_to_norine rdf:resource="{$norine}{text()}" rdfs:label="norine:{text()}"/>
-    <rdfs:seeAlso rdf:resource="{$idorg}norine:{text()}" rdfs:label="norine:{text()}"/>
+    <rdfs:seeAlso rdf:resource="{$idorg}norine/{text()}" rdfs:label="norine:{text()}"/>
   </xsl:template>
 
   <xsl:template match="PDBx:pdbx_sifts_unp_segments[@unp_acc!='']/@unp_acc" mode="linked">
     <PDBo:link_to_uniprot rdf:resource="{$uniprot}{.}" rdfs:label="uniprot:{.}"/>
-    <rdfs:seeAlso rdf:resource="{$idorg}uniprot:{.}" rdfs:label="uniprot:{.}"/>
+    <rdfs:seeAlso rdf:resource="{$idorg}uniprot/{.}" rdfs:label="uniprot:{.}"/>
   </xsl:template>
 
   <xsl:template match="PDBx:pdbx_sifts_xref_db_segments[@xref_db='GO' and @xref_db_acc!='']/@xref_db_acc" mode="linked">
@@ -250,22 +250,22 @@
 
   <xsl:template match="PDBx:pdbx_sifts_xref_db_segments[@xref_db='InterPro' and @xref_db_acc!='']/@xref_db_acc" mode="linked">
     <PDBo:link_to_interpro rdf:resource="{$interpro}{.}" rdfs:label="interpro:{.}"/>
-    <rdfs:seeAlso rdf:resource="{$idorg}interpro:{.}" rdfs:label="interpro:{.}"/>
+    <rdfs:seeAlso rdf:resource="{$idorg}interpro/{.}" rdfs:label="interpro:{.}"/>
   </xsl:template>
 
   <xsl:template match="PDBx:pdbx_sifts_xref_db_segments[@xref_db='Pfam' and @xref_db_acc!='']/@xref_db_acc" mode="linked">
     <PDBo:link_to_pfam rdf:resource="{$pfam}{.}" rdfs:label="pfam:{.}"/>
-    <rdfs:seeAlso rdf:resource="{$idorg}pfam:{.}" rdfs:label="pfam:{.}"/>
+    <rdfs:seeAlso rdf:resource="{$idorg}pfam/{.}" rdfs:label="pfam:{.}"/>
   </xsl:template>
 
   <xsl:template match="PDBx:pdbx_sifts_xref_db_segments[@xref_db='CATH' and @xref_db_acc!='']/@xref_db_acc" mode="linked">
     <PDBo:link_to_cath rdf:resource="{$cath}{.}" rdfs:label="cath:{.}"/>
-    <rdfs:seeAlso rdf:resource="{$idorg}cath:{.}" rdfs:label="cath:{.}"/>
+    <rdfs:seeAlso rdf:resource="{$idorg}cath/{.}" rdfs:label="cath:{.}"/>
   </xsl:template>
 
   <xsl:template match="PDBx:pdbx_sifts_xref_db_segments[@xref_db='SCOP' and @xref_db_acc!='']/@xref_db_acc" mode="linked">
     <PDBo:link_to_scop rdf:resource="{$scop}{.}" rdfs:label="scop:{.}"/>
-    <rdfs:seeAlso rdf:resource="{$idorg}scop:{.}" rdfs:label="scop:{.}"/>
+    <rdfs:seeAlso rdf:resource="{$idorg}scop/{.}" rdfs:label="scop:{.}"/>
   </xsl:template>
 
   <xsl:template match="PDBx:pdbx_sifts_xref_db_segments[(@xref_db='SCOP2' or @xref_db='SCOP2B') and @xref_db_acc!='']/@xref_db_acc" mode="linked">
@@ -274,7 +274,7 @@
 
   <xsl:template match="PDBx:pdbx_sifts_xref_db_segments[@xref_db='Ensembl' and @xref_db_acc!='']/@xref_db_acc" mode="linked">
     <PDBo:link_to_ensembl rdf:resource="{$ensembl}{.}" rdfs:label="ensembl:{.}"/>
-    <rdfs:seeAlso rdf:resource="{$idorg}ensembl:{.}" rdfs:label="ensembl:{.}"/>
+    <rdfs:seeAlso rdf:resource="{$idorg}ensembl/{.}" rdfs:label="ensembl:{.}"/>
   </xsl:template>
 
   <xsl:template match="PDBx:pdbx_entity_branch_descriptor/PDBx:descriptor[../PDBx:type='WURCS' and text()!='']" mode="linked">
@@ -282,7 +282,7 @@
     <xsl:for-each select="$glytoucan/catalog/wurcs[@id=$wurcs_id]">
       <xsl:if test="text()!=''">
         <PDBo:link_to_glycoinfo rdf:resource="{$glycoinfo}{text()}" rdfs:label="glytoucan:{text()}"/>
-        <rdfs:seeAlso rdf:resource="{$idorg}glytoucan:{text()}" rdfs:label="glytoucan:{text()}"/>
+        <rdfs:seeAlso rdf:resource="{$idorg}glytoucan/{text()}" rdfs:label="glytoucan:{text()}"/>
       </xsl:if>
     </xsl:for-each>
   </xsl:template>
@@ -301,37 +301,37 @@
 
   <xsl:template match="PDBx:pdbx_database_related[@db_name='BMRB']/@db_id" mode="linked">
     <PDBo:link_to_bmrb rdf:resource="{$bmrb}{.}" rdfs:label="bmrb:{.}"/>
-    <rdfs:seeAlso rdf:resource="{$idorg}bmrb:{.}" rdfs:label="bmrb:{.}"/>
+    <rdfs:seeAlso rdf:resource="{$idorg}bmrb/{.}" rdfs:label="bmrb:{.}"/>
   </xsl:template>
 
   <xsl:template match="PDBx:pdbx_database_related[@db_name='EMDB']/@db_id" mode="linked">
     <PDBo:link_to_emdb rdf:resource="{$emdb}{.}" rdfs:label="emdb:{.}"/>
-    <rdfs:seeAlso rdf:resource="{$idorg}emdb:{.}" rdfs:label="emdb:{.}"/>
+    <rdfs:seeAlso rdf:resource="{$idorg}emdb/{.}" rdfs:label="emdb:{.}"/>
   </xsl:template>
 
   <xsl:template match="PDBx:pdbx_database_related[@db_name='SASBDB']/@db_id" mode="linked">
     <PDBo:link_to_sasbdb rdf:resource="{$sasbdb}{.}" rdfs:label="sasbdb:{.}"/>
-    <rdfs:seeAlso rdf:resource="{$idorg}sasbdb:{.}" rdfs:label="sasbdb:{.}"/>
+    <rdfs:seeAlso rdf:resource="{$idorg}sasbdb/{.}" rdfs:label="sasbdb:{.}"/>
   </xsl:template>
 
   <xsl:template match="PDBx:citation_author/PDBx:identifier_ORCID[text()!='']" mode="linked">
     <PDBo:link_to_orcid rdf:resource="{$orcid}{text()}" rdfs:label="orcid:{text()}"/>
-    <rdfs:seeAlso rdf:resource="{$idorg}orcid:{text()}" rdfs:label="orcid:{text()}"/>
+    <rdfs:seeAlso rdf:resource="{$idorg}orcid/{text()}" rdfs:label="orcid:{text()}"/>
   </xsl:template>
 
   <xsl:template match="PDBx:audit_author/PDBx:identifier_ORCID[text()!='']" mode="linked">
     <PDBo:link_to_orcid rdf:resource="{$orcid}{text()}" rdfs:label="orcid:{text()}"/>
-    <rdfs:seeAlso rdf:resource="{$idorg}orcid:{text()}" rdfs:label="orcid:{text()}"/>
+    <rdfs:seeAlso rdf:resource="{$idorg}orcid/{text()}" rdfs:label="orcid:{text()}"/>
   </xsl:template>
 
   <xsl:template match="PDBx:em_author_list/PDBx:identifier_ORCID[text()!='']" mode="linked">
     <PDBo:link_to_orcid rdf:resource="{$orcid}{text()}" rdfs:label="orcid:{text()}"/>
-    <rdfs:seeAlso rdf:resource="{$idorg}orcid:{text()}" rdfs:label="orcid:{text()}"/>
+    <rdfs:seeAlso rdf:resource="{$idorg}orcid/{text()}" rdfs:label="orcid:{text()}"/>
   </xsl:template>
 
   <xsl:template match="PDBx:pdbx_contact_author/PDBx:identifier_ORCID[text()!='']" mode="linked">
     <PDBo:link_to_orcid rdf:resource="{$orcid}{text()}" rdfs:label="orcid:{text()}"/>
-    <rdfs:seeAlso rdf:resource="{$idorg}orcid:{text()}" rdfs:label="orcid:{text()}"/>
+    <rdfs:seeAlso rdf:resource="{$idorg}orcid/{text()}" rdfs:label="orcid:{text()}"/>
   </xsl:template>
 
   <!-- level-3 templates follow -->

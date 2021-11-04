@@ -456,7 +456,7 @@
             <PDBo:citation.year>2017</PDBo:citation.year>
             <PDBo:link_to_doi rdf:resource="http://doi.org/10.1021/acs.biochem.7b00484" rdfs:label="doi:10.1021/acs.biochem.7b00484"/>
             <PDBo:link_to_pubmed rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/28718627" rdfs:label="pubmed:28718627"/>
-            <dcterms:references rdf:resource="http://identifiers.org/pubmed:28718627" rdfs:label="pubmed:28718627"/>
+            <dcterms:references rdf:resource="http://identifiers.org/pubmed/28718627" rdfs:label="pubmed:28718627"/>
           </PDBo:citation>
         </PDBo:has_citation>
       </PDBo:citationCategory>
@@ -2722,9 +2722,9 @@ INGRNNLIQQKN</PDBo:entity_poly.pdbx_seq_one_letter_code_can>
             <PDBo:entity_src_gen.pdbx_host_org_scientific_name>Escherichia coli</PDBo:entity_src_gen.pdbx_host_org_scientific_name>
             <PDBo:entity_src_gen.pdbx_seq_type>Biological sequence</PDBo:entity_src_gen.pdbx_seq_type>
             <PDBo:link_to_taxonomy_source rdf:resource="http://purl.uniprot.org/taxonomy/9606" rdfs:label="taxonomy:9606"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/taxonomy:9606" rdfs:label="taxonomy:9606"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/taxonomy/9606" rdfs:label="taxonomy:9606"/>
             <PDBo:link_to_taxonomy_host rdf:resource="http://purl.uniprot.org/taxonomy/562" rdfs:label="taxonomy:562"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/taxonomy:562" rdfs:label="taxonomy:562"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/taxonomy/562" rdfs:label="taxonomy:562"/>
           </PDBo:entity_src_gen>
         </PDBo:has_entity_src_gen>
       </PDBo:entity_src_genCategory>
@@ -2916,7 +2916,7 @@ INGRNNLIQQKN</PDBo:entity_poly.pdbx_seq_one_letter_code_can>
             <PDBo:pdbx_database_related.db_id>30210</PDBo:pdbx_database_related.db_id>
             <PDBo:pdbx_database_related.db_name>BMRB</PDBo:pdbx_database_related.db_name>
             <PDBo:link_to_bmrb rdf:resource="http://bmrbpub.pdbj.org/rdf/bmr30210" rdfs:label="bmrb:30210"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/bmrb:30210" rdfs:label="bmrb:30210"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/bmrb/30210" rdfs:label="bmrb:30210"/>
             <PDBo:pdbx_database_related.details>Solution structure of the zinc fingers 1 and 2 of MBNL1 in complex with human cardiac troponin T pre-mRNA</PDBo:pdbx_database_related.details>
           </PDBo:pdbx_database_related>
         </PDBo:has_pdbx_database_related>
@@ -14854,7 +14854,7 @@ INGRNNLIQQKN</PDBo:entity_poly.pdbx_seq_one_letter_code_can>
             <PDBo:struct_ref.pdbx_seq_one_letter_code>MAVSVTPIRDTKWLTLEVCREFQRGTCSRPDTECKFAHPSKSCQVENGRVIACFDSLKGRCSRENCKYLHPPPHLKTQLE
 INGRNNLIQQKN</PDBo:struct_ref.pdbx_seq_one_letter_code>
             <PDBo:link_to_uniprot rdf:resource="http://purl.uniprot.org/uniprot/Q9NR56" rdfs:label="uniprot:Q9NR56"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot:Q9NR56" rdfs:label="uniprot:Q9NR56"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/Q9NR56" rdfs:label="uniprot:Q9NR56"/>
           </PDBo:struct_ref>
         </PDBo:has_struct_ref>
         <PDBo:has_struct_ref>
@@ -15210,7 +15210,7 @@ INGRNNLIQQKN</PDBo:struct_ref.pdbx_seq_one_letter_code>
             <PDBo:pdbx_sifts_unp_segments.segment_id>1</PDBo:pdbx_sifts_unp_segments.segment_id>
             <PDBo:pdbx_sifts_unp_segments.instance_id>1</PDBo:pdbx_sifts_unp_segments.instance_id>
             <PDBo:link_to_uniprot rdf:resource="http://purl.uniprot.org/uniprot/Q9NR56" rdfs:label="uniprot:Q9NR56"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot:Q9NR56" rdfs:label="uniprot:Q9NR56"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/Q9NR56" rdfs:label="uniprot:Q9NR56"/>
             <PDBo:pdbx_sifts_unp_segments.unp_start>1</PDBo:pdbx_sifts_unp_segments.unp_start>
             <PDBo:pdbx_sifts_unp_segments.unp_end>92</PDBo:pdbx_sifts_unp_segments.unp_end>
             <PDBo:pdbx_sifts_unp_segments.seq_id_start>1</PDBo:pdbx_sifts_unp_segments.seq_id_start>
@@ -15258,7 +15258,7 @@ INGRNNLIQQKN</PDBo:struct_ref.pdbx_seq_one_letter_code>
             <PDBo:pdbx_sifts_xref_db_segments.segment_id>1</PDBo:pdbx_sifts_xref_db_segments.segment_id>
             <PDBo:pdbx_sifts_xref_db_segments.instance_id>2</PDBo:pdbx_sifts_xref_db_segments.instance_id>
             <PDBo:link_to_ensembl rdf:resource="http://www.ensembl.org/id/ENSG00000152601" rdfs:label="ensembl:ENSG00000152601"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/ensembl:ENSG00000152601" rdfs:label="ensembl:ENSG00000152601"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/ensembl/ENSG00000152601" rdfs:label="ensembl:ENSG00000152601"/>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start>59</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end>92</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
           </PDBo:pdbx_sifts_xref_db_segments>
@@ -15278,7 +15278,7 @@ INGRNNLIQQKN</PDBo:struct_ref.pdbx_seq_one_letter_code>
             <PDBo:pdbx_sifts_xref_db_segments.segment_id>1</PDBo:pdbx_sifts_xref_db_segments.segment_id>
             <PDBo:pdbx_sifts_xref_db_segments.instance_id>3</PDBo:pdbx_sifts_xref_db_segments.instance_id>
             <PDBo:link_to_ensembl rdf:resource="http://www.ensembl.org/id/ENSG00000152601" rdfs:label="ensembl:ENSG00000152601"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/ensembl:ENSG00000152601" rdfs:label="ensembl:ENSG00000152601"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/ensembl/ENSG00000152601" rdfs:label="ensembl:ENSG00000152601"/>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start>1</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end>58</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
           </PDBo:pdbx_sifts_xref_db_segments>
@@ -15298,7 +15298,7 @@ INGRNNLIQQKN</PDBo:struct_ref.pdbx_seq_one_letter_code>
             <PDBo:pdbx_sifts_xref_db_segments.segment_id>1</PDBo:pdbx_sifts_xref_db_segments.segment_id>
             <PDBo:pdbx_sifts_xref_db_segments.instance_id>4</PDBo:pdbx_sifts_xref_db_segments.instance_id>
             <PDBo:link_to_ensembl rdf:resource="http://www.ensembl.org/id/ENSG00000152601" rdfs:label="ensembl:ENSG00000152601"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/ensembl:ENSG00000152601" rdfs:label="ensembl:ENSG00000152601"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/ensembl/ENSG00000152601" rdfs:label="ensembl:ENSG00000152601"/>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start>1</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end>58</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
           </PDBo:pdbx_sifts_xref_db_segments>
@@ -15318,7 +15318,7 @@ INGRNNLIQQKN</PDBo:struct_ref.pdbx_seq_one_letter_code>
             <PDBo:pdbx_sifts_xref_db_segments.segment_id>1</PDBo:pdbx_sifts_xref_db_segments.segment_id>
             <PDBo:pdbx_sifts_xref_db_segments.instance_id>5</PDBo:pdbx_sifts_xref_db_segments.instance_id>
             <PDBo:link_to_ensembl rdf:resource="http://www.ensembl.org/id/ENSG00000152601" rdfs:label="ensembl:ENSG00000152601"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/ensembl:ENSG00000152601" rdfs:label="ensembl:ENSG00000152601"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/ensembl/ENSG00000152601" rdfs:label="ensembl:ENSG00000152601"/>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start>59</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end>92</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
           </PDBo:pdbx_sifts_xref_db_segments>
@@ -15338,7 +15338,7 @@ INGRNNLIQQKN</PDBo:struct_ref.pdbx_seq_one_letter_code>
             <PDBo:pdbx_sifts_xref_db_segments.segment_id>1</PDBo:pdbx_sifts_xref_db_segments.segment_id>
             <PDBo:pdbx_sifts_xref_db_segments.instance_id>6</PDBo:pdbx_sifts_xref_db_segments.instance_id>
             <PDBo:link_to_interpro rdf:resource="http://www.ebi.ac.uk/interpro/entry/IPR000571" rdfs:label="interpro:IPR000571"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/interpro:IPR000571" rdfs:label="interpro:IPR000571"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/interpro/IPR000571" rdfs:label="interpro:IPR000571"/>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start>47</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end>72</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
           </PDBo:pdbx_sifts_xref_db_segments>
@@ -15358,7 +15358,7 @@ INGRNNLIQQKN</PDBo:struct_ref.pdbx_seq_one_letter_code>
             <PDBo:pdbx_sifts_xref_db_segments.segment_id>1</PDBo:pdbx_sifts_xref_db_segments.segment_id>
             <PDBo:pdbx_sifts_xref_db_segments.instance_id>7</PDBo:pdbx_sifts_xref_db_segments.instance_id>
             <PDBo:link_to_interpro rdf:resource="http://www.ebi.ac.uk/interpro/entry/IPR000571" rdfs:label="interpro:IPR000571"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/interpro:IPR000571" rdfs:label="interpro:IPR000571"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/interpro/IPR000571" rdfs:label="interpro:IPR000571"/>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start>14</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end>40</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
           </PDBo:pdbx_sifts_xref_db_segments>
@@ -15378,7 +15378,7 @@ INGRNNLIQQKN</PDBo:struct_ref.pdbx_seq_one_letter_code>
             <PDBo:pdbx_sifts_xref_db_segments.segment_id>1</PDBo:pdbx_sifts_xref_db_segments.segment_id>
             <PDBo:pdbx_sifts_xref_db_segments.instance_id>8</PDBo:pdbx_sifts_xref_db_segments.instance_id>
             <PDBo:link_to_cath rdf:resource="http://www.cathdb.info/cathnode/3.30.1370.210" rdfs:label="cath:3.30.1370.210"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/cath:3.30.1370.210" rdfs:label="cath:3.30.1370.210"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/cath/3.30.1370.210" rdfs:label="cath:3.30.1370.210"/>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start>1</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end>92</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
           </PDBo:pdbx_sifts_xref_db_segments>
@@ -15398,7 +15398,7 @@ INGRNNLIQQKN</PDBo:struct_ref.pdbx_seq_one_letter_code>
             <PDBo:pdbx_sifts_xref_db_segments.segment_id>1</PDBo:pdbx_sifts_xref_db_segments.segment_id>
             <PDBo:pdbx_sifts_xref_db_segments.instance_id>9</PDBo:pdbx_sifts_xref_db_segments.instance_id>
             <PDBo:link_to_pfam rdf:resource="http://pfam.xfam.org/family/PF14608" rdfs:label="pfam:PF14608"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/pfam:PF14608" rdfs:label="pfam:PF14608"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/pfam/PF14608" rdfs:label="pfam:PF14608"/>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start>19</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end>39</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
           </PDBo:pdbx_sifts_xref_db_segments>
@@ -15418,7 +15418,7 @@ INGRNNLIQQKN</PDBo:struct_ref.pdbx_seq_one_letter_code>
             <PDBo:pdbx_sifts_xref_db_segments.segment_id>1</PDBo:pdbx_sifts_xref_db_segments.segment_id>
             <PDBo:pdbx_sifts_xref_db_segments.instance_id>10</PDBo:pdbx_sifts_xref_db_segments.instance_id>
             <PDBo:link_to_pfam rdf:resource="http://pfam.xfam.org/family/PF14608" rdfs:label="pfam:PF14608"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/pfam:PF14608" rdfs:label="pfam:PF14608"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/pfam/PF14608" rdfs:label="pfam:PF14608"/>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start>52</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end>71</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
           </PDBo:pdbx_sifts_xref_db_segments>

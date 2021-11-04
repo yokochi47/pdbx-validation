@@ -459,7 +459,7 @@
             <VRPTo:pdbx_database_related.db_id>30780</VRPTo:pdbx_database_related.db_id>
             <VRPTo:pdbx_database_related.db_name>BMRB</VRPTo:pdbx_database_related.db_name>
             <VRPTo:link_to_bmrb rdf:resource="http://bmrbpub.pdbj.org/rdf/bmr30780" rdfs:label="bmrb:30780"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/bmrb:30780" rdfs:label="bmrb:30780"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/bmrb/30780" rdfs:label="bmrb:30780"/>
             <VRPTo:pdbx_database_related.details>Structure of truncated zebrafish granulin AaE</VRPTo:pdbx_database_related.details>
           </VRPTo:pdbx_database_related>
         </VRPTo:has_pdbx_database_related>
@@ -1565,7 +1565,7 @@
             <VRPTo:struct_ref.pdbx_db_accession>Q8QGN9</VRPTo:struct_ref.pdbx_db_accession>
             <VRPTo:struct_ref.pdbx_seq_one_letter_code>CGGGFSCHDGETCCPTSQTTWGCC</VRPTo:struct_ref.pdbx_seq_one_letter_code>
             <VRPTo:link_to_uniprot rdf:resource="http://purl.uniprot.org/uniprot/Q8QGN9" rdfs:label="uniprot:Q8QGN9"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot:Q8QGN9" rdfs:label="uniprot:Q8QGN9"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/Q8QGN9" rdfs:label="uniprot:Q8QGN9"/>
           </VRPTo:struct_ref>
         </VRPTo:has_struct_ref>
       </VRPTo:struct_refCategory>
@@ -1692,7 +1692,7 @@
             <VRPTo:pdbx_sifts_unp_segments.segment_id>1</VRPTo:pdbx_sifts_unp_segments.segment_id>
             <VRPTo:pdbx_sifts_unp_segments.instance_id>1</VRPTo:pdbx_sifts_unp_segments.instance_id>
             <VRPTo:link_to_uniprot rdf:resource="http://purl.uniprot.org/uniprot/Q8QGN9" rdfs:label="uniprot:Q8QGN9"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot:Q8QGN9" rdfs:label="uniprot:Q8QGN9"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/Q8QGN9" rdfs:label="uniprot:Q8QGN9"/>
             <VRPTo:pdbx_sifts_unp_segments.unp_start>796</VRPTo:pdbx_sifts_unp_segments.unp_start>
             <VRPTo:pdbx_sifts_unp_segments.unp_end>819</VRPTo:pdbx_sifts_unp_segments.unp_end>
             <VRPTo:pdbx_sifts_unp_segments.seq_id_start>1</VRPTo:pdbx_sifts_unp_segments.seq_id_start>

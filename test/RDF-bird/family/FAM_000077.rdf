@@ -33,7 +33,7 @@
             <PDBo:citation.title> Microcin J25 induces the opening of the mitochondrial transition pore and cytochrome c release through superoxide generation.</PDBo:citation.title>
             <PDBo:citation.year>2008</PDBo:citation.year>
             <PDBo:link_to_pubmed rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/18616579" rdfs:label="pubmed:18616579"/>
-            <dcterms:references rdf:resource="http://identifiers.org/pubmed:18616579" rdfs:label="pubmed:18616579"/>
+            <dcterms:references rdf:resource="http://identifiers.org/pubmed/18616579" rdfs:label="pubmed:18616579"/>
           </PDBo:citation>
         </PDBo:has_citation>
         <PDBo:has_citation>
@@ -118,7 +118,7 @@
             <PDBo:citation.title>Microcin 25, a novel antimicrobial peptide produced by Escherichia coli.</PDBo:citation.title>
             <PDBo:citation.year>1992</PDBo:citation.year>
             <PDBo:link_to_pubmed rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/207439" rdfs:label="pubmed:207439"/>
-            <dcterms:references rdf:resource="http://identifiers.org/pubmed:207439" rdfs:label="pubmed:207439"/>
+            <dcterms:references rdf:resource="http://identifiers.org/pubmed/207439" rdfs:label="pubmed:207439"/>
           </PDBo:citation>
         </PDBo:has_citation>
         <PDBo:has_citation>
@@ -133,7 +133,7 @@
             <PDBo:citation.title>The regulation of microcin B, C and J operons</PDBo:citation.title>
             <PDBo:citation.year>2002</PDBo:citation.year>
             <PDBo:link_to_pubmed rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/12423796" rdfs:label="pubmed:12423796"/>
-            <dcterms:references rdf:resource="http://identifiers.org/pubmed:12423796" rdfs:label="pubmed:12423796"/>
+            <dcterms:references rdf:resource="http://identifiers.org/pubmed/12423796" rdfs:label="pubmed:12423796"/>
           </PDBo:citation>
         </PDBo:has_citation>
         <PDBo:has_citation>
@@ -148,7 +148,7 @@
             <PDBo:citation.title> In vivo processing and antibiotic activity of microcin B17 analogs with varying ring content and altered bisheterocyclic sites</PDBo:citation.title>
             <PDBo:citation.year>1999</PDBo:citation.year>
             <PDBo:link_to_pubmed rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/10322125" rdfs:label="pubmed:10322125"/>
-            <dcterms:references rdf:resource="http://identifiers.org/pubmed:10322125" rdfs:label="pubmed:10322125"/>
+            <dcterms:references rdf:resource="http://identifiers.org/pubmed/10322125" rdfs:label="pubmed:10322125"/>
           </PDBo:citation>
         </PDBo:has_citation>
         <PDBo:has_citation>
@@ -191,7 +191,7 @@
             <PDBo:citation.title>Microcin 15N: a second antibiotic from escherichia coli lp15</PDBo:citation.title>
             <PDBo:citation.year>1982</PDBo:citation.year>
             <PDBo:link_to_pubmed rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/6339460" rdfs:label="pubmed:6339460"/>
-            <dcterms:references rdf:resource="http://identifiers.org/pubmed:6339460" rdfs:label="pubmed:6339460"/>
+            <dcterms:references rdf:resource="http://identifiers.org/pubmed/6339460" rdfs:label="pubmed:6339460"/>
           </PDBo:citation>
         </PDBo:has_citation>
         <PDBo:has_citation>
@@ -206,7 +206,7 @@
             <PDBo:citation.title>Structure of microcin J25, a peptide inhibitor of bacterial RNA polymerase, is a lassoed tail </PDBo:citation.title>
             <PDBo:citation.year>2003</PDBo:citation.year>
             <PDBo:link_to_pubmed rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/14531691" rdfs:label="pubmed:14531691"/>
-            <dcterms:references rdf:resource="http://identifiers.org/pubmed:14531691" rdfs:label="pubmed:14531691"/>
+            <dcterms:references rdf:resource="http://identifiers.org/pubmed/14531691" rdfs:label="pubmed:14531691"/>
           </PDBo:citation>
         </PDBo:has_citation>
         <PDBo:has_citation>
@@ -221,7 +221,7 @@
             <PDBo:citation.title>Structure of antibacterial peptide microcin J25: a 21-residue lariat protoknot</PDBo:citation.title>
             <PDBo:citation.year>2003</PDBo:citation.year>
             <PDBo:link_to_pubmed rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/14531661" rdfs:label="pubmed:14531661"/>
-            <dcterms:references rdf:resource="http://identifiers.org/pubmed:14531661" rdfs:label="pubmed:14531661"/>
+            <dcterms:references rdf:resource="http://identifiers.org/pubmed/14531661" rdfs:label="pubmed:14531661"/>
           </PDBo:citation>
         </PDBo:has_citation>
         <PDBo:has_citation>
@@ -236,7 +236,7 @@
             <PDBo:citation.title>Molecular mechanism of transcription inhibition by peptide antibiotic microcin J25</PDBo:citation.title>
             <PDBo:citation.year>2004</PDBo:citation.year>
             <PDBo:link_to_pubmed rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/15200953" rdfs:label="pubmed:15200953"/>
-            <dcterms:references rdf:resource="http://identifiers.org/pubmed:15200953" rdfs:label="pubmed:15200953"/>
+            <dcterms:references rdf:resource="http://identifiers.org/pubmed/15200953" rdfs:label="pubmed:15200953"/>
           </PDBo:citation>
         </PDBo:has_citation>
         <PDBo:has_citation>
@@ -265,7 +265,7 @@
             <PDBo:citation.title>Posttranslational Modifications in Microcin B17 Define an Additional Class of DNA Gyrase Inhibitor</PDBo:citation.title>
             <PDBo:citation.year>1994</PDBo:citation.year>
             <PDBo:link_to_pubmed rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/8183941" rdfs:label="pubmed:8183941"/>
-            <dcterms:references rdf:resource="http://identifiers.org/pubmed:8183941" rdfs:label="pubmed:8183941"/>
+            <dcterms:references rdf:resource="http://identifiers.org/pubmed/8183941" rdfs:label="pubmed:8183941"/>
           </PDBo:citation>
         </PDBo:has_citation>
       </PDBo:citationCategory>
@@ -1690,7 +1690,7 @@
             <PDBo:pdbx_reference_molecule_annotation.text>Substrate of MccB</PDBo:pdbx_reference_molecule_annotation.text>
             <PDBo:pdbx_reference_molecule_annotation.type>Function</PDBo:pdbx_reference_molecule_annotation.type>
             <PDBo:link_to_pubmed rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/19494832" rdfs:label="pubmed:19494832"/>
-            <dcterms:references rdf:resource="http://identifiers.org/pubmed:19494832" rdfs:label="pubmed:19494832"/>
+            <dcterms:references rdf:resource="http://identifiers.org/pubmed/19494832" rdfs:label="pubmed:19494832"/>
           </PDBo:pdbx_reference_molecule_annotation>
         </PDBo:has_pdbx_reference_molecule_annotation>
         <PDBo:has_pdbx_reference_molecule_annotation>
@@ -1703,7 +1703,7 @@
             <PDBo:pdbx_reference_molecule_annotation.text>Reaction intermediate of MccB</PDBo:pdbx_reference_molecule_annotation.text>
             <PDBo:pdbx_reference_molecule_annotation.type>Function</PDBo:pdbx_reference_molecule_annotation.type>
             <PDBo:link_to_pubmed rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/19494832" rdfs:label="pubmed:19494832"/>
-            <dcterms:references rdf:resource="http://identifiers.org/pubmed:19494832" rdfs:label="pubmed:19494832"/>
+            <dcterms:references rdf:resource="http://identifiers.org/pubmed/19494832" rdfs:label="pubmed:19494832"/>
           </PDBo:pdbx_reference_molecule_annotation>
         </PDBo:has_pdbx_reference_molecule_annotation>
       </PDBo:pdbx_reference_molecule_annotationCategory>
@@ -1738,7 +1738,7 @@
             <PDBo:pdbx_reference_molecule_features.type>External_Reference_ID</PDBo:pdbx_reference_molecule_features.type>
             <PDBo:pdbx_reference_molecule_features.value>Q47505</PDBo:pdbx_reference_molecule_features.value>
             <PDBo:link_to_uniprot rdf:resource="http://purl.uniprot.org/uniprot/Q47505" rdfs:label="uniprot:Q47505"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot:Q47505" rdfs:label="uniprot:Q47505"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/Q47505" rdfs:label="uniprot:Q47505"/>
           </PDBo:pdbx_reference_molecule_features>
         </PDBo:has_pdbx_reference_molecule_features>
         <PDBo:has_pdbx_reference_molecule_features>
@@ -1757,7 +1757,7 @@
             <PDBo:pdbx_reference_molecule_features.type>External_Reference_ID</PDBo:pdbx_reference_molecule_features.type>
             <PDBo:pdbx_reference_molecule_features.value>Q9X2V7</PDBo:pdbx_reference_molecule_features.value>
             <PDBo:link_to_uniprot rdf:resource="http://purl.uniprot.org/uniprot/Q9X2V7" rdfs:label="uniprot:Q9X2V7"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot:Q9X2V7" rdfs:label="uniprot:Q9X2V7"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/Q9X2V7" rdfs:label="uniprot:Q9X2V7"/>
           </PDBo:pdbx_reference_molecule_features>
         </PDBo:has_pdbx_reference_molecule_features>
         <PDBo:has_pdbx_reference_molecule_features>

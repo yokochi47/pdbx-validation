@@ -49,7 +49,7 @@
             <PDBo:pdbx_reference_molecule_annotation.text>inhibitor of Streptopain, EC: 3.4.22.10</PDBo:pdbx_reference_molecule_annotation.text>
             <PDBo:pdbx_reference_molecule_annotation.type>Function</PDBo:pdbx_reference_molecule_annotation.type>
             <PDBo:link_to_pubmed rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/22645124" rdfs:label="pubmed:22645124"/>
-            <dcterms:references rdf:resource="http://identifiers.org/pubmed:22645124" rdfs:label="pubmed:22645124"/>
+            <dcterms:references rdf:resource="http://identifiers.org/pubmed/22645124" rdfs:label="pubmed:22645124"/>
           </PDBo:pdbx_reference_molecule_annotation>
         </PDBo:has_pdbx_reference_molecule_annotation>
       </PDBo:pdbx_reference_molecule_annotationCategory>
@@ -84,7 +84,7 @@
             <PDBo:pdbx_reference_molecule_features.type>External_Reference_ID</PDBo:pdbx_reference_molecule_features.type>
             <PDBo:pdbx_reference_molecule_features.value>70702291</PDBo:pdbx_reference_molecule_features.value>
             <PDBo:link_to_pubchem_substance rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubchem/substance/SID70702291" rdfs:label="pubchem.substance:70702291"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/pubchem.substance:70702291" rdfs:label="pubchem.substance:70702291"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/pubchem.substance/70702291" rdfs:label="pubchem.substance:70702291"/>
           </PDBo:pdbx_reference_molecule_features>
         </PDBo:has_pdbx_reference_molecule_features>
       </PDBo:pdbx_reference_molecule_featuresCategory>

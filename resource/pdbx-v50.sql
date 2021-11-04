@@ -44,8 +44,8 @@
 --
 
 --
--- PDBML Schema v5.351
--- PDBML Schema translated from the PDBx/mmCIF Dictionary v5.351: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
+-- PDBML Schema v5.352
+-- PDBML Schema translated from the PDBx/mmCIF Dictionary v5.352: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
 -- URI-reference = http://pdbml.pdb.org/schema/pdbx-v50.xsd
 --
 
@@ -11252,7 +11252,7 @@ CREATE TABLE pdbx_post_process_status (
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_prd_audit_processing_site CASCADE;
-CREATE TYPE ENUM_pdbx_prd_audit_processing_site AS ENUM ( 'RCSB', 'PDBe', 'PDBJ', 'BMRB', 'PDBC' );
+CREATE TYPE ENUM_pdbx_prd_audit_processing_site AS ENUM ( 'RCSB', 'PDBE', 'PDBJ', 'BMRB', 'PDBC' );
 DROP TYPE IF EXISTS ENUM_pdbx_prd_audit_action_type CASCADE;
 CREATE TYPE ENUM_pdbx_prd_audit_action_type AS ENUM ( 'Initial release', 'Create molecule', 'Modify type', 'Modify class', 'Modify molecule name', 'Modify representation', 'Modify sequence', 'Modify linkage', 'Modify taxonomy organism', 'Modify audit', 'Other modification', 'Obsolete molecule' );
 CREATE TABLE pdbx_prd_audit (

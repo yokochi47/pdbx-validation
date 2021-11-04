@@ -118,22 +118,22 @@
 
   <xsl:template match="PDBx:citation/PDBx:pdbx_database_id_PubMed[text()!='']" mode="linked">
     <PDBo:link_to_pubmed rdf:resource="{$pubmed}{text()}" rdfs:label="pubmed:{text()}"/>
-    <dcterms:references rdf:resource="{$idorg}pubmed:{text()}" rdfs:label="pubmed:{text()}"/>
+    <dcterms:references rdf:resource="{$idorg}pubmed/{text()}" rdfs:label="pubmed:{text()}"/>
   </xsl:template>
 
   <xsl:template match="PDBx:entity_src_gen/PDBx:pdbx_gene_src_ncbi_taxonomy_id[text()!='']" mode="linked">
     <PDBo:link_to_taxonomy_source rdf:resource="{$taxonomy}{text()}" rdfs:label="taxonomy:{text()}"/>
-    <rdfs:seeAlso rdf:resource="{$idorg}taxonomy:{text()}" rdfs:label="taxonomy:{text()}"/>
+    <rdfs:seeAlso rdf:resource="{$idorg}taxonomy/{text()}" rdfs:label="taxonomy:{text()}"/>
   </xsl:template>
 
   <xsl:template match="PDBx:entity_src_gen/PDBx:pdbx_host_org_ncbi_taxonomy_id[text()!='']" mode="linked">
     <PDBo:link_to_taxonomy_host rdf:resource="{$taxonomy}{text()}" rdfs:label="taxonomy:{text()}"/>
-    <rdfs:seeAlso rdf:resource="{$idorg}taxonomy:{text()}" rdfs:label="taxonomy:{text()}"/>
+    <rdfs:seeAlso rdf:resource="{$idorg}taxonomy/{text()}" rdfs:label="taxonomy:{text()}"/>
   </xsl:template>
 
   <xsl:template match="PDBx:entity_src_nat/PDBx:pdbx_ncbi_taxonomy_id[text()!='']" mode="linked">
     <PDBo:link_to_taxonomy_source rdf:resource="{$taxonomy}{text()}" rdfs:label="taxonomy:{text()}"/>
-    <rdfs:seeAlso rdf:resource="{$idorg}taxonomy:{text()}" rdfs:label="taxonomy:{text()}"/>
+    <rdfs:seeAlso rdf:resource="{$idorg}taxonomy/{text()}" rdfs:label="taxonomy:{text()}"/>
   </xsl:template>
 
   <xsl:template match="PDBx:entity/PDBx:pdbx_ec[text()!='']" mode="linked">
@@ -149,7 +149,7 @@
         <xsl:variable name="ec"><xsl:value-of select="normalize-space(text())"/></xsl:variable>
         <xsl:if test="string-length($ec)!=0">
           <PDBo:link_to_enzyme rdf:resource="{$enzyme}{$ec}" rdfs:label="enzyme:{$ec}"/>
-          <rdfs:seeAlso rdf:resource="{$idorg}ec-code:{$ec}" rdfs:label="ec-code:{$ec}"/>
+          <rdfs:seeAlso rdf:resource="{$idorg}ec-code/{$ec}" rdfs:label="ec-code:{$ec}"/>
         </xsl:if>
       </xsl:for-each>
     </xsl:if>
@@ -198,27 +198,32 @@
 
   <xsl:template match="PDBx:pdbx_reference_entity_poly/PDBx:db_code[../PDBx:db_name='UNP' and text()!='']" mode="linked">
     <PDBo:link_to_uniprot rdf:resource="{$uniprot}{text()}" rdfs:label="uniprot:{text()}"/>
-    <rdfs:seeAlso rdf:resource="{$idorg}uniprot:{text()}" rdfs:label="uniprot:{text()}"/>
+    <rdfs:seeAlso rdf:resource="{$idorg}uniprot/{text()}" rdfs:label="uniprot:{text()}"/>
   </xsl:template>
 
   <xsl:template match="PDBx:pdbx_reference_entity_poly/PDBx:db_code[../PDBx:db_name='NOR' and text()!='']" mode="linked">
     <PDBo:link_to_norine rdf:resource="{$norine}{text()}" rdfs:label="norine:{text()}"/>
-    <rdfs:seeAlso rdf:resource="{$idorg}norine:{text()}" rdfs:label="norine:{text()}"/>
+    <rdfs:seeAlso rdf:resource="{$idorg}norine/{text()}" rdfs:label="norine:{text()}"/>
   </xsl:template>
 
   <xsl:template match="PDBx:pdbx_reference_entity_src_nat/PDBx:db_code[(../PDBx:db_name='UNP' or ../PDBx:db_name='UniProtKB' or ../PDBx:db_name='UniProt') and text()!='']" mode="linked">
     <PDBo:link_to_uniprot rdf:resource="{$uniprot}{text()}" rdfs:label="uniprot:{text()}"/>
-    <rdfs:seeAlso rdf:resource="{$idorg}uniprot:{text()}" rdfs:label="uniprot:{text()}"/>
+    <rdfs:seeAlso rdf:resource="{$idorg}uniprot/{text()}" rdfs:label="uniprot:{text()}"/>
   </xsl:template>
 
   <xsl:template match="PDBx:pdbx_reference_entity_src_nat/PDBx:db_code[(../PDBx:db_name='NORINE' or ../PDBx:db_name='Norine' or ../PDBx:db_name='  Norine') and text()!='']" mode="linked">
     <PDBo:link_to_norine rdf:resource="{$norine}{text()}" rdfs:label="norine:{text()}"/>
-    <rdfs:seeAlso rdf:resource="{$idorg}norine:{text()}" rdfs:label="norine:{text()}"/>
+    <rdfs:seeAlso rdf:resource="{$idorg}norine/{text()}" rdfs:label="norine:{text()}"/>
   </xsl:template>
 
-  <xsl:template match="PDBx:pdbx_reference_entity_src_nat/PDBx:db_code[../PDBx:db_name='KEGG' and text()!='']" mode="linked">
+  <xsl:template match="PDBx:pdbx_reference_entity_src_nat/PDBx:db_code[../PDBx:db_name='KEGG' and substring(text(),1,1)='C']" mode="linked">
     <PDBo:link_to_kegg_comp rdf:resource="{$kegg_comp}{text()}" rdfs:label="kegg.compound:{text()}"/>
-    <rdfs:seeAlso rdf:resource="{$idorg}kegg.compound:{text()}" rdfs:label="kegg.compound:{text()}"/>
+    <rdfs:seeAlso rdf:resource="{$idorg}kegg.compound/{text()}" rdfs:label="kegg.compound:{text()}"/>
+  </xsl:template>
+
+  <xsl:template match="PDBx:pdbx_reference_entity_src_nat/PDBx:db_code[../PDBx:db_name='KEGG' and substring(text(),1,1)='D']" mode="linked">
+    <PDBo:link_to_kegg_drug rdf:resource="{$kegg_drug}{text()}" rdfs:label="kegg.drug:{text()}"/>
+    <rdfs:seeAlso rdf:resource="{$idorg}kegg.drug/{text()}" rdfs:label="kegg.drug:{text()}"/>
   </xsl:template>
 
   <xsl:template match="PDBx:pdbx_reference_entity_src_nat/PDBx:db_code[../PDBx:db_name='NADB' and text()!='']" mode="linked">
@@ -238,12 +243,12 @@
 
   <xsl:template match="PDBx:pdbx_reference_entity_src_nat/PDBx:taxid[text()!='']" mode="linked">
     <PDBo:link_to_taxonomy_source rdf:resource="{$taxonomy}{text()}" rdfs:label="taxonomy:{text()}"/>
-    <rdfs:seeAlso rdf:resource="{$idorg}taxonomy:{text()}" rdfs:label="taxonomy:{text()}"/>
+    <rdfs:seeAlso rdf:resource="{$idorg}taxonomy/{text()}" rdfs:label="taxonomy:{text()}"/>
   </xsl:template>
 
   <xsl:template match="PDBx:pdbx_reference_molecule_related_structures/PDBx:db_accession[../PDBx:db_name='CCDC' and text()!='']" mode="linked">
     <PDBo:link_to_ccdc rdf:resource="{$ccdc_num}{text()}" rdfs:label="ccdc:{text()}"/>
-    <rdfs:seeAlso rdf:resource="{$idorg}ccdc:{text()}" rdfs:label="ccdc:{text()}"/>
+    <rdfs:seeAlso rdf:resource="{$idorg}ccdc/{text()}" rdfs:label="ccdc:{text()}"/>
   </xsl:template>
 
   <xsl:template match="PDBx:pdbx_reference_molecule_related_structures/PDBx:db_code[../PDBx:db_name='CCDC' and text()!='']" mode="linked">
@@ -253,7 +258,7 @@
   <xsl:template match="PDBx:pdbx_reference_molecule_annotation/PDBx:source[starts-with(text(),'PMID:')]" mode="linked">
     <xsl:variable name="code"><xsl:value-of select="substring-after(text(),':')"/></xsl:variable>
     <PDBo:link_to_pubmed rdf:resource="{$pubmed}{$code}" rdfs:label="pubmed:{$code}"/>
-    <dcterms:references rdf:resource="{$idorg}pubmed:{$code}" rdfs:label="pubmed:{$code}"/>
+    <dcterms:references rdf:resource="{$idorg}pubmed/{$code}" rdfs:label="pubmed:{$code}"/>
   </xsl:template>
 
   <xsl:template match="PDBx:pdbx_reference_molecule_annotation/PDBx:source[starts-with(text(),'DOI:')]" mode="linked">
@@ -263,17 +268,17 @@
 
   <xsl:template match="PDBx:pdbx_reference_molecule_features/PDBx:value[../PDBx:source='PubChem' and text()!='']" mode="linked">
     <PDBo:link_to_pubchem_substance rdf:resource="{$pubchem.substance}{text()}" rdfs:label="pubchem.substance:{text()}"/>
-    <rdfs:seeAlso rdf:resource="{$idorg}pubchem.substance:{text()}" rdfs:label="pubchem.substance:{text()}"/>
+    <rdfs:seeAlso rdf:resource="{$idorg}pubchem.substance/{text()}" rdfs:label="pubchem.substance:{text()}"/>
   </xsl:template>
 
   <xsl:template match="PDBx:pdbx_reference_molecule_features/PDBx:value[../PDBx:source='ChemSpider' and text()!='']" mode="linked">
     <PDBo:link_to_chemspider rdf:resource="{$chemspider}{text()}.html" rdfs:label="chemspider:{text()}"/>
-    <rdfs:seeAlso rdf:resource="{$idorg}chemspider:{text()}" rdfs:label="chemspider:{text()}"/>
+    <rdfs:seeAlso rdf:resource="{$idorg}chemspider/{text()}" rdfs:label="chemspider:{text()}"/>
   </xsl:template>
 
   <xsl:template match="PDBx:pdbx_reference_molecule_features/PDBx:value[../PDBx:source='CAS' and text()!='']" mode="linked">
     <PDBo:link_to_cas rdf:resource="{$cas}{text()}" rdfs:label="cas:{text()}"/>
-    <rdfs:seeAlso rdf:resource="{$idorg}cas:{text()}" rdfs:label="cas:{text()}"/>
+    <rdfs:seeAlso rdf:resource="{$idorg}cas/{text()}" rdfs:label="cas:{text()}"/>
   </xsl:template>
 
   <xsl:template match="PDBx:pdbx_reference_molecule_features/PDBx:value[(../PDBx:source='ChEBI' or ../PDBx:source='CHEBI') and text()!='']" mode="linked">
@@ -282,14 +287,26 @@
   </xsl:template>
 
   <xsl:template match="PDBx:pdbx_reference_molecule_features/PDBx:value[(../PDBx:source='MeSH' or ../PDBx:source='MESH') and text()!='']" mode="linked">
-    <PDBo:link_to_mesh rdf:resource="{$mesh}{text()}" rdfs:label="mesh:{text()}"/>
-    <rdfs:seeAlso rdf:resource="{$idorg}mesh:{text()}" rdfs:label="mesh:{text()}"/>
+    <xsl:choose>
+      <xsl:when test="contains(text(),'.')">
+        <PDBo:link_to_mesh rdf:resource="{$mesh}{text()}" rdfs:label="mesh.tree:{text()}"/>
+      </xsl:when>
+      <xsl:otherwise>
+        <PDBo:link_to_mesh rdf:resource="{$mesh}{text()}" rdfs:label="mesh:{text()}"/>
+        <rdfs:seeAlso rdf:resource="{$idorg}mesh/{text()}" rdfs:label="mesh:{text()}"/>
+      </xsl:otherwise>
+    </xsl:choose>
+  </xsl:template>
+
+  <xsl:template match="PDBx:pdbx_reference_molecule_features/PDBx:value[../PDBx:source='ChemIDplus' and contains(text(),'-')]" mode="linked">
+    <PDBo:link_to_chemidplus rdf:resource="{$chemidplus}{text()}" rdfs:label="chemidplus:{text()}"/>
+    <rdfs:seeAlso rdf:resource="{$idorg}chemidplus/{text()}" rdfs:label="chemidplus:{text()}"/>
   </xsl:template>
 
   <xsl:template match="PDBx:pdbx_reference_molecule_features/PDBx:value[(../PDBx:source='ChEMBL' or ../PDBx:source='CHEMBL') and text()!='']" mode="linked">
     <xsl:variable name="code"><xsl:value-of select="concat('CHEMBL',text())"/></xsl:variable>
     <PDBo:link_to_chembl rdf:resource="{$chembl}{$code}" rdfs:label="chembl:{$code}"/>
-    <rdfs:seeAlso rdf:resource="{$idorg}chembl:{$code}" rdfs:label="chembl:{$code}"/>
+    <rdfs:seeAlso rdf:resource="{$idorg}chembl/{$code}" rdfs:label="chembl:{$code}"/>
   </xsl:template>
 
   <xsl:template match="PDBx:pdbx_reference_molecule_features/PDBx:value[../PDBx:source='BindingDB' and text()!='']" mode="linked">
@@ -298,27 +315,27 @@
 
   <xsl:template match="PDBx:pdbx_reference_molecule_features/PDBx:value[../PDBx:source='DrugBank' and text()!='']" mode="linked">
     <PDBo:link_to_drugbank rdf:resource="{$drugbank}{text()}" rdfs:label="drugbank:{text()}"/>
-    <rdfs:seeAlso rdf:resource="{$idorg}drugbank:{text()}" rdfs:label="drugbank:{text()}"/>
+    <rdfs:seeAlso rdf:resource="{$idorg}drugbank/{text()}" rdfs:label="drugbank:{text()}"/>
   </xsl:template>
 
   <xsl:template match="PDBx:pdbx_reference_molecule_features/PDBx:value[../PDBx:source='KEGG' and ../PDBx:type='KEGG_Compound_ID' and text()!='']" mode="linked">
     <PDBo:link_to_kegg_comp rdf:resource="{$kegg_comp}{text()}" rdfs:label="kegg.compound:{text()}"/>
-    <rdfs:seeAlso rdf:resource="{$idorg}kegg.compound:{text()}" rdfs:label="kegg.compound:{text()}"/>
+    <rdfs:seeAlso rdf:resource="{$idorg}kegg.compound/{text()}" rdfs:label="kegg.compound:{text()}"/>
   </xsl:template>
 
   <xsl:template match="PDBx:pdbx_reference_molecule_features/PDBx:value[../PDBx:source='KEGG' and ../PDBx:type='KEGG_Drug_ID' and text()!='']" mode="linked">
     <PDBo:link_to_kegg_drug rdf:resource="{$kegg_drug}{text()}" rdfs:label="kegg.drug:{text()}"/>
-    <rdfs:seeAlso rdf:resource="{$idorg}kegg.drug:{text()}" rdfs:label="kegg.drug:{text()}"/>
+    <rdfs:seeAlso rdf:resource="{$idorg}kegg.drug/{text()}" rdfs:label="kegg.drug:{text()}"/>
   </xsl:template>
 
   <xsl:template match="PDBx:pdbx_reference_molecule_features/PDBx:value[../PDBx:source='ChemDB' and text()!='']" mode="linked">
     <PDBo:link_to_chemdb rdf:resource="{$chemdb}{text()}" rdfs:label="chemdb:{text()}"/>
-    <rdfs:seeAlso rdf:resource="{$idorg}chemdb:{text()}" rdfs:label="chemdb:{text()}"/>
+    <rdfs:seeAlso rdf:resource="{$idorg}chemdb/{text()}" rdfs:label="chemdb:{text()}"/>
   </xsl:template>
 
   <xsl:template match="PDBx:pdbx_reference_molecule_features/PDBx:value[../PDBx:source='Norine' and text()!='']" mode="linked">
     <PDBo:link_to_norine rdf:resource="{$norine}{text()}" rdfs:label="norine:{text()}"/>
-    <rdfs:seeAlso rdf:resource="{$idorg}norine:{text()}" rdfs:label="norine:{text()}"/>
+    <rdfs:seeAlso rdf:resource="{$idorg}norine/{text()}" rdfs:label="norine:{text()}"/>
   </xsl:template>
 
   <xsl:template match="PDBx:pdbx_reference_molecule_features/PDBx:value[../PDBx:source='NovelAntibiotics' and text()!='']" mode="linked">
@@ -327,7 +344,7 @@
 
   <xsl:template match="PDBx:pdbx_reference_molecule_features/PDBx:value[../PDBx:source='UniProt' and text()!='']" mode="linked">
     <PDBo:link_to_uniprot rdf:resource="{$uniprot}{text()}" rdfs:label="uniprot:{text()}"/>
-    <rdfs:seeAlso rdf:resource="{$idorg}uniprot:{text()}" rdfs:label="uniprot:{text()}"/>
+    <rdfs:seeAlso rdf:resource="{$idorg}uniprot/{text()}" rdfs:label="uniprot:{text()}"/>
   </xsl:template>
 
   <!-- level-3 templates follow -->

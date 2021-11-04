@@ -1,10 +1,10 @@
 ###########################################################################
 #
 # File:  mmcif_pdbx_validation-v4.dic
-# Date:  Thu Oct 21 16:05:57 JST 2021
+# Date:  Thu Nov  4 09:45:56 JST 2021
 #
 # Created from:
-#        mmcif_pdbx_v50.dic   - PDB Exchange Data Dictionary (V5.351)
+#        mmcif_pdbx_v50.dic   - PDB Exchange Data Dictionary (V5.352)
 #        http://wwpdb.org/validation/schema/wwpdb_validation_v6.00.xsd
 #         - a XML schema for wwPDB validation reports, v6.00, rev. 2021-01-22
 #
@@ -31,7 +31,7 @@ data_mmcif_pdbx_validation.dic
 
     _dictionary.title           mmcif_pdbx_validation.dic
     _dictionary.datablock_id    mmcif_pdbx_validation.dic
-    _dictionary.version         4.351
+    _dictionary.version         4.352
 #
     loop_
     _dictionary_history.version
@@ -955,7 +955,14 @@ data_mmcif_pdbx_validation.dic
 >     + Add IPET and TomoAlign to _em_software.name enumeration # merged
 >     + Change pdx_item_tye for _pdbx_struct_ref_seq_depositor_info.db_seq_one_letter_code # not mapped
 ;
-
+  4.352   2021-11-04
+;
+>     + pdbx_prd_audit.processing_site enumeration change PDBe to PDBE to be consistent with rest of dictionary. # not mapped
+>     + Extend _pdbx_audit_support.funding_organization enumeration. # not mapped
+>     + _refine.ls_R_factor_R_free and _refine.ls_R_factor_obs remove over broad advisory range # merged
+>     + Add "RIGAKU PhotonJet-R" to _diffrn_source.type enumeration # merged
+>     + Enhance pdb_id and support PDB extented codes # merged
+;
 
 #
 ###########################################################################
@@ -1343,7 +1350,7 @@ data_mmcif_pdbx_validation.dic
 ;
                positive_int        numb '[1-9][0-9]*'       'Positive integers (1,2,3,..)'
                emd_id              char 'EMD-[0-9]{4,}'     'EMDB code'
-               pdb_id              char '[1-9][A-Z0-9][A-Z0-9][A-Z0-9]' 'PDB code (upper cases)'
+               pdb_id              char '([1-9][A-Z0-9]{3}|PDB_[A-Z0-9]{8})' 'PDB code (upper cases)'
                point_group         char '(C[1-9][0-9]*|D[2-9]|D[1-9][0-9]+|O|T|I)' 'Point group symmetry in Schoenflies notation'
                point_group_helical char '[CD][1-9][0-9]*' 'Point group symmetry for helices in Schoenflies notation'
                boolean char 'YES|NO' 'Boolean type'
@@ -4474,6 +4481,7 @@ save__diffrn_source.type
      "_diffrn_source.type"  "RIGAKU MICROMAX-003"                            "SEALED TUBE"
      "_diffrn_source.type"  "RIGAKU MICROMAX-007"                            "ROTATING ANODE"
      "_diffrn_source.type"  "RIGAKU MICROMAX-007 HF"                         "ROTATING ANODE"
+     "_diffrn_source.type"  "RIGAKU PhotonJet-R"                             "ROTATING ANODE"
      "_diffrn_source.type"  "RIGAKU R-AXIS"                                  "ROTATING ANODE"
      "_diffrn_source.type"  "RIGAKU R-AXIS II"                               "ROTATING ANODE"
      "_diffrn_source.type"  "RIGAKU R-AXIS IV"                               "ROTATING ANODE"
@@ -10496,9 +10504,6 @@ save__refine.ls_R_factor_obs
       "_refine.ls_R_factor_obs"  0.1  0.1
       "_refine.ls_R_factor_obs"  0.1  0.3
       "_refine.ls_R_factor_obs"  0.3  0.3
-      "_refine.ls_R_factor_obs"    0    0
-      "_refine.ls_R_factor_obs"    0    1
-      "_refine.ls_R_factor_obs"    1    1
     #
     _item_related.related_name  '_refine.ls_wR_factor_obs'
     _item_related.function_code   alternate
@@ -10556,9 +10561,6 @@ save__refine.ls_R_factor_R_free
       "_refine.ls_R_factor_R_free"  0.1  0.1
       "_refine.ls_R_factor_R_free"  0.1  0.4
       "_refine.ls_R_factor_R_free"  0.4  0.4
-      "_refine.ls_R_factor_R_free"    0    0
-      "_refine.ls_R_factor_R_free"    0    1
-      "_refine.ls_R_factor_R_free"    1    1
 #
     _pdbx_item_aliases.xpath     '/wwPDB-validation-information/Entry/@PDB-Rfree'
     _pdbx_item_aliases.schema     wwpdb_validation_v6.00.xsd

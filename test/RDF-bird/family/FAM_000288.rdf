@@ -49,7 +49,7 @@
             <PDBo:pdbx_reference_molecule_annotation.text>Inhibitor of ENDOTHIAPEPSIN, EC: 3.4.23.22</PDBo:pdbx_reference_molecule_annotation.text>
             <PDBo:pdbx_reference_molecule_annotation.type>Function</PDBo:pdbx_reference_molecule_annotation.type>
             <PDBo:link_to_pubmed rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/1304340" rdfs:label="pubmed:1304340"/>
-            <dcterms:references rdf:resource="http://identifiers.org/pubmed:1304340" rdfs:label="pubmed:1304340"/>
+            <dcterms:references rdf:resource="http://identifiers.org/pubmed/1304340" rdfs:label="pubmed:1304340"/>
           </PDBo:pdbx_reference_molecule_annotation>
         </PDBo:has_pdbx_reference_molecule_annotation>
         <PDBo:has_pdbx_reference_molecule_annotation>
@@ -62,7 +62,7 @@
             <PDBo:pdbx_reference_molecule_annotation.text>Inhibitor of ENDOTHIAPEPSIN, EC: 3.4.23.22</PDBo:pdbx_reference_molecule_annotation.text>
             <PDBo:pdbx_reference_molecule_annotation.type>Function</PDBo:pdbx_reference_molecule_annotation.type>
             <PDBo:link_to_pubmed rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/12083527" rdfs:label="pubmed:12083527"/>
-            <dcterms:references rdf:resource="http://identifiers.org/pubmed:12083527" rdfs:label="pubmed:12083527"/>
+            <dcterms:references rdf:resource="http://identifiers.org/pubmed/12083527" rdfs:label="pubmed:12083527"/>
           </PDBo:pdbx_reference_molecule_annotation>
         </PDBo:has_pdbx_reference_molecule_annotation>
         <PDBo:has_pdbx_reference_molecule_annotation>
@@ -86,7 +86,7 @@
             <PDBo:pdbx_reference_molecule_annotation.text>Inhibitor of ENDOTHIAPEPSIN, EC: 3.4.23.22</PDBo:pdbx_reference_molecule_annotation.text>
             <PDBo:pdbx_reference_molecule_annotation.type>Function</PDBo:pdbx_reference_molecule_annotation.type>
             <PDBo:link_to_pubmed rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/8254610" rdfs:label="pubmed:8254610"/>
-            <dcterms:references rdf:resource="http://identifiers.org/pubmed:8254610" rdfs:label="pubmed:8254610"/>
+            <dcterms:references rdf:resource="http://identifiers.org/pubmed/8254610" rdfs:label="pubmed:8254610"/>
           </PDBo:pdbx_reference_molecule_annotation>
         </PDBo:has_pdbx_reference_molecule_annotation>
       </PDBo:pdbx_reference_molecule_annotationCategory>
@@ -121,7 +121,7 @@
             <PDBo:pdbx_reference_molecule_features.type>External_reference_ID</PDBo:pdbx_reference_molecule_features.type>
             <PDBo:pdbx_reference_molecule_features.value>445400</PDBo:pdbx_reference_molecule_features.value>
             <PDBo:link_to_pubchem_substance rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubchem/substance/SID445400" rdfs:label="pubchem.substance:445400"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/pubchem.substance:445400" rdfs:label="pubchem.substance:445400"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/pubchem.substance/445400" rdfs:label="pubchem.substance:445400"/>
           </PDBo:pdbx_reference_molecule_features>
         </PDBo:has_pdbx_reference_molecule_features>
         <PDBo:has_pdbx_reference_molecule_features>
@@ -140,7 +140,7 @@
             <PDBo:pdbx_reference_molecule_features.type>External_reference_ID</PDBo:pdbx_reference_molecule_features.type>
             <PDBo:pdbx_reference_molecule_features.value>393051</PDBo:pdbx_reference_molecule_features.value>
             <PDBo:link_to_chemspider rdf:resource="http://www.chemspider.com/Chemical-Structure.393051.html" rdfs:label="chemspider:393051"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/chemspider:393051" rdfs:label="chemspider:393051"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/chemspider/393051" rdfs:label="chemspider:393051"/>
           </PDBo:pdbx_reference_molecule_features>
         </PDBo:has_pdbx_reference_molecule_features>
         <PDBo:has_pdbx_reference_molecule_features>
@@ -159,7 +159,7 @@
             <PDBo:pdbx_reference_molecule_features.type>MeSH_Unique_ID</PDBo:pdbx_reference_molecule_features.type>
             <PDBo:pdbx_reference_molecule_features.value>C076964</PDBo:pdbx_reference_molecule_features.value>
             <PDBo:link_to_mesh rdf:resource="http://id.nlm.nih.gov/mesh/C076964" rdfs:label="mesh:C076964"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/mesh:C076964" rdfs:label="mesh:C076964"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/mesh/C076964" rdfs:label="mesh:C076964"/>
           </PDBo:pdbx_reference_molecule_features>
         </PDBo:has_pdbx_reference_molecule_features>
         <PDBo:has_pdbx_reference_molecule_features>
@@ -195,7 +195,7 @@
             <PDBo:pdbx_reference_molecule_features.type>KEGG_Drug_ID</PDBo:pdbx_reference_molecule_features.type>
             <PDBo:pdbx_reference_molecule_features.value>D03743</PDBo:pdbx_reference_molecule_features.value>
             <PDBo:link_to_kegg_drug rdf:resource="http://www.kegg.jp/entry/D03743" rdfs:label="kegg.drug:D03743"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/kegg.drug:D03743" rdfs:label="kegg.drug:D03743"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/kegg.drug/D03743" rdfs:label="kegg.drug:D03743"/>
           </PDBo:pdbx_reference_molecule_features>
         </PDBo:has_pdbx_reference_molecule_features>
         <PDBo:has_pdbx_reference_molecule_features>
@@ -214,7 +214,7 @@
             <PDBo:pdbx_reference_molecule_features.type>External_reference_ID</PDBo:pdbx_reference_molecule_features.type>
             <PDBo:pdbx_reference_molecule_features.value>64922</PDBo:pdbx_reference_molecule_features.value>
             <PDBo:link_to_pubchem_substance rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubchem/substance/SID64922" rdfs:label="pubchem.substance:64922"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/pubchem.substance:64922" rdfs:label="pubchem.substance:64922"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/pubchem.substance/64922" rdfs:label="pubchem.substance:64922"/>
           </PDBo:pdbx_reference_molecule_features>
         </PDBo:has_pdbx_reference_molecule_features>
         <PDBo:has_pdbx_reference_molecule_features>
@@ -233,7 +233,7 @@
             <PDBo:pdbx_reference_molecule_features.type>External_reference_ID</PDBo:pdbx_reference_molecule_features.type>
             <PDBo:pdbx_reference_molecule_features.value>58451</PDBo:pdbx_reference_molecule_features.value>
             <PDBo:link_to_chemspider rdf:resource="http://www.chemspider.com/Chemical-Structure.58451.html" rdfs:label="chemspider:58451"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/chemspider:58451" rdfs:label="chemspider:58451"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/chemspider/58451" rdfs:label="chemspider:58451"/>
           </PDBo:pdbx_reference_molecule_features>
         </PDBo:has_pdbx_reference_molecule_features>
         <PDBo:has_pdbx_reference_molecule_features>
@@ -252,7 +252,7 @@
             <PDBo:pdbx_reference_molecule_features.type>External_reference_ID</PDBo:pdbx_reference_molecule_features.type>
             <PDBo:pdbx_reference_molecule_features.value>119625-78-4</PDBo:pdbx_reference_molecule_features.value>
             <PDBo:link_to_cas rdf:resource="http://commonchemistry.cas.org/detail?ref=119625-78-4" rdfs:label="cas:119625-78-4"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/cas:119625-78-4" rdfs:label="cas:119625-78-4"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/cas/119625-78-4" rdfs:label="cas:119625-78-4"/>
           </PDBo:pdbx_reference_molecule_features>
         </PDBo:has_pdbx_reference_molecule_features>
         <PDBo:has_pdbx_reference_molecule_features>
@@ -307,7 +307,7 @@
             <PDBo:pdbx_reference_molecule_features.type>External_reference_ID</PDBo:pdbx_reference_molecule_features.type>
             <PDBo:pdbx_reference_molecule_features.value>15018015</PDBo:pdbx_reference_molecule_features.value>
             <PDBo:link_to_pubchem_substance rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubchem/substance/SID15018015" rdfs:label="pubchem.substance:15018015"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/pubchem.substance:15018015" rdfs:label="pubchem.substance:15018015"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/pubchem.substance/15018015" rdfs:label="pubchem.substance:15018015"/>
           </PDBo:pdbx_reference_molecule_features>
         </PDBo:has_pdbx_reference_molecule_features>
       </PDBo:pdbx_reference_molecule_featuresCategory>

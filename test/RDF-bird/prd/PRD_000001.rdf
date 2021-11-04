@@ -124,7 +124,7 @@
             <PDBo:pdbx_reference_entity_poly.db_name>NOR</PDBo:pdbx_reference_entity_poly.db_name>
             <PDBo:pdbx_reference_entity_poly.type>peptide-like</PDBo:pdbx_reference_entity_poly.type>
             <PDBo:link_to_norine rdf:resource="http://bioinfo.lifl.fr/norine/result.jsp?ID=NOR00228" rdfs:label="norine:NOR00228"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/norine:NOR00228" rdfs:label="norine:NOR00228"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/norine/NOR00228" rdfs:label="norine:NOR00228"/>
           </PDBo:pdbx_reference_entity_poly>
         </PDBo:has_pdbx_reference_entity_poly>
       </PDBo:pdbx_reference_entity_polyCategory>
@@ -681,10 +681,10 @@
             <PDBo:pdbx_reference_entity_src_nat.db_name>KEGG</PDBo:pdbx_reference_entity_src_nat.db_name>
             <PDBo:pdbx_reference_entity_src_nat.organism_scientific>Streptomyces parvulus</PDBo:pdbx_reference_entity_src_nat.organism_scientific>
             <PDBo:pdbx_reference_entity_src_nat.taxid>146923</PDBo:pdbx_reference_entity_src_nat.taxid>
-            <PDBo:link_to_kegg_comp rdf:resource="http://www.kegg.jp/entry/D00214" rdfs:label="kegg.compound:D00214"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/kegg.compound:D00214" rdfs:label="kegg.compound:D00214"/>
+            <PDBo:link_to_kegg_drug rdf:resource="http://www.kegg.jp/entry/D00214" rdfs:label="kegg.drug:D00214"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/kegg.drug/D00214" rdfs:label="kegg.drug:D00214"/>
             <PDBo:link_to_taxonomy_source rdf:resource="http://purl.uniprot.org/taxonomy/146923" rdfs:label="taxonomy:146923"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/taxonomy:146923" rdfs:label="taxonomy:146923"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/taxonomy/146923" rdfs:label="taxonomy:146923"/>
           </PDBo:pdbx_reference_entity_src_nat>
         </PDBo:has_pdbx_reference_entity_src_nat>
         <PDBo:has_pdbx_reference_entity_src_nat>
@@ -697,7 +697,7 @@
             <PDBo:pdbx_reference_entity_src_nat.db_name>KEGG</PDBo:pdbx_reference_entity_src_nat.db_name>
             <PDBo:pdbx_reference_entity_src_nat.organism_scientific>Streptomyces chrysomallus</PDBo:pdbx_reference_entity_src_nat.organism_scientific>
             <PDBo:link_to_kegg_comp rdf:resource="http://www.kegg.jp/entry/C06770" rdfs:label="kegg.compound:C06770"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/kegg.compound:C06770" rdfs:label="kegg.compound:C06770"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/kegg.compound/C06770" rdfs:label="kegg.compound:C06770"/>
           </PDBo:pdbx_reference_entity_src_nat>
         </PDBo:has_pdbx_reference_entity_src_nat>
         <PDBo:has_pdbx_reference_entity_src_nat>
@@ -711,9 +711,9 @@
             <PDBo:pdbx_reference_entity_src_nat.organism_scientific>Streptomyces anulatus</PDBo:pdbx_reference_entity_src_nat.organism_scientific>
             <PDBo:pdbx_reference_entity_src_nat.taxid>1892</PDBo:pdbx_reference_entity_src_nat.taxid>
             <PDBo:link_to_norine rdf:resource="http://bioinfo.lifl.fr/norine/result.jsp?ID=NOR00228" rdfs:label="norine:NOR00228"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/norine:NOR00228" rdfs:label="norine:NOR00228"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/norine/NOR00228" rdfs:label="norine:NOR00228"/>
             <PDBo:link_to_taxonomy_source rdf:resource="http://purl.uniprot.org/taxonomy/1892" rdfs:label="taxonomy:1892"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/taxonomy:1892" rdfs:label="taxonomy:1892"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/taxonomy/1892" rdfs:label="taxonomy:1892"/>
           </PDBo:pdbx_reference_entity_src_nat>
         </PDBo:has_pdbx_reference_entity_src_nat>
         <PDBo:has_pdbx_reference_entity_src_nat>
@@ -727,9 +727,9 @@
             <PDBo:pdbx_reference_entity_src_nat.organism_scientific>Streptomyces antibioticus</PDBo:pdbx_reference_entity_src_nat.organism_scientific>
             <PDBo:pdbx_reference_entity_src_nat.taxid>1890</PDBo:pdbx_reference_entity_src_nat.taxid>
             <PDBo:link_to_norine rdf:resource="http://bioinfo.lifl.fr/norine/result.jsp?ID=NOR00228" rdfs:label="norine:NOR00228"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/norine:NOR00228" rdfs:label="norine:NOR00228"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/norine/NOR00228" rdfs:label="norine:NOR00228"/>
             <PDBo:link_to_taxonomy_source rdf:resource="http://purl.uniprot.org/taxonomy/1890" rdfs:label="taxonomy:1890"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/taxonomy:1890" rdfs:label="taxonomy:1890"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/taxonomy/1890" rdfs:label="taxonomy:1890"/>
           </PDBo:pdbx_reference_entity_src_nat>
         </PDBo:has_pdbx_reference_entity_src_nat>
         <PDBo:has_pdbx_reference_entity_src_nat>
@@ -743,9 +743,9 @@
             <PDBo:pdbx_reference_entity_src_nat.organism_scientific>Streptomyces parvulus</PDBo:pdbx_reference_entity_src_nat.organism_scientific>
             <PDBo:pdbx_reference_entity_src_nat.taxid>146923</PDBo:pdbx_reference_entity_src_nat.taxid>
             <PDBo:link_to_norine rdf:resource="http://bioinfo.lifl.fr/norine/result.jsp?ID=NOR00228" rdfs:label="norine:NOR00228"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/norine:NOR00228" rdfs:label="norine:NOR00228"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/norine/NOR00228" rdfs:label="norine:NOR00228"/>
             <PDBo:link_to_taxonomy_source rdf:resource="http://purl.uniprot.org/taxonomy/146923" rdfs:label="taxonomy:146923"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/taxonomy:146923" rdfs:label="taxonomy:146923"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/taxonomy/146923" rdfs:label="taxonomy:146923"/>
           </PDBo:pdbx_reference_entity_src_nat>
         </PDBo:has_pdbx_reference_entity_src_nat>
       </PDBo:pdbx_reference_entity_src_natCategory>
