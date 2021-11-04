@@ -177,11 +177,11 @@ File path | Document
 
 ## Release notes
 
---**Nov 4, 2021**: Release v4.4.2
+-**Nov 4, 2021**: Release v4.4.2
 	- Update wwPDB Validation Information Dictionary to 4.352.
 	- Revert RDF link pattern to identifiers.org.
 
---**Oct 21, 2021**: Release v4.4.1
+-**Oct 21, 2021**: Release v4.4.1
 	- Update wwPDB Validation Information Dictionary to 4.351.
 
 - **Sep 30, 2021**: Release v4.4.0
