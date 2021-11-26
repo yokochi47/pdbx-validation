@@ -15237,8 +15237,8 @@ INGRNNLIQQKN</PDBo:struct_ref.pdbx_seq_one_letter_code>
             <PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>GO:0046872</PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>
             <PDBo:pdbx_sifts_xref_db_segments.segment_id>1</PDBo:pdbx_sifts_xref_db_segments.segment_id>
             <PDBo:pdbx_sifts_xref_db_segments.instance_id>1</PDBo:pdbx_sifts_xref_db_segments.instance_id>
-            <PDBo:link_to_go rdf:resource="http://amigo.geneontology.org/amigo/term/GO:0046872" rdfs:label="GO:0046872"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/GO:0046872" rdfs:label="GO:0046872"/>
+            <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_0046872" rdfs:label="GO:0046872"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:0046872" rdfs:label="GO:0046872"/>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start>1</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end>92</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
           </PDBo:pdbx_sifts_xref_db_segments>

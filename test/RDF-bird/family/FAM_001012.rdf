@@ -627,8 +627,8 @@
             <PDBo:pdbx_reference_molecule_features.source_ordinal>1</PDBo:pdbx_reference_molecule_features.source_ordinal>
             <PDBo:pdbx_reference_molecule_features.type>External_Reference_ID</PDBo:pdbx_reference_molecule_features.type>
             <PDBo:pdbx_reference_molecule_features.value>377419</PDBo:pdbx_reference_molecule_features.value>
-            <PDBo:link_to_chebi rdf:resource="http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:377419" rdfs:label="CHEBI:377419"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/CHEBI:377419" rdfs:label="CHEBI:377419"/>
+            <PDBo:link_to_chebi rdf:resource="http://purl.obolibrary.org/obo/CHEBI_377419" rdfs:label="CHEBI:377419"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/chebi/CHEBI:377419" rdfs:label="CHEBI:377419"/>
           </PDBo:pdbx_reference_molecule_features>
         </PDBo:has_pdbx_reference_molecule_features>
         <PDBo:has_pdbx_reference_molecule_features>
@@ -904,8 +904,8 @@
             <PDBo:pdbx_reference_molecule_features.source_ordinal>1</PDBo:pdbx_reference_molecule_features.source_ordinal>
             <PDBo:pdbx_reference_molecule_features.type>External_Reference_ID</PDBo:pdbx_reference_molecule_features.type>
             <PDBo:pdbx_reference_molecule_features.value>178591</PDBo:pdbx_reference_molecule_features.value>
-            <PDBo:link_to_chebi rdf:resource="http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:178591" rdfs:label="CHEBI:178591"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/CHEBI:178591" rdfs:label="CHEBI:178591"/>
+            <PDBo:link_to_chebi rdf:resource="http://purl.obolibrary.org/obo/CHEBI_178591" rdfs:label="CHEBI:178591"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/chebi/CHEBI:178591" rdfs:label="CHEBI:178591"/>
           </PDBo:pdbx_reference_molecule_features>
         </PDBo:has_pdbx_reference_molecule_features>
         <PDBo:has_pdbx_reference_molecule_features>
@@ -1072,8 +1072,8 @@
             <PDBo:pdbx_reference_molecule_features.source_ordinal>1</PDBo:pdbx_reference_molecule_features.source_ordinal>
             <PDBo:pdbx_reference_molecule_features.type>External_Reference_ID</PDBo:pdbx_reference_molecule_features.type>
             <PDBo:pdbx_reference_molecule_features.value>179297</PDBo:pdbx_reference_molecule_features.value>
-            <PDBo:link_to_chebi rdf:resource="http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:179297" rdfs:label="CHEBI:179297"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/CHEBI:179297" rdfs:label="CHEBI:179297"/>
+            <PDBo:link_to_chebi rdf:resource="http://purl.obolibrary.org/obo/CHEBI_179297" rdfs:label="CHEBI:179297"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/chebi/CHEBI:179297" rdfs:label="CHEBI:179297"/>
           </PDBo:pdbx_reference_molecule_features>
         </PDBo:has_pdbx_reference_molecule_features>
         <PDBo:has_pdbx_reference_molecule_features>
@@ -1185,8 +1185,8 @@
             <PDBo:pdbx_reference_molecule_features.source_ordinal>1</PDBo:pdbx_reference_molecule_features.source_ordinal>
             <PDBo:pdbx_reference_molecule_features.type>External_Reference_ID</PDBo:pdbx_reference_molecule_features.type>
             <PDBo:pdbx_reference_molecule_features.value>670359</PDBo:pdbx_reference_molecule_features.value>
-            <PDBo:link_to_chebi rdf:resource="http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:670359" rdfs:label="CHEBI:670359"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/CHEBI:670359" rdfs:label="CHEBI:670359"/>
+            <PDBo:link_to_chebi rdf:resource="http://purl.obolibrary.org/obo/CHEBI_670359" rdfs:label="CHEBI:670359"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/chebi/CHEBI:670359" rdfs:label="CHEBI:670359"/>
           </PDBo:pdbx_reference_molecule_features>
         </PDBo:has_pdbx_reference_molecule_features>
         <PDBo:has_pdbx_reference_molecule_features>
@@ -1223,8 +1223,8 @@
             <PDBo:pdbx_reference_molecule_features.source_ordinal>1</PDBo:pdbx_reference_molecule_features.source_ordinal>
             <PDBo:pdbx_reference_molecule_features.type>External_Reference_ID</PDBo:pdbx_reference_molecule_features.type>
             <PDBo:pdbx_reference_molecule_features.value>483805</PDBo:pdbx_reference_molecule_features.value>
-            <PDBo:link_to_chebi rdf:resource="http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:483805" rdfs:label="CHEBI:483805"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/CHEBI:483805" rdfs:label="CHEBI:483805"/>
+            <PDBo:link_to_chebi rdf:resource="http://purl.obolibrary.org/obo/CHEBI_483805" rdfs:label="CHEBI:483805"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/chebi/CHEBI:483805" rdfs:label="CHEBI:483805"/>
           </PDBo:pdbx_reference_molecule_features>
         </PDBo:has_pdbx_reference_molecule_features>
         <PDBo:has_pdbx_reference_molecule_features>
@@ -1374,8 +1374,8 @@
             <PDBo:pdbx_reference_molecule_features.source_ordinal>1</PDBo:pdbx_reference_molecule_features.source_ordinal>
             <PDBo:pdbx_reference_molecule_features.type>External_Reference_ID</PDBo:pdbx_reference_molecule_features.type>
             <PDBo:pdbx_reference_molecule_features.value>547637</PDBo:pdbx_reference_molecule_features.value>
-            <PDBo:link_to_chebi rdf:resource="http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:547637" rdfs:label="CHEBI:547637"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/CHEBI:547637" rdfs:label="CHEBI:547637"/>
+            <PDBo:link_to_chebi rdf:resource="http://purl.obolibrary.org/obo/CHEBI_547637" rdfs:label="CHEBI:547637"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/chebi/CHEBI:547637" rdfs:label="CHEBI:547637"/>
           </PDBo:pdbx_reference_molecule_features>
         </PDBo:has_pdbx_reference_molecule_features>
         <PDBo:has_pdbx_reference_molecule_features>
@@ -1506,8 +1506,8 @@
             <PDBo:pdbx_reference_molecule_features.source_ordinal>1</PDBo:pdbx_reference_molecule_features.source_ordinal>
             <PDBo:pdbx_reference_molecule_features.type>External_Reference_ID</PDBo:pdbx_reference_molecule_features.type>
             <PDBo:pdbx_reference_molecule_features.value>613263</PDBo:pdbx_reference_molecule_features.value>
-            <PDBo:link_to_chebi rdf:resource="http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:613263" rdfs:label="CHEBI:613263"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/CHEBI:613263" rdfs:label="CHEBI:613263"/>
+            <PDBo:link_to_chebi rdf:resource="http://purl.obolibrary.org/obo/CHEBI_613263" rdfs:label="CHEBI:613263"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/chebi/CHEBI:613263" rdfs:label="CHEBI:613263"/>
           </PDBo:pdbx_reference_molecule_features>
         </PDBo:has_pdbx_reference_molecule_features>
         <PDBo:has_pdbx_reference_molecule_features>
@@ -1581,8 +1581,8 @@
             <PDBo:pdbx_reference_molecule_features.source_ordinal>1</PDBo:pdbx_reference_molecule_features.source_ordinal>
             <PDBo:pdbx_reference_molecule_features.type>External_Reference_ID</PDBo:pdbx_reference_molecule_features.type>
             <PDBo:pdbx_reference_molecule_features.value>613262</PDBo:pdbx_reference_molecule_features.value>
-            <PDBo:link_to_chebi rdf:resource="http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:613262" rdfs:label="CHEBI:613262"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/CHEBI:613262" rdfs:label="CHEBI:613262"/>
+            <PDBo:link_to_chebi rdf:resource="http://purl.obolibrary.org/obo/CHEBI_613262" rdfs:label="CHEBI:613262"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/chebi/CHEBI:613262" rdfs:label="CHEBI:613262"/>
           </PDBo:pdbx_reference_molecule_features>
         </PDBo:has_pdbx_reference_molecule_features>
         <PDBo:has_pdbx_reference_molecule_features>
@@ -1656,8 +1656,8 @@
             <PDBo:pdbx_reference_molecule_features.source_ordinal>1</PDBo:pdbx_reference_molecule_features.source_ordinal>
             <PDBo:pdbx_reference_molecule_features.type>External_Reference_ID</PDBo:pdbx_reference_molecule_features.type>
             <PDBo:pdbx_reference_molecule_features.value>672793</PDBo:pdbx_reference_molecule_features.value>
-            <PDBo:link_to_chebi rdf:resource="http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:672793" rdfs:label="CHEBI:672793"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/CHEBI:672793" rdfs:label="CHEBI:672793"/>
+            <PDBo:link_to_chebi rdf:resource="http://purl.obolibrary.org/obo/CHEBI_672793" rdfs:label="CHEBI:672793"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/chebi/CHEBI:672793" rdfs:label="CHEBI:672793"/>
           </PDBo:pdbx_reference_molecule_features>
         </PDBo:has_pdbx_reference_molecule_features>
         <PDBo:has_pdbx_reference_molecule_features>
@@ -1732,8 +1732,8 @@
             <PDBo:pdbx_reference_molecule_features.source_ordinal>1</PDBo:pdbx_reference_molecule_features.source_ordinal>
             <PDBo:pdbx_reference_molecule_features.type>External_Reference_ID</PDBo:pdbx_reference_molecule_features.type>
             <PDBo:pdbx_reference_molecule_features.value>483924</PDBo:pdbx_reference_molecule_features.value>
-            <PDBo:link_to_chebi rdf:resource="http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:483924" rdfs:label="CHEBI:483924"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/CHEBI:483924" rdfs:label="CHEBI:483924"/>
+            <PDBo:link_to_chebi rdf:resource="http://purl.obolibrary.org/obo/CHEBI_483924" rdfs:label="CHEBI:483924"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/chebi/CHEBI:483924" rdfs:label="CHEBI:483924"/>
           </PDBo:pdbx_reference_molecule_features>
         </PDBo:has_pdbx_reference_molecule_features>
         <PDBo:has_pdbx_reference_molecule_features>

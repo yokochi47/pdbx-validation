@@ -177,9 +177,12 @@ File path | Document
 
 ## Release notes
 
+- **Nov 26, 2021**: Release v4.4.3
+	- Update RDF URIs to GO and ChEBI resources.
+
 - **Nov 4, 2021**: Release v4.4.2
 	- Update wwPDB Validation Information Dictionary to 4.352.
-	- Revert RDF link pattern to identifiers.org.
+	- Revert RDF URI patterns to identifiers.org.
 
 - **Oct 21, 2021**: Release v4.4.1
 	- Update wwPDB Validation Information Dictionary to 4.351.

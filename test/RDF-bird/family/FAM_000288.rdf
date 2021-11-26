@@ -270,8 +270,8 @@
             <PDBo:pdbx_reference_molecule_features.source_ordinal>1</PDBo:pdbx_reference_molecule_features.source_ordinal>
             <PDBo:pdbx_reference_molecule_features.type>External_reference_ID</PDBo:pdbx_reference_molecule_features.type>
             <PDBo:pdbx_reference_molecule_features.value>196469</PDBo:pdbx_reference_molecule_features.value>
-            <PDBo:link_to_chebi rdf:resource="http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:196469" rdfs:label="CHEBI:196469"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/CHEBI:196469" rdfs:label="CHEBI:196469"/>
+            <PDBo:link_to_chebi rdf:resource="http://purl.obolibrary.org/obo/CHEBI_196469" rdfs:label="CHEBI:196469"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/chebi/CHEBI:196469" rdfs:label="CHEBI:196469"/>
           </PDBo:pdbx_reference_molecule_features>
         </PDBo:has_pdbx_reference_molecule_features>
         <PDBo:has_pdbx_reference_molecule_features>

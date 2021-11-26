@@ -64,7 +64,7 @@
   &lt;xsl:variable name="pubchem.substance"&gt;http://rdf.ncbi.nlm.nih.gov/pubchem/substance/SID&lt;/xsl:variable&gt;
   &lt;xsl:variable name="chemspider"&gt;http://www.chemspider.com/Chemical-Structure.&lt;/xsl:variable&gt;
   &lt;xsl:variable name="cas"&gt;http://commonchemistry.cas.org/detail?ref=&lt;/xsl:variable&gt;
-  &lt;xsl:variable name="chebi"&gt;http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:&lt;/xsl:variable&gt;
+  &lt;xsl:variable name="chebi"&gt;http://purl.obolibrary.org/obo/CHEBI_&lt;/xsl:variable&gt;
   &lt;xsl:variable name="mesh"&gt;http://id.nlm.nih.gov/mesh/&lt;/xsl:variable&gt;
   &lt;xsl:variable name="chemidplus"&gt;http://chem.nlm.nih.gov/chemidplus/rn/&lt;/xsl:variable&gt;
   &lt;xsl:variable name="chembl"&gt;http://www.ebi.ac.uk/chembl/entity/&lt;/xsl:variable&gt;
@@ -346,7 +346,7 @@
 
   &lt;xsl:template match="PDBx:pdbx_reference_molecule_features/PDBx:value[(../PDBx:source='ChEBI' or ../PDBx:source='CHEBI') and text()!='']" mode="linked"&gt;
     &lt;PDBo:link_to_chebi rdf:resource="{$chebi}{text()}" rdfs:label="CHEBI:{text()}"/&gt;
-    &lt;rdfs:seeAlso rdf:resource="{$idorg}CHEBI:{text()}" rdfs:label="CHEBI:{text()}"/&gt;
+    &lt;rdfs:seeAlso rdf:resource="{$idorg}chebi/CHEBI:{text()}" rdfs:label="CHEBI:{text()}"/&gt;
   &lt;/xsl:template&gt;
 
   &lt;xsl:template match="PDBx:pdbx_reference_molecule_features/PDBx:value[(../PDBx:source='MeSH' or ../PDBx:source='MESH') and text()!='']" mode="linked"&gt;

@@ -16685,8 +16685,8 @@ VDGTEVPTLMLVKEAIIEEKC</PDBo:struct_ref.pdbx_seq_one_letter_code>
             <PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>GO:0005509</PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>
             <PDBo:pdbx_sifts_xref_db_segments.segment_id>1</PDBo:pdbx_sifts_xref_db_segments.segment_id>
             <PDBo:pdbx_sifts_xref_db_segments.instance_id>1</PDBo:pdbx_sifts_xref_db_segments.instance_id>
-            <PDBo:link_to_go rdf:resource="http://amigo.geneontology.org/amigo/term/GO:0005509" rdfs:label="GO:0005509"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/GO:0005509" rdfs:label="GO:0005509"/>
+            <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_0005509" rdfs:label="GO:0005509"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:0005509" rdfs:label="GO:0005509"/>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start>1</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end>181</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
           </PDBo:pdbx_sifts_xref_db_segments>
@@ -16705,8 +16705,8 @@ VDGTEVPTLMLVKEAIIEEKC</PDBo:struct_ref.pdbx_seq_one_letter_code>
             <PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>GO:0005737</PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>
             <PDBo:pdbx_sifts_xref_db_segments.segment_id>1</PDBo:pdbx_sifts_xref_db_segments.segment_id>
             <PDBo:pdbx_sifts_xref_db_segments.instance_id>2</PDBo:pdbx_sifts_xref_db_segments.instance_id>
-            <PDBo:link_to_go rdf:resource="http://amigo.geneontology.org/amigo/term/GO:0005737" rdfs:label="GO:0005737"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/GO:0005737" rdfs:label="GO:0005737"/>
+            <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_0005737" rdfs:label="GO:0005737"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:0005737" rdfs:label="GO:0005737"/>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start>1</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end>181</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
           </PDBo:pdbx_sifts_xref_db_segments>
@@ -16725,8 +16725,8 @@ VDGTEVPTLMLVKEAIIEEKC</PDBo:struct_ref.pdbx_seq_one_letter_code>
             <PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>GO:0005737</PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>
             <PDBo:pdbx_sifts_xref_db_segments.segment_id>1</PDBo:pdbx_sifts_xref_db_segments.segment_id>
             <PDBo:pdbx_sifts_xref_db_segments.instance_id>3</PDBo:pdbx_sifts_xref_db_segments.instance_id>
-            <PDBo:link_to_go rdf:resource="http://amigo.geneontology.org/amigo/term/GO:0005737" rdfs:label="GO:0005737"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/GO:0005737" rdfs:label="GO:0005737"/>
+            <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_0005737" rdfs:label="GO:0005737"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:0005737" rdfs:label="GO:0005737"/>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start>1</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end>181</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
           </PDBo:pdbx_sifts_xref_db_segments>
@@ -16745,8 +16745,8 @@ VDGTEVPTLMLVKEAIIEEKC</PDBo:struct_ref.pdbx_seq_one_letter_code>
             <PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>GO:0005737</PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>
             <PDBo:pdbx_sifts_xref_db_segments.segment_id>1</PDBo:pdbx_sifts_xref_db_segments.segment_id>
             <PDBo:pdbx_sifts_xref_db_segments.instance_id>4</PDBo:pdbx_sifts_xref_db_segments.instance_id>
-            <PDBo:link_to_go rdf:resource="http://amigo.geneontology.org/amigo/term/GO:0005737" rdfs:label="GO:0005737"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/GO:0005737" rdfs:label="GO:0005737"/>
+            <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_0005737" rdfs:label="GO:0005737"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:0005737" rdfs:label="GO:0005737"/>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start>1</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end>181</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
           </PDBo:pdbx_sifts_xref_db_segments>
@@ -16765,8 +16765,8 @@ VDGTEVPTLMLVKEAIIEEKC</PDBo:struct_ref.pdbx_seq_one_letter_code>
             <PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>GO:0005783</PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>
             <PDBo:pdbx_sifts_xref_db_segments.segment_id>1</PDBo:pdbx_sifts_xref_db_segments.segment_id>
             <PDBo:pdbx_sifts_xref_db_segments.instance_id>5</PDBo:pdbx_sifts_xref_db_segments.instance_id>
-            <PDBo:link_to_go rdf:resource="http://amigo.geneontology.org/amigo/term/GO:0005783" rdfs:label="GO:0005783"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/GO:0005783" rdfs:label="GO:0005783"/>
+            <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_0005783" rdfs:label="GO:0005783"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:0005783" rdfs:label="GO:0005783"/>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start>1</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end>181</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
           </PDBo:pdbx_sifts_xref_db_segments>
@@ -17024,8 +17024,8 @@ VDGTEVPTLMLVKEAIIEEKC</PDBo:struct_ref.pdbx_seq_one_letter_code>
             <PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>GO:0005509</PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>
             <PDBo:pdbx_sifts_xref_db_segments.segment_id>2</PDBo:pdbx_sifts_xref_db_segments.segment_id>
             <PDBo:pdbx_sifts_xref_db_segments.instance_id>1</PDBo:pdbx_sifts_xref_db_segments.instance_id>
-            <PDBo:link_to_go rdf:resource="http://amigo.geneontology.org/amigo/term/GO:0005509" rdfs:label="GO:0005509"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/GO:0005509" rdfs:label="GO:0005509"/>
+            <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_0005509" rdfs:label="GO:0005509"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:0005509" rdfs:label="GO:0005509"/>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start>182</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end>189</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
           </PDBo:pdbx_sifts_xref_db_segments>
@@ -17044,8 +17044,8 @@ VDGTEVPTLMLVKEAIIEEKC</PDBo:struct_ref.pdbx_seq_one_letter_code>
             <PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>GO:0005737</PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>
             <PDBo:pdbx_sifts_xref_db_segments.segment_id>2</PDBo:pdbx_sifts_xref_db_segments.segment_id>
             <PDBo:pdbx_sifts_xref_db_segments.instance_id>2</PDBo:pdbx_sifts_xref_db_segments.instance_id>
-            <PDBo:link_to_go rdf:resource="http://amigo.geneontology.org/amigo/term/GO:0005737" rdfs:label="GO:0005737"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/GO:0005737" rdfs:label="GO:0005737"/>
+            <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_0005737" rdfs:label="GO:0005737"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:0005737" rdfs:label="GO:0005737"/>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start>182</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end>189</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
           </PDBo:pdbx_sifts_xref_db_segments>
@@ -17064,8 +17064,8 @@ VDGTEVPTLMLVKEAIIEEKC</PDBo:struct_ref.pdbx_seq_one_letter_code>
             <PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>GO:0005737</PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>
             <PDBo:pdbx_sifts_xref_db_segments.segment_id>2</PDBo:pdbx_sifts_xref_db_segments.segment_id>
             <PDBo:pdbx_sifts_xref_db_segments.instance_id>3</PDBo:pdbx_sifts_xref_db_segments.instance_id>
-            <PDBo:link_to_go rdf:resource="http://amigo.geneontology.org/amigo/term/GO:0005737" rdfs:label="GO:0005737"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/GO:0005737" rdfs:label="GO:0005737"/>
+            <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_0005737" rdfs:label="GO:0005737"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:0005737" rdfs:label="GO:0005737"/>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start>182</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end>189</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
           </PDBo:pdbx_sifts_xref_db_segments>
@@ -17084,8 +17084,8 @@ VDGTEVPTLMLVKEAIIEEKC</PDBo:struct_ref.pdbx_seq_one_letter_code>
             <PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>GO:0005737</PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>
             <PDBo:pdbx_sifts_xref_db_segments.segment_id>2</PDBo:pdbx_sifts_xref_db_segments.segment_id>
             <PDBo:pdbx_sifts_xref_db_segments.instance_id>4</PDBo:pdbx_sifts_xref_db_segments.instance_id>
-            <PDBo:link_to_go rdf:resource="http://amigo.geneontology.org/amigo/term/GO:0005737" rdfs:label="GO:0005737"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/GO:0005737" rdfs:label="GO:0005737"/>
+            <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_0005737" rdfs:label="GO:0005737"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:0005737" rdfs:label="GO:0005737"/>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start>182</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end>189</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
           </PDBo:pdbx_sifts_xref_db_segments>
@@ -17104,8 +17104,8 @@ VDGTEVPTLMLVKEAIIEEKC</PDBo:struct_ref.pdbx_seq_one_letter_code>
             <PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>GO:0005783</PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>
             <PDBo:pdbx_sifts_xref_db_segments.segment_id>2</PDBo:pdbx_sifts_xref_db_segments.segment_id>
             <PDBo:pdbx_sifts_xref_db_segments.instance_id>5</PDBo:pdbx_sifts_xref_db_segments.instance_id>
-            <PDBo:link_to_go rdf:resource="http://amigo.geneontology.org/amigo/term/GO:0005783" rdfs:label="GO:0005783"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/GO:0005783" rdfs:label="GO:0005783"/>
+            <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_0005783" rdfs:label="GO:0005783"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:0005783" rdfs:label="GO:0005783"/>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start>182</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end>189</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
           </PDBo:pdbx_sifts_xref_db_segments>

@@ -39552,8 +39552,8 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
             <PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>GO:0004190</PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>
             <PDBo:pdbx_sifts_xref_db_segments.segment_id>1</PDBo:pdbx_sifts_xref_db_segments.segment_id>
             <PDBo:pdbx_sifts_xref_db_segments.instance_id>1</PDBo:pdbx_sifts_xref_db_segments.instance_id>
-            <PDBo:link_to_go rdf:resource="http://amigo.geneontology.org/amigo/term/GO:0004190" rdfs:label="GO:0004190"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/GO:0004190" rdfs:label="GO:0004190"/>
+            <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_0004190" rdfs:label="GO:0004190"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:0004190" rdfs:label="GO:0004190"/>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start>1</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end>239</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
           </PDBo:pdbx_sifts_xref_db_segments>
@@ -39572,8 +39572,8 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
             <PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>GO:0004190</PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>
             <PDBo:pdbx_sifts_xref_db_segments.segment_id>1</PDBo:pdbx_sifts_xref_db_segments.segment_id>
             <PDBo:pdbx_sifts_xref_db_segments.instance_id>2</PDBo:pdbx_sifts_xref_db_segments.instance_id>
-            <PDBo:link_to_go rdf:resource="http://amigo.geneontology.org/amigo/term/GO:0004190" rdfs:label="GO:0004190"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/GO:0004190" rdfs:label="GO:0004190"/>
+            <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_0004190" rdfs:label="GO:0004190"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:0004190" rdfs:label="GO:0004190"/>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start>1</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end>239</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
           </PDBo:pdbx_sifts_xref_db_segments>
@@ -39592,8 +39592,8 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
             <PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>GO:0006508</PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>
             <PDBo:pdbx_sifts_xref_db_segments.segment_id>1</PDBo:pdbx_sifts_xref_db_segments.segment_id>
             <PDBo:pdbx_sifts_xref_db_segments.instance_id>3</PDBo:pdbx_sifts_xref_db_segments.instance_id>
-            <PDBo:link_to_go rdf:resource="http://amigo.geneontology.org/amigo/term/GO:0006508" rdfs:label="GO:0006508"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/GO:0006508" rdfs:label="GO:0006508"/>
+            <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_0006508" rdfs:label="GO:0006508"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:0006508" rdfs:label="GO:0006508"/>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start>1</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end>239</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
           </PDBo:pdbx_sifts_xref_db_segments>
@@ -39612,8 +39612,8 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
             <PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>GO:0006508</PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>
             <PDBo:pdbx_sifts_xref_db_segments.segment_id>1</PDBo:pdbx_sifts_xref_db_segments.segment_id>
             <PDBo:pdbx_sifts_xref_db_segments.instance_id>4</PDBo:pdbx_sifts_xref_db_segments.instance_id>
-            <PDBo:link_to_go rdf:resource="http://amigo.geneontology.org/amigo/term/GO:0006508" rdfs:label="GO:0006508"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/GO:0006508" rdfs:label="GO:0006508"/>
+            <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_0006508" rdfs:label="GO:0006508"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:0006508" rdfs:label="GO:0006508"/>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start>1</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end>239</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
           </PDBo:pdbx_sifts_xref_db_segments>
@@ -39832,8 +39832,8 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
             <PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>GO:0004190</PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>
             <PDBo:pdbx_sifts_xref_db_segments.segment_id>1</PDBo:pdbx_sifts_xref_db_segments.segment_id>
             <PDBo:pdbx_sifts_xref_db_segments.instance_id>1</PDBo:pdbx_sifts_xref_db_segments.instance_id>
-            <PDBo:link_to_go rdf:resource="http://amigo.geneontology.org/amigo/term/GO:0004190" rdfs:label="GO:0004190"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/GO:0004190" rdfs:label="GO:0004190"/>
+            <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_0004190" rdfs:label="GO:0004190"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:0004190" rdfs:label="GO:0004190"/>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start>1</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end>87</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
           </PDBo:pdbx_sifts_xref_db_segments>
@@ -39852,8 +39852,8 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
             <PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>GO:0006508</PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>
             <PDBo:pdbx_sifts_xref_db_segments.segment_id>1</PDBo:pdbx_sifts_xref_db_segments.segment_id>
             <PDBo:pdbx_sifts_xref_db_segments.instance_id>2</PDBo:pdbx_sifts_xref_db_segments.instance_id>
-            <PDBo:link_to_go rdf:resource="http://amigo.geneontology.org/amigo/term/GO:0006508" rdfs:label="GO:0006508"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/GO:0006508" rdfs:label="GO:0006508"/>
+            <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_0006508" rdfs:label="GO:0006508"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:0006508" rdfs:label="GO:0006508"/>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start>1</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end>87</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
           </PDBo:pdbx_sifts_xref_db_segments>
@@ -39992,8 +39992,8 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
             <PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>GO:0004190</PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>
             <PDBo:pdbx_sifts_xref_db_segments.segment_id>1</PDBo:pdbx_sifts_xref_db_segments.segment_id>
             <PDBo:pdbx_sifts_xref_db_segments.instance_id>1</PDBo:pdbx_sifts_xref_db_segments.instance_id>
-            <PDBo:link_to_go rdf:resource="http://amigo.geneontology.org/amigo/term/GO:0004190" rdfs:label="GO:0004190"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/GO:0004190" rdfs:label="GO:0004190"/>
+            <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_0004190" rdfs:label="GO:0004190"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:0004190" rdfs:label="GO:0004190"/>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start>1</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end>239</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
           </PDBo:pdbx_sifts_xref_db_segments>
@@ -40012,8 +40012,8 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
             <PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>GO:0004190</PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>
             <PDBo:pdbx_sifts_xref_db_segments.segment_id>1</PDBo:pdbx_sifts_xref_db_segments.segment_id>
             <PDBo:pdbx_sifts_xref_db_segments.instance_id>2</PDBo:pdbx_sifts_xref_db_segments.instance_id>
-            <PDBo:link_to_go rdf:resource="http://amigo.geneontology.org/amigo/term/GO:0004190" rdfs:label="GO:0004190"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/GO:0004190" rdfs:label="GO:0004190"/>
+            <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_0004190" rdfs:label="GO:0004190"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:0004190" rdfs:label="GO:0004190"/>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start>1</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end>239</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
           </PDBo:pdbx_sifts_xref_db_segments>
@@ -40032,8 +40032,8 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
             <PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>GO:0006508</PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>
             <PDBo:pdbx_sifts_xref_db_segments.segment_id>1</PDBo:pdbx_sifts_xref_db_segments.segment_id>
             <PDBo:pdbx_sifts_xref_db_segments.instance_id>3</PDBo:pdbx_sifts_xref_db_segments.instance_id>
-            <PDBo:link_to_go rdf:resource="http://amigo.geneontology.org/amigo/term/GO:0006508" rdfs:label="GO:0006508"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/GO:0006508" rdfs:label="GO:0006508"/>
+            <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_0006508" rdfs:label="GO:0006508"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:0006508" rdfs:label="GO:0006508"/>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start>1</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end>239</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
           </PDBo:pdbx_sifts_xref_db_segments>
@@ -40052,8 +40052,8 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
             <PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>GO:0006508</PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>
             <PDBo:pdbx_sifts_xref_db_segments.segment_id>1</PDBo:pdbx_sifts_xref_db_segments.segment_id>
             <PDBo:pdbx_sifts_xref_db_segments.instance_id>4</PDBo:pdbx_sifts_xref_db_segments.instance_id>
-            <PDBo:link_to_go rdf:resource="http://amigo.geneontology.org/amigo/term/GO:0006508" rdfs:label="GO:0006508"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/GO:0006508" rdfs:label="GO:0006508"/>
+            <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_0006508" rdfs:label="GO:0006508"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:0006508" rdfs:label="GO:0006508"/>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start>1</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end>239</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
           </PDBo:pdbx_sifts_xref_db_segments>
@@ -40272,8 +40272,8 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
             <PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>GO:0004190</PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>
             <PDBo:pdbx_sifts_xref_db_segments.segment_id>1</PDBo:pdbx_sifts_xref_db_segments.segment_id>
             <PDBo:pdbx_sifts_xref_db_segments.instance_id>1</PDBo:pdbx_sifts_xref_db_segments.instance_id>
-            <PDBo:link_to_go rdf:resource="http://amigo.geneontology.org/amigo/term/GO:0004190" rdfs:label="GO:0004190"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/GO:0004190" rdfs:label="GO:0004190"/>
+            <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_0004190" rdfs:label="GO:0004190"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:0004190" rdfs:label="GO:0004190"/>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start>1</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end>87</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
           </PDBo:pdbx_sifts_xref_db_segments>
@@ -40292,8 +40292,8 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
             <PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>GO:0006508</PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>
             <PDBo:pdbx_sifts_xref_db_segments.segment_id>1</PDBo:pdbx_sifts_xref_db_segments.segment_id>
             <PDBo:pdbx_sifts_xref_db_segments.instance_id>2</PDBo:pdbx_sifts_xref_db_segments.instance_id>
-            <PDBo:link_to_go rdf:resource="http://amigo.geneontology.org/amigo/term/GO:0006508" rdfs:label="GO:0006508"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/GO:0006508" rdfs:label="GO:0006508"/>
+            <PDBo:link_to_go rdf:resource="http://purl.obolibrary.org/obo/GO_0006508" rdfs:label="GO:0006508"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/go/GO:0006508" rdfs:label="GO:0006508"/>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_start>1</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
             <PDBo:pdbx_sifts_xref_db_segments.seq_id_end>87</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
           </PDBo:pdbx_sifts_xref_db_segments>
