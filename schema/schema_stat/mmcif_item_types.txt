@@ -59,6 +59,7 @@ atom_site.pdbx_auth_asym_id WWPDB_LOCAL
 atom_site.pdbx_auth_seq_id WWPDB_LOCAL
 pdbx_chem_comp_audit.annotator WWPDB_LOCAL
 pdbx_chem_comp_audit.details WWPDB_LOCAL
+pdbx_struct_oper_list.full_matrix WWPDB_LOCAL
 pdbx_audit_support.details WWPDB_LOCAL
 entity_poly.pdbx_explicit_linking_flag WWPDB_LOCAL
 em_assembly.name WWPDB_DEPRECATED

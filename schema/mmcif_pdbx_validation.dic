@@ -1,10 +1,10 @@
 ###########################################################################
 #
 # File:  mmcif_pdbx_validation-v4.dic
-# Date:  Thu Nov  4 09:45:56 JST 2021
+# Date:  Fri Dec 17 18:18:20 JST 2021
 #
 # Created from:
-#        mmcif_pdbx_v50.dic   - PDB Exchange Data Dictionary (V5.352)
+#        mmcif_pdbx_v50.dic   - PDB Exchange Data Dictionary (V5.353)
 #        http://wwpdb.org/validation/schema/wwpdb_validation_v6.00.xsd
 #         - a XML schema for wwPDB validation reports, v6.00, rev. 2021-01-22
 #
@@ -31,7 +31,7 @@ data_mmcif_pdbx_validation.dic
 
     _dictionary.title           mmcif_pdbx_validation.dic
     _dictionary.datablock_id    mmcif_pdbx_validation.dic
-    _dictionary.version         4.352
+    _dictionary.version         4.353
 #
     loop_
     _dictionary_history.version
@@ -963,6 +963,23 @@ data_mmcif_pdbx_validation.dic
 >     + Add "RIGAKU PhotonJet-R" to _diffrn_source.type enumeration # merged
 >     + Enhance pdb_id and support PDB extented codes # merged
 ;
+  4.353   2021-12-17
+;
+>     + Correct capitalization of angstrom in descriptions # merged
+>     + Correct capitalization of kelvins as a unit. Remove the word
+>       "degrees" in context of it # merged
+>     + Add "SCINTILLATION" to _diffrn_detector.detector enumeration # merged
+>     + Add "Cyberstar LaBr3", "DECTRIS EIGER2 S 1M", "DECTRIS EIGER2 S 4M",
+>       "DECTRIS EIGER2 S 9M", "DECTRIS EIGER2 S 16M" to
+>       _diffrn_detector.type deposition enumeration # merged
+>     + Add "ESRF BEAMLINE ID22" to _diffrn_source.type enumertion # merged
+>     + Add "GSAS", "ISOLDE" and "PRODD" to _software.name enumeration # not mapped
+>     + Extend _pdbx_sudit_support.funding_organization enumeration # not mapped
+>     + Add "TFS Selectris" and "TFS Selectris X" to _em_imaging_optics.energyfilter_name # merged
+>     + Add "FEI tomography" to _em_software.name enumeration # merged
+>     + Add _pdbx_struct_oper_list.full_matrix # not mapped (WWPDB_LOCAL)
+;
+
 
 #
 ###########################################################################
@@ -985,13 +1002,13 @@ data_mmcif_pdbx_validation.dic
     _sub_category.description
               'cartesian_coordinate'
 ;              The collection of x, y, and z components of a position specified
-               with reference to a Cartesian (orthogonal Angstrom) coordinate
+               with reference to a Cartesian (orthogonal angstrom) coordinate
                system.
 ;
               'cartesian_coordinate_esd'
 ;              The collection of estimated standard deviations of the x, y, and
                z components of a position specified with reference to a
-               Cartesian (orthogonal Angstrom) coordinate system.
+               Cartesian (orthogonal angstrom) coordinate system.
 ;
               'fractional_coordinate'
 ;              The collection of x, y, and z components of a position specified
@@ -1340,6 +1357,11 @@ data_mmcif_pdbx_validation.dic
 ;              A set of 3x4 matrices separated by spaces and newlines on each line.
                Final newline optional. Optional spaces at start of lines. Blank lines accepted.
 ;
+               3x4_matrix           char
+               '((([ \t]*-?(([0-9]+)[.]?|([0-9]*[.][0-9]+))([(][0-9]+[)])?([eE][+-]?[0-9]+)? +){3})?(-?(([0-9]+)[.]?|([0-9]*[.][0-9]+))([(][0-9]+[)])?([eE][+-]?[0-9]+)? *\n([\t ]*\n)*)){2}((([ \t]*-?(([0-9]+)[.]?|([0-9]*[.][0-9]+))([(][0-9]+[)])?([eE][+-]?[0-9]+)? +){3})(-?(([0-9]+)[.]?|([0-9]*[.][0-9]+))([(][0-9]+[)])?([eE][+-]?[0-9]+)? *\n?([\t ]*\n)*))[ \t]*'
+;              A 3x4 matrix separated by spaces and newlines on each line.
+               Final newline optional. Optional spaces at start of lines. Blank lines accepted.
+;
                pdbx_related_db_id   char
                '[][_.:"&<>()/\{}'`~!@#$%A-Za-z0-9*|+-]*'
 ;              code item types/single words without semi-colon or comma ...
@@ -1385,7 +1407,7 @@ data_mmcif_pdbx_validation.dic
      'micrometres'            'micrometres (metres * 10^( -6)^)'
      'nanometres'             'nanometres  (metres * 10^( -9)^)'
      'nanometers'             'nanometers  (metres * 10^( -9)^)'
-     'angstroms'              'Angstroms   (metres * 10^(-10)^)'
+     'angstroms'              'angstroms   (metres * 10^(-10)^)'
      'picometres'             'picometres  (metres * 10^(-12)^)'
      'femtometres'            'femtometres (metres * 10^(-15)^)'
 #
@@ -1403,12 +1425,12 @@ data_mmcif_pdbx_validation.dic
 #
      'micrometres_squared'    'micrometres squared (metres * 10^( -6)^)^2^'
      'nanometres_squared'     'nanometres squared (metres * 10^( -9)^)^2^'
-     'angstroms_squared'      'Angstroms squared  (metres * 10^(-10)^)^2^'
-     '8pi2_angstroms_squared' '8pi^2^ * Angstroms squared (metres * 10^(-10)^)^2^'
+     'angstroms_squared'      'angstroms squared  (metres * 10^(-10)^)^2^'
+     '8pi2_angstroms_squared' '8pi^2^ * angstroms squared (metres * 10^(-10)^)^2^'
      'picometres_squared'     'picometres squared (metres * 10^(-12)^)^2^'
 #
      'nanometres_cubed'       'nanometres cubed (metres * 10^( -9)^)^3^'
-     'angstroms_cubed'        'Angstroms cubed  (metres * 10^(-10)^)^3^'
+     'angstroms_cubed'        'angstroms cubed  (metres * 10^(-10)^)^3^'
      'picometres_cubed'       'picometres cubed (metres * 10^(-12)^)^3^'
 #
      'kilopascals'            'kilopascals'
@@ -1426,7 +1448,7 @@ data_mmcif_pdbx_validation.dic
      'degrees_per_minute'     'degrees (of arc) per minute'
 #
      'celsius'                'degrees (of temperature) Celsius'
-     'kelvins'                'degrees (of temperature) Kelvin'
+     'kelvins'                'temperature in kelvins'
 #
      'electrons'              'electrons'
 #
@@ -1436,7 +1458,7 @@ data_mmcif_pdbx_validation.dic
 ; electrons per nanometres cubed (electrons/(metres * 10^( -9)^)^(-3)^)
 ;
      'electrons_per_angstroms_cubed'
-; electrons per Angstroms cubed (electrons/(metres * 10^(-10)^)^(-3)^)
+; electrons per angstroms cubed (electrons/(metres * 10^(-10)^)^(-3)^)
 ;
      'electrons_per_picometres_cubed'
 ; electrons per picometres cubed (electrons/(metres * 10^(-12)^)^(-3)^)
@@ -1453,7 +1475,7 @@ data_mmcif_pdbx_validation.dic
 ; arbitrary system of units.
 ;
 #
-     'angstroms_degrees'      'Angstroms * degrees'
+     'angstroms_degrees'      'angstroms * degrees'
 #
      'degrees_squared'        'degrees squared'
 #
@@ -1473,7 +1495,7 @@ data_mmcif_pdbx_validation.dic
      'microns_squared'        'micrometres squared (metres * 10^( -6)^)^2^'
      'microns'                'micrometres  (metres * 10^( -6)^)'
 #
-     'electrons_angstrom_squared'   'electrons square Angstrom'
+     'electrons_angstrom_squared'   'electrons square angstrom'
      'electron_volts'         'electron volts'
      'kiloelectron_volts'     'KeV (electron volts * 10^( 3)^)'
 #     'mg/ml'                  'mg per milliliter'
@@ -1730,7 +1752,7 @@ save_
 
 save__diffrn.ambient_temp
     _item_description.description
-;              The mean temperature in kelvin at which the intensities were
+;              The mean temperature in kelvins at which the intensities were
                measured.
 ;
     _item.name                  '_diffrn.ambient_temp'
@@ -2023,6 +2045,7 @@ save__diffrn_detector.detector
       "_diffrn_detector.detector"  MICROGAP              .
       "_diffrn_detector.detector"  "OSCILLATION CAMERA"  .
       "_diffrn_detector.detector"  PIXEL                 .
+      "_diffrn_detector.detector"  SCINTILLATION         .
       "_diffrn_detector.detector"  "STORAGE PHOSPHORS"   .
     #
 save_
@@ -2101,6 +2124,7 @@ save__diffrn_detector.type
       "_diffrn_detector.type"  "CS-PAD CXI-1"                    PIXEL
       "_diffrn_detector.type"  "CS-PAD CXI-2"                    PIXEL
       "_diffrn_detector.type"  "CS-PAD XPP"                      PIXEL
+      "_diffrn_detector.type"  "Cyberstar LaBr3"                 SCINTILLATION
       "_diffrn_detector.type"  "DECTRIS EIGER R 1M"              PIXEL
       "_diffrn_detector.type"  "DECTRIS EIGER R 4M"              PIXEL
       "_diffrn_detector.type"  "DECTRIS EIGER X 500K"            PIXEL
@@ -2108,6 +2132,10 @@ save__diffrn_detector.type
       "_diffrn_detector.type"  "DECTRIS EIGER X 4M"              PIXEL
       "_diffrn_detector.type"  "DECTRIS EIGER X 9M"              PIXEL
       "_diffrn_detector.type"  "DECTRIS EIGER X 16M"             PIXEL
+      "_diffrn_detector.type"  "DECTRIS EIGER2 S 1M"             PIXEL
+      "_diffrn_detector.type"  "DECTRIS EIGER2 S 4M"             PIXEL
+      "_diffrn_detector.type"  "DECTRIS EIGER2 S 9M"             PIXEL
+      "_diffrn_detector.type"  "DECTRIS EIGER2 S 16M"            PIXEL
       "_diffrn_detector.type"  "DECTRIS EIGER2 X 500K"           PIXEL
       "_diffrn_detector.type"  "DECTRIS EIGER2 X 1M"             PIXEL
       "_diffrn_detector.type"  "DECTRIS EIGER2 X 4M"             PIXEL
@@ -4360,6 +4388,7 @@ save__diffrn_source.type
      "_diffrn_source.type"  "ESRF BEAMLINE ID14-3"                           SYNCHROTRON
      "_diffrn_source.type"  "ESRF BEAMLINE ID14-4"                           SYNCHROTRON
      "_diffrn_source.type"  "ESRF BEAMLINE ID2"                              SYNCHROTRON
+     "_diffrn_source.type"  "ESRF BEAMLINE ID22"                             SYNCHROTRON
      "_diffrn_source.type"  "ESRF BEAMLINE ID23-1"                           SYNCHROTRON
      "_diffrn_source.type"  "ESRF BEAMLINE ID23-2"                           SYNCHROTRON
      "_diffrn_source.type"  "ESRF BEAMLINE ID27"                             SYNCHROTRON
@@ -12393,19 +12422,19 @@ save__refine_ls_restr.type
 ;  The root-mean-square deviation
    of the difference between the values calculated from the structures
    used to compile the restraints dictionary parameters and the dictionary
-   values themselves in the distance range less than 2.12 Angstroms.
+   values themselves in the distance range less than 2.12 angstroms.
 ;
         'RESTRAIN_Distances 2.12 < D < 2.625'
 ;  The root-mean-square deviation
    of the difference between the values calculated from the structures
    used to compile the restraints dictionary parameters and the dictionary
-   values themselves in the distance range 2.12 - 2.625 Angstroms.
+   values themselves in the distance range 2.12 - 2.625 angstroms.
 ;
         'RESTRAIN_Distances > 2.625'
 ;  The root-mean-square deviation
    of the difference between the values calculated from the structures
    used to compile the restraints dictionary parameters and the dictionary
-   values themselves in the distance range greater than 2.625 Angstroms.
+   values themselves in the distance range greater than 2.625 angstroms.
 ;
         'RESTRAIN_Peptide Planes'
 ;  The root-mean-square deviation
@@ -25129,7 +25158,7 @@ save__diffrn_source.pdbx_wavelength_list
     _pdbx_item.mandatory_code     yes
     #
     _pdbx_item_description.name         "_diffrn_source.pdbx_wavelength_list"
-    _pdbx_item_description.description  "Provide the wavelength(s) in Angstrom used for data collection. Multiple wavelengths should be comma separated. For Laue experiments, indicate the range with a hyphen."
+    _pdbx_item_description.description  "Provide the wavelength(s) in angstrom used for data collection. Multiple wavelengths should be comma separated. For Laue experiments, indicate the range with a hyphen."
     #   #
 #    loop_
 #    _pdbx_item_range.name
@@ -25346,6 +25375,7 @@ save__diffrn_source.pdbx_synchrotron_beamline
      "_diffrn_source.pdbx_synchrotron_beamline"  ID14-3          .
      "_diffrn_source.pdbx_synchrotron_beamline"  ID14-4          .
      "_diffrn_source.pdbx_synchrotron_beamline"  ID2             .
+     "_diffrn_source.pdbx_synchrotron_beamline"  ID22            .
      "_diffrn_source.pdbx_synchrotron_beamline"  ID23-1          .
      "_diffrn_source.pdbx_synchrotron_beamline"  ID23-2          .
      "_diffrn_source.pdbx_synchrotron_beamline"  ID27            .
@@ -29340,7 +29370,7 @@ save_
 
 save__pdbx_nmr_exptl_sample_conditions.temperature
     _item_description.description
-;              The temperature (in Kelvin) at which NMR data were
+;              The temperature (in kelvin) at which NMR data were
                collected.
 ;
     _item.name                  '_pdbx_nmr_exptl_sample_conditions.temperature'
@@ -32021,7 +32051,7 @@ save__pdbx_nmr_force_constants.non-bonded_inter_van_der_Waals_term_units
     loop_
     _item_enumeration.value
     _item_enumeration.detail
-     'kcal/mol/A**4'  'kilocalories per mole per Angstrom to the 4th power'
+     'kcal/mol/A**4'  'kilocalories per mole per angstrom to the 4th power'
      'kJ/mol/nm**4'   'kilojoules per mole per nanometer to the 4th power'
      'other'           'author added units'
 save_
@@ -32067,7 +32097,7 @@ save__pdbx_nmr_force_constants.non-bonded_inter_radius_of_gyration_term_units
     loop_
     _item_enumeration.value
     _item_enumeration.detail
-        'kcal/mol/ A**2'  'kilocalories per mole per square Angstrom'
+        'kcal/mol/ A**2'  'kilocalories per mole per square angstrom'
         'kJ/mol/ nm**4'   'kilojoules per mole per square nanometer'
         'other'                'author added units'
 save_
@@ -40120,8 +40150,8 @@ save_pdbx_validate_close_contact
                the asymmetric unit are considered.
 
                For those contacts not involving hydrogen a limit of
-               2.2 Angstroms is used. For contacts involving a hydrogen atom
-               a cutoff of 1.6 Angstroms is used.
+               2.2 angstroms is used. For contacts involving a hydrogen atom
+               a cutoff of 1.6 angstroms is used.
 ;
     _category.id                  pdbx_validate_close_contact
     _category.mandatory_code      no
@@ -40513,8 +40543,8 @@ save_pdbx_validate_symm_contact
                approach by van der Waals contacts. Contacts with
                for symmetry related contacts are considered.
                For those contacts not involving hydrogen a limit of
-               2.2 Angstroms is used. For contacts involving a hydrogen atom
-               a cutoff of 1.6Angstrom is used.
+               2.2 angstroms is used. For contacts involving a hydrogen atom
+               a cutoff of 1.6 angstrom is used.
 ;
     _category.id                  pdbx_validate_symm_contact
     _category.mandatory_code      no
@@ -46393,6 +46423,18 @@ save__pdbx_struct_oper_list.vector[3]
     _item_type.code               float
 save_
 
+#save__pdbx_struct_oper_list.full_matrix
+#    _item_description.description
+#;              Transformation matrix as provided by depositor
+#;
+#    _item.name                  '_pdbx_struct_oper_list.full_matrix'
+#    _item.category_id             pdbx_struct_oper_list
+#    _item.mandatory_code          no
+#    _item_type.code               3x4_matrix
+#    _pdbx_item_context.type       WWPDB_LOCAL
+#    _pdbx_item_context.item_name  '_pdbx_struct_oper_list.full_matrix'
+#save_
+
 ##
 
 ##########################
@@ -47727,7 +47769,7 @@ save_pdbx_distant_solvent_atoms
     _category_group.id           'inclusive_group'
                                  'pdbx_group'
     _pdbx_category_description.id           pdbx_distant_solvent_atoms
-    _pdbx_category_description.description  "The following solvent molecules are further than 3.5 Angstroms away from macromolecule atoms in the asymmetric unit that are available for hydrogen bonding. Solvent molecules in extended hydration shells separated by 3.5 Angstroms or less are not listed."
+    _pdbx_category_description.description  "The following solvent molecules are further than 3.5 angstroms away from macromolecule atoms in the asymmetric unit that are available for hydrogen bonding. Solvent molecules in extended hydration shells separated by 3.5 angstroms or less are not listed."
    #
     loop_
     _category_examples.detail
@@ -48418,7 +48460,7 @@ save__pdbx_nmr_exptl_sample_conditions.temperature_units
    #
     _pdbx_item_enumeration.name    "_pdbx_nmr_exptl_sample_conditions.temperature_units"
     _pdbx_item_enumeration.value   K
-    _pdbx_item_enumeration.detail  Kelvin
+    _pdbx_item_enumeration.detail  kelvin
 
     loop_
     _item_enumeration.value
@@ -50088,7 +50130,7 @@ save_
 
 save__em_vitrification.temp
     _item_description.description
-;              The vitrification temperature (in degrees Kelvin), e.g.,
+;              The vitrification temperature (in kelvin), e.g.,
                temperature of the plunge instrument cryogen bath.
 ;
     _item.name                  '_em_vitrification.temp'
@@ -50102,7 +50144,7 @@ save_
 save__em_vitrification.chamber_temperature
 #new V5
     _item_description.description
-;              The temperature (in degrees Kelvin) of the sample just prior to vitrification.
+;              The temperature (in kelvin) of the sample just prior to vitrification.
 ;
     _item.name                  '_em_vitrification.chamber_temperature'
     _item.category_id             em_vitrification
@@ -50706,7 +50748,7 @@ save_
 
 save__em_imaging.temperature
     _item_description.description
-;              The mean specimen stage temperature (degrees Kelvin) during imaging
+;              The mean specimen stage temperature (kelvin) during imaging
                in the microscope.
 ;
     _item.name                  '_em_imaging.temperature'
@@ -50733,7 +50775,7 @@ save_
 
 save__em_imaging.recording_temperature_minimum
     _item_description.description
-;              The specimen temperature minimum (degrees Kelvin) for the duration
+;              The specimen temperature minimum (kelvin) for the duration
                of imaging.
 ;
     _item.name                  '_em_imaging.recording_temperature_minimum'
@@ -50745,7 +50787,7 @@ save_
 
 save__em_imaging.recording_temperature_maximum
     _item_description.description
-;              The specimen temperature maximum (degrees Kelvin) for the duration
+;              The specimen temperature maximum (kelvin) for the duration
                of imaging.
 ;
     _item.name                  '_em_imaging.recording_temperature_maximum'
@@ -51172,7 +51214,7 @@ save_
 
 save__em_3d_reconstruction.resolution
     _item_description.description
-;              The final resolution (in Angstroms)of the 3D reconstruction.
+;              The final resolution (in angstroms) of the 3D reconstruction.
 ;
     _item.name                  '_em_3d_reconstruction.resolution'
     _item.category_id             em_3d_reconstruction
@@ -53225,7 +53267,7 @@ save_
 
 save__em_crystal_formation.temperature
     _item_description.description
-;              The value of the temperature in degrees Kelvin used for
+;              The value of the temperature in kelvin used for
                growing the crystals.
 ;
     _item.name                  '_em_crystal_formation.temperature'
@@ -53584,7 +53626,7 @@ save_
 
 save__em_diffraction_shell.high_resolution
     _item_description.description
-;              High resolution limit for this shell (Angstroms)
+;              High resolution limit for this shell (angstroms)
 ;
     _item.name                  '_em_diffraction_shell.high_resolution'
     _item.category_id             em_diffraction_shell
@@ -53608,7 +53650,7 @@ save_
 
 save__em_diffraction_shell.low_resolution
     _item_description.description
-;              Low resolution limit for this shell (Angstroms)
+;              Low resolution limit for this shell (angstroms)
 ;
     _item.name                  '_em_diffraction_shell.low_resolution'
     _item.category_id             em_diffraction_shell
@@ -53725,7 +53767,7 @@ save_
 
 save__em_diffraction_stats.high_resolution
     _item_description.description
-;              High resolution limit of the structure factor data, in Angstroms
+;              High resolution limit of the structure factor data, in angstroms
 ;
     _item.name                  '_em_diffraction_stats.high_resolution'
     _item.category_id             em_diffraction_stats
@@ -54213,6 +54255,8 @@ save__em_imaging_optics.energyfilter_name
          '_em_imaging_optics.energyfilter_name'  'GIF 2002'               .
          '_em_imaging_optics.energyfilter_name'  'GIF 2000'               .
          '_em_imaging_optics.energyfilter_name'  'GIF 200'                .
+         '_em_imaging_optics.energyfilter_name'  'TFS Selectris'          .
+         '_em_imaging_optics.energyfilter_name'  'TFS Selectris X'        .
          '_em_imaging_optics.energyfilter_name'  'In-column Omega Filter' .
 save_
 
@@ -54498,6 +54542,7 @@ save__em_software.name
         '_em_software.name'  eTasED                             .
         '_em_software.name'  ETHAN                              .
         '_em_software.name'  eTomo                              .
+        '_em_software.name'  'FEI tomography'                   .
         '_em_software.name'  FindEM                             .
         '_em_software.name'  FitCTF2                            .
         '_em_software.name'  Flex-EM                            .
@@ -54889,7 +54934,7 @@ save_
 
 save__em_3d_crystal_entity.length_a
     _item_description.description
-;              Unit-cell length a in Angstroms.
+;              Unit-cell length a in angstroms.
 ;
     _item.name                  '_em_3d_crystal_entity.length_a'
     _item.category_id             em_3d_crystal_entity
@@ -54902,7 +54947,7 @@ save_
 
 save__em_3d_crystal_entity.length_b
     _item_description.description
-;              Unit-cell length b in Angstroms.
+;              Unit-cell length b in angstroms.
 ;
     _item.name                  '_em_3d_crystal_entity.length_b'
     _item.category_id             em_3d_crystal_entity
@@ -54915,7 +54960,7 @@ save_
 
 save__em_3d_crystal_entity.length_c
     _item_description.description
-;              Unit-cell length c in Angstroms.
+;              Unit-cell length c in angstroms.
 ;
     _item.name                  '_em_3d_crystal_entity.length_c'
     _item.category_id             em_3d_crystal_entity
@@ -55035,7 +55080,7 @@ save_
 #deprecated V5
 save__em_2d_crystal_entity.length_a
     _item_description.description
-;              Unit-cell length a in Angstroms.
+;              Unit-cell length a in angstroms.
 ;
     _item.name                  '_em_2d_crystal_entity.length_a'
     _item.category_id             em_2d_crystal_entity
@@ -55048,7 +55093,7 @@ save_
 
 save__em_2d_crystal_entity.length_b
     _item_description.description
-;              Unit-cell length b in Angstroms.
+;              Unit-cell length b in angstroms.
 ;
     _item.name                  '_em_2d_crystal_entity.length_b'
     _item.category_id             em_2d_crystal_entity
@@ -57791,7 +57836,7 @@ save__pdbx_dcc_map.LLDF
     _item_description.description
 ;              It is the Ligand Local Density Function defined as the
                (<RsR>_local - RsR_Ligand)/sigma_RsR, where <RsR>_local is the
-               mean RSR of polymer residues in 5 Angstrom (including the
+               mean RSR of polymer residues in 5 angstrom (including the
                crystallographic symmetry) surrounding the ligand, and sigma_RsR
                is sigma value calculated from the surrounding residues.
 ;
@@ -59064,7 +59109,7 @@ save__pdbx_percentile_list.name
 
                Example 1 - "all,1.8,xray" that include all geometric validation metrics
                            and X-ray specific metrics recommended by X-ray VTF with the criteria
-                           determined by the higher resolution 1.8 Angstroms.
+                           determined by the higher resolution 1.8 angstroms.
                Example 2 - "all,em": that include all geometric validation metrics
                            and EM specific metrics recommended by EM VTF.
                Example 3 - "all,nmr": that include all geometric validation metrics
@@ -60059,7 +60104,7 @@ save__pdbx_dcc_map.LLDF_name
 
                the Ligand Local Density Function is defined as the
                (<RsR>_local - RsR_Ligand)/sigma_RsR, where <RsR>_local is the
-               mean RSR of polymer residues in 5 Angstrom (including the
+               mean RSR of polymer residues in 5 angstrom (including the
                crystallographic symmetry) surrounding the ligand, and sigma_RsR
                is sigma value calculated from the surrounding residues.
 ;
@@ -60078,7 +60123,7 @@ save_
 
 save__pdbx_dcc_map.LLDF_sigma
     _item_description.description
-;              The standard deviation of RSR values of polymer residues in 5 Angstrom
+;              The standard deviation of RSR values of polymer residues in 5 angstrom
                (including the crystallographic symmetry) surrounding the ligand.
 
                Refer to definition of 'sigma_RsR' in _pdbx_dcc_map.LLDF.
@@ -60097,7 +60142,7 @@ save__pdbx_dcc_map.LLDFZ
     _item_description.description
 ;              Z-score of the Ligand Local Density Function (LLDF) defined as the
                (<RsR>_local - RsR_Ligand)/sigma_RsR, where <RsR>_local is the
-               mean RSR of polymer residues in 5 Angstrom (including the
+               mean RSR of polymer residues in 5 angstrom (including the
                crystallographic symmetry) surrounding the ligand, and sigma_RsR
                is sigma value calculated from the surrounding residues.
 ;
@@ -60746,7 +60791,7 @@ save_
 
 save__pdbx_validate_close_contact.clash_magnitude
     _item_description.description
-;              The difference in Angstroms between the observed interatomic distance
+;              The difference in angstroms between the observed interatomic distance
                and the sum of the van der Waals radii of the atoms involved.
 ;
     _item.name                  '_pdbx_validate_close_contact.clash_magnitude'
@@ -60766,7 +60811,7 @@ save_
 
 save__pdbx_validate_symm_contact.clash_magnitude
     _item_description.description
-;              The difference in Angstroms between the observed interatomic distance
+;              The difference in angstroms between the observed interatomic distance
                and the sum of the van der Waals radii of the atoms involved.
 ;
     _item.name                  '_pdbx_validate_symm_contact.clash_magnitude'
@@ -67693,7 +67738,7 @@ save__pdbx_nmr_restraint_violation.bin_units
     loop_
     _item_enumeration.value
     _item_enumeration.detail
-        'A'          'Angstroms (metres * 10^(-10)^) for distance restraints'
+        'A'          'angstroms (metres * 10^(-10)^) for distance restraints'
         'degrees'    'degrees (of arc) for dihedral angle restraints'
         'Hz'         'reciprocal seconds for RDC restraints'
 save_

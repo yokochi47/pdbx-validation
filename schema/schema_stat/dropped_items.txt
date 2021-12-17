@@ -152,6 +152,7 @@ pdbx_phasing_MR.LL_gain_translation WWPDB_LOCAL
 pdbx_phasing_MR.zscore_rotation WWPDB_LOCAL
 pdbx_phasing_MR.zscore_translation WWPDB_LOCAL
 pdbx_refine.free_R_val_no_cutoff WWPDB_LOCAL
+pdbx_struct_oper_list.full_matrix WWPDB_LOCAL
 refine_B_iso.pdbx_residue_name WWPDB_LOCAL
 refine_B_iso.pdbx_residue_num WWPDB_LOCAL
 refine_B_iso.pdbx_strand WWPDB_LOCAL

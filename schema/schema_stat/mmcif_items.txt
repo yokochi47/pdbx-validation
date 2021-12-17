@@ -4525,6 +4525,7 @@ pdbx_struct_oper_list_depositor_info.type
 pdbx_struct_oper_list_depositor_info.vector[1]
 pdbx_struct_oper_list_depositor_info.vector[2]
 pdbx_struct_oper_list_depositor_info.vector[3]
+pdbx_struct_oper_list.full_matrix
 pdbx_struct_oper_list.id
 pdbx_struct_oper_list.matrix[1][1]
 pdbx_struct_oper_list.matrix[1][2]
