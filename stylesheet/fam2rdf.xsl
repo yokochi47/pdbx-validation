@@ -3368,6 +3368,26 @@
       </PDBo:has_pdbx_buffer_components>
   </xsl:template>
 
+  <xsl:template match="PDBx:datablock/PDBx:pdbx_chain_remappingCategory/PDBx:pdbx_chain_remapping">
+      <PDBo:has_pdbx_chain_remapping>
+      <PDBo:pdbx_chain_remapping rdf:about="{$base}/pdbx_chain_remapping/{translate(@entity_id,' ^','_')},{translate(@label_asym_id,' ^','_')}">
+      <PDBo:of_datablock rdf:resource="{$base}"/>
+      <xsl:if test="@entity_id!=''">
+        <PDBo:reference_to_entity>
+	  <rdf:Description  rdf:about="{$base}/entity/{translate(@entity_id,' ^','_')}">
+	    <PDBo:referenced_by_pdbx_chain_remapping rdf:resource="{$base}/pdbx_chain_remapping/{translate(@entity_id,' ^','_')},{translate(@label_asym_id,' ^','_')}"/>
+	  </rdf:Description>
+        </PDBo:reference_to_entity>
+        <!-- entityKeyref_0_0_9_0 -->
+      </xsl:if>
+      <xsl:apply-templates select="@*"/>
+      <xsl:apply-templates select="@*" mode="linked"/>
+      <xsl:apply-templates/>
+      <xsl:apply-templates mode="linked"/>
+      </PDBo:pdbx_chain_remapping>
+      </PDBo:has_pdbx_chain_remapping>
+  </xsl:template>
+
   <xsl:template match="PDBx:datablock/PDBx:pdbx_chem_comp_atom_editCategory/PDBx:pdbx_chem_comp_atom_edit">
       <PDBo:has_pdbx_chem_comp_atom_edit>
       <PDBo:pdbx_chem_comp_atom_edit rdf:about="{$base}/pdbx_chem_comp_atom_edit/{translate(@ordinal,' ^','_')}">
@@ -4514,7 +4534,7 @@
 	    <PDBo:referenced_by_pdbx_entity_assembly rdf:resource="{$base}/pdbx_entity_assembly/{translate(@entity_id,' ^','_')},{translate(@id,' ^','_')}"/>
 	  </rdf:Description>
         </PDBo:reference_to_entity>
-        <!-- entityKeyref_0_0_9_0 -->
+        <!-- entityKeyref_0_0_10_0 -->
       </xsl:if>
       <xsl:if test="PDBx:biol_id!=''">
         <PDBo:reference_to_struct_biol>
@@ -4542,7 +4562,7 @@
 	    <PDBo:referenced_by_pdbx_entity_branch rdf:resource="{$base}/pdbx_entity_branch/{translate(@entity_id,' ^','_')}"/>
 	  </rdf:Description>
         </PDBo:reference_to_entity>
-        <!-- entityKeyref_0_0_10_0 -->
+        <!-- entityKeyref_0_0_11_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -4562,7 +4582,7 @@
 	    <PDBo:referenced_by_pdbx_entity_branch_descriptor rdf:resource="{$base}/pdbx_entity_branch_descriptor/{translate(@ordinal,' ^','_')}"/>
 	  </rdf:Description>
         </PDBo:reference_to_entity>
-        <!-- entityKeyref_0_0_11_0 -->
+        <!-- entityKeyref_0_0_12_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -4602,7 +4622,7 @@
 	    <PDBo:referenced_by_pdbx_entity_branch_list rdf:resource="{$base}/pdbx_entity_branch_list/{translate(@comp_id,' ^','_')},{translate(@entity_id,' ^','_')},{translate(@num,' ^','_')}"/>
 	  </rdf:Description>
         </PDBo:reference_to_entity>
-        <!-- entityKeyref_0_0_12_0 -->
+        <!-- entityKeyref_0_0_13_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -4622,7 +4642,7 @@
 	    <PDBo:referenced_by_pdbx_entity_func_bind_mode rdf:resource="{$base}/pdbx_entity_func_bind_mode/{translate(@domain_id,' ^','_')},{translate(@entity_id,' ^','_')},{translate(@id,' ^','_')}"/>
 	  </rdf:Description>
         </PDBo:reference_to_entity>
-        <!-- entityKeyref_0_0_13_0 -->
+        <!-- entityKeyref_0_0_14_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -4702,7 +4722,7 @@
 	    <PDBo:referenced_by_pdbx_entity_name rdf:resource="{$base}/pdbx_entity_name/{translate(@entity_id,' ^','_')},{translate(@name,' ^','_')},{translate(@name_type,' ^','_')}"/>
 	  </rdf:Description>
         </PDBo:reference_to_entity>
-        <!-- entityKeyref_0_0_14_0 -->
+        <!-- entityKeyref_0_0_15_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -4758,7 +4778,7 @@
 	    <PDBo:referenced_by_pdbx_entity_nonpoly rdf:resource="{$base}/pdbx_entity_nonpoly/{translate(@entity_id,' ^','_')}"/>
 	  </rdf:Description>
         </PDBo:reference_to_entity>
-        <!-- entityKeyref_0_0_15_0 -->
+        <!-- entityKeyref_0_0_16_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -4798,7 +4818,7 @@
 	    <PDBo:referenced_by_pdbx_entity_poly_domain rdf:resource="{$base}/pdbx_entity_poly_domain/{translate(@entity_id,' ^','_')},{translate(@id,' ^','_')}"/>
 	  </rdf:Description>
         </PDBo:reference_to_entity>
-        <!-- entityKeyref_0_0_16_0 -->
+        <!-- entityKeyref_0_0_17_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -4818,7 +4838,7 @@
 	    <PDBo:referenced_by_pdbx_entity_poly_na_nonstandard rdf:resource="{$base}/pdbx_entity_poly_na_nonstandard/{translate(@entity_id,' ^','_')},{translate(@feature,' ^','_')}"/>
 	  </rdf:Description>
         </PDBo:reference_to_entity>
-        <!-- entityKeyref_0_0_17_0 -->
+        <!-- entityKeyref_0_0_18_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -4838,7 +4858,7 @@
 	    <PDBo:referenced_by_pdbx_entity_poly_na_type rdf:resource="{$base}/pdbx_entity_poly_na_type/{translate(@entity_id,' ^','_')},{translate(@type,' ^','_')}"/>
 	  </rdf:Description>
         </PDBo:reference_to_entity>
-        <!-- entityKeyref_0_0_18_0 -->
+        <!-- entityKeyref_0_0_19_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -4858,7 +4878,7 @@
 	    <PDBo:referenced_by_pdbx_entity_poly_protein_class rdf:resource="{$base}/pdbx_entity_poly_protein_class/{translate(@class,' ^','_')},{translate(@entity_id,' ^','_')}"/>
 	  </rdf:Description>
         </PDBo:reference_to_entity>
-        <!-- entityKeyref_0_0_19_0 -->
+        <!-- entityKeyref_0_0_20_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -4878,7 +4898,7 @@
 	    <PDBo:referenced_by_pdbx_entity_prod_protocol rdf:resource="{$base}/pdbx_entity_prod_protocol/{translate(@entity_id,' ^','_')},{translate(@entry_id,' ^','_')},{translate(@protocol_type,' ^','_')}"/>
 	  </rdf:Description>
         </PDBo:reference_to_entity>
-        <!-- entityKeyref_0_0_20_0 -->
+        <!-- entityKeyref_0_0_21_0 -->
       </xsl:if>
       <xsl:if test="@entry_id!=''">
         <PDBo:reference_to_entry>
@@ -4896,6 +4916,26 @@
       </PDBo:has_pdbx_entity_prod_protocol>
   </xsl:template>
 
+  <xsl:template match="PDBx:datablock/PDBx:pdbx_entity_remappingCategory/PDBx:pdbx_entity_remapping">
+      <PDBo:has_pdbx_entity_remapping>
+      <PDBo:pdbx_entity_remapping rdf:about="{$base}/pdbx_entity_remapping/{translate(@entity_id,' ^','_')}">
+      <PDBo:of_datablock rdf:resource="{$base}"/>
+      <xsl:if test="@entity_id!=''">
+        <PDBo:reference_to_entity>
+	  <rdf:Description  rdf:about="{$base}/entity/{translate(@entity_id,' ^','_')}">
+	    <PDBo:referenced_by_pdbx_entity_remapping rdf:resource="{$base}/pdbx_entity_remapping/{translate(@entity_id,' ^','_')}"/>
+	  </rdf:Description>
+        </PDBo:reference_to_entity>
+        <!-- entityKeyref_0_0_22_0 -->
+      </xsl:if>
+      <xsl:apply-templates select="@*"/>
+      <xsl:apply-templates select="@*" mode="linked"/>
+      <xsl:apply-templates/>
+      <xsl:apply-templates mode="linked"/>
+      </PDBo:pdbx_entity_remapping>
+      </PDBo:has_pdbx_entity_remapping>
+  </xsl:template>
+
   <xsl:template match="PDBx:datablock/PDBx:pdbx_entity_src_gen_characterCategory/PDBx:pdbx_entity_src_gen_character">
       <PDBo:has_pdbx_entity_src_gen_character>
       <PDBo:pdbx_entity_src_gen_character rdf:about="{$base}/pdbx_entity_src_gen_character/{translate(@entity_id,' ^','_')},{translate(@entry_id,' ^','_')},{translate(@step_id,' ^','_')}">
@@ -4906,7 +4946,7 @@
 	    <PDBo:referenced_by_pdbx_entity_src_gen_character rdf:resource="{$base}/pdbx_entity_src_gen_character/{translate(@entity_id,' ^','_')},{translate(@entry_id,' ^','_')},{translate(@step_id,' ^','_')}"/>
 	  </rdf:Description>
         </PDBo:reference_to_entity>
-        <!-- entityKeyref_0_0_21_0 -->
+        <!-- entityKeyref_0_0_23_0 -->
       </xsl:if>
       <xsl:if test="@entry_id!=''">
         <PDBo:reference_to_entry>
@@ -4934,7 +4974,7 @@
 	    <PDBo:referenced_by_pdbx_entity_src_gen_chrom rdf:resource="{$base}/pdbx_entity_src_gen_chrom/{translate(@entity_id,' ^','_')},{translate(@entry_id,' ^','_')},{translate(@step_id,' ^','_')}"/>
 	  </rdf:Description>
         </PDBo:reference_to_entity>
-        <!-- entityKeyref_0_0_22_0 -->
+        <!-- entityKeyref_0_0_24_0 -->
       </xsl:if>
       <xsl:if test="@entry_id!=''">
         <PDBo:reference_to_entry>
@@ -4978,7 +5018,7 @@
 	    <PDBo:referenced_by_pdbx_entity_src_gen_clone rdf:resource="{$base}/pdbx_entity_src_gen_clone/{translate(@entity_id,' ^','_')},{translate(@entry_id,' ^','_')},{translate(@step_id,' ^','_')}"/>
 	  </rdf:Description>
         </PDBo:reference_to_entity>
-        <!-- entityKeyref_0_0_23_0 -->
+        <!-- entityKeyref_0_0_25_0 -->
       </xsl:if>
       <xsl:if test="@entry_id!=''">
         <PDBo:reference_to_entry>
@@ -5058,7 +5098,7 @@
 	    <PDBo:referenced_by_pdbx_entity_src_gen_express rdf:resource="{$base}/pdbx_entity_src_gen_express/{translate(@entity_id,' ^','_')},{translate(@entry_id,' ^','_')},{translate(@step_id,' ^','_')}"/>
 	  </rdf:Description>
         </PDBo:reference_to_entity>
-        <!-- entityKeyref_0_0_24_0 -->
+        <!-- entityKeyref_0_0_26_0 -->
       </xsl:if>
       <xsl:if test="@entry_id!=''">
         <PDBo:reference_to_entry>
@@ -5114,7 +5154,7 @@
 	    <PDBo:referenced_by_pdbx_entity_src_gen_fract rdf:resource="{$base}/pdbx_entity_src_gen_fract/{translate(@entity_id,' ^','_')},{translate(@entry_id,' ^','_')},{translate(@step_id,' ^','_')}"/>
 	  </rdf:Description>
         </PDBo:reference_to_entity>
-        <!-- entityKeyref_0_0_25_0 -->
+        <!-- entityKeyref_0_0_27_0 -->
       </xsl:if>
       <xsl:if test="@entry_id!=''">
         <PDBo:reference_to_entry>
@@ -5142,7 +5182,7 @@
 	    <PDBo:referenced_by_pdbx_entity_src_gen_lysis rdf:resource="{$base}/pdbx_entity_src_gen_lysis/{translate(@entity_id,' ^','_')},{translate(@entry_id,' ^','_')},{translate(@step_id,' ^','_')}"/>
 	  </rdf:Description>
         </PDBo:reference_to_entity>
-        <!-- entityKeyref_0_0_26_0 -->
+        <!-- entityKeyref_0_0_28_0 -->
       </xsl:if>
       <xsl:if test="@entry_id!=''">
         <PDBo:reference_to_entry>
@@ -5178,7 +5218,7 @@
 	    <PDBo:referenced_by_pdbx_entity_src_gen_prod_digest rdf:resource="{$base}/pdbx_entity_src_gen_prod_digest/{translate(@entity_id,' ^','_')},{translate(@entry_id,' ^','_')},{translate(@step_id,' ^','_')}"/>
 	  </rdf:Description>
         </PDBo:reference_to_entity>
-        <!-- entityKeyref_0_0_27_0 -->
+        <!-- entityKeyref_0_0_29_0 -->
       </xsl:if>
       <xsl:if test="@entry_id!=''">
         <PDBo:reference_to_entry>
@@ -5206,7 +5246,7 @@
 	    <PDBo:referenced_by_pdbx_entity_src_gen_prod_other rdf:resource="{$base}/pdbx_entity_src_gen_prod_other/{translate(@entity_id,' ^','_')},{translate(@entry_id,' ^','_')},{translate(@step_id,' ^','_')}"/>
 	  </rdf:Description>
         </PDBo:reference_to_entity>
-        <!-- entityKeyref_0_0_28_0 -->
+        <!-- entityKeyref_0_0_30_0 -->
       </xsl:if>
       <xsl:if test="@entry_id!=''">
         <PDBo:reference_to_entry>
@@ -5254,7 +5294,7 @@
 	    <PDBo:referenced_by_pdbx_entity_src_gen_prod_pcr rdf:resource="{$base}/pdbx_entity_src_gen_prod_pcr/{translate(@entity_id,' ^','_')},{translate(@entry_id,' ^','_')},{translate(@step_id,' ^','_')}"/>
 	  </rdf:Description>
         </PDBo:reference_to_entity>
-        <!-- entityKeyref_0_0_29_0 -->
+        <!-- entityKeyref_0_0_31_0 -->
       </xsl:if>
       <xsl:if test="@entry_id!=''">
         <PDBo:reference_to_entry>
@@ -5298,7 +5338,7 @@
 	    <PDBo:referenced_by_pdbx_entity_src_gen_proteolysis rdf:resource="{$base}/pdbx_entity_src_gen_proteolysis/{translate(@entity_id,' ^','_')},{translate(@entry_id,' ^','_')},{translate(@step_id,' ^','_')}"/>
 	  </rdf:Description>
         </PDBo:reference_to_entity>
-        <!-- entityKeyref_0_0_30_0 -->
+        <!-- entityKeyref_0_0_32_0 -->
       </xsl:if>
       <xsl:if test="@entry_id!=''">
         <PDBo:reference_to_entry>
@@ -5326,7 +5366,7 @@
 	    <PDBo:referenced_by_pdbx_entity_src_gen_pure rdf:resource="{$base}/pdbx_entity_src_gen_pure/{translate(@entity_id,' ^','_')},{translate(@entry_id,' ^','_')},{translate(@step_id,' ^','_')}"/>
 	  </rdf:Description>
         </PDBo:reference_to_entity>
-        <!-- entityKeyref_0_0_31_0 -->
+        <!-- entityKeyref_0_0_33_0 -->
       </xsl:if>
       <xsl:if test="@entry_id!=''">
         <PDBo:reference_to_entry>
@@ -5362,7 +5402,7 @@
 	    <PDBo:referenced_by_pdbx_entity_src_gen_refold rdf:resource="{$base}/pdbx_entity_src_gen_refold/{translate(@entity_id,' ^','_')},{translate(@entry_id,' ^','_')},{translate(@step_id,' ^','_')}"/>
 	  </rdf:Description>
         </PDBo:reference_to_entity>
-        <!-- entityKeyref_0_0_32_0 -->
+        <!-- entityKeyref_0_0_34_0 -->
       </xsl:if>
       <xsl:if test="@entry_id!=''">
         <PDBo:reference_to_entry>
@@ -5414,7 +5454,7 @@
 	    <PDBo:referenced_by_pdbx_entity_src_syn rdf:resource="{$base}/pdbx_entity_src_syn/{translate(@entity_id,' ^','_')},{translate(@pdbx_src_id,' ^','_')}"/>
 	  </rdf:Description>
         </PDBo:reference_to_entity>
-        <!-- entityKeyref_0_0_33_0 -->
+        <!-- entityKeyref_0_0_35_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -5778,7 +5818,7 @@
 	    <PDBo:referenced_by_pdbx_linked_entity_list rdf:resource="{$base}/pdbx_linked_entity_list/{translate(@component_id,' ^','_')},{translate(@entity_id,' ^','_')},{translate(@linked_entity_id,' ^','_')}"/>
 	  </rdf:Description>
         </PDBo:reference_to_entity>
-        <!-- entityKeyref_0_0_34_0 -->
+        <!-- entityKeyref_0_0_36_0 -->
       </xsl:if>
       <xsl:if test="@linked_entity_id!=''">
         <PDBo:reference_to_pdbx_linked_entity>
@@ -6514,7 +6554,7 @@
 	    <PDBo:referenced_by_pdbx_prerelease_seq rdf:resource="{$base}/pdbx_prerelease_seq/{translate(@entity_id,' ^','_')}"/>
 	  </rdf:Description>
         </PDBo:reference_to_entity>
-        <!-- entityKeyref_0_0_35_0 -->
+        <!-- entityKeyref_0_0_37_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -9021,7 +9061,7 @@
 	    <PDBo:referenced_by_struct_asym rdf:resource="{$base}/struct_asym/{translate(@id,' ^','_')}"/>
 	  </rdf:Description>
         </PDBo:reference_to_entity>
-        <!-- entityKeyref_0_0_36_0 -->
+        <!-- entityKeyref_0_0_38_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -9353,7 +9393,7 @@
 	    <PDBo:referenced_by_struct_ref rdf:resource="{$base}/struct_ref/{translate(@id,' ^','_')}"/>
 	  </rdf:Description>
         </PDBo:reference_to_entity>
-        <!-- entityKeyref_0_0_37_0 -->
+        <!-- entityKeyref_0_0_39_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>

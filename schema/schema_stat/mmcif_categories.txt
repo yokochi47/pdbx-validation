@@ -181,6 +181,7 @@ pdbx_bond_distance_limits
 pdbx_branch_scheme
 pdbx_buffer
 pdbx_buffer_components
+pdbx_chain_remapping
 pdbx_chem_comp_atom_edit
 pdbx_chem_comp_atom_feature
 pdbx_chem_comp_atom_related
@@ -275,6 +276,7 @@ pdbx_entity_poly_na_nonstandard
 pdbx_entity_poly_na_type
 pdbx_entity_poly_protein_class
 pdbx_entity_prod_protocol
+pdbx_entity_remapping
 pdbx_entity_src_gen_character
 pdbx_entity_src_gen_chrom
 pdbx_entity_src_gen_clone

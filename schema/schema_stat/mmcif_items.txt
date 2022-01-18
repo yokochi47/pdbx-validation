@@ -2032,6 +2032,12 @@ pdbx_buffer_components.volume
 pdbx_buffer.details
 pdbx_buffer.id
 pdbx_buffer.name
+pdbx_chain_remapping.applied_operations
+pdbx_chain_remapping.auth_asym_id
+pdbx_chain_remapping.entity_id
+pdbx_chain_remapping.label_asym_id
+pdbx_chain_remapping.orig_auth_asym_id
+pdbx_chain_remapping.orig_label_asym_id
 pdbx_chem_comp_atom_edit.atom_id
 pdbx_chem_comp_atom_edit.comp_id
 pdbx_chem_comp_atom_edit.edit_atom_id
@@ -2865,6 +2871,8 @@ pdbx_entity_prod_protocol.entity_id
 pdbx_entity_prod_protocol.entry_id
 pdbx_entity_prod_protocol.protocol
 pdbx_entity_prod_protocol.protocol_type
+pdbx_entity_remapping.entity_id
+pdbx_entity_remapping.orig_entity_id
 pdbx_entity_src_gen_character.date
 pdbx_entity_src_gen_character.details
 pdbx_entity_src_gen_character.entity_id

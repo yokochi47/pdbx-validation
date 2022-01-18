@@ -1,10 +1,10 @@
 ###########################################################################
 #
 # File:  mmcif_pdbx_validation-v4.dic
-# Date:  Fri Dec 17 18:18:20 JST 2021
+# Date:  Tue Jan 18 18:13:56 JST 2022
 #
 # Created from:
-#        mmcif_pdbx_v50.dic   - PDB Exchange Data Dictionary (V5.353)
+#        mmcif_pdbx_v50.dic   - PDB Exchange Data Dictionary (V5.354)
 #        http://wwpdb.org/validation/schema/wwpdb_validation_v6.00.xsd
 #         - a XML schema for wwPDB validation reports, v6.00, rev. 2021-01-22
 #
@@ -31,7 +31,7 @@ data_mmcif_pdbx_validation.dic
 
     _dictionary.title           mmcif_pdbx_validation.dic
     _dictionary.datablock_id    mmcif_pdbx_validation.dic
-    _dictionary.version         4.353
+    _dictionary.version         4.354
 #
     loop_
     _dictionary_history.version
@@ -978,6 +978,12 @@ data_mmcif_pdbx_validation.dic
 >     + Add "TFS Selectris" and "TFS Selectris X" to _em_imaging_optics.energyfilter_name # merged
 >     + Add "FEI tomography" to _em_software.name enumeration # merged
 >     + Add _pdbx_struct_oper_list.full_matrix # not mapped (WWPDB_LOCAL)
+;
+  4.354   2022-01-18
+;
+>     + Introduce _pdbx_entity_remapping and _pdbx_chain_remapping categories # not mapped
+>     + Extend _pdbx_sudit_support.funding_organization enumeration # not mapped
+>     + Add "xia2.multiplex" to _software.name enumeration # not mapped
 ;
 
 

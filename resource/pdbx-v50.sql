@@ -21,7 +21,7 @@
 --  map xsd date type to: sql date type
 --
 -- Statistics of schema:
---  Generated 568 tables (6950 fields), 0 views (0 fields), 0 attr groups, 0 model groups in total
+--  Generated 570 tables (6960 fields), 0 views (0 fields), 0 attr groups, 0 model groups in total
 --   Unnecessary tables by inlining simple content as a primitive data type:
 --    schema location: pdbx-v50.xsd
 --      temperature, final_thickness, "B_calc", zeta, "L23", "L11", "pdbx_F_calc_with_solvent", time, "model_Cartn_y_esd", diffr_phi, "B_iso_or_equiv", pdbx_solvent_vdw_probe_radii, maximum_torsion_angle_constraint_violation, "A_meas_au", lower_limit, "F_meas", "S31", "F_meas_au", "Cartn_x_esd", length_a_esd, "L22", "F_squared_calc", volume_three, mean_guiner_radius, reciprocal_angle_beta_esd, beta_tolerance, maximum_upper_distance_constraint_violation, bond_deviation, nominal_defocus_min, resolution, pdbx_mosaicity_esd, "B33", angle, "B_iso_min", "U_equiv_geom_mean_esd", psi, "U33_esd", bond_angle_rms_dev, "S33_esd", angle_gamma_esd, pdbx_crystal_direction_3, dihedral_angles_rms_dev, pdbx_crystal_direction_2, "angle_DHA_esd", epsilon, pdbx_crystal_direction_1, bond, "aniso_U22", induction_temperature, average_torsion_angle_constraint_violation, "L33", angle_phi, "aniso_B11_esd", pdbx_solvent_ion_probe_radii, "aniso_B33_esd", "dist_HA_esd", "B_calc_au", culture_temperature, "S23_esd", sample_volume, diffr_kappa, reciprocal_length_a_esd, peptide_planarity_rms_dev, "sigmaI", recording_temperature_minimum, pdbx_solvent_shrinkage_radii, "aniso_U33", maximum_lower_distance_constraint_violation, culture_time, "aniso_U22_esd", column_volume, tilt_angle_min, prot_cis, electron_dose, scan_time_backgd, "aniso_B23_esd", protein_yield, "B_equiv_geom_mean_esd", calibrated_defocus_min, "F_squared_meas", "B22_esd", "aniso_U12", pdbx_dist_value, "U11_esd", induction_timepoint, "L12_esd", "T11_esd", "model_Cartn_y", energyfilter_lower, alpha, pressure, atom_deviation, "U13", improper_torsion_angle_rms_dev_error, "B12_esd", "T12_esd", "aniso_U13_esd", "pdbx_model_Cartn_y_ideal", "A_calc_au", pdbx_phase_calc_part_solvent, reciprocal_angle_gamma_esd, "aniso_U11", "aniso_U23", angle_value, "F_squared_sigma", buffer_volume, covalent_bond_rms_dev, reciprocal_angle_alpha_esd, "L13_esd", "model_Cartn_x", "T13_esd", rotation_per_n_subunits, diff_density_min, "B_iso", "U12", angle_omega, energyfilter_upper, mean_guiner_radius_esd, "A_meas", "aniso_U23_esd", storage_temperature, mol_wt_theo, tau1, distance_rms_dev, tau2, tau3, tau4, "U23", "I", flow_rate, dist, "A_calc", angle_deviation, temperature_decomposition_esd, nominal_defocus_max, "B_iso_mean", "U11", "aniso_U33_esd", dist_esd, "aniso_U13", value_esd, upper_limit, "B_meas", cleavage_time, "pdbx_res_netI_over_av_sigmaI_2", "model_Cartn_z", density_meas_temp_esd, "T13", maximum_distance_constraint_violation, tau0, "B11_esd", angle_beta_esd, "L22_esd", "T22_esd", "U22", gamma_tolerance, temp, "U_tls22", phase_calc, angle_chi, "aniso_B22_esd", improper_torsion_angle_rms_dev, diff_density_max_esd, sample_concentration, rmsd, "pdbx_F_calc_part_solvent", cleavage_temperature, "pdbx_res_netI_over_sigmaI_2", "Luzzati_sigma_a_obs", "Luzzati_coordinate_error_free", temperature_sublimation_esd, "F_meas_sigma", "U33", "model_Cartn_z_esd", "T12", dihedral_angles_rms_dev_error, pdbx_scan_angle, "B_iso_or_equiv_esd", angle_target_value, "Cartn_y_esd", angle_psi, "U_tls11", bond_angle_rms_dev_error, "B23_esd", "U_iso_or_equiv_esd", volume_esd, "U_tls23", pdbx_phase_calc_with_solvent, taum, "S22_esd", diffr_chi, "T23", "B", pressure_esd, column_temperature, "T11", min_mean_cross_sectional_radii_gyration_esd, "Luzzati_d_res_low_free", chi2, chi1, "L23_esd", chi4, chi3, "aniso_B22", pdbx_collection_time_total, chi5, angle_alpha_esd, scan_rate, neighbor_ligand_distance, length_b_esd, "T23_esd", pdbx_crystal_diffrn_lifetime, peptide_planarity_rms_dev_error, "S13", "Ro", "T22", voltage, "S32_esd", beta, average_distance_constraint_violation, "aniso_B33", energy_window, dev, "U_tls33", "S13_esd", "model_Cartn_x_esd", "L11_esd", volume_three_esd, protein_volume, residual_tilt, value, "T33_esd", angle_kappa, rise_per_n_subunits, reciprocal_length_c_esd, "L33_esd", "S12", scat_length_neutron, "T33", "S11_esd", improper_torsion_angle, current, "aniso_B12", alpha_tolerance, "Luzzati_coordinate_error_obs", "P", gamma, diff_density_rms_esd, "B13_esd", phi, "aniso_U12_esd", neighbor_macromolecule_distance, "pre_Cartn_x", "B_iso_Wilson_estimate", "B12", ambient_temp_esd, "Cartn_z", "F_calc", "pdbx_model_Cartn_x_ideal", ambient_pressure_esd, pdbx_crystal_diffrn_limit, yield_pooled_fractions, "U12_esd", "S12_esd", phase_meas, "pdbx_model_Cartn_z_ideal", recording_temperature_maximum, "S23", diff_density_max, "aniso_B13_esd", tilt_angle_max, "S11", origin_y, origin_x, nu4, nu3, nu2, nu1, "aniso_B11", nu0, "aniso_B23", max_mean_cross_sectional_radii_gyration, angle_theta, covalent_bond_rms_dev_error, "Luzzati_d_res_low_obs", origin_z, power, "dist_DA_esd", "B13", min_mean_cross_sectional_radii_gyration, temp_esd, culture_volume, inducer_concentration, "S22", "B_meas_au", "U22_esd", pdbx_mosaicity, omega, length_c_esd, pdbx_rotation_angle, diff_density_min_esd, "S31_esd", "pre_Cartn_z", "U_tls12", volume_pooled_fractions, "B_iso_esd", "U13_esd", delta, detector_distance, "Cartn_x", "B22", "U23_esd", diffr_psi, distance_rms_dev_error, "S21", max_mean_cross_sectional_radii_gyration_esd, "S33", "L12", "B_iso_max", "aniso_B13", reciprocal_length_b_esd, diff_density_rms, "Luzzati_sigma_a_free", "aniso_B12_esd", protein_concentration, mol_wt_exp, concentration_range, "pre_Cartn_y", "S21_esd", "F_calc_au", "U_tls13", "Cartn_z_esd", "B33_esd", "B23", sampling_size, "B11", "Cartn_y", chamber_temperature, "aniso_U11_esd", density_meas_esd, "dist_DH_esd", multiplicity_of_infection, "L13", "F_meas_sigma_au", "S32"
@@ -30,22 +30,22 @@
 --   Schema locations:
 --    pdbx-v50.xsd
 --   Table types:
---    0 root, 0 root children, 0 admin roots, 568 admin children
+--    0 root, 0 root children, 0 admin roots, 570 admin children
 --   System keys:
 --    0 primary keys (0 unique constraints), 0 foreign keys, 0 nested keys (0 as attribute, 0 as attribute group)
 --   User keys:
---    568 document keys, 0 serial keys, 0 xpath keys
+--    570 document keys, 0 serial keys, 0 xpath keys
 --   Contents:
---    1047 attributes (0 in-place document keys), 5335 elements (0 in-place document keys), 0 simple contents (0 in-place document keys, 0 as attribute, 0 as conditional attribute)
+--    1050 attributes (0 in-place document keys), 5340 elements (0 in-place document keys), 0 simple contents (0 in-place document keys, 0 as attribute, 0 as conditional attribute)
 --   Wild cards:
 --    0 any elements, 0 any attributes
 --   Constraints:
---    568 unique constraints from xsd:key, 1 unique constraints from xsd:unique, 345 foreign key constraints from xsd:keyref
+--    570 unique constraints from xsd:key, 1 unique constraints from xsd:unique, 347 foreign key constraints from xsd:keyref
 --
 
 --
--- PDBML Schema v5.353
--- PDBML Schema translated from the PDBx/mmCIF Dictionary v5.353: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
+-- PDBML Schema v5.354
+-- PDBML Schema translated from the PDBx/mmCIF Dictionary v5.354: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
 -- URI-reference = http://pdbml.pdb.org/schema/pdbx-v50.xsd
 --
 
@@ -213,6 +213,7 @@ DROP TABLE IF EXISTS pdbx_audit_support CASCADE;
 DROP TABLE IF EXISTS pdbx_bond_distance_limits CASCADE;
 DROP TABLE IF EXISTS pdbx_branch_scheme CASCADE;
 DROP TABLE IF EXISTS pdbx_buffer_components CASCADE;
+DROP TABLE IF EXISTS pdbx_chain_remapping CASCADE;
 DROP TABLE IF EXISTS pdbx_chem_comp_atom_edit CASCADE;
 DROP TABLE IF EXISTS pdbx_chem_comp_atom_feature CASCADE;
 DROP TABLE IF EXISTS pdbx_chem_comp_atom_related CASCADE;
@@ -302,6 +303,7 @@ DROP TABLE IF EXISTS pdbx_entity_poly_na_nonstandard CASCADE;
 DROP TABLE IF EXISTS pdbx_entity_poly_na_type CASCADE;
 DROP TABLE IF EXISTS pdbx_entity_poly_protein_class CASCADE;
 DROP TABLE IF EXISTS pdbx_entity_prod_protocol CASCADE;
+DROP TABLE IF EXISTS pdbx_entity_remapping CASCADE;
 DROP TABLE IF EXISTS pdbx_entity_src_gen_character CASCADE;
 DROP TABLE IF EXISTS pdbx_entity_src_gen_chrom CASCADE;
 DROP TABLE IF EXISTS pdbx_entity_src_gen_clone_ligation CASCADE;
@@ -6912,6 +6914,25 @@ CREATE TABLE pdbx_buffer_components (
 );
 
 --
+-- (quoted from pdbx_chain_remappingType)
+-- When producing a biological assembly model file, data items in the pdbx_chain_remapping provide a mapping from the entity in original model file to this data file. Example 1 - 6vjo <PDBx:pdbx_chain_remappingCategory> <PDBx:pdbx_chain_remapping entity_id="1" label_asym_id="A"> <PDBx:applied_operations>1</PDBx:applied_operations> <PDBx:auth_asym_id>A</PDBx:auth_asym_id> <PDBx:orig_auth_asym_id>A</PDBx:orig_auth_asym_id> <PDBx:orig_label_asym_id>A</PDBx:orig_label_asym_id> </PDBx:pdbx_chain_remapping> <PDBx:pdbx_chain_remapping entity_id="2" label_asym_id="B"> <PDBx:applied_operations>1</PDBx:applied_operations> <PDBx:auth_asym_id>B</PDBx:auth_asym_id> <PDBx:orig_auth_asym_id>B</PDBx:orig_auth_asym_id> <PDBx:orig_label_asym_id>B</PDBx:orig_label_asym_id> </PDBx:pdbx_chain_remapping> <PDBx:pdbx_chain_remapping entity_id="1" label_asym_id="A_2"> <PDBx:applied_operations>2</PDBx:applied_operations> <PDBx:auth_asym_id>A_2</PDBx:auth_asym_id> <PDBx:orig_auth_asym_id>A</PDBx:orig_auth_asym_id> <PDBx:orig_label_asym_id>A</PDBx:orig_label_asym_id> </PDBx:pdbx_chain_remapping> <PDBx:pdbx_chain_remapping entity_id="2" label_asym_id="B_2"> <PDBx:applied_operations>2</PDBx:applied_operations> <PDBx:auth_asym_id>B_2</PDBx:auth_asym_id> <PDBx:orig_auth_asym_id>B</PDBx:orig_auth_asym_id> <PDBx:orig_label_asym_id>B</PDBx:orig_label_asym_id> </PDBx:pdbx_chain_remapping> <PDBx:pdbx_chain_remapping entity_id="1" label_asym_id="A_3"> <PDBx:applied_operations>3</PDBx:applied_operations> <PDBx:auth_asym_id>A_3</PDBx:auth_asym_id> <PDBx:orig_auth_asym_id>A</PDBx:orig_auth_asym_id> <PDBx:orig_label_asym_id>A</PDBx:orig_label_asym_id> </PDBx:pdbx_chain_remapping> <PDBx:pdbx_chain_remapping entity_id="2" label_asym_id="B_3"> <PDBx:applied_operations>3</PDBx:applied_operations> <PDBx:auth_asym_id>B_3</PDBx:auth_asym_id> <PDBx:orig_auth_asym_id>B</PDBx:orig_auth_asym_id> <PDBx:orig_label_asym_id>B</PDBx:orig_label_asym_id> </PDBx:pdbx_chain_remapping> <PDBx:pdbx_chain_remapping entity_id="3" label_asym_id="C"> <PDBx:applied_operations>1</PDBx:applied_operations> <PDBx:auth_asym_id>A</PDBx:auth_asym_id> <PDBx:orig_auth_asym_id>A</PDBx:orig_auth_asym_id> <PDBx:orig_label_asym_id>C</PDBx:orig_label_asym_id> </PDBx:pdbx_chain_remapping> <PDBx:pdbx_chain_remapping entity_id="3" label_asym_id="D"> <PDBx:applied_operations>1</PDBx:applied_operations> <PDBx:auth_asym_id>B</PDBx:auth_asym_id> <PDBx:orig_auth_asym_id>B</PDBx:orig_auth_asym_id> <PDBx:orig_label_asym_id>D</PDBx:orig_label_asym_id> </PDBx:pdbx_chain_remapping> <PDBx:pdbx_chain_remapping entity_id="3" label_asym_id="C_2"> <PDBx:applied_operations>2</PDBx:applied_operations> <PDBx:auth_asym_id>A_2</PDBx:auth_asym_id> <PDBx:orig_auth_asym_id>A</PDBx:orig_auth_asym_id> <PDBx:orig_label_asym_id>C</PDBx:orig_label_asym_id> </PDBx:pdbx_chain_remapping> <PDBx:pdbx_chain_remapping entity_id="3" label_asym_id="D_2"> <PDBx:applied_operations>2</PDBx:applied_operations> <PDBx:auth_asym_id>B_2</PDBx:auth_asym_id> <PDBx:orig_auth_asym_id>B</PDBx:orig_auth_asym_id> <PDBx:orig_label_asym_id>D</PDBx:orig_label_asym_id> </PDBx:pdbx_chain_remapping> <PDBx:pdbx_chain_remapping entity_id="3" label_asym_id="C_3"> <PDBx:applied_operations>3</PDBx:applied_operations> <PDBx:auth_asym_id>A_3</PDBx:auth_asym_id> <PDBx:orig_auth_asym_id>A</PDBx:orig_auth_asym_id> <PDBx:orig_label_asym_id>C</PDBx:orig_label_asym_id> </PDBx:pdbx_chain_remapping> <PDBx:pdbx_chain_remapping entity_id="3" label_asym_id="D_3"> <PDBx:applied_operations>3</PDBx:applied_operations> <PDBx:auth_asym_id>B_3</PDBx:auth_asym_id> <PDBx:orig_auth_asym_id>B</PDBx:orig_auth_asym_id> <PDBx:orig_label_asym_id>D</PDBx:orig_label_asym_id> </PDBx:pdbx_chain_remapping> </PDBx:pdbx_chain_remappingCategory>
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE pdbx_chain_remapping (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+	applied_operations TEXT ,
+	auth_asym_id TEXT ,
+	orig_auth_asym_id TEXT ,
+	orig_label_asym_id TEXT ,
+-- ATTRIBUTE
+	entity_id TEXT NOT NULL ,
+-- ATTRIBUTE
+	label_asym_id TEXT NOT NULL
+);
+
+--
 -- (quoted from pdbx_chem_comp_atom_editType)
 -- Data items in the PDBX_CHEM_COMP_ATOM_EDIT category provide atom level editing instructions to be applied to imported chemical components. Example 1 - <PDBx:pdbx_chem_comp_atom_editCategory> <PDBx:pdbx_chem_comp_atom_edit ordinal="1"> <PDBx:atom_id>HN2</PDBx:atom_id> <PDBx:comp_id>LYS</PDBx:comp_id> <PDBx:edit_op>DELETE</PDBx:edit_op> </PDBx:pdbx_chem_comp_atom_edit> </PDBx:pdbx_chem_comp_atom_editCategory>
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
@@ -9149,6 +9170,20 @@ CREATE TABLE pdbx_entity_prod_protocol (
 	entry_id TEXT NOT NULL ,
 -- ATTRIBUTE
 	protocol_type ENUM_pdbx_entity_prod_protocol_protocol_type NOT NULL
+);
+
+--
+-- (quoted from pdbx_entity_remappingType)
+-- When producing a biological assembly model file, data items in the pdbx_entity_remapping provide a mapping from the entity in original model file to this data file. Example 1 - 6vjo <PDBx:pdbx_entity_remappingCategory> <PDBx:pdbx_entity_remapping entity_id="1"> <PDBx:orig_entity_id>1</PDBx:orig_entity_id> </PDBx:pdbx_entity_remapping> <PDBx:pdbx_entity_remapping entity_id="2"> <PDBx:orig_entity_id>2</PDBx:orig_entity_id> </PDBx:pdbx_entity_remapping> <PDBx:pdbx_entity_remapping entity_id="3"> <PDBx:orig_entity_id>3</PDBx:orig_entity_id> </PDBx:pdbx_entity_remapping> </PDBx:pdbx_entity_remappingCategory>
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE pdbx_entity_remapping (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+	orig_entity_id TEXT ,
+-- ATTRIBUTE
+	entity_id TEXT NOT NULL
 );
 
 --
@@ -17003,6 +17038,9 @@ CREATE TABLE valence_ref (
 -- (derived from xsd:key[@name='pdbx_buffer_componentsKey_0'])
 --ALTER TABLE pdbx_buffer_components ADD CONSTRAINT UNQ_pdbx_buffer_components UNIQUE ( document_id, buffer_id, id );
 
+-- (derived from xsd:key[@name='pdbx_chain_remappingKey_0'])
+--ALTER TABLE pdbx_chain_remapping ADD CONSTRAINT UNQ_pdbx_chain_remapping UNIQUE ( document_id, entity_id, label_asym_id );
+
 -- (derived from xsd:key[@name='pdbx_chem_comp_atom_editKey_0'])
 --ALTER TABLE pdbx_chem_comp_atom_edit ADD CONSTRAINT UNQ_pdbx_chem_comp_atom_edit UNIQUE ( document_id, ordinal );
 
@@ -17284,6 +17322,9 @@ CREATE TABLE valence_ref (
 
 -- (derived from xsd:key[@name='pdbx_entity_prod_protocolKey_0'])
 --ALTER TABLE pdbx_entity_prod_protocol ADD CONSTRAINT UNQ_pdbx_entity_prod_protocol UNIQUE ( document_id, entity_id, entry_id, protocol_type );
+
+-- (derived from xsd:key[@name='pdbx_entity_remappingKey_0'])
+--ALTER TABLE pdbx_entity_remapping ADD CONSTRAINT UNQ_pdbx_entity_remapping UNIQUE ( document_id, entity_id );
 
 -- (derived from xsd:key[@name='pdbx_entity_src_gen_characterKey_0'])
 --ALTER TABLE pdbx_entity_src_gen_character ADD CONSTRAINT UNQ_pdbx_entity_src_gen_character UNIQUE ( document_id, entity_id, entry_id, step_id );
@@ -18426,91 +18467,97 @@ CREATE TABLE valence_ref (
 --ALTER TABLE pdbx_branch_scheme ADD CONSTRAINT KR_entityKeyref_0_0_8_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
 -- (derived from xsd:keyref[@name='entityKeyref_0_0_9_0'])
---ALTER TABLE pdbx_entity_assembly ADD CONSTRAINT KR_entityKeyref_0_0_9_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
+--ALTER TABLE pdbx_chain_remapping ADD CONSTRAINT KR_entityKeyref_0_0_9_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
 -- (derived from xsd:keyref[@name='entityKeyref_0_0_10_0'])
---ALTER TABLE pdbx_entity_branch ADD CONSTRAINT KR_entityKeyref_0_0_10_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
+--ALTER TABLE pdbx_entity_assembly ADD CONSTRAINT KR_entityKeyref_0_0_10_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
 -- (derived from xsd:keyref[@name='entityKeyref_0_0_11_0'])
---ALTER TABLE pdbx_entity_branch_descriptor ADD CONSTRAINT KR_entityKeyref_0_0_11_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
+--ALTER TABLE pdbx_entity_branch ADD CONSTRAINT KR_entityKeyref_0_0_11_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
 -- (derived from xsd:keyref[@name='entityKeyref_0_0_12_0'])
---ALTER TABLE pdbx_entity_branch_list ADD CONSTRAINT KR_entityKeyref_0_0_12_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
+--ALTER TABLE pdbx_entity_branch_descriptor ADD CONSTRAINT KR_entityKeyref_0_0_12_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
 -- (derived from xsd:keyref[@name='entityKeyref_0_0_13_0'])
---ALTER TABLE pdbx_entity_func_bind_mode ADD CONSTRAINT KR_entityKeyref_0_0_13_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
+--ALTER TABLE pdbx_entity_branch_list ADD CONSTRAINT KR_entityKeyref_0_0_13_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
 -- (derived from xsd:keyref[@name='entityKeyref_0_0_14_0'])
---ALTER TABLE pdbx_entity_name ADD CONSTRAINT KR_entityKeyref_0_0_14_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
+--ALTER TABLE pdbx_entity_func_bind_mode ADD CONSTRAINT KR_entityKeyref_0_0_14_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
 -- (derived from xsd:keyref[@name='entityKeyref_0_0_15_0'])
---ALTER TABLE pdbx_entity_nonpoly ADD CONSTRAINT KR_entityKeyref_0_0_15_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
+--ALTER TABLE pdbx_entity_name ADD CONSTRAINT KR_entityKeyref_0_0_15_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
 -- (derived from xsd:keyref[@name='entityKeyref_0_0_16_0'])
---ALTER TABLE pdbx_entity_poly_domain ADD CONSTRAINT KR_entityKeyref_0_0_16_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
+--ALTER TABLE pdbx_entity_nonpoly ADD CONSTRAINT KR_entityKeyref_0_0_16_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
 -- (derived from xsd:keyref[@name='entityKeyref_0_0_17_0'])
---ALTER TABLE pdbx_entity_poly_na_nonstandard ADD CONSTRAINT KR_entityKeyref_0_0_17_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
+--ALTER TABLE pdbx_entity_poly_domain ADD CONSTRAINT KR_entityKeyref_0_0_17_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
 -- (derived from xsd:keyref[@name='entityKeyref_0_0_18_0'])
---ALTER TABLE pdbx_entity_poly_na_type ADD CONSTRAINT KR_entityKeyref_0_0_18_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
+--ALTER TABLE pdbx_entity_poly_na_nonstandard ADD CONSTRAINT KR_entityKeyref_0_0_18_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
 -- (derived from xsd:keyref[@name='entityKeyref_0_0_19_0'])
---ALTER TABLE pdbx_entity_poly_protein_class ADD CONSTRAINT KR_entityKeyref_0_0_19_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
+--ALTER TABLE pdbx_entity_poly_na_type ADD CONSTRAINT KR_entityKeyref_0_0_19_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
 -- (derived from xsd:keyref[@name='entityKeyref_0_0_20_0'])
---ALTER TABLE pdbx_entity_prod_protocol ADD CONSTRAINT KR_entityKeyref_0_0_20_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
+--ALTER TABLE pdbx_entity_poly_protein_class ADD CONSTRAINT KR_entityKeyref_0_0_20_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
 -- (derived from xsd:keyref[@name='entityKeyref_0_0_21_0'])
---ALTER TABLE pdbx_entity_src_gen_character ADD CONSTRAINT KR_entityKeyref_0_0_21_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
+--ALTER TABLE pdbx_entity_prod_protocol ADD CONSTRAINT KR_entityKeyref_0_0_21_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
 -- (derived from xsd:keyref[@name='entityKeyref_0_0_22_0'])
---ALTER TABLE pdbx_entity_src_gen_chrom ADD CONSTRAINT KR_entityKeyref_0_0_22_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
+--ALTER TABLE pdbx_entity_remapping ADD CONSTRAINT KR_entityKeyref_0_0_22_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
 -- (derived from xsd:keyref[@name='entityKeyref_0_0_23_0'])
---ALTER TABLE pdbx_entity_src_gen_clone ADD CONSTRAINT KR_entityKeyref_0_0_23_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
+--ALTER TABLE pdbx_entity_src_gen_character ADD CONSTRAINT KR_entityKeyref_0_0_23_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
 -- (derived from xsd:keyref[@name='entityKeyref_0_0_24_0'])
---ALTER TABLE pdbx_entity_src_gen_express ADD CONSTRAINT KR_entityKeyref_0_0_24_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
+--ALTER TABLE pdbx_entity_src_gen_chrom ADD CONSTRAINT KR_entityKeyref_0_0_24_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
 -- (derived from xsd:keyref[@name='entityKeyref_0_0_25_0'])
---ALTER TABLE pdbx_entity_src_gen_fract ADD CONSTRAINT KR_entityKeyref_0_0_25_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
+--ALTER TABLE pdbx_entity_src_gen_clone ADD CONSTRAINT KR_entityKeyref_0_0_25_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
 -- (derived from xsd:keyref[@name='entityKeyref_0_0_26_0'])
---ALTER TABLE pdbx_entity_src_gen_lysis ADD CONSTRAINT KR_entityKeyref_0_0_26_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
+--ALTER TABLE pdbx_entity_src_gen_express ADD CONSTRAINT KR_entityKeyref_0_0_26_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
 -- (derived from xsd:keyref[@name='entityKeyref_0_0_27_0'])
---ALTER TABLE pdbx_entity_src_gen_prod_digest ADD CONSTRAINT KR_entityKeyref_0_0_27_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
+--ALTER TABLE pdbx_entity_src_gen_fract ADD CONSTRAINT KR_entityKeyref_0_0_27_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
 -- (derived from xsd:keyref[@name='entityKeyref_0_0_28_0'])
---ALTER TABLE pdbx_entity_src_gen_prod_other ADD CONSTRAINT KR_entityKeyref_0_0_28_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
+--ALTER TABLE pdbx_entity_src_gen_lysis ADD CONSTRAINT KR_entityKeyref_0_0_28_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
 -- (derived from xsd:keyref[@name='entityKeyref_0_0_29_0'])
---ALTER TABLE pdbx_entity_src_gen_prod_pcr ADD CONSTRAINT KR_entityKeyref_0_0_29_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
+--ALTER TABLE pdbx_entity_src_gen_prod_digest ADD CONSTRAINT KR_entityKeyref_0_0_29_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
 -- (derived from xsd:keyref[@name='entityKeyref_0_0_30_0'])
---ALTER TABLE pdbx_entity_src_gen_proteolysis ADD CONSTRAINT KR_entityKeyref_0_0_30_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
+--ALTER TABLE pdbx_entity_src_gen_prod_other ADD CONSTRAINT KR_entityKeyref_0_0_30_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
 -- (derived from xsd:keyref[@name='entityKeyref_0_0_31_0'])
---ALTER TABLE pdbx_entity_src_gen_pure ADD CONSTRAINT KR_entityKeyref_0_0_31_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
+--ALTER TABLE pdbx_entity_src_gen_prod_pcr ADD CONSTRAINT KR_entityKeyref_0_0_31_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
 -- (derived from xsd:keyref[@name='entityKeyref_0_0_32_0'])
---ALTER TABLE pdbx_entity_src_gen_refold ADD CONSTRAINT KR_entityKeyref_0_0_32_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
+--ALTER TABLE pdbx_entity_src_gen_proteolysis ADD CONSTRAINT KR_entityKeyref_0_0_32_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
 -- (derived from xsd:keyref[@name='entityKeyref_0_0_33_0'])
---ALTER TABLE pdbx_entity_src_syn ADD CONSTRAINT KR_entityKeyref_0_0_33_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
+--ALTER TABLE pdbx_entity_src_gen_pure ADD CONSTRAINT KR_entityKeyref_0_0_33_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
 -- (derived from xsd:keyref[@name='entityKeyref_0_0_34_0'])
---ALTER TABLE pdbx_linked_entity_list ADD CONSTRAINT KR_entityKeyref_0_0_34_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
+--ALTER TABLE pdbx_entity_src_gen_refold ADD CONSTRAINT KR_entityKeyref_0_0_34_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
 -- (derived from xsd:keyref[@name='entityKeyref_0_0_35_0'])
---ALTER TABLE pdbx_prerelease_seq ADD CONSTRAINT KR_entityKeyref_0_0_35_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
+--ALTER TABLE pdbx_entity_src_syn ADD CONSTRAINT KR_entityKeyref_0_0_35_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
 -- (derived from xsd:keyref[@name='entityKeyref_0_0_36_0'])
---ALTER TABLE struct_asym ADD CONSTRAINT KR_entityKeyref_0_0_36_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
+--ALTER TABLE pdbx_linked_entity_list ADD CONSTRAINT KR_entityKeyref_0_0_36_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
 -- (derived from xsd:keyref[@name='entityKeyref_0_0_37_0'])
---ALTER TABLE struct_ref ADD CONSTRAINT KR_entityKeyref_0_0_37_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
+--ALTER TABLE pdbx_prerelease_seq ADD CONSTRAINT KR_entityKeyref_0_0_37_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
+
+-- (derived from xsd:keyref[@name='entityKeyref_0_0_38_0'])
+--ALTER TABLE struct_asym ADD CONSTRAINT KR_entityKeyref_0_0_38_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
+
+-- (derived from xsd:keyref[@name='entityKeyref_0_0_39_0'])
+--ALTER TABLE struct_ref ADD CONSTRAINT KR_entityKeyref_0_0_39_0 FOREIGN KEY ( entity_id ) REFERENCES entity ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
 -- (derived from xsd:keyref[@name='entity_polyKeyref_0_0_0_0'])
 --ALTER TABLE entity_poly_seq ADD CONSTRAINT KR_entity_polyKeyref_0_0_0_0 FOREIGN KEY ( entity_id ) REFERENCES entity_poly ( entity_id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
