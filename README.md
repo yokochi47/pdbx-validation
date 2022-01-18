@@ -27,6 +27,11 @@ File path | Document
 [stylesheet](https://github.com/yokochi47/pdbx-validation/blob/master/stylesheet) | a directory contains XSL style sheets for generation of alternative wwPDB validation reports
 [test](https://github.com/yokochi47/pdbx-validation/blob/master/test) | a directory contains resource files for test on several PDB entries
 
+## References
+
+- Gert-Jan Bekker, Masashi Yokochi, Hirofumi Suzuki, Yasuyo Ikegawa, Takeshi Iwata, Takahiro Kudou, Kei Yura, Toshimichi Fujiwara, Takeshi Kawabata, Genji Kurisu.<br />
+ "Protein Data Bank Japan: Celebrating our 20th anniversary during a global pandemic as the Asian hub of three dimensional macromolecular structural data", Protein Science, 31(1), 173-186 (2022)
+
 ## Examples of alternative wwPDB validation reports
 
 - PDB ID: [5B1L](https://pdbj.org/mine/summary/5b1l), Exptl. method: X-RAY DIFFRACTION
