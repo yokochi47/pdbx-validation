@@ -4,7 +4,7 @@
 # Date:  Tue Jan 18 18:13:56 JST 2022
 #
 # Created from:
-#        mmcif_pdbx_v50.dic   - PDB Exchange Data Dictionary (V5.354)
+#        mmcif_pdbx_v50.dic   - PDB Exchange Data Dictionary (V5.355)
 #        http://wwpdb.org/validation/schema/wwpdb_validation_v6.00.xsd
 #         - a XML schema for wwPDB validation reports, v6.00, rev. 2021-01-22
 #
@@ -31,7 +31,7 @@ data_mmcif_pdbx_validation.dic
 
     _dictionary.title           mmcif_pdbx_validation.dic
     _dictionary.datablock_id    mmcif_pdbx_validation.dic
-    _dictionary.version         4.354
+    _dictionary.version         4.355
 #
     loop_
     _dictionary_history.version
@@ -984,6 +984,15 @@ data_mmcif_pdbx_validation.dic
 >     + Introduce _pdbx_entity_remapping and _pdbx_chain_remapping categories # not mapped
 >     + Extend _pdbx_sudit_support.funding_organization enumeration # not mapped
 >     + Add "xia2.multiplex" to _software.name enumeration # not mapped
+>     + Extend enumeration _database_2.database_id to include "AFDB", "SMR",
+>       "MODBASE", "AFDB" # not mapped
+>     + Add _struct.pdbx_structure_determination_methodology # merged
+>     + Add "EMS Lacey Carbon" to _em_sample_support.grid_type enumeration. # not mapped
+;
+  4.355   2022-03-31
+;
+>     + Adjust enumerations in _database_2.database_id # not mapped
+>     + Extend _pdbx_sudit_support.funding_organization enumeration # not mapped
 ;
 
 
@@ -15402,6 +15411,22 @@ save__struct.title
                                  'T4 lysozyme mutant - S32A'
                                  'hen egg white lysozyme at -30 degrees C'
                                  'quail egg white lysozyme at 2 atmospheres'
+save_
+
+save__struct.pdbx_structure_determination_methodology
+    _item_description.description
+;              Indicates if the structure was determined using experimental, computational, or integrative methods
+;
+    _item.name                  '_struct.pdbx_structure_determination_methodology'
+    _item.mandatory_code          no
+    _item_type.code               line
+    loop_
+    _item_enumeration.value
+    _item_enumeration.detail
+                                  experimental      'Experimentally based structure determination'
+                                  integrative       'Integrative/Hybrid methods'
+                                  computational     'Computational modeling'
+   #
 save_
 
 #################

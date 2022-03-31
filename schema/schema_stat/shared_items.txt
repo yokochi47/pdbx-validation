@@ -2747,6 +2747,7 @@ struct.pdbx_formula_weight
 struct.pdbx_formula_weight_method
 struct.pdbx_model_details
 struct.pdbx_model_type_details
+struct.pdbx_structure_determination_methodology
 struct_ref.biol_id
 struct_ref.db_code
 struct_ref.db_name
