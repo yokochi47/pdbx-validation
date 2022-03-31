@@ -165,6 +165,7 @@ refln.pdbx_anomalous_diff_sigma WWPDB_LOCAL
 refln.pdbx_cos_phase_calc WWPDB_LOCAL
 refln.pdbx_phase_cycle WWPDB_LOCAL
 refln.pdbx_sin_phase_calc WWPDB_LOCAL
+reflns.pdbx_CC_split_method
 reflns.pdbx_number_anomalous WWPDB_LOCAL
 reflns.pdbx_redundancy_reflns_obs WWPDB_LOCAL
 reflns.pdbx_Rmerge_I_anomalous WWPDB_LOCAL

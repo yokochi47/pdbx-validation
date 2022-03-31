@@ -44,8 +44,8 @@
 --
 
 --
--- VRPT PDBML Schema v4.355
--- VRPT PDBML Schema translated from wwPDB Validation Information Dictionary v4.355, which is backward compatible with the PDBx/mmCIF Dictionary v5.355: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
+-- VRPT PDBML Schema v4.357
+-- VRPT PDBML Schema translated from wwPDB Validation Information Dictionary v4.357, which is backward compatible with the PDBx/mmCIF Dictionary v5.357: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
 -- URI-reference = http://pdbml.pdb.org/schema/pdbx-validation-v4.xsd
 --
 
@@ -3962,7 +3962,7 @@ CREATE TABLE pdbx_entity_descriptor (
 
 --
 -- (quoted from pdbx_entity_nonpolyType)
--- The PDBX_ENTITY_NONPOLY category provides a mapping between entity and the nonpolymer component Example 1 - <VRPTx:pdbx_entity_nonpolyCategory> <VRPTx:pdbx_entity_nonpoly entity_id="2"> <VRPTx:comp_id>SPM</VRPTx:comp_id> <VRPTx:name>SPERMINE</VRPTx:name> </VRPTx:pdbx_entity_nonpoly> <VRPTx:pdbx_entity_nonpoly entity_id="3"> <VRPTx:comp_id>HOH</VRPTx:comp_id> <VRPTx:name>water</VRPTx:name> </VRPTx:pdbx_entity_nonpoly> </VRPTx:pdbx_entity_nonpolyCategory>
+-- The PDBX_ENTITY_NONPOLY category provides a mapping between entity and the nonpolymer component Example 1 - based on PDB entry 3LTQ <VRPTx:pdbx_entity_nonpolyCategory> <VRPTx:pdbx_entity_nonpoly entity_id="2"> <VRPTx:comp_id>TB</VRPTx:comp_id> <VRPTx:name>TERBIUM(III) ION</VRPTx:name> </VRPTx:pdbx_entity_nonpoly> <VRPTx:pdbx_entity_nonpoly entity_id="3"> <VRPTx:comp_id>ACT</VRPTx:comp_id> <VRPTx:name>ACETATE ION</VRPTx:name> </VRPTx:pdbx_entity_nonpoly> <VRPTx:pdbx_entity_nonpoly entity_id="4"> <VRPTx:comp_id>SO4</VRPTx:comp_id> <VRPTx:name>SULFATE ION</VRPTx:name> </VRPTx:pdbx_entity_nonpoly> <VRPTx:pdbx_entity_nonpoly entity_id="5"> <VRPTx:comp_id>HOH</VRPTx:comp_id> <VRPTx:name>water</VRPTx:name> </VRPTx:pdbx_entity_nonpoly> </VRPTx:pdbx_entity_nonpolyCategory>
 -- URI-reference = http://pdbml.pdb.org/dictionaries/mmcif_pdbx_v50.dic/Categories/pdbx_entity_nonpoly.html
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v4.xsd (VRPTx), schema location: pdbx-validation-v4.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false

@@ -1,10 +1,10 @@
 ###########################################################################
 #
 # File:  mmcif_pdbx_validation-v4.dic
-# Date:  Tue Jan 18 18:13:56 JST 2022
+# Date:  Thu Mar 31 13:18:01 JST 2022
 #
 # Created from:
-#        mmcif_pdbx_v50.dic   - PDB Exchange Data Dictionary (V5.355)
+#        mmcif_pdbx_v50.dic   - PDB Exchange Data Dictionary (V5.357)
 #        http://wwpdb.org/validation/schema/wwpdb_validation_v6.00.xsd
 #         - a XML schema for wwPDB validation reports, v6.00, rev. 2021-01-22
 #
@@ -31,7 +31,7 @@ data_mmcif_pdbx_validation.dic
 
     _dictionary.title           mmcif_pdbx_validation.dic
     _dictionary.datablock_id    mmcif_pdbx_validation.dic
-    _dictionary.version         4.355
+    _dictionary.version         4.357
 #
     loop_
     _dictionary_history.version
@@ -993,6 +993,33 @@ data_mmcif_pdbx_validation.dic
 ;
 >     + Adjust enumerations in _database_2.database_id # not mapped
 >     + Extend _pdbx_sudit_support.funding_organization enumeration # not mapped
+;
+  4.357   2022-03-31
+;
+>     5.356:
+>     + Enchanced descriptions and addition of attributes to better support
+>       serial crystallography.
+>       New definitions:
+>        _pdbx_serial_crystallography_data_reduction.lattices_merged
+>        _cell.pdbx_esd_method
+>        _reflns.pdbx_CC_split_method,
+>        _exptl_crystal.pdbx_mosaic_method
+>        _exptl_crystal.pdbx_mosaic_block_size
+>        _exptl_crystal.pdbx_mosaic_block_size_esd
+>        _pdbx_crystal_alignment.overall_beam_divergence
+>        _pdbx_crystal_alignment.overall_beam_divergence_esd # not mapped
+>       Updated definitions (description, ranges)
+>        _pdbx_crystal_alignment.crossfire_x, _pdbx_crystal_alignment.crossfire_x_esd,
+>        _pdbx_crystal_alignment.crossfire_y, _pdbx_crystal_alignment.crossfire_y_esd,
+>        _exptl_crystal.pdbx_mosaicity # not mapped
+>     + Extend _pdbx_audit_support.funding_organization enumeration # not mapped
+>     + Added 'ESRF BEAMLINE BM07' to _diffrn_source.type enumeration and 'BM07' to
+>       diffrn_source.pdbx_synchrotron_beamline # merged
+>     5.357:
+>     + Add PRIME-X to _software.name enumeration # not mapped
+>     + Enhance description of _entity_poly.pdbx_seq_one_letter_code_can
+>       to describe chromophore handling # merged
+>     + Extend _pdbx_audit_support.funding_organization enumeration # not mapped
 ;
 
 
@@ -4391,6 +4418,7 @@ save__diffrn_source.type
      "_diffrn_source.type"  "ENRAF-NONIUS FR590"                             "ROTATING ANODE"
      "_diffrn_source.type"  "ENRAF-NONIUS FR591"                             "ROTATING ANODE"
      "_diffrn_source.type"  "ESRF BEAMLINE BM02"                             SYNCHROTRON
+     "_diffrn_source.type"  "ESRF BEAMLINE BM07"                             SYNCHROTRON
      "_diffrn_source.type"  "ESRF BEAMLINE BM1A"                             SYNCHROTRON
      "_diffrn_source.type"  "ESRF BEAMLINE BM14"                             SYNCHROTRON
      "_diffrn_source.type"  "ESRF BEAMLINE BM16"                             SYNCHROTRON
@@ -25354,6 +25382,7 @@ save__diffrn_source.pdbx_synchrotron_beamline
      "_diffrn_source.pdbx_synchrotron_beamline"  BL9-2           .
      "_diffrn_source.pdbx_synchrotron_beamline"  BL9-3           .
      "_diffrn_source.pdbx_synchrotron_beamline"  BM02            .
+     "_diffrn_source.pdbx_synchrotron_beamline"  BM07            .
      "_diffrn_source.pdbx_synchrotron_beamline"  BM14            .
      "_diffrn_source.pdbx_synchrotron_beamline"  BM16            .
      "_diffrn_source.pdbx_synchrotron_beamline"  BM1A            .
@@ -25782,6 +25811,10 @@ save__entity_poly.pdbx_seq_one_letter_code_can
                parent is not specified. Deoxynucleotides are
                represented by their canonical one-letter codes of A,
                C, G, or T.
+
+               For modifications with several parent amino acids,
+               all corresponding parent amino acid codes will be listed
+               (ex. chromophores).
 ;
     _item.name                  '_entity_poly.pdbx_seq_one_letter_code_can'
     _item.category_id             entity_poly
@@ -33403,15 +33436,17 @@ save_pdbx_entity_nonpoly
     _category_examples.case
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 ;
-    Example 1 -
+    Example 1 - based on PDB entry 3LTQ
 ;
 ;
     loop_
     _pdbx_entity_nonpoly.entity_id
     _pdbx_entity_nonpoly.name
     _pdbx_entity_nonpoly.comp_id
-     2 SPERMINE SPM
-     3 water    HOH
+    2 'TERBIUM(III) ION' TB
+    3 'ACETATE ION'      ACT
+    4 'SULFATE ION'      SO4
+    5 water              HOH
 ;
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 save_
@@ -46505,6 +46540,10 @@ save_
 save__pdbx_struct_assembly.details
     _item_description.description
 ;              A description of special aspects of the macromolecular assembly.
+
+               In the PDB, 'representative helical assembly', 'complete point assembly',
+               'complete icosahedral assembly', 'software_defined_assembly', 'author_defined_assembly',
+               and 'author_and_software_defined_assembly' are considered "biologically relevant assemblies.
 ;
     _item.name                  '_pdbx_struct_assembly.details'
     _item.category_id             pdbx_struct_assembly

@@ -260,6 +260,7 @@ cell_measurement.temp_esd
 cell_measurement.theta_max
 cell_measurement.theta_min
 cell_measurement.wavelength
+cell.pdbx_esd_method
 cell.pdbx_unique_axis
 cell.reciprocal_angle_alpha
 cell.reciprocal_angle_alpha_esd
@@ -1618,8 +1619,11 @@ exptl_crystal.pdbx_crystal_direction_3
 exptl_crystal.pdbx_crystal_image
 exptl_crystal.pdbx_crystal_image_format
 exptl_crystal.pdbx_crystal_image_url
+exptl_crystal.pdbx_mosaic_block_size
+exptl_crystal.pdbx_mosaic_block_size_esd
 exptl_crystal.pdbx_mosaicity
 exptl_crystal.pdbx_mosaicity_esd
+exptl_crystal.pdbx_mosaic_method
 exptl_crystal.pdbx_x-ray_image
 exptl_crystal.pdbx_x-ray_image_type
 exptl_crystal.preparation
@@ -2257,6 +2261,8 @@ pdbx_crystal_alignment.crysz_beam_esd
 pdbx_crystal_alignment.oscillation_end
 pdbx_crystal_alignment.oscillation_range
 pdbx_crystal_alignment.oscillation_start
+pdbx_crystal_alignment.overall_beam_divergence
+pdbx_crystal_alignment.overall_beam_divergence_esd
 pdbx_crystal_alignment.xbeam
 pdbx_crystal_alignment.xbeam_esd
 pdbx_crystal_alignment.ybeam
@@ -4149,6 +4155,7 @@ pdbx_serial_crystallography_data_reduction.frames_failed_index
 pdbx_serial_crystallography_data_reduction.frames_indexed
 pdbx_serial_crystallography_data_reduction.frames_total
 pdbx_serial_crystallography_data_reduction.lattices_indexed
+pdbx_serial_crystallography_data_reduction.lattices_merged
 pdbx_serial_crystallography_data_reduction.xfel_pulse_events
 pdbx_serial_crystallography_data_reduction.xfel_run_numbers
 pdbx_serial_crystallography_measurement.collection_time_total
@@ -5804,6 +5811,7 @@ reflns.pdbx_aniso_diffraction_limit_axis_3_ortho[2]
 reflns.pdbx_aniso_diffraction_limit_axis_3_ortho[3]
 reflns.pdbx_CC_half
 reflns.pdbx_CC_half_anomalous
+reflns.pdbx_CC_split_method
 reflns.pdbx_CC_star
 reflns.pdbx_chi_squared
 reflns.pdbx_diffrn_id
