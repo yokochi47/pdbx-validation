@@ -1,10 +1,10 @@
 ###########################################################################
 #
 # File:  mmcif_pdbx_validation-v4.dic
-# Date:  Tue Jun  7 14:24:04 JST 2022
+# Date:  Tue Jun  7 14:42:10 JST 2022
 #
 # Created from:
-#        mmcif_pdbx_v50.dic   - PDB Exchange Data Dictionary (V5.358)
+#        mmcif_pdbx_v50.dic   - PDB Exchange Data Dictionary (V5.359)
 #        http://wwpdb.org/validation/schema/wwpdb_validation_v6.00.xsd
 #         - a XML schema for wwPDB validation reports, v6.00, rev. 2021-01-22
 #
@@ -31,7 +31,7 @@ data_mmcif_pdbx_validation.dic
 
     _dictionary.title           mmcif_pdbx_validation.dic
     _dictionary.datablock_id    mmcif_pdbx_validation.dic
-    _dictionary.version         4.358
+    _dictionary.version         4.359
 #
     loop_
     _dictionary_history.version
@@ -1026,7 +1026,13 @@ data_mmcif_pdbx_validation.dic
 >     + Add _em_depui.composite_map_deposition # not mapped
 >     + Extend _pdbx_audit_support.funding_organization enumeration # not mapped
 >     + Add pdbx_data_usage category # not mapped
-> ;
+;
+  4.359   2022-06-07
+;
+>     + Extend _pdbx_audit_support.funding_organization enumeration # not mapped
+>     + Add "POSITION SENSITIVE DETECTOR" to _diffrn_detector.detector enumeration # merged
+>     + Add Careless and Xtrapol8 to _software.name PDBX enumeration # not mapped
+>     + Add "5ATM 3HE, CURVED 120X30 DEGREES" to _diffrn_detector.type enumeration # merged
 ;
 
 
@@ -2093,6 +2099,7 @@ save__diffrn_detector.detector
       "_diffrn_detector.detector"  "IMAGE PLATE"         .
       "_diffrn_detector.detector"  MICROGAP              .
       "_diffrn_detector.detector"  "OSCILLATION CAMERA"  .
+      "_diffrn_detector.detector"  "POSITION SENSITIVE DETECTOR"  .
       "_diffrn_detector.detector"  PIXEL                 .
       "_diffrn_detector.detector"  SCINTILLATION         .
       "_diffrn_detector.detector"  "STORAGE PHOSPHORS"   .
@@ -2142,6 +2149,7 @@ save__diffrn_detector.type
     _pdbx_item_enumeration.name
     _pdbx_item_enumeration.value
     _pdbx_item_enumeration.detail
+      "_diffrn_detector.type"  "5ATM 3HE, CURVED 120X30 DEGREES" "POSITION SENSITIVE DETECTOR"
       "_diffrn_detector.type"  "ADSC HF-4M"                      PIXEL
       "_diffrn_detector.type"  "ADSC QUANTUM 1"                  CCD
       "_diffrn_detector.type"  "ADSC QUANTUM 210"                CCD

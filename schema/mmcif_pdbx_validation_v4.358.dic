@@ -1026,7 +1026,6 @@ data_mmcif_pdbx_validation.dic
 >     + Add _em_depui.composite_map_deposition # not mapped
 >     + Extend _pdbx_audit_support.funding_organization enumeration # not mapped
 >     + Add pdbx_data_usage category # not mapped
-> ;
 ;
 
 
