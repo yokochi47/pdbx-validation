@@ -1,10 +1,10 @@
 ###########################################################################
 #
 # File:  mmcif_pdbx_validation-v4.dic
-# Date:  Thu Mar 31 13:18:01 JST 2022
+# Date:  Tue Jun  7 14:24:04 JST 2022
 #
 # Created from:
-#        mmcif_pdbx_v50.dic   - PDB Exchange Data Dictionary (V5.357)
+#        mmcif_pdbx_v50.dic   - PDB Exchange Data Dictionary (V5.358)
 #        http://wwpdb.org/validation/schema/wwpdb_validation_v6.00.xsd
 #         - a XML schema for wwPDB validation reports, v6.00, rev. 2021-01-22
 #
@@ -31,7 +31,7 @@ data_mmcif_pdbx_validation.dic
 
     _dictionary.title           mmcif_pdbx_validation.dic
     _dictionary.datablock_id    mmcif_pdbx_validation.dic
-    _dictionary.version         4.357
+    _dictionary.version         4.358
 #
     loop_
     _dictionary_history.version
@@ -455,7 +455,7 @@ data_mmcif_pdbx_validation.dic
 >     + Extend _pdbx_audit_support.funding_organization # not mapped
 >     + Change type of _pdbx_struct_assembly_gen.asym_id_list to text # merged
 >     + Make _em_depui.obsolete_instructions and em_admin.replace_existing_entry_flag
->       non-mandatory.
+>       non-mandatory. # not mapped
 >     + Extend _pdbx_audit_support.funding_organization enumeration # not mapped
 >     + Incorporate enumeration/examples for branch change carbohydrates including _entity.type, # merged
 >       _pdbx_chem_comp_identifier.type, # not mapped _pdbx_entity_descriptor.type. # merged
@@ -1020,6 +1020,13 @@ data_mmcif_pdbx_validation.dic
 >     + Enhance description of _entity_poly.pdbx_seq_one_letter_code_can
 >       to describe chromophore handling # merged
 >     + Extend _pdbx_audit_support.funding_organization enumeration # not mapped
+;
+  4.358   2022-06-07
+;
+>     + Add _em_depui.composite_map_deposition # not mapped
+>     + Extend _pdbx_audit_support.funding_organization enumeration # not mapped
+>     + Add pdbx_data_usage category # not mapped
+> ;
 ;
 
 

@@ -21,7 +21,7 @@
 --  map xsd date type to: sql date type
 --
 -- Statistics of schema:
---  Generated 570 tables (6969 fields), 0 views (0 fields), 0 attr groups, 0 model groups in total
+--  Generated 571 tables (6976 fields), 0 views (0 fields), 0 attr groups, 0 model groups in total
 --   Unnecessary tables by inlining simple content as a primitive data type:
 --    schema location: pdbx-v50.xsd
 --      temperature, final_thickness, "B_calc", zeta, "L23", "L11", "pdbx_F_calc_with_solvent", time, "model_Cartn_y_esd", diffr_phi, "B_iso_or_equiv", pdbx_solvent_vdw_probe_radii, maximum_torsion_angle_constraint_violation, "A_meas_au", lower_limit, "F_meas", "S31", "F_meas_au", "Cartn_x_esd", length_a_esd, "L22", "F_squared_calc", volume_three, mean_guiner_radius, reciprocal_angle_beta_esd, beta_tolerance, maximum_upper_distance_constraint_violation, bond_deviation, nominal_defocus_min, resolution, "B33", angle, "B_iso_min", "U_equiv_geom_mean_esd", crossfire_y, psi, crossfire_x, "U33_esd", bond_angle_rms_dev, "S33_esd", angle_gamma_esd, pdbx_crystal_direction_3, dihedral_angles_rms_dev, pdbx_crystal_direction_2, "angle_DHA_esd", epsilon, pdbx_crystal_direction_1, bond, "aniso_U22", induction_temperature, average_torsion_angle_constraint_violation, "L33", angle_phi, "aniso_B11_esd", pdbx_solvent_ion_probe_radii, "aniso_B33_esd", "dist_HA_esd", "B_calc_au", culture_temperature, "S23_esd", sample_volume, diffr_kappa, reciprocal_length_a_esd, peptide_planarity_rms_dev, "sigmaI", recording_temperature_minimum, pdbx_solvent_shrinkage_radii, "aniso_U33", maximum_lower_distance_constraint_violation, culture_time, "aniso_U22_esd", column_volume, tilt_angle_min, prot_cis, electron_dose, scan_time_backgd, "aniso_B23_esd", protein_yield, "B_equiv_geom_mean_esd", calibrated_defocus_min, "F_squared_meas", "B22_esd", "aniso_U12", pdbx_dist_value, "U11_esd", induction_timepoint, "L12_esd", "T11_esd", "model_Cartn_y", energyfilter_lower, alpha, pressure, atom_deviation, "U13", improper_torsion_angle_rms_dev_error, "B12_esd", "T12_esd", "aniso_U13_esd", "pdbx_model_Cartn_y_ideal", "A_calc_au", pdbx_phase_calc_part_solvent, reciprocal_angle_gamma_esd, "aniso_U11", "aniso_U23", angle_value, "F_squared_sigma", buffer_volume, covalent_bond_rms_dev, reciprocal_angle_alpha_esd, "L13_esd", "model_Cartn_x", "T13_esd", rotation_per_n_subunits, diff_density_min, "B_iso", "U12", angle_omega, energyfilter_upper, mean_guiner_radius_esd, crossfire_x_esd, "A_meas", "aniso_U23_esd", storage_temperature, mol_wt_theo, tau1, distance_rms_dev, tau2, tau3, tau4, "U23", "I", flow_rate, dist, "A_calc", angle_deviation, temperature_decomposition_esd, nominal_defocus_max, "B_iso_mean", "U11", "aniso_U33_esd", dist_esd, "aniso_U13", value_esd, upper_limit, "B_meas", cleavage_time, "pdbx_res_netI_over_av_sigmaI_2", "model_Cartn_z", density_meas_temp_esd, "T13", maximum_distance_constraint_violation, tau0, "B11_esd", angle_beta_esd, "L22_esd", "T22_esd", "U22", gamma_tolerance, temp, "U_tls22", phase_calc, angle_chi, "aniso_B22_esd", improper_torsion_angle_rms_dev, diff_density_max_esd, sample_concentration, rmsd, "pdbx_F_calc_part_solvent", cleavage_temperature, "pdbx_res_netI_over_sigmaI_2", "Luzzati_sigma_a_obs", "Luzzati_coordinate_error_free", temperature_sublimation_esd, "F_meas_sigma", "U33", "model_Cartn_z_esd", "T12", dihedral_angles_rms_dev_error, pdbx_scan_angle, "B_iso_or_equiv_esd", angle_target_value, "Cartn_y_esd", angle_psi, "U_tls11", bond_angle_rms_dev_error, "B23_esd", "U_iso_or_equiv_esd", volume_esd, "U_tls23", crossfire_y_esd, pdbx_phase_calc_with_solvent, taum, "S22_esd", diffr_chi, "T23", "B", pressure_esd, column_temperature, "T11", min_mean_cross_sectional_radii_gyration_esd, "Luzzati_d_res_low_free", chi2, chi1, "L23_esd", chi4, chi3, "aniso_B22", pdbx_collection_time_total, crossfire_xy_esd, chi5, angle_alpha_esd, scan_rate, neighbor_ligand_distance, length_b_esd, "T23_esd", pdbx_crystal_diffrn_lifetime, peptide_planarity_rms_dev_error, "S13", "Ro", "T22", voltage, "S32_esd", beta, average_distance_constraint_violation, "aniso_B33", energy_window, crossfire_xy, dev, "U_tls33", "S13_esd", "model_Cartn_x_esd", "L11_esd", volume_three_esd, protein_volume, residual_tilt, value, "T33_esd", angle_kappa, rise_per_n_subunits, reciprocal_length_c_esd, "L33_esd", "S12", scat_length_neutron, "T33", "S11_esd", improper_torsion_angle, current, "aniso_B12", alpha_tolerance, "Luzzati_coordinate_error_obs", "P", gamma, diff_density_rms_esd, "B13_esd", phi, "aniso_U12_esd", neighbor_macromolecule_distance, "pre_Cartn_x", "B_iso_Wilson_estimate", "B12", ambient_temp_esd, "Cartn_z", "F_calc", "pdbx_model_Cartn_x_ideal", ambient_pressure_esd, pdbx_crystal_diffrn_limit, yield_pooled_fractions, "U12_esd", "S12_esd", phase_meas, "pdbx_model_Cartn_z_ideal", recording_temperature_maximum, "S23", diff_density_max, "aniso_B13_esd", tilt_angle_max, "S11", origin_y, origin_x, nu4, nu3, nu2, nu1, "aniso_B11", nu0, "aniso_B23", max_mean_cross_sectional_radii_gyration, angle_theta, covalent_bond_rms_dev_error, "Luzzati_d_res_low_obs", origin_z, power, "dist_DA_esd", "B13", min_mean_cross_sectional_radii_gyration, temp_esd, culture_volume, inducer_concentration, "S22", "B_meas_au", "U22_esd", omega, length_c_esd, pdbx_rotation_angle, diff_density_min_esd, "S31_esd", "pre_Cartn_z", "U_tls12", volume_pooled_fractions, "B_iso_esd", "U13_esd", delta, detector_distance, "Cartn_x", "B22", "U23_esd", diffr_psi, distance_rms_dev_error, "S21", max_mean_cross_sectional_radii_gyration_esd, "S33", "L12", "B_iso_max", "aniso_B13", reciprocal_length_b_esd, diff_density_rms, "Luzzati_sigma_a_free", "aniso_B12_esd", protein_concentration, mol_wt_exp, concentration_range, "pre_Cartn_y", "S21_esd", "F_calc_au", "U_tls13", "Cartn_z_esd", "B33_esd", "B23", sampling_size, "B11", "Cartn_y", chamber_temperature, "aniso_U11_esd", density_meas_esd, "dist_DH_esd", multiplicity_of_infection, "L13", "F_meas_sigma_au", "S32"
@@ -30,22 +30,22 @@
 --   Schema locations:
 --    pdbx-v50.xsd
 --   Table types:
---    0 root, 0 root children, 0 admin roots, 570 admin children
+--    0 root, 0 root children, 0 admin roots, 571 admin children
 --   System keys:
 --    0 primary keys (0 unique constraints), 0 foreign keys, 0 nested keys (0 as attribute, 0 as attribute group)
 --   User keys:
---    570 document keys, 0 serial keys, 0 xpath keys
+--    571 document keys, 0 serial keys, 0 xpath keys
 --   Contents:
---    1050 attributes (0 in-place document keys), 5349 elements (0 in-place document keys), 0 simple contents (0 in-place document keys, 0 as attribute, 0 as conditional attribute)
+--    1051 attributes (0 in-place document keys), 5354 elements (0 in-place document keys), 0 simple contents (0 in-place document keys, 0 as attribute, 0 as conditional attribute)
 --   Wild cards:
 --    0 any elements, 0 any attributes
 --   Constraints:
---    570 unique constraints from xsd:key, 1 unique constraints from xsd:unique, 347 foreign key constraints from xsd:keyref
+--    571 unique constraints from xsd:key, 1 unique constraints from xsd:unique, 347 foreign key constraints from xsd:keyref
 --
 
 --
--- PDBML Schema v5.357
--- PDBML Schema translated from the PDBx/mmCIF Dictionary v5.357: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
+-- PDBML Schema v5.358
+-- PDBML Schema translated from the PDBx/mmCIF Dictionary v5.358: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
 -- URI-reference = http://pdbml.pdb.org/schema/pdbx-v50.xsd
 --
 
@@ -250,6 +250,7 @@ DROP TABLE IF EXISTS pdbx_data_processing_cell CASCADE;
 DROP TABLE IF EXISTS pdbx_data_processing_detector CASCADE;
 DROP TABLE IF EXISTS pdbx_data_processing_reflns CASCADE;
 DROP TABLE IF EXISTS pdbx_data_processing_status CASCADE;
+DROP TABLE IF EXISTS pdbx_data_usage CASCADE;
 DROP TABLE IF EXISTS "pdbx_database_PDB_master" CASCADE;
 DROP TABLE IF EXISTS "pdbx_database_PDB_obs_spr" CASCADE;
 DROP TABLE IF EXISTS pdbx_database_doi CASCADE;
@@ -4410,6 +4411,8 @@ CREATE TABLE em_depositor_info (
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
+DROP TYPE IF EXISTS ENUM_em_depui_composite_map_deposition CASCADE;
+CREATE TYPE ENUM_em_depui_composite_map_deposition AS ENUM ( 'COMPOSITE MAP', 'NO' );
 DROP TYPE IF EXISTS ENUM_em_depui_depositor_hold_instructions CASCADE;
 CREATE TYPE ENUM_em_depui_depositor_hold_instructions AS ENUM ( 'REL', 'HOLD', 'HOLD8W', 'HPUB' );
 DROP TYPE IF EXISTS ENUM_em_depui_macromolecule_description CASCADE;
@@ -4421,6 +4424,7 @@ CREATE TYPE ENUM_em_depui_same_title_as_pdb AS ENUM ( 'YES', 'NO' );
 CREATE TABLE em_depui (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
+	composite_map_deposition ENUM_em_depui_composite_map_deposition ,
 	depositor_hold_instructions ENUM_em_depui_depositor_hold_instructions ,
 	macromolecule_description ENUM_em_depui_macromolecule_description ,
 	obsolete_instructions TEXT ,
@@ -7760,6 +7764,25 @@ CREATE TABLE pdbx_data_processing_status (
 	status TEXT NOT NULL ,
 -- ATTRIBUTE
 	task_name TEXT NOT NULL
+);
+
+--
+-- (quoted from pdbx_data_usageType)
+-- The PDBX_DATA_USAGE category provides information on licensing an disclaimers of the file it is in Example 1 <PDBx:pdbx_data_usageCategory> <PDBx:pdbx_data_usage id="1"> <PDBx:details>Data in this file are subject to CC0 creative commons license</PDBx:details> <PDBx:name>CC0</PDBx:name> <PDBx:type>license</PDBx:type> <PDBx:url>https://creativecommons.org/share-your-work/public-domain/cc0</PDBx:url> </PDBx:pdbx_data_usage> <PDBx:pdbx_data_usage id="2"> <PDBx:details> You have the right to use this file provided that the license remains intact</PDBx:details> <PDBx:type>disclaimer</PDBx:type> </PDBx:pdbx_data_usage> </PDBx:pdbx_data_usageCategory>
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+DROP TYPE IF EXISTS ENUM_pdbx_data_usage_type CASCADE;
+CREATE TYPE ENUM_pdbx_data_usage_type AS ENUM ( 'license', 'disclaimer' );
+CREATE TABLE pdbx_data_usage (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+	details TEXT ,
+	name TEXT ,
+	type ENUM_pdbx_data_usage_type ,
+	url TEXT ,
+-- ATTRIBUTE
+	id TEXT NOT NULL
 );
 
 --
@@ -17183,6 +17206,9 @@ CREATE TABLE valence_ref (
 
 -- (derived from xsd:key[@name='pdbx_data_processing_statusKey_0'])
 --ALTER TABLE pdbx_data_processing_status ADD CONSTRAINT UNQ_pdbx_data_processing_status UNIQUE ( document_id, status, task_name );
+
+-- (derived from xsd:key[@name='pdbx_data_usageKey_0'])
+--ALTER TABLE pdbx_data_usage ADD CONSTRAINT UNQ_pdbx_data_usage UNIQUE ( document_id, id );
 
 -- (derived from xsd:key[@name='pdbx_database_PDB_masterKey_0'])
 --ALTER TABLE "pdbx_database_PDB_master" ADD CONSTRAINT UNQ_pdbx_database_PDB_master UNIQUE ( document_id, entry_id );

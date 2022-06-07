@@ -937,6 +937,7 @@ em_db_reference.relationship
 em_depositor_info.em_method_selection
 em_depositor_info.entry_id
 em_depositor_info.molecular_description_flag
+em_depui.composite_map_deposition
 em_depui.depositor_hold_instructions
 em_depui.entry_id
 em_depui.macromolecule_description
@@ -2440,6 +2441,11 @@ pdbx_data_processing_reflns.percent_rejected
 pdbx_data_processing_reflns.R_factor_all_linear
 pdbx_data_processing_status.status
 pdbx_data_processing_status.task_name
+pdbx_data_usage.details
+pdbx_data_usage.id
+pdbx_data_usage.name
+pdbx_data_usage.type
+pdbx_data_usage.url
 pdbx_dbref.begin_ins_code
 pdbx_dbref.begin_res_number
 pdbx_dbref.chain_id

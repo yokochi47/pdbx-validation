@@ -4056,6 +4056,18 @@
       </PDBo:has_pdbx_data_processing_status>
   </xsl:template>
 
+  <xsl:template match="PDBx:datablock/PDBx:pdbx_data_usageCategory/PDBx:pdbx_data_usage">
+      <PDBo:has_pdbx_data_usage>
+      <PDBo:pdbx_data_usage rdf:about="{$base}/pdbx_data_usage/{translate(@id,' ^','_')}">
+      <PDBo:of_datablock rdf:resource="{$base}"/>
+      <xsl:apply-templates select="@*"/>
+      <xsl:apply-templates select="@*" mode="linked"/>
+      <xsl:apply-templates/>
+      <xsl:apply-templates mode="linked"/>
+      </PDBo:pdbx_data_usage>
+      </PDBo:has_pdbx_data_usage>
+  </xsl:template>
+
   <xsl:template match="PDBx:datablock/PDBx:pdbx_database_PDB_masterCategory/PDBx:pdbx_database_PDB_master">
       <PDBo:has_pdbx_database_PDB_master>
       <PDBo:pdbx_database_PDB_master rdf:about="{$base}/pdbx_database_PDB_master/{translate(@entry_id,' ^','_')}">

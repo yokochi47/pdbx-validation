@@ -157,6 +157,7 @@ pdbx_data_processing_cell WWPDB_LOCAL
 pdbx_data_processing_detector WWPDB_LOCAL
 pdbx_data_processing_reflns WWPDB_LOCAL
 pdbx_data_processing_status WWPDB_LOCAL
+pdbx_data_usage
 pdbx_dbref WWPDB_LOCAL
 pdbx_deposit_group
 pdbx_deposit_group_index WWPDB_LOCAL

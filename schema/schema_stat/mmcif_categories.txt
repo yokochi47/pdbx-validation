@@ -231,6 +231,7 @@ pdbx_data_processing_cell
 pdbx_data_processing_detector
 pdbx_data_processing_reflns
 pdbx_data_processing_status
+pdbx_data_usage
 pdbx_dbref
 pdbx_dcc_density
 pdbx_dcc_density_corr
