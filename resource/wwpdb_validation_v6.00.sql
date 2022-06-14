@@ -2827,36 +2827,6 @@ SELECT
 FROM "ModelledEntityInstance" WHERE "relative_RSRZ_percentile_id" IS NOT NULL;
 
 --
--- Contains the data required to plot atom inclusion for for all atoms.
--- xmlns: no namespace, schema location: wwpdb_validation_v6.00.xsd
--- type: root child (view), content: false, list: false, bridge: true, virtual: false
---
-CREATE OR REPLACE VIEW all_atoms AS
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	all_atoms_id ,
--- NESTED KEY : graph ( graph_id )
-	all_atoms_id AS graph_id
-FROM atom_inclusion WHERE all_atoms_id IS NOT NULL;
-
---
--- Contains the data required to plot the atom inclusion for the backbone.
--- xmlns: no namespace, schema location: wwpdb_validation_v6.00.xsd
--- type: root child (view), content: false, list: false, bridge: true, virtual: false
---
-CREATE OR REPLACE VIEW backbone AS
-SELECT
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id ,
--- PRIMARY KEY
-	backbone_id ,
--- NESTED KEY : graph ( graph_id )
-	backbone_id AS graph_id
-FROM atom_inclusion WHERE backbone_id IS NOT NULL;
-
---
 -- An atom name from cif item _atom_site.label_atom_id and _chem_comp_atom.atom_id. Currently limited to 4 characters. Example: atom="NE2"
 -- xmlns: no namespace, schema location: wwpdb_validation_v6.00.xsd
 -- type: root child (view), content: false, list: false, bridge: true, virtual: false
@@ -2987,6 +2957,36 @@ SELECT
 -- NESTED KEY AS ATTRIBUTE : atom_name ( atom_name_id )
 	atom_4_id AS atom_name_id
 FROM violated_dihedralangle_restraint WHERE atom_4_id IS NOT NULL;
+
+--
+-- Contains the data required to plot atom inclusion for for all atoms.
+-- xmlns: no namespace, schema location: wwpdb_validation_v6.00.xsd
+-- type: root child (view), content: false, list: false, bridge: true, virtual: false
+--
+CREATE OR REPLACE VIEW all_atoms AS
+SELECT
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id ,
+-- PRIMARY KEY
+	all_atoms_id ,
+-- NESTED KEY : graph ( graph_id )
+	all_atoms_id AS graph_id
+FROM atom_inclusion WHERE all_atoms_id IS NOT NULL;
+
+--
+-- Contains the data required to plot the atom inclusion for the backbone.
+-- xmlns: no namespace, schema location: wwpdb_validation_v6.00.xsd
+-- type: root child (view), content: false, list: false, bridge: true, virtual: false
+--
+CREATE OR REPLACE VIEW backbone AS
+SELECT
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id ,
+-- PRIMARY KEY
+	backbone_id ,
+-- NESTED KEY : graph ( graph_id )
+	backbone_id AS graph_id
+FROM atom_inclusion WHERE backbone_id IS NOT NULL;
 
 --
 -- Contains the data required to plot the map-value distribution graph for the primary map
