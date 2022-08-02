@@ -5633,6 +5633,30 @@
       </PDBo:has_pdbx_inhibitor_info>
   </xsl:template>
 
+  <xsl:template match="PDBx:datablock/PDBx:pdbx_initial_refinement_modelCategory/PDBx:pdbx_initial_refinement_model">
+      <PDBo:has_pdbx_initial_refinement_model>
+      <PDBo:pdbx_initial_refinement_model rdf:about="{$base}/pdbx_initial_refinement_model/{translate(@id,' ^','_')}">
+      <PDBo:of_datablock rdf:resource="{$base}"/>
+      <xsl:apply-templates select="@*"/>
+      <xsl:apply-templates select="@*" mode="linked"/>
+      <xsl:apply-templates/>
+      <xsl:apply-templates mode="linked"/>
+      </PDBo:pdbx_initial_refinement_model>
+      </PDBo:has_pdbx_initial_refinement_model>
+  </xsl:template>
+
+  <xsl:template match="PDBx:datablock/PDBx:pdbx_investigationCategory/PDBx:pdbx_investigation">
+      <PDBo:has_pdbx_investigation>
+      <PDBo:pdbx_investigation rdf:about="{$base}/pdbx_investigation/{translate(@id,' ^','_')}">
+      <PDBo:of_datablock rdf:resource="{$base}"/>
+      <xsl:apply-templates select="@*"/>
+      <xsl:apply-templates select="@*" mode="linked"/>
+      <xsl:apply-templates/>
+      <xsl:apply-templates mode="linked"/>
+      </PDBo:pdbx_investigation>
+      </PDBo:has_pdbx_investigation>
+  </xsl:template>
+
   <xsl:template match="PDBx:datablock/PDBx:pdbx_ion_infoCategory/PDBx:pdbx_ion_info">
       <PDBo:has_pdbx_ion_info>
       <PDBo:pdbx_ion_info rdf:about="{$base}/pdbx_ion_info/{translate(@id,' ^','_')}">

@@ -3,6 +3,9 @@ diffrn_source.pdbx_source_specific_beamline WWPDB_LOCAL
 diffrn_source.pdbx_synchrotron_y_n WWPDB_LOCAL
 diffrn_standards.scale_u
 em_2d_crystal_entity.entity_assembly_id WWPDB_LOCAL
+em_3d_fitting.initial_refinement_model_id WWPDB_LOCAL
+em_3d_fitting_list.chain_id WWPDB_LOCAL
+em_3d_fitting_list.chain_residue_range WWPDB_LOCAL
 em_3d_fitting.software_name WWPDB_DEPRECATED
 em_3d_reconstruction.ctf_correction_method WWPDB_DEPRECATED
 em_3d_reconstruction.fsc_type WWPDB_LOCAL

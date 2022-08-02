@@ -165,3 +165,4 @@ pdbx_audit_revision_group CHEM_COMP_INT
 pdbx_audit_revision_category CHEM_COMP_INT
 pdbx_audit_revision_details CHEM_COMP_INT
 pdbx_audit_revision_item CHEM_COMP_INT
+pdbx_initial_refinement_model WWPDB_LOCAL

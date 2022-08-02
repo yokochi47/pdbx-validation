@@ -938,3 +938,6 @@ reflns.pdbx_Rmerge_I_anomalous WWPDB_LOCAL
 pdbx_audit_revision_history.internal_version WWPDB_LOCAL
 pdbx_audit_revision_history.internal_deposition_id WWPDB_LOCAL
 chem_comp_atom.pdbx_stnd_atom_id WWPDB_LOCAL
+em_3d_fitting.initial_refinement_model_id WWPDB_LOCAL
+em_3d_fitting_list.chain_id WWPDB_LOCAL
+em_3d_fitting_list.chain_residue_range WWPDB_LOCAL

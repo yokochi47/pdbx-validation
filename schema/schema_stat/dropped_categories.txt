@@ -218,6 +218,8 @@ pdbx_feature_sequence_range
 pdbx_helical_symmetry_depositor_info WWPDB_LOCAL
 pdbx_hybrid WWPDB_LOCAL
 pdbx_inhibitor_info WWPDB_LOCAL
+pdbx_initial_refinement_model WWPDB_LOCAL
+pdbx_investigation
 pdbx_ion_info WWPDB_LOCAL
 pdbx_linked_entity
 pdbx_linked_entity_instance_list

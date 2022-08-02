@@ -4,7 +4,7 @@
 # Date:  Tue Jun  7 14:42:10 JST 2022
 #
 # Created from:
-#        mmcif_pdbx_v50.dic   - PDB Exchange Data Dictionary (V5.359)
+#        mmcif_pdbx_v50.dic   - PDB Exchange Data Dictionary (V5.360)
 #        http://wwpdb.org/validation/schema/wwpdb_validation_v6.00.xsd
 #         - a XML schema for wwPDB validation reports, v6.00, rev. 2021-01-22
 #
@@ -31,7 +31,7 @@ data_mmcif_pdbx_validation.dic
 
     _dictionary.title           mmcif_pdbx_validation.dic
     _dictionary.datablock_id    mmcif_pdbx_validation.dic
-    _dictionary.version         4.359
+    _dictionary.version         4.360
 #
     loop_
     _dictionary_history.version
@@ -1033,6 +1033,15 @@ data_mmcif_pdbx_validation.dic
 >     + Add "POSITION SENSITIVE DETECTOR" to _diffrn_detector.detector enumeration # merged
 >     + Add Careless and Xtrapol8 to _software.name PDBX enumeration # not mapped
 >     + Add "5ATM 3HE, CURVED 120X30 DEGREES" to _diffrn_detector.type enumeration # merged
+;
+  4.360   2022-08-02
+;
+>     + Extend _pdbx_audit_support.funding_organization enumeration # not mapped
+>     + Add "DIRECT ELECTRON APOLLO (4k x 4k)" to _em_image_recording.film_or_detector_mode enumeration # merged
+>     + Initial model extension added to dictionary (_pdbx_initial_refinement) # not mapped
+>     + pdbx_investigation category added to the model # not mapped
+>     + Add "CHESS BEAMLINE 7B2" to _diffrn_source.type enumeration # merged
+>     + include 0 in the range for _reflns.pdbx_aniso_B_tensor_eigenvalue_* # merged
 ;
 
 
@@ -4399,6 +4408,7 @@ save__diffrn_source.type
      "_diffrn_source.type"  "BSRF BEAMLINE 1W2B"                             SYNCHROTRON
      "_diffrn_source.type"  "BSRF BEAMLINE 3W1A"                             SYNCHROTRON
      "_diffrn_source.type"  "CAMD BEAMLINE GCPCC"                            SYNCHROTRON
+     "_diffrn_source.type"  "CHESS BEAMLINE 7B2"                             SYNCHROTRON
      "_diffrn_source.type"  "CHESS BEAMLINE A1"                              SYNCHROTRON
      "_diffrn_source.type"  "CHESS BEAMLINE F1"                              SYNCHROTRON
      "_diffrn_source.type"  "CHESS BEAMLINE F2"                              SYNCHROTRON
@@ -25330,6 +25340,7 @@ save__diffrn_source.pdbx_synchrotron_beamline
      "_diffrn_source.pdbx_synchrotron_beamline"  6C1             .
      "_diffrn_source.pdbx_synchrotron_beamline"  6D              .
      "_diffrn_source.pdbx_synchrotron_beamline"  "7A (6B, 6C1)"  .
+     "_diffrn_source.pdbx_synchrotron_beamline"  7B2             .
      "_diffrn_source.pdbx_synchrotron_beamline"  8.2.1           .
      "_diffrn_source.pdbx_synchrotron_beamline"  8.2.2           .
      "_diffrn_source.pdbx_synchrotron_beamline"  8.3.1           .
@@ -54140,6 +54151,7 @@ save__em_image_recording.film_or_detector_model
   '_em_image_recording.film_or_detector_model'    "KODAK SO-163 FILM"   .
   '_em_image_recording.film_or_detector_model'    "GENERIC FILM"   .
   '_em_image_recording.film_or_detector_model'    "GENERIC IMAGE PLATES"   .
+  '_em_image_recording.film_or_detector_model'    "DIRECT ELECTRON APOLLO (4k x 4k)"  .
   '_em_image_recording.film_or_detector_model'    "DIRECT ELECTRON DE-10 (5k x 4k)"   .
   '_em_image_recording.film_or_detector_model'    "DIRECT ELECTRON DE-12 (4k x 3k)"   .
   '_em_image_recording.film_or_detector_model'    "DIRECT ELECTRON DE-16 (4k x 4k)"   .
@@ -72851,8 +72863,11 @@ save__reflns.pdbx_aniso_B_tensor_eigenvalue_1
     _item_sub_category.id          eigendecomposition
     _item_sub_category.pdbx_label  aniso_B_tensor
 
-    _item_range.minimum            0.0
-    _item_range.maximum             .
+    loop_
+    _item_range.minimum
+    _item_range.maximum
+                                   0.0  0.0
+                                   0.0  .
 
     _item_aliases.alias_name     '_reflns.gphl_aniso_B_tensor_eigenvalue_1'
     _item_aliases.dictionary       gphl-proc-aniso-extension.dic
@@ -72876,8 +72891,11 @@ save__reflns.pdbx_aniso_B_tensor_eigenvalue_2
     _item_sub_category.id          eigendecomposition
     _item_sub_category.pdbx_label  aniso_B_tensor
 
-    _item_range.minimum            0.0
-    _item_range.maximum             .
+    loop_
+    _item_range.minimum
+    _item_range.maximum
+                                   0.0  0.0
+                                   0.0  .
 
     _item_aliases.alias_name     '_reflns.gphl_aniso_B_tensor_eigenvalue_2'
     _item_aliases.dictionary       gphl-proc-aniso-extension.dic
@@ -72900,8 +72918,11 @@ save__reflns.pdbx_aniso_B_tensor_eigenvalue_3
     _item_sub_category.id          eigendecomposition
     _item_sub_category.pdbx_label  aniso_B_tensor
 
-    _item_range.minimum            0.0
-    _item_range.maximum             .
+    loop_
+    _item_range.minimum
+    _item_range.maximum
+                                   0.0  0.0
+                                   0.0  .
 
     _item_aliases.alias_name     '_reflns.gphl_aniso_B_tensor_eigenvalue_3'
     _item_aliases.dictionary       gphl-proc-aniso-extension.dic
