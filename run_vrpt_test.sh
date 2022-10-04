@@ -169,6 +169,7 @@ for pdbml_file in $WORK_DIR/$PDBML/*.xml ; do
  pdbml_ext_file=../$pdbml_ext_file # add relative path (../) from directory contains target styleseet
 
  #xsltproc -o $info_alt_file --stringparam pdbml_ext_file $pdbml_ext_file $EXT_INFO_XSL $info_file || ( echo $0 aborted. ; exit 1 )
+ echo java -jar $SAXON -s:$info_file -xsl:$EXT_INFO_XSL -o:$info_alt_file pdbml_ext_file=$pdbml_ext_file
  java -jar $SAXON -s:$info_file -xsl:$EXT_INFO_XSL -o:$info_alt_file pdbml_ext_file=$pdbml_ext_file || ( echo $0 aborted. ; exit 1 )
 
  xml_pretty $info_alt_file
