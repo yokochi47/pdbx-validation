@@ -3,6 +3,7 @@ audit_author.address WWPDB_LOCAL
 struct.pdbx_center_of_mass_x WWPDB_LOCAL
 struct.pdbx_center_of_mass_y WWPDB_LOCAL
 struct.pdbx_center_of_mass_z WWPDB_LOCAL
+struct.pdbx_structure_determination_methodology WWPDB_LOCAL
 pdbx_database_status.author_release_status_code WWPDB_LOCAL
 pdbx_database_status.dep_release_code_coordinates WWPDB_LOCAL
 pdbx_database_status.dep_release_code_sequence WWPDB_LOCAL

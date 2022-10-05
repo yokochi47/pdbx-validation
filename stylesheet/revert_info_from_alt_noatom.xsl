@@ -375,6 +375,9 @@ Unmatched entry ID in both documents (<xsl:value-of select="$entry_id"/> and <xs
         <xsl:if test="VRPTx:atom_inclusion_main">
           <xsl:attribute name="atom_inclusion_backbone"><xsl:value-of select="VRPTx:atom_inclusion_main"/></xsl:attribute>
         </xsl:if>
+        <xsl:if test="VRPTx:Q_score">
+          <xsl:attribute name="Q_score"><xsl:value-of select="VRPTx:Q_score"/></xsl:attribute>
+        </xsl:if>
       </xsl:for-each>
 
       <xsl:for-each select="VRPTx:pdbx_em_fsc_resolutionCaetgory/VRPTx:pdbx_em_fsc_resolution">
@@ -1499,6 +1502,9 @@ Unmatched type exist in _pdbx_nmr_assigned_chem_shift_list.nmr_star_consistency_
 
         <xsl:for-each select="$datablock/VRPTx:pdbx_em_validate_map_modelCategory/VRPTx:pdbx_em_validate_map_model[VRPTx:PDB_model_num=$model and VRPTx:auth_asym_id=$strand_id and VRPTx:auth_comp_id=$mon_id and VRPTx:auth_seq_id=$pdb_seq_num and ($alt_id='' or VRPTx:label_alt_id=$alt_id)]">
           <xsl:attribute name="residue_inclusion"><xsl:value-of select="VRPTx:atom_inclusion_all"/></xsl:attribute>
+          <xsl:if test="VRPTx:Q_score">
+            <xsl:attribute name="Q_score"><xsl:value-of select="VRPTx:Q_score"/></xsl:attribute>
+          </xsl:if>
         </xsl:for-each>
 
       </xsl:if>
@@ -2091,6 +2097,9 @@ Unmatched type exist in _pdbx_percentile_entity_view.type, <xsl:value-of select=
 
         <xsl:for-each select="$datablock/VRPTx:pdbx_em_validate_map_model_entityCategory/VRPTx:pdbx_em_validate_map_model_entity[@label_asym_id=$asym_id]">
           <xsl:attribute name="average_residue_inclusion"><xsl:value-of select="VRPTx:average_atom_inclusion_all"/></xsl:attribute>
+          <xsl:if test="VRPTx:average_Q_score">
+            <xsl:attribute name="Q_score"><xsl:value-of select="VRPTx:average_Q_score"/></xsl:attribute>
+          </xsl:if>
         </xsl:for-each>
 
       </xsl:if>

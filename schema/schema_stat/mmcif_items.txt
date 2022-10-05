@@ -1225,6 +1225,7 @@ em_map.label
 em_map.limit_col
 em_map.limit_row
 em_map.limit_sec
+em_map.original_file
 em_map.origin_col
 em_map.origin_row
 em_map.origin_sec

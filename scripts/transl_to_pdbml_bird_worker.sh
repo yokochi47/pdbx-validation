@@ -42,23 +42,23 @@ PROC_ID=$(($PROC_ID - 1))
 proc_id=0
 total=`wc -l < $FILE_LIST`
 
-while read bird_cif_file
+while read cir_bird_file
 do
 
  proc_id_mod=$(($proc_id % $MAXPROCS))
 
  if [ $proc_id_mod = $PROC_ID ] ; then
 
-  if [ ! -e $bird_cif_file ] ; then
+  if [ ! -e $cir_bird_file ] ; then
 
    let proc_id++
    continue
 
   fi
 
-  cif_basename=`basename $cif_bird_file .cif`
+  cif_basename=`basename $cir_bird_file .cif`
 
-  ( cd $WORK_DIR ; mmcif2XML -dictSdbFile $pdbx_sdb -funct mmcif2xml -dictName pdbx_mmcif.dic -ns PDBx -prefix pdbx-v50 -f ../../$cif_bird_file ; mv $cif_basename.cif.xml $cif_basename.xml )
+  ( cd $WORK_DIR ; mmcif2XML -dictSdbFile $pdbx_sdb -funct mmcif2xml -dictName pdbx_mmcif.dic -ns PDBx -prefix pdbx-v50 -f ../../$cir_bird_file ; mv $cif_basename.cif.xml $cif_basename.xml )
 
  fi
 
