@@ -82,11 +82,11 @@ err_file=$ERR_DIR/all_err
 
 if [ $sync_update != "true" ] ; then
 
- java -classpath $XSD2PGSCHEMA xml2pgtsv --xsd $XML_SCHEMA --xml $XML_DIR/[0-9a-z]{2}/[0-9][0-9a-z]{3} --xml-file-ext gz --work-dir $DATA_DIR --sync $MD5_DIR --xml-file-ext-digest $FILE_EXT_DIGEST --db-name $DB_NAME --db-user $DB_USER --type-check 2> $err_file
+ java -classpath $XSD2PGSCHEMA xml2pgtsv --xsd $XML_SCHEMA --xml $XML_DIR/[0-9a-z]{2}/[0-9][0-9a-z]{3} --xml-file-ext gz --work-dir $DATA_DIR --sync $MD5_DIR --xml-file-ext-digest $FILE_EXT_DIGEST --db-name $DB_NAME --db-user $DB_USER --type-check --skip-range-outlier 2> $err_file
 
 else
 
- java -classpath $XSD2PGSCHEMA xml2pgsql --xsd $XML_SCHEMA --xml $XML_DIR/[0-9a-z]{2}/[0-9][0-9a-z]{3} --xml-file-ext gz --sync $MD5_DIR --xml-file-ext-digest $FILE_EXT_DIGEST --db-name $DB_NAME --db-user $DB_USER --type-check 2> $err_file
+ java -classpath $XSD2PGSCHEMA xml2pgsql --xsd $XML_SCHEMA --xml $XML_DIR/[0-9a-z]{2}/[0-9][0-9a-z]{3} --xml-file-ext gz --sync $MD5_DIR --xml-file-ext-digest $FILE_EXT_DIGEST --db-name $DB_NAME --db-user $DB_USER --type-check --skip-range-outlier 2> $err_file
 
 fi
 
