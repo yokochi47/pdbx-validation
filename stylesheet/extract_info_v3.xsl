@@ -1004,6 +1004,12 @@ Restraint residual violation bins, <xsl:value-of select="@bins"/>, is not listed
             <xsl:when test="@restraint_type='InterChain'">
               <xsl:attribute name="type">interchain</xsl:attribute>
             </xsl:when>
+            <xsl:when test="@restraint_type='HydrogenBond'">
+              <xsl:attribute name="type">hydrogen_bond</xsl:attribute>
+            </xsl:when>
+            <xsl:when test="@restraint_type='DisulfideBond'">
+              <xsl:attribute name="type">disulfide_bond</xsl:attribute>
+            </xsl:when>
             <xsl:when test="@restraint_type='Total'">
               <xsl:attribute name="type">all</xsl:attribute>
             </xsl:when>
@@ -1893,6 +1899,7 @@ Dihedral angle restraint type, <xsl:value-of select="@ang_rest_type"/>, is not l
             <xsl:when test="@name='xtriage'">x-ray data assessment</xsl:when>
             <xsl:when test="@name='buster-report'">geometric validation package for ligand chemistry in protein x-ray structures</xsl:when>
             <xsl:when test="@name='visualanalysis'">em map-model validation package</xsl:when>
+            <xsl:when test="@name='chimera'">em map-model validation package</xsl:when>
             <xsl:otherwise>
               <xsl:call-template name="error_handler">
                 <xsl:with-param name="terminate">yes</xsl:with-param>

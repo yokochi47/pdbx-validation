@@ -1,7 +1,7 @@
 ###########################################################################
 #
 # File:  mmcif_pdbx_validation-v4.dic
-# Date:  Wed Oct  5 18:12:43 JST 2022
+# Date:  Thu Oct  6 09:47:42 JST 2022
 #
 # Created from:
 #        mmcif_pdbx_v50.dic   - PDB Exchange Data Dictionary (V5.361)
@@ -1044,7 +1044,7 @@ data_mmcif_pdbx_validation.dic
 >     + include 0 in the range for _reflns.pdbx_aniso_B_tensor_eigenvalue_* # merged
 >     + Mark _struct.pdbx_structure_determination_methodology as internal to WWPDB # merged
 ;
-  4.361   2022-10-05
+  4.361   2022-10-06
 ;
 >     + Consolidate EMD/EM namespaces
 >     + Update _pdbx_audit_support # not mapped
@@ -1056,6 +1056,8 @@ data_mmcif_pdbx_validation.dic
         + Add '_pdbx_em_validate_map_model_overall.Q_score' with link to /wwPDB-validation-information/Entry/@Q_score
         + Add '_pdbx_em_validate_map_model_entity.average_Q_score' with link to /wwPDB-validation-information/ModelledEntityInstance/@Q_score
         + Add '_pdbx_em_validate_map_model.Q_score' with link to /wwPDB-validation-information/ModelledSubgroup/@Q_score
+      + Support NMR validation
+        + Add 'hydrogen_bond' and 'disulfide_bond' to '_pdbx_nmr_distance_violation_summary.type'
 ;
 
 
@@ -68090,6 +68092,8 @@ save__pdbx_nmr_distance_violation_summary.type
      medium_range    'medium range 1<|i-j|<5, distance restraints'
      long_range      'long range |i-j|>=5, distance restraints'
      interchain      'interchain distance restraints'
+     hydrogen_bond   'hydrogen bond restraints'
+     disulfide_bond  'disulfide bond restraints'
      all             'all distance restraints without classification based on residue number gap'
 #
     _pdbx_item_aliases.xpath     '/wwPDB-validation-information/distance_restraints_analysis/distance_violations_summary/distance_violation_summary/@restraint_type'

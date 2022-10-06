@@ -4598,7 +4598,7 @@ CREATE TABLE pdbx_nmr_distance_violation_plural (
 DROP TYPE IF EXISTS ENUM_pdbx_nmr_distance_violation_summary_subtype CASCADE;
 CREATE TYPE ENUM_pdbx_nmr_distance_violation_summary_subtype AS ENUM ( 'backbone_backbone', 'distance restraints between two backbone atoms', 'backbone_sidechain', 'distance restraints between backbone atom and side chaini atom', 'sidechain_sidechain', 'distance restraints between two side chain atoms', 'all', 'all distance restraints without backbone/side chain classificat' );
 DROP TYPE IF EXISTS ENUM_pdbx_nmr_distance_violation_summary_type CASCADE;
-CREATE TYPE ENUM_pdbx_nmr_distance_violation_summary_type AS ENUM ( 'intraresidue', 'sequential', 'medium_range', 'long_range', 'interchain', 'all' );
+CREATE TYPE ENUM_pdbx_nmr_distance_violation_summary_type AS ENUM ( 'intraresidue', 'sequential', 'medium_range', 'long_range', 'interchain', 'hydrogen_bond', 'disulfide_bond', 'all' );
 CREATE TABLE pdbx_nmr_distance_violation_summary (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	entry_id TEXT ,

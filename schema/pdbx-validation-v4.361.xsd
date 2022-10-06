@@ -19178,6 +19178,8 @@ the conventional residue number gap.
                 <xsd:enumeration value="medium_range"/>
                 <xsd:enumeration value="long_range"/>
                 <xsd:enumeration value="interchain"/>
+                <xsd:enumeration value="hydrogen_bond"/>
+                <xsd:enumeration value="disulfide_bond"/>
                 <xsd:enumeration value="all"/>
               </xsd:restriction>
             </xsd:simpleType>
