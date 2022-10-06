@@ -18,9 +18,6 @@ while true ; do
  shift
 done
 
-if [ -d $PDBML_EXT ] ; then
- ./scripts/validate_all_xml_gz.sh -d $PDBML_EXT $DELETE_OPT
-fi
 <<REMARK
 if [ -d $VALID_INFO_ALT ] ; then
  ./scripts/validate_all_xml.sh -d $VALID_INFO_ALT $DELETE_OPT
