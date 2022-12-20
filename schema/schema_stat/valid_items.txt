@@ -205,11 +205,14 @@ em_3d_fitting.details
 em_3d_fitting.entry_id
 em_3d_fitting.id
 em_3d_fitting_list.3d_fitting_id
+em_3d_fitting_list.accession_code
 em_3d_fitting_list.details
 em_3d_fitting_list.id
 em_3d_fitting_list.pdb_chain_id
 em_3d_fitting_list.pdb_chain_residue_range
 em_3d_fitting_list.pdb_entry_id
+em_3d_fitting_list.source_name
+em_3d_fitting_list.type
 em_3d_fitting.method
 em_3d_fitting.overall_b_value
 em_3d_fitting.ref_protocol

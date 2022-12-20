@@ -1,5 +1,3 @@
-em_software.fitting_id
-em_software.imaging_id
 pdbx_database_status.validation_created_date
 pdbx_dcc_density.aniso_B[1][1]
 pdbx_dcc_density.aniso_B[1][2]

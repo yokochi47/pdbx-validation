@@ -1,10 +1,10 @@
 ###########################################################################
 #
 # File:  mmcif_pdbx_validation-v4.dic
-# Date:  Thu Oct  6 09:47:42 JST 2022
+# Date:  Tue Dec 20 17:38:44 JST 2022
 #
 # Created from:
-#        mmcif_pdbx_v50.dic   - PDB Exchange Data Dictionary (V5.361)
+#        mmcif_pdbx_v50.dic   - PDB Exchange Data Dictionary (V5.362)
 #        http://wwpdb.org/validation/schema/wwpdb_validation_v6.01.xsd
 #         - a XML schema for wwPDB validation reports, v6.01, rev. 2022-09-20
 #
@@ -31,7 +31,7 @@ data_mmcif_pdbx_validation.dic
 
     _dictionary.title           mmcif_pdbx_validation.dic
     _dictionary.datablock_id    mmcif_pdbx_validation.dic
-    _dictionary.version         4.361
+    _dictionary.version         4.362
 #
     loop_
     _dictionary_history.version
@@ -1058,6 +1058,19 @@ data_mmcif_pdbx_validation.dic
         + Add '_pdbx_em_validate_map_model.Q_score' with link to /wwPDB-validation-information/ModelledSubgroup/@Q_score
       + Support NMR validation
         + Add 'hydrogen_bond' and 'disulfide_bond' to '_pdbx_nmr_distance_violation_summary.type'
+;
+  4.362   2022-12-20
+;
+>     + Add _em_3d_fitting_list.accession_code,
+>       _em_3d_fitting_list.source_name,
+>       _em_3d_fitting_list.type # merged
+>     + Deprecate _em_3d_fitting.initial_refinement_model_id # not mapped
+>     + Extend em_software.name list to include cryoDRGN and cryoDRGN2 # merged
+>     + Add "DECTRIS EIGER2 X CdTe 9M" and "DECTRIS EIGER2 XE CdTe 9M"
+>       to _diffrn_detector.type # merged
+>     + Extend _pdbx_audit_support.funding_organization enumeration # not mapped
+>     + Mark _pdbx_nmr_chem_shift_ref.atom_group and
+>       _pdbx_nmr_constraint_file.constraint_type as closed enumeration # not mapped
 ;
 
 
@@ -2225,7 +2238,13 @@ save__diffrn_detector.type
       "_diffrn_detector.type"  "DECTRIS EIGER2 X 1M"             PIXEL
       "_diffrn_detector.type"  "DECTRIS EIGER2 X 4M"             PIXEL
       "_diffrn_detector.type"  "DECTRIS EIGER2 X 9M"             PIXEL
+      "_diffrn_detector.type"  "DECTRIS EIGER2 X CdTe 9M"        PIXEL
+      "_diffrn_detector.type"  "DECTRIS EIGER2 X CdTe 16M"       PIXEL
       "_diffrn_detector.type"  "DECTRIS EIGER2 X 16M"            PIXEL
+      "_diffrn_detector.type"  "DECTRIS EIGER2 XE 9M"            PIXEL
+      "_diffrn_detector.type"  "DECTRIS EIGER2 XE 16M"           PIXEL
+      "_diffrn_detector.type"  "DECTRIS EIGER2 XE CdTe 9M"       PIXEL
+      "_diffrn_detector.type"  "DECTRIS EIGER2 XE CdTe 16M"      PIXEL
       "_diffrn_detector.type"  "DECTRIS MYTHEN2 R 1K"            PIXEL
       "_diffrn_detector.type"  "DECTRIS MYTHEN2 R 1D"            PIXEL
       "_diffrn_detector.type"  "DECTRIS MYTHEN2 X 1K"            PIXEL
@@ -51834,6 +51853,64 @@ save__em_3d_fitting_list.pdb_chain_residue_range
     #
 save_
 
+save__em_3d_fitting_list.source_name
+   _item_description.description
+;              This item identifies the resource of initial model used for refinement
+;
+   #   
+   _item.name            "_em_3d_fitting_list.source_name"
+   _item.category_id     em_3d_fitting_list
+   _item.mandatory_code  no
+   # 
+   _item_type.code  code
+   #
+   loop_
+   _item_enumeration.value
+     PDB
+     AlphaFold
+     RoseTTAFold
+     ModelArchive
+     SwissModel
+     Modeller
+     ITasser
+     Other
+   #
+save_
+
+save__em_3d_fitting_list.type
+   _item_description.description
+;              This item describes the type of the initial model was generated
+;
+   # 
+   _item.name            "_em_3d_fitting_list.type"
+   _item.category_id     em_3d_fitting_list
+   _item.mandatory_code  no
+   #
+   _item_type.code  line
+   #
+   loop_
+   _item_enumeration.value
+     "in silico model"
+     "experimental model"
+     "integrative model"
+     other
+   #
+save_
+
+save__em_3d_fitting_list.accession_code
+   _item_description.description  
+;              This item identifies an accession code of the resource where the initial model
+               is used
+;
+   #
+   _item.name            "_em_3d_fitting_list.accession_code"
+   _item.category_id     em_3d_fitting_list
+   _item.mandatory_code  no
+   #
+   _item_type.code  line
+   #
+save_
+
 save__em_3d_fitting_list.details
 #new V5
     _item_description.description
@@ -54708,6 +54785,8 @@ save__em_software.name
         '_em_software.name'  Coot                               .
         '_em_software.name'  Cow                                .
         '_em_software.name'  crYOLO                             .
+        '_em_software.name'  cryoDRGN                           .
+        '_em_software.name'  cryoDRGN2                          .
         '_em_software.name'  cryoSPARC                          .
         '_em_software.name'  CTFFIND                            .
         '_em_software.name'  ctfit                              .

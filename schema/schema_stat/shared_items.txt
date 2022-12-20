@@ -205,11 +205,14 @@ em_3d_fitting.details
 em_3d_fitting.entry_id
 em_3d_fitting.id
 em_3d_fitting_list.3d_fitting_id
+em_3d_fitting_list.accession_code
 em_3d_fitting_list.details
 em_3d_fitting_list.id
 em_3d_fitting_list.pdb_chain_id
 em_3d_fitting_list.pdb_chain_residue_range
 em_3d_fitting_list.pdb_entry_id
+em_3d_fitting_list.source_name
+em_3d_fitting_list.type
 em_3d_fitting.method
 em_3d_fitting.overall_b_value
 em_3d_fitting.ref_protocol
@@ -427,8 +430,10 @@ em_single_particle_entity.image_processing_id
 em_single_particle_entity.point_symmetry
 em_software.category
 em_software.details
+em_software.fitting_id
 em_software.id
 em_software.image_processing_id
+em_software.imaging_id
 em_software.name
 em_software.version
 em_specimen.concentration
@@ -2151,7 +2156,7 @@ refine.ls_restrained_S_obs
 refine_ls_restr.criterion
 refine_ls_restr.dev_ideal
 refine_ls_restr.dev_ideal_target
-refine_ls_restr_ncs.dom_id WWPDB_LOCAL
+refine_ls_restr_ncs.dom_id
 refine_ls_restr_ncs.ncs_model_details
 refine_ls_restr_ncs.pdbx_asym_id
 refine_ls_restr_ncs.pdbx_auth_asym_id
@@ -2356,7 +2361,7 @@ reflns.data_reduction_method
 reflns.details
 reflns.d_resolution_high
 reflns.d_resolution_low
-reflns.entry_id WWPDB_LOCAL
+reflns.entry_id
 reflns.Friedel_coverage
 refln.sint_over_lambda
 reflns.limit_h_max
@@ -2365,7 +2370,7 @@ reflns.limit_k_max
 reflns.limit_k_min
 reflns.limit_l_max
 reflns.limit_l_min
-reflns.number_all WWPDB_LOCAL
+reflns.number_all
 reflns.number_gt
 reflns.number_obs
 reflns.observed_criterion
@@ -2742,12 +2747,12 @@ struct_ncs_oper.vector[1]
 struct_ncs_oper.vector[2]
 struct_ncs_oper.vector[3]
 struct.pdbx_CASP_flag
-struct.pdbx_descriptor WWPDB_LOCAL
+struct.pdbx_descriptor
 struct.pdbx_formula_weight
 struct.pdbx_formula_weight_method
 struct.pdbx_model_details
 struct.pdbx_model_type_details
-struct.pdbx_structure_determination_methodology WWPDB_LOCAL
+struct.pdbx_structure_determination_methodology
 struct_ref.biol_id
 struct_ref.db_code
 struct_ref.db_name

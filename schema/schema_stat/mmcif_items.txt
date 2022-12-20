@@ -839,6 +839,7 @@ em_3d_fitting.entry_id
 em_3d_fitting.id
 em_3d_fitting.initial_refinement_model_id
 em_3d_fitting_list.3d_fitting_id
+em_3d_fitting_list.accession_code
 em_3d_fitting_list.chain_id
 em_3d_fitting_list.chain_residue_range
 em_3d_fitting_list.details
@@ -846,6 +847,8 @@ em_3d_fitting_list.id
 em_3d_fitting_list.pdb_chain_id
 em_3d_fitting_list.pdb_chain_residue_range
 em_3d_fitting_list.pdb_entry_id
+em_3d_fitting_list.source_name
+em_3d_fitting_list.type
 em_3d_fitting.method
 em_3d_fitting.overall_b_value
 em_3d_fitting.ref_protocol
@@ -1293,8 +1296,10 @@ em_single_particle_entity.point_symmetry
 em_single_particle_entity.symmetry_type
 em_software.category
 em_software.details
+em_software.fitting_id
 em_software.id
 em_software.image_processing_id
+em_software.imaging_id
 em_software.name
 em_software.version
 em_specimen.concentration
