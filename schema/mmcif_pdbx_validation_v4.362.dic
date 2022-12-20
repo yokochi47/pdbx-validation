@@ -51857,11 +51857,11 @@ save__em_3d_fitting_list.source_name
    _item_description.description
 ;              This item identifies the resource of initial model used for refinement
 ;
-   #   
+   #
    _item.name            "_em_3d_fitting_list.source_name"
    _item.category_id     em_3d_fitting_list
    _item.mandatory_code  no
-   # 
+   #
    _item_type.code  code
    #
    loop_
@@ -51881,7 +51881,7 @@ save__em_3d_fitting_list.type
    _item_description.description
 ;              This item describes the type of the initial model was generated
 ;
-   # 
+   #
    _item.name            "_em_3d_fitting_list.type"
    _item.category_id     em_3d_fitting_list
    _item.mandatory_code  no
@@ -51898,7 +51898,7 @@ save__em_3d_fitting_list.type
 save_
 
 save__em_3d_fitting_list.accession_code
-   _item_description.description  
+   _item_description.description
 ;              This item identifies an accession code of the resource where the initial model
                is used
 ;
