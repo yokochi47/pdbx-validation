@@ -1,3 +1,9 @@
+array_data
+array_intensities
+array_structure
+array_structure_list
+array_structure_list_axis
+array_structure_list_section
 atom_site
 atom_site_anisotrop
 atom_sites
@@ -52,7 +58,10 @@ database_PDB_rev_record
 database_PDB_tvect
 diffrn
 diffrn_attenuator
+diffrn_data_frame
 diffrn_detector
+diffrn_detector_axis
+diffrn_detector_element
 diffrn_measurement
 diffrn_orient_matrix
 diffrn_orient_refln
@@ -62,6 +71,11 @@ diffrn_refln
 diffrn_reflns
 diffrn_reflns_class
 diffrn_scale_group
+diffrn_scan
+diffrn_scan_axis
+diffrn_scan_collection
+diffrn_scan_frame
+diffrn_scan_frame_axis
 diffrn_source
 diffrn_standard_refln
 diffrn_standards
@@ -250,6 +264,11 @@ pdbx_depui_entry_details
 pdbx_depui_status_flags
 pdbx_depui_upload
 pdbx_depui_validation_status_flags
+pdbx_diffrn_batch
+pdbx_diffrn_batch_scan
+pdbx_diffrn_cell
+pdbx_diffrn_detector_panel_mapping
+pdbx_diffrn_orientation
 pdbx_diffrn_reflns_shell
 pdbx_distant_solvent_atoms
 pdbx_domain

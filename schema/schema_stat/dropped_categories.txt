@@ -1,3 +1,9 @@
+array_data
+array_intensities
+array_structure
+array_structure_list
+array_structure_list_axis
+array_structure_list_section
 atom_site
 atom_site_anisotrop
 atom_sites
@@ -50,6 +56,14 @@ database_PDB_remark WWPDB_LOCAL
 database_PDB_rev WWPDB_LOCAL
 database_PDB_rev_record WWPDB_LOCAL
 database_PDB_tvect
+diffrn_data_frame
+diffrn_detector_axis
+diffrn_detector_element
+diffrn_scan
+diffrn_scan_axis
+diffrn_scan_collection
+diffrn_scan_frame
+diffrn_scan_frame_axis
 em_2d_projection_selection WWPDB_LOCAL
 em_assembly WWPDB_LOCAL
 em_author_list WWPDB_LOCAL
@@ -169,6 +183,11 @@ pdbx_depui_entry_details WWPDB_LOCAL
 pdbx_depui_status_flags WWPDB_LOCAL
 pdbx_depui_upload WWPDB_LOCAL
 pdbx_depui_validation_status_flags WWPDB_LOCAL
+pdbx_diffrn_batch
+pdbx_diffrn_batch_scan
+pdbx_diffrn_cell
+pdbx_diffrn_detector_panel_mapping
+pdbx_diffrn_orientation
 pdbx_drug_info WWPDB_LOCAL
 pdbx_entity_func_bind_mode WWPDB_LOCAL
 pdbx_entity_func_enzyme WWPDB_LOCAL

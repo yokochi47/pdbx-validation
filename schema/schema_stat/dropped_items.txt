@@ -1,4 +1,13 @@
+diffrn_detector.id
+diffrn_detector.number_of_axes
 diffrn_measurement.pdbx_date
+diffrn_refln.frame_id
+diffrn_refln.pdbx_batch_id
+diffrn_refln.pdbx_detector_calc_fast
+diffrn_refln.pdbx_detector_calc_slow
+diffrn_refln.pdbx_detector_obs_fast
+diffrn_refln.pdbx_detector_obs_slow
+diffrn_refln.pdbx_panel_mapping_id
 diffrn_source.pdbx_source_specific_beamline
 diffrn_source.pdbx_synchrotron_y_n
 diffrn_standards.scale_u

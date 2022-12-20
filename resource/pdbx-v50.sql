@@ -21,34 +21,39 @@
 --  map xsd date type to: sql date type
 --
 -- Statistics of schema:
---  Generated 573 tables (6996 fields), 0 views (0 fields), 0 attr groups, 0 model groups in total
+--  Generated 592 tables (7172 fields), 0 views (0 fields), 0 attr groups, 0 model groups in total
 --   Unnecessary tables by inlining simple content as a primitive data type:
 --    schema location: pdbx-v50.xsd
---      temperature, final_thickness, "B_calc", zeta, "L23", "L11", "pdbx_F_calc_with_solvent", time, "model_Cartn_y_esd", diffr_phi, "B_iso_or_equiv", pdbx_solvent_vdw_probe_radii, maximum_torsion_angle_constraint_violation, "A_meas_au", lower_limit, "F_meas", "S31", "F_meas_au", "Cartn_x_esd", length_a_esd, "L22", "F_squared_calc", volume_three, mean_guiner_radius, reciprocal_angle_beta_esd, beta_tolerance, maximum_upper_distance_constraint_violation, bond_deviation, nominal_defocus_min, "B33", angle, "B_iso_min", "U_equiv_geom_mean_esd", crossfire_y, psi, crossfire_x, "U33_esd", bond_angle_rms_dev, "S33_esd", angle_gamma_esd, pdbx_crystal_direction_3, dihedral_angles_rms_dev, pdbx_crystal_direction_2, "angle_DHA_esd", epsilon, pdbx_crystal_direction_1, bond, "aniso_U22", induction_temperature, average_torsion_angle_constraint_violation, "L33", angle_phi, "aniso_B11_esd", pdbx_solvent_ion_probe_radii, "aniso_B33_esd", "dist_HA_esd", "B_calc_au", culture_temperature, "S23_esd", sample_volume, diffr_kappa, reciprocal_length_a_esd, peptide_planarity_rms_dev, "sigmaI", pdbx_solvent_shrinkage_radii, "aniso_U33", maximum_lower_distance_constraint_violation, culture_time, "aniso_U22_esd", column_volume, tilt_angle_min, prot_cis, electron_dose, scan_time_backgd, "aniso_B23_esd", protein_yield, "B_equiv_geom_mean_esd", calibrated_defocus_min, "F_squared_meas", "B22_esd", "aniso_U12", pdbx_dist_value, "U11_esd", induction_timepoint, "L12_esd", "T11_esd", "model_Cartn_y", energyfilter_lower, alpha, pressure, atom_deviation, "U13", improper_torsion_angle_rms_dev_error, "B12_esd", "T12_esd", "aniso_U13_esd", "pdbx_model_Cartn_y_ideal", "A_calc_au", pdbx_phase_calc_part_solvent, reciprocal_angle_gamma_esd, "aniso_U11", "aniso_U23", angle_value, "F_squared_sigma", buffer_volume, covalent_bond_rms_dev, reciprocal_angle_alpha_esd, "L13_esd", "model_Cartn_x", "T13_esd", rotation_per_n_subunits, diff_density_min, "B_iso", "U12", angle_omega, energyfilter_upper, mean_guiner_radius_esd, crossfire_x_esd, "A_meas", "aniso_U23_esd", storage_temperature, mol_wt_theo, tau1, distance_rms_dev, tau2, tau3, tau4, "U23", "I", flow_rate, dist, "A_calc", angle_deviation, temperature_decomposition_esd, nominal_defocus_max, "B_iso_mean", "U11", "aniso_U33_esd", dist_esd, "aniso_U13", value_esd, upper_limit, "B_meas", cleavage_time, "pdbx_res_netI_over_av_sigmaI_2", "model_Cartn_z", density_meas_temp_esd, "T13", maximum_distance_constraint_violation, tau0, "B11_esd", angle_beta_esd, "L22_esd", "T22_esd", "U22", gamma_tolerance, temp, "U_tls22", phase_calc, angle_chi, "aniso_B22_esd", improper_torsion_angle_rms_dev, diff_density_max_esd, sample_concentration, rmsd, "pdbx_F_calc_part_solvent", cleavage_temperature, "pdbx_res_netI_over_sigmaI_2", "Luzzati_sigma_a_obs", "Luzzati_coordinate_error_free", temperature_sublimation_esd, "F_meas_sigma", "U33", "model_Cartn_z_esd", "T12", dihedral_angles_rms_dev_error, pdbx_scan_angle, "B_iso_or_equiv_esd", angle_target_value, "Cartn_y_esd", angle_psi, "U_tls11", bond_angle_rms_dev_error, "B23_esd", "U_iso_or_equiv_esd", volume_esd, "U_tls23", crossfire_y_esd, pdbx_phase_calc_with_solvent, taum, "S22_esd", diffr_chi, "T23", "B", pressure_esd, column_temperature, "T11", min_mean_cross_sectional_radii_gyration_esd, "Luzzati_d_res_low_free", chi2, chi1, "L23_esd", chi4, chi3, "aniso_B22", pdbx_collection_time_total, crossfire_xy_esd, chi5, angle_alpha_esd, scan_rate, neighbor_ligand_distance, length_b_esd, "T23_esd", pdbx_crystal_diffrn_lifetime, peptide_planarity_rms_dev_error, "S13", "Ro", "T22", voltage, "S32_esd", beta, average_distance_constraint_violation, "aniso_B33", energy_window, crossfire_xy, dev, "U_tls33", "S13_esd", "model_Cartn_x_esd", "L11_esd", volume_three_esd, protein_volume, value, "T33_esd", angle_kappa, rise_per_n_subunits, reciprocal_length_c_esd, "L33_esd", "S12", scat_length_neutron, "T33", "S11_esd", improper_torsion_angle, current, "aniso_B12", alpha_tolerance, "Luzzati_coordinate_error_obs", "P", gamma, diff_density_rms_esd, "B13_esd", phi, "aniso_U12_esd", neighbor_macromolecule_distance, "pre_Cartn_x", "B_iso_Wilson_estimate", "B12", ambient_temp_esd, "Cartn_z", "F_calc", "pdbx_model_Cartn_x_ideal", ambient_pressure_esd, pdbx_crystal_diffrn_limit, yield_pooled_fractions, "U12_esd", "S12_esd", phase_meas, "pdbx_model_Cartn_z_ideal", "S23", diff_density_max, "aniso_B13_esd", tilt_angle_max, "S11", origin_y, origin_x, nu4, nu3, nu2, nu1, "aniso_B11", nu0, "aniso_B23", max_mean_cross_sectional_radii_gyration, angle_theta, covalent_bond_rms_dev_error, "Luzzati_d_res_low_obs", origin_z, power, "dist_DA_esd", "B13", min_mean_cross_sectional_radii_gyration, temp_esd, culture_volume, inducer_concentration, "S22", "B_meas_au", "U22_esd", omega, length_c_esd, pdbx_rotation_angle, diff_density_min_esd, "S31_esd", "pre_Cartn_z", "U_tls12", volume_pooled_fractions, "B_iso_esd", "U13_esd", delta, detector_distance, "Cartn_x", "B22", "U23_esd", diffr_psi, distance_rms_dev_error, "S21", max_mean_cross_sectional_radii_gyration_esd, "S33", "L12", "B_iso_max", "aniso_B13", reciprocal_length_b_esd, diff_density_rms, "Luzzati_sigma_a_free", "aniso_B12_esd", protein_concentration, mol_wt_exp, concentration_range, "pre_Cartn_y", "S21_esd", "F_calc_au", "U_tls13", "Cartn_z_esd", "B33_esd", "B23", "B11", "Cartn_y", "aniso_U11_esd", density_meas_esd, "dist_DH_esd", multiplicity_of_infection, "L13", "F_meas_sigma_au", "S32"
+--      temperature, final_thickness, "B_calc", zeta, "L23", "L11", "pdbx_F_calc_with_solvent", radial_pitch, time, angle_increment, "model_Cartn_y_esd", diffr_phi, "B_iso_or_equiv", pdbx_solvent_vdw_probe_radii, maximum_torsion_angle_constraint_violation, "A_meas_au", lower_limit, "F_meas", "S31", "F_meas_au", "Cartn_x_esd", length_a_esd, "L22", "F_squared_calc", volume_three, mean_guiner_radius, reciprocal_angle_beta_esd, beta_tolerance, maximum_upper_distance_constraint_violation, bond_deviation, nominal_defocus_min, "B33", angle, "B_iso_min", "U_equiv_geom_mean_esd", crossfire_y, psi, crossfire_x, "U33_esd", bond_angle_rms_dev, "S33_esd", angle_gamma_esd, pdbx_crystal_direction_3, dihedral_angles_rms_dev, pdbx_crystal_direction_2, "angle_DHA_esd", epsilon, pdbx_crystal_direction_1, bond, "aniso_U22", induction_temperature, average_torsion_angle_constraint_violation, "L33", angle_phi, "aniso_B11_esd", pdbx_solvent_ion_probe_radii, "aniso_B33_esd", "dist_HA_esd", "B_calc_au", culture_temperature, "S23_esd", sample_volume, diffr_kappa, reciprocal_length_a_esd, peptide_planarity_rms_dev, "sigmaI", pdbx_solvent_shrinkage_radii, displacement, "aniso_U33", maximum_lower_distance_constraint_violation, culture_time, "aniso_U22_esd", column_volume, translation_width, tilt_angle_min, prot_cis, electron_dose, scan_time_backgd, "aniso_B23_esd", protein_yield, "B_equiv_geom_mean_esd", calibrated_defocus_min, underload, "F_squared_meas", "B22_esd", "aniso_U12", pdbx_dist_value, "U11_esd", induction_timepoint, "L12_esd", "T11_esd", "model_Cartn_y", energyfilter_lower, alpha, pressure, atom_deviation, "U13", improper_torsion_angle_rms_dev_error, "B12_esd", "T12_esd", "aniso_U13_esd", "pdbx_model_Cartn_y_ideal", "A_calc_au", pdbx_phase_calc_part_solvent, reciprocal_angle_gamma_esd, "aniso_U11", "aniso_U23", angle_value, "F_squared_sigma", buffer_volume, covalent_bond_rms_dev, reciprocal_angle_alpha_esd, "L13_esd", "model_Cartn_x", angle_range, "T13_esd", rotation_per_n_subunits, diff_density_min, "B_iso", "U12", angle_omega, energyfilter_upper, mean_guiner_radius_esd, crossfire_x_esd, "A_meas", "aniso_U23_esd", storage_temperature, reference_displacement, mol_wt_theo, tau1, distance_rms_dev, tau2, tau3, tau4, "U23", "I", flow_rate, dist, "A_calc", angle_deviation, temperature_decomposition_esd, nominal_defocus_max, "B_iso_mean", "U11", "aniso_U33_esd", dist_esd, "aniso_U13", value_esd, upper_limit, "B_meas", cleavage_time, "pdbx_res_netI_over_av_sigmaI_2", displacement_start, "model_Cartn_z", displacement_increment, density_meas_temp_esd, "T13", maximum_distance_constraint_violation, tau0, "B11_esd", angle_beta_esd, "L22_esd", "T22_esd", "U22", gamma_tolerance, temp, "U_tls22", phase_calc, angle_chi, "aniso_B22_esd", improper_torsion_angle_rms_dev, diff_density_max_esd, sample_concentration, rmsd, "pdbx_F_calc_part_solvent", cleavage_temperature, "pdbx_res_netI_over_sigmaI_2", "Luzzati_sigma_a_obs", "Luzzati_coordinate_error_free", temperature_sublimation_esd, "F_meas_sigma", "U33", "model_Cartn_z_esd", "T12", dihedral_angles_rms_dev_error, pdbx_scan_angle, "B_iso_or_equiv_esd", angle_target_value, "Cartn_y_esd", angle_psi, "U_tls11", bond_angle_rms_dev_error, "B23_esd", "U_iso_or_equiv_esd", volume_esd, "U_tls23", crossfire_y_esd, pdbx_phase_calc_with_solvent, taum, "S22_esd", diffr_chi, "T23", "B", pressure_esd, column_temperature, "T11", min_mean_cross_sectional_radii_gyration_esd, "Luzzati_d_res_low_free", chi2, chi1, "L23_esd", chi4, chi3, "aniso_B22", pdbx_collection_time_total, crossfire_xy_esd, chi5, angle_alpha_esd, scan_rate, neighbor_ligand_distance, length_b_esd, "T23_esd", pdbx_crystal_diffrn_lifetime, peptide_planarity_rms_dev_error, "S13", "Ro", "T22", voltage, "S32_esd", fract_displacement_increment, beta, average_distance_constraint_violation, "aniso_B33", energy_window, crossfire_xy, dev, "U_tls33", "S13_esd", "model_Cartn_x_esd", "L11_esd", volume_three_esd, protein_volume, value, "T33_esd", angle_kappa, rise_per_n_subunits, reciprocal_length_c_esd, "L33_esd", "S12", scat_length_neutron, "T33", "S11_esd", improper_torsion_angle, current, "aniso_B12", alpha_tolerance, "Luzzati_coordinate_error_obs", "P", gamma, diff_density_rms_esd, "B13_esd", displacement_range, phi, "aniso_U12_esd", neighbor_macromolecule_distance, "pre_Cartn_x", "B_iso_Wilson_estimate", "B12", ambient_temp_esd, "Cartn_z", "F_calc", "pdbx_model_Cartn_x_ideal", ambient_pressure_esd, pdbx_crystal_diffrn_limit, displacement_rstrt_incr, yield_pooled_fractions, "U12_esd", "S12_esd", phase_meas, "pdbx_model_Cartn_z_ideal", "S23", diff_density_max, "aniso_B13_esd", tilt_angle_max, "S11", origin_y, origin_x, nu4, nu3, nu2, nu1, "aniso_B11", nu0, "aniso_B23", max_mean_cross_sectional_radii_gyration, overload, angle_theta, covalent_bond_rms_dev_error, "Luzzati_d_res_low_obs", origin_z, power, "dist_DA_esd", "B13", min_mean_cross_sectional_radii_gyration, temp_esd, culture_volume, inducer_concentration, "S22", "B_meas_au", "U22_esd", omega, length_c_esd, pdbx_rotation_angle, diff_density_min_esd, "S31_esd", angle_rstrt_incr, "pre_Cartn_z", "U_tls12", volume_pooled_fractions, "B_iso_esd", "U13_esd", delta, detector_distance, "Cartn_x", "B22", "U23_esd", diffr_psi, distance_rms_dev_error, "S21", max_mean_cross_sectional_radii_gyration_esd, "S33", angular_pitch, "L12", "B_iso_max", reference_angle, "aniso_B13", reciprocal_length_b_esd, diff_density_rms, "Luzzati_sigma_a_free", "aniso_B12_esd", protein_concentration, mol_wt_exp, concentration_range, "pre_Cartn_y", "S21_esd", "F_calc_au", "U_tls13", "Cartn_z_esd", "B33_esd", "B23", "B11", angle_start, "Cartn_y", "aniso_U11_esd", density_meas_esd, "dist_DH_esd", multiplicity_of_infection, "L13", "F_meas_sigma_au", "S32"
 --   Namespaces:
 --    http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), http://www.w3.org/2001/XMLSchema (xsd)
 --   Schema locations:
 --    pdbx-v50.xsd
 --   Table types:
---    0 root, 0 root children, 0 admin roots, 573 admin children
+--    0 root, 0 root children, 0 admin roots, 592 admin children
 --   System keys:
 --    0 primary keys (0 unique constraints), 0 foreign keys, 0 nested keys (0 as attribute, 0 as attribute group)
 --   User keys:
---    573 document keys, 0 serial keys, 0 xpath keys
+--    592 document keys, 0 serial keys, 0 xpath keys
 --   Contents:
---    1053 attributes (0 in-place document keys), 5370 elements (0 in-place document keys), 0 simple contents (0 in-place document keys, 0 as attribute, 0 as conditional attribute)
+--    1084 attributes (0 in-place document keys), 5496 elements (0 in-place document keys), 0 simple contents (0 in-place document keys, 0 as attribute, 0 as conditional attribute)
 --   Wild cards:
 --    0 any elements, 0 any attributes
 --   Constraints:
---    573 unique constraints from xsd:key, 1 unique constraints from xsd:unique, 347 foreign key constraints from xsd:keyref
+--    592 unique constraints from xsd:key, 1 unique constraints from xsd:unique, 356 foreign key constraints from xsd:keyref
 --
 
 --
--- PDBML Schema v5.362
--- PDBML Schema translated from the PDBx/mmCIF Dictionary v5.362: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
+-- PDBML Schema v5.363
+-- PDBML Schema translated from the PDBx/mmCIF Dictionary v5.363: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
 -- URI-reference = http://pdbml.pdb.org/schema/pdbx-v50.xsd
 --
 
+DROP TABLE IF EXISTS array_data CASCADE;
+DROP TABLE IF EXISTS array_intensities CASCADE;
+DROP TABLE IF EXISTS array_structure_list CASCADE;
+DROP TABLE IF EXISTS array_structure_list_axis CASCADE;
+DROP TABLE IF EXISTS array_structure_list_section CASCADE;
 DROP TABLE IF EXISTS atom_site CASCADE;
 DROP TABLE IF EXISTS atom_site_anisotrop CASCADE;
 DROP TABLE IF EXISTS atom_sites CASCADE;
@@ -93,6 +98,8 @@ DROP TABLE IF EXISTS "database_PDB_rev_record" CASCADE;
 DROP TABLE IF EXISTS "database_PDB_tvect" CASCADE;
 DROP TABLE IF EXISTS diffrn_attenuator CASCADE;
 DROP TABLE IF EXISTS diffrn_detector CASCADE;
+DROP TABLE IF EXISTS diffrn_detector_axis CASCADE;
+DROP TABLE IF EXISTS diffrn_detector_element CASCADE;
 DROP TABLE IF EXISTS diffrn_measurement CASCADE;
 DROP TABLE IF EXISTS diffrn_orient_matrix CASCADE;
 DROP TABLE IF EXISTS diffrn_orient_refln CASCADE;
@@ -102,6 +109,10 @@ DROP TABLE IF EXISTS diffrn_refln CASCADE;
 DROP TABLE IF EXISTS diffrn_reflns CASCADE;
 DROP TABLE IF EXISTS diffrn_reflns_class CASCADE;
 DROP TABLE IF EXISTS diffrn_scale_group CASCADE;
+DROP TABLE IF EXISTS diffrn_scan_axis CASCADE;
+DROP TABLE IF EXISTS diffrn_scan_collection CASCADE;
+DROP TABLE IF EXISTS diffrn_scan_frame CASCADE;
+DROP TABLE IF EXISTS diffrn_scan_frame_axis CASCADE;
 DROP TABLE IF EXISTS diffrn_source CASCADE;
 DROP TABLE IF EXISTS diffrn_standard_refln CASCADE;
 DROP TABLE IF EXISTS diffrn_standards CASCADE;
@@ -278,6 +289,11 @@ DROP TABLE IF EXISTS pdbx_depui_entry_details CASCADE;
 DROP TABLE IF EXISTS pdbx_depui_status_flags CASCADE;
 DROP TABLE IF EXISTS pdbx_depui_upload CASCADE;
 DROP TABLE IF EXISTS pdbx_depui_validation_status_flags CASCADE;
+DROP TABLE IF EXISTS pdbx_diffrn_batch CASCADE;
+DROP TABLE IF EXISTS pdbx_diffrn_batch_scan CASCADE;
+DROP TABLE IF EXISTS pdbx_diffrn_cell CASCADE;
+DROP TABLE IF EXISTS pdbx_diffrn_detector_panel_mapping CASCADE;
+DROP TABLE IF EXISTS pdbx_diffrn_orientation CASCADE;
 DROP TABLE IF EXISTS pdbx_diffrn_reflns_shell CASCADE;
 DROP TABLE IF EXISTS pdbx_distant_solvent_atoms CASCADE;
 DROP TABLE IF EXISTS pdbx_domain_range CASCADE;
@@ -580,6 +596,7 @@ DROP TABLE IF EXISTS struct_ref_seq CASCADE;
 DROP TABLE IF EXISTS atom_sites_alt CASCADE;
 DROP TABLE IF EXISTS chemical_conn_atom CASCADE;
 DROP TABLE IF EXISTS citation CASCADE;
+DROP TABLE IF EXISTS diffrn_scan CASCADE;
 DROP TABLE IF EXISTS entity_poly_seq CASCADE;
 DROP TABLE IF EXISTS pdbx_chem_comp_import CASCADE;
 DROP TABLE IF EXISTS pdbx_domain CASCADE;
@@ -594,6 +611,7 @@ DROP TABLE IF EXISTS pdbx_struct_group_list CASCADE;
 DROP TABLE IF EXISTS pdbx_view_category_group CASCADE;
 DROP TABLE IF EXISTS struct_ncs_oper CASCADE;
 DROP TABLE IF EXISTS struct_ref CASCADE;
+DROP TABLE IF EXISTS diffrn_data_frame CASCADE;
 DROP TABLE IF EXISTS entity_poly CASCADE;
 DROP TABLE IF EXISTS pdbx_linked_entity CASCADE;
 DROP TABLE IF EXISTS pdbx_reference_linked_entity CASCADE;
@@ -607,6 +625,7 @@ DROP TABLE IF EXISTS pdbx_audit_revision_history CASCADE;
 DROP TABLE IF EXISTS pdbx_chem_comp_model CASCADE;
 DROP TABLE IF EXISTS pdbx_reference_molecule CASCADE;
 DROP TABLE IF EXISTS pdbx_reference_molecule_family CASCADE;
+DROP TABLE IF EXISTS array_structure CASCADE;
 DROP TABLE IF EXISTS atom_type CASCADE;
 DROP TABLE IF EXISTS chem_comp_atom CASCADE;
 DROP TABLE IF EXISTS pdbx_construct CASCADE;
@@ -1041,6 +1060,31 @@ CREATE TABLE struct_biol (
 );
 
 --
+-- (quoted from array_structureType)
+-- Data items in the ARRAY_STRUCTURE category record the organization and encoding of array data that may be stored in the ARRAY_DATA category. Example 1. <PDBx:array_structureCategory> <PDBx:array_structure id="image_1"> <PDBx:byte_order>little_endian</PDBx:byte_order> <PDBx:compression_type>none</PDBx:compression_type> <PDBx:encoding_type>unsigned 16-bit integer</PDBx:encoding_type> </PDBx:array_structure> </PDBx:array_structureCategory>
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+DROP TYPE IF EXISTS ENUM_array_structure_byte_order CASCADE;
+CREATE TYPE ENUM_array_structure_byte_order AS ENUM ( 'big_endian', 'little_endian' );
+DROP TYPE IF EXISTS ENUM_array_structure_compression_type CASCADE;
+CREATE TYPE ENUM_array_structure_compression_type AS ENUM ( 'byte_offset', 'canonical', 'nibble_offset', 'none', 'packed', 'packed_v2' );
+DROP TYPE IF EXISTS ENUM_array_structure_compression_type_flag CASCADE;
+CREATE TYPE ENUM_array_structure_compression_type_flag AS ENUM ( 'uncorrelated_sections', 'flat' );
+DROP TYPE IF EXISTS ENUM_array_structure_encoding_type CASCADE;
+CREATE TYPE ENUM_array_structure_encoding_type AS ENUM ( 'unsigned 1-bit integer', 'unsigned 8-bit integer', 'signed 8-bit integer', 'unsigned 16-bit integer', 'signed 16-bit integer', 'unsigned 32-bit integer', 'signed 32-bit integer', 'signed 32-bit real IEEE', 'signed 64-bit real IEEE', 'signed 32-bit complex IEEE' );
+CREATE TABLE array_structure (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+	byte_order ENUM_array_structure_byte_order ,
+	compression_type ENUM_array_structure_compression_type ,
+	compression_type_flag ENUM_array_structure_compression_type_flag ,
+	encoding_type ENUM_array_structure_encoding_type ,
+-- ATTRIBUTE
+	id TEXT NOT NULL
+);
+
+--
 -- (quoted from atom_typeType)
 -- Data items in the ATOM_TYPE category record details about the properties of the atoms that occupy the atom sites, such as the atomic scattering factors. Example 1 - based on PDB entry 5HVP and laboratory records for the structure corresponding to PDB entry 5HVP. <PDBx:atom_typeCategory> <PDBx:atom_type symbol="C"> <PDBx:oxidation_number>0</PDBx:oxidation_number> <PDBx:scat_Cromer_Mann_a1>2.31000</PDBx:scat_Cromer_Mann_a1> <PDBx:scat_Cromer_Mann_a2>1.58860</PDBx:scat_Cromer_Mann_a2> <PDBx:scat_Cromer_Mann_a3>1.02000</PDBx:scat_Cromer_Mann_a3> <PDBx:scat_Cromer_Mann_a4>0.865000</PDBx:scat_Cromer_Mann_a4> <PDBx:scat_Cromer_Mann_b1>20.8439</PDBx:scat_Cromer_Mann_b1> <PDBx:scat_Cromer_Mann_b2>0.568700</PDBx:scat_Cromer_Mann_b2> <PDBx:scat_Cromer_Mann_b3>10.2075</PDBx:scat_Cromer_Mann_b3> <PDBx:scat_Cromer_Mann_b4>51.6512</PDBx:scat_Cromer_Mann_b4> <PDBx:scat_Cromer_Mann_c>0.21560</PDBx:scat_Cromer_Mann_c> </PDBx:atom_type> <PDBx:atom_type symbol="N"> <PDBx:oxidation_number>0</PDBx:oxidation_number> <PDBx:scat_Cromer_Mann_a1>12.2126</PDBx:scat_Cromer_Mann_a1> <PDBx:scat_Cromer_Mann_a2>3.13220</PDBx:scat_Cromer_Mann_a2> <PDBx:scat_Cromer_Mann_a3>2.01250</PDBx:scat_Cromer_Mann_a3> <PDBx:scat_Cromer_Mann_a4>1.166300</PDBx:scat_Cromer_Mann_a4> <PDBx:scat_Cromer_Mann_b1>0.005700</PDBx:scat_Cromer_Mann_b1> <PDBx:scat_Cromer_Mann_b2>9.893300</PDBx:scat_Cromer_Mann_b2> <PDBx:scat_Cromer_Mann_b3>28.9975</PDBx:scat_Cromer_Mann_b3> <PDBx:scat_Cromer_Mann_b4>0.582600</PDBx:scat_Cromer_Mann_b4> <PDBx:scat_Cromer_Mann_c>-11.529</PDBx:scat_Cromer_Mann_c> </PDBx:atom_type> <PDBx:atom_type symbol="O"> <PDBx:oxidation_number>0</PDBx:oxidation_number> <PDBx:scat_Cromer_Mann_a1>3.04850</PDBx:scat_Cromer_Mann_a1> <PDBx:scat_Cromer_Mann_a2>2.28680</PDBx:scat_Cromer_Mann_a2> <PDBx:scat_Cromer_Mann_a3>1.54630</PDBx:scat_Cromer_Mann_a3> <PDBx:scat_Cromer_Mann_a4>0.867000</PDBx:scat_Cromer_Mann_a4> <PDBx:scat_Cromer_Mann_b1>13.2771</PDBx:scat_Cromer_Mann_b1> <PDBx:scat_Cromer_Mann_b2>5.70110</PDBx:scat_Cromer_Mann_b2> <PDBx:scat_Cromer_Mann_b3>0.323900</PDBx:scat_Cromer_Mann_b3> <PDBx:scat_Cromer_Mann_b4>32.9089</PDBx:scat_Cromer_Mann_b4> <PDBx:scat_Cromer_Mann_c>0.250800</PDBx:scat_Cromer_Mann_c> </PDBx:atom_type> <PDBx:atom_type symbol="S"> <PDBx:oxidation_number>0</PDBx:oxidation_number> <PDBx:scat_Cromer_Mann_a1>6.90530</PDBx:scat_Cromer_Mann_a1> <PDBx:scat_Cromer_Mann_a2>5.20340</PDBx:scat_Cromer_Mann_a2> <PDBx:scat_Cromer_Mann_a3>1.58630</PDBx:scat_Cromer_Mann_a3> <PDBx:scat_Cromer_Mann_a4>1.43790</PDBx:scat_Cromer_Mann_a4> <PDBx:scat_Cromer_Mann_b1>1.46790</PDBx:scat_Cromer_Mann_b1> <PDBx:scat_Cromer_Mann_b2>22.2151</PDBx:scat_Cromer_Mann_b2> <PDBx:scat_Cromer_Mann_b3>56.1720</PDBx:scat_Cromer_Mann_b3> <PDBx:scat_Cromer_Mann_b4>0.253600</PDBx:scat_Cromer_Mann_b4> <PDBx:scat_Cromer_Mann_c>0.866900</PDBx:scat_Cromer_Mann_c> </PDBx:atom_type> <PDBx:atom_type symbol="CL"> <PDBx:oxidation_number>-1</PDBx:oxidation_number> <PDBx:scat_Cromer_Mann_a1>18.2915</PDBx:scat_Cromer_Mann_a1> <PDBx:scat_Cromer_Mann_a2>7.20840</PDBx:scat_Cromer_Mann_a2> <PDBx:scat_Cromer_Mann_a3>6.53370</PDBx:scat_Cromer_Mann_a3> <PDBx:scat_Cromer_Mann_a4>2.33860</PDBx:scat_Cromer_Mann_a4> <PDBx:scat_Cromer_Mann_b1>0.006600</PDBx:scat_Cromer_Mann_b1> <PDBx:scat_Cromer_Mann_b2>1.17170</PDBx:scat_Cromer_Mann_b2> <PDBx:scat_Cromer_Mann_b3>19.5424</PDBx:scat_Cromer_Mann_b3> <PDBx:scat_Cromer_Mann_b4>60.4486</PDBx:scat_Cromer_Mann_b4> <PDBx:scat_Cromer_Mann_c>-16.378</PDBx:scat_Cromer_Mann_c> </PDBx:atom_type> </PDBx:atom_typeCategory> Example 2 - based on data set TOZ of Willis, Beckwith & Tozer [Acta Cryst. (1991), C47, 2276-2277]. <PDBx:atom_typeCategory> <PDBx:atom_type symbol="C"> <PDBx:number_in_cell>72</PDBx:number_in_cell> <PDBx:oxidation_number>0</PDBx:oxidation_number> <PDBx:scat_dispersion_imag>.009</PDBx:scat_dispersion_imag> <PDBx:scat_dispersion_real>.017</PDBx:scat_dispersion_real> <PDBx:scat_source>International_Tables_Vol_IV_Table_2.2B</PDBx:scat_source> </PDBx:atom_type> <PDBx:atom_type symbol="H"> <PDBx:number_in_cell>100</PDBx:number_in_cell> <PDBx:oxidation_number>0</PDBx:oxidation_number> <PDBx:scat_dispersion_imag>0</PDBx:scat_dispersion_imag> <PDBx:scat_dispersion_real>0</PDBx:scat_dispersion_real> <PDBx:scat_source>International_Tables_Vol_IV_Table_2.2B</PDBx:scat_source> </PDBx:atom_type> <PDBx:atom_type symbol="O"> <PDBx:number_in_cell>12</PDBx:number_in_cell> <PDBx:oxidation_number>0</PDBx:oxidation_number> <PDBx:scat_dispersion_imag>.032</PDBx:scat_dispersion_imag> <PDBx:scat_dispersion_real>.047</PDBx:scat_dispersion_real> <PDBx:scat_source>International_Tables_Vol_IV_Table_2.2B</PDBx:scat_source> </PDBx:atom_type> <PDBx:atom_type symbol="N"> <PDBx:number_in_cell>4</PDBx:number_in_cell> <PDBx:oxidation_number>0</PDBx:oxidation_number> <PDBx:scat_dispersion_imag>.018</PDBx:scat_dispersion_imag> <PDBx:scat_dispersion_real>.029</PDBx:scat_dispersion_real> <PDBx:scat_source>International_Tables_Vol_IV_Table_2.2B</PDBx:scat_source> </PDBx:atom_type> </PDBx:atom_typeCategory>
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
@@ -1313,6 +1357,31 @@ CREATE TABLE pdbx_reference_molecule_family (
 	replaces TEXT ,
 -- ATTRIBUTE
 	family_prd_id TEXT NOT NULL
+);
+
+--
+-- (quoted from diffrn_data_frameType)
+-- Data items in the DIFFRN_DATA_FRAME category record the details about each frame of data. The items in this category were previously in a DIFFRN_FRAME_DATA category, which is now deprecated. The items from the old category are provided as aliases but should not be used for new work. Example 1. a frame containing data from four frame elements. Each frame element has a common array configuration 'array_1' described in ARRAY_STRUCTURE and related categories. The data for each detector element are stored in four groups of binary data in the ARRAY_DATA category, linked by the array_id and binary_id. <PDBx:diffrn_data_frameCategory> <PDBx:diffrn_data_frame detector_element_id="d1_ccd_1" id="frame_1"> <PDBx:array_id>array_1</PDBx:array_id> <PDBx:binary_id>1</PDBx:binary_id> </PDBx:diffrn_data_frame> <PDBx:diffrn_data_frame detector_element_id="d1_ccd_2" id="frame_1"> <PDBx:array_id>array_1</PDBx:array_id> <PDBx:binary_id>2</PDBx:binary_id> </PDBx:diffrn_data_frame> <PDBx:diffrn_data_frame detector_element_id="d1_ccd_3" id="frame_1"> <PDBx:array_id>array_1</PDBx:array_id> <PDBx:binary_id>3</PDBx:binary_id> </PDBx:diffrn_data_frame> <PDBx:diffrn_data_frame detector_element_id="d1_ccd_4" id="frame_1"> <PDBx:array_id>array_1</PDBx:array_id> <PDBx:binary_id>4</PDBx:binary_id> </PDBx:diffrn_data_frame> </PDBx:diffrn_data_frameCategory>
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+DROP TYPE IF EXISTS ENUM_diffrn_data_frame_center_units CASCADE;
+CREATE TYPE ENUM_diffrn_data_frame_center_units AS ENUM ( 'mm', 'pixels', 'bins' );
+CREATE TABLE diffrn_data_frame (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+	array_id TEXT ,
+	array_section_id TEXT ,
+	binary_id INTEGER ,
+	center_derived TEXT ,
+	center_fast DECIMAL ,
+	center_slow DECIMAL ,
+	center_units ENUM_diffrn_data_frame_center_units ,
+	details TEXT ,
+-- ATTRIBUTE
+	detector_element_id TEXT NOT NULL ,
+-- ATTRIBUTE
+	id TEXT NOT NULL
 );
 
 --
@@ -1614,6 +1683,35 @@ CREATE TABLE citation (
 	title TEXT ,
 	unpublished_flag ENUM_citation_unpublished_flag ,
 	year INTEGER ,
+-- ATTRIBUTE
+	id TEXT NOT NULL
+);
+
+--
+-- (quoted from diffrn_scanType)
+-- Data items in the DIFFRN_SCAN category describe the parameters of one or more scans, relating axis positions to frames. Example 1. derived from a suggestion by R. M. Sweet. The vector of each axis is not given here, because it is provided in the AXIS category. By making _diffrn_scan_axis.scan_id and _diffrn_scan_axis.axis_id keys of the DIFFRN_SCAN_AXIS category, an arbitrary number of scanning and fixed axes can be specified for a scan. In this example, three rotation axes and one translation axis at nonzero values are specified, with one axis stepping. There is no reason why more axes could not have been specified to step. Range information has been specified, but note that it can be calculated from the number of frames and the increment, so the data item _diffrn_scan_axis.angle_range could be dropped. Both the sweep data and the data for a single frame are specified. Note that the information on how the axes are stepped is given twice, once in terms of the overall averages in the value of _diffrn_scan.integration_time and the values for DIFFRN_SCAN_AXIS, and precisely for the given frame in the value for _diffrn_scan_frame.integration_time and the values for DIFFRN_SCAN_FRAME_AXIS . If dose-related adjustments are made to scan times and nonlinear stepping is done, these values may differ. Therefore, in interpreting the data for a particular frame it is important to use the frame-specific data. There are three date/times in this set: *.date_start and *. date_end_estimated, both of which are mandatory, because the former is data which can be logged at the start of collection and the latter is data that can be estimated at the same time, and *.date_end which can only be logged exactly if the data collection completes normally. <PDBx:diffrn_scanCategory> <PDBx:diffrn_scan id="1"> <PDBx:date_end>2001-11-18T03:36:45</PDBx:date_end> <PDBx:date_end_estimated>2001-11-18T03:36:45</PDBx:date_end_estimated> <PDBx:date_start>2001-11-18T03:26:42</PDBx:date_start> <PDBx:frame_id_end>mad_L2_200</PDBx:frame_id_end> <PDBx:frame_id_start>mad_L2_000</PDBx:frame_id_start> <PDBx:frames>201</PDBx:frames> <PDBx:integration_time>3.0</PDBx:integration_time> </PDBx:diffrn_scan> </PDBx:diffrn_scanCategory> <PDBx:diffrn_scan_axisCategory> <PDBx:diffrn_scan_axis axis_id="omega" scan_id="1"> <PDBx:angle_increment>0.1</PDBx:angle_increment> <PDBx:angle_range>20.0</PDBx:angle_range> <PDBx:angle_start>200.0</PDBx:angle_start> <PDBx:displacement_increment xsi:nil="true" /> <PDBx:displacement_range xsi:nil="true" /> <PDBx:displacement_start xsi:nil="true" /> </PDBx:diffrn_scan_axis> <PDBx:diffrn_scan_axis axis_id="kappa" scan_id="1"> <PDBx:angle_increment>0.0</PDBx:angle_increment> <PDBx:angle_range>0.0</PDBx:angle_range> <PDBx:angle_start>-40.0</PDBx:angle_start> <PDBx:displacement_increment xsi:nil="true" /> <PDBx:displacement_range xsi:nil="true" /> <PDBx:displacement_start xsi:nil="true" /> </PDBx:diffrn_scan_axis> <PDBx:diffrn_scan_axis axis_id="phi" scan_id="1"> <PDBx:angle_increment>0.0</PDBx:angle_increment> <PDBx:angle_range>0.0</PDBx:angle_range> <PDBx:angle_start>127.5</PDBx:angle_start> <PDBx:displacement_increment xsi:nil="true" /> <PDBx:displacement_range xsi:nil="true" /> <PDBx:displacement_start xsi:nil="true" /> </PDBx:diffrn_scan_axis> <PDBx:diffrn_scan_axis axis_id="tranz" scan_id="1"> <PDBx:angle_increment xsi:nil="true" /> <PDBx:angle_range xsi:nil="true" /> <PDBx:angle_start xsi:nil="true" /> <PDBx:displacement_increment>0.0</PDBx:displacement_increment> <PDBx:displacement_range>0.0</PDBx:displacement_range> <PDBx:displacement_start>2.3</PDBx:displacement_start> </PDBx:diffrn_scan_axis> </PDBx:diffrn_scan_axisCategory> <PDBx:diffrn_scan_frameCategory> <PDBx:diffrn_scan_frame frame_id="mad_L2_018" scan_id="1"> <PDBx:date>2001-11-18T03:27:33</PDBx:date> <PDBx:frame_number>18</PDBx:frame_number> <PDBx:integration_time>3.0</PDBx:integration_time> </PDBx:diffrn_scan_frame> </PDBx:diffrn_scan_frameCategory> <PDBx:diffrn_scan_frame_axisCategory> <PDBx:diffrn_scan_frame_axis axis_id="omega" frame_id="mad_L2_018"> <PDBx:angle>201.8</PDBx:angle> <PDBx:angle_increment>0.1</PDBx:angle_increment> <PDBx:displacement xsi:nil="true" /> <PDBx:displacement_increment xsi:nil="true" /> </PDBx:diffrn_scan_frame_axis> <PDBx:diffrn_scan_frame_axis axis_id="kappa" frame_id="mad_L2_018"> <PDBx:angle>-40.0</PDBx:angle> <PDBx:angle_increment>0.0</PDBx:angle_increment> <PDBx:displacement xsi:nil="true" /> <PDBx:displacement_increment xsi:nil="true" /> </PDBx:diffrn_scan_frame_axis> <PDBx:diffrn_scan_frame_axis axis_id="phi" frame_id="mad_L2_018"> <PDBx:angle>127.5</PDBx:angle> <PDBx:angle_increment>0.0</PDBx:angle_increment> <PDBx:displacement xsi:nil="true" /> <PDBx:displacement_increment xsi:nil="true" /> </PDBx:diffrn_scan_frame_axis> <PDBx:diffrn_scan_frame_axis axis_id="tranz" frame_id="mad_L2_018"> <PDBx:angle xsi:nil="true" /> <PDBx:angle_increment xsi:nil="true" /> <PDBx:displacement>2.3</PDBx:displacement> <PDBx:displacement_increment>0.0</PDBx:displacement_increment> </PDBx:diffrn_scan_frame_axis> </PDBx:diffrn_scan_frame_axisCategory>
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE diffrn_scan (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- map XSD date (xsd:date) to SQL DATE
+	date_end DATE ,
+-- map XSD date (xsd:date) to SQL DATE
+	date_end_estimated DATE ,
+-- map XSD date (xsd:date) to SQL DATE
+	date_start DATE ,
+	frame_id_end TEXT ,
+	frame_id_start TEXT ,
+-- xsd:restriction/xsd:minInclusive="1"
+	frames INTEGER CHECK ( frames >= 1 ) ,
+-- xsd:restriction/xsd:minInclusive="0.0"
+	integration_time DECIMAL CHECK ( integration_time >= 0.0 ) ,
+-- xsd:restriction/xsd:minInclusive="0.0"
+	time_period DECIMAL CHECK ( time_period >= 0.0 ) ,
+-- xsd:restriction/xsd:minInclusive="0.0"
+	time_rstrt_incr DECIMAL CHECK ( time_rstrt_incr >= 0.0 ) ,
 -- ATTRIBUTE
 	id TEXT NOT NULL
 );
@@ -2334,6 +2432,145 @@ CREATE TABLE struct_ref_seq (
 	seq_align_end INTEGER ,
 -- ATTRIBUTE
 	align_id TEXT NOT NULL
+);
+
+--
+-- (quoted from array_dataType)
+-- Data items in the ARRAY_DATA category are the containers for the array data items described in the category ARRAY_STRUCTURE. It is recognized that the data in this category need to be used in two distinct ways. During a data collection the lack of ancillary data and timing constraints in processing data may dictate the need to make a 'miniCBF', nothing more than an essential minimum of information to record the results of the data collection. In that case it is proper to use the ARRAY_DATA category as a container for just a single image and a compacted, beamline-dependent list of data collection parameter values. In such a case, only the tags '_array_data.header_convention', '_array_data.header_contents' and '_array_data.data' need be populated. For full processing and archiving, most of the tags in this dictionary will need to be populated. Example 1. This example shows two binary data blocks. The first one was compressed by the CBF_CANONICAL compression algorithm and is presented as hexadecimal data. The first character 'H' on the data lines means hexadecimal. It could have been 'O' for octal or 'D' for decimal. The second character on the line shows the number of bytes in each word (in this case '4'), which then requires eight hexadecimal digits per word. The third character gives the order of octets within a word, in this case '<' for the ordering 4321 (i.e. 'big-endian'). Alternatively, the character '>' could have been used for the ordering 1234 (i.e. 'little-endian'). The block has a 'message digest' to check the integrity of the data. The second block is similar, but uses CBF_PACKED compression and BASE64 encoding. Note that the size and the digest are different. <PDBx:array_dataCategory> <PDBx:array_data array_id="image_1" binary_id="1"> <PDBx:data> --CIF-BINARY-FORMAT-SECTION-- Content-Type: application/octet-stream; conversions=&quot;X-CBF_CANONICAL&quot; Content-Transfer-Encoding: X-BASE16 X-Binary-Size: 3927126 X-Binary-ID: 1 Content-MD5: u2sTJEovAHkmkDjPi+gWsg== # Hexadecimal encoding, byte 0, byte order ...21 # H4&lt; 0050B810 00000000 00000000 00000000 000F423F 00000000 00000000 ... .... --CIF-BINARY-FORMAT-SECTION----</PDBx:data> </PDBx:array_data> <PDBx:array_data array_id="image_2" binary_id="2"> <PDBx:data> --CIF-BINARY-FORMAT-SECTION-- Content-Type: application/octet-stream; conversions=&quot;X-CBF-PACKED&quot; Content-Transfer-Encoding: BASE64 X-Binary-Size: 3745758 X-Binary-ID: 2 Content-MD5: 1zsJjWPfol2GYl2V+QSXrw== ELhQAAAAAAAA... ... --CIF-BINARY-FORMAT-SECTION----</PDBx:data> </PDBx:array_data> </PDBx:array_dataCategory>
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE array_data (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+	data TEXT ,
+	external_data_id TEXT ,
+	header_contents TEXT ,
+	header_convention TEXT ,
+-- ATTRIBUTE
+	array_id TEXT NOT NULL ,
+-- ATTRIBUTE
+-- xsd:restriction/xsd:minInclusive="1"
+	binary_id INTEGER CHECK ( binary_id >= 1 ) NOT NULL
+);
+
+--
+-- (quoted from array_intensitiesType)
+-- Data items in the ARRAY_INTENSITIES category record the information required to recover the intensity data from the set of data values stored in the ARRAY_DATA category. The detector may have a complex relationship between the raw intensity values and the number of incident photons. In most cases, the number stored in the final array will have a simple linear relationship to the actual number of incident photons, given by attribute gain in category array_intensities. If raw, uncorrected values are presented (e.g. for calibration experiments), the value of attribute linearity in category array_intensities will be 'raw' and attribute gain in category array_intensities will not be used. Example 1 <PDBx:array_intensitiesCategory> <PDBx:array_intensities array_id="image_1"> <PDBx:gain>1.2</PDBx:gain> <PDBx:linearity>linear</PDBx:linearity> <PDBx:overload>655535</PDBx:overload> <PDBx:pixel_binning_method>hardware</PDBx:pixel_binning_method> <PDBx:pixel_fast_bin_size>2</PDBx:pixel_fast_bin_size> <PDBx:pixel_slow_bin_size>2</PDBx:pixel_slow_bin_size> <PDBx:undefined_value>0</PDBx:undefined_value> </PDBx:array_intensities> </PDBx:array_intensitiesCategory>
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+DROP TYPE IF EXISTS ENUM_array_intensities_linearity CASCADE;
+CREATE TYPE ENUM_array_intensities_linearity AS ENUM ( 'linear', 'offset', 'scaling', 'scaling_offset', 'sqrt_scaled', 'logarithmic_scaled', 'raw' );
+DROP TYPE IF EXISTS ENUM_array_intensities_pixel_binning_method CASCADE;
+CREATE TYPE ENUM_array_intensities_pixel_binning_method AS ENUM ( 'hardware', 'software', 'combined', 'none', 'unspecified' );
+CREATE TABLE array_intensities (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+	details TEXT ,
+-- xsd:restriction/xsd:minInclusive="0.0"
+	gain DECIMAL CHECK ( gain >= 0.0 ) ,
+-- xsd:restriction/xsd:minInclusive="0.0"
+	gain_esd DECIMAL CHECK ( gain_esd >= 0.0 ) ,
+	linearity ENUM_array_intensities_linearity ,
+	"offset" DECIMAL ,
+-- omit an attribute having a fixed value: @units="counts"
+	overload DECIMAL ,
+	pixel_binning_method ENUM_array_intensities_pixel_binning_method ,
+-- xsd:restriction/xsd:minInclusive="0.0"
+	pixel_fast_bin_size DECIMAL CHECK ( pixel_fast_bin_size >= 0.0 ) ,
+-- xsd:restriction/xsd:minInclusive="0.0"
+	pixel_slow_bin_size DECIMAL CHECK ( pixel_slow_bin_size >= 0.0 ) ,
+	scaling DECIMAL ,
+	undefined_value DECIMAL ,
+-- omit an attribute having a fixed value: @units="counts"
+	underload DECIMAL ,
+-- ATTRIBUTE
+	array_id TEXT NOT NULL ,
+-- ATTRIBUTE
+	binary_id INTEGER NOT NULL
+);
+
+--
+-- (quoted from array_structure_listType)
+-- Data items in the ARRAY_STRUCTURE_LIST category record the size and organization of each array dimension. The relationship to physical axes may be given. Example 1. An image array of 1300 x 1200 elements. The raster order of the image is left to right (increasing) in the first dimension and bottom to top (decreasing) in the second dimension. <PDBx:array_structure_listCategory> <PDBx:array_structure_list array_id="image_1" index="1"> <PDBx:axis_set_id>ELEMENT_X</PDBx:axis_set_id> <PDBx:dimension>1300</PDBx:dimension> <PDBx:direction>increasing</PDBx:direction> <PDBx:precedence>1</PDBx:precedence> </PDBx:array_structure_list> <PDBx:array_structure_list array_id="image_1" index="2"> <PDBx:axis_set_id>ELEMENY_Y</PDBx:axis_set_id> <PDBx:dimension>1200</PDBx:dimension> <PDBx:direction>decreasing</PDBx:direction> <PDBx:precedence>2</PDBx:precedence> </PDBx:array_structure_list> </PDBx:array_structure_listCategory>
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+DROP TYPE IF EXISTS ENUM_array_structure_list_direction CASCADE;
+CREATE TYPE ENUM_array_structure_list_direction AS ENUM ( 'increasing', 'decreasing' );
+CREATE TABLE array_structure_list (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+	array_section_id TEXT ,
+	axis_set_id TEXT ,
+-- xsd:restriction/xsd:minInclusive="1"
+	dimension INTEGER CHECK ( dimension >= 1 ) ,
+	direction ENUM_array_structure_list_direction ,
+-- xsd:restriction/xsd:minInclusive="1"
+	precedence INTEGER CHECK ( precedence >= 1 ) ,
+-- ATTRIBUTE
+	array_id TEXT NOT NULL ,
+-- ATTRIBUTE
+-- xsd:restriction/xsd:minInclusive="1"
+	index INTEGER CHECK ( index >= 1 ) NOT NULL
+);
+
+--
+-- (quoted from array_structure_list_axisType)
+-- Data items in the ARRAY_STRUCTURE_LIST_AXIS category describe the physical settings of sets of axes for the centres of pixels that correspond to data points described in the ARRAY_STRUCTURE_LIST category. In the simplest cases, the physical increments of a single axis correspond to the increments of a single array index. More complex organizations, e.g. spiral scans, may require coupled motions along multiple axes. Note that a spiral scan uses two coupled axes: one for the angular direction and one for the radial direction. This differs from a cylindrical scan for which the two axes are not coupled into one set. Axes may be specified either for an entire array or for just a section of an array.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE array_structure_list_axis (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- omit an attribute having a fixed value: @units="degrees"
+	angle DECIMAL ,
+-- omit an attribute having a fixed value: @units="degrees"
+	angle_increment DECIMAL ,
+-- omit an attribute having a fixed value: @units="millimetres"
+	angular_pitch DECIMAL ,
+-- omit an attribute having a fixed value: @units="millimetres"
+	displacement DECIMAL ,
+-- omit an attribute having a fixed value: @units="millimetres"
+	displacement_increment DECIMAL ,
+	fract_displacement DECIMAL ,
+-- omit an attribute having a fixed value: @units="millimetres"
+	fract_displacement_increment DECIMAL ,
+-- omit an attribute having a fixed value: @units="millimetres"
+	radial_pitch DECIMAL ,
+-- omit an attribute having a fixed value: @units="degrees"
+	reference_angle DECIMAL ,
+-- omit an attribute having a fixed value: @units="millimetres"
+	reference_displacement DECIMAL ,
+-- ATTRIBUTE
+	axis_id TEXT NOT NULL ,
+-- ATTRIBUTE
+	axis_set_id TEXT NOT NULL
+);
+
+--
+-- (quoted from array_structure_list_sectionType)
+-- Data items in the ARRAY_STRUCTURE_LIST_SECTION category identify the dimension-by-dimension start, end and stride of each section of an array that is to be referenced. For any array with identifier ARRAYID, array section ids of the form ARRAYID(start1:end1:stride1,start2:end2:stride2, ...) are defined by default. For the given index, the elements in the section are of indices: attribute start, in category array_structure_list_section _array_structure_list_section.start + _array_structure_list_section.stride, attribute start in category array_structure_list_section + 2*_array_structure_list_section.stride, ... stopping either when the indices leave the limits of the indices of that dimension or [min(_array_structure_list_section.start, attribute end), in category array_structure_list_section max(_array_structure_list_section.start, attribute end)]. in category array_structure_list_section The ordering of these elements is determined by the overall ordering of attribute array_id in category array_structure_list_section and not by the ordering implied by the stride. Example 1. An image array, myarray, of 1300 x 1200 elements, and 700 frames is defined in ARRAY_STRUCTURE_LIST, and the array section identifier "myarray(101:1200,101:1100,1:700:10)" is explicitly defined taking every 10th frame and removing a 100 pixel border. Note that even though the slow index high is 700, the last frame that will actually be included is only 691. <PDBx:array_structure_listCategory> <PDBx:array_structure_list array_id="myarray" index="1"> <PDBx:axis_set_id>ELEMENT_X</PDBx:axis_set_id> <PDBx:dimension>1300</PDBx:dimension> <PDBx:direction>increasing</PDBx:direction> <PDBx:precedence>1</PDBx:precedence> </PDBx:array_structure_list> <PDBx:array_structure_list array_id="myarray" index="2"> <PDBx:axis_set_id>ELEMENT_Y</PDBx:axis_set_id> <PDBx:dimension>1200</PDBx:dimension> <PDBx:direction>increasing</PDBx:direction> <PDBx:precedence>2</PDBx:precedence> </PDBx:array_structure_list> <PDBx:array_structure_list array_id="myarray" index="3"> <PDBx:axis_set_id>FRAME_NO</PDBx:axis_set_id> <PDBx:dimension>700</PDBx:dimension> <PDBx:direction>increasing</PDBx:direction> <PDBx:precedence>3</PDBx:precedence> </PDBx:array_structure_list> </PDBx:array_structure_listCategory> <PDBx:array_structure_list_sectionCategory> <PDBx:array_structure_list_section array_id="myarray" id="myarray(101:1200,101:1100,1:700:10)" index="1"> <PDBx:end>1200</PDBx:end> <PDBx:start>101</PDBx:start> <PDBx:stride xsi:nil="true" /> </PDBx:array_structure_list_section> <PDBx:array_structure_list_section array_id="myarray" id="myarray(101:1200,101:1100,1:700:10)" index="2"> <PDBx:end>1100</PDBx:end> <PDBx:start>101</PDBx:start> <PDBx:stride xsi:nil="true" /> </PDBx:array_structure_list_section> <PDBx:array_structure_list_section array_id="myarray" id="myarray(101:1200,101:1100,1:700:10)" index="3"> <PDBx:end>700</PDBx:end> <PDBx:start>1</PDBx:start> <PDBx:stride>10</PDBx:stride> </PDBx:array_structure_list_section> </PDBx:array_structure_list_sectionCategory>
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE array_structure_list_section (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- xsd:restriction/xsd:minInclusive="1"
+	"end" INTEGER CHECK ( "end" >= 1 ) ,
+-- xsd:restriction/xsd:minInclusive="1"
+	start INTEGER CHECK ( start >= 1 ) ,
+-- xsd:restriction/xsd:minInclusive="1"
+	stride INTEGER CHECK ( stride >= 1 ) ,
+-- ATTRIBUTE
+	array_id TEXT NOT NULL ,
+-- ATTRIBUTE
+	id TEXT NOT NULL ,
+-- ATTRIBUTE
+	index INTEGER NOT NULL
 );
 
 --
@@ -3601,6 +3838,9 @@ CREATE TABLE diffrn_detector (
 	detector TEXT ,
 -- xsd:restriction/xsd:minInclusive="0.0"
 	dtime DECIMAL CHECK ( dtime >= 0.0 ) ,
+	id TEXT ,
+-- xsd:restriction/xsd:minInclusive="1"
+	number_of_axes INTEGER CHECK ( number_of_axes >= 1 ) ,
 	pdbx_collection_date TEXT ,
 -- omit an attribute having a fixed value: @units="seconds"
 	pdbx_collection_time_total DECIMAL ,
@@ -3610,6 +3850,41 @@ CREATE TABLE diffrn_detector (
 	type TEXT ,
 -- ATTRIBUTE
 	diffrn_id TEXT NOT NULL
+);
+
+--
+-- (quoted from diffrn_detector_axisType)
+-- Data items in the DIFFRN_DETECTOR_AXIS category associate axes with detectors.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE diffrn_detector_axis (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- ATTRIBUTE
+	axis_id TEXT NOT NULL ,
+-- ATTRIBUTE
+	detector_id TEXT NOT NULL
+);
+
+--
+-- (quoted from diffrn_detector_elementType)
+-- Data items in the DIFFRN_DETECTOR_ELEMENT category record the details about spatial layout and other characteristics of each element of a detector which may have multiple elements. In most cases, giving more detailed information in ARRAY_STRUCTURE_LIST and ARRAY_STRUCTURE_LIST_AXIS is preferable to simply providing the centre of the detector element. Example 1. Detector d1 is composed of four CCD detector elements, each 200 mm by 200 mm, arranged in a square, in the pattern 1 2 * 3 4 Note that the beam centre is slightly displaced from each of the detector elements, just beyond the lower right corner of 1, the lower left corner of 2, the upper right corner of 3 and the upper left corner of 4. For each element, the detector face coordinate system is assumed to have the fast axis running from left to right and the slow axis running from top to bottom with the origin at the top left corner. <PDBx:diffrn_detector_elementCategory> <PDBx:diffrn_detector_element detector_id="d1" id="d1_ccd_1"> <PDBx:reference_center_fast>201.5</PDBx:reference_center_fast> <PDBx:reference_center_slow>201.5</PDBx:reference_center_slow> <PDBx:reference_center_units>mm</PDBx:reference_center_units> </PDBx:diffrn_detector_element> <PDBx:diffrn_detector_element detector_id="d1" id="d1_ccd_2"> <PDBx:reference_center_fast>-1.8</PDBx:reference_center_fast> <PDBx:reference_center_slow>201.5</PDBx:reference_center_slow> <PDBx:reference_center_units>mm</PDBx:reference_center_units> </PDBx:diffrn_detector_element> <PDBx:diffrn_detector_element detector_id="d1" id="d1_ccd_3"> <PDBx:reference_center_fast>201.6</PDBx:reference_center_fast> <PDBx:reference_center_slow>-1.4</PDBx:reference_center_slow> <PDBx:reference_center_units>mm</PDBx:reference_center_units> </PDBx:diffrn_detector_element> <PDBx:diffrn_detector_element detector_id="d1" id="d1_ccd_4"> <PDBx:reference_center_fast>-1.7</PDBx:reference_center_fast> <PDBx:reference_center_slow>-1.5</PDBx:reference_center_slow> <PDBx:reference_center_units>mm</PDBx:reference_center_units> </PDBx:diffrn_detector_element> </PDBx:diffrn_detector_elementCategory>
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+DROP TYPE IF EXISTS ENUM_diffrn_detector_element_reference_center_units CASCADE;
+CREATE TYPE ENUM_diffrn_detector_element_reference_center_units AS ENUM ( 'mm', 'pixels', 'bins' );
+CREATE TABLE diffrn_detector_element (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+	reference_center_fast DECIMAL ,
+	reference_center_slow DECIMAL ,
+	reference_center_units ENUM_diffrn_detector_element_reference_center_units ,
+-- ATTRIBUTE
+	detector_id TEXT NOT NULL ,
+-- ATTRIBUTE
+	id TEXT NOT NULL
 );
 
 --
@@ -3791,6 +4066,7 @@ CREATE TABLE diffrn_refln (
 	detect_slit_vert DECIMAL CHECK ( detect_slit_vert >= 0.0 AND detect_slit_vert <= 90.0 ) ,
 -- xsd:restriction/xsd:minInclusive="0.0"
 	elapsed_time DECIMAL CHECK ( elapsed_time >= 0.0 ) ,
+	frame_id TEXT ,
 	index_h INTEGER ,
 	index_k INTEGER ,
 	index_l INTEGER ,
@@ -3799,10 +4075,16 @@ CREATE TABLE diffrn_refln (
 	intensity_sigma DECIMAL CHECK ( intensity_sigma >= 0 ) ,
 -- xsd:restriction/xsd:minInclusive="0.0"
 	intensity_u DECIMAL CHECK ( intensity_u >= 0.0 ) ,
+	pdbx_batch_id TEXT ,
+	pdbx_detector_calc_fast DECIMAL ,
+	pdbx_detector_calc_slow DECIMAL ,
+	pdbx_detector_obs_fast DECIMAL ,
+	pdbx_detector_obs_slow DECIMAL ,
 	pdbx_detector_x DECIMAL ,
 	pdbx_detector_y DECIMAL ,
 -- xsd:restriction/xsd:minInclusive="0"
 	pdbx_image_id INTEGER CHECK ( pdbx_image_id >= 0 ) ,
+	pdbx_panel_mapping_id TEXT ,
 -- omit an attribute having a fixed value: @units="degrees"
 	pdbx_rotation_angle DECIMAL ,
 -- xsd:restriction/xsd:minInclusive="0.0"
@@ -3923,6 +4205,116 @@ CREATE TABLE diffrn_scale_group (
 	"I_net" DECIMAL CHECK ( "I_net" >= 0.0 ) ,
 -- ATTRIBUTE
 	code TEXT NOT NULL
+);
+
+--
+-- (quoted from diffrn_scan_axisType)
+-- Data items in the DIFFRN_SCAN_AXIS category describe the settings of axes for particular scans. Unspecified axes are assumed to be at their zero points.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE diffrn_scan_axis (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- omit an attribute having a fixed value: @units="degrees"
+	angle_increment DECIMAL ,
+-- omit an attribute having a fixed value: @units="degrees"
+	angle_range DECIMAL ,
+-- omit an attribute having a fixed value: @units="degrees"
+	angle_rstrt_incr DECIMAL ,
+-- omit an attribute having a fixed value: @units="degrees"
+	angle_start DECIMAL ,
+-- omit an attribute having a fixed value: @units="millimetres"
+	displacement_increment DECIMAL ,
+-- omit an attribute having a fixed value: @units="millimetres"
+	displacement_range DECIMAL ,
+-- omit an attribute having a fixed value: @units="millimetres"
+	displacement_rstrt_incr DECIMAL ,
+-- omit an attribute having a fixed value: @units="millimetres"
+	displacement_start DECIMAL ,
+-- omit an attribute having a fixed value: @units="degrees"
+	reference_angle DECIMAL ,
+-- omit an attribute having a fixed value: @units="millimetres"
+	reference_displacement DECIMAL ,
+-- ATTRIBUTE
+	axis_id TEXT NOT NULL ,
+-- ATTRIBUTE
+	scan_id TEXT NOT NULL
+);
+
+--
+-- (quoted from diffrn_scan_collectionType)
+-- Data items in the DIFFRN_SCAN_COLLECTION category describe the collection strategy for each scan. This category is a preliminary version being developed as synchrotron and XFEL collection strategies evolve. Example 1 - Describing a multi-wedge raster scan. <PDBx:diffrn_scan_collectionCategory> <PDBx:diffrn_scan_collection scan_id="multi_wedge"> <PDBx:details> scan 20 micrometre beam in 100 micrometre steps on 31 by 46 alternating raster of 20 degree wedges</PDBx:details> </PDBx:diffrn_scan_collection> </PDBx:diffrn_scan_collectionCategory>
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE diffrn_scan_collection (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+	details TEXT ,
+-- omit an attribute having a fixed value: @units="micrometres"
+	translation_width DECIMAL ,
+	type TEXT ,
+-- ATTRIBUTE
+	scan_id TEXT NOT NULL
+);
+
+--
+-- (quoted from diffrn_scan_frameType)
+-- Data items in the DIFFRN_SCAN_FRAME category describe the relationships of particular frames to scans.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE diffrn_scan_frame (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- map XSD date (xsd:date) to SQL DATE
+	date DATE ,
+-- xsd:restriction/xsd:minInclusive="0"
+	frame_number INTEGER CHECK ( frame_number >= 0 ) ,
+-- xsd:restriction/xsd:minInclusive="0.0"
+	integration_time DECIMAL CHECK ( integration_time >= 0.0 ) ,
+-- xsd:restriction/xsd:minInclusive="0.0"
+	"polarizn_Stokes_I" DECIMAL CHECK ( "polarizn_Stokes_I" >= 0.0 ) ,
+-- xsd:restriction/xsd:minInclusive="0.0"
+	time_period DECIMAL CHECK ( time_period >= 0.0 ) ,
+-- xsd:restriction/xsd:minInclusive="0.0"
+	time_rstrt_incr DECIMAL CHECK ( time_rstrt_incr >= 0.0 ) ,
+-- ATTRIBUTE
+	frame_id TEXT NOT NULL ,
+-- ATTRIBUTE
+	scan_id TEXT NOT NULL
+);
+
+--
+-- (quoted from diffrn_scan_frame_axisType)
+-- Data items in the DIFFRN_SCAN_FRAME_AXIS category describe the settings of axes for particular frames. Unspecified axes are assumed to be at their zero points. If, for any given frame, nonzero values apply for any of the data items in this category, those values should be given explicitly in this category and not simply inferred from values in DIFFRN_SCAN_AXIS.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE diffrn_scan_frame_axis (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- omit an attribute having a fixed value: @units="degrees"
+	angle DECIMAL ,
+-- omit an attribute having a fixed value: @units="degrees"
+	angle_increment DECIMAL ,
+-- omit an attribute having a fixed value: @units="degrees"
+	angle_rstrt_incr DECIMAL ,
+-- omit an attribute having a fixed value: @units="millimetres"
+	displacement DECIMAL ,
+-- omit an attribute having a fixed value: @units="millimetres"
+	displacement_increment DECIMAL ,
+-- omit an attribute having a fixed value: @units="millimetres"
+	displacement_rstrt_incr DECIMAL ,
+-- omit an attribute having a fixed value: @units="degrees"
+	reference_angle DECIMAL ,
+-- omit an attribute having a fixed value: @units="millimetres"
+	reference_displacement DECIMAL ,
+-- ATTRIBUTE
+	axis_id TEXT NOT NULL ,
+-- ATTRIBUTE
+	frame_id TEXT NOT NULL
 );
 
 --
@@ -8696,6 +9088,120 @@ CREATE TABLE pdbx_depui_validation_status_flags (
 	tls_no_aniso ENUM_pdbx_depui_validation_status_flags_tls_no_aniso ,
 -- ATTRIBUTE
 	dep_dataset_id TEXT NOT NULL
+);
+
+--
+-- (quoted from pdbx_diffrn_batchType)
+-- Data items in the PDBX_DIFFRN_BATCH category provide a mechanism to describe common characteristics of a group of reflections within the DIFFRN_REFLN category. This grouping can be due to reflections occuring on the same image, within the same lattice, on the same detector panel or a combination of these.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE pdbx_diffrn_batch (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+	cell_id TEXT ,
+	detector_id TEXT ,
+	diffrn_id TEXT ,
+	orientation_id TEXT ,
+	space_group_id TEXT ,
+	wavelength_id TEXT ,
+-- ATTRIBUTE
+	id TEXT NOT NULL
+);
+
+--
+-- (quoted from pdbx_diffrn_batch_scanType)
+-- Data items in the PDBX_DIFFRN_BATCH_SCAN category provide a mechanism to associate derived quantities (PDBX_DIFFRACTION_BATCH category) with experimental information about scans within the DIFFRN_SCAN category.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE pdbx_diffrn_batch_scan (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+	scan_id TEXT ,
+-- ATTRIBUTE
+	batch_id TEXT NOT NULL
+);
+
+--
+-- (quoted from pdbx_diffrn_cellType)
+-- Data items in the PDBX_DIFFRN_CELL category record details about a particular set of unit cell parameters. Example 1 - based on 6W01. <PDBx:pdbx_diffrn_cellCategory> <PDBx:pdbx_diffrn_cell id="1"> <PDBx:angle_alpha>90.00</PDBx:angle_alpha> <PDBx:angle_alpha_esd>0.0</PDBx:angle_alpha_esd> <PDBx:angle_beta>90.00</PDBx:angle_beta> <PDBx:angle_beta_esd>0.0</PDBx:angle_beta_esd> <PDBx:angle_gamma>120.00</PDBx:angle_gamma> <PDBx:angle_gamma_esd>0.0</PDBx:angle_gamma_esd> <PDBx:length_a>150.672</PDBx:length_a> <PDBx:length_a_esd>0.042</PDBx:length_a_esd> <PDBx:length_b>150.672</PDBx:length_b> <PDBx:length_b_esd>0.042</PDBx:length_b_esd> <PDBx:length_c>111.477</PDBx:length_c> <PDBx:length_c_esd>0.160</PDBx:length_c_esd> </PDBx:pdbx_diffrn_cell> <PDBx:pdbx_diffrn_cell id="2"> <PDBx:angle_alpha>90.00</PDBx:angle_alpha> <PDBx:angle_alpha_esd>0.0</PDBx:angle_alpha_esd> <PDBx:angle_beta>90.00</PDBx:angle_beta> <PDBx:angle_beta_esd>0.0</PDBx:angle_beta_esd> <PDBx:angle_gamma>120.00</PDBx:angle_gamma> <PDBx:angle_gamma_esd>0.0</PDBx:angle_gamma_esd> <PDBx:length_a>150.607</PDBx:length_a> <PDBx:length_a_esd>0.068</PDBx:length_a_esd> <PDBx:length_b>150.607</PDBx:length_b> <PDBx:length_b_esd>0.068</PDBx:length_b_esd> <PDBx:length_c>111.465</PDBx:length_c> <PDBx:length_c_esd>0.061</PDBx:length_c_esd> </PDBx:pdbx_diffrn_cell> </PDBx:pdbx_diffrn_cellCategory>
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE pdbx_diffrn_cell (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+-- xsd:restriction/xsd:maxInclusive="180.0"
+-- xsd:restriction/xsd:minInclusive="0.0"
+	angle_alpha DECIMAL CHECK ( angle_alpha >= 0.0 AND angle_alpha <= 180.0 ) ,
+-- omit an attribute having a fixed value: @units="degrees"
+	angle_alpha_esd DECIMAL ,
+-- xsd:restriction/xsd:maxInclusive="180.0"
+-- xsd:restriction/xsd:minInclusive="0.0"
+	angle_beta DECIMAL CHECK ( angle_beta >= 0.0 AND angle_beta <= 180.0 ) ,
+-- omit an attribute having a fixed value: @units="degrees"
+	angle_beta_esd DECIMAL ,
+-- xsd:restriction/xsd:maxInclusive="180.0"
+-- xsd:restriction/xsd:minInclusive="0.0"
+	angle_gamma DECIMAL CHECK ( angle_gamma >= 0.0 AND angle_gamma <= 180.0 ) ,
+-- omit an attribute having a fixed value: @units="degrees"
+	angle_gamma_esd DECIMAL ,
+-- xsd:restriction/xsd:minInclusive="0.0"
+	length_a DECIMAL CHECK ( length_a >= 0.0 ) ,
+-- omit an attribute having a fixed value: @units="angstroms"
+	length_a_esd DECIMAL ,
+-- xsd:restriction/xsd:minInclusive="0.0"
+	length_b DECIMAL CHECK ( length_b >= 0.0 ) ,
+-- omit an attribute having a fixed value: @units="angstroms"
+	length_b_esd DECIMAL ,
+-- xsd:restriction/xsd:minInclusive="0.0"
+	length_c DECIMAL CHECK ( length_c >= 0.0 ) ,
+-- omit an attribute having a fixed value: @units="angstroms"
+	length_c_esd DECIMAL ,
+-- ATTRIBUTE
+	id TEXT NOT NULL
+);
+
+--
+-- (quoted from pdbx_diffrn_detector_panel_mappingType)
+-- Data items in the PDBX_DIFFRN_DETECTOR_PANEL_MAPPING category provide a mechanism to associate detector panel information with an actual detector.
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE pdbx_diffrn_detector_panel_mapping (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+	array_id TEXT ,
+	array_section_id TEXT ,
+	detector_id TEXT ,
+-- ATTRIBUTE
+	id TEXT NOT NULL
+);
+
+--
+-- (quoted from pdbx_diffrn_orientationType)
+-- Data items in the PDBX_DIFFRN_ORIENTATION category record details about a particular crystal orientation. Example 1 - based on 6W01. <PDBx:pdbx_diffrn_orientationCategory> <PDBx:pdbx_diffrn_orientation id="1"> <PDBx:matrix11>69.373940</PDBx:matrix11> <PDBx:matrix12>-130.908295</PDBx:matrix12> <PDBx:matrix13>27.435501</PDBx:matrix13> <PDBx:matrix21>79.867874</PDBx:matrix21> <PDBx:matrix22>119.642296</PDBx:matrix22> <PDBx:matrix23>-44.824940</PDBx:matrix23> <PDBx:matrix31>14.660122</PDBx:matrix31> <PDBx:matrix32>30.056683</PDBx:matrix32> <PDBx:matrix33>106.345345</PDBx:matrix33> <PDBx:type>Unit cell axis directions</PDBx:type> </PDBx:pdbx_diffrn_orientation> <PDBx:pdbx_diffrn_orientation id="2"> <PDBx:matrix11>0.04013</PDBx:matrix11> <PDBx:matrix12>-0.296</PDBx:matrix12> <PDBx:matrix13>0.9543</PDBx:matrix13> <PDBx:matrix21>-0.5429</PDBx:matrix21> <PDBx:matrix22>0.7953</PDBx:matrix22> <PDBx:matrix23>0.2695</PDBx:matrix23> <PDBx:matrix31>-0.8388</PDBx:matrix31> <PDBx:matrix32>-0.529</PDBx:matrix32> <PDBx:matrix33>-0.1288</PDBx:matrix33> <PDBx:type>U matrix</PDBx:type> </PDBx:pdbx_diffrn_orientation> </PDBx:pdbx_diffrn_orientationCategory>
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+DROP TYPE IF EXISTS ENUM_pdbx_diffrn_orientation_type CASCADE;
+CREATE TYPE ENUM_pdbx_diffrn_orientation_type AS ENUM ( 'U matrix', 'UB matrix', 'Real-space unit cell axis directions' );
+CREATE TABLE pdbx_diffrn_orientation (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+	matrix11 DECIMAL ,
+	matrix12 DECIMAL ,
+	matrix13 DECIMAL ,
+	matrix21 DECIMAL ,
+	matrix22 DECIMAL ,
+	matrix23 DECIMAL ,
+	matrix31 DECIMAL ,
+	matrix32 DECIMAL ,
+	matrix33 DECIMAL ,
+	type ENUM_pdbx_diffrn_orientation_type ,
+-- ATTRIBUTE
+	id TEXT NOT NULL
 );
 
 --
@@ -16595,6 +17101,24 @@ CREATE TABLE valence_ref (
 	id TEXT NOT NULL
 );
 
+-- (derived from xsd:key[@name='array_dataKey_0'])
+--ALTER TABLE array_data ADD CONSTRAINT UNQ_array_data UNIQUE ( document_id, array_id, binary_id );
+
+-- (derived from xsd:key[@name='array_intensitiesKey_0'])
+--ALTER TABLE array_intensities ADD CONSTRAINT UNQ_array_intensities UNIQUE ( document_id, array_id, binary_id );
+
+-- (derived from xsd:key[@name='array_structureKey_0'])
+--ALTER TABLE array_structure ADD CONSTRAINT UNQ_array_structure UNIQUE ( document_id, id );
+
+-- (derived from xsd:key[@name='array_structure_listKey_0'])
+--ALTER TABLE array_structure_list ADD CONSTRAINT UNQ_array_structure_list UNIQUE ( document_id, array_id, index );
+
+-- (derived from xsd:key[@name='array_structure_list_axisKey_0'])
+--ALTER TABLE array_structure_list_axis ADD CONSTRAINT UNQ_array_structure_list_axis UNIQUE ( document_id, axis_id, axis_set_id );
+
+-- (derived from xsd:key[@name='array_structure_list_sectionKey_0'])
+--ALTER TABLE array_structure_list_section ADD CONSTRAINT UNQ_array_structure_list_section UNIQUE ( document_id, array_id, id, index );
+
 -- (derived from xsd:key[@name='atom_siteKey_0'])
 --ALTER TABLE atom_site ADD CONSTRAINT UNQ_atom_site UNIQUE ( document_id, id );
 
@@ -16757,8 +17281,17 @@ CREATE TABLE valence_ref (
 -- (derived from xsd:key[@name='diffrn_attenuatorKey_0'])
 --ALTER TABLE diffrn_attenuator ADD CONSTRAINT UNQ_diffrn_attenuator UNIQUE ( document_id, code );
 
+-- (derived from xsd:key[@name='diffrn_data_frameKey_0'])
+--ALTER TABLE diffrn_data_frame ADD CONSTRAINT UNQ_diffrn_data_frame UNIQUE ( document_id, detector_element_id, id );
+
 -- (derived from xsd:key[@name='diffrn_detectorKey_0'])
 --ALTER TABLE diffrn_detector ADD CONSTRAINT UNQ_diffrn_detector UNIQUE ( document_id, diffrn_id );
+
+-- (derived from xsd:key[@name='diffrn_detector_axisKey_0'])
+--ALTER TABLE diffrn_detector_axis ADD CONSTRAINT UNQ_diffrn_detector_axis UNIQUE ( document_id, axis_id, detector_id );
+
+-- (derived from xsd:key[@name='diffrn_detector_elementKey_0'])
+--ALTER TABLE diffrn_detector_element ADD CONSTRAINT UNQ_diffrn_detector_element UNIQUE ( document_id, detector_id, id );
 
 -- (derived from xsd:key[@name='diffrn_measurementKey_0'])
 --ALTER TABLE diffrn_measurement ADD CONSTRAINT UNQ_diffrn_measurement UNIQUE ( document_id, diffrn_id );
@@ -16786,6 +17319,21 @@ CREATE TABLE valence_ref (
 
 -- (derived from xsd:key[@name='diffrn_scale_groupKey_0'])
 --ALTER TABLE diffrn_scale_group ADD CONSTRAINT UNQ_diffrn_scale_group UNIQUE ( document_id, code );
+
+-- (derived from xsd:key[@name='diffrn_scanKey_0'])
+--ALTER TABLE diffrn_scan ADD CONSTRAINT UNQ_diffrn_scan UNIQUE ( document_id, id );
+
+-- (derived from xsd:key[@name='diffrn_scan_axisKey_0'])
+--ALTER TABLE diffrn_scan_axis ADD CONSTRAINT UNQ_diffrn_scan_axis UNIQUE ( document_id, axis_id, scan_id );
+
+-- (derived from xsd:key[@name='diffrn_scan_collectionKey_0'])
+--ALTER TABLE diffrn_scan_collection ADD CONSTRAINT UNQ_diffrn_scan_collection UNIQUE ( document_id, scan_id );
+
+-- (derived from xsd:key[@name='diffrn_scan_frameKey_0'])
+--ALTER TABLE diffrn_scan_frame ADD CONSTRAINT UNQ_diffrn_scan_frame UNIQUE ( document_id, frame_id, scan_id );
+
+-- (derived from xsd:key[@name='diffrn_scan_frame_axisKey_0'])
+--ALTER TABLE diffrn_scan_frame_axis ADD CONSTRAINT UNQ_diffrn_scan_frame_axis UNIQUE ( document_id, axis_id, frame_id );
 
 -- (derived from xsd:key[@name='diffrn_sourceKey_0'])
 --ALTER TABLE diffrn_source ADD CONSTRAINT UNQ_diffrn_source UNIQUE ( document_id, diffrn_id );
@@ -17353,6 +17901,21 @@ CREATE TABLE valence_ref (
 
 -- (derived from xsd:key[@name='pdbx_depui_validation_status_flagsKey_0'])
 --ALTER TABLE pdbx_depui_validation_status_flags ADD CONSTRAINT UNQ_pdbx_depui_validation_status_flags UNIQUE ( document_id, dep_dataset_id );
+
+-- (derived from xsd:key[@name='pdbx_diffrn_batchKey_0'])
+--ALTER TABLE pdbx_diffrn_batch ADD CONSTRAINT UNQ_pdbx_diffrn_batch UNIQUE ( document_id, id );
+
+-- (derived from xsd:key[@name='pdbx_diffrn_batch_scanKey_0'])
+--ALTER TABLE pdbx_diffrn_batch_scan ADD CONSTRAINT UNQ_pdbx_diffrn_batch_scan UNIQUE ( document_id, batch_id );
+
+-- (derived from xsd:key[@name='pdbx_diffrn_cellKey_0'])
+--ALTER TABLE pdbx_diffrn_cell ADD CONSTRAINT UNQ_pdbx_diffrn_cell UNIQUE ( document_id, id );
+
+-- (derived from xsd:key[@name='pdbx_diffrn_detector_panel_mappingKey_0'])
+--ALTER TABLE pdbx_diffrn_detector_panel_mapping ADD CONSTRAINT UNQ_pdbx_diffrn_detector_panel_mapping UNIQUE ( document_id, id );
+
+-- (derived from xsd:key[@name='pdbx_diffrn_orientationKey_0'])
+--ALTER TABLE pdbx_diffrn_orientation ADD CONSTRAINT UNQ_pdbx_diffrn_orientation UNIQUE ( document_id, id );
 
 -- (derived from xsd:key[@name='pdbx_diffrn_reflns_shellKey_0'])
 --ALTER TABLE pdbx_diffrn_reflns_shell ADD CONSTRAINT UNQ_pdbx_diffrn_reflns_shell UNIQUE ( document_id, d_res_high, d_res_low, diffrn_id );
@@ -18317,6 +18880,21 @@ CREATE TABLE valence_ref (
 -- (derived from xsd:unique[@name='struct_asymUnique_1'])
 --ALTER TABLE struct_asym ADD CONSTRAINT UNQ_struct_asym UNIQUE ( document_id, entity_id, id );
 
+-- (derived from xsd:keyref[@name='array_structureKeyref_0_0_0_0'])
+--ALTER TABLE array_data ADD CONSTRAINT KR_array_structureKeyref_0_0_0_0 FOREIGN KEY ( array_id ) REFERENCES array_structure ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
+
+-- (derived from xsd:keyref[@name='array_structureKeyref_0_0_1_0'])
+--ALTER TABLE array_intensities ADD CONSTRAINT KR_array_structureKeyref_0_0_1_0 FOREIGN KEY ( array_id ) REFERENCES array_structure ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
+
+-- (derived from xsd:keyref[@name='array_structureKeyref_0_0_2_0'])
+--ALTER TABLE array_structure_list ADD CONSTRAINT KR_array_structureKeyref_0_0_2_0 FOREIGN KEY ( array_id ) REFERENCES array_structure ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
+
+-- (derived from xsd:keyref[@name='array_structureKeyref_0_0_3_0'])
+--ALTER TABLE array_structure_list_section ADD CONSTRAINT KR_array_structureKeyref_0_0_3_0 FOREIGN KEY ( array_id ) REFERENCES array_structure ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
+
+-- (derived from xsd:keyref[@name='array_structureKeyref_0_0_4_0'])
+--ALTER TABLE pdbx_diffrn_detector_panel_mapping ADD CONSTRAINT KR_array_structureKeyref_0_0_4_0 FOREIGN KEY ( array_id ) REFERENCES array_structure ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
+
 -- (derived from xsd:keyref[@name='atom_sites_altKeyref_0_0_0_0'])
 --ALTER TABLE atom_sites_alt_gen ADD CONSTRAINT KR_atom_sites_altKeyref_0_0_0_0 FOREIGN KEY ( alt_id ) REFERENCES atom_sites_alt ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
@@ -18517,6 +19095,18 @@ CREATE TABLE valence_ref (
 
 -- (derived from xsd:keyref[@name='diffrnKeyref_0_0_15_0'])
 --ALTER TABLE pdbx_serial_crystallography_sample_delivery_injection ADD CONSTRAINT KR_diffrnKeyref_0_0_15_0 FOREIGN KEY ( diffrn_id ) REFERENCES diffrn ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
+
+-- (derived from xsd:keyref[@name='diffrn_data_frameKeyref_0_0_0_0'])
+--ALTER TABLE diffrn_scan ADD CONSTRAINT KR_diffrn_data_frameKeyref_0_0_0_0_0 FOREIGN KEY ( frame_id_end ) REFERENCES diffrn_data_frame ( detector_element_id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
+
+-- (derived from xsd:keyref[@name='diffrn_data_frameKeyref_0_0_0_0'])
+--ALTER TABLE diffrn_scan ADD CONSTRAINT KR_diffrn_data_frameKeyref_0_0_0_0_1 FOREIGN KEY ( frame_id_start ) REFERENCES diffrn_data_frame ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
+
+-- (derived from xsd:keyref[@name='diffrn_scanKeyref_0_0_0_0'])
+--ALTER TABLE diffrn_scan_axis ADD CONSTRAINT KR_diffrn_scanKeyref_0_0_0_0 FOREIGN KEY ( scan_id ) REFERENCES diffrn_scan ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
+
+-- (derived from xsd:keyref[@name='diffrn_scanKeyref_0_0_1_0'])
+--ALTER TABLE diffrn_scan_frame ADD CONSTRAINT KR_diffrn_scanKeyref_0_0_1_0 FOREIGN KEY ( scan_id ) REFERENCES diffrn_scan ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
 -- (derived from xsd:keyref[@name='em_entity_assemblyKeyref_0_0_0_0'])
 --ALTER TABLE em_entity_assembly_molwt ADD CONSTRAINT KR_em_entity_assemblyKeyref_0_0_0_0 FOREIGN KEY ( entity_assembly_id ) REFERENCES em_entity_assembly ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;

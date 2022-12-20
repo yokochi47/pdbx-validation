@@ -23,10 +23,10 @@
        targetNamespace="http://pdbml.pdb.org/schema/pdbx-validation-v4.xsd"
        elementFormDefault="qualified" attributeFormDefault="unqualified">
       <xsd:annotation>
-        <xsd:appinfo>VRPT PDBML Schema v4.362</xsd:appinfo>
+        <xsd:appinfo>VRPT PDBML Schema v4.363</xsd:appinfo>
         <xsd:documentation source="http://pdbml.pdb.org/schema/pdbx-validation-v4.xsd" xml:lang="en">
 
-VRPT PDBML Schema translated from wwPDB Validation Information Dictionary v4.362, which is backward compatible with the PDBx/mmCIF Dictionary v5.362:
+VRPT PDBML Schema translated from wwPDB Validation Information Dictionary v4.363, which is backward compatible with the PDBx/mmCIF Dictionary v5.363:
  http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
 
         </xsd:documentation>

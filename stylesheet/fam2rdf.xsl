@@ -348,6 +348,110 @@
   </xsl:template>
 
   <!-- level-3 templates follow -->
+  <xsl:template match="PDBx:datablock/PDBx:array_dataCategory/PDBx:array_data">
+      <PDBo:has_array_data>
+      <PDBo:array_data rdf:about="{$base}/array_data/{translate(@array_id,' ^','_')},{translate(@binary_id,' ^','_')}">
+      <PDBo:of_datablock rdf:resource="{$base}"/>
+      <xsl:if test="@array_id!=''">
+        <PDBo:reference_to_array_structure>
+	  <rdf:Description  rdf:about="{$base}/array_structure/{translate(@array_id,' ^','_')}">
+	    <PDBo:referenced_by_array_data rdf:resource="{$base}/array_data/{translate(@array_id,' ^','_')},{translate(@binary_id,' ^','_')}"/>
+	  </rdf:Description>
+        </PDBo:reference_to_array_structure>
+        <!-- array_structureKeyref_0_0_0_0 -->
+      </xsl:if>
+      <xsl:apply-templates select="@*"/>
+      <xsl:apply-templates select="@*" mode="linked"/>
+      <xsl:apply-templates/>
+      <xsl:apply-templates mode="linked"/>
+      </PDBo:array_data>
+      </PDBo:has_array_data>
+  </xsl:template>
+
+  <xsl:template match="PDBx:datablock/PDBx:array_intensitiesCategory/PDBx:array_intensities">
+      <PDBo:has_array_intensities>
+      <PDBo:array_intensities rdf:about="{$base}/array_intensities/{translate(@array_id,' ^','_')},{translate(@binary_id,' ^','_')}">
+      <PDBo:of_datablock rdf:resource="{$base}"/>
+      <xsl:if test="@array_id!=''">
+        <PDBo:reference_to_array_structure>
+	  <rdf:Description  rdf:about="{$base}/array_structure/{translate(@array_id,' ^','_')}">
+	    <PDBo:referenced_by_array_intensities rdf:resource="{$base}/array_intensities/{translate(@array_id,' ^','_')},{translate(@binary_id,' ^','_')}"/>
+	  </rdf:Description>
+        </PDBo:reference_to_array_structure>
+        <!-- array_structureKeyref_0_0_1_0 -->
+      </xsl:if>
+      <xsl:apply-templates select="@*"/>
+      <xsl:apply-templates select="@*" mode="linked"/>
+      <xsl:apply-templates/>
+      <xsl:apply-templates mode="linked"/>
+      </PDBo:array_intensities>
+      </PDBo:has_array_intensities>
+  </xsl:template>
+
+  <xsl:template match="PDBx:datablock/PDBx:array_structureCategory/PDBx:array_structure">
+      <PDBo:has_array_structure>
+      <PDBo:array_structure rdf:about="{$base}/array_structure/{translate(@id,' ^','_')}">
+      <PDBo:of_datablock rdf:resource="{$base}"/>
+      <xsl:apply-templates select="@*"/>
+      <xsl:apply-templates select="@*" mode="linked"/>
+      <xsl:apply-templates/>
+      <xsl:apply-templates mode="linked"/>
+      </PDBo:array_structure>
+      </PDBo:has_array_structure>
+  </xsl:template>
+
+  <xsl:template match="PDBx:datablock/PDBx:array_structure_listCategory/PDBx:array_structure_list">
+      <PDBo:has_array_structure_list>
+      <PDBo:array_structure_list rdf:about="{$base}/array_structure_list/{translate(@array_id,' ^','_')},{translate(@index,' ^','_')}">
+      <PDBo:of_datablock rdf:resource="{$base}"/>
+      <xsl:if test="@array_id!=''">
+        <PDBo:reference_to_array_structure>
+	  <rdf:Description  rdf:about="{$base}/array_structure/{translate(@array_id,' ^','_')}">
+	    <PDBo:referenced_by_array_structure_list rdf:resource="{$base}/array_structure_list/{translate(@array_id,' ^','_')},{translate(@index,' ^','_')}"/>
+	  </rdf:Description>
+        </PDBo:reference_to_array_structure>
+        <!-- array_structureKeyref_0_0_2_0 -->
+      </xsl:if>
+      <xsl:apply-templates select="@*"/>
+      <xsl:apply-templates select="@*" mode="linked"/>
+      <xsl:apply-templates/>
+      <xsl:apply-templates mode="linked"/>
+      </PDBo:array_structure_list>
+      </PDBo:has_array_structure_list>
+  </xsl:template>
+
+  <xsl:template match="PDBx:datablock/PDBx:array_structure_list_axisCategory/PDBx:array_structure_list_axis">
+      <PDBo:has_array_structure_list_axis>
+      <PDBo:array_structure_list_axis rdf:about="{$base}/array_structure_list_axis/{translate(@axis_id,' ^','_')},{translate(@axis_set_id,' ^','_')}">
+      <PDBo:of_datablock rdf:resource="{$base}"/>
+      <xsl:apply-templates select="@*"/>
+      <xsl:apply-templates select="@*" mode="linked"/>
+      <xsl:apply-templates/>
+      <xsl:apply-templates mode="linked"/>
+      </PDBo:array_structure_list_axis>
+      </PDBo:has_array_structure_list_axis>
+  </xsl:template>
+
+  <xsl:template match="PDBx:datablock/PDBx:array_structure_list_sectionCategory/PDBx:array_structure_list_section">
+      <PDBo:has_array_structure_list_section>
+      <PDBo:array_structure_list_section rdf:about="{$base}/array_structure_list_section/{translate(@array_id,' ^','_')},{translate(@id,' ^','_')},{translate(@index,' ^','_')}">
+      <PDBo:of_datablock rdf:resource="{$base}"/>
+      <xsl:if test="@array_id!=''">
+        <PDBo:reference_to_array_structure>
+	  <rdf:Description  rdf:about="{$base}/array_structure/{translate(@array_id,' ^','_')}">
+	    <PDBo:referenced_by_array_structure_list_section rdf:resource="{$base}/array_structure_list_section/{translate(@array_id,' ^','_')},{translate(@id,' ^','_')},{translate(@index,' ^','_')}"/>
+	  </rdf:Description>
+        </PDBo:reference_to_array_structure>
+        <!-- array_structureKeyref_0_0_3_0 -->
+      </xsl:if>
+      <xsl:apply-templates select="@*"/>
+      <xsl:apply-templates select="@*" mode="linked"/>
+      <xsl:apply-templates/>
+      <xsl:apply-templates mode="linked"/>
+      </PDBo:array_structure_list_section>
+      </PDBo:has_array_structure_list_section>
+  </xsl:template>
+
   <xsl:template match="PDBx:datablock/PDBx:atom_siteCategory/PDBx:atom_site">
       <PDBo:has_atom_site>
       <PDBo:atom_site rdf:about="{$base}/atom_site/{translate(@id,' ^','_')}">
@@ -1300,6 +1404,18 @@
       </PDBo:has_diffrn_attenuator>
   </xsl:template>
 
+  <xsl:template match="PDBx:datablock/PDBx:diffrn_data_frameCategory/PDBx:diffrn_data_frame">
+      <PDBo:has_diffrn_data_frame>
+      <PDBo:diffrn_data_frame rdf:about="{$base}/diffrn_data_frame/{translate(@detector_element_id,' ^','_')},{translate(@id,' ^','_')}">
+      <PDBo:of_datablock rdf:resource="{$base}"/>
+      <xsl:apply-templates select="@*"/>
+      <xsl:apply-templates select="@*" mode="linked"/>
+      <xsl:apply-templates/>
+      <xsl:apply-templates mode="linked"/>
+      </PDBo:diffrn_data_frame>
+      </PDBo:has_diffrn_data_frame>
+  </xsl:template>
+
   <xsl:template match="PDBx:datablock/PDBx:diffrn_detectorCategory/PDBx:diffrn_detector">
       <PDBo:has_diffrn_detector>
       <PDBo:diffrn_detector rdf:about="{$base}/diffrn_detector/{translate(@diffrn_id,' ^','_')}">
@@ -1318,6 +1434,30 @@
       <xsl:apply-templates mode="linked"/>
       </PDBo:diffrn_detector>
       </PDBo:has_diffrn_detector>
+  </xsl:template>
+
+  <xsl:template match="PDBx:datablock/PDBx:diffrn_detector_axisCategory/PDBx:diffrn_detector_axis">
+      <PDBo:has_diffrn_detector_axis>
+      <PDBo:diffrn_detector_axis rdf:about="{$base}/diffrn_detector_axis/{translate(@axis_id,' ^','_')},{translate(@detector_id,' ^','_')}">
+      <PDBo:of_datablock rdf:resource="{$base}"/>
+      <xsl:apply-templates select="@*"/>
+      <xsl:apply-templates select="@*" mode="linked"/>
+      <xsl:apply-templates/>
+      <xsl:apply-templates mode="linked"/>
+      </PDBo:diffrn_detector_axis>
+      </PDBo:has_diffrn_detector_axis>
+  </xsl:template>
+
+  <xsl:template match="PDBx:datablock/PDBx:diffrn_detector_elementCategory/PDBx:diffrn_detector_element">
+      <PDBo:has_diffrn_detector_element>
+      <PDBo:diffrn_detector_element rdf:about="{$base}/diffrn_detector_element/{translate(@detector_id,' ^','_')},{translate(@id,' ^','_')}">
+      <PDBo:of_datablock rdf:resource="{$base}"/>
+      <xsl:apply-templates select="@*"/>
+      <xsl:apply-templates select="@*" mode="linked"/>
+      <xsl:apply-templates/>
+      <xsl:apply-templates mode="linked"/>
+      </PDBo:diffrn_detector_element>
+      </PDBo:has_diffrn_detector_element>
   </xsl:template>
 
   <xsl:template match="PDBx:datablock/PDBx:diffrn_measurementCategory/PDBx:diffrn_measurement">
@@ -1474,6 +1614,90 @@
       <xsl:apply-templates mode="linked"/>
       </PDBo:diffrn_scale_group>
       </PDBo:has_diffrn_scale_group>
+  </xsl:template>
+
+  <xsl:template match="PDBx:datablock/PDBx:diffrn_scanCategory/PDBx:diffrn_scan">
+      <PDBo:has_diffrn_scan>
+      <PDBo:diffrn_scan rdf:about="{$base}/diffrn_scan/{translate(@id,' ^','_')}">
+      <PDBo:of_datablock rdf:resource="{$base}"/>
+      <xsl:if test="PDBx:frame_id_end!='' and PDBx:frame_id_start!=''">
+        <PDBo:reference_to_diffrn_data_frame>
+	  <rdf:Description  rdf:about="{$base}/diffrn_data_frame/{translate(PDBx:frame_id_end,' ^','_')},{translate(PDBx:frame_id_start,' ^','_')}">
+	    <PDBo:referenced_by_diffrn_scan rdf:resource="{$base}/diffrn_scan/{translate(@id,' ^','_')}"/>
+	  </rdf:Description>
+        </PDBo:reference_to_diffrn_data_frame>
+        <!-- diffrn_data_frameKeyref_0_0_0_0 -->
+      </xsl:if>
+      <xsl:apply-templates select="@*"/>
+      <xsl:apply-templates select="@*" mode="linked"/>
+      <xsl:apply-templates/>
+      <xsl:apply-templates mode="linked"/>
+      </PDBo:diffrn_scan>
+      </PDBo:has_diffrn_scan>
+  </xsl:template>
+
+  <xsl:template match="PDBx:datablock/PDBx:diffrn_scan_axisCategory/PDBx:diffrn_scan_axis">
+      <PDBo:has_diffrn_scan_axis>
+      <PDBo:diffrn_scan_axis rdf:about="{$base}/diffrn_scan_axis/{translate(@axis_id,' ^','_')},{translate(@scan_id,' ^','_')}">
+      <PDBo:of_datablock rdf:resource="{$base}"/>
+      <xsl:if test="@scan_id!=''">
+        <PDBo:reference_to_diffrn_scan>
+	  <rdf:Description  rdf:about="{$base}/diffrn_scan/{translate(@scan_id,' ^','_')}">
+	    <PDBo:referenced_by_diffrn_scan_axis rdf:resource="{$base}/diffrn_scan_axis/{translate(@axis_id,' ^','_')},{translate(@scan_id,' ^','_')}"/>
+	  </rdf:Description>
+        </PDBo:reference_to_diffrn_scan>
+        <!-- diffrn_scanKeyref_0_0_0_0 -->
+      </xsl:if>
+      <xsl:apply-templates select="@*"/>
+      <xsl:apply-templates select="@*" mode="linked"/>
+      <xsl:apply-templates/>
+      <xsl:apply-templates mode="linked"/>
+      </PDBo:diffrn_scan_axis>
+      </PDBo:has_diffrn_scan_axis>
+  </xsl:template>
+
+  <xsl:template match="PDBx:datablock/PDBx:diffrn_scan_collectionCategory/PDBx:diffrn_scan_collection">
+      <PDBo:has_diffrn_scan_collection>
+      <PDBo:diffrn_scan_collection rdf:about="{$base}/diffrn_scan_collection/{translate(@scan_id,' ^','_')}">
+      <PDBo:of_datablock rdf:resource="{$base}"/>
+      <xsl:apply-templates select="@*"/>
+      <xsl:apply-templates select="@*" mode="linked"/>
+      <xsl:apply-templates/>
+      <xsl:apply-templates mode="linked"/>
+      </PDBo:diffrn_scan_collection>
+      </PDBo:has_diffrn_scan_collection>
+  </xsl:template>
+
+  <xsl:template match="PDBx:datablock/PDBx:diffrn_scan_frameCategory/PDBx:diffrn_scan_frame">
+      <PDBo:has_diffrn_scan_frame>
+      <PDBo:diffrn_scan_frame rdf:about="{$base}/diffrn_scan_frame/{translate(@frame_id,' ^','_')},{translate(@scan_id,' ^','_')}">
+      <PDBo:of_datablock rdf:resource="{$base}"/>
+      <xsl:if test="@scan_id!=''">
+        <PDBo:reference_to_diffrn_scan>
+	  <rdf:Description  rdf:about="{$base}/diffrn_scan/{translate(@scan_id,' ^','_')}">
+	    <PDBo:referenced_by_diffrn_scan_frame rdf:resource="{$base}/diffrn_scan_frame/{translate(@frame_id,' ^','_')},{translate(@scan_id,' ^','_')}"/>
+	  </rdf:Description>
+        </PDBo:reference_to_diffrn_scan>
+        <!-- diffrn_scanKeyref_0_0_1_0 -->
+      </xsl:if>
+      <xsl:apply-templates select="@*"/>
+      <xsl:apply-templates select="@*" mode="linked"/>
+      <xsl:apply-templates/>
+      <xsl:apply-templates mode="linked"/>
+      </PDBo:diffrn_scan_frame>
+      </PDBo:has_diffrn_scan_frame>
+  </xsl:template>
+
+  <xsl:template match="PDBx:datablock/PDBx:diffrn_scan_frame_axisCategory/PDBx:diffrn_scan_frame_axis">
+      <PDBo:has_diffrn_scan_frame_axis>
+      <PDBo:diffrn_scan_frame_axis rdf:about="{$base}/diffrn_scan_frame_axis/{translate(@axis_id,' ^','_')},{translate(@frame_id,' ^','_')}">
+      <PDBo:of_datablock rdf:resource="{$base}"/>
+      <xsl:apply-templates select="@*"/>
+      <xsl:apply-templates select="@*" mode="linked"/>
+      <xsl:apply-templates/>
+      <xsl:apply-templates mode="linked"/>
+      </PDBo:diffrn_scan_frame_axis>
+      </PDBo:has_diffrn_scan_frame_axis>
   </xsl:template>
 
   <xsl:template match="PDBx:datablock/PDBx:diffrn_sourceCategory/PDBx:diffrn_source">
@@ -4450,6 +4674,74 @@
       <xsl:apply-templates mode="linked"/>
       </PDBo:pdbx_depui_validation_status_flags>
       </PDBo:has_pdbx_depui_validation_status_flags>
+  </xsl:template>
+
+  <xsl:template match="PDBx:datablock/PDBx:pdbx_diffrn_batchCategory/PDBx:pdbx_diffrn_batch">
+      <PDBo:has_pdbx_diffrn_batch>
+      <PDBo:pdbx_diffrn_batch rdf:about="{$base}/pdbx_diffrn_batch/{translate(@id,' ^','_')}">
+      <PDBo:of_datablock rdf:resource="{$base}"/>
+      <xsl:apply-templates select="@*"/>
+      <xsl:apply-templates select="@*" mode="linked"/>
+      <xsl:apply-templates/>
+      <xsl:apply-templates mode="linked"/>
+      </PDBo:pdbx_diffrn_batch>
+      </PDBo:has_pdbx_diffrn_batch>
+  </xsl:template>
+
+  <xsl:template match="PDBx:datablock/PDBx:pdbx_diffrn_batch_scanCategory/PDBx:pdbx_diffrn_batch_scan">
+      <PDBo:has_pdbx_diffrn_batch_scan>
+      <PDBo:pdbx_diffrn_batch_scan rdf:about="{$base}/pdbx_diffrn_batch_scan/{translate(@batch_id,' ^','_')}">
+      <PDBo:of_datablock rdf:resource="{$base}"/>
+      <xsl:apply-templates select="@*"/>
+      <xsl:apply-templates select="@*" mode="linked"/>
+      <xsl:apply-templates/>
+      <xsl:apply-templates mode="linked"/>
+      </PDBo:pdbx_diffrn_batch_scan>
+      </PDBo:has_pdbx_diffrn_batch_scan>
+  </xsl:template>
+
+  <xsl:template match="PDBx:datablock/PDBx:pdbx_diffrn_cellCategory/PDBx:pdbx_diffrn_cell">
+      <PDBo:has_pdbx_diffrn_cell>
+      <PDBo:pdbx_diffrn_cell rdf:about="{$base}/pdbx_diffrn_cell/{translate(@id,' ^','_')}">
+      <PDBo:of_datablock rdf:resource="{$base}"/>
+      <xsl:apply-templates select="@*"/>
+      <xsl:apply-templates select="@*" mode="linked"/>
+      <xsl:apply-templates/>
+      <xsl:apply-templates mode="linked"/>
+      </PDBo:pdbx_diffrn_cell>
+      </PDBo:has_pdbx_diffrn_cell>
+  </xsl:template>
+
+  <xsl:template match="PDBx:datablock/PDBx:pdbx_diffrn_detector_panel_mappingCategory/PDBx:pdbx_diffrn_detector_panel_mapping">
+      <PDBo:has_pdbx_diffrn_detector_panel_mapping>
+      <PDBo:pdbx_diffrn_detector_panel_mapping rdf:about="{$base}/pdbx_diffrn_detector_panel_mapping/{translate(@id,' ^','_')}">
+      <PDBo:of_datablock rdf:resource="{$base}"/>
+      <xsl:if test="PDBx:array_id!=''">
+        <PDBo:reference_to_array_structure>
+	  <rdf:Description  rdf:about="{$base}/array_structure/{translate(PDBx:array_id,' ^','_')}">
+	    <PDBo:referenced_by_pdbx_diffrn_detector_panel_mapping rdf:resource="{$base}/pdbx_diffrn_detector_panel_mapping/{translate(@id,' ^','_')}"/>
+	  </rdf:Description>
+        </PDBo:reference_to_array_structure>
+        <!-- array_structureKeyref_0_0_4_0 -->
+      </xsl:if>
+      <xsl:apply-templates select="@*"/>
+      <xsl:apply-templates select="@*" mode="linked"/>
+      <xsl:apply-templates/>
+      <xsl:apply-templates mode="linked"/>
+      </PDBo:pdbx_diffrn_detector_panel_mapping>
+      </PDBo:has_pdbx_diffrn_detector_panel_mapping>
+  </xsl:template>
+
+  <xsl:template match="PDBx:datablock/PDBx:pdbx_diffrn_orientationCategory/PDBx:pdbx_diffrn_orientation">
+      <PDBo:has_pdbx_diffrn_orientation>
+      <PDBo:pdbx_diffrn_orientation rdf:about="{$base}/pdbx_diffrn_orientation/{translate(@id,' ^','_')}">
+      <PDBo:of_datablock rdf:resource="{$base}"/>
+      <xsl:apply-templates select="@*"/>
+      <xsl:apply-templates select="@*" mode="linked"/>
+      <xsl:apply-templates/>
+      <xsl:apply-templates mode="linked"/>
+      </PDBo:pdbx_diffrn_orientation>
+      </PDBo:has_pdbx_diffrn_orientation>
   </xsl:template>
 
   <xsl:template match="PDBx:datablock/PDBx:pdbx_diffrn_reflns_shellCategory/PDBx:pdbx_diffrn_reflns_shell">

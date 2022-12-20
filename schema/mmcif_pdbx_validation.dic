@@ -1,10 +1,10 @@
 ###########################################################################
 #
 # File:  mmcif_pdbx_validation-v4.dic
-# Date:  Tue Dec 20 17:38:44 JST 2022
+# Date:  Tue Dec 20 18:06:26 JST 2022
 #
 # Created from:
-#        mmcif_pdbx_v50.dic   - PDB Exchange Data Dictionary (V5.362)
+#        mmcif_pdbx_v50.dic   - PDB Exchange Data Dictionary (V5.363)
 #        http://wwpdb.org/validation/schema/wwpdb_validation_v6.01.xsd
 #         - a XML schema for wwPDB validation reports, v6.01, rev. 2022-09-20
 #
@@ -31,7 +31,7 @@ data_mmcif_pdbx_validation.dic
 
     _dictionary.title           mmcif_pdbx_validation.dic
     _dictionary.datablock_id    mmcif_pdbx_validation.dic
-    _dictionary.version         4.362
+    _dictionary.version         4.363
 #
     loop_
     _dictionary_history.version
@@ -1072,6 +1072,16 @@ data_mmcif_pdbx_validation.dic
 >     + Mark _pdbx_nmr_chem_shift_ref.atom_group and
 >       _pdbx_nmr_constraint_file.constraint_type as closed enumeration # not mapped
 ;
+  4.363   2022-12-20
+;
+>     * Integrate unmerged data by bringing in minimal imgCIF dictionary and
+>       define new categories _pdbx_diffrn_batch, _pdbx_diffrn_cell, _pdbx_diffrn_orientation
+>       _pdbx_diffrn_batch_scan, _pdbx_diffrn_detector_panel_mapping. Add
+>       _diffrn_refln.frame_id, _diffrn_refln.pdbx_batch_id, _diffrn_refln.pdbx_detector_obs_fast,
+>       _diffrn_refln.pdbx_detector_obs_slow, _diffrn_refln.pdbx_detector_calc_fast,
+>       _diffrn_refln.pdbx_detector_calc_slow, _diffrn_refln.pdbx_panel_mapping_id # not maped
+>     * Define uchar5 data type _chem_comp.three_letter_code # merged
+;
 
 
 #
@@ -1342,6 +1352,11 @@ data_mmcif_pdbx_validation.dic
                '[+]?[A-Za-z0-9][A-Za-z0-9]?[A-Za-z0-9]?'
 ;
                data item for 3 character codes
+;
+               uchar5    uchar
+               '[+]?[A-Za-z0-9][A-Za-z0-9]?[A-Za-z0-9]?[A-Za-z0-9]?[A-Za-z0-9]?'
+;
+               data item for 5 character codes
 ;
                uchar1    uchar
                '[+]?[A-Za-z0-9]'
