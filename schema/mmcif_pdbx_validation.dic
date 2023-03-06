@@ -1,10 +1,10 @@
 ###########################################################################
 #
 # File:  mmcif_pdbx_validation-v4.dic
-# Date:  Tue Dec 20 18:36:30 JST 2022
+# Date:  Mon Mar  6 14:55:08 JST 2023
 #
 # Created from:
-#        mmcif_pdbx_v50.dic   - PDB Exchange Data Dictionary (V5.364)
+#        mmcif_pdbx_v50.dic   - PDB Exchange Data Dictionary (V5.365)
 #        http://wwpdb.org/validation/schema/wwpdb_validation_v6.01.xsd
 #         - a XML schema for wwPDB validation reports, v6.01, rev. 2022-09-20
 #
@@ -31,7 +31,7 @@ data_mmcif_pdbx_validation.dic
 
     _dictionary.title           mmcif_pdbx_validation.dic
     _dictionary.datablock_id    mmcif_pdbx_validation.dic
-    _dictionary.version         4.364
+    _dictionary.version         4.365
 #
     loop_
     _dictionary_history.version
@@ -1094,6 +1094,11 @@ data_mmcif_pdbx_validation.dic
 >     + Add CSBID to _pdbx_SG_project.full_name_of_center, _pdbx_SG_project.initial_of_center
 >       enumerations # not mapped
 >     + Extend _pdbx_audit_support.funding_organization enumeration # not mapped
+;
+  4.365   2023-03-06
+;
+>     + Add 'PDB-Dev' to _pdbx_database_related.db_name enumeration
+>     + Extend _pdbx_audit_support.funding_organization enumeration
 ;
 
 
@@ -24952,6 +24957,7 @@ SASBDB - Small Angle Scattering Biological Data Bank
       "_pdbx_database_related.db_name"  EMDB         'associated EM volume,other EM volume'
       "_pdbx_database_related.db_name"  NDB          unspecified
       "_pdbx_database_related.db_name"  PDB          're-refinement,unspecified,derivative structure,complete structure,split,ensemble,minimized average structure,native structure,representative structure,split'
+      "_pdbx_database_related.db_name"  PDB-Dev      unspecified
       "_pdbx_database_related.db_name"  TargetDB     unspecified
       "_pdbx_database_related.db_name"  TargetTrack  unspecified
       "_pdbx_database_related.db_name"  SASBDB       'associated SAS data'

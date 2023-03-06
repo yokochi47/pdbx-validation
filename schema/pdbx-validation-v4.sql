@@ -44,8 +44,8 @@
 --
 
 --
--- VRPT PDBML Schema v4.364
--- VRPT PDBML Schema translated from wwPDB Validation Information Dictionary v4.364, which is backward compatible with the PDBx/mmCIF Dictionary v5.364: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
+-- VRPT PDBML Schema v4.365
+-- VRPT PDBML Schema translated from wwPDB Validation Information Dictionary v4.365, which is backward compatible with the PDBx/mmCIF Dictionary v5.365: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
 -- URI-reference = http://pdbml.pdb.org/schema/pdbx-validation-v4.xsd
 --
 
