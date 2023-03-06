@@ -207,11 +207,11 @@ Unmatched entry ID in both documents (&lt;xsl:value-of select="$entry_id"/&gt; a
             &lt;/xsl:choose&gt;
           &lt;/xsl:variable&gt;
 
-          &lt;PDBx:pdbx_sifts_xref_db_segments entity_id="{$entity_id}" asym_id="{$asym_id}" xref_db="{$xref_db}" xref_db_acc="{$xref_db_acc}" segment_id="{$segment_id}" instance_id="{$instance_id}"&gt;
-
+          &lt;PDBx:pdbx_sifts_xref_db_segments entity_id="{$entity_id}" asym_id="{$asym_id}" xref_db="{$xref_db}" xref_db_acc="{$xref_db_acc}" segment_id="{$segment_id}" instance_id="{$instance_id}" seq_id_start="{$seq_id_start}" seq_id_end="{$seq_id_end}"&gt;
+            &lt;!-- v4.356 or older
             &lt;PDBx:seq_id_start&gt;&lt;xsl:value-of select="$seq_id_start"/&gt;&lt;/PDBx:seq_id_start&gt;
             &lt;PDBx:seq_id_end&gt;&lt;xsl:value-of select="$seq_id_end"/&gt;&lt;/PDBx:seq_id_end&gt;
-
+            --&gt;
           &lt;/PDBx:pdbx_sifts_xref_db_segments&gt;
 
         &lt;/xsl:for-each&gt;

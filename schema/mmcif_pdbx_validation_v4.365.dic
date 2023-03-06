@@ -1097,8 +1097,8 @@ data_mmcif_pdbx_validation.dic
 ;
   4.365   2023-03-06
 ;
->     + Add 'PDB-Dev' to _pdbx_database_related.db_name enumeration
->     + Extend _pdbx_audit_support.funding_organization enumeration
+>     + Add 'PDB-Dev' to _pdbx_database_related.db_name enumeration # merged
+>     + Extend _pdbx_audit_support.funding_organization enumeration # not mapped
 ;
 
 

@@ -8,7 +8,7 @@ statistics of mmcif_pdbx_validation.dic:
   61 extended items in shared categories (see schema_stat/extended_items.txt for details).
   2907 shared items from mmcif_pdbx_v50.dic (see schema_stat/shared_items.txt for details).
   212 dropped items from mmcif_pdbx_v50.dic (see schema_stat/dropped_items.txt for details).
-  694 items linked to wwpdb_validation_v6.01.xsd.
+  694 items linked to wwpdb_validation_v6.02.xsd.
 
 statistics of pdbx-validation-v4.owl:
  has 567 classes.

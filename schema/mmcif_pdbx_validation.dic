@@ -1,12 +1,12 @@
 ###########################################################################
 #
 # File:  mmcif_pdbx_validation-v4.dic
-# Date:  Mon Mar  6 14:55:08 JST 2023
+# Date:  Mon Mar  6 16:21:54 JST 2023
 #
 # Created from:
-#        mmcif_pdbx_v50.dic   - PDB Exchange Data Dictionary (V5.365)
-#        http://wwpdb.org/validation/schema/wwpdb_validation_v6.01.xsd
-#         - a XML schema for wwPDB validation reports, v6.01, rev. 2022-09-20
+#        mmcif_pdbx_v50.dic   - PDB Exchange Data Dictionary (V5.366)
+#        http://wwpdb.org/validation/schema/wwpdb_validation_v6.02.xsd
+#         - a XML schema for wwPDB validation reports, v6.02, rev. 2023-02-06
 #
 ###########################################################################
 
@@ -31,7 +31,7 @@ data_mmcif_pdbx_validation.dic
 
     _dictionary.title           mmcif_pdbx_validation.dic
     _dictionary.datablock_id    mmcif_pdbx_validation.dic
-    _dictionary.version         4.365
+    _dictionary.version         4.366
 #
     loop_
     _dictionary_history.version
@@ -1097,8 +1097,15 @@ data_mmcif_pdbx_validation.dic
 ;
   4.365   2023-03-06
 ;
->     + Add 'PDB-Dev' to _pdbx_database_related.db_name enumeration
->     + Extend _pdbx_audit_support.funding_organization enumeration
+>     + Add 'PDB-Dev' to _pdbx_database_related.db_name enumeration # merged
+>     + Extend _pdbx_audit_support.funding_organization enumeration # not mapped
+;
+  4.366   2023-03-06
+;
+      + Support wwPDB validation report XML Schema v6.02 (/wwPDB-validation-information/Entry/@bmrb_id)
+>     + Change _pdbx_sifts_xref_db.res_type enumeration to examples # merged
+>     + Add pdbx_sifts_xref_db_segments.seq_id_start and
+>       pdbx_sifts_xref_db_segments.seq_id_start as keys for category. # merged
 ;
 
 
@@ -74308,25 +74315,24 @@ save__pdbx_sifts_xref_db.res_type
     _item.mandatory_code        no
     _item_type.code             line
 
-    loop_
-    _item_enumeration.value
-    _item_enumeration.detail
-                                'engineered mutation'     .
-                                'cloning artifact'        .
-                                'variant'                 .
-                                'expression tag'          .
-                                'insertion'               .
-                                'deletion'                .
-                                'chromophore'             .
-                                'linker'                  .
-                                'conflict'                .
-                                'acetylation'             .
-                                'amidation'               .
-                                'initiating methionine'   .
-                                'modified residue'        .
-                                'microheterogeneity'      .
-                                'microheterogeneity/modified residue'  .
-save_
+     loop_
+    _item_examples.case
+     "engineered mutation"
+     "cloning artifact"
+     variant
+     "expression tag"
+     insertion
+     deletion
+     chromophore
+     linker
+     conflict
+     acetylation
+     amidation
+     "initiating methionine"
+     "modified residue"
+     microheterogeneity
+     "microheterogeneity/modified residue"
+    save_
 
 save__pdbx_sifts_xref_db.observed
     _item_description.description
@@ -74422,6 +74428,8 @@ save_pdbx_sifts_xref_db_segments
                             '_pdbx_sifts_xref_db_segments.xref_db_acc'
                             '_pdbx_sifts_xref_db_segments.segment_id'
                             '_pdbx_sifts_xref_db_segments.instance_id'
+                            '_pdbx_sifts_xref_db_segments.seq_id_start'
+                            '_pdbx_sifts_xref_db_segments.seq_id_end'
     #
     loop_
     _category_group.id      'inclusive_group'

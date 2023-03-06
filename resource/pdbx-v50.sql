@@ -36,7 +36,7 @@
 --   User keys:
 --    592 document keys, 0 serial keys, 0 xpath keys
 --   Contents:
---    1084 attributes (0 in-place document keys), 5496 elements (0 in-place document keys), 0 simple contents (0 in-place document keys, 0 as attribute, 0 as conditional attribute)
+--    1086 attributes (0 in-place document keys), 5494 elements (0 in-place document keys), 0 simple contents (0 in-place document keys, 0 as attribute, 0 as conditional attribute)
 --   Wild cards:
 --    0 any elements, 0 any attributes
 --   Constraints:
@@ -44,8 +44,8 @@
 --
 
 --
--- PDBML Schema v5.365
--- PDBML Schema translated from the PDBx/mmCIF Dictionary v5.365: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
+-- PDBML Schema v5.366
+-- PDBML Schema translated from the PDBx/mmCIF Dictionary v5.366: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
 -- URI-reference = http://pdbml.pdb.org/schema/pdbx-v50.xsd
 --
 
@@ -12901,8 +12901,6 @@ CREATE TABLE pdbx_sifts_unp_segments (
 --
 DROP TYPE IF EXISTS ENUM_pdbx_sifts_xref_db_observed CASCADE;
 CREATE TYPE ENUM_pdbx_sifts_xref_db_observed AS ENUM ( 'Y', 'N' );
-DROP TYPE IF EXISTS ENUM_pdbx_sifts_xref_db_res_type CASCADE;
-CREATE TYPE ENUM_pdbx_sifts_xref_db_res_type AS ENUM ( 'engineered mutation', 'cloning artifact', 'variant', 'expression tag', 'insertion', 'deletion', 'chromophore', 'linker', 'conflict', 'acetylation', 'amidation', 'initiating methionine', 'modified residue', 'microheterogeneity', 'microheterogeneity/modified residue' );
 CREATE TABLE pdbx_sifts_xref_db (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
@@ -12910,7 +12908,7 @@ CREATE TABLE pdbx_sifts_xref_db (
 	mon_id TEXT ,
 	mon_id_one_letter_code TEXT ,
 	observed ENUM_pdbx_sifts_xref_db_observed ,
-	res_type ENUM_pdbx_sifts_xref_db_res_type ,
+	res_type TEXT ,
 	unp_acc TEXT ,
 	unp_instance_id INTEGER ,
 	unp_num INTEGER ,
@@ -12933,7 +12931,7 @@ CREATE TABLE pdbx_sifts_xref_db (
 
 --
 -- (quoted from pdbx_sifts_xref_db_segmentsType)
--- pdbx_sifts_xref_db_segments describes residue-range based cross-references to external databases. Example 1 - <PDBx:pdbx_sifts_xref_db_segmentsCategory> <PDBx:pdbx_sifts_xref_db_segments asym_id="A" entity_id="1" instance_id="1" segment_id="1" xref_db="SCOP2B" xref_db_acc="8102030"> <PDBx:domain_name>SF</PDBx:domain_name> <PDBx:seq_id_end>252</PDBx:seq_id_end> <PDBx:seq_id_start>26</PDBx:seq_id_start> </PDBx:pdbx_sifts_xref_db_segments> </PDBx:pdbx_sifts_xref_db_segmentsCategory>
+-- pdbx_sifts_xref_db_segments describes residue-range based cross-references to external databases. Example 1 - <PDBx:pdbx_sifts_xref_db_segmentsCategory> <PDBx:pdbx_sifts_xref_db_segments asym_id="A" entity_id="1" instance_id="1" segment_id="1" seq_id_end="252" seq_id_start="26" xref_db="SCOP2B" xref_db_acc="8102030"> <PDBx:domain_name>SF</PDBx:domain_name> </PDBx:pdbx_sifts_xref_db_segments> </PDBx:pdbx_sifts_xref_db_segmentsCategory>
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
@@ -12941,8 +12939,6 @@ CREATE TABLE pdbx_sifts_xref_db_segments (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
 	domain_name TEXT ,
-	seq_id_end INTEGER ,
-	seq_id_start INTEGER ,
 -- ATTRIBUTE
 	asym_id TEXT NOT NULL ,
 -- ATTRIBUTE
@@ -12951,6 +12947,10 @@ CREATE TABLE pdbx_sifts_xref_db_segments (
 	instance_id INTEGER NOT NULL ,
 -- ATTRIBUTE
 	segment_id INTEGER NOT NULL ,
+-- ATTRIBUTE
+	seq_id_end INTEGER NOT NULL ,
+-- ATTRIBUTE
+	seq_id_start INTEGER NOT NULL ,
 -- ATTRIBUTE
 	xref_db TEXT NOT NULL ,
 -- ATTRIBUTE
@@ -18428,7 +18428,7 @@ CREATE TABLE valence_ref (
 --ALTER TABLE pdbx_sifts_xref_db ADD CONSTRAINT UNQ_pdbx_sifts_xref_db UNIQUE ( document_id, asym_id, entity_id, seq_id, seq_id_ordinal );
 
 -- (derived from xsd:key[@name='pdbx_sifts_xref_db_segmentsKey_0'])
---ALTER TABLE pdbx_sifts_xref_db_segments ADD CONSTRAINT UNQ_pdbx_sifts_xref_db_segments UNIQUE ( document_id, asym_id, entity_id, instance_id, segment_id, xref_db, xref_db_acc );
+--ALTER TABLE pdbx_sifts_xref_db_segments ADD CONSTRAINT UNQ_pdbx_sifts_xref_db_segments UNIQUE ( document_id, asym_id, entity_id, instance_id, segment_id, seq_id_end, seq_id_start, xref_db, xref_db_acc );
 
 -- (derived from xsd:key[@name='pdbx_soln_scatterKey_0'])
 --ALTER TABLE pdbx_soln_scatter ADD CONSTRAINT UNQ_pdbx_soln_scatter UNIQUE ( document_id, entry_id, id );

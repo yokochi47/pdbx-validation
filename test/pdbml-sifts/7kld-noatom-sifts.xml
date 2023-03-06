@@ -11022,17 +11022,8 @@ LILQTMLVSLQTIEEEYNENIRLNYK</PDBx:pdbx_seq_one_letter_code>
     </PDBx:pdbx_sifts_unp_segments>
   </PDBx:pdbx_sifts_unp_segmentsCategory>
   <PDBx:pdbx_sifts_xref_db_segmentsCategory>
-    <PDBx:pdbx_sifts_xref_db_segments entity_id="1" asym_id="A" xref_db="Pfam" xref_db_acc="PF04327" segment_id="1" instance_id="1">
-      <PDBx:seq_id_start>1</PDBx:seq_id_start>
-      <PDBx:seq_id_end>102</PDBx:seq_id_end>
-    </PDBx:pdbx_sifts_xref_db_segments>
-    <PDBx:pdbx_sifts_xref_db_segments entity_id="1" asym_id="B" xref_db="Pfam" xref_db_acc="PF04327" segment_id="1" instance_id="1">
-      <PDBx:seq_id_start>1</PDBx:seq_id_start>
-      <PDBx:seq_id_end>102</PDBx:seq_id_end>
-    </PDBx:pdbx_sifts_xref_db_segments>
-    <PDBx:pdbx_sifts_xref_db_segments entity_id="1" asym_id="D" xref_db="Pfam" xref_db_acc="PF04327" segment_id="1" instance_id="1">
-      <PDBx:seq_id_start>1</PDBx:seq_id_start>
-      <PDBx:seq_id_end>102</PDBx:seq_id_end>
-    </PDBx:pdbx_sifts_xref_db_segments>
+    <PDBx:pdbx_sifts_xref_db_segments entity_id="1" asym_id="A" xref_db="Pfam" xref_db_acc="PF04327" segment_id="1" instance_id="1" seq_id_start="1" seq_id_end="102"/>
+    <PDBx:pdbx_sifts_xref_db_segments entity_id="1" asym_id="B" xref_db="Pfam" xref_db_acc="PF04327" segment_id="1" instance_id="1" seq_id_start="1" seq_id_end="102"/>
+    <PDBx:pdbx_sifts_xref_db_segments entity_id="1" asym_id="D" xref_db="Pfam" xref_db_acc="PF04327" segment_id="1" instance_id="1" seq_id_start="1" seq_id_end="102"/>
   </PDBx:pdbx_sifts_xref_db_segmentsCategory>
 </PDBx:datablock>

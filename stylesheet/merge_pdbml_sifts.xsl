@@ -3728,11 +3728,11 @@ Unmatched entry ID in both documents (<xsl:value-of select="$entry_id"/> and <xs
             </xsl:choose>
           </xsl:variable>
 
-          <PDBx:pdbx_sifts_xref_db_segments entity_id="{$entity_id}" asym_id="{$asym_id}" xref_db="{$xref_db}" xref_db_acc="{$xref_db_acc}" segment_id="{$segment_id}" instance_id="{$instance_id}">
-
+          <PDBx:pdbx_sifts_xref_db_segments entity_id="{$entity_id}" asym_id="{$asym_id}" xref_db="{$xref_db}" xref_db_acc="{$xref_db_acc}" segment_id="{$segment_id}" instance_id="{$instance_id}" seq_id_start="{$seq_id_start}" seq_id_end="{$seq_id_end}">
+            <!-- v4.356 or older
             <PDBx:seq_id_start><xsl:value-of select="$seq_id_start"/></PDBx:seq_id_start>
             <PDBx:seq_id_end><xsl:value-of select="$seq_id_end"/></PDBx:seq_id_end>
-
+            -->
           </PDBx:pdbx_sifts_xref_db_segments>
 
         </xsl:for-each>

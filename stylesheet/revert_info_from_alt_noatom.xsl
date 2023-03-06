@@ -343,6 +343,10 @@ Unmatched entry ID in both documents (<xsl:value-of select="$entry_id"/> and <xs
 
     <xsl:if test="$nmr=true()">
 
+      <xsl:for-each select="VRPTx:pdbx_database_relatedCategory/VRPTx:pdbx_database_related[@db_name='BMRB']">
+        <xsl:attribute name="bmrb_id"><xsl:value-of select="@db_id"/></xsl:attribute>
+      </xsl:for-each>
+
       <xsl:apply-templates select="VRPTx:pdbx_nmr_assigned_chem_shift_listCategory/*"/>
 
     </xsl:if>
@@ -351,8 +355,8 @@ Unmatched entry ID in both documents (<xsl:value-of select="$entry_id"/> and <xs
 
     <xsl:if test="$em=true()">
 
-      <!--xsl:for-each select="VRPTx:pdbx_database_relatedCategory/VRPTx:pdbx_database_related[VRPTx:db_name='EMDB']">
-        <xsl:attribute name="emdb_id"><xsl:value-of select="VRPTx:db_id"/></xsl:attribute>
+      <!--xsl:for-each select="VRPTx:pdbx_database_relatedCategory/VRPTx:pdbx_database_related[@db_name='EMDB']">
+        <xsl:attribute name="emdb_id"><xsl:value-of select="@db_id"/></xsl:attribute>
       </xsl:for-each-->
 
       <xsl:for-each select="VRPTx:em_adminCategory/VRPTx:em_admin">

@@ -14009,11 +14009,11 @@ NQLSISPVRDETGNVVAFVGVQTDVTA</VRPTo:struct_ref.pdbx_seq_one_letter_code>
     <VRPTo:has_pdbx_sifts_xref_db_segmentsCategory>
       <VRPTo:pdbx_sifts_xref_db_segmentsCategory rdf:about="http://rdf.wwpdb.org/vrpt/7AB7/pdbx_sifts_xref_db_segmentsCategory">
         <VRPTo:has_pdbx_sifts_xref_db_segments>
-          <VRPTo:pdbx_sifts_xref_db_segments rdf:about="http://rdf.wwpdb.org/vrpt/7AB7/pdbx_sifts_xref_db_segments/A,1,1,1,SCOP2B,8095379">
+          <VRPTo:pdbx_sifts_xref_db_segments rdf:about="http://rdf.wwpdb.org/vrpt/7AB7/pdbx_sifts_xref_db_segments/A,1,1,1,107,2,SCOP2B,8095379">
             <VRPTo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7AB7"/>
             <VRPTo:reference_to_struct_asym>
               <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7AB7/struct_asym/A">
-                <VRPTo:referenced_by_pdbx_sifts_xref_db_segments rdf:resource="http://rdf.wwpdb.org/vrpt/7AB7/pdbx_sifts_xref_db_segments/A,1,1,1,SCOP2B,8095379"/>
+                <VRPTo:referenced_by_pdbx_sifts_xref_db_segments rdf:resource="http://rdf.wwpdb.org/vrpt/7AB7/pdbx_sifts_xref_db_segments/A,1,1,1,107,2,SCOP2B,8095379"/>
               </rdf:Description>
             </VRPTo:reference_to_struct_asym>
             <VRPTo:pdbx_sifts_xref_db_segments.entity_id>1</VRPTo:pdbx_sifts_xref_db_segments.entity_id>
@@ -14022,17 +14022,17 @@ NQLSISPVRDETGNVVAFVGVQTDVTA</VRPTo:struct_ref.pdbx_seq_one_letter_code>
             <VRPTo:pdbx_sifts_xref_db_segments.xref_db_acc>8095379</VRPTo:pdbx_sifts_xref_db_segments.xref_db_acc>
             <VRPTo:pdbx_sifts_xref_db_segments.segment_id>1</VRPTo:pdbx_sifts_xref_db_segments.segment_id>
             <VRPTo:pdbx_sifts_xref_db_segments.instance_id>1</VRPTo:pdbx_sifts_xref_db_segments.instance_id>
-            <VRPTo:link_to_scop rdf:resource="http://scop2.mrc-lmb.cam.ac.uk/term/8095379" rdfs:label="scop2:8095379"/>
             <VRPTo:pdbx_sifts_xref_db_segments.seq_id_start>2</VRPTo:pdbx_sifts_xref_db_segments.seq_id_start>
             <VRPTo:pdbx_sifts_xref_db_segments.seq_id_end>107</VRPTo:pdbx_sifts_xref_db_segments.seq_id_end>
+            <VRPTo:link_to_scop rdf:resource="http://scop2.mrc-lmb.cam.ac.uk/term/8095379" rdfs:label="scop2:8095379"/>
           </VRPTo:pdbx_sifts_xref_db_segments>
         </VRPTo:has_pdbx_sifts_xref_db_segments>
         <VRPTo:has_pdbx_sifts_xref_db_segments>
-          <VRPTo:pdbx_sifts_xref_db_segments rdf:about="http://rdf.wwpdb.org/vrpt/7AB7/pdbx_sifts_xref_db_segments/A,1,2,1,Pfam,PF13426">
+          <VRPTo:pdbx_sifts_xref_db_segments rdf:about="http://rdf.wwpdb.org/vrpt/7AB7/pdbx_sifts_xref_db_segments/A,1,2,1,107,2,Pfam,PF13426">
             <VRPTo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7AB7"/>
             <VRPTo:reference_to_struct_asym>
               <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7AB7/struct_asym/A">
-                <VRPTo:referenced_by_pdbx_sifts_xref_db_segments rdf:resource="http://rdf.wwpdb.org/vrpt/7AB7/pdbx_sifts_xref_db_segments/A,1,2,1,Pfam,PF13426"/>
+                <VRPTo:referenced_by_pdbx_sifts_xref_db_segments rdf:resource="http://rdf.wwpdb.org/vrpt/7AB7/pdbx_sifts_xref_db_segments/A,1,2,1,107,2,Pfam,PF13426"/>
               </rdf:Description>
             </VRPTo:reference_to_struct_asym>
             <VRPTo:pdbx_sifts_xref_db_segments.entity_id>1</VRPTo:pdbx_sifts_xref_db_segments.entity_id>
@@ -14041,18 +14041,18 @@ NQLSISPVRDETGNVVAFVGVQTDVTA</VRPTo:struct_ref.pdbx_seq_one_letter_code>
             <VRPTo:pdbx_sifts_xref_db_segments.xref_db_acc>PF13426</VRPTo:pdbx_sifts_xref_db_segments.xref_db_acc>
             <VRPTo:pdbx_sifts_xref_db_segments.segment_id>1</VRPTo:pdbx_sifts_xref_db_segments.segment_id>
             <VRPTo:pdbx_sifts_xref_db_segments.instance_id>2</VRPTo:pdbx_sifts_xref_db_segments.instance_id>
-            <VRPTo:link_to_pfam rdf:resource="http://pfam.xfam.org/family/PF13426" rdfs:label="pfam:PF13426"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/pfam/PF13426" rdfs:label="pfam:PF13426"/>
             <VRPTo:pdbx_sifts_xref_db_segments.seq_id_start>2</VRPTo:pdbx_sifts_xref_db_segments.seq_id_start>
             <VRPTo:pdbx_sifts_xref_db_segments.seq_id_end>107</VRPTo:pdbx_sifts_xref_db_segments.seq_id_end>
+            <VRPTo:link_to_pfam rdf:resource="http://pfam.xfam.org/family/PF13426" rdfs:label="pfam:PF13426"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/pfam/PF13426" rdfs:label="pfam:PF13426"/>
           </VRPTo:pdbx_sifts_xref_db_segments>
         </VRPTo:has_pdbx_sifts_xref_db_segments>
         <VRPTo:has_pdbx_sifts_xref_db_segments>
-          <VRPTo:pdbx_sifts_xref_db_segments rdf:about="http://rdf.wwpdb.org/vrpt/7AB7/pdbx_sifts_xref_db_segments/B,1,1,1,SCOP2B,8095379">
+          <VRPTo:pdbx_sifts_xref_db_segments rdf:about="http://rdf.wwpdb.org/vrpt/7AB7/pdbx_sifts_xref_db_segments/B,1,1,1,105,2,SCOP2B,8095379">
             <VRPTo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7AB7"/>
             <VRPTo:reference_to_struct_asym>
               <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7AB7/struct_asym/B">
-                <VRPTo:referenced_by_pdbx_sifts_xref_db_segments rdf:resource="http://rdf.wwpdb.org/vrpt/7AB7/pdbx_sifts_xref_db_segments/B,1,1,1,SCOP2B,8095379"/>
+                <VRPTo:referenced_by_pdbx_sifts_xref_db_segments rdf:resource="http://rdf.wwpdb.org/vrpt/7AB7/pdbx_sifts_xref_db_segments/B,1,1,1,105,2,SCOP2B,8095379"/>
               </rdf:Description>
             </VRPTo:reference_to_struct_asym>
             <VRPTo:pdbx_sifts_xref_db_segments.entity_id>1</VRPTo:pdbx_sifts_xref_db_segments.entity_id>
@@ -14061,17 +14061,17 @@ NQLSISPVRDETGNVVAFVGVQTDVTA</VRPTo:struct_ref.pdbx_seq_one_letter_code>
             <VRPTo:pdbx_sifts_xref_db_segments.xref_db_acc>8095379</VRPTo:pdbx_sifts_xref_db_segments.xref_db_acc>
             <VRPTo:pdbx_sifts_xref_db_segments.segment_id>1</VRPTo:pdbx_sifts_xref_db_segments.segment_id>
             <VRPTo:pdbx_sifts_xref_db_segments.instance_id>1</VRPTo:pdbx_sifts_xref_db_segments.instance_id>
-            <VRPTo:link_to_scop rdf:resource="http://scop2.mrc-lmb.cam.ac.uk/term/8095379" rdfs:label="scop2:8095379"/>
             <VRPTo:pdbx_sifts_xref_db_segments.seq_id_start>2</VRPTo:pdbx_sifts_xref_db_segments.seq_id_start>
             <VRPTo:pdbx_sifts_xref_db_segments.seq_id_end>105</VRPTo:pdbx_sifts_xref_db_segments.seq_id_end>
+            <VRPTo:link_to_scop rdf:resource="http://scop2.mrc-lmb.cam.ac.uk/term/8095379" rdfs:label="scop2:8095379"/>
           </VRPTo:pdbx_sifts_xref_db_segments>
         </VRPTo:has_pdbx_sifts_xref_db_segments>
         <VRPTo:has_pdbx_sifts_xref_db_segments>
-          <VRPTo:pdbx_sifts_xref_db_segments rdf:about="http://rdf.wwpdb.org/vrpt/7AB7/pdbx_sifts_xref_db_segments/B,1,2,1,Pfam,PF13426">
+          <VRPTo:pdbx_sifts_xref_db_segments rdf:about="http://rdf.wwpdb.org/vrpt/7AB7/pdbx_sifts_xref_db_segments/B,1,2,1,107,2,Pfam,PF13426">
             <VRPTo:of_datablock rdf:resource="http://rdf.wwpdb.org/vrpt/7AB7"/>
             <VRPTo:reference_to_struct_asym>
               <rdf:Description rdf:about="http://rdf.wwpdb.org/vrpt/7AB7/struct_asym/B">
-                <VRPTo:referenced_by_pdbx_sifts_xref_db_segments rdf:resource="http://rdf.wwpdb.org/vrpt/7AB7/pdbx_sifts_xref_db_segments/B,1,2,1,Pfam,PF13426"/>
+                <VRPTo:referenced_by_pdbx_sifts_xref_db_segments rdf:resource="http://rdf.wwpdb.org/vrpt/7AB7/pdbx_sifts_xref_db_segments/B,1,2,1,107,2,Pfam,PF13426"/>
               </rdf:Description>
             </VRPTo:reference_to_struct_asym>
             <VRPTo:pdbx_sifts_xref_db_segments.entity_id>1</VRPTo:pdbx_sifts_xref_db_segments.entity_id>
@@ -14080,10 +14080,10 @@ NQLSISPVRDETGNVVAFVGVQTDVTA</VRPTo:struct_ref.pdbx_seq_one_letter_code>
             <VRPTo:pdbx_sifts_xref_db_segments.xref_db_acc>PF13426</VRPTo:pdbx_sifts_xref_db_segments.xref_db_acc>
             <VRPTo:pdbx_sifts_xref_db_segments.segment_id>1</VRPTo:pdbx_sifts_xref_db_segments.segment_id>
             <VRPTo:pdbx_sifts_xref_db_segments.instance_id>2</VRPTo:pdbx_sifts_xref_db_segments.instance_id>
-            <VRPTo:link_to_pfam rdf:resource="http://pfam.xfam.org/family/PF13426" rdfs:label="pfam:PF13426"/>
-            <rdfs:seeAlso rdf:resource="http://identifiers.org/pfam/PF13426" rdfs:label="pfam:PF13426"/>
             <VRPTo:pdbx_sifts_xref_db_segments.seq_id_start>2</VRPTo:pdbx_sifts_xref_db_segments.seq_id_start>
             <VRPTo:pdbx_sifts_xref_db_segments.seq_id_end>107</VRPTo:pdbx_sifts_xref_db_segments.seq_id_end>
+            <VRPTo:link_to_pfam rdf:resource="http://pfam.xfam.org/family/PF13426" rdfs:label="pfam:PF13426"/>
+            <rdfs:seeAlso rdf:resource="http://identifiers.org/pfam/PF13426" rdfs:label="pfam:PF13426"/>
           </VRPTo:pdbx_sifts_xref_db_segments>
         </VRPTo:has_pdbx_sifts_xref_db_segments>
       </VRPTo:pdbx_sifts_xref_db_segmentsCategory>

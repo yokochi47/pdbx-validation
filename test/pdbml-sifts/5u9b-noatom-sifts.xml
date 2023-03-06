@@ -9110,45 +9110,15 @@ INGRNNLIQQKN</PDBx:pdbx_seq_one_letter_code>
     </PDBx:pdbx_sifts_unp_segments>
   </PDBx:pdbx_sifts_unp_segmentsCategory>
   <PDBx:pdbx_sifts_xref_db_segmentsCategory>
-    <PDBx:pdbx_sifts_xref_db_segments entity_id="1" asym_id="A" xref_db="GO" xref_db_acc="GO:0046872" segment_id="1" instance_id="1">
-      <PDBx:seq_id_start>1</PDBx:seq_id_start>
-      <PDBx:seq_id_end>92</PDBx:seq_id_end>
-    </PDBx:pdbx_sifts_xref_db_segments>
-    <PDBx:pdbx_sifts_xref_db_segments entity_id="1" asym_id="A" xref_db="Ensembl" xref_db_acc="ENSG00000152601" segment_id="1" instance_id="2">
-      <PDBx:seq_id_start>59</PDBx:seq_id_start>
-      <PDBx:seq_id_end>92</PDBx:seq_id_end>
-    </PDBx:pdbx_sifts_xref_db_segments>
-    <PDBx:pdbx_sifts_xref_db_segments entity_id="1" asym_id="A" xref_db="Ensembl" xref_db_acc="ENSG00000152601" segment_id="1" instance_id="3">
-      <PDBx:seq_id_start>1</PDBx:seq_id_start>
-      <PDBx:seq_id_end>58</PDBx:seq_id_end>
-    </PDBx:pdbx_sifts_xref_db_segments>
-    <PDBx:pdbx_sifts_xref_db_segments entity_id="1" asym_id="A" xref_db="Ensembl" xref_db_acc="ENSG00000152601" segment_id="1" instance_id="4">
-      <PDBx:seq_id_start>1</PDBx:seq_id_start>
-      <PDBx:seq_id_end>58</PDBx:seq_id_end>
-    </PDBx:pdbx_sifts_xref_db_segments>
-    <PDBx:pdbx_sifts_xref_db_segments entity_id="1" asym_id="A" xref_db="Ensembl" xref_db_acc="ENSG00000152601" segment_id="1" instance_id="5">
-      <PDBx:seq_id_start>59</PDBx:seq_id_start>
-      <PDBx:seq_id_end>92</PDBx:seq_id_end>
-    </PDBx:pdbx_sifts_xref_db_segments>
-    <PDBx:pdbx_sifts_xref_db_segments entity_id="1" asym_id="A" xref_db="InterPro" xref_db_acc="IPR000571" segment_id="1" instance_id="6">
-      <PDBx:seq_id_start>47</PDBx:seq_id_start>
-      <PDBx:seq_id_end>72</PDBx:seq_id_end>
-    </PDBx:pdbx_sifts_xref_db_segments>
-    <PDBx:pdbx_sifts_xref_db_segments entity_id="1" asym_id="A" xref_db="InterPro" xref_db_acc="IPR000571" segment_id="1" instance_id="7">
-      <PDBx:seq_id_start>14</PDBx:seq_id_start>
-      <PDBx:seq_id_end>40</PDBx:seq_id_end>
-    </PDBx:pdbx_sifts_xref_db_segments>
-    <PDBx:pdbx_sifts_xref_db_segments entity_id="1" asym_id="A" xref_db="CATH" xref_db_acc="3.30.1370.210" segment_id="1" instance_id="8">
-      <PDBx:seq_id_start>1</PDBx:seq_id_start>
-      <PDBx:seq_id_end>92</PDBx:seq_id_end>
-    </PDBx:pdbx_sifts_xref_db_segments>
-    <PDBx:pdbx_sifts_xref_db_segments entity_id="1" asym_id="A" xref_db="Pfam" xref_db_acc="PF14608" segment_id="1" instance_id="9">
-      <PDBx:seq_id_start>19</PDBx:seq_id_start>
-      <PDBx:seq_id_end>39</PDBx:seq_id_end>
-    </PDBx:pdbx_sifts_xref_db_segments>
-    <PDBx:pdbx_sifts_xref_db_segments entity_id="1" asym_id="A" xref_db="Pfam" xref_db_acc="PF14608" segment_id="1" instance_id="10">
-      <PDBx:seq_id_start>52</PDBx:seq_id_start>
-      <PDBx:seq_id_end>71</PDBx:seq_id_end>
-    </PDBx:pdbx_sifts_xref_db_segments>
+    <PDBx:pdbx_sifts_xref_db_segments entity_id="1" asym_id="A" xref_db="GO" xref_db_acc="GO:0046872" segment_id="1" instance_id="1" seq_id_start="1" seq_id_end="92"/>
+    <PDBx:pdbx_sifts_xref_db_segments entity_id="1" asym_id="A" xref_db="Ensembl" xref_db_acc="ENSG00000152601" segment_id="1" instance_id="2" seq_id_start="59" seq_id_end="92"/>
+    <PDBx:pdbx_sifts_xref_db_segments entity_id="1" asym_id="A" xref_db="Ensembl" xref_db_acc="ENSG00000152601" segment_id="1" instance_id="3" seq_id_start="1" seq_id_end="58"/>
+    <PDBx:pdbx_sifts_xref_db_segments entity_id="1" asym_id="A" xref_db="Ensembl" xref_db_acc="ENSG00000152601" segment_id="1" instance_id="4" seq_id_start="1" seq_id_end="58"/>
+    <PDBx:pdbx_sifts_xref_db_segments entity_id="1" asym_id="A" xref_db="Ensembl" xref_db_acc="ENSG00000152601" segment_id="1" instance_id="5" seq_id_start="59" seq_id_end="92"/>
+    <PDBx:pdbx_sifts_xref_db_segments entity_id="1" asym_id="A" xref_db="InterPro" xref_db_acc="IPR000571" segment_id="1" instance_id="6" seq_id_start="47" seq_id_end="72"/>
+    <PDBx:pdbx_sifts_xref_db_segments entity_id="1" asym_id="A" xref_db="InterPro" xref_db_acc="IPR000571" segment_id="1" instance_id="7" seq_id_start="14" seq_id_end="40"/>
+    <PDBx:pdbx_sifts_xref_db_segments entity_id="1" asym_id="A" xref_db="CATH" xref_db_acc="3.30.1370.210" segment_id="1" instance_id="8" seq_id_start="1" seq_id_end="92"/>
+    <PDBx:pdbx_sifts_xref_db_segments entity_id="1" asym_id="A" xref_db="Pfam" xref_db_acc="PF14608" segment_id="1" instance_id="9" seq_id_start="19" seq_id_end="39"/>
+    <PDBx:pdbx_sifts_xref_db_segments entity_id="1" asym_id="A" xref_db="Pfam" xref_db_acc="PF14608" segment_id="1" instance_id="10" seq_id_start="52" seq_id_end="71"/>
   </PDBx:pdbx_sifts_xref_db_segmentsCategory>
 </PDBx:datablock>

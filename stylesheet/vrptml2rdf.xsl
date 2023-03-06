@@ -3102,12 +3102,12 @@
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_sifts_xref_db_segmentsCategory/VRPTx:pdbx_sifts_xref_db_segments">
       <VRPTo:has_pdbx_sifts_xref_db_segments>
-      <VRPTo:pdbx_sifts_xref_db_segments rdf:about="{$base}/pdbx_sifts_xref_db_segments/{translate(@asym_id,' ^','_')},{translate(@entity_id,' ^','_')},{translate(@instance_id,' ^','_')},{translate(@segment_id,' ^','_')},{translate(@xref_db,' ^','_')},{translate(@xref_db_acc,' ^','_')}">
+      <VRPTo:pdbx_sifts_xref_db_segments rdf:about="{$base}/pdbx_sifts_xref_db_segments/{translate(@asym_id,' ^','_')},{translate(@entity_id,' ^','_')},{translate(@instance_id,' ^','_')},{translate(@segment_id,' ^','_')},{translate(@seq_id_end,' ^','_')},{translate(@seq_id_start,' ^','_')},{translate(@xref_db,' ^','_')},{translate(@xref_db_acc,' ^','_')}">
       <VRPTo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@asym_id!=''">
         <VRPTo:reference_to_struct_asym>
 	  <rdf:Description  rdf:about="{$base}/struct_asym/{translate(@asym_id,' ^','_')}">
-	    <VRPTo:referenced_by_pdbx_sifts_xref_db_segments rdf:resource="{$base}/pdbx_sifts_xref_db_segments/{translate(@asym_id,' ^','_')},{translate(@entity_id,' ^','_')},{translate(@instance_id,' ^','_')},{translate(@segment_id,' ^','_')},{translate(@xref_db,' ^','_')},{translate(@xref_db_acc,' ^','_')}"/>
+	    <VRPTo:referenced_by_pdbx_sifts_xref_db_segments rdf:resource="{$base}/pdbx_sifts_xref_db_segments/{translate(@asym_id,' ^','_')},{translate(@entity_id,' ^','_')},{translate(@instance_id,' ^','_')},{translate(@segment_id,' ^','_')},{translate(@seq_id_end,' ^','_')},{translate(@seq_id_start,' ^','_')},{translate(@xref_db,' ^','_')},{translate(@xref_db_acc,' ^','_')}"/>
 	  </rdf:Description>
         </VRPTo:reference_to_struct_asym>
         <!-- struct_asymKeyref_0_0_3_0 -->

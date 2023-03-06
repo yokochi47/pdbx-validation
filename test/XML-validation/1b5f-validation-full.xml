@@ -16564,182 +16564,50 @@ DISORDERED REGIONS THAT WERE MODELED STEREOCHEMICALLY:
     </VRPTx:pdbx_sifts_unp_segments>
   </VRPTx:pdbx_sifts_unp_segmentsCategory>
   <VRPTx:pdbx_sifts_xref_db_segmentsCategory>
-    <VRPTx:pdbx_sifts_xref_db_segments entity_id="1" asym_id="A" xref_db="GO" xref_db_acc="GO:0004190" segment_id="1" instance_id="1">
-      <VRPTx:seq_id_start>1</VRPTx:seq_id_start>
-      <VRPTx:seq_id_end>239</VRPTx:seq_id_end>
-    </VRPTx:pdbx_sifts_xref_db_segments>
-    <VRPTx:pdbx_sifts_xref_db_segments entity_id="1" asym_id="A" xref_db="GO" xref_db_acc="GO:0004190" segment_id="1" instance_id="2">
-      <VRPTx:seq_id_start>1</VRPTx:seq_id_start>
-      <VRPTx:seq_id_end>239</VRPTx:seq_id_end>
-    </VRPTx:pdbx_sifts_xref_db_segments>
-    <VRPTx:pdbx_sifts_xref_db_segments entity_id="1" asym_id="A" xref_db="GO" xref_db_acc="GO:0006508" segment_id="1" instance_id="3">
-      <VRPTx:seq_id_start>1</VRPTx:seq_id_start>
-      <VRPTx:seq_id_end>239</VRPTx:seq_id_end>
-    </VRPTx:pdbx_sifts_xref_db_segments>
-    <VRPTx:pdbx_sifts_xref_db_segments entity_id="1" asym_id="A" xref_db="GO" xref_db_acc="GO:0006508" segment_id="1" instance_id="4">
-      <VRPTx:seq_id_start>1</VRPTx:seq_id_start>
-      <VRPTx:seq_id_end>239</VRPTx:seq_id_end>
-    </VRPTx:pdbx_sifts_xref_db_segments>
-    <VRPTx:pdbx_sifts_xref_db_segments entity_id="1" asym_id="A" xref_db="InterPro" xref_db_acc="IPR021109" segment_id="1" instance_id="5">
-      <VRPTx:seq_id_start>1</VRPTx:seq_id_start>
-      <VRPTx:seq_id_end>169</VRPTx:seq_id_end>
-    </VRPTx:pdbx_sifts_xref_db_segments>
-    <VRPTx:pdbx_sifts_xref_db_segments entity_id="1" asym_id="A" xref_db="InterPro" xref_db_acc="IPR021109" segment_id="1" instance_id="6">
-      <VRPTx:seq_id_start>170</VRPTx:seq_id_start>
-      <VRPTx:seq_id_end>238</VRPTx:seq_id_end>
-    </VRPTx:pdbx_sifts_xref_db_segments>
-    <VRPTx:pdbx_sifts_xref_db_segments entity_id="1" asym_id="A" xref_db="InterPro" xref_db_acc="IPR033121" segment_id="1" instance_id="7">
-      <VRPTx:seq_id_start>14</VRPTx:seq_id_start>
-      <VRPTx:seq_id_end>238</VRPTx:seq_id_end>
-    </VRPTx:pdbx_sifts_xref_db_segments>
-    <VRPTx:pdbx_sifts_xref_db_segments entity_id="1" asym_id="A" xref_db="InterPro" xref_db_acc="IPR001461" segment_id="1" instance_id="8">
-      <VRPTx:seq_id_start>21</VRPTx:seq_id_start>
-      <VRPTx:seq_id_end>41</VRPTx:seq_id_end>
-    </VRPTx:pdbx_sifts_xref_db_segments>
-    <VRPTx:pdbx_sifts_xref_db_segments entity_id="1" asym_id="A" xref_db="InterPro" xref_db_acc="IPR001461" segment_id="1" instance_id="9">
-      <VRPTx:seq_id_start>9</VRPTx:seq_id_start>
-      <VRPTx:seq_id_end>237</VRPTx:seq_id_end>
-    </VRPTx:pdbx_sifts_xref_db_segments>
-    <VRPTx:pdbx_sifts_xref_db_segments entity_id="1" asym_id="A" xref_db="InterPro" xref_db_acc="IPR021109" segment_id="1" instance_id="10">
-      <VRPTx:seq_id_start>3</VRPTx:seq_id_start>
-      <VRPTx:seq_id_end>238</VRPTx:seq_id_end>
-    </VRPTx:pdbx_sifts_xref_db_segments>
-    <VRPTx:pdbx_sifts_xref_db_segments entity_id="1" asym_id="A" xref_db="InterPro" xref_db_acc="IPR001461" segment_id="1" instance_id="11">
-      <VRPTx:seq_id_start>213</VRPTx:seq_id_start>
-      <VRPTx:seq_id_end>224</VRPTx:seq_id_end>
-    </VRPTx:pdbx_sifts_xref_db_segments>
-    <VRPTx:pdbx_sifts_xref_db_segments entity_id="1" asym_id="A" xref_db="InterPro" xref_db_acc="IPR001461" segment_id="1" instance_id="12">
-      <VRPTx:seq_id_start>163</VRPTx:seq_id_start>
-      <VRPTx:seq_id_end>176</VRPTx:seq_id_end>
-    </VRPTx:pdbx_sifts_xref_db_segments>
-    <VRPTx:pdbx_sifts_xref_db_segments entity_id="1" asym_id="A" xref_db="CATH" xref_db_acc="2.40.70.10" segment_id="1" instance_id="13">
-      <VRPTx:seq_id_start>1</VRPTx:seq_id_start>
-      <VRPTx:seq_id_end>239</VRPTx:seq_id_end>
-    </VRPTx:pdbx_sifts_xref_db_segments>
-    <VRPTx:pdbx_sifts_xref_db_segments entity_id="1" asym_id="A" xref_db="SCOP" xref_db_acc="26836" segment_id="1" instance_id="14">
-      <VRPTx:seq_id_start>1</VRPTx:seq_id_start>
-      <VRPTx:seq_id_end>239</VRPTx:seq_id_end>
-    </VRPTx:pdbx_sifts_xref_db_segments>
-    <VRPTx:pdbx_sifts_xref_db_segments entity_id="2" asym_id="B" xref_db="GO" xref_db_acc="GO:0004190" segment_id="1" instance_id="1">
-      <VRPTx:seq_id_start>1</VRPTx:seq_id_start>
-      <VRPTx:seq_id_end>87</VRPTx:seq_id_end>
-    </VRPTx:pdbx_sifts_xref_db_segments>
-    <VRPTx:pdbx_sifts_xref_db_segments entity_id="2" asym_id="B" xref_db="GO" xref_db_acc="GO:0006508" segment_id="1" instance_id="2">
-      <VRPTx:seq_id_start>1</VRPTx:seq_id_start>
-      <VRPTx:seq_id_end>87</VRPTx:seq_id_end>
-    </VRPTx:pdbx_sifts_xref_db_segments>
-    <VRPTx:pdbx_sifts_xref_db_segments entity_id="2" asym_id="B" xref_db="InterPro" xref_db_acc="IPR033121" segment_id="1" instance_id="3">
-      <VRPTx:seq_id_start>2</VRPTx:seq_id_start>
-      <VRPTx:seq_id_end>86</VRPTx:seq_id_end>
-    </VRPTx:pdbx_sifts_xref_db_segments>
-    <VRPTx:pdbx_sifts_xref_db_segments entity_id="2" asym_id="B" xref_db="InterPro" xref_db_acc="IPR021109" segment_id="1" instance_id="4">
-      <VRPTx:seq_id_start>3</VRPTx:seq_id_start>
-      <VRPTx:seq_id_end>86</VRPTx:seq_id_end>
-    </VRPTx:pdbx_sifts_xref_db_segments>
-    <VRPTx:pdbx_sifts_xref_db_segments entity_id="2" asym_id="B" xref_db="InterPro" xref_db_acc="IPR021109" segment_id="1" instance_id="5">
-      <VRPTx:seq_id_start>2</VRPTx:seq_id_start>
-      <VRPTx:seq_id_end>87</VRPTx:seq_id_end>
-    </VRPTx:pdbx_sifts_xref_db_segments>
-    <VRPTx:pdbx_sifts_xref_db_segments entity_id="2" asym_id="B" xref_db="InterPro" xref_db_acc="IPR001461" segment_id="1" instance_id="6">
-      <VRPTx:seq_id_start>2</VRPTx:seq_id_start>
-      <VRPTx:seq_id_end>84</VRPTx:seq_id_end>
-    </VRPTx:pdbx_sifts_xref_db_segments>
-    <VRPTx:pdbx_sifts_xref_db_segments entity_id="2" asym_id="B" xref_db="CATH" xref_db_acc="2.40.70.10" segment_id="1" instance_id="7">
-      <VRPTx:seq_id_start>1</VRPTx:seq_id_start>
-      <VRPTx:seq_id_end>87</VRPTx:seq_id_end>
-    </VRPTx:pdbx_sifts_xref_db_segments>
-    <VRPTx:pdbx_sifts_xref_db_segments entity_id="2" asym_id="B" xref_db="SCOP" xref_db_acc="26836" segment_id="1" instance_id="8">
-      <VRPTx:seq_id_start>1</VRPTx:seq_id_start>
-      <VRPTx:seq_id_end>87</VRPTx:seq_id_end>
-    </VRPTx:pdbx_sifts_xref_db_segments>
-    <VRPTx:pdbx_sifts_xref_db_segments entity_id="1" asym_id="C" xref_db="GO" xref_db_acc="GO:0004190" segment_id="1" instance_id="1">
-      <VRPTx:seq_id_start>1</VRPTx:seq_id_start>
-      <VRPTx:seq_id_end>239</VRPTx:seq_id_end>
-    </VRPTx:pdbx_sifts_xref_db_segments>
-    <VRPTx:pdbx_sifts_xref_db_segments entity_id="1" asym_id="C" xref_db="GO" xref_db_acc="GO:0004190" segment_id="1" instance_id="2">
-      <VRPTx:seq_id_start>1</VRPTx:seq_id_start>
-      <VRPTx:seq_id_end>239</VRPTx:seq_id_end>
-    </VRPTx:pdbx_sifts_xref_db_segments>
-    <VRPTx:pdbx_sifts_xref_db_segments entity_id="1" asym_id="C" xref_db="GO" xref_db_acc="GO:0006508" segment_id="1" instance_id="3">
-      <VRPTx:seq_id_start>1</VRPTx:seq_id_start>
-      <VRPTx:seq_id_end>239</VRPTx:seq_id_end>
-    </VRPTx:pdbx_sifts_xref_db_segments>
-    <VRPTx:pdbx_sifts_xref_db_segments entity_id="1" asym_id="C" xref_db="GO" xref_db_acc="GO:0006508" segment_id="1" instance_id="4">
-      <VRPTx:seq_id_start>1</VRPTx:seq_id_start>
-      <VRPTx:seq_id_end>239</VRPTx:seq_id_end>
-    </VRPTx:pdbx_sifts_xref_db_segments>
-    <VRPTx:pdbx_sifts_xref_db_segments entity_id="1" asym_id="C" xref_db="InterPro" xref_db_acc="IPR021109" segment_id="1" instance_id="5">
-      <VRPTx:seq_id_start>170</VRPTx:seq_id_start>
-      <VRPTx:seq_id_end>238</VRPTx:seq_id_end>
-    </VRPTx:pdbx_sifts_xref_db_segments>
-    <VRPTx:pdbx_sifts_xref_db_segments entity_id="1" asym_id="C" xref_db="InterPro" xref_db_acc="IPR001461" segment_id="1" instance_id="6">
-      <VRPTx:seq_id_start>213</VRPTx:seq_id_start>
-      <VRPTx:seq_id_end>224</VRPTx:seq_id_end>
-    </VRPTx:pdbx_sifts_xref_db_segments>
-    <VRPTx:pdbx_sifts_xref_db_segments entity_id="1" asym_id="C" xref_db="InterPro" xref_db_acc="IPR021109" segment_id="1" instance_id="7">
-      <VRPTx:seq_id_start>1</VRPTx:seq_id_start>
-      <VRPTx:seq_id_end>169</VRPTx:seq_id_end>
-    </VRPTx:pdbx_sifts_xref_db_segments>
-    <VRPTx:pdbx_sifts_xref_db_segments entity_id="1" asym_id="C" xref_db="InterPro" xref_db_acc="IPR001461" segment_id="1" instance_id="8">
-      <VRPTx:seq_id_start>21</VRPTx:seq_id_start>
-      <VRPTx:seq_id_end>41</VRPTx:seq_id_end>
-    </VRPTx:pdbx_sifts_xref_db_segments>
-    <VRPTx:pdbx_sifts_xref_db_segments entity_id="1" asym_id="C" xref_db="InterPro" xref_db_acc="IPR001461" segment_id="1" instance_id="9">
-      <VRPTx:seq_id_start>163</VRPTx:seq_id_start>
-      <VRPTx:seq_id_end>176</VRPTx:seq_id_end>
-    </VRPTx:pdbx_sifts_xref_db_segments>
-    <VRPTx:pdbx_sifts_xref_db_segments entity_id="1" asym_id="C" xref_db="InterPro" xref_db_acc="IPR021109" segment_id="1" instance_id="10">
-      <VRPTx:seq_id_start>3</VRPTx:seq_id_start>
-      <VRPTx:seq_id_end>238</VRPTx:seq_id_end>
-    </VRPTx:pdbx_sifts_xref_db_segments>
-    <VRPTx:pdbx_sifts_xref_db_segments entity_id="1" asym_id="C" xref_db="InterPro" xref_db_acc="IPR033121" segment_id="1" instance_id="11">
-      <VRPTx:seq_id_start>14</VRPTx:seq_id_start>
-      <VRPTx:seq_id_end>238</VRPTx:seq_id_end>
-    </VRPTx:pdbx_sifts_xref_db_segments>
-    <VRPTx:pdbx_sifts_xref_db_segments entity_id="1" asym_id="C" xref_db="InterPro" xref_db_acc="IPR001461" segment_id="1" instance_id="12">
-      <VRPTx:seq_id_start>9</VRPTx:seq_id_start>
-      <VRPTx:seq_id_end>237</VRPTx:seq_id_end>
-    </VRPTx:pdbx_sifts_xref_db_segments>
-    <VRPTx:pdbx_sifts_xref_db_segments entity_id="1" asym_id="C" xref_db="CATH" xref_db_acc="2.40.70.10" segment_id="1" instance_id="13">
-      <VRPTx:seq_id_start>2</VRPTx:seq_id_start>
-      <VRPTx:seq_id_end>239</VRPTx:seq_id_end>
-    </VRPTx:pdbx_sifts_xref_db_segments>
-    <VRPTx:pdbx_sifts_xref_db_segments entity_id="1" asym_id="C" xref_db="SCOP" xref_db_acc="26837" segment_id="1" instance_id="14">
-      <VRPTx:seq_id_start>1</VRPTx:seq_id_start>
-      <VRPTx:seq_id_end>239</VRPTx:seq_id_end>
-    </VRPTx:pdbx_sifts_xref_db_segments>
-    <VRPTx:pdbx_sifts_xref_db_segments entity_id="2" asym_id="D" xref_db="GO" xref_db_acc="GO:0004190" segment_id="1" instance_id="1">
-      <VRPTx:seq_id_start>1</VRPTx:seq_id_start>
-      <VRPTx:seq_id_end>87</VRPTx:seq_id_end>
-    </VRPTx:pdbx_sifts_xref_db_segments>
-    <VRPTx:pdbx_sifts_xref_db_segments entity_id="2" asym_id="D" xref_db="GO" xref_db_acc="GO:0006508" segment_id="1" instance_id="2">
-      <VRPTx:seq_id_start>1</VRPTx:seq_id_start>
-      <VRPTx:seq_id_end>87</VRPTx:seq_id_end>
-    </VRPTx:pdbx_sifts_xref_db_segments>
-    <VRPTx:pdbx_sifts_xref_db_segments entity_id="2" asym_id="D" xref_db="InterPro" xref_db_acc="IPR033121" segment_id="1" instance_id="3">
-      <VRPTx:seq_id_start>2</VRPTx:seq_id_start>
-      <VRPTx:seq_id_end>86</VRPTx:seq_id_end>
-    </VRPTx:pdbx_sifts_xref_db_segments>
-    <VRPTx:pdbx_sifts_xref_db_segments entity_id="2" asym_id="D" xref_db="InterPro" xref_db_acc="IPR021109" segment_id="1" instance_id="4">
-      <VRPTx:seq_id_start>2</VRPTx:seq_id_start>
-      <VRPTx:seq_id_end>87</VRPTx:seq_id_end>
-    </VRPTx:pdbx_sifts_xref_db_segments>
-    <VRPTx:pdbx_sifts_xref_db_segments entity_id="2" asym_id="D" xref_db="InterPro" xref_db_acc="IPR001461" segment_id="1" instance_id="5">
-      <VRPTx:seq_id_start>2</VRPTx:seq_id_start>
-      <VRPTx:seq_id_end>84</VRPTx:seq_id_end>
-    </VRPTx:pdbx_sifts_xref_db_segments>
-    <VRPTx:pdbx_sifts_xref_db_segments entity_id="2" asym_id="D" xref_db="InterPro" xref_db_acc="IPR021109" segment_id="1" instance_id="6">
-      <VRPTx:seq_id_start>3</VRPTx:seq_id_start>
-      <VRPTx:seq_id_end>86</VRPTx:seq_id_end>
-    </VRPTx:pdbx_sifts_xref_db_segments>
-    <VRPTx:pdbx_sifts_xref_db_segments entity_id="2" asym_id="D" xref_db="CATH" xref_db_acc="2.40.70.10" segment_id="1" instance_id="7">
-      <VRPTx:seq_id_start>1</VRPTx:seq_id_start>
-      <VRPTx:seq_id_end>87</VRPTx:seq_id_end>
-    </VRPTx:pdbx_sifts_xref_db_segments>
-    <VRPTx:pdbx_sifts_xref_db_segments entity_id="2" asym_id="D" xref_db="SCOP" xref_db_acc="26837" segment_id="1" instance_id="8">
-      <VRPTx:seq_id_start>1</VRPTx:seq_id_start>
-      <VRPTx:seq_id_end>87</VRPTx:seq_id_end>
-    </VRPTx:pdbx_sifts_xref_db_segments>
+    <VRPTx:pdbx_sifts_xref_db_segments entity_id="1" asym_id="A" xref_db="GO" xref_db_acc="GO:0004190" segment_id="1" instance_id="1" seq_id_start="1" seq_id_end="239"/>
+    <VRPTx:pdbx_sifts_xref_db_segments entity_id="1" asym_id="A" xref_db="GO" xref_db_acc="GO:0004190" segment_id="1" instance_id="2" seq_id_start="1" seq_id_end="239"/>
+    <VRPTx:pdbx_sifts_xref_db_segments entity_id="1" asym_id="A" xref_db="GO" xref_db_acc="GO:0006508" segment_id="1" instance_id="3" seq_id_start="1" seq_id_end="239"/>
+    <VRPTx:pdbx_sifts_xref_db_segments entity_id="1" asym_id="A" xref_db="GO" xref_db_acc="GO:0006508" segment_id="1" instance_id="4" seq_id_start="1" seq_id_end="239"/>
+    <VRPTx:pdbx_sifts_xref_db_segments entity_id="1" asym_id="A" xref_db="InterPro" xref_db_acc="IPR021109" segment_id="1" instance_id="5" seq_id_start="1" seq_id_end="169"/>
+    <VRPTx:pdbx_sifts_xref_db_segments entity_id="1" asym_id="A" xref_db="InterPro" xref_db_acc="IPR021109" segment_id="1" instance_id="6" seq_id_start="170" seq_id_end="238"/>
+    <VRPTx:pdbx_sifts_xref_db_segments entity_id="1" asym_id="A" xref_db="InterPro" xref_db_acc="IPR033121" segment_id="1" instance_id="7" seq_id_start="14" seq_id_end="238"/>
+    <VRPTx:pdbx_sifts_xref_db_segments entity_id="1" asym_id="A" xref_db="InterPro" xref_db_acc="IPR001461" segment_id="1" instance_id="8" seq_id_start="21" seq_id_end="41"/>
+    <VRPTx:pdbx_sifts_xref_db_segments entity_id="1" asym_id="A" xref_db="InterPro" xref_db_acc="IPR001461" segment_id="1" instance_id="9" seq_id_start="9" seq_id_end="237"/>
+    <VRPTx:pdbx_sifts_xref_db_segments entity_id="1" asym_id="A" xref_db="InterPro" xref_db_acc="IPR021109" segment_id="1" instance_id="10" seq_id_start="3" seq_id_end="238"/>
+    <VRPTx:pdbx_sifts_xref_db_segments entity_id="1" asym_id="A" xref_db="InterPro" xref_db_acc="IPR001461" segment_id="1" instance_id="11" seq_id_start="213" seq_id_end="224"/>
+    <VRPTx:pdbx_sifts_xref_db_segments entity_id="1" asym_id="A" xref_db="InterPro" xref_db_acc="IPR001461" segment_id="1" instance_id="12" seq_id_start="163" seq_id_end="176"/>
+    <VRPTx:pdbx_sifts_xref_db_segments entity_id="1" asym_id="A" xref_db="CATH" xref_db_acc="2.40.70.10" segment_id="1" instance_id="13" seq_id_start="1" seq_id_end="239"/>
+    <VRPTx:pdbx_sifts_xref_db_segments entity_id="1" asym_id="A" xref_db="SCOP" xref_db_acc="26836" segment_id="1" instance_id="14" seq_id_start="1" seq_id_end="239"/>
+    <VRPTx:pdbx_sifts_xref_db_segments entity_id="2" asym_id="B" xref_db="GO" xref_db_acc="GO:0004190" segment_id="1" instance_id="1" seq_id_start="1" seq_id_end="87"/>
+    <VRPTx:pdbx_sifts_xref_db_segments entity_id="2" asym_id="B" xref_db="GO" xref_db_acc="GO:0006508" segment_id="1" instance_id="2" seq_id_start="1" seq_id_end="87"/>
+    <VRPTx:pdbx_sifts_xref_db_segments entity_id="2" asym_id="B" xref_db="InterPro" xref_db_acc="IPR033121" segment_id="1" instance_id="3" seq_id_start="2" seq_id_end="86"/>
+    <VRPTx:pdbx_sifts_xref_db_segments entity_id="2" asym_id="B" xref_db="InterPro" xref_db_acc="IPR021109" segment_id="1" instance_id="4" seq_id_start="3" seq_id_end="86"/>
+    <VRPTx:pdbx_sifts_xref_db_segments entity_id="2" asym_id="B" xref_db="InterPro" xref_db_acc="IPR021109" segment_id="1" instance_id="5" seq_id_start="2" seq_id_end="87"/>
+    <VRPTx:pdbx_sifts_xref_db_segments entity_id="2" asym_id="B" xref_db="InterPro" xref_db_acc="IPR001461" segment_id="1" instance_id="6" seq_id_start="2" seq_id_end="84"/>
+    <VRPTx:pdbx_sifts_xref_db_segments entity_id="2" asym_id="B" xref_db="CATH" xref_db_acc="2.40.70.10" segment_id="1" instance_id="7" seq_id_start="1" seq_id_end="87"/>
+    <VRPTx:pdbx_sifts_xref_db_segments entity_id="2" asym_id="B" xref_db="SCOP" xref_db_acc="26836" segment_id="1" instance_id="8" seq_id_start="1" seq_id_end="87"/>
+    <VRPTx:pdbx_sifts_xref_db_segments entity_id="1" asym_id="C" xref_db="GO" xref_db_acc="GO:0004190" segment_id="1" instance_id="1" seq_id_start="1" seq_id_end="239"/>
+    <VRPTx:pdbx_sifts_xref_db_segments entity_id="1" asym_id="C" xref_db="GO" xref_db_acc="GO:0004190" segment_id="1" instance_id="2" seq_id_start="1" seq_id_end="239"/>
+    <VRPTx:pdbx_sifts_xref_db_segments entity_id="1" asym_id="C" xref_db="GO" xref_db_acc="GO:0006508" segment_id="1" instance_id="3" seq_id_start="1" seq_id_end="239"/>
+    <VRPTx:pdbx_sifts_xref_db_segments entity_id="1" asym_id="C" xref_db="GO" xref_db_acc="GO:0006508" segment_id="1" instance_id="4" seq_id_start="1" seq_id_end="239"/>
+    <VRPTx:pdbx_sifts_xref_db_segments entity_id="1" asym_id="C" xref_db="InterPro" xref_db_acc="IPR021109" segment_id="1" instance_id="5" seq_id_start="170" seq_id_end="238"/>
+    <VRPTx:pdbx_sifts_xref_db_segments entity_id="1" asym_id="C" xref_db="InterPro" xref_db_acc="IPR001461" segment_id="1" instance_id="6" seq_id_start="213" seq_id_end="224"/>
+    <VRPTx:pdbx_sifts_xref_db_segments entity_id="1" asym_id="C" xref_db="InterPro" xref_db_acc="IPR021109" segment_id="1" instance_id="7" seq_id_start="1" seq_id_end="169"/>
+    <VRPTx:pdbx_sifts_xref_db_segments entity_id="1" asym_id="C" xref_db="InterPro" xref_db_acc="IPR001461" segment_id="1" instance_id="8" seq_id_start="21" seq_id_end="41"/>
+    <VRPTx:pdbx_sifts_xref_db_segments entity_id="1" asym_id="C" xref_db="InterPro" xref_db_acc="IPR001461" segment_id="1" instance_id="9" seq_id_start="163" seq_id_end="176"/>
+    <VRPTx:pdbx_sifts_xref_db_segments entity_id="1" asym_id="C" xref_db="InterPro" xref_db_acc="IPR021109" segment_id="1" instance_id="10" seq_id_start="3" seq_id_end="238"/>
+    <VRPTx:pdbx_sifts_xref_db_segments entity_id="1" asym_id="C" xref_db="InterPro" xref_db_acc="IPR033121" segment_id="1" instance_id="11" seq_id_start="14" seq_id_end="238"/>
+    <VRPTx:pdbx_sifts_xref_db_segments entity_id="1" asym_id="C" xref_db="InterPro" xref_db_acc="IPR001461" segment_id="1" instance_id="12" seq_id_start="9" seq_id_end="237"/>
+    <VRPTx:pdbx_sifts_xref_db_segments entity_id="1" asym_id="C" xref_db="CATH" xref_db_acc="2.40.70.10" segment_id="1" instance_id="13" seq_id_start="2" seq_id_end="239"/>
+    <VRPTx:pdbx_sifts_xref_db_segments entity_id="1" asym_id="C" xref_db="SCOP" xref_db_acc="26837" segment_id="1" instance_id="14" seq_id_start="1" seq_id_end="239"/>
+    <VRPTx:pdbx_sifts_xref_db_segments entity_id="2" asym_id="D" xref_db="GO" xref_db_acc="GO:0004190" segment_id="1" instance_id="1" seq_id_start="1" seq_id_end="87"/>
+    <VRPTx:pdbx_sifts_xref_db_segments entity_id="2" asym_id="D" xref_db="GO" xref_db_acc="GO:0006508" segment_id="1" instance_id="2" seq_id_start="1" seq_id_end="87"/>
+    <VRPTx:pdbx_sifts_xref_db_segments entity_id="2" asym_id="D" xref_db="InterPro" xref_db_acc="IPR033121" segment_id="1" instance_id="3" seq_id_start="2" seq_id_end="86"/>
+    <VRPTx:pdbx_sifts_xref_db_segments entity_id="2" asym_id="D" xref_db="InterPro" xref_db_acc="IPR021109" segment_id="1" instance_id="4" seq_id_start="2" seq_id_end="87"/>
+    <VRPTx:pdbx_sifts_xref_db_segments entity_id="2" asym_id="D" xref_db="InterPro" xref_db_acc="IPR001461" segment_id="1" instance_id="5" seq_id_start="2" seq_id_end="84"/>
+    <VRPTx:pdbx_sifts_xref_db_segments entity_id="2" asym_id="D" xref_db="InterPro" xref_db_acc="IPR021109" segment_id="1" instance_id="6" seq_id_start="3" seq_id_end="86"/>
+    <VRPTx:pdbx_sifts_xref_db_segments entity_id="2" asym_id="D" xref_db="CATH" xref_db_acc="2.40.70.10" segment_id="1" instance_id="7" seq_id_start="1" seq_id_end="87"/>
+    <VRPTx:pdbx_sifts_xref_db_segments entity_id="2" asym_id="D" xref_db="SCOP" xref_db_acc="26837" segment_id="1" instance_id="8" seq_id_start="1" seq_id_end="87"/>
   </VRPTx:pdbx_sifts_xref_db_segmentsCategory>
   <VRPTx:pdbx_percentile_listCategory>
     <VRPTx:pdbx_percentile_list entry_id="1B5F">

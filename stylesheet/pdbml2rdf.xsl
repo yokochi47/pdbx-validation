@@ -7662,12 +7662,12 @@
 
   <xsl:template match="PDBx:datablock/PDBx:pdbx_sifts_xref_db_segmentsCategory/PDBx:pdbx_sifts_xref_db_segments">
       <PDBo:has_pdbx_sifts_xref_db_segments>
-      <PDBo:pdbx_sifts_xref_db_segments rdf:about="{$base}/pdbx_sifts_xref_db_segments/{translate(@asym_id,' ^','_')},{translate(@entity_id,' ^','_')},{translate(@instance_id,' ^','_')},{translate(@segment_id,' ^','_')},{translate(@xref_db,' ^','_')},{translate(@xref_db_acc,' ^','_')}">
+      <PDBo:pdbx_sifts_xref_db_segments rdf:about="{$base}/pdbx_sifts_xref_db_segments/{translate(@asym_id,' ^','_')},{translate(@entity_id,' ^','_')},{translate(@instance_id,' ^','_')},{translate(@segment_id,' ^','_')},{translate(@seq_id_end,' ^','_')},{translate(@seq_id_start,' ^','_')},{translate(@xref_db,' ^','_')},{translate(@xref_db_acc,' ^','_')}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
       <xsl:if test="@asym_id!=''">
         <PDBo:reference_to_struct_asym>
 	  <rdf:Description  rdf:about="{$base}/struct_asym/{translate(@asym_id,' ^','_')}">
-	    <PDBo:referenced_by_pdbx_sifts_xref_db_segments rdf:resource="{$base}/pdbx_sifts_xref_db_segments/{translate(@asym_id,' ^','_')},{translate(@entity_id,' ^','_')},{translate(@instance_id,' ^','_')},{translate(@segment_id,' ^','_')},{translate(@xref_db,' ^','_')},{translate(@xref_db_acc,' ^','_')}"/>
+	    <PDBo:referenced_by_pdbx_sifts_xref_db_segments rdf:resource="{$base}/pdbx_sifts_xref_db_segments/{translate(@asym_id,' ^','_')},{translate(@entity_id,' ^','_')},{translate(@instance_id,' ^','_')},{translate(@segment_id,' ^','_')},{translate(@seq_id_end,' ^','_')},{translate(@seq_id_start,' ^','_')},{translate(@xref_db,' ^','_')},{translate(@xref_db_acc,' ^','_')}"/>
 	  </rdf:Description>
         </PDBo:reference_to_struct_asym>
         <!-- struct_asymKeyref_1_0_5_0 -->
