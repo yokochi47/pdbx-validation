@@ -210,6 +210,7 @@ File path | Document
 - **Mar 6, 2023**: Release v4.4.16
 	- Update wwPDB Validation Information Dictionary to 4.366.
 	- Support for wwpdb_validation_v6.02.xsd (/wwPDB-validation-information/Entry/@bmrb_id).
+	- Improve performace of SIFTS XML file validation script.
 
 - **Mar 6, 2023**: Release v4.4.15
 	- Update wwPDB Validation Information Dictionary to 4.365.
