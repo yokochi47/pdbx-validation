@@ -72,7 +72,7 @@ do
 
    if [ -s $WORK_DIR/$mmcif_vrpt_file ] ; then
     gzip_in_div_dir $WORK_DIR/$mmcif_vrpt_file $div_dir
-    if [ $proc_id_mod = 0 ] ; then
+    if [ $proc_id_mod -eq 0 ] ; then
      echo -e -n "\rDone "$((proc_id + 1)) of $total ...
     fi
    fi

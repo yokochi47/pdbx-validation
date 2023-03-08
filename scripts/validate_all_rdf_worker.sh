@@ -66,7 +66,7 @@ do
 
   if [ $chk_sum_file -nt $rdf_file ] ; then
 
-   if [ $proc_id_mod = 0 ] ; then
+   if [ $proc_id_mod -eq 0 ] ; then
     echo -e -n "\rDone "$((proc_id + 1)) of $total ...
    fi
 
@@ -88,7 +88,7 @@ do
      touch $chk_sum_file
     fi
 
-    if [ $proc_id_mod = 0 ] ; then
+    if [ $proc_id_mod -eq 0 ] ; then
      echo -e -n "\rDone "$((proc_id + 1)) of $total ...
     fi
 
@@ -105,7 +105,7 @@ do
 
   rapper -q -c $rdf_file 2> $err_file && ( rm -f $err_file ; echo $new_chk_sum > $chk_sum_file ) || ( [ $DELETE = "true" ] && rm -f $rdf_file ; cat $err_file )
 
-  if [ $proc_id_mod = 0 ] ; then
+  if [ $proc_id_mod -eq 0 ] ; then
    echo -e -n "\rDone "$((proc_id + 1)) of $total ...
   fi
 

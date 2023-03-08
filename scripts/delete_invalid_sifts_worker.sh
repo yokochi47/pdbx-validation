@@ -64,7 +64,7 @@ do
 
   if [ $chk_sum_file -nt $sifts_xml_file ] ; then
 
-   if [ $proc_id_mod = 0 ] ; then
+   if [ $proc_id_mod -eq 0 ] ; then
     echo -e -n "\rDone "$((proc_id + 1)) of $total ...
    fi
 
@@ -86,7 +86,7 @@ do
      touch $chk_sum_file
     fi
 
-    if [ $proc_id_mod = 0 ] ; then
+    if [ $proc_id_mod -eq 0 ] ; then
      echo -e -n "\rDone "$((proc_id + 1)) of $total ...
     fi
 
@@ -107,7 +107,7 @@ do
    echo $new_chk_sum > $chk_sum_file
   fi
 
-  if [ $proc_id_mod = 0 ] ; then
+  if [ $proc_id_mod -eq 0 ] ; then
    echo -e -n "\rDone "$((proc_id + 1)) of $total ...
   fi
 

@@ -97,7 +97,7 @@ do
     if [ $? = 0 ] && [ -s $pdbml_vrpt_file ] ; then
      rm -f $err_file
      gzip_in_div_dir $pdbml_vrpt_file $div_dir
-     if [ $proc_id_mod = 0 ] ; then
+     if [ $proc_id_mod -eq 0 ] ; then
       echo -e -n "\rDone "$((proc_id + 1)) of $total ...
      fi
     else
@@ -106,7 +106,7 @@ do
 
    elif [ -s $pdbml_vrpt_file ] ; then
     gzip_in_div_dir $pdbml_vrpt_file $div_dir
-    if [ $proc_id_mod = 0 ] ; then
+    if [ $proc_id_mod -eq 0 ] ; then
      echo -e -n "\rDone "$((proc_id + 1)) of $total ...
     fi
    fi

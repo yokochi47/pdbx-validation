@@ -55,7 +55,7 @@ if [ ! -e url_mirror ] ; then
 
     server_alive=`curl -I $url -m 5 2> /dev/null`
 
-    if [ $? == 0 ] ; then
+    if [ $? = 0 ] ; then
 
      PDB_MIRROR=$url
      delay=$time

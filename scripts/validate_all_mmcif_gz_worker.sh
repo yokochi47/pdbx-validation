@@ -72,7 +72,7 @@ do
 
   if [ $chk_sum_file -nt $cif_gz_file ] ; then
 
-   if [ $proc_id_mod = 0 ] ; then
+   if [ $proc_id_mod -eq 0 ] ; then
     echo -e -n "\rDone "$((proc_id + 1)) of $total ...
    fi
 
@@ -96,7 +96,7 @@ do
      touch $chk_sum_file
     fi
 
-    if [ $proc_id_mod = 0 ] ; then
+    if [ $proc_id_mod -eq 0 ] ; then
      echo -e -n "\rDone "$((proc_id + 1)) of $total ...
     fi
 
@@ -120,7 +120,7 @@ do
   ( cd $cif_dir ; CifCheck -f $cif_file -dictSdb $dict_sdb > /dev/null ; [ -e $diag_log ] && [ `grep -v 'has invalid value "?" in row' $diag_log | sed -e /^$/d | wc -l 2> /dev/null` = 0 ] && rm -f $diag_log )
   ( cd $cif_dir ; [ ! -e $diag_log ] && [ ! -e $parser_log ] && ( rm -f $cif_file ; echo $new_chk_sum > $chk_sum_file ) ; [ -e $parser_log ] && ( [ $DELETE = "true" ] && rm -f $cif_file.gz $cif_file ; cat $diag_log ) )
 
-  if [ $proc_id_mod = 0 ] ; then
+  if [ $proc_id_mod -eq 0 ] ; then
    echo -e -n "\rDone "$((proc_id + 1)) of $total ...
   fi
 

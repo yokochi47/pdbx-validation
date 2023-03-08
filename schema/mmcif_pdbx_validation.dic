@@ -1,10 +1,10 @@
 ###########################################################################
 #
 # File:  mmcif_pdbx_validation-v4.dic
-# Date:  Mon Mar  6 16:21:54 JST 2023
+# Date:  Wed Mar  8 11:07:43 JST 2023
 #
 # Created from:
-#        mmcif_pdbx_v50.dic   - PDB Exchange Data Dictionary (V5.366)
+#        mmcif_pdbx_v50.dic   - PDB Exchange Data Dictionary (V5.367)
 #        http://wwpdb.org/validation/schema/wwpdb_validation_v6.02.xsd
 #         - a XML schema for wwPDB validation reports, v6.02, rev. 2023-02-06
 #
@@ -31,7 +31,7 @@ data_mmcif_pdbx_validation.dic
 
     _dictionary.title           mmcif_pdbx_validation.dic
     _dictionary.datablock_id    mmcif_pdbx_validation.dic
-    _dictionary.version         4.366
+    _dictionary.version         4.367
 #
     loop_
     _dictionary_history.version
@@ -1106,6 +1106,11 @@ data_mmcif_pdbx_validation.dic
 >     + Change _pdbx_sifts_xref_db.res_type enumeration to examples # merged
 >     + Add pdbx_sifts_xref_db_segments.seq_id_start and
 >       pdbx_sifts_xref_db_segments.seq_id_start as keys for category. # merged
+;
+  4.367   2023-03-07
+;
+>     + Extend _pdbx_audit_support.funding_organization enumeration # not mapped
+>     + Add 'Ewald Sphere Correction' to _em_software.name enumeration # merged
 ;
 
 
@@ -54860,6 +54865,7 @@ save__em_software.name
         '_em_software.name'  eTasED                             .
         '_em_software.name'  ETHAN                              .
         '_em_software.name'  eTomo                              .
+        '_em_software.name'  'Ewald Sphere Correction'          .
         '_em_software.name'  'FEI tomography'                   .
         '_em_software.name'  FindEM                             .
         '_em_software.name'  FitCTF2                            .
