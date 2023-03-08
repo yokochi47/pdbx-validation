@@ -85,20 +85,18 @@ do
     if [ $? = 0 ] && [ -s $pdbml_ext_file ] ; then
      rm -f $err_file
      gzip $pdbml_ext_file
-     if [ $proc_id_mod -eq 0 ] ; then
-      echo -e -n "\rDone "$((proc_id + 1)) of $total ...
-     fi
     else
      cat $err_file
     fi
 
    elif [ -s $pdbml_ext_file ] ; then
     gzip $pdbml_ext_file
-    if [ $proc_id_mod -eq 0 ] ; then
-     echo -e -n "\rDone "$((proc_id + 1)) of $total ...
-    fi
    fi
 
+  fi
+
+  if [ $proc_id_mod -eq 0 ] ; then
+   echo -e -n "\rDone "$((proc_id + 1)) of $total ...
   fi
 
  fi

@@ -112,7 +112,7 @@ if [ $ext_pdbml_exit_code = 0 ] || [ $ext_info_exit_code = 0 ] || [ $xml_total -
  else
 
   ./scripts/merge_pdbml_info.sh
-  
+
   ls $XML_VALID/*.xml 2> /dev/null
 
   if [ $? = 0 ] ; then

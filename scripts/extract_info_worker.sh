@@ -96,20 +96,18 @@ do
     if [ $? = 0 ] && [ -s $info_alt_file ] ; then
      rm -f $err_file
      gzip_in_div_dir $info_alt_file $div_dir
-     if [ $proc_id_mod -eq 0 ] ; then
-      echo -e -n "\rDone "$((proc_id + 1)) of $total ...
-     fi
     else
      cat $err_file
     fi
 
    elif [ -s $info_alt_file ] ; then
     gzip_in_div_dir $info_alt_file $div_dir
-    if [ $proc_id_mod -eq 0 ] ; then
-     echo -e -n "\rDone "$((proc_id + 1)) of $total ...
-    fi
    fi
 
+  fi
+
+  if [ $proc_id_mod -eq 0 ] ; then
+   echo -e -n "\rDone "$((proc_id + 1)) of $total ...
   fi
 
  fi
