@@ -1,10 +1,10 @@
 ###########################################################################
 #
 # File:  mmcif_pdbx_validation-v4.dic
-# Date:  Wed Mar  8 11:07:43 JST 2023
+# Date:  Wed Mar 15 18:17:29 JST 2023
 #
 # Created from:
-#        mmcif_pdbx_v50.dic   - PDB Exchange Data Dictionary (V5.367)
+#        mmcif_pdbx_v50.dic   - PDB Exchange Data Dictionary (V5.368)
 #        http://wwpdb.org/validation/schema/wwpdb_validation_v6.02.xsd
 #         - a XML schema for wwPDB validation reports, v6.02, rev. 2023-02-06
 #
@@ -31,7 +31,7 @@ data_mmcif_pdbx_validation.dic
 
     _dictionary.title           mmcif_pdbx_validation.dic
     _dictionary.datablock_id    mmcif_pdbx_validation.dic
-    _dictionary.version         4.367
+    _dictionary.version         4.368
 #
     loop_
     _dictionary_history.version
@@ -1111,6 +1111,14 @@ data_mmcif_pdbx_validation.dic
 ;
 >     + Extend _pdbx_audit_support.funding_organization enumeration # not mapped
 >     + Add 'Ewald Sphere Correction' to _em_software.name enumeration # merged
+;
+  4.368   2023-03-15
+;
+>     + Move 'EWALD SPHERE CORRECTION' to _em_software.category enumeration # merged
+>     + Add _pdbx_depui_entry_details.validated_identifier_ORCID # not mapped
+>     + Add "Malvern Panalytical PIXcel 1D" to _diffrn_detector.type enumeration # merged
+>     + Add "TFS FALCON 4i (4k x 4x)" to _em_image_recording.film_or_detector_model # merged
+>     + Extend _pdbx_audit_support.funding_organization enumeration # not mapped
 ;
 
 
@@ -2355,6 +2363,7 @@ save__diffrn_detector.type
       "_diffrn_detector.type"  "MARMOSAIC 300 mm CCD"            CCD
       "_diffrn_detector.type"  "MARMOSAIC 325 mm CCD"            CCD
       "_diffrn_detector.type"  MARRESEARCH                       .
+      "_diffrn_detector.type"  "Malvern Panalytical PIXcel 1D"   PIXEL
       "_diffrn_detector.type"  MPCCD                             CCD
       "_diffrn_detector.type"  NICOLET                           .
       "_diffrn_detector.type"  "NICOLET P3"                      .
@@ -54406,6 +54415,7 @@ save__em_image_recording.film_or_detector_model
   '_em_image_recording.film_or_detector_model'    "GENERIC GATAN"   .
   '_em_image_recording.film_or_detector_model'    "PROSCAN TEM-PIV (2k x 2k)"   .
   '_em_image_recording.film_or_detector_model'    "SIA 15C (3k x 3k)"   .
+  '_em_image_recording.film_or_detector_model'    "TFS FALCON 4i (4k x 4x)"    .
   '_em_image_recording.film_or_detector_model'    "TVIPS TEMCAM-F816 (8k x 8k)"   .
   '_em_image_recording.film_or_detector_model'    "TVIPS TEMCAM-F415 (4k x 4k)"   .
   '_em_image_recording.film_or_detector_model'    "TVIPS TEMCAM-F416 (4k x 4k)"   .
@@ -54731,6 +54741,7 @@ save__em_software.category
               'LATTICE DISTORTION CORRECTION'
               'SYMMETRY DETERMINATION'
               'CRYSTALLOGRAPHY MERGING'
+              'EWALD SPHERE CORRECTION'
                OTHER
 save_
 
@@ -54865,7 +54876,6 @@ save__em_software.name
         '_em_software.name'  eTasED                             .
         '_em_software.name'  ETHAN                              .
         '_em_software.name'  eTomo                              .
-        '_em_software.name'  'Ewald Sphere Correction'          .
         '_em_software.name'  'FEI tomography'                   .
         '_em_software.name'  FindEM                             .
         '_em_software.name'  FitCTF2                            .

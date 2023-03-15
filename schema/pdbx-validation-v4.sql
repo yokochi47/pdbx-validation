@@ -44,8 +44,8 @@
 --
 
 --
--- VRPT PDBML Schema v4.367
--- VRPT PDBML Schema translated from wwPDB Validation Information Dictionary v4.367, which is backward compatible with the PDBx/mmCIF Dictionary v5.367: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
+-- VRPT PDBML Schema v4.368
+-- VRPT PDBML Schema translated from wwPDB Validation Information Dictionary v4.368, which is backward compatible with the PDBx/mmCIF Dictionary v5.368: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
 -- URI-reference = http://pdbml.pdb.org/schema/pdbx-validation-v4.xsd
 --
 
@@ -2494,7 +2494,7 @@ CREATE TABLE em_single_particle_entity (
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_em_software_category CASCADE;
-CREATE TYPE ENUM_em_software_category AS ENUM ( 'IMAGE ACQUISITION', 'PARTICLE SELECTION', 'VOLUME SELECTION', 'CLASSIFICATION', 'MASKING', 'RECONSTRUCTION', 'INITIAL EULER ASSIGNMENT', 'FINAL EULER ASSIGNMENT', 'CTF CORRECTION', 'LAYERLINE INDEXING', 'DIFFRACTION INDEXING', 'MODEL FITTING', 'MODEL REFINEMENT', 'SERIES ALIGNMENT', 'MOLECULAR REPLACEMENT', 'LATTICE DISTORTION CORRECTION', 'SYMMETRY DETERMINATION', 'CRYSTALLOGRAPHY MERGING', 'OTHER' );
+CREATE TYPE ENUM_em_software_category AS ENUM ( 'IMAGE ACQUISITION', 'PARTICLE SELECTION', 'VOLUME SELECTION', 'CLASSIFICATION', 'MASKING', 'RECONSTRUCTION', 'INITIAL EULER ASSIGNMENT', 'FINAL EULER ASSIGNMENT', 'CTF CORRECTION', 'LAYERLINE INDEXING', 'DIFFRACTION INDEXING', 'MODEL FITTING', 'MODEL REFINEMENT', 'SERIES ALIGNMENT', 'MOLECULAR REPLACEMENT', 'LATTICE DISTORTION CORRECTION', 'SYMMETRY DETERMINATION', 'CRYSTALLOGRAPHY MERGING', 'EWALD SPHERE CORRECTION', 'OTHER' );
 CREATE TABLE em_software (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	entry_id TEXT ,

@@ -246,7 +246,7 @@ for pdbml_file in $WORK_DIR/$PDBML/*.xml ; do
 
    rm -f $WORK_DIR/$MMCIF_VALID/$diag_log $WORK_DIR/$MMCIF_VALID/$parser_log
 
-   ( cd $WORK_DIR/$MMCIF_VALID ; CifCheck -f $mmcif_vrpt_file -dictSdb $pdbx_validation_sdb > /dev/null ; [ -e $diag_log ] && [ `grep -v 'has invalid value "?" in row' $diag_log | sed -e /^$/d | wc -l 2> /dev/null` = 0 ] && rm -f $diag_log )
+   ( cd $WORK_DIR/$MMCIF_VALID ; CifCheck -f $mmcif_vrpt_file -dictSdb $pdbx_validation_sdb > /dev/null ; [ -e $diag_log ] && [ `LC_ALL=C grep -F -v 'has invalid value "?" in row' $diag_log | sed -e /^$/d | wc -l 2> /dev/null` = 0 ] && rm -f $diag_log )
    ( cd $WORK_DIR/$MMCIF_VALID ; [ ! -e $diag_log ] && [ ! -e $parser_log ] && echo " validated: "$WORK_DIR/$MMCIF_VALID/$mmcif_vrpt_file || exit 1 )
 
   fi
@@ -270,7 +270,7 @@ for pdbml_file in $WORK_DIR/$PDBML/*.xml ; do
 
    rm -f $WORK_DIR/$MMCIF_VALID_ALT/$diag_log $WORK_DIR/$MMCIF_VALID_ALT/$parser_log
 
-   ( cd $WORK_DIR/$MMCIF_VALID_ALT ; CifCheck -f $mmcif_vrpt_alt_file -dictSdb $pdbx_validation_sdb > /dev/null ; [ -e $diag_log ] && [ `grep -v 'has invalid value "?" in row' $diag_log | sed -e /^$/d | wc -l 2> /dev/null` = 0 ] && rm -f $diag_log )
+   ( cd $WORK_DIR/$MMCIF_VALID_ALT ; CifCheck -f $mmcif_vrpt_alt_file -dictSdb $pdbx_validation_sdb > /dev/null ; [ -e $diag_log ] && [ `LC_ALL=C grep -F -v 'has invalid value "?" in row' $diag_log | sed -e /^$/d | wc -l 2> /dev/null` = 0 ] && rm -f $diag_log )
    ( cd $WORK_DIR/$MMCIF_VALID_ALT ; [ ! -e $diag_log ] && [ ! -e $parser_log ] && echo " validated: "$WORK_DIR/$MMCIF_VALID_ALT/$mmcif_vrpt_alt_file || exit 1 )
 
   fi
