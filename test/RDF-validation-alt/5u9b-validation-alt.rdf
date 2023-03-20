@@ -6,13 +6,13 @@
     <skos:altLabel>5u9b-validation</skos:altLabel>
     <dc:title>wwPDB validation report of PDB entry 5U9B</dc:title>
     <VRPTo:link_to_pdb_src rdf:resource="http://rdf.wwpdb.org/pdb/5U9B"/>
-    <VRPTo:link_to_pdbml rdf:resource="ftp://ftp.wwpdb.org/pub/pdb/data/structures/all/XML/5u9b.xml.gz"/>
-    <VRPTo:link_to_pdbml_noatom rdf:resource="ftp://ftp.wwpdb.org/pub/pdb/data/structures/all/XML-noatom/5u9b-noatom.xml.gz"/>
-    <VRPTo:link_to_pdbml_extatom rdf:resource="ftp://ftp.wwpdb.org/pub/pdb/data/structures/all/XML-extatom/5u9b-extatom.xml.gz"/>
-    <VRPTo:link_to_xml_vrpt rdf:resource="ftp://ftp.wwpdb.org/pub/pdb/validation_reports/u9/5u9b/5u9b_validation.xml.gz"/>
+    <VRPTo:link_to_pdbml rdf:resource="http://files.wwpdb.org/pub/pdb/data/structures/all/XML/5u9b.xml.gz"/>
+    <VRPTo:link_to_pdbml_noatom rdf:resource="http://files.wwpdb.org/pub/pdb/data/structures/all/XML-noatom/5u9b-noatom.xml.gz"/>
+    <VRPTo:link_to_pdbml_extatom rdf:resource="http://files.wwpdb.org/pub/pdb/data/structures/all/XML-extatom/5u9b-extatom.xml.gz"/>
+    <VRPTo:link_to_xml_vrpt rdf:resource="http://files.wwpdb.org/pub/pdb/validation_reports/u9/5u9b/5u9b_validation.xml.gz"/>
     <owl:sameAs rdf:resource="http://rdf.wwpdb.org/vrpt/5u9b"/>
     <rdfs:seeAlso rdf:resource="http://pdbj.org/pdb/5U9B"/>
-    <rdfs:seeAlso rdf:resource="http://www.rcsb.org/pdb/explore.do?structureId=5U9B"/>
+    <rdfs:seeAlso rdf:resource="http://www.rcsb.org/pdb/structure/5U9B"/>
     <rdfs:seeAlso rdf:resource="http://www.ebi.ac.uk/pdbe/entry/pdb/5U9B"/>
     <VRPTo:datablockName>5U9B-validation-alt</VRPTo:datablockName>
     <VRPTo:has_entryCategory>

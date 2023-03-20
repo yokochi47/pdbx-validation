@@ -5,13 +5,13 @@
     <dcterms:identifier>7LQS</dcterms:identifier>
     <skos:altLabel>7lqs</skos:altLabel>
     <dc:title>Structure of truncated conotoxin CIC</dc:title>
-    <PDBo:link_to_pdbml rdf:resource="ftp://ftp.wwpdb.org/pub/pdb/data/structures/all/XML/7lqs.xml.gz"/>
-    <PDBo:link_to_pdbml_noatom rdf:resource="ftp://ftp.wwpdb.org/pub/pdb/data/structures/all/XML-noatom/7lqs-noatom.xml.gz"/>
-    <PDBo:link_to_pdbml_extatom rdf:resource="ftp://ftp.wwpdb.org/pub/pdb/data/structures/all/XML-extatom/7lqs-extatom.xml.gz"/>
+    <PDBo:link_to_pdbml rdf:resource="http://files.wwpdb.org/pub/pdb/data/structures/all/XML/7lqs.xml.gz"/>
+    <PDBo:link_to_pdbml_noatom rdf:resource="http://files.wwpdb.org/pub/pdb/data/structures/all/XML-noatom/7lqs-noatom.xml.gz"/>
+    <PDBo:link_to_pdbml_extatom rdf:resource="http://files.wwpdb.org/pub/pdb/data/structures/all/XML-extatom/7lqs-extatom.xml.gz"/>
     <PDBo:link_to_vrpt rdf:resource="http://rdf.wwpdb.org/vrpt/7LQS"/>
     <owl:sameAs rdf:resource="http://rdf.wwpdb.org/pdb/7lqs"/>
     <rdfs:seeAlso rdf:resource="http://pdbj.org/pdb/7LQS"/>
-    <rdfs:seeAlso rdf:resource="http://www.rcsb.org/pdb/explore.do?structureId=7LQS"/>
+    <rdfs:seeAlso rdf:resource="http://www.rcsb.org/pdb/structure/7LQS"/>
     <rdfs:seeAlso rdf:resource="http://www.ebi.ac.uk/pdbe/entry/pdb/7LQS"/>
     <PDBo:datablockName>7LQS-noatom</PDBo:datablockName>
     <PDBo:has_atom_sitesCategory>

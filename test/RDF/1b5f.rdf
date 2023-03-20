@@ -5,13 +5,13 @@
     <dcterms:identifier>1B5F</dcterms:identifier>
     <skos:altLabel>1b5f</skos:altLabel>
     <dc:title>NATIVE CARDOSIN A FROM CYNARA CARDUNCULUS L.</dc:title>
-    <PDBo:link_to_pdbml rdf:resource="ftp://ftp.wwpdb.org/pub/pdb/data/structures/all/XML/1b5f.xml.gz"/>
-    <PDBo:link_to_pdbml_noatom rdf:resource="ftp://ftp.wwpdb.org/pub/pdb/data/structures/all/XML-noatom/1b5f-noatom.xml.gz"/>
-    <PDBo:link_to_pdbml_extatom rdf:resource="ftp://ftp.wwpdb.org/pub/pdb/data/structures/all/XML-extatom/1b5f-extatom.xml.gz"/>
+    <PDBo:link_to_pdbml rdf:resource="http://files.wwpdb.org/pub/pdb/data/structures/all/XML/1b5f.xml.gz"/>
+    <PDBo:link_to_pdbml_noatom rdf:resource="http://files.wwpdb.org/pub/pdb/data/structures/all/XML-noatom/1b5f-noatom.xml.gz"/>
+    <PDBo:link_to_pdbml_extatom rdf:resource="http://files.wwpdb.org/pub/pdb/data/structures/all/XML-extatom/1b5f-extatom.xml.gz"/>
     <PDBo:link_to_vrpt rdf:resource="http://rdf.wwpdb.org/vrpt/1B5F"/>
     <owl:sameAs rdf:resource="http://rdf.wwpdb.org/pdb/1b5f"/>
     <rdfs:seeAlso rdf:resource="http://pdbj.org/pdb/1B5F"/>
-    <rdfs:seeAlso rdf:resource="http://www.rcsb.org/pdb/explore.do?structureId=1B5F"/>
+    <rdfs:seeAlso rdf:resource="http://www.rcsb.org/pdb/structure/1B5F"/>
     <rdfs:seeAlso rdf:resource="http://www.ebi.ac.uk/pdbe/entry/pdb/1B5F"/>
     <PDBo:datablockName>1B5F-noatom</PDBo:datablockName>
     <PDBo:has_atom_sitesCategory>

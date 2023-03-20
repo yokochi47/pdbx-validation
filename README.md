@@ -207,8 +207,9 @@ File path | Document
 
 ## Release notes
 
-- **Mar 15, 2023**: Release v4.4.18
+- **Mar 20, 2023**: Release v4.4.18
 	- Update wwPDB Validation Information Dictionary to 4.368.
+	- Update URL template for source PDBML.
 
 - **Mar 7, 2023**: Release v4.4.17
 	- Update wwPDB Validation Information Dictionary to 4.367.

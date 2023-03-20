@@ -5,13 +5,13 @@
     <dcterms:identifier>2LOY</dcterms:identifier>
     <skos:altLabel>2loy</skos:altLabel>
     <dc:title>Refined Miminal Constraint Solution NMR Structure of Translationally-controlled tumor protein (TCTP) from Caenorhabditis elegans, Northeast Structural Genomics Consortium Target WR73</dc:title>
-    <PDBo:link_to_pdbml rdf:resource="ftp://ftp.wwpdb.org/pub/pdb/data/structures/all/XML/2loy.xml.gz"/>
-    <PDBo:link_to_pdbml_noatom rdf:resource="ftp://ftp.wwpdb.org/pub/pdb/data/structures/all/XML-noatom/2loy-noatom.xml.gz"/>
-    <PDBo:link_to_pdbml_extatom rdf:resource="ftp://ftp.wwpdb.org/pub/pdb/data/structures/all/XML-extatom/2loy-extatom.xml.gz"/>
+    <PDBo:link_to_pdbml rdf:resource="http://files.wwpdb.org/pub/pdb/data/structures/all/XML/2loy.xml.gz"/>
+    <PDBo:link_to_pdbml_noatom rdf:resource="http://files.wwpdb.org/pub/pdb/data/structures/all/XML-noatom/2loy-noatom.xml.gz"/>
+    <PDBo:link_to_pdbml_extatom rdf:resource="http://files.wwpdb.org/pub/pdb/data/structures/all/XML-extatom/2loy-extatom.xml.gz"/>
     <PDBo:link_to_vrpt rdf:resource="http://rdf.wwpdb.org/vrpt/2LOY"/>
     <owl:sameAs rdf:resource="http://rdf.wwpdb.org/pdb/2loy"/>
     <rdfs:seeAlso rdf:resource="http://pdbj.org/pdb/2LOY"/>
-    <rdfs:seeAlso rdf:resource="http://www.rcsb.org/pdb/explore.do?structureId=2LOY"/>
+    <rdfs:seeAlso rdf:resource="http://www.rcsb.org/pdb/structure/2LOY"/>
     <rdfs:seeAlso rdf:resource="http://www.ebi.ac.uk/pdbe/entry/pdb/2LOY"/>
     <PDBo:datablockName>2LOY-noatom</PDBo:datablockName>
     <PDBo:has_atom_sitesCategory>

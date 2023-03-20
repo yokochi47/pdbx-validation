@@ -5,13 +5,13 @@
     <dcterms:identifier>7AB7</dcterms:identifier>
     <skos:altLabel>7ab7</skos:altLabel>
     <dc:title>Structure of Chloroflexus aggregans flavin based fluorescent protein (CagFbFP) I52T Q148K variant</dc:title>
-    <PDBo:link_to_pdbml rdf:resource="ftp://ftp.wwpdb.org/pub/pdb/data/structures/all/XML/7ab7.xml.gz"/>
-    <PDBo:link_to_pdbml_noatom rdf:resource="ftp://ftp.wwpdb.org/pub/pdb/data/structures/all/XML-noatom/7ab7-noatom.xml.gz"/>
-    <PDBo:link_to_pdbml_extatom rdf:resource="ftp://ftp.wwpdb.org/pub/pdb/data/structures/all/XML-extatom/7ab7-extatom.xml.gz"/>
+    <PDBo:link_to_pdbml rdf:resource="http://files.wwpdb.org/pub/pdb/data/structures/all/XML/7ab7.xml.gz"/>
+    <PDBo:link_to_pdbml_noatom rdf:resource="http://files.wwpdb.org/pub/pdb/data/structures/all/XML-noatom/7ab7-noatom.xml.gz"/>
+    <PDBo:link_to_pdbml_extatom rdf:resource="http://files.wwpdb.org/pub/pdb/data/structures/all/XML-extatom/7ab7-extatom.xml.gz"/>
     <PDBo:link_to_vrpt rdf:resource="http://rdf.wwpdb.org/vrpt/7AB7"/>
     <owl:sameAs rdf:resource="http://rdf.wwpdb.org/pdb/7ab7"/>
     <rdfs:seeAlso rdf:resource="http://pdbj.org/pdb/7AB7"/>
-    <rdfs:seeAlso rdf:resource="http://www.rcsb.org/pdb/explore.do?structureId=7AB7"/>
+    <rdfs:seeAlso rdf:resource="http://www.rcsb.org/pdb/structure/7AB7"/>
     <rdfs:seeAlso rdf:resource="http://www.ebi.ac.uk/pdbe/entry/pdb/7AB7"/>
     <PDBo:datablockName>7AB7-noatom</PDBo:datablockName>
     <PDBo:has_atom_sitesCategory>

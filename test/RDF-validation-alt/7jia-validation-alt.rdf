@@ -6,13 +6,13 @@
     <skos:altLabel>7jia-validation</skos:altLabel>
     <dc:title>wwPDB validation report of PDB entry 7JIA</dc:title>
     <VRPTo:link_to_pdb_src rdf:resource="http://rdf.wwpdb.org/pdb/7JIA"/>
-    <VRPTo:link_to_pdbml rdf:resource="ftp://ftp.wwpdb.org/pub/pdb/data/structures/all/XML/7jia.xml.gz"/>
-    <VRPTo:link_to_pdbml_noatom rdf:resource="ftp://ftp.wwpdb.org/pub/pdb/data/structures/all/XML-noatom/7jia-noatom.xml.gz"/>
-    <VRPTo:link_to_pdbml_extatom rdf:resource="ftp://ftp.wwpdb.org/pub/pdb/data/structures/all/XML-extatom/7jia-extatom.xml.gz"/>
-    <VRPTo:link_to_xml_vrpt rdf:resource="ftp://ftp.wwpdb.org/pub/pdb/validation_reports/ji/7jia/7jia_validation.xml.gz"/>
+    <VRPTo:link_to_pdbml rdf:resource="http://files.wwpdb.org/pub/pdb/data/structures/all/XML/7jia.xml.gz"/>
+    <VRPTo:link_to_pdbml_noatom rdf:resource="http://files.wwpdb.org/pub/pdb/data/structures/all/XML-noatom/7jia-noatom.xml.gz"/>
+    <VRPTo:link_to_pdbml_extatom rdf:resource="http://files.wwpdb.org/pub/pdb/data/structures/all/XML-extatom/7jia-extatom.xml.gz"/>
+    <VRPTo:link_to_xml_vrpt rdf:resource="http://files.wwpdb.org/pub/pdb/validation_reports/ji/7jia/7jia_validation.xml.gz"/>
     <owl:sameAs rdf:resource="http://rdf.wwpdb.org/vrpt/7jia"/>
     <rdfs:seeAlso rdf:resource="http://pdbj.org/pdb/7JIA"/>
-    <rdfs:seeAlso rdf:resource="http://www.rcsb.org/pdb/explore.do?structureId=7JIA"/>
+    <rdfs:seeAlso rdf:resource="http://www.rcsb.org/pdb/structure/7JIA"/>
     <rdfs:seeAlso rdf:resource="http://www.ebi.ac.uk/pdbe/entry/pdb/7JIA"/>
     <VRPTo:datablockName>7JIA-validation-alt</VRPTo:datablockName>
     <VRPTo:has_entryCategory>

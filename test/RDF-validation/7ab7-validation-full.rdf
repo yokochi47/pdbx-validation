@@ -6,13 +6,13 @@
     <skos:altLabel>7ab7-validation</skos:altLabel>
     <dc:title>wwPDB validation report of PDB entry 7AB7</dc:title>
     <VRPTo:link_to_pdb_src rdf:resource="http://rdf.wwpdb.org/pdb/7AB7"/>
-    <VRPTo:link_to_pdbml rdf:resource="ftp://ftp.wwpdb.org/pub/pdb/data/structures/all/XML/7ab7.xml.gz"/>
-    <VRPTo:link_to_pdbml_noatom rdf:resource="ftp://ftp.wwpdb.org/pub/pdb/data/structures/all/XML-noatom/7ab7-noatom.xml.gz"/>
-    <VRPTo:link_to_pdbml_extatom rdf:resource="ftp://ftp.wwpdb.org/pub/pdb/data/structures/all/XML-extatom/7ab7-extatom.xml.gz"/>
-    <VRPTo:link_to_xml_vrpt rdf:resource="ftp://ftp.wwpdb.org/pub/pdb/validation_reports/ab/7ab7/7ab7_validation.xml.gz"/>
+    <VRPTo:link_to_pdbml rdf:resource="http://files.wwpdb.org/pub/pdb/data/structures/all/XML/7ab7.xml.gz"/>
+    <VRPTo:link_to_pdbml_noatom rdf:resource="http://files.wwpdb.org/pub/pdb/data/structures/all/XML-noatom/7ab7-noatom.xml.gz"/>
+    <VRPTo:link_to_pdbml_extatom rdf:resource="http://files.wwpdb.org/pub/pdb/data/structures/all/XML-extatom/7ab7-extatom.xml.gz"/>
+    <VRPTo:link_to_xml_vrpt rdf:resource="http://files.wwpdb.org/pub/pdb/validation_reports/ab/7ab7/7ab7_validation.xml.gz"/>
     <owl:sameAs rdf:resource="http://rdf.wwpdb.org/vrpt/7ab7"/>
     <rdfs:seeAlso rdf:resource="http://pdbj.org/pdb/7AB7"/>
-    <rdfs:seeAlso rdf:resource="http://www.rcsb.org/pdb/explore.do?structureId=7AB7"/>
+    <rdfs:seeAlso rdf:resource="http://www.rcsb.org/pdb/structure/7AB7"/>
     <rdfs:seeAlso rdf:resource="http://www.ebi.ac.uk/pdbe/entry/pdb/7AB7"/>
     <VRPTo:datablockName>7AB7-validation-full</VRPTo:datablockName>
     <VRPTo:has_diffrnCategory>

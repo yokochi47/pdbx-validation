@@ -27,12 +27,12 @@
   <xsl:variable name="chem_comp">http://rdf.wwpdb.org/cc/</xsl:variable>
   <xsl:variable name="prd">http://rdf.wwpdb.org/prd/</xsl:variable>
   <xsl:variable name="pdbj">http://pdbj.org/pdb/</xsl:variable>
-  <xsl:variable name="rcsb">http://www.rcsb.org/pdb/explore.do?structureId=</xsl:variable>
+  <xsl:variable name="rcsb">http://www.rcsb.org/pdb/structure/</xsl:variable>
   <xsl:variable name="pdbe">http://www.ebi.ac.uk/pdbe/entry/pdb/</xsl:variable>
-  <xsl:variable name="pdbml">ftp://ftp.wwpdb.org/pub/pdb/data/structures/all/XML/</xsl:variable>
-  <xsl:variable name="pdbml_noatom">ftp://ftp.wwpdb.org/pub/pdb/data/structures/all/XML-noatom/</xsl:variable>
-  <xsl:variable name="pdbml_extatom">ftp://ftp.wwpdb.org/pub/pdb/data/structures/all/XML-extatom/</xsl:variable>
-  <xsl:variable name="vrpt">ftp://ftp.wwpdb.org/pub/pdb/validation_reports/<xsl:value-of select="substring($pdb_id,2,2)"/>/<xsl:value-of select="$pdb_id"/>/</xsl:variable>
+  <xsl:variable name="pdbml">http://files.wwpdb.org/pub/pdb/data/structures/all/XML/</xsl:variable>
+  <xsl:variable name="pdbml_noatom">http://files.wwpdb.org/pub/pdb/data/structures/all/XML-noatom/</xsl:variable>
+  <xsl:variable name="pdbml_extatom">http://files.wwpdb.org/pub/pdb/data/structures/all/XML-extatom/</xsl:variable>
+  <xsl:variable name="vrpt">http://files.wwpdb.org/pub/pdb/validation_reports/<xsl:value-of select="substring($pdb_id,2,2)"/>/<xsl:value-of select="$pdb_id"/>/</xsl:variable>
   <xsl:variable name="bmrb">http://bmrbpub.pdbj.org/rdf/bmr</xsl:variable>
   <xsl:variable name="emdb">http://www.ebi.ac.uk/emdb/</xsl:variable>
   <xsl:variable name="sasbdb">http://www.sasbdb.org/data/</xsl:variable>

@@ -5,13 +5,13 @@
     <dcterms:identifier>7KLD</dcterms:identifier>
     <skos:altLabel>7kld</skos:altLabel>
     <dc:title>Crystal Structure of an Essential Ribosomal Processing Protease Prp from S. aureus in complex with a covalently linked product Peptide</dc:title>
-    <PDBo:link_to_pdbml rdf:resource="ftp://ftp.wwpdb.org/pub/pdb/data/structures/all/XML/7kld.xml.gz"/>
-    <PDBo:link_to_pdbml_noatom rdf:resource="ftp://ftp.wwpdb.org/pub/pdb/data/structures/all/XML-noatom/7kld-noatom.xml.gz"/>
-    <PDBo:link_to_pdbml_extatom rdf:resource="ftp://ftp.wwpdb.org/pub/pdb/data/structures/all/XML-extatom/7kld-extatom.xml.gz"/>
+    <PDBo:link_to_pdbml rdf:resource="http://files.wwpdb.org/pub/pdb/data/structures/all/XML/7kld.xml.gz"/>
+    <PDBo:link_to_pdbml_noatom rdf:resource="http://files.wwpdb.org/pub/pdb/data/structures/all/XML-noatom/7kld-noatom.xml.gz"/>
+    <PDBo:link_to_pdbml_extatom rdf:resource="http://files.wwpdb.org/pub/pdb/data/structures/all/XML-extatom/7kld-extatom.xml.gz"/>
     <PDBo:link_to_vrpt rdf:resource="http://rdf.wwpdb.org/vrpt/7KLD"/>
     <owl:sameAs rdf:resource="http://rdf.wwpdb.org/pdb/7kld"/>
     <rdfs:seeAlso rdf:resource="http://pdbj.org/pdb/7KLD"/>
-    <rdfs:seeAlso rdf:resource="http://www.rcsb.org/pdb/explore.do?structureId=7KLD"/>
+    <rdfs:seeAlso rdf:resource="http://www.rcsb.org/pdb/structure/7KLD"/>
     <rdfs:seeAlso rdf:resource="http://www.ebi.ac.uk/pdbe/entry/pdb/7KLD"/>
     <PDBo:datablockName>7KLD-noatom</PDBo:datablockName>
     <PDBo:has_atom_sitesCategory>
