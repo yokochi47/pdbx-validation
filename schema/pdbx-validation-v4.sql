@@ -44,8 +44,8 @@
 --
 
 --
--- VRPT PDBML Schema v4.368
--- VRPT PDBML Schema translated from wwPDB Validation Information Dictionary v4.368, which is backward compatible with the PDBx/mmCIF Dictionary v5.368: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
+-- VRPT PDBML Schema v4.369
+-- VRPT PDBML Schema translated from wwPDB Validation Information Dictionary v4.369, which is backward compatible with the PDBx/mmCIF Dictionary v5.369: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
 -- URI-reference = http://pdbml.pdb.org/schema/pdbx-validation-v4.xsd
 --
 
@@ -7911,7 +7911,8 @@ CREATE TABLE reflns (
 -- xsd:restriction/xsd:maxInclusive="100.0"
 -- xsd:restriction/xsd:minInclusive="0.0"
 	pdbx_percent_possible_spherical_anomalous DECIMAL CHECK ( pdbx_percent_possible_spherical_anomalous >= 0.0 AND pdbx_percent_possible_spherical_anomalous <= 100.0 ) ,
-	pdbx_redundancy DECIMAL ,
+-- xsd:restriction/xsd:minInclusive="0.0"
+	pdbx_redundancy DECIMAL CHECK ( pdbx_redundancy >= 0.0 ) ,
 -- xsd:restriction/xsd:minInclusive="1.0"
 	pdbx_redundancy_anomalous DECIMAL CHECK ( pdbx_redundancy_anomalous >= 1.0 ) ,
 -- omit an attribute having a fixed value: @units="angstroms"

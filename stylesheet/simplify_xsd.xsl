@@ -16,10 +16,10 @@
       targetNamespace="http://pdbml.pdb.org/schema/pdbx-v50.xsd"
       elementFormDefault="qualified" attributeFormDefault="unqualified">
       <xsd:annotation>
-        <xsd:appinfo>PDBML Schema v5.368</xsd:appinfo>
+        <xsd:appinfo>PDBML Schema v5.369</xsd:appinfo>
         <xsd:documentation source="http://pdbml.pdb.org/schema/pdbx-v50.xsd" xml:lang="en">
 
-PDBML Schema translated from the PDBx/mmCIF Dictionary v5.368:
+PDBML Schema translated from the PDBx/mmCIF Dictionary v5.369:
  http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
 
         </xsd:documentation>

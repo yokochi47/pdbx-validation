@@ -44,8 +44,8 @@
 --
 
 --
--- PDBML Schema v5.368
--- PDBML Schema translated from the PDBx/mmCIF Dictionary v5.368: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
+-- PDBML Schema v5.369
+-- PDBML Schema translated from the PDBx/mmCIF Dictionary v5.369: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
 -- URI-reference = http://pdbml.pdb.org/schema/pdbx-v50.xsd
 --
 
@@ -8370,13 +8370,13 @@ CREATE TYPE ENUM_pdbx_database_status_author_release_status_code AS ENUM ( 'REL'
 DROP TYPE IF EXISTS ENUM_pdbx_database_status_dep_release_code_coordinates CASCADE;
 CREATE TYPE ENUM_pdbx_database_status_dep_release_code_coordinates AS ENUM ( 'RELEASE NOW', 'HOLD FOR PUBLICATION', 'HOLD FOR 4 WEEKS', 'HOLD FOR 6 WEEKS', 'HOLD FOR 8 WEEKS', 'HOLD FOR 6 MONTHS', 'HOLD FOR 1 YEAR' );
 DROP TYPE IF EXISTS ENUM_pdbx_database_status_dep_release_code_nmr_constraints CASCADE;
-CREATE TYPE ENUM_pdbx_database_status_dep_release_code_nmr_constraints AS ENUM ( 'RELEASE NOW', 'HOLD FOR PUBLICATION', 'HOLD FOR 4 WEEKS', 'HOLD FOR 6 MONTHS', 'HOLD FOR 1 YEAR' );
+CREATE TYPE ENUM_pdbx_database_status_dep_release_code_nmr_constraints AS ENUM ( 'RELEASE NOW', 'HOLD FOR PUBLICATION', 'HOLD FOR 4 WEEKS', 'HOLD FOR 6 WEEKS', 'HOLD FOR 6 MONTHS', 'HOLD FOR 1 YEAR' );
 DROP TYPE IF EXISTS ENUM_pdbx_database_status_dep_release_code_nmr_data CASCADE;
 CREATE TYPE ENUM_pdbx_database_status_dep_release_code_nmr_data AS ENUM ( 'RELEASE NOW', 'HOLD FOR PUBLICATION', 'HOLD FOR 6 MONTHS', 'HOLD FOR 1 YEAR' );
 DROP TYPE IF EXISTS ENUM_pdbx_database_status_dep_release_code_sequence CASCADE;
 CREATE TYPE ENUM_pdbx_database_status_dep_release_code_sequence AS ENUM ( 'RELEASE NOW', 'HOLD FOR RELEASE' );
 DROP TYPE IF EXISTS ENUM_pdbx_database_status_dep_release_code_struct_fact CASCADE;
-CREATE TYPE ENUM_pdbx_database_status_dep_release_code_struct_fact AS ENUM ( 'RELEASE NOW', 'HOLD FOR PUBLICATION', 'HOLD FOR 4 WEEKS', 'HOLD FOR 8 WEEKS', 'HOLD FOR 6 MONTHS', 'HOLD FOR 1 YEAR', 'HOLD FOR 4 YEARS' );
+CREATE TYPE ENUM_pdbx_database_status_dep_release_code_struct_fact AS ENUM ( 'RELEASE NOW', 'HOLD FOR PUBLICATION', 'HOLD FOR 4 WEEKS', 'HOLD FOR 6 WEEKS', 'HOLD FOR 8 WEEKS', 'HOLD FOR 6 MONTHS', 'HOLD FOR 1 YEAR', 'HOLD FOR 4 YEARS' );
 DROP TYPE IF EXISTS ENUM_pdbx_database_status_deposit_site CASCADE;
 CREATE TYPE ENUM_pdbx_database_status_deposit_site AS ENUM ( 'NDB', 'RCSB', 'PDBE', 'PDBJ', 'BMRB', 'BNL', 'PDBC' );
 DROP TYPE IF EXISTS ENUM_pdbx_database_status_hold_for_publication CASCADE;
@@ -10846,7 +10846,7 @@ CREATE TYPE ENUM_pdbx_nmr_chem_shift_ref_ref_method AS ENUM ( 'internal', 'exter
 DROP TYPE IF EXISTS ENUM_pdbx_nmr_chem_shift_ref_ref_type CASCADE;
 CREATE TYPE ENUM_pdbx_nmr_chem_shift_ref_ref_type AS ENUM ( 'direct', 'indirect' );
 DROP TYPE IF EXISTS ENUM_pdbx_nmr_chem_shift_ref_mol_common_name CASCADE;
-CREATE TYPE ENUM_pdbx_nmr_chem_shift_ref_mol_common_name AS ENUM ( 'DSS', 'TSP', 'TMSP', 'water', 'DMSO', 'DMSO-d5', 'DMSO-d6', 'methanol', 'TMS', 'methionine', 'acetonitrile', 'alanine', 'acetate', 'glucose', 'dioxane', 'adamantane', 'ammonium chloride', '[15N] ammonium chloride', 'ammonium hydroxide', 'ammonium nitrate', '[15N] ammonium nitrate', '[15N, 15N] ammonium nitrate', 'ammonium nitrite', 'ammonium sulfate', '[15N] ammonium sulfate', 'liquid anhydrous ammonia', 'formamide', '[15N] nitric acid', 'Nitromethane', '[15N] nitromethane', 'N-acetyl-valine (NAV)', 'urea', 'phosphoric acid', 'phosphoric acid (85%)', 'TMP', 'cadmium perchlorate', 'Deuterium Oxide', 'TFA', 'TFE' );
+CREATE TYPE ENUM_pdbx_nmr_chem_shift_ref_mol_common_name AS ENUM ( 'DSS', 'TSP', 'TMSP', 'water', 'DMSO', 'DMSO-d5', 'DMSO-d6', 'methanol', 'TMS', 'methionine', 'acetonitrile', 'alanine', 'acetate', 'glucose', 'dioxane', 'adamantane', 'ammonium chloride', '[15N] ammonium chloride', 'ammonium hydroxide', 'ammonium nitrate', '[15N] ammonium nitrate', '[15N, 15N] ammonium nitrate', 'ammonium nitrite', 'ammonium sulfate', '[15N] ammonium sulfate', 'liquid anhydrous ammonia', 'formamide', 'Histidine', '[15N] nitric acid', 'Nitromethane', '[15N] nitromethane', 'N-acetyl-valine (NAV)', 'urea', 'phosphoric acid', 'phosphoric acid (85%)', 'TMP', 'cadmium perchlorate', 'Deuterium Oxide', 'TFA', 'TFE' );
 CREATE TABLE pdbx_nmr_chem_shift_ref (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
@@ -16113,7 +16113,8 @@ CREATE TABLE reflns (
 -- xsd:restriction/xsd:maxInclusive="100.0"
 -- xsd:restriction/xsd:minInclusive="0.0"
 	pdbx_percent_possible_spherical_anomalous DECIMAL CHECK ( pdbx_percent_possible_spherical_anomalous >= 0.0 AND pdbx_percent_possible_spherical_anomalous <= 100.0 ) ,
-	pdbx_redundancy DECIMAL ,
+-- xsd:restriction/xsd:minInclusive="0.0"
+	pdbx_redundancy DECIMAL CHECK ( pdbx_redundancy >= 0.0 ) ,
 -- xsd:restriction/xsd:minInclusive="1.0"
 	pdbx_redundancy_anomalous DECIMAL CHECK ( pdbx_redundancy_anomalous >= 1.0 ) ,
 	pdbx_redundancy_reflns_obs DECIMAL ,

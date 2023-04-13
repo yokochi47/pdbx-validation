@@ -4,7 +4,7 @@
 # Date:  Wed Mar 15 18:17:29 JST 2023
 #
 # Created from:
-#        mmcif_pdbx_v50.dic   - PDB Exchange Data Dictionary (V5.368)
+#        mmcif_pdbx_v50.dic   - PDB Exchange Data Dictionary (V5.369)
 #        http://wwpdb.org/validation/schema/wwpdb_validation_v6.02.xsd
 #         - a XML schema for wwPDB validation reports, v6.02, rev. 2023-02-06
 #
@@ -31,7 +31,7 @@ data_mmcif_pdbx_validation.dic
 
     _dictionary.title           mmcif_pdbx_validation.dic
     _dictionary.datablock_id    mmcif_pdbx_validation.dic
-    _dictionary.version         4.368
+    _dictionary.version         4.369
 #
     loop_
     _dictionary_history.version
@@ -1119,6 +1119,15 @@ data_mmcif_pdbx_validation.dic
 >     + Add "Malvern Panalytical PIXcel 1D" to _diffrn_detector.type enumeration # merged
 >     + Add "TFS FALCON 4i (4k x 4x)" to _em_image_recording.film_or_detector_model # merged
 >     + Extend _pdbx_audit_support.funding_organization enumeration # not mapped
+;
+  4.369   2023-04-13
+;
+>     + Add 'HOLD FOR 6 WEEKS' to enumerations for _pdbx_database_status.dep_release_code_struct_fact
+>       and _pdbx_database_status.dep_release_code_nmr_constraints # not mapped
+>     + Extend _pdbx_audit_support.funding_organization enumeration # not mapped
+>     + Add _reflns.pdbx_redundancy lower limit of 0. # merged
+>     + Add 'Histidine' to _pdbx_nmr_chem_shift_ref.mol_common_name enumeration # not mapped
+>     + Update pdbx_nmr_software.name list # merged
 ;
 
 
@@ -26366,6 +26375,9 @@ save__reflns.pdbx_redundancy
     _pdbx_item_description.name         "_reflns.pdbx_redundancy"
     _pdbx_item_description.description  "Overall reduncancy of the data collection"
     #
+    _item_range.maximum  .
+    _item_range.minimum  0.0
+    #
     loop_
     _pdbx_item_range.name
     _pdbx_item_range.minimum
@@ -26373,7 +26385,7 @@ save__reflns.pdbx_redundancy
       "_reflns.pdbx_redundancy"   1   1
       "_reflns.pdbx_redundancy"   1  20
       "_reflns.pdbx_redundancy"  20  20
-   #
+    #
 
 save_
 
@@ -30200,381 +30212,409 @@ save__pdbx_nmr_software.name
     _pdbx_item_description.description  'The name of the software used for this procedure.'
     loop_
     _item_examples.case
- 'ANSIG'
- 'AURELIA'
- 'AZARA'
- 'CHARMM'
-  CoMAND
- 'CORMA'
- 'DIANA'
- 'DYANA'
- 'DSPACE'
- 'DISGEO'
- 'DGII'
- 'DISMAN'
- 'DINOSAUR'
- 'DISCOVER'
- 'FELIX'
- 'FT_NMR'
- 'GROMOS'
- 'IRMA'
- 'MARDIGRAS'
- 'NMRPipe'
- 'SA'
- 'UXNMR'
- 'VNMR'
- 'X-PLOR'
- 'XWINNMR'
-     loop_
-    _pdbx_item_enumeration.name
-    _pdbx_item_enumeration.value
-    _pdbx_item_enumeration.detail
-        '_pdbx_nmr_software.name'  NAME                                         .
-        '_pdbx_nmr_software.name'  3D-DART                                      .
-        '_pdbx_nmr_software.name'  3DNA                                         .
-        '_pdbx_nmr_software.name'  4D-CHAINS                                    .
-        '_pdbx_nmr_software.name'  ABACUS                                       .
-        '_pdbx_nmr_software.name'  ACME                                         .
-        '_pdbx_nmr_software.name'  AGNuS                                        .
-        '_pdbx_nmr_software.name'  ALMOST                                       .
-        '_pdbx_nmr_software.name'  Amber                                        .
-        '_pdbx_nmr_software.name'  AMIX                                         .
-        '_pdbx_nmr_software.name'  AnalysisAssign                               .
-        '_pdbx_nmr_software.name'  Anglesearch                                  .
-        '_pdbx_nmr_software.name'  ANSIG                                        .
-        '_pdbx_nmr_software.name'  APES                                         .
-        '_pdbx_nmr_software.name'  AQUA                                         .
-        '_pdbx_nmr_software.name'  ARIA                                         .
-        '_pdbx_nmr_software.name'  ARIA2alpha                                   .
-        '_pdbx_nmr_software.name'  ARMOR                                        .
-        '_pdbx_nmr_software.name'  ASCAN                                        .
-        '_pdbx_nmr_software.name'  ASDP                                         .
-        '_pdbx_nmr_software.name'  ATNOS                                        .
-        '_pdbx_nmr_software.name'  AUDANA                                       .
-        '_pdbx_nmr_software.name'  AURELIA                                      .
-        '_pdbx_nmr_software.name'  AUREMOL                                      .
-        '_pdbx_nmr_software.name'  AutoAssign                                   .
-        '_pdbx_nmr_software.name'  AutoDock                                     .
-        '_pdbx_nmr_software.name'  AutoProc                                     .
-        '_pdbx_nmr_software.name'  AutoStructure                                .
-        '_pdbx_nmr_software.name'  AVS                                          .
-        '_pdbx_nmr_software.name'  Azara                                        .
-        '_pdbx_nmr_software.name'  BACKTOR                                      .
-        '_pdbx_nmr_software.name'  BACUS                                        .
-        '_pdbx_nmr_software.name'  BATCH                                        .
-        '_pdbx_nmr_software.name'  BIOGRAF                                      .
-        '_pdbx_nmr_software.name'  BIRDER                                       .
-        '_pdbx_nmr_software.name'  Burrow-owl                                   .
-        '_pdbx_nmr_software.name'  CALIBA                                       .
-        '_pdbx_nmr_software.name'  CamShift                                     .
-        '_pdbx_nmr_software.name'  CamShift-MD                                  .
-        '_pdbx_nmr_software.name'  CANDID                                       .
-        '_pdbx_nmr_software.name'  CAPP                                         .
-        '_pdbx_nmr_software.name'  CARA                                         .
-        '_pdbx_nmr_software.name'  CATCH23                                      .
-        '_pdbx_nmr_software.name'  CATIA                                        .
-        '_pdbx_nmr_software.name'  CCNMR                                        .
-        '_pdbx_nmr_software.name'  'CcpNmr Analysis'                            .
-        '_pdbx_nmr_software.name'  CHARMM                                       .
-        '_pdbx_nmr_software.name'  CHARMM-GUI                                   .
-        '_pdbx_nmr_software.name'  CHESHIRE                                     .
-        '_pdbx_nmr_software.name'  CHIFIT                                       .
-        '_pdbx_nmr_software.name'  CINDY                                        .
-        '_pdbx_nmr_software.name'  CING                                         .
-        '_pdbx_nmr_software.name'  Circos                                       .
-        '_pdbx_nmr_software.name'  cleaner3D                                    .
-        '_pdbx_nmr_software.name'  CMXW                                         .
-        '_pdbx_nmr_software.name'  CNS                                          .
-        '_pdbx_nmr_software.name'  CNX                                          .
-        '_pdbx_nmr_software.name'  COMPASS                                      .
-        '_pdbx_nmr_software.name'  CoMAND                                       .
-        '_pdbx_nmr_software.name'  'Complete SCS search'                        .
-        '_pdbx_nmr_software.name'  CONCOORD                                     .
-        '_pdbx_nmr_software.name'  CONGEN                                       .
-        '_pdbx_nmr_software.name'  CORMA                                        .
-        '_pdbx_nmr_software.name'  CPMD                                         .
-        '_pdbx_nmr_software.name'  'CS-RDC-NOE Rosetta'                         .
-        '_pdbx_nmr_software.name'  CS-ROSETTA                                   .
-        '_pdbx_nmr_software.name'  CS23D                                        .
-        '_pdbx_nmr_software.name'  CSI                                          .
-        '_pdbx_nmr_software.name'  curvefit                                     .
-        '_pdbx_nmr_software.name'  Curves                                       .
-        '_pdbx_nmr_software.name'  Curves+                                      .
-        '_pdbx_nmr_software.name'  CYANA                                        .
-        '_pdbx_nmr_software.name'  DADAS                                        .
-        '_pdbx_nmr_software.name'  DANGLE                                       .
-        '_pdbx_nmr_software.name'  Delta                                        .
-        '_pdbx_nmr_software.name'  DGEOM                                        .
-        '_pdbx_nmr_software.name'  DIAMOD                                       .
-        '_pdbx_nmr_software.name'  DIANA                                        .
-        '_pdbx_nmr_software.name'  DINOSAUR                                     .
-        '_pdbx_nmr_software.name'  DipoCoup                                     .
-        '_pdbx_nmr_software.name'  Discover                                     .
-        '_pdbx_nmr_software.name'  'Discovery Studio'                           .
-        '_pdbx_nmr_software.name'  DISGEO                                       .
-        '_pdbx_nmr_software.name'  DISMAN                                       .
-        '_pdbx_nmr_software.name'  DISNMR                                       .
-        '_pdbx_nmr_software.name'  DNAminiCarlo                                 .
-        '_pdbx_nmr_software.name'  Dreamwalker                                  .
-        '_pdbx_nmr_software.name'  DSPACE                                       .
-        '_pdbx_nmr_software.name'  DSSP                                         .
-        '_pdbx_nmr_software.name'  DUPLEX                                       .
-        '_pdbx_nmr_software.name'  DYANA                                        .
-        '_pdbx_nmr_software.name'  DYNAMO                                       .
-        '_pdbx_nmr_software.name'  'Dynamic Meccano'                            .
-        '_pdbx_nmr_software.name'  EC-NMR                                       .
-        '_pdbx_nmr_software.name'  ELM                                          .
-        '_pdbx_nmr_software.name'  EMBOSS                                       .
-        '_pdbx_nmr_software.name'  ENSEMBLE                                     .
-        '_pdbx_nmr_software.name'  EREF                                         .
-        '_pdbx_nmr_software.name'  EZ-ASSIGN                                    .
-        '_pdbx_nmr_software.name'  FANMEM                                       .
-        '_pdbx_nmr_software.name'  FANTOM                                       .
-        '_pdbx_nmr_software.name'  FAWN                                         .
-        '_pdbx_nmr_software.name'  Felix                                        .
-        '_pdbx_nmr_software.name'  FindCore                                     .
-        '_pdbx_nmr_software.name'  FINDFAM                                      .
-        '_pdbx_nmr_software.name'  FIRM                                         .
-        '_pdbx_nmr_software.name'  FISI                                         .
-        '_pdbx_nmr_software.name'  Flexible-meccano                             .
-        '_pdbx_nmr_software.name'  FMCGUI                                       .
-        '_pdbx_nmr_software.name'  Foldit                                       .
-        '_pdbx_nmr_software.name'  FuDA                                         .
-        '_pdbx_nmr_software.name'  G2G                                          .
-        '_pdbx_nmr_software.name'  GAPRO                                        .
-        '_pdbx_nmr_software.name'  GARANT                                       .
-        '_pdbx_nmr_software.name'  GASyCS                                       .
-        '_pdbx_nmr_software.name'  Gaussian                                     .
-        '_pdbx_nmr_software.name'  GeNMR                                        .
-        '_pdbx_nmr_software.name'  GENXPK                                       .
-        '_pdbx_nmr_software.name'  Gifa                                         .
-        '_pdbx_nmr_software.name'  GLOMSA                                       .
-        '_pdbx_nmr_software.name'  GLXCC                                        .
-        '_pdbx_nmr_software.name'  GRAMM-X                                      .
-        '_pdbx_nmr_software.name'  GROMACS                                      .
-        '_pdbx_nmr_software.name'  GROMOS                                       .
-        '_pdbx_nmr_software.name'  GUARDD                                       .
-        '_pdbx_nmr_software.name'  HABAS                                        .
-        '_pdbx_nmr_software.name'  HADDOCK                                      .
-        '_pdbx_nmr_software.name'  HBPLUS                                       .
-        '_pdbx_nmr_software.name'  hmsIST                                       .
-        '_pdbx_nmr_software.name'  HOLE                                         .
-        '_pdbx_nmr_software.name'  HYPER                                        .
-        '_pdbx_nmr_software.name'  HyperChem                                    .
-        '_pdbx_nmr_software.name'  ICMD                                         .
-        '_pdbx_nmr_software.name'  'In-house / custom'                          .
-        '_pdbx_nmr_software.name'  INCA                                         .
-        '_pdbx_nmr_software.name'  INDYANA                                      .
-        '_pdbx_nmr_software.name'  'Inferential Structure Determination (ISD)'  .
-        '_pdbx_nmr_software.name'  INFIT                                        .
-        '_pdbx_nmr_software.name'  Insight                                      .
-        '_pdbx_nmr_software.name'  'Insight II'                                 .
-        '_pdbx_nmr_software.name'  interhlx                                     .
-        '_pdbx_nmr_software.name'  I-PINE                                       .
-        '_pdbx_nmr_software.name'  IRMA                                         .
-        '_pdbx_nmr_software.name'  JUMNA                                        .
-        '_pdbx_nmr_software.name'  KUJIRA                                       .
-        '_pdbx_nmr_software.name'  MacroModel                                   .
-        '_pdbx_nmr_software.name'  MAGRO                                        .
-        '_pdbx_nmr_software.name'  MagRO-NMRView                                .
-        '_pdbx_nmr_software.name'  MAPPER                                       .
-        '_pdbx_nmr_software.name'  MARBLE                                       .
-        '_pdbx_nmr_software.name'  MARDIGRAS                                    .
-        '_pdbx_nmr_software.name'  MARS                                         .
-        '_pdbx_nmr_software.name'  MATCH                                        .
-        '_pdbx_nmr_software.name'  Mathematica                                  .
-        '_pdbx_nmr_software.name'  Matlab                                       .
-        '_pdbx_nmr_software.name'  MC-Sym                                       .
-        '_pdbx_nmr_software.name'  MCASSIGN                                     .
-        '_pdbx_nmr_software.name'  MCCL                                         .
-        '_pdbx_nmr_software.name'  MDDGUI                                       .
-        '_pdbx_nmr_software.name'  MddNMR                                       .
-        '_pdbx_nmr_software.name'  MEDUSA                                       .
-        '_pdbx_nmr_software.name'  'MestreLab (Mnova / MestReNova / MestReC)'   .
-        '_pdbx_nmr_software.name'  MFT                                          .
-        '_pdbx_nmr_software.name'  MIDGE                                        .
-        '_pdbx_nmr_software.name'  miniCarlo                                    .
-        '_pdbx_nmr_software.name'  Minuit                                       .
-        '_pdbx_nmr_software.name'  MNMR                                         .
-        '_pdbx_nmr_software.name'  ModelFree                                    .
-        '_pdbx_nmr_software.name'  MODELLER                                     .
-        '_pdbx_nmr_software.name'  Module                                       .
-        '_pdbx_nmr_software.name'  'Module 2'                                   .
-        '_pdbx_nmr_software.name'  MOE                                          .
-        '_pdbx_nmr_software.name'  MOLMOL                                       .
-        '_pdbx_nmr_software.name'  MolProbity                                   .
-        '_pdbx_nmr_software.name'  MolSkop                                      .
-        '_pdbx_nmr_software.name'  Monte                                        .
-        '_pdbx_nmr_software.name'  MORASS                                       .
-        '_pdbx_nmr_software.name'  MORCAD                                       .
-        '_pdbx_nmr_software.name'  MULDER                                       .
-        '_pdbx_nmr_software.name'  MUNIN                                        .
-        '_pdbx_nmr_software.name'  NAB                                          .
-        '_pdbx_nmr_software.name'  NAMD                                         .
-        '_pdbx_nmr_software.name'  NAMFIS                                       .
-        '_pdbx_nmr_software.name'  NDEE                                         .
-        '_pdbx_nmr_software.name'  NESSY                                        .
-        '_pdbx_nmr_software.name'  NHFIT                                        .
-        '_pdbx_nmr_software.name'  'NMR Structure Tools'                        .
-        '_pdbx_nmr_software.name'  NMR-SPIRIT                                   .
-        '_pdbx_nmr_software.name'  nmr2st                                       .
-        '_pdbx_nmr_software.name'  NMRCLUST                                     .
-        '_pdbx_nmr_software.name'  NMRDraw                                      .
-        '_pdbx_nmr_software.name'  NMRCompass                                   .
-        '_pdbx_nmr_software.name'  NMRe                                         .
-        '_pdbx_nmr_software.name'  NMRest                                       .
-        '_pdbx_nmr_software.name'  NMRFAM-SPARKY                                .
-        '_pdbx_nmr_software.name'  NMRFx                                        .
-        '_pdbx_nmr_software.name'  nmrglue                                      .
-        '_pdbx_nmr_software.name'  NMRLAB                                       .
-        '_pdbx_nmr_software.name'  NMRPipe                                      .
-        '_pdbx_nmr_software.name'  NMRspy                                       .
-        '_pdbx_nmr_software.name'  NMRSwarm                                     .
-        '_pdbx_nmr_software.name'  NMRView                                      .
-        '_pdbx_nmr_software.name'  NMRViewJ                                     .
-        '_pdbx_nmr_software.name'  NOAH                                         .
-        '_pdbx_nmr_software.name'  NOEID                                        .
-        '_pdbx_nmr_software.name'  NOEMOL                                       .
-        '_pdbx_nmr_software.name'  NOTE                                         .
-        '_pdbx_nmr_software.name'  NUCFIT                                       .
-        '_pdbx_nmr_software.name'  NUCHEMICS                                    .
-        '_pdbx_nmr_software.name'  NUCLSQ                                       .
-        '_pdbx_nmr_software.name'  Numbat                                       .
-        '_pdbx_nmr_software.name'  O                                            .
-        '_pdbx_nmr_software.name'  Olivia                                       .
-        '_pdbx_nmr_software.name'  Omega                                        .
-        '_pdbx_nmr_software.name'  OPAL                                         .
-        '_pdbx_nmr_software.name'  OPALp                                        .
-        '_pdbx_nmr_software.name'  Orderten_SVD                                 .
-        '_pdbx_nmr_software.name'  OTOKO                                        .
-        '_pdbx_nmr_software.name'  PACES                                        .
-        '_pdbx_nmr_software.name'  PALES                                        .
-        '_pdbx_nmr_software.name'  PARADYANA                                    .
-        '_pdbx_nmr_software.name'  PASA                                         .
-        '_pdbx_nmr_software.name'  PASTA                                        .
-        '_pdbx_nmr_software.name'  PASTE/PAPST                                  .
-        '_pdbx_nmr_software.name'  PdbStat                                      .
-        '_pdbx_nmr_software.name'  PECAN                                        .
-        '_pdbx_nmr_software.name'  'PELE web server'                            .
-        '_pdbx_nmr_software.name'  PEPFLEX-II                                   .
-        '_pdbx_nmr_software.name'  pfit                                         .
-        '_pdbx_nmr_software.name'  PINE                                         .
-        '_pdbx_nmr_software.name'  'PINE Server'                                .
-        '_pdbx_nmr_software.name'  PINE-SPARKY                                  .
-        '_pdbx_nmr_software.name'  PIPATH                                       .
-        '_pdbx_nmr_software.name'  PIPP                                         .
-        '_pdbx_nmr_software.name'  PISTACHIO                                    .
-        '_pdbx_nmr_software.name'  PLATON                                       .
-        '_pdbx_nmr_software.name'  PLUMED                                       .
-        '_pdbx_nmr_software.name'  PLUMED2                                      .
-        '_pdbx_nmr_software.name'  PONDEROSA                                    .
-        '_pdbx_nmr_software.name'  PONDEROSA-C/S                                .
-        '_pdbx_nmr_software.name'  POSE                                         .
-        '_pdbx_nmr_software.name'  PREDITOR                                     .
-        '_pdbx_nmr_software.name'  PRESTO                                       .
-        '_pdbx_nmr_software.name'  Prime                                        .
-        '_pdbx_nmr_software.name'  'PROCHECK / PROCHECK-NMR'                    .
-        '_pdbx_nmr_software.name'  PRODRG                                       .
-        '_pdbx_nmr_software.name'  ProFit                                       .
-        '_pdbx_nmr_software.name'  PROMOTIF                                     .
-        '_pdbx_nmr_software.name'  Pronto                                       .
-        '_pdbx_nmr_software.name'  Pronto3D                                     .
-        '_pdbx_nmr_software.name'  PROSA                                        .
-        '_pdbx_nmr_software.name'  'Protein Constructor'                        .
-        '_pdbx_nmr_software.name'  PSEUDODYANA                                  .
-        '_pdbx_nmr_software.name'  PSEUDOREM                                    .
-        '_pdbx_nmr_software.name'  PSVS                                         .
-        '_pdbx_nmr_software.name'  PyMOL                                        .
-        '_pdbx_nmr_software.name'  PyRPF                                        .
-        '_pdbx_nmr_software.name'  QM/MM                                        .
-        '_pdbx_nmr_software.name'  qMDD                                         .
-        '_pdbx_nmr_software.name'  QUANTA                                       .
-        '_pdbx_nmr_software.name'  QUEEN                                        .
-        '_pdbx_nmr_software.name'  RADAR                                        .
-        '_pdbx_nmr_software.name'  RANDMARDI                                    .
-        '_pdbx_nmr_software.name'  RasMol                                       .
-        '_pdbx_nmr_software.name'  RASP                                         .
-        '_pdbx_nmr_software.name'  RDC-PANDA                                    .
-        '_pdbx_nmr_software.name'  rDOCK                                        .
-        '_pdbx_nmr_software.name'  RECOORD                                      .
-        '_pdbx_nmr_software.name'  REDCAT                                       .
-        '_pdbx_nmr_software.name'  REDcRAFT                                     .
-        '_pdbx_nmr_software.name'  REGINE                                       .
-        '_pdbx_nmr_software.name'  relax                                        .
-        '_pdbx_nmr_software.name'  RelaxFit                                     .
-        '_pdbx_nmr_software.name'  RELAZ                                        .
-        '_pdbx_nmr_software.name'  REPENT                                       .
-        '_pdbx_nmr_software.name'  RESTRICT                                     .
-        '_pdbx_nmr_software.name'  Rosetta                                      .
-        '_pdbx_nmr_software.name'  'Rowland NMR Toolkit (RNMRTK)'               .
-        '_pdbx_nmr_software.name'  RUNMR                                        .
-        '_pdbx_nmr_software.name'  S3EPY                                        .
-        '_pdbx_nmr_software.name'  SANE                                         .
-        '_pdbx_nmr_software.name'  SCRUB                                        .
-        '_pdbx_nmr_software.name'  SCULPTOR                                     .
-        '_pdbx_nmr_software.name'  SCWRL                                        .
-        '_pdbx_nmr_software.name'  SHIFTCALC                                    .
-        '_pdbx_nmr_software.name'  SHIFTX                                       .
-        '_pdbx_nmr_software.name'  Shine                                        .
-        '_pdbx_nmr_software.name'  SideR                                        .
-        '_pdbx_nmr_software.name'  'Signal Separation Algorithm (SSA)'          .
-        '_pdbx_nmr_software.name'  SIMPSON                                      .
-        '_pdbx_nmr_software.name'  smartnotebook                                .
-        '_pdbx_nmr_software.name'  Smol                                         .
-        '_pdbx_nmr_software.name'  SNARF                                        .
-        '_pdbx_nmr_software.name'  SOLARIA                                      .
-        '_pdbx_nmr_software.name'  SOPHIE                                       .
-        '_pdbx_nmr_software.name'  Sparky                                       .
-        '_pdbx_nmr_software.name'  SPARTA                                       .
-        '_pdbx_nmr_software.name'  SPARTA+                                      .
-        '_pdbx_nmr_software.name'  SPEDREF                                      .
-        '_pdbx_nmr_software.name'  SPHINX/LINSHA                                .
-        '_pdbx_nmr_software.name'  SpinEvolution                                .
-        '_pdbx_nmr_software.name'  SPINS                                        .
-        '_pdbx_nmr_software.name'  SpinSight                                    .
-        '_pdbx_nmr_software.name'  SpinWorks                                    .
-        '_pdbx_nmr_software.name'  SPIRIT                                       .
-        '_pdbx_nmr_software.name'  SPSCAN                                       .
-        '_pdbx_nmr_software.name'  STAPP                                        .
-        '_pdbx_nmr_software.name'  'Structural Fitting'                         .
-        '_pdbx_nmr_software.name'  SUPPOSE                                      .
-        '_pdbx_nmr_software.name'  Swiss-PdbViewer                              .
-        '_pdbx_nmr_software.name'  SYBYL                                        .
-        '_pdbx_nmr_software.name'  SYBYL-X                                      .
-        '_pdbx_nmr_software.name'  TALOS                                        .
-        '_pdbx_nmr_software.name'  TALOS-N                                      .
-        '_pdbx_nmr_software.name'  TALOS+                                       .
-        '_pdbx_nmr_software.name'  tecmag                                       .
-        '_pdbx_nmr_software.name'  TENSOR                                       .
-        '_pdbx_nmr_software.name'  TENSOR2                                      .
-        '_pdbx_nmr_software.name'  Tinker                                       .
-        '_pdbx_nmr_software.name'  TopSpin                                      .
-        '_pdbx_nmr_software.name'  TORC                                         .
-        '_pdbx_nmr_software.name'  Turbo-Frodo                                  .
-        '_pdbx_nmr_software.name'  UBNMR                                        .
-        '_pdbx_nmr_software.name'  'UCSF Chimera'                               .
-        '_pdbx_nmr_software.name'  'UCSF MidasPlus'                             .
-        '_pdbx_nmr_software.name'  UNIO                                         .
-        '_pdbx_nmr_software.name'  UXNMR                                        .
-        '_pdbx_nmr_software.name'  VADAR                                        .
-        '_pdbx_nmr_software.name'  VEMBED                                       .
-        '_pdbx_nmr_software.name'  VERIFY3D                                     .
-        '_pdbx_nmr_software.name'  VMD                                          .
-        '_pdbx_nmr_software.name'  VNMR                                         .
-        '_pdbx_nmr_software.name'  VnmrJ                                        .
-        '_pdbx_nmr_software.name'  'WHAT IF'                                    .
-        '_pdbx_nmr_software.name'  xcrvfit                                      .
-        '_pdbx_nmr_software.name'  XEASY                                        .
-        '_pdbx_nmr_software.name'  Xipp                                         .
-        '_pdbx_nmr_software.name'  Xndee                                        .
-        '_pdbx_nmr_software.name'  X-PLOR                                       .
-        '_pdbx_nmr_software.name'  'X-PLOR NIH'                                 .
-        '_pdbx_nmr_software.name'  XVNMR                                        .
-        '_pdbx_nmr_software.name'  XwinNMR                                      .
-        '_pdbx_nmr_software.name'  YARIA                                        .
-        '_pdbx_nmr_software.name'  YARM                                         .
-        '_pdbx_nmr_software.name'  YASAP                                        .
-        '_pdbx_nmr_software.name'  YASARA                                       .
+    'ANSIG'
+    'AURELIA'
+    'AZARA'
+    'CHARMM'
+     CoMAND
+    'CORMA'
+    'DIANA'
+    'DYANA'
+    'DSPACE'
+    'DISGEO'
+    'DGII'
+    'DISMAN'
+    'DINOSAUR'
+    'DISCOVER'
+    'FELIX'
+    'FT_NMR'
+    'GROMOS'
+    'IRMA'
+    'MARDIGRAS'
+    'NMRPipe'
+    'SA'
+    'UXNMR'
+    'VNMR'
+    'X-PLOR'
+    'XWINNMR'
+   loop_
+   _pdbx_item_enumeration.name
+   _pdbx_item_enumeration.value
+   _pdbx_item_enumeration.detail
+     "_pdbx_nmr_software.name"  NAME                                         .
+     "_pdbx_nmr_software.name"  3D-DART                                      .
+     "_pdbx_nmr_software.name"  3DNA                                         .
+     "_pdbx_nmr_software.name"  4D-CHAINS                                    .
+     "_pdbx_nmr_software.name"  4DSPOT                                       .
+     "_pdbx_nmr_software.name"  ABACUS                                       .
+     "_pdbx_nmr_software.name"  ACME                                         .
+     "_pdbx_nmr_software.name"  ADAPT-NMR                                    .
+     "_pdbx_nmr_software.name"  AGNuS                                        .
+     "_pdbx_nmr_software.name"  ALMOST                                       .
+     "_pdbx_nmr_software.name"  Amber                                        .
+     "_pdbx_nmr_software.name"  AmberTools                                   .
+     "_pdbx_nmr_software.name"  AMIX                                         .
+     "_pdbx_nmr_software.name"  AnalysisAssign                               .
+     "_pdbx_nmr_software.name"  ANATOLIA                                     .
+     "_pdbx_nmr_software.name"  Anglesearch                                  .
+     "_pdbx_nmr_software.name"  ANSIG                                        .
+     "_pdbx_nmr_software.name"  APES                                         .
+     "_pdbx_nmr_software.name"  AQUA                                         .
+     "_pdbx_nmr_software.name"  ARIA                                         .
+     "_pdbx_nmr_software.name"  ARIA2alpha                                   .
+     "_pdbx_nmr_software.name"  ARMOR                                        .
+     "_pdbx_nmr_software.name"  ArShift                                      .
+     "_pdbx_nmr_software.name"  ASCAN                                        .
+     "_pdbx_nmr_software.name"  ASDP                                         .
+     "_pdbx_nmr_software.name"  ATNOS                                        .
+     "_pdbx_nmr_software.name"  ATSAS                                        .
+     "_pdbx_nmr_software.name"  AUDANA                                       .
+     "_pdbx_nmr_software.name"  AURELIA                                      .
+     "_pdbx_nmr_software.name"  AUREMOL                                      .
+     "_pdbx_nmr_software.name"  AutoAssign                                   .
+     "_pdbx_nmr_software.name"  AutoDock                                     .
+     "_pdbx_nmr_software.name"  AutoProc                                     .
+     "_pdbx_nmr_software.name"  AutoStructure                                .
+     "_pdbx_nmr_software.name"  AVS                                          .
+     "_pdbx_nmr_software.name"  Azara                                        .
+     "_pdbx_nmr_software.name"  BACKTOR                                      .
+     "_pdbx_nmr_software.name"  BACUS                                        .
+     "_pdbx_nmr_software.name"  BATCH                                        .
+     "_pdbx_nmr_software.name"  BATMAN                                       .
+     "_pdbx_nmr_software.name"  BIOGRAF                                      .
+     "_pdbx_nmr_software.name"  BIRDER                                       .
+     "_pdbx_nmr_software.name"  Burrow-owl                                   .
+     "_pdbx_nmr_software.name"  CALIBA                                       .
+     "_pdbx_nmr_software.name"  calRW                                        .
+     "_pdbx_nmr_software.name"  calRW+                                       .
+     "_pdbx_nmr_software.name"  CambridgeCS                                  .
+     "_pdbx_nmr_software.name"  CAMERA                                       .
+     "_pdbx_nmr_software.name"  CamShift                                     .
+     "_pdbx_nmr_software.name"  CamShift-MD                                  .
+     "_pdbx_nmr_software.name"  CANDID                                       .
+     "_pdbx_nmr_software.name"  CAPP                                         .
+     "_pdbx_nmr_software.name"  CARA                                         .
+     "_pdbx_nmr_software.name"  CATCH23                                      .
+     "_pdbx_nmr_software.name"  CATIA                                        .
+     "_pdbx_nmr_software.name"  CCNMR                                        .
+     "_pdbx_nmr_software.name"  "CcpNmr Analysis"                            .
+     "_pdbx_nmr_software.name"  "CcpNmr Analysis Assign"                     .
+     "_pdbx_nmr_software.name"  "CcpNmr ChemBuild"                           .
+     "_pdbx_nmr_software.name"  "CcpNmr Analysis Metabolomics"               .
+     "_pdbx_nmr_software.name"  "CcpNmr Analysis Screen"                     .
+     "_pdbx_nmr_software.name"  CHA3Shift                                    .
+     "_pdbx_nmr_software.name"  CHARMM                                       .
+     "_pdbx_nmr_software.name"  CHARMM-GUI                                   .
+     "_pdbx_nmr_software.name"  CHEMEX                                       .
+     "_pdbx_nmr_software.name"  CHESHIRE                                     .
+     "_pdbx_nmr_software.name"  CHIFIT                                       .
+     "_pdbx_nmr_software.name"  Chimera                                      .
+     "_pdbx_nmr_software.name"  CINDY                                        .
+     "_pdbx_nmr_software.name"  CING                                         .
+     "_pdbx_nmr_software.name"  Circos                                       .
+     "_pdbx_nmr_software.name"  cleaner3D                                    .
+     "_pdbx_nmr_software.name"  "CLUSTAL W/X"                                .
+     "_pdbx_nmr_software.name"  "Cluster 3.0"                                .
+     "_pdbx_nmr_software.name"  CMXW                                         .
+     "_pdbx_nmr_software.name"  CNS                                          .
+     "_pdbx_nmr_software.name"  CNSSOLVE                                     .
+     "_pdbx_nmr_software.name"  CNX                                          .
+     "_pdbx_nmr_software.name"  COMPASS                                      .
+     "_pdbx_nmr_software.name"  CoMAND                                       .
+     "_pdbx_nmr_software.name"  "Complete SCS search"                        .
+     "_pdbx_nmr_software.name"  CONCOORD                                     .
+     "_pdbx_nmr_software.name"  CONGEN                                       .
+     "_pdbx_nmr_software.name"  CORMA                                        .
+     "_pdbx_nmr_software.name"  CPMD                                         .
+     "_pdbx_nmr_software.name"  CSCDP                                        .
+     "_pdbx_nmr_software.name"  "CS-RDC-NOE Rosetta"                         .
+     "_pdbx_nmr_software.name"  CS-ROSETTA                                   .
+     "_pdbx_nmr_software.name"  CS23D                                        .
+     "_pdbx_nmr_software.name"  CSI                                          .
+     "_pdbx_nmr_software.name"  curvefit                                     .
+     "_pdbx_nmr_software.name"  Curves                                       .
+     "_pdbx_nmr_software.name"  Curves+                                      .
+     "_pdbx_nmr_software.name"  CYANA                                        .
+     "_pdbx_nmr_software.name"  CYRANGE                                      .
+     "_pdbx_nmr_software.name"  DADAS                                        .
+     "_pdbx_nmr_software.name"  DANGLE                                       .
+     "_pdbx_nmr_software.name"  Delta                                        .
+     "_pdbx_nmr_software.name"  DGEOM                                        .
+     "_pdbx_nmr_software.name"  DIAMOD                                       .
+     "_pdbx_nmr_software.name"  DIANA                                        .
+     "_pdbx_nmr_software.name"  DINOSAUR                                     .
+     "_pdbx_nmr_software.name"  DipoCoup                                     .
+     "_pdbx_nmr_software.name"  Discover                                     .
+     "_pdbx_nmr_software.name"  "Discovery Studio"                           .
+     "_pdbx_nmr_software.name"  DISGEO                                       .
+     "_pdbx_nmr_software.name"  DISMAN                                       .
+     "_pdbx_nmr_software.name"  DISNMR                                       .
+     "_pdbx_nmr_software.name"  DNAminiCarlo                                 .
+     "_pdbx_nmr_software.name"  Dreamwalker                                  .
+     "_pdbx_nmr_software.name"  DSPACE                                       .
+     "_pdbx_nmr_software.name"  DSSP                                         .
+     "_pdbx_nmr_software.name"  DUPLEX                                       .
+     "_pdbx_nmr_software.name"  DYANA                                        .
+     "_pdbx_nmr_software.name"  DYNAMO                                       .
+     "_pdbx_nmr_software.name"  "Dynamic Meccano"                            .
+     "_pdbx_nmr_software.name"  EC-NMR                                       .
+     "_pdbx_nmr_software.name"  ELM                                          .
+     "_pdbx_nmr_software.name"  EMBOSS                                       .
+     "_pdbx_nmr_software.name"  ENSEMBLE                                     .
+     "_pdbx_nmr_software.name"  EREF                                         .
+     "_pdbx_nmr_software.name"  EZ-ASSIGN                                    .
+     "_pdbx_nmr_software.name"  FANMEM                                       .
+     "_pdbx_nmr_software.name"  FANTOM                                       .
+     "_pdbx_nmr_software.name"  FAWN                                         .
+     "_pdbx_nmr_software.name"  Felix                                        .
+     "_pdbx_nmr_software.name"  FindCore                                     .
+     "_pdbx_nmr_software.name"  FINDFAM                                      .
+     "_pdbx_nmr_software.name"  FIRM                                         .
+     "_pdbx_nmr_software.name"  FISI                                         .
+     "_pdbx_nmr_software.name"  Flexible-meccano                             .
+     "_pdbx_nmr_software.name"  FMCGUI                                       .
+     "_pdbx_nmr_software.name"  Foldit                                       .
+     "_pdbx_nmr_software.name"  FuDA                                         .
+     "_pdbx_nmr_software.name"  G2G                                          .
+     "_pdbx_nmr_software.name"  GAPRO                                        .
+     "_pdbx_nmr_software.name"  GARANT                                       .
+     "_pdbx_nmr_software.name"  GASyCS                                       .
+     "_pdbx_nmr_software.name"  Gaussian                                     .
+     "_pdbx_nmr_software.name"  GeNMR                                        .
+     "_pdbx_nmr_software.name"  GENXPK                                       .
+     "_pdbx_nmr_software.name"  Gifa                                         .
+     "_pdbx_nmr_software.name"  GLOMSA                                       .
+     "_pdbx_nmr_software.name"  GLXCC                                        .
+     "_pdbx_nmr_software.name"  GRAMM-X                                      .
+     "_pdbx_nmr_software.name"  GROMACS                                      .
+     "_pdbx_nmr_software.name"  GROMOS                                       .
+     "_pdbx_nmr_software.name"  GUARDD                                       .
+     "_pdbx_nmr_software.name"  HABAS                                        .
+     "_pdbx_nmr_software.name"  HADDOCK                                      .
+     "_pdbx_nmr_software.name"  HBPLUS                                       .
+     "_pdbx_nmr_software.name"  hmsIST                                       .
+     "_pdbx_nmr_software.name"  HOLE                                         .
+     "_pdbx_nmr_software.name"  HYPER                                        .
+     "_pdbx_nmr_software.name"  HyperChem                                    .
+     "_pdbx_nmr_software.name"  ICMD                                         .
+     "_pdbx_nmr_software.name"  "In-house / custom"                          .
+     "_pdbx_nmr_software.name"  INCA                                         .
+     "_pdbx_nmr_software.name"  INDYANA                                      .
+     "_pdbx_nmr_software.name"  "Inferential Structure Determination (ISD)"  .
+     "_pdbx_nmr_software.name"  INFIT                                        .
+     "_pdbx_nmr_software.name"  Insight                                      .
+     "_pdbx_nmr_software.name"  "Insight II"                                 .
+     "_pdbx_nmr_software.name"  interhlx                                     .
+     "_pdbx_nmr_software.name"  I-PINE                                       .
+     "_pdbx_nmr_software.name"  IRMA                                         .
+     "_pdbx_nmr_software.name"  JUMNA                                        .
+     "_pdbx_nmr_software.name"  KUJIRA                                       .
+     "_pdbx_nmr_software.name"  MacroModel                                   .
+     "_pdbx_nmr_software.name"  MAGRO                                        .
+     "_pdbx_nmr_software.name"  MagRO-NMRView                                .
+     "_pdbx_nmr_software.name"  MAPPER                                       .
+     "_pdbx_nmr_software.name"  MARBLE                                       .
+     "_pdbx_nmr_software.name"  MARDIGRAS                                    .
+     "_pdbx_nmr_software.name"  MARS                                         .
+     "_pdbx_nmr_software.name"  MATCH                                        .
+     "_pdbx_nmr_software.name"  Mathematica                                  .
+     "_pdbx_nmr_software.name"  Matlab                                       .
+     "_pdbx_nmr_software.name"  MC-Sym                                       .
+     "_pdbx_nmr_software.name"  MCASSIGN                                     .
+     "_pdbx_nmr_software.name"  MCCL                                         .
+     "_pdbx_nmr_software.name"  MDDGUI                                       .
+     "_pdbx_nmr_software.name"  MddNMR                                       .
+     "_pdbx_nmr_software.name"  MEDUSA                                       .
+     "_pdbx_nmr_software.name"  "MestreLab (Mnova / MestReNova / MestReC)"   .
+     "_pdbx_nmr_software.name"  MFT                                          .
+     "_pdbx_nmr_software.name"  MIDGE                                        .
+     "_pdbx_nmr_software.name"  miniCarlo                                    .
+     "_pdbx_nmr_software.name"  Minuit                                       .
+     "_pdbx_nmr_software.name"  MNMR                                         .
+     "_pdbx_nmr_software.name"  ModelFree                                    .
+     "_pdbx_nmr_software.name"  MODELLER                                     .
+     "_pdbx_nmr_software.name"  Module                                       .
+     "_pdbx_nmr_software.name"  "Module 2"                                   .
+     "_pdbx_nmr_software.name"  MOE                                          .
+     "_pdbx_nmr_software.name"  MOLMOL                                       .
+     "_pdbx_nmr_software.name"  MolProbity                                   .
+     "_pdbx_nmr_software.name"  MolSkop                                      .
+     "_pdbx_nmr_software.name"  Monte                                        .
+     "_pdbx_nmr_software.name"  MORASS                                       .
+     "_pdbx_nmr_software.name"  MORCAD                                       .
+     "_pdbx_nmr_software.name"  MULDER                                       .
+     "_pdbx_nmr_software.name"  MUNIN                                        .
+     "_pdbx_nmr_software.name"  NAB                                          .
+     "_pdbx_nmr_software.name"  NAMD                                         .
+     "_pdbx_nmr_software.name"  NAMFIS                                       .
+     "_pdbx_nmr_software.name"  NDEE                                         .
+     "_pdbx_nmr_software.name"  NESSY                                        .
+     "_pdbx_nmr_software.name"  NHFIT                                        .
+     "_pdbx_nmr_software.name"  "NMR Structure Tools"                        .
+     "_pdbx_nmr_software.name"  NMR-SPIRIT                                   .
+     "_pdbx_nmr_software.name"  nmr2st                                       .
+     "_pdbx_nmr_software.name"  NMRCLUST                                     .
+     "_pdbx_nmr_software.name"  NMRDraw                                      .
+     "_pdbx_nmr_software.name"  NMRCompass                                   .
+     "_pdbx_nmr_software.name"  NMRe                                         .
+     "_pdbx_nmr_software.name"  NMRest                                       .
+     "_pdbx_nmr_software.name"  NMRFAM-SPARKY                                .
+     "_pdbx_nmr_software.name"  NMRFx                                        .
+     "_pdbx_nmr_software.name"  nmrglue                                      .
+     "_pdbx_nmr_software.name"  NMRLAB                                       .
+     "_pdbx_nmr_software.name"  NMRPipe                                      .
+     "_pdbx_nmr_software.name"  NMRspy                                       .
+     "_pdbx_nmr_software.name"  NMRSwarm                                     .
+     "_pdbx_nmr_software.name"  NMRView                                      .
+     "_pdbx_nmr_software.name"  NMRViewJ                                     .
+     "_pdbx_nmr_software.name"  NOAH                                         .
+     "_pdbx_nmr_software.name"  NOEID                                        .
+     "_pdbx_nmr_software.name"  NOEMOL                                       .
+     "_pdbx_nmr_software.name"  NOTE                                         .
+     "_pdbx_nmr_software.name"  NUCFIT                                       .
+     "_pdbx_nmr_software.name"  NUCHEMICS                                    .
+     "_pdbx_nmr_software.name"  NUCLSQ                                       .
+     "_pdbx_nmr_software.name"  Numbat                                       .
+     "_pdbx_nmr_software.name"  O                                            .
+     "_pdbx_nmr_software.name"  Olivia                                       .
+     "_pdbx_nmr_software.name"  Omega                                        .
+     "_pdbx_nmr_software.name"  OPAL                                         .
+     "_pdbx_nmr_software.name"  OPALp                                        .
+     "_pdbx_nmr_software.name"  Orderten_SVD                                 .
+     "_pdbx_nmr_software.name"  OTOKO                                        .
+     "_pdbx_nmr_software.name"  PACES                                        .
+     "_pdbx_nmr_software.name"  PALES                                        .
+     "_pdbx_nmr_software.name"  PANAV                                        .
+     "_pdbx_nmr_software.name"  PARADYANA                                    .
+     "_pdbx_nmr_software.name"  PASA                                         .
+     "_pdbx_nmr_software.name"  PASTA                                        .
+     "_pdbx_nmr_software.name"  PASTE/PAPST                                  .
+     "_pdbx_nmr_software.name"  PdbStat                                      .
+     "_pdbx_nmr_software.name"  PECAN                                        .
+     "_pdbx_nmr_software.name"  "PELE web server"                            .
+     "_pdbx_nmr_software.name"  PEPFLEX-II                                   .
+     "_pdbx_nmr_software.name"  pfit                                         .
+     "_pdbx_nmr_software.name"  PINE                                         .
+     "_pdbx_nmr_software.name"  "PINE Server"                                .
+     "_pdbx_nmr_software.name"  PINE-SPARKY                                  .
+     "_pdbx_nmr_software.name"  PINT                                         .
+     "_pdbx_nmr_software.name"  PIPATH                                       .
+     "_pdbx_nmr_software.name"  PIPP                                         .
+     "_pdbx_nmr_software.name"  PISTACHIO                                    .
+     "_pdbx_nmr_software.name"  PLATON                                       .
+     "_pdbx_nmr_software.name"  PLUMED                                       .
+     "_pdbx_nmr_software.name"  PLUMED2                                      .
+     "_pdbx_nmr_software.name"  PONDEROSA                                    .
+     "_pdbx_nmr_software.name"  PONDEROSA-C/S                                .
+     "_pdbx_nmr_software.name"  POSE                                         .
+     "_pdbx_nmr_software.name"  PREDITOR                                     .
+     "_pdbx_nmr_software.name"  PRESTO                                       .
+     "_pdbx_nmr_software.name"  Prime                                        .
+     "_pdbx_nmr_software.name"  "PROCHECK / PROCHECK-NMR"                    .
+     "_pdbx_nmr_software.name"  PRODRG                                       .
+     "_pdbx_nmr_software.name"  ProFit                                       .
+     "_pdbx_nmr_software.name"  PROMOTIF                                     .
+     "_pdbx_nmr_software.name"  Pronto                                       .
+     "_pdbx_nmr_software.name"  Pronto3D                                     .
+     "_pdbx_nmr_software.name"  PROSA                                        .
+     "_pdbx_nmr_software.name"  "Protein Constructor"                        .
+     "_pdbx_nmr_software.name"  PSEUDODYANA                                  .
+     "_pdbx_nmr_software.name"  PSEUDOREM                                    .
+     "_pdbx_nmr_software.name"  PSVS                                         .
+     "_pdbx_nmr_software.name"  PyMOL                                        .
+     "_pdbx_nmr_software.name"  PyRPF                                        .
+     "_pdbx_nmr_software.name"  QM/MM                                        .
+     "_pdbx_nmr_software.name"  qMDD                                         .
+     "_pdbx_nmr_software.name"  QUANTA                                       .
+     "_pdbx_nmr_software.name"  QUEEN                                        .
+     "_pdbx_nmr_software.name"  RADAR                                        .
+     "_pdbx_nmr_software.name"  RANDMARDI                                    .
+     "_pdbx_nmr_software.name"  RasMol                                       .
+     "_pdbx_nmr_software.name"  RASP                                         .
+     "_pdbx_nmr_software.name"  RDC-PANDA                                    .
+     "_pdbx_nmr_software.name"  rDOCK                                        .
+     "_pdbx_nmr_software.name"  RECOORD                                      .
+     "_pdbx_nmr_software.name"  REDCAT                                       .
+     "_pdbx_nmr_software.name"  REDcRAFT                                     .
+     "_pdbx_nmr_software.name"  REGINE                                       .
+     "_pdbx_nmr_software.name"  relax                                        .
+     "_pdbx_nmr_software.name"  RelaxFit                                     .
+     "_pdbx_nmr_software.name"  RELAZ                                        .
+     "_pdbx_nmr_software.name"  REPENT                                       .
+     "_pdbx_nmr_software.name"  RESTRICT                                     .
+     "_pdbx_nmr_software.name"  Rosetta                                      .
+     "_pdbx_nmr_software.name"  "Rowland NMR Toolkit (RNMRTK)"               .
+     "_pdbx_nmr_software.name"  RUNMR                                        .
+     "_pdbx_nmr_software.name"  S3EPY                                        .
+     "_pdbx_nmr_software.name"  SANE                                         .
+     "_pdbx_nmr_software.name"  SCRUB                                        .
+     "_pdbx_nmr_software.name"  SCULPTOR                                     .
+     "_pdbx_nmr_software.name"  SCWRL                                        .
+     "_pdbx_nmr_software.name"  SHIFTCALC                                    .
+     "_pdbx_nmr_software.name"  SHIFTX                                       .
+     "_pdbx_nmr_software.name"  Shine                                        .
+     "_pdbx_nmr_software.name"  SideR                                        .
+     "_pdbx_nmr_software.name"  "Signal Separation Algorithm (SSA)"          .
+     "_pdbx_nmr_software.name"  SIMPSON                                      .
+     "_pdbx_nmr_software.name"  smartnotebook                                .
+     "_pdbx_nmr_software.name"  Smol                                         .
+     "_pdbx_nmr_software.name"  SNARF                                        .
+     "_pdbx_nmr_software.name"  SOLARIA                                      .
+     "_pdbx_nmr_software.name"  SOPHIE                                       .
+     "_pdbx_nmr_software.name"  Sparky                                       .
+     "_pdbx_nmr_software.name"  SPARTA                                       .
+     "_pdbx_nmr_software.name"  SPARTA+                                      .
+     "_pdbx_nmr_software.name"  SPEDREF                                      .
+     "_pdbx_nmr_software.name"  SPHINX/LINSHA                                .
+     "_pdbx_nmr_software.name"  SpinEvolution                                .
+     "_pdbx_nmr_software.name"  SPINS                                        .
+     "_pdbx_nmr_software.name"  SpinSight                                    .
+     "_pdbx_nmr_software.name"  SpinWorks                                    .
+     "_pdbx_nmr_software.name"  SPIRIT                                       .
+     "_pdbx_nmr_software.name"  SPSCAN                                       .
+     "_pdbx_nmr_software.name"  STAPP                                        .
+     "_pdbx_nmr_software.name"  "Structural Fitting"                         .
+     "_pdbx_nmr_software.name"  SUPPOSE                                      .
+     "_pdbx_nmr_software.name"  Swiss-PdbViewer                              .
+     "_pdbx_nmr_software.name"  SYBYL                                        .
+     "_pdbx_nmr_software.name"  SYBYL-X                                      .
+     "_pdbx_nmr_software.name"  TALOS                                        .
+     "_pdbx_nmr_software.name"  TALOS-N                                      .
+     "_pdbx_nmr_software.name"  TALOS+                                       .
+     "_pdbx_nmr_software.name"  tecmag                                       .
+     "_pdbx_nmr_software.name"  TENSOR                                       .
+     "_pdbx_nmr_software.name"  TENSOR2                                      .
+     "_pdbx_nmr_software.name"  Tinker                                       .
+     "_pdbx_nmr_software.name"  TopSpin                                      .
+     "_pdbx_nmr_software.name"  TRIPOS                                       .
+     "_pdbx_nmr_software.name"  TORC                                         .
+     "_pdbx_nmr_software.name"  Turbo-Frodo                                  .
+     "_pdbx_nmr_software.name"  UBNMR                                        .
+     "_pdbx_nmr_software.name"  "UCSF Chimera"                               .
+     "_pdbx_nmr_software.name"  "UCSF MidasPlus"                             .
+     "_pdbx_nmr_software.name"  UNIO                                         .
+     "_pdbx_nmr_software.name"  UXNMR                                        .
+     "_pdbx_nmr_software.name"  VADAR                                        .
+     "_pdbx_nmr_software.name"  VEMBED                                       .
+     "_pdbx_nmr_software.name"  VERIFY3D                                     .
+     "_pdbx_nmr_software.name"  VMD                                          .
+     "_pdbx_nmr_software.name"  VNMR                                         .
+     "_pdbx_nmr_software.name"  VnmrJ                                        .
+     "_pdbx_nmr_software.name"  "WHAT IF"                                    .
+     "_pdbx_nmr_software.name"  xcrvfit                                      .
+     "_pdbx_nmr_software.name"  XEASY                                        .
+     "_pdbx_nmr_software.name"  Xipp                                         .
+     "_pdbx_nmr_software.name"  Xndee                                        .
+     "_pdbx_nmr_software.name"  X-PLOR                                       .
+     "_pdbx_nmr_software.name"  "X-PLOR NIH"                                 .
+     "_pdbx_nmr_software.name"  XVNMR                                        .
+     "_pdbx_nmr_software.name"  XwinNMR                                      .
+     "_pdbx_nmr_software.name"  XSSP                                         .
+     "_pdbx_nmr_software.name"  xyza2pipe                                    .
+     "_pdbx_nmr_software.name"  YARIA                                        .
+     "_pdbx_nmr_software.name"  YARM                                         .
+     "_pdbx_nmr_software.name"  YASAP                                        .
+     "_pdbx_nmr_software.name"  YASARA                                       .
 save_
 
 save__pdbx_nmr_software.version
