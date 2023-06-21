@@ -547,6 +547,7 @@ ndb_struct_conf_na.feature_count
 ndb_struct_na_base_pair.buckle
 ndb_struct_na_base_pair.hbond_type_12
 ndb_struct_na_base_pair.hbond_type_28
+ndb_struct_na_base_pair.hbond_type_leontis_westhof
 ndb_struct_na_base_pair.i_auth_asym_id
 ndb_struct_na_base_pair.i_auth_seq_id
 ndb_struct_na_base_pair.i_label_asym_id

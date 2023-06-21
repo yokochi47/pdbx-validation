@@ -1,10 +1,10 @@
 ###########################################################################
 #
 # File:  mmcif_pdbx_validation-v4.dic
-# Date:  Wed Jun 21 16:45:20 JST 2023
+# Date:  Wed Jun 21 17:18:58 JST 2023
 #
 # Created from:
-#        mmcif_pdbx_v50.dic   - PDB Exchange Data Dictionary (V5.370)
+#        mmcif_pdbx_v50.dic   - PDB Exchange Data Dictionary (V5.371)
 #        http://wwpdb.org/validation/schema/wwpdb_validation_v6.02.xsd
 #         - a XML schema for wwPDB validation reports, v6.02, rev. 2023-02-06
 #
@@ -31,7 +31,7 @@ data_mmcif_pdbx_validation.dic
 
     _dictionary.title           mmcif_pdbx_validation.dic
     _dictionary.datablock_id    mmcif_pdbx_validation.dic
-    _dictionary.version         4.370
+    _dictionary.version         4.371
 #
     loop_
     _dictionary_history.version
@@ -1139,6 +1139,16 @@ data_mmcif_pdbx_validation.dic
 >       entity.id type. # merged
 >     + Define pdb_id_u data type as case insensitive # merged
 >     + Change data type for _em_3d_fitting_list.pdb_entry_id to pdb_id_u # merged
+;
+  4.371   2023-06-21
+;
+>     + Add _ndb_struct_na_base_pair.hbond_type_leontis_westhof to eventually replace
+>       _ndb_struct_na_base_pair.hbond_type_12 # merged
+>     + Extend _pdbx_audit_support.funding_organization enumeration # not mapped
+>     + Change "LNLS SIRUS" to "LNLS SIRIUS" in _diffrn_source.pdbx_synchrotron_site
+>       and _diffrn_source.type enumerations # merged
+>     + Change type of _em_obsolete.id to code # not mapped
+>     + Make _diffrn.pdbx_serial_crystal_experiment mandatory for deposition # merged
 ;
 
 
@@ -4611,7 +4621,7 @@ save__diffrn_source.type
      "_diffrn_source.type"  "LNLS BEAMLINE D03B-MX1"                         SYNCHROTRON
      "_diffrn_source.type"  "LNLS BEAMLINE D11A-SAXS1"                       SYNCHROTRON
      "_diffrn_source.type"  "LNLS BEAMLINE W01B-MX2"                         SYNCHROTRON
-     "_diffrn_source.type"  "LNLS SIRUS BEAMLINE MANACA"                     SYNCHROTRON
+     "_diffrn_source.type"  "LNLS SIRIUS BEAMLINE MANACA"                    SYNCHROTRON
      "_diffrn_source.type"  "LURE BEAMLINE DW21B"                            SYNCHROTRON
      "_diffrn_source.type"  "LURE BEAMLINE DW32"                             SYNCHROTRON
      "_diffrn_source.type"  "LURE BEAMLINE D41A"                             SYNCHROTRON
@@ -25692,7 +25702,7 @@ save__diffrn_source.pdbx_synchrotron_site
       "_diffrn_source.pdbx_synchrotron_site"  ISIS                              .
       "_diffrn_source.pdbx_synchrotron_site"  LANSCE                            .
       "_diffrn_source.pdbx_synchrotron_site"  LNLS                              .
-      "_diffrn_source.pdbx_synchrotron_site"  "LNLS SIRUS"                      .
+      "_diffrn_source.pdbx_synchrotron_site"  "LNLS SIRIUS"                     .
       "_diffrn_source.pdbx_synchrotron_site"  LURE                              .
       "_diffrn_source.pdbx_synchrotron_site"  "MAX II"                          .
       "_diffrn_source.pdbx_synchrotron_site"  "MAX IV"                          .
@@ -32855,6 +32865,61 @@ save__ndb_struct_na_base_pair.hbond_type_28
     _item.category_id             ndb_struct_na_base_pair
     _item.mandatory_code          no
     _item_type.code               int
+save_
+
+save__ndb_struct_na_base_pair.hbond_type_leontis_westhof
+    _item_description.description
+;
+               Base pair classification of Leontis and Westhof.
+
+               The Leontis-Westhof classification system annotates
+               basepairs according to the interacting edge used by
+               each base (Watson-Crick, Hoogsteen, or Sugar), and
+               glycosidic bond orientation (cis, trans).  For six of
+               twelve classes, the correct Leontis-Westhof notation
+               depends upon the order (i,j) of the identified
+               nucleotides.
+
+               Leontis NB and Westhof E (2001) Geometric nomenclature
+               and classification of RNA base pairs.  RNA 7:499-512.
+               https://doi.org/10.1017/s1355838201002515
+
+               Replacement for category item
+               _ndb_struct_na_base_pair.hbond_type_12. The older item
+               encodes the 12 classes by a numerical index, without
+               identifying the interacting edges used by each base in
+               nucleotides i,j.
+;
+    #
+    _item.name            "_ndb_struct_na_base_pair.hbond_type_leontis_westhof"
+    _item.category_id     ndb_struct_na_base_pair
+    _item.mandatory_code  no
+    #
+    _item_type.code  line
+    #
+    loop_
+    _item_enumeration.name
+    _item_enumeration.value
+    _item_enumeration.detail
+     "_ndb_struct_na_base_pair.hbond_type_leontis_westhof"  cWW  "LW#1 cis,   Watson-Crick i/Watson-Crick j"
+     "_ndb_struct_na_base_pair.hbond_type_leontis_westhof"  tWW  "LW#2 trans, Watson-Crick i/Watson-Crick j"
+     "_ndb_struct_na_base_pair.hbond_type_leontis_westhof"  cWH  "LW#3  cis, Watson-Crick i/Hoogsteen j"
+     "_ndb_struct_na_base_pair.hbond_type_leontis_westhof"  cHW  "LW#3r cis, Hoogsteen i/Watson-Crick j"
+     "_ndb_struct_na_base_pair.hbond_type_leontis_westhof"  tWH  "LW#4  trans, Watson-Crick i/Hoogsteen j"
+     "_ndb_struct_na_base_pair.hbond_type_leontis_westhof"  tHW  "LW#4r trans, Hoogsteen i/Watson-Crick j"
+     "_ndb_struct_na_base_pair.hbond_type_leontis_westhof"  cWS  "LW#5  cis, Watson-Crick i/Sugar j"
+     "_ndb_struct_na_base_pair.hbond_type_leontis_westhof"  cSW  "LW#5r cis, Sugar i/Watson-Crick j"
+     "_ndb_struct_na_base_pair.hbond_type_leontis_westhof"  tWS  "LW#6  trans, Watson-Crick i/Sugar j"
+     "_ndb_struct_na_base_pair.hbond_type_leontis_westhof"  tSW  "LW#6r trans, Sugar i/Watson-Crick j"
+     "_ndb_struct_na_base_pair.hbond_type_leontis_westhof"  cHH  "LW#7 cis,   Hoogsteen i/Hoogsteen j"
+     "_ndb_struct_na_base_pair.hbond_type_leontis_westhof"  tHH  "LW#8 trans, Hoogsteen i/Hoogsteen j"
+     "_ndb_struct_na_base_pair.hbond_type_leontis_westhof"  cHS  "LW#9  cis, Hoogsteen i/Sugar j"
+     "_ndb_struct_na_base_pair.hbond_type_leontis_westhof"  cSH  "LW#9r cis, Sugar i/Hoogsteen j"
+     "_ndb_struct_na_base_pair.hbond_type_leontis_westhof"  tHS  "LW#10  trans, Hoogsteen i/Sugar j"
+     "_ndb_struct_na_base_pair.hbond_type_leontis_westhof"  tSH  "LW#10r trans, Sugar i/Hoogsteen j"
+     "_ndb_struct_na_base_pair.hbond_type_leontis_westhof"  cSS  "LW#11 cis,   Sugar i/Sugar j"
+     "_ndb_struct_na_base_pair.hbond_type_leontis_westhof"  tSS  "LW#12 trans, Sugar i/Sugar j"
+    #
 save_
 
 ##################################
@@ -58934,7 +58999,7 @@ save__diffrn.pdbx_serial_crystal_experiment
 ;
     _item.name                  '_diffrn.pdbx_serial_crystal_experiment'
     _item.category_id             diffrn
-    _item.mandatory_code          no
+    _item.mandatory_code          yes
     _item_type.code               text
     loop_
     _item_examples.case           Y   N

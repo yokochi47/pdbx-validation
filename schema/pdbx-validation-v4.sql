@@ -21,7 +21,7 @@
 --  map xsd date type to: sql date type
 --
 -- Statistics of schema:
---  Generated 282 tables (3702 fields), 0 views (0 fields), 0 attr groups, 0 model groups in total
+--  Generated 282 tables (3703 fields), 0 views (0 fields), 0 attr groups, 0 model groups in total
 --   Unnecessary tables by inlining simple content as a primitive data type:
 --    schema location: pdbx-validation-v4.xsd
 --      improper_torsion_angle_rms_dev_error, mean_guiner_radius, angle_value, bond_angle_rms_dev, "B_iso", diff_density_max_esd, "L22", "B_calc", distance_rms_dev, "B_calc_au", pdbx_phase_calc_part_solvent, improper_torsion_angle_rms_dev, "S22_esd", atom_deviation, "S31", "A_meas", "pdbx_F_calc_part_solvent", upper_limit, psi, "L23", prot_cis, "L11", "L23_esd", "T23_esd", "F_meas_au", "sigmaI", omega, "S32", "Luzzati_sigma_a_free", "F_squared_calc", "L12", distance_rms_dev_medoid, pdbx_solvent_shrinkage_radii, current, chi1, pdbx_rotation_angle, chi2, chi3, chi4, chi5, "S21", "S33", scan_time_backgd, maximum_upper_distance_constraint_violation, pdbx_scan_angle, "L13", "A_calc", "T12_esd", "S12_esd", "Luzzati_d_res_low_free", value, "B_meas", "S22", value_esd, "Cartn_y_esd", pdbx_solvent_vdw_probe_radii, "S13_esd", "B_meas_au", origin_y, origin_z, origin_x, "Cartn_z_esd", peptide_planarity_rms_dev, "P", phi, pdbx_collection_time_total, dihedral_angle_value, "B_iso_Wilson_estimate", zeta, maximum_lower_distance_constraint_violation, energyfilter_lower, "S11", "S23", nu1, "F_meas_sigma", nu2, nu3, "L12_esd", "F_calc_au", diff_density_min, nu4, nu0, "T33", tilt_angle_min, phase_meas, nominal_defocus_min, "S32_esd", "S12", calibrated_defocus_min, rise_per_n_subunits, "aniso_B33", "Luzzati_d_res_low_obs", pdbx_solvent_ion_probe_radii, "Luzzati_coordinate_error_free", "T22", lower_limit, "Luzzati_coordinate_error_obs", "S13", "T11_esd", "L11_esd", "aniso_B22", "S23_esd", concentration_range, "T23", max_mean_cross_sectional_radii_gyration_esd, "T11", clash_magnitude, angle_target_value, dihedral_angles_rms_dev, min_mean_cross_sectional_radii_gyration_esd, "L22_esd", neighbor_ligand_distance, tau0, "S21_esd", tau1, "aniso_B11", "aniso_B23", average_distance_constraint_violation, "B_iso_esd", maximum_distance_constraint_violation, "T12", max_mean_cross_sectional_radii_gyration, "A_calc_au", "S33_esd", "pdbx_F_calc_with_solvent", phase_calc, bond_angle_rms_dev_error, nominal_defocus_max, "aniso_B12", "B_iso_max", bond_deviation, angle_phi, min_mean_cross_sectional_radii_gyration, "T13", delta, distance_rms_dev_error, "B_iso_mean", energyfilter_upper, covalent_bond_rms_dev, "F_squared_meas", epsilon, "aniso_B13", angle_theta, "F_meas_sigma_au", mean_guiner_radius_esd, angle_deviation, dihedral_angles_rms_dev_error, "T22_esd", peptide_planarity_rms_dev_error, "pdbx_res_netI_over_sigmaI_2", "Luzzati_sigma_a_obs", "Cartn_z", detector_distance, "S31_esd", beta, "L13_esd", "F_squared_sigma", voltage, angle_kappa, ambient_pressure_esd, "T13_esd", gamma, rotation_per_n_subunits, "Cartn_y", temp, covalent_bond_rms_dev_error, rmsd, "S11_esd", temperature, "A_meas_au", alpha, "Cartn_x_esd", "Cartn_x", "F_calc", power, diff_density_min_esd, ambient_temp_esd, neighbor_macromolecule_distance, "I", diff_density_max, angle_psi, "L33_esd", dihedral_angle_target_value, taum, angle_omega, pdbx_dist_value, scan_rate, "T33_esd", tau2, tau3, tau4, "B_iso_min", pdbx_phase_calc_with_solvent, tilt_angle_max, "F_meas", angle_chi, diff_density_rms_esd, average_torsion_angle_constraint_violation, maximum_torsion_angle_constraint_violation, "L33", diff_density_rms, dist, improper_torsion_angle, "pdbx_res_netI_over_av_sigmaI_2"
@@ -36,7 +36,7 @@
 --   User keys:
 --    234 document keys, 0 serial keys, 0 xpath keys
 --   Contents:
---    495 attributes (43 in-place document keys), 2973 elements (5 in-place document keys), 0 simple contents (0 in-place document keys, 0 as attribute, 0 as conditional attribute)
+--    495 attributes (43 in-place document keys), 2974 elements (5 in-place document keys), 0 simple contents (0 in-place document keys, 0 as attribute, 0 as conditional attribute)
 --   Wild cards:
 --    0 any elements, 0 any attributes
 --   Constraints:
@@ -44,8 +44,8 @@
 --
 
 --
--- VRPT PDBML Schema v4.370
--- VRPT PDBML Schema translated from wwPDB Validation Information Dictionary v4.370, which is backward compatible with the PDBx/mmCIF Dictionary v5.370: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
+-- VRPT PDBML Schema v4.371
+-- VRPT PDBML Schema translated from wwPDB Validation Information Dictionary v4.371, which is backward compatible with the PDBx/mmCIF Dictionary v5.370: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
 -- URI-reference = http://pdbml.pdb.org/schema/pdbx-validation-v4.xsd
 --
 
@@ -2807,12 +2807,15 @@ CREATE TABLE ndb_struct_conf_na (
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v4.xsd (VRPTx), schema location: pdbx-validation-v4.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
+DROP TYPE IF EXISTS ENUM_ndb_struct_na_base_pair_hbond_type_leontis_westhof CASCADE;
+CREATE TYPE ENUM_ndb_struct_na_base_pair_hbond_type_leontis_westhof AS ENUM ( 'cWW', 'tWW', 'cWH', 'cHW', 'tWH', 'tHW', 'cWS', 'cSW', 'tWS', 'tSW', 'cHH', 'tHH', 'cHS', 'cSH', 'tHS', 'tSH', 'cSS', 'tSS' );
 CREATE TABLE ndb_struct_na_base_pair (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	entry_id TEXT ,
 	buckle DECIMAL ,
 	hbond_type_12 INTEGER ,
 	hbond_type_28 INTEGER ,
+	hbond_type_leontis_westhof ENUM_ndb_struct_na_base_pair_hbond_type_leontis_westhof ,
 	"i_PDB_ins_code" TEXT ,
 	i_auth_asym_id TEXT ,
 	i_auth_seq_id TEXT ,
