@@ -46,6 +46,7 @@ em_entity_assembly.go_id
 em_entity_assembly.ipr_id
 em_entity_assembly_molwt.method
 em_entity_assembly.mutant_flag
+em_entity_assembly_naturalsource.details
 em_entity_assembly.number_of_copies
 em_experiment.specimen_type
 em_helical_entity.dyad

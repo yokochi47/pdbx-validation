@@ -1131,6 +1131,7 @@ em_entity_assembly.mutant_flag
 em_entity_assembly.name
 em_entity_assembly_naturalsource.cell
 em_entity_assembly_naturalsource.cellular_location
+em_entity_assembly_naturalsource.details
 em_entity_assembly_naturalsource.entity_assembly_id
 em_entity_assembly_naturalsource.id
 em_entity_assembly_naturalsource.ncbi_tax_id

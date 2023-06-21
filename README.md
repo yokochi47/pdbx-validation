@@ -207,11 +207,17 @@ File path | Document
 
 ## Release notes
 
+- **Jun 21, 2023**: Release v4.4.22
+	- Update wwPDB Validation Information Dictionary to 4.372.
+
 - **Jun 21, 2023**: Release v4.4.21
 	- Update wwPDB Validation Information Dictionary to 4.371.
 
 - **Jun 21, 2023**: Release v4.4.20
 	- Update wwPDB Validation Information Dictionary to 4.370.
+
+- **Jun 21, 2023**: Release v4.4.22
+	- Update wwPDB Validation Information Dictionary to 4.372.
 
 - **Jun 21, 2023**: Release v4.4.21
 	- Update wwPDB Validation Information Dictionary to 4.371.
