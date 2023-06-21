@@ -2480,6 +2480,12 @@ Criteria for FSC offset curve, <xsl:value-of select="VRPTx:title"/>, is not list
                 <xsl:when test="@type='interchain'">
                   <xsl:attribute name="restraint_type">InterChain</xsl:attribute>
                 </xsl:when>
+                <xsl:when test="@type='hydrogen_bond'">
+                  <xsl:attribute name="restraint_type">HydrogenBond</xsl:attribute>
+                </xsl:when>
+                <xsl:when test="@type='disulfide_bond'">
+                  <xsl:attribute name="restraint_type">DisulfideBond</xsl:attribute>
+                </xsl:when>
                 <xsl:when test="@type='all'">
                   <xsl:attribute name="restraint_type">Total</xsl:attribute>
                 </xsl:when>
@@ -2553,6 +2559,12 @@ Distance restraint subtype , <xsl:value-of select="@subtype"/>, is not listed in
               <xsl:if test="VRPTx:interchain_violations_count">
                 <dist_rest_types dist_rest_type="InterChain" violations_count="{VRPTx:interchain_violations_count}"/>
               </xsl:if>
+              <xsl:if test="VRPTx:hydrogen_bond_violations_count">
+                <dist_rest_types dist_rest_type="HydrogenBond" violations_count="{VRPTx:hydrogen_bond_violations_count}"/>
+              </xsl:if>
+              <xsl:if test="VRPTx:disulfide_bond_violations_count">
+                <dist_rest_types dist_rest_type="DisulfideBond" violations_count="{VRPTx:disulfide_bond_violations_count}"/>
+              </xsl:if>
             </distance_violations_in_model>
           </xsl:for-each>
         </distance_violations_in_models>
@@ -2584,6 +2596,12 @@ Distance restraint subtype , <xsl:value-of select="@subtype"/>, is not listed in
               </xsl:if>
               <xsl:if test="VRPTx:interchain_violations_count">
                 <dist_rest_types dist_rest_type="InterChain" violations_count="{VRPTx:interchain_violations_count}"/>
+              </xsl:if>
+              <xsl:if test="VRPTx:hydrogen_bond_violations_count">
+                <dist_rest_types dist_rest_type="HydrigenBond" violations_count="{VRPTx:hydrogen_bond_violations_count}"/>
+              </xsl:if>
+              <xsl:if test="VRPTx:disulfide_bond_violations_count">
+                <dist_rest_types dist_rest_type="DisulfideBond" violations_count="{VRPTx:disulfide_bond_violations_count}"/>
               </xsl:if>
             </distance_violation_in_ensemble>
           </xsl:for-each>
@@ -2758,6 +2776,9 @@ Distance restraint subtype , <xsl:value-of select="@subtype"/>, is not listed in
                 <xsl:when test="@type='all'">
                   <xsl:attribute name="restraint_type">Total</xsl:attribute>
                 </xsl:when>
+                <xsl:when test="@type='other'">
+                  <xsl:attribute name="restraint_type">.</xsl:attribute>
+                </xsl:when>
                 <xsl:otherwise>
                   <xsl:call-template name="error_handler">
                     <xsl:with-param name="terminate">yes</xsl:with-param>
@@ -2863,6 +2884,9 @@ Dihedral angle restraint type , <xsl:value-of select="@type"/>, is not listed in
               <xsl:if test="VRPTx:chi42_violations_count">
                 <ang_rest_types ang_rest_type="CHI42" violations_count="{VRPTx:chi42_violations_count}"/>
               </xsl:if>
+              <xsl:if test="VRPTx:other_violations_count">
+                <ang_rest_types ang_rest_type="." violations_count="{VRPTx:other_violations_count}"/>
+              </xsl:if>
             </dihedralangle_violations_in_model>
           </xsl:for-each>
         </dihedralangle_violations_in_models>
@@ -2951,6 +2975,9 @@ Dihedral angle restraint type , <xsl:value-of select="@type"/>, is not listed in
               </xsl:if>
               <xsl:if test="VRPTx:chi42_violations_count">
                 <ang_rest_types ang_rest_type="CHI42" violations_count="{VRPTx:chi42_violations_count}"/>
+              </xsl:if>
+              <xsl:if test="VRPTx:other_violations_count">
+                <ang_rest_types ang_rest_type="." violations_count="{VRPTx:other_violations_count}"/>
               </xsl:if>
             </dihedralangle_violation_in_ensemble>
           </xsl:for-each>

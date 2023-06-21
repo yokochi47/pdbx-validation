@@ -44,8 +44,8 @@
 --
 
 --
--- PDBML Schema v5.372
--- PDBML Schema translated from the PDBx/mmCIF Dictionary v5.372: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
+-- PDBML Schema v5.373
+-- PDBML Schema translated from the PDBx/mmCIF Dictionary v5.373: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
 -- URI-reference = http://pdbml.pdb.org/schema/pdbx-v50.xsd
 --
 
@@ -8422,7 +8422,7 @@ CREATE TYPE ENUM_pdbx_database_status_status_code_cs AS ENUM ( 'PROC', 'WAIT', '
 DROP TYPE IF EXISTS ENUM_pdbx_database_status_status_code_mr CASCADE;
 CREATE TYPE ENUM_pdbx_database_status_status_code_mr AS ENUM ( 'PROC', 'WAIT', 'REL', 'HOLD', 'HPUB', 'OBS', 'WDRN', 'AUTH', 'POLC', 'REPL', 'AUCO', 'RMVD' );
 DROP TYPE IF EXISTS ENUM_pdbx_database_status_status_code_nmr_data CASCADE;
-CREATE TYPE ENUM_pdbx_database_status_status_code_nmr_data AS ENUM ( 'PROC', 'WAIT', 'AUTH', 'POLC', 'REPL', 'REL', 'HOLD', 'HPUB', 'OBS', 'RMVD', 'WDRN' );
+CREATE TYPE ENUM_pdbx_database_status_status_code_nmr_data AS ENUM ( 'PROC', 'WAIT', 'AUTH', 'AUCO', 'POLC', 'REPL', 'REL', 'HOLD', 'HPUB', 'OBS', 'RMVD', 'WDRN' );
 DROP TYPE IF EXISTS ENUM_pdbx_database_status_status_code_sf CASCADE;
 CREATE TYPE ENUM_pdbx_database_status_status_code_sf AS ENUM ( 'PROC', 'WAIT', 'REL', 'HOLD', 'HPUB', 'OBS', 'WDRN', 'AUTH', 'POLC', 'REPL', 'RMVD' );
 DROP TYPE IF EXISTS ENUM_pdbx_database_status_status_coordinates_in_NDB CASCADE;

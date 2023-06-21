@@ -1,10 +1,10 @@
 ###########################################################################
 #
 # File:  mmcif_pdbx_validation-v4.dic
-# Date:  Wed Jun 21 17:41:27 JST 2023
+# Date:  Wed Jun 21 18:53:35 JST 2023
 #
 # Created from:
-#        mmcif_pdbx_v50.dic   - PDB Exchange Data Dictionary (V5.372)
+#        mmcif_pdbx_v50.dic   - PDB Exchange Data Dictionary (V5.373)
 #        http://wwpdb.org/validation/schema/wwpdb_validation_v6.02.xsd
 #         - a XML schema for wwPDB validation reports, v6.02, rev. 2023-02-06
 #
@@ -31,7 +31,7 @@ data_mmcif_pdbx_validation.dic
 
     _dictionary.title           mmcif_pdbx_validation.dic
     _dictionary.datablock_id    mmcif_pdbx_validation.dic
-    _dictionary.version         4.372
+    _dictionary.version         4.373
 #
     loop_
     _dictionary_history.version
@@ -1159,6 +1159,19 @@ data_mmcif_pdbx_validation.dic
 >     + Make _pdbx_reference_entity_sequence.one_letter_codes non-mandatory # not mapped
 >     + Extend _pdbx_audit_support.funding_organization enumeration # not mapped
 ;
+  4.373   2023-06-21
+;
+>     + Add AUCO to enumeration of _pdbx_database_status.status_code_nmr_data
+>     + Correct pdb_id_u regular expressio
+      + Support NMR restraint remediation
+        + Add "other" to _pdbx_nmr_dihedral_angle_violation_summary.type enumeration
+        + Add _pdbx_nmr_dihedral_angle_violation_model.other_violations_count
+        + Add _pdbx_nmr_dihedral_angle_violation_ensemble.other_violations_count
+        + Add _pdbx_nmr_distance_violation_model.hydrogen_bond_violations_count
+        + Add _pdbx_nmr_distance_violation_model.disulfide_bond_violations_count
+        + Add _pdbx_nmr_distance_violation_ensemble.hydrogen_bond_violations_count
+        + Add _pdbx_nmr_distance_violation_ensemble.disulfide_bond_violations_count
+;
 
 
 #
@@ -1558,7 +1571,7 @@ data_mmcif_pdbx_validation.dic
                positive_int        numb  '[1-9][0-9]*'                                      'Positive integers (1,2,3,..)'
                emd_id              char  'EMD-[0-9]{4,}'                                    'EMDB code'
                pdb_id              char  '([1-9][A-Z0-9]{3}|PDB_[A-Z0-9]{8})'               'PDB code (upper cases)'
-               pdb_id_u            uchar '([1-9][A-Z0-9]{3}|PDB_[A-Z0-9]{8})'               'PDB code (case insensitive)'
+               pdb_id_u            uchar '[1-9][A-Za-z0-9]{3}|[Pp][Dd][Bb]_[A-Za-z0-9]{8}'  'PDB code (case insensitive)'
                point_group         char  '(C[1-9][0-9]*|D[2-9]|D[1-9][0-9]+|O|T|I)'         'Point group symmetry in Schoenflies notation'
                point_group_helical char  '[CD][1-9][0-9]*'                                  'Point group symmetry for helices in Schoenflies notation'
                boolean             char  'YES|NO'                                           'Boolean type'
@@ -59302,6 +59315,7 @@ save__pdbx_database_status.status_code_nmr_data
     _item_enumeration.detail
      PROC  'Processing in progress'
      WAIT  'Processing started, waiting for author input to continue processing'
+     AUCO  'Author corrections pending review'
      AUTH  'Processed, waiting for author review and approval'
      POLC  'Waiting for a policy decision'
      REPL  'Author sent new coordinates'
@@ -68757,6 +68771,44 @@ save__pdbx_nmr_distance_violation_model.interchain_violations_count
     _pdbx_item_aliases.version    v6.01
 save_
 
+save__pdbx_nmr_distance_violation_model.hydrogen_bond_violations_count
+    _item_description.description
+;              The total number of hydrogen bond distance restraint violations
+               in a particular coordinate model.
+;
+    _item.name                  '_pdbx_nmr_distance_violation_model.hydrogen_bond_violations_count'
+    _item.category_id             pdbx_nmr_distance_violation_model
+    _item.mandatory_code          no
+    _item_type.code               int
+    loop_
+    _item_range.maximum
+    _item_range.minimum           .   0
+                                  0   0
+#
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/distance_restraints_analysis/distance_violations_in_models/distance_violations_in_model/dist_rest_types[@dist_rest_type="HydrogenBond"]/@violations_count'
+    _pdbx_item_aliases.schema     wwpdb_validation_v6.02.xsd
+    _pdbx_item_aliases.version    v6.02
+save_
+
+save__pdbx_nmr_distance_violation_model.disulfide_bond_violations_count
+    _item_description.description
+;              The total number of disulfide bond distance restraint violations
+               in a particular coordinate model.
+;
+    _item.name                  '_pdbx_nmr_distance_violation_model.disulfide_bond_violations_count'
+    _item.category_id             pdbx_nmr_distance_violation_model
+    _item.mandatory_code          no
+    _item_type.code               int
+    loop_
+    _item_range.maximum
+    _item_range.minimum           .   0
+                                  0   0
+#
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/distance_restraints_analysis/distance_violations_in_models/distance_violations_in_model/dist_rest_types[@dist_rest_type="DisulfideBond"]/@violations_count'
+    _pdbx_item_aliases.schema     wwpdb_validation_v6.02.xsd
+    _pdbx_item_aliases.version    v6.02
+save_
+
 ########################################
 # PDBX_NMR_DISTANCE_VIOLATION_ENSEMBLE #
 ########################################
@@ -68921,6 +68973,44 @@ save__pdbx_nmr_distance_violation_ensemble.interchain_violations_count
     _pdbx_item_aliases.xpath     '/wwPDB-validation-information/distance_restraints_analysis/distance_violations_in_ensemble/distance_violation_in_ensemble/dist_rest_types[@dist_rest_type="InterChain"]/@violations_count'
     _pdbx_item_aliases.schema     wwpdb_validation_v6.01.xsd
     _pdbx_item_aliases.version    v6.01
+save_
+
+save__pdbx_nmr_distance_violation_ensemble.hydrogen_bond_violations_count
+    _item_description.description
+;              The total number of hydrogen bond distance restraint violations
+               in a particular coordinate model.
+;
+    _item.name                  '_pdbx_nmr_distance_violation_ensemble.hydrogen_bond_violations_count'
+    _item.category_id             pdbx_nmr_distance_violation_ensemble
+    _item.mandatory_code          no
+    _item_type.code               int
+    loop_
+    _item_range.maximum
+    _item_range.minimum           .   0
+                                  0   0
+#
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/distance_restraints_analysis/distance_violations_in_ensemble/distance_violation_in_ensemble/dist_rest_types[@dist_rest_type="HydrogenBond"]/@violations_count'
+    _pdbx_item_aliases.schema     wwpdb_validation_v6.02.xsd
+    _pdbx_item_aliases.version    v6.02
+save_
+
+save__pdbx_nmr_distance_violation_ensemble.disulfide_bond_violations_count
+    _item_description.description
+;              The total number of disulfide bond distance restraint violations
+               in a particular coordinate model.
+;
+    _item.name                  '_pdbx_nmr_distance_violation_ensemble.disulfide_bond_violations_count'
+    _item.category_id             pdbx_nmr_distance_violation_ensemble
+    _item.mandatory_code          no
+    _item_type.code               int
+    loop_
+    _item_range.maximum
+    _item_range.minimum           .   0
+                                  0   0
+#
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/distance_restraints_analysis/distance_violations_in_ensemble/distance_violation_in_ensemble/dist_rest_types[@dist_rest_type="DisulfideBond"]/@violations_count'
+    _pdbx_item_aliases.schema     wwpdb_validation_v6.02.xsd
+    _pdbx_item_aliases.version    v6.02
 save_
 
 ######################################
@@ -70019,6 +70109,7 @@ save__pdbx_nmr_dihedral_angle_violation_summary.type
      chi31     "protein side-chain torsion angle chi3, variant 1 for ILE, and LEU residues"
      chi32     "protein side-chain torsion angle chi3, variant 2 for LEU, and ASP (uncharged) residues"
      chi42     "protein side-chain torsion angle chi4, variant 2 for GLU (uncharged) residue"
+     other     "other torsion angle"
      all       'all dihedral angle restraints without classification'
 #
     _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/dihedralangle_violations_summary/dihedralangle_violation_summary/@restraint_type'
@@ -70747,6 +70838,25 @@ save__pdbx_nmr_dihedral_angle_violation_model.chi42_violations_count
     _pdbx_item_aliases.version    v6.01
 save_
 
+save__pdbx_nmr_dihedral_angle_violation_model.other_violations_count
+    _item_description.description
+;              The total number of all other dihedral angle restraint violations
+               in a particular coordinate model.
+;
+    _item.name                  '_pdbx_nmr_dihedral_angle_violation_model.other_violations_count'
+    _item.category_id             pdbx_nmr_dihedral_angle_violation_model
+    _item.mandatory_code          no
+    _item_type.code               int
+    loop_
+    _item_range.maximum
+    _item_range.minimum           .   0
+                                  0   0
+#
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/dihedralangle_violations_in_models/dihedralangle_violations_in_model/ang_rest_types[@ang_rest_type="."]/@violations_count'
+    _pdbx_item_aliases.schema     wwpdb_validation_v6.02.xsd
+    _pdbx_item_aliases.version    v6.02
+save_
+
 ##############################################
 # PDBX_NMR_DIHEDRAL_ANGLE_VIOLATION_ENSEMBLE #
 ##############################################
@@ -71272,6 +71382,25 @@ save__pdbx_nmr_dihedral_angle_violation_ensemble.chi42_violations_count
     _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/dihedralangle_violations_in_ensemble/dihedralangle_violation_in_ensemble/ang_rest_types[@ang_rest_type="CHI42"]/@violations_count'
     _pdbx_item_aliases.schema     wwpdb_validation_v6.01.xsd
     _pdbx_item_aliases.version    v6.01
+save_
+
+save__pdbx_nmr_dihedral_angle_violation_ensemble.other_violations_count
+    _item_description.description
+;              The total number of all other dihedral angle restraint violations
+               in a particular coordinate model.
+;
+    _item.name                  '_pdbx_nmr_dihedral_angle_violation_ensemble.other_violations_count'
+    _item.category_id             pdbx_nmr_dihedral_angle_violation_ensemble
+    _item.mandatory_code          no
+    _item_type.code               int
+    loop_
+    _item_range.maximum
+    _item_range.minimum           .   0
+                                  0   0
+
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/dihedralangle_violations_in_ensemble/dihedralangle_violation_in_ensemble/ang_rest_types[@ang_rest_type="."]/@violations_count'
+    _pdbx_item_aliases.schema     wwpdb_validation_v6.02.xsd
+    _pdbx_item_aliases.version    v6.02
 save_
 
 ############################################
