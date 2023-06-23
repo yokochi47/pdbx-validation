@@ -1,7 +1,7 @@
 ###########################################################################
 #
 # File:  mmcif_pdbx_validation-v4.dic
-# Date:  Fri Jun 23 20:39:12 JST 2023
+# Date:  Fri Jun 23 21:07:28 JST 2023
 #
 # Created from:
 #        mmcif_pdbx_v50.dic   - PDB Exchange Data Dictionary (V5.373)
@@ -1161,8 +1161,8 @@ data_mmcif_pdbx_validation.dic
 ;
   4.373   2023-06-21
 ;
->     + Add AUCO to enumeration of _pdbx_database_status.status_code_nmr_data
->     + Correct pdb_id_u regular expressio
+>     + Add AUCO to enumeration of _pdbx_database_status.status_code_nmr_data # merged
+>     + Correct pdb_id_u regular expression # merged already
       + Support NMR restraint remediation
         + Add "other" to _pdbx_nmr_dihedral_angle_violation_summary.type enumeration
         + Add _pdbx_nmr_dihedral_angle_violation_model.other_violations_count
@@ -1172,6 +1172,7 @@ data_mmcif_pdbx_validation.dic
         + Add _pdbx_nmr_distance_violation_ensemble.hydrogen_bond_violations_count
         + Add _pdbx_nmr_distance_violation_ensemble.disulfide_bond_violations_count
         + Add data items for dihedral angles (CHI, ETA, THETA, ETA', THETA')
+      - Make _diffrn.pdbx_serial_crystal_experiment mandatory for deposition # declined
 ;
 
 
@@ -59023,7 +59024,7 @@ save__diffrn.pdbx_serial_crystal_experiment
 ;
     _item.name                  '_diffrn.pdbx_serial_crystal_experiment'
     _item.category_id             diffrn
-    _item.mandatory_code          yes
+    _item.mandatory_code          no
     _item_type.code               text
     loop_
     _item_examples.case           Y   N

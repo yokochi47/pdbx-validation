@@ -43,3 +43,8 @@ Fatal Error at file:
 /home2/yokochi2/pdbx-validation/test/XML-validation/7z9e-validation-full.xml, line 1, char 1.
 Message: invalid document structure.
 
+Fatal Error in PdbMlParserHandler [fatalError() method]:
+Fatal Error at file:
+/home2/yokochi2/pdbx-validation/test/XML-validation/7z9e-validation-full.xml, line 1, char 1.
+Message: invalid document structure.
+

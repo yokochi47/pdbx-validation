@@ -225,7 +225,7 @@ degradation and so on.
                         </xsd:documentation>
               </xsd:annotation>
             </xsd:element>
-            <xsd:element name="pdbx_serial_crystal_experiment" minOccurs="1" maxOccurs="1" type="xsd:string">
+            <xsd:element name="pdbx_serial_crystal_experiment" minOccurs="0" maxOccurs="1" nillable="true" type="xsd:string">
               <xsd:annotation>
                 <xsd:documentation xml:lang="en" source="http://mmcif.wwpdb.org/dictionaries/mmcif_pdbx_v50.dic/Items/_diffrn.pdbx_serial_crystal_experiment.html">
 Y/N if using serial crystallography experiment in which multiple crystals contribute to each diffraction frame in the experiment.
