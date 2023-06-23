@@ -1,7 +1,7 @@
 ###########################################################################
 #
 # File:  mmcif_pdbx_validation-v4.dic
-# Date:  Wed Jun 21 18:53:35 JST 2023
+# Date:  Fri Jun 23 20:39:12 JST 2023
 #
 # Created from:
 #        mmcif_pdbx_v50.dic   - PDB Exchange Data Dictionary (V5.373)
@@ -1171,6 +1171,7 @@ data_mmcif_pdbx_validation.dic
         + Add _pdbx_nmr_distance_violation_model.disulfide_bond_violations_count
         + Add _pdbx_nmr_distance_violation_ensemble.hydrogen_bond_violations_count
         + Add _pdbx_nmr_distance_violation_ensemble.disulfide_bond_violations_count
+        + Add data items for dihedral angles (CHI, ETA, THETA, ETA', THETA')
 ;
 
 
@@ -70085,14 +70086,14 @@ save__pdbx_nmr_dihedral_angle_violation_summary.type
     loop_
     _item_enumeration.value
     _item_enumeration.detail
-     phi       'protein main-chain torsion angle phi'
-     psi       'protein main-chain torsion angle psi'
-     omega     'protein main-chain torsion angle omega'
+     phi       "protein main-chain torsion angle phi"
+     psi       "protein main-chain torsion angle psi"
+     omega     "protein main-chain torsion angle omega"
      chi1      "protein side-chain torsion angle chi1 / nucleic acid sugar-base torsion angle chi1 (O4'-C1'-N1-C2)"
      chi2      "protein side-chain torsion angle chi2 / nucleic acid sugar-base torsion angle chi2 (O4'-C1'-N9-C4)"
      chi3      "protein side-chain torsion angle chi3"
-     chi4      'protein side-chain torsion angle chi4'
-     chi5      'protein side-chain torsion angle chi5'
+     chi4      "protein side-chain torsion angle chi4"
+     chi5      "protein side-chain torsion angle chi5"
      alpha     "nucleic acid backbone torsion angle alpha (O3'-P-O5'-C5')"
      beta      "nucleic acid backbone torsion angle beta (P-O5'-C5'-C4')"
      gamma     "nucleic acid backbone torsion angle gamma (O5'-C5'-C4'-C3')"
@@ -70109,8 +70110,13 @@ save__pdbx_nmr_dihedral_angle_violation_summary.type
      chi31     "protein side-chain torsion angle chi3, variant 1 for ILE, and LEU residues"
      chi32     "protein side-chain torsion angle chi3, variant 2 for LEU, and ASP (uncharged) residues"
      chi42     "protein side-chain torsion angle chi4, variant 2 for GLU (uncharged) residue"
+     chi       "nucleic acid torsion angle phi aka. chin (O4'-C1'-N1-C2 for pyrimidines, O4'-C1'-N9-C4 for purines)"
+     eta       "nucleic acid backbone torsion angle eta (C4'(i-1)-P-C4'-P(i+1))"
+     theta     "nucleic acid backbone torsion angle theta (P-C4'-P(i+1)-C4'(i+1))"
+     "eta'"    "nucleic acid backbone torsion angle eta' (C1'(i-1)-P-C1'-P(i+1))"
+     "theta'"  "nucleic acid backbone torsion angle theta' (P-C1'-P(i+1)-C1'(i+1))"
      other     "other torsion angle"
-     all       'all dihedral angle restraints without classification'
+     all       "all dihedral angle restraints without classification"
 #
     _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/dihedralangle_violations_summary/dihedralangle_violation_summary/@restraint_type'
     _pdbx_item_aliases.schema     wwpdb_validation_v6.01.xsd
@@ -70838,6 +70844,101 @@ save__pdbx_nmr_dihedral_angle_violation_model.chi42_violations_count
     _pdbx_item_aliases.version    v6.01
 save_
 
+save__pdbx_nmr_dihedral_angle_violation_model.chi_violations_count
+    _item_description.description
+;              The total number of all CHI dihedral angle restraint violations
+               in a particular coordinate model.
+;
+    _item.name                  '_pdbx_nmr_dihedral_angle_violation_model.chi_violations_count'
+    _item.category_id             pdbx_nmr_dihedral_angle_violation_model
+    _item.mandatory_code          no
+    _item_type.code               int
+    loop_
+    _item_range.maximum
+    _item_range.minimum           .   0
+                                  0   0
+#
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/dihedralangle_violations_in_models/dihedralangle_violations_in_model/ang_rest_types[@ang_rest_type="CHI"]/@violations_count'
+    _pdbx_item_aliases.schema     wwpdb_validation_v6.02.xsd
+    _pdbx_item_aliases.version    v6.02
+save_
+
+save__pdbx_nmr_dihedral_angle_violation_model.eta_violations_count
+    _item_description.description
+;              The total number of all ETA dihedral angle restraint violations
+               in a particular coordinate model.
+;
+    _item.name                  '_pdbx_nmr_dihedral_angle_violation_model.eta_violations_count'
+    _item.category_id             pdbx_nmr_dihedral_angle_violation_model
+    _item.mandatory_code          no
+    _item_type.code               int
+    loop_
+    _item_range.maximum
+    _item_range.minimum           .   0
+                                  0   0
+#
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/dihedralangle_violations_in_models/dihedralangle_violations_in_model/ang_rest_types[@ang_rest_type="ETA"]/@violations_count'
+    _pdbx_item_aliases.schema     wwpdb_validation_v6.02.xsd
+    _pdbx_item_aliases.version    v6.02
+save_
+
+save__pdbx_nmr_dihedral_angle_violation_model.theta_violations_count
+    _item_description.description
+;              The total number of all THETA dihedral angle restraint violations
+               in a particular coordinate model.
+;
+    _item.name                  '_pdbx_nmr_dihedral_angle_violation_model.theta_violations_count'
+    _item.category_id             pdbx_nmr_dihedral_angle_violation_model
+    _item.mandatory_code          no
+    _item_type.code               int
+    loop_
+    _item_range.maximum
+    _item_range.minimum           .   0
+                                  0   0
+#
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/dihedralangle_violations_in_models/dihedralangle_violations_in_model/ang_rest_types[@ang_rest_type="THETA"]/@violations_count'
+    _pdbx_item_aliases.schema     wwpdb_validation_v6.02.xsd
+    _pdbx_item_aliases.version    v6.02
+save_
+
+save__pdbx_nmr_dihedral_angle_violation_model.eta_prime_violations_count
+    _item_description.description
+;              The total number of all ETA' dihedral angle restraint violations
+               in a particular coordinate model.
+;
+    _item.name                  '_pdbx_nmr_dihedral_angle_violation_model.eta_prime_violations_count'
+    _item.category_id             pdbx_nmr_dihedral_angle_violation_model
+    _item.mandatory_code          no
+    _item_type.code               int
+    loop_
+    _item_range.maximum
+    _item_range.minimum           .   0
+                                  0   0
+#
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/dihedralangle_violations_in_models/dihedralangle_violations_in_model/ang_rest_types[@ang_rest_type="ETA&apos;"]/@violations_count'
+    _pdbx_item_aliases.schema     wwpdb_validation_v6.02.xsd
+    _pdbx_item_aliases.version    v6.02
+save_
+
+save__pdbx_nmr_dihedral_angle_violation_model.theta_prime_violations_count
+    _item_description.description
+;              The total number of all THETA' dihedral angle restraint violations
+               in a particular coordinate model.
+;
+    _item.name                  '_pdbx_nmr_dihedral_angle_violation_model.theta_prime_violations_count'
+    _item.category_id             pdbx_nmr_dihedral_angle_violation_model
+    _item.mandatory_code          no
+    _item_type.code               int
+    loop_
+    _item_range.maximum
+    _item_range.minimum           .   0
+                                  0   0
+#
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/dihedralangle_violations_in_models/dihedralangle_violations_in_model/ang_rest_types[@ang_rest_type="THETA&apos;"]/@violations_count'
+    _pdbx_item_aliases.schema     wwpdb_validation_v6.02.xsd
+    _pdbx_item_aliases.version    v6.02
+save_
+
 save__pdbx_nmr_dihedral_angle_violation_model.other_violations_count
     _item_description.description
 ;              The total number of all other dihedral angle restraint violations
@@ -70852,7 +70953,7 @@ save__pdbx_nmr_dihedral_angle_violation_model.other_violations_count
     _item_range.minimum           .   0
                                   0   0
 #
-    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/dihedralangle_violations_in_models/dihedralangle_violations_in_model/ang_rest_types[@ang_rest_type="."]/@violations_count'
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/dihedralangle_violations_in_models/dihedralangle_violations_in_model/ang_rest_types[@ang_rest_type="." or @ang_rest_type="PPA"]/@violations_count'
     _pdbx_item_aliases.schema     wwpdb_validation_v6.02.xsd
     _pdbx_item_aliases.version    v6.02
 save_
@@ -71382,6 +71483,101 @@ save__pdbx_nmr_dihedral_angle_violation_ensemble.chi42_violations_count
     _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/dihedralangle_violations_in_ensemble/dihedralangle_violation_in_ensemble/ang_rest_types[@ang_rest_type="CHI42"]/@violations_count'
     _pdbx_item_aliases.schema     wwpdb_validation_v6.01.xsd
     _pdbx_item_aliases.version    v6.01
+save_
+
+save__pdbx_nmr_dihedral_angle_violation_ensemble.chi_violations_count
+    _item_description.description
+;              The total number of all CHI dihedral angle restraint violations
+               in a particular coordinate model.
+;
+    _item.name                  '_pdbx_nmr_dihedral_angle_violation_ensemble.chi_violations_count'
+    _item.category_id             pdbx_nmr_dihedral_angle_violation_ensemble
+    _item.mandatory_code          no
+    _item_type.code               int
+    loop_
+    _item_range.maximum
+    _item_range.minimum           .   0
+                                  0   0
+
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/dihedralangle_violations_in_ensemble/dihedralangle_violation_in_ensemble/ang_rest_types[@ang_rest_type="CHI"]/@violations_count'
+    _pdbx_item_aliases.schema     wwpdb_validation_v6.02.xsd
+    _pdbx_item_aliases.version    v6.02
+save_
+
+save__pdbx_nmr_dihedral_angle_violation_ensemble.eta_violations_count
+    _item_description.description
+;              The total number of allC ETA dihedral angle restraint violations
+               in a particular coordinate model.
+;
+    _item.name                  '_pdbx_nmr_dihedral_angle_violation_ensemble.eta_violations_count'
+    _item.category_id             pdbx_nmr_dihedral_angle_violation_ensemble
+    _item.mandatory_code          no
+    _item_type.code               int
+    loop_
+    _item_range.maximum
+    _item_range.minimum           .   0
+                                  0   0
+
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/dihedralangle_violations_in_ensemble/dihedralangle_violation_in_ensemble/ang_rest_types[@ang_rest_type="ETA"]/@violations_count'
+    _pdbx_item_aliases.schema     wwpdb_validation_v6.02.xsd
+    _pdbx_item_aliases.version    v6.02
+save_
+
+save__pdbx_nmr_dihedral_angle_violation_ensemble.theta_violations_count
+    _item_description.description
+;              The total number of all THETA dihedral angle restraint violations
+               in a particular coordinate model.
+;
+    _item.name                  '_pdbx_nmr_dihedral_angle_violation_ensemble.theta_violations_count'
+    _item.category_id             pdbx_nmr_dihedral_angle_violation_ensemble
+    _item.mandatory_code          no
+    _item_type.code               int
+    loop_
+    _item_range.maximum
+    _item_range.minimum           .   0
+                                  0   0
+
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/dihedralangle_violations_in_ensemble/dihedralangle_violation_in_ensemble/ang_rest_types[@ang_rest_type="THETA"]/@violations_count'
+    _pdbx_item_aliases.schema     wwpdb_validation_v6.02.xsd
+    _pdbx_item_aliases.version    v6.02
+save_
+
+save__pdbx_nmr_dihedral_angle_violation_ensemble.eta_prime_violations_count
+    _item_description.description
+;              The total number of all ETA' dihedral angle restraint violations
+               in a particular coordinate model.
+;
+    _item.name                  '_pdbx_nmr_dihedral_angle_violation_ensemble.eta_prime_violations_count'
+    _item.category_id             pdbx_nmr_dihedral_angle_violation_ensemble
+    _item.mandatory_code          no
+    _item_type.code               int
+    loop_
+    _item_range.maximum
+    _item_range.minimum           .   0
+                                  0   0
+
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/dihedralangle_violations_in_ensemble/dihedralangle_violation_in_ensemble/ang_rest_types[@ang_rest_type="ETA&apos;"]/@violations_count'
+    _pdbx_item_aliases.schema     wwpdb_validation_v6.02.xsd
+    _pdbx_item_aliases.version    v6.02
+save_
+
+save__pdbx_nmr_dihedral_angle_violation_ensemble.theta_prime_violations_count
+    _item_description.description
+;              The total number of all THETA' dihedral angle restraint violations
+               in a particular coordinate model.
+;
+    _item.name                  '_pdbx_nmr_dihedral_angle_violation_ensemble.theta_prime_violations_count'
+    _item.category_id             pdbx_nmr_dihedral_angle_violation_ensemble
+    _item.mandatory_code          no
+    _item_type.code               int
+    loop_
+    _item_range.maximum
+    _item_range.minimum           .   0
+                                  0   0
+
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/dihedralangle_violations_in_ensemble/dihedralangle_violation_in_ensemble/ang_rest_types[@ang_rest_type="THETA&apos;"]/@violations_count'
+    _pdbx_item_aliases.schema     wwpdb_validation_v6.02.xsd
+    _pdbx_item_aliases.version    v6.02
 save_
 
 save__pdbx_nmr_dihedral_angle_violation_ensemble.other_violations_count

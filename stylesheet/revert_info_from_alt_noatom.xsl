@@ -2776,6 +2776,21 @@ Distance restraint subtype , <xsl:value-of select="@subtype"/>, is not listed in
                 <xsl:when test="@type='all'">
                   <xsl:attribute name="restraint_type">Total</xsl:attribute>
                 </xsl:when>
+                <xsl:when test="@type='chi'">
+                  <xsl:attribute name="restraint_type">CHI</xsl:attribute>
+                </xsl:when>
+                <xsl:when test="@type='eta'">
+                  <xsl:attribute name="restraint_type">ETA</xsl:attribute>
+                </xsl:when>
+                <xsl:when test="@type='theta'">
+                  <xsl:attribute name="restraint_type">THETA</xsl:attribute>
+                </xsl:when>
+                <xsl:when test='@type="eta&apos;"'>
+                  <xsl:attribute name="restraint_type">ETA'</xsl:attribute>
+                </xsl:when>
+                <xsl:when test='@type="theta&apos;"'>
+                  <xsl:attribute name="restraint_type">THETA'</xsl:attribute>
+                </xsl:when>
                 <xsl:when test="@type='other'">
                   <xsl:attribute name="restraint_type">.</xsl:attribute>
                 </xsl:when>
@@ -2884,6 +2899,21 @@ Dihedral angle restraint type , <xsl:value-of select="@type"/>, is not listed in
               <xsl:if test="VRPTx:chi42_violations_count">
                 <ang_rest_types ang_rest_type="CHI42" violations_count="{VRPTx:chi42_violations_count}"/>
               </xsl:if>
+              <xsl:if test="VRPTx:chi_violations_count">
+                <ang_rest_types ang_rest_type="CHI" violations_count="{VRPTx:chi_violations_count}"/>
+              </xsl:if>
+              <xsl:if test="VRPTx:eta_violations_count">
+                <ang_rest_types ang_rest_type="ETA" violations_count="{VRPTx:eta_violations_count}"/>
+              </xsl:if>
+              <xsl:if test="VRPTx:theta_violations_count">
+                <ang_rest_types ang_rest_type="THETA" violations_count="{VRPTx:theta_violations_count}"/>
+              </xsl:if>
+              <xsl:if test="VRPTx:eta_prime_violations_count">
+                <ang_rest_types ang_rest_type="ETA'" violations_count="{VRPTx:eta_prime_violations_count}"/>
+              </xsl:if>
+              <xsl:if test="VRPTx:theta_prime_violations_count">
+                <ang_rest_types ang_rest_type="THETA'" violations_count="{VRPTx:theta_prime_violations_count}"/>
+              </xsl:if>
               <xsl:if test="VRPTx:other_violations_count">
                 <ang_rest_types ang_rest_type="." violations_count="{VRPTx:other_violations_count}"/>
               </xsl:if>
@@ -2975,6 +3005,21 @@ Dihedral angle restraint type , <xsl:value-of select="@type"/>, is not listed in
               </xsl:if>
               <xsl:if test="VRPTx:chi42_violations_count">
                 <ang_rest_types ang_rest_type="CHI42" violations_count="{VRPTx:chi42_violations_count}"/>
+              </xsl:if>
+              <xsl:if test="VRPTx:chi_violations_count">
+                <ang_rest_types ang_rest_type="CHI" violations_count="{VRPTx:chi_violations_count}"/>
+              </xsl:if>
+              <xsl:if test="VRPTx:eta_violations_count">
+                <ang_rest_types ang_rest_type="ETA" violations_count="{VRPTx:eta_violations_count}"/>
+              </xsl:if>
+              <xsl:if test="VRPTx:theta_violations_count">
+                <ang_rest_types ang_rest_type="THETA" violations_count="{VRPTx:theta_violations_count}"/>
+              </xsl:if>
+              <xsl:if test="VRPTx:eta_prime_violations_count">
+                <ang_rest_types ang_rest_type="ETA'" violations_count="{VRPTx:eta_prime_violations_count}"/>
+              </xsl:if>
+              <xsl:if test="VRPTx:theta_prime_violations_count">
+                <ang_rest_types ang_rest_type="THETA'" violations_count="{VRPTx:theta_prime_violations_count}"/>
               </xsl:if>
               <xsl:if test="VRPTx:other_violations_count">
                 <ang_rest_types ang_rest_type="." violations_count="{VRPTx:other_violations_count}"/>

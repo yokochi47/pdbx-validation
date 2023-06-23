@@ -1537,7 +1537,22 @@ Distance restraint type, <xsl:value-of select="@dist_rest_type"/>, is not listed
             <xsl:when test="@restraint_type='Total'">
               <xsl:attribute name="type">all</xsl:attribute>
             </xsl:when>
-            <xsl:when test="@restraint_type='.'">
+            <xsl:when test="@restraint_type='CHI'">
+              <xsl:attribute name="type">chi</xsl:attribute>
+            </xsl:when>
+            <xsl:when test="@restraint_type='ETA'">
+              <xsl:attribute name="type">eta</xsl:attribute>
+            </xsl:when>
+            <xsl:when test="@restraint_type='THETA'">
+              <xsl:attribute name="type">theta</xsl:attribute>
+            </xsl:when>
+            <xsl:when test='@restraint_type="ETA&apos;"'>
+              <xsl:attribute name="type">eta'</xsl:attribute>
+            </xsl:when>
+            <xsl:when test='@restraint_type="THETA&apos;"'>
+              <xsl:attribute name="type">theta'</xsl:attribute>
+            </xsl:when>
+            <xsl:when test="@restraint_type='.' or @restraint_type='PPA'">
               <xsl:attribute name="type">other</xsl:attribute>
             </xsl:when>
             <xsl:otherwise>
@@ -1648,7 +1663,22 @@ Restraint type, <xsl:value-of select="@restraint_type"/>, is not listed in XSLT 
               <xsl:when test="@ang_rest_type='CHI42'">
                 <VRPTx:chi42_violations_count><xsl:value-of select="@violations_count"/></VRPTx:chi42_violations_count>
               </xsl:when>
-              <xsl:when test="@ang_rest_type='.'">
+              <xsl:when test="@ang_rest_type='CHI'">
+                <VRPTx:chi_violations_count><xsl:value-of select="@violations_count"/></VRPTx:chi_violations_count>
+              </xsl:when>
+              <xsl:when test="@ang_rest_type='ETA'">
+                <VRPTx:eta_violations_count><xsl:value-of select="@violations_count"/></VRPTx:eta_violations_count>
+              </xsl:when>
+              <xsl:when test="@ang_rest_type='THETA'">
+                <VRPTx:theta_violations_count><xsl:value-of select="@violations_count"/></VRPTx:theta_violations_count>
+              </xsl:when>
+              <xsl:when test='@ang_rest_type="ETA&apos;"'>
+                <VRPTx:eta_prime_violations_count><xsl:value-of select="@violations_count"/></VRPTx:eta_prime_violations_count>
+              </xsl:when>
+              <xsl:when test='@ang_rest_type="THETA&apos;"'>
+                <VRPTx:theta_prime_violations_count><xsl:value-of select="@violations_count"/></VRPTx:theta_prime_violations_count>
+              </xsl:when>
+              <xsl:when test="@ang_rest_type='.' or @ang_rest_type='PPA'">
                 <VRPTx:other_violations_count><xsl:value-of select="@violations_count"/></VRPTx:other_violations_count>
               </xsl:when>
               <xsl:otherwise>
@@ -1757,7 +1787,22 @@ Dihedral angle restraint type, <xsl:value-of select="@ang_rest_type"/>, is not l
               <xsl:when test="@ang_rest_type='CHI42'">
                 <VRPTx:chi42_violations_count><xsl:value-of select="@violations_count"/></VRPTx:chi42_violations_count>
               </xsl:when>
-              <xsl:when test="@ang_rest_type='.'">
+              <xsl:when test="@ang_rest_type='CHI'">
+                <VRPTx:chi_violations_count><xsl:value-of select="@violations_count"/></VRPTx:chi_violations_count>
+              </xsl:when>
+              <xsl:when test="@ang_rest_type='ETA'">
+                <VRPTx:eta_violations_count><xsl:value-of select="@violations_count"/></VRPTx:eta_violations_count>
+              </xsl:when>
+              <xsl:when test="@ang_rest_type='THETA'">
+                <VRPTx:theta_violations_count><xsl:value-of select="@violations_count"/></VRPTx:theta_violations_count>
+              </xsl:when>
+              <xsl:when test='@ang_rest_type="ETA&apos;"'>
+                <VRPTx:eta_prime_violations_count><xsl:value-of select="@violations_count"/></VRPTx:eta_prime_violations_count>
+              </xsl:when>
+              <xsl:when test='@ang_rest_type="THETA&apos;"'>
+                <VRPTx:theta_prime_violations_count><xsl:value-of select="@violations_count"/></VRPTx:theta_prime_violations_count>
+              </xsl:when>
+              <xsl:when test="@ang_rest_type='.' or @ang_rest_type='PPA'">
                 <VRPTx:other_violations_count><xsl:value-of select="@violations_count"/></VRPTx:other_violations_count>
               </xsl:when>
               <xsl:otherwise>

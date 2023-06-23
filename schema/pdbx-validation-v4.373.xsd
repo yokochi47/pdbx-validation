@@ -17197,6 +17197,19 @@ in a particular coordinate model.
                 </xsd:restriction>
               </xsd:simpleType>
             </xsd:element>
+            <xsd:element name="chi_violations_count" minOccurs="0" maxOccurs="1" nillable="true">
+              <xsd:annotation>
+                <xsd:documentation xml:lang="en">
+The total number of all CHI dihedral angle restraint violations
+in a particular coordinate model.
+                        </xsd:documentation>
+              </xsd:annotation>
+              <xsd:simpleType>
+                <xsd:restriction base="xsd:int">
+                  <xsd:minInclusive value="0"/>
+                </xsd:restriction>
+              </xsd:simpleType>
+            </xsd:element>
             <xsd:element name="delta_violations_count" minOccurs="0" maxOccurs="1" nillable="true">
               <xsd:annotation>
                 <xsd:documentation xml:lang="en">
@@ -17214,6 +17227,32 @@ in a particular coordinate model.
               <xsd:annotation>
                 <xsd:documentation xml:lang="en">
 The total number of all EPSILON dihedral angle restraint violations
+in a particular coordinate model.
+                        </xsd:documentation>
+              </xsd:annotation>
+              <xsd:simpleType>
+                <xsd:restriction base="xsd:int">
+                  <xsd:minInclusive value="0"/>
+                </xsd:restriction>
+              </xsd:simpleType>
+            </xsd:element>
+            <xsd:element name="eta_prime_violations_count" minOccurs="0" maxOccurs="1" nillable="true">
+              <xsd:annotation>
+                <xsd:documentation xml:lang="en">
+The total number of all ETA' dihedral angle restraint violations
+in a particular coordinate model.
+                        </xsd:documentation>
+              </xsd:annotation>
+              <xsd:simpleType>
+                <xsd:restriction base="xsd:int">
+                  <xsd:minInclusive value="0"/>
+                </xsd:restriction>
+              </xsd:simpleType>
+            </xsd:element>
+            <xsd:element name="eta_violations_count" minOccurs="0" maxOccurs="1" nillable="true">
+              <xsd:annotation>
+                <xsd:documentation xml:lang="en">
+The total number of allC ETA dihedral angle restraint violations
 in a particular coordinate model.
                         </xsd:documentation>
               </xsd:annotation>
@@ -17352,6 +17391,32 @@ in a particular coordinate model.
               <xsd:annotation>
                 <xsd:documentation xml:lang="en">
 The total number of all PSI dihedral angle restraint violations
+in a particular coordinate model.
+                        </xsd:documentation>
+              </xsd:annotation>
+              <xsd:simpleType>
+                <xsd:restriction base="xsd:int">
+                  <xsd:minInclusive value="0"/>
+                </xsd:restriction>
+              </xsd:simpleType>
+            </xsd:element>
+            <xsd:element name="theta_prime_violations_count" minOccurs="0" maxOccurs="1" nillable="true">
+              <xsd:annotation>
+                <xsd:documentation xml:lang="en">
+The total number of all THETA' dihedral angle restraint violations
+in a particular coordinate model.
+                        </xsd:documentation>
+              </xsd:annotation>
+              <xsd:simpleType>
+                <xsd:restriction base="xsd:int">
+                  <xsd:minInclusive value="0"/>
+                </xsd:restriction>
+              </xsd:simpleType>
+            </xsd:element>
+            <xsd:element name="theta_violations_count" minOccurs="0" maxOccurs="1" nillable="true">
+              <xsd:annotation>
+                <xsd:documentation xml:lang="en">
+The total number of all THETA dihedral angle restraint violations
 in a particular coordinate model.
                         </xsd:documentation>
               </xsd:annotation>
@@ -17584,6 +17649,19 @@ in a particular coordinate model.
                 </xsd:restriction>
               </xsd:simpleType>
             </xsd:element>
+            <xsd:element name="chi_violations_count" minOccurs="0" maxOccurs="1" nillable="true">
+              <xsd:annotation>
+                <xsd:documentation xml:lang="en">
+The total number of all CHI dihedral angle restraint violations
+in a particular coordinate model.
+                        </xsd:documentation>
+              </xsd:annotation>
+              <xsd:simpleType>
+                <xsd:restriction base="xsd:int">
+                  <xsd:minInclusive value="0"/>
+                </xsd:restriction>
+              </xsd:simpleType>
+            </xsd:element>
             <xsd:element name="delta_violations_count" minOccurs="0" maxOccurs="1" nillable="true">
               <xsd:annotation>
                 <xsd:documentation xml:lang="en">
@@ -17601,6 +17679,32 @@ in a particular coordinate model.
               <xsd:annotation>
                 <xsd:documentation xml:lang="en">
 The total number of all EPSILON dihedral angle restraint violations
+in a particular coordinate model.
+                        </xsd:documentation>
+              </xsd:annotation>
+              <xsd:simpleType>
+                <xsd:restriction base="xsd:int">
+                  <xsd:minInclusive value="0"/>
+                </xsd:restriction>
+              </xsd:simpleType>
+            </xsd:element>
+            <xsd:element name="eta_prime_violations_count" minOccurs="0" maxOccurs="1" nillable="true">
+              <xsd:annotation>
+                <xsd:documentation xml:lang="en">
+The total number of all ETA' dihedral angle restraint violations
+in a particular coordinate model.
+                        </xsd:documentation>
+              </xsd:annotation>
+              <xsd:simpleType>
+                <xsd:restriction base="xsd:int">
+                  <xsd:minInclusive value="0"/>
+                </xsd:restriction>
+              </xsd:simpleType>
+            </xsd:element>
+            <xsd:element name="eta_violations_count" minOccurs="0" maxOccurs="1" nillable="true">
+              <xsd:annotation>
+                <xsd:documentation xml:lang="en">
+The total number of all ETA dihedral angle restraint violations
 in a particular coordinate model.
                         </xsd:documentation>
               </xsd:annotation>
@@ -17776,6 +17880,32 @@ in a particular coordinate model.
               <xsd:simpleType>
                 <xsd:restriction base="xsd:decimal">
                   <xsd:minInclusive value="0.0"/>
+                </xsd:restriction>
+              </xsd:simpleType>
+            </xsd:element>
+            <xsd:element name="theta_prime_violations_count" minOccurs="0" maxOccurs="1" nillable="true">
+              <xsd:annotation>
+                <xsd:documentation xml:lang="en">
+The total number of all THETA' dihedral angle restraint violations
+in a particular coordinate model.
+                        </xsd:documentation>
+              </xsd:annotation>
+              <xsd:simpleType>
+                <xsd:restriction base="xsd:int">
+                  <xsd:minInclusive value="0"/>
+                </xsd:restriction>
+              </xsd:simpleType>
+            </xsd:element>
+            <xsd:element name="theta_violations_count" minOccurs="0" maxOccurs="1" nillable="true">
+              <xsd:annotation>
+                <xsd:documentation xml:lang="en">
+The total number of all THETA dihedral angle restraint violations
+in a particular coordinate model.
+                        </xsd:documentation>
+              </xsd:annotation>
+              <xsd:simpleType>
+                <xsd:restriction base="xsd:int">
+                  <xsd:minInclusive value="0"/>
                 </xsd:restriction>
               </xsd:simpleType>
             </xsd:element>
@@ -18330,6 +18460,11 @@ the conventional residue number gap.
                 <xsd:enumeration value="chi31"/>
                 <xsd:enumeration value="chi32"/>
                 <xsd:enumeration value="chi42"/>
+                <xsd:enumeration value="chi"/>
+                <xsd:enumeration value="eta"/>
+                <xsd:enumeration value="theta"/>
+                <xsd:enumeration value="eta'"/>
+                <xsd:enumeration value="theta'"/>
                 <xsd:enumeration value="other"/>
                 <xsd:enumeration value="all"/>
               </xsd:restriction>
