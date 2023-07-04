@@ -28,9 +28,11 @@ WORK_DIR=.
 
 rm -rf $WORK_DIR/$RDF_CC
 
-for dir in chk_sum_pdbml_cc; do
- cd $dir; find . -type f | xargs rm -f; cd ..; rmdir $dir
-done
+if [ -e chk_sum_pdbml_cc ] ; then
+ for dir in chk_sum_pdbml_cc; do
+  cd $dir; find . -type f | xargs rm -f; cd ..; rmdir $dir
+ done
+fi
 
 WORK_DIR=test
 

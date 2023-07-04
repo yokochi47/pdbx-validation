@@ -28,9 +28,11 @@ WORK_DIR=.
 
 rm -rf $WORK_DIR/$PDBML_NOATOM_SIFTS $WORK_DIR/$RDF
 
-for dir in chk_sum_pdbml_noatom; do
- cd $dir; find . -type f | xargs rm -f; cd ..; rmdir $dir
-done
+if [ -e chk_sum_pdbml_noatom ] ; then
+ for dir in chk_sum_pdbml_noatom; do
+  cd $dir; find . -type f | xargs rm -f; cd ..; rmdir $dir
+ done
+fi
 
 WORK_DIR=test
 

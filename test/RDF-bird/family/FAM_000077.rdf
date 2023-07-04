@@ -276,7 +276,7 @@
           <PDBo:citation_author rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/1,Hetz,_C.,1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077"/>
             <PDBo:reference_to_citation>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/1">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/">
                 <PDBo:referenced_by_citation_author rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/1,Hetz,_C.,1"/>
               </rdf:Description>
             </PDBo:reference_to_citation>
@@ -289,7 +289,7 @@
           <PDBo:citation_author rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/1,Bono,_M.R.,2">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077"/>
             <PDBo:reference_to_citation>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/1">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/">
                 <PDBo:referenced_by_citation_author rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/1,Bono,_M.R.,2"/>
               </rdf:Description>
             </PDBo:reference_to_citation>
@@ -302,7 +302,7 @@
           <PDBo:citation_author rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/1,Barros,_L.F.,3">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077"/>
             <PDBo:reference_to_citation>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/1">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/">
                 <PDBo:referenced_by_citation_author rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/1,Barros,_L.F.,3"/>
               </rdf:Description>
             </PDBo:reference_to_citation>
@@ -315,7 +315,7 @@
           <PDBo:citation_author rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/1,Lagos,_R.,4">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077"/>
             <PDBo:reference_to_citation>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/1">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/">
                 <PDBo:referenced_by_citation_author rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/1,Lagos,_R.,4"/>
               </rdf:Description>
             </PDBo:reference_to_citation>
@@ -328,7 +328,7 @@
           <PDBo:citation_author rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/2,Niklison,_C.M.,5">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077"/>
             <PDBo:reference_to_citation>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/2">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/">
                 <PDBo:referenced_by_citation_author rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/2,Niklison,_C.M.,5"/>
               </rdf:Description>
             </PDBo:reference_to_citation>
@@ -341,7 +341,7 @@
           <PDBo:citation_author rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/2,Bellomio,_A.,6">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077"/>
             <PDBo:reference_to_citation>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/2">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/">
                 <PDBo:referenced_by_citation_author rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/2,Bellomio,_A.,6"/>
               </rdf:Description>
             </PDBo:reference_to_citation>
@@ -354,7 +354,7 @@
           <PDBo:citation_author rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/2,Dupuy,_F.,7">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077"/>
             <PDBo:reference_to_citation>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/2">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/">
                 <PDBo:referenced_by_citation_author rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/2,Dupuy,_F.,7"/>
               </rdf:Description>
             </PDBo:reference_to_citation>
@@ -367,7 +367,7 @@
           <PDBo:citation_author rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/2,Arcuri,_B.,8">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077"/>
             <PDBo:reference_to_citation>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/2">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/">
                 <PDBo:referenced_by_citation_author rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/2,Arcuri,_B.,8"/>
               </rdf:Description>
             </PDBo:reference_to_citation>
@@ -380,7 +380,7 @@
           <PDBo:citation_author rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/2,Minahk,_C.,9">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077"/>
             <PDBo:reference_to_citation>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/2">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/">
                 <PDBo:referenced_by_citation_author rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/2,Minahk,_C.,9"/>
               </rdf:Description>
             </PDBo:reference_to_citation>
@@ -393,7 +393,7 @@
           <PDBo:citation_author rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/2,Morero,_R.,10">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077"/>
             <PDBo:reference_to_citation>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/2">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/">
                 <PDBo:referenced_by_citation_author rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/2,Morero,_R.,10"/>
               </rdf:Description>
             </PDBo:reference_to_citation>
@@ -406,7 +406,7 @@
           <PDBo:citation_author rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/3,Li,_Y.-M.,11">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077"/>
             <PDBo:reference_to_citation>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/3">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/">
                 <PDBo:referenced_by_citation_author rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/3,Li,_Y.-M.,11"/>
               </rdf:Description>
             </PDBo:reference_to_citation>
@@ -419,7 +419,7 @@
           <PDBo:citation_author rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/3,Milne,_J.C.,12">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077"/>
             <PDBo:reference_to_citation>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/3">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/">
                 <PDBo:referenced_by_citation_author rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/3,Milne,_J.C.,12"/>
               </rdf:Description>
             </PDBo:reference_to_citation>
@@ -432,7 +432,7 @@
           <PDBo:citation_author rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/3,Madison,_L.L.,13">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077"/>
             <PDBo:reference_to_citation>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/3">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/">
                 <PDBo:referenced_by_citation_author rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/3,Madison,_L.L.,13"/>
               </rdf:Description>
             </PDBo:reference_to_citation>
@@ -445,7 +445,7 @@
           <PDBo:citation_author rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/3,Kolter,_R.,14">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077"/>
             <PDBo:reference_to_citation>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/3">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/">
                 <PDBo:referenced_by_citation_author rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/3,Kolter,_R.,14"/>
               </rdf:Description>
             </PDBo:reference_to_citation>
@@ -458,7 +458,7 @@
           <PDBo:citation_author rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/3,Walsh,_C.T.,15">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077"/>
             <PDBo:reference_to_citation>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/3">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/">
                 <PDBo:referenced_by_citation_author rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/3,Walsh,_C.T.,15"/>
               </rdf:Description>
             </PDBo:reference_to_citation>
@@ -471,7 +471,7 @@
           <PDBo:citation_author rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/4,Rosengren,_K.J.,16">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077"/>
             <PDBo:reference_to_citation>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/4">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/">
                 <PDBo:referenced_by_citation_author rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/4,Rosengren,_K.J.,16"/>
               </rdf:Description>
             </PDBo:reference_to_citation>
@@ -484,7 +484,7 @@
           <PDBo:citation_author rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/4,Clark,_R.J.,17">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077"/>
             <PDBo:reference_to_citation>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/4">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/">
                 <PDBo:referenced_by_citation_author rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/4,Clark,_R.J.,17"/>
               </rdf:Description>
             </PDBo:reference_to_citation>
@@ -497,7 +497,7 @@
           <PDBo:citation_author rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/4,Daly,_N.L.,18">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077"/>
             <PDBo:reference_to_citation>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/4">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/">
                 <PDBo:referenced_by_citation_author rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/4,Daly,_N.L.,18"/>
               </rdf:Description>
             </PDBo:reference_to_citation>
@@ -510,7 +510,7 @@
           <PDBo:citation_author rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/4,Goransson,_U.,19">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077"/>
             <PDBo:reference_to_citation>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/4">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/">
                 <PDBo:referenced_by_citation_author rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/4,Goransson,_U.,19"/>
               </rdf:Description>
             </PDBo:reference_to_citation>
@@ -523,7 +523,7 @@
           <PDBo:citation_author rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/4,Jones,_A.,20">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077"/>
             <PDBo:reference_to_citation>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/4">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/">
                 <PDBo:referenced_by_citation_author rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/4,Jones,_A.,20"/>
               </rdf:Description>
             </PDBo:reference_to_citation>
@@ -536,7 +536,7 @@
           <PDBo:citation_author rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/4,Craik,_D.J.,21">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077"/>
             <PDBo:reference_to_citation>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/4">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/">
                 <PDBo:referenced_by_citation_author rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/4,Craik,_D.J.,21"/>
               </rdf:Description>
             </PDBo:reference_to_citation>
@@ -549,7 +549,7 @@
           <PDBo:citation_author rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/5,Lagos,_R.,22">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077"/>
             <PDBo:reference_to_citation>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/5">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/">
                 <PDBo:referenced_by_citation_author rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/5,Lagos,_R.,22"/>
               </rdf:Description>
             </PDBo:reference_to_citation>
@@ -562,7 +562,7 @@
           <PDBo:citation_author rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/5,Tello,_M.,23">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077"/>
             <PDBo:reference_to_citation>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/5">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/">
                 <PDBo:referenced_by_citation_author rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/5,Tello,_M.,23"/>
               </rdf:Description>
             </PDBo:reference_to_citation>
@@ -575,7 +575,7 @@
           <PDBo:citation_author rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/5,Mercado,_G.,24">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077"/>
             <PDBo:reference_to_citation>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/5">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/">
                 <PDBo:referenced_by_citation_author rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/5,Mercado,_G.,24"/>
               </rdf:Description>
             </PDBo:reference_to_citation>
@@ -588,7 +588,7 @@
           <PDBo:citation_author rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/5,Garcia,_V.,25">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077"/>
             <PDBo:reference_to_citation>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/5">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/">
                 <PDBo:referenced_by_citation_author rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/5,Garcia,_V.,25"/>
               </rdf:Description>
             </PDBo:reference_to_citation>
@@ -601,7 +601,7 @@
           <PDBo:citation_author rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/5,Monasterio,_O.,26">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077"/>
             <PDBo:reference_to_citation>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/5">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/">
                 <PDBo:referenced_by_citation_author rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/5,Monasterio,_O.,26"/>
               </rdf:Description>
             </PDBo:reference_to_citation>
@@ -614,7 +614,7 @@
           <PDBo:citation_author rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/6,Bellomio,_A.,27">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077"/>
             <PDBo:reference_to_citation>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/6">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/">
                 <PDBo:referenced_by_citation_author rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/6,Bellomio,_A.,27"/>
               </rdf:Description>
             </PDBo:reference_to_citation>
@@ -627,7 +627,7 @@
           <PDBo:citation_author rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/6,Oliveira,_R.G.,28">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077"/>
             <PDBo:reference_to_citation>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/6">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/">
                 <PDBo:referenced_by_citation_author rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/6,Oliveira,_R.G.,28"/>
               </rdf:Description>
             </PDBo:reference_to_citation>
@@ -640,7 +640,7 @@
           <PDBo:citation_author rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/6,Maggio,_B.,29">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077"/>
             <PDBo:reference_to_citation>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/6">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/">
                 <PDBo:referenced_by_citation_author rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/6,Maggio,_B.,29"/>
               </rdf:Description>
             </PDBo:reference_to_citation>
@@ -653,7 +653,7 @@
           <PDBo:citation_author rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/6,Morero,_R.D.,30">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077"/>
             <PDBo:reference_to_citation>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/6">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/">
                 <PDBo:referenced_by_citation_author rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/6,Morero,_R.D.,30"/>
               </rdf:Description>
             </PDBo:reference_to_citation>
@@ -666,7 +666,7 @@
           <PDBo:citation_author rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/7,Heddle,_J.G.,31">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077"/>
             <PDBo:reference_to_citation>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/7">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/">
                 <PDBo:referenced_by_citation_author rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/7,Heddle,_J.G.,31"/>
               </rdf:Description>
             </PDBo:reference_to_citation>
@@ -679,7 +679,7 @@
           <PDBo:citation_author rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/7,Blance,_S.J.,32">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077"/>
             <PDBo:reference_to_citation>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/7">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/">
                 <PDBo:referenced_by_citation_author rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/7,Blance,_S.J.,32"/>
               </rdf:Description>
             </PDBo:reference_to_citation>
@@ -692,7 +692,7 @@
           <PDBo:citation_author rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/7,Zamble,_D.B.,33">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077"/>
             <PDBo:reference_to_citation>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/7">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/">
                 <PDBo:referenced_by_citation_author rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/7,Zamble,_D.B.,33"/>
               </rdf:Description>
             </PDBo:reference_to_citation>
@@ -705,7 +705,7 @@
           <PDBo:citation_author rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/7,Hollfelder,_F.,34">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077"/>
             <PDBo:reference_to_citation>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/7">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/">
                 <PDBo:referenced_by_citation_author rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/7,Hollfelder,_F.,34"/>
               </rdf:Description>
             </PDBo:reference_to_citation>
@@ -718,7 +718,7 @@
           <PDBo:citation_author rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/7,Miller,_D.A.,35">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077"/>
             <PDBo:reference_to_citation>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/7">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/">
                 <PDBo:referenced_by_citation_author rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/7,Miller,_D.A.,35"/>
               </rdf:Description>
             </PDBo:reference_to_citation>
@@ -731,7 +731,7 @@
           <PDBo:citation_author rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/7,Wentzell,_L.M.,36">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077"/>
             <PDBo:reference_to_citation>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/7">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/">
                 <PDBo:referenced_by_citation_author rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/7,Wentzell,_L.M.,36"/>
               </rdf:Description>
             </PDBo:reference_to_citation>
@@ -744,7 +744,7 @@
           <PDBo:citation_author rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/7,Walsh,_C.T.,37">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077"/>
             <PDBo:reference_to_citation>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/7">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/">
                 <PDBo:referenced_by_citation_author rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/7,Walsh,_C.T.,37"/>
               </rdf:Description>
             </PDBo:reference_to_citation>
@@ -757,7 +757,7 @@
           <PDBo:citation_author rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/7,Maxwell,_A.,38">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077"/>
             <PDBo:reference_to_citation>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/7">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/">
                 <PDBo:referenced_by_citation_author rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/7,Maxwell,_A.,38"/>
               </rdf:Description>
             </PDBo:reference_to_citation>
@@ -770,7 +770,7 @@
           <PDBo:citation_author rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/8,Salomon,_R.A.,39">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077"/>
             <PDBo:reference_to_citation>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/8">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/">
                 <PDBo:referenced_by_citation_author rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/8,Salomon,_R.A.,39"/>
               </rdf:Description>
             </PDBo:reference_to_citation>
@@ -783,7 +783,7 @@
           <PDBo:citation_author rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/8,Farias,_R.N.,40">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077"/>
             <PDBo:reference_to_citation>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/8">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/">
                 <PDBo:referenced_by_citation_author rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/8,Farias,_R.N.,40"/>
               </rdf:Description>
             </PDBo:reference_to_citation>
@@ -796,7 +796,7 @@
           <PDBo:citation_author rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/9,Moreno,_F.,41">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077"/>
             <PDBo:reference_to_citation>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/9">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/">
                 <PDBo:referenced_by_citation_author rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/9,Moreno,_F.,41"/>
               </rdf:Description>
             </PDBo:reference_to_citation>
@@ -809,7 +809,7 @@
           <PDBo:citation_author rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/9,Gonzalez-Pastor,_J.E.,42">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077"/>
             <PDBo:reference_to_citation>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/9">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/">
                 <PDBo:referenced_by_citation_author rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/9,Gonzalez-Pastor,_J.E.,42"/>
               </rdf:Description>
             </PDBo:reference_to_citation>
@@ -822,7 +822,7 @@
           <PDBo:citation_author rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/9,Baquero,_M.-R.,43">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077"/>
             <PDBo:reference_to_citation>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/9">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/">
                 <PDBo:referenced_by_citation_author rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/9,Baquero,_M.-R.,43"/>
               </rdf:Description>
             </PDBo:reference_to_citation>
@@ -835,7 +835,7 @@
           <PDBo:citation_author rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/9,Bravo,_D.,44">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077"/>
             <PDBo:reference_to_citation>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/9">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/">
                 <PDBo:referenced_by_citation_author rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/9,Bravo,_D.,44"/>
               </rdf:Description>
             </PDBo:reference_to_citation>
@@ -848,7 +848,7 @@
           <PDBo:citation_author rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/10,Roy,_R.S.,45">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077"/>
             <PDBo:reference_to_citation>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/10">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/">
                 <PDBo:referenced_by_citation_author rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/10,Roy,_R.S.,45"/>
               </rdf:Description>
             </PDBo:reference_to_citation>
@@ -861,7 +861,7 @@
           <PDBo:citation_author rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/10,Kelleher,_N.L.,46">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077"/>
             <PDBo:reference_to_citation>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/10">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/">
                 <PDBo:referenced_by_citation_author rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/10,Kelleher,_N.L.,46"/>
               </rdf:Description>
             </PDBo:reference_to_citation>
@@ -874,7 +874,7 @@
           <PDBo:citation_author rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/10,Milne,_J.C.,47">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077"/>
             <PDBo:reference_to_citation>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/10">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/">
                 <PDBo:referenced_by_citation_author rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/10,Milne,_J.C.,47"/>
               </rdf:Description>
             </PDBo:reference_to_citation>
@@ -887,7 +887,7 @@
           <PDBo:citation_author rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/10,Walsh,_C.T.,48">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077"/>
             <PDBo:reference_to_citation>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/10">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/">
                 <PDBo:referenced_by_citation_author rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/10,Walsh,_C.T.,48"/>
               </rdf:Description>
             </PDBo:reference_to_citation>
@@ -900,7 +900,7 @@
           <PDBo:citation_author rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/11,Metlitskaya,_A.Z.,49">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077"/>
             <PDBo:reference_to_citation>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/11">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/">
                 <PDBo:referenced_by_citation_author rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/11,Metlitskaya,_A.Z.,49"/>
               </rdf:Description>
             </PDBo:reference_to_citation>
@@ -913,7 +913,7 @@
           <PDBo:citation_author rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/11,Katrukha,_G.S.,50">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077"/>
             <PDBo:reference_to_citation>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/11">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/">
                 <PDBo:referenced_by_citation_author rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/11,Katrukha,_G.S.,50"/>
               </rdf:Description>
             </PDBo:reference_to_citation>
@@ -926,7 +926,7 @@
           <PDBo:citation_author rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/11,Shashkov,_A.S.,51">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077"/>
             <PDBo:reference_to_citation>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/11">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/">
                 <PDBo:referenced_by_citation_author rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/11,Shashkov,_A.S.,51"/>
               </rdf:Description>
             </PDBo:reference_to_citation>
@@ -939,7 +939,7 @@
           <PDBo:citation_author rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/11,Zaitsev,_D.A.,52">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077"/>
             <PDBo:reference_to_citation>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/11">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/">
                 <PDBo:referenced_by_citation_author rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/11,Zaitsev,_D.A.,52"/>
               </rdf:Description>
             </PDBo:reference_to_citation>
@@ -952,7 +952,7 @@
           <PDBo:citation_author rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/11,Egorov,_Ts.A.,53">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077"/>
             <PDBo:reference_to_citation>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/11">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/">
                 <PDBo:referenced_by_citation_author rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/11,Egorov,_Ts.A.,53"/>
               </rdf:Description>
             </PDBo:reference_to_citation>
@@ -965,7 +965,7 @@
           <PDBo:citation_author rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/11,Khmel,_I.A.,54">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077"/>
             <PDBo:reference_to_citation>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/11">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/">
                 <PDBo:referenced_by_citation_author rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/11,Khmel,_I.A.,54"/>
               </rdf:Description>
             </PDBo:reference_to_citation>
@@ -978,7 +978,7 @@
           <PDBo:citation_author rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/12,Guijarro,_J.I.,55">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077"/>
             <PDBo:reference_to_citation>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/12">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/">
                 <PDBo:referenced_by_citation_author rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/12,Guijarro,_J.I.,55"/>
               </rdf:Description>
             </PDBo:reference_to_citation>
@@ -991,7 +991,7 @@
           <PDBo:citation_author rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/12,Gonzalez-Pastor,_J.E.,56">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077"/>
             <PDBo:reference_to_citation>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/12">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/">
                 <PDBo:referenced_by_citation_author rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/12,Gonzalez-Pastor,_J.E.,56"/>
               </rdf:Description>
             </PDBo:reference_to_citation>
@@ -1004,7 +1004,7 @@
           <PDBo:citation_author rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/12,Baleux,_F.,57">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077"/>
             <PDBo:reference_to_citation>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/12">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/">
                 <PDBo:referenced_by_citation_author rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/12,Baleux,_F.,57"/>
               </rdf:Description>
             </PDBo:reference_to_citation>
@@ -1017,7 +1017,7 @@
           <PDBo:citation_author rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/12,San_Mill,_J.L.,58">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077"/>
             <PDBo:reference_to_citation>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/12">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/">
                 <PDBo:referenced_by_citation_author rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/12,San_Mill,_J.L.,58"/>
               </rdf:Description>
             </PDBo:reference_to_citation>
@@ -1030,7 +1030,7 @@
           <PDBo:citation_author rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/12,Castilla,_M.A.,59">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077"/>
             <PDBo:reference_to_citation>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/12">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/">
                 <PDBo:referenced_by_citation_author rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/12,Castilla,_M.A.,59"/>
               </rdf:Description>
             </PDBo:reference_to_citation>
@@ -1043,7 +1043,7 @@
           <PDBo:citation_author rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/12,Rico,_M.,60">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077"/>
             <PDBo:reference_to_citation>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/12">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/">
                 <PDBo:referenced_by_citation_author rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/12,Rico,_M.,60"/>
               </rdf:Description>
             </PDBo:reference_to_citation>
@@ -1056,7 +1056,7 @@
           <PDBo:citation_author rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/12,Moreno,_F.,61">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077"/>
             <PDBo:reference_to_citation>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/12">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/">
                 <PDBo:referenced_by_citation_author rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/12,Moreno,_F.,61"/>
               </rdf:Description>
             </PDBo:reference_to_citation>
@@ -1069,7 +1069,7 @@
           <PDBo:citation_author rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/12,Delepierre,_M.,62">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077"/>
             <PDBo:reference_to_citation>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/12">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/">
                 <PDBo:referenced_by_citation_author rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/12,Delepierre,_M.,62"/>
               </rdf:Description>
             </PDBo:reference_to_citation>
@@ -1082,7 +1082,7 @@
           <PDBo:citation_author rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/13,Aguilar,_A.,63">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077"/>
             <PDBo:reference_to_citation>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/13">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/">
                 <PDBo:referenced_by_citation_author rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/13,Aguilar,_A.,63"/>
               </rdf:Description>
             </PDBo:reference_to_citation>
@@ -1095,7 +1095,7 @@
           <PDBo:citation_author rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/13,Baquero,_F.,64">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077"/>
             <PDBo:reference_to_citation>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/13">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/">
                 <PDBo:referenced_by_citation_author rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/13,Baquero,_F.,64"/>
               </rdf:Description>
             </PDBo:reference_to_citation>
@@ -1108,7 +1108,7 @@
           <PDBo:citation_author rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/13,Martinez,_J.L.,65">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077"/>
             <PDBo:reference_to_citation>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/13">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/">
                 <PDBo:referenced_by_citation_author rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/13,Martinez,_J.L.,65"/>
               </rdf:Description>
             </PDBo:reference_to_citation>
@@ -1121,7 +1121,7 @@
           <PDBo:citation_author rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/13,Asensio,_C.,66">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077"/>
             <PDBo:reference_to_citation>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/13">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/">
                 <PDBo:referenced_by_citation_author rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/13,Asensio,_C.,66"/>
               </rdf:Description>
             </PDBo:reference_to_citation>
@@ -1134,7 +1134,7 @@
           <PDBo:citation_author rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/14,Wilson,_K.-A.,67">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077"/>
             <PDBo:reference_to_citation>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/14">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/">
                 <PDBo:referenced_by_citation_author rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/14,Wilson,_K.-A.,67"/>
               </rdf:Description>
             </PDBo:reference_to_citation>
@@ -1147,7 +1147,7 @@
           <PDBo:citation_author rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/14,Kalkum,_M.,68">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077"/>
             <PDBo:reference_to_citation>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/14">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/">
                 <PDBo:referenced_by_citation_author rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/14,Kalkum,_M.,68"/>
               </rdf:Description>
             </PDBo:reference_to_citation>
@@ -1160,7 +1160,7 @@
           <PDBo:citation_author rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/14,Ottesen,_J.,69">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077"/>
             <PDBo:reference_to_citation>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/14">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/">
                 <PDBo:referenced_by_citation_author rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/14,Ottesen,_J.,69"/>
               </rdf:Description>
             </PDBo:reference_to_citation>
@@ -1173,7 +1173,7 @@
           <PDBo:citation_author rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/14,Yuzenkova,_J.,70">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077"/>
             <PDBo:reference_to_citation>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/14">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/">
                 <PDBo:referenced_by_citation_author rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/14,Yuzenkova,_J.,70"/>
               </rdf:Description>
             </PDBo:reference_to_citation>
@@ -1186,7 +1186,7 @@
           <PDBo:citation_author rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/14,Chait,_B.T.,71">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077"/>
             <PDBo:reference_to_citation>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/14">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/">
                 <PDBo:referenced_by_citation_author rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/14,Chait,_B.T.,71"/>
               </rdf:Description>
             </PDBo:reference_to_citation>
@@ -1199,7 +1199,7 @@
           <PDBo:citation_author rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/14,Landick,_R.,72">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077"/>
             <PDBo:reference_to_citation>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/14">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/">
                 <PDBo:referenced_by_citation_author rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/14,Landick,_R.,72"/>
               </rdf:Description>
             </PDBo:reference_to_citation>
@@ -1212,7 +1212,7 @@
           <PDBo:citation_author rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/14,Muir,_T.,73">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077"/>
             <PDBo:reference_to_citation>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/14">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/">
                 <PDBo:referenced_by_citation_author rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/14,Muir,_T.,73"/>
               </rdf:Description>
             </PDBo:reference_to_citation>
@@ -1225,7 +1225,7 @@
           <PDBo:citation_author rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/14,Severinov,_K.,74">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077"/>
             <PDBo:reference_to_citation>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/14">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/">
                 <PDBo:referenced_by_citation_author rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/14,Severinov,_K.,74"/>
               </rdf:Description>
             </PDBo:reference_to_citation>
@@ -1238,7 +1238,7 @@
           <PDBo:citation_author rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/14,Darst,_S.A.,75">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077"/>
             <PDBo:reference_to_citation>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/14">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/">
                 <PDBo:referenced_by_citation_author rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/14,Darst,_S.A.,75"/>
               </rdf:Description>
             </PDBo:reference_to_citation>
@@ -1251,7 +1251,7 @@
           <PDBo:citation_author rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/15,Bayro,_M.J.,76">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077"/>
             <PDBo:reference_to_citation>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/15">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/">
                 <PDBo:referenced_by_citation_author rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/15,Bayro,_M.J.,76"/>
               </rdf:Description>
             </PDBo:reference_to_citation>
@@ -1264,7 +1264,7 @@
           <PDBo:citation_author rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/15,Mukhopadhyay,_J.,77">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077"/>
             <PDBo:reference_to_citation>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/15">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/">
                 <PDBo:referenced_by_citation_author rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/15,Mukhopadhyay,_J.,77"/>
               </rdf:Description>
             </PDBo:reference_to_citation>
@@ -1277,7 +1277,7 @@
           <PDBo:citation_author rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/15,Swapna,_G.V.T.,78">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077"/>
             <PDBo:reference_to_citation>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/15">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/">
                 <PDBo:referenced_by_citation_author rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/15,Swapna,_G.V.T.,78"/>
               </rdf:Description>
             </PDBo:reference_to_citation>
@@ -1290,7 +1290,7 @@
           <PDBo:citation_author rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/15,Huang,_J.Y.,79">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077"/>
             <PDBo:reference_to_citation>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/15">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/">
                 <PDBo:referenced_by_citation_author rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/15,Huang,_J.Y.,79"/>
               </rdf:Description>
             </PDBo:reference_to_citation>
@@ -1303,7 +1303,7 @@
           <PDBo:citation_author rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/15,Ma,_L.-C.,80">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077"/>
             <PDBo:reference_to_citation>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/15">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/">
                 <PDBo:referenced_by_citation_author rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/15,Ma,_L.-C.,80"/>
               </rdf:Description>
             </PDBo:reference_to_citation>
@@ -1316,7 +1316,7 @@
           <PDBo:citation_author rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/15,Sineva,_E.,81">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077"/>
             <PDBo:reference_to_citation>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/15">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/">
                 <PDBo:referenced_by_citation_author rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/15,Sineva,_E.,81"/>
               </rdf:Description>
             </PDBo:reference_to_citation>
@@ -1329,7 +1329,7 @@
           <PDBo:citation_author rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/15,Dawson,_P.E.,82">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077"/>
             <PDBo:reference_to_citation>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/15">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/">
                 <PDBo:referenced_by_citation_author rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/15,Dawson,_P.E.,82"/>
               </rdf:Description>
             </PDBo:reference_to_citation>
@@ -1342,7 +1342,7 @@
           <PDBo:citation_author rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/15,Montelione,_G.T.,83">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077"/>
             <PDBo:reference_to_citation>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/15">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/">
                 <PDBo:referenced_by_citation_author rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/15,Montelione,_G.T.,83"/>
               </rdf:Description>
             </PDBo:reference_to_citation>
@@ -1355,7 +1355,7 @@
           <PDBo:citation_author rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/15,Ebright,_R.H.,84">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077"/>
             <PDBo:reference_to_citation>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/15">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/">
                 <PDBo:referenced_by_citation_author rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/15,Ebright,_R.H.,84"/>
               </rdf:Description>
             </PDBo:reference_to_citation>
@@ -1368,7 +1368,7 @@
           <PDBo:citation_author rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/16,Adelman,_K.,85">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077"/>
             <PDBo:reference_to_citation>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/16">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/">
                 <PDBo:referenced_by_citation_author rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/16,Adelman,_K.,85"/>
               </rdf:Description>
             </PDBo:reference_to_citation>
@@ -1381,7 +1381,7 @@
           <PDBo:citation_author rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/16,Yuzenkova,_J.,86">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077"/>
             <PDBo:reference_to_citation>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/16">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/">
                 <PDBo:referenced_by_citation_author rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/16,Yuzenkova,_J.,86"/>
               </rdf:Description>
             </PDBo:reference_to_citation>
@@ -1394,7 +1394,7 @@
           <PDBo:citation_author rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/16,La_Porta,_A.,87">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077"/>
             <PDBo:reference_to_citation>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/16">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/">
                 <PDBo:referenced_by_citation_author rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/16,La_Porta,_A.,87"/>
               </rdf:Description>
             </PDBo:reference_to_citation>
@@ -1407,7 +1407,7 @@
           <PDBo:citation_author rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/16,Zenkin,_N.,88">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077"/>
             <PDBo:reference_to_citation>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/16">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/">
                 <PDBo:referenced_by_citation_author rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/16,Zenkin,_N.,88"/>
               </rdf:Description>
             </PDBo:reference_to_citation>
@@ -1420,7 +1420,7 @@
           <PDBo:citation_author rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/16,Lee,_J.,89">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077"/>
             <PDBo:reference_to_citation>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/16">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/">
                 <PDBo:referenced_by_citation_author rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/16,Lee,_J.,89"/>
               </rdf:Description>
             </PDBo:reference_to_citation>
@@ -1433,7 +1433,7 @@
           <PDBo:citation_author rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/16,Lis,_J.T.,90">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077"/>
             <PDBo:reference_to_citation>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/16">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/">
                 <PDBo:referenced_by_citation_author rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/16,Lis,_J.T.,90"/>
               </rdf:Description>
             </PDBo:reference_to_citation>
@@ -1446,7 +1446,7 @@
           <PDBo:citation_author rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/16,Borukhov,_S.,91">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077"/>
             <PDBo:reference_to_citation>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/16">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/">
                 <PDBo:referenced_by_citation_author rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/16,Borukhov,_S.,91"/>
               </rdf:Description>
             </PDBo:reference_to_citation>
@@ -1459,7 +1459,7 @@
           <PDBo:citation_author rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/16,Wang,_M.D.,92">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077"/>
             <PDBo:reference_to_citation>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/16">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/">
                 <PDBo:referenced_by_citation_author rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/16,Wang,_M.D.,92"/>
               </rdf:Description>
             </PDBo:reference_to_citation>
@@ -1472,7 +1472,7 @@
           <PDBo:citation_author rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/16,Severinov,_K.,93">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077"/>
             <PDBo:reference_to_citation>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/16">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/">
                 <PDBo:referenced_by_citation_author rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/16,Severinov,_K.,93"/>
               </rdf:Description>
             </PDBo:reference_to_citation>
@@ -1485,7 +1485,7 @@
           <PDBo:citation_author rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/17,Azpiroz,_M.F.,94">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077"/>
             <PDBo:reference_to_citation>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/17">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/">
                 <PDBo:referenced_by_citation_author rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/17,Azpiroz,_M.F.,94"/>
               </rdf:Description>
             </PDBo:reference_to_citation>
@@ -1498,7 +1498,7 @@
           <PDBo:citation_author rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/17,Rodriguez,_E.,95">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077"/>
             <PDBo:reference_to_citation>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/17">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/">
                 <PDBo:referenced_by_citation_author rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/17,Rodriguez,_E.,95"/>
               </rdf:Description>
             </PDBo:reference_to_citation>
@@ -1511,7 +1511,7 @@
           <PDBo:citation_author rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/17,Lavina,_M.,96">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077"/>
             <PDBo:reference_to_citation>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/17">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/">
                 <PDBo:referenced_by_citation_author rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/17,Lavina,_M.,96"/>
               </rdf:Description>
             </PDBo:reference_to_citation>
@@ -1524,7 +1524,7 @@
           <PDBo:citation_author rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/18,Yorgey,_P.,97">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077"/>
             <PDBo:reference_to_citation>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/18">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/">
                 <PDBo:referenced_by_citation_author rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/18,Yorgey,_P.,97"/>
               </rdf:Description>
             </PDBo:reference_to_citation>
@@ -1537,7 +1537,7 @@
           <PDBo:citation_author rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/18,Lee,_J.,98">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077"/>
             <PDBo:reference_to_citation>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/18">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/">
                 <PDBo:referenced_by_citation_author rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/18,Lee,_J.,98"/>
               </rdf:Description>
             </PDBo:reference_to_citation>
@@ -1550,7 +1550,7 @@
           <PDBo:citation_author rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/18,Kordel,_J.,99">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077"/>
             <PDBo:reference_to_citation>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/18">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/">
                 <PDBo:referenced_by_citation_author rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/18,Kordel,_J.,99"/>
               </rdf:Description>
             </PDBo:reference_to_citation>
@@ -1563,7 +1563,7 @@
           <PDBo:citation_author rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/18,Vivas,_E.,100">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077"/>
             <PDBo:reference_to_citation>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/18">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/">
                 <PDBo:referenced_by_citation_author rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/18,Vivas,_E.,100"/>
               </rdf:Description>
             </PDBo:reference_to_citation>
@@ -1576,7 +1576,7 @@
           <PDBo:citation_author rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/18,Warner,_P.,101">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077"/>
             <PDBo:reference_to_citation>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/18">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/">
                 <PDBo:referenced_by_citation_author rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/18,Warner,_P.,101"/>
               </rdf:Description>
             </PDBo:reference_to_citation>
@@ -1589,7 +1589,7 @@
           <PDBo:citation_author rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/18,Jebaratnam,_D.,102">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077"/>
             <PDBo:reference_to_citation>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/18">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/">
                 <PDBo:referenced_by_citation_author rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/18,Jebaratnam,_D.,102"/>
               </rdf:Description>
             </PDBo:reference_to_citation>
@@ -1602,7 +1602,7 @@
           <PDBo:citation_author rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/18,Kolter,_R.,103">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077"/>
             <PDBo:reference_to_citation>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/18">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/citation/">
                 <PDBo:referenced_by_citation_author rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077/citation_author/18,Kolter,_R.,103"/>
               </rdf:Description>
             </PDBo:reference_to_citation>
@@ -1619,7 +1619,7 @@
           <PDBo:pdbx_family_prd_audit rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/pdbx_family_prd_audit/Create_family,2012-02-08,FAM_000077">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077"/>
             <PDBo:reference_to_pdbx_reference_molecule_family>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/pdbx_reference_molecule_family/FAM_000077">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/pdbx_reference_molecule_family/">
                 <PDBo:referenced_by_pdbx_family_prd_audit rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077/pdbx_family_prd_audit/Create_family,2012-02-08,FAM_000077"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_family>
@@ -1633,7 +1633,7 @@
           <PDBo:pdbx_family_prd_audit rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/pdbx_family_prd_audit/Initial_release,2013-10-16,FAM_000077">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077"/>
             <PDBo:reference_to_pdbx_reference_molecule_family>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/pdbx_reference_molecule_family/FAM_000077">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/pdbx_reference_molecule_family/">
                 <PDBo:referenced_by_pdbx_family_prd_audit rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077/pdbx_family_prd_audit/Initial_release,2013-10-16,FAM_000077"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_family>
@@ -1726,7 +1726,7 @@
           <PDBo:pdbx_reference_molecule_features rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/pdbx_reference_molecule_features/FAM_000077,1,PRD_000183">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077"/>
             <PDBo:reference_to_pdbx_reference_molecule_list>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/pdbx_reference_molecule_list/FAM_000077,PRD_000183">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/pdbx_reference_molecule_list/,">
                 <PDBo:referenced_by_pdbx_reference_molecule_features rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077/pdbx_reference_molecule_features/FAM_000077,1,PRD_000183"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_list>
@@ -1745,7 +1745,7 @@
           <PDBo:pdbx_reference_molecule_features rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/pdbx_reference_molecule_features/FAM_000077,2,PRD_000184">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077"/>
             <PDBo:reference_to_pdbx_reference_molecule_list>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/pdbx_reference_molecule_list/FAM_000077,PRD_000184">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/pdbx_reference_molecule_list/,">
                 <PDBo:referenced_by_pdbx_reference_molecule_features rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077/pdbx_reference_molecule_features/FAM_000077,2,PRD_000184"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_list>
@@ -1764,7 +1764,7 @@
           <PDBo:pdbx_reference_molecule_features rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/pdbx_reference_molecule_features/FAM_000077,3,PRD_000183">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077"/>
             <PDBo:reference_to_pdbx_reference_molecule_list>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/pdbx_reference_molecule_list/FAM_000077,PRD_000183">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/pdbx_reference_molecule_list/,">
                 <PDBo:referenced_by_pdbx_reference_molecule_features rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077/pdbx_reference_molecule_features/FAM_000077,3,PRD_000183"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_list>
@@ -1781,7 +1781,7 @@
           <PDBo:pdbx_reference_molecule_features rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/pdbx_reference_molecule_features/FAM_000077,4,PRD_000184">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077"/>
             <PDBo:reference_to_pdbx_reference_molecule_list>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/pdbx_reference_molecule_list/FAM_000077,PRD_000184">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/pdbx_reference_molecule_list/,">
                 <PDBo:referenced_by_pdbx_reference_molecule_features rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077/pdbx_reference_molecule_features/FAM_000077,4,PRD_000184"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_list>
@@ -1802,7 +1802,7 @@
           <PDBo:pdbx_reference_molecule_list rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/pdbx_reference_molecule_list/FAM_000077,PRD_000183">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077"/>
             <PDBo:reference_to_pdbx_reference_molecule_family>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/pdbx_reference_molecule_family/FAM_000077">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/pdbx_reference_molecule_family/">
                 <PDBo:referenced_by_pdbx_reference_molecule_list rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077/pdbx_reference_molecule_list/FAM_000077,PRD_000183"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_family>
@@ -1815,7 +1815,7 @@
           <PDBo:pdbx_reference_molecule_list rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/pdbx_reference_molecule_list/FAM_000077,PRD_000184">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077"/>
             <PDBo:reference_to_pdbx_reference_molecule_family>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/pdbx_reference_molecule_family/FAM_000077">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/pdbx_reference_molecule_family/">
                 <PDBo:referenced_by_pdbx_reference_molecule_list rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077/pdbx_reference_molecule_list/FAM_000077,PRD_000184"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_family>
@@ -1828,7 +1828,7 @@
           <PDBo:pdbx_reference_molecule_list rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/pdbx_reference_molecule_list/FAM_000077,PRD_001126">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077"/>
             <PDBo:reference_to_pdbx_reference_molecule_family>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/pdbx_reference_molecule_family/FAM_000077">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/pdbx_reference_molecule_family/">
                 <PDBo:referenced_by_pdbx_reference_molecule_list rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077/pdbx_reference_molecule_list/FAM_000077,PRD_001126"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_family>
@@ -1841,7 +1841,7 @@
           <PDBo:pdbx_reference_molecule_list rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/pdbx_reference_molecule_list/FAM_000077,PRD_001129">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077"/>
             <PDBo:reference_to_pdbx_reference_molecule_family>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/pdbx_reference_molecule_family/FAM_000077">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/pdbx_reference_molecule_family/">
                 <PDBo:referenced_by_pdbx_reference_molecule_list rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077/pdbx_reference_molecule_list/FAM_000077,PRD_001129"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_family>
@@ -1858,7 +1858,7 @@
           <PDBo:pdbx_reference_molecule_synonyms rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/pdbx_reference_molecule_synonyms/FAM_000077,1,PRD_000183">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077"/>
             <PDBo:reference_to_pdbx_reference_molecule_list>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/pdbx_reference_molecule_list/FAM_000077,PRD_000183">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/pdbx_reference_molecule_list/,">
                 <PDBo:referenced_by_pdbx_reference_molecule_synonyms rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077/pdbx_reference_molecule_synonyms/FAM_000077,1,PRD_000183"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_list>
@@ -1873,7 +1873,7 @@
           <PDBo:pdbx_reference_molecule_synonyms rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/pdbx_reference_molecule_synonyms/FAM_000077,2,PRD_000183">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077"/>
             <PDBo:reference_to_pdbx_reference_molecule_list>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/pdbx_reference_molecule_list/FAM_000077,PRD_000183">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/pdbx_reference_molecule_list/,">
                 <PDBo:referenced_by_pdbx_reference_molecule_synonyms rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077/pdbx_reference_molecule_synonyms/FAM_000077,2,PRD_000183"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_list>
@@ -1888,7 +1888,7 @@
           <PDBo:pdbx_reference_molecule_synonyms rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/pdbx_reference_molecule_synonyms/FAM_000077,3,PRD_000183">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077"/>
             <PDBo:reference_to_pdbx_reference_molecule_list>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/pdbx_reference_molecule_list/FAM_000077,PRD_000183">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/pdbx_reference_molecule_list/,">
                 <PDBo:referenced_by_pdbx_reference_molecule_synonyms rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077/pdbx_reference_molecule_synonyms/FAM_000077,3,PRD_000183"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_list>
@@ -1903,7 +1903,7 @@
           <PDBo:pdbx_reference_molecule_synonyms rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/pdbx_reference_molecule_synonyms/FAM_000077,4,PRD_000183">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077"/>
             <PDBo:reference_to_pdbx_reference_molecule_list>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/pdbx_reference_molecule_list/FAM_000077,PRD_000183">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/pdbx_reference_molecule_list/,">
                 <PDBo:referenced_by_pdbx_reference_molecule_synonyms rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077/pdbx_reference_molecule_synonyms/FAM_000077,4,PRD_000183"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_list>
@@ -1918,7 +1918,7 @@
           <PDBo:pdbx_reference_molecule_synonyms rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/pdbx_reference_molecule_synonyms/FAM_000077,5,PRD_000183">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077"/>
             <PDBo:reference_to_pdbx_reference_molecule_list>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/pdbx_reference_molecule_list/FAM_000077,PRD_000183">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/pdbx_reference_molecule_list/,">
                 <PDBo:referenced_by_pdbx_reference_molecule_synonyms rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077/pdbx_reference_molecule_synonyms/FAM_000077,5,PRD_000183"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_list>
@@ -1933,7 +1933,7 @@
           <PDBo:pdbx_reference_molecule_synonyms rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/pdbx_reference_molecule_synonyms/FAM_000077,6,PRD_000183">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077"/>
             <PDBo:reference_to_pdbx_reference_molecule_list>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/pdbx_reference_molecule_list/FAM_000077,PRD_000183">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/pdbx_reference_molecule_list/,">
                 <PDBo:referenced_by_pdbx_reference_molecule_synonyms rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077/pdbx_reference_molecule_synonyms/FAM_000077,6,PRD_000183"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_list>
@@ -1948,7 +1948,7 @@
           <PDBo:pdbx_reference_molecule_synonyms rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/pdbx_reference_molecule_synonyms/FAM_000077,7,PRD_000184">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077"/>
             <PDBo:reference_to_pdbx_reference_molecule_list>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/pdbx_reference_molecule_list/FAM_000077,PRD_000184">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/pdbx_reference_molecule_list/,">
                 <PDBo:referenced_by_pdbx_reference_molecule_synonyms rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077/pdbx_reference_molecule_synonyms/FAM_000077,7,PRD_000184"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_list>
@@ -1963,7 +1963,7 @@
           <PDBo:pdbx_reference_molecule_synonyms rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/pdbx_reference_molecule_synonyms/FAM_000077,8,PRD_001126">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077"/>
             <PDBo:reference_to_pdbx_reference_molecule_list>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/pdbx_reference_molecule_list/FAM_000077,PRD_001126">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/pdbx_reference_molecule_list/,">
                 <PDBo:referenced_by_pdbx_reference_molecule_synonyms rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077/pdbx_reference_molecule_synonyms/FAM_000077,8,PRD_001126"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_list>
@@ -1978,7 +1978,7 @@
           <PDBo:pdbx_reference_molecule_synonyms rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/pdbx_reference_molecule_synonyms/FAM_000077,9,PRD_001129">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077"/>
             <PDBo:reference_to_pdbx_reference_molecule_list>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/pdbx_reference_molecule_list/FAM_000077,PRD_001129">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/pdbx_reference_molecule_list/,">
                 <PDBo:referenced_by_pdbx_reference_molecule_synonyms rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077/pdbx_reference_molecule_synonyms/FAM_000077,9,PRD_001129"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_list>

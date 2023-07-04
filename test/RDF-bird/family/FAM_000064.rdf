@@ -32,7 +32,7 @@
           <PDBo:citation_author rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/citation_author/1,Koeppe,_R.E.,1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064"/>
             <PDBo:reference_to_citation>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/citation/1">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/citation/">
                 <PDBo:referenced_by_citation_author rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064/citation_author/1,Koeppe,_R.E.,1"/>
               </rdf:Description>
             </PDBo:reference_to_citation>
@@ -45,7 +45,7 @@
           <PDBo:citation_author rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/citation_author/1,Hodgson,_K.O.,2">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064"/>
             <PDBo:reference_to_citation>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/citation/1">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/citation/">
                 <PDBo:referenced_by_citation_author rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064/citation_author/1,Hodgson,_K.O.,2"/>
               </rdf:Description>
             </PDBo:reference_to_citation>
@@ -58,7 +58,7 @@
           <PDBo:citation_author rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/citation_author/1,Stryer,_L.,3">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064"/>
             <PDBo:reference_to_citation>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/citation/1">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/citation/">
                 <PDBo:referenced_by_citation_author rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064/citation_author/1,Stryer,_L.,3"/>
               </rdf:Description>
             </PDBo:reference_to_citation>
@@ -75,7 +75,7 @@
           <PDBo:pdbx_family_prd_audit rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_family_prd_audit/Create_family,2012-02-08,FAM_000064">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064"/>
             <PDBo:reference_to_pdbx_reference_molecule_family>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_family/FAM_000064">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_family/">
                 <PDBo:referenced_by_pdbx_family_prd_audit rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_family_prd_audit/Create_family,2012-02-08,FAM_000064"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_family>
@@ -89,7 +89,7 @@
           <PDBo:pdbx_family_prd_audit rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_family_prd_audit/Initial_release,2013-10-16,FAM_000064">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064"/>
             <PDBo:reference_to_pdbx_reference_molecule_family>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_family/FAM_000064">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_family/">
                 <PDBo:referenced_by_pdbx_family_prd_audit rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_family_prd_audit/Initial_release,2013-10-16,FAM_000064"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_family>
@@ -256,7 +256,7 @@
           <PDBo:pdbx_reference_molecule_features rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_features/FAM_000064,1,PRD_000150">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064"/>
             <PDBo:reference_to_pdbx_reference_molecule_list>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/FAM_000064,PRD_000150">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/,">
                 <PDBo:referenced_by_pdbx_reference_molecule_features rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_features/FAM_000064,1,PRD_000150"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_list>
@@ -275,7 +275,7 @@
           <PDBo:pdbx_reference_molecule_features rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_features/FAM_000064,2,PRD_000150">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064"/>
             <PDBo:reference_to_pdbx_reference_molecule_list>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/FAM_000064,PRD_000150">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/,">
                 <PDBo:referenced_by_pdbx_reference_molecule_features rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_features/FAM_000064,2,PRD_000150"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_list>
@@ -292,7 +292,7 @@
           <PDBo:pdbx_reference_molecule_features rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_features/FAM_000064,3,PRD_000150">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064"/>
             <PDBo:reference_to_pdbx_reference_molecule_list>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/FAM_000064,PRD_000150">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/,">
                 <PDBo:referenced_by_pdbx_reference_molecule_features rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_features/FAM_000064,3,PRD_000150"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_list>
@@ -311,7 +311,7 @@
           <PDBo:pdbx_reference_molecule_features rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_features/FAM_000064,4,PRD_000150">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064"/>
             <PDBo:reference_to_pdbx_reference_molecule_list>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/FAM_000064,PRD_000150">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/,">
                 <PDBo:referenced_by_pdbx_reference_molecule_features rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_features/FAM_000064,4,PRD_000150"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_list>
@@ -330,7 +330,7 @@
           <PDBo:pdbx_reference_molecule_features rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_features/FAM_000064,5,PRD_000150">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064"/>
             <PDBo:reference_to_pdbx_reference_molecule_list>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/FAM_000064,PRD_000150">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/,">
                 <PDBo:referenced_by_pdbx_reference_molecule_features rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_features/FAM_000064,5,PRD_000150"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_list>
@@ -347,7 +347,7 @@
           <PDBo:pdbx_reference_molecule_features rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_features/FAM_000064,6,PRD_000150">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064"/>
             <PDBo:reference_to_pdbx_reference_molecule_list>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/FAM_000064,PRD_000150">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/,">
                 <PDBo:referenced_by_pdbx_reference_molecule_features rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_features/FAM_000064,6,PRD_000150"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_list>
@@ -366,7 +366,7 @@
           <PDBo:pdbx_reference_molecule_features rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_features/FAM_000064,7,PRD_000150">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064"/>
             <PDBo:reference_to_pdbx_reference_molecule_list>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/FAM_000064,PRD_000150">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/,">
                 <PDBo:referenced_by_pdbx_reference_molecule_features rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_features/FAM_000064,7,PRD_000150"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_list>
@@ -385,7 +385,7 @@
           <PDBo:pdbx_reference_molecule_features rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_features/FAM_000064,8,PRD_000150">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064"/>
             <PDBo:reference_to_pdbx_reference_molecule_list>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/FAM_000064,PRD_000150">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/,">
                 <PDBo:referenced_by_pdbx_reference_molecule_features rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_features/FAM_000064,8,PRD_000150"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_list>
@@ -403,7 +403,7 @@
           <PDBo:pdbx_reference_molecule_features rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_features/FAM_000064,9,PRD_000150">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064"/>
             <PDBo:reference_to_pdbx_reference_molecule_list>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/FAM_000064,PRD_000150">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/,">
                 <PDBo:referenced_by_pdbx_reference_molecule_features rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_features/FAM_000064,9,PRD_000150"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_list>
@@ -421,7 +421,7 @@
           <PDBo:pdbx_reference_molecule_features rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_features/FAM_000064,10,PRD_000150">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064"/>
             <PDBo:reference_to_pdbx_reference_molecule_list>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/FAM_000064,PRD_000150">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/,">
                 <PDBo:referenced_by_pdbx_reference_molecule_features rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_features/FAM_000064,10,PRD_000150"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_list>
@@ -439,7 +439,7 @@
           <PDBo:pdbx_reference_molecule_features rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_features/FAM_000064,11,PRD_000150">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064"/>
             <PDBo:reference_to_pdbx_reference_molecule_list>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/FAM_000064,PRD_000150">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/,">
                 <PDBo:referenced_by_pdbx_reference_molecule_features rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_features/FAM_000064,11,PRD_000150"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_list>
@@ -457,7 +457,7 @@
           <PDBo:pdbx_reference_molecule_features rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_features/FAM_000064,12,PRD_000151">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064"/>
             <PDBo:reference_to_pdbx_reference_molecule_list>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/FAM_000064,PRD_000151">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/,">
                 <PDBo:referenced_by_pdbx_reference_molecule_features rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_features/FAM_000064,12,PRD_000151"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_list>
@@ -474,7 +474,7 @@
           <PDBo:pdbx_reference_molecule_features rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_features/FAM_000064,13,PRD_000151">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064"/>
             <PDBo:reference_to_pdbx_reference_molecule_list>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/FAM_000064,PRD_000151">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/,">
                 <PDBo:referenced_by_pdbx_reference_molecule_features rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_features/FAM_000064,13,PRD_000151"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_list>
@@ -493,7 +493,7 @@
           <PDBo:pdbx_reference_molecule_features rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_features/FAM_000064,14,PRD_000151">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064"/>
             <PDBo:reference_to_pdbx_reference_molecule_list>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/FAM_000064,PRD_000151">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/,">
                 <PDBo:referenced_by_pdbx_reference_molecule_features rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_features/FAM_000064,14,PRD_000151"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_list>
@@ -512,7 +512,7 @@
           <PDBo:pdbx_reference_molecule_features rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_features/FAM_000064,15,PRD_000151">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064"/>
             <PDBo:reference_to_pdbx_reference_molecule_list>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/FAM_000064,PRD_000151">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/,">
                 <PDBo:referenced_by_pdbx_reference_molecule_features rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_features/FAM_000064,15,PRD_000151"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_list>
@@ -530,7 +530,7 @@
           <PDBo:pdbx_reference_molecule_features rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_features/FAM_000064,16,PRD_000151">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064"/>
             <PDBo:reference_to_pdbx_reference_molecule_list>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/FAM_000064,PRD_000151">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/,">
                 <PDBo:referenced_by_pdbx_reference_molecule_features rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_features/FAM_000064,16,PRD_000151"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_list>
@@ -548,7 +548,7 @@
           <PDBo:pdbx_reference_molecule_features rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_features/FAM_000064,17,PRD_000151">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064"/>
             <PDBo:reference_to_pdbx_reference_molecule_list>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/FAM_000064,PRD_000151">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/,">
                 <PDBo:referenced_by_pdbx_reference_molecule_features rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_features/FAM_000064,17,PRD_000151"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_list>
@@ -566,7 +566,7 @@
           <PDBo:pdbx_reference_molecule_features rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_features/FAM_000064,18,PRD_000151">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064"/>
             <PDBo:reference_to_pdbx_reference_molecule_list>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/FAM_000064,PRD_000151">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/,">
                 <PDBo:referenced_by_pdbx_reference_molecule_features rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_features/FAM_000064,18,PRD_000151"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_list>
@@ -584,7 +584,7 @@
           <PDBo:pdbx_reference_molecule_features rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_features/FAM_000064,19,PRD_000152">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064"/>
             <PDBo:reference_to_pdbx_reference_molecule_list>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/FAM_000064,PRD_000152">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/,">
                 <PDBo:referenced_by_pdbx_reference_molecule_features rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_features/FAM_000064,19,PRD_000152"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_list>
@@ -603,7 +603,7 @@
           <PDBo:pdbx_reference_molecule_features rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_features/FAM_000064,20,PRD_000152">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064"/>
             <PDBo:reference_to_pdbx_reference_molecule_list>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/FAM_000064,PRD_000152">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/,">
                 <PDBo:referenced_by_pdbx_reference_molecule_features rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_features/FAM_000064,20,PRD_000152"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_list>
@@ -620,7 +620,7 @@
           <PDBo:pdbx_reference_molecule_features rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_features/FAM_000064,21,PRD_000152">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064"/>
             <PDBo:reference_to_pdbx_reference_molecule_list>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/FAM_000064,PRD_000152">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/,">
                 <PDBo:referenced_by_pdbx_reference_molecule_features rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_features/FAM_000064,21,PRD_000152"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_list>
@@ -637,7 +637,7 @@
           <PDBo:pdbx_reference_molecule_features rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_features/FAM_000064,22,PRD_000152">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064"/>
             <PDBo:reference_to_pdbx_reference_molecule_list>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/FAM_000064,PRD_000152">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/,">
                 <PDBo:referenced_by_pdbx_reference_molecule_features rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_features/FAM_000064,22,PRD_000152"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_list>
@@ -656,7 +656,7 @@
           <PDBo:pdbx_reference_molecule_features rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_features/FAM_000064,23,PRD_000152">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064"/>
             <PDBo:reference_to_pdbx_reference_molecule_list>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/FAM_000064,PRD_000152">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/,">
                 <PDBo:referenced_by_pdbx_reference_molecule_features rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_features/FAM_000064,23,PRD_000152"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_list>
@@ -675,7 +675,7 @@
           <PDBo:pdbx_reference_molecule_features rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_features/FAM_000064,24,PRD_000152">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064"/>
             <PDBo:reference_to_pdbx_reference_molecule_list>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/FAM_000064,PRD_000152">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/,">
                 <PDBo:referenced_by_pdbx_reference_molecule_features rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_features/FAM_000064,24,PRD_000152"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_list>
@@ -694,7 +694,7 @@
           <PDBo:pdbx_reference_molecule_features rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_features/FAM_000064,25,PRD_000152">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064"/>
             <PDBo:reference_to_pdbx_reference_molecule_list>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/FAM_000064,PRD_000152">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/,">
                 <PDBo:referenced_by_pdbx_reference_molecule_features rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_features/FAM_000064,25,PRD_000152"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_list>
@@ -713,7 +713,7 @@
           <PDBo:pdbx_reference_molecule_features rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_features/FAM_000064,26,PRD_000152">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064"/>
             <PDBo:reference_to_pdbx_reference_molecule_list>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/FAM_000064,PRD_000152">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/,">
                 <PDBo:referenced_by_pdbx_reference_molecule_features rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_features/FAM_000064,26,PRD_000152"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_list>
@@ -731,7 +731,7 @@
           <PDBo:pdbx_reference_molecule_features rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_features/FAM_000064,27,PRD_000152">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064"/>
             <PDBo:reference_to_pdbx_reference_molecule_list>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/FAM_000064,PRD_000152">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/,">
                 <PDBo:referenced_by_pdbx_reference_molecule_features rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_features/FAM_000064,27,PRD_000152"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_list>
@@ -749,7 +749,7 @@
           <PDBo:pdbx_reference_molecule_features rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_features/FAM_000064,28,PRD_000152">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064"/>
             <PDBo:reference_to_pdbx_reference_molecule_list>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/FAM_000064,PRD_000152">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/,">
                 <PDBo:referenced_by_pdbx_reference_molecule_features rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_features/FAM_000064,28,PRD_000152"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_list>
@@ -767,7 +767,7 @@
           <PDBo:pdbx_reference_molecule_features rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_features/FAM_000064,29,PRD_000152">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064"/>
             <PDBo:reference_to_pdbx_reference_molecule_list>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/FAM_000064,PRD_000152">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/,">
                 <PDBo:referenced_by_pdbx_reference_molecule_features rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_features/FAM_000064,29,PRD_000152"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_list>
@@ -785,7 +785,7 @@
           <PDBo:pdbx_reference_molecule_features rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_features/FAM_000064,30,PRD_000152">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064"/>
             <PDBo:reference_to_pdbx_reference_molecule_list>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/FAM_000064,PRD_000152">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/,">
                 <PDBo:referenced_by_pdbx_reference_molecule_features rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_features/FAM_000064,30,PRD_000152"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_list>
@@ -806,7 +806,7 @@
           <PDBo:pdbx_reference_molecule_list rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/FAM_000064,PRD_000150">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064"/>
             <PDBo:reference_to_pdbx_reference_molecule_family>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_family/FAM_000064">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_family/">
                 <PDBo:referenced_by_pdbx_reference_molecule_list rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/FAM_000064,PRD_000150"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_family>
@@ -819,7 +819,7 @@
           <PDBo:pdbx_reference_molecule_list rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/FAM_000064,PRD_000151">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064"/>
             <PDBo:reference_to_pdbx_reference_molecule_family>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_family/FAM_000064">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_family/">
                 <PDBo:referenced_by_pdbx_reference_molecule_list rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/FAM_000064,PRD_000151"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_family>
@@ -832,7 +832,7 @@
           <PDBo:pdbx_reference_molecule_list rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/FAM_000064,PRD_000152">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064"/>
             <PDBo:reference_to_pdbx_reference_molecule_family>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_family/FAM_000064">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_family/">
                 <PDBo:referenced_by_pdbx_reference_molecule_list rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/FAM_000064,PRD_000152"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_family>
@@ -845,7 +845,7 @@
           <PDBo:pdbx_reference_molecule_list rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/FAM_000064,PRD_000153">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064"/>
             <PDBo:reference_to_pdbx_reference_molecule_family>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_family/FAM_000064">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_family/">
                 <PDBo:referenced_by_pdbx_reference_molecule_list rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/FAM_000064,PRD_000153"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_family>
@@ -858,7 +858,7 @@
           <PDBo:pdbx_reference_molecule_list rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/FAM_000064,PRD_000154">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064"/>
             <PDBo:reference_to_pdbx_reference_molecule_family>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_family/FAM_000064">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_family/">
                 <PDBo:referenced_by_pdbx_reference_molecule_list rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/FAM_000064,PRD_000154"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_family>
@@ -871,7 +871,7 @@
           <PDBo:pdbx_reference_molecule_list rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/FAM_000064,PRD_000155">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064"/>
             <PDBo:reference_to_pdbx_reference_molecule_family>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_family/FAM_000064">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_family/">
                 <PDBo:referenced_by_pdbx_reference_molecule_list rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/FAM_000064,PRD_000155"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_family>
@@ -884,7 +884,7 @@
           <PDBo:pdbx_reference_molecule_list rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/FAM_000064,PRD_001127">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064"/>
             <PDBo:reference_to_pdbx_reference_molecule_family>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_family/FAM_000064">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_family/">
                 <PDBo:referenced_by_pdbx_reference_molecule_list rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/FAM_000064,PRD_001127"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_family>
@@ -897,7 +897,7 @@
           <PDBo:pdbx_reference_molecule_list rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/FAM_000064,PRD_001128">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064"/>
             <PDBo:reference_to_pdbx_reference_molecule_family>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_family/FAM_000064">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_family/">
                 <PDBo:referenced_by_pdbx_reference_molecule_list rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/FAM_000064,PRD_001128"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_family>
@@ -910,7 +910,7 @@
           <PDBo:pdbx_reference_molecule_list rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/FAM_000064,PRD_001131">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064"/>
             <PDBo:reference_to_pdbx_reference_molecule_family>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_family/FAM_000064">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_family/">
                 <PDBo:referenced_by_pdbx_reference_molecule_list rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/FAM_000064,PRD_001131"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_family>
@@ -970,7 +970,7 @@
           <PDBo:pdbx_reference_molecule_synonyms rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_synonyms/FAM_000064,1,PRD_000150">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064"/>
             <PDBo:reference_to_pdbx_reference_molecule_list>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/FAM_000064,PRD_000150">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/,">
                 <PDBo:referenced_by_pdbx_reference_molecule_synonyms rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_synonyms/FAM_000064,1,PRD_000150"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_list>
@@ -985,7 +985,7 @@
           <PDBo:pdbx_reference_molecule_synonyms rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_synonyms/FAM_000064,2,PRD_000150">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064"/>
             <PDBo:reference_to_pdbx_reference_molecule_list>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/FAM_000064,PRD_000150">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/,">
                 <PDBo:referenced_by_pdbx_reference_molecule_synonyms rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_synonyms/FAM_000064,2,PRD_000150"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_list>
@@ -1000,7 +1000,7 @@
           <PDBo:pdbx_reference_molecule_synonyms rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_synonyms/FAM_000064,3,PRD_000150">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064"/>
             <PDBo:reference_to_pdbx_reference_molecule_list>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/FAM_000064,PRD_000150">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/,">
                 <PDBo:referenced_by_pdbx_reference_molecule_synonyms rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_synonyms/FAM_000064,3,PRD_000150"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_list>
@@ -1015,7 +1015,7 @@
           <PDBo:pdbx_reference_molecule_synonyms rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_synonyms/FAM_000064,4,PRD_000150">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064"/>
             <PDBo:reference_to_pdbx_reference_molecule_list>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/FAM_000064,PRD_000150">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/,">
                 <PDBo:referenced_by_pdbx_reference_molecule_synonyms rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_synonyms/FAM_000064,4,PRD_000150"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_list>
@@ -1030,7 +1030,7 @@
           <PDBo:pdbx_reference_molecule_synonyms rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_synonyms/FAM_000064,5,PRD_000150">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064"/>
             <PDBo:reference_to_pdbx_reference_molecule_list>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/FAM_000064,PRD_000150">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/,">
                 <PDBo:referenced_by_pdbx_reference_molecule_synonyms rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_synonyms/FAM_000064,5,PRD_000150"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_list>
@@ -1045,7 +1045,7 @@
           <PDBo:pdbx_reference_molecule_synonyms rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_synonyms/FAM_000064,6,PRD_000150">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064"/>
             <PDBo:reference_to_pdbx_reference_molecule_list>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/FAM_000064,PRD_000150">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/,">
                 <PDBo:referenced_by_pdbx_reference_molecule_synonyms rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_synonyms/FAM_000064,6,PRD_000150"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_list>
@@ -1060,7 +1060,7 @@
           <PDBo:pdbx_reference_molecule_synonyms rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_synonyms/FAM_000064,7,PRD_000150">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064"/>
             <PDBo:reference_to_pdbx_reference_molecule_list>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/FAM_000064,PRD_000150">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/,">
                 <PDBo:referenced_by_pdbx_reference_molecule_synonyms rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_synonyms/FAM_000064,7,PRD_000150"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_list>
@@ -1075,7 +1075,7 @@
           <PDBo:pdbx_reference_molecule_synonyms rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_synonyms/FAM_000064,8,PRD_000150">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064"/>
             <PDBo:reference_to_pdbx_reference_molecule_list>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/FAM_000064,PRD_000150">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/,">
                 <PDBo:referenced_by_pdbx_reference_molecule_synonyms rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_synonyms/FAM_000064,8,PRD_000150"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_list>
@@ -1090,7 +1090,7 @@
           <PDBo:pdbx_reference_molecule_synonyms rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_synonyms/FAM_000064,9,PRD_000151">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064"/>
             <PDBo:reference_to_pdbx_reference_molecule_list>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/FAM_000064,PRD_000151">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/,">
                 <PDBo:referenced_by_pdbx_reference_molecule_synonyms rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_synonyms/FAM_000064,9,PRD_000151"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_list>
@@ -1105,7 +1105,7 @@
           <PDBo:pdbx_reference_molecule_synonyms rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_synonyms/FAM_000064,10,PRD_000151">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064"/>
             <PDBo:reference_to_pdbx_reference_molecule_list>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/FAM_000064,PRD_000151">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/,">
                 <PDBo:referenced_by_pdbx_reference_molecule_synonyms rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_synonyms/FAM_000064,10,PRD_000151"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_list>
@@ -1120,7 +1120,7 @@
           <PDBo:pdbx_reference_molecule_synonyms rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_synonyms/FAM_000064,11,PRD_000151">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064"/>
             <PDBo:reference_to_pdbx_reference_molecule_list>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/FAM_000064,PRD_000151">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/,">
                 <PDBo:referenced_by_pdbx_reference_molecule_synonyms rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_synonyms/FAM_000064,11,PRD_000151"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_list>
@@ -1135,7 +1135,7 @@
           <PDBo:pdbx_reference_molecule_synonyms rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_synonyms/FAM_000064,12,PRD_000152">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064"/>
             <PDBo:reference_to_pdbx_reference_molecule_list>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/FAM_000064,PRD_000152">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/,">
                 <PDBo:referenced_by_pdbx_reference_molecule_synonyms rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_synonyms/FAM_000064,12,PRD_000152"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_list>
@@ -1150,7 +1150,7 @@
           <PDBo:pdbx_reference_molecule_synonyms rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_synonyms/FAM_000064,13,PRD_000152">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064"/>
             <PDBo:reference_to_pdbx_reference_molecule_list>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/FAM_000064,PRD_000152">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/,">
                 <PDBo:referenced_by_pdbx_reference_molecule_synonyms rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_synonyms/FAM_000064,13,PRD_000152"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_list>
@@ -1165,7 +1165,7 @@
           <PDBo:pdbx_reference_molecule_synonyms rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_synonyms/FAM_000064,14,PRD_000152">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064"/>
             <PDBo:reference_to_pdbx_reference_molecule_list>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/FAM_000064,PRD_000152">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/,">
                 <PDBo:referenced_by_pdbx_reference_molecule_synonyms rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_synonyms/FAM_000064,14,PRD_000152"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_list>
@@ -1180,7 +1180,7 @@
           <PDBo:pdbx_reference_molecule_synonyms rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_synonyms/FAM_000064,15,PRD_000152">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064"/>
             <PDBo:reference_to_pdbx_reference_molecule_list>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/FAM_000064,PRD_000152">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/,">
                 <PDBo:referenced_by_pdbx_reference_molecule_synonyms rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_synonyms/FAM_000064,15,PRD_000152"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_list>
@@ -1195,7 +1195,7 @@
           <PDBo:pdbx_reference_molecule_synonyms rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_synonyms/FAM_000064,16,PRD_000152">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064"/>
             <PDBo:reference_to_pdbx_reference_molecule_list>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/FAM_000064,PRD_000152">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/,">
                 <PDBo:referenced_by_pdbx_reference_molecule_synonyms rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_synonyms/FAM_000064,16,PRD_000152"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_list>
@@ -1210,7 +1210,7 @@
           <PDBo:pdbx_reference_molecule_synonyms rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_synonyms/FAM_000064,17,PRD_000152">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064"/>
             <PDBo:reference_to_pdbx_reference_molecule_list>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/FAM_000064,PRD_000152">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/,">
                 <PDBo:referenced_by_pdbx_reference_molecule_synonyms rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_synonyms/FAM_000064,17,PRD_000152"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_list>
@@ -1225,7 +1225,7 @@
           <PDBo:pdbx_reference_molecule_synonyms rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_synonyms/FAM_000064,18,PRD_000152">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064"/>
             <PDBo:reference_to_pdbx_reference_molecule_list>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/FAM_000064,PRD_000152">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/,">
                 <PDBo:referenced_by_pdbx_reference_molecule_synonyms rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_synonyms/FAM_000064,18,PRD_000152"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_list>
@@ -1240,7 +1240,7 @@
           <PDBo:pdbx_reference_molecule_synonyms rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_synonyms/FAM_000064,19,PRD_000152">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064"/>
             <PDBo:reference_to_pdbx_reference_molecule_list>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/FAM_000064,PRD_000152">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/,">
                 <PDBo:referenced_by_pdbx_reference_molecule_synonyms rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_synonyms/FAM_000064,19,PRD_000152"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_list>
@@ -1255,7 +1255,7 @@
           <PDBo:pdbx_reference_molecule_synonyms rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_synonyms/FAM_000064,20,PRD_000152">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064"/>
             <PDBo:reference_to_pdbx_reference_molecule_list>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/FAM_000064,PRD_000152">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/,">
                 <PDBo:referenced_by_pdbx_reference_molecule_synonyms rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_synonyms/FAM_000064,20,PRD_000152"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_list>
@@ -1270,7 +1270,7 @@
           <PDBo:pdbx_reference_molecule_synonyms rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_synonyms/FAM_000064,21,PRD_000152">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064"/>
             <PDBo:reference_to_pdbx_reference_molecule_list>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/FAM_000064,PRD_000152">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/,">
                 <PDBo:referenced_by_pdbx_reference_molecule_synonyms rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_synonyms/FAM_000064,21,PRD_000152"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_list>
@@ -1285,7 +1285,7 @@
           <PDBo:pdbx_reference_molecule_synonyms rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_synonyms/FAM_000064,22,PRD_000152">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064"/>
             <PDBo:reference_to_pdbx_reference_molecule_list>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/FAM_000064,PRD_000152">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/,">
                 <PDBo:referenced_by_pdbx_reference_molecule_synonyms rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_synonyms/FAM_000064,22,PRD_000152"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_list>
@@ -1300,7 +1300,7 @@
           <PDBo:pdbx_reference_molecule_synonyms rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_synonyms/FAM_000064,23,PRD_000152">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064"/>
             <PDBo:reference_to_pdbx_reference_molecule_list>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/FAM_000064,PRD_000152">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/,">
                 <PDBo:referenced_by_pdbx_reference_molecule_synonyms rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_synonyms/FAM_000064,23,PRD_000152"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_list>
@@ -1315,7 +1315,7 @@
           <PDBo:pdbx_reference_molecule_synonyms rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_synonyms/FAM_000064,24,PRD_000150">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064"/>
             <PDBo:reference_to_pdbx_reference_molecule_list>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/FAM_000064,PRD_000150">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/,">
                 <PDBo:referenced_by_pdbx_reference_molecule_synonyms rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_synonyms/FAM_000064,24,PRD_000150"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_list>
@@ -1330,7 +1330,7 @@
           <PDBo:pdbx_reference_molecule_synonyms rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_synonyms/FAM_000064,25,PRD_000151">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064"/>
             <PDBo:reference_to_pdbx_reference_molecule_list>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/FAM_000064,PRD_000151">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/,">
                 <PDBo:referenced_by_pdbx_reference_molecule_synonyms rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_synonyms/FAM_000064,25,PRD_000151"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_list>
@@ -1345,7 +1345,7 @@
           <PDBo:pdbx_reference_molecule_synonyms rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_synonyms/FAM_000064,26,PRD_000150">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064"/>
             <PDBo:reference_to_pdbx_reference_molecule_list>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/FAM_000064,PRD_000150">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/,">
                 <PDBo:referenced_by_pdbx_reference_molecule_synonyms rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_synonyms/FAM_000064,26,PRD_000150"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_list>
@@ -1360,7 +1360,7 @@
           <PDBo:pdbx_reference_molecule_synonyms rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_synonyms/FAM_000064,27,PRD_000152">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064"/>
             <PDBo:reference_to_pdbx_reference_molecule_list>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/FAM_000064,PRD_000152">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/,">
                 <PDBo:referenced_by_pdbx_reference_molecule_synonyms rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_synonyms/FAM_000064,27,PRD_000152"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_list>
@@ -1375,7 +1375,7 @@
           <PDBo:pdbx_reference_molecule_synonyms rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_synonyms/FAM_000064,28,PRD_000152">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064"/>
             <PDBo:reference_to_pdbx_reference_molecule_list>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/FAM_000064,PRD_000152">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/,">
                 <PDBo:referenced_by_pdbx_reference_molecule_synonyms rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_synonyms/FAM_000064,28,PRD_000152"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_list>
@@ -1390,7 +1390,7 @@
           <PDBo:pdbx_reference_molecule_synonyms rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_synonyms/FAM_000064,29,PRD_001127">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064"/>
             <PDBo:reference_to_pdbx_reference_molecule_list>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/FAM_000064,PRD_001127">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/,">
                 <PDBo:referenced_by_pdbx_reference_molecule_synonyms rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_synonyms/FAM_000064,29,PRD_001127"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_list>
@@ -1405,7 +1405,7 @@
           <PDBo:pdbx_reference_molecule_synonyms rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_synonyms/FAM_000064,30,PRD_001128">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064"/>
             <PDBo:reference_to_pdbx_reference_molecule_list>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/FAM_000064,PRD_001128">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/,">
                 <PDBo:referenced_by_pdbx_reference_molecule_synonyms rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_synonyms/FAM_000064,30,PRD_001128"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_list>
@@ -1420,7 +1420,7 @@
           <PDBo:pdbx_reference_molecule_synonyms rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_synonyms/FAM_000064,31,PRD_001131">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064"/>
             <PDBo:reference_to_pdbx_reference_molecule_list>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/FAM_000064,PRD_001131">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/,">
                 <PDBo:referenced_by_pdbx_reference_molecule_synonyms rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_synonyms/FAM_000064,31,PRD_001131"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_list>
@@ -1435,7 +1435,7 @@
           <PDBo:pdbx_reference_molecule_synonyms rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_synonyms/FAM_000064,32,PRD_000154">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064"/>
             <PDBo:reference_to_pdbx_reference_molecule_list>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/FAM_000064,PRD_000154">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_list/,">
                 <PDBo:referenced_by_pdbx_reference_molecule_synonyms rdf:resource="http://rdf.wwpdb.org/fam/FAM_000064/pdbx_reference_molecule_synonyms/FAM_000064,32,PRD_000154"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_list>

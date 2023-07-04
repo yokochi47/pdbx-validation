@@ -28,9 +28,11 @@ WORK_DIR=.
 
 rm -rf $WORK_DIR/$PDBML_FAM
 
-for dir in chk_sum_pdbml_fam; do
- cd $dir; find . -type f | xargs rm -f; cd ..; rmdir $dir
-done
+if [ -e chk_sum_pdbml_fam ] ; then
+ for dir in chk_sum_pdbml_fam; do
+  cd $dir; find . -type f | xargs rm -f; cd ..; rmdir $dir
+ done
+fi
 
 WORK_DIR=test
 

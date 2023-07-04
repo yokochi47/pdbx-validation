@@ -18,6 +18,14 @@ fi
 
 #fi
 
+#if [ ! -e $MERGE_PDBML_NEXTGEN_XSL ] ; then
+
+ java -jar $SAXON -s:$PDBML_XSD -xsl:$XSD2MERGE_PDBML_NEXTGEN_XSL -o:$MERGE_PDBML_NEXTGEN_XSL || ( echo $0 aborted. ; exit 1 )
+
+ echo Generated: $MERGE_PDBML_NEXTGEN_XSL
+
+#fi
+
 #if [ ! -e $EXT_PDBML_XSL ] ; then
 
  java -jar $SAXON -s:$PDBX_VALIDATION_XSD -xsl:$XSD2EXT_PDBML_XSL -o:$EXT_PDBML_XSL || ( echo $0 aborted. ; exit 1 )
@@ -80,10 +88,16 @@ for arg ; do
     wget ftp://ftp.wwpdb.org/pub/pdb/validation_reports/${pdb_id:1:2}/$pdb_id/$pdb_id"_validation.xml.gz" -P $WORK_DIR/$VALID_INFO; gunzip $info_file.gz
 
    fi
-
+<<REMARK
    if [ ! -e $sifts_xml_file ] ; then
 
     wget ftp://$SIFTS_XML_URL/$pdb_id.xml.gz -P $WORK_DIR/$SIFTS_XML; gunzip $sifts_xml_file.gz
+
+   fi
+REMARK
+   if [ ! -e $pdbml_nextgen_file ] ; then
+
+    wget https://files-nextgen.wwpdb.org/pdb_nextgen/data/entries/divided/${pdb_id:1:2}/$NEXTGEN_FILE_PREFIX$pdb_id/$NEXTGEN_FILE_PREFIX$pdb_id$NEXTGEN_FILE_SUFFIX.xml.gz -P $WORK_DIR/nextgen; gunzip $pdbml_nextgen_file
 
    fi
 
@@ -133,6 +147,10 @@ for pdbml_file in $WORK_DIR/$PDBML/*.xml ; do
 
  pdb_id=`basename $pdbml_file -noatom.xml`
 
+ if [ $pdb_id = "7z9e" ] || [ $pdb_id = "7zbu" ] ; then
+  continue
+ fi
+
  #exptl_method=`java -jar $SAXON -s:$pdbml_file -xsl:stylesheet/exptl_method.xsl`
  exptl_method=`xsltproc stylesheet/exptl_method.xsl $pdbml_file`
 
@@ -140,20 +158,32 @@ for pdbml_file in $WORK_DIR/$PDBML/*.xml ; do
  echo Processing PDB ID: ${pdb_id^^}, "Exptl. method: "$exptl_method" ..."
 
  sifts_xml_file=$WORK_DIR/$SIFTS_XML/$pdb_id.xml
+ pdbml_nextgen_file=$WORK_DIR/$NEXTGEN/$NEXTGEN_FILE_PREFIX$pdb_id$NEXTGEN_FILE_SUFFIX.xml
  pdbml_sifts_file=$WORK_DIR/$PDBML_SIFTS/$pdb_id-noatom-sifts.xml
 
  #xsltproc stylesheet/check_sifts.xsl $sifts_xml_file
  #echo
-
- if [ -e $sifts_xml_file ] && [ -s $sifts_xml_fil ] ; then
+<<REMARK
+ if [ -e $sifts_xml_file ] && [ -s $sifts_xml_file ] ; then
   xsltproc -o $pdbml_sifts_file --stringparam sifts_file ../$sifts_xml_file $MERGE_PDBML_SIFTS_XSL $pdbml_file
   #java -jar $SAXON -s:$pdbml_file -xsl:$MERGE_PDBML_SIFTS_XSL -o:$pdbml_sifts_file sifts_file=../$sifts_xml_file
+ else
+  cp -f $pdbml_file $pdbml_sifts_file
+ fi
+REMARK
+ if [ -e $pdbml_nextgen_file ] && [ -s $pdbml_nextgen_file ] ; then
+  xsltproc -o $pdbml_sifts_file --stringparam nextgen_file ../$pdbml_nextgen_file $MERGE_PDBML_NEXTGEN_XSL $pdbml_file
+  #java -jar $SAXON -s:$pdbml_file -xsl:$MERGE_PDBML_SIFTS_XSL -o:$pdbml_sifts_file nextgen_file=../$pdbml_nextgen_file
  else
   cp -f $pdbml_file $pdbml_sifts_file
  fi
 
  pdbml_ext_file=$WORK_DIR/$PDBML_EXT/$pdb_id-noatom-ext.xml
  info_file=../$WORK_DIR/$VALID_INFO/$pdb_id"_validation.xml"
+
+ if [ ! -e $WORK_DIR/$VALID_INFO/$pdb_id"_validation.xml" ] ; then
+  continue
+ fi
 
  xsltproc -o $pdbml_ext_file --stringparam info_file $info_file $EXT_PDBML_XSL $pdbml_sifts_file || ( echo $0 aborted. ; exit 1 )
  #java -jar $SAXON -s:$pdbml_sifts_file -xsl:$EXT_PDBML_XSL -o:$pdbml_ext_file info_file=$info_file || ( echo $0 aborted. ; exit 1 )
@@ -169,7 +199,6 @@ for pdbml_file in $WORK_DIR/$PDBML/*.xml ; do
  pdbml_ext_file=../$pdbml_ext_file # add relative path (../) from directory contains target styleseet
 
  #xsltproc -o $info_alt_file --stringparam pdbml_ext_file $pdbml_ext_file $EXT_INFO_XSL $info_file || ( echo $0 aborted. ; exit 1 )
- echo java -jar $SAXON -s:$info_file -xsl:$EXT_INFO_XSL -o:$info_alt_file pdbml_ext_file=$pdbml_ext_file
  java -jar $SAXON -s:$info_file -xsl:$EXT_INFO_XSL -o:$info_alt_file pdbml_ext_file=$pdbml_ext_file || ( echo $0 aborted. ; exit 1 )
 
  xml_pretty $info_alt_file

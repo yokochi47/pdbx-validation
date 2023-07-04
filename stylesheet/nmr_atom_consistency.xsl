@@ -11,8 +11,8 @@
 
     <xsl:if test="wwPDB-validation-information/Entry/@nmr_models_consistency_flag">
       <xsl:choose>
-        <xsl:when test="wwPDB-validation-information/Entry/@nmr_models_consistency_flag='True'">Y</xsl:when>
-        <xsl:otherwise>N</xsl:otherwise>
+	<xsl:when test="wwPDB-validation-information/Entry/@nmr_models_consistency_flag='True'">Y</xsl:when>
+	<xsl:otherwise>N</xsl:otherwise>
       </xsl:choose>
     </xsl:if>
 
@@ -26,16 +26,16 @@
     <xsl:param name="terminate">no</xsl:param>
     <xsl:choose>
       <xsl:when test="$terminate='yes'">
-        <xsl:message terminate="yes">
-          <xsl:text>ERROR in nmr_atom_consistency.xsl: </xsl:text>
-          <xsl:value-of select="$error_message"/>
-        </xsl:message>
+	<xsl:message terminate="yes">
+	  <xsl:text>ERROR in nmr_atom_consistency.xsl: </xsl:text>
+	  <xsl:value-of select="$error_message"/>
+	</xsl:message>
       </xsl:when>
       <xsl:otherwise>
-        <span style="font-weight: bold; color: red">
-          <xsl:text>ERROR: </xsl:text>
-          <xsl:value-of select="$error_message"/>
-        </span>
+	<span style="font-weight: bold; color: red">
+	  <xsl:text>ERROR: </xsl:text>
+	  <xsl:value-of select="$error_message"/>
+	</span>
       </xsl:otherwise>
     </xsl:choose>
   </xsl:template>

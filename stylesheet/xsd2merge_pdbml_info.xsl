@@ -39,10 +39,10 @@
 
     &lt;xsl:if test="$entry_id!=$pdb_id"&gt;
       &lt;xsl:call-template name="error_handler"&gt;
-        &lt;xsl:with-param name="terminate"&gt;yes&lt;/xsl:with-param&gt;
-        &lt;xsl:with-param name="error_message"&gt;
+	&lt;xsl:with-param name="terminate"&gt;yes&lt;/xsl:with-param&gt;
+	&lt;xsl:with-param name="error_message"&gt;
 Unmatched entry ID in both documents (&lt;xsl:value-of select="$entry_id"/&gt; and &lt;xsl:value-of select="$pdb_id"/&gt;).
-        &lt;/xsl:with-param&gt;
+	&lt;/xsl:with-param&gt;
       &lt;/xsl:call-template&gt;
     &lt;/xsl:if&gt;
 
@@ -105,16 +105,16 @@ Unmatched entry ID in both documents (&lt;xsl:value-of select="$entry_id"/&gt; a
     &lt;xsl:param name="terminate"&gt;no&lt;/xsl:param&gt;
     &lt;xsl:choose&gt;
       &lt;xsl:when test="$terminate='yes'"&gt;
-        &lt;xsl:message terminate="yes"&gt;
-          &lt;xsl:text&gt;ERROR in merge_pdbml_info.xsl: &lt;/xsl:text&gt;
-          &lt;xsl:value-of select="$error_message"/&gt;
-        &lt;/xsl:message&gt;
+	&lt;xsl:message terminate="yes"&gt;
+	  &lt;xsl:text&gt;ERROR in merge_pdbml_info.xsl: &lt;/xsl:text&gt;
+	  &lt;xsl:value-of select="$error_message"/&gt;
+	&lt;/xsl:message&gt;
       &lt;/xsl:when&gt;
       &lt;xsl:otherwise&gt;
-        &lt;span style="font-weight: bold; color: red"&gt;
-          &lt;xsl:text&gt;ERROR: &lt;/xsl:text&gt;
-          &lt;xsl:value-of select="$error_message"/&gt;
-        &lt;/span&gt;
+	&lt;span style="font-weight: bold; color: red"&gt;
+	  &lt;xsl:text&gt;ERROR: &lt;/xsl:text&gt;
+	  &lt;xsl:value-of select="$error_message"/&gt;
+	&lt;/span&gt;
       &lt;/xsl:otherwise&gt;
     &lt;/xsl:choose&gt;
   &lt;/xsl:template&gt;
@@ -125,12 +125,12 @@ Unmatched entry ID in both documents (&lt;xsl:value-of select="$entry_id"/&gt; a
   &lt;xsl:template name="merge_</xsl2:text><xsl2:value-of select="."/><xsl2:text disable-output-escaping="yes">"&gt;
     &lt;xsl:if test="VRPTx:datablock/VRPTx:</xsl2:text><xsl2:value-of select="."/><xsl2:text disable-output-escaping="yes">Category or $alt_datablock/VRPTx:</xsl2:text><xsl2:value-of select="."/><xsl2:text disable-output-escaping="yes">Category"&gt;
       &lt;xsl:element name="VRPTx:</xsl2:text><xsl2:value-of select="."/><xsl2:text disable-output-escaping="yes">Category"&gt;
-        &lt;xsl:if test="VRPTx:datablock/VRPTx:</xsl2:text><xsl2:value-of select="."/><xsl2:text disable-output-escaping="yes">Category"&gt;
-          &lt;xsl:apply-templates select="VRPTx:datablock/VRPTx:</xsl2:text><xsl2:value-of select="."/><xsl2:text disable-output-escaping="yes">Category/*" mode="category-element"/&gt;
-        &lt;/xsl:if&gt;
-        &lt;xsl:if test="$alt_datablock/VRPTx:</xsl2:text><xsl2:value-of select="."/><xsl2:text disable-output-escaping="yes">Category"&gt;
-          &lt;xsl:apply-templates select="$alt_datablock/VRPTx:</xsl2:text><xsl2:value-of select="."/><xsl2:text disable-output-escaping="yes">Category/*" mode="category-element"/&gt;
-        &lt;/xsl:if&gt;
+	&lt;xsl:if test="VRPTx:datablock/VRPTx:</xsl2:text><xsl2:value-of select="."/><xsl2:text disable-output-escaping="yes">Category"&gt;
+	  &lt;xsl:apply-templates select="VRPTx:datablock/VRPTx:</xsl2:text><xsl2:value-of select="."/><xsl2:text disable-output-escaping="yes">Category/*" mode="category-element"/&gt;
+	&lt;/xsl:if&gt;
+	&lt;xsl:if test="$alt_datablock/VRPTx:</xsl2:text><xsl2:value-of select="."/><xsl2:text disable-output-escaping="yes">Category"&gt;
+	  &lt;xsl:apply-templates select="$alt_datablock/VRPTx:</xsl2:text><xsl2:value-of select="."/><xsl2:text disable-output-escaping="yes">Category/*" mode="category-element"/&gt;
+	&lt;/xsl:if&gt;
       &lt;/xsl:element&gt;
     &lt;/xsl:if&gt;
   &lt;/xsl:template&gt;
@@ -146,7 +146,7 @@ Unmatched entry ID in both documents (&lt;xsl:value-of select="$entry_id"/&gt; a
   <xsl2:template name="categories">
     <xsl2:for-each select="xsd:complexType[@name='datablockType']/xsd:all/xsd:element">
       <xsl2:call-template name="category">
-        <xsl2:with-param name="name" select="@name"/>
+	<xsl2:with-param name="name" select="@name"/>
       </xsl2:call-template>
     </xsl2:for-each>
   </xsl2:template>

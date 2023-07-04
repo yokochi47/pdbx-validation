@@ -20,7 +20,7 @@
           <PDBo:atom_sites rdf:about="http://rdf.wwpdb.org/pdb/7JIA/atom_sites/7JIA">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7JIA"/>
             <PDBo:reference_to_entry>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entry/7JIA">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entry/">
                 <PDBo:referenced_by_atom_sites rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/atom_sites/7JIA"/>
               </rdf:Description>
             </PDBo:reference_to_entry>
@@ -268,7 +268,7 @@
           <PDBo:citation_author rdf:about="http://rdf.wwpdb.org/pdb/7JIA/citation_author/primary,Takjoo,_R.,1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7JIA"/>
             <PDBo:reference_to_citation>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/citation/primary">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/citation/">
                 <PDBo:referenced_by_citation_author rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/citation_author/primary,Takjoo,_R.,1"/>
               </rdf:Description>
             </PDBo:reference_to_citation>
@@ -281,7 +281,7 @@
           <PDBo:citation_author rdf:about="http://rdf.wwpdb.org/pdb/7JIA/citation_author/primary,Wilson,_D.,2">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7JIA"/>
             <PDBo:reference_to_citation>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/citation/primary">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/citation/">
                 <PDBo:referenced_by_citation_author rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/citation_author/primary,Wilson,_D.,2"/>
               </rdf:Description>
             </PDBo:reference_to_citation>
@@ -294,7 +294,7 @@
           <PDBo:citation_author rdf:about="http://rdf.wwpdb.org/pdb/7JIA/citation_author/primary,Bansal,_P.S.,3">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7JIA"/>
             <PDBo:reference_to_citation>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/citation/primary">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/citation/">
                 <PDBo:referenced_by_citation_author rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/citation_author/primary,Bansal,_P.S.,3"/>
               </rdf:Description>
             </PDBo:reference_to_citation>
@@ -307,7 +307,7 @@
           <PDBo:citation_author rdf:about="http://rdf.wwpdb.org/pdb/7JIA/citation_author/primary,Loukas,_A.,4">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7JIA"/>
             <PDBo:reference_to_citation>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/citation/primary">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/citation/">
                 <PDBo:referenced_by_citation_author rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/citation_author/primary,Loukas,_A.,4"/>
               </rdf:Description>
             </PDBo:reference_to_citation>
@@ -320,7 +320,7 @@
           <PDBo:citation_author rdf:about="http://rdf.wwpdb.org/pdb/7JIA/citation_author/primary,Smout,_M.J.,5">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7JIA"/>
             <PDBo:reference_to_citation>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/citation/primary">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/citation/">
                 <PDBo:referenced_by_citation_author rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/citation_author/primary,Smout,_M.J.,5"/>
               </rdf:Description>
             </PDBo:reference_to_citation>
@@ -336,7 +336,7 @@
           <PDBo:citation_author rdf:about="http://rdf.wwpdb.org/pdb/7JIA/citation_author/primary,Daly,_N.L.,6">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7JIA"/>
             <PDBo:reference_to_citation>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/citation/primary">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/citation/">
                 <PDBo:referenced_by_citation_author rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/citation_author/primary,Daly,_N.L.,6"/>
               </rdf:Description>
             </PDBo:reference_to_citation>
@@ -396,7 +396,7 @@
           <PDBo:entity_poly rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entity_poly/1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7JIA"/>
             <PDBo:reference_to_entity>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entity/1">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entity/">
                 <PDBo:referenced_by_entity_poly rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/entity_poly/1"/>
               </rdf:Description>
             </PDBo:reference_to_entity>
@@ -417,12 +417,12 @@
           <PDBo:entity_poly_seq rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entity_poly_seq/1,CYS,1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7JIA"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/chem_comp/CYS">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/chem_comp/">
                 <PDBo:referenced_by_entity_poly_seq rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/entity_poly_seq/1,CYS,1"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:reference_to_entity_poly>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entity_poly/1">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entity_poly/">
                 <PDBo:referenced_by_entity_poly_seq rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/entity_poly_seq/1,CYS,1"/>
               </rdf:Description>
             </PDBo:reference_to_entity_poly>
@@ -436,12 +436,12 @@
           <PDBo:entity_poly_seq rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entity_poly_seq/1,GLY,2">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7JIA"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/chem_comp/GLY">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/chem_comp/">
                 <PDBo:referenced_by_entity_poly_seq rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/entity_poly_seq/1,GLY,2"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:reference_to_entity_poly>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entity_poly/1">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entity_poly/">
                 <PDBo:referenced_by_entity_poly_seq rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/entity_poly_seq/1,GLY,2"/>
               </rdf:Description>
             </PDBo:reference_to_entity_poly>
@@ -455,12 +455,12 @@
           <PDBo:entity_poly_seq rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entity_poly_seq/1,GLY,3">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7JIA"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/chem_comp/GLY">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/chem_comp/">
                 <PDBo:referenced_by_entity_poly_seq rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/entity_poly_seq/1,GLY,3"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:reference_to_entity_poly>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entity_poly/1">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entity_poly/">
                 <PDBo:referenced_by_entity_poly_seq rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/entity_poly_seq/1,GLY,3"/>
               </rdf:Description>
             </PDBo:reference_to_entity_poly>
@@ -474,12 +474,12 @@
           <PDBo:entity_poly_seq rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entity_poly_seq/1,GLY,4">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7JIA"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/chem_comp/GLY">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/chem_comp/">
                 <PDBo:referenced_by_entity_poly_seq rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/entity_poly_seq/1,GLY,4"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:reference_to_entity_poly>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entity_poly/1">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entity_poly/">
                 <PDBo:referenced_by_entity_poly_seq rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/entity_poly_seq/1,GLY,4"/>
               </rdf:Description>
             </PDBo:reference_to_entity_poly>
@@ -493,12 +493,12 @@
           <PDBo:entity_poly_seq rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entity_poly_seq/1,PHE,5">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7JIA"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/chem_comp/PHE">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/chem_comp/">
                 <PDBo:referenced_by_entity_poly_seq rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/entity_poly_seq/1,PHE,5"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:reference_to_entity_poly>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entity_poly/1">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entity_poly/">
                 <PDBo:referenced_by_entity_poly_seq rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/entity_poly_seq/1,PHE,5"/>
               </rdf:Description>
             </PDBo:reference_to_entity_poly>
@@ -512,12 +512,12 @@
           <PDBo:entity_poly_seq rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entity_poly_seq/1,SER,6">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7JIA"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/chem_comp/SER">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/chem_comp/">
                 <PDBo:referenced_by_entity_poly_seq rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/entity_poly_seq/1,SER,6"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:reference_to_entity_poly>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entity_poly/1">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entity_poly/">
                 <PDBo:referenced_by_entity_poly_seq rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/entity_poly_seq/1,SER,6"/>
               </rdf:Description>
             </PDBo:reference_to_entity_poly>
@@ -531,12 +531,12 @@
           <PDBo:entity_poly_seq rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entity_poly_seq/1,CYS,7">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7JIA"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/chem_comp/CYS">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/chem_comp/">
                 <PDBo:referenced_by_entity_poly_seq rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/entity_poly_seq/1,CYS,7"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:reference_to_entity_poly>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entity_poly/1">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entity_poly/">
                 <PDBo:referenced_by_entity_poly_seq rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/entity_poly_seq/1,CYS,7"/>
               </rdf:Description>
             </PDBo:reference_to_entity_poly>
@@ -550,12 +550,12 @@
           <PDBo:entity_poly_seq rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entity_poly_seq/1,HIS,8">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7JIA"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/chem_comp/HIS">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/chem_comp/">
                 <PDBo:referenced_by_entity_poly_seq rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/entity_poly_seq/1,HIS,8"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:reference_to_entity_poly>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entity_poly/1">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entity_poly/">
                 <PDBo:referenced_by_entity_poly_seq rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/entity_poly_seq/1,HIS,8"/>
               </rdf:Description>
             </PDBo:reference_to_entity_poly>
@@ -569,12 +569,12 @@
           <PDBo:entity_poly_seq rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entity_poly_seq/1,ASP,9">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7JIA"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/chem_comp/ASP">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/chem_comp/">
                 <PDBo:referenced_by_entity_poly_seq rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/entity_poly_seq/1,ASP,9"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:reference_to_entity_poly>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entity_poly/1">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entity_poly/">
                 <PDBo:referenced_by_entity_poly_seq rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/entity_poly_seq/1,ASP,9"/>
               </rdf:Description>
             </PDBo:reference_to_entity_poly>
@@ -588,12 +588,12 @@
           <PDBo:entity_poly_seq rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entity_poly_seq/1,GLY,10">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7JIA"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/chem_comp/GLY">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/chem_comp/">
                 <PDBo:referenced_by_entity_poly_seq rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/entity_poly_seq/1,GLY,10"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:reference_to_entity_poly>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entity_poly/1">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entity_poly/">
                 <PDBo:referenced_by_entity_poly_seq rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/entity_poly_seq/1,GLY,10"/>
               </rdf:Description>
             </PDBo:reference_to_entity_poly>
@@ -607,12 +607,12 @@
           <PDBo:entity_poly_seq rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entity_poly_seq/1,GLU,11">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7JIA"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/chem_comp/GLU">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/chem_comp/">
                 <PDBo:referenced_by_entity_poly_seq rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/entity_poly_seq/1,GLU,11"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:reference_to_entity_poly>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entity_poly/1">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entity_poly/">
                 <PDBo:referenced_by_entity_poly_seq rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/entity_poly_seq/1,GLU,11"/>
               </rdf:Description>
             </PDBo:reference_to_entity_poly>
@@ -626,12 +626,12 @@
           <PDBo:entity_poly_seq rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entity_poly_seq/1,THR,12">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7JIA"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/chem_comp/THR">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/chem_comp/">
                 <PDBo:referenced_by_entity_poly_seq rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/entity_poly_seq/1,THR,12"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:reference_to_entity_poly>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entity_poly/1">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entity_poly/">
                 <PDBo:referenced_by_entity_poly_seq rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/entity_poly_seq/1,THR,12"/>
               </rdf:Description>
             </PDBo:reference_to_entity_poly>
@@ -645,12 +645,12 @@
           <PDBo:entity_poly_seq rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entity_poly_seq/1,CYS,13">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7JIA"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/chem_comp/CYS">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/chem_comp/">
                 <PDBo:referenced_by_entity_poly_seq rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/entity_poly_seq/1,CYS,13"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:reference_to_entity_poly>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entity_poly/1">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entity_poly/">
                 <PDBo:referenced_by_entity_poly_seq rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/entity_poly_seq/1,CYS,13"/>
               </rdf:Description>
             </PDBo:reference_to_entity_poly>
@@ -664,12 +664,12 @@
           <PDBo:entity_poly_seq rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entity_poly_seq/1,CYS,14">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7JIA"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/chem_comp/CYS">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/chem_comp/">
                 <PDBo:referenced_by_entity_poly_seq rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/entity_poly_seq/1,CYS,14"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:reference_to_entity_poly>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entity_poly/1">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entity_poly/">
                 <PDBo:referenced_by_entity_poly_seq rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/entity_poly_seq/1,CYS,14"/>
               </rdf:Description>
             </PDBo:reference_to_entity_poly>
@@ -683,12 +683,12 @@
           <PDBo:entity_poly_seq rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entity_poly_seq/1,PRO,15">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7JIA"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/chem_comp/PRO">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/chem_comp/">
                 <PDBo:referenced_by_entity_poly_seq rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/entity_poly_seq/1,PRO,15"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:reference_to_entity_poly>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entity_poly/1">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entity_poly/">
                 <PDBo:referenced_by_entity_poly_seq rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/entity_poly_seq/1,PRO,15"/>
               </rdf:Description>
             </PDBo:reference_to_entity_poly>
@@ -702,12 +702,12 @@
           <PDBo:entity_poly_seq rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entity_poly_seq/1,THR,16">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7JIA"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/chem_comp/THR">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/chem_comp/">
                 <PDBo:referenced_by_entity_poly_seq rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/entity_poly_seq/1,THR,16"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:reference_to_entity_poly>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entity_poly/1">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entity_poly/">
                 <PDBo:referenced_by_entity_poly_seq rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/entity_poly_seq/1,THR,16"/>
               </rdf:Description>
             </PDBo:reference_to_entity_poly>
@@ -721,12 +721,12 @@
           <PDBo:entity_poly_seq rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entity_poly_seq/1,SER,17">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7JIA"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/chem_comp/SER">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/chem_comp/">
                 <PDBo:referenced_by_entity_poly_seq rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/entity_poly_seq/1,SER,17"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:reference_to_entity_poly>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entity_poly/1">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entity_poly/">
                 <PDBo:referenced_by_entity_poly_seq rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/entity_poly_seq/1,SER,17"/>
               </rdf:Description>
             </PDBo:reference_to_entity_poly>
@@ -740,12 +740,12 @@
           <PDBo:entity_poly_seq rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entity_poly_seq/1,GLN,18">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7JIA"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/chem_comp/GLN">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/chem_comp/">
                 <PDBo:referenced_by_entity_poly_seq rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/entity_poly_seq/1,GLN,18"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:reference_to_entity_poly>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entity_poly/1">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entity_poly/">
                 <PDBo:referenced_by_entity_poly_seq rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/entity_poly_seq/1,GLN,18"/>
               </rdf:Description>
             </PDBo:reference_to_entity_poly>
@@ -759,12 +759,12 @@
           <PDBo:entity_poly_seq rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entity_poly_seq/1,THR,19">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7JIA"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/chem_comp/THR">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/chem_comp/">
                 <PDBo:referenced_by_entity_poly_seq rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/entity_poly_seq/1,THR,19"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:reference_to_entity_poly>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entity_poly/1">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entity_poly/">
                 <PDBo:referenced_by_entity_poly_seq rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/entity_poly_seq/1,THR,19"/>
               </rdf:Description>
             </PDBo:reference_to_entity_poly>
@@ -778,12 +778,12 @@
           <PDBo:entity_poly_seq rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entity_poly_seq/1,THR,20">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7JIA"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/chem_comp/THR">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/chem_comp/">
                 <PDBo:referenced_by_entity_poly_seq rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/entity_poly_seq/1,THR,20"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:reference_to_entity_poly>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entity_poly/1">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entity_poly/">
                 <PDBo:referenced_by_entity_poly_seq rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/entity_poly_seq/1,THR,20"/>
               </rdf:Description>
             </PDBo:reference_to_entity_poly>
@@ -797,12 +797,12 @@
           <PDBo:entity_poly_seq rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entity_poly_seq/1,TRP,21">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7JIA"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/chem_comp/TRP">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/chem_comp/">
                 <PDBo:referenced_by_entity_poly_seq rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/entity_poly_seq/1,TRP,21"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:reference_to_entity_poly>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entity_poly/1">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entity_poly/">
                 <PDBo:referenced_by_entity_poly_seq rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/entity_poly_seq/1,TRP,21"/>
               </rdf:Description>
             </PDBo:reference_to_entity_poly>
@@ -816,12 +816,12 @@
           <PDBo:entity_poly_seq rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entity_poly_seq/1,GLY,22">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7JIA"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/chem_comp/GLY">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/chem_comp/">
                 <PDBo:referenced_by_entity_poly_seq rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/entity_poly_seq/1,GLY,22"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:reference_to_entity_poly>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entity_poly/1">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entity_poly/">
                 <PDBo:referenced_by_entity_poly_seq rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/entity_poly_seq/1,GLY,22"/>
               </rdf:Description>
             </PDBo:reference_to_entity_poly>
@@ -835,12 +835,12 @@
           <PDBo:entity_poly_seq rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entity_poly_seq/1,CYS,23">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7JIA"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/chem_comp/CYS">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/chem_comp/">
                 <PDBo:referenced_by_entity_poly_seq rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/entity_poly_seq/1,CYS,23"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:reference_to_entity_poly>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entity_poly/1">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entity_poly/">
                 <PDBo:referenced_by_entity_poly_seq rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/entity_poly_seq/1,CYS,23"/>
               </rdf:Description>
             </PDBo:reference_to_entity_poly>
@@ -854,12 +854,12 @@
           <PDBo:entity_poly_seq rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entity_poly_seq/1,CYS,24">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7JIA"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/chem_comp/CYS">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/chem_comp/">
                 <PDBo:referenced_by_entity_poly_seq rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/entity_poly_seq/1,CYS,24"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:reference_to_entity_poly>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entity_poly/1">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entity_poly/">
                 <PDBo:referenced_by_entity_poly_seq rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/entity_poly_seq/1,CYS,24"/>
               </rdf:Description>
             </PDBo:reference_to_entity_poly>
@@ -887,7 +887,7 @@
           <PDBo:exptl rdf:about="http://rdf.wwpdb.org/pdb/7JIA/exptl/7JIA,SOLUTION_NMR">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7JIA"/>
             <PDBo:reference_to_entry>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entry/7JIA">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entry/">
                 <PDBo:referenced_by_exptl rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/exptl/7JIA,SOLUTION_NMR"/>
               </rdf:Description>
             </PDBo:reference_to_entry>
@@ -903,7 +903,7 @@
           <PDBo:pdbx_audit_revision_details rdf:about="http://rdf.wwpdb.org/pdb/7JIA/pdbx_audit_revision_details/Structure_model,1,1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7JIA"/>
             <PDBo:reference_to_pdbx_audit_revision_history>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/pdbx_audit_revision_history/Structure_model,1">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/pdbx_audit_revision_history/,">
                 <PDBo:referenced_by_pdbx_audit_revision_details rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/pdbx_audit_revision_details/Structure_model,1,1"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_audit_revision_history>
@@ -951,7 +951,7 @@
           <PDBo:pdbx_database_status rdf:about="http://rdf.wwpdb.org/pdb/7JIA/pdbx_database_status/7JIA">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7JIA"/>
             <PDBo:reference_to_entry>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entry/7JIA">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entry/">
                 <PDBo:referenced_by_pdbx_database_status rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/pdbx_database_status/7JIA"/>
               </rdf:Description>
             </PDBo:reference_to_entry>
@@ -973,7 +973,7 @@
           <PDBo:pdbx_entity_src_syn rdf:about="http://rdf.wwpdb.org/pdb/7JIA/pdbx_entity_src_syn/1,1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7JIA"/>
             <PDBo:reference_to_entity>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entity/1">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entity/">
                 <PDBo:referenced_by_pdbx_entity_src_syn rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/pdbx_entity_src_syn/1,1"/>
               </rdf:Description>
             </PDBo:reference_to_entity>
@@ -995,7 +995,7 @@
           <PDBo:pdbx_nmr_ensemble rdf:about="http://rdf.wwpdb.org/pdb/7JIA/pdbx_nmr_ensemble/7JIA">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7JIA"/>
             <PDBo:reference_to_entry>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entry/7JIA">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entry/">
                 <PDBo:referenced_by_pdbx_nmr_ensemble rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/pdbx_nmr_ensemble/7JIA"/>
               </rdf:Description>
             </PDBo:reference_to_entry>
@@ -1104,7 +1104,7 @@
           <PDBo:pdbx_nmr_refine rdf:about="http://rdf.wwpdb.org/pdb/7JIA/pdbx_nmr_refine/7JIA,2">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7JIA"/>
             <PDBo:reference_to_entry>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entry/7JIA">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entry/">
                 <PDBo:referenced_by_pdbx_nmr_refine rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/pdbx_nmr_refine/7JIA,2"/>
               </rdf:Description>
             </PDBo:reference_to_entry>
@@ -1121,7 +1121,7 @@
           <PDBo:pdbx_nmr_representative rdf:about="http://rdf.wwpdb.org/pdb/7JIA/pdbx_nmr_representative/7JIA">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7JIA"/>
             <PDBo:reference_to_entry>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entry/7JIA">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entry/">
                 <PDBo:referenced_by_pdbx_nmr_representative rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/pdbx_nmr_representative/7JIA"/>
               </rdf:Description>
             </PDBo:reference_to_entry>
@@ -1197,12 +1197,12 @@
           <PDBo:pdbx_poly_seq_scheme rdf:about="http://rdf.wwpdb.org/pdb/7JIA/pdbx_poly_seq_scheme/A,1,CYS,1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7JIA"/>
             <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entity_poly_seq/1,CYS,1">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entity_poly_seq/,,">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/pdbx_poly_seq_scheme/A,1,CYS,1"/>
               </rdf:Description>
             </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_struct_asym>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/struct_asym/1,A">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/struct_asym/,">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/pdbx_poly_seq_scheme/A,1,CYS,1"/>
               </rdf:Description>
             </PDBo:reference_to_struct_asym>
@@ -1223,12 +1223,12 @@
           <PDBo:pdbx_poly_seq_scheme rdf:about="http://rdf.wwpdb.org/pdb/7JIA/pdbx_poly_seq_scheme/A,1,GLY,2">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7JIA"/>
             <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entity_poly_seq/1,GLY,2">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entity_poly_seq/,,">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/pdbx_poly_seq_scheme/A,1,GLY,2"/>
               </rdf:Description>
             </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_struct_asym>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/struct_asym/1,A">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/struct_asym/,">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/pdbx_poly_seq_scheme/A,1,GLY,2"/>
               </rdf:Description>
             </PDBo:reference_to_struct_asym>
@@ -1249,12 +1249,12 @@
           <PDBo:pdbx_poly_seq_scheme rdf:about="http://rdf.wwpdb.org/pdb/7JIA/pdbx_poly_seq_scheme/A,1,GLY,3">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7JIA"/>
             <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entity_poly_seq/1,GLY,3">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entity_poly_seq/,,">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/pdbx_poly_seq_scheme/A,1,GLY,3"/>
               </rdf:Description>
             </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_struct_asym>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/struct_asym/1,A">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/struct_asym/,">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/pdbx_poly_seq_scheme/A,1,GLY,3"/>
               </rdf:Description>
             </PDBo:reference_to_struct_asym>
@@ -1275,12 +1275,12 @@
           <PDBo:pdbx_poly_seq_scheme rdf:about="http://rdf.wwpdb.org/pdb/7JIA/pdbx_poly_seq_scheme/A,1,GLY,4">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7JIA"/>
             <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entity_poly_seq/1,GLY,4">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entity_poly_seq/,,">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/pdbx_poly_seq_scheme/A,1,GLY,4"/>
               </rdf:Description>
             </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_struct_asym>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/struct_asym/1,A">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/struct_asym/,">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/pdbx_poly_seq_scheme/A,1,GLY,4"/>
               </rdf:Description>
             </PDBo:reference_to_struct_asym>
@@ -1301,12 +1301,12 @@
           <PDBo:pdbx_poly_seq_scheme rdf:about="http://rdf.wwpdb.org/pdb/7JIA/pdbx_poly_seq_scheme/A,1,PHE,5">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7JIA"/>
             <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entity_poly_seq/1,PHE,5">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entity_poly_seq/,,">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/pdbx_poly_seq_scheme/A,1,PHE,5"/>
               </rdf:Description>
             </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_struct_asym>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/struct_asym/1,A">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/struct_asym/,">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/pdbx_poly_seq_scheme/A,1,PHE,5"/>
               </rdf:Description>
             </PDBo:reference_to_struct_asym>
@@ -1327,12 +1327,12 @@
           <PDBo:pdbx_poly_seq_scheme rdf:about="http://rdf.wwpdb.org/pdb/7JIA/pdbx_poly_seq_scheme/A,1,SER,6">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7JIA"/>
             <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entity_poly_seq/1,SER,6">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entity_poly_seq/,,">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/pdbx_poly_seq_scheme/A,1,SER,6"/>
               </rdf:Description>
             </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_struct_asym>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/struct_asym/1,A">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/struct_asym/,">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/pdbx_poly_seq_scheme/A,1,SER,6"/>
               </rdf:Description>
             </PDBo:reference_to_struct_asym>
@@ -1353,12 +1353,12 @@
           <PDBo:pdbx_poly_seq_scheme rdf:about="http://rdf.wwpdb.org/pdb/7JIA/pdbx_poly_seq_scheme/A,1,CYS,7">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7JIA"/>
             <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entity_poly_seq/1,CYS,7">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entity_poly_seq/,,">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/pdbx_poly_seq_scheme/A,1,CYS,7"/>
               </rdf:Description>
             </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_struct_asym>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/struct_asym/1,A">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/struct_asym/,">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/pdbx_poly_seq_scheme/A,1,CYS,7"/>
               </rdf:Description>
             </PDBo:reference_to_struct_asym>
@@ -1379,12 +1379,12 @@
           <PDBo:pdbx_poly_seq_scheme rdf:about="http://rdf.wwpdb.org/pdb/7JIA/pdbx_poly_seq_scheme/A,1,HIS,8">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7JIA"/>
             <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entity_poly_seq/1,HIS,8">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entity_poly_seq/,,">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/pdbx_poly_seq_scheme/A,1,HIS,8"/>
               </rdf:Description>
             </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_struct_asym>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/struct_asym/1,A">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/struct_asym/,">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/pdbx_poly_seq_scheme/A,1,HIS,8"/>
               </rdf:Description>
             </PDBo:reference_to_struct_asym>
@@ -1405,12 +1405,12 @@
           <PDBo:pdbx_poly_seq_scheme rdf:about="http://rdf.wwpdb.org/pdb/7JIA/pdbx_poly_seq_scheme/A,1,ASP,9">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7JIA"/>
             <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entity_poly_seq/1,ASP,9">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entity_poly_seq/,,">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/pdbx_poly_seq_scheme/A,1,ASP,9"/>
               </rdf:Description>
             </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_struct_asym>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/struct_asym/1,A">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/struct_asym/,">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/pdbx_poly_seq_scheme/A,1,ASP,9"/>
               </rdf:Description>
             </PDBo:reference_to_struct_asym>
@@ -1431,12 +1431,12 @@
           <PDBo:pdbx_poly_seq_scheme rdf:about="http://rdf.wwpdb.org/pdb/7JIA/pdbx_poly_seq_scheme/A,1,GLY,10">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7JIA"/>
             <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entity_poly_seq/1,GLY,10">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entity_poly_seq/,,">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/pdbx_poly_seq_scheme/A,1,GLY,10"/>
               </rdf:Description>
             </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_struct_asym>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/struct_asym/1,A">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/struct_asym/,">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/pdbx_poly_seq_scheme/A,1,GLY,10"/>
               </rdf:Description>
             </PDBo:reference_to_struct_asym>
@@ -1457,12 +1457,12 @@
           <PDBo:pdbx_poly_seq_scheme rdf:about="http://rdf.wwpdb.org/pdb/7JIA/pdbx_poly_seq_scheme/A,1,GLU,11">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7JIA"/>
             <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entity_poly_seq/1,GLU,11">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entity_poly_seq/,,">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/pdbx_poly_seq_scheme/A,1,GLU,11"/>
               </rdf:Description>
             </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_struct_asym>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/struct_asym/1,A">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/struct_asym/,">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/pdbx_poly_seq_scheme/A,1,GLU,11"/>
               </rdf:Description>
             </PDBo:reference_to_struct_asym>
@@ -1483,12 +1483,12 @@
           <PDBo:pdbx_poly_seq_scheme rdf:about="http://rdf.wwpdb.org/pdb/7JIA/pdbx_poly_seq_scheme/A,1,THR,12">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7JIA"/>
             <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entity_poly_seq/1,THR,12">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entity_poly_seq/,,">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/pdbx_poly_seq_scheme/A,1,THR,12"/>
               </rdf:Description>
             </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_struct_asym>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/struct_asym/1,A">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/struct_asym/,">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/pdbx_poly_seq_scheme/A,1,THR,12"/>
               </rdf:Description>
             </PDBo:reference_to_struct_asym>
@@ -1509,12 +1509,12 @@
           <PDBo:pdbx_poly_seq_scheme rdf:about="http://rdf.wwpdb.org/pdb/7JIA/pdbx_poly_seq_scheme/A,1,CYS,13">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7JIA"/>
             <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entity_poly_seq/1,CYS,13">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entity_poly_seq/,,">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/pdbx_poly_seq_scheme/A,1,CYS,13"/>
               </rdf:Description>
             </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_struct_asym>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/struct_asym/1,A">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/struct_asym/,">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/pdbx_poly_seq_scheme/A,1,CYS,13"/>
               </rdf:Description>
             </PDBo:reference_to_struct_asym>
@@ -1535,12 +1535,12 @@
           <PDBo:pdbx_poly_seq_scheme rdf:about="http://rdf.wwpdb.org/pdb/7JIA/pdbx_poly_seq_scheme/A,1,CYS,14">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7JIA"/>
             <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entity_poly_seq/1,CYS,14">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entity_poly_seq/,,">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/pdbx_poly_seq_scheme/A,1,CYS,14"/>
               </rdf:Description>
             </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_struct_asym>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/struct_asym/1,A">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/struct_asym/,">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/pdbx_poly_seq_scheme/A,1,CYS,14"/>
               </rdf:Description>
             </PDBo:reference_to_struct_asym>
@@ -1561,12 +1561,12 @@
           <PDBo:pdbx_poly_seq_scheme rdf:about="http://rdf.wwpdb.org/pdb/7JIA/pdbx_poly_seq_scheme/A,1,PRO,15">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7JIA"/>
             <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entity_poly_seq/1,PRO,15">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entity_poly_seq/,,">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/pdbx_poly_seq_scheme/A,1,PRO,15"/>
               </rdf:Description>
             </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_struct_asym>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/struct_asym/1,A">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/struct_asym/,">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/pdbx_poly_seq_scheme/A,1,PRO,15"/>
               </rdf:Description>
             </PDBo:reference_to_struct_asym>
@@ -1587,12 +1587,12 @@
           <PDBo:pdbx_poly_seq_scheme rdf:about="http://rdf.wwpdb.org/pdb/7JIA/pdbx_poly_seq_scheme/A,1,THR,16">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7JIA"/>
             <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entity_poly_seq/1,THR,16">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entity_poly_seq/,,">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/pdbx_poly_seq_scheme/A,1,THR,16"/>
               </rdf:Description>
             </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_struct_asym>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/struct_asym/1,A">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/struct_asym/,">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/pdbx_poly_seq_scheme/A,1,THR,16"/>
               </rdf:Description>
             </PDBo:reference_to_struct_asym>
@@ -1613,12 +1613,12 @@
           <PDBo:pdbx_poly_seq_scheme rdf:about="http://rdf.wwpdb.org/pdb/7JIA/pdbx_poly_seq_scheme/A,1,SER,17">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7JIA"/>
             <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entity_poly_seq/1,SER,17">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entity_poly_seq/,,">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/pdbx_poly_seq_scheme/A,1,SER,17"/>
               </rdf:Description>
             </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_struct_asym>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/struct_asym/1,A">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/struct_asym/,">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/pdbx_poly_seq_scheme/A,1,SER,17"/>
               </rdf:Description>
             </PDBo:reference_to_struct_asym>
@@ -1639,12 +1639,12 @@
           <PDBo:pdbx_poly_seq_scheme rdf:about="http://rdf.wwpdb.org/pdb/7JIA/pdbx_poly_seq_scheme/A,1,GLN,18">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7JIA"/>
             <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entity_poly_seq/1,GLN,18">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entity_poly_seq/,,">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/pdbx_poly_seq_scheme/A,1,GLN,18"/>
               </rdf:Description>
             </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_struct_asym>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/struct_asym/1,A">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/struct_asym/,">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/pdbx_poly_seq_scheme/A,1,GLN,18"/>
               </rdf:Description>
             </PDBo:reference_to_struct_asym>
@@ -1665,12 +1665,12 @@
           <PDBo:pdbx_poly_seq_scheme rdf:about="http://rdf.wwpdb.org/pdb/7JIA/pdbx_poly_seq_scheme/A,1,THR,19">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7JIA"/>
             <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entity_poly_seq/1,THR,19">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entity_poly_seq/,,">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/pdbx_poly_seq_scheme/A,1,THR,19"/>
               </rdf:Description>
             </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_struct_asym>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/struct_asym/1,A">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/struct_asym/,">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/pdbx_poly_seq_scheme/A,1,THR,19"/>
               </rdf:Description>
             </PDBo:reference_to_struct_asym>
@@ -1691,12 +1691,12 @@
           <PDBo:pdbx_poly_seq_scheme rdf:about="http://rdf.wwpdb.org/pdb/7JIA/pdbx_poly_seq_scheme/A,1,THR,20">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7JIA"/>
             <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entity_poly_seq/1,THR,20">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entity_poly_seq/,,">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/pdbx_poly_seq_scheme/A,1,THR,20"/>
               </rdf:Description>
             </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_struct_asym>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/struct_asym/1,A">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/struct_asym/,">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/pdbx_poly_seq_scheme/A,1,THR,20"/>
               </rdf:Description>
             </PDBo:reference_to_struct_asym>
@@ -1717,12 +1717,12 @@
           <PDBo:pdbx_poly_seq_scheme rdf:about="http://rdf.wwpdb.org/pdb/7JIA/pdbx_poly_seq_scheme/A,1,TRP,21">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7JIA"/>
             <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entity_poly_seq/1,TRP,21">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entity_poly_seq/,,">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/pdbx_poly_seq_scheme/A,1,TRP,21"/>
               </rdf:Description>
             </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_struct_asym>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/struct_asym/1,A">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/struct_asym/,">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/pdbx_poly_seq_scheme/A,1,TRP,21"/>
               </rdf:Description>
             </PDBo:reference_to_struct_asym>
@@ -1743,12 +1743,12 @@
           <PDBo:pdbx_poly_seq_scheme rdf:about="http://rdf.wwpdb.org/pdb/7JIA/pdbx_poly_seq_scheme/A,1,GLY,22">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7JIA"/>
             <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entity_poly_seq/1,GLY,22">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entity_poly_seq/,,">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/pdbx_poly_seq_scheme/A,1,GLY,22"/>
               </rdf:Description>
             </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_struct_asym>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/struct_asym/1,A">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/struct_asym/,">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/pdbx_poly_seq_scheme/A,1,GLY,22"/>
               </rdf:Description>
             </PDBo:reference_to_struct_asym>
@@ -1769,12 +1769,12 @@
           <PDBo:pdbx_poly_seq_scheme rdf:about="http://rdf.wwpdb.org/pdb/7JIA/pdbx_poly_seq_scheme/A,1,CYS,23">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7JIA"/>
             <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entity_poly_seq/1,CYS,23">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entity_poly_seq/,,">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/pdbx_poly_seq_scheme/A,1,CYS,23"/>
               </rdf:Description>
             </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_struct_asym>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/struct_asym/1,A">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/struct_asym/,">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/pdbx_poly_seq_scheme/A,1,CYS,23"/>
               </rdf:Description>
             </PDBo:reference_to_struct_asym>
@@ -1795,12 +1795,12 @@
           <PDBo:pdbx_poly_seq_scheme rdf:about="http://rdf.wwpdb.org/pdb/7JIA/pdbx_poly_seq_scheme/A,1,CYS,24">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7JIA"/>
             <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entity_poly_seq/1,CYS,24">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entity_poly_seq/,,">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/pdbx_poly_seq_scheme/A,1,CYS,24"/>
               </rdf:Description>
             </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_struct_asym>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/struct_asym/1,A">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/struct_asym/,">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/pdbx_poly_seq_scheme/A,1,CYS,24"/>
               </rdf:Description>
             </PDBo:reference_to_struct_asym>
@@ -1838,7 +1838,7 @@
           <PDBo:pdbx_struct_assembly_auth_evidence rdf:about="http://rdf.wwpdb.org/pdb/7JIA/pdbx_struct_assembly_auth_evidence/1,1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7JIA"/>
             <PDBo:reference_to_pdbx_struct_assembly>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/pdbx_struct_assembly/1">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/pdbx_struct_assembly/">
                 <PDBo:referenced_by_pdbx_struct_assembly_auth_evidence rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/pdbx_struct_assembly_auth_evidence/1,1"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_struct_assembly>
@@ -1855,7 +1855,7 @@
           <PDBo:pdbx_struct_assembly_gen rdf:about="http://rdf.wwpdb.org/pdb/7JIA/pdbx_struct_assembly_gen/1,A,1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7JIA"/>
             <PDBo:reference_to_pdbx_struct_assembly>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/pdbx_struct_assembly/1">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/pdbx_struct_assembly/">
                 <PDBo:referenced_by_pdbx_struct_assembly_gen rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/pdbx_struct_assembly_gen/1,A,1"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_struct_assembly>
@@ -1896,7 +1896,7 @@
           <PDBo:pdbx_struct_sheet_hbond rdf:about="http://rdf.wwpdb.org/pdb/7JIA/pdbx_struct_sheet_hbond/1,2,AA1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7JIA"/>
             <PDBo:reference_to_struct_sheet>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/struct_sheet/AA1">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/struct_sheet/">
                 <PDBo:referenced_by_pdbx_struct_sheet_hbond rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/pdbx_struct_sheet_hbond/1,2,AA1"/>
               </rdf:Description>
             </PDBo:reference_to_struct_sheet>
@@ -1957,7 +1957,7 @@
           <PDBo:struct rdf:about="http://rdf.wwpdb.org/pdb/7JIA/struct/7JIA">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7JIA"/>
             <PDBo:reference_to_entry>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entry/7JIA">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entry/">
                 <PDBo:referenced_by_struct rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/struct/7JIA"/>
               </rdf:Description>
             </PDBo:reference_to_entry>
@@ -2099,7 +2099,7 @@
           <PDBo:struct_keywords rdf:about="http://rdf.wwpdb.org/pdb/7JIA/struct_keywords/7JIA">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7JIA"/>
             <PDBo:reference_to_entry>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entry/7JIA">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entry/">
                 <PDBo:referenced_by_struct_keywords rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/struct_keywords/7JIA"/>
               </rdf:Description>
             </PDBo:reference_to_entry>
@@ -2175,7 +2175,7 @@
           <PDBo:struct_sheet_order rdf:about="http://rdf.wwpdb.org/pdb/7JIA/struct_sheet_order/1,2,AA1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7JIA"/>
             <PDBo:reference_to_struct_sheet>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/struct_sheet/AA1">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/struct_sheet/">
                 <PDBo:referenced_by_struct_sheet_order rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/struct_sheet_order/1,2,AA1"/>
               </rdf:Description>
             </PDBo:reference_to_struct_sheet>
@@ -2193,7 +2193,7 @@
           <PDBo:struct_sheet_range rdf:about="http://rdf.wwpdb.org/pdb/7JIA/struct_sheet_range/1,AA1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7JIA"/>
             <PDBo:reference_to_struct_sheet>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/struct_sheet/AA1">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/struct_sheet/">
                 <PDBo:referenced_by_struct_sheet_range rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/struct_sheet_range/1,AA1"/>
               </rdf:Description>
             </PDBo:reference_to_struct_sheet>
@@ -2217,7 +2217,7 @@
           <PDBo:struct_sheet_range rdf:about="http://rdf.wwpdb.org/pdb/7JIA/struct_sheet_range/2,AA1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7JIA"/>
             <PDBo:reference_to_struct_sheet>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/struct_sheet/AA1">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/struct_sheet/">
                 <PDBo:referenced_by_struct_sheet_range rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/struct_sheet_range/2,AA1"/>
               </rdf:Description>
             </PDBo:reference_to_struct_sheet>
@@ -2245,26 +2245,634 @@
           <PDBo:pdbx_sifts_unp_segments rdf:about="http://rdf.wwpdb.org/pdb/7JIA/pdbx_sifts_unp_segments/A,1,1,1,Q8QGN9">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7JIA"/>
             <PDBo:reference_to_struct_asym>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/struct_asym/A">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/struct_asym/">
                 <PDBo:referenced_by_pdbx_sifts_unp_segments rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/pdbx_sifts_unp_segments/A,1,1,1,Q8QGN9"/>
               </rdf:Description>
             </PDBo:reference_to_struct_asym>
-            <PDBo:pdbx_sifts_unp_segments.entity_id>1</PDBo:pdbx_sifts_unp_segments.entity_id>
             <PDBo:pdbx_sifts_unp_segments.asym_id>A</PDBo:pdbx_sifts_unp_segments.asym_id>
-            <PDBo:pdbx_sifts_unp_segments.unp_acc>Q8QGN9</PDBo:pdbx_sifts_unp_segments.unp_acc>
-            <PDBo:pdbx_sifts_unp_segments.segment_id>1</PDBo:pdbx_sifts_unp_segments.segment_id>
+            <PDBo:pdbx_sifts_unp_segments.entity_id>1</PDBo:pdbx_sifts_unp_segments.entity_id>
             <PDBo:pdbx_sifts_unp_segments.instance_id>1</PDBo:pdbx_sifts_unp_segments.instance_id>
+            <PDBo:pdbx_sifts_unp_segments.segment_id>1</PDBo:pdbx_sifts_unp_segments.segment_id>
+            <PDBo:pdbx_sifts_unp_segments.unp_acc>Q8QGN9</PDBo:pdbx_sifts_unp_segments.unp_acc>
             <PDBo:link_to_uniprot rdf:resource="http://purl.uniprot.org/uniprot/Q8QGN9" rdfs:label="uniprot:Q8QGN9"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/Q8QGN9" rdfs:label="uniprot:Q8QGN9"/>
-            <PDBo:pdbx_sifts_unp_segments.unp_start>796</PDBo:pdbx_sifts_unp_segments.unp_start>
-            <PDBo:pdbx_sifts_unp_segments.unp_end>819</PDBo:pdbx_sifts_unp_segments.unp_end>
-            <PDBo:pdbx_sifts_unp_segments.seq_id_start>1</PDBo:pdbx_sifts_unp_segments.seq_id_start>
-            <PDBo:pdbx_sifts_unp_segments.seq_id_end>24</PDBo:pdbx_sifts_unp_segments.seq_id_end>
             <PDBo:pdbx_sifts_unp_segments.best_mapping>Y</PDBo:pdbx_sifts_unp_segments.best_mapping>
-            <PDBo:pdbx_sifts_unp_segments.identity>1.000</PDBo:pdbx_sifts_unp_segments.identity>
+            <PDBo:pdbx_sifts_unp_segments.identity>1.0</PDBo:pdbx_sifts_unp_segments.identity>
+            <PDBo:pdbx_sifts_unp_segments.seq_id_end>24</PDBo:pdbx_sifts_unp_segments.seq_id_end>
+            <PDBo:pdbx_sifts_unp_segments.seq_id_start>1</PDBo:pdbx_sifts_unp_segments.seq_id_start>
+            <PDBo:pdbx_sifts_unp_segments.unp_end>819</PDBo:pdbx_sifts_unp_segments.unp_end>
+            <PDBo:pdbx_sifts_unp_segments.unp_start>796</PDBo:pdbx_sifts_unp_segments.unp_start>
           </PDBo:pdbx_sifts_unp_segments>
         </PDBo:has_pdbx_sifts_unp_segments>
       </PDBo:pdbx_sifts_unp_segmentsCategory>
     </PDBo:has_pdbx_sifts_unp_segmentsCategory>
+    <PDBo:has_pdbx_sifts_xref_dbCategory>
+      <PDBo:pdbx_sifts_xref_dbCategory rdf:about="http://rdf.wwpdb.org/pdb/7JIA/pdbx_sifts_xref_dbCategory">
+        <PDBo:has_pdbx_sifts_xref_db>
+          <PDBo:pdbx_sifts_xref_db rdf:about="http://rdf.wwpdb.org/pdb/7JIA/pdbx_sifts_xref_db/A,1,1,1">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7JIA"/>
+            <PDBo:reference_to_struct_asym>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/struct_asym/">
+                <PDBo:referenced_by_pdbx_sifts_xref_db rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/pdbx_sifts_xref_db/A,1,1,1"/>
+              </rdf:Description>
+            </PDBo:reference_to_struct_asym>
+            <PDBo:pdbx_sifts_xref_db.asym_id>A</PDBo:pdbx_sifts_xref_db.asym_id>
+            <PDBo:pdbx_sifts_xref_db.entity_id>1</PDBo:pdbx_sifts_xref_db.entity_id>
+            <PDBo:pdbx_sifts_xref_db.seq_id>1</PDBo:pdbx_sifts_xref_db.seq_id>
+            <PDBo:pdbx_sifts_xref_db.seq_id_ordinal>1</PDBo:pdbx_sifts_xref_db.seq_id_ordinal>
+            <PDBo:pdbx_sifts_xref_db.mh_id>1</PDBo:pdbx_sifts_xref_db.mh_id>
+            <PDBo:pdbx_sifts_xref_db.mon_id>CYS</PDBo:pdbx_sifts_xref_db.mon_id>
+            <PDBo:pdbx_sifts_xref_db.mon_id_one_letter_code>C</PDBo:pdbx_sifts_xref_db.mon_id_one_letter_code>
+            <PDBo:pdbx_sifts_xref_db.observed>Y</PDBo:pdbx_sifts_xref_db.observed>
+            <PDBo:pdbx_sifts_xref_db.unp_acc>Q8QGN9</PDBo:pdbx_sifts_xref_db.unp_acc>
+            <PDBo:pdbx_sifts_xref_db.unp_instance_id>1</PDBo:pdbx_sifts_xref_db.unp_instance_id>
+            <PDBo:pdbx_sifts_xref_db.unp_num>796</PDBo:pdbx_sifts_xref_db.unp_num>
+            <PDBo:pdbx_sifts_xref_db.unp_res>C</PDBo:pdbx_sifts_xref_db.unp_res>
+            <PDBo:pdbx_sifts_xref_db.unp_segment_id>1</PDBo:pdbx_sifts_xref_db.unp_segment_id>
+          </PDBo:pdbx_sifts_xref_db>
+        </PDBo:has_pdbx_sifts_xref_db>
+        <PDBo:has_pdbx_sifts_xref_db>
+          <PDBo:pdbx_sifts_xref_db rdf:about="http://rdf.wwpdb.org/pdb/7JIA/pdbx_sifts_xref_db/A,1,2,1">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7JIA"/>
+            <PDBo:reference_to_struct_asym>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/struct_asym/">
+                <PDBo:referenced_by_pdbx_sifts_xref_db rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/pdbx_sifts_xref_db/A,1,2,1"/>
+              </rdf:Description>
+            </PDBo:reference_to_struct_asym>
+            <PDBo:pdbx_sifts_xref_db.asym_id>A</PDBo:pdbx_sifts_xref_db.asym_id>
+            <PDBo:pdbx_sifts_xref_db.entity_id>1</PDBo:pdbx_sifts_xref_db.entity_id>
+            <PDBo:pdbx_sifts_xref_db.seq_id>2</PDBo:pdbx_sifts_xref_db.seq_id>
+            <PDBo:pdbx_sifts_xref_db.seq_id_ordinal>1</PDBo:pdbx_sifts_xref_db.seq_id_ordinal>
+            <PDBo:pdbx_sifts_xref_db.mh_id>1</PDBo:pdbx_sifts_xref_db.mh_id>
+            <PDBo:pdbx_sifts_xref_db.mon_id>GLY</PDBo:pdbx_sifts_xref_db.mon_id>
+            <PDBo:pdbx_sifts_xref_db.mon_id_one_letter_code>G</PDBo:pdbx_sifts_xref_db.mon_id_one_letter_code>
+            <PDBo:pdbx_sifts_xref_db.observed>Y</PDBo:pdbx_sifts_xref_db.observed>
+            <PDBo:pdbx_sifts_xref_db.unp_acc>Q8QGN9</PDBo:pdbx_sifts_xref_db.unp_acc>
+            <PDBo:pdbx_sifts_xref_db.unp_instance_id>1</PDBo:pdbx_sifts_xref_db.unp_instance_id>
+            <PDBo:pdbx_sifts_xref_db.unp_num>797</PDBo:pdbx_sifts_xref_db.unp_num>
+            <PDBo:pdbx_sifts_xref_db.unp_res>G</PDBo:pdbx_sifts_xref_db.unp_res>
+            <PDBo:pdbx_sifts_xref_db.unp_segment_id>1</PDBo:pdbx_sifts_xref_db.unp_segment_id>
+          </PDBo:pdbx_sifts_xref_db>
+        </PDBo:has_pdbx_sifts_xref_db>
+        <PDBo:has_pdbx_sifts_xref_db>
+          <PDBo:pdbx_sifts_xref_db rdf:about="http://rdf.wwpdb.org/pdb/7JIA/pdbx_sifts_xref_db/A,1,3,1">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7JIA"/>
+            <PDBo:reference_to_struct_asym>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/struct_asym/">
+                <PDBo:referenced_by_pdbx_sifts_xref_db rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/pdbx_sifts_xref_db/A,1,3,1"/>
+              </rdf:Description>
+            </PDBo:reference_to_struct_asym>
+            <PDBo:pdbx_sifts_xref_db.asym_id>A</PDBo:pdbx_sifts_xref_db.asym_id>
+            <PDBo:pdbx_sifts_xref_db.entity_id>1</PDBo:pdbx_sifts_xref_db.entity_id>
+            <PDBo:pdbx_sifts_xref_db.seq_id>3</PDBo:pdbx_sifts_xref_db.seq_id>
+            <PDBo:pdbx_sifts_xref_db.seq_id_ordinal>1</PDBo:pdbx_sifts_xref_db.seq_id_ordinal>
+            <PDBo:pdbx_sifts_xref_db.mh_id>1</PDBo:pdbx_sifts_xref_db.mh_id>
+            <PDBo:pdbx_sifts_xref_db.mon_id>GLY</PDBo:pdbx_sifts_xref_db.mon_id>
+            <PDBo:pdbx_sifts_xref_db.mon_id_one_letter_code>G</PDBo:pdbx_sifts_xref_db.mon_id_one_letter_code>
+            <PDBo:pdbx_sifts_xref_db.observed>Y</PDBo:pdbx_sifts_xref_db.observed>
+            <PDBo:pdbx_sifts_xref_db.unp_acc>Q8QGN9</PDBo:pdbx_sifts_xref_db.unp_acc>
+            <PDBo:pdbx_sifts_xref_db.unp_instance_id>1</PDBo:pdbx_sifts_xref_db.unp_instance_id>
+            <PDBo:pdbx_sifts_xref_db.unp_num>798</PDBo:pdbx_sifts_xref_db.unp_num>
+            <PDBo:pdbx_sifts_xref_db.unp_res>G</PDBo:pdbx_sifts_xref_db.unp_res>
+            <PDBo:pdbx_sifts_xref_db.unp_segment_id>1</PDBo:pdbx_sifts_xref_db.unp_segment_id>
+          </PDBo:pdbx_sifts_xref_db>
+        </PDBo:has_pdbx_sifts_xref_db>
+        <PDBo:has_pdbx_sifts_xref_db>
+          <PDBo:pdbx_sifts_xref_db rdf:about="http://rdf.wwpdb.org/pdb/7JIA/pdbx_sifts_xref_db/A,1,4,1">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7JIA"/>
+            <PDBo:reference_to_struct_asym>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/struct_asym/">
+                <PDBo:referenced_by_pdbx_sifts_xref_db rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/pdbx_sifts_xref_db/A,1,4,1"/>
+              </rdf:Description>
+            </PDBo:reference_to_struct_asym>
+            <PDBo:pdbx_sifts_xref_db.asym_id>A</PDBo:pdbx_sifts_xref_db.asym_id>
+            <PDBo:pdbx_sifts_xref_db.entity_id>1</PDBo:pdbx_sifts_xref_db.entity_id>
+            <PDBo:pdbx_sifts_xref_db.seq_id>4</PDBo:pdbx_sifts_xref_db.seq_id>
+            <PDBo:pdbx_sifts_xref_db.seq_id_ordinal>1</PDBo:pdbx_sifts_xref_db.seq_id_ordinal>
+            <PDBo:pdbx_sifts_xref_db.mh_id>1</PDBo:pdbx_sifts_xref_db.mh_id>
+            <PDBo:pdbx_sifts_xref_db.mon_id>GLY</PDBo:pdbx_sifts_xref_db.mon_id>
+            <PDBo:pdbx_sifts_xref_db.mon_id_one_letter_code>G</PDBo:pdbx_sifts_xref_db.mon_id_one_letter_code>
+            <PDBo:pdbx_sifts_xref_db.observed>Y</PDBo:pdbx_sifts_xref_db.observed>
+            <PDBo:pdbx_sifts_xref_db.unp_acc>Q8QGN9</PDBo:pdbx_sifts_xref_db.unp_acc>
+            <PDBo:pdbx_sifts_xref_db.unp_instance_id>1</PDBo:pdbx_sifts_xref_db.unp_instance_id>
+            <PDBo:pdbx_sifts_xref_db.unp_num>799</PDBo:pdbx_sifts_xref_db.unp_num>
+            <PDBo:pdbx_sifts_xref_db.unp_res>G</PDBo:pdbx_sifts_xref_db.unp_res>
+            <PDBo:pdbx_sifts_xref_db.unp_segment_id>1</PDBo:pdbx_sifts_xref_db.unp_segment_id>
+          </PDBo:pdbx_sifts_xref_db>
+        </PDBo:has_pdbx_sifts_xref_db>
+        <PDBo:has_pdbx_sifts_xref_db>
+          <PDBo:pdbx_sifts_xref_db rdf:about="http://rdf.wwpdb.org/pdb/7JIA/pdbx_sifts_xref_db/A,1,5,1">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7JIA"/>
+            <PDBo:reference_to_struct_asym>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/struct_asym/">
+                <PDBo:referenced_by_pdbx_sifts_xref_db rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/pdbx_sifts_xref_db/A,1,5,1"/>
+              </rdf:Description>
+            </PDBo:reference_to_struct_asym>
+            <PDBo:pdbx_sifts_xref_db.asym_id>A</PDBo:pdbx_sifts_xref_db.asym_id>
+            <PDBo:pdbx_sifts_xref_db.entity_id>1</PDBo:pdbx_sifts_xref_db.entity_id>
+            <PDBo:pdbx_sifts_xref_db.seq_id>5</PDBo:pdbx_sifts_xref_db.seq_id>
+            <PDBo:pdbx_sifts_xref_db.seq_id_ordinal>1</PDBo:pdbx_sifts_xref_db.seq_id_ordinal>
+            <PDBo:pdbx_sifts_xref_db.mh_id>1</PDBo:pdbx_sifts_xref_db.mh_id>
+            <PDBo:pdbx_sifts_xref_db.mon_id>PHE</PDBo:pdbx_sifts_xref_db.mon_id>
+            <PDBo:pdbx_sifts_xref_db.mon_id_one_letter_code>F</PDBo:pdbx_sifts_xref_db.mon_id_one_letter_code>
+            <PDBo:pdbx_sifts_xref_db.observed>Y</PDBo:pdbx_sifts_xref_db.observed>
+            <PDBo:pdbx_sifts_xref_db.unp_acc>Q8QGN9</PDBo:pdbx_sifts_xref_db.unp_acc>
+            <PDBo:pdbx_sifts_xref_db.unp_instance_id>1</PDBo:pdbx_sifts_xref_db.unp_instance_id>
+            <PDBo:pdbx_sifts_xref_db.unp_num>800</PDBo:pdbx_sifts_xref_db.unp_num>
+            <PDBo:pdbx_sifts_xref_db.unp_res>F</PDBo:pdbx_sifts_xref_db.unp_res>
+            <PDBo:pdbx_sifts_xref_db.unp_segment_id>1</PDBo:pdbx_sifts_xref_db.unp_segment_id>
+          </PDBo:pdbx_sifts_xref_db>
+        </PDBo:has_pdbx_sifts_xref_db>
+        <PDBo:has_pdbx_sifts_xref_db>
+          <PDBo:pdbx_sifts_xref_db rdf:about="http://rdf.wwpdb.org/pdb/7JIA/pdbx_sifts_xref_db/A,1,6,1">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7JIA"/>
+            <PDBo:reference_to_struct_asym>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/struct_asym/">
+                <PDBo:referenced_by_pdbx_sifts_xref_db rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/pdbx_sifts_xref_db/A,1,6,1"/>
+              </rdf:Description>
+            </PDBo:reference_to_struct_asym>
+            <PDBo:pdbx_sifts_xref_db.asym_id>A</PDBo:pdbx_sifts_xref_db.asym_id>
+            <PDBo:pdbx_sifts_xref_db.entity_id>1</PDBo:pdbx_sifts_xref_db.entity_id>
+            <PDBo:pdbx_sifts_xref_db.seq_id>6</PDBo:pdbx_sifts_xref_db.seq_id>
+            <PDBo:pdbx_sifts_xref_db.seq_id_ordinal>1</PDBo:pdbx_sifts_xref_db.seq_id_ordinal>
+            <PDBo:pdbx_sifts_xref_db.mh_id>1</PDBo:pdbx_sifts_xref_db.mh_id>
+            <PDBo:pdbx_sifts_xref_db.mon_id>SER</PDBo:pdbx_sifts_xref_db.mon_id>
+            <PDBo:pdbx_sifts_xref_db.mon_id_one_letter_code>S</PDBo:pdbx_sifts_xref_db.mon_id_one_letter_code>
+            <PDBo:pdbx_sifts_xref_db.observed>Y</PDBo:pdbx_sifts_xref_db.observed>
+            <PDBo:pdbx_sifts_xref_db.unp_acc>Q8QGN9</PDBo:pdbx_sifts_xref_db.unp_acc>
+            <PDBo:pdbx_sifts_xref_db.unp_instance_id>1</PDBo:pdbx_sifts_xref_db.unp_instance_id>
+            <PDBo:pdbx_sifts_xref_db.unp_num>801</PDBo:pdbx_sifts_xref_db.unp_num>
+            <PDBo:pdbx_sifts_xref_db.unp_res>S</PDBo:pdbx_sifts_xref_db.unp_res>
+            <PDBo:pdbx_sifts_xref_db.unp_segment_id>1</PDBo:pdbx_sifts_xref_db.unp_segment_id>
+          </PDBo:pdbx_sifts_xref_db>
+        </PDBo:has_pdbx_sifts_xref_db>
+        <PDBo:has_pdbx_sifts_xref_db>
+          <PDBo:pdbx_sifts_xref_db rdf:about="http://rdf.wwpdb.org/pdb/7JIA/pdbx_sifts_xref_db/A,1,7,1">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7JIA"/>
+            <PDBo:reference_to_struct_asym>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/struct_asym/">
+                <PDBo:referenced_by_pdbx_sifts_xref_db rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/pdbx_sifts_xref_db/A,1,7,1"/>
+              </rdf:Description>
+            </PDBo:reference_to_struct_asym>
+            <PDBo:pdbx_sifts_xref_db.asym_id>A</PDBo:pdbx_sifts_xref_db.asym_id>
+            <PDBo:pdbx_sifts_xref_db.entity_id>1</PDBo:pdbx_sifts_xref_db.entity_id>
+            <PDBo:pdbx_sifts_xref_db.seq_id>7</PDBo:pdbx_sifts_xref_db.seq_id>
+            <PDBo:pdbx_sifts_xref_db.seq_id_ordinal>1</PDBo:pdbx_sifts_xref_db.seq_id_ordinal>
+            <PDBo:pdbx_sifts_xref_db.mh_id>1</PDBo:pdbx_sifts_xref_db.mh_id>
+            <PDBo:pdbx_sifts_xref_db.mon_id>CYS</PDBo:pdbx_sifts_xref_db.mon_id>
+            <PDBo:pdbx_sifts_xref_db.mon_id_one_letter_code>C</PDBo:pdbx_sifts_xref_db.mon_id_one_letter_code>
+            <PDBo:pdbx_sifts_xref_db.observed>Y</PDBo:pdbx_sifts_xref_db.observed>
+            <PDBo:pdbx_sifts_xref_db.unp_acc>Q8QGN9</PDBo:pdbx_sifts_xref_db.unp_acc>
+            <PDBo:pdbx_sifts_xref_db.unp_instance_id>1</PDBo:pdbx_sifts_xref_db.unp_instance_id>
+            <PDBo:pdbx_sifts_xref_db.unp_num>802</PDBo:pdbx_sifts_xref_db.unp_num>
+            <PDBo:pdbx_sifts_xref_db.unp_res>C</PDBo:pdbx_sifts_xref_db.unp_res>
+            <PDBo:pdbx_sifts_xref_db.unp_segment_id>1</PDBo:pdbx_sifts_xref_db.unp_segment_id>
+          </PDBo:pdbx_sifts_xref_db>
+        </PDBo:has_pdbx_sifts_xref_db>
+        <PDBo:has_pdbx_sifts_xref_db>
+          <PDBo:pdbx_sifts_xref_db rdf:about="http://rdf.wwpdb.org/pdb/7JIA/pdbx_sifts_xref_db/A,1,8,1">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7JIA"/>
+            <PDBo:reference_to_struct_asym>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/struct_asym/">
+                <PDBo:referenced_by_pdbx_sifts_xref_db rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/pdbx_sifts_xref_db/A,1,8,1"/>
+              </rdf:Description>
+            </PDBo:reference_to_struct_asym>
+            <PDBo:pdbx_sifts_xref_db.asym_id>A</PDBo:pdbx_sifts_xref_db.asym_id>
+            <PDBo:pdbx_sifts_xref_db.entity_id>1</PDBo:pdbx_sifts_xref_db.entity_id>
+            <PDBo:pdbx_sifts_xref_db.seq_id>8</PDBo:pdbx_sifts_xref_db.seq_id>
+            <PDBo:pdbx_sifts_xref_db.seq_id_ordinal>1</PDBo:pdbx_sifts_xref_db.seq_id_ordinal>
+            <PDBo:pdbx_sifts_xref_db.mh_id>1</PDBo:pdbx_sifts_xref_db.mh_id>
+            <PDBo:pdbx_sifts_xref_db.mon_id>HIS</PDBo:pdbx_sifts_xref_db.mon_id>
+            <PDBo:pdbx_sifts_xref_db.mon_id_one_letter_code>H</PDBo:pdbx_sifts_xref_db.mon_id_one_letter_code>
+            <PDBo:pdbx_sifts_xref_db.observed>Y</PDBo:pdbx_sifts_xref_db.observed>
+            <PDBo:pdbx_sifts_xref_db.unp_acc>Q8QGN9</PDBo:pdbx_sifts_xref_db.unp_acc>
+            <PDBo:pdbx_sifts_xref_db.unp_instance_id>1</PDBo:pdbx_sifts_xref_db.unp_instance_id>
+            <PDBo:pdbx_sifts_xref_db.unp_num>803</PDBo:pdbx_sifts_xref_db.unp_num>
+            <PDBo:pdbx_sifts_xref_db.unp_res>H</PDBo:pdbx_sifts_xref_db.unp_res>
+            <PDBo:pdbx_sifts_xref_db.unp_segment_id>1</PDBo:pdbx_sifts_xref_db.unp_segment_id>
+          </PDBo:pdbx_sifts_xref_db>
+        </PDBo:has_pdbx_sifts_xref_db>
+        <PDBo:has_pdbx_sifts_xref_db>
+          <PDBo:pdbx_sifts_xref_db rdf:about="http://rdf.wwpdb.org/pdb/7JIA/pdbx_sifts_xref_db/A,1,9,1">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7JIA"/>
+            <PDBo:reference_to_struct_asym>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/struct_asym/">
+                <PDBo:referenced_by_pdbx_sifts_xref_db rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/pdbx_sifts_xref_db/A,1,9,1"/>
+              </rdf:Description>
+            </PDBo:reference_to_struct_asym>
+            <PDBo:pdbx_sifts_xref_db.asym_id>A</PDBo:pdbx_sifts_xref_db.asym_id>
+            <PDBo:pdbx_sifts_xref_db.entity_id>1</PDBo:pdbx_sifts_xref_db.entity_id>
+            <PDBo:pdbx_sifts_xref_db.seq_id>9</PDBo:pdbx_sifts_xref_db.seq_id>
+            <PDBo:pdbx_sifts_xref_db.seq_id_ordinal>1</PDBo:pdbx_sifts_xref_db.seq_id_ordinal>
+            <PDBo:pdbx_sifts_xref_db.mh_id>1</PDBo:pdbx_sifts_xref_db.mh_id>
+            <PDBo:pdbx_sifts_xref_db.mon_id>ASP</PDBo:pdbx_sifts_xref_db.mon_id>
+            <PDBo:pdbx_sifts_xref_db.mon_id_one_letter_code>D</PDBo:pdbx_sifts_xref_db.mon_id_one_letter_code>
+            <PDBo:pdbx_sifts_xref_db.observed>Y</PDBo:pdbx_sifts_xref_db.observed>
+            <PDBo:pdbx_sifts_xref_db.unp_acc>Q8QGN9</PDBo:pdbx_sifts_xref_db.unp_acc>
+            <PDBo:pdbx_sifts_xref_db.unp_instance_id>1</PDBo:pdbx_sifts_xref_db.unp_instance_id>
+            <PDBo:pdbx_sifts_xref_db.unp_num>804</PDBo:pdbx_sifts_xref_db.unp_num>
+            <PDBo:pdbx_sifts_xref_db.unp_res>D</PDBo:pdbx_sifts_xref_db.unp_res>
+            <PDBo:pdbx_sifts_xref_db.unp_segment_id>1</PDBo:pdbx_sifts_xref_db.unp_segment_id>
+          </PDBo:pdbx_sifts_xref_db>
+        </PDBo:has_pdbx_sifts_xref_db>
+        <PDBo:has_pdbx_sifts_xref_db>
+          <PDBo:pdbx_sifts_xref_db rdf:about="http://rdf.wwpdb.org/pdb/7JIA/pdbx_sifts_xref_db/A,1,10,1">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7JIA"/>
+            <PDBo:reference_to_struct_asym>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/struct_asym/">
+                <PDBo:referenced_by_pdbx_sifts_xref_db rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/pdbx_sifts_xref_db/A,1,10,1"/>
+              </rdf:Description>
+            </PDBo:reference_to_struct_asym>
+            <PDBo:pdbx_sifts_xref_db.asym_id>A</PDBo:pdbx_sifts_xref_db.asym_id>
+            <PDBo:pdbx_sifts_xref_db.entity_id>1</PDBo:pdbx_sifts_xref_db.entity_id>
+            <PDBo:pdbx_sifts_xref_db.seq_id>10</PDBo:pdbx_sifts_xref_db.seq_id>
+            <PDBo:pdbx_sifts_xref_db.seq_id_ordinal>1</PDBo:pdbx_sifts_xref_db.seq_id_ordinal>
+            <PDBo:pdbx_sifts_xref_db.mh_id>1</PDBo:pdbx_sifts_xref_db.mh_id>
+            <PDBo:pdbx_sifts_xref_db.mon_id>GLY</PDBo:pdbx_sifts_xref_db.mon_id>
+            <PDBo:pdbx_sifts_xref_db.mon_id_one_letter_code>G</PDBo:pdbx_sifts_xref_db.mon_id_one_letter_code>
+            <PDBo:pdbx_sifts_xref_db.observed>Y</PDBo:pdbx_sifts_xref_db.observed>
+            <PDBo:pdbx_sifts_xref_db.unp_acc>Q8QGN9</PDBo:pdbx_sifts_xref_db.unp_acc>
+            <PDBo:pdbx_sifts_xref_db.unp_instance_id>1</PDBo:pdbx_sifts_xref_db.unp_instance_id>
+            <PDBo:pdbx_sifts_xref_db.unp_num>805</PDBo:pdbx_sifts_xref_db.unp_num>
+            <PDBo:pdbx_sifts_xref_db.unp_res>G</PDBo:pdbx_sifts_xref_db.unp_res>
+            <PDBo:pdbx_sifts_xref_db.unp_segment_id>1</PDBo:pdbx_sifts_xref_db.unp_segment_id>
+          </PDBo:pdbx_sifts_xref_db>
+        </PDBo:has_pdbx_sifts_xref_db>
+        <PDBo:has_pdbx_sifts_xref_db>
+          <PDBo:pdbx_sifts_xref_db rdf:about="http://rdf.wwpdb.org/pdb/7JIA/pdbx_sifts_xref_db/A,1,11,1">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7JIA"/>
+            <PDBo:reference_to_struct_asym>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/struct_asym/">
+                <PDBo:referenced_by_pdbx_sifts_xref_db rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/pdbx_sifts_xref_db/A,1,11,1"/>
+              </rdf:Description>
+            </PDBo:reference_to_struct_asym>
+            <PDBo:pdbx_sifts_xref_db.asym_id>A</PDBo:pdbx_sifts_xref_db.asym_id>
+            <PDBo:pdbx_sifts_xref_db.entity_id>1</PDBo:pdbx_sifts_xref_db.entity_id>
+            <PDBo:pdbx_sifts_xref_db.seq_id>11</PDBo:pdbx_sifts_xref_db.seq_id>
+            <PDBo:pdbx_sifts_xref_db.seq_id_ordinal>1</PDBo:pdbx_sifts_xref_db.seq_id_ordinal>
+            <PDBo:pdbx_sifts_xref_db.mh_id>1</PDBo:pdbx_sifts_xref_db.mh_id>
+            <PDBo:pdbx_sifts_xref_db.mon_id>GLU</PDBo:pdbx_sifts_xref_db.mon_id>
+            <PDBo:pdbx_sifts_xref_db.mon_id_one_letter_code>E</PDBo:pdbx_sifts_xref_db.mon_id_one_letter_code>
+            <PDBo:pdbx_sifts_xref_db.observed>Y</PDBo:pdbx_sifts_xref_db.observed>
+            <PDBo:pdbx_sifts_xref_db.unp_acc>Q8QGN9</PDBo:pdbx_sifts_xref_db.unp_acc>
+            <PDBo:pdbx_sifts_xref_db.unp_instance_id>1</PDBo:pdbx_sifts_xref_db.unp_instance_id>
+            <PDBo:pdbx_sifts_xref_db.unp_num>806</PDBo:pdbx_sifts_xref_db.unp_num>
+            <PDBo:pdbx_sifts_xref_db.unp_res>E</PDBo:pdbx_sifts_xref_db.unp_res>
+            <PDBo:pdbx_sifts_xref_db.unp_segment_id>1</PDBo:pdbx_sifts_xref_db.unp_segment_id>
+          </PDBo:pdbx_sifts_xref_db>
+        </PDBo:has_pdbx_sifts_xref_db>
+        <PDBo:has_pdbx_sifts_xref_db>
+          <PDBo:pdbx_sifts_xref_db rdf:about="http://rdf.wwpdb.org/pdb/7JIA/pdbx_sifts_xref_db/A,1,12,1">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7JIA"/>
+            <PDBo:reference_to_struct_asym>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/struct_asym/">
+                <PDBo:referenced_by_pdbx_sifts_xref_db rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/pdbx_sifts_xref_db/A,1,12,1"/>
+              </rdf:Description>
+            </PDBo:reference_to_struct_asym>
+            <PDBo:pdbx_sifts_xref_db.asym_id>A</PDBo:pdbx_sifts_xref_db.asym_id>
+            <PDBo:pdbx_sifts_xref_db.entity_id>1</PDBo:pdbx_sifts_xref_db.entity_id>
+            <PDBo:pdbx_sifts_xref_db.seq_id>12</PDBo:pdbx_sifts_xref_db.seq_id>
+            <PDBo:pdbx_sifts_xref_db.seq_id_ordinal>1</PDBo:pdbx_sifts_xref_db.seq_id_ordinal>
+            <PDBo:pdbx_sifts_xref_db.mh_id>1</PDBo:pdbx_sifts_xref_db.mh_id>
+            <PDBo:pdbx_sifts_xref_db.mon_id>THR</PDBo:pdbx_sifts_xref_db.mon_id>
+            <PDBo:pdbx_sifts_xref_db.mon_id_one_letter_code>T</PDBo:pdbx_sifts_xref_db.mon_id_one_letter_code>
+            <PDBo:pdbx_sifts_xref_db.observed>Y</PDBo:pdbx_sifts_xref_db.observed>
+            <PDBo:pdbx_sifts_xref_db.unp_acc>Q8QGN9</PDBo:pdbx_sifts_xref_db.unp_acc>
+            <PDBo:pdbx_sifts_xref_db.unp_instance_id>1</PDBo:pdbx_sifts_xref_db.unp_instance_id>
+            <PDBo:pdbx_sifts_xref_db.unp_num>807</PDBo:pdbx_sifts_xref_db.unp_num>
+            <PDBo:pdbx_sifts_xref_db.unp_res>T</PDBo:pdbx_sifts_xref_db.unp_res>
+            <PDBo:pdbx_sifts_xref_db.unp_segment_id>1</PDBo:pdbx_sifts_xref_db.unp_segment_id>
+            <PDBo:pdbx_sifts_xref_db.xref_db_acc>PF00396</PDBo:pdbx_sifts_xref_db.xref_db_acc>
+            <PDBo:pdbx_sifts_xref_db.xref_db_instance_id>1</PDBo:pdbx_sifts_xref_db.xref_db_instance_id>
+            <PDBo:pdbx_sifts_xref_db.xref_db_name>Pfam</PDBo:pdbx_sifts_xref_db.xref_db_name>
+            <PDBo:pdbx_sifts_xref_db.xref_db_segment_id>1</PDBo:pdbx_sifts_xref_db.xref_db_segment_id>
+          </PDBo:pdbx_sifts_xref_db>
+        </PDBo:has_pdbx_sifts_xref_db>
+        <PDBo:has_pdbx_sifts_xref_db>
+          <PDBo:pdbx_sifts_xref_db rdf:about="http://rdf.wwpdb.org/pdb/7JIA/pdbx_sifts_xref_db/A,1,13,1">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7JIA"/>
+            <PDBo:reference_to_struct_asym>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/struct_asym/">
+                <PDBo:referenced_by_pdbx_sifts_xref_db rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/pdbx_sifts_xref_db/A,1,13,1"/>
+              </rdf:Description>
+            </PDBo:reference_to_struct_asym>
+            <PDBo:pdbx_sifts_xref_db.asym_id>A</PDBo:pdbx_sifts_xref_db.asym_id>
+            <PDBo:pdbx_sifts_xref_db.entity_id>1</PDBo:pdbx_sifts_xref_db.entity_id>
+            <PDBo:pdbx_sifts_xref_db.seq_id>13</PDBo:pdbx_sifts_xref_db.seq_id>
+            <PDBo:pdbx_sifts_xref_db.seq_id_ordinal>1</PDBo:pdbx_sifts_xref_db.seq_id_ordinal>
+            <PDBo:pdbx_sifts_xref_db.mh_id>1</PDBo:pdbx_sifts_xref_db.mh_id>
+            <PDBo:pdbx_sifts_xref_db.mon_id>CYS</PDBo:pdbx_sifts_xref_db.mon_id>
+            <PDBo:pdbx_sifts_xref_db.mon_id_one_letter_code>C</PDBo:pdbx_sifts_xref_db.mon_id_one_letter_code>
+            <PDBo:pdbx_sifts_xref_db.observed>Y</PDBo:pdbx_sifts_xref_db.observed>
+            <PDBo:pdbx_sifts_xref_db.unp_acc>Q8QGN9</PDBo:pdbx_sifts_xref_db.unp_acc>
+            <PDBo:pdbx_sifts_xref_db.unp_instance_id>1</PDBo:pdbx_sifts_xref_db.unp_instance_id>
+            <PDBo:pdbx_sifts_xref_db.unp_num>808</PDBo:pdbx_sifts_xref_db.unp_num>
+            <PDBo:pdbx_sifts_xref_db.unp_res>C</PDBo:pdbx_sifts_xref_db.unp_res>
+            <PDBo:pdbx_sifts_xref_db.unp_segment_id>1</PDBo:pdbx_sifts_xref_db.unp_segment_id>
+            <PDBo:pdbx_sifts_xref_db.xref_db_acc>PF00396</PDBo:pdbx_sifts_xref_db.xref_db_acc>
+            <PDBo:pdbx_sifts_xref_db.xref_db_instance_id>1</PDBo:pdbx_sifts_xref_db.xref_db_instance_id>
+            <PDBo:pdbx_sifts_xref_db.xref_db_name>Pfam</PDBo:pdbx_sifts_xref_db.xref_db_name>
+            <PDBo:pdbx_sifts_xref_db.xref_db_segment_id>1</PDBo:pdbx_sifts_xref_db.xref_db_segment_id>
+          </PDBo:pdbx_sifts_xref_db>
+        </PDBo:has_pdbx_sifts_xref_db>
+        <PDBo:has_pdbx_sifts_xref_db>
+          <PDBo:pdbx_sifts_xref_db rdf:about="http://rdf.wwpdb.org/pdb/7JIA/pdbx_sifts_xref_db/A,1,14,1">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7JIA"/>
+            <PDBo:reference_to_struct_asym>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/struct_asym/">
+                <PDBo:referenced_by_pdbx_sifts_xref_db rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/pdbx_sifts_xref_db/A,1,14,1"/>
+              </rdf:Description>
+            </PDBo:reference_to_struct_asym>
+            <PDBo:pdbx_sifts_xref_db.asym_id>A</PDBo:pdbx_sifts_xref_db.asym_id>
+            <PDBo:pdbx_sifts_xref_db.entity_id>1</PDBo:pdbx_sifts_xref_db.entity_id>
+            <PDBo:pdbx_sifts_xref_db.seq_id>14</PDBo:pdbx_sifts_xref_db.seq_id>
+            <PDBo:pdbx_sifts_xref_db.seq_id_ordinal>1</PDBo:pdbx_sifts_xref_db.seq_id_ordinal>
+            <PDBo:pdbx_sifts_xref_db.mh_id>1</PDBo:pdbx_sifts_xref_db.mh_id>
+            <PDBo:pdbx_sifts_xref_db.mon_id>CYS</PDBo:pdbx_sifts_xref_db.mon_id>
+            <PDBo:pdbx_sifts_xref_db.mon_id_one_letter_code>C</PDBo:pdbx_sifts_xref_db.mon_id_one_letter_code>
+            <PDBo:pdbx_sifts_xref_db.observed>Y</PDBo:pdbx_sifts_xref_db.observed>
+            <PDBo:pdbx_sifts_xref_db.unp_acc>Q8QGN9</PDBo:pdbx_sifts_xref_db.unp_acc>
+            <PDBo:pdbx_sifts_xref_db.unp_instance_id>1</PDBo:pdbx_sifts_xref_db.unp_instance_id>
+            <PDBo:pdbx_sifts_xref_db.unp_num>809</PDBo:pdbx_sifts_xref_db.unp_num>
+            <PDBo:pdbx_sifts_xref_db.unp_res>C</PDBo:pdbx_sifts_xref_db.unp_res>
+            <PDBo:pdbx_sifts_xref_db.unp_segment_id>1</PDBo:pdbx_sifts_xref_db.unp_segment_id>
+            <PDBo:pdbx_sifts_xref_db.xref_db_acc>PF00396</PDBo:pdbx_sifts_xref_db.xref_db_acc>
+            <PDBo:pdbx_sifts_xref_db.xref_db_instance_id>1</PDBo:pdbx_sifts_xref_db.xref_db_instance_id>
+            <PDBo:pdbx_sifts_xref_db.xref_db_name>Pfam</PDBo:pdbx_sifts_xref_db.xref_db_name>
+            <PDBo:pdbx_sifts_xref_db.xref_db_segment_id>1</PDBo:pdbx_sifts_xref_db.xref_db_segment_id>
+          </PDBo:pdbx_sifts_xref_db>
+        </PDBo:has_pdbx_sifts_xref_db>
+        <PDBo:has_pdbx_sifts_xref_db>
+          <PDBo:pdbx_sifts_xref_db rdf:about="http://rdf.wwpdb.org/pdb/7JIA/pdbx_sifts_xref_db/A,1,15,1">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7JIA"/>
+            <PDBo:reference_to_struct_asym>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/struct_asym/">
+                <PDBo:referenced_by_pdbx_sifts_xref_db rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/pdbx_sifts_xref_db/A,1,15,1"/>
+              </rdf:Description>
+            </PDBo:reference_to_struct_asym>
+            <PDBo:pdbx_sifts_xref_db.asym_id>A</PDBo:pdbx_sifts_xref_db.asym_id>
+            <PDBo:pdbx_sifts_xref_db.entity_id>1</PDBo:pdbx_sifts_xref_db.entity_id>
+            <PDBo:pdbx_sifts_xref_db.seq_id>15</PDBo:pdbx_sifts_xref_db.seq_id>
+            <PDBo:pdbx_sifts_xref_db.seq_id_ordinal>1</PDBo:pdbx_sifts_xref_db.seq_id_ordinal>
+            <PDBo:pdbx_sifts_xref_db.mh_id>1</PDBo:pdbx_sifts_xref_db.mh_id>
+            <PDBo:pdbx_sifts_xref_db.mon_id>PRO</PDBo:pdbx_sifts_xref_db.mon_id>
+            <PDBo:pdbx_sifts_xref_db.mon_id_one_letter_code>P</PDBo:pdbx_sifts_xref_db.mon_id_one_letter_code>
+            <PDBo:pdbx_sifts_xref_db.observed>Y</PDBo:pdbx_sifts_xref_db.observed>
+            <PDBo:pdbx_sifts_xref_db.unp_acc>Q8QGN9</PDBo:pdbx_sifts_xref_db.unp_acc>
+            <PDBo:pdbx_sifts_xref_db.unp_instance_id>1</PDBo:pdbx_sifts_xref_db.unp_instance_id>
+            <PDBo:pdbx_sifts_xref_db.unp_num>810</PDBo:pdbx_sifts_xref_db.unp_num>
+            <PDBo:pdbx_sifts_xref_db.unp_res>P</PDBo:pdbx_sifts_xref_db.unp_res>
+            <PDBo:pdbx_sifts_xref_db.unp_segment_id>1</PDBo:pdbx_sifts_xref_db.unp_segment_id>
+            <PDBo:pdbx_sifts_xref_db.xref_db_acc>PF00396</PDBo:pdbx_sifts_xref_db.xref_db_acc>
+            <PDBo:pdbx_sifts_xref_db.xref_db_instance_id>1</PDBo:pdbx_sifts_xref_db.xref_db_instance_id>
+            <PDBo:pdbx_sifts_xref_db.xref_db_name>Pfam</PDBo:pdbx_sifts_xref_db.xref_db_name>
+            <PDBo:pdbx_sifts_xref_db.xref_db_segment_id>1</PDBo:pdbx_sifts_xref_db.xref_db_segment_id>
+          </PDBo:pdbx_sifts_xref_db>
+        </PDBo:has_pdbx_sifts_xref_db>
+        <PDBo:has_pdbx_sifts_xref_db>
+          <PDBo:pdbx_sifts_xref_db rdf:about="http://rdf.wwpdb.org/pdb/7JIA/pdbx_sifts_xref_db/A,1,16,1">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7JIA"/>
+            <PDBo:reference_to_struct_asym>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/struct_asym/">
+                <PDBo:referenced_by_pdbx_sifts_xref_db rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/pdbx_sifts_xref_db/A,1,16,1"/>
+              </rdf:Description>
+            </PDBo:reference_to_struct_asym>
+            <PDBo:pdbx_sifts_xref_db.asym_id>A</PDBo:pdbx_sifts_xref_db.asym_id>
+            <PDBo:pdbx_sifts_xref_db.entity_id>1</PDBo:pdbx_sifts_xref_db.entity_id>
+            <PDBo:pdbx_sifts_xref_db.seq_id>16</PDBo:pdbx_sifts_xref_db.seq_id>
+            <PDBo:pdbx_sifts_xref_db.seq_id_ordinal>1</PDBo:pdbx_sifts_xref_db.seq_id_ordinal>
+            <PDBo:pdbx_sifts_xref_db.mh_id>1</PDBo:pdbx_sifts_xref_db.mh_id>
+            <PDBo:pdbx_sifts_xref_db.mon_id>THR</PDBo:pdbx_sifts_xref_db.mon_id>
+            <PDBo:pdbx_sifts_xref_db.mon_id_one_letter_code>T</PDBo:pdbx_sifts_xref_db.mon_id_one_letter_code>
+            <PDBo:pdbx_sifts_xref_db.observed>Y</PDBo:pdbx_sifts_xref_db.observed>
+            <PDBo:pdbx_sifts_xref_db.unp_acc>Q8QGN9</PDBo:pdbx_sifts_xref_db.unp_acc>
+            <PDBo:pdbx_sifts_xref_db.unp_instance_id>1</PDBo:pdbx_sifts_xref_db.unp_instance_id>
+            <PDBo:pdbx_sifts_xref_db.unp_num>811</PDBo:pdbx_sifts_xref_db.unp_num>
+            <PDBo:pdbx_sifts_xref_db.unp_res>T</PDBo:pdbx_sifts_xref_db.unp_res>
+            <PDBo:pdbx_sifts_xref_db.unp_segment_id>1</PDBo:pdbx_sifts_xref_db.unp_segment_id>
+            <PDBo:pdbx_sifts_xref_db.xref_db_acc>PF00396</PDBo:pdbx_sifts_xref_db.xref_db_acc>
+            <PDBo:pdbx_sifts_xref_db.xref_db_instance_id>1</PDBo:pdbx_sifts_xref_db.xref_db_instance_id>
+            <PDBo:pdbx_sifts_xref_db.xref_db_name>Pfam</PDBo:pdbx_sifts_xref_db.xref_db_name>
+            <PDBo:pdbx_sifts_xref_db.xref_db_segment_id>1</PDBo:pdbx_sifts_xref_db.xref_db_segment_id>
+          </PDBo:pdbx_sifts_xref_db>
+        </PDBo:has_pdbx_sifts_xref_db>
+        <PDBo:has_pdbx_sifts_xref_db>
+          <PDBo:pdbx_sifts_xref_db rdf:about="http://rdf.wwpdb.org/pdb/7JIA/pdbx_sifts_xref_db/A,1,17,1">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7JIA"/>
+            <PDBo:reference_to_struct_asym>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/struct_asym/">
+                <PDBo:referenced_by_pdbx_sifts_xref_db rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/pdbx_sifts_xref_db/A,1,17,1"/>
+              </rdf:Description>
+            </PDBo:reference_to_struct_asym>
+            <PDBo:pdbx_sifts_xref_db.asym_id>A</PDBo:pdbx_sifts_xref_db.asym_id>
+            <PDBo:pdbx_sifts_xref_db.entity_id>1</PDBo:pdbx_sifts_xref_db.entity_id>
+            <PDBo:pdbx_sifts_xref_db.seq_id>17</PDBo:pdbx_sifts_xref_db.seq_id>
+            <PDBo:pdbx_sifts_xref_db.seq_id_ordinal>1</PDBo:pdbx_sifts_xref_db.seq_id_ordinal>
+            <PDBo:pdbx_sifts_xref_db.mh_id>1</PDBo:pdbx_sifts_xref_db.mh_id>
+            <PDBo:pdbx_sifts_xref_db.mon_id>SER</PDBo:pdbx_sifts_xref_db.mon_id>
+            <PDBo:pdbx_sifts_xref_db.mon_id_one_letter_code>S</PDBo:pdbx_sifts_xref_db.mon_id_one_letter_code>
+            <PDBo:pdbx_sifts_xref_db.observed>Y</PDBo:pdbx_sifts_xref_db.observed>
+            <PDBo:pdbx_sifts_xref_db.unp_acc>Q8QGN9</PDBo:pdbx_sifts_xref_db.unp_acc>
+            <PDBo:pdbx_sifts_xref_db.unp_instance_id>1</PDBo:pdbx_sifts_xref_db.unp_instance_id>
+            <PDBo:pdbx_sifts_xref_db.unp_num>812</PDBo:pdbx_sifts_xref_db.unp_num>
+            <PDBo:pdbx_sifts_xref_db.unp_res>S</PDBo:pdbx_sifts_xref_db.unp_res>
+            <PDBo:pdbx_sifts_xref_db.unp_segment_id>1</PDBo:pdbx_sifts_xref_db.unp_segment_id>
+            <PDBo:pdbx_sifts_xref_db.xref_db_acc>PF00396</PDBo:pdbx_sifts_xref_db.xref_db_acc>
+            <PDBo:pdbx_sifts_xref_db.xref_db_instance_id>1</PDBo:pdbx_sifts_xref_db.xref_db_instance_id>
+            <PDBo:pdbx_sifts_xref_db.xref_db_name>Pfam</PDBo:pdbx_sifts_xref_db.xref_db_name>
+            <PDBo:pdbx_sifts_xref_db.xref_db_segment_id>1</PDBo:pdbx_sifts_xref_db.xref_db_segment_id>
+          </PDBo:pdbx_sifts_xref_db>
+        </PDBo:has_pdbx_sifts_xref_db>
+        <PDBo:has_pdbx_sifts_xref_db>
+          <PDBo:pdbx_sifts_xref_db rdf:about="http://rdf.wwpdb.org/pdb/7JIA/pdbx_sifts_xref_db/A,1,18,1">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7JIA"/>
+            <PDBo:reference_to_struct_asym>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/struct_asym/">
+                <PDBo:referenced_by_pdbx_sifts_xref_db rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/pdbx_sifts_xref_db/A,1,18,1"/>
+              </rdf:Description>
+            </PDBo:reference_to_struct_asym>
+            <PDBo:pdbx_sifts_xref_db.asym_id>A</PDBo:pdbx_sifts_xref_db.asym_id>
+            <PDBo:pdbx_sifts_xref_db.entity_id>1</PDBo:pdbx_sifts_xref_db.entity_id>
+            <PDBo:pdbx_sifts_xref_db.seq_id>18</PDBo:pdbx_sifts_xref_db.seq_id>
+            <PDBo:pdbx_sifts_xref_db.seq_id_ordinal>1</PDBo:pdbx_sifts_xref_db.seq_id_ordinal>
+            <PDBo:pdbx_sifts_xref_db.mh_id>1</PDBo:pdbx_sifts_xref_db.mh_id>
+            <PDBo:pdbx_sifts_xref_db.mon_id>GLN</PDBo:pdbx_sifts_xref_db.mon_id>
+            <PDBo:pdbx_sifts_xref_db.mon_id_one_letter_code>Q</PDBo:pdbx_sifts_xref_db.mon_id_one_letter_code>
+            <PDBo:pdbx_sifts_xref_db.observed>Y</PDBo:pdbx_sifts_xref_db.observed>
+            <PDBo:pdbx_sifts_xref_db.unp_acc>Q8QGN9</PDBo:pdbx_sifts_xref_db.unp_acc>
+            <PDBo:pdbx_sifts_xref_db.unp_instance_id>1</PDBo:pdbx_sifts_xref_db.unp_instance_id>
+            <PDBo:pdbx_sifts_xref_db.unp_num>813</PDBo:pdbx_sifts_xref_db.unp_num>
+            <PDBo:pdbx_sifts_xref_db.unp_res>Q</PDBo:pdbx_sifts_xref_db.unp_res>
+            <PDBo:pdbx_sifts_xref_db.unp_segment_id>1</PDBo:pdbx_sifts_xref_db.unp_segment_id>
+            <PDBo:pdbx_sifts_xref_db.xref_db_acc>PF00396</PDBo:pdbx_sifts_xref_db.xref_db_acc>
+            <PDBo:pdbx_sifts_xref_db.xref_db_instance_id>1</PDBo:pdbx_sifts_xref_db.xref_db_instance_id>
+            <PDBo:pdbx_sifts_xref_db.xref_db_name>Pfam</PDBo:pdbx_sifts_xref_db.xref_db_name>
+            <PDBo:pdbx_sifts_xref_db.xref_db_segment_id>1</PDBo:pdbx_sifts_xref_db.xref_db_segment_id>
+          </PDBo:pdbx_sifts_xref_db>
+        </PDBo:has_pdbx_sifts_xref_db>
+        <PDBo:has_pdbx_sifts_xref_db>
+          <PDBo:pdbx_sifts_xref_db rdf:about="http://rdf.wwpdb.org/pdb/7JIA/pdbx_sifts_xref_db/A,1,19,1">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7JIA"/>
+            <PDBo:reference_to_struct_asym>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/struct_asym/">
+                <PDBo:referenced_by_pdbx_sifts_xref_db rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/pdbx_sifts_xref_db/A,1,19,1"/>
+              </rdf:Description>
+            </PDBo:reference_to_struct_asym>
+            <PDBo:pdbx_sifts_xref_db.asym_id>A</PDBo:pdbx_sifts_xref_db.asym_id>
+            <PDBo:pdbx_sifts_xref_db.entity_id>1</PDBo:pdbx_sifts_xref_db.entity_id>
+            <PDBo:pdbx_sifts_xref_db.seq_id>19</PDBo:pdbx_sifts_xref_db.seq_id>
+            <PDBo:pdbx_sifts_xref_db.seq_id_ordinal>1</PDBo:pdbx_sifts_xref_db.seq_id_ordinal>
+            <PDBo:pdbx_sifts_xref_db.mh_id>1</PDBo:pdbx_sifts_xref_db.mh_id>
+            <PDBo:pdbx_sifts_xref_db.mon_id>THR</PDBo:pdbx_sifts_xref_db.mon_id>
+            <PDBo:pdbx_sifts_xref_db.mon_id_one_letter_code>T</PDBo:pdbx_sifts_xref_db.mon_id_one_letter_code>
+            <PDBo:pdbx_sifts_xref_db.observed>Y</PDBo:pdbx_sifts_xref_db.observed>
+            <PDBo:pdbx_sifts_xref_db.unp_acc>Q8QGN9</PDBo:pdbx_sifts_xref_db.unp_acc>
+            <PDBo:pdbx_sifts_xref_db.unp_instance_id>1</PDBo:pdbx_sifts_xref_db.unp_instance_id>
+            <PDBo:pdbx_sifts_xref_db.unp_num>814</PDBo:pdbx_sifts_xref_db.unp_num>
+            <PDBo:pdbx_sifts_xref_db.unp_res>T</PDBo:pdbx_sifts_xref_db.unp_res>
+            <PDBo:pdbx_sifts_xref_db.unp_segment_id>1</PDBo:pdbx_sifts_xref_db.unp_segment_id>
+            <PDBo:pdbx_sifts_xref_db.xref_db_acc>PF00396</PDBo:pdbx_sifts_xref_db.xref_db_acc>
+            <PDBo:pdbx_sifts_xref_db.xref_db_instance_id>1</PDBo:pdbx_sifts_xref_db.xref_db_instance_id>
+            <PDBo:pdbx_sifts_xref_db.xref_db_name>Pfam</PDBo:pdbx_sifts_xref_db.xref_db_name>
+            <PDBo:pdbx_sifts_xref_db.xref_db_segment_id>1</PDBo:pdbx_sifts_xref_db.xref_db_segment_id>
+          </PDBo:pdbx_sifts_xref_db>
+        </PDBo:has_pdbx_sifts_xref_db>
+        <PDBo:has_pdbx_sifts_xref_db>
+          <PDBo:pdbx_sifts_xref_db rdf:about="http://rdf.wwpdb.org/pdb/7JIA/pdbx_sifts_xref_db/A,1,20,1">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7JIA"/>
+            <PDBo:reference_to_struct_asym>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/struct_asym/">
+                <PDBo:referenced_by_pdbx_sifts_xref_db rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/pdbx_sifts_xref_db/A,1,20,1"/>
+              </rdf:Description>
+            </PDBo:reference_to_struct_asym>
+            <PDBo:pdbx_sifts_xref_db.asym_id>A</PDBo:pdbx_sifts_xref_db.asym_id>
+            <PDBo:pdbx_sifts_xref_db.entity_id>1</PDBo:pdbx_sifts_xref_db.entity_id>
+            <PDBo:pdbx_sifts_xref_db.seq_id>20</PDBo:pdbx_sifts_xref_db.seq_id>
+            <PDBo:pdbx_sifts_xref_db.seq_id_ordinal>1</PDBo:pdbx_sifts_xref_db.seq_id_ordinal>
+            <PDBo:pdbx_sifts_xref_db.mh_id>1</PDBo:pdbx_sifts_xref_db.mh_id>
+            <PDBo:pdbx_sifts_xref_db.mon_id>THR</PDBo:pdbx_sifts_xref_db.mon_id>
+            <PDBo:pdbx_sifts_xref_db.mon_id_one_letter_code>T</PDBo:pdbx_sifts_xref_db.mon_id_one_letter_code>
+            <PDBo:pdbx_sifts_xref_db.observed>Y</PDBo:pdbx_sifts_xref_db.observed>
+            <PDBo:pdbx_sifts_xref_db.unp_acc>Q8QGN9</PDBo:pdbx_sifts_xref_db.unp_acc>
+            <PDBo:pdbx_sifts_xref_db.unp_instance_id>1</PDBo:pdbx_sifts_xref_db.unp_instance_id>
+            <PDBo:pdbx_sifts_xref_db.unp_num>815</PDBo:pdbx_sifts_xref_db.unp_num>
+            <PDBo:pdbx_sifts_xref_db.unp_res>T</PDBo:pdbx_sifts_xref_db.unp_res>
+            <PDBo:pdbx_sifts_xref_db.unp_segment_id>1</PDBo:pdbx_sifts_xref_db.unp_segment_id>
+            <PDBo:pdbx_sifts_xref_db.xref_db_acc>PF00396</PDBo:pdbx_sifts_xref_db.xref_db_acc>
+            <PDBo:pdbx_sifts_xref_db.xref_db_instance_id>1</PDBo:pdbx_sifts_xref_db.xref_db_instance_id>
+            <PDBo:pdbx_sifts_xref_db.xref_db_name>Pfam</PDBo:pdbx_sifts_xref_db.xref_db_name>
+            <PDBo:pdbx_sifts_xref_db.xref_db_segment_id>1</PDBo:pdbx_sifts_xref_db.xref_db_segment_id>
+          </PDBo:pdbx_sifts_xref_db>
+        </PDBo:has_pdbx_sifts_xref_db>
+        <PDBo:has_pdbx_sifts_xref_db>
+          <PDBo:pdbx_sifts_xref_db rdf:about="http://rdf.wwpdb.org/pdb/7JIA/pdbx_sifts_xref_db/A,1,21,1">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7JIA"/>
+            <PDBo:reference_to_struct_asym>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/struct_asym/">
+                <PDBo:referenced_by_pdbx_sifts_xref_db rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/pdbx_sifts_xref_db/A,1,21,1"/>
+              </rdf:Description>
+            </PDBo:reference_to_struct_asym>
+            <PDBo:pdbx_sifts_xref_db.asym_id>A</PDBo:pdbx_sifts_xref_db.asym_id>
+            <PDBo:pdbx_sifts_xref_db.entity_id>1</PDBo:pdbx_sifts_xref_db.entity_id>
+            <PDBo:pdbx_sifts_xref_db.seq_id>21</PDBo:pdbx_sifts_xref_db.seq_id>
+            <PDBo:pdbx_sifts_xref_db.seq_id_ordinal>1</PDBo:pdbx_sifts_xref_db.seq_id_ordinal>
+            <PDBo:pdbx_sifts_xref_db.mh_id>1</PDBo:pdbx_sifts_xref_db.mh_id>
+            <PDBo:pdbx_sifts_xref_db.mon_id>TRP</PDBo:pdbx_sifts_xref_db.mon_id>
+            <PDBo:pdbx_sifts_xref_db.mon_id_one_letter_code>W</PDBo:pdbx_sifts_xref_db.mon_id_one_letter_code>
+            <PDBo:pdbx_sifts_xref_db.observed>Y</PDBo:pdbx_sifts_xref_db.observed>
+            <PDBo:pdbx_sifts_xref_db.unp_acc>Q8QGN9</PDBo:pdbx_sifts_xref_db.unp_acc>
+            <PDBo:pdbx_sifts_xref_db.unp_instance_id>1</PDBo:pdbx_sifts_xref_db.unp_instance_id>
+            <PDBo:pdbx_sifts_xref_db.unp_num>816</PDBo:pdbx_sifts_xref_db.unp_num>
+            <PDBo:pdbx_sifts_xref_db.unp_res>W</PDBo:pdbx_sifts_xref_db.unp_res>
+            <PDBo:pdbx_sifts_xref_db.unp_segment_id>1</PDBo:pdbx_sifts_xref_db.unp_segment_id>
+            <PDBo:pdbx_sifts_xref_db.xref_db_acc>PF00396</PDBo:pdbx_sifts_xref_db.xref_db_acc>
+            <PDBo:pdbx_sifts_xref_db.xref_db_instance_id>1</PDBo:pdbx_sifts_xref_db.xref_db_instance_id>
+            <PDBo:pdbx_sifts_xref_db.xref_db_name>Pfam</PDBo:pdbx_sifts_xref_db.xref_db_name>
+            <PDBo:pdbx_sifts_xref_db.xref_db_segment_id>1</PDBo:pdbx_sifts_xref_db.xref_db_segment_id>
+          </PDBo:pdbx_sifts_xref_db>
+        </PDBo:has_pdbx_sifts_xref_db>
+        <PDBo:has_pdbx_sifts_xref_db>
+          <PDBo:pdbx_sifts_xref_db rdf:about="http://rdf.wwpdb.org/pdb/7JIA/pdbx_sifts_xref_db/A,1,22,1">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7JIA"/>
+            <PDBo:reference_to_struct_asym>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/struct_asym/">
+                <PDBo:referenced_by_pdbx_sifts_xref_db rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/pdbx_sifts_xref_db/A,1,22,1"/>
+              </rdf:Description>
+            </PDBo:reference_to_struct_asym>
+            <PDBo:pdbx_sifts_xref_db.asym_id>A</PDBo:pdbx_sifts_xref_db.asym_id>
+            <PDBo:pdbx_sifts_xref_db.entity_id>1</PDBo:pdbx_sifts_xref_db.entity_id>
+            <PDBo:pdbx_sifts_xref_db.seq_id>22</PDBo:pdbx_sifts_xref_db.seq_id>
+            <PDBo:pdbx_sifts_xref_db.seq_id_ordinal>1</PDBo:pdbx_sifts_xref_db.seq_id_ordinal>
+            <PDBo:pdbx_sifts_xref_db.mh_id>1</PDBo:pdbx_sifts_xref_db.mh_id>
+            <PDBo:pdbx_sifts_xref_db.mon_id>GLY</PDBo:pdbx_sifts_xref_db.mon_id>
+            <PDBo:pdbx_sifts_xref_db.mon_id_one_letter_code>G</PDBo:pdbx_sifts_xref_db.mon_id_one_letter_code>
+            <PDBo:pdbx_sifts_xref_db.observed>Y</PDBo:pdbx_sifts_xref_db.observed>
+            <PDBo:pdbx_sifts_xref_db.unp_acc>Q8QGN9</PDBo:pdbx_sifts_xref_db.unp_acc>
+            <PDBo:pdbx_sifts_xref_db.unp_instance_id>1</PDBo:pdbx_sifts_xref_db.unp_instance_id>
+            <PDBo:pdbx_sifts_xref_db.unp_num>817</PDBo:pdbx_sifts_xref_db.unp_num>
+            <PDBo:pdbx_sifts_xref_db.unp_res>G</PDBo:pdbx_sifts_xref_db.unp_res>
+            <PDBo:pdbx_sifts_xref_db.unp_segment_id>1</PDBo:pdbx_sifts_xref_db.unp_segment_id>
+            <PDBo:pdbx_sifts_xref_db.xref_db_acc>PF00396</PDBo:pdbx_sifts_xref_db.xref_db_acc>
+            <PDBo:pdbx_sifts_xref_db.xref_db_instance_id>1</PDBo:pdbx_sifts_xref_db.xref_db_instance_id>
+            <PDBo:pdbx_sifts_xref_db.xref_db_name>Pfam</PDBo:pdbx_sifts_xref_db.xref_db_name>
+            <PDBo:pdbx_sifts_xref_db.xref_db_segment_id>1</PDBo:pdbx_sifts_xref_db.xref_db_segment_id>
+          </PDBo:pdbx_sifts_xref_db>
+        </PDBo:has_pdbx_sifts_xref_db>
+        <PDBo:has_pdbx_sifts_xref_db>
+          <PDBo:pdbx_sifts_xref_db rdf:about="http://rdf.wwpdb.org/pdb/7JIA/pdbx_sifts_xref_db/A,1,23,1">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7JIA"/>
+            <PDBo:reference_to_struct_asym>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/struct_asym/">
+                <PDBo:referenced_by_pdbx_sifts_xref_db rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/pdbx_sifts_xref_db/A,1,23,1"/>
+              </rdf:Description>
+            </PDBo:reference_to_struct_asym>
+            <PDBo:pdbx_sifts_xref_db.asym_id>A</PDBo:pdbx_sifts_xref_db.asym_id>
+            <PDBo:pdbx_sifts_xref_db.entity_id>1</PDBo:pdbx_sifts_xref_db.entity_id>
+            <PDBo:pdbx_sifts_xref_db.seq_id>23</PDBo:pdbx_sifts_xref_db.seq_id>
+            <PDBo:pdbx_sifts_xref_db.seq_id_ordinal>1</PDBo:pdbx_sifts_xref_db.seq_id_ordinal>
+            <PDBo:pdbx_sifts_xref_db.mh_id>1</PDBo:pdbx_sifts_xref_db.mh_id>
+            <PDBo:pdbx_sifts_xref_db.mon_id>CYS</PDBo:pdbx_sifts_xref_db.mon_id>
+            <PDBo:pdbx_sifts_xref_db.mon_id_one_letter_code>C</PDBo:pdbx_sifts_xref_db.mon_id_one_letter_code>
+            <PDBo:pdbx_sifts_xref_db.observed>Y</PDBo:pdbx_sifts_xref_db.observed>
+            <PDBo:pdbx_sifts_xref_db.unp_acc>Q8QGN9</PDBo:pdbx_sifts_xref_db.unp_acc>
+            <PDBo:pdbx_sifts_xref_db.unp_instance_id>1</PDBo:pdbx_sifts_xref_db.unp_instance_id>
+            <PDBo:pdbx_sifts_xref_db.unp_num>818</PDBo:pdbx_sifts_xref_db.unp_num>
+            <PDBo:pdbx_sifts_xref_db.unp_res>C</PDBo:pdbx_sifts_xref_db.unp_res>
+            <PDBo:pdbx_sifts_xref_db.unp_segment_id>1</PDBo:pdbx_sifts_xref_db.unp_segment_id>
+            <PDBo:pdbx_sifts_xref_db.xref_db_acc>PF00396</PDBo:pdbx_sifts_xref_db.xref_db_acc>
+            <PDBo:pdbx_sifts_xref_db.xref_db_instance_id>1</PDBo:pdbx_sifts_xref_db.xref_db_instance_id>
+            <PDBo:pdbx_sifts_xref_db.xref_db_name>Pfam</PDBo:pdbx_sifts_xref_db.xref_db_name>
+            <PDBo:pdbx_sifts_xref_db.xref_db_segment_id>1</PDBo:pdbx_sifts_xref_db.xref_db_segment_id>
+          </PDBo:pdbx_sifts_xref_db>
+        </PDBo:has_pdbx_sifts_xref_db>
+        <PDBo:has_pdbx_sifts_xref_db>
+          <PDBo:pdbx_sifts_xref_db rdf:about="http://rdf.wwpdb.org/pdb/7JIA/pdbx_sifts_xref_db/A,1,24,1">
+            <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7JIA"/>
+            <PDBo:reference_to_struct_asym>
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7JIA/struct_asym/">
+                <PDBo:referenced_by_pdbx_sifts_xref_db rdf:resource="http://rdf.wwpdb.org/pdb/7JIA/pdbx_sifts_xref_db/A,1,24,1"/>
+              </rdf:Description>
+            </PDBo:reference_to_struct_asym>
+            <PDBo:pdbx_sifts_xref_db.asym_id>A</PDBo:pdbx_sifts_xref_db.asym_id>
+            <PDBo:pdbx_sifts_xref_db.entity_id>1</PDBo:pdbx_sifts_xref_db.entity_id>
+            <PDBo:pdbx_sifts_xref_db.seq_id>24</PDBo:pdbx_sifts_xref_db.seq_id>
+            <PDBo:pdbx_sifts_xref_db.seq_id_ordinal>1</PDBo:pdbx_sifts_xref_db.seq_id_ordinal>
+            <PDBo:pdbx_sifts_xref_db.mh_id>1</PDBo:pdbx_sifts_xref_db.mh_id>
+            <PDBo:pdbx_sifts_xref_db.mon_id>CYS</PDBo:pdbx_sifts_xref_db.mon_id>
+            <PDBo:pdbx_sifts_xref_db.mon_id_one_letter_code>C</PDBo:pdbx_sifts_xref_db.mon_id_one_letter_code>
+            <PDBo:pdbx_sifts_xref_db.observed>Y</PDBo:pdbx_sifts_xref_db.observed>
+            <PDBo:pdbx_sifts_xref_db.unp_acc>Q8QGN9</PDBo:pdbx_sifts_xref_db.unp_acc>
+            <PDBo:pdbx_sifts_xref_db.unp_instance_id>1</PDBo:pdbx_sifts_xref_db.unp_instance_id>
+            <PDBo:pdbx_sifts_xref_db.unp_num>819</PDBo:pdbx_sifts_xref_db.unp_num>
+            <PDBo:pdbx_sifts_xref_db.unp_res>C</PDBo:pdbx_sifts_xref_db.unp_res>
+            <PDBo:pdbx_sifts_xref_db.unp_segment_id>1</PDBo:pdbx_sifts_xref_db.unp_segment_id>
+            <PDBo:pdbx_sifts_xref_db.xref_db_acc>PF00396</PDBo:pdbx_sifts_xref_db.xref_db_acc>
+            <PDBo:pdbx_sifts_xref_db.xref_db_instance_id>1</PDBo:pdbx_sifts_xref_db.xref_db_instance_id>
+            <PDBo:pdbx_sifts_xref_db.xref_db_name>Pfam</PDBo:pdbx_sifts_xref_db.xref_db_name>
+            <PDBo:pdbx_sifts_xref_db.xref_db_segment_id>1</PDBo:pdbx_sifts_xref_db.xref_db_segment_id>
+          </PDBo:pdbx_sifts_xref_db>
+        </PDBo:has_pdbx_sifts_xref_db>
+      </PDBo:pdbx_sifts_xref_dbCategory>
+    </PDBo:has_pdbx_sifts_xref_dbCategory>
   </PDBo:datablock>
 </rdf:RDF>

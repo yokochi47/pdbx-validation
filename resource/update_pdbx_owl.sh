@@ -49,5 +49,9 @@ java -jar $SAXON -s:$PDBML_XSD -xsl:../$XSD2MERGE_PDBML_SIFTS_XSL -o:../$MERGE_P
 
 echo Generated: ../$MERGE_PDBML_SIFTS_XSL
 
+java -jar $SAXON -s:$PDBML_XSD -xsl:../$XSD2MERGE_PDBML_NEXTGEN_XSL -o:../$MERGE_PDBML_NEXTGEN_XSL || ( echo $0 aborted. ; exit 1 )
+
+echo Generated: ../$MERGE_PDBML_NEXTGEN_XSL
+
 rm -f mmcif_ddl.dic-parser.log
 

@@ -842,13 +842,331 @@
     </PDBx:struct_sheet_range>
   </PDBx:struct_sheet_rangeCategory>
   <PDBx:pdbx_sifts_unp_segmentsCategory>
-    <PDBx:pdbx_sifts_unp_segments entity_id="1" asym_id="A" unp_acc="Q8QGN9" segment_id="1" instance_id="1">
-      <PDBx:unp_start>796</PDBx:unp_start>
-      <PDBx:unp_end>819</PDBx:unp_end>
-      <PDBx:seq_id_start>1</PDBx:seq_id_start>
-      <PDBx:seq_id_end>24</PDBx:seq_id_end>
+    <PDBx:pdbx_sifts_unp_segments asym_id="A" entity_id="1" instance_id="1" segment_id="1" unp_acc="Q8QGN9">
       <PDBx:best_mapping>Y</PDBx:best_mapping>
-      <PDBx:identity>1.000</PDBx:identity>
+      <PDBx:identity>1.0</PDBx:identity>
+      <PDBx:seq_id_end>24</PDBx:seq_id_end>
+      <PDBx:seq_id_start>1</PDBx:seq_id_start>
+      <PDBx:unp_end>819</PDBx:unp_end>
+      <PDBx:unp_start>796</PDBx:unp_start>
     </PDBx:pdbx_sifts_unp_segments>
   </PDBx:pdbx_sifts_unp_segmentsCategory>
+  <PDBx:pdbx_sifts_xref_dbCategory>
+    <PDBx:pdbx_sifts_xref_db asym_id="A" entity_id="1" seq_id="1" seq_id_ordinal="1">
+      <PDBx:mh_id>1</PDBx:mh_id>
+      <PDBx:mon_id>CYS</PDBx:mon_id>
+      <PDBx:mon_id_one_letter_code>C</PDBx:mon_id_one_letter_code>
+      <PDBx:observed>Y</PDBx:observed>
+      <PDBx:unp_acc>Q8QGN9</PDBx:unp_acc>
+      <PDBx:unp_instance_id>1</PDBx:unp_instance_id>
+      <PDBx:unp_num>796</PDBx:unp_num>
+      <PDBx:unp_res>C</PDBx:unp_res>
+      <PDBx:unp_segment_id>1</PDBx:unp_segment_id>
+    </PDBx:pdbx_sifts_xref_db>
+    <PDBx:pdbx_sifts_xref_db asym_id="A" entity_id="1" seq_id="2" seq_id_ordinal="1">
+      <PDBx:mh_id>1</PDBx:mh_id>
+      <PDBx:mon_id>GLY</PDBx:mon_id>
+      <PDBx:mon_id_one_letter_code>G</PDBx:mon_id_one_letter_code>
+      <PDBx:observed>Y</PDBx:observed>
+      <PDBx:unp_acc>Q8QGN9</PDBx:unp_acc>
+      <PDBx:unp_instance_id>1</PDBx:unp_instance_id>
+      <PDBx:unp_num>797</PDBx:unp_num>
+      <PDBx:unp_res>G</PDBx:unp_res>
+      <PDBx:unp_segment_id>1</PDBx:unp_segment_id>
+    </PDBx:pdbx_sifts_xref_db>
+    <PDBx:pdbx_sifts_xref_db asym_id="A" entity_id="1" seq_id="3" seq_id_ordinal="1">
+      <PDBx:mh_id>1</PDBx:mh_id>
+      <PDBx:mon_id>GLY</PDBx:mon_id>
+      <PDBx:mon_id_one_letter_code>G</PDBx:mon_id_one_letter_code>
+      <PDBx:observed>Y</PDBx:observed>
+      <PDBx:unp_acc>Q8QGN9</PDBx:unp_acc>
+      <PDBx:unp_instance_id>1</PDBx:unp_instance_id>
+      <PDBx:unp_num>798</PDBx:unp_num>
+      <PDBx:unp_res>G</PDBx:unp_res>
+      <PDBx:unp_segment_id>1</PDBx:unp_segment_id>
+    </PDBx:pdbx_sifts_xref_db>
+    <PDBx:pdbx_sifts_xref_db asym_id="A" entity_id="1" seq_id="4" seq_id_ordinal="1">
+      <PDBx:mh_id>1</PDBx:mh_id>
+      <PDBx:mon_id>GLY</PDBx:mon_id>
+      <PDBx:mon_id_one_letter_code>G</PDBx:mon_id_one_letter_code>
+      <PDBx:observed>Y</PDBx:observed>
+      <PDBx:unp_acc>Q8QGN9</PDBx:unp_acc>
+      <PDBx:unp_instance_id>1</PDBx:unp_instance_id>
+      <PDBx:unp_num>799</PDBx:unp_num>
+      <PDBx:unp_res>G</PDBx:unp_res>
+      <PDBx:unp_segment_id>1</PDBx:unp_segment_id>
+    </PDBx:pdbx_sifts_xref_db>
+    <PDBx:pdbx_sifts_xref_db asym_id="A" entity_id="1" seq_id="5" seq_id_ordinal="1">
+      <PDBx:mh_id>1</PDBx:mh_id>
+      <PDBx:mon_id>PHE</PDBx:mon_id>
+      <PDBx:mon_id_one_letter_code>F</PDBx:mon_id_one_letter_code>
+      <PDBx:observed>Y</PDBx:observed>
+      <PDBx:unp_acc>Q8QGN9</PDBx:unp_acc>
+      <PDBx:unp_instance_id>1</PDBx:unp_instance_id>
+      <PDBx:unp_num>800</PDBx:unp_num>
+      <PDBx:unp_res>F</PDBx:unp_res>
+      <PDBx:unp_segment_id>1</PDBx:unp_segment_id>
+    </PDBx:pdbx_sifts_xref_db>
+    <PDBx:pdbx_sifts_xref_db asym_id="A" entity_id="1" seq_id="6" seq_id_ordinal="1">
+      <PDBx:mh_id>1</PDBx:mh_id>
+      <PDBx:mon_id>SER</PDBx:mon_id>
+      <PDBx:mon_id_one_letter_code>S</PDBx:mon_id_one_letter_code>
+      <PDBx:observed>Y</PDBx:observed>
+      <PDBx:unp_acc>Q8QGN9</PDBx:unp_acc>
+      <PDBx:unp_instance_id>1</PDBx:unp_instance_id>
+      <PDBx:unp_num>801</PDBx:unp_num>
+      <PDBx:unp_res>S</PDBx:unp_res>
+      <PDBx:unp_segment_id>1</PDBx:unp_segment_id>
+    </PDBx:pdbx_sifts_xref_db>
+    <PDBx:pdbx_sifts_xref_db asym_id="A" entity_id="1" seq_id="7" seq_id_ordinal="1">
+      <PDBx:mh_id>1</PDBx:mh_id>
+      <PDBx:mon_id>CYS</PDBx:mon_id>
+      <PDBx:mon_id_one_letter_code>C</PDBx:mon_id_one_letter_code>
+      <PDBx:observed>Y</PDBx:observed>
+      <PDBx:unp_acc>Q8QGN9</PDBx:unp_acc>
+      <PDBx:unp_instance_id>1</PDBx:unp_instance_id>
+      <PDBx:unp_num>802</PDBx:unp_num>
+      <PDBx:unp_res>C</PDBx:unp_res>
+      <PDBx:unp_segment_id>1</PDBx:unp_segment_id>
+    </PDBx:pdbx_sifts_xref_db>
+    <PDBx:pdbx_sifts_xref_db asym_id="A" entity_id="1" seq_id="8" seq_id_ordinal="1">
+      <PDBx:mh_id>1</PDBx:mh_id>
+      <PDBx:mon_id>HIS</PDBx:mon_id>
+      <PDBx:mon_id_one_letter_code>H</PDBx:mon_id_one_letter_code>
+      <PDBx:observed>Y</PDBx:observed>
+      <PDBx:unp_acc>Q8QGN9</PDBx:unp_acc>
+      <PDBx:unp_instance_id>1</PDBx:unp_instance_id>
+      <PDBx:unp_num>803</PDBx:unp_num>
+      <PDBx:unp_res>H</PDBx:unp_res>
+      <PDBx:unp_segment_id>1</PDBx:unp_segment_id>
+    </PDBx:pdbx_sifts_xref_db>
+    <PDBx:pdbx_sifts_xref_db asym_id="A" entity_id="1" seq_id="9" seq_id_ordinal="1">
+      <PDBx:mh_id>1</PDBx:mh_id>
+      <PDBx:mon_id>ASP</PDBx:mon_id>
+      <PDBx:mon_id_one_letter_code>D</PDBx:mon_id_one_letter_code>
+      <PDBx:observed>Y</PDBx:observed>
+      <PDBx:unp_acc>Q8QGN9</PDBx:unp_acc>
+      <PDBx:unp_instance_id>1</PDBx:unp_instance_id>
+      <PDBx:unp_num>804</PDBx:unp_num>
+      <PDBx:unp_res>D</PDBx:unp_res>
+      <PDBx:unp_segment_id>1</PDBx:unp_segment_id>
+    </PDBx:pdbx_sifts_xref_db>
+    <PDBx:pdbx_sifts_xref_db asym_id="A" entity_id="1" seq_id="10" seq_id_ordinal="1">
+      <PDBx:mh_id>1</PDBx:mh_id>
+      <PDBx:mon_id>GLY</PDBx:mon_id>
+      <PDBx:mon_id_one_letter_code>G</PDBx:mon_id_one_letter_code>
+      <PDBx:observed>Y</PDBx:observed>
+      <PDBx:unp_acc>Q8QGN9</PDBx:unp_acc>
+      <PDBx:unp_instance_id>1</PDBx:unp_instance_id>
+      <PDBx:unp_num>805</PDBx:unp_num>
+      <PDBx:unp_res>G</PDBx:unp_res>
+      <PDBx:unp_segment_id>1</PDBx:unp_segment_id>
+    </PDBx:pdbx_sifts_xref_db>
+    <PDBx:pdbx_sifts_xref_db asym_id="A" entity_id="1" seq_id="11" seq_id_ordinal="1">
+      <PDBx:mh_id>1</PDBx:mh_id>
+      <PDBx:mon_id>GLU</PDBx:mon_id>
+      <PDBx:mon_id_one_letter_code>E</PDBx:mon_id_one_letter_code>
+      <PDBx:observed>Y</PDBx:observed>
+      <PDBx:unp_acc>Q8QGN9</PDBx:unp_acc>
+      <PDBx:unp_instance_id>1</PDBx:unp_instance_id>
+      <PDBx:unp_num>806</PDBx:unp_num>
+      <PDBx:unp_res>E</PDBx:unp_res>
+      <PDBx:unp_segment_id>1</PDBx:unp_segment_id>
+    </PDBx:pdbx_sifts_xref_db>
+    <PDBx:pdbx_sifts_xref_db asym_id="A" entity_id="1" seq_id="12" seq_id_ordinal="1">
+      <PDBx:mh_id>1</PDBx:mh_id>
+      <PDBx:mon_id>THR</PDBx:mon_id>
+      <PDBx:mon_id_one_letter_code>T</PDBx:mon_id_one_letter_code>
+      <PDBx:observed>Y</PDBx:observed>
+      <PDBx:unp_acc>Q8QGN9</PDBx:unp_acc>
+      <PDBx:unp_instance_id>1</PDBx:unp_instance_id>
+      <PDBx:unp_num>807</PDBx:unp_num>
+      <PDBx:unp_res>T</PDBx:unp_res>
+      <PDBx:unp_segment_id>1</PDBx:unp_segment_id>
+      <PDBx:xref_db_acc>PF00396</PDBx:xref_db_acc>
+      <PDBx:xref_db_instance_id>1</PDBx:xref_db_instance_id>
+      <PDBx:xref_db_name>Pfam</PDBx:xref_db_name>
+      <PDBx:xref_db_segment_id>1</PDBx:xref_db_segment_id>
+    </PDBx:pdbx_sifts_xref_db>
+    <PDBx:pdbx_sifts_xref_db asym_id="A" entity_id="1" seq_id="13" seq_id_ordinal="1">
+      <PDBx:mh_id>1</PDBx:mh_id>
+      <PDBx:mon_id>CYS</PDBx:mon_id>
+      <PDBx:mon_id_one_letter_code>C</PDBx:mon_id_one_letter_code>
+      <PDBx:observed>Y</PDBx:observed>
+      <PDBx:unp_acc>Q8QGN9</PDBx:unp_acc>
+      <PDBx:unp_instance_id>1</PDBx:unp_instance_id>
+      <PDBx:unp_num>808</PDBx:unp_num>
+      <PDBx:unp_res>C</PDBx:unp_res>
+      <PDBx:unp_segment_id>1</PDBx:unp_segment_id>
+      <PDBx:xref_db_acc>PF00396</PDBx:xref_db_acc>
+      <PDBx:xref_db_instance_id>1</PDBx:xref_db_instance_id>
+      <PDBx:xref_db_name>Pfam</PDBx:xref_db_name>
+      <PDBx:xref_db_segment_id>1</PDBx:xref_db_segment_id>
+    </PDBx:pdbx_sifts_xref_db>
+    <PDBx:pdbx_sifts_xref_db asym_id="A" entity_id="1" seq_id="14" seq_id_ordinal="1">
+      <PDBx:mh_id>1</PDBx:mh_id>
+      <PDBx:mon_id>CYS</PDBx:mon_id>
+      <PDBx:mon_id_one_letter_code>C</PDBx:mon_id_one_letter_code>
+      <PDBx:observed>Y</PDBx:observed>
+      <PDBx:unp_acc>Q8QGN9</PDBx:unp_acc>
+      <PDBx:unp_instance_id>1</PDBx:unp_instance_id>
+      <PDBx:unp_num>809</PDBx:unp_num>
+      <PDBx:unp_res>C</PDBx:unp_res>
+      <PDBx:unp_segment_id>1</PDBx:unp_segment_id>
+      <PDBx:xref_db_acc>PF00396</PDBx:xref_db_acc>
+      <PDBx:xref_db_instance_id>1</PDBx:xref_db_instance_id>
+      <PDBx:xref_db_name>Pfam</PDBx:xref_db_name>
+      <PDBx:xref_db_segment_id>1</PDBx:xref_db_segment_id>
+    </PDBx:pdbx_sifts_xref_db>
+    <PDBx:pdbx_sifts_xref_db asym_id="A" entity_id="1" seq_id="15" seq_id_ordinal="1">
+      <PDBx:mh_id>1</PDBx:mh_id>
+      <PDBx:mon_id>PRO</PDBx:mon_id>
+      <PDBx:mon_id_one_letter_code>P</PDBx:mon_id_one_letter_code>
+      <PDBx:observed>Y</PDBx:observed>
+      <PDBx:unp_acc>Q8QGN9</PDBx:unp_acc>
+      <PDBx:unp_instance_id>1</PDBx:unp_instance_id>
+      <PDBx:unp_num>810</PDBx:unp_num>
+      <PDBx:unp_res>P</PDBx:unp_res>
+      <PDBx:unp_segment_id>1</PDBx:unp_segment_id>
+      <PDBx:xref_db_acc>PF00396</PDBx:xref_db_acc>
+      <PDBx:xref_db_instance_id>1</PDBx:xref_db_instance_id>
+      <PDBx:xref_db_name>Pfam</PDBx:xref_db_name>
+      <PDBx:xref_db_segment_id>1</PDBx:xref_db_segment_id>
+    </PDBx:pdbx_sifts_xref_db>
+    <PDBx:pdbx_sifts_xref_db asym_id="A" entity_id="1" seq_id="16" seq_id_ordinal="1">
+      <PDBx:mh_id>1</PDBx:mh_id>
+      <PDBx:mon_id>THR</PDBx:mon_id>
+      <PDBx:mon_id_one_letter_code>T</PDBx:mon_id_one_letter_code>
+      <PDBx:observed>Y</PDBx:observed>
+      <PDBx:unp_acc>Q8QGN9</PDBx:unp_acc>
+      <PDBx:unp_instance_id>1</PDBx:unp_instance_id>
+      <PDBx:unp_num>811</PDBx:unp_num>
+      <PDBx:unp_res>T</PDBx:unp_res>
+      <PDBx:unp_segment_id>1</PDBx:unp_segment_id>
+      <PDBx:xref_db_acc>PF00396</PDBx:xref_db_acc>
+      <PDBx:xref_db_instance_id>1</PDBx:xref_db_instance_id>
+      <PDBx:xref_db_name>Pfam</PDBx:xref_db_name>
+      <PDBx:xref_db_segment_id>1</PDBx:xref_db_segment_id>
+    </PDBx:pdbx_sifts_xref_db>
+    <PDBx:pdbx_sifts_xref_db asym_id="A" entity_id="1" seq_id="17" seq_id_ordinal="1">
+      <PDBx:mh_id>1</PDBx:mh_id>
+      <PDBx:mon_id>SER</PDBx:mon_id>
+      <PDBx:mon_id_one_letter_code>S</PDBx:mon_id_one_letter_code>
+      <PDBx:observed>Y</PDBx:observed>
+      <PDBx:unp_acc>Q8QGN9</PDBx:unp_acc>
+      <PDBx:unp_instance_id>1</PDBx:unp_instance_id>
+      <PDBx:unp_num>812</PDBx:unp_num>
+      <PDBx:unp_res>S</PDBx:unp_res>
+      <PDBx:unp_segment_id>1</PDBx:unp_segment_id>
+      <PDBx:xref_db_acc>PF00396</PDBx:xref_db_acc>
+      <PDBx:xref_db_instance_id>1</PDBx:xref_db_instance_id>
+      <PDBx:xref_db_name>Pfam</PDBx:xref_db_name>
+      <PDBx:xref_db_segment_id>1</PDBx:xref_db_segment_id>
+    </PDBx:pdbx_sifts_xref_db>
+    <PDBx:pdbx_sifts_xref_db asym_id="A" entity_id="1" seq_id="18" seq_id_ordinal="1">
+      <PDBx:mh_id>1</PDBx:mh_id>
+      <PDBx:mon_id>GLN</PDBx:mon_id>
+      <PDBx:mon_id_one_letter_code>Q</PDBx:mon_id_one_letter_code>
+      <PDBx:observed>Y</PDBx:observed>
+      <PDBx:unp_acc>Q8QGN9</PDBx:unp_acc>
+      <PDBx:unp_instance_id>1</PDBx:unp_instance_id>
+      <PDBx:unp_num>813</PDBx:unp_num>
+      <PDBx:unp_res>Q</PDBx:unp_res>
+      <PDBx:unp_segment_id>1</PDBx:unp_segment_id>
+      <PDBx:xref_db_acc>PF00396</PDBx:xref_db_acc>
+      <PDBx:xref_db_instance_id>1</PDBx:xref_db_instance_id>
+      <PDBx:xref_db_name>Pfam</PDBx:xref_db_name>
+      <PDBx:xref_db_segment_id>1</PDBx:xref_db_segment_id>
+    </PDBx:pdbx_sifts_xref_db>
+    <PDBx:pdbx_sifts_xref_db asym_id="A" entity_id="1" seq_id="19" seq_id_ordinal="1">
+      <PDBx:mh_id>1</PDBx:mh_id>
+      <PDBx:mon_id>THR</PDBx:mon_id>
+      <PDBx:mon_id_one_letter_code>T</PDBx:mon_id_one_letter_code>
+      <PDBx:observed>Y</PDBx:observed>
+      <PDBx:unp_acc>Q8QGN9</PDBx:unp_acc>
+      <PDBx:unp_instance_id>1</PDBx:unp_instance_id>
+      <PDBx:unp_num>814</PDBx:unp_num>
+      <PDBx:unp_res>T</PDBx:unp_res>
+      <PDBx:unp_segment_id>1</PDBx:unp_segment_id>
+      <PDBx:xref_db_acc>PF00396</PDBx:xref_db_acc>
+      <PDBx:xref_db_instance_id>1</PDBx:xref_db_instance_id>
+      <PDBx:xref_db_name>Pfam</PDBx:xref_db_name>
+      <PDBx:xref_db_segment_id>1</PDBx:xref_db_segment_id>
+    </PDBx:pdbx_sifts_xref_db>
+    <PDBx:pdbx_sifts_xref_db asym_id="A" entity_id="1" seq_id="20" seq_id_ordinal="1">
+      <PDBx:mh_id>1</PDBx:mh_id>
+      <PDBx:mon_id>THR</PDBx:mon_id>
+      <PDBx:mon_id_one_letter_code>T</PDBx:mon_id_one_letter_code>
+      <PDBx:observed>Y</PDBx:observed>
+      <PDBx:unp_acc>Q8QGN9</PDBx:unp_acc>
+      <PDBx:unp_instance_id>1</PDBx:unp_instance_id>
+      <PDBx:unp_num>815</PDBx:unp_num>
+      <PDBx:unp_res>T</PDBx:unp_res>
+      <PDBx:unp_segment_id>1</PDBx:unp_segment_id>
+      <PDBx:xref_db_acc>PF00396</PDBx:xref_db_acc>
+      <PDBx:xref_db_instance_id>1</PDBx:xref_db_instance_id>
+      <PDBx:xref_db_name>Pfam</PDBx:xref_db_name>
+      <PDBx:xref_db_segment_id>1</PDBx:xref_db_segment_id>
+    </PDBx:pdbx_sifts_xref_db>
+    <PDBx:pdbx_sifts_xref_db asym_id="A" entity_id="1" seq_id="21" seq_id_ordinal="1">
+      <PDBx:mh_id>1</PDBx:mh_id>
+      <PDBx:mon_id>TRP</PDBx:mon_id>
+      <PDBx:mon_id_one_letter_code>W</PDBx:mon_id_one_letter_code>
+      <PDBx:observed>Y</PDBx:observed>
+      <PDBx:unp_acc>Q8QGN9</PDBx:unp_acc>
+      <PDBx:unp_instance_id>1</PDBx:unp_instance_id>
+      <PDBx:unp_num>816</PDBx:unp_num>
+      <PDBx:unp_res>W</PDBx:unp_res>
+      <PDBx:unp_segment_id>1</PDBx:unp_segment_id>
+      <PDBx:xref_db_acc>PF00396</PDBx:xref_db_acc>
+      <PDBx:xref_db_instance_id>1</PDBx:xref_db_instance_id>
+      <PDBx:xref_db_name>Pfam</PDBx:xref_db_name>
+      <PDBx:xref_db_segment_id>1</PDBx:xref_db_segment_id>
+    </PDBx:pdbx_sifts_xref_db>
+    <PDBx:pdbx_sifts_xref_db asym_id="A" entity_id="1" seq_id="22" seq_id_ordinal="1">
+      <PDBx:mh_id>1</PDBx:mh_id>
+      <PDBx:mon_id>GLY</PDBx:mon_id>
+      <PDBx:mon_id_one_letter_code>G</PDBx:mon_id_one_letter_code>
+      <PDBx:observed>Y</PDBx:observed>
+      <PDBx:unp_acc>Q8QGN9</PDBx:unp_acc>
+      <PDBx:unp_instance_id>1</PDBx:unp_instance_id>
+      <PDBx:unp_num>817</PDBx:unp_num>
+      <PDBx:unp_res>G</PDBx:unp_res>
+      <PDBx:unp_segment_id>1</PDBx:unp_segment_id>
+      <PDBx:xref_db_acc>PF00396</PDBx:xref_db_acc>
+      <PDBx:xref_db_instance_id>1</PDBx:xref_db_instance_id>
+      <PDBx:xref_db_name>Pfam</PDBx:xref_db_name>
+      <PDBx:xref_db_segment_id>1</PDBx:xref_db_segment_id>
+    </PDBx:pdbx_sifts_xref_db>
+    <PDBx:pdbx_sifts_xref_db asym_id="A" entity_id="1" seq_id="23" seq_id_ordinal="1">
+      <PDBx:mh_id>1</PDBx:mh_id>
+      <PDBx:mon_id>CYS</PDBx:mon_id>
+      <PDBx:mon_id_one_letter_code>C</PDBx:mon_id_one_letter_code>
+      <PDBx:observed>Y</PDBx:observed>
+      <PDBx:unp_acc>Q8QGN9</PDBx:unp_acc>
+      <PDBx:unp_instance_id>1</PDBx:unp_instance_id>
+      <PDBx:unp_num>818</PDBx:unp_num>
+      <PDBx:unp_res>C</PDBx:unp_res>
+      <PDBx:unp_segment_id>1</PDBx:unp_segment_id>
+      <PDBx:xref_db_acc>PF00396</PDBx:xref_db_acc>
+      <PDBx:xref_db_instance_id>1</PDBx:xref_db_instance_id>
+      <PDBx:xref_db_name>Pfam</PDBx:xref_db_name>
+      <PDBx:xref_db_segment_id>1</PDBx:xref_db_segment_id>
+    </PDBx:pdbx_sifts_xref_db>
+    <PDBx:pdbx_sifts_xref_db asym_id="A" entity_id="1" seq_id="24" seq_id_ordinal="1">
+      <PDBx:mh_id>1</PDBx:mh_id>
+      <PDBx:mon_id>CYS</PDBx:mon_id>
+      <PDBx:mon_id_one_letter_code>C</PDBx:mon_id_one_letter_code>
+      <PDBx:observed>Y</PDBx:observed>
+      <PDBx:unp_acc>Q8QGN9</PDBx:unp_acc>
+      <PDBx:unp_instance_id>1</PDBx:unp_instance_id>
+      <PDBx:unp_num>819</PDBx:unp_num>
+      <PDBx:unp_res>C</PDBx:unp_res>
+      <PDBx:unp_segment_id>1</PDBx:unp_segment_id>
+      <PDBx:xref_db_acc>PF00396</PDBx:xref_db_acc>
+      <PDBx:xref_db_instance_id>1</PDBx:xref_db_instance_id>
+      <PDBx:xref_db_name>Pfam</PDBx:xref_db_name>
+      <PDBx:xref_db_segment_id>1</PDBx:xref_db_segment_id>
+    </PDBx:pdbx_sifts_xref_db>
+  </PDBx:pdbx_sifts_xref_dbCategory>
 </PDBx:datablock>

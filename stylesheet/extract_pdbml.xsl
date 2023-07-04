@@ -37,12 +37,12 @@
       <xsl:when test="$month_name='NOV'">11</xsl:when>
       <xsl:when test="$month_name='DEC'">12</xsl:when>
       <xsl:otherwise>
-        <xsl:call-template name="error_handler">
-          <xsl:with-param name="terminate">yes</xsl:with-param>
-          <xsl:with-param name="error_message">
+	<xsl:call-template name="error_handler">
+	  <xsl:with-param name="terminate">yes</xsl:with-param>
+	  <xsl:with-param name="error_message">
 Month name, <xsl:value-of select="$month_name"/>, is not listed in XSLT code.
-          </xsl:with-param>
-        </xsl:call-template>
+	  </xsl:with-param>
+	</xsl:call-template>
       </xsl:otherwise>
     </xsl:choose>
   </xsl:variable>
@@ -55,10 +55,10 @@ Month name, <xsl:value-of select="$month_name"/>, is not listed in XSLT code.
 
     <xsl:if test="$entry_id!=$pdb_id">
       <xsl:call-template name="error_handler">
-        <xsl:with-param name="terminate">yes</xsl:with-param>
-        <xsl:with-param name="error_message">
+	<xsl:with-param name="terminate">yes</xsl:with-param>
+	<xsl:with-param name="error_message">
 Unmatched entry ID in both documents (<xsl:value-of select="$entry_id"/> and <xsl:value-of select="$pdb_id"/>).
-        </xsl:with-param>
+	</xsl:with-param>
       </xsl:call-template>
     </xsl:if>
 
@@ -1763,17 +1763,17 @@ Unmatched entry ID in both documents (<xsl:value-of select="$entry_id"/> and <xs
     <xsl:element name="VRPTx:{local-name()}">
       <xsl:apply-templates select="@*|node()" mode="data-item"/>
       <xsl:choose>
-        <xsl:when test="local-name()='pdbx_database_status'">
-          <xsl:element name="VRPTx:validation_created_date"><xsl:value-of select="$validation_created_date"/></xsl:element>
-        </xsl:when>
-        <xsl:when test="local-name()='pdbx_nmr_ensemble'">
-          <xsl:element name="VRPTx:atom_consistency_flag">
-            <xsl:choose>
-              <xsl:when test="$nmr_models_consistency_flag='True'">Y</xsl:when>
-              <xsl:otherwise>N</xsl:otherwise>
-            </xsl:choose>
-          </xsl:element>
-        </xsl:when>
+	<xsl:when test="local-name()='pdbx_database_status'">
+	  <xsl:element name="VRPTx:validation_created_date"><xsl:value-of select="$validation_created_date"/></xsl:element>
+	</xsl:when>
+	<xsl:when test="local-name()='pdbx_nmr_ensemble'">
+	  <xsl:element name="VRPTx:atom_consistency_flag">
+	    <xsl:choose>
+	      <xsl:when test="$nmr_models_consistency_flag='True'">Y</xsl:when>
+	      <xsl:otherwise>N</xsl:otherwise>
+	    </xsl:choose>
+	  </xsl:element>
+	</xsl:when>
       </xsl:choose>
     </xsl:element>
   </xsl:template>
@@ -1804,16 +1804,16 @@ Unmatched entry ID in both documents (<xsl:value-of select="$entry_id"/> and <xs
     <xsl:param name="terminate">no</xsl:param>
     <xsl:choose>
       <xsl:when test="$terminate='yes'">
-        <xsl:message terminate="yes">
-          <xsl:text>ERROR in extract_pdbml.xsl: </xsl:text>
-          <xsl:value-of select="$error_message"/>
-        </xsl:message>
+	<xsl:message terminate="yes">
+	  <xsl:text>ERROR in extract_pdbml.xsl: </xsl:text>
+	  <xsl:value-of select="$error_message"/>
+	</xsl:message>
       </xsl:when>
       <xsl:otherwise>
-        <span style="font-weight: bold; color: red">
-          <xsl:text>ERROR: </xsl:text>
-          <xsl:value-of select="$error_message"/>
-        </span>
+	<span style="font-weight: bold; color: red">
+	  <xsl:text>ERROR: </xsl:text>
+	  <xsl:value-of select="$error_message"/>
+	</span>
       </xsl:otherwise>
     </xsl:choose>
   </xsl:template>

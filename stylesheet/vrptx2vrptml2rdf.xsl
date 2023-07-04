@@ -33,6 +33,8 @@
 
   <xsl2:template match="/xsd:schema">
     <xsl2:text disable-output-escaping="yes">
+  &lt;xsl:include href="url-encode.xsl"/&gt;
+
   &lt;xsl:param name="wurcs2glytoucan" select="'https://raw.githubusercontent.com/yokochi47/pdbx-validation/master/wurcs2glytoucan/glytoucan.xml'" required="no"/&gt;
   &lt;xsl:param name="glytoucan" select="document($wurcs2glytoucan)"/&gt;
 
@@ -109,20 +111,32 @@
   &lt;xsl:template match="/VRPTx:datablock/*"&gt;
     &lt;xsl:element name="VRPTo:has_{local-name(.)}"&gt;
       &lt;xsl:element name="VRPTo:{local-name(.)}"&gt;
-        &lt;xsl:attribute name="rdf:about"&gt;
-          &lt;xsl:value-of select="concat($base,'/',local-name(.))"/&gt;
-        &lt;/xsl:attribute&gt;
-        &lt;xsl:apply-templates&gt;
-          &lt;xsl:with-param name="base" select="$base"/&gt;
-        &lt;/xsl:apply-templates&gt;
+	&lt;xsl:attribute name="rdf:about"&gt;
+	  &lt;xsl:value-of select="concat($base,'/',local-name(.))"/&gt;
+	&lt;/xsl:attribute&gt;
+	&lt;xsl:apply-templates&gt;
+	  &lt;xsl:with-param name="base" select="$base"/&gt;
+	&lt;/xsl:apply-templates&gt;
       &lt;/xsl:element&gt;
     &lt;/xsl:element&gt;
   &lt;/xsl:template&gt;
 
-  &lt;!-- level 4 (PCData) --&gt;
+  &lt;!-- level 4 (element) --&gt;
   &lt;xsl:template match="/VRPTx:datablock/*/*/*[not(xsi:nil) and text()!='']"&gt;
     &lt;xsl:element name="VRPTo:{concat(local-name(parent::node()),'.',local-name())}"&gt;
-      &lt;xsl:value-of select="."/&gt;
+      &lt;xsl:choose&gt;
+	&lt;xsl:when test="contains(local-name(),'pdbx_seq_one_letter_code')"&gt;
+	  &lt;xsl:choose&gt;
+	    &lt;xsl:when test=".='?' or .='.'"/&gt;
+	    &lt;xsl:otherwise&gt;
+	      &lt;xsl:value-of select="translate(normalize-space(.),'&#xa;&#xd;','')"/&gt;
+	    &lt;/xsl:otherwise&gt;
+	  &lt;/xsl:choose&gt;
+	&lt;/xsl:when&gt;
+	&lt;xsl:otherwise&gt;
+	  &lt;xsl:value-of select="."/&gt;
+	&lt;/xsl:otherwise&gt;
+      &lt;/xsl:choose&gt;
     &lt;/xsl:element&gt;
   &lt;/xsl:template&gt;
 
@@ -178,40 +192,19 @@
     &lt;xsl:variable name="ec_norm"&gt;&lt;xsl:value-of select="normalize-space(text())"/&gt;&lt;/xsl:variable&gt;
     &lt;xsl:if test="$ec_norm!=''"&gt;
       &lt;xsl:variable name="ec_list"&gt;
-        &lt;xsl:call-template name="tokenize"&gt;
-          &lt;xsl:with-param name="string" select="$ec_norm"/&gt;
-          &lt;xsl:with-param name="delimiter"&gt;,&lt;/xsl:with-param&gt;
-        &lt;/xsl:call-template&gt;
+	&lt;xsl:call-template name="tokenize"&gt;
+	  &lt;xsl:with-param name="str" select="$ec_norm"/&gt;
+	  &lt;xsl:with-param name="substr"&gt;,&lt;/xsl:with-param&gt;
+	&lt;/xsl:call-template&gt;
       &lt;/xsl:variable&gt;
       &lt;xsl:for-each select="ext:node-set($ec_list)/token"&gt;
-        &lt;xsl:variable name="ec"&gt;&lt;xsl:value-of select="normalize-space(text())"/&gt;&lt;/xsl:variable&gt;
-        &lt;xsl:if test="string-length($ec)!=0"&gt;
-          &lt;VRPTo:link_to_enzyme rdf:resource="{$enzyme}{$ec}" rdfs:label="ec-code:{$ec}"/&gt;
-          &lt;rdfs:seeAlso rdf:resource="{$idorg}ec-code/{$ec}" rdfs:label="ec-code:{$ec}"/&gt;
-        &lt;/xsl:if&gt;
+	&lt;xsl:variable name="ec"&gt;&lt;xsl:value-of select="normalize-space(text())"/&gt;&lt;/xsl:variable&gt;
+	&lt;xsl:if test="string-length($ec)!=0"&gt;
+	  &lt;VRPTo:link_to_enzyme rdf:resource="{$enzyme}{$ec}" rdfs:label="ec-code:{$ec}"/&gt;
+	  &lt;rdfs:seeAlso rdf:resource="{$idorg}ec-code/{$ec}" rdfs:label="ec-code:{$ec}"/&gt;
+	&lt;/xsl:if&gt;
       &lt;/xsl:for-each&gt;
     &lt;/xsl:if&gt;
-  &lt;/xsl:template&gt;
-
-  &lt;xsl:template name="tokenize"&gt;
-    &lt;xsl:param name="string"/&gt;
-    &lt;xsl:param name="delimiter"/&gt;
-    &lt;xsl:choose&gt;
-      &lt;xsl:when test="$delimiter and contains($string,$delimiter)"&gt;
-        &lt;token&gt;
-          &lt;xsl:value-of select="substring-before($string,$delimiter)"/&gt;
-        &lt;/token&gt;
-        &lt;xsl:call-template name="tokenize"&gt;
-          &lt;xsl:with-param name="string" select="substring-after($string,$delimiter)"/&gt;
-          &lt;xsl:with-param name="delimiter" select="$delimiter"/&gt;
-        &lt;/xsl:call-template&gt;
-      &lt;/xsl:when&gt;
-      &lt;xsl:otherwise&gt;
-        &lt;token&gt;
-          &lt;xsl:value-of select="$string"/&gt;
-        &lt;/token&gt;
-      &lt;/xsl:otherwise&gt;
-    &lt;/xsl:choose&gt;
   &lt;/xsl:template&gt;
 
   &lt;xsl:template match="VRPTx:struct_ref/VRPTx:pdbx_db_accession[../VRPTx:db_name='UNP' and text()!='']" mode="linked"&gt;
@@ -303,8 +296,8 @@
     &lt;xsl:variable name="wurcs_id">&lt;xsl:value-of select="text()"/&gt;&lt;/xsl:variable&gt;
     &lt;xsl:for-each select="$glytoucan/catalog/wurcs[@id=$wurcs_id]"&gt;
       &lt;xsl:if test="text()!=''"&gt;
-        &lt;VRPTo:link_to_glycoinfo rdf:resource="{$glycoinfo}{text()}" rdfs:label="glytoucan:{text()}"/&gt;
-        &lt;rdfs:seeAlso rdf:resource="{$idorg}glytoucan/{text()}" rdfs:label="glytoucan:{text()}"/&gt;
+	&lt;VRPTo:link_to_glycoinfo rdf:resource="{$glycoinfo}{text()}" rdfs:label="glytoucan:{text()}"/&gt;
+	&lt;rdfs:seeAlso rdf:resource="{$idorg}glytoucan/{text()}" rdfs:label="glytoucan:{text()}"/&gt;
       &lt;/xsl:if&gt;
     &lt;/xsl:for-each&gt;
   &lt;/xsl:template&gt;
@@ -336,7 +329,7 @@
     &lt;rdfs:seeAlso rdf:resource="{$idorg}sasbdb/{.}" rdfs:label="sasbdb:{.}"/&gt;
   &lt;/xsl:template&gt;
 
-  &lt;!-- level-3 templates follow --&gt;</xsl2:text>
+  &lt;!-- level 3 templates follow --&gt;</xsl2:text>
     <xsl2:call-template name="key_category"/>
     <xsl2:text disable-output-escaping="yes">
   &lt;xsl:template match="*[@xsi:nil='true']"/&gt;
@@ -351,11 +344,26 @@
   </xsl2:template>
 
   <xsl2:template name="concat_fields">
-    <xsl2:param name="selector"/><xsl2:param name="field"/>{translate(<xsl2:value-of select="$field/@xpath"/>,' ^','_')}<xsl2:if test="$field/following-sibling::node()[1]/@xpath!=''"><xsl2:text>,</xsl2:text><xsl2:call-template name="concat_fields"><xsl2:with-param name="selector" select="$selector"/><xsl2:with-param name="field" select="$field/following-sibling::node()[1]"/></xsl2:call-template></xsl2:if>
+    <xsl2:param name="selector"/><xsl2:param name="field"/>{$<xsl2:value-of select="concat(translate($field/@xpath,':/@','_'),'_encoded')"/>}<xsl2:if test="$field/following-sibling::node()[1]/@xpath!=''"><xsl2:text>,</xsl2:text><xsl2:call-template name="concat_fields"><xsl2:with-param name="selector" select="$selector"/><xsl2:with-param name="field" select="$field/following-sibling::node()[1]"/></xsl2:call-template></xsl2:if>
+  </xsl2:template>
+
+  <xsl2:template name="encode_fields">
+    <xsl2:param name="selector"/><xsl2:param name="field"/>
+      <xsl2:text disable-output-escaping="yes">
+      &lt;xsl:variable name="</xsl2:text><xsl2:value-of select="concat(translate($field/@xpath,':/@','_'),'_truncated')"/><xsl2:text disable-output-escaping="yes">"&gt;&lt;xsl:choose&gt;&lt;xsl:when test="string-length(</xsl2:text><xsl2:value-of select="$field/@xpath"/><xsl2:text disable-output-escaping="yes">)&amp;lt;64"&gt;&lt;xsl:value-of select="</xsl2:text><xsl2:value-of select="$field/@xpath"/><xsl2:text disable-output-escaping="yes">"/&gt;&lt;/xsl:when&gt;&lt;xsl:when test="contains(</xsl2:text><xsl2:value-of select="$field/@xpath"/><xsl2:text disable-output-escaping="yes">,',')"&gt;&lt;xsl:call-template name="substring-before-last"&gt;&lt;xsl:with-param name="str" select="substring(</xsl2:text><xsl2:value-of select="$field/@xpath"/><xsl2:text disable-output-escaping="yes">,1,64)"/&gt;&lt;xsl:with-param name="substr"&gt;,&lt;/xsl:with-param&gt;&lt;/xsl:call-template&gt;&lt;/xsl:when&gt;&lt;xsl:otherwise&gt;&lt;xsl:value-of select="substring(</xsl2:text><xsl2:value-of select="$field/@xpath"/><xsl2:text disable-output-escaping="yes">,1,64)"/&gt;&lt;/xsl:otherwise&gt;&lt;/xsl:choose&gt;&lt;/xsl:variable&gt;
+      &lt;xsl:variable name="</xsl2:text><xsl2:value-of select="concat(translate($field/@xpath,':/@','_'),'_encoded')"/><xsl2:text disable-output-escaping="yes">"&gt;&lt;xsl:call-template name="url-encode"&gt;&lt;xsl:with-param name="str" select="translate(normalize-space($</xsl2:text><xsl2:value-of select="concat(translate($field/@xpath,':/@','_'),'_truncated')"/><xsl2:text disable-output-escaping="yes">),' ^','__')"/&gt;&lt;/xsl:call-template&gt;&lt;/xsl:variable&gt;</xsl2:text><xsl2:if test="$field/following-sibling::node()[1]/@xpath!=''"><xsl2:call-template name="encode_fields"><xsl2:with-param name="selector" select="$selector"/><xsl2:with-param name="field" select="$field/following-sibling::node()[1]"/></xsl2:call-template></xsl2:if>
+  </xsl2:template>
+
+  <xsl2:template name="encode_fields2">
+    <xsl2:param name="selector"/><xsl2:param name="field"/>
+      <xsl2:if test="not(starts-with($field/@xpath,'@'))">
+	<xsl2:text disable-output-escaping="yes">
+      &lt;xsl:variable name="</xsl2:text><xsl2:value-of select="concat(translate($field/@xpath,':/@','_'),'_truncated')"/><xsl2:text disable-output-escaping="yes">"&gt;&lt;xsl:choose&gt;&lt;xsl:when test="string-length(</xsl2:text><xsl2:value-of select="$field/@xpath"/><xsl2:text disable-output-escaping="yes">)&amp;lt;64"&gt;&lt;xsl:value-of select="</xsl2:text><xsl2:value-of select="$field/@xpath"/><xsl2:text disable-output-escaping="yes">"/&gt;&lt;/xsl:when&gt;&lt;xsl:when test="contains(</xsl2:text><xsl2:value-of select="$field/@xpath"/><xsl2:text disable-output-escaping="yes">,',')"&gt;&lt;xsl:call-template name="substring-before-last"&gt;&lt;xsl:with-param name="str" select="substring(</xsl2:text><xsl2:value-of select="$field/@xpath"/><xsl2:text disable-output-escaping="yes">,1,64)"/&gt;&lt;xsl:with-param name="substr"&gt;,&lt;/xsl:with-param&gt;&lt;/xsl:call-template&gt;&lt;/xsl:when&gt;&lt;xsl:otherwise&gt;&lt;xsl:value-of select="substring(</xsl2:text><xsl2:value-of select="$field/@xpath"/><xsl2:text disable-output-escaping="yes">,1,64)"/&gt;&lt;/xsl:otherwise&gt;&lt;/xsl:choose&gt;&lt;/xsl:variable&gt;
+      &lt;xsl:variable name="</xsl2:text><xsl2:value-of select="concat(translate($field/@xpath,':/@','_'),'_encoded')"/><xsl2:text disable-output-escaping="yes">"&gt;&lt;xsl:call-template name="url-encode"&gt;&lt;xsl:with-param name="str" select="translate(normalize-space($</xsl2:text><xsl2:value-of select="concat(translate($field/@xpath,':/@','_'),'_truncated')"/><xsl2:text disable-output-escaping="yes">),' ^','__')"/&gt;&lt;/xsl:call-template&gt;&lt;/xsl:variable&gt;</xsl2:text></xsl2:if><xsl2:if test="$field/following-sibling::node()[1]/@xpath!=''"><xsl2:call-template name="encode_fields2"><xsl2:with-param name="selector" select="$selector"/><xsl2:with-param name="field" select="$field/following-sibling::node()[1]"/></xsl2:call-template></xsl2:if>
   </xsl2:template>
 
   <xsl2:template name="concat_fields2">
-    <xsl2:param name="field1"/><xsl2:param name="selector2"/><xsl2:param name="field2"/>{translate(<xsl2:value-of select="$field1/@xpath"/>,' ^','_')}<xsl2:if test="$field1/following-sibling::node()[1]/@xpath!=''"><xsl2:text>,</xsl2:text><xsl2:call-template name="concat_fields2"><xsl2:with-param name="field1" select="$field1/following-sibling::node()[1]"/><xsl2:with-param name="selector2" select="$selector2"/><xsl2:with-param name="field2" select="$field2/following-sibling::node()[1]"/></xsl2:call-template></xsl2:if>
+    <xsl2:param name="field1"/><xsl2:param name="selector2"/><xsl2:param name="field2"/><xsl2:if test="not(starts-with($field1/@xpath,'@'))">{translate(<xsl2:value-of select="$field1/@xpath"/>,' ^','__')}</xsl2:if><xsl2:if test="$field1/following-sibling::node()[1]/@xpath!=''"><xsl2:text>,</xsl2:text><xsl2:call-template name="concat_fields2"><xsl2:with-param name="field1" select="$field1/following-sibling::node()[1]"/><xsl2:with-param name="selector2" select="$selector2"/><xsl2:with-param name="field2" select="$field2/following-sibling::node()[1]"/></xsl2:call-template></xsl2:if>
   </xsl2:template>
 
   <xsl2:template name="key_category">
@@ -385,6 +393,9 @@
 	<xsl2:with-param name="field" select="xsd:field[1]"/></xsl2:call-template></xsl2:variable>
     <xsl2:text disable-output-escaping="yes">
   &lt;xsl:template match=&quot;</xsl2:text><xsl2:value-of select="$docpath"/><xsl2:text disable-output-escaping="yes">&quot;&gt;</xsl2:text>
+    <xsl2:call-template name="encode_fields">
+      <xsl2:with-param name="selector" select="$name"/>
+      <xsl2:with-param name="field" select="xsd:field[1]"/></xsl2:call-template>
     <xsl2:text disable-output-escaping="yes">
       &lt;</xsl2:text>VRPTo:has_<xsl2:value-of select='$name'/><xsl2:text disable-output-escaping="yes">&gt;</xsl2:text>
     <xsl2:text disable-output-escaping="yes">
@@ -425,17 +436,20 @@
 	<xsl2:variable name="check"><xsl2:call-template name="check_fields"><xsl2:with-param name="field" select="xsd:field[1]"/></xsl2:call-template></xsl2:variable>
 	<xsl2:text disable-output-escaping="yes">
       &lt;xsl:if test=</xsl2:text>"<xsl2:value-of select='$check'/>"<xsl2:text disable-output-escaping='yes'>&gt;
-        &lt;owl:sameAs&gt;</xsl2:text>
+	&lt;owl:sameAs&gt;</xsl2:text>
+	<xsl2:call-template name="encode_fields2">
+	  <xsl2:with-param name="selector" select="$name"/>
+	  <xsl2:with-param name="field" select="xsd:field[1]"/></xsl2:call-template>
 	<xsl2:text disable-output-escaping="yes">
-          &lt;</xsl2:text>VRPTo:<xsl2:value-of select="$name"/> rdf:about="{$base}/<xsl2:value-of select='$resource'/>"<xsl2:text disable-output-escaping="yes">&gt;</xsl2:text>
+	  &lt;</xsl2:text>VRPTo:<xsl2:value-of select="$name"/> rdf:about="{$base}/<xsl2:value-of select='$resource'/>"<xsl2:text disable-output-escaping="yes">&gt;</xsl2:text>
 	<xsl2:text disable-output-escaping="yes">
-            &lt;rdfs:label&gt;</xsl2:text>
+	    &lt;rdfs:label&gt;</xsl2:text>
 	<xsl2:value-of select="@name"/>
 	<xsl2:text disable-output-escaping="yes">&lt;/rdfs:label&gt;</xsl2:text>
 	<xsl2:text disable-output-escaping="yes">
-          &lt;</xsl2:text>/VRPTo:<xsl2:value-of select="$name"/><xsl2:text disable-output-escaping="yes">&gt;</xsl2:text>
+	  &lt;</xsl2:text>/VRPTo:<xsl2:value-of select="$name"/><xsl2:text disable-output-escaping="yes">&gt;</xsl2:text>
 	<xsl2:text disable-output-escaping="yes">
-        &lt;/owl:sameAs&gt;</xsl2:text>
+	&lt;/owl:sameAs&gt;</xsl2:text>
 	<xsl2:text disable-output-escaping="yes">
       &lt;/xsl:if&gt;</xsl2:text>
       </xsl2:if>
@@ -455,16 +469,16 @@
 	    <xsl2:with-param name="field1" select="$refering/xsd:field[1]"/>
 	    <xsl2:with-param name="selector2" select="substring-after($refer/xsd:selector/@xpath,'/')"/>
 	    <xsl2:with-param name="field2" select="$refer/xsd:field[1]"/></xsl2:call-template></xsl2:variable>
-        <xsl2:variable name="check"><xsl2:call-template name="check_fields"><xsl2:with-param name="field" select="$refering/xsd:field[1]"/></xsl2:call-template></xsl2:variable>
+	<xsl2:variable name="check"><xsl2:call-template name="check_fields"><xsl2:with-param name="field" select="$refering/xsd:field[1]"/></xsl2:call-template></xsl2:variable>
 	<xsl2:text disable-output-escaping="yes">
       &lt;xsl:if test=</xsl2:text>"<xsl2:value-of select='$check'/>"<xsl2:text disable-output-escaping='yes'>&gt;
-        &lt;</xsl2:text>VRPTo:reference_to_<xsl2:value-of select="$refname"/><xsl2:text disable-output-escaping="yes">&gt;
-	  &lt;</xsl2:text>rdf:Description  rdf:about="{$base}/<xsl2:value-of select='$resource'/>"<xsl2:text disable-output-escaping="yes">&gt;
+	&lt;</xsl2:text>VRPTo:reference_to_<xsl2:value-of select="$refname"/><xsl2:text disable-output-escaping="yes">&gt;
+	  &lt;</xsl2:text>rdf:Description rdf:about="{$base}/<xsl2:value-of select='$resource'/>"<xsl2:text disable-output-escaping="yes">&gt;
 	    &lt;</xsl2:text>VRPTo:referenced_by_<xsl2:value-of select="$name"/> rdf:resource="{$base}/<xsl2:value-of select='$pathname'/>"<xsl2:text disable-output-escaping="yes">/&gt;
 	  &lt;</xsl2:text>/rdf:Description<xsl2:text disable-output-escaping="yes">&gt;
-        &lt;</xsl2:text>/VRPTo:reference_to_<xsl2:value-of select="$refname"/><xsl2:text disable-output-escaping="yes">&gt;</xsl2:text>
+	&lt;</xsl2:text>/VRPTo:reference_to_<xsl2:value-of select="$refname"/><xsl2:text disable-output-escaping="yes">&gt;</xsl2:text>
 	<xsl2:text disable-output-escaping="yes">
-        &lt;!-- </xsl2:text>
+	&lt;!-- </xsl2:text>
 	<xsl2:value-of select="@name"/>
 	<xsl2:text disable-output-escaping="yes"> --&gt;</xsl2:text>
 	<xsl2:text disable-output-escaping="yes">

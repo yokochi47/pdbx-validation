@@ -42,33 +42,33 @@
       <owl:Ontology rdf:about="http://rdf.wwpdb.org/schema/pdbx-validation-v4.owl">
 	<rdfs:label>VRPT/OWL</rdfs:label>
 	<rdfs:comment xml:lang="en">The OWL ontology for VRPT/RDF, generated from the VRPT PDBML Schema.</rdfs:comment>
-        <rdfs:seeAlso rdf:resource="http://rdf.wwpdb.org/schema/pdbx-validation-v4.dic"/>
-        <rdfs:seeAlso rdf:resource="http://rdf.wwpdb.org/schema/pdbx-validation-v4.xsd"/>
-        <owl:versionIRI rdf:resource="http://rdf.wwpdb.org/schema/pdbx-validation-v4.owl/4.373"/>
+	<rdfs:seeAlso rdf:resource="http://rdf.wwpdb.org/schema/pdbx-validation-v4.dic"/>
+	<rdfs:seeAlso rdf:resource="http://rdf.wwpdb.org/schema/pdbx-validation-v4.xsd"/>
+	<owl:versionIRI rdf:resource="http://rdf.wwpdb.org/schema/pdbx-validation-v4.owl/4.373"/>
       </owl:Ontology>
 
       <owl:Class rdf:ID="Category">
 	<rdfs:label>Category</rdfs:label>
 	<rdfs:comment xml:lang="en">Abstract class for category holders.</rdfs:comment>
-        <owl:sameAs rdf:resource="PDBo:Category"/>
+	<owl:sameAs rdf:resource="PDBo:Category"/>
       </owl:Class>
 
       <owl:Class rdf:ID="CategoryElement">
 	<rdfs:label>CategoryElement</rdfs:label>
 	<rdfs:comment xml:lang="en">Abstract class for category elements.</rdfs:comment>
-        <owl:sameAs rdf:resource="PDBo:CategoryElement"/>
+	<owl:sameAs rdf:resource="PDBo:CategoryElement"/>
       </owl:Class>
 
       <owl:DatatypeProperty rdf:ID="categoryItem">
 	<rdfs:label>categoryItem</rdfs:label>
 	<rdfs:comment xml:lang="en">Abstract datatype property for category items.</rdfs:comment>
 	<rdfs:domain rdf:resource="#CategoryElement"/>
-        <owl:sameAs rdf:resource="PDBo:categoryItem"/>
+	<owl:sameAs rdf:resource="PDBo:categoryItem"/>
       </owl:DatatypeProperty>
 
       <owl:ObjectProperty rdf:ID="crossReference">
 	<rdfs:comment xml:lang="en">Abstract property for cross-references within VRPT.</rdfs:comment>
-        <owl:equivalentProperty rdf:resource="PDBo:crossReference"/>
+	<owl:equivalentProperty rdf:resource="PDBo:crossReference"/>
       </owl:ObjectProperty>
 
       <owl:ObjectProperty rdf:ID="reference_to">
@@ -77,7 +77,7 @@
 	<rdfs:subPropertyOf rdf:resource="dcterms:references"/>
 	<rdfs:domain rdf:resource="#CategoryElement"/>
 	<rdfs:range rdf:resource="#CategoryElement"/>
-        <owl:equivalentProperty rdf:resource="PDBo:reference_to"/>
+	<owl:equivalentProperty rdf:resource="PDBo:reference_to"/>
       </owl:ObjectProperty>
 
       <owl:ObjectProperty rdf:ID="referenced_by">
@@ -86,307 +86,307 @@
 	<rdfs:subPropertyOf rdf:resource="dcterms:isReferencedBy"/>
 	<rdfs:domain rdf:resource="#CategoryElement"/>
 	<rdfs:range rdf:resource="#CategoryElement"/>
-        <owl:equivalentProperty rdf:resource="PDBo:referenced_by"/>
+	<owl:equivalentProperty rdf:resource="PDBo:referenced_by"/>
       </owl:ObjectProperty>
 
       <owl:ObjectProperty rdf:ID="link_to">
 	<rdfs:subPropertyOf rdf:resource="#crossReference"/>
 	<rdfs:comment xml:lang="en">Abstract property for external links.</rdfs:comment>
-        <owl:sameAs rdf:resource="PDBo:link_to"/>
+	<owl:sameAs rdf:resource="PDBo:link_to"/>
       </owl:ObjectProperty>
 
       <owl:ObjectProperty rdf:ID="rdf_link_to">
 	<rdfs:subPropertyOf rdf:resource="#link_to"/>
 	<rdfs:comment xml:lang="en">Abstract property for external RDF links.</rdfs:comment>
-        <owl:sameAs rdf:resource="PDBo:rdf_link_to"/>
+	<owl:sameAs rdf:resource="PDBo:rdf_link_to"/>
       </owl:ObjectProperty>
 
       <owl:ObjectProperty rdf:ID="html_link_to">
 	<rdfs:subPropertyOf rdf:resource="#link_to"/>
 	<rdfs:comment xml:lang="en">Abstract property for external HTML links.</rdfs:comment>
-        <owl:sameAs rdf:resource="PDBo:html_link_to"/>
+	<owl:sameAs rdf:resource="PDBo:html_link_to"/>
       </owl:ObjectProperty>
 
       <owl:ObjectProperty rdf:ID="link_to_pdbml">
 	<rdfs:subPropertyOf rdf:resource="#html_link_to"/>
 	<rdfs:comment xml:lang="en">link to PDBML-all file.</rdfs:comment>
-        <owl:sameAs rdf:resource="PDBo:link_to_pdbml"/>
+	<owl:sameAs rdf:resource="PDBo:link_to_pdbml"/>
       </owl:ObjectProperty>
 
       <owl:ObjectProperty rdf:ID="link_to_pdbml_noatom">
 	<rdfs:subPropertyOf rdf:resource="#html_link_to"/>
 	<rdfs:comment xml:lang="en">link to PDBML-noatom file.</rdfs:comment>
-        <owl:sameAs rdf:resource="PDBo:link_to_pdbml_noatom"/>
+	<owl:sameAs rdf:resource="PDBo:link_to_pdbml_noatom"/>
       </owl:ObjectProperty>
 
       <owl:ObjectProperty rdf:ID="link_to_pdbml_extatom">
 	<rdfs:subPropertyOf rdf:resource="#html_link_to"/>
 	<rdfs:comment xml:lang="en">link to PDBML-extatom file.</rdfs:comment>
-        <owl:sameAs rdf:resource="PDBo:link_to_pdbml_extatom"/>
+	<owl:sameAs rdf:resource="PDBo:link_to_pdbml_extatom"/>
       </owl:ObjectProperty>
 
       <owl:ObjectProperty rdf:ID="link_to_xml_vrpt">
-        <rdfs:subPropertyOf rdf:resource="#html_link_to"/>
-        <rdfs:comment xml:lang="en">link to wwPDB validation report (XML).</rdfs:comment>
+	<rdfs:subPropertyOf rdf:resource="#html_link_to"/>
+	<rdfs:comment xml:lang="en">link to wwPDB validation report (XML).</rdfs:comment>
       </owl:ObjectProperty>
 
       <owl:ObjectProperty rdf:ID="link_to_pdbml_vrpt">
-        <rdfs:subPropertyOf rdf:resource="#html_link_to"/>
-        <rdfs:comment xml:lang="en">link to PDBML formatted validation report (full).</rdfs:comment>
+	<rdfs:subPropertyOf rdf:resource="#html_link_to"/>
+	<rdfs:comment xml:lang="en">link to PDBML formatted validation report (full).</rdfs:comment>
       </owl:ObjectProperty>
 
       <owl:ObjectProperty rdf:ID="link_to_pdbml_vrpt_alt">
-        <rdfs:subPropertyOf rdf:resource="#html_link_to"/>
-        <rdfs:comment xml:lang="en">link to PDBML formatted validation report (alternative).</rdfs:comment>
+	<rdfs:subPropertyOf rdf:resource="#html_link_to"/>
+	<rdfs:comment xml:lang="en">link to PDBML formatted validation report (alternative).</rdfs:comment>
       </owl:ObjectProperty>
 
       <owl:ObjectProperty rdf:ID="link_to_pdb_src">
-        <rdfs:subPropertyOf rdf:resource="#rdf_link_to"/>
-        <rdfs:comment xml:lang="en">link to associated PDB entry.</rdfs:comment>
-        <owl:sameAs rdf:resource="PDBo:link_to_pdb"/>
+	<rdfs:subPropertyOf rdf:resource="#rdf_link_to"/>
+	<rdfs:comment xml:lang="en">link to associated PDB entry.</rdfs:comment>
+	<owl:sameAs rdf:resource="PDBo:link_to_pdb"/>
       </owl:ObjectProperty>
 
       <owl:ObjectProperty rdf:ID="link_to_pdb">
 	<rdfs:subPropertyOf rdf:resource="#rdf_link_to"/>
 	<rdfs:comment xml:lang="en">link to related PDB entry.</rdfs:comment>
-        <owl:sameAs rdf:resource="PDBo:link_to_pdb"/>
+	<owl:sameAs rdf:resource="PDBo:link_to_pdb"/>
       </owl:ObjectProperty>
 
       <owl:ObjectProperty rdf:ID="link_to_pdb_split">
 	<rdfs:subPropertyOf rdf:resource="#link_to_pdb"/>
 	<rdfs:comment xml:lang="en">link to split PDB entry.</rdfs:comment>
-        <owl:sameAs rdf:resource="PDBo:link_to_split"/>
+	<owl:sameAs rdf:resource="PDBo:link_to_split"/>
       </owl:ObjectProperty>
 
       <owl:ObjectProperty rdf:ID="link_to_bmrb">
-        <rdfs:subPropertyOf rdf:resource="#rdf_link_to"/>
-        <rdfs:comment xml:lang="en">link to associated BMRB entry.</rdfs:comment>
+	<rdfs:subPropertyOf rdf:resource="#rdf_link_to"/>
+	<rdfs:comment xml:lang="en">link to associated BMRB entry.</rdfs:comment>
       </owl:ObjectProperty>
 
       <owl:ObjectProperty rdf:ID="link_to_emdb">
-        <rdfs:subPropertyOf rdf:resource="#html_link_to"/>
-        <rdfs:comment xml:lang="en">link to associated EMDB entry.</rdfs:comment>
+	<rdfs:subPropertyOf rdf:resource="#html_link_to"/>
+	<rdfs:comment xml:lang="en">link to associated EMDB entry.</rdfs:comment>
       </owl:ObjectProperty>
 
       <owl:ObjectProperty rdf:ID="link_to_sasbdb">
-        <rdfs:subPropertyOf rdf:resource="#html_link_to"/>
-        <rdfs:comment xml:lang="en">link to associated SASBDB entry.</rdfs:comment>
+	<rdfs:subPropertyOf rdf:resource="#html_link_to"/>
+	<rdfs:comment xml:lang="en">link to associated SASBDB entry.</rdfs:comment>
       </owl:ObjectProperty>
 
       <owl:ObjectProperty rdf:ID="link_to_pubmed">
 	<rdfs:subPropertyOf rdf:resource="#html_link_to"/>
 	<rdfs:comment xml:lang="en">external link to PubMed.</rdfs:comment>
-        <owl:sameAs rdf:resource="PDBo:link_to_pubmed"/>
+	<owl:sameAs rdf:resource="PDBo:link_to_pubmed"/>
       </owl:ObjectProperty>
 
       <owl:ObjectProperty rdf:ID="link_to_sequence_db">
 	<rdfs:subPropertyOf rdf:resource="#link_to"/>
 	<rdfs:comment xml:lang="en">external link to sequence databases.</rdfs:comment>
-        <owl:sameAs rdf:resource="PDBo:link_to_sequence_db"/>
+	<owl:sameAs rdf:resource="PDBo:link_to_sequence_db"/>
       </owl:ObjectProperty>
 
       <owl:ObjectProperty rdf:ID="link_to_uniprot">
 	<rdfs:subPropertyOf rdf:resource="#link_to_sequence_db"/>
 	<rdfs:subPropertyOf rdf:resource="#rdf_link_to"/>
 	<rdfs:comment xml:lang="en">external link to UniProt.</rdfs:comment>
-        <owl:sameAs rdf:resource="PDBo:link_to_uniprot"/>
+	<owl:sameAs rdf:resource="PDBo:link_to_uniprot"/>
       </owl:ObjectProperty>
 
       <owl:ObjectProperty rdf:ID="link_to_genbank">
 	<rdfs:subPropertyOf rdf:resource="#link_to_sequence_db"/>
 	<rdfs:subPropertyOf rdf:resource="#html_link_to"/>
 	<rdfs:comment xml:lang="en">external link to GenBank.</rdfs:comment>
-        <owl:sameAs rdf:resource="PDBo:link_to_genbank"/>
+	<owl:sameAs rdf:resource="PDBo:link_to_genbank"/>
       </owl:ObjectProperty>
 
       <owl:ObjectProperty rdf:ID="link_to_embl">
 	<rdfs:subPropertyOf rdf:resource="#link_to_sequence_db"/>
 	<rdfs:subPropertyOf rdf:resource="#html_link_to"/>
 	<rdfs:comment xml:lang="en">external link to EMBL.</rdfs:comment>
-        <owl:sameAs rdf:resource="PDBo:link_to_embl"/>
+	<owl:sameAs rdf:resource="PDBo:link_to_embl"/>
       </owl:ObjectProperty>
 
       <owl:ObjectProperty rdf:ID="link_to_norine">
-        <rdfs:subPropertyOf rdf:resource="#link_to_sequence_db"/>
-        <rdfs:subPropertyOf rdf:resource="#html_link_to"/>
-        <rdfs:comment xml:lang="en">external link to NORINE.</rdfs:comment>
-        <owl:sameAs rdf:resource="PDBo:link_to_norine"/>
+	<rdfs:subPropertyOf rdf:resource="#link_to_sequence_db"/>
+	<rdfs:subPropertyOf rdf:resource="#html_link_to"/>
+	<rdfs:comment xml:lang="en">external link to NORINE.</rdfs:comment>
+	<owl:sameAs rdf:resource="PDBo:link_to_norine"/>
       </owl:ObjectProperty>
 
       <owl:ObjectProperty rdf:ID="link_to_pir">
-        <rdfs:subPropertyOf rdf:resource="#link_to_sequence_db"/>
-        <rdfs:subPropertyOf rdf:resource="#html_link_to"/>
-        <rdfs:comment xml:lang="en">external link to PIR.</rdfs:comment>
-        <owl:sameAs rdf:resource="PDBo:link_to_pir"/>
+	<rdfs:subPropertyOf rdf:resource="#link_to_sequence_db"/>
+	<rdfs:subPropertyOf rdf:resource="#html_link_to"/>
+	<rdfs:comment xml:lang="en">external link to PIR.</rdfs:comment>
+	<owl:sameAs rdf:resource="PDBo:link_to_pir"/>
       </owl:ObjectProperty>
 
       <owl:ObjectProperty rdf:ID="link_to_refseq">
-        <rdfs:subPropertyOf rdf:resource="#link_to_sequence_db"/>
-        <rdfs:subPropertyOf rdf:resource="#html_link_to"/>
-        <rdfs:comment xml:lang="en">external link to RefSeq.</rdfs:comment>
-        <owl:sameAs rdf:resource="PDBo:link_to_refseq"/>
+	<rdfs:subPropertyOf rdf:resource="#link_to_sequence_db"/>
+	<rdfs:subPropertyOf rdf:resource="#html_link_to"/>
+	<rdfs:comment xml:lang="en">external link to RefSeq.</rdfs:comment>
+	<owl:sameAs rdf:resource="PDBo:link_to_refseq"/>
       </owl:ObjectProperty>
 
       <owl:ObjectProperty rdf:ID="link_to_glycoinfo">
-        <rdfs:subPropertyOf rdf:resource="#link_to_sequence_db"/>
-        <rdfs:subPropertyOf rdf:resource="#rdf_link_to"/>
-        <rdfs:comment xml:lang="en">external link to glycoinfo.org.</rdfs:comment>
+	<rdfs:subPropertyOf rdf:resource="#link_to_sequence_db"/>
+	<rdfs:subPropertyOf rdf:resource="#rdf_link_to"/>
+	<rdfs:comment xml:lang="en">external link to glycoinfo.org.</rdfs:comment>
       </owl:ObjectProperty>
 
       <owl:ObjectProperty rdf:ID="link_to_doi">
 	<rdfs:subPropertyOf rdf:resource="#html_link_to"/>
 	<rdfs:comment xml:lang="en">external link to DOI (digital object identifier).</rdfs:comment>
-        <owl:sameAs rdf:resource="PDBo:link_to_doi"/>
+	<owl:sameAs rdf:resource="PDBo:link_to_doi"/>
       </owl:ObjectProperty>
 
       <owl:ObjectProperty rdf:ID="link_to_taxonomy">
 	<rdfs:subPropertyOf rdf:resource="#html_link_to"/>
 	<rdfs:comment xml:lang="en">external link to NCBI taxonomy.</rdfs:comment>
-        <owl:sameAs rdf:resource="PDBo:link_to_taxonomy"/>
+	<owl:sameAs rdf:resource="PDBo:link_to_taxonomy"/>
       </owl:ObjectProperty>
 
       <owl:ObjectProperty rdf:ID="link_to_taxonomy_source">
 	<rdfs:subPropertyOf rdf:resource="#link_to_taxonomy"/>
 	<rdfs:comment xml:lang="en">external link to NCBI taxonomy (source organism).</rdfs:comment>
-        <owl:sameAs rdf:resource="PDBo:link_to_taxonomy_source"/>
+	<owl:sameAs rdf:resource="PDBo:link_to_taxonomy_source"/>
       </owl:ObjectProperty>
 
       <owl:ObjectProperty rdf:ID="link_to_taxonomy_host">
 	<rdfs:subPropertyOf rdf:resource="#link_to_taxonomy"/>
 	<rdfs:comment xml:lang="en">external link to NCBI taxonomy (host organism).</rdfs:comment>
-        <owl:sameAs rdf:resource="PDBo:link_to_taxonomy_host"/>
+	<owl:sameAs rdf:resource="PDBo:link_to_taxonomy_host"/>
       </owl:ObjectProperty>
 
       <owl:ObjectProperty rdf:ID="link_to_enzyme">
 	<rdfs:subPropertyOf rdf:resource="#html_link_to"/>
 	<rdfs:comment xml:lang="en">external link to EC (enzyme commission) number.</rdfs:comment>
-        <owl:sameAs rdf:resource="PDBo:link_to_enzyme"/>
+	<owl:sameAs rdf:resource="PDBo:link_to_enzyme"/>
       </owl:ObjectProperty>
 
       <owl:ObjectProperty rdf:ID="link_to_go">
 	<rdfs:subPropertyOf rdf:resource="#html_link_to"/>
 	<rdfs:comment xml:lang="en">external link to GO (gene ontology).</rdfs:comment>
-        <owl:sameAs rdf:resource="PDBo:link_to_go"/>
+	<owl:sameAs rdf:resource="PDBo:link_to_go"/>
       </owl:ObjectProperty>
 
       <owl:ObjectProperty rdf:ID="link_to_interpro">
-        <rdfs:subPropertyOf rdf:resource="#html_link_to"/>
-        <rdfs:comment xml:lang="en">external link to InterPro.</rdfs:comment>
-        <owl:sameAs rdf:resource="PDBo:link_to_interpro"/>
+	<rdfs:subPropertyOf rdf:resource="#html_link_to"/>
+	<rdfs:comment xml:lang="en">external link to InterPro.</rdfs:comment>
+	<owl:sameAs rdf:resource="PDBo:link_to_interpro"/>
       </owl:ObjectProperty>
 
       <owl:ObjectProperty rdf:ID="link_to_pfam">
-        <rdfs:subPropertyOf rdf:resource="#html_link_to"/>
-        <rdfs:comment xml:lang="en">external link to Pfam.</rdfs:comment>
-        <owl:sameAs rdf:resource="PDBo:link_to_pfam"/>
+	<rdfs:subPropertyOf rdf:resource="#html_link_to"/>
+	<rdfs:comment xml:lang="en">external link to Pfam.</rdfs:comment>
+	<owl:sameAs rdf:resource="PDBo:link_to_pfam"/>
       </owl:ObjectProperty>
 
       <owl:ObjectProperty rdf:ID="link_to_cath">
-        <rdfs:subPropertyOf rdf:resource="#html_link_to"/>
-        <rdfs:comment xml:lang="en">external link to CATH.</rdfs:comment>
-        <owl:sameAs rdf:resource="PDBo:link_to_cath"/>
+	<rdfs:subPropertyOf rdf:resource="#html_link_to"/>
+	<rdfs:comment xml:lang="en">external link to CATH.</rdfs:comment>
+	<owl:sameAs rdf:resource="PDBo:link_to_cath"/>
       </owl:ObjectProperty>
 
       <owl:ObjectProperty rdf:ID="link_to_scop">
-        <rdfs:subPropertyOf rdf:resource="#html_link_to"/>
-        <rdfs:comment xml:lang="en">external link to SCOP, SCOP2, and SCOP2B.</rdfs:comment>
-        <owl:sameAs rdf:resource="PDBo:link_to_scop"/>
+	<rdfs:subPropertyOf rdf:resource="#html_link_to"/>
+	<rdfs:comment xml:lang="en">external link to SCOP, SCOP2, and SCOP2B.</rdfs:comment>
+	<owl:sameAs rdf:resource="PDBo:link_to_scop"/>
       </owl:ObjectProperty>
 
       <owl:ObjectProperty rdf:ID="link_to_ensembl">
-        <rdfs:subPropertyOf rdf:resource="#html_link_to"/>
-        <rdfs:comment xml:lang="en">external link to Ensembl (Eukaryotic Genome).</rdfs:comment>
-        <owl:sameAs rdf:resource="PDBo:link_to_ensembl"/>
+	<rdfs:subPropertyOf rdf:resource="#html_link_to"/>
+	<rdfs:comment xml:lang="en">external link to Ensembl (Eukaryotic Genome).</rdfs:comment>
+	<owl:sameAs rdf:resource="PDBo:link_to_ensembl"/>
       </owl:ObjectProperty>
 
       <owl:ObjectProperty rdf:ID="link_to_chem_comp">
 	<rdfs:subPropertyOf rdf:resource="#rdf_link_to"/>
 	<rdfs:comment xml:lang="en">external link to chemical component in CCD.</rdfs:comment>
-        <owl:sameAs rdf:resource="PDBo:link_to_chem_comp"/>
+	<owl:sameAs rdf:resource="PDBo:link_to_chem_comp"/>
       </owl:ObjectProperty>
 
       <owl:ObjectProperty rdf:ID="link_to_prd">
-        <rdfs:subPropertyOf rdf:resource="#rdf_link_to"/>
-        <rdfs:comment xml:lang="en">external link to peptide reference in PRD (a part of BIRD, Biologically Interesting molecules Reference Dictionary).</rdfs:comment>
-        <owl:sameAs rdf:resource="PDBo:link_to_prd"/>
+	<rdfs:subPropertyOf rdf:resource="#rdf_link_to"/>
+	<rdfs:comment xml:lang="en">external link to peptide reference in PRD (a part of BIRD, Biologically Interesting molecules Reference Dictionary).</rdfs:comment>
+	<owl:sameAs rdf:resource="PDBo:link_to_prd"/>
       </owl:ObjectProperty>
 
       <owl:ObjectProperty rdf:ID="link_to_ccdc">
-        <rdfs:subPropertyOf rdf:resource="#html_link_to"/>
-        <rdfs:comment xml:lang="en">external link to CCDC (Cambridge Crystallographic Data Centre).</rdfs:comment>
-        <owl:sameAs rdf:resource="PDBo:link_to_ccdc"/>
+	<rdfs:subPropertyOf rdf:resource="#html_link_to"/>
+	<rdfs:comment xml:lang="en">external link to CCDC (Cambridge Crystallographic Data Centre).</rdfs:comment>
+	<owl:sameAs rdf:resource="PDBo:link_to_ccdc"/>
       </owl:ObjectProperty>
 
       <owl:ObjectProperty rdf:ID="link_to_pubchem_substance">
-        <rdfs:subPropertyOf rdf:resource="#html_link_to"/>
-        <rdfs:comment xml:lang="en">external link to PubChem Substance.</rdfs:comment>
-        <owl:sameAs rdf:resource="PDBo:link_to_pubchem_substance"/>
+	<rdfs:subPropertyOf rdf:resource="#html_link_to"/>
+	<rdfs:comment xml:lang="en">external link to PubChem Substance.</rdfs:comment>
+	<owl:sameAs rdf:resource="PDBo:link_to_pubchem_substance"/>
       </owl:ObjectProperty>
 
       <owl:ObjectProperty rdf:ID="link_to_chemspider">
-        <rdfs:subPropertyOf rdf:resource="#html_link_to"/>
-        <rdfs:comment xml:lang="en">external link to ChemSpider.</rdfs:comment>
-        <owl:sameAs rdf:resource="PDBo:link_to_chemspider"/>
+	<rdfs:subPropertyOf rdf:resource="#html_link_to"/>
+	<rdfs:comment xml:lang="en">external link to ChemSpider.</rdfs:comment>
+	<owl:sameAs rdf:resource="PDBo:link_to_chemspider"/>
       </owl:ObjectProperty>
 
       <owl:ObjectProperty rdf:ID="link_to_cas">
-        <rdfs:subPropertyOf rdf:resource="#html_link_to"/>
-        <rdfs:comment xml:lang="en">external link to CAS.</rdfs:comment>
-        <owl:sameAs rdf:resource="PDBo:link_to_cas"/>
+	<rdfs:subPropertyOf rdf:resource="#html_link_to"/>
+	<rdfs:comment xml:lang="en">external link to CAS.</rdfs:comment>
+	<owl:sameAs rdf:resource="PDBo:link_to_cas"/>
       </owl:ObjectProperty>
 
       <owl:ObjectProperty rdf:ID="link_to_chebi">
-        <rdfs:subPropertyOf rdf:resource="#html_link_to"/>
-        <rdfs:comment xml:lang="en">external link to ChEBI.</rdfs:comment>
-        <owl:sameAs rdf:resource="PDBo:link_to_chebi"/>
+	<rdfs:subPropertyOf rdf:resource="#html_link_to"/>
+	<rdfs:comment xml:lang="en">external link to ChEBI.</rdfs:comment>
+	<owl:sameAs rdf:resource="PDBo:link_to_chebi"/>
       </owl:ObjectProperty>
 
       <owl:ObjectProperty rdf:ID="link_to_mesh">
-        <rdfs:subPropertyOf rdf:resource="#html_link_to"/>
-        <rdfs:comment xml:lang="en">external link to MeSH.</rdfs:comment>
-        <owl:sameAs rdf:resource="PDBo:link_to_mesh"/>
+	<rdfs:subPropertyOf rdf:resource="#html_link_to"/>
+	<rdfs:comment xml:lang="en">external link to MeSH.</rdfs:comment>
+	<owl:sameAs rdf:resource="PDBo:link_to_mesh"/>
       </owl:ObjectProperty>
 
       <owl:ObjectProperty rdf:ID="link_to_chemidplus">
-        <rdfs:subPropertyOf rdf:resource="#html_link_to"/>
-        <rdfs:comment xml:lang="en">external link to ChemIDplus.</rdfs:comment>
-        <owl:sameAs rdf:resource="PDBo:link_to_chemidplus"/>
+	<rdfs:subPropertyOf rdf:resource="#html_link_to"/>
+	<rdfs:comment xml:lang="en">external link to ChemIDplus.</rdfs:comment>
+	<owl:sameAs rdf:resource="PDBo:link_to_chemidplus"/>
       </owl:ObjectProperty>
 
       <owl:ObjectProperty rdf:ID="link_to_chembl">
-        <rdfs:subPropertyOf rdf:resource="#html_link_to"/>
-        <rdfs:comment xml:lang="en">external link to ChEMBL.</rdfs:comment>
-        <owl:sameAs rdf:resource="PDBo:link_to_chembl"/>
+	<rdfs:subPropertyOf rdf:resource="#html_link_to"/>
+	<rdfs:comment xml:lang="en">external link to ChEMBL.</rdfs:comment>
+	<owl:sameAs rdf:resource="PDBo:link_to_chembl"/>
       </owl:ObjectProperty>
 
       <owl:ObjectProperty rdf:ID="link_to_bindingdb">
-        <rdfs:subPropertyOf rdf:resource="#html_link_to"/>
-        <rdfs:comment xml:lang="en">external link to BindingDB.</rdfs:comment>
-        <owl:sameAs rdf:resource="PDBo:link_to_bindingdb"/>
+	<rdfs:subPropertyOf rdf:resource="#html_link_to"/>
+	<rdfs:comment xml:lang="en">external link to BindingDB.</rdfs:comment>
+	<owl:sameAs rdf:resource="PDBo:link_to_bindingdb"/>
       </owl:ObjectProperty>
 
       <owl:ObjectProperty rdf:ID="link_to_drugbank">
-        <rdfs:subPropertyOf rdf:resource="#html_link_to"/>
-        <rdfs:comment xml:lang="en">external link to DrugBank.</rdfs:comment>
-        <owl:sameAs rdf:resource="PDBo:link_to_drugbank"/>
+	<rdfs:subPropertyOf rdf:resource="#html_link_to"/>
+	<rdfs:comment xml:lang="en">external link to DrugBank.</rdfs:comment>
+	<owl:sameAs rdf:resource="PDBo:link_to_drugbank"/>
       </owl:ObjectProperty>
 
       <owl:ObjectProperty rdf:ID="link_to_kegg_comp">
-        <rdfs:subPropertyOf rdf:resource="#html_link_to"/>
-        <rdfs:comment xml:lang="en">external link to KEGG Compound.</rdfs:comment>
-        <owl:sameAs rdf:resource="PDBo:link_to_kegg_comp"/>
+	<rdfs:subPropertyOf rdf:resource="#html_link_to"/>
+	<rdfs:comment xml:lang="en">external link to KEGG Compound.</rdfs:comment>
+	<owl:sameAs rdf:resource="PDBo:link_to_kegg_comp"/>
       </owl:ObjectProperty>
 
       <owl:ObjectProperty rdf:ID="link_to_kegg_drug">
-        <rdfs:subPropertyOf rdf:resource="#html_link_to"/>
-        <rdfs:comment xml:lang="en">external link to KEGG Drug.</rdfs:comment>
-        <owl:sameAs rdf:resource="PDBo:link_to_kegg_drug"/>
+	<rdfs:subPropertyOf rdf:resource="#html_link_to"/>
+	<rdfs:comment xml:lang="en">external link to KEGG Drug.</rdfs:comment>
+	<owl:sameAs rdf:resource="PDBo:link_to_kegg_drug"/>
       </owl:ObjectProperty>
 
       <owl:ObjectProperty rdf:ID="link_to_chemdb">
-        <rdfs:subPropertyOf rdf:resource="#html_link_to"/>
-        <rdfs:comment xml:lang="en">external link to ChemDB.</rdfs:comment>
-        <owl:sameAs rdf:resource="PDBo:link_to_chemdb"/>
+	<rdfs:subPropertyOf rdf:resource="#html_link_to"/>
+	<rdfs:comment xml:lang="en">external link to ChemDB.</rdfs:comment>
+	<owl:sameAs rdf:resource="PDBo:link_to_chemdb"/>
       </owl:ObjectProperty>
 
       <xsl:apply-templates/>
@@ -486,8 +486,8 @@
     <xsl:variable name="category_id"><xsl:value-of select="concat($category,'Category')"/></xsl:variable>
     <xsl:variable name="has_equivalent_category">
       <xsl:choose>
-        <xsl:when test="$pdbx_owl/rdf:RDF/owl:Class[@rdf:ID=$category_id]">yes</xsl:when>
-        <xsl:otherwise>no</xsl:otherwise>
+	<xsl:when test="$pdbx_owl/rdf:RDF/owl:Class[@rdf:ID=$category_id]">yes</xsl:when>
+	<xsl:otherwise>no</xsl:otherwise>
       </xsl:choose>
     </xsl:variable>
     <owl:Class rdf:ID="{$category_id}">
@@ -502,7 +502,7 @@
 	</owl:Class>
       </rdfs:subClassOf>
       <xsl:if test="$has_equivalent_category='yes'">
-        <owl:equivalentClass rdf:resource="PDBo:{$category_id}"/>
+	<owl:equivalentClass rdf:resource="PDBo:{$category_id}"/>
       </xsl:if>
     </owl:Class>
 
@@ -522,7 +522,7 @@
 	</owl:Class>
       </rdfs:subClassOf>
       <xsl:if test="$has_equivalent_category='yes'">
-        <owl:equivalentClass rdf:resource="PDBo:{$category}"/>
+	<owl:equivalentClass rdf:resource="PDBo:{$category}"/>
       </xsl:if>
     </owl:Class>
 
@@ -535,7 +535,7 @@
       <rdfs:subPropertyOf rdf:resource="#hasCategory"/>
       <rdfs:seeAlso rdf:resource="#{$category}"/>
       <xsl:if test="$has_equivalent_category='yes'">
-        <owl:equivalentProperty rdf:resource="PDBo:has_{$category_id}"/>
+	<owl:equivalentProperty rdf:resource="PDBo:has_{$category_id}"/>
       </xsl:if>
     </owl:InverseFunctionalProperty>
 
@@ -550,7 +550,7 @@
       <rdfs:domain rdf:resource="#{$category_id}"/>
       <rdfs:range rdf:resource="#{$category}"/>
       <xsl:if test="$has_equivalent_category='yes'">
-        <owl:equivalentProperty rdf:resource="PDBo:has_{$category}"/>
+	<owl:equivalentProperty rdf:resource="PDBo:has_{$category}"/>
       </xsl:if>
     </owl:InverseFunctionalProperty>
 
@@ -560,7 +560,7 @@
       <rdfs:subPropertyOf rdf:resource="#categoryItem"/>
       <rdfs:domain rdf:resource="#{$category}"/>
       <xsl:if test="$has_equivalent_category='yes'">
-        <owl:equivalentProperty rdf:resource="PDBo:{$category}Item"/>
+	<owl:equivalentProperty rdf:resource="PDBo:{$category}Item"/>
       </xsl:if>
     </owl:DatatypeProperty>
 
@@ -570,7 +570,7 @@
       <rdfs:subPropertyOf rdf:resource="#reference_to"/>
       <rdfs:domain rdf:resource="#{$category}"/>
       <xsl:if test="$has_equivalent_category='yes'">
-        <owl:equivalentProperty rdf:resource="PDBo:reference_to_{$category}"/>
+	<owl:equivalentProperty rdf:resource="PDBo:reference_to_{$category}"/>
       </xsl:if>
     </owl:ObjectProperty>
 
@@ -580,7 +580,7 @@
       <rdfs:subPropertyOf rdf:resource="#referenced_by"/>
       <rdfs:range rdf:resource="#{$category}"/>
       <xsl:if test="$has_equivalent_category='yes'">
-        <owl:equivalentProperty rdf:resource="PDBo:referenced_by_{$category}"/>
+	<owl:equivalentProperty rdf:resource="PDBo:referenced_by_{$category}"/>
       </xsl:if>
     </owl:ObjectProperty>
 
@@ -641,12 +641,12 @@
 	  <rdfs:range rdf:resource="&xsd;{concat($datatype1,$datatype2,$datatype3)}"/>
 	  <rdfs:label><xsl:value-of select="$id"/></rdfs:label>
 	  <xsl:apply-templates select="./xsd:annotation"/>
-          <xsl:if test="$pdbx_owl/rdf:RDF/owl:DatatypeProperty[@rdf:ID=$id]">
-            <owl:equivalentProperty rdf:resource="PDBo:{$id}"/>
-          </xsl:if>
-          <xsl:if test="$nmr-star_item!=''">
-            <owl:equivalentProperty rdf:resource="BMRBo:{$nmr-star_item}"/>
-          </xsl:if>
+	  <xsl:if test="$pdbx_owl/rdf:RDF/owl:DatatypeProperty[@rdf:ID=$id]">
+	    <owl:equivalentProperty rdf:resource="PDBo:{$id}"/>
+	  </xsl:if>
+	  <xsl:if test="$nmr-star_item!=''">
+	    <owl:equivalentProperty rdf:resource="BMRBo:{$nmr-star_item}"/>
+	  </xsl:if>
 	</owl:DatatypeProperty>
       </xsl:when>
       <xsl:otherwise>
@@ -665,12 +665,12 @@
 	    </owl:DataRange>
 	  </rdfs:range>
 	  <xsl:apply-templates select="./xsd:annotation"/>
-          <xsl:if test="$pdbx_owl/rdf:RDF/owl:DatatypeProperty[@rdf:ID=$id]">
-            <owl:equivalentProperty rdf:resource="PDBo:{$id}"/>
-          </xsl:if>
-          <xsl:if test="$nmr-star_item!=''">
-            <owl:equivalentProperty rdf:resource="BMRBo:{$nmr-star_item}"/>
-          </xsl:if>
+	  <xsl:if test="$pdbx_owl/rdf:RDF/owl:DatatypeProperty[@rdf:ID=$id]">
+	    <owl:equivalentProperty rdf:resource="PDBo:{$id}"/>
+	  </xsl:if>
+	  <xsl:if test="$nmr-star_item!=''">
+	    <owl:equivalentProperty rdf:resource="BMRBo:{$nmr-star_item}"/>
+	  </xsl:if>
 	</owl:DatatypeProperty>
       </xsl:otherwise>
     </xsl:choose>

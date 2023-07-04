@@ -18,6 +18,14 @@ fi
 
 #fi
 
+#if [ ! -e $MERGE_PDBML_NEXTGEN_XSL ] ; then
+
+ java -jar $SAXON -s:$PDBML_XSD -xsl:$XSD2MERGE_PDBML_NEXTGEN_XSL -o:$MERGE_PDBML_NEXTGEN_XSL || ( echo $0 aborted. ; exit 1 )
+
+ echo Generated: $MERGE_PDBML_NEXTGEN_XSL
+
+#fi
+
 #if [ ! -e $PDBML2RDF_XSL ] ; then
 
  java -jar $SAXON -s:$PDBML_XSD -xsl:$PDBX2PDBML2RDF_XSL -o:$PDBML2RDF_XSL || ( echo $0 aborted. ; exit 1 )
@@ -46,16 +54,23 @@ for arg ; do
 
    pdbml_file=$WORK_DIR/$PDBML/$pdb_id-noatom.xml
    sifts_xml_file=$WORK_DIR/$SIFTS_XML/$pdb_id.xml
+   pdbml_nextgen_file=$WORK_DIR/$NEXTGEN/$NEXTGEN_FILE_PREFIX$pdb_id$NEXTGEN_FILE_SUFFIX.xml
 
    if [ ! -e $pdbml_file ] ; then
 
     wget ftp://ftp.wwpdb.org/pub/pdb/data/structures/all/XML-noatom/$pdb_id-noatom.xml.gz -P $WORK_DIR/pdbml; gunzip $pdbml_file.gz
 
    fi
-
+<<REMARK
    if [ ! -e $sifts_xml_file ] ; then
 
     wget ftp://$SIFTS_XML_URL/$pdb_id.xml.gz -P $WORK_DIR/$SIFTS_XML; gunzip $sifts_xml_file.gz
+
+   fi
+REMARK
+   if [ ! -e $pdbml_nextgen_file ] ; then
+
+    wget https://files-nextgen.wwpdb.org/pdb_nextgen/data/entries/divided/${pdb_id:1:2}/$NEXTGEN_FILE_PREFIX$pdb_id/$NEXTGEN_FILE_PREFIX$pdb_id$NEXTGEN_FILE_SUFFIX.xml.gz -P $WORK_DIR/nextgen; gunzip $pdbml_nextgen_file
 
    fi
 
@@ -79,14 +94,25 @@ for pdbml_file in $WORK_DIR/$PDBML/*.xml ; do
  echo Processing PDB ID: ${pdb_id^^}, "Exptl. method: "$exptl_method" ..."
 
  sifts_xml_file=$WORK_DIR/$SIFTS_XML/$pdb_id.xml
+ pdbml_nextgen_file=$WORK_DIR/$NEXTGEN/$NEXTGEN_FILE_PREFIX$pdb_id$NEXTGEN_FILE_SUFFIX.xml
  pdbml_sifts_file=$WORK_DIR/$PDBML_SIFTS/$pdb_id-noatom-sifts.xml
-
+<<REMARK
  #xsltproc stylesheet/check_sifts.xsl $sifts_xml_file
  #echo
 
- if [ -e $sifts_xml_file ] && [ -s $sifts_xml_fil ] ; then
+ if [ -e $sifts_xml_file ] && [ -s $sifts_xml_file ] ; then
   xsltproc -o $pdbml_sifts_file --stringparam sifts_file ../$sifts_xml_file $MERGE_PDBML_SIFTS_XSL $pdbml_file
   #java -jar $SAXON -s:$pdbml_file -xsl:$MERGE_PDBML_SIFTS_XSL -o:$pdbml_sifts_file sifts_file=../$sifts_xml_file
+
+  echo " generated: "$pdbml_sifts_file
+
+ else
+  cp -f $pdbml_file $pdbml_sifts_file
+ fi
+REMARK
+ if [ -e $pdbml_nextgen_file ] && [ -s $sifts_xml_file ] ; then
+  xsltproc -o $pdbml_sifts_file --stringparam nextgen_file ../$pdbml_nextgen_file $MERGE_PDBML_NEXTGEN_XSL $pdbml_file
+  #java -jar $SAXON -s:$pdbml_file -xsl:$MERGE_PDBML_NEXGEN_XSL -o:$pdbml_sifts_file nextgen_file=../$pdbml_nextgen_file
 
   echo " generated: "$pdbml_sifts_file
 

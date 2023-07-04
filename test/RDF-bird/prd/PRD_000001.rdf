@@ -12,7 +12,7 @@
           <PDBo:pdbx_prd_audit rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_prd_audit/Create_molecule,2012-02-01,PRD_000001">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001"/>
             <PDBo:reference_to_pdbx_reference_molecule>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_molecule/PRD_000001">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_molecule/">
                 <PDBo:referenced_by_pdbx_prd_audit rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_prd_audit/Create_molecule,2012-02-01,PRD_000001"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule>
@@ -26,7 +26,7 @@
           <PDBo:pdbx_prd_audit rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_prd_audit/Other_modification,2012-07-09,PRD_000001">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001"/>
             <PDBo:reference_to_pdbx_reference_molecule>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_molecule/PRD_000001">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_molecule/">
                 <PDBo:referenced_by_pdbx_prd_audit rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_prd_audit/Other_modification,2012-07-09,PRD_000001"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule>
@@ -40,7 +40,7 @@
           <PDBo:pdbx_prd_audit rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_prd_audit/Initial_release,2012-12-12,PRD_000001">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001"/>
             <PDBo:reference_to_pdbx_reference_molecule>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_molecule/PRD_000001">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_molecule/">
                 <PDBo:referenced_by_pdbx_prd_audit rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_prd_audit/Initial_release,2012-12-12,PRD_000001"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule>
@@ -54,7 +54,7 @@
           <PDBo:pdbx_prd_audit rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_prd_audit/Other_modification,2013-06-03,PRD_000001">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001"/>
             <PDBo:reference_to_pdbx_reference_molecule>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_molecule/PRD_000001">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_molecule/">
                 <PDBo:referenced_by_pdbx_prd_audit rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_prd_audit/Other_modification,2013-06-03,PRD_000001"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule>
@@ -68,7 +68,7 @@
           <PDBo:pdbx_prd_audit rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_prd_audit/Other_modification,2013-08-02,PRD_000001">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001"/>
             <PDBo:reference_to_pdbx_reference_molecule>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_molecule/PRD_000001">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_molecule/">
                 <PDBo:referenced_by_pdbx_prd_audit rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_prd_audit/Other_modification,2013-08-02,PRD_000001"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule>
@@ -82,7 +82,7 @@
           <PDBo:pdbx_prd_audit rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_prd_audit/Other_modification,2017-05-04,PRD_000001">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001"/>
             <PDBo:reference_to_pdbx_reference_molecule>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_molecule/PRD_000001">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_molecule/">
                 <PDBo:referenced_by_pdbx_prd_audit rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_prd_audit/Other_modification,2017-05-04,PRD_000001"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule>
@@ -100,7 +100,7 @@
           <PDBo:pdbx_reference_entity_list rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_list/1,PRD_000001,1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001"/>
             <PDBo:reference_to_pdbx_reference_molecule>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_molecule/PRD_000001">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_molecule/">
                 <PDBo:referenced_by_pdbx_reference_entity_list rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_list/1,PRD_000001,1"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule>
@@ -135,12 +135,12 @@
           <PDBo:pdbx_reference_entity_poly_link rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly_link/1,1,PRD_000001,1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001"/>
             <PDBo:reference_to_pdbx_reference_entity_list>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_list/1,PRD_000001,1">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_list/,,">
                 <PDBo:referenced_by_pdbx_reference_entity_poly_link rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly_link/1,1,PRD_000001,1"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_entity_list>
             <PDBo:reference_to_pdbx_reference_entity_poly>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly/PRD_000001,1">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly/,">
                 <PDBo:referenced_by_pdbx_reference_entity_poly_link rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly_link/1,1,PRD_000001,1"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_entity_poly>
@@ -161,12 +161,12 @@
           <PDBo:pdbx_reference_entity_poly_link rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly_link/1,2,PRD_000001,1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001"/>
             <PDBo:reference_to_pdbx_reference_entity_list>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_list/1,PRD_000001,1">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_list/,,">
                 <PDBo:referenced_by_pdbx_reference_entity_poly_link rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly_link/1,2,PRD_000001,1"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_entity_list>
             <PDBo:reference_to_pdbx_reference_entity_poly>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly/PRD_000001,1">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly/,">
                 <PDBo:referenced_by_pdbx_reference_entity_poly_link rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly_link/1,2,PRD_000001,1"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_entity_poly>
@@ -187,12 +187,12 @@
           <PDBo:pdbx_reference_entity_poly_link rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly_link/1,3,PRD_000001,1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001"/>
             <PDBo:reference_to_pdbx_reference_entity_list>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_list/1,PRD_000001,1">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_list/,,">
                 <PDBo:referenced_by_pdbx_reference_entity_poly_link rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly_link/1,3,PRD_000001,1"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_entity_list>
             <PDBo:reference_to_pdbx_reference_entity_poly>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly/PRD_000001,1">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly/,">
                 <PDBo:referenced_by_pdbx_reference_entity_poly_link rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly_link/1,3,PRD_000001,1"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_entity_poly>
@@ -213,12 +213,12 @@
           <PDBo:pdbx_reference_entity_poly_link rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly_link/1,4,PRD_000001,1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001"/>
             <PDBo:reference_to_pdbx_reference_entity_list>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_list/1,PRD_000001,1">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_list/,,">
                 <PDBo:referenced_by_pdbx_reference_entity_poly_link rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly_link/1,4,PRD_000001,1"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_entity_list>
             <PDBo:reference_to_pdbx_reference_entity_poly>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly/PRD_000001,1">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly/,">
                 <PDBo:referenced_by_pdbx_reference_entity_poly_link rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly_link/1,4,PRD_000001,1"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_entity_poly>
@@ -239,12 +239,12 @@
           <PDBo:pdbx_reference_entity_poly_link rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly_link/1,5,PRD_000001,1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001"/>
             <PDBo:reference_to_pdbx_reference_entity_list>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_list/1,PRD_000001,1">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_list/,,">
                 <PDBo:referenced_by_pdbx_reference_entity_poly_link rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly_link/1,5,PRD_000001,1"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_entity_list>
             <PDBo:reference_to_pdbx_reference_entity_poly>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly/PRD_000001,1">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly/,">
                 <PDBo:referenced_by_pdbx_reference_entity_poly_link rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly_link/1,5,PRD_000001,1"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_entity_poly>
@@ -265,12 +265,12 @@
           <PDBo:pdbx_reference_entity_poly_link rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly_link/1,6,PRD_000001,1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001"/>
             <PDBo:reference_to_pdbx_reference_entity_list>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_list/1,PRD_000001,1">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_list/,,">
                 <PDBo:referenced_by_pdbx_reference_entity_poly_link rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly_link/1,6,PRD_000001,1"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_entity_list>
             <PDBo:reference_to_pdbx_reference_entity_poly>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly/PRD_000001,1">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly/,">
                 <PDBo:referenced_by_pdbx_reference_entity_poly_link rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly_link/1,6,PRD_000001,1"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_entity_poly>
@@ -291,12 +291,12 @@
           <PDBo:pdbx_reference_entity_poly_link rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly_link/1,7,PRD_000001,1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001"/>
             <PDBo:reference_to_pdbx_reference_entity_list>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_list/1,PRD_000001,1">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_list/,,">
                 <PDBo:referenced_by_pdbx_reference_entity_poly_link rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly_link/1,7,PRD_000001,1"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_entity_list>
             <PDBo:reference_to_pdbx_reference_entity_poly>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly/PRD_000001,1">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly/,">
                 <PDBo:referenced_by_pdbx_reference_entity_poly_link rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly_link/1,7,PRD_000001,1"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_entity_poly>
@@ -317,12 +317,12 @@
           <PDBo:pdbx_reference_entity_poly_link rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly_link/1,8,PRD_000001,1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001"/>
             <PDBo:reference_to_pdbx_reference_entity_list>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_list/1,PRD_000001,1">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_list/,,">
                 <PDBo:referenced_by_pdbx_reference_entity_poly_link rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly_link/1,8,PRD_000001,1"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_entity_list>
             <PDBo:reference_to_pdbx_reference_entity_poly>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly/PRD_000001,1">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly/,">
                 <PDBo:referenced_by_pdbx_reference_entity_poly_link rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly_link/1,8,PRD_000001,1"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_entity_poly>
@@ -343,12 +343,12 @@
           <PDBo:pdbx_reference_entity_poly_link rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly_link/1,9,PRD_000001,1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001"/>
             <PDBo:reference_to_pdbx_reference_entity_list>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_list/1,PRD_000001,1">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_list/,,">
                 <PDBo:referenced_by_pdbx_reference_entity_poly_link rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly_link/1,9,PRD_000001,1"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_entity_list>
             <PDBo:reference_to_pdbx_reference_entity_poly>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly/PRD_000001,1">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly/,">
                 <PDBo:referenced_by_pdbx_reference_entity_poly_link rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly_link/1,9,PRD_000001,1"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_entity_poly>
@@ -369,12 +369,12 @@
           <PDBo:pdbx_reference_entity_poly_link rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly_link/1,10,PRD_000001,1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001"/>
             <PDBo:reference_to_pdbx_reference_entity_list>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_list/1,PRD_000001,1">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_list/,,">
                 <PDBo:referenced_by_pdbx_reference_entity_poly_link rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly_link/1,10,PRD_000001,1"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_entity_list>
             <PDBo:reference_to_pdbx_reference_entity_poly>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly/PRD_000001,1">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly/,">
                 <PDBo:referenced_by_pdbx_reference_entity_poly_link rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly_link/1,10,PRD_000001,1"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_entity_poly>
@@ -395,12 +395,12 @@
           <PDBo:pdbx_reference_entity_poly_link rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly_link/1,11,PRD_000001,1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001"/>
             <PDBo:reference_to_pdbx_reference_entity_list>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_list/1,PRD_000001,1">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_list/,,">
                 <PDBo:referenced_by_pdbx_reference_entity_poly_link rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly_link/1,11,PRD_000001,1"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_entity_list>
             <PDBo:reference_to_pdbx_reference_entity_poly>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly/PRD_000001,1">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly/,">
                 <PDBo:referenced_by_pdbx_reference_entity_poly_link rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly_link/1,11,PRD_000001,1"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_entity_poly>
@@ -421,12 +421,12 @@
           <PDBo:pdbx_reference_entity_poly_link rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly_link/1,12,PRD_000001,1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001"/>
             <PDBo:reference_to_pdbx_reference_entity_list>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_list/1,PRD_000001,1">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_list/,,">
                 <PDBo:referenced_by_pdbx_reference_entity_poly_link rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly_link/1,12,PRD_000001,1"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_entity_list>
             <PDBo:reference_to_pdbx_reference_entity_poly>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly/PRD_000001,1">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly/,">
                 <PDBo:referenced_by_pdbx_reference_entity_poly_link rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly_link/1,12,PRD_000001,1"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_entity_poly>
@@ -451,7 +451,7 @@
           <PDBo:pdbx_reference_entity_poly_seq rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly_seq/N,THR,1,PRD_000001,1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001"/>
             <PDBo:reference_to_pdbx_reference_entity_poly>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly/PRD_000001,1">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly/,">
                 <PDBo:referenced_by_pdbx_reference_entity_poly_seq rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly_seq/N,THR,1,PRD_000001,1"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_entity_poly>
@@ -470,7 +470,7 @@
           <PDBo:pdbx_reference_entity_poly_seq rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly_seq/N,DVA,2,PRD_000001,1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001"/>
             <PDBo:reference_to_pdbx_reference_entity_poly>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly/PRD_000001,1">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly/,">
                 <PDBo:referenced_by_pdbx_reference_entity_poly_seq rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly_seq/N,DVA,2,PRD_000001,1"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_entity_poly>
@@ -489,7 +489,7 @@
           <PDBo:pdbx_reference_entity_poly_seq rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly_seq/N,PRO,3,PRD_000001,1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001"/>
             <PDBo:reference_to_pdbx_reference_entity_poly>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly/PRD_000001,1">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly/,">
                 <PDBo:referenced_by_pdbx_reference_entity_poly_seq rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly_seq/N,PRO,3,PRD_000001,1"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_entity_poly>
@@ -508,7 +508,7 @@
           <PDBo:pdbx_reference_entity_poly_seq rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly_seq/N,SAR,4,PRD_000001,1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001"/>
             <PDBo:reference_to_pdbx_reference_entity_poly>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly/PRD_000001,1">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly/,">
                 <PDBo:referenced_by_pdbx_reference_entity_poly_seq rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly_seq/N,SAR,4,PRD_000001,1"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_entity_poly>
@@ -527,7 +527,7 @@
           <PDBo:pdbx_reference_entity_poly_seq rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly_seq/N,MVA,5,PRD_000001,1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001"/>
             <PDBo:reference_to_pdbx_reference_entity_poly>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly/PRD_000001,1">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly/,">
                 <PDBo:referenced_by_pdbx_reference_entity_poly_seq rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly_seq/N,MVA,5,PRD_000001,1"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_entity_poly>
@@ -546,7 +546,7 @@
           <PDBo:pdbx_reference_entity_poly_seq rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly_seq/N,PXZ,6,PRD_000001,1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001"/>
             <PDBo:reference_to_pdbx_reference_entity_poly>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly/PRD_000001,1">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly/,">
                 <PDBo:referenced_by_pdbx_reference_entity_poly_seq rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly_seq/N,PXZ,6,PRD_000001,1"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_entity_poly>
@@ -563,7 +563,7 @@
           <PDBo:pdbx_reference_entity_poly_seq rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly_seq/N,THR,7,PRD_000001,1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001"/>
             <PDBo:reference_to_pdbx_reference_entity_poly>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly/PRD_000001,1">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly/,">
                 <PDBo:referenced_by_pdbx_reference_entity_poly_seq rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly_seq/N,THR,7,PRD_000001,1"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_entity_poly>
@@ -582,7 +582,7 @@
           <PDBo:pdbx_reference_entity_poly_seq rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly_seq/N,DVA,8,PRD_000001,1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001"/>
             <PDBo:reference_to_pdbx_reference_entity_poly>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly/PRD_000001,1">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly/,">
                 <PDBo:referenced_by_pdbx_reference_entity_poly_seq rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly_seq/N,DVA,8,PRD_000001,1"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_entity_poly>
@@ -601,7 +601,7 @@
           <PDBo:pdbx_reference_entity_poly_seq rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly_seq/N,PRO,9,PRD_000001,1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001"/>
             <PDBo:reference_to_pdbx_reference_entity_poly>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly/PRD_000001,1">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly/,">
                 <PDBo:referenced_by_pdbx_reference_entity_poly_seq rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly_seq/N,PRO,9,PRD_000001,1"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_entity_poly>
@@ -620,7 +620,7 @@
           <PDBo:pdbx_reference_entity_poly_seq rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly_seq/N,SAR,10,PRD_000001,1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001"/>
             <PDBo:reference_to_pdbx_reference_entity_poly>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly/PRD_000001,1">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly/,">
                 <PDBo:referenced_by_pdbx_reference_entity_poly_seq rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly_seq/N,SAR,10,PRD_000001,1"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_entity_poly>
@@ -639,7 +639,7 @@
           <PDBo:pdbx_reference_entity_poly_seq rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly_seq/N,MVA,11,PRD_000001,1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001"/>
             <PDBo:reference_to_pdbx_reference_entity_poly>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly/PRD_000001,1">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly/,">
                 <PDBo:referenced_by_pdbx_reference_entity_poly_seq rdf:resource="http://rdf.wwpdb.org/prd/PRD_000001/pdbx_reference_entity_poly_seq/N,MVA,11,PRD_000001,1"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_entity_poly>

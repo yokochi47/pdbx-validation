@@ -16,26 +16,26 @@
     <xsl:variable name="validation_created_month">
       <xsl:variable name="month_name"><xsl:value-of select="upper-case(substring($xml_creation_date,1,3))"/></xsl:variable>
       <xsl:choose>
-        <xsl:when test="$month_name='JAN'">01</xsl:when>
-        <xsl:when test="$month_name='FEB'">02</xsl:when>
-        <xsl:when test="$month_name='MAR'">03</xsl:when>
-        <xsl:when test="$month_name='APR'">04</xsl:when>
-        <xsl:when test="$month_name='MAY'">05</xsl:when>
-        <xsl:when test="$month_name='JUN'">06</xsl:when>
-        <xsl:when test="$month_name='JUL'">07</xsl:when>
-        <xsl:when test="$month_name='AUG'">08</xsl:when>
-        <xsl:when test="$month_name='SEP'">09</xsl:when>
-        <xsl:when test="$month_name='OCT'">10</xsl:when>
-        <xsl:when test="$month_name='NOV'">11</xsl:when>
-        <xsl:when test="$month_name='DEC'">12</xsl:when>
-        <xsl:otherwise>
-          <xsl:call-template name="error_handler">
-            <xsl:with-param name="terminate">yes</xsl:with-param>
-            <xsl:with-param name="error_message">
+	<xsl:when test="$month_name='JAN'">01</xsl:when>
+	<xsl:when test="$month_name='FEB'">02</xsl:when>
+	<xsl:when test="$month_name='MAR'">03</xsl:when>
+	<xsl:when test="$month_name='APR'">04</xsl:when>
+	<xsl:when test="$month_name='MAY'">05</xsl:when>
+	<xsl:when test="$month_name='JUN'">06</xsl:when>
+	<xsl:when test="$month_name='JUL'">07</xsl:when>
+	<xsl:when test="$month_name='AUG'">08</xsl:when>
+	<xsl:when test="$month_name='SEP'">09</xsl:when>
+	<xsl:when test="$month_name='OCT'">10</xsl:when>
+	<xsl:when test="$month_name='NOV'">11</xsl:when>
+	<xsl:when test="$month_name='DEC'">12</xsl:when>
+	<xsl:otherwise>
+	  <xsl:call-template name="error_handler">
+	    <xsl:with-param name="terminate">yes</xsl:with-param>
+	    <xsl:with-param name="error_message">
 Month name, <xsl:value-of select="$month_name"/>, is not listed in XSLT code.
-            </xsl:with-param>
-          </xsl:call-template>
-        </xsl:otherwise>
+	    </xsl:with-param>
+	  </xsl:call-template>
+	</xsl:otherwise>
       </xsl:choose>
     </xsl:variable>
 
@@ -51,16 +51,16 @@ Month name, <xsl:value-of select="$month_name"/>, is not listed in XSLT code.
     <xsl:param name="terminate">no</xsl:param>
     <xsl:choose>
       <xsl:when test="$terminate='yes'">
-        <xsl:message terminate="yes">
-          <xsl:text>ERROR in validation_created_date.xsl: </xsl:text>
-          <xsl:value-of select="$error_message"/>
-        </xsl:message>
+	<xsl:message terminate="yes">
+	  <xsl:text>ERROR in validation_created_date.xsl: </xsl:text>
+	  <xsl:value-of select="$error_message"/>
+	</xsl:message>
       </xsl:when>
       <xsl:otherwise>
-        <span style="font-weight: bold; color: red">
-          <xsl:text>ERROR: </xsl:text>
-          <xsl:value-of select="$error_message"/>
-        </span>
+	<span style="font-weight: bold; color: red">
+	  <xsl:text>ERROR: </xsl:text>
+	  <xsl:value-of select="$error_message"/>
+	</span>
       </xsl:otherwise>
     </xsl:choose>
   </xsl:template>

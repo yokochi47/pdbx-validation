@@ -20,7 +20,7 @@
           <PDBo:atom_sites rdf:about="http://rdf.wwpdb.org/pdb/7LQS/atom_sites/7LQS">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7LQS"/>
             <PDBo:reference_to_entry>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/entry/7LQS">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/entry/">
                 <PDBo:referenced_by_atom_sites rdf:resource="http://rdf.wwpdb.org/pdb/7LQS/atom_sites/7LQS"/>
               </rdf:Description>
             </PDBo:reference_to_entry>
@@ -261,7 +261,7 @@
           <PDBo:citation_author rdf:about="http://rdf.wwpdb.org/pdb/7LQS/citation_author/primary,Giribaldi,_J.,1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7LQS"/>
             <PDBo:reference_to_citation>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/citation/primary">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/citation/">
                 <PDBo:referenced_by_citation_author rdf:resource="http://rdf.wwpdb.org/pdb/7LQS/citation_author/primary,Giribaldi,_J.,1"/>
               </rdf:Description>
             </PDBo:reference_to_citation>
@@ -277,7 +277,7 @@
           <PDBo:citation_author rdf:about="http://rdf.wwpdb.org/pdb/7LQS/citation_author/primary,Haufe,_Y.,2">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7LQS"/>
             <PDBo:reference_to_citation>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/citation/primary">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/citation/">
                 <PDBo:referenced_by_citation_author rdf:resource="http://rdf.wwpdb.org/pdb/7LQS/citation_author/primary,Haufe,_Y.,2"/>
               </rdf:Description>
             </PDBo:reference_to_citation>
@@ -293,7 +293,7 @@
           <PDBo:citation_author rdf:about="http://rdf.wwpdb.org/pdb/7LQS/citation_author/primary,Evans,_E.R.J.,3">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7LQS"/>
             <PDBo:reference_to_citation>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/citation/primary">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/citation/">
                 <PDBo:referenced_by_citation_author rdf:resource="http://rdf.wwpdb.org/pdb/7LQS/citation_author/primary,Evans,_E.R.J.,3"/>
               </rdf:Description>
             </PDBo:reference_to_citation>
@@ -309,7 +309,7 @@
           <PDBo:citation_author rdf:about="http://rdf.wwpdb.org/pdb/7LQS/citation_author/primary,Wilson,_D.T.,4">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7LQS"/>
             <PDBo:reference_to_citation>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/citation/primary">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/citation/">
                 <PDBo:referenced_by_citation_author rdf:resource="http://rdf.wwpdb.org/pdb/7LQS/citation_author/primary,Wilson,_D.T.,4"/>
               </rdf:Description>
             </PDBo:reference_to_citation>
@@ -322,7 +322,7 @@
           <PDBo:citation_author rdf:about="http://rdf.wwpdb.org/pdb/7LQS/citation_author/primary,Daly,_N.L.,5">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7LQS"/>
             <PDBo:reference_to_citation>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/citation/primary">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/citation/">
                 <PDBo:referenced_by_citation_author rdf:resource="http://rdf.wwpdb.org/pdb/7LQS/citation_author/primary,Daly,_N.L.,5"/>
               </rdf:Description>
             </PDBo:reference_to_citation>
@@ -338,7 +338,7 @@
           <PDBo:citation_author rdf:about="http://rdf.wwpdb.org/pdb/7LQS/citation_author/primary,Enjalbal,_C.,6">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7LQS"/>
             <PDBo:reference_to_citation>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/citation/primary">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/citation/">
                 <PDBo:referenced_by_citation_author rdf:resource="http://rdf.wwpdb.org/pdb/7LQS/citation_author/primary,Enjalbal,_C.,6"/>
               </rdf:Description>
             </PDBo:reference_to_citation>
@@ -354,7 +354,7 @@
           <PDBo:citation_author rdf:about="http://rdf.wwpdb.org/pdb/7LQS/citation_author/primary,Nicke,_A.,7">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7LQS"/>
             <PDBo:reference_to_citation>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/citation/primary">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/citation/">
                 <PDBo:referenced_by_citation_author rdf:resource="http://rdf.wwpdb.org/pdb/7LQS/citation_author/primary,Nicke,_A.,7"/>
               </rdf:Description>
             </PDBo:reference_to_citation>
@@ -367,7 +367,7 @@
           <PDBo:citation_author rdf:about="http://rdf.wwpdb.org/pdb/7LQS/citation_author/primary,Dutertre,_S.,8">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7LQS"/>
             <PDBo:reference_to_citation>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/citation/primary">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/citation/">
                 <PDBo:referenced_by_citation_author rdf:resource="http://rdf.wwpdb.org/pdb/7LQS/citation_author/primary,Dutertre,_S.,8"/>
               </rdf:Description>
             </PDBo:reference_to_citation>
@@ -427,7 +427,7 @@
           <PDBo:entity_poly rdf:about="http://rdf.wwpdb.org/pdb/7LQS/entity_poly/1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7LQS"/>
             <PDBo:reference_to_entity>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/entity/1">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/entity/">
                 <PDBo:referenced_by_entity_poly rdf:resource="http://rdf.wwpdb.org/pdb/7LQS/entity_poly/1"/>
               </rdf:Description>
             </PDBo:reference_to_entity>
@@ -448,12 +448,12 @@
           <PDBo:entity_poly_seq rdf:about="http://rdf.wwpdb.org/pdb/7LQS/entity_poly_seq/1,CYS,1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7LQS"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/chem_comp/CYS">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/chem_comp/">
                 <PDBo:referenced_by_entity_poly_seq rdf:resource="http://rdf.wwpdb.org/pdb/7LQS/entity_poly_seq/1,CYS,1"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:reference_to_entity_poly>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/entity_poly/1">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/entity_poly/">
                 <PDBo:referenced_by_entity_poly_seq rdf:resource="http://rdf.wwpdb.org/pdb/7LQS/entity_poly_seq/1,CYS,1"/>
               </rdf:Description>
             </PDBo:reference_to_entity_poly>
@@ -467,12 +467,12 @@
           <PDBo:entity_poly_seq rdf:about="http://rdf.wwpdb.org/pdb/7LQS/entity_poly_seq/1,CYS,2">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7LQS"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/chem_comp/CYS">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/chem_comp/">
                 <PDBo:referenced_by_entity_poly_seq rdf:resource="http://rdf.wwpdb.org/pdb/7LQS/entity_poly_seq/1,CYS,2"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:reference_to_entity_poly>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/entity_poly/1">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/entity_poly/">
                 <PDBo:referenced_by_entity_poly_seq rdf:resource="http://rdf.wwpdb.org/pdb/7LQS/entity_poly_seq/1,CYS,2"/>
               </rdf:Description>
             </PDBo:reference_to_entity_poly>
@@ -486,12 +486,12 @@
           <PDBo:entity_poly_seq rdf:about="http://rdf.wwpdb.org/pdb/7LQS/entity_poly_seq/1,SER,3">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7LQS"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/chem_comp/SER">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/chem_comp/">
                 <PDBo:referenced_by_entity_poly_seq rdf:resource="http://rdf.wwpdb.org/pdb/7LQS/entity_poly_seq/1,SER,3"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:reference_to_entity_poly>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/entity_poly/1">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/entity_poly/">
                 <PDBo:referenced_by_entity_poly_seq rdf:resource="http://rdf.wwpdb.org/pdb/7LQS/entity_poly_seq/1,SER,3"/>
               </rdf:Description>
             </PDBo:reference_to_entity_poly>
@@ -505,12 +505,12 @@
           <PDBo:entity_poly_seq rdf:about="http://rdf.wwpdb.org/pdb/7LQS/entity_poly_seq/1,ASN,4">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7LQS"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/chem_comp/ASN">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/chem_comp/">
                 <PDBo:referenced_by_entity_poly_seq rdf:resource="http://rdf.wwpdb.org/pdb/7LQS/entity_poly_seq/1,ASN,4"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:reference_to_entity_poly>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/entity_poly/1">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/entity_poly/">
                 <PDBo:referenced_by_entity_poly_seq rdf:resource="http://rdf.wwpdb.org/pdb/7LQS/entity_poly_seq/1,ASN,4"/>
               </rdf:Description>
             </PDBo:reference_to_entity_poly>
@@ -524,12 +524,12 @@
           <PDBo:entity_poly_seq rdf:about="http://rdf.wwpdb.org/pdb/7LQS/entity_poly_seq/1,PRO,5">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7LQS"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/chem_comp/PRO">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/chem_comp/">
                 <PDBo:referenced_by_entity_poly_seq rdf:resource="http://rdf.wwpdb.org/pdb/7LQS/entity_poly_seq/1,PRO,5"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:reference_to_entity_poly>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/entity_poly/1">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/entity_poly/">
                 <PDBo:referenced_by_entity_poly_seq rdf:resource="http://rdf.wwpdb.org/pdb/7LQS/entity_poly_seq/1,PRO,5"/>
               </rdf:Description>
             </PDBo:reference_to_entity_poly>
@@ -543,12 +543,12 @@
           <PDBo:entity_poly_seq rdf:about="http://rdf.wwpdb.org/pdb/7LQS/entity_poly_seq/1,ALA,6">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7LQS"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/chem_comp/ALA">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/chem_comp/">
                 <PDBo:referenced_by_entity_poly_seq rdf:resource="http://rdf.wwpdb.org/pdb/7LQS/entity_poly_seq/1,ALA,6"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:reference_to_entity_poly>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/entity_poly/1">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/entity_poly/">
                 <PDBo:referenced_by_entity_poly_seq rdf:resource="http://rdf.wwpdb.org/pdb/7LQS/entity_poly_seq/1,ALA,6"/>
               </rdf:Description>
             </PDBo:reference_to_entity_poly>
@@ -562,12 +562,12 @@
           <PDBo:entity_poly_seq rdf:about="http://rdf.wwpdb.org/pdb/7LQS/entity_poly_seq/1,CYS,7">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7LQS"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/chem_comp/CYS">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/chem_comp/">
                 <PDBo:referenced_by_entity_poly_seq rdf:resource="http://rdf.wwpdb.org/pdb/7LQS/entity_poly_seq/1,CYS,7"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:reference_to_entity_poly>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/entity_poly/1">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/entity_poly/">
                 <PDBo:referenced_by_entity_poly_seq rdf:resource="http://rdf.wwpdb.org/pdb/7LQS/entity_poly_seq/1,CYS,7"/>
               </rdf:Description>
             </PDBo:reference_to_entity_poly>
@@ -581,12 +581,12 @@
           <PDBo:entity_poly_seq rdf:about="http://rdf.wwpdb.org/pdb/7LQS/entity_poly_seq/1,GLN,8">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7LQS"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/chem_comp/GLN">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/chem_comp/">
                 <PDBo:referenced_by_entity_poly_seq rdf:resource="http://rdf.wwpdb.org/pdb/7LQS/entity_poly_seq/1,GLN,8"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:reference_to_entity_poly>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/entity_poly/1">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/entity_poly/">
                 <PDBo:referenced_by_entity_poly_seq rdf:resource="http://rdf.wwpdb.org/pdb/7LQS/entity_poly_seq/1,GLN,8"/>
               </rdf:Description>
             </PDBo:reference_to_entity_poly>
@@ -600,12 +600,12 @@
           <PDBo:entity_poly_seq rdf:about="http://rdf.wwpdb.org/pdb/7LQS/entity_poly_seq/1,VAL,9">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7LQS"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/chem_comp/VAL">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/chem_comp/">
                 <PDBo:referenced_by_entity_poly_seq rdf:resource="http://rdf.wwpdb.org/pdb/7LQS/entity_poly_seq/1,VAL,9"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:reference_to_entity_poly>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/entity_poly/1">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/entity_poly/">
                 <PDBo:referenced_by_entity_poly_seq rdf:resource="http://rdf.wwpdb.org/pdb/7LQS/entity_poly_seq/1,VAL,9"/>
               </rdf:Description>
             </PDBo:reference_to_entity_poly>
@@ -619,12 +619,12 @@
           <PDBo:entity_poly_seq rdf:about="http://rdf.wwpdb.org/pdb/7LQS/entity_poly_seq/1,GLN,10">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7LQS"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/chem_comp/GLN">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/chem_comp/">
                 <PDBo:referenced_by_entity_poly_seq rdf:resource="http://rdf.wwpdb.org/pdb/7LQS/entity_poly_seq/1,GLN,10"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:reference_to_entity_poly>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/entity_poly/1">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/entity_poly/">
                 <PDBo:referenced_by_entity_poly_seq rdf:resource="http://rdf.wwpdb.org/pdb/7LQS/entity_poly_seq/1,GLN,10"/>
               </rdf:Description>
             </PDBo:reference_to_entity_poly>
@@ -638,12 +638,12 @@
           <PDBo:entity_poly_seq rdf:about="http://rdf.wwpdb.org/pdb/7LQS/entity_poly_seq/1,HIS,11">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7LQS"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/chem_comp/HIS">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/chem_comp/">
                 <PDBo:referenced_by_entity_poly_seq rdf:resource="http://rdf.wwpdb.org/pdb/7LQS/entity_poly_seq/1,HIS,11"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:reference_to_entity_poly>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/entity_poly/1">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/entity_poly/">
                 <PDBo:referenced_by_entity_poly_seq rdf:resource="http://rdf.wwpdb.org/pdb/7LQS/entity_poly_seq/1,HIS,11"/>
               </rdf:Description>
             </PDBo:reference_to_entity_poly>
@@ -657,12 +657,12 @@
           <PDBo:entity_poly_seq rdf:about="http://rdf.wwpdb.org/pdb/7LQS/entity_poly_seq/1,SER,12">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7LQS"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/chem_comp/SER">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/chem_comp/">
                 <PDBo:referenced_by_entity_poly_seq rdf:resource="http://rdf.wwpdb.org/pdb/7LQS/entity_poly_seq/1,SER,12"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:reference_to_entity_poly>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/entity_poly/1">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/entity_poly/">
                 <PDBo:referenced_by_entity_poly_seq rdf:resource="http://rdf.wwpdb.org/pdb/7LQS/entity_poly_seq/1,SER,12"/>
               </rdf:Description>
             </PDBo:reference_to_entity_poly>
@@ -676,12 +676,12 @@
           <PDBo:entity_poly_seq rdf:about="http://rdf.wwpdb.org/pdb/7LQS/entity_poly_seq/1,ASP,13">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7LQS"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/chem_comp/ASP">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/chem_comp/">
                 <PDBo:referenced_by_entity_poly_seq rdf:resource="http://rdf.wwpdb.org/pdb/7LQS/entity_poly_seq/1,ASP,13"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:reference_to_entity_poly>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/entity_poly/1">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/entity_poly/">
                 <PDBo:referenced_by_entity_poly_seq rdf:resource="http://rdf.wwpdb.org/pdb/7LQS/entity_poly_seq/1,ASP,13"/>
               </rdf:Description>
             </PDBo:reference_to_entity_poly>
@@ -695,12 +695,12 @@
           <PDBo:entity_poly_seq rdf:about="http://rdf.wwpdb.org/pdb/7LQS/entity_poly_seq/1,LEU,14">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7LQS"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/chem_comp/LEU">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/chem_comp/">
                 <PDBo:referenced_by_entity_poly_seq rdf:resource="http://rdf.wwpdb.org/pdb/7LQS/entity_poly_seq/1,LEU,14"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:reference_to_entity_poly>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/entity_poly/1">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/entity_poly/">
                 <PDBo:referenced_by_entity_poly_seq rdf:resource="http://rdf.wwpdb.org/pdb/7LQS/entity_poly_seq/1,LEU,14"/>
               </rdf:Description>
             </PDBo:reference_to_entity_poly>
@@ -714,12 +714,12 @@
           <PDBo:entity_poly_seq rdf:about="http://rdf.wwpdb.org/pdb/7LQS/entity_poly_seq/1,CYS,15">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7LQS"/>
             <PDBo:reference_to_chem_comp>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/chem_comp/CYS">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/chem_comp/">
                 <PDBo:referenced_by_entity_poly_seq rdf:resource="http://rdf.wwpdb.org/pdb/7LQS/entity_poly_seq/1,CYS,15"/>
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:reference_to_entity_poly>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/entity_poly/1">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/entity_poly/">
                 <PDBo:referenced_by_entity_poly_seq rdf:resource="http://rdf.wwpdb.org/pdb/7LQS/entity_poly_seq/1,CYS,15"/>
               </rdf:Description>
             </PDBo:reference_to_entity_poly>
@@ -747,7 +747,7 @@
           <PDBo:exptl rdf:about="http://rdf.wwpdb.org/pdb/7LQS/exptl/7LQS,SOLUTION_NMR">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7LQS"/>
             <PDBo:reference_to_entry>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/entry/7LQS">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/entry/">
                 <PDBo:referenced_by_exptl rdf:resource="http://rdf.wwpdb.org/pdb/7LQS/exptl/7LQS,SOLUTION_NMR"/>
               </rdf:Description>
             </PDBo:reference_to_entry>
@@ -763,7 +763,7 @@
           <PDBo:pdbx_audit_revision_details rdf:about="http://rdf.wwpdb.org/pdb/7LQS/pdbx_audit_revision_details/Structure_model,1,1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7LQS"/>
             <PDBo:reference_to_pdbx_audit_revision_history>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/pdbx_audit_revision_history/Structure_model,1">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/pdbx_audit_revision_history/,">
                 <PDBo:referenced_by_pdbx_audit_revision_details rdf:resource="http://rdf.wwpdb.org/pdb/7LQS/pdbx_audit_revision_details/Structure_model,1,1"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_audit_revision_history>
@@ -821,7 +821,7 @@
           <PDBo:pdbx_database_status rdf:about="http://rdf.wwpdb.org/pdb/7LQS/pdbx_database_status/7LQS">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7LQS"/>
             <PDBo:reference_to_entry>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/entry/7LQS">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/entry/">
                 <PDBo:referenced_by_pdbx_database_status rdf:resource="http://rdf.wwpdb.org/pdb/7LQS/pdbx_database_status/7LQS"/>
               </rdf:Description>
             </PDBo:reference_to_entry>
@@ -843,7 +843,7 @@
           <PDBo:pdbx_entity_src_syn rdf:about="http://rdf.wwpdb.org/pdb/7LQS/pdbx_entity_src_syn/1,1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7LQS"/>
             <PDBo:reference_to_entity>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/entity/1">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/entity/">
                 <PDBo:referenced_by_pdbx_entity_src_syn rdf:resource="http://rdf.wwpdb.org/pdb/7LQS/pdbx_entity_src_syn/1,1"/>
               </rdf:Description>
             </PDBo:reference_to_entity>
@@ -865,7 +865,7 @@
           <PDBo:pdbx_nmr_ensemble rdf:about="http://rdf.wwpdb.org/pdb/7LQS/pdbx_nmr_ensemble/7LQS">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7LQS"/>
             <PDBo:reference_to_entry>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/entry/7LQS">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/entry/">
                 <PDBo:referenced_by_pdbx_nmr_ensemble rdf:resource="http://rdf.wwpdb.org/pdb/7LQS/pdbx_nmr_ensemble/7LQS"/>
               </rdf:Description>
             </PDBo:reference_to_entry>
@@ -974,7 +974,7 @@
           <PDBo:pdbx_nmr_refine rdf:about="http://rdf.wwpdb.org/pdb/7LQS/pdbx_nmr_refine/7LQS,3">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7LQS"/>
             <PDBo:reference_to_entry>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/entry/7LQS">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/entry/">
                 <PDBo:referenced_by_pdbx_nmr_refine rdf:resource="http://rdf.wwpdb.org/pdb/7LQS/pdbx_nmr_refine/7LQS,3"/>
               </rdf:Description>
             </PDBo:reference_to_entry>
@@ -991,7 +991,7 @@
           <PDBo:pdbx_nmr_representative rdf:about="http://rdf.wwpdb.org/pdb/7LQS/pdbx_nmr_representative/7LQS">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7LQS"/>
             <PDBo:reference_to_entry>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/entry/7LQS">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/entry/">
                 <PDBo:referenced_by_pdbx_nmr_representative rdf:resource="http://rdf.wwpdb.org/pdb/7LQS/pdbx_nmr_representative/7LQS"/>
               </rdf:Description>
             </PDBo:reference_to_entry>
@@ -1075,12 +1075,12 @@
           <PDBo:pdbx_poly_seq_scheme rdf:about="http://rdf.wwpdb.org/pdb/7LQS/pdbx_poly_seq_scheme/A,1,CYS,1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7LQS"/>
             <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/entity_poly_seq/1,CYS,1">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/entity_poly_seq/,,">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="http://rdf.wwpdb.org/pdb/7LQS/pdbx_poly_seq_scheme/A,1,CYS,1"/>
               </rdf:Description>
             </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_struct_asym>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/struct_asym/1,A">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/struct_asym/,">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="http://rdf.wwpdb.org/pdb/7LQS/pdbx_poly_seq_scheme/A,1,CYS,1"/>
               </rdf:Description>
             </PDBo:reference_to_struct_asym>
@@ -1101,12 +1101,12 @@
           <PDBo:pdbx_poly_seq_scheme rdf:about="http://rdf.wwpdb.org/pdb/7LQS/pdbx_poly_seq_scheme/A,1,CYS,2">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7LQS"/>
             <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/entity_poly_seq/1,CYS,2">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/entity_poly_seq/,,">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="http://rdf.wwpdb.org/pdb/7LQS/pdbx_poly_seq_scheme/A,1,CYS,2"/>
               </rdf:Description>
             </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_struct_asym>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/struct_asym/1,A">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/struct_asym/,">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="http://rdf.wwpdb.org/pdb/7LQS/pdbx_poly_seq_scheme/A,1,CYS,2"/>
               </rdf:Description>
             </PDBo:reference_to_struct_asym>
@@ -1127,12 +1127,12 @@
           <PDBo:pdbx_poly_seq_scheme rdf:about="http://rdf.wwpdb.org/pdb/7LQS/pdbx_poly_seq_scheme/A,1,SER,3">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7LQS"/>
             <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/entity_poly_seq/1,SER,3">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/entity_poly_seq/,,">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="http://rdf.wwpdb.org/pdb/7LQS/pdbx_poly_seq_scheme/A,1,SER,3"/>
               </rdf:Description>
             </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_struct_asym>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/struct_asym/1,A">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/struct_asym/,">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="http://rdf.wwpdb.org/pdb/7LQS/pdbx_poly_seq_scheme/A,1,SER,3"/>
               </rdf:Description>
             </PDBo:reference_to_struct_asym>
@@ -1153,12 +1153,12 @@
           <PDBo:pdbx_poly_seq_scheme rdf:about="http://rdf.wwpdb.org/pdb/7LQS/pdbx_poly_seq_scheme/A,1,ASN,4">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7LQS"/>
             <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/entity_poly_seq/1,ASN,4">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/entity_poly_seq/,,">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="http://rdf.wwpdb.org/pdb/7LQS/pdbx_poly_seq_scheme/A,1,ASN,4"/>
               </rdf:Description>
             </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_struct_asym>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/struct_asym/1,A">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/struct_asym/,">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="http://rdf.wwpdb.org/pdb/7LQS/pdbx_poly_seq_scheme/A,1,ASN,4"/>
               </rdf:Description>
             </PDBo:reference_to_struct_asym>
@@ -1179,12 +1179,12 @@
           <PDBo:pdbx_poly_seq_scheme rdf:about="http://rdf.wwpdb.org/pdb/7LQS/pdbx_poly_seq_scheme/A,1,PRO,5">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7LQS"/>
             <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/entity_poly_seq/1,PRO,5">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/entity_poly_seq/,,">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="http://rdf.wwpdb.org/pdb/7LQS/pdbx_poly_seq_scheme/A,1,PRO,5"/>
               </rdf:Description>
             </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_struct_asym>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/struct_asym/1,A">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/struct_asym/,">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="http://rdf.wwpdb.org/pdb/7LQS/pdbx_poly_seq_scheme/A,1,PRO,5"/>
               </rdf:Description>
             </PDBo:reference_to_struct_asym>
@@ -1205,12 +1205,12 @@
           <PDBo:pdbx_poly_seq_scheme rdf:about="http://rdf.wwpdb.org/pdb/7LQS/pdbx_poly_seq_scheme/A,1,ALA,6">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7LQS"/>
             <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/entity_poly_seq/1,ALA,6">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/entity_poly_seq/,,">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="http://rdf.wwpdb.org/pdb/7LQS/pdbx_poly_seq_scheme/A,1,ALA,6"/>
               </rdf:Description>
             </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_struct_asym>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/struct_asym/1,A">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/struct_asym/,">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="http://rdf.wwpdb.org/pdb/7LQS/pdbx_poly_seq_scheme/A,1,ALA,6"/>
               </rdf:Description>
             </PDBo:reference_to_struct_asym>
@@ -1231,12 +1231,12 @@
           <PDBo:pdbx_poly_seq_scheme rdf:about="http://rdf.wwpdb.org/pdb/7LQS/pdbx_poly_seq_scheme/A,1,CYS,7">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7LQS"/>
             <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/entity_poly_seq/1,CYS,7">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/entity_poly_seq/,,">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="http://rdf.wwpdb.org/pdb/7LQS/pdbx_poly_seq_scheme/A,1,CYS,7"/>
               </rdf:Description>
             </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_struct_asym>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/struct_asym/1,A">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/struct_asym/,">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="http://rdf.wwpdb.org/pdb/7LQS/pdbx_poly_seq_scheme/A,1,CYS,7"/>
               </rdf:Description>
             </PDBo:reference_to_struct_asym>
@@ -1257,12 +1257,12 @@
           <PDBo:pdbx_poly_seq_scheme rdf:about="http://rdf.wwpdb.org/pdb/7LQS/pdbx_poly_seq_scheme/A,1,GLN,8">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7LQS"/>
             <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/entity_poly_seq/1,GLN,8">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/entity_poly_seq/,,">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="http://rdf.wwpdb.org/pdb/7LQS/pdbx_poly_seq_scheme/A,1,GLN,8"/>
               </rdf:Description>
             </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_struct_asym>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/struct_asym/1,A">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/struct_asym/,">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="http://rdf.wwpdb.org/pdb/7LQS/pdbx_poly_seq_scheme/A,1,GLN,8"/>
               </rdf:Description>
             </PDBo:reference_to_struct_asym>
@@ -1283,12 +1283,12 @@
           <PDBo:pdbx_poly_seq_scheme rdf:about="http://rdf.wwpdb.org/pdb/7LQS/pdbx_poly_seq_scheme/A,1,VAL,9">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7LQS"/>
             <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/entity_poly_seq/1,VAL,9">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/entity_poly_seq/,,">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="http://rdf.wwpdb.org/pdb/7LQS/pdbx_poly_seq_scheme/A,1,VAL,9"/>
               </rdf:Description>
             </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_struct_asym>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/struct_asym/1,A">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/struct_asym/,">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="http://rdf.wwpdb.org/pdb/7LQS/pdbx_poly_seq_scheme/A,1,VAL,9"/>
               </rdf:Description>
             </PDBo:reference_to_struct_asym>
@@ -1309,12 +1309,12 @@
           <PDBo:pdbx_poly_seq_scheme rdf:about="http://rdf.wwpdb.org/pdb/7LQS/pdbx_poly_seq_scheme/A,1,GLN,10">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7LQS"/>
             <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/entity_poly_seq/1,GLN,10">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/entity_poly_seq/,,">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="http://rdf.wwpdb.org/pdb/7LQS/pdbx_poly_seq_scheme/A,1,GLN,10"/>
               </rdf:Description>
             </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_struct_asym>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/struct_asym/1,A">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/struct_asym/,">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="http://rdf.wwpdb.org/pdb/7LQS/pdbx_poly_seq_scheme/A,1,GLN,10"/>
               </rdf:Description>
             </PDBo:reference_to_struct_asym>
@@ -1335,12 +1335,12 @@
           <PDBo:pdbx_poly_seq_scheme rdf:about="http://rdf.wwpdb.org/pdb/7LQS/pdbx_poly_seq_scheme/A,1,HIS,11">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7LQS"/>
             <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/entity_poly_seq/1,HIS,11">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/entity_poly_seq/,,">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="http://rdf.wwpdb.org/pdb/7LQS/pdbx_poly_seq_scheme/A,1,HIS,11"/>
               </rdf:Description>
             </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_struct_asym>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/struct_asym/1,A">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/struct_asym/,">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="http://rdf.wwpdb.org/pdb/7LQS/pdbx_poly_seq_scheme/A,1,HIS,11"/>
               </rdf:Description>
             </PDBo:reference_to_struct_asym>
@@ -1361,12 +1361,12 @@
           <PDBo:pdbx_poly_seq_scheme rdf:about="http://rdf.wwpdb.org/pdb/7LQS/pdbx_poly_seq_scheme/A,1,SER,12">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7LQS"/>
             <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/entity_poly_seq/1,SER,12">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/entity_poly_seq/,,">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="http://rdf.wwpdb.org/pdb/7LQS/pdbx_poly_seq_scheme/A,1,SER,12"/>
               </rdf:Description>
             </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_struct_asym>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/struct_asym/1,A">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/struct_asym/,">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="http://rdf.wwpdb.org/pdb/7LQS/pdbx_poly_seq_scheme/A,1,SER,12"/>
               </rdf:Description>
             </PDBo:reference_to_struct_asym>
@@ -1387,12 +1387,12 @@
           <PDBo:pdbx_poly_seq_scheme rdf:about="http://rdf.wwpdb.org/pdb/7LQS/pdbx_poly_seq_scheme/A,1,ASP,13">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7LQS"/>
             <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/entity_poly_seq/1,ASP,13">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/entity_poly_seq/,,">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="http://rdf.wwpdb.org/pdb/7LQS/pdbx_poly_seq_scheme/A,1,ASP,13"/>
               </rdf:Description>
             </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_struct_asym>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/struct_asym/1,A">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/struct_asym/,">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="http://rdf.wwpdb.org/pdb/7LQS/pdbx_poly_seq_scheme/A,1,ASP,13"/>
               </rdf:Description>
             </PDBo:reference_to_struct_asym>
@@ -1413,12 +1413,12 @@
           <PDBo:pdbx_poly_seq_scheme rdf:about="http://rdf.wwpdb.org/pdb/7LQS/pdbx_poly_seq_scheme/A,1,LEU,14">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7LQS"/>
             <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/entity_poly_seq/1,LEU,14">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/entity_poly_seq/,,">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="http://rdf.wwpdb.org/pdb/7LQS/pdbx_poly_seq_scheme/A,1,LEU,14"/>
               </rdf:Description>
             </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_struct_asym>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/struct_asym/1,A">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/struct_asym/,">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="http://rdf.wwpdb.org/pdb/7LQS/pdbx_poly_seq_scheme/A,1,LEU,14"/>
               </rdf:Description>
             </PDBo:reference_to_struct_asym>
@@ -1439,12 +1439,12 @@
           <PDBo:pdbx_poly_seq_scheme rdf:about="http://rdf.wwpdb.org/pdb/7LQS/pdbx_poly_seq_scheme/A,1,CYS,15">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7LQS"/>
             <PDBo:reference_to_entity_poly_seq>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/entity_poly_seq/1,CYS,15">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/entity_poly_seq/,,">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="http://rdf.wwpdb.org/pdb/7LQS/pdbx_poly_seq_scheme/A,1,CYS,15"/>
               </rdf:Description>
             </PDBo:reference_to_entity_poly_seq>
             <PDBo:reference_to_struct_asym>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/struct_asym/1,A">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/struct_asym/,">
                 <PDBo:referenced_by_pdbx_poly_seq_scheme rdf:resource="http://rdf.wwpdb.org/pdb/7LQS/pdbx_poly_seq_scheme/A,1,CYS,15"/>
               </rdf:Description>
             </PDBo:reference_to_struct_asym>
@@ -1482,7 +1482,7 @@
           <PDBo:pdbx_struct_assembly_auth_evidence rdf:about="http://rdf.wwpdb.org/pdb/7LQS/pdbx_struct_assembly_auth_evidence/1,1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7LQS"/>
             <PDBo:reference_to_pdbx_struct_assembly>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/pdbx_struct_assembly/1">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/pdbx_struct_assembly/">
                 <PDBo:referenced_by_pdbx_struct_assembly_auth_evidence rdf:resource="http://rdf.wwpdb.org/pdb/7LQS/pdbx_struct_assembly_auth_evidence/1,1"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_struct_assembly>
@@ -1499,7 +1499,7 @@
           <PDBo:pdbx_struct_assembly_gen rdf:about="http://rdf.wwpdb.org/pdb/7LQS/pdbx_struct_assembly_gen/1,A,1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7LQS"/>
             <PDBo:reference_to_pdbx_struct_assembly>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/pdbx_struct_assembly/1">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/pdbx_struct_assembly/">
                 <PDBo:referenced_by_pdbx_struct_assembly_gen rdf:resource="http://rdf.wwpdb.org/pdb/7LQS/pdbx_struct_assembly_gen/1,A,1"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_struct_assembly>
@@ -2072,7 +2072,7 @@
           <PDBo:struct rdf:about="http://rdf.wwpdb.org/pdb/7LQS/struct/7LQS">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7LQS"/>
             <PDBo:reference_to_entry>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/entry/7LQS">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/entry/">
                 <PDBo:referenced_by_struct rdf:resource="http://rdf.wwpdb.org/pdb/7LQS/struct/7LQS"/>
               </rdf:Description>
             </PDBo:reference_to_entry>
@@ -2226,7 +2226,7 @@
           <PDBo:struct_keywords rdf:about="http://rdf.wwpdb.org/pdb/7LQS/struct_keywords/7LQS">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7LQS"/>
             <PDBo:reference_to_entry>
-              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/entry/7LQS">
+              <rdf:Description rdf:about="http://rdf.wwpdb.org/pdb/7LQS/entry/">
                 <PDBo:referenced_by_struct_keywords rdf:resource="http://rdf.wwpdb.org/pdb/7LQS/struct_keywords/7LQS"/>
               </rdf:Description>
             </PDBo:reference_to_entry>

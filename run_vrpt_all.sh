@@ -40,6 +40,7 @@ if [ ! -z $MTIME ] ; then
 fi
 
 #./scripts/update_sifts.sh $MTIME_OPT $FULL_OPT || exit $?
+#./scripts/update_pdbml_nextgen.sh $MTIME_OPT || exit $?
 
 #./scripts/update_pdbml.sh $MTIME_OPT || exit $?
 

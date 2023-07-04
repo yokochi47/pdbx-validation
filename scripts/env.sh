@@ -107,8 +107,15 @@ PDBML_SIFTS=pdbml-sifts # used in test directory
 
 PDBML_NOATOM_SIFTS=XML-noatom-sifts
 
+NEXTGEN=nextgen
+NEXTGEN_FILE_PREFIX=pdb_0000
+NEXTGEN_FILE_SUFFIX=_xyz-no-atom-enrich
+
 XSD2MERGE_PDBML_SIFTS_XSL=stylesheet/xsd2merge_pdbml_sifts.xsl
 MERGE_PDBML_SIFTS_XSL=stylesheet/merge_pdbml_sifts.xsl
+
+XSD2MERGE_PDBML_NEXTGEN_XSL=stylesheet/xsd2merge_pdbml_nextgen.xsl
+MERGE_PDBML_NEXTGEN_XSL=stylesheet/merge_pdbml_nextgen.xsl
 
 CC_CIF_URL=ftp.pdbj.org/pub/pdb/refdata/chem_comp
 MMCIF_CC=pub/pdb/refdata/chem_comp

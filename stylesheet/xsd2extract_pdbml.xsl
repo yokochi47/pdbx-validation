@@ -54,12 +54,12 @@
       &lt;xsl:when test="$month_name='NOV'"&gt;11&lt;/xsl:when&gt;
       &lt;xsl:when test="$month_name='DEC'"&gt;12&lt;/xsl:when&gt;
       &lt;xsl:otherwise&gt;
-        &lt;xsl:call-template name="error_handler"&gt;
-          &lt;xsl:with-param name="terminate"&gt;yes&lt;/xsl:with-param&gt;
-          &lt;xsl:with-param name="error_message"&gt;
+	&lt;xsl:call-template name="error_handler"&gt;
+	  &lt;xsl:with-param name="terminate"&gt;yes&lt;/xsl:with-param&gt;
+	  &lt;xsl:with-param name="error_message"&gt;
 Month name, &lt;xsl:value-of select="$month_name"/&gt;, is not listed in XSLT code.
-          &lt;/xsl:with-param&gt;
-        &lt;/xsl:call-template&gt;
+	  &lt;/xsl:with-param&gt;
+	&lt;/xsl:call-template&gt;
       &lt;/xsl:otherwise&gt;
     &lt;/xsl:choose&gt;
   &lt;/xsl:variable&gt;
@@ -72,10 +72,10 @@ Month name, &lt;xsl:value-of select="$month_name"/&gt;, is not listed in XSLT co
 
     &lt;xsl:if test="$entry_id!=$pdb_id"&gt;
       &lt;xsl:call-template name="error_handler"&gt;
-        &lt;xsl:with-param name="terminate"&gt;yes&lt;/xsl:with-param&gt;
-        &lt;xsl:with-param name="error_message"&gt;
+	&lt;xsl:with-param name="terminate"&gt;yes&lt;/xsl:with-param&gt;
+	&lt;xsl:with-param name="error_message"&gt;
 Unmatched entry ID in both documents (&lt;xsl:value-of select="$entry_id"/&gt; and &lt;xsl:value-of select="$pdb_id"/&gt;).
-        &lt;/xsl:with-param&gt;
+	&lt;/xsl:with-param&gt;
       &lt;/xsl:call-template&gt;
     &lt;/xsl:if&gt;
 
@@ -90,17 +90,17 @@ Unmatched entry ID in both documents (&lt;xsl:value-of select="$entry_id"/&gt; a
     &lt;xsl:element name="VRPTx:{local-name()}"&gt;
       &lt;xsl:apply-templates select="@*|node()" mode="data-item"/&gt;
       &lt;xsl:choose&gt;
-        &lt;xsl:when test="local-name()='pdbx_database_status'"&gt;
-          &lt;xsl:element name="VRPTx:validation_created_date"&gt;&lt;xsl:value-of select="$validation_created_date"/&gt;&lt;/xsl:element&gt;
-        &lt;/xsl:when&gt;
-        &lt;xsl:when test="local-name()='pdbx_nmr_ensemble'"&gt;
-          &lt;xsl:element name="VRPTx:atom_consistency_flag"&gt;
-            &lt;xsl:choose&gt;
-              &lt;xsl:when test="$nmr_models_consistency_flag='True'"&gt;Y&lt;/xsl:when&gt;
-              &lt;xsl:otherwise&gt;N&lt;/xsl:otherwise&gt;
-            &lt;/xsl:choose&gt;
-          &lt;/xsl:element&gt;
-        &lt;/xsl:when&gt;
+	&lt;xsl:when test="local-name()='pdbx_database_status'"&gt;
+	  &lt;xsl:element name="VRPTx:validation_created_date"&gt;&lt;xsl:value-of select="$validation_created_date"/&gt;&lt;/xsl:element&gt;
+	&lt;/xsl:when&gt;
+	&lt;xsl:when test="local-name()='pdbx_nmr_ensemble'"&gt;
+	  &lt;xsl:element name="VRPTx:atom_consistency_flag"&gt;
+	    &lt;xsl:choose&gt;
+	      &lt;xsl:when test="$nmr_models_consistency_flag='True'"&gt;Y&lt;/xsl:when&gt;
+	      &lt;xsl:otherwise&gt;N&lt;/xsl:otherwise&gt;
+	    &lt;/xsl:choose&gt;
+	  &lt;/xsl:element&gt;
+	&lt;/xsl:when&gt;
       &lt;/xsl:choose&gt;
     &lt;/xsl:element&gt;
   &lt;/xsl:template&gt;
@@ -131,16 +131,16 @@ Unmatched entry ID in both documents (&lt;xsl:value-of select="$entry_id"/&gt; a
     &lt;xsl:param name="terminate"&gt;no&lt;/xsl:param&gt;
     &lt;xsl:choose&gt;
       &lt;xsl:when test="$terminate='yes'"&gt;
-        &lt;xsl:message terminate="yes"&gt;
-          &lt;xsl:text&gt;ERROR in extract_pdbml.xsl: &lt;/xsl:text&gt;
-          &lt;xsl:value-of select="$error_message"/&gt;
-        &lt;/xsl:message&gt;
+	&lt;xsl:message terminate="yes"&gt;
+	  &lt;xsl:text&gt;ERROR in extract_pdbml.xsl: &lt;/xsl:text&gt;
+	  &lt;xsl:value-of select="$error_message"/&gt;
+	&lt;/xsl:message&gt;
       &lt;/xsl:when&gt;
       &lt;xsl:otherwise&gt;
-        &lt;span style="font-weight: bold; color: red"&gt;
-          &lt;xsl:text&gt;ERROR: &lt;/xsl:text&gt;
-          &lt;xsl:value-of select="$error_message"/&gt;
-        &lt;/span&gt;
+	&lt;span style="font-weight: bold; color: red"&gt;
+	  &lt;xsl:text&gt;ERROR: &lt;/xsl:text&gt;
+	  &lt;xsl:value-of select="$error_message"/&gt;
+	&lt;/span&gt;
       &lt;/xsl:otherwise&gt;
     &lt;/xsl:choose&gt;
   &lt;/xsl:template&gt;
@@ -150,7 +150,7 @@ Unmatched entry ID in both documents (&lt;xsl:value-of select="$entry_id"/&gt; a
   <xsl2:template name="categories">
     <xsl2:for-each select="xsd:complexType[@name='datablockType']/xsd:all/xsd:element">
       <xsl2:call-template name="category">
-        <xsl2:with-param name="name" select="@name"/>
+	<xsl2:with-param name="name" select="@name"/>
       </xsl2:call-template>
     </xsl2:for-each>
   </xsl2:template>

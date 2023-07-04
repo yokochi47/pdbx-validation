@@ -207,10 +207,14 @@ File path | Document
 
 ## Release notes
 
-- **Jun 23, 2023**: Release v4.4.23
+- **Jul 4, 2023**: Release v4.4.23
 	- Update wwPDB Validation Information Dictionary to 4.373.
 	- Support NMR restraint remediation.
-        - Set _diffrn.pdbx_serial_crystal_experiment is not mandatory.
+	- Set _diffrn.pdbx_serial_crystal_experiment is not mandatory.
+	- Fix clean-up scripts.
+	- Fix invalid code of RDF resource URI.
+	- Strip carriage return codes from PDBo:entity_poly.pdbx_seq_one_letter_code and PDBo:entity_poly.pdbx_seq_one_letter_code_can.
+	- Transition SIFTS resource from SIFTS to PDB NextGen Archive because SIFTS site is closed.
 
 - **Jun 21, 2023**: Release v4.4.22
 	- Update wwPDB Validation Information Dictionary to 4.372.

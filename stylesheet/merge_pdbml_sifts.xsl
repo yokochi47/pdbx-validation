@@ -28,10 +28,10 @@
 
     <xsl:if test="$entry_id!=$pdb_id">
       <xsl:call-template name="error_handler">
-        <xsl:with-param name="terminate">yes</xsl:with-param>
-        <xsl:with-param name="error_message">
+	<xsl:with-param name="terminate">yes</xsl:with-param>
+	<xsl:with-param name="error_message">
 Unmatched entry ID in both documents (<xsl:value-of select="$entry_id"/> and <xsl:value-of select="$pdb_id"/>).
-        </xsl:with-param>
+	</xsl:with-param>
       </xsl:call-template>
     </xsl:if>
 
@@ -3626,16 +3626,16 @@ Unmatched entry ID in both documents (<xsl:value-of select="$entry_id"/> and <xs
     <xsl:param name="terminate">no</xsl:param>
     <xsl:choose>
       <xsl:when test="$terminate='yes'">
-        <xsl:message terminate="yes">
-          <xsl:text>ERROR in merge_pdbml_info.xsl: </xsl:text>
-          <xsl:value-of select="$error_message"/>
-        </xsl:message>
+	<xsl:message terminate="yes">
+	  <xsl:text>ERROR in merge_pdbml_info.xsl: </xsl:text>
+	  <xsl:value-of select="$error_message"/>
+	</xsl:message>
       </xsl:when>
       <xsl:otherwise>
-        <span style="font-weight: bold; color: red">
-          <xsl:text>ERROR: </xsl:text>
-          <xsl:value-of select="$error_message"/>
-        </span>
+	<span style="font-weight: bold; color: red">
+	  <xsl:text>ERROR: </xsl:text>
+	  <xsl:value-of select="$error_message"/>
+	</span>
       </xsl:otherwise>
     </xsl:choose>
   </xsl:template>
@@ -3648,51 +3648,51 @@ Unmatched entry ID in both documents (<xsl:value-of select="$entry_id"/> and <xs
       <xsl:variable name="entity_id"><xsl:value-of select="$datablock/PDBx:pdbx_poly_seq_schemeCategory/PDBx:pdbx_poly_seq_scheme[@asym_id=$asym_id][1]/@entity_id"/></xsl:variable>
 
       <xsl:for-each select="sifts:segment">
-        <xsl:variable name="segment_id"><xsl:value-of select="position()"/></xsl:variable>
-        <xsl:variable name="seq_id_start"><xsl:value-of select="@start"/></xsl:variable>
-        <xsl:variable name="seq_id_end"><xsl:value-of select="@end"/></xsl:variable>
-        <xsl:variable name="seq_id_range"><xsl:value-of select="number(@end) - number(@start) + 1"/></xsl:variable>
+	<xsl:variable name="segment_id"><xsl:value-of select="position()"/></xsl:variable>
+	<xsl:variable name="seq_id_start"><xsl:value-of select="@start"/></xsl:variable>
+	<xsl:variable name="seq_id_end"><xsl:value-of select="@end"/></xsl:variable>
+	<xsl:variable name="seq_id_range"><xsl:value-of select="number(@end) - number(@start) + 1"/></xsl:variable>
 
-        <xsl:variable name="max_range">
-          <xsl:for-each select="sifts:listMapRegion/sifts:mapRegion/sifts:db[@dbSource='UniProt']">
-            <xsl:sort select="number(@end) - number(@start)" data-type="number" order="descending"/>
-            <xsl:if test="position()=1"><xsl:value-of select="number(@end) - number(@start)"/></xsl:if>
-          </xsl:for-each>
-        </xsl:variable>
+	<xsl:variable name="max_range">
+	  <xsl:for-each select="sifts:listMapRegion/sifts:mapRegion/sifts:db[@dbSource='UniProt']">
+	    <xsl:sort select="number(@end) - number(@start)" data-type="number" order="descending"/>
+	    <xsl:if test="position()=1"><xsl:value-of select="number(@end) - number(@start)"/></xsl:if>
+	  </xsl:for-each>
+	</xsl:variable>
 
-        <xsl:for-each select="sifts:listMapRegion/sifts:mapRegion/sifts:db[@dbSource='UniProt']">
+	<xsl:for-each select="sifts:listMapRegion/sifts:mapRegion/sifts:db[@dbSource='UniProt']">
 
-          <xsl:variable name="instance_id"><xsl:value-of select="position()"/></xsl:variable>
-          <xsl:variable name="unp_acc"><xsl:value-of select="@dbAccessionId"/></xsl:variable>
+	  <xsl:variable name="instance_id"><xsl:value-of select="position()"/></xsl:variable>
+	  <xsl:variable name="unp_acc"><xsl:value-of select="@dbAccessionId"/></xsl:variable>
 
-          <PDBx:pdbx_sifts_unp_segments entity_id="{$entity_id}" asym_id="{$asym_id}" unp_acc="{$unp_acc}" segment_id="{$segment_id}" instance_id="{$instance_id}">
+	  <PDBx:pdbx_sifts_unp_segments entity_id="{$entity_id}" asym_id="{$asym_id}" unp_acc="{$unp_acc}" segment_id="{$segment_id}" instance_id="{$instance_id}">
 
-            <xsl:variable name="range"><xsl:value-of select="number(@end) - number(@start) + 1"/></xsl:variable>
+	    <xsl:variable name="range"><xsl:value-of select="number(@end) - number(@start) + 1"/></xsl:variable>
 
-            <PDBx:unp_start><xsl:value-of select="@start"/></PDBx:unp_start>
-            <PDBx:unp_end><xsl:value-of select="@end"/></PDBx:unp_end>
-            <PDBx:seq_id_start><xsl:value-of select="$seq_id_start"/></PDBx:seq_id_start>
-            <PDBx:seq_id_end><xsl:value-of select="$seq_id_end"/></PDBx:seq_id_end>
-            <xsl:choose>
-              <xsl:when test="number(@end) - number(@start)=$max_range">
-                <PDBx:best_mapping>Y</PDBx:best_mapping>
-              </xsl:when>
-              <xsl:otherwise>
-                <PDBx:best_mapping>N</PDBx:best_mapping>
-              </xsl:otherwise>
-            </xsl:choose>
-            <xsl:choose>
-              <xsl:when test="$seq_id_range > $range">
-                <PDBx:identity>1.000</PDBx:identity>
-              </xsl:when>
-              <xsl:otherwise>
-                <PDBx:identity><xsl:value-of select="format-number($seq_id_range div $range,'0.000')"/></PDBx:identity>
-              </xsl:otherwise>
-            </xsl:choose>
+	    <PDBx:unp_start><xsl:value-of select="@start"/></PDBx:unp_start>
+	    <PDBx:unp_end><xsl:value-of select="@end"/></PDBx:unp_end>
+	    <PDBx:seq_id_start><xsl:value-of select="$seq_id_start"/></PDBx:seq_id_start>
+	    <PDBx:seq_id_end><xsl:value-of select="$seq_id_end"/></PDBx:seq_id_end>
+	    <xsl:choose>
+	      <xsl:when test="number(@end) - number(@start)=$max_range">
+		<PDBx:best_mapping>Y</PDBx:best_mapping>
+	      </xsl:when>
+	      <xsl:otherwise>
+		<PDBx:best_mapping>N</PDBx:best_mapping>
+	      </xsl:otherwise>
+	    </xsl:choose>
+	    <xsl:choose>
+	      <xsl:when test="$seq_id_range > $range">
+		<PDBx:identity>1.000</PDBx:identity>
+	      </xsl:when>
+	      <xsl:otherwise>
+		<PDBx:identity><xsl:value-of select="format-number($seq_id_range div $range,'0.000')"/></PDBx:identity>
+	      </xsl:otherwise>
+	    </xsl:choose>
 
-          </PDBx:pdbx_sifts_unp_segments>
+	  </PDBx:pdbx_sifts_unp_segments>
 
-        </xsl:for-each>
+	</xsl:for-each>
 
       </xsl:for-each>
 
@@ -3708,34 +3708,34 @@ Unmatched entry ID in both documents (<xsl:value-of select="$entry_id"/> and <xs
       <xsl:variable name="entity_id"><xsl:value-of select="$datablock/PDBx:pdbx_poly_seq_schemeCategory/PDBx:pdbx_poly_seq_scheme[@asym_id=$asym_id][1]/@entity_id"/></xsl:variable>
 
       <xsl:for-each select="sifts:segment">
-        <xsl:variable name="segment_id"><xsl:value-of select="position()"/></xsl:variable>
+	<xsl:variable name="segment_id"><xsl:value-of select="position()"/></xsl:variable>
 
-        <xsl:for-each select="sifts:listMapRegion/sifts:mapRegion/sifts:db[@dbSource!='PDB' and @dbSource!='UniProt' and @dbSource!='EC']">
+	<xsl:for-each select="sifts:listMapRegion/sifts:mapRegion/sifts:db[@dbSource!='PDB' and @dbSource!='UniProt' and @dbSource!='EC']">
 
-          <xsl:variable name="seq_id_start"><xsl:value-of select="../@start"/></xsl:variable>
-          <xsl:variable name="seq_id_end"><xsl:value-of select="../@end"/></xsl:variable>
+	  <xsl:variable name="seq_id_start"><xsl:value-of select="../@start"/></xsl:variable>
+	  <xsl:variable name="seq_id_end"><xsl:value-of select="../@end"/></xsl:variable>
 
-          <xsl:variable name="instance_id"><xsl:value-of select="position()"/></xsl:variable>
-          <xsl:variable name="xref_db"><xsl:value-of select="@dbSource"/></xsl:variable>
-          <xsl:variable name="xref_db_acc">
-            <xsl:choose>
-              <xsl:when test="contains(@dbAccessionId,':') and @dbSource!='GO'">
-                <xsl:value-of select="substring-after(@dbAccessionId,':')"/>
-              </xsl:when>
-              <xsl:otherwise>
-                <xsl:value-of select="@dbAccessionId"/>
-              </xsl:otherwise>
-            </xsl:choose>
-          </xsl:variable>
+	  <xsl:variable name="instance_id"><xsl:value-of select="position()"/></xsl:variable>
+	  <xsl:variable name="xref_db"><xsl:value-of select="@dbSource"/></xsl:variable>
+	  <xsl:variable name="xref_db_acc">
+	    <xsl:choose>
+	      <xsl:when test="contains(@dbAccessionId,':') and @dbSource!='GO'">
+		<xsl:value-of select="substring-after(@dbAccessionId,':')"/>
+	      </xsl:when>
+	      <xsl:otherwise>
+		<xsl:value-of select="@dbAccessionId"/>
+	      </xsl:otherwise>
+	    </xsl:choose>
+	  </xsl:variable>
 
-          <PDBx:pdbx_sifts_xref_db_segments entity_id="{$entity_id}" asym_id="{$asym_id}" xref_db="{$xref_db}" xref_db_acc="{$xref_db_acc}" segment_id="{$segment_id}" instance_id="{$instance_id}" seq_id_start="{$seq_id_start}" seq_id_end="{$seq_id_end}">
-            <!-- v4.356 or older
-            <PDBx:seq_id_start><xsl:value-of select="$seq_id_start"/></PDBx:seq_id_start>
-            <PDBx:seq_id_end><xsl:value-of select="$seq_id_end"/></PDBx:seq_id_end>
-            -->
-          </PDBx:pdbx_sifts_xref_db_segments>
+	  <PDBx:pdbx_sifts_xref_db_segments entity_id="{$entity_id}" asym_id="{$asym_id}" xref_db="{$xref_db}" xref_db_acc="{$xref_db_acc}" segment_id="{$segment_id}" instance_id="{$instance_id}" seq_id_start="{$seq_id_start}" seq_id_end="{$seq_id_end}">
+	    <!-- v4.356 or older
+	    <PDBx:seq_id_start><xsl:value-of select="$seq_id_start"/></PDBx:seq_id_start>
+	    <PDBx:seq_id_end><xsl:value-of select="$seq_id_end"/></PDBx:seq_id_end>
+	    -->
+	  </PDBx:pdbx_sifts_xref_db_segments>
 
-        </xsl:for-each>
+	</xsl:for-each>
 
       </xsl:for-each>
 
@@ -3746,14 +3746,14 @@ Unmatched entry ID in both documents (<xsl:value-of select="$entry_id"/> and <xs
   <xsl:template name="merge_pdbx_sifts_unp_segments">
     <xsl:if test="PDBx:datablock/PDBx:pdbx_sifts_unp_segmentsCategory or $sifts_entry/sifts:entity/sifts:segment/sifts:listMapRegion/sifts:mapRegion/sifts:db[@dbSource='UniProt']">
       <xsl:element name="PDBx:pdbx_sifts_unp_segmentsCategory">
-        <xsl:choose>
-          <xsl:when test="PDBx:datablock/PDBx:pdbx_sifts_unp_segmentsCategory">
-            <xsl:apply-templates select="PDBx:datablock/PDBx:pdbx_sifts_unp_segments/*" mode="category-element"/>
-          </xsl:when>
-          <xsl:otherwise>
-            <xsl:call-template name="extract_pdbx_sifts_unp_segments"/>
-          </xsl:otherwise>
-        </xsl:choose>
+	<xsl:choose>
+	  <xsl:when test="PDBx:datablock/PDBx:pdbx_sifts_unp_segmentsCategory">
+	    <xsl:apply-templates select="PDBx:datablock/PDBx:pdbx_sifts_unp_segments/*" mode="category-element"/>
+	  </xsl:when>
+	  <xsl:otherwise>
+	    <xsl:call-template name="extract_pdbx_sifts_unp_segments"/>
+	  </xsl:otherwise>
+	</xsl:choose>
       </xsl:element>
     </xsl:if>
   </xsl:template>
@@ -3761,14 +3761,14 @@ Unmatched entry ID in both documents (<xsl:value-of select="$entry_id"/> and <xs
   <xsl:template name="merge_pdbx_sifts_xref_db_segments">
     <xsl:if test="PDBx:datablock/PDBx:pdbx_sifts_xref_db_segmentsCategory or $sifts_entry/sifts:entity/sifts:segment/sifts:listMapRegion/sifts:mapRegion/sifts:db[@dbSource!='PDB' and @dbSource!='UniProt' and @dbSource!='EC']">
       <xsl:element name="PDBx:pdbx_sifts_xref_db_segmentsCategory">
-        <xsl:choose>
-          <xsl:when test="PDBx:datablock/PDBx:pdbx_sifts_xref_db_segmentsCategory">
-            <xsl:apply-templates select="PDBx:datablock/PDBx:pdbx_sifts_xref_db_segments/*" mode="category-element"/>
-          </xsl:when>
-          <xsl:otherwise>
-            <xsl:call-template name="extract_pdbx_sifts_xref_db_segments"/>
-          </xsl:otherwise>
-        </xsl:choose>
+	<xsl:choose>
+	  <xsl:when test="PDBx:datablock/PDBx:pdbx_sifts_xref_db_segmentsCategory">
+	    <xsl:apply-templates select="PDBx:datablock/PDBx:pdbx_sifts_xref_db_segments/*" mode="category-element"/>
+	  </xsl:when>
+	  <xsl:otherwise>
+	    <xsl:call-template name="extract_pdbx_sifts_xref_db_segments"/>
+	  </xsl:otherwise>
+	</xsl:choose>
       </xsl:element>
     </xsl:if>
   </xsl:template>

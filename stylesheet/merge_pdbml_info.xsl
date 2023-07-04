@@ -20,10 +20,10 @@
 
     <xsl:if test="$entry_id!=$pdb_id">
       <xsl:call-template name="error_handler">
-        <xsl:with-param name="terminate">yes</xsl:with-param>
-        <xsl:with-param name="error_message">
+	<xsl:with-param name="terminate">yes</xsl:with-param>
+	<xsl:with-param name="error_message">
 Unmatched entry ID in both documents (<xsl:value-of select="$entry_id"/> and <xsl:value-of select="$pdb_id"/>).
-        </xsl:with-param>
+	</xsl:with-param>
       </xsl:call-template>
     </xsl:if>
 
@@ -1765,16 +1765,16 @@ Unmatched entry ID in both documents (<xsl:value-of select="$entry_id"/> and <xs
     <xsl:param name="terminate">no</xsl:param>
     <xsl:choose>
       <xsl:when test="$terminate='yes'">
-        <xsl:message terminate="yes">
-          <xsl:text>ERROR in merge_pdbml_info.xsl: </xsl:text>
-          <xsl:value-of select="$error_message"/>
-        </xsl:message>
+	<xsl:message terminate="yes">
+	  <xsl:text>ERROR in merge_pdbml_info.xsl: </xsl:text>
+	  <xsl:value-of select="$error_message"/>
+	</xsl:message>
       </xsl:when>
       <xsl:otherwise>
-        <span style="font-weight: bold; color: red">
-          <xsl:text>ERROR: </xsl:text>
-          <xsl:value-of select="$error_message"/>
-        </span>
+	<span style="font-weight: bold; color: red">
+	  <xsl:text>ERROR: </xsl:text>
+	  <xsl:value-of select="$error_message"/>
+	</span>
       </xsl:otherwise>
     </xsl:choose>
   </xsl:template>
@@ -1782,12 +1782,12 @@ Unmatched entry ID in both documents (<xsl:value-of select="$entry_id"/> and <xs
   <xsl:template name="merge_em_admin">
     <xsl:if test="VRPTx:datablock/VRPTx:em_adminCategory or $alt_datablock/VRPTx:em_adminCategory">
       <xsl:element name="VRPTx:em_adminCategory">
-        <xsl:if test="VRPTx:datablock/VRPTx:em_adminCategory">
-          <xsl:apply-templates select="VRPTx:datablock/VRPTx:em_adminCategory/*" mode="category-element"/>
-        </xsl:if>
-        <xsl:if test="$alt_datablock/VRPTx:em_adminCategory">
-          <xsl:apply-templates select="$alt_datablock/VRPTx:em_adminCategory/*" mode="category-element"/>
-        </xsl:if>
+	<xsl:if test="VRPTx:datablock/VRPTx:em_adminCategory">
+	  <xsl:apply-templates select="VRPTx:datablock/VRPTx:em_adminCategory/*" mode="category-element"/>
+	</xsl:if>
+	<xsl:if test="$alt_datablock/VRPTx:em_adminCategory">
+	  <xsl:apply-templates select="$alt_datablock/VRPTx:em_adminCategory/*" mode="category-element"/>
+	</xsl:if>
       </xsl:element>
     </xsl:if>
   </xsl:template>
@@ -1795,12 +1795,12 @@ Unmatched entry ID in both documents (<xsl:value-of select="$entry_id"/> and <xs
   <xsl:template name="merge_pdbx_validate_rmsd_angle">
     <xsl:if test="VRPTx:datablock/VRPTx:pdbx_validate_rmsd_angleCategory or $alt_datablock/VRPTx:pdbx_validate_rmsd_angleCategory">
       <xsl:element name="VRPTx:pdbx_validate_rmsd_angleCategory">
-        <xsl:if test="VRPTx:datablock/VRPTx:pdbx_validate_rmsd_angleCategory">
-          <xsl:apply-templates select="VRPTx:datablock/VRPTx:pdbx_validate_rmsd_angleCategory/*" mode="category-element"/>
-        </xsl:if>
-        <xsl:if test="$alt_datablock/VRPTx:pdbx_validate_rmsd_angleCategory">
-          <xsl:apply-templates select="$alt_datablock/VRPTx:pdbx_validate_rmsd_angleCategory/*" mode="category-element"/>
-        </xsl:if>
+	<xsl:if test="VRPTx:datablock/VRPTx:pdbx_validate_rmsd_angleCategory">
+	  <xsl:apply-templates select="VRPTx:datablock/VRPTx:pdbx_validate_rmsd_angleCategory/*" mode="category-element"/>
+	</xsl:if>
+	<xsl:if test="$alt_datablock/VRPTx:pdbx_validate_rmsd_angleCategory">
+	  <xsl:apply-templates select="$alt_datablock/VRPTx:pdbx_validate_rmsd_angleCategory/*" mode="category-element"/>
+	</xsl:if>
       </xsl:element>
     </xsl:if>
   </xsl:template>
@@ -1808,12 +1808,12 @@ Unmatched entry ID in both documents (<xsl:value-of select="$entry_id"/> and <xs
   <xsl:template name="merge_pdbx_validate_rmsd_bond">
     <xsl:if test="VRPTx:datablock/VRPTx:pdbx_validate_rmsd_bondCategory or $alt_datablock/VRPTx:pdbx_validate_rmsd_bondCategory">
       <xsl:element name="VRPTx:pdbx_validate_rmsd_bondCategory">
-        <xsl:if test="VRPTx:datablock/VRPTx:pdbx_validate_rmsd_bondCategory">
-          <xsl:apply-templates select="VRPTx:datablock/VRPTx:pdbx_validate_rmsd_bondCategory/*" mode="category-element"/>
-        </xsl:if>
-        <xsl:if test="$alt_datablock/VRPTx:pdbx_validate_rmsd_bondCategory">
-          <xsl:apply-templates select="$alt_datablock/VRPTx:pdbx_validate_rmsd_bondCategory/*" mode="category-element"/>
-        </xsl:if>
+	<xsl:if test="VRPTx:datablock/VRPTx:pdbx_validate_rmsd_bondCategory">
+	  <xsl:apply-templates select="VRPTx:datablock/VRPTx:pdbx_validate_rmsd_bondCategory/*" mode="category-element"/>
+	</xsl:if>
+	<xsl:if test="$alt_datablock/VRPTx:pdbx_validate_rmsd_bondCategory">
+	  <xsl:apply-templates select="$alt_datablock/VRPTx:pdbx_validate_rmsd_bondCategory/*" mode="category-element"/>
+	</xsl:if>
       </xsl:element>
     </xsl:if>
   </xsl:template>
@@ -1821,12 +1821,12 @@ Unmatched entry ID in both documents (<xsl:value-of select="$entry_id"/> and <xs
   <xsl:template name="merge_pdbx_validate_close_contact">
     <xsl:if test="VRPTx:datablock/VRPTx:pdbx_validate_close_contactCategory or $alt_datablock/VRPTx:pdbx_validate_close_contactCategory">
       <xsl:element name="VRPTx:pdbx_validate_close_contactCategory">
-        <xsl:if test="VRPTx:datablock/VRPTx:pdbx_validate_close_contactCategory">
-          <xsl:apply-templates select="VRPTx:datablock/VRPTx:pdbx_validate_close_contactCategory/*" mode="category-element"/>
-        </xsl:if>
-        <xsl:if test="$alt_datablock/VRPTx:pdbx_validate_close_contactCategory">
-          <xsl:apply-templates select="$alt_datablock/VRPTx:pdbx_validate_close_contactCategory/*" mode="category-element"/>
-        </xsl:if>
+	<xsl:if test="VRPTx:datablock/VRPTx:pdbx_validate_close_contactCategory">
+	  <xsl:apply-templates select="VRPTx:datablock/VRPTx:pdbx_validate_close_contactCategory/*" mode="category-element"/>
+	</xsl:if>
+	<xsl:if test="$alt_datablock/VRPTx:pdbx_validate_close_contactCategory">
+	  <xsl:apply-templates select="$alt_datablock/VRPTx:pdbx_validate_close_contactCategory/*" mode="category-element"/>
+	</xsl:if>
       </xsl:element>
     </xsl:if>
   </xsl:template>
@@ -1834,12 +1834,12 @@ Unmatched entry ID in both documents (<xsl:value-of select="$entry_id"/> and <xs
   <xsl:template name="merge_pdbx_validate_symm_contact">
     <xsl:if test="VRPTx:datablock/VRPTx:pdbx_validate_symm_contactCategory or $alt_datablock/VRPTx:pdbx_validate_symm_contactCategory">
       <xsl:element name="VRPTx:pdbx_validate_symm_contactCategory">
-        <xsl:if test="VRPTx:datablock/VRPTx:pdbx_validate_symm_contactCategory">
-          <xsl:apply-templates select="VRPTx:datablock/VRPTx:pdbx_validate_symm_contactCategory/*" mode="category-element"/>
-        </xsl:if>
-        <xsl:if test="$alt_datablock/VRPTx:pdbx_validate_symm_contactCategory">
-          <xsl:apply-templates select="$alt_datablock/VRPTx:pdbx_validate_symm_contactCategory/*" mode="category-element"/>
-        </xsl:if>
+	<xsl:if test="VRPTx:datablock/VRPTx:pdbx_validate_symm_contactCategory">
+	  <xsl:apply-templates select="VRPTx:datablock/VRPTx:pdbx_validate_symm_contactCategory/*" mode="category-element"/>
+	</xsl:if>
+	<xsl:if test="$alt_datablock/VRPTx:pdbx_validate_symm_contactCategory">
+	  <xsl:apply-templates select="$alt_datablock/VRPTx:pdbx_validate_symm_contactCategory/*" mode="category-element"/>
+	</xsl:if>
       </xsl:element>
     </xsl:if>
   </xsl:template>
