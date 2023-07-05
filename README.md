@@ -213,10 +213,10 @@ File path | Document
 	- Fix clean-up scripts.
 	- Fix invalid code of RDF resource URI.
 	- Strip carriage return codes from PDBo:entity_poly.pdbx_seq_one_letter_code and PDBo:entity_poly.pdbx_seq_one_letter_code_can.
-	- Enable to switch SIFTS resource from SIFTS or PDB NextGen Archive.
+	- Enable to switch SIFTS resource from original SIFTS or PDB NextGen Archive.
 	- Use rsync service to retrieve SIFTS resource. 'aria2c' is not necessary.
-	- Mitigate validation report data issue aka. DAOTHER-8001: Atom names containing '_' character are unexpectedly converted to name with comma character in Mogul outliers of XML validation report.
-	- include 0.0 in the range for the following data items:
+	- Mitigate validation report data issue, aka. DAOTHER-8001: Atom names containing '_' character are unexpectedly converted to name with comma character in Mogul outliers of XML validation report.
+	- Include 0.0 in the range for the following data items:
 		- _pdbx_nmr_distance_violation_model.maximum_violation
 		- _pdbx_nmr_distance_violation_model.averagem_violation
 		- _pdbx_nmr_distance_violation_model.medianm_violation
