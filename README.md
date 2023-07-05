@@ -215,7 +215,14 @@ File path | Document
 	- Strip carriage return codes from PDBo:entity_poly.pdbx_seq_one_letter_code and PDBo:entity_poly.pdbx_seq_one_letter_code_can.
 	- Enable to switch SIFTS resource from SIFTS or PDB NextGen Archive.
 	- Use rsync service to retrieve SIFTS resource. 'aria2c' is not necessary.
-	- Medigate issue of DAOTHER-8001: Atom names containing '_' character are unexpectedly converted to name with comma character in Mogul outliers of XML validation report.
+	- Mitigate validation report data issue aka. DAOTHER-8001: Atom names containing '_' character are unexpectedly converted to name with comma character in Mogul outliers of XML validation report.
+	- include 0.0 in the range for the following data items:
+		- _pdbx_nmr_distance_violation_model.maximum_violation
+		- _pdbx_nmr_distance_violation_model.averagem_violation
+		- _pdbx_nmr_distance_violation_model.medianm_violation
+		- _pdbx_nmr_dihedral_angle_violation_model.maximum_violation
+		- _pdbx_nmr_dihedral_angle_violation_model.averagem_violation
+		- _pdbx_nmr_dihedral_angle_violation_model.medianm_violation
 
 - **Jun 21, 2023**: Release v4.4.22
 	- Update wwPDB Validation Information Dictionary to 4.372.

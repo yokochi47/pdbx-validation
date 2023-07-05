@@ -1173,7 +1173,7 @@ data_mmcif_pdbx_validation.dic
         + Add _pdbx_nmr_distance_violation_ensemble.disulfide_bond_violations_count
         + Add data items for dihedral angles (CHI, ETA, THETA, ETA', THETA')
       - Make _diffrn.pdbx_serial_crystal_experiment mandatory for deposition # declined
-      + include 0.0 in the range for the following data items:
+      + Include 0.0 in the range for the following data items:
         _pdbx_nmr_distance_violation_model.maximum_violation
         _pdbx_nmr_distance_violation_model.averagem_violation
         _pdbx_nmr_distance_violation_model.medianm_violation
