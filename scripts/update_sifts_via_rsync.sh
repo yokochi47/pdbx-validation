@@ -49,7 +49,7 @@ if ( [ $weekday -ge 1 ] && [ $weekday -le 4 ] ) || [ ! -d $SRC_DIR ] ; then
  if [ -d $XML_DIR ] ; then
   while read pdb_id ; do
    [ -z "$pdb_id" ] || [[ "$pdb_id" =~ ^#.* ]] && continue
-   rm -f $XML_DIR/${pdb_id:1:2}/$pdb_id.xml
+   rm -f $XML_DIR/$pdb_id.xml
   done < $chk_sum_log
  fi
 
