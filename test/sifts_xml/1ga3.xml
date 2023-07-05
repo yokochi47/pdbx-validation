@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='yes'?>
-<entry xmlns="http://www.ebi.ac.uk/pdbe/docs/sifts/eFamily.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:align="http://www.ebi.ac.uk/pdbe/docs/sifts/alignment.xsd" xmlns:data="http://www.ebi.ac.uk/pdbe/docs/sifts/dataTypes.xsd" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" dbSource="PDBe" dbVersion="2.0" dbCoordSys="PDBe" dbAccessionId="1ga3" date="2023-06-18" xsi:schemaLocation="http://www.ebi.ac.uk/pdbe/docs/sifts/eFamily.xsd http://www.ebi.ac.uk/pdbe/docs/sifts/eFamily.xsd">
+<entry xmlns="http://www.ebi.ac.uk/pdbe/docs/sifts/eFamily.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:align="http://www.ebi.ac.uk/pdbe/docs/sifts/alignment.xsd" xmlns:data="http://www.ebi.ac.uk/pdbe/docs/sifts/dataTypes.xsd" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" dbSource="PDBe" dbVersion="2.0" dbCoordSys="PDBe" dbAccessionId="1ga3" date="2023-06-24" xsi:schemaLocation="http://www.ebi.ac.uk/pdbe/docs/sifts/eFamily.xsd http://www.ebi.ac.uk/pdbe/docs/sifts/eFamily.xsd">
   <rdf:RDF>
     <rdf:Description rdf:about="self">
       <dc:rights rdf:resource="http://pdbe.org/sifts">
@@ -10,14 +10,14 @@
     </rdf:Description>
   </rdf:RDF>
   <listDB>
-    <db dbSource="PDB" dbCoordSys="PDBresnum" dbVersion="24.23"/>
+    <db dbSource="PDB" dbCoordSys="PDBresnum" dbVersion="25.23"/>
     <db dbSource="UniProt" dbCoordSys="UniProt" dbVersion="2023.03"/>
-    <db dbSource="InterPro" dbCoordSys="PDBresnum" dbVersion="94.0"/>
+    <db dbSource="InterPro" dbCoordSys="PDBresnum" dbVersion="95.0"/>
     <db dbSource="GO" dbCoordSys="UniProt" dbVersion="20130528"/>
     <db dbSource="Pfam" dbCoordSys="UniProt" dbVersion="35.0"/>
     <db dbSource="CATH" dbCoordSys="PDBresnum" dbVersion="4.2.0"/>
     <db dbSource="SCOP" dbCoordSys="PDBresnum" dbVersion="1.75"/>
-    <db dbSource="EC" dbCoordSys="UniProt" dbVersion="24.23"/>
+    <db dbSource="EC" dbCoordSys="UniProt" dbVersion="25.23"/>
     <db dbSource="SCOP2" dbCoordSys="PDBresnum" dbVersion="2022-06-29"/>
   </listDB>
   <entity type="protein" entityId="A">
@@ -66,49 +66,25 @@
           <db dbSource="GO" dbCoordSys="UniProt" dbAccessionId="GO:0005515" dbEvidence="IPI"/>
         </mapRegion>
         <mapRegion start="1" end="1">
-          <db dbSource="GO" dbCoordSys="UniProt" dbAccessionId="GO:0005515" dbEvidence="IPI"/>
-        </mapRegion>
-        <mapRegion start="1" end="1">
-          <db dbSource="GO" dbCoordSys="UniProt" dbAccessionId="GO:0005576" dbEvidence="TAS"/>
-        </mapRegion>
-        <mapRegion start="1" end="1">
-          <db dbSource="GO" dbCoordSys="UniProt" dbAccessionId="GO:0005576" dbEvidence="TAS"/>
-        </mapRegion>
-        <mapRegion start="1" end="1">
-          <db dbSource="GO" dbCoordSys="UniProt" dbAccessionId="GO:0005576" dbEvidence="IEA"/>
-        </mapRegion>
-        <mapRegion start="1" end="1">
-          <db dbSource="GO" dbCoordSys="UniProt" dbAccessionId="GO:0005576" dbEvidence="IEA"/>
-        </mapRegion>
-        <mapRegion start="1" end="1">
-          <db dbSource="GO" dbCoordSys="UniProt" dbAccessionId="GO:0005576" dbEvidence="TAS"/>
-        </mapRegion>
-        <mapRegion start="1" end="1">
-          <db dbSource="GO" dbCoordSys="UniProt" dbAccessionId="GO:0005576" dbEvidence="TAS"/>
-        </mapRegion>
-        <mapRegion start="1" end="1">
-          <db dbSource="GO" dbCoordSys="UniProt" dbAccessionId="GO:0005576" dbEvidence="TAS"/>
-        </mapRegion>
-        <mapRegion start="1" end="1">
-          <db dbSource="GO" dbCoordSys="UniProt" dbAccessionId="GO:0005576" dbEvidence="TAS"/>
-        </mapRegion>
-        <mapRegion start="1" end="1">
-          <db dbSource="GO" dbCoordSys="UniProt" dbAccessionId="GO:0005576" dbEvidence="TAS"/>
-        </mapRegion>
-        <mapRegion start="1" end="1">
-          <db dbSource="GO" dbCoordSys="UniProt" dbAccessionId="GO:0005576" dbEvidence="TAS"/>
-        </mapRegion>
-        <mapRegion start="1" end="1">
           <db dbSource="GO" dbCoordSys="UniProt" dbAccessionId="GO:0005576" dbEvidence="IDA"/>
         </mapRegion>
         <mapRegion start="1" end="1">
-          <db dbSource="GO" dbCoordSys="UniProt" dbAccessionId="GO:0005615" dbEvidence="ISS"/>
+          <db dbSource="GO" dbCoordSys="UniProt" dbAccessionId="GO:0005576" dbEvidence="TAS"/>
         </mapRegion>
         <mapRegion start="1" end="1">
-          <db dbSource="GO" dbCoordSys="UniProt" dbAccessionId="GO:0005615" dbEvidence="IEA"/>
+          <db dbSource="GO" dbCoordSys="UniProt" dbAccessionId="GO:0005576" dbEvidence="IEA"/>
         </mapRegion>
         <mapRegion start="1" end="1">
-          <db dbSource="GO" dbCoordSys="UniProt" dbAccessionId="GO:0005615" dbEvidence="IEA"/>
+          <db dbSource="GO" dbCoordSys="UniProt" dbAccessionId="GO:0005576" dbEvidence="TAS"/>
+        </mapRegion>
+        <mapRegion start="1" end="1">
+          <db dbSource="GO" dbCoordSys="UniProt" dbAccessionId="GO:0005576" dbEvidence="IEA"/>
+        </mapRegion>
+        <mapRegion start="1" end="1">
+          <db dbSource="GO" dbCoordSys="UniProt" dbAccessionId="GO:0005576" dbEvidence="TAS"/>
+        </mapRegion>
+        <mapRegion start="1" end="1">
+          <db dbSource="GO" dbCoordSys="UniProt" dbAccessionId="GO:0005576" dbEvidence="TAS"/>
         </mapRegion>
         <mapRegion start="1" end="1">
           <db dbSource="GO" dbCoordSys="UniProt" dbAccessionId="GO:0005615" dbEvidence="IEA"/>
@@ -120,43 +96,19 @@
           <db dbSource="GO" dbCoordSys="UniProt" dbAccessionId="GO:0006954" dbEvidence="IEA"/>
         </mapRegion>
         <mapRegion start="1" end="1">
-          <db dbSource="GO" dbCoordSys="UniProt" dbAccessionId="GO:0006954" dbEvidence="TAS"/>
-        </mapRegion>
-        <mapRegion start="1" end="1">
-          <db dbSource="GO" dbCoordSys="UniProt" dbAccessionId="GO:0007165" dbEvidence="IEA"/>
-        </mapRegion>
-        <mapRegion start="1" end="1">
-          <db dbSource="GO" dbCoordSys="UniProt" dbAccessionId="GO:0009612" dbEvidence="IEA"/>
-        </mapRegion>
-        <mapRegion start="1" end="1">
           <db dbSource="GO" dbCoordSys="UniProt" dbAccessionId="GO:0009897" dbEvidence="IEA"/>
         </mapRegion>
         <mapRegion start="1" end="1">
           <db dbSource="GO" dbCoordSys="UniProt" dbAccessionId="GO:0010155" dbEvidence="IEA"/>
         </mapRegion>
         <mapRegion start="1" end="1">
-          <db dbSource="GO" dbCoordSys="UniProt" dbAccessionId="GO:0010628" dbEvidence="IEA"/>
-        </mapRegion>
-        <mapRegion start="1" end="1">
-          <db dbSource="GO" dbCoordSys="UniProt" dbAccessionId="GO:0010628" dbEvidence="IGI"/>
-        </mapRegion>
-        <mapRegion start="1" end="1">
           <db dbSource="GO" dbCoordSys="UniProt" dbAccessionId="GO:0010628" dbEvidence="ISS"/>
         </mapRegion>
         <mapRegion start="1" end="1">
+          <db dbSource="GO" dbCoordSys="UniProt" dbAccessionId="GO:0010628" dbEvidence="IEA"/>
+        </mapRegion>
+        <mapRegion start="1" end="1">
           <db dbSource="GO" dbCoordSys="UniProt" dbAccessionId="GO:0030890" dbEvidence="IEA"/>
-        </mapRegion>
-        <mapRegion start="1" end="1">
-          <db dbSource="GO" dbCoordSys="UniProt" dbAccessionId="GO:0032496" dbEvidence="IEA"/>
-        </mapRegion>
-        <mapRegion start="1" end="1">
-          <db dbSource="GO" dbCoordSys="UniProt" dbAccessionId="GO:0032723" dbEvidence="IEA"/>
-        </mapRegion>
-        <mapRegion start="1" end="1">
-          <db dbSource="GO" dbCoordSys="UniProt" dbAccessionId="GO:0032733" dbEvidence="IGI"/>
-        </mapRegion>
-        <mapRegion start="1" end="1">
-          <db dbSource="GO" dbCoordSys="UniProt" dbAccessionId="GO:0033861" dbEvidence="IEA"/>
         </mapRegion>
         <mapRegion start="1" end="1">
           <db dbSource="GO" dbCoordSys="UniProt" dbAccessionId="GO:0035094" dbEvidence="IEA"/>
@@ -169,12 +121,6 @@
         </mapRegion>
         <mapRegion start="1" end="1">
           <db dbSource="GO" dbCoordSys="UniProt" dbAccessionId="GO:0043032" dbEvidence="IEA"/>
-        </mapRegion>
-        <mapRegion start="1" end="1">
-          <db dbSource="GO" dbCoordSys="UniProt" dbAccessionId="GO:0043270" dbEvidence="IEA"/>
-        </mapRegion>
-        <mapRegion start="1" end="1">
-          <db dbSource="GO" dbCoordSys="UniProt" dbAccessionId="GO:0043306" dbEvidence="IEA"/>
         </mapRegion>
         <mapRegion start="1" end="1">
           <db dbSource="GO" dbCoordSys="UniProt" dbAccessionId="GO:0045471" dbEvidence="IEA"/>
@@ -195,10 +141,58 @@
           <db dbSource="GO" dbCoordSys="UniProt" dbAccessionId="GO:0071260" dbEvidence="IEA"/>
         </mapRegion>
         <mapRegion start="1" end="1">
-          <db dbSource="GO" dbCoordSys="UniProt" dbAccessionId="GO:0071345" dbEvidence="IEA"/>
+          <db dbSource="GO" dbCoordSys="UniProt" dbAccessionId="GO:0005515" dbEvidence="IPI"/>
         </mapRegion>
         <mapRegion start="1" end="1">
-          <db dbSource="GO" dbCoordSys="UniProt" dbAccessionId="GO:0071635" dbEvidence="IEA"/>
+          <db dbSource="GO" dbCoordSys="UniProt" dbAccessionId="GO:0005576" dbEvidence="TAS"/>
+        </mapRegion>
+        <mapRegion start="1" end="1">
+          <db dbSource="GO" dbCoordSys="UniProt" dbAccessionId="GO:0005576" dbEvidence="TAS"/>
+        </mapRegion>
+        <mapRegion start="1" end="1">
+          <db dbSource="GO" dbCoordSys="UniProt" dbAccessionId="GO:0005576" dbEvidence="TAS"/>
+        </mapRegion>
+        <mapRegion start="1" end="1">
+          <db dbSource="GO" dbCoordSys="UniProt" dbAccessionId="GO:0005576" dbEvidence="TAS"/>
+        </mapRegion>
+        <mapRegion start="1" end="1">
+          <db dbSource="GO" dbCoordSys="UniProt" dbAccessionId="GO:0005615" dbEvidence="ISS"/>
+        </mapRegion>
+        <mapRegion start="1" end="1">
+          <db dbSource="GO" dbCoordSys="UniProt" dbAccessionId="GO:0005615" dbEvidence="IEA"/>
+        </mapRegion>
+        <mapRegion start="1" end="1">
+          <db dbSource="GO" dbCoordSys="UniProt" dbAccessionId="GO:0005615" dbEvidence="IEA"/>
+        </mapRegion>
+        <mapRegion start="1" end="1">
+          <db dbSource="GO" dbCoordSys="UniProt" dbAccessionId="GO:0006954" dbEvidence="TAS"/>
+        </mapRegion>
+        <mapRegion start="1" end="1">
+          <db dbSource="GO" dbCoordSys="UniProt" dbAccessionId="GO:0007165" dbEvidence="IEA"/>
+        </mapRegion>
+        <mapRegion start="1" end="1">
+          <db dbSource="GO" dbCoordSys="UniProt" dbAccessionId="GO:0009612" dbEvidence="IEA"/>
+        </mapRegion>
+        <mapRegion start="1" end="1">
+          <db dbSource="GO" dbCoordSys="UniProt" dbAccessionId="GO:0010628" dbEvidence="IGI"/>
+        </mapRegion>
+        <mapRegion start="1" end="1">
+          <db dbSource="GO" dbCoordSys="UniProt" dbAccessionId="GO:0032496" dbEvidence="IEA"/>
+        </mapRegion>
+        <mapRegion start="1" end="1">
+          <db dbSource="GO" dbCoordSys="UniProt" dbAccessionId="GO:0032723" dbEvidence="IEA"/>
+        </mapRegion>
+        <mapRegion start="1" end="1">
+          <db dbSource="GO" dbCoordSys="UniProt" dbAccessionId="GO:0032733" dbEvidence="IGI"/>
+        </mapRegion>
+        <mapRegion start="1" end="1">
+          <db dbSource="GO" dbCoordSys="UniProt" dbAccessionId="GO:0033861" dbEvidence="IEA"/>
+        </mapRegion>
+        <mapRegion start="1" end="1">
+          <db dbSource="GO" dbCoordSys="UniProt" dbAccessionId="GO:0043270" dbEvidence="IEA"/>
+        </mapRegion>
+        <mapRegion start="1" end="1">
+          <db dbSource="GO" dbCoordSys="UniProt" dbAccessionId="GO:0043306" dbEvidence="IEA"/>
         </mapRegion>
         <mapRegion start="1" end="1">
           <db dbSource="GO" dbCoordSys="UniProt" dbAccessionId="GO:0120162" dbEvidence="ISS"/>
@@ -210,12 +204,6 @@
           <db dbSource="GO" dbCoordSys="UniProt" dbAccessionId="GO:1901215" dbEvidence="IEA"/>
         </mapRegion>
         <mapRegion start="1" end="1">
-          <db dbSource="GO" dbCoordSys="UniProt" dbAccessionId="GO:1901247" dbEvidence="NAS"/>
-        </mapRegion>
-        <mapRegion start="1" end="1">
-          <db dbSource="GO" dbCoordSys="UniProt" dbAccessionId="GO:1901251" dbEvidence="NAS"/>
-        </mapRegion>
-        <mapRegion start="1" end="1">
           <db dbSource="GO" dbCoordSys="UniProt" dbAccessionId="GO:1903660" dbEvidence="IMP"/>
         </mapRegion>
         <mapRegion start="1" end="1">
@@ -223,6 +211,18 @@
         </mapRegion>
         <mapRegion start="1" end="1">
           <db dbSource="GO" dbCoordSys="UniProt" dbAccessionId="GO:2000352" dbEvidence="IMP"/>
+        </mapRegion>
+        <mapRegion start="1" end="1">
+          <db dbSource="GO" dbCoordSys="UniProt" dbAccessionId="GO:0071345" dbEvidence="IEA"/>
+        </mapRegion>
+        <mapRegion start="1" end="1">
+          <db dbSource="GO" dbCoordSys="UniProt" dbAccessionId="GO:0071635" dbEvidence="IEA"/>
+        </mapRegion>
+        <mapRegion start="1" end="1">
+          <db dbSource="GO" dbCoordSys="UniProt" dbAccessionId="GO:1901247" dbEvidence="NAS"/>
+        </mapRegion>
+        <mapRegion start="1" end="1">
+          <db dbSource="GO" dbCoordSys="UniProt" dbAccessionId="GO:1901251" dbEvidence="NAS"/>
         </mapRegion>
         <mapRegion start="1" end="1">
           <db dbSource="InterPro" dbCoordSys="PDBresnum" dbAccessionId="IPR009079"/>
@@ -2053,40 +2053,40 @@
           <db dbSource="GO" dbCoordSys="UniProt" dbAccessionId="GO:0005576" dbEvidence="TAS"/>
         </mapRegion>
         <mapRegion start="2" end="113">
-          <db dbSource="GO" dbCoordSys="UniProt" dbAccessionId="GO:0005576" dbEvidence="TAS"/>
-        </mapRegion>
-        <mapRegion start="2" end="113">
-          <db dbSource="GO" dbCoordSys="UniProt" dbAccessionId="GO:0005576" dbEvidence="IEA"/>
-        </mapRegion>
-        <mapRegion start="2" end="113">
-          <db dbSource="GO" dbCoordSys="UniProt" dbAccessionId="GO:0005576" dbEvidence="IEA"/>
-        </mapRegion>
-        <mapRegion start="2" end="113">
-          <db dbSource="GO" dbCoordSys="UniProt" dbAccessionId="GO:0005576" dbEvidence="TAS"/>
-        </mapRegion>
-        <mapRegion start="2" end="113">
-          <db dbSource="GO" dbCoordSys="UniProt" dbAccessionId="GO:0005576" dbEvidence="TAS"/>
-        </mapRegion>
-        <mapRegion start="2" end="113">
-          <db dbSource="GO" dbCoordSys="UniProt" dbAccessionId="GO:0005576" dbEvidence="TAS"/>
-        </mapRegion>
-        <mapRegion start="2" end="113">
-          <db dbSource="GO" dbCoordSys="UniProt" dbAccessionId="GO:0005576" dbEvidence="TAS"/>
-        </mapRegion>
-        <mapRegion start="2" end="113">
-          <db dbSource="GO" dbCoordSys="UniProt" dbAccessionId="GO:0005576" dbEvidence="TAS"/>
-        </mapRegion>
-        <mapRegion start="2" end="113">
-          <db dbSource="GO" dbCoordSys="UniProt" dbAccessionId="GO:0005576" dbEvidence="TAS"/>
-        </mapRegion>
-        <mapRegion start="2" end="113">
           <db dbSource="GO" dbCoordSys="UniProt" dbAccessionId="GO:0005576" dbEvidence="IDA"/>
         </mapRegion>
         <mapRegion start="2" end="113">
-          <db dbSource="GO" dbCoordSys="UniProt" dbAccessionId="GO:0005615" dbEvidence="ISS"/>
+          <db dbSource="GO" dbCoordSys="UniProt" dbAccessionId="GO:0005576" dbEvidence="TAS"/>
+        </mapRegion>
+        <mapRegion start="2" end="113">
+          <db dbSource="GO" dbCoordSys="UniProt" dbAccessionId="GO:0005576" dbEvidence="TAS"/>
+        </mapRegion>
+        <mapRegion start="2" end="113">
+          <db dbSource="GO" dbCoordSys="UniProt" dbAccessionId="GO:0005576" dbEvidence="IEA"/>
+        </mapRegion>
+        <mapRegion start="2" end="113">
+          <db dbSource="GO" dbCoordSys="UniProt" dbAccessionId="GO:0005576" dbEvidence="TAS"/>
+        </mapRegion>
+        <mapRegion start="2" end="113">
+          <db dbSource="GO" dbCoordSys="UniProt" dbAccessionId="GO:0005576" dbEvidence="TAS"/>
+        </mapRegion>
+        <mapRegion start="2" end="113">
+          <db dbSource="GO" dbCoordSys="UniProt" dbAccessionId="GO:0005576" dbEvidence="IEA"/>
+        </mapRegion>
+        <mapRegion start="2" end="113">
+          <db dbSource="GO" dbCoordSys="UniProt" dbAccessionId="GO:0005576" dbEvidence="TAS"/>
+        </mapRegion>
+        <mapRegion start="2" end="113">
+          <db dbSource="GO" dbCoordSys="UniProt" dbAccessionId="GO:0005576" dbEvidence="TAS"/>
+        </mapRegion>
+        <mapRegion start="2" end="113">
+          <db dbSource="GO" dbCoordSys="UniProt" dbAccessionId="GO:0005576" dbEvidence="TAS"/>
         </mapRegion>
         <mapRegion start="2" end="113">
           <db dbSource="GO" dbCoordSys="UniProt" dbAccessionId="GO:0005615" dbEvidence="IEA"/>
+        </mapRegion>
+        <mapRegion start="2" end="113">
+          <db dbSource="GO" dbCoordSys="UniProt" dbAccessionId="GO:0005615" dbEvidence="ISS"/>
         </mapRegion>
         <mapRegion start="2" end="113">
           <db dbSource="GO" dbCoordSys="UniProt" dbAccessionId="GO:0005615" dbEvidence="IEA"/>
@@ -2116,13 +2116,13 @@
           <db dbSource="GO" dbCoordSys="UniProt" dbAccessionId="GO:0010155" dbEvidence="IEA"/>
         </mapRegion>
         <mapRegion start="2" end="113">
+          <db dbSource="GO" dbCoordSys="UniProt" dbAccessionId="GO:0010628" dbEvidence="ISS"/>
+        </mapRegion>
+        <mapRegion start="2" end="113">
           <db dbSource="GO" dbCoordSys="UniProt" dbAccessionId="GO:0010628" dbEvidence="IEA"/>
         </mapRegion>
         <mapRegion start="2" end="113">
           <db dbSource="GO" dbCoordSys="UniProt" dbAccessionId="GO:0010628" dbEvidence="IGI"/>
-        </mapRegion>
-        <mapRegion start="2" end="113">
-          <db dbSource="GO" dbCoordSys="UniProt" dbAccessionId="GO:0010628" dbEvidence="ISS"/>
         </mapRegion>
         <mapRegion start="2" end="113">
           <db dbSource="GO" dbCoordSys="UniProt" dbAccessionId="GO:0030890" dbEvidence="IEA"/>

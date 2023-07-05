@@ -103,9 +103,14 @@ RDF=RDF
 SIFTS_XML_URL=ftp.ebi.ac.uk/pub/databases/msd/sifts/xml
 SIFTS_XML=sifts_xml
 
+SIFTS_SPLIT_XML_URL=ftp.ebi.ac.uk::pub/databases/msd/sifts/split_xml
+SIFTS_SPLIT_XML=split_xml
+
 PDBML_SIFTS=pdbml-sifts # used in test directory
 
 PDBML_NOATOM_SIFTS=XML-noatom-sifts
+
+PREFER_SIFTS=true
 
 NEXTGEN=nextgen
 NEXTGEN_FILE_PREFIX=pdb_0000

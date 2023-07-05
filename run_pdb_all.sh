@@ -28,13 +28,19 @@ if [ ! -z $MTIME ] ; then
  MTIME_OPT="-m "$MTIME
 fi
 
-#./scripts/update_sifts.sh $MTIME_OPT $FULL_OPT || exit $?
-./scripts/update_pdbml_nextgen.sh $MTIME_OPT || exit $?
+if [ $PREFER_SIFTS = "true" ] ; then
+ ./scripts/update_sifts.sh $MTIME_OPT $FULL_OPT || exit $?
+else
+ ./scripts/update_pdbml_nextgen.sh $MTIME_OPT || exit $?
+fi
 
 ./scripts/update_pdbml.sh $MTIME_OPT || exit $?
 
-#./scripts/merge_pdbml_sifts.sh $MTIME_OPT || exit $?
-./scripts/merge_pdbml_nextgen.sh $MTIME_OPT || exit $?
+if [ $PREFER_SIFTS = "true" ] ; then
+ ./scripts/merge_pdbml_sifts.sh $MTIME_OPT || exit $?
+else
+ ./scripts/merge_pdbml_nextgen.sh $MTIME_OPT || exit $?
+fi
 
 if [[ $(find $_WURCS_CATALOG_XML -mtime +4) ]] ; then
  ( cd wurcs2glytoucan; ./update_glytoucan.sh )

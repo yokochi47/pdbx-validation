@@ -34,6 +34,38 @@ fi
 
 #fi
 
+get_resource() {
+
+ pdb_id=$1
+
+ if [[ $pdb_id =~ [0-9][0-9a-z]{3} ]] ; then
+
+   pdbml_file=$WORK_DIR/$PDBML/$pdb_id-noatom.xml
+   sifts_xml_file=$WORK_DIR/$SIFTS_XML/$pdb_id.xml
+   pdbml_nextgen_file=$WORK_DIR/$NEXTGEN/$NEXTGEN_FILE_PREFIX$pdb_id$NEXTGEN_FILE_SUFFIX.xml
+
+   if [ ! -e $pdbml_file ] ; then
+
+    wget ftp://ftp.wwpdb.org/pub/pdb/data/structures/all/XML-noatom/$pdb_id-noatom.xml.gz -P $WORK_DIR/pdbml; gunzip $pdbml_file.gz
+
+   fi
+
+   if [ ! -e $sifts_xml_file ] ; then
+
+    wget ftp://$SIFTS_XML_URL/$pdb_id.xml.gz -P $WORK_DIR/$SIFTS_XML; gunzip $sifts_xml_file.gz
+
+   fi
+
+   if [ ! -e $pdbml_nextgen_file ] ; then
+
+    wget https://files-nextgen.wwpdb.org/pdb_nextgen/data/entries/divided/${pdb_id:1:2}/$NEXTGEN_FILE_PREFIX$pdb_id/$NEXTGEN_FILE_PREFIX$pdb_id$NEXTGEN_FILE_SUFFIX.xml.gz -P $WORK_DIR/nextgen; gunzip $pdbml_nextgen_file
+
+   fi
+
+ fi
+
+}
+
 xml_pretty() {
 
  if [ $has_xmllint_command != "false" ] ; then
@@ -50,31 +82,7 @@ for arg ; do
 
  pdb_id=${arg,,}
 
- if [[ $pdb_id =~ [0-9][0-9a-z]{3} ]] ; then
-
-   pdbml_file=$WORK_DIR/$PDBML/$pdb_id-noatom.xml
-   sifts_xml_file=$WORK_DIR/$SIFTS_XML/$pdb_id.xml
-   pdbml_nextgen_file=$WORK_DIR/$NEXTGEN/$NEXTGEN_FILE_PREFIX$pdb_id$NEXTGEN_FILE_SUFFIX.xml
-
-   if [ ! -e $pdbml_file ] ; then
-
-    wget ftp://ftp.wwpdb.org/pub/pdb/data/structures/all/XML-noatom/$pdb_id-noatom.xml.gz -P $WORK_DIR/pdbml; gunzip $pdbml_file.gz
-
-   fi
-<<REMARK
-   if [ ! -e $sifts_xml_file ] ; then
-
-    wget ftp://$SIFTS_XML_URL/$pdb_id.xml.gz -P $WORK_DIR/$SIFTS_XML; gunzip $sifts_xml_file.gz
-
-   fi
-REMARK
-   if [ ! -e $pdbml_nextgen_file ] ; then
-
-    wget https://files-nextgen.wwpdb.org/pdb_nextgen/data/entries/divided/${pdb_id:1:2}/$NEXTGEN_FILE_PREFIX$pdb_id/$NEXTGEN_FILE_PREFIX$pdb_id$NEXTGEN_FILE_SUFFIX.xml.gz -P $WORK_DIR/nextgen; gunzip $pdbml_nextgen_file
-
-   fi
-
- fi
+ get_resource $pdb_id
 
 done
 
@@ -84,6 +92,8 @@ mkdir -p $WORK_DIR/$RDF
 for pdbml_file in $WORK_DIR/$PDBML/*.xml ; do
 
  pdb_id=`basename $pdbml_file -noatom.xml`
+
+ get_resource $pdb_id
 
  #exptl_method=`java -jar $SAXON -s:$pdbml_file -xsl:stylesheet/exptl_method.xsl`
  exptl_method=`xsltproc stylesheet/exptl_method.xsl $pdbml_file`
@@ -96,28 +106,33 @@ for pdbml_file in $WORK_DIR/$PDBML/*.xml ; do
  sifts_xml_file=$WORK_DIR/$SIFTS_XML/$pdb_id.xml
  pdbml_nextgen_file=$WORK_DIR/$NEXTGEN/$NEXTGEN_FILE_PREFIX$pdb_id$NEXTGEN_FILE_SUFFIX.xml
  pdbml_sifts_file=$WORK_DIR/$PDBML_SIFTS/$pdb_id-noatom-sifts.xml
-<<REMARK
- #xsltproc stylesheet/check_sifts.xsl $sifts_xml_file
- #echo
 
- if [ -e $sifts_xml_file ] && [ -s $sifts_xml_file ] ; then
-  xsltproc -o $pdbml_sifts_file --stringparam sifts_file ../$sifts_xml_file $MERGE_PDBML_SIFTS_XSL $pdbml_file
-  #java -jar $SAXON -s:$pdbml_file -xsl:$MERGE_PDBML_SIFTS_XSL -o:$pdbml_sifts_file sifts_file=../$sifts_xml_file
+ if [ $PREFER_SIFTS = "true" ] ; then
 
-  echo " generated: "$pdbml_sifts_file
+  #xsltproc stylesheet/check_sifts.xsl $sifts_xml_file
+  #echo
 
- else
-  cp -f $pdbml_file $pdbml_sifts_file
- fi
-REMARK
- if [ -e $pdbml_nextgen_file ] && [ -s $sifts_xml_file ] ; then
-  xsltproc -o $pdbml_sifts_file --stringparam nextgen_file ../$pdbml_nextgen_file $MERGE_PDBML_NEXTGEN_XSL $pdbml_file
-  #java -jar $SAXON -s:$pdbml_file -xsl:$MERGE_PDBML_NEXGEN_XSL -o:$pdbml_sifts_file nextgen_file=../$pdbml_nextgen_file
+  if [ -e $sifts_xml_file ] && [ -s $sifts_xml_file ] ; then
+   xsltproc -o $pdbml_sifts_file --stringparam sifts_file ../$sifts_xml_file $MERGE_PDBML_SIFTS_XSL $pdbml_file
+   #java -jar $SAXON -s:$pdbml_file -xsl:$MERGE_PDBML_SIFTS_XSL -o:$pdbml_sifts_file sifts_file=../$sifts_xml_file
 
-  echo " generated: "$pdbml_sifts_file
+   echo " generated: "$pdbml_sifts_file
+
+  else
+   cp -f $pdbml_file $pdbml_sifts_file
+  fi
 
  else
-  cp -f $pdbml_file $pdbml_sifts_file
+  if [ -e $pdbml_nextgen_file ] && [ -s $sifts_xml_file ] ; then
+   xsltproc -o $pdbml_sifts_file --stringparam nextgen_file ../$pdbml_nextgen_file $MERGE_PDBML_NEXTGEN_XSL $pdbml_file
+   #java -jar $SAXON -s:$pdbml_file -xsl:$MERGE_PDBML_NEXGEN_XSL -o:$pdbml_sifts_file nextgen_file=../$pdbml_nextgen_file
+
+   echo " generated: "$pdbml_sifts_file
+
+  else
+   cp -f $pdbml_file $pdbml_sifts_file
+  fi
+
  fi
 
  rdf_file=$WORK_DIR/$RDF/$pdb_id.rdf

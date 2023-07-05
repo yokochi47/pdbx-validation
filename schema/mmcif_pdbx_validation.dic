@@ -1,7 +1,7 @@
 ###########################################################################
 #
 # File:  mmcif_pdbx_validation-v4.dic
-# Date:  Fri Jun 23 21:07:28 JST 2023
+# Date:  Wed Jul  5 13:25:08 JST 2023
 #
 # Created from:
 #        mmcif_pdbx_v50.dic   - PDB Exchange Data Dictionary (V5.373)
@@ -1159,7 +1159,7 @@ data_mmcif_pdbx_validation.dic
 >     + Make _pdbx_reference_entity_sequence.one_letter_codes non-mandatory # not mapped
 >     + Extend _pdbx_audit_support.funding_organization enumeration # not mapped
 ;
-  4.373   2023-06-21
+  4.373   2023-07-05
 ;
 >     + Add AUCO to enumeration of _pdbx_database_status.status_code_nmr_data # merged
 >     + Correct pdb_id_u regular expression # merged already
@@ -1173,6 +1173,13 @@ data_mmcif_pdbx_validation.dic
         + Add _pdbx_nmr_distance_violation_ensemble.disulfide_bond_violations_count
         + Add data items for dihedral angles (CHI, ETA, THETA, ETA', THETA')
       - Make _diffrn.pdbx_serial_crystal_experiment mandatory for deposition # declined
+      + include 0.0 in the range for the following data items:
+        _pdbx_nmr_distance_violation_model.maximum_violation
+        _pdbx_nmr_distance_violation_model.averagem_violation
+        _pdbx_nmr_distance_violation_model.medianm_violation
+        _pdbx_nmr_dihedral_angle_violation_model.maximum_violation
+        _pdbx_nmr_dihedral_angle_violation_model.averagem_violation
+        _pdbx_nmr_dihedral_angle_violation_model.medianm_violation
 ;
 
 
@@ -68595,8 +68602,10 @@ save__pdbx_nmr_distance_violation_model.maximum_violation
     _item.mandatory_code          yes
     _item_type.code               float
     _item_units.code              angstroms
-    _item_range.maximum           .
-    _item_range.minimum           0.0
+    loop_
+    _item_range.maximum
+    _item_range.minimum            .    0.0
+                                  0.0   0.0
 #
     _pdbx_item_aliases.xpath     '/wwPDB-validation-information/distance_restraints_analysis/distance_violations_in_models/distance_violations_in_model/@max_violation'
     _pdbx_item_aliases.schema     wwpdb_validation_v6.01.xsd
@@ -68613,8 +68622,10 @@ save__pdbx_nmr_distance_violation_model.average_violation
     _item.mandatory_code          no
     _item_type.code               float
     _item_units.code              angstroms
-    _item_range.maximum           .
-    _item_range.minimum           0.0
+    loop_
+    _item_range.maximum
+    _item_range.minimum            .    0.0
+                                  0.0   0.0
 #
     _pdbx_item_aliases.xpath     '/wwPDB-validation-information/distance_restraints_analysis/distance_violations_in_models/distance_violations_in_model/@mean_violation'
     _pdbx_item_aliases.schema     wwpdb_validation_v6.01.xsd
@@ -68631,8 +68642,10 @@ save__pdbx_nmr_distance_violation_model.median_violation
     _item.mandatory_code          yes
     _item_type.code               float
     _item_units.code              angstroms
-    _item_range.maximum           .
-    _item_range.minimum           0.0
+    loop_
+    _item_range.maximum
+    _item_range.minimum            .    0.0
+                                  0.0   0.0
 #
     _pdbx_item_aliases.xpath     '/wwPDB-validation-information/distance_restraints_analysis/distance_violations_in_models/distance_violations_in_model/@median_violation'
     _pdbx_item_aliases.schema     wwpdb_validation_v6.01.xsd
@@ -70306,8 +70319,10 @@ save__pdbx_nmr_dihedral_angle_violation_model.maximum_violation
     _item.mandatory_code          yes
     _item_type.code               float
     _item_units.code              degrees
-    _item_range.maximum           .
-    _item_range.minimum           0.0
+    loop_
+    _item_range.maximum
+    _item_range.minimum            .    0.0
+                                  0.0   0.0
 #
     _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/dihedralangle_violations_in_models/dihedralangle_violations_in_model/@max_violation'
     _pdbx_item_aliases.schema     wwpdb_validation_v6.01.xsd
@@ -70324,8 +70339,10 @@ save__pdbx_nmr_dihedral_angle_violation_model.average_violation
     _item.mandatory_code          no
     _item_type.code               float
     _item_units.code              degrees
-    _item_range.maximum           .
-    _item_range.minimum           0.0
+    loop_
+    _item_range.maximum
+    _item_range.minimum            .    0.0
+                                  0.0   0.0
 #
     _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/dihedralangle_violations_in_models/dihedralangle_violations_in_model/@mean_violation'
     _pdbx_item_aliases.schema     wwpdb_validation_v6.01.xsd
@@ -70342,8 +70359,10 @@ save__pdbx_nmr_dihedral_angle_violation_model.median_violation
     _item.mandatory_code          yes
     _item_type.code               float
     _item_units.code              degrees
-    _item_range.maximum           .
-    _item_range.minimum           0.0
+    loop_
+    _item_range.maximum
+    _item_range.minimum            .    0.0
+                                  0.0   0.0
 #
     _pdbx_item_aliases.xpath     '/wwPDB-validation-information/dihedralangle_restraints_analysis/dihedralangle_violations_in_models/dihedralangle_violations_in_model/@median_violation'
     _pdbx_item_aliases.schema     wwpdb_validation_v6.01.xsd

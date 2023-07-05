@@ -39,8 +39,11 @@ if [ ! -z $MTIME ] ; then
  MTIME_OPT="-m "$MTIME
 fi
 
-#./scripts/update_sifts.sh $MTIME_OPT $FULL_OPT || exit $?
-#./scripts/update_pdbml_nextgen.sh $MTIME_OPT || exit $?
+#if [ $PREFER_SIFTS = "true" ] ; then
+# ./scripts/update_sifts.sh $MTIME_OPT $FULL_OPT || exit $?
+#else
+# ./scripts/update_pdbml_nextgen.sh $MTIME_OPT || exit $?
+#fi
 
 #./scripts/update_pdbml.sh $MTIME_OPT || exit $?
 
@@ -55,13 +58,23 @@ ext_info_exit_code=0
 
 if [ -d $PDBML_EXT ] && [ $total -gt $huge_number ] ; then
 
- ./scripts/merge_pdbml_sifts.sh
+ if [ $PREFER_SIFTS = "true" ] ; then
+  ./scripts/merge_pdbml_sifts.sh
+ else
+  ./scripts/merge_pdbml_nextgen.sh
+ fi
+
  ./scripts/extract_pdbml.sh $VALID_OPT
  ext_pdbml_exit_code=$?
 
 else
 
- ./scripts/merge_pdbml_sifts.sh
+ if [ $PREFER_SIFTS = "true" ] ; then
+  ./scripts/merge_pdbml_sifts.sh
+ else
+  ./scripts/merge_pdbml_nextgen.sh
+ fi
+
  ./scripts/extract_pdbml.sh
  ext_pdbml_exit_code=$?
 

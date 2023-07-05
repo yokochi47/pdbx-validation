@@ -197,7 +197,6 @@ File path | Document
 - [**Apache Maven (mvn)**](https://maven.apache.org), used to install external libraries.
 - [**Git (git)**](https://git-scm.com), used to install external libraries.
 - [**xsltproc**](http://xmlsoft.org/XSLT/), used to XSL translation v1.0.
-- [**aria2**](https://aria2.github.io/), used to accelerate FTP download.
 - [**mmCIF Dictionary Suite**](https://sw-tools.rcsb.org/apps/MMCIF-DICT-SUITE/index.html), optionally used to generate VRPT PDBML Schema from the wwPDB Validation Information Dictionary.
 - [**PDBML2CIF**](https://sw-tools.rcsb.org/apps/PDBML2CIF/index.html), optionally, used to generate mmCIF version of wwPDB validation reports.
 - [**Raptor RDF Syntax Library**](https://librdf.org/raptor/), optionally, used to validate RDF syntax.
@@ -207,14 +206,16 @@ File path | Document
 
 ## Release notes
 
-- **Jul 4, 2023**: Release v4.4.23
+- **Jul 5, 2023**: Release v4.4.23
 	- Update wwPDB Validation Information Dictionary to 4.373.
 	- Support NMR restraint remediation.
 	- Set _diffrn.pdbx_serial_crystal_experiment is not mandatory.
 	- Fix clean-up scripts.
 	- Fix invalid code of RDF resource URI.
 	- Strip carriage return codes from PDBo:entity_poly.pdbx_seq_one_letter_code and PDBo:entity_poly.pdbx_seq_one_letter_code_can.
-	- Transition SIFTS resource from SIFTS to PDB NextGen Archive because SIFTS site is closed.
+	- Enable to switch SIFTS resource from SIFTS or PDB NextGen Archive.
+	- Use rsync service to retrieve SIFTS resource. 'aria2c' is not necessary.
+	- Medigate issue of DAOTHER-8001: Atom names containing '_' character are unexpectedly converted to name with comma character in Mogul outliers of XML validation report.
 
 - **Jun 21, 2023**: Release v4.4.22
 	- Update wwPDB Validation Information Dictionary to 4.372.

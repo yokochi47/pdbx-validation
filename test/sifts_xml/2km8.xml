@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='yes'?>
-<entry xmlns="http://www.ebi.ac.uk/pdbe/docs/sifts/eFamily.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:align="http://www.ebi.ac.uk/pdbe/docs/sifts/alignment.xsd" xmlns:data="http://www.ebi.ac.uk/pdbe/docs/sifts/dataTypes.xsd" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" dbSource="PDBe" dbVersion="2.0" dbCoordSys="PDBe" dbAccessionId="2km8" date="2023-06-18" xsi:schemaLocation="http://www.ebi.ac.uk/pdbe/docs/sifts/eFamily.xsd http://www.ebi.ac.uk/pdbe/docs/sifts/eFamily.xsd">
+<entry xmlns="http://www.ebi.ac.uk/pdbe/docs/sifts/eFamily.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:align="http://www.ebi.ac.uk/pdbe/docs/sifts/alignment.xsd" xmlns:data="http://www.ebi.ac.uk/pdbe/docs/sifts/dataTypes.xsd" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" dbSource="PDBe" dbVersion="2.0" dbCoordSys="PDBe" dbAccessionId="2km8" date="2023-06-24" xsi:schemaLocation="http://www.ebi.ac.uk/pdbe/docs/sifts/eFamily.xsd http://www.ebi.ac.uk/pdbe/docs/sifts/eFamily.xsd">
   <rdf:RDF>
     <rdf:Description rdf:about="self">
       <dc:rights rdf:resource="http://pdbe.org/sifts">
@@ -10,14 +10,14 @@
     </rdf:Description>
   </rdf:RDF>
   <listDB>
-    <db dbSource="PDB" dbCoordSys="PDBresnum" dbVersion="24.23"/>
+    <db dbSource="PDB" dbCoordSys="PDBresnum" dbVersion="25.23"/>
     <db dbSource="UniProt" dbCoordSys="UniProt" dbVersion="2023.03"/>
-    <db dbSource="InterPro" dbCoordSys="PDBresnum" dbVersion="94.0"/>
+    <db dbSource="InterPro" dbCoordSys="PDBresnum" dbVersion="95.0"/>
     <db dbSource="GO" dbCoordSys="UniProt" dbVersion="20130528"/>
     <db dbSource="Pfam" dbCoordSys="UniProt" dbVersion="35.0"/>
     <db dbSource="CATH" dbCoordSys="PDBresnum" dbVersion="4.2.0"/>
     <db dbSource="SCOP" dbCoordSys="PDBresnum" dbVersion="1.75"/>
-    <db dbSource="EC" dbCoordSys="UniProt" dbVersion="24.23"/>
+    <db dbSource="EC" dbCoordSys="UniProt" dbVersion="25.23"/>
     <db dbSource="SCOP2" dbCoordSys="PDBresnum" dbVersion="2022-06-29"/>
   </listDB>
   <entity type="protein" entityId="B">
@@ -4250,10 +4250,10 @@
         <mapRegion start="67" end="166">
           <db dbSource="InterPro" dbCoordSys="PDBresnum" dbAccessionId="IPR035979"/>
         </mapRegion>
-        <mapRegion start="1" end="86">
+        <mapRegion start="87" end="167">
           <db dbSource="CATH" dbCoordSys="PDBresnum" dbAccessionId="3.30.70.330"/>
         </mapRegion>
-        <mapRegion start="87" end="167">
+        <mapRegion start="1" end="86">
           <db dbSource="CATH" dbCoordSys="PDBresnum" dbAccessionId="3.30.70.330"/>
         </mapRegion>
         <mapRegion start="1" end="78">
