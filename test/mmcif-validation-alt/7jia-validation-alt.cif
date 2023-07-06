@@ -1,0 +1,1575 @@
+data_7JIA-validation-alt
+# 
+_entry.id   7JIA 
+# 
+_pdbx_nmr_assigned_chem_shift_list.id                            1 
+_pdbx_nmr_assigned_chem_shift_list.data_file_name                working_cs.cif 
+_pdbx_nmr_assigned_chem_shift_list.label                         
+nef_chemical_shift_list_zf24_ND6-final.prot 
+_pdbx_nmr_assigned_chem_shift_list.nmr_star_consistency_flag     Y 
+_pdbx_nmr_assigned_chem_shift_list.number_chem_shifts            135 
+_pdbx_nmr_assigned_chem_shift_list.number_map_errors             0 
+_pdbx_nmr_assigned_chem_shift_list.number_map_warnings           0 
+_pdbx_nmr_assigned_chem_shift_list.number_mapped_chem_shifts     135 
+_pdbx_nmr_assigned_chem_shift_list.number_parsed_chem_shifts     135 
+_pdbx_nmr_assigned_chem_shift_list.number_unparsed_chem_shifts   0 
+# 
+loop_
+_pdbx_nmr_chem_shift_annotation.list_id 
+_pdbx_nmr_chem_shift_annotation.id 
+_pdbx_nmr_chem_shift_annotation.auth_asym_id 
+_pdbx_nmr_chem_shift_annotation.auth_comp_id 
+_pdbx_nmr_chem_shift_annotation.auth_seq_id 
+_pdbx_nmr_chem_shift_annotation.random_coil_index 
+1 1  A CYS 1  0.021 
+1 2  A GLY 10 0.038 
+1 3  A GLU 11 0.033 
+1 4  A THR 12 0.026 
+1 5  A CYS 13 0.015 
+1 6  A CYS 14 0.011 
+1 7  A PRO 15 0.023 
+1 8  A THR 16 0.045 
+1 9  A SER 17 0.063 
+1 10 A GLN 18 0.056 
+1 11 A THR 19 0.037 
+1 12 A GLY 2  0.017 
+1 13 A THR 20 0.023 
+1 14 A TRP 21 0.025 
+1 15 A GLY 22 0.029 
+1 16 A CYS 23 0.030 
+1 17 A CYS 24 0.030 
+1 18 A GLY 3  0.010 
+1 19 A GLY 4  0.006 
+1 20 A PHE 5  0.007 
+1 21 A SER 6  0.013 
+1 22 A CYS 7  0.018 
+1 23 A HIS 8  0.028 
+1 24 A ASP 9  0.030 
+# 
+loop_
+_pdbx_nmr_chem_shift_completeness.list_id 
+_pdbx_nmr_chem_shift_completeness.atom_group 
+_pdbx_nmr_chem_shift_completeness.atom_type 
+_pdbx_nmr_chem_shift_completeness.number_assigned_chem_shifts_well_formed 
+_pdbx_nmr_chem_shift_completeness.number_target_shifts_well_formed 
+_pdbx_nmr_chem_shift_completeness.number_unassigned_chem_shifts_well_formed 
+_pdbx_nmr_chem_shift_completeness.number_assigned_chem_shifts 
+_pdbx_nmr_chem_shift_completeness.number_target_shifts 
+_pdbx_nmr_chem_shift_completeness.number_unassigned_chem_shifts 
+1 sidechain H     28 38  10 37  48  11  
+1 backbone  H     31 31  0  45  47  2   
+1 overall   H     65 75  10 93  110 17  
+1 aromatic  H     6  6   0  11  15  4   
+1 sidechain C     12 25  13 15  30  15  
+1 backbone  C     10 32  22 15  48  33  
+1 overall   C     22 62  40 30  89  59  
+1 aromatic  C     0  5   5  0   11  11  
+1 sidechain Total 40 64  24 52  79  27  
+1 backbone  Total 41 78  37 60  118 58  
+1 overall   Total 87 154 67 123 225 102 
+1 aromatic  Total 6  12  6  11  28  17  
+1 sidechain N     0  1   1  0   1   1   
+1 backbone  N     0  15  15 0   23  23  
+1 overall   N     0  17  17 0   26  26  
+1 aromatic  N     0  1   1  0   2   2   
+# 
+loop_
+_pdbx_nmr_chem_shift_re_offset.list_id 
+_pdbx_nmr_chem_shift_re_offset.atom_type 
+_pdbx_nmr_chem_shift_re_offset.correction_val 
+_pdbx_nmr_chem_shift_re_offset.correction_val_err 
+_pdbx_nmr_chem_shift_re_offset.correction_val_esd 
+_pdbx_nmr_chem_shift_re_offset.number_chem_shifts 
+1 CB 0.00 0.50 0.00 15 
+1 C  0.00 0.50 0.00 0  
+1 CA 0.00 0.50 0.00 15 
+1 N  0.00 0.50 0.00 0  
+# 
+_pdbx_validate_nmr_chem_shift.list_id        1 
+_pdbx_validate_nmr_chem_shift.id             1 
+_pdbx_validate_nmr_chem_shift.auth_asym_id   A 
+_pdbx_validate_nmr_chem_shift.auth_comp_id   GLY 
+_pdbx_validate_nmr_chem_shift.auth_seq_id    4 
+_pdbx_validate_nmr_chem_shift.auth_atom_id   CA 
+_pdbx_validate_nmr_chem_shift.val            63.798 
+_pdbx_validate_nmr_chem_shift.target_val     45.360 
+_pdbx_validate_nmr_chem_shift.Zscore         14.293 
+_pdbx_validate_nmr_chem_shift.method         shiftchecker 
+# 
+_pdbx_percentile_list.entry_id   7JIA 
+_pdbx_percentile_list.name       all,nmr 
+# 
+loop_
+_pdbx_percentile_view.entry_id 
+_pdbx_percentile_view.conditions_id 
+_pdbx_percentile_view.type 
+_pdbx_percentile_view.conditions_label 
+_pdbx_percentile_view.rank 
+7JIA 1 all_atom_clashscore          absolute 99.9  
+7JIA 2 all_atom_clashscore          relative 100.0 
+7JIA 3 Ramachandran_outlier_percent absolute 100.0 
+7JIA 4 Ramachandran_outlier_percent relative 100.0 
+7JIA 5 rotamer_outliers_percent     absolute 6.2   
+7JIA 6 rotamer_outliers_percent     relative 45.6  
+# 
+loop_
+_pdbx_percentile_conditions.id 
+_pdbx_percentile_conditions.number_entries_total 
+1 158937 
+2 12864  
+3 154571 
+4 11451  
+5 154315 
+6 11428  
+# 
+loop_
+_pdbx_percentile_entity_view.conditions_id 
+_pdbx_percentile_entity_view.type 
+_pdbx_percentile_entity_view.label_asym_id 
+_pdbx_percentile_entity_view.PDB_model_num 
+_pdbx_percentile_entity_view.entity_id 
+_pdbx_percentile_entity_view.auth_asym_id 
+_pdbx_percentile_entity_view.conditions_label 
+_pdbx_percentile_entity_view.rank 
+3 Ramachandran_outlier_percent A 1  1 A absolute 2.24   
+4 Ramachandran_outlier_percent A 1  1 A relative 2.24   
+5 rotamer_outliers_percent     A 1  1 A absolute 6.55   
+6 rotamer_outliers_percent     A 1  1 A relative 6.55   
+3 Ramachandran_outlier_percent A 2  1 A absolute 2.24   
+4 Ramachandran_outlier_percent A 2  1 A relative 2.24   
+5 rotamer_outliers_percent     A 2  1 A absolute 22.41  
+6 rotamer_outliers_percent     A 2  1 A relative 22.41  
+3 Ramachandran_outlier_percent A 3  1 A absolute 100.00 
+4 Ramachandran_outlier_percent A 3  1 A relative 100.00 
+5 rotamer_outliers_percent     A 3  1 A absolute 22.41  
+6 rotamer_outliers_percent     A 3  1 A relative 22.41  
+3 Ramachandran_outlier_percent A 4  1 A absolute 2.24   
+4 Ramachandran_outlier_percent A 4  1 A relative 2.24   
+5 rotamer_outliers_percent     A 4  1 A absolute 22.41  
+6 rotamer_outliers_percent     A 4  1 A relative 22.41  
+3 Ramachandran_outlier_percent A 5  1 A absolute 2.24   
+4 Ramachandran_outlier_percent A 5  1 A relative 2.24   
+5 rotamer_outliers_percent     A 5  1 A absolute 6.55   
+6 rotamer_outliers_percent     A 5  1 A relative 6.55   
+3 Ramachandran_outlier_percent A 6  1 A absolute 2.24   
+4 Ramachandran_outlier_percent A 6  1 A relative 2.24   
+5 rotamer_outliers_percent     A 6  1 A absolute 22.41  
+6 rotamer_outliers_percent     A 6  1 A relative 22.41  
+3 Ramachandran_outlier_percent A 7  1 A absolute 100.00 
+4 Ramachandran_outlier_percent A 7  1 A relative 100.00 
+5 rotamer_outliers_percent     A 7  1 A absolute 0.14   
+6 rotamer_outliers_percent     A 7  1 A relative 0.14   
+3 Ramachandran_outlier_percent A 8  1 A absolute 100.00 
+4 Ramachandran_outlier_percent A 8  1 A relative 100.00 
+5 rotamer_outliers_percent     A 8  1 A absolute 0.33   
+6 rotamer_outliers_percent     A 8  1 A relative 0.33   
+3 Ramachandran_outlier_percent A 9  1 A absolute 100.00 
+4 Ramachandran_outlier_percent A 9  1 A relative 100.00 
+5 rotamer_outliers_percent     A 9  1 A absolute 2.28   
+6 rotamer_outliers_percent     A 9  1 A relative 2.28   
+3 Ramachandran_outlier_percent A 10 1 A absolute 100.00 
+4 Ramachandran_outlier_percent A 10 1 A relative 100.00 
+5 rotamer_outliers_percent     A 10 1 A absolute 0.33   
+6 rotamer_outliers_percent     A 10 1 A relative 0.33   
+3 Ramachandran_outlier_percent A 11 1 A absolute 100.00 
+4 Ramachandran_outlier_percent A 11 1 A relative 100.00 
+5 rotamer_outliers_percent     A 11 1 A absolute 2.28   
+6 rotamer_outliers_percent     A 11 1 A relative 2.28   
+3 Ramachandran_outlier_percent A 12 1 A absolute 100.00 
+4 Ramachandran_outlier_percent A 12 1 A relative 100.00 
+5 rotamer_outliers_percent     A 12 1 A absolute 100.00 
+6 rotamer_outliers_percent     A 12 1 A relative 100.00 
+3 Ramachandran_outlier_percent A 13 1 A absolute 2.24   
+4 Ramachandran_outlier_percent A 13 1 A relative 2.24   
+5 rotamer_outliers_percent     A 13 1 A absolute 22.41  
+6 rotamer_outliers_percent     A 13 1 A relative 22.41  
+3 Ramachandran_outlier_percent A 14 1 A absolute 0.52   
+4 Ramachandran_outlier_percent A 14 1 A relative 0.52   
+5 rotamer_outliers_percent     A 14 1 A absolute 22.41  
+6 rotamer_outliers_percent     A 14 1 A relative 22.41  
+3 Ramachandran_outlier_percent A 15 1 A absolute 0.52   
+4 Ramachandran_outlier_percent A 15 1 A relative 0.52   
+5 rotamer_outliers_percent     A 15 1 A absolute 6.55   
+6 rotamer_outliers_percent     A 15 1 A relative 6.55   
+3 Ramachandran_outlier_percent A 16 1 A absolute 100.00 
+4 Ramachandran_outlier_percent A 16 1 A relative 100.00 
+5 rotamer_outliers_percent     A 16 1 A absolute 0.85   
+6 rotamer_outliers_percent     A 16 1 A relative 0.85   
+3 Ramachandran_outlier_percent A 17 1 A absolute 100.00 
+4 Ramachandran_outlier_percent A 17 1 A relative 100.00 
+5 rotamer_outliers_percent     A 17 1 A absolute 6.55   
+6 rotamer_outliers_percent     A 17 1 A relative 6.55   
+3 Ramachandran_outlier_percent A 18 1 A absolute 100.00 
+4 Ramachandran_outlier_percent A 18 1 A relative 100.00 
+5 rotamer_outliers_percent     A 18 1 A absolute 0.85   
+6 rotamer_outliers_percent     A 18 1 A relative 0.85   
+3 Ramachandran_outlier_percent A 19 1 A absolute 100.00 
+4 Ramachandran_outlier_percent A 19 1 A relative 100.00 
+5 rotamer_outliers_percent     A 19 1 A absolute 6.55   
+6 rotamer_outliers_percent     A 19 1 A relative 6.55   
+3 Ramachandran_outlier_percent A 20 1 A absolute 2.24   
+4 Ramachandran_outlier_percent A 20 1 A relative 2.24   
+5 rotamer_outliers_percent     A 20 1 A absolute 6.55   
+6 rotamer_outliers_percent     A 20 1 A relative 6.55   
+# 
+_pdbx_dcc_geometry.entry_id                                       7JIA 
+_pdbx_dcc_geometry.Ramachandran_outlier_percent                   2.50 
+_pdbx_dcc_geometry.Ramachandran_outlier_percent_nmr_well_formed   0.00 
+_pdbx_dcc_geometry.all_atom_clashscore                            0.00 
+_pdbx_dcc_geometry.all_atom_clashscore_nmr_well_formed            0.00 
+_pdbx_dcc_geometry.angle_overall_rmsz                             0.35 
+_pdbx_dcc_geometry.bond_overall_rmsz                              0.20 
+_pdbx_dcc_geometry.number_angles                                  4540 
+_pdbx_dcc_geometry.number_bonds                                   3360 
+_pdbx_dcc_geometry.rotamer_outliers_percent                       12.63 
+_pdbx_dcc_geometry.rotamer_outliers_percent_nmr_well_formed       14.29 
+# 
+loop_
+_pdbx_dcc_entity_geometry.label_asym_id 
+_pdbx_dcc_entity_geometry.PDB_model_num 
+_pdbx_dcc_entity_geometry.entity_id 
+_pdbx_dcc_entity_geometry.auth_asym_id 
+_pdbx_dcc_entity_geometry.angle_overall_rmsz 
+_pdbx_dcc_entity_geometry.bond_overall_rmsz 
+_pdbx_dcc_entity_geometry.number_angles 
+_pdbx_dcc_entity_geometry.number_bonds 
+A 1  1 A 0.34 0.20 227 168 
+A 2  1 A 0.35 0.20 227 168 
+A 3  1 A 0.34 0.20 227 168 
+A 4  1 A 0.35 0.20 227 168 
+A 5  1 A 0.34 0.20 227 168 
+A 6  1 A 0.35 0.20 227 168 
+A 7  1 A 0.35 0.20 227 168 
+A 8  1 A 0.35 0.20 227 168 
+A 9  1 A 0.34 0.20 227 168 
+A 10 1 A 0.35 0.20 227 168 
+A 11 1 A 0.34 0.20 227 168 
+A 12 1 A 0.34 0.20 227 168 
+A 13 1 A 0.34 0.20 227 168 
+A 14 1 A 0.35 0.20 227 168 
+A 15 1 A 0.34 0.20 227 168 
+A 16 1 A 0.35 0.20 227 168 
+A 17 1 A 0.35 0.20 227 168 
+A 18 1 A 0.35 0.20 227 168 
+A 19 1 A 0.35 0.20 227 168 
+A 20 1 A 0.35 0.20 227 168 
+# 
+loop_
+_struct_mon_prot.pdbx_id 
+_struct_mon_prot.PDB_model_num 
+_struct_mon_prot.auth_asym_id 
+_struct_mon_prot.auth_comp_id 
+_struct_mon_prot.auth_seq_id 
+_struct_mon_prot.pdbx_rotamer 
+_struct_mon_prot.phi 
+_struct_mon_prot.psi 
+_struct_mon_prot.pdbx_Ramachandran_region 
+1   1  A CYS 1  p       ?      ?      ?       
+2   1  A GLY 2  ?       -150.4 56.5   Allowed 
+3   1  A GLY 3  ?       -67.1  -94.7  OUTLIER 
+4   1  A GLY 4  ?       -152.0 38.6   Allowed 
+5   1  A PHE 5  p90     -147.1 172.9  Favored 
+6   1  A SER 6  m       -118.1 155.3  Favored 
+7   1  A CYS 7  m       -149.5 177.2  Favored 
+8   1  A HIS 8  m170    -101.7 144.3  Favored 
+9   1  A ASP 9  m-20    -53.5  133.0  Favored 
+10  1  A GLY 10 ?       109.2  -26.9  Favored 
+11  1  A GLU 11 OUTLIER -75.6  151.7  Favored 
+12  1  A THR 12 m       -103.8 150.9  Favored 
+13  1  A CYS 13 t       -90.6  112.5  Favored 
+14  1  A CYS 14 p       -130.6 156.8  Favored 
+15  1  A PRO 15 Cg_endo -69.7  115.7  Favored 
+16  1  A THR 16 p       -101.6 -36.4  Favored 
+17  1  A SER 17 OUTLIER -127.1 -175.2 Favored 
+18  1  A GLN 18 mp0     -86.3  -36.8  Favored 
+19  1  A THR 19 p       -101.4 -36.2  Favored 
+20  1  A THR 20 p       -114.2 154.8  Favored 
+21  1  A TRP 21 m0      -113.2 -180.0 Favored 
+22  1  A GLY 22 ?       -157.9 -166.3 Favored 
+23  1  A CYS 23 m       -106.3 171.0  Favored 
+24  1  A CYS 24 m       ?      ?      ?       
+25  2  A CYS 1  t       ?      ?      ?       
+26  2  A GLY 2  ?       -177.0 -108.4 Allowed 
+27  2  A GLY 3  ?       133.1  47.2   Allowed 
+28  2  A GLY 4  ?       -163.7 -48.1  OUTLIER 
+29  2  A PHE 5  p90     -85.4  155.6  Favored 
+30  2  A SER 6  m       -105.7 155.2  Favored 
+31  2  A CYS 7  m       -149.2 176.2  Favored 
+32  2  A HIS 8  m170    -91.1  143.8  Favored 
+33  2  A ASP 9  m-20    -57.5  138.1  Favored 
+34  2  A GLY 10 ?       94.5   -26.9  Favored 
+35  2  A GLU 11 tp10    -64.4  148.3  Favored 
+36  2  A THR 12 OUTLIER -92.0  149.0  Favored 
+37  2  A CYS 13 t       -101.4 122.6  Favored 
+38  2  A CYS 14 p       -135.9 156.9  Favored 
+39  2  A PRO 15 Cg_endo -69.8  117.4  Favored 
+40  2  A THR 16 p       -101.4 -37.9  Favored 
+41  2  A SER 17 t       -125.2 -176.2 Favored 
+42  2  A GLN 18 pt20    -86.1  -36.5  Favored 
+43  2  A THR 19 m       -99.4  -36.5  Favored 
+44  2  A THR 20 p       -114.7 157.6  Favored 
+45  2  A TRP 21 m0      -113.6 179.4  Favored 
+46  2  A GLY 22 ?       -154.5 -163.2 Favored 
+47  2  A CYS 23 m       -114.1 168.6  Favored 
+48  2  A CYS 24 m       ?      ?      ?       
+49  3  A CYS 1  p       ?      ?      ?       
+50  3  A GLY 2  ?       -82.0  86.0   Allowed 
+51  3  A GLY 3  ?       179.7  -106.5 Allowed 
+52  3  A GLY 4  ?       -90.9  45.8   Favored 
+53  3  A PHE 5  m-85    -150.8 147.8  Favored 
+54  3  A SER 6  m       -157.6 141.8  Favored 
+55  3  A CYS 7  OUTLIER -148.8 -180.0 Favored 
+56  3  A HIS 8  m170    -91.6  156.6  Favored 
+57  3  A ASP 9  p30     -53.6  137.4  Favored 
+58  3  A GLY 10 ?       102.1  -26.9  Favored 
+59  3  A GLU 11 tt0     -85.2  153.5  Favored 
+60  3  A THR 12 p       -121.9 147.0  Favored 
+61  3  A CYS 13 m       -82.3  112.3  Favored 
+62  3  A CYS 14 p       -130.9 156.8  Favored 
+63  3  A PRO 15 Cg_endo -69.7  116.0  Favored 
+64  3  A THR 16 p       -97.4  -35.8  Favored 
+65  3  A SER 17 t       -126.4 -175.0 Favored 
+66  3  A GLN 18 pt20    -86.4  -36.2  Favored 
+67  3  A THR 19 t       -101.1 -35.8  Favored 
+68  3  A THR 20 m       -114.2 155.3  Favored 
+69  3  A TRP 21 m0      -112.2 -179.4 Favored 
+70  3  A GLY 22 ?       -160.5 -160.2 Favored 
+71  3  A CYS 23 m       -110.5 175.2  Favored 
+72  3  A CYS 24 m       ?      ?      ?       
+73  4  A CYS 1  m       ?      ?      ?       
+74  4  A GLY 2  ?       -111.0 49.2   Allowed 
+75  4  A GLY 3  ?       -74.0  -103.0 OUTLIER 
+76  4  A GLY 4  ?       -172.5 42.6   Allowed 
+77  4  A PHE 5  p90     -133.8 153.8  Favored 
+78  4  A SER 6  m       -99.8  155.2  Favored 
+79  4  A CYS 7  m       -149.9 179.2  Favored 
+80  4  A HIS 8  m170    -92.5  141.9  Favored 
+81  4  A ASP 9  t70     -56.0  134.9  Favored 
+82  4  A GLY 10 ?       98.6   -27.0  Favored 
+83  4  A GLU 11 tp10    -66.8  143.6  Favored 
+84  4  A THR 12 OUTLIER -96.3  125.2  Favored 
+85  4  A CYS 13 p       -78.5  131.6  Favored 
+86  4  A CYS 14 p       -135.0 156.8  Favored 
+87  4  A PRO 15 Cg_endo -69.7  117.6  Favored 
+88  4  A THR 16 p       -102.5 -36.3  Favored 
+89  4  A SER 17 m       -133.8 -178.4 Favored 
+90  4  A GLN 18 tt0     -83.0  -36.3  Favored 
+91  4  A THR 19 t       -100.7 -35.7  Favored 
+92  4  A THR 20 p       -113.9 156.2  Favored 
+93  4  A TRP 21 m95     -119.4 -179.7 Favored 
+94  4  A GLY 22 ?       -155.5 -165.9 Favored 
+95  4  A CYS 23 m       -114.0 166.9  Favored 
+96  4  A CYS 24 m       ?      ?      ?       
+97  5  A CYS 1  p       ?      ?      ?       
+98  5  A GLY 2  ?       -154.3 -47.0  OUTLIER 
+99  5  A GLY 3  ?       101.8  52.6   Allowed 
+100 5  A GLY 4  ?       -133.2 -37.9  Allowed 
+101 5  A PHE 5  p90     -135.8 153.8  Favored 
+102 5  A SER 6  m       -90.7  170.0  Favored 
+103 5  A CYS 7  m       -149.3 179.9  Favored 
+104 5  A HIS 8  m170    -90.5  141.0  Favored 
+105 5  A ASP 9  m-20    -52.2  130.9  Favored 
+106 5  A GLY 10 ?       93.8   -26.9  Favored 
+107 5  A GLU 11 tp10    -76.2  142.9  Favored 
+108 5  A THR 12 OUTLIER -91.3  143.8  Favored 
+109 5  A CYS 13 t       -82.3  112.5  Favored 
+110 5  A CYS 14 p       -135.0 156.8  Favored 
+111 5  A PRO 15 Cg_endo -69.8  126.3  Favored 
+112 5  A THR 16 p       -114.6 -35.7  Favored 
+113 5  A SER 17 OUTLIER -117.2 -170.4 Allowed 
+114 5  A GLN 18 pt20    -90.4  -36.2  Favored 
+115 5  A THR 19 p       -104.5 -36.0  Favored 
+116 5  A THR 20 p       -113.7 156.6  Favored 
+117 5  A TRP 21 m0      -106.7 -178.4 Favored 
+118 5  A GLY 22 ?       -151.1 -169.4 Favored 
+119 5  A CYS 23 m       -98.2  167.5  Favored 
+120 5  A CYS 24 m       ?      ?      ?       
+121 6  A CYS 1  m       ?      ?      ?       
+122 6  A GLY 2  ?       -156.3 108.3  Allowed 
+123 6  A GLY 3  ?       -177.3 -38.8  OUTLIER 
+124 6  A GLY 4  ?       -107.7 -65.6  Allowed 
+125 6  A PHE 5  p90     -95.7  150.2  Favored 
+126 6  A SER 6  m       -103.5 155.4  Favored 
+127 6  A CYS 7  m       -149.8 179.6  Favored 
+128 6  A HIS 8  m-70    -92.0  144.6  Favored 
+129 6  A ASP 9  m-20    -57.1  131.2  Favored 
+130 6  A GLY 10 ?       101.4  -27.0  Favored 
+131 6  A GLU 11 tp10    -62.0  142.0  Favored 
+132 6  A THR 12 p       -92.1  121.4  Favored 
+133 6  A CYS 13 p       -78.1  131.2  Favored 
+134 6  A CYS 14 p       -136.1 156.8  Favored 
+135 6  A PRO 15 Cg_endo -69.8  115.8  Favored 
+136 6  A THR 16 p       -102.1 -35.7  Favored 
+137 6  A SER 17 OUTLIER -130.8 -175.9 Favored 
+138 6  A GLN 18 tp60    -86.4  -36.2  Favored 
+139 6  A THR 19 p       -100.3 -36.3  Favored 
+140 6  A THR 20 p       -114.6 155.6  Favored 
+141 6  A TRP 21 m0      -117.0 -179.8 Favored 
+142 6  A GLY 22 ?       -156.5 -165.7 Favored 
+143 6  A CYS 23 m       -113.1 165.2  Favored 
+144 6  A CYS 24 m       ?      ?      ?       
+145 7  A CYS 1  p       ?      ?      ?       
+146 7  A GLY 2  ?       -78.5  -50.3  Favored 
+147 7  A GLY 3  ?       150.4  -48.9  Allowed 
+148 7  A GLY 4  ?       -82.3  -70.4  Allowed 
+149 7  A PHE 5  p90     -78.2  -175.7 Favored 
+150 7  A SER 6  m       -138.4 170.6  Favored 
+151 7  A CYS 7  OUTLIER -140.9 168.2  Favored 
+152 7  A HIS 8  m170    -90.9  147.5  Favored 
+153 7  A ASP 9  t70     -52.8  139.6  Favored 
+154 7  A GLY 10 ?       100.6  -26.9  Favored 
+155 7  A GLU 11 OUTLIER -79.5  149.1  Favored 
+156 7  A THR 12 OUTLIER -106.8 135.1  Favored 
+157 7  A CYS 13 OUTLIER -78.2  103.9  Favored 
+158 7  A CYS 14 p       -125.3 156.8  Favored 
+159 7  A PRO 15 Cg_endo -69.8  115.5  Favored 
+160 7  A THR 16 p       -93.8  -42.0  Favored 
+161 7  A SER 17 OUTLIER -133.1 -173.9 Favored 
+162 7  A GLN 18 tt0     -91.5  -31.2  Favored 
+163 7  A THR 19 OUTLIER -89.4  -37.6  Favored 
+164 7  A THR 20 t       -133.8 158.3  Favored 
+165 7  A TRP 21 m0      -110.4 -177.6 Favored 
+166 7  A GLY 22 ?       -163.6 -158.0 Favored 
+167 7  A CYS 23 m       -113.6 174.1  Favored 
+168 7  A CYS 24 m       ?      ?      ?       
+169 8  A CYS 1  m       ?      ?      ?       
+170 8  A GLY 2  ?       -135.0 -159.4 Favored 
+171 8  A GLY 3  ?       78.1   -66.8  Favored 
+172 8  A GLY 4  ?       -141.0 43.9   Allowed 
+173 8  A PHE 5  m-85    -125.5 135.0  Favored 
+174 8  A SER 6  m       -137.8 120.8  Favored 
+175 8  A CYS 7  OUTLIER -149.4 173.4  Favored 
+176 8  A HIS 8  m170    -90.4  144.1  Favored 
+177 8  A ASP 9  t70     -49.9  134.7  Favored 
+178 8  A GLY 10 ?       110.7  -26.3  Favored 
+179 8  A GLU 11 OUTLIER -57.0  169.0  Allowed 
+180 8  A THR 12 OUTLIER -126.5 134.1  Favored 
+181 8  A CYS 13 m       -77.7  106.4  Favored 
+182 8  A CYS 14 p       -135.6 156.9  Favored 
+183 8  A PRO 15 Cg_endo -69.8  116.3  Favored 
+184 8  A THR 16 p       -102.8 -36.0  Favored 
+185 8  A SER 17 OUTLIER -124.2 -170.7 Favored 
+186 8  A GLN 18 mm-40   -89.3  -36.2  Favored 
+187 8  A THR 19 m       -104.8 -36.0  Favored 
+188 8  A THR 20 OUTLIER -113.8 157.0  Favored 
+189 8  A TRP 21 m0      -112.1 -176.3 Favored 
+190 8  A GLY 22 ?       -162.8 -177.8 Favored 
+191 8  A CYS 23 m       -88.2  162.6  Favored 
+192 8  A CYS 24 m       ?      ?      ?       
+193 9  A CYS 1  t       ?      ?      ?       
+194 9  A GLY 2  ?       -55.2  177.1  Allowed 
+195 9  A GLY 3  ?       -136.1 57.2   Allowed 
+196 9  A GLY 4  ?       -130.3 34.5   Favored 
+197 9  A PHE 5  p90     -174.7 167.6  Favored 
+198 9  A SER 6  m       -118.8 150.9  Favored 
+199 9  A CYS 7  m       -149.2 171.6  Favored 
+200 9  A HIS 8  m170    -90.6  138.0  Favored 
+201 9  A ASP 9  p-10    -49.9  134.7  Favored 
+202 9  A GLY 10 ?       110.7  -26.2  Favored 
+203 9  A GLU 11 OUTLIER -57.0  168.9  Allowed 
+204 9  A THR 12 OUTLIER -116.5 131.7  Favored 
+205 9  A CYS 13 m       -78.7  110.2  Favored 
+206 9  A CYS 14 p       -136.2 156.8  Favored 
+207 9  A PRO 15 Cg_endo -69.7  115.9  Favored 
+208 9  A THR 16 p       -102.2 -36.2  Favored 
+209 9  A SER 17 OUTLIER -126.1 -174.1 Favored 
+210 9  A GLN 18 mt-30   -88.9  -36.2  Favored 
+211 9  A THR 19 p       -99.7  -35.6  Favored 
+212 9  A THR 20 p       -120.3 158.6  Favored 
+213 9  A TRP 21 m0      -112.0 -179.2 Favored 
+214 9  A GLY 22 ?       -158.8 -171.8 Favored 
+215 9  A CYS 23 m       -96.8  162.6  Favored 
+216 9  A CYS 24 m       ?      ?      ?       
+217 10 A CYS 1  m       ?      ?      ?       
+218 10 A GLY 2  ?       -86.0  -74.5  Allowed 
+219 10 A GLY 3  ?       131.3  -33.3  Favored 
+220 10 A GLY 4  ?       -53.4  -41.2  Favored 
+221 10 A PHE 5  p90     -123.6 -176.9 Favored 
+222 10 A SER 6  m       -113.5 166.9  Favored 
+223 10 A CYS 7  m       -144.3 179.9  Favored 
+224 10 A HIS 8  m170    -90.2  151.2  Favored 
+225 10 A ASP 9  OUTLIER -59.7  128.5  Favored 
+226 10 A GLY 10 ?       93.9   -26.9  Favored 
+227 10 A GLU 11 OUTLIER -76.8  143.9  Favored 
+228 10 A THR 12 OUTLIER -98.6  150.7  Favored 
+229 10 A CYS 13 m       -81.1  103.7  Favored 
+230 10 A CYS 14 m       -117.9 153.8  Favored 
+231 10 A PRO 15 Cg_endo -69.8  115.5  Favored 
+232 10 A THR 16 p       -102.1 -35.8  Favored 
+233 10 A SER 17 OUTLIER -131.0 -179.7 Favored 
+234 10 A GLN 18 pt20    -86.0  -36.2  Favored 
+235 10 A THR 19 m       -93.3  -35.9  Favored 
+236 10 A THR 20 p       -126.2 160.5  Favored 
+237 10 A TRP 21 m0      -112.8 -178.2 Favored 
+238 10 A GLY 22 ?       -154.2 -169.0 Favored 
+239 10 A CYS 23 m       -93.2  172.7  Favored 
+240 10 A CYS 24 OUTLIER ?      ?      ?       
+241 11 A CYS 1  m       ?      ?      ?       
+242 11 A GLY 2  ?       -162.7 -106.5 Allowed 
+243 11 A GLY 3  ?       130.0  -35.5  Favored 
+244 11 A GLY 4  ?       -55.4  -66.1  Favored 
+245 11 A PHE 5  p90     -62.4  -176.2 Allowed 
+246 11 A SER 6  m       -132.0 152.3  Favored 
+247 11 A CYS 7  OUTLIER -146.0 169.6  Favored 
+248 11 A HIS 8  m170    -92.7  144.1  Favored 
+249 11 A ASP 9  p-10    -52.8  136.7  Favored 
+250 11 A GLY 10 ?       103.5  -26.9  Favored 
+251 11 A GLU 11 mp0     -81.5  134.3  Favored 
+252 11 A THR 12 OUTLIER -90.7  144.5  Favored 
+253 11 A CYS 13 p       -77.9  131.0  Favored 
+254 11 A CYS 14 m       -136.3 153.7  Favored 
+255 11 A PRO 15 Cg_endo -69.8  117.6  Favored 
+256 11 A THR 16 p       -103.3 -36.2  Favored 
+257 11 A SER 17 m       -143.7 177.4  Favored 
+258 11 A GLN 18 pt20    -78.5  -36.3  Favored 
+259 11 A THR 19 OUTLIER -98.9  -35.8  Favored 
+260 11 A THR 20 p       -114.3 155.9  Favored 
+261 11 A TRP 21 m95     -125.0 -179.1 Favored 
+262 11 A GLY 22 ?       -162.9 -157.9 Favored 
+263 11 A CYS 23 m       -115.2 -176.2 Favored 
+264 11 A CYS 24 m       ?      ?      ?       
+265 12 A CYS 1  m       ?      ?      ?       
+266 12 A GLY 2  ?       -68.1  -168.4 Favored 
+267 12 A GLY 3  ?       -133.1 43.5   Allowed 
+268 12 A GLY 4  ?       -93.9  -49.8  Favored 
+269 12 A PHE 5  p90     -86.1  -176.7 Favored 
+270 12 A SER 6  m       -124.7 155.3  Favored 
+271 12 A CYS 7  m       -149.6 177.0  Favored 
+272 12 A HIS 8  m170    -90.3  141.6  Favored 
+273 12 A ASP 9  t70     -54.5  136.5  Favored 
+274 12 A GLY 10 ?       93.6   -26.9  Favored 
+275 12 A GLU 11 tp10    -64.8  139.4  Favored 
+276 12 A THR 12 p       -91.4  130.8  Favored 
+277 12 A CYS 13 p       -77.5  132.4  Favored 
+278 12 A CYS 14 m       -136.2 153.6  Favored 
+279 12 A PRO 15 Cg_endo -69.8  116.8  Favored 
+280 12 A THR 16 p       -102.7 -35.7  Favored 
+281 12 A SER 17 t       -134.7 -175.2 Favored 
+282 12 A GLN 18 mt-30   -85.9  -36.2  Favored 
+283 12 A THR 19 t       -100.6 -35.8  Favored 
+284 12 A THR 20 m       -113.8 151.8  Favored 
+285 12 A TRP 21 m95     -115.2 179.2  Favored 
+286 12 A GLY 22 ?       -154.8 -160.0 Favored 
+287 12 A CYS 23 m       -118.9 172.1  Favored 
+288 12 A CYS 24 m       ?      ?      ?       
+289 13 A CYS 1  m       ?      ?      ?       
+290 13 A GLY 2  ?       -146.7 -90.8  OUTLIER 
+291 13 A GLY 3  ?       -102.8 -43.9  Allowed 
+292 13 A GLY 4  ?       -164.8 52.8   Allowed 
+293 13 A PHE 5  m-85    -110.4 144.5  Favored 
+294 13 A SER 6  m       -158.6 150.5  Favored 
+295 13 A CYS 7  OUTLIER -146.2 177.8  Favored 
+296 13 A HIS 8  m170    -90.1  163.9  Favored 
+297 13 A ASP 9  p30     -52.6  133.4  Favored 
+298 13 A GLY 10 ?       103.9  -26.9  Favored 
+299 13 A GLU 11 mp0     -93.4  167.8  Favored 
+300 13 A THR 12 m       -145.5 151.8  Favored 
+301 13 A CYS 13 m       -78.1  113.6  Favored 
+302 13 A CYS 14 m       -125.8 153.7  Favored 
+303 13 A PRO 15 Cg_endo -69.8  116.3  Favored 
+304 13 A THR 16 p       -98.6  -36.1  Favored 
+305 13 A SER 17 m       -140.6 177.0  Favored 
+306 13 A GLN 18 mp0     -78.2  -36.2  Favored 
+307 13 A THR 19 p       -98.4  -35.9  Favored 
+308 13 A THR 20 m       -114.5 157.9  Favored 
+309 13 A TRP 21 m95     -124.4 179.7  Favored 
+310 13 A GLY 22 ?       -162.8 -155.3 Favored 
+311 13 A CYS 23 m       -114.5 178.5  Favored 
+312 13 A CYS 24 m       ?      ?      ?       
+313 14 A CYS 1  m       ?      ?      ?       
+314 14 A GLY 2  ?       -162.1 37.9   Allowed 
+315 14 A GLY 3  ?       177.1  -80.1  OUTLIER 
+316 14 A GLY 4  ?       -57.7  -89.6  OUTLIER 
+317 14 A PHE 5  t80     -68.5  168.7  Favored 
+318 14 A SER 6  m       -141.8 154.7  Favored 
+319 14 A CYS 7  m       -149.6 179.7  Favored 
+320 14 A HIS 8  m170    -90.9  150.2  Favored 
+321 14 A ASP 9  p-10    -53.3  124.7  Favored 
+322 14 A GLY 10 ?       94.5   -27.0  Favored 
+323 14 A GLU 11 tp10    -79.2  153.4  Favored 
+324 14 A THR 12 p       -105.5 151.0  Favored 
+325 14 A CYS 13 m       -85.5  109.3  Favored 
+326 14 A CYS 14 p       -136.4 153.6  Favored 
+327 14 A PRO 15 Cg_endo -69.7  115.6  Favored 
+328 14 A THR 16 p       -91.4  -42.9  Favored 
+329 14 A SER 17 m       -119.0 -175.1 Favored 
+330 14 A GLN 18 tt0     -85.5  -36.5  Favored 
+331 14 A THR 19 p       -99.0  -35.8  Favored 
+332 14 A THR 20 OUTLIER -114.0 154.0  Favored 
+333 14 A TRP 21 m0      -110.2 -176.5 Favored 
+334 14 A GLY 22 ?       -168.1 -151.5 Favored 
+335 14 A CYS 23 m       -116.2 173.2  Favored 
+336 14 A CYS 24 m       ?      ?      ?       
+337 15 A CYS 1  m       ?      ?      ?       
+338 15 A GLY 2  ?       -89.1  132.0  Favored 
+339 15 A GLY 3  ?       -179.5 -61.5  OUTLIER 
+340 15 A GLY 4  ?       -144.6 -77.5  OUTLIER 
+341 15 A PHE 5  p90     -64.8  179.8  Allowed 
+342 15 A SER 6  m       -133.2 154.6  Favored 
+343 15 A CYS 7  OUTLIER -148.1 177.6  Favored 
+344 15 A HIS 8  m170    -95.1  138.6  Favored 
+345 15 A ASP 9  t70     -54.0  140.5  Favored 
+346 15 A GLY 10 ?       97.6   -27.0  Favored 
+347 15 A GLU 11 tt0     -69.6  148.8  Favored 
+348 15 A THR 12 OUTLIER -91.6  123.9  Favored 
+349 15 A CYS 13 m       -77.5  124.9  Favored 
+350 15 A CYS 14 m       -135.6 153.7  Favored 
+351 15 A PRO 15 Cg_endo -69.7  116.9  Favored 
+352 15 A THR 16 p       -97.6  -39.6  Favored 
+353 15 A SER 17 t       -123.2 -177.2 Favored 
+354 15 A GLN 18 pt20    -87.1  -37.9  Favored 
+355 15 A THR 19 t       -90.0  -35.1  Favored 
+356 15 A THR 20 m       -126.8 154.9  Favored 
+357 15 A TRP 21 m0      -104.7 -176.8 Favored 
+358 15 A GLY 22 ?       -154.9 -148.8 Favored 
+359 15 A CYS 23 m       -125.7 160.3  Favored 
+360 15 A CYS 24 m       ?      ?      ?       
+361 16 A CYS 1  m       ?      ?      ?       
+362 16 A GLY 2  ?       -179.9 135.6  Favored 
+363 16 A GLY 3  ?       166.0  -68.3  Allowed 
+364 16 A GLY 4  ?       -112.4 -34.2  Allowed 
+365 16 A PHE 5  p90     -135.1 -173.3 Favored 
+366 16 A SER 6  OUTLIER -133.5 176.5  Favored 
+367 16 A CYS 7  m       -149.3 -179.8 Favored 
+368 16 A HIS 8  m170    -90.0  139.5  Favored 
+369 16 A ASP 9  p-10    -52.6  129.3  Favored 
+370 16 A GLY 10 ?       93.5   -26.9  Favored 
+371 16 A GLU 11 tp10    -69.9  153.4  Favored 
+372 16 A THR 12 OUTLIER -92.7  150.3  Favored 
+373 16 A CYS 13 m       -99.1  118.8  Favored 
+374 16 A CYS 14 m       -134.4 154.2  Favored 
+375 16 A PRO 15 Cg_endo -69.8  115.4  Favored 
+376 16 A THR 16 p       -102.1 -36.0  Favored 
+377 16 A SER 17 OUTLIER -131.7 178.6  Favored 
+378 16 A GLN 18 tt0     -85.9  -35.7  Favored 
+379 16 A THR 19 p       -90.3  -35.6  Favored 
+380 16 A THR 20 OUTLIER -133.7 160.5  Favored 
+381 16 A TRP 21 m0      -108.6 -177.7 Favored 
+382 16 A GLY 22 ?       -154.9 -177.9 Favored 
+383 16 A CYS 23 m       -85.5  161.6  Favored 
+384 16 A CYS 24 p       ?      ?      ?       
+385 17 A CYS 1  p       ?      ?      ?       
+386 17 A GLY 2  ?       -86.5  -139.2 Favored 
+387 17 A GLY 3  ?       -157.0 37.0   Allowed 
+388 17 A GLY 4  ?       -93.2  43.6   Favored 
+389 17 A PHE 5  p90     -175.2 151.8  Allowed 
+390 17 A SER 6  m       -99.2  142.7  Favored 
+391 17 A CYS 7  m       -150.0 -179.9 Favored 
+392 17 A HIS 8  m170    -90.0  131.1  Favored 
+393 17 A ASP 9  p-10    -51.9  137.9  Favored 
+394 17 A GLY 10 ?       104.3  -26.9  Favored 
+395 17 A GLU 11 OUTLIER -71.0  147.9  Favored 
+396 17 A THR 12 p       -90.6  136.7  Favored 
+397 17 A CYS 13 p       -77.3  130.1  Favored 
+398 17 A CYS 14 m       -132.9 153.6  Favored 
+399 17 A PRO 15 Cg_endo -69.7  115.4  Favored 
+400 17 A THR 16 p       -104.9 -34.2  Favored 
+401 17 A SER 17 OUTLIER -141.7 -169.9 Favored 
+402 17 A GLN 18 tt0     -88.4  -34.9  Favored 
+403 17 A THR 19 p       -106.9 -33.9  Favored 
+404 17 A THR 20 m       -113.5 150.0  Favored 
+405 17 A TRP 21 m95     -120.2 -176.1 Favored 
+406 17 A GLY 22 ?       -168.4 141.7  Favored 
+407 17 A CYS 23 p       -65.9  157.7  Favored 
+408 17 A CYS 24 m       ?      ?      ?       
+409 18 A CYS 1  p       ?      ?      ?       
+410 18 A GLY 2  ?       -160.1 161.7  Favored 
+411 18 A GLY 3  ?       171.3  -105.1 Allowed 
+412 18 A GLY 4  ?       -65.4  -39.4  Favored 
+413 18 A PHE 5  p90     -108.1 173.0  Favored 
+414 18 A SER 6  m       -121.9 151.7  Favored 
+415 18 A CYS 7  OUTLIER -145.7 163.9  Favored 
+416 18 A HIS 8  m170    -90.4  141.9  Favored 
+417 18 A ASP 9  t70     -49.6  134.9  Favored 
+418 18 A GLY 10 ?       110.7  -24.7  Favored 
+419 18 A GLU 11 OUTLIER -56.8  168.8  Allowed 
+420 18 A THR 12 OUTLIER -117.5 128.8  Favored 
+421 18 A CYS 13 t       -77.8  105.8  Favored 
+422 18 A CYS 14 p       -136.4 156.9  Favored 
+423 18 A PRO 15 Cg_endo -69.8  115.5  Favored 
+424 18 A THR 16 p       -101.7 -36.3  Favored 
+425 18 A SER 17 OUTLIER -132.6 178.0  Favored 
+426 18 A GLN 18 mm-40   -85.2  -35.9  Favored 
+427 18 A THR 19 p       -90.0  -35.6  Favored 
+428 18 A THR 20 p       -133.8 160.7  Favored 
+429 18 A TRP 21 m0      -109.3 -178.2 Favored 
+430 18 A GLY 22 ?       -158.4 -171.3 Favored 
+431 18 A CYS 23 m       -95.0  166.7  Favored 
+432 18 A CYS 24 m       ?      ?      ?       
+433 19 A CYS 1  p       ?      ?      ?       
+434 19 A GLY 2  ?       -152.3 62.2   Allowed 
+435 19 A GLY 3  ?       -73.3  -75.0  Allowed 
+436 19 A GLY 4  ?       -153.9 36.1   Allowed 
+437 19 A PHE 5  p90     -156.5 168.7  Favored 
+438 19 A SER 6  m       -121.0 155.4  Favored 
+439 19 A CYS 7  m       -150.1 -179.9 Favored 
+440 19 A HIS 8  m170    -90.0  135.1  Favored 
+441 19 A ASP 9  m-20    -51.9  135.4  Favored 
+442 19 A GLY 10 ?       107.6  -26.9  Favored 
+443 19 A GLU 11 pp20?   -57.6  169.3  Allowed 
+444 19 A THR 12 OUTLIER -116.7 126.3  Favored 
+445 19 A CYS 13 t       -77.2  103.5  Favored 
+446 19 A CYS 14 m       -111.3 153.5  Favored 
+447 19 A PRO 15 Cg_endo -69.8  115.4  Favored 
+448 19 A THR 16 p       -105.6 -33.7  Favored 
+449 19 A SER 17 t       -125.9 -169.8 Favored 
+450 19 A GLN 18 mt-30   -90.4  -35.5  Favored 
+451 19 A THR 19 OUTLIER -105.0 -35.2  Favored 
+452 19 A THR 20 t       -113.6 158.6  Favored 
+453 19 A TRP 21 m0      -115.2 -178.5 Favored 
+454 19 A GLY 22 ?       -145.6 -174.3 Favored 
+455 19 A CYS 23 m       -101.2 158.7  Favored 
+456 19 A CYS 24 m       ?      ?      ?       
+457 20 A CYS 1  p       ?      ?      ?       
+458 20 A GLY 2  ?       -140.2 -86.7  Allowed 
+459 20 A GLY 3  ?       -106.1 45.2   Allowed 
+460 20 A GLY 4  ?       -156.4 -60.5  OUTLIER 
+461 20 A PHE 5  t80     -79.7  173.9  Favored 
+462 20 A SER 6  m       -150.1 154.1  Favored 
+463 20 A CYS 7  m       -149.9 -179.7 Favored 
+464 20 A HIS 8  m170    -89.9  151.3  Favored 
+465 20 A ASP 9  p-10    -52.1  121.1  Favored 
+466 20 A GLY 10 ?       93.5   -26.9  Favored 
+467 20 A GLU 11 OUTLIER -82.8  130.4  Favored 
+468 20 A THR 12 p       -93.6  146.1  Favored 
+469 20 A CYS 13 p       -77.3  128.6  Favored 
+470 20 A CYS 14 m       -136.6 153.7  Favored 
+471 20 A PRO 15 Cg_endo -69.8  115.4  Favored 
+472 20 A THR 16 p       -102.4 -35.5  Favored 
+473 20 A SER 17 OUTLIER -129.8 -178.5 Favored 
+474 20 A GLN 18 mt-30   -84.7  -35.8  Favored 
+475 20 A THR 19 m       -102.5 -35.2  Favored 
+476 20 A THR 20 m       -113.7 151.7  Favored 
+477 20 A TRP 21 m0      -117.2 -178.5 Favored 
+478 20 A GLY 22 ?       -165.4 -163.0 Favored 
+479 20 A CYS 23 m       -111.5 151.4  Favored 
+480 20 A CYS 24 p       ?      ?      ?       
+# 
+_pdbx_struct_nmr_ens_clust.entry_id                  7JIA 
+_pdbx_struct_nmr_ens_clust.clusters_total_number     3 
+_pdbx_struct_nmr_ens_clust.conformers_total_number   20 
+_pdbx_struct_nmr_ens_clust.outliers_total_number     0 
+# 
+loop_
+_pdbx_struct_nmr_ens_clust_gen.PDB_model_num 
+_pdbx_struct_nmr_ens_clust_gen.cluster_id 
+_pdbx_struct_nmr_ens_clust_gen.medoid_conformer 
+1  1 Y 
+2  2 N 
+3  3 N 
+4  2 N 
+5  1 N 
+6  2 N 
+7  1 N 
+8  1 N 
+9  1 N 
+10 1 N 
+11 2 N 
+12 2 Y 
+13 3 Y 
+14 1 N 
+15 2 N 
+16 2 N 
+17 2 N 
+18 1 N 
+19 2 N 
+20 1 N 
+# 
+_pdbx_struct_nmr_ens_dom.id                        1 
+_pdbx_struct_nmr_ens_dom.medoid_model_number       1 
+_pdbx_struct_nmr_ens_dom.distance_rms_dev          0.360 
+_pdbx_struct_nmr_ens_dom.distance_rms_dev_medoid   0.234 
+_pdbx_struct_nmr_ens_dom.number_of_gaps            0 
+_pdbx_struct_nmr_ens_dom.number_of_monomers        16 
+_pdbx_struct_nmr_ens_dom.percent_of_core           100.000 
+# 
+_pdbx_struct_nmr_ens_dom_lim.dom_id             1 
+_pdbx_struct_nmr_ens_dom_lim.component_id       1 
+_pdbx_struct_nmr_ens_dom_lim.beg_auth_asym_id   A 
+_pdbx_struct_nmr_ens_dom_lim.beg_auth_seq_id    9 
+_pdbx_struct_nmr_ens_dom_lim.beg_auth_comp_id   ASP 
+_pdbx_struct_nmr_ens_dom_lim.end_auth_asym_id   A 
+_pdbx_struct_nmr_ens_dom_lim.end_auth_seq_id    24 
+_pdbx_struct_nmr_ens_dom_lim.end_auth_comp_id   CYS 
+# 
+loop_
+_pdbx_validation_software.ordinal 
+_pdbx_validation_software.name 
+_pdbx_validation_software.version 
+_pdbx_validation_software.classification 
+_pdbx_validation_software.details 
+1  mogul               unknown 'geometric validation' no-ligands-for-mogul 
+2  chemicalshifts      2.15.1 'assessment of nmr assigned chemical shifts' 
+;rci_version,panav_version,chemical_shift_completeness,shiftchecker_version,chemical_shift_completeness_full_length
+;
+3  molprobity          4.02b-467 'geometric validation' 
+;relative_rama_percentile,bond-outlier,phi,psi,clashscore-full-length,angle-outlier,percent-rota-outliers-full-length,percent-rama-outliers-full-length,num_bonds_rmsz,absolute_sidechain_percentile,relative_sidechain_percentile,angles_rmsz,bonds_rmsz,num-H-reduce,rota,num_angles_rmsz,rama,absolute_rama_percentile
+;
+4  coreclust           2.15.1 'assessment of nmr ensemble structure' 
+;nmrclust_representative_model,nmrclust_number_of_models,percentage_of_core,medoid_model,cyrange_error,rmsd,nmrclust_representative,number_of_residues,cyrange_version,nmrclust_version,medoid_rmsd,residue_string,cyrange_domain_id,cyrange_number_of_domains,nmrclust_number_of_outliers,nmrclust_number_of_clusters,validate,nmrclust_error,nmrclust_cluster_id,number_of_gaps
+;
+5  coreclust           unknown 'assessment of nmr ensemble structure' 
+nmr_models_consistency_flag 
+6  buster-report       unknown 
+'geometric validation package for ligand chemistry in protein x-ray structures' 
+no-ligands-for-buster-report 
+7  nmrwriter           2.15.1 'geometric validation of nmr ensemble structure' 
+clashscore,percent-rota-outliers,percent-rama-outliers 
+8  validation-pipeline 2.15.1 'mmcif data extractor' 
+;PDB-revision-date,PDB-resolution,protein-DNA-RNA-entities,PDB-Rfree,cs_only,PDB-R,percentilebins,PDB-resolution-low,pdbid,PDB-revision-number,attemptedValidationSteps,XMLcreationDate,PDB-deposition-date
+;
+9  percentiles         
+'20191225.v01 (using entries in the PDB archive December 25th 2019)' 
+'percentile rank calculation' 
+;numPDBids-absolute-percentile-clashscore,absolute-percentile-percent-rota-outliers,relative-percentile-percent-rama-outliers,relative-percentile-clashscore,numPDBids-absolute-percentile-percent-rota-outliers,numPDBids-absolute-percentile-percent-rama-outliers,numPDBids-relative-percentile-percent-rota-outliers,numPDBids-relative-percentile-percent-rama-outliers,relative-percentile-percent-rota-outliers,no-percentile-property,numPDBids-relative-percentile-clashscore,absolute-percentile-percent-rama-outliers,absolute-percentile-clashscore
+;
+10 cyrange             
+;Kirchner and G\"{u}ntert (2011)
+;
+'domain identification of nmr ensemble structure' ? 
+11 nmrclust            'Kelley et al. (1996)' 
+'classification of nmr ensemble structure' ? 
+12 panav               'Wang et al. (2010)' 
+'nmr chemical shift validation and reference correction' ? 
+13 rci                 'v_1n_11_5_13_A (Berjanski et al., 2005)' 
+'random coil index prediction from nmr chemical shifts' ? 
+14 shiftchecker        2.15.1 'nmr chemical shift validation' ? 
+# 
+_pdbx_nmr_restraint_list.id     1 
+_pdbx_nmr_restraint_list.type   distance 
+# 
+_pdbx_nmr_restraint_summary.entry_id                            7JIA 
+_pdbx_nmr_restraint_summary.distance_restraints_total           155 
+_pdbx_nmr_restraint_summary.intraresidue_total_count            41 
+_pdbx_nmr_restraint_summary.sequential_total_count              68 
+_pdbx_nmr_restraint_summary.medium_range_total_count            14 
+_pdbx_nmr_restraint_summary.long_range_total_count              32 
+_pdbx_nmr_restraint_summary.interchain_total_count              0 
+_pdbx_nmr_restraint_summary.dihedral_angle_restraints_total     0 
+_pdbx_nmr_restraint_summary.hydrogen_bond_restraints_total      0 
+_pdbx_nmr_restraint_summary.disulfide_bond_restraints_total     0 
+_pdbx_nmr_restraint_summary.unmapped_restraints_total           0 
+_pdbx_nmr_restraint_summary.restraints_per_residue              6.5 
+_pdbx_nmr_restraint_summary.long_range_restraints_per_residue   1.3 
+# 
+loop_
+_pdbx_nmr_restraint_violation.type 
+_pdbx_nmr_restraint_violation.ordinal 
+_pdbx_nmr_restraint_violation.limit_bin_max 
+_pdbx_nmr_restraint_violation.limit_bin_min 
+_pdbx_nmr_restraint_violation.maximum_violation_in_bin 
+_pdbx_nmr_restraint_violation.bin_units 
+_pdbx_nmr_restraint_violation.violations_per_model 
+distance 1 0.2 0.1 0.2 A 3.0  
+distance 2 0.5 0.2 0.5 A 10.0 
+distance 3 ?   0.5 2.5 A 12.2 
+# 
+loop_
+_pdbx_nmr_distance_violation_summary.type 
+_pdbx_nmr_distance_violation_summary.subtype 
+_pdbx_nmr_distance_violation_summary.restraints_count 
+_pdbx_nmr_distance_violation_summary.restraints_percent 
+_pdbx_nmr_distance_violation_summary.violations_count 
+_pdbx_nmr_distance_violation_summary.violations_percent 
+_pdbx_nmr_distance_violation_summary.violations_percent_type 
+_pdbx_nmr_distance_violation_summary.consistent_violations_count 
+_pdbx_nmr_distance_violation_summary.consistent_violations_percent 
+_pdbx_nmr_distance_violation_summary.consistent_violations_percent_type 
+intraresidue all                 41  26.5  19 12.3 46.3 1 0.6 2.4  
+intraresidue backbone_backbone   1   0.6   0  0.0  0.0  0 0.0 0.0  
+intraresidue backbone_sidechain  35  22.6  16 10.3 45.7 0 0.0 0.0  
+intraresidue sidechain_sidechain 5   3.2   3  1.9  60.0 1 0.6 20.0 
+sequential   all                 68  43.9  18 11.6 26.5 1 0.6 1.5  
+sequential   backbone_backbone   22  14.2  2  1.3  9.1  0 0.0 0.0  
+sequential   backbone_sidechain  41  26.5  15 9.7  36.6 1 0.6 2.4  
+sequential   sidechain_sidechain 5   3.2   1  0.6  20.0 0 0.0 0.0  
+medium_range all                 14  9.0   5  3.2  35.7 0 0.0 0.0  
+medium_range backbone_backbone   3   1.9   0  0.0  0.0  0 0.0 0.0  
+medium_range backbone_sidechain  7   4.5   3  1.9  42.9 0 0.0 0.0  
+medium_range sidechain_sidechain 4   2.6   2  1.3  50.0 0 0.0 0.0  
+long_range   all                 32  20.6  15 9.7  46.9 1 0.6 3.1  
+long_range   backbone_backbone   8   5.2   0  0.0  0.0  0 0.0 0.0  
+long_range   backbone_sidechain  14  9.0   9  5.8  64.3 1 0.6 7.1  
+long_range   sidechain_sidechain 10  6.5   6  3.9  60.0 0 0.0 0.0  
+interchain   all                 0   0.0   0  0.0  0.0  0 0.0 0.0  
+interchain   backbone_backbone   0   0.0   0  0.0  0.0  0 0.0 0.0  
+interchain   backbone_sidechain  0   0.0   0  0.0  0.0  0 0.0 0.0  
+interchain   sidechain_sidechain 0   0.0   0  0.0  0.0  0 0.0 0.0  
+all          all                 155 100.0 57 36.8 36.8 3 1.9 1.9  
+all          backbone_backbone   34  21.9  2  1.3  5.9  0 0.0 0.0  
+all          backbone_sidechain  97  62.6  43 27.7 44.3 2 1.3 2.1  
+all          sidechain_sidechain 24  15.5  12 7.7  50.0 1 0.6 4.2  
+# 
+loop_
+_pdbx_nmr_distance_violation_model.PDB_model_num 
+_pdbx_nmr_distance_violation_model.maximum_violation 
+_pdbx_nmr_distance_violation_model.average_violation 
+_pdbx_nmr_distance_violation_model.median_violation 
+_pdbx_nmr_distance_violation_model.standard_deviation 
+_pdbx_nmr_distance_violation_model.intraresidue_violations_count 
+_pdbx_nmr_distance_violation_model.sequential_violations_count 
+_pdbx_nmr_distance_violation_model.medium_range_violations_count 
+_pdbx_nmr_distance_violation_model.long_range_violations_count 
+_pdbx_nmr_distance_violation_model.interchain_violations_count 
+_pdbx_nmr_distance_violation_model.violations_count 
+1  1.94 0.68 0.54 0.48 5  6  0 11 0 22 
+2  2.29 0.58 0.43 0.45 8  6  2 7  0 23 
+3  2.38 0.56 0.42 0.5  6  8  2 8  0 24 
+4  2.44 0.61 0.48 0.47 10 8  2 6  0 26 
+5  1.45 0.48 0.47 0.31 8  10 2 6  0 26 
+6  2.22 0.7  0.57 0.59 7  8  2 7  0 24 
+7  1.85 0.63 0.54 0.4  8  7  1 8  0 24 
+8  1.7  0.63 0.53 0.43 5  7  4 8  0 24 
+9  1.64 0.63 0.48 0.41 6  4  4 8  0 22 
+10 1.84 0.57 0.51 0.41 5  10 1 8  0 24 
+11 1.69 0.61 0.46 0.44 8  11 0 7  0 26 
+12 2.22 0.69 0.57 0.47 8  9  2 6  0 25 
+13 2.34 0.66 0.43 0.53 6  11 0 8  0 25 
+14 1.54 0.54 0.51 0.36 7  9  2 7  0 25 
+15 2.5  0.63 0.46 0.51 8  8  3 9  0 28 
+16 2.09 0.61 0.53 0.48 9  8  2 9  0 28 
+17 1.25 0.5  0.41 0.29 10 8  2 4  0 24 
+18 1.47 0.69 0.58 0.37 6  7  4 6  0 23 
+19 1.49 0.6  0.52 0.35 11 10 3 8  0 32 
+20 1.67 0.68 0.59 0.41 7  13 2 7  0 29 
+# 
+loop_
+_pdbx_nmr_distance_violation_ensemble.fraction_ensemble_size 
+_pdbx_nmr_distance_violation_ensemble.fraction_ensemble_percent 
+_pdbx_nmr_distance_violation_ensemble.intraresidue_violations_count 
+_pdbx_nmr_distance_violation_ensemble.sequential_violations_count 
+_pdbx_nmr_distance_violation_ensemble.medium_range_violations_count 
+_pdbx_nmr_distance_violation_ensemble.long_range_violations_count 
+_pdbx_nmr_distance_violation_ensemble.interchain_violations_count 
+_pdbx_nmr_distance_violation_ensemble.violations_count 
+1  5.0   2 0 0 1 0 3 
+2  10.0  3 1 0 1 0 5 
+3  15.0  0 1 1 1 0 3 
+4  20.0  1 1 1 2 0 5 
+5  25.0  1 1 1 1 0 4 
+6  30.0  4 1 0 0 0 5 
+7  35.0  0 3 0 0 0 3 
+8  40.0  1 1 0 0 0 2 
+9  45.0  0 2 0 0 0 2 
+10 50.0  1 2 0 2 0 5 
+11 55.0  1 0 0 0 0 1 
+12 60.0  0 0 0 1 0 1 
+13 65.0  1 0 1 0 0 2 
+14 70.0  1 2 0 2 0 5 
+15 75.0  1 1 1 1 0 4 
+16 80.0  1 0 0 0 0 1 
+17 85.0  0 0 0 2 0 2 
+18 90.0  0 1 0 0 0 1 
+19 95.0  0 0 0 0 0 0 
+20 100.0 1 1 0 1 0 3 
+# 
+loop_
+_pdbx_nmr_distance_violation_plural.ordinal 
+_pdbx_nmr_distance_violation_plural.list_id 
+_pdbx_nmr_distance_violation_plural.restraint_id 
+_pdbx_nmr_distance_violation_plural.violation_models_count 
+_pdbx_nmr_distance_violation_plural.average_violation 
+_pdbx_nmr_distance_violation_plural.median_violation 
+_pdbx_nmr_distance_violation_plural.standard_deviation 
+_pdbx_nmr_distance_violation_plural.entity_id_1 
+_pdbx_nmr_distance_violation_plural.entity_id_2 
+_pdbx_nmr_distance_violation_plural.auth_asym_id_1 
+_pdbx_nmr_distance_violation_plural.auth_asym_id_2 
+_pdbx_nmr_distance_violation_plural.auth_seq_id_1 
+_pdbx_nmr_distance_violation_plural.auth_seq_id_2 
+_pdbx_nmr_distance_violation_plural.auth_comp_id_1 
+_pdbx_nmr_distance_violation_plural.auth_comp_id_2 
+_pdbx_nmr_distance_violation_plural.auth_atom_id_1 
+_pdbx_nmr_distance_violation_plural.auth_atom_id_2 
+_pdbx_nmr_distance_violation_plural.label_asym_id_1 
+_pdbx_nmr_distance_violation_plural.label_asym_id_2 
+_pdbx_nmr_distance_violation_plural.label_seq_id_1 
+_pdbx_nmr_distance_violation_plural.label_seq_id_2 
+_pdbx_nmr_distance_violation_plural.PDB_ins_code_1 
+_pdbx_nmr_distance_violation_plural.PDB_ins_code_2 
+_pdbx_nmr_distance_violation_plural.label_alt_id_1 
+_pdbx_nmr_distance_violation_plural.label_alt_id_2 
+1  1 147 20 0.79 0.42 0.65 1 1 A A 16 22 THR GLY ? ? A A 16 22 ? ? . . 
+2  1 138 20 0.59 0.61 0.05 1 1 A A 8  9  HIS ASP ? ? A A 8  9  ? ? . . 
+3  1 119 20 0.25 0.25 0.0  1 1 A A 5  5  PHE PHE ? ? A A 5  5  ? ? . . 
+4  1 32  18 0.67 0.77 0.25 1 1 A A 16 17 THR SER ? ? A A 16 17 ? ? . . 
+5  1 142 17 1.76 1.67 0.6  1 1 A A 11 23 GLU CYS ? ? A A 11 23 ? ? . . 
+6  1 144 17 0.78 0.73 0.48 1 1 A A 11 23 GLU CYS ? ? A A 11 23 ? ? . . 
+7  1 74  16 0.43 0.4  0.11 1 1 A A 5  5  PHE PHE ? ? A A 5  5  ? ? . . 
+8  1 72  15 0.9  0.98 0.49 1 1 A A 13 21 CYS TRP ? ? A A 13 21 ? ? . . 
+9  1 29  15 0.82 0.81 0.35 1 1 A A 12 13 THR CYS ? ? A A 12 13 ? ? . . 
+10 1 112 15 0.6  0.5  0.28 1 1 A A 16 16 THR THR ? ? A A 16 16 ? ? . . 
+11 1 133 15 0.46 0.41 0.22 1 1 A A 7  11 CYS GLU ? ? A A 7  11 ? ? . . 
+12 1 92  14 1.06 1.23 0.43 1 1 A A 15 16 PRO THR ? ? A A 15 16 ? ? . . 
+13 1 143 14 0.71 0.63 0.33 1 1 A A 11 24 GLU CYS ? ? A A 11 24 ? ? . . 
+14 1 35  14 0.7  0.6  0.36 1 1 A A 11 12 GLU THR ? ? A A 11 12 ? ? . . 
+15 1 126 14 0.69 0.52 0.38 1 1 A A 1  13 CYS CYS ? ? A A 1  13 ? ? . . 
+16 1 137 14 0.33 0.36 0.11 1 1 A A 8  8  HIS HIS ? ? A A 8  8  ? ? . . 
+17 1 9   13 0.48 0.52 0.11 1 1 A A 11 11 GLU GLU ? ? A A 11 11 ? ? . . 
+18 1 134 13 0.45 0.49 0.14 1 1 A A 7  11 CYS GLU ? ? A A 7  11 ? ? . . 
+19 1 128 12 1.14 1.17 0.27 1 1 A A 5  21 PHE TRP ? ? A A 5  21 ? ? . . 
+20 1 118 11 0.36 0.4  0.15 1 1 A A 19 19 THR THR ? ? A A 19 19 ? ? . . 
+21 1 120 10 0.69 0.74 0.18 1 1 A A 17 18 SER GLN ? ? A A 17 18 ? ? . . 
+22 1 18  10 0.44 0.44 0.2  1 1 A A 19 20 THR THR ? ? A A 19 20 ? ? . . 
+23 1 98  10 0.4  0.28 0.34 1 1 A A 1  13 CYS CYS ? ? A A 1  13 ? ? . . 
+24 1 109 10 0.37 0.32 0.22 1 1 A A 13 21 CYS TRP ? ? A A 13 21 ? ? . . 
+25 1 22  10 0.19 0.17 0.09 1 1 A A 12 12 THR THR ? ? A A 12 12 ? ? . . 
+26 1 88  9  0.88 1.24 0.53 1 1 A A 12 13 THR CYS ? ? A A 12 13 ? ? . . 
+27 1 146 9  0.67 0.66 0.02 1 1 A A 14 15 CYS PRO ? ? A A 14 15 ? ? . . 
+28 1 14  8  0.48 0.56 0.17 1 1 A A 18 18 GLN GLN ? ? A A 18 18 ? ? . . 
+29 1 42  8  0.13 0.13 0.01 1 1 A A 3  4  GLY GLY ? ? A A 3  4  ? ? . . 
+30 1 127 7  0.45 0.47 0.08 1 1 A A 2  3  GLY GLY ? ? A A 2  3  ? ? . . 
+31 1 132 7  0.24 0.2  0.08 1 1 A A 6  7  SER CYS ? ? A A 6  7  ? ? . . 
+32 1 141 7  0.2  0.21 0.08 1 1 A A 11 12 GLU THR ? ? A A 11 12 ? ? . . 
+33 1 21  6  0.76 0.76 0.0  1 1 A A 13 13 CYS CYS ? ? A A 13 13 ? ? . . 
+34 1 85  6  0.58 0.58 0.04 1 1 A A 13 14 CYS CYS ? ? A A 13 14 ? ? . . 
+35 1 13  6  0.46 0.47 0.01 1 1 A A 18 18 GLN GLN ? ? A A 18 18 ? ? . . 
+36 1 17  6  0.43 0.42 0.11 1 1 A A 19 19 THR THR ? ? A A 19 19 ? ? . . 
+37 1 16  6  0.24 0.2  0.07 1 1 A A 5  5  PHE PHE ? ? A A 5  5  ? ? . . 
+38 1 82  5  0.68 0.84 0.25 1 1 A A 8  11 HIS GLU ? ? A A 8  11 ? ? . . 
+39 1 39  5  0.46 0.53 0.18 1 1 A A 5  6  PHE SER ? ? A A 5  6  ? ? . . 
+40 1 30  5  0.45 0.46 0.22 1 1 A A 16 22 THR GLY ? ? A A 16 22 ? ? . . 
+41 1 150 5  0.19 0.18 0.03 1 1 A A 21 21 TRP TRP ? ? A A 21 21 ? ? . . 
+42 1 136 4  0.56 0.56 0.03 1 1 A A 8  11 HIS GLU ? ? A A 8  11 ? ? . . 
+43 1 140 4  0.48 0.48 0.0  1 1 A A 11 11 GLU GLU ? ? A A 11 11 ? ? . . 
+44 1 34  4  0.41 0.39 0.16 1 1 A A 11 24 GLU CYS ? ? A A 11 24 ? ? . . 
+45 1 86  4  0.35 0.37 0.13 1 1 A A 13 23 CYS CYS ? ? A A 13 23 ? ? . . 
+46 1 31  4  0.25 0.21 0.09 1 1 A A 20 21 THR TRP ? ? A A 20 21 ? ? . . 
+47 1 107 3  1.44 1.63 0.29 1 1 A A 5  6  PHE SER ? ? A A 5  6  ? ? . . 
+48 1 129 3  1.21 1.2  0.05 1 1 A A 5  22 PHE GLY ? ? A A 5  22 ? ? . . 
+49 1 94  3  0.25 0.25 0.02 1 1 A A 7  11 CYS GLU ? ? A A 7  11 ? ? . . 
+50 1 145 2  1.3  1.3  0.31 1 1 A A 13 24 CYS CYS ? ? A A 13 24 ? ? . . 
+51 1 153 2  1.11 1.11 0.01 1 1 A A 23 24 CYS CYS ? ? A A 23 24 ? ? . . 
+52 1 111 2  0.72 0.72 0.01 1 1 A A 20 20 THR THR ? ? A A 20 20 ? ? . . 
+53 1 155 2  0.38 0.38 0.01 1 1 A A 24 24 CYS CYS ? ? A A 24 24 ? ? . . 
+54 1 19  2  0.17 0.17 0.04 1 1 A A 20 20 THR THR ? ? A A 20 20 ? ? . . 
+# 
+loop_
+_pdbx_nmr_distance_violation.ordinal 
+_pdbx_nmr_distance_violation.list_id 
+_pdbx_nmr_distance_violation.restraint_id 
+_pdbx_nmr_distance_violation.PDB_model_num 
+_pdbx_nmr_distance_violation.violation 
+_pdbx_nmr_distance_violation.entity_id_1 
+_pdbx_nmr_distance_violation.entity_id_2 
+_pdbx_nmr_distance_violation.auth_asym_id_1 
+_pdbx_nmr_distance_violation.auth_asym_id_2 
+_pdbx_nmr_distance_violation.auth_seq_id_1 
+_pdbx_nmr_distance_violation.auth_seq_id_2 
+_pdbx_nmr_distance_violation.auth_comp_id_1 
+_pdbx_nmr_distance_violation.auth_comp_id_2 
+_pdbx_nmr_distance_violation.auth_atom_id_1 
+_pdbx_nmr_distance_violation.auth_atom_id_2 
+_pdbx_nmr_distance_violation.label_asym_id_1 
+_pdbx_nmr_distance_violation.label_asym_id_2 
+_pdbx_nmr_distance_violation.label_seq_id_1 
+_pdbx_nmr_distance_violation.label_seq_id_2 
+_pdbx_nmr_distance_violation.PDB_ins_code_1 
+_pdbx_nmr_distance_violation.PDB_ins_code_2 
+_pdbx_nmr_distance_violation.label_alt_id_1 
+_pdbx_nmr_distance_violation.label_alt_id_2 
+1   1 142 15 2.5  1 1 A A 11 23 GLU CYS HB2  HB2  A A 11 23 ? ? . . 
+2   1 142 4  2.44 1 1 A A 11 23 GLU CYS HB2  HB2  A A 11 23 ? ? . . 
+3   1 142 3  2.38 1 1 A A 11 23 GLU CYS HB2  HB2  A A 11 23 ? ? . . 
+4   1 142 13 2.34 1 1 A A 11 23 GLU CYS HB2  HB2  A A 11 23 ? ? . . 
+5   1 142 2  2.29 1 1 A A 11 23 GLU CYS HB2  HB2  A A 11 23 ? ? . . 
+6   1 142 6  2.22 1 1 A A 11 23 GLU CYS HB2  HB2  A A 11 23 ? ? . . 
+7   1 142 12 2.22 1 1 A A 11 23 GLU CYS HB2  HB2  A A 11 23 ? ? . . 
+8   1 147 6  2.13 1 1 A A 16 22 THR GLY HG22 HA2  A A 16 22 ? ? . . 
+9   1 142 16 2.09 1 1 A A 11 23 GLU CYS HB2  HB2  A A 11 23 ? ? . . 
+10  1 147 1  1.94 1 1 A A 16 22 THR GLY HG22 HA2  A A 16 22 ? ? . . 
+11  1 72  7  1.85 1 1 A A 13 21 CYS TRP HB2  HZ3  A A 13 21 ? ? . . 
+12  1 147 10 1.84 1 1 A A 16 22 THR GLY HG22 HA2  A A 16 22 ? ? . . 
+13  1 147 16 1.78 1 1 A A 16 22 THR GLY HG22 HA2  A A 16 22 ? ? . . 
+14  1 144 8  1.7  1 1 A A 11 23 GLU CYS HG2  HB2  A A 11 23 ? ? . . 
+15  1 147 11 1.69 1 1 A A 16 22 THR GLY HG22 HA2  A A 16 22 ? ? . . 
+16  1 142 20 1.67 1 1 A A 11 23 GLU CYS HB2  HB2  A A 11 23 ? ? . . 
+17  1 107 3  1.66 1 1 A A 5  6  PHE SER HD2  H    A A 5  6  ? ? . . 
+18  1 128 9  1.64 1 1 A A 5  21 PHE TRP HE2  HB2  A A 5  21 ? ? . . 
+19  1 107 13 1.63 1 1 A A 5  6  PHE SER HD2  H    A A 5  6  ? ? . . 
+20  1 145 20 1.61 1 1 A A 13 24 CYS CYS HA   HB2  A A 13 24 ? ? . . 
+21  1 92  14 1.54 1 1 A A 15 16 PRO THR HA   HG22 A A 15 16 ? ? . . 
+22  1 142 11 1.5  1 1 A A 11 23 GLU CYS HB2  HB2  A A 11 23 ? ? . . 
+23  1 144 19 1.49 1 1 A A 11 23 GLU CYS HG2  HB2  A A 11 23 ? ? . . 
+24  1 144 9  1.48 1 1 A A 11 23 GLU CYS HG2  HB2  A A 11 23 ? ? . . 
+25  1 142 1  1.47 1 1 A A 11 23 GLU CYS HB2  HB2  A A 11 23 ? ? . . 
+26  1 128 18 1.47 1 1 A A 5  21 PHE TRP HE2  HB2  A A 5  21 ? ? . . 
+27  1 72  18 1.45 1 1 A A 13 21 CYS TRP HB2  HZ3  A A 13 21 ? ? . . 
+28  1 142 5  1.45 1 1 A A 11 23 GLU CYS HB2  HB2  A A 11 23 ? ? . . 
+29  1 126 8  1.45 1 1 A A 1  13 CYS CYS HB2  HB2  A A 1  13 ? ? . . 
+30  1 92  9  1.44 1 1 A A 15 16 PRO THR HA   HG22 A A 15 16 ? ? . . 
+31  1 92  18 1.44 1 1 A A 15 16 PRO THR HA   HG22 A A 15 16 ? ? . . 
+32  1 29  15 1.39 1 1 A A 12 13 THR CYS HG22 H    A A 12 13 ? ? . . 
+33  1 92  12 1.38 1 1 A A 15 16 PRO THR HA   HG22 A A 15 16 ? ? . . 
+34  1 92  6  1.37 1 1 A A 15 16 PRO THR HA   HG22 A A 15 16 ? ? . . 
+35  1 98  8  1.34 1 1 A A 1  13 CYS CYS HA   HB2  A A 1  13 ? ? . . 
+36  1 92  13 1.34 1 1 A A 15 16 PRO THR HA   HG22 A A 15 16 ? ? . . 
+37  1 128 1  1.34 1 1 A A 5  21 PHE TRP HE2  HB2  A A 5  21 ? ? . . 
+38  1 92  4  1.33 1 1 A A 15 16 PRO THR HA   HG22 A A 15 16 ? ? . . 
+39  1 35  10 1.33 1 1 A A 11 12 GLU THR HG2  H    A A 11 12 ? ? . . 
+40  1 126 16 1.32 1 1 A A 1  13 CYS CYS HB2  HB2  A A 1  13 ? ? . . 
+41  1 72  2  1.31 1 1 A A 13 21 CYS TRP HB2  HZ3  A A 13 21 ? ? . . 
+42  1 72  5  1.31 1 1 A A 13 21 CYS TRP HB2  HZ3  A A 13 21 ? ? . . 
+43  1 72  1  1.3  1 1 A A 13 21 CYS TRP HB2  HZ3  A A 13 21 ? ? . . 
+44  1 142 7  1.29 1 1 A A 11 23 GLU CYS HB2  HB2  A A 11 23 ? ? . . 
+45  1 128 11 1.29 1 1 A A 5  21 PHE TRP HE2  HB2  A A 5  21 ? ? . . 
+46  1 126 15 1.29 1 1 A A 1  13 CYS CYS HB2  HB2  A A 1  13 ? ? . . 
+47  1 88  20 1.27 1 1 A A 12 13 THR CYS HA   HB2  A A 12 13 ? ? . . 
+48  1 29  7  1.27 1 1 A A 12 13 THR CYS HG22 H    A A 12 13 ? ? . . 
+49  1 129 8  1.27 1 1 A A 5  22 PHE GLY HE2  HA2  A A 5  22 ? ? . . 
+50  1 88  11 1.26 1 1 A A 12 13 THR CYS HA   HB2  A A 12 13 ? ? . . 
+51  1 143 15 1.26 1 1 A A 11 24 GLU CYS HB2  H    A A 11 24 ? ? . . 
+52  1 88  6  1.25 1 1 A A 12 13 THR CYS HA   HB2  A A 12 13 ? ? . . 
+53  1 88  17 1.25 1 1 A A 12 13 THR CYS HA   HB2  A A 12 13 ? ? . . 
+54  1 142 14 1.25 1 1 A A 11 23 GLU CYS HB2  HB2  A A 11 23 ? ? . . 
+55  1 142 19 1.25 1 1 A A 11 23 GLU CYS HB2  HB2  A A 11 23 ? ? . . 
+56  1 88  4  1.24 1 1 A A 12 13 THR CYS HA   HB2  A A 12 13 ? ? . . 
+57  1 88  12 1.24 1 1 A A 12 13 THR CYS HA   HB2  A A 12 13 ? ? . . 
+58  1 142 10 1.24 1 1 A A 11 23 GLU CYS HB2  HB2  A A 11 23 ? ? . . 
+59  1 29  12 1.22 1 1 A A 12 13 THR CYS HG22 H    A A 12 13 ? ? . . 
+60  1 144 13 1.22 1 1 A A 11 23 GLU CYS HG2  HB2  A A 11 23 ? ? . . 
+61  1 143 20 1.22 1 1 A A 11 24 GLU CYS HB2  H    A A 11 24 ? ? . . 
+62  1 129 3  1.2  1 1 A A 5  22 PHE GLY HE2  HA2  A A 5  22 ? ? . . 
+63  1 128 15 1.2  1 1 A A 5  21 PHE TRP HE2  HB2  A A 5  21 ? ? . . 
+64  1 35  7  1.19 1 1 A A 11 12 GLU THR HG2  H    A A 11 12 ? ? . . 
+65  1 35  11 1.19 1 1 A A 11 12 GLU THR HG2  H    A A 11 12 ? ? . . 
+66  1 128 12 1.17 1 1 A A 5  21 PHE TRP HE2  HB2  A A 5  21 ? ? . . 
+67  1 29  19 1.16 1 1 A A 12 13 THR CYS HG22 H    A A 12 13 ? ? . . 
+68  1 129 13 1.16 1 1 A A 5  22 PHE GLY HE2  HA2  A A 5  22 ? ? . . 
+69  1 128 17 1.16 1 1 A A 5  21 PHE TRP HE2  HB2  A A 5  21 ? ? . . 
+70  1 92  20 1.14 1 1 A A 15 16 PRO THR HA   HG22 A A 15 16 ? ? . . 
+71  1 29  6  1.14 1 1 A A 12 13 THR CYS HG22 H    A A 12 13 ? ? . . 
+72  1 153 16 1.12 1 1 A A 23 24 CYS CYS HA   HB2  A A 23 24 ? ? . . 
+73  1 144 18 1.12 1 1 A A 11 23 GLU CYS HG2  HB2  A A 11 23 ? ? . . 
+74  1 72  19 1.11 1 1 A A 13 21 CYS TRP HB2  HZ3  A A 13 21 ? ? . . 
+75  1 153 20 1.1  1 1 A A 23 24 CYS CYS HA   HB2  A A 23 24 ? ? . . 
+76  1 133 19 1.08 1 1 A A 7  11 CYS GLU HA   HB2  A A 7  11 ? ? . . 
+77  1 35  1  1.07 1 1 A A 11 12 GLU THR HG2  H    A A 11 12 ? ? . . 
+78  1 128 19 1.06 1 1 A A 5  21 PHE TRP HE2  HB2  A A 5  21 ? ? . . 
+79  1 128 6  1.05 1 1 A A 5  21 PHE TRP HE2  HB2  A A 5  21 ? ? . . 
+80  1 143 6  1.04 1 1 A A 11 24 GLU CYS HB2  H    A A 11 24 ? ? . . 
+81  1 107 8  1.03 1 1 A A 5  6  PHE SER HD2  H    A A 5  6  ? ? . . 
+82  1 92  1  1.02 1 1 A A 15 16 PRO THR HA   HG22 A A 15 16 ? ? . . 
+83  1 72  13 0.99 1 1 A A 13 21 CYS TRP HB2  HZ3  A A 13 21 ? ? . . 
+84  1 145 16 0.99 1 1 A A 13 24 CYS CYS HA   HB2  A A 13 24 ? ? . . 
+85  1 72  15 0.98 1 1 A A 13 21 CYS TRP HB2  HZ3  A A 13 21 ? ? . . 
+86  1 143 2  0.98 1 1 A A 11 24 GLU CYS HB2  H    A A 11 24 ? ? . . 
+87  1 72  14 0.96 1 1 A A 13 21 CYS TRP HB2  HZ3  A A 13 21 ? ? . . 
+88  1 29  20 0.96 1 1 A A 12 13 THR CYS HG22 H    A A 12 13 ? ? . . 
+89  1 29  17 0.94 1 1 A A 12 13 THR CYS HG22 H    A A 12 13 ? ? . . 
+90  1 144 11 0.94 1 1 A A 11 23 GLU CYS HG2  HB2  A A 11 23 ? ? . . 
+91  1 143 12 0.94 1 1 A A 11 24 GLU CYS HB2  H    A A 11 24 ? ? . . 
+92  1 32  9  0.93 1 1 A A 16 17 THR SER HG22 H    A A 16 17 ? ? . . 
+93  1 112 4  0.93 1 1 A A 16 16 THR THR HA   HG22 A A 16 16 ? ? . . 
+94  1 112 13 0.93 1 1 A A 16 16 THR THR HA   HG22 A A 16 16 ? ? . . 
+95  1 82  18 0.92 1 1 A A 8  11 HIS GLU H    HG2  A A 8  11 ? ? . . 
+96  1 32  18 0.92 1 1 A A 16 17 THR SER HG22 H    A A 16 17 ? ? . . 
+97  1 128 2  0.92 1 1 A A 5  21 PHE TRP HE2  HB2  A A 5  21 ? ? . . 
+98  1 32  6  0.91 1 1 A A 16 17 THR SER HG22 H    A A 16 17 ? ? . . 
+99  1 143 4  0.91 1 1 A A 11 24 GLU CYS HB2  H    A A 11 24 ? ? . . 
+100 1 112 12 0.91 1 1 A A 16 16 THR THR HA   HG22 A A 16 16 ? ? . . 
+101 1 92  10 0.9  1 1 A A 15 16 PRO THR HA   HG22 A A 15 16 ? ? . . 
+102 1 32  12 0.9  1 1 A A 16 17 THR SER HG22 H    A A 16 17 ? ? . . 
+103 1 144 1  0.9  1 1 A A 11 23 GLU CYS HG2  HB2  A A 11 23 ? ? . . 
+104 1 109 7  0.89 1 1 A A 13 21 CYS TRP HB2  HE3  A A 13 21 ? ? . . 
+105 1 82  8  0.88 1 1 A A 8  11 HIS GLU H    HG2  A A 8  11 ? ? . . 
+106 1 126 19 0.88 1 1 A A 1  13 CYS CYS HB2  HB2  A A 1  13 ? ? . . 
+107 1 112 20 0.88 1 1 A A 16 16 THR THR HA   HG22 A A 16 16 ? ? . . 
+108 1 32  4  0.87 1 1 A A 16 17 THR SER HG22 H    A A 16 17 ? ? . . 
+109 1 32  13 0.87 1 1 A A 16 17 THR SER HG22 H    A A 16 17 ? ? . . 
+110 1 112 9  0.87 1 1 A A 16 16 THR THR HA   HG22 A A 16 16 ? ? . . 
+111 1 112 14 0.87 1 1 A A 16 16 THR THR HA   HG22 A A 16 16 ? ? . . 
+112 1 112 18 0.87 1 1 A A 16 16 THR THR HA   HG22 A A 16 16 ? ? . . 
+113 1 147 14 0.85 1 1 A A 16 22 THR GLY HG22 HA2  A A 16 22 ? ? . . 
+114 1 82  9  0.84 1 1 A A 8  11 HIS GLU H    HG2  A A 8  11 ? ? . . 
+115 1 32  14 0.84 1 1 A A 16 17 THR SER HG22 H    A A 16 17 ? ? . . 
+116 1 30  6  0.83 1 1 A A 16 22 THR GLY HG22 H    A A 16 22 ? ? . . 
+117 1 144 15 0.82 1 1 A A 11 23 GLU CYS HG2  HB2  A A 11 23 ? ? . . 
+118 1 32  20 0.81 1 1 A A 16 17 THR SER HG22 H    A A 16 17 ? ? . . 
+119 1 29  14 0.81 1 1 A A 12 13 THR CYS HG22 H    A A 12 13 ? ? . . 
+120 1 133 9  0.81 1 1 A A 7  11 CYS GLU HA   HB2  A A 7  11 ? ? . . 
+121 1 35  20 0.8  1 1 A A 11 12 GLU THR HG2  H    A A 11 12 ? ? . . 
+122 1 92  16 0.79 1 1 A A 15 16 PRO THR HA   HG22 A A 15 16 ? ? . . 
+123 1 32  1  0.79 1 1 A A 16 17 THR SER HG22 H    A A 16 17 ? ? . . 
+124 1 18  19 0.79 1 1 A A 19 20 THR THR HG22 H    A A 19 20 ? ? . . 
+125 1 120 15 0.79 1 1 A A 17 18 SER GLN HB2  H    A A 17 18 ? ? . . 
+126 1 35  19 0.78 1 1 A A 11 12 GLU THR HG2  H    A A 11 12 ? ? . . 
+127 1 120 2  0.78 1 1 A A 17 18 SER GLN HB2  H    A A 17 18 ? ? . . 
+128 1 21  4  0.76 1 1 A A 13 13 CYS CYS H    HB2  A A 13 13 ? ? . . 
+129 1 21  6  0.76 1 1 A A 13 13 CYS CYS H    HB2  A A 13 13 ? ? . . 
+130 1 21  11 0.76 1 1 A A 13 13 CYS CYS H    HB2  A A 13 13 ? ? . . 
+131 1 21  12 0.76 1 1 A A 13 13 CYS CYS H    HB2  A A 13 13 ? ? . . 
+132 1 21  17 0.76 1 1 A A 13 13 CYS CYS H    HB2  A A 13 13 ? ? . . 
+133 1 21  20 0.76 1 1 A A 13 13 CYS CYS H    HB2  A A 13 13 ? ? . . 
+134 1 120 20 0.76 1 1 A A 17 18 SER GLN HB2  H    A A 17 18 ? ? . . 
+135 1 32  10 0.75 1 1 A A 16 17 THR SER HG22 H    A A 16 17 ? ? . . 
+136 1 128 7  0.75 1 1 A A 5  21 PHE TRP HE2  HB2  A A 5  21 ? ? . . 
+137 1 120 3  0.75 1 1 A A 17 18 SER GLN HB2  H    A A 17 18 ? ? . . 
+138 1 120 12 0.75 1 1 A A 17 18 SER GLN HB2  H    A A 17 18 ? ? . . 
+139 1 147 20 0.74 1 1 A A 16 22 THR GLY HG22 HA2  A A 16 22 ? ? . . 
+140 1 120 10 0.74 1 1 A A 17 18 SER GLN HB2  H    A A 17 18 ? ? . . 
+141 1 92  11 0.73 1 1 A A 15 16 PRO THR HA   HG22 A A 15 16 ? ? . . 
+142 1 144 10 0.73 1 1 A A 11 23 GLU CYS HG2  HB2  A A 11 23 ? ? . . 
+143 1 126 18 0.73 1 1 A A 1  13 CYS CYS HB2  HB2  A A 1  13 ? ? . . 
+144 1 111 19 0.73 1 1 A A 20 20 THR THR HA   HG22 A A 20 20 ? ? . . 
+145 1 32  11 0.72 1 1 A A 16 17 THR SER HG22 H    A A 16 17 ? ? . . 
+146 1 32  16 0.72 1 1 A A 16 17 THR SER HG22 H    A A 16 17 ? ? . . 
+147 1 146 16 0.72 1 1 A A 14 15 CYS PRO HB2  HD3  A A 14 15 ? ? . . 
+148 1 126 1  0.72 1 1 A A 1  13 CYS CYS HB2  HB2  A A 1  13 ? ? . . 
+149 1 120 17 0.72 1 1 A A 17 18 SER GLN HB2  H    A A 17 18 ? ? . . 
+150 1 111 7  0.72 1 1 A A 20 20 THR THR HA   HG22 A A 20 20 ? ? . . 
+151 1 120 11 0.71 1 1 A A 17 18 SER GLN HB2  H    A A 17 18 ? ? . . 
+152 1 39  8  0.7  1 1 A A 5  6  PHE SER HB2  H    A A 5  6  ? ? . . 
+153 1 146 10 0.7  1 1 A A 14 15 CYS PRO HB2  HD3  A A 14 15 ? ? . . 
+154 1 120 19 0.7  1 1 A A 17 18 SER GLN HB2  H    A A 17 18 ? ? . . 
+155 1 118 15 0.7  1 1 A A 19 19 THR THR HA   HG22 A A 19 19 ? ? . . 
+156 1 29  8  0.69 1 1 A A 12 13 THR CYS HG22 H    A A 12 13 ? ? . . 
+157 1 147 5  0.69 1 1 A A 16 22 THR GLY HG22 HA2  A A 16 22 ? ? . . 
+158 1 144 7  0.69 1 1 A A 11 23 GLU CYS HG2  HB2  A A 11 23 ? ? . . 
+159 1 14  6  0.69 1 1 A A 18 18 GLN GLN H    HG2  A A 18 18 ? ? . . 
+160 1 146 20 0.68 1 1 A A 14 15 CYS PRO HB2  HD3  A A 14 15 ? ? . . 
+161 1 146 11 0.67 1 1 A A 14 15 CYS PRO HB2  HD3  A A 14 15 ? ? . . 
+162 1 143 16 0.67 1 1 A A 11 24 GLU CYS HB2  H    A A 11 24 ? ? . . 
+163 1 34  7  0.66 1 1 A A 11 24 GLU CYS HG2  H    A A 11 24 ? ? . . 
+164 1 146 12 0.66 1 1 A A 14 15 CYS PRO HB2  HD3  A A 14 15 ? ? . . 
+165 1 146 13 0.66 1 1 A A 14 15 CYS PRO HB2  HD3  A A 14 15 ? ? . . 
+166 1 146 15 0.66 1 1 A A 14 15 CYS PRO HB2  HD3  A A 14 15 ? ? . . 
+167 1 146 17 0.66 1 1 A A 14 15 CYS PRO HB2  HD3  A A 14 15 ? ? . . 
+168 1 146 19 0.66 1 1 A A 14 15 CYS PRO HB2  HD3  A A 14 15 ? ? . . 
+169 1 85  19 0.65 1 1 A A 13 14 CYS CYS HB2  HA   A A 13 14 ? ? . . 
+170 1 18  14 0.65 1 1 A A 19 20 THR THR HG22 H    A A 19 20 ? ? . . 
+171 1 128 4  0.65 1 1 A A 5  21 PHE TRP HE2  HB2  A A 5  21 ? ? . . 
+172 1 138 2  0.64 1 1 A A 8  9  HIS ASP HB2  H    A A 8  9  ? ? . . 
+173 1 138 17 0.64 1 1 A A 8  9  HIS ASP HB2  H    A A 8  9  ? ? . . 
+174 1 35  5  0.63 1 1 A A 11 12 GLU THR HG2  H    A A 11 12 ? ? . . 
+175 1 18  17 0.63 1 1 A A 19 20 THR THR HG22 H    A A 19 20 ? ? . . 
+176 1 17  7  0.63 1 1 A A 19 19 THR THR H    HG22 A A 19 19 ? ? . . 
+177 1 14  16 0.63 1 1 A A 18 18 GLN GLN H    HG2  A A 18 18 ? ? . . 
+178 1 138 4  0.63 1 1 A A 8  9  HIS ASP HB2  H    A A 8  9  ? ? . . 
+179 1 138 5  0.63 1 1 A A 8  9  HIS ASP HB2  H    A A 8  9  ? ? . . 
+180 1 138 15 0.63 1 1 A A 8  9  HIS ASP HB2  H    A A 8  9  ? ? . . 
+181 1 138 18 0.63 1 1 A A 8  9  HIS ASP HB2  H    A A 8  9  ? ? . . 
+182 1 133 8  0.63 1 1 A A 7  11 CYS GLU HA   HB2  A A 7  11 ? ? . . 
+183 1 98  5  0.62 1 1 A A 1  13 CYS CYS HA   HB2  A A 1  13 ? ? . . 
+184 1 138 11 0.62 1 1 A A 8  9  HIS ASP HB2  H    A A 8  9  ? ? . . 
+185 1 138 16 0.62 1 1 A A 8  9  HIS ASP HB2  H    A A 8  9  ? ? . . 
+186 1 138 19 0.62 1 1 A A 8  9  HIS ASP HB2  H    A A 8  9  ? ? . . 
+187 1 74  16 0.61 1 1 A A 5  5  PHE PHE HA   HD2  A A 5  5  ? ? . . 
+188 1 138 6  0.61 1 1 A A 8  9  HIS ASP HB2  H    A A 8  9  ? ? . . 
+189 1 138 7  0.61 1 1 A A 8  9  HIS ASP HB2  H    A A 8  9  ? ? . . 
+190 1 138 12 0.61 1 1 A A 8  9  HIS ASP HB2  H    A A 8  9  ? ? . . 
+191 1 85  18 0.6  1 1 A A 13 14 CYS CYS HB2  HA   A A 13 14 ? ? . . 
+192 1 74  5  0.6  1 1 A A 5  5  PHE PHE HA   HD2  A A 5  5  ? ? . . 
+193 1 72  8  0.6  1 1 A A 13 21 CYS TRP HB2  HZ3  A A 13 21 ? ? . . 
+194 1 29  16 0.6  1 1 A A 12 13 THR CYS HG22 H    A A 12 13 ? ? . . 
+195 1 136 9  0.6  1 1 A A 8  11 HIS GLU H    HB2  A A 8  11 ? ? . . 
+196 1 134 19 0.6  1 1 A A 7  11 CYS GLU HB3  HB2  A A 7  11 ? ? . . 
+197 1 85  1  0.59 1 1 A A 13 14 CYS CYS HB2  HA   A A 13 14 ? ? . . 
+198 1 29  5  0.59 1 1 A A 12 13 THR CYS HG22 H    A A 12 13 ? ? . . 
+199 1 138 1  0.59 1 1 A A 8  9  HIS ASP HB2  H    A A 8  9  ? ? . . 
+200 1 134 16 0.59 1 1 A A 7  11 CYS GLU HB3  HB2  A A 7  11 ? ? . . 
+201 1 134 20 0.59 1 1 A A 7  11 CYS GLU HB3  HB2  A A 7  11 ? ? . . 
+202 1 9   3  0.58 1 1 A A 11 11 GLU GLU H    HG2  A A 11 11 ? ? . . 
+203 1 18  18 0.58 1 1 A A 19 20 THR THR HG22 H    A A 19 20 ? ? . . 
+204 1 143 13 0.58 1 1 A A 11 24 GLU CYS HB2  H    A A 11 24 ? ? . . 
+205 1 14  14 0.58 1 1 A A 18 18 GLN GLN H    HG2  A A 18 18 ? ? . . 
+206 1 109 18 0.58 1 1 A A 13 21 CYS TRP HB2  HE3  A A 13 21 ? ? . . 
+207 1 9   14 0.57 1 1 A A 11 11 GLU GLU H    HG2  A A 11 11 ? ? . . 
+208 1 9   15 0.57 1 1 A A 11 11 GLU GLU H    HG2  A A 11 11 ? ? . . 
+209 1 9   20 0.57 1 1 A A 11 11 GLU GLU H    HG2  A A 11 11 ? ? . . 
+210 1 85  2  0.57 1 1 A A 13 14 CYS CYS HB2  HA   A A 13 14 ? ? . . 
+211 1 85  5  0.57 1 1 A A 13 14 CYS CYS HB2  HA   A A 13 14 ? ? . . 
+212 1 74  10 0.57 1 1 A A 5  5  PHE PHE HA   HD2  A A 5  5  ? ? . . 
+213 1 39  13 0.57 1 1 A A 5  6  PHE SER HB2  H    A A 5  6  ? ? . . 
+214 1 35  12 0.57 1 1 A A 11 12 GLU THR HG2  H    A A 11 12 ? ? . . 
+215 1 14  4  0.57 1 1 A A 18 18 GLN GLN H    HG2  A A 18 18 ? ? . . 
+216 1 138 9  0.57 1 1 A A 8  9  HIS ASP HB2  H    A A 8  9  ? ? . . 
+217 1 136 18 0.57 1 1 A A 8  11 HIS GLU H    HB2  A A 8  11 ? ? . . 
+218 1 136 8  0.56 1 1 A A 8  11 HIS GLU H    HB2  A A 8  11 ? ? . . 
+219 1 134 14 0.56 1 1 A A 7  11 CYS GLU HB3  HB2  A A 7  11 ? ? . . 
+220 1 14  7  0.55 1 1 A A 18 18 GLN GLN H    HG2  A A 18 18 ? ? . . 
+221 1 134 5  0.55 1 1 A A 7  11 CYS GLU HB3  HB2  A A 7  11 ? ? . . 
+222 1 9   6  0.54 1 1 A A 11 11 GLU GLU H    HG2  A A 11 11 ? ? . . 
+223 1 138 3  0.54 1 1 A A 8  9  HIS ASP HB2  H    A A 8  9  ? ? . . 
+224 1 138 20 0.54 1 1 A A 8  9  HIS ASP HB2  H    A A 8  9  ? ? . . 
+225 1 134 18 0.54 1 1 A A 7  11 CYS GLU HB3  HB2  A A 7  11 ? ? . . 
+226 1 126 10 0.54 1 1 A A 1  13 CYS CYS HB2  HB2  A A 1  13 ? ? . . 
+227 1 9   4  0.53 1 1 A A 11 11 GLU GLU H    HG2  A A 11 11 ? ? . . 
+228 1 85  7  0.53 1 1 A A 13 14 CYS CYS HB2  HA   A A 13 14 ? ? . . 
+229 1 39  3  0.53 1 1 A A 5  6  PHE SER HB2  H    A A 5  6  ? ? . . 
+230 1 138 8  0.53 1 1 A A 8  9  HIS ASP HB2  H    A A 8  9  ? ? . . 
+231 1 138 10 0.53 1 1 A A 8  9  HIS ASP HB2  H    A A 8  9  ? ? . . 
+232 1 138 14 0.53 1 1 A A 8  9  HIS ASP HB2  H    A A 8  9  ? ? . . 
+233 1 127 7  0.53 1 1 A A 2  3  GLY GLY HA2  H    A A 2  3  ? ? . . 
+234 1 9   12 0.52 1 1 A A 11 11 GLU GLU H    HG2  A A 11 11 ? ? . . 
+235 1 86  8  0.52 1 1 A A 13 23 CYS CYS HB2  HA   A A 13 23 ? ? . . 
+236 1 74  18 0.52 1 1 A A 5  5  PHE PHE HA   HD2  A A 5  5  ? ? . . 
+237 1 74  19 0.52 1 1 A A 5  5  PHE PHE HA   HD2  A A 5  5  ? ? . . 
+238 1 136 19 0.52 1 1 A A 8  11 HIS GLU H    HB2  A A 8  11 ? ? . . 
+239 1 133 18 0.52 1 1 A A 7  11 CYS GLU HA   HB2  A A 7  11 ? ? . . 
+240 1 127 5  0.52 1 1 A A 2  3  GLY GLY HA2  H    A A 2  3  ? ? . . 
+241 1 29  10 0.51 1 1 A A 12 13 THR CYS HG22 H    A A 12 13 ? ? . . 
+242 1 127 10 0.51 1 1 A A 2  3  GLY GLY HA2  H    A A 2  3  ? ? . . 
+243 1 109 14 0.51 1 1 A A 13 21 CYS TRP HB2  HE3  A A 13 21 ? ? . . 
+244 1 74  1  0.5  1 1 A A 5  5  PHE PHE HA   HD2  A A 5  5  ? ? . . 
+245 1 72  9  0.5  1 1 A A 13 21 CYS TRP HB2  HZ3  A A 13 21 ? ? . . 
+246 1 144 3  0.5  1 1 A A 11 23 GLU CYS HG2  HB2  A A 11 23 ? ? . . 
+247 1 144 4  0.5  1 1 A A 11 23 GLU CYS HG2  HB2  A A 11 23 ? ? . . 
+248 1 112 3  0.5  1 1 A A 16 16 THR THR HA   HG22 A A 16 16 ? ? . . 
+249 1 17  20 0.49 1 1 A A 19 19 THR THR H    HG22 A A 19 19 ? ? . . 
+250 1 134 9  0.49 1 1 A A 7  11 CYS GLU HB3  HB2  A A 7  11 ? ? . . 
+251 1 134 15 0.49 1 1 A A 7  11 CYS GLU HB3  HB2  A A 7  11 ? ? . . 
+252 1 126 4  0.49 1 1 A A 1  13 CYS CYS HB2  HB2  A A 1  13 ? ? . . 
+253 1 126 5  0.49 1 1 A A 1  13 CYS CYS HB2  HB2  A A 1  13 ? ? . . 
+254 1 9   2  0.48 1 1 A A 11 11 GLU GLU H    HG2  A A 11 11 ? ? . . 
+255 1 9   16 0.48 1 1 A A 11 11 GLU GLU H    HG2  A A 11 11 ? ? . . 
+256 1 30  14 0.48 1 1 A A 16 22 THR GLY HG22 H    A A 16 22 ? ? . . 
+257 1 140 8  0.48 1 1 A A 11 11 GLU GLU H    HB2  A A 11 11 ? ? . . 
+258 1 140 9  0.48 1 1 A A 11 11 GLU GLU H    HB2  A A 11 11 ? ? . . 
+259 1 140 19 0.48 1 1 A A 11 11 GLU GLU H    HB2  A A 11 11 ? ? . . 
+260 1 13  5  0.48 1 1 A A 18 18 GLN GLN H    HB2  A A 18 18 ? ? . . 
+261 1 118 4  0.48 1 1 A A 19 19 THR THR HA   HG22 A A 19 19 ? ? . . 
+262 1 9   5  0.47 1 1 A A 11 11 GLU GLU H    HG2  A A 11 11 ? ? . . 
+263 1 32  3  0.47 1 1 A A 16 17 THR SER HG22 H    A A 16 17 ? ? . . 
+264 1 29  4  0.47 1 1 A A 12 13 THR CYS HG22 H    A A 12 13 ? ? . . 
+265 1 140 18 0.47 1 1 A A 11 11 GLU GLU H    HB2  A A 11 11 ? ? . . 
+266 1 137 17 0.47 1 1 A A 8  8  HIS HIS HD2  HB2  A A 8  8  ? ? . . 
+267 1 13  2  0.47 1 1 A A 18 18 GLN GLN H    HB2  A A 18 18 ? ? . . 
+268 1 13  3  0.47 1 1 A A 18 18 GLN GLN H    HB2  A A 18 18 ? ? . . 
+269 1 13  15 0.47 1 1 A A 18 18 GLN GLN H    HB2  A A 18 18 ? ? . . 
+270 1 127 20 0.47 1 1 A A 2  3  GLY GLY HA2  H    A A 2  3  ? ? . . 
+271 1 35  6  0.46 1 1 A A 11 12 GLU THR HG2  H    A A 11 12 ? ? . . 
+272 1 30  1  0.46 1 1 A A 16 22 THR GLY HG22 H    A A 16 22 ? ? . . 
+273 1 144 2  0.46 1 1 A A 11 23 GLU CYS HG2  HB2  A A 11 23 ? ? . . 
+274 1 143 11 0.46 1 1 A A 11 24 GLU CYS HB2  H    A A 11 24 ? ? . . 
+275 1 143 17 0.46 1 1 A A 11 24 GLU CYS HB2  H    A A 11 24 ? ? . . 
+276 1 133 15 0.46 1 1 A A 7  11 CYS GLU HA   HB2  A A 7  11 ? ? . . 
+277 1 74  17 0.45 1 1 A A 5  5  PHE PHE HA   HD2  A A 5  5  ? ? . . 
+278 1 18  11 0.45 1 1 A A 19 20 THR THR HG22 H    A A 19 20 ? ? . . 
+279 1 137 9  0.45 1 1 A A 8  8  HIS HIS HD2  HB2  A A 8  8  ? ? . . 
+280 1 137 19 0.45 1 1 A A 8  8  HIS HIS HD2  HB2  A A 8  8  ? ? . . 
+281 1 13  10 0.45 1 1 A A 18 18 GLN GLN H    HB2  A A 18 18 ? ? . . 
+282 1 127 13 0.45 1 1 A A 2  3  GLY GLY HA2  H    A A 2  3  ? ? . . 
+283 1 35  4  0.44 1 1 A A 11 12 GLU THR HG2  H    A A 11 12 ? ? . . 
+284 1 32  15 0.44 1 1 A A 16 17 THR SER HG22 H    A A 16 17 ? ? . . 
+285 1 17  2  0.44 1 1 A A 19 19 THR THR H    HG22 A A 19 19 ? ? . . 
+286 1 147 18 0.44 1 1 A A 16 22 THR GLY HG22 HA2  A A 16 22 ? ? . . 
+287 1 13  11 0.44 1 1 A A 18 18 GLN GLN H    HB2  A A 18 18 ? ? . . 
+288 1 126 20 0.44 1 1 A A 1  13 CYS CYS HB2  HB2  A A 1  13 ? ? . . 
+289 1 22  2  0.43 1 1 A A 12 12 THR THR H    HG22 A A 12 12 ? ? . . 
+290 1 18  7  0.43 1 1 A A 19 20 THR THR HG22 H    A A 19 20 ? ? . . 
+291 1 147 9  0.43 1 1 A A 16 22 THR GLY HG22 HA2  A A 16 22 ? ? . . 
+292 1 138 13 0.43 1 1 A A 8  9  HIS ASP HB2  H    A A 8  9  ? ? . . 
+293 1 133 5  0.43 1 1 A A 7  11 CYS GLU HA   HB2  A A 7  11 ? ? . . 
+294 1 133 16 0.43 1 1 A A 7  11 CYS GLU HA   HB2  A A 7  11 ? ? . . 
+295 1 118 12 0.43 1 1 A A 19 19 THR THR HA   HG22 A A 19 19 ? ? . . 
+296 1 82  3  0.42 1 1 A A 8  11 HIS GLU H    HG2  A A 8  11 ? ? . . 
+297 1 72  3  0.42 1 1 A A 13 21 CYS TRP HB2  HZ3  A A 13 21 ? ? . . 
+298 1 35  13 0.42 1 1 A A 11 12 GLU THR HG2  H    A A 11 12 ? ? . . 
+299 1 147 17 0.42 1 1 A A 16 22 THR GLY HG22 HA2  A A 16 22 ? ? . . 
+300 1 118 3  0.42 1 1 A A 19 19 THR THR HA   HG22 A A 19 19 ? ? . . 
+301 1 74  4  0.41 1 1 A A 5  5  PHE PHE HA   HD2  A A 5  5  ? ? . . 
+302 1 34  1  0.41 1 1 A A 11 24 GLU CYS HG2  H    A A 11 24 ? ? . . 
+303 1 137 8  0.41 1 1 A A 8  8  HIS HIS HD2  HB2  A A 8  8  ? ? . . 
+304 1 137 12 0.41 1 1 A A 8  8  HIS HIS HD2  HB2  A A 8  8  ? ? . . 
+305 1 133 20 0.41 1 1 A A 7  11 CYS GLU HA   HB2  A A 7  11 ? ? . . 
+306 1 118 18 0.41 1 1 A A 19 19 THR THR HA   HG22 A A 19 19 ? ? . . 
+307 1 86  9  0.4  1 1 A A 13 23 CYS CYS HB2  HA   A A 13 23 ? ? . . 
+308 1 29  18 0.4  1 1 A A 12 13 THR CYS HG22 H    A A 12 13 ? ? . . 
+309 1 147 12 0.4  1 1 A A 16 22 THR GLY HG22 HA2  A A 16 22 ? ? . . 
+310 1 14  17 0.4  1 1 A A 18 18 GLN GLN H    HG2  A A 18 18 ? ? . . 
+311 1 118 17 0.4  1 1 A A 19 19 THR THR HA   HG22 A A 19 19 ? ? . . 
+312 1 112 2  0.4  1 1 A A 16 16 THR THR HA   HG22 A A 16 16 ? ? . . 
+313 1 9   17 0.39 1 1 A A 11 11 GLU GLU H    HG2  A A 11 11 ? ? . . 
+314 1 74  11 0.39 1 1 A A 5  5  PHE PHE HA   HD2  A A 5  5  ? ? . . 
+315 1 35  2  0.39 1 1 A A 11 12 GLU THR HG2  H    A A 11 12 ? ? . . 
+316 1 31  5  0.39 1 1 A A 20 21 THR TRP HG22 H    A A 20 21 ? ? . . 
+317 1 17  19 0.39 1 1 A A 19 19 THR THR H    HG22 A A 19 19 ? ? . . 
+318 1 132 8  0.39 1 1 A A 6  7  SER CYS HB2  H    A A 6  7  ? ? . . 
+319 1 112 17 0.39 1 1 A A 16 16 THR THR HA   HG22 A A 16 16 ? ? . . 
+320 1 61  19 0.38 1 1 A A 11 11 GLU GLU HA   HG2  A A 11 11 ? ? . . 
+321 1 155 16 0.38 1 1 A A 24 24 CYS CYS H    HB2  A A 24 24 ? ? . . 
+322 1 147 19 0.38 1 1 A A 16 22 THR GLY HG22 HA2  A A 16 22 ? ? . . 
+323 1 143 14 0.38 1 1 A A 11 24 GLU CYS HB2  H    A A 11 24 ? ? . . 
+324 1 137 16 0.38 1 1 A A 8  8  HIS HIS HD2  HB2  A A 8  8  ? ? . . 
+325 1 134 2  0.38 1 1 A A 7  11 CYS GLU HB3  HB2  A A 7  11 ? ? . . 
+326 1 133 14 0.38 1 1 A A 7  11 CYS GLU HA   HB2  A A 7  11 ? ? . . 
+327 1 112 7  0.38 1 1 A A 16 16 THR THR HA   HG22 A A 16 16 ? ? . . 
+328 1 112 8  0.38 1 1 A A 16 16 THR THR HA   HG22 A A 16 16 ? ? . . 
+329 1 74  2  0.37 1 1 A A 5  5  PHE PHE HA   HD2  A A 5  5  ? ? . . 
+330 1 34  19 0.37 1 1 A A 11 24 GLU CYS HG2  H    A A 11 24 ? ? . . 
+331 1 155 20 0.37 1 1 A A 24 24 CYS CYS H    HB2  A A 24 24 ? ? . . 
+332 1 147 15 0.37 1 1 A A 16 22 THR GLY HG22 HA2  A A 16 22 ? ? . . 
+333 1 143 3  0.37 1 1 A A 11 24 GLU CYS HB2  H    A A 11 24 ? ? . . 
+334 1 143 7  0.37 1 1 A A 11 24 GLU CYS HB2  H    A A 11 24 ? ? . . 
+335 1 137 4  0.37 1 1 A A 8  8  HIS HIS HD2  HB2  A A 8  8  ? ? . . 
+336 1 126 3  0.37 1 1 A A 1  13 CYS CYS HB2  HB2  A A 1  13 ? ? . . 
+337 1 74  7  0.36 1 1 A A 5  5  PHE PHE HA   HD2  A A 5  5  ? ? . . 
+338 1 16  17 0.36 1 1 A A 5  5  PHE PHE H    HB2  A A 5  5  ? ? . . 
+339 1 141 20 0.36 1 1 A A 11 12 GLU THR HB2  H    A A 11 12 ? ? . . 
+340 1 109 13 0.36 1 1 A A 13 21 CYS TRP HB2  HE3  A A 13 21 ? ? . . 
+341 1 20  7  0.35 1 1 A A 17 17 SER SER H    HB2  A A 17 17 ? ? . . 
+342 1 137 15 0.35 1 1 A A 8  8  HIS HIS HD2  HB2  A A 8  8  ? ? . . 
+343 1 133 4  0.35 1 1 A A 7  11 CYS GLU HA   HB2  A A 7  11 ? ? . . 
+344 1 133 17 0.35 1 1 A A 7  11 CYS GLU HA   HB2  A A 7  11 ? ? . . 
+345 1 9   13 0.34 1 1 A A 11 11 GLU GLU H    HG2  A A 11 11 ? ? . . 
+346 1 86  16 0.34 1 1 A A 13 23 CYS CYS HB2  HA   A A 13 23 ? ? . . 
+347 1 74  6  0.34 1 1 A A 5  5  PHE PHE HA   HD2  A A 5  5  ? ? . . 
+348 1 74  9  0.34 1 1 A A 5  5  PHE PHE HA   HD2  A A 5  5  ? ? . . 
+349 1 74  12 0.34 1 1 A A 5  5  PHE PHE HA   HD2  A A 5  5  ? ? . . 
+350 1 74  15 0.34 1 1 A A 5  5  PHE PHE HA   HD2  A A 5  5  ? ? . . 
+351 1 32  5  0.34 1 1 A A 16 17 THR SER HG22 H    A A 16 17 ? ? . . 
+352 1 17  10 0.34 1 1 A A 19 19 THR THR H    HG22 A A 19 19 ? ? . . 
+353 1 147 13 0.34 1 1 A A 16 22 THR GLY HG22 HA2  A A 16 22 ? ? . . 
+354 1 127 11 0.34 1 1 A A 2  3  GLY GLY HA2  H    A A 2  3  ? ? . . 
+355 1 126 13 0.34 1 1 A A 1  13 CYS CYS HB2  HB2  A A 1  13 ? ? . . 
+356 1 98  15 0.33 1 1 A A 1  13 CYS CYS HA   HB2  A A 1  13 ? ? . . 
+357 1 82  15 0.33 1 1 A A 8  11 HIS GLU H    HG2  A A 8  11 ? ? . . 
+358 1 16  9  0.33 1 1 A A 5  5  PHE PHE H    HB2  A A 5  5  ? ? . . 
+359 1 134 4  0.33 1 1 A A 7  11 CYS GLU HB3  HB2  A A 7  11 ? ? . . 
+360 1 134 12 0.33 1 1 A A 7  11 CYS GLU HB3  HB2  A A 7  11 ? ? . . 
+361 1 127 2  0.33 1 1 A A 2  3  GLY GLY HA2  H    A A 2  3  ? ? . . 
+362 1 118 7  0.33 1 1 A A 19 19 THR THR HA   HG22 A A 19 19 ? ? . . 
+363 1 32  19 0.32 1 1 A A 16 17 THR SER HG22 H    A A 16 17 ? ? . . 
+364 1 147 4  0.32 1 1 A A 16 22 THR GLY HG22 HA2  A A 16 22 ? ? . . 
+365 1 137 5  0.32 1 1 A A 8  8  HIS HIS HD2  HB2  A A 8  8  ? ? . . 
+366 1 133 2  0.32 1 1 A A 7  11 CYS GLU HA   HB2  A A 7  11 ? ? . . 
+367 1 126 12 0.32 1 1 A A 1  13 CYS CYS HB2  HB2  A A 1  13 ? ? . . 
+368 1 109 1  0.32 1 1 A A 13 21 CYS TRP HB2  HE3  A A 13 21 ? ? . . 
+369 1 32  2  0.31 1 1 A A 16 17 THR SER HG22 H    A A 16 17 ? ? . . 
+370 1 30  10 0.31 1 1 A A 16 22 THR GLY HG22 H    A A 16 22 ? ? . . 
+371 1 17  8  0.31 1 1 A A 19 19 THR THR H    HG22 A A 19 19 ? ? . . 
+372 1 147 8  0.31 1 1 A A 16 22 THR GLY HG22 HA2  A A 16 22 ? ? . . 
+373 1 132 3  0.31 1 1 A A 6  7  SER CYS HB2  H    A A 6  7  ? ? . . 
+374 1 112 19 0.31 1 1 A A 16 16 THR THR HA   HG22 A A 16 16 ? ? . . 
+375 1 109 2  0.31 1 1 A A 13 21 CYS TRP HB2  HE3  A A 13 21 ? ? . . 
+376 1 98  3  0.3  1 1 A A 1  13 CYS CYS HA   HB2  A A 1  13 ? ? . . 
+377 1 35  16 0.3  1 1 A A 11 12 GLU THR HG2  H    A A 11 12 ? ? . . 
+378 1 126 6  0.3  1 1 A A 1  13 CYS CYS HB2  HB2  A A 1  13 ? ? . . 
+379 1 72  10 0.29 1 1 A A 13 21 CYS TRP HB2  HZ3  A A 13 21 ? ? . . 
+380 1 133 12 0.29 1 1 A A 7  11 CYS GLU HA   HB2  A A 7  11 ? ? . . 
+381 1 112 15 0.29 1 1 A A 16 16 THR THR HA   HG22 A A 16 16 ? ? . . 
+382 1 98  9  0.28 1 1 A A 1  13 CYS CYS HA   HB2  A A 1  13 ? ? . . 
+383 1 98  20 0.28 1 1 A A 1  13 CYS CYS HA   HB2  A A 1  13 ? ? . . 
+384 1 39  14 0.28 1 1 A A 5  6  PHE SER HB2  H    A A 5  6  ? ? . . 
+385 1 144 12 0.28 1 1 A A 11 23 GLU CYS HG2  HB2  A A 11 23 ? ? . . 
+386 1 143 1  0.28 1 1 A A 11 24 GLU CYS HB2  H    A A 11 24 ? ? . . 
+387 1 98  14 0.27 1 1 A A 1  13 CYS CYS HA   HB2  A A 1  13 ? ? . . 
+388 1 94  17 0.27 1 1 A A 7  11 CYS GLU HB3  HG2  A A 7  11 ? ? . . 
+389 1 22  13 0.27 1 1 A A 12 12 THR THR H    HG22 A A 12 12 ? ? . . 
+390 1 18  1  0.27 1 1 A A 19 20 THR THR HG22 H    A A 19 20 ? ? . . 
+391 1 94  10 0.25 1 1 A A 7  11 CYS GLU HB3  HG2  A A 7  11 ? ? . . 
+392 1 142 9  0.25 1 1 A A 11 23 GLU CYS HB2  HB2  A A 11 23 ? ? . . 
+393 1 141 11 0.25 1 1 A A 11 12 GLU THR HB2  H    A A 11 12 ? ? . . 
+394 1 14  19 0.25 1 1 A A 18 18 GLN GLN H    HG2  A A 18 18 ? ? . . 
+395 1 133 6  0.25 1 1 A A 7  11 CYS GLU HA   HB2  A A 7  11 ? ? . . 
+396 1 132 17 0.25 1 1 A A 6  7  SER CYS HB2  H    A A 6  7  ? ? . . 
+397 1 119 1  0.25 1 1 A A 5  5  PHE PHE HZ   HD2  A A 5  5  ? ? . . 
+398 1 119 2  0.25 1 1 A A 5  5  PHE PHE HZ   HD2  A A 5  5  ? ? . . 
+399 1 119 3  0.25 1 1 A A 5  5  PHE PHE HZ   HD2  A A 5  5  ? ? . . 
+400 1 119 4  0.25 1 1 A A 5  5  PHE PHE HZ   HD2  A A 5  5  ? ? . . 
+401 1 119 5  0.25 1 1 A A 5  5  PHE PHE HZ   HD2  A A 5  5  ? ? . . 
+402 1 119 6  0.25 1 1 A A 5  5  PHE PHE HZ   HD2  A A 5  5  ? ? . . 
+403 1 119 7  0.25 1 1 A A 5  5  PHE PHE HZ   HD2  A A 5  5  ? ? . . 
+404 1 119 8  0.25 1 1 A A 5  5  PHE PHE HZ   HD2  A A 5  5  ? ? . . 
+405 1 119 9  0.25 1 1 A A 5  5  PHE PHE HZ   HD2  A A 5  5  ? ? . . 
+406 1 119 10 0.25 1 1 A A 5  5  PHE PHE HZ   HD2  A A 5  5  ? ? . . 
+407 1 119 11 0.25 1 1 A A 5  5  PHE PHE HZ   HD2  A A 5  5  ? ? . . 
+408 1 119 12 0.25 1 1 A A 5  5  PHE PHE HZ   HD2  A A 5  5  ? ? . . 
+409 1 119 13 0.25 1 1 A A 5  5  PHE PHE HZ   HD2  A A 5  5  ? ? . . 
+410 1 119 14 0.25 1 1 A A 5  5  PHE PHE HZ   HD2  A A 5  5  ? ? . . 
+411 1 119 15 0.25 1 1 A A 5  5  PHE PHE HZ   HD2  A A 5  5  ? ? . . 
+412 1 119 16 0.25 1 1 A A 5  5  PHE PHE HZ   HD2  A A 5  5  ? ? . . 
+413 1 119 17 0.25 1 1 A A 5  5  PHE PHE HZ   HD2  A A 5  5  ? ? . . 
+414 1 119 18 0.25 1 1 A A 5  5  PHE PHE HZ   HD2  A A 5  5  ? ? . . 
+415 1 119 19 0.25 1 1 A A 5  5  PHE PHE HZ   HD2  A A 5  5  ? ? . . 
+416 1 119 20 0.25 1 1 A A 5  5  PHE PHE HZ   HD2  A A 5  5  ? ? . . 
+417 1 118 14 0.25 1 1 A A 19 19 THR THR HA   HG22 A A 19 19 ? ? . . 
+418 1 92  3  0.24 1 1 A A 15 16 PRO THR HA   HG22 A A 15 16 ? ? . . 
+419 1 147 7  0.24 1 1 A A 16 22 THR GLY HG22 HA2  A A 16 22 ? ? . . 
+420 1 137 1  0.24 1 1 A A 8  8  HIS HIS HD2  HB2  A A 8  8  ? ? . . 
+421 1 72  16 0.23 1 1 A A 13 21 CYS TRP HB2  HZ3  A A 13 21 ? ? . . 
+422 1 18  13 0.23 1 1 A A 19 20 THR THR HG22 H    A A 19 20 ? ? . . 
+423 1 150 13 0.23 1 1 A A 21 21 TRP TRP HE3  HB2  A A 21 21 ? ? . . 
+424 1 147 2  0.23 1 1 A A 16 22 THR GLY HG22 HA2  A A 16 22 ? ? . . 
+425 1 118 19 0.23 1 1 A A 19 19 THR THR HA   HG22 A A 19 19 ? ? . . 
+426 1 98  1  0.22 1 1 A A 1  13 CYS CYS HA   HB2  A A 1  13 ? ? . . 
+427 1 94  7  0.22 1 1 A A 7  11 CYS GLU HB3  HG2  A A 7  11 ? ? . . 
+428 1 74  3  0.22 1 1 A A 5  5  PHE PHE HA   HD2  A A 5  5  ? ? . . 
+429 1 39  20 0.22 1 1 A A 5  6  PHE SER HB2  H    A A 5  6  ? ? . . 
+430 1 31  4  0.22 1 1 A A 20 21 THR TRP HG22 H    A A 20 21 ? ? . . 
+431 1 29  3  0.22 1 1 A A 12 13 THR CYS HG22 H    A A 12 13 ? ? . . 
+432 1 22  10 0.22 1 1 A A 12 12 THR THR H    HG22 A A 12 12 ? ? . . 
+433 1 18  5  0.22 1 1 A A 19 20 THR THR HG22 H    A A 19 20 ? ? . . 
+434 1 141 5  0.22 1 1 A A 11 12 GLU THR HB2  H    A A 11 12 ? ? . . 
+435 1 137 18 0.22 1 1 A A 8  8  HIS HIS HD2  HB2  A A 8  8  ? ? . . 
+436 1 134 8  0.22 1 1 A A 7  11 CYS GLU HB3  HB2  A A 7  11 ? ? . . 
+437 1 109 8  0.22 1 1 A A 13 21 CYS TRP HB2  HE3  A A 13 21 ? ? . . 
+438 1 16  19 0.21 1 1 A A 5  5  PHE PHE H    HB2  A A 5  5  ? ? . . 
+439 1 150 11 0.21 1 1 A A 21 21 TRP TRP HE3  HB2  A A 21 21 ? ? . . 
+440 1 147 3  0.21 1 1 A A 16 22 THR GLY HG22 HA2  A A 16 22 ? ? . . 
+441 1 141 12 0.21 1 1 A A 11 12 GLU THR HB2  H    A A 11 12 ? ? . . 
+442 1 134 6  0.21 1 1 A A 7  11 CYS GLU HB3  HB2  A A 7  11 ? ? . . 
+443 1 133 3  0.21 1 1 A A 7  11 CYS GLU HA   HB2  A A 7  11 ? ? . . 
+444 1 34  11 0.2  1 1 A A 11 24 GLU CYS HG2  H    A A 11 24 ? ? . . 
+445 1 31  10 0.2  1 1 A A 20 21 THR TRP HG22 H    A A 20 21 ? ? . . 
+446 1 19  16 0.2  1 1 A A 20 20 THR THR H    HG22 A A 20 20 ? ? . . 
+447 1 14  13 0.2  1 1 A A 18 18 GLN GLN H    HG2  A A 18 18 ? ? . . 
+448 1 137 11 0.2  1 1 A A 8  8  HIS HIS HD2  HB2  A A 8  8  ? ? . . 
+449 1 132 15 0.2  1 1 A A 6  7  SER CYS HB2  H    A A 6  7  ? ? . . 
+450 1 118 2  0.2  1 1 A A 19 19 THR THR HA   HG22 A A 19 19 ? ? . . 
+451 1 109 9  0.2  1 1 A A 13 21 CYS TRP HB2  HE3  A A 13 21 ? ? . . 
+452 1 9   11 0.19 1 1 A A 11 11 GLU GLU H    HG2  A A 11 11 ? ? . . 
+453 1 22  4  0.19 1 1 A A 12 12 THR THR H    HG22 A A 12 12 ? ? . . 
+454 1 22  5  0.19 1 1 A A 12 12 THR THR H    HG22 A A 12 12 ? ? . . 
+455 1 18  9  0.19 1 1 A A 19 20 THR THR HG22 H    A A 19 20 ? ? . . 
+456 1 16  1  0.19 1 1 A A 5  5  PHE PHE H    HB2  A A 5  5  ? ? . . 
+457 1 132 20 0.19 1 1 A A 6  7  SER CYS HB2  H    A A 6  7  ? ? . . 
+458 1 109 5  0.19 1 1 A A 13 21 CYS TRP HB2  HE3  A A 13 21 ? ? . . 
+459 1 98  19 0.18 1 1 A A 1  13 CYS CYS HA   HB2  A A 1  13 ? ? . . 
+460 1 16  5  0.18 1 1 A A 5  5  PHE PHE H    HB2  A A 5  5  ? ? . . 
+461 1 16  16 0.18 1 1 A A 5  5  PHE PHE H    HB2  A A 5  5  ? ? . . 
+462 1 150 12 0.18 1 1 A A 21 21 TRP TRP HE3  HB2  A A 21 21 ? ? . . 
+463 1 150 17 0.18 1 1 A A 21 21 TRP TRP HE3  HB2  A A 21 21 ? ? . . 
+464 1 31  19 0.17 1 1 A A 20 21 THR TRP HG22 H    A A 20 21 ? ? . . 
+465 1 144 16 0.17 1 1 A A 11 23 GLU CYS HG2  HB2  A A 11 23 ? ? . . 
+466 1 132 18 0.17 1 1 A A 6  7  SER CYS HB2  H    A A 6  7  ? ? . . 
+467 1 92  15 0.16 1 1 A A 15 16 PRO THR HA   HG22 A A 15 16 ? ? . . 
+468 1 35  14 0.16 1 1 A A 11 12 GLU THR HG2  H    A A 11 12 ? ? . . 
+469 1 30  11 0.16 1 1 A A 16 22 THR GLY HG22 H    A A 16 22 ? ? . . 
+470 1 141 4  0.16 1 1 A A 11 12 GLU THR HB2  H    A A 11 12 ? ? . . 
+471 1 120 13 0.16 1 1 A A 17 18 SER GLN HB2  H    A A 17 18 ? ? . . 
+472 1 109 15 0.16 1 1 A A 13 21 CYS TRP HB2  HE3  A A 13 21 ? ? . . 
+473 1 88  10 0.15 1 1 A A 12 13 THR CYS HA   HB2  A A 12 13 ? ? . . 
+474 1 86  10 0.15 1 1 A A 13 23 CYS CYS HB2  HA   A A 13 23 ? ? . . 
+475 1 32  8  0.15 1 1 A A 16 17 THR SER HG22 H    A A 16 17 ? ? . . 
+476 1 137 14 0.15 1 1 A A 8  8  HIS HIS HD2  HB2  A A 8  8  ? ? . . 
+477 1 98  16 0.14 1 1 A A 1  13 CYS CYS HA   HB2  A A 1  13 ? ? . . 
+478 1 42  8  0.14 1 1 A A 3  4  GLY GLY HA2  H    A A 3  4  ? ? . . 
+479 1 42  15 0.14 1 1 A A 3  4  GLY GLY HA2  H    A A 3  4  ? ? . . 
+480 1 42  16 0.14 1 1 A A 3  4  GLY GLY HA2  H    A A 3  4  ? ? . . 
+481 1 22  1  0.14 1 1 A A 12 12 THR THR H    HG22 A A 12 12 ? ? . . 
+482 1 22  16 0.14 1 1 A A 12 12 THR THR H    HG22 A A 12 12 ? ? . . 
+483 1 150 4  0.14 1 1 A A 21 21 TRP TRP HE3  HB2  A A 21 21 ? ? . . 
+484 1 144 17 0.14 1 1 A A 11 23 GLU CYS HG2  HB2  A A 11 23 ? ? . . 
+485 1 132 11 0.14 1 1 A A 6  7  SER CYS HB2  H    A A 6  7  ? ? . . 
+486 1 72  20 0.13 1 1 A A 13 21 CYS TRP HB2  HZ3  A A 13 21 ? ? . . 
+487 1 42  7  0.13 1 1 A A 3  4  GLY GLY HA2  H    A A 3  4  ? ? . . 
+488 1 22  11 0.13 1 1 A A 12 12 THR THR H    HG22 A A 12 12 ? ? . . 
+489 1 19  15 0.13 1 1 A A 20 20 THR THR H    HG22 A A 20 20 ? ? . . 
+490 1 137 20 0.13 1 1 A A 8  8  HIS HIS HD2  HB2  A A 8  8  ? ? . . 
+491 1 88  14 0.12 1 1 A A 12 13 THR CYS HA   HB2  A A 12 13 ? ? . . 
+492 1 42  13 0.12 1 1 A A 3  4  GLY GLY HA2  H    A A 3  4  ? ? . . 
+493 1 42  19 0.12 1 1 A A 3  4  GLY GLY HA2  H    A A 3  4  ? ? . . 
+494 1 141 17 0.12 1 1 A A 11 12 GLU THR HB2  H    A A 11 12 ? ? . . 
+495 1 118 6  0.12 1 1 A A 19 19 THR THR HA   HG22 A A 19 19 ? ? . . 
+496 1 112 5  0.12 1 1 A A 16 16 THR THR HA   HG22 A A 16 16 ? ? . . 
+497 1 88  5  0.11 1 1 A A 12 13 THR CYS HA   HB2  A A 12 13 ? ? . . 
+498 1 42  6  0.11 1 1 A A 3  4  GLY GLY HA2  H    A A 3  4  ? ? . . 
+499 1 42  14 0.11 1 1 A A 3  4  GLY GLY HA2  H    A A 3  4  ? ? . . 
+500 1 22  6  0.11 1 1 A A 12 12 THR THR H    HG22 A A 12 12 ? ? . . 
+501 1 22  14 0.11 1 1 A A 12 12 THR THR H    HG22 A A 12 12 ? ? . . 
+502 1 144 6  0.11 1 1 A A 11 23 GLU CYS HG2  HB2  A A 11 23 ? ? . . 
+503 1 141 6  0.11 1 1 A A 11 12 GLU THR HB2  H    A A 11 12 ? ? . . 
+504 1 130 10 0.11 1 1 A A 5  22 PHE GLY HZ   HA2  A A 5  22 ? ? . . 
+# 

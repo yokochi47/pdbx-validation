@@ -1,0 +1,810 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wwPDB-validation-information xmlns:VRPTx="http://pdbml.pdb.org/schema/pdbx-validation-v4.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://wwpdb.org/validation/schema/wwpdb_validation_v6.01.xsd">
+  <Entry pdbid="7Z9E" XMLcreationDate="2022-08-01" PDB-deposition-date="2022-03-21" PDB-revision-number="1" PDB-revision-date="2022-11-16" PDB-resolution="1.48" PDB-resolution-low="19.84" PDB-R="0.13" PDB-Rfree="0.17" protein-DNA-RNA-entities="1" angles_rmsz="0.75" bonds_rmsz="0.63" num_angles_rmsz="3472" num_bonds_rmsz="2539" clashscore="3.52" percent-rama-outliers="0.33" percent-rota-outliers="0.81" acentric_outliers="1" centric_outliers="0" IoverSigma="1.11(1.46A)" numMillerIndices="57357" WilsonBestimate="25.269" WilsonBaniso="[25.573,26.773,23.655,0.000,-3.136,0.000]" DataAnisotropy="0.123" TransNCS="The largest off-origin peak in the Patterson function is 7.25% of the height of the origin peak. No significant pseudotranslation is detected." TwinL="0.499" TwinL2="0.333" TwinFraction="-1/2*h+3/2*k,1/2*h+1/2*k,-l:0.005;-1/2*h-3/2*k,-1/2*h+1/2*k,-l:0.006;1/2*h+3/2*k,1/2*h-1/2*k,-l:0.011;1/2*h-3/2*k,-1/2*h-1/2*k,-l:0.012;-h,-k,l:0.019" B_factor_type="FULL" DataCompleteness="97.19" num-free-reflections="2868" percent-free-reflections="5.00" DCC_R="0.13" DCC_Rfree="0.17" EDS_R="0.15" EDS_resolution="1.48" EDS_resolution_low="19.84" Fo_Fc_correlation="0.982" percent-RSRZ-outliers="7.77" percentilebins="all,1.48,xray" absolute-percentile-clashscore="71.1" numPDBids-absolute-percentile-clashscore="141614" relative-percentile-clashscore="57.0" numPDBids-relative-percentile-clashscore="4955" low-resol-relative-percentile-clashscore="1.5" high-resol-relative-percentile-clashscore="1.46" absolute-percentile-percent-rama-outliers="40.7" numPDBids-absolute-percentile-percent-rama-outliers="138981" relative-percentile-percent-rama-outliers="18.1" numPDBids-relative-percentile-percent-rama-outliers="4846" low-resol-relative-percentile-percent-rama-outliers="1.5" high-resol-relative-percentile-percent-rama-outliers="1.46" absolute-percentile-percent-rota-outliers="81.3" numPDBids-absolute-percentile-percent-rota-outliers="138945" relative-percentile-percent-rota-outliers="64.2" numPDBids-relative-percentile-percent-rota-outliers="4844" low-resol-relative-percentile-percent-rota-outliers="1.5" high-resol-relative-percentile-percent-rota-outliers="1.46" absolute-percentile-DCC_Rfree="96.2" numPDBids-absolute-percentile-DCC_Rfree="130704" relative-percentile-DCC_Rfree="91.4" numPDBids-relative-percentile-DCC_Rfree="4690" low-resol-relative-percentile-DCC_Rfree="1.5" high-resol-relative-percentile-DCC_Rfree="1.46" absolute-percentile-percent-RSRZ-outliers="12.7" numPDBids-absolute-percentile-percent-RSRZ-outliers="127900" relative-percentile-percent-RSRZ-outliers="13.8" numPDBids-relative-percentile-percent-RSRZ-outliers="4614" low-resol-relative-percentile-percent-RSRZ-outliers="1.5" high-resol-relative-percentile-percent-RSRZ-outliers="1.46" attemptedValidationSteps="validation-pipeline,validation-pack,molprobity,xtriage,eds,dcc,mogul,buster-report,percentiles" DCC_refinement_program="REFMAC" CCP4version="7.1.010 (Gargrove)" RefmacVersion="5.8.0267"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="PRO" seq="21" resnum="7" icode="" altcode="" owab="55.060" rscc="0.877" rsr="0.146" rsrz="1.320" avgoccu="1.000" rota="Cg_endo"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="PHE" seq="22" resnum="8" icode="" altcode="" owab="34.500" rscc="0.954" rsr="0.109" rsrz="0.879" avgoccu="1.000" phi="-63.1" psi="139.5" rama="Favored" rota="m-85"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="PHE" seq="23" resnum="9" icode="" altcode="" owab="30.590" rscc="0.975" rsr="0.083" rsrz="0.054" avgoccu="1.000" phi="-62.4" psi="156.2" rama="Favored" rota="m-85"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="PRO" seq="24" resnum="10" icode="" altcode="" owab="24.990" rscc="0.968" rsr="0.054" rsrz="-0.711" avgoccu="1.000" phi="-61.8" psi="150.2" rama="Favored" rota="Cg_exo"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="PRO" seq="25" resnum="11" icode="" altcode="" owab="22.330" rscc="0.966" rsr="0.063" rsrz="-0.512" avgoccu="1.000" phi="-65.6" psi="169.6" rama="Favored" rota="Cg_endo"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="LEU" seq="26" resnum="12" icode="" altcode="" owab="26.400" rscc="0.951" rsr="0.071" rsrz="-0.539" avgoccu="1.000" phi="-63.6" psi="-28.0" rama="Favored" rota="mt"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="TYR" seq="27" resnum="13" icode="" altcode="" owab="23.290" rscc="0.957" rsr="0.069" rsrz="-0.357" avgoccu="1.000" phi="-89.2" psi="0.6" rama="Favored" rota="p90"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="LEU" seq="28" resnum="14" icode="" altcode="" owab="27.590" rscc="0.974" rsr="0.072" rsrz="-0.509" avgoccu="1.000" phi="-119.8" psi="34.1" rama="Favored" rota="mt"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="GLY" seq="29" resnum="15" icode="" altcode="" owab="28.300" rscc="0.957" rsr="0.072" rsrz="-0.201" avgoccu="1.000" phi="75.4" psi="16.0" rama="Favored"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="GLY" seq="30" resnum="16" icode="" altcode="" owab="25.780" rscc="0.979" rsr="0.057" rsrz="-0.518" avgoccu="1.000" phi="-72.8" psi="158.5" rama="Favored"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="PRO" seq="31" resnum="17" icode="" altcode="" owab="26.530" rscc="0.976" rsr="0.060" rsrz="-0.578" avgoccu="1.000" phi="-76.6" psi="158.2" rama="Favored" rota="Cg_endo"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="GLU" seq="32" resnum="18" icode="" altcode="" owab="25.730" rscc="0.957" rsr="0.058" rsrz="-0.927" avgoccu="1.000" phi="-67.0" psi="136.7" rama="Favored" rota="mt-10"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="ILE" seq="33" resnum="19" icode="" altcode="" owab="25.310" rscc="0.981" rsr="0.123" rsrz="1.095" avgoccu="1.000" phi="-73.7" psi="138.7" rama="Favored" rota="mm"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="THR" seq="34" resnum="20" icode="" altcode="" owab="27.250" rscc="0.963" rsr="0.082" rsrz="-0.040" avgoccu="1.000" phi="-126.3" psi="173.3" rama="Favored" rota="p"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="THR" seq="35" resnum="21" icode="" altcode="" owab="29.150" rscc="0.952" rsr="0.067" rsrz="-0.398" avgoccu="1.000" phi="-63.9" psi="-14.7" rama="Favored" rota="p"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="GLU" seq="36" resnum="22" icode="" altcode="" owab="45.580" rscc="0.914" rsr="0.202" rsrz="1.302" avgoccu="1.000" phi="-76.8" psi="-19.1" rama="Favored" rota="mt-10"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="ASN" seq="37" resnum="23" icode="" altcode="" owab="32.230" rscc="0.947" rsr="0.075" rsrz="-0.333" avgoccu="1.000" phi="-144.7" psi="36.1" rama="Allowed" rota="p30"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="CYS" seq="38" resnum="24" icode="" altcode="" owab="28.500" rscc="0.948" rsr="0.068" rsrz="-0.186" avgoccu="1.000" phi="-46.0" psi="-46.9" rama="Favored" rota="m"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="GLU" seq="39" resnum="25" icode="" altcode="" owab="35.080" rscc="0.908" rsr="0.117" rsrz="-0.014" avgoccu="1.000" phi="-72.8" psi="-11.9" rama="Favored" rota="pm0"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="ARG" seq="40" resnum="26" icode="" altcode="" owab="35.110" rscc="0.893" rsr="0.122" rsrz="0.261" avgoccu="1.000" phi="-97.6" psi="-1.2" rama="Favored" rota="mtp180"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="GLU" seq="41" resnum="27" icode="" altcode="" owab="20.010" rscc="0.972" rsr="0.073" rsrz="-0.695" avgoccu="1.000" phi="-69.5" psi="124.0" rama="Favored" rota="tt0"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="PRO" seq="42" resnum="28" icode="" altcode="" owab="19.870" rscc="0.953" rsr="0.082" rsrz="-0.093" avgoccu="1.000" phi="-81.1" psi="71.6" rama="Favored" rota="Cg_endo"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="ILE" seq="43" resnum="29" icode="" altcode="" owab="19.950" rscc="0.963" rsr="0.113" rsrz="0.778" avgoccu="1.000" phi="-64.1" psi="-21.3" rama="Favored" rota="pt"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="HIS" seq="44" resnum="30" icode="" altcode="" owab="21.980" rscc="0.972" rsr="0.062" rsrz="-0.535" avgoccu="1.000" phi="-77.0" psi="-14.9" rama="Favored" rota="p-80"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="ILE" seq="45" resnum="31" icode="" altcode="" owab="19.800" rscc="0.971" rsr="0.087" rsrz="-0.044" avgoccu="1.000" phi="-131.3" psi="54.9" rama="Favored" rota="pt"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="PRO" seq="46" resnum="32" icode="" altcode="" owab="20.120" rscc="0.952" rsr="0.084" rsrz="-0.049" avgoccu="1.000" phi="-72.9" psi="-12.4" rama="Favored" rota="Cg_endo"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="GLY" seq="47" resnum="33" icode="" altcode="" owab="21.680" rscc="0.978" rsr="0.076" rsrz="-0.116" avgoccu="1.000" phi="66.0" psi="28.4" rama="Favored"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="SER" seq="48" resnum="34" icode="" altcode="" owab="21.600" rscc="0.973" rsr="0.064" rsrz="-0.482" avgoccu="1.000" phi="-166.2" psi="158.4" rama="Favored" rota="p"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="ILE" seq="49" resnum="35" icode="" altcode="" owab="21.280" rscc="0.931" rsr="0.099" rsrz="0.335" avgoccu="1.000" phi="-131.8" psi="171.4" rama="Favored" rota="pt"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="GLN" seq="50" resnum="36" icode="" altcode="" owab="20.910" rscc="0.950" rsr="0.073" rsrz="-0.560" avgoccu="1.000" phi="-82.3" psi="145.6" rama="Favored" rota="mt-30"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="PRO" seq="51" resnum="37" icode="" altcode="" owab="23.220" rscc="0.970" rsr="0.074" rsrz="-0.269" avgoccu="1.000" phi="-76.4" psi="-2.9" rama="Favored" rota="Cg_endo"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="HIS" seq="52" resnum="38" icode="" altcode="" owab="23.230" rscc="0.965" rsr="0.072" rsrz="-0.337" avgoccu="1.000" phi="-81.7" psi="-1.8" rama="Favored" rota="p-80"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="GLY" seq="53" resnum="39" icode="" altcode="" owab="21.510" rscc="0.971" rsr="0.049" rsrz="-0.687" avgoccu="1.000" phi="-145.7" psi="-179.2" rama="Favored"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="ALA" seq="54" resnum="40" icode="" altcode="" owab="22.220" rscc="0.962" rsr="0.081" rsrz="-0.032" avgoccu="1.000" phi="-123.0" psi="149.4" rama="Favored"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="LEU" seq="55" resnum="41" icode="" altcode="" owab="22.020" rscc="0.929" rsr="0.113" rsrz="0.726" avgoccu="1.000" phi="-130.8" psi="134.2" rama="Favored" rota="tt"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="LEU" seq="56" resnum="42" icode="" altcode="" owab="25.050" rscc="0.940" rsr="0.134" rsrz="1.358" avgoccu="1.000" phi="-119.0" psi="151.8" rama="Favored" rota="mt"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="THR" seq="57" resnum="43" icode="" altcode="" owab="22.070" rscc="0.966" rsr="0.114" rsrz="0.721" avgoccu="1.000" phi="-118.0" psi="147.7" rama="Favored" rota="p"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="ALA" seq="58" resnum="44" icode="" altcode="" owab="23.130" rscc="0.961" rsr="0.130" rsrz="1.169" avgoccu="1.000" phi="-140.0" psi="150.8" rama="Favored"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="ASP" seq="59" resnum="45" icode="" altcode="" owab="24.330" rscc="0.975" rsr="0.107" rsrz="0.169" avgoccu="1.000" phi="-62.5" psi="131.9" rama="Favored" rota="t70"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="GLY" seq="60" resnum="46" icode="" altcode="" owab="26.670" rscc="0.837" rsr="0.147" rsrz="1.385" avgoccu="1.000" phi="-72.4" psi="-13.0" rama="Favored"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="HIS" seq="61" resnum="47" icode="" altcode="" owab="28.370" rscc="0.895" rsr="0.098" rsrz="0.176" avgoccu="1.000" phi="-100.6" psi="-56.1" rama="Favored" rota="t60"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="SER" seq="62" resnum="48" icode="" altcode="" owab="26.900" rscc="0.944" rsr="0.064" rsrz="-0.482" avgoccu="1.000" phi="-82.3" psi="-26.4" rama="Favored" rota="p"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="GLY" seq="63" resnum="49" icode="" altcode="" owab="26.090" rscc="0.973" rsr="0.083" rsrz="0.032" avgoccu="1.000" phi="71.9" psi="10.0" rama="Favored"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="GLU" seq="64" resnum="50" icode="" altcode="" owab="28.490" rscc="0.944" rsr="0.072" rsrz="-0.711" avgoccu="1.000" phi="-60.6" psi="127.8" rama="Favored" rota="tt0"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="VAL" seq="65" resnum="51" icode="" altcode="" owab="25.420" rscc="0.939" rsr="0.090" rsrz="0.120" avgoccu="1.000" phi="-72.4" psi="117.0" rama="Favored" rota="t"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="LEU" seq="66" resnum="52" icode="" altcode="" owab="24.920" rscc="0.943" rsr="0.088" rsrz="-0.027" avgoccu="1.000" phi="-99.4" psi="-41.1" rama="Favored" rota="mt"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="GLN" seq="67" resnum="53" icode="" altcode="" owab="22.500" rscc="0.944" rsr="0.098" rsrz="-0.123" avgoccu="1.000" phi="-133.1" psi="150.6" rama="Favored" rota="mt-30"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="MET" seq="68" resnum="54" icode="" altcode="" owab="26.810" rscc="0.933" rsr="0.095" rsrz="0.114" avgoccu="1.000" phi="-140.5" psi="129.6" rama="Favored" rota="mpp?"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="SER" seq="69" resnum="55" icode="" altcode="" owab="22.320" rscc="0.948" rsr="0.081" rsrz="-0.141" avgoccu="1.000" phi="-61.8" psi="142.6" rama="Favored" rota="p"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="LEU" seq="70" resnum="56" icode="" altcode="" owab="29.230" rscc="0.899" rsr="0.106" rsrz="0.515" avgoccu="1.000" phi="-66.2" psi="-14.4" rama="Favored" rota="mt"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="ASN" seq="71" resnum="57" icode="" altcode="" owab="27.380" rscc="0.956" rsr="0.061" rsrz="-0.602" avgoccu="1.000" phi="-94.3" psi="6.6" rama="Favored" rota="p-10"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="ALA" seq="72" resnum="58" icode="" altcode="" owab="31.040" rscc="0.962" rsr="0.066" rsrz="-0.400" avgoccu="1.000" phi="-49.7" psi="-33.3" rama="Favored"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="ALA" seq="73" resnum="59" icode="" altcode="" owab="36.940" rscc="0.944" rsr="0.084" rsrz="0.042" avgoccu="1.000" phi="-65.7" psi="-35.9" rama="Favored"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="THR" seq="74" resnum="60" icode="" altcode="" owab="43.350" rscc="0.896" rsr="0.132" rsrz="1.150" avgoccu="1.000" phi="-51.2" psi="-41.3" rama="Favored" rota="m"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="PHE" seq="75" resnum="61" icode="" altcode="" owab="34.550" rscc="0.935" rsr="0.066" rsrz="-0.486" avgoccu="1.000" phi="-104.4" psi="-31.7" rama="Favored" rota="m-85"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="LEU" seq="76" resnum="62" icode="" altcode="" owab="35.280" rscc="0.902" rsr="0.128" rsrz="1.178" avgoccu="1.000" phi="-112.6" psi="-9.5" rama="Favored" rota="mt"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="GLY" seq="77" resnum="63" icode="" altcode="" owab="41.860" rscc="0.946" rsr="0.067" rsrz="-0.307" avgoccu="1.000" phi="78.3" psi="8.5" rama="Favored"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="GLN" seq="78" resnum="64" icode="" altcode="" owab="43.660" rscc="0.814" rsr="0.238" rsrz="2.329" avgoccu="1.000" phi="-135.8" psi="144.4" rama="Favored" rota="mt-30"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="GLU" seq="79" resnum="65" icode="" altcode="A" owab="42.790" rscc="0.933" rsr="0.289" rsrz="2.649" avgoccu="1.000" phi="-74.1" psi="149.0" rama="Favored" rota="mt-10"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="GLU" seq="79" resnum="65" icode="" altcode="B" owab="42.790" rscc="0.933" rsr="0.289" rsrz="2.649" avgoccu="1.000" phi="-74.1" psi="149.0" rama="Favored" rota="mt-10"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="PRO" seq="80" resnum="66" icode="" altcode="" owab="33.970" rscc="0.855" rsr="0.145" rsrz="1.298" avgoccu="1.000" phi="-44.6" psi="-42.8" rama="Favored" rota="Cg_exo"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="THR" seq="81" resnum="67" icode="" altcode="" owab="36.970" rscc="0.844" rsr="0.217" rsrz="3.174" avgoccu="1.000" phi="-71.3" psi="-17.9" rama="Favored" rota="p"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="VAL" seq="82" resnum="68" icode="" altcode="" owab="35.990" rscc="0.924" rsr="0.158" rsrz="2.162" avgoccu="1.000" phi="-89.3" psi="-39.9" rama="Favored" rota="t"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="LEU" seq="83" resnum="69" icode="" altcode="" owab="33.380" rscc="0.938" rsr="0.107" rsrz="0.545" avgoccu="1.000" phi="-64.2" psi="-40.3" rama="Favored" rota="mt"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="ARG" seq="84" resnum="70" icode="" altcode="" owab="31.580" rscc="0.902" rsr="0.091" rsrz="-0.275" avgoccu="1.000" phi="-54.2" psi="124.5" rama="Favored" rota="ttt180"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="GLY" seq="85" resnum="71" icode="" altcode="" owab="32.030" rscc="0.971" rsr="0.062" rsrz="-0.412" avgoccu="1.000" phi="88.7" psi="-14.9" rama="Favored"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="GLN" seq="86" resnum="72" icode="" altcode="" owab="36.290" rscc="0.881" rsr="0.124" rsrz="0.333" avgoccu="1.000" phi="-73.5" psi="158.9" rama="Favored" rota="mt-30"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="THR" seq="87" resnum="73" icode="" altcode="" owab="36.150" rscc="0.975" rsr="0.082" rsrz="-0.040" avgoccu="1.000" phi="-100.0" psi="154.6" rama="Favored" rota="p"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="LEU" seq="88" resnum="74" icode="" altcode="" owab="30.420" rscc="0.889" rsr="0.103" rsrz="0.425" avgoccu="1.000" phi="-66.7" psi="-25.1" rama="Favored" rota="mt"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="ALA" seq="89" resnum="75" icode="" altcode="" owab="39.670" rscc="0.936" rsr="0.133" rsrz="1.243" avgoccu="1.000" phi="-58.8" psi="-39.3" rama="Favored"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="ALA" seq="90" resnum="76" icode="" altcode="" owab="41.940" rscc="0.899" rsr="0.109" rsrz="0.654" avgoccu="1.000" phi="-77.1" psi="-47.8" rama="Favored"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="LEU" seq="91" resnum="77" icode="" altcode="" owab="39.430" rscc="0.961" rsr="0.117" rsrz="0.846" avgoccu="1.000" phi="-78.1" psi="-36.9" rama="Favored" rota="mt"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="LEU" seq="92" resnum="78" icode="" altcode="" owab="36.410" rscc="0.892" rsr="0.121" rsrz="0.967" avgoccu="1.000" phi="-130.6" psi="64.7" rama="Favored" rota="mt"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="PRO" seq="93" resnum="79" icode="" altcode="" owab="43.770" rscc="0.971" rsr="0.118" rsrz="0.702" avgoccu="1.000" phi="-61.8" psi="-34.1" rama="Favored" rota="Cg_endo"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="GLU" seq="94" resnum="80" icode="" altcode="" owab="58.020" rscc="0.906" rsr="0.220" rsrz="1.580" avgoccu="1.000" phi="-78.8" psi="-24.6" rama="Favored" rota="mt-10"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="GLN" seq="95" resnum="81" icode="" altcode="" owab="40.070" rscc="0.875" rsr="0.097" rsrz="-0.140" avgoccu="1.000" phi="-102.9" psi="-27.8" rama="Favored" rota="mp0"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="TRP" seq="96" resnum="82" icode="" altcode="" owab="37.070" rscc="0.915" rsr="0.076" rsrz="-0.070" avgoccu="1.000" phi="-54.5" psi="-51.7" rama="Favored" rota="t-105">
+    <clash cid="1" atom="HB3" dist="1.98" clashmag="0.44"/>
+  </ModelledSubgroup>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="PRO" seq="97" resnum="83" icode="" altcode="" owab="44.770" rscc="0.969" rsr="0.140" rsrz="1.188" avgoccu="1.000" phi="-54.8" psi="-48.8" rama="Favored" rota="Cg_exo">
+    <clash cid="1" atom="HD3" dist="1.98" clashmag="0.44"/>
+  </ModelledSubgroup>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="ALA" seq="98" resnum="84" icode="" altcode="" owab="40.800" rscc="0.978" rsr="0.080" rsrz="-0.056" avgoccu="1.000" phi="-62.8" psi="-42.5" rama="Favored"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="LEU" seq="99" resnum="85" icode="" altcode="" owab="41.690" rscc="0.889" rsr="0.130" rsrz="1.238" avgoccu="1.000" phi="-59.6" psi="-50.5" rama="Favored" rota="tt"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="GLN" seq="100" resnum="86" icode="" altcode="" owab="46.780" rscc="0.885" rsr="0.092" rsrz="-0.228" avgoccu="1.000" phi="-57.4" psi="-48.8" rama="Favored" rota="mt-30"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="ALA" seq="101" resnum="87" icode="" altcode="" owab="41.690" rscc="0.948" rsr="0.179" rsrz="2.370" avgoccu="1.000" phi="-62.0" psi="-39.7" rama="Favored"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="ALA" seq="102" resnum="88" icode="" altcode="" owab="34.820" rscc="0.932" rsr="0.070" rsrz="-0.301" avgoccu="1.000" phi="-74.2" psi="-35.3" rama="Favored"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="LEU" seq="103" resnum="89" icode="" altcode="" owab="30.470" rscc="0.904" rsr="0.094" rsrz="0.154" avgoccu="1.000" phi="-126.6" psi="68.2" rama="Favored" rota="mt"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="PRO" seq="104" resnum="90" icode="" altcode="" owab="37.540" rscc="0.969" rsr="0.102" rsrz="0.349" avgoccu="1.000" phi="-71.9" psi="158.7" rama="Favored" rota="Cg_endo"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="PRO" seq="105" resnum="91" icode="" altcode="" owab="38.510" rscc="0.959" rsr="0.085" rsrz="-0.026" avgoccu="1.000" phi="-45.8" psi="133.3" rama="Favored" rota="Cg_exo"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="GLY" seq="106" resnum="92" icode="" altcode="" owab="45.380" rscc="0.897" rsr="0.132" rsrz="1.068" avgoccu="1.000" phi="83.9" psi="1.0" rama="Favored"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="CYS" seq="107" resnum="93" icode="" altcode="" owab="43.670" rscc="0.960" rsr="0.138" rsrz="2.022" avgoccu="1.000" phi="-65.5" psi="159.5" rama="Favored" rota="p"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="PRO" seq="108" resnum="94" icode="" altcode="" owab="46.630" rscc="0.951" rsr="0.147" rsrz="1.342" avgoccu="1.000" phi="-61.8" psi="143.7" rama="Favored" rota="Cg_exo"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="ASP" seq="109" resnum="95" icode="" altcode="" owab="60.570" rscc="0.870" rsr="0.171" rsrz="1.298" avgoccu="1.000" phi="-74.4" psi="-13.3" rama="Favored" rota="p-10"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="ALA" seq="110" resnum="96" icode="" altcode="" owab="53.510" rscc="0.927" rsr="0.091" rsrz="0.213" avgoccu="1.000" phi="-77.4" psi="-22.4" rama="Favored"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="LEU" seq="111" resnum="97" icode="" altcode="" owab="40.370" rscc="0.959" rsr="0.106" rsrz="0.515" avgoccu="1.000" phi="-65.3" psi="131.2" rama="Favored" rota="tp"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="GLN" seq="112" resnum="98" icode="" altcode="" owab="40.760" rscc="0.966" rsr="0.079" rsrz="-0.455" avgoccu="1.000" phi="-121.6" psi="142.9" rama="Favored" rota="mt-30"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="TYR" seq="113" resnum="99" icode="" altcode="" owab="33.950" rscc="0.904" rsr="0.073" rsrz="-0.234" avgoccu="1.000" phi="-103.1" psi="129.6" rama="Favored" rota="t80"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="ARG" seq="114" resnum="100" icode="" altcode="" owab="55.460" rscc="0.889" rsr="0.152" rsrz="0.780" avgoccu="1.000" phi="-126.5" psi="134.6" rama="Favored" rota="mtm-85"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="ALA" seq="115" resnum="101" icode="" altcode="" owab="33.490" rscc="0.951" rsr="0.068" rsrz="-0.350" avgoccu="1.000" phi="-137.7" psi="150.9" rama="Favored"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="THR" seq="116" resnum="102" icode="" altcode="" owab="40.650" rscc="0.941" rsr="0.133" rsrz="1.174" avgoccu="1.000" phi="-102.7" psi="118.0" rama="Favored" rota="m"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="LEU" seq="117" resnum="103" icode="" altcode="" owab="39.750" rscc="0.829" rsr="0.139" rsrz="1.509" avgoccu="1.000" phi="-97.6" psi="137.4" rama="Favored" rota="mt"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="ASP" seq="118" resnum="104" icode="" altcode="" owab="50.440" rscc="0.799" rsr="0.304" rsrz="3.644" avgoccu="1.000" phi="-70.1" psi="131.5" rama="Favored" rota="m-20"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="TRP" seq="119" resnum="105" icode="" altcode="" owab="60.030" rscc="0.809" rsr="0.210" rsrz="4.599" avgoccu="1.000" phi="-130.0" psi="143.9" rama="Favored" rota="OUTLIER"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="PRO" seq="120" resnum="106" icode="" altcode="" owab="68.040" rscc="0.929" rsr="0.317" rsrz="5.095" avgoccu="1.000" phi="-60.9" psi="89.8" rama="OUTLIER" rota="Cg_endo"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="ALA" seq="121" resnum="107" icode="" altcode="" owab="68.650" rscc="0.886" rsr="0.148" rsrz="1.610" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="GLY" seq="123" resnum="109" icode="" altcode="" owab="49.900" rscc="0.867" rsr="0.229" rsrz="3.118" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="HIS" seq="124" resnum="110" icode="" altcode="" owab="51.300" rscc="0.843" rsr="0.311" rsrz="4.377" avgoccu="1.000" phi="-141.1" psi="155.8" rama="Favored" rota="m80"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="LEU" seq="125" resnum="111" icode="" altcode="" owab="37.930" rscc="0.895" rsr="0.117" rsrz="0.846" avgoccu="1.000" phi="-117.9" psi="120.5" rama="Favored" rota="tp"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="SER" seq="126" resnum="112" icode="" altcode="" owab="33.380" rscc="0.934" rsr="0.093" rsrz="0.100" avgoccu="1.000" phi="-77.3" psi="126.1" rama="Favored" rota="t"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="LEU" seq="127" resnum="113" icode="" altcode="" owab="28.740" rscc="0.927" rsr="0.132" rsrz="1.298" avgoccu="1.000" phi="-109.6" psi="125.5" rama="Favored" rota="tp"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="THR" seq="128" resnum="114" icode="" altcode="" owab="24.720" rscc="0.969" rsr="0.065" rsrz="-0.445" avgoccu="1.000" phi="-122.9" psi="126.4" rama="Favored" rota="m"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="VAL" seq="129" resnum="115" icode="" altcode="" owab="24.700" rscc="0.957" rsr="0.124" rsrz="1.141" avgoccu="1.000" phi="-126.9" psi="137.1" rama="Favored" rota="t"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="HIS" seq="130" resnum="116" icode="" altcode="" owab="24.690" rscc="0.912" rsr="0.090" rsrz="0.018" avgoccu="1.000" phi="-135.4" psi="162.0" rama="Favored" rota="p-80"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="ARG" seq="131" resnum="117" icode="" altcode="" owab="26.520" rscc="0.955" rsr="0.071" rsrz="-0.621" avgoccu="1.000" phi="-110.5" psi="131.8" rama="Favored" rota="ttm-85"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="VAL" seq="132" resnum="118" icode="" altcode="" owab="25.150" rscc="0.972" rsr="0.067" rsrz="-0.571" avgoccu="1.000" phi="-122.7" psi="112.6" rama="Favored" rota="t"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="GLY" seq="133" resnum="119" icode="" altcode="" owab="25.690" rscc="0.983" rsr="0.062" rsrz="-0.412" avgoccu="1.000" phi="55.2" psi="-117.4" rama="Favored"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="GLU" seq="134" resnum="120" icode="" altcode="" owab="30.560" rscc="0.932" rsr="0.104" rsrz="-0.215" avgoccu="1.000" phi="-100.8" psi="12.1" rama="Favored" rota="mt-10">
+    <symm-clash scid="1" atom="OE1" dist="2.12" symop="1_555" clashmag="0.08"/>
+    <symm-clash scid="1" atom="OE1" dist="2.12" symop="2_556" clashmag="0.08"/>
+  </ModelledSubgroup>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="LEU" seq="135" resnum="121" icode="" altcode="" owab="22.170" rscc="0.978" rsr="0.131" rsrz="1.268" avgoccu="1.000" phi="-113.0" psi="133.4" rama="Favored" rota="tp"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="LEU" seq="136" resnum="122" icode="" altcode="" owab="23.960" rscc="0.969" rsr="0.152" rsrz="1.901" avgoccu="1.000" phi="-95.6" psi="135.0" rama="Favored" rota="mt"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="ILE" seq="137" resnum="123" icode="" altcode="" owab="23.380" rscc="0.941" rsr="0.108" rsrz="0.620" avgoccu="1.000" phi="-115.3" psi="114.0" rama="Favored" rota="mt"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="LEU" seq="138" resnum="124" icode="" altcode="" owab="24.830" rscc="0.953" rsr="0.130" rsrz="1.238" avgoccu="1.000" phi="-108.9" psi="120.5" rama="Favored" rota="mp"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="GLU" seq="139" resnum="125" icode="" altcode="" owab="25.260" rscc="0.951" rsr="0.094" rsrz="-0.370" avgoccu="1.000" phi="-111.5" psi="127.2" rama="Favored" rota="mt-10"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="PHE" seq="140" resnum="126" icode="" altcode="" owab="26.010" rscc="0.950" rsr="0.113" rsrz="1.006" avgoccu="1.000" phi="-115.2" psi="125.7" rama="Favored" rota="m-85"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="GLU" seq="141" resnum="127" icode="" altcode="A" owab="25.870" rscc="0.963" rsr="0.090" rsrz="-0.432" avgoccu="1.000" phi="-136.7" psi="143.1" rama="Favored" rota="pt-20"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="GLU" seq="141" resnum="127" icode="" altcode="B" owab="25.870" rscc="0.963" rsr="0.090" rsrz="-0.432" avgoccu="1.000" phi="-136.7" psi="143.1" rama="Favored" rota="pt-20"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="PRO" seq="142" resnum="128" icode="" altcode="" owab="32.080" rscc="0.939" rsr="0.075" rsrz="-0.247" avgoccu="1.000" phi="-59.1" psi="143.5" rama="Favored" rota="Cg_exo"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="THR" seq="143" resnum="129" icode="" altcode="" owab="43.640" rscc="0.840" rsr="0.130" rsrz="1.102" avgoccu="1.000" phi="-123.8" psi="157.0" rama="Favored" rota="t"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="GLU" seq="144" resnum="130" icode="" altcode="" owab="84.980" rscc="0.834" rsr="0.390" rsrz="4.212" avgoccu="1.000" rota="mm-40"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="PRO" seq="151" resnum="137" icode="" altcode="" owab="108.260" rscc="0.724" rsr="0.470" rsrz="8.472" avgoccu="1.000" rota="Cg_endo"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="HIS" seq="152" resnum="138" icode="" altcode="" owab="112.780" rscc="0.806" rsr="0.463" rsrz="7.375" avgoccu="1.000" phi="-55.1" psi="-40.6" rama="Favored" rota="m-70"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="ALA" seq="153" resnum="139" icode="" altcode="" owab="94.040" rscc="0.605" rsr="0.428" rsrz="8.473" avgoccu="1.000" phi="-65.8" psi="-56.5" rama="Favored"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="LEU" seq="154" resnum="140" icode="" altcode="" owab="78.300" rscc="0.733" rsr="0.168" rsrz="2.383" avgoccu="1.000" phi="-57.3" psi="-46.2" rama="Favored" rota="tt"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="ARG" seq="155" resnum="141" icode="" altcode="" owab="77.110" rscc="0.837" rsr="0.238" rsrz="2.268" avgoccu="1.000" phi="-54.2" psi="-48.6" rama="Favored" rota="ttp180"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="ASN" seq="156" resnum="142" icode="" altcode="" owab="64.780" rscc="0.851" rsr="0.228" rsrz="2.598" avgoccu="1.000" phi="-66.2" psi="-33.5" rama="Favored" rota="m-20"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="ALA" seq="157" resnum="143" icode="" altcode="" owab="52.930" rscc="0.896" rsr="0.102" rsrz="0.483" avgoccu="1.000" phi="-67.4" psi="-47.4" rama="Favored"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="MET" seq="158" resnum="144" icode="" altcode="" owab="49.850" rscc="0.861" rsr="0.120" rsrz="0.652" avgoccu="1.000" phi="-57.0" psi="-46.1" rama="Favored" rota="mtp"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="PHE" seq="159" resnum="145" icode="" altcode="" owab="34.830" rscc="0.885" rsr="0.116" rsrz="1.102" avgoccu="1.000" phi="-65.7" psi="-39.2" rama="Favored" rota="t80"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="ALA" seq="160" resnum="146" icode="" altcode="" owab="36.060" rscc="0.950" rsr="0.063" rsrz="-0.473" avgoccu="1.000" phi="-55.1" psi="-49.9" rama="Favored"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="LEU" seq="161" resnum="147" icode="" altcode="" owab="34.060" rscc="0.961" rsr="0.112" rsrz="0.696" avgoccu="1.000" phi="-58.4" psi="-48.0" rama="Favored" rota="mt"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="GLU" seq="162" resnum="148" icode="" altcode="" owab="42.650" rscc="0.883" rsr="0.115" rsrz="-0.045" avgoccu="1.000" phi="-58.2" psi="-37.4" rama="Favored" rota="mt-10"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="SER" seq="163" resnum="149" icode="" altcode="" owab="29.520" rscc="0.950" rsr="0.069" rsrz="-0.382" avgoccu="1.000" phi="-83.3" psi="-11.7" rama="Favored" rota="m"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="ALA" seq="164" resnum="150" icode="" altcode="" owab="26.760" rscc="0.964" rsr="0.073" rsrz="-0.228" avgoccu="1.000" phi="-62.7" psi="128.6" rama="Favored">
+    <clash cid="2" atom="O" dist="1.96" clashmag="0.65"/>
+  </ModelledSubgroup>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="PRO" seq="165" resnum="151" icode="" altcode="" owab="29.310" rscc="0.955" rsr="0.069" rsrz="-0.380" avgoccu="1.000" phi="-81.6" psi="-10.7" rama="Favored" rota="Cg_endo"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="ASN" seq="166" resnum="152" icode="" altcode="" owab="26.570" rscc="0.964" rsr="0.060" rsrz="-0.621" avgoccu="1.000" phi="-156.5" psi="170.9" rama="Favored" rota="p30"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="LEU" seq="167" resnum="153" icode="" altcode="" owab="33.990" rscc="0.971" rsr="0.062" rsrz="-0.810" avgoccu="1.000" phi="-65.3" psi="-39.6" rama="Favored" rota="tp"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="ARG" seq="168" resnum="154" icode="" altcode="" owab="30.680" rscc="0.945" rsr="0.080" rsrz="-0.465" avgoccu="1.000" phi="-61.9" psi="-48.7" rama="Favored" rota="ttt180"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="ALA" seq="169" resnum="155" icode="" altcode="" owab="24.620" rscc="0.971" rsr="0.053" rsrz="-0.718" avgoccu="1.000" phi="-61.7" psi="-39.9" rama="Favored"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="LEU" seq="170" resnum="156" icode="" altcode="" owab="24.480" rscc="0.965" rsr="0.071" rsrz="-0.539" avgoccu="1.000" phi="-59.7" psi="-45.8" rama="Favored" rota="tp"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="ALA" seq="171" resnum="157" icode="" altcode="" owab="25.630" rscc="0.966" rsr="0.056" rsrz="-0.645" avgoccu="1.000" phi="-61.2" psi="-45.6" rama="Favored"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="GLU" seq="172" resnum="158" icode="" altcode="" owab="30.280" rscc="0.894" rsr="0.104" rsrz="-0.215" avgoccu="1.000" phi="-63.6" psi="-48.5" rama="Favored" rota="mt-10"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="VAL" seq="173" resnum="159" icode="" altcode="" owab="32.670" rscc="0.976" rsr="0.068" rsrz="-0.541" avgoccu="1.000" phi="-61.2" psi="-44.0" rama="Favored" rota="t"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="ALA" seq="174" resnum="160" icode="" altcode="" owab="24.850" rscc="0.965" rsr="0.079" rsrz="-0.081" avgoccu="1.000" phi="-61.4" psi="-48.7" rama="Favored"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="THR" seq="175" resnum="161" icode="" altcode="" owab="23.590" rscc="0.966" rsr="0.069" rsrz="-0.350" avgoccu="1.000" phi="-65.9" psi="-45.0" rama="Favored" rota="p"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="GLN" seq="176" resnum="162" icode="" altcode="A" owab="29.290" rscc="0.954" rsr="0.126" rsrz="0.368" avgoccu="1.000" phi="-56.3" psi="-50.8" rama="Favored" rota="tp60"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="GLN" seq="176" resnum="162" icode="" altcode="B" owab="29.290" rscc="0.954" rsr="0.126" rsrz="0.368" avgoccu="1.000" phi="-56.3" psi="-50.8" rama="Favored" rota="tp60"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="THR" seq="177" resnum="163" icode="" altcode="" owab="28.430" rscc="0.968" rsr="0.065" rsrz="-0.445" avgoccu="1.000" phi="-60.2" psi="-50.7" rama="Favored" rota="m"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="VAL" seq="178" resnum="164" icode="" altcode="" owab="22.480" rscc="0.962" rsr="0.078" rsrz="-0.240" avgoccu="1.000" phi="-62.5" psi="-39.2" rama="Favored" rota="t"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="ARG" seq="179" resnum="165" icode="" altcode="" owab="23.730" rscc="0.955" rsr="0.059" rsrz="-0.829" avgoccu="1.000" phi="-63.9" psi="-40.6" rama="Favored" rota="ttt-85"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="GLU" seq="180" resnum="166" icode="" altcode="" owab="36.240" rscc="0.934" rsr="0.138" rsrz="0.311" avgoccu="1.000" phi="-65.2" psi="-38.9" rama="Favored" rota="mt-10"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="LEU" seq="181" resnum="167" icode="" altcode="A" owab="28.850" rscc="0.971" rsr="0.100" rsrz="0.334" avgoccu="1.000" phi="-71.3" psi="-32.4" rama="Favored" rota="tp"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="LEU" seq="181" resnum="167" icode="" altcode="B" owab="28.850" rscc="0.971" rsr="0.100" rsrz="0.334" avgoccu="1.000" phi="-71.3" psi="-32.4" rama="Favored" rota="tp"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="THR" seq="182" resnum="168" icode="" altcode="" owab="24.030" rscc="0.968" rsr="0.058" rsrz="-0.612" avgoccu="1.000" phi="-107.5" psi="-29.4" rama="Favored" rota="p"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="GLY" seq="183" resnum="169" icode="" altcode="" owab="21.650" rscc="0.977" rsr="0.048" rsrz="-0.708" avgoccu="1.000" phi="72.6" psi="9.0" rama="Favored"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="PHE" seq="184" resnum="170" icode="" altcode="" owab="19.590" rscc="0.960" rsr="0.086" rsrz="0.149" avgoccu="1.000" phi="-58.1" psi="142.8" rama="Favored" rota="m-85"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="ASP" seq="185" resnum="171" icode="" altcode="" owab="18.870" rscc="0.976" rsr="0.081" rsrz="-0.289" avgoccu="1.000" phi="-59.2" psi="-37.7" rama="Favored" rota="m-20"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="ARG" seq="186" resnum="172" icode="" altcode="" owab="21.570" rscc="0.947" rsr="0.078" rsrz="-0.500" avgoccu="1.000" phi="-140.4" psi="134.8" rama="Favored" rota="ttm-85"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="VAL" seq="187" resnum="173" icode="" altcode="" owab="18.870" rscc="0.942" rsr="0.090" rsrz="0.120" avgoccu="1.000" phi="-127.5" psi="121.9" rama="Favored" rota="t"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="MET" seq="188" resnum="174" icode="" altcode="" owab="19.980" rscc="0.974" rsr="0.086" rsrz="-0.080" avgoccu="1.000" phi="-115.3" psi="151.2" rama="Favored" rota="mtm"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="LEU" seq="189" resnum="175" icode="" altcode="" owab="20.540" rscc="0.957" rsr="0.114" rsrz="0.756" avgoccu="1.000" phi="-105.0" psi="113.6" rama="Favored" rota="tp"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="TYR" seq="190" resnum="176" icode="" altcode="" owab="19.960" rscc="0.948" rsr="0.080" rsrz="-0.018" avgoccu="1.000" phi="-104.4" psi="111.3" rama="Favored" rota="t80"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="LYS" seq="191" resnum="177" icode="" altcode="" owab="25.900" rscc="0.954" rsr="0.088" rsrz="-0.539" avgoccu="1.000" phi="-103.2" psi="131.0" rama="Favored" rota="tttp"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="PHE" seq="192" resnum="178" icode="" altcode="" owab="20.560" rscc="0.964" rsr="0.073" rsrz="-0.263" avgoccu="1.000" phi="-83.2" psi="133.2" rama="Favored" rota="m-85"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="ALA" seq="193" resnum="179" icode="" altcode="" owab="23.940" rscc="0.931" rsr="0.081" rsrz="-0.032" avgoccu="1.000" phi="-82.9" psi="165.6" rama="Favored"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="PRO" seq="194" resnum="180" icode="" altcode="" owab="30.400" rscc="0.941" rsr="0.073" rsrz="-0.291" avgoccu="1.000" phi="-59.5" psi="-24.6" rama="Favored" rota="Cg_exo"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="ASP" seq="195" resnum="181" icode="" altcode="" owab="26.890" rscc="0.988" rsr="0.046" rsrz="-0.907" avgoccu="1.000" phi="-89.2" psi="9.0" rama="Favored" rota="p30"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="ALA" seq="196" resnum="182" icode="" altcode="" owab="23.840" rscc="0.871" rsr="0.102" rsrz="0.483" avgoccu="1.000" phi="69.4" psi="8.7" rama="Favored"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="THR" seq="197" resnum="183" icode="" altcode="" owab="22.050" rscc="0.940" rsr="0.067" rsrz="-0.398" avgoccu="1.000" phi="-64.5" psi="159.2" rama="Favored" rota="p"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="GLY" seq="198" resnum="184" icode="" altcode="" owab="20.860" rscc="0.969" rsr="0.076" rsrz="-0.116" avgoccu="1.000" phi="-123.1" psi="153.1" rama="Favored"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="GLU" seq="199" resnum="185" icode="" altcode="" owab="20.970" rscc="0.956" rsr="0.078" rsrz="-0.618" avgoccu="1.000" phi="-142.3" psi="137.8" rama="Favored" rota="tt0"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="VAL" seq="200" resnum="186" icode="" altcode="" owab="19.830" rscc="0.947" rsr="0.091" rsrz="0.150" avgoccu="1.000" phi="-77.0" psi="111.3" rama="Favored" rota="t"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="ILE" seq="201" resnum="187" icode="" altcode="" owab="22.630" rscc="0.968" rsr="0.094" rsrz="0.177" avgoccu="1.000" phi="-103.8" psi="-8.5" rama="Favored" rota="pt"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="ALA" seq="202" resnum="188" icode="" altcode="" owab="20.220" rscc="0.969" rsr="0.060" rsrz="-0.547" avgoccu="1.000" phi="-162.9" psi="150.2" rama="Favored"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="GLU" seq="203" resnum="189" icode="" altcode="" owab="24.520" rscc="0.963" rsr="0.053" rsrz="-1.005" avgoccu="1.000" phi="-156.6" psi="147.2" rama="Favored" rota="pt-20"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="ALA" seq="204" resnum="190" icode="" altcode="" owab="21.250" rscc="0.960" rsr="0.061" rsrz="-0.522" avgoccu="1.000" phi="-110.8" psi="123.0" rama="Favored"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="ARG" seq="205" resnum="191" icode="" altcode="" owab="37.130" rscc="0.940" rsr="0.077" rsrz="-0.517" avgoccu="1.000" phi="-139.0" psi="145.4" rama="Favored" rota="ptt-85">
+    <clash cid="3" atom="NH2" dist="2.26" clashmag="0.69"/>
+    <clash cid="4" atom="NE" dist="2.26" clashmag="0.67"/>
+  </ModelledSubgroup>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="ARG" seq="206" resnum="192" icode="" altcode="" owab="24.620" rscc="0.942" rsr="0.076" rsrz="-0.535" avgoccu="1.000" phi="-54.6" psi="147.1" rama="Favored" rota="ttt180"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="GLU" seq="207" resnum="193" icode="" altcode="" owab="39.700" rscc="0.848" rsr="0.105" rsrz="-0.200" avgoccu="1.000" phi="-53.5" psi="127.5" rama="Favored" rota="mp0"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="GLY" seq="208" resnum="194" icode="" altcode="" owab="37.670" rscc="0.968" rsr="0.062" rsrz="-0.412" avgoccu="1.000" phi="99.6" psi="-16.8" rama="Favored"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="LEU" seq="209" resnum="195" icode="" altcode="A" owab="31.780" rscc="0.929" rsr="0.113" rsrz="0.726" avgoccu="1.000" phi="-69.6" psi="141.9" rama="Favored" rota="mp"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="LEU" seq="209" resnum="195" icode="" altcode="B" owab="31.780" rscc="0.929" rsr="0.113" rsrz="0.726" avgoccu="1.000" phi="-69.6" psi="141.9" rama="Favored" rota="mp"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="HIS" seq="210" resnum="196" icode="" altcode="" owab="64.530" rscc="0.876" rsr="0.303" rsrz="4.219" avgoccu="1.000" phi="-72.6" psi="140.1" rama="Favored" rota="p-80">
+    <clash cid="5" atom="NE2" dist="2.04" clashmag="0.55"/>
+  </ModelledSubgroup>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="ALA" seq="211" resnum="197" icode="" altcode="" owab="33.020" rscc="0.936" rsr="0.077" rsrz="-0.130" avgoccu="1.000" phi="-67.4" psi="137.2" rama="Favored"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="PHE" seq="212" resnum="198" icode="" altcode="A" owab="25.340" rscc="0.957" rsr="0.103" rsrz="0.689" avgoccu="1.000" phi="-105.6" psi="-7.7" rama="Favored" rota="m-85"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="PHE" seq="212" resnum="198" icode="" altcode="B" owab="25.340" rscc="0.957" rsr="0.103" rsrz="0.689" avgoccu="1.000" phi="-105.6" psi="-7.7" rama="Favored" rota="m-85">
+    <clash cid="5" atom="HE1" dist="2.04" clashmag="0.55"/>
+  </ModelledSubgroup>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="LEU" seq="213" resnum="199" icode="" altcode="" owab="23.250" rscc="0.968" rsr="0.103" rsrz="0.425" avgoccu="1.000" phi="-55.6" psi="126.6" rama="Favored" rota="tp"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="GLY" seq="214" resnum="200" icode="" altcode="" owab="21.020" rscc="0.977" rsr="0.117" rsrz="0.751" avgoccu="1.000" phi="84.1" psi="-7.7" rama="Favored"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="HIS" seq="215" resnum="201" icode="" altcode="" owab="22.420" rscc="0.958" rsr="0.078" rsrz="-0.219" avgoccu="1.000" phi="-72.8" psi="140.1" rama="Favored" rota="m170"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="ARG" seq="216" resnum="202" icode="" altcode="" owab="21.890" rscc="0.952" rsr="0.066" rsrz="-0.708" avgoccu="1.000" phi="-115.0" psi="152.3" rama="Favored" rota="mtp180"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="PHE" seq="217" resnum="203" icode="" altcode="" owab="21.140" rscc="0.926" rsr="0.080" rsrz="-0.041" avgoccu="1.000" phi="-138.1" psi="146.5" rama="Favored" rota="m-85"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="PRO" seq="218" resnum="204" icode="" altcode="" owab="23.010" rscc="0.954" rsr="0.077" rsrz="-0.203" avgoccu="1.000" phi="-63.9" psi="153.8" rama="Favored" rota="Cg_endo"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="ALA" seq="219" resnum="205" icode="" altcode="" owab="22.850" rscc="0.964" rsr="0.061" rsrz="-0.522" avgoccu="1.000" phi="-53.8" psi="-38.5" rama="Favored"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="SER" seq="220" resnum="206" icode="" altcode="" owab="26.270" rscc="0.954" rsr="0.058" rsrz="-0.602" avgoccu="1.000" phi="-61.7" psi="-21.1" rama="Favored" rota="p"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="ASP" seq="221" resnum="207" icode="" altcode="" owab="21.300" rscc="0.966" rsr="0.057" rsrz="-0.713" avgoccu="1.000" phi="-65.7" psi="-27.5" rama="Favored" rota="m-20"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="ILE" seq="222" resnum="208" icode="" altcode="" owab="19.660" rscc="0.917" rsr="0.131" rsrz="1.348" avgoccu="1.000" phi="-130.2" psi="85.3" rama="Favored" rota="mt"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="PRO" seq="223" resnum="209" icode="" altcode="" owab="21.020" rscc="0.962" rsr="0.099" rsrz="0.283" avgoccu="1.000" phi="-67.6" psi="168.4" rama="Favored" rota="Cg_endo"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="ALA" seq="224" resnum="210" icode="" altcode="" owab="21.280" rscc="0.963" rsr="0.057" rsrz="-0.620" avgoccu="1.000" phi="-58.9" psi="-38.7" rama="Favored"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="GLN" seq="225" resnum="211" icode="" altcode="" owab="21.260" rscc="0.964" rsr="0.067" rsrz="-0.665" avgoccu="1.000" phi="-71.7" psi="-31.3" rama="Favored" rota="pm0"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="ALA" seq="226" resnum="212" icode="" altcode="" owab="18.970" rscc="0.970" rsr="0.096" rsrz="0.336" avgoccu="1.000" phi="-66.5" psi="-49.3" rama="Favored"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="ARG" seq="227" resnum="213" icode="" altcode="" owab="22.070" rscc="0.954" rsr="0.068" rsrz="-0.673" avgoccu="1.000" phi="-57.2" psi="-41.4" rama="Favored" rota="mtm-85"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="ALA" seq="228" resnum="214" icode="" altcode="" owab="21.280" rscc="0.976" rsr="0.052" rsrz="-0.743" avgoccu="1.000" phi="-64.5" psi="-48.1" rama="Favored"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="LEU" seq="229" resnum="215" icode="" altcode="" owab="22.420" rscc="0.961" rsr="0.070" rsrz="-0.569" avgoccu="1.000" phi="-58.5" psi="-42.2" rama="Favored" rota="tp"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="TYR" seq="230" resnum="216" icode="" altcode="" owab="19.800" rscc="0.956" rsr="0.089" rsrz="0.258" avgoccu="1.000" phi="-72.9" psi="-10.6" rama="Favored" rota="m-30"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="THR" seq="231" resnum="217" icode="" altcode="" owab="26.740" rscc="0.975" rsr="0.043" rsrz="-0.969" avgoccu="1.000" phi="-79.7" psi="-25.7" rama="Favored" rota="m"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="ARG" seq="232" resnum="218" icode="" altcode="" owab="53.270" rscc="0.924" rsr="0.176" rsrz="1.196" avgoccu="1.000" phi="-103.6" psi="-38.6" rama="Favored" rota="mtt-85"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="HIS" seq="233" resnum="219" icode="" altcode="" owab="28.140" rscc="0.962" rsr="0.060" rsrz="-0.574" avgoccu="1.000" phi="-121.3" psi="107.3" rama="Favored" rota="m-70"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="LEU" seq="234" resnum="220" icode="" altcode="" owab="24.740" rscc="0.951" rsr="0.076" rsrz="-0.389" avgoccu="1.000" phi="-92.0" psi="-3.7" rama="Favored" rota="mt"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="LEU" seq="235" resnum="221" icode="" altcode="" owab="22.400" rscc="0.940" rsr="0.103" rsrz="0.425" avgoccu="1.000" phi="-140.8" psi="134.7" rama="Favored" rota="tt"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="ARG" seq="236" resnum="222" icode="" altcode="" owab="18.910" rscc="0.936" rsr="0.103" rsrz="-0.067" avgoccu="1.000" phi="-146.6" psi="162.4" rama="Favored" rota="OUTLIER"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="LEU" seq="237" resnum="223" icode="" altcode="" owab="19.550" rscc="0.942" rsr="0.118" rsrz="0.877" avgoccu="1.000" phi="-157.6" psi="156.7" rama="Favored" rota="pp"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="THR" seq="238" resnum="224" icode="" altcode="" owab="18.920" rscc="0.968" rsr="0.088" rsrz="0.102" avgoccu="1.000" phi="-125.8" psi="105.8" rama="Favored" rota="m"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="ALA" seq="239" resnum="225" icode="" altcode="" owab="19.820" rscc="0.961" rsr="0.073" rsrz="-0.228" avgoccu="1.000" phi="-70.8" psi="-29.2" rama="Favored"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="ASP" seq="240" resnum="226" icode="" altcode="" owab="21.810" rscc="0.955" rsr="0.067" rsrz="-0.536" avgoccu="1.000" phi="-147.4" psi="105.3" rama="Favored" rota="t0"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="THR" seq="241" resnum="227" icode="" altcode="" owab="19.030" rscc="0.963" rsr="0.063" rsrz="-0.493" avgoccu="1.000" phi="-70.6" psi="-5.9" rama="Favored" rota="p"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="ARG" seq="242" resnum="228" icode="" altcode="" owab="33.620" rscc="0.909" rsr="0.150" rsrz="0.746" avgoccu="1.000" phi="-102.7" psi="-7.7" rama="Favored" rota="mtt180"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="ALA" seq="243" resnum="229" icode="" altcode="" owab="25.170" rscc="0.967" rsr="0.055" rsrz="-0.669" avgoccu="1.000" phi="-79.8" psi="129.2" rama="Favored"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="ALA" seq="244" resnum="230" icode="" altcode="" owab="26.840" rscc="0.986" rsr="0.054" rsrz="-0.694" avgoccu="1.000" phi="-62.7" psi="139.7" rama="Favored"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="ALA" seq="245" resnum="231" icode="" altcode="" owab="26.700" rscc="0.954" rsr="0.073" rsrz="-0.228" avgoccu="1.000" phi="-64.5" psi="146.4" rama="Favored"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="VAL" seq="246" resnum="232" icode="" altcode="" owab="24.300" rscc="0.946" rsr="0.067" rsrz="-0.571" avgoccu="1.000" phi="-99.0" psi="117.5" rama="Favored" rota="t"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="PRO" seq="247" resnum="233" icode="" altcode="" owab="24.580" rscc="0.945" rsr="0.079" rsrz="-0.159" avgoccu="1.000" phi="-59.1" psi="147.3" rama="Favored" rota="Cg_exo"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="LEU" seq="248" resnum="234" icode="" altcode="" owab="27.000" rscc="0.925" rsr="0.101" rsrz="0.364" avgoccu="1.000" phi="-94.7" psi="124.9" rama="Favored" rota="tp"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="ASP" seq="249" resnum="235" icode="" altcode="" owab="28.570" rscc="0.958" rsr="0.073" rsrz="-0.430" avgoccu="1.000" phi="-134.3" psi="142.1" rama="Favored" rota="m-20" cis_peptide="yes">
+    <clash cid="6" atom="HA" dist="2.26" clashmag="0.56"/>
+  </ModelledSubgroup>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="PRO" seq="250" resnum="236" icode="" altcode="" owab="26.160" rscc="0.964" rsr="0.082" rsrz="-0.093" avgoccu="1.000" phi="-62.4" psi="152.6" rama="Favored" rota="Cg_endo">
+    <clash cid="6" atom="C" dist="2.26" clashmag="0.56"/>
+  </ModelledSubgroup>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="VAL" seq="251" resnum="237" icode="" altcode="" owab="24.790" rscc="0.953" rsr="0.079" rsrz="-0.210" avgoccu="1.000" phi="-76.9" psi="-29.6" rama="Favored" rota="p"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="LEU" seq="252" resnum="238" icode="" altcode="" owab="25.140" rscc="0.978" rsr="0.055" rsrz="-1.021" avgoccu="1.000" phi="-94.1" psi="143.3" rama="Favored" rota="mt"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="ASN" seq="253" resnum="239" icode="" altcode="" owab="22.590" rscc="0.951" rsr="0.066" rsrz="-0.506" avgoccu="1.000" phi="-64.0" psi="117.1" rama="Favored" rota="t-20"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="PRO" seq="254" resnum="240" icode="" altcode="" owab="25.660" rscc="0.951" rsr="0.064" rsrz="-0.490" avgoccu="1.000" phi="-59.9" psi="-22.1" rama="Favored" rota="Cg_exo"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="GLN" seq="255" resnum="241" icode="" altcode="" owab="23.400" rscc="0.935" rsr="0.079" rsrz="-0.455" avgoccu="1.000" phi="-62.2" psi="-40.2" rama="Favored" rota="mt-30"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="THR" seq="256" resnum="242" icode="" altcode="" owab="23.520" rscc="0.971" rsr="0.047" rsrz="-0.874" avgoccu="1.000" phi="-117.3" psi="-9.9" rama="Favored" rota="p"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="ASN" seq="257" resnum="243" icode="" altcode="A" owab="27.150" rscc="0.957" rsr="0.127" rsrz="0.663" avgoccu="1.000" phi="42.9" psi="45.2" rama="Favored" rota="t30"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="ASN" seq="257" resnum="243" icode="" altcode="B" owab="27.150" rscc="0.957" rsr="0.127" rsrz="0.663" avgoccu="1.000" phi="42.9" psi="45.2" rama="Favored" rota="t30">
+    <clash cid="7" atom="OD1" dist="2.07" clashmag="0.72"/>
+  </ModelledSubgroup>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="ALA" seq="258" resnum="244" icode="" altcode="" owab="23.310" rscc="0.948" rsr="0.062" rsrz="-0.498" avgoccu="1.000" phi="-143.7" psi="162.6" rama="Favored"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="PRO" seq="259" resnum="245" icode="" altcode="" owab="22.420" rscc="0.961" rsr="0.053" rsrz="-0.733" avgoccu="1.000" phi="-56.9" psi="145.3" rama="Favored" rota="Cg_exo"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="THR" seq="260" resnum="246" icode="" altcode="" owab="20.970" rscc="0.958" rsr="0.065" rsrz="-0.445" avgoccu="1.000" phi="-80.5" psi="117.6" rama="Favored" rota="m"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="PRO" seq="261" resnum="247" icode="" altcode="" owab="24.140" rscc="0.966" rsr="0.083" rsrz="-0.071" avgoccu="1.000" phi="-65.0" psi="120.6" rama="Favored" rota="Cg_exo"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="LEU" seq="262" resnum="248" icode="" altcode="" owab="20.370" rscc="0.960" rsr="0.072" rsrz="-0.509" avgoccu="1.000" phi="-116.9" psi="9.0" rama="Favored" rota="mt"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="GLY" seq="263" resnum="249" icode="" altcode="" owab="22.470" rscc="0.975" rsr="0.063" rsrz="-0.391" avgoccu="1.000" phi="-56.0" psi="-30.5" rama="Favored"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="GLY" seq="264" resnum="250" icode="" altcode="" owab="22.460" rscc="0.977" rsr="0.057" rsrz="-0.518" avgoccu="1.000" phi="-92.1" psi="7.4" rama="Favored"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="ALA" seq="265" resnum="251" icode="" altcode="" owab="21.400" rscc="0.937" rsr="0.078" rsrz="-0.105" avgoccu="1.000" phi="-105.7" psi="112.2" rama="Favored"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="VAL" seq="266" resnum="252" icode="" altcode="A" owab="23.480" rscc="0.971" rsr="0.075" rsrz="-0.330" avgoccu="1.000" phi="-61.7" psi="-27.2" rama="Favored" rota="p"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="VAL" seq="266" resnum="252" icode="" altcode="B" owab="23.480" rscc="0.971" rsr="0.075" rsrz="-0.330" avgoccu="1.000" phi="-61.7" psi="-27.2" rama="Favored" rota="p"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="LEU" seq="267" resnum="253" icode="" altcode="" owab="22.130" rscc="0.945" rsr="0.085" rsrz="-0.117" avgoccu="1.000" phi="-75.1" psi="-9.8" rama="Favored" rota="mt"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="ARG" seq="268" resnum="254" icode="" altcode="" owab="21.520" rscc="0.953" rsr="0.102" rsrz="-0.085" avgoccu="1.000" phi="-42.4" psi="134.3" rama="Favored" rota="ttp85"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="ALA" seq="269" resnum="255" icode="" altcode="" owab="19.650" rscc="0.981" rsr="0.067" rsrz="-0.375" avgoccu="1.000" phi="-58.5" psi="139.8" rama="Favored"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="THR" seq="270" resnum="256" icode="" altcode="" owab="19.200" rscc="0.966" rsr="0.074" rsrz="-0.231" avgoccu="1.000" phi="-83.2" psi="146.8" rama="Favored" rota="m"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="SER" seq="271" resnum="257" icode="" altcode="" owab="18.660" rscc="0.961" rsr="0.093" rsrz="0.100" avgoccu="1.000" phi="-43.2" psi="124.7" rama="Favored" rota="t"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="PRO" seq="272" resnum="258" icode="" altcode="" owab="21.520" rscc="0.980" rsr="0.091" rsrz="0.106" avgoccu="1.000" phi="-53.5" psi="-35.2" rama="Favored" rota="Cg_exo"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="MET" seq="273" resnum="259" icode="" altcode="" owab="28.710" rscc="0.947" rsr="0.130" rsrz="0.867" avgoccu="1.000" phi="-65.7" psi="-41.0" rama="Favored" rota="mmm">
+    <clash cid="8" atom="HG2" dist="2.12" clashmag="0.49"/>
+  </ModelledSubgroup>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="ALA" seq="274" resnum="260" icode="" altcode="" owab="18.480" rscc="0.906" rsr="0.124" rsrz="1.022" avgoccu="1.000" phi="-67.7" psi="-42.0" rama="Favored"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="MET" seq="275" resnum="261" icode="" altcode="A" owab="20.250" rscc="0.981" rsr="0.067" rsrz="-0.488" avgoccu="1.000" phi="-64.1" psi="-38.5" rama="Favored" rota="mtp"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="MET" seq="275" resnum="261" icode="" altcode="B" owab="20.250" rscc="0.981" rsr="0.067" rsrz="-0.488" avgoccu="1.000" phi="-64.1" psi="-38.5" rama="Favored" rota="mtp">
+    <clash cid="9" atom="HE1" dist="2.10" clashmag="0.51"/>
+  </ModelledSubgroup>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="GLN" seq="276" resnum="262" icode="" altcode="" owab="20.900" rscc="0.977" rsr="0.047" rsrz="-1.016" avgoccu="1.000" phi="-62.6" psi="-43.5" rama="Favored" rota="tt0"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="PHE" seq="277" resnum="263" icode="" altcode="" owab="22.310" rscc="0.958" rsr="0.065" rsrz="-0.517" avgoccu="1.000" phi="-56.2" psi="-45.4" rama="Favored" rota="t80">
+    <clash cid="10" atom="CZ" dist="3.04" clashmag="0.41"/>
+  </ModelledSubgroup>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="LEU" seq="278" resnum="264" icode="" altcode="" owab="20.330" rscc="0.954" rsr="0.071" rsrz="-0.539" avgoccu="1.000" phi="-65.1" psi="-45.2" rama="Favored" rota="mt"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="ARG" seq="279" resnum="265" icode="" altcode="" owab="20.040" rscc="0.957" rsr="0.056" rsrz="-0.881" avgoccu="1.000" phi="-59.2" psi="-41.4" rama="Favored" rota="mtm-85"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="ASN" seq="280" resnum="266" icode="" altcode="" owab="21.240" rscc="0.964" rsr="0.052" rsrz="-0.774" avgoccu="1.000" phi="-68.2" psi="-21.8" rama="Favored" rota="m-20"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="MET" seq="281" resnum="267" icode="" altcode="A" owab="26.170" rscc="0.959" rsr="0.114" rsrz="0.523" avgoccu="1.000" phi="-87.5" psi="-5.8" rama="Favored" rota="ttm">
+    <clash cid="10" atom="CE" dist="3.04" clashmag="0.41"/>
+  </ModelledSubgroup>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="MET" seq="281" resnum="267" icode="" altcode="B" owab="26.170" rscc="0.959" rsr="0.114" rsrz="0.523" avgoccu="1.000" phi="-87.5" psi="-5.8" rama="Favored" rota="ttm"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="GLY" seq="282" resnum="268" icode="" altcode="" owab="21.180" rscc="0.958" rsr="0.062" rsrz="-0.412" avgoccu="1.000" phi="80.1" psi="30.4" rama="Favored"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="VAL" seq="283" resnum="269" icode="" altcode="" owab="18.380" rscc="0.954" rsr="0.073" rsrz="-0.390" avgoccu="1.000" phi="-105.5" psi="119.7" rama="Favored" rota="t"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="GLY" seq="284" resnum="270" icode="" altcode="" owab="19.250" rscc="0.973" rsr="0.090" rsrz="0.180" avgoccu="1.000" phi="-91.3" psi="-24.4" rama="Favored"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="SER" seq="285" resnum="271" icode="" altcode="" owab="18.510" rscc="0.943" rsr="0.107" rsrz="0.382" avgoccu="1.000" phi="-143.7" psi="137.4" rama="Favored" rota="t"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="SER" seq="286" resnum="272" icode="" altcode="A" owab="19.250" rscc="0.961" rsr="0.114" rsrz="0.522" avgoccu="1.000" phi="-139.3" psi="146.7" rama="Favored" rota="t"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="SER" seq="286" resnum="272" icode="" altcode="B" owab="19.250" rscc="0.961" rsr="0.114" rsrz="0.522" avgoccu="1.000" phi="-139.3" psi="146.7" rama="Favored" rota="t"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="LEU" seq="287" resnum="273" icode="" altcode="" owab="19.140" rscc="0.968" rsr="0.091" rsrz="0.063" avgoccu="1.000" phi="-150.8" psi="137.1" rama="Favored" rota="tt"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="SER" seq="288" resnum="274" icode="" altcode="" owab="17.950" rscc="0.981" rsr="0.077" rsrz="-0.221" avgoccu="1.000" phi="-138.3" psi="152.6" rama="Favored" rota="p">
+    <clash cid="11" atom="HA" dist="2.21" clashmag="0.40"/>
+  </ModelledSubgroup>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="VAL" seq="289" resnum="275" icode="" altcode="" owab="19.990" rscc="0.975" rsr="0.107" rsrz="0.631" avgoccu="1.000" phi="-122.0" psi="129.8" rama="Favored" rota="t">
+    <clash cid="12" atom="HG21" dist="1.92" clashmag="0.50"/>
+  </ModelledSubgroup>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="SER" seq="290" resnum="276" icode="" altcode="" owab="20.060" rscc="0.949" rsr="0.098" rsrz="0.201" avgoccu="1.000" phi="-67.7" psi="138.3" rama="Favored" rota="m"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="VAL" seq="291" resnum="277" icode="" altcode="" owab="22.830" rscc="0.967" rsr="0.062" rsrz="-0.721" avgoccu="1.000" phi="-105.6" psi="112.5" rama="Favored" rota="t"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="VAL" seq="292" resnum="278" icode="" altcode="" owab="28.320" rscc="0.922" rsr="0.076" rsrz="-0.300" avgoccu="1.000" phi="-115.9" psi="122.0" rama="Favored" rota="t"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="VAL" seq="293" resnum="279" icode="" altcode="" owab="33.950" rscc="0.958" rsr="0.087" rsrz="0.030" avgoccu="1.000" phi="-125.9" psi="122.1" rama="Favored" rota="t"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="GLY" seq="294" resnum="280" icode="" altcode="" owab="41.570" rscc="0.968" rsr="0.150" rsrz="1.448" avgoccu="1.000" phi="45.4" psi="47.1" rama="Favored"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="GLY" seq="295" resnum="281" icode="" altcode="" owab="38.890" rscc="0.988" rsr="0.156" rsrz="1.575" avgoccu="1.000" phi="75.3" psi="5.3" rama="Favored"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="GLN" seq="296" resnum="282" icode="" altcode="" owab="41.570" rscc="0.947" rsr="0.147" rsrz="0.736" avgoccu="1.000" phi="-114.0" psi="145.6" rama="Favored" rota="mt-30"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="LEU" seq="297" resnum="283" icode="" altcode="" owab="23.260" rscc="0.923" rsr="0.086" rsrz="-0.087" avgoccu="1.000" phi="-72.0" psi="108.6" rama="Favored" rota="tp"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="TRP" seq="298" resnum="284" icode="" altcode="" owab="25.400" rscc="0.932" rsr="0.079" rsrz="0.035" avgoccu="1.000" phi="-84.2" psi="-37.4" rama="Favored" rota="t90"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="GLY" seq="299" resnum="285" icode="" altcode="" owab="19.350" rscc="0.972" rsr="0.086" rsrz="0.095" avgoccu="1.000" phi="178.6" psi="-170.1" rama="Favored"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="LEU" seq="300" resnum="286" icode="" altcode="" owab="18.920" rscc="0.972" rsr="0.120" rsrz="0.937" avgoccu="1.000" phi="-135.9" psi="142.4" rama="Favored" rota="mt"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="ILE" seq="301" resnum="287" icode="" altcode="" owab="20.210" rscc="0.970" rsr="0.088" rsrz="-0.013" avgoccu="1.000" phi="-81.9" psi="109.1" rama="Favored" rota="mt">
+    <clash cid="11" atom="O" dist="2.21" clashmag="0.40"/>
+  </ModelledSubgroup>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="ALA" seq="302" resnum="288" icode="" altcode="" owab="17.990" rscc="0.977" rsr="0.114" rsrz="0.777" avgoccu="1.000" phi="-115.0" psi="119.8" rama="Favored"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="CYS" seq="303" resnum="289" icode="" altcode="" owab="18.150" rscc="0.991" rsr="0.100" rsrz="0.823" avgoccu="1.000" phi="-114.9" psi="141.0" rama="Favored" rota="m"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="HIS" seq="304" resnum="290" icode="" altcode="" owab="18.350" rscc="0.956" rsr="0.064" rsrz="-0.495" avgoccu="1.000" phi="-129.1" psi="147.3" rama="Favored" rota="m170"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="HIS" seq="305" resnum="291" icode="" altcode="" owab="18.200" rscc="0.966" rsr="0.073" rsrz="-0.318" avgoccu="1.000" phi="-126.9" psi="141.3" rama="Favored" rota="t60"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="GLN" seq="306" resnum="292" icode="" altcode="A" owab="23.390" rscc="0.970" rsr="0.112" rsrz="0.123" avgoccu="1.000" phi="-67.5" psi="-38.9" rama="Favored" rota="tt0"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="GLN" seq="306" resnum="292" icode="" altcode="B" owab="23.390" rscc="0.970" rsr="0.112" rsrz="0.123" avgoccu="1.000" phi="-67.5" psi="-38.9" rama="Favored" rota="tt0"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="THR" seq="307" resnum="293" icode="" altcode="A" owab="21.500" rscc="0.967" rsr="0.102" rsrz="0.436" avgoccu="1.000" phi="-94.7" psi="164.7" rama="Favored" rota="m"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="THR" seq="307" resnum="293" icode="" altcode="B" owab="21.500" rscc="0.967" rsr="0.102" rsrz="0.436" avgoccu="1.000" phi="-94.7" psi="164.7" rama="Favored" rota="m"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="PRO" seq="308" resnum="294" icode="" altcode="" owab="22.080" rscc="0.964" rsr="0.081" rsrz="-0.115" avgoccu="1.000" phi="-61.5" psi="147.3" rama="Favored" rota="Cg_exo"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="TYR" seq="309" resnum="295" icode="" altcode="A" owab="21.190" rscc="0.964" rsr="0.117" rsrz="1.120" avgoccu="1.000" phi="-160.6" psi="120.1" rama="Favored" rota="t80"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="TYR" seq="309" resnum="295" icode="" altcode="B" owab="21.190" rscc="0.964" rsr="0.117" rsrz="1.120" avgoccu="1.000" phi="-160.6" psi="120.1" rama="Favored" rota="t80"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="VAL" seq="310" resnum="296" icode="" altcode="" owab="24.470" rscc="0.972" rsr="0.100" rsrz="0.420" avgoccu="1.000" phi="-98.9" psi="107.8" rama="Favored" rota="t"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="LEU" seq="311" resnum="297" icode="" altcode="" owab="31.560" rscc="0.954" rsr="0.108" rsrz="0.575" avgoccu="1.000" phi="-68.8" psi="125.7" rama="Favored" rota="tp"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="PRO" seq="312" resnum="298" icode="" altcode="" owab="43.440" rscc="0.959" rsr="0.099" rsrz="0.283" avgoccu="1.000" phi="-50.9" psi="139.3" rama="Favored" rota="Cg_exo"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="PRO" seq="313" resnum="299" icode="" altcode="" owab="41.940" rscc="0.951" rsr="0.069" rsrz="-0.380" avgoccu="1.000" phi="-50.5" psi="-37.6" rama="Favored" rota="Cg_exo"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="ASP" seq="314" resnum="300" icode="" altcode="" owab="61.960" rscc="0.926" rsr="0.221" rsrz="2.180" avgoccu="1.000" phi="-65.8" psi="-41.0" rama="Favored" rota="m-20"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="LEU" seq="315" resnum="301" icode="" altcode="" owab="49.220" rscc="0.931" rsr="0.143" rsrz="1.630" avgoccu="1.000" phi="-64.7" psi="-34.3" rama="Favored" rota="mt"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="ARG" seq="316" resnum="302" icode="" altcode="" owab="38.110" rscc="0.926" rsr="0.083" rsrz="-0.413" avgoccu="1.000" phi="-64.2" psi="-45.2" rama="Favored" rota="mtm105">
+    <clash cid="13" atom="NH1" dist="2.43" clashmag="0.43"/>
+  </ModelledSubgroup>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="THR" seq="317" resnum="303" icode="" altcode="" owab="41.290" rscc="0.979" rsr="0.070" rsrz="-0.326" avgoccu="1.000" phi="-58.6" psi="-44.8" rama="Favored" rota="m"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="THR" seq="318" resnum="304" icode="" altcode="" owab="35.900" rscc="0.965" rsr="0.080" rsrz="-0.088" avgoccu="1.000" phi="-59.0" psi="-47.3" rama="Favored" rota="m"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="LEU" seq="319" resnum="305" icode="" altcode="A" owab="29.670" rscc="0.965" rsr="0.106" rsrz="0.515" avgoccu="1.000" phi="-59.7" psi="-45.2" rama="Favored" rota="tp">
+    <clash cid="12" atom="HG" dist="1.92" clashmag="0.50"/>
+  </ModelledSubgroup>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="LEU" seq="319" resnum="305" icode="" altcode="B" owab="29.670" rscc="0.965" rsr="0.106" rsrz="0.515" avgoccu="1.000" phi="-59.7" psi="-45.2" rama="Favored" rota="tp"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="GLU" seq="320" resnum="306" icode="" altcode="" owab="45.550" rscc="0.926" rsr="0.114" rsrz="-0.060" avgoccu="1.000" phi="-56.4" psi="-44.6" rama="Favored" rota="mt-10"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="TYR" seq="321" resnum="307" icode="" altcode="" owab="53.400" rscc="0.865" rsr="0.191" rsrz="3.397" avgoccu="1.000" phi="-59.8" psi="-47.7" rama="Favored" rota="t80">
+    <clash cid="14" atom="CE2" dist="2.51" clashmag="0.45"/>
+  </ModelledSubgroup>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="LEU" seq="322" resnum="308" icode="" altcode="" owab="34.730" rscc="0.981" rsr="0.059" rsrz="-0.901" avgoccu="1.000" phi="-62.0" psi="-39.4" rama="Favored" rota="mt"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="GLY" seq="323" resnum="309" icode="" altcode="" owab="30.660" rscc="0.971" rsr="0.067" rsrz="-0.307" avgoccu="1.000" phi="-56.4" psi="-46.4" rama="Favored"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="ARG" seq="324" resnum="310" icode="" altcode="" owab="48.430" rscc="0.923" rsr="0.148" rsrz="0.711" avgoccu="1.000" phi="-63.5" psi="-44.7" rama="Favored" rota="mtm-85">
+    <clash cid="15" atom="NH1" dist="2.49" clashmag="0.45"/>
+  </ModelledSubgroup>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="LEU" seq="325" resnum="311" icode="" altcode="" owab="46.110" rscc="0.964" rsr="0.090" rsrz="0.033" avgoccu="1.000" phi="-65.3" psi="-45.9" rama="Favored" rota="mt">
+    <clash cid="14" atom="HD11" dist="2.51" clashmag="0.45"/>
+  </ModelledSubgroup>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="LEU" seq="326" resnum="312" icode="" altcode="" owab="28.530" rscc="0.933" rsr="0.098" rsrz="0.274" avgoccu="1.000" phi="-60.0" psi="-42.5" rama="Favored" rota="tp"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="SER" seq="327" resnum="313" icode="" altcode="" owab="30.510" rscc="0.964" rsr="0.054" rsrz="-0.683" avgoccu="1.000" phi="-53.6" psi="-48.5" rama="Favored" rota="m"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="LEU" seq="328" resnum="314" icode="" altcode="" owab="42.110" rscc="0.936" rsr="0.126" rsrz="1.117" avgoccu="1.000" phi="-63.2" psi="-44.6" rama="Favored" rota="mt"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="GLN" seq="329" resnum="315" icode="" altcode="" owab="40.590" rscc="0.938" rsr="0.076" rsrz="-0.508" avgoccu="1.000" phi="-67.8" psi="-37.7" rama="Favored" rota="mm-40"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="VAL" seq="330" resnum="316" icode="" altcode="" owab="33.340" rscc="0.942" rsr="0.065" rsrz="-0.631" avgoccu="1.000" phi="-64.0" psi="-42.7" rama="Favored" rota="t"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="GLN" seq="331" resnum="317" icode="" altcode="" owab="47.810" rscc="0.908" rsr="0.191" rsrz="1.506" avgoccu="1.000" phi="-57.6" psi="-45.5" rama="Favored" rota="tt0"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="VAL" seq="332" resnum="318" icode="" altcode="" owab="51.130" rscc="0.927" rsr="0.117" rsrz="0.931" avgoccu="1.000" phi="-62.7" psi="-51.8" rama="Favored" rota="t"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="LYS" seq="333" resnum="319" icode="" altcode="" owab="54.050" rscc="0.712" rsr="0.178" rsrz="0.968" avgoccu="1.000" phi="-70.8" psi="-30.1" rama="Favored" rota="mttm">
+    <clash cid="2" atom="HE3" dist="1.96" clashmag="0.65"/>
+    <clash cid="16" atom="HE2" dist="1.80" clashmag="0.79"/>
+  </ModelledSubgroup>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="GLU" seq="334" resnum="320" icode="" altcode="" owab="60.710" rscc="0.826" rsr="0.301" rsrz="2.834" avgoccu="1.000" phi="-79.7" psi="-32.1" rama="Favored" rota="tt0"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="ALA" seq="335" resnum="321" icode="" altcode="" owab="63.110" rscc="0.700" rsr="0.356" rsrz="6.708" avgoccu="1.000" phi="-55.0" psi="-38.0" rama="Favored"/>
+  <ModelledSubgroup model="1" chain="A" said="A" ent="1" resname="LEU" seq="336" resnum="322" icode="" altcode="" owab="61.000" rscc="0.639" rsr="0.225" rsrz="4.099" avgoccu="1.000" rota="mt"/>
+  <ModelledSubgroup model="1" chain="A" said="B" ent="2" resname="ACT" seq="" resnum="400" icode="" altcode="" owab="64.940" rscc="0.955" rsr="0.068" avgoccu="1.000" mogul_angles_rmsz="0.83" mogul_bonds_rmsz="0.95" mogul_rmsz_numangles="3" mogul_rmsz_numbonds="3"/>
+  <ModelledSubgroup model="1" chain="A" said="C" ent="3" resname="MPD" seq="" resnum="401" icode="" altcode="" owab="79.110" rscc="0.914" rsr="0.128" avgoccu="1.000" mogul_angles_rmsz="0.25" mogul_bonds_rmsz="0.12" mogul_rmsz_numangles="9" mogul_rmsz_numbonds="7" ligand_clashes_outlier="yes" ligand_num_clashes="2" ligand_num_symm_clashes="0">
+    <mog-torsion-outlier atoms="C2,C3,C4,O4" stdev="35.77" mean="56.14" obsval="18.81" mindiff="1.58" numobs="41"/>
+    <mog-torsion-outlier atoms="C2,C3,C4,C5" stdev="17.57" mean="32.20" obsval="141.28" mindiff="7.16" numobs="44"/>
+    <clash cid="17" atom="O4" dist="2.01" clashmag="0.59"/>
+    <clash cid="17" atom="H12" dist="2.01" clashmag="0.59"/>
+  </ModelledSubgroup>
+  <ModelledSubgroup model="1" chain="A" said="D" ent="2" resname="ACT" seq="" resnum="402" icode="" altcode="" owab="52.070" rscc="0.926" rsr="0.131" avgoccu="1.000" mogul_angles_rmsz="0.84" mogul_bonds_rmsz="0.83" mogul_rmsz_numangles="3" mogul_rmsz_numbonds="3"/>
+  <ModelledSubgroup model="1" chain="A" said="E" ent="2" resname="ACT" seq="" resnum="403" icode="" altcode="" owab="32.560" rscc="0.910" rsr="0.081" avgoccu="1.000" mogul_angles_rmsz="0.62" mogul_bonds_rmsz="1.44" mogul_rmsz_numangles="3" mogul_rmsz_numbonds="3"/>
+  <ModelledSubgroup model="1" chain="A" said="F" ent="3" resname="MPD" seq="" resnum="404" icode="" altcode="" owab="34.260" rscc="0.855" rsr="0.148" avgoccu="0.500" mogul_angles_rmsz="0.42" mogul_bonds_rmsz="0.20" mogul_rmsz_numangles="9" mogul_rmsz_numbonds="7">
+    <mog-torsion-outlier atoms="C1,C2,C3,C4" stdev="28.22" mean="53.72" obsval="-139.66" mindiff="1.30" numobs="40"/>
+    <mog-torsion-outlier atoms="O2,C2,C3,C4" stdev="17.19" mean="45.75" obsval="101.53" mindiff="14.78" numobs="52"/>
+    <mog-torsion-outlier atoms="CM,C2,C3,C4" stdev="54.38" mean="95.97" obsval="-16.78" mindiff="19.06" numobs="40"/>
+  </ModelledSubgroup>
+  <ModelledSubgroup model="1" chain="A" said="G" ent="4" resname="LBV" seq="" resnum="405" icode="" altcode="" owab="20.290" rscc="0.943" rsr="0.104" avgoccu="1.000" mogul_angles_rmsz="1.43" mogul_bonds_rmsz="1.41" mogul_rmsz_numangles="47" mogul_rmsz_numbonds="42">
+    <mog-bond-outlier atoms="CHC,C1C" Zscore="6.70" stdev="0.01" mean="1.35" obsval="1.40" mindiff="0.03" numobs="242"/>
+    <mog-angle-outlier atoms="O_A,C1A,C2A" Zscore="2.32" stdev="0.97" mean="126.28" obsval="128.53" mindiff="0.61" numobs="22"/>
+    <mog-angle-outlier atoms="C2C,C1C,N_C" Zscore="-2.22" stdev="1.45" mean="110.05" obsval="106.82" mindiff="0.00" numobs="335"/>
+    <mog-angle-outlier atoms="C4C,C3C,C2C" Zscore="2.05" stdev="1.15" mean="106.51" obsval="108.87" mindiff="0.14" numobs="161"/>
+    <mog-angle-outlier atoms="CHD,C4C,C3C" Zscore="3.84" stdev="2.57" mean="124.90" obsval="134.78" mindiff="1.76" numobs="129"/>
+    <mog-angle-outlier atoms="CHD,C4C,N_C" Zscore="-3.10" stdev="2.09" mean="124.93" obsval="118.46" mindiff="0.93" numobs="423"/>
+    <mog-angle-outlier atoms="O1C,CGC,CBC" Zscore="2.05" stdev="3.21" mean="114.03" obsval="120.63" mindiff="0.01" numobs="3969"/>
+    <mog-angle-outlier atoms="C4B,CHC,C1C" Zscore="3.71" stdev="1.19" mean="128.81" obsval="133.24" mindiff="2.55" numobs="22"/>
+    <mog-angle-outlier atoms="C1C,N_C,C4C" Zscore="2.69" stdev="1.88" mean="106.51" obsval="111.58" mindiff="0.01" numobs="2983"/>
+    <mog-torsion-outlier atoms="C3C,C4C,CHD,C1D" stdev="12.01" mean="142.77" obsval="29.89" mindiff="11.00" numobs="402"/>
+    <mog-torsion-outlier atoms="C_N,C4C,CHD,C1D" stdev="11.82" mean="145.99" obsval="-152.83" mindiff="14.35" numobs="423"/>
+    <mog-torsion-outlier atoms="CAB,CBB,CGB,O1B" stdev="29.65" mean="79.44" obsval="108.09" mindiff="0.08" numobs="3382"/>
+    <mog-torsion-outlier atoms="CAB,CBB,CGB,O2B" stdev="30.63" mean="80.96" obsval="-70.10" mindiff="0.02" numobs="3382"/>
+    <mog-torsion-outlier atoms="CAC,CBC,CGC,O1C" stdev="24.27" mean="49.59" obsval="-124.26" mindiff="0.02" numobs="3382"/>
+    <mog-torsion-outlier atoms="CAC,CBC,CGC,O2C" stdev="23.20" mean="51.27" obsval="59.70" mindiff="0.02" numobs="3382"/>
+  </ModelledSubgroup>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="501" icode="" altcode="" owab="44.880" rscc="0.988" rsr="0.156" avgoccu="0.500"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="502" icode="" altcode="" owab="45.850" rscc="0.956" rsr="0.183" avgoccu="1.000">
+    <clash cid="7" atom="O" dist="2.07" clashmag="0.72"/>
+  </ModelledSubgroup>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="503" icode="" altcode="" owab="49.680" rscc="0.926" rsr="0.081" avgoccu="1.000">
+    <clash cid="4" atom="O" dist="2.26" clashmag="0.67"/>
+    <clash cid="18" atom="O" dist="2.19" clashmag="0.49"/>
+  </ModelledSubgroup>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="504" icode="" altcode="" owab="44.570" rscc="0.933" rsr="0.167" avgoccu="1.000">
+    <clash cid="3" atom="O" dist="2.26" clashmag="0.69"/>
+  </ModelledSubgroup>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="505" icode="" altcode="" owab="46.950" rscc="0.959" rsr="0.081" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="506" icode="" altcode="" owab="34.970" rscc="0.973" rsr="0.075" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="507" icode="" altcode="" owab="48.240" rscc="0.943" rsr="0.208" avgoccu="1.000">
+    <clash cid="13" atom="O" dist="2.43" clashmag="0.43"/>
+  </ModelledSubgroup>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="508" icode="" altcode="" owab="58.090" rscc="0.811" rsr="0.218" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="509" icode="" altcode="" owab="62.220" rscc="0.846" rsr="0.196" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="510" icode="" altcode="" owab="61.240" rscc="0.633" rsr="0.339" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="511" icode="" altcode="" owab="68.530" rscc="0.701" rsr="0.397" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="512" icode="" altcode="" owab="66.500" rscc="0.932" rsr="0.187" avgoccu="1.000">
+    <clash cid="15" atom="O" dist="2.49" clashmag="0.45"/>
+  </ModelledSubgroup>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="513" icode="" altcode="" owab="60.370" rscc="0.603" rsr="0.311" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="514" icode="" altcode="" owab="45.890" rscc="0.961" rsr="0.135" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="515" icode="" altcode="" owab="60.970" rscc="0.653" rsr="0.368" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="516" icode="" altcode="" owab="50.110" rscc="0.917" rsr="0.148" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="517" icode="" altcode="" owab="27.740" rscc="0.992" rsr="0.057" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="518" icode="" altcode="" owab="31.220" rscc="0.969" rsr="0.124" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="519" icode="" altcode="" owab="34.490" rscc="0.980" rsr="0.120" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="520" icode="" altcode="" owab="48.120" rscc="0.989" rsr="0.209" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="521" icode="" altcode="" owab="53.140" rscc="0.964" rsr="0.214" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="522" icode="" altcode="" owab="22.000" rscc="0.995" rsr="0.239" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="523" icode="" altcode="" owab="37.420" rscc="0.995" rsr="0.094" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="524" icode="" altcode="" owab="62.870" rscc="0.837" rsr="0.214" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="525" icode="" altcode="" owab="76.090" rscc="0.924" rsr="0.245" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="526" icode="" altcode="" owab="52.330" rscc="0.850" rsr="0.149" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="527" icode="" altcode="" owab="26.080" rscc="0.993" rsr="0.092" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="528" icode="" altcode="" owab="49.890" rscc="0.970" rsr="0.324" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="529" icode="" altcode="" owab="44.700" rscc="0.823" rsr="0.153" avgoccu="1.000">
+    <clash cid="16" atom="O" dist="1.80" clashmag="0.79"/>
+  </ModelledSubgroup>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="530" icode="" altcode="" owab="31.740" rscc="0.979" rsr="0.227" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="531" icode="" altcode="" owab="53.230" rscc="0.755" rsr="0.146" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="532" icode="" altcode="" owab="51.040" rscc="0.877" rsr="0.086" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="533" icode="" altcode="" owab="31.880" rscc="0.983" rsr="0.072" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="534" icode="" altcode="" owab="34.620" rscc="0.956" rsr="0.566" avgoccu="0.500"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="535" icode="" altcode="" owab="32.460" rscc="0.971" rsr="0.158" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="536" icode="" altcode="" owab="50.710" rscc="0.965" rsr="0.084" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="537" icode="" altcode="" owab="59.520" rscc="0.967" rsr="0.093" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="538" icode="" altcode="" owab="57.700" rscc="0.856" rsr="0.312" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="539" icode="" altcode="" owab="21.530" rscc="0.986" rsr="0.090" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="540" icode="" altcode="" owab="37.030" rscc="0.983" rsr="0.224" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="541" icode="" altcode="" owab="50.160" rscc="0.879" rsr="0.068" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="542" icode="" altcode="" owab="17.400" rscc="0.994" rsr="0.152" avgoccu="0.500"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="543" icode="" altcode="" owab="48.160" rscc="0.978" rsr="0.246" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="544" icode="" altcode="" owab="63.540" rscc="0.801" rsr="0.239" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="545" icode="" altcode="" owab="54.880" rscc="0.861" rsr="0.176" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="546" icode="" altcode="" owab="60.840" rscc="0.892" rsr="0.214" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="547" icode="" altcode="" owab="47.560" rscc="0.968" rsr="0.104" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="548" icode="" altcode="" owab="38.190" rscc="0.977" rsr="0.068" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="549" icode="" altcode="" owab="36.620" rscc="0.988" rsr="0.079" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="550" icode="" altcode="" owab="45.650" rscc="0.959" rsr="0.208" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="551" icode="" altcode="" owab="35.910" rscc="0.978" rsr="0.118" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="552" icode="" altcode="" owab="58.390" rscc="0.739" rsr="0.128" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="553" icode="" altcode="" owab="37.620" rscc="0.946" rsr="0.094" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="554" icode="" altcode="" owab="27.670" rscc="0.986" rsr="0.077" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="555" icode="" altcode="" owab="39.560" rscc="0.971" rsr="0.064" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="556" icode="" altcode="" owab="36.370" rscc="0.977" rsr="0.062" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="557" icode="" altcode="" owab="48.430" rscc="0.972" rsr="0.290" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="558" icode="" altcode="" owab="20.600" rscc="0.991" rsr="0.184" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="559" icode="" altcode="" owab="20.700" rscc="0.992" rsr="0.152" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="560" icode="" altcode="" owab="23.860" rscc="0.983" rsr="0.165" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="561" icode="" altcode="" owab="50.990" rscc="0.932" rsr="0.470" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="562" icode="" altcode="" owab="48.100" rscc="0.987" rsr="0.170" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="563" icode="" altcode="" owab="49.650" rscc="0.940" rsr="0.128" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="564" icode="" altcode="" owab="45.850" rscc="0.908" rsr="0.119" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="565" icode="" altcode="" owab="42.010" rscc="0.924" rsr="0.184" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="566" icode="" altcode="" owab="32.860" rscc="0.993" rsr="0.094" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="567" icode="" altcode="" owab="48.500" rscc="0.937" rsr="0.100" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="568" icode="" altcode="" owab="36.360" rscc="0.961" rsr="0.083" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="569" icode="" altcode="" owab="78.310" rscc="0.492" rsr="0.329" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="570" icode="" altcode="" owab="58.970" rscc="0.894" rsr="0.165" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="571" icode="" altcode="" owab="28.170" rscc="0.993" rsr="0.038" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="572" icode="" altcode="" owab="49.080" rscc="0.919" rsr="0.241" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="573" icode="" altcode="" owab="47.450" rscc="0.837" rsr="0.089" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="574" icode="" altcode="" owab="29.500" rscc="0.971" rsr="0.116" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="575" icode="" altcode="" owab="22.020" rscc="0.989" rsr="0.076" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="576" icode="" altcode="" owab="32.900" rscc="0.985" rsr="0.098" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="577" icode="" altcode="" owab="48.910" rscc="0.955" rsr="0.111" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="578" icode="" altcode="" owab="59.020" rscc="0.897" rsr="0.098" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="579" icode="" altcode="" owab="58.370" rscc="0.937" rsr="0.112" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="580" icode="" altcode="" owab="28.080" rscc="0.993" rsr="0.197" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="581" icode="" altcode="" owab="49.090" rscc="0.984" rsr="0.084" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="582" icode="" altcode="" owab="54.950" rscc="0.745" rsr="0.187" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="583" icode="" altcode="" owab="55.220" rscc="0.755" rsr="0.282" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="584" icode="" altcode="" owab="23.120" rscc="0.996" rsr="0.216" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="585" icode="" altcode="" owab="21.000" rscc="0.997" rsr="0.120" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="586" icode="" altcode="" owab="51.950" rscc="0.836" rsr="0.112" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="587" icode="" altcode="" owab="39.280" rscc="0.969" rsr="0.103" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="588" icode="" altcode="" owab="27.930" rscc="0.977" rsr="0.134" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="589" icode="" altcode="" owab="26.880" rscc="0.984" rsr="0.149" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="590" icode="" altcode="" owab="57.950" rscc="0.697" rsr="0.195" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="591" icode="" altcode="" owab="31.030" rscc="0.977" rsr="0.064" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="592" icode="" altcode="" owab="19.980" rscc="0.995" rsr="0.171" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="593" icode="" altcode="" owab="44.700" rscc="0.959" rsr="0.341" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="594" icode="" altcode="" owab="44.720" rscc="0.945" rsr="0.082" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="595" icode="" altcode="" owab="28.800" rscc="0.983" rsr="0.060" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="596" icode="" altcode="" owab="46.810" rscc="0.970" rsr="0.363" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="597" icode="" altcode="" owab="18.720" rscc="0.996" rsr="0.150" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="598" icode="" altcode="" owab="35.250" rscc="0.922" rsr="0.129" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="599" icode="" altcode="" owab="29.830" rscc="0.966" rsr="0.067" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="600" icode="" altcode="" owab="40.520" rscc="0.956" rsr="0.078" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="601" icode="" altcode="" owab="21.230" rscc="0.989" rsr="0.093" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="602" icode="" altcode="" owab="45.000" rscc="0.972" rsr="0.078" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="603" icode="" altcode="" owab="42.600" rscc="0.902" rsr="0.102" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="604" icode="" altcode="" owab="34.130" rscc="0.991" rsr="0.158" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="605" icode="" altcode="" owab="28.040" rscc="0.986" rsr="0.053" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="606" icode="" altcode="" owab="46.200" rscc="0.911" rsr="0.259" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="607" icode="" altcode="" owab="54.830" rscc="0.910" rsr="0.068" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="608" icode="" altcode="" owab="50.720" rscc="0.942" rsr="0.261" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="609" icode="" altcode="" owab="58.880" rscc="0.735" rsr="0.145" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="610" icode="" altcode="" owab="39.560" rscc="0.988" rsr="0.077" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="611" icode="" altcode="" owab="45.420" rscc="0.950" rsr="0.162" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="612" icode="" altcode="" owab="31.440" rscc="0.983" rsr="0.049" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="613" icode="" altcode="" owab="30.430" rscc="0.982" rsr="0.188" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="614" icode="" altcode="" owab="25.980" rscc="0.987" rsr="0.057" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="615" icode="" altcode="" owab="48.940" rscc="0.922" rsr="0.086" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="616" icode="" altcode="" owab="28.270" rscc="0.991" rsr="0.062" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="617" icode="" altcode="" owab="25.800" rscc="0.993" rsr="0.171" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="618" icode="" altcode="" owab="24.790" rscc="0.976" rsr="0.063" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="619" icode="" altcode="" owab="25.180" rscc="0.993" rsr="0.185" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="620" icode="" altcode="" owab="46.910" rscc="0.961" rsr="0.040" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="621" icode="" altcode="" owab="38.500" rscc="0.936" rsr="0.099" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="622" icode="" altcode="" owab="63.000" rscc="0.923" rsr="0.226" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="623" icode="" altcode="" owab="34.150" rscc="0.972" rsr="0.224" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="624" icode="" altcode="" owab="44.370" rscc="0.937" rsr="0.095" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="625" icode="" altcode="" owab="30.500" rscc="0.979" rsr="0.189" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="626" icode="" altcode="" owab="23.460" rscc="0.991" rsr="0.208" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="627" icode="" altcode="" owab="28.780" rscc="0.993" rsr="0.093" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="628" icode="" altcode="" owab="22.910" rscc="0.992" rsr="0.114" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="629" icode="" altcode="" owab="40.700" rscc="0.962" rsr="0.117" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="630" icode="" altcode="" owab="46.280" rscc="0.947" rsr="0.067" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="631" icode="" altcode="" owab="47.530" rscc="0.981" rsr="0.149" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="632" icode="" altcode="" owab="35.930" rscc="0.884" rsr="0.104" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="633" icode="" altcode="" owab="24.490" rscc="0.982" rsr="0.060" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="634" icode="" altcode="" owab="32.610" rscc="0.995" rsr="0.188" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="635" icode="" altcode="" owab="21.220" rscc="0.998" rsr="0.120" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="636" icode="" altcode="" owab="19.930" rscc="0.992" rsr="0.156" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="637" icode="" altcode="" owab="22.810" rscc="0.985" rsr="0.135" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="638" icode="" altcode="" owab="60.920" rscc="0.780" rsr="0.111" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="639" icode="" altcode="" owab="38.640" rscc="0.994" rsr="0.077" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="640" icode="" altcode="" owab="49.960" rscc="0.845" rsr="0.172" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="641" icode="" altcode="" owab="38.390" rscc="0.977" rsr="0.091" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="642" icode="" altcode="" owab="46.370" rscc="0.945" rsr="0.151" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="643" icode="" altcode="" owab="39.840" rscc="0.991" rsr="0.115" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="644" icode="" altcode="" owab="31.020" rscc="0.980" rsr="0.084" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="645" icode="" altcode="" owab="23.040" rscc="0.988" rsr="0.270" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="646" icode="" altcode="" owab="57.030" rscc="0.629" rsr="0.317" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="647" icode="" altcode="" owab="30.520" rscc="0.994" rsr="0.104" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="648" icode="" altcode="" owab="22.250" rscc="0.993" rsr="0.117" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="649" icode="" altcode="" owab="44.540" rscc="0.981" rsr="0.047" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="650" icode="" altcode="" owab="23.240" rscc="0.996" rsr="0.193" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="651" icode="" altcode="" owab="46.930" rscc="0.842" rsr="0.122" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="652" icode="" altcode="" owab="45.540" rscc="0.957" rsr="0.212" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="653" icode="" altcode="" owab="45.180" rscc="0.969" rsr="0.135" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="654" icode="" altcode="" owab="20.100" rscc="0.998" rsr="0.165" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="655" icode="" altcode="" owab="47.450" rscc="0.951" rsr="0.139" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="656" icode="" altcode="" owab="60.650" rscc="0.894" rsr="0.122" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="657" icode="" altcode="" owab="27.370" rscc="0.992" rsr="0.233" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="658" icode="" altcode="" owab="45.680" rscc="0.954" rsr="0.069" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="659" icode="" altcode="" owab="50.330" rscc="0.925" rsr="0.199" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="660" icode="" altcode="" owab="21.830" rscc="0.999" rsr="0.199" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="661" icode="" altcode="" owab="23.210" rscc="0.994" rsr="0.183" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="662" icode="" altcode="" owab="40.970" rscc="0.950" rsr="0.069" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="663" icode="" altcode="" owab="55.340" rscc="0.980" rsr="0.225" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="664" icode="" altcode="" owab="50.830" rscc="0.962" rsr="0.140" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="665" icode="" altcode="" owab="26.180" rscc="0.990" rsr="0.055" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="666" icode="" altcode="" owab="36.850" rscc="0.980" rsr="0.067" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="667" icode="" altcode="" owab="56.030" rscc="0.728" rsr="0.273" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="668" icode="" altcode="" owab="30.150" rscc="0.992" rsr="0.071" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="669" icode="" altcode="" owab="53.130" rscc="0.808" rsr="0.174" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="670" icode="" altcode="" owab="69.510" rscc="0.777" rsr="0.191" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="671" icode="" altcode="" owab="26.750" rscc="0.984" rsr="0.472" avgoccu="0.500"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="672" icode="" altcode="" owab="25.550" rscc="0.995" rsr="0.195" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="673" icode="" altcode="" owab="27.590" rscc="0.990" rsr="0.064" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="674" icode="" altcode="" owab="78.880" rscc="0.491" rsr="0.534" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="675" icode="" altcode="" owab="37.510" rscc="0.922" rsr="0.065" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="676" icode="" altcode="" owab="36.510" rscc="0.993" rsr="0.039" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="677" icode="" altcode="" owab="31.150" rscc="0.982" rsr="0.134" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="678" icode="" altcode="" owab="38.270" rscc="0.976" rsr="0.140" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="679" icode="" altcode="" owab="43.750" rscc="0.963" rsr="0.101" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="680" icode="" altcode="" owab="66.790" rscc="0.965" rsr="0.207" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="681" icode="" altcode="" owab="69.600" rscc="0.883" rsr="0.213" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="682" icode="" altcode="" owab="20.500" rscc="0.995" rsr="0.206" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="683" icode="" altcode="" owab="58.240" rscc="0.907" rsr="0.147" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="684" icode="" altcode="" owab="24.680" rscc="0.993" rsr="0.192" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="685" icode="" altcode="" owab="37.370" rscc="0.957" rsr="0.077" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="686" icode="" altcode="" owab="45.800" rscc="0.990" rsr="0.053" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="687" icode="" altcode="" owab="36.920" rscc="0.976" rsr="0.120" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="688" icode="" altcode="" owab="33.240" rscc="0.981" rsr="0.105" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="689" icode="" altcode="" owab="58.270" rscc="0.942" rsr="0.061" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="690" icode="" altcode="" owab="32.190" rscc="0.989" rsr="0.127" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="691" icode="" altcode="" owab="50.520" rscc="0.838" rsr="0.146" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="692" icode="" altcode="" owab="38.760" rscc="0.866" rsr="0.143" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="693" icode="" altcode="" owab="34.190" rscc="0.991" rsr="0.038" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="694" icode="" altcode="" owab="48.180" rscc="0.954" rsr="0.056" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="695" icode="" altcode="" owab="32.590" rscc="0.956" rsr="0.066" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="696" icode="" altcode="" owab="50.300" rscc="0.974" rsr="0.593" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="697" icode="" altcode="" owab="48.870" rscc="0.935" rsr="0.069" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="698" icode="" altcode="" owab="40.460" rscc="0.950" rsr="0.150" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="699" icode="" altcode="" owab="67.330" rscc="0.876" rsr="0.145" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="700" icode="" altcode="" owab="39.480" rscc="0.990" rsr="0.033" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="701" icode="" altcode="" owab="39.900" rscc="0.942" rsr="0.080" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="702" icode="" altcode="" owab="24.820" rscc="0.994" rsr="0.068" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="703" icode="" altcode="" owab="65.170" rscc="0.962" rsr="0.372" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="704" icode="" altcode="" owab="28.110" rscc="0.990" rsr="0.183" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="705" icode="" altcode="" owab="55.310" rscc="0.915" rsr="0.547" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="706" icode="" altcode="" owab="59.650" rscc="0.832" rsr="0.116" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="707" icode="" altcode="" owab="35.260" rscc="0.954" rsr="0.106" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="708" icode="" altcode="" owab="49.440" rscc="0.927" rsr="0.208" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="709" icode="" altcode="" owab="39.990" rscc="0.985" rsr="0.052" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="710" icode="" altcode="" owab="26.410" rscc="0.990" rsr="0.096" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="711" icode="" altcode="" owab="54.050" rscc="0.908" rsr="0.127" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="712" icode="" altcode="" owab="23.390" rscc="0.983" rsr="0.124" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="713" icode="" altcode="" owab="52.160" rscc="0.929" rsr="0.136" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="714" icode="" altcode="" owab="43.350" rscc="0.938" rsr="0.107" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="715" icode="" altcode="" owab="28.630" rscc="0.980" rsr="0.051" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="716" icode="" altcode="" owab="34.550" rscc="0.943" rsr="0.081" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="717" icode="" altcode="" owab="56.130" rscc="0.890" rsr="0.278" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="718" icode="" altcode="" owab="49.300" rscc="0.980" rsr="0.124" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="719" icode="" altcode="" owab="48.060" rscc="0.945" rsr="0.107" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="720" icode="" altcode="" owab="45.880" rscc="0.932" rsr="0.143" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="721" icode="" altcode="" owab="28.800" rscc="0.995" rsr="0.085" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="722" icode="" altcode="" owab="48.810" rscc="0.905" rsr="0.114" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="723" icode="" altcode="" owab="33.130" rscc="0.984" rsr="0.064" avgoccu="1.000">
+    <clash cid="8" atom="O" dist="2.12" clashmag="0.49"/>
+  </ModelledSubgroup>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="724" icode="" altcode="" owab="39.230" rscc="0.992" rsr="0.111" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="725" icode="" altcode="" owab="51.250" rscc="0.970" rsr="0.157" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="726" icode="" altcode="" owab="29.640" rscc="0.985" rsr="0.083" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="727" icode="" altcode="" owab="57.600" rscc="0.929" rsr="0.070" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="728" icode="" altcode="" owab="50.930" rscc="0.967" rsr="0.055" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="729" icode="" altcode="" owab="53.130" rscc="0.944" rsr="0.219" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="730" icode="" altcode="" owab="56.510" rscc="0.820" rsr="0.122" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="731" icode="" altcode="" owab="27.970" rscc="0.991" rsr="0.220" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="732" icode="" altcode="" owab="52.450" rscc="0.961" rsr="0.119" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="733" icode="" altcode="" owab="56.040" rscc="0.876" rsr="0.299" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="734" icode="" altcode="" owab="26.950" rscc="0.992" rsr="0.149" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="735" icode="" altcode="" owab="38.270" rscc="0.989" rsr="0.051" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="736" icode="" altcode="" owab="45.380" rscc="0.940" rsr="0.169" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="737" icode="" altcode="" owab="64.550" rscc="0.868" rsr="0.166" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="738" icode="" altcode="" owab="61.730" rscc="0.957" rsr="0.098" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="739" icode="" altcode="" owab="62.690" rscc="0.764" rsr="0.228" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="740" icode="" altcode="" owab="31.280" rscc="0.993" rsr="0.066" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="741" icode="" altcode="" owab="75.400" rscc="0.858" rsr="0.153" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="742" icode="" altcode="" owab="56.220" rscc="0.921" rsr="0.497" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="743" icode="" altcode="" owab="45.820" rscc="0.963" rsr="0.174" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="744" icode="" altcode="" owab="56.870" rscc="0.967" rsr="0.107" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="745" icode="" altcode="" owab="79.880" rscc="0.832" rsr="0.425" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="746" icode="" altcode="" owab="47.750" rscc="0.965" rsr="0.092" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="747" icode="" altcode="" owab="48.710" rscc="0.944" rsr="0.226" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="748" icode="" altcode="" owab="63.800" rscc="0.872" rsr="0.282" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="749" icode="" altcode="" owab="60.140" rscc="0.973" rsr="0.229" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="750" icode="" altcode="" owab="55.670" rscc="0.899" rsr="0.236" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="751" icode="" altcode="" owab="59.210" rscc="0.715" rsr="0.198" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="752" icode="" altcode="" owab="53.520" rscc="0.965" rsr="0.256" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="753" icode="" altcode="" owab="27.050" rscc="0.989" rsr="0.081" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="754" icode="" altcode="" owab="52.440" rscc="0.946" rsr="0.169" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="755" icode="" altcode="" owab="74.350" rscc="0.646" rsr="0.179" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="756" icode="" altcode="" owab="24.960" rscc="0.996" rsr="0.167" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="757" icode="" altcode="" owab="32.250" rscc="0.964" rsr="0.185" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="758" icode="" altcode="" owab="59.580" rscc="0.949" rsr="0.333" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="759" icode="" altcode="" owab="66.050" rscc="0.812" rsr="0.147" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="760" icode="" altcode="" owab="51.370" rscc="0.874" rsr="0.140" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="761" icode="" altcode="" owab="80.830" rscc="0.559" rsr="0.377" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="762" icode="" altcode="" owab="52.140" rscc="0.976" rsr="0.177" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="763" icode="" altcode="" owab="51.610" rscc="0.928" rsr="0.088" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="764" icode="" altcode="" owab="66.560" rscc="0.961" rsr="0.104" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="765" icode="" altcode="" owab="41.600" rscc="0.815" rsr="0.110" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="766" icode="" altcode="" owab="52.370" rscc="0.925" rsr="0.404" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="767" icode="" altcode="" owab="45.620" rscc="0.978" rsr="0.286" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="768" icode="" altcode="" owab="77.720" rscc="0.517" rsr="0.169" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="769" icode="" altcode="" owab="61.670" rscc="0.954" rsr="0.083" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="770" icode="" altcode="" owab="64.720" rscc="0.737" rsr="0.098" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="771" icode="" altcode="" owab="69.870" rscc="0.828" rsr="0.225" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="772" icode="" altcode="" owab="53.230" rscc="0.976" rsr="0.056" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="773" icode="" altcode="" owab="36.370" rscc="0.967" rsr="0.099" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="774" icode="" altcode="" owab="64.890" rscc="0.748" rsr="0.076" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="775" icode="" altcode="" owab="78.140" rscc="0.918" rsr="0.175" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="776" icode="" altcode="" owab="62.680" rscc="0.712" rsr="0.192" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="777" icode="" altcode="" owab="69.040" rscc="0.945" rsr="0.067" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="778" icode="" altcode="" owab="59.630" rscc="0.774" rsr="0.085" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="779" icode="" altcode="" owab="68.480" rscc="0.704" rsr="0.381" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="780" icode="" altcode="" owab="67.880" rscc="0.958" rsr="0.218" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="781" icode="" altcode="" owab="48.810" rscc="0.902" rsr="0.121" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="782" icode="" altcode="" owab="69.630" rscc="0.957" rsr="0.123" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="783" icode="" altcode="" owab="60.070" rscc="0.797" rsr="0.187" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="784" icode="" altcode="" owab="55.270" rscc="0.934" rsr="0.246" avgoccu="1.000">
+    <clash cid="9" atom="O" dist="2.10" clashmag="0.51"/>
+  </ModelledSubgroup>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="785" icode="" altcode="" owab="36.590" rscc="0.941" rsr="0.084" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="786" icode="" altcode="" owab="69.200" rscc="0.433" rsr="0.194" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="787" icode="" altcode="" owab="69.710" rscc="0.743" rsr="0.170" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="788" icode="" altcode="" owab="48.920" rscc="0.957" rsr="0.088" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="789" icode="" altcode="" owab="55.700" rscc="0.921" rsr="0.129" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="790" icode="" altcode="" owab="63.690" rscc="0.897" rsr="0.193" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="791" icode="" altcode="" owab="38.850" rscc="0.975" rsr="0.226" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="792" icode="" altcode="" owab="42.070" rscc="0.962" rsr="0.187" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="793" icode="" altcode="" owab="49.050" rscc="0.964" rsr="0.224" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="794" icode="" altcode="" owab="52.570" rscc="0.816" rsr="0.087" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="795" icode="" altcode="" owab="52.510" rscc="0.954" rsr="0.071" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="796" icode="" altcode="" owab="36.090" rscc="0.994" rsr="0.111" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="797" icode="" altcode="" owab="42.860" rscc="0.981" rsr="0.076" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="798" icode="" altcode="" owab="62.290" rscc="0.859" rsr="0.143" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="799" icode="" altcode="" owab="44.690" rscc="0.816" rsr="0.193" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="800" icode="" altcode="" owab="26.460" rscc="0.993" rsr="0.048" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="801" icode="" altcode="" owab="65.490" rscc="0.816" rsr="0.147" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="802" icode="" altcode="" owab="47.920" rscc="0.958" rsr="0.050" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="803" icode="" altcode="" owab="49.800" rscc="0.949" rsr="0.112" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="804" icode="" altcode="" owab="45.170" rscc="0.980" rsr="0.080" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="805" icode="" altcode="" owab="65.620" rscc="0.864" rsr="0.187" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="806" icode="" altcode="" owab="73.880" rscc="0.918" rsr="0.446" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="807" icode="" altcode="" owab="60.170" rscc="0.889" rsr="0.136" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="808" icode="" altcode="" owab="67.520" rscc="0.882" rsr="0.302" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="809" icode="" altcode="" owab="39.520" rscc="0.933" rsr="0.077" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="810" icode="" altcode="" owab="62.500" rscc="0.922" rsr="0.131" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="811" icode="" altcode="" owab="63.950" rscc="0.884" rsr="0.196" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="812" icode="" altcode="" owab="70.490" rscc="0.888" rsr="0.119" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="813" icode="" altcode="" owab="53.040" rscc="0.888" rsr="0.364" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="814" icode="" altcode="" owab="29.110" rscc="0.980" rsr="0.208" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="815" icode="" altcode="" owab="22.590" rscc="0.991" rsr="0.170" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="816" icode="" altcode="" owab="39.090" rscc="0.978" rsr="0.116" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="817" icode="" altcode="" owab="66.510" rscc="0.957" rsr="0.431" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="818" icode="" altcode="" owab="63.920" rscc="0.773" rsr="0.336" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="819" icode="" altcode="" owab="64.110" rscc="0.945" rsr="0.083" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="820" icode="" altcode="" owab="42.970" rscc="0.979" rsr="0.147" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="821" icode="" altcode="" owab="58.020" rscc="0.869" rsr="0.203" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="822" icode="" altcode="" owab="40.980" rscc="0.978" rsr="0.046" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="823" icode="" altcode="" owab="70.890" rscc="0.823" rsr="0.097" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="824" icode="" altcode="" owab="41.870" rscc="0.985" rsr="0.384" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="825" icode="" altcode="" owab="38.020" rscc="0.990" rsr="0.166" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="826" icode="" altcode="" owab="53.770" rscc="0.937" rsr="0.110" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="827" icode="" altcode="" owab="26.890" rscc="0.993" rsr="0.136" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="828" icode="" altcode="" owab="58.940" rscc="0.880" rsr="0.081" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="829" icode="" altcode="" owab="71.470" rscc="0.911" rsr="0.304" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="830" icode="" altcode="" owab="50.240" rscc="0.970" rsr="0.064" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="831" icode="" altcode="" owab="29.290" rscc="0.993" rsr="0.115" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="832" icode="" altcode="" owab="49.900" rscc="0.761" rsr="0.290" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="833" icode="" altcode="" owab="48.080" rscc="0.935" rsr="0.120" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="834" icode="" altcode="" owab="59.430" rscc="0.587" rsr="0.149" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="835" icode="" altcode="" owab="52.220" rscc="0.800" rsr="0.247" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="836" icode="" altcode="" owab="55.040" rscc="0.923" rsr="0.122" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="837" icode="" altcode="" owab="49.930" rscc="0.950" rsr="0.130" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="838" icode="" altcode="" owab="50.270" rscc="0.930" rsr="0.101" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="839" icode="" altcode="" owab="59.950" rscc="0.846" rsr="0.155" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="840" icode="" altcode="" owab="53.790" rscc="0.912" rsr="0.055" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="841" icode="" altcode="" owab="52.060" rscc="0.925" rsr="0.161" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="842" icode="" altcode="" owab="55.460" rscc="0.959" rsr="0.099" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="843" icode="" altcode="" owab="58.290" rscc="0.803" rsr="0.331" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="844" icode="" altcode="" owab="54.290" rscc="0.961" rsr="0.058" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="845" icode="" altcode="" owab="51.550" rscc="0.989" rsr="0.102" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="846" icode="" altcode="" owab="57.790" rscc="0.973" rsr="0.209" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="847" icode="" altcode="" owab="68.690" rscc="0.615" rsr="0.449" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="848" icode="" altcode="" owab="43.620" rscc="0.966" rsr="0.056" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="849" icode="" altcode="" owab="64.860" rscc="0.873" rsr="0.208" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="850" icode="" altcode="" owab="43.160" rscc="0.981" rsr="0.169" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="851" icode="" altcode="" owab="49.170" rscc="0.953" rsr="0.201" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="852" icode="" altcode="" owab="51.140" rscc="0.886" rsr="0.090" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="853" icode="" altcode="" owab="71.450" rscc="0.798" rsr="0.206" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="854" icode="" altcode="" owab="72.260" rscc="0.925" rsr="0.074" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="855" icode="" altcode="" owab="57.720" rscc="0.829" rsr="0.173" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="856" icode="" altcode="" owab="49.810" rscc="0.937" rsr="0.152" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="857" icode="" altcode="" owab="45.540" rscc="0.953" rsr="0.090" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="858" icode="" altcode="" owab="52.220" rscc="0.930" rsr="0.290" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="859" icode="" altcode="" owab="62.000" rscc="0.931" rsr="0.060" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="860" icode="" altcode="" owab="72.570" rscc="0.793" rsr="0.226" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="861" icode="" altcode="" owab="50.970" rscc="0.933" rsr="0.062" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="862" icode="" altcode="" owab="68.190" rscc="0.476" rsr="0.207" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="863" icode="" altcode="" owab="79.970" rscc="0.931" rsr="0.479" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="864" icode="" altcode="" owab="66.000" rscc="0.698" rsr="0.134" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="865" icode="" altcode="" owab="60.050" rscc="0.898" rsr="0.157" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="866" icode="" altcode="" owab="62.150" rscc="0.903" rsr="0.199" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="867" icode="" altcode="" owab="40.280" rscc="0.906" rsr="0.101" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="868" icode="" altcode="" owab="64.830" rscc="0.624" rsr="0.203" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="869" icode="" altcode="" owab="47.680" rscc="0.855" rsr="0.101" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="870" icode="" altcode="" owab="66.380" rscc="0.782" rsr="0.127" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="871" icode="" altcode="" owab="71.970" rscc="0.926" rsr="0.051" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="872" icode="" altcode="" owab="64.430" rscc="0.506" rsr="0.234" avgoccu="1.000"/>
+  <ModelledSubgroup model="1" chain="A" said="H" ent="5" resname="HOH" seq="" resnum="873" icode="" altcode="" owab="63.840" rscc="0.839" rsr="0.134" avgoccu="1.000"/>
+  <ModelledEntityInstance model="1" chain="A" said="A" ent="1" absolute_RSRZ_percentile="12.71" relative_RSRZ_percentile="13.83" absolute_rama_percentile="40.70" relative_rama_percentile="18.10" absolute_sidechain_percentile="81.28" relative_sidechain_percentile="64.24" angles_rmsz="0.75" bonds_rmsz="0.63" num_angles_rmsz="3472" num_bonds_rmsz="2539"/>
+  <programs>
+    <program name="validation-pipeline" properties="PDB-revision-date,pdbid,attemptedValidationSteps,PDB-resolution-low,XMLcreationDate,PDB-revision-number,percentilebins,protein-DNA-RNA-entities,PDB-resolution,PDB-R,PDB-deposition-date,PDB-Rfree" version="2.29"/>
+    <program name="validation-pack" properties="symm-clash" version="unknown"/>
+    <program name="molprobity" properties="psi,rama,num-H-reduce,bond-outlier,bonds_rmsz,num_bonds_rmsz,num_angles_rmsz,angle-outlier,absolute_rama_percentile,relative_rama_percentile,percent-rota-outliers,cis_peptide,clash,rota,clashscore,phi,percent-rama-outliers,relative_sidechain_percentile,RestypesNotcheckedForBondAngleGeometry,angles_rmsz,absolute_sidechain_percentile" version="4.02b-467"/>
+    <program name="xtriage" properties="xtriage_input_columns,TwinFraction,WilsonBestimate,centric_outliers,DataAnisotropy,acentric_outliers,TwinL,IoverSigma,TwinL2,WilsonBaniso,numMillerIndices,TransNCS" version="1.13"/>
+    <program name="eds" properties="rsr,NatomsEDS,percent-free-reflections,percent-RSRZ-outliers,RefmacVersion,DataCompleteness,rscc,owab,CCP4version,num-free-reflections,avgoccu,relative_RSRZ_percentile,EDS_resolution,rsrz,EDS_R,absolute_RSRZ_percentile,Fo_Fc_correlation,EDS_resolution_low" version="2.29"/>
+    <program name="dcc" properties="DCC_refinement_program,DCC_Rfree,DCC_R,B_factor_type" version="2.26  (2020-01-20)"/>
+    <program name="mogul" properties="mogul-torsion-outlier,mogul-bond-outlier,mogul-angle-outlier,mogul-ring-outlier,mogul_rmsz_numbonds,mogul_bonds_rmsz,mogul_rmsz_numangles,mogul_angles_rmsz" version="1.8.4, CSD as541be (2020)"/>
+    <program name="buster-report" properties="ligands-for-buster-report" version="1.1.7 (2018)"/>
+    <program name="percentiles" properties="high-resol-relative-percentile-percent-rama-outliers,low-resol-relative-percentile-DCC_Rfree,high-resol-relative-percentile-clashscore,numPDBids-absolute-percentile-DCC_Rfree,numPDBids-absolute-percentile-clashscore,absolute-percentile-DCC_Rfree,numPDBids-absolute-percentile-percent-rota-outliers,numPDBids-relative-percentile-clashscore,high-resol-relative-percentile-DCC_Rfree,numPDBids-absolute-percentile-percent-rama-outliers,low-resol-relative-percentile-percent-rama-outliers,low-resol-relative-percentile-percent-RSRZ-outliers,absolute-percentile-percent-rota-outliers,absolute-percentile-percent-RSRZ-outliers,numPDBids-relative-percentile-DCC_Rfree,relative-percentile-DCC_Rfree,relative-percentile-clashscore,numPDBids-relative-percentile-percent-rama-outliers,numPDBids-absolute-percentile-percent-RSRZ-outliers,numPDBids-relative-percentile-percent-RSRZ-outliers,numPDBids-relative-percentile-percent-rota-outliers,relative-percentile-percent-rama-outliers,absolute-percentile-percent-rama-outliers,low-resol-relative-percentile-percent-rota-outliers,high-resol-relative-percentile-percent-RSRZ-outliers,low-resol-relative-percentile-clashscore,high-resol-relative-percentile-percent-rota-outliers,relative-percentile-percent-RSRZ-outliers,relative-percentile-percent-rota-outliers,absolute-percentile-clashscore" version="20191225.v01 (using entries in the PDB archive December 25th 2019)"/>
+  </programs>
+</wwPDB-validation-information>
