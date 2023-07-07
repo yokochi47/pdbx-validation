@@ -206,7 +206,7 @@ File path | Document
 
 ## Release notes
 
-- **Jul 5, 2023**: Release v4.4.23
+- **Jul 7, 2023**: Release v4.4.23
 	- Update wwPDB Validation Information Dictionary to 4.373.
 	- Support NMR restraint remediation.
 	- Set _diffrn.pdbx_serial_crystal_experiment is not mandatory.

@@ -66,6 +66,7 @@ get_resource() {
    pdbml_file=$WORK_DIR/$PDBML/$pdb_id-noatom.xml
    sifts_xml_file=$WORK_DIR/$SIFTS_XML/$pdb_id.xml
    pdbml_nextgen_file=$WORK_DIR/$NEXTGEN/$NEXTGEN_FILE_PREFIX$pdb_id$NEXTGEN_FILE_SUFFIX.xml
+   info_file=$WORK_DIR/$VALID_INFO/$pdb_id"_validation.xml"
 
    if [ ! -e $pdbml_file ] ; then
 
@@ -82,6 +83,12 @@ get_resource() {
    if [ ! -e $pdbml_nextgen_file ] ; then
 
     wget https://files-nextgen.wwpdb.org/pdb_nextgen/data/entries/divided/${pdb_id:1:2}/$NEXTGEN_FILE_PREFIX$pdb_id/$NEXTGEN_FILE_PREFIX$pdb_id$NEXTGEN_FILE_SUFFIX.xml.gz -P $WORK_DIR/nextgen; gunzip $pdbml_nextgen_file
+
+   fi
+
+   if [ ! -e $info_file ] ; then
+
+    wget https://files.wwpdb.org/pub/pdb/validation_reports/${pdb_id:1:2}/$pdb_id/$pdb_id"_validation.xml.gz" -P $WORK_DIR/$VALID_INFO; gunzip $info_file.gz
 
    fi
 

@@ -4007,21 +4007,27 @@ Unmatched components exist in residue_string, <xsl:value-of select="position()"/
       <xsl:when test="matches($atoms,'^[0-9A-Z],[0-9A-Z],.*')">
 	<xsl:analyze-string select="$atoms" regex="([0-9A-Z]),([0-9A-Z]),(.*)">
 	  <xsl:matching-substring>
-	    <xsl:value-of select="concat(regex-group(1),'_',regex-group(2),',',regex-group(3))"/>
+	    <xsl:call-template name="correct_atoms">
+	      <xsl:with-param name="atoms"><xsl:value-of select="concat(regex-group(1),'_',regex-group(2),',',regex-group(3))"/></xsl:with-param>
+	    </xsl:call-template>
 	  </xsl:matching-substring>
 	</xsl:analyze-string>
       </xsl:when>
       <xsl:when test="matches($atoms,',[0-9A-Z],[0-9A-Z]$')">
 	<xsl:analyze-string select="$atoms" regex="(.*),([0-9A-Z]),([0-9A-Z])$">
 	  <xsl:matching-substring>
-	    <xsl:value-of select="concat(regex-group(1),',',regex-group(2),'_',regex-group(3))"/>
+	    <xsl:call-template name="correct_atoms">
+	      <xsl:with-param name="atoms"><xsl:value-of select="concat(regex-group(1),',',regex-group(2),'_',regex-group(3))"/></xsl:with-param>
+	    </xsl:call-template>
 	  </xsl:matching-substring>
 	</xsl:analyze-string>
       </xsl:when>
       <xsl:when test="matches($atoms,',[0-9A-Z],[0-9A-Z],')">
 	<xsl:analyze-string select="$atoms" regex="(.*),([0-9A-Z]),([0-9A-Z]),(.*)">
 	  <xsl:matching-substring>
-	    <xsl:value-of select="concat(regex-group(1),',',regex-group(2),'_',regex-group(3),',',regex-group(4))"/>
+	    <xsl:call-template name="correct_atoms">
+	      <xsl:with-param name="atoms"><xsl:value-of select="concat(regex-group(1),',',regex-group(2),'_',regex-group(3),',',regex-group(4))"/></xsl:with-param>
+	    </xsl:call-template>
 	  </xsl:matching-substring>
 	</xsl:analyze-string>
       </xsl:when>
