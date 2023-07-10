@@ -58,12 +58,13 @@ do
 
   pdb_id=`basename $pdbml_vrpt_gz_file -validation-full.xml.gz`
   pdbml_vrpt_file=../${pdbml_vrpt_gz_file%.*} # remove the last '.gz'
+  pdbml_vrpt_base=`basename $pdbml_vrpt_file`
   mmcif_vrpt_file=$pdb_id-validation-full.cif
   div_dir=$WORK_DIR/${pdb_id:1:2}
 
   if [ ! -e $WORK_DIR/$mmcif_vrpt_file ] && [ ! -e $div_dir/`basename $mmcif_vrpt_file`.gz ] ; then
 
-   ( cd $WORK_DIR ; gunzip -c ../$pdbml_vrpt_gz_file > $pdbml_vrpt_file ; xml2mmcif -xml $pdbml_vrpt_file -dict $pdbx_validation_dic -df $pdbx_validation_odb > /dev/null && ( rm -f $pdbml_vrpt_file && mv -f $pdbml_vrpt_file.cif $mmcif_vrpt_file && sed -i -e "s/\._\([0-9]\)\(\S*\) /\.\1\2  /" $mmcif_vrpt_file ) || ( rm -f $pdbml_vrpt_file ; exit 1 ) )
+   ( cd $WORK_DIR ; gunzip -c ../$pdbml_vrpt_gz_file > $pdbml_vrpt_base ; xml2mmcif -xml $pdbml_vrpt_base -dict $pdbx_validation_dic -df $pdbx_validation_odb > /dev/null && ( rm -f $pdbml_vrpt_base && mv -f $pdbml_vrpt_base.cif $mmcif_vrpt_file && sed -i -e "s/\._\([0-9]\)\(\S*\) /\.\1\2  /" $mmcif_vrpt_file ) || ( rm -f $pdbml_vrpt_base ; exit 1 ) )
 
    mk_div_dir $div_dir
 

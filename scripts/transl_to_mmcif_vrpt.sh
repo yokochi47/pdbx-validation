@@ -24,7 +24,7 @@ fi
 
 mkdir -p $MMCIF_VALID
 
-for dicfile in $pdbx_validation_dic $pdbx_validation_odb $pdbx_validation_sdb ; do
+for dicfile in $pdbx_validation_dic $pdbx_validation_odb $pdbx_validation_sdb $pdbx_validation_xsd ; do
 
  if [ ! -e $MMCIF_VALID/$dicfile ] ; then
   ( cd $MMCIF_VALID; ln -s ../schema/$dicfile . )
@@ -69,7 +69,7 @@ if [ -e $XML_VALID/$pdbx_validation_xsd ] ; then
  rm $XML_VALID/$pdbx_validation_xsd
 fi
 
-for dicfile in $pdbx_validation_dic $pdbx_validation_odb $pdbx_validation_sdb PdbMlParser.log ; do
+for dicfile in $pdbx_validation_dic $pdbx_validation_odb $pdbx_validation_sdb $pdbx_validation_xsd PdbMlParser.log ; do
 
  if [ -e $MMCIF_VALID/$dicfile ] ; then
   rm $MMCIF_VALID/$dicfile

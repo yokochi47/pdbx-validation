@@ -57,12 +57,13 @@ do
   fi
 
   pdb_id=`basename $pdbml_vrpt_file -validation-full.xml`
+  pdbml_vrpt_base=`basename $pdbml_vrpt_file`
   mmcif_vrpt_file=$pdb_id-validation-full.cif
   div_dir=$WORK_DIR/${pdb_id:1:2}
 
   if [ ! -e $WORK_DIR/$mmcif_vrpt_file ] && [ ! -e $div_dir/`basename mmcif_vrpt_file`.gz ] ; then
 
-   ( cd $WORK_DIR ; xml2mmcif -xml ../$pdbml_vrpt_file -dict $pdbx_validation_dic -df $pdbx_validation_odb > /dev/null && mv -f ../$pdbml_vrpt_file.cif $mmcif_vrpt_file && sed -i -e "s/\._\([0-9]\)\(\S*\) /\.\1\2  /" $mmcif_vrpt_file )
+   ( cd $WORK_DIR ; ln -s ../$pdbml_vrpt_file . ; xml2mmcif -xml $pdbml_vrpt_base -dict $pdbx_validation_dic -df $pdbx_validation_odb > /dev/null && rm -f $pdbml_vrpt_base && mv -f ../$pdbml_vrpt_base.cif $mmcif_vrpt_file && sed -i -e "s/\._\([0-9]\)\(\S*\) /\.\1\2  /" $mmcif_vrpt_file )
 
    mk_div_dir $div_dir
 
