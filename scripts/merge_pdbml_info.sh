@@ -60,7 +60,7 @@ if [ $err != 0 ] || [ $total != $last ] ; then
 
  pdbml_file_list=merge_pdbml_file_list
 
- find $PDBML_EXT -maxdepth 1 -name '*.xml.gz' > $pdbml_file_list
+ find $PDBML_EXT -maxdepth 1 -name '*.xml.gz' | sort -R > $pdbml_file_list
 
  for proc_id in `seq 1 $MAXPROCS` ; do
 

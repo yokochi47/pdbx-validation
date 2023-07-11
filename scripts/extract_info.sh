@@ -50,8 +50,8 @@ if [ $err != 0 ] || [ $total != $last ] ; then
 
  info_file_list=extract_info_file_list
 
-# find $VALID_INFO -maxdepth 1 -name '*.xml' > $info_file_list
- find $VALID_REPORT -maxdepth 3 -name '*_validation.xml.gz' > $info_file_list
+# find $VALID_INFO -maxdepth 1 -name '*.xml' | sort -R > $info_file_list
+ find $VALID_REPORT -maxdepth 3 -name '*_validation.xml.gz' | sort -R > $info_file_list
 
  for proc_id in `seq 1 $MAXPROCS` ; do
 
