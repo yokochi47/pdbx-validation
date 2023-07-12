@@ -4,8 +4,9 @@ source ./scripts/env.sh
 
 CHK_SUM_DIR=
 FILE_LIST=
+TOTAL=
 
-ARGV=`getopt --long -o "c:l:n:" "$@"`
+ARGV=`getopt --long -o "c:l:n:t:" "$@"`
 eval set -- "$ARGV"
 while true ; do
  case "$1" in
@@ -19,6 +20,10 @@ while true ; do
  ;;
  -n)
   PROC_INFO=$2
+  shift
+ ;;
+ -t)
+  TOTAL=$2
   shift
  ;;
  *)
@@ -39,8 +44,9 @@ MAXPROCS=`echo $PROC_INFO | cut -d 'f' -f 2`
 PROC_ID=`echo $PROC_INFO | cut -d 'o' -f 1`
 PROC_ID=$(($PROC_ID - 1))
 
+# TOTAL=`wc -l < $FILE_LIST`
+
 proc_id=0
-total=`wc -l < $FILE_LIST`
 
 chk_sum_dir=`readlink -f $CHK_SUM_DIR`
 
@@ -65,7 +71,7 @@ do
   if [ $chk_sum_file -nt $sifts_xml_file ] ; then
 
    if [ $proc_id_mod -eq 0 ] ; then
-    echo -e -n "\rDone "$((proc_id + 1)) of $total ...
+    echo -e -n "\rDone "$((proc_id + 1)) of $TOTAL ...
    fi
 
    let proc_id++
@@ -87,7 +93,7 @@ do
     fi
 
     if [ $proc_id_mod -eq 0 ] ; then
-     echo -e -n "\rDone "$((proc_id + 1)) of $total ...
+     echo -e -n "\rDone "$((proc_id + 1)) of $TOTAL ...
     fi
 
     let proc_id++
@@ -108,7 +114,7 @@ do
   fi
 
   if [ $proc_id_mod -eq 0 ] ; then
-   echo -e -n "\rDone "$((proc_id + 1)) of $total ...
+   echo -e -n "\rDone "$((proc_id + 1)) of $TOTAL ...
   fi
 
  fi

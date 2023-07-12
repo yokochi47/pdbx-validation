@@ -4,9 +4,10 @@ source ./scripts/env.sh
 
 CHK_SUM_DIR=
 FILE_LIST=
+TOTAL=
 DELETE=false
 
-ARGV=`getopt --long -o "c:s:l:n:r" "$@"`
+ARGV=`getopt --long -o "c:s:l:n:t:r" "$@"`
 eval set -- "$ARGV"
 while true ; do
  case "$1" in
@@ -24,6 +25,10 @@ while true ; do
  ;;
  -n)
   PROC_INFO=$2
+  shift
+ ;;
+ -t)
+  TOTAL=$2
   shift
  ;;
  -r)
@@ -47,8 +52,9 @@ MAXPROCS=`echo $PROC_INFO | cut -d 'f' -f 2`
 PROC_ID=`echo $PROC_INFO | cut -d 'o' -f 1`
 PROC_ID=$(($PROC_ID - 1))
 
+# TOTAL=`wc -l < $FILE_LIST`
+
 proc_id=0
-total=`wc -l < $FILE_LIST`
 
 chk_sum_dir=`readlink -f $CHK_SUM_DIR`
 
@@ -73,7 +79,7 @@ do
   if [ $chk_sum_file -nt $cif_gz_file ] ; then
 
    if [ $proc_id_mod -eq 0 ] ; then
-    echo -e -n "\rDone "$((proc_id + 1)) of $total ...
+    echo -e -n "\rDone "$((proc_id + 1)) of $TOTAL ...
    fi
 
    let proc_id++
@@ -97,7 +103,7 @@ do
     fi
 
     if [ $proc_id_mod -eq 0 ] ; then
-     echo -e -n "\rDone "$((proc_id + 1)) of $total ...
+     echo -e -n "\rDone "$((proc_id + 1)) of $TOTAL ...
     fi
 
     let proc_id++
@@ -121,7 +127,7 @@ do
   ( cd $cif_dir ; [ ! -e $diag_log ] && [ ! -e $parser_log ] && ( rm -f $cif_file ; echo $new_chk_sum > $chk_sum_file ) ; [ -e $parser_log ] && ( [ $DELETE = "true" ] && rm -f $cif_file.gz $cif_file ; cat $diag_log ) )
 
   if [ $proc_id_mod -eq 0 ] ; then
-   echo -e -n "\rDone "$((proc_id + 1)) of $total ...
+   echo -e -n "\rDone "$((proc_id + 1)) of $TOTAL ...
   fi
 
  fi

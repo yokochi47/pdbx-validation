@@ -4,7 +4,7 @@ source ./scripts/env.sh
 
 WORK_DIR=
 FILE_LIST=
-
+TOTAL=
 VALIDATE=false
 
 ARGV=`getopt --long -o "d:l:n:t:v" "$@"`
@@ -24,7 +24,7 @@ while true ; do
   shift
  ;;
  -t)
-  total=$2
+  TOTAL=$2
   shift
  ;;
  -v)
@@ -48,7 +48,7 @@ MAXPROCS=`echo $PROC_INFO | cut -d 'f' -f 2`
 PROC_ID=`echo $PROC_INFO | cut -d 'o' -f 1`
 PROC_ID=$(($PROC_ID - 1))
 
-# total=`wc -l < $FILE_LIST`
+# TOTAL=`wc -l < $FILE_LIST`
 
 proc_id=0
 
@@ -104,7 +104,7 @@ do
   fi
 
   if [ $proc_id_mod -eq 0 ] ; then
-   echo -e -n "\rDone "$((proc_id + 1)) of $total ...
+   echo -e -n "\rDone "$((proc_id + 1)) of $TOTAL ...
   fi
 
   rm -f $lock_file

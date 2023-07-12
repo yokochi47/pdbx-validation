@@ -102,13 +102,15 @@ do
 
  done
 
+ total=`find $SRC_DIR/$subdir -name "*.cif" | wc -l 2> /dev/null`
+
  cif_bird_file_list=cif_bird_file_list
 
  find $SRC_DIR/$subdir -name "*.cif" > $cif_bird_file_list
 
  for proc_id in `seq 1 $MAXPROCS` ; do
 
-  ./scripts/transl_to_pdbml_bird_worker.sh -d $DST_DIR -l $cif_bird_file_list -n $proc_id"of"$MAXPROCS &
+  ./scripts/transl_to_pdbml_bird_worker.sh -d $DST_DIR -l $cif_bird_file_list -n $proc_id"of"$MAXPROCS -t $total &
 
  done
 

@@ -164,6 +164,8 @@ for dicfile in $pdbx_dic $pdbx_odb $pdbx_sdb ; do
 
 done
 
+total=`find $SRC_DIR -name '*.cif' | wc -l 2> /dev/null`
+
 cif_cc_file_list=cif_cc_file_list
 
 find $SRC_DIR -name "*.cif" > $cif_cc_file_list
@@ -183,7 +185,7 @@ done < $cif_cc_file_list
 REMARK
 for proc_id in `seq 1 $MAXPROCS` ; do
 
- ./scripts/transl_to_pdbml_cc_worker.sh -d $XML_CC -l $cif_cc_file_list -n $proc_id"of"$MAXPROCS &
+ ./scripts/transl_to_pdbml_cc_worker.sh -d $XML_CC -l $cif_cc_file_list -n $proc_id"of"$MAXPROCS -t $total &
 
 done
 

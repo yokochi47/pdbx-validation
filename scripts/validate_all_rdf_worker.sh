@@ -4,9 +4,10 @@ source ./scripts/env.sh
 
 CHK_SUM_DIR=
 FILE_LIST=
+TOTAL=
 DELETE=false
 
-ARGV=`getopt --long -o "c:l:n:r" "$@"`
+ARGV=`getopt --long -o "c:l:n:t:r" "$@"`
 eval set -- "$ARGV"
 while true ; do
  case "$1" in
@@ -20,6 +21,10 @@ while true ; do
  ;;
  -n)
   PROC_INFO=$2
+  shift
+ ;;
+ -t)
+  TOTAL=$2
   shift
  ;;
  -r)
@@ -43,8 +48,9 @@ MAXPROCS=`echo $PROC_INFO | cut -d 'f' -f 2`
 PROC_ID=`echo $PROC_INFO | cut -d 'o' -f 1`
 PROC_ID=$(($PROC_ID - 1))
 
+# TOTAL=`wc -l < $FILE_LIST`
+
 proc_id=0
-total=`wc -l < $FILE_LIST`
 
 while read rdf_file
 do
@@ -67,7 +73,7 @@ do
   if [ $chk_sum_file -nt $rdf_file ] ; then
 
    if [ $proc_id_mod -eq 0 ] ; then
-    echo -e -n "\rDone "$((proc_id + 1)) of $total ...
+    echo -e -n "\rDone "$((proc_id + 1)) of $TOTAL ...
    fi
 
    let proc_id++
@@ -89,7 +95,7 @@ do
     fi
 
     if [ $proc_id_mod -eq 0 ] ; then
-     echo -e -n "\rDone "$((proc_id + 1)) of $total ...
+     echo -e -n "\rDone "$((proc_id + 1)) of $TOTAL ...
     fi
 
     let proc_id++
@@ -106,7 +112,7 @@ do
   rapper -q -c $rdf_file 2> $err_file && ( rm -f $err_file ; echo $new_chk_sum > $chk_sum_file ) || ( [ $DELETE = "true" ] && rm -f $rdf_file ; cat $err_file )
 
   if [ $proc_id_mod -eq 0 ] ; then
-   echo -e -n "\rDone "$((proc_id + 1)) of $total ...
+   echo -e -n "\rDone "$((proc_id + 1)) of $TOTAL ...
   fi
 
  fi

@@ -50,7 +50,7 @@ if [ $err != 0 ] || [ $total != $last ] ; then
 
  for proc_id in `seq 1 $MAXPROCS` ; do
 
-  ./scripts/transl_to_rdf_cc_worker.sh -d $RDF_CC -l $pdbml_file_list -n $proc_id"of"$MAXPROCS &
+  ./scripts/transl_to_rdf_cc_worker.sh -d $RDF_CC -l $pdbml_file_list -n $proc_id"of"$MAXPROCS -t $total &
 
  done
 

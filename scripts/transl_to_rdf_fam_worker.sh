@@ -4,8 +4,9 @@ source ./scripts/env.sh
 
 WORK_DIR=
 FILE_LIST=
+TOTAL=
 
-ARGV=`getopt --long -o "d:l:n:" "$@"`
+ARGV=`getopt --long -o "d:l:n:t:" "$@"`
 eval set -- "$ARGV"
 while true ; do
  case "$1" in
@@ -19,6 +20,10 @@ while true ; do
  ;;
  -n)
   PROC_INFO=$2
+  shift
+ ;;
+ -t)
+  TOTAL=$2
   shift
  ;;
  *)
@@ -39,8 +44,9 @@ MAXPROCS=`echo $PROC_INFO | cut -d 'f' -f 2`
 PROC_ID=`echo $PROC_INFO | cut -d 'o' -f 1`
 PROC_ID=$(($PROC_ID - 1))
 
+# TOTAL=`wc -l < $FILE_LIST`
+
 proc_id=0
-total=`wc -l < $FILE_LIST`
 
 while read pdbml_file
 do
@@ -78,7 +84,7 @@ do
   fi
 
   if [ $proc_id_mod -eq 0 ] ; then
-   echo -e -n "\rDone "$((proc_id + 1)) of $total ...
+   echo -e -n "\rDone "$((proc_id + 1)) of $TOTAL ...
   fi
 
  fi
