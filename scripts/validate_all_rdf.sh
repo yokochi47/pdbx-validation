@@ -50,12 +50,15 @@ if [ -d $RDF_DIR ] ; then
 
   find $RDF_DIR -maxdepth 1 -name '*.rdf' > $rdf_file_list
 
+  rm -f $RDF_DIR/*.lock
+  cat $rdf_file_list | sort -R > $rdf_file_list~
+
   for proc_id in `seq 1 $MAXPROCS` ; do
 
    if [ $DELETE = "true" ] ; then
-    ./scripts/validate_all_rdf_worker.sh -c $CHK_SUM_DIR -l $rdf_file_list -n $proc_id"of"$MAXPROCS -t $total -r &
+    ./scripts/validate_all_rdf_worker.sh -c $CHK_SUM_DIR -d $RDF_DIR -l $rdf_file_list -n $proc_id"of"$MAXPROCS -t $total -r &
    else
-    ./scripts/validate_all_rdf_worker.sh -c $CHK_SUM_DIR -l $rdf_file_list -n $proc_id"of"$MAXPROCS -t $total &
+    ./scripts/validate_all_rdf_worker.sh -c $CHK_SUM_DIR -d $RDF_DIR -l $rdf_file_list -n $proc_id"of"$MAXPROCS -t $total &
    fi
 
   done
@@ -71,7 +74,7 @@ if [ -d $RDF_DIR ] ; then
 
   echo
 
-  rm -f $rdf_file_list
+  rm -f $rdf_file_list $rdf_file_list~
 
   red='\e[0;31m'
   normal='\e[0m'

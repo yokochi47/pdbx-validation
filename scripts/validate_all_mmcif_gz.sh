@@ -57,12 +57,15 @@ if [ -d $MMCIF_DIR ] ; then
 
   find $MMCIF_DIR -mindepth 2 -name '*.cif.gz' > $cif_file_list
 
+  rm -f $MMCIF_DIR/*.lock
+  cat $cif_file_list | sort -R > $cif_file_list~
+
   for proc_id in `seq 1 $MAXPROCS` ; do
 
    if [ $DELETE = "true" ] ; then
-    ./scripts/validate_all_mmcif_gz_worker.sh -c $CHK_SUM_DIR -s $dict_sdb -l $cif_file_list -n $proc_id"of"$MAXPROCS -t $total -r &
+    ./scripts/validate_all_mmcif_gz_worker.sh -c $CHK_SUM_DIR -d $MMCIF_DIR -s $dict_sdb -l $cif_file_list -n $proc_id"of"$MAXPROCS -t $total -r &
    else
-    ./scripts/validate_all_mmcif_gz_worker.sh -c $CHK_SUM_DIR -s $dict_sdb -l $cif_file_list -n $proc_id"of"$MAXPROCS -t $total &
+    ./scripts/validate_all_mmcif_gz_worker.sh -c $CHK_SUM_DIR -d $MMCIF_DIR -s $dict_sdb -l $cif_file_list -n $proc_id"of"$MAXPROCS -t $total &
    fi
 
   done
@@ -78,7 +81,7 @@ if [ -d $MMCIF_DIR ] ; then
 
   echo
 
-  rm -f $cif_file_list
+  rm -f $cif_file_list $cif_file_list~
 
   for dicfile in $pdbx_validation_dic $pdbx_validation_odb $pdbx_validation_sdb ; do
 

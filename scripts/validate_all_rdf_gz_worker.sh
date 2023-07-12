@@ -3,16 +3,21 @@
 source ./scripts/env.sh
 
 CHK_SUM_DIR=
+WORK_DIR=
 FILE_LIST=
 TOTAL=
 DELETE=false
 
-ARGV=`getopt --long -o "c:l:n:t:r" "$@"`
+ARGV=`getopt --long -o "c:d:l:n:t:r" "$@"`
 eval set -- "$ARGV"
 while true ; do
  case "$1" in
  -c)
   CHK_SUM_DIR=$2
+  shift
+ ;;
+ -d)
+  WORK_DIR=$2
   shift
  ;;
  -l)
@@ -109,6 +114,10 @@ do
   rdf_dir=`dirname $rdf_gz_file`
   rdf_file=$rdf_dir/`basename $rdf_gz_file .gz`
   err_file=$rdf_dir/validate_$rdf_label.err
+  entry_id=`cat $rdf_label | cut -d '-' -f 1`
+  lock_file=$WORK_DIR/$entry_id.lock
+
+  touch $lock_file
 
   gunzip -c $rdf_gz_file > $rdf_file || exit 1
 
@@ -118,9 +127,79 @@ do
    echo -e -n "\rDone "$((proc_id + 1)) of $TOTAL ...
   fi
 
+  rm -f $lock_file
+
  fi
 
  let proc_id++
 
 done < $FILE_LIST
+
+proc_id=0
+
+while read rdf_gz_file
+do
+
+ proc_id_mod=$(($proc_id % $MAXPROCS))
+
+ if [ $proc_id_mod = $PROC_ID ] ; then
+
+  if [ ! -e $rdf_gz_file ] ; then
+
+   let proc_id++
+   continue
+
+  fi
+
+  rdf_label=`basename $rdf_gz_file`
+
+  chk_sum_file=$CHK_SUM_DIR/$rdf_label.md5
+
+  if [ $chk_sum_file -nt $rdf_gz_file ] ; then
+
+   let proc_id++
+
+   continue
+
+  fi
+
+  new_chk_sum=`md5sum $rdf_gz_file | cut -d ' ' -f 1`
+
+  if [ -e $chk_sum_file ] ; then
+
+   old_chk_sum=`head -n 1 $chk_sum_file`
+
+   if [ "$old_chk_sum" = "$new_chk_sum" ] ; then
+
+    if [ $chk_sum_file -ot $rdf_gz_file ] ; then
+     touch $chk_sum_file
+    fi
+
+    let proc_id++
+
+    continue
+
+   fi
+
+  fi
+
+  rdf_dir=`dirname $rdf_gz_file`
+  rdf_file=$rdf_dir/`basename $rdf_gz_file .gz`
+  err_file=$rdf_dir/validate_$rdf_label.err
+  entry_id=`cat $rdf_label | cut -d '-' -f 1`
+  lock_file=$WORK_DIR/$entry_id.lock
+
+  if [ ! -e $lock_file ] ; then
+
+  gunzip -c $rdf_gz_file > $rdf_file || exit 1
+
+  rapper -q -c $rdf_file 2> $err_file && ( rm -f $rdf_file $err_file ; echo $new_chk_sum > $chk_sum_file ) || ( [ $DELETE = "true" ] && rm -f $rdf_gz_file $rdf_file ; cat $err_file )
+
+  fi
+
+ fi
+
+ let proc_id++
+
+done < $FILE_LIST~
 
