@@ -2822,7 +2822,18 @@ Unmatched components exist in WilsonBaniso, <xsl:value-of select="position()"/>,
 	  </xsl:if>
 	  <xsl:variable name="wavelength"><xsl:value-of select="$ext_datablock/VRPTx:diffrn_radiation_wavelengthCategory/VRPTx:diffrn_radiation_wavelength[1]/VRPTx:wavelength"/></xsl:variable>
 	  <xsl:if test="$wavelength!=''">
-	    <xsl:element name="VRPTx:wavelength"><xsl:value-of select="$wavelength"/></xsl:element>
+	    <xsl:choose>
+	      <xsl:when test="string-length($wavelength)-string-length(translate($wavelength,' ',''))&gt;0">
+		<xsl:for-each select="tokenize($wavelength,' ')">
+		  <xsl:if test="position()=1">
+		    <xsl:element name="VRPTx:wavelength"><xsl:value-of select="."/></xsl:element>
+		  </xsl:if>
+		</xsl:for-each>
+	      </xsl:when>
+	      <xsl:otherwise>
+		<xsl:element name="VRPTx:wavelength"><xsl:value-of select="$wavelength"/></xsl:element>
+	      </xsl:otherwise>
+	    </xsl:choose>
 	  </xsl:if>
 <!-- unmapped data items
 <VRPTx:B_wilson_scale> xsd:decimal </VRPTx:B_wilson_scale> [0..1]
