@@ -68,12 +68,15 @@ if [ $err != 0 ] || [ $total != $last ] ; then
 
  pdbml_file_list=extract_pdbml_file_list
 
- #find $PDBML_NOATOM -maxdepth 2 -name '*-noatom.xml.gz' | sort -R > $pdbml_file_list
- find $PDBML_NOATOM_SIFTS -maxdepth 2 -name '*-noatom-sifts.xml.gz' | sort -R > $pdbml_file_list
+ #find $PDBML_NOATOM -maxdepth 2 -name '*-noatom.xml.gz' > $pdbml_file_list
+ find $PDBML_NOATOM_SIFTS -maxdepth 2 -name '*-noatom-sifts.xml.gz' > $pdbml_file_list
+
+ rm -f $PDBML_EXT/*.lock
+ cat $pdbml_file_list | sort -R > $pdbml_file_list~
 
  for proc_id in `seq 1 $MAXPROCS` ; do
 
-  ./scripts/extract_pdbml_worker.sh -d $PDBML_EXT -l $pdbml_file_list -n $proc_id"of"$MAXPROCS $VALID_OPT &
+  ./scripts/extract_pdbml_worker.sh -d $PDBML_EXT -l $pdbml_file_list -n $proc_id"of"$MAXPROCS $VALID_OPT -t $total &
 
  done
 
@@ -88,7 +91,7 @@ if [ $err != 0 ] || [ $total != $last ] ; then
 
  echo
 
- rm -f $pdbml_file_list
+ rm -f $pdbml_file_list $pdbml_file_list~
 
 else
 

@@ -7,7 +7,7 @@ FILE_LIST=
 
 VALIDATE=false
 
-ARGV=`getopt --long -o "d:l:n:v" "$@"`
+ARGV=`getopt --long -o "d:l:n:t:v" "$@"`
 eval set -- "$ARGV"
 while true ; do
  case "$1" in
@@ -21,6 +21,10 @@ while true ; do
  ;;
  -n)
   PROC_INFO=$2
+  shift
+ ;;
+ -t)
+  total=$2
   shift
  ;;
  -v)
@@ -52,8 +56,9 @@ MAXPROCS=`echo $PROC_INFO | cut -d 'f' -f 2`
 PROC_ID=`echo $PROC_INFO | cut -d 'o' -f 1`
 PROC_ID=$(($PROC_ID - 1))
 
+# total=`wc -l < $FILE_LIST`
+
 proc_id=0
-total=`wc -l < $FILE_LIST`
 
 while read info_gz_file
 do
@@ -75,8 +80,77 @@ do
   div_dir=$WORK_DIR/${pdb_id:1:2}
   pdbml_ext_file=$PDBML_EXT/$pdb_id-noatom-ext.xml
   err_file=$WORK_DIR/extract_info_$pdb_id.err
+  lock_file=$WORK_DIR/$pdb_id.lock
 
   if [ -e $pdbml_ext_file.gz ] && ( ( [ ! -e $info_alt_file ] && [ ! -e $div_dir/`basename $info_alt_file`.gz ] ) || [ -e $err_file ] ) ; then
+
+   touch $lock_file
+
+   info_file=${info_gz_file%.*} # remove the last '.gz'
+   gunzip -c $info_gz_file > $info_file || exit 1
+
+   gunzip -c $pdbml_ext_file.gz > $pdbml_ext_file || exit 1
+
+   java -jar $SAXON -s:$info_file -xsl:$EXT_INFO_XSL -o:$info_alt_file pdbml_ext_file=../$pdbml_ext_file 2> $err_file && rm -f $err_file $info_file $pdbml_ext_file || ( rm -f $info_file $info_alt_file $pdbml_ext_file ; cat $err_file ; exit 1 )
+
+   xml_pretty $info_alt_file
+
+   mk_div_dir $div_dir
+
+   if [ $VALIDATE = 'true' ] ; then
+
+    java -classpath $XSD2PGSCHEMA xmlvalidator --xsd $PDBX_VALIDATION_XSD --xml $info_alt_file > /dev/null 2> $err_file
+
+    if [ $? = 0 ] && [ -s $info_alt_file ] ; then
+     rm -f $err_file
+     gzip_in_div_dir $info_alt_file $div_dir
+    else
+     cat $err_file
+    fi
+
+   elif [ -s $info_alt_file ] ; then
+    gzip_in_div_dir $info_alt_file $div_dir
+   fi
+
+   rm -f $lock_file
+
+  fi
+
+  if [ $proc_id_mod -eq 0 ] ; then
+   echo -e -n "\rDone "$((proc_id + 1)) of $total ...
+  fi
+
+ fi
+
+ let proc_id++
+
+done < $FILE_LIST
+
+proc_id=0
+
+while read info_gz_file
+do
+
+ proc_id_mod=$(($proc_id % $MAXPROCS))
+
+ if [ $proc_id_mod = $PROC_ID ] ; then
+
+  if [ ! -e $info_gz_file ] ; then
+
+   let proc_id++
+   continue
+
+  fi
+
+#  pdb_id=`basename $info_file _validation.xml`
+  pdb_id=`basename $info_gz_file _validation.xml.gz`
+  info_alt_file=$WORK_DIR/$pdb_id-validation-alt.xml
+  div_dir=$WORK_DIR/${pdb_id:1:2}
+  pdbml_ext_file=$PDBML_EXT/$pdb_id-noatom-ext.xml
+  err_file=$WORK_DIR/extract_info_$pdb_id.err
+  lock_file=$WORK_DIR/$pdb_id.lock
+
+  if [ ! -e $lock_file ] && [ -e $pdbml_ext_file.gz ] && ( ( [ ! -e $info_alt_file ] && [ ! -e $div_dir/`basename $info_alt_file`.gz ] ) || [ -e $err_file ] ) ; then
 
    info_file=${info_gz_file%.*} # remove the last '.gz'
    gunzip -c $info_gz_file > $info_file || exit 1
@@ -106,13 +180,9 @@ do
 
   fi
 
-  if [ $proc_id_mod -eq 0 ] ; then
-   echo -e -n "\rDone "$((proc_id + 1)) of $total ...
-  fi
-
  fi
 
  let proc_id++
 
-done < $FILE_LIST
+done < $FILE_LIST~
 

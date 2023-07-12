@@ -40,11 +40,14 @@ if [ $err != 0 ] || [ $total != $last ] ; then
 
  pdbml_file_list=pdbml_to_rdf_file_list
 
- find $XML_VALID -maxdepth 1 -name '*.xml' | sort -R > $pdbml_file_list
+ find $XML_VALID -maxdepth 1 -name '*.xml' > $pdbml_file_list
+
+ rm -f $RDF_VALID/*.lock
+ cat $pdbml_file_list | sort -R > $pdbml_file_list~
 
  for proc_id in `seq 1 $MAXPROCS` ; do
 
-  ./scripts/transl_to_rdf_vrpt_worker.sh -d $RDF_VALID -l $pdbml_file_list -n $proc_id"of"$MAXPROCS &
+  ./scripts/transl_to_rdf_vrpt_worker.sh -d $RDF_VALID -l $pdbml_file_list -n $proc_id"of"$MAXPROCS -t $total &
 
  done
 
@@ -59,7 +62,7 @@ if [ $err != 0 ] || [ $total != $last ] ; then
 
  echo
 
- rm -f $pdbml_file_list
+ rm -f $pdbml_file_list $pdbml_file_list~
 
 fi
 

@@ -50,12 +50,15 @@ if [ $err != 0 ] || [ $total != $last ] ; then
 
  info_file_list=extract_info_file_list
 
-# find $VALID_INFO -maxdepth 1 -name '*.xml' | sort -R > $info_file_list
- find $VALID_REPORT -maxdepth 3 -name '*_validation.xml.gz' | sort -R > $info_file_list
+# find $VALID_INFO -maxdepth 1 -name '*.xml' > $info_file_list
+ find $VALID_REPORT -maxdepth 3 -name '*_validation.xml.gz' > $info_file_list
+
+ rm -f $XML_VALID_ALT/*.lock
+ cat $info_file_list | sort -R > $info_file_list~
 
  for proc_id in `seq 1 $MAXPROCS` ; do
 
-  ./scripts/extract_info_worker.sh -d $XML_VALID_ALT -l $info_file_list -n $proc_id"of"$MAXPROCS $VALID_OPT &
+  ./scripts/extract_info_worker.sh -d $XML_VALID_ALT -l $info_file_list -n $proc_id"of"$MAXPROCS $VALID_OPT -t $total &
 
  done
 
@@ -70,7 +73,7 @@ if [ $err != 0 ] || [ $total != $last ] ; then
 
  echo
 
- rm -f $info_file_list
+ rm -f $info_file_list $info_file_list~
 
 else
 

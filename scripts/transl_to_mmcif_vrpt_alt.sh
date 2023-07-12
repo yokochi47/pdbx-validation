@@ -43,12 +43,15 @@ if [ $total != $last ] ; then
 
  pdbml_file_list=pdbml_to_mmcif_alt_file_list
 
-# find $VALID_INFO_ALT -maxdepth 1 -name '*.xml' | sort -R > $pdbml_file_list
- find $XML_VALID_ALT -maxdepth 2 -name '*.xml.gz' | sort -R > $pdbml_file_list
+# find $VALID_INFO_ALT -maxdepth 1 -name '*.xml' > $pdbml_file_list
+ find $XML_VALID_ALT -maxdepth 2 -name '*.xml.gz' > $pdbml_file_list
+
+ rm -f $MMCIF_VALID_ALT/*.lock
+ cat $pdbml_file_list | sort -R > $pdbml_file_list~
 
  for proc_id in `seq 1 $MAXPROCS` ; do
 
-  ./scripts/transl_to_mmcif_vrpt_alt_worker.sh -d $MMCIF_VALID_ALT -l $pdbml_file_list -n $proc_id"of"$MAXPROCS &
+  ./scripts/transl_to_mmcif_vrpt_alt_worker.sh -d $MMCIF_VALID_ALT -l $pdbml_file_list -n $proc_id"of"$MAXPROCS -t $total &
 
  done
 
@@ -63,7 +66,7 @@ if [ $total != $last ] ; then
 
  echo
 
- rm -f $pdbml_file_list
+ rm -f $pdbml_file_list $pdbml_file_list~
 
 fi
 
