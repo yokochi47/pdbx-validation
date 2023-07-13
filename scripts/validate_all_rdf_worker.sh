@@ -113,7 +113,7 @@ do
 
   rdf_dir=`dirname $rdf_file`
   err_file=$rdf_dir/validate_$rdf_label.err
-  entry_id=`cat $rdf_label | cut -d '-' -f 1`
+  entry_id=`echo $rdf_label | cut -d '-' -f 1`
   lock_file=$WORK_DIR/$entry_id.lock
 
   if [ ! -e $lock_file ] ; then
@@ -186,7 +186,7 @@ do
 
   rdf_dir=`dirname $rdf_file`
   err_file=$rdf_dir/validate_$rdf_label.err
-  entry_id=`cat $rdf_label | cut -d '-' -f 1`
+  entry_id=`echo $rdf_label | cut -d '-' -f 1`
   lock_file=$WORK_DIR/$entry_id.lock
 
   if [ ! -e $lock_file ] ; then

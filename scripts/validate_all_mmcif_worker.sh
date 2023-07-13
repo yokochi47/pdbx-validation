@@ -121,7 +121,7 @@ do
 
   cif_dir=`dirname $cif_file`
   _cif_file=`basename $cif_file`
-  entry_id=`cat $cif_label | cut -d '-' -f 1`
+  entry_id=`echo $cif_label | cut -d '-' -f 1`
   lock_file=$WORK_DIR/$entry_id.lock
   parser_log=$cif_label-parser.log
 
@@ -200,7 +200,7 @@ do
 
   cif_dir=`dirname $cif_file`
   _cif_file=`basename $cif_file`
-  entry_id=`cat $cif_label | cut -d '-' -f 1`
+  entry_id=`echo $cif_label | cut -d '-' -f 1`
   lock_file=$WORK_DIR/$entry_id.lock
   parser_log=$cif_label-parser.log
 
