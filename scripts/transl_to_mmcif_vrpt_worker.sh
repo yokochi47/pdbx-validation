@@ -68,7 +68,7 @@ do
   div_dir=$WORK_DIR/${pdb_id:1:2}
   lock_file=$WORK_DIR/$pdb_id.lock
 
-  if [ ! -e $WORK_DIR/$mmcif_vrpt_file ] && [ ! -e $div_dir/`basename mmcif_vrpt_file`.gz ] ; then
+  if [ ! -e $lock_file ] && [ ! -e $WORK_DIR/$mmcif_vrpt_file ] && [ ! -e $div_dir/`basename mmcif_vrpt_file`.gz ] ; then
 
    touch $lock_file
 
@@ -118,6 +118,8 @@ do
 
   if [ ! -e $lock_file ] && [ ! -e $WORK_DIR/$mmcif_vrpt_file ] && [ ! -e $div_dir/`basename mmcif_vrpt_file`.gz ] ; then
 
+   touch $lock_file
+
    ( cd $WORK_DIR ; ln -s ../$pdbml_vrpt_file . ; xml2mmcif -xml $pdbml_vrpt_base -dict $pdbx_validation_dic -df $pdbx_validation_odb > /dev/null && rm -f $pdbml_vrpt_base && mv -f ../$pdbml_vrpt_base.cif $mmcif_vrpt_file && sed -i -e "s/\._\([0-9]\)\(\S*\) /\.\1\2  /" $mmcif_vrpt_file )
 
    mk_div_dir $div_dir
@@ -125,6 +127,8 @@ do
    if [ -s $WORK_DIR/$mmcif_vrpt_file ] ; then
     gzip_in_div_dir $WORK_DIR/$mmcif_vrpt_file $div_dir
    fi
+
+   rm -f $lock_file
 
   fi
 

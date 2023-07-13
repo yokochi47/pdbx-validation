@@ -69,7 +69,7 @@ do
   err_file=$WORK_DIR/transl_to_rdf_vrpt_alt_$pdb_id.err
   lock_file=$WORK_DIR/$pdb_id.lock
 
-  if ( [ ! -e $rdf_vrpt_file ] && [ ! -e $div_dir/`basename $rdf_vrpt_file`.gz ] ) || [ -e $err_file ] ; then
+  if [ ! -e $lock_file ] && ( ( [ ! -e $rdf_vrpt_file ] && [ ! -e $div_dir/`basename $rdf_vrpt_file`.gz ] ) || [ -e $err_file ] ) ; then
 
    touch $lock_file
 
@@ -126,7 +126,9 @@ do
   err_file=$WORK_DIR/transl_to_rdf_vrpt_alt_$pdb_id.err
   lock_file=$WORK_DIR/$pdb_id.lock
 
-  if [ ! -e $lock_file ] && ( ( [ ! -e $rdf_vrpt_file ] && [ ! -e $div_dir/`basename $rdf_vrpt_file`.gz ] ) || [ -e $err_file ] ) ; then
+  if [ ! -e $lock_file ] && [ ! -e $rdf_vrpt_file ] && [ ! -e $div_dir/`basename $rdf_vrpt_file`.gz ] ; then
+
+   touch $lock_file
 
    pdbml_vrpt_file=${pdbml_vrpt_gz_file%.*} # remove the last '.gz'
    gunzip -c $pdbml_vrpt_gz_file > $pdbml_vrpt_file || exit 1
@@ -143,6 +145,8 @@ do
    if [ -s $rdf_vrpt_file ] ; then
     gzip_in_div_dir $rdf_vrpt_file $div_dir
    fi
+
+   rm -f $lock_file
 
   fi
 

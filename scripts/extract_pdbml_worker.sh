@@ -73,7 +73,7 @@ do
   err_file=$WORK_DIR/extract_pdbml_$pdb_id.err
   lock_file=$WORK_DIR/$pdb_id.lock
 
-  if [ -e $info_gz_file ] && ( [ ! -e $pdbml_ext_file.gz ] || [ -e $err_file ] ); then
+  if [ ! -e $lock_file ] && [ -e $info_gz_file ] && ( [ ! -e $pdbml_ext_file.gz ] || [ -e $err_file ] ); then
 
    touch $lock_file
 
@@ -138,7 +138,9 @@ do
   err_file=$WORK_DIR/extract_pdbml_$pdb_id.err
   lock_file=$WORK_DIR/$pdb_id.lock
 
-  if [ ! -e $lock_file ] && [ -e $info_gz_file ] && ( [ ! -e $pdbml_ext_file.gz ] || [ -e $err_file ] ); then
+  if [ ! -e $lock_file ] && [ -e $info_gz_file ] && [ ! -e $pdbml_ext_file.gz ] ; then
+
+   touch $lock_file
 
    pdbml_file=${pdbml_gz_file%.*} # remove the last '.gz'
    gunzip -c $pdbml_gz_file > $pdbml_file || exit 1
@@ -163,6 +165,8 @@ do
    elif [ -s $pdbml_ext_file ] ; then
     gzip $pdbml_ext_file
    fi
+
+   rm -f $lock_file
 
   fi
 

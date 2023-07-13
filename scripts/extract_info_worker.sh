@@ -82,7 +82,7 @@ do
   err_file=$WORK_DIR/extract_info_$pdb_id.err
   lock_file=$WORK_DIR/$pdb_id.lock
 
-  if [ -e $pdbml_ext_file.gz ] && ( ( [ ! -e $info_alt_file ] && [ ! -e $div_dir/`basename $info_alt_file`.gz ] ) || [ -e $err_file ] ) ; then
+  if [ ! -e $lock_file ] && [ -e $pdbml_ext_file.gz ] && ( ( [ ! -e $info_alt_file ] && [ ! -e $div_dir/`basename $info_alt_file`.gz ] ) || [ -e $err_file ] ) ; then
 
    touch $lock_file
 
@@ -150,7 +150,9 @@ do
   err_file=$WORK_DIR/extract_info_$pdb_id.err
   lock_file=$WORK_DIR/$pdb_id.lock
 
-  if [ ! -e $lock_file ] && [ -e $pdbml_ext_file.gz ] && ( ( [ ! -e $info_alt_file ] && [ ! -e $div_dir/`basename $info_alt_file`.gz ] ) || [ -e $err_file ] ) ; then
+  if [ ! -e $lock_file ] && [ -e $pdbml_ext_file.gz ] && [ ! -e $info_alt_file ] && [ ! -e $div_dir/`basename $info_alt_file`.gz ] ; then
+
+   touch $lock_file
 
    info_file=${info_gz_file%.*} # remove the last '.gz'
    gunzip -c $info_gz_file > $info_file || exit 1
@@ -177,6 +179,8 @@ do
    elif [ -s $info_alt_file ] ; then
     gzip_in_div_dir $info_alt_file $div_dir
    fi
+
+   rm -f $lock_file
 
   fi
 

@@ -91,7 +91,7 @@ do
 
    fi
 
-  elif ( ( [ ! -e $pdbml_sifts_file ] && [ ! -e $div_dir/`basename $pdbml_sifts_file`.gz ] ) || [ -e $err_file ] ) ; then
+  elif [ ! -e $lock_file ] && ( ( [ ! -e $pdbml_sifts_file ] && [ ! -e $div_dir/`basename $pdbml_sifts_file`.gz ] ) || [ -e $err_file ] ) ; then
 
    touch $lock_file
 
@@ -175,6 +175,8 @@ do
 
   elif [ ! -e $lock_file ] && ( ( [ ! -e $pdbml_sifts_file ] && [ ! -e $div_dir/`basename $pdbml_sifts_file`.gz ] ) || [ -e $err_file ] ) ; then
 
+   touch $lock_file
+
    pdbml_file=${pdbml_gz_file%.*} # remove the last '.gz'
    gunzip -c $pdbml_gz_file > $pdbml_file || exit 1
 
@@ -206,6 +208,8 @@ do
     mk_div_dir $div_dir
     cp $pdbml_gz_file $div_dir/$pdb_id-noatom-sifts.xml.gz
    fi
+
+   rm -f $lock_file
 
   fi
 

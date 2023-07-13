@@ -68,7 +68,7 @@ do
   div_dir=$WORK_DIR/${pdb_id:1:2}
   lock_file=$WORK_DIR/$pdb_id.lock
 
-  if [ ! -e $WORK_DIR/$mmcif_vrpt_file ] && [ ! -e $div_dir/`basename $mmcif_vrpt_file`.gz ] ; then
+  if [ ! -e $lock_file ] && [ ! -e $WORK_DIR/$mmcif_vrpt_file ] && [ ! -e $div_dir/`basename $mmcif_vrpt_file`.gz ] ; then
 
    touch $lock_file
 
@@ -122,6 +122,8 @@ do
 
   if [ ! -e $lock_file ] && [ ! -e $WORK_DIR/$mmcif_vrpt_file ] && [ ! -e $div_dir/`basename $mmcif_vrpt_file`.gz ] ; then
 
+   touch $lock_file
+
    pdbml_vrpt_file=${pdbml_vrpt_gz_file%.*} # remove the last '.gz'
    pdbml_vrpt_base=`basename $pdbml_vrpt_file`
    gunzip -c $pdbml_vrpt_gz_file > $WORK_DIR/$pdbml_vrpt_base || exit 1
@@ -133,6 +135,8 @@ do
    if [ -s $WORK_DIR/$mmcif_vrpt_file ] ; then
     gzip_in_div_dir $WORK_DIR/$mmcif_vrpt_file $div_dir
    fi
+
+   rm -f $lock_file
 
   fi
 

@@ -82,7 +82,7 @@ do
   err_file=$WORK_DIR/merge_pdbml_info_$pdb_id.err
   lock_file=$WORK_DIR/$pdb_id.lock
 
-  if [ -e $info_alt_file.gz ] && ( ( [ ! -e $pdbml_vrpt_file ] && [ ! -e $div_dir/`basename $pdbml_vrpt_file`.gz ] ) || [ -e $err_file ] ); then
+  if [ ! -e $lock_file ] && [ -e $info_alt_file.gz ] && ( ( [ ! -e $pdbml_vrpt_file ] && [ ! -e $div_dir/`basename $pdbml_vrpt_file`.gz ] ) || [ -e $err_file ] ) ; then
 
    touch $lock_file
 
@@ -151,7 +151,9 @@ do
   err_file=$WORK_DIR/merge_pdbml_info_$pdb_id.err
   lock_file=$WORK_DIR/$pdb_id.lock
 
-  if [ ! -e $lock_file ] && [ -e $info_alt_file.gz ] && ( ( [ ! -e $pdbml_vrpt_file ] && [ ! -e $div_dir/`basename $pdbml_vrpt_file`.gz ] ) || [ -e $err_file ] ); then
+  if [ ! -e $lock_file ] && [ -e $info_alt_file.gz ] && [ ! -e $pdbml_vrpt_file ] && [ ! -e $div_dir/`basename $pdbml_vrpt_file`.gz ] ; then
+
+   touch $lock_file
 
    pdbml_ext_file=${pdbml_ext_gz_file%.*} # remove the last '.gz'
    gunzip -c $pdbml_ext_gz_file > $pdbml_ext_file || exit 1
@@ -179,6 +181,8 @@ do
    elif [ -s $pdbml_vrpt_file ] ; then
     gzip_in_div_dir $pdbml_vrpt_file $div_dir
    fi
+
+   rm -f $lock_file
 
   fi
 

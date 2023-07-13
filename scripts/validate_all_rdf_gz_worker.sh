@@ -117,17 +117,21 @@ do
   entry_id=`cat $rdf_label | cut -d '-' -f 1`
   lock_file=$WORK_DIR/$entry_id.lock
 
-  touch $lock_file
+  if [ ! -e $lock_file ] ; then
 
-  gunzip -c $rdf_gz_file > $rdf_file || exit 1
+   touch $lock_file
 
-  rapper -q -c $rdf_file 2> $err_file && ( rm -f $rdf_file $err_file ; echo $new_chk_sum > $chk_sum_file ) || ( [ $DELETE = "true" ] && rm -f $rdf_gz_file $rdf_file ; cat $err_file )
+   gunzip -c $rdf_gz_file > $rdf_file || exit 1
 
-  if [ $proc_id_mod -eq 0 ] ; then
-   echo -e -n "\rDone "$((proc_id + 1)) of $TOTAL ...
+   rapper -q -c $rdf_file 2> $err_file && ( rm -f $rdf_file $err_file ; echo $new_chk_sum > $chk_sum_file ) || ( [ $DELETE = "true" ] && rm -f $rdf_gz_file $rdf_file ; cat $err_file )
+
+   if [ $proc_id_mod -eq 0 ] ; then
+    echo -e -n "\rDone "$((proc_id + 1)) of $TOTAL ...
+   fi
+
+   rm -f $lock_file
+
   fi
-
-  rm -f $lock_file
 
  fi
 
@@ -191,9 +195,13 @@ do
 
   if [ ! -e $lock_file ] ; then
 
-  gunzip -c $rdf_gz_file > $rdf_file || exit 1
+   touch $lock_file
 
-  rapper -q -c $rdf_file 2> $err_file && ( rm -f $rdf_file $err_file ; echo $new_chk_sum > $chk_sum_file ) || ( [ $DELETE = "true" ] && rm -f $rdf_gz_file $rdf_file ; cat $err_file )
+   gunzip -c $rdf_gz_file > $rdf_file || exit 1
+
+   rapper -q -c $rdf_file 2> $err_file && ( rm -f $rdf_file $err_file ; echo $new_chk_sum > $chk_sum_file ) || ( [ $DELETE = "true" ] && rm -f $rdf_gz_file $rdf_file ; cat $err_file )
+
+   rm -f $lock_file
 
   fi
 

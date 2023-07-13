@@ -124,22 +124,26 @@ do
   entry_id=`echo $cif_label | cut -d '-' -f 1`
   lock_file=$WORK_DIR/$entry_id.lock
 
-  touch $lock_file
+  if [ ! -e $lock_file ] ; then
 
-  gunzip -c $cif_gz_file > $cif_dir/$cif_file || exit 1
+   touch $lock_file
 
-  parser_log=$cif_label-parser.log
+   gunzip -c $cif_gz_file > $cif_dir/$cif_file || exit 1
 
-  rm -f $cif_dir/$diag_log $cif_dir/$parser_log
+   parser_log=$cif_label-parser.log
 
-  ( cd $cif_dir ; CifCheck -f $cif_file -dictSdb $dict_sdb > /dev/null ; [ -e $diag_log ] && [ `LC_ALL=C grep -F -v 'has invalid value "?" in row' $diag_log | sed -e /^$/d | wc -l 2> /dev/null` = 0 ] && rm -f $diag_log )
-  ( cd $cif_dir ; [ ! -e $diag_log ] && [ ! -e $parser_log ] && ( rm -f $cif_file ; echo $new_chk_sum > $chk_sum_file ) ; [ -e $parser_log ] && ( [ $DELETE = "true" ] && rm -f $cif_file.gz $cif_file ; cat $diag_log ) )
+   rm -f $cif_dir/$diag_log $cif_dir/$parser_log
 
-  if [ $proc_id_mod -eq 0 ] ; then
-   echo -e -n "\rDone "$((proc_id + 1)) of $TOTAL ...
+   ( cd $cif_dir ; CifCheck -f $cif_file -dictSdb $dict_sdb > /dev/null ; [ -e $diag_log ] && [ `LC_ALL=C grep -F -v 'has invalid value "?" in row' $diag_log | sed -e /^$/d | wc -l 2> /dev/null` = 0 ] && rm -f $diag_log )
+   ( cd $cif_dir ; [ ! -e $diag_log ] && [ ! -e $parser_log ] && ( rm -f $cif_file ; echo $new_chk_sum > $chk_sum_file ) ; [ -e $parser_log ] && ( [ $DELETE = "true" ] && rm -f $cif_file.gz $cif_file ; cat $diag_log ) )
+
+   if [ $proc_id_mod -eq 0 ] ; then
+    echo -e -n "\rDone "$((proc_id + 1)) of $TOTAL ...
+   fi
+
+   rm -f $lock_file
+
   fi
-
-  rm -f $lock_file
 
  fi
 
@@ -204,14 +208,18 @@ do
 
   if [ ! -e $lock_file ] ; then
 
-  gunzip -c $cif_gz_file > $cif_dir/$cif_file || exit 1
+   touch $lock_file
 
-  parser_log=$cif_label-parser.log
+   gunzip -c $cif_gz_file > $cif_dir/$cif_file || exit 1
 
-  rm -f $cif_dir/$diag_log $cif_dir/$parser_log
+   parser_log=$cif_label-parser.log
 
-  ( cd $cif_dir ; CifCheck -f $cif_file -dictSdb $dict_sdb > /dev/null ; [ -e $diag_log ] && [ `LC_ALL=C grep -F -v 'has invalid value "?" in row' $diag_log | sed -e /^$/d | wc -l 2> /dev/null` = 0 ] && rm -f $diag_log )
-  ( cd $cif_dir ; [ ! -e $diag_log ] && [ ! -e $parser_log ] && ( rm -f $cif_file ; echo $new_chk_sum > $chk_sum_file ) ; [ -e $parser_log ] && ( [ $DELETE = "true" ] && rm -f $cif_file.gz $cif_file ; cat $diag_log ) )
+   rm -f $cif_dir/$diag_log $cif_dir/$parser_log
+
+   ( cd $cif_dir ; CifCheck -f $cif_file -dictSdb $dict_sdb > /dev/null ; [ -e $diag_log ] && [ `LC_ALL=C grep -F -v 'has invalid value "?" in row' $diag_log | sed -e /^$/d | wc -l 2> /dev/null` = 0 ] && rm -f $diag_log )
+   ( cd $cif_dir ; [ ! -e $diag_log ] && [ ! -e $parser_log ] && ( rm -f $cif_file ; echo $new_chk_sum > $chk_sum_file ) ; [ -e $parser_log ] && ( [ $DELETE = "true" ] && rm -f $cif_file.gz $cif_file ; cat $diag_log ) )
+
+   rm -f $lock_file
 
   fi
 

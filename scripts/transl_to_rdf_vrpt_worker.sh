@@ -68,7 +68,7 @@ do
   err_file=$WORK_DIR/transl_to_rdf_vrpt_$pdb_id.err
   lock_file=$WORK_DIR/$pdb_id.lock
 
-  if ( [ ! -e $rdf_vrpt_file ] && [ ! -e $div_dir/`basename $rdf_vrpt_file`.gz ] ) || [ -e $err_file ] ; then
+  if [ ! -e $lock_file ] && ( ( [ ! -e $rdf_vrpt_file ] && [ ! -e $div_dir/`basename $rdf_vrpt_file`.gz ] ) || [ -e $err_file ] ) ; then
 
    touch $lock_file
 
@@ -129,7 +129,7 @@ do
   err_file=$WORK_DIR/transl_to_rdf_vrpt_$pdb_id.err
   lock_file=$WORK_DIR/$pdb_id.lock
 
-  if [ ! -e $lock_file ] && ( ( [ ! -e $rdf_vrpt_file ] && [ ! -e $div_dir/`basename $rdf_vrpt_file`.gz ] ) || [ -e $err_file ] ) ; then
+  if [ ! -e $lock_file ] && [ ! -e $rdf_vrpt_file ] && [ ! -e $div_dir/`basename $rdf_vrpt_file`.gz ] ; then
 
    #has_glycan=`java -jar $SAXON -s:$pdbml_vrpt_file -xsl:$VRPTML2WURCS_XSL`
    #has_glycan=`xsltproc $VRPTML2WURCS_XSL $pdbml_vrpt_file`
