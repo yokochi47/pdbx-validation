@@ -69,7 +69,8 @@ do
 
   if ( [ ! -e $rdf_file ] && [ ! -e $div_dir/`basename $rdf_file`.gz ] ) || [ -e $err_file ] ; then
 
-   xsltproc -o $rdf_file $FAM2RDF_XSL $pdbml_file 2> $err_file && rm -f $err_file || ( rm -f $rdf_file ; cat $err_file ; exit 1 )
+   # xsltproc -o $rdf_file $FAM2RDF_XSL $pdbml_file 2> $err_file && rm -f $err_file || ( rm -f $rdf_file ; cat $err_file ; exit 1 )
+   xsltproc -o $rdf_file --stringparam primitive_type_mapping $_PDBX_PRIMITIVE_TYPE_MAPPING_XML $FAM2RDF_XSL $pdbml_file 2> $err_file && rm -f $err_file || ( rm -f $rdf_file ; cat $err_file ; exit 1 )
 
    if [ $has_rapper_command != "false" ] ; then
     rapper -q -c $rdf_file 2> $err_file && rm -f $err_file || ( cat $err_file ; exit 1 )

@@ -16,7 +16,7 @@
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_family>
             <PDBo:pdbx_family_prd_audit.action_type>Create family</PDBo:pdbx_family_prd_audit.action_type>
-            <PDBo:pdbx_family_prd_audit.date>2012-02-08</PDBo:pdbx_family_prd_audit.date>
+            <PDBo:pdbx_family_prd_audit.date rdf:datatype="xsd:date">2012-02-08</PDBo:pdbx_family_prd_audit.date>
             <PDBo:pdbx_family_prd_audit.family_prd_id>FAM_000288</PDBo:pdbx_family_prd_audit.family_prd_id>
             <PDBo:pdbx_family_prd_audit.processing_site>RCSB</PDBo:pdbx_family_prd_audit.processing_site>
           </PDBo:pdbx_family_prd_audit>
@@ -30,7 +30,7 @@
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_family>
             <PDBo:pdbx_family_prd_audit.action_type>Initial release</PDBo:pdbx_family_prd_audit.action_type>
-            <PDBo:pdbx_family_prd_audit.date>2013-10-16</PDBo:pdbx_family_prd_audit.date>
+            <PDBo:pdbx_family_prd_audit.date rdf:datatype="xsd:date">2013-10-16</PDBo:pdbx_family_prd_audit.date>
             <PDBo:pdbx_family_prd_audit.family_prd_id>FAM_000288</PDBo:pdbx_family_prd_audit.family_prd_id>
             <PDBo:pdbx_family_prd_audit.processing_site>RCSB</PDBo:pdbx_family_prd_audit.processing_site>
           </PDBo:pdbx_family_prd_audit>
@@ -43,7 +43,7 @@
           <PDBo:pdbx_reference_molecule_annotation rdf:about="http://rdf.wwpdb.org/fam/FAM_000288/pdbx_reference_molecule_annotation/FAM_000288,1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000288"/>
             <PDBo:pdbx_reference_molecule_annotation.family_prd_id>FAM_000288</PDBo:pdbx_reference_molecule_annotation.family_prd_id>
-            <PDBo:pdbx_reference_molecule_annotation.ordinal>1</PDBo:pdbx_reference_molecule_annotation.ordinal>
+            <PDBo:pdbx_reference_molecule_annotation.ordinal rdf:datatype="xsd:int">1</PDBo:pdbx_reference_molecule_annotation.ordinal>
             <PDBo:pdbx_reference_molecule_annotation.prd_id>PRD_000416</PDBo:pdbx_reference_molecule_annotation.prd_id>
             <PDBo:pdbx_reference_molecule_annotation.source>PMID:1304340</PDBo:pdbx_reference_molecule_annotation.source>
             <PDBo:pdbx_reference_molecule_annotation.text>Inhibitor of ENDOTHIAPEPSIN, EC: 3.4.23.22</PDBo:pdbx_reference_molecule_annotation.text>
@@ -56,7 +56,7 @@
           <PDBo:pdbx_reference_molecule_annotation rdf:about="http://rdf.wwpdb.org/fam/FAM_000288/pdbx_reference_molecule_annotation/FAM_000288,2">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000288"/>
             <PDBo:pdbx_reference_molecule_annotation.family_prd_id>FAM_000288</PDBo:pdbx_reference_molecule_annotation.family_prd_id>
-            <PDBo:pdbx_reference_molecule_annotation.ordinal>2</PDBo:pdbx_reference_molecule_annotation.ordinal>
+            <PDBo:pdbx_reference_molecule_annotation.ordinal rdf:datatype="xsd:int">2</PDBo:pdbx_reference_molecule_annotation.ordinal>
             <PDBo:pdbx_reference_molecule_annotation.prd_id>PRD_000432</PDBo:pdbx_reference_molecule_annotation.prd_id>
             <PDBo:pdbx_reference_molecule_annotation.source>PMID:12083527</PDBo:pdbx_reference_molecule_annotation.source>
             <PDBo:pdbx_reference_molecule_annotation.text>Inhibitor of ENDOTHIAPEPSIN, EC: 3.4.23.22</PDBo:pdbx_reference_molecule_annotation.text>
@@ -69,7 +69,7 @@
           <PDBo:pdbx_reference_molecule_annotation rdf:about="http://rdf.wwpdb.org/fam/FAM_000288/pdbx_reference_molecule_annotation/FAM_000288,3">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000288"/>
             <PDBo:pdbx_reference_molecule_annotation.family_prd_id>FAM_000288</PDBo:pdbx_reference_molecule_annotation.family_prd_id>
-            <PDBo:pdbx_reference_molecule_annotation.ordinal>3</PDBo:pdbx_reference_molecule_annotation.ordinal>
+            <PDBo:pdbx_reference_molecule_annotation.ordinal rdf:datatype="xsd:int">3</PDBo:pdbx_reference_molecule_annotation.ordinal>
             <PDBo:pdbx_reference_molecule_annotation.prd_id>PRD_000432</PDBo:pdbx_reference_molecule_annotation.prd_id>
             <PDBo:pdbx_reference_molecule_annotation.source>KEGG</PDBo:pdbx_reference_molecule_annotation.source>
             <PDBo:pdbx_reference_molecule_annotation.text>renin inhibitor</PDBo:pdbx_reference_molecule_annotation.text>
@@ -80,7 +80,7 @@
           <PDBo:pdbx_reference_molecule_annotation rdf:about="http://rdf.wwpdb.org/fam/FAM_000288/pdbx_reference_molecule_annotation/FAM_000288,4">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000288"/>
             <PDBo:pdbx_reference_molecule_annotation.family_prd_id>FAM_000288</PDBo:pdbx_reference_molecule_annotation.family_prd_id>
-            <PDBo:pdbx_reference_molecule_annotation.ordinal>4</PDBo:pdbx_reference_molecule_annotation.ordinal>
+            <PDBo:pdbx_reference_molecule_annotation.ordinal rdf:datatype="xsd:int">4</PDBo:pdbx_reference_molecule_annotation.ordinal>
             <PDBo:pdbx_reference_molecule_annotation.prd_id>PRD_000392</PDBo:pdbx_reference_molecule_annotation.prd_id>
             <PDBo:pdbx_reference_molecule_annotation.source>PMID:8254610</PDBo:pdbx_reference_molecule_annotation.source>
             <PDBo:pdbx_reference_molecule_annotation.text>Inhibitor of ENDOTHIAPEPSIN, EC: 3.4.23.22</PDBo:pdbx_reference_molecule_annotation.text>
@@ -114,10 +114,10 @@
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_list>
             <PDBo:pdbx_reference_molecule_features.family_prd_id>FAM_000288</PDBo:pdbx_reference_molecule_features.family_prd_id>
-            <PDBo:pdbx_reference_molecule_features.ordinal>1</PDBo:pdbx_reference_molecule_features.ordinal>
+            <PDBo:pdbx_reference_molecule_features.ordinal rdf:datatype="xsd:int">1</PDBo:pdbx_reference_molecule_features.ordinal>
             <PDBo:pdbx_reference_molecule_features.prd_id>PRD_000416</PDBo:pdbx_reference_molecule_features.prd_id>
             <PDBo:pdbx_reference_molecule_features.source>PubChem</PDBo:pdbx_reference_molecule_features.source>
-            <PDBo:pdbx_reference_molecule_features.source_ordinal>1</PDBo:pdbx_reference_molecule_features.source_ordinal>
+            <PDBo:pdbx_reference_molecule_features.source_ordinal rdf:datatype="xsd:int">1</PDBo:pdbx_reference_molecule_features.source_ordinal>
             <PDBo:pdbx_reference_molecule_features.type>External_reference_ID</PDBo:pdbx_reference_molecule_features.type>
             <PDBo:pdbx_reference_molecule_features.value>445400</PDBo:pdbx_reference_molecule_features.value>
             <PDBo:link_to_pubchem_substance rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubchem/substance/SID445400" rdfs:label="pubchem.substance:445400"/>
@@ -133,10 +133,10 @@
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_list>
             <PDBo:pdbx_reference_molecule_features.family_prd_id>FAM_000288</PDBo:pdbx_reference_molecule_features.family_prd_id>
-            <PDBo:pdbx_reference_molecule_features.ordinal>2</PDBo:pdbx_reference_molecule_features.ordinal>
+            <PDBo:pdbx_reference_molecule_features.ordinal rdf:datatype="xsd:int">2</PDBo:pdbx_reference_molecule_features.ordinal>
             <PDBo:pdbx_reference_molecule_features.prd_id>PRD_000416</PDBo:pdbx_reference_molecule_features.prd_id>
             <PDBo:pdbx_reference_molecule_features.source>ChemSpider</PDBo:pdbx_reference_molecule_features.source>
-            <PDBo:pdbx_reference_molecule_features.source_ordinal>1</PDBo:pdbx_reference_molecule_features.source_ordinal>
+            <PDBo:pdbx_reference_molecule_features.source_ordinal rdf:datatype="xsd:int">1</PDBo:pdbx_reference_molecule_features.source_ordinal>
             <PDBo:pdbx_reference_molecule_features.type>External_reference_ID</PDBo:pdbx_reference_molecule_features.type>
             <PDBo:pdbx_reference_molecule_features.value>393051</PDBo:pdbx_reference_molecule_features.value>
             <PDBo:link_to_chemspider rdf:resource="http://www.chemspider.com/Chemical-Structure.393051.html" rdfs:label="chemspider:393051"/>
@@ -152,10 +152,10 @@
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_list>
             <PDBo:pdbx_reference_molecule_features.family_prd_id>FAM_000288</PDBo:pdbx_reference_molecule_features.family_prd_id>
-            <PDBo:pdbx_reference_molecule_features.ordinal>3</PDBo:pdbx_reference_molecule_features.ordinal>
+            <PDBo:pdbx_reference_molecule_features.ordinal rdf:datatype="xsd:int">3</PDBo:pdbx_reference_molecule_features.ordinal>
             <PDBo:pdbx_reference_molecule_features.prd_id>PRD_000432</PDBo:pdbx_reference_molecule_features.prd_id>
             <PDBo:pdbx_reference_molecule_features.source>MeSH</PDBo:pdbx_reference_molecule_features.source>
-            <PDBo:pdbx_reference_molecule_features.source_ordinal>1</PDBo:pdbx_reference_molecule_features.source_ordinal>
+            <PDBo:pdbx_reference_molecule_features.source_ordinal rdf:datatype="xsd:int">1</PDBo:pdbx_reference_molecule_features.source_ordinal>
             <PDBo:pdbx_reference_molecule_features.type>MeSH_Unique_ID</PDBo:pdbx_reference_molecule_features.type>
             <PDBo:pdbx_reference_molecule_features.value>C076964</PDBo:pdbx_reference_molecule_features.value>
             <PDBo:link_to_mesh rdf:resource="http://id.nlm.nih.gov/mesh/C076964" rdfs:label="mesh:C076964"/>
@@ -171,10 +171,10 @@
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_list>
             <PDBo:pdbx_reference_molecule_features.family_prd_id>FAM_000288</PDBo:pdbx_reference_molecule_features.family_prd_id>
-            <PDBo:pdbx_reference_molecule_features.ordinal>4</PDBo:pdbx_reference_molecule_features.ordinal>
+            <PDBo:pdbx_reference_molecule_features.ordinal rdf:datatype="xsd:int">4</PDBo:pdbx_reference_molecule_features.ordinal>
             <PDBo:pdbx_reference_molecule_features.prd_id>PRD_000432</PDBo:pdbx_reference_molecule_features.prd_id>
             <PDBo:pdbx_reference_molecule_features.source>Beilstein</PDBo:pdbx_reference_molecule_features.source>
-            <PDBo:pdbx_reference_molecule_features.source_ordinal>1</PDBo:pdbx_reference_molecule_features.source_ordinal>
+            <PDBo:pdbx_reference_molecule_features.source_ordinal rdf:datatype="xsd:int">1</PDBo:pdbx_reference_molecule_features.source_ordinal>
             <PDBo:pdbx_reference_molecule_features.type>External_reference_ID</PDBo:pdbx_reference_molecule_features.type>
             <PDBo:pdbx_reference_molecule_features.value>4776080</PDBo:pdbx_reference_molecule_features.value>
           </PDBo:pdbx_reference_molecule_features>
@@ -188,10 +188,10 @@
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_list>
             <PDBo:pdbx_reference_molecule_features.family_prd_id>FAM_000288</PDBo:pdbx_reference_molecule_features.family_prd_id>
-            <PDBo:pdbx_reference_molecule_features.ordinal>5</PDBo:pdbx_reference_molecule_features.ordinal>
+            <PDBo:pdbx_reference_molecule_features.ordinal rdf:datatype="xsd:int">5</PDBo:pdbx_reference_molecule_features.ordinal>
             <PDBo:pdbx_reference_molecule_features.prd_id>PRD_000432</PDBo:pdbx_reference_molecule_features.prd_id>
             <PDBo:pdbx_reference_molecule_features.source>KEGG</PDBo:pdbx_reference_molecule_features.source>
-            <PDBo:pdbx_reference_molecule_features.source_ordinal>1</PDBo:pdbx_reference_molecule_features.source_ordinal>
+            <PDBo:pdbx_reference_molecule_features.source_ordinal rdf:datatype="xsd:int">1</PDBo:pdbx_reference_molecule_features.source_ordinal>
             <PDBo:pdbx_reference_molecule_features.type>KEGG_Drug_ID</PDBo:pdbx_reference_molecule_features.type>
             <PDBo:pdbx_reference_molecule_features.value>D03743</PDBo:pdbx_reference_molecule_features.value>
             <PDBo:link_to_kegg_drug rdf:resource="http://www.kegg.jp/entry/D03743" rdfs:label="kegg.drug:D03743"/>
@@ -207,10 +207,10 @@
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_list>
             <PDBo:pdbx_reference_molecule_features.family_prd_id>FAM_000288</PDBo:pdbx_reference_molecule_features.family_prd_id>
-            <PDBo:pdbx_reference_molecule_features.ordinal>6</PDBo:pdbx_reference_molecule_features.ordinal>
+            <PDBo:pdbx_reference_molecule_features.ordinal rdf:datatype="xsd:int">6</PDBo:pdbx_reference_molecule_features.ordinal>
             <PDBo:pdbx_reference_molecule_features.prd_id>PRD_000432</PDBo:pdbx_reference_molecule_features.prd_id>
             <PDBo:pdbx_reference_molecule_features.source>PubChem</PDBo:pdbx_reference_molecule_features.source>
-            <PDBo:pdbx_reference_molecule_features.source_ordinal>1</PDBo:pdbx_reference_molecule_features.source_ordinal>
+            <PDBo:pdbx_reference_molecule_features.source_ordinal rdf:datatype="xsd:int">1</PDBo:pdbx_reference_molecule_features.source_ordinal>
             <PDBo:pdbx_reference_molecule_features.type>External_reference_ID</PDBo:pdbx_reference_molecule_features.type>
             <PDBo:pdbx_reference_molecule_features.value>64922</PDBo:pdbx_reference_molecule_features.value>
             <PDBo:link_to_pubchem_substance rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubchem/substance/SID64922" rdfs:label="pubchem.substance:64922"/>
@@ -226,10 +226,10 @@
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_list>
             <PDBo:pdbx_reference_molecule_features.family_prd_id>FAM_000288</PDBo:pdbx_reference_molecule_features.family_prd_id>
-            <PDBo:pdbx_reference_molecule_features.ordinal>7</PDBo:pdbx_reference_molecule_features.ordinal>
+            <PDBo:pdbx_reference_molecule_features.ordinal rdf:datatype="xsd:int">7</PDBo:pdbx_reference_molecule_features.ordinal>
             <PDBo:pdbx_reference_molecule_features.prd_id>PRD_000432</PDBo:pdbx_reference_molecule_features.prd_id>
             <PDBo:pdbx_reference_molecule_features.source>ChemSpider</PDBo:pdbx_reference_molecule_features.source>
-            <PDBo:pdbx_reference_molecule_features.source_ordinal>1</PDBo:pdbx_reference_molecule_features.source_ordinal>
+            <PDBo:pdbx_reference_molecule_features.source_ordinal rdf:datatype="xsd:int">1</PDBo:pdbx_reference_molecule_features.source_ordinal>
             <PDBo:pdbx_reference_molecule_features.type>External_reference_ID</PDBo:pdbx_reference_molecule_features.type>
             <PDBo:pdbx_reference_molecule_features.value>58451</PDBo:pdbx_reference_molecule_features.value>
             <PDBo:link_to_chemspider rdf:resource="http://www.chemspider.com/Chemical-Structure.58451.html" rdfs:label="chemspider:58451"/>
@@ -245,10 +245,10 @@
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_list>
             <PDBo:pdbx_reference_molecule_features.family_prd_id>FAM_000288</PDBo:pdbx_reference_molecule_features.family_prd_id>
-            <PDBo:pdbx_reference_molecule_features.ordinal>8</PDBo:pdbx_reference_molecule_features.ordinal>
+            <PDBo:pdbx_reference_molecule_features.ordinal rdf:datatype="xsd:int">8</PDBo:pdbx_reference_molecule_features.ordinal>
             <PDBo:pdbx_reference_molecule_features.prd_id>PRD_000432</PDBo:pdbx_reference_molecule_features.prd_id>
             <PDBo:pdbx_reference_molecule_features.source>CAS</PDBo:pdbx_reference_molecule_features.source>
-            <PDBo:pdbx_reference_molecule_features.source_ordinal>1</PDBo:pdbx_reference_molecule_features.source_ordinal>
+            <PDBo:pdbx_reference_molecule_features.source_ordinal rdf:datatype="xsd:int">1</PDBo:pdbx_reference_molecule_features.source_ordinal>
             <PDBo:pdbx_reference_molecule_features.type>External_reference_ID</PDBo:pdbx_reference_molecule_features.type>
             <PDBo:pdbx_reference_molecule_features.value>119625-78-4</PDBo:pdbx_reference_molecule_features.value>
             <PDBo:link_to_cas rdf:resource="http://commonchemistry.cas.org/detail?ref=119625-78-4" rdfs:label="cas:119625-78-4"/>
@@ -264,10 +264,10 @@
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_list>
             <PDBo:pdbx_reference_molecule_features.family_prd_id>FAM_000288</PDBo:pdbx_reference_molecule_features.family_prd_id>
-            <PDBo:pdbx_reference_molecule_features.ordinal>9</PDBo:pdbx_reference_molecule_features.ordinal>
+            <PDBo:pdbx_reference_molecule_features.ordinal rdf:datatype="xsd:int">9</PDBo:pdbx_reference_molecule_features.ordinal>
             <PDBo:pdbx_reference_molecule_features.prd_id>PRD_000432</PDBo:pdbx_reference_molecule_features.prd_id>
             <PDBo:pdbx_reference_molecule_features.source>ChEBI</PDBo:pdbx_reference_molecule_features.source>
-            <PDBo:pdbx_reference_molecule_features.source_ordinal>1</PDBo:pdbx_reference_molecule_features.source_ordinal>
+            <PDBo:pdbx_reference_molecule_features.source_ordinal rdf:datatype="xsd:int">1</PDBo:pdbx_reference_molecule_features.source_ordinal>
             <PDBo:pdbx_reference_molecule_features.type>External_reference_ID</PDBo:pdbx_reference_molecule_features.type>
             <PDBo:pdbx_reference_molecule_features.value>196469</PDBo:pdbx_reference_molecule_features.value>
             <PDBo:link_to_chebi rdf:resource="http://purl.obolibrary.org/obo/CHEBI_196469" rdfs:label="CHEBI:196469"/>
@@ -283,10 +283,10 @@
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_list>
             <PDBo:pdbx_reference_molecule_features.family_prd_id>FAM_000288</PDBo:pdbx_reference_molecule_features.family_prd_id>
-            <PDBo:pdbx_reference_molecule_features.ordinal>10</PDBo:pdbx_reference_molecule_features.ordinal>
+            <PDBo:pdbx_reference_molecule_features.ordinal rdf:datatype="xsd:int">10</PDBo:pdbx_reference_molecule_features.ordinal>
             <PDBo:pdbx_reference_molecule_features.prd_id>PRD_000432</PDBo:pdbx_reference_molecule_features.prd_id>
             <PDBo:pdbx_reference_molecule_features.source>ChemIDplus</PDBo:pdbx_reference_molecule_features.source>
-            <PDBo:pdbx_reference_molecule_features.source_ordinal>1</PDBo:pdbx_reference_molecule_features.source_ordinal>
+            <PDBo:pdbx_reference_molecule_features.source_ordinal rdf:datatype="xsd:int">1</PDBo:pdbx_reference_molecule_features.source_ordinal>
             <PDBo:pdbx_reference_molecule_features.type>External_reference_ID</PDBo:pdbx_reference_molecule_features.type>
             <PDBo:pdbx_reference_molecule_features.value>119625784</PDBo:pdbx_reference_molecule_features.value>
           </PDBo:pdbx_reference_molecule_features>
@@ -300,10 +300,10 @@
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_list>
             <PDBo:pdbx_reference_molecule_features.family_prd_id>FAM_000288</PDBo:pdbx_reference_molecule_features.family_prd_id>
-            <PDBo:pdbx_reference_molecule_features.ordinal>11</PDBo:pdbx_reference_molecule_features.ordinal>
+            <PDBo:pdbx_reference_molecule_features.ordinal rdf:datatype="xsd:int">11</PDBo:pdbx_reference_molecule_features.ordinal>
             <PDBo:pdbx_reference_molecule_features.prd_id>PRD_000392</PDBo:pdbx_reference_molecule_features.prd_id>
             <PDBo:pdbx_reference_molecule_features.source>PubChem</PDBo:pdbx_reference_molecule_features.source>
-            <PDBo:pdbx_reference_molecule_features.source_ordinal>1</PDBo:pdbx_reference_molecule_features.source_ordinal>
+            <PDBo:pdbx_reference_molecule_features.source_ordinal rdf:datatype="xsd:int">1</PDBo:pdbx_reference_molecule_features.source_ordinal>
             <PDBo:pdbx_reference_molecule_features.type>External_reference_ID</PDBo:pdbx_reference_molecule_features.type>
             <PDBo:pdbx_reference_molecule_features.value>15018015</PDBo:pdbx_reference_molecule_features.value>
             <PDBo:link_to_pubchem_substance rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubchem/substance/SID15018015" rdfs:label="pubchem.substance:15018015"/>
@@ -366,7 +366,7 @@
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_list>
             <PDBo:pdbx_reference_molecule_synonyms.family_prd_id>FAM_000288</PDBo:pdbx_reference_molecule_synonyms.family_prd_id>
-            <PDBo:pdbx_reference_molecule_synonyms.ordinal>1</PDBo:pdbx_reference_molecule_synonyms.ordinal>
+            <PDBo:pdbx_reference_molecule_synonyms.ordinal rdf:datatype="xsd:int">1</PDBo:pdbx_reference_molecule_synonyms.ordinal>
             <PDBo:pdbx_reference_molecule_synonyms.prd_id>PRD_000416</PDBo:pdbx_reference_molecule_synonyms.prd_id>
             <PDBo:pdbx_reference_molecule_synonyms.name>CP-81,282</PDBo:pdbx_reference_molecule_synonyms.name>
             <PDBo:pdbx_reference_molecule_synonyms.source>PDB</PDBo:pdbx_reference_molecule_synonyms.source>
@@ -381,7 +381,7 @@
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_list>
             <PDBo:pdbx_reference_molecule_synonyms.family_prd_id>FAM_000288</PDBo:pdbx_reference_molecule_synonyms.family_prd_id>
-            <PDBo:pdbx_reference_molecule_synonyms.ordinal>2</PDBo:pdbx_reference_molecule_synonyms.ordinal>
+            <PDBo:pdbx_reference_molecule_synonyms.ordinal rdf:datatype="xsd:int">2</PDBo:pdbx_reference_molecule_synonyms.ordinal>
             <PDBo:pdbx_reference_molecule_synonyms.prd_id>PRD_000416</PDBo:pdbx_reference_molecule_synonyms.prd_id>
             <PDBo:pdbx_reference_molecule_synonyms.name>L-Norleucinamide, N-(4-morpholinylcarbonyl)-L-phenylalanyl-N-[(1S)-1-(cyclohexylmethyl)-3,3-difluoro-4-(methylamino)-2,4-dioxobutyl]-(9CI)</PDBo:pdbx_reference_molecule_synonyms.name>
             <PDBo:pdbx_reference_molecule_synonyms.source>Scifinder</PDBo:pdbx_reference_molecule_synonyms.source>
@@ -396,7 +396,7 @@
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_list>
             <PDBo:pdbx_reference_molecule_synonyms.family_prd_id>FAM_000288</PDBo:pdbx_reference_molecule_synonyms.family_prd_id>
-            <PDBo:pdbx_reference_molecule_synonyms.ordinal>3</PDBo:pdbx_reference_molecule_synonyms.ordinal>
+            <PDBo:pdbx_reference_molecule_synonyms.ordinal rdf:datatype="xsd:int">3</PDBo:pdbx_reference_molecule_synonyms.ordinal>
             <PDBo:pdbx_reference_molecule_synonyms.prd_id>PRD_000416</PDBo:pdbx_reference_molecule_synonyms.prd_id>
             <PDBo:pdbx_reference_molecule_synonyms.name>L-Norleucinamide, N-(4-morpholinylcarbonyl)-L-phenylalanyl-N-[1-(cyclohexylmethyl)-3,3-difluoro-4-(methylamino)-2,4-dioxobutyl]-, (S)-</PDBo:pdbx_reference_molecule_synonyms.name>
             <PDBo:pdbx_reference_molecule_synonyms.source>Scifinder</PDBo:pdbx_reference_molecule_synonyms.source>
@@ -411,7 +411,7 @@
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_list>
             <PDBo:pdbx_reference_molecule_synonyms.family_prd_id>FAM_000288</PDBo:pdbx_reference_molecule_synonyms.family_prd_id>
-            <PDBo:pdbx_reference_molecule_synonyms.ordinal>4</PDBo:pdbx_reference_molecule_synonyms.ordinal>
+            <PDBo:pdbx_reference_molecule_synonyms.ordinal rdf:datatype="xsd:int">4</PDBo:pdbx_reference_molecule_synonyms.ordinal>
             <PDBo:pdbx_reference_molecule_synonyms.prd_id>PRD_000416</PDBo:pdbx_reference_molecule_synonyms.prd_id>
             <PDBo:pdbx_reference_molecule_synonyms.name>CP 81282</PDBo:pdbx_reference_molecule_synonyms.name>
             <PDBo:pdbx_reference_molecule_synonyms.source>Scifinder</PDBo:pdbx_reference_molecule_synonyms.source>
@@ -426,7 +426,7 @@
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_list>
             <PDBo:pdbx_reference_molecule_synonyms.family_prd_id>FAM_000288</PDBo:pdbx_reference_molecule_synonyms.family_prd_id>
-            <PDBo:pdbx_reference_molecule_synonyms.ordinal>5</PDBo:pdbx_reference_molecule_synonyms.ordinal>
+            <PDBo:pdbx_reference_molecule_synonyms.ordinal rdf:datatype="xsd:int">5</PDBo:pdbx_reference_molecule_synonyms.ordinal>
             <PDBo:pdbx_reference_molecule_synonyms.prd_id>PRD_000432</PDBo:pdbx_reference_molecule_synonyms.prd_id>
             <PDBo:pdbx_reference_molecule_synonyms.name>L-Cysteinamide, N-(4-morpholinylcarbonyl)-L-phenylalanyl-N-[(1S,2R)-1-(cyclohexylmethyl)-2-hydroxy-3-(1-methylethoxy)-3-oxopropyl]-S-methyl-</PDBo:pdbx_reference_molecule_synonyms.name>
             <PDBo:pdbx_reference_molecule_synonyms.source>Scifinder</PDBo:pdbx_reference_molecule_synonyms.source>
@@ -441,7 +441,7 @@
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_list>
             <PDBo:pdbx_reference_molecule_synonyms.family_prd_id>FAM_000288</PDBo:pdbx_reference_molecule_synonyms.family_prd_id>
-            <PDBo:pdbx_reference_molecule_synonyms.ordinal>6</PDBo:pdbx_reference_molecule_synonyms.ordinal>
+            <PDBo:pdbx_reference_molecule_synonyms.ordinal rdf:datatype="xsd:int">6</PDBo:pdbx_reference_molecule_synonyms.ordinal>
             <PDBo:pdbx_reference_molecule_synonyms.prd_id>PRD_000432</PDBo:pdbx_reference_molecule_synonyms.prd_id>
             <PDBo:pdbx_reference_molecule_synonyms.name>L-Cysteinamide, N-(4-morpholinylcarbonyl)-L-phenylalanyl-N-[1-(cyclohexylmethyl)-2-hydroxy-3-(1-methylethoxy)-3-oxopropyl]-S-methyl-, [R-(R*,S*)]-</PDBo:pdbx_reference_molecule_synonyms.name>
             <PDBo:pdbx_reference_molecule_synonyms.source>Scifinder</PDBo:pdbx_reference_molecule_synonyms.source>
@@ -456,7 +456,7 @@
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_list>
             <PDBo:pdbx_reference_molecule_synonyms.family_prd_id>FAM_000288</PDBo:pdbx_reference_molecule_synonyms.family_prd_id>
-            <PDBo:pdbx_reference_molecule_synonyms.ordinal>7</PDBo:pdbx_reference_molecule_synonyms.ordinal>
+            <PDBo:pdbx_reference_molecule_synonyms.ordinal rdf:datatype="xsd:int">7</PDBo:pdbx_reference_molecule_synonyms.ordinal>
             <PDBo:pdbx_reference_molecule_synonyms.prd_id>PRD_000432</PDBo:pdbx_reference_molecule_synonyms.prd_id>
             <PDBo:pdbx_reference_molecule_synonyms.name>CP 80794</PDBo:pdbx_reference_molecule_synonyms.name>
             <PDBo:pdbx_reference_molecule_synonyms.source>Scifinder</PDBo:pdbx_reference_molecule_synonyms.source>
@@ -471,7 +471,7 @@
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_list>
             <PDBo:pdbx_reference_molecule_synonyms.family_prd_id>FAM_000288</PDBo:pdbx_reference_molecule_synonyms.family_prd_id>
-            <PDBo:pdbx_reference_molecule_synonyms.ordinal>8</PDBo:pdbx_reference_molecule_synonyms.ordinal>
+            <PDBo:pdbx_reference_molecule_synonyms.ordinal rdf:datatype="xsd:int">8</PDBo:pdbx_reference_molecule_synonyms.ordinal>
             <PDBo:pdbx_reference_molecule_synonyms.prd_id>PRD_000432</PDBo:pdbx_reference_molecule_synonyms.prd_id>
             <PDBo:pdbx_reference_molecule_synonyms.name>Terlakiren</PDBo:pdbx_reference_molecule_synonyms.name>
             <PDBo:pdbx_reference_molecule_synonyms.source>Scifinder</PDBo:pdbx_reference_molecule_synonyms.source>
@@ -486,7 +486,7 @@
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_list>
             <PDBo:pdbx_reference_molecule_synonyms.family_prd_id>FAM_000288</PDBo:pdbx_reference_molecule_synonyms.family_prd_id>
-            <PDBo:pdbx_reference_molecule_synonyms.ordinal>9</PDBo:pdbx_reference_molecule_synonyms.ordinal>
+            <PDBo:pdbx_reference_molecule_synonyms.ordinal rdf:datatype="xsd:int">9</PDBo:pdbx_reference_molecule_synonyms.ordinal>
             <PDBo:pdbx_reference_molecule_synonyms.prd_id>PRD_000432</PDBo:pdbx_reference_molecule_synonyms.prd_id>
             <PDBo:pdbx_reference_molecule_synonyms.name>(2R,3S)-4-Cyclohexyl-2-hydroxy-3-((R)-3-methylsulfanyl-2-{(S)-2-[(morpholine-4-carbonyl)-amino]-3-phenyl-propionylamino}-propionylamino)-butyric acid isopropyl ester</PDBo:pdbx_reference_molecule_synonyms.name>
             <PDBo:pdbx_reference_molecule_synonyms.source>Beilstein</PDBo:pdbx_reference_molecule_synonyms.source>
@@ -501,7 +501,7 @@
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_list>
             <PDBo:pdbx_reference_molecule_synonyms.family_prd_id>FAM_000288</PDBo:pdbx_reference_molecule_synonyms.family_prd_id>
-            <PDBo:pdbx_reference_molecule_synonyms.ordinal>10</PDBo:pdbx_reference_molecule_synonyms.ordinal>
+            <PDBo:pdbx_reference_molecule_synonyms.ordinal rdf:datatype="xsd:int">10</PDBo:pdbx_reference_molecule_synonyms.ordinal>
             <PDBo:pdbx_reference_molecule_synonyms.prd_id>PRD_000432</PDBo:pdbx_reference_molecule_synonyms.prd_id>
             <PDBo:pdbx_reference_molecule_synonyms.name>Terlakiren</PDBo:pdbx_reference_molecule_synonyms.name>
             <PDBo:pdbx_reference_molecule_synonyms.source>KEGG</PDBo:pdbx_reference_molecule_synonyms.source>
@@ -516,7 +516,7 @@
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_list>
             <PDBo:pdbx_reference_molecule_synonyms.family_prd_id>FAM_000288</PDBo:pdbx_reference_molecule_synonyms.family_prd_id>
-            <PDBo:pdbx_reference_molecule_synonyms.ordinal>11</PDBo:pdbx_reference_molecule_synonyms.ordinal>
+            <PDBo:pdbx_reference_molecule_synonyms.ordinal rdf:datatype="xsd:int">11</PDBo:pdbx_reference_molecule_synonyms.ordinal>
             <PDBo:pdbx_reference_molecule_synonyms.prd_id>PRD_000432</PDBo:pdbx_reference_molecule_synonyms.prd_id>
             <PDBo:pdbx_reference_molecule_synonyms.name>Terlakiren</PDBo:pdbx_reference_molecule_synonyms.name>
             <PDBo:pdbx_reference_molecule_synonyms.source>PubChem</PDBo:pdbx_reference_molecule_synonyms.source>
@@ -531,7 +531,7 @@
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_list>
             <PDBo:pdbx_reference_molecule_synonyms.family_prd_id>FAM_000288</PDBo:pdbx_reference_molecule_synonyms.family_prd_id>
-            <PDBo:pdbx_reference_molecule_synonyms.ordinal>12</PDBo:pdbx_reference_molecule_synonyms.ordinal>
+            <PDBo:pdbx_reference_molecule_synonyms.ordinal rdf:datatype="xsd:int">12</PDBo:pdbx_reference_molecule_synonyms.ordinal>
             <PDBo:pdbx_reference_molecule_synonyms.prd_id>PRD_000432</PDBo:pdbx_reference_molecule_synonyms.prd_id>
             <PDBo:pdbx_reference_molecule_synonyms.name>MOR-PHE-CYM-NOR Terlakiren</PDBo:pdbx_reference_molecule_synonyms.name>
             <PDBo:pdbx_reference_molecule_synonyms.source>PubChem</PDBo:pdbx_reference_molecule_synonyms.source>
@@ -546,7 +546,7 @@
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_list>
             <PDBo:pdbx_reference_molecule_synonyms.family_prd_id>FAM_000288</PDBo:pdbx_reference_molecule_synonyms.family_prd_id>
-            <PDBo:pdbx_reference_molecule_synonyms.ordinal>13</PDBo:pdbx_reference_molecule_synonyms.ordinal>
+            <PDBo:pdbx_reference_molecule_synonyms.ordinal rdf:datatype="xsd:int">13</PDBo:pdbx_reference_molecule_synonyms.ordinal>
             <PDBo:pdbx_reference_molecule_synonyms.prd_id>PRD_000432</PDBo:pdbx_reference_molecule_synonyms.prd_id>
             <PDBo:pdbx_reference_molecule_synonyms.name>Terlakiren</PDBo:pdbx_reference_molecule_synonyms.name>
             <PDBo:pdbx_reference_molecule_synonyms.source>PubChem</PDBo:pdbx_reference_molecule_synonyms.source>
@@ -561,7 +561,7 @@
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_list>
             <PDBo:pdbx_reference_molecule_synonyms.family_prd_id>FAM_000288</PDBo:pdbx_reference_molecule_synonyms.family_prd_id>
-            <PDBo:pdbx_reference_molecule_synonyms.ordinal>14</PDBo:pdbx_reference_molecule_synonyms.ordinal>
+            <PDBo:pdbx_reference_molecule_synonyms.ordinal rdf:datatype="xsd:int">14</PDBo:pdbx_reference_molecule_synonyms.ordinal>
             <PDBo:pdbx_reference_molecule_synonyms.prd_id>PRD_000432</PDBo:pdbx_reference_molecule_synonyms.prd_id>
             <PDBo:pdbx_reference_molecule_synonyms.name>CID64922</PDBo:pdbx_reference_molecule_synonyms.name>
             <PDBo:pdbx_reference_molecule_synonyms.source>PubChem</PDBo:pdbx_reference_molecule_synonyms.source>
@@ -576,7 +576,7 @@
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_list>
             <PDBo:pdbx_reference_molecule_synonyms.family_prd_id>FAM_000288</PDBo:pdbx_reference_molecule_synonyms.family_prd_id>
-            <PDBo:pdbx_reference_molecule_synonyms.ordinal>15</PDBo:pdbx_reference_molecule_synonyms.ordinal>
+            <PDBo:pdbx_reference_molecule_synonyms.ordinal rdf:datatype="xsd:int">15</PDBo:pdbx_reference_molecule_synonyms.ordinal>
             <PDBo:pdbx_reference_molecule_synonyms.prd_id>PRD_000432</PDBo:pdbx_reference_molecule_synonyms.prd_id>
             <PDBo:pdbx_reference_molecule_synonyms.name>CP 80794</PDBo:pdbx_reference_molecule_synonyms.name>
             <PDBo:pdbx_reference_molecule_synonyms.source>PubChem</PDBo:pdbx_reference_molecule_synonyms.source>
@@ -591,7 +591,7 @@
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_list>
             <PDBo:pdbx_reference_molecule_synonyms.family_prd_id>FAM_000288</PDBo:pdbx_reference_molecule_synonyms.family_prd_id>
-            <PDBo:pdbx_reference_molecule_synonyms.ordinal>16</PDBo:pdbx_reference_molecule_synonyms.ordinal>
+            <PDBo:pdbx_reference_molecule_synonyms.ordinal rdf:datatype="xsd:int">16</PDBo:pdbx_reference_molecule_synonyms.ordinal>
             <PDBo:pdbx_reference_molecule_synonyms.prd_id>PRD_000432</PDBo:pdbx_reference_molecule_synonyms.prd_id>
             <PDBo:pdbx_reference_molecule_synonyms.name>D03743</PDBo:pdbx_reference_molecule_synonyms.name>
             <PDBo:pdbx_reference_molecule_synonyms.source>PubChem</PDBo:pdbx_reference_molecule_synonyms.source>
@@ -606,7 +606,7 @@
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_list>
             <PDBo:pdbx_reference_molecule_synonyms.family_prd_id>FAM_000288</PDBo:pdbx_reference_molecule_synonyms.family_prd_id>
-            <PDBo:pdbx_reference_molecule_synonyms.ordinal>17</PDBo:pdbx_reference_molecule_synonyms.ordinal>
+            <PDBo:pdbx_reference_molecule_synonyms.ordinal rdf:datatype="xsd:int">17</PDBo:pdbx_reference_molecule_synonyms.ordinal>
             <PDBo:pdbx_reference_molecule_synonyms.prd_id>PRD_000432</PDBo:pdbx_reference_molecule_synonyms.prd_id>
             <PDBo:pdbx_reference_molecule_synonyms.name>Isopropyl (alphaR,betaS)-alpha-hydroxy-beta-((R)-3-(methylthio)-2-((S)-alpha-4-morpholinecarboxamidohydrocinnamamido) propionamido)cyclohexanebutyrate</PDBo:pdbx_reference_molecule_synonyms.name>
             <PDBo:pdbx_reference_molecule_synonyms.source>PubChem</PDBo:pdbx_reference_molecule_synonyms.source>
@@ -621,7 +621,7 @@
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_list>
             <PDBo:pdbx_reference_molecule_synonyms.family_prd_id>FAM_000288</PDBo:pdbx_reference_molecule_synonyms.family_prd_id>
-            <PDBo:pdbx_reference_molecule_synonyms.ordinal>18</PDBo:pdbx_reference_molecule_synonyms.ordinal>
+            <PDBo:pdbx_reference_molecule_synonyms.ordinal rdf:datatype="xsd:int">18</PDBo:pdbx_reference_molecule_synonyms.ordinal>
             <PDBo:pdbx_reference_molecule_synonyms.prd_id>PRD_000432</PDBo:pdbx_reference_molecule_synonyms.prd_id>
             <PDBo:pdbx_reference_molecule_synonyms.name>L-Cysteinamide, N-(4-morpholinylcarbonyl)-L-phenylalanyl-N-(1-(cyclohexylmethyl)-2-hydroxy-3-(1-methylethoxy)-3-oxopropyl)-S-methyl-, (R-(R*,S*))-</PDBo:pdbx_reference_molecule_synonyms.name>
             <PDBo:pdbx_reference_molecule_synonyms.source>PubChem</PDBo:pdbx_reference_molecule_synonyms.source>
@@ -636,7 +636,7 @@
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_list>
             <PDBo:pdbx_reference_molecule_synonyms.family_prd_id>FAM_000288</PDBo:pdbx_reference_molecule_synonyms.family_prd_id>
-            <PDBo:pdbx_reference_molecule_synonyms.ordinal>19</PDBo:pdbx_reference_molecule_synonyms.ordinal>
+            <PDBo:pdbx_reference_molecule_synonyms.ordinal rdf:datatype="xsd:int">19</PDBo:pdbx_reference_molecule_synonyms.ordinal>
             <PDBo:pdbx_reference_molecule_synonyms.prd_id>PRD_000432</PDBo:pdbx_reference_molecule_synonyms.prd_id>
             <PDBo:pdbx_reference_molecule_synonyms.name>[R-(R*,S* )]-N-(4-Morpholinylcarbonyl)-L-phenylalanyl-N-[1-(cyclohexylmet hyl)-2-hydroxy-3-(1-methylethoxy)-3-oxopropyl]-S-methyl-L-cyste inamide</PDBo:pdbx_reference_molecule_synonyms.name>
             <PDBo:pdbx_reference_molecule_synonyms.source>ChemSpider</PDBo:pdbx_reference_molecule_synonyms.source>
@@ -651,7 +651,7 @@
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_list>
             <PDBo:pdbx_reference_molecule_synonyms.family_prd_id>FAM_000288</PDBo:pdbx_reference_molecule_synonyms.family_prd_id>
-            <PDBo:pdbx_reference_molecule_synonyms.ordinal>20</PDBo:pdbx_reference_molecule_synonyms.ordinal>
+            <PDBo:pdbx_reference_molecule_synonyms.ordinal rdf:datatype="xsd:int">20</PDBo:pdbx_reference_molecule_synonyms.ordinal>
             <PDBo:pdbx_reference_molecule_synonyms.prd_id>PRD_000432</PDBo:pdbx_reference_molecule_synonyms.prd_id>
             <PDBo:pdbx_reference_molecule_synonyms.name>CP-80,794</PDBo:pdbx_reference_molecule_synonyms.name>
             <PDBo:pdbx_reference_molecule_synonyms.source>ChemSpider</PDBo:pdbx_reference_molecule_synonyms.source>
@@ -666,7 +666,7 @@
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_list>
             <PDBo:pdbx_reference_molecule_synonyms.family_prd_id>FAM_000288</PDBo:pdbx_reference_molecule_synonyms.family_prd_id>
-            <PDBo:pdbx_reference_molecule_synonyms.ordinal>21</PDBo:pdbx_reference_molecule_synonyms.ordinal>
+            <PDBo:pdbx_reference_molecule_synonyms.ordinal rdf:datatype="xsd:int">21</PDBo:pdbx_reference_molecule_synonyms.ordinal>
             <PDBo:pdbx_reference_molecule_synonyms.prd_id>PRD_000432</PDBo:pdbx_reference_molecule_synonyms.prd_id>
             <PDBo:pdbx_reference_molecule_synonyms.name>Isopropyl (aR,bS)-a-hydroxy-b-[(R)-3-(methylthio)-2-[(S)-a-4-morpholinec arboxamidohydrocinnamamido] propionamido]cyclohexanebutyratesteinamide</PDBo:pdbx_reference_molecule_synonyms.name>
             <PDBo:pdbx_reference_molecule_synonyms.source>ChemSpider</PDBo:pdbx_reference_molecule_synonyms.source>
@@ -681,7 +681,7 @@
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_list>
             <PDBo:pdbx_reference_molecule_synonyms.family_prd_id>FAM_000288</PDBo:pdbx_reference_molecule_synonyms.family_prd_id>
-            <PDBo:pdbx_reference_molecule_synonyms.ordinal>22</PDBo:pdbx_reference_molecule_synonyms.ordinal>
+            <PDBo:pdbx_reference_molecule_synonyms.ordinal rdf:datatype="xsd:int">22</PDBo:pdbx_reference_molecule_synonyms.ordinal>
             <PDBo:pdbx_reference_molecule_synonyms.prd_id>PRD_000432</PDBo:pdbx_reference_molecule_synonyms.prd_id>
             <PDBo:pdbx_reference_molecule_synonyms.name>Isopropyl (alphaR,betaS)-alpha-hydroxy-beta-((R)-3-(methylthio)-2-((S)-a lpha-4-morpholinecarboxamidohydrocinnamamido)propionamido)cyclo hexanebutyrate</PDBo:pdbx_reference_molecule_synonyms.name>
             <PDBo:pdbx_reference_molecule_synonyms.source>ChemSpider</PDBo:pdbx_reference_molecule_synonyms.source>

@@ -25,18 +25,18 @@
               </rdf:Description>
             </PDBo:reference_to_entry>
             <PDBo:atom_sites.entry_id>7JIA</PDBo:atom_sites.entry_id>
-            <PDBo:atom_sites.fract_transf_matrix11>1.000000</PDBo:atom_sites.fract_transf_matrix11>
-            <PDBo:atom_sites.fract_transf_matrix12>0.000000</PDBo:atom_sites.fract_transf_matrix12>
-            <PDBo:atom_sites.fract_transf_matrix13>0.000000</PDBo:atom_sites.fract_transf_matrix13>
-            <PDBo:atom_sites.fract_transf_matrix21>0.000000</PDBo:atom_sites.fract_transf_matrix21>
-            <PDBo:atom_sites.fract_transf_matrix22>1.000000</PDBo:atom_sites.fract_transf_matrix22>
-            <PDBo:atom_sites.fract_transf_matrix23>0.000000</PDBo:atom_sites.fract_transf_matrix23>
-            <PDBo:atom_sites.fract_transf_matrix31>0.000000</PDBo:atom_sites.fract_transf_matrix31>
-            <PDBo:atom_sites.fract_transf_matrix32>0.000000</PDBo:atom_sites.fract_transf_matrix32>
-            <PDBo:atom_sites.fract_transf_matrix33>1.000000</PDBo:atom_sites.fract_transf_matrix33>
-            <PDBo:atom_sites.fract_transf_vector1>0.00000</PDBo:atom_sites.fract_transf_vector1>
-            <PDBo:atom_sites.fract_transf_vector2>0.00000</PDBo:atom_sites.fract_transf_vector2>
-            <PDBo:atom_sites.fract_transf_vector3>0.00000</PDBo:atom_sites.fract_transf_vector3>
+            <PDBo:atom_sites.fract_transf_matrix11 rdf:datatype="xsd:decimal">1.000000</PDBo:atom_sites.fract_transf_matrix11>
+            <PDBo:atom_sites.fract_transf_matrix12 rdf:datatype="xsd:decimal">0.000000</PDBo:atom_sites.fract_transf_matrix12>
+            <PDBo:atom_sites.fract_transf_matrix13 rdf:datatype="xsd:decimal">0.000000</PDBo:atom_sites.fract_transf_matrix13>
+            <PDBo:atom_sites.fract_transf_matrix21 rdf:datatype="xsd:decimal">0.000000</PDBo:atom_sites.fract_transf_matrix21>
+            <PDBo:atom_sites.fract_transf_matrix22 rdf:datatype="xsd:decimal">1.000000</PDBo:atom_sites.fract_transf_matrix22>
+            <PDBo:atom_sites.fract_transf_matrix23 rdf:datatype="xsd:decimal">0.000000</PDBo:atom_sites.fract_transf_matrix23>
+            <PDBo:atom_sites.fract_transf_matrix31 rdf:datatype="xsd:decimal">0.000000</PDBo:atom_sites.fract_transf_matrix31>
+            <PDBo:atom_sites.fract_transf_matrix32 rdf:datatype="xsd:decimal">0.000000</PDBo:atom_sites.fract_transf_matrix32>
+            <PDBo:atom_sites.fract_transf_matrix33 rdf:datatype="xsd:decimal">1.000000</PDBo:atom_sites.fract_transf_matrix33>
+            <PDBo:atom_sites.fract_transf_vector1 rdf:datatype="xsd:decimal">0.00000</PDBo:atom_sites.fract_transf_vector1>
+            <PDBo:atom_sites.fract_transf_vector2 rdf:datatype="xsd:decimal">0.00000</PDBo:atom_sites.fract_transf_vector2>
+            <PDBo:atom_sites.fract_transf_vector3 rdf:datatype="xsd:decimal">0.00000</PDBo:atom_sites.fract_transf_vector3>
           </PDBo:atom_sites>
         </PDBo:has_atom_sites>
       </PDBo:atom_sitesCategory>
@@ -80,14 +80,14 @@
         <PDBo:has_audit_author>
           <PDBo:audit_author rdf:about="http://rdf.wwpdb.org/pdb/7JIA/audit_author/1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7JIA"/>
-            <PDBo:audit_author.pdbx_ordinal>1</PDBo:audit_author.pdbx_ordinal>
+            <PDBo:audit_author.pdbx_ordinal rdf:datatype="xsd:int">1</PDBo:audit_author.pdbx_ordinal>
             <PDBo:audit_author.name>Takjoo, R.</PDBo:audit_author.name>
           </PDBo:audit_author>
         </PDBo:has_audit_author>
         <PDBo:has_audit_author>
           <PDBo:audit_author rdf:about="http://rdf.wwpdb.org/pdb/7JIA/audit_author/2">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7JIA"/>
-            <PDBo:audit_author.pdbx_ordinal>2</PDBo:audit_author.pdbx_ordinal>
+            <PDBo:audit_author.pdbx_ordinal rdf:datatype="xsd:int">2</PDBo:audit_author.pdbx_ordinal>
             <PDBo:audit_author.name>Daly, N.L.</PDBo:audit_author.name>
           </PDBo:audit_author>
         </PDBo:has_audit_author>
@@ -113,7 +113,7 @@
             <PDBo:chem_comp.id>ASP</PDBo:chem_comp.id>
             <PDBo:link_to_chem_comp rdf:resource="http://rdf.wwpdb.org/cc/ASP"/>
             <PDBo:chem_comp.formula>C4 H7 N O4</PDBo:chem_comp.formula>
-            <PDBo:chem_comp.formula_weight>133.103</PDBo:chem_comp.formula_weight>
+            <PDBo:chem_comp.formula_weight rdf:datatype="xsd:decimal">133.103</PDBo:chem_comp.formula_weight>
             <PDBo:chem_comp.mon_nstd_flag>y</PDBo:chem_comp.mon_nstd_flag>
             <PDBo:chem_comp.name>ASPARTIC ACID</PDBo:chem_comp.name>
             <PDBo:chem_comp.type>L-peptide linking</PDBo:chem_comp.type>
@@ -125,7 +125,7 @@
             <PDBo:chem_comp.id>CYS</PDBo:chem_comp.id>
             <PDBo:link_to_chem_comp rdf:resource="http://rdf.wwpdb.org/cc/CYS"/>
             <PDBo:chem_comp.formula>C3 H7 N O2 S</PDBo:chem_comp.formula>
-            <PDBo:chem_comp.formula_weight>121.158</PDBo:chem_comp.formula_weight>
+            <PDBo:chem_comp.formula_weight rdf:datatype="xsd:decimal">121.158</PDBo:chem_comp.formula_weight>
             <PDBo:chem_comp.mon_nstd_flag>y</PDBo:chem_comp.mon_nstd_flag>
             <PDBo:chem_comp.name>CYSTEINE</PDBo:chem_comp.name>
             <PDBo:chem_comp.type>L-peptide linking</PDBo:chem_comp.type>
@@ -137,7 +137,7 @@
             <PDBo:chem_comp.id>GLN</PDBo:chem_comp.id>
             <PDBo:link_to_chem_comp rdf:resource="http://rdf.wwpdb.org/cc/GLN"/>
             <PDBo:chem_comp.formula>C5 H10 N2 O3</PDBo:chem_comp.formula>
-            <PDBo:chem_comp.formula_weight>146.144</PDBo:chem_comp.formula_weight>
+            <PDBo:chem_comp.formula_weight rdf:datatype="xsd:decimal">146.144</PDBo:chem_comp.formula_weight>
             <PDBo:chem_comp.mon_nstd_flag>y</PDBo:chem_comp.mon_nstd_flag>
             <PDBo:chem_comp.name>GLUTAMINE</PDBo:chem_comp.name>
             <PDBo:chem_comp.type>L-peptide linking</PDBo:chem_comp.type>
@@ -149,7 +149,7 @@
             <PDBo:chem_comp.id>GLU</PDBo:chem_comp.id>
             <PDBo:link_to_chem_comp rdf:resource="http://rdf.wwpdb.org/cc/GLU"/>
             <PDBo:chem_comp.formula>C5 H9 N O4</PDBo:chem_comp.formula>
-            <PDBo:chem_comp.formula_weight>147.129</PDBo:chem_comp.formula_weight>
+            <PDBo:chem_comp.formula_weight rdf:datatype="xsd:decimal">147.129</PDBo:chem_comp.formula_weight>
             <PDBo:chem_comp.mon_nstd_flag>y</PDBo:chem_comp.mon_nstd_flag>
             <PDBo:chem_comp.name>GLUTAMIC ACID</PDBo:chem_comp.name>
             <PDBo:chem_comp.type>L-peptide linking</PDBo:chem_comp.type>
@@ -161,7 +161,7 @@
             <PDBo:chem_comp.id>GLY</PDBo:chem_comp.id>
             <PDBo:link_to_chem_comp rdf:resource="http://rdf.wwpdb.org/cc/GLY"/>
             <PDBo:chem_comp.formula>C2 H5 N O2</PDBo:chem_comp.formula>
-            <PDBo:chem_comp.formula_weight>75.067</PDBo:chem_comp.formula_weight>
+            <PDBo:chem_comp.formula_weight rdf:datatype="xsd:decimal">75.067</PDBo:chem_comp.formula_weight>
             <PDBo:chem_comp.mon_nstd_flag>y</PDBo:chem_comp.mon_nstd_flag>
             <PDBo:chem_comp.name>GLYCINE</PDBo:chem_comp.name>
             <PDBo:chem_comp.type>peptide linking</PDBo:chem_comp.type>
@@ -173,7 +173,7 @@
             <PDBo:chem_comp.id>HIS</PDBo:chem_comp.id>
             <PDBo:link_to_chem_comp rdf:resource="http://rdf.wwpdb.org/cc/HIS"/>
             <PDBo:chem_comp.formula>C6 H10 N3 O2 1</PDBo:chem_comp.formula>
-            <PDBo:chem_comp.formula_weight>156.162</PDBo:chem_comp.formula_weight>
+            <PDBo:chem_comp.formula_weight rdf:datatype="xsd:decimal">156.162</PDBo:chem_comp.formula_weight>
             <PDBo:chem_comp.mon_nstd_flag>y</PDBo:chem_comp.mon_nstd_flag>
             <PDBo:chem_comp.name>HISTIDINE</PDBo:chem_comp.name>
             <PDBo:chem_comp.type>L-peptide linking</PDBo:chem_comp.type>
@@ -185,7 +185,7 @@
             <PDBo:chem_comp.id>PHE</PDBo:chem_comp.id>
             <PDBo:link_to_chem_comp rdf:resource="http://rdf.wwpdb.org/cc/PHE"/>
             <PDBo:chem_comp.formula>C9 H11 N O2</PDBo:chem_comp.formula>
-            <PDBo:chem_comp.formula_weight>165.189</PDBo:chem_comp.formula_weight>
+            <PDBo:chem_comp.formula_weight rdf:datatype="xsd:decimal">165.189</PDBo:chem_comp.formula_weight>
             <PDBo:chem_comp.mon_nstd_flag>y</PDBo:chem_comp.mon_nstd_flag>
             <PDBo:chem_comp.name>PHENYLALANINE</PDBo:chem_comp.name>
             <PDBo:chem_comp.type>L-peptide linking</PDBo:chem_comp.type>
@@ -197,7 +197,7 @@
             <PDBo:chem_comp.id>PRO</PDBo:chem_comp.id>
             <PDBo:link_to_chem_comp rdf:resource="http://rdf.wwpdb.org/cc/PRO"/>
             <PDBo:chem_comp.formula>C5 H9 N O2</PDBo:chem_comp.formula>
-            <PDBo:chem_comp.formula_weight>115.130</PDBo:chem_comp.formula_weight>
+            <PDBo:chem_comp.formula_weight rdf:datatype="xsd:decimal">115.130</PDBo:chem_comp.formula_weight>
             <PDBo:chem_comp.mon_nstd_flag>y</PDBo:chem_comp.mon_nstd_flag>
             <PDBo:chem_comp.name>PROLINE</PDBo:chem_comp.name>
             <PDBo:chem_comp.type>L-peptide linking</PDBo:chem_comp.type>
@@ -209,7 +209,7 @@
             <PDBo:chem_comp.id>SER</PDBo:chem_comp.id>
             <PDBo:link_to_chem_comp rdf:resource="http://rdf.wwpdb.org/cc/SER"/>
             <PDBo:chem_comp.formula>C3 H7 N O3</PDBo:chem_comp.formula>
-            <PDBo:chem_comp.formula_weight>105.093</PDBo:chem_comp.formula_weight>
+            <PDBo:chem_comp.formula_weight rdf:datatype="xsd:decimal">105.093</PDBo:chem_comp.formula_weight>
             <PDBo:chem_comp.mon_nstd_flag>y</PDBo:chem_comp.mon_nstd_flag>
             <PDBo:chem_comp.name>SERINE</PDBo:chem_comp.name>
             <PDBo:chem_comp.type>L-peptide linking</PDBo:chem_comp.type>
@@ -221,7 +221,7 @@
             <PDBo:chem_comp.id>THR</PDBo:chem_comp.id>
             <PDBo:link_to_chem_comp rdf:resource="http://rdf.wwpdb.org/cc/THR"/>
             <PDBo:chem_comp.formula>C4 H9 N O3</PDBo:chem_comp.formula>
-            <PDBo:chem_comp.formula_weight>119.119</PDBo:chem_comp.formula_weight>
+            <PDBo:chem_comp.formula_weight rdf:datatype="xsd:decimal">119.119</PDBo:chem_comp.formula_weight>
             <PDBo:chem_comp.mon_nstd_flag>y</PDBo:chem_comp.mon_nstd_flag>
             <PDBo:chem_comp.name>THREONINE</PDBo:chem_comp.name>
             <PDBo:chem_comp.type>L-peptide linking</PDBo:chem_comp.type>
@@ -233,7 +233,7 @@
             <PDBo:chem_comp.id>TRP</PDBo:chem_comp.id>
             <PDBo:link_to_chem_comp rdf:resource="http://rdf.wwpdb.org/cc/TRP"/>
             <PDBo:chem_comp.formula>C11 H12 N2 O2</PDBo:chem_comp.formula>
-            <PDBo:chem_comp.formula_weight>204.225</PDBo:chem_comp.formula_weight>
+            <PDBo:chem_comp.formula_weight rdf:datatype="xsd:decimal">204.225</PDBo:chem_comp.formula_weight>
             <PDBo:chem_comp.mon_nstd_flag>y</PDBo:chem_comp.mon_nstd_flag>
             <PDBo:chem_comp.name>TRYPTOPHAN</PDBo:chem_comp.name>
             <PDBo:chem_comp.type>L-peptide linking</PDBo:chem_comp.type>
@@ -252,9 +252,9 @@
             <PDBo:citation.journal_id_ISSN>2218-273X</PDBo:citation.journal_id_ISSN>
             <PDBo:citation.journal_volume>10</PDBo:citation.journal_volume>
             <PDBo:citation.pdbx_database_id_DOI>10.3390/biom10081152</PDBo:citation.pdbx_database_id_DOI>
-            <PDBo:citation.pdbx_database_id_PubMed>32781704</PDBo:citation.pdbx_database_id_PubMed>
+            <PDBo:citation.pdbx_database_id_PubMed rdf:datatype="xsd:int">32781704</PDBo:citation.pdbx_database_id_PubMed>
             <PDBo:citation.title>Folding of Truncated Granulin Peptides.</PDBo:citation.title>
-            <PDBo:citation.year>2020</PDBo:citation.year>
+            <PDBo:citation.year rdf:datatype="xsd:int">2020</PDBo:citation.year>
             <PDBo:link_to_doi rdf:resource="http://doi.org/10.3390/biom10081152" rdfs:label="doi:10.3390/biom10081152"/>
             <PDBo:link_to_pubmed rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/32781704" rdfs:label="pubmed:32781704"/>
             <dcterms:references rdf:resource="http://identifiers.org/pubmed/32781704" rdfs:label="pubmed:32781704"/>
@@ -274,7 +274,7 @@
             </PDBo:reference_to_citation>
             <PDBo:citation_author.citation_id>primary</PDBo:citation_author.citation_id>
             <PDBo:citation_author.name>Takjoo, R.</PDBo:citation_author.name>
-            <PDBo:citation_author.ordinal>1</PDBo:citation_author.ordinal>
+            <PDBo:citation_author.ordinal rdf:datatype="xsd:int">1</PDBo:citation_author.ordinal>
           </PDBo:citation_author>
         </PDBo:has_citation_author>
         <PDBo:has_citation_author>
@@ -287,7 +287,7 @@
             </PDBo:reference_to_citation>
             <PDBo:citation_author.citation_id>primary</PDBo:citation_author.citation_id>
             <PDBo:citation_author.name>Wilson, D.</PDBo:citation_author.name>
-            <PDBo:citation_author.ordinal>2</PDBo:citation_author.ordinal>
+            <PDBo:citation_author.ordinal rdf:datatype="xsd:int">2</PDBo:citation_author.ordinal>
           </PDBo:citation_author>
         </PDBo:has_citation_author>
         <PDBo:has_citation_author>
@@ -300,7 +300,7 @@
             </PDBo:reference_to_citation>
             <PDBo:citation_author.citation_id>primary</PDBo:citation_author.citation_id>
             <PDBo:citation_author.name>Bansal, P.S.</PDBo:citation_author.name>
-            <PDBo:citation_author.ordinal>3</PDBo:citation_author.ordinal>
+            <PDBo:citation_author.ordinal rdf:datatype="xsd:int">3</PDBo:citation_author.ordinal>
           </PDBo:citation_author>
         </PDBo:has_citation_author>
         <PDBo:has_citation_author>
@@ -313,7 +313,7 @@
             </PDBo:reference_to_citation>
             <PDBo:citation_author.citation_id>primary</PDBo:citation_author.citation_id>
             <PDBo:citation_author.name>Loukas, A.</PDBo:citation_author.name>
-            <PDBo:citation_author.ordinal>4</PDBo:citation_author.ordinal>
+            <PDBo:citation_author.ordinal rdf:datatype="xsd:int">4</PDBo:citation_author.ordinal>
           </PDBo:citation_author>
         </PDBo:has_citation_author>
         <PDBo:has_citation_author>
@@ -326,7 +326,7 @@
             </PDBo:reference_to_citation>
             <PDBo:citation_author.citation_id>primary</PDBo:citation_author.citation_id>
             <PDBo:citation_author.name>Smout, M.J.</PDBo:citation_author.name>
-            <PDBo:citation_author.ordinal>5</PDBo:citation_author.ordinal>
+            <PDBo:citation_author.ordinal rdf:datatype="xsd:int">5</PDBo:citation_author.ordinal>
             <PDBo:citation_author.identifier_ORCID>0000-0001-6937-0112</PDBo:citation_author.identifier_ORCID>
             <PDBo:link_to_orcid rdf:resource="http://orcid.org/0000-0001-6937-0112" rdfs:label="orcid:0000-0001-6937-0112"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/orcid/0000-0001-6937-0112" rdfs:label="orcid:0000-0001-6937-0112"/>
@@ -342,7 +342,7 @@
             </PDBo:reference_to_citation>
             <PDBo:citation_author.citation_id>primary</PDBo:citation_author.citation_id>
             <PDBo:citation_author.name>Daly, N.L.</PDBo:citation_author.name>
-            <PDBo:citation_author.ordinal>6</PDBo:citation_author.ordinal>
+            <PDBo:citation_author.ordinal rdf:datatype="xsd:int">6</PDBo:citation_author.ordinal>
             <PDBo:citation_author.identifier_ORCID>0000-0002-4697-6602</PDBo:citation_author.identifier_ORCID>
             <PDBo:link_to_orcid rdf:resource="http://orcid.org/0000-0002-4697-6602" rdfs:label="orcid:0000-0002-4697-6602"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/orcid/0000-0002-4697-6602" rdfs:label="orcid:0000-0002-4697-6602"/>
@@ -381,9 +381,9 @@
           <PDBo:entity rdf:about="http://rdf.wwpdb.org/pdb/7JIA/entity/1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7JIA"/>
             <PDBo:entity.id>1</PDBo:entity.id>
-            <PDBo:entity.formula_weight>2441.677</PDBo:entity.formula_weight>
+            <PDBo:entity.formula_weight rdf:datatype="xsd:decimal">2441.677</PDBo:entity.formula_weight>
             <PDBo:entity.pdbx_description>Granulin-A</PDBo:entity.pdbx_description>
-            <PDBo:entity.pdbx_number_of_molecules>1</PDBo:entity.pdbx_number_of_molecules>
+            <PDBo:entity.pdbx_number_of_molecules rdf:datatype="xsd:int">1</PDBo:entity.pdbx_number_of_molecules>
             <PDBo:entity.src_method>syn</PDBo:entity.src_method>
             <PDBo:entity.type>polymer</PDBo:entity.type>
           </PDBo:entity>
@@ -428,7 +428,7 @@
             </PDBo:reference_to_entity_poly>
             <PDBo:entity_poly_seq.entity_id>1</PDBo:entity_poly_seq.entity_id>
             <PDBo:entity_poly_seq.mon_id>CYS</PDBo:entity_poly_seq.mon_id>
-            <PDBo:entity_poly_seq.num>1</PDBo:entity_poly_seq.num>
+            <PDBo:entity_poly_seq.num rdf:datatype="xsd:int">1</PDBo:entity_poly_seq.num>
             <PDBo:entity_poly_seq.hetero>n</PDBo:entity_poly_seq.hetero>
           </PDBo:entity_poly_seq>
         </PDBo:has_entity_poly_seq>
@@ -447,7 +447,7 @@
             </PDBo:reference_to_entity_poly>
             <PDBo:entity_poly_seq.entity_id>1</PDBo:entity_poly_seq.entity_id>
             <PDBo:entity_poly_seq.mon_id>GLY</PDBo:entity_poly_seq.mon_id>
-            <PDBo:entity_poly_seq.num>2</PDBo:entity_poly_seq.num>
+            <PDBo:entity_poly_seq.num rdf:datatype="xsd:int">2</PDBo:entity_poly_seq.num>
             <PDBo:entity_poly_seq.hetero>n</PDBo:entity_poly_seq.hetero>
           </PDBo:entity_poly_seq>
         </PDBo:has_entity_poly_seq>
@@ -466,7 +466,7 @@
             </PDBo:reference_to_entity_poly>
             <PDBo:entity_poly_seq.entity_id>1</PDBo:entity_poly_seq.entity_id>
             <PDBo:entity_poly_seq.mon_id>GLY</PDBo:entity_poly_seq.mon_id>
-            <PDBo:entity_poly_seq.num>3</PDBo:entity_poly_seq.num>
+            <PDBo:entity_poly_seq.num rdf:datatype="xsd:int">3</PDBo:entity_poly_seq.num>
             <PDBo:entity_poly_seq.hetero>n</PDBo:entity_poly_seq.hetero>
           </PDBo:entity_poly_seq>
         </PDBo:has_entity_poly_seq>
@@ -485,7 +485,7 @@
             </PDBo:reference_to_entity_poly>
             <PDBo:entity_poly_seq.entity_id>1</PDBo:entity_poly_seq.entity_id>
             <PDBo:entity_poly_seq.mon_id>GLY</PDBo:entity_poly_seq.mon_id>
-            <PDBo:entity_poly_seq.num>4</PDBo:entity_poly_seq.num>
+            <PDBo:entity_poly_seq.num rdf:datatype="xsd:int">4</PDBo:entity_poly_seq.num>
             <PDBo:entity_poly_seq.hetero>n</PDBo:entity_poly_seq.hetero>
           </PDBo:entity_poly_seq>
         </PDBo:has_entity_poly_seq>
@@ -504,7 +504,7 @@
             </PDBo:reference_to_entity_poly>
             <PDBo:entity_poly_seq.entity_id>1</PDBo:entity_poly_seq.entity_id>
             <PDBo:entity_poly_seq.mon_id>PHE</PDBo:entity_poly_seq.mon_id>
-            <PDBo:entity_poly_seq.num>5</PDBo:entity_poly_seq.num>
+            <PDBo:entity_poly_seq.num rdf:datatype="xsd:int">5</PDBo:entity_poly_seq.num>
             <PDBo:entity_poly_seq.hetero>n</PDBo:entity_poly_seq.hetero>
           </PDBo:entity_poly_seq>
         </PDBo:has_entity_poly_seq>
@@ -523,7 +523,7 @@
             </PDBo:reference_to_entity_poly>
             <PDBo:entity_poly_seq.entity_id>1</PDBo:entity_poly_seq.entity_id>
             <PDBo:entity_poly_seq.mon_id>SER</PDBo:entity_poly_seq.mon_id>
-            <PDBo:entity_poly_seq.num>6</PDBo:entity_poly_seq.num>
+            <PDBo:entity_poly_seq.num rdf:datatype="xsd:int">6</PDBo:entity_poly_seq.num>
             <PDBo:entity_poly_seq.hetero>n</PDBo:entity_poly_seq.hetero>
           </PDBo:entity_poly_seq>
         </PDBo:has_entity_poly_seq>
@@ -542,7 +542,7 @@
             </PDBo:reference_to_entity_poly>
             <PDBo:entity_poly_seq.entity_id>1</PDBo:entity_poly_seq.entity_id>
             <PDBo:entity_poly_seq.mon_id>CYS</PDBo:entity_poly_seq.mon_id>
-            <PDBo:entity_poly_seq.num>7</PDBo:entity_poly_seq.num>
+            <PDBo:entity_poly_seq.num rdf:datatype="xsd:int">7</PDBo:entity_poly_seq.num>
             <PDBo:entity_poly_seq.hetero>n</PDBo:entity_poly_seq.hetero>
           </PDBo:entity_poly_seq>
         </PDBo:has_entity_poly_seq>
@@ -561,7 +561,7 @@
             </PDBo:reference_to_entity_poly>
             <PDBo:entity_poly_seq.entity_id>1</PDBo:entity_poly_seq.entity_id>
             <PDBo:entity_poly_seq.mon_id>HIS</PDBo:entity_poly_seq.mon_id>
-            <PDBo:entity_poly_seq.num>8</PDBo:entity_poly_seq.num>
+            <PDBo:entity_poly_seq.num rdf:datatype="xsd:int">8</PDBo:entity_poly_seq.num>
             <PDBo:entity_poly_seq.hetero>n</PDBo:entity_poly_seq.hetero>
           </PDBo:entity_poly_seq>
         </PDBo:has_entity_poly_seq>
@@ -580,7 +580,7 @@
             </PDBo:reference_to_entity_poly>
             <PDBo:entity_poly_seq.entity_id>1</PDBo:entity_poly_seq.entity_id>
             <PDBo:entity_poly_seq.mon_id>ASP</PDBo:entity_poly_seq.mon_id>
-            <PDBo:entity_poly_seq.num>9</PDBo:entity_poly_seq.num>
+            <PDBo:entity_poly_seq.num rdf:datatype="xsd:int">9</PDBo:entity_poly_seq.num>
             <PDBo:entity_poly_seq.hetero>n</PDBo:entity_poly_seq.hetero>
           </PDBo:entity_poly_seq>
         </PDBo:has_entity_poly_seq>
@@ -599,7 +599,7 @@
             </PDBo:reference_to_entity_poly>
             <PDBo:entity_poly_seq.entity_id>1</PDBo:entity_poly_seq.entity_id>
             <PDBo:entity_poly_seq.mon_id>GLY</PDBo:entity_poly_seq.mon_id>
-            <PDBo:entity_poly_seq.num>10</PDBo:entity_poly_seq.num>
+            <PDBo:entity_poly_seq.num rdf:datatype="xsd:int">10</PDBo:entity_poly_seq.num>
             <PDBo:entity_poly_seq.hetero>n</PDBo:entity_poly_seq.hetero>
           </PDBo:entity_poly_seq>
         </PDBo:has_entity_poly_seq>
@@ -618,7 +618,7 @@
             </PDBo:reference_to_entity_poly>
             <PDBo:entity_poly_seq.entity_id>1</PDBo:entity_poly_seq.entity_id>
             <PDBo:entity_poly_seq.mon_id>GLU</PDBo:entity_poly_seq.mon_id>
-            <PDBo:entity_poly_seq.num>11</PDBo:entity_poly_seq.num>
+            <PDBo:entity_poly_seq.num rdf:datatype="xsd:int">11</PDBo:entity_poly_seq.num>
             <PDBo:entity_poly_seq.hetero>n</PDBo:entity_poly_seq.hetero>
           </PDBo:entity_poly_seq>
         </PDBo:has_entity_poly_seq>
@@ -637,7 +637,7 @@
             </PDBo:reference_to_entity_poly>
             <PDBo:entity_poly_seq.entity_id>1</PDBo:entity_poly_seq.entity_id>
             <PDBo:entity_poly_seq.mon_id>THR</PDBo:entity_poly_seq.mon_id>
-            <PDBo:entity_poly_seq.num>12</PDBo:entity_poly_seq.num>
+            <PDBo:entity_poly_seq.num rdf:datatype="xsd:int">12</PDBo:entity_poly_seq.num>
             <PDBo:entity_poly_seq.hetero>n</PDBo:entity_poly_seq.hetero>
           </PDBo:entity_poly_seq>
         </PDBo:has_entity_poly_seq>
@@ -656,7 +656,7 @@
             </PDBo:reference_to_entity_poly>
             <PDBo:entity_poly_seq.entity_id>1</PDBo:entity_poly_seq.entity_id>
             <PDBo:entity_poly_seq.mon_id>CYS</PDBo:entity_poly_seq.mon_id>
-            <PDBo:entity_poly_seq.num>13</PDBo:entity_poly_seq.num>
+            <PDBo:entity_poly_seq.num rdf:datatype="xsd:int">13</PDBo:entity_poly_seq.num>
             <PDBo:entity_poly_seq.hetero>n</PDBo:entity_poly_seq.hetero>
           </PDBo:entity_poly_seq>
         </PDBo:has_entity_poly_seq>
@@ -675,7 +675,7 @@
             </PDBo:reference_to_entity_poly>
             <PDBo:entity_poly_seq.entity_id>1</PDBo:entity_poly_seq.entity_id>
             <PDBo:entity_poly_seq.mon_id>CYS</PDBo:entity_poly_seq.mon_id>
-            <PDBo:entity_poly_seq.num>14</PDBo:entity_poly_seq.num>
+            <PDBo:entity_poly_seq.num rdf:datatype="xsd:int">14</PDBo:entity_poly_seq.num>
             <PDBo:entity_poly_seq.hetero>n</PDBo:entity_poly_seq.hetero>
           </PDBo:entity_poly_seq>
         </PDBo:has_entity_poly_seq>
@@ -694,7 +694,7 @@
             </PDBo:reference_to_entity_poly>
             <PDBo:entity_poly_seq.entity_id>1</PDBo:entity_poly_seq.entity_id>
             <PDBo:entity_poly_seq.mon_id>PRO</PDBo:entity_poly_seq.mon_id>
-            <PDBo:entity_poly_seq.num>15</PDBo:entity_poly_seq.num>
+            <PDBo:entity_poly_seq.num rdf:datatype="xsd:int">15</PDBo:entity_poly_seq.num>
             <PDBo:entity_poly_seq.hetero>n</PDBo:entity_poly_seq.hetero>
           </PDBo:entity_poly_seq>
         </PDBo:has_entity_poly_seq>
@@ -713,7 +713,7 @@
             </PDBo:reference_to_entity_poly>
             <PDBo:entity_poly_seq.entity_id>1</PDBo:entity_poly_seq.entity_id>
             <PDBo:entity_poly_seq.mon_id>THR</PDBo:entity_poly_seq.mon_id>
-            <PDBo:entity_poly_seq.num>16</PDBo:entity_poly_seq.num>
+            <PDBo:entity_poly_seq.num rdf:datatype="xsd:int">16</PDBo:entity_poly_seq.num>
             <PDBo:entity_poly_seq.hetero>n</PDBo:entity_poly_seq.hetero>
           </PDBo:entity_poly_seq>
         </PDBo:has_entity_poly_seq>
@@ -732,7 +732,7 @@
             </PDBo:reference_to_entity_poly>
             <PDBo:entity_poly_seq.entity_id>1</PDBo:entity_poly_seq.entity_id>
             <PDBo:entity_poly_seq.mon_id>SER</PDBo:entity_poly_seq.mon_id>
-            <PDBo:entity_poly_seq.num>17</PDBo:entity_poly_seq.num>
+            <PDBo:entity_poly_seq.num rdf:datatype="xsd:int">17</PDBo:entity_poly_seq.num>
             <PDBo:entity_poly_seq.hetero>n</PDBo:entity_poly_seq.hetero>
           </PDBo:entity_poly_seq>
         </PDBo:has_entity_poly_seq>
@@ -751,7 +751,7 @@
             </PDBo:reference_to_entity_poly>
             <PDBo:entity_poly_seq.entity_id>1</PDBo:entity_poly_seq.entity_id>
             <PDBo:entity_poly_seq.mon_id>GLN</PDBo:entity_poly_seq.mon_id>
-            <PDBo:entity_poly_seq.num>18</PDBo:entity_poly_seq.num>
+            <PDBo:entity_poly_seq.num rdf:datatype="xsd:int">18</PDBo:entity_poly_seq.num>
             <PDBo:entity_poly_seq.hetero>n</PDBo:entity_poly_seq.hetero>
           </PDBo:entity_poly_seq>
         </PDBo:has_entity_poly_seq>
@@ -770,7 +770,7 @@
             </PDBo:reference_to_entity_poly>
             <PDBo:entity_poly_seq.entity_id>1</PDBo:entity_poly_seq.entity_id>
             <PDBo:entity_poly_seq.mon_id>THR</PDBo:entity_poly_seq.mon_id>
-            <PDBo:entity_poly_seq.num>19</PDBo:entity_poly_seq.num>
+            <PDBo:entity_poly_seq.num rdf:datatype="xsd:int">19</PDBo:entity_poly_seq.num>
             <PDBo:entity_poly_seq.hetero>n</PDBo:entity_poly_seq.hetero>
           </PDBo:entity_poly_seq>
         </PDBo:has_entity_poly_seq>
@@ -789,7 +789,7 @@
             </PDBo:reference_to_entity_poly>
             <PDBo:entity_poly_seq.entity_id>1</PDBo:entity_poly_seq.entity_id>
             <PDBo:entity_poly_seq.mon_id>THR</PDBo:entity_poly_seq.mon_id>
-            <PDBo:entity_poly_seq.num>20</PDBo:entity_poly_seq.num>
+            <PDBo:entity_poly_seq.num rdf:datatype="xsd:int">20</PDBo:entity_poly_seq.num>
             <PDBo:entity_poly_seq.hetero>n</PDBo:entity_poly_seq.hetero>
           </PDBo:entity_poly_seq>
         </PDBo:has_entity_poly_seq>
@@ -808,7 +808,7 @@
             </PDBo:reference_to_entity_poly>
             <PDBo:entity_poly_seq.entity_id>1</PDBo:entity_poly_seq.entity_id>
             <PDBo:entity_poly_seq.mon_id>TRP</PDBo:entity_poly_seq.mon_id>
-            <PDBo:entity_poly_seq.num>21</PDBo:entity_poly_seq.num>
+            <PDBo:entity_poly_seq.num rdf:datatype="xsd:int">21</PDBo:entity_poly_seq.num>
             <PDBo:entity_poly_seq.hetero>n</PDBo:entity_poly_seq.hetero>
           </PDBo:entity_poly_seq>
         </PDBo:has_entity_poly_seq>
@@ -827,7 +827,7 @@
             </PDBo:reference_to_entity_poly>
             <PDBo:entity_poly_seq.entity_id>1</PDBo:entity_poly_seq.entity_id>
             <PDBo:entity_poly_seq.mon_id>GLY</PDBo:entity_poly_seq.mon_id>
-            <PDBo:entity_poly_seq.num>22</PDBo:entity_poly_seq.num>
+            <PDBo:entity_poly_seq.num rdf:datatype="xsd:int">22</PDBo:entity_poly_seq.num>
             <PDBo:entity_poly_seq.hetero>n</PDBo:entity_poly_seq.hetero>
           </PDBo:entity_poly_seq>
         </PDBo:has_entity_poly_seq>
@@ -846,7 +846,7 @@
             </PDBo:reference_to_entity_poly>
             <PDBo:entity_poly_seq.entity_id>1</PDBo:entity_poly_seq.entity_id>
             <PDBo:entity_poly_seq.mon_id>CYS</PDBo:entity_poly_seq.mon_id>
-            <PDBo:entity_poly_seq.num>23</PDBo:entity_poly_seq.num>
+            <PDBo:entity_poly_seq.num rdf:datatype="xsd:int">23</PDBo:entity_poly_seq.num>
             <PDBo:entity_poly_seq.hetero>n</PDBo:entity_poly_seq.hetero>
           </PDBo:entity_poly_seq>
         </PDBo:has_entity_poly_seq>
@@ -865,7 +865,7 @@
             </PDBo:reference_to_entity_poly>
             <PDBo:entity_poly_seq.entity_id>1</PDBo:entity_poly_seq.entity_id>
             <PDBo:entity_poly_seq.mon_id>CYS</PDBo:entity_poly_seq.mon_id>
-            <PDBo:entity_poly_seq.num>24</PDBo:entity_poly_seq.num>
+            <PDBo:entity_poly_seq.num rdf:datatype="xsd:int">24</PDBo:entity_poly_seq.num>
             <PDBo:entity_poly_seq.hetero>n</PDBo:entity_poly_seq.hetero>
           </PDBo:entity_poly_seq>
         </PDBo:has_entity_poly_seq>
@@ -908,8 +908,8 @@
               </rdf:Description>
             </PDBo:reference_to_pdbx_audit_revision_history>
             <PDBo:pdbx_audit_revision_details.data_content_type>Structure model</PDBo:pdbx_audit_revision_details.data_content_type>
-            <PDBo:pdbx_audit_revision_details.ordinal>1</PDBo:pdbx_audit_revision_details.ordinal>
-            <PDBo:pdbx_audit_revision_details.revision_ordinal>1</PDBo:pdbx_audit_revision_details.revision_ordinal>
+            <PDBo:pdbx_audit_revision_details.ordinal rdf:datatype="xsd:int">1</PDBo:pdbx_audit_revision_details.ordinal>
+            <PDBo:pdbx_audit_revision_details.revision_ordinal rdf:datatype="xsd:int">1</PDBo:pdbx_audit_revision_details.revision_ordinal>
             <PDBo:pdbx_audit_revision_details.provider>repository</PDBo:pdbx_audit_revision_details.provider>
             <PDBo:pdbx_audit_revision_details.type>Initial release</PDBo:pdbx_audit_revision_details.type>
           </PDBo:pdbx_audit_revision_details>
@@ -922,10 +922,10 @@
           <PDBo:pdbx_audit_revision_history rdf:about="http://rdf.wwpdb.org/pdb/7JIA/pdbx_audit_revision_history/Structure_model,1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7JIA"/>
             <PDBo:pdbx_audit_revision_history.data_content_type>Structure model</PDBo:pdbx_audit_revision_history.data_content_type>
-            <PDBo:pdbx_audit_revision_history.ordinal>1</PDBo:pdbx_audit_revision_history.ordinal>
-            <PDBo:pdbx_audit_revision_history.major_revision>1</PDBo:pdbx_audit_revision_history.major_revision>
-            <PDBo:pdbx_audit_revision_history.minor_revision>0</PDBo:pdbx_audit_revision_history.minor_revision>
-            <PDBo:pdbx_audit_revision_history.revision_date>2020-08-26</PDBo:pdbx_audit_revision_history.revision_date>
+            <PDBo:pdbx_audit_revision_history.ordinal rdf:datatype="xsd:int">1</PDBo:pdbx_audit_revision_history.ordinal>
+            <PDBo:pdbx_audit_revision_history.major_revision rdf:datatype="xsd:int">1</PDBo:pdbx_audit_revision_history.major_revision>
+            <PDBo:pdbx_audit_revision_history.minor_revision rdf:datatype="xsd:int">0</PDBo:pdbx_audit_revision_history.minor_revision>
+            <PDBo:pdbx_audit_revision_history.revision_date rdf:datatype="xsd:date">2020-08-26</PDBo:pdbx_audit_revision_history.revision_date>
           </PDBo:pdbx_audit_revision_history>
         </PDBo:has_pdbx_audit_revision_history>
       </PDBo:pdbx_audit_revision_historyCategory>
@@ -960,7 +960,7 @@
             <PDBo:pdbx_database_status.deposit_site>RCSB</PDBo:pdbx_database_status.deposit_site>
             <PDBo:pdbx_database_status.pdb_format_compatible>Y</PDBo:pdbx_database_status.pdb_format_compatible>
             <PDBo:pdbx_database_status.process_site>RCSB</PDBo:pdbx_database_status.process_site>
-            <PDBo:pdbx_database_status.recvd_initial_deposition_date>2020-07-23</PDBo:pdbx_database_status.recvd_initial_deposition_date>
+            <PDBo:pdbx_database_status.recvd_initial_deposition_date rdf:datatype="xsd:date">2020-07-23</PDBo:pdbx_database_status.recvd_initial_deposition_date>
             <PDBo:pdbx_database_status.status_code>REL</PDBo:pdbx_database_status.status_code>
             <PDBo:pdbx_database_status.status_code_nmr_data>REL</PDBo:pdbx_database_status.status_code_nmr_data>
           </PDBo:pdbx_database_status>
@@ -978,13 +978,13 @@
               </rdf:Description>
             </PDBo:reference_to_entity>
             <PDBo:pdbx_entity_src_syn.entity_id>1</PDBo:pdbx_entity_src_syn.entity_id>
-            <PDBo:pdbx_entity_src_syn.pdbx_src_id>1</PDBo:pdbx_entity_src_syn.pdbx_src_id>
+            <PDBo:pdbx_entity_src_syn.pdbx_src_id rdf:datatype="xsd:int">1</PDBo:pdbx_entity_src_syn.pdbx_src_id>
             <PDBo:pdbx_entity_src_syn.ncbi_taxonomy_id>7955</PDBo:pdbx_entity_src_syn.ncbi_taxonomy_id>
             <PDBo:pdbx_entity_src_syn.organism_common_name>Zebrafish</PDBo:pdbx_entity_src_syn.organism_common_name>
             <PDBo:pdbx_entity_src_syn.organism_scientific>Danio rerio</PDBo:pdbx_entity_src_syn.organism_scientific>
             <PDBo:pdbx_entity_src_syn.pdbx_alt_source_flag>sample</PDBo:pdbx_entity_src_syn.pdbx_alt_source_flag>
-            <PDBo:pdbx_entity_src_syn.pdbx_beg_seq_num>1</PDBo:pdbx_entity_src_syn.pdbx_beg_seq_num>
-            <PDBo:pdbx_entity_src_syn.pdbx_end_seq_num>24</PDBo:pdbx_entity_src_syn.pdbx_end_seq_num>
+            <PDBo:pdbx_entity_src_syn.pdbx_beg_seq_num rdf:datatype="xsd:int">1</PDBo:pdbx_entity_src_syn.pdbx_beg_seq_num>
+            <PDBo:pdbx_entity_src_syn.pdbx_end_seq_num rdf:datatype="xsd:int">24</PDBo:pdbx_entity_src_syn.pdbx_end_seq_num>
           </PDBo:pdbx_entity_src_syn>
         </PDBo:has_pdbx_entity_src_syn>
       </PDBo:pdbx_entity_src_synCategory>
@@ -1001,8 +1001,8 @@
             </PDBo:reference_to_entry>
             <PDBo:pdbx_nmr_ensemble.entry_id>7JIA</PDBo:pdbx_nmr_ensemble.entry_id>
             <PDBo:pdbx_nmr_ensemble.conformer_selection_criteria>target function</PDBo:pdbx_nmr_ensemble.conformer_selection_criteria>
-            <PDBo:pdbx_nmr_ensemble.conformers_calculated_total_number>50</PDBo:pdbx_nmr_ensemble.conformers_calculated_total_number>
-            <PDBo:pdbx_nmr_ensemble.conformers_submitted_total_number>20</PDBo:pdbx_nmr_ensemble.conformers_submitted_total_number>
+            <PDBo:pdbx_nmr_ensemble.conformers_calculated_total_number rdf:datatype="xsd:int">50</PDBo:pdbx_nmr_ensemble.conformers_calculated_total_number>
+            <PDBo:pdbx_nmr_ensemble.conformers_submitted_total_number rdf:datatype="xsd:int">20</PDBo:pdbx_nmr_ensemble.conformers_submitted_total_number>
           </PDBo:pdbx_nmr_ensemble>
         </PDBo:has_pdbx_nmr_ensemble>
       </PDBo:pdbx_nmr_ensembleCategory>
@@ -1016,7 +1016,7 @@
             <PDBo:pdbx_nmr_exptl.experiment_id>1</PDBo:pdbx_nmr_exptl.experiment_id>
             <PDBo:pdbx_nmr_exptl.solution_id>1</PDBo:pdbx_nmr_exptl.solution_id>
             <PDBo:pdbx_nmr_exptl.sample_state>isotropic</PDBo:pdbx_nmr_exptl.sample_state>
-            <PDBo:pdbx_nmr_exptl.spectrometer_id>1</PDBo:pdbx_nmr_exptl.spectrometer_id>
+            <PDBo:pdbx_nmr_exptl.spectrometer_id rdf:datatype="xsd:int">1</PDBo:pdbx_nmr_exptl.spectrometer_id>
             <PDBo:pdbx_nmr_exptl.type>2D 1H-1H TOCSY</PDBo:pdbx_nmr_exptl.type>
           </PDBo:pdbx_nmr_exptl>
         </PDBo:has_pdbx_nmr_exptl>
@@ -1027,7 +1027,7 @@
             <PDBo:pdbx_nmr_exptl.experiment_id>2</PDBo:pdbx_nmr_exptl.experiment_id>
             <PDBo:pdbx_nmr_exptl.solution_id>1</PDBo:pdbx_nmr_exptl.solution_id>
             <PDBo:pdbx_nmr_exptl.sample_state>isotropic</PDBo:pdbx_nmr_exptl.sample_state>
-            <PDBo:pdbx_nmr_exptl.spectrometer_id>1</PDBo:pdbx_nmr_exptl.spectrometer_id>
+            <PDBo:pdbx_nmr_exptl.spectrometer_id rdf:datatype="xsd:int">1</PDBo:pdbx_nmr_exptl.spectrometer_id>
             <PDBo:pdbx_nmr_exptl.type>2D 1H-1H NOESY</PDBo:pdbx_nmr_exptl.type>
           </PDBo:pdbx_nmr_exptl>
         </PDBo:has_pdbx_nmr_exptl>
@@ -1038,7 +1038,7 @@
             <PDBo:pdbx_nmr_exptl.experiment_id>3</PDBo:pdbx_nmr_exptl.experiment_id>
             <PDBo:pdbx_nmr_exptl.solution_id>1</PDBo:pdbx_nmr_exptl.solution_id>
             <PDBo:pdbx_nmr_exptl.sample_state>isotropic</PDBo:pdbx_nmr_exptl.sample_state>
-            <PDBo:pdbx_nmr_exptl.spectrometer_id>1</PDBo:pdbx_nmr_exptl.spectrometer_id>
+            <PDBo:pdbx_nmr_exptl.spectrometer_id rdf:datatype="xsd:int">1</PDBo:pdbx_nmr_exptl.spectrometer_id>
             <PDBo:pdbx_nmr_exptl.type>2D 1H-1H COSY</PDBo:pdbx_nmr_exptl.type>
           </PDBo:pdbx_nmr_exptl>
         </PDBo:has_pdbx_nmr_exptl>
@@ -1049,7 +1049,7 @@
             <PDBo:pdbx_nmr_exptl.experiment_id>4</PDBo:pdbx_nmr_exptl.experiment_id>
             <PDBo:pdbx_nmr_exptl.solution_id>1</PDBo:pdbx_nmr_exptl.solution_id>
             <PDBo:pdbx_nmr_exptl.sample_state>isotropic</PDBo:pdbx_nmr_exptl.sample_state>
-            <PDBo:pdbx_nmr_exptl.spectrometer_id>1</PDBo:pdbx_nmr_exptl.spectrometer_id>
+            <PDBo:pdbx_nmr_exptl.spectrometer_id rdf:datatype="xsd:int">1</PDBo:pdbx_nmr_exptl.spectrometer_id>
             <PDBo:pdbx_nmr_exptl.type>2D 1H-13C HSQC</PDBo:pdbx_nmr_exptl.type>
           </PDBo:pdbx_nmr_exptl>
         </PDBo:has_pdbx_nmr_exptl>
@@ -1060,7 +1060,7 @@
             <PDBo:pdbx_nmr_exptl.experiment_id>5</PDBo:pdbx_nmr_exptl.experiment_id>
             <PDBo:pdbx_nmr_exptl.solution_id>1</PDBo:pdbx_nmr_exptl.solution_id>
             <PDBo:pdbx_nmr_exptl.sample_state>isotropic</PDBo:pdbx_nmr_exptl.sample_state>
-            <PDBo:pdbx_nmr_exptl.spectrometer_id>1</PDBo:pdbx_nmr_exptl.spectrometer_id>
+            <PDBo:pdbx_nmr_exptl.spectrometer_id rdf:datatype="xsd:int">1</PDBo:pdbx_nmr_exptl.spectrometer_id>
             <PDBo:pdbx_nmr_exptl.type>2D 1H-15N HSQC</PDBo:pdbx_nmr_exptl.type>
           </PDBo:pdbx_nmr_exptl>
         </PDBo:has_pdbx_nmr_exptl>
@@ -1073,7 +1073,7 @@
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7JIA"/>
             <PDBo:pdbx_nmr_exptl_sample.component>ZF-N24_3s</PDBo:pdbx_nmr_exptl_sample.component>
             <PDBo:pdbx_nmr_exptl_sample.solution_id>1</PDBo:pdbx_nmr_exptl_sample.solution_id>
-            <PDBo:pdbx_nmr_exptl_sample.concentration>0.2</PDBo:pdbx_nmr_exptl_sample.concentration>
+            <PDBo:pdbx_nmr_exptl_sample.concentration rdf:datatype="xsd:decimal">0.2</PDBo:pdbx_nmr_exptl_sample.concentration>
             <PDBo:pdbx_nmr_exptl_sample.concentration_units>mM</PDBo:pdbx_nmr_exptl_sample.concentration_units>
             <PDBo:pdbx_nmr_exptl_sample.isotopic_labeling>natural abundance</PDBo:pdbx_nmr_exptl_sample.isotopic_labeling>
           </PDBo:pdbx_nmr_exptl_sample>
@@ -1109,7 +1109,7 @@
               </rdf:Description>
             </PDBo:reference_to_entry>
             <PDBo:pdbx_nmr_refine.entry_id>7JIA</PDBo:pdbx_nmr_refine.entry_id>
-            <PDBo:pdbx_nmr_refine.software_ordinal>2</PDBo:pdbx_nmr_refine.software_ordinal>
+            <PDBo:pdbx_nmr_refine.software_ordinal rdf:datatype="xsd:int">2</PDBo:pdbx_nmr_refine.software_ordinal>
             <PDBo:pdbx_nmr_refine.method>torsion angle dynamics</PDBo:pdbx_nmr_refine.method>
           </PDBo:pdbx_nmr_refine>
         </PDBo:has_pdbx_nmr_refine>
@@ -1151,7 +1151,7 @@
         <PDBo:has_pdbx_nmr_software>
           <PDBo:pdbx_nmr_software rdf:about="http://rdf.wwpdb.org/pdb/7JIA/pdbx_nmr_software/1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7JIA"/>
-            <PDBo:pdbx_nmr_software.ordinal>1</PDBo:pdbx_nmr_software.ordinal>
+            <PDBo:pdbx_nmr_software.ordinal rdf:datatype="xsd:int">1</PDBo:pdbx_nmr_software.ordinal>
             <PDBo:pdbx_nmr_software.authors>Bruker Biospin</PDBo:pdbx_nmr_software.authors>
             <PDBo:pdbx_nmr_software.classification>collection</PDBo:pdbx_nmr_software.classification>
             <PDBo:pdbx_nmr_software.name>TopSpin</PDBo:pdbx_nmr_software.name>
@@ -1160,7 +1160,7 @@
         <PDBo:has_pdbx_nmr_software>
           <PDBo:pdbx_nmr_software rdf:about="http://rdf.wwpdb.org/pdb/7JIA/pdbx_nmr_software/3">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7JIA"/>
-            <PDBo:pdbx_nmr_software.ordinal>3</PDBo:pdbx_nmr_software.ordinal>
+            <PDBo:pdbx_nmr_software.ordinal rdf:datatype="xsd:int">3</PDBo:pdbx_nmr_software.ordinal>
             <PDBo:pdbx_nmr_software.authors>CCPN</PDBo:pdbx_nmr_software.authors>
             <PDBo:pdbx_nmr_software.classification>chemical shift assignment</PDBo:pdbx_nmr_software.classification>
             <PDBo:pdbx_nmr_software.name>CcpNmr Analysis</PDBo:pdbx_nmr_software.name>
@@ -1170,7 +1170,7 @@
         <PDBo:has_pdbx_nmr_software>
           <PDBo:pdbx_nmr_software rdf:about="http://rdf.wwpdb.org/pdb/7JIA/pdbx_nmr_software/2">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7JIA"/>
-            <PDBo:pdbx_nmr_software.ordinal>2</PDBo:pdbx_nmr_software.ordinal>
+            <PDBo:pdbx_nmr_software.ordinal rdf:datatype="xsd:int">2</PDBo:pdbx_nmr_software.ordinal>
             <PDBo:pdbx_nmr_software.authors>Guntert, Mumenthaler and Wuthrich</PDBo:pdbx_nmr_software.authors>
             <PDBo:pdbx_nmr_software.classification>structure calculation</PDBo:pdbx_nmr_software.classification>
             <PDBo:pdbx_nmr_software.name>CYANA</PDBo:pdbx_nmr_software.name>
@@ -1184,7 +1184,7 @@
           <PDBo:pdbx_nmr_spectrometer rdf:about="http://rdf.wwpdb.org/pdb/7JIA/pdbx_nmr_spectrometer/1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7JIA"/>
             <PDBo:pdbx_nmr_spectrometer.spectrometer_id>1</PDBo:pdbx_nmr_spectrometer.spectrometer_id>
-            <PDBo:pdbx_nmr_spectrometer.field_strength>600</PDBo:pdbx_nmr_spectrometer.field_strength>
+            <PDBo:pdbx_nmr_spectrometer.field_strength rdf:datatype="xsd:decimal">600</PDBo:pdbx_nmr_spectrometer.field_strength>
             <PDBo:pdbx_nmr_spectrometer.manufacturer>Bruker</PDBo:pdbx_nmr_spectrometer.manufacturer>
             <PDBo:pdbx_nmr_spectrometer.model>AVANCE</PDBo:pdbx_nmr_spectrometer.model>
           </PDBo:pdbx_nmr_spectrometer>
@@ -1209,11 +1209,11 @@
             <PDBo:pdbx_poly_seq_scheme.asym_id>A</PDBo:pdbx_poly_seq_scheme.asym_id>
             <PDBo:pdbx_poly_seq_scheme.entity_id>1</PDBo:pdbx_poly_seq_scheme.entity_id>
             <PDBo:pdbx_poly_seq_scheme.mon_id>CYS</PDBo:pdbx_poly_seq_scheme.mon_id>
-            <PDBo:pdbx_poly_seq_scheme.seq_id>1</PDBo:pdbx_poly_seq_scheme.seq_id>
+            <PDBo:pdbx_poly_seq_scheme.seq_id rdf:datatype="xsd:int">1</PDBo:pdbx_poly_seq_scheme.seq_id>
             <PDBo:pdbx_poly_seq_scheme.auth_mon_id>CYS</PDBo:pdbx_poly_seq_scheme.auth_mon_id>
             <PDBo:pdbx_poly_seq_scheme.auth_seq_num>1</PDBo:pdbx_poly_seq_scheme.auth_seq_num>
             <PDBo:pdbx_poly_seq_scheme.hetero>n</PDBo:pdbx_poly_seq_scheme.hetero>
-            <PDBo:pdbx_poly_seq_scheme.ndb_seq_num>1</PDBo:pdbx_poly_seq_scheme.ndb_seq_num>
+            <PDBo:pdbx_poly_seq_scheme.ndb_seq_num rdf:datatype="xsd:int">1</PDBo:pdbx_poly_seq_scheme.ndb_seq_num>
             <PDBo:pdbx_poly_seq_scheme.pdb_mon_id>CYS</PDBo:pdbx_poly_seq_scheme.pdb_mon_id>
             <PDBo:pdbx_poly_seq_scheme.pdb_seq_num>1</PDBo:pdbx_poly_seq_scheme.pdb_seq_num>
             <PDBo:pdbx_poly_seq_scheme.pdb_strand_id>A</PDBo:pdbx_poly_seq_scheme.pdb_strand_id>
@@ -1235,11 +1235,11 @@
             <PDBo:pdbx_poly_seq_scheme.asym_id>A</PDBo:pdbx_poly_seq_scheme.asym_id>
             <PDBo:pdbx_poly_seq_scheme.entity_id>1</PDBo:pdbx_poly_seq_scheme.entity_id>
             <PDBo:pdbx_poly_seq_scheme.mon_id>GLY</PDBo:pdbx_poly_seq_scheme.mon_id>
-            <PDBo:pdbx_poly_seq_scheme.seq_id>2</PDBo:pdbx_poly_seq_scheme.seq_id>
+            <PDBo:pdbx_poly_seq_scheme.seq_id rdf:datatype="xsd:int">2</PDBo:pdbx_poly_seq_scheme.seq_id>
             <PDBo:pdbx_poly_seq_scheme.auth_mon_id>GLY</PDBo:pdbx_poly_seq_scheme.auth_mon_id>
             <PDBo:pdbx_poly_seq_scheme.auth_seq_num>2</PDBo:pdbx_poly_seq_scheme.auth_seq_num>
             <PDBo:pdbx_poly_seq_scheme.hetero>n</PDBo:pdbx_poly_seq_scheme.hetero>
-            <PDBo:pdbx_poly_seq_scheme.ndb_seq_num>2</PDBo:pdbx_poly_seq_scheme.ndb_seq_num>
+            <PDBo:pdbx_poly_seq_scheme.ndb_seq_num rdf:datatype="xsd:int">2</PDBo:pdbx_poly_seq_scheme.ndb_seq_num>
             <PDBo:pdbx_poly_seq_scheme.pdb_mon_id>GLY</PDBo:pdbx_poly_seq_scheme.pdb_mon_id>
             <PDBo:pdbx_poly_seq_scheme.pdb_seq_num>2</PDBo:pdbx_poly_seq_scheme.pdb_seq_num>
             <PDBo:pdbx_poly_seq_scheme.pdb_strand_id>A</PDBo:pdbx_poly_seq_scheme.pdb_strand_id>
@@ -1261,11 +1261,11 @@
             <PDBo:pdbx_poly_seq_scheme.asym_id>A</PDBo:pdbx_poly_seq_scheme.asym_id>
             <PDBo:pdbx_poly_seq_scheme.entity_id>1</PDBo:pdbx_poly_seq_scheme.entity_id>
             <PDBo:pdbx_poly_seq_scheme.mon_id>GLY</PDBo:pdbx_poly_seq_scheme.mon_id>
-            <PDBo:pdbx_poly_seq_scheme.seq_id>3</PDBo:pdbx_poly_seq_scheme.seq_id>
+            <PDBo:pdbx_poly_seq_scheme.seq_id rdf:datatype="xsd:int">3</PDBo:pdbx_poly_seq_scheme.seq_id>
             <PDBo:pdbx_poly_seq_scheme.auth_mon_id>GLY</PDBo:pdbx_poly_seq_scheme.auth_mon_id>
             <PDBo:pdbx_poly_seq_scheme.auth_seq_num>3</PDBo:pdbx_poly_seq_scheme.auth_seq_num>
             <PDBo:pdbx_poly_seq_scheme.hetero>n</PDBo:pdbx_poly_seq_scheme.hetero>
-            <PDBo:pdbx_poly_seq_scheme.ndb_seq_num>3</PDBo:pdbx_poly_seq_scheme.ndb_seq_num>
+            <PDBo:pdbx_poly_seq_scheme.ndb_seq_num rdf:datatype="xsd:int">3</PDBo:pdbx_poly_seq_scheme.ndb_seq_num>
             <PDBo:pdbx_poly_seq_scheme.pdb_mon_id>GLY</PDBo:pdbx_poly_seq_scheme.pdb_mon_id>
             <PDBo:pdbx_poly_seq_scheme.pdb_seq_num>3</PDBo:pdbx_poly_seq_scheme.pdb_seq_num>
             <PDBo:pdbx_poly_seq_scheme.pdb_strand_id>A</PDBo:pdbx_poly_seq_scheme.pdb_strand_id>
@@ -1287,11 +1287,11 @@
             <PDBo:pdbx_poly_seq_scheme.asym_id>A</PDBo:pdbx_poly_seq_scheme.asym_id>
             <PDBo:pdbx_poly_seq_scheme.entity_id>1</PDBo:pdbx_poly_seq_scheme.entity_id>
             <PDBo:pdbx_poly_seq_scheme.mon_id>GLY</PDBo:pdbx_poly_seq_scheme.mon_id>
-            <PDBo:pdbx_poly_seq_scheme.seq_id>4</PDBo:pdbx_poly_seq_scheme.seq_id>
+            <PDBo:pdbx_poly_seq_scheme.seq_id rdf:datatype="xsd:int">4</PDBo:pdbx_poly_seq_scheme.seq_id>
             <PDBo:pdbx_poly_seq_scheme.auth_mon_id>GLY</PDBo:pdbx_poly_seq_scheme.auth_mon_id>
             <PDBo:pdbx_poly_seq_scheme.auth_seq_num>4</PDBo:pdbx_poly_seq_scheme.auth_seq_num>
             <PDBo:pdbx_poly_seq_scheme.hetero>n</PDBo:pdbx_poly_seq_scheme.hetero>
-            <PDBo:pdbx_poly_seq_scheme.ndb_seq_num>4</PDBo:pdbx_poly_seq_scheme.ndb_seq_num>
+            <PDBo:pdbx_poly_seq_scheme.ndb_seq_num rdf:datatype="xsd:int">4</PDBo:pdbx_poly_seq_scheme.ndb_seq_num>
             <PDBo:pdbx_poly_seq_scheme.pdb_mon_id>GLY</PDBo:pdbx_poly_seq_scheme.pdb_mon_id>
             <PDBo:pdbx_poly_seq_scheme.pdb_seq_num>4</PDBo:pdbx_poly_seq_scheme.pdb_seq_num>
             <PDBo:pdbx_poly_seq_scheme.pdb_strand_id>A</PDBo:pdbx_poly_seq_scheme.pdb_strand_id>
@@ -1313,11 +1313,11 @@
             <PDBo:pdbx_poly_seq_scheme.asym_id>A</PDBo:pdbx_poly_seq_scheme.asym_id>
             <PDBo:pdbx_poly_seq_scheme.entity_id>1</PDBo:pdbx_poly_seq_scheme.entity_id>
             <PDBo:pdbx_poly_seq_scheme.mon_id>PHE</PDBo:pdbx_poly_seq_scheme.mon_id>
-            <PDBo:pdbx_poly_seq_scheme.seq_id>5</PDBo:pdbx_poly_seq_scheme.seq_id>
+            <PDBo:pdbx_poly_seq_scheme.seq_id rdf:datatype="xsd:int">5</PDBo:pdbx_poly_seq_scheme.seq_id>
             <PDBo:pdbx_poly_seq_scheme.auth_mon_id>PHE</PDBo:pdbx_poly_seq_scheme.auth_mon_id>
             <PDBo:pdbx_poly_seq_scheme.auth_seq_num>5</PDBo:pdbx_poly_seq_scheme.auth_seq_num>
             <PDBo:pdbx_poly_seq_scheme.hetero>n</PDBo:pdbx_poly_seq_scheme.hetero>
-            <PDBo:pdbx_poly_seq_scheme.ndb_seq_num>5</PDBo:pdbx_poly_seq_scheme.ndb_seq_num>
+            <PDBo:pdbx_poly_seq_scheme.ndb_seq_num rdf:datatype="xsd:int">5</PDBo:pdbx_poly_seq_scheme.ndb_seq_num>
             <PDBo:pdbx_poly_seq_scheme.pdb_mon_id>PHE</PDBo:pdbx_poly_seq_scheme.pdb_mon_id>
             <PDBo:pdbx_poly_seq_scheme.pdb_seq_num>5</PDBo:pdbx_poly_seq_scheme.pdb_seq_num>
             <PDBo:pdbx_poly_seq_scheme.pdb_strand_id>A</PDBo:pdbx_poly_seq_scheme.pdb_strand_id>
@@ -1339,11 +1339,11 @@
             <PDBo:pdbx_poly_seq_scheme.asym_id>A</PDBo:pdbx_poly_seq_scheme.asym_id>
             <PDBo:pdbx_poly_seq_scheme.entity_id>1</PDBo:pdbx_poly_seq_scheme.entity_id>
             <PDBo:pdbx_poly_seq_scheme.mon_id>SER</PDBo:pdbx_poly_seq_scheme.mon_id>
-            <PDBo:pdbx_poly_seq_scheme.seq_id>6</PDBo:pdbx_poly_seq_scheme.seq_id>
+            <PDBo:pdbx_poly_seq_scheme.seq_id rdf:datatype="xsd:int">6</PDBo:pdbx_poly_seq_scheme.seq_id>
             <PDBo:pdbx_poly_seq_scheme.auth_mon_id>SER</PDBo:pdbx_poly_seq_scheme.auth_mon_id>
             <PDBo:pdbx_poly_seq_scheme.auth_seq_num>6</PDBo:pdbx_poly_seq_scheme.auth_seq_num>
             <PDBo:pdbx_poly_seq_scheme.hetero>n</PDBo:pdbx_poly_seq_scheme.hetero>
-            <PDBo:pdbx_poly_seq_scheme.ndb_seq_num>6</PDBo:pdbx_poly_seq_scheme.ndb_seq_num>
+            <PDBo:pdbx_poly_seq_scheme.ndb_seq_num rdf:datatype="xsd:int">6</PDBo:pdbx_poly_seq_scheme.ndb_seq_num>
             <PDBo:pdbx_poly_seq_scheme.pdb_mon_id>SER</PDBo:pdbx_poly_seq_scheme.pdb_mon_id>
             <PDBo:pdbx_poly_seq_scheme.pdb_seq_num>6</PDBo:pdbx_poly_seq_scheme.pdb_seq_num>
             <PDBo:pdbx_poly_seq_scheme.pdb_strand_id>A</PDBo:pdbx_poly_seq_scheme.pdb_strand_id>
@@ -1365,11 +1365,11 @@
             <PDBo:pdbx_poly_seq_scheme.asym_id>A</PDBo:pdbx_poly_seq_scheme.asym_id>
             <PDBo:pdbx_poly_seq_scheme.entity_id>1</PDBo:pdbx_poly_seq_scheme.entity_id>
             <PDBo:pdbx_poly_seq_scheme.mon_id>CYS</PDBo:pdbx_poly_seq_scheme.mon_id>
-            <PDBo:pdbx_poly_seq_scheme.seq_id>7</PDBo:pdbx_poly_seq_scheme.seq_id>
+            <PDBo:pdbx_poly_seq_scheme.seq_id rdf:datatype="xsd:int">7</PDBo:pdbx_poly_seq_scheme.seq_id>
             <PDBo:pdbx_poly_seq_scheme.auth_mon_id>CYS</PDBo:pdbx_poly_seq_scheme.auth_mon_id>
             <PDBo:pdbx_poly_seq_scheme.auth_seq_num>7</PDBo:pdbx_poly_seq_scheme.auth_seq_num>
             <PDBo:pdbx_poly_seq_scheme.hetero>n</PDBo:pdbx_poly_seq_scheme.hetero>
-            <PDBo:pdbx_poly_seq_scheme.ndb_seq_num>7</PDBo:pdbx_poly_seq_scheme.ndb_seq_num>
+            <PDBo:pdbx_poly_seq_scheme.ndb_seq_num rdf:datatype="xsd:int">7</PDBo:pdbx_poly_seq_scheme.ndb_seq_num>
             <PDBo:pdbx_poly_seq_scheme.pdb_mon_id>CYS</PDBo:pdbx_poly_seq_scheme.pdb_mon_id>
             <PDBo:pdbx_poly_seq_scheme.pdb_seq_num>7</PDBo:pdbx_poly_seq_scheme.pdb_seq_num>
             <PDBo:pdbx_poly_seq_scheme.pdb_strand_id>A</PDBo:pdbx_poly_seq_scheme.pdb_strand_id>
@@ -1391,11 +1391,11 @@
             <PDBo:pdbx_poly_seq_scheme.asym_id>A</PDBo:pdbx_poly_seq_scheme.asym_id>
             <PDBo:pdbx_poly_seq_scheme.entity_id>1</PDBo:pdbx_poly_seq_scheme.entity_id>
             <PDBo:pdbx_poly_seq_scheme.mon_id>HIS</PDBo:pdbx_poly_seq_scheme.mon_id>
-            <PDBo:pdbx_poly_seq_scheme.seq_id>8</PDBo:pdbx_poly_seq_scheme.seq_id>
+            <PDBo:pdbx_poly_seq_scheme.seq_id rdf:datatype="xsd:int">8</PDBo:pdbx_poly_seq_scheme.seq_id>
             <PDBo:pdbx_poly_seq_scheme.auth_mon_id>HIS</PDBo:pdbx_poly_seq_scheme.auth_mon_id>
             <PDBo:pdbx_poly_seq_scheme.auth_seq_num>8</PDBo:pdbx_poly_seq_scheme.auth_seq_num>
             <PDBo:pdbx_poly_seq_scheme.hetero>n</PDBo:pdbx_poly_seq_scheme.hetero>
-            <PDBo:pdbx_poly_seq_scheme.ndb_seq_num>8</PDBo:pdbx_poly_seq_scheme.ndb_seq_num>
+            <PDBo:pdbx_poly_seq_scheme.ndb_seq_num rdf:datatype="xsd:int">8</PDBo:pdbx_poly_seq_scheme.ndb_seq_num>
             <PDBo:pdbx_poly_seq_scheme.pdb_mon_id>HIS</PDBo:pdbx_poly_seq_scheme.pdb_mon_id>
             <PDBo:pdbx_poly_seq_scheme.pdb_seq_num>8</PDBo:pdbx_poly_seq_scheme.pdb_seq_num>
             <PDBo:pdbx_poly_seq_scheme.pdb_strand_id>A</PDBo:pdbx_poly_seq_scheme.pdb_strand_id>
@@ -1417,11 +1417,11 @@
             <PDBo:pdbx_poly_seq_scheme.asym_id>A</PDBo:pdbx_poly_seq_scheme.asym_id>
             <PDBo:pdbx_poly_seq_scheme.entity_id>1</PDBo:pdbx_poly_seq_scheme.entity_id>
             <PDBo:pdbx_poly_seq_scheme.mon_id>ASP</PDBo:pdbx_poly_seq_scheme.mon_id>
-            <PDBo:pdbx_poly_seq_scheme.seq_id>9</PDBo:pdbx_poly_seq_scheme.seq_id>
+            <PDBo:pdbx_poly_seq_scheme.seq_id rdf:datatype="xsd:int">9</PDBo:pdbx_poly_seq_scheme.seq_id>
             <PDBo:pdbx_poly_seq_scheme.auth_mon_id>ASP</PDBo:pdbx_poly_seq_scheme.auth_mon_id>
             <PDBo:pdbx_poly_seq_scheme.auth_seq_num>9</PDBo:pdbx_poly_seq_scheme.auth_seq_num>
             <PDBo:pdbx_poly_seq_scheme.hetero>n</PDBo:pdbx_poly_seq_scheme.hetero>
-            <PDBo:pdbx_poly_seq_scheme.ndb_seq_num>9</PDBo:pdbx_poly_seq_scheme.ndb_seq_num>
+            <PDBo:pdbx_poly_seq_scheme.ndb_seq_num rdf:datatype="xsd:int">9</PDBo:pdbx_poly_seq_scheme.ndb_seq_num>
             <PDBo:pdbx_poly_seq_scheme.pdb_mon_id>ASP</PDBo:pdbx_poly_seq_scheme.pdb_mon_id>
             <PDBo:pdbx_poly_seq_scheme.pdb_seq_num>9</PDBo:pdbx_poly_seq_scheme.pdb_seq_num>
             <PDBo:pdbx_poly_seq_scheme.pdb_strand_id>A</PDBo:pdbx_poly_seq_scheme.pdb_strand_id>
@@ -1443,11 +1443,11 @@
             <PDBo:pdbx_poly_seq_scheme.asym_id>A</PDBo:pdbx_poly_seq_scheme.asym_id>
             <PDBo:pdbx_poly_seq_scheme.entity_id>1</PDBo:pdbx_poly_seq_scheme.entity_id>
             <PDBo:pdbx_poly_seq_scheme.mon_id>GLY</PDBo:pdbx_poly_seq_scheme.mon_id>
-            <PDBo:pdbx_poly_seq_scheme.seq_id>10</PDBo:pdbx_poly_seq_scheme.seq_id>
+            <PDBo:pdbx_poly_seq_scheme.seq_id rdf:datatype="xsd:int">10</PDBo:pdbx_poly_seq_scheme.seq_id>
             <PDBo:pdbx_poly_seq_scheme.auth_mon_id>GLY</PDBo:pdbx_poly_seq_scheme.auth_mon_id>
             <PDBo:pdbx_poly_seq_scheme.auth_seq_num>10</PDBo:pdbx_poly_seq_scheme.auth_seq_num>
             <PDBo:pdbx_poly_seq_scheme.hetero>n</PDBo:pdbx_poly_seq_scheme.hetero>
-            <PDBo:pdbx_poly_seq_scheme.ndb_seq_num>10</PDBo:pdbx_poly_seq_scheme.ndb_seq_num>
+            <PDBo:pdbx_poly_seq_scheme.ndb_seq_num rdf:datatype="xsd:int">10</PDBo:pdbx_poly_seq_scheme.ndb_seq_num>
             <PDBo:pdbx_poly_seq_scheme.pdb_mon_id>GLY</PDBo:pdbx_poly_seq_scheme.pdb_mon_id>
             <PDBo:pdbx_poly_seq_scheme.pdb_seq_num>10</PDBo:pdbx_poly_seq_scheme.pdb_seq_num>
             <PDBo:pdbx_poly_seq_scheme.pdb_strand_id>A</PDBo:pdbx_poly_seq_scheme.pdb_strand_id>
@@ -1469,11 +1469,11 @@
             <PDBo:pdbx_poly_seq_scheme.asym_id>A</PDBo:pdbx_poly_seq_scheme.asym_id>
             <PDBo:pdbx_poly_seq_scheme.entity_id>1</PDBo:pdbx_poly_seq_scheme.entity_id>
             <PDBo:pdbx_poly_seq_scheme.mon_id>GLU</PDBo:pdbx_poly_seq_scheme.mon_id>
-            <PDBo:pdbx_poly_seq_scheme.seq_id>11</PDBo:pdbx_poly_seq_scheme.seq_id>
+            <PDBo:pdbx_poly_seq_scheme.seq_id rdf:datatype="xsd:int">11</PDBo:pdbx_poly_seq_scheme.seq_id>
             <PDBo:pdbx_poly_seq_scheme.auth_mon_id>GLU</PDBo:pdbx_poly_seq_scheme.auth_mon_id>
             <PDBo:pdbx_poly_seq_scheme.auth_seq_num>11</PDBo:pdbx_poly_seq_scheme.auth_seq_num>
             <PDBo:pdbx_poly_seq_scheme.hetero>n</PDBo:pdbx_poly_seq_scheme.hetero>
-            <PDBo:pdbx_poly_seq_scheme.ndb_seq_num>11</PDBo:pdbx_poly_seq_scheme.ndb_seq_num>
+            <PDBo:pdbx_poly_seq_scheme.ndb_seq_num rdf:datatype="xsd:int">11</PDBo:pdbx_poly_seq_scheme.ndb_seq_num>
             <PDBo:pdbx_poly_seq_scheme.pdb_mon_id>GLU</PDBo:pdbx_poly_seq_scheme.pdb_mon_id>
             <PDBo:pdbx_poly_seq_scheme.pdb_seq_num>11</PDBo:pdbx_poly_seq_scheme.pdb_seq_num>
             <PDBo:pdbx_poly_seq_scheme.pdb_strand_id>A</PDBo:pdbx_poly_seq_scheme.pdb_strand_id>
@@ -1495,11 +1495,11 @@
             <PDBo:pdbx_poly_seq_scheme.asym_id>A</PDBo:pdbx_poly_seq_scheme.asym_id>
             <PDBo:pdbx_poly_seq_scheme.entity_id>1</PDBo:pdbx_poly_seq_scheme.entity_id>
             <PDBo:pdbx_poly_seq_scheme.mon_id>THR</PDBo:pdbx_poly_seq_scheme.mon_id>
-            <PDBo:pdbx_poly_seq_scheme.seq_id>12</PDBo:pdbx_poly_seq_scheme.seq_id>
+            <PDBo:pdbx_poly_seq_scheme.seq_id rdf:datatype="xsd:int">12</PDBo:pdbx_poly_seq_scheme.seq_id>
             <PDBo:pdbx_poly_seq_scheme.auth_mon_id>THR</PDBo:pdbx_poly_seq_scheme.auth_mon_id>
             <PDBo:pdbx_poly_seq_scheme.auth_seq_num>12</PDBo:pdbx_poly_seq_scheme.auth_seq_num>
             <PDBo:pdbx_poly_seq_scheme.hetero>n</PDBo:pdbx_poly_seq_scheme.hetero>
-            <PDBo:pdbx_poly_seq_scheme.ndb_seq_num>12</PDBo:pdbx_poly_seq_scheme.ndb_seq_num>
+            <PDBo:pdbx_poly_seq_scheme.ndb_seq_num rdf:datatype="xsd:int">12</PDBo:pdbx_poly_seq_scheme.ndb_seq_num>
             <PDBo:pdbx_poly_seq_scheme.pdb_mon_id>THR</PDBo:pdbx_poly_seq_scheme.pdb_mon_id>
             <PDBo:pdbx_poly_seq_scheme.pdb_seq_num>12</PDBo:pdbx_poly_seq_scheme.pdb_seq_num>
             <PDBo:pdbx_poly_seq_scheme.pdb_strand_id>A</PDBo:pdbx_poly_seq_scheme.pdb_strand_id>
@@ -1521,11 +1521,11 @@
             <PDBo:pdbx_poly_seq_scheme.asym_id>A</PDBo:pdbx_poly_seq_scheme.asym_id>
             <PDBo:pdbx_poly_seq_scheme.entity_id>1</PDBo:pdbx_poly_seq_scheme.entity_id>
             <PDBo:pdbx_poly_seq_scheme.mon_id>CYS</PDBo:pdbx_poly_seq_scheme.mon_id>
-            <PDBo:pdbx_poly_seq_scheme.seq_id>13</PDBo:pdbx_poly_seq_scheme.seq_id>
+            <PDBo:pdbx_poly_seq_scheme.seq_id rdf:datatype="xsd:int">13</PDBo:pdbx_poly_seq_scheme.seq_id>
             <PDBo:pdbx_poly_seq_scheme.auth_mon_id>CYS</PDBo:pdbx_poly_seq_scheme.auth_mon_id>
             <PDBo:pdbx_poly_seq_scheme.auth_seq_num>13</PDBo:pdbx_poly_seq_scheme.auth_seq_num>
             <PDBo:pdbx_poly_seq_scheme.hetero>n</PDBo:pdbx_poly_seq_scheme.hetero>
-            <PDBo:pdbx_poly_seq_scheme.ndb_seq_num>13</PDBo:pdbx_poly_seq_scheme.ndb_seq_num>
+            <PDBo:pdbx_poly_seq_scheme.ndb_seq_num rdf:datatype="xsd:int">13</PDBo:pdbx_poly_seq_scheme.ndb_seq_num>
             <PDBo:pdbx_poly_seq_scheme.pdb_mon_id>CYS</PDBo:pdbx_poly_seq_scheme.pdb_mon_id>
             <PDBo:pdbx_poly_seq_scheme.pdb_seq_num>13</PDBo:pdbx_poly_seq_scheme.pdb_seq_num>
             <PDBo:pdbx_poly_seq_scheme.pdb_strand_id>A</PDBo:pdbx_poly_seq_scheme.pdb_strand_id>
@@ -1547,11 +1547,11 @@
             <PDBo:pdbx_poly_seq_scheme.asym_id>A</PDBo:pdbx_poly_seq_scheme.asym_id>
             <PDBo:pdbx_poly_seq_scheme.entity_id>1</PDBo:pdbx_poly_seq_scheme.entity_id>
             <PDBo:pdbx_poly_seq_scheme.mon_id>CYS</PDBo:pdbx_poly_seq_scheme.mon_id>
-            <PDBo:pdbx_poly_seq_scheme.seq_id>14</PDBo:pdbx_poly_seq_scheme.seq_id>
+            <PDBo:pdbx_poly_seq_scheme.seq_id rdf:datatype="xsd:int">14</PDBo:pdbx_poly_seq_scheme.seq_id>
             <PDBo:pdbx_poly_seq_scheme.auth_mon_id>CYS</PDBo:pdbx_poly_seq_scheme.auth_mon_id>
             <PDBo:pdbx_poly_seq_scheme.auth_seq_num>14</PDBo:pdbx_poly_seq_scheme.auth_seq_num>
             <PDBo:pdbx_poly_seq_scheme.hetero>n</PDBo:pdbx_poly_seq_scheme.hetero>
-            <PDBo:pdbx_poly_seq_scheme.ndb_seq_num>14</PDBo:pdbx_poly_seq_scheme.ndb_seq_num>
+            <PDBo:pdbx_poly_seq_scheme.ndb_seq_num rdf:datatype="xsd:int">14</PDBo:pdbx_poly_seq_scheme.ndb_seq_num>
             <PDBo:pdbx_poly_seq_scheme.pdb_mon_id>CYS</PDBo:pdbx_poly_seq_scheme.pdb_mon_id>
             <PDBo:pdbx_poly_seq_scheme.pdb_seq_num>14</PDBo:pdbx_poly_seq_scheme.pdb_seq_num>
             <PDBo:pdbx_poly_seq_scheme.pdb_strand_id>A</PDBo:pdbx_poly_seq_scheme.pdb_strand_id>
@@ -1573,11 +1573,11 @@
             <PDBo:pdbx_poly_seq_scheme.asym_id>A</PDBo:pdbx_poly_seq_scheme.asym_id>
             <PDBo:pdbx_poly_seq_scheme.entity_id>1</PDBo:pdbx_poly_seq_scheme.entity_id>
             <PDBo:pdbx_poly_seq_scheme.mon_id>PRO</PDBo:pdbx_poly_seq_scheme.mon_id>
-            <PDBo:pdbx_poly_seq_scheme.seq_id>15</PDBo:pdbx_poly_seq_scheme.seq_id>
+            <PDBo:pdbx_poly_seq_scheme.seq_id rdf:datatype="xsd:int">15</PDBo:pdbx_poly_seq_scheme.seq_id>
             <PDBo:pdbx_poly_seq_scheme.auth_mon_id>PRO</PDBo:pdbx_poly_seq_scheme.auth_mon_id>
             <PDBo:pdbx_poly_seq_scheme.auth_seq_num>15</PDBo:pdbx_poly_seq_scheme.auth_seq_num>
             <PDBo:pdbx_poly_seq_scheme.hetero>n</PDBo:pdbx_poly_seq_scheme.hetero>
-            <PDBo:pdbx_poly_seq_scheme.ndb_seq_num>15</PDBo:pdbx_poly_seq_scheme.ndb_seq_num>
+            <PDBo:pdbx_poly_seq_scheme.ndb_seq_num rdf:datatype="xsd:int">15</PDBo:pdbx_poly_seq_scheme.ndb_seq_num>
             <PDBo:pdbx_poly_seq_scheme.pdb_mon_id>PRO</PDBo:pdbx_poly_seq_scheme.pdb_mon_id>
             <PDBo:pdbx_poly_seq_scheme.pdb_seq_num>15</PDBo:pdbx_poly_seq_scheme.pdb_seq_num>
             <PDBo:pdbx_poly_seq_scheme.pdb_strand_id>A</PDBo:pdbx_poly_seq_scheme.pdb_strand_id>
@@ -1599,11 +1599,11 @@
             <PDBo:pdbx_poly_seq_scheme.asym_id>A</PDBo:pdbx_poly_seq_scheme.asym_id>
             <PDBo:pdbx_poly_seq_scheme.entity_id>1</PDBo:pdbx_poly_seq_scheme.entity_id>
             <PDBo:pdbx_poly_seq_scheme.mon_id>THR</PDBo:pdbx_poly_seq_scheme.mon_id>
-            <PDBo:pdbx_poly_seq_scheme.seq_id>16</PDBo:pdbx_poly_seq_scheme.seq_id>
+            <PDBo:pdbx_poly_seq_scheme.seq_id rdf:datatype="xsd:int">16</PDBo:pdbx_poly_seq_scheme.seq_id>
             <PDBo:pdbx_poly_seq_scheme.auth_mon_id>THR</PDBo:pdbx_poly_seq_scheme.auth_mon_id>
             <PDBo:pdbx_poly_seq_scheme.auth_seq_num>16</PDBo:pdbx_poly_seq_scheme.auth_seq_num>
             <PDBo:pdbx_poly_seq_scheme.hetero>n</PDBo:pdbx_poly_seq_scheme.hetero>
-            <PDBo:pdbx_poly_seq_scheme.ndb_seq_num>16</PDBo:pdbx_poly_seq_scheme.ndb_seq_num>
+            <PDBo:pdbx_poly_seq_scheme.ndb_seq_num rdf:datatype="xsd:int">16</PDBo:pdbx_poly_seq_scheme.ndb_seq_num>
             <PDBo:pdbx_poly_seq_scheme.pdb_mon_id>THR</PDBo:pdbx_poly_seq_scheme.pdb_mon_id>
             <PDBo:pdbx_poly_seq_scheme.pdb_seq_num>16</PDBo:pdbx_poly_seq_scheme.pdb_seq_num>
             <PDBo:pdbx_poly_seq_scheme.pdb_strand_id>A</PDBo:pdbx_poly_seq_scheme.pdb_strand_id>
@@ -1625,11 +1625,11 @@
             <PDBo:pdbx_poly_seq_scheme.asym_id>A</PDBo:pdbx_poly_seq_scheme.asym_id>
             <PDBo:pdbx_poly_seq_scheme.entity_id>1</PDBo:pdbx_poly_seq_scheme.entity_id>
             <PDBo:pdbx_poly_seq_scheme.mon_id>SER</PDBo:pdbx_poly_seq_scheme.mon_id>
-            <PDBo:pdbx_poly_seq_scheme.seq_id>17</PDBo:pdbx_poly_seq_scheme.seq_id>
+            <PDBo:pdbx_poly_seq_scheme.seq_id rdf:datatype="xsd:int">17</PDBo:pdbx_poly_seq_scheme.seq_id>
             <PDBo:pdbx_poly_seq_scheme.auth_mon_id>SER</PDBo:pdbx_poly_seq_scheme.auth_mon_id>
             <PDBo:pdbx_poly_seq_scheme.auth_seq_num>17</PDBo:pdbx_poly_seq_scheme.auth_seq_num>
             <PDBo:pdbx_poly_seq_scheme.hetero>n</PDBo:pdbx_poly_seq_scheme.hetero>
-            <PDBo:pdbx_poly_seq_scheme.ndb_seq_num>17</PDBo:pdbx_poly_seq_scheme.ndb_seq_num>
+            <PDBo:pdbx_poly_seq_scheme.ndb_seq_num rdf:datatype="xsd:int">17</PDBo:pdbx_poly_seq_scheme.ndb_seq_num>
             <PDBo:pdbx_poly_seq_scheme.pdb_mon_id>SER</PDBo:pdbx_poly_seq_scheme.pdb_mon_id>
             <PDBo:pdbx_poly_seq_scheme.pdb_seq_num>17</PDBo:pdbx_poly_seq_scheme.pdb_seq_num>
             <PDBo:pdbx_poly_seq_scheme.pdb_strand_id>A</PDBo:pdbx_poly_seq_scheme.pdb_strand_id>
@@ -1651,11 +1651,11 @@
             <PDBo:pdbx_poly_seq_scheme.asym_id>A</PDBo:pdbx_poly_seq_scheme.asym_id>
             <PDBo:pdbx_poly_seq_scheme.entity_id>1</PDBo:pdbx_poly_seq_scheme.entity_id>
             <PDBo:pdbx_poly_seq_scheme.mon_id>GLN</PDBo:pdbx_poly_seq_scheme.mon_id>
-            <PDBo:pdbx_poly_seq_scheme.seq_id>18</PDBo:pdbx_poly_seq_scheme.seq_id>
+            <PDBo:pdbx_poly_seq_scheme.seq_id rdf:datatype="xsd:int">18</PDBo:pdbx_poly_seq_scheme.seq_id>
             <PDBo:pdbx_poly_seq_scheme.auth_mon_id>GLN</PDBo:pdbx_poly_seq_scheme.auth_mon_id>
             <PDBo:pdbx_poly_seq_scheme.auth_seq_num>18</PDBo:pdbx_poly_seq_scheme.auth_seq_num>
             <PDBo:pdbx_poly_seq_scheme.hetero>n</PDBo:pdbx_poly_seq_scheme.hetero>
-            <PDBo:pdbx_poly_seq_scheme.ndb_seq_num>18</PDBo:pdbx_poly_seq_scheme.ndb_seq_num>
+            <PDBo:pdbx_poly_seq_scheme.ndb_seq_num rdf:datatype="xsd:int">18</PDBo:pdbx_poly_seq_scheme.ndb_seq_num>
             <PDBo:pdbx_poly_seq_scheme.pdb_mon_id>GLN</PDBo:pdbx_poly_seq_scheme.pdb_mon_id>
             <PDBo:pdbx_poly_seq_scheme.pdb_seq_num>18</PDBo:pdbx_poly_seq_scheme.pdb_seq_num>
             <PDBo:pdbx_poly_seq_scheme.pdb_strand_id>A</PDBo:pdbx_poly_seq_scheme.pdb_strand_id>
@@ -1677,11 +1677,11 @@
             <PDBo:pdbx_poly_seq_scheme.asym_id>A</PDBo:pdbx_poly_seq_scheme.asym_id>
             <PDBo:pdbx_poly_seq_scheme.entity_id>1</PDBo:pdbx_poly_seq_scheme.entity_id>
             <PDBo:pdbx_poly_seq_scheme.mon_id>THR</PDBo:pdbx_poly_seq_scheme.mon_id>
-            <PDBo:pdbx_poly_seq_scheme.seq_id>19</PDBo:pdbx_poly_seq_scheme.seq_id>
+            <PDBo:pdbx_poly_seq_scheme.seq_id rdf:datatype="xsd:int">19</PDBo:pdbx_poly_seq_scheme.seq_id>
             <PDBo:pdbx_poly_seq_scheme.auth_mon_id>THR</PDBo:pdbx_poly_seq_scheme.auth_mon_id>
             <PDBo:pdbx_poly_seq_scheme.auth_seq_num>19</PDBo:pdbx_poly_seq_scheme.auth_seq_num>
             <PDBo:pdbx_poly_seq_scheme.hetero>n</PDBo:pdbx_poly_seq_scheme.hetero>
-            <PDBo:pdbx_poly_seq_scheme.ndb_seq_num>19</PDBo:pdbx_poly_seq_scheme.ndb_seq_num>
+            <PDBo:pdbx_poly_seq_scheme.ndb_seq_num rdf:datatype="xsd:int">19</PDBo:pdbx_poly_seq_scheme.ndb_seq_num>
             <PDBo:pdbx_poly_seq_scheme.pdb_mon_id>THR</PDBo:pdbx_poly_seq_scheme.pdb_mon_id>
             <PDBo:pdbx_poly_seq_scheme.pdb_seq_num>19</PDBo:pdbx_poly_seq_scheme.pdb_seq_num>
             <PDBo:pdbx_poly_seq_scheme.pdb_strand_id>A</PDBo:pdbx_poly_seq_scheme.pdb_strand_id>
@@ -1703,11 +1703,11 @@
             <PDBo:pdbx_poly_seq_scheme.asym_id>A</PDBo:pdbx_poly_seq_scheme.asym_id>
             <PDBo:pdbx_poly_seq_scheme.entity_id>1</PDBo:pdbx_poly_seq_scheme.entity_id>
             <PDBo:pdbx_poly_seq_scheme.mon_id>THR</PDBo:pdbx_poly_seq_scheme.mon_id>
-            <PDBo:pdbx_poly_seq_scheme.seq_id>20</PDBo:pdbx_poly_seq_scheme.seq_id>
+            <PDBo:pdbx_poly_seq_scheme.seq_id rdf:datatype="xsd:int">20</PDBo:pdbx_poly_seq_scheme.seq_id>
             <PDBo:pdbx_poly_seq_scheme.auth_mon_id>THR</PDBo:pdbx_poly_seq_scheme.auth_mon_id>
             <PDBo:pdbx_poly_seq_scheme.auth_seq_num>20</PDBo:pdbx_poly_seq_scheme.auth_seq_num>
             <PDBo:pdbx_poly_seq_scheme.hetero>n</PDBo:pdbx_poly_seq_scheme.hetero>
-            <PDBo:pdbx_poly_seq_scheme.ndb_seq_num>20</PDBo:pdbx_poly_seq_scheme.ndb_seq_num>
+            <PDBo:pdbx_poly_seq_scheme.ndb_seq_num rdf:datatype="xsd:int">20</PDBo:pdbx_poly_seq_scheme.ndb_seq_num>
             <PDBo:pdbx_poly_seq_scheme.pdb_mon_id>THR</PDBo:pdbx_poly_seq_scheme.pdb_mon_id>
             <PDBo:pdbx_poly_seq_scheme.pdb_seq_num>20</PDBo:pdbx_poly_seq_scheme.pdb_seq_num>
             <PDBo:pdbx_poly_seq_scheme.pdb_strand_id>A</PDBo:pdbx_poly_seq_scheme.pdb_strand_id>
@@ -1729,11 +1729,11 @@
             <PDBo:pdbx_poly_seq_scheme.asym_id>A</PDBo:pdbx_poly_seq_scheme.asym_id>
             <PDBo:pdbx_poly_seq_scheme.entity_id>1</PDBo:pdbx_poly_seq_scheme.entity_id>
             <PDBo:pdbx_poly_seq_scheme.mon_id>TRP</PDBo:pdbx_poly_seq_scheme.mon_id>
-            <PDBo:pdbx_poly_seq_scheme.seq_id>21</PDBo:pdbx_poly_seq_scheme.seq_id>
+            <PDBo:pdbx_poly_seq_scheme.seq_id rdf:datatype="xsd:int">21</PDBo:pdbx_poly_seq_scheme.seq_id>
             <PDBo:pdbx_poly_seq_scheme.auth_mon_id>TRP</PDBo:pdbx_poly_seq_scheme.auth_mon_id>
             <PDBo:pdbx_poly_seq_scheme.auth_seq_num>21</PDBo:pdbx_poly_seq_scheme.auth_seq_num>
             <PDBo:pdbx_poly_seq_scheme.hetero>n</PDBo:pdbx_poly_seq_scheme.hetero>
-            <PDBo:pdbx_poly_seq_scheme.ndb_seq_num>21</PDBo:pdbx_poly_seq_scheme.ndb_seq_num>
+            <PDBo:pdbx_poly_seq_scheme.ndb_seq_num rdf:datatype="xsd:int">21</PDBo:pdbx_poly_seq_scheme.ndb_seq_num>
             <PDBo:pdbx_poly_seq_scheme.pdb_mon_id>TRP</PDBo:pdbx_poly_seq_scheme.pdb_mon_id>
             <PDBo:pdbx_poly_seq_scheme.pdb_seq_num>21</PDBo:pdbx_poly_seq_scheme.pdb_seq_num>
             <PDBo:pdbx_poly_seq_scheme.pdb_strand_id>A</PDBo:pdbx_poly_seq_scheme.pdb_strand_id>
@@ -1755,11 +1755,11 @@
             <PDBo:pdbx_poly_seq_scheme.asym_id>A</PDBo:pdbx_poly_seq_scheme.asym_id>
             <PDBo:pdbx_poly_seq_scheme.entity_id>1</PDBo:pdbx_poly_seq_scheme.entity_id>
             <PDBo:pdbx_poly_seq_scheme.mon_id>GLY</PDBo:pdbx_poly_seq_scheme.mon_id>
-            <PDBo:pdbx_poly_seq_scheme.seq_id>22</PDBo:pdbx_poly_seq_scheme.seq_id>
+            <PDBo:pdbx_poly_seq_scheme.seq_id rdf:datatype="xsd:int">22</PDBo:pdbx_poly_seq_scheme.seq_id>
             <PDBo:pdbx_poly_seq_scheme.auth_mon_id>GLY</PDBo:pdbx_poly_seq_scheme.auth_mon_id>
             <PDBo:pdbx_poly_seq_scheme.auth_seq_num>22</PDBo:pdbx_poly_seq_scheme.auth_seq_num>
             <PDBo:pdbx_poly_seq_scheme.hetero>n</PDBo:pdbx_poly_seq_scheme.hetero>
-            <PDBo:pdbx_poly_seq_scheme.ndb_seq_num>22</PDBo:pdbx_poly_seq_scheme.ndb_seq_num>
+            <PDBo:pdbx_poly_seq_scheme.ndb_seq_num rdf:datatype="xsd:int">22</PDBo:pdbx_poly_seq_scheme.ndb_seq_num>
             <PDBo:pdbx_poly_seq_scheme.pdb_mon_id>GLY</PDBo:pdbx_poly_seq_scheme.pdb_mon_id>
             <PDBo:pdbx_poly_seq_scheme.pdb_seq_num>22</PDBo:pdbx_poly_seq_scheme.pdb_seq_num>
             <PDBo:pdbx_poly_seq_scheme.pdb_strand_id>A</PDBo:pdbx_poly_seq_scheme.pdb_strand_id>
@@ -1781,11 +1781,11 @@
             <PDBo:pdbx_poly_seq_scheme.asym_id>A</PDBo:pdbx_poly_seq_scheme.asym_id>
             <PDBo:pdbx_poly_seq_scheme.entity_id>1</PDBo:pdbx_poly_seq_scheme.entity_id>
             <PDBo:pdbx_poly_seq_scheme.mon_id>CYS</PDBo:pdbx_poly_seq_scheme.mon_id>
-            <PDBo:pdbx_poly_seq_scheme.seq_id>23</PDBo:pdbx_poly_seq_scheme.seq_id>
+            <PDBo:pdbx_poly_seq_scheme.seq_id rdf:datatype="xsd:int">23</PDBo:pdbx_poly_seq_scheme.seq_id>
             <PDBo:pdbx_poly_seq_scheme.auth_mon_id>CYS</PDBo:pdbx_poly_seq_scheme.auth_mon_id>
             <PDBo:pdbx_poly_seq_scheme.auth_seq_num>23</PDBo:pdbx_poly_seq_scheme.auth_seq_num>
             <PDBo:pdbx_poly_seq_scheme.hetero>n</PDBo:pdbx_poly_seq_scheme.hetero>
-            <PDBo:pdbx_poly_seq_scheme.ndb_seq_num>23</PDBo:pdbx_poly_seq_scheme.ndb_seq_num>
+            <PDBo:pdbx_poly_seq_scheme.ndb_seq_num rdf:datatype="xsd:int">23</PDBo:pdbx_poly_seq_scheme.ndb_seq_num>
             <PDBo:pdbx_poly_seq_scheme.pdb_mon_id>CYS</PDBo:pdbx_poly_seq_scheme.pdb_mon_id>
             <PDBo:pdbx_poly_seq_scheme.pdb_seq_num>23</PDBo:pdbx_poly_seq_scheme.pdb_seq_num>
             <PDBo:pdbx_poly_seq_scheme.pdb_strand_id>A</PDBo:pdbx_poly_seq_scheme.pdb_strand_id>
@@ -1807,11 +1807,11 @@
             <PDBo:pdbx_poly_seq_scheme.asym_id>A</PDBo:pdbx_poly_seq_scheme.asym_id>
             <PDBo:pdbx_poly_seq_scheme.entity_id>1</PDBo:pdbx_poly_seq_scheme.entity_id>
             <PDBo:pdbx_poly_seq_scheme.mon_id>CYS</PDBo:pdbx_poly_seq_scheme.mon_id>
-            <PDBo:pdbx_poly_seq_scheme.seq_id>24</PDBo:pdbx_poly_seq_scheme.seq_id>
+            <PDBo:pdbx_poly_seq_scheme.seq_id rdf:datatype="xsd:int">24</PDBo:pdbx_poly_seq_scheme.seq_id>
             <PDBo:pdbx_poly_seq_scheme.auth_mon_id>CYS</PDBo:pdbx_poly_seq_scheme.auth_mon_id>
             <PDBo:pdbx_poly_seq_scheme.auth_seq_num>24</PDBo:pdbx_poly_seq_scheme.auth_seq_num>
             <PDBo:pdbx_poly_seq_scheme.hetero>n</PDBo:pdbx_poly_seq_scheme.hetero>
-            <PDBo:pdbx_poly_seq_scheme.ndb_seq_num>24</PDBo:pdbx_poly_seq_scheme.ndb_seq_num>
+            <PDBo:pdbx_poly_seq_scheme.ndb_seq_num rdf:datatype="xsd:int">24</PDBo:pdbx_poly_seq_scheme.ndb_seq_num>
             <PDBo:pdbx_poly_seq_scheme.pdb_mon_id>CYS</PDBo:pdbx_poly_seq_scheme.pdb_mon_id>
             <PDBo:pdbx_poly_seq_scheme.pdb_seq_num>24</PDBo:pdbx_poly_seq_scheme.pdb_seq_num>
             <PDBo:pdbx_poly_seq_scheme.pdb_strand_id>A</PDBo:pdbx_poly_seq_scheme.pdb_strand_id>
@@ -1826,7 +1826,7 @@
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7JIA"/>
             <PDBo:pdbx_struct_assembly.id>1</PDBo:pdbx_struct_assembly.id>
             <PDBo:pdbx_struct_assembly.details>author_defined_assembly</PDBo:pdbx_struct_assembly.details>
-            <PDBo:pdbx_struct_assembly.oligomeric_count>1</PDBo:pdbx_struct_assembly.oligomeric_count>
+            <PDBo:pdbx_struct_assembly.oligomeric_count rdf:datatype="xsd:int">1</PDBo:pdbx_struct_assembly.oligomeric_count>
             <PDBo:pdbx_struct_assembly.oligomeric_details>monomeric</PDBo:pdbx_struct_assembly.oligomeric_details>
           </PDBo:pdbx_struct_assembly>
         </PDBo:has_pdbx_struct_assembly>
@@ -1872,20 +1872,20 @@
           <PDBo:pdbx_struct_oper_list rdf:about="http://rdf.wwpdb.org/pdb/7JIA/pdbx_struct_oper_list/1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7JIA"/>
             <PDBo:pdbx_struct_oper_list.id>1</PDBo:pdbx_struct_oper_list.id>
-            <PDBo:pdbx_struct_oper_list.matrix11>1.0000000000</PDBo:pdbx_struct_oper_list.matrix11>
-            <PDBo:pdbx_struct_oper_list.matrix12>0.0000000000</PDBo:pdbx_struct_oper_list.matrix12>
-            <PDBo:pdbx_struct_oper_list.matrix13>0.0000000000</PDBo:pdbx_struct_oper_list.matrix13>
-            <PDBo:pdbx_struct_oper_list.matrix21>0.0000000000</PDBo:pdbx_struct_oper_list.matrix21>
-            <PDBo:pdbx_struct_oper_list.matrix22>1.0000000000</PDBo:pdbx_struct_oper_list.matrix22>
-            <PDBo:pdbx_struct_oper_list.matrix23>0.0000000000</PDBo:pdbx_struct_oper_list.matrix23>
-            <PDBo:pdbx_struct_oper_list.matrix31>0.0000000000</PDBo:pdbx_struct_oper_list.matrix31>
-            <PDBo:pdbx_struct_oper_list.matrix32>0.0000000000</PDBo:pdbx_struct_oper_list.matrix32>
-            <PDBo:pdbx_struct_oper_list.matrix33>1.0000000000</PDBo:pdbx_struct_oper_list.matrix33>
+            <PDBo:pdbx_struct_oper_list.matrix11 rdf:datatype="xsd:decimal">1.0000000000</PDBo:pdbx_struct_oper_list.matrix11>
+            <PDBo:pdbx_struct_oper_list.matrix12 rdf:datatype="xsd:decimal">0.0000000000</PDBo:pdbx_struct_oper_list.matrix12>
+            <PDBo:pdbx_struct_oper_list.matrix13 rdf:datatype="xsd:decimal">0.0000000000</PDBo:pdbx_struct_oper_list.matrix13>
+            <PDBo:pdbx_struct_oper_list.matrix21 rdf:datatype="xsd:decimal">0.0000000000</PDBo:pdbx_struct_oper_list.matrix21>
+            <PDBo:pdbx_struct_oper_list.matrix22 rdf:datatype="xsd:decimal">1.0000000000</PDBo:pdbx_struct_oper_list.matrix22>
+            <PDBo:pdbx_struct_oper_list.matrix23 rdf:datatype="xsd:decimal">0.0000000000</PDBo:pdbx_struct_oper_list.matrix23>
+            <PDBo:pdbx_struct_oper_list.matrix31 rdf:datatype="xsd:decimal">0.0000000000</PDBo:pdbx_struct_oper_list.matrix31>
+            <PDBo:pdbx_struct_oper_list.matrix32 rdf:datatype="xsd:decimal">0.0000000000</PDBo:pdbx_struct_oper_list.matrix32>
+            <PDBo:pdbx_struct_oper_list.matrix33 rdf:datatype="xsd:decimal">1.0000000000</PDBo:pdbx_struct_oper_list.matrix33>
             <PDBo:pdbx_struct_oper_list.name>1_555</PDBo:pdbx_struct_oper_list.name>
             <PDBo:pdbx_struct_oper_list.type>identity operation</PDBo:pdbx_struct_oper_list.type>
-            <PDBo:pdbx_struct_oper_list.vector1>0.0000000000</PDBo:pdbx_struct_oper_list.vector1>
-            <PDBo:pdbx_struct_oper_list.vector2>0.0000000000</PDBo:pdbx_struct_oper_list.vector2>
-            <PDBo:pdbx_struct_oper_list.vector3>0.0000000000</PDBo:pdbx_struct_oper_list.vector3>
+            <PDBo:pdbx_struct_oper_list.vector1 rdf:datatype="xsd:decimal">0.0000000000</PDBo:pdbx_struct_oper_list.vector1>
+            <PDBo:pdbx_struct_oper_list.vector2 rdf:datatype="xsd:decimal">0.0000000000</PDBo:pdbx_struct_oper_list.vector2>
+            <PDBo:pdbx_struct_oper_list.vector3 rdf:datatype="xsd:decimal">0.0000000000</PDBo:pdbx_struct_oper_list.vector3>
           </PDBo:pdbx_struct_oper_list>
         </PDBo:has_pdbx_struct_oper_list>
       </PDBo:pdbx_struct_oper_listCategory>
@@ -1910,7 +1910,7 @@
             <PDBo:pdbx_struct_sheet_hbond.range_1_label_asym_id>A</PDBo:pdbx_struct_sheet_hbond.range_1_label_asym_id>
             <PDBo:pdbx_struct_sheet_hbond.range_1_label_atom_id>N</PDBo:pdbx_struct_sheet_hbond.range_1_label_atom_id>
             <PDBo:pdbx_struct_sheet_hbond.range_1_label_comp_id>CYS</PDBo:pdbx_struct_sheet_hbond.range_1_label_comp_id>
-            <PDBo:pdbx_struct_sheet_hbond.range_1_label_seq_id>14</PDBo:pdbx_struct_sheet_hbond.range_1_label_seq_id>
+            <PDBo:pdbx_struct_sheet_hbond.range_1_label_seq_id rdf:datatype="xsd:int">14</PDBo:pdbx_struct_sheet_hbond.range_1_label_seq_id>
             <PDBo:pdbx_struct_sheet_hbond.range_2_auth_asym_id>A</PDBo:pdbx_struct_sheet_hbond.range_2_auth_asym_id>
             <PDBo:pdbx_struct_sheet_hbond.range_2_auth_atom_id>O</PDBo:pdbx_struct_sheet_hbond.range_2_auth_atom_id>
             <PDBo:pdbx_struct_sheet_hbond.range_2_auth_comp_id>GLY</PDBo:pdbx_struct_sheet_hbond.range_2_auth_comp_id>
@@ -1918,7 +1918,7 @@
             <PDBo:pdbx_struct_sheet_hbond.range_2_label_asym_id>A</PDBo:pdbx_struct_sheet_hbond.range_2_label_asym_id>
             <PDBo:pdbx_struct_sheet_hbond.range_2_label_atom_id>O</PDBo:pdbx_struct_sheet_hbond.range_2_label_atom_id>
             <PDBo:pdbx_struct_sheet_hbond.range_2_label_comp_id>GLY</PDBo:pdbx_struct_sheet_hbond.range_2_label_comp_id>
-            <PDBo:pdbx_struct_sheet_hbond.range_2_label_seq_id>22</PDBo:pdbx_struct_sheet_hbond.range_2_label_seq_id>
+            <PDBo:pdbx_struct_sheet_hbond.range_2_label_seq_id rdf:datatype="xsd:int">22</PDBo:pdbx_struct_sheet_hbond.range_2_label_seq_id>
           </PDBo:pdbx_struct_sheet_hbond>
         </PDBo:has_pdbx_struct_sheet_hbond>
       </PDBo:pdbx_struct_sheet_hbondCategory>
@@ -1928,25 +1928,25 @@
         <PDBo:has_pdbx_validate_torsion>
           <PDBo:pdbx_validate_torsion rdf:about="http://rdf.wwpdb.org/pdb/7JIA/pdbx_validate_torsion/1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7JIA"/>
-            <PDBo:pdbx_validate_torsion.id>1</PDBo:pdbx_validate_torsion.id>
-            <PDBo:pdbx_validate_torsion.PDB_model_num>11</PDBo:pdbx_validate_torsion.PDB_model_num>
+            <PDBo:pdbx_validate_torsion.id rdf:datatype="xsd:int">1</PDBo:pdbx_validate_torsion.id>
+            <PDBo:pdbx_validate_torsion.PDB_model_num rdf:datatype="xsd:int">11</PDBo:pdbx_validate_torsion.PDB_model_num>
             <PDBo:pdbx_validate_torsion.auth_asym_id>A</PDBo:pdbx_validate_torsion.auth_asym_id>
             <PDBo:pdbx_validate_torsion.auth_comp_id>PHE</PDBo:pdbx_validate_torsion.auth_comp_id>
             <PDBo:pdbx_validate_torsion.auth_seq_id>5</PDBo:pdbx_validate_torsion.auth_seq_id>
-            <PDBo:pdbx_validate_torsion.phi>-62.42</PDBo:pdbx_validate_torsion.phi>
-            <PDBo:pdbx_validate_torsion.psi>-176.15</PDBo:pdbx_validate_torsion.psi>
+            <PDBo:pdbx_validate_torsion.phi rdf:datatype="xsd:decimal">-62.42</PDBo:pdbx_validate_torsion.phi>
+            <PDBo:pdbx_validate_torsion.psi rdf:datatype="xsd:decimal">-176.15</PDBo:pdbx_validate_torsion.psi>
           </PDBo:pdbx_validate_torsion>
         </PDBo:has_pdbx_validate_torsion>
         <PDBo:has_pdbx_validate_torsion>
           <PDBo:pdbx_validate_torsion rdf:about="http://rdf.wwpdb.org/pdb/7JIA/pdbx_validate_torsion/2">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7JIA"/>
-            <PDBo:pdbx_validate_torsion.id>2</PDBo:pdbx_validate_torsion.id>
-            <PDBo:pdbx_validate_torsion.PDB_model_num>19</PDBo:pdbx_validate_torsion.PDB_model_num>
+            <PDBo:pdbx_validate_torsion.id rdf:datatype="xsd:int">2</PDBo:pdbx_validate_torsion.id>
+            <PDBo:pdbx_validate_torsion.PDB_model_num rdf:datatype="xsd:int">19</PDBo:pdbx_validate_torsion.PDB_model_num>
             <PDBo:pdbx_validate_torsion.auth_asym_id>A</PDBo:pdbx_validate_torsion.auth_asym_id>
             <PDBo:pdbx_validate_torsion.auth_comp_id>SER</PDBo:pdbx_validate_torsion.auth_comp_id>
             <PDBo:pdbx_validate_torsion.auth_seq_id>17</PDBo:pdbx_validate_torsion.auth_seq_id>
-            <PDBo:pdbx_validate_torsion.phi>-125.93</PDBo:pdbx_validate_torsion.phi>
-            <PDBo:pdbx_validate_torsion.psi>-169.82</PDBo:pdbx_validate_torsion.psi>
+            <PDBo:pdbx_validate_torsion.phi rdf:datatype="xsd:decimal">-125.93</PDBo:pdbx_validate_torsion.phi>
+            <PDBo:pdbx_validate_torsion.psi rdf:datatype="xsd:decimal">-169.82</PDBo:pdbx_validate_torsion.psi>
           </PDBo:pdbx_validate_torsion>
         </PDBo:has_pdbx_validate_torsion>
       </PDBo:pdbx_validate_torsionCategory>
@@ -2004,14 +2004,14 @@
             </PDBo:reference_to_struct_conn_type>
             <PDBo:struct_conn.id>disulf1</PDBo:struct_conn.id>
             <PDBo:struct_conn.conn_type_id>disulf</PDBo:struct_conn.conn_type_id>
-            <PDBo:struct_conn.pdbx_dist_value>2.046</PDBo:struct_conn.pdbx_dist_value>
+            <PDBo:struct_conn.pdbx_dist_value rdf:datatype="xsd:decimal">2.046</PDBo:struct_conn.pdbx_dist_value>
             <PDBo:struct_conn.ptnr1_auth_asym_id>A</PDBo:struct_conn.ptnr1_auth_asym_id>
             <PDBo:struct_conn.ptnr1_auth_comp_id>CYS</PDBo:struct_conn.ptnr1_auth_comp_id>
             <PDBo:struct_conn.ptnr1_auth_seq_id>1</PDBo:struct_conn.ptnr1_auth_seq_id>
             <PDBo:struct_conn.ptnr1_label_asym_id>A</PDBo:struct_conn.ptnr1_label_asym_id>
             <PDBo:struct_conn.ptnr1_label_atom_id>SG</PDBo:struct_conn.ptnr1_label_atom_id>
             <PDBo:struct_conn.ptnr1_label_comp_id>CYS</PDBo:struct_conn.ptnr1_label_comp_id>
-            <PDBo:struct_conn.ptnr1_label_seq_id>1</PDBo:struct_conn.ptnr1_label_seq_id>
+            <PDBo:struct_conn.ptnr1_label_seq_id rdf:datatype="xsd:int">1</PDBo:struct_conn.ptnr1_label_seq_id>
             <PDBo:struct_conn.ptnr1_symmetry>1_555</PDBo:struct_conn.ptnr1_symmetry>
             <PDBo:struct_conn.ptnr2_auth_asym_id>A</PDBo:struct_conn.ptnr2_auth_asym_id>
             <PDBo:struct_conn.ptnr2_auth_comp_id>CYS</PDBo:struct_conn.ptnr2_auth_comp_id>
@@ -2019,7 +2019,7 @@
             <PDBo:struct_conn.ptnr2_label_asym_id>A</PDBo:struct_conn.ptnr2_label_asym_id>
             <PDBo:struct_conn.ptnr2_label_atom_id>SG</PDBo:struct_conn.ptnr2_label_atom_id>
             <PDBo:struct_conn.ptnr2_label_comp_id>CYS</PDBo:struct_conn.ptnr2_label_comp_id>
-            <PDBo:struct_conn.ptnr2_label_seq_id>13</PDBo:struct_conn.ptnr2_label_seq_id>
+            <PDBo:struct_conn.ptnr2_label_seq_id rdf:datatype="xsd:int">13</PDBo:struct_conn.ptnr2_label_seq_id>
             <PDBo:struct_conn.ptnr2_symmetry>1_555</PDBo:struct_conn.ptnr2_symmetry>
           </PDBo:struct_conn>
         </PDBo:has_struct_conn>
@@ -2033,14 +2033,14 @@
             </PDBo:reference_to_struct_conn_type>
             <PDBo:struct_conn.id>disulf2</PDBo:struct_conn.id>
             <PDBo:struct_conn.conn_type_id>disulf</PDBo:struct_conn.conn_type_id>
-            <PDBo:struct_conn.pdbx_dist_value>2.005</PDBo:struct_conn.pdbx_dist_value>
+            <PDBo:struct_conn.pdbx_dist_value rdf:datatype="xsd:decimal">2.005</PDBo:struct_conn.pdbx_dist_value>
             <PDBo:struct_conn.ptnr1_auth_asym_id>A</PDBo:struct_conn.ptnr1_auth_asym_id>
             <PDBo:struct_conn.ptnr1_auth_comp_id>CYS</PDBo:struct_conn.ptnr1_auth_comp_id>
             <PDBo:struct_conn.ptnr1_auth_seq_id>7</PDBo:struct_conn.ptnr1_auth_seq_id>
             <PDBo:struct_conn.ptnr1_label_asym_id>A</PDBo:struct_conn.ptnr1_label_asym_id>
             <PDBo:struct_conn.ptnr1_label_atom_id>SG</PDBo:struct_conn.ptnr1_label_atom_id>
             <PDBo:struct_conn.ptnr1_label_comp_id>CYS</PDBo:struct_conn.ptnr1_label_comp_id>
-            <PDBo:struct_conn.ptnr1_label_seq_id>7</PDBo:struct_conn.ptnr1_label_seq_id>
+            <PDBo:struct_conn.ptnr1_label_seq_id rdf:datatype="xsd:int">7</PDBo:struct_conn.ptnr1_label_seq_id>
             <PDBo:struct_conn.ptnr1_symmetry>1_555</PDBo:struct_conn.ptnr1_symmetry>
             <PDBo:struct_conn.ptnr2_auth_asym_id>A</PDBo:struct_conn.ptnr2_auth_asym_id>
             <PDBo:struct_conn.ptnr2_auth_comp_id>CYS</PDBo:struct_conn.ptnr2_auth_comp_id>
@@ -2048,7 +2048,7 @@
             <PDBo:struct_conn.ptnr2_label_asym_id>A</PDBo:struct_conn.ptnr2_label_asym_id>
             <PDBo:struct_conn.ptnr2_label_atom_id>SG</PDBo:struct_conn.ptnr2_label_atom_id>
             <PDBo:struct_conn.ptnr2_label_comp_id>CYS</PDBo:struct_conn.ptnr2_label_comp_id>
-            <PDBo:struct_conn.ptnr2_label_seq_id>23</PDBo:struct_conn.ptnr2_label_seq_id>
+            <PDBo:struct_conn.ptnr2_label_seq_id rdf:datatype="xsd:int">23</PDBo:struct_conn.ptnr2_label_seq_id>
             <PDBo:struct_conn.ptnr2_symmetry>1_555</PDBo:struct_conn.ptnr2_symmetry>
           </PDBo:struct_conn>
         </PDBo:has_struct_conn>
@@ -2062,14 +2062,14 @@
             </PDBo:reference_to_struct_conn_type>
             <PDBo:struct_conn.id>disulf3</PDBo:struct_conn.id>
             <PDBo:struct_conn.conn_type_id>disulf</PDBo:struct_conn.conn_type_id>
-            <PDBo:struct_conn.pdbx_dist_value>2.008</PDBo:struct_conn.pdbx_dist_value>
+            <PDBo:struct_conn.pdbx_dist_value rdf:datatype="xsd:decimal">2.008</PDBo:struct_conn.pdbx_dist_value>
             <PDBo:struct_conn.ptnr1_auth_asym_id>A</PDBo:struct_conn.ptnr1_auth_asym_id>
             <PDBo:struct_conn.ptnr1_auth_comp_id>CYS</PDBo:struct_conn.ptnr1_auth_comp_id>
             <PDBo:struct_conn.ptnr1_auth_seq_id>14</PDBo:struct_conn.ptnr1_auth_seq_id>
             <PDBo:struct_conn.ptnr1_label_asym_id>A</PDBo:struct_conn.ptnr1_label_asym_id>
             <PDBo:struct_conn.ptnr1_label_atom_id>SG</PDBo:struct_conn.ptnr1_label_atom_id>
             <PDBo:struct_conn.ptnr1_label_comp_id>CYS</PDBo:struct_conn.ptnr1_label_comp_id>
-            <PDBo:struct_conn.ptnr1_label_seq_id>14</PDBo:struct_conn.ptnr1_label_seq_id>
+            <PDBo:struct_conn.ptnr1_label_seq_id rdf:datatype="xsd:int">14</PDBo:struct_conn.ptnr1_label_seq_id>
             <PDBo:struct_conn.ptnr1_symmetry>1_555</PDBo:struct_conn.ptnr1_symmetry>
             <PDBo:struct_conn.ptnr2_auth_asym_id>A</PDBo:struct_conn.ptnr2_auth_asym_id>
             <PDBo:struct_conn.ptnr2_auth_comp_id>CYS</PDBo:struct_conn.ptnr2_auth_comp_id>
@@ -2077,7 +2077,7 @@
             <PDBo:struct_conn.ptnr2_label_asym_id>A</PDBo:struct_conn.ptnr2_label_asym_id>
             <PDBo:struct_conn.ptnr2_label_atom_id>SG</PDBo:struct_conn.ptnr2_label_atom_id>
             <PDBo:struct_conn.ptnr2_label_comp_id>CYS</PDBo:struct_conn.ptnr2_label_comp_id>
-            <PDBo:struct_conn.ptnr2_label_seq_id>24</PDBo:struct_conn.ptnr2_label_seq_id>
+            <PDBo:struct_conn.ptnr2_label_seq_id rdf:datatype="xsd:int">24</PDBo:struct_conn.ptnr2_label_seq_id>
             <PDBo:struct_conn.ptnr2_symmetry>1_555</PDBo:struct_conn.ptnr2_symmetry>
           </PDBo:struct_conn>
         </PDBo:has_struct_conn>
@@ -2144,16 +2144,16 @@
               </rdf:Description>
             </PDBo:reference_to_struct_ref>
             <PDBo:struct_ref_seq.align_id>1</PDBo:struct_ref_seq.align_id>
-            <PDBo:struct_ref_seq.db_align_beg>796</PDBo:struct_ref_seq.db_align_beg>
-            <PDBo:struct_ref_seq.db_align_end>819</PDBo:struct_ref_seq.db_align_end>
+            <PDBo:struct_ref_seq.db_align_beg rdf:datatype="xsd:int">796</PDBo:struct_ref_seq.db_align_beg>
+            <PDBo:struct_ref_seq.db_align_end rdf:datatype="xsd:int">819</PDBo:struct_ref_seq.db_align_end>
             <PDBo:struct_ref_seq.pdbx_PDB_id_code>7JIA</PDBo:struct_ref_seq.pdbx_PDB_id_code>
             <PDBo:struct_ref_seq.pdbx_auth_seq_align_beg>1</PDBo:struct_ref_seq.pdbx_auth_seq_align_beg>
             <PDBo:struct_ref_seq.pdbx_auth_seq_align_end>24</PDBo:struct_ref_seq.pdbx_auth_seq_align_end>
             <PDBo:struct_ref_seq.pdbx_db_accession>Q8QGN9</PDBo:struct_ref_seq.pdbx_db_accession>
             <PDBo:struct_ref_seq.pdbx_strand_id>A</PDBo:struct_ref_seq.pdbx_strand_id>
             <PDBo:struct_ref_seq.ref_id>1</PDBo:struct_ref_seq.ref_id>
-            <PDBo:struct_ref_seq.seq_align_beg>1</PDBo:struct_ref_seq.seq_align_beg>
-            <PDBo:struct_ref_seq.seq_align_end>24</PDBo:struct_ref_seq.seq_align_end>
+            <PDBo:struct_ref_seq.seq_align_beg rdf:datatype="xsd:int">1</PDBo:struct_ref_seq.seq_align_beg>
+            <PDBo:struct_ref_seq.seq_align_end rdf:datatype="xsd:int">24</PDBo:struct_ref_seq.seq_align_end>
           </PDBo:struct_ref_seq>
         </PDBo:has_struct_ref_seq>
       </PDBo:struct_ref_seqCategory>
@@ -2164,7 +2164,7 @@
           <PDBo:struct_sheet rdf:about="http://rdf.wwpdb.org/pdb/7JIA/struct_sheet/AA1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7JIA"/>
             <PDBo:struct_sheet.id>AA1</PDBo:struct_sheet.id>
-            <PDBo:struct_sheet.number_strands>2</PDBo:struct_sheet.number_strands>
+            <PDBo:struct_sheet.number_strands rdf:datatype="xsd:int">2</PDBo:struct_sheet.number_strands>
           </PDBo:struct_sheet>
         </PDBo:has_struct_sheet>
       </PDBo:struct_sheetCategory>
@@ -2204,13 +2204,13 @@
             <PDBo:struct_sheet_range.beg_auth_seq_id>12</PDBo:struct_sheet_range.beg_auth_seq_id>
             <PDBo:struct_sheet_range.beg_label_asym_id>A</PDBo:struct_sheet_range.beg_label_asym_id>
             <PDBo:struct_sheet_range.beg_label_comp_id>THR</PDBo:struct_sheet_range.beg_label_comp_id>
-            <PDBo:struct_sheet_range.beg_label_seq_id>12</PDBo:struct_sheet_range.beg_label_seq_id>
+            <PDBo:struct_sheet_range.beg_label_seq_id rdf:datatype="xsd:int">12</PDBo:struct_sheet_range.beg_label_seq_id>
             <PDBo:struct_sheet_range.end_auth_asym_id>A</PDBo:struct_sheet_range.end_auth_asym_id>
             <PDBo:struct_sheet_range.end_auth_comp_id>CYS</PDBo:struct_sheet_range.end_auth_comp_id>
             <PDBo:struct_sheet_range.end_auth_seq_id>14</PDBo:struct_sheet_range.end_auth_seq_id>
             <PDBo:struct_sheet_range.end_label_asym_id>A</PDBo:struct_sheet_range.end_label_asym_id>
             <PDBo:struct_sheet_range.end_label_comp_id>CYS</PDBo:struct_sheet_range.end_label_comp_id>
-            <PDBo:struct_sheet_range.end_label_seq_id>14</PDBo:struct_sheet_range.end_label_seq_id>
+            <PDBo:struct_sheet_range.end_label_seq_id rdf:datatype="xsd:int">14</PDBo:struct_sheet_range.end_label_seq_id>
           </PDBo:struct_sheet_range>
         </PDBo:has_struct_sheet_range>
         <PDBo:has_struct_sheet_range>
@@ -2228,13 +2228,13 @@
             <PDBo:struct_sheet_range.beg_auth_seq_id>22</PDBo:struct_sheet_range.beg_auth_seq_id>
             <PDBo:struct_sheet_range.beg_label_asym_id>A</PDBo:struct_sheet_range.beg_label_asym_id>
             <PDBo:struct_sheet_range.beg_label_comp_id>GLY</PDBo:struct_sheet_range.beg_label_comp_id>
-            <PDBo:struct_sheet_range.beg_label_seq_id>22</PDBo:struct_sheet_range.beg_label_seq_id>
+            <PDBo:struct_sheet_range.beg_label_seq_id rdf:datatype="xsd:int">22</PDBo:struct_sheet_range.beg_label_seq_id>
             <PDBo:struct_sheet_range.end_auth_asym_id>A</PDBo:struct_sheet_range.end_auth_asym_id>
             <PDBo:struct_sheet_range.end_auth_comp_id>CYS</PDBo:struct_sheet_range.end_auth_comp_id>
             <PDBo:struct_sheet_range.end_auth_seq_id>24</PDBo:struct_sheet_range.end_auth_seq_id>
             <PDBo:struct_sheet_range.end_label_asym_id>A</PDBo:struct_sheet_range.end_label_asym_id>
             <PDBo:struct_sheet_range.end_label_comp_id>CYS</PDBo:struct_sheet_range.end_label_comp_id>
-            <PDBo:struct_sheet_range.end_label_seq_id>24</PDBo:struct_sheet_range.end_label_seq_id>
+            <PDBo:struct_sheet_range.end_label_seq_id rdf:datatype="xsd:int">24</PDBo:struct_sheet_range.end_label_seq_id>
           </PDBo:struct_sheet_range>
         </PDBo:has_struct_sheet_range>
       </PDBo:struct_sheet_rangeCategory>
@@ -2252,16 +2252,16 @@
             <PDBo:pdbx_sifts_unp_segments.entity_id>1</PDBo:pdbx_sifts_unp_segments.entity_id>
             <PDBo:pdbx_sifts_unp_segments.asym_id>A</PDBo:pdbx_sifts_unp_segments.asym_id>
             <PDBo:pdbx_sifts_unp_segments.unp_acc>Q8QGN9</PDBo:pdbx_sifts_unp_segments.unp_acc>
-            <PDBo:pdbx_sifts_unp_segments.segment_id>1</PDBo:pdbx_sifts_unp_segments.segment_id>
-            <PDBo:pdbx_sifts_unp_segments.instance_id>1</PDBo:pdbx_sifts_unp_segments.instance_id>
+            <PDBo:pdbx_sifts_unp_segments.segment_id rdf:datatype="xsd:int">1</PDBo:pdbx_sifts_unp_segments.segment_id>
+            <PDBo:pdbx_sifts_unp_segments.instance_id rdf:datatype="xsd:int">1</PDBo:pdbx_sifts_unp_segments.instance_id>
             <PDBo:link_to_uniprot rdf:resource="http://purl.uniprot.org/uniprot/Q8QGN9" rdfs:label="uniprot:Q8QGN9"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/Q8QGN9" rdfs:label="uniprot:Q8QGN9"/>
-            <PDBo:pdbx_sifts_unp_segments.unp_start>796</PDBo:pdbx_sifts_unp_segments.unp_start>
-            <PDBo:pdbx_sifts_unp_segments.unp_end>819</PDBo:pdbx_sifts_unp_segments.unp_end>
-            <PDBo:pdbx_sifts_unp_segments.seq_id_start>1</PDBo:pdbx_sifts_unp_segments.seq_id_start>
-            <PDBo:pdbx_sifts_unp_segments.seq_id_end>24</PDBo:pdbx_sifts_unp_segments.seq_id_end>
+            <PDBo:pdbx_sifts_unp_segments.unp_start rdf:datatype="xsd:int">796</PDBo:pdbx_sifts_unp_segments.unp_start>
+            <PDBo:pdbx_sifts_unp_segments.unp_end rdf:datatype="xsd:int">819</PDBo:pdbx_sifts_unp_segments.unp_end>
+            <PDBo:pdbx_sifts_unp_segments.seq_id_start rdf:datatype="xsd:int">1</PDBo:pdbx_sifts_unp_segments.seq_id_start>
+            <PDBo:pdbx_sifts_unp_segments.seq_id_end rdf:datatype="xsd:int">24</PDBo:pdbx_sifts_unp_segments.seq_id_end>
             <PDBo:pdbx_sifts_unp_segments.best_mapping>Y</PDBo:pdbx_sifts_unp_segments.best_mapping>
-            <PDBo:pdbx_sifts_unp_segments.identity>1.000</PDBo:pdbx_sifts_unp_segments.identity>
+            <PDBo:pdbx_sifts_unp_segments.identity rdf:datatype="xsd:decimal">1.000</PDBo:pdbx_sifts_unp_segments.identity>
           </PDBo:pdbx_sifts_unp_segments>
         </PDBo:has_pdbx_sifts_unp_segments>
       </PDBo:pdbx_sifts_unp_segmentsCategory>
@@ -2280,10 +2280,10 @@
             <PDBo:pdbx_sifts_xref_db_segments.asym_id>A</PDBo:pdbx_sifts_xref_db_segments.asym_id>
             <PDBo:pdbx_sifts_xref_db_segments.xref_db>Pfam</PDBo:pdbx_sifts_xref_db_segments.xref_db>
             <PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>PF00396</PDBo:pdbx_sifts_xref_db_segments.xref_db_acc>
-            <PDBo:pdbx_sifts_xref_db_segments.segment_id>1</PDBo:pdbx_sifts_xref_db_segments.segment_id>
-            <PDBo:pdbx_sifts_xref_db_segments.instance_id>1</PDBo:pdbx_sifts_xref_db_segments.instance_id>
-            <PDBo:pdbx_sifts_xref_db_segments.seq_id_start>12</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
-            <PDBo:pdbx_sifts_xref_db_segments.seq_id_end>24</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
+            <PDBo:pdbx_sifts_xref_db_segments.segment_id rdf:datatype="xsd:int">1</PDBo:pdbx_sifts_xref_db_segments.segment_id>
+            <PDBo:pdbx_sifts_xref_db_segments.instance_id rdf:datatype="xsd:int">1</PDBo:pdbx_sifts_xref_db_segments.instance_id>
+            <PDBo:pdbx_sifts_xref_db_segments.seq_id_start rdf:datatype="xsd:int">12</PDBo:pdbx_sifts_xref_db_segments.seq_id_start>
+            <PDBo:pdbx_sifts_xref_db_segments.seq_id_end rdf:datatype="xsd:int">24</PDBo:pdbx_sifts_xref_db_segments.seq_id_end>
             <PDBo:link_to_pfam rdf:resource="http://pfam.xfam.org/family/PF00396" rdfs:label="pfam:PF00396"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/pfam/PF00396" rdfs:label="pfam:PF00396"/>
           </PDBo:pdbx_sifts_xref_db_segments>

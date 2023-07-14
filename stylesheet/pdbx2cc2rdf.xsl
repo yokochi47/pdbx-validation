@@ -34,6 +34,9 @@
     <xsl2:text disable-output-escaping="yes">
   &lt;xsl:include href="url-encode.xsl"/&gt;
 
+  &lt;xsl:param name="primitive_type_mapping" select="'https://raw.githubusercontent.com/yokochi47/pdbx-validation/master/stylesheet/pdbx_primitive_type_mapping.xml'" required="no"/&gt;
+  &lt;xsl:param name="type_mapping" select="document($primitive_type_mapping)"/&gt;
+
   &lt;xsl:output method="xml" encoding="UTF-8" indent="yes"/&gt;
   &lt;xsl:strip-space elements="*"/&gt;
   &lt;xsl:variable name="CC_ID"&gt;&lt;xsl:value-of select="/PDBx:datablock/@datablockName"/&gt;&lt;/xsl:variable&gt;
@@ -85,14 +88,28 @@
 
   &lt;!-- level 4 (element) --&gt;
   &lt;xsl:template match="/PDBx:datablock/*/*/*[not(xsi:nil) and text()!='']"&gt;
-    &lt;xsl:element name="PDBo:{concat(local-name(parent::node()),'.',local-name())}"&gt;
+    &lt;xsl:variable name="category_item"&gt;&lt;xsl:value-of select="local-name(parent::node())"/&gt;&lt;/xsl:variable&gt;
+    &lt;xsl:variable name="data_item"&gt;&lt;xsl:value-of select="local-name()"/&gt;&lt;/xsl:variable&gt;
+    &lt;xsl:variable name="tag_name"&gt;&lt;xsl:value-of select="concat($category_item,'.',$data_item)"/&gt;&lt;/xsl:variable&gt;
+    &lt;xsl:variable name="data_tyep"&gt;&lt;xsl:value-of select="$type_mapping/primitive_type_mapping/category_item[@name=$category_item]/data_item[@name=$data_item]/@type"/&gt;&lt;/xsl:variable&gt;
+    &lt;xsl:element name="PDBo:{$tag_name}"&gt;
+      &lt;xsl:if test="$data_tyep!=''"&gt;
+	&lt;xsl:attribute name="rdf:datatype"&gt;&lt;xsl:value-of select="$data_tyep"/&gt;&lt;/xsl:attribute&gt;
+      &lt;/xsl:if&gt;
       &lt;xsl:value-of select="."/&gt;
     &lt;/xsl:element&gt;
   &lt;/xsl:template&gt;
 
   &lt;!-- level 4 (attribute) --&gt;
   &lt;xsl:template match="/PDBx:datablock/*/*/@*"&gt;
-    &lt;xsl:element name="PDBo:{concat(local-name(parent::node()),'.',translate(name(),'@',''))}"&gt;
+    &lt;xsl:variable name="category_item"&gt;&lt;xsl:value-of select="local-name(parent::node())"/&gt;&lt;/xsl:variable&gt;
+    &lt;xsl:variable name="data_item"&gt;&lt;xsl:value-of select="translate(name(),'@','')"/&gt;&lt;/xsl:variable&gt;
+    &lt;xsl:variable name="tag_name"&gt;&lt;xsl:value-of select="concat($category_item,'.',$data_item)"/&gt;&lt;/xsl:variable&gt;
+    &lt;xsl:variable name="data_tyep"&gt;&lt;xsl:value-of select="$type_mapping/primitive_type_mapping/category_item[@name=$category_item]/data_item[@name=$data_item]/@type"/&gt;&lt;/xsl:variable&gt;
+    &lt;xsl:element name="PDBo:{$tag_name}"&gt;
+      &lt;xsl:if test="$data_tyep!=''"&gt;
+	&lt;xsl:attribute name="rdf:datatype"&gt;&lt;xsl:value-of select="$data_tyep"/&gt;&lt;/xsl:attribute&gt;
+      &lt;/xsl:if&gt;
       &lt;xsl:value-of select="."/&gt;
     &lt;/xsl:element&gt;
   &lt;/xsl:template&gt;

@@ -35,6 +35,12 @@ WWPDB_VALIDATION_SQL=resource/wwpdb_validation_v6.02.sql
 PDBX_VALIDATION_XSD=schema/pdbx-validation-v4.xsd
 PDBX_VALIDATION_SQL=schema/pdbx-validation-v4.sql
 
+XSD2PRIMITIVE_TYPE_MAPPING_XSL=stylesheet/xsd2primitive_type_mapping.xsl
+PDBX_PRIMITIVE_TYPE_MAPPING_XML=stylesheet/pdbx_primitive_type_mapping.xml
+VRPTX_PRIMITIVE_TYPE_MAPPING_XML=stylesheet/vrptx_primitive_type_mapping.xml
+_PDBX_PRIMITIVE_TYPE_MAPPING_XML=pdbx_primitive_type_mapping.xml
+_VRPTX_PRIMITIVE_TYPE_MAPPING_XML=vrptx_primitive_type_mapping.xml
+
 XSD2EXT_PDBML_XSL=stylesheet/xsd2extract_pdbml.xsl
 EXT_PDBML_XSL=stylesheet/extract_pdbml.xsl
 

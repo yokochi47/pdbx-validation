@@ -206,7 +206,7 @@ File path | Document
 
 ## Release notes
 
-- **Jul 10, 2023**: Release v4.4.23
+- **Jul 14, 2023**: Release v4.4.23
 	- Update wwPDB Validation Information Dictionary to 4.373.
 	- Support NMR restraint remediation.
 	- Set _diffrn.pdbx_serial_crystal_experiment is not mandatory.
@@ -223,6 +223,8 @@ File path | Document
 		- _pdbx_nmr_dihedral_angle_violation_model.maximum_violation
 		- _pdbx_nmr_dihedral_angle_violation_model.averagem_violation
 		- _pdbx_nmr_dihedral_angle_violation_model.medianm_violation
+	- Improve performane of translation/validation scripts.
+	- Add XSD datatype of RDF literals, except for xsd:string.
 
 - **Jun 21, 2023**: Release v4.4.22
 	- Update wwPDB Validation Information Dictionary to 4.372.

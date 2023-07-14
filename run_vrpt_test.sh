@@ -26,6 +26,14 @@ fi
 
 #fi
 
+#if [ ! -e $VRPTX_PRIMITIVE_TYPE_MAPPING_XML ] ; then
+
+ java -jar $SAXON -s:$PDBX_VALIDATION_XSD -xsl:$XSD2PRIMITIVE_TYPE_MAPPING_XSL -o:$VRPTX_PRIMITIVE_TYPE_MAPPING_XML || ( echo $0 aborted. ; exit 1 )
+
+ echo Generated: $VRPTX_PRIMITIVE_TYPE_MAPPING_XML
+
+#fi
+
 #if [ ! -e $EXT_PDBML_XSL ] ; then
 
  java -jar $SAXON -s:$PDBX_VALIDATION_XSD -xsl:$XSD2EXT_PDBML_XSL -o:$EXT_PDBML_XSL || ( echo $0 aborted. ; exit 1 )
@@ -242,9 +250,9 @@ for pdbml_file in $WORK_DIR/$PDBML/*.xml ; do
  #has_glycan=`xsltproc $VRPTML2WURCS_XSL $pdbml_vrpt_file`
 
  #if [ -z "$has_glycan" ] ; then
-  xsltproc -o $rdf_vrpt_file --stringparam wurcs2glytoucan $WURCS_CATALOG_XML $VRPTML2RDF_XSL $pdbml_vrpt_file || ( echo $0 aborted. ; exit 1 )
+  xsltproc -o $rdf_vrpt_file --stringparam wurcs2glytoucan $WURCS_CATALOG_XML --stringparam primitive_type_mapping $_VRPTX_PRIMITIVE_TYPE_MAPPING_XML $VRPTML2RDF_XSL $pdbml_vrpt_file || ( echo $0 aborted. ; exit 1 )
  #else
- # java -jar $SAXON -s:$pdbml_vrpt_file -xsl:$VRPTML2RDF_XSL -o:$rdf_vrpt_file wurcs2glytoucan=$WURCS_CATALOG_XML || ( echo $0 aborted. ; exit 1 )
+ # java -jar $SAXON -s:$pdbml_vrpt_file -xsl:$VRPTML2RDF_XSL -o:$rdf_vrpt_file wurcs2glytoucan=$WURCS_CATALOG_XML primitive_type_mapping=$_VRPTX_PRIMITIVE_TYPE_MAPPING_XML || ( echo $0 aborted. ; exit 1 )
  #fi
 
  echo " generated: "$rdf_vrpt_file
@@ -257,8 +265,8 @@ for pdbml_file in $WORK_DIR/$PDBML/*.xml ; do
  info_alt_file=$WORK_DIR/$VALID_INFO_ALT/$pdb_id-validation-alt.xml
  rdf_vrpt_alt_file=$WORK_DIR/$RDF_VALID_ALT/$pdb_id-validation-alt.rdf
 
- xsltproc -o $rdf_vrpt_alt_file --stringparam wurcs2glytoucan $WURCS_CATALOG_XML $VRPTML2RDF_XSL $info_alt_file || ( echo $0 aborted. ; exit 1 )
- #java -jar $SAXON -s:$info_alt_file -xsl:$VRPTML2RDF_XSL -o:$rdf_vrpt_alt_file wurcs2glytoucan=$WURCS_CATALOG_XML || ( echo $0 aborted. ; exit 1 )
+ xsltproc -o $rdf_vrpt_alt_file --stringparam wurcs2glytoucan $WURCS_CATALOG_XML --stringparam primitive_type_mapping $_VRPTX_PRIMITIVE_TYPE_MAPPING_XML $VRPTML2RDF_XSL $info_alt_file || ( echo $0 aborted. ; exit 1 )
+ #java -jar $SAXON -s:$info_alt_file -xsl:$VRPTML2RDF_XSL -o:$rdf_vrpt_alt_file wurcs2glytoucan=$WURCS_CATALOG_XML primitive_type_mapping=$_VRPTX_PRIMITIVE_TYPE_MAPPING_XML || ( echo $0 aborted. ; exit 1 )
 
  echo " generated: "$rdf_vrpt_alt_file
 

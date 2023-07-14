@@ -17,7 +17,7 @@
             <PDBo:citation.page_last>2701</PDBo:citation.page_last>
             <PDBo:citation.pdbx_database_id_DOI>10.1073/pnas.052709699</PDBo:citation.pdbx_database_id_DOI>
             <PDBo:citation.title> Microcin E492, a channel-forming bacteriocin from Klebsiella pneumoniae, induces apoptosis in some human cell lines</PDBo:citation.title>
-            <PDBo:citation.year>2002</PDBo:citation.year>
+            <PDBo:citation.year rdf:datatype="xsd:int">2002</PDBo:citation.year>
             <PDBo:link_to_doi rdf:resource="http://doi.org/10.1073/pnas.052709699" rdfs:label="doi:10.1073/pnas.052709699"/>
           </PDBo:citation>
         </PDBo:has_citation>
@@ -29,9 +29,9 @@
             <PDBo:citation.journal_volume>275</PDBo:citation.journal_volume>
             <PDBo:citation.page_first>4088</PDBo:citation.page_first>
             <PDBo:citation.page_last>4096</PDBo:citation.page_last>
-            <PDBo:citation.pdbx_database_id_PubMed>18616579</PDBo:citation.pdbx_database_id_PubMed>
+            <PDBo:citation.pdbx_database_id_PubMed rdf:datatype="xsd:int">18616579</PDBo:citation.pdbx_database_id_PubMed>
             <PDBo:citation.title> Microcin J25 induces the opening of the mitochondrial transition pore and cytochrome c release through superoxide generation.</PDBo:citation.title>
-            <PDBo:citation.year>2008</PDBo:citation.year>
+            <PDBo:citation.year rdf:datatype="xsd:int">2008</PDBo:citation.year>
             <PDBo:link_to_pubmed rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/18616579" rdfs:label="pubmed:18616579"/>
             <dcterms:references rdf:resource="http://identifiers.org/pubmed/18616579" rdfs:label="pubmed:18616579"/>
           </PDBo:citation>
@@ -46,7 +46,7 @@
             <PDBo:citation.page_last>1193</PDBo:citation.page_last>
             <PDBo:citation.pdbx_database_id_DOI>10.1126/science.274.5290.1188</PDBo:citation.pdbx_database_id_DOI>
             <PDBo:citation.title> From Peptide Precursors to Oxazole and Thiazole-Containing Peptide Antibiotics: Microcin B17 Synthase</PDBo:citation.title>
-            <PDBo:citation.year>1996</PDBo:citation.year>
+            <PDBo:citation.year rdf:datatype="xsd:int">1996</PDBo:citation.year>
             <PDBo:link_to_doi rdf:resource="http://doi.org/10.1126/science.274.5290.1188" rdfs:label="doi:10.1126/science.274.5290.1188"/>
           </PDBo:citation>
         </PDBo:has_citation>
@@ -60,7 +60,7 @@
             <PDBo:citation.page_last>12474</PDBo:citation.page_last>
             <PDBo:citation.pdbx_database_id_DOI>10.1021/ja0367703</PDBo:citation.pdbx_database_id_DOI>
             <PDBo:citation.title> Microcin J25 Has a Threaded Sidechain-to-Backbone Ring Structure and Not a Head-to-Tail Cyclized Backbone</PDBo:citation.title>
-            <PDBo:citation.year>2003</PDBo:citation.year>
+            <PDBo:citation.year rdf:datatype="xsd:int">2003</PDBo:citation.year>
             <PDBo:link_to_doi rdf:resource="http://doi.org/10.1021/ja0367703" rdfs:label="doi:10.1021/ja0367703"/>
           </PDBo:citation>
         </PDBo:has_citation>
@@ -74,7 +74,7 @@
             <PDBo:citation.page_last>85</PDBo:citation.page_last>
             <PDBo:citation.pdbx_database_id_DOI>10.2174/138920109787048643</PDBo:citation.pdbx_database_id_DOI>
             <PDBo:citation.title> Antibacterial and Antitumorigenic Properties of Microcin E492, a Pore-Forming Bacteriocin</PDBo:citation.title>
-            <PDBo:citation.year>2009</PDBo:citation.year>
+            <PDBo:citation.year rdf:datatype="xsd:int">2009</PDBo:citation.year>
             <PDBo:link_to_doi rdf:resource="http://doi.org/10.2174/138920109787048643" rdfs:label="doi:10.2174/138920109787048643"/>
           </PDBo:citation>
         </PDBo:has_citation>
@@ -88,7 +88,7 @@
             <PDBo:citation.page_last>124</PDBo:citation.page_last>
             <PDBo:citation.pdbx_database_id_DOI>10.1016/j.jcis.2004.11.025</PDBo:citation.pdbx_database_id_DOI>
             <PDBo:citation.title> Penetration and interactions of the antimicrobial peptide, microcin J25, into uncharged phospholipid monolayers</PDBo:citation.title>
-            <PDBo:citation.year>2005</PDBo:citation.year>
+            <PDBo:citation.year rdf:datatype="xsd:int">2005</PDBo:citation.year>
             <PDBo:link_to_doi rdf:resource="http://doi.org/10.1016/j.jcis.2004.11.025" rdfs:label="doi:10.1016/j.jcis.2004.11.025"/>
           </PDBo:citation>
         </PDBo:has_citation>
@@ -102,7 +102,7 @@
             <PDBo:citation.page_last>1234</PDBo:citation.page_last>
             <PDBo:citation.pdbx_database_id_DOI>10.1006/jmbi.2001.4562</PDBo:citation.pdbx_database_id_DOI>
             <PDBo:citation.title> The Antibiotic Microcin B17 is a DNA Gyrase Poison: Characterisation of the Mode of Inhibition</PDBo:citation.title>
-            <PDBo:citation.year>2001</PDBo:citation.year>
+            <PDBo:citation.year rdf:datatype="xsd:int">2001</PDBo:citation.year>
             <PDBo:link_to_doi rdf:resource="http://doi.org/10.1006/jmbi.2001.4562" rdfs:label="doi:10.1006/jmbi.2001.4562"/>
           </PDBo:citation>
         </PDBo:has_citation>
@@ -114,9 +114,9 @@
             <PDBo:citation.journal_volume>174</PDBo:citation.journal_volume>
             <PDBo:citation.page_first>7428</PDBo:citation.page_first>
             <PDBo:citation.page_last>7435</PDBo:citation.page_last>
-            <PDBo:citation.pdbx_database_id_PubMed>207439</PDBo:citation.pdbx_database_id_PubMed>
+            <PDBo:citation.pdbx_database_id_PubMed rdf:datatype="xsd:int">207439</PDBo:citation.pdbx_database_id_PubMed>
             <PDBo:citation.title>Microcin 25, a novel antimicrobial peptide produced by Escherichia coli.</PDBo:citation.title>
-            <PDBo:citation.year>1992</PDBo:citation.year>
+            <PDBo:citation.year rdf:datatype="xsd:int">1992</PDBo:citation.year>
             <PDBo:link_to_pubmed rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/207439" rdfs:label="pubmed:207439"/>
             <dcterms:references rdf:resource="http://identifiers.org/pubmed/207439" rdfs:label="pubmed:207439"/>
           </PDBo:citation>
@@ -129,9 +129,9 @@
             <PDBo:citation.journal_volume>84</PDBo:citation.journal_volume>
             <PDBo:citation.page_first>521</PDBo:citation.page_first>
             <PDBo:citation.page_last>529</PDBo:citation.page_last>
-            <PDBo:citation.pdbx_database_id_PubMed>12423796</PDBo:citation.pdbx_database_id_PubMed>
+            <PDBo:citation.pdbx_database_id_PubMed rdf:datatype="xsd:int">12423796</PDBo:citation.pdbx_database_id_PubMed>
             <PDBo:citation.title>The regulation of microcin B, C and J operons</PDBo:citation.title>
-            <PDBo:citation.year>2002</PDBo:citation.year>
+            <PDBo:citation.year rdf:datatype="xsd:int">2002</PDBo:citation.year>
             <PDBo:link_to_pubmed rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/12423796" rdfs:label="pubmed:12423796"/>
             <dcterms:references rdf:resource="http://identifiers.org/pubmed/12423796" rdfs:label="pubmed:12423796"/>
           </PDBo:citation>
@@ -144,9 +144,9 @@
             <PDBo:citation.journal_volume>6</PDBo:citation.journal_volume>
             <PDBo:citation.page_first>305</PDBo:citation.page_first>
             <PDBo:citation.page_last>318</PDBo:citation.page_last>
-            <PDBo:citation.pdbx_database_id_PubMed>10322125</PDBo:citation.pdbx_database_id_PubMed>
+            <PDBo:citation.pdbx_database_id_PubMed rdf:datatype="xsd:int">10322125</PDBo:citation.pdbx_database_id_PubMed>
             <PDBo:citation.title> In vivo processing and antibiotic activity of microcin B17 analogs with varying ring content and altered bisheterocyclic sites</PDBo:citation.title>
-            <PDBo:citation.year>1999</PDBo:citation.year>
+            <PDBo:citation.year rdf:datatype="xsd:int">1999</PDBo:citation.year>
             <PDBo:link_to_pubmed rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/10322125" rdfs:label="pubmed:10322125"/>
             <dcterms:references rdf:resource="http://identifiers.org/pubmed/10322125" rdfs:label="pubmed:10322125"/>
           </PDBo:citation>
@@ -161,7 +161,7 @@
             <PDBo:citation.page_last>238</PDBo:citation.page_last>
             <PDBo:citation.pdbx_database_id_DOI>10.1016/0014-5793(94)01345-2</PDBo:citation.pdbx_database_id_DOI>
             <PDBo:citation.title>Structure of microcin C51, a new antibiotic with a broad spectrum of activity</PDBo:citation.title>
-            <PDBo:citation.year>1995</PDBo:citation.year>
+            <PDBo:citation.year rdf:datatype="xsd:int">1995</PDBo:citation.year>
             <PDBo:link_to_doi rdf:resource="http://doi.org/10.1016/0014-5793(94)01345-2" rdfs:label="doi:10.1016/0014-5793(94)01345-2"/>
           </PDBo:citation>
         </PDBo:has_citation>
@@ -175,7 +175,7 @@
             <PDBo:citation.page_last>23532</PDBo:citation.page_last>
             <PDBo:citation.pdbx_database_id_DOI>10.1074/jbc.270.40.23520</PDBo:citation.pdbx_database_id_DOI>
             <PDBo:citation.title>Chemical Structure and Translation Inhibition Studies of the Antibiotic Microcin C7</PDBo:citation.title>
-            <PDBo:citation.year>1995</PDBo:citation.year>
+            <PDBo:citation.year rdf:datatype="xsd:int">1995</PDBo:citation.year>
             <PDBo:link_to_doi rdf:resource="http://doi.org/10.1074/jbc.270.40.23520" rdfs:label="doi:10.1074/jbc.270.40.23520"/>
           </PDBo:citation>
         </PDBo:has_citation>
@@ -187,9 +187,9 @@
             <PDBo:citation.journal_volume>36</PDBo:citation.journal_volume>
             <PDBo:citation.page_first>325</PDBo:citation.page_first>
             <PDBo:citation.page_last>327</PDBo:citation.page_last>
-            <PDBo:citation.pdbx_database_id_PubMed>6339460</PDBo:citation.pdbx_database_id_PubMed>
+            <PDBo:citation.pdbx_database_id_PubMed rdf:datatype="xsd:int">6339460</PDBo:citation.pdbx_database_id_PubMed>
             <PDBo:citation.title>Microcin 15N: a second antibiotic from escherichia coli lp15</PDBo:citation.title>
-            <PDBo:citation.year>1982</PDBo:citation.year>
+            <PDBo:citation.year rdf:datatype="xsd:int">1982</PDBo:citation.year>
             <PDBo:link_to_pubmed rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/6339460" rdfs:label="pubmed:6339460"/>
             <dcterms:references rdf:resource="http://identifiers.org/pubmed/6339460" rdfs:label="pubmed:6339460"/>
           </PDBo:citation>
@@ -202,9 +202,9 @@
             <PDBo:citation.journal_volume>125</PDBo:citation.journal_volume>
             <PDBo:citation.page_first>12475</PDBo:citation.page_first>
             <PDBo:citation.page_last>12483</PDBo:citation.page_last>
-            <PDBo:citation.pdbx_database_id_PubMed>14531691</PDBo:citation.pdbx_database_id_PubMed>
+            <PDBo:citation.pdbx_database_id_PubMed rdf:datatype="xsd:int">14531691</PDBo:citation.pdbx_database_id_PubMed>
             <PDBo:citation.title>Structure of microcin J25, a peptide inhibitor of bacterial RNA polymerase, is a lassoed tail </PDBo:citation.title>
-            <PDBo:citation.year>2003</PDBo:citation.year>
+            <PDBo:citation.year rdf:datatype="xsd:int">2003</PDBo:citation.year>
             <PDBo:link_to_pubmed rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/14531691" rdfs:label="pubmed:14531691"/>
             <dcterms:references rdf:resource="http://identifiers.org/pubmed/14531691" rdfs:label="pubmed:14531691"/>
           </PDBo:citation>
@@ -217,9 +217,9 @@
             <PDBo:citation.journal_volume>125</PDBo:citation.journal_volume>
             <PDBo:citation.page_first>12382</PDBo:citation.page_first>
             <PDBo:citation.page_last>12383</PDBo:citation.page_last>
-            <PDBo:citation.pdbx_database_id_PubMed>14531661</PDBo:citation.pdbx_database_id_PubMed>
+            <PDBo:citation.pdbx_database_id_PubMed rdf:datatype="xsd:int">14531661</PDBo:citation.pdbx_database_id_PubMed>
             <PDBo:citation.title>Structure of antibacterial peptide microcin J25: a 21-residue lariat protoknot</PDBo:citation.title>
-            <PDBo:citation.year>2003</PDBo:citation.year>
+            <PDBo:citation.year rdf:datatype="xsd:int">2003</PDBo:citation.year>
             <PDBo:link_to_pubmed rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/14531661" rdfs:label="pubmed:14531661"/>
             <dcterms:references rdf:resource="http://identifiers.org/pubmed/14531661" rdfs:label="pubmed:14531661"/>
           </PDBo:citation>
@@ -232,9 +232,9 @@
             <PDBo:citation.journal_volume>14</PDBo:citation.journal_volume>
             <PDBo:citation.page_first>753</PDBo:citation.page_first>
             <PDBo:citation.page_last>762</PDBo:citation.page_last>
-            <PDBo:citation.pdbx_database_id_PubMed>15200953</PDBo:citation.pdbx_database_id_PubMed>
+            <PDBo:citation.pdbx_database_id_PubMed rdf:datatype="xsd:int">15200953</PDBo:citation.pdbx_database_id_PubMed>
             <PDBo:citation.title>Molecular mechanism of transcription inhibition by peptide antibiotic microcin J25</PDBo:citation.title>
-            <PDBo:citation.year>2004</PDBo:citation.year>
+            <PDBo:citation.year rdf:datatype="xsd:int">2004</PDBo:citation.year>
             <PDBo:link_to_pubmed rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/15200953" rdfs:label="pubmed:15200953"/>
             <dcterms:references rdf:resource="http://identifiers.org/pubmed/15200953" rdfs:label="pubmed:15200953"/>
           </PDBo:citation>
@@ -249,7 +249,7 @@
             <PDBo:citation.page_last>972</PDBo:citation.page_last>
             <PDBo:citation.pdbx_database_id_DOI>10.1128/AAC.45.3.969-972.2001</PDBo:citation.pdbx_database_id_DOI>
             <PDBo:citation.title> The Structure, Function, and Origin of the Microcin H47 ATP-Binding Cassette Exporter Indicate Its Relatedness to That of Colicin V</PDBo:citation.title>
-            <PDBo:citation.year>2001</PDBo:citation.year>
+            <PDBo:citation.year rdf:datatype="xsd:int">2001</PDBo:citation.year>
             <PDBo:link_to_doi rdf:resource="http://doi.org/10.1128/AAC.45.3.969-972.2001" rdfs:label="doi:10.1128/AAC.45.3.969-972.2001"/>
           </PDBo:citation>
         </PDBo:has_citation>
@@ -261,9 +261,9 @@
             <PDBo:citation.journal_volume>91</PDBo:citation.journal_volume>
             <PDBo:citation.page_first>4519</PDBo:citation.page_first>
             <PDBo:citation.page_last>4523</PDBo:citation.page_last>
-            <PDBo:citation.pdbx_database_id_PubMed>8183941</PDBo:citation.pdbx_database_id_PubMed>
+            <PDBo:citation.pdbx_database_id_PubMed rdf:datatype="xsd:int">8183941</PDBo:citation.pdbx_database_id_PubMed>
             <PDBo:citation.title>Posttranslational Modifications in Microcin B17 Define an Additional Class of DNA Gyrase Inhibitor</PDBo:citation.title>
-            <PDBo:citation.year>1994</PDBo:citation.year>
+            <PDBo:citation.year rdf:datatype="xsd:int">1994</PDBo:citation.year>
             <PDBo:link_to_pubmed rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/8183941" rdfs:label="pubmed:8183941"/>
             <dcterms:references rdf:resource="http://identifiers.org/pubmed/8183941" rdfs:label="pubmed:8183941"/>
           </PDBo:citation>
@@ -282,7 +282,7 @@
             </PDBo:reference_to_citation>
             <PDBo:citation_author.citation_id>1</PDBo:citation_author.citation_id>
             <PDBo:citation_author.name>Hetz, C.</PDBo:citation_author.name>
-            <PDBo:citation_author.ordinal>1</PDBo:citation_author.ordinal>
+            <PDBo:citation_author.ordinal rdf:datatype="xsd:int">1</PDBo:citation_author.ordinal>
           </PDBo:citation_author>
         </PDBo:has_citation_author>
         <PDBo:has_citation_author>
@@ -295,7 +295,7 @@
             </PDBo:reference_to_citation>
             <PDBo:citation_author.citation_id>1</PDBo:citation_author.citation_id>
             <PDBo:citation_author.name>Bono, M.R.</PDBo:citation_author.name>
-            <PDBo:citation_author.ordinal>2</PDBo:citation_author.ordinal>
+            <PDBo:citation_author.ordinal rdf:datatype="xsd:int">2</PDBo:citation_author.ordinal>
           </PDBo:citation_author>
         </PDBo:has_citation_author>
         <PDBo:has_citation_author>
@@ -308,7 +308,7 @@
             </PDBo:reference_to_citation>
             <PDBo:citation_author.citation_id>1</PDBo:citation_author.citation_id>
             <PDBo:citation_author.name>Barros, L.F.</PDBo:citation_author.name>
-            <PDBo:citation_author.ordinal>3</PDBo:citation_author.ordinal>
+            <PDBo:citation_author.ordinal rdf:datatype="xsd:int">3</PDBo:citation_author.ordinal>
           </PDBo:citation_author>
         </PDBo:has_citation_author>
         <PDBo:has_citation_author>
@@ -321,7 +321,7 @@
             </PDBo:reference_to_citation>
             <PDBo:citation_author.citation_id>1</PDBo:citation_author.citation_id>
             <PDBo:citation_author.name>Lagos, R.</PDBo:citation_author.name>
-            <PDBo:citation_author.ordinal>4</PDBo:citation_author.ordinal>
+            <PDBo:citation_author.ordinal rdf:datatype="xsd:int">4</PDBo:citation_author.ordinal>
           </PDBo:citation_author>
         </PDBo:has_citation_author>
         <PDBo:has_citation_author>
@@ -334,7 +334,7 @@
             </PDBo:reference_to_citation>
             <PDBo:citation_author.citation_id>2</PDBo:citation_author.citation_id>
             <PDBo:citation_author.name>Niklison, C.M.</PDBo:citation_author.name>
-            <PDBo:citation_author.ordinal>5</PDBo:citation_author.ordinal>
+            <PDBo:citation_author.ordinal rdf:datatype="xsd:int">5</PDBo:citation_author.ordinal>
           </PDBo:citation_author>
         </PDBo:has_citation_author>
         <PDBo:has_citation_author>
@@ -347,7 +347,7 @@
             </PDBo:reference_to_citation>
             <PDBo:citation_author.citation_id>2</PDBo:citation_author.citation_id>
             <PDBo:citation_author.name>Bellomio, A.</PDBo:citation_author.name>
-            <PDBo:citation_author.ordinal>6</PDBo:citation_author.ordinal>
+            <PDBo:citation_author.ordinal rdf:datatype="xsd:int">6</PDBo:citation_author.ordinal>
           </PDBo:citation_author>
         </PDBo:has_citation_author>
         <PDBo:has_citation_author>
@@ -360,7 +360,7 @@
             </PDBo:reference_to_citation>
             <PDBo:citation_author.citation_id>2</PDBo:citation_author.citation_id>
             <PDBo:citation_author.name>Dupuy, F.</PDBo:citation_author.name>
-            <PDBo:citation_author.ordinal>7</PDBo:citation_author.ordinal>
+            <PDBo:citation_author.ordinal rdf:datatype="xsd:int">7</PDBo:citation_author.ordinal>
           </PDBo:citation_author>
         </PDBo:has_citation_author>
         <PDBo:has_citation_author>
@@ -373,7 +373,7 @@
             </PDBo:reference_to_citation>
             <PDBo:citation_author.citation_id>2</PDBo:citation_author.citation_id>
             <PDBo:citation_author.name>Arcuri, B.</PDBo:citation_author.name>
-            <PDBo:citation_author.ordinal>8</PDBo:citation_author.ordinal>
+            <PDBo:citation_author.ordinal rdf:datatype="xsd:int">8</PDBo:citation_author.ordinal>
           </PDBo:citation_author>
         </PDBo:has_citation_author>
         <PDBo:has_citation_author>
@@ -386,7 +386,7 @@
             </PDBo:reference_to_citation>
             <PDBo:citation_author.citation_id>2</PDBo:citation_author.citation_id>
             <PDBo:citation_author.name>Minahk, C.</PDBo:citation_author.name>
-            <PDBo:citation_author.ordinal>9</PDBo:citation_author.ordinal>
+            <PDBo:citation_author.ordinal rdf:datatype="xsd:int">9</PDBo:citation_author.ordinal>
           </PDBo:citation_author>
         </PDBo:has_citation_author>
         <PDBo:has_citation_author>
@@ -399,7 +399,7 @@
             </PDBo:reference_to_citation>
             <PDBo:citation_author.citation_id>2</PDBo:citation_author.citation_id>
             <PDBo:citation_author.name>Morero, R.</PDBo:citation_author.name>
-            <PDBo:citation_author.ordinal>10</PDBo:citation_author.ordinal>
+            <PDBo:citation_author.ordinal rdf:datatype="xsd:int">10</PDBo:citation_author.ordinal>
           </PDBo:citation_author>
         </PDBo:has_citation_author>
         <PDBo:has_citation_author>
@@ -412,7 +412,7 @@
             </PDBo:reference_to_citation>
             <PDBo:citation_author.citation_id>3</PDBo:citation_author.citation_id>
             <PDBo:citation_author.name>Li, Y.-M.</PDBo:citation_author.name>
-            <PDBo:citation_author.ordinal>11</PDBo:citation_author.ordinal>
+            <PDBo:citation_author.ordinal rdf:datatype="xsd:int">11</PDBo:citation_author.ordinal>
           </PDBo:citation_author>
         </PDBo:has_citation_author>
         <PDBo:has_citation_author>
@@ -425,7 +425,7 @@
             </PDBo:reference_to_citation>
             <PDBo:citation_author.citation_id>3</PDBo:citation_author.citation_id>
             <PDBo:citation_author.name>Milne, J.C.</PDBo:citation_author.name>
-            <PDBo:citation_author.ordinal>12</PDBo:citation_author.ordinal>
+            <PDBo:citation_author.ordinal rdf:datatype="xsd:int">12</PDBo:citation_author.ordinal>
           </PDBo:citation_author>
         </PDBo:has_citation_author>
         <PDBo:has_citation_author>
@@ -438,7 +438,7 @@
             </PDBo:reference_to_citation>
             <PDBo:citation_author.citation_id>3</PDBo:citation_author.citation_id>
             <PDBo:citation_author.name>Madison, L.L.</PDBo:citation_author.name>
-            <PDBo:citation_author.ordinal>13</PDBo:citation_author.ordinal>
+            <PDBo:citation_author.ordinal rdf:datatype="xsd:int">13</PDBo:citation_author.ordinal>
           </PDBo:citation_author>
         </PDBo:has_citation_author>
         <PDBo:has_citation_author>
@@ -451,7 +451,7 @@
             </PDBo:reference_to_citation>
             <PDBo:citation_author.citation_id>3</PDBo:citation_author.citation_id>
             <PDBo:citation_author.name>Kolter, R.</PDBo:citation_author.name>
-            <PDBo:citation_author.ordinal>14</PDBo:citation_author.ordinal>
+            <PDBo:citation_author.ordinal rdf:datatype="xsd:int">14</PDBo:citation_author.ordinal>
           </PDBo:citation_author>
         </PDBo:has_citation_author>
         <PDBo:has_citation_author>
@@ -464,7 +464,7 @@
             </PDBo:reference_to_citation>
             <PDBo:citation_author.citation_id>3</PDBo:citation_author.citation_id>
             <PDBo:citation_author.name>Walsh, C.T.</PDBo:citation_author.name>
-            <PDBo:citation_author.ordinal>15</PDBo:citation_author.ordinal>
+            <PDBo:citation_author.ordinal rdf:datatype="xsd:int">15</PDBo:citation_author.ordinal>
           </PDBo:citation_author>
         </PDBo:has_citation_author>
         <PDBo:has_citation_author>
@@ -477,7 +477,7 @@
             </PDBo:reference_to_citation>
             <PDBo:citation_author.citation_id>4</PDBo:citation_author.citation_id>
             <PDBo:citation_author.name>Rosengren, K.J.</PDBo:citation_author.name>
-            <PDBo:citation_author.ordinal>16</PDBo:citation_author.ordinal>
+            <PDBo:citation_author.ordinal rdf:datatype="xsd:int">16</PDBo:citation_author.ordinal>
           </PDBo:citation_author>
         </PDBo:has_citation_author>
         <PDBo:has_citation_author>
@@ -490,7 +490,7 @@
             </PDBo:reference_to_citation>
             <PDBo:citation_author.citation_id>4</PDBo:citation_author.citation_id>
             <PDBo:citation_author.name>Clark, R.J.</PDBo:citation_author.name>
-            <PDBo:citation_author.ordinal>17</PDBo:citation_author.ordinal>
+            <PDBo:citation_author.ordinal rdf:datatype="xsd:int">17</PDBo:citation_author.ordinal>
           </PDBo:citation_author>
         </PDBo:has_citation_author>
         <PDBo:has_citation_author>
@@ -503,7 +503,7 @@
             </PDBo:reference_to_citation>
             <PDBo:citation_author.citation_id>4</PDBo:citation_author.citation_id>
             <PDBo:citation_author.name>Daly, N.L.</PDBo:citation_author.name>
-            <PDBo:citation_author.ordinal>18</PDBo:citation_author.ordinal>
+            <PDBo:citation_author.ordinal rdf:datatype="xsd:int">18</PDBo:citation_author.ordinal>
           </PDBo:citation_author>
         </PDBo:has_citation_author>
         <PDBo:has_citation_author>
@@ -516,7 +516,7 @@
             </PDBo:reference_to_citation>
             <PDBo:citation_author.citation_id>4</PDBo:citation_author.citation_id>
             <PDBo:citation_author.name>Goransson, U.</PDBo:citation_author.name>
-            <PDBo:citation_author.ordinal>19</PDBo:citation_author.ordinal>
+            <PDBo:citation_author.ordinal rdf:datatype="xsd:int">19</PDBo:citation_author.ordinal>
           </PDBo:citation_author>
         </PDBo:has_citation_author>
         <PDBo:has_citation_author>
@@ -529,7 +529,7 @@
             </PDBo:reference_to_citation>
             <PDBo:citation_author.citation_id>4</PDBo:citation_author.citation_id>
             <PDBo:citation_author.name>Jones, A.</PDBo:citation_author.name>
-            <PDBo:citation_author.ordinal>20</PDBo:citation_author.ordinal>
+            <PDBo:citation_author.ordinal rdf:datatype="xsd:int">20</PDBo:citation_author.ordinal>
           </PDBo:citation_author>
         </PDBo:has_citation_author>
         <PDBo:has_citation_author>
@@ -542,7 +542,7 @@
             </PDBo:reference_to_citation>
             <PDBo:citation_author.citation_id>4</PDBo:citation_author.citation_id>
             <PDBo:citation_author.name>Craik, D.J.</PDBo:citation_author.name>
-            <PDBo:citation_author.ordinal>21</PDBo:citation_author.ordinal>
+            <PDBo:citation_author.ordinal rdf:datatype="xsd:int">21</PDBo:citation_author.ordinal>
           </PDBo:citation_author>
         </PDBo:has_citation_author>
         <PDBo:has_citation_author>
@@ -555,7 +555,7 @@
             </PDBo:reference_to_citation>
             <PDBo:citation_author.citation_id>5</PDBo:citation_author.citation_id>
             <PDBo:citation_author.name>Lagos, R.</PDBo:citation_author.name>
-            <PDBo:citation_author.ordinal>22</PDBo:citation_author.ordinal>
+            <PDBo:citation_author.ordinal rdf:datatype="xsd:int">22</PDBo:citation_author.ordinal>
           </PDBo:citation_author>
         </PDBo:has_citation_author>
         <PDBo:has_citation_author>
@@ -568,7 +568,7 @@
             </PDBo:reference_to_citation>
             <PDBo:citation_author.citation_id>5</PDBo:citation_author.citation_id>
             <PDBo:citation_author.name>Tello, M.</PDBo:citation_author.name>
-            <PDBo:citation_author.ordinal>23</PDBo:citation_author.ordinal>
+            <PDBo:citation_author.ordinal rdf:datatype="xsd:int">23</PDBo:citation_author.ordinal>
           </PDBo:citation_author>
         </PDBo:has_citation_author>
         <PDBo:has_citation_author>
@@ -581,7 +581,7 @@
             </PDBo:reference_to_citation>
             <PDBo:citation_author.citation_id>5</PDBo:citation_author.citation_id>
             <PDBo:citation_author.name>Mercado, G.</PDBo:citation_author.name>
-            <PDBo:citation_author.ordinal>24</PDBo:citation_author.ordinal>
+            <PDBo:citation_author.ordinal rdf:datatype="xsd:int">24</PDBo:citation_author.ordinal>
           </PDBo:citation_author>
         </PDBo:has_citation_author>
         <PDBo:has_citation_author>
@@ -594,7 +594,7 @@
             </PDBo:reference_to_citation>
             <PDBo:citation_author.citation_id>5</PDBo:citation_author.citation_id>
             <PDBo:citation_author.name>Garcia, V.</PDBo:citation_author.name>
-            <PDBo:citation_author.ordinal>25</PDBo:citation_author.ordinal>
+            <PDBo:citation_author.ordinal rdf:datatype="xsd:int">25</PDBo:citation_author.ordinal>
           </PDBo:citation_author>
         </PDBo:has_citation_author>
         <PDBo:has_citation_author>
@@ -607,7 +607,7 @@
             </PDBo:reference_to_citation>
             <PDBo:citation_author.citation_id>5</PDBo:citation_author.citation_id>
             <PDBo:citation_author.name>Monasterio, O.</PDBo:citation_author.name>
-            <PDBo:citation_author.ordinal>26</PDBo:citation_author.ordinal>
+            <PDBo:citation_author.ordinal rdf:datatype="xsd:int">26</PDBo:citation_author.ordinal>
           </PDBo:citation_author>
         </PDBo:has_citation_author>
         <PDBo:has_citation_author>
@@ -620,7 +620,7 @@
             </PDBo:reference_to_citation>
             <PDBo:citation_author.citation_id>6</PDBo:citation_author.citation_id>
             <PDBo:citation_author.name>Bellomio, A.</PDBo:citation_author.name>
-            <PDBo:citation_author.ordinal>27</PDBo:citation_author.ordinal>
+            <PDBo:citation_author.ordinal rdf:datatype="xsd:int">27</PDBo:citation_author.ordinal>
           </PDBo:citation_author>
         </PDBo:has_citation_author>
         <PDBo:has_citation_author>
@@ -633,7 +633,7 @@
             </PDBo:reference_to_citation>
             <PDBo:citation_author.citation_id>6</PDBo:citation_author.citation_id>
             <PDBo:citation_author.name>Oliveira, R.G.</PDBo:citation_author.name>
-            <PDBo:citation_author.ordinal>28</PDBo:citation_author.ordinal>
+            <PDBo:citation_author.ordinal rdf:datatype="xsd:int">28</PDBo:citation_author.ordinal>
           </PDBo:citation_author>
         </PDBo:has_citation_author>
         <PDBo:has_citation_author>
@@ -646,7 +646,7 @@
             </PDBo:reference_to_citation>
             <PDBo:citation_author.citation_id>6</PDBo:citation_author.citation_id>
             <PDBo:citation_author.name>Maggio, B.</PDBo:citation_author.name>
-            <PDBo:citation_author.ordinal>29</PDBo:citation_author.ordinal>
+            <PDBo:citation_author.ordinal rdf:datatype="xsd:int">29</PDBo:citation_author.ordinal>
           </PDBo:citation_author>
         </PDBo:has_citation_author>
         <PDBo:has_citation_author>
@@ -659,7 +659,7 @@
             </PDBo:reference_to_citation>
             <PDBo:citation_author.citation_id>6</PDBo:citation_author.citation_id>
             <PDBo:citation_author.name>Morero, R.D.</PDBo:citation_author.name>
-            <PDBo:citation_author.ordinal>30</PDBo:citation_author.ordinal>
+            <PDBo:citation_author.ordinal rdf:datatype="xsd:int">30</PDBo:citation_author.ordinal>
           </PDBo:citation_author>
         </PDBo:has_citation_author>
         <PDBo:has_citation_author>
@@ -672,7 +672,7 @@
             </PDBo:reference_to_citation>
             <PDBo:citation_author.citation_id>7</PDBo:citation_author.citation_id>
             <PDBo:citation_author.name>Heddle, J.G.</PDBo:citation_author.name>
-            <PDBo:citation_author.ordinal>31</PDBo:citation_author.ordinal>
+            <PDBo:citation_author.ordinal rdf:datatype="xsd:int">31</PDBo:citation_author.ordinal>
           </PDBo:citation_author>
         </PDBo:has_citation_author>
         <PDBo:has_citation_author>
@@ -685,7 +685,7 @@
             </PDBo:reference_to_citation>
             <PDBo:citation_author.citation_id>7</PDBo:citation_author.citation_id>
             <PDBo:citation_author.name>Blance, S.J.</PDBo:citation_author.name>
-            <PDBo:citation_author.ordinal>32</PDBo:citation_author.ordinal>
+            <PDBo:citation_author.ordinal rdf:datatype="xsd:int">32</PDBo:citation_author.ordinal>
           </PDBo:citation_author>
         </PDBo:has_citation_author>
         <PDBo:has_citation_author>
@@ -698,7 +698,7 @@
             </PDBo:reference_to_citation>
             <PDBo:citation_author.citation_id>7</PDBo:citation_author.citation_id>
             <PDBo:citation_author.name>Zamble, D.B.</PDBo:citation_author.name>
-            <PDBo:citation_author.ordinal>33</PDBo:citation_author.ordinal>
+            <PDBo:citation_author.ordinal rdf:datatype="xsd:int">33</PDBo:citation_author.ordinal>
           </PDBo:citation_author>
         </PDBo:has_citation_author>
         <PDBo:has_citation_author>
@@ -711,7 +711,7 @@
             </PDBo:reference_to_citation>
             <PDBo:citation_author.citation_id>7</PDBo:citation_author.citation_id>
             <PDBo:citation_author.name>Hollfelder, F.</PDBo:citation_author.name>
-            <PDBo:citation_author.ordinal>34</PDBo:citation_author.ordinal>
+            <PDBo:citation_author.ordinal rdf:datatype="xsd:int">34</PDBo:citation_author.ordinal>
           </PDBo:citation_author>
         </PDBo:has_citation_author>
         <PDBo:has_citation_author>
@@ -724,7 +724,7 @@
             </PDBo:reference_to_citation>
             <PDBo:citation_author.citation_id>7</PDBo:citation_author.citation_id>
             <PDBo:citation_author.name>Miller, D.A.</PDBo:citation_author.name>
-            <PDBo:citation_author.ordinal>35</PDBo:citation_author.ordinal>
+            <PDBo:citation_author.ordinal rdf:datatype="xsd:int">35</PDBo:citation_author.ordinal>
           </PDBo:citation_author>
         </PDBo:has_citation_author>
         <PDBo:has_citation_author>
@@ -737,7 +737,7 @@
             </PDBo:reference_to_citation>
             <PDBo:citation_author.citation_id>7</PDBo:citation_author.citation_id>
             <PDBo:citation_author.name>Wentzell, L.M.</PDBo:citation_author.name>
-            <PDBo:citation_author.ordinal>36</PDBo:citation_author.ordinal>
+            <PDBo:citation_author.ordinal rdf:datatype="xsd:int">36</PDBo:citation_author.ordinal>
           </PDBo:citation_author>
         </PDBo:has_citation_author>
         <PDBo:has_citation_author>
@@ -750,7 +750,7 @@
             </PDBo:reference_to_citation>
             <PDBo:citation_author.citation_id>7</PDBo:citation_author.citation_id>
             <PDBo:citation_author.name>Walsh, C.T.</PDBo:citation_author.name>
-            <PDBo:citation_author.ordinal>37</PDBo:citation_author.ordinal>
+            <PDBo:citation_author.ordinal rdf:datatype="xsd:int">37</PDBo:citation_author.ordinal>
           </PDBo:citation_author>
         </PDBo:has_citation_author>
         <PDBo:has_citation_author>
@@ -763,7 +763,7 @@
             </PDBo:reference_to_citation>
             <PDBo:citation_author.citation_id>7</PDBo:citation_author.citation_id>
             <PDBo:citation_author.name>Maxwell, A.</PDBo:citation_author.name>
-            <PDBo:citation_author.ordinal>38</PDBo:citation_author.ordinal>
+            <PDBo:citation_author.ordinal rdf:datatype="xsd:int">38</PDBo:citation_author.ordinal>
           </PDBo:citation_author>
         </PDBo:has_citation_author>
         <PDBo:has_citation_author>
@@ -776,7 +776,7 @@
             </PDBo:reference_to_citation>
             <PDBo:citation_author.citation_id>8</PDBo:citation_author.citation_id>
             <PDBo:citation_author.name>Salomon, R.A.</PDBo:citation_author.name>
-            <PDBo:citation_author.ordinal>39</PDBo:citation_author.ordinal>
+            <PDBo:citation_author.ordinal rdf:datatype="xsd:int">39</PDBo:citation_author.ordinal>
           </PDBo:citation_author>
         </PDBo:has_citation_author>
         <PDBo:has_citation_author>
@@ -789,7 +789,7 @@
             </PDBo:reference_to_citation>
             <PDBo:citation_author.citation_id>8</PDBo:citation_author.citation_id>
             <PDBo:citation_author.name>Farias, R.N.</PDBo:citation_author.name>
-            <PDBo:citation_author.ordinal>40</PDBo:citation_author.ordinal>
+            <PDBo:citation_author.ordinal rdf:datatype="xsd:int">40</PDBo:citation_author.ordinal>
           </PDBo:citation_author>
         </PDBo:has_citation_author>
         <PDBo:has_citation_author>
@@ -802,7 +802,7 @@
             </PDBo:reference_to_citation>
             <PDBo:citation_author.citation_id>9</PDBo:citation_author.citation_id>
             <PDBo:citation_author.name>Moreno, F.</PDBo:citation_author.name>
-            <PDBo:citation_author.ordinal>41</PDBo:citation_author.ordinal>
+            <PDBo:citation_author.ordinal rdf:datatype="xsd:int">41</PDBo:citation_author.ordinal>
           </PDBo:citation_author>
         </PDBo:has_citation_author>
         <PDBo:has_citation_author>
@@ -815,7 +815,7 @@
             </PDBo:reference_to_citation>
             <PDBo:citation_author.citation_id>9</PDBo:citation_author.citation_id>
             <PDBo:citation_author.name>Gonzalez-Pastor, J.E.</PDBo:citation_author.name>
-            <PDBo:citation_author.ordinal>42</PDBo:citation_author.ordinal>
+            <PDBo:citation_author.ordinal rdf:datatype="xsd:int">42</PDBo:citation_author.ordinal>
           </PDBo:citation_author>
         </PDBo:has_citation_author>
         <PDBo:has_citation_author>
@@ -828,7 +828,7 @@
             </PDBo:reference_to_citation>
             <PDBo:citation_author.citation_id>9</PDBo:citation_author.citation_id>
             <PDBo:citation_author.name>Baquero, M.-R.</PDBo:citation_author.name>
-            <PDBo:citation_author.ordinal>43</PDBo:citation_author.ordinal>
+            <PDBo:citation_author.ordinal rdf:datatype="xsd:int">43</PDBo:citation_author.ordinal>
           </PDBo:citation_author>
         </PDBo:has_citation_author>
         <PDBo:has_citation_author>
@@ -841,7 +841,7 @@
             </PDBo:reference_to_citation>
             <PDBo:citation_author.citation_id>9</PDBo:citation_author.citation_id>
             <PDBo:citation_author.name>Bravo, D.</PDBo:citation_author.name>
-            <PDBo:citation_author.ordinal>44</PDBo:citation_author.ordinal>
+            <PDBo:citation_author.ordinal rdf:datatype="xsd:int">44</PDBo:citation_author.ordinal>
           </PDBo:citation_author>
         </PDBo:has_citation_author>
         <PDBo:has_citation_author>
@@ -854,7 +854,7 @@
             </PDBo:reference_to_citation>
             <PDBo:citation_author.citation_id>10</PDBo:citation_author.citation_id>
             <PDBo:citation_author.name>Roy, R.S.</PDBo:citation_author.name>
-            <PDBo:citation_author.ordinal>45</PDBo:citation_author.ordinal>
+            <PDBo:citation_author.ordinal rdf:datatype="xsd:int">45</PDBo:citation_author.ordinal>
           </PDBo:citation_author>
         </PDBo:has_citation_author>
         <PDBo:has_citation_author>
@@ -867,7 +867,7 @@
             </PDBo:reference_to_citation>
             <PDBo:citation_author.citation_id>10</PDBo:citation_author.citation_id>
             <PDBo:citation_author.name>Kelleher, N.L.</PDBo:citation_author.name>
-            <PDBo:citation_author.ordinal>46</PDBo:citation_author.ordinal>
+            <PDBo:citation_author.ordinal rdf:datatype="xsd:int">46</PDBo:citation_author.ordinal>
           </PDBo:citation_author>
         </PDBo:has_citation_author>
         <PDBo:has_citation_author>
@@ -880,7 +880,7 @@
             </PDBo:reference_to_citation>
             <PDBo:citation_author.citation_id>10</PDBo:citation_author.citation_id>
             <PDBo:citation_author.name>Milne, J.C.</PDBo:citation_author.name>
-            <PDBo:citation_author.ordinal>47</PDBo:citation_author.ordinal>
+            <PDBo:citation_author.ordinal rdf:datatype="xsd:int">47</PDBo:citation_author.ordinal>
           </PDBo:citation_author>
         </PDBo:has_citation_author>
         <PDBo:has_citation_author>
@@ -893,7 +893,7 @@
             </PDBo:reference_to_citation>
             <PDBo:citation_author.citation_id>10</PDBo:citation_author.citation_id>
             <PDBo:citation_author.name>Walsh, C.T.</PDBo:citation_author.name>
-            <PDBo:citation_author.ordinal>48</PDBo:citation_author.ordinal>
+            <PDBo:citation_author.ordinal rdf:datatype="xsd:int">48</PDBo:citation_author.ordinal>
           </PDBo:citation_author>
         </PDBo:has_citation_author>
         <PDBo:has_citation_author>
@@ -906,7 +906,7 @@
             </PDBo:reference_to_citation>
             <PDBo:citation_author.citation_id>11</PDBo:citation_author.citation_id>
             <PDBo:citation_author.name>Metlitskaya, A.Z.</PDBo:citation_author.name>
-            <PDBo:citation_author.ordinal>49</PDBo:citation_author.ordinal>
+            <PDBo:citation_author.ordinal rdf:datatype="xsd:int">49</PDBo:citation_author.ordinal>
           </PDBo:citation_author>
         </PDBo:has_citation_author>
         <PDBo:has_citation_author>
@@ -919,7 +919,7 @@
             </PDBo:reference_to_citation>
             <PDBo:citation_author.citation_id>11</PDBo:citation_author.citation_id>
             <PDBo:citation_author.name>Katrukha, G.S.</PDBo:citation_author.name>
-            <PDBo:citation_author.ordinal>50</PDBo:citation_author.ordinal>
+            <PDBo:citation_author.ordinal rdf:datatype="xsd:int">50</PDBo:citation_author.ordinal>
           </PDBo:citation_author>
         </PDBo:has_citation_author>
         <PDBo:has_citation_author>
@@ -932,7 +932,7 @@
             </PDBo:reference_to_citation>
             <PDBo:citation_author.citation_id>11</PDBo:citation_author.citation_id>
             <PDBo:citation_author.name>Shashkov, A.S.</PDBo:citation_author.name>
-            <PDBo:citation_author.ordinal>51</PDBo:citation_author.ordinal>
+            <PDBo:citation_author.ordinal rdf:datatype="xsd:int">51</PDBo:citation_author.ordinal>
           </PDBo:citation_author>
         </PDBo:has_citation_author>
         <PDBo:has_citation_author>
@@ -945,7 +945,7 @@
             </PDBo:reference_to_citation>
             <PDBo:citation_author.citation_id>11</PDBo:citation_author.citation_id>
             <PDBo:citation_author.name>Zaitsev, D.A.</PDBo:citation_author.name>
-            <PDBo:citation_author.ordinal>52</PDBo:citation_author.ordinal>
+            <PDBo:citation_author.ordinal rdf:datatype="xsd:int">52</PDBo:citation_author.ordinal>
           </PDBo:citation_author>
         </PDBo:has_citation_author>
         <PDBo:has_citation_author>
@@ -958,7 +958,7 @@
             </PDBo:reference_to_citation>
             <PDBo:citation_author.citation_id>11</PDBo:citation_author.citation_id>
             <PDBo:citation_author.name>Egorov, Ts.A.</PDBo:citation_author.name>
-            <PDBo:citation_author.ordinal>53</PDBo:citation_author.ordinal>
+            <PDBo:citation_author.ordinal rdf:datatype="xsd:int">53</PDBo:citation_author.ordinal>
           </PDBo:citation_author>
         </PDBo:has_citation_author>
         <PDBo:has_citation_author>
@@ -971,7 +971,7 @@
             </PDBo:reference_to_citation>
             <PDBo:citation_author.citation_id>11</PDBo:citation_author.citation_id>
             <PDBo:citation_author.name>Khmel, I.A.</PDBo:citation_author.name>
-            <PDBo:citation_author.ordinal>54</PDBo:citation_author.ordinal>
+            <PDBo:citation_author.ordinal rdf:datatype="xsd:int">54</PDBo:citation_author.ordinal>
           </PDBo:citation_author>
         </PDBo:has_citation_author>
         <PDBo:has_citation_author>
@@ -984,7 +984,7 @@
             </PDBo:reference_to_citation>
             <PDBo:citation_author.citation_id>12</PDBo:citation_author.citation_id>
             <PDBo:citation_author.name>Guijarro, J.I.</PDBo:citation_author.name>
-            <PDBo:citation_author.ordinal>55</PDBo:citation_author.ordinal>
+            <PDBo:citation_author.ordinal rdf:datatype="xsd:int">55</PDBo:citation_author.ordinal>
           </PDBo:citation_author>
         </PDBo:has_citation_author>
         <PDBo:has_citation_author>
@@ -997,7 +997,7 @@
             </PDBo:reference_to_citation>
             <PDBo:citation_author.citation_id>12</PDBo:citation_author.citation_id>
             <PDBo:citation_author.name>Gonzalez-Pastor, J.E.</PDBo:citation_author.name>
-            <PDBo:citation_author.ordinal>56</PDBo:citation_author.ordinal>
+            <PDBo:citation_author.ordinal rdf:datatype="xsd:int">56</PDBo:citation_author.ordinal>
           </PDBo:citation_author>
         </PDBo:has_citation_author>
         <PDBo:has_citation_author>
@@ -1010,7 +1010,7 @@
             </PDBo:reference_to_citation>
             <PDBo:citation_author.citation_id>12</PDBo:citation_author.citation_id>
             <PDBo:citation_author.name>Baleux, F.</PDBo:citation_author.name>
-            <PDBo:citation_author.ordinal>57</PDBo:citation_author.ordinal>
+            <PDBo:citation_author.ordinal rdf:datatype="xsd:int">57</PDBo:citation_author.ordinal>
           </PDBo:citation_author>
         </PDBo:has_citation_author>
         <PDBo:has_citation_author>
@@ -1023,7 +1023,7 @@
             </PDBo:reference_to_citation>
             <PDBo:citation_author.citation_id>12</PDBo:citation_author.citation_id>
             <PDBo:citation_author.name>San Mill, J.L.</PDBo:citation_author.name>
-            <PDBo:citation_author.ordinal>58</PDBo:citation_author.ordinal>
+            <PDBo:citation_author.ordinal rdf:datatype="xsd:int">58</PDBo:citation_author.ordinal>
           </PDBo:citation_author>
         </PDBo:has_citation_author>
         <PDBo:has_citation_author>
@@ -1036,7 +1036,7 @@
             </PDBo:reference_to_citation>
             <PDBo:citation_author.citation_id>12</PDBo:citation_author.citation_id>
             <PDBo:citation_author.name>Castilla, M.A.</PDBo:citation_author.name>
-            <PDBo:citation_author.ordinal>59</PDBo:citation_author.ordinal>
+            <PDBo:citation_author.ordinal rdf:datatype="xsd:int">59</PDBo:citation_author.ordinal>
           </PDBo:citation_author>
         </PDBo:has_citation_author>
         <PDBo:has_citation_author>
@@ -1049,7 +1049,7 @@
             </PDBo:reference_to_citation>
             <PDBo:citation_author.citation_id>12</PDBo:citation_author.citation_id>
             <PDBo:citation_author.name>Rico, M.</PDBo:citation_author.name>
-            <PDBo:citation_author.ordinal>60</PDBo:citation_author.ordinal>
+            <PDBo:citation_author.ordinal rdf:datatype="xsd:int">60</PDBo:citation_author.ordinal>
           </PDBo:citation_author>
         </PDBo:has_citation_author>
         <PDBo:has_citation_author>
@@ -1062,7 +1062,7 @@
             </PDBo:reference_to_citation>
             <PDBo:citation_author.citation_id>12</PDBo:citation_author.citation_id>
             <PDBo:citation_author.name>Moreno, F.</PDBo:citation_author.name>
-            <PDBo:citation_author.ordinal>61</PDBo:citation_author.ordinal>
+            <PDBo:citation_author.ordinal rdf:datatype="xsd:int">61</PDBo:citation_author.ordinal>
           </PDBo:citation_author>
         </PDBo:has_citation_author>
         <PDBo:has_citation_author>
@@ -1075,7 +1075,7 @@
             </PDBo:reference_to_citation>
             <PDBo:citation_author.citation_id>12</PDBo:citation_author.citation_id>
             <PDBo:citation_author.name>Delepierre, M.</PDBo:citation_author.name>
-            <PDBo:citation_author.ordinal>62</PDBo:citation_author.ordinal>
+            <PDBo:citation_author.ordinal rdf:datatype="xsd:int">62</PDBo:citation_author.ordinal>
           </PDBo:citation_author>
         </PDBo:has_citation_author>
         <PDBo:has_citation_author>
@@ -1088,7 +1088,7 @@
             </PDBo:reference_to_citation>
             <PDBo:citation_author.citation_id>13</PDBo:citation_author.citation_id>
             <PDBo:citation_author.name>Aguilar, A.</PDBo:citation_author.name>
-            <PDBo:citation_author.ordinal>63</PDBo:citation_author.ordinal>
+            <PDBo:citation_author.ordinal rdf:datatype="xsd:int">63</PDBo:citation_author.ordinal>
           </PDBo:citation_author>
         </PDBo:has_citation_author>
         <PDBo:has_citation_author>
@@ -1101,7 +1101,7 @@
             </PDBo:reference_to_citation>
             <PDBo:citation_author.citation_id>13</PDBo:citation_author.citation_id>
             <PDBo:citation_author.name>Baquero, F.</PDBo:citation_author.name>
-            <PDBo:citation_author.ordinal>64</PDBo:citation_author.ordinal>
+            <PDBo:citation_author.ordinal rdf:datatype="xsd:int">64</PDBo:citation_author.ordinal>
           </PDBo:citation_author>
         </PDBo:has_citation_author>
         <PDBo:has_citation_author>
@@ -1114,7 +1114,7 @@
             </PDBo:reference_to_citation>
             <PDBo:citation_author.citation_id>13</PDBo:citation_author.citation_id>
             <PDBo:citation_author.name>Martinez, J.L.</PDBo:citation_author.name>
-            <PDBo:citation_author.ordinal>65</PDBo:citation_author.ordinal>
+            <PDBo:citation_author.ordinal rdf:datatype="xsd:int">65</PDBo:citation_author.ordinal>
           </PDBo:citation_author>
         </PDBo:has_citation_author>
         <PDBo:has_citation_author>
@@ -1127,7 +1127,7 @@
             </PDBo:reference_to_citation>
             <PDBo:citation_author.citation_id>13</PDBo:citation_author.citation_id>
             <PDBo:citation_author.name>Asensio, C.</PDBo:citation_author.name>
-            <PDBo:citation_author.ordinal>66</PDBo:citation_author.ordinal>
+            <PDBo:citation_author.ordinal rdf:datatype="xsd:int">66</PDBo:citation_author.ordinal>
           </PDBo:citation_author>
         </PDBo:has_citation_author>
         <PDBo:has_citation_author>
@@ -1140,7 +1140,7 @@
             </PDBo:reference_to_citation>
             <PDBo:citation_author.citation_id>14</PDBo:citation_author.citation_id>
             <PDBo:citation_author.name>Wilson, K.-A.</PDBo:citation_author.name>
-            <PDBo:citation_author.ordinal>67</PDBo:citation_author.ordinal>
+            <PDBo:citation_author.ordinal rdf:datatype="xsd:int">67</PDBo:citation_author.ordinal>
           </PDBo:citation_author>
         </PDBo:has_citation_author>
         <PDBo:has_citation_author>
@@ -1153,7 +1153,7 @@
             </PDBo:reference_to_citation>
             <PDBo:citation_author.citation_id>14</PDBo:citation_author.citation_id>
             <PDBo:citation_author.name>Kalkum, M.</PDBo:citation_author.name>
-            <PDBo:citation_author.ordinal>68</PDBo:citation_author.ordinal>
+            <PDBo:citation_author.ordinal rdf:datatype="xsd:int">68</PDBo:citation_author.ordinal>
           </PDBo:citation_author>
         </PDBo:has_citation_author>
         <PDBo:has_citation_author>
@@ -1166,7 +1166,7 @@
             </PDBo:reference_to_citation>
             <PDBo:citation_author.citation_id>14</PDBo:citation_author.citation_id>
             <PDBo:citation_author.name>Ottesen, J.</PDBo:citation_author.name>
-            <PDBo:citation_author.ordinal>69</PDBo:citation_author.ordinal>
+            <PDBo:citation_author.ordinal rdf:datatype="xsd:int">69</PDBo:citation_author.ordinal>
           </PDBo:citation_author>
         </PDBo:has_citation_author>
         <PDBo:has_citation_author>
@@ -1179,7 +1179,7 @@
             </PDBo:reference_to_citation>
             <PDBo:citation_author.citation_id>14</PDBo:citation_author.citation_id>
             <PDBo:citation_author.name>Yuzenkova, J.</PDBo:citation_author.name>
-            <PDBo:citation_author.ordinal>70</PDBo:citation_author.ordinal>
+            <PDBo:citation_author.ordinal rdf:datatype="xsd:int">70</PDBo:citation_author.ordinal>
           </PDBo:citation_author>
         </PDBo:has_citation_author>
         <PDBo:has_citation_author>
@@ -1192,7 +1192,7 @@
             </PDBo:reference_to_citation>
             <PDBo:citation_author.citation_id>14</PDBo:citation_author.citation_id>
             <PDBo:citation_author.name>Chait, B.T.</PDBo:citation_author.name>
-            <PDBo:citation_author.ordinal>71</PDBo:citation_author.ordinal>
+            <PDBo:citation_author.ordinal rdf:datatype="xsd:int">71</PDBo:citation_author.ordinal>
           </PDBo:citation_author>
         </PDBo:has_citation_author>
         <PDBo:has_citation_author>
@@ -1205,7 +1205,7 @@
             </PDBo:reference_to_citation>
             <PDBo:citation_author.citation_id>14</PDBo:citation_author.citation_id>
             <PDBo:citation_author.name>Landick, R.</PDBo:citation_author.name>
-            <PDBo:citation_author.ordinal>72</PDBo:citation_author.ordinal>
+            <PDBo:citation_author.ordinal rdf:datatype="xsd:int">72</PDBo:citation_author.ordinal>
           </PDBo:citation_author>
         </PDBo:has_citation_author>
         <PDBo:has_citation_author>
@@ -1218,7 +1218,7 @@
             </PDBo:reference_to_citation>
             <PDBo:citation_author.citation_id>14</PDBo:citation_author.citation_id>
             <PDBo:citation_author.name>Muir, T.</PDBo:citation_author.name>
-            <PDBo:citation_author.ordinal>73</PDBo:citation_author.ordinal>
+            <PDBo:citation_author.ordinal rdf:datatype="xsd:int">73</PDBo:citation_author.ordinal>
           </PDBo:citation_author>
         </PDBo:has_citation_author>
         <PDBo:has_citation_author>
@@ -1231,7 +1231,7 @@
             </PDBo:reference_to_citation>
             <PDBo:citation_author.citation_id>14</PDBo:citation_author.citation_id>
             <PDBo:citation_author.name>Severinov, K.</PDBo:citation_author.name>
-            <PDBo:citation_author.ordinal>74</PDBo:citation_author.ordinal>
+            <PDBo:citation_author.ordinal rdf:datatype="xsd:int">74</PDBo:citation_author.ordinal>
           </PDBo:citation_author>
         </PDBo:has_citation_author>
         <PDBo:has_citation_author>
@@ -1244,7 +1244,7 @@
             </PDBo:reference_to_citation>
             <PDBo:citation_author.citation_id>14</PDBo:citation_author.citation_id>
             <PDBo:citation_author.name>Darst, S.A.</PDBo:citation_author.name>
-            <PDBo:citation_author.ordinal>75</PDBo:citation_author.ordinal>
+            <PDBo:citation_author.ordinal rdf:datatype="xsd:int">75</PDBo:citation_author.ordinal>
           </PDBo:citation_author>
         </PDBo:has_citation_author>
         <PDBo:has_citation_author>
@@ -1257,7 +1257,7 @@
             </PDBo:reference_to_citation>
             <PDBo:citation_author.citation_id>15</PDBo:citation_author.citation_id>
             <PDBo:citation_author.name>Bayro, M.J.</PDBo:citation_author.name>
-            <PDBo:citation_author.ordinal>76</PDBo:citation_author.ordinal>
+            <PDBo:citation_author.ordinal rdf:datatype="xsd:int">76</PDBo:citation_author.ordinal>
           </PDBo:citation_author>
         </PDBo:has_citation_author>
         <PDBo:has_citation_author>
@@ -1270,7 +1270,7 @@
             </PDBo:reference_to_citation>
             <PDBo:citation_author.citation_id>15</PDBo:citation_author.citation_id>
             <PDBo:citation_author.name>Mukhopadhyay, J.</PDBo:citation_author.name>
-            <PDBo:citation_author.ordinal>77</PDBo:citation_author.ordinal>
+            <PDBo:citation_author.ordinal rdf:datatype="xsd:int">77</PDBo:citation_author.ordinal>
           </PDBo:citation_author>
         </PDBo:has_citation_author>
         <PDBo:has_citation_author>
@@ -1283,7 +1283,7 @@
             </PDBo:reference_to_citation>
             <PDBo:citation_author.citation_id>15</PDBo:citation_author.citation_id>
             <PDBo:citation_author.name>Swapna, G.V.T.</PDBo:citation_author.name>
-            <PDBo:citation_author.ordinal>78</PDBo:citation_author.ordinal>
+            <PDBo:citation_author.ordinal rdf:datatype="xsd:int">78</PDBo:citation_author.ordinal>
           </PDBo:citation_author>
         </PDBo:has_citation_author>
         <PDBo:has_citation_author>
@@ -1296,7 +1296,7 @@
             </PDBo:reference_to_citation>
             <PDBo:citation_author.citation_id>15</PDBo:citation_author.citation_id>
             <PDBo:citation_author.name>Huang, J.Y.</PDBo:citation_author.name>
-            <PDBo:citation_author.ordinal>79</PDBo:citation_author.ordinal>
+            <PDBo:citation_author.ordinal rdf:datatype="xsd:int">79</PDBo:citation_author.ordinal>
           </PDBo:citation_author>
         </PDBo:has_citation_author>
         <PDBo:has_citation_author>
@@ -1309,7 +1309,7 @@
             </PDBo:reference_to_citation>
             <PDBo:citation_author.citation_id>15</PDBo:citation_author.citation_id>
             <PDBo:citation_author.name>Ma, L.-C.</PDBo:citation_author.name>
-            <PDBo:citation_author.ordinal>80</PDBo:citation_author.ordinal>
+            <PDBo:citation_author.ordinal rdf:datatype="xsd:int">80</PDBo:citation_author.ordinal>
           </PDBo:citation_author>
         </PDBo:has_citation_author>
         <PDBo:has_citation_author>
@@ -1322,7 +1322,7 @@
             </PDBo:reference_to_citation>
             <PDBo:citation_author.citation_id>15</PDBo:citation_author.citation_id>
             <PDBo:citation_author.name>Sineva, E.</PDBo:citation_author.name>
-            <PDBo:citation_author.ordinal>81</PDBo:citation_author.ordinal>
+            <PDBo:citation_author.ordinal rdf:datatype="xsd:int">81</PDBo:citation_author.ordinal>
           </PDBo:citation_author>
         </PDBo:has_citation_author>
         <PDBo:has_citation_author>
@@ -1335,7 +1335,7 @@
             </PDBo:reference_to_citation>
             <PDBo:citation_author.citation_id>15</PDBo:citation_author.citation_id>
             <PDBo:citation_author.name>Dawson, P.E.</PDBo:citation_author.name>
-            <PDBo:citation_author.ordinal>82</PDBo:citation_author.ordinal>
+            <PDBo:citation_author.ordinal rdf:datatype="xsd:int">82</PDBo:citation_author.ordinal>
           </PDBo:citation_author>
         </PDBo:has_citation_author>
         <PDBo:has_citation_author>
@@ -1348,7 +1348,7 @@
             </PDBo:reference_to_citation>
             <PDBo:citation_author.citation_id>15</PDBo:citation_author.citation_id>
             <PDBo:citation_author.name>Montelione, G.T.</PDBo:citation_author.name>
-            <PDBo:citation_author.ordinal>83</PDBo:citation_author.ordinal>
+            <PDBo:citation_author.ordinal rdf:datatype="xsd:int">83</PDBo:citation_author.ordinal>
           </PDBo:citation_author>
         </PDBo:has_citation_author>
         <PDBo:has_citation_author>
@@ -1361,7 +1361,7 @@
             </PDBo:reference_to_citation>
             <PDBo:citation_author.citation_id>15</PDBo:citation_author.citation_id>
             <PDBo:citation_author.name>Ebright, R.H.</PDBo:citation_author.name>
-            <PDBo:citation_author.ordinal>84</PDBo:citation_author.ordinal>
+            <PDBo:citation_author.ordinal rdf:datatype="xsd:int">84</PDBo:citation_author.ordinal>
           </PDBo:citation_author>
         </PDBo:has_citation_author>
         <PDBo:has_citation_author>
@@ -1374,7 +1374,7 @@
             </PDBo:reference_to_citation>
             <PDBo:citation_author.citation_id>16</PDBo:citation_author.citation_id>
             <PDBo:citation_author.name>Adelman, K.</PDBo:citation_author.name>
-            <PDBo:citation_author.ordinal>85</PDBo:citation_author.ordinal>
+            <PDBo:citation_author.ordinal rdf:datatype="xsd:int">85</PDBo:citation_author.ordinal>
           </PDBo:citation_author>
         </PDBo:has_citation_author>
         <PDBo:has_citation_author>
@@ -1387,7 +1387,7 @@
             </PDBo:reference_to_citation>
             <PDBo:citation_author.citation_id>16</PDBo:citation_author.citation_id>
             <PDBo:citation_author.name>Yuzenkova, J.</PDBo:citation_author.name>
-            <PDBo:citation_author.ordinal>86</PDBo:citation_author.ordinal>
+            <PDBo:citation_author.ordinal rdf:datatype="xsd:int">86</PDBo:citation_author.ordinal>
           </PDBo:citation_author>
         </PDBo:has_citation_author>
         <PDBo:has_citation_author>
@@ -1400,7 +1400,7 @@
             </PDBo:reference_to_citation>
             <PDBo:citation_author.citation_id>16</PDBo:citation_author.citation_id>
             <PDBo:citation_author.name>La Porta, A.</PDBo:citation_author.name>
-            <PDBo:citation_author.ordinal>87</PDBo:citation_author.ordinal>
+            <PDBo:citation_author.ordinal rdf:datatype="xsd:int">87</PDBo:citation_author.ordinal>
           </PDBo:citation_author>
         </PDBo:has_citation_author>
         <PDBo:has_citation_author>
@@ -1413,7 +1413,7 @@
             </PDBo:reference_to_citation>
             <PDBo:citation_author.citation_id>16</PDBo:citation_author.citation_id>
             <PDBo:citation_author.name>Zenkin, N.</PDBo:citation_author.name>
-            <PDBo:citation_author.ordinal>88</PDBo:citation_author.ordinal>
+            <PDBo:citation_author.ordinal rdf:datatype="xsd:int">88</PDBo:citation_author.ordinal>
           </PDBo:citation_author>
         </PDBo:has_citation_author>
         <PDBo:has_citation_author>
@@ -1426,7 +1426,7 @@
             </PDBo:reference_to_citation>
             <PDBo:citation_author.citation_id>16</PDBo:citation_author.citation_id>
             <PDBo:citation_author.name>Lee, J.</PDBo:citation_author.name>
-            <PDBo:citation_author.ordinal>89</PDBo:citation_author.ordinal>
+            <PDBo:citation_author.ordinal rdf:datatype="xsd:int">89</PDBo:citation_author.ordinal>
           </PDBo:citation_author>
         </PDBo:has_citation_author>
         <PDBo:has_citation_author>
@@ -1439,7 +1439,7 @@
             </PDBo:reference_to_citation>
             <PDBo:citation_author.citation_id>16</PDBo:citation_author.citation_id>
             <PDBo:citation_author.name>Lis, J.T.</PDBo:citation_author.name>
-            <PDBo:citation_author.ordinal>90</PDBo:citation_author.ordinal>
+            <PDBo:citation_author.ordinal rdf:datatype="xsd:int">90</PDBo:citation_author.ordinal>
           </PDBo:citation_author>
         </PDBo:has_citation_author>
         <PDBo:has_citation_author>
@@ -1452,7 +1452,7 @@
             </PDBo:reference_to_citation>
             <PDBo:citation_author.citation_id>16</PDBo:citation_author.citation_id>
             <PDBo:citation_author.name>Borukhov, S.</PDBo:citation_author.name>
-            <PDBo:citation_author.ordinal>91</PDBo:citation_author.ordinal>
+            <PDBo:citation_author.ordinal rdf:datatype="xsd:int">91</PDBo:citation_author.ordinal>
           </PDBo:citation_author>
         </PDBo:has_citation_author>
         <PDBo:has_citation_author>
@@ -1465,7 +1465,7 @@
             </PDBo:reference_to_citation>
             <PDBo:citation_author.citation_id>16</PDBo:citation_author.citation_id>
             <PDBo:citation_author.name>Wang, M.D.</PDBo:citation_author.name>
-            <PDBo:citation_author.ordinal>92</PDBo:citation_author.ordinal>
+            <PDBo:citation_author.ordinal rdf:datatype="xsd:int">92</PDBo:citation_author.ordinal>
           </PDBo:citation_author>
         </PDBo:has_citation_author>
         <PDBo:has_citation_author>
@@ -1478,7 +1478,7 @@
             </PDBo:reference_to_citation>
             <PDBo:citation_author.citation_id>16</PDBo:citation_author.citation_id>
             <PDBo:citation_author.name>Severinov, K.</PDBo:citation_author.name>
-            <PDBo:citation_author.ordinal>93</PDBo:citation_author.ordinal>
+            <PDBo:citation_author.ordinal rdf:datatype="xsd:int">93</PDBo:citation_author.ordinal>
           </PDBo:citation_author>
         </PDBo:has_citation_author>
         <PDBo:has_citation_author>
@@ -1491,7 +1491,7 @@
             </PDBo:reference_to_citation>
             <PDBo:citation_author.citation_id>17</PDBo:citation_author.citation_id>
             <PDBo:citation_author.name>Azpiroz, M.F.</PDBo:citation_author.name>
-            <PDBo:citation_author.ordinal>94</PDBo:citation_author.ordinal>
+            <PDBo:citation_author.ordinal rdf:datatype="xsd:int">94</PDBo:citation_author.ordinal>
           </PDBo:citation_author>
         </PDBo:has_citation_author>
         <PDBo:has_citation_author>
@@ -1504,7 +1504,7 @@
             </PDBo:reference_to_citation>
             <PDBo:citation_author.citation_id>17</PDBo:citation_author.citation_id>
             <PDBo:citation_author.name>Rodriguez, E.</PDBo:citation_author.name>
-            <PDBo:citation_author.ordinal>95</PDBo:citation_author.ordinal>
+            <PDBo:citation_author.ordinal rdf:datatype="xsd:int">95</PDBo:citation_author.ordinal>
           </PDBo:citation_author>
         </PDBo:has_citation_author>
         <PDBo:has_citation_author>
@@ -1517,7 +1517,7 @@
             </PDBo:reference_to_citation>
             <PDBo:citation_author.citation_id>17</PDBo:citation_author.citation_id>
             <PDBo:citation_author.name>Lavina, M.</PDBo:citation_author.name>
-            <PDBo:citation_author.ordinal>96</PDBo:citation_author.ordinal>
+            <PDBo:citation_author.ordinal rdf:datatype="xsd:int">96</PDBo:citation_author.ordinal>
           </PDBo:citation_author>
         </PDBo:has_citation_author>
         <PDBo:has_citation_author>
@@ -1530,7 +1530,7 @@
             </PDBo:reference_to_citation>
             <PDBo:citation_author.citation_id>18</PDBo:citation_author.citation_id>
             <PDBo:citation_author.name>Yorgey, P.</PDBo:citation_author.name>
-            <PDBo:citation_author.ordinal>97</PDBo:citation_author.ordinal>
+            <PDBo:citation_author.ordinal rdf:datatype="xsd:int">97</PDBo:citation_author.ordinal>
           </PDBo:citation_author>
         </PDBo:has_citation_author>
         <PDBo:has_citation_author>
@@ -1543,7 +1543,7 @@
             </PDBo:reference_to_citation>
             <PDBo:citation_author.citation_id>18</PDBo:citation_author.citation_id>
             <PDBo:citation_author.name>Lee, J.</PDBo:citation_author.name>
-            <PDBo:citation_author.ordinal>98</PDBo:citation_author.ordinal>
+            <PDBo:citation_author.ordinal rdf:datatype="xsd:int">98</PDBo:citation_author.ordinal>
           </PDBo:citation_author>
         </PDBo:has_citation_author>
         <PDBo:has_citation_author>
@@ -1556,7 +1556,7 @@
             </PDBo:reference_to_citation>
             <PDBo:citation_author.citation_id>18</PDBo:citation_author.citation_id>
             <PDBo:citation_author.name>Kordel, J.</PDBo:citation_author.name>
-            <PDBo:citation_author.ordinal>99</PDBo:citation_author.ordinal>
+            <PDBo:citation_author.ordinal rdf:datatype="xsd:int">99</PDBo:citation_author.ordinal>
           </PDBo:citation_author>
         </PDBo:has_citation_author>
         <PDBo:has_citation_author>
@@ -1569,7 +1569,7 @@
             </PDBo:reference_to_citation>
             <PDBo:citation_author.citation_id>18</PDBo:citation_author.citation_id>
             <PDBo:citation_author.name>Vivas, E.</PDBo:citation_author.name>
-            <PDBo:citation_author.ordinal>100</PDBo:citation_author.ordinal>
+            <PDBo:citation_author.ordinal rdf:datatype="xsd:int">100</PDBo:citation_author.ordinal>
           </PDBo:citation_author>
         </PDBo:has_citation_author>
         <PDBo:has_citation_author>
@@ -1582,7 +1582,7 @@
             </PDBo:reference_to_citation>
             <PDBo:citation_author.citation_id>18</PDBo:citation_author.citation_id>
             <PDBo:citation_author.name>Warner, P.</PDBo:citation_author.name>
-            <PDBo:citation_author.ordinal>101</PDBo:citation_author.ordinal>
+            <PDBo:citation_author.ordinal rdf:datatype="xsd:int">101</PDBo:citation_author.ordinal>
           </PDBo:citation_author>
         </PDBo:has_citation_author>
         <PDBo:has_citation_author>
@@ -1595,7 +1595,7 @@
             </PDBo:reference_to_citation>
             <PDBo:citation_author.citation_id>18</PDBo:citation_author.citation_id>
             <PDBo:citation_author.name>Jebaratnam, D.</PDBo:citation_author.name>
-            <PDBo:citation_author.ordinal>102</PDBo:citation_author.ordinal>
+            <PDBo:citation_author.ordinal rdf:datatype="xsd:int">102</PDBo:citation_author.ordinal>
           </PDBo:citation_author>
         </PDBo:has_citation_author>
         <PDBo:has_citation_author>
@@ -1608,7 +1608,7 @@
             </PDBo:reference_to_citation>
             <PDBo:citation_author.citation_id>18</PDBo:citation_author.citation_id>
             <PDBo:citation_author.name>Kolter, R.</PDBo:citation_author.name>
-            <PDBo:citation_author.ordinal>103</PDBo:citation_author.ordinal>
+            <PDBo:citation_author.ordinal rdf:datatype="xsd:int">103</PDBo:citation_author.ordinal>
           </PDBo:citation_author>
         </PDBo:has_citation_author>
       </PDBo:citation_authorCategory>
@@ -1624,7 +1624,7 @@
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_family>
             <PDBo:pdbx_family_prd_audit.action_type>Create family</PDBo:pdbx_family_prd_audit.action_type>
-            <PDBo:pdbx_family_prd_audit.date>2012-02-08</PDBo:pdbx_family_prd_audit.date>
+            <PDBo:pdbx_family_prd_audit.date rdf:datatype="xsd:date">2012-02-08</PDBo:pdbx_family_prd_audit.date>
             <PDBo:pdbx_family_prd_audit.family_prd_id>FAM_000077</PDBo:pdbx_family_prd_audit.family_prd_id>
             <PDBo:pdbx_family_prd_audit.processing_site>RCSB</PDBo:pdbx_family_prd_audit.processing_site>
           </PDBo:pdbx_family_prd_audit>
@@ -1638,7 +1638,7 @@
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_family>
             <PDBo:pdbx_family_prd_audit.action_type>Initial release</PDBo:pdbx_family_prd_audit.action_type>
-            <PDBo:pdbx_family_prd_audit.date>2013-10-16</PDBo:pdbx_family_prd_audit.date>
+            <PDBo:pdbx_family_prd_audit.date rdf:datatype="xsd:date">2013-10-16</PDBo:pdbx_family_prd_audit.date>
             <PDBo:pdbx_family_prd_audit.family_prd_id>FAM_000077</PDBo:pdbx_family_prd_audit.family_prd_id>
             <PDBo:pdbx_family_prd_audit.processing_site>RCSB</PDBo:pdbx_family_prd_audit.processing_site>
           </PDBo:pdbx_family_prd_audit>
@@ -1651,7 +1651,7 @@
           <PDBo:pdbx_reference_molecule_annotation rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/pdbx_reference_molecule_annotation/FAM_000077,1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077"/>
             <PDBo:pdbx_reference_molecule_annotation.family_prd_id>FAM_000077</PDBo:pdbx_reference_molecule_annotation.family_prd_id>
-            <PDBo:pdbx_reference_molecule_annotation.ordinal>1</PDBo:pdbx_reference_molecule_annotation.ordinal>
+            <PDBo:pdbx_reference_molecule_annotation.ordinal rdf:datatype="xsd:int">1</PDBo:pdbx_reference_molecule_annotation.ordinal>
             <PDBo:pdbx_reference_molecule_annotation.prd_id>PRD_000183</PDBo:pdbx_reference_molecule_annotation.prd_id>
             <PDBo:pdbx_reference_molecule_annotation.source>Bactibase</PDBo:pdbx_reference_molecule_annotation.source>
             <PDBo:pdbx_reference_molecule_annotation.text>Inhibits protein translation by blocking aspartyl-tRNA synthetase function and inhibiting production of aminoacetylated tRNA-Asp.</PDBo:pdbx_reference_molecule_annotation.text>
@@ -1662,7 +1662,7 @@
           <PDBo:pdbx_reference_molecule_annotation rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/pdbx_reference_molecule_annotation/FAM_000077,2">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077"/>
             <PDBo:pdbx_reference_molecule_annotation.family_prd_id>FAM_000077</PDBo:pdbx_reference_molecule_annotation.family_prd_id>
-            <PDBo:pdbx_reference_molecule_annotation.ordinal>2</PDBo:pdbx_reference_molecule_annotation.ordinal>
+            <PDBo:pdbx_reference_molecule_annotation.ordinal rdf:datatype="xsd:int">2</PDBo:pdbx_reference_molecule_annotation.ordinal>
             <PDBo:pdbx_reference_molecule_annotation.prd_id>PRD_000183</PDBo:pdbx_reference_molecule_annotation.prd_id>
             <PDBo:pdbx_reference_molecule_annotation.source>Bactibase</PDBo:pdbx_reference_molecule_annotation.source>
             <PDBo:pdbx_reference_molecule_annotation.text>Post-translational modification: The peptide moiety allows entry into the bacterial cell, where it undergoes proteolytic cleavage to release the aspartyl adenylate analog, which is responsible for aspartyl-tRNA synthetase inhibition. Can be processed by the non-specificoligopeptidases pepA, pepB and pepN.</PDBo:pdbx_reference_molecule_annotation.text>
@@ -1673,7 +1673,7 @@
           <PDBo:pdbx_reference_molecule_annotation rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/pdbx_reference_molecule_annotation/FAM_000077,3">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077"/>
             <PDBo:pdbx_reference_molecule_annotation.family_prd_id>FAM_000077</PDBo:pdbx_reference_molecule_annotation.family_prd_id>
-            <PDBo:pdbx_reference_molecule_annotation.ordinal>3</PDBo:pdbx_reference_molecule_annotation.ordinal>
+            <PDBo:pdbx_reference_molecule_annotation.ordinal rdf:datatype="xsd:int">3</PDBo:pdbx_reference_molecule_annotation.ordinal>
             <PDBo:pdbx_reference_molecule_annotation.prd_id>PRD_000184</PDBo:pdbx_reference_molecule_annotation.prd_id>
             <PDBo:pdbx_reference_molecule_annotation.source>Bactibase</PDBo:pdbx_reference_molecule_annotation.source>
             <PDBo:pdbx_reference_molecule_annotation.text>Peptide antibiotic that functions through inhibition of the bacterial DNA-dependent RNA polymerase (RNAP). May inhibit transcription by binding in RNAP secondary channel and blocking nucleotide substrates access to the catalytic center. Also acts on the cytoplasmic membrane of Salmonella newport, producing alteration of membrane permeability and disruption of the subsequent gradient dissipation, which inhibits several processes essential for cell viability, such as oxygen consumption. Induces bacterial filamentation in susceptible cells in a non-SOS-dependent way, but this phenotype may result from impaired transcription of genes coding for cell division proteins.</PDBo:pdbx_reference_molecule_annotation.text>
@@ -1684,7 +1684,7 @@
           <PDBo:pdbx_reference_molecule_annotation rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/pdbx_reference_molecule_annotation/FAM_000077,4">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077"/>
             <PDBo:pdbx_reference_molecule_annotation.family_prd_id>FAM_000077</PDBo:pdbx_reference_molecule_annotation.family_prd_id>
-            <PDBo:pdbx_reference_molecule_annotation.ordinal>4</PDBo:pdbx_reference_molecule_annotation.ordinal>
+            <PDBo:pdbx_reference_molecule_annotation.ordinal rdf:datatype="xsd:int">4</PDBo:pdbx_reference_molecule_annotation.ordinal>
             <PDBo:pdbx_reference_molecule_annotation.prd_id>PRD_001126</PDBo:pdbx_reference_molecule_annotation.prd_id>
             <PDBo:pdbx_reference_molecule_annotation.source>PMID:19494832</PDBo:pdbx_reference_molecule_annotation.source>
             <PDBo:pdbx_reference_molecule_annotation.text>Substrate of MccB</PDBo:pdbx_reference_molecule_annotation.text>
@@ -1697,7 +1697,7 @@
           <PDBo:pdbx_reference_molecule_annotation rdf:about="http://rdf.wwpdb.org/fam/FAM_000077/pdbx_reference_molecule_annotation/FAM_000077,5">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000077"/>
             <PDBo:pdbx_reference_molecule_annotation.family_prd_id>FAM_000077</PDBo:pdbx_reference_molecule_annotation.family_prd_id>
-            <PDBo:pdbx_reference_molecule_annotation.ordinal>5</PDBo:pdbx_reference_molecule_annotation.ordinal>
+            <PDBo:pdbx_reference_molecule_annotation.ordinal rdf:datatype="xsd:int">5</PDBo:pdbx_reference_molecule_annotation.ordinal>
             <PDBo:pdbx_reference_molecule_annotation.prd_id>PRD_001129</PDBo:pdbx_reference_molecule_annotation.prd_id>
             <PDBo:pdbx_reference_molecule_annotation.source>PMID:19494832</PDBo:pdbx_reference_molecule_annotation.source>
             <PDBo:pdbx_reference_molecule_annotation.text>Reaction intermediate of MccB</PDBo:pdbx_reference_molecule_annotation.text>
@@ -1731,10 +1731,10 @@
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_list>
             <PDBo:pdbx_reference_molecule_features.family_prd_id>FAM_000077</PDBo:pdbx_reference_molecule_features.family_prd_id>
-            <PDBo:pdbx_reference_molecule_features.ordinal>1</PDBo:pdbx_reference_molecule_features.ordinal>
+            <PDBo:pdbx_reference_molecule_features.ordinal rdf:datatype="xsd:int">1</PDBo:pdbx_reference_molecule_features.ordinal>
             <PDBo:pdbx_reference_molecule_features.prd_id>PRD_000183</PDBo:pdbx_reference_molecule_features.prd_id>
             <PDBo:pdbx_reference_molecule_features.source>UniProt</PDBo:pdbx_reference_molecule_features.source>
-            <PDBo:pdbx_reference_molecule_features.source_ordinal>1</PDBo:pdbx_reference_molecule_features.source_ordinal>
+            <PDBo:pdbx_reference_molecule_features.source_ordinal rdf:datatype="xsd:int">1</PDBo:pdbx_reference_molecule_features.source_ordinal>
             <PDBo:pdbx_reference_molecule_features.type>External_Reference_ID</PDBo:pdbx_reference_molecule_features.type>
             <PDBo:pdbx_reference_molecule_features.value>Q47505</PDBo:pdbx_reference_molecule_features.value>
             <PDBo:link_to_uniprot rdf:resource="http://purl.uniprot.org/uniprot/Q47505" rdfs:label="uniprot:Q47505"/>
@@ -1750,10 +1750,10 @@
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_list>
             <PDBo:pdbx_reference_molecule_features.family_prd_id>FAM_000077</PDBo:pdbx_reference_molecule_features.family_prd_id>
-            <PDBo:pdbx_reference_molecule_features.ordinal>2</PDBo:pdbx_reference_molecule_features.ordinal>
+            <PDBo:pdbx_reference_molecule_features.ordinal rdf:datatype="xsd:int">2</PDBo:pdbx_reference_molecule_features.ordinal>
             <PDBo:pdbx_reference_molecule_features.prd_id>PRD_000184</PDBo:pdbx_reference_molecule_features.prd_id>
             <PDBo:pdbx_reference_molecule_features.source>UniProt</PDBo:pdbx_reference_molecule_features.source>
-            <PDBo:pdbx_reference_molecule_features.source_ordinal>1</PDBo:pdbx_reference_molecule_features.source_ordinal>
+            <PDBo:pdbx_reference_molecule_features.source_ordinal rdf:datatype="xsd:int">1</PDBo:pdbx_reference_molecule_features.source_ordinal>
             <PDBo:pdbx_reference_molecule_features.type>External_Reference_ID</PDBo:pdbx_reference_molecule_features.type>
             <PDBo:pdbx_reference_molecule_features.value>Q9X2V7</PDBo:pdbx_reference_molecule_features.value>
             <PDBo:link_to_uniprot rdf:resource="http://purl.uniprot.org/uniprot/Q9X2V7" rdfs:label="uniprot:Q9X2V7"/>
@@ -1769,10 +1769,10 @@
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_list>
             <PDBo:pdbx_reference_molecule_features.family_prd_id>FAM_000077</PDBo:pdbx_reference_molecule_features.family_prd_id>
-            <PDBo:pdbx_reference_molecule_features.ordinal>3</PDBo:pdbx_reference_molecule_features.ordinal>
+            <PDBo:pdbx_reference_molecule_features.ordinal rdf:datatype="xsd:int">3</PDBo:pdbx_reference_molecule_features.ordinal>
             <PDBo:pdbx_reference_molecule_features.prd_id>PRD_000183</PDBo:pdbx_reference_molecule_features.prd_id>
             <PDBo:pdbx_reference_molecule_features.source>Bactibase</PDBo:pdbx_reference_molecule_features.source>
-            <PDBo:pdbx_reference_molecule_features.source_ordinal>1</PDBo:pdbx_reference_molecule_features.source_ordinal>
+            <PDBo:pdbx_reference_molecule_features.source_ordinal rdf:datatype="xsd:int">1</PDBo:pdbx_reference_molecule_features.source_ordinal>
             <PDBo:pdbx_reference_molecule_features.type>External_Reference_ID</PDBo:pdbx_reference_molecule_features.type>
             <PDBo:pdbx_reference_molecule_features.value>BAC207</PDBo:pdbx_reference_molecule_features.value>
           </PDBo:pdbx_reference_molecule_features>
@@ -1786,10 +1786,10 @@
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_list>
             <PDBo:pdbx_reference_molecule_features.family_prd_id>FAM_000077</PDBo:pdbx_reference_molecule_features.family_prd_id>
-            <PDBo:pdbx_reference_molecule_features.ordinal>4</PDBo:pdbx_reference_molecule_features.ordinal>
+            <PDBo:pdbx_reference_molecule_features.ordinal rdf:datatype="xsd:int">4</PDBo:pdbx_reference_molecule_features.ordinal>
             <PDBo:pdbx_reference_molecule_features.prd_id>PRD_000184</PDBo:pdbx_reference_molecule_features.prd_id>
             <PDBo:pdbx_reference_molecule_features.source>Bactibase</PDBo:pdbx_reference_molecule_features.source>
-            <PDBo:pdbx_reference_molecule_features.source_ordinal>1</PDBo:pdbx_reference_molecule_features.source_ordinal>
+            <PDBo:pdbx_reference_molecule_features.source_ordinal rdf:datatype="xsd:int">1</PDBo:pdbx_reference_molecule_features.source_ordinal>
             <PDBo:pdbx_reference_molecule_features.type>External_Reference_ID</PDBo:pdbx_reference_molecule_features.type>
             <PDBo:pdbx_reference_molecule_features.value>BAC015</PDBo:pdbx_reference_molecule_features.value>
           </PDBo:pdbx_reference_molecule_features>
@@ -1863,7 +1863,7 @@
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_list>
             <PDBo:pdbx_reference_molecule_synonyms.family_prd_id>FAM_000077</PDBo:pdbx_reference_molecule_synonyms.family_prd_id>
-            <PDBo:pdbx_reference_molecule_synonyms.ordinal>1</PDBo:pdbx_reference_molecule_synonyms.ordinal>
+            <PDBo:pdbx_reference_molecule_synonyms.ordinal rdf:datatype="xsd:int">1</PDBo:pdbx_reference_molecule_synonyms.ordinal>
             <PDBo:pdbx_reference_molecule_synonyms.prd_id>PRD_000183</PDBo:pdbx_reference_molecule_synonyms.prd_id>
             <PDBo:pdbx_reference_molecule_synonyms.name>Microcin C7</PDBo:pdbx_reference_molecule_synonyms.name>
             <PDBo:pdbx_reference_molecule_synonyms.source>PDB</PDBo:pdbx_reference_molecule_synonyms.source>
@@ -1878,7 +1878,7 @@
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_list>
             <PDBo:pdbx_reference_molecule_synonyms.family_prd_id>FAM_000077</PDBo:pdbx_reference_molecule_synonyms.family_prd_id>
-            <PDBo:pdbx_reference_molecule_synonyms.ordinal>2</PDBo:pdbx_reference_molecule_synonyms.ordinal>
+            <PDBo:pdbx_reference_molecule_synonyms.ordinal rdf:datatype="xsd:int">2</PDBo:pdbx_reference_molecule_synonyms.ordinal>
             <PDBo:pdbx_reference_molecule_synonyms.prd_id>PRD_000183</PDBo:pdbx_reference_molecule_synonyms.prd_id>
             <PDBo:pdbx_reference_molecule_synonyms.name>MccC7</PDBo:pdbx_reference_molecule_synonyms.name>
             <PDBo:pdbx_reference_molecule_synonyms.source>PDB</PDBo:pdbx_reference_molecule_synonyms.source>
@@ -1893,7 +1893,7 @@
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_list>
             <PDBo:pdbx_reference_molecule_synonyms.family_prd_id>FAM_000077</PDBo:pdbx_reference_molecule_synonyms.family_prd_id>
-            <PDBo:pdbx_reference_molecule_synonyms.ordinal>3</PDBo:pdbx_reference_molecule_synonyms.ordinal>
+            <PDBo:pdbx_reference_molecule_synonyms.ordinal rdf:datatype="xsd:int">3</PDBo:pdbx_reference_molecule_synonyms.ordinal>
             <PDBo:pdbx_reference_molecule_synonyms.prd_id>PRD_000183</PDBo:pdbx_reference_molecule_synonyms.prd_id>
             <PDBo:pdbx_reference_molecule_synonyms.name>Microcin C51</PDBo:pdbx_reference_molecule_synonyms.name>
             <PDBo:pdbx_reference_molecule_synonyms.source>PDB</PDBo:pdbx_reference_molecule_synonyms.source>
@@ -1908,7 +1908,7 @@
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_list>
             <PDBo:pdbx_reference_molecule_synonyms.family_prd_id>FAM_000077</PDBo:pdbx_reference_molecule_synonyms.family_prd_id>
-            <PDBo:pdbx_reference_molecule_synonyms.ordinal>4</PDBo:pdbx_reference_molecule_synonyms.ordinal>
+            <PDBo:pdbx_reference_molecule_synonyms.ordinal rdf:datatype="xsd:int">4</PDBo:pdbx_reference_molecule_synonyms.ordinal>
             <PDBo:pdbx_reference_molecule_synonyms.prd_id>PRD_000183</PDBo:pdbx_reference_molecule_synonyms.prd_id>
             <PDBo:pdbx_reference_molecule_synonyms.name>McC</PDBo:pdbx_reference_molecule_synonyms.name>
             <PDBo:pdbx_reference_molecule_synonyms.source>PDB</PDBo:pdbx_reference_molecule_synonyms.source>
@@ -1923,7 +1923,7 @@
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_list>
             <PDBo:pdbx_reference_molecule_synonyms.family_prd_id>FAM_000077</PDBo:pdbx_reference_molecule_synonyms.family_prd_id>
-            <PDBo:pdbx_reference_molecule_synonyms.ordinal>5</PDBo:pdbx_reference_molecule_synonyms.ordinal>
+            <PDBo:pdbx_reference_molecule_synonyms.ordinal rdf:datatype="xsd:int">5</PDBo:pdbx_reference_molecule_synonyms.ordinal>
             <PDBo:pdbx_reference_molecule_synonyms.prd_id>PRD_000183</PDBo:pdbx_reference_molecule_synonyms.prd_id>
             <PDBo:pdbx_reference_molecule_synonyms.name>MccC51</PDBo:pdbx_reference_molecule_synonyms.name>
             <PDBo:pdbx_reference_molecule_synonyms.source>PDB</PDBo:pdbx_reference_molecule_synonyms.source>
@@ -1938,7 +1938,7 @@
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_list>
             <PDBo:pdbx_reference_molecule_synonyms.family_prd_id>FAM_000077</PDBo:pdbx_reference_molecule_synonyms.family_prd_id>
-            <PDBo:pdbx_reference_molecule_synonyms.ordinal>6</PDBo:pdbx_reference_molecule_synonyms.ordinal>
+            <PDBo:pdbx_reference_molecule_synonyms.ordinal rdf:datatype="xsd:int">6</PDBo:pdbx_reference_molecule_synonyms.ordinal>
             <PDBo:pdbx_reference_molecule_synonyms.prd_id>PRD_000183</PDBo:pdbx_reference_molecule_synonyms.prd_id>
             <PDBo:pdbx_reference_molecule_synonyms.name>Microcin C</PDBo:pdbx_reference_molecule_synonyms.name>
             <PDBo:pdbx_reference_molecule_synonyms.source>PDB</PDBo:pdbx_reference_molecule_synonyms.source>
@@ -1953,7 +1953,7 @@
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_list>
             <PDBo:pdbx_reference_molecule_synonyms.family_prd_id>FAM_000077</PDBo:pdbx_reference_molecule_synonyms.family_prd_id>
-            <PDBo:pdbx_reference_molecule_synonyms.ordinal>7</PDBo:pdbx_reference_molecule_synonyms.ordinal>
+            <PDBo:pdbx_reference_molecule_synonyms.ordinal rdf:datatype="xsd:int">7</PDBo:pdbx_reference_molecule_synonyms.ordinal>
             <PDBo:pdbx_reference_molecule_synonyms.prd_id>PRD_000184</PDBo:pdbx_reference_molecule_synonyms.prd_id>
             <PDBo:pdbx_reference_molecule_synonyms.name>Microcin J25</PDBo:pdbx_reference_molecule_synonyms.name>
             <PDBo:pdbx_reference_molecule_synonyms.source>PDB</PDBo:pdbx_reference_molecule_synonyms.source>
@@ -1968,7 +1968,7 @@
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_list>
             <PDBo:pdbx_reference_molecule_synonyms.family_prd_id>FAM_000077</PDBo:pdbx_reference_molecule_synonyms.family_prd_id>
-            <PDBo:pdbx_reference_molecule_synonyms.ordinal>8</PDBo:pdbx_reference_molecule_synonyms.ordinal>
+            <PDBo:pdbx_reference_molecule_synonyms.ordinal rdf:datatype="xsd:int">8</PDBo:pdbx_reference_molecule_synonyms.ordinal>
             <PDBo:pdbx_reference_molecule_synonyms.prd_id>PRD_001126</PDBo:pdbx_reference_molecule_synonyms.prd_id>
             <PDBo:pdbx_reference_molecule_synonyms.name>SeMet-MccA</PDBo:pdbx_reference_molecule_synonyms.name>
             <PDBo:pdbx_reference_molecule_synonyms.source>PDB</PDBo:pdbx_reference_molecule_synonyms.source>
@@ -1983,7 +1983,7 @@
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_list>
             <PDBo:pdbx_reference_molecule_synonyms.family_prd_id>FAM_000077</PDBo:pdbx_reference_molecule_synonyms.family_prd_id>
-            <PDBo:pdbx_reference_molecule_synonyms.ordinal>9</PDBo:pdbx_reference_molecule_synonyms.ordinal>
+            <PDBo:pdbx_reference_molecule_synonyms.ordinal rdf:datatype="xsd:int">9</PDBo:pdbx_reference_molecule_synonyms.ordinal>
             <PDBo:pdbx_reference_molecule_synonyms.prd_id>PRD_001129</PDBo:pdbx_reference_molecule_synonyms.prd_id>
             <PDBo:pdbx_reference_molecule_synonyms.name>MccA-N7isoASN</PDBo:pdbx_reference_molecule_synonyms.name>
             <PDBo:pdbx_reference_molecule_synonyms.source>PDB</PDBo:pdbx_reference_molecule_synonyms.source>

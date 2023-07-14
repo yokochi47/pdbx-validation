@@ -12,6 +12,17 @@ fi
 
 err=vrpt2pdbml2rdf.err
 
+if [ ! -e $VRPTX_PRIMITIVE_TYPE_MAPPING_XML ] ; then
+
+ java -jar $SAXON -s:$PDBX_VALIDATION_XSD -xsl:$XSD2PRIMITIVE_TYPE_MAPPING_XSL -o:$VRPTX_PRIMITIVE_TYPE_MAPPING_XML 2> $err || ( cat $err ; exit 1 )
+
+ rm -f $err
+
+ echo
+ echo Generated: $VRPTX_PRIMITIVE_TYPE_MAPPING_XML
+
+fi
+
 if [ ! -e $VRPTML2RDF_XSL ] ; then
 
  java -jar $SAXON -s:$PDBX_VALIDATION_XSD -xsl:$VRPTX2VRPTML2RDF_XSL -o:$VRPTML2RDF_XSL 2> $err || ( cat $err ; exit 1 )

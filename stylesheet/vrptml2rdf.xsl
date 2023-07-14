@@ -17,6 +17,9 @@
   <xsl:param name="wurcs2glytoucan" select="'https://raw.githubusercontent.com/yokochi47/pdbx-validation/master/wurcs2glytoucan/glytoucan.xml'" required="no"/>
   <xsl:param name="glytoucan" select="document($wurcs2glytoucan)"/>
 
+  <xsl:param name="primitive_type_mapping" select="'https://raw.githubusercontent.com/yokochi47/pdbx-validation/master/stylesheet/vrptx_primitive_type_mapping.xml'" required="no"/>
+  <xsl:param name="type_mapping" select="document($primitive_type_mapping)"/>
+
   <xsl:output method="xml" encoding="UTF-8" indent="yes"/>
   <xsl:strip-space elements="*"/>
 
@@ -102,7 +105,14 @@
 
   <!-- level 4 (element) -->
   <xsl:template match="/VRPTx:datablock/*/*/*[not(xsi:nil) and text()!='']">
-    <xsl:element name="VRPTo:{concat(local-name(parent::node()),'.',local-name())}">
+    <xsl:variable name="category_item"><xsl:value-of select="local-name(parent::node())"/></xsl:variable>
+    <xsl:variable name="data_item"><xsl:value-of select="local-name()"/></xsl:variable>
+    <xsl:variable name="tag_name"><xsl:value-of select="concat($category_item,'.',$data_item)"/></xsl:variable>
+    <xsl:variable name="data_tyep"><xsl:value-of select="$type_mapping/primitive_type_mapping/category_item[@name=$category_item]/data_item[@name=$data_item]/@type"/></xsl:variable>
+    <xsl:element name="VRPTo:{$tag_name}">
+      <xsl:if test="$data_tyep!=''">
+	<xsl:attribute name="rdf:datatype"><xsl:value-of select="$data_tyep"/></xsl:attribute>
+      </xsl:if>
       <xsl:choose>
 	<xsl:when test="contains(local-name(),'pdbx_seq_one_letter_code')">
 	  <xsl:choose>
@@ -122,7 +132,14 @@
 
   <!-- level 4 (attribute) -->
   <xsl:template match="/VRPTx:datablock/*/*/@*">
-    <xsl:element name="VRPTo:{concat(local-name(parent::node()),'.',translate(name(),'@',''))}">
+    <xsl:variable name="category_item"><xsl:value-of select="local-name(parent::node())"/></xsl:variable>
+    <xsl:variable name="data_item"><xsl:value-of select="translate(name(),'@','')"/></xsl:variable>
+    <xsl:variable name="tag_name"><xsl:value-of select="concat($category_item,'.',$data_item)"/></xsl:variable>
+    <xsl:variable name="data_tyep"><xsl:value-of select="$type_mapping/primitive_type_mapping/category_item[@name=$category_item]/data_item[@name=$data_item]/@type"/></xsl:variable>
+    <xsl:element name="VRPTo:{$tag_name}">
+      <xsl:if test="$data_tyep!=''">
+	<xsl:attribute name="rdf:datatype"><xsl:value-of select="$data_tyep"/></xsl:attribute>
+      </xsl:if>
       <xsl:value-of select="."/>
     </xsl:element>
   </xsl:template>

@@ -12,6 +12,17 @@ fi
 
 err=pdbx2pdbml2rdf.err
 
+if [ ! -e $PDBX_PRIMITIVE_TYPE_MAPPING_XML ] ; then
+
+ java -jar $SAXON -s:$PDBML_XSD -xsl:$XSD2PRIMITIVE_TYPE_MAPPING_XSL -o:$PDBX_PRIMITIVE_TYPE_MAPPING_XML 2> $err || ( cat $err ; exit 1 )
+
+ rm -f $err
+
+ echo
+ echo Generated: $PDBX_PRIMITIVE_TYPE_MAPPING_XML
+
+fi
+
 if [ ! -e $PDBML2RDF_XSL ] ; then
 
  java -jar $SAXON -s:$PDBML_XSD -xsl:$PDBX2PDBML2RDF_XSL -o:$PDBML2RDF_XSL 2> $err || ( cat $err ; exit 1 )

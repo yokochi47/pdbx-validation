@@ -10,6 +10,14 @@ if [ ! -e $PDBML_XSD ] || [ ! -e $PDBML2RDF_XSL ] ; then
  ( cd resource; ./update_pdbx_xsd.sh; ./update_pdbx_owl.sh )
 fi
 
+#if [ ! -e $PDBX_PRIMITIVE_TYPE_MAPPING_XML ] ; then
+
+ java -jar $SAXON -s:$PDBML_XSD -xsl:$XSD2PRIMITIVE_TYPE_MAPPING_XSL -o:$PDBX_PRIMITIVE_TYPE_MAPPING_XML || ( echo $0 aborted. ; exit 1 )
+
+ echo Generated: $PDBX_PRIMITIVE_TYPE_MAPPING_XML
+
+#fi
+
 #if [ ! -e $MERGE_PDBML_SIFTS_XSL ] ; then
 
  java -jar $SAXON -s:$PDBML_XSD -xsl:$XSD2MERGE_PDBML_SIFTS_XSL -o:$MERGE_PDBML_SIFTS_XSL || ( echo $0 aborted. ; exit 1 )
@@ -138,9 +146,9 @@ for pdbml_file in $WORK_DIR/$PDBML/*.xml ; do
  rdf_file=$WORK_DIR/$RDF/$pdb_id.rdf
 
  #if [ -z "$has_glycan" ] ; then
-  xsltproc -o $rdf_file --stringparam wurcs2glytoucan $WURCS_CATALOG_XML $PDBML2RDF_XSL $pdbml_sifts_file
+  xsltproc -o $rdf_file --stringparam wurcs2glytoucan $WURCS_CATALOG_XML --stringparam primitive_type_mapping $_PDBX_PRIMITIVE_TYPE_MAPPING_XML $PDBML2RDF_XSL $pdbml_sifts_file
  #else
- # java -jar $SAXON -s:$pdbml_sifts_file -xsl:$PDBML2RDF_XSL -o:$rdf_file wurcs2glytoucan=$WURCS_CATALOG_XML || ( echo $0 aborted. ; exit 1 )
+ # java -jar $SAXON -s:$pdbml_sifts_file -xsl:$PDBML2RDF_XSL -o:$rdf_file wurcs2glytoucan=$WURCS_CATALOG_XML primitive_type_mapping=$_PDBX_PRIMITIVE_TYPE_MAPPING_XML || ( echo $0 aborted. ; exit 1 )
  #fi
 
  echo " generated: "$rdf_file
