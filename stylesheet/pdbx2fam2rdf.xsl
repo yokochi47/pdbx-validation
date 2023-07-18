@@ -118,10 +118,10 @@
     &lt;xsl:variable name="category_item"&gt;&lt;xsl:value-of select="local-name(parent::node())"/&gt;&lt;/xsl:variable&gt;
     &lt;xsl:variable name="data_item"&gt;&lt;xsl:value-of select="local-name()"/&gt;&lt;/xsl:variable&gt;
     &lt;xsl:variable name="tag_name"&gt;&lt;xsl:value-of select="concat($category_item,'.',$data_item)"/&gt;&lt;/xsl:variable&gt;
-    &lt;xsl:variable name="data_tyep"&gt;&lt;xsl:value-of select="$type_mapping/primitive_type_mapping/category_item[@name=$category_item]/data_item[@name=$data_item]/@type"/&gt;&lt;/xsl:variable&gt;
+    &lt;xsl:variable name="data_type"&gt;&lt;xsl:value-of select="$type_mapping/primitive_type_mapping/category_item[@name=$category_item]/data_item[@name=$data_item]/@type"/&gt;&lt;/xsl:variable&gt;
     &lt;xsl:element name="PDBo:{$tag_name}"&gt;
-      &lt;xsl:if test="$data_tyep!=''"&gt;
-	&lt;xsl:attribute name="rdf:datatype"&gt;&lt;xsl:value-of select="$data_tyep"/&gt;&lt;/xsl:attribute&gt;
+      &lt;xsl:if test="$data_type!=''"&gt;
+	&lt;xsl:attribute name="rdf:datatype"&gt;&lt;xsl:value-of select="$data_type"/&gt;&lt;/xsl:attribute&gt;
       &lt;/xsl:if&gt;
       &lt;xsl:value-of select="."/&gt;
     &lt;/xsl:element&gt;
@@ -132,10 +132,10 @@
     &lt;xsl:variable name="category_item"&gt;&lt;xsl:value-of select="local-name(parent::node())"/&gt;&lt;/xsl:variable&gt;
     &lt;xsl:variable name="data_item"&gt;&lt;xsl:value-of select="translate(name(),'@','')"/&gt;&lt;/xsl:variable&gt;
     &lt;xsl:variable name="tag_name"&gt;&lt;xsl:value-of select="concat($category_item,'.',$data_item)"/&gt;&lt;/xsl:variable&gt;
-    &lt;xsl:variable name="data_tyep"&gt;&lt;xsl:value-of select="$type_mapping/primitive_type_mapping/category_item[@name=$category_item]/data_item[@name=$data_item]/@type"/&gt;&lt;/xsl:variable&gt;
+    &lt;xsl:variable name="data_type"&gt;&lt;xsl:value-of select="$type_mapping/primitive_type_mapping/category_item[@name=$category_item]/data_item[@name=$data_item]/@type"/&gt;&lt;/xsl:variable&gt;
     &lt;xsl:element name="PDBo:{$tag_name}"&gt;
-      &lt;xsl:if test="$data_tyep!=''"&gt;
-	&lt;xsl:attribute name="rdf:datatype"&gt;&lt;xsl:value-of select="$data_tyep"/&gt;&lt;/xsl:attribute&gt;
+      &lt;xsl:if test="$data_type!=''"&gt;
+	&lt;xsl:attribute name="rdf:datatype"&gt;&lt;xsl:value-of select="$data_type"/&gt;&lt;/xsl:attribute&gt;
       &lt;/xsl:if&gt;
       &lt;xsl:value-of select="."/&gt;
     &lt;/xsl:element&gt;

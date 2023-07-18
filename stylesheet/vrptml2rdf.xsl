@@ -108,10 +108,10 @@
     <xsl:variable name="category_item"><xsl:value-of select="local-name(parent::node())"/></xsl:variable>
     <xsl:variable name="data_item"><xsl:value-of select="local-name()"/></xsl:variable>
     <xsl:variable name="tag_name"><xsl:value-of select="concat($category_item,'.',$data_item)"/></xsl:variable>
-    <xsl:variable name="data_tyep"><xsl:value-of select="$type_mapping/primitive_type_mapping/category_item[@name=$category_item]/data_item[@name=$data_item]/@type"/></xsl:variable>
+    <xsl:variable name="data_type"><xsl:value-of select="$type_mapping/primitive_type_mapping/category_item[@name=$category_item]/data_item[@name=$data_item]/@type"/></xsl:variable>
     <xsl:element name="VRPTo:{$tag_name}">
-      <xsl:if test="$data_tyep!=''">
-	<xsl:attribute name="rdf:datatype"><xsl:value-of select="$data_tyep"/></xsl:attribute>
+      <xsl:if test="$data_type!=''">
+	<xsl:attribute name="rdf:datatype"><xsl:value-of select="$data_type"/></xsl:attribute>
       </xsl:if>
       <xsl:choose>
 	<xsl:when test="contains(local-name(),'pdbx_seq_one_letter_code')">
@@ -135,10 +135,10 @@
     <xsl:variable name="category_item"><xsl:value-of select="local-name(parent::node())"/></xsl:variable>
     <xsl:variable name="data_item"><xsl:value-of select="translate(name(),'@','')"/></xsl:variable>
     <xsl:variable name="tag_name"><xsl:value-of select="concat($category_item,'.',$data_item)"/></xsl:variable>
-    <xsl:variable name="data_tyep"><xsl:value-of select="$type_mapping/primitive_type_mapping/category_item[@name=$category_item]/data_item[@name=$data_item]/@type"/></xsl:variable>
+    <xsl:variable name="data_type"><xsl:value-of select="$type_mapping/primitive_type_mapping/category_item[@name=$category_item]/data_item[@name=$data_item]/@type"/></xsl:variable>
     <xsl:element name="VRPTo:{$tag_name}">
-      <xsl:if test="$data_tyep!=''">
-	<xsl:attribute name="rdf:datatype"><xsl:value-of select="$data_tyep"/></xsl:attribute>
+      <xsl:if test="$data_type!=''">
+	<xsl:attribute name="rdf:datatype"><xsl:value-of select="$data_type"/></xsl:attribute>
       </xsl:if>
       <xsl:value-of select="."/>
     </xsl:element>
