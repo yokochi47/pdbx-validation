@@ -68,6 +68,11 @@ do
   err_file=$WORK_DIR/transl_to_rdf_vrpt_$pdb_id.err
   lock_file=$WORK_DIR/$pdb_id.lock
 
+  # DAOTHER-8442
+  if [ $pdb_id = "3zpm" ] || [ $pdb_id = "7acs" ] ; then
+   continue
+  fi
+
   if [ ! -e $lock_file ] && ( ( [ ! -e $rdf_vrpt_file ] && [ ! -e $div_dir/`basename $rdf_vrpt_file`.gz ] ) || [ -e $err_file ] ) ; then
 
    touch $lock_file
@@ -128,6 +133,11 @@ do
   div_dir=$WORK_DIR/${pdb_id:1:2}
   err_file=$WORK_DIR/transl_to_rdf_vrpt_$pdb_id.err
   lock_file=$WORK_DIR/$pdb_id.lock
+
+  # DAOTHER-8442
+  if [ $pdb_id = "3zpm" ] || [ $pdb_id = "7acs" ] ; then
+   continue
+  fi
 
   if [ ! -e $lock_file ] && [ ! -e $rdf_vrpt_file ] && [ ! -e $div_dir/`basename $rdf_vrpt_file`.gz ] ; then
 
