@@ -67,13 +67,13 @@ do
   rdf_file=$WORK_DIR/$pdb_id.rdf
   div_dir=$WORK_DIR/${pdb_id:1:2}
   err_file=$WORK_DIR/transl_to_rdf_pdb_$pdb_id.err
+  pdbml_file=${pdbml_gz_file%.*} # remove the last '.gz'
   lock_file=$WORK_DIR/$pdb_id.lock
 
-  if [ ! -e $lock_file ] && ( ( [ ! -e $rdf_file ] && [ ! -e $div_dir/`basename $rdf_file`.gz  ] ) || [ -e $err_file ] ) ; then
+  if [ ! -e $lock_file ] && [ ! -e $pdbml_file ] && ( ( [ ! -e $rdf_file ] && [ ! -e $div_dir/`basename $rdf_file`.gz  ] ) || [ -e $err_file ] ) ; then
 
    touch $lock_file
 
-   pdbml_file=${pdbml_gz_file%.*} # remove the last '.gz'
    gunzip -c $pdbml_gz_file > $pdbml_file || exit 1
 
    #has_glycan=`java -jar $SAXON -s:$pdbml_file -xsl:$PDBML2WURCS_XSL`
@@ -132,28 +132,16 @@ do
   rdf_file=$WORK_DIR/$pdb_id.rdf
   div_dir=$WORK_DIR/${pdb_id:1:2}
   err_file=$WORK_DIR/transl_to_rdf_pdb_$pdb_id.err
+  pdbml_file=${pdbml_gz_file%.*} # remove the last '.gz'
   lock_file=$WORK_DIR/$pdb_id.lock
 
-  if [ ! -e $lock_file ] && [ ! -e $rdf_file ] && [ ! -e $div_dir/`basename $rdf_file`.gz  ] ; then
+  if [ ! -e $lock_file ] && [ ! -e $pdbml_file ] && [ ! -e $rdf_file ] && [ ! -e $div_dir/`basename $rdf_file`.gz  ] ; then
 
    touch $lock_file
 
-   pdbml_file=${pdbml_gz_file%.*} # remove the last '.gz'
    gunzip -c $pdbml_gz_file > $pdbml_file || exit 1
 
    #has_glycan=`java -jar $SAXON -s:$pdbml_file -xsl:$PDBML2WURCS_XSL`
-   #has_glycan=`xsltproc $PDBML2WURCS_XSL $pdbml_file`
-   #grep WURCS $pdbml_file > /dev/null
-   #has_glycan=$?
-
-   #if [ -z "$has_glycan" ] ; then
-    xsltproc -o $rdf_file --stringparam wurcs2glytoucan $WURCS_CATALOG_XML --stringparam primitive_type_mapping $_PDBX_PRIMITIVE_TYPE_MAPPING_XML $PDBML2RDF_XSL $pdbml_file 2> $err_file && rm -f $err_file $pdbml_file || ( rm -f $pdbml_file $rdf_file ; cat $err_file ; exit 1 )
-   #else
-   # java -jar $SAXON -s:$pdbml_file -xsl:$PDBML2RDF_XSL -o:$rdf_file wurcs2glytoucan=$WURCS_CATALOG_XML primitive_type_mapping=$_PDBX_PRIMITIVE_TYPE_MAPPING_XML 2> $err_file && rm -f $err_file $pdbml_file || ( rm -f $pdbml_file $rdf_file ; cat $err_file ; exit 1 )
-   #fi
-
-   if [ $has_rapper_command != "false" ] ; then
-    rapper -q -c $rdf_file 2> $err_file && rm -f $err_file || ( cat $err_file ; exit 1 )
    fi
 
    mk_div_dir $div_dir

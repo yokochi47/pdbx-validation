@@ -67,6 +67,7 @@ do
   rdf_vrpt_file=$WORK_DIR/$pdb_id-validation-alt.rdf
   div_dir=$WORK_DIR/${pdb_id:1:2}
   err_file=$WORK_DIR/transl_to_rdf_vrpt_alt_$pdb_id.err
+  pdbml_vrpt_file=${pdbml_vrpt_gz_file%.*} # remove the last '.gz'
   lock_file=$WORK_DIR/$pdb_id.lock
 
   # DAOTHER-8442
@@ -74,11 +75,10 @@ do
    continue
   fi
 
-  if [ ! -e $lock_file ] && ( ( [ ! -e $rdf_vrpt_file ] && [ ! -e $div_dir/`basename $rdf_vrpt_file`.gz ] ) || [ -e $err_file ] ) ; then
+  if [ ! -e $lock_file ] && [ ! -e $pdbml_vrpt_file ] && ( ( [ ! -e $rdf_vrpt_file ] && [ ! -e $div_dir/`basename $rdf_vrpt_file`.gz ] ) || [ -e $err_file ] ) ; then
 
    touch $lock_file
 
-   pdbml_vrpt_file=${pdbml_vrpt_gz_file%.*} # remove the last '.gz'
    gunzip -c $pdbml_vrpt_gz_file > $pdbml_vrpt_file || exit 1
 
    xsltproc -o $rdf_vrpt_file --stringparam wurcs2glytoucan $WURCS_CATALOG_XML --stringparam primitive_type_mapping $_VRPTX_PRIMITIVE_TYPE_MAPPING_XML $VRPTML2RDF_XSL $pdbml_vrpt_file 2> $err_file && rm -f $err_file $pdbml_vrpt_file || ( rm -f $pdbml_vrpt_file $rdf_vrpt_file ; cat $err_file ; exit 1 )
@@ -129,6 +129,7 @@ do
   rdf_vrpt_file=$WORK_DIR/$pdb_id-validation-alt.rdf
   div_dir=$WORK_DIR/${pdb_id:1:2}
   err_file=$WORK_DIR/transl_to_rdf_vrpt_alt_$pdb_id.err
+  pdbml_vrpt_file=${pdbml_vrpt_gz_file%.*} # remove the last '.gz'
   lock_file=$WORK_DIR/$pdb_id.lock
 
   # DAOTHER-8442
@@ -136,11 +137,10 @@ do
    continue
   fi
 
-  if [ ! -e $lock_file ] && [ ! -e $rdf_vrpt_file ] && [ ! -e $div_dir/`basename $rdf_vrpt_file`.gz ] ; then
+  if [ ! -e $lock_file ] && [ ! -e $pdbml_vrpt_file ] && [ ! -e $rdf_vrpt_file ] && [ ! -e $div_dir/`basename $rdf_vrpt_file`.gz ] ; then
 
    touch $lock_file
 
-   pdbml_vrpt_file=${pdbml_vrpt_gz_file%.*} # remove the last '.gz'
    gunzip -c $pdbml_vrpt_gz_file > $pdbml_vrpt_file || exit 1
 
    xsltproc -o $rdf_vrpt_file --stringparam wurcs2glytoucan $WURCS_CATALOG_XML --stringparam primitive_type_mapping $_VRPTX_PRIMITIVE_TYPE_MAPPING_XML $VRPTML2RDF_XSL $pdbml_vrpt_file 2> $err_file && rm -f $err_file $pdbml_vrpt_file || ( rm -f $pdbml_vrpt_file $rdf_vrpt_file ; cat $err_file ; exit 1 )

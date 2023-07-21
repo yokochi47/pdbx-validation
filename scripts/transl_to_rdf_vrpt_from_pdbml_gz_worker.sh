@@ -74,7 +74,7 @@ do
    continue
   fi
 
-  if [ ! -e $lock_file ] && ( ( [ ! -e $rdf_vrpt_file ] && [ ! -e $div_dir/`basename $rdf_vrpt_file`.gz ] ) || [ -e $err_file ] ) ; then
+  if [ ! -e $lock_file ] && [ ! -e $pdbml_vrpt_file ] && ( ( [ ! -e $rdf_vrpt_file ] && [ ! -e $div_dir/`basename $rdf_vrpt_file`.gz ] ) || [ -e $err_file ] ) ; then
 
    touch $lock_file
 

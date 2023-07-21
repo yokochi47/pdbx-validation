@@ -63,7 +63,7 @@ if [ $err != 0 ] || [ $total != $last ] ; then
  #find $PDBML_NOATOM -maxdepth 2 -name '*-noatom.xml.gz' > $pdbml_file_list
  find $PDBML_NOATOM_SIFTS -maxdepth 2 -name '*-noatom-sifts.xml.gz' > $pdbml_file_list
 
- rm -f $RDF/*.lock
+ rm -f $RDF/*.lock $PDBML_NOATOM_SIFTS/*/*.xml
  cat $pdbml_file_list | sort -R > $pdbml_file_list~
 
  for proc_id in `seq 1 $MAXPROCS` ; do

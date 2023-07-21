@@ -55,7 +55,7 @@ if [ $err != 0 ] || [ $total != $last ] ; then
 # find $VALID_INFO_ALT -maxdepth 1 -name '*.xml' > $pdbml_file_list
  find $XML_VALID_ALT -maxdepth 2 -name '*.xml.gz' > $pdbml_file_list
 
- rm -f $RDF_VALID_ALT/*.lock
+ rm -f $RDF_VALID_ALT/*.lock $XML_VALID_ALT/*/*.xml
  cat $pdbml_file_list | sort -R > $pdbml_file_list~
 
  for proc_id in `seq 1 $MAXPROCS` ; do

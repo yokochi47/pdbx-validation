@@ -66,14 +66,14 @@ do
   pdb_id=`basename $pdbml_vrpt_gz_file -validation-alt.xml.gz`
   mmcif_vrpt_file=$pdb_id-validation-alt.cif
   div_dir=$WORK_DIR/${pdb_id:1:2}
+  pdbml_vrpt_file=${pdbml_vrpt_gz_file%.*} # remove the last '.gz'
+  pdbml_vrpt_base=`basename $pdbml_vrpt_file`
   lock_file=$WORK_DIR/$pdb_id.lock
 
-  if [ ! -e $lock_file ] && [ ! -e $WORK_DIR/$mmcif_vrpt_file ] && [ ! -e $div_dir/`basename $mmcif_vrpt_file`.gz ] ; then
+  if [ ! -e $lock_file ] && [ ! -e $WORK_DIR/$pdbml_vrpt_base ] && [ ! -e $WORK_DIR/$mmcif_vrpt_file ] && [ ! -e $div_dir/`basename $mmcif_vrpt_file`.gz ] ; then
 
    touch $lock_file
 
-   pdbml_vrpt_file=${pdbml_vrpt_gz_file%.*} # remove the last '.gz'
-   pdbml_vrpt_base=`basename $pdbml_vrpt_file`
    gunzip -c $pdbml_vrpt_gz_file > $WORK_DIR/$pdbml_vrpt_base || exit 1
 
    ( cd $WORK_DIR ; xml2mmcif -xml $pdbml_vrpt_base -dict $pdbx_validation_dic -df $pdbx_validation_odb > /dev/null && rm -f $pdbml_vrpt_base && mv -f $pdbml_vrpt_base.cif $mmcif_vrpt_file && sed -i -e "s/\._\([0-9]\)\(\S*\) /\.\1\2  /" $mmcif_vrpt_file )
@@ -118,14 +118,14 @@ do
   pdb_id=`basename $pdbml_vrpt_gz_file -validation-alt.xml.gz`
   mmcif_vrpt_file=$pdb_id-validation-alt.cif
   div_dir=$WORK_DIR/${pdb_id:1:2}
+  pdbml_vrpt_file=${pdbml_vrpt_gz_file%.*} # remove the last '.gz'
+  pdbml_vrpt_base=`basename $pdbml_vrpt_file`
   lock_file=$WORK_DIR/$pdb_id.lock
 
-  if [ ! -e $lock_file ] && [ ! -e $WORK_DIR/$mmcif_vrpt_file ] && [ ! -e $div_dir/`basename $mmcif_vrpt_file`.gz ] ; then
+  if [ ! -e $lock_file ] && [ ! -e $WORK_DIR/$pdbml_vrpt_base ] && [ ! -e $WORK_DIR/$mmcif_vrpt_file ] && [ ! -e $div_dir/`basename $mmcif_vrpt_file`.gz ] ; then
 
    touch $lock_file
 
-   pdbml_vrpt_file=${pdbml_vrpt_gz_file%.*} # remove the last '.gz'
-   pdbml_vrpt_base=`basename $pdbml_vrpt_file`
    gunzip -c $pdbml_vrpt_gz_file > $WORK_DIR/$pdbml_vrpt_base || exit 1
 
    ( cd $WORK_DIR ; xml2mmcif -xml $pdbml_vrpt_base -dict $pdbx_validation_dic -df $pdbx_validation_odb > /dev/null && rm -f $pdbml_vrpt_base && mv -f $pdbml_vrpt_base.cif $mmcif_vrpt_file && sed -i -e "s/\._\([0-9]\)\(\S*\) /\.\1\2  /" $mmcif_vrpt_file )

@@ -44,7 +44,7 @@ if [ $total != $last ] ; then
 
  find $XML_VALID -maxdepth 1 -name '*.xml' > $pdbml_file_list
 
- rm -f $MMCIF_VALID/*.lock
+ rm -f $MMCIF_VALID/*.lock $MMCIF_VALID/*.cif
  cat $pdbml_file_list | sort -R > $pdbml_file_list~
 
  for proc_id in `seq 1 $MAXPROCS` ; do

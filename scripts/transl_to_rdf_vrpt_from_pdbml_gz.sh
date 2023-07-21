@@ -53,7 +53,7 @@ if [ $err != 0 ] || [ $total != $last ] ; then
 
  find $XML_VALID -mindepth 2 -name '*.xml.gz' > $pdbml_file_list
 
- rm -f $RDF_VALID/*.lock
+ rm -f $RDF_VALID/*.lock $XML_VALID/*/*.xml
  cat $pdbml_file_list | sort -R > $pdbml_file_list~
 
  for proc_id in `seq 1 $MAXPROCS` ; do

@@ -44,7 +44,7 @@ if [ $total != $last ] ; then
 
  find $XML_VALID -mindepth 2 -name '*.xml.gz' > $pdbml_file_list
 
- rm -f $MMCIF_VALID/*.lock
+ rm -f $MMCIF_VALID/*.lock $MMCIF_VALID/*.xml
  cat $pdbml_file_list | sort -R > $pdbml_file_list~
 
 
