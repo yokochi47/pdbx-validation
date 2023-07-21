@@ -142,7 +142,7 @@ do
    continue
   fi
 
-  if [ ! -e $lock_file ] && [ ! -e $rdf_vrpt_file ] && [ ! -e $div_dir/`basename $rdf_vrpt_file`.gz ] ; then
+  if [ ! -e $lock_file ] && [ ! -e $pdbml_vrpt_file ] && [ ! -e $rdf_vrpt_file ] && [ ! -e $div_dir/`basename $rdf_vrpt_file`.gz ] ; then
 
    touch $lock_file
 

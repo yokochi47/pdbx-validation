@@ -118,7 +118,7 @@ do
   div_dir=$WORK_DIR/${pdb_id:1:2}
   lock_file=$WORK_DIR/$pdb_id.lock
 
-  if [ ! -e $lock_file ] && [ ! -e $WORK_DIR/$mmcif_vrpt_file ] && [ ! -e $div_dir/`basename $mmcif_vrpt_file`.gz ] ; then
+  if [ ! -e $lock_file ] && [ ! -e $pdbml_vrpt_base ] && [ ! -e $WORK_DIR/$mmcif_vrpt_file ] && [ ! -e $div_dir/`basename $mmcif_vrpt_file`.gz ] ; then
 
    touch $lock_file
 
