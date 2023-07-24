@@ -44,8 +44,8 @@
 --
 
 --
--- PDBML Schema v5.373
--- PDBML Schema translated from the PDBx/mmCIF Dictionary v5.373: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
+-- PDBML Schema v5.374
+-- PDBML Schema translated from the PDBx/mmCIF Dictionary v5.374: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
 -- URI-reference = http://pdbml.pdb.org/schema/pdbx-v50.xsd
 --
 
@@ -5352,7 +5352,7 @@ CREATE TYPE ENUM_em_imaging_cryogen AS ENUM ( 'NITROGEN', 'HELIUM' );
 DROP TYPE IF EXISTS ENUM_em_imaging_illumination_mode CASCADE;
 CREATE TYPE ENUM_em_imaging_illumination_mode AS ENUM ( 'FLOOD BEAM', 'SPOT SCAN', 'OTHER' );
 DROP TYPE IF EXISTS ENUM_em_imaging_microscope_model CASCADE;
-CREATE TYPE ENUM_em_imaging_microscope_model AS ENUM ( 'FEI MORGAGNI', 'FEI POLARA 300', 'FEI TALOS ARCTICA', 'FEI TECNAI 10', 'FEI TECNAI 12', 'FEI TECNAI 20', 'FEI TECNAI F20', 'FEI TECNAI F30', 'FEI TECNAI ARCTICA', 'FEI TECNAI SPHERA', 'FEI TECNAI SPIRIT', 'FEI TITAN', 'FEI TITAN KRIOS', 'FEI/PHILIPS CM10', 'FEI/PHILIPS CM12', 'FEI/PHILIPS CM120T', 'FEI/PHILIPS CM200FEG', 'FEI/PHILIPS CM200FEG/SOPHIE', 'FEI/PHILIPS CM200FEG/ST', 'FEI/PHILIPS CM200FEG/UT', 'FEI/PHILIPS CM200T', 'FEI/PHILIPS CM300FEG/HE', 'FEI/PHILIPS CM300FEG/ST', 'FEI/PHILIPS CM300FEG/T', 'FEI/PHILIPS EM400', 'FEI/PHILIPS EM420', 'HITACHI EF2000', 'HITACHI EF3000', 'HITACHI H7600', 'HITACHI HF2000', 'HITACHI HF3000', 'HITACHI H3000 UHVEM', 'HITACHI H-9500SD', 'JEOL 100B', 'JEOL 100CX', 'JEOL 1000EES', 'JEOL 1010', 'JEOL 1200', 'JEOL 1200EX', 'JEOL 1200EXII', 'JEOL 1230', 'JEOL 1400', 'JEOL 2000EX', 'JEOL 2000EXII', 'JEOL 2010', 'JEOL 2010F', 'JEOL 2010HT', 'JEOL 2010HC', 'JEOL 2010UHR', 'JEOL 2011', 'JEOL 2100', 'JEOL 2100F', 'JEOL 2200FS', 'JEOL 2200FSC', 'JEOL 3000SFF', 'JEOL 3100FEF', 'JEOL 3100FFC', 'JEOL 3200FS', 'JEOL 3200FSC', 'JEOL KYOTO-3000SFF', 'JEOL 4000', 'JEOL 4000EX', 'JEOL CRYO ARM 200', 'JEOL CRYO ARM 300', 'SIEMENS SULEIKA', 'TFS GLACIOS', 'TFS KRIOS', 'TFS TALOS', 'TFS TALOS F200C', 'TFS TALOS L120C', 'TFS TUNDRA', 'ZEISS LEO912', 'ZEISS LIBRA120PLUS' );
+CREATE TYPE ENUM_em_imaging_microscope_model AS ENUM ( 'FEI MORGAGNI', 'FEI POLARA 300', 'FEI TALOS ARCTICA', 'FEI TECNAI 10', 'FEI TECNAI 12', 'FEI TECNAI 20', 'FEI TECNAI F20', 'FEI TECNAI F30', 'FEI TECNAI ARCTICA', 'FEI TECNAI SPHERA', 'FEI TECNAI SPIRIT', 'FEI TITAN', 'FEI TITAN KRIOS', 'FEI/PHILIPS CM10', 'FEI/PHILIPS CM12', 'FEI/PHILIPS CM120T', 'FEI/PHILIPS CM200FEG', 'FEI/PHILIPS CM200FEG/SOPHIE', 'FEI/PHILIPS CM200FEG/ST', 'FEI/PHILIPS CM200FEG/UT', 'FEI/PHILIPS CM200T', 'FEI/PHILIPS CM300FEG/HE', 'FEI/PHILIPS CM300FEG/ST', 'FEI/PHILIPS CM300FEG/T', 'FEI/PHILIPS EM400', 'FEI/PHILIPS EM420', 'HITACHI EF2000', 'HITACHI EF3000', 'HITACHI H7600', 'HITACHI HF2000', 'HITACHI HF3000', 'HITACHI H3000 UHVEM', 'HITACHI H-9500SD', 'JEOL 100B', 'JEOL 100CX', 'JEOL 1000EES', 'JEOL 1010', 'JEOL 1200', 'JEOL 1200EX', 'JEOL 1200EXII', 'JEOL 1230', 'JEOL 1400', 'JEOL 1400/HR + YPS FEG', 'JEOL 2000EX', 'JEOL 2000EXII', 'JEOL 2010', 'JEOL 2010F', 'JEOL 2010HT', 'JEOL 2010HC', 'JEOL 2010UHR', 'JEOL 2011', 'JEOL 2100', 'JEOL 2100F', 'JEOL 2200FS', 'JEOL 2200FSC', 'JEOL 3000SFF', 'JEOL 3100FEF', 'JEOL 3100FFC', 'JEOL 3200FS', 'JEOL 3200FSC', 'JEOL KYOTO-3000SFF', 'JEOL 4000', 'JEOL 4000EX', 'JEOL CRYO ARM 200', 'JEOL CRYO ARM 300', 'SIEMENS SULEIKA', 'TFS GLACIOS', 'TFS KRIOS', 'TFS TALOS', 'TFS TALOS F200C', 'TFS TALOS L120C', 'TFS TUNDRA', 'ZEISS LEO912', 'ZEISS LIBRA120PLUS' );
 DROP TYPE IF EXISTS ENUM_em_imaging_mode CASCADE;
 CREATE TYPE ENUM_em_imaging_mode AS ENUM ( 'BRIGHT FIELD', 'DARK FIELD', 'DIFFRACTION', 'OTHER' );
 DROP TYPE IF EXISTS ENUM_em_imaging_specimen_holder_model CASCADE;
@@ -7425,7 +7425,7 @@ CREATE TABLE pdbx_chem_comp_atom_related (
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_chem_comp_audit_action_type CASCADE;
-CREATE TYPE ENUM_pdbx_chem_comp_audit_action_type AS ENUM ( 'Create component', 'Modify name', 'Modify formula', 'Modify synonyms', 'Modify linking type', 'Modify internal type', 'Modify parent residue', 'Modify processing site', 'Modify subcomponent list', 'Modify one letter code', 'Modify model coordinates code', 'Modify formal charge', 'Modify atom id', 'Modify charge', 'Modify aromatic_flag', 'Modify leaving atom flag', 'Modify component atom id', 'Modify component comp_id', 'Modify value order', 'Modify descriptor', 'Modify identifier', 'Modify coordinates', 'Other modification', 'Obsolete component', 'Initial release' );
+CREATE TYPE ENUM_pdbx_chem_comp_audit_action_type AS ENUM ( 'Create component', 'Modify name', 'Modify formula', 'Modify synonyms', 'Modify linking type', 'Modify internal type', 'Modify parent residue', 'Modify processing site', 'Modify subcomponent list', 'Modify one letter code', 'Modify model coordinates code', 'Modify formal charge', 'Modify atom id', 'Modify charge', 'Modify aromatic_flag', 'Modify leaving atom flag', 'Modify component atom id', 'Modify component comp_id', 'Modify value order', 'Modify descriptor', 'Modify identifier', 'Modify coordinates', 'Modify backbone', 'Other modification', 'Obsolete component', 'Initial release' );
 CREATE TABLE pdbx_chem_comp_audit (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
@@ -8332,7 +8332,7 @@ CREATE TABLE pdbx_database_proc (
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_database_related_content_type CASCADE;
-CREATE TYPE ENUM_pdbx_database_related_content_type AS ENUM ( 'minimized average structure', 'representative structure', 'ensemble', 'derivative structure', 'native structure', 'associated EM volume', 'other EM volume', 'associated NMR restraints', 'associated structure factors', 'associated SAS data', 'protein target sequence and/or protocol data', 'split', 're-refinement', 'complete structure', 'unspecified', 'other' );
+CREATE TYPE ENUM_pdbx_database_related_content_type AS ENUM ( 'minimized average structure', 'representative structure', 'ensemble', 'derivative structure', 'native structure', 'associated EM volume', 'other EM volume', 'focused EM volume', 'consensus EM volume', 'associated NMR restraints', 'associated structure factors', 'associated SAS data', 'protein target sequence and/or protocol data', 'split', 're-refinement', 'complete structure', 'unspecified', 'other' );
 CREATE TABLE pdbx_database_related (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,

@@ -1,10 +1,10 @@
 ###########################################################################
 #
 # File:  mmcif_pdbx_validation-v4.dic
-# Date:  Wed Jul  5 13:25:08 JST 2023
+# Date:  Mon Jul 24 17:59:24 JST 2023
 #
 # Created from:
-#        mmcif_pdbx_v50.dic   - PDB Exchange Data Dictionary (V5.373)
+#        mmcif_pdbx_v50.dic   - PDB Exchange Data Dictionary (V5.374)
 #        http://wwpdb.org/validation/schema/wwpdb_validation_v6.02.xsd
 #         - a XML schema for wwPDB validation reports, v6.02, rev. 2023-02-06
 #
@@ -31,7 +31,7 @@ data_mmcif_pdbx_validation.dic
 
     _dictionary.title           mmcif_pdbx_validation.dic
     _dictionary.datablock_id    mmcif_pdbx_validation.dic
-    _dictionary.version         4.373
+    _dictionary.version         4.374
 #
     loop_
     _dictionary_history.version
@@ -1180,6 +1180,15 @@ data_mmcif_pdbx_validation.dic
         _pdbx_nmr_dihedral_angle_violation_model.maximum_violation
         _pdbx_nmr_dihedral_angle_violation_model.averagem_violation
         _pdbx_nmr_dihedral_angle_violation_model.medianm_violation
+;
+  4.374   2023-07-24
+;
+>     + Add "JEOL 1400/HR + YPS FEG" to _em_imaginh.microscope_model enumeration # merged
+>     + Add "DECTRIS SINGLA (1k x 1k)" to _em_image_recording.film_or_detector_model enumeration # merged
+>     + Extend _pdbx_audit_support.funding_organization enumeration # not mapped
+>     + Add 'consensus EM volume' and 'focused EM volume' to pdbx_database_related.content_type # merged
+>     + Add 'Modify backbone' to _pdbx_chem_comp_audit.action_type enumeration # not mapped
+>     + Add Servalcat to _em_softare.name, and _software.name enumerations # merged
 ;
 
 
@@ -25042,7 +25051,7 @@ SASBDB - Small Angle Scattering Biological Data Bank
     _pdbx_item_enumeration.detail
       "_pdbx_database_related.db_name"  BMCD         'associated structure factors'
       "_pdbx_database_related.db_name"  BMRB         'associated NMR restraints,unspecified'
-      "_pdbx_database_related.db_name"  EMDB         'associated EM volume,other EM volume'
+      "_pdbx_database_related.db_name"  EMDB         'associated EM volume,other EM volume,focused EM volume,consensus EM volume'
       "_pdbx_database_related.db_name"  NDB          unspecified
       "_pdbx_database_related.db_name"  PDB          're-refinement,unspecified,derivative structure,complete structure,split,ensemble,minimized average structure,native structure,representative structure,split'
       "_pdbx_database_related.db_name"  PDB-Dev      unspecified
@@ -25126,6 +25135,8 @@ save__pdbx_database_related.content_type
                                  'native structure'
                                  'associated EM volume'
                                  'other EM volume'
+                                 'focused EM volume'
+                                 'consensus EM volume'
                                  'associated NMR restraints'
                                  'associated structure factors'
                                  'associated SAS data'
@@ -50750,6 +50761,7 @@ save__em_imaging.microscope_model
   '_em_imaging.microscope_model'  "JEOL 1200EXII"    .
   '_em_imaging.microscope_model'  "JEOL 1230"    .
   '_em_imaging.microscope_model'  "JEOL 1400"    .
+  '_em_imaging.microscope_model'  "JEOL 1400/HR + YPS FEG"    .
   '_em_imaging.microscope_model'  "JEOL 2000EX"    .
   '_em_imaging.microscope_model'  "JEOL 2000EXII"    .
   '_em_imaging.microscope_model'  "JEOL 2010"    .
@@ -54536,6 +54548,7 @@ save__em_image_recording.film_or_detector_model
   '_em_image_recording.film_or_detector_model'    "KODAK SO-163 FILM"   .
   '_em_image_recording.film_or_detector_model'    "GENERIC FILM"   .
   '_em_image_recording.film_or_detector_model'    "GENERIC IMAGE PLATES"   .
+  '_em_image_recording.film_or_detector_model'    "DECTRIS SINGLA (1k x 1k)"    .
   '_em_image_recording.film_or_detector_model'    "DIRECT ELECTRON APOLLO (4k x 4k)"  .
   '_em_image_recording.film_or_detector_model'    "DIRECT ELECTRON DE-10 (5k x 4k)"   .
   '_em_image_recording.film_or_detector_model'    "DIRECT ELECTRON DE-12 (4k x 3k)"   .
@@ -55077,7 +55090,7 @@ save__em_software.name
         '_em_software.name'  PHENIX                             .
         '_em_software.name'  POINTLESS                          .
         '_em_software.name'  PowerFit                           .
-        '_em_software.name'  PRIISM/IVE                 .
+        '_em_software.name'  PRIISM/IVE                         .
         '_em_software.name'  PRIME                              .
         '_em_software.name'  PROTOMO                            .
         '_em_software.name'  PyMOL                              .
@@ -55095,6 +55108,7 @@ save__em_software.name
         '_em_software.name'  Scipion                            .
         '_em_software.name'  Sculptor                           .
         '_em_software.name'  SerialEM                           .
+        '_em_software.name'  Servalcat                          .
         '_em_software.name'  SHELXD                             .
         '_em_software.name'  Signature                          .
         '_em_software.name'  SIMPLE                             .
