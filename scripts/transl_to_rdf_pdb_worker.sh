@@ -142,7 +142,6 @@ do
    gunzip -c $pdbml_gz_file > $pdbml_file || exit 1
 
    #has_glycan=`java -jar $SAXON -s:$pdbml_file -xsl:$PDBML2WURCS_XSL`
-   fi
 
    mk_div_dir $div_dir
 
