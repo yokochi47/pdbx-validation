@@ -115,7 +115,7 @@
 	<xsl:attribute name="rdf:datatype"><xsl:value-of select="$data_type"/></xsl:attribute>
       </xsl:if>
       <xsl:choose>
-	<xsl:when test="contains(local-name(),'pdbx_seq_one_letter_code')">
+	<xsl:when test="contains(local-name(),'one_letter_code')">
 	  <xsl:choose>
 	    <xsl:when test=".='?' or .='.'"/>
 	    <xsl:otherwise>

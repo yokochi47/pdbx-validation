@@ -136,7 +136,7 @@
 	&lt;xsl:attribute name="rdf:datatype"&gt;&lt;xsl:value-of select="$data_type"/&gt;&lt;/xsl:attribute&gt;
       &lt;/xsl:if&gt;
       &lt;xsl:choose&gt;
-	&lt;xsl:when test="contains(local-name(),'pdbx_seq_one_letter_code')"&gt;
+	&lt;xsl:when test="contains(local-name(),'one_letter_code')"&gt;
 	  &lt;xsl:choose&gt;
 	    &lt;xsl:when test=".='?' or .='.'"/&gt;
 	    &lt;xsl:otherwise&gt;
