@@ -1,10 +1,10 @@
 ###########################################################################
 #
 # File:  mmcif_pdbx_validation-v4.dic
-# Date:  Mon Jul 24 17:59:24 JST 2023
+# Date:  Tue Jul 25 13:16:26 JST 2023
 #
 # Created from:
-#        mmcif_pdbx_v50.dic   - PDB Exchange Data Dictionary (V5.374)
+#        mmcif_pdbx_v50.dic   - PDB Exchange Data Dictionary (V5.375)
 #        http://wwpdb.org/validation/schema/wwpdb_validation_v6.02.xsd
 #         - a XML schema for wwPDB validation reports, v6.02, rev. 2023-02-06
 #
@@ -31,7 +31,7 @@ data_mmcif_pdbx_validation.dic
 
     _dictionary.title           mmcif_pdbx_validation.dic
     _dictionary.datablock_id    mmcif_pdbx_validation.dic
-    _dictionary.version         4.374
+    _dictionary.version         4.375
 #
     loop_
     _dictionary_history.version
@@ -1189,6 +1189,15 @@ data_mmcif_pdbx_validation.dic
 >     + Add 'consensus EM volume' and 'focused EM volume' to pdbx_database_related.content_type # merged
 >     + Add 'Modify backbone' to _pdbx_chem_comp_audit.action_type enumeration # not mapped
 >     + Add Servalcat to _em_softare.name, and _software.name enumerations # merged
+;
+  4.375   2023-07-25
+;
+>     + Add _em_3d_fitting_list.initial_refinement_model_id # merged without link to _pdbx_initial_refinement_model.id
+>     + Add "PSI JUNGFRAU 8M" to _diffrn_detector.type enumeration
+>     + Add autoPX to _software.name enumeration
+>     + Add "SSRF BEAMLINE BL03HB" and "SSRF BEAMLINE BL17UM" to
+>       _diffrn_source.type
+>     + Extend _pdbx_audit_support.funding_organization enumeration # not mapped
 ;
 
 
@@ -2455,6 +2464,7 @@ save__diffrn_detector.type
       "_diffrn_detector.type"  "PRINCETON 2K"                    .
       "_diffrn_detector.type"  "PSI JUNGFRAU 1M"                 PIXEL
       "_diffrn_detector.type"  "PSI JUNGFRAU 4M"                 PIXEL
+      "_diffrn_detector.type"  "PSI JUNGFRAU 8M"                 PIXEL
       "_diffrn_detector.type"  "PSI JUNGFRAU 16M"                PIXEL
       "_diffrn_detector.type"  "PSI PILATUS 6M"                  PIXEL
       "_diffrn_detector.type"  "RAYONIX MX-225"                  CCD
@@ -4793,9 +4803,11 @@ save__diffrn_source.type
      "_diffrn_source.type"  "SRS BEAMLINE PX14.1"                            SYNCHROTRON
      "_diffrn_source.type"  "SRS BEAMLINE PX14.2"                            SYNCHROTRON
      "_diffrn_source.type"  "SSRF BEAMLINE BL02U1"                           SYNCHROTRON
+     "_diffrn_source.type"  "SSRF BEAMLINE BL03HB"                           SYNCHROTRON
      "_diffrn_source.type"  "SSRF BEAMLINE BL10U2"                           SYNCHROTRON
      "_diffrn_source.type"  "SSRF BEAMLINE BL17U"                            SYNCHROTRON
      "_diffrn_source.type"  "SSRF BEAMLINE BL17U1"                           SYNCHROTRON
+     "_diffrn_source.type"  "SSRF BEAMLINE BL17UM"                           SYNCHROTRON
      "_diffrn_source.type"  "SSRF BEAMLINE BL17B1"                           SYNCHROTRON
      "_diffrn_source.type"  "SSRF BEAMLINE BL18U1"                           SYNCHROTRON
      "_diffrn_source.type"  "SSRF BEAMLINE BL19U1"                           SYNCHROTRON
@@ -25530,6 +25542,7 @@ save__diffrn_source.pdbx_synchrotron_beamline
      "_diffrn_source.pdbx_synchrotron_beamline"  BioMAX          .
      "_diffrn_source.pdbx_synchrotron_beamline"  BL02U1          .
      "_diffrn_source.pdbx_synchrotron_beamline"  BL03            .
+     "_diffrn_source.pdbx_synchrotron_beamline"  BL03HB          .
      "_diffrn_source.pdbx_synchrotron_beamline"  BL07            .
      "_diffrn_source.pdbx_synchrotron_beamline"  BL-03           .
      "_diffrn_source.pdbx_synchrotron_beamline"  BL10U2          .
@@ -25551,6 +25564,7 @@ save__diffrn_source.pdbx_synchrotron_beamline
      "_diffrn_source.pdbx_synchrotron_beamline"  BL17B2          .
      "_diffrn_source.pdbx_synchrotron_beamline"  BL17U           .
      "_diffrn_source.pdbx_synchrotron_beamline"  BL17U1          .
+     "_diffrn_source.pdbx_synchrotron_beamline"  BL17UM          .
      "_diffrn_source.pdbx_synchrotron_beamline"  BL18U           .
      "_diffrn_source.pdbx_synchrotron_beamline"  BL18U1          .
      "_diffrn_source.pdbx_synchrotron_beamline"  BL19U1          .
@@ -52134,6 +52148,23 @@ save__em_3d_fitting_list.accession_code
    _item.mandatory_code  no
    #
    _item_type.code  line
+   #
+save_
+
+save__em_3d_fitting_list.initial_refinement_model_id
+   _item_description.description
+;              The value of _em_3d_fitting.initial_refinement_model_id itentifies the id
+               in the _pdbx_initial_refinement_model
+;
+   #
+   _item.name            "_em_3d_fitting_list.initial_refinement_model_id"
+   _item.category_id     em_3d_fitting_list
+   _item.mandatory_code  no
+   #
+   _item_type.code  int
+   #
+   # _item_linked.child_name   "_em_3d_fitting_list.initial_refinement_model_id"
+   # _item_linked.parent_name  "_pdbx_initial_refinement_model.id"
    #
 save_
 

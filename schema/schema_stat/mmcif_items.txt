@@ -964,6 +964,7 @@ em_3d_fitting_list.chain_id
 em_3d_fitting_list.chain_residue_range
 em_3d_fitting_list.details
 em_3d_fitting_list.id
+em_3d_fitting_list.initial_refinement_model_id
 em_3d_fitting_list.pdb_chain_id
 em_3d_fitting_list.pdb_chain_residue_range
 em_3d_fitting_list.pdb_entry_id
