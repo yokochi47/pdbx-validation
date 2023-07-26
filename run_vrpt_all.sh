@@ -75,11 +75,13 @@ else
   ./scripts/merge_pdbml_nextgen.sh
  fi
 
+ ./scripts/validate_all_xml_gz_wo_subdir.sh -d $PDBML_EXT -r
+
  ./scripts/extract_pdbml.sh
  ext_pdbml_exit_code=$?
 
  if [ ! -z $VALID_OPT ] ; then
-  ./scripts/validate_all_xml_gz.sh -d $PDBML_EXT
+  ./scripts/validate_all_xml_gz_wo_subdir.sh -d $PDBML_EXT
  fi
 
 fi
