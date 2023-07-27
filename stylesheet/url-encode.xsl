@@ -74,6 +74,28 @@
     </xsl:if>
   </xsl:template>
 
+  <!-- Replace string with given inputs -->
+
+  <xsl:template name="replace-string">
+    <xsl:param name="str"/>
+    <xsl:param name="replace"/>
+    <xsl:param name="with"/>
+    <xsl:choose>
+      <xsl:when test="contains($str,$replace)">
+	<xsl:value-of select="substring-before($str,$replace)"/>
+	<xsl:value-of select="$with"/>
+	<xsl:call-template name="replace-string">
+	  <xsl:with-param name="str" select="substring-after($str,$replace)"/>
+	  <xsl:with-param name="replace" select="$replace"/>
+	  <xsl:with-param name="with" select="$with"/>
+	</xsl:call-template>
+      </xsl:when>
+      <xsl:otherwise>
+	<xsl:value-of select="$str"/>
+      </xsl:otherwise>
+    </xsl:choose>
+  </xsl:template>
+
   <!-- Tokenize the string by the substring -->
 
   <xsl:template name="tokenize">

@@ -33160,7 +33160,7 @@
             <VRPTo:pdbx_validate_rmsd_angle.auth_atom_id_1>NE</VRPTo:pdbx_validate_rmsd_angle.auth_atom_id_1>
             <VRPTo:pdbx_validate_rmsd_angle.auth_atom_id_2>CZ</VRPTo:pdbx_validate_rmsd_angle.auth_atom_id_2>
             <VRPTo:pdbx_validate_rmsd_angle.auth_atom_id_3>NH1</VRPTo:pdbx_validate_rmsd_angle.auth_atom_id_3>
-            <VRPTo:pdbx_validate_rmsd_angle.angle_deviation rdf:datatype="xsd:decimal">2.57</VRPTo:pdbx_validate_rmsd_angle.angle_deviation>
+            <VRPTo:pdbx_validate_rmsd_angle.angle_deviation rdf:datatype="xsd:decimal">2.568</VRPTo:pdbx_validate_rmsd_angle.angle_deviation>
             <VRPTo:pdbx_validate_rmsd_angle.angle_standard_deviation rdf:datatype="xsd:decimal">0.500</VRPTo:pdbx_validate_rmsd_angle.angle_standard_deviation>
             <VRPTo:pdbx_validate_rmsd_angle.angle_target_value rdf:datatype="xsd:decimal">120.300</VRPTo:pdbx_validate_rmsd_angle.angle_target_value>
             <VRPTo:pdbx_validate_rmsd_angle.angle_value rdf:datatype="xsd:decimal">122.868</VRPTo:pdbx_validate_rmsd_angle.angle_value>
@@ -33185,7 +33185,7 @@
             <VRPTo:pdbx_validate_rmsd_angle.auth_atom_id_1>NE</VRPTo:pdbx_validate_rmsd_angle.auth_atom_id_1>
             <VRPTo:pdbx_validate_rmsd_angle.auth_atom_id_2>CZ</VRPTo:pdbx_validate_rmsd_angle.auth_atom_id_2>
             <VRPTo:pdbx_validate_rmsd_angle.auth_atom_id_3>NH2</VRPTo:pdbx_validate_rmsd_angle.auth_atom_id_3>
-            <VRPTo:pdbx_validate_rmsd_angle.angle_deviation rdf:datatype="xsd:decimal">-2.85</VRPTo:pdbx_validate_rmsd_angle.angle_deviation>
+            <VRPTo:pdbx_validate_rmsd_angle.angle_deviation rdf:datatype="xsd:decimal">-2.848</VRPTo:pdbx_validate_rmsd_angle.angle_deviation>
             <VRPTo:pdbx_validate_rmsd_angle.angle_standard_deviation rdf:datatype="xsd:decimal">0.500</VRPTo:pdbx_validate_rmsd_angle.angle_standard_deviation>
             <VRPTo:pdbx_validate_rmsd_angle.angle_target_value rdf:datatype="xsd:decimal">120.300</VRPTo:pdbx_validate_rmsd_angle.angle_target_value>
             <VRPTo:pdbx_validate_rmsd_angle.angle_value rdf:datatype="xsd:decimal">117.452</VRPTo:pdbx_validate_rmsd_angle.angle_value>
@@ -33210,7 +33210,7 @@
             <VRPTo:pdbx_validate_rmsd_angle.auth_atom_id_1>O4'</VRPTo:pdbx_validate_rmsd_angle.auth_atom_id_1>
             <VRPTo:pdbx_validate_rmsd_angle.auth_atom_id_2>C1'</VRPTo:pdbx_validate_rmsd_angle.auth_atom_id_2>
             <VRPTo:pdbx_validate_rmsd_angle.auth_atom_id_3>N9</VRPTo:pdbx_validate_rmsd_angle.auth_atom_id_3>
-            <VRPTo:pdbx_validate_rmsd_angle.angle_deviation rdf:datatype="xsd:decimal">-3.77</VRPTo:pdbx_validate_rmsd_angle.angle_deviation>
+            <VRPTo:pdbx_validate_rmsd_angle.angle_deviation rdf:datatype="xsd:decimal">-3.769</VRPTo:pdbx_validate_rmsd_angle.angle_deviation>
             <VRPTo:pdbx_validate_rmsd_angle.angle_standard_deviation rdf:datatype="xsd:decimal">0.700</VRPTo:pdbx_validate_rmsd_angle.angle_standard_deviation>
             <VRPTo:pdbx_validate_rmsd_angle.angle_target_value rdf:datatype="xsd:decimal">108.000</VRPTo:pdbx_validate_rmsd_angle.angle_target_value>
             <VRPTo:pdbx_validate_rmsd_angle.angle_value rdf:datatype="xsd:decimal">104.231</VRPTo:pdbx_validate_rmsd_angle.angle_value>
@@ -33235,7 +33235,7 @@
             <VRPTo:pdbx_validate_rmsd_angle.auth_atom_id_1>O4'</VRPTo:pdbx_validate_rmsd_angle.auth_atom_id_1>
             <VRPTo:pdbx_validate_rmsd_angle.auth_atom_id_2>C1'</VRPTo:pdbx_validate_rmsd_angle.auth_atom_id_2>
             <VRPTo:pdbx_validate_rmsd_angle.auth_atom_id_3>N1</VRPTo:pdbx_validate_rmsd_angle.auth_atom_id_3>
-            <VRPTo:pdbx_validate_rmsd_angle.angle_deviation rdf:datatype="xsd:decimal">3.59</VRPTo:pdbx_validate_rmsd_angle.angle_deviation>
+            <VRPTo:pdbx_validate_rmsd_angle.angle_deviation rdf:datatype="xsd:decimal">3.588</VRPTo:pdbx_validate_rmsd_angle.angle_deviation>
             <VRPTo:pdbx_validate_rmsd_angle.angle_standard_deviation rdf:datatype="xsd:decimal">0.700</VRPTo:pdbx_validate_rmsd_angle.angle_standard_deviation>
             <VRPTo:pdbx_validate_rmsd_angle.angle_target_value rdf:datatype="xsd:decimal">108.000</VRPTo:pdbx_validate_rmsd_angle.angle_target_value>
             <VRPTo:pdbx_validate_rmsd_angle.angle_value rdf:datatype="xsd:decimal">111.588</VRPTo:pdbx_validate_rmsd_angle.angle_value>
@@ -33260,7 +33260,7 @@
             <VRPTo:pdbx_validate_rmsd_angle.auth_atom_id_1>O4'</VRPTo:pdbx_validate_rmsd_angle.auth_atom_id_1>
             <VRPTo:pdbx_validate_rmsd_angle.auth_atom_id_2>C1'</VRPTo:pdbx_validate_rmsd_angle.auth_atom_id_2>
             <VRPTo:pdbx_validate_rmsd_angle.auth_atom_id_3>N1</VRPTo:pdbx_validate_rmsd_angle.auth_atom_id_3>
-            <VRPTo:pdbx_validate_rmsd_angle.angle_deviation rdf:datatype="xsd:decimal">3.78</VRPTo:pdbx_validate_rmsd_angle.angle_deviation>
+            <VRPTo:pdbx_validate_rmsd_angle.angle_deviation rdf:datatype="xsd:decimal">3.779</VRPTo:pdbx_validate_rmsd_angle.angle_deviation>
             <VRPTo:pdbx_validate_rmsd_angle.angle_standard_deviation rdf:datatype="xsd:decimal">0.700</VRPTo:pdbx_validate_rmsd_angle.angle_standard_deviation>
             <VRPTo:pdbx_validate_rmsd_angle.angle_target_value rdf:datatype="xsd:decimal">108.000</VRPTo:pdbx_validate_rmsd_angle.angle_target_value>
             <VRPTo:pdbx_validate_rmsd_angle.angle_value rdf:datatype="xsd:decimal">111.779</VRPTo:pdbx_validate_rmsd_angle.angle_value>
@@ -33285,7 +33285,7 @@
             <VRPTo:pdbx_validate_rmsd_angle.auth_atom_id_1>O4'</VRPTo:pdbx_validate_rmsd_angle.auth_atom_id_1>
             <VRPTo:pdbx_validate_rmsd_angle.auth_atom_id_2>C1'</VRPTo:pdbx_validate_rmsd_angle.auth_atom_id_2>
             <VRPTo:pdbx_validate_rmsd_angle.auth_atom_id_3>N9</VRPTo:pdbx_validate_rmsd_angle.auth_atom_id_3>
-            <VRPTo:pdbx_validate_rmsd_angle.angle_deviation rdf:datatype="xsd:decimal">3.80</VRPTo:pdbx_validate_rmsd_angle.angle_deviation>
+            <VRPTo:pdbx_validate_rmsd_angle.angle_deviation rdf:datatype="xsd:decimal">3.798</VRPTo:pdbx_validate_rmsd_angle.angle_deviation>
             <VRPTo:pdbx_validate_rmsd_angle.angle_standard_deviation rdf:datatype="xsd:decimal">0.700</VRPTo:pdbx_validate_rmsd_angle.angle_standard_deviation>
             <VRPTo:pdbx_validate_rmsd_angle.angle_target_value rdf:datatype="xsd:decimal">108.000</VRPTo:pdbx_validate_rmsd_angle.angle_target_value>
             <VRPTo:pdbx_validate_rmsd_angle.angle_value rdf:datatype="xsd:decimal">111.798</VRPTo:pdbx_validate_rmsd_angle.angle_value>
@@ -33310,7 +33310,7 @@
             <VRPTo:pdbx_validate_rmsd_angle.auth_atom_id_1>O4'</VRPTo:pdbx_validate_rmsd_angle.auth_atom_id_1>
             <VRPTo:pdbx_validate_rmsd_angle.auth_atom_id_2>C1'</VRPTo:pdbx_validate_rmsd_angle.auth_atom_id_2>
             <VRPTo:pdbx_validate_rmsd_angle.auth_atom_id_3>N9</VRPTo:pdbx_validate_rmsd_angle.auth_atom_id_3>
-            <VRPTo:pdbx_validate_rmsd_angle.angle_deviation rdf:datatype="xsd:decimal">3.54</VRPTo:pdbx_validate_rmsd_angle.angle_deviation>
+            <VRPTo:pdbx_validate_rmsd_angle.angle_deviation rdf:datatype="xsd:decimal">3.544</VRPTo:pdbx_validate_rmsd_angle.angle_deviation>
             <VRPTo:pdbx_validate_rmsd_angle.angle_standard_deviation rdf:datatype="xsd:decimal">0.700</VRPTo:pdbx_validate_rmsd_angle.angle_standard_deviation>
             <VRPTo:pdbx_validate_rmsd_angle.angle_target_value rdf:datatype="xsd:decimal">108.000</VRPTo:pdbx_validate_rmsd_angle.angle_target_value>
             <VRPTo:pdbx_validate_rmsd_angle.angle_value rdf:datatype="xsd:decimal">111.544</VRPTo:pdbx_validate_rmsd_angle.angle_value>
@@ -33335,7 +33335,7 @@
             <VRPTo:pdbx_validate_rmsd_angle.auth_atom_id_1>O4'</VRPTo:pdbx_validate_rmsd_angle.auth_atom_id_1>
             <VRPTo:pdbx_validate_rmsd_angle.auth_atom_id_2>C1'</VRPTo:pdbx_validate_rmsd_angle.auth_atom_id_2>
             <VRPTo:pdbx_validate_rmsd_angle.auth_atom_id_3>N9</VRPTo:pdbx_validate_rmsd_angle.auth_atom_id_3>
-            <VRPTo:pdbx_validate_rmsd_angle.angle_deviation rdf:datatype="xsd:decimal">4.02</VRPTo:pdbx_validate_rmsd_angle.angle_deviation>
+            <VRPTo:pdbx_validate_rmsd_angle.angle_deviation rdf:datatype="xsd:decimal">4.016</VRPTo:pdbx_validate_rmsd_angle.angle_deviation>
             <VRPTo:pdbx_validate_rmsd_angle.angle_standard_deviation rdf:datatype="xsd:decimal">0.700</VRPTo:pdbx_validate_rmsd_angle.angle_standard_deviation>
             <VRPTo:pdbx_validate_rmsd_angle.angle_target_value rdf:datatype="xsd:decimal">108.000</VRPTo:pdbx_validate_rmsd_angle.angle_target_value>
             <VRPTo:pdbx_validate_rmsd_angle.angle_value rdf:datatype="xsd:decimal">112.016</VRPTo:pdbx_validate_rmsd_angle.angle_value>
@@ -33360,7 +33360,7 @@
             <VRPTo:pdbx_validate_rmsd_angle.auth_atom_id_1>O4'</VRPTo:pdbx_validate_rmsd_angle.auth_atom_id_1>
             <VRPTo:pdbx_validate_rmsd_angle.auth_atom_id_2>C1'</VRPTo:pdbx_validate_rmsd_angle.auth_atom_id_2>
             <VRPTo:pdbx_validate_rmsd_angle.auth_atom_id_3>N9</VRPTo:pdbx_validate_rmsd_angle.auth_atom_id_3>
-            <VRPTo:pdbx_validate_rmsd_angle.angle_deviation rdf:datatype="xsd:decimal">-4.07</VRPTo:pdbx_validate_rmsd_angle.angle_deviation>
+            <VRPTo:pdbx_validate_rmsd_angle.angle_deviation rdf:datatype="xsd:decimal">-4.066</VRPTo:pdbx_validate_rmsd_angle.angle_deviation>
             <VRPTo:pdbx_validate_rmsd_angle.angle_standard_deviation rdf:datatype="xsd:decimal">0.700</VRPTo:pdbx_validate_rmsd_angle.angle_standard_deviation>
             <VRPTo:pdbx_validate_rmsd_angle.angle_target_value rdf:datatype="xsd:decimal">108.000</VRPTo:pdbx_validate_rmsd_angle.angle_target_value>
             <VRPTo:pdbx_validate_rmsd_angle.angle_value rdf:datatype="xsd:decimal">103.934</VRPTo:pdbx_validate_rmsd_angle.angle_value>
@@ -33385,7 +33385,7 @@
             <VRPTo:pdbx_validate_rmsd_angle.auth_atom_id_1>O4'</VRPTo:pdbx_validate_rmsd_angle.auth_atom_id_1>
             <VRPTo:pdbx_validate_rmsd_angle.auth_atom_id_2>C1'</VRPTo:pdbx_validate_rmsd_angle.auth_atom_id_2>
             <VRPTo:pdbx_validate_rmsd_angle.auth_atom_id_3>N1</VRPTo:pdbx_validate_rmsd_angle.auth_atom_id_3>
-            <VRPTo:pdbx_validate_rmsd_angle.angle_deviation rdf:datatype="xsd:decimal">4.47</VRPTo:pdbx_validate_rmsd_angle.angle_deviation>
+            <VRPTo:pdbx_validate_rmsd_angle.angle_deviation rdf:datatype="xsd:decimal">4.470</VRPTo:pdbx_validate_rmsd_angle.angle_deviation>
             <VRPTo:pdbx_validate_rmsd_angle.angle_standard_deviation rdf:datatype="xsd:decimal">0.700</VRPTo:pdbx_validate_rmsd_angle.angle_standard_deviation>
             <VRPTo:pdbx_validate_rmsd_angle.angle_target_value rdf:datatype="xsd:decimal">108.000</VRPTo:pdbx_validate_rmsd_angle.angle_target_value>
             <VRPTo:pdbx_validate_rmsd_angle.angle_value rdf:datatype="xsd:decimal">112.470</VRPTo:pdbx_validate_rmsd_angle.angle_value>
@@ -33410,7 +33410,7 @@
             <VRPTo:pdbx_validate_rmsd_angle.auth_atom_id_1>O4'</VRPTo:pdbx_validate_rmsd_angle.auth_atom_id_1>
             <VRPTo:pdbx_validate_rmsd_angle.auth_atom_id_2>C1'</VRPTo:pdbx_validate_rmsd_angle.auth_atom_id_2>
             <VRPTo:pdbx_validate_rmsd_angle.auth_atom_id_3>N9</VRPTo:pdbx_validate_rmsd_angle.auth_atom_id_3>
-            <VRPTo:pdbx_validate_rmsd_angle.angle_deviation rdf:datatype="xsd:decimal">-5.38</VRPTo:pdbx_validate_rmsd_angle.angle_deviation>
+            <VRPTo:pdbx_validate_rmsd_angle.angle_deviation rdf:datatype="xsd:decimal">-5.383</VRPTo:pdbx_validate_rmsd_angle.angle_deviation>
             <VRPTo:pdbx_validate_rmsd_angle.angle_standard_deviation rdf:datatype="xsd:decimal">0.700</VRPTo:pdbx_validate_rmsd_angle.angle_standard_deviation>
             <VRPTo:pdbx_validate_rmsd_angle.angle_target_value rdf:datatype="xsd:decimal">108.000</VRPTo:pdbx_validate_rmsd_angle.angle_target_value>
             <VRPTo:pdbx_validate_rmsd_angle.angle_value rdf:datatype="xsd:decimal">102.617</VRPTo:pdbx_validate_rmsd_angle.angle_value>
@@ -33435,7 +33435,7 @@
             <VRPTo:pdbx_validate_rmsd_angle.auth_atom_id_1>O4'</VRPTo:pdbx_validate_rmsd_angle.auth_atom_id_1>
             <VRPTo:pdbx_validate_rmsd_angle.auth_atom_id_2>C1'</VRPTo:pdbx_validate_rmsd_angle.auth_atom_id_2>
             <VRPTo:pdbx_validate_rmsd_angle.auth_atom_id_3>N9</VRPTo:pdbx_validate_rmsd_angle.auth_atom_id_3>
-            <VRPTo:pdbx_validate_rmsd_angle.angle_deviation rdf:datatype="xsd:decimal">-3.86</VRPTo:pdbx_validate_rmsd_angle.angle_deviation>
+            <VRPTo:pdbx_validate_rmsd_angle.angle_deviation rdf:datatype="xsd:decimal">-3.864</VRPTo:pdbx_validate_rmsd_angle.angle_deviation>
             <VRPTo:pdbx_validate_rmsd_angle.angle_standard_deviation rdf:datatype="xsd:decimal">0.700</VRPTo:pdbx_validate_rmsd_angle.angle_standard_deviation>
             <VRPTo:pdbx_validate_rmsd_angle.angle_target_value rdf:datatype="xsd:decimal">108.000</VRPTo:pdbx_validate_rmsd_angle.angle_target_value>
             <VRPTo:pdbx_validate_rmsd_angle.angle_value rdf:datatype="xsd:decimal">104.136</VRPTo:pdbx_validate_rmsd_angle.angle_value>
@@ -33460,7 +33460,7 @@
             <VRPTo:pdbx_validate_rmsd_angle.auth_atom_id_1>O4'</VRPTo:pdbx_validate_rmsd_angle.auth_atom_id_1>
             <VRPTo:pdbx_validate_rmsd_angle.auth_atom_id_2>C1'</VRPTo:pdbx_validate_rmsd_angle.auth_atom_id_2>
             <VRPTo:pdbx_validate_rmsd_angle.auth_atom_id_3>N9</VRPTo:pdbx_validate_rmsd_angle.auth_atom_id_3>
-            <VRPTo:pdbx_validate_rmsd_angle.angle_deviation rdf:datatype="xsd:decimal">3.96</VRPTo:pdbx_validate_rmsd_angle.angle_deviation>
+            <VRPTo:pdbx_validate_rmsd_angle.angle_deviation rdf:datatype="xsd:decimal">3.961</VRPTo:pdbx_validate_rmsd_angle.angle_deviation>
             <VRPTo:pdbx_validate_rmsd_angle.angle_standard_deviation rdf:datatype="xsd:decimal">0.700</VRPTo:pdbx_validate_rmsd_angle.angle_standard_deviation>
             <VRPTo:pdbx_validate_rmsd_angle.angle_target_value rdf:datatype="xsd:decimal">108.000</VRPTo:pdbx_validate_rmsd_angle.angle_target_value>
             <VRPTo:pdbx_validate_rmsd_angle.angle_value rdf:datatype="xsd:decimal">111.961</VRPTo:pdbx_validate_rmsd_angle.angle_value>
@@ -33485,7 +33485,7 @@
             <VRPTo:pdbx_validate_rmsd_angle.auth_atom_id_1>OP2</VRPTo:pdbx_validate_rmsd_angle.auth_atom_id_1>
             <VRPTo:pdbx_validate_rmsd_angle.auth_atom_id_2>P</VRPTo:pdbx_validate_rmsd_angle.auth_atom_id_2>
             <VRPTo:pdbx_validate_rmsd_angle.auth_atom_id_3>O3'</VRPTo:pdbx_validate_rmsd_angle.auth_atom_id_3>
-            <VRPTo:pdbx_validate_rmsd_angle.angle_deviation rdf:datatype="xsd:decimal">11.05</VRPTo:pdbx_validate_rmsd_angle.angle_deviation>
+            <VRPTo:pdbx_validate_rmsd_angle.angle_deviation rdf:datatype="xsd:decimal">11.045</VRPTo:pdbx_validate_rmsd_angle.angle_deviation>
             <VRPTo:pdbx_validate_rmsd_angle.angle_standard_deviation rdf:datatype="xsd:decimal">2.200</VRPTo:pdbx_validate_rmsd_angle.angle_standard_deviation>
             <VRPTo:pdbx_validate_rmsd_angle.angle_target_value rdf:datatype="xsd:decimal">105.200</VRPTo:pdbx_validate_rmsd_angle.angle_target_value>
             <VRPTo:pdbx_validate_rmsd_angle.angle_value rdf:datatype="xsd:decimal">116.245</VRPTo:pdbx_validate_rmsd_angle.angle_value>

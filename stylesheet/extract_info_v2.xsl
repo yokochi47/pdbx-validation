@@ -186,7 +186,7 @@ Unmatched entry ID in both documents (<xsl:value-of select="$entry_id"/> and <xs
 	<VRPTx:pdbx_missing_nmr_star_itemCategory>
 	  <xsl:for-each select="chemical_shift_list">
 	    <xsl:call-template name="pdbx_missing_nmr_star_item">
-	      <xsl:with-param name="list_id"><xsl:value-of select="position()"/></xsl:with-param>
+	      <xsl:with-param name="list_id" select="position()"/>
 	    </xsl:call-template>
 	  </xsl:for-each>
 	</VRPTx:pdbx_missing_nmr_star_itemCategory>
@@ -195,7 +195,7 @@ Unmatched entry ID in both documents (<xsl:value-of select="$entry_id"/> and <xs
       <VRPTx:pdbx_nmr_assigned_chem_shift_listCategory>
 	<xsl:for-each select="chemical_shift_list">
 	  <xsl:call-template name="pdbx_nmr_assigned_chem_shift_list">
-	     <xsl:with-param name="id"><xsl:value-of select="position()"/></xsl:with-param>
+	     <xsl:with-param name="id" select="position()"/>
 	  </xsl:call-template>
 	</xsl:for-each>
       </VRPTx:pdbx_nmr_assigned_chem_shift_listCategory>
@@ -204,7 +204,7 @@ Unmatched entry ID in both documents (<xsl:value-of select="$entry_id"/> and <xs
 	<VRPTx:pdbx_nmr_chem_shift_annotationCategory>
 	  <xsl:for-each select="chemical_shift_list">
 	    <xsl:call-template name="pdbx_nmr_chem_shift_annotation">
-	      <xsl:with-param name="list_id"><xsl:value-of select="position()"/></xsl:with-param>
+	      <xsl:with-param name="list_id" select="position()"/>
 	    </xsl:call-template>
 	  </xsl:for-each>
 	</VRPTx:pdbx_nmr_chem_shift_annotationCategory>
@@ -215,7 +215,7 @@ Unmatched entry ID in both documents (<xsl:value-of select="$entry_id"/> and <xs
 	  <VRPTx:pdbx_nmr_chem_shift_completenessCategory>
 	    <xsl:for-each select="chemical_shift_list">
 	      <xsl:call-template name="pdbx_nmr_chem_shift_completeness_well_defined">
-		<xsl:with-param name="list_id"><xsl:value-of select="position()"/></xsl:with-param>
+		<xsl:with-param name="list_id" select="position()"/>
 	      </xsl:call-template>
 	    </xsl:for-each>
 	  </VRPTx:pdbx_nmr_chem_shift_completenessCategory>
@@ -225,7 +225,7 @@ Unmatched entry ID in both documents (<xsl:value-of select="$entry_id"/> and <xs
 	    <VRPTx:pdbx_nmr_chem_shift_completenessCategory>
 	      <xsl:for-each select="chemical_shift_list">
 		<xsl:call-template name="pdbx_nmr_chem_shift_completeness_full_length">
-		  <xsl:with-param name="list_id"><xsl:value-of select="position()"/></xsl:with-param>
+		  <xsl:with-param name="list_id" select="position()"/>
 		</xsl:call-template>
 	      </xsl:for-each>
 	    </VRPTx:pdbx_nmr_chem_shift_completenessCategory>
@@ -237,7 +237,7 @@ Unmatched entry ID in both documents (<xsl:value-of select="$entry_id"/> and <xs
 	<VRPTx:pdbx_nmr_chem_shift_re_offsetCategory>
 	  <xsl:for-each select="chemical_shift_list">
 	    <xsl:call-template name="pdbx_nmr_chem_shift_re_offset">
-	      <xsl:with-param name="list_id"><xsl:value-of select="position()"/></xsl:with-param>
+	      <xsl:with-param name="list_id" select="position()"/>
 	    </xsl:call-template>
 	  </xsl:for-each>
 	</VRPTx:pdbx_nmr_chem_shift_re_offsetCategory>
@@ -247,7 +247,7 @@ Unmatched entry ID in both documents (<xsl:value-of select="$entry_id"/> and <xs
 	<VRPTx:pdbx_nmr_unmapped_chem_shiftCategory>
 	  <xsl:for-each select="chemical_shift_list">
 	    <xsl:call-template name="pdbx_nmr_unmapped_chem_shift">
-	      <xsl:with-param name="list_id"><xsl:value-of select="position()"/></xsl:with-param>
+	      <xsl:with-param name="list_id" select="position()"/>
 	    </xsl:call-template>
 	  </xsl:for-each>
 	</VRPTx:pdbx_nmr_unmapped_chem_shiftCategory>
@@ -257,7 +257,7 @@ Unmatched entry ID in both documents (<xsl:value-of select="$entry_id"/> and <xs
 	<VRPTx:pdbx_nmr_unparsed_chem_shiftCategory>
 	  <xsl:for-each select="chemical_shift_list">
 	    <xsl:call-template name="pdbx_nmr_unparsed_chem_shift">
-	      <xsl:with-param name="list_id"><xsl:value-of select="position()"/></xsl:with-param>
+	      <xsl:with-param name="list_id" select="position()"/>
 	    </xsl:call-template>
 	  </xsl:for-each>
 	</VRPTx:pdbx_nmr_unparsed_chem_shiftCategory>
@@ -267,7 +267,7 @@ Unmatched entry ID in both documents (<xsl:value-of select="$entry_id"/> and <xs
 	<VRPTx:pdbx_validate_nmr_chem_shiftCategory>
 	  <xsl:for-each select="chemical_shift_list">
 	    <xsl:call-template name="pdbx_validate_nmr_chem_shift">
-	      <xsl:with-param name="list_id"><xsl:value-of select="position()"/></xsl:with-param>
+	      <xsl:with-param name="list_id" select="position()"/>
 	    </xsl:call-template>
 	  </xsl:for-each>
 	</VRPTx:pdbx_validate_nmr_chem_shiftCategory>
@@ -3309,7 +3309,7 @@ xsd:decimal
       <xsl:element name="VRPTx:auth_atom_id_1"><xsl:value-of select="@atom0"/></xsl:element>
       <xsl:element name="VRPTx:auth_atom_id_2"><xsl:value-of select="@atom1"/></xsl:element>
       <xsl:element name="VRPTx:auth_atom_id_3"><xsl:value-of select="@atom2"/></xsl:element>
-      <xsl:element name="VRPTx:angle_deviation"><xsl:value-of select="format-number(number(@obs)-number(@mean),'0.00')"/></xsl:element>
+      <xsl:element name="VRPTx:angle_deviation"><xsl:value-of select="format-number(number(@obs)-number(@mean),'0.000')"/></xsl:element>
       <xsl:element name="VRPTx:angle_standard_deviation"><xsl:value-of select="@stdev"/></xsl:element>
       <xsl:element name="VRPTx:angle_target_value"><xsl:value-of select="@mean"/></xsl:element>
       <xsl:element name="VRPTx:angle_value"><xsl:value-of select="@obs"/></xsl:element>
@@ -3544,7 +3544,7 @@ Unmatched components exist in atoms, <xsl:value-of select="position()"/>, found 
 	  </xsl:otherwise>
 	</xsl:choose>
       </xsl:for-each>
-      <xsl:element name="VRPTx:angle_deviation"><xsl:value-of select="format-number(number(@obsval)-number(@mean),'0.00')"/></xsl:element>
+      <xsl:element name="VRPTx:angle_deviation"><xsl:value-of select="format-number(number(@obsval)-number(@mean),'0.000')"/></xsl:element>
       <xsl:element name="VRPTx:angle_standard_deviation"><xsl:value-of select="@stdev"/></xsl:element>
       <xsl:element name="VRPTx:angle_target_value"><xsl:value-of select="@mean"/></xsl:element>
       <xsl:element name="VRPTx:angle_value"><xsl:value-of select="@obsval"/></xsl:element>

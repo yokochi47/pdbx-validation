@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet
-  version="2.0"
+  version="1.0"
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xmlns:VRPTx="http://pdbml.pdb.org/schema/pdbx-validation-v4.xsd">
+  xmlns:VRPTx="http://pdbml.pdb.org/schema/pdbx-validation-v4.xsd"
+  xmlns:ext="http://exslt.org/common" exclude-result-prefixes="ext">
+
+  <xsl:include href="url-encode.xsl"/>
 
   <xsl:param name="pdbml_ext_file" required="yes"/>
   <xsl:variable name="ext_datablock" select="document($pdbml_ext_file)/VRPTx:datablock"/>
@@ -23,7 +26,7 @@
   <xsl:variable name="x-ray"><xsl:value-of select="contains($exptl_method,'DIFFRACTION') and not(contains($exptl_method,'NEUTRON'))"/></xsl:variable>
   <xsl:variable name="nmr"><xsl:value-of select="contains($exptl_method,'NMR')"/></xsl:variable>
   <xsl:variable name="em"><xsl:value-of select="$exptl_method='ELECTRON MICROSCOPY'"/></xsl:variable>
-  <xsl:variable name="other"><xsl:value-of select="$x-ray=false() and $nmr=false() and $em=false()"/></xsl:variable>
+  <xsl:variable name="other"><xsl:value-of select="$x-ray='false' and $nmr='false' and $em='false'"/></xsl:variable>
 
   <!-- percentile conditions id -->
 
@@ -308,7 +311,7 @@ Unmatched entry ID in both documents (<xsl:value-of select="$entry_id"/> and <xs
 
     <!-- EM validation: Entry, ModelledEntityInstance -->
 
-    <xsl:if test="$em=true()">
+    <xsl:if test="$em='true'">
 
       <xsl:if test="@emdb_id">
 	<VRPTx:em_adminCategory>
@@ -431,7 +434,7 @@ Unmatched entry ID in both documents (<xsl:value-of select="$entry_id"/> and <xs
       </VRPTx:pdbx_validate_rmsd_torsions_atomCategory>
     </xsl:if>
 
-    <xsl:if test="$nmr=true()">
+    <xsl:if test="$nmr='true'">
 
       <xsl:if test="@nmrclust_version">
 
@@ -489,7 +492,7 @@ Unmatched entry ID in both documents (<xsl:value-of select="$entry_id"/> and <xs
 
     <!-- EM validation: ModelledSubgroup -->
 
-    <xsl:if test="$em=true()">
+    <xsl:if test="$em='true'">
 
       <xsl:if test="../ModelledSubgroup/@residue_inclusion">
 	<VRPTx:pdbx_em_validate_map_modelCategory>
@@ -632,7 +635,7 @@ Unmatched entry ID in both documents (<xsl:value-of select="$entry_id"/> and <xs
 	    <xsl:when test="@type='0.143' or @type='0.333' or @type='0.5'"><xsl:attribute name="criterion"><xsl:value-of select="@type"/></xsl:attribute></xsl:when>
 	    <xsl:when test="@type='halfbit'"><xsl:attribute name="criterion">half-bit</xsl:attribute></xsl:when>
 	    <xsl:when test="@type='onebit'"><xsl:attribute name="criterion">one-bit</xsl:attribute></xsl:when>
-	    <xsl:when test="starts-with(@type,'threesig')"><xsl:attribute name="criterion">3sigma</xsl:attribute></xsl:when>
+	    <xsl:when test="contains(@type,'threesig')"><xsl:attribute name="criterion">3sigma</xsl:attribute></xsl:when>
 	    <xsl:otherwise>
 	      <xsl:call-template name="error_handler">
 		<xsl:with-param name="terminate">yes</xsl:with-param>
@@ -705,8 +708,8 @@ Criteria for FSC resolution estimation, <xsl:value-of select="@type"/>, is not l
 	  <xsl:attribute name="id"><xsl:value-of select="position()"/></xsl:attribute>
 	  <xsl:variable name="source">
 	    <xsl:choose>
-	      <xsl:when test="starts-with(@Title,'calculated_fsc') or @data_curve='calculated_fsc'">calculated_fsc</xsl:when>
-	      <xsl:when test="starts-with(@Title,'author_provided_fsc') or @data_curve='author_provided_fsc'">author_provided_fsc</xsl:when>
+	      <xsl:when test="contains(@Title,'calculated_fsc') or @data_curve='calculated_fsc'">calculated_fsc</xsl:when>
+	      <xsl:when test="contains(@Title,'author_provided_fsc') or @data_curve='author_provided_fsc'">author_provided_fsc</xsl:when>
 	      <xsl:otherwise>
 		<xsl:call-template name="error_handler">
 		  <xsl:with-param name="terminate">yes</xsl:with-param>
@@ -719,12 +722,12 @@ Source for FSC curve, <xsl:value-of select="@Title"/>, is not listed in XSLT cod
 	  </xsl:variable>
 	  <xsl:variable name="criterion">
 	    <xsl:choose>
-	      <xsl:when test="ends-with(@Title,'0.143') or @type='0.143'">0.143</xsl:when>
-	      <xsl:when test="ends-with(@Title,'0.333') or @type='0.333'">0.333</xsl:when>
-	      <xsl:when test="ends-with(@Title,'0.5') or @type='0.5'">0.5</xsl:when>
-	      <xsl:when test="ends-with(@Title,'halfbit') or @type='halfbit'">half-bit</xsl:when>
-	      <xsl:when test="ends-with(@Title,'onebit') or @type='onebit'">one-bit</xsl:when>
-	      <xsl:when test="ends-with(@Title,'threesigma') or @type='threesigma'">3sigma</xsl:when>
+	      <xsl:when test="contains(@Title,'0.143') or @type='0.143'">0.143</xsl:when>
+	      <xsl:when test="contains(@Title,'0.333') or @type='0.333'">0.333</xsl:when>
+	      <xsl:when test="contains(@Title,'0.5') or @type='0.5'">0.5</xsl:when>
+	      <xsl:when test="contains(@Title,'halfbit') or @type='halfbit'">half-bit</xsl:when>
+	      <xsl:when test="contains(@Title,'onebit') or @type='onebit'">one-bit</xsl:when>
+	      <xsl:when test="contains(@Title,'threesigma') or @type='threesigma'">3sigma</xsl:when>
 	      <xsl:otherwise>
 		<xsl:call-template name="error_handler">
 		  <xsl:with-param name="terminate">yes</xsl:with-param>
@@ -757,12 +760,12 @@ Criteria for FSC curve, <xsl:value-of select="@Title"/>, is not listed in XSLT c
 	<xsl:variable name="plot_id"><xsl:value-of select="position()"/></xsl:variable>
 	<xsl:variable name="criterion">
 	  <xsl:choose>
-	    <xsl:when test="ends-with(@Title,'0.143') or @type='0.143'">0.143</xsl:when>
-	    <xsl:when test="ends-with(@Title,'0.333') or @type='0.333'">0.333</xsl:when>
-	    <xsl:when test="ends-with(@Title,'0.5') or @type='0.5'">0.5</xsl:when>
-	    <xsl:when test="ends-with(@Title,'halfbit') or @type='halfbit'">half-bit</xsl:when>
-	    <xsl:when test="ends-with(@Title,'onebit') or @type='onebit'">one-bit</xsl:when>
-	    <xsl:when test="ends-with(@Title,'threesigma') or @type='threesigma'">3sigma</xsl:when>
+	    <xsl:when test="contains(@Title,'0.143') or @type='0.143'">0.143</xsl:when>
+	    <xsl:when test="contains(@Title,'0.333') or @type='0.333'">0.333</xsl:when>
+	    <xsl:when test="contains(@Title,'0.5') or @type='0.5'">0.5</xsl:when>
+	    <xsl:when test="contains(@Title,'halfbit') or @type='halfbit'">half-bit</xsl:when>
+	    <xsl:when test="contains(@Title,'onebit') or @type='onebit'">one-bit</xsl:when>
+	    <xsl:when test="contains(@Title,'threesigma') or @type='threesigma'">3sigma</xsl:when>
 	    <xsl:otherwise>
 	      <xsl:call-template name="error_handler">
 		<xsl:with-param name="terminate">yes</xsl:with-param>
@@ -843,7 +846,7 @@ Atom type of atom inclusion plot, <xsl:value-of select="name()"/>, is not listed
     <VRPTx:pdbx_nmr_restraint_listCategory>
       <xsl:if test="../../distance_restraints_analysis">
 	<VRPTx:pdbx_nmr_restraint_list id="1" type="distance"/>
-	<xsl:for-each select="distinct-values(../../distance_restraints_analysis/violated_distance_restraints/violated_distance_restraint/@rlist_id)">
+	<xsl:for-each select="../../distance_restraints_analysis/violated_distance_restraints/violated_distance_restraint[not(preceding-sibling::violated_distance_restraint/@rlist_id=@rlist_id)]/@rlist_id">
 	  <xsl:sort select="."/>
 	  <xsl:variable name="list_id"><xsl:value-of select="."/></xsl:variable>
 	  <xsl:if test="$list_id!='1'">
@@ -853,7 +856,7 @@ Atom type of atom inclusion plot, <xsl:value-of select="name()"/>, is not listed
       </xsl:if>
       <xsl:if test="../../dihedralangle_restraints_analysis">
 	<VRPTx:pdbx_nmr_restraint_list id="1" type="dihedral_angle"/>
-	<xsl:for-each select="distinct-values(../../dihedralangle_restraints_analysis/violated_dihedralangle_restraints/violated_dihedralangle_restraint/@rlist_id)">
+	<xsl:for-each select="../../dihedralangle_restraints_analysis/violated_dihedralangle_restraints/violated_dihedralangle_restraint[not(preceding-sibling::violated_dihedralangle_restraint/@rlist_id=@rlist_id)]/@rlist_id">
 	  <xsl:sort select="."/>
 	  <xsl:variable name="list_id"><xsl:value-of select="."/></xsl:variable>
 	  <xsl:if test="$list_id!='1'">
@@ -1199,6 +1202,12 @@ Restraint type, <xsl:value-of select="@restraint_type"/>, is not listed in XSLT 
 	      <xsl:when test="@dist_rest_type='InterChain'">
 		<VRPTx:interchain_violations_count><xsl:value-of select="@violations_count"/></VRPTx:interchain_violations_count>
 	      </xsl:when>
+	      <xsl:when test="@dist_rest_type='HydrogenBond'">
+		<VRPTx:hydrogen_bond_violations_count><xsl:value-of select="@violations_count"/></VRPTx:hydrogen_bond_violations_count>
+	      </xsl:when>
+	      <xsl:when test="@dist_rest_type='DisulfideBond'">
+		<VRPTx:disulfide_bond_violations_count><xsl:value-of select="@violations_count"/></VRPTx:disulfide_bond_violations_count>
+	      </xsl:when>
 	      <xsl:otherwise>
 		<xsl:call-template name="error_handler">
 		  <xsl:with-param name="terminate">yes</xsl:with-param>
@@ -1247,6 +1256,12 @@ Distance restraint type, <xsl:value-of select="@dist_rest_type"/>, is not listed
 	      </xsl:when>
 	      <xsl:when test="@dist_rest_type='InterChain'">
 		<VRPTx:interchain_violations_count><xsl:value-of select="@violations_count"/></VRPTx:interchain_violations_count>
+	      </xsl:when>
+	      <xsl:when test="@dist_rest_type='HydrogenBond'">
+		<VRPTx:hydrogen_bond_violations_count><xsl:value-of select="@violations_count"/></VRPTx:hydrogen_bond_violations_count>
+	      </xsl:when>
+	      <xsl:when test="@dist_rest_type='DisulfideBond'">
+		<VRPTx:disulfide_bond_violations_count><xsl:value-of select="@violations_count"/></VRPTx:disulfide_bond_violations_count>
 	      </xsl:when>
 	      <xsl:otherwise>
 		<xsl:call-template name="error_handler">
@@ -1297,12 +1312,13 @@ Distance restraint type, <xsl:value-of select="@dist_rest_type"/>, is not listed
 	  <xsl:variable name="rlist_id"><xsl:value-of select="@rlist_id"/></xsl:variable>
 	  <xsl:variable name="rest_id"><xsl:value-of select="@rest_id"/></xsl:variable>
 	  <xsl:variable name="models">
-	    <xsl:for-each select="1 to $nmr_models">
-	      <xsl:variable name="_model"><xsl:value-of select="."/></xsl:variable>
-	      <xsl:if test="$violated_distance_restraints/violated_distance_restraint[@rlist_id=$rlist_id and @rest_id=$rest_id and @model=$_model]">
-		<xsl:value-of select="concat($_model,',')"/>
-	      </xsl:if>
-	    </xsl:for-each>
+	    <xsl:call-template name="concat_violated_distance_models">
+	      <xsl:with-param name="violated_distance_restraints" select="$violated_distance_restraints"/>
+	      <xsl:with-param name="rlist_id" select="$rlist_id"/>
+	      <xsl:with-param name="rest_id" select="$rest_id"/>
+	      <xsl:with-param name="cur_model">1</xsl:with-param>
+	      <xsl:with-param name="end_model" select="$nmr_models"/>
+	    </xsl:call-template>
 	  </xsl:variable>
 	  <xsl:variable name="rep_model"><xsl:value-of select="substring-before($models,',')"/></xsl:variable>
 	  <xsl:variable name="chain_1"><xsl:value-of select="@chain_1"/></xsl:variable>
@@ -1312,7 +1328,7 @@ Distance restraint type, <xsl:value-of select="@dist_rest_type"/>, is not listed
 	  <xsl:variable name="uniq"><xsl:value-of select="count(//violated_distance_restraints/violated_distance_restraint[@rlist_id=$rlist_id and @rest_id=$rest_id and @model=$rep_model])"/></xsl:variable>
 	  <xsl:variable name="intrares"><xsl:value-of select="$chain_1=$chain_2 and $resnum_1=$resnum_2"/></xsl:variable>
 	  <xsl:choose>
-	    <xsl:when test="$uniq=1 and $intrares=false()">
+	    <xsl:when test="$uniq=1 and $intrares='false'">
 	      <xsl:variable name="atom_1">
 		<xsl:for-each select="/wwPDB-validation-information/ModelledSubgroup[@model=$rep_model and @resnum=$resnum_1 and @icode=$icode_1]/distance_violation[@rlist_id=$rlist_id and @rest_id=$rest_id]">
 		  <xsl:value-of select="@atom"/>
@@ -1326,7 +1342,7 @@ Distance restraint type, <xsl:value-of select="@dist_rest_type"/>, is not listed
 	      <VRPTx:auth_atom_id_1><xsl:value-of select="$atom_1"/></VRPTx:auth_atom_id_1>
 	      <VRPTx:auth_atom_id_2><xsl:value-of select="$atom_2"/></VRPTx:auth_atom_id_2>
 	    </xsl:when>
-	    <xsl:when test="$uniq=1 and $intrares=true()">
+	    <xsl:when test="$uniq=1 and $intrares='true'">
 	      <xsl:variable name="_atoms">
 		<xsl:for-each select="/wwPDB-validation-information/ModelledSubgroup[@model=$rep_model and @resnum=$resnum_1 and @icode=$icode_1]/distance_violation[@rlist_id=$rlist_id and @rest_id=$rest_id]">
 		  <xsl:value-of select="concat(@atom,',')"/>
@@ -1394,7 +1410,7 @@ Distance restraint type, <xsl:value-of select="@dist_rest_type"/>, is not listed
 	  <xsl:variable name="uniq"><xsl:value-of select="count(//violated_distance_restraints/violated_distance_restraint[@rlist_id=$rlist_id and @rest_id=$rest_id and @model=$model])"/></xsl:variable>
 	  <xsl:variable name="intrares"><xsl:value-of select="$chain_1=$chain_2 and $resnum_1=$resnum_2"/></xsl:variable>
 	  <xsl:choose>
-	    <xsl:when test="$uniq=1 and $intrares=false()">
+	    <xsl:when test="$uniq=1 and $intrares='false'">
 	      <xsl:variable name="atom_1">
 		<xsl:for-each select="/wwPDB-validation-information/ModelledSubgroup[@model=$model and @resnum=$resnum_1 and @icode=$icode_1]/distance_violation[@rlist_id=$rlist_id and @rest_id=$rest_id]">
 		  <xsl:value-of select="@atom"/>
@@ -1408,7 +1424,7 @@ Distance restraint type, <xsl:value-of select="@dist_rest_type"/>, is not listed
 	      <VRPTx:auth_atom_id_1><xsl:value-of select="$atom_1"/></VRPTx:auth_atom_id_1>
 	      <VRPTx:auth_atom_id_2><xsl:value-of select="$atom_2"/></VRPTx:auth_atom_id_2>
 	    </xsl:when>
-	    <xsl:when test="$uniq=1 and $intrares=true()">
+	    <xsl:when test="$uniq=1 and $intrares='true'">
 	      <xsl:variable name="_atoms">
 		<xsl:for-each select="/wwPDB-validation-information/ModelledSubgroup[@model=$model and @resnum=$resnum_1 and @icode=$icode_1]/distance_violation[@rlist_id=$rlist_id and @rest_id=$rest_id]">
 		  <xsl:value-of select="concat(@atom,',')"/>
@@ -1525,6 +1541,24 @@ Distance restraint type, <xsl:value-of select="@dist_rest_type"/>, is not listed
 	    <xsl:when test="@restraint_type='Total'">
 	      <xsl:attribute name="type">all</xsl:attribute>
 	    </xsl:when>
+	    <xsl:when test="@restraint_type='CHI'">
+	      <xsl:attribute name="type">chi</xsl:attribute>
+	    </xsl:when>
+	    <xsl:when test="@restraint_type='ETA'">
+	      <xsl:attribute name="type">eta</xsl:attribute>
+	    </xsl:when>
+	    <xsl:when test="@restraint_type='THETA'">
+	      <xsl:attribute name="type">theta</xsl:attribute>
+	    </xsl:when>
+	    <xsl:when test='@restraint_type="ETA&apos;"'>
+	      <xsl:attribute name="type">eta'</xsl:attribute>
+	    </xsl:when>
+	    <xsl:when test='@restraint_type="THETA&apos;"'>
+	      <xsl:attribute name="type">theta'</xsl:attribute>
+	    </xsl:when>
+	    <xsl:when test="@restraint_type='.' or @restraint_type='PPA' or @restraint_type='VEANgle'">
+	      <xsl:attribute name="type">other</xsl:attribute>
+	    </xsl:when>
 	    <xsl:otherwise>
 	      <xsl:call-template name="error_handler">
 		<xsl:with-param name="terminate">yes</xsl:with-param>
@@ -1633,6 +1667,24 @@ Restraint type, <xsl:value-of select="@restraint_type"/>, is not listed in XSLT 
 	      <xsl:when test="@ang_rest_type='CHI42'">
 		<VRPTx:chi42_violations_count><xsl:value-of select="@violations_count"/></VRPTx:chi42_violations_count>
 	      </xsl:when>
+	      <xsl:when test="@ang_rest_type='CHI'">
+		<VRPTx:chi_violations_count><xsl:value-of select="@violations_count"/></VRPTx:chi_violations_count>
+	      </xsl:when>
+	      <xsl:when test="@ang_rest_type='ETA'">
+		<VRPTx:eta_violations_count><xsl:value-of select="@violations_count"/></VRPTx:eta_violations_count>
+	      </xsl:when>
+	      <xsl:when test="@ang_rest_type='THETA'">
+		<VRPTx:theta_violations_count><xsl:value-of select="@violations_count"/></VRPTx:theta_violations_count>
+	      </xsl:when>
+	      <xsl:when test='@ang_rest_type="ETA&apos;"'>
+		<VRPTx:eta_prime_violations_count><xsl:value-of select="@violations_count"/></VRPTx:eta_prime_violations_count>
+	      </xsl:when>
+	      <xsl:when test='@ang_rest_type="THETA&apos;"'>
+		<VRPTx:theta_prime_violations_count><xsl:value-of select="@violations_count"/></VRPTx:theta_prime_violations_count>
+	      </xsl:when>
+	      <xsl:when test="@ang_rest_type='.' or @ang_rest_type='PPA' or @ang_rest_type='VEANgle'">
+		<VRPTx:other_violations_count><xsl:value-of select="@violations_count"/></VRPTx:other_violations_count>
+	      </xsl:when>
 	      <xsl:otherwise>
 		<xsl:call-template name="error_handler">
 		  <xsl:with-param name="terminate">yes</xsl:with-param>
@@ -1738,6 +1790,24 @@ Dihedral angle restraint type, <xsl:value-of select="@ang_rest_type"/>, is not l
 	      </xsl:when>
 	      <xsl:when test="@ang_rest_type='CHI42'">
 		<VRPTx:chi42_violations_count><xsl:value-of select="@violations_count"/></VRPTx:chi42_violations_count>
+	      </xsl:when>
+	      <xsl:when test="@ang_rest_type='CHI'">
+		<VRPTx:chi_violations_count><xsl:value-of select="@violations_count"/></VRPTx:chi_violations_count>
+	      </xsl:when>
+	      <xsl:when test="@ang_rest_type='ETA'">
+		<VRPTx:eta_violations_count><xsl:value-of select="@violations_count"/></VRPTx:eta_violations_count>
+	      </xsl:when>
+	      <xsl:when test="@ang_rest_type='THETA'">
+		<VRPTx:theta_violations_count><xsl:value-of select="@violations_count"/></VRPTx:theta_violations_count>
+	      </xsl:when>
+	      <xsl:when test='@ang_rest_type="ETA&apos;"'>
+		<VRPTx:eta_prime_violations_count><xsl:value-of select="@violations_count"/></VRPTx:eta_prime_violations_count>
+	      </xsl:when>
+	      <xsl:when test='@ang_rest_type="THETA&apos;"'>
+		<VRPTx:theta_prime_violations_count><xsl:value-of select="@violations_count"/></VRPTx:theta_prime_violations_count>
+	      </xsl:when>
+	      <xsl:when test="@ang_rest_type='.' or @ang_rest_type='PPA' or @ang_rest_type='VEANgle'">
+		<VRPTx:other_violations_count><xsl:value-of select="@violations_count"/></VRPTx:other_violations_count>
 	      </xsl:when>
 	      <xsl:otherwise>
 		<xsl:call-template name="error_handler">
@@ -2189,9 +2259,15 @@ chemical shift list type, <xsl:value-of select="@type"/>, is not listed in XSLT 
 	  <xsl:if test="@error and @error!='?' and @error!='.'">
 	    <xsl:element name="VRPTx:val_err"><xsl:value-of select="@error"/></xsl:element>
 	  </xsl:if>
-	  <xsl:if test="@ambiguity and @ambiguity=('1','2','3','4','5','6','9')">
-	    <xsl:element name="VRPTx:ambiguity_code"><xsl:value-of select="@ambiguity"/></xsl:element>
-	  </xsl:if>
+	  <xsl:choose>
+	    <xsl:when test="@ambiguity='1'"><xsl:element name="VRPTx:ambiguity_code">1</xsl:element></xsl:when>
+	    <xsl:when test="@ambiguity='2'"><xsl:element name="VRPTx:ambiguity_code">2</xsl:element></xsl:when>
+	    <xsl:when test="@ambiguity='3'"><xsl:element name="VRPTx:ambiguity_code">3</xsl:element></xsl:when>
+	    <xsl:when test="@ambiguity='4'"><xsl:element name="VRPTx:ambiguity_code">4</xsl:element></xsl:when>
+	    <xsl:when test="@ambiguity='5'"><xsl:element name="VRPTx:ambiguity_code">5</xsl:element></xsl:when>
+	    <xsl:when test="@ambiguity='6'"><xsl:element name="VRPTx:ambiguity_code">6</xsl:element></xsl:when>
+	    <xsl:when test="@ambiguity='9'"><xsl:element name="VRPTx:ambiguity_code">9</xsl:element></xsl:when>
+	  </xsl:choose>
 	  <xsl:element name="VRPTx:details"><xsl:value-of select="@diagnostic"/></xsl:element>
 	</VRPTx:pdbx_nmr_unmapped_chem_shift>
       </xsl:for-each>
@@ -2215,9 +2291,15 @@ chemical shift list type, <xsl:value-of select="@type"/>, is not listed in XSLT 
 	  <xsl:if test="@error and @error!='?' and @error!='.'">
 	    <xsl:element name="VRPTx:val_err"><xsl:value-of select="@error"/></xsl:element>
 	  </xsl:if>
-	  <xsl:if test="@ambiguity and @ambiguity=('1','2','3','4','5','6','9')">
-	    <xsl:element name="VRPTx:ambiguity_code"><xsl:value-of select="@ambiguity"/></xsl:element>
-	  </xsl:if>
+	  <xsl:choose>
+	    <xsl:when test="@ambiguity='1'"><xsl:element name="VRPTx:ambiguity_code">1</xsl:element></xsl:when>
+	    <xsl:when test="@ambiguity='2'"><xsl:element name="VRPTx:ambiguity_code">2</xsl:element></xsl:when>
+	    <xsl:when test="@ambiguity='3'"><xsl:element name="VRPTx:ambiguity_code">3</xsl:element></xsl:when>
+	    <xsl:when test="@ambiguity='4'"><xsl:element name="VRPTx:ambiguity_code">4</xsl:element></xsl:when>
+	    <xsl:when test="@ambiguity='5'"><xsl:element name="VRPTx:ambiguity_code">5</xsl:element></xsl:when>
+	    <xsl:when test="@ambiguity='6'"><xsl:element name="VRPTx:ambiguity_code">6</xsl:element></xsl:when>
+	    <xsl:when test="@ambiguity='9'"><xsl:element name="VRPTx:ambiguity_code">9</xsl:element></xsl:when>
+	  </xsl:choose>
 	  <xsl:element name="VRPTx:details"><xsl:value-of select="@diagnostic"/></xsl:element>
 	</VRPTx:pdbx_nmr_unparsed_chem_shift>
       </xsl:for-each>
@@ -2681,7 +2763,13 @@ chemical shift list type, <xsl:value-of select="@type"/>, is not listed in XSLT 
 	    <xsl:element name="VRPTx:Rfree-Rwork"><xsl:value-of select="format-number(number(@DCC_Rfree)-number(@DCC_R),'0.00')"/></xsl:element>
 	  </xsl:if>
 	  <xsl:if test="@WilsonBaniso">
-	    <xsl:for-each select="tokenize(replace(normalize-space(@WilsonBaniso),'[\[\]]',''),',')">
+	    <xsl:variable name="aniso_list">
+	      <xsl:call-template name="tokenize">
+		<xsl:with-param name="str" select="translate(normalize-space(@WilsonBaniso),'[]','')"/>
+		<xsl:with-param name="substr">,</xsl:with-param>
+	      </xsl:call-template>
+	    </xsl:variable>
+	    <xsl:for-each select="ext:node-set($aniso_list)/token">
 	      <xsl:choose>
 		<xsl:when test="position()=1">
 		  <xsl:element name="VRPTx:aniso_B11"><xsl:value-of select="."/></xsl:element>
@@ -2718,7 +2806,7 @@ Unmatched components exist in WilsonBaniso, <xsl:value-of select="position()"/>,
 	  <xsl:if test="@TransNCS">
 	    <xsl:element name="VRPTx:error"><xsl:value-of select="@TransNCS"/></xsl:element>
 	  </xsl:if>
-	  <xsl:element name="VRPTx:iso_B_value_type"><xsl:value-of select="lower-case(@B_factor_type)"/></xsl:element>
+	  <xsl:element name="VRPTx:iso_B_value_type"><xsl:value-of select="translate(@B_factor_type,'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz')"/></xsl:element>
 	  <xsl:if test="@PDB-resolution and @PDB-resolution!='NotAvailable'">
 	    <xsl:element name="VRPTx:ls_d_res_high"><xsl:value-of select="@PDB-resolution"/></xsl:element>
 	  </xsl:if>
@@ -2732,14 +2820,15 @@ Unmatched components exist in WilsonBaniso, <xsl:value-of select="position()"/>,
 	    <xsl:element name="VRPTx:reflns_outlier_centric"><xsl:value-of select="@centric_outliers"/></xsl:element>
 	  </xsl:if>
 	  <xsl:if test="@TwinFraction">
+	    <xsl:variable name="_twin_fraction"><xsl:call-template name="tokenize"><xsl:with-param name="str" select="normalize-space(@TwinFraction)"/><xsl:with-param name="substr">;</xsl:with-param></xsl:call-template></xsl:variable>
 	    <xsl:variable name="twin_operator">
-	      <xsl:for-each select="tokenize(normalize-space(@TwinFraction),';')">
-		<xsl:value-of select="concat(substring-before(.,':'),' ')"/>
+	      <xsl:for-each select="ext:node-set($_twin_fraction)/token">
+		<xsl:value-of select="concat(substring-before(text(),':'),' ')"/>
 	      </xsl:for-each>
 	    </xsl:variable>
 	    <xsl:variable name="twin_fraction">
-	      <xsl:for-each select="tokenize(normalize-space(@TwinFraction),';')">
-		<xsl:value-of select="concat(substring-after(.,':'),' ')"/>
+	      <xsl:for-each select="ext:node-set($_twin_fraction)/token">
+		<xsl:value-of select="concat(substring-after(text(),':'),' ')"/>
 	      </xsl:for-each>
 	    </xsl:variable>
 	    <xsl:element name="VRPTx:twin_fraction_xtriage"><xsl:value-of select="normalize-space($twin_fraction)"/></xsl:element>
@@ -2756,7 +2845,14 @@ Unmatched components exist in WilsonBaniso, <xsl:value-of select="position()"/>,
 	  </xsl:if>
 	  <xsl:variable name="wavelength"><xsl:value-of select="$ext_datablock/VRPTx:diffrn_radiation_wavelengthCategory/VRPTx:diffrn_radiation_wavelength[1]/VRPTx:wavelength"/></xsl:variable>
 	  <xsl:if test="$wavelength!=''">
-	    <xsl:element name="VRPTx:wavelength"><xsl:value-of select="$wavelength"/></xsl:element>
+	    <xsl:choose>
+	      <xsl:when test="string-length($wavelength)-string-length(translate($wavelength,' ',''))&gt;0">
+		 <xsl:element name="VRPTx:wavelength"><xsl:value-of select="substring-before($wavelength,' ')"/></xsl:element>
+	      </xsl:when>
+	      <xsl:otherwise>
+		<xsl:element name="VRPTx:wavelength"><xsl:value-of select="$wavelength"/></xsl:element>
+	      </xsl:otherwise>
+	    </xsl:choose>
 	  </xsl:if>
 <!-- unmapped data items
 <VRPTx:B_wilson_scale> xsd:decimal </VRPTx:B_wilson_scale> [0..1]
@@ -2858,7 +2954,7 @@ Unmatched components exist in WilsonBaniso, <xsl:value-of select="position()"/>,
 	<xsl:if test="@percent-rama-outliers">
 	  <xsl:element name="VRPTx:Ramachandran_outlier_percent">
 	    <xsl:choose>
-	      <xsl:when test="$nmr=true()">
+	      <xsl:when test="$nmr='true'">
 		<xsl:value-of select="@percent-rama-outliers-full-length"/>
 	      </xsl:when>
 	      <xsl:otherwise>
@@ -2866,14 +2962,14 @@ Unmatched components exist in WilsonBaniso, <xsl:value-of select="position()"/>,
 	      </xsl:otherwise>
 	    </xsl:choose>
 	  </xsl:element>
-	  <xsl:if test="@percent-rama-outliers and $nmr=true()">
+	  <xsl:if test="@percent-rama-outliers and $nmr='true'">
 	    <xsl:element name="VRPTx:Ramachandran_outlier_percent_nmr_well_formed"><xsl:value-of select="@percent-rama-outliers"/></xsl:element>
 	  </xsl:if>
 	</xsl:if>
-	<xsl:if test="@clashscore or ($nmr=true() and @clashscore-full-length)">
+	<xsl:if test="@clashscore or ($nmr='true' and @clashscore-full-length)">
 	  <xsl:element name="VRPTx:all_atom_clashscore">
 	    <xsl:choose>
-	      <xsl:when test="$nmr=true()">
+	      <xsl:when test="$nmr='true'">
 		<xsl:value-of select="@clashscore-full-length"/>
 	      </xsl:when>
 	      <xsl:otherwise>
@@ -2882,7 +2978,7 @@ Unmatched components exist in WilsonBaniso, <xsl:value-of select="position()"/>,
 	    </xsl:choose>
 	  </xsl:element>
 	</xsl:if>
-	<xsl:if test="@clashscore and $nmr=true()">
+	<xsl:if test="@clashscore and $nmr='true'">
 	  <xsl:element name="VRPTx:all_atom_clashscore_nmr_well_formed"><xsl:value-of select="@clashscore"/></xsl:element>
 	</xsl:if>
 	<xsl:if test="@angles_rmsz">
@@ -2900,7 +2996,7 @@ Unmatched components exist in WilsonBaniso, <xsl:value-of select="position()"/>,
 	<xsl:if test="@percent-rota-outliers">
 	  <xsl:element name="VRPTx:rotamer_outliers_percent">
 	    <xsl:choose>
-	      <xsl:when test="$nmr=true()">
+	      <xsl:when test="$nmr='true'">
 		<xsl:value-of select="@percent-rota-outliers-full-length"/>
 	      </xsl:when>
 	      <xsl:otherwise>
@@ -2908,7 +3004,7 @@ Unmatched components exist in WilsonBaniso, <xsl:value-of select="position()"/>,
 	      </xsl:otherwise>
 	    </xsl:choose>
 	  </xsl:element>
-	  <xsl:if test="@percent-rota-outliers and $nmr=true()">
+	  <xsl:if test="@percent-rota-outliers and $nmr='true'">
 	    <xsl:element name="VRPTx:rotamer_outliers_percent_nmr_well_formed"><xsl:value-of select="@percent-rota-outliers"/></xsl:element>
 	  </xsl:if>
 	</xsl:if>
@@ -3531,27 +3627,58 @@ xsd:decimal
 	<xsl:element name="VRPTx:PDB_ins_code_2"><xsl:value-of select="../@icode"/></xsl:element>
 	<xsl:element name="VRPTx:PDB_ins_code_3"><xsl:value-of select="../@icode"/></xsl:element>
       </xsl:if>
-      <xsl:for-each select="tokenize(replace(replace(normalize-space(@atoms),',,',','),',$',''),',')">
-	<xsl:choose>
-	  <xsl:when test="position()=1">
-	    <xsl:element name="VRPTx:auth_atom_id_1"><xsl:value-of select="."/></xsl:element>
-	  </xsl:when>
-	  <xsl:when test="position()=2">
-	    <xsl:element name="VRPTx:auth_atom_id_2"><xsl:value-of select="."/></xsl:element>
-	  </xsl:when>
-	  <xsl:when test="position()=3">
-	    <xsl:element name="VRPTx:auth_atom_id_3"><xsl:value-of select="."/></xsl:element>
-	  </xsl:when>
-	  <xsl:otherwise>
-	    <xsl:call-template name="error_handler">
-	      <xsl:with-param name="terminate">yes</xsl:with-param>
-	      <xsl:with-param name="error_message">
+      <xsl:variable name="atoms"><xsl:call-template name="clean_atoms"><xsl:with-param name="atoms" select="normalize-space(@atoms)"/></xsl:call-template></xsl:variable>
+      <xsl:choose>
+	<xsl:when test="string-length($atoms)-string-length(translate($atoms,',',''))=2">
+	  <xsl:variable name="atom_list"><xsl:call-template name="tokenize"><xsl:with-param name="str" select="$atoms"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:variable>
+	  <xsl:for-each select="ext:node-set($atom_list)/token">
+	    <xsl:choose>
+	      <xsl:when test="position()=1">
+		<xsl:element name="VRPTx:auth_atom_id_1"><xsl:value-of select="text()"/></xsl:element>
+	      </xsl:when>
+	      <xsl:when test="position()=2">
+		<xsl:element name="VRPTx:auth_atom_id_2"><xsl:value-of select="text()"/></xsl:element>
+	      </xsl:when>
+	      <xsl:when test="position()=3">
+		<xsl:element name="VRPTx:auth_atom_id_3"><xsl:value-of select="text()"/></xsl:element>
+	      </xsl:when>
+	      <xsl:otherwise>
+		<xsl:call-template name="error_handler">
+		  <xsl:with-param name="terminate">yes</xsl:with-param>
+		  <xsl:with-param name="error_message">
 Unmatched components exist in atoms, <xsl:value-of select="position()"/>, found in XSLT code.
-	      </xsl:with-param>
-	    </xsl:call-template>
-	  </xsl:otherwise>
-	</xsl:choose>
-      </xsl:for-each>
+		  </xsl:with-param>
+		</xsl:call-template>
+	      </xsl:otherwise>
+	    </xsl:choose>
+	  </xsl:for-each>
+	</xsl:when>
+	<xsl:otherwise>
+	  <xsl:variable name="atoms_corrected"><xsl:call-template name="correct_atoms"><xsl:with-param name="atoms" select="$atoms"/></xsl:call-template></xsl:variable>
+	  <xsl:variable name="atom_list"><xsl:call-template name="tokenize"><xsl:with-param name="str" select="$atoms_corrected"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:variable>
+	  <xsl:for-each select="ext:node-set($atom_list)/token">
+	    <xsl:choose>
+	      <xsl:when test="position()=1">
+		<xsl:element name="VRPTx:auth_atom_id_1"><xsl:value-of select="text()"/></xsl:element>
+	      </xsl:when>
+	      <xsl:when test="position()=2">
+		<xsl:element name="VRPTx:auth_atom_id_2"><xsl:value-of select="text()"/></xsl:element>
+	      </xsl:when>
+	      <xsl:when test="position()=3">
+		<xsl:element name="VRPTx:auth_atom_id_3"><xsl:value-of select="text()"/></xsl:element>
+	      </xsl:when>
+	      <xsl:otherwise>
+		<xsl:call-template name="error_handler">
+		  <xsl:with-param name="terminate">yes</xsl:with-param>
+		  <xsl:with-param name="error_message">
+Unmatched components exist in atoms, <xsl:value-of select="position()"/>, found in XSLT code.
+		  </xsl:with-param>
+		</xsl:call-template>
+	      </xsl:otherwise>
+	    </xsl:choose>
+	  </xsl:for-each>
+	</xsl:otherwise>
+      </xsl:choose>
       <xsl:element name="VRPTx:angle_deviation"><xsl:value-of select="format-number(number(@obsval)-number(@mean),'0.000')"/></xsl:element>
       <xsl:element name="VRPTx:angle_standard_deviation"><xsl:value-of select="@stdev"/></xsl:element>
       <xsl:element name="VRPTx:angle_target_value"><xsl:value-of select="@mean"/></xsl:element>
@@ -3580,24 +3707,52 @@ Unmatched components exist in atoms, <xsl:value-of select="position()"/>, found 
 	<xsl:element name="VRPTx:PDB_ins_code_1"><xsl:value-of select="../@icode"/></xsl:element>
 	<xsl:element name="VRPTx:PDB_ins_code_2"><xsl:value-of select="../@icode"/></xsl:element>
       </xsl:if>
-      <xsl:for-each select="tokenize(replace(replace(normalize-space(@atoms),',,',','),',$',''),',')">
-	<xsl:choose>
-	  <xsl:when test="position()=1">
-	    <xsl:element name="VRPTx:auth_atom_id_1"><xsl:value-of select="."/></xsl:element>
-	  </xsl:when>
-	  <xsl:when test="position()=2">
-	    <xsl:element name="VRPTx:auth_atom_id_2"><xsl:value-of select="."/></xsl:element>
-	  </xsl:when>
-	  <xsl:otherwise>
-	    <xsl:call-template name="error_handler">
-	      <xsl:with-param name="terminate">yes</xsl:with-param>
-	      <xsl:with-param name="error_message">
+      <xsl:variable name="atoms"><xsl:call-template name="clean_atoms"><xsl:with-param name="atoms" select="normalize-space(@atoms)"/></xsl:call-template></xsl:variable>
+      <xsl:choose>
+	<xsl:when test="string-length($atoms)-string-length(translate($atoms,',',''))=1">
+	  <xsl:variable name="atom_list"><xsl:call-template name="tokenize"><xsl:with-param name="str" select="$atoms"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:variable>
+	  <xsl:for-each select="ext:node-set($atom_list)/token">
+	    <xsl:choose>
+	      <xsl:when test="position()=1">
+		<xsl:element name="VRPTx:auth_atom_id_1"><xsl:value-of select="text()"/></xsl:element>
+	      </xsl:when>
+	      <xsl:when test="position()=2">
+		<xsl:element name="VRPTx:auth_atom_id_2"><xsl:value-of select="text()"/></xsl:element>
+	      </xsl:when>
+	      <xsl:otherwise>
+		<xsl:call-template name="error_handler">
+		  <xsl:with-param name="terminate">yes</xsl:with-param>
+		  <xsl:with-param name="error_message">
 Unmatched components exist in atoms, <xsl:value-of select="position()"/>, found in XSLT code.
-	      </xsl:with-param>
-	    </xsl:call-template>
-	  </xsl:otherwise>
-	</xsl:choose>
-      </xsl:for-each>
+		  </xsl:with-param>
+		</xsl:call-template>
+	      </xsl:otherwise>
+	    </xsl:choose>
+	  </xsl:for-each>
+	</xsl:when>
+	<xsl:otherwise>
+	  <xsl:variable name="atoms_corrected"><xsl:call-template name="correct_atoms"><xsl:with-param name="atoms" select="$atoms"/></xsl:call-template></xsl:variable>
+	  <xsl:variable name="atom_list"><xsl:call-template name="tokenize"><xsl:with-param name="str" select="$atoms_corrected"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:variable>
+	  <xsl:for-each select="ext:node-set($atom_list)/token">
+	    <xsl:choose>
+	      <xsl:when test="position()=1">
+		<xsl:element name="VRPTx:auth_atom_id_1"><xsl:value-of select="text()"/></xsl:element>
+	      </xsl:when>
+	      <xsl:when test="position()=2">
+		<xsl:element name="VRPTx:auth_atom_id_2"><xsl:value-of select="text()"/></xsl:element>
+	      </xsl:when>
+	      <xsl:otherwise>
+		<xsl:call-template name="error_handler">
+		  <xsl:with-param name="terminate">yes</xsl:with-param>
+		  <xsl:with-param name="error_message">
+Unmatched components exist in atoms, <xsl:value-of select="position()"/>, found in XSLT code.
+		  </xsl:with-param>
+		</xsl:call-template>
+	      </xsl:otherwise>
+	    </xsl:choose>
+	  </xsl:for-each>
+	</xsl:otherwise>
+      </xsl:choose>
       <xsl:element name="VRPTx:bond_deviation"><xsl:value-of select="format-number(number(@obsval)-number(@mean),'0.000')"/></xsl:element>
       <xsl:element name="VRPTx:bond_standard_deviation"><xsl:value-of select="@stdev"/></xsl:element>
       <xsl:element name="VRPTx:bond_target_value"><xsl:value-of select="@mean"/></xsl:element>
@@ -3644,14 +3799,16 @@ Unmatched components exist in atoms, <xsl:value-of select="position()"/>, found 
 	<xsl:value-of select="../@icode"/>
       </xsl:if>
     </xsl:variable>
-    <xsl:for-each select="tokenize(replace(replace(normalize-space(@atoms),',,',','),',$',''),',')">
+    <xsl:variable name="atoms"><xsl:call-template name="clean_atoms"><xsl:with-param name="atoms" select="normalize-space(@atoms)"/></xsl:call-template></xsl:variable>
+    <xsl:variable name="atom_list"><xsl:call-template name="tokenize"><xsl:with-param name="str" select="$atoms"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:variable>
+    <xsl:for-each select="ext:node-set($atom_list)/token">
       <VRPTx:pdbx_validate_rmsd_rings_atom ring_id="{$ring_id}">
 	<xsl:attribute name="id"><xsl:value-of select="position()"/></xsl:attribute>
 	<xsl:element name="VRPTx:PDB_model_num"><xsl:value-of select="$PDB_model_num"/></xsl:element>
 	<xsl:element name="VRPTx:auth_asym_id"><xsl:value-of select="$auth_asym_id"/></xsl:element>
 	<xsl:element name="VRPTx:auth_comp_id"><xsl:value-of select="$auth_comp_id"/></xsl:element>
 	<xsl:element name="VRPTx:auth_seq_id"><xsl:value-of select="$auth_seq_id"/></xsl:element>
-	<xsl:element name="VRPTx:auth_atom_id"><xsl:value-of select="."/></xsl:element>
+	<xsl:element name="VRPTx:auth_atom_id"><xsl:value-of select="text()"/></xsl:element>
 	<xsl:if test="$label_alt_id!=''">
 	  <xsl:element name="VRPTx:label_alt_id"><xsl:value-of select="$label_alt_id"/></xsl:element>
 	</xsl:if>
@@ -3702,22 +3859,48 @@ Unmatched components exist in atoms, <xsl:value-of select="position()"/>, found 
 	<xsl:value-of select="../@icode"/>
       </xsl:if>
     </xsl:variable>
-    <xsl:for-each select="tokenize(replace(replace(normalize-space(@atoms),',,',','),',$',''),',')">
-      <VRPTx:pdbx_validate_rmsd_torsions_atom torsion_id="{$torsion_id}">
-	<xsl:attribute name="id"><xsl:value-of select="position()"/></xsl:attribute>
-	<xsl:element name="VRPTx:PDB_model_num"><xsl:value-of select="$PDB_model_num"/></xsl:element>
-	<xsl:element name="VRPTx:auth_asym_id"><xsl:value-of select="$auth_asym_id"/></xsl:element>
-	<xsl:element name="VRPTx:auth_comp_id"><xsl:value-of select="$auth_comp_id"/></xsl:element>
-	<xsl:element name="VRPTx:auth_seq_id"><xsl:value-of select="$auth_seq_id"/></xsl:element>
-	<xsl:element name="VRPTx:auth_atom_id"><xsl:value-of select="."/></xsl:element>
-	<xsl:if test="$label_alt_id!=''">
-	  <xsl:element name="VRPTx:label_alt_id"><xsl:value-of select="$label_alt_id"/></xsl:element>
-	</xsl:if>
-	<xsl:if test="$PDB_ins_code!=''">
-	  <xsl:element name="VRPTx:PDB_ins_code"><xsl:value-of select="$PDB_ins_code"/></xsl:element>
-	</xsl:if>
-      </VRPTx:pdbx_validate_rmsd_torsions_atom>
-    </xsl:for-each>
+    <xsl:variable name="atoms"><xsl:call-template name="clean_atoms"><xsl:with-param name="atoms" select="normalize-space(@atoms)"/></xsl:call-template></xsl:variable>
+    <xsl:choose>
+      <xsl:when test="string-length($atoms)-string-length(translate($atoms,',',''))=3">
+	<xsl:variable name="atom_list"><xsl:call-template name="tokenize"><xsl:with-param name="str" select="$atoms"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:variable>
+	<xsl:for-each select="ext:node-set($atom_list)/token">
+	  <VRPTx:pdbx_validate_rmsd_torsions_atom torsion_id="{$torsion_id}">
+	    <xsl:attribute name="id"><xsl:value-of select="position()"/></xsl:attribute>
+	    <xsl:element name="VRPTx:PDB_model_num"><xsl:value-of select="$PDB_model_num"/></xsl:element>
+	    <xsl:element name="VRPTx:auth_asym_id"><xsl:value-of select="$auth_asym_id"/></xsl:element>
+	    <xsl:element name="VRPTx:auth_comp_id"><xsl:value-of select="$auth_comp_id"/></xsl:element>
+	    <xsl:element name="VRPTx:auth_seq_id"><xsl:value-of select="$auth_seq_id"/></xsl:element>
+	    <xsl:element name="VRPTx:auth_atom_id"><xsl:value-of select="text()"/></xsl:element>
+	    <xsl:if test="$label_alt_id!=''">
+	      <xsl:element name="VRPTx:label_alt_id"><xsl:value-of select="$label_alt_id"/></xsl:element>
+	    </xsl:if>
+	    <xsl:if test="$PDB_ins_code!=''">
+	      <xsl:element name="VRPTx:PDB_ins_code"><xsl:value-of select="$PDB_ins_code"/></xsl:element>
+	    </xsl:if>
+	  </VRPTx:pdbx_validate_rmsd_torsions_atom>
+	</xsl:for-each>
+      </xsl:when>
+      <xsl:otherwise>
+	<xsl:variable name="atoms_corrected"><xsl:call-template name="correct_atoms"><xsl:with-param name="atoms" select="$atoms"/></xsl:call-template></xsl:variable>
+	<xsl:variable name="atom_list"><xsl:call-template name="tokenize"><xsl:with-param name="str" select="$atoms_corrected"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:variable>
+	<xsl:for-each select="ext:node-set($atom_list)/token">
+	  <VRPTx:pdbx_validate_rmsd_torsions_atom torsion_id="{$torsion_id}">
+	    <xsl:attribute name="id"><xsl:value-of select="position()"/></xsl:attribute>
+	    <xsl:element name="VRPTx:PDB_model_num"><xsl:value-of select="$PDB_model_num"/></xsl:element>
+	    <xsl:element name="VRPTx:auth_asym_id"><xsl:value-of select="$auth_asym_id"/></xsl:element>
+	    <xsl:element name="VRPTx:auth_comp_id"><xsl:value-of select="$auth_comp_id"/></xsl:element>
+	    <xsl:element name="VRPTx:auth_seq_id"><xsl:value-of select="$auth_seq_id"/></xsl:element>
+	    <xsl:element name="VRPTx:auth_atom_id"><xsl:value-of select="text()"/></xsl:element>
+	    <xsl:if test="$label_alt_id!=''">
+	      <xsl:element name="VRPTx:label_alt_id"><xsl:value-of select="$label_alt_id"/></xsl:element>
+	    </xsl:if>
+	    <xsl:if test="$PDB_ins_code!=''">
+	      <xsl:element name="VRPTx:PDB_ins_code"><xsl:value-of select="$PDB_ins_code"/></xsl:element>
+	    </xsl:if>
+	  </VRPTx:pdbx_validate_rmsd_torsions_atom>
+	</xsl:for-each>
+      </xsl:otherwise>
+    </xsl:choose>
   </xsl:template>
 
   <xsl:template name="pdbx_struct_nmr_ens_clust_gen">
@@ -3754,16 +3937,19 @@ Unmatched components exist in atoms, <xsl:value-of select="position()"/>, found 
 
   <xsl:template name="pdbx_struct_nmr_ens_dom_lim">
     <xsl:variable name="dom_id"><xsl:value-of select="@domain"/></xsl:variable>
-    <xsl:for-each select="tokenize(normalize-space(@residue_string),',')">
+    <xsl:variable name="res_list"><xsl:call-template name="tokenize"><xsl:with-param name="str" select="normalize-space(@residue_string)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:variable>
+    <xsl:for-each select="ext:node-set($res_list)/token">
     <VRPTx:pdbx_struct_nmr_ens_dom_lim>
       <xsl:attribute name="dom_id"><xsl:value-of select="$dom_id"/></xsl:attribute>
       <xsl:attribute name="component_id"><xsl:value-of select="position()"/></xsl:attribute>
+      <xsl:variable name="range"><xsl:call-template name="replace-string"><xsl:with-param name="str" select="normalize-space(text())"/><xsl:with-param name="replace">:-</xsl:with-param><xsl:with-param name="with">:_</xsl:with-param></xsl:call-template></xsl:variable>
+      <xsl:variable name="range_list"><xsl:call-template name="tokenize"><xsl:with-param name="str" select="$range"/><xsl:with-param name="substr">-</xsl:with-param></xsl:call-template></xsl:variable>
 
-      <xsl:for-each select="tokenize(replace(normalize-space(.),':-',':_'),'-')"> <!-- rescue A:-1-A:-1 case -->
+      <xsl:for-each select="ext:node-set($range_list)/token"> <!-- rescue A:-1-A:-1 case -->
 	<xsl:choose>
 	  <xsl:when test="position()=1">
-	    <xsl:variable name="beg_auth_asym_id"><xsl:value-of select="substring-before(.,':')"/></xsl:variable>
-	    <xsl:variable name="beg_auth_seq_id"><xsl:value-of select="translate(substring-after(.,':'),'_','-')"/></xsl:variable> <!-- retrieve A:-1 from A:_1 -->
+	    <xsl:variable name="beg_auth_asym_id"><xsl:value-of select="substring-before(text(),':')"/></xsl:variable>
+	    <xsl:variable name="beg_auth_seq_id"><xsl:value-of select="translate(substring-after(text(),':'),'_','-')"/></xsl:variable> <!-- retrieve A:-1 from A:_1 -->
 	    <xsl:element name="VRPTx:beg_auth_asym_id"><xsl:value-of select="$beg_auth_asym_id"/></xsl:element>
 	    <xsl:element name="VRPTx:beg_auth_seq_id"><xsl:value-of select="$beg_auth_seq_id"/></xsl:element>
 	    <xsl:element name="VRPTx:beg_auth_comp_id">
@@ -3771,8 +3957,8 @@ Unmatched components exist in atoms, <xsl:value-of select="position()"/>, found 
 	    </xsl:element>
 	  </xsl:when>
 	  <xsl:when test="position()=2">
-	    <xsl:variable name="end_auth_asym_id"><xsl:value-of select="substring-before(.,':')"/></xsl:variable>
-	    <xsl:variable name="end_auth_seq_id"><xsl:value-of select="translate(substring-after(.,':'),'_','-')"/></xsl:variable>
+	    <xsl:variable name="end_auth_asym_id"><xsl:value-of select="substring-before(text(),':')"/></xsl:variable>
+	    <xsl:variable name="end_auth_seq_id"><xsl:value-of select="translate(substring-after(text(),':'),'_','-')"/></xsl:variable>
 	    <xsl:element name="VRPTx:end_auth_asym_id"><xsl:value-of select="$end_auth_asym_id"/></xsl:element>
 	    <xsl:element name="VRPTx:end_auth_seq_id"><xsl:value-of select="$end_auth_seq_id"/></xsl:element>
 	    <xsl:element name="VRPTx:end_auth_comp_id">
@@ -3855,6 +4041,136 @@ Unmatched components exist in residue_string, <xsl:value-of select="position()"/
 
   <xsl:template match="*[@xsi:nil='true']"/>
   <xsl:template match="*|text()|@*"/>
+
+  <xsl:template name="concat_violated_distance_models">
+    <xsl:param name="violated_distance_restraints"/>
+    <xsl:param name="rlist_id"/>
+    <xsl:param name="rest_id"/>
+    <xsl:param name="cur_model"/>
+    <xsl:param name="end_model"/>
+    <xsl:if test="$violated_distance_restraints/violated_distance_restraint[@rlist_id=$rlist_id and @rest_id=$rest_id and @model=$cur_model]">
+      <xsl:value-of select="concat($cur_model,',')"/>
+    </xsl:if>
+    <xsl:if test="$cur_model+1&lt;=$end_model">
+      <xsl:call-template name="concat_violated_distance_models">
+	<xsl:with-param name="violated_distance_restraints" select="$violated_distance_restraints"/>
+	<xsl:with-param name="rlist_id" select="$rlist_id"/>
+	<xsl:with-param name="rest_id" select="$rest_id"/>
+	<xsl:with-param name="cur_model" select="$cur_model+1"/>
+	<xsl:with-param name="end_model" select="$end_model"/>
+      </xsl:call-template>
+    </xsl:if>
+  </xsl:template>
+
+  <xsl:template name="clean_atoms">
+    <xsl:param name="atoms"/>
+    <xsl:variable name="_atoms">
+      <xsl:call-template name="replace-string">
+	<xsl:with-param name="str" select="normalize-space($atoms)"/>
+	<xsl:with-param name="replace">,,</xsl:with-param>
+	<xsl:with-param name="with">,</xsl:with-param>
+      </xsl:call-template>
+    </xsl:variable>
+    <xsl:choose>
+      <xsl:when test="substring($_atoms,string-length($_atoms))=','">
+	<xsl:value-of select="substring($_atoms,1,string-length($_atoms)-1)"/>
+      </xsl:when>
+      <xsl:otherwise>
+	<xsl:value-of select="$_atoms"/>
+      </xsl:otherwise>
+    </xsl:choose>
+  </xsl:template>
+
+  <xsl:template name="correct_atoms">
+    <xsl:param name="atoms"/>
+    <xsl:variable name="atom_list">
+      <xsl:call-template name="tokenize">
+	<xsl:with-param name="str" select="$atoms"/>
+	<xsl:with-param name="substr">,</xsl:with-param>
+      </xsl:call-template>
+    </xsl:variable>
+    <xsl:variable name="count"><xsl:value-of select="string-length($atoms)-string-length(translate($atoms,',',''))+1"/></xsl:variable>
+    <xsl:variable name="count_1"><xsl:value-of select="$count - 1"/></xsl:variable>
+    <xsl:choose>
+      <xsl:when test="$count&gt;1">
+	<xsl:variable name="sngl_atom_pos">
+	  <xsl:for-each select="ext:node-set($atom_list)/token">
+	    <xsl:if test="string-length(text())=1"><xsl:value-of select="concat(position(),',')"/></xsl:if>
+	  </xsl:for-each>
+	</xsl:variable>
+	<xsl:variable name="sngl_atom_fst">
+	  <xsl:if test="$sngl_atom_pos"><xsl:value-of select="number(substring-before($sngl_atom_pos,','))"/></xsl:if>
+	</xsl:variable>
+	<xsl:variable name="sngl_atom_fst_1">
+	  <xsl:if test="$sngl_atom_fst"><xsl:value-of select="$sngl_atom_fst+1"/></xsl:if>
+	</xsl:variable>
+	<xsl:choose>
+	  <xsl:when test="string-length($atom_list/token[1])=1 and string-length($atom_list/token[2])=1">
+	    <xsl:variable name="_atoms">
+	      <xsl:value-of select="concat($atom_list/token[1],'_',$atom_list/token[2])"/>
+	      <xsl:for-each select="ext:node-set($atom_list)/token">
+		<xsl:if test="position()&gt;2">
+		  <xsl:value-of select="concat(',',text())"/>
+		</xsl:if>
+	      </xsl:for-each>
+	    </xsl:variable>
+	    <xsl:call-template name="correct_atoms">
+	      <xsl:with-param name="atoms" select="$_atoms"/>
+	    </xsl:call-template>
+	  </xsl:when>
+	  <xsl:when test="string-length($atom_list/token[position()=$count_1])=1 and string-length($atom_list/token[position()=$count])=1">
+	    <xsl:variable name="_atoms">
+	      <xsl:for-each select="ext:node-set($atom_list)/token">
+		<xsl:if test="position()&lt;$count_1">
+		  <xsl:value-of select="concat(text(),',')"/>
+		</xsl:if>
+	      </xsl:for-each>
+	      <xsl:value-of select="concat($atom_list/token[position()=$count_1],'_',$atom_list/token[position()=$count])"/>
+	    </xsl:variable>
+	    <xsl:call-template name="correct_atoms">
+	      <xsl:with-param name="atoms" select="$_atoms"/>
+	    </xsl:call-template>
+	  </xsl:when>
+	  <xsl:when test="$sngl_atom_fst_1 and $sngl_atom_fst_1&lt;=$count and string-length($atom_list/token[position()=$sngl_atom_fst_1])=1">
+	    <xsl:variable name="_atoms">
+	      <xsl:value-of select="concat($atom_list/token[1],',')"/>
+	      <xsl:for-each select="ext:node-set($atom_list)/token">
+		<xsl:if test="position()&gt;1">
+		  <xsl:choose>
+		    <xsl:when test="position()&lt;$sngl_atom_fst or position()&gt;$sngl_atom_fst_1">
+		      <xsl:choose>
+			<xsl:when test="position()&lt;$count">
+			  <xsl:value-of select="concat(text(),',')"/>
+			</xsl:when>
+			<xsl:otherwise>
+			  <xsl:value-of select="text()"/>
+			</xsl:otherwise>
+		      </xsl:choose>
+		    </xsl:when>
+		    <xsl:when test="position()=$sngl_atom_fst">
+		      <xsl:value-of select="text()"/>
+		    </xsl:when>
+		    <xsl:otherwise>
+		      <xsl:value-of select="concat('_',text(),',')"/>
+		    </xsl:otherwise>
+		  </xsl:choose>
+		</xsl:if>
+	      </xsl:for-each>
+	    </xsl:variable>
+	    <xsl:call-template name="correct_atoms">
+	      <xsl:with-param name="atoms" select="$_atoms"/>
+	    </xsl:call-template>
+	  </xsl:when>
+	  <xsl:otherwise>
+	    <xsl:value-of select="$atoms"/>
+	  </xsl:otherwise>
+	</xsl:choose>
+      </xsl:when>
+      <xsl:otherwise>
+	<xsl:value-of select="$atoms"/>
+      </xsl:otherwise>
+    </xsl:choose>
+  </xsl:template>
 
   <xsl:template name="error_handler">
     <xsl:param name="error_message"/>

@@ -42,7 +42,7 @@ VRPT PDBML Schema translated from wwPDB Validation Information Dictionary v4.375
     <xsl:if test="$name!='datablockType'">
       <xsd:complexType name="{$name}">
 	<xsl:call-template name="category_type">
-	  <xsl:with-param name="category"><xsl:value-of select="$name"/></xsl:with-param>
+	  <xsl:with-param name="category" select="$name"/>
 	</xsl:call-template>
       </xsd:complexType>
     </xsl:if>
@@ -76,16 +76,16 @@ VRPT PDBML Schema translated from wwPDB Validation Information Dictionary v4.375
 		  <xsd:all>
 		    <xsl:for-each select="xsd:complexType[1]/xsd:all[1]/xsd:element">
 		      <xsl:call-template name="data_item">
-			<xsl:with-param name="category"><xsl:value-of select="$category"/></xsl:with-param>
-			<xsl:with-param name="item"><xsl:value-of select="@name"/></xsl:with-param>
+			<xsl:with-param name="category" select="$category"/>
+			<xsl:with-param name="item" select="@name"/>
 		      </xsl:call-template>
 		    </xsl:for-each>
 		  </xsd:all>
 		</xsl:if>
 		<xsl:for-each select="xsd:complexType[1]/xsd:attribute">
 		  <xsl:call-template name="key_item">
-		    <xsl:with-param name="category"><xsl:value-of select="$category"/></xsl:with-param>
-		    <xsl:with-param name="item"><xsl:value-of select="@name"/></xsl:with-param>
+		    <xsl:with-param name="category" select="$category"/>
+		    <xsl:with-param name="item" select="@name"/>
 		  </xsl:call-template>
 		</xsl:for-each>
 	      </xsd:complexType>
@@ -123,8 +123,8 @@ VRPT PDBML Schema translated from wwPDB Validation Information Dictionary v4.375
 	</xsd:annotation>
       </xsl:for-each>
       <xsl:call-template name="fuse_copy">
-	<xsl:with-param name="category"><xsl:value-of select="replace($category,'Type$','')"/></xsl:with-param>
-	<xsl:with-param name="item"><xsl:value-of select="$item"/></xsl:with-param>
+	<xsl:with-param name="category" select="replace($category,'Type$','')"/>
+	<xsl:with-param name="item" select="$item"/>
       </xsl:call-template>
     </xsd:element>
   </xsl:template>
@@ -150,8 +150,8 @@ VRPT PDBML Schema translated from wwPDB Validation Information Dictionary v4.375
 	</xsd:annotation>
       </xsl:for-each>
       <xsl:call-template name="fuse_copy">
-	<xsl:with-param name="category"><xsl:value-of select="replace($category,'Type$','')"/></xsl:with-param>
-	<xsl:with-param name="item"><xsl:value-of select="$item"/></xsl:with-param>
+	<xsl:with-param name="category" select="replace($category,'Type$','')"/>
+	<xsl:with-param name="item" select="$item"/>
       </xsl:call-template>
     </xsd:attribute>
   </xsl:template>

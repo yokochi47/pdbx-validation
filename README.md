@@ -206,8 +206,9 @@ File path | Document
 
 ## Release notes
 
-- **Jul 25, 2023**: Release v4.4.25
+- **Jul 27, 2023**: Release v4.4.25
 	- Update wwPDB Validation Information Dictionary to 4.375.
+	- Performance improvement of extract_info.xsl (XSLT 2.0 -> 1.0, though SAXON is required)
 
 - **Jul 24, 2023**: Release v4.4.24
 	- Update wwPDB Validation Information Dictionary to 4.374.

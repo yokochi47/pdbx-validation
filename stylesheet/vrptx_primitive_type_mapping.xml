@@ -167,7 +167,9 @@
    <category_item name="em_3d_fitting">
       <data_item name="overall_b_value" type="xsd:decimal"/>
    </category_item>
-   <category_item name="em_3d_fitting_list"/>
+   <category_item name="em_3d_fitting_list">
+      <data_item name="initial_refinement_model_id" type="xsd:int"/>
+   </category_item>
    <category_item name="em_3d_reconstruction">
       <data_item name="actual_pixel_size" type="xsd:decimal"/>
       <data_item name="nominal_pixel_size" type="xsd:decimal"/>

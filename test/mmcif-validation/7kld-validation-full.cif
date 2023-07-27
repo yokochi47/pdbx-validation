@@ -2605,7 +2605,7 @@ _pdbx_validate_rmsd_angle.auth_seq_id_3              7
 _pdbx_validate_rmsd_angle.auth_atom_id_1             CG 
 _pdbx_validate_rmsd_angle.auth_atom_id_2             CB 
 _pdbx_validate_rmsd_angle.auth_atom_id_3             CA 
-_pdbx_validate_rmsd_angle.angle_deviation            -4.32 
+_pdbx_validate_rmsd_angle.angle_deviation            -4.320 
 _pdbx_validate_rmsd_angle.angle_standard_deviation   2.08 
 _pdbx_validate_rmsd_angle.angle_target_value         114.13 
 _pdbx_validate_rmsd_angle.angle_value                109.81 

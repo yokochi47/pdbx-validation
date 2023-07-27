@@ -4036,29 +4036,29 @@ _pdbx_validate_rmsd_angle.Zscore
 _pdbx_validate_rmsd_angle.linker_flag 
 _pdbx_validate_rmsd_angle.angle_minimum_diff_to_kb 
 _pdbx_validate_rmsd_angle.number_angles_in_kb 
-3  1 B B B ASP ASP ASP 198  198  198  CB CG OD1 4.52 0.900 118.300 122.820 
+3  1 B B B ASP ASP ASP 198  198  198  CB CG OD1 4.520 0.900 118.300 122.820 
 5.02 N ?    ?  
-4  1 A A A NAG NAG NAG 1319 1319 1319 C1 O5 C5  3.05 1.35  112.19  115.24  
+4  1 A A A NAG NAG NAG 1319 1319 1319 C1 O5 C5  3.050 1.35  112.19  115.24  
 2.25 ? 0.28 88 
-5  1 B B B NAG NAG NAG 1316 1316 1316 C1 C2 N2  5.21 1.71  110.49  115.70  
+5  1 B B B NAG NAG NAG 1316 1316 1316 C1 C2 N2  5.210 1.71  110.49  115.70  
 3.05 ? 2.29 21 
-6  1 B B B NAG NAG NAG 1316 1316 1316 C2 N2 C7  9.78 1.42  122.90  132.68  
+6  1 B B B NAG NAG NAG 1316 1316 1316 C2 N2 C7  9.780 1.42  122.90  132.68  
 6.86 ? 6.18 73 
-7  1 C C C NAG NAG NAG 1316 1316 1316 C2 N2 C7  3.46 1.42  122.90  126.36  
+7  1 C C C NAG NAG NAG 1316 1316 1316 C2 N2 C7  3.460 1.42  122.90  126.36  
 2.42 ? 0.14 73 
-8  1 E E E NAG NAG NAG 1    1    1    C2 N2 C7  3.22 1.42  122.90  126.12  
+8  1 E E E NAG NAG NAG 1    1    1    C2 N2 C7  3.220 1.42  122.90  126.12  
 2.26 ? 0.37 73 
-9  1 E E E NAG NAG NAG 2    2    2    C1 C2 N2  5.43 1.71  110.49  115.92  
+9  1 E E E NAG NAG NAG 2    2    2    C1 C2 N2  5.430 1.71  110.49  115.92  
 3.18 ? 2.51 21 
-10 1 E E E NAG NAG NAG 2    2    2    C2 N2 C7  9.82 1.42  122.90  132.72  
+10 1 E E E NAG NAG NAG 2    2    2    C2 N2 C7  9.820 1.42  122.90  132.72  
 6.89 ? 6.22 73 
-11 1 M M M NAG NAG NAG 1    1    1    C1 O5 C5  3.70 1.35  112.19  115.89  
+11 1 M M M NAG NAG NAG 1    1    1    C1 O5 C5  3.700 1.35  112.19  115.89  
 2.73 ? 0.94 88 
-12 1 O O O NAG NAG NAG 1    1    1    C2 N2 C7  3.37 1.42  122.90  126.27  
+12 1 O O O NAG NAG NAG 1    1    1    C2 N2 C7  3.370 1.42  122.90  126.27  
 2.36 ? 0.23 73 
-13 1 P P P BMA BMA BMA 3    3    3    C1 O5 C5  3.52 1.35  112.19  115.71  
+13 1 P P P BMA BMA BMA 3    3    3    C1 O5 C5  3.520 1.35  112.19  115.71  
 2.60 ? 0.75 88 
-14 1 Q Q Q BMA BMA BMA 2    2    2    C1 O5 C5  3.46 1.35  112.19  115.65  
+14 1 Q Q Q BMA BMA BMA 2    2    2    C1 O5 C5  3.460 1.35  112.19  115.65  
 2.55 ? 0.69 88 
 # 
 _pdbx_validate_rmsd_bond.id                        1 

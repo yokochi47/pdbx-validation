@@ -37764,7 +37764,7 @@
       <VRPTx:auth_atom_id_1>CB</VRPTx:auth_atom_id_1>
       <VRPTx:auth_atom_id_2>CG</VRPTx:auth_atom_id_2>
       <VRPTx:auth_atom_id_3>OD1</VRPTx:auth_atom_id_3>
-      <VRPTx:angle_deviation>4.52</VRPTx:angle_deviation>
+      <VRPTx:angle_deviation>4.520</VRPTx:angle_deviation>
       <VRPTx:angle_standard_deviation>0.900</VRPTx:angle_standard_deviation>
       <VRPTx:angle_target_value>118.300</VRPTx:angle_target_value>
       <VRPTx:angle_value>122.820</VRPTx:angle_value>
@@ -37785,7 +37785,7 @@
       <VRPTx:auth_atom_id_1>C1</VRPTx:auth_atom_id_1>
       <VRPTx:auth_atom_id_2>O5</VRPTx:auth_atom_id_2>
       <VRPTx:auth_atom_id_3>C5</VRPTx:auth_atom_id_3>
-      <VRPTx:angle_deviation>3.05</VRPTx:angle_deviation>
+      <VRPTx:angle_deviation>3.050</VRPTx:angle_deviation>
       <VRPTx:angle_standard_deviation>1.35</VRPTx:angle_standard_deviation>
       <VRPTx:angle_target_value>112.19</VRPTx:angle_target_value>
       <VRPTx:angle_value>115.24</VRPTx:angle_value>
@@ -37807,7 +37807,7 @@
       <VRPTx:auth_atom_id_1>C1</VRPTx:auth_atom_id_1>
       <VRPTx:auth_atom_id_2>C2</VRPTx:auth_atom_id_2>
       <VRPTx:auth_atom_id_3>N2</VRPTx:auth_atom_id_3>
-      <VRPTx:angle_deviation>5.21</VRPTx:angle_deviation>
+      <VRPTx:angle_deviation>5.210</VRPTx:angle_deviation>
       <VRPTx:angle_standard_deviation>1.71</VRPTx:angle_standard_deviation>
       <VRPTx:angle_target_value>110.49</VRPTx:angle_target_value>
       <VRPTx:angle_value>115.70</VRPTx:angle_value>
@@ -37829,7 +37829,7 @@
       <VRPTx:auth_atom_id_1>C2</VRPTx:auth_atom_id_1>
       <VRPTx:auth_atom_id_2>N2</VRPTx:auth_atom_id_2>
       <VRPTx:auth_atom_id_3>C7</VRPTx:auth_atom_id_3>
-      <VRPTx:angle_deviation>9.78</VRPTx:angle_deviation>
+      <VRPTx:angle_deviation>9.780</VRPTx:angle_deviation>
       <VRPTx:angle_standard_deviation>1.42</VRPTx:angle_standard_deviation>
       <VRPTx:angle_target_value>122.90</VRPTx:angle_target_value>
       <VRPTx:angle_value>132.68</VRPTx:angle_value>
@@ -37851,7 +37851,7 @@
       <VRPTx:auth_atom_id_1>C2</VRPTx:auth_atom_id_1>
       <VRPTx:auth_atom_id_2>N2</VRPTx:auth_atom_id_2>
       <VRPTx:auth_atom_id_3>C7</VRPTx:auth_atom_id_3>
-      <VRPTx:angle_deviation>3.46</VRPTx:angle_deviation>
+      <VRPTx:angle_deviation>3.460</VRPTx:angle_deviation>
       <VRPTx:angle_standard_deviation>1.42</VRPTx:angle_standard_deviation>
       <VRPTx:angle_target_value>122.90</VRPTx:angle_target_value>
       <VRPTx:angle_value>126.36</VRPTx:angle_value>
@@ -37873,7 +37873,7 @@
       <VRPTx:auth_atom_id_1>C2</VRPTx:auth_atom_id_1>
       <VRPTx:auth_atom_id_2>N2</VRPTx:auth_atom_id_2>
       <VRPTx:auth_atom_id_3>C7</VRPTx:auth_atom_id_3>
-      <VRPTx:angle_deviation>3.22</VRPTx:angle_deviation>
+      <VRPTx:angle_deviation>3.220</VRPTx:angle_deviation>
       <VRPTx:angle_standard_deviation>1.42</VRPTx:angle_standard_deviation>
       <VRPTx:angle_target_value>122.90</VRPTx:angle_target_value>
       <VRPTx:angle_value>126.12</VRPTx:angle_value>
@@ -37895,7 +37895,7 @@
       <VRPTx:auth_atom_id_1>C1</VRPTx:auth_atom_id_1>
       <VRPTx:auth_atom_id_2>C2</VRPTx:auth_atom_id_2>
       <VRPTx:auth_atom_id_3>N2</VRPTx:auth_atom_id_3>
-      <VRPTx:angle_deviation>5.43</VRPTx:angle_deviation>
+      <VRPTx:angle_deviation>5.430</VRPTx:angle_deviation>
       <VRPTx:angle_standard_deviation>1.71</VRPTx:angle_standard_deviation>
       <VRPTx:angle_target_value>110.49</VRPTx:angle_target_value>
       <VRPTx:angle_value>115.92</VRPTx:angle_value>
@@ -37917,7 +37917,7 @@
       <VRPTx:auth_atom_id_1>C2</VRPTx:auth_atom_id_1>
       <VRPTx:auth_atom_id_2>N2</VRPTx:auth_atom_id_2>
       <VRPTx:auth_atom_id_3>C7</VRPTx:auth_atom_id_3>
-      <VRPTx:angle_deviation>9.82</VRPTx:angle_deviation>
+      <VRPTx:angle_deviation>9.820</VRPTx:angle_deviation>
       <VRPTx:angle_standard_deviation>1.42</VRPTx:angle_standard_deviation>
       <VRPTx:angle_target_value>122.90</VRPTx:angle_target_value>
       <VRPTx:angle_value>132.72</VRPTx:angle_value>
@@ -37939,7 +37939,7 @@
       <VRPTx:auth_atom_id_1>C1</VRPTx:auth_atom_id_1>
       <VRPTx:auth_atom_id_2>O5</VRPTx:auth_atom_id_2>
       <VRPTx:auth_atom_id_3>C5</VRPTx:auth_atom_id_3>
-      <VRPTx:angle_deviation>3.70</VRPTx:angle_deviation>
+      <VRPTx:angle_deviation>3.700</VRPTx:angle_deviation>
       <VRPTx:angle_standard_deviation>1.35</VRPTx:angle_standard_deviation>
       <VRPTx:angle_target_value>112.19</VRPTx:angle_target_value>
       <VRPTx:angle_value>115.89</VRPTx:angle_value>
@@ -37961,7 +37961,7 @@
       <VRPTx:auth_atom_id_1>C2</VRPTx:auth_atom_id_1>
       <VRPTx:auth_atom_id_2>N2</VRPTx:auth_atom_id_2>
       <VRPTx:auth_atom_id_3>C7</VRPTx:auth_atom_id_3>
-      <VRPTx:angle_deviation>3.37</VRPTx:angle_deviation>
+      <VRPTx:angle_deviation>3.370</VRPTx:angle_deviation>
       <VRPTx:angle_standard_deviation>1.42</VRPTx:angle_standard_deviation>
       <VRPTx:angle_target_value>122.90</VRPTx:angle_target_value>
       <VRPTx:angle_value>126.27</VRPTx:angle_value>
@@ -37983,7 +37983,7 @@
       <VRPTx:auth_atom_id_1>C1</VRPTx:auth_atom_id_1>
       <VRPTx:auth_atom_id_2>O5</VRPTx:auth_atom_id_2>
       <VRPTx:auth_atom_id_3>C5</VRPTx:auth_atom_id_3>
-      <VRPTx:angle_deviation>3.52</VRPTx:angle_deviation>
+      <VRPTx:angle_deviation>3.520</VRPTx:angle_deviation>
       <VRPTx:angle_standard_deviation>1.35</VRPTx:angle_standard_deviation>
       <VRPTx:angle_target_value>112.19</VRPTx:angle_target_value>
       <VRPTx:angle_value>115.71</VRPTx:angle_value>
@@ -38005,7 +38005,7 @@
       <VRPTx:auth_atom_id_1>C1</VRPTx:auth_atom_id_1>
       <VRPTx:auth_atom_id_2>O5</VRPTx:auth_atom_id_2>
       <VRPTx:auth_atom_id_3>C5</VRPTx:auth_atom_id_3>
-      <VRPTx:angle_deviation>3.46</VRPTx:angle_deviation>
+      <VRPTx:angle_deviation>3.460</VRPTx:angle_deviation>
       <VRPTx:angle_standard_deviation>1.35</VRPTx:angle_standard_deviation>
       <VRPTx:angle_target_value>112.19</VRPTx:angle_target_value>
       <VRPTx:angle_value>115.65</VRPTx:angle_value>
