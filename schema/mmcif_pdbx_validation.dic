@@ -1,10 +1,10 @@
 ###########################################################################
 #
 # File:  mmcif_pdbx_validation-v4.dic
-# Date:  Tue Jul 25 13:16:26 JST 2023
+# Date:  Thu Aug  3 15:47:35 JST 2023
 #
 # Created from:
-#        mmcif_pdbx_v50.dic   - PDB Exchange Data Dictionary (V5.375)
+#        mmcif_pdbx_v50.dic   - PDB Exchange Data Dictionary (V5.376)
 #        http://wwpdb.org/validation/schema/wwpdb_validation_v6.02.xsd
 #         - a XML schema for wwPDB validation reports, v6.02, rev. 2023-02-06
 #
@@ -31,7 +31,7 @@ data_mmcif_pdbx_validation.dic
 
     _dictionary.title           mmcif_pdbx_validation.dic
     _dictionary.datablock_id    mmcif_pdbx_validation.dic
-    _dictionary.version         4.375
+    _dictionary.version         4.376
 #
     loop_
     _dictionary_history.version
@@ -1198,6 +1198,12 @@ data_mmcif_pdbx_validation.dic
 >     + Add "SSRF BEAMLINE BL03HB" and "SSRF BEAMLINE BL17UM" to
 >       _diffrn_source.type
 >     + Extend _pdbx_audit_support.funding_organization enumeration # not mapped
+;
+  4.376   2023-08-03
+;
+>     + Correct pdbx_item_linked_group_list definitions for pdbx_entity_branch_link # not mapped
+>     + Add PDB-Dev to pdbx_initial_refinement_model.source_name enumeration # not mapped
+>     + Temporary removal atom_site.label_atom_id -> chem_comp_atom.atom_id parent/child relationship # not mapped
 ;
 
 
@@ -25063,7 +25069,7 @@ SASBDB - Small Angle Scattering Biological Data Bank
     _pdbx_item_enumeration.detail
       "_pdbx_database_related.db_name"  BMCD         'associated structure factors'
       "_pdbx_database_related.db_name"  BMRB         'associated NMR restraints,unspecified'
-      "_pdbx_database_related.db_name"  EMDB         'associated EM volume,other EM volume,focused EM volume,consensus EM volume'
+      "_pdbx_database_related.db_name"  EMDB         'associated EM volume,other EM volume,focused EM volume,consensus EM volume,focused EM volume,consensus EM volume'
       "_pdbx_database_related.db_name"  NDB          unspecified
       "_pdbx_database_related.db_name"  PDB          're-refinement,unspecified,derivative structure,complete structure,split,ensemble,minimized average structure,native structure,representative structure,split'
       "_pdbx_database_related.db_name"  PDB-Dev      unspecified
@@ -25167,6 +25173,8 @@ save__pdbx_database_related.content_type
       "_pdbx_database_related.content_type"  "associated EM volume"  .
       "_pdbx_database_related.content_type"  "associated SAS data"   .
       "_pdbx_database_related.content_type"  "other EM volume"       .
+      "_pdbx_database_related.content_type"  "focused EM volume"     .
+      "_pdbx_database_related.content_type"  "consensus EM volume"   .
       "_pdbx_database_related.content_type"  other                   .
       "_pdbx_database_related.content_type"  split                   .
       "_pdbx_database_related.content_type"  'complete structure'    .

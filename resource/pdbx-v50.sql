@@ -44,8 +44,8 @@
 --
 
 --
--- PDBML Schema v5.375
--- PDBML Schema translated from the PDBx/mmCIF Dictionary v5.375: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
+-- PDBML Schema v5.376
+-- PDBML Schema translated from the PDBx/mmCIF Dictionary v5.376: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
 -- URI-reference = http://pdbml.pdb.org/schema/pdbx-v50.xsd
 --
 
@@ -10521,7 +10521,7 @@ CREATE TABLE pdbx_inhibitor_info (
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_initial_refinement_model_source_name CASCADE;
-CREATE TYPE ENUM_pdbx_initial_refinement_model_source_name AS ENUM ( 'PDB', 'AlphaFold', 'RoseTTAFold', 'ModelArchive', 'SwissModel', 'Modeller', 'ITasser', 'Other' );
+CREATE TYPE ENUM_pdbx_initial_refinement_model_source_name AS ENUM ( 'PDB', 'AlphaFold', 'RoseTTAFold', 'ModelArchive', 'SwissModel', 'Modeller', 'ITasser', 'PDB-Dev', 'Other' );
 DROP TYPE IF EXISTS ENUM_pdbx_initial_refinement_model_type CASCADE;
 CREATE TYPE ENUM_pdbx_initial_refinement_model_type AS ENUM ( 'in silico model', 'experimental model', 'integrative model', 'other' );
 CREATE TABLE pdbx_initial_refinement_model (
@@ -18989,35 +18989,35 @@ CREATE TABLE valence_ref (
 -- (derived from xsd:keyref[@name='chem_compKeyref_0_0_21_0'])
 --ALTER TABLE pdbx_unobs_or_zero_occ_residues ADD CONSTRAINT KR_chem_compKeyref_0_0_21_0 FOREIGN KEY ( auth_comp_id ) REFERENCES chem_comp ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
--- (derived from xsd:keyref[@name='chem_comp_atomKeyref_1_0_0_0'])
---ALTER TABLE chem_comp_angle ADD CONSTRAINT KR_chem_comp_atomKeyref_1_0_0_0_0 FOREIGN KEY ( atom_id_1 ) REFERENCES chem_comp_atom ( atom_id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
+-- (derived from xsd:keyref[@name='chem_comp_atomKeyref_0_0_0_0'])
+--ALTER TABLE chem_comp_angle ADD CONSTRAINT KR_chem_comp_atomKeyref_0_0_0_0_0 FOREIGN KEY ( atom_id_1 ) REFERENCES chem_comp_atom ( atom_id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
--- (derived from xsd:keyref[@name='chem_comp_atomKeyref_1_0_0_0'])
---ALTER TABLE chem_comp_angle ADD CONSTRAINT KR_chem_comp_atomKeyref_1_0_0_0_1 FOREIGN KEY ( comp_id ) REFERENCES chem_comp_atom ( comp_id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
+-- (derived from xsd:keyref[@name='chem_comp_atomKeyref_0_0_0_0'])
+--ALTER TABLE chem_comp_angle ADD CONSTRAINT KR_chem_comp_atomKeyref_0_0_0_0_1 FOREIGN KEY ( comp_id ) REFERENCES chem_comp_atom ( comp_id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
--- (derived from xsd:keyref[@name='chem_comp_atomKeyref_1_0_1_0'])
---ALTER TABLE chem_comp_bond ADD CONSTRAINT KR_chem_comp_atomKeyref_1_0_1_0_0 FOREIGN KEY ( atom_id_1 ) REFERENCES chem_comp_atom ( atom_id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
+-- (derived from xsd:keyref[@name='chem_comp_atomKeyref_0_0_1_0'])
+--ALTER TABLE chem_comp_bond ADD CONSTRAINT KR_chem_comp_atomKeyref_0_0_1_0_0 FOREIGN KEY ( atom_id_1 ) REFERENCES chem_comp_atom ( atom_id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
--- (derived from xsd:keyref[@name='chem_comp_atomKeyref_1_0_1_0'])
---ALTER TABLE chem_comp_bond ADD CONSTRAINT KR_chem_comp_atomKeyref_1_0_1_0_1 FOREIGN KEY ( comp_id ) REFERENCES chem_comp_atom ( comp_id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
+-- (derived from xsd:keyref[@name='chem_comp_atomKeyref_0_0_1_0'])
+--ALTER TABLE chem_comp_bond ADD CONSTRAINT KR_chem_comp_atomKeyref_0_0_1_0_1 FOREIGN KEY ( comp_id ) REFERENCES chem_comp_atom ( comp_id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
--- (derived from xsd:keyref[@name='chem_comp_atomKeyref_1_0_1_1'])
---ALTER TABLE chem_comp_bond ADD CONSTRAINT KR_chem_comp_atomKeyref_1_0_1_1_0 FOREIGN KEY ( atom_id_2 ) REFERENCES chem_comp_atom ( atom_id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
+-- (derived from xsd:keyref[@name='chem_comp_atomKeyref_0_0_1_1'])
+--ALTER TABLE chem_comp_bond ADD CONSTRAINT KR_chem_comp_atomKeyref_0_0_1_1_0 FOREIGN KEY ( atom_id_2 ) REFERENCES chem_comp_atom ( atom_id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
--- (derived from xsd:keyref[@name='chem_comp_atomKeyref_1_0_1_1'])
---ALTER TABLE chem_comp_bond ADD CONSTRAINT KR_chem_comp_atomKeyref_1_0_1_1_1 FOREIGN KEY ( comp_id ) REFERENCES chem_comp_atom ( comp_id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
+-- (derived from xsd:keyref[@name='chem_comp_atomKeyref_0_0_1_1'])
+--ALTER TABLE chem_comp_bond ADD CONSTRAINT KR_chem_comp_atomKeyref_0_0_1_1_1 FOREIGN KEY ( comp_id ) REFERENCES chem_comp_atom ( comp_id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
--- (derived from xsd:keyref[@name='chem_comp_atomKeyref_1_0_2_0'])
---ALTER TABLE chem_comp_tor ADD CONSTRAINT KR_chem_comp_atomKeyref_1_0_2_0_0 FOREIGN KEY ( atom_id_1 ) REFERENCES chem_comp_atom ( atom_id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
+-- (derived from xsd:keyref[@name='chem_comp_atomKeyref_0_0_2_0'])
+--ALTER TABLE chem_comp_tor ADD CONSTRAINT KR_chem_comp_atomKeyref_0_0_2_0_0 FOREIGN KEY ( atom_id_1 ) REFERENCES chem_comp_atom ( atom_id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
--- (derived from xsd:keyref[@name='chem_comp_atomKeyref_1_0_2_0'])
---ALTER TABLE chem_comp_tor ADD CONSTRAINT KR_chem_comp_atomKeyref_1_0_2_0_1 FOREIGN KEY ( comp_id ) REFERENCES chem_comp_atom ( comp_id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
+-- (derived from xsd:keyref[@name='chem_comp_atomKeyref_0_0_2_0'])
+--ALTER TABLE chem_comp_tor ADD CONSTRAINT KR_chem_comp_atomKeyref_0_0_2_0_1 FOREIGN KEY ( comp_id ) REFERENCES chem_comp_atom ( comp_id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
--- (derived from xsd:keyref[@name='chem_comp_atomKeyref_1_0_3_0'])
---ALTER TABLE pdbx_chem_comp_atom_feature ADD CONSTRAINT KR_chem_comp_atomKeyref_1_0_3_0_0 FOREIGN KEY ( atom_id ) REFERENCES chem_comp_atom ( atom_id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
+-- (derived from xsd:keyref[@name='chem_comp_atomKeyref_0_0_3_0'])
+--ALTER TABLE pdbx_chem_comp_atom_feature ADD CONSTRAINT KR_chem_comp_atomKeyref_0_0_3_0_0 FOREIGN KEY ( atom_id ) REFERENCES chem_comp_atom ( atom_id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
--- (derived from xsd:keyref[@name='chem_comp_atomKeyref_1_0_3_0'])
---ALTER TABLE pdbx_chem_comp_atom_feature ADD CONSTRAINT KR_chem_comp_atomKeyref_1_0_3_0_1 FOREIGN KEY ( comp_id ) REFERENCES chem_comp_atom ( comp_id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
+-- (derived from xsd:keyref[@name='chem_comp_atomKeyref_0_0_3_0'])
+--ALTER TABLE pdbx_chem_comp_atom_feature ADD CONSTRAINT KR_chem_comp_atomKeyref_0_0_3_0_1 FOREIGN KEY ( comp_id ) REFERENCES chem_comp_atom ( comp_id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
 -- (derived from xsd:keyref[@name='chem_linkKeyref_0_0_0_0'])
 --ALTER TABLE chem_comp_link ADD CONSTRAINT KR_chem_linkKeyref_0_0_0_0 FOREIGN KEY ( link_id ) REFERENCES chem_link ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;

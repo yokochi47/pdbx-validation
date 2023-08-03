@@ -821,7 +821,7 @@
 	    <PDBo:referenced_by_chem_comp_angle rdf:resource="{$base}/chem_comp_angle/{$atom_id_1_encoded},{$atom_id_2_encoded},{$atom_id_3_encoded},{$comp_id_encoded}"/>
 	  </rdf:Description>
 	</PDBo:reference_to_chem_comp_atom>
-	<!-- chem_comp_atomKeyref_1_0_0_0 -->
+	<!-- chem_comp_atomKeyref_0_0_0_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -879,7 +879,7 @@
 	    <PDBo:referenced_by_chem_comp_bond rdf:resource="{$base}/chem_comp_bond/{$atom_id_1_encoded},{$atom_id_2_encoded},{$comp_id_encoded}"/>
 	  </rdf:Description>
 	</PDBo:reference_to_chem_comp_atom>
-	<!-- chem_comp_atomKeyref_1_0_1_0 -->
+	<!-- chem_comp_atomKeyref_0_0_1_0 -->
       </xsl:if>
       <xsl:if test="@atom_id_2!='' and @comp_id!=''">
 	<PDBo:reference_to_chem_comp_atom>
@@ -887,7 +887,7 @@
 	    <PDBo:referenced_by_chem_comp_bond rdf:resource="{$base}/chem_comp_bond/{$atom_id_1_encoded},{$atom_id_2_encoded},{$comp_id_encoded}"/>
 	  </rdf:Description>
 	</PDBo:reference_to_chem_comp_atom>
-	<!-- chem_comp_atomKeyref_1_0_1_1 -->
+	<!-- chem_comp_atomKeyref_0_0_1_1 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -1033,7 +1033,7 @@
 	    <PDBo:referenced_by_chem_comp_tor rdf:resource="{$base}/chem_comp_tor/{$comp_id_encoded},{$id_encoded}"/>
 	  </rdf:Description>
 	</PDBo:reference_to_chem_comp_atom>
-	<!-- chem_comp_atomKeyref_1_0_2_0 -->
+	<!-- chem_comp_atomKeyref_0_0_2_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -4377,7 +4377,7 @@
 	    <PDBo:referenced_by_pdbx_chem_comp_atom_feature rdf:resource="{$base}/pdbx_chem_comp_atom_feature/{$atom_id_encoded},{$comp_id_encoded},{$feature_type_encoded}"/>
 	  </rdf:Description>
 	</PDBo:reference_to_chem_comp_atom>
-	<!-- chem_comp_atomKeyref_1_0_3_0 -->
+	<!-- chem_comp_atomKeyref_0_0_3_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>

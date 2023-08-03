@@ -36,7 +36,7 @@
 	<rdfs:comment xml:lang="en">The OWL ontology for PDB/RDF, generated from the PDBML Schema.</rdfs:comment>
 	<rdfs:seeAlso rdf:resource="http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic"/>
 	<rdfs:seeAlso rdf:resource="http://mmcif.wwpdb.org/schema/pdbx-v50.xsd"/>
-	<owl:versionIRI rdf:resource="http://rdf.wwpdb.org/schema/pdbx-v50.owl/5.375"/>
+	<owl:versionIRI rdf:resource="http://rdf.wwpdb.org/schema/pdbx-v50.owl/5.376"/>
       </owl:Ontology>
 
       <owl:Class rdf:ID="Category">
