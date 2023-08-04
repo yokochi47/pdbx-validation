@@ -124,7 +124,7 @@
       &lt;/xsl:call-template&gt;
     &lt;/xsl:variable&gt;
     &lt;xsl:for-each select="ext:node-set($parent_comp_ids)/token"&gt;
-      &lt;xsl:variable name="parent_comp_id"&gt;&lt;xsl:value-of select="normalize-space(text())"/&gt;&lt;/xsl:variable&gt;
+      &lt;xsl:variable name="parent_comp_id"&gt;&lt;xsl:value-of select="translate(text(),' ','')"/&gt;&lt;/xsl:variable&gt;
       &lt;xsl:if test="string-length($parent_comp_id)!=0"&gt;
     &lt;PDBo:link_to_parent_chem_comp rdf:resource="{$chem_comp}{$parent_comp_id}"/&gt;
       &lt;/xsl:if&gt;
@@ -132,7 +132,21 @@
   &lt;/xsl:template&gt;
 
   &lt;xsl:template match="PDBx:citation/PDBx:pdbx_database_id_DOI[text()!='']" mode="linked"&gt;
-    &lt;PDBo:link_to_doi rdf:resource="{$doi}{text()}" rdfs:label="doi:{text()}"/&gt;
+    &lt;xsl:variable name="doi_url"&gt;
+      &lt;xsl:value-of select="$doi"/&gt;
+      &lt;xsl:call-template name="replace-string"&gt;
+	&lt;xsl:with-param name="str"&gt;
+	  &lt;xsl:call-template name="replace-string"&gt;
+	    &lt;xsl:with-param name="str" select="text()"/&gt;
+	    &lt;xsl:with-param name="replace"&gt;&amp;lt;&lt;/xsl:with-param&gt;
+	    &lt;xsl:with-param name="with"&gt;&amp;amp;lt;&lt;/xsl:with-param&gt;
+	  &lt;/xsl:call-template&gt;
+	&lt;/xsl:with-param&gt;
+	&lt;xsl:with-param name="replace"&gt;&amp;gt;&lt;/xsl:with-param&gt;
+	&lt;xsl:with-param name="with"&gt;&amp;amp;gt;&lt;/xsl:with-param&gt;
+      &lt;/xsl:call-template&gt;
+    &lt;/xsl:variable&gt;
+    &lt;PDBo:link_to_doi rdf:resource="{$doi_url}" rdfs:label="doi:{text()}"/&gt;
   &lt;/xsl:template&gt;
 
   &lt;xsl:template match="PDBx:citation/PDBx:pdbx_database_id_PubMed[text()!='']" mode="linked"&gt;
@@ -141,18 +155,51 @@
   &lt;/xsl:template&gt;
 
   &lt;xsl:template match="PDBx:entity_src_gen/PDBx:pdbx_gene_src_ncbi_taxonomy_id[text()!='']" mode="linked"&gt;
-    &lt;PDBo:link_to_taxonomy_source rdf:resource="{$taxonomy}{text()}" rdfs:label="taxonomy:{text()}"/&gt;
-    &lt;rdfs:seeAlso rdf:resource="{$idorg}taxonomy/{text()}" rdfs:label="taxonomy:{text()}"/&gt;
+    &lt;xsl:variable name="tax_list"&gt;
+      &lt;xsl:call-template name="tokenize"&gt;
+	&lt;xsl:with-param name="str" select="text()"/&gt;
+	&lt;xsl:with-param name="substr"&gt;,&lt;/xsl:with-param&gt;
+      &lt;/xsl:call-template&gt;
+    &lt;/xsl:variable&gt;
+    &lt;xsl:for-each select="ext:node-set($tax_list)/token"&gt;
+      &lt;xsl:variable name="tax"&gt;&lt;xsl:value-of select="translate(text(),' ','')"/&gt;&lt;/xsl:variable&gt;
+      &lt;xsl:if test="string-length($tax)!=0"&gt;
+	&lt;PDBo:link_to_taxonomy_source rdf:resource="{$taxonomy}{$tax}" rdfs:label="taxonomy:{$tax}"/&gt;
+	&lt;rdfs:seeAlso rdf:resource="{$idorg}taxonomy/{$tax}" rdfs:label="taxonomy:{$tax}"/&gt;
+      &lt;/xsl:if&gt;
+    &lt;/xsl:for-each&gt;
   &lt;/xsl:template&gt;
 
   &lt;xsl:template match="PDBx:entity_src_gen/PDBx:pdbx_host_org_ncbi_taxonomy_id[text()!='']" mode="linked"&gt;
-    &lt;PDBo:link_to_taxonomy_host rdf:resource="{$taxonomy}{text()}" rdfs:label="taxonomy:{text()}"/&gt;
-    &lt;rdfs:seeAlso rdf:resource="{$idorg}taxonomy/{text()}" rdfs:label="taxonomy:{text()}"/&gt;
+    &lt;xsl:variable name="tax_list"&gt;
+      &lt;xsl:call-template name="tokenize"&gt;
+	&lt;xsl:with-param name="str" select="text()"/&gt;
+	&lt;xsl:with-param name="substr"&gt;,&lt;/xsl:with-param&gt;
+      &lt;/xsl:call-template&gt;
+    &lt;/xsl:variable&gt;
+    &lt;xsl:for-each select="ext:node-set($tax_list)/token"&gt;
+      &lt;xsl:variable name="tax"&gt;&lt;xsl:value-of select="translate(text(),' ','')"/&gt;&lt;/xsl:variable&gt;
+      &lt;xsl:if test="string-length($tax)!=0"&gt;
+	&lt;PDBo:link_to_taxonomy_host rdf:resource="{$taxonomy}{$tax}" rdfs:label="taxonomy:{$tax}"/&gt;
+	&lt;rdfs:seeAlso rdf:resource="{$idorg}taxonomy/{$tax}" rdfs:label="taxonomy:{$tax}"/&gt;
+      &lt;/xsl:if&gt;
+    &lt;/xsl:for-each&gt;
   &lt;/xsl:template&gt;
 
   &lt;xsl:template match="PDBx:entity_src_nat/PDBx:pdbx_ncbi_taxonomy_id[text()!='']" mode="linked"&gt;
-    &lt;PDBo:link_to_taxonomy_source rdf:resource="{$taxonomy}{text()}" rdfs:label="taxonomy:{text()}"/&gt;
-    &lt;rdfs:seeAlso rdf:resource="{$idorg}taxonomy/{text()}" rdfs:label="taxonomy:{text()}"/&gt;
+    &lt;xsl:variable name="tax_list"&gt;
+      &lt;xsl:call-template name="tokenize"&gt;
+	&lt;xsl:with-param name="str" select="text()"/&gt;
+	&lt;xsl:with-param name="substr"&gt;,&lt;/xsl:with-param&gt;
+      &lt;/xsl:call-template&gt;
+    &lt;/xsl:variable&gt;
+    &lt;xsl:for-each select="ext:node-set($tax_list)/token"&gt;
+      &lt;xsl:variable name="tax"&gt;&lt;xsl:value-of select="translate(text(),' ','')"/&gt;&lt;/xsl:variable&gt;
+      &lt;xsl:if test="string-length($tax)!=0"&gt;
+	&lt;PDBo:link_to_taxonomy_source rdf:resource="{$taxonomy}{$tax}" rdfs:label="taxonomy:{$tax}"/&gt;
+	&lt;rdfs:seeAlso rdf:resource="{$idorg}taxonomy/{$tax}" rdfs:label="taxonomy:{$tax}"/&gt;
+      &lt;/xsl:if&gt;
+    &lt;/xsl:for-each&gt;
   &lt;/xsl:template&gt;
 
   &lt;xsl:template match="PDBx:entity/PDBx:pdbx_ec[text()!='']" mode="linked"&gt;
@@ -165,7 +212,7 @@
 	&lt;/xsl:call-template&gt;
       &lt;/xsl:variable&gt;
       &lt;xsl:for-each select="ext:node-set($ec_list)/token"&gt;
-	&lt;xsl:variable name="ec"&gt;&lt;xsl:value-of select="normalize-space(text())"/&gt;&lt;/xsl:variable&gt;
+	&lt;xsl:variable name="ec"&gt;&lt;xsl:value-of select="translate(text(),' ','')"/&gt;&lt;/xsl:variable&gt;
 	&lt;xsl:if test="string-length($ec)!=0"&gt;
 	  &lt;PDBo:link_to_enzyme rdf:resource="{$enzyme}{$ec}" rdfs:label="enzyme:{$ec}"/&gt;
 	  &lt;rdfs:seeAlso rdf:resource="{$idorg}ec-code/{$ec}" rdfs:label="ec-code:{$ec}"/&gt;

@@ -183,7 +183,21 @@
   &lt;/xsl:template&gt;
 
   &lt;xsl:template match="PDBx:citation/PDBx:pdbx_database_id_DOI[text()!='']" mode="linked"&gt;
-    &lt;PDBo:link_to_doi rdf:resource="{$doi}{text()}" rdfs:label="doi:{text()}"/&gt;
+    &lt;xsl:variable name="doi_url"&gt;
+      &lt;xsl:value-of select="$doi"/&gt;
+      &lt;xsl:call-template name="replace-string"&gt;
+	&lt;xsl:with-param name="str"&gt;
+	  &lt;xsl:call-template name="replace-string"&gt;
+	    &lt;xsl:with-param name="str" select="text()"/&gt;
+	    &lt;xsl:with-param name="replace"&gt;&amp;lt;&lt;/xsl:with-param&gt;
+	    &lt;xsl:with-param name="with"&gt;&amp;amp;lt;&lt;/xsl:with-param&gt;
+	  &lt;/xsl:call-template&gt;
+	&lt;/xsl:with-param&gt;
+	&lt;xsl:with-param name="replace"&gt;&amp;gt;&lt;/xsl:with-param&gt;
+	&lt;xsl:with-param name="with"&gt;&amp;amp;gt;&lt;/xsl:with-param&gt;
+      &lt;/xsl:call-template&gt;
+    &lt;/xsl:variable&gt;
+    &lt;PDBo:link_to_doi rdf:resource="{$doi_url}" rdfs:label="doi:{text()}"/&gt;
   &lt;/xsl:template&gt;
 
   &lt;xsl:template match="PDBx:citation/PDBx:pdbx_database_id_PubMed[text()!='']" mode="linked"&gt;
@@ -192,18 +206,51 @@
   &lt;/xsl:template&gt;
 
   &lt;xsl:template match="PDBx:entity_src_gen/PDBx:pdbx_gene_src_ncbi_taxonomy_id[text()!='']" mode="linked"&gt;
-    &lt;PDBo:link_to_taxonomy_source rdf:resource="{$taxonomy}{text()}" rdfs:label="taxonomy:{text()}"/&gt;
-    &lt;rdfs:seeAlso rdf:resource="{$idorg}taxonomy/{text()}" rdfs:label="taxonomy:{text()}"/&gt;
+    &lt;xsl:variable name="tax_list"&gt;
+      &lt;xsl:call-template name="tokenize"&gt;
+	&lt;xsl:with-param name="str" select="text()"/&gt;
+	&lt;xsl:with-param name="substr"&gt;,&lt;/xsl:with-param&gt;
+      &lt;/xsl:call-template&gt;
+    &lt;/xsl:variable&gt;
+    &lt;xsl:for-each select="ext:node-set($tax_list)/token"&gt;
+      &lt;xsl:variable name="tax"&gt;&lt;xsl:value-of select="translate(text(),' ','')"/&gt;&lt;/xsl:variable&gt;
+      &lt;xsl:if test="string-length($tax)!=0"&gt;
+	&lt;PDBo:link_to_taxonomy_source rdf:resource="{$taxonomy}{$tax}" rdfs:label="taxonomy:{$tax}"/&gt;
+	&lt;rdfs:seeAlso rdf:resource="{$idorg}taxonomy/{$tax}" rdfs:label="taxonomy:{$tax}"/&gt;
+      &lt;/xsl:if&gt;
+    &lt;/xsl:for-each&gt;
   &lt;/xsl:template&gt;
 
   &lt;xsl:template match="PDBx:entity_src_gen/PDBx:pdbx_host_org_ncbi_taxonomy_id[text()!='']" mode="linked"&gt;
-    &lt;PDBo:link_to_taxonomy_host rdf:resource="{$taxonomy}{text()}" rdfs:label="taxonomy:{text()}"/&gt;
-    &lt;rdfs:seeAlso rdf:resource="{$idorg}taxonomy/{text()}" rdfs:label="taxonomy:{text()}"/&gt;
+    &lt;xsl:variable name="tax_list"&gt;
+      &lt;xsl:call-template name="tokenize"&gt;
+	&lt;xsl:with-param name="str" select="text()"/&gt;
+	&lt;xsl:with-param name="substr"&gt;,&lt;/xsl:with-param&gt;
+      &lt;/xsl:call-template&gt;
+    &lt;/xsl:variable&gt;
+    &lt;xsl:for-each select="ext:node-set($tax_list)/token"&gt;
+      &lt;xsl:variable name="tax"&gt;&lt;xsl:value-of select="translate(text(),' ','')"/&gt;&lt;/xsl:variable&gt;
+      &lt;xsl:if test="string-length($tax)!=0"&gt;
+	&lt;PDBo:link_to_taxonomy_host rdf:resource="{$taxonomy}{$tax}" rdfs:label="taxonomy:{$tax}"/&gt;
+	&lt;rdfs:seeAlso rdf:resource="{$idorg}taxonomy/{$tax}" rdfs:label="taxonomy:{$tax}"/&gt;
+      &lt;/xsl:if&gt;
+    &lt;/xsl:for-each&gt;
   &lt;/xsl:template&gt;
 
   &lt;xsl:template match="PDBx:entity_src_nat/PDBx:pdbx_ncbi_taxonomy_id[text()!='']" mode="linked"&gt;
-    &lt;PDBo:link_to_taxonomy_source rdf:resource="{$taxonomy}{text()}" rdfs:label="taxonomy:{text()}"/&gt;
-    &lt;rdfs:seeAlso rdf:resource="{$idorg}taxonomy/{text()}" rdfs:label="taxonomy:{text()}"/&gt;
+    &lt;xsl:variable name="tax_list"&gt;
+      &lt;xsl:call-template name="tokenize"&gt;
+	&lt;xsl:with-param name="str" select="text()"/&gt;
+	&lt;xsl:with-param name="substr"&gt;,&lt;/xsl:with-param&gt;
+      &lt;/xsl:call-template&gt;
+    &lt;/xsl:variable&gt;
+    &lt;xsl:for-each select="ext:node-set($tax_list)/token"&gt;
+      &lt;xsl:variable name="tax"&gt;&lt;xsl:value-of select="translate(text(),' ','')"/&gt;&lt;/xsl:variable&gt;
+      &lt;xsl:if test="string-length($tax)!=0"&gt;
+	&lt;PDBo:link_to_taxonomy_source rdf:resource="{$taxonomy}{$tax}" rdfs:label="taxonomy:{$tax}"/&gt;
+	&lt;rdfs:seeAlso rdf:resource="{$idorg}taxonomy/{$tax}" rdfs:label="taxonomy:{$tax}"/&gt;
+      &lt;/xsl:if&gt;
+    &lt;/xsl:for-each&gt;
   &lt;/xsl:template&gt;
 
   &lt;xsl:template match="PDBx:entity/PDBx:pdbx_ec[text()!='']" mode="linked"&gt;
@@ -216,7 +263,7 @@
 	&lt;/xsl:call-template&gt;
       &lt;/xsl:variable&gt;
       &lt;xsl:for-each select="ext:node-set($ec_list)/token"&gt;
-	&lt;xsl:variable name="ec"&gt;&lt;xsl:value-of select="normalize-space(text())"/&gt;&lt;/xsl:variable&gt;
+	&lt;xsl:variable name="ec"&gt;&lt;xsl:value-of select="translate(text(),' ','')"/&gt;&lt;/xsl:variable&gt;
 	&lt;xsl:if test="string-length($ec)!=0"&gt;
 	  &lt;PDBo:link_to_enzyme rdf:resource="{$enzyme}{$ec}" rdfs:label="ec-code:{$ec}"/&gt;
 	  &lt;rdfs:seeAlso rdf:resource="{$idorg}ec-code/{$ec}" rdfs:label="ec-code:{$ec}"/&gt;
@@ -226,48 +273,57 @@
   &lt;/xsl:template&gt;
 
   &lt;xsl:template match="PDBx:struct_ref/PDBx:pdbx_db_accession[../PDBx:db_name='UNP' and text()!='']" mode="linked"&gt;
-    &lt;PDBo:link_to_uniprot rdf:resource="{$uniprot}{text()}" rdfs:label="uniprot:{text()}"/&gt;
-    &lt;rdfs:seeAlso rdf:resource="{$idorg}uniprot/{text()}" rdfs:label="uniprot:{text()}"/&gt;
+    &lt;xsl:variable name="acc"&gt;&lt;xsl:value-of select="translate(text(),' ','')"/&gt;&lt;/xsl:variable&gt;
+    &lt;PDBo:link_to_uniprot rdf:resource="{$uniprot}{$acc}" rdfs:label="uniprot:{$acc}"/&gt;
+    &lt;rdfs:seeAlso rdf:resource="{$idorg}uniprot/{$acc}" rdfs:label="uniprot:{$acc}"/&gt;
   &lt;/xsl:template&gt;
 
   &lt;xsl:template match="PDBx:struct_ref/PDBx:db_code[(../PDBx:db_name='GB' or ../PDBx:db_name='GB ' or ../PDBx:db_name='gb' or ../PDBx:db_name='TPG') and text()!='']" mode="linked"&gt;
-    &lt;PDBo:link_to_genbank rdf:resource="{$genbank}{text()}" rdfs:label="ncbiprotein:{text()}"/&gt;
-    &lt;rdfs:seeAlso rdf:resource="{$idorg}ncbiprotein/{text()}" rdfs:label="ncbiprotein:{text()}"/&gt;
+    &lt;xsl:variable name="acc"&gt;&lt;xsl:value-of select="translate(text(),' ','')"/&gt;&lt;/xsl:variable&gt;
+    &lt;PDBo:link_to_genbank rdf:resource="{$genbank}{$acc}" rdfs:label="ncbiprotein:{$acc}"/&gt;
+    &lt;rdfs:seeAlso rdf:resource="{$idorg}ncbiprotein/{$acc}" rdfs:label="ncbiprotein:{$acc}"/&gt;
   &lt;/xsl:template&gt;
 
   &lt;xsl:template match="PDBx:struct_ref/PDBx:db_code[(../PDBx:db_name='EMBL' or ../PDBx:db_name='GENP') and text()!='']" mode="linked"&gt;
-    &lt;PDBo:link_to_embl rdf:resource="{$embl}{text()}" rdfs:label="ncbiprotein:{text()}"/&gt;
-    &lt;rdfs:seeAlso rdf:resource="{$idorg}ncbiprotein/{text()}" rdfs:label="ncbiprotein:{text()}"/&gt;
+    &lt;xsl:variable name="acc"&gt;&lt;xsl:value-of select="translate(text(),' ','')"/&gt;&lt;/xsl:variable&gt;
+    &lt;PDBo:link_to_embl rdf:resource="{$embl}{$acc}" rdfs:label="ncbiprotein:{$acc}"/&gt;
+    &lt;rdfs:seeAlso rdf:resource="{$idorg}ncbiprotein/{$acc}" rdfs:label="ncbiprotein:{$acc}"/&gt;
   &lt;/xsl:template&gt;
 
   &lt;xsl:template match="PDBx:struct_ref/PDBx:db_code[../PDBx:db_name='TREMBL' and string-length(text())=6 and contains(substring(text(),0,1),'OPQ') and contains(substring(text(),1,1),'0123456789')]" mode="linked"&gt;
-    &lt;PDBo:link_to_uniprot rdf:resource="{$uniprot}{text()}" rdfs:label="uniprot:{text()}"/&gt;
-    &lt;rdfs:seeAlso rdf:resource="{$idorg}uniprot/{text()}" rdfs:label="uniprot:{text()}"/&gt;
+    &lt;xsl:variable name="acc"&gt;&lt;xsl:value-of select="translate(text(),' ','')"/&gt;&lt;/xsl:variable&gt;
+    &lt;PDBo:link_to_uniprot rdf:resource="{$uniprot}{$acc}" rdfs:label="uniprot:{$acc}"/&gt;
+    &lt;rdfs:seeAlso rdf:resource="{$idorg}uniprot/{$acc}" rdfs:label="uniprot:{$acc}"/&gt;
   &lt;/xsl:template&gt;
 
   &lt;xsl:template match="PDBx:struct_ref/PDBx:db_code[../PDBx:db_name='TREMBL' and text()!='' and not(string-length(text())=6 and contains(substring(text(),0,1),'OPQ') and contains(substring(text(),1,1),'0123456789'))]" mode="linked"&gt;
-    &lt;PDBo:link_to_embl rdf:resource="{$embl}{text()}" rdfs:label="ncbiprotein:{text()}"/&gt;
-    &lt;rdfs:seeAlso rdf:resource="{$idorg}ncbiprotein/{text()}" rdfs:label="ncbiprotein:{text()}"/&gt;
+    &lt;xsl:variable name="acc"&gt;&lt;xsl:value-of select="translate(text(),' ','')"/&gt;&lt;/xsl:variable&gt;
+    &lt;PDBo:link_to_embl rdf:resource="{$embl}{$acc}" rdfs:label="ncbiprotein:{$acc}"/&gt;
+    &lt;rdfs:seeAlso rdf:resource="{$idorg}ncbiprotein/{$acc}" rdfs:label="ncbiprotein:{$acc}"/&gt;
   &lt;/xsl:template&gt;
 
   &lt;xsl:template match="PDBx:struct_ref/PDBx:db_code[../PDBx:db_name='PIR' and text()!='']" mode="linked"&gt;
-    &lt;PDBo:link_to_pir rdf:resource="{$pir}{text()}" rdfs:label="ncbiprotein:{text()}"/&gt;
-    &lt;rdfs:seeAlso rdf:resource="{$idorg}ncbiprotein/{text()}" rdfs:label="ncbiprotein:{text()}"/&gt;
+    &lt;xsl:variable name="acc"&gt;&lt;xsl:value-of select="translate(text(),' ','')"/&gt;&lt;/xsl:variable&gt;
+    &lt;PDBo:link_to_pir rdf:resource="{$pir}{$acc}" rdfs:label="ncbiprotein:{$acc}"/&gt;
+    &lt;rdfs:seeAlso rdf:resource="{$idorg}ncbiprotein/{$acc}" rdfs:label="ncbiprotein:{$acc}"/&gt;
   &lt;/xsl:template&gt;
 
   &lt;xsl:template match="PDBx:struct_ref/PDBx:db_code[../PDBx:db_name='REF' and text()!='']" mode="linked"&gt;
-    &lt;PDBo:link_to_refseq rdf:resource="{$refseq}{text()}" rdfs:label="refseq:{text()}"/&gt;
-    &lt;rdfs:seeAlso rdf:resource="{$idorg}refseq/{text()}" rdfs:label="refseq:{text()}"/&gt;
+    &lt;xsl:variable name="acc"&gt;&lt;xsl:value-of select="translate(text(),' ','')"/&gt;&lt;/xsl:variable&gt;
+    &lt;PDBo:link_to_refseq rdf:resource="{$refseq}{$acc}" rdfs:label="refseq:{$acc}"/&gt;
+    &lt;rdfs:seeAlso rdf:resource="{$idorg}refseq/{$acc}" rdfs:label="refseq:{$acc}"/&gt;
   &lt;/xsl:template&gt;
 
   &lt;xsl:template match="PDBx:struct_ref/PDBx:db_code[../PDBx:db_name='PRF' and text()!='']" mode="linked"&gt;
-    &lt;PDBo:link_to_sequence_db rdf:resource="{$pir}{text()}" rdfs:label="ncbiprotein:{text()}"/&gt;
-    &lt;rdfs:seeAlso rdf:resource="{$idorg}ncbiprotein/{text()}" rdfs:label="ncbiprotein:{text()}"/&gt;
+    &lt;xsl:variable name="acc"&gt;&lt;xsl:value-of select="translate(text(),' ','')"/&gt;&lt;/xsl:variable&gt;
+    &lt;PDBo:link_to_sequence_db rdf:resource="{$pir}{$acc}" rdfs:label="ncbiprotein:{$acc}"/&gt;
+    &lt;rdfs:seeAlso rdf:resource="{$idorg}ncbiprotein/{$acc}" rdfs:label="ncbiprotein:{$acc}"/&gt;
   &lt;/xsl:template&gt;
 
   &lt;xsl:template match="PDBx:struct_ref/PDBx:db_code[../PDBx:db_name='NOR' and text()!='']" mode="linked"&gt;
-    &lt;PDBo:link_to_norine rdf:resource="{$norine}{text()}" rdfs:label="norine:{text()}"/&gt;
-    &lt;rdfs:seeAlso rdf:resource="{$idorg}norine/{text()}" rdfs:label="norine:{text()}"/&gt;
+    &lt;xsl:variable name="acc"&gt;&lt;xsl:value-of select="translate(text(),' ','')"/&gt;&lt;/xsl:variable&gt;
+    &lt;PDBo:link_to_norine rdf:resource="{$norine}{$acc}" rdfs:label="norine:{$acc}"/&gt;
+    &lt;rdfs:seeAlso rdf:resource="{$idorg}norine/{$acc}" rdfs:label="norine:{$acc}"/&gt;
   &lt;/xsl:template&gt;
 
   &lt;xsl:template match="PDBx:pdbx_sifts_unp_segments[@unp_acc!='']/@unp_acc" mode="linked"&gt;
@@ -311,7 +367,7 @@
   &lt;/xsl:template&gt;
 
   &lt;xsl:template match="PDBx:pdbx_entity_branch_descriptor/PDBx:descriptor[../PDBx:type='WURCS' and text()!='']" mode="linked"&gt;
-    &lt;xsl:variable name="wurcs_id">&lt;xsl:value-of select="text()"/&gt;&lt;/xsl:variable&gt;
+    &lt;xsl:variable name="wurcs_id">&lt;xsl:value-of select="translate(text(),' ','')"/&gt;&lt;/xsl:variable&gt;
     &lt;xsl:for-each select="$glytoucan/catalog/wurcs[@id=$wurcs_id]"&gt;
       &lt;xsl:if test="text()!=''"&gt;
 	&lt;PDBo:link_to_glycoinfo rdf:resource="{$glycoinfo}{text()}" rdfs:label="glytoucan:{text()}"/&gt;
@@ -329,7 +385,7 @@
   &lt;/xsl:template&gt;
 
   &lt;xsl:template match="PDBx:chem_comp/PDBx:pdbx_model_coordinates_db_code" mode="linked"&gt;
-    &lt;PDBo:link_to_pdb rdf:resource="{$pdb_link}{text()}"/&gt;
+    &lt;PDBo:link_to_pdb rdf:resource="{$pdb_link}{translate(text(),' ','')}"/&gt;
   &lt;/xsl:template&gt;
 
   &lt;xsl:template match="PDBx:pdbx_database_related[@db_name='BMRB']/@db_id" mode="linked"&gt;
@@ -348,23 +404,27 @@
   &lt;/xsl:template&gt;
 
   &lt;xsl:template match="PDBx:citation_author/PDBx:identifier_ORCID[text()!='']" mode="linked"&gt;
-    &lt;PDBo:link_to_orcid rdf:resource="{$orcid}{text()}" rdfs:label="orcid:{text()}"/&gt;
-    &lt;rdfs:seeAlso rdf:resource="{$idorg}orcid/{text()}" rdfs:label="orcid:{text()}"/&gt;
+    &lt;xsl:variable name="acc"&gt;&lt;xsl:value-of select="translate(text(),' ','')"/&gt;&lt;/xsl:variable&gt;
+    &lt;PDBo:link_to_orcid rdf:resource="{$orcid}{$acc}" rdfs:label="orcid:{$acc}"/&gt;
+    &lt;rdfs:seeAlso rdf:resource="{$idorg}orcid/{$acc}" rdfs:label="orcid:{$acc}"/&gt;
   &lt;/xsl:template&gt;
 
   &lt;xsl:template match="PDBx:audit_author/PDBx:identifier_ORCID[text()!='']" mode="linked"&gt;
-    &lt;PDBo:link_to_orcid rdf:resource="{$orcid}{text()}" rdfs:label="orcid:{text()}"/&gt;
-    &lt;rdfs:seeAlso rdf:resource="{$idorg}orcid/{text()}" rdfs:label="orcid:{text()}"/&gt;
+    &lt;xsl:variable name="acc"&gt;&lt;xsl:value-of select="translate(text(),' ','')"/&gt;&lt;/xsl:variable&gt;
+    &lt;PDBo:link_to_orcid rdf:resource="{$orcid}{$acc}" rdfs:label="orcid:{$acc}"/&gt;
+    &lt;rdfs:seeAlso rdf:resource="{$idorg}orcid/{$acc}" rdfs:label="orcid:{$acc}"/&gt;
   &lt;/xsl:template&gt;
 
   &lt;xsl:template match="PDBx:em_author_list/PDBx:identifier_ORCID[text()!='']" mode="linked"&gt;
-    &lt;PDBo:link_to_orcid rdf:resource="{$orcid}{text()}" rdfs:label="orcid:{text()}"/&gt;
-    &lt;rdfs:seeAlso rdf:resource="{$idorg}orcid/{text()}" rdfs:label="orcid:{text()}"/&gt;
+    &lt;xsl:variable name="acc"&gt;&lt;xsl:value-of select="translate(text(),' ','')"/&gt;&lt;/xsl:variable&gt;
+    &lt;PDBo:link_to_orcid rdf:resource="{$orcid}{$acc}" rdfs:label="orcid:{$acc}"/&gt;
+    &lt;rdfs:seeAlso rdf:resource="{$idorg}orcid/{$acc}" rdfs:label="orcid:{$acc}"/&gt;
   &lt;/xsl:template&gt;
 
   &lt;xsl:template match="PDBx:pdbx_contact_author/PDBx:identifier_ORCID[text()!='']" mode="linked"&gt;
-    &lt;PDBo:link_to_orcid rdf:resource="{$orcid}{text()}" rdfs:label="orcid:{text()}"/&gt;
-    &lt;rdfs:seeAlso rdf:resource="{$idorg}orcid/{text()}" rdfs:label="orcid:{text()}"/&gt;
+    &lt;xsl:variable name="acc"&gt;&lt;xsl:value-of select="translate(text(),' ','')"/&gt;&lt;/xsl:variable&gt;
+    &lt;PDBo:link_to_orcid rdf:resource="{$orcid}{$acc}" rdfs:label="orcid:{$acc}"/&gt;
+    &lt;rdfs:seeAlso rdf:resource="{$idorg}orcid/{$acc}" rdfs:label="orcid:{$acc}"/&gt;
   &lt;/xsl:template&gt;
 
   &lt;!-- level 3 templates follow --&gt;</xsl2:text>

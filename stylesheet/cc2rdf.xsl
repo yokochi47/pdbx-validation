@@ -103,7 +103,7 @@
       </xsl:call-template>
     </xsl:variable>
     <xsl:for-each select="ext:node-set($parent_comp_ids)/token">
-      <xsl:variable name="parent_comp_id"><xsl:value-of select="normalize-space(text())"/></xsl:variable>
+      <xsl:variable name="parent_comp_id"><xsl:value-of select="translate(text(),' ','')"/></xsl:variable>
       <xsl:if test="string-length($parent_comp_id)!=0">
     <PDBo:link_to_parent_chem_comp rdf:resource="{$chem_comp}{$parent_comp_id}"/>
       </xsl:if>
@@ -111,7 +111,21 @@
   </xsl:template>
 
   <xsl:template match="PDBx:citation/PDBx:pdbx_database_id_DOI[text()!='']" mode="linked">
-    <PDBo:link_to_doi rdf:resource="{$doi}{text()}" rdfs:label="doi:{text()}"/>
+    <xsl:variable name="doi_url">
+      <xsl:value-of select="$doi"/>
+      <xsl:call-template name="replace-string">
+	<xsl:with-param name="str">
+	  <xsl:call-template name="replace-string">
+	    <xsl:with-param name="str" select="text()"/>
+	    <xsl:with-param name="replace">&lt;</xsl:with-param>
+	    <xsl:with-param name="with">&amp;lt;</xsl:with-param>
+	  </xsl:call-template>
+	</xsl:with-param>
+	<xsl:with-param name="replace">&gt;</xsl:with-param>
+	<xsl:with-param name="with">&amp;gt;</xsl:with-param>
+      </xsl:call-template>
+    </xsl:variable>
+    <PDBo:link_to_doi rdf:resource="{$doi_url}" rdfs:label="doi:{text()}"/>
   </xsl:template>
 
   <xsl:template match="PDBx:citation/PDBx:pdbx_database_id_PubMed[text()!='']" mode="linked">
@@ -120,18 +134,51 @@
   </xsl:template>
 
   <xsl:template match="PDBx:entity_src_gen/PDBx:pdbx_gene_src_ncbi_taxonomy_id[text()!='']" mode="linked">
-    <PDBo:link_to_taxonomy_source rdf:resource="{$taxonomy}{text()}" rdfs:label="taxonomy:{text()}"/>
-    <rdfs:seeAlso rdf:resource="{$idorg}taxonomy/{text()}" rdfs:label="taxonomy:{text()}"/>
+    <xsl:variable name="tax_list">
+      <xsl:call-template name="tokenize">
+	<xsl:with-param name="str" select="text()"/>
+	<xsl:with-param name="substr">,</xsl:with-param>
+      </xsl:call-template>
+    </xsl:variable>
+    <xsl:for-each select="ext:node-set($tax_list)/token">
+      <xsl:variable name="tax"><xsl:value-of select="translate(text(),' ','')"/></xsl:variable>
+      <xsl:if test="string-length($tax)!=0">
+	<PDBo:link_to_taxonomy_source rdf:resource="{$taxonomy}{$tax}" rdfs:label="taxonomy:{$tax}"/>
+	<rdfs:seeAlso rdf:resource="{$idorg}taxonomy/{$tax}" rdfs:label="taxonomy:{$tax}"/>
+      </xsl:if>
+    </xsl:for-each>
   </xsl:template>
 
   <xsl:template match="PDBx:entity_src_gen/PDBx:pdbx_host_org_ncbi_taxonomy_id[text()!='']" mode="linked">
-    <PDBo:link_to_taxonomy_host rdf:resource="{$taxonomy}{text()}" rdfs:label="taxonomy:{text()}"/>
-    <rdfs:seeAlso rdf:resource="{$idorg}taxonomy/{text()}" rdfs:label="taxonomy:{text()}"/>
+    <xsl:variable name="tax_list">
+      <xsl:call-template name="tokenize">
+	<xsl:with-param name="str" select="text()"/>
+	<xsl:with-param name="substr">,</xsl:with-param>
+      </xsl:call-template>
+    </xsl:variable>
+    <xsl:for-each select="ext:node-set($tax_list)/token">
+      <xsl:variable name="tax"><xsl:value-of select="translate(text(),' ','')"/></xsl:variable>
+      <xsl:if test="string-length($tax)!=0">
+	<PDBo:link_to_taxonomy_host rdf:resource="{$taxonomy}{$tax}" rdfs:label="taxonomy:{$tax}"/>
+	<rdfs:seeAlso rdf:resource="{$idorg}taxonomy/{$tax}" rdfs:label="taxonomy:{$tax}"/>
+      </xsl:if>
+    </xsl:for-each>
   </xsl:template>
 
   <xsl:template match="PDBx:entity_src_nat/PDBx:pdbx_ncbi_taxonomy_id[text()!='']" mode="linked">
-    <PDBo:link_to_taxonomy_source rdf:resource="{$taxonomy}{text()}" rdfs:label="taxonomy:{text()}"/>
-    <rdfs:seeAlso rdf:resource="{$idorg}taxonomy/{text()}" rdfs:label="taxonomy:{text()}"/>
+    <xsl:variable name="tax_list">
+      <xsl:call-template name="tokenize">
+	<xsl:with-param name="str" select="text()"/>
+	<xsl:with-param name="substr">,</xsl:with-param>
+      </xsl:call-template>
+    </xsl:variable>
+    <xsl:for-each select="ext:node-set($tax_list)/token">
+      <xsl:variable name="tax"><xsl:value-of select="translate(text(),' ','')"/></xsl:variable>
+      <xsl:if test="string-length($tax)!=0">
+	<PDBo:link_to_taxonomy_source rdf:resource="{$taxonomy}{$tax}" rdfs:label="taxonomy:{$tax}"/>
+	<rdfs:seeAlso rdf:resource="{$idorg}taxonomy/{$tax}" rdfs:label="taxonomy:{$tax}"/>
+      </xsl:if>
+    </xsl:for-each>
   </xsl:template>
 
   <xsl:template match="PDBx:entity/PDBx:pdbx_ec[text()!='']" mode="linked">
@@ -144,7 +191,7 @@
 	</xsl:call-template>
       </xsl:variable>
       <xsl:for-each select="ext:node-set($ec_list)/token">
-	<xsl:variable name="ec"><xsl:value-of select="normalize-space(text())"/></xsl:variable>
+	<xsl:variable name="ec"><xsl:value-of select="translate(text(),' ','')"/></xsl:variable>
 	<xsl:if test="string-length($ec)!=0">
 	  <PDBo:link_to_enzyme rdf:resource="{$enzyme}{$ec}" rdfs:label="enzyme:{$ec}"/>
 	  <rdfs:seeAlso rdf:resource="{$idorg}ec-code/{$ec}" rdfs:label="ec-code:{$ec}"/>

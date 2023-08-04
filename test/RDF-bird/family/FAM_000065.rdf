@@ -63,7 +63,7 @@
             <PDBo:citation.pdbx_database_id_PubMed rdf:datatype="xsd:int">9230485</PDBo:citation.pdbx_database_id_PubMed>
             <PDBo:citation.title>Total synthesis of zervamicin IIB and its deuterium-labelled analogues</PDBo:citation.title>
             <PDBo:citation.year rdf:datatype="xsd:int">1998</PDBo:citation.year>
-            <PDBo:link_to_doi rdf:resource="http://doi.org/10.1002/(SICI)1099-1387(199705)3:3&lt;193::AID-PSC101&gt;3.0.CO;2-6" rdfs:label="doi:10.1002/(SICI)1099-1387(199705)3:3&lt;193::AID-PSC101&gt;3.0.CO;2-6"/>
+            <PDBo:link_to_doi rdf:resource="http://doi.org/10.1002/(SICI)1099-1387(199705)3:3&amp;lt;193::AID-PSC101&amp;gt;3.0.CO;2-6" rdfs:label="doi:10.1002/(SICI)1099-1387(199705)3:3&lt;193::AID-PSC101&gt;3.0.CO;2-6"/>
             <PDBo:link_to_pubmed rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/9230485" rdfs:label="pubmed:9230485"/>
             <dcterms:references rdf:resource="http://identifiers.org/pubmed/9230485" rdfs:label="pubmed:9230485"/>
           </PDBo:citation>

@@ -163,7 +163,21 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:citation/VRPTx:pdbx_database_id_DOI[text()!='']" mode="linked">
-    <VRPTo:link_to_doi rdf:resource="{$doi}{text()}" rdfs:label="doi:{text()}"/>
+    <xsl:variable name="doi_url">
+      <xsl:value-of select="$doi"/>
+      <xsl:call-template name="replace-string">
+	<xsl:with-param name="str">
+	  <xsl:call-template name="replace-string">
+	    <xsl:with-param name="str" select="text()"/>
+	    <xsl:with-param name="replace">&lt;</xsl:with-param>
+	    <xsl:with-param name="with">&amp;lt;</xsl:with-param>
+	  </xsl:call-template>
+	</xsl:with-param>
+	<xsl:with-param name="replace">&gt;</xsl:with-param>
+	<xsl:with-param name="with">&amp;gt;</xsl:with-param>
+      </xsl:call-template>
+    </xsl:variable>
+    <VRPTo:link_to_doi rdf:resource="{$doi_url}" rdfs:label="doi:{text()}"/>
   </xsl:template>
 
   <xsl:template match="VRPTx:citation/VRPTx:pdbx_database_id_PubMed[text()!='']" mode="linked">
@@ -172,18 +186,51 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:entity_src_gen/VRPTx:pdbx_gene_src_ncbi_taxonomy_id[text()!='']" mode="linked">
-    <VRPTo:link_to_taxonomy_source rdf:resource="{$taxonomy}{text()}" rdfs:label="taxonomy:{text()}"/>
-    <rdfs:seeAlso rdf:resource="{$idorg}taxonomy/{text()}" rdfs:label="taxonomy:{text()}"/>
+    <xsl:variable name="tax_list">
+      <xsl:call-template name="tokenize">
+	<xsl:with-param name="str" select="text()"/>
+	<xsl:with-param name="substr">,</xsl:with-param>
+      </xsl:call-template>
+    </xsl:variable>
+    <xsl:for-each select="ext:node-set($tax_list)/token">
+      <xsl:variable name="tax"><xsl:value-of select="translate(text(),' ','')"/></xsl:variable>
+      <xsl:if test="string-length($tax)!=0">
+	<VRPTo:link_to_taxonomy_source rdf:resource="{$taxonomy}{$tax}" rdfs:label="taxonomy:{$tax}"/>
+	<rdfs:seeAlso rdf:resource="{$idorg}taxonomy/{$tax}" rdfs:label="taxonomy:{$tax}"/>
+      </xsl:if>
+    </xsl:for-each>
   </xsl:template>
 
   <xsl:template match="VRPTx:entity_src_gen/VRPTx:pdbx_host_org_ncbi_taxonomy_id[text()!='']" mode="linked">
-    <VRPTo:link_to_taxonomy_host rdf:resource="{$taxonomy}{text()}" rdfs:label="taxonomy:{text()}"/>
-    <rdfs:seeAlso rdf:resource="{$idorg}taxonomy/{text()}" rdfs:label="taxonomy:{text()}"/>
+    <xsl:variable name="tax_list">
+      <xsl:call-template name="tokenize">
+	<xsl:with-param name="str" select="text()"/>
+	<xsl:with-param name="substr">,</xsl:with-param>
+      </xsl:call-template>
+    </xsl:variable>
+    <xsl:for-each select="ext:node-set($tax_list)/token">
+      <xsl:variable name="tax"><xsl:value-of select="translate(text(),' ','')"/></xsl:variable>
+      <xsl:if test="string-length($tax)!=0">
+	<VRPTo:link_to_taxonomy_host rdf:resource="{$taxonomy}{$tax}" rdfs:label="taxonomy:{$tax}"/>
+	<rdfs:seeAlso rdf:resource="{$idorg}taxonomy/{$tax}" rdfs:label="taxonomy:{$tax}"/>
+      </xsl:if>
+    </xsl:for-each>
   </xsl:template>
 
   <xsl:template match="VRPTx:entity_src_nat/VRPTx:pdbx_ncbi_taxonomy_id[text()!='']" mode="linked">
-    <VRPTo:link_to_taxonomy_source rdf:resource="{$taxonomy}{text()}" rdfs:label="taxonomy:{text()}"/>
-    <rdfs:seeAlso rdf:resource="{$idorg}taxonomy/{text()}" rdfs:label="taxonomy:{text()}"/>
+    <xsl:variable name="tax_list">
+      <xsl:call-template name="tokenize">
+	<xsl:with-param name="str" select="text()"/>
+	<xsl:with-param name="substr">,</xsl:with-param>
+      </xsl:call-template>
+    </xsl:variable>
+    <xsl:for-each select="ext:node-set($tax_list)/token">
+      <xsl:variable name="tax"><xsl:value-of select="translate(text(),' ','')"/></xsl:variable>
+      <xsl:if test="string-length($tax)!=0">
+	<VRPTo:link_to_taxonomy_source rdf:resource="{$taxonomy}{$tax}" rdfs:label="taxonomy:{$tax}"/>
+	<rdfs:seeAlso rdf:resource="{$idorg}taxonomy/{$tax}" rdfs:label="taxonomy:{$tax}"/>
+      </xsl:if>
+    </xsl:for-each>
   </xsl:template>
 
   <xsl:template match="VRPTx:entity/VRPTx:pdbx_ec[text()!='']" mode="linked">
@@ -196,7 +243,7 @@
 	</xsl:call-template>
       </xsl:variable>
       <xsl:for-each select="ext:node-set($ec_list)/token">
-	<xsl:variable name="ec"><xsl:value-of select="normalize-space(text())"/></xsl:variable>
+	<xsl:variable name="ec"><xsl:value-of select="translate(text(),' ','')"/></xsl:variable>
 	<xsl:if test="string-length($ec)!=0">
 	  <VRPTo:link_to_enzyme rdf:resource="{$enzyme}{$ec}" rdfs:label="ec-code:{$ec}"/>
 	  <rdfs:seeAlso rdf:resource="{$idorg}ec-code/{$ec}" rdfs:label="ec-code:{$ec}"/>
@@ -206,48 +253,57 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:struct_ref/VRPTx:pdbx_db_accession[../VRPTx:db_name='UNP' and text()!='']" mode="linked">
-    <VRPTo:link_to_uniprot rdf:resource="{$uniprot}{text()}" rdfs:label="uniprot:{text()}"/>
-    <rdfs:seeAlso rdf:resource="{$idorg}uniprot/{text()}" rdfs:label="uniprot:{text()}"/>
+    <xsl:variable name="acc"><xsl:value-of select="translate(text(),' ','')"/></xsl:variable>
+    <VRPTo:link_to_uniprot rdf:resource="{$uniprot}{$acc}" rdfs:label="uniprot:{$acc}"/>
+    <rdfs:seeAlso rdf:resource="{$idorg}uniprot/{$acc}" rdfs:label="uniprot:{$acc}"/>
   </xsl:template>
 
   <xsl:template match="VRPTx:struct_ref/VRPTx:db_code[(../VRPTx:db_name='GB' or ../VRPTx:db_name='GB ' or ../VRPTx:db_name='gb' or ../VRPTx:db_name='TPG') and text()!='']" mode="linked">
-    <VRPTo:link_to_genbank rdf:resource="{$genbank}{text()}" rdfs:label="ncbiprotein:{text()}"/>
-    <rdfs:seeAlso rdf:resource="{$idorg}ncbiprotein/{text()}" rdfs:label="ncbiprotein:{text()}"/>
+    <xsl:variable name="acc"><xsl:value-of select="translate(text(),' ','')"/></xsl:variable>
+    <VRPTo:link_to_genbank rdf:resource="{$genbank}{$acc}" rdfs:label="ncbiprotein:{$acc}"/>
+    <rdfs:seeAlso rdf:resource="{$idorg}ncbiprotein/{$acc}" rdfs:label="ncbiprotein:{$acc}"/>
   </xsl:template>
 
   <xsl:template match="VRPTx:struct_ref/VRPTx:db_code[(../VRPTx:db_name='EMBL' or ../VRPTx:db_name='GENP') and text()!='']" mode="linked">
-    <VRPTo:link_to_embl rdf:resource="{$embl}{text()}" rdfs:label="ncbiprotein:{text()}"/>
-    <rdfs:seeAlso rdf:resource="{$idorg}ncbiprotein/{text()}" rdfs:label="ncbiprotein:{text()}"/>
+    <xsl:variable name="acc"><xsl:value-of select="translate(text(),' ','')"/></xsl:variable>
+    <VRPTo:link_to_embl rdf:resource="{$embl}{$acc}" rdfs:label="ncbiprotein:{$acc}"/>
+    <rdfs:seeAlso rdf:resource="{$idorg}ncbiprotein/{$acc}" rdfs:label="ncbiprotein:{$acc}"/>
   </xsl:template>
 
   <xsl:template match="VRPTx:struct_ref/VRPTx:db_code[../VRPTx:db_name='TREMBL' and string-length(text())=6 and contains(substring(text(),0,1),'OPQ') and contains(substring(text(),1,1),'0123456789')]" mode="linked">
-    <VRPTo:link_to_uniprot rdf:resource="{$uniprot}{text()}" rdfs:label="uniprot:{text()}"/>
-    <rdfs:seeAlso rdf:resource="{$idorg}uniprot/{text()}" rdfs:label="uniprot:{text()}"/>
+    <xsl:variable name="acc"><xsl:value-of select="translate(text(),' ','')"/></xsl:variable>
+    <VRPTo:link_to_uniprot rdf:resource="{$uniprot}{$acc}" rdfs:label="uniprot:{$acc}"/>
+    <rdfs:seeAlso rdf:resource="{$idorg}uniprot/{$acc}" rdfs:label="uniprot:{$acc}"/>
   </xsl:template>
 
   <xsl:template match="VRPTx:struct_ref/VRPTx:db_code[../VRPTx:db_name='TREMBL' and text()!='' and not(string-length(text())=6 and contains(substring(text(),0,1),'OPQ') and contains(substring(text(),1,1),'0123456789'))]" mode="linked">
-    <VRPTo:link_to_embl rdf:resource="{$embl}{text()}" rdfs:label="ncbiprotein:{text()}"/>
-    <rdfs:seeAlso rdf:resource="{$idorg}ncbiprotein/{text()}" rdfs:label="ncbiprotein:{text()}"/>
+    <xsl:variable name="acc"><xsl:value-of select="translate(text(),' ','')"/></xsl:variable>
+    <VRPTo:link_to_embl rdf:resource="{$embl}{$acc}" rdfs:label="ncbiprotein:{$acc}"/>
+    <rdfs:seeAlso rdf:resource="{$idorg}ncbiprotein/{$acc}" rdfs:label="ncbiprotein:{$acc}"/>
   </xsl:template>
 
   <xsl:template match="VRPTx:struct_ref/VRPTx:db_code[../VRPTx:db_name='PIR' and text()!='']" mode="linked">
-    <VRPTo:link_to_pir rdf:resource="{$pir}{text()}" rdfs:label="ncbiprotein:{text()}"/>
-    <rdfs:seeAlso rdf:resource="{$idorg}ncbiprotein/{text()}" rdfs:label="ncbiprotein:{text()}"/>
+    <xsl:variable name="acc"><xsl:value-of select="translate(text(),' ','')"/></xsl:variable>
+    <VRPTo:link_to_pir rdf:resource="{$pir}{$acc}" rdfs:label="ncbiprotein:{$acc}"/>
+    <rdfs:seeAlso rdf:resource="{$idorg}ncbiprotein/{$acc}" rdfs:label="ncbiprotein:{$acc}"/>
   </xsl:template>
 
   <xsl:template match="VRPTx:struct_ref/VRPTx:db_code[../VRPTx:db_name='REF' and text()!='']" mode="linked">
-    <VRPTo:link_to_refseq rdf:resource="{$refseq}{text()}" rdfs:label="refseq:{text()}"/>
-    <rdfs:seeAlso rdf:resource="{$idorg}refseq/{text()}" rdfs:label="refseq:{text()}"/>
+    <xsl:variable name="acc"><xsl:value-of select="translate(text(),' ','')"/></xsl:variable>
+    <VRPTo:link_to_refseq rdf:resource="{$refseq}{$acc}" rdfs:label="refseq:{$acc}"/>
+    <rdfs:seeAlso rdf:resource="{$idorg}refseq/{$acc}" rdfs:label="refseq:{$acc}"/>
   </xsl:template>
 
   <xsl:template match="VRPTx:struct_ref/VRPTx:db_code[../VRPTx:db_name='PRF' and text()!='']" mode="linked">
-    <VRPTo:link_to_sequence_db rdf:resource="{$pir}{text()}" rdfs:label="ncbiprotein:{text()}"/>
-    <rdfs:seeAlso rdf:resource="{$idorg}ncbiprotein/{text()}" rdfs:label="ncbiprotein:{text()}"/>
+    <xsl:variable name="acc"><xsl:value-of select="translate(text(),' ','')"/></xsl:variable>
+    <VRPTo:link_to_sequence_db rdf:resource="{$pir}{$acc}" rdfs:label="ncbiprotein:{$acc}"/>
+    <rdfs:seeAlso rdf:resource="{$idorg}ncbiprotein/{$acc}" rdfs:label="ncbiprotein:{$acc}"/>
   </xsl:template>
 
   <xsl:template match="VRPTx:struct_ref/VRPTx:db_code[../VRPTx:db_name='NOR' and text()!='']" mode="linked">
-    <VRPTo:link_to_norine rdf:resource="{$norine}{text()}" rdfs:label="norine:{text()}"/>
-    <rdfs:seeAlso rdf:resource="{$idorg}norine/{text()}" rdfs:label="norine:{text()}"/>
+    <xsl:variable name="acc"><xsl:value-of select="translate(text(),' ','')"/></xsl:variable>
+    <VRPTo:link_to_norine rdf:resource="{$norine}{$acc}" rdfs:label="norine:{$acc}"/>
+    <rdfs:seeAlso rdf:resource="{$idorg}norine/{$acc}" rdfs:label="norine:{$acc}"/>
   </xsl:template>
 
   <xsl:template match="VRPTx:pdbx_sifts_unp_segments[@unp_acc!='']/@unp_acc" mode="linked">
@@ -291,7 +347,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:pdbx_entity_branch_descriptor/VRPTx:descriptor[../VRPTx:type='WURCS' and text()!='']" mode="linked">
-    <xsl:variable name="wurcs_id"><xsl:value-of select="text()"/></xsl:variable>
+    <xsl:variable name="wurcs_id"><xsl:value-of select="translate(text(),' ','')"/></xsl:variable>
     <xsl:for-each select="$glytoucan/catalog/wurcs[@id=$wurcs_id]">
       <xsl:if test="text()!=''">
 	<VRPTo:link_to_glycoinfo rdf:resource="{$glycoinfo}{text()}" rdfs:label="glytoucan:{text()}"/>
@@ -309,7 +365,7 @@
   </xsl:template>
 
   <xsl:template match="VRPTx:chem_comp/VRPTx:pdbx_model_coordinates_db_code" mode="linked">
-    <VRPTo:link_to_pdb rdf:resource="{$pdb_link}{text()}"/>
+    <VRPTo:link_to_pdb rdf:resource="{$pdb_link}{translate(text(),' ','')}"/>
   </xsl:template>
 
   <xsl:template match="VRPTx:pdbx_database_related[@db_name='BMRB']/@db_id" mode="linked">

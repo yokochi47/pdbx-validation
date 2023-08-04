@@ -184,7 +184,7 @@
             <PDBo:pdbx_reference_molecule_annotation.source>DOI:10.1002/1521-3773(20021104)41:21&lt;4062::AID-ANIE4062&gt;3.0.CO;2-U</PDBo:pdbx_reference_molecule_annotation.source>
             <PDBo:pdbx_reference_molecule_annotation.text>D,L-Peptide Ion Channel</PDBo:pdbx_reference_molecule_annotation.text>
             <PDBo:pdbx_reference_molecule_annotation.type>Structure</PDBo:pdbx_reference_molecule_annotation.type>
-            <PDBo:link_to_doi rdf:resource="http://doi.org/10.1002/1521-3773(20021104)41:21&lt;4062::AID-ANIE4062&gt;3.0.CO;2-U" rdfs:label="doi:10.1002/1521-3773(20021104)41:21&lt;4062::AID-ANIE4062&gt;3.0.CO;2-U"/>
+            <PDBo:link_to_doi rdf:resource="http://doi.org/10.1002/1521-3773(20021104)41:21&amp;lt;4062::AID-ANIE4062&amp;gt;3.0.CO;2-U" rdfs:label="doi:10.1002/1521-3773(20021104)41:21&lt;4062::AID-ANIE4062&gt;3.0.CO;2-U"/>
           </PDBo:pdbx_reference_molecule_annotation>
         </PDBo:has_pdbx_reference_molecule_annotation>
         <PDBo:has_pdbx_reference_molecule_annotation>
