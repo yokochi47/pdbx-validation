@@ -206,8 +206,9 @@ File path | Document
 
 ## Release notes
 
-- **Aug 03, 2023**: Release v4.4.26
+- **Aug 4, 2023**: Release v4.4.26
 	- Update wwPDB Validation Information Dictionary to 4.376.
+	- Fix invalid IRI codes.
 
 - **Jul 27, 2023**: Release v4.4.25
 	- Update wwPDB Validation Information Dictionary to 4.375.
