@@ -87,7 +87,7 @@ do
    # java -jar $SAXON -s:$pdbml_file -xsl:$PDBML2RDF_XSL -o:$rdf_file wurcs2glytoucan=$WURCS_CATALOG_XML primitive_type_mapping=$_PDBX_PRIMITIVE_TYPE_MAPPING_XML 2> $err_file && rm -f $err_file $pdbml_file || ( rm -f $pdbml_file $rdf_file ; cat $err_file ; exit 1 )
    #fi
 
-   if [ $has_rapper_command != "false" ] ; then
+   if [ $has_rapper_command != "false" ] && [ -s $rdf_file ] ; then
     rapper -q -c $rdf_file 2> $err_file && rm -f $err_file || ( cat $err_file ; exit 1 )
    fi
 
@@ -142,6 +142,19 @@ do
    gunzip -c $pdbml_gz_file > $pdbml_file || exit 1
 
    #has_glycan=`java -jar $SAXON -s:$pdbml_file -xsl:$PDBML2WURCS_XSL`
+   #has_glycan=`xsltproc $PDBML2WURCS_XSL $pdbml_file`
+   #grep WURCS $pdbml_file > /dev/null
+   #has_glycan=$?
+
+   #if [ -z "$has_glycan" ] ; then
+    xsltproc -o $rdf_file --stringparam wurcs2glytoucan $WURCS_CATALOG_XML --stringparam primitive_type_mapping $_PDBX_PRIMITIVE_TYPE_MAPPING_XML $PDBML2RDF_XSL $pdbml_file 2> $err_file && rm -f $err_file $pdbml_file || ( rm -f $pdbml_file $rdf_file ; cat $err_file ; exit 1 )
+   #else
+   # java -jar $SAXON -s:$pdbml_file -xsl:$PDBML2RDF_XSL -o:$rdf_file wurcs2glytoucan=$WURCS_CATALOG_XML primitive_type_mapping=$_PDBX_PRIMITIVE_TYPE_MAPPING_XML 2> $err_file && rm -f $err_file $pdbml_file || ( rm -f $pdbml_file $rdf_file ; cat $err_file ; exit 1 )
+   #fi
+
+   if [ $has_rapper_command != "false" ] && [ -s $rdf_file ] ; then
+    rapper -q -c $rdf_file 2> $err_file && rm -f $err_file || ( cat $err_file ; exit 1 )
+   fi
 
    mk_div_dir $div_dir
 

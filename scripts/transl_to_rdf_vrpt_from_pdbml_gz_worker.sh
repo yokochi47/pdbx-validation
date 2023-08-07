@@ -90,7 +90,7 @@ do
    # java -jar $SAXON -s:$pdbml_vrpt_file -xsl:$VRPTML2RDF_XSL -o:$rdf_vrpt_file wurcs2glytoucan=$WURCS_CATALOG_XML primitive_type_mapping=$_VRPTX_PRIMITIVE_TYPE_MAPPING_XML 2> $err_file && ( rm -f $pdbml_vrpt_file $err_file ) || ( rm -f $pdbml_vrpt_file $rdf_vrpt_file ; cat $err_file ; exit 1 )
    #fi
 
-   if [ $has_rapper_command != "false" ] ; then
+   if [ $has_rapper_command != "false" ] && [ -s $rdf_vrpt_file ] ; then
     rapper -q -c $rdf_vrpt_file 2> $err_file && rm -f $err_file || ( cat $err_file ; exit 1 )
    fi
 
@@ -158,7 +158,7 @@ do
    # java -jar $SAXON -s:$pdbml_vrpt_file -xsl:$VRPTML2RDF_XSL -o:$rdf_vrpt_file wurcs2glytoucan=$WURCS_CATALOG_XML primitive_type_mapping=$_VRPTX_PRIMITIVE_TYPE_MAPPING_XML 2> $err_file && ( rm -f $pdbml_vrpt_file $err_file ) || ( rm -f $pdbml_vrpt_file $rdf_vrpt_file ; cat $err_file ; exit 1 )
    #fi
 
-   if [ $has_rapper_command != "false" ] ; then
+   if [ $has_rapper_command != "false" ] && [ -s $rdf_vrpt_file ] ; then
     rapper -q -c $rdf_vrpt_file 2> $err_file && rm -f $err_file || ( cat $err_file ; exit 1 )
    fi
 
