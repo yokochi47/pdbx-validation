@@ -49,6 +49,8 @@ fi
 
 err=$DB_NAME"_err"
 
+rm -f $err
+
 find $RDF_VALID_ALT/* -type d > vrpt_folder_list
 
 while read folder ;

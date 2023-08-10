@@ -49,6 +49,8 @@ fi
 
 err=$DB_NAME"_err"
 
+rm -f $err
+
 find $RDF_BIRD/*/* -type d > bird_folder_list
 
 while read folder ;

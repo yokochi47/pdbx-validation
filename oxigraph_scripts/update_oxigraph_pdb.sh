@@ -49,6 +49,8 @@ fi
 
 err=$DB_NAME"_err"
 
+rm -f $err
+
 find $RDF/* -type d > pdb_folder_list
 
 while read folder ;

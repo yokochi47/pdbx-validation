@@ -49,6 +49,8 @@ fi
 
 err=$DB_NAME"_err"
 
+rm -f $err
+
 find $RDF_CC/* -type d > cc_folder_list
 
 while read folder ;
