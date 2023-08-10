@@ -44,7 +44,7 @@ case $ans in
 esac
 
 if [ -e $LOCATION_PDB ] ; then
- rm -r $LOCATION_PDB
+ rm -f $LOCATION_PDB/*
 fi
 
 err=$DB_NAME"_err"
@@ -65,6 +65,8 @@ rm -f pdb_folder_list
 grep Error $err &> /dev/null || ( cat $err && exit 1 )
 
 rm -f $err
+
+oxigraph_server optimize --location $LOCATION_PDB
 
 date -u +"%b %d, %Y" > /tmp/pdb-oxigraph-last
 

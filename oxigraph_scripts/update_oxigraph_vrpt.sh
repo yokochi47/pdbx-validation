@@ -44,7 +44,7 @@ case $ans in
 esac
 
 if [ -e $LOCATION_VRPT ] ; then
- rm -r $LOCATION_VRPT
+ rm -f $LOCATION_VRPT/*
 fi
 
 err=$DB_NAME"_err"
@@ -65,6 +65,8 @@ rm -f vrpt_folder_list
 grep Error $err &> /dev/null || ( cat $err && exit 1 )
 
 rm -f $err
+
+oxigraph_server optimize --location $LOCATION_VRPT
 
 date -u +"%b %d, %Y" > /tmp/vrpt-oxigraph-last
 
