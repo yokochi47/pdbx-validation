@@ -68,7 +68,7 @@ grep Error $err &> /dev/null || ( cat $err && exit 1 )
 
 rm -f $err
 
-oxigraph_server optimize --location $LOCATION_CC
+oxigraph_server optimize --location $LOCATION_CC &
 
 date -u +"%b %d, %Y" > /tmp/cc-oxigraph-last
 

@@ -68,7 +68,7 @@ grep Error $err &> /dev/null || ( cat $err && exit 1 )
 
 rm -f $err
 
-oxigraph_server optimize --location $LOCATION_VRPT
+oxigraph_server optimize --location $LOCATION_VRPT &
 
 date -u +"%b %d, %Y" > /tmp/vrpt-oxigraph-last
 
