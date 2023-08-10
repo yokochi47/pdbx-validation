@@ -28,7 +28,11 @@ if [ -e $LOCATION_VRPT ] && [ $init = "false" ] ; then
   echo $DB_NAME is update.
  fi
 
- exit 0
+ ls $LOCATION_VRPT/* &> /dev/null
+
+ if [ $? = 0 ] ; then
+  exit 0
+ fi
 
 fi
 
