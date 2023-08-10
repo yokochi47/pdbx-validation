@@ -43,9 +43,13 @@ case $ans in
     exit 1;;
 esac
 
+if [ -e $LOCATION_BIRD ] ; then
+ rm -r $LOCATION_BIRD
+fi
+
 err=$DB_NAME"_err"
 
-find $RDF_BIRD/* -type d > bird_folder_list
+find $RDF_BIRD/*/* -type d > bird_folder_list
 
 while read folder ;
 do

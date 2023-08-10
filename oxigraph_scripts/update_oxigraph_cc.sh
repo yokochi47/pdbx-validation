@@ -43,6 +43,10 @@ case $ans in
     exit 1;;
 esac
 
+if [ -e $LOCATION_CC ] ; then
+ rm -r $LOCATION_CC
+fi
+
 err=$DB_NAME"_err"
 
 find $RDF_CC/* -type d > cc_folder_list

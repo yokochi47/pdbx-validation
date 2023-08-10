@@ -43,6 +43,10 @@ case $ans in
     exit 1;;
 esac
 
+if [ -e $LOCATION_VRPT ] ; then
+ rm -r $LOCATION_VRPT
+fi
+
 err=$DB_NAME"_err"
 
 find $RDF_VALID_ALT/* -type d > vrpt_folder_list

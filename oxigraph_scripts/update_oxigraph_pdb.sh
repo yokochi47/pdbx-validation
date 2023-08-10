@@ -43,6 +43,10 @@ case $ans in
     exit 1;;
 esac
 
+if [ -e $LOCATION_PDB ] ; then
+ rm -r $LOCATION_PDB
+fi
+
 err=$DB_NAME"_err"
 
 find $RDF/* -type d > pdb_folder_list
