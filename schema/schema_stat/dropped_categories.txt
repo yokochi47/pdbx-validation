@@ -144,6 +144,7 @@ pdbx_chem_comp_model_descriptor
 pdbx_chem_comp_model_feature
 pdbx_chem_comp_model_reference
 pdbx_chem_comp_nonstandard WWPDB_LOCAL
+pdbx_chem_comp_pcm
 pdbx_chem_comp_related
 pdbx_chem_comp_subcomponent_entity_list
 pdbx_chem_comp_subcomponent_struct_conn
@@ -247,6 +248,7 @@ pdbx_linked_entity_list
 pdbx_missing_atom_nonpoly WWPDB_LOCAL
 pdbx_missing_atom_poly WWPDB_LOCAL
 pdbx_missing_residue_list WWPDB_LOCAL
+pdbx_modification_feature
 pdbx_molecule
 pdbx_molecule_features
 pdbx_molecule_features_depositor_info WWPDB_LOCAL

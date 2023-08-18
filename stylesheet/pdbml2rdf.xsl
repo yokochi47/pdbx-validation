@@ -4822,6 +4822,28 @@
       </PDBo:has_pdbx_chem_comp_nonstandard>
   </xsl:template>
 
+  <xsl:template match="PDBx:datablock/PDBx:pdbx_chem_comp_pcmCategory/PDBx:pdbx_chem_comp_pcm">
+      <xsl:variable name="pcm_id_truncated"><xsl:choose><xsl:when test="string-length(@pcm_id)&lt;64"><xsl:value-of select="@pcm_id"/></xsl:when><xsl:when test="contains(@pcm_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@pcm_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@pcm_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
+      <xsl:variable name="pcm_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($pcm_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <PDBo:has_pdbx_chem_comp_pcm>
+      <PDBo:pdbx_chem_comp_pcm rdf:about="{$base}/pdbx_chem_comp_pcm/{$pcm_id_encoded}">
+      <PDBo:of_datablock rdf:resource="{$base}"/>
+      <xsl:if test="PDBx:comp_id!=''">
+	<PDBo:reference_to_chem_comp>
+	  <rdf:Description rdf:about="{$base}/chem_comp/{translate(PDBx:comp_id,' ^','__')}">
+	    <PDBo:referenced_by_pdbx_chem_comp_pcm rdf:resource="{$base}/pdbx_chem_comp_pcm/{$pcm_id_encoded}"/>
+	  </rdf:Description>
+	</PDBo:reference_to_chem_comp>
+	<!-- chem_compKeyref_0_0_15_0 -->
+      </xsl:if>
+      <xsl:apply-templates select="@*"/>
+      <xsl:apply-templates select="@*" mode="linked"/>
+      <xsl:apply-templates/>
+      <xsl:apply-templates mode="linked"/>
+      </PDBo:pdbx_chem_comp_pcm>
+      </PDBo:has_pdbx_chem_comp_pcm>
+  </xsl:template>
+
   <xsl:template match="PDBx:datablock/PDBx:pdbx_chem_comp_relatedCategory/PDBx:pdbx_chem_comp_related">
       <xsl:variable name="comp_id_truncated"><xsl:choose><xsl:when test="string-length(@comp_id)&lt;64"><xsl:value-of select="@comp_id"/></xsl:when><xsl:when test="contains(@comp_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@comp_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@comp_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
       <xsl:variable name="comp_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($comp_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
@@ -4838,7 +4860,7 @@
 	    <PDBo:referenced_by_pdbx_chem_comp_related rdf:resource="{$base}/pdbx_chem_comp_related/{$comp_id_encoded},{$related_comp_id_encoded},{$relationship_type_encoded}"/>
 	  </rdf:Description>
 	</PDBo:reference_to_chem_comp>
-	<!-- chem_compKeyref_0_0_15_0 -->
+	<!-- chem_compKeyref_0_0_16_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -4860,7 +4882,7 @@
 	    <PDBo:referenced_by_pdbx_chem_comp_subcomponent_entity_list rdf:resource="{$base}/pdbx_chem_comp_subcomponent_entity_list/{$id_encoded}"/>
 	  </rdf:Description>
 	</PDBo:reference_to_chem_comp>
-	<!-- chem_compKeyref_0_0_16_0 -->
+	<!-- chem_compKeyref_0_0_17_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -4898,7 +4920,7 @@
 	    <PDBo:referenced_by_pdbx_chem_comp_synonyms rdf:resource="{$base}/pdbx_chem_comp_synonyms/{$comp_id_encoded},{$ordinal_encoded}"/>
 	  </rdf:Description>
 	</PDBo:reference_to_chem_comp>
-	<!-- chem_compKeyref_0_0_17_0 -->
+	<!-- chem_compKeyref_0_0_18_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -5806,7 +5828,7 @@
 	    <PDBo:referenced_by_pdbx_distant_solvent_atoms rdf:resource="{$base}/pdbx_distant_solvent_atoms/{$id_encoded}"/>
 	  </rdf:Description>
 	</PDBo:reference_to_chem_comp>
-	<!-- chem_compKeyref_0_0_18_0 -->
+	<!-- chem_compKeyref_0_0_19_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -5990,7 +6012,7 @@
 	    <PDBo:referenced_by_pdbx_entity_branch_list rdf:resource="{$base}/pdbx_entity_branch_list/{$comp_id_encoded},{$entity_id_encoded},{$num_encoded}"/>
 	  </rdf:Description>
 	</PDBo:reference_to_chem_comp>
-	<!-- chem_compKeyref_0_0_19_0 -->
+	<!-- chem_compKeyref_0_0_20_0 -->
       </xsl:if>
       <xsl:if test="@entity_id!=''">
 	<PDBo:reference_to_entity>
@@ -7516,6 +7538,20 @@
       <xsl:apply-templates mode="linked"/>
       </PDBo:pdbx_missing_residue_list>
       </PDBo:has_pdbx_missing_residue_list>
+  </xsl:template>
+
+  <xsl:template match="PDBx:datablock/PDBx:pdbx_modification_featureCategory/PDBx:pdbx_modification_feature">
+      <xsl:variable name="ordinal_truncated"><xsl:choose><xsl:when test="string-length(@ordinal)&lt;64"><xsl:value-of select="@ordinal"/></xsl:when><xsl:when test="contains(@ordinal,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@ordinal,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@ordinal,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
+      <xsl:variable name="ordinal_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($ordinal_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <PDBo:has_pdbx_modification_feature>
+      <PDBo:pdbx_modification_feature rdf:about="{$base}/pdbx_modification_feature/{$ordinal_encoded}">
+      <PDBo:of_datablock rdf:resource="{$base}"/>
+      <xsl:apply-templates select="@*"/>
+      <xsl:apply-templates select="@*" mode="linked"/>
+      <xsl:apply-templates/>
+      <xsl:apply-templates mode="linked"/>
+      </PDBo:pdbx_modification_feature>
+      </PDBo:has_pdbx_modification_feature>
   </xsl:template>
 
   <xsl:template match="PDBx:datablock/PDBx:pdbx_moleculeCategory/PDBx:pdbx_molecule">
@@ -10246,7 +10282,7 @@
 	    <PDBo:referenced_by_pdbx_unobs_or_zero_occ_atoms rdf:resource="{$base}/pdbx_unobs_or_zero_occ_atoms/{$id_encoded}"/>
 	  </rdf:Description>
 	</PDBo:reference_to_chem_comp>
-	<!-- chem_compKeyref_0_0_20_0 -->
+	<!-- chem_compKeyref_0_0_21_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
@@ -10268,7 +10304,7 @@
 	    <PDBo:referenced_by_pdbx_unobs_or_zero_occ_residues rdf:resource="{$base}/pdbx_unobs_or_zero_occ_residues/{$id_encoded}"/>
 	  </rdf:Description>
 	</PDBo:reference_to_chem_comp>
-	<!-- chem_compKeyref_0_0_21_0 -->
+	<!-- chem_compKeyref_0_0_22_0 -->
       </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>

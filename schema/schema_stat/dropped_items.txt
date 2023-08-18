@@ -149,6 +149,7 @@ pdbx_dcc_map.model_id
 pdbx_dcc_map.pdb_id
 pdbx_dcc_rscc_mapman_overall.pdbid
 pdbx_dcc_rscc_mapman.pdb_id
+pdbx_entry_details.has_protein_modification
 pdbx_nmr_assigned_chem_shift_list.chem_shift_reference_id
 pdbx_nmr_assigned_chem_shift_list.conditions_id
 pdbx_nmr_assigned_chem_shift_list.conditions_label

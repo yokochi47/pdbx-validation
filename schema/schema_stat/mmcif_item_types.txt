@@ -940,3 +940,4 @@
 "_pdbx_audit_support.details" WWPDB_LOCAL
 "_chem_comp_atom.pdbx_stnd_atom_id" WWPDB_LOCAL
 "_em_3d_fitting.initial_refinement_model_id" WWPDB_DEPRECATED
+"_pdbx_chem_comp_pcm.first_instance_model_db_code" WWPDB_LOCAL

@@ -1353,6 +1353,12 @@ Unmatched entry ID in both documents (<xsl:value-of select="$entry_id"/> and <xs
     </xsl:element>
   </xsl:template>
 
+  <xsl:template match="PDBx:pdbx_chem_comp_pcmCategory">
+    <xsl:element name="{name()}">
+      <xsl:apply-templates mode="category-element"/>
+    </xsl:element>
+  </xsl:template>
+
   <xsl:template match="PDBx:pdbx_chem_comp_relatedCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
@@ -2104,6 +2110,12 @@ Unmatched entry ID in both documents (<xsl:value-of select="$entry_id"/> and <xs
   </xsl:template>
 
   <xsl:template match="PDBx:pdbx_missing_residue_listCategory">
+    <xsl:element name="{name()}">
+      <xsl:apply-templates mode="category-element"/>
+    </xsl:element>
+  </xsl:template>
+
+  <xsl:template match="PDBx:pdbx_modification_featureCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>
     </xsl:element>

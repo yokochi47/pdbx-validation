@@ -44,8 +44,8 @@
 --
 
 --
--- VRPT PDBML Schema v4.376
--- VRPT PDBML Schema translated from wwPDB Validation Information Dictionary v4.376, which is backward compatible with the PDBx/mmCIF Dictionary v5.370: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
+-- VRPT PDBML Schema v4.377
+-- VRPT PDBML Schema translated from wwPDB Validation Information Dictionary v4.377, which is backward compatible with the PDBx/mmCIF Dictionary v5.370: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
 -- URI-reference = http://pdbml.pdb.org/schema/pdbx-validation-v4.xsd
 --
 
@@ -2659,7 +2659,7 @@ CREATE TABLE em_virus_synthetic (
 DROP TYPE IF EXISTS ENUM_em_vitrification_cryogen_name CASCADE;
 CREATE TYPE ENUM_em_vitrification_cryogen_name AS ENUM ( 'HELIUM', 'NITROGEN', 'PROPANE', 'ETHANE', 'ETHANE-PROPANE', 'METHANE', 'FREON 22', 'FREON 12', 'OTHER' );
 DROP TYPE IF EXISTS ENUM_em_vitrification_instrument CASCADE;
-CREATE TYPE ENUM_em_vitrification_instrument AS ENUM ( 'EMS-002 RAPID IMMERSION FREEZER', 'FEI VITROBOT MARK I', 'FEI VITROBOT MARK II', 'FEI VITROBOT MARK III', 'FEI VITROBOT MARK IV', 'GATAN CRYOPLUNGE 3', 'HOMEMADE PLUNGER', 'LEICA PLUNGER', 'LEICA EM GP', 'LEICA EM CPC', 'LEICA KF80', 'REICHERT-JUNG PLUNGER', 'SPOTITON', 'ZEISS PLUNGE FREEZER CRYOBOX' );
+CREATE TYPE ENUM_em_vitrification_instrument AS ENUM ( 'CRYOSOL VITROJET', 'EMS-002 RAPID IMMERSION FREEZER', 'FEI VITROBOT MARK I', 'FEI VITROBOT MARK II', 'FEI VITROBOT MARK III', 'FEI VITROBOT MARK IV', 'GATAN CRYOPLUNGE 3', 'HOMEMADE PLUNGER', 'LEICA PLUNGER', 'LEICA EM GP', 'LEICA EM CPC', 'LEICA KF80', 'REICHERT-JUNG PLUNGER', 'SPOTITON', 'ZEISS PLUNGE FREEZER CRYOBOX' );
 CREATE TABLE em_vitrification (
 -- xsd:restriction/xsd:minInclusive="0.0"
 	chamber_temperature DECIMAL CHECK ( chamber_temperature >= 0.0 ) ,

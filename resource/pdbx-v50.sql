@@ -21,7 +21,7 @@
 --  map xsd date type to: sql date type
 --
 -- Statistics of schema:
---  Generated 592 tables (7176 fields), 0 views (0 fields), 0 attr groups, 0 model groups in total
+--  Generated 594 tables (7219 fields), 0 views (0 fields), 0 attr groups, 0 model groups in total
 --   Unnecessary tables by inlining simple content as a primitive data type:
 --    schema location: pdbx-v50.xsd
 --      temperature, final_thickness, "B_calc", zeta, "L23", "L11", "pdbx_F_calc_with_solvent", radial_pitch, time, angle_increment, "model_Cartn_y_esd", diffr_phi, "B_iso_or_equiv", pdbx_solvent_vdw_probe_radii, maximum_torsion_angle_constraint_violation, "A_meas_au", lower_limit, "F_meas", "S31", "F_meas_au", "Cartn_x_esd", length_a_esd, "L22", "F_squared_calc", volume_three, mean_guiner_radius, reciprocal_angle_beta_esd, beta_tolerance, maximum_upper_distance_constraint_violation, bond_deviation, nominal_defocus_min, "B33", angle, "B_iso_min", "U_equiv_geom_mean_esd", crossfire_y, psi, crossfire_x, "U33_esd", bond_angle_rms_dev, "S33_esd", angle_gamma_esd, pdbx_crystal_direction_3, dihedral_angles_rms_dev, pdbx_crystal_direction_2, "angle_DHA_esd", epsilon, pdbx_crystal_direction_1, bond, "aniso_U22", induction_temperature, average_torsion_angle_constraint_violation, "L33", angle_phi, "aniso_B11_esd", pdbx_solvent_ion_probe_radii, "aniso_B33_esd", "dist_HA_esd", "B_calc_au", culture_temperature, "S23_esd", sample_volume, diffr_kappa, reciprocal_length_a_esd, peptide_planarity_rms_dev, "sigmaI", pdbx_solvent_shrinkage_radii, displacement, "aniso_U33", maximum_lower_distance_constraint_violation, culture_time, "aniso_U22_esd", column_volume, translation_width, tilt_angle_min, prot_cis, electron_dose, scan_time_backgd, "aniso_B23_esd", protein_yield, "B_equiv_geom_mean_esd", calibrated_defocus_min, underload, "F_squared_meas", "B22_esd", "aniso_U12", pdbx_dist_value, "U11_esd", induction_timepoint, "L12_esd", "T11_esd", "model_Cartn_y", energyfilter_lower, alpha, pressure, atom_deviation, "U13", improper_torsion_angle_rms_dev_error, "B12_esd", "T12_esd", "aniso_U13_esd", "pdbx_model_Cartn_y_ideal", "A_calc_au", pdbx_phase_calc_part_solvent, reciprocal_angle_gamma_esd, "aniso_U11", "aniso_U23", angle_value, "F_squared_sigma", buffer_volume, covalent_bond_rms_dev, reciprocal_angle_alpha_esd, "L13_esd", "model_Cartn_x", angle_range, "T13_esd", rotation_per_n_subunits, diff_density_min, "B_iso", "U12", angle_omega, energyfilter_upper, mean_guiner_radius_esd, crossfire_x_esd, "A_meas", "aniso_U23_esd", storage_temperature, reference_displacement, mol_wt_theo, tau1, distance_rms_dev, tau2, tau3, tau4, "U23", "I", flow_rate, dist, "A_calc", angle_deviation, temperature_decomposition_esd, nominal_defocus_max, "B_iso_mean", "U11", "aniso_U33_esd", dist_esd, "aniso_U13", value_esd, upper_limit, "B_meas", cleavage_time, "pdbx_res_netI_over_av_sigmaI_2", displacement_start, "model_Cartn_z", displacement_increment, density_meas_temp_esd, "T13", maximum_distance_constraint_violation, tau0, "B11_esd", angle_beta_esd, "L22_esd", "T22_esd", "U22", gamma_tolerance, temp, "U_tls22", phase_calc, angle_chi, "aniso_B22_esd", improper_torsion_angle_rms_dev, diff_density_max_esd, sample_concentration, rmsd, "pdbx_F_calc_part_solvent", cleavage_temperature, "pdbx_res_netI_over_sigmaI_2", "Luzzati_sigma_a_obs", "Luzzati_coordinate_error_free", temperature_sublimation_esd, "F_meas_sigma", "U33", "model_Cartn_z_esd", "T12", dihedral_angles_rms_dev_error, pdbx_scan_angle, "B_iso_or_equiv_esd", angle_target_value, "Cartn_y_esd", angle_psi, "U_tls11", bond_angle_rms_dev_error, "B23_esd", "U_iso_or_equiv_esd", volume_esd, "U_tls23", crossfire_y_esd, pdbx_phase_calc_with_solvent, taum, "S22_esd", diffr_chi, "T23", "B", pressure_esd, column_temperature, "T11", min_mean_cross_sectional_radii_gyration_esd, "Luzzati_d_res_low_free", chi2, chi1, "L23_esd", chi4, chi3, "aniso_B22", pdbx_collection_time_total, crossfire_xy_esd, chi5, angle_alpha_esd, scan_rate, neighbor_ligand_distance, length_b_esd, "T23_esd", pdbx_crystal_diffrn_lifetime, peptide_planarity_rms_dev_error, "S13", "Ro", "T22", voltage, "S32_esd", fract_displacement_increment, beta, average_distance_constraint_violation, "aniso_B33", energy_window, crossfire_xy, dev, "U_tls33", "S13_esd", "model_Cartn_x_esd", "L11_esd", volume_three_esd, protein_volume, value, "T33_esd", angle_kappa, rise_per_n_subunits, reciprocal_length_c_esd, "L33_esd", "S12", scat_length_neutron, "T33", "S11_esd", improper_torsion_angle, current, "aniso_B12", alpha_tolerance, "Luzzati_coordinate_error_obs", "P", gamma, diff_density_rms_esd, "B13_esd", displacement_range, phi, "aniso_U12_esd", neighbor_macromolecule_distance, "pre_Cartn_x", "B_iso_Wilson_estimate", "B12", ambient_temp_esd, "Cartn_z", "F_calc", "pdbx_model_Cartn_x_ideal", ambient_pressure_esd, pdbx_crystal_diffrn_limit, displacement_rstrt_incr, yield_pooled_fractions, "U12_esd", "S12_esd", phase_meas, "pdbx_model_Cartn_z_ideal", "S23", diff_density_max, "aniso_B13_esd", tilt_angle_max, "S11", origin_y, origin_x, nu4, nu3, nu2, nu1, "aniso_B11", nu0, "aniso_B23", max_mean_cross_sectional_radii_gyration, overload, angle_theta, covalent_bond_rms_dev_error, "Luzzati_d_res_low_obs", origin_z, power, "dist_DA_esd", "B13", min_mean_cross_sectional_radii_gyration, temp_esd, culture_volume, inducer_concentration, "S22", "B_meas_au", "U22_esd", omega, length_c_esd, pdbx_rotation_angle, diff_density_min_esd, "S31_esd", angle_rstrt_incr, "pre_Cartn_z", "U_tls12", volume_pooled_fractions, "B_iso_esd", "U13_esd", delta, detector_distance, "Cartn_x", "B22", "U23_esd", diffr_psi, distance_rms_dev_error, "S21", max_mean_cross_sectional_radii_gyration_esd, "S33", angular_pitch, "L12", "B_iso_max", reference_angle, "aniso_B13", reciprocal_length_b_esd, diff_density_rms, "Luzzati_sigma_a_free", "aniso_B12_esd", protein_concentration, mol_wt_exp, concentration_range, "pre_Cartn_y", "S21_esd", "F_calc_au", "U_tls13", "Cartn_z_esd", "B33_esd", "B23", "B11", angle_start, "Cartn_y", "aniso_U11_esd", density_meas_esd, "dist_DH_esd", multiplicity_of_infection, "L13", "F_meas_sigma_au", "S32"
@@ -30,22 +30,22 @@
 --   Schema locations:
 --    pdbx-v50.xsd
 --   Table types:
---    0 root, 0 root children, 0 admin roots, 592 admin children
+--    0 root, 0 root children, 0 admin roots, 594 admin children
 --   System keys:
 --    0 primary keys (0 unique constraints), 0 foreign keys, 0 nested keys (0 as attribute, 0 as attribute group)
 --   User keys:
---    592 document keys, 0 serial keys, 0 xpath keys
+--    594 document keys, 0 serial keys, 0 xpath keys
 --   Contents:
---    1086 attributes (0 in-place document keys), 5498 elements (0 in-place document keys), 0 simple contents (0 in-place document keys, 0 as attribute, 0 as conditional attribute)
+--    1088 attributes (0 in-place document keys), 5537 elements (0 in-place document keys), 0 simple contents (0 in-place document keys, 0 as attribute, 0 as conditional attribute)
 --   Wild cards:
 --    0 any elements, 0 any attributes
 --   Constraints:
---    592 unique constraints from xsd:key, 1 unique constraints from xsd:unique, 356 foreign key constraints from xsd:keyref
+--    594 unique constraints from xsd:key, 1 unique constraints from xsd:unique, 357 foreign key constraints from xsd:keyref
 --
 
 --
--- PDBML Schema v5.376
--- PDBML Schema translated from the PDBx/mmCIF Dictionary v5.376: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
+-- PDBML Schema v5.377
+-- PDBML Schema translated from the PDBx/mmCIF Dictionary v5.377: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
 -- URI-reference = http://pdbml.pdb.org/schema/pdbx-v50.xsd
 --
 
@@ -242,6 +242,7 @@ DROP TABLE IF EXISTS pdbx_chem_comp_model_descriptor CASCADE;
 DROP TABLE IF EXISTS pdbx_chem_comp_model_feature CASCADE;
 DROP TABLE IF EXISTS pdbx_chem_comp_model_reference CASCADE;
 DROP TABLE IF EXISTS pdbx_chem_comp_nonstandard CASCADE;
+DROP TABLE IF EXISTS pdbx_chem_comp_pcm CASCADE;
 DROP TABLE IF EXISTS pdbx_chem_comp_related CASCADE;
 DROP TABLE IF EXISTS pdbx_chem_comp_subcomponent_entity_list CASCADE;
 DROP TABLE IF EXISTS pdbx_chem_comp_subcomponent_struct_conn CASCADE;
@@ -360,6 +361,7 @@ DROP TABLE IF EXISTS pdbx_linked_entity_link_list CASCADE;
 DROP TABLE IF EXISTS pdbx_missing_atom_nonpoly CASCADE;
 DROP TABLE IF EXISTS pdbx_missing_atom_poly CASCADE;
 DROP TABLE IF EXISTS pdbx_missing_residue_list CASCADE;
+DROP TABLE IF EXISTS pdbx_modification_feature CASCADE;
 DROP TABLE IF EXISTS pdbx_molecule CASCADE;
 DROP TABLE IF EXISTS pdbx_molecule_features CASCADE;
 DROP TABLE IF EXISTS pdbx_molecule_features_depositor_info CASCADE;
@@ -706,6 +708,8 @@ DROP TYPE IF EXISTS ENUM_chem_comp_pdbx_ideal_coordinates_missing_flag CASCADE;
 CREATE TYPE ENUM_chem_comp_pdbx_ideal_coordinates_missing_flag AS ENUM ( 'Y', 'N' );
 DROP TYPE IF EXISTS ENUM_chem_comp_pdbx_model_coordinates_missing_flag CASCADE;
 CREATE TYPE ENUM_chem_comp_pdbx_model_coordinates_missing_flag AS ENUM ( 'Y', 'N' );
+DROP TYPE IF EXISTS ENUM_chem_comp_pdbx_pcm CASCADE;
+CREATE TYPE ENUM_chem_comp_pdbx_pcm AS ENUM ( 'Y', 'N' );
 DROP TYPE IF EXISTS ENUM_chem_comp_pdbx_processing_site CASCADE;
 CREATE TYPE ENUM_chem_comp_pdbx_processing_site AS ENUM ( 'PDBE', 'EBI', 'PDBJ', 'PDBC', 'RCSB' );
 DROP TYPE IF EXISTS ENUM_chem_comp_pdbx_release_status CASCADE;
@@ -751,6 +755,7 @@ CREATE TABLE chem_comp (
 	pdbx_modified_date DATE ,
 	pdbx_nscnum TEXT ,
 	pdbx_number_subcomponents INTEGER ,
+	pdbx_pcm ENUM_chem_comp_pdbx_pcm ,
 	pdbx_processing_site ENUM_chem_comp_pdbx_processing_site ,
 	pdbx_release_status ENUM_chem_comp_pdbx_release_status ,
 	pdbx_replaced_by TEXT ,
@@ -1141,8 +1146,14 @@ CREATE TABLE atom_type (
 --
 DROP TYPE IF EXISTS ENUM_chem_comp_atom_pdbx_aromatic_flag CASCADE;
 CREATE TYPE ENUM_chem_comp_atom_pdbx_aromatic_flag AS ENUM ( 'Y', 'N' );
+DROP TYPE IF EXISTS ENUM_chem_comp_atom_pdbx_backbone_atom_flag CASCADE;
+CREATE TYPE ENUM_chem_comp_atom_pdbx_backbone_atom_flag AS ENUM ( 'Y', 'N' );
+DROP TYPE IF EXISTS ENUM_chem_comp_atom_pdbx_c_terminal_atom_flag CASCADE;
+CREATE TYPE ENUM_chem_comp_atom_pdbx_c_terminal_atom_flag AS ENUM ( 'Y', 'N' );
 DROP TYPE IF EXISTS ENUM_chem_comp_atom_pdbx_leaving_atom_flag CASCADE;
 CREATE TYPE ENUM_chem_comp_atom_pdbx_leaving_atom_flag AS ENUM ( 'Y', 'N' );
+DROP TYPE IF EXISTS ENUM_chem_comp_atom_pdbx_n_terminal_atom_flag CASCADE;
+CREATE TYPE ENUM_chem_comp_atom_pdbx_n_terminal_atom_flag AS ENUM ( 'Y', 'N' );
 DROP TYPE IF EXISTS ENUM_chem_comp_atom_pdbx_polymer_type CASCADE;
 CREATE TYPE ENUM_chem_comp_atom_pdbx_polymer_type AS ENUM ( 'polymer', 'non-polymer' );
 DROP TYPE IF EXISTS ENUM_chem_comp_atom_pdbx_stereo_config CASCADE;
@@ -1173,6 +1184,8 @@ CREATE TABLE chem_comp_atom (
 	pdbx_alt_atom_id TEXT ,
 	pdbx_alt_comp_id TEXT ,
 	pdbx_aromatic_flag ENUM_chem_comp_atom_pdbx_aromatic_flag ,
+	pdbx_backbone_atom_flag ENUM_chem_comp_atom_pdbx_backbone_atom_flag ,
+	pdbx_c_terminal_atom_flag ENUM_chem_comp_atom_pdbx_c_terminal_atom_flag ,
 	pdbx_component_atom_id TEXT ,
 	pdbx_component_comp_id TEXT ,
 	pdbx_component_entity_id INTEGER ,
@@ -1184,6 +1197,7 @@ CREATE TABLE chem_comp_atom (
 	"pdbx_model_Cartn_y_ideal" DECIMAL ,
 -- omit an attribute having a fixed value: @units="angstroms"
 	"pdbx_model_Cartn_z_ideal" DECIMAL ,
+	pdbx_n_terminal_atom_flag ENUM_chem_comp_atom_pdbx_n_terminal_atom_flag ,
 	pdbx_ordinal INTEGER ,
 	pdbx_polymer_type ENUM_chem_comp_atom_pdbx_polymer_type ,
 	pdbx_ref_id TEXT ,
@@ -6098,7 +6112,7 @@ CREATE TABLE em_virus_synthetic (
 DROP TYPE IF EXISTS ENUM_em_vitrification_cryogen_name CASCADE;
 CREATE TYPE ENUM_em_vitrification_cryogen_name AS ENUM ( 'HELIUM', 'NITROGEN', 'PROPANE', 'ETHANE', 'ETHANE-PROPANE', 'METHANE', 'FREON 22', 'FREON 12', 'OTHER' );
 DROP TYPE IF EXISTS ENUM_em_vitrification_instrument CASCADE;
-CREATE TYPE ENUM_em_vitrification_instrument AS ENUM ( 'EMS-002 RAPID IMMERSION FREEZER', 'FEI VITROBOT MARK I', 'FEI VITROBOT MARK II', 'FEI VITROBOT MARK III', 'FEI VITROBOT MARK IV', 'GATAN CRYOPLUNGE 3', 'HOMEMADE PLUNGER', 'LEICA PLUNGER', 'LEICA EM GP', 'LEICA EM CPC', 'LEICA KF80', 'REICHERT-JUNG PLUNGER', 'SPOTITON', 'ZEISS PLUNGE FREEZER CRYOBOX' );
+CREATE TYPE ENUM_em_vitrification_instrument AS ENUM ( 'CRYOSOL VITROJET', 'EMS-002 RAPID IMMERSION FREEZER', 'FEI VITROBOT MARK I', 'FEI VITROBOT MARK II', 'FEI VITROBOT MARK III', 'FEI VITROBOT MARK IV', 'GATAN CRYOPLUNGE 3', 'HOMEMADE PLUNGER', 'LEICA PLUNGER', 'LEICA EM GP', 'LEICA EM CPC', 'LEICA KF80', 'REICHERT-JUNG PLUNGER', 'SPOTITON', 'ZEISS PLUNGE FREEZER CRYOBOX' );
 CREATE TABLE em_vitrification (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
@@ -7722,6 +7736,38 @@ CREATE TABLE pdbx_chem_comp_nonstandard (
 	comp_id TEXT NOT NULL ,
 -- ATTRIBUTE
 	type ENUM_pdbx_chem_comp_nonstandard_type NOT NULL
+);
+
+--
+-- (quoted from pdbx_chem_comp_pcmType)
+-- Data items in the PDBX_CHEM_COMP_PCM category provide information about the protein modifications that are described by the chemical component. An example of the category for the phosphoserine (SEP) chemical component. <PDBx:pdbx_chem_comp_pcmCategory> <PDBx:pdbx_chem_comp_pcm pcm_id="1"> <PDBx:category>Named protein modification</PDBx:category> <PDBx:comp_id>SEP</PDBx:comp_id> <PDBx:comp_id_linking_atom xsi:nil="true" /> <PDBx:modified_residue_id>SER</PDBx:modified_residue_id> <PDBx:modified_residue_id_linking_atom xsi:nil="true" /> <PDBx:polypeptide_position>Any position</PDBx:polypeptide_position> <PDBx:position>Amino-acid side chain</PDBx:position> <PDBx:type>Phosphorylation</PDBx:type> <PDBx:uniprot_specific_ptm_accession>PTM-0253</PDBx:uniprot_specific_ptm_accession> </PDBx:pdbx_chem_comp_pcm> </PDBx:pdbx_chem_comp_pcmCategory> An example of the category for the Alpha-L-fucopyranose (FUC) chemical component. <PDBx:pdbx_chem_comp_pcmCategory> <PDBx:pdbx_chem_comp_pcm pcm_id="1"> <PDBx:category>Carbohydrate</PDBx:category> <PDBx:comp_id>FUC</PDBx:comp_id> <PDBx:comp_id_linking_atom>C1</PDBx:comp_id_linking_atom> <PDBx:modified_residue_id>SER</PDBx:modified_residue_id> <PDBx:modified_residue_id_linking_atom>OG</PDBx:modified_residue_id_linking_atom> <PDBx:polypeptide_position>Any position</PDBx:polypeptide_position> <PDBx:position>Amino-acid side chain</PDBx:position> <PDBx:type xsi:nil="true" /> </PDBx:pdbx_chem_comp_pcm> <PDBx:pdbx_chem_comp_pcm pcm_id="2"> <PDBx:category>Carbohydrate</PDBx:category> <PDBx:comp_id>FUC</PDBx:comp_id> <PDBx:comp_id_linking_atom>C1</PDBx:comp_id_linking_atom> <PDBx:modified_residue_id>THR</PDBx:modified_residue_id> <PDBx:modified_residue_id_linking_atom>OG1</PDBx:modified_residue_id_linking_atom> <PDBx:polypeptide_position>Any position</PDBx:polypeptide_position> <PDBx:position>Amino-acid side chain</PDBx:position> <PDBx:type xsi:nil="true" /> </PDBx:pdbx_chem_comp_pcm> </PDBx:pdbx_chem_comp_pcmCategory>
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+DROP TYPE IF EXISTS ENUM_pdbx_chem_comp_pcm_category CASCADE;
+CREATE TYPE ENUM_pdbx_chem_comp_pcm_category AS ENUM ( 'ADP-Ribose', 'Biotin', 'Carbohydrate', 'Chromophore/chromophore-like', 'Covalent chemical modification', 'Crosslinker', 'Disulfide', 'Flavin', 'Heme/heme-like', 'Lipid/lipid-like', 'Named protein modification', 'Non-standard linkage', 'Non-standard residue', 'Nucleotide monophosphate', 'Terminal acetylation', 'Terminal amidation' );
+DROP TYPE IF EXISTS ENUM_pdbx_chem_comp_pcm_polypeptide_position CASCADE;
+CREATE TYPE ENUM_pdbx_chem_comp_pcm_polypeptide_position AS ENUM ( 'C-terminal', 'N-terminal', 'Any position' );
+DROP TYPE IF EXISTS ENUM_pdbx_chem_comp_pcm_position CASCADE;
+CREATE TYPE ENUM_pdbx_chem_comp_pcm_position AS ENUM ( 'Amino-acid side chain', 'Amino-acid backbone', 'Amino-acid side chain and backbone' );
+DROP TYPE IF EXISTS ENUM_pdbx_chem_comp_pcm_type CASCADE;
+CREATE TYPE ENUM_pdbx_chem_comp_pcm_type AS ENUM ( '12-Hydroxyfarnesylation', '12-Oxomyristoylation', '12R-Hydroxymyristoylation', '14-Hydroxy-10,13-dioxo-7-heptadecenoic acid', '(3-Aminopropyl)(5''-adenosyl)phosphono amidation', '2-Aminoadipylation', '2-Aminoethylphosphorylation', '2-Cholinephosphorylation', '2-Hydroxyisobutyrylation', '2-Oxo-5,5-dimethylhexanoylation', '2-Oxobutanoic acid', '2,3-Dicarboxypropylation', '3-Oxoalanine', '3-Phenyllactic acid', '(3R)-3-Hydroxybutyrylation', '4-Phosphopantetheine', 'ADP-ribosylation', 'ADP-riboxanation', 'AMPylation', 'Acetamidation', 'Acetamidomethylation', 'Acetylation', 'Allysine', 'Amination', 'Arachidoylation', 'Archaeol', 'Arsenylation', 'Bacillithiolation', 'Benzoylation', 'Benzylation', 'Beta-amino acid', 'Beta-hydroxybutyrylation', 'Beta-lysylation', 'Beta-mercaptoethanol', 'Biotinylation', 'Bromination', 'Butyrylation', 'Carbamoylation', 'Carboxyethylation', 'Carboxylation', 'Carboxymethylation', 'cGMPylation', 'Chlorination', 'Cholesterylation', 'Citrullination', 'Crotonylation', 'Cyanation', 'D-amino acid', 'Deamidation', 'Decanoylation', 'Decarboxylation', 'Dehydroamino acid', 'Dehydrocoelenterazination', 'Dehydrogenation', 'Dehydroxylation', 'Deoxidation', 'Deoxyhypusine', 'Diacylglycerol', 'Dihydroxyacetonation', 'Diphosphorylation', 'Diphthamide', 'Dipyrromethane methylation', 'Dopaminylation', 'Ethylation', 'Ethylsulfanylation', 'Farnesylation', 'Fluorination', 'Formylation', 'GMPylation', 'Geranylgeranylation', 'Glutarylation', 'Glutathionylation', 'Glycerophosphorylation', 'Glycerylphosphorylethanolamination', 'Heptanoylation', 'Hexanoylation', 'Histaminylation', 'Hydrogenation', 'Hydroperoxylation', 'Hydroxylation', 'Hypusine', 'Iodination', 'Lactoylation', 'Laurylation', 'Lipoylation', 'Malonylation', 'Methylamination', 'Methylation', 'Methylsulfanylation', 'Methylsulfation', 'Myristoylation', 'N-pyruvic acid 2-iminylation', 'Nitration', 'Nitrosylation', 'Noradrenylation', 'Norleucine', 'Octanoylation', 'Oleiylation', 'Ornithine', 'Oxidation', 'Palmitoleoylation', 'Palmitoylation', 'Pentadecanoylation', 'Pentanoylation', 'Phosphatidylethanolamine amidation', 'Phosphoenolpyruvate', 'Phosphorylation', 'Propionylation', 'Pyridoxal phosphate', 'Pyrrolidone carboxylic acid', 'Pyruvic acid', 'Retinoylation', 'Selanylation', 'Selenocysteine', 'Selenomethionine', 'Serotonylation', 'Stearoylation', 'Stereoisomerisation', 'Succinamide ring', 'Succination', 'Succinylation', 'Sulfation', 'Sulfhydration', 'Sulfonation', 'Tert-butylation', 'Thyroxine', 'Triiodothyronine', 'UMPylation' );
+CREATE TABLE pdbx_chem_comp_pcm (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+	category ENUM_pdbx_chem_comp_pcm_category ,
+	comp_id TEXT ,
+	comp_id_linking_atom TEXT ,
+	first_instance_model_db_code TEXT ,
+	modified_residue_id TEXT ,
+	modified_residue_id_linking_atom TEXT ,
+	polypeptide_position ENUM_pdbx_chem_comp_pcm_polypeptide_position ,
+	position ENUM_pdbx_chem_comp_pcm_position ,
+	type ENUM_pdbx_chem_comp_pcm_type ,
+	uniprot_generic_ptm_accession TEXT ,
+	uniprot_specific_ptm_accession TEXT ,
+-- ATTRIBUTE
+	pcm_id INTEGER NOT NULL
 );
 
 --
@@ -10180,11 +10226,14 @@ CREATE TABLE pdbx_entity_src_syn (
 --
 DROP TYPE IF EXISTS ENUM_pdbx_entry_details_has_ligand_of_interest CASCADE;
 CREATE TYPE ENUM_pdbx_entry_details_has_ligand_of_interest AS ENUM ( 'Y', 'N' );
+DROP TYPE IF EXISTS ENUM_pdbx_entry_details_has_protein_modification CASCADE;
+CREATE TYPE ENUM_pdbx_entry_details_has_protein_modification AS ENUM ( 'Y' );
 CREATE TABLE pdbx_entry_details (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
 	compound_details TEXT ,
 	has_ligand_of_interest ENUM_pdbx_entry_details_has_ligand_of_interest ,
+	has_protein_modification ENUM_pdbx_entry_details_has_protein_modification ,
 	nonpolymer_details TEXT ,
 	sequence_details TEXT ,
 	source_details TEXT ,
@@ -10682,6 +10731,48 @@ CREATE TABLE pdbx_missing_residue_list (
 	pdb_residue_name TEXT NOT NULL ,
 -- ATTRIBUTE
 	pdb_residue_number TEXT NOT NULL
+);
+
+--
+-- (quoted from pdbx_modification_featureType)
+-- Data items in the PDBX_MODIFICATION_FEATURE category provides information about all the protein modifications that have been modeled in the entry. An example of the category in an entry that contains a disulfide bridge and two phosphoserine modifications. <PDBx:pdbx_modification_featureCategory> <PDBx:pdbx_modification_feature ordinal="1"> <PDBx:auth_asym_id>B</PDBx:auth_asym_id> <PDBx:auth_comp_id>CYS</PDBx:auth_comp_id> <PDBx:auth_seq_id>46</PDBx:auth_seq_id> <PDBx:category>Disulfide</PDBx:category> <PDBx:comp_id_linking_atom>SG</PDBx:comp_id_linking_atom> <PDBx:label_asym_id>B</PDBx:label_asym_id> <PDBx:label_comp_id>CYS</PDBx:label_comp_id> <PDBx:label_seq_id>46</PDBx:label_seq_id> <PDBx:modified_residue_auth_asym_id>A</PDBx:modified_residue_auth_asym_id> <PDBx:modified_residue_auth_comp_id>CYS</PDBx:modified_residue_auth_comp_id> <PDBx:modified_residue_auth_seq_id>46</PDBx:modified_residue_auth_seq_id> <PDBx:modified_residue_id xsi:nil="true" /> <PDBx:modified_residue_id_linking_atom>SG</PDBx:modified_residue_id_linking_atom> <PDBx:modified_residue_label_asym_id>A</PDBx:modified_residue_label_asym_id> <PDBx:modified_residue_label_comp_id>CYS</PDBx:modified_residue_label_comp_id> <PDBx:modified_residue_label_seq_id>46</PDBx:modified_residue_label_seq_id> <PDBx:ref_comp_id xsi:nil="true" /> <PDBx:ref_pcm_id xsi:nil="true" /> <PDBx:type xsi:nil="true" /> </PDBx:pdbx_modification_feature> <PDBx:pdbx_modification_feature ordinal="2"> <PDBx:auth_asym_id>A</PDBx:auth_asym_id> <PDBx:auth_comp_id>SEP</PDBx:auth_comp_id> <PDBx:auth_seq_id>65</PDBx:auth_seq_id> <PDBx:category>Named protein modification</PDBx:category> <PDBx:comp_id_linking_atom xsi:nil="true" /> <PDBx:label_asym_id>A</PDBx:label_asym_id> <PDBx:label_comp_id>SEP</PDBx:label_comp_id> <PDBx:label_seq_id>65</PDBx:label_seq_id> <PDBx:modified_residue_PDB_ins_code xsi:nil="true" /> <PDBx:modified_residue_auth_asym_id xsi:nil="true" /> <PDBx:modified_residue_auth_comp_id xsi:nil="true" /> <PDBx:modified_residue_auth_seq_id xsi:nil="true" /> <PDBx:modified_residue_id>SER</PDBx:modified_residue_id> <PDBx:modified_residue_id_linking_atom xsi:nil="true" /> <PDBx:modified_residue_label_asym_id xsi:nil="true" /> <PDBx:modified_residue_label_comp_id xsi:nil="true" /> <PDBx:modified_residue_label_seq_id xsi:nil="true" /> <PDBx:ref_comp_id>SEP</PDBx:ref_comp_id> <PDBx:ref_pcm_id>1</PDBx:ref_pcm_id> <PDBx:type>Phosphorylation</PDBx:type> </PDBx:pdbx_modification_feature> <PDBx:pdbx_modification_feature ordinal="3"> <PDBx:auth_asym_id>B</PDBx:auth_asym_id> <PDBx:auth_comp_id>SEP</PDBx:auth_comp_id> <PDBx:auth_seq_id>65</PDBx:auth_seq_id> <PDBx:category>Named protein modification</PDBx:category> <PDBx:comp_id_linking_atom xsi:nil="true" /> <PDBx:label_asym_id>B</PDBx:label_asym_id> <PDBx:label_comp_id>SEP</PDBx:label_comp_id> <PDBx:label_seq_id>65</PDBx:label_seq_id> <PDBx:modified_residue_PDB_ins_code xsi:nil="true" /> <PDBx:modified_residue_auth_asym_id xsi:nil="true" /> <PDBx:modified_residue_auth_comp_id xsi:nil="true" /> <PDBx:modified_residue_auth_seq_id xsi:nil="true" /> <PDBx:modified_residue_id>SER</PDBx:modified_residue_id> <PDBx:modified_residue_id_linking_atom xsi:nil="true" /> <PDBx:modified_residue_label_asym_id xsi:nil="true" /> <PDBx:modified_residue_label_comp_id xsi:nil="true" /> <PDBx:modified_residue_label_seq_id xsi:nil="true" /> <PDBx:ref_comp_id>SEP</PDBx:ref_comp_id> <PDBx:ref_pcm_id>1</PDBx:ref_pcm_id> <PDBx:type>Phosphorylation</PDBx:type> </PDBx:pdbx_modification_feature> </PDBx:pdbx_modification_featureCategory> An example of the category in an entry that contains a two cysteine hydroxylation modification sites and two palmitoylation modification sites. <PDBx:pdbx_modification_featureCategory> <PDBx:pdbx_modification_feature ordinal="1"> <PDBx:auth_asym_id>C</PDBx:auth_asym_id> <PDBx:auth_comp_id>CSO</PDBx:auth_comp_id> <PDBx:auth_seq_id>32</PDBx:auth_seq_id> <PDBx:category>Named protein modification</PDBx:category> <PDBx:comp_id_linking_atom xsi:nil="true" /> <PDBx:label_asym_id>C</PDBx:label_asym_id> <PDBx:label_comp_id>CSO</PDBx:label_comp_id> <PDBx:label_seq_id>32</PDBx:label_seq_id> <PDBx:modified_residue_PDB_ins_code xsi:nil="true" /> <PDBx:modified_residue_auth_asym_id xsi:nil="true" /> <PDBx:modified_residue_auth_comp_id xsi:nil="true" /> <PDBx:modified_residue_auth_seq_id xsi:nil="true" /> <PDBx:modified_residue_id>CYS</PDBx:modified_residue_id> <PDBx:modified_residue_id_linking_atom xsi:nil="true" /> <PDBx:modified_residue_label_asym_id xsi:nil="true" /> <PDBx:modified_residue_label_comp_id xsi:nil="true" /> <PDBx:modified_residue_label_seq_id xsi:nil="true" /> <PDBx:ref_comp_id>CSO</PDBx:ref_comp_id> <PDBx:ref_pcm_id>1</PDBx:ref_pcm_id> <PDBx:type>Hydroxylation</PDBx:type> </PDBx:pdbx_modification_feature> <PDBx:pdbx_modification_feature ordinal="2"> <PDBx:auth_asym_id>D</PDBx:auth_asym_id> <PDBx:auth_comp_id>CSO</PDBx:auth_comp_id> <PDBx:auth_seq_id>32</PDBx:auth_seq_id> <PDBx:category>Named protein modification</PDBx:category> <PDBx:comp_id_linking_atom xsi:nil="true" /> <PDBx:label_asym_id>D</PDBx:label_asym_id> <PDBx:label_comp_id>CSO</PDBx:label_comp_id> <PDBx:label_seq_id>32</PDBx:label_seq_id> <PDBx:modified_residue_PDB_ins_code xsi:nil="true" /> <PDBx:modified_residue_auth_asym_id xsi:nil="true" /> <PDBx:modified_residue_auth_comp_id xsi:nil="true" /> <PDBx:modified_residue_auth_seq_id xsi:nil="true" /> <PDBx:modified_residue_id>CYS</PDBx:modified_residue_id> <PDBx:modified_residue_id_linking_atom xsi:nil="true" /> <PDBx:modified_residue_label_asym_id xsi:nil="true" /> <PDBx:modified_residue_label_comp_id xsi:nil="true" /> <PDBx:modified_residue_label_seq_id xsi:nil="true" /> <PDBx:ref_comp_id>CSO</PDBx:ref_comp_id> <PDBx:ref_pcm_id>1</PDBx:ref_pcm_id> <PDBx:type>Hydroxylation</PDBx:type> </PDBx:pdbx_modification_feature> <PDBx:pdbx_modification_feature ordinal="3"> <PDBx:auth_asym_id>A</PDBx:auth_asym_id> <PDBx:auth_comp_id>PLM</PDBx:auth_comp_id> <PDBx:auth_seq_id>1068</PDBx:auth_seq_id> <PDBx:category>Lipid/lipid-like</PDBx:category> <PDBx:comp_id_linking_atom>C1</PDBx:comp_id_linking_atom> <PDBx:label_asym_id>E</PDBx:label_asym_id> <PDBx:label_comp_id>PLM</PDBx:label_comp_id> <PDBx:label_seq_id xsi:nil="true" /> <PDBx:modified_residue_auth_asym_id>A</PDBx:modified_residue_auth_asym_id> <PDBx:modified_residue_auth_comp_id>CYS</PDBx:modified_residue_auth_comp_id> <PDBx:modified_residue_auth_seq_id>68</PDBx:modified_residue_auth_seq_id> <PDBx:modified_residue_id>CYS</PDBx:modified_residue_id> <PDBx:modified_residue_id_linking_atom>SG</PDBx:modified_residue_id_linking_atom> <PDBx:modified_residue_label_asym_id>A</PDBx:modified_residue_label_asym_id> <PDBx:modified_residue_label_comp_id>CYS</PDBx:modified_residue_label_comp_id> <PDBx:modified_residue_label_seq_id>82</PDBx:modified_residue_label_seq_id> <PDBx:ref_comp_id>PLM</PDBx:ref_comp_id> <PDBx:ref_pcm_id>6</PDBx:ref_pcm_id> <PDBx:type>Palmitoylation</PDBx:type> </PDBx:pdbx_modification_feature> <PDBx:pdbx_modification_feature ordinal="4"> <PDBx:auth_asym_id>B</PDBx:auth_asym_id> <PDBx:auth_comp_id>PLM</PDBx:auth_comp_id> <PDBx:auth_seq_id>1068</PDBx:auth_seq_id> <PDBx:category>Lipid/lipid-like</PDBx:category> <PDBx:comp_id_linking_atom>C1</PDBx:comp_id_linking_atom> <PDBx:label_asym_id>F</PDBx:label_asym_id> <PDBx:label_comp_id>PLM</PDBx:label_comp_id> <PDBx:label_seq_id xsi:nil="true" /> <PDBx:modified_residue_auth_asym_id>B</PDBx:modified_residue_auth_asym_id> <PDBx:modified_residue_auth_comp_id>CYS</PDBx:modified_residue_auth_comp_id> <PDBx:modified_residue_auth_seq_id>68</PDBx:modified_residue_auth_seq_id> <PDBx:modified_residue_id>CYS</PDBx:modified_residue_id> <PDBx:modified_residue_id_linking_atom>SG</PDBx:modified_residue_id_linking_atom> <PDBx:modified_residue_label_asym_id>B</PDBx:modified_residue_label_asym_id> <PDBx:modified_residue_label_comp_id>CYS</PDBx:modified_residue_label_comp_id> <PDBx:modified_residue_label_seq_id>82</PDBx:modified_residue_label_seq_id> <PDBx:ref_comp_id>PLM</PDBx:ref_comp_id> <PDBx:ref_pcm_id>6</PDBx:ref_pcm_id> <PDBx:type>Palmitoylation</PDBx:type> </PDBx:pdbx_modification_feature> </PDBx:pdbx_modification_featureCategory>
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+DROP TYPE IF EXISTS ENUM_pdbx_modification_feature_biological_function CASCADE;
+CREATE TYPE ENUM_pdbx_modification_feature_biological_function AS ENUM ( 'Y', 'N' );
+DROP TYPE IF EXISTS ENUM_pdbx_modification_feature_category CASCADE;
+CREATE TYPE ENUM_pdbx_modification_feature_category AS ENUM ( 'ADP-Ribose', 'Biotin', 'Carbohydrate', 'Chromophore/chromophore-like', 'Covalent chemical modification', 'Crosslinker', 'Disulfide', 'Flavin', 'Heme/heme-like', 'Lipid/lipid-like', 'Named protein modification', 'Non-standard linkage', 'Non-standard residue', 'Nucleotide monophosphate', 'Terminal acetylation', 'Terminal amidation' );
+DROP TYPE IF EXISTS ENUM_pdbx_modification_feature_type CASCADE;
+CREATE TYPE ENUM_pdbx_modification_feature_type AS ENUM ( '12-Hydroxyfarnesylation', '12-Oxomyristoylation', '12R-Hydroxymyristoylation', '14-Hydroxy-10,13-dioxo-7-heptadecenoic acid', '(3-Aminopropyl)(5''-adenosyl)phosphono amidation', '2-Aminoadipylation', '2-Aminoethylphosphorylation', '2-Cholinephosphorylation', '2-Hydroxyisobutyrylation', '2-Oxo-5,5-dimethylhexanoylation', '2-Oxobutanoic acid', '2,3-Dicarboxypropylation', '3-Oxoalanine', '3-Phenyllactic acid', '(3R)-3-Hydroxybutyrylation', '4-Phosphopantetheine', 'ADP-ribosylation', 'ADP-riboxanation', 'AMPylation', 'Acetamidation', 'Acetamidomethylation', 'Acetylation', 'Allysine', 'Amination', 'Arachidoylation', 'Archaeol', 'Arsenylation', 'Bacillithiolation', 'Benzoylation', 'Benzylation', 'Beta-amino acid', 'Beta-hydroxybutyrylation', 'Beta-lysylation', 'Beta-mercaptoethanol', 'Biotinylation', 'Bromination', 'Butyrylation', 'Carbamoylation', 'Carboxyethylation', 'Carboxylation', 'Carboxymethylation', 'cGMPylation', 'Chlorination', 'Cholesterylation', 'Citrullination', 'Crotonylation', 'Cyanation', 'D-amino acid', 'Deamidation', 'Decanoylation', 'Decarboxylation', 'Dehydroamino acid', 'Dehydrocoelenterazination', 'Dehydrogenation', 'Dehydroxylation', 'Deoxidation', 'Deoxyhypusine', 'Diacylglycerol', 'Dihydroxyacetonation', 'Diphosphorylation', 'Diphthamide', 'Dipyrromethane methylation', 'Dopaminylation', 'Ethylation', 'Ethylsulfanylation', 'Farnesylation', 'Fluorination', 'Formylation', 'GMPylation', 'Geranylgeranylation', 'Glutarylation', 'Glutathionylation', 'Glycerophosphorylation', 'Glycerylphosphorylethanolamination', 'Heptanoylation', 'Hexanoylation', 'Histaminylation', 'Hydrogenation', 'Hydroperoxylation', 'Hydroxylation', 'Hypusine', 'Iodination', 'Lactoylation', 'Laurylation', 'Lipoylation', 'Malonylation', 'Methylamination', 'Methylation', 'Methylsulfanylation', 'Methylsulfation', 'Myristoylation', 'N-pyruvic acid 2-iminylation', 'Nitration', 'Nitrosylation', 'Noradrenylation', 'Norleucine', 'Octanoylation', 'Oleiylation', 'Ornithine', 'Oxidation', 'Palmitoleoylation', 'Palmitoylation', 'Pentadecanoylation', 'Pentanoylation', 'Phosphatidylethanolamine amidation', 'Phosphoenolpyruvate', 'Phosphorylation', 'Propionylation', 'Pyridoxal phosphate', 'Pyrrolidone carboxylic acid', 'Pyruvic acid', 'Retinoylation', 'Selanylation', 'Selenocysteine', 'Selenomethionine', 'Serotonylation', 'Stearoylation', 'Stereoisomerisation', 'Succinamide ring', 'Succination', 'Succinylation', 'Sulfation', 'Sulfhydration', 'Sulfonation', 'Tert-butylation', 'Thyroxine', 'Triiodothyronine', 'UMPylation' );
+CREATE TABLE pdbx_modification_feature (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+	"PDB_ins_code" TEXT ,
+	auth_asym_id TEXT ,
+	auth_comp_id TEXT ,
+	auth_seq_id TEXT ,
+	biological_function ENUM_pdbx_modification_feature_biological_function ,
+	biological_function_details TEXT ,
+	category ENUM_pdbx_modification_feature_category ,
+	comp_id_linking_atom TEXT ,
+	label_asym_id TEXT ,
+	label_comp_id TEXT ,
+	label_seq_id INTEGER ,
+	"modified_residue_PDB_ins_code" TEXT ,
+	modified_residue_auth_asym_id TEXT ,
+	modified_residue_auth_comp_id TEXT ,
+	modified_residue_auth_seq_id TEXT ,
+	modified_residue_id TEXT ,
+	modified_residue_id_linking_atom TEXT ,
+	modified_residue_label_asym_id TEXT ,
+	modified_residue_label_comp_id TEXT ,
+	modified_residue_label_seq_id INTEGER ,
+	ref_comp_id TEXT ,
+	ref_pcm_id INTEGER ,
+	type ENUM_pdbx_modification_feature_type ,
+-- ATTRIBUTE
+	ordinal INTEGER NOT NULL
 );
 
 --
@@ -17762,6 +17853,9 @@ CREATE TABLE valence_ref (
 -- (derived from xsd:key[@name='pdbx_chem_comp_nonstandardKey_0'])
 --ALTER TABLE pdbx_chem_comp_nonstandard ADD CONSTRAINT UNQ_pdbx_chem_comp_nonstandard UNIQUE ( document_id, comp_id, type );
 
+-- (derived from xsd:key[@name='pdbx_chem_comp_pcmKey_0'])
+--ALTER TABLE pdbx_chem_comp_pcm ADD CONSTRAINT UNQ_pdbx_chem_comp_pcm UNIQUE ( document_id, pcm_id );
+
 -- (derived from xsd:key[@name='pdbx_chem_comp_relatedKey_0'])
 --ALTER TABLE pdbx_chem_comp_related ADD CONSTRAINT UNQ_pdbx_chem_comp_related UNIQUE ( document_id, comp_id, related_comp_id, relationship_type );
 
@@ -18139,6 +18233,9 @@ CREATE TABLE valence_ref (
 
 -- (derived from xsd:key[@name='pdbx_missing_residue_listKey_0'])
 --ALTER TABLE pdbx_missing_residue_list ADD CONSTRAINT UNQ_pdbx_missing_residue_list UNIQUE ( document_id, pdb_chain_id, pdb_residue_name, pdb_residue_number );
+
+-- (derived from xsd:key[@name='pdbx_modification_featureKey_0'])
+--ALTER TABLE pdbx_modification_feature ADD CONSTRAINT UNQ_pdbx_modification_feature UNIQUE ( document_id, ordinal );
 
 -- (derived from xsd:key[@name='pdbx_moleculeKey_0'])
 --ALTER TABLE pdbx_molecule ADD CONSTRAINT UNQ_pdbx_molecule UNIQUE ( document_id, asym_id, instance_id, prd_id );
@@ -18969,25 +19066,28 @@ CREATE TABLE valence_ref (
 --ALTER TABLE pdbx_chem_comp_nonstandard ADD CONSTRAINT KR_chem_compKeyref_0_0_14_0 FOREIGN KEY ( comp_id ) REFERENCES chem_comp ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
 -- (derived from xsd:keyref[@name='chem_compKeyref_0_0_15_0'])
---ALTER TABLE pdbx_chem_comp_related ADD CONSTRAINT KR_chem_compKeyref_0_0_15_0 FOREIGN KEY ( comp_id ) REFERENCES chem_comp ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
+--ALTER TABLE pdbx_chem_comp_pcm ADD CONSTRAINT KR_chem_compKeyref_0_0_15_0 FOREIGN KEY ( comp_id ) REFERENCES chem_comp ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
 -- (derived from xsd:keyref[@name='chem_compKeyref_0_0_16_0'])
---ALTER TABLE pdbx_chem_comp_subcomponent_entity_list ADD CONSTRAINT KR_chem_compKeyref_0_0_16_0 FOREIGN KEY ( parent_comp_id ) REFERENCES chem_comp ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
+--ALTER TABLE pdbx_chem_comp_related ADD CONSTRAINT KR_chem_compKeyref_0_0_16_0 FOREIGN KEY ( comp_id ) REFERENCES chem_comp ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
 -- (derived from xsd:keyref[@name='chem_compKeyref_0_0_17_0'])
---ALTER TABLE pdbx_chem_comp_synonyms ADD CONSTRAINT KR_chem_compKeyref_0_0_17_0 FOREIGN KEY ( comp_id ) REFERENCES chem_comp ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
+--ALTER TABLE pdbx_chem_comp_subcomponent_entity_list ADD CONSTRAINT KR_chem_compKeyref_0_0_17_0 FOREIGN KEY ( parent_comp_id ) REFERENCES chem_comp ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
 -- (derived from xsd:keyref[@name='chem_compKeyref_0_0_18_0'])
---ALTER TABLE pdbx_distant_solvent_atoms ADD CONSTRAINT KR_chem_compKeyref_0_0_18_0 FOREIGN KEY ( auth_comp_id ) REFERENCES chem_comp ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
+--ALTER TABLE pdbx_chem_comp_synonyms ADD CONSTRAINT KR_chem_compKeyref_0_0_18_0 FOREIGN KEY ( comp_id ) REFERENCES chem_comp ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
 -- (derived from xsd:keyref[@name='chem_compKeyref_0_0_19_0'])
---ALTER TABLE pdbx_entity_branch_list ADD CONSTRAINT KR_chem_compKeyref_0_0_19_0 FOREIGN KEY ( comp_id ) REFERENCES chem_comp ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
+--ALTER TABLE pdbx_distant_solvent_atoms ADD CONSTRAINT KR_chem_compKeyref_0_0_19_0 FOREIGN KEY ( auth_comp_id ) REFERENCES chem_comp ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
 -- (derived from xsd:keyref[@name='chem_compKeyref_0_0_20_0'])
---ALTER TABLE pdbx_unobs_or_zero_occ_atoms ADD CONSTRAINT KR_chem_compKeyref_0_0_20_0 FOREIGN KEY ( auth_comp_id ) REFERENCES chem_comp ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
+--ALTER TABLE pdbx_entity_branch_list ADD CONSTRAINT KR_chem_compKeyref_0_0_20_0 FOREIGN KEY ( comp_id ) REFERENCES chem_comp ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
 -- (derived from xsd:keyref[@name='chem_compKeyref_0_0_21_0'])
---ALTER TABLE pdbx_unobs_or_zero_occ_residues ADD CONSTRAINT KR_chem_compKeyref_0_0_21_0 FOREIGN KEY ( auth_comp_id ) REFERENCES chem_comp ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
+--ALTER TABLE pdbx_unobs_or_zero_occ_atoms ADD CONSTRAINT KR_chem_compKeyref_0_0_21_0 FOREIGN KEY ( auth_comp_id ) REFERENCES chem_comp ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
+
+-- (derived from xsd:keyref[@name='chem_compKeyref_0_0_22_0'])
+--ALTER TABLE pdbx_unobs_or_zero_occ_residues ADD CONSTRAINT KR_chem_compKeyref_0_0_22_0 FOREIGN KEY ( auth_comp_id ) REFERENCES chem_comp ( id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
 -- (derived from xsd:keyref[@name='chem_comp_atomKeyref_0_0_0_0'])
 --ALTER TABLE chem_comp_angle ADD CONSTRAINT KR_chem_comp_atomKeyref_0_0_0_0_0 FOREIGN KEY ( atom_id_1 ) REFERENCES chem_comp_atom ( atom_id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
