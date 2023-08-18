@@ -206,7 +206,7 @@ File path | Document
 
 ## Release notes
 
-- **Aug 10, 2023**: Release v4.4.26
+- **Aug 18, 2023**: Release v4.4.26
 	- Update wwPDB Validation Information Dictionary to 4.376.
 	- Fix invalid IRI codes.
 	- Added RDF uploader scripts for Oxigraph Server, oxigraph_scripts. Oxigraph Server is still under evaluations.

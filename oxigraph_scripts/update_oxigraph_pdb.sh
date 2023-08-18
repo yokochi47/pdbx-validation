@@ -1,6 +1,11 @@
 #!/bin/bash
 
 source ./scripts/env.sh
+
+if [ $? != 0 ] ; then
+ exit 1
+fi
+
 source ./oxigraph_scripts/oxigraph_env.sh
 
 DB_NAME=pdb
@@ -48,7 +53,8 @@ case $ans in
 esac
 
 if [ -e $LOCATION_PDB ] ; then
- rm -f $LOCATION_PDB/*
+ rm -rf $LOCATION_PDB
+ mkdir $LOCATION_PDB
 fi
 
 err=$DB_NAME"_err"
@@ -57,12 +63,24 @@ rm -f $err
 
 find $RDF/* -type d > pdb_folder_list
 
+loop_id=0
+
 while read folder ;
 do
 
  echo $folder
 
  oxigraph_server --location $LOCATION_PDB load --format $RDF_FORMAT --file $folder/*.rdf.gz 2>> $err
+
+ let loop_id++
+
+ loop_id_mod=$(($loop_id % 26))
+
+ if [ $loop_id_mod = 0 ] ; then
+
+  oxigraph_server --location $LOCATION_PDB optimize
+
+ fi
 
 done < pdb_folder_list
 
@@ -72,7 +90,7 @@ grep Error $err &> /dev/null || ( cat $err && exit 1 )
 
 rm -f $err
 
-oxigraph_server optimize --location $LOCATION_PDB &
+oxigraph_server --location $LOCATION_PDB optimize &
 
 date -u +"%b %d, %Y" > /tmp/pdb-oxigraph-last
 

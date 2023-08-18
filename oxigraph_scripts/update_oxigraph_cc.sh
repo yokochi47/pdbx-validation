@@ -1,6 +1,11 @@
 #!/bin/bash
 
 source ./scripts/env.sh
+
+if [ $? != 0 ] ; then
+ exit 1
+fi
+
 source ./oxigraph_scripts/oxigraph_env.sh
 
 DB_NAME=cc
@@ -48,7 +53,8 @@ case $ans in
 esac
 
 if [ -e $LOCATION_CC ] ; then
- rm -f $LOCATION_CC/*
+ rm -rf $LOCATION_CC
+ mkdir $LOCATION_CC
 fi
 
 err=$DB_NAME"_err"
@@ -72,7 +78,7 @@ grep Error $err &> /dev/null || ( cat $err && exit 1 )
 
 rm -f $err
 
-oxigraph_server optimize --location $LOCATION_CC &
+oxigraph_server --location $LOCATION_CC optimize &
 
 date -u +"%b %d, %Y" > /tmp/cc-oxigraph-last
 

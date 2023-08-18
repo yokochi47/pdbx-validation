@@ -12,12 +12,12 @@ if [ $? != 0 ] ; then
 
 fi
 
-if [ ! -e $LOCATION_BIRD ] ; then
+if [ ! -e $LOCATION_PRD ] ; then
 
- echo $LOCATION_BIRD does not exist.
+ echo $LOCATION_PRD does not exist.
  exit 1
 
 fi
 
-oxigraph_server serve-read-only --location $LOCATION_BIRD --bind 0.0.0.0:$OXI_SERV_PORT_BIRD
+oxigraph_server serve-read-only --location $LOCATION_PRD --bind 0.0.0.0:$OXI_SERV_PORT_PRD
 

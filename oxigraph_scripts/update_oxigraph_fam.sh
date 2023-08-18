@@ -8,12 +8,12 @@ fi
 
 source ./oxigraph_scripts/oxigraph_env.sh
 
-DB_NAME=vrpt
+DB_NAME=fam
 
-rm -f /tmp/vrpt-oxigraph-last
+rm -f /tmp/fam-oxigraph-last
 
 init=false
-change=`find $RDF_VALID_ALT -name '*.rdf.gz' -mtime -4 | wc -l`
+change=`find $RDF_BIRD/family -name '*.rdf.gz' -mtime -4 | wc -l`
 
 which oxigraph_server &> /dev/null
 
@@ -27,13 +27,13 @@ fi
 
 GRAPH_URI=http://rdf.wwpdb.org/$DB_NAME
 
-if [ -e $LOCATION_VRPT ] && [ $init = "false" ] ; then
+if [ -e $LOCATION_FAM ] && [ $init = "false" ] ; then
 
  if [ $change = 0 ] ; then
   echo $DB_NAME is update.
  fi
 
- ls $LOCATION_VRPT/* &> /dev/null
+ ls $LOCATION_FAM/* &> /dev/null
 
  if [ $? = 0 ] ; then
   exit 0
@@ -52,47 +52,35 @@ case $ans in
     exit 1;;
 esac
 
-if [ -e $LOCATION_VRPT ] ; then
- rm -rf $LOCATION_VRPT
- mkdir $LOCATION_VRPT
+if [ -e $LOCATION_FAM ] ; then
+ rm -rf $LOCATION_FAM
+ mkdir $LOCATION_FAM
 fi
 
 err=$DB_NAME"_err"
 
 rm -f $err
 
-find $RDF_VALID_ALT/* -type d > vrpt_folder_list
-
-loop_id=0
+find $RDF_BIRD/family/* -type d > fam_folder_list
 
 while read folder ;
 do
 
  echo $folder
 
- oxigraph_server --location $LOCATION_VRPT load --format $RDF_FORMAT --file $folder/*.rdf.gz 2>> $err
+ oxigraph_server --location $LOCATION_FAM load --format $RDF_FORMAT --file $folder/*.rdf.gz 2>> $err
 
- let loop_id++
+done < fam_folder_list
 
- loop_id_mod=$(($loop_id % 26))
-
- if [ $loop_id_mod = 0 ] ; then
-
-  oxigraph_server --location $LOCATION_VRPT optimize
-
- fi
-
-done < vrpt_folder_list
-
-rm -f vrpt_folder_list
+rm -f fam_folder_list
 
 grep Error $err &> /dev/null || ( cat $err && exit 1 )
 
 rm -f $err
 
-oxigraph_server --location $LOCATION_VRPT optimize &
+oxigraph_server --location $LOCATION_FAM optimize &
 
-date -u +"%b %d, %Y" > /tmp/vrpt-oxigraph-last
+date -u +"%b %d, %Y" > /tmp/fam-oxigraph-last
 
 echo "RDF->OXIGRAPH (prefix:"$DB_NAME") is completed."
 

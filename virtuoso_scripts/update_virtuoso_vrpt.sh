@@ -1,6 +1,11 @@
 #!/bin/bash
 
 source ./scripts/env.sh
+
+if [ $? != 0 ] ; then
+ exit 1
+fi
+
 source ./virtuoso_scripts/virtuoso_env.sh
 
 MAXPROCS=`echo "scale=0; $MAXPROCS / 2.5" | bc`
