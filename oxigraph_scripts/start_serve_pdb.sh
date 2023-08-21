@@ -2,6 +2,10 @@
 
 source ./oxigraph_scripts/oxigraph_env.sh
 
+if [ $? != 0 ] ; then
+ exit 1
+fi
+
 which oxigraph_server &> /dev/null
 
 if [ $? != 0 ] ; then

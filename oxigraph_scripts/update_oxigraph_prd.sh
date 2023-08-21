@@ -77,7 +77,11 @@ grep Error $err &> /dev/null || ( cat $err && exit 1 )
 
 rm -f $err
 
-oxigraph_server --location $LOCATION_PRD optimize &
+rm -rf $BACKUP_PRD
+
+oxigraph_server backup --location $LOCATION_PRD --destination $BACKUP_PRD
+
+rm -rf $LOCATION_PRD && mv $BACKUP_PRD $LOCATION_PRD
 
 date -u +"%b %d, %Y" > /tmp/prd-oxigraph-last
 

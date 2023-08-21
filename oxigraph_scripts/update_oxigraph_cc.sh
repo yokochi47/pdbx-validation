@@ -77,7 +77,11 @@ grep Error $err &> /dev/null || ( cat $err && exit 1 )
 
 rm -f $err
 
-oxigraph_server --location $LOCATION_CC optimize &
+rm -rf $BACKUP_CC
+
+oxigraph_server backup --location $LOCATION_CC --destination $BACKUP_CC
+
+rm -rf $LOCATION_CC && mv $BACKUP_CC $LOCATION_CC
 
 date -u +"%b %d, %Y" > /tmp/cc-oxigraph-last
 

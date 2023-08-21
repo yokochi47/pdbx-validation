@@ -73,11 +73,25 @@ do
 
  let loop_id++
 
- loop_id_mod=$(($loop_id % 26))
+ loop_id_mod=$(($loop_id % 36))
 
  if [ $loop_id_mod = 0 ] ; then
 
-  oxigraph_server --location $LOCATION_PDB optimize
+  prev_size=`du -sh $LOCATION_PDB | cut -f 1`
+
+  echo -n "Interim backup..."
+
+  if [ -e $BACKUP_PDB ] ; then
+   rm -rf $BACKUP_PDB
+  fi
+
+  oxigraph_server backup --location $LOCATION_PDB --destination $BACKUP_PDB
+
+  rm -rf $LOCATION_PDB && mv $BACKUP_PDB $LOCATION_PDB
+
+  cur_size=`du -sh $LOCATION_PDB | cut -f 1`
+
+  echo " Done (" $prev_size " -> " $cur_size ")"
 
  fi
 
@@ -89,7 +103,11 @@ grep Error $err &> /dev/null || ( cat $err && exit 1 )
 
 rm -f $err
 
-oxigraph_server --location $LOCATION_PDB optimize &
+rm -rf $BACKUP_PDB
+
+oxigraph_server backup --location $LOCATION_PDB --destination $BACKUP_PDB
+
+rm -rf $LOCATION_PDB && mv $BACKUP_PDB $LOCATION_PDB
 
 date -u +"%b %d, %Y" > /tmp/pdb-oxigraph-last
 

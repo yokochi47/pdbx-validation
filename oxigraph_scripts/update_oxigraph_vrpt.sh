@@ -73,11 +73,25 @@ do
 
  let loop_id++
 
- loop_id_mod=$(($loop_id % 26))
+ loop_id_mod=$(($loop_id % 36))
 
  if [ $loop_id_mod = 0 ] ; then
 
-  oxigraph_server --location $LOCATION_VRPT optimize
+  prev_size=`du -sh $LOCATION_VRPT | cut -f 1`
+
+  echo -n "Interim backup..."
+
+  if [ -e $BACKUP_VRPT ] ; then
+   rm -rf $BACKUP_VRPT
+  fi
+
+  oxigraph_server backup --location $LOCATION_VRPT --destination $BACKUP_VRPT
+
+  rm -rf $LOCATION_VRPT && mv $BACKUP_VRPT $LOCATION_VRPT
+
+  cur_size=`du -sh $LOCATION_VRPT | cut -f 1`
+
+  echo " Done (" $prev_size " -> " $cur_size ")"
 
  fi
 
@@ -89,7 +103,11 @@ grep Error $err &> /dev/null || ( cat $err && exit 1 )
 
 rm -f $err
 
-oxigraph_server --location $LOCATION_VRPT optimize &
+rm -rf $BACKUP_VRPT
+
+oxigraph_server backup --location $LOCATION_VRPT --destination $BACKUP_VRPT
+
+rm -rf $LOCATION_VRPT && mv $BACKUP_VRPT $LOCATION_VRPT
 
 date -u +"%b %d, %Y" > /tmp/vrpt-oxigraph-last
 

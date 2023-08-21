@@ -77,7 +77,11 @@ grep Error $err &> /dev/null || ( cat $err && exit 1 )
 
 rm -f $err
 
-oxigraph_server --location $LOCATION_FAM optimize &
+rm -rf $BACKUP_FAM
+
+oxigraph_server backup --location $LOCATION_FAM --destination $BACKUP_FAM
+
+rm -rf $LOCATION_FAM && mv $BACKUP_FAM $LOCATION_FAM
 
 date -u +"%b %d, %Y" > /tmp/fam-oxigraph-last
 
