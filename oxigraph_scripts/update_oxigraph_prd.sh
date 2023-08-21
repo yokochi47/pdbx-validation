@@ -53,8 +53,7 @@ case $ans in
 esac
 
 if [ -e $LOCATION_PRD ] ; then
- rm -rf $LOCATION_PRD
- mkdir $LOCATION_PRD
+ find $LOCATION_PRD -type f | xargs rm -f
 fi
 
 err=$DB_NAME"_err"
