@@ -73,7 +73,7 @@ do
 
  let loop_id++
 
- loop_id_mod=$(($loop_id % 36))
+ loop_id_mod=$(($loop_id % 64))
 
  if [ $loop_id_mod = 0 ] ; then
 
