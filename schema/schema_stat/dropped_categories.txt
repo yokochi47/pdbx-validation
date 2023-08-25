@@ -20,7 +20,7 @@ audit_link
 cell
 cell_measurement
 cell_measurement_refln
-chem_comp
+chem_comp EMDB_PUBLIC
 chem_comp_angle
 chem_comp_atom
 chem_comp_bond
@@ -44,12 +44,12 @@ chem_link_plane
 chem_link_plane_atom
 chem_link_tor
 chem_link_tor_value
-citation
-citation_author
+citation EMDB_PUBLIC
+citation_author EMDB_PUBLIC
 citation_editor
 computing WWPDB_DEPRECATED
 database
-database_2
+database_2 EMDB_PUBLIC
 database_PDB_caveat
 database_PDB_matrix
 database_PDB_remark WWPDB_LOCAL
@@ -66,42 +66,42 @@ diffrn_scan_frame
 diffrn_scan_frame_axis
 em_2d_projection_selection WWPDB_LOCAL
 em_assembly WWPDB_LOCAL
-em_author_list WWPDB_LOCAL
-em_db_reference WWPDB_LOCAL
-em_db_reference_auxiliary WWPDB_LOCAL
+em_author_list WWPDB_LOCAL,EMDB_PUBLIC
+em_db_reference WWPDB_LOCAL,EMDB_PUBLIC
+em_db_reference_auxiliary WWPDB_LOCAL,EMDB_PUBLIC
 em_depositor_info WWPDB_LOCAL
 em_depui WWPDB_LOCAL
 em_detector WWPDB_LOCAL
-em_euler_angle_assignment WWPDB_LOCAL
-em_fiducial_markers WWPDB_LOCAL
+em_euler_angle_assignment WWPDB_LOCAL,EMDB_PUBLIC
+em_fiducial_markers WWPDB_LOCAL,EMDB_PUBLIC
 em_figure_depositor_info WWPDB_LOCAL
-em_final_classification WWPDB_LOCAL
-em_focused_ion_beam WWPDB_LOCAL
-em_fsc_curve WWPDB_LOCAL
-em_grid_pretreatment WWPDB_LOCAL
-em_high_pressure_freezing WWPDB_LOCAL
-em_interpret_figure WWPDB_LOCAL
-em_layer_lines WWPDB_LOCAL
+em_final_classification WWPDB_LOCAL EMDB_PUBLIC
+em_focused_ion_beam WWPDB_LOCAL,EMDB_PUBLIC
+em_fsc_curve WWPDB_LOCAL,EMDB_PUBLIC
+em_grid_pretreatment WWPDB_LOCAL,EMDB_PUBLIC
+em_high_pressure_freezing WWPDB_LOCAL,EMDB_PUBLIC
+em_interpret_figure WWPDB_LOCAL,EMDB_PUBLIC
+em_layer_lines WWPDB_LOCAL,EMDB_PUBLIC
 em_layer_lines_depositor_info WWPDB_LOCAL
 em_map WWPDB_LOCAL
 em_map_depositor_info WWPDB_LOCAL
 em_mask_depositor_info WWPDB_LOCAL
-em_obsolete WWPDB_LOCAL
+em_obsolete WWPDB_LOCAL,EMDB_PUBLIC
 em_sample_preparation WWPDB_LOCAL
-em_sample_support
-em_shadowing WWPDB_LOCAL
-em_start_model WWPDB_LOCAL
-em_structure_factors WWPDB_LOCAL
+em_sample_support EMDB_PUBLIC
+em_shadowing WWPDB_LOCAL,EMDB_PUBLIC
+em_start_model WWPDB_LOCAL,EMDB_PUBLIC
+em_structure_factors WWPDB_LOCAL,EMDB_PUBLIC
 em_structure_factors_depositor_info WWPDB_LOCAL
-em_supersede WWPDB_LOCAL
-em_support_film WWPDB_LOCAL
-em_tomography WWPDB_LOCAL
-em_tomography_specimen WWPDB_LOCAL
-em_ultramicrotomy WWPDB_LOCAL
+em_supersede WWPDB_LOCAL,EMDB_PUBLIC
+em_support_film WWPDB_LOCAL,EMDB_PUBLIC
+em_tomography WWPDB_LOCAL,EMDB_PUBLIC
+em_tomography_specimen WWPDB_LOCAL,EMDB_PUBLIC
+em_ultramicrotomy WWPDB_LOCAL,EMDB_PUBLIC
 entity_keywords
 entity_link
-entity_src_gen
-entity_src_nat
+entity_src_gen EMDB_PUBLIC
+entity_src_nat EMDB_PUBLIC
 exptl_crystal
 exptl_crystal_face
 exptl_crystal_grow
@@ -121,7 +121,7 @@ pdbx_atom_site_aniso_tls
 pdbx_audit
 pdbx_audit_conform
 pdbx_audit_conform_extension WWPDB_LOCAL
-pdbx_audit_support
+pdbx_audit_support EMDB_PUBLIC
 pdbx_buffer
 pdbx_buffer_components
 pdbx_chain_remapping
@@ -223,7 +223,7 @@ pdbx_entity_src_gen_prod_pcr
 pdbx_entity_src_gen_proteolysis
 pdbx_entity_src_gen_pure
 pdbx_entity_src_gen_refold
-pdbx_entity_src_syn
+pdbx_entity_src_syn EMDB_PUBLIC
 pdbx_exptl_crystal_cryo_treatment
 pdbx_exptl_crystal_grow_comp
 pdbx_exptl_crystal_grow_sol
@@ -238,7 +238,7 @@ pdbx_feature_sequence_range
 pdbx_helical_symmetry_depositor_info WWPDB_LOCAL
 pdbx_hybrid WWPDB_LOCAL
 pdbx_inhibitor_info WWPDB_LOCAL
-pdbx_initial_refinement_model
+pdbx_initial_refinement_model EMDB_PUBLIC
 pdbx_investigation
 pdbx_ion_info WWPDB_LOCAL
 pdbx_linked_entity
@@ -361,7 +361,7 @@ publ_manuscript_incl
 software
 struct_biol_gen WWPDB_LOCAL
 struct_biol_keywords
-struct_keywords
+struct_keywords EMDB_PUBLIC
 struct_site_keywords
 valence_param
 valence_ref

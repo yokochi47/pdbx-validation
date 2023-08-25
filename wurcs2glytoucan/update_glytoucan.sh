@@ -46,12 +46,14 @@ function query_recursive() {
   i=0
   printf "\rRetrieved %s entries..." $((offset + $(echo -e "${result}" | wc -l))) >&2
   for line in ${result} ; do
-   if [ $(($i % 2)) == 0 ] ; then
-    echo -n '<wurcs id='$(echo $line | sed 's/</\&lt;/g; s/>/\&gt;/g')'>' >> $wurcs_catalog_xml
-   else
-    echo $(echo $line | xargs)'</wurcs>' >> $wurcs_catalog_xml
+   if [[ $line =~ ^WURCS.* ]] ; then
+    if [ $(($i % 2)) == 0 ] ; then
+     echo -n '<wurcs id='$(echo $line | sed 's/</\&lt;/g; s/>/\&gt;/g')'>' >> $wurcs_catalog_xml
+    else
+     echo $(echo $line | xargs)'</wurcs>' >> $wurcs_catalog_xml
+    fi
+    let i++
    fi
-   let i++
   done
   query_recursive $((offset + limit))
  else

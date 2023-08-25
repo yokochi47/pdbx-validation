@@ -1163,6 +1163,9 @@
    <category_item name="pdbx_chem_comp_model_feature"/>
    <category_item name="pdbx_chem_comp_model_reference"/>
    <category_item name="pdbx_chem_comp_nonstandard"/>
+   <category_item name="pdbx_chem_comp_pcm">
+      <data_item name="pcm_id" type="xsd:int"/>
+   </category_item>
    <category_item name="pdbx_chem_comp_related"/>
    <category_item name="pdbx_chem_comp_subcomponent_entity_list">
       <data_item name="id" type="xsd:int"/>
@@ -1769,6 +1772,12 @@
    <category_item name="pdbx_missing_residue_list">
       <data_item name="label_seq_id" type="xsd:int"/>
       <data_item name="pdb_model_id" type="xsd:int"/>
+   </category_item>
+   <category_item name="pdbx_modification_feature">
+      <data_item name="label_seq_id" type="xsd:int"/>
+      <data_item name="modified_residue_label_seq_id" type="xsd:int"/>
+      <data_item name="ref_pcm_id" type="xsd:int"/>
+      <data_item name="ordinal" type="xsd:int"/>
    </category_item>
    <category_item name="pdbx_molecule">
       <data_item name="instance_id" type="xsd:int"/>

@@ -13,44 +13,44 @@ diffrn_scale_group
 diffrn_source
 diffrn_standard_refln
 diffrn_standards
-em_2d_crystal_entity
-em_3d_crystal_entity
-em_3d_fitting
-em_3d_fitting_list
-em_3d_reconstruction
+em_2d_crystal_entity EMDB_PUBLIC
+em_3d_crystal_entity EMDB_PUBLIC
+em_3d_fitting EMDB_PUBLIC
+em_3d_fitting_list EMDB_PUBLIC
+em_3d_reconstruction EMDB_PUBLIC
 em_admin WWPDB_LOCAL
-em_buffer
-em_buffer_component
-em_crystal_formation
-em_ctf_correction
-em_diffraction
-em_diffraction_shell
-em_diffraction_stats
-em_embedding
+em_buffer EMDB_PUBLIC
+em_buffer_component EMDB_PUBLIC
+em_crystal_formation EMDB_PUBLIC
+em_ctf_correction EMDB_PUBLIC
+em_diffraction EMDB_PUBLIC
+em_diffraction_shell EMDB_PUBLIC
+em_diffraction_stats EMDB_PUBLIC
+em_embedding EMDB_PUBLIC
 em_entity_assembly
-em_entity_assembly_molwt
-em_entity_assembly_naturalsource
-em_entity_assembly_recombinant
+em_entity_assembly_molwt EMDB_PUBLIC
+em_entity_assembly_naturalsource EMDB_PUBLIC
+em_entity_assembly_recombinant EMDB_PUBLIC
 em_entity_assembly_synthetic
-em_experiment
-em_helical_entity
-em_image_processing
-em_image_recording
-em_image_scans
-em_imaging
-em_imaging_optics
-em_particle_selection
-em_single_particle_entity
-em_software
-em_specimen
+em_experiment EMDB_PUBLIC
+em_helical_entity EMDB_PUBLIC
+em_image_processing EMDB_PUBLIC
+em_image_recording EMDB_PUBLIC
+em_image_scans EMDB_PUBLIC
+em_imaging EMDB_PUBLIC
+em_imaging_optics EMDB_PUBLIC
+em_particle_selection EMDB_PUBLIC
+em_single_particle_entity EMDB_PUBLIC
+em_software EMDB_PUBLIC
+em_specimen EMDB_PUBLIC
 em_staining
-em_virus_entity
-em_virus_natural_host
-em_virus_shell
-em_virus_synthetic
-em_vitrification
-em_volume_selection
-entity
+em_virus_entity EMDB_PUBLIC
+em_virus_natural_host EMDB_PUBLIC
+em_virus_shell EMDB_PUBLIC
+em_virus_synthetic EMDB_PUBLIC
+em_vitrification EMDB_PUBLIC
+em_volume_selection EMDB_PUBLIC
+entity EMDB_PUBLIC
 entity_name_com
 entity_name_sys
 entity_poly
@@ -70,7 +70,7 @@ pdbx_audit_revision_item CHEM_COMP_INT
 pdbx_bond_distance_limits
 pdbx_branch_scheme
 pdbx_coordinate_model
-pdbx_database_related
+pdbx_database_related EMDB_PUBLIC
 pdbx_database_status
 pdbx_dcc_density WWPDB_LOCAL
 pdbx_dcc_density_corr WWPDB_LOCAL
@@ -88,7 +88,7 @@ pdbx_entity_branch
 pdbx_entity_branch_descriptor
 pdbx_entity_branch_link
 pdbx_entity_branch_list
-pdbx_entity_nonpoly
+pdbx_entity_nonpoly EMDB_PUBLIC
 pdbx_entity_poly_comp_link_list
 pdbx_entry_details
 pdbx_helical_symmetry
