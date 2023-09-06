@@ -43,7 +43,7 @@ em_particle_selection EMDB_PUBLIC
 em_single_particle_entity EMDB_PUBLIC
 em_software EMDB_PUBLIC
 em_specimen EMDB_PUBLIC
-em_staining
+em_staining EMDB_PUBLIC
 em_virus_entity EMDB_PUBLIC
 em_virus_natural_host EMDB_PUBLIC
 em_virus_shell EMDB_PUBLIC

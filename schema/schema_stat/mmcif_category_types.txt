@@ -70,6 +70,7 @@ em_high_pressure_freezing WWPDB_LOCAL,EMDB_PUBLIC
 em_shadowing WWPDB_LOCAL,EMDB_PUBLIC
 em_tomography_specimen WWPDB_LOCAL,EMDB_PUBLIC
 em_crystal_formation EMDB_PUBLIC
+em_staining EMDB_PUBLIC
 em_support_film WWPDB_LOCAL,EMDB_PUBLIC
 em_buffer_component EMDB_PUBLIC
 em_diffraction EMDB_PUBLIC
@@ -78,7 +79,7 @@ em_diffraction_stats EMDB_PUBLIC
 em_tomography WWPDB_LOCAL,EMDB_PUBLIC
 em_image_recording EMDB_PUBLIC
 em_imaging_optics EMDB_PUBLIC
-em_final_classification WWPDB_LOCAL
+em_final_classification WWPDB_LOCAL,EMDB_PUBLIC
 em_final_classification EMDB_PUBLIC
 em_start_model WWPDB_LOCAL,EMDB_PUBLIC
 em_software EMDB_PUBLIC

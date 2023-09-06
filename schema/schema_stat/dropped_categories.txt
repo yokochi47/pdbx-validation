@@ -75,7 +75,7 @@ em_detector WWPDB_LOCAL
 em_euler_angle_assignment WWPDB_LOCAL,EMDB_PUBLIC
 em_fiducial_markers WWPDB_LOCAL,EMDB_PUBLIC
 em_figure_depositor_info WWPDB_LOCAL
-em_final_classification WWPDB_LOCAL EMDB_PUBLIC
+em_final_classification WWPDB_LOCAL,EMDB_PUBLIC EMDB_PUBLIC
 em_focused_ion_beam WWPDB_LOCAL,EMDB_PUBLIC
 em_fsc_curve WWPDB_LOCAL,EMDB_PUBLIC
 em_grid_pretreatment WWPDB_LOCAL,EMDB_PUBLIC
