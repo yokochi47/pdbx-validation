@@ -3,7 +3,7 @@
 # File:  mmcif_pdbx_validation-v4.dic
 # Date:  Wed Sep  6 16:00:46 JST 2023
 # Created from:
-#        mmcif_pdbx_v50.dic   - PDB Exchange Data Dictionary (V5.379)
+#        mmcif_pdbx_v50.dic   - PDB Exchange Data Dictionary (V5.380)
 #        http://wwpdb.org/validation/schema/wwpdb_validation_v6.02.xsd
 #         - a XML schema for wwPDB validation reports, v6.02, rev. 2023-02-06
 #
@@ -30,7 +30,7 @@ data_mmcif_pdbx_validation.dic
 
     _dictionary.title           mmcif_pdbx_validation.dic
     _dictionary.datablock_id    mmcif_pdbx_validation.dic
-    _dictionary.version         4.379
+    _dictionary.version         4.380
 #
     loop_
     _dictionary_history.version
@@ -1226,6 +1226,12 @@ data_mmcif_pdbx_validation.dic
 >   + author data type extended to support structural genomics names # not merged
 >   + Add 'I3' to _em_software.name enumeration # merged
 >   + Add "RIGAKU HyPix-Arc 150" to _diffrn_detector.type # merged
+;
+  4.380   2023-10-19
+;
+>   + Extend _pdbx_audit_support.funding_organization enumeration # not mapped
+>   + PTM extension updates to enumerations # not mapped
+>   + Add Poky to _pdbx_nmr_softare.name enumeration
 ;
 
 
@@ -30618,6 +30624,7 @@ save__pdbx_nmr_software.name
      "_pdbx_nmr_software.name"  PLATON                                       .
      "_pdbx_nmr_software.name"  PLUMED                                       .
      "_pdbx_nmr_software.name"  PLUMED2                                      .
+     "_pdbx_nmr_software.name"  Poky                                         .
      "_pdbx_nmr_software.name"  PONDEROSA                                    .
      "_pdbx_nmr_software.name"  PONDEROSA-C/S                                .
      "_pdbx_nmr_software.name"  POSE                                         .
