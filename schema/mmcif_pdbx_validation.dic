@@ -1,9 +1,9 @@
 ###########################################################################
 #
 # File:  mmcif_pdbx_validation-v4.dic
-# Date:  Wed Sep  6 16:00:46 JST 2023
+# Date:  Tue Oct 24 12:20:50 JST 2023
 # Created from:
-#        mmcif_pdbx_v50.dic   - PDB Exchange Data Dictionary (V5.380)
+#        mmcif_pdbx_v50.dic   - PDB Exchange Data Dictionary (V5.381)
 #        http://wwpdb.org/validation/schema/wwpdb_validation_v6.02.xsd
 #         - a XML schema for wwPDB validation reports, v6.02, rev. 2023-02-06
 #
@@ -30,7 +30,7 @@ data_mmcif_pdbx_validation.dic
 
     _dictionary.title           mmcif_pdbx_validation.dic
     _dictionary.datablock_id    mmcif_pdbx_validation.dic
-    _dictionary.version         4.380
+    _dictionary.version         4.381
 #
     loop_
     _dictionary_history.version
@@ -1233,6 +1233,17 @@ data_mmcif_pdbx_validation.dic
 >   + PTM extension updates to enumerations # not mapped
 >   + Add Poky to _pdbx_nmr_softare.name enumeration
 ;
+  4.381   2023-10-24
+;
+>   + author data type was corrected from 5.379 version so options properly checked # merged
+>   + Extend _pdbx_audit_support.funding_organization enumeration # not mapped
+>   + Add "MAR CCD 300 mm" to _diffrn_detector.type # merged
+>   + Add definitions for _pdbx_chem_comp_depositor.upload_file_name,
+>     _pdbx_chem_comp_depositor.upload_file_type # not mapped
+>   + Change _pdbx_chem_comp_instance_depositor_info.PDB_ins_code to
+>     _pdbx_chem_comp_instance_depositor_info.pdbx_PDB_ins_code to match usage # nor mapped
+>
+;
 
 
 #
@@ -1637,8 +1648,7 @@ data_mmcif_pdbx_validation.dic
                point_group_helical char  '[CD][1-9][0-9]*'                                  'Point group symmetry for helices in Schoenflies notation'
                boolean             char  'YES|NO'                                           'Boolean type'
 #              author              char  '[A-Za-z '\-]+,\s+([A-Z\-]+\.)+$'                  'Author name in PDB format: Taylor, C.A.'
-               author              char
-               "[A-Za-z0-9_]+(( |-|'|\. )[A-Za-z0-9_]+)*( Jr.| III)?, [A-Za-z0-9_]\.(-?[A-Za-z0-9_]+\.)*$"  'Author name in PDB format: Taylor, C.A.'
+               author              char  "(([A-Za-z0-9_]+(( |-|'|\. )[A-Za-z0-9_]+)*( Jr.| III)?, [A-Za-z0-9_]\.(-?[A-Za-z0-9_]+\.)*)|(Seattle Structural Genomics Center for Infectious Disease.*)|(Structural Genomics Consortium.*)|(QCRG Structural Biology Consortium.*)|(Center for Structural Genomics of Infectious Diseases.*))"                                   'Author name in PDB format: Taylor, C.A.'
                orcid_id            char  '[0-9]{4}-[0-9]{4}-[0-9]{4}-([0-9]{3}X|[0-9]{4})'  'ORCID pattern - dddd-dddd-dddd-dddd|dddX'
                symmetry_operation  char  '[-+0-9XxYyZ/ ]+,[-+0-9XxYyZ/ ]+,[-+0-9XxYyZ/ ]+'  'Allowed characters for use in symmetry operation such as 1/2-x,y,1/2-z'
                sequence_dep        char  '[a-zA-Z0-9\t \r\n\v\f\(\)]+$'                     'Deposition specific one letter code'
@@ -2473,6 +2483,7 @@ save__diffrn_detector.type
       "_diffrn_detector.type"  "MACSCIENCE DIP100S"              "IMAGE PLATE"
       "_diffrn_detector.type"  "MAR CCD 130 mm"                  CCD
       "_diffrn_detector.type"  "MAR CCD 165 mm"                  CCD
+      "_diffrn_detector.type"  "MAR CCD 300 mm"                  CCD
       "_diffrn_detector.type"  "MAR scanner 180 mm plate"        "IMAGE PLATE"
       "_diffrn_detector.type"  "MAR scanner 300 mm plate"        "IMAGE PLATE"
       "_diffrn_detector.type"  "MAR scanner 345 mm plate"        "IMAGE PLATE"
