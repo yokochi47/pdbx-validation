@@ -14,13 +14,13 @@ The pdbx-validation is a generation tool of alternative [wwPDB validation report
 
 File path | Document
 --------- | --------
-[schema/mmcif_pdbx_validation_v4.dic](https://github.com/yokochi47/pdbx-validation/blob/master/schema/mmcif_pdbx_validation_v4.381.dic) | wwPDB Validation Information Dictionary (v4.381)
-[schema/pdbx-validation-v4.xsd](https://github.com/yokochi47/pdbx-validation/blob/master/schema/pdbx-validation-v4.381.xsd) | VRPT PDBML Schema (v4.381)
-[schema/pdbx-validation-v4.owl](https://github.com/yokochi47/pdbx-validation/blob/master/schema/pdbx-validation-v4.381.owl) | VRPT/OWL (v4.381)
+[schema/mmcif_pdbx_validation_v4.dic](https://github.com/yokochi47/pdbx-validation/blob/master/schema/mmcif_pdbx_validation_v4.382.dic) | wwPDB Validation Information Dictionary (v4.382)
+[schema/pdbx-validation-v4.xsd](https://github.com/yokochi47/pdbx-validation/blob/master/schema/pdbx-validation-v4.382.xsd) | VRPT PDBML Schema (v4.382)
+[schema/pdbx-validation-v4.owl](https://github.com/yokochi47/pdbx-validation/blob/master/schema/pdbx-validation-v4.382.owl) | VRPT/OWL (v4.382)
 [schema/mmcif_ddl.dic](https://github.com/yokochi47/pdbx-validation/blob/master/schema/mmcif_ddl_v2.4.1.dic) | extended mmCIF DDL Core Dictionary (dubbed as v2.4.2)
-[resource/mmcif_pdbx_v50.dic](https://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic) | PDB Exchange Data Dictionary (v5.381)
-[resource/pdbx-v50.xsd](https://github.com/yokochi47/pdbx-validation/blob/master/resource/pdbx-v50.xsd) | PDBML Schema (v5.381)
-[resource/pdbx-v50.owl](https://github.com/yokochi47/pdbx-validation/blob/master/resource/pdbx-v50.owl) | PDBx ontology, ontology for PDB/RDF (v5.381)
+[resource/mmcif_pdbx_v50.dic](https://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic) | PDB Exchange Data Dictionary (v5.382)
+[resource/pdbx-v50.xsd](https://github.com/yokochi47/pdbx-validation/blob/master/resource/pdbx-v50.xsd) | PDBML Schema (v5.382)
+[resource/pdbx-v50.owl](https://github.com/yokochi47/pdbx-validation/blob/master/resource/pdbx-v50.owl) | PDBx ontology, ontology for PDB/RDF (v5.382)
 [resource/wwpdb_validation_v6.01.xsd](https://github.com/yokochi47/pdbx-validation/blob/master/resource/wwpdb_validation_v6.01.xsd) | XML Schema for wwPDB validation reports (v6.01, rev 2022-09-20)
 [scripts](https://github.com/yokochi47/pdbx-validation/blob/master/scripts) | a directory contains scripts invoked by the 'run_vrpt_all.sh' script
 [virtuoso_scripts](https://github.com/yokochi47/pdbx-validation/blob/master/virtuoso_scripts) | a directory contains scripts for uploading VRPT/RDF to local SPARQL endpoint
@@ -206,6 +206,9 @@ File path | Document
 
 ## Release notes
 
+- **Feb 21, 2024**: Release v4.4.32
+	- Update wwPDB Validation Information Dictionary to 4.382.
+
 - **Oct 24, 2023**: Release v4.4.31
 	- Update wwPDB Validation Information Dictionary to 4.381.
 
@@ -246,11 +249,11 @@ File path | Document
 	- Mitigate validation report data issue, aka. DAOTHER-8001: Atom names containing '_' character are unexpectedly converted to name with comma character in Mogul outliers of XML validation report.
 	- Include 0.0 in the range for the following data items:
 		- _pdbx_nmr_distance_violation_model.maximum_violation
-		- _pdbx_nmr_distance_violation_model.averagem_violation
-		- _pdbx_nmr_distance_violation_model.medianm_violation
+		- _pdbx_nmr_distance_violation_model.average_violation
+		- _pdbx_nmr_distance_violation_model.median_violation
 		- _pdbx_nmr_dihedral_angle_violation_model.maximum_violation
-		- _pdbx_nmr_dihedral_angle_violation_model.averagem_violation
-		- _pdbx_nmr_dihedral_angle_violation_model.medianm_violation
+		- _pdbx_nmr_dihedral_angle_violation_model.average_violation
+		- _pdbx_nmr_dihedral_angle_violation_model.median_violation
 	- Improve performane of translation/validation scripts.
 	- Add XSD datatype of RDF literals, except for xsd:string.
 

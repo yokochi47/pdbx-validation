@@ -44,8 +44,8 @@
 --
 
 --
--- PDBML Schema v5.381
--- PDBML Schema translated from the PDBx/mmCIF Dictionary v5.381: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
+-- PDBML Schema v5.382
+-- PDBML Schema translated from the PDBx/mmCIF Dictionary v5.382: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
 -- URI-reference = http://pdbml.pdb.org/schema/pdbx-v50.xsd
 --
 
@@ -7585,7 +7585,7 @@ CREATE TABLE pdbx_chem_comp_identifier (
 
 --
 -- (quoted from pdbx_chem_comp_instance_depositor_infoType)
--- Data items in the PDBX_CHEM_COMP_INSTANCE_DEPOSITOR_INFO category records depositor provided information about the chemical context of component instances. Example - <PDBx:pdbx_chem_comp_instance_depositor_infoCategory> <PDBx:pdbx_chem_comp_instance_depositor_info ordinal="1"> <PDBx:auth_asym_id>W</PDBx:auth_asym_id> <PDBx:auth_seq_id>102</PDBx:auth_seq_id> <PDBx:author_provided_flag>Y</PDBx:author_provided_flag> <PDBx:comp_id>X78</PDBx:comp_id> <PDBx:in_polymer_flag>N</PDBx:in_polymer_flag> <PDBx:label_alt_id xsi:nil="true" /> <PDBx:pdbx_PDB_ins_code xsi:nil="true" /> </PDBx:pdbx_chem_comp_instance_depositor_info> </PDBx:pdbx_chem_comp_instance_depositor_infoCategory>
+-- Data items in the PDBX_CHEM_COMP_INSTANCE_DEPOSITOR_INFO category records depositor provided information about the chemical context of component instances. Example - <PDBx:pdbx_chem_comp_instance_depositor_infoCategory> <PDBx:pdbx_chem_comp_instance_depositor_info ordinal="1"> <PDBx:PDB_ins_code xsi:nil="true" /> <PDBx:auth_asym_id>W</PDBx:auth_asym_id> <PDBx:auth_seq_id>102</PDBx:auth_seq_id> <PDBx:author_provided_flag>Y</PDBx:author_provided_flag> <PDBx:comp_id>X78</PDBx:comp_id> <PDBx:in_polymer_flag>N</PDBx:in_polymer_flag> <PDBx:label_alt_id xsi:nil="true" /> </PDBx:pdbx_chem_comp_instance_depositor_info> </PDBx:pdbx_chem_comp_instance_depositor_infoCategory>
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
@@ -7596,6 +7596,7 @@ CREATE TYPE ENUM_pdbx_chem_comp_instance_depositor_info_in_polymer_flag AS ENUM 
 CREATE TABLE pdbx_chem_comp_instance_depositor_info (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
+	"PDB_ins_code" TEXT ,
 	auth_asym_id TEXT ,
 	auth_seq_id TEXT ,
 	author_provided_flag ENUM_pdbx_chem_comp_instance_depositor_info_author_provided_fla ,
@@ -7603,7 +7604,6 @@ CREATE TABLE pdbx_chem_comp_instance_depositor_info (
 	formula TEXT ,
 	in_polymer_flag ENUM_pdbx_chem_comp_instance_depositor_info_in_polymer_flag ,
 	label_alt_id TEXT ,
-	"pdbx_PDB_ins_code" TEXT ,
 -- ATTRIBUTE
 	ordinal INTEGER NOT NULL
 );

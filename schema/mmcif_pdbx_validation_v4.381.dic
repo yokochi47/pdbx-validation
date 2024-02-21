@@ -1241,7 +1241,7 @@ data_mmcif_pdbx_validation.dic
 >   + Add definitions for _pdbx_chem_comp_depositor.upload_file_name,
 >     _pdbx_chem_comp_depositor.upload_file_type # not mapped
 >   + Change _pdbx_chem_comp_instance_depositor_info.PDB_ins_code to
->     _pdbx_chem_comp_instance_depositor_info.pdbx_PDB_ins_code to match usage # nor mapped
+>     _pdbx_chem_comp_instance_depositor_info.pdbx_PDB_ins_code to match usage # not mapped
 >
 ;
 

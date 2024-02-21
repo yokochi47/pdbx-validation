@@ -1,9 +1,9 @@
 ###########################################################################
 #
 # File:  mmcif_pdbx_validation-v4.dic
-# Date:  Tue Oct 24 12:20:50 JST 2023
+# Date:  Wed Feb 21 17:22:25 JST 2024
 # Created from:
-#        mmcif_pdbx_v50.dic   - PDB Exchange Data Dictionary (V5.381)
+#        mmcif_pdbx_v50.dic   - PDB Exchange Data Dictionary (V5.382)
 #        http://wwpdb.org/validation/schema/wwpdb_validation_v6.02.xsd
 #         - a XML schema for wwPDB validation reports, v6.02, rev. 2023-02-06
 #
@@ -30,7 +30,7 @@ data_mmcif_pdbx_validation.dic
 
     _dictionary.title           mmcif_pdbx_validation.dic
     _dictionary.datablock_id    mmcif_pdbx_validation.dic
-    _dictionary.version         4.381
+    _dictionary.version         4.382
 #
     loop_
     _dictionary_history.version
@@ -1240,9 +1240,14 @@ data_mmcif_pdbx_validation.dic
 >   + Add "MAR CCD 300 mm" to _diffrn_detector.type # merged
 >   + Add definitions for _pdbx_chem_comp_depositor.upload_file_name,
 >     _pdbx_chem_comp_depositor.upload_file_type # not mapped
->   + Change _pdbx_chem_comp_instance_depositor_info.PDB_ins_code to
->     _pdbx_chem_comp_instance_depositor_info.pdbx_PDB_ins_code to match usage # nor mapped
+>   + Add example for _em_start_model.emdb_id # not mapped
 >
+;
+  4.382   2024-02-21
+;
+>   + Remove NDB, BMCD, and BIOISIS from the pdbx_enumeration_list for pdbx_database_related.db_name # merged
+>   + Add 'DECTRIS PILATUS4' detectors to _diffrn_detector.type # merged
+>   + Extend _pdbx_audit_support.funding_organization enumeration # not mapped
 ;
 
 
@@ -2461,6 +2466,11 @@ save__diffrn_detector.type
       "_diffrn_detector.type"  "DECTRIS PILATUS3 X CdTe 300K-W"  PIXEL
       "_diffrn_detector.type"  "DECTRIS PILATUS3 X CdTe 1M"      PIXEL
       "_diffrn_detector.type"  "DECTRIS PILATUS3 X CdTe 2M"      PIXEL
+      "_diffrn_detector.type"  "DECTRIS PILATUS4 X 1M"           PIXEL
+      "_diffrn_detector.type"  "DECTRIS PILATUS4 X 2M"           PIXEL
+      "_diffrn_detector.type"  "DECTRIS PILATUS4 X 4M"           PIXEL
+      "_diffrn_detector.type"  "DECTRIS PILATUS4 XE 2M"          PIXEL
+      "_diffrn_detector.type"  "DECTRIS PILATUS4 XE 4M"          PIXEL
       "_diffrn_detector.type"  ENRAF-NONIUS                      .
       "_diffrn_detector.type"  "ENRAF-NONIUS CAD4"               DIFFRACTOMETER
       "_diffrn_detector.type"  "ENRAF-NONIUS FAST"               DIFFRACTOMETER
@@ -25107,16 +25117,13 @@ SASBDB - Small Angle Scattering Biological Data Bank
     _pdbx_item_enumeration.name
     _pdbx_item_enumeration.value
     _pdbx_item_enumeration.detail
-      "_pdbx_database_related.db_name"  BMCD         'associated structure factors'
       "_pdbx_database_related.db_name"  BMRB         'associated NMR restraints,unspecified'
       "_pdbx_database_related.db_name"  EMDB         'associated EM volume,other EM volume,focused EM volume,consensus EM volume,focused EM volume,consensus EM volume'
-      "_pdbx_database_related.db_name"  NDB          unspecified
       "_pdbx_database_related.db_name"  PDB          're-refinement,unspecified,derivative structure,complete structure,split,ensemble,minimized average structure,native structure,representative structure,split'
       "_pdbx_database_related.db_name"  PDB-Dev      unspecified
       "_pdbx_database_related.db_name"  TargetDB     unspecified
       "_pdbx_database_related.db_name"  TargetTrack  unspecified
       "_pdbx_database_related.db_name"  SASBDB       'associated SAS data'
-      "_pdbx_database_related.db_name"  BIOISIS      'associated SAS data'
 save_
 
 save__pdbx_database_related.details
