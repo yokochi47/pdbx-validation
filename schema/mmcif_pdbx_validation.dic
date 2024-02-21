@@ -1,9 +1,9 @@
 ###########################################################################
 #
 # File:  mmcif_pdbx_validation-v4.dic
-# Date:  Wed Feb 21 17:53:51 JST 2024
+# Date:  Wed Feb 21 18:09:07 JST 2024
 # Created from:
-#        mmcif_pdbx_v50.dic   - PDB Exchange Data Dictionary (V5.384)
+#        mmcif_pdbx_v50.dic   - PDB Exchange Data Dictionary (V5.385)
 #        http://wwpdb.org/validation/schema/wwpdb_validation_v6.02.xsd
 #         - a XML schema for wwPDB validation reports, v6.02, rev. 2023-02-06
 #
@@ -30,7 +30,7 @@ data_mmcif_pdbx_validation.dic
 
     _dictionary.title           mmcif_pdbx_validation.dic
     _dictionary.datablock_id    mmcif_pdbx_validation.dic
-    _dictionary.version         4.384
+    _dictionary.version         4.385
 #
     loop_
     _dictionary_history.version
@@ -1259,10 +1259,18 @@ data_mmcif_pdbx_validation.dic
 ;
   4.384   2024-02-21
 ;
->   + em_software.name enumeration change "PanthaRhei" to "Pantha Rhei" # merged
+>   + em_software.name enumeration change "PanthaRhei" to "Panta Rhei" # merged
 >   + Add "GATAN K3 BIOCONTINUUM (6k x 4k)" to _em_image_recording.film_or_detector_model # merged
 >   + Add "RIGAKU HyPix-Arc 100" to _diffrn_detector.type enumeration # merged
 >   + Add pdbx_item_description to _entity.details # merged
+>   + Extend _pdbx_audit_support.funding_organization enumeration # not mapped
+>   + Add IPCAS to _software.name enumeration # not mapped
+;
+  4.385   2024-02-21
+;
+>   + Add pdbx_enumeration_enumeration for pdbx_initial_refinement_model.type removing "other" # not mapped
+>   + Add new "DECTRIS PILATUS4 (R,X,XE) CdTe" detectors to _diffrn_detector.type enumeration # merged
+>   + Add "GATAN ALPINE (2.3k x 3.2k)" to _em_image_recording.film_or_detector_model # merged
 >   + Extend _pdbx_audit_support.funding_organization enumeration # not mapped
 ;
 
@@ -2482,11 +2490,18 @@ save__diffrn_detector.type
       "_diffrn_detector.type"  "DECTRIS PILATUS3 X CdTe 300K-W"  PIXEL
       "_diffrn_detector.type"  "DECTRIS PILATUS3 X CdTe 1M"      PIXEL
       "_diffrn_detector.type"  "DECTRIS PILATUS3 X CdTe 2M"      PIXEL
+      "_diffrn_detector.type"  "DECTRIS PILATUS4 R CdTe 260K"    PIXEL
+      "_diffrn_detector.type"  "DECTRIS PILATUS4 R CdTe 260K-W"  PIXEL
+      "_diffrn_detector.type"  "DECTRIS PILATUS4 R CdTe 1M"      PIXEL
       "_diffrn_detector.type"  "DECTRIS PILATUS4 X 1M"           PIXEL
       "_diffrn_detector.type"  "DECTRIS PILATUS4 X 2M"           PIXEL
       "_diffrn_detector.type"  "DECTRIS PILATUS4 X 4M"           PIXEL
+      "_diffrn_detector.type"  "DECTRIS PILATUS4 X CdTe 2M"      PIXEL
+      "_diffrn_detector.type"  "DECTRIS PILATUS4 X CdTe 4M"      PIXEL
       "_diffrn_detector.type"  "DECTRIS PILATUS4 XE 2M"          PIXEL
       "_diffrn_detector.type"  "DECTRIS PILATUS4 XE 4M"          PIXEL
+      "_diffrn_detector.type"  "DECTRIS PILATUS4 XE CdTe 2M"     PIXEL
+      "_diffrn_detector.type"  "DECTRIS PILATUS4 XE CdTe 4M"     PIXEL
       "_diffrn_detector.type"  ENRAF-NONIUS                      .
       "_diffrn_detector.type"  "ENRAF-NONIUS CAD4"               DIFFRACTOMETER
       "_diffrn_detector.type"  "ENRAF-NONIUS FAST"               DIFFRACTOMETER
@@ -54716,7 +54731,8 @@ save__em_image_recording.film_or_detector_model
   '_em_image_recording.film_or_detector_model'    "FEI FALCON I (4k x 4k)"     .
   '_em_image_recording.film_or_detector_model'    "FEI FALCON II (4k x 4k)"    .
   '_em_image_recording.film_or_detector_model'    "FEI FALCON III (4k x 4k)"   .
-  '_em_image_recording.film_or_detector_model'    "FEI FALCON IV (4k x 4k)"   .
+  '_em_image_recording.film_or_detector_model'    "FEI FALCON IV (4k x 4k)"    .
+  '_em_image_recording.film_or_detector_model'    "GATAN ALPINE (2.3k x 3.2k)"   .
   '_em_image_recording.film_or_detector_model'    "GATAN MULTISCAN"   .
   '_em_image_recording.film_or_detector_model'    "GATAN ORIUS SC200 (2k x 2k)"   .
   '_em_image_recording.film_or_detector_model'    "GATAN ORIUS SC600 (2.7k x 2.7k)"   .
@@ -55245,7 +55261,7 @@ save__em_software.name
         '_em_software.name'  novaSTA                            .
         '_em_software.name'  O                                  .
         '_em_software.name'  PACEtomo                           .
-        '_em_software.name'  'Pantha Rhei'                      .
+        '_em_software.name'  'Panta Rhei'                      .
         '_em_software.name'  Pathwalking                        .
         '_em_software.name'  PEET                               .
         '_em_software.name'  PHENIX                             .
