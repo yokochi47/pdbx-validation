@@ -1,9 +1,9 @@
 ###########################################################################
 #
 # File:  mmcif_pdbx_validation-v4.dic
-# Date:  Wed Feb 21 17:40:06 JST 2024
+# Date:  Wed Feb 21 17:53:51 JST 2024
 # Created from:
-#        mmcif_pdbx_v50.dic   - PDB Exchange Data Dictionary (V5.383)
+#        mmcif_pdbx_v50.dic   - PDB Exchange Data Dictionary (V5.384)
 #        http://wwpdb.org/validation/schema/wwpdb_validation_v6.02.xsd
 #         - a XML schema for wwPDB validation reports, v6.02, rev. 2023-02-06
 #
@@ -30,7 +30,7 @@ data_mmcif_pdbx_validation.dic
 
     _dictionary.title           mmcif_pdbx_validation.dic
     _dictionary.datablock_id    mmcif_pdbx_validation.dic
-    _dictionary.version         4.383
+    _dictionary.version         4.384
 #
     loop_
     _dictionary_history.version
@@ -1256,6 +1256,14 @@ data_mmcif_pdbx_validation.dic
 >   + Add "DECTRIS ELA (1k x 0.5k)" to em_image_recording.film_or_detector_model enumeration # merged
 >   + Add PanthaRhei and PACEtomo to em_software.name enumeration # merged
 >   + Add 'CEOS CEFID' to _em_imaging_optics.energyfilter_name enumeration # merged
+;
+  4.384   2024-02-21
+;
+>   + em_software.name enumeration change "PanthaRhei" to "Pantha Rhei" # merged
+>   + Add "GATAN K3 BIOCONTINUUM (6k x 4k)" to _em_image_recording.film_or_detector_model # merged
+>   + Add "RIGAKU HyPix-Arc 100" to _diffrn_detector.type enumeration # merged
+>   + Add pdbx_item_description to _entity.details # merged
+>   + Extend _pdbx_audit_support.funding_organization enumeration # not mapped
 ;
 
 
@@ -2552,6 +2560,7 @@ save__diffrn_detector.type
       "_diffrn_detector.type"  "RIGAKU AFC9"                     .
       "_diffrn_detector.type"  "RIGAKU HyPix-3000"               PIXEL
       "_diffrn_detector.type"  "RIGAKU HyPix-6000HE"             PIXEL
+      "_diffrn_detector.type"  "RIGAKU HyPix-Arc 100"            PIXEL
       "_diffrn_detector.type"  "RIGAKU HyPix-Arc 150"            PIXEL
       "_diffrn_detector.type"  "RIGAKU JUPITER 140"              CCD
       "_diffrn_detector.type"  "RIGAKU JUPITER 210"              CCD
@@ -5234,6 +5243,9 @@ save__entity.details
     _item.category_id             entity
     _item.mandatory_code          no
     _item_type.code               text
+    _pdbx_item_description.name         "_entity.details"
+    _pdbx_item_description.description  "Provide any special information about your construct here (for example, fusion protein arrangement, deletions, etc.)"
+    #
 save_
 
 save__entity.formula_weight
@@ -54717,7 +54729,8 @@ save__em_image_recording.film_or_detector_model
   '_em_image_recording.film_or_detector_model'    "GATAN K2 IS (4k x 4k)"   .
   '_em_image_recording.film_or_detector_model'    "GATAN K2 QUANTUM (4k x 4k)"   .
   '_em_image_recording.film_or_detector_model'    "GATAN K3 (6k x 4k)"   .
-  '_em_image_recording.film_or_detector_model'    "GATAN K3 BIOQUANTUM (6k x 4k)"   .
+  '_em_image_recording.film_or_detector_model'    "GATAN K3 BIOCONTINUUM (6k x 4k)"    .
+  '_em_image_recording.film_or_detector_model'    "GATAN K3 BIOQUANTUM (6k x 4k)"    .
   '_em_image_recording.film_or_detector_model'    "GATAN K2 SUMMIT (4k x 4k)"   .
   '_em_image_recording.film_or_detector_model'    "GENERIC GATAN (2k x 2k)"   .
   '_em_image_recording.film_or_detector_model'    "GENERIC GATAN (4k x 4k)"   .
@@ -55232,7 +55245,7 @@ save__em_software.name
         '_em_software.name'  novaSTA                            .
         '_em_software.name'  O                                  .
         '_em_software.name'  PACEtomo                           .
-        '_em_software.name'  PanthaRhei                         .
+        '_em_software.name'  'Pantha Rhei'                      .
         '_em_software.name'  Pathwalking                        .
         '_em_software.name'  PEET                               .
         '_em_software.name'  PHENIX                             .
