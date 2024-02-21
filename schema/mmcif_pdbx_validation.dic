@@ -1,9 +1,9 @@
 ###########################################################################
 #
 # File:  mmcif_pdbx_validation-v4.dic
-# Date:  Wed Feb 21 17:22:25 JST 2024
+# Date:  Wed Feb 21 17:40:06 JST 2024
 # Created from:
-#        mmcif_pdbx_v50.dic   - PDB Exchange Data Dictionary (V5.382)
+#        mmcif_pdbx_v50.dic   - PDB Exchange Data Dictionary (V5.383)
 #        http://wwpdb.org/validation/schema/wwpdb_validation_v6.02.xsd
 #         - a XML schema for wwPDB validation reports, v6.02, rev. 2023-02-06
 #
@@ -30,7 +30,7 @@ data_mmcif_pdbx_validation.dic
 
     _dictionary.title           mmcif_pdbx_validation.dic
     _dictionary.datablock_id    mmcif_pdbx_validation.dic
-    _dictionary.version         4.382
+    _dictionary.version         4.383
 #
     loop_
     _dictionary_history.version
@@ -212,7 +212,7 @@ data_mmcif_pdbx_validation.dic
   (changes: MY)
   + Update to PDB Exchange Data Dictionary V5.290.
 >     + Add SIMBAD to _software.name enumeration
->     + Add 'Sculptor', 'SUPER' and 'FOCUS' to em_software.name enumeration
+>     + Add 'Sculptor', 'SUPER' and 'FOCUS' to em_software.name enumeration # merged
 >     + Extend _pdbx_audit_support.funding_organization enumeration
 >     + Extend _pdbx_struct_assembly_auth_evidence_depositor_info.experimental_support
 >       enumeration
@@ -301,7 +301,7 @@ data_mmcif_pdbx_validation.dic
 >     + Extend _pdbx_audit_support.funding_organization enumeration
 >     + Incorporate XFEL extension
 >     + Add Diamond beamlines VMXi and VMXm to _diffrn_source.type
->     + Add "Gorgon" and "Pathwalking" to _em_software.name
+>     + Add "Gorgon" and "Pathwalking" to _em_software.name # merged
       + Add '_diffrn.pdbx_serial_crystal_experiment'
       - Remove the following categories of 'xfel_group' defined by PDB Exchange Data Dictionary V5.299:
         _pdbx_serial_crystallography_measurement
@@ -315,14 +315,14 @@ data_mmcif_pdbx_validation.dic
 >     + Correct examples for _pdbx_related_exp_data_set # not mapped
 >     + _diffrn_detector.type correct type for 'BRUKER PHOTON 100'
 >     + Extend audit content types to support 'Chemical component'
->     + Add cisTEM and Topaz to em_software.name
+>     + Add cisTEM and Topaz to em_software.name # merged
 >     + Update _pdbx_audit_support.funding_organization enumeration # not mapped
       + Retrieve '_pdbx_audit_revision_category', 'pdbx_audit_revision_item' categories
       + Retrieve '_diffrn_detector.pdbx_frequency'
 ;
   1.301   2018-11-09
 ;
->     + Add Buccaneer to _em_software.name enumeration
+>     + Add Buccaneer to _em_software.name enumeration # merged
 >     + Add enumeration to _pdbx_prd_audit.processing_site # not mapped
 >     + Add CHESS BEAMLINE G3, PAL-XFEL BEAMLINE NCI beamlines
 >     + Add Rigaku HyPic-6000HE detector
@@ -536,7 +536,7 @@ data_mmcif_pdbx_validation.dic
 >     + Extend pdbx_database_status to include nmr_data contents. # not mapped since WWPDB_LOCAL
 >     + Reorganize _pdbx_audit_support.funding_organization such that details # not mapped
 >     will include the country. # not mapped
->     + Extend em_software.name to include ERRASER
+>     + Extend em_software.name to include ERRASER # merged
 >     + Set upper limit for _diffrn.ambient_temp to 450 # merged
 >     + Add TFA to _pdbx_nmr_chem_shift_ref.mol_common_name. Add fluorine
 >       to _pdbx_nmr_chem_shift_ref.atom_group # not mapped
@@ -752,7 +752,7 @@ data_mmcif_pdbx_validation.dic
 >     + Add AUCO to enumeraion for _pdbx_database_status.status_code_cs and
 >       _pdbx_database_status.status_code_mr # merged
 >     5.335:
->     + add STOPGAP and novaSTA to _emd_software.name and _em_software.name enumerations
+>     + add STOPGAP and novaSTA to _emd_software.name and _em_software.name enumerations # merged
 >     + add PRIME and ULTIMA to _software.name enumeration # not mapped
 >     + Update funding enumerations # not mapped
 >     + Set upper limits for _reflns_shell.Rmerge_I_obs and _reflns.pdbx_Rmerge_I_obs # merged
@@ -1248,6 +1248,14 @@ data_mmcif_pdbx_validation.dic
 >   + Remove NDB, BMCD, and BIOISIS from the pdbx_enumeration_list for pdbx_database_related.db_name # merged
 >   + Add 'DECTRIS PILATUS4' detectors to _diffrn_detector.type # merged
 >   + Extend _pdbx_audit_support.funding_organization enumeration # not mapped
+;
+  4.383   2024-02-21
+;
+>   + Extend _pdbx_audit_support.funding_organization enumeration # not mapped
+>   + Add ARTINA to pdbx_nmr_software.name enumeration # merged
+>   + Add "DECTRIS ELA (1k x 0.5k)" to em_image_recording.film_or_detector_model enumeration # merged
+>   + Add PanthaRhei and PACEtomo to em_software.name enumeration # merged
+>   + Add 'CEOS CEFID' to _em_imaging_optics.energyfilter_name enumeration # merged
 ;
 
 
@@ -30402,6 +30410,7 @@ save__pdbx_nmr_software.name
      "_pdbx_nmr_software.name"  ARIA2alpha                                   .
      "_pdbx_nmr_software.name"  ARMOR                                        .
      "_pdbx_nmr_software.name"  ArShift                                      .
+     "_pdbx_nmr_software.name"  ARTINA                                       .
      "_pdbx_nmr_software.name"  ASCAN                                        .
      "_pdbx_nmr_software.name"  ASDP                                         .
      "_pdbx_nmr_software.name"  ATNOS                                        .
@@ -54681,6 +54690,7 @@ save__em_image_recording.film_or_detector_model
   '_em_image_recording.film_or_detector_model'    "KODAK SO-163 FILM"   .
   '_em_image_recording.film_or_detector_model'    "GENERIC FILM"   .
   '_em_image_recording.film_or_detector_model'    "GENERIC IMAGE PLATES"   .
+  '_em_image_recording.film_or_detector_model'    "DECTRIS ELA (1k x 0.5k)"    .
   '_em_image_recording.film_or_detector_model'    "DECTRIS SINGLA (1k x 1k)"    .
   '_em_image_recording.film_or_detector_model'    "DIRECT ELECTRON APOLLO (4k x 4k)"  .
   '_em_image_recording.film_or_detector_model'    "DIRECT ELECTRON DE-10 (5k x 4k)"   .
@@ -54873,6 +54883,7 @@ save__em_imaging_optics.energyfilter_name
     _pdbx_item_enumeration.name
     _pdbx_item_enumeration.value
     _pdbx_item_enumeration.detail
+         '_em_imaging_optics.energyfilter_name'  'CEOS CEFID'             .
          '_em_imaging_optics.energyfilter_name'  'GIF Bioquantum'         .
          '_em_imaging_optics.energyfilter_name'  'GIF Quantum ERS'        .
          '_em_imaging_optics.energyfilter_name'  'GIF Quantum ER'         .
@@ -55218,7 +55229,10 @@ save__em_software.name
         '_em_software.name'  MotionCorr2                        .
         '_em_software.name'  NAMD                               .
         '_em_software.name'  NOVACTF                            .
+        '_em_software.name'  novaSTA                            .
         '_em_software.name'  O                                  .
+        '_em_software.name'  PACEtomo                           .
+        '_em_software.name'  PanthaRhei                         .
         '_em_software.name'  Pathwalking                        .
         '_em_software.name'  PEET                               .
         '_em_software.name'  PHENIX                             .
@@ -55252,6 +55266,7 @@ save__em_software.name
         '_em_software.name'  SPIDER                             .
         '_em_software.name'  SPRING                             .
         '_em_software.name'  subTOM                             .
+        '_em_software.name'  STOPGAP                            .
         '_em_software.name'  SUPER                              .
         '_em_software.name'  'Super-sampling SART'              .
         '_em_software.name'  TEMPy                              .
