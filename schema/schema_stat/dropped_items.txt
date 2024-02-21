@@ -31,7 +31,6 @@ em_ctf_correction.phase_reversal
 em_ctf_correction.phase_reversal_anisotropic
 em_ctf_correction.phase_reversal_correction_space
 em_entity_assembly.assembly_id
-em_entity_assembly.chimera
 em_entity_assembly.ebi_cell
 em_entity_assembly.ebi_cellular_location
 em_entity_assembly.ebi_engineered
@@ -45,9 +44,6 @@ em_entity_assembly.ebi_tissue
 em_entity_assembly.go_id
 em_entity_assembly.ipr_id
 em_entity_assembly_molwt.method
-em_entity_assembly.mutant_flag
-em_entity_assembly_naturalsource.details
-em_entity_assembly.number_of_copies
 em_experiment.specimen_type
 em_helical_entity.dyad
 em_helical_entity.entity_assembly_id

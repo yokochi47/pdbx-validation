@@ -1,0 +1,13 @@
+save__em_entity_assembly.number_of_copies
+   _item_description.description  "   number of copies"
+   #
+   _item.name            "_em_entity_assembly.number_of_copies"
+   _item.category_id     em_entity_assembly
+   _item.mandatory_code  no
+   #
+   _item_type.code  int
+   #
+   _pdbx_item_context.type       WWPDB_LOCAL,EMDB_PUBLIC
+   _pdbx_item_context.item_name  "_em_entity_assembly.number_of_copies"
+   #
+save_
