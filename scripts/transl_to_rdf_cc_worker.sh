@@ -64,7 +64,11 @@ do
 
   cc_id=`basename $pdbml_file .xml`
   rdf_file=$WORK_DIR/$cc_id.rdf
-  div_dir=$WORK_DIR/${cc_id: -1}
+  if [ ${#cc_id} -gt 3 ] ; then
+   div_dir=$WORK_DIR/${cc_id: -3}
+  else
+   div_dir=$WORK_DIR/${cc_id: -1}
+  fi
   err_file=$WORK_DIR/transl_to_rdf_cc_$cc_id.err
 
   if ( [ ! -e $rdf_file ] && [ ! -e $div_dir/`basename $rdf_file`.gz ] ) || [ -e $err_file ] ; then
