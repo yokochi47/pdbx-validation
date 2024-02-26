@@ -67,7 +67,7 @@ do
   if [ ${#cc_id} -gt 3 ] ; then
    div_dir=$WORK_DIR/${cc_id: -3}
   else
-   div_dir=$WORK_DIR/${cc_id: -1}
+   div_dir=$WORK_DIR/${cc_id:0:1}
   fi
   err_file=$WORK_DIR/transl_to_rdf_cc_$cc_id.err
 
