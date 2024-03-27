@@ -44,8 +44,8 @@
 --
 
 --
--- PDBML Schema v5.388
--- PDBML Schema translated from the PDBx/mmCIF Dictionary v5.388: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
+-- PDBML Schema v5.389
+-- PDBML Schema translated from the PDBx/mmCIF Dictionary v5.389: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
 -- URI-reference = http://pdbml.pdb.org/schema/pdbx-v50.xsd
 --
 
@@ -10580,7 +10580,7 @@ CREATE TABLE pdbx_inhibitor_info (
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_initial_refinement_model_source_name CASCADE;
-CREATE TYPE ENUM_pdbx_initial_refinement_model_source_name AS ENUM ( 'PDB', 'AlphaFold', 'RoseTTAFold', 'ModelArchive', 'SwissModel', 'Modeller', 'ITasser', 'PDB-Dev', 'Other' );
+CREATE TYPE ENUM_pdbx_initial_refinement_model_source_name AS ENUM ( 'PDB', 'AlphaFold', 'Robetta', 'RoseTTAFold', 'ModelArchive', 'SwissModel', 'Modeller', 'ITasser', 'PDB-Dev', 'PHYRE', 'InsightII', 'Other' );
 DROP TYPE IF EXISTS ENUM_pdbx_initial_refinement_model_type CASCADE;
 CREATE TYPE ENUM_pdbx_initial_refinement_model_type AS ENUM ( 'in silico model', 'experimental model', 'integrative model', 'other' );
 CREATE TABLE pdbx_initial_refinement_model (

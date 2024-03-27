@@ -3,7 +3,7 @@
 # File:  mmcif_pdbx_validation-v4.dic
 # Date:  Wed Mar 27 15:27:27 JST 2024
 # Created from:
-#        mmcif_pdbx_v50.dic   - PDB Exchange Data Dictionary (V5.388)
+#        mmcif_pdbx_v50.dic   - PDB Exchange Data Dictionary (V5.389)
 #        http://wwpdb.org/validation/schema/wwpdb_validation_v6.02.xsd
 #         - a XML schema for wwPDB validation reports, v6.02, rev. 2023-02-06
 #
@@ -30,7 +30,7 @@ data_mmcif_pdbx_validation.dic
 
     _dictionary.title           mmcif_pdbx_validation.dic
     _dictionary.datablock_id    mmcif_pdbx_validation.dic
-    _dictionary.version         4.388
+    _dictionary.version         4.389
 #
     loop_
     _dictionary_history.version
@@ -1297,6 +1297,11 @@ data_mmcif_pdbx_validation.dic
 >   + Add ASTRA-TOOLBOX to _em_software enumeration # merged
 >   + Add 4D-STEM to _em_iaging.mode enumeration # merged
 >   + Add PDB-Dev to _database_2.database_id # not mapped
+>   + Update funding enumerations # not mapped
+;
+  4.389   2024-03-27
+;
+>   + Add Robetta, PHYRE and InsightII to _pdbx_initial_refinement_model.source_name enumeration # not mapped
 >   + Update funding enumerations # not mapped
 ;
 
