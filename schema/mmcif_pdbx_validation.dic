@@ -1,9 +1,9 @@
 ###########################################################################
 #
 # File:  mmcif_pdbx_validation-v4.dic
-# Date:  Wed Feb 21 18:53:36 JST 2024
+# Date:  Wed Mar 27 15:27:27 JST 2024
 # Created from:
-#        mmcif_pdbx_v50.dic   - PDB Exchange Data Dictionary (V5.387)
+#        mmcif_pdbx_v50.dic   - PDB Exchange Data Dictionary (V5.388)
 #        http://wwpdb.org/validation/schema/wwpdb_validation_v6.02.xsd
 #         - a XML schema for wwPDB validation reports, v6.02, rev. 2023-02-06
 #
@@ -30,7 +30,7 @@ data_mmcif_pdbx_validation.dic
 
     _dictionary.title           mmcif_pdbx_validation.dic
     _dictionary.datablock_id    mmcif_pdbx_validation.dic
-    _dictionary.version         4.387
+    _dictionary.version         4.388
 #
     loop_
     _dictionary_history.version
@@ -1287,6 +1287,17 @@ data_mmcif_pdbx_validation.dic
 >     Use for pdbx_item_type for -pdbx_initial_refinement_model.entity_id_list.
 >     Update description for pdbx_initial_refinement_model.entity_id_list. # not mapped
 >   + Add "STFC Large Pixel Detector" to _diffrn_detector.type enumeration. # merged
+;
+  4.388   2024-03-27
+;
+>   + Update ptm-extension # not mapped
+>   + Example for _entity_poly.pdbx_seq_one_letter_code updted changing PTO -> TPO # merged
+>   + Enumeration for _software.name "MAIN" has roles added. # not mapped
+>   + Add CSearch to _software.name enumeration # not mapped
+>   + Add ASTRA-TOOLBOX to _em_software enumeration # merged
+>   + Add 4D-STEM to _em_iaging.mode enumeration # merged
+>   + Add PDB-Dev to _database_2.database_id # not mapped
+>   + Update funding enumerations # not mapped
 ;
 
 
@@ -26103,7 +26114,7 @@ Y for Tyrosine
 (DT) for Thymidine-5'-monophosphate
 (MSE) for Selenomethionine
 (SEP) for Phosphoserine
-(PTO) for Phosphothreonine
+(TPO) for Phosphothreonine
 (PTR) for Phosphotyrosine
 (PCA) for Pyroglutamic acid
 (UNK) for Unknown amino acid
@@ -51118,7 +51129,8 @@ save__em_imaging.mode
     _item_enumeration.name    #V5
     _item_enumeration.value   #V5
     _item_enumeration.detail  #V5
-              '_em_imaging.mode' 'BRIGHT FIELD'   .
+              '_em_imaging.mode'  4D-STEM    .
+              '_em_imaging.mode' 'BRIGHT FIELD'    .
               '_em_imaging.mode' 'DARK FIELD'    .
               '_em_imaging.mode'  DIFFRACTION    .
               '_em_imaging.mode'  OTHER    .
@@ -55270,6 +55282,7 @@ save__em_software.name
         '_em_software.name'  AmiraFPM                           .
         '_em_software.name'  Appion                             .
         '_em_software.name'  ARP/wARP                           .
+        '_em_software.name'  ASTRA-TOOLBOX                      .
         '_em_software.name'  Auto3DEM                           .
         '_em_software.name'  AV3                                .
         '_em_software.name'  Buccaneer                          .
