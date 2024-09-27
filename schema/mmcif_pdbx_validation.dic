@@ -1,9 +1,9 @@
 ###########################################################################
 #
 # File:  mmcif_pdbx_validation-v4.dic
-# Date:  Fri Sep 27 16:31:03 JST 2024
+# Date:  Fri Sep 27 16:43:51 JST 2024
 # Created from:
-#        mmcif_pdbx_v50.dic   - PDB Exchange Data Dictionary (V5.394)
+#        mmcif_pdbx_v50.dic   - PDB Exchange Data Dictionary (V5.395)
 #        http://wwpdb.org/validation/schema/wwpdb_validation_v6.02.xsd
 #         - a XML schema for wwPDB validation reports, v6.02, rev. 2023-02-06
 #
@@ -30,7 +30,7 @@ data_mmcif_pdbx_validation.dic
 
     _dictionary.title           mmcif_pdbx_validation.dic
     _dictionary.datablock_id    mmcif_pdbx_validation.dic
-    _dictionary.version         4.394
+    _dictionary.version         4.395
 #
     loop_
     _dictionary_history.version
@@ -1335,6 +1335,10 @@ data_mmcif_pdbx_validation.dic
 ;
 >   + Add "home-built" to pdbx_nmr_spectrometer.model for deposition enumeration. # merged
 >   + Extend enumerations for pdbx_chem_comp_pcm and pdbx_modification_feature # not mapped
+;
+  4.395   2024-09-27
+;
+>   + Change context of em_admin to include some attributes in PDB public files
 ;
 
 
@@ -52744,8 +52748,6 @@ save_em_admin
     _em_admin.map_release_date    2009-12-01
     _em_admin.details             .
 ;
-    _pdbx_category_context.type         WWPDB_LOCAL
-    _pdbx_category_context.category_id  em_admin
 save_
 
 save__em_admin.current_status
@@ -52815,6 +52817,9 @@ save__em_admin.details
     _item.category_id             em_admin
     _item.mandatory_code          no
     _item_type.code               text
+#
+    _pdbx_item_context.type       EMDB_PUBLIC,WWPDB_LOCAL
+    _pdbx_item_context.item_name  "_em_admin.details"
 save_
 
 save__em_admin.entry_id
@@ -52889,6 +52894,9 @@ save__em_admin.process_site
      PDBJ
      PDBC
     #
+    _pdbx_item_context.type       EMDB_PUBLIC,WPDB_LOCAL
+    _pdbx_item_context.item_name  "_em_admin.process_site"
+    #
 save_
 #
 save__em_admin.composite_map
@@ -52907,6 +52915,8 @@ save__em_admin.composite_map
       YES
       NO
     #
+   _pdbx_item_context.type       EMDB_PUBLIC,WPDB_LOCAL
+   _pdbx_item_context.item_name  "_em_admin.process_site"
 save_
 
 ##############################

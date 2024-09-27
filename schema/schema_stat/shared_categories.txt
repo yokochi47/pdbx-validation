@@ -18,7 +18,7 @@ em_3d_crystal_entity EMDB_PUBLIC
 em_3d_fitting EMDB_PUBLIC
 em_3d_fitting_list EMDB_PUBLIC
 em_3d_reconstruction EMDB_PUBLIC
-em_admin WWPDB_LOCAL
+em_admin
 em_buffer EMDB_PUBLIC
 em_buffer_component EMDB_PUBLIC
 em_crystal_formation EMDB_PUBLIC

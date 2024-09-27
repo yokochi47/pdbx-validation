@@ -47,7 +47,6 @@ em_3d_fitting_list EMDB_PUBLIC
 em_helical_entity EMDB_PUBLIC
 em_experiment EMDB_PUBLIC
 em_single_particle_entity EMDB_PUBLIC
-em_admin WWPDB_LOCAL
 em_author_list WWPDB_LOCAL,EMDB_PUBLIC
 em_db_reference WWPDB_LOCAL,EMDB_PUBLIC
 em_db_reference_auxiliary WWPDB_LOCAL,EMDB_PUBLIC
