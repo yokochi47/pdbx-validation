@@ -7763,6 +7763,14 @@
       <PDBo:has_pdbx_nmr_chem_shift_software>
       <PDBo:pdbx_nmr_chem_shift_software rdf:about="{$base}/pdbx_nmr_chem_shift_software/{$assigned_chem_shift_list_id_encoded},{$entry_id_encoded},{$software_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
+      <xsl:if test="@software_id!=''">
+	<PDBo:reference_to_pdbx_nmr_software>
+	  <rdf:Description rdf:about="{$base}/pdbx_nmr_software/">
+	    <PDBo:referenced_by_pdbx_nmr_chem_shift_software rdf:resource="{$base}/pdbx_nmr_chem_shift_software/{$assigned_chem_shift_list_id_encoded},{$entry_id_encoded},{$software_id_encoded}"/>
+	  </rdf:Description>
+	</PDBo:reference_to_pdbx_nmr_software>
+	<!-- pdbx_nmr_softwareKeyref_0_0_0_0 -->
+      </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
       <xsl:apply-templates/>
@@ -8111,6 +8119,14 @@
       <PDBo:has_pdbx_nmr_spectral_peak_software>
       <PDBo:pdbx_nmr_spectral_peak_software rdf:about="{$base}/pdbx_nmr_spectral_peak_software/{$entry_id_encoded},{$software_id_encoded},{$spectral_peak_list_id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
+      <xsl:if test="@software_id!=''">
+	<PDBo:reference_to_pdbx_nmr_software>
+	  <rdf:Description rdf:about="{$base}/pdbx_nmr_software/">
+	    <PDBo:referenced_by_pdbx_nmr_spectral_peak_software rdf:resource="{$base}/pdbx_nmr_spectral_peak_software/{$entry_id_encoded},{$software_id_encoded},{$spectral_peak_list_id_encoded}"/>
+	  </rdf:Description>
+	</PDBo:reference_to_pdbx_nmr_software>
+	<!-- pdbx_nmr_softwareKeyref_0_0_1_0 -->
+      </xsl:if>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="@*" mode="linked"/>
       <xsl:apply-templates/>

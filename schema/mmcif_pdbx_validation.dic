@@ -1,9 +1,9 @@
 ###########################################################################
 #
 # File:  mmcif_pdbx_validation-v4.dic
-# Date:  Fri Sep 27 14:20:44 JST 2024
+# Date:  Fri Sep 27 16:19:43 JST 2024
 # Created from:
-#        mmcif_pdbx_v50.dic   - PDB Exchange Data Dictionary (V5.392)
+#        mmcif_pdbx_v50.dic   - PDB Exchange Data Dictionary (V5.393)
 #        http://wwpdb.org/validation/schema/wwpdb_validation_v6.02.xsd
 #         - a XML schema for wwPDB validation reports, v6.02, rev. 2023-02-06
 #
@@ -30,7 +30,7 @@ data_mmcif_pdbx_validation.dic
 
     _dictionary.title           mmcif_pdbx_validation.dic
     _dictionary.datablock_id    mmcif_pdbx_validation.dic
-    _dictionary.version         4.392
+    _dictionary.version         4.393
 #
     loop_
     _dictionary_history.version
@@ -1322,6 +1322,14 @@ data_mmcif_pdbx_validation.dic
 >   + Extend em_author_list to support Center for Structural Biology of Infectious Diseases (CSBID)  # merged
 >   + Change type of _pdbx_chem_comp_upload_depositor_info.upload_file_type
 >     to uline to reflect usage. Add JPG and PDBX to enumeration. # not mapped
+;
+  4.393   2024-09-27
+;
+>   + Remove "D-amino acid" from enumeration from pdbx_modification_feature.type,
+>     pdbx_chem_comp_pcm.type. # not mapped
+>   + Removed direct linking modifications from enumeration list for _pdbx_chem_comp_pcm.category # not mapped
+>   + Add parent/child relationships for _pdbx_nmr_spectral_peak_software.software_id
+>     and _pdbx_nmr_chem_shift_software.software_id to _pdbx_nmr_software.ordinal # not mapped
 ;
 
 
@@ -29970,10 +29978,14 @@ save__pdbx_nmr_spectrometer.model
  'AVANCE III HD'
  'WH'
  'WM'
+ 'AC+'
+ 'Alpha'
  'AM'
  'AMX'
+ 'AMX II'
  'DMX'
  'DRX'
+ 'DSX'
  'MSL'
  'OMEGA'
  'OMEGA PSG'
@@ -29985,10 +29997,14 @@ save__pdbx_nmr_spectrometer.model
  'EX'
  'LA'
  'ECP'
- 'VXRS'
- 'UNITY'
+ 'Infinityplus'
+ 'Mercury'
+ 'VNMRS'
+ 'VXR'
+ 'UNITY INOVA'
  'UNITYPLUS'
  'INOVA'
+ 'home-built'
    #
     loop_
     _pdbx_item_enumeration.name
@@ -29996,8 +30012,10 @@ save__pdbx_nmr_spectrometer.model
     _pdbx_item_enumeration.detail
       "_pdbx_nmr_spectrometer.model"  A                     .
       "_pdbx_nmr_spectrometer.model"  AL                    .
+      "_pdbx_nmr_spectrometer.model"  AC+                   Bruker
       "_pdbx_nmr_spectrometer.model"  AM                    Bruker
       "_pdbx_nmr_spectrometer.model"  AMX                   Bruker
+      "_pdbx_nmr_spectrometer.model"  "AMX II"              Bruker
       "_pdbx_nmr_spectrometer.model"  ARX                   Bruker
       "_pdbx_nmr_spectrometer.model"  AVANCE                Bruker
       "_pdbx_nmr_spectrometer.model"  'AVANCE AM'           Bruker
@@ -30013,19 +30031,25 @@ save__pdbx_nmr_spectrometer.model
       "_pdbx_nmr_spectrometer.model"  DMX                   Bruker
       "_pdbx_nmr_spectrometer.model"  DPX                   Bruker
       "_pdbx_nmr_spectrometer.model"  DRX                   Bruker
+      "_pdbx_nmr_spectrometer.model"  DSX                   Bruker
       "_pdbx_nmr_spectrometer.model"  MSL                   Bruker
       "_pdbx_nmr_spectrometer.model"  WH                    .
       "_pdbx_nmr_spectrometer.model"  WM                    .
       "_pdbx_nmr_spectrometer.model"  EC                    .
       "_pdbx_nmr_spectrometer.model"  EX                    .
       "_pdbx_nmr_spectrometer.model"  LA                    .
+      "_pdbx_nmr_spectrometer.model"  Alpha                 JEOL
       "_pdbx_nmr_spectrometer.model"  ECA                   JEOL
       "_pdbx_nmr_spectrometer.model"  ECP                   JEOL
       "_pdbx_nmr_spectrometer.model"  "Uniform NMR System"  Varian
+      "_pdbx_nmr_spectrometer.model"  Infinityplus          Varian
       "_pdbx_nmr_spectrometer.model"  INOVA                 Varian
+      "_pdbx_nmr_spectrometer.model"  Mercury               Varian
       "_pdbx_nmr_spectrometer.model"  UNITY                 Varian
       "_pdbx_nmr_spectrometer.model"  UNITYPLUS             Varian
-      "_pdbx_nmr_spectrometer.model"  VXRS                  Varian
+      "_pdbx_nmr_spectrometer.model"  "UNITY INOVA"         Varian
+      "_pdbx_nmr_spectrometer.model"  VXR                   Varian
+      "_pdbx_nmr_spectrometer.model"  VNMRS                 Varian
       "_pdbx_nmr_spectrometer.model"  Gemini                GE
       "_pdbx_nmr_spectrometer.model"  GN                    GE
       "_pdbx_nmr_spectrometer.model"  GSX                   GE

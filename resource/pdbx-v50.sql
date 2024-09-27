@@ -40,12 +40,12 @@
 --   Wild cards:
 --    0 any elements, 0 any attributes
 --   Constraints:
---    594 unique constraints from xsd:key, 1 unique constraints from xsd:unique, 357 foreign key constraints from xsd:keyref
+--    594 unique constraints from xsd:key, 1 unique constraints from xsd:unique, 359 foreign key constraints from xsd:keyref
 --
 
 --
--- PDBML Schema v5.392
--- PDBML Schema translated from the PDBx/mmCIF Dictionary v5.392: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
+-- PDBML Schema v5.393
+-- PDBML Schema translated from the PDBx/mmCIF Dictionary v5.393: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
 -- URI-reference = http://pdbml.pdb.org/schema/pdbx-v50.xsd
 --
 
@@ -385,7 +385,6 @@ DROP TABLE IF EXISTS pdbx_nmr_force_constants CASCADE;
 DROP TABLE IF EXISTS pdbx_nmr_refine CASCADE;
 DROP TABLE IF EXISTS pdbx_nmr_representative CASCADE;
 DROP TABLE IF EXISTS pdbx_nmr_sample_details CASCADE;
-DROP TABLE IF EXISTS pdbx_nmr_software CASCADE;
 DROP TABLE IF EXISTS pdbx_nmr_software_task CASCADE;
 DROP TABLE IF EXISTS pdbx_nmr_spectral_dim CASCADE;
 DROP TABLE IF EXISTS pdbx_nmr_spectral_peak_list CASCADE;
@@ -603,6 +602,7 @@ DROP TABLE IF EXISTS entity_poly_seq CASCADE;
 DROP TABLE IF EXISTS pdbx_chem_comp_import CASCADE;
 DROP TABLE IF EXISTS pdbx_domain CASCADE;
 DROP TABLE IF EXISTS pdbx_entity_src_gen_clone CASCADE;
+DROP TABLE IF EXISTS pdbx_nmr_software CASCADE;
 DROP TABLE IF EXISTS pdbx_reference_entity_poly CASCADE;
 DROP TABLE IF EXISTS pdbx_reference_linked_entity_comp_list CASCADE;
 DROP TABLE IF EXISTS pdbx_reference_molecule_list CASCADE;
@@ -1813,6 +1813,24 @@ CREATE TABLE pdbx_entity_src_gen_clone (
 	entry_id TEXT NOT NULL ,
 -- ATTRIBUTE
 	step_id INTEGER NOT NULL
+);
+
+--
+-- (quoted from pdbx_nmr_softwareType)
+-- Description of the software that was used for data collection, data processing, data analysis, structure calculations and refinement. The description should include the name of the software, the author of the software and the version used. This example describes the software used in the MCP-1 study. <PDBx:pdbx_nmr_softwareCategory> <PDBx:pdbx_nmr_software ordinal="1"> <PDBx:authors>Bruker</PDBx:authors> <PDBx:classification>collection</PDBx:classification> <PDBx:name>UXNMR</PDBx:name> <PDBx:version>940501.3</PDBx:version> </PDBx:pdbx_nmr_software> <PDBx:pdbx_nmr_software ordinal="2"> <PDBx:authors>Hare</PDBx:authors> <PDBx:classification>processing</PDBx:classification> <PDBx:name>FELIX</PDBx:name> <PDBx:version>1.1</PDBx:version> </PDBx:pdbx_nmr_software> <PDBx:pdbx_nmr_software ordinal="3"> <PDBx:authors>Kraulis</PDBx:authors> <PDBx:classification>data analysis</PDBx:classification> <PDBx:name>ANSIG</PDBx:name> <PDBx:version>3.0</PDBx:version> </PDBx:pdbx_nmr_software> <PDBx:pdbx_nmr_software ordinal="4"> <PDBx:authors>Brunger</PDBx:authors> <PDBx:classification>structure calculation</PDBx:classification> <PDBx:name>X-PLOR</PDBx:name> <PDBx:version>3.8</PDBx:version> </PDBx:pdbx_nmr_software> </PDBx:pdbx_nmr_softwareCategory>
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE pdbx_nmr_software (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	document_id TEXT ,
+	authors TEXT ,
+	classification TEXT ,
+	details TEXT ,
+	name TEXT ,
+	version TEXT ,
+-- ATTRIBUTE
+	ordinal INTEGER NOT NULL
 );
 
 --
@@ -7446,7 +7464,7 @@ CREATE TABLE pdbx_chem_comp_atom_related (
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_chem_comp_audit_action_type CASCADE;
-CREATE TYPE ENUM_pdbx_chem_comp_audit_action_type AS ENUM ( 'Create component', 'Modify name', 'Modify formula', 'Modify synonyms', 'Modify linking type', 'Modify internal type', 'Modify parent residue', 'Modify processing site', 'Modify subcomponent list', 'Modify one letter code', 'Modify model coordinates code', 'Modify formal charge', 'Modify atom id', 'Modify charge', 'Modify aromatic_flag', 'Modify leaving atom flag', 'Modify component atom id', 'Modify component comp_id', 'Modify value order', 'Modify descriptor', 'Modify identifier', 'Modify coordinates', 'Modify backbone', 'Other modification', 'Obsolete component', 'Initial release' );
+CREATE TYPE ENUM_pdbx_chem_comp_audit_action_type AS ENUM ( 'Create component', 'Modify name', 'Modify formula', 'Modify synonyms', 'Modify linking type', 'Modify internal type', 'Modify parent residue', 'Modify processing site', 'Modify subcomponent list', 'Modify one letter code', 'Modify model coordinates code', 'Modify formal charge', 'Modify atom id', 'Modify charge', 'Modify aromatic_flag', 'Modify leaving atom flag', 'Modify component atom id', 'Modify component comp_id', 'Modify value order', 'Modify descriptor', 'Modify identifier', 'Modify coordinates', 'Modify backbone', 'Modify PCM', 'Other modification', 'Obsolete component', 'Initial release' );
 CREATE TABLE pdbx_chem_comp_audit (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
@@ -7753,13 +7771,13 @@ CREATE TABLE pdbx_chem_comp_nonstandard (
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_chem_comp_pcm_category CASCADE;
-CREATE TYPE ENUM_pdbx_chem_comp_pcm_category AS ENUM ( 'ADP-Ribose', 'Biotin', 'Carbohydrate', 'Chromophore/chromophore-like', 'Covalent chemical modification', 'Crosslinker', 'Disulfide bridge', 'Flavin', 'Heme/heme-like', 'Isopeptide bond', 'Lipid/lipid-like', 'Named protein modification', 'Non-standard linkage', 'Non-standard residue', 'Nucleotide monophosphate', 'Terminal acetylation', 'Terminal amidation' );
+CREATE TYPE ENUM_pdbx_chem_comp_pcm_category AS ENUM ( 'ADP-Ribose', 'Biotin', 'Carbohydrate', 'Chromophore/chromophore-like', 'Covalent chemical modification', 'Crosslinker', 'Flavin', 'Heme/heme-like', 'Lipid/lipid-like', 'Named protein modification', 'Non-standard residue', 'Nucleotide monophosphate', 'Terminal acetylation', 'Terminal amidation' );
 DROP TYPE IF EXISTS ENUM_pdbx_chem_comp_pcm_polypeptide_position CASCADE;
 CREATE TYPE ENUM_pdbx_chem_comp_pcm_polypeptide_position AS ENUM ( 'C-terminal', 'N-terminal', 'Any position' );
 DROP TYPE IF EXISTS ENUM_pdbx_chem_comp_pcm_position CASCADE;
 CREATE TYPE ENUM_pdbx_chem_comp_pcm_position AS ENUM ( 'Amino-acid side chain', 'Amino-acid backbone', 'Amino-acid side chain and backbone' );
 DROP TYPE IF EXISTS ENUM_pdbx_chem_comp_pcm_type CASCADE;
-CREATE TYPE ENUM_pdbx_chem_comp_pcm_type AS ENUM ( '12-Hydroxyfarnesylation', '12-Oxomyristoylation', '12R-Hydroxymyristoylation', '14-Hydroxy-10,13-dioxo-7-heptadecenoic acid', '(3-Aminopropyl)(5''-adenosyl)phosphono amidation', '2-Aminoadipylation', '2-Aminoethylphosphorylation', '2-Cholinephosphorylation', '2-Hydroxyisobutyrylation', '2-Oxo-5,5-dimethylhexanoylation', '2-Oxobutanoic acid', '2,3-Dicarboxypropylation', '3-Oxoalanine', '3-Phenyllactic acid', '(3R)-3-Hydroxybutyrylation', '4-Phosphopantetheine', 'ADP-ribosylation', 'ADP-riboxanation', 'AMPylation', 'Acetamidation', 'Acetamidomethylation', 'Acetylation', 'Allysine', 'Amination', 'Arachidoylation', 'Archaeol', 'Arsenylation', 'Bacillithiolation', 'Benzoylation', 'Benzylation', 'Beta-amino acid', 'Beta-hydroxybutyrylation', 'Beta-lysylation', 'Beta-mercaptoethanol', 'Biotinylation', 'Bromination', 'Butyrylation', 'Carbamoylation', 'Carboxyethylation', 'Carboxylation', 'Carboxymethylation', 'cGMPylation', 'Chlorination', 'Cholesterylation', 'Citrullination', 'Crotonylation', 'Cyanation', 'D-amino acid', 'Deamidation', 'Decanoylation', 'Decarboxylation', 'Dehydroamino acid', 'Dehydrocoelenterazination', 'Dehydrogenation', 'Dehydroxylation', 'Deoxidation', 'Deoxyhypusine', 'Diacylglycerol', 'Dihydroxyacetonation', 'Diphosphorylation', 'Diphthamide', 'Dipyrromethane methylation', 'D-lactate', 'Dopaminylation', 'Ethylation', 'Ethylsulfanylation', 'Farnesylation', 'Fluorination', 'Formylation', 'GMPylation', 'Geranylgeranylation', 'Glutarylation', 'Glutathionylation', 'Glycerophosphorylation', 'Glycerylphosphorylethanolamination', 'Heptanoylation', 'Hexanoylation', 'Histaminylation', 'Hydrogenation', 'Hydroperoxylation', 'Hydroxyamination', 'Hydroxyethylation', 'Hydroxylation', 'Hydroxymethylation', 'Hydroxysulfanylation', 'Hypusine', 'Iodination', 'Lactoylation', 'Laurylation', 'Lipoylation', 'L-lactate', 'Malonylation', 'Methoxylation', 'Methylamination', 'Methylation', 'Methylsulfanylation', 'Methylsulfation', 'Myristoylation', 'N-pyruvic acid 2-iminylation', 'N-methylcarbamoylation', 'Nitration', 'Nitrosylation', 'None', 'Noradrenylation', 'Norleucine', 'Norvaline', 'Octanoylation', 'Oleoylation', 'Ornithine', 'Oxidation', 'Palmitoleoylation', 'Palmitoylation', 'Pentadecanoylation', 'Pentanoylation', 'Phosphatidylethanolamine amidation', 'Phosphoenolpyruvate', 'Phosphorylation', 'Propionylation', 'Pyridoxal phosphate', 'Pyrrolidone carboxylic acid', 'Pyruvic acid', 'Retinoylation', 'Selanylation', 'Selenomethionine', 'Serotonylation', 'Stearoylation', 'Stereoisomerisation', 'Succinamide ring', 'Succination', 'Succinylation', 'Sulfanylmethylation', 'Sulfation', 'Sulfhydration', 'Tert-butylation', 'Tert-butyloxycarbonylation', 'Thyroxine', 'Triiodothyronine', 'UMPylation' );
+CREATE TYPE ENUM_pdbx_chem_comp_pcm_type AS ENUM ( '12-Hydroxyfarnesylation', '12-Oxomyristoylation', '12R-Hydroxymyristoylation', '14-Hydroxy-10,13-dioxo-7-heptadecenoic acid', '(3-Aminopropyl)(5''-adenosyl)phosphono amidation', '2-Aminoadipylation', '2-Aminoethylphosphorylation', '2-Cholinephosphorylation', '2-Hydroxyisobutyrylation', '2-Oxo-5,5-dimethylhexanoylation', '2-Oxobutanoic acid', '2,3-Dicarboxypropylation', '3-Oxoalanine', '3-Phenyllactic acid', '(3R)-3-Hydroxybutyrylation', '4-Phosphopantetheine', 'ADP-ribosylation', 'ADP-riboxanation', 'AMPylation', 'Acetamidation', 'Acetamidomethylation', 'Acetylation', 'Allysine', 'Amination', 'Arachidoylation', 'Archaeol', 'Arsenylation', 'Bacillithiolation', 'Benzoylation', 'Benzylation', 'Beta-amino acid', 'Beta-hydroxybutyrylation', 'Beta-lysylation', 'Beta-mercaptoethanol', 'Biotinylation', 'Bromination', 'Butyrylation', 'Carbamoylation', 'Carboxyethylation', 'Carboxylation', 'Carboxymethylation', 'cGMPylation', 'Chlorination', 'Cholesterylation', 'Citrullination', 'Crotonylation', 'Cyanation', 'Deamidation', 'Decanoylation', 'Decarboxylation', 'Dehydroamino acid', 'Dehydrocoelenterazination', 'Dehydrogenation', 'Dehydroxylation', 'Deoxidation', 'Deoxyhypusine', 'Diacylglycerol', 'Dihydroxyacetonation', 'Diphosphorylation', 'Diphthamide', 'Dipyrromethane methylation', 'D-lactate', 'Dopaminylation', 'Ethylation', 'Ethylsulfanylation', 'Farnesylation', 'Fluorination', 'Formylation', 'GMPylation', 'Geranylgeranylation', 'Glutarylation', 'Glutathionylation', 'Glycerophosphorylation', 'Glycerylphosphorylethanolamination', 'Heptanoylation', 'Hexanoylation', 'Histaminylation', 'Hydrogenation', 'Hydroperoxylation', 'Hydroxyamination', 'Hydroxyethylation', 'Hydroxylation', 'Hydroxymethylation', 'Hydroxysulfanylation', 'Hypusine', 'Iodination', 'Lactoylation', 'Laurylation', 'Lipoylation', 'L-lactate', 'Malonylation', 'Methoxylation', 'Methylamination', 'Methylation', 'Methylsulfanylation', 'Methylsulfation', 'Myristoylation', 'N-pyruvic acid 2-iminylation', 'N-methylcarbamoylation', 'Nitration', 'Nitrosylation', 'None', 'Noradrenylation', 'Norleucine', 'Norvaline', 'Octanoylation', 'Oleoylation', 'Ornithine', 'Oxidation', 'Palmitoleoylation', 'Palmitoylation', 'Pentadecanoylation', 'Pentanoylation', 'Phosphatidylethanolamine amidation', 'Phosphoenolpyruvate', 'Phosphorylation', 'Propionylation', 'Pyridoxal phosphate', 'Pyrrolidone carboxylic acid', 'Pyruvic acid', 'Retinoylation', 'Selanylation', 'Selenomethionine', 'Serotonylation', 'Stearoylation', 'Stereoisomerisation', 'Succinamide ring', 'Succination', 'Succinylation', 'Sulfanylmethylation', 'Sulfation', 'Sulfhydration', 'Tert-butylation', 'Tert-butyloxycarbonylation', 'Thyroxine', 'Triiodothyronine', 'UMPylation' );
 CREATE TABLE pdbx_chem_comp_pcm (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
@@ -10752,7 +10770,7 @@ CREATE TABLE pdbx_missing_residue_list (
 DROP TYPE IF EXISTS ENUM_pdbx_modification_feature_category CASCADE;
 CREATE TYPE ENUM_pdbx_modification_feature_category AS ENUM ( 'ADP-Ribose', 'Biotin', 'Carbohydrate', 'Chromophore/chromophore-like', 'Covalent chemical modification', 'Crosslinker', 'Disulfide bridge', 'Flavin', 'Heme/heme-like', 'Isopeptide bond', 'Lipid/lipid-like', 'Named protein modification', 'Non-standard linkage', 'Non-standard residue', 'Nucleotide monophosphate', 'Terminal acetylation', 'Terminal amidation' );
 DROP TYPE IF EXISTS ENUM_pdbx_modification_feature_type CASCADE;
-CREATE TYPE ENUM_pdbx_modification_feature_type AS ENUM ( '12-Hydroxyfarnesylation', '12-Oxomyristoylation', '12R-Hydroxymyristoylation', '14-Hydroxy-10,13-dioxo-7-heptadecenoic acid', '(3-Aminopropyl)(5''-adenosyl)phosphono amidation', '2-Aminoadipylation', '2-Aminoethylphosphorylation', '2-Cholinephosphorylation', '2-Hydroxyisobutyrylation', '2-Oxo-5,5-dimethylhexanoylation', '2-Oxobutanoic acid', '2,3-Dicarboxypropylation', '3-Oxoalanine', '3-Phenyllactic acid', '(3R)-3-Hydroxybutyrylation', '4-Phosphopantetheine', 'ADP-ribosylation', 'ADP-riboxanation', 'AMPylation', 'Acetamidation', 'Acetamidomethylation', 'Acetylation', 'Allysine', 'Amination', 'Arachidoylation', 'Archaeol', 'Arsenylation', 'Bacillithiolation', 'Benzoylation', 'Benzylation', 'Beta-amino acid', 'Beta-hydroxybutyrylation', 'Beta-lysylation', 'Beta-mercaptoethanol', 'Biotinylation', 'Bromination', 'Butyrylation', 'Carbamoylation', 'Carboxyethylation', 'Carboxylation', 'Carboxymethylation', 'cGMPylation', 'Chlorination', 'Cholesterylation', 'Citrullination', 'Crotonylation', 'Cyanation', 'D-amino acid', 'Deamidation', 'Decanoylation', 'Decarboxylation', 'Dehydroamino acid', 'Dehydrocoelenterazination', 'Dehydrogenation', 'Dehydroxylation', 'Deoxidation', 'Deoxyhypusine', 'Diacylglycerol', 'Dihydroxyacetonation', 'Diphosphorylation', 'Diphthamide', 'Dipyrromethane methylation', 'D-lactate', 'Dopaminylation', 'Ethylation', 'Ethylsulfanylation', 'Farnesylation', 'Fluorination', 'Formylation', 'GMPylation', 'Geranylgeranylation', 'Glutarylation', 'Glutathionylation', 'Glycerophosphorylation', 'Glycerylphosphorylethanolamination', 'Heptanoylation', 'Hexanoylation', 'Histaminylation', 'Hydrogenation', 'Hydroperoxylation', 'Hydroxyamination', 'Hydroxyethylation', 'Hydroxylation', 'Hydroxymethylation', 'Hydroxysulfanylation', 'Hypusine', 'Iodination', 'Lactoylation', 'Laurylation', 'Lipoylation', 'L-lactate', 'Malonylation', 'Methoxylation', 'Methylamination', 'Methylation', 'Methylsulfanylation', 'Methylsulfation', 'Myristoylation', 'N-pyruvic acid 2-iminylation', 'N-methylcarbamoylation', 'Nitration', 'Nitrosylation', 'None', 'Noradrenylation', 'Norleucine', 'Norvaline', 'Octanoylation', 'Oleoylation', 'Ornithine', 'Oxidation', 'Palmitoleoylation', 'Palmitoylation', 'Pentadecanoylation', 'Pentanoylation', 'Phosphatidylethanolamine amidation', 'Phosphoenolpyruvate', 'Phosphorylation', 'Propionylation', 'Pyridoxal phosphate', 'Pyrrolidone carboxylic acid', 'Pyruvic acid', 'Retinoylation', 'Selanylation', 'Selenomethionine', 'Serotonylation', 'Stearoylation', 'Stereoisomerisation', 'Succinamide ring', 'Succination', 'Succinylation', 'Sulfanylmethylation', 'Sulfation', 'Sulfhydration', 'Tert-butylation', 'Tert-butyloxycarbonylation', 'Thyroxine', 'Triiodothyronine', 'UMPylation' );
+CREATE TYPE ENUM_pdbx_modification_feature_type AS ENUM ( '12-Hydroxyfarnesylation', '12-Oxomyristoylation', '12R-Hydroxymyristoylation', '14-Hydroxy-10,13-dioxo-7-heptadecenoic acid', '(3-Aminopropyl)(5''-adenosyl)phosphono amidation', '2-Aminoadipylation', '2-Aminoethylphosphorylation', '2-Cholinephosphorylation', '2-Hydroxyisobutyrylation', '2-Oxo-5,5-dimethylhexanoylation', '2-Oxobutanoic acid', '2,3-Dicarboxypropylation', '3-Oxoalanine', '3-Phenyllactic acid', '(3R)-3-Hydroxybutyrylation', '4-Phosphopantetheine', 'ADP-ribosylation', 'ADP-riboxanation', 'AMPylation', 'Acetamidation', 'Acetamidomethylation', 'Acetylation', 'Allysine', 'Amination', 'Arachidoylation', 'Archaeol', 'Arsenylation', 'Bacillithiolation', 'Benzoylation', 'Benzylation', 'Beta-amino acid', 'Beta-hydroxybutyrylation', 'Beta-lysylation', 'Beta-mercaptoethanol', 'Biotinylation', 'Bromination', 'Butyrylation', 'Carbamoylation', 'Carboxyethylation', 'Carboxylation', 'Carboxymethylation', 'cGMPylation', 'Chlorination', 'Cholesterylation', 'Citrullination', 'Crotonylation', 'Cyanation', 'Deamidation', 'Decanoylation', 'Decarboxylation', 'Dehydroamino acid', 'Dehydrocoelenterazination', 'Dehydrogenation', 'Dehydroxylation', 'Deoxidation', 'Deoxyhypusine', 'Diacylglycerol', 'Dihydroxyacetonation', 'Diphosphorylation', 'Diphthamide', 'Dipyrromethane methylation', 'D-lactate', 'Dopaminylation', 'Ethylation', 'Ethylsulfanylation', 'Farnesylation', 'Fluorination', 'Formylation', 'GMPylation', 'Geranylgeranylation', 'Glutarylation', 'Glutathionylation', 'Glycerophosphorylation', 'Glycerylphosphorylethanolamination', 'Heptanoylation', 'Hexanoylation', 'Histaminylation', 'Hydrogenation', 'Hydroperoxylation', 'Hydroxyamination', 'Hydroxyethylation', 'Hydroxylation', 'Hydroxymethylation', 'Hydroxysulfanylation', 'Hypusine', 'Iodination', 'Lactoylation', 'Laurylation', 'Lipoylation', 'L-lactate', 'Malonylation', 'Methoxylation', 'Methylamination', 'Methylation', 'Methylsulfanylation', 'Methylsulfation', 'Myristoylation', 'N-pyruvic acid 2-iminylation', 'N-methylcarbamoylation', 'Nitration', 'Nitrosylation', 'None', 'Noradrenylation', 'Norleucine', 'Norvaline', 'Octanoylation', 'Oleoylation', 'Ornithine', 'Oxidation', 'Palmitoleoylation', 'Palmitoylation', 'Pentadecanoylation', 'Pentanoylation', 'Phosphatidylethanolamine amidation', 'Phosphoenolpyruvate', 'Phosphorylation', 'Propionylation', 'Pyridoxal phosphate', 'Pyrrolidone carboxylic acid', 'Pyruvic acid', 'Retinoylation', 'Selanylation', 'Selenomethionine', 'Serotonylation', 'Stearoylation', 'Stereoisomerisation', 'Succinamide ring', 'Succination', 'Succinylation', 'Sulfanylmethylation', 'Sulfation', 'Sulfhydration', 'Tert-butylation', 'Tert-butyloxycarbonylation', 'Thyroxine', 'Triiodothyronine', 'UMPylation' );
 CREATE TABLE pdbx_modification_feature (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
@@ -11419,24 +11437,6 @@ CREATE TABLE pdbx_nmr_sample_details (
 	type ENUM_pdbx_nmr_sample_details_type ,
 -- ATTRIBUTE
 	solution_id TEXT NOT NULL
-);
-
---
--- (quoted from pdbx_nmr_softwareType)
--- Description of the software that was used for data collection, data processing, data analysis, structure calculations and refinement. The description should include the name of the software, the author of the software and the version used. This example describes the software used in the MCP-1 study. <PDBx:pdbx_nmr_softwareCategory> <PDBx:pdbx_nmr_software ordinal="1"> <PDBx:authors>Bruker</PDBx:authors> <PDBx:classification>collection</PDBx:classification> <PDBx:name>UXNMR</PDBx:name> <PDBx:version>940501.3</PDBx:version> </PDBx:pdbx_nmr_software> <PDBx:pdbx_nmr_software ordinal="2"> <PDBx:authors>Hare</PDBx:authors> <PDBx:classification>processing</PDBx:classification> <PDBx:name>FELIX</PDBx:name> <PDBx:version>1.1</PDBx:version> </PDBx:pdbx_nmr_software> <PDBx:pdbx_nmr_software ordinal="3"> <PDBx:authors>Kraulis</PDBx:authors> <PDBx:classification>data analysis</PDBx:classification> <PDBx:name>ANSIG</PDBx:name> <PDBx:version>3.0</PDBx:version> </PDBx:pdbx_nmr_software> <PDBx:pdbx_nmr_software ordinal="4"> <PDBx:authors>Brunger</PDBx:authors> <PDBx:classification>structure calculation</PDBx:classification> <PDBx:name>X-PLOR</PDBx:name> <PDBx:version>3.8</PDBx:version> </PDBx:pdbx_nmr_software> </PDBx:pdbx_nmr_softwareCategory>
--- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
--- type: admin child, content: true, list: false, bridge: false, virtual: false
---
-CREATE TABLE pdbx_nmr_software (
--- DOCUMENT KEY is pointer to data source (aka. Entry ID)
-	document_id TEXT ,
-	authors TEXT ,
-	classification TEXT ,
-	details TEXT ,
-	name TEXT ,
-	version TEXT ,
--- ATTRIBUTE
-	ordinal INTEGER NOT NULL
 );
 
 --
@@ -19830,6 +19830,12 @@ CREATE TABLE valence_ref (
 
 -- (derived from xsd:keyref[@name='pdbx_linked_entity_listKeyref_0_0_0_0'])
 --ALTER TABLE pdbx_linked_entity_link_list ADD CONSTRAINT KR_pdbx_linked_entity_listKeyref_0_0_0_0_2 FOREIGN KEY ( linked_entity_id ) REFERENCES pdbx_linked_entity_list ( linked_entity_id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
+
+-- (derived from xsd:keyref[@name='pdbx_nmr_softwareKeyref_0_0_0_0'])
+--ALTER TABLE pdbx_nmr_chem_shift_software ADD CONSTRAINT KR_pdbx_nmr_softwareKeyref_0_0_0_0 FOREIGN KEY ( software_id ) REFERENCES pdbx_nmr_software ( ordinal ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
+
+-- (derived from xsd:keyref[@name='pdbx_nmr_softwareKeyref_0_0_1_0'])
+--ALTER TABLE pdbx_nmr_spectral_peak_software ADD CONSTRAINT KR_pdbx_nmr_softwareKeyref_0_0_1_0 FOREIGN KEY ( software_id ) REFERENCES pdbx_nmr_software ( ordinal ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
 
 -- (derived from xsd:keyref[@name='pdbx_reference_entity_listKeyref_3_0_0_0'])
 --ALTER TABLE pdbx_reference_entity_poly_link ADD CONSTRAINT KR_pdbx_reference_entity_listKeyref_3_0_0_0_0 FOREIGN KEY ( component_id ) REFERENCES pdbx_reference_entity_list ( component_id ) ON DELETE CASCADE NOT VALID DEFERRABLE INITIALLY DEFERRED;
