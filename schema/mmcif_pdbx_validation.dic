@@ -1,9 +1,9 @@
 ###########################################################################
 #
 # File:  mmcif_pdbx_validation-v4.dic
-# Date:  Fri Sep 27 16:19:43 JST 2024
+# Date:  Fri Sep 27 16:31:03 JST 2024
 # Created from:
-#        mmcif_pdbx_v50.dic   - PDB Exchange Data Dictionary (V5.393)
+#        mmcif_pdbx_v50.dic   - PDB Exchange Data Dictionary (V5.394)
 #        http://wwpdb.org/validation/schema/wwpdb_validation_v6.02.xsd
 #         - a XML schema for wwPDB validation reports, v6.02, rev. 2023-02-06
 #
@@ -30,7 +30,7 @@ data_mmcif_pdbx_validation.dic
 
     _dictionary.title           mmcif_pdbx_validation.dic
     _dictionary.datablock_id    mmcif_pdbx_validation.dic
-    _dictionary.version         4.393
+    _dictionary.version         4.394
 #
     loop_
     _dictionary_history.version
@@ -1330,6 +1330,11 @@ data_mmcif_pdbx_validation.dic
 >   + Removed direct linking modifications from enumeration list for _pdbx_chem_comp_pcm.category # not mapped
 >   + Add parent/child relationships for _pdbx_nmr_spectral_peak_software.software_id
 >     and _pdbx_nmr_chem_shift_software.software_id to _pdbx_nmr_software.ordinal # not mapped
+;
+  4.394   2024-09-27
+;
+>   + Add "home-built" to pdbx_nmr_spectrometer.model for deposition enumeration. # merged
+>   + Extend enumerations for pdbx_chem_comp_pcm and pdbx_modification_feature # not mapped
 ;
 
 
@@ -30056,6 +30061,7 @@ save__pdbx_nmr_spectrometer.model
       "_pdbx_nmr_spectrometer.model"  GX                    GE
       "_pdbx_nmr_spectrometer.model"  OMEGA                 GE
       "_pdbx_nmr_spectrometer.model"  "OMEGA PSG"           GE
+      "_pdbx_nmr_spectrometer.model"  home-built            na
     #
     _pdbx_item_enumeration_details.name         "_pdbx_nmr_spectrometer.model"
     _pdbx_item_enumeration_details.closed_flag  no
