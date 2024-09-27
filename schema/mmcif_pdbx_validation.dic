@@ -1,9 +1,9 @@
 ###########################################################################
 #
 # File:  mmcif_pdbx_validation-v4.dic
-# Date:  Wed Mar 27 15:27:27 JST 2024
+# Date:  Fri Sep 27 14:04:38 JST 2024
 # Created from:
-#        mmcif_pdbx_v50.dic   - PDB Exchange Data Dictionary (V5.390)
+#        mmcif_pdbx_v50.dic   - PDB Exchange Data Dictionary (V5.391)
 #        http://wwpdb.org/validation/schema/wwpdb_validation_v6.02.xsd
 #         - a XML schema for wwPDB validation reports, v6.02, rev. 2023-02-06
 #
@@ -30,7 +30,7 @@ data_mmcif_pdbx_validation.dic
 
     _dictionary.title           mmcif_pdbx_validation.dic
     _dictionary.datablock_id    mmcif_pdbx_validation.dic
-    _dictionary.version         4.390
+    _dictionary.version         4.391
 #
     loop_
     _dictionary_history.version
@@ -1309,8 +1309,12 @@ data_mmcif_pdbx_validation.dic
 >   + Add "DECTRIS ARINA (0.2k x 0.2k)" to _em_image_recording.film_or_detector_model
 >     enumeration # merged
 >   + Add RAPD to _software.name enumeration # not mapped
->   + PTM extension add None to enumerations, and support alt ids.
->   + Update funding enumerations
+>   + PTM extension add None to enumerations, and support alt ids. # not mapped
+>   + Update funding enumerations # not mapped
+;
+  4.391   2024-09-27
+;
+>   + Extend enumeration of _pdbx_chem_comp_depositor_info.type based on use # not mapped
 ;
 
 

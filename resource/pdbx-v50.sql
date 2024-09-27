@@ -44,8 +44,8 @@
 --
 
 --
--- PDBML Schema v5.390
--- PDBML Schema translated from the PDBx/mmCIF Dictionary v5.390: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
+-- PDBML Schema v5.391
+-- PDBML Schema translated from the PDBx/mmCIF Dictionary v5.391: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
 -- URI-reference = http://pdbml.pdb.org/schema/pdbx-v50.xsd
 --
 
@@ -7496,7 +7496,7 @@ CREATE TYPE ENUM_pdbx_chem_comp_depositor_info_descriptor_type AS ENUM ( 'SMILES
 DROP TYPE IF EXISTS ENUM_pdbx_chem_comp_depositor_info_in_dictionary_flag CASCADE;
 CREATE TYPE ENUM_pdbx_chem_comp_depositor_info_in_dictionary_flag AS ENUM ( 'Y', 'N' );
 DROP TYPE IF EXISTS ENUM_pdbx_chem_comp_depositor_info_type CASCADE;
-CREATE TYPE ENUM_pdbx_chem_comp_depositor_info_type AS ENUM ( 'D-peptide linking', 'L-peptide linking', 'DNA linking', 'RNA linking', 'L-RNA linking', 'L-DNA linking', 'saccharide', 'non-polymer', 'peptide linking', 'peptide-like', 'other' );
+CREATE TYPE ENUM_pdbx_chem_comp_depositor_info_type AS ENUM ( 'peptide_like', 'heterogen', 'none_of_abv', 'carbohydrate', 'lipid', 'D-peptide linking', 'L-peptide linking', 'DNA linking', 'RNA linking', 'L-RNA linking', 'L-DNA linking', 'saccharide', 'non-polymer', 'peptide linking', 'peptide-like', 'other' );
 CREATE TABLE pdbx_chem_comp_depositor_info (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
