@@ -121,6 +121,7 @@ pdbx_refine_tls
 pdbx_refine_tls_group
 pdbx_refln_signal_binning
 pdbx_reflns_twin
+pdbx_related_exp_data_set
 pdbx_re_refinement
 pdbx_sequence_range
 pdbx_sifts_unp_segments

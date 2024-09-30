@@ -1369,6 +1369,11 @@ pdbx_reflns_twin.mean_F_square_over_mean_F2
 pdbx_reflns_twin.mean_I2_over_mean_I_square
 pdbx_reflns_twin.operator
 pdbx_reflns_twin.type
+pdbx_related_exp_data_set.data_reference
+pdbx_related_exp_data_set.data_set_type
+pdbx_related_exp_data_set.details
+pdbx_related_exp_data_set.metadata_reference
+pdbx_related_exp_data_set.ordinal
 pdbx_re_refinement.citation_id
 pdbx_re_refinement.details
 pdbx_re_refinement.entry_id

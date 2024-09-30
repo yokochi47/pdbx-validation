@@ -1371,6 +1371,12 @@ Unmatched type exist in _pdbx_nmr_assigned_chem_shift_list.nmr_star_consistency_
 	<xsl:if test="VRPTx:occupancy_mean">
 	  <xsl:attribute name="avgoccu"><xsl:value-of select="VRPTx:occupancy_mean"/></xsl:attribute>
 	</xsl:if>
+        <xsl:if test="VRPTx:EDIAm">
+          <xsl:attribute name="EDIAm"><xsl:value-of select="VRPTx:EDIA_mean"/></xsl:attribute>
+        </xsl:if>
+        <xsl:if test="VRPTx:OPIA">
+          <xsl:attribute name="OPIA"><xsl:value-of select="VRPTx:OPIA"/></xsl:attribute>
+        </xsl:if>
 
       </xsl:for-each>
 

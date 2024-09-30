@@ -1338,7 +1338,7 @@ data_mmcif_pdbx_validation.dic
 ;
   4.395   2024-09-27
 ;
->   + Change context of em_admin to include some attributes in PDB public files
+>   + Change context of em_admin to include some attributes in PDB public files # merged
 ;
 
 

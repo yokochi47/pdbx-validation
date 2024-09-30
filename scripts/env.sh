@@ -29,8 +29,8 @@ MMCIF_VALID_ALT=mmcif-validation-alt
 PDBML_XSD=resource/pdbx-v50.xsd
 PDBML_SQL=resource/pdbx-v50.sql
 
-WWPDB_VALIDATION_XSD=resource/wwpdb_validation_v6.02.xsd
-WWPDB_VALIDATION_SQL=resource/wwpdb_validation_v6.02.sql
+WWPDB_VALIDATION_XSD=resource/wwpdb_validation_v6.03.xsd
+WWPDB_VALIDATION_SQL=resource/wwpdb_validation_v6.03.sql
 
 PDBX_VALIDATION_XSD=schema/pdbx-validation-v4.xsd
 PDBX_VALIDATION_SQL=schema/pdbx-validation-v4.sql
@@ -103,6 +103,9 @@ VRPTML2WURCS_XSL=stylesheet/vrptml2wurcs.xsl
 
 WURCS_CATALOG_XML=../wurcs2glytoucan/wurcs_catalog.xml
 _WURCS_CATALOG_XML=wurcs2glytoucan/wurcs_catalog.xml
+
+PDBML2RELEXPDATA_XSL=stylesheet/pdbml2relexpdata.xsl
+VRPTML2RELEXPDATA_XSL=stylesheet/vrptml2relexpdata.xsl
 
 RDF=RDF
 

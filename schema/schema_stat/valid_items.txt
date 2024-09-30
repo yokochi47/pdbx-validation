@@ -835,6 +835,7 @@ pdbx_dcc_map.Biso_mean_side_chain
 pdbx_dcc_map.density_connectivity
 pdbx_dcc_map.density_index_main_chain
 pdbx_dcc_map.density_index_side_chain
+pdbx_dcc_map.EDIA_mean
 pdbx_dcc_map.id
 pdbx_dcc_map.label_alt_id
 pdbx_dcc_map.LLDF
@@ -849,6 +850,7 @@ pdbx_dcc_map.occupancy_mean
 pdbx_dcc_map.occupancy_mean_main_chain
 pdbx_dcc_map.occupancy_mean_phosphate_group
 pdbx_dcc_map.occupancy_mean_side_chain
+pdbx_dcc_map.OPIA
 pdbx_dcc_map_overall.entry_id
 pdbx_dcc_map_overall.RSRZ_outliers_percent
 pdbx_dcc_map.PDB_ins_code
@@ -1847,6 +1849,11 @@ pdbx_reflns_twin.mean_F_square_over_mean_F2
 pdbx_reflns_twin.mean_I2_over_mean_I_square
 pdbx_reflns_twin.operator
 pdbx_reflns_twin.type
+pdbx_related_exp_data_set.data_reference
+pdbx_related_exp_data_set.data_set_type
+pdbx_related_exp_data_set.details
+pdbx_related_exp_data_set.metadata_reference
+pdbx_related_exp_data_set.ordinal
 pdbx_re_refinement.citation_id
 pdbx_re_refinement.details
 pdbx_re_refinement.entry_id

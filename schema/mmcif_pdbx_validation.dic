@@ -1,11 +1,11 @@
 ###########################################################################
 #
 # File:  mmcif_pdbx_validation-v4.dic
-# Date:  Fri Sep 27 16:43:51 JST 2024
+# Date:  Fri Sep 27 18:02:15 JST 2024
 # Created from:
-#        mmcif_pdbx_v50.dic   - PDB Exchange Data Dictionary (V5.395)
-#        http://wwpdb.org/validation/schema/wwpdb_validation_v6.02.xsd
-#         - a XML schema for wwPDB validation reports, v6.02, rev. 2023-02-06
+#        mmcif_pdbx_v50.dic   - PDB Exchange Data Dictionary (V5.396)
+#        http://wwpdb.org/validation/schema/wwpdb_validation_v6.03.xsd
+#         - a XML schema for wwPDB validation reports, v6.03, rev. 2024-08-29
 #
 ###########################################################################
 
@@ -30,7 +30,7 @@ data_mmcif_pdbx_validation.dic
 
     _dictionary.title           mmcif_pdbx_validation.dic
     _dictionary.datablock_id    mmcif_pdbx_validation.dic
-    _dictionary.version         4.395
+    _dictionary.version         4.396
 #
     loop_
     _dictionary_history.version
@@ -1338,7 +1338,20 @@ data_mmcif_pdbx_validation.dic
 ;
   4.395   2024-09-27
 ;
->   + Change context of em_admin to include some attributes in PDB public files
+>   + Change context of em_admin to include some attributes in PDB public files # merged
+;
+  4.396   2024-09-27
+;
+>   + Add "BURKER D8 VENTURE" and "BRUKER IMUS DIAMOND II" to _diffrn_source.type enumeration # merged
+>   + Add 'Quantifoil Active R2/1', 'Quantifoil Active R1.6/0.9', 'Quantifoil Active R1.2/0.8',
+>     'SPT Labtech self-wicking R1.2/0.8' to em_sample_support.grid_type enumeration # merged
+>   + Add "SPT LABTECH CHAMELEON" to _em_vitrification.equipment # merged
+>   + For _em_imaging.microscope_model create a pdbx_item_enumeration list removing "FEI TITAN" and "FEI TITAN KRIOS" # merged
+>   + Add SDF and TIF to _pdbx_chem_comp_upload_depositor_info.upload_file_type enumeration # not mapped
+>   + PTM extension enumeration list update # not mapped
+    + Add support for _pdbx_related_exp_data_set category # not mapped -> mapped
+    + Relax range of Q-score of _pdbx_em_validate_map_model.Q_score and _pdbx_em_validate_map_model_entity.average_Q_score
+    + Support wwPDB validation report XML Schema v6.03 (density-fitnes's EDIAm and OPIA scores)
 ;
 
 
@@ -4733,7 +4746,9 @@ save__diffrn_source.type
      "_diffrn_source.type"  "BRUKER AXS MICROSTAR"                           "ROTATING ANODE"
      "_diffrn_source.type"  "BRUKER AXS MICROSTAR-H"                         "ROTATING ANODE"
      "_diffrn_source.type"  "BRUKER D8 QUEST"                                "SEALED TUBE"
+     "_diffrn_source.type"  "BRUKER D8 VENTURE"                              "SEALED TUBE"
      "_diffrn_source.type"  "BRUKER IMUS DIAMOND MICROFOCUS"                 "SEALED TUBE"
+     "_diffrn_source.type"  "BRUKER IMUS DIAMOND II"                         "SEALED TUBE"
      "_diffrn_source.type"  "BRUKER IMUS MICROFOCUS"                         "SEALED TUBE"
      "_diffrn_source.type"  "BRUKER IMUS 3.0 MICROFOCUS"                     "SEALED TUBE"
      "_diffrn_source.type"  "BRUKER METALJET"                                "LIQUID ANODE"
@@ -49618,6 +49633,145 @@ save__pdbx_entity_descriptor.ordinal
     _item_type.code               int
 save_
 
+save_pdbx_related_exp_data_set
+   _category.description
+;              Data items in the PDBX_RELATED_DATA_SET category record references
+               to experimental data sets related to the entry.
+;
+
+   _category.id              pdbx_related_exp_data_set
+   _category.mandatory_code  no
+   #
+   _category_key.name  "_pdbx_related_exp_data_set.ordinal"
+   #
+   loop_
+   _category_group.id
+     inclusive_group
+     pdbx_group
+     database_group
+   #
+   _category_examples.detail
+;
+    Example 1 -
+;
+
+   _category_examples.case
+;
+     loop_
+     _pdbx_related_exp_data_set.ordinal
+     _pdbx_related_exp_data_set.data_reference
+     _pdbx_related_exp_data_set.metadata_reference
+     _pdbx_related_exp_data_set.data_set_type
+     _pdbx_related_exp_data_set.details
+     1  '10.000/10002/image_data/cif'   '10.000/10002/image_data/txt' 'diffraction image data'  'imgCIF data set containing 500 frames'
+     2  10.6019/EMPIAR-11866 10.6019/EMPIAR-11866  EMPIAR ?
+;
+
+   #
+save_
+#
+save__pdbx_related_exp_data_set.ordinal
+   _item_description.description
+;        Ordinal identifier for each related experimental data set.
+;
+
+   #
+   _item.name            "_pdbx_related_exp_data_set.ordinal"
+   _item.category_id     pdbx_related_exp_data_set
+   _item.mandatory_code  yes
+   #
+   _item_type.code  int
+   #
+save_
+#
+save__pdbx_related_exp_data_set.data_reference
+   _item_description.description
+;        A DOI reference to the related data set.
+;
+
+   #
+   _item.name            "_pdbx_related_exp_data_set.data_reference"
+   _item.category_id     pdbx_related_exp_data_set
+   _item.mandatory_code  yes
+   #
+   _item_type.code  exp_data_doi
+   #
+   _pdbx_item.name            "_pdbx_related_exp_data_set.data_reference"
+   _pdbx_item.mandatory_code  no
+   #
+   _item_examples.case  10.000/10002/image_data/cif
+   #
+save_
+#
+save__pdbx_related_exp_data_set.metadata_reference
+   _item_description.description
+;        A DOI reference to the metadata decribing the related data set.
+;
+
+   #
+   _item.name            "_pdbx_related_exp_data_set.metadata_reference"
+   _item.category_id     pdbx_related_exp_data_set
+   _item.mandatory_code  no
+   #
+   _item_type.code  exp_data_doi
+   #
+   _pdbx_item.name            "_pdbx_related_exp_data_set.metadata_reference"
+   _pdbx_item.mandatory_code  no
+   #
+   _item_examples.case  10.000/10002/image_data/txt
+   #
+save_
+#
+save__pdbx_related_exp_data_set.data_set_type
+   _item_description.description
+;        The type of the experimenatal data set.
+;
+
+   #
+   _item.name            "_pdbx_related_exp_data_set.data_set_type"
+   _item.category_id     pdbx_related_exp_data_set
+   _item.mandatory_code  yes
+   #
+   _item_type.code  line
+   #
+   loop_
+   _item_examples.case
+     "diffraction image data"
+     "NMR free induction decay data"
+   #
+   _pdbx_item.name            "_pdbx_related_exp_data_set.data_set_type"
+   _pdbx_item.mandatory_code  no
+   #
+   loop_
+   _pdbx_item_enumeration.name
+   _pdbx_item_enumeration.value
+   _pdbx_item_enumeration.detail
+     "_pdbx_related_exp_data_set.data_set_type"  "diffraction image data"         .
+     "_pdbx_related_exp_data_set.data_set_type"  "small-angle scattering data"    .
+     "_pdbx_related_exp_data_set.data_set_type"  EMPIAR                           .
+     "_pdbx_related_exp_data_set.data_set_type"  "NMR free induction decay data"  .
+     "_pdbx_related_exp_data_set.data_set_type"  "other data"                     .
+   #
+save_
+#
+save__pdbx_related_exp_data_set.details
+   _item_description.description
+;        Additional details describing the content of the related data set and its application to
+         the current investigation.
+;
+
+   #
+   _item.name            "_pdbx_related_exp_data_set.details"
+   _item.category_id     pdbx_related_exp_data_set
+   _item.mandatory_code  no
+   #
+   _item_type.code  text
+   #
+   _pdbx_item.name            "_pdbx_related_exp_data_set.details"
+   _pdbx_item.mandatory_code  no
+   #
+save_
+#
 save__refine.overall_SU_B
     _item_description.description
 ;              The overall standard uncertainty (estimated standard deviation)
@@ -50807,6 +50961,7 @@ save__em_vitrification.instrument
   '_em_vitrification.instrument'       "LEICA KF80"                        .
   '_em_vitrification.instrument'       "REICHERT-JUNG PLUNGER"             .
   '_em_vitrification.instrument'       "SPOTITON"                          .
+  '_em_vitrification.instrument'       "SPT LABTECH CHAMELEON"             .
   '_em_vitrification.instrument'       "ZEISS PLUNGE FREEZER CRYOBOX"      .
 save_
 
@@ -51052,6 +51207,85 @@ save__em_imaging.microscope_model
   '_em_imaging.microscope_model'  "TFS TUNDRA"            .
   '_em_imaging.microscope_model'  "ZEISS LEO912"    .
   '_em_imaging.microscope_model'  "ZEISS LIBRA120PLUS"    .
+#
+   loop_
+   _pdbx_item_enumeration.name
+   _pdbx_item_enumeration.value
+   _pdbx_item_enumeration.detail
+     "_em_imaging.microscope_model"  "FEI MORGAGNI"                 .
+     "_em_imaging.microscope_model"  "FEI POLARA 300"               .
+     "_em_imaging.microscope_model"  "FEI TALOS ARCTICA"            .
+     "_em_imaging.microscope_model"  "FEI TECNAI 10"                .
+     "_em_imaging.microscope_model"  "FEI TECNAI 12"                .
+     "_em_imaging.microscope_model"  "FEI TECNAI 20"                .
+     "_em_imaging.microscope_model"  "FEI TECNAI F20"               .
+     "_em_imaging.microscope_model"  "FEI TECNAI F30"               .
+     "_em_imaging.microscope_model"  "FEI TECNAI ARCTICA"           .
+     "_em_imaging.microscope_model"  "FEI TECNAI SPHERA"            .
+     "_em_imaging.microscope_model"  "FEI TECNAI SPIRIT"            .
+     "_em_imaging.microscope_model"  "FEI/PHILIPS CM10"             .
+     "_em_imaging.microscope_model"  "FEI/PHILIPS CM12"             .
+     "_em_imaging.microscope_model"  "FEI/PHILIPS CM120T"           .
+     "_em_imaging.microscope_model"  "FEI/PHILIPS CM200FEG"         .
+     "_em_imaging.microscope_model"  "FEI/PHILIPS CM200FEG/SOPHIE"  .
+     "_em_imaging.microscope_model"  "FEI/PHILIPS CM200FEG/ST"      .
+     "_em_imaging.microscope_model"  "FEI/PHILIPS CM200FEG/UT"      .
+     "_em_imaging.microscope_model"  "FEI/PHILIPS CM200T"           .
+     "_em_imaging.microscope_model"  "FEI/PHILIPS CM300FEG/HE"      .
+     "_em_imaging.microscope_model"  "FEI/PHILIPS CM300FEG/ST"      .
+     "_em_imaging.microscope_model"  "FEI/PHILIPS CM300FEG/T"       .
+     "_em_imaging.microscope_model"  "FEI/PHILIPS EM400"            .
+     "_em_imaging.microscope_model"  "FEI/PHILIPS EM420"            .
+     "_em_imaging.microscope_model"  "HITACHI EF2000"               .
+     "_em_imaging.microscope_model"  "HITACHI EF3000"               .
+     "_em_imaging.microscope_model"  "HITACHI H7600"                .
+     "_em_imaging.microscope_model"  "HITACHI HF2000"               .
+     "_em_imaging.microscope_model"  "HITACHI HF3000"               .
+     "_em_imaging.microscope_model"  "HITACHI H3000 UHVEM"          .
+     "_em_imaging.microscope_model"  "HITACHI H-9500SD"             .
+     "_em_imaging.microscope_model"  "JEOL 100B"                    .
+     "_em_imaging.microscope_model"  "JEOL 100CX"                   .
+     "_em_imaging.microscope_model"  "JEOL 1000EES"                 .
+     "_em_imaging.microscope_model"  "JEOL 1010"                    .
+     "_em_imaging.microscope_model"  "JEOL 1200"                    .
+     "_em_imaging.microscope_model"  "JEOL 1200EX"                  .
+     "_em_imaging.microscope_model"  "JEOL 1200EXII"                .
+     "_em_imaging.microscope_model"  "JEOL 1230"                    .
+     "_em_imaging.microscope_model"  "JEOL 1400"                    .
+     "_em_imaging.microscope_model"  "JEOL 1400/HR + YPS FEG"       .
+     "_em_imaging.microscope_model"  "JEOL 2000EX"                  .
+     "_em_imaging.microscope_model"  "JEOL 2000EXII"                .
+     "_em_imaging.microscope_model"  "JEOL 2010"                    .
+     "_em_imaging.microscope_model"  "JEOL 2010F"                   .
+     "_em_imaging.microscope_model"  "JEOL 2010HT"                  .
+     "_em_imaging.microscope_model"  "JEOL 2010HC"                  .
+     "_em_imaging.microscope_model"  "JEOL 2010UHR"                 .
+     "_em_imaging.microscope_model"  "JEOL 2011"                    .
+     "_em_imaging.microscope_model"  "JEOL 2100"                    .
+     "_em_imaging.microscope_model"  "JEOL 2100F"                   .
+     "_em_imaging.microscope_model"  "JEOL 2200FS"                  .
+     "_em_imaging.microscope_model"  "JEOL 2200FSC"                 .
+     "_em_imaging.microscope_model"  "JEOL 3000SFF"                 .
+     "_em_imaging.microscope_model"  "JEOL 3100FEF"                 .
+     "_em_imaging.microscope_model"  "JEOL 3100FFC"                 .
+     "_em_imaging.microscope_model"  "JEOL 3200FS"                  .
+     "_em_imaging.microscope_model"  "JEOL 3200FSC"                 .
+     "_em_imaging.microscope_model"  "JEOL KYOTO-3000SFF"           .
+     "_em_imaging.microscope_model"  "JEOL 3200FSC"                 .
+     "_em_imaging.microscope_model"  "JEOL 4000"                    .
+     "_em_imaging.microscope_model"  "JEOL 4000EX"                  .
+     "_em_imaging.microscope_model"  "JEOL CRYO ARM 200"            .
+     "_em_imaging.microscope_model"  "JEOL CRYO ARM 300"            .
+     "_em_imaging.microscope_model"  "SIEMENS SULEIKA"              .
+     "_em_imaging.microscope_model"  "TFS GLACIOS"                  .
+     "_em_imaging.microscope_model"  "TFS KRIOS"                    .
+     "_em_imaging.microscope_model"  "TFS TALOS"                    .
+     "_em_imaging.microscope_model"  "TFS TALOS F200C"              .
+     "_em_imaging.microscope_model"  "TFS TALOS L120C"              .
+     "_em_imaging.microscope_model"  "TFS TUNDRA"                   .
+     "_em_imaging.microscope_model"  "ZEISS LEO912"                 .
+     "_em_imaging.microscope_model"  "ZEISS LIBRA120PLUS"           .
+#
 save_
 
 
@@ -58399,6 +58633,38 @@ save__pdbx_dcc_map.occupancy_mean
     _pdbx_item_aliases.xpath     '/wwPDB-validation-information/ModelledSubgroup/@avgoccu'
     _pdbx_item_aliases.schema     wwpdb_validation_v6.01.xsd
     _pdbx_item_aliases.version    v6.01
+save_
+
+save__pdbx_dcc_map.EDIA_mean
+    _item_description.description
+;              The averaged EDIA score (aggregates the electron density support for individual atom) for the residue.
+               A residue with an EDIAm below 0.8 suggests that its constituent atoms display increasing inconsistency
+               with the electron density, and should be visually inspected.
+;
+    _item.name                  '_pdbx_dcc_map.EDIA_mean'
+    _item.category_id             pdbx_dcc_map
+    _item.mandatory_code          no
+    _item_type.code               float
+#
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/ModelledSubgroup/@EDIAm'
+    _pdbx_item_aliases.schema     wwpdb_validation_v6.03.xsd
+    _pdbx_item_aliases.version    v6.03
+save_
+
+save__pdbx_dcc_map.OPIA
+    _item_description.description
+;              Overall Percentage of well-resolved Interconnected Atoms score indicates the percentage of atoms
+               within a residue where the EDIA score exceeds 0.8. A value below 50% suggests less than half of
+               the atoms in the residue lack good electron density support and should be visually inspected.
+;
+    _item.name                  '_pdbx_dcc_map.OPIA'
+    _item.category_id             pdbx_dcc_map
+    _item.mandatory_code          no
+    _item_type.code               float
+#
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/ModelledSubgroup/@OPIA'
+    _pdbx_item_aliases.schema     wwpdb_validation_v6.03.xsd
+    _pdbx_item_aliases.version    v6.03
 save_
 
 save__pdbx_dcc_map.RSCC_main_chain
@@ -67211,12 +67477,6 @@ save__pdbx_em_validate_map_model.Q_score
     _item.category_id             pdbx_em_validate_map_model
     _item.mandatory_code          no
     _item_type.code               float
-    loop_
-    _item_range.minimum
-    _item_range.maximum
-                                  0.0  0.0
-                                  0.0  1.0
-                                  1.0  1.0
 #
     _pdbx_item_aliases.xpath     '/wwPDB-validation-information/ModelledSubgroup/@Q_score'
     _pdbx_item_aliases.schema     wwpdb_validation_v6.01.xsd
@@ -67356,12 +67616,6 @@ save__pdbx_em_validate_map_model_entity.average_Q_score
     _item.category_id             pdbx_em_validate_map_model_entity
     _item.mandatory_code          no
     _item_type.code               float
-    loop_
-    _item_range.minimum
-    _item_range.maximum
-                                  0.0  0.0
-                                  0.0  1.0
-                                  1.0  1.0
 #
     _pdbx_item_aliases.xpath     '/wwPDB-validation-information/ModelledEntityInstance/@Q_score'
     _pdbx_item_aliases.schema     wwpdb_validation_v6.01.xsd

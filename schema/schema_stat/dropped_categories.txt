@@ -300,7 +300,6 @@ pdbx_reference_molecule_synonyms
 pdbx_reference_publication_list
 pdbx_refine_aux_file
 pdbx_refine_ls_restr_ncs WWPDB_LOCAL
-pdbx_related_exp_data_set
 pdbx_remediation_atom_site_mapping WWPDB_LOCAL
 pdbx_rmch_outlier WWPDB_LOCAL
 pdbx_rms_devs_covalent WWPDB_LOCAL

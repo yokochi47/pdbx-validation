@@ -185,6 +185,44 @@
     <dcterms:references rdf:resource="{$idorg}pubmed/{text()}" rdfs:label="pubmed:{text()}"/>
   </xsl:template>
 
+  <xsl:template match="VRPTx:pdbx_related_exp_data_set/VRPTx:data_reference[text()!='']" mode="linked">
+    <xsl:variable name="doi_url">
+      <xsl:value-of select="$doi"/>
+      <xsl:call-template name="replace-string">
+        <xsl:with-param name="str">
+          <xsl:call-template name="replace-string">
+            <xsl:with-param name="str" select="text()"/>
+            <xsl:with-param name="replace">&lt;</xsl:with-param>
+            <xsl:with-param name="with">&amp;lt;</xsl:with-param>
+          </xsl:call-template>
+        </xsl:with-param>
+        <xsl:with-param name="replace">&gt;</xsl:with-param>
+        <xsl:with-param name="with">&amp;gt;</xsl:with-param>
+      </xsl:call-template>
+    </xsl:variable>
+    <VRPTo:link_to_doi rdf:resource="{$doi_url}" rdfs:label="doi:{text()}"/>
+  </xsl:template>
+
+  <xsl:template match="VRPTx:pdbx_related_exp_data_set/VRPTx:metadata_reference[text()!='']" mode="linked">
+    <xsl:if test="../VRPTx:data_reference/text()!=text()">
+    <xsl:variable name="doi_url">
+      <xsl:value-of select="$doi"/>
+      <xsl:call-template name="replace-string">
+        <xsl:with-param name="str">
+          <xsl:call-template name="replace-string">
+            <xsl:with-param name="str" select="text()"/>
+            <xsl:with-param name="replace">&lt;</xsl:with-param>
+            <xsl:with-param name="with">&amp;lt;</xsl:with-param>
+          </xsl:call-template>
+        </xsl:with-param>
+        <xsl:with-param name="replace">&gt;</xsl:with-param>
+        <xsl:with-param name="with">&amp;gt;</xsl:with-param>
+      </xsl:call-template>
+    </xsl:variable>
+    <VRPTo:link_to_doi rdf:resource="{$doi_url}" rdfs:label="doi:{text()}"/>
+    </xsl:if>
+  </xsl:template>
+
   <xsl:template match="VRPTx:entity_src_gen/VRPTx:pdbx_gene_src_ncbi_taxonomy_id[text()!='']" mode="linked">
     <xsl:variable name="tax_list">
       <xsl:call-template name="tokenize">
@@ -3714,6 +3752,20 @@
       <xsl:apply-templates mode="linked"/>
       </VRPTo:pdbx_reflns_twin>
       </VRPTo:has_pdbx_reflns_twin>
+  </xsl:template>
+
+  <xsl:template match="VRPTx:datablock/VRPTx:pdbx_related_exp_data_setCategory/VRPTx:pdbx_related_exp_data_set">
+      <xsl:variable name="ordinal_truncated"><xsl:choose><xsl:when test="string-length(@ordinal)&lt;64"><xsl:value-of select="@ordinal"/></xsl:when><xsl:when test="contains(@ordinal,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@ordinal,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@ordinal,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
+      <xsl:variable name="ordinal_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($ordinal_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
+      <VRPTo:has_pdbx_related_exp_data_set>
+      <VRPTo:pdbx_related_exp_data_set rdf:about="{$base}/pdbx_related_exp_data_set/{$ordinal_encoded}">
+      <VRPTo:of_datablock rdf:resource="{$base}"/>
+      <xsl:apply-templates select="@*"/>
+      <xsl:apply-templates select="@*" mode="linked"/>
+      <xsl:apply-templates/>
+      <xsl:apply-templates mode="linked"/>
+      </VRPTo:pdbx_related_exp_data_set>
+      </VRPTo:has_pdbx_related_exp_data_set>
   </xsl:template>
 
   <xsl:template match="VRPTx:datablock/VRPTx:pdbx_sequence_rangeCategory/VRPTx:pdbx_sequence_range">

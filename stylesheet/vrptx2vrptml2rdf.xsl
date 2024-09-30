@@ -205,6 +205,44 @@
     &lt;dcterms:references rdf:resource="{$idorg}pubmed/{text()}" rdfs:label="pubmed:{text()}"/&gt;
   &lt;/xsl:template&gt;
 
+  &lt;xsl:template match="VRPTx:pdbx_related_exp_data_set/VRPTx:data_reference[text()!='']" mode="linked"&gt;
+    &lt;xsl:variable name="doi_url"&gt;
+      &lt;xsl:value-of select="$doi"/&gt;
+      &lt;xsl:call-template name="replace-string"&gt;
+        &lt;xsl:with-param name="str"&gt;
+          &lt;xsl:call-template name="replace-string"&gt;
+            &lt;xsl:with-param name="str" select="text()"/&gt;
+            &lt;xsl:with-param name="replace"&gt;&amp;lt;&lt;/xsl:with-param&gt;
+            &lt;xsl:with-param name="with"&gt;&amp;amp;lt;&lt;/xsl:with-param&gt;
+          &lt;/xsl:call-template&gt;
+        &lt;/xsl:with-param&gt;
+        &lt;xsl:with-param name="replace"&gt;&amp;gt;&lt;/xsl:with-param&gt;
+        &lt;xsl:with-param name="with"&gt;&amp;amp;gt;&lt;/xsl:with-param&gt;
+      &lt;/xsl:call-template&gt;
+    &lt;/xsl:variable&gt;
+    &lt;VRPTo:link_to_doi rdf:resource="{$doi_url}" rdfs:label="doi:{text()}"/&gt;
+  &lt;/xsl:template&gt;
+
+  &lt;xsl:template match="VRPTx:pdbx_related_exp_data_set/VRPTx:metadata_reference[text()!='']" mode="linked"&gt;
+    &lt;xsl:if test="../VRPTx:data_reference/text()!=text()"&gt;
+    &lt;xsl:variable name="doi_url"&gt;
+      &lt;xsl:value-of select="$doi"/&gt;
+      &lt;xsl:call-template name="replace-string"&gt;
+        &lt;xsl:with-param name="str"&gt;
+          &lt;xsl:call-template name="replace-string"&gt;
+            &lt;xsl:with-param name="str" select="text()"/&gt;
+            &lt;xsl:with-param name="replace"&gt;&amp;lt;&lt;/xsl:with-param&gt;
+            &lt;xsl:with-param name="with"&gt;&amp;amp;lt;&lt;/xsl:with-param&gt;
+          &lt;/xsl:call-template&gt;
+        &lt;/xsl:with-param&gt;
+        &lt;xsl:with-param name="replace"&gt;&amp;gt;&lt;/xsl:with-param&gt;
+        &lt;xsl:with-param name="with"&gt;&amp;amp;gt;&lt;/xsl:with-param&gt;
+      &lt;/xsl:call-template&gt;
+    &lt;/xsl:variable&gt;
+    &lt;VRPTo:link_to_doi rdf:resource="{$doi_url}" rdfs:label="doi:{text()}"/&gt;
+    &lt;/xsl:if&gt;
+  &lt;/xsl:template&gt;
+
   &lt;xsl:template match="VRPTx:entity_src_gen/VRPTx:pdbx_gene_src_ncbi_taxonomy_id[text()!='']" mode="linked"&gt;
     &lt;xsl:variable name="tax_list"&gt;
       &lt;xsl:call-template name="tokenize"&gt;

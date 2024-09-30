@@ -14,16 +14,16 @@
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/cc/05L"/>
             <PDBo:chem_comp.id>05L</PDBo:chem_comp.id>
             <PDBo:chem_comp.formula>C13 H26 O5 Se</PDBo:chem_comp.formula>
-            <PDBo:chem_comp.formula_weight rdf:datatype="xsd:decimal">341.303</PDBo:chem_comp.formula_weight>
+            <PDBo:chem_comp.formula_weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">341.303</PDBo:chem_comp.formula_weight>
             <PDBo:chem_comp.name>heptyl 1-seleno-beta-D-glucopyranoside</PDBo:chem_comp.name>
             <PDBo:chem_comp.pdbx_ambiguous_flag>N</PDBo:chem_comp.pdbx_ambiguous_flag>
-            <PDBo:chem_comp.pdbx_formal_charge rdf:datatype="xsd:int">0</PDBo:chem_comp.pdbx_formal_charge>
+            <PDBo:chem_comp.pdbx_formal_charge rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</PDBo:chem_comp.pdbx_formal_charge>
             <PDBo:chem_comp.pdbx_ideal_coordinates_details>Corina</PDBo:chem_comp.pdbx_ideal_coordinates_details>
             <PDBo:chem_comp.pdbx_ideal_coordinates_missing_flag>N</PDBo:chem_comp.pdbx_ideal_coordinates_missing_flag>
-            <PDBo:chem_comp.pdbx_initial_date rdf:datatype="xsd:date">2011-11-29</PDBo:chem_comp.pdbx_initial_date>
+            <PDBo:chem_comp.pdbx_initial_date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2011-11-29</PDBo:chem_comp.pdbx_initial_date>
             <PDBo:chem_comp.pdbx_model_coordinates_db_code>3USP</PDBo:chem_comp.pdbx_model_coordinates_db_code>
             <PDBo:chem_comp.pdbx_model_coordinates_missing_flag>N</PDBo:chem_comp.pdbx_model_coordinates_missing_flag>
-            <PDBo:chem_comp.pdbx_modified_date rdf:datatype="xsd:date">2020-07-17</PDBo:chem_comp.pdbx_modified_date>
+            <PDBo:chem_comp.pdbx_modified_date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-07-17</PDBo:chem_comp.pdbx_modified_date>
             <PDBo:chem_comp.pdbx_processing_site>RCSB</PDBo:chem_comp.pdbx_processing_site>
             <PDBo:chem_comp.pdbx_release_status>REL</PDBo:chem_comp.pdbx_release_status>
             <PDBo:chem_comp.pdbx_synonyms>heptyl 1-seleno-beta-D-glucoside; heptyl 1-seleno-D-glucoside; heptyl 1-seleno-glucoside</PDBo:chem_comp.pdbx_synonyms>
@@ -47,19 +47,19 @@
             <PDBo:chem_comp_atom.atom_id>SE</PDBo:chem_comp_atom.atom_id>
             <PDBo:chem_comp_atom.comp_id>05L</PDBo:chem_comp_atom.comp_id>
             <PDBo:chem_comp_atom.alt_atom_id>SE</PDBo:chem_comp_atom.alt_atom_id>
-            <PDBo:chem_comp_atom.charge rdf:datatype="xsd:int">0</PDBo:chem_comp_atom.charge>
-            <PDBo:chem_comp_atom.model_Cartn_x rdf:datatype="xsd:decimal">0.086</PDBo:chem_comp_atom.model_Cartn_x>
-            <PDBo:chem_comp_atom.model_Cartn_y rdf:datatype="xsd:decimal">41.003</PDBo:chem_comp_atom.model_Cartn_y>
-            <PDBo:chem_comp_atom.model_Cartn_z rdf:datatype="xsd:decimal">13.775</PDBo:chem_comp_atom.model_Cartn_z>
-            <PDBo:chem_comp_atom.pdbx_align rdf:datatype="xsd:int">1</PDBo:chem_comp_atom.pdbx_align>
+            <PDBo:chem_comp_atom.charge rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</PDBo:chem_comp_atom.charge>
+            <PDBo:chem_comp_atom.model_Cartn_x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.086</PDBo:chem_comp_atom.model_Cartn_x>
+            <PDBo:chem_comp_atom.model_Cartn_y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">41.003</PDBo:chem_comp_atom.model_Cartn_y>
+            <PDBo:chem_comp_atom.model_Cartn_z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">13.775</PDBo:chem_comp_atom.model_Cartn_z>
+            <PDBo:chem_comp_atom.pdbx_align rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:chem_comp_atom.pdbx_align>
             <PDBo:chem_comp_atom.pdbx_aromatic_flag>N</PDBo:chem_comp_atom.pdbx_aromatic_flag>
             <PDBo:chem_comp_atom.pdbx_component_atom_id>SE</PDBo:chem_comp_atom.pdbx_component_atom_id>
             <PDBo:chem_comp_atom.pdbx_component_comp_id>05L</PDBo:chem_comp_atom.pdbx_component_comp_id>
             <PDBo:chem_comp_atom.pdbx_leaving_atom_flag>N</PDBo:chem_comp_atom.pdbx_leaving_atom_flag>
-            <PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal rdf:datatype="xsd:decimal">0.012</PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal>
-            <PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal rdf:datatype="xsd:decimal">-1.350</PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal>
-            <PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal rdf:datatype="xsd:decimal">0.338</PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal>
-            <PDBo:chem_comp_atom.pdbx_ordinal rdf:datatype="xsd:int">1</PDBo:chem_comp_atom.pdbx_ordinal>
+            <PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.012</PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal>
+            <PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1.350</PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal>
+            <PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.338</PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal>
+            <PDBo:chem_comp_atom.pdbx_ordinal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:chem_comp_atom.pdbx_ordinal>
             <PDBo:chem_comp_atom.pdbx_stereo_config>N</PDBo:chem_comp_atom.pdbx_stereo_config>
             <PDBo:chem_comp_atom.type_symbol>SE</PDBo:chem_comp_atom.type_symbol>
           </PDBo:chem_comp_atom>
@@ -75,19 +75,19 @@
             <PDBo:chem_comp_atom.atom_id>C1</PDBo:chem_comp_atom.atom_id>
             <PDBo:chem_comp_atom.comp_id>05L</PDBo:chem_comp_atom.comp_id>
             <PDBo:chem_comp_atom.alt_atom_id>C1</PDBo:chem_comp_atom.alt_atom_id>
-            <PDBo:chem_comp_atom.charge rdf:datatype="xsd:int">0</PDBo:chem_comp_atom.charge>
-            <PDBo:chem_comp_atom.model_Cartn_x rdf:datatype="xsd:decimal">-0.348</PDBo:chem_comp_atom.model_Cartn_x>
-            <PDBo:chem_comp_atom.model_Cartn_y rdf:datatype="xsd:decimal">42.559</PDBo:chem_comp_atom.model_Cartn_y>
-            <PDBo:chem_comp_atom.model_Cartn_z rdf:datatype="xsd:decimal">12.656</PDBo:chem_comp_atom.model_Cartn_z>
-            <PDBo:chem_comp_atom.pdbx_align rdf:datatype="xsd:int">1</PDBo:chem_comp_atom.pdbx_align>
+            <PDBo:chem_comp_atom.charge rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</PDBo:chem_comp_atom.charge>
+            <PDBo:chem_comp_atom.model_Cartn_x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.348</PDBo:chem_comp_atom.model_Cartn_x>
+            <PDBo:chem_comp_atom.model_Cartn_y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">42.559</PDBo:chem_comp_atom.model_Cartn_y>
+            <PDBo:chem_comp_atom.model_Cartn_z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12.656</PDBo:chem_comp_atom.model_Cartn_z>
+            <PDBo:chem_comp_atom.pdbx_align rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:chem_comp_atom.pdbx_align>
             <PDBo:chem_comp_atom.pdbx_aromatic_flag>N</PDBo:chem_comp_atom.pdbx_aromatic_flag>
             <PDBo:chem_comp_atom.pdbx_component_atom_id>C1</PDBo:chem_comp_atom.pdbx_component_atom_id>
             <PDBo:chem_comp_atom.pdbx_component_comp_id>05L</PDBo:chem_comp_atom.pdbx_component_comp_id>
             <PDBo:chem_comp_atom.pdbx_leaving_atom_flag>N</PDBo:chem_comp_atom.pdbx_leaving_atom_flag>
-            <PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal rdf:datatype="xsd:decimal">-1.584</PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal>
-            <PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal rdf:datatype="xsd:decimal">-0.434</PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal>
-            <PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal rdf:datatype="xsd:decimal">-0.339</PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal>
-            <PDBo:chem_comp_atom.pdbx_ordinal rdf:datatype="xsd:int">2</PDBo:chem_comp_atom.pdbx_ordinal>
+            <PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1.584</PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal>
+            <PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.434</PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal>
+            <PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.339</PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal>
+            <PDBo:chem_comp_atom.pdbx_ordinal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</PDBo:chem_comp_atom.pdbx_ordinal>
             <PDBo:chem_comp_atom.pdbx_stereo_config>S</PDBo:chem_comp_atom.pdbx_stereo_config>
             <PDBo:chem_comp_atom.type_symbol>C</PDBo:chem_comp_atom.type_symbol>
           </PDBo:chem_comp_atom>
@@ -103,19 +103,19 @@
             <PDBo:chem_comp_atom.atom_id>C2</PDBo:chem_comp_atom.atom_id>
             <PDBo:chem_comp_atom.comp_id>05L</PDBo:chem_comp_atom.comp_id>
             <PDBo:chem_comp_atom.alt_atom_id>C2</PDBo:chem_comp_atom.alt_atom_id>
-            <PDBo:chem_comp_atom.charge rdf:datatype="xsd:int">0</PDBo:chem_comp_atom.charge>
-            <PDBo:chem_comp_atom.model_Cartn_x rdf:datatype="xsd:decimal">-1.868</PDBo:chem_comp_atom.model_Cartn_x>
-            <PDBo:chem_comp_atom.model_Cartn_y rdf:datatype="xsd:decimal">42.610</PDBo:chem_comp_atom.model_Cartn_y>
-            <PDBo:chem_comp_atom.model_Cartn_z rdf:datatype="xsd:decimal">12.714</PDBo:chem_comp_atom.model_Cartn_z>
-            <PDBo:chem_comp_atom.pdbx_align rdf:datatype="xsd:int">1</PDBo:chem_comp_atom.pdbx_align>
+            <PDBo:chem_comp_atom.charge rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</PDBo:chem_comp_atom.charge>
+            <PDBo:chem_comp_atom.model_Cartn_x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1.868</PDBo:chem_comp_atom.model_Cartn_x>
+            <PDBo:chem_comp_atom.model_Cartn_y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">42.610</PDBo:chem_comp_atom.model_Cartn_y>
+            <PDBo:chem_comp_atom.model_Cartn_z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12.714</PDBo:chem_comp_atom.model_Cartn_z>
+            <PDBo:chem_comp_atom.pdbx_align rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:chem_comp_atom.pdbx_align>
             <PDBo:chem_comp_atom.pdbx_aromatic_flag>N</PDBo:chem_comp_atom.pdbx_aromatic_flag>
             <PDBo:chem_comp_atom.pdbx_component_atom_id>C2</PDBo:chem_comp_atom.pdbx_component_atom_id>
             <PDBo:chem_comp_atom.pdbx_component_comp_id>05L</PDBo:chem_comp_atom.pdbx_component_comp_id>
             <PDBo:chem_comp_atom.pdbx_leaving_atom_flag>N</PDBo:chem_comp_atom.pdbx_leaving_atom_flag>
-            <PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal rdf:datatype="xsd:decimal">-2.831</PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal>
-            <PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal rdf:datatype="xsd:decimal">-1.242</PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal>
-            <PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal rdf:datatype="xsd:decimal">0.029</PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal>
-            <PDBo:chem_comp_atom.pdbx_ordinal rdf:datatype="xsd:int">3</PDBo:chem_comp_atom.pdbx_ordinal>
+            <PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-2.831</PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal>
+            <PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1.242</PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal>
+            <PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.029</PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal>
+            <PDBo:chem_comp_atom.pdbx_ordinal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</PDBo:chem_comp_atom.pdbx_ordinal>
             <PDBo:chem_comp_atom.pdbx_stereo_config>R</PDBo:chem_comp_atom.pdbx_stereo_config>
             <PDBo:chem_comp_atom.type_symbol>C</PDBo:chem_comp_atom.type_symbol>
           </PDBo:chem_comp_atom>
@@ -131,19 +131,19 @@
             <PDBo:chem_comp_atom.atom_id>O2</PDBo:chem_comp_atom.atom_id>
             <PDBo:chem_comp_atom.comp_id>05L</PDBo:chem_comp_atom.comp_id>
             <PDBo:chem_comp_atom.alt_atom_id>O2</PDBo:chem_comp_atom.alt_atom_id>
-            <PDBo:chem_comp_atom.charge rdf:datatype="xsd:int">0</PDBo:chem_comp_atom.charge>
-            <PDBo:chem_comp_atom.model_Cartn_x rdf:datatype="xsd:decimal">-2.365</PDBo:chem_comp_atom.model_Cartn_x>
-            <PDBo:chem_comp_atom.model_Cartn_y rdf:datatype="xsd:decimal">41.640</PDBo:chem_comp_atom.model_Cartn_y>
-            <PDBo:chem_comp_atom.model_Cartn_z rdf:datatype="xsd:decimal">11.806</PDBo:chem_comp_atom.model_Cartn_z>
-            <PDBo:chem_comp_atom.pdbx_align rdf:datatype="xsd:int">1</PDBo:chem_comp_atom.pdbx_align>
+            <PDBo:chem_comp_atom.charge rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</PDBo:chem_comp_atom.charge>
+            <PDBo:chem_comp_atom.model_Cartn_x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-2.365</PDBo:chem_comp_atom.model_Cartn_x>
+            <PDBo:chem_comp_atom.model_Cartn_y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">41.640</PDBo:chem_comp_atom.model_Cartn_y>
+            <PDBo:chem_comp_atom.model_Cartn_z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">11.806</PDBo:chem_comp_atom.model_Cartn_z>
+            <PDBo:chem_comp_atom.pdbx_align rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:chem_comp_atom.pdbx_align>
             <PDBo:chem_comp_atom.pdbx_aromatic_flag>N</PDBo:chem_comp_atom.pdbx_aromatic_flag>
             <PDBo:chem_comp_atom.pdbx_component_atom_id>O2</PDBo:chem_comp_atom.pdbx_component_atom_id>
             <PDBo:chem_comp_atom.pdbx_component_comp_id>05L</PDBo:chem_comp_atom.pdbx_component_comp_id>
             <PDBo:chem_comp_atom.pdbx_leaving_atom_flag>N</PDBo:chem_comp_atom.pdbx_leaving_atom_flag>
-            <PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal rdf:datatype="xsd:decimal">-2.773</PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal>
-            <PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal rdf:datatype="xsd:decimal">-2.523</PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal>
-            <PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal rdf:datatype="xsd:decimal">-0.602</PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal>
-            <PDBo:chem_comp_atom.pdbx_ordinal rdf:datatype="xsd:int">4</PDBo:chem_comp_atom.pdbx_ordinal>
+            <PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-2.773</PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal>
+            <PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-2.523</PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal>
+            <PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.602</PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal>
+            <PDBo:chem_comp_atom.pdbx_ordinal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</PDBo:chem_comp_atom.pdbx_ordinal>
             <PDBo:chem_comp_atom.pdbx_stereo_config>N</PDBo:chem_comp_atom.pdbx_stereo_config>
             <PDBo:chem_comp_atom.type_symbol>O</PDBo:chem_comp_atom.type_symbol>
           </PDBo:chem_comp_atom>
@@ -159,19 +159,19 @@
             <PDBo:chem_comp_atom.atom_id>C3</PDBo:chem_comp_atom.atom_id>
             <PDBo:chem_comp_atom.comp_id>05L</PDBo:chem_comp_atom.comp_id>
             <PDBo:chem_comp_atom.alt_atom_id>C3</PDBo:chem_comp_atom.alt_atom_id>
-            <PDBo:chem_comp_atom.charge rdf:datatype="xsd:int">0</PDBo:chem_comp_atom.charge>
-            <PDBo:chem_comp_atom.model_Cartn_x rdf:datatype="xsd:decimal">-2.322</PDBo:chem_comp_atom.model_Cartn_x>
-            <PDBo:chem_comp_atom.model_Cartn_y rdf:datatype="xsd:decimal">43.990</PDBo:chem_comp_atom.model_Cartn_y>
-            <PDBo:chem_comp_atom.model_Cartn_z rdf:datatype="xsd:decimal">12.217</PDBo:chem_comp_atom.model_Cartn_z>
-            <PDBo:chem_comp_atom.pdbx_align rdf:datatype="xsd:int">1</PDBo:chem_comp_atom.pdbx_align>
+            <PDBo:chem_comp_atom.charge rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</PDBo:chem_comp_atom.charge>
+            <PDBo:chem_comp_atom.model_Cartn_x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-2.322</PDBo:chem_comp_atom.model_Cartn_x>
+            <PDBo:chem_comp_atom.model_Cartn_y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">43.990</PDBo:chem_comp_atom.model_Cartn_y>
+            <PDBo:chem_comp_atom.model_Cartn_z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12.217</PDBo:chem_comp_atom.model_Cartn_z>
+            <PDBo:chem_comp_atom.pdbx_align rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:chem_comp_atom.pdbx_align>
             <PDBo:chem_comp_atom.pdbx_aromatic_flag>N</PDBo:chem_comp_atom.pdbx_aromatic_flag>
             <PDBo:chem_comp_atom.pdbx_component_atom_id>C3</PDBo:chem_comp_atom.pdbx_component_atom_id>
             <PDBo:chem_comp_atom.pdbx_component_comp_id>05L</PDBo:chem_comp_atom.pdbx_component_comp_id>
             <PDBo:chem_comp_atom.pdbx_leaving_atom_flag>N</PDBo:chem_comp_atom.pdbx_leaving_atom_flag>
-            <PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal rdf:datatype="xsd:decimal">-4.076</PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal>
-            <PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal rdf:datatype="xsd:decimal">-0.491</PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal>
-            <PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal rdf:datatype="xsd:decimal">-0.451</PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal>
-            <PDBo:chem_comp_atom.pdbx_ordinal rdf:datatype="xsd:int">5</PDBo:chem_comp_atom.pdbx_ordinal>
+            <PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-4.076</PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal>
+            <PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.491</PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal>
+            <PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.451</PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal>
+            <PDBo:chem_comp_atom.pdbx_ordinal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">5</PDBo:chem_comp_atom.pdbx_ordinal>
             <PDBo:chem_comp_atom.pdbx_stereo_config>S</PDBo:chem_comp_atom.pdbx_stereo_config>
             <PDBo:chem_comp_atom.type_symbol>C</PDBo:chem_comp_atom.type_symbol>
           </PDBo:chem_comp_atom>
@@ -187,19 +187,19 @@
             <PDBo:chem_comp_atom.atom_id>O3</PDBo:chem_comp_atom.atom_id>
             <PDBo:chem_comp_atom.comp_id>05L</PDBo:chem_comp_atom.comp_id>
             <PDBo:chem_comp_atom.alt_atom_id>O3</PDBo:chem_comp_atom.alt_atom_id>
-            <PDBo:chem_comp_atom.charge rdf:datatype="xsd:int">0</PDBo:chem_comp_atom.charge>
-            <PDBo:chem_comp_atom.model_Cartn_x rdf:datatype="xsd:decimal">-3.719</PDBo:chem_comp_atom.model_Cartn_x>
-            <PDBo:chem_comp_atom.model_Cartn_y rdf:datatype="xsd:decimal">44.125</PDBo:chem_comp_atom.model_Cartn_y>
-            <PDBo:chem_comp_atom.model_Cartn_z rdf:datatype="xsd:decimal">12.370</PDBo:chem_comp_atom.model_Cartn_z>
-            <PDBo:chem_comp_atom.pdbx_align rdf:datatype="xsd:int">1</PDBo:chem_comp_atom.pdbx_align>
+            <PDBo:chem_comp_atom.charge rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</PDBo:chem_comp_atom.charge>
+            <PDBo:chem_comp_atom.model_Cartn_x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-3.719</PDBo:chem_comp_atom.model_Cartn_x>
+            <PDBo:chem_comp_atom.model_Cartn_y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">44.125</PDBo:chem_comp_atom.model_Cartn_y>
+            <PDBo:chem_comp_atom.model_Cartn_z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12.370</PDBo:chem_comp_atom.model_Cartn_z>
+            <PDBo:chem_comp_atom.pdbx_align rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:chem_comp_atom.pdbx_align>
             <PDBo:chem_comp_atom.pdbx_aromatic_flag>N</PDBo:chem_comp_atom.pdbx_aromatic_flag>
             <PDBo:chem_comp_atom.pdbx_component_atom_id>O3</PDBo:chem_comp_atom.pdbx_component_atom_id>
             <PDBo:chem_comp_atom.pdbx_component_comp_id>05L</PDBo:chem_comp_atom.pdbx_component_comp_id>
             <PDBo:chem_comp_atom.pdbx_leaving_atom_flag>N</PDBo:chem_comp_atom.pdbx_leaving_atom_flag>
-            <PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal rdf:datatype="xsd:decimal">-5.248</PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal>
-            <PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal rdf:datatype="xsd:decimal">-1.202</PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal>
-            <PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal rdf:datatype="xsd:decimal">-0.047</PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal>
-            <PDBo:chem_comp_atom.pdbx_ordinal rdf:datatype="xsd:int">6</PDBo:chem_comp_atom.pdbx_ordinal>
+            <PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-5.248</PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal>
+            <PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1.202</PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal>
+            <PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.047</PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal>
+            <PDBo:chem_comp_atom.pdbx_ordinal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">6</PDBo:chem_comp_atom.pdbx_ordinal>
             <PDBo:chem_comp_atom.pdbx_stereo_config>N</PDBo:chem_comp_atom.pdbx_stereo_config>
             <PDBo:chem_comp_atom.type_symbol>O</PDBo:chem_comp_atom.type_symbol>
           </PDBo:chem_comp_atom>
@@ -215,19 +215,19 @@
             <PDBo:chem_comp_atom.atom_id>C4</PDBo:chem_comp_atom.atom_id>
             <PDBo:chem_comp_atom.comp_id>05L</PDBo:chem_comp_atom.comp_id>
             <PDBo:chem_comp_atom.alt_atom_id>C4</PDBo:chem_comp_atom.alt_atom_id>
-            <PDBo:chem_comp_atom.charge rdf:datatype="xsd:int">0</PDBo:chem_comp_atom.charge>
-            <PDBo:chem_comp_atom.model_Cartn_x rdf:datatype="xsd:decimal">-1.618</PDBo:chem_comp_atom.model_Cartn_x>
-            <PDBo:chem_comp_atom.model_Cartn_y rdf:datatype="xsd:decimal">45.032</PDBo:chem_comp_atom.model_Cartn_y>
-            <PDBo:chem_comp_atom.model_Cartn_z rdf:datatype="xsd:decimal">13.102</PDBo:chem_comp_atom.model_Cartn_z>
-            <PDBo:chem_comp_atom.pdbx_align rdf:datatype="xsd:int">1</PDBo:chem_comp_atom.pdbx_align>
+            <PDBo:chem_comp_atom.charge rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</PDBo:chem_comp_atom.charge>
+            <PDBo:chem_comp_atom.model_Cartn_x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1.618</PDBo:chem_comp_atom.model_Cartn_x>
+            <PDBo:chem_comp_atom.model_Cartn_y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">45.032</PDBo:chem_comp_atom.model_Cartn_y>
+            <PDBo:chem_comp_atom.model_Cartn_z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">13.102</PDBo:chem_comp_atom.model_Cartn_z>
+            <PDBo:chem_comp_atom.pdbx_align rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:chem_comp_atom.pdbx_align>
             <PDBo:chem_comp_atom.pdbx_aromatic_flag>N</PDBo:chem_comp_atom.pdbx_aromatic_flag>
             <PDBo:chem_comp_atom.pdbx_component_atom_id>C4</PDBo:chem_comp_atom.pdbx_component_atom_id>
             <PDBo:chem_comp_atom.pdbx_component_comp_id>05L</PDBo:chem_comp_atom.pdbx_component_comp_id>
             <PDBo:chem_comp_atom.pdbx_leaving_atom_flag>N</PDBo:chem_comp_atom.pdbx_leaving_atom_flag>
-            <PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal rdf:datatype="xsd:decimal">-4.086</PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal>
-            <PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal rdf:datatype="xsd:decimal">0.909</PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal>
-            <PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal rdf:datatype="xsd:decimal">0.173</PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal>
-            <PDBo:chem_comp_atom.pdbx_ordinal rdf:datatype="xsd:int">7</PDBo:chem_comp_atom.pdbx_ordinal>
+            <PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-4.086</PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal>
+            <PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.909</PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal>
+            <PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.173</PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal>
+            <PDBo:chem_comp_atom.pdbx_ordinal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">7</PDBo:chem_comp_atom.pdbx_ordinal>
             <PDBo:chem_comp_atom.pdbx_stereo_config>S</PDBo:chem_comp_atom.pdbx_stereo_config>
             <PDBo:chem_comp_atom.type_symbol>C</PDBo:chem_comp_atom.type_symbol>
           </PDBo:chem_comp_atom>
@@ -243,19 +243,19 @@
             <PDBo:chem_comp_atom.atom_id>O4</PDBo:chem_comp_atom.atom_id>
             <PDBo:chem_comp_atom.comp_id>05L</PDBo:chem_comp_atom.comp_id>
             <PDBo:chem_comp_atom.alt_atom_id>O4</PDBo:chem_comp_atom.alt_atom_id>
-            <PDBo:chem_comp_atom.charge rdf:datatype="xsd:int">0</PDBo:chem_comp_atom.charge>
-            <PDBo:chem_comp_atom.model_Cartn_x rdf:datatype="xsd:decimal">-2.098</PDBo:chem_comp_atom.model_Cartn_x>
-            <PDBo:chem_comp_atom.model_Cartn_y rdf:datatype="xsd:decimal">46.328</PDBo:chem_comp_atom.model_Cartn_y>
-            <PDBo:chem_comp_atom.model_Cartn_z rdf:datatype="xsd:decimal">12.809</PDBo:chem_comp_atom.model_Cartn_z>
-            <PDBo:chem_comp_atom.pdbx_align rdf:datatype="xsd:int">1</PDBo:chem_comp_atom.pdbx_align>
+            <PDBo:chem_comp_atom.charge rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</PDBo:chem_comp_atom.charge>
+            <PDBo:chem_comp_atom.model_Cartn_x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-2.098</PDBo:chem_comp_atom.model_Cartn_x>
+            <PDBo:chem_comp_atom.model_Cartn_y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">46.328</PDBo:chem_comp_atom.model_Cartn_y>
+            <PDBo:chem_comp_atom.model_Cartn_z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12.809</PDBo:chem_comp_atom.model_Cartn_z>
+            <PDBo:chem_comp_atom.pdbx_align rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:chem_comp_atom.pdbx_align>
             <PDBo:chem_comp_atom.pdbx_aromatic_flag>N</PDBo:chem_comp_atom.pdbx_aromatic_flag>
             <PDBo:chem_comp_atom.pdbx_component_atom_id>O4</PDBo:chem_comp_atom.pdbx_component_atom_id>
             <PDBo:chem_comp_atom.pdbx_component_comp_id>05L</PDBo:chem_comp_atom.pdbx_component_comp_id>
             <PDBo:chem_comp_atom.pdbx_leaving_atom_flag>N</PDBo:chem_comp_atom.pdbx_leaving_atom_flag>
-            <PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal rdf:datatype="xsd:decimal">-5.206</PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal>
-            <PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal rdf:datatype="xsd:decimal">1.645</PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal>
-            <PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal rdf:datatype="xsd:decimal">-0.323</PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal>
-            <PDBo:chem_comp_atom.pdbx_ordinal rdf:datatype="xsd:int">8</PDBo:chem_comp_atom.pdbx_ordinal>
+            <PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-5.206</PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal>
+            <PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.645</PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal>
+            <PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.323</PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal>
+            <PDBo:chem_comp_atom.pdbx_ordinal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">8</PDBo:chem_comp_atom.pdbx_ordinal>
             <PDBo:chem_comp_atom.pdbx_stereo_config>N</PDBo:chem_comp_atom.pdbx_stereo_config>
             <PDBo:chem_comp_atom.type_symbol>O</PDBo:chem_comp_atom.type_symbol>
           </PDBo:chem_comp_atom>
@@ -271,19 +271,19 @@
             <PDBo:chem_comp_atom.atom_id>C5</PDBo:chem_comp_atom.atom_id>
             <PDBo:chem_comp_atom.comp_id>05L</PDBo:chem_comp_atom.comp_id>
             <PDBo:chem_comp_atom.alt_atom_id>C5</PDBo:chem_comp_atom.alt_atom_id>
-            <PDBo:chem_comp_atom.charge rdf:datatype="xsd:int">0</PDBo:chem_comp_atom.charge>
-            <PDBo:chem_comp_atom.model_Cartn_x rdf:datatype="xsd:decimal">-0.114</PDBo:chem_comp_atom.model_Cartn_x>
-            <PDBo:chem_comp_atom.model_Cartn_y rdf:datatype="xsd:decimal">44.937</PDBo:chem_comp_atom.model_Cartn_y>
-            <PDBo:chem_comp_atom.model_Cartn_z rdf:datatype="xsd:decimal">12.800</PDBo:chem_comp_atom.model_Cartn_z>
-            <PDBo:chem_comp_atom.pdbx_align rdf:datatype="xsd:int">1</PDBo:chem_comp_atom.pdbx_align>
+            <PDBo:chem_comp_atom.charge rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</PDBo:chem_comp_atom.charge>
+            <PDBo:chem_comp_atom.model_Cartn_x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.114</PDBo:chem_comp_atom.model_Cartn_x>
+            <PDBo:chem_comp_atom.model_Cartn_y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">44.937</PDBo:chem_comp_atom.model_Cartn_y>
+            <PDBo:chem_comp_atom.model_Cartn_z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12.800</PDBo:chem_comp_atom.model_Cartn_z>
+            <PDBo:chem_comp_atom.pdbx_align rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:chem_comp_atom.pdbx_align>
             <PDBo:chem_comp_atom.pdbx_aromatic_flag>N</PDBo:chem_comp_atom.pdbx_aromatic_flag>
             <PDBo:chem_comp_atom.pdbx_component_atom_id>C5</PDBo:chem_comp_atom.pdbx_component_atom_id>
             <PDBo:chem_comp_atom.pdbx_component_comp_id>05L</PDBo:chem_comp_atom.pdbx_component_comp_id>
             <PDBo:chem_comp_atom.pdbx_leaving_atom_flag>N</PDBo:chem_comp_atom.pdbx_leaving_atom_flag>
-            <PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal rdf:datatype="xsd:decimal">-2.790</PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal>
-            <PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal rdf:datatype="xsd:decimal">1.634</PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal>
-            <PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal rdf:datatype="xsd:decimal">-0.200</PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal>
-            <PDBo:chem_comp_atom.pdbx_ordinal rdf:datatype="xsd:int">9</PDBo:chem_comp_atom.pdbx_ordinal>
+            <PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-2.790</PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal>
+            <PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.634</PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal>
+            <PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.200</PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal>
+            <PDBo:chem_comp_atom.pdbx_ordinal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">9</PDBo:chem_comp_atom.pdbx_ordinal>
             <PDBo:chem_comp_atom.pdbx_stereo_config>R</PDBo:chem_comp_atom.pdbx_stereo_config>
             <PDBo:chem_comp_atom.type_symbol>C</PDBo:chem_comp_atom.type_symbol>
           </PDBo:chem_comp_atom>
@@ -299,19 +299,19 @@
             <PDBo:chem_comp_atom.atom_id>O5</PDBo:chem_comp_atom.atom_id>
             <PDBo:chem_comp_atom.comp_id>05L</PDBo:chem_comp_atom.comp_id>
             <PDBo:chem_comp_atom.alt_atom_id>O5</PDBo:chem_comp_atom.alt_atom_id>
-            <PDBo:chem_comp_atom.charge rdf:datatype="xsd:int">0</PDBo:chem_comp_atom.charge>
-            <PDBo:chem_comp_atom.model_Cartn_x rdf:datatype="xsd:decimal">0.351</PDBo:chem_comp_atom.model_Cartn_x>
-            <PDBo:chem_comp_atom.model_Cartn_y rdf:datatype="xsd:decimal">43.644</PDBo:chem_comp_atom.model_Cartn_y>
-            <PDBo:chem_comp_atom.model_Cartn_z rdf:datatype="xsd:decimal">13.220</PDBo:chem_comp_atom.model_Cartn_z>
-            <PDBo:chem_comp_atom.pdbx_align rdf:datatype="xsd:int">1</PDBo:chem_comp_atom.pdbx_align>
+            <PDBo:chem_comp_atom.charge rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</PDBo:chem_comp_atom.charge>
+            <PDBo:chem_comp_atom.model_Cartn_x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.351</PDBo:chem_comp_atom.model_Cartn_x>
+            <PDBo:chem_comp_atom.model_Cartn_y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">43.644</PDBo:chem_comp_atom.model_Cartn_y>
+            <PDBo:chem_comp_atom.model_Cartn_z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">13.220</PDBo:chem_comp_atom.model_Cartn_z>
+            <PDBo:chem_comp_atom.pdbx_align rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:chem_comp_atom.pdbx_align>
             <PDBo:chem_comp_atom.pdbx_aromatic_flag>N</PDBo:chem_comp_atom.pdbx_aromatic_flag>
             <PDBo:chem_comp_atom.pdbx_component_atom_id>O5</PDBo:chem_comp_atom.pdbx_component_atom_id>
             <PDBo:chem_comp_atom.pdbx_component_comp_id>05L</PDBo:chem_comp_atom.pdbx_component_comp_id>
             <PDBo:chem_comp_atom.pdbx_leaving_atom_flag>N</PDBo:chem_comp_atom.pdbx_leaving_atom_flag>
-            <PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal rdf:datatype="xsd:decimal">-1.671</PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal>
-            <PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal rdf:datatype="xsd:decimal">0.867</PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal>
-            <PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal rdf:datatype="xsd:decimal">0.247</PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal>
-            <PDBo:chem_comp_atom.pdbx_ordinal rdf:datatype="xsd:int">10</PDBo:chem_comp_atom.pdbx_ordinal>
+            <PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1.671</PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal>
+            <PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.867</PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal>
+            <PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.247</PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal>
+            <PDBo:chem_comp_atom.pdbx_ordinal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">10</PDBo:chem_comp_atom.pdbx_ordinal>
             <PDBo:chem_comp_atom.pdbx_stereo_config>N</PDBo:chem_comp_atom.pdbx_stereo_config>
             <PDBo:chem_comp_atom.type_symbol>O</PDBo:chem_comp_atom.type_symbol>
           </PDBo:chem_comp_atom>
@@ -327,19 +327,19 @@
             <PDBo:chem_comp_atom.atom_id>C6</PDBo:chem_comp_atom.atom_id>
             <PDBo:chem_comp_atom.comp_id>05L</PDBo:chem_comp_atom.comp_id>
             <PDBo:chem_comp_atom.alt_atom_id>C6</PDBo:chem_comp_atom.alt_atom_id>
-            <PDBo:chem_comp_atom.charge rdf:datatype="xsd:int">0</PDBo:chem_comp_atom.charge>
-            <PDBo:chem_comp_atom.model_Cartn_x rdf:datatype="xsd:decimal">0.686</PDBo:chem_comp_atom.model_Cartn_x>
-            <PDBo:chem_comp_atom.model_Cartn_y rdf:datatype="xsd:decimal">45.973</PDBo:chem_comp_atom.model_Cartn_y>
-            <PDBo:chem_comp_atom.model_Cartn_z rdf:datatype="xsd:decimal">13.585</PDBo:chem_comp_atom.model_Cartn_z>
-            <PDBo:chem_comp_atom.pdbx_align rdf:datatype="xsd:int">1</PDBo:chem_comp_atom.pdbx_align>
+            <PDBo:chem_comp_atom.charge rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</PDBo:chem_comp_atom.charge>
+            <PDBo:chem_comp_atom.model_Cartn_x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.686</PDBo:chem_comp_atom.model_Cartn_x>
+            <PDBo:chem_comp_atom.model_Cartn_y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">45.973</PDBo:chem_comp_atom.model_Cartn_y>
+            <PDBo:chem_comp_atom.model_Cartn_z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">13.585</PDBo:chem_comp_atom.model_Cartn_z>
+            <PDBo:chem_comp_atom.pdbx_align rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:chem_comp_atom.pdbx_align>
             <PDBo:chem_comp_atom.pdbx_aromatic_flag>N</PDBo:chem_comp_atom.pdbx_aromatic_flag>
             <PDBo:chem_comp_atom.pdbx_component_atom_id>C6</PDBo:chem_comp_atom.pdbx_component_atom_id>
             <PDBo:chem_comp_atom.pdbx_component_comp_id>05L</PDBo:chem_comp_atom.pdbx_component_comp_id>
             <PDBo:chem_comp_atom.pdbx_leaving_atom_flag>N</PDBo:chem_comp_atom.pdbx_leaving_atom_flag>
-            <PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal rdf:datatype="xsd:decimal">-2.765</PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal>
-            <PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal rdf:datatype="xsd:decimal">3.010</PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal>
-            <PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal rdf:datatype="xsd:decimal">0.468</PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal>
-            <PDBo:chem_comp_atom.pdbx_ordinal rdf:datatype="xsd:int">11</PDBo:chem_comp_atom.pdbx_ordinal>
+            <PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-2.765</PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal>
+            <PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.010</PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal>
+            <PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.468</PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal>
+            <PDBo:chem_comp_atom.pdbx_ordinal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">11</PDBo:chem_comp_atom.pdbx_ordinal>
             <PDBo:chem_comp_atom.pdbx_stereo_config>N</PDBo:chem_comp_atom.pdbx_stereo_config>
             <PDBo:chem_comp_atom.type_symbol>C</PDBo:chem_comp_atom.type_symbol>
           </PDBo:chem_comp_atom>
@@ -355,19 +355,19 @@
             <PDBo:chem_comp_atom.atom_id>O6</PDBo:chem_comp_atom.atom_id>
             <PDBo:chem_comp_atom.comp_id>05L</PDBo:chem_comp_atom.comp_id>
             <PDBo:chem_comp_atom.alt_atom_id>O6</PDBo:chem_comp_atom.alt_atom_id>
-            <PDBo:chem_comp_atom.charge rdf:datatype="xsd:int">0</PDBo:chem_comp_atom.charge>
-            <PDBo:chem_comp_atom.model_Cartn_x rdf:datatype="xsd:decimal">0.487</PDBo:chem_comp_atom.model_Cartn_x>
-            <PDBo:chem_comp_atom.model_Cartn_y rdf:datatype="xsd:decimal">45.723</PDBo:chem_comp_atom.model_Cartn_y>
-            <PDBo:chem_comp_atom.model_Cartn_z rdf:datatype="xsd:decimal">14.964</PDBo:chem_comp_atom.model_Cartn_z>
-            <PDBo:chem_comp_atom.pdbx_align rdf:datatype="xsd:int">1</PDBo:chem_comp_atom.pdbx_align>
+            <PDBo:chem_comp_atom.charge rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</PDBo:chem_comp_atom.charge>
+            <PDBo:chem_comp_atom.model_Cartn_x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.487</PDBo:chem_comp_atom.model_Cartn_x>
+            <PDBo:chem_comp_atom.model_Cartn_y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">45.723</PDBo:chem_comp_atom.model_Cartn_y>
+            <PDBo:chem_comp_atom.model_Cartn_z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">14.964</PDBo:chem_comp_atom.model_Cartn_z>
+            <PDBo:chem_comp_atom.pdbx_align rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:chem_comp_atom.pdbx_align>
             <PDBo:chem_comp_atom.pdbx_aromatic_flag>N</PDBo:chem_comp_atom.pdbx_aromatic_flag>
             <PDBo:chem_comp_atom.pdbx_component_atom_id>O6</PDBo:chem_comp_atom.pdbx_component_atom_id>
             <PDBo:chem_comp_atom.pdbx_component_comp_id>05L</PDBo:chem_comp_atom.pdbx_component_comp_id>
             <PDBo:chem_comp_atom.pdbx_leaving_atom_flag>N</PDBo:chem_comp_atom.pdbx_leaving_atom_flag>
-            <PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal rdf:datatype="xsd:decimal">-1.614</PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal>
-            <PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal rdf:datatype="xsd:decimal">3.733</PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal>
-            <PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal rdf:datatype="xsd:decimal">0.027</PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal>
-            <PDBo:chem_comp_atom.pdbx_ordinal rdf:datatype="xsd:int">12</PDBo:chem_comp_atom.pdbx_ordinal>
+            <PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1.614</PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal>
+            <PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.733</PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal>
+            <PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.027</PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal>
+            <PDBo:chem_comp_atom.pdbx_ordinal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">12</PDBo:chem_comp_atom.pdbx_ordinal>
             <PDBo:chem_comp_atom.pdbx_stereo_config>N</PDBo:chem_comp_atom.pdbx_stereo_config>
             <PDBo:chem_comp_atom.type_symbol>O</PDBo:chem_comp_atom.type_symbol>
           </PDBo:chem_comp_atom>
@@ -383,19 +383,19 @@
             <PDBo:chem_comp_atom.atom_id>C1'</PDBo:chem_comp_atom.atom_id>
             <PDBo:chem_comp_atom.comp_id>05L</PDBo:chem_comp_atom.comp_id>
             <PDBo:chem_comp_atom.alt_atom_id>C1'</PDBo:chem_comp_atom.alt_atom_id>
-            <PDBo:chem_comp_atom.charge rdf:datatype="xsd:int">0</PDBo:chem_comp_atom.charge>
-            <PDBo:chem_comp_atom.model_Cartn_x rdf:datatype="xsd:decimal">1.535</PDBo:chem_comp_atom.model_Cartn_x>
-            <PDBo:chem_comp_atom.model_Cartn_y rdf:datatype="xsd:decimal">40.215</PDBo:chem_comp_atom.model_Cartn_y>
-            <PDBo:chem_comp_atom.model_Cartn_z rdf:datatype="xsd:decimal">12.722</PDBo:chem_comp_atom.model_Cartn_z>
-            <PDBo:chem_comp_atom.pdbx_align rdf:datatype="xsd:int">1</PDBo:chem_comp_atom.pdbx_align>
+            <PDBo:chem_comp_atom.charge rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</PDBo:chem_comp_atom.charge>
+            <PDBo:chem_comp_atom.model_Cartn_x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.535</PDBo:chem_comp_atom.model_Cartn_x>
+            <PDBo:chem_comp_atom.model_Cartn_y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">40.215</PDBo:chem_comp_atom.model_Cartn_y>
+            <PDBo:chem_comp_atom.model_Cartn_z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12.722</PDBo:chem_comp_atom.model_Cartn_z>
+            <PDBo:chem_comp_atom.pdbx_align rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:chem_comp_atom.pdbx_align>
             <PDBo:chem_comp_atom.pdbx_aromatic_flag>N</PDBo:chem_comp_atom.pdbx_aromatic_flag>
             <PDBo:chem_comp_atom.pdbx_component_atom_id>C1'</PDBo:chem_comp_atom.pdbx_component_atom_id>
             <PDBo:chem_comp_atom.pdbx_component_comp_id>05L</PDBo:chem_comp_atom.pdbx_component_comp_id>
             <PDBo:chem_comp_atom.pdbx_leaving_atom_flag>N</PDBo:chem_comp_atom.pdbx_leaving_atom_flag>
-            <PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal rdf:datatype="xsd:decimal">1.425</PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal>
-            <PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal rdf:datatype="xsd:decimal">-0.129</PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal>
-            <PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal rdf:datatype="xsd:decimal">-0.258</PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal>
-            <PDBo:chem_comp_atom.pdbx_ordinal rdf:datatype="xsd:int">13</PDBo:chem_comp_atom.pdbx_ordinal>
+            <PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.425</PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal>
+            <PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.129</PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal>
+            <PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.258</PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal>
+            <PDBo:chem_comp_atom.pdbx_ordinal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">13</PDBo:chem_comp_atom.pdbx_ordinal>
             <PDBo:chem_comp_atom.pdbx_stereo_config>N</PDBo:chem_comp_atom.pdbx_stereo_config>
             <PDBo:chem_comp_atom.type_symbol>C</PDBo:chem_comp_atom.type_symbol>
           </PDBo:chem_comp_atom>
@@ -411,19 +411,19 @@
             <PDBo:chem_comp_atom.atom_id>C2'</PDBo:chem_comp_atom.atom_id>
             <PDBo:chem_comp_atom.comp_id>05L</PDBo:chem_comp_atom.comp_id>
             <PDBo:chem_comp_atom.alt_atom_id>C2'</PDBo:chem_comp_atom.alt_atom_id>
-            <PDBo:chem_comp_atom.charge rdf:datatype="xsd:int">0</PDBo:chem_comp_atom.charge>
-            <PDBo:chem_comp_atom.model_Cartn_x rdf:datatype="xsd:decimal">2.605</PDBo:chem_comp_atom.model_Cartn_x>
-            <PDBo:chem_comp_atom.model_Cartn_y rdf:datatype="xsd:decimal">39.963</PDBo:chem_comp_atom.model_Cartn_y>
-            <PDBo:chem_comp_atom.model_Cartn_z rdf:datatype="xsd:decimal">13.733</PDBo:chem_comp_atom.model_Cartn_z>
-            <PDBo:chem_comp_atom.pdbx_align rdf:datatype="xsd:int">1</PDBo:chem_comp_atom.pdbx_align>
+            <PDBo:chem_comp_atom.charge rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</PDBo:chem_comp_atom.charge>
+            <PDBo:chem_comp_atom.model_Cartn_x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.605</PDBo:chem_comp_atom.model_Cartn_x>
+            <PDBo:chem_comp_atom.model_Cartn_y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">39.963</PDBo:chem_comp_atom.model_Cartn_y>
+            <PDBo:chem_comp_atom.model_Cartn_z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">13.733</PDBo:chem_comp_atom.model_Cartn_z>
+            <PDBo:chem_comp_atom.pdbx_align rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:chem_comp_atom.pdbx_align>
             <PDBo:chem_comp_atom.pdbx_aromatic_flag>N</PDBo:chem_comp_atom.pdbx_aromatic_flag>
             <PDBo:chem_comp_atom.pdbx_component_atom_id>C2'</PDBo:chem_comp_atom.pdbx_component_atom_id>
             <PDBo:chem_comp_atom.pdbx_component_comp_id>05L</PDBo:chem_comp_atom.pdbx_component_comp_id>
             <PDBo:chem_comp_atom.pdbx_leaving_atom_flag>N</PDBo:chem_comp_atom.pdbx_leaving_atom_flag>
-            <PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal rdf:datatype="xsd:decimal">2.786</PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal>
-            <PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal rdf:datatype="xsd:decimal">-0.673</PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal>
-            <PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal rdf:datatype="xsd:decimal">0.180</PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal>
-            <PDBo:chem_comp_atom.pdbx_ordinal rdf:datatype="xsd:int">14</PDBo:chem_comp_atom.pdbx_ordinal>
+            <PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.786</PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal>
+            <PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.673</PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal>
+            <PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.180</PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal>
+            <PDBo:chem_comp_atom.pdbx_ordinal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">14</PDBo:chem_comp_atom.pdbx_ordinal>
             <PDBo:chem_comp_atom.pdbx_stereo_config>N</PDBo:chem_comp_atom.pdbx_stereo_config>
             <PDBo:chem_comp_atom.type_symbol>C</PDBo:chem_comp_atom.type_symbol>
           </PDBo:chem_comp_atom>
@@ -439,19 +439,19 @@
             <PDBo:chem_comp_atom.atom_id>C3'</PDBo:chem_comp_atom.atom_id>
             <PDBo:chem_comp_atom.comp_id>05L</PDBo:chem_comp_atom.comp_id>
             <PDBo:chem_comp_atom.alt_atom_id>C3'</PDBo:chem_comp_atom.alt_atom_id>
-            <PDBo:chem_comp_atom.charge rdf:datatype="xsd:int">0</PDBo:chem_comp_atom.charge>
-            <PDBo:chem_comp_atom.model_Cartn_x rdf:datatype="xsd:decimal">2.729</PDBo:chem_comp_atom.model_Cartn_x>
-            <PDBo:chem_comp_atom.model_Cartn_y rdf:datatype="xsd:decimal">38.475</PDBo:chem_comp_atom.model_Cartn_y>
-            <PDBo:chem_comp_atom.model_Cartn_z rdf:datatype="xsd:decimal">13.935</PDBo:chem_comp_atom.model_Cartn_z>
-            <PDBo:chem_comp_atom.pdbx_align rdf:datatype="xsd:int">1</PDBo:chem_comp_atom.pdbx_align>
+            <PDBo:chem_comp_atom.charge rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</PDBo:chem_comp_atom.charge>
+            <PDBo:chem_comp_atom.model_Cartn_x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.729</PDBo:chem_comp_atom.model_Cartn_x>
+            <PDBo:chem_comp_atom.model_Cartn_y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">38.475</PDBo:chem_comp_atom.model_Cartn_y>
+            <PDBo:chem_comp_atom.model_Cartn_z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">13.935</PDBo:chem_comp_atom.model_Cartn_z>
+            <PDBo:chem_comp_atom.pdbx_align rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:chem_comp_atom.pdbx_align>
             <PDBo:chem_comp_atom.pdbx_aromatic_flag>N</PDBo:chem_comp_atom.pdbx_aromatic_flag>
             <PDBo:chem_comp_atom.pdbx_component_atom_id>C3'</PDBo:chem_comp_atom.pdbx_component_atom_id>
             <PDBo:chem_comp_atom.pdbx_component_comp_id>05L</PDBo:chem_comp_atom.pdbx_component_comp_id>
             <PDBo:chem_comp_atom.pdbx_leaving_atom_flag>N</PDBo:chem_comp_atom.pdbx_leaving_atom_flag>
-            <PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal rdf:datatype="xsd:decimal">3.889</PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal>
-            <PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal rdf:datatype="xsd:decimal">0.280</PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal>
-            <PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal rdf:datatype="xsd:decimal">-0.285</PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal>
-            <PDBo:chem_comp_atom.pdbx_ordinal rdf:datatype="xsd:int">15</PDBo:chem_comp_atom.pdbx_ordinal>
+            <PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.889</PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal>
+            <PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.280</PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal>
+            <PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.285</PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal>
+            <PDBo:chem_comp_atom.pdbx_ordinal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">15</PDBo:chem_comp_atom.pdbx_ordinal>
             <PDBo:chem_comp_atom.pdbx_stereo_config>N</PDBo:chem_comp_atom.pdbx_stereo_config>
             <PDBo:chem_comp_atom.type_symbol>C</PDBo:chem_comp_atom.type_symbol>
           </PDBo:chem_comp_atom>
@@ -467,19 +467,19 @@
             <PDBo:chem_comp_atom.atom_id>C4'</PDBo:chem_comp_atom.atom_id>
             <PDBo:chem_comp_atom.comp_id>05L</PDBo:chem_comp_atom.comp_id>
             <PDBo:chem_comp_atom.alt_atom_id>C4'</PDBo:chem_comp_atom.alt_atom_id>
-            <PDBo:chem_comp_atom.charge rdf:datatype="xsd:int">0</PDBo:chem_comp_atom.charge>
-            <PDBo:chem_comp_atom.model_Cartn_x rdf:datatype="xsd:decimal">3.612</PDBo:chem_comp_atom.model_Cartn_x>
-            <PDBo:chem_comp_atom.model_Cartn_y rdf:datatype="xsd:decimal">38.195</PDBo:chem_comp_atom.model_Cartn_y>
-            <PDBo:chem_comp_atom.model_Cartn_z rdf:datatype="xsd:decimal">15.124</PDBo:chem_comp_atom.model_Cartn_z>
-            <PDBo:chem_comp_atom.pdbx_align rdf:datatype="xsd:int">1</PDBo:chem_comp_atom.pdbx_align>
+            <PDBo:chem_comp_atom.charge rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</PDBo:chem_comp_atom.charge>
+            <PDBo:chem_comp_atom.model_Cartn_x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.612</PDBo:chem_comp_atom.model_Cartn_x>
+            <PDBo:chem_comp_atom.model_Cartn_y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">38.195</PDBo:chem_comp_atom.model_Cartn_y>
+            <PDBo:chem_comp_atom.model_Cartn_z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">15.124</PDBo:chem_comp_atom.model_Cartn_z>
+            <PDBo:chem_comp_atom.pdbx_align rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:chem_comp_atom.pdbx_align>
             <PDBo:chem_comp_atom.pdbx_aromatic_flag>N</PDBo:chem_comp_atom.pdbx_aromatic_flag>
             <PDBo:chem_comp_atom.pdbx_component_atom_id>C4'</PDBo:chem_comp_atom.pdbx_component_atom_id>
             <PDBo:chem_comp_atom.pdbx_component_comp_id>05L</PDBo:chem_comp_atom.pdbx_component_comp_id>
             <PDBo:chem_comp_atom.pdbx_leaving_atom_flag>N</PDBo:chem_comp_atom.pdbx_leaving_atom_flag>
-            <PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal rdf:datatype="xsd:decimal">5.251</PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal>
-            <PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal rdf:datatype="xsd:decimal">-0.263</PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal>
-            <PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal rdf:datatype="xsd:decimal">0.152</PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal>
-            <PDBo:chem_comp_atom.pdbx_ordinal rdf:datatype="xsd:int">16</PDBo:chem_comp_atom.pdbx_ordinal>
+            <PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5.251</PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal>
+            <PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.263</PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal>
+            <PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.152</PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal>
+            <PDBo:chem_comp_atom.pdbx_ordinal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">16</PDBo:chem_comp_atom.pdbx_ordinal>
             <PDBo:chem_comp_atom.pdbx_stereo_config>N</PDBo:chem_comp_atom.pdbx_stereo_config>
             <PDBo:chem_comp_atom.type_symbol>C</PDBo:chem_comp_atom.type_symbol>
           </PDBo:chem_comp_atom>
@@ -495,19 +495,19 @@
             <PDBo:chem_comp_atom.atom_id>C5'</PDBo:chem_comp_atom.atom_id>
             <PDBo:chem_comp_atom.comp_id>05L</PDBo:chem_comp_atom.comp_id>
             <PDBo:chem_comp_atom.alt_atom_id>C5'</PDBo:chem_comp_atom.alt_atom_id>
-            <PDBo:chem_comp_atom.charge rdf:datatype="xsd:int">0</PDBo:chem_comp_atom.charge>
-            <PDBo:chem_comp_atom.model_Cartn_x rdf:datatype="xsd:decimal">3.081</PDBo:chem_comp_atom.model_Cartn_x>
-            <PDBo:chem_comp_atom.model_Cartn_y rdf:datatype="xsd:decimal">36.967</PDBo:chem_comp_atom.model_Cartn_y>
-            <PDBo:chem_comp_atom.model_Cartn_z rdf:datatype="xsd:decimal">15.816</PDBo:chem_comp_atom.model_Cartn_z>
-            <PDBo:chem_comp_atom.pdbx_align rdf:datatype="xsd:int">1</PDBo:chem_comp_atom.pdbx_align>
+            <PDBo:chem_comp_atom.charge rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</PDBo:chem_comp_atom.charge>
+            <PDBo:chem_comp_atom.model_Cartn_x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.081</PDBo:chem_comp_atom.model_Cartn_x>
+            <PDBo:chem_comp_atom.model_Cartn_y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">36.967</PDBo:chem_comp_atom.model_Cartn_y>
+            <PDBo:chem_comp_atom.model_Cartn_z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">15.816</PDBo:chem_comp_atom.model_Cartn_z>
+            <PDBo:chem_comp_atom.pdbx_align rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:chem_comp_atom.pdbx_align>
             <PDBo:chem_comp_atom.pdbx_aromatic_flag>N</PDBo:chem_comp_atom.pdbx_aromatic_flag>
             <PDBo:chem_comp_atom.pdbx_component_atom_id>C5'</PDBo:chem_comp_atom.pdbx_component_atom_id>
             <PDBo:chem_comp_atom.pdbx_component_comp_id>05L</PDBo:chem_comp_atom.pdbx_component_comp_id>
             <PDBo:chem_comp_atom.pdbx_leaving_atom_flag>N</PDBo:chem_comp_atom.pdbx_leaving_atom_flag>
-            <PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal rdf:datatype="xsd:decimal">6.354</PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal>
-            <PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal rdf:datatype="xsd:decimal">0.690</PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal>
-            <PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal rdf:datatype="xsd:decimal">-0.313</PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal>
-            <PDBo:chem_comp_atom.pdbx_ordinal rdf:datatype="xsd:int">17</PDBo:chem_comp_atom.pdbx_ordinal>
+            <PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.354</PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal>
+            <PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.690</PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal>
+            <PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.313</PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal>
+            <PDBo:chem_comp_atom.pdbx_ordinal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">17</PDBo:chem_comp_atom.pdbx_ordinal>
             <PDBo:chem_comp_atom.pdbx_stereo_config>N</PDBo:chem_comp_atom.pdbx_stereo_config>
             <PDBo:chem_comp_atom.type_symbol>C</PDBo:chem_comp_atom.type_symbol>
           </PDBo:chem_comp_atom>
@@ -523,19 +523,19 @@
             <PDBo:chem_comp_atom.atom_id>C6'</PDBo:chem_comp_atom.atom_id>
             <PDBo:chem_comp_atom.comp_id>05L</PDBo:chem_comp_atom.comp_id>
             <PDBo:chem_comp_atom.alt_atom_id>C6'</PDBo:chem_comp_atom.alt_atom_id>
-            <PDBo:chem_comp_atom.charge rdf:datatype="xsd:int">0</PDBo:chem_comp_atom.charge>
-            <PDBo:chem_comp_atom.model_Cartn_x rdf:datatype="xsd:decimal">3.340</PDBo:chem_comp_atom.model_Cartn_x>
-            <PDBo:chem_comp_atom.model_Cartn_y rdf:datatype="xsd:decimal">37.087</PDBo:chem_comp_atom.model_Cartn_y>
-            <PDBo:chem_comp_atom.model_Cartn_z rdf:datatype="xsd:decimal">17.304</PDBo:chem_comp_atom.model_Cartn_z>
-            <PDBo:chem_comp_atom.pdbx_align rdf:datatype="xsd:int">1</PDBo:chem_comp_atom.pdbx_align>
+            <PDBo:chem_comp_atom.charge rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</PDBo:chem_comp_atom.charge>
+            <PDBo:chem_comp_atom.model_Cartn_x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.340</PDBo:chem_comp_atom.model_Cartn_x>
+            <PDBo:chem_comp_atom.model_Cartn_y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">37.087</PDBo:chem_comp_atom.model_Cartn_y>
+            <PDBo:chem_comp_atom.model_Cartn_z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">17.304</PDBo:chem_comp_atom.model_Cartn_z>
+            <PDBo:chem_comp_atom.pdbx_align rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:chem_comp_atom.pdbx_align>
             <PDBo:chem_comp_atom.pdbx_aromatic_flag>N</PDBo:chem_comp_atom.pdbx_aromatic_flag>
             <PDBo:chem_comp_atom.pdbx_component_atom_id>C6'</PDBo:chem_comp_atom.pdbx_component_atom_id>
             <PDBo:chem_comp_atom.pdbx_component_comp_id>05L</PDBo:chem_comp_atom.pdbx_component_comp_id>
             <PDBo:chem_comp_atom.pdbx_leaving_atom_flag>N</PDBo:chem_comp_atom.pdbx_leaving_atom_flag>
-            <PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal rdf:datatype="xsd:decimal">7.715</PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal>
-            <PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal rdf:datatype="xsd:decimal">0.146</PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal>
-            <PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal rdf:datatype="xsd:decimal">0.125</PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal>
-            <PDBo:chem_comp_atom.pdbx_ordinal rdf:datatype="xsd:int">18</PDBo:chem_comp_atom.pdbx_ordinal>
+            <PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7.715</PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal>
+            <PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.146</PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal>
+            <PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.125</PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal>
+            <PDBo:chem_comp_atom.pdbx_ordinal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">18</PDBo:chem_comp_atom.pdbx_ordinal>
             <PDBo:chem_comp_atom.pdbx_stereo_config>N</PDBo:chem_comp_atom.pdbx_stereo_config>
             <PDBo:chem_comp_atom.type_symbol>C</PDBo:chem_comp_atom.type_symbol>
           </PDBo:chem_comp_atom>
@@ -551,19 +551,19 @@
             <PDBo:chem_comp_atom.atom_id>C7'</PDBo:chem_comp_atom.atom_id>
             <PDBo:chem_comp_atom.comp_id>05L</PDBo:chem_comp_atom.comp_id>
             <PDBo:chem_comp_atom.alt_atom_id>C7'</PDBo:chem_comp_atom.alt_atom_id>
-            <PDBo:chem_comp_atom.charge rdf:datatype="xsd:int">0</PDBo:chem_comp_atom.charge>
-            <PDBo:chem_comp_atom.model_Cartn_x rdf:datatype="xsd:decimal">3.580</PDBo:chem_comp_atom.model_Cartn_x>
-            <PDBo:chem_comp_atom.model_Cartn_y rdf:datatype="xsd:decimal">35.702</PDBo:chem_comp_atom.model_Cartn_y>
-            <PDBo:chem_comp_atom.model_Cartn_z rdf:datatype="xsd:decimal">17.835</PDBo:chem_comp_atom.model_Cartn_z>
-            <PDBo:chem_comp_atom.pdbx_align rdf:datatype="xsd:int">1</PDBo:chem_comp_atom.pdbx_align>
+            <PDBo:chem_comp_atom.charge rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</PDBo:chem_comp_atom.charge>
+            <PDBo:chem_comp_atom.model_Cartn_x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.580</PDBo:chem_comp_atom.model_Cartn_x>
+            <PDBo:chem_comp_atom.model_Cartn_y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">35.702</PDBo:chem_comp_atom.model_Cartn_y>
+            <PDBo:chem_comp_atom.model_Cartn_z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">17.835</PDBo:chem_comp_atom.model_Cartn_z>
+            <PDBo:chem_comp_atom.pdbx_align rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:chem_comp_atom.pdbx_align>
             <PDBo:chem_comp_atom.pdbx_aromatic_flag>N</PDBo:chem_comp_atom.pdbx_aromatic_flag>
             <PDBo:chem_comp_atom.pdbx_component_atom_id>C7'</PDBo:chem_comp_atom.pdbx_component_atom_id>
             <PDBo:chem_comp_atom.pdbx_component_comp_id>05L</PDBo:chem_comp_atom.pdbx_component_comp_id>
             <PDBo:chem_comp_atom.pdbx_leaving_atom_flag>N</PDBo:chem_comp_atom.pdbx_leaving_atom_flag>
-            <PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal rdf:datatype="xsd:decimal">8.818</PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal>
-            <PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal rdf:datatype="xsd:decimal">1.099</PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal>
-            <PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal rdf:datatype="xsd:decimal">-0.340</PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal>
-            <PDBo:chem_comp_atom.pdbx_ordinal rdf:datatype="xsd:int">19</PDBo:chem_comp_atom.pdbx_ordinal>
+            <PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8.818</PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal>
+            <PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.099</PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal>
+            <PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.340</PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal>
+            <PDBo:chem_comp_atom.pdbx_ordinal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">19</PDBo:chem_comp_atom.pdbx_ordinal>
             <PDBo:chem_comp_atom.pdbx_stereo_config>N</PDBo:chem_comp_atom.pdbx_stereo_config>
             <PDBo:chem_comp_atom.type_symbol>C</PDBo:chem_comp_atom.type_symbol>
           </PDBo:chem_comp_atom>
@@ -579,19 +579,19 @@
             <PDBo:chem_comp_atom.atom_id>H1</PDBo:chem_comp_atom.atom_id>
             <PDBo:chem_comp_atom.comp_id>05L</PDBo:chem_comp_atom.comp_id>
             <PDBo:chem_comp_atom.alt_atom_id>H1</PDBo:chem_comp_atom.alt_atom_id>
-            <PDBo:chem_comp_atom.charge rdf:datatype="xsd:int">0</PDBo:chem_comp_atom.charge>
-            <PDBo:chem_comp_atom.model_Cartn_x rdf:datatype="xsd:decimal">-0.001</PDBo:chem_comp_atom.model_Cartn_x>
-            <PDBo:chem_comp_atom.model_Cartn_y rdf:datatype="xsd:decimal">42.311</PDBo:chem_comp_atom.model_Cartn_y>
-            <PDBo:chem_comp_atom.model_Cartn_z rdf:datatype="xsd:decimal">11.642</PDBo:chem_comp_atom.model_Cartn_z>
-            <PDBo:chem_comp_atom.pdbx_align rdf:datatype="xsd:int">1</PDBo:chem_comp_atom.pdbx_align>
+            <PDBo:chem_comp_atom.charge rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</PDBo:chem_comp_atom.charge>
+            <PDBo:chem_comp_atom.model_Cartn_x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.001</PDBo:chem_comp_atom.model_Cartn_x>
+            <PDBo:chem_comp_atom.model_Cartn_y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">42.311</PDBo:chem_comp_atom.model_Cartn_y>
+            <PDBo:chem_comp_atom.model_Cartn_z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">11.642</PDBo:chem_comp_atom.model_Cartn_z>
+            <PDBo:chem_comp_atom.pdbx_align rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:chem_comp_atom.pdbx_align>
             <PDBo:chem_comp_atom.pdbx_aromatic_flag>N</PDBo:chem_comp_atom.pdbx_aromatic_flag>
             <PDBo:chem_comp_atom.pdbx_component_atom_id>H1</PDBo:chem_comp_atom.pdbx_component_atom_id>
             <PDBo:chem_comp_atom.pdbx_component_comp_id>05L</PDBo:chem_comp_atom.pdbx_component_comp_id>
             <PDBo:chem_comp_atom.pdbx_leaving_atom_flag>N</PDBo:chem_comp_atom.pdbx_leaving_atom_flag>
-            <PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal rdf:datatype="xsd:decimal">-1.517</PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal>
-            <PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal rdf:datatype="xsd:decimal">-0.341</PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal>
-            <PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal rdf:datatype="xsd:decimal">-1.423</PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal>
-            <PDBo:chem_comp_atom.pdbx_ordinal rdf:datatype="xsd:int">20</PDBo:chem_comp_atom.pdbx_ordinal>
+            <PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1.517</PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal>
+            <PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.341</PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal>
+            <PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1.423</PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal>
+            <PDBo:chem_comp_atom.pdbx_ordinal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">20</PDBo:chem_comp_atom.pdbx_ordinal>
             <PDBo:chem_comp_atom.pdbx_stereo_config>N</PDBo:chem_comp_atom.pdbx_stereo_config>
             <PDBo:chem_comp_atom.type_symbol>H</PDBo:chem_comp_atom.type_symbol>
           </PDBo:chem_comp_atom>
@@ -607,19 +607,19 @@
             <PDBo:chem_comp_atom.atom_id>H2</PDBo:chem_comp_atom.atom_id>
             <PDBo:chem_comp_atom.comp_id>05L</PDBo:chem_comp_atom.comp_id>
             <PDBo:chem_comp_atom.alt_atom_id>H2</PDBo:chem_comp_atom.alt_atom_id>
-            <PDBo:chem_comp_atom.charge rdf:datatype="xsd:int">0</PDBo:chem_comp_atom.charge>
-            <PDBo:chem_comp_atom.model_Cartn_x rdf:datatype="xsd:decimal">-2.222</PDBo:chem_comp_atom.model_Cartn_x>
-            <PDBo:chem_comp_atom.model_Cartn_y rdf:datatype="xsd:decimal">42.437</PDBo:chem_comp_atom.model_Cartn_y>
-            <PDBo:chem_comp_atom.model_Cartn_z rdf:datatype="xsd:decimal">13.741</PDBo:chem_comp_atom.model_Cartn_z>
-            <PDBo:chem_comp_atom.pdbx_align rdf:datatype="xsd:int">1</PDBo:chem_comp_atom.pdbx_align>
+            <PDBo:chem_comp_atom.charge rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</PDBo:chem_comp_atom.charge>
+            <PDBo:chem_comp_atom.model_Cartn_x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-2.222</PDBo:chem_comp_atom.model_Cartn_x>
+            <PDBo:chem_comp_atom.model_Cartn_y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">42.437</PDBo:chem_comp_atom.model_Cartn_y>
+            <PDBo:chem_comp_atom.model_Cartn_z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">13.741</PDBo:chem_comp_atom.model_Cartn_z>
+            <PDBo:chem_comp_atom.pdbx_align rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:chem_comp_atom.pdbx_align>
             <PDBo:chem_comp_atom.pdbx_aromatic_flag>N</PDBo:chem_comp_atom.pdbx_aromatic_flag>
             <PDBo:chem_comp_atom.pdbx_component_atom_id>H2</PDBo:chem_comp_atom.pdbx_component_atom_id>
             <PDBo:chem_comp_atom.pdbx_component_comp_id>05L</PDBo:chem_comp_atom.pdbx_component_comp_id>
             <PDBo:chem_comp_atom.pdbx_leaving_atom_flag>N</PDBo:chem_comp_atom.pdbx_leaving_atom_flag>
-            <PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal rdf:datatype="xsd:decimal">-2.876</PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal>
-            <PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal rdf:datatype="xsd:decimal">-1.370</PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal>
-            <PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal rdf:datatype="xsd:decimal">1.110</PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal>
-            <PDBo:chem_comp_atom.pdbx_ordinal rdf:datatype="xsd:int">21</PDBo:chem_comp_atom.pdbx_ordinal>
+            <PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-2.876</PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal>
+            <PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1.370</PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal>
+            <PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.110</PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal>
+            <PDBo:chem_comp_atom.pdbx_ordinal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">21</PDBo:chem_comp_atom.pdbx_ordinal>
             <PDBo:chem_comp_atom.pdbx_stereo_config>N</PDBo:chem_comp_atom.pdbx_stereo_config>
             <PDBo:chem_comp_atom.type_symbol>H</PDBo:chem_comp_atom.type_symbol>
           </PDBo:chem_comp_atom>
@@ -635,19 +635,19 @@
             <PDBo:chem_comp_atom.atom_id>HO2</PDBo:chem_comp_atom.atom_id>
             <PDBo:chem_comp_atom.comp_id>05L</PDBo:chem_comp_atom.comp_id>
             <PDBo:chem_comp_atom.alt_atom_id>HO2</PDBo:chem_comp_atom.alt_atom_id>
-            <PDBo:chem_comp_atom.charge rdf:datatype="xsd:int">0</PDBo:chem_comp_atom.charge>
-            <PDBo:chem_comp_atom.model_Cartn_x rdf:datatype="xsd:decimal">-3.315</PDBo:chem_comp_atom.model_Cartn_x>
-            <PDBo:chem_comp_atom.model_Cartn_y rdf:datatype="xsd:decimal">41.649</PDBo:chem_comp_atom.model_Cartn_y>
-            <PDBo:chem_comp_atom.model_Cartn_z rdf:datatype="xsd:decimal">11.821</PDBo:chem_comp_atom.model_Cartn_z>
-            <PDBo:chem_comp_atom.pdbx_align rdf:datatype="xsd:int">1</PDBo:chem_comp_atom.pdbx_align>
+            <PDBo:chem_comp_atom.charge rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</PDBo:chem_comp_atom.charge>
+            <PDBo:chem_comp_atom.model_Cartn_x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-3.315</PDBo:chem_comp_atom.model_Cartn_x>
+            <PDBo:chem_comp_atom.model_Cartn_y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">41.649</PDBo:chem_comp_atom.model_Cartn_y>
+            <PDBo:chem_comp_atom.model_Cartn_z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">11.821</PDBo:chem_comp_atom.model_Cartn_z>
+            <PDBo:chem_comp_atom.pdbx_align rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:chem_comp_atom.pdbx_align>
             <PDBo:chem_comp_atom.pdbx_aromatic_flag>N</PDBo:chem_comp_atom.pdbx_aromatic_flag>
             <PDBo:chem_comp_atom.pdbx_component_atom_id>HO2</PDBo:chem_comp_atom.pdbx_component_atom_id>
             <PDBo:chem_comp_atom.pdbx_component_comp_id>05L</PDBo:chem_comp_atom.pdbx_component_comp_id>
             <PDBo:chem_comp_atom.pdbx_leaving_atom_flag>Y</PDBo:chem_comp_atom.pdbx_leaving_atom_flag>
-            <PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal rdf:datatype="xsd:decimal">-2.004</PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal>
-            <PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal rdf:datatype="xsd:decimal">-3.053</PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal>
-            <PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal rdf:datatype="xsd:decimal">-0.347</PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal>
-            <PDBo:chem_comp_atom.pdbx_ordinal rdf:datatype="xsd:int">22</PDBo:chem_comp_atom.pdbx_ordinal>
+            <PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-2.004</PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal>
+            <PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-3.053</PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal>
+            <PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.347</PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal>
+            <PDBo:chem_comp_atom.pdbx_ordinal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">22</PDBo:chem_comp_atom.pdbx_ordinal>
             <PDBo:chem_comp_atom.pdbx_stereo_config>N</PDBo:chem_comp_atom.pdbx_stereo_config>
             <PDBo:chem_comp_atom.type_symbol>H</PDBo:chem_comp_atom.type_symbol>
           </PDBo:chem_comp_atom>
@@ -663,19 +663,19 @@
             <PDBo:chem_comp_atom.atom_id>H3</PDBo:chem_comp_atom.atom_id>
             <PDBo:chem_comp_atom.comp_id>05L</PDBo:chem_comp_atom.comp_id>
             <PDBo:chem_comp_atom.alt_atom_id>H3</PDBo:chem_comp_atom.alt_atom_id>
-            <PDBo:chem_comp_atom.charge rdf:datatype="xsd:int">0</PDBo:chem_comp_atom.charge>
-            <PDBo:chem_comp_atom.model_Cartn_x rdf:datatype="xsd:decimal">-2.016</PDBo:chem_comp_atom.model_Cartn_x>
-            <PDBo:chem_comp_atom.model_Cartn_y rdf:datatype="xsd:decimal">44.126</PDBo:chem_comp_atom.model_Cartn_y>
-            <PDBo:chem_comp_atom.model_Cartn_z rdf:datatype="xsd:decimal">11.169</PDBo:chem_comp_atom.model_Cartn_z>
-            <PDBo:chem_comp_atom.pdbx_align rdf:datatype="xsd:int">1</PDBo:chem_comp_atom.pdbx_align>
+            <PDBo:chem_comp_atom.charge rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</PDBo:chem_comp_atom.charge>
+            <PDBo:chem_comp_atom.model_Cartn_x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-2.016</PDBo:chem_comp_atom.model_Cartn_x>
+            <PDBo:chem_comp_atom.model_Cartn_y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">44.126</PDBo:chem_comp_atom.model_Cartn_y>
+            <PDBo:chem_comp_atom.model_Cartn_z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">11.169</PDBo:chem_comp_atom.model_Cartn_z>
+            <PDBo:chem_comp_atom.pdbx_align rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:chem_comp_atom.pdbx_align>
             <PDBo:chem_comp_atom.pdbx_aromatic_flag>N</PDBo:chem_comp_atom.pdbx_aromatic_flag>
             <PDBo:chem_comp_atom.pdbx_component_atom_id>H3</PDBo:chem_comp_atom.pdbx_component_atom_id>
             <PDBo:chem_comp_atom.pdbx_component_comp_id>05L</PDBo:chem_comp_atom.pdbx_component_comp_id>
             <PDBo:chem_comp_atom.pdbx_leaving_atom_flag>N</PDBo:chem_comp_atom.pdbx_leaving_atom_flag>
-            <PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal rdf:datatype="xsd:decimal">-4.056</PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal>
-            <PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal rdf:datatype="xsd:decimal">-0.407</PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal>
-            <PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal rdf:datatype="xsd:decimal">-1.537</PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal>
-            <PDBo:chem_comp_atom.pdbx_ordinal rdf:datatype="xsd:int">23</PDBo:chem_comp_atom.pdbx_ordinal>
+            <PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-4.056</PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal>
+            <PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.407</PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal>
+            <PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1.537</PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal>
+            <PDBo:chem_comp_atom.pdbx_ordinal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">23</PDBo:chem_comp_atom.pdbx_ordinal>
             <PDBo:chem_comp_atom.pdbx_stereo_config>N</PDBo:chem_comp_atom.pdbx_stereo_config>
             <PDBo:chem_comp_atom.type_symbol>H</PDBo:chem_comp_atom.type_symbol>
           </PDBo:chem_comp_atom>
@@ -691,19 +691,19 @@
             <PDBo:chem_comp_atom.atom_id>HO3</PDBo:chem_comp_atom.atom_id>
             <PDBo:chem_comp_atom.comp_id>05L</PDBo:chem_comp_atom.comp_id>
             <PDBo:chem_comp_atom.alt_atom_id>HO3</PDBo:chem_comp_atom.alt_atom_id>
-            <PDBo:chem_comp_atom.charge rdf:datatype="xsd:int">0</PDBo:chem_comp_atom.charge>
-            <PDBo:chem_comp_atom.model_Cartn_x rdf:datatype="xsd:decimal">-3.991</PDBo:chem_comp_atom.model_Cartn_x>
-            <PDBo:chem_comp_atom.model_Cartn_y rdf:datatype="xsd:decimal">44.981</PDBo:chem_comp_atom.model_Cartn_y>
-            <PDBo:chem_comp_atom.model_Cartn_z rdf:datatype="xsd:decimal">12.060</PDBo:chem_comp_atom.model_Cartn_z>
-            <PDBo:chem_comp_atom.pdbx_align rdf:datatype="xsd:int">1</PDBo:chem_comp_atom.pdbx_align>
+            <PDBo:chem_comp_atom.charge rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</PDBo:chem_comp_atom.charge>
+            <PDBo:chem_comp_atom.model_Cartn_x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-3.991</PDBo:chem_comp_atom.model_Cartn_x>
+            <PDBo:chem_comp_atom.model_Cartn_y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">44.981</PDBo:chem_comp_atom.model_Cartn_y>
+            <PDBo:chem_comp_atom.model_Cartn_z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12.060</PDBo:chem_comp_atom.model_Cartn_z>
+            <PDBo:chem_comp_atom.pdbx_align rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:chem_comp_atom.pdbx_align>
             <PDBo:chem_comp_atom.pdbx_aromatic_flag>N</PDBo:chem_comp_atom.pdbx_aromatic_flag>
             <PDBo:chem_comp_atom.pdbx_component_atom_id>HO3</PDBo:chem_comp_atom.pdbx_component_atom_id>
             <PDBo:chem_comp_atom.pdbx_component_comp_id>05L</PDBo:chem_comp_atom.pdbx_component_comp_id>
             <PDBo:chem_comp_atom.pdbx_leaving_atom_flag>Y</PDBo:chem_comp_atom.pdbx_leaving_atom_flag>
-            <PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal rdf:datatype="xsd:decimal">-5.305</PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal>
-            <PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal rdf:datatype="xsd:decimal">-2.100</PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal>
-            <PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal rdf:datatype="xsd:decimal">-0.400</PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal>
-            <PDBo:chem_comp_atom.pdbx_ordinal rdf:datatype="xsd:int">24</PDBo:chem_comp_atom.pdbx_ordinal>
+            <PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-5.305</PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal>
+            <PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-2.100</PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal>
+            <PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.400</PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal>
+            <PDBo:chem_comp_atom.pdbx_ordinal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">24</PDBo:chem_comp_atom.pdbx_ordinal>
             <PDBo:chem_comp_atom.pdbx_stereo_config>N</PDBo:chem_comp_atom.pdbx_stereo_config>
             <PDBo:chem_comp_atom.type_symbol>H</PDBo:chem_comp_atom.type_symbol>
           </PDBo:chem_comp_atom>
@@ -719,19 +719,19 @@
             <PDBo:chem_comp_atom.atom_id>H4</PDBo:chem_comp_atom.atom_id>
             <PDBo:chem_comp_atom.comp_id>05L</PDBo:chem_comp_atom.comp_id>
             <PDBo:chem_comp_atom.alt_atom_id>H4</PDBo:chem_comp_atom.alt_atom_id>
-            <PDBo:chem_comp_atom.charge rdf:datatype="xsd:int">0</PDBo:chem_comp_atom.charge>
-            <PDBo:chem_comp_atom.model_Cartn_x rdf:datatype="xsd:decimal">-1.789</PDBo:chem_comp_atom.model_Cartn_x>
-            <PDBo:chem_comp_atom.model_Cartn_y rdf:datatype="xsd:decimal">44.781</PDBo:chem_comp_atom.model_Cartn_y>
-            <PDBo:chem_comp_atom.model_Cartn_z rdf:datatype="xsd:decimal">14.159</PDBo:chem_comp_atom.model_Cartn_z>
-            <PDBo:chem_comp_atom.pdbx_align rdf:datatype="xsd:int">1</PDBo:chem_comp_atom.pdbx_align>
+            <PDBo:chem_comp_atom.charge rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</PDBo:chem_comp_atom.charge>
+            <PDBo:chem_comp_atom.model_Cartn_x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1.789</PDBo:chem_comp_atom.model_Cartn_x>
+            <PDBo:chem_comp_atom.model_Cartn_y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">44.781</PDBo:chem_comp_atom.model_Cartn_y>
+            <PDBo:chem_comp_atom.model_Cartn_z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">14.159</PDBo:chem_comp_atom.model_Cartn_z>
+            <PDBo:chem_comp_atom.pdbx_align rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:chem_comp_atom.pdbx_align>
             <PDBo:chem_comp_atom.pdbx_aromatic_flag>N</PDBo:chem_comp_atom.pdbx_aromatic_flag>
             <PDBo:chem_comp_atom.pdbx_component_atom_id>H4</PDBo:chem_comp_atom.pdbx_component_atom_id>
             <PDBo:chem_comp_atom.pdbx_component_comp_id>05L</PDBo:chem_comp_atom.pdbx_component_comp_id>
             <PDBo:chem_comp_atom.pdbx_leaving_atom_flag>N</PDBo:chem_comp_atom.pdbx_leaving_atom_flag>
-            <PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal rdf:datatype="xsd:decimal">-4.157</PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal>
-            <PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal rdf:datatype="xsd:decimal">0.824</PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal>
-            <PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal rdf:datatype="xsd:decimal">1.257</PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal>
-            <PDBo:chem_comp_atom.pdbx_ordinal rdf:datatype="xsd:int">25</PDBo:chem_comp_atom.pdbx_ordinal>
+            <PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-4.157</PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal>
+            <PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.824</PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal>
+            <PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.257</PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal>
+            <PDBo:chem_comp_atom.pdbx_ordinal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">25</PDBo:chem_comp_atom.pdbx_ordinal>
             <PDBo:chem_comp_atom.pdbx_stereo_config>N</PDBo:chem_comp_atom.pdbx_stereo_config>
             <PDBo:chem_comp_atom.type_symbol>H</PDBo:chem_comp_atom.type_symbol>
           </PDBo:chem_comp_atom>
@@ -747,19 +747,19 @@
             <PDBo:chem_comp_atom.atom_id>HO4</PDBo:chem_comp_atom.atom_id>
             <PDBo:chem_comp_atom.comp_id>05L</PDBo:chem_comp_atom.comp_id>
             <PDBo:chem_comp_atom.alt_atom_id>HO4</PDBo:chem_comp_atom.alt_atom_id>
-            <PDBo:chem_comp_atom.charge rdf:datatype="xsd:int">0</PDBo:chem_comp_atom.charge>
-            <PDBo:chem_comp_atom.model_Cartn_x rdf:datatype="xsd:decimal">-1.656</PDBo:chem_comp_atom.model_Cartn_x>
-            <PDBo:chem_comp_atom.model_Cartn_y rdf:datatype="xsd:decimal">46.962</PDBo:chem_comp_atom.model_Cartn_y>
-            <PDBo:chem_comp_atom.model_Cartn_z rdf:datatype="xsd:decimal">13.361</PDBo:chem_comp_atom.model_Cartn_z>
-            <PDBo:chem_comp_atom.pdbx_align rdf:datatype="xsd:int">1</PDBo:chem_comp_atom.pdbx_align>
+            <PDBo:chem_comp_atom.charge rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</PDBo:chem_comp_atom.charge>
+            <PDBo:chem_comp_atom.model_Cartn_x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1.656</PDBo:chem_comp_atom.model_Cartn_x>
+            <PDBo:chem_comp_atom.model_Cartn_y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">46.962</PDBo:chem_comp_atom.model_Cartn_y>
+            <PDBo:chem_comp_atom.model_Cartn_z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">13.361</PDBo:chem_comp_atom.model_Cartn_z>
+            <PDBo:chem_comp_atom.pdbx_align rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:chem_comp_atom.pdbx_align>
             <PDBo:chem_comp_atom.pdbx_aromatic_flag>N</PDBo:chem_comp_atom.pdbx_aromatic_flag>
             <PDBo:chem_comp_atom.pdbx_component_atom_id>HO4</PDBo:chem_comp_atom.pdbx_component_atom_id>
             <PDBo:chem_comp_atom.pdbx_component_comp_id>05L</PDBo:chem_comp_atom.pdbx_component_comp_id>
             <PDBo:chem_comp_atom.pdbx_leaving_atom_flag>Y</PDBo:chem_comp_atom.pdbx_leaving_atom_flag>
-            <PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal rdf:datatype="xsd:decimal">-6.062</PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal>
-            <PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal rdf:datatype="xsd:decimal">1.239</PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal>
-            <PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal rdf:datatype="xsd:decimal">-0.126</PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal>
-            <PDBo:chem_comp_atom.pdbx_ordinal rdf:datatype="xsd:int">26</PDBo:chem_comp_atom.pdbx_ordinal>
+            <PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-6.062</PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal>
+            <PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.239</PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal>
+            <PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.126</PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal>
+            <PDBo:chem_comp_atom.pdbx_ordinal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">26</PDBo:chem_comp_atom.pdbx_ordinal>
             <PDBo:chem_comp_atom.pdbx_stereo_config>N</PDBo:chem_comp_atom.pdbx_stereo_config>
             <PDBo:chem_comp_atom.type_symbol>H</PDBo:chem_comp_atom.type_symbol>
           </PDBo:chem_comp_atom>
@@ -775,19 +775,19 @@
             <PDBo:chem_comp_atom.atom_id>H5</PDBo:chem_comp_atom.atom_id>
             <PDBo:chem_comp_atom.comp_id>05L</PDBo:chem_comp_atom.comp_id>
             <PDBo:chem_comp_atom.alt_atom_id>H5</PDBo:chem_comp_atom.alt_atom_id>
-            <PDBo:chem_comp_atom.charge rdf:datatype="xsd:int">0</PDBo:chem_comp_atom.charge>
-            <PDBo:chem_comp_atom.model_Cartn_x rdf:datatype="xsd:decimal">0.053</PDBo:chem_comp_atom.model_Cartn_x>
-            <PDBo:chem_comp_atom.model_Cartn_y rdf:datatype="xsd:decimal">45.082</PDBo:chem_comp_atom.model_Cartn_y>
-            <PDBo:chem_comp_atom.model_Cartn_z rdf:datatype="xsd:decimal">11.722</PDBo:chem_comp_atom.model_Cartn_z>
-            <PDBo:chem_comp_atom.pdbx_align rdf:datatype="xsd:int">1</PDBo:chem_comp_atom.pdbx_align>
+            <PDBo:chem_comp_atom.charge rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</PDBo:chem_comp_atom.charge>
+            <PDBo:chem_comp_atom.model_Cartn_x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.053</PDBo:chem_comp_atom.model_Cartn_x>
+            <PDBo:chem_comp_atom.model_Cartn_y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">45.082</PDBo:chem_comp_atom.model_Cartn_y>
+            <PDBo:chem_comp_atom.model_Cartn_z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">11.722</PDBo:chem_comp_atom.model_Cartn_z>
+            <PDBo:chem_comp_atom.pdbx_align rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:chem_comp_atom.pdbx_align>
             <PDBo:chem_comp_atom.pdbx_aromatic_flag>N</PDBo:chem_comp_atom.pdbx_aromatic_flag>
             <PDBo:chem_comp_atom.pdbx_component_atom_id>H5</PDBo:chem_comp_atom.pdbx_component_atom_id>
             <PDBo:chem_comp_atom.pdbx_component_comp_id>05L</PDBo:chem_comp_atom.pdbx_component_comp_id>
             <PDBo:chem_comp_atom.pdbx_leaving_atom_flag>N</PDBo:chem_comp_atom.pdbx_leaving_atom_flag>
-            <PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal rdf:datatype="xsd:decimal">-2.740</PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal>
-            <PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal rdf:datatype="xsd:decimal">1.754</PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal>
-            <PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal rdf:datatype="xsd:decimal">-1.283</PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal>
-            <PDBo:chem_comp_atom.pdbx_ordinal rdf:datatype="xsd:int">27</PDBo:chem_comp_atom.pdbx_ordinal>
+            <PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-2.740</PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal>
+            <PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.754</PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal>
+            <PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1.283</PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal>
+            <PDBo:chem_comp_atom.pdbx_ordinal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">27</PDBo:chem_comp_atom.pdbx_ordinal>
             <PDBo:chem_comp_atom.pdbx_stereo_config>N</PDBo:chem_comp_atom.pdbx_stereo_config>
             <PDBo:chem_comp_atom.type_symbol>H</PDBo:chem_comp_atom.type_symbol>
           </PDBo:chem_comp_atom>
@@ -803,19 +803,19 @@
             <PDBo:chem_comp_atom.atom_id>H61</PDBo:chem_comp_atom.atom_id>
             <PDBo:chem_comp_atom.comp_id>05L</PDBo:chem_comp_atom.comp_id>
             <PDBo:chem_comp_atom.alt_atom_id>H6</PDBo:chem_comp_atom.alt_atom_id>
-            <PDBo:chem_comp_atom.charge rdf:datatype="xsd:int">0</PDBo:chem_comp_atom.charge>
-            <PDBo:chem_comp_atom.model_Cartn_x rdf:datatype="xsd:decimal">1.755</PDBo:chem_comp_atom.model_Cartn_x>
-            <PDBo:chem_comp_atom.model_Cartn_y rdf:datatype="xsd:decimal">45.884</PDBo:chem_comp_atom.model_Cartn_y>
-            <PDBo:chem_comp_atom.model_Cartn_z rdf:datatype="xsd:decimal">13.340</PDBo:chem_comp_atom.model_Cartn_z>
-            <PDBo:chem_comp_atom.pdbx_align rdf:datatype="xsd:int">1</PDBo:chem_comp_atom.pdbx_align>
+            <PDBo:chem_comp_atom.charge rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</PDBo:chem_comp_atom.charge>
+            <PDBo:chem_comp_atom.model_Cartn_x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.755</PDBo:chem_comp_atom.model_Cartn_x>
+            <PDBo:chem_comp_atom.model_Cartn_y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">45.884</PDBo:chem_comp_atom.model_Cartn_y>
+            <PDBo:chem_comp_atom.model_Cartn_z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">13.340</PDBo:chem_comp_atom.model_Cartn_z>
+            <PDBo:chem_comp_atom.pdbx_align rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:chem_comp_atom.pdbx_align>
             <PDBo:chem_comp_atom.pdbx_aromatic_flag>N</PDBo:chem_comp_atom.pdbx_aromatic_flag>
             <PDBo:chem_comp_atom.pdbx_component_atom_id>H61</PDBo:chem_comp_atom.pdbx_component_atom_id>
             <PDBo:chem_comp_atom.pdbx_component_comp_id>05L</PDBo:chem_comp_atom.pdbx_component_comp_id>
             <PDBo:chem_comp_atom.pdbx_leaving_atom_flag>N</PDBo:chem_comp_atom.pdbx_leaving_atom_flag>
-            <PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal rdf:datatype="xsd:decimal">-3.666</PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal>
-            <PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal rdf:datatype="xsd:decimal">3.562</PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal>
-            <PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal rdf:datatype="xsd:decimal">0.197</PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal>
-            <PDBo:chem_comp_atom.pdbx_ordinal rdf:datatype="xsd:int">28</PDBo:chem_comp_atom.pdbx_ordinal>
+            <PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-3.666</PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal>
+            <PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.562</PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal>
+            <PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.197</PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal>
+            <PDBo:chem_comp_atom.pdbx_ordinal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">28</PDBo:chem_comp_atom.pdbx_ordinal>
             <PDBo:chem_comp_atom.pdbx_stereo_config>N</PDBo:chem_comp_atom.pdbx_stereo_config>
             <PDBo:chem_comp_atom.type_symbol>H</PDBo:chem_comp_atom.type_symbol>
           </PDBo:chem_comp_atom>
@@ -831,19 +831,19 @@
             <PDBo:chem_comp_atom.atom_id>H62</PDBo:chem_comp_atom.atom_id>
             <PDBo:chem_comp_atom.comp_id>05L</PDBo:chem_comp_atom.comp_id>
             <PDBo:chem_comp_atom.alt_atom_id>H6A</PDBo:chem_comp_atom.alt_atom_id>
-            <PDBo:chem_comp_atom.charge rdf:datatype="xsd:int">0</PDBo:chem_comp_atom.charge>
-            <PDBo:chem_comp_atom.model_Cartn_x rdf:datatype="xsd:decimal">0.335</PDBo:chem_comp_atom.model_Cartn_x>
-            <PDBo:chem_comp_atom.model_Cartn_y rdf:datatype="xsd:decimal">46.985</PDBo:chem_comp_atom.model_Cartn_y>
-            <PDBo:chem_comp_atom.model_Cartn_z rdf:datatype="xsd:decimal">13.334</PDBo:chem_comp_atom.model_Cartn_z>
-            <PDBo:chem_comp_atom.pdbx_align rdf:datatype="xsd:int">1</PDBo:chem_comp_atom.pdbx_align>
+            <PDBo:chem_comp_atom.charge rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</PDBo:chem_comp_atom.charge>
+            <PDBo:chem_comp_atom.model_Cartn_x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.335</PDBo:chem_comp_atom.model_Cartn_x>
+            <PDBo:chem_comp_atom.model_Cartn_y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">46.985</PDBo:chem_comp_atom.model_Cartn_y>
+            <PDBo:chem_comp_atom.model_Cartn_z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">13.334</PDBo:chem_comp_atom.model_Cartn_z>
+            <PDBo:chem_comp_atom.pdbx_align rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:chem_comp_atom.pdbx_align>
             <PDBo:chem_comp_atom.pdbx_aromatic_flag>N</PDBo:chem_comp_atom.pdbx_aromatic_flag>
             <PDBo:chem_comp_atom.pdbx_component_atom_id>H62</PDBo:chem_comp_atom.pdbx_component_atom_id>
             <PDBo:chem_comp_atom.pdbx_component_comp_id>05L</PDBo:chem_comp_atom.pdbx_component_comp_id>
             <PDBo:chem_comp_atom.pdbx_leaving_atom_flag>N</PDBo:chem_comp_atom.pdbx_leaving_atom_flag>
-            <PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal rdf:datatype="xsd:decimal">-2.726</PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal>
-            <PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal rdf:datatype="xsd:decimal">2.888</PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal>
-            <PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal rdf:datatype="xsd:decimal">1.550</PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal>
-            <PDBo:chem_comp_atom.pdbx_ordinal rdf:datatype="xsd:int">29</PDBo:chem_comp_atom.pdbx_ordinal>
+            <PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-2.726</PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal>
+            <PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.888</PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal>
+            <PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.550</PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal>
+            <PDBo:chem_comp_atom.pdbx_ordinal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">29</PDBo:chem_comp_atom.pdbx_ordinal>
             <PDBo:chem_comp_atom.pdbx_stereo_config>N</PDBo:chem_comp_atom.pdbx_stereo_config>
             <PDBo:chem_comp_atom.type_symbol>H</PDBo:chem_comp_atom.type_symbol>
           </PDBo:chem_comp_atom>
@@ -859,19 +859,19 @@
             <PDBo:chem_comp_atom.atom_id>HO6</PDBo:chem_comp_atom.atom_id>
             <PDBo:chem_comp_atom.comp_id>05L</PDBo:chem_comp_atom.comp_id>
             <PDBo:chem_comp_atom.alt_atom_id>HO6</PDBo:chem_comp_atom.alt_atom_id>
-            <PDBo:chem_comp_atom.charge rdf:datatype="xsd:int">0</PDBo:chem_comp_atom.charge>
-            <PDBo:chem_comp_atom.model_Cartn_x rdf:datatype="xsd:decimal">0.976</PDBo:chem_comp_atom.model_Cartn_x>
-            <PDBo:chem_comp_atom.model_Cartn_y rdf:datatype="xsd:decimal">46.357</PDBo:chem_comp_atom.model_Cartn_y>
-            <PDBo:chem_comp_atom.model_Cartn_z rdf:datatype="xsd:decimal">15.475</PDBo:chem_comp_atom.model_Cartn_z>
-            <PDBo:chem_comp_atom.pdbx_align rdf:datatype="xsd:int">1</PDBo:chem_comp_atom.pdbx_align>
+            <PDBo:chem_comp_atom.charge rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</PDBo:chem_comp_atom.charge>
+            <PDBo:chem_comp_atom.model_Cartn_x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.976</PDBo:chem_comp_atom.model_Cartn_x>
+            <PDBo:chem_comp_atom.model_Cartn_y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">46.357</PDBo:chem_comp_atom.model_Cartn_y>
+            <PDBo:chem_comp_atom.model_Cartn_z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">15.475</PDBo:chem_comp_atom.model_Cartn_z>
+            <PDBo:chem_comp_atom.pdbx_align rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:chem_comp_atom.pdbx_align>
             <PDBo:chem_comp_atom.pdbx_aromatic_flag>N</PDBo:chem_comp_atom.pdbx_aromatic_flag>
             <PDBo:chem_comp_atom.pdbx_component_atom_id>HO6</PDBo:chem_comp_atom.pdbx_component_atom_id>
             <PDBo:chem_comp_atom.pdbx_component_comp_id>05L</PDBo:chem_comp_atom.pdbx_component_comp_id>
             <PDBo:chem_comp_atom.pdbx_leaving_atom_flag>Y</PDBo:chem_comp_atom.pdbx_leaving_atom_flag>
-            <PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal rdf:datatype="xsd:decimal">-1.533</PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal>
-            <PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal rdf:datatype="xsd:decimal">4.616</PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal>
-            <PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal rdf:datatype="xsd:decimal">0.412</PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal>
-            <PDBo:chem_comp_atom.pdbx_ordinal rdf:datatype="xsd:int">30</PDBo:chem_comp_atom.pdbx_ordinal>
+            <PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1.533</PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal>
+            <PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.616</PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal>
+            <PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.412</PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal>
+            <PDBo:chem_comp_atom.pdbx_ordinal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">30</PDBo:chem_comp_atom.pdbx_ordinal>
             <PDBo:chem_comp_atom.pdbx_stereo_config>N</PDBo:chem_comp_atom.pdbx_stereo_config>
             <PDBo:chem_comp_atom.type_symbol>H</PDBo:chem_comp_atom.type_symbol>
           </PDBo:chem_comp_atom>
@@ -887,19 +887,19 @@
             <PDBo:chem_comp_atom.atom_id>H1'</PDBo:chem_comp_atom.atom_id>
             <PDBo:chem_comp_atom.comp_id>05L</PDBo:chem_comp_atom.comp_id>
             <PDBo:chem_comp_atom.alt_atom_id>H1'</PDBo:chem_comp_atom.alt_atom_id>
-            <PDBo:chem_comp_atom.charge rdf:datatype="xsd:int">0</PDBo:chem_comp_atom.charge>
-            <PDBo:chem_comp_atom.model_Cartn_x rdf:datatype="xsd:decimal">1.212</PDBo:chem_comp_atom.model_Cartn_x>
-            <PDBo:chem_comp_atom.model_Cartn_y rdf:datatype="xsd:decimal">39.276</PDBo:chem_comp_atom.model_Cartn_y>
-            <PDBo:chem_comp_atom.model_Cartn_z rdf:datatype="xsd:decimal">12.250</PDBo:chem_comp_atom.model_Cartn_z>
-            <PDBo:chem_comp_atom.pdbx_align rdf:datatype="xsd:int">1</PDBo:chem_comp_atom.pdbx_align>
+            <PDBo:chem_comp_atom.charge rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</PDBo:chem_comp_atom.charge>
+            <PDBo:chem_comp_atom.model_Cartn_x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.212</PDBo:chem_comp_atom.model_Cartn_x>
+            <PDBo:chem_comp_atom.model_Cartn_y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">39.276</PDBo:chem_comp_atom.model_Cartn_y>
+            <PDBo:chem_comp_atom.model_Cartn_z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12.250</PDBo:chem_comp_atom.model_Cartn_z>
+            <PDBo:chem_comp_atom.pdbx_align rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:chem_comp_atom.pdbx_align>
             <PDBo:chem_comp_atom.pdbx_aromatic_flag>N</PDBo:chem_comp_atom.pdbx_aromatic_flag>
             <PDBo:chem_comp_atom.pdbx_component_atom_id>H1'</PDBo:chem_comp_atom.pdbx_component_atom_id>
             <PDBo:chem_comp_atom.pdbx_component_comp_id>05L</PDBo:chem_comp_atom.pdbx_component_comp_id>
             <PDBo:chem_comp_atom.pdbx_leaving_atom_flag>N</PDBo:chem_comp_atom.pdbx_leaving_atom_flag>
-            <PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal rdf:datatype="xsd:decimal">1.399</PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal>
-            <PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal rdf:datatype="xsd:decimal">-0.046</PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal>
-            <PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal rdf:datatype="xsd:decimal">-1.344</PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal>
-            <PDBo:chem_comp_atom.pdbx_ordinal rdf:datatype="xsd:int">31</PDBo:chem_comp_atom.pdbx_ordinal>
+            <PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.399</PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal>
+            <PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.046</PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal>
+            <PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1.344</PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal>
+            <PDBo:chem_comp_atom.pdbx_ordinal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">31</PDBo:chem_comp_atom.pdbx_ordinal>
             <PDBo:chem_comp_atom.pdbx_stereo_config>N</PDBo:chem_comp_atom.pdbx_stereo_config>
             <PDBo:chem_comp_atom.type_symbol>H</PDBo:chem_comp_atom.type_symbol>
           </PDBo:chem_comp_atom>
@@ -915,19 +915,19 @@
             <PDBo:chem_comp_atom.atom_id>H1'A</PDBo:chem_comp_atom.atom_id>
             <PDBo:chem_comp_atom.comp_id>05L</PDBo:chem_comp_atom.comp_id>
             <PDBo:chem_comp_atom.alt_atom_id>H1'A</PDBo:chem_comp_atom.alt_atom_id>
-            <PDBo:chem_comp_atom.charge rdf:datatype="xsd:int">0</PDBo:chem_comp_atom.charge>
-            <PDBo:chem_comp_atom.model_Cartn_x rdf:datatype="xsd:decimal">1.883</PDBo:chem_comp_atom.model_Cartn_x>
-            <PDBo:chem_comp_atom.model_Cartn_y rdf:datatype="xsd:decimal">40.914</PDBo:chem_comp_atom.model_Cartn_y>
-            <PDBo:chem_comp_atom.model_Cartn_z rdf:datatype="xsd:decimal">11.947</PDBo:chem_comp_atom.model_Cartn_z>
-            <PDBo:chem_comp_atom.pdbx_align rdf:datatype="xsd:int">0</PDBo:chem_comp_atom.pdbx_align>
+            <PDBo:chem_comp_atom.charge rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</PDBo:chem_comp_atom.charge>
+            <PDBo:chem_comp_atom.model_Cartn_x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.883</PDBo:chem_comp_atom.model_Cartn_x>
+            <PDBo:chem_comp_atom.model_Cartn_y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">40.914</PDBo:chem_comp_atom.model_Cartn_y>
+            <PDBo:chem_comp_atom.model_Cartn_z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">11.947</PDBo:chem_comp_atom.model_Cartn_z>
+            <PDBo:chem_comp_atom.pdbx_align rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</PDBo:chem_comp_atom.pdbx_align>
             <PDBo:chem_comp_atom.pdbx_aromatic_flag>N</PDBo:chem_comp_atom.pdbx_aromatic_flag>
             <PDBo:chem_comp_atom.pdbx_component_atom_id>H1'A</PDBo:chem_comp_atom.pdbx_component_atom_id>
             <PDBo:chem_comp_atom.pdbx_component_comp_id>05L</PDBo:chem_comp_atom.pdbx_component_comp_id>
             <PDBo:chem_comp_atom.pdbx_leaving_atom_flag>N</PDBo:chem_comp_atom.pdbx_leaving_atom_flag>
-            <PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal rdf:datatype="xsd:decimal">1.266</PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal>
-            <PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal rdf:datatype="xsd:decimal">0.854</PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal>
-            <PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal rdf:datatype="xsd:decimal">0.186</PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal>
-            <PDBo:chem_comp_atom.pdbx_ordinal rdf:datatype="xsd:int">32</PDBo:chem_comp_atom.pdbx_ordinal>
+            <PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.266</PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal>
+            <PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.854</PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal>
+            <PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.186</PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal>
+            <PDBo:chem_comp_atom.pdbx_ordinal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">32</PDBo:chem_comp_atom.pdbx_ordinal>
             <PDBo:chem_comp_atom.pdbx_stereo_config>N</PDBo:chem_comp_atom.pdbx_stereo_config>
             <PDBo:chem_comp_atom.type_symbol>H</PDBo:chem_comp_atom.type_symbol>
           </PDBo:chem_comp_atom>
@@ -943,19 +943,19 @@
             <PDBo:chem_comp_atom.atom_id>H2'</PDBo:chem_comp_atom.atom_id>
             <PDBo:chem_comp_atom.comp_id>05L</PDBo:chem_comp_atom.comp_id>
             <PDBo:chem_comp_atom.alt_atom_id>H2'</PDBo:chem_comp_atom.alt_atom_id>
-            <PDBo:chem_comp_atom.charge rdf:datatype="xsd:int">0</PDBo:chem_comp_atom.charge>
-            <PDBo:chem_comp_atom.model_Cartn_x rdf:datatype="xsd:decimal">3.561</PDBo:chem_comp_atom.model_Cartn_x>
-            <PDBo:chem_comp_atom.model_Cartn_y rdf:datatype="xsd:decimal">40.370</PDBo:chem_comp_atom.model_Cartn_y>
-            <PDBo:chem_comp_atom.model_Cartn_z rdf:datatype="xsd:decimal">13.371</PDBo:chem_comp_atom.model_Cartn_z>
-            <PDBo:chem_comp_atom.pdbx_align rdf:datatype="xsd:int">1</PDBo:chem_comp_atom.pdbx_align>
+            <PDBo:chem_comp_atom.charge rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</PDBo:chem_comp_atom.charge>
+            <PDBo:chem_comp_atom.model_Cartn_x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.561</PDBo:chem_comp_atom.model_Cartn_x>
+            <PDBo:chem_comp_atom.model_Cartn_y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">40.370</PDBo:chem_comp_atom.model_Cartn_y>
+            <PDBo:chem_comp_atom.model_Cartn_z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">13.371</PDBo:chem_comp_atom.model_Cartn_z>
+            <PDBo:chem_comp_atom.pdbx_align rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:chem_comp_atom.pdbx_align>
             <PDBo:chem_comp_atom.pdbx_aromatic_flag>N</PDBo:chem_comp_atom.pdbx_aromatic_flag>
             <PDBo:chem_comp_atom.pdbx_component_atom_id>H2'</PDBo:chem_comp_atom.pdbx_component_atom_id>
             <PDBo:chem_comp_atom.pdbx_component_comp_id>05L</PDBo:chem_comp_atom.pdbx_component_comp_id>
             <PDBo:chem_comp_atom.pdbx_leaving_atom_flag>N</PDBo:chem_comp_atom.pdbx_leaving_atom_flag>
-            <PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal rdf:datatype="xsd:decimal">2.812</PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal>
-            <PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal rdf:datatype="xsd:decimal">-0.756</PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal>
-            <PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal rdf:datatype="xsd:decimal">1.266</PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal>
-            <PDBo:chem_comp_atom.pdbx_ordinal rdf:datatype="xsd:int">33</PDBo:chem_comp_atom.pdbx_ordinal>
+            <PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.812</PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal>
+            <PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.756</PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal>
+            <PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.266</PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal>
+            <PDBo:chem_comp_atom.pdbx_ordinal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">33</PDBo:chem_comp_atom.pdbx_ordinal>
             <PDBo:chem_comp_atom.pdbx_stereo_config>N</PDBo:chem_comp_atom.pdbx_stereo_config>
             <PDBo:chem_comp_atom.type_symbol>H</PDBo:chem_comp_atom.type_symbol>
           </PDBo:chem_comp_atom>
@@ -971,19 +971,19 @@
             <PDBo:chem_comp_atom.atom_id>H2'A</PDBo:chem_comp_atom.atom_id>
             <PDBo:chem_comp_atom.comp_id>05L</PDBo:chem_comp_atom.comp_id>
             <PDBo:chem_comp_atom.alt_atom_id>H2'A</PDBo:chem_comp_atom.alt_atom_id>
-            <PDBo:chem_comp_atom.charge rdf:datatype="xsd:int">0</PDBo:chem_comp_atom.charge>
-            <PDBo:chem_comp_atom.model_Cartn_x rdf:datatype="xsd:decimal">2.338</PDBo:chem_comp_atom.model_Cartn_x>
-            <PDBo:chem_comp_atom.model_Cartn_y rdf:datatype="xsd:decimal">40.446</PDBo:chem_comp_atom.model_Cartn_y>
-            <PDBo:chem_comp_atom.model_Cartn_z rdf:datatype="xsd:decimal">14.685</PDBo:chem_comp_atom.model_Cartn_z>
-            <PDBo:chem_comp_atom.pdbx_align rdf:datatype="xsd:int">0</PDBo:chem_comp_atom.pdbx_align>
+            <PDBo:chem_comp_atom.charge rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</PDBo:chem_comp_atom.charge>
+            <PDBo:chem_comp_atom.model_Cartn_x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.338</PDBo:chem_comp_atom.model_Cartn_x>
+            <PDBo:chem_comp_atom.model_Cartn_y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">40.446</PDBo:chem_comp_atom.model_Cartn_y>
+            <PDBo:chem_comp_atom.model_Cartn_z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">14.685</PDBo:chem_comp_atom.model_Cartn_z>
+            <PDBo:chem_comp_atom.pdbx_align rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</PDBo:chem_comp_atom.pdbx_align>
             <PDBo:chem_comp_atom.pdbx_aromatic_flag>N</PDBo:chem_comp_atom.pdbx_aromatic_flag>
             <PDBo:chem_comp_atom.pdbx_component_atom_id>H2'A</PDBo:chem_comp_atom.pdbx_component_atom_id>
             <PDBo:chem_comp_atom.pdbx_component_comp_id>05L</PDBo:chem_comp_atom.pdbx_component_comp_id>
             <PDBo:chem_comp_atom.pdbx_leaving_atom_flag>N</PDBo:chem_comp_atom.pdbx_leaving_atom_flag>
-            <PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal rdf:datatype="xsd:decimal">2.945</PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal>
-            <PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal rdf:datatype="xsd:decimal">-1.656</PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal>
-            <PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal rdf:datatype="xsd:decimal">-0.264</PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal>
-            <PDBo:chem_comp_atom.pdbx_ordinal rdf:datatype="xsd:int">34</PDBo:chem_comp_atom.pdbx_ordinal>
+            <PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.945</PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal>
+            <PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1.656</PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal>
+            <PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.264</PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal>
+            <PDBo:chem_comp_atom.pdbx_ordinal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">34</PDBo:chem_comp_atom.pdbx_ordinal>
             <PDBo:chem_comp_atom.pdbx_stereo_config>N</PDBo:chem_comp_atom.pdbx_stereo_config>
             <PDBo:chem_comp_atom.type_symbol>H</PDBo:chem_comp_atom.type_symbol>
           </PDBo:chem_comp_atom>
@@ -999,19 +999,19 @@
             <PDBo:chem_comp_atom.atom_id>H3'</PDBo:chem_comp_atom.atom_id>
             <PDBo:chem_comp_atom.comp_id>05L</PDBo:chem_comp_atom.comp_id>
             <PDBo:chem_comp_atom.alt_atom_id>H3'</PDBo:chem_comp_atom.alt_atom_id>
-            <PDBo:chem_comp_atom.charge rdf:datatype="xsd:int">0</PDBo:chem_comp_atom.charge>
-            <PDBo:chem_comp_atom.model_Cartn_x rdf:datatype="xsd:decimal">1.732</PDBo:chem_comp_atom.model_Cartn_x>
-            <PDBo:chem_comp_atom.model_Cartn_y rdf:datatype="xsd:decimal">38.046</PDBo:chem_comp_atom.model_Cartn_y>
-            <PDBo:chem_comp_atom.model_Cartn_z rdf:datatype="xsd:decimal">14.111</PDBo:chem_comp_atom.model_Cartn_z>
-            <PDBo:chem_comp_atom.pdbx_align rdf:datatype="xsd:int">1</PDBo:chem_comp_atom.pdbx_align>
+            <PDBo:chem_comp_atom.charge rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</PDBo:chem_comp_atom.charge>
+            <PDBo:chem_comp_atom.model_Cartn_x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.732</PDBo:chem_comp_atom.model_Cartn_x>
+            <PDBo:chem_comp_atom.model_Cartn_y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">38.046</PDBo:chem_comp_atom.model_Cartn_y>
+            <PDBo:chem_comp_atom.model_Cartn_z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">14.111</PDBo:chem_comp_atom.model_Cartn_z>
+            <PDBo:chem_comp_atom.pdbx_align rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:chem_comp_atom.pdbx_align>
             <PDBo:chem_comp_atom.pdbx_aromatic_flag>N</PDBo:chem_comp_atom.pdbx_aromatic_flag>
             <PDBo:chem_comp_atom.pdbx_component_atom_id>H3'</PDBo:chem_comp_atom.pdbx_component_atom_id>
             <PDBo:chem_comp_atom.pdbx_component_comp_id>05L</PDBo:chem_comp_atom.pdbx_component_comp_id>
             <PDBo:chem_comp_atom.pdbx_leaving_atom_flag>N</PDBo:chem_comp_atom.pdbx_leaving_atom_flag>
-            <PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal rdf:datatype="xsd:decimal">3.863</PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal>
-            <PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal rdf:datatype="xsd:decimal">0.363</PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal>
-            <PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal rdf:datatype="xsd:decimal">-1.372</PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal>
-            <PDBo:chem_comp_atom.pdbx_ordinal rdf:datatype="xsd:int">35</PDBo:chem_comp_atom.pdbx_ordinal>
+            <PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.863</PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal>
+            <PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.363</PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal>
+            <PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1.372</PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal>
+            <PDBo:chem_comp_atom.pdbx_ordinal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">35</PDBo:chem_comp_atom.pdbx_ordinal>
             <PDBo:chem_comp_atom.pdbx_stereo_config>N</PDBo:chem_comp_atom.pdbx_stereo_config>
             <PDBo:chem_comp_atom.type_symbol>H</PDBo:chem_comp_atom.type_symbol>
           </PDBo:chem_comp_atom>
@@ -1027,19 +1027,19 @@
             <PDBo:chem_comp_atom.atom_id>H3'A</PDBo:chem_comp_atom.atom_id>
             <PDBo:chem_comp_atom.comp_id>05L</PDBo:chem_comp_atom.comp_id>
             <PDBo:chem_comp_atom.alt_atom_id>H3'A</PDBo:chem_comp_atom.alt_atom_id>
-            <PDBo:chem_comp_atom.charge rdf:datatype="xsd:int">0</PDBo:chem_comp_atom.charge>
-            <PDBo:chem_comp_atom.model_Cartn_x rdf:datatype="xsd:decimal">3.171</PDBo:chem_comp_atom.model_Cartn_x>
-            <PDBo:chem_comp_atom.model_Cartn_y rdf:datatype="xsd:decimal">38.020</PDBo:chem_comp_atom.model_Cartn_y>
-            <PDBo:chem_comp_atom.model_Cartn_z rdf:datatype="xsd:decimal">13.036</PDBo:chem_comp_atom.model_Cartn_z>
-            <PDBo:chem_comp_atom.pdbx_align rdf:datatype="xsd:int">0</PDBo:chem_comp_atom.pdbx_align>
+            <PDBo:chem_comp_atom.charge rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</PDBo:chem_comp_atom.charge>
+            <PDBo:chem_comp_atom.model_Cartn_x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.171</PDBo:chem_comp_atom.model_Cartn_x>
+            <PDBo:chem_comp_atom.model_Cartn_y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">38.020</PDBo:chem_comp_atom.model_Cartn_y>
+            <PDBo:chem_comp_atom.model_Cartn_z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">13.036</PDBo:chem_comp_atom.model_Cartn_z>
+            <PDBo:chem_comp_atom.pdbx_align rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</PDBo:chem_comp_atom.pdbx_align>
             <PDBo:chem_comp_atom.pdbx_aromatic_flag>N</PDBo:chem_comp_atom.pdbx_aromatic_flag>
             <PDBo:chem_comp_atom.pdbx_component_atom_id>H3'A</PDBo:chem_comp_atom.pdbx_component_atom_id>
             <PDBo:chem_comp_atom.pdbx_component_comp_id>05L</PDBo:chem_comp_atom.pdbx_component_comp_id>
             <PDBo:chem_comp_atom.pdbx_leaving_atom_flag>N</PDBo:chem_comp_atom.pdbx_leaving_atom_flag>
-            <PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal rdf:datatype="xsd:decimal">3.731</PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal>
-            <PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal rdf:datatype="xsd:decimal">1.263</PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal>
-            <PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal rdf:datatype="xsd:decimal">0.158</PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal>
-            <PDBo:chem_comp_atom.pdbx_ordinal rdf:datatype="xsd:int">36</PDBo:chem_comp_atom.pdbx_ordinal>
+            <PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.731</PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal>
+            <PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.263</PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal>
+            <PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.158</PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal>
+            <PDBo:chem_comp_atom.pdbx_ordinal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">36</PDBo:chem_comp_atom.pdbx_ordinal>
             <PDBo:chem_comp_atom.pdbx_stereo_config>N</PDBo:chem_comp_atom.pdbx_stereo_config>
             <PDBo:chem_comp_atom.type_symbol>H</PDBo:chem_comp_atom.type_symbol>
           </PDBo:chem_comp_atom>
@@ -1055,19 +1055,19 @@
             <PDBo:chem_comp_atom.atom_id>H4'</PDBo:chem_comp_atom.atom_id>
             <PDBo:chem_comp_atom.comp_id>05L</PDBo:chem_comp_atom.comp_id>
             <PDBo:chem_comp_atom.alt_atom_id>H4'</PDBo:chem_comp_atom.alt_atom_id>
-            <PDBo:chem_comp_atom.charge rdf:datatype="xsd:int">0</PDBo:chem_comp_atom.charge>
-            <PDBo:chem_comp_atom.model_Cartn_x rdf:datatype="xsd:decimal">4.645</PDBo:chem_comp_atom.model_Cartn_x>
-            <PDBo:chem_comp_atom.model_Cartn_y rdf:datatype="xsd:decimal">38.018</PDBo:chem_comp_atom.model_Cartn_y>
-            <PDBo:chem_comp_atom.model_Cartn_z rdf:datatype="xsd:decimal">14.789</PDBo:chem_comp_atom.model_Cartn_z>
-            <PDBo:chem_comp_atom.pdbx_align rdf:datatype="xsd:int">1</PDBo:chem_comp_atom.pdbx_align>
+            <PDBo:chem_comp_atom.charge rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</PDBo:chem_comp_atom.charge>
+            <PDBo:chem_comp_atom.model_Cartn_x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.645</PDBo:chem_comp_atom.model_Cartn_x>
+            <PDBo:chem_comp_atom.model_Cartn_y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">38.018</PDBo:chem_comp_atom.model_Cartn_y>
+            <PDBo:chem_comp_atom.model_Cartn_z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">14.789</PDBo:chem_comp_atom.model_Cartn_z>
+            <PDBo:chem_comp_atom.pdbx_align rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:chem_comp_atom.pdbx_align>
             <PDBo:chem_comp_atom.pdbx_aromatic_flag>N</PDBo:chem_comp_atom.pdbx_aromatic_flag>
             <PDBo:chem_comp_atom.pdbx_component_atom_id>H4'</PDBo:chem_comp_atom.pdbx_component_atom_id>
             <PDBo:chem_comp_atom.pdbx_component_comp_id>05L</PDBo:chem_comp_atom.pdbx_component_comp_id>
             <PDBo:chem_comp_atom.pdbx_leaving_atom_flag>N</PDBo:chem_comp_atom.pdbx_leaving_atom_flag>
-            <PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal rdf:datatype="xsd:decimal">5.277</PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal>
-            <PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal rdf:datatype="xsd:decimal">-0.346</PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal>
-            <PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal rdf:datatype="xsd:decimal">1.239</PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal>
-            <PDBo:chem_comp_atom.pdbx_ordinal rdf:datatype="xsd:int">37</PDBo:chem_comp_atom.pdbx_ordinal>
+            <PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5.277</PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal>
+            <PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.346</PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal>
+            <PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.239</PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal>
+            <PDBo:chem_comp_atom.pdbx_ordinal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">37</PDBo:chem_comp_atom.pdbx_ordinal>
             <PDBo:chem_comp_atom.pdbx_stereo_config>N</PDBo:chem_comp_atom.pdbx_stereo_config>
             <PDBo:chem_comp_atom.type_symbol>H</PDBo:chem_comp_atom.type_symbol>
           </PDBo:chem_comp_atom>
@@ -1083,19 +1083,19 @@
             <PDBo:chem_comp_atom.atom_id>H4'A</PDBo:chem_comp_atom.atom_id>
             <PDBo:chem_comp_atom.comp_id>05L</PDBo:chem_comp_atom.comp_id>
             <PDBo:chem_comp_atom.alt_atom_id>H4'A</PDBo:chem_comp_atom.alt_atom_id>
-            <PDBo:chem_comp_atom.charge rdf:datatype="xsd:int">0</PDBo:chem_comp_atom.charge>
-            <PDBo:chem_comp_atom.model_Cartn_x rdf:datatype="xsd:decimal">3.592</PDBo:chem_comp_atom.model_Cartn_x>
-            <PDBo:chem_comp_atom.model_Cartn_y rdf:datatype="xsd:decimal">39.051</PDBo:chem_comp_atom.model_Cartn_y>
-            <PDBo:chem_comp_atom.model_Cartn_z rdf:datatype="xsd:decimal">15.814</PDBo:chem_comp_atom.model_Cartn_z>
-            <PDBo:chem_comp_atom.pdbx_align rdf:datatype="xsd:int">0</PDBo:chem_comp_atom.pdbx_align>
+            <PDBo:chem_comp_atom.charge rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</PDBo:chem_comp_atom.charge>
+            <PDBo:chem_comp_atom.model_Cartn_x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.592</PDBo:chem_comp_atom.model_Cartn_x>
+            <PDBo:chem_comp_atom.model_Cartn_y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">39.051</PDBo:chem_comp_atom.model_Cartn_y>
+            <PDBo:chem_comp_atom.model_Cartn_z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">15.814</PDBo:chem_comp_atom.model_Cartn_z>
+            <PDBo:chem_comp_atom.pdbx_align rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</PDBo:chem_comp_atom.pdbx_align>
             <PDBo:chem_comp_atom.pdbx_aromatic_flag>N</PDBo:chem_comp_atom.pdbx_aromatic_flag>
             <PDBo:chem_comp_atom.pdbx_component_atom_id>H4'A</PDBo:chem_comp_atom.pdbx_component_atom_id>
             <PDBo:chem_comp_atom.pdbx_component_comp_id>05L</PDBo:chem_comp_atom.pdbx_component_comp_id>
             <PDBo:chem_comp_atom.pdbx_leaving_atom_flag>N</PDBo:chem_comp_atom.pdbx_leaving_atom_flag>
-            <PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal rdf:datatype="xsd:decimal">5.409</PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal>
-            <PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal rdf:datatype="xsd:decimal">-1.246</PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal>
-            <PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal rdf:datatype="xsd:decimal">-0.291</PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal>
-            <PDBo:chem_comp_atom.pdbx_ordinal rdf:datatype="xsd:int">38</PDBo:chem_comp_atom.pdbx_ordinal>
+            <PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5.409</PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal>
+            <PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1.246</PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal>
+            <PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.291</PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal>
+            <PDBo:chem_comp_atom.pdbx_ordinal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">38</PDBo:chem_comp_atom.pdbx_ordinal>
             <PDBo:chem_comp_atom.pdbx_stereo_config>N</PDBo:chem_comp_atom.pdbx_stereo_config>
             <PDBo:chem_comp_atom.type_symbol>H</PDBo:chem_comp_atom.type_symbol>
           </PDBo:chem_comp_atom>
@@ -1111,19 +1111,19 @@
             <PDBo:chem_comp_atom.atom_id>H5'</PDBo:chem_comp_atom.atom_id>
             <PDBo:chem_comp_atom.comp_id>05L</PDBo:chem_comp_atom.comp_id>
             <PDBo:chem_comp_atom.alt_atom_id>H5'</PDBo:chem_comp_atom.alt_atom_id>
-            <PDBo:chem_comp_atom.charge rdf:datatype="xsd:int">0</PDBo:chem_comp_atom.charge>
-            <PDBo:chem_comp_atom.model_Cartn_x rdf:datatype="xsd:decimal">1.999</PDBo:chem_comp_atom.model_Cartn_x>
-            <PDBo:chem_comp_atom.model_Cartn_y rdf:datatype="xsd:decimal">36.881</PDBo:chem_comp_atom.model_Cartn_y>
-            <PDBo:chem_comp_atom.model_Cartn_z rdf:datatype="xsd:decimal">15.636</PDBo:chem_comp_atom.model_Cartn_z>
-            <PDBo:chem_comp_atom.pdbx_align rdf:datatype="xsd:int">1</PDBo:chem_comp_atom.pdbx_align>
+            <PDBo:chem_comp_atom.charge rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</PDBo:chem_comp_atom.charge>
+            <PDBo:chem_comp_atom.model_Cartn_x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.999</PDBo:chem_comp_atom.model_Cartn_x>
+            <PDBo:chem_comp_atom.model_Cartn_y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">36.881</PDBo:chem_comp_atom.model_Cartn_y>
+            <PDBo:chem_comp_atom.model_Cartn_z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">15.636</PDBo:chem_comp_atom.model_Cartn_z>
+            <PDBo:chem_comp_atom.pdbx_align rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:chem_comp_atom.pdbx_align>
             <PDBo:chem_comp_atom.pdbx_aromatic_flag>N</PDBo:chem_comp_atom.pdbx_aromatic_flag>
             <PDBo:chem_comp_atom.pdbx_component_atom_id>H5'</PDBo:chem_comp_atom.pdbx_component_atom_id>
             <PDBo:chem_comp_atom.pdbx_component_comp_id>05L</PDBo:chem_comp_atom.pdbx_component_comp_id>
             <PDBo:chem_comp_atom.pdbx_leaving_atom_flag>N</PDBo:chem_comp_atom.pdbx_leaving_atom_flag>
-            <PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal rdf:datatype="xsd:decimal">6.328</PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal>
-            <PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal rdf:datatype="xsd:decimal">0.773</PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal>
-            <PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal rdf:datatype="xsd:decimal">-1.399</PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal>
-            <PDBo:chem_comp_atom.pdbx_ordinal rdf:datatype="xsd:int">39</PDBo:chem_comp_atom.pdbx_ordinal>
+            <PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.328</PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal>
+            <PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.773</PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal>
+            <PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1.399</PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal>
+            <PDBo:chem_comp_atom.pdbx_ordinal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">39</PDBo:chem_comp_atom.pdbx_ordinal>
             <PDBo:chem_comp_atom.pdbx_stereo_config>N</PDBo:chem_comp_atom.pdbx_stereo_config>
             <PDBo:chem_comp_atom.type_symbol>H</PDBo:chem_comp_atom.type_symbol>
           </PDBo:chem_comp_atom>
@@ -1139,19 +1139,19 @@
             <PDBo:chem_comp_atom.atom_id>H5'A</PDBo:chem_comp_atom.atom_id>
             <PDBo:chem_comp_atom.comp_id>05L</PDBo:chem_comp_atom.comp_id>
             <PDBo:chem_comp_atom.alt_atom_id>H5'A</PDBo:chem_comp_atom.alt_atom_id>
-            <PDBo:chem_comp_atom.charge rdf:datatype="xsd:int">0</PDBo:chem_comp_atom.charge>
-            <PDBo:chem_comp_atom.model_Cartn_x rdf:datatype="xsd:decimal">3.590</PDBo:chem_comp_atom.model_Cartn_x>
-            <PDBo:chem_comp_atom.model_Cartn_y rdf:datatype="xsd:decimal">36.074</PDBo:chem_comp_atom.model_Cartn_y>
-            <PDBo:chem_comp_atom.model_Cartn_z rdf:datatype="xsd:decimal">15.424</PDBo:chem_comp_atom.model_Cartn_z>
-            <PDBo:chem_comp_atom.pdbx_align rdf:datatype="xsd:int">0</PDBo:chem_comp_atom.pdbx_align>
+            <PDBo:chem_comp_atom.charge rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</PDBo:chem_comp_atom.charge>
+            <PDBo:chem_comp_atom.model_Cartn_x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.590</PDBo:chem_comp_atom.model_Cartn_x>
+            <PDBo:chem_comp_atom.model_Cartn_y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">36.074</PDBo:chem_comp_atom.model_Cartn_y>
+            <PDBo:chem_comp_atom.model_Cartn_z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">15.424</PDBo:chem_comp_atom.model_Cartn_z>
+            <PDBo:chem_comp_atom.pdbx_align rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</PDBo:chem_comp_atom.pdbx_align>
             <PDBo:chem_comp_atom.pdbx_aromatic_flag>N</PDBo:chem_comp_atom.pdbx_aromatic_flag>
             <PDBo:chem_comp_atom.pdbx_component_atom_id>H5'A</PDBo:chem_comp_atom.pdbx_component_atom_id>
             <PDBo:chem_comp_atom.pdbx_component_comp_id>05L</PDBo:chem_comp_atom.pdbx_component_comp_id>
             <PDBo:chem_comp_atom.pdbx_leaving_atom_flag>N</PDBo:chem_comp_atom.pdbx_leaving_atom_flag>
-            <PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal rdf:datatype="xsd:decimal">6.195</PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal>
-            <PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal rdf:datatype="xsd:decimal">1.673</PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal>
-            <PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal rdf:datatype="xsd:decimal">0.131</PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal>
-            <PDBo:chem_comp_atom.pdbx_ordinal rdf:datatype="xsd:int">40</PDBo:chem_comp_atom.pdbx_ordinal>
+            <PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.195</PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal>
+            <PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.673</PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal>
+            <PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.131</PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal>
+            <PDBo:chem_comp_atom.pdbx_ordinal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">40</PDBo:chem_comp_atom.pdbx_ordinal>
             <PDBo:chem_comp_atom.pdbx_stereo_config>N</PDBo:chem_comp_atom.pdbx_stereo_config>
             <PDBo:chem_comp_atom.type_symbol>H</PDBo:chem_comp_atom.type_symbol>
           </PDBo:chem_comp_atom>
@@ -1167,19 +1167,19 @@
             <PDBo:chem_comp_atom.atom_id>H6'</PDBo:chem_comp_atom.atom_id>
             <PDBo:chem_comp_atom.comp_id>05L</PDBo:chem_comp_atom.comp_id>
             <PDBo:chem_comp_atom.alt_atom_id>H6'</PDBo:chem_comp_atom.alt_atom_id>
-            <PDBo:chem_comp_atom.charge rdf:datatype="xsd:int">0</PDBo:chem_comp_atom.charge>
-            <PDBo:chem_comp_atom.model_Cartn_x rdf:datatype="xsd:decimal">4.225</PDBo:chem_comp_atom.model_Cartn_x>
-            <PDBo:chem_comp_atom.model_Cartn_y rdf:datatype="xsd:decimal">37.716</PDBo:chem_comp_atom.model_Cartn_y>
-            <PDBo:chem_comp_atom.model_Cartn_z rdf:datatype="xsd:decimal">17.481</PDBo:chem_comp_atom.model_Cartn_z>
-            <PDBo:chem_comp_atom.pdbx_align rdf:datatype="xsd:int">1</PDBo:chem_comp_atom.pdbx_align>
+            <PDBo:chem_comp_atom.charge rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</PDBo:chem_comp_atom.charge>
+            <PDBo:chem_comp_atom.model_Cartn_x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.225</PDBo:chem_comp_atom.model_Cartn_x>
+            <PDBo:chem_comp_atom.model_Cartn_y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">37.716</PDBo:chem_comp_atom.model_Cartn_y>
+            <PDBo:chem_comp_atom.model_Cartn_z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">17.481</PDBo:chem_comp_atom.model_Cartn_z>
+            <PDBo:chem_comp_atom.pdbx_align rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:chem_comp_atom.pdbx_align>
             <PDBo:chem_comp_atom.pdbx_aromatic_flag>N</PDBo:chem_comp_atom.pdbx_aromatic_flag>
             <PDBo:chem_comp_atom.pdbx_component_atom_id>H6'</PDBo:chem_comp_atom.pdbx_component_atom_id>
             <PDBo:chem_comp_atom.pdbx_component_comp_id>05L</PDBo:chem_comp_atom.pdbx_component_comp_id>
             <PDBo:chem_comp_atom.pdbx_leaving_atom_flag>N</PDBo:chem_comp_atom.pdbx_leaving_atom_flag>
-            <PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal rdf:datatype="xsd:decimal">7.741</PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal>
-            <PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal rdf:datatype="xsd:decimal">0.063</PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal>
-            <PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal rdf:datatype="xsd:decimal">1.211</PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal>
-            <PDBo:chem_comp_atom.pdbx_ordinal rdf:datatype="xsd:int">41</PDBo:chem_comp_atom.pdbx_ordinal>
+            <PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7.741</PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal>
+            <PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.063</PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal>
+            <PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.211</PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal>
+            <PDBo:chem_comp_atom.pdbx_ordinal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">41</PDBo:chem_comp_atom.pdbx_ordinal>
             <PDBo:chem_comp_atom.pdbx_stereo_config>N</PDBo:chem_comp_atom.pdbx_stereo_config>
             <PDBo:chem_comp_atom.type_symbol>H</PDBo:chem_comp_atom.type_symbol>
           </PDBo:chem_comp_atom>
@@ -1195,19 +1195,19 @@
             <PDBo:chem_comp_atom.atom_id>H6'A</PDBo:chem_comp_atom.atom_id>
             <PDBo:chem_comp_atom.comp_id>05L</PDBo:chem_comp_atom.comp_id>
             <PDBo:chem_comp_atom.alt_atom_id>H6'A</PDBo:chem_comp_atom.alt_atom_id>
-            <PDBo:chem_comp_atom.charge rdf:datatype="xsd:int">0</PDBo:chem_comp_atom.charge>
-            <PDBo:chem_comp_atom.model_Cartn_x rdf:datatype="xsd:decimal">2.467</PDBo:chem_comp_atom.model_Cartn_x>
-            <PDBo:chem_comp_atom.model_Cartn_y rdf:datatype="xsd:decimal">37.534</PDBo:chem_comp_atom.model_Cartn_y>
-            <PDBo:chem_comp_atom.model_Cartn_z rdf:datatype="xsd:decimal">17.802</PDBo:chem_comp_atom.model_Cartn_z>
-            <PDBo:chem_comp_atom.pdbx_align rdf:datatype="xsd:int">0</PDBo:chem_comp_atom.pdbx_align>
+            <PDBo:chem_comp_atom.charge rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</PDBo:chem_comp_atom.charge>
+            <PDBo:chem_comp_atom.model_Cartn_x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.467</PDBo:chem_comp_atom.model_Cartn_x>
+            <PDBo:chem_comp_atom.model_Cartn_y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">37.534</PDBo:chem_comp_atom.model_Cartn_y>
+            <PDBo:chem_comp_atom.model_Cartn_z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">17.802</PDBo:chem_comp_atom.model_Cartn_z>
+            <PDBo:chem_comp_atom.pdbx_align rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</PDBo:chem_comp_atom.pdbx_align>
             <PDBo:chem_comp_atom.pdbx_aromatic_flag>N</PDBo:chem_comp_atom.pdbx_aromatic_flag>
             <PDBo:chem_comp_atom.pdbx_component_atom_id>H6'A</PDBo:chem_comp_atom.pdbx_component_atom_id>
             <PDBo:chem_comp_atom.pdbx_component_comp_id>05L</PDBo:chem_comp_atom.pdbx_component_comp_id>
             <PDBo:chem_comp_atom.pdbx_leaving_atom_flag>N</PDBo:chem_comp_atom.pdbx_leaving_atom_flag>
-            <PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal rdf:datatype="xsd:decimal">7.874</PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal>
-            <PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal rdf:datatype="xsd:decimal">-0.837</PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal>
-            <PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal rdf:datatype="xsd:decimal">-0.319</PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal>
-            <PDBo:chem_comp_atom.pdbx_ordinal rdf:datatype="xsd:int">42</PDBo:chem_comp_atom.pdbx_ordinal>
+            <PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7.874</PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal>
+            <PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.837</PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal>
+            <PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.319</PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal>
+            <PDBo:chem_comp_atom.pdbx_ordinal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">42</PDBo:chem_comp_atom.pdbx_ordinal>
             <PDBo:chem_comp_atom.pdbx_stereo_config>N</PDBo:chem_comp_atom.pdbx_stereo_config>
             <PDBo:chem_comp_atom.type_symbol>H</PDBo:chem_comp_atom.type_symbol>
           </PDBo:chem_comp_atom>
@@ -1223,19 +1223,19 @@
             <PDBo:chem_comp_atom.atom_id>H7'</PDBo:chem_comp_atom.atom_id>
             <PDBo:chem_comp_atom.comp_id>05L</PDBo:chem_comp_atom.comp_id>
             <PDBo:chem_comp_atom.alt_atom_id>H7'</PDBo:chem_comp_atom.alt_atom_id>
-            <PDBo:chem_comp_atom.charge rdf:datatype="xsd:int">0</PDBo:chem_comp_atom.charge>
-            <PDBo:chem_comp_atom.model_Cartn_x rdf:datatype="xsd:decimal">3.772</PDBo:chem_comp_atom.model_Cartn_x>
-            <PDBo:chem_comp_atom.model_Cartn_y rdf:datatype="xsd:decimal">35.752</PDBo:chem_comp_atom.model_Cartn_y>
-            <PDBo:chem_comp_atom.model_Cartn_z rdf:datatype="xsd:decimal">18.917</PDBo:chem_comp_atom.model_Cartn_z>
-            <PDBo:chem_comp_atom.pdbx_align rdf:datatype="xsd:int">1</PDBo:chem_comp_atom.pdbx_align>
+            <PDBo:chem_comp_atom.charge rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</PDBo:chem_comp_atom.charge>
+            <PDBo:chem_comp_atom.model_Cartn_x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.772</PDBo:chem_comp_atom.model_Cartn_x>
+            <PDBo:chem_comp_atom.model_Cartn_y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">35.752</PDBo:chem_comp_atom.model_Cartn_y>
+            <PDBo:chem_comp_atom.model_Cartn_z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">18.917</PDBo:chem_comp_atom.model_Cartn_z>
+            <PDBo:chem_comp_atom.pdbx_align rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:chem_comp_atom.pdbx_align>
             <PDBo:chem_comp_atom.pdbx_aromatic_flag>N</PDBo:chem_comp_atom.pdbx_aromatic_flag>
             <PDBo:chem_comp_atom.pdbx_component_atom_id>H7'</PDBo:chem_comp_atom.pdbx_component_atom_id>
             <PDBo:chem_comp_atom.pdbx_component_comp_id>05L</PDBo:chem_comp_atom.pdbx_component_comp_id>
             <PDBo:chem_comp_atom.pdbx_leaving_atom_flag>N</PDBo:chem_comp_atom.pdbx_leaving_atom_flag>
-            <PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal rdf:datatype="xsd:decimal">9.788</PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal>
-            <PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal rdf:datatype="xsd:decimal">0.712</PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal>
-            <PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal rdf:datatype="xsd:decimal">-0.029</PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal>
-            <PDBo:chem_comp_atom.pdbx_ordinal rdf:datatype="xsd:int">43</PDBo:chem_comp_atom.pdbx_ordinal>
+            <PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">9.788</PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal>
+            <PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.712</PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal>
+            <PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.029</PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal>
+            <PDBo:chem_comp_atom.pdbx_ordinal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">43</PDBo:chem_comp_atom.pdbx_ordinal>
             <PDBo:chem_comp_atom.pdbx_stereo_config>N</PDBo:chem_comp_atom.pdbx_stereo_config>
             <PDBo:chem_comp_atom.type_symbol>H</PDBo:chem_comp_atom.type_symbol>
           </PDBo:chem_comp_atom>
@@ -1251,19 +1251,19 @@
             <PDBo:chem_comp_atom.atom_id>H7'A</PDBo:chem_comp_atom.atom_id>
             <PDBo:chem_comp_atom.comp_id>05L</PDBo:chem_comp_atom.comp_id>
             <PDBo:chem_comp_atom.alt_atom_id>H7'A</PDBo:chem_comp_atom.alt_atom_id>
-            <PDBo:chem_comp_atom.charge rdf:datatype="xsd:int">0</PDBo:chem_comp_atom.charge>
-            <PDBo:chem_comp_atom.model_Cartn_x rdf:datatype="xsd:decimal">2.693</PDBo:chem_comp_atom.model_Cartn_x>
-            <PDBo:chem_comp_atom.model_Cartn_y rdf:datatype="xsd:decimal">35.079</PDBo:chem_comp_atom.model_Cartn_y>
-            <PDBo:chem_comp_atom.model_Cartn_z rdf:datatype="xsd:decimal">17.649</PDBo:chem_comp_atom.model_Cartn_z>
-            <PDBo:chem_comp_atom.pdbx_align rdf:datatype="xsd:int">0</PDBo:chem_comp_atom.pdbx_align>
+            <PDBo:chem_comp_atom.charge rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</PDBo:chem_comp_atom.charge>
+            <PDBo:chem_comp_atom.model_Cartn_x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.693</PDBo:chem_comp_atom.model_Cartn_x>
+            <PDBo:chem_comp_atom.model_Cartn_y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">35.079</PDBo:chem_comp_atom.model_Cartn_y>
+            <PDBo:chem_comp_atom.model_Cartn_z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">17.649</PDBo:chem_comp_atom.model_Cartn_z>
+            <PDBo:chem_comp_atom.pdbx_align rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</PDBo:chem_comp_atom.pdbx_align>
             <PDBo:chem_comp_atom.pdbx_aromatic_flag>N</PDBo:chem_comp_atom.pdbx_aromatic_flag>
             <PDBo:chem_comp_atom.pdbx_component_atom_id>H7'A</PDBo:chem_comp_atom.pdbx_component_atom_id>
             <PDBo:chem_comp_atom.pdbx_component_comp_id>05L</PDBo:chem_comp_atom.pdbx_component_comp_id>
             <PDBo:chem_comp_atom.pdbx_leaving_atom_flag>N</PDBo:chem_comp_atom.pdbx_leaving_atom_flag>
-            <PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal rdf:datatype="xsd:decimal">8.792</PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal>
-            <PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal rdf:datatype="xsd:decimal">1.182</PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal>
-            <PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal rdf:datatype="xsd:decimal">-1.427</PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal>
-            <PDBo:chem_comp_atom.pdbx_ordinal rdf:datatype="xsd:int">44</PDBo:chem_comp_atom.pdbx_ordinal>
+            <PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8.792</PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal>
+            <PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.182</PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal>
+            <PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1.427</PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal>
+            <PDBo:chem_comp_atom.pdbx_ordinal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">44</PDBo:chem_comp_atom.pdbx_ordinal>
             <PDBo:chem_comp_atom.pdbx_stereo_config>N</PDBo:chem_comp_atom.pdbx_stereo_config>
             <PDBo:chem_comp_atom.type_symbol>H</PDBo:chem_comp_atom.type_symbol>
           </PDBo:chem_comp_atom>
@@ -1279,19 +1279,19 @@
             <PDBo:chem_comp_atom.atom_id>H7'B</PDBo:chem_comp_atom.atom_id>
             <PDBo:chem_comp_atom.comp_id>05L</PDBo:chem_comp_atom.comp_id>
             <PDBo:chem_comp_atom.alt_atom_id>H7'B</PDBo:chem_comp_atom.alt_atom_id>
-            <PDBo:chem_comp_atom.charge rdf:datatype="xsd:int">0</PDBo:chem_comp_atom.charge>
-            <PDBo:chem_comp_atom.model_Cartn_x rdf:datatype="xsd:decimal">4.451</PDBo:chem_comp_atom.model_Cartn_x>
-            <PDBo:chem_comp_atom.model_Cartn_y rdf:datatype="xsd:decimal">35.261</PDBo:chem_comp_atom.model_Cartn_y>
-            <PDBo:chem_comp_atom.model_Cartn_z rdf:datatype="xsd:decimal">17.328</PDBo:chem_comp_atom.model_Cartn_z>
-            <PDBo:chem_comp_atom.pdbx_align rdf:datatype="xsd:int">0</PDBo:chem_comp_atom.pdbx_align>
+            <PDBo:chem_comp_atom.charge rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</PDBo:chem_comp_atom.charge>
+            <PDBo:chem_comp_atom.model_Cartn_x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.451</PDBo:chem_comp_atom.model_Cartn_x>
+            <PDBo:chem_comp_atom.model_Cartn_y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">35.261</PDBo:chem_comp_atom.model_Cartn_y>
+            <PDBo:chem_comp_atom.model_Cartn_z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">17.328</PDBo:chem_comp_atom.model_Cartn_z>
+            <PDBo:chem_comp_atom.pdbx_align rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</PDBo:chem_comp_atom.pdbx_align>
             <PDBo:chem_comp_atom.pdbx_aromatic_flag>N</PDBo:chem_comp_atom.pdbx_aromatic_flag>
             <PDBo:chem_comp_atom.pdbx_component_atom_id>H7'B</PDBo:chem_comp_atom.pdbx_component_atom_id>
             <PDBo:chem_comp_atom.pdbx_component_comp_id>05L</PDBo:chem_comp_atom.pdbx_component_comp_id>
             <PDBo:chem_comp_atom.pdbx_leaving_atom_flag>N</PDBo:chem_comp_atom.pdbx_leaving_atom_flag>
-            <PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal rdf:datatype="xsd:decimal">8.660</PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal>
-            <PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal rdf:datatype="xsd:decimal">2.082</PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal>
-            <PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal rdf:datatype="xsd:decimal">0.103</PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal>
-            <PDBo:chem_comp_atom.pdbx_ordinal rdf:datatype="xsd:int">45</PDBo:chem_comp_atom.pdbx_ordinal>
+            <PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8.660</PDBo:chem_comp_atom.pdbx_model_Cartn_x_ideal>
+            <PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.082</PDBo:chem_comp_atom.pdbx_model_Cartn_y_ideal>
+            <PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.103</PDBo:chem_comp_atom.pdbx_model_Cartn_z_ideal>
+            <PDBo:chem_comp_atom.pdbx_ordinal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">45</PDBo:chem_comp_atom.pdbx_ordinal>
             <PDBo:chem_comp_atom.pdbx_stereo_config>N</PDBo:chem_comp_atom.pdbx_stereo_config>
             <PDBo:chem_comp_atom.type_symbol>H</PDBo:chem_comp_atom.type_symbol>
           </PDBo:chem_comp_atom>
@@ -1322,7 +1322,7 @@
             <PDBo:chem_comp_bond.atom_id_2>SE</PDBo:chem_comp_bond.atom_id_2>
             <PDBo:chem_comp_bond.comp_id>05L</PDBo:chem_comp_bond.comp_id>
             <PDBo:chem_comp_bond.pdbx_aromatic_flag>N</PDBo:chem_comp_bond.pdbx_aromatic_flag>
-            <PDBo:chem_comp_bond.pdbx_ordinal rdf:datatype="xsd:int">1</PDBo:chem_comp_bond.pdbx_ordinal>
+            <PDBo:chem_comp_bond.pdbx_ordinal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:chem_comp_bond.pdbx_ordinal>
             <PDBo:chem_comp_bond.pdbx_stereo_config>N</PDBo:chem_comp_bond.pdbx_stereo_config>
             <PDBo:chem_comp_bond.value_order>sing</PDBo:chem_comp_bond.value_order>
           </PDBo:chem_comp_bond>
@@ -1349,7 +1349,7 @@
             <PDBo:chem_comp_bond.atom_id_2>SE</PDBo:chem_comp_bond.atom_id_2>
             <PDBo:chem_comp_bond.comp_id>05L</PDBo:chem_comp_bond.comp_id>
             <PDBo:chem_comp_bond.pdbx_aromatic_flag>N</PDBo:chem_comp_bond.pdbx_aromatic_flag>
-            <PDBo:chem_comp_bond.pdbx_ordinal rdf:datatype="xsd:int">2</PDBo:chem_comp_bond.pdbx_ordinal>
+            <PDBo:chem_comp_bond.pdbx_ordinal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</PDBo:chem_comp_bond.pdbx_ordinal>
             <PDBo:chem_comp_bond.pdbx_stereo_config>N</PDBo:chem_comp_bond.pdbx_stereo_config>
             <PDBo:chem_comp_bond.value_order>sing</PDBo:chem_comp_bond.value_order>
           </PDBo:chem_comp_bond>
@@ -1376,7 +1376,7 @@
             <PDBo:chem_comp_bond.atom_id_2>C2</PDBo:chem_comp_bond.atom_id_2>
             <PDBo:chem_comp_bond.comp_id>05L</PDBo:chem_comp_bond.comp_id>
             <PDBo:chem_comp_bond.pdbx_aromatic_flag>N</PDBo:chem_comp_bond.pdbx_aromatic_flag>
-            <PDBo:chem_comp_bond.pdbx_ordinal rdf:datatype="xsd:int">3</PDBo:chem_comp_bond.pdbx_ordinal>
+            <PDBo:chem_comp_bond.pdbx_ordinal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</PDBo:chem_comp_bond.pdbx_ordinal>
             <PDBo:chem_comp_bond.pdbx_stereo_config>N</PDBo:chem_comp_bond.pdbx_stereo_config>
             <PDBo:chem_comp_bond.value_order>sing</PDBo:chem_comp_bond.value_order>
           </PDBo:chem_comp_bond>
@@ -1403,7 +1403,7 @@
             <PDBo:chem_comp_bond.atom_id_2>O5</PDBo:chem_comp_bond.atom_id_2>
             <PDBo:chem_comp_bond.comp_id>05L</PDBo:chem_comp_bond.comp_id>
             <PDBo:chem_comp_bond.pdbx_aromatic_flag>N</PDBo:chem_comp_bond.pdbx_aromatic_flag>
-            <PDBo:chem_comp_bond.pdbx_ordinal rdf:datatype="xsd:int">4</PDBo:chem_comp_bond.pdbx_ordinal>
+            <PDBo:chem_comp_bond.pdbx_ordinal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</PDBo:chem_comp_bond.pdbx_ordinal>
             <PDBo:chem_comp_bond.pdbx_stereo_config>N</PDBo:chem_comp_bond.pdbx_stereo_config>
             <PDBo:chem_comp_bond.value_order>sing</PDBo:chem_comp_bond.value_order>
           </PDBo:chem_comp_bond>
@@ -1430,7 +1430,7 @@
             <PDBo:chem_comp_bond.atom_id_2>H1</PDBo:chem_comp_bond.atom_id_2>
             <PDBo:chem_comp_bond.comp_id>05L</PDBo:chem_comp_bond.comp_id>
             <PDBo:chem_comp_bond.pdbx_aromatic_flag>N</PDBo:chem_comp_bond.pdbx_aromatic_flag>
-            <PDBo:chem_comp_bond.pdbx_ordinal rdf:datatype="xsd:int">5</PDBo:chem_comp_bond.pdbx_ordinal>
+            <PDBo:chem_comp_bond.pdbx_ordinal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">5</PDBo:chem_comp_bond.pdbx_ordinal>
             <PDBo:chem_comp_bond.pdbx_stereo_config>N</PDBo:chem_comp_bond.pdbx_stereo_config>
             <PDBo:chem_comp_bond.value_order>sing</PDBo:chem_comp_bond.value_order>
           </PDBo:chem_comp_bond>
@@ -1457,7 +1457,7 @@
             <PDBo:chem_comp_bond.atom_id_2>C2</PDBo:chem_comp_bond.atom_id_2>
             <PDBo:chem_comp_bond.comp_id>05L</PDBo:chem_comp_bond.comp_id>
             <PDBo:chem_comp_bond.pdbx_aromatic_flag>N</PDBo:chem_comp_bond.pdbx_aromatic_flag>
-            <PDBo:chem_comp_bond.pdbx_ordinal rdf:datatype="xsd:int">6</PDBo:chem_comp_bond.pdbx_ordinal>
+            <PDBo:chem_comp_bond.pdbx_ordinal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">6</PDBo:chem_comp_bond.pdbx_ordinal>
             <PDBo:chem_comp_bond.pdbx_stereo_config>N</PDBo:chem_comp_bond.pdbx_stereo_config>
             <PDBo:chem_comp_bond.value_order>sing</PDBo:chem_comp_bond.value_order>
           </PDBo:chem_comp_bond>
@@ -1484,7 +1484,7 @@
             <PDBo:chem_comp_bond.atom_id_2>C2</PDBo:chem_comp_bond.atom_id_2>
             <PDBo:chem_comp_bond.comp_id>05L</PDBo:chem_comp_bond.comp_id>
             <PDBo:chem_comp_bond.pdbx_aromatic_flag>N</PDBo:chem_comp_bond.pdbx_aromatic_flag>
-            <PDBo:chem_comp_bond.pdbx_ordinal rdf:datatype="xsd:int">7</PDBo:chem_comp_bond.pdbx_ordinal>
+            <PDBo:chem_comp_bond.pdbx_ordinal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">7</PDBo:chem_comp_bond.pdbx_ordinal>
             <PDBo:chem_comp_bond.pdbx_stereo_config>N</PDBo:chem_comp_bond.pdbx_stereo_config>
             <PDBo:chem_comp_bond.value_order>sing</PDBo:chem_comp_bond.value_order>
           </PDBo:chem_comp_bond>
@@ -1511,7 +1511,7 @@
             <PDBo:chem_comp_bond.atom_id_2>H2</PDBo:chem_comp_bond.atom_id_2>
             <PDBo:chem_comp_bond.comp_id>05L</PDBo:chem_comp_bond.comp_id>
             <PDBo:chem_comp_bond.pdbx_aromatic_flag>N</PDBo:chem_comp_bond.pdbx_aromatic_flag>
-            <PDBo:chem_comp_bond.pdbx_ordinal rdf:datatype="xsd:int">8</PDBo:chem_comp_bond.pdbx_ordinal>
+            <PDBo:chem_comp_bond.pdbx_ordinal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">8</PDBo:chem_comp_bond.pdbx_ordinal>
             <PDBo:chem_comp_bond.pdbx_stereo_config>N</PDBo:chem_comp_bond.pdbx_stereo_config>
             <PDBo:chem_comp_bond.value_order>sing</PDBo:chem_comp_bond.value_order>
           </PDBo:chem_comp_bond>
@@ -1538,7 +1538,7 @@
             <PDBo:chem_comp_bond.atom_id_2>HO2</PDBo:chem_comp_bond.atom_id_2>
             <PDBo:chem_comp_bond.comp_id>05L</PDBo:chem_comp_bond.comp_id>
             <PDBo:chem_comp_bond.pdbx_aromatic_flag>N</PDBo:chem_comp_bond.pdbx_aromatic_flag>
-            <PDBo:chem_comp_bond.pdbx_ordinal rdf:datatype="xsd:int">9</PDBo:chem_comp_bond.pdbx_ordinal>
+            <PDBo:chem_comp_bond.pdbx_ordinal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">9</PDBo:chem_comp_bond.pdbx_ordinal>
             <PDBo:chem_comp_bond.pdbx_stereo_config>N</PDBo:chem_comp_bond.pdbx_stereo_config>
             <PDBo:chem_comp_bond.value_order>sing</PDBo:chem_comp_bond.value_order>
           </PDBo:chem_comp_bond>
@@ -1565,7 +1565,7 @@
             <PDBo:chem_comp_bond.atom_id_2>O3</PDBo:chem_comp_bond.atom_id_2>
             <PDBo:chem_comp_bond.comp_id>05L</PDBo:chem_comp_bond.comp_id>
             <PDBo:chem_comp_bond.pdbx_aromatic_flag>N</PDBo:chem_comp_bond.pdbx_aromatic_flag>
-            <PDBo:chem_comp_bond.pdbx_ordinal rdf:datatype="xsd:int">10</PDBo:chem_comp_bond.pdbx_ordinal>
+            <PDBo:chem_comp_bond.pdbx_ordinal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">10</PDBo:chem_comp_bond.pdbx_ordinal>
             <PDBo:chem_comp_bond.pdbx_stereo_config>N</PDBo:chem_comp_bond.pdbx_stereo_config>
             <PDBo:chem_comp_bond.value_order>sing</PDBo:chem_comp_bond.value_order>
           </PDBo:chem_comp_bond>
@@ -1592,7 +1592,7 @@
             <PDBo:chem_comp_bond.atom_id_2>C4</PDBo:chem_comp_bond.atom_id_2>
             <PDBo:chem_comp_bond.comp_id>05L</PDBo:chem_comp_bond.comp_id>
             <PDBo:chem_comp_bond.pdbx_aromatic_flag>N</PDBo:chem_comp_bond.pdbx_aromatic_flag>
-            <PDBo:chem_comp_bond.pdbx_ordinal rdf:datatype="xsd:int">11</PDBo:chem_comp_bond.pdbx_ordinal>
+            <PDBo:chem_comp_bond.pdbx_ordinal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">11</PDBo:chem_comp_bond.pdbx_ordinal>
             <PDBo:chem_comp_bond.pdbx_stereo_config>N</PDBo:chem_comp_bond.pdbx_stereo_config>
             <PDBo:chem_comp_bond.value_order>sing</PDBo:chem_comp_bond.value_order>
           </PDBo:chem_comp_bond>
@@ -1619,7 +1619,7 @@
             <PDBo:chem_comp_bond.atom_id_2>H3</PDBo:chem_comp_bond.atom_id_2>
             <PDBo:chem_comp_bond.comp_id>05L</PDBo:chem_comp_bond.comp_id>
             <PDBo:chem_comp_bond.pdbx_aromatic_flag>N</PDBo:chem_comp_bond.pdbx_aromatic_flag>
-            <PDBo:chem_comp_bond.pdbx_ordinal rdf:datatype="xsd:int">12</PDBo:chem_comp_bond.pdbx_ordinal>
+            <PDBo:chem_comp_bond.pdbx_ordinal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">12</PDBo:chem_comp_bond.pdbx_ordinal>
             <PDBo:chem_comp_bond.pdbx_stereo_config>N</PDBo:chem_comp_bond.pdbx_stereo_config>
             <PDBo:chem_comp_bond.value_order>sing</PDBo:chem_comp_bond.value_order>
           </PDBo:chem_comp_bond>
@@ -1646,7 +1646,7 @@
             <PDBo:chem_comp_bond.atom_id_2>HO3</PDBo:chem_comp_bond.atom_id_2>
             <PDBo:chem_comp_bond.comp_id>05L</PDBo:chem_comp_bond.comp_id>
             <PDBo:chem_comp_bond.pdbx_aromatic_flag>N</PDBo:chem_comp_bond.pdbx_aromatic_flag>
-            <PDBo:chem_comp_bond.pdbx_ordinal rdf:datatype="xsd:int">13</PDBo:chem_comp_bond.pdbx_ordinal>
+            <PDBo:chem_comp_bond.pdbx_ordinal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">13</PDBo:chem_comp_bond.pdbx_ordinal>
             <PDBo:chem_comp_bond.pdbx_stereo_config>N</PDBo:chem_comp_bond.pdbx_stereo_config>
             <PDBo:chem_comp_bond.value_order>sing</PDBo:chem_comp_bond.value_order>
           </PDBo:chem_comp_bond>
@@ -1673,7 +1673,7 @@
             <PDBo:chem_comp_bond.atom_id_2>C4</PDBo:chem_comp_bond.atom_id_2>
             <PDBo:chem_comp_bond.comp_id>05L</PDBo:chem_comp_bond.comp_id>
             <PDBo:chem_comp_bond.pdbx_aromatic_flag>N</PDBo:chem_comp_bond.pdbx_aromatic_flag>
-            <PDBo:chem_comp_bond.pdbx_ordinal rdf:datatype="xsd:int">14</PDBo:chem_comp_bond.pdbx_ordinal>
+            <PDBo:chem_comp_bond.pdbx_ordinal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">14</PDBo:chem_comp_bond.pdbx_ordinal>
             <PDBo:chem_comp_bond.pdbx_stereo_config>N</PDBo:chem_comp_bond.pdbx_stereo_config>
             <PDBo:chem_comp_bond.value_order>sing</PDBo:chem_comp_bond.value_order>
           </PDBo:chem_comp_bond>
@@ -1700,7 +1700,7 @@
             <PDBo:chem_comp_bond.atom_id_2>C4</PDBo:chem_comp_bond.atom_id_2>
             <PDBo:chem_comp_bond.comp_id>05L</PDBo:chem_comp_bond.comp_id>
             <PDBo:chem_comp_bond.pdbx_aromatic_flag>N</PDBo:chem_comp_bond.pdbx_aromatic_flag>
-            <PDBo:chem_comp_bond.pdbx_ordinal rdf:datatype="xsd:int">15</PDBo:chem_comp_bond.pdbx_ordinal>
+            <PDBo:chem_comp_bond.pdbx_ordinal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">15</PDBo:chem_comp_bond.pdbx_ordinal>
             <PDBo:chem_comp_bond.pdbx_stereo_config>N</PDBo:chem_comp_bond.pdbx_stereo_config>
             <PDBo:chem_comp_bond.value_order>sing</PDBo:chem_comp_bond.value_order>
           </PDBo:chem_comp_bond>
@@ -1727,7 +1727,7 @@
             <PDBo:chem_comp_bond.atom_id_2>H4</PDBo:chem_comp_bond.atom_id_2>
             <PDBo:chem_comp_bond.comp_id>05L</PDBo:chem_comp_bond.comp_id>
             <PDBo:chem_comp_bond.pdbx_aromatic_flag>N</PDBo:chem_comp_bond.pdbx_aromatic_flag>
-            <PDBo:chem_comp_bond.pdbx_ordinal rdf:datatype="xsd:int">16</PDBo:chem_comp_bond.pdbx_ordinal>
+            <PDBo:chem_comp_bond.pdbx_ordinal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">16</PDBo:chem_comp_bond.pdbx_ordinal>
             <PDBo:chem_comp_bond.pdbx_stereo_config>N</PDBo:chem_comp_bond.pdbx_stereo_config>
             <PDBo:chem_comp_bond.value_order>sing</PDBo:chem_comp_bond.value_order>
           </PDBo:chem_comp_bond>
@@ -1754,7 +1754,7 @@
             <PDBo:chem_comp_bond.atom_id_2>HO4</PDBo:chem_comp_bond.atom_id_2>
             <PDBo:chem_comp_bond.comp_id>05L</PDBo:chem_comp_bond.comp_id>
             <PDBo:chem_comp_bond.pdbx_aromatic_flag>N</PDBo:chem_comp_bond.pdbx_aromatic_flag>
-            <PDBo:chem_comp_bond.pdbx_ordinal rdf:datatype="xsd:int">17</PDBo:chem_comp_bond.pdbx_ordinal>
+            <PDBo:chem_comp_bond.pdbx_ordinal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">17</PDBo:chem_comp_bond.pdbx_ordinal>
             <PDBo:chem_comp_bond.pdbx_stereo_config>N</PDBo:chem_comp_bond.pdbx_stereo_config>
             <PDBo:chem_comp_bond.value_order>sing</PDBo:chem_comp_bond.value_order>
           </PDBo:chem_comp_bond>
@@ -1781,7 +1781,7 @@
             <PDBo:chem_comp_bond.atom_id_2>O5</PDBo:chem_comp_bond.atom_id_2>
             <PDBo:chem_comp_bond.comp_id>05L</PDBo:chem_comp_bond.comp_id>
             <PDBo:chem_comp_bond.pdbx_aromatic_flag>N</PDBo:chem_comp_bond.pdbx_aromatic_flag>
-            <PDBo:chem_comp_bond.pdbx_ordinal rdf:datatype="xsd:int">18</PDBo:chem_comp_bond.pdbx_ordinal>
+            <PDBo:chem_comp_bond.pdbx_ordinal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">18</PDBo:chem_comp_bond.pdbx_ordinal>
             <PDBo:chem_comp_bond.pdbx_stereo_config>N</PDBo:chem_comp_bond.pdbx_stereo_config>
             <PDBo:chem_comp_bond.value_order>sing</PDBo:chem_comp_bond.value_order>
           </PDBo:chem_comp_bond>
@@ -1808,7 +1808,7 @@
             <PDBo:chem_comp_bond.atom_id_2>C6</PDBo:chem_comp_bond.atom_id_2>
             <PDBo:chem_comp_bond.comp_id>05L</PDBo:chem_comp_bond.comp_id>
             <PDBo:chem_comp_bond.pdbx_aromatic_flag>N</PDBo:chem_comp_bond.pdbx_aromatic_flag>
-            <PDBo:chem_comp_bond.pdbx_ordinal rdf:datatype="xsd:int">19</PDBo:chem_comp_bond.pdbx_ordinal>
+            <PDBo:chem_comp_bond.pdbx_ordinal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">19</PDBo:chem_comp_bond.pdbx_ordinal>
             <PDBo:chem_comp_bond.pdbx_stereo_config>N</PDBo:chem_comp_bond.pdbx_stereo_config>
             <PDBo:chem_comp_bond.value_order>sing</PDBo:chem_comp_bond.value_order>
           </PDBo:chem_comp_bond>
@@ -1835,7 +1835,7 @@
             <PDBo:chem_comp_bond.atom_id_2>H5</PDBo:chem_comp_bond.atom_id_2>
             <PDBo:chem_comp_bond.comp_id>05L</PDBo:chem_comp_bond.comp_id>
             <PDBo:chem_comp_bond.pdbx_aromatic_flag>N</PDBo:chem_comp_bond.pdbx_aromatic_flag>
-            <PDBo:chem_comp_bond.pdbx_ordinal rdf:datatype="xsd:int">20</PDBo:chem_comp_bond.pdbx_ordinal>
+            <PDBo:chem_comp_bond.pdbx_ordinal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">20</PDBo:chem_comp_bond.pdbx_ordinal>
             <PDBo:chem_comp_bond.pdbx_stereo_config>N</PDBo:chem_comp_bond.pdbx_stereo_config>
             <PDBo:chem_comp_bond.value_order>sing</PDBo:chem_comp_bond.value_order>
           </PDBo:chem_comp_bond>
@@ -1862,7 +1862,7 @@
             <PDBo:chem_comp_bond.atom_id_2>O6</PDBo:chem_comp_bond.atom_id_2>
             <PDBo:chem_comp_bond.comp_id>05L</PDBo:chem_comp_bond.comp_id>
             <PDBo:chem_comp_bond.pdbx_aromatic_flag>N</PDBo:chem_comp_bond.pdbx_aromatic_flag>
-            <PDBo:chem_comp_bond.pdbx_ordinal rdf:datatype="xsd:int">21</PDBo:chem_comp_bond.pdbx_ordinal>
+            <PDBo:chem_comp_bond.pdbx_ordinal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">21</PDBo:chem_comp_bond.pdbx_ordinal>
             <PDBo:chem_comp_bond.pdbx_stereo_config>N</PDBo:chem_comp_bond.pdbx_stereo_config>
             <PDBo:chem_comp_bond.value_order>sing</PDBo:chem_comp_bond.value_order>
           </PDBo:chem_comp_bond>
@@ -1889,7 +1889,7 @@
             <PDBo:chem_comp_bond.atom_id_2>H61</PDBo:chem_comp_bond.atom_id_2>
             <PDBo:chem_comp_bond.comp_id>05L</PDBo:chem_comp_bond.comp_id>
             <PDBo:chem_comp_bond.pdbx_aromatic_flag>N</PDBo:chem_comp_bond.pdbx_aromatic_flag>
-            <PDBo:chem_comp_bond.pdbx_ordinal rdf:datatype="xsd:int">22</PDBo:chem_comp_bond.pdbx_ordinal>
+            <PDBo:chem_comp_bond.pdbx_ordinal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">22</PDBo:chem_comp_bond.pdbx_ordinal>
             <PDBo:chem_comp_bond.pdbx_stereo_config>N</PDBo:chem_comp_bond.pdbx_stereo_config>
             <PDBo:chem_comp_bond.value_order>sing</PDBo:chem_comp_bond.value_order>
           </PDBo:chem_comp_bond>
@@ -1916,7 +1916,7 @@
             <PDBo:chem_comp_bond.atom_id_2>H62</PDBo:chem_comp_bond.atom_id_2>
             <PDBo:chem_comp_bond.comp_id>05L</PDBo:chem_comp_bond.comp_id>
             <PDBo:chem_comp_bond.pdbx_aromatic_flag>N</PDBo:chem_comp_bond.pdbx_aromatic_flag>
-            <PDBo:chem_comp_bond.pdbx_ordinal rdf:datatype="xsd:int">23</PDBo:chem_comp_bond.pdbx_ordinal>
+            <PDBo:chem_comp_bond.pdbx_ordinal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">23</PDBo:chem_comp_bond.pdbx_ordinal>
             <PDBo:chem_comp_bond.pdbx_stereo_config>N</PDBo:chem_comp_bond.pdbx_stereo_config>
             <PDBo:chem_comp_bond.value_order>sing</PDBo:chem_comp_bond.value_order>
           </PDBo:chem_comp_bond>
@@ -1943,7 +1943,7 @@
             <PDBo:chem_comp_bond.atom_id_2>HO6</PDBo:chem_comp_bond.atom_id_2>
             <PDBo:chem_comp_bond.comp_id>05L</PDBo:chem_comp_bond.comp_id>
             <PDBo:chem_comp_bond.pdbx_aromatic_flag>N</PDBo:chem_comp_bond.pdbx_aromatic_flag>
-            <PDBo:chem_comp_bond.pdbx_ordinal rdf:datatype="xsd:int">24</PDBo:chem_comp_bond.pdbx_ordinal>
+            <PDBo:chem_comp_bond.pdbx_ordinal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">24</PDBo:chem_comp_bond.pdbx_ordinal>
             <PDBo:chem_comp_bond.pdbx_stereo_config>N</PDBo:chem_comp_bond.pdbx_stereo_config>
             <PDBo:chem_comp_bond.value_order>sing</PDBo:chem_comp_bond.value_order>
           </PDBo:chem_comp_bond>
@@ -1970,7 +1970,7 @@
             <PDBo:chem_comp_bond.atom_id_2>C2'</PDBo:chem_comp_bond.atom_id_2>
             <PDBo:chem_comp_bond.comp_id>05L</PDBo:chem_comp_bond.comp_id>
             <PDBo:chem_comp_bond.pdbx_aromatic_flag>N</PDBo:chem_comp_bond.pdbx_aromatic_flag>
-            <PDBo:chem_comp_bond.pdbx_ordinal rdf:datatype="xsd:int">25</PDBo:chem_comp_bond.pdbx_ordinal>
+            <PDBo:chem_comp_bond.pdbx_ordinal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">25</PDBo:chem_comp_bond.pdbx_ordinal>
             <PDBo:chem_comp_bond.pdbx_stereo_config>N</PDBo:chem_comp_bond.pdbx_stereo_config>
             <PDBo:chem_comp_bond.value_order>sing</PDBo:chem_comp_bond.value_order>
           </PDBo:chem_comp_bond>
@@ -1997,7 +1997,7 @@
             <PDBo:chem_comp_bond.atom_id_2>H1'</PDBo:chem_comp_bond.atom_id_2>
             <PDBo:chem_comp_bond.comp_id>05L</PDBo:chem_comp_bond.comp_id>
             <PDBo:chem_comp_bond.pdbx_aromatic_flag>N</PDBo:chem_comp_bond.pdbx_aromatic_flag>
-            <PDBo:chem_comp_bond.pdbx_ordinal rdf:datatype="xsd:int">26</PDBo:chem_comp_bond.pdbx_ordinal>
+            <PDBo:chem_comp_bond.pdbx_ordinal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">26</PDBo:chem_comp_bond.pdbx_ordinal>
             <PDBo:chem_comp_bond.pdbx_stereo_config>N</PDBo:chem_comp_bond.pdbx_stereo_config>
             <PDBo:chem_comp_bond.value_order>sing</PDBo:chem_comp_bond.value_order>
           </PDBo:chem_comp_bond>
@@ -2024,7 +2024,7 @@
             <PDBo:chem_comp_bond.atom_id_2>H1'A</PDBo:chem_comp_bond.atom_id_2>
             <PDBo:chem_comp_bond.comp_id>05L</PDBo:chem_comp_bond.comp_id>
             <PDBo:chem_comp_bond.pdbx_aromatic_flag>N</PDBo:chem_comp_bond.pdbx_aromatic_flag>
-            <PDBo:chem_comp_bond.pdbx_ordinal rdf:datatype="xsd:int">27</PDBo:chem_comp_bond.pdbx_ordinal>
+            <PDBo:chem_comp_bond.pdbx_ordinal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">27</PDBo:chem_comp_bond.pdbx_ordinal>
             <PDBo:chem_comp_bond.pdbx_stereo_config>N</PDBo:chem_comp_bond.pdbx_stereo_config>
             <PDBo:chem_comp_bond.value_order>sing</PDBo:chem_comp_bond.value_order>
           </PDBo:chem_comp_bond>
@@ -2051,7 +2051,7 @@
             <PDBo:chem_comp_bond.atom_id_2>C3'</PDBo:chem_comp_bond.atom_id_2>
             <PDBo:chem_comp_bond.comp_id>05L</PDBo:chem_comp_bond.comp_id>
             <PDBo:chem_comp_bond.pdbx_aromatic_flag>N</PDBo:chem_comp_bond.pdbx_aromatic_flag>
-            <PDBo:chem_comp_bond.pdbx_ordinal rdf:datatype="xsd:int">28</PDBo:chem_comp_bond.pdbx_ordinal>
+            <PDBo:chem_comp_bond.pdbx_ordinal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">28</PDBo:chem_comp_bond.pdbx_ordinal>
             <PDBo:chem_comp_bond.pdbx_stereo_config>N</PDBo:chem_comp_bond.pdbx_stereo_config>
             <PDBo:chem_comp_bond.value_order>sing</PDBo:chem_comp_bond.value_order>
           </PDBo:chem_comp_bond>
@@ -2078,7 +2078,7 @@
             <PDBo:chem_comp_bond.atom_id_2>H2'</PDBo:chem_comp_bond.atom_id_2>
             <PDBo:chem_comp_bond.comp_id>05L</PDBo:chem_comp_bond.comp_id>
             <PDBo:chem_comp_bond.pdbx_aromatic_flag>N</PDBo:chem_comp_bond.pdbx_aromatic_flag>
-            <PDBo:chem_comp_bond.pdbx_ordinal rdf:datatype="xsd:int">29</PDBo:chem_comp_bond.pdbx_ordinal>
+            <PDBo:chem_comp_bond.pdbx_ordinal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">29</PDBo:chem_comp_bond.pdbx_ordinal>
             <PDBo:chem_comp_bond.pdbx_stereo_config>N</PDBo:chem_comp_bond.pdbx_stereo_config>
             <PDBo:chem_comp_bond.value_order>sing</PDBo:chem_comp_bond.value_order>
           </PDBo:chem_comp_bond>
@@ -2105,7 +2105,7 @@
             <PDBo:chem_comp_bond.atom_id_2>H2'A</PDBo:chem_comp_bond.atom_id_2>
             <PDBo:chem_comp_bond.comp_id>05L</PDBo:chem_comp_bond.comp_id>
             <PDBo:chem_comp_bond.pdbx_aromatic_flag>N</PDBo:chem_comp_bond.pdbx_aromatic_flag>
-            <PDBo:chem_comp_bond.pdbx_ordinal rdf:datatype="xsd:int">30</PDBo:chem_comp_bond.pdbx_ordinal>
+            <PDBo:chem_comp_bond.pdbx_ordinal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">30</PDBo:chem_comp_bond.pdbx_ordinal>
             <PDBo:chem_comp_bond.pdbx_stereo_config>N</PDBo:chem_comp_bond.pdbx_stereo_config>
             <PDBo:chem_comp_bond.value_order>sing</PDBo:chem_comp_bond.value_order>
           </PDBo:chem_comp_bond>
@@ -2132,7 +2132,7 @@
             <PDBo:chem_comp_bond.atom_id_2>C4'</PDBo:chem_comp_bond.atom_id_2>
             <PDBo:chem_comp_bond.comp_id>05L</PDBo:chem_comp_bond.comp_id>
             <PDBo:chem_comp_bond.pdbx_aromatic_flag>N</PDBo:chem_comp_bond.pdbx_aromatic_flag>
-            <PDBo:chem_comp_bond.pdbx_ordinal rdf:datatype="xsd:int">31</PDBo:chem_comp_bond.pdbx_ordinal>
+            <PDBo:chem_comp_bond.pdbx_ordinal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">31</PDBo:chem_comp_bond.pdbx_ordinal>
             <PDBo:chem_comp_bond.pdbx_stereo_config>N</PDBo:chem_comp_bond.pdbx_stereo_config>
             <PDBo:chem_comp_bond.value_order>sing</PDBo:chem_comp_bond.value_order>
           </PDBo:chem_comp_bond>
@@ -2159,7 +2159,7 @@
             <PDBo:chem_comp_bond.atom_id_2>H3'</PDBo:chem_comp_bond.atom_id_2>
             <PDBo:chem_comp_bond.comp_id>05L</PDBo:chem_comp_bond.comp_id>
             <PDBo:chem_comp_bond.pdbx_aromatic_flag>N</PDBo:chem_comp_bond.pdbx_aromatic_flag>
-            <PDBo:chem_comp_bond.pdbx_ordinal rdf:datatype="xsd:int">32</PDBo:chem_comp_bond.pdbx_ordinal>
+            <PDBo:chem_comp_bond.pdbx_ordinal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">32</PDBo:chem_comp_bond.pdbx_ordinal>
             <PDBo:chem_comp_bond.pdbx_stereo_config>N</PDBo:chem_comp_bond.pdbx_stereo_config>
             <PDBo:chem_comp_bond.value_order>sing</PDBo:chem_comp_bond.value_order>
           </PDBo:chem_comp_bond>
@@ -2186,7 +2186,7 @@
             <PDBo:chem_comp_bond.atom_id_2>H3'A</PDBo:chem_comp_bond.atom_id_2>
             <PDBo:chem_comp_bond.comp_id>05L</PDBo:chem_comp_bond.comp_id>
             <PDBo:chem_comp_bond.pdbx_aromatic_flag>N</PDBo:chem_comp_bond.pdbx_aromatic_flag>
-            <PDBo:chem_comp_bond.pdbx_ordinal rdf:datatype="xsd:int">33</PDBo:chem_comp_bond.pdbx_ordinal>
+            <PDBo:chem_comp_bond.pdbx_ordinal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">33</PDBo:chem_comp_bond.pdbx_ordinal>
             <PDBo:chem_comp_bond.pdbx_stereo_config>N</PDBo:chem_comp_bond.pdbx_stereo_config>
             <PDBo:chem_comp_bond.value_order>sing</PDBo:chem_comp_bond.value_order>
           </PDBo:chem_comp_bond>
@@ -2213,7 +2213,7 @@
             <PDBo:chem_comp_bond.atom_id_2>C5'</PDBo:chem_comp_bond.atom_id_2>
             <PDBo:chem_comp_bond.comp_id>05L</PDBo:chem_comp_bond.comp_id>
             <PDBo:chem_comp_bond.pdbx_aromatic_flag>N</PDBo:chem_comp_bond.pdbx_aromatic_flag>
-            <PDBo:chem_comp_bond.pdbx_ordinal rdf:datatype="xsd:int">34</PDBo:chem_comp_bond.pdbx_ordinal>
+            <PDBo:chem_comp_bond.pdbx_ordinal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">34</PDBo:chem_comp_bond.pdbx_ordinal>
             <PDBo:chem_comp_bond.pdbx_stereo_config>N</PDBo:chem_comp_bond.pdbx_stereo_config>
             <PDBo:chem_comp_bond.value_order>sing</PDBo:chem_comp_bond.value_order>
           </PDBo:chem_comp_bond>
@@ -2240,7 +2240,7 @@
             <PDBo:chem_comp_bond.atom_id_2>H4'</PDBo:chem_comp_bond.atom_id_2>
             <PDBo:chem_comp_bond.comp_id>05L</PDBo:chem_comp_bond.comp_id>
             <PDBo:chem_comp_bond.pdbx_aromatic_flag>N</PDBo:chem_comp_bond.pdbx_aromatic_flag>
-            <PDBo:chem_comp_bond.pdbx_ordinal rdf:datatype="xsd:int">35</PDBo:chem_comp_bond.pdbx_ordinal>
+            <PDBo:chem_comp_bond.pdbx_ordinal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">35</PDBo:chem_comp_bond.pdbx_ordinal>
             <PDBo:chem_comp_bond.pdbx_stereo_config>N</PDBo:chem_comp_bond.pdbx_stereo_config>
             <PDBo:chem_comp_bond.value_order>sing</PDBo:chem_comp_bond.value_order>
           </PDBo:chem_comp_bond>
@@ -2267,7 +2267,7 @@
             <PDBo:chem_comp_bond.atom_id_2>H4'A</PDBo:chem_comp_bond.atom_id_2>
             <PDBo:chem_comp_bond.comp_id>05L</PDBo:chem_comp_bond.comp_id>
             <PDBo:chem_comp_bond.pdbx_aromatic_flag>N</PDBo:chem_comp_bond.pdbx_aromatic_flag>
-            <PDBo:chem_comp_bond.pdbx_ordinal rdf:datatype="xsd:int">36</PDBo:chem_comp_bond.pdbx_ordinal>
+            <PDBo:chem_comp_bond.pdbx_ordinal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">36</PDBo:chem_comp_bond.pdbx_ordinal>
             <PDBo:chem_comp_bond.pdbx_stereo_config>N</PDBo:chem_comp_bond.pdbx_stereo_config>
             <PDBo:chem_comp_bond.value_order>sing</PDBo:chem_comp_bond.value_order>
           </PDBo:chem_comp_bond>
@@ -2294,7 +2294,7 @@
             <PDBo:chem_comp_bond.atom_id_2>C6'</PDBo:chem_comp_bond.atom_id_2>
             <PDBo:chem_comp_bond.comp_id>05L</PDBo:chem_comp_bond.comp_id>
             <PDBo:chem_comp_bond.pdbx_aromatic_flag>N</PDBo:chem_comp_bond.pdbx_aromatic_flag>
-            <PDBo:chem_comp_bond.pdbx_ordinal rdf:datatype="xsd:int">37</PDBo:chem_comp_bond.pdbx_ordinal>
+            <PDBo:chem_comp_bond.pdbx_ordinal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">37</PDBo:chem_comp_bond.pdbx_ordinal>
             <PDBo:chem_comp_bond.pdbx_stereo_config>N</PDBo:chem_comp_bond.pdbx_stereo_config>
             <PDBo:chem_comp_bond.value_order>sing</PDBo:chem_comp_bond.value_order>
           </PDBo:chem_comp_bond>
@@ -2321,7 +2321,7 @@
             <PDBo:chem_comp_bond.atom_id_2>H5'</PDBo:chem_comp_bond.atom_id_2>
             <PDBo:chem_comp_bond.comp_id>05L</PDBo:chem_comp_bond.comp_id>
             <PDBo:chem_comp_bond.pdbx_aromatic_flag>N</PDBo:chem_comp_bond.pdbx_aromatic_flag>
-            <PDBo:chem_comp_bond.pdbx_ordinal rdf:datatype="xsd:int">38</PDBo:chem_comp_bond.pdbx_ordinal>
+            <PDBo:chem_comp_bond.pdbx_ordinal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">38</PDBo:chem_comp_bond.pdbx_ordinal>
             <PDBo:chem_comp_bond.pdbx_stereo_config>N</PDBo:chem_comp_bond.pdbx_stereo_config>
             <PDBo:chem_comp_bond.value_order>sing</PDBo:chem_comp_bond.value_order>
           </PDBo:chem_comp_bond>
@@ -2348,7 +2348,7 @@
             <PDBo:chem_comp_bond.atom_id_2>H5'A</PDBo:chem_comp_bond.atom_id_2>
             <PDBo:chem_comp_bond.comp_id>05L</PDBo:chem_comp_bond.comp_id>
             <PDBo:chem_comp_bond.pdbx_aromatic_flag>N</PDBo:chem_comp_bond.pdbx_aromatic_flag>
-            <PDBo:chem_comp_bond.pdbx_ordinal rdf:datatype="xsd:int">39</PDBo:chem_comp_bond.pdbx_ordinal>
+            <PDBo:chem_comp_bond.pdbx_ordinal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">39</PDBo:chem_comp_bond.pdbx_ordinal>
             <PDBo:chem_comp_bond.pdbx_stereo_config>N</PDBo:chem_comp_bond.pdbx_stereo_config>
             <PDBo:chem_comp_bond.value_order>sing</PDBo:chem_comp_bond.value_order>
           </PDBo:chem_comp_bond>
@@ -2375,7 +2375,7 @@
             <PDBo:chem_comp_bond.atom_id_2>C7'</PDBo:chem_comp_bond.atom_id_2>
             <PDBo:chem_comp_bond.comp_id>05L</PDBo:chem_comp_bond.comp_id>
             <PDBo:chem_comp_bond.pdbx_aromatic_flag>N</PDBo:chem_comp_bond.pdbx_aromatic_flag>
-            <PDBo:chem_comp_bond.pdbx_ordinal rdf:datatype="xsd:int">40</PDBo:chem_comp_bond.pdbx_ordinal>
+            <PDBo:chem_comp_bond.pdbx_ordinal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">40</PDBo:chem_comp_bond.pdbx_ordinal>
             <PDBo:chem_comp_bond.pdbx_stereo_config>N</PDBo:chem_comp_bond.pdbx_stereo_config>
             <PDBo:chem_comp_bond.value_order>sing</PDBo:chem_comp_bond.value_order>
           </PDBo:chem_comp_bond>
@@ -2402,7 +2402,7 @@
             <PDBo:chem_comp_bond.atom_id_2>H6'</PDBo:chem_comp_bond.atom_id_2>
             <PDBo:chem_comp_bond.comp_id>05L</PDBo:chem_comp_bond.comp_id>
             <PDBo:chem_comp_bond.pdbx_aromatic_flag>N</PDBo:chem_comp_bond.pdbx_aromatic_flag>
-            <PDBo:chem_comp_bond.pdbx_ordinal rdf:datatype="xsd:int">41</PDBo:chem_comp_bond.pdbx_ordinal>
+            <PDBo:chem_comp_bond.pdbx_ordinal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">41</PDBo:chem_comp_bond.pdbx_ordinal>
             <PDBo:chem_comp_bond.pdbx_stereo_config>N</PDBo:chem_comp_bond.pdbx_stereo_config>
             <PDBo:chem_comp_bond.value_order>sing</PDBo:chem_comp_bond.value_order>
           </PDBo:chem_comp_bond>
@@ -2429,7 +2429,7 @@
             <PDBo:chem_comp_bond.atom_id_2>H6'A</PDBo:chem_comp_bond.atom_id_2>
             <PDBo:chem_comp_bond.comp_id>05L</PDBo:chem_comp_bond.comp_id>
             <PDBo:chem_comp_bond.pdbx_aromatic_flag>N</PDBo:chem_comp_bond.pdbx_aromatic_flag>
-            <PDBo:chem_comp_bond.pdbx_ordinal rdf:datatype="xsd:int">42</PDBo:chem_comp_bond.pdbx_ordinal>
+            <PDBo:chem_comp_bond.pdbx_ordinal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">42</PDBo:chem_comp_bond.pdbx_ordinal>
             <PDBo:chem_comp_bond.pdbx_stereo_config>N</PDBo:chem_comp_bond.pdbx_stereo_config>
             <PDBo:chem_comp_bond.value_order>sing</PDBo:chem_comp_bond.value_order>
           </PDBo:chem_comp_bond>
@@ -2456,7 +2456,7 @@
             <PDBo:chem_comp_bond.atom_id_2>H7'</PDBo:chem_comp_bond.atom_id_2>
             <PDBo:chem_comp_bond.comp_id>05L</PDBo:chem_comp_bond.comp_id>
             <PDBo:chem_comp_bond.pdbx_aromatic_flag>N</PDBo:chem_comp_bond.pdbx_aromatic_flag>
-            <PDBo:chem_comp_bond.pdbx_ordinal rdf:datatype="xsd:int">43</PDBo:chem_comp_bond.pdbx_ordinal>
+            <PDBo:chem_comp_bond.pdbx_ordinal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">43</PDBo:chem_comp_bond.pdbx_ordinal>
             <PDBo:chem_comp_bond.pdbx_stereo_config>N</PDBo:chem_comp_bond.pdbx_stereo_config>
             <PDBo:chem_comp_bond.value_order>sing</PDBo:chem_comp_bond.value_order>
           </PDBo:chem_comp_bond>
@@ -2483,7 +2483,7 @@
             <PDBo:chem_comp_bond.atom_id_2>H7'A</PDBo:chem_comp_bond.atom_id_2>
             <PDBo:chem_comp_bond.comp_id>05L</PDBo:chem_comp_bond.comp_id>
             <PDBo:chem_comp_bond.pdbx_aromatic_flag>N</PDBo:chem_comp_bond.pdbx_aromatic_flag>
-            <PDBo:chem_comp_bond.pdbx_ordinal rdf:datatype="xsd:int">44</PDBo:chem_comp_bond.pdbx_ordinal>
+            <PDBo:chem_comp_bond.pdbx_ordinal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">44</PDBo:chem_comp_bond.pdbx_ordinal>
             <PDBo:chem_comp_bond.pdbx_stereo_config>N</PDBo:chem_comp_bond.pdbx_stereo_config>
             <PDBo:chem_comp_bond.value_order>sing</PDBo:chem_comp_bond.value_order>
           </PDBo:chem_comp_bond>
@@ -2510,7 +2510,7 @@
             <PDBo:chem_comp_bond.atom_id_2>H7'B</PDBo:chem_comp_bond.atom_id_2>
             <PDBo:chem_comp_bond.comp_id>05L</PDBo:chem_comp_bond.comp_id>
             <PDBo:chem_comp_bond.pdbx_aromatic_flag>N</PDBo:chem_comp_bond.pdbx_aromatic_flag>
-            <PDBo:chem_comp_bond.pdbx_ordinal rdf:datatype="xsd:int">45</PDBo:chem_comp_bond.pdbx_ordinal>
+            <PDBo:chem_comp_bond.pdbx_ordinal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">45</PDBo:chem_comp_bond.pdbx_ordinal>
             <PDBo:chem_comp_bond.pdbx_stereo_config>N</PDBo:chem_comp_bond.pdbx_stereo_config>
             <PDBo:chem_comp_bond.value_order>sing</PDBo:chem_comp_bond.value_order>
           </PDBo:chem_comp_bond>
@@ -2529,7 +2529,7 @@
             </PDBo:reference_to_chem_comp>
             <PDBo:pdbx_chem_comp_audit.action_type>Create component</PDBo:pdbx_chem_comp_audit.action_type>
             <PDBo:pdbx_chem_comp_audit.comp_id>05L</PDBo:pdbx_chem_comp_audit.comp_id>
-            <PDBo:pdbx_chem_comp_audit.date rdf:datatype="xsd:date">2011-11-29</PDBo:pdbx_chem_comp_audit.date>
+            <PDBo:pdbx_chem_comp_audit.date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2011-11-29</PDBo:pdbx_chem_comp_audit.date>
             <PDBo:pdbx_chem_comp_audit.processing_site>RCSB</PDBo:pdbx_chem_comp_audit.processing_site>
           </PDBo:pdbx_chem_comp_audit>
         </PDBo:has_pdbx_chem_comp_audit>
@@ -2543,7 +2543,7 @@
             </PDBo:reference_to_chem_comp>
             <PDBo:pdbx_chem_comp_audit.action_type>Other modification</PDBo:pdbx_chem_comp_audit.action_type>
             <PDBo:pdbx_chem_comp_audit.comp_id>05L</PDBo:pdbx_chem_comp_audit.comp_id>
-            <PDBo:pdbx_chem_comp_audit.date rdf:datatype="xsd:date">2020-07-03</PDBo:pdbx_chem_comp_audit.date>
+            <PDBo:pdbx_chem_comp_audit.date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-07-03</PDBo:pdbx_chem_comp_audit.date>
             <PDBo:pdbx_chem_comp_audit.processing_site>RCSB</PDBo:pdbx_chem_comp_audit.processing_site>
           </PDBo:pdbx_chem_comp_audit>
         </PDBo:has_pdbx_chem_comp_audit>
@@ -2557,7 +2557,7 @@
             </PDBo:reference_to_chem_comp>
             <PDBo:pdbx_chem_comp_audit.action_type>Modify synonyms</PDBo:pdbx_chem_comp_audit.action_type>
             <PDBo:pdbx_chem_comp_audit.comp_id>05L</PDBo:pdbx_chem_comp_audit.comp_id>
-            <PDBo:pdbx_chem_comp_audit.date rdf:datatype="xsd:date">2020-07-17</PDBo:pdbx_chem_comp_audit.date>
+            <PDBo:pdbx_chem_comp_audit.date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-07-17</PDBo:pdbx_chem_comp_audit.date>
             <PDBo:pdbx_chem_comp_audit.processing_site>RCSB</PDBo:pdbx_chem_comp_audit.processing_site>
           </PDBo:pdbx_chem_comp_audit>
         </PDBo:has_pdbx_chem_comp_audit>
@@ -2571,7 +2571,7 @@
             </PDBo:reference_to_chem_comp>
             <PDBo:pdbx_chem_comp_audit.action_type>Modify internal type</PDBo:pdbx_chem_comp_audit.action_type>
             <PDBo:pdbx_chem_comp_audit.comp_id>05L</PDBo:pdbx_chem_comp_audit.comp_id>
-            <PDBo:pdbx_chem_comp_audit.date rdf:datatype="xsd:date">2020-07-17</PDBo:pdbx_chem_comp_audit.date>
+            <PDBo:pdbx_chem_comp_audit.date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-07-17</PDBo:pdbx_chem_comp_audit.date>
             <PDBo:pdbx_chem_comp_audit.processing_site>RCSB</PDBo:pdbx_chem_comp_audit.processing_site>
           </PDBo:pdbx_chem_comp_audit>
         </PDBo:has_pdbx_chem_comp_audit>
@@ -2585,7 +2585,7 @@
             </PDBo:reference_to_chem_comp>
             <PDBo:pdbx_chem_comp_audit.action_type>Modify linking type</PDBo:pdbx_chem_comp_audit.action_type>
             <PDBo:pdbx_chem_comp_audit.comp_id>05L</PDBo:pdbx_chem_comp_audit.comp_id>
-            <PDBo:pdbx_chem_comp_audit.date rdf:datatype="xsd:date">2020-07-17</PDBo:pdbx_chem_comp_audit.date>
+            <PDBo:pdbx_chem_comp_audit.date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-07-17</PDBo:pdbx_chem_comp_audit.date>
             <PDBo:pdbx_chem_comp_audit.processing_site>RCSB</PDBo:pdbx_chem_comp_audit.processing_site>
           </PDBo:pdbx_chem_comp_audit>
         </PDBo:has_pdbx_chem_comp_audit>
@@ -2599,7 +2599,7 @@
             </PDBo:reference_to_chem_comp>
             <PDBo:pdbx_chem_comp_audit.action_type>Modify atom id</PDBo:pdbx_chem_comp_audit.action_type>
             <PDBo:pdbx_chem_comp_audit.comp_id>05L</PDBo:pdbx_chem_comp_audit.comp_id>
-            <PDBo:pdbx_chem_comp_audit.date rdf:datatype="xsd:date">2020-07-17</PDBo:pdbx_chem_comp_audit.date>
+            <PDBo:pdbx_chem_comp_audit.date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-07-17</PDBo:pdbx_chem_comp_audit.date>
             <PDBo:pdbx_chem_comp_audit.processing_site>RCSB</PDBo:pdbx_chem_comp_audit.processing_site>
           </PDBo:pdbx_chem_comp_audit>
         </PDBo:has_pdbx_chem_comp_audit>
@@ -2613,7 +2613,7 @@
             </PDBo:reference_to_chem_comp>
             <PDBo:pdbx_chem_comp_audit.action_type>Modify component atom id</PDBo:pdbx_chem_comp_audit.action_type>
             <PDBo:pdbx_chem_comp_audit.comp_id>05L</PDBo:pdbx_chem_comp_audit.comp_id>
-            <PDBo:pdbx_chem_comp_audit.date rdf:datatype="xsd:date">2020-07-17</PDBo:pdbx_chem_comp_audit.date>
+            <PDBo:pdbx_chem_comp_audit.date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-07-17</PDBo:pdbx_chem_comp_audit.date>
             <PDBo:pdbx_chem_comp_audit.processing_site>RCSB</PDBo:pdbx_chem_comp_audit.processing_site>
           </PDBo:pdbx_chem_comp_audit>
         </PDBo:has_pdbx_chem_comp_audit>
@@ -2627,7 +2627,7 @@
             </PDBo:reference_to_chem_comp>
             <PDBo:pdbx_chem_comp_audit.action_type>Modify leaving atom flag</PDBo:pdbx_chem_comp_audit.action_type>
             <PDBo:pdbx_chem_comp_audit.comp_id>05L</PDBo:pdbx_chem_comp_audit.comp_id>
-            <PDBo:pdbx_chem_comp_audit.date rdf:datatype="xsd:date">2020-07-17</PDBo:pdbx_chem_comp_audit.date>
+            <PDBo:pdbx_chem_comp_audit.date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-07-17</PDBo:pdbx_chem_comp_audit.date>
             <PDBo:pdbx_chem_comp_audit.processing_site>RCSB</PDBo:pdbx_chem_comp_audit.processing_site>
           </PDBo:pdbx_chem_comp_audit>
         </PDBo:has_pdbx_chem_comp_audit>
@@ -2847,7 +2847,7 @@
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:pdbx_chem_comp_synonyms.comp_id>05L</PDBo:pdbx_chem_comp_synonyms.comp_id>
-            <PDBo:pdbx_chem_comp_synonyms.ordinal rdf:datatype="xsd:int">1</PDBo:pdbx_chem_comp_synonyms.ordinal>
+            <PDBo:pdbx_chem_comp_synonyms.ordinal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_chem_comp_synonyms.ordinal>
             <PDBo:pdbx_chem_comp_synonyms.name>heptyl 1-seleno-beta-D-glucoside</PDBo:pdbx_chem_comp_synonyms.name>
             <PDBo:pdbx_chem_comp_synonyms.provenance>PDB</PDBo:pdbx_chem_comp_synonyms.provenance>
           </PDBo:pdbx_chem_comp_synonyms>
@@ -2861,7 +2861,7 @@
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:pdbx_chem_comp_synonyms.comp_id>05L</PDBo:pdbx_chem_comp_synonyms.comp_id>
-            <PDBo:pdbx_chem_comp_synonyms.ordinal rdf:datatype="xsd:int">2</PDBo:pdbx_chem_comp_synonyms.ordinal>
+            <PDBo:pdbx_chem_comp_synonyms.ordinal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</PDBo:pdbx_chem_comp_synonyms.ordinal>
             <PDBo:pdbx_chem_comp_synonyms.name>heptyl 1-seleno-D-glucoside</PDBo:pdbx_chem_comp_synonyms.name>
             <PDBo:pdbx_chem_comp_synonyms.provenance>PDB</PDBo:pdbx_chem_comp_synonyms.provenance>
           </PDBo:pdbx_chem_comp_synonyms>
@@ -2875,7 +2875,7 @@
               </rdf:Description>
             </PDBo:reference_to_chem_comp>
             <PDBo:pdbx_chem_comp_synonyms.comp_id>05L</PDBo:pdbx_chem_comp_synonyms.comp_id>
-            <PDBo:pdbx_chem_comp_synonyms.ordinal rdf:datatype="xsd:int">3</PDBo:pdbx_chem_comp_synonyms.ordinal>
+            <PDBo:pdbx_chem_comp_synonyms.ordinal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</PDBo:pdbx_chem_comp_synonyms.ordinal>
             <PDBo:pdbx_chem_comp_synonyms.name>heptyl 1-seleno-glucoside</PDBo:pdbx_chem_comp_synonyms.name>
             <PDBo:pdbx_chem_comp_synonyms.provenance>PDB</PDBo:pdbx_chem_comp_synonyms.provenance>
           </PDBo:pdbx_chem_comp_synonyms>

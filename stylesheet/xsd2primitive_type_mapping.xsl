@@ -9,6 +9,8 @@
   <xsl:output method="xml" encoding="UTF-8" indent="yes"/>
   <xsl:strip-space elements="*"/>
 
+  <xsl:variable name="xsd_base">http://www.w3.org/2001/XMLSchema#</xsl:variable>
+
   <xsl:template match="/xsd:schema">
     <primitive_type_mapping>
       <xsl:apply-templates select="xsd:complexType/xsd:sequence/xsd:element/xsd:complexType"/>
@@ -24,19 +26,19 @@
 	<xsl:when test="@type and @type!='xsd:string'">
 	  <xsl:element name="data_item">
 	    <xsl:attribute name="name"><xsl:value-of select="$name"/></xsl:attribute>
-	    <xsl:attribute name="type"><xsl:value-of select="@type"/></xsl:attribute>
+	    <xsl:attribute name="type"><xsl:value-of select="concat($xsd_base,substring-after(@type,':'))"/></xsl:attribute>
 	  </xsl:element>
 	</xsl:when>
 	<xsl:when test="xsd:simpleType/xsd:restriction[@base and @base!='xsd:string']">
 	  <xsl:element name="data_item">
 	    <xsl:attribute name="name"><xsl:value-of select="$name"/></xsl:attribute>
-	    <xsl:attribute name="type"><xsl:value-of select="xsd:simpleType/xsd:restriction/@base"/></xsl:attribute>
+	    <xsl:attribute name="type"><xsl:value-of select="concat($xsd_base,substring-after(xsd:simpleType/xsd:restriction/@base,':'))"/></xsl:attribute>
 	  </xsl:element>
 	</xsl:when>
 	<xsl:when test="xsd:complexType/xsd:simpleContent/xsd:extension[@base and @base!='xsd:string']">
 	  <xsl:element name="data_item">
 	    <xsl:attribute name="name"><xsl:value-of select="$name"/></xsl:attribute>
-	    <xsl:attribute name="type"><xsl:value-of select="xsd:complexType/xsd:simpleContent/xsd:extension/@base"/></xsl:attribute>
+	    <xsl:attribute name="type"><xsl:value-of select="concat($xsd_base,substring-after(xsd:complexType/xsd:simpleContent/xsd:extension/@base,':'))"/></xsl:attribute>
 	  </xsl:element>
 	</xsl:when>
       </xsl:choose>
@@ -47,13 +49,13 @@
 	<xsl:when test="@type and @type!='xsd:string'">
 	  <xsl:element name="data_item">
 	    <xsl:attribute name="name"><xsl:value-of select="$name"/></xsl:attribute>
-	    <xsl:attribute name="type"><xsl:value-of select="@type"/></xsl:attribute>
+	    <xsl:attribute name="type"><xsl:value-of select="concat($xsd_base,substring-after(@type,':'))"/></xsl:attribute>
 	  </xsl:element>
 	</xsl:when>
 	<xsl:when test="xsd:simpleType/xsd:restriction[@base and @base!='xsd:string']">
 	  <xsl:element name="data_item">
 	    <xsl:attribute name="name"><xsl:value-of select="$name"/></xsl:attribute>
-	    <xsl:attribute name="type"><xsl:value-of select="xsd:simpleType/xsd:restriction/@base"/></xsl:attribute>
+	    <xsl:attribute name="type"><xsl:value-of select="concat($xsd_base,substring-after(xsd:simpleType/xsd:restriction/@base,':'))"/></xsl:attribute>
 	  </xsl:element>
 	</xsl:when>
       </xsl:choose>

@@ -264,5 +264,5 @@ if [ $updated = 0 ] || [ ! -e $xml_file_total ] ; then
 
 fi
 
-date -u +"%b %d, %Y" > /tmp/pdb-vrpt-last
+date -u +"%b %d, %Y" > /tmp/pdbx-vrpt-last
 

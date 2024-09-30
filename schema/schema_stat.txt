@@ -1,21 +1,21 @@
 statistics of mmcif_pdbx_validation.dic:
- has 282 categories.
+ has 283 categories.
   55 new categories (see schema_stat/new_categories.txt for details).
-  227 shared categories from mmcif_pdbx_v50.dic (CHEM_COMP_INT:5, EMDB_PUBLIC:37, WWPDB_LOCAL:8, see schema_stat/shared_categories.txt for details).
-  367 dropped categories from mmcif_pdbx_v50.dic (EMDB_PUBLIC:11, RCSB_LOCAL:1, WWPDB_DEPRECATED:2, WWPDB_LOCAL:129, WWPDB_LOCAL,EMDB_PUBLIC:21, see schema_stat/dropped_categories.txt for details).
- has 3492 items.
-  577 new items (see schema_stat/new_items.txt for details).
-  61 extended items in shared categories (see schema_stat/extended_items.txt for details).
-  2915 shared items from mmcif_pdbx_v50.dic (see schema_stat/shared_items.txt for details).
+  228 shared categories from mmcif_pdbx_v50.dic (CHEM_COMP_INT:5, EMDB_PUBLIC:37, WWPDB_LOCAL:8, see schema_stat/shared_categories.txt for details).
+  366 dropped categories from mmcif_pdbx_v50.dic (EMDB_PUBLIC:11, RCSB_LOCAL:1, WWPDB_DEPRECATED:2, WWPDB_LOCAL:129, WWPDB_LOCAL,EMDB_PUBLIC:21, see schema_stat/dropped_categories.txt for details).
+ has 3499 items.
+  579 new items (see schema_stat/new_items.txt for details).
+  63 extended items in shared categories (see schema_stat/extended_items.txt for details).
+  2920 shared items from mmcif_pdbx_v50.dic (see schema_stat/shared_items.txt for details).
   210 dropped items from mmcif_pdbx_v50.dic (see schema_stat/dropped_items.txt for details).
-  710 items linked to wwpdb_validation_v6.02.xsd.
+  712 items linked to wwpdb_validation_v6.03.xsd.
 
 statistics of pdbx-validation-v4.owl:
- has 567 classes.
+ has 569 classes.
   2 same classes of PDB/OWL.
-  455 equivalent classes of PDB/OWL.
- has 4395 properties (object: 619, datatype: 3776).
+  457 equivalent classes of PDB/OWL.
+ has 4405 properties (object: 621, datatype: 3784).
   44 same properties of PDB/OWL.
-  4057 equivalent properties of PDB/OWL.
+  4067 equivalent properties of PDB/OWL.
   134 equivalent properties of BMRB/OWL.
 

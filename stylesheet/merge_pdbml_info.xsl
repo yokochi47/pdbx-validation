@@ -1058,6 +1058,12 @@ Unmatched entry ID in both documents (<xsl:value-of select="$entry_id"/> and <xs
     </xsl:element>
   </xsl:template>
 
+  <xsl:template match="VRPTx:pdbx_related_exp_data_setCategory">
+    <xsl:element name="{name()}">
+      <xsl:apply-templates mode="category-element"/>
+    </xsl:element>
+  </xsl:template>
+
   <xsl:template match="VRPTx:pdbx_sequence_rangeCategory">
     <xsl:element name="{name()}">
       <xsl:apply-templates mode="category-element"/>

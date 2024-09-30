@@ -17,7 +17,7 @@
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule>
             <PDBo:pdbx_prd_audit.action_type>Create molecule</PDBo:pdbx_prd_audit.action_type>
-            <PDBo:pdbx_prd_audit.date rdf:datatype="xsd:date">2012-02-08</PDBo:pdbx_prd_audit.date>
+            <PDBo:pdbx_prd_audit.date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2012-02-08</PDBo:pdbx_prd_audit.date>
             <PDBo:pdbx_prd_audit.prd_id>PRD_000216</PDBo:pdbx_prd_audit.prd_id>
             <PDBo:pdbx_prd_audit.processing_site>RCSB</PDBo:pdbx_prd_audit.processing_site>
           </PDBo:pdbx_prd_audit>
@@ -31,7 +31,7 @@
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule>
             <PDBo:pdbx_prd_audit.action_type>Other modification</PDBo:pdbx_prd_audit.action_type>
-            <PDBo:pdbx_prd_audit.date rdf:datatype="xsd:date">2012-07-09</PDBo:pdbx_prd_audit.date>
+            <PDBo:pdbx_prd_audit.date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2012-07-09</PDBo:pdbx_prd_audit.date>
             <PDBo:pdbx_prd_audit.prd_id>PRD_000216</PDBo:pdbx_prd_audit.prd_id>
             <PDBo:pdbx_prd_audit.processing_site>PDBe</PDBo:pdbx_prd_audit.processing_site>
           </PDBo:pdbx_prd_audit>
@@ -45,7 +45,7 @@
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule>
             <PDBo:pdbx_prd_audit.action_type>Initial release</PDBo:pdbx_prd_audit.action_type>
-            <PDBo:pdbx_prd_audit.date rdf:datatype="xsd:date">2012-12-12</PDBo:pdbx_prd_audit.date>
+            <PDBo:pdbx_prd_audit.date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2012-12-12</PDBo:pdbx_prd_audit.date>
             <PDBo:pdbx_prd_audit.prd_id>PRD_000216</PDBo:pdbx_prd_audit.prd_id>
             <PDBo:pdbx_prd_audit.processing_site>RCSB</PDBo:pdbx_prd_audit.processing_site>
           </PDBo:pdbx_prd_audit>
@@ -59,7 +59,7 @@
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule>
             <PDBo:pdbx_prd_audit.action_type>Other modification</PDBo:pdbx_prd_audit.action_type>
-            <PDBo:pdbx_prd_audit.date rdf:datatype="xsd:date">2013-06-03</PDBo:pdbx_prd_audit.date>
+            <PDBo:pdbx_prd_audit.date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-06-03</PDBo:pdbx_prd_audit.date>
             <PDBo:pdbx_prd_audit.prd_id>PRD_000216</PDBo:pdbx_prd_audit.prd_id>
             <PDBo:pdbx_prd_audit.processing_site>RCSB</PDBo:pdbx_prd_audit.processing_site>
           </PDBo:pdbx_prd_audit>
@@ -76,7 +76,7 @@
                 <PDBo:referenced_by_pdbx_reference_entity_list rdf:resource="http://rdf.wwpdb.org/prd/PRD_000216/pdbx_reference_entity_list/1,PRD_000216,1"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule>
-            <PDBo:pdbx_reference_entity_list.component_id rdf:datatype="xsd:int">1</PDBo:pdbx_reference_entity_list.component_id>
+            <PDBo:pdbx_reference_entity_list.component_id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_reference_entity_list.component_id>
             <PDBo:pdbx_reference_entity_list.prd_id>PRD_000216</PDBo:pdbx_reference_entity_list.prd_id>
             <PDBo:pdbx_reference_entity_list.ref_entity_id>1</PDBo:pdbx_reference_entity_list.ref_entity_id>
             <PDBo:pdbx_reference_entity_list.details>LEUPEPTIN</PDBo:pdbx_reference_entity_list.details>
@@ -116,16 +116,16 @@
                 <PDBo:referenced_by_pdbx_reference_entity_poly_link rdf:resource="http://rdf.wwpdb.org/prd/PRD_000216/pdbx_reference_entity_poly_link/1,1,PRD_000216,1"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_entity_poly>
-            <PDBo:pdbx_reference_entity_poly_link.component_id rdf:datatype="xsd:int">1</PDBo:pdbx_reference_entity_poly_link.component_id>
-            <PDBo:pdbx_reference_entity_poly_link.link_id rdf:datatype="xsd:int">1</PDBo:pdbx_reference_entity_poly_link.link_id>
+            <PDBo:pdbx_reference_entity_poly_link.component_id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_reference_entity_poly_link.component_id>
+            <PDBo:pdbx_reference_entity_poly_link.link_id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_reference_entity_poly_link.link_id>
             <PDBo:pdbx_reference_entity_poly_link.prd_id>PRD_000216</PDBo:pdbx_reference_entity_poly_link.prd_id>
             <PDBo:pdbx_reference_entity_poly_link.ref_entity_id>1</PDBo:pdbx_reference_entity_poly_link.ref_entity_id>
             <PDBo:pdbx_reference_entity_poly_link.atom_id_1>C</PDBo:pdbx_reference_entity_poly_link.atom_id_1>
             <PDBo:pdbx_reference_entity_poly_link.atom_id_2>N</PDBo:pdbx_reference_entity_poly_link.atom_id_2>
             <PDBo:pdbx_reference_entity_poly_link.comp_id_1>ACE</PDBo:pdbx_reference_entity_poly_link.comp_id_1>
             <PDBo:pdbx_reference_entity_poly_link.comp_id_2>LEU</PDBo:pdbx_reference_entity_poly_link.comp_id_2>
-            <PDBo:pdbx_reference_entity_poly_link.entity_seq_num_1 rdf:datatype="xsd:int">1</PDBo:pdbx_reference_entity_poly_link.entity_seq_num_1>
-            <PDBo:pdbx_reference_entity_poly_link.entity_seq_num_2 rdf:datatype="xsd:int">2</PDBo:pdbx_reference_entity_poly_link.entity_seq_num_2>
+            <PDBo:pdbx_reference_entity_poly_link.entity_seq_num_1 rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_reference_entity_poly_link.entity_seq_num_1>
+            <PDBo:pdbx_reference_entity_poly_link.entity_seq_num_2 rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</PDBo:pdbx_reference_entity_poly_link.entity_seq_num_2>
             <PDBo:pdbx_reference_entity_poly_link.value_order>sing</PDBo:pdbx_reference_entity_poly_link.value_order>
           </PDBo:pdbx_reference_entity_poly_link>
         </PDBo:has_pdbx_reference_entity_poly_link>
@@ -142,16 +142,16 @@
                 <PDBo:referenced_by_pdbx_reference_entity_poly_link rdf:resource="http://rdf.wwpdb.org/prd/PRD_000216/pdbx_reference_entity_poly_link/1,2,PRD_000216,1"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_entity_poly>
-            <PDBo:pdbx_reference_entity_poly_link.component_id rdf:datatype="xsd:int">1</PDBo:pdbx_reference_entity_poly_link.component_id>
-            <PDBo:pdbx_reference_entity_poly_link.link_id rdf:datatype="xsd:int">2</PDBo:pdbx_reference_entity_poly_link.link_id>
+            <PDBo:pdbx_reference_entity_poly_link.component_id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_reference_entity_poly_link.component_id>
+            <PDBo:pdbx_reference_entity_poly_link.link_id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</PDBo:pdbx_reference_entity_poly_link.link_id>
             <PDBo:pdbx_reference_entity_poly_link.prd_id>PRD_000216</PDBo:pdbx_reference_entity_poly_link.prd_id>
             <PDBo:pdbx_reference_entity_poly_link.ref_entity_id>1</PDBo:pdbx_reference_entity_poly_link.ref_entity_id>
             <PDBo:pdbx_reference_entity_poly_link.atom_id_1>C</PDBo:pdbx_reference_entity_poly_link.atom_id_1>
             <PDBo:pdbx_reference_entity_poly_link.atom_id_2>N</PDBo:pdbx_reference_entity_poly_link.atom_id_2>
             <PDBo:pdbx_reference_entity_poly_link.comp_id_1>LEU</PDBo:pdbx_reference_entity_poly_link.comp_id_1>
             <PDBo:pdbx_reference_entity_poly_link.comp_id_2>LEU</PDBo:pdbx_reference_entity_poly_link.comp_id_2>
-            <PDBo:pdbx_reference_entity_poly_link.entity_seq_num_1 rdf:datatype="xsd:int">2</PDBo:pdbx_reference_entity_poly_link.entity_seq_num_1>
-            <PDBo:pdbx_reference_entity_poly_link.entity_seq_num_2 rdf:datatype="xsd:int">3</PDBo:pdbx_reference_entity_poly_link.entity_seq_num_2>
+            <PDBo:pdbx_reference_entity_poly_link.entity_seq_num_1 rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</PDBo:pdbx_reference_entity_poly_link.entity_seq_num_1>
+            <PDBo:pdbx_reference_entity_poly_link.entity_seq_num_2 rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</PDBo:pdbx_reference_entity_poly_link.entity_seq_num_2>
             <PDBo:pdbx_reference_entity_poly_link.value_order>sing</PDBo:pdbx_reference_entity_poly_link.value_order>
           </PDBo:pdbx_reference_entity_poly_link>
         </PDBo:has_pdbx_reference_entity_poly_link>
@@ -168,16 +168,16 @@
                 <PDBo:referenced_by_pdbx_reference_entity_poly_link rdf:resource="http://rdf.wwpdb.org/prd/PRD_000216/pdbx_reference_entity_poly_link/1,3,PRD_000216,1"/>
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_entity_poly>
-            <PDBo:pdbx_reference_entity_poly_link.component_id rdf:datatype="xsd:int">1</PDBo:pdbx_reference_entity_poly_link.component_id>
-            <PDBo:pdbx_reference_entity_poly_link.link_id rdf:datatype="xsd:int">3</PDBo:pdbx_reference_entity_poly_link.link_id>
+            <PDBo:pdbx_reference_entity_poly_link.component_id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_reference_entity_poly_link.component_id>
+            <PDBo:pdbx_reference_entity_poly_link.link_id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</PDBo:pdbx_reference_entity_poly_link.link_id>
             <PDBo:pdbx_reference_entity_poly_link.prd_id>PRD_000216</PDBo:pdbx_reference_entity_poly_link.prd_id>
             <PDBo:pdbx_reference_entity_poly_link.ref_entity_id>1</PDBo:pdbx_reference_entity_poly_link.ref_entity_id>
             <PDBo:pdbx_reference_entity_poly_link.atom_id_1>C</PDBo:pdbx_reference_entity_poly_link.atom_id_1>
             <PDBo:pdbx_reference_entity_poly_link.atom_id_2>N</PDBo:pdbx_reference_entity_poly_link.atom_id_2>
             <PDBo:pdbx_reference_entity_poly_link.comp_id_1>LEU</PDBo:pdbx_reference_entity_poly_link.comp_id_1>
             <PDBo:pdbx_reference_entity_poly_link.comp_id_2>AR7</PDBo:pdbx_reference_entity_poly_link.comp_id_2>
-            <PDBo:pdbx_reference_entity_poly_link.entity_seq_num_1 rdf:datatype="xsd:int">3</PDBo:pdbx_reference_entity_poly_link.entity_seq_num_1>
-            <PDBo:pdbx_reference_entity_poly_link.entity_seq_num_2 rdf:datatype="xsd:int">4</PDBo:pdbx_reference_entity_poly_link.entity_seq_num_2>
+            <PDBo:pdbx_reference_entity_poly_link.entity_seq_num_1 rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</PDBo:pdbx_reference_entity_poly_link.entity_seq_num_1>
+            <PDBo:pdbx_reference_entity_poly_link.entity_seq_num_2 rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</PDBo:pdbx_reference_entity_poly_link.entity_seq_num_2>
             <PDBo:pdbx_reference_entity_poly_link.value_order>sing</PDBo:pdbx_reference_entity_poly_link.value_order>
           </PDBo:pdbx_reference_entity_poly_link>
         </PDBo:has_pdbx_reference_entity_poly_link>
@@ -195,7 +195,7 @@
             </PDBo:reference_to_pdbx_reference_entity_poly>
             <PDBo:pdbx_reference_entity_poly_seq.hetero>N</PDBo:pdbx_reference_entity_poly_seq.hetero>
             <PDBo:pdbx_reference_entity_poly_seq.mon_id>ACE</PDBo:pdbx_reference_entity_poly_seq.mon_id>
-            <PDBo:pdbx_reference_entity_poly_seq.num rdf:datatype="xsd:int">1</PDBo:pdbx_reference_entity_poly_seq.num>
+            <PDBo:pdbx_reference_entity_poly_seq.num rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_reference_entity_poly_seq.num>
             <PDBo:pdbx_reference_entity_poly_seq.prd_id>PRD_000216</PDBo:pdbx_reference_entity_poly_seq.prd_id>
             <PDBo:pdbx_reference_entity_poly_seq.ref_entity_id>1</PDBo:pdbx_reference_entity_poly_seq.ref_entity_id>
             <PDBo:link_to_chem_comp rdf:resource="http://rdf.wwpdb.org/cc/ACE"/>
@@ -212,7 +212,7 @@
             </PDBo:reference_to_pdbx_reference_entity_poly>
             <PDBo:pdbx_reference_entity_poly_seq.hetero>N</PDBo:pdbx_reference_entity_poly_seq.hetero>
             <PDBo:pdbx_reference_entity_poly_seq.mon_id>LEU</PDBo:pdbx_reference_entity_poly_seq.mon_id>
-            <PDBo:pdbx_reference_entity_poly_seq.num rdf:datatype="xsd:int">2</PDBo:pdbx_reference_entity_poly_seq.num>
+            <PDBo:pdbx_reference_entity_poly_seq.num rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</PDBo:pdbx_reference_entity_poly_seq.num>
             <PDBo:pdbx_reference_entity_poly_seq.prd_id>PRD_000216</PDBo:pdbx_reference_entity_poly_seq.prd_id>
             <PDBo:pdbx_reference_entity_poly_seq.ref_entity_id>1</PDBo:pdbx_reference_entity_poly_seq.ref_entity_id>
             <PDBo:link_to_chem_comp rdf:resource="http://rdf.wwpdb.org/cc/LEU"/>
@@ -231,7 +231,7 @@
             </PDBo:reference_to_pdbx_reference_entity_poly>
             <PDBo:pdbx_reference_entity_poly_seq.hetero>N</PDBo:pdbx_reference_entity_poly_seq.hetero>
             <PDBo:pdbx_reference_entity_poly_seq.mon_id>LEU</PDBo:pdbx_reference_entity_poly_seq.mon_id>
-            <PDBo:pdbx_reference_entity_poly_seq.num rdf:datatype="xsd:int">3</PDBo:pdbx_reference_entity_poly_seq.num>
+            <PDBo:pdbx_reference_entity_poly_seq.num rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</PDBo:pdbx_reference_entity_poly_seq.num>
             <PDBo:pdbx_reference_entity_poly_seq.prd_id>PRD_000216</PDBo:pdbx_reference_entity_poly_seq.prd_id>
             <PDBo:pdbx_reference_entity_poly_seq.ref_entity_id>1</PDBo:pdbx_reference_entity_poly_seq.ref_entity_id>
             <PDBo:link_to_chem_comp rdf:resource="http://rdf.wwpdb.org/cc/LEU"/>
@@ -250,7 +250,7 @@
             </PDBo:reference_to_pdbx_reference_entity_poly>
             <PDBo:pdbx_reference_entity_poly_seq.hetero>N</PDBo:pdbx_reference_entity_poly_seq.hetero>
             <PDBo:pdbx_reference_entity_poly_seq.mon_id>AR7</PDBo:pdbx_reference_entity_poly_seq.mon_id>
-            <PDBo:pdbx_reference_entity_poly_seq.num rdf:datatype="xsd:int">4</PDBo:pdbx_reference_entity_poly_seq.num>
+            <PDBo:pdbx_reference_entity_poly_seq.num rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</PDBo:pdbx_reference_entity_poly_seq.num>
             <PDBo:pdbx_reference_entity_poly_seq.prd_id>PRD_000216</PDBo:pdbx_reference_entity_poly_seq.prd_id>
             <PDBo:pdbx_reference_entity_poly_seq.ref_entity_id>1</PDBo:pdbx_reference_entity_poly_seq.ref_entity_id>
             <PDBo:link_to_chem_comp rdf:resource="http://rdf.wwpdb.org/cc/AR7"/>
@@ -279,7 +279,7 @@
         <PDBo:has_pdbx_reference_entity_src_nat>
           <PDBo:pdbx_reference_entity_src_nat rdf:about="http://rdf.wwpdb.org/prd/PRD_000216/pdbx_reference_entity_src_nat/1,PRD_000216,1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/prd/PRD_000216"/>
-            <PDBo:pdbx_reference_entity_src_nat.ordinal rdf:datatype="xsd:int">1</PDBo:pdbx_reference_entity_src_nat.ordinal>
+            <PDBo:pdbx_reference_entity_src_nat.ordinal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_reference_entity_src_nat.ordinal>
             <PDBo:pdbx_reference_entity_src_nat.prd_id>PRD_000216</PDBo:pdbx_reference_entity_src_nat.prd_id>
             <PDBo:pdbx_reference_entity_src_nat.ref_entity_id>1</PDBo:pdbx_reference_entity_src_nat.ref_entity_id>
             <PDBo:pdbx_reference_entity_src_nat.db_code>Novel Antibiotics DataBase</PDBo:pdbx_reference_entity_src_nat.db_code>
@@ -295,7 +295,7 @@
         <PDBo:has_pdbx_reference_entity_src_nat>
           <PDBo:pdbx_reference_entity_src_nat rdf:about="http://rdf.wwpdb.org/prd/PRD_000216/pdbx_reference_entity_src_nat/2,PRD_000216,1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/prd/PRD_000216"/>
-            <PDBo:pdbx_reference_entity_src_nat.ordinal rdf:datatype="xsd:int">2</PDBo:pdbx_reference_entity_src_nat.ordinal>
+            <PDBo:pdbx_reference_entity_src_nat.ordinal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</PDBo:pdbx_reference_entity_src_nat.ordinal>
             <PDBo:pdbx_reference_entity_src_nat.prd_id>PRD_000216</PDBo:pdbx_reference_entity_src_nat.prd_id>
             <PDBo:pdbx_reference_entity_src_nat.ref_entity_id>1</PDBo:pdbx_reference_entity_src_nat.ref_entity_id>
             <PDBo:pdbx_reference_entity_src_nat.db_code>Novel Antibiotics DataBase</PDBo:pdbx_reference_entity_src_nat.db_code>
@@ -318,7 +318,7 @@
             <PDBo:pdbx_reference_molecule.prd_id>PRD_000216</PDBo:pdbx_reference_molecule.prd_id>
             <PDBo:pdbx_reference_molecule.class>Enzyme inhibitor</PDBo:pdbx_reference_molecule.class>
             <PDBo:pdbx_reference_molecule.formula>C20 H41 N6 O5</PDBo:pdbx_reference_molecule.formula>
-            <PDBo:pdbx_reference_molecule.formula_weight rdf:datatype="xsd:decimal">445.577</PDBo:pdbx_reference_molecule.formula_weight>
+            <PDBo:pdbx_reference_molecule.formula_weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">445.577</PDBo:pdbx_reference_molecule.formula_weight>
             <PDBo:pdbx_reference_molecule.name>LEUPEPTIN</PDBo:pdbx_reference_molecule.name>
             <PDBo:pdbx_reference_molecule.release_status>REL</PDBo:pdbx_reference_molecule.release_status>
             <PDBo:pdbx_reference_molecule.represent_as>polymer</PDBo:pdbx_reference_molecule.represent_as>

@@ -24,12 +24,14 @@ pdbx_dcc_geometry.number_bonds
 pdbx_dcc_geometry.Ramachandran_outlier_percent_nmr_well_formed
 pdbx_dcc_geometry.RNA_suiteness_score
 pdbx_dcc_geometry.rotamer_outliers_percent_nmr_well_formed
+pdbx_dcc_map.EDIA_mean
 pdbx_dcc_map.LLDF_name
 pdbx_dcc_map.LLDF_number_residues_total
 pdbx_dcc_map.LLDF_sigma
 pdbx_dcc_map.LLDFZ
 pdbx_dcc_map.LLDFZ_outlier_flag
 pdbx_dcc_mapman.entry_id
+pdbx_dcc_map.OPIA
 pdbx_dcc_map.PDB_ins_code
 pdbx_dcc_map.PDB_model_num
 pdbx_dcc_rscc_mapman_overall.entry_id

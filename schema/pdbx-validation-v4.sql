@@ -21,7 +21,7 @@
 --  map xsd date type to: sql date type
 --
 -- Statistics of schema:
---  Generated 282 tables (3726 fields), 0 views (0 fields), 0 attr groups, 0 model groups in total
+--  Generated 283 tables (3734 fields), 0 views (0 fields), 0 attr groups, 0 model groups in total
 --   Unnecessary tables by inlining simple content as a primitive data type:
 --    schema location: pdbx-validation-v4.xsd
 --      improper_torsion_angle_rms_dev_error, mean_guiner_radius, angle_value, bond_angle_rms_dev, "B_iso", diff_density_max_esd, "L22", "B_calc", distance_rms_dev, "B_calc_au", pdbx_phase_calc_part_solvent, improper_torsion_angle_rms_dev, "S22_esd", atom_deviation, "S31", "A_meas", "pdbx_F_calc_part_solvent", upper_limit, psi, "L23", prot_cis, "L11", "L23_esd", "T23_esd", "F_meas_au", "sigmaI", omega, "S32", "Luzzati_sigma_a_free", "F_squared_calc", "L12", distance_rms_dev_medoid, pdbx_solvent_shrinkage_radii, current, chi1, pdbx_rotation_angle, chi2, chi3, chi4, chi5, "S21", "S33", scan_time_backgd, maximum_upper_distance_constraint_violation, pdbx_scan_angle, "L13", "A_calc", "T12_esd", "S12_esd", "Luzzati_d_res_low_free", value, "B_meas", "S22", value_esd, "Cartn_y_esd", pdbx_solvent_vdw_probe_radii, "S13_esd", "B_meas_au", origin_y, origin_z, origin_x, "Cartn_z_esd", peptide_planarity_rms_dev, "P", phi, pdbx_collection_time_total, dihedral_angle_value, "B_iso_Wilson_estimate", zeta, maximum_lower_distance_constraint_violation, energyfilter_lower, "S11", "S23", nu1, "F_meas_sigma", nu2, nu3, "L12_esd", "F_calc_au", diff_density_min, nu4, nu0, "T33", tilt_angle_min, phase_meas, nominal_defocus_min, "S32_esd", "S12", calibrated_defocus_min, rise_per_n_subunits, "aniso_B33", "Luzzati_d_res_low_obs", pdbx_solvent_ion_probe_radii, "Luzzati_coordinate_error_free", "T22", lower_limit, "Luzzati_coordinate_error_obs", "S13", "T11_esd", "L11_esd", "aniso_B22", "S23_esd", concentration_range, "T23", max_mean_cross_sectional_radii_gyration_esd, "T11", clash_magnitude, angle_target_value, dihedral_angles_rms_dev, min_mean_cross_sectional_radii_gyration_esd, "L22_esd", neighbor_ligand_distance, tau0, "S21_esd", tau1, "aniso_B11", "aniso_B23", average_distance_constraint_violation, "B_iso_esd", maximum_distance_constraint_violation, "T12", max_mean_cross_sectional_radii_gyration, "A_calc_au", "S33_esd", "pdbx_F_calc_with_solvent", phase_calc, bond_angle_rms_dev_error, nominal_defocus_max, "aniso_B12", "B_iso_max", bond_deviation, angle_phi, min_mean_cross_sectional_radii_gyration, "T13", delta, distance_rms_dev_error, "B_iso_mean", energyfilter_upper, covalent_bond_rms_dev, "F_squared_meas", epsilon, "aniso_B13", angle_theta, "F_meas_sigma_au", mean_guiner_radius_esd, angle_deviation, dihedral_angles_rms_dev_error, "T22_esd", peptide_planarity_rms_dev_error, "pdbx_res_netI_over_sigmaI_2", "Luzzati_sigma_a_obs", "Cartn_z", detector_distance, "S31_esd", beta, "L13_esd", "F_squared_sigma", voltage, angle_kappa, ambient_pressure_esd, "T13_esd", gamma, rotation_per_n_subunits, "Cartn_y", temp, covalent_bond_rms_dev_error, rmsd, "S11_esd", temperature, "A_meas_au", alpha, "Cartn_x_esd", "Cartn_x", "F_calc", power, diff_density_min_esd, ambient_temp_esd, neighbor_macromolecule_distance, "I", diff_density_max, angle_psi, "L33_esd", dihedral_angle_target_value, taum, angle_omega, pdbx_dist_value, scan_rate, "T33_esd", tau2, tau3, tau4, "B_iso_min", pdbx_phase_calc_with_solvent, tilt_angle_max, "F_meas", angle_chi, diff_density_rms_esd, average_torsion_angle_constraint_violation, maximum_torsion_angle_constraint_violation, "L33", diff_density_rms, dist, improper_torsion_angle, "pdbx_res_netI_over_av_sigmaI_2"
@@ -30,22 +30,22 @@
 --   Schema locations:
 --    pdbx-validation-v4.xsd
 --   Table types:
---    0 root, 0 root children, 0 admin roots, 282 admin children
+--    0 root, 0 root children, 0 admin roots, 283 admin children
 --   System keys:
 --    0 primary keys (0 unique constraints), 0 foreign keys, 0 nested keys (0 as attribute, 0 as attribute group)
 --   User keys:
---    234 document keys, 0 serial keys, 0 xpath keys
+--    235 document keys, 0 serial keys, 0 xpath keys
 --   Contents:
---    495 attributes (43 in-place document keys), 2997 elements (5 in-place document keys), 0 simple contents (0 in-place document keys, 0 as attribute, 0 as conditional attribute)
+--    496 attributes (43 in-place document keys), 3003 elements (5 in-place document keys), 0 simple contents (0 in-place document keys, 0 as attribute, 0 as conditional attribute)
 --   Wild cards:
 --    0 any elements, 0 any attributes
 --   Constraints:
---    282 unique constraints from xsd:key, 1 unique constraints from xsd:unique, 148 foreign key constraints from xsd:keyref
+--    283 unique constraints from xsd:key, 1 unique constraints from xsd:unique, 148 foreign key constraints from xsd:keyref
 --
 
 --
--- VRPT PDBML Schema v4.395
--- VRPT PDBML Schema translated from wwPDB Validation Information Dictionary v4.395, which is backward compatible with the PDBx/mmCIF Dictionary v5.370: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
+-- VRPT PDBML Schema v4.396
+-- VRPT PDBML Schema translated from wwPDB Validation Information Dictionary v4.396, which is backward compatible with the PDBx/mmCIF Dictionary v5.370: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
 -- URI-reference = http://pdbml.pdb.org/schema/pdbx-validation-v4.xsd
 --
 
@@ -200,6 +200,7 @@ DROP TABLE IF EXISTS pdbx_refine_component CASCADE;
 DROP TABLE IF EXISTS pdbx_refine_tls_group CASCADE;
 DROP TABLE IF EXISTS pdbx_refln_signal_binning CASCADE;
 DROP TABLE IF EXISTS pdbx_reflns_twin CASCADE;
+DROP TABLE IF EXISTS pdbx_related_exp_data_set CASCADE;
 DROP TABLE IF EXISTS pdbx_sequence_range CASCADE;
 DROP TABLE IF EXISTS pdbx_sifts_unp_segments CASCADE;
 DROP TABLE IF EXISTS pdbx_sifts_xref_db CASCADE;
@@ -2673,7 +2674,7 @@ CREATE TABLE em_virus_synthetic (
 DROP TYPE IF EXISTS ENUM_em_vitrification_cryogen_name CASCADE;
 CREATE TYPE ENUM_em_vitrification_cryogen_name AS ENUM ( 'HELIUM', 'NITROGEN', 'PROPANE', 'ETHANE', 'ETHANE-PROPANE', 'METHANE', 'FREON 22', 'FREON 12', 'OTHER' );
 DROP TYPE IF EXISTS ENUM_em_vitrification_instrument CASCADE;
-CREATE TYPE ENUM_em_vitrification_instrument AS ENUM ( 'CRYOSOL VITROJET', 'EMS-002 RAPID IMMERSION FREEZER', 'FEI VITROBOT MARK I', 'FEI VITROBOT MARK II', 'FEI VITROBOT MARK III', 'FEI VITROBOT MARK IV', 'GATAN CRYOPLUNGE 3', 'HOMEMADE PLUNGER', 'LEICA PLUNGER', 'LEICA EM GP', 'LEICA EM CPC', 'LEICA KF80', 'REICHERT-JUNG PLUNGER', 'SPOTITON', 'ZEISS PLUNGE FREEZER CRYOBOX' );
+CREATE TYPE ENUM_em_vitrification_instrument AS ENUM ( 'CRYOSOL VITROJET', 'EMS-002 RAPID IMMERSION FREEZER', 'FEI VITROBOT MARK I', 'FEI VITROBOT MARK II', 'FEI VITROBOT MARK III', 'FEI VITROBOT MARK IV', 'GATAN CRYOPLUNGE 3', 'HOMEMADE PLUNGER', 'LEICA PLUNGER', 'LEICA EM GP', 'LEICA EM CPC', 'LEICA KF80', 'REICHERT-JUNG PLUNGER', 'SPOTITON', 'SPT LABTECH CHAMELEON', 'ZEISS PLUNGE FREEZER CRYOBOX' );
 CREATE TABLE em_vitrification (
 -- xsd:restriction/xsd:minInclusive="0.0"
 	chamber_temperature DECIMAL CHECK ( chamber_temperature >= 0.0 ) ,
@@ -3403,12 +3404,14 @@ CREATE TABLE pdbx_dcc_map (
 	"Biso_mean_main_chain" DECIMAL ,
 	"Biso_mean_phosphate_group" DECIMAL ,
 	"Biso_mean_side_chain" DECIMAL ,
+	"EDIA_mean" DECIMAL ,
 	"LLDF" DECIMAL ,
 	"LLDFZ" DECIMAL ,
 	"LLDFZ_outlier_flag" ENUM_pdbx_dcc_map_LLDFZ_outlier_flag ,
 	"LLDF_name" TEXT ,
 	"LLDF_number_residues_total" INTEGER ,
 	"LLDF_sigma" DECIMAL ,
+	"OPIA" DECIMAL ,
 	"PDB_ins_code" TEXT ,
 	"PDB_model_num" INTEGER ,
 	"RSCC" DECIMAL ,
@@ -3794,9 +3797,7 @@ CREATE TABLE pdbx_em_validate_map_model (
 	entry_id TEXT ,
 	"PDB_ins_code" TEXT ,
 	"PDB_model_num" INTEGER ,
--- xsd:restriction/xsd:maxInclusive="1.0"
--- xsd:restriction/xsd:minInclusive="0.0"
-	"Q_score" DECIMAL CHECK ( "Q_score" >= 0.0 AND "Q_score" <= 1.0 ) ,
+	"Q_score" DECIMAL ,
 -- xsd:restriction/xsd:maxInclusive="1.0"
 -- xsd:restriction/xsd:minInclusive="0.0"
 	atom_inclusion_all DECIMAL CHECK ( atom_inclusion_all >= 0.0 AND atom_inclusion_all <= 1.0 ) ,
@@ -3818,9 +3819,7 @@ CREATE TABLE pdbx_em_validate_map_model_entity (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	entry_id TEXT ,
 	auth_asym_id TEXT ,
--- xsd:restriction/xsd:maxInclusive="1.0"
--- xsd:restriction/xsd:minInclusive="0.0"
-	"average_Q_score" DECIMAL CHECK ( "average_Q_score" >= 0.0 AND "average_Q_score" <= 1.0 ) ,
+	"average_Q_score" DECIMAL ,
 -- xsd:restriction/xsd:maxInclusive="1.0"
 -- xsd:restriction/xsd:minInclusive="0.0"
 	average_atom_inclusion_all DECIMAL CHECK ( average_atom_inclusion_all >= 0.0 AND average_atom_inclusion_all <= 1.0 ) ,
@@ -5604,6 +5603,24 @@ CREATE TABLE pdbx_reflns_twin (
 	diffrn_id TEXT NOT NULL ,
 -- ATTRIBUTE
 	operator TEXT NOT NULL
+);
+
+--
+-- (quoted from pdbx_related_exp_data_setType)
+-- Data items in the PDBX_RELATED_DATA_SET category record references to experimental data sets related to the entry. Example 1 - <VRPTx:pdbx_related_exp_data_setCategory> <VRPTx:pdbx_related_exp_data_set ordinal="1"> <VRPTx:data_reference>10.000/10002/image_data/cif</VRPTx:data_reference> <VRPTx:data_set_type>diffraction image data</VRPTx:data_set_type> <VRPTx:details>imgCIF data set containing 500 frames</VRPTx:details> <VRPTx:metadata_reference>10.000/10002/image_data/txt</VRPTx:metadata_reference> </VRPTx:pdbx_related_exp_data_set> <VRPTx:pdbx_related_exp_data_set ordinal="2"> <VRPTx:data_reference>10.6019/EMPIAR-11866</VRPTx:data_reference> <VRPTx:data_set_type>EMPIAR</VRPTx:data_set_type> <VRPTx:metadata_reference>10.6019/EMPIAR-11866</VRPTx:metadata_reference> </VRPTx:pdbx_related_exp_data_set> </VRPTx:pdbx_related_exp_data_setCategory>
+-- URI-reference = http://pdbml.pdb.org/dictionaries/mmcif_pdbx_v50.dic/Categories/pdbx_related_exp_data_set.html
+-- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v4.xsd (VRPTx), schema location: pdbx-validation-v4.xsd
+-- type: admin child, content: true, list: false, bridge: false, virtual: false
+--
+CREATE TABLE pdbx_related_exp_data_set (
+-- DOCUMENT KEY is pointer to data source (aka. Entry ID)
+	entry_id TEXT ,
+	data_reference TEXT ,
+	data_set_type TEXT ,
+	details TEXT ,
+	metadata_reference TEXT ,
+-- ATTRIBUTE
+	ordinal INTEGER NOT NULL
 );
 
 --
@@ -9335,6 +9352,9 @@ CREATE TABLE symmetry_equiv (
 
 -- (derived from xsd:key[@name='pdbx_reflns_twinKey_0'])
 --ALTER TABLE pdbx_reflns_twin ADD CONSTRAINT UNQ_pdbx_reflns_twin UNIQUE ( entry_id, crystal_id, diffrn_id, operator );
+
+-- (derived from xsd:key[@name='pdbx_related_exp_data_setKey_0'])
+--ALTER TABLE pdbx_related_exp_data_set ADD CONSTRAINT UNQ_pdbx_related_exp_data_set UNIQUE ( entry_id, ordinal );
 
 -- (derived from xsd:key[@name='pdbx_sequence_rangeKey_0'])
 --ALTER TABLE pdbx_sequence_range ADD CONSTRAINT UNQ_pdbx_sequence_range UNIQUE ( entry_id, beg_label_alt_id, beg_label_asym_id, beg_label_comp_id, beg_label_seq_id, end_label_alt_id, end_label_asym_id, end_label_comp_id, end_label_seq_id, seq_range_id );

@@ -133,6 +133,42 @@
     <dcterms:references rdf:resource="{$idorg}pubmed/{text()}" rdfs:label="pubmed:{text()}"/>
   </xsl:template>
 
+  <xsl:template match="PDBx:pdbx_related_exp_data_set/PDBx:data_reference[text()!='']" mode="linked">
+    <xsl:variable name="doi_url">
+      <xsl:value-of select="$doi"/>
+      <xsl:call-template name="replace-string">
+        <xsl:with-param name="str">
+          <xsl:call-template name="replace-string">
+            <xsl:with-param name="str" select="text()"/>
+            <xsl:with-param name="replace">&lt;</xsl:with-param>
+            <xsl:with-param name="with">&amp;lt;</xsl:with-param>
+          </xsl:call-template>
+        </xsl:with-param>
+        <xsl:with-param name="replace">&gt;</xsl:with-param>
+        <xsl:with-param name="with">&amp;gt;</xsl:with-param>
+      </xsl:call-template>
+    </xsl:variable>
+    <PDBo:link_to_doi rdf:resource="{$doi_url}" rdfs:label="doi:{text()}"/>
+  </xsl:template>
+
+  <xsl:template match="PDBx:pdbx_related_exp_data_set/PDBx:metadata_reference[text()!='']" mode="linked">
+    <xsl:variable name="doi_url">
+      <xsl:value-of select="$doi"/>
+      <xsl:call-template name="replace-string">
+        <xsl:with-param name="str">
+          <xsl:call-template name="replace-string">
+            <xsl:with-param name="str" select="text()"/>
+            <xsl:with-param name="replace">&lt;</xsl:with-param>
+            <xsl:with-param name="with">&amp;lt;</xsl:with-param>
+          </xsl:call-template>
+        </xsl:with-param>
+        <xsl:with-param name="replace">&gt;</xsl:with-param>
+        <xsl:with-param name="with">&amp;gt;</xsl:with-param>
+      </xsl:call-template>
+    </xsl:variable>
+    <PDBo:link_to_doi rdf:resource="{$doi_url}" rdfs:label="doi:{text()}"/>
+  </xsl:template>
+
   <xsl:template match="PDBx:entity_src_gen/PDBx:pdbx_gene_src_ncbi_taxonomy_id[text()!='']" mode="linked">
     <xsl:variable name="tax_list">
       <xsl:call-template name="tokenize">

@@ -25,18 +25,18 @@
               </rdf:Description>
             </PDBo:reference_to_entry>
             <PDBo:atom_sites.entry_id>7LQS</PDBo:atom_sites.entry_id>
-            <PDBo:atom_sites.fract_transf_matrix11 rdf:datatype="xsd:decimal">1.000000</PDBo:atom_sites.fract_transf_matrix11>
-            <PDBo:atom_sites.fract_transf_matrix12 rdf:datatype="xsd:decimal">0.000000</PDBo:atom_sites.fract_transf_matrix12>
-            <PDBo:atom_sites.fract_transf_matrix13 rdf:datatype="xsd:decimal">0.000000</PDBo:atom_sites.fract_transf_matrix13>
-            <PDBo:atom_sites.fract_transf_matrix21 rdf:datatype="xsd:decimal">0.000000</PDBo:atom_sites.fract_transf_matrix21>
-            <PDBo:atom_sites.fract_transf_matrix22 rdf:datatype="xsd:decimal">1.000000</PDBo:atom_sites.fract_transf_matrix22>
-            <PDBo:atom_sites.fract_transf_matrix23 rdf:datatype="xsd:decimal">0.000000</PDBo:atom_sites.fract_transf_matrix23>
-            <PDBo:atom_sites.fract_transf_matrix31 rdf:datatype="xsd:decimal">0.000000</PDBo:atom_sites.fract_transf_matrix31>
-            <PDBo:atom_sites.fract_transf_matrix32 rdf:datatype="xsd:decimal">0.000000</PDBo:atom_sites.fract_transf_matrix32>
-            <PDBo:atom_sites.fract_transf_matrix33 rdf:datatype="xsd:decimal">1.000000</PDBo:atom_sites.fract_transf_matrix33>
-            <PDBo:atom_sites.fract_transf_vector1 rdf:datatype="xsd:decimal">0.00000</PDBo:atom_sites.fract_transf_vector1>
-            <PDBo:atom_sites.fract_transf_vector2 rdf:datatype="xsd:decimal">0.00000</PDBo:atom_sites.fract_transf_vector2>
-            <PDBo:atom_sites.fract_transf_vector3 rdf:datatype="xsd:decimal">0.00000</PDBo:atom_sites.fract_transf_vector3>
+            <PDBo:atom_sites.fract_transf_matrix11 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.000000</PDBo:atom_sites.fract_transf_matrix11>
+            <PDBo:atom_sites.fract_transf_matrix12 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.000000</PDBo:atom_sites.fract_transf_matrix12>
+            <PDBo:atom_sites.fract_transf_matrix13 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.000000</PDBo:atom_sites.fract_transf_matrix13>
+            <PDBo:atom_sites.fract_transf_matrix21 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.000000</PDBo:atom_sites.fract_transf_matrix21>
+            <PDBo:atom_sites.fract_transf_matrix22 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.000000</PDBo:atom_sites.fract_transf_matrix22>
+            <PDBo:atom_sites.fract_transf_matrix23 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.000000</PDBo:atom_sites.fract_transf_matrix23>
+            <PDBo:atom_sites.fract_transf_matrix31 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.000000</PDBo:atom_sites.fract_transf_matrix31>
+            <PDBo:atom_sites.fract_transf_matrix32 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.000000</PDBo:atom_sites.fract_transf_matrix32>
+            <PDBo:atom_sites.fract_transf_matrix33 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.000000</PDBo:atom_sites.fract_transf_matrix33>
+            <PDBo:atom_sites.fract_transf_vector1 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.00000</PDBo:atom_sites.fract_transf_vector1>
+            <PDBo:atom_sites.fract_transf_vector2 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.00000</PDBo:atom_sites.fract_transf_vector2>
+            <PDBo:atom_sites.fract_transf_vector3 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.00000</PDBo:atom_sites.fract_transf_vector3>
           </PDBo:atom_sites>
         </PDBo:has_atom_sites>
       </PDBo:atom_sitesCategory>
@@ -80,7 +80,7 @@
         <PDBo:has_audit_author>
           <PDBo:audit_author rdf:about="http://rdf.wwpdb.org/pdb/7LQS/audit_author/1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7LQS"/>
-            <PDBo:audit_author.pdbx_ordinal rdf:datatype="xsd:int">1</PDBo:audit_author.pdbx_ordinal>
+            <PDBo:audit_author.pdbx_ordinal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:audit_author.pdbx_ordinal>
             <PDBo:audit_author.identifier_ORCID>0000-0003-1447-9940</PDBo:audit_author.identifier_ORCID>
             <PDBo:audit_author.name>Evans, E.R.J.</PDBo:audit_author.name>
             <PDBo:link_to_orcid rdf:resource="http://orcid.org/0000-0003-1447-9940" rdfs:label="orcid:0000-0003-1447-9940"/>
@@ -90,7 +90,7 @@
         <PDBo:has_audit_author>
           <PDBo:audit_author rdf:about="http://rdf.wwpdb.org/pdb/7LQS/audit_author/2">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7LQS"/>
-            <PDBo:audit_author.pdbx_ordinal rdf:datatype="xsd:int">2</PDBo:audit_author.pdbx_ordinal>
+            <PDBo:audit_author.pdbx_ordinal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</PDBo:audit_author.pdbx_ordinal>
             <PDBo:audit_author.identifier_ORCID>0000-0002-4697-6602</PDBo:audit_author.identifier_ORCID>
             <PDBo:audit_author.name>Daly, N.L.</PDBo:audit_author.name>
             <PDBo:link_to_orcid rdf:resource="http://orcid.org/0000-0002-4697-6602" rdfs:label="orcid:0000-0002-4697-6602"/>
@@ -119,7 +119,7 @@
             <PDBo:chem_comp.id>ALA</PDBo:chem_comp.id>
             <PDBo:link_to_chem_comp rdf:resource="http://rdf.wwpdb.org/cc/ALA"/>
             <PDBo:chem_comp.formula>C3 H7 N O2</PDBo:chem_comp.formula>
-            <PDBo:chem_comp.formula_weight rdf:datatype="xsd:decimal">89.093</PDBo:chem_comp.formula_weight>
+            <PDBo:chem_comp.formula_weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">89.093</PDBo:chem_comp.formula_weight>
             <PDBo:chem_comp.mon_nstd_flag>y</PDBo:chem_comp.mon_nstd_flag>
             <PDBo:chem_comp.name>ALANINE</PDBo:chem_comp.name>
             <PDBo:chem_comp.type>L-peptide linking</PDBo:chem_comp.type>
@@ -131,7 +131,7 @@
             <PDBo:chem_comp.id>ASN</PDBo:chem_comp.id>
             <PDBo:link_to_chem_comp rdf:resource="http://rdf.wwpdb.org/cc/ASN"/>
             <PDBo:chem_comp.formula>C4 H8 N2 O3</PDBo:chem_comp.formula>
-            <PDBo:chem_comp.formula_weight rdf:datatype="xsd:decimal">132.118</PDBo:chem_comp.formula_weight>
+            <PDBo:chem_comp.formula_weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">132.118</PDBo:chem_comp.formula_weight>
             <PDBo:chem_comp.mon_nstd_flag>y</PDBo:chem_comp.mon_nstd_flag>
             <PDBo:chem_comp.name>ASPARAGINE</PDBo:chem_comp.name>
             <PDBo:chem_comp.type>L-peptide linking</PDBo:chem_comp.type>
@@ -143,7 +143,7 @@
             <PDBo:chem_comp.id>ASP</PDBo:chem_comp.id>
             <PDBo:link_to_chem_comp rdf:resource="http://rdf.wwpdb.org/cc/ASP"/>
             <PDBo:chem_comp.formula>C4 H7 N O4</PDBo:chem_comp.formula>
-            <PDBo:chem_comp.formula_weight rdf:datatype="xsd:decimal">133.103</PDBo:chem_comp.formula_weight>
+            <PDBo:chem_comp.formula_weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">133.103</PDBo:chem_comp.formula_weight>
             <PDBo:chem_comp.mon_nstd_flag>y</PDBo:chem_comp.mon_nstd_flag>
             <PDBo:chem_comp.name>ASPARTIC ACID</PDBo:chem_comp.name>
             <PDBo:chem_comp.type>L-peptide linking</PDBo:chem_comp.type>
@@ -155,7 +155,7 @@
             <PDBo:chem_comp.id>CYS</PDBo:chem_comp.id>
             <PDBo:link_to_chem_comp rdf:resource="http://rdf.wwpdb.org/cc/CYS"/>
             <PDBo:chem_comp.formula>C3 H7 N O2 S</PDBo:chem_comp.formula>
-            <PDBo:chem_comp.formula_weight rdf:datatype="xsd:decimal">121.158</PDBo:chem_comp.formula_weight>
+            <PDBo:chem_comp.formula_weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">121.158</PDBo:chem_comp.formula_weight>
             <PDBo:chem_comp.mon_nstd_flag>y</PDBo:chem_comp.mon_nstd_flag>
             <PDBo:chem_comp.name>CYSTEINE</PDBo:chem_comp.name>
             <PDBo:chem_comp.type>L-peptide linking</PDBo:chem_comp.type>
@@ -167,7 +167,7 @@
             <PDBo:chem_comp.id>GLN</PDBo:chem_comp.id>
             <PDBo:link_to_chem_comp rdf:resource="http://rdf.wwpdb.org/cc/GLN"/>
             <PDBo:chem_comp.formula>C5 H10 N2 O3</PDBo:chem_comp.formula>
-            <PDBo:chem_comp.formula_weight rdf:datatype="xsd:decimal">146.144</PDBo:chem_comp.formula_weight>
+            <PDBo:chem_comp.formula_weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">146.144</PDBo:chem_comp.formula_weight>
             <PDBo:chem_comp.mon_nstd_flag>y</PDBo:chem_comp.mon_nstd_flag>
             <PDBo:chem_comp.name>GLUTAMINE</PDBo:chem_comp.name>
             <PDBo:chem_comp.type>L-peptide linking</PDBo:chem_comp.type>
@@ -179,7 +179,7 @@
             <PDBo:chem_comp.id>HIS</PDBo:chem_comp.id>
             <PDBo:link_to_chem_comp rdf:resource="http://rdf.wwpdb.org/cc/HIS"/>
             <PDBo:chem_comp.formula>C6 H10 N3 O2 1</PDBo:chem_comp.formula>
-            <PDBo:chem_comp.formula_weight rdf:datatype="xsd:decimal">156.162</PDBo:chem_comp.formula_weight>
+            <PDBo:chem_comp.formula_weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">156.162</PDBo:chem_comp.formula_weight>
             <PDBo:chem_comp.mon_nstd_flag>y</PDBo:chem_comp.mon_nstd_flag>
             <PDBo:chem_comp.name>HISTIDINE</PDBo:chem_comp.name>
             <PDBo:chem_comp.type>L-peptide linking</PDBo:chem_comp.type>
@@ -191,7 +191,7 @@
             <PDBo:chem_comp.id>LEU</PDBo:chem_comp.id>
             <PDBo:link_to_chem_comp rdf:resource="http://rdf.wwpdb.org/cc/LEU"/>
             <PDBo:chem_comp.formula>C6 H13 N O2</PDBo:chem_comp.formula>
-            <PDBo:chem_comp.formula_weight rdf:datatype="xsd:decimal">131.173</PDBo:chem_comp.formula_weight>
+            <PDBo:chem_comp.formula_weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">131.173</PDBo:chem_comp.formula_weight>
             <PDBo:chem_comp.mon_nstd_flag>y</PDBo:chem_comp.mon_nstd_flag>
             <PDBo:chem_comp.name>LEUCINE</PDBo:chem_comp.name>
             <PDBo:chem_comp.type>L-peptide linking</PDBo:chem_comp.type>
@@ -203,7 +203,7 @@
             <PDBo:chem_comp.id>PRO</PDBo:chem_comp.id>
             <PDBo:link_to_chem_comp rdf:resource="http://rdf.wwpdb.org/cc/PRO"/>
             <PDBo:chem_comp.formula>C5 H9 N O2</PDBo:chem_comp.formula>
-            <PDBo:chem_comp.formula_weight rdf:datatype="xsd:decimal">115.130</PDBo:chem_comp.formula_weight>
+            <PDBo:chem_comp.formula_weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">115.130</PDBo:chem_comp.formula_weight>
             <PDBo:chem_comp.mon_nstd_flag>y</PDBo:chem_comp.mon_nstd_flag>
             <PDBo:chem_comp.name>PROLINE</PDBo:chem_comp.name>
             <PDBo:chem_comp.type>L-peptide linking</PDBo:chem_comp.type>
@@ -215,7 +215,7 @@
             <PDBo:chem_comp.id>SER</PDBo:chem_comp.id>
             <PDBo:link_to_chem_comp rdf:resource="http://rdf.wwpdb.org/cc/SER"/>
             <PDBo:chem_comp.formula>C3 H7 N O3</PDBo:chem_comp.formula>
-            <PDBo:chem_comp.formula_weight rdf:datatype="xsd:decimal">105.093</PDBo:chem_comp.formula_weight>
+            <PDBo:chem_comp.formula_weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">105.093</PDBo:chem_comp.formula_weight>
             <PDBo:chem_comp.mon_nstd_flag>y</PDBo:chem_comp.mon_nstd_flag>
             <PDBo:chem_comp.name>SERINE</PDBo:chem_comp.name>
             <PDBo:chem_comp.type>L-peptide linking</PDBo:chem_comp.type>
@@ -227,7 +227,7 @@
             <PDBo:chem_comp.id>VAL</PDBo:chem_comp.id>
             <PDBo:link_to_chem_comp rdf:resource="http://rdf.wwpdb.org/cc/VAL"/>
             <PDBo:chem_comp.formula>C5 H11 N O2</PDBo:chem_comp.formula>
-            <PDBo:chem_comp.formula_weight rdf:datatype="xsd:decimal">117.146</PDBo:chem_comp.formula_weight>
+            <PDBo:chem_comp.formula_weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">117.146</PDBo:chem_comp.formula_weight>
             <PDBo:chem_comp.mon_nstd_flag>y</PDBo:chem_comp.mon_nstd_flag>
             <PDBo:chem_comp.name>VALINE</PDBo:chem_comp.name>
             <PDBo:chem_comp.type>L-peptide linking</PDBo:chem_comp.type>
@@ -245,9 +245,9 @@
             <PDBo:citation.journal_id_ISSN>1660-3397</PDBo:citation.journal_id_ISSN>
             <PDBo:citation.journal_volume>19</PDBo:citation.journal_volume>
             <PDBo:citation.pdbx_database_id_DOI>10.3390/md19030141</PDBo:citation.pdbx_database_id_DOI>
-            <PDBo:citation.pdbx_database_id_PubMed rdf:datatype="xsd:int">33801301</PDBo:citation.pdbx_database_id_PubMed>
+            <PDBo:citation.pdbx_database_id_PubMed rdf:datatype="http://www.w3.org/2001/XMLSchema#int">33801301</PDBo:citation.pdbx_database_id_PubMed>
             <PDBo:citation.title>Synthesis, Structural and Pharmacological Characterizations of CIC, a Novel alpha-Conotoxin with an Extended N-Terminal Tail.</PDBo:citation.title>
-            <PDBo:citation.year rdf:datatype="xsd:int">2021</PDBo:citation.year>
+            <PDBo:citation.year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2021</PDBo:citation.year>
             <PDBo:link_to_doi rdf:resource="http://doi.org/10.3390/md19030141" rdfs:label="doi:10.3390/md19030141"/>
             <PDBo:link_to_pubmed rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubmed/33801301" rdfs:label="pubmed:33801301"/>
             <dcterms:references rdf:resource="http://identifiers.org/pubmed/33801301" rdfs:label="pubmed:33801301"/>
@@ -267,7 +267,7 @@
             </PDBo:reference_to_citation>
             <PDBo:citation_author.citation_id>primary</PDBo:citation_author.citation_id>
             <PDBo:citation_author.name>Giribaldi, J.</PDBo:citation_author.name>
-            <PDBo:citation_author.ordinal rdf:datatype="xsd:int">1</PDBo:citation_author.ordinal>
+            <PDBo:citation_author.ordinal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:citation_author.ordinal>
             <PDBo:citation_author.identifier_ORCID>0000-0002-4273-3080</PDBo:citation_author.identifier_ORCID>
             <PDBo:link_to_orcid rdf:resource="http://orcid.org/0000-0002-4273-3080" rdfs:label="orcid:0000-0002-4273-3080"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/orcid/0000-0002-4273-3080" rdfs:label="orcid:0000-0002-4273-3080"/>
@@ -283,7 +283,7 @@
             </PDBo:reference_to_citation>
             <PDBo:citation_author.citation_id>primary</PDBo:citation_author.citation_id>
             <PDBo:citation_author.name>Haufe, Y.</PDBo:citation_author.name>
-            <PDBo:citation_author.ordinal rdf:datatype="xsd:int">2</PDBo:citation_author.ordinal>
+            <PDBo:citation_author.ordinal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</PDBo:citation_author.ordinal>
             <PDBo:citation_author.identifier_ORCID>0000-0003-2163-7177</PDBo:citation_author.identifier_ORCID>
             <PDBo:link_to_orcid rdf:resource="http://orcid.org/0000-0003-2163-7177" rdfs:label="orcid:0000-0003-2163-7177"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/orcid/0000-0003-2163-7177" rdfs:label="orcid:0000-0003-2163-7177"/>
@@ -299,7 +299,7 @@
             </PDBo:reference_to_citation>
             <PDBo:citation_author.citation_id>primary</PDBo:citation_author.citation_id>
             <PDBo:citation_author.name>Evans, E.R.J.</PDBo:citation_author.name>
-            <PDBo:citation_author.ordinal rdf:datatype="xsd:int">3</PDBo:citation_author.ordinal>
+            <PDBo:citation_author.ordinal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</PDBo:citation_author.ordinal>
             <PDBo:citation_author.identifier_ORCID>0000-0003-1447-9940</PDBo:citation_author.identifier_ORCID>
             <PDBo:link_to_orcid rdf:resource="http://orcid.org/0000-0003-1447-9940" rdfs:label="orcid:0000-0003-1447-9940"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/orcid/0000-0003-1447-9940" rdfs:label="orcid:0000-0003-1447-9940"/>
@@ -315,7 +315,7 @@
             </PDBo:reference_to_citation>
             <PDBo:citation_author.citation_id>primary</PDBo:citation_author.citation_id>
             <PDBo:citation_author.name>Wilson, D.T.</PDBo:citation_author.name>
-            <PDBo:citation_author.ordinal rdf:datatype="xsd:int">4</PDBo:citation_author.ordinal>
+            <PDBo:citation_author.ordinal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</PDBo:citation_author.ordinal>
           </PDBo:citation_author>
         </PDBo:has_citation_author>
         <PDBo:has_citation_author>
@@ -328,7 +328,7 @@
             </PDBo:reference_to_citation>
             <PDBo:citation_author.citation_id>primary</PDBo:citation_author.citation_id>
             <PDBo:citation_author.name>Daly, N.L.</PDBo:citation_author.name>
-            <PDBo:citation_author.ordinal rdf:datatype="xsd:int">5</PDBo:citation_author.ordinal>
+            <PDBo:citation_author.ordinal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">5</PDBo:citation_author.ordinal>
             <PDBo:citation_author.identifier_ORCID>0000-0002-4697-6602</PDBo:citation_author.identifier_ORCID>
             <PDBo:link_to_orcid rdf:resource="http://orcid.org/0000-0002-4697-6602" rdfs:label="orcid:0000-0002-4697-6602"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/orcid/0000-0002-4697-6602" rdfs:label="orcid:0000-0002-4697-6602"/>
@@ -344,7 +344,7 @@
             </PDBo:reference_to_citation>
             <PDBo:citation_author.citation_id>primary</PDBo:citation_author.citation_id>
             <PDBo:citation_author.name>Enjalbal, C.</PDBo:citation_author.name>
-            <PDBo:citation_author.ordinal rdf:datatype="xsd:int">6</PDBo:citation_author.ordinal>
+            <PDBo:citation_author.ordinal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">6</PDBo:citation_author.ordinal>
             <PDBo:citation_author.identifier_ORCID>0000-0003-4646-4583</PDBo:citation_author.identifier_ORCID>
             <PDBo:link_to_orcid rdf:resource="http://orcid.org/0000-0003-4646-4583" rdfs:label="orcid:0000-0003-4646-4583"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/orcid/0000-0003-4646-4583" rdfs:label="orcid:0000-0003-4646-4583"/>
@@ -360,7 +360,7 @@
             </PDBo:reference_to_citation>
             <PDBo:citation_author.citation_id>primary</PDBo:citation_author.citation_id>
             <PDBo:citation_author.name>Nicke, A.</PDBo:citation_author.name>
-            <PDBo:citation_author.ordinal rdf:datatype="xsd:int">7</PDBo:citation_author.ordinal>
+            <PDBo:citation_author.ordinal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">7</PDBo:citation_author.ordinal>
           </PDBo:citation_author>
         </PDBo:has_citation_author>
         <PDBo:has_citation_author>
@@ -373,7 +373,7 @@
             </PDBo:reference_to_citation>
             <PDBo:citation_author.citation_id>primary</PDBo:citation_author.citation_id>
             <PDBo:citation_author.name>Dutertre, S.</PDBo:citation_author.name>
-            <PDBo:citation_author.ordinal rdf:datatype="xsd:int">8</PDBo:citation_author.ordinal>
+            <PDBo:citation_author.ordinal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">8</PDBo:citation_author.ordinal>
             <PDBo:citation_author.identifier_ORCID>0000-0002-2945-1484</PDBo:citation_author.identifier_ORCID>
             <PDBo:link_to_orcid rdf:resource="http://orcid.org/0000-0002-2945-1484" rdfs:label="orcid:0000-0002-2945-1484"/>
             <rdfs:seeAlso rdf:resource="http://identifiers.org/orcid/0000-0002-2945-1484" rdfs:label="orcid:0000-0002-2945-1484"/>
@@ -412,9 +412,9 @@
           <PDBo:entity rdf:about="http://rdf.wwpdb.org/pdb/7LQS/entity/1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7LQS"/>
             <PDBo:entity.id>1</PDBo:entity.id>
-            <PDBo:entity.formula_weight rdf:datatype="xsd:decimal">1608.818</PDBo:entity.formula_weight>
+            <PDBo:entity.formula_weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1608.818</PDBo:entity.formula_weight>
             <PDBo:entity.pdbx_description>Alpha-conotoxin CIC</PDBo:entity.pdbx_description>
-            <PDBo:entity.pdbx_number_of_molecules rdf:datatype="xsd:int">1</PDBo:entity.pdbx_number_of_molecules>
+            <PDBo:entity.pdbx_number_of_molecules rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:entity.pdbx_number_of_molecules>
             <PDBo:entity.src_method>syn</PDBo:entity.src_method>
             <PDBo:entity.type>polymer</PDBo:entity.type>
           </PDBo:entity>
@@ -459,7 +459,7 @@
             </PDBo:reference_to_entity_poly>
             <PDBo:entity_poly_seq.entity_id>1</PDBo:entity_poly_seq.entity_id>
             <PDBo:entity_poly_seq.mon_id>CYS</PDBo:entity_poly_seq.mon_id>
-            <PDBo:entity_poly_seq.num rdf:datatype="xsd:int">1</PDBo:entity_poly_seq.num>
+            <PDBo:entity_poly_seq.num rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:entity_poly_seq.num>
             <PDBo:entity_poly_seq.hetero>n</PDBo:entity_poly_seq.hetero>
           </PDBo:entity_poly_seq>
         </PDBo:has_entity_poly_seq>
@@ -478,7 +478,7 @@
             </PDBo:reference_to_entity_poly>
             <PDBo:entity_poly_seq.entity_id>1</PDBo:entity_poly_seq.entity_id>
             <PDBo:entity_poly_seq.mon_id>CYS</PDBo:entity_poly_seq.mon_id>
-            <PDBo:entity_poly_seq.num rdf:datatype="xsd:int">2</PDBo:entity_poly_seq.num>
+            <PDBo:entity_poly_seq.num rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</PDBo:entity_poly_seq.num>
             <PDBo:entity_poly_seq.hetero>n</PDBo:entity_poly_seq.hetero>
           </PDBo:entity_poly_seq>
         </PDBo:has_entity_poly_seq>
@@ -497,7 +497,7 @@
             </PDBo:reference_to_entity_poly>
             <PDBo:entity_poly_seq.entity_id>1</PDBo:entity_poly_seq.entity_id>
             <PDBo:entity_poly_seq.mon_id>SER</PDBo:entity_poly_seq.mon_id>
-            <PDBo:entity_poly_seq.num rdf:datatype="xsd:int">3</PDBo:entity_poly_seq.num>
+            <PDBo:entity_poly_seq.num rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</PDBo:entity_poly_seq.num>
             <PDBo:entity_poly_seq.hetero>n</PDBo:entity_poly_seq.hetero>
           </PDBo:entity_poly_seq>
         </PDBo:has_entity_poly_seq>
@@ -516,7 +516,7 @@
             </PDBo:reference_to_entity_poly>
             <PDBo:entity_poly_seq.entity_id>1</PDBo:entity_poly_seq.entity_id>
             <PDBo:entity_poly_seq.mon_id>ASN</PDBo:entity_poly_seq.mon_id>
-            <PDBo:entity_poly_seq.num rdf:datatype="xsd:int">4</PDBo:entity_poly_seq.num>
+            <PDBo:entity_poly_seq.num rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</PDBo:entity_poly_seq.num>
             <PDBo:entity_poly_seq.hetero>n</PDBo:entity_poly_seq.hetero>
           </PDBo:entity_poly_seq>
         </PDBo:has_entity_poly_seq>
@@ -535,7 +535,7 @@
             </PDBo:reference_to_entity_poly>
             <PDBo:entity_poly_seq.entity_id>1</PDBo:entity_poly_seq.entity_id>
             <PDBo:entity_poly_seq.mon_id>PRO</PDBo:entity_poly_seq.mon_id>
-            <PDBo:entity_poly_seq.num rdf:datatype="xsd:int">5</PDBo:entity_poly_seq.num>
+            <PDBo:entity_poly_seq.num rdf:datatype="http://www.w3.org/2001/XMLSchema#int">5</PDBo:entity_poly_seq.num>
             <PDBo:entity_poly_seq.hetero>n</PDBo:entity_poly_seq.hetero>
           </PDBo:entity_poly_seq>
         </PDBo:has_entity_poly_seq>
@@ -554,7 +554,7 @@
             </PDBo:reference_to_entity_poly>
             <PDBo:entity_poly_seq.entity_id>1</PDBo:entity_poly_seq.entity_id>
             <PDBo:entity_poly_seq.mon_id>ALA</PDBo:entity_poly_seq.mon_id>
-            <PDBo:entity_poly_seq.num rdf:datatype="xsd:int">6</PDBo:entity_poly_seq.num>
+            <PDBo:entity_poly_seq.num rdf:datatype="http://www.w3.org/2001/XMLSchema#int">6</PDBo:entity_poly_seq.num>
             <PDBo:entity_poly_seq.hetero>n</PDBo:entity_poly_seq.hetero>
           </PDBo:entity_poly_seq>
         </PDBo:has_entity_poly_seq>
@@ -573,7 +573,7 @@
             </PDBo:reference_to_entity_poly>
             <PDBo:entity_poly_seq.entity_id>1</PDBo:entity_poly_seq.entity_id>
             <PDBo:entity_poly_seq.mon_id>CYS</PDBo:entity_poly_seq.mon_id>
-            <PDBo:entity_poly_seq.num rdf:datatype="xsd:int">7</PDBo:entity_poly_seq.num>
+            <PDBo:entity_poly_seq.num rdf:datatype="http://www.w3.org/2001/XMLSchema#int">7</PDBo:entity_poly_seq.num>
             <PDBo:entity_poly_seq.hetero>n</PDBo:entity_poly_seq.hetero>
           </PDBo:entity_poly_seq>
         </PDBo:has_entity_poly_seq>
@@ -592,7 +592,7 @@
             </PDBo:reference_to_entity_poly>
             <PDBo:entity_poly_seq.entity_id>1</PDBo:entity_poly_seq.entity_id>
             <PDBo:entity_poly_seq.mon_id>GLN</PDBo:entity_poly_seq.mon_id>
-            <PDBo:entity_poly_seq.num rdf:datatype="xsd:int">8</PDBo:entity_poly_seq.num>
+            <PDBo:entity_poly_seq.num rdf:datatype="http://www.w3.org/2001/XMLSchema#int">8</PDBo:entity_poly_seq.num>
             <PDBo:entity_poly_seq.hetero>n</PDBo:entity_poly_seq.hetero>
           </PDBo:entity_poly_seq>
         </PDBo:has_entity_poly_seq>
@@ -611,7 +611,7 @@
             </PDBo:reference_to_entity_poly>
             <PDBo:entity_poly_seq.entity_id>1</PDBo:entity_poly_seq.entity_id>
             <PDBo:entity_poly_seq.mon_id>VAL</PDBo:entity_poly_seq.mon_id>
-            <PDBo:entity_poly_seq.num rdf:datatype="xsd:int">9</PDBo:entity_poly_seq.num>
+            <PDBo:entity_poly_seq.num rdf:datatype="http://www.w3.org/2001/XMLSchema#int">9</PDBo:entity_poly_seq.num>
             <PDBo:entity_poly_seq.hetero>n</PDBo:entity_poly_seq.hetero>
           </PDBo:entity_poly_seq>
         </PDBo:has_entity_poly_seq>
@@ -630,7 +630,7 @@
             </PDBo:reference_to_entity_poly>
             <PDBo:entity_poly_seq.entity_id>1</PDBo:entity_poly_seq.entity_id>
             <PDBo:entity_poly_seq.mon_id>GLN</PDBo:entity_poly_seq.mon_id>
-            <PDBo:entity_poly_seq.num rdf:datatype="xsd:int">10</PDBo:entity_poly_seq.num>
+            <PDBo:entity_poly_seq.num rdf:datatype="http://www.w3.org/2001/XMLSchema#int">10</PDBo:entity_poly_seq.num>
             <PDBo:entity_poly_seq.hetero>n</PDBo:entity_poly_seq.hetero>
           </PDBo:entity_poly_seq>
         </PDBo:has_entity_poly_seq>
@@ -649,7 +649,7 @@
             </PDBo:reference_to_entity_poly>
             <PDBo:entity_poly_seq.entity_id>1</PDBo:entity_poly_seq.entity_id>
             <PDBo:entity_poly_seq.mon_id>HIS</PDBo:entity_poly_seq.mon_id>
-            <PDBo:entity_poly_seq.num rdf:datatype="xsd:int">11</PDBo:entity_poly_seq.num>
+            <PDBo:entity_poly_seq.num rdf:datatype="http://www.w3.org/2001/XMLSchema#int">11</PDBo:entity_poly_seq.num>
             <PDBo:entity_poly_seq.hetero>n</PDBo:entity_poly_seq.hetero>
           </PDBo:entity_poly_seq>
         </PDBo:has_entity_poly_seq>
@@ -668,7 +668,7 @@
             </PDBo:reference_to_entity_poly>
             <PDBo:entity_poly_seq.entity_id>1</PDBo:entity_poly_seq.entity_id>
             <PDBo:entity_poly_seq.mon_id>SER</PDBo:entity_poly_seq.mon_id>
-            <PDBo:entity_poly_seq.num rdf:datatype="xsd:int">12</PDBo:entity_poly_seq.num>
+            <PDBo:entity_poly_seq.num rdf:datatype="http://www.w3.org/2001/XMLSchema#int">12</PDBo:entity_poly_seq.num>
             <PDBo:entity_poly_seq.hetero>n</PDBo:entity_poly_seq.hetero>
           </PDBo:entity_poly_seq>
         </PDBo:has_entity_poly_seq>
@@ -687,7 +687,7 @@
             </PDBo:reference_to_entity_poly>
             <PDBo:entity_poly_seq.entity_id>1</PDBo:entity_poly_seq.entity_id>
             <PDBo:entity_poly_seq.mon_id>ASP</PDBo:entity_poly_seq.mon_id>
-            <PDBo:entity_poly_seq.num rdf:datatype="xsd:int">13</PDBo:entity_poly_seq.num>
+            <PDBo:entity_poly_seq.num rdf:datatype="http://www.w3.org/2001/XMLSchema#int">13</PDBo:entity_poly_seq.num>
             <PDBo:entity_poly_seq.hetero>n</PDBo:entity_poly_seq.hetero>
           </PDBo:entity_poly_seq>
         </PDBo:has_entity_poly_seq>
@@ -706,7 +706,7 @@
             </PDBo:reference_to_entity_poly>
             <PDBo:entity_poly_seq.entity_id>1</PDBo:entity_poly_seq.entity_id>
             <PDBo:entity_poly_seq.mon_id>LEU</PDBo:entity_poly_seq.mon_id>
-            <PDBo:entity_poly_seq.num rdf:datatype="xsd:int">14</PDBo:entity_poly_seq.num>
+            <PDBo:entity_poly_seq.num rdf:datatype="http://www.w3.org/2001/XMLSchema#int">14</PDBo:entity_poly_seq.num>
             <PDBo:entity_poly_seq.hetero>n</PDBo:entity_poly_seq.hetero>
           </PDBo:entity_poly_seq>
         </PDBo:has_entity_poly_seq>
@@ -725,7 +725,7 @@
             </PDBo:reference_to_entity_poly>
             <PDBo:entity_poly_seq.entity_id>1</PDBo:entity_poly_seq.entity_id>
             <PDBo:entity_poly_seq.mon_id>CYS</PDBo:entity_poly_seq.mon_id>
-            <PDBo:entity_poly_seq.num rdf:datatype="xsd:int">15</PDBo:entity_poly_seq.num>
+            <PDBo:entity_poly_seq.num rdf:datatype="http://www.w3.org/2001/XMLSchema#int">15</PDBo:entity_poly_seq.num>
             <PDBo:entity_poly_seq.hetero>n</PDBo:entity_poly_seq.hetero>
           </PDBo:entity_poly_seq>
         </PDBo:has_entity_poly_seq>
@@ -768,8 +768,8 @@
               </rdf:Description>
             </PDBo:reference_to_pdbx_audit_revision_history>
             <PDBo:pdbx_audit_revision_details.data_content_type>Structure model</PDBo:pdbx_audit_revision_details.data_content_type>
-            <PDBo:pdbx_audit_revision_details.ordinal rdf:datatype="xsd:int">1</PDBo:pdbx_audit_revision_details.ordinal>
-            <PDBo:pdbx_audit_revision_details.revision_ordinal rdf:datatype="xsd:int">1</PDBo:pdbx_audit_revision_details.revision_ordinal>
+            <PDBo:pdbx_audit_revision_details.ordinal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_audit_revision_details.ordinal>
+            <PDBo:pdbx_audit_revision_details.revision_ordinal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_audit_revision_details.revision_ordinal>
             <PDBo:pdbx_audit_revision_details.provider>repository</PDBo:pdbx_audit_revision_details.provider>
             <PDBo:pdbx_audit_revision_details.type>Initial release</PDBo:pdbx_audit_revision_details.type>
           </PDBo:pdbx_audit_revision_details>
@@ -782,10 +782,10 @@
           <PDBo:pdbx_audit_revision_history rdf:about="http://rdf.wwpdb.org/pdb/7LQS/pdbx_audit_revision_history/Structure_model,1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7LQS"/>
             <PDBo:pdbx_audit_revision_history.data_content_type>Structure model</PDBo:pdbx_audit_revision_history.data_content_type>
-            <PDBo:pdbx_audit_revision_history.ordinal rdf:datatype="xsd:int">1</PDBo:pdbx_audit_revision_history.ordinal>
-            <PDBo:pdbx_audit_revision_history.major_revision rdf:datatype="xsd:int">1</PDBo:pdbx_audit_revision_history.major_revision>
-            <PDBo:pdbx_audit_revision_history.minor_revision rdf:datatype="xsd:int">0</PDBo:pdbx_audit_revision_history.minor_revision>
-            <PDBo:pdbx_audit_revision_history.revision_date rdf:datatype="xsd:date">2021-04-21</PDBo:pdbx_audit_revision_history.revision_date>
+            <PDBo:pdbx_audit_revision_history.ordinal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_audit_revision_history.ordinal>
+            <PDBo:pdbx_audit_revision_history.major_revision rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_audit_revision_history.major_revision>
+            <PDBo:pdbx_audit_revision_history.minor_revision rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</PDBo:pdbx_audit_revision_history.minor_revision>
+            <PDBo:pdbx_audit_revision_history.revision_date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-04-21</PDBo:pdbx_audit_revision_history.revision_date>
           </PDBo:pdbx_audit_revision_history>
         </PDBo:has_pdbx_audit_revision_history>
       </PDBo:pdbx_audit_revision_historyCategory>
@@ -830,7 +830,7 @@
             <PDBo:pdbx_database_status.deposit_site>RCSB</PDBo:pdbx_database_status.deposit_site>
             <PDBo:pdbx_database_status.pdb_format_compatible>Y</PDBo:pdbx_database_status.pdb_format_compatible>
             <PDBo:pdbx_database_status.process_site>RCSB</PDBo:pdbx_database_status.process_site>
-            <PDBo:pdbx_database_status.recvd_initial_deposition_date rdf:datatype="xsd:date">2021-02-15</PDBo:pdbx_database_status.recvd_initial_deposition_date>
+            <PDBo:pdbx_database_status.recvd_initial_deposition_date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-02-15</PDBo:pdbx_database_status.recvd_initial_deposition_date>
             <PDBo:pdbx_database_status.status_code>REL</PDBo:pdbx_database_status.status_code>
             <PDBo:pdbx_database_status.status_code_nmr_data>REL</PDBo:pdbx_database_status.status_code_nmr_data>
           </PDBo:pdbx_database_status>
@@ -848,13 +848,13 @@
               </rdf:Description>
             </PDBo:reference_to_entity>
             <PDBo:pdbx_entity_src_syn.entity_id>1</PDBo:pdbx_entity_src_syn.entity_id>
-            <PDBo:pdbx_entity_src_syn.pdbx_src_id rdf:datatype="xsd:int">1</PDBo:pdbx_entity_src_syn.pdbx_src_id>
+            <PDBo:pdbx_entity_src_syn.pdbx_src_id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_entity_src_syn.pdbx_src_id>
             <PDBo:pdbx_entity_src_syn.ncbi_taxonomy_id>101291</PDBo:pdbx_entity_src_syn.ncbi_taxonomy_id>
             <PDBo:pdbx_entity_src_syn.organism_common_name>Cat cone</PDBo:pdbx_entity_src_syn.organism_common_name>
             <PDBo:pdbx_entity_src_syn.organism_scientific>Conus catus</PDBo:pdbx_entity_src_syn.organism_scientific>
             <PDBo:pdbx_entity_src_syn.pdbx_alt_source_flag>sample</PDBo:pdbx_entity_src_syn.pdbx_alt_source_flag>
-            <PDBo:pdbx_entity_src_syn.pdbx_beg_seq_num rdf:datatype="xsd:int">1</PDBo:pdbx_entity_src_syn.pdbx_beg_seq_num>
-            <PDBo:pdbx_entity_src_syn.pdbx_end_seq_num rdf:datatype="xsd:int">15</PDBo:pdbx_entity_src_syn.pdbx_end_seq_num>
+            <PDBo:pdbx_entity_src_syn.pdbx_beg_seq_num rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_entity_src_syn.pdbx_beg_seq_num>
+            <PDBo:pdbx_entity_src_syn.pdbx_end_seq_num rdf:datatype="http://www.w3.org/2001/XMLSchema#int">15</PDBo:pdbx_entity_src_syn.pdbx_end_seq_num>
           </PDBo:pdbx_entity_src_syn>
         </PDBo:has_pdbx_entity_src_syn>
       </PDBo:pdbx_entity_src_synCategory>
@@ -871,8 +871,8 @@
             </PDBo:reference_to_entry>
             <PDBo:pdbx_nmr_ensemble.entry_id>7LQS</PDBo:pdbx_nmr_ensemble.entry_id>
             <PDBo:pdbx_nmr_ensemble.conformer_selection_criteria>target function</PDBo:pdbx_nmr_ensemble.conformer_selection_criteria>
-            <PDBo:pdbx_nmr_ensemble.conformers_calculated_total_number rdf:datatype="xsd:int">100</PDBo:pdbx_nmr_ensemble.conformers_calculated_total_number>
-            <PDBo:pdbx_nmr_ensemble.conformers_submitted_total_number rdf:datatype="xsd:int">20</PDBo:pdbx_nmr_ensemble.conformers_submitted_total_number>
+            <PDBo:pdbx_nmr_ensemble.conformers_calculated_total_number rdf:datatype="http://www.w3.org/2001/XMLSchema#int">100</PDBo:pdbx_nmr_ensemble.conformers_calculated_total_number>
+            <PDBo:pdbx_nmr_ensemble.conformers_submitted_total_number rdf:datatype="http://www.w3.org/2001/XMLSchema#int">20</PDBo:pdbx_nmr_ensemble.conformers_submitted_total_number>
           </PDBo:pdbx_nmr_ensemble>
         </PDBo:has_pdbx_nmr_ensemble>
       </PDBo:pdbx_nmr_ensembleCategory>
@@ -886,7 +886,7 @@
             <PDBo:pdbx_nmr_exptl.experiment_id>1</PDBo:pdbx_nmr_exptl.experiment_id>
             <PDBo:pdbx_nmr_exptl.solution_id>1</PDBo:pdbx_nmr_exptl.solution_id>
             <PDBo:pdbx_nmr_exptl.sample_state>isotropic</PDBo:pdbx_nmr_exptl.sample_state>
-            <PDBo:pdbx_nmr_exptl.spectrometer_id rdf:datatype="xsd:int">1</PDBo:pdbx_nmr_exptl.spectrometer_id>
+            <PDBo:pdbx_nmr_exptl.spectrometer_id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_nmr_exptl.spectrometer_id>
             <PDBo:pdbx_nmr_exptl.type>2D 1H-1H TOCSY</PDBo:pdbx_nmr_exptl.type>
           </PDBo:pdbx_nmr_exptl>
         </PDBo:has_pdbx_nmr_exptl>
@@ -897,7 +897,7 @@
             <PDBo:pdbx_nmr_exptl.experiment_id>2</PDBo:pdbx_nmr_exptl.experiment_id>
             <PDBo:pdbx_nmr_exptl.solution_id>1</PDBo:pdbx_nmr_exptl.solution_id>
             <PDBo:pdbx_nmr_exptl.sample_state>isotropic</PDBo:pdbx_nmr_exptl.sample_state>
-            <PDBo:pdbx_nmr_exptl.spectrometer_id rdf:datatype="xsd:int">1</PDBo:pdbx_nmr_exptl.spectrometer_id>
+            <PDBo:pdbx_nmr_exptl.spectrometer_id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_nmr_exptl.spectrometer_id>
             <PDBo:pdbx_nmr_exptl.type>2D 1H-1H NOESY</PDBo:pdbx_nmr_exptl.type>
           </PDBo:pdbx_nmr_exptl>
         </PDBo:has_pdbx_nmr_exptl>
@@ -908,7 +908,7 @@
             <PDBo:pdbx_nmr_exptl.experiment_id>3</PDBo:pdbx_nmr_exptl.experiment_id>
             <PDBo:pdbx_nmr_exptl.solution_id>1</PDBo:pdbx_nmr_exptl.solution_id>
             <PDBo:pdbx_nmr_exptl.sample_state>isotropic</PDBo:pdbx_nmr_exptl.sample_state>
-            <PDBo:pdbx_nmr_exptl.spectrometer_id rdf:datatype="xsd:int">1</PDBo:pdbx_nmr_exptl.spectrometer_id>
+            <PDBo:pdbx_nmr_exptl.spectrometer_id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_nmr_exptl.spectrometer_id>
             <PDBo:pdbx_nmr_exptl.type>2D 1H-1H COSY</PDBo:pdbx_nmr_exptl.type>
           </PDBo:pdbx_nmr_exptl>
         </PDBo:has_pdbx_nmr_exptl>
@@ -919,7 +919,7 @@
             <PDBo:pdbx_nmr_exptl.experiment_id>4</PDBo:pdbx_nmr_exptl.experiment_id>
             <PDBo:pdbx_nmr_exptl.solution_id>1</PDBo:pdbx_nmr_exptl.solution_id>
             <PDBo:pdbx_nmr_exptl.sample_state>isotropic</PDBo:pdbx_nmr_exptl.sample_state>
-            <PDBo:pdbx_nmr_exptl.spectrometer_id rdf:datatype="xsd:int">1</PDBo:pdbx_nmr_exptl.spectrometer_id>
+            <PDBo:pdbx_nmr_exptl.spectrometer_id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_nmr_exptl.spectrometer_id>
             <PDBo:pdbx_nmr_exptl.type>2D 1H-13C HSQC</PDBo:pdbx_nmr_exptl.type>
           </PDBo:pdbx_nmr_exptl>
         </PDBo:has_pdbx_nmr_exptl>
@@ -930,7 +930,7 @@
             <PDBo:pdbx_nmr_exptl.experiment_id>5</PDBo:pdbx_nmr_exptl.experiment_id>
             <PDBo:pdbx_nmr_exptl.solution_id>1</PDBo:pdbx_nmr_exptl.solution_id>
             <PDBo:pdbx_nmr_exptl.sample_state>isotropic</PDBo:pdbx_nmr_exptl.sample_state>
-            <PDBo:pdbx_nmr_exptl.spectrometer_id rdf:datatype="xsd:int">1</PDBo:pdbx_nmr_exptl.spectrometer_id>
+            <PDBo:pdbx_nmr_exptl.spectrometer_id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_nmr_exptl.spectrometer_id>
             <PDBo:pdbx_nmr_exptl.type>2D 1H-15N HSQC</PDBo:pdbx_nmr_exptl.type>
           </PDBo:pdbx_nmr_exptl>
         </PDBo:has_pdbx_nmr_exptl>
@@ -943,7 +943,7 @@
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7LQS"/>
             <PDBo:pdbx_nmr_exptl_sample.component>delta-CIC</PDBo:pdbx_nmr_exptl_sample.component>
             <PDBo:pdbx_nmr_exptl_sample.solution_id>1</PDBo:pdbx_nmr_exptl_sample.solution_id>
-            <PDBo:pdbx_nmr_exptl_sample.concentration rdf:datatype="xsd:decimal">1</PDBo:pdbx_nmr_exptl_sample.concentration>
+            <PDBo:pdbx_nmr_exptl_sample.concentration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</PDBo:pdbx_nmr_exptl_sample.concentration>
             <PDBo:pdbx_nmr_exptl_sample.concentration_units>mM</PDBo:pdbx_nmr_exptl_sample.concentration_units>
             <PDBo:pdbx_nmr_exptl_sample.isotopic_labeling>natural abundance</PDBo:pdbx_nmr_exptl_sample.isotopic_labeling>
           </PDBo:pdbx_nmr_exptl_sample>
@@ -979,7 +979,7 @@
               </rdf:Description>
             </PDBo:reference_to_entry>
             <PDBo:pdbx_nmr_refine.entry_id>7LQS</PDBo:pdbx_nmr_refine.entry_id>
-            <PDBo:pdbx_nmr_refine.software_ordinal rdf:datatype="xsd:int">3</PDBo:pdbx_nmr_refine.software_ordinal>
+            <PDBo:pdbx_nmr_refine.software_ordinal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</PDBo:pdbx_nmr_refine.software_ordinal>
             <PDBo:pdbx_nmr_refine.method>torsion angle dynamics</PDBo:pdbx_nmr_refine.method>
           </PDBo:pdbx_nmr_refine>
         </PDBo:has_pdbx_nmr_refine>
@@ -1021,7 +1021,7 @@
         <PDBo:has_pdbx_nmr_software>
           <PDBo:pdbx_nmr_software rdf:about="http://rdf.wwpdb.org/pdb/7LQS/pdbx_nmr_software/1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7LQS"/>
-            <PDBo:pdbx_nmr_software.ordinal rdf:datatype="xsd:int">1</PDBo:pdbx_nmr_software.ordinal>
+            <PDBo:pdbx_nmr_software.ordinal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_nmr_software.ordinal>
             <PDBo:pdbx_nmr_software.authors>Bruker Biospin</PDBo:pdbx_nmr_software.authors>
             <PDBo:pdbx_nmr_software.classification>collection</PDBo:pdbx_nmr_software.classification>
             <PDBo:pdbx_nmr_software.name>TopSpin</PDBo:pdbx_nmr_software.name>
@@ -1030,7 +1030,7 @@
         <PDBo:has_pdbx_nmr_software>
           <PDBo:pdbx_nmr_software rdf:about="http://rdf.wwpdb.org/pdb/7LQS/pdbx_nmr_software/2">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7LQS"/>
-            <PDBo:pdbx_nmr_software.ordinal rdf:datatype="xsd:int">2</PDBo:pdbx_nmr_software.ordinal>
+            <PDBo:pdbx_nmr_software.ordinal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</PDBo:pdbx_nmr_software.ordinal>
             <PDBo:pdbx_nmr_software.authors>CCPN</PDBo:pdbx_nmr_software.authors>
             <PDBo:pdbx_nmr_software.classification>data analysis</PDBo:pdbx_nmr_software.classification>
             <PDBo:pdbx_nmr_software.name>CcpNmr Analysis</PDBo:pdbx_nmr_software.name>
@@ -1039,7 +1039,7 @@
         <PDBo:has_pdbx_nmr_software>
           <PDBo:pdbx_nmr_software rdf:about="http://rdf.wwpdb.org/pdb/7LQS/pdbx_nmr_software/3">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7LQS"/>
-            <PDBo:pdbx_nmr_software.ordinal rdf:datatype="xsd:int">3</PDBo:pdbx_nmr_software.ordinal>
+            <PDBo:pdbx_nmr_software.ordinal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</PDBo:pdbx_nmr_software.ordinal>
             <PDBo:pdbx_nmr_software.authors>Guntert, Mumenthaler and Wuthrich</PDBo:pdbx_nmr_software.authors>
             <PDBo:pdbx_nmr_software.classification>refinement</PDBo:pdbx_nmr_software.classification>
             <PDBo:pdbx_nmr_software.name>CYANA</PDBo:pdbx_nmr_software.name>
@@ -1048,7 +1048,7 @@
         <PDBo:has_pdbx_nmr_software>
           <PDBo:pdbx_nmr_software rdf:about="http://rdf.wwpdb.org/pdb/7LQS/pdbx_nmr_software/4">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7LQS"/>
-            <PDBo:pdbx_nmr_software.ordinal rdf:datatype="xsd:int">4</PDBo:pdbx_nmr_software.ordinal>
+            <PDBo:pdbx_nmr_software.ordinal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</PDBo:pdbx_nmr_software.ordinal>
             <PDBo:pdbx_nmr_software.authors>Guntert, Mumenthaler and Wuthrich</PDBo:pdbx_nmr_software.authors>
             <PDBo:pdbx_nmr_software.classification>structure calculation</PDBo:pdbx_nmr_software.classification>
             <PDBo:pdbx_nmr_software.name>CYANA</PDBo:pdbx_nmr_software.name>
@@ -1062,7 +1062,7 @@
           <PDBo:pdbx_nmr_spectrometer rdf:about="http://rdf.wwpdb.org/pdb/7LQS/pdbx_nmr_spectrometer/1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7LQS"/>
             <PDBo:pdbx_nmr_spectrometer.spectrometer_id>1</PDBo:pdbx_nmr_spectrometer.spectrometer_id>
-            <PDBo:pdbx_nmr_spectrometer.field_strength rdf:datatype="xsd:decimal">600</PDBo:pdbx_nmr_spectrometer.field_strength>
+            <PDBo:pdbx_nmr_spectrometer.field_strength rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">600</PDBo:pdbx_nmr_spectrometer.field_strength>
             <PDBo:pdbx_nmr_spectrometer.manufacturer>Bruker</PDBo:pdbx_nmr_spectrometer.manufacturer>
             <PDBo:pdbx_nmr_spectrometer.model>AVANCE</PDBo:pdbx_nmr_spectrometer.model>
           </PDBo:pdbx_nmr_spectrometer>
@@ -1087,11 +1087,11 @@
             <PDBo:pdbx_poly_seq_scheme.asym_id>A</PDBo:pdbx_poly_seq_scheme.asym_id>
             <PDBo:pdbx_poly_seq_scheme.entity_id>1</PDBo:pdbx_poly_seq_scheme.entity_id>
             <PDBo:pdbx_poly_seq_scheme.mon_id>CYS</PDBo:pdbx_poly_seq_scheme.mon_id>
-            <PDBo:pdbx_poly_seq_scheme.seq_id rdf:datatype="xsd:int">1</PDBo:pdbx_poly_seq_scheme.seq_id>
+            <PDBo:pdbx_poly_seq_scheme.seq_id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_poly_seq_scheme.seq_id>
             <PDBo:pdbx_poly_seq_scheme.auth_mon_id>CYS</PDBo:pdbx_poly_seq_scheme.auth_mon_id>
             <PDBo:pdbx_poly_seq_scheme.auth_seq_num>1</PDBo:pdbx_poly_seq_scheme.auth_seq_num>
             <PDBo:pdbx_poly_seq_scheme.hetero>n</PDBo:pdbx_poly_seq_scheme.hetero>
-            <PDBo:pdbx_poly_seq_scheme.ndb_seq_num rdf:datatype="xsd:int">1</PDBo:pdbx_poly_seq_scheme.ndb_seq_num>
+            <PDBo:pdbx_poly_seq_scheme.ndb_seq_num rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_poly_seq_scheme.ndb_seq_num>
             <PDBo:pdbx_poly_seq_scheme.pdb_mon_id>CYS</PDBo:pdbx_poly_seq_scheme.pdb_mon_id>
             <PDBo:pdbx_poly_seq_scheme.pdb_seq_num>1</PDBo:pdbx_poly_seq_scheme.pdb_seq_num>
             <PDBo:pdbx_poly_seq_scheme.pdb_strand_id>A</PDBo:pdbx_poly_seq_scheme.pdb_strand_id>
@@ -1113,11 +1113,11 @@
             <PDBo:pdbx_poly_seq_scheme.asym_id>A</PDBo:pdbx_poly_seq_scheme.asym_id>
             <PDBo:pdbx_poly_seq_scheme.entity_id>1</PDBo:pdbx_poly_seq_scheme.entity_id>
             <PDBo:pdbx_poly_seq_scheme.mon_id>CYS</PDBo:pdbx_poly_seq_scheme.mon_id>
-            <PDBo:pdbx_poly_seq_scheme.seq_id rdf:datatype="xsd:int">2</PDBo:pdbx_poly_seq_scheme.seq_id>
+            <PDBo:pdbx_poly_seq_scheme.seq_id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</PDBo:pdbx_poly_seq_scheme.seq_id>
             <PDBo:pdbx_poly_seq_scheme.auth_mon_id>CYS</PDBo:pdbx_poly_seq_scheme.auth_mon_id>
             <PDBo:pdbx_poly_seq_scheme.auth_seq_num>2</PDBo:pdbx_poly_seq_scheme.auth_seq_num>
             <PDBo:pdbx_poly_seq_scheme.hetero>n</PDBo:pdbx_poly_seq_scheme.hetero>
-            <PDBo:pdbx_poly_seq_scheme.ndb_seq_num rdf:datatype="xsd:int">2</PDBo:pdbx_poly_seq_scheme.ndb_seq_num>
+            <PDBo:pdbx_poly_seq_scheme.ndb_seq_num rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</PDBo:pdbx_poly_seq_scheme.ndb_seq_num>
             <PDBo:pdbx_poly_seq_scheme.pdb_mon_id>CYS</PDBo:pdbx_poly_seq_scheme.pdb_mon_id>
             <PDBo:pdbx_poly_seq_scheme.pdb_seq_num>2</PDBo:pdbx_poly_seq_scheme.pdb_seq_num>
             <PDBo:pdbx_poly_seq_scheme.pdb_strand_id>A</PDBo:pdbx_poly_seq_scheme.pdb_strand_id>
@@ -1139,11 +1139,11 @@
             <PDBo:pdbx_poly_seq_scheme.asym_id>A</PDBo:pdbx_poly_seq_scheme.asym_id>
             <PDBo:pdbx_poly_seq_scheme.entity_id>1</PDBo:pdbx_poly_seq_scheme.entity_id>
             <PDBo:pdbx_poly_seq_scheme.mon_id>SER</PDBo:pdbx_poly_seq_scheme.mon_id>
-            <PDBo:pdbx_poly_seq_scheme.seq_id rdf:datatype="xsd:int">3</PDBo:pdbx_poly_seq_scheme.seq_id>
+            <PDBo:pdbx_poly_seq_scheme.seq_id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</PDBo:pdbx_poly_seq_scheme.seq_id>
             <PDBo:pdbx_poly_seq_scheme.auth_mon_id>SER</PDBo:pdbx_poly_seq_scheme.auth_mon_id>
             <PDBo:pdbx_poly_seq_scheme.auth_seq_num>3</PDBo:pdbx_poly_seq_scheme.auth_seq_num>
             <PDBo:pdbx_poly_seq_scheme.hetero>n</PDBo:pdbx_poly_seq_scheme.hetero>
-            <PDBo:pdbx_poly_seq_scheme.ndb_seq_num rdf:datatype="xsd:int">3</PDBo:pdbx_poly_seq_scheme.ndb_seq_num>
+            <PDBo:pdbx_poly_seq_scheme.ndb_seq_num rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</PDBo:pdbx_poly_seq_scheme.ndb_seq_num>
             <PDBo:pdbx_poly_seq_scheme.pdb_mon_id>SER</PDBo:pdbx_poly_seq_scheme.pdb_mon_id>
             <PDBo:pdbx_poly_seq_scheme.pdb_seq_num>3</PDBo:pdbx_poly_seq_scheme.pdb_seq_num>
             <PDBo:pdbx_poly_seq_scheme.pdb_strand_id>A</PDBo:pdbx_poly_seq_scheme.pdb_strand_id>
@@ -1165,11 +1165,11 @@
             <PDBo:pdbx_poly_seq_scheme.asym_id>A</PDBo:pdbx_poly_seq_scheme.asym_id>
             <PDBo:pdbx_poly_seq_scheme.entity_id>1</PDBo:pdbx_poly_seq_scheme.entity_id>
             <PDBo:pdbx_poly_seq_scheme.mon_id>ASN</PDBo:pdbx_poly_seq_scheme.mon_id>
-            <PDBo:pdbx_poly_seq_scheme.seq_id rdf:datatype="xsd:int">4</PDBo:pdbx_poly_seq_scheme.seq_id>
+            <PDBo:pdbx_poly_seq_scheme.seq_id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</PDBo:pdbx_poly_seq_scheme.seq_id>
             <PDBo:pdbx_poly_seq_scheme.auth_mon_id>ASN</PDBo:pdbx_poly_seq_scheme.auth_mon_id>
             <PDBo:pdbx_poly_seq_scheme.auth_seq_num>4</PDBo:pdbx_poly_seq_scheme.auth_seq_num>
             <PDBo:pdbx_poly_seq_scheme.hetero>n</PDBo:pdbx_poly_seq_scheme.hetero>
-            <PDBo:pdbx_poly_seq_scheme.ndb_seq_num rdf:datatype="xsd:int">4</PDBo:pdbx_poly_seq_scheme.ndb_seq_num>
+            <PDBo:pdbx_poly_seq_scheme.ndb_seq_num rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</PDBo:pdbx_poly_seq_scheme.ndb_seq_num>
             <PDBo:pdbx_poly_seq_scheme.pdb_mon_id>ASN</PDBo:pdbx_poly_seq_scheme.pdb_mon_id>
             <PDBo:pdbx_poly_seq_scheme.pdb_seq_num>4</PDBo:pdbx_poly_seq_scheme.pdb_seq_num>
             <PDBo:pdbx_poly_seq_scheme.pdb_strand_id>A</PDBo:pdbx_poly_seq_scheme.pdb_strand_id>
@@ -1191,11 +1191,11 @@
             <PDBo:pdbx_poly_seq_scheme.asym_id>A</PDBo:pdbx_poly_seq_scheme.asym_id>
             <PDBo:pdbx_poly_seq_scheme.entity_id>1</PDBo:pdbx_poly_seq_scheme.entity_id>
             <PDBo:pdbx_poly_seq_scheme.mon_id>PRO</PDBo:pdbx_poly_seq_scheme.mon_id>
-            <PDBo:pdbx_poly_seq_scheme.seq_id rdf:datatype="xsd:int">5</PDBo:pdbx_poly_seq_scheme.seq_id>
+            <PDBo:pdbx_poly_seq_scheme.seq_id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">5</PDBo:pdbx_poly_seq_scheme.seq_id>
             <PDBo:pdbx_poly_seq_scheme.auth_mon_id>PRO</PDBo:pdbx_poly_seq_scheme.auth_mon_id>
             <PDBo:pdbx_poly_seq_scheme.auth_seq_num>5</PDBo:pdbx_poly_seq_scheme.auth_seq_num>
             <PDBo:pdbx_poly_seq_scheme.hetero>n</PDBo:pdbx_poly_seq_scheme.hetero>
-            <PDBo:pdbx_poly_seq_scheme.ndb_seq_num rdf:datatype="xsd:int">5</PDBo:pdbx_poly_seq_scheme.ndb_seq_num>
+            <PDBo:pdbx_poly_seq_scheme.ndb_seq_num rdf:datatype="http://www.w3.org/2001/XMLSchema#int">5</PDBo:pdbx_poly_seq_scheme.ndb_seq_num>
             <PDBo:pdbx_poly_seq_scheme.pdb_mon_id>PRO</PDBo:pdbx_poly_seq_scheme.pdb_mon_id>
             <PDBo:pdbx_poly_seq_scheme.pdb_seq_num>5</PDBo:pdbx_poly_seq_scheme.pdb_seq_num>
             <PDBo:pdbx_poly_seq_scheme.pdb_strand_id>A</PDBo:pdbx_poly_seq_scheme.pdb_strand_id>
@@ -1217,11 +1217,11 @@
             <PDBo:pdbx_poly_seq_scheme.asym_id>A</PDBo:pdbx_poly_seq_scheme.asym_id>
             <PDBo:pdbx_poly_seq_scheme.entity_id>1</PDBo:pdbx_poly_seq_scheme.entity_id>
             <PDBo:pdbx_poly_seq_scheme.mon_id>ALA</PDBo:pdbx_poly_seq_scheme.mon_id>
-            <PDBo:pdbx_poly_seq_scheme.seq_id rdf:datatype="xsd:int">6</PDBo:pdbx_poly_seq_scheme.seq_id>
+            <PDBo:pdbx_poly_seq_scheme.seq_id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">6</PDBo:pdbx_poly_seq_scheme.seq_id>
             <PDBo:pdbx_poly_seq_scheme.auth_mon_id>ALA</PDBo:pdbx_poly_seq_scheme.auth_mon_id>
             <PDBo:pdbx_poly_seq_scheme.auth_seq_num>6</PDBo:pdbx_poly_seq_scheme.auth_seq_num>
             <PDBo:pdbx_poly_seq_scheme.hetero>n</PDBo:pdbx_poly_seq_scheme.hetero>
-            <PDBo:pdbx_poly_seq_scheme.ndb_seq_num rdf:datatype="xsd:int">6</PDBo:pdbx_poly_seq_scheme.ndb_seq_num>
+            <PDBo:pdbx_poly_seq_scheme.ndb_seq_num rdf:datatype="http://www.w3.org/2001/XMLSchema#int">6</PDBo:pdbx_poly_seq_scheme.ndb_seq_num>
             <PDBo:pdbx_poly_seq_scheme.pdb_mon_id>ALA</PDBo:pdbx_poly_seq_scheme.pdb_mon_id>
             <PDBo:pdbx_poly_seq_scheme.pdb_seq_num>6</PDBo:pdbx_poly_seq_scheme.pdb_seq_num>
             <PDBo:pdbx_poly_seq_scheme.pdb_strand_id>A</PDBo:pdbx_poly_seq_scheme.pdb_strand_id>
@@ -1243,11 +1243,11 @@
             <PDBo:pdbx_poly_seq_scheme.asym_id>A</PDBo:pdbx_poly_seq_scheme.asym_id>
             <PDBo:pdbx_poly_seq_scheme.entity_id>1</PDBo:pdbx_poly_seq_scheme.entity_id>
             <PDBo:pdbx_poly_seq_scheme.mon_id>CYS</PDBo:pdbx_poly_seq_scheme.mon_id>
-            <PDBo:pdbx_poly_seq_scheme.seq_id rdf:datatype="xsd:int">7</PDBo:pdbx_poly_seq_scheme.seq_id>
+            <PDBo:pdbx_poly_seq_scheme.seq_id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">7</PDBo:pdbx_poly_seq_scheme.seq_id>
             <PDBo:pdbx_poly_seq_scheme.auth_mon_id>CYS</PDBo:pdbx_poly_seq_scheme.auth_mon_id>
             <PDBo:pdbx_poly_seq_scheme.auth_seq_num>7</PDBo:pdbx_poly_seq_scheme.auth_seq_num>
             <PDBo:pdbx_poly_seq_scheme.hetero>n</PDBo:pdbx_poly_seq_scheme.hetero>
-            <PDBo:pdbx_poly_seq_scheme.ndb_seq_num rdf:datatype="xsd:int">7</PDBo:pdbx_poly_seq_scheme.ndb_seq_num>
+            <PDBo:pdbx_poly_seq_scheme.ndb_seq_num rdf:datatype="http://www.w3.org/2001/XMLSchema#int">7</PDBo:pdbx_poly_seq_scheme.ndb_seq_num>
             <PDBo:pdbx_poly_seq_scheme.pdb_mon_id>CYS</PDBo:pdbx_poly_seq_scheme.pdb_mon_id>
             <PDBo:pdbx_poly_seq_scheme.pdb_seq_num>7</PDBo:pdbx_poly_seq_scheme.pdb_seq_num>
             <PDBo:pdbx_poly_seq_scheme.pdb_strand_id>A</PDBo:pdbx_poly_seq_scheme.pdb_strand_id>
@@ -1269,11 +1269,11 @@
             <PDBo:pdbx_poly_seq_scheme.asym_id>A</PDBo:pdbx_poly_seq_scheme.asym_id>
             <PDBo:pdbx_poly_seq_scheme.entity_id>1</PDBo:pdbx_poly_seq_scheme.entity_id>
             <PDBo:pdbx_poly_seq_scheme.mon_id>GLN</PDBo:pdbx_poly_seq_scheme.mon_id>
-            <PDBo:pdbx_poly_seq_scheme.seq_id rdf:datatype="xsd:int">8</PDBo:pdbx_poly_seq_scheme.seq_id>
+            <PDBo:pdbx_poly_seq_scheme.seq_id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">8</PDBo:pdbx_poly_seq_scheme.seq_id>
             <PDBo:pdbx_poly_seq_scheme.auth_mon_id>GLN</PDBo:pdbx_poly_seq_scheme.auth_mon_id>
             <PDBo:pdbx_poly_seq_scheme.auth_seq_num>8</PDBo:pdbx_poly_seq_scheme.auth_seq_num>
             <PDBo:pdbx_poly_seq_scheme.hetero>n</PDBo:pdbx_poly_seq_scheme.hetero>
-            <PDBo:pdbx_poly_seq_scheme.ndb_seq_num rdf:datatype="xsd:int">8</PDBo:pdbx_poly_seq_scheme.ndb_seq_num>
+            <PDBo:pdbx_poly_seq_scheme.ndb_seq_num rdf:datatype="http://www.w3.org/2001/XMLSchema#int">8</PDBo:pdbx_poly_seq_scheme.ndb_seq_num>
             <PDBo:pdbx_poly_seq_scheme.pdb_mon_id>GLN</PDBo:pdbx_poly_seq_scheme.pdb_mon_id>
             <PDBo:pdbx_poly_seq_scheme.pdb_seq_num>8</PDBo:pdbx_poly_seq_scheme.pdb_seq_num>
             <PDBo:pdbx_poly_seq_scheme.pdb_strand_id>A</PDBo:pdbx_poly_seq_scheme.pdb_strand_id>
@@ -1295,11 +1295,11 @@
             <PDBo:pdbx_poly_seq_scheme.asym_id>A</PDBo:pdbx_poly_seq_scheme.asym_id>
             <PDBo:pdbx_poly_seq_scheme.entity_id>1</PDBo:pdbx_poly_seq_scheme.entity_id>
             <PDBo:pdbx_poly_seq_scheme.mon_id>VAL</PDBo:pdbx_poly_seq_scheme.mon_id>
-            <PDBo:pdbx_poly_seq_scheme.seq_id rdf:datatype="xsd:int">9</PDBo:pdbx_poly_seq_scheme.seq_id>
+            <PDBo:pdbx_poly_seq_scheme.seq_id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">9</PDBo:pdbx_poly_seq_scheme.seq_id>
             <PDBo:pdbx_poly_seq_scheme.auth_mon_id>VAL</PDBo:pdbx_poly_seq_scheme.auth_mon_id>
             <PDBo:pdbx_poly_seq_scheme.auth_seq_num>9</PDBo:pdbx_poly_seq_scheme.auth_seq_num>
             <PDBo:pdbx_poly_seq_scheme.hetero>n</PDBo:pdbx_poly_seq_scheme.hetero>
-            <PDBo:pdbx_poly_seq_scheme.ndb_seq_num rdf:datatype="xsd:int">9</PDBo:pdbx_poly_seq_scheme.ndb_seq_num>
+            <PDBo:pdbx_poly_seq_scheme.ndb_seq_num rdf:datatype="http://www.w3.org/2001/XMLSchema#int">9</PDBo:pdbx_poly_seq_scheme.ndb_seq_num>
             <PDBo:pdbx_poly_seq_scheme.pdb_mon_id>VAL</PDBo:pdbx_poly_seq_scheme.pdb_mon_id>
             <PDBo:pdbx_poly_seq_scheme.pdb_seq_num>9</PDBo:pdbx_poly_seq_scheme.pdb_seq_num>
             <PDBo:pdbx_poly_seq_scheme.pdb_strand_id>A</PDBo:pdbx_poly_seq_scheme.pdb_strand_id>
@@ -1321,11 +1321,11 @@
             <PDBo:pdbx_poly_seq_scheme.asym_id>A</PDBo:pdbx_poly_seq_scheme.asym_id>
             <PDBo:pdbx_poly_seq_scheme.entity_id>1</PDBo:pdbx_poly_seq_scheme.entity_id>
             <PDBo:pdbx_poly_seq_scheme.mon_id>GLN</PDBo:pdbx_poly_seq_scheme.mon_id>
-            <PDBo:pdbx_poly_seq_scheme.seq_id rdf:datatype="xsd:int">10</PDBo:pdbx_poly_seq_scheme.seq_id>
+            <PDBo:pdbx_poly_seq_scheme.seq_id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">10</PDBo:pdbx_poly_seq_scheme.seq_id>
             <PDBo:pdbx_poly_seq_scheme.auth_mon_id>GLN</PDBo:pdbx_poly_seq_scheme.auth_mon_id>
             <PDBo:pdbx_poly_seq_scheme.auth_seq_num>10</PDBo:pdbx_poly_seq_scheme.auth_seq_num>
             <PDBo:pdbx_poly_seq_scheme.hetero>n</PDBo:pdbx_poly_seq_scheme.hetero>
-            <PDBo:pdbx_poly_seq_scheme.ndb_seq_num rdf:datatype="xsd:int">10</PDBo:pdbx_poly_seq_scheme.ndb_seq_num>
+            <PDBo:pdbx_poly_seq_scheme.ndb_seq_num rdf:datatype="http://www.w3.org/2001/XMLSchema#int">10</PDBo:pdbx_poly_seq_scheme.ndb_seq_num>
             <PDBo:pdbx_poly_seq_scheme.pdb_mon_id>GLN</PDBo:pdbx_poly_seq_scheme.pdb_mon_id>
             <PDBo:pdbx_poly_seq_scheme.pdb_seq_num>10</PDBo:pdbx_poly_seq_scheme.pdb_seq_num>
             <PDBo:pdbx_poly_seq_scheme.pdb_strand_id>A</PDBo:pdbx_poly_seq_scheme.pdb_strand_id>
@@ -1347,11 +1347,11 @@
             <PDBo:pdbx_poly_seq_scheme.asym_id>A</PDBo:pdbx_poly_seq_scheme.asym_id>
             <PDBo:pdbx_poly_seq_scheme.entity_id>1</PDBo:pdbx_poly_seq_scheme.entity_id>
             <PDBo:pdbx_poly_seq_scheme.mon_id>HIS</PDBo:pdbx_poly_seq_scheme.mon_id>
-            <PDBo:pdbx_poly_seq_scheme.seq_id rdf:datatype="xsd:int">11</PDBo:pdbx_poly_seq_scheme.seq_id>
+            <PDBo:pdbx_poly_seq_scheme.seq_id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">11</PDBo:pdbx_poly_seq_scheme.seq_id>
             <PDBo:pdbx_poly_seq_scheme.auth_mon_id>HIS</PDBo:pdbx_poly_seq_scheme.auth_mon_id>
             <PDBo:pdbx_poly_seq_scheme.auth_seq_num>11</PDBo:pdbx_poly_seq_scheme.auth_seq_num>
             <PDBo:pdbx_poly_seq_scheme.hetero>n</PDBo:pdbx_poly_seq_scheme.hetero>
-            <PDBo:pdbx_poly_seq_scheme.ndb_seq_num rdf:datatype="xsd:int">11</PDBo:pdbx_poly_seq_scheme.ndb_seq_num>
+            <PDBo:pdbx_poly_seq_scheme.ndb_seq_num rdf:datatype="http://www.w3.org/2001/XMLSchema#int">11</PDBo:pdbx_poly_seq_scheme.ndb_seq_num>
             <PDBo:pdbx_poly_seq_scheme.pdb_mon_id>HIS</PDBo:pdbx_poly_seq_scheme.pdb_mon_id>
             <PDBo:pdbx_poly_seq_scheme.pdb_seq_num>11</PDBo:pdbx_poly_seq_scheme.pdb_seq_num>
             <PDBo:pdbx_poly_seq_scheme.pdb_strand_id>A</PDBo:pdbx_poly_seq_scheme.pdb_strand_id>
@@ -1373,11 +1373,11 @@
             <PDBo:pdbx_poly_seq_scheme.asym_id>A</PDBo:pdbx_poly_seq_scheme.asym_id>
             <PDBo:pdbx_poly_seq_scheme.entity_id>1</PDBo:pdbx_poly_seq_scheme.entity_id>
             <PDBo:pdbx_poly_seq_scheme.mon_id>SER</PDBo:pdbx_poly_seq_scheme.mon_id>
-            <PDBo:pdbx_poly_seq_scheme.seq_id rdf:datatype="xsd:int">12</PDBo:pdbx_poly_seq_scheme.seq_id>
+            <PDBo:pdbx_poly_seq_scheme.seq_id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">12</PDBo:pdbx_poly_seq_scheme.seq_id>
             <PDBo:pdbx_poly_seq_scheme.auth_mon_id>SER</PDBo:pdbx_poly_seq_scheme.auth_mon_id>
             <PDBo:pdbx_poly_seq_scheme.auth_seq_num>12</PDBo:pdbx_poly_seq_scheme.auth_seq_num>
             <PDBo:pdbx_poly_seq_scheme.hetero>n</PDBo:pdbx_poly_seq_scheme.hetero>
-            <PDBo:pdbx_poly_seq_scheme.ndb_seq_num rdf:datatype="xsd:int">12</PDBo:pdbx_poly_seq_scheme.ndb_seq_num>
+            <PDBo:pdbx_poly_seq_scheme.ndb_seq_num rdf:datatype="http://www.w3.org/2001/XMLSchema#int">12</PDBo:pdbx_poly_seq_scheme.ndb_seq_num>
             <PDBo:pdbx_poly_seq_scheme.pdb_mon_id>SER</PDBo:pdbx_poly_seq_scheme.pdb_mon_id>
             <PDBo:pdbx_poly_seq_scheme.pdb_seq_num>12</PDBo:pdbx_poly_seq_scheme.pdb_seq_num>
             <PDBo:pdbx_poly_seq_scheme.pdb_strand_id>A</PDBo:pdbx_poly_seq_scheme.pdb_strand_id>
@@ -1399,11 +1399,11 @@
             <PDBo:pdbx_poly_seq_scheme.asym_id>A</PDBo:pdbx_poly_seq_scheme.asym_id>
             <PDBo:pdbx_poly_seq_scheme.entity_id>1</PDBo:pdbx_poly_seq_scheme.entity_id>
             <PDBo:pdbx_poly_seq_scheme.mon_id>ASP</PDBo:pdbx_poly_seq_scheme.mon_id>
-            <PDBo:pdbx_poly_seq_scheme.seq_id rdf:datatype="xsd:int">13</PDBo:pdbx_poly_seq_scheme.seq_id>
+            <PDBo:pdbx_poly_seq_scheme.seq_id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">13</PDBo:pdbx_poly_seq_scheme.seq_id>
             <PDBo:pdbx_poly_seq_scheme.auth_mon_id>ASP</PDBo:pdbx_poly_seq_scheme.auth_mon_id>
             <PDBo:pdbx_poly_seq_scheme.auth_seq_num>13</PDBo:pdbx_poly_seq_scheme.auth_seq_num>
             <PDBo:pdbx_poly_seq_scheme.hetero>n</PDBo:pdbx_poly_seq_scheme.hetero>
-            <PDBo:pdbx_poly_seq_scheme.ndb_seq_num rdf:datatype="xsd:int">13</PDBo:pdbx_poly_seq_scheme.ndb_seq_num>
+            <PDBo:pdbx_poly_seq_scheme.ndb_seq_num rdf:datatype="http://www.w3.org/2001/XMLSchema#int">13</PDBo:pdbx_poly_seq_scheme.ndb_seq_num>
             <PDBo:pdbx_poly_seq_scheme.pdb_mon_id>ASP</PDBo:pdbx_poly_seq_scheme.pdb_mon_id>
             <PDBo:pdbx_poly_seq_scheme.pdb_seq_num>13</PDBo:pdbx_poly_seq_scheme.pdb_seq_num>
             <PDBo:pdbx_poly_seq_scheme.pdb_strand_id>A</PDBo:pdbx_poly_seq_scheme.pdb_strand_id>
@@ -1425,11 +1425,11 @@
             <PDBo:pdbx_poly_seq_scheme.asym_id>A</PDBo:pdbx_poly_seq_scheme.asym_id>
             <PDBo:pdbx_poly_seq_scheme.entity_id>1</PDBo:pdbx_poly_seq_scheme.entity_id>
             <PDBo:pdbx_poly_seq_scheme.mon_id>LEU</PDBo:pdbx_poly_seq_scheme.mon_id>
-            <PDBo:pdbx_poly_seq_scheme.seq_id rdf:datatype="xsd:int">14</PDBo:pdbx_poly_seq_scheme.seq_id>
+            <PDBo:pdbx_poly_seq_scheme.seq_id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">14</PDBo:pdbx_poly_seq_scheme.seq_id>
             <PDBo:pdbx_poly_seq_scheme.auth_mon_id>LEU</PDBo:pdbx_poly_seq_scheme.auth_mon_id>
             <PDBo:pdbx_poly_seq_scheme.auth_seq_num>14</PDBo:pdbx_poly_seq_scheme.auth_seq_num>
             <PDBo:pdbx_poly_seq_scheme.hetero>n</PDBo:pdbx_poly_seq_scheme.hetero>
-            <PDBo:pdbx_poly_seq_scheme.ndb_seq_num rdf:datatype="xsd:int">14</PDBo:pdbx_poly_seq_scheme.ndb_seq_num>
+            <PDBo:pdbx_poly_seq_scheme.ndb_seq_num rdf:datatype="http://www.w3.org/2001/XMLSchema#int">14</PDBo:pdbx_poly_seq_scheme.ndb_seq_num>
             <PDBo:pdbx_poly_seq_scheme.pdb_mon_id>LEU</PDBo:pdbx_poly_seq_scheme.pdb_mon_id>
             <PDBo:pdbx_poly_seq_scheme.pdb_seq_num>14</PDBo:pdbx_poly_seq_scheme.pdb_seq_num>
             <PDBo:pdbx_poly_seq_scheme.pdb_strand_id>A</PDBo:pdbx_poly_seq_scheme.pdb_strand_id>
@@ -1451,11 +1451,11 @@
             <PDBo:pdbx_poly_seq_scheme.asym_id>A</PDBo:pdbx_poly_seq_scheme.asym_id>
             <PDBo:pdbx_poly_seq_scheme.entity_id>1</PDBo:pdbx_poly_seq_scheme.entity_id>
             <PDBo:pdbx_poly_seq_scheme.mon_id>CYS</PDBo:pdbx_poly_seq_scheme.mon_id>
-            <PDBo:pdbx_poly_seq_scheme.seq_id rdf:datatype="xsd:int">15</PDBo:pdbx_poly_seq_scheme.seq_id>
+            <PDBo:pdbx_poly_seq_scheme.seq_id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">15</PDBo:pdbx_poly_seq_scheme.seq_id>
             <PDBo:pdbx_poly_seq_scheme.auth_mon_id>CYS</PDBo:pdbx_poly_seq_scheme.auth_mon_id>
             <PDBo:pdbx_poly_seq_scheme.auth_seq_num>15</PDBo:pdbx_poly_seq_scheme.auth_seq_num>
             <PDBo:pdbx_poly_seq_scheme.hetero>n</PDBo:pdbx_poly_seq_scheme.hetero>
-            <PDBo:pdbx_poly_seq_scheme.ndb_seq_num rdf:datatype="xsd:int">15</PDBo:pdbx_poly_seq_scheme.ndb_seq_num>
+            <PDBo:pdbx_poly_seq_scheme.ndb_seq_num rdf:datatype="http://www.w3.org/2001/XMLSchema#int">15</PDBo:pdbx_poly_seq_scheme.ndb_seq_num>
             <PDBo:pdbx_poly_seq_scheme.pdb_mon_id>CYS</PDBo:pdbx_poly_seq_scheme.pdb_mon_id>
             <PDBo:pdbx_poly_seq_scheme.pdb_seq_num>15</PDBo:pdbx_poly_seq_scheme.pdb_seq_num>
             <PDBo:pdbx_poly_seq_scheme.pdb_strand_id>A</PDBo:pdbx_poly_seq_scheme.pdb_strand_id>
@@ -1470,7 +1470,7 @@
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7LQS"/>
             <PDBo:pdbx_struct_assembly.id>1</PDBo:pdbx_struct_assembly.id>
             <PDBo:pdbx_struct_assembly.details>author_defined_assembly</PDBo:pdbx_struct_assembly.details>
-            <PDBo:pdbx_struct_assembly.oligomeric_count rdf:datatype="xsd:int">1</PDBo:pdbx_struct_assembly.oligomeric_count>
+            <PDBo:pdbx_struct_assembly.oligomeric_count rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_struct_assembly.oligomeric_count>
             <PDBo:pdbx_struct_assembly.oligomeric_details>monomeric</PDBo:pdbx_struct_assembly.oligomeric_details>
           </PDBo:pdbx_struct_assembly>
         </PDBo:has_pdbx_struct_assembly>
@@ -1516,20 +1516,20 @@
           <PDBo:pdbx_struct_oper_list rdf:about="http://rdf.wwpdb.org/pdb/7LQS/pdbx_struct_oper_list/1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7LQS"/>
             <PDBo:pdbx_struct_oper_list.id>1</PDBo:pdbx_struct_oper_list.id>
-            <PDBo:pdbx_struct_oper_list.matrix11 rdf:datatype="xsd:decimal">1.0000000000</PDBo:pdbx_struct_oper_list.matrix11>
-            <PDBo:pdbx_struct_oper_list.matrix12 rdf:datatype="xsd:decimal">0.0000000000</PDBo:pdbx_struct_oper_list.matrix12>
-            <PDBo:pdbx_struct_oper_list.matrix13 rdf:datatype="xsd:decimal">0.0000000000</PDBo:pdbx_struct_oper_list.matrix13>
-            <PDBo:pdbx_struct_oper_list.matrix21 rdf:datatype="xsd:decimal">0.0000000000</PDBo:pdbx_struct_oper_list.matrix21>
-            <PDBo:pdbx_struct_oper_list.matrix22 rdf:datatype="xsd:decimal">1.0000000000</PDBo:pdbx_struct_oper_list.matrix22>
-            <PDBo:pdbx_struct_oper_list.matrix23 rdf:datatype="xsd:decimal">0.0000000000</PDBo:pdbx_struct_oper_list.matrix23>
-            <PDBo:pdbx_struct_oper_list.matrix31 rdf:datatype="xsd:decimal">0.0000000000</PDBo:pdbx_struct_oper_list.matrix31>
-            <PDBo:pdbx_struct_oper_list.matrix32 rdf:datatype="xsd:decimal">0.0000000000</PDBo:pdbx_struct_oper_list.matrix32>
-            <PDBo:pdbx_struct_oper_list.matrix33 rdf:datatype="xsd:decimal">1.0000000000</PDBo:pdbx_struct_oper_list.matrix33>
+            <PDBo:pdbx_struct_oper_list.matrix11 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0000000000</PDBo:pdbx_struct_oper_list.matrix11>
+            <PDBo:pdbx_struct_oper_list.matrix12 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0000000000</PDBo:pdbx_struct_oper_list.matrix12>
+            <PDBo:pdbx_struct_oper_list.matrix13 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0000000000</PDBo:pdbx_struct_oper_list.matrix13>
+            <PDBo:pdbx_struct_oper_list.matrix21 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0000000000</PDBo:pdbx_struct_oper_list.matrix21>
+            <PDBo:pdbx_struct_oper_list.matrix22 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0000000000</PDBo:pdbx_struct_oper_list.matrix22>
+            <PDBo:pdbx_struct_oper_list.matrix23 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0000000000</PDBo:pdbx_struct_oper_list.matrix23>
+            <PDBo:pdbx_struct_oper_list.matrix31 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0000000000</PDBo:pdbx_struct_oper_list.matrix31>
+            <PDBo:pdbx_struct_oper_list.matrix32 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0000000000</PDBo:pdbx_struct_oper_list.matrix32>
+            <PDBo:pdbx_struct_oper_list.matrix33 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0000000000</PDBo:pdbx_struct_oper_list.matrix33>
             <PDBo:pdbx_struct_oper_list.name>1_555</PDBo:pdbx_struct_oper_list.name>
             <PDBo:pdbx_struct_oper_list.type>identity operation</PDBo:pdbx_struct_oper_list.type>
-            <PDBo:pdbx_struct_oper_list.vector1 rdf:datatype="xsd:decimal">0.0000000000</PDBo:pdbx_struct_oper_list.vector1>
-            <PDBo:pdbx_struct_oper_list.vector2 rdf:datatype="xsd:decimal">0.0000000000</PDBo:pdbx_struct_oper_list.vector2>
-            <PDBo:pdbx_struct_oper_list.vector3 rdf:datatype="xsd:decimal">0.0000000000</PDBo:pdbx_struct_oper_list.vector3>
+            <PDBo:pdbx_struct_oper_list.vector1 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0000000000</PDBo:pdbx_struct_oper_list.vector1>
+            <PDBo:pdbx_struct_oper_list.vector2 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0000000000</PDBo:pdbx_struct_oper_list.vector2>
+            <PDBo:pdbx_struct_oper_list.vector3 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0000000000</PDBo:pdbx_struct_oper_list.vector3>
           </PDBo:pdbx_struct_oper_list>
         </PDBo:has_pdbx_struct_oper_list>
       </PDBo:pdbx_struct_oper_listCategory>
@@ -1539,529 +1539,529 @@
         <PDBo:has_pdbx_validate_torsion>
           <PDBo:pdbx_validate_torsion rdf:about="http://rdf.wwpdb.org/pdb/7LQS/pdbx_validate_torsion/1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7LQS"/>
-            <PDBo:pdbx_validate_torsion.id rdf:datatype="xsd:int">1</PDBo:pdbx_validate_torsion.id>
-            <PDBo:pdbx_validate_torsion.PDB_model_num rdf:datatype="xsd:int">1</PDBo:pdbx_validate_torsion.PDB_model_num>
+            <PDBo:pdbx_validate_torsion.id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_validate_torsion.id>
+            <PDBo:pdbx_validate_torsion.PDB_model_num rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_validate_torsion.PDB_model_num>
             <PDBo:pdbx_validate_torsion.auth_asym_id>A</PDBo:pdbx_validate_torsion.auth_asym_id>
             <PDBo:pdbx_validate_torsion.auth_comp_id>SER</PDBo:pdbx_validate_torsion.auth_comp_id>
             <PDBo:pdbx_validate_torsion.auth_seq_id>3</PDBo:pdbx_validate_torsion.auth_seq_id>
-            <PDBo:pdbx_validate_torsion.phi rdf:datatype="xsd:decimal">-94.13</PDBo:pdbx_validate_torsion.phi>
-            <PDBo:pdbx_validate_torsion.psi rdf:datatype="xsd:decimal">44.92</PDBo:pdbx_validate_torsion.psi>
+            <PDBo:pdbx_validate_torsion.phi rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-94.13</PDBo:pdbx_validate_torsion.phi>
+            <PDBo:pdbx_validate_torsion.psi rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">44.92</PDBo:pdbx_validate_torsion.psi>
           </PDBo:pdbx_validate_torsion>
         </PDBo:has_pdbx_validate_torsion>
         <PDBo:has_pdbx_validate_torsion>
           <PDBo:pdbx_validate_torsion rdf:about="http://rdf.wwpdb.org/pdb/7LQS/pdbx_validate_torsion/2">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7LQS"/>
-            <PDBo:pdbx_validate_torsion.id rdf:datatype="xsd:int">2</PDBo:pdbx_validate_torsion.id>
-            <PDBo:pdbx_validate_torsion.PDB_model_num rdf:datatype="xsd:int">1</PDBo:pdbx_validate_torsion.PDB_model_num>
+            <PDBo:pdbx_validate_torsion.id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</PDBo:pdbx_validate_torsion.id>
+            <PDBo:pdbx_validate_torsion.PDB_model_num rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_validate_torsion.PDB_model_num>
             <PDBo:pdbx_validate_torsion.auth_asym_id>A</PDBo:pdbx_validate_torsion.auth_asym_id>
             <PDBo:pdbx_validate_torsion.auth_comp_id>HIS</PDBo:pdbx_validate_torsion.auth_comp_id>
             <PDBo:pdbx_validate_torsion.auth_seq_id>11</PDBo:pdbx_validate_torsion.auth_seq_id>
-            <PDBo:pdbx_validate_torsion.phi rdf:datatype="xsd:decimal">-62.70</PDBo:pdbx_validate_torsion.phi>
-            <PDBo:pdbx_validate_torsion.psi rdf:datatype="xsd:decimal">94.59</PDBo:pdbx_validate_torsion.psi>
+            <PDBo:pdbx_validate_torsion.phi rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-62.70</PDBo:pdbx_validate_torsion.phi>
+            <PDBo:pdbx_validate_torsion.psi rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">94.59</PDBo:pdbx_validate_torsion.psi>
           </PDBo:pdbx_validate_torsion>
         </PDBo:has_pdbx_validate_torsion>
         <PDBo:has_pdbx_validate_torsion>
           <PDBo:pdbx_validate_torsion rdf:about="http://rdf.wwpdb.org/pdb/7LQS/pdbx_validate_torsion/3">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7LQS"/>
-            <PDBo:pdbx_validate_torsion.id rdf:datatype="xsd:int">3</PDBo:pdbx_validate_torsion.id>
-            <PDBo:pdbx_validate_torsion.PDB_model_num rdf:datatype="xsd:int">2</PDBo:pdbx_validate_torsion.PDB_model_num>
+            <PDBo:pdbx_validate_torsion.id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</PDBo:pdbx_validate_torsion.id>
+            <PDBo:pdbx_validate_torsion.PDB_model_num rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</PDBo:pdbx_validate_torsion.PDB_model_num>
             <PDBo:pdbx_validate_torsion.auth_asym_id>A</PDBo:pdbx_validate_torsion.auth_asym_id>
             <PDBo:pdbx_validate_torsion.auth_comp_id>CYS</PDBo:pdbx_validate_torsion.auth_comp_id>
             <PDBo:pdbx_validate_torsion.auth_seq_id>2</PDBo:pdbx_validate_torsion.auth_seq_id>
-            <PDBo:pdbx_validate_torsion.phi rdf:datatype="xsd:decimal">-149.74</PDBo:pdbx_validate_torsion.phi>
-            <PDBo:pdbx_validate_torsion.psi rdf:datatype="xsd:decimal">-47.05</PDBo:pdbx_validate_torsion.psi>
+            <PDBo:pdbx_validate_torsion.phi rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-149.74</PDBo:pdbx_validate_torsion.phi>
+            <PDBo:pdbx_validate_torsion.psi rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-47.05</PDBo:pdbx_validate_torsion.psi>
           </PDBo:pdbx_validate_torsion>
         </PDBo:has_pdbx_validate_torsion>
         <PDBo:has_pdbx_validate_torsion>
           <PDBo:pdbx_validate_torsion rdf:about="http://rdf.wwpdb.org/pdb/7LQS/pdbx_validate_torsion/4">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7LQS"/>
-            <PDBo:pdbx_validate_torsion.id rdf:datatype="xsd:int">4</PDBo:pdbx_validate_torsion.id>
-            <PDBo:pdbx_validate_torsion.PDB_model_num rdf:datatype="xsd:int">2</PDBo:pdbx_validate_torsion.PDB_model_num>
+            <PDBo:pdbx_validate_torsion.id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</PDBo:pdbx_validate_torsion.id>
+            <PDBo:pdbx_validate_torsion.PDB_model_num rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</PDBo:pdbx_validate_torsion.PDB_model_num>
             <PDBo:pdbx_validate_torsion.auth_asym_id>A</PDBo:pdbx_validate_torsion.auth_asym_id>
             <PDBo:pdbx_validate_torsion.auth_comp_id>HIS</PDBo:pdbx_validate_torsion.auth_comp_id>
             <PDBo:pdbx_validate_torsion.auth_seq_id>11</PDBo:pdbx_validate_torsion.auth_seq_id>
-            <PDBo:pdbx_validate_torsion.phi rdf:datatype="xsd:decimal">-108.71</PDBo:pdbx_validate_torsion.phi>
-            <PDBo:pdbx_validate_torsion.psi rdf:datatype="xsd:decimal">40.21</PDBo:pdbx_validate_torsion.psi>
+            <PDBo:pdbx_validate_torsion.phi rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-108.71</PDBo:pdbx_validate_torsion.phi>
+            <PDBo:pdbx_validate_torsion.psi rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">40.21</PDBo:pdbx_validate_torsion.psi>
           </PDBo:pdbx_validate_torsion>
         </PDBo:has_pdbx_validate_torsion>
         <PDBo:has_pdbx_validate_torsion>
           <PDBo:pdbx_validate_torsion rdf:about="http://rdf.wwpdb.org/pdb/7LQS/pdbx_validate_torsion/5">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7LQS"/>
-            <PDBo:pdbx_validate_torsion.id rdf:datatype="xsd:int">5</PDBo:pdbx_validate_torsion.id>
-            <PDBo:pdbx_validate_torsion.PDB_model_num rdf:datatype="xsd:int">2</PDBo:pdbx_validate_torsion.PDB_model_num>
+            <PDBo:pdbx_validate_torsion.id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">5</PDBo:pdbx_validate_torsion.id>
+            <PDBo:pdbx_validate_torsion.PDB_model_num rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</PDBo:pdbx_validate_torsion.PDB_model_num>
             <PDBo:pdbx_validate_torsion.auth_asym_id>A</PDBo:pdbx_validate_torsion.auth_asym_id>
             <PDBo:pdbx_validate_torsion.auth_comp_id>ASP</PDBo:pdbx_validate_torsion.auth_comp_id>
             <PDBo:pdbx_validate_torsion.auth_seq_id>13</PDBo:pdbx_validate_torsion.auth_seq_id>
-            <PDBo:pdbx_validate_torsion.phi rdf:datatype="xsd:decimal">-163.75</PDBo:pdbx_validate_torsion.phi>
-            <PDBo:pdbx_validate_torsion.psi rdf:datatype="xsd:decimal">109.04</PDBo:pdbx_validate_torsion.psi>
+            <PDBo:pdbx_validate_torsion.phi rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-163.75</PDBo:pdbx_validate_torsion.phi>
+            <PDBo:pdbx_validate_torsion.psi rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">109.04</PDBo:pdbx_validate_torsion.psi>
           </PDBo:pdbx_validate_torsion>
         </PDBo:has_pdbx_validate_torsion>
         <PDBo:has_pdbx_validate_torsion>
           <PDBo:pdbx_validate_torsion rdf:about="http://rdf.wwpdb.org/pdb/7LQS/pdbx_validate_torsion/6">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7LQS"/>
-            <PDBo:pdbx_validate_torsion.id rdf:datatype="xsd:int">6</PDBo:pdbx_validate_torsion.id>
-            <PDBo:pdbx_validate_torsion.PDB_model_num rdf:datatype="xsd:int">3</PDBo:pdbx_validate_torsion.PDB_model_num>
+            <PDBo:pdbx_validate_torsion.id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">6</PDBo:pdbx_validate_torsion.id>
+            <PDBo:pdbx_validate_torsion.PDB_model_num rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</PDBo:pdbx_validate_torsion.PDB_model_num>
             <PDBo:pdbx_validate_torsion.auth_asym_id>A</PDBo:pdbx_validate_torsion.auth_asym_id>
             <PDBo:pdbx_validate_torsion.auth_comp_id>CYS</PDBo:pdbx_validate_torsion.auth_comp_id>
             <PDBo:pdbx_validate_torsion.auth_seq_id>2</PDBo:pdbx_validate_torsion.auth_seq_id>
-            <PDBo:pdbx_validate_torsion.phi rdf:datatype="xsd:decimal">-131.90</PDBo:pdbx_validate_torsion.phi>
-            <PDBo:pdbx_validate_torsion.psi rdf:datatype="xsd:decimal">-49.21</PDBo:pdbx_validate_torsion.psi>
+            <PDBo:pdbx_validate_torsion.phi rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-131.90</PDBo:pdbx_validate_torsion.phi>
+            <PDBo:pdbx_validate_torsion.psi rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-49.21</PDBo:pdbx_validate_torsion.psi>
           </PDBo:pdbx_validate_torsion>
         </PDBo:has_pdbx_validate_torsion>
         <PDBo:has_pdbx_validate_torsion>
           <PDBo:pdbx_validate_torsion rdf:about="http://rdf.wwpdb.org/pdb/7LQS/pdbx_validate_torsion/7">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7LQS"/>
-            <PDBo:pdbx_validate_torsion.id rdf:datatype="xsd:int">7</PDBo:pdbx_validate_torsion.id>
-            <PDBo:pdbx_validate_torsion.PDB_model_num rdf:datatype="xsd:int">3</PDBo:pdbx_validate_torsion.PDB_model_num>
+            <PDBo:pdbx_validate_torsion.id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">7</PDBo:pdbx_validate_torsion.id>
+            <PDBo:pdbx_validate_torsion.PDB_model_num rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</PDBo:pdbx_validate_torsion.PDB_model_num>
             <PDBo:pdbx_validate_torsion.auth_asym_id>A</PDBo:pdbx_validate_torsion.auth_asym_id>
             <PDBo:pdbx_validate_torsion.auth_comp_id>HIS</PDBo:pdbx_validate_torsion.auth_comp_id>
             <PDBo:pdbx_validate_torsion.auth_seq_id>11</PDBo:pdbx_validate_torsion.auth_seq_id>
-            <PDBo:pdbx_validate_torsion.phi rdf:datatype="xsd:decimal">-91.25</PDBo:pdbx_validate_torsion.phi>
-            <PDBo:pdbx_validate_torsion.psi rdf:datatype="xsd:decimal">49.32</PDBo:pdbx_validate_torsion.psi>
+            <PDBo:pdbx_validate_torsion.phi rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-91.25</PDBo:pdbx_validate_torsion.phi>
+            <PDBo:pdbx_validate_torsion.psi rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">49.32</PDBo:pdbx_validate_torsion.psi>
           </PDBo:pdbx_validate_torsion>
         </PDBo:has_pdbx_validate_torsion>
         <PDBo:has_pdbx_validate_torsion>
           <PDBo:pdbx_validate_torsion rdf:about="http://rdf.wwpdb.org/pdb/7LQS/pdbx_validate_torsion/8">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7LQS"/>
-            <PDBo:pdbx_validate_torsion.id rdf:datatype="xsd:int">8</PDBo:pdbx_validate_torsion.id>
-            <PDBo:pdbx_validate_torsion.PDB_model_num rdf:datatype="xsd:int">4</PDBo:pdbx_validate_torsion.PDB_model_num>
+            <PDBo:pdbx_validate_torsion.id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">8</PDBo:pdbx_validate_torsion.id>
+            <PDBo:pdbx_validate_torsion.PDB_model_num rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</PDBo:pdbx_validate_torsion.PDB_model_num>
             <PDBo:pdbx_validate_torsion.auth_asym_id>A</PDBo:pdbx_validate_torsion.auth_asym_id>
             <PDBo:pdbx_validate_torsion.auth_comp_id>CYS</PDBo:pdbx_validate_torsion.auth_comp_id>
             <PDBo:pdbx_validate_torsion.auth_seq_id>2</PDBo:pdbx_validate_torsion.auth_seq_id>
-            <PDBo:pdbx_validate_torsion.phi rdf:datatype="xsd:decimal">-103.55</PDBo:pdbx_validate_torsion.phi>
-            <PDBo:pdbx_validate_torsion.psi rdf:datatype="xsd:decimal">-62.08</PDBo:pdbx_validate_torsion.psi>
+            <PDBo:pdbx_validate_torsion.phi rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-103.55</PDBo:pdbx_validate_torsion.phi>
+            <PDBo:pdbx_validate_torsion.psi rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-62.08</PDBo:pdbx_validate_torsion.psi>
           </PDBo:pdbx_validate_torsion>
         </PDBo:has_pdbx_validate_torsion>
         <PDBo:has_pdbx_validate_torsion>
           <PDBo:pdbx_validate_torsion rdf:about="http://rdf.wwpdb.org/pdb/7LQS/pdbx_validate_torsion/9">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7LQS"/>
-            <PDBo:pdbx_validate_torsion.id rdf:datatype="xsd:int">9</PDBo:pdbx_validate_torsion.id>
-            <PDBo:pdbx_validate_torsion.PDB_model_num rdf:datatype="xsd:int">5</PDBo:pdbx_validate_torsion.PDB_model_num>
+            <PDBo:pdbx_validate_torsion.id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">9</PDBo:pdbx_validate_torsion.id>
+            <PDBo:pdbx_validate_torsion.PDB_model_num rdf:datatype="http://www.w3.org/2001/XMLSchema#int">5</PDBo:pdbx_validate_torsion.PDB_model_num>
             <PDBo:pdbx_validate_torsion.auth_asym_id>A</PDBo:pdbx_validate_torsion.auth_asym_id>
             <PDBo:pdbx_validate_torsion.auth_comp_id>ASP</PDBo:pdbx_validate_torsion.auth_comp_id>
             <PDBo:pdbx_validate_torsion.auth_seq_id>13</PDBo:pdbx_validate_torsion.auth_seq_id>
-            <PDBo:pdbx_validate_torsion.phi rdf:datatype="xsd:decimal">-173.80</PDBo:pdbx_validate_torsion.phi>
-            <PDBo:pdbx_validate_torsion.psi rdf:datatype="xsd:decimal">113.55</PDBo:pdbx_validate_torsion.psi>
+            <PDBo:pdbx_validate_torsion.phi rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-173.80</PDBo:pdbx_validate_torsion.phi>
+            <PDBo:pdbx_validate_torsion.psi rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">113.55</PDBo:pdbx_validate_torsion.psi>
           </PDBo:pdbx_validate_torsion>
         </PDBo:has_pdbx_validate_torsion>
         <PDBo:has_pdbx_validate_torsion>
           <PDBo:pdbx_validate_torsion rdf:about="http://rdf.wwpdb.org/pdb/7LQS/pdbx_validate_torsion/10">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7LQS"/>
-            <PDBo:pdbx_validate_torsion.id rdf:datatype="xsd:int">10</PDBo:pdbx_validate_torsion.id>
-            <PDBo:pdbx_validate_torsion.PDB_model_num rdf:datatype="xsd:int">6</PDBo:pdbx_validate_torsion.PDB_model_num>
+            <PDBo:pdbx_validate_torsion.id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">10</PDBo:pdbx_validate_torsion.id>
+            <PDBo:pdbx_validate_torsion.PDB_model_num rdf:datatype="http://www.w3.org/2001/XMLSchema#int">6</PDBo:pdbx_validate_torsion.PDB_model_num>
             <PDBo:pdbx_validate_torsion.auth_asym_id>A</PDBo:pdbx_validate_torsion.auth_asym_id>
             <PDBo:pdbx_validate_torsion.auth_comp_id>SER</PDBo:pdbx_validate_torsion.auth_comp_id>
             <PDBo:pdbx_validate_torsion.auth_seq_id>3</PDBo:pdbx_validate_torsion.auth_seq_id>
-            <PDBo:pdbx_validate_torsion.phi rdf:datatype="xsd:decimal">-176.61</PDBo:pdbx_validate_torsion.phi>
-            <PDBo:pdbx_validate_torsion.psi rdf:datatype="xsd:decimal">85.04</PDBo:pdbx_validate_torsion.psi>
+            <PDBo:pdbx_validate_torsion.phi rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-176.61</PDBo:pdbx_validate_torsion.phi>
+            <PDBo:pdbx_validate_torsion.psi rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">85.04</PDBo:pdbx_validate_torsion.psi>
           </PDBo:pdbx_validate_torsion>
         </PDBo:has_pdbx_validate_torsion>
         <PDBo:has_pdbx_validate_torsion>
           <PDBo:pdbx_validate_torsion rdf:about="http://rdf.wwpdb.org/pdb/7LQS/pdbx_validate_torsion/11">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7LQS"/>
-            <PDBo:pdbx_validate_torsion.id rdf:datatype="xsd:int">11</PDBo:pdbx_validate_torsion.id>
-            <PDBo:pdbx_validate_torsion.PDB_model_num rdf:datatype="xsd:int">6</PDBo:pdbx_validate_torsion.PDB_model_num>
+            <PDBo:pdbx_validate_torsion.id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">11</PDBo:pdbx_validate_torsion.id>
+            <PDBo:pdbx_validate_torsion.PDB_model_num rdf:datatype="http://www.w3.org/2001/XMLSchema#int">6</PDBo:pdbx_validate_torsion.PDB_model_num>
             <PDBo:pdbx_validate_torsion.auth_asym_id>A</PDBo:pdbx_validate_torsion.auth_asym_id>
             <PDBo:pdbx_validate_torsion.auth_comp_id>HIS</PDBo:pdbx_validate_torsion.auth_comp_id>
             <PDBo:pdbx_validate_torsion.auth_seq_id>11</PDBo:pdbx_validate_torsion.auth_seq_id>
-            <PDBo:pdbx_validate_torsion.phi rdf:datatype="xsd:decimal">-95.27</PDBo:pdbx_validate_torsion.phi>
-            <PDBo:pdbx_validate_torsion.psi rdf:datatype="xsd:decimal">55.21</PDBo:pdbx_validate_torsion.psi>
+            <PDBo:pdbx_validate_torsion.phi rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-95.27</PDBo:pdbx_validate_torsion.phi>
+            <PDBo:pdbx_validate_torsion.psi rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">55.21</PDBo:pdbx_validate_torsion.psi>
           </PDBo:pdbx_validate_torsion>
         </PDBo:has_pdbx_validate_torsion>
         <PDBo:has_pdbx_validate_torsion>
           <PDBo:pdbx_validate_torsion rdf:about="http://rdf.wwpdb.org/pdb/7LQS/pdbx_validate_torsion/12">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7LQS"/>
-            <PDBo:pdbx_validate_torsion.id rdf:datatype="xsd:int">12</PDBo:pdbx_validate_torsion.id>
-            <PDBo:pdbx_validate_torsion.PDB_model_num rdf:datatype="xsd:int">6</PDBo:pdbx_validate_torsion.PDB_model_num>
+            <PDBo:pdbx_validate_torsion.id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">12</PDBo:pdbx_validate_torsion.id>
+            <PDBo:pdbx_validate_torsion.PDB_model_num rdf:datatype="http://www.w3.org/2001/XMLSchema#int">6</PDBo:pdbx_validate_torsion.PDB_model_num>
             <PDBo:pdbx_validate_torsion.auth_asym_id>A</PDBo:pdbx_validate_torsion.auth_asym_id>
             <PDBo:pdbx_validate_torsion.auth_comp_id>LEU</PDBo:pdbx_validate_torsion.auth_comp_id>
             <PDBo:pdbx_validate_torsion.auth_seq_id>14</PDBo:pdbx_validate_torsion.auth_seq_id>
-            <PDBo:pdbx_validate_torsion.phi rdf:datatype="xsd:decimal">-176.55</PDBo:pdbx_validate_torsion.phi>
-            <PDBo:pdbx_validate_torsion.psi rdf:datatype="xsd:decimal">124.97</PDBo:pdbx_validate_torsion.psi>
+            <PDBo:pdbx_validate_torsion.phi rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-176.55</PDBo:pdbx_validate_torsion.phi>
+            <PDBo:pdbx_validate_torsion.psi rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">124.97</PDBo:pdbx_validate_torsion.psi>
           </PDBo:pdbx_validate_torsion>
         </PDBo:has_pdbx_validate_torsion>
         <PDBo:has_pdbx_validate_torsion>
           <PDBo:pdbx_validate_torsion rdf:about="http://rdf.wwpdb.org/pdb/7LQS/pdbx_validate_torsion/13">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7LQS"/>
-            <PDBo:pdbx_validate_torsion.id rdf:datatype="xsd:int">13</PDBo:pdbx_validate_torsion.id>
-            <PDBo:pdbx_validate_torsion.PDB_model_num rdf:datatype="xsd:int">7</PDBo:pdbx_validate_torsion.PDB_model_num>
+            <PDBo:pdbx_validate_torsion.id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">13</PDBo:pdbx_validate_torsion.id>
+            <PDBo:pdbx_validate_torsion.PDB_model_num rdf:datatype="http://www.w3.org/2001/XMLSchema#int">7</PDBo:pdbx_validate_torsion.PDB_model_num>
             <PDBo:pdbx_validate_torsion.auth_asym_id>A</PDBo:pdbx_validate_torsion.auth_asym_id>
             <PDBo:pdbx_validate_torsion.auth_comp_id>SER</PDBo:pdbx_validate_torsion.auth_comp_id>
             <PDBo:pdbx_validate_torsion.auth_seq_id>3</PDBo:pdbx_validate_torsion.auth_seq_id>
-            <PDBo:pdbx_validate_torsion.phi rdf:datatype="xsd:decimal">-90.98</PDBo:pdbx_validate_torsion.phi>
-            <PDBo:pdbx_validate_torsion.psi rdf:datatype="xsd:decimal">55.62</PDBo:pdbx_validate_torsion.psi>
+            <PDBo:pdbx_validate_torsion.phi rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-90.98</PDBo:pdbx_validate_torsion.phi>
+            <PDBo:pdbx_validate_torsion.psi rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">55.62</PDBo:pdbx_validate_torsion.psi>
           </PDBo:pdbx_validate_torsion>
         </PDBo:has_pdbx_validate_torsion>
         <PDBo:has_pdbx_validate_torsion>
           <PDBo:pdbx_validate_torsion rdf:about="http://rdf.wwpdb.org/pdb/7LQS/pdbx_validate_torsion/14">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7LQS"/>
-            <PDBo:pdbx_validate_torsion.id rdf:datatype="xsd:int">14</PDBo:pdbx_validate_torsion.id>
-            <PDBo:pdbx_validate_torsion.PDB_model_num rdf:datatype="xsd:int">7</PDBo:pdbx_validate_torsion.PDB_model_num>
+            <PDBo:pdbx_validate_torsion.id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">14</PDBo:pdbx_validate_torsion.id>
+            <PDBo:pdbx_validate_torsion.PDB_model_num rdf:datatype="http://www.w3.org/2001/XMLSchema#int">7</PDBo:pdbx_validate_torsion.PDB_model_num>
             <PDBo:pdbx_validate_torsion.auth_asym_id>A</PDBo:pdbx_validate_torsion.auth_asym_id>
             <PDBo:pdbx_validate_torsion.auth_comp_id>HIS</PDBo:pdbx_validate_torsion.auth_comp_id>
             <PDBo:pdbx_validate_torsion.auth_seq_id>11</PDBo:pdbx_validate_torsion.auth_seq_id>
-            <PDBo:pdbx_validate_torsion.phi rdf:datatype="xsd:decimal">-93.15</PDBo:pdbx_validate_torsion.phi>
-            <PDBo:pdbx_validate_torsion.psi rdf:datatype="xsd:decimal">56.80</PDBo:pdbx_validate_torsion.psi>
+            <PDBo:pdbx_validate_torsion.phi rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-93.15</PDBo:pdbx_validate_torsion.phi>
+            <PDBo:pdbx_validate_torsion.psi rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">56.80</PDBo:pdbx_validate_torsion.psi>
           </PDBo:pdbx_validate_torsion>
         </PDBo:has_pdbx_validate_torsion>
         <PDBo:has_pdbx_validate_torsion>
           <PDBo:pdbx_validate_torsion rdf:about="http://rdf.wwpdb.org/pdb/7LQS/pdbx_validate_torsion/15">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7LQS"/>
-            <PDBo:pdbx_validate_torsion.id rdf:datatype="xsd:int">15</PDBo:pdbx_validate_torsion.id>
-            <PDBo:pdbx_validate_torsion.PDB_model_num rdf:datatype="xsd:int">7</PDBo:pdbx_validate_torsion.PDB_model_num>
+            <PDBo:pdbx_validate_torsion.id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">15</PDBo:pdbx_validate_torsion.id>
+            <PDBo:pdbx_validate_torsion.PDB_model_num rdf:datatype="http://www.w3.org/2001/XMLSchema#int">7</PDBo:pdbx_validate_torsion.PDB_model_num>
             <PDBo:pdbx_validate_torsion.auth_asym_id>A</PDBo:pdbx_validate_torsion.auth_asym_id>
             <PDBo:pdbx_validate_torsion.auth_comp_id>ASP</PDBo:pdbx_validate_torsion.auth_comp_id>
             <PDBo:pdbx_validate_torsion.auth_seq_id>13</PDBo:pdbx_validate_torsion.auth_seq_id>
-            <PDBo:pdbx_validate_torsion.phi rdf:datatype="xsd:decimal">-166.04</PDBo:pdbx_validate_torsion.phi>
-            <PDBo:pdbx_validate_torsion.psi rdf:datatype="xsd:decimal">109.58</PDBo:pdbx_validate_torsion.psi>
+            <PDBo:pdbx_validate_torsion.phi rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-166.04</PDBo:pdbx_validate_torsion.phi>
+            <PDBo:pdbx_validate_torsion.psi rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">109.58</PDBo:pdbx_validate_torsion.psi>
           </PDBo:pdbx_validate_torsion>
         </PDBo:has_pdbx_validate_torsion>
         <PDBo:has_pdbx_validate_torsion>
           <PDBo:pdbx_validate_torsion rdf:about="http://rdf.wwpdb.org/pdb/7LQS/pdbx_validate_torsion/16">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7LQS"/>
-            <PDBo:pdbx_validate_torsion.id rdf:datatype="xsd:int">16</PDBo:pdbx_validate_torsion.id>
-            <PDBo:pdbx_validate_torsion.PDB_model_num rdf:datatype="xsd:int">8</PDBo:pdbx_validate_torsion.PDB_model_num>
+            <PDBo:pdbx_validate_torsion.id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">16</PDBo:pdbx_validate_torsion.id>
+            <PDBo:pdbx_validate_torsion.PDB_model_num rdf:datatype="http://www.w3.org/2001/XMLSchema#int">8</PDBo:pdbx_validate_torsion.PDB_model_num>
             <PDBo:pdbx_validate_torsion.auth_asym_id>A</PDBo:pdbx_validate_torsion.auth_asym_id>
             <PDBo:pdbx_validate_torsion.auth_comp_id>SER</PDBo:pdbx_validate_torsion.auth_comp_id>
             <PDBo:pdbx_validate_torsion.auth_seq_id>3</PDBo:pdbx_validate_torsion.auth_seq_id>
-            <PDBo:pdbx_validate_torsion.phi rdf:datatype="xsd:decimal">-153.71</PDBo:pdbx_validate_torsion.phi>
-            <PDBo:pdbx_validate_torsion.psi rdf:datatype="xsd:decimal">67.86</PDBo:pdbx_validate_torsion.psi>
+            <PDBo:pdbx_validate_torsion.phi rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-153.71</PDBo:pdbx_validate_torsion.phi>
+            <PDBo:pdbx_validate_torsion.psi rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">67.86</PDBo:pdbx_validate_torsion.psi>
           </PDBo:pdbx_validate_torsion>
         </PDBo:has_pdbx_validate_torsion>
         <PDBo:has_pdbx_validate_torsion>
           <PDBo:pdbx_validate_torsion rdf:about="http://rdf.wwpdb.org/pdb/7LQS/pdbx_validate_torsion/17">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7LQS"/>
-            <PDBo:pdbx_validate_torsion.id rdf:datatype="xsd:int">17</PDBo:pdbx_validate_torsion.id>
-            <PDBo:pdbx_validate_torsion.PDB_model_num rdf:datatype="xsd:int">8</PDBo:pdbx_validate_torsion.PDB_model_num>
+            <PDBo:pdbx_validate_torsion.id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">17</PDBo:pdbx_validate_torsion.id>
+            <PDBo:pdbx_validate_torsion.PDB_model_num rdf:datatype="http://www.w3.org/2001/XMLSchema#int">8</PDBo:pdbx_validate_torsion.PDB_model_num>
             <PDBo:pdbx_validate_torsion.auth_asym_id>A</PDBo:pdbx_validate_torsion.auth_asym_id>
             <PDBo:pdbx_validate_torsion.auth_comp_id>HIS</PDBo:pdbx_validate_torsion.auth_comp_id>
             <PDBo:pdbx_validate_torsion.auth_seq_id>11</PDBo:pdbx_validate_torsion.auth_seq_id>
-            <PDBo:pdbx_validate_torsion.phi rdf:datatype="xsd:decimal">-69.29</PDBo:pdbx_validate_torsion.phi>
-            <PDBo:pdbx_validate_torsion.psi rdf:datatype="xsd:decimal">94.55</PDBo:pdbx_validate_torsion.psi>
+            <PDBo:pdbx_validate_torsion.phi rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-69.29</PDBo:pdbx_validate_torsion.phi>
+            <PDBo:pdbx_validate_torsion.psi rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">94.55</PDBo:pdbx_validate_torsion.psi>
           </PDBo:pdbx_validate_torsion>
         </PDBo:has_pdbx_validate_torsion>
         <PDBo:has_pdbx_validate_torsion>
           <PDBo:pdbx_validate_torsion rdf:about="http://rdf.wwpdb.org/pdb/7LQS/pdbx_validate_torsion/18">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7LQS"/>
-            <PDBo:pdbx_validate_torsion.id rdf:datatype="xsd:int">18</PDBo:pdbx_validate_torsion.id>
-            <PDBo:pdbx_validate_torsion.PDB_model_num rdf:datatype="xsd:int">8</PDBo:pdbx_validate_torsion.PDB_model_num>
+            <PDBo:pdbx_validate_torsion.id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">18</PDBo:pdbx_validate_torsion.id>
+            <PDBo:pdbx_validate_torsion.PDB_model_num rdf:datatype="http://www.w3.org/2001/XMLSchema#int">8</PDBo:pdbx_validate_torsion.PDB_model_num>
             <PDBo:pdbx_validate_torsion.auth_asym_id>A</PDBo:pdbx_validate_torsion.auth_asym_id>
             <PDBo:pdbx_validate_torsion.auth_comp_id>ASP</PDBo:pdbx_validate_torsion.auth_comp_id>
             <PDBo:pdbx_validate_torsion.auth_seq_id>13</PDBo:pdbx_validate_torsion.auth_seq_id>
-            <PDBo:pdbx_validate_torsion.phi rdf:datatype="xsd:decimal">-54.56</PDBo:pdbx_validate_torsion.phi>
-            <PDBo:pdbx_validate_torsion.psi rdf:datatype="xsd:decimal">-71.64</PDBo:pdbx_validate_torsion.psi>
+            <PDBo:pdbx_validate_torsion.phi rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-54.56</PDBo:pdbx_validate_torsion.phi>
+            <PDBo:pdbx_validate_torsion.psi rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-71.64</PDBo:pdbx_validate_torsion.psi>
           </PDBo:pdbx_validate_torsion>
         </PDBo:has_pdbx_validate_torsion>
         <PDBo:has_pdbx_validate_torsion>
           <PDBo:pdbx_validate_torsion rdf:about="http://rdf.wwpdb.org/pdb/7LQS/pdbx_validate_torsion/19">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7LQS"/>
-            <PDBo:pdbx_validate_torsion.id rdf:datatype="xsd:int">19</PDBo:pdbx_validate_torsion.id>
-            <PDBo:pdbx_validate_torsion.PDB_model_num rdf:datatype="xsd:int">9</PDBo:pdbx_validate_torsion.PDB_model_num>
+            <PDBo:pdbx_validate_torsion.id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">19</PDBo:pdbx_validate_torsion.id>
+            <PDBo:pdbx_validate_torsion.PDB_model_num rdf:datatype="http://www.w3.org/2001/XMLSchema#int">9</PDBo:pdbx_validate_torsion.PDB_model_num>
             <PDBo:pdbx_validate_torsion.auth_asym_id>A</PDBo:pdbx_validate_torsion.auth_asym_id>
             <PDBo:pdbx_validate_torsion.auth_comp_id>SER</PDBo:pdbx_validate_torsion.auth_comp_id>
             <PDBo:pdbx_validate_torsion.auth_seq_id>3</PDBo:pdbx_validate_torsion.auth_seq_id>
-            <PDBo:pdbx_validate_torsion.phi rdf:datatype="xsd:decimal">-96.70</PDBo:pdbx_validate_torsion.phi>
-            <PDBo:pdbx_validate_torsion.psi rdf:datatype="xsd:decimal">36.24</PDBo:pdbx_validate_torsion.psi>
+            <PDBo:pdbx_validate_torsion.phi rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-96.70</PDBo:pdbx_validate_torsion.phi>
+            <PDBo:pdbx_validate_torsion.psi rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">36.24</PDBo:pdbx_validate_torsion.psi>
           </PDBo:pdbx_validate_torsion>
         </PDBo:has_pdbx_validate_torsion>
         <PDBo:has_pdbx_validate_torsion>
           <PDBo:pdbx_validate_torsion rdf:about="http://rdf.wwpdb.org/pdb/7LQS/pdbx_validate_torsion/20">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7LQS"/>
-            <PDBo:pdbx_validate_torsion.id rdf:datatype="xsd:int">20</PDBo:pdbx_validate_torsion.id>
-            <PDBo:pdbx_validate_torsion.PDB_model_num rdf:datatype="xsd:int">9</PDBo:pdbx_validate_torsion.PDB_model_num>
+            <PDBo:pdbx_validate_torsion.id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">20</PDBo:pdbx_validate_torsion.id>
+            <PDBo:pdbx_validate_torsion.PDB_model_num rdf:datatype="http://www.w3.org/2001/XMLSchema#int">9</PDBo:pdbx_validate_torsion.PDB_model_num>
             <PDBo:pdbx_validate_torsion.auth_asym_id>A</PDBo:pdbx_validate_torsion.auth_asym_id>
             <PDBo:pdbx_validate_torsion.auth_comp_id>HIS</PDBo:pdbx_validate_torsion.auth_comp_id>
             <PDBo:pdbx_validate_torsion.auth_seq_id>11</PDBo:pdbx_validate_torsion.auth_seq_id>
-            <PDBo:pdbx_validate_torsion.phi rdf:datatype="xsd:decimal">-129.09</PDBo:pdbx_validate_torsion.phi>
-            <PDBo:pdbx_validate_torsion.psi rdf:datatype="xsd:decimal">-71.80</PDBo:pdbx_validate_torsion.psi>
+            <PDBo:pdbx_validate_torsion.phi rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-129.09</PDBo:pdbx_validate_torsion.phi>
+            <PDBo:pdbx_validate_torsion.psi rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-71.80</PDBo:pdbx_validate_torsion.psi>
           </PDBo:pdbx_validate_torsion>
         </PDBo:has_pdbx_validate_torsion>
         <PDBo:has_pdbx_validate_torsion>
           <PDBo:pdbx_validate_torsion rdf:about="http://rdf.wwpdb.org/pdb/7LQS/pdbx_validate_torsion/21">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7LQS"/>
-            <PDBo:pdbx_validate_torsion.id rdf:datatype="xsd:int">21</PDBo:pdbx_validate_torsion.id>
-            <PDBo:pdbx_validate_torsion.PDB_model_num rdf:datatype="xsd:int">9</PDBo:pdbx_validate_torsion.PDB_model_num>
+            <PDBo:pdbx_validate_torsion.id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">21</PDBo:pdbx_validate_torsion.id>
+            <PDBo:pdbx_validate_torsion.PDB_model_num rdf:datatype="http://www.w3.org/2001/XMLSchema#int">9</PDBo:pdbx_validate_torsion.PDB_model_num>
             <PDBo:pdbx_validate_torsion.auth_asym_id>A</PDBo:pdbx_validate_torsion.auth_asym_id>
             <PDBo:pdbx_validate_torsion.auth_comp_id>ASP</PDBo:pdbx_validate_torsion.auth_comp_id>
             <PDBo:pdbx_validate_torsion.auth_seq_id>13</PDBo:pdbx_validate_torsion.auth_seq_id>
-            <PDBo:pdbx_validate_torsion.phi rdf:datatype="xsd:decimal">-165.41</PDBo:pdbx_validate_torsion.phi>
-            <PDBo:pdbx_validate_torsion.psi rdf:datatype="xsd:decimal">113.90</PDBo:pdbx_validate_torsion.psi>
+            <PDBo:pdbx_validate_torsion.phi rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-165.41</PDBo:pdbx_validate_torsion.phi>
+            <PDBo:pdbx_validate_torsion.psi rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">113.90</PDBo:pdbx_validate_torsion.psi>
           </PDBo:pdbx_validate_torsion>
         </PDBo:has_pdbx_validate_torsion>
         <PDBo:has_pdbx_validate_torsion>
           <PDBo:pdbx_validate_torsion rdf:about="http://rdf.wwpdb.org/pdb/7LQS/pdbx_validate_torsion/22">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7LQS"/>
-            <PDBo:pdbx_validate_torsion.id rdf:datatype="xsd:int">22</PDBo:pdbx_validate_torsion.id>
-            <PDBo:pdbx_validate_torsion.PDB_model_num rdf:datatype="xsd:int">10</PDBo:pdbx_validate_torsion.PDB_model_num>
+            <PDBo:pdbx_validate_torsion.id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">22</PDBo:pdbx_validate_torsion.id>
+            <PDBo:pdbx_validate_torsion.PDB_model_num rdf:datatype="http://www.w3.org/2001/XMLSchema#int">10</PDBo:pdbx_validate_torsion.PDB_model_num>
             <PDBo:pdbx_validate_torsion.auth_asym_id>A</PDBo:pdbx_validate_torsion.auth_asym_id>
             <PDBo:pdbx_validate_torsion.auth_comp_id>CYS</PDBo:pdbx_validate_torsion.auth_comp_id>
             <PDBo:pdbx_validate_torsion.auth_seq_id>2</PDBo:pdbx_validate_torsion.auth_seq_id>
-            <PDBo:pdbx_validate_torsion.phi rdf:datatype="xsd:decimal">-142.34</PDBo:pdbx_validate_torsion.phi>
-            <PDBo:pdbx_validate_torsion.psi rdf:datatype="xsd:decimal">-42.49</PDBo:pdbx_validate_torsion.psi>
+            <PDBo:pdbx_validate_torsion.phi rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-142.34</PDBo:pdbx_validate_torsion.phi>
+            <PDBo:pdbx_validate_torsion.psi rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-42.49</PDBo:pdbx_validate_torsion.psi>
           </PDBo:pdbx_validate_torsion>
         </PDBo:has_pdbx_validate_torsion>
         <PDBo:has_pdbx_validate_torsion>
           <PDBo:pdbx_validate_torsion rdf:about="http://rdf.wwpdb.org/pdb/7LQS/pdbx_validate_torsion/23">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7LQS"/>
-            <PDBo:pdbx_validate_torsion.id rdf:datatype="xsd:int">23</PDBo:pdbx_validate_torsion.id>
-            <PDBo:pdbx_validate_torsion.PDB_model_num rdf:datatype="xsd:int">10</PDBo:pdbx_validate_torsion.PDB_model_num>
+            <PDBo:pdbx_validate_torsion.id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">23</PDBo:pdbx_validate_torsion.id>
+            <PDBo:pdbx_validate_torsion.PDB_model_num rdf:datatype="http://www.w3.org/2001/XMLSchema#int">10</PDBo:pdbx_validate_torsion.PDB_model_num>
             <PDBo:pdbx_validate_torsion.auth_asym_id>A</PDBo:pdbx_validate_torsion.auth_asym_id>
             <PDBo:pdbx_validate_torsion.auth_comp_id>SER</PDBo:pdbx_validate_torsion.auth_comp_id>
             <PDBo:pdbx_validate_torsion.auth_seq_id>3</PDBo:pdbx_validate_torsion.auth_seq_id>
-            <PDBo:pdbx_validate_torsion.phi rdf:datatype="xsd:decimal">-96.65</PDBo:pdbx_validate_torsion.phi>
-            <PDBo:pdbx_validate_torsion.psi rdf:datatype="xsd:decimal">-64.92</PDBo:pdbx_validate_torsion.psi>
+            <PDBo:pdbx_validate_torsion.phi rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-96.65</PDBo:pdbx_validate_torsion.phi>
+            <PDBo:pdbx_validate_torsion.psi rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-64.92</PDBo:pdbx_validate_torsion.psi>
           </PDBo:pdbx_validate_torsion>
         </PDBo:has_pdbx_validate_torsion>
         <PDBo:has_pdbx_validate_torsion>
           <PDBo:pdbx_validate_torsion rdf:about="http://rdf.wwpdb.org/pdb/7LQS/pdbx_validate_torsion/24">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7LQS"/>
-            <PDBo:pdbx_validate_torsion.id rdf:datatype="xsd:int">24</PDBo:pdbx_validate_torsion.id>
-            <PDBo:pdbx_validate_torsion.PDB_model_num rdf:datatype="xsd:int">10</PDBo:pdbx_validate_torsion.PDB_model_num>
+            <PDBo:pdbx_validate_torsion.id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">24</PDBo:pdbx_validate_torsion.id>
+            <PDBo:pdbx_validate_torsion.PDB_model_num rdf:datatype="http://www.w3.org/2001/XMLSchema#int">10</PDBo:pdbx_validate_torsion.PDB_model_num>
             <PDBo:pdbx_validate_torsion.auth_asym_id>A</PDBo:pdbx_validate_torsion.auth_asym_id>
             <PDBo:pdbx_validate_torsion.auth_comp_id>HIS</PDBo:pdbx_validate_torsion.auth_comp_id>
             <PDBo:pdbx_validate_torsion.auth_seq_id>11</PDBo:pdbx_validate_torsion.auth_seq_id>
-            <PDBo:pdbx_validate_torsion.phi rdf:datatype="xsd:decimal">-109.40</PDBo:pdbx_validate_torsion.phi>
-            <PDBo:pdbx_validate_torsion.psi rdf:datatype="xsd:decimal">53.84</PDBo:pdbx_validate_torsion.psi>
+            <PDBo:pdbx_validate_torsion.phi rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-109.40</PDBo:pdbx_validate_torsion.phi>
+            <PDBo:pdbx_validate_torsion.psi rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">53.84</PDBo:pdbx_validate_torsion.psi>
           </PDBo:pdbx_validate_torsion>
         </PDBo:has_pdbx_validate_torsion>
         <PDBo:has_pdbx_validate_torsion>
           <PDBo:pdbx_validate_torsion rdf:about="http://rdf.wwpdb.org/pdb/7LQS/pdbx_validate_torsion/25">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7LQS"/>
-            <PDBo:pdbx_validate_torsion.id rdf:datatype="xsd:int">25</PDBo:pdbx_validate_torsion.id>
-            <PDBo:pdbx_validate_torsion.PDB_model_num rdf:datatype="xsd:int">10</PDBo:pdbx_validate_torsion.PDB_model_num>
+            <PDBo:pdbx_validate_torsion.id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">25</PDBo:pdbx_validate_torsion.id>
+            <PDBo:pdbx_validate_torsion.PDB_model_num rdf:datatype="http://www.w3.org/2001/XMLSchema#int">10</PDBo:pdbx_validate_torsion.PDB_model_num>
             <PDBo:pdbx_validate_torsion.auth_asym_id>A</PDBo:pdbx_validate_torsion.auth_asym_id>
             <PDBo:pdbx_validate_torsion.auth_comp_id>ASP</PDBo:pdbx_validate_torsion.auth_comp_id>
             <PDBo:pdbx_validate_torsion.auth_seq_id>13</PDBo:pdbx_validate_torsion.auth_seq_id>
-            <PDBo:pdbx_validate_torsion.phi rdf:datatype="xsd:decimal">-102.97</PDBo:pdbx_validate_torsion.phi>
-            <PDBo:pdbx_validate_torsion.psi rdf:datatype="xsd:decimal">42.94</PDBo:pdbx_validate_torsion.psi>
+            <PDBo:pdbx_validate_torsion.phi rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-102.97</PDBo:pdbx_validate_torsion.phi>
+            <PDBo:pdbx_validate_torsion.psi rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">42.94</PDBo:pdbx_validate_torsion.psi>
           </PDBo:pdbx_validate_torsion>
         </PDBo:has_pdbx_validate_torsion>
         <PDBo:has_pdbx_validate_torsion>
           <PDBo:pdbx_validate_torsion rdf:about="http://rdf.wwpdb.org/pdb/7LQS/pdbx_validate_torsion/26">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7LQS"/>
-            <PDBo:pdbx_validate_torsion.id rdf:datatype="xsd:int">26</PDBo:pdbx_validate_torsion.id>
-            <PDBo:pdbx_validate_torsion.PDB_model_num rdf:datatype="xsd:int">11</PDBo:pdbx_validate_torsion.PDB_model_num>
+            <PDBo:pdbx_validate_torsion.id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">26</PDBo:pdbx_validate_torsion.id>
+            <PDBo:pdbx_validate_torsion.PDB_model_num rdf:datatype="http://www.w3.org/2001/XMLSchema#int">11</PDBo:pdbx_validate_torsion.PDB_model_num>
             <PDBo:pdbx_validate_torsion.auth_asym_id>A</PDBo:pdbx_validate_torsion.auth_asym_id>
             <PDBo:pdbx_validate_torsion.auth_comp_id>HIS</PDBo:pdbx_validate_torsion.auth_comp_id>
             <PDBo:pdbx_validate_torsion.auth_seq_id>11</PDBo:pdbx_validate_torsion.auth_seq_id>
-            <PDBo:pdbx_validate_torsion.phi rdf:datatype="xsd:decimal">-98.24</PDBo:pdbx_validate_torsion.phi>
-            <PDBo:pdbx_validate_torsion.psi rdf:datatype="xsd:decimal">40.96</PDBo:pdbx_validate_torsion.psi>
+            <PDBo:pdbx_validate_torsion.phi rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-98.24</PDBo:pdbx_validate_torsion.phi>
+            <PDBo:pdbx_validate_torsion.psi rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">40.96</PDBo:pdbx_validate_torsion.psi>
           </PDBo:pdbx_validate_torsion>
         </PDBo:has_pdbx_validate_torsion>
         <PDBo:has_pdbx_validate_torsion>
           <PDBo:pdbx_validate_torsion rdf:about="http://rdf.wwpdb.org/pdb/7LQS/pdbx_validate_torsion/27">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7LQS"/>
-            <PDBo:pdbx_validate_torsion.id rdf:datatype="xsd:int">27</PDBo:pdbx_validate_torsion.id>
-            <PDBo:pdbx_validate_torsion.PDB_model_num rdf:datatype="xsd:int">11</PDBo:pdbx_validate_torsion.PDB_model_num>
+            <PDBo:pdbx_validate_torsion.id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">27</PDBo:pdbx_validate_torsion.id>
+            <PDBo:pdbx_validate_torsion.PDB_model_num rdf:datatype="http://www.w3.org/2001/XMLSchema#int">11</PDBo:pdbx_validate_torsion.PDB_model_num>
             <PDBo:pdbx_validate_torsion.auth_asym_id>A</PDBo:pdbx_validate_torsion.auth_asym_id>
             <PDBo:pdbx_validate_torsion.auth_comp_id>ASP</PDBo:pdbx_validate_torsion.auth_comp_id>
             <PDBo:pdbx_validate_torsion.auth_seq_id>13</PDBo:pdbx_validate_torsion.auth_seq_id>
-            <PDBo:pdbx_validate_torsion.phi rdf:datatype="xsd:decimal">-174.75</PDBo:pdbx_validate_torsion.phi>
-            <PDBo:pdbx_validate_torsion.psi rdf:datatype="xsd:decimal">118.74</PDBo:pdbx_validate_torsion.psi>
+            <PDBo:pdbx_validate_torsion.phi rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-174.75</PDBo:pdbx_validate_torsion.phi>
+            <PDBo:pdbx_validate_torsion.psi rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">118.74</PDBo:pdbx_validate_torsion.psi>
           </PDBo:pdbx_validate_torsion>
         </PDBo:has_pdbx_validate_torsion>
         <PDBo:has_pdbx_validate_torsion>
           <PDBo:pdbx_validate_torsion rdf:about="http://rdf.wwpdb.org/pdb/7LQS/pdbx_validate_torsion/28">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7LQS"/>
-            <PDBo:pdbx_validate_torsion.id rdf:datatype="xsd:int">28</PDBo:pdbx_validate_torsion.id>
-            <PDBo:pdbx_validate_torsion.PDB_model_num rdf:datatype="xsd:int">12</PDBo:pdbx_validate_torsion.PDB_model_num>
+            <PDBo:pdbx_validate_torsion.id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">28</PDBo:pdbx_validate_torsion.id>
+            <PDBo:pdbx_validate_torsion.PDB_model_num rdf:datatype="http://www.w3.org/2001/XMLSchema#int">12</PDBo:pdbx_validate_torsion.PDB_model_num>
             <PDBo:pdbx_validate_torsion.auth_asym_id>A</PDBo:pdbx_validate_torsion.auth_asym_id>
             <PDBo:pdbx_validate_torsion.auth_comp_id>CYS</PDBo:pdbx_validate_torsion.auth_comp_id>
             <PDBo:pdbx_validate_torsion.auth_seq_id>2</PDBo:pdbx_validate_torsion.auth_seq_id>
-            <PDBo:pdbx_validate_torsion.phi rdf:datatype="xsd:decimal">-93.85</PDBo:pdbx_validate_torsion.phi>
-            <PDBo:pdbx_validate_torsion.psi rdf:datatype="xsd:decimal">-64.33</PDBo:pdbx_validate_torsion.psi>
+            <PDBo:pdbx_validate_torsion.phi rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-93.85</PDBo:pdbx_validate_torsion.phi>
+            <PDBo:pdbx_validate_torsion.psi rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-64.33</PDBo:pdbx_validate_torsion.psi>
           </PDBo:pdbx_validate_torsion>
         </PDBo:has_pdbx_validate_torsion>
         <PDBo:has_pdbx_validate_torsion>
           <PDBo:pdbx_validate_torsion rdf:about="http://rdf.wwpdb.org/pdb/7LQS/pdbx_validate_torsion/29">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7LQS"/>
-            <PDBo:pdbx_validate_torsion.id rdf:datatype="xsd:int">29</PDBo:pdbx_validate_torsion.id>
-            <PDBo:pdbx_validate_torsion.PDB_model_num rdf:datatype="xsd:int">12</PDBo:pdbx_validate_torsion.PDB_model_num>
+            <PDBo:pdbx_validate_torsion.id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">29</PDBo:pdbx_validate_torsion.id>
+            <PDBo:pdbx_validate_torsion.PDB_model_num rdf:datatype="http://www.w3.org/2001/XMLSchema#int">12</PDBo:pdbx_validate_torsion.PDB_model_num>
             <PDBo:pdbx_validate_torsion.auth_asym_id>A</PDBo:pdbx_validate_torsion.auth_asym_id>
             <PDBo:pdbx_validate_torsion.auth_comp_id>GLN</PDBo:pdbx_validate_torsion.auth_comp_id>
             <PDBo:pdbx_validate_torsion.auth_seq_id>10</PDBo:pdbx_validate_torsion.auth_seq_id>
-            <PDBo:pdbx_validate_torsion.phi rdf:datatype="xsd:decimal">-118.60</PDBo:pdbx_validate_torsion.phi>
-            <PDBo:pdbx_validate_torsion.psi rdf:datatype="xsd:decimal">73.59</PDBo:pdbx_validate_torsion.psi>
+            <PDBo:pdbx_validate_torsion.phi rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-118.60</PDBo:pdbx_validate_torsion.phi>
+            <PDBo:pdbx_validate_torsion.psi rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">73.59</PDBo:pdbx_validate_torsion.psi>
           </PDBo:pdbx_validate_torsion>
         </PDBo:has_pdbx_validate_torsion>
         <PDBo:has_pdbx_validate_torsion>
           <PDBo:pdbx_validate_torsion rdf:about="http://rdf.wwpdb.org/pdb/7LQS/pdbx_validate_torsion/30">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7LQS"/>
-            <PDBo:pdbx_validate_torsion.id rdf:datatype="xsd:int">30</PDBo:pdbx_validate_torsion.id>
-            <PDBo:pdbx_validate_torsion.PDB_model_num rdf:datatype="xsd:int">12</PDBo:pdbx_validate_torsion.PDB_model_num>
+            <PDBo:pdbx_validate_torsion.id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">30</PDBo:pdbx_validate_torsion.id>
+            <PDBo:pdbx_validate_torsion.PDB_model_num rdf:datatype="http://www.w3.org/2001/XMLSchema#int">12</PDBo:pdbx_validate_torsion.PDB_model_num>
             <PDBo:pdbx_validate_torsion.auth_asym_id>A</PDBo:pdbx_validate_torsion.auth_asym_id>
             <PDBo:pdbx_validate_torsion.auth_comp_id>LEU</PDBo:pdbx_validate_torsion.auth_comp_id>
             <PDBo:pdbx_validate_torsion.auth_seq_id>14</PDBo:pdbx_validate_torsion.auth_seq_id>
-            <PDBo:pdbx_validate_torsion.phi rdf:datatype="xsd:decimal">-172.60</PDBo:pdbx_validate_torsion.phi>
-            <PDBo:pdbx_validate_torsion.psi rdf:datatype="xsd:decimal">142.66</PDBo:pdbx_validate_torsion.psi>
+            <PDBo:pdbx_validate_torsion.phi rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-172.60</PDBo:pdbx_validate_torsion.phi>
+            <PDBo:pdbx_validate_torsion.psi rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">142.66</PDBo:pdbx_validate_torsion.psi>
           </PDBo:pdbx_validate_torsion>
         </PDBo:has_pdbx_validate_torsion>
         <PDBo:has_pdbx_validate_torsion>
           <PDBo:pdbx_validate_torsion rdf:about="http://rdf.wwpdb.org/pdb/7LQS/pdbx_validate_torsion/31">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7LQS"/>
-            <PDBo:pdbx_validate_torsion.id rdf:datatype="xsd:int">31</PDBo:pdbx_validate_torsion.id>
-            <PDBo:pdbx_validate_torsion.PDB_model_num rdf:datatype="xsd:int">13</PDBo:pdbx_validate_torsion.PDB_model_num>
+            <PDBo:pdbx_validate_torsion.id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">31</PDBo:pdbx_validate_torsion.id>
+            <PDBo:pdbx_validate_torsion.PDB_model_num rdf:datatype="http://www.w3.org/2001/XMLSchema#int">13</PDBo:pdbx_validate_torsion.PDB_model_num>
             <PDBo:pdbx_validate_torsion.auth_asym_id>A</PDBo:pdbx_validate_torsion.auth_asym_id>
             <PDBo:pdbx_validate_torsion.auth_comp_id>CYS</PDBo:pdbx_validate_torsion.auth_comp_id>
             <PDBo:pdbx_validate_torsion.auth_seq_id>2</PDBo:pdbx_validate_torsion.auth_seq_id>
-            <PDBo:pdbx_validate_torsion.phi rdf:datatype="xsd:decimal">-138.46</PDBo:pdbx_validate_torsion.phi>
-            <PDBo:pdbx_validate_torsion.psi rdf:datatype="xsd:decimal">-51.33</PDBo:pdbx_validate_torsion.psi>
+            <PDBo:pdbx_validate_torsion.phi rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-138.46</PDBo:pdbx_validate_torsion.phi>
+            <PDBo:pdbx_validate_torsion.psi rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-51.33</PDBo:pdbx_validate_torsion.psi>
           </PDBo:pdbx_validate_torsion>
         </PDBo:has_pdbx_validate_torsion>
         <PDBo:has_pdbx_validate_torsion>
           <PDBo:pdbx_validate_torsion rdf:about="http://rdf.wwpdb.org/pdb/7LQS/pdbx_validate_torsion/32">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7LQS"/>
-            <PDBo:pdbx_validate_torsion.id rdf:datatype="xsd:int">32</PDBo:pdbx_validate_torsion.id>
-            <PDBo:pdbx_validate_torsion.PDB_model_num rdf:datatype="xsd:int">13</PDBo:pdbx_validate_torsion.PDB_model_num>
+            <PDBo:pdbx_validate_torsion.id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">32</PDBo:pdbx_validate_torsion.id>
+            <PDBo:pdbx_validate_torsion.PDB_model_num rdf:datatype="http://www.w3.org/2001/XMLSchema#int">13</PDBo:pdbx_validate_torsion.PDB_model_num>
             <PDBo:pdbx_validate_torsion.auth_asym_id>A</PDBo:pdbx_validate_torsion.auth_asym_id>
             <PDBo:pdbx_validate_torsion.auth_comp_id>LEU</PDBo:pdbx_validate_torsion.auth_comp_id>
             <PDBo:pdbx_validate_torsion.auth_seq_id>14</PDBo:pdbx_validate_torsion.auth_seq_id>
-            <PDBo:pdbx_validate_torsion.phi rdf:datatype="xsd:decimal">-84.01</PDBo:pdbx_validate_torsion.phi>
-            <PDBo:pdbx_validate_torsion.psi rdf:datatype="xsd:decimal">-72.87</PDBo:pdbx_validate_torsion.psi>
+            <PDBo:pdbx_validate_torsion.phi rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-84.01</PDBo:pdbx_validate_torsion.phi>
+            <PDBo:pdbx_validate_torsion.psi rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-72.87</PDBo:pdbx_validate_torsion.psi>
           </PDBo:pdbx_validate_torsion>
         </PDBo:has_pdbx_validate_torsion>
         <PDBo:has_pdbx_validate_torsion>
           <PDBo:pdbx_validate_torsion rdf:about="http://rdf.wwpdb.org/pdb/7LQS/pdbx_validate_torsion/33">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7LQS"/>
-            <PDBo:pdbx_validate_torsion.id rdf:datatype="xsd:int">33</PDBo:pdbx_validate_torsion.id>
-            <PDBo:pdbx_validate_torsion.PDB_model_num rdf:datatype="xsd:int">14</PDBo:pdbx_validate_torsion.PDB_model_num>
+            <PDBo:pdbx_validate_torsion.id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">33</PDBo:pdbx_validate_torsion.id>
+            <PDBo:pdbx_validate_torsion.PDB_model_num rdf:datatype="http://www.w3.org/2001/XMLSchema#int">14</PDBo:pdbx_validate_torsion.PDB_model_num>
             <PDBo:pdbx_validate_torsion.auth_asym_id>A</PDBo:pdbx_validate_torsion.auth_asym_id>
             <PDBo:pdbx_validate_torsion.auth_comp_id>CYS</PDBo:pdbx_validate_torsion.auth_comp_id>
             <PDBo:pdbx_validate_torsion.auth_seq_id>2</PDBo:pdbx_validate_torsion.auth_seq_id>
-            <PDBo:pdbx_validate_torsion.phi rdf:datatype="xsd:decimal">-129.35</PDBo:pdbx_validate_torsion.phi>
-            <PDBo:pdbx_validate_torsion.psi rdf:datatype="xsd:decimal">-70.06</PDBo:pdbx_validate_torsion.psi>
+            <PDBo:pdbx_validate_torsion.phi rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-129.35</PDBo:pdbx_validate_torsion.phi>
+            <PDBo:pdbx_validate_torsion.psi rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-70.06</PDBo:pdbx_validate_torsion.psi>
           </PDBo:pdbx_validate_torsion>
         </PDBo:has_pdbx_validate_torsion>
         <PDBo:has_pdbx_validate_torsion>
           <PDBo:pdbx_validate_torsion rdf:about="http://rdf.wwpdb.org/pdb/7LQS/pdbx_validate_torsion/34">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7LQS"/>
-            <PDBo:pdbx_validate_torsion.id rdf:datatype="xsd:int">34</PDBo:pdbx_validate_torsion.id>
-            <PDBo:pdbx_validate_torsion.PDB_model_num rdf:datatype="xsd:int">15</PDBo:pdbx_validate_torsion.PDB_model_num>
+            <PDBo:pdbx_validate_torsion.id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">34</PDBo:pdbx_validate_torsion.id>
+            <PDBo:pdbx_validate_torsion.PDB_model_num rdf:datatype="http://www.w3.org/2001/XMLSchema#int">15</PDBo:pdbx_validate_torsion.PDB_model_num>
             <PDBo:pdbx_validate_torsion.auth_asym_id>A</PDBo:pdbx_validate_torsion.auth_asym_id>
             <PDBo:pdbx_validate_torsion.auth_comp_id>SER</PDBo:pdbx_validate_torsion.auth_comp_id>
             <PDBo:pdbx_validate_torsion.auth_seq_id>3</PDBo:pdbx_validate_torsion.auth_seq_id>
-            <PDBo:pdbx_validate_torsion.phi rdf:datatype="xsd:decimal">-106.63</PDBo:pdbx_validate_torsion.phi>
-            <PDBo:pdbx_validate_torsion.psi rdf:datatype="xsd:decimal">70.02</PDBo:pdbx_validate_torsion.psi>
+            <PDBo:pdbx_validate_torsion.phi rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-106.63</PDBo:pdbx_validate_torsion.phi>
+            <PDBo:pdbx_validate_torsion.psi rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">70.02</PDBo:pdbx_validate_torsion.psi>
           </PDBo:pdbx_validate_torsion>
         </PDBo:has_pdbx_validate_torsion>
         <PDBo:has_pdbx_validate_torsion>
           <PDBo:pdbx_validate_torsion rdf:about="http://rdf.wwpdb.org/pdb/7LQS/pdbx_validate_torsion/35">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7LQS"/>
-            <PDBo:pdbx_validate_torsion.id rdf:datatype="xsd:int">35</PDBo:pdbx_validate_torsion.id>
-            <PDBo:pdbx_validate_torsion.PDB_model_num rdf:datatype="xsd:int">15</PDBo:pdbx_validate_torsion.PDB_model_num>
+            <PDBo:pdbx_validate_torsion.id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">35</PDBo:pdbx_validate_torsion.id>
+            <PDBo:pdbx_validate_torsion.PDB_model_num rdf:datatype="http://www.w3.org/2001/XMLSchema#int">15</PDBo:pdbx_validate_torsion.PDB_model_num>
             <PDBo:pdbx_validate_torsion.auth_asym_id>A</PDBo:pdbx_validate_torsion.auth_asym_id>
             <PDBo:pdbx_validate_torsion.auth_comp_id>ASP</PDBo:pdbx_validate_torsion.auth_comp_id>
             <PDBo:pdbx_validate_torsion.auth_seq_id>13</PDBo:pdbx_validate_torsion.auth_seq_id>
-            <PDBo:pdbx_validate_torsion.phi rdf:datatype="xsd:decimal">-91.86</PDBo:pdbx_validate_torsion.phi>
-            <PDBo:pdbx_validate_torsion.psi rdf:datatype="xsd:decimal">47.18</PDBo:pdbx_validate_torsion.psi>
+            <PDBo:pdbx_validate_torsion.phi rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-91.86</PDBo:pdbx_validate_torsion.phi>
+            <PDBo:pdbx_validate_torsion.psi rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">47.18</PDBo:pdbx_validate_torsion.psi>
           </PDBo:pdbx_validate_torsion>
         </PDBo:has_pdbx_validate_torsion>
         <PDBo:has_pdbx_validate_torsion>
           <PDBo:pdbx_validate_torsion rdf:about="http://rdf.wwpdb.org/pdb/7LQS/pdbx_validate_torsion/36">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7LQS"/>
-            <PDBo:pdbx_validate_torsion.id rdf:datatype="xsd:int">36</PDBo:pdbx_validate_torsion.id>
-            <PDBo:pdbx_validate_torsion.PDB_model_num rdf:datatype="xsd:int">15</PDBo:pdbx_validate_torsion.PDB_model_num>
+            <PDBo:pdbx_validate_torsion.id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">36</PDBo:pdbx_validate_torsion.id>
+            <PDBo:pdbx_validate_torsion.PDB_model_num rdf:datatype="http://www.w3.org/2001/XMLSchema#int">15</PDBo:pdbx_validate_torsion.PDB_model_num>
             <PDBo:pdbx_validate_torsion.auth_asym_id>A</PDBo:pdbx_validate_torsion.auth_asym_id>
             <PDBo:pdbx_validate_torsion.auth_comp_id>LEU</PDBo:pdbx_validate_torsion.auth_comp_id>
             <PDBo:pdbx_validate_torsion.auth_seq_id>14</PDBo:pdbx_validate_torsion.auth_seq_id>
-            <PDBo:pdbx_validate_torsion.phi rdf:datatype="xsd:decimal">-101.70</PDBo:pdbx_validate_torsion.phi>
-            <PDBo:pdbx_validate_torsion.psi rdf:datatype="xsd:decimal">-63.06</PDBo:pdbx_validate_torsion.psi>
+            <PDBo:pdbx_validate_torsion.phi rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-101.70</PDBo:pdbx_validate_torsion.phi>
+            <PDBo:pdbx_validate_torsion.psi rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-63.06</PDBo:pdbx_validate_torsion.psi>
           </PDBo:pdbx_validate_torsion>
         </PDBo:has_pdbx_validate_torsion>
         <PDBo:has_pdbx_validate_torsion>
           <PDBo:pdbx_validate_torsion rdf:about="http://rdf.wwpdb.org/pdb/7LQS/pdbx_validate_torsion/37">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7LQS"/>
-            <PDBo:pdbx_validate_torsion.id rdf:datatype="xsd:int">37</PDBo:pdbx_validate_torsion.id>
-            <PDBo:pdbx_validate_torsion.PDB_model_num rdf:datatype="xsd:int">17</PDBo:pdbx_validate_torsion.PDB_model_num>
+            <PDBo:pdbx_validate_torsion.id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">37</PDBo:pdbx_validate_torsion.id>
+            <PDBo:pdbx_validate_torsion.PDB_model_num rdf:datatype="http://www.w3.org/2001/XMLSchema#int">17</PDBo:pdbx_validate_torsion.PDB_model_num>
             <PDBo:pdbx_validate_torsion.auth_asym_id>A</PDBo:pdbx_validate_torsion.auth_asym_id>
             <PDBo:pdbx_validate_torsion.auth_comp_id>SER</PDBo:pdbx_validate_torsion.auth_comp_id>
             <PDBo:pdbx_validate_torsion.auth_seq_id>3</PDBo:pdbx_validate_torsion.auth_seq_id>
-            <PDBo:pdbx_validate_torsion.phi rdf:datatype="xsd:decimal">-50.60</PDBo:pdbx_validate_torsion.phi>
-            <PDBo:pdbx_validate_torsion.psi rdf:datatype="xsd:decimal">-74.64</PDBo:pdbx_validate_torsion.psi>
+            <PDBo:pdbx_validate_torsion.phi rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-50.60</PDBo:pdbx_validate_torsion.phi>
+            <PDBo:pdbx_validate_torsion.psi rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-74.64</PDBo:pdbx_validate_torsion.psi>
           </PDBo:pdbx_validate_torsion>
         </PDBo:has_pdbx_validate_torsion>
         <PDBo:has_pdbx_validate_torsion>
           <PDBo:pdbx_validate_torsion rdf:about="http://rdf.wwpdb.org/pdb/7LQS/pdbx_validate_torsion/38">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7LQS"/>
-            <PDBo:pdbx_validate_torsion.id rdf:datatype="xsd:int">38</PDBo:pdbx_validate_torsion.id>
-            <PDBo:pdbx_validate_torsion.PDB_model_num rdf:datatype="xsd:int">18</PDBo:pdbx_validate_torsion.PDB_model_num>
+            <PDBo:pdbx_validate_torsion.id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">38</PDBo:pdbx_validate_torsion.id>
+            <PDBo:pdbx_validate_torsion.PDB_model_num rdf:datatype="http://www.w3.org/2001/XMLSchema#int">18</PDBo:pdbx_validate_torsion.PDB_model_num>
             <PDBo:pdbx_validate_torsion.auth_asym_id>A</PDBo:pdbx_validate_torsion.auth_asym_id>
             <PDBo:pdbx_validate_torsion.auth_comp_id>CYS</PDBo:pdbx_validate_torsion.auth_comp_id>
             <PDBo:pdbx_validate_torsion.auth_seq_id>2</PDBo:pdbx_validate_torsion.auth_seq_id>
-            <PDBo:pdbx_validate_torsion.phi rdf:datatype="xsd:decimal">-129.57</PDBo:pdbx_validate_torsion.phi>
-            <PDBo:pdbx_validate_torsion.psi rdf:datatype="xsd:decimal">-55.02</PDBo:pdbx_validate_torsion.psi>
+            <PDBo:pdbx_validate_torsion.phi rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-129.57</PDBo:pdbx_validate_torsion.phi>
+            <PDBo:pdbx_validate_torsion.psi rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-55.02</PDBo:pdbx_validate_torsion.psi>
           </PDBo:pdbx_validate_torsion>
         </PDBo:has_pdbx_validate_torsion>
         <PDBo:has_pdbx_validate_torsion>
           <PDBo:pdbx_validate_torsion rdf:about="http://rdf.wwpdb.org/pdb/7LQS/pdbx_validate_torsion/39">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7LQS"/>
-            <PDBo:pdbx_validate_torsion.id rdf:datatype="xsd:int">39</PDBo:pdbx_validate_torsion.id>
-            <PDBo:pdbx_validate_torsion.PDB_model_num rdf:datatype="xsd:int">18</PDBo:pdbx_validate_torsion.PDB_model_num>
+            <PDBo:pdbx_validate_torsion.id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">39</PDBo:pdbx_validate_torsion.id>
+            <PDBo:pdbx_validate_torsion.PDB_model_num rdf:datatype="http://www.w3.org/2001/XMLSchema#int">18</PDBo:pdbx_validate_torsion.PDB_model_num>
             <PDBo:pdbx_validate_torsion.auth_asym_id>A</PDBo:pdbx_validate_torsion.auth_asym_id>
             <PDBo:pdbx_validate_torsion.auth_comp_id>SER</PDBo:pdbx_validate_torsion.auth_comp_id>
             <PDBo:pdbx_validate_torsion.auth_seq_id>3</PDBo:pdbx_validate_torsion.auth_seq_id>
-            <PDBo:pdbx_validate_torsion.phi rdf:datatype="xsd:decimal">-119.74</PDBo:pdbx_validate_torsion.phi>
-            <PDBo:pdbx_validate_torsion.psi rdf:datatype="xsd:decimal">75.11</PDBo:pdbx_validate_torsion.psi>
+            <PDBo:pdbx_validate_torsion.phi rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-119.74</PDBo:pdbx_validate_torsion.phi>
+            <PDBo:pdbx_validate_torsion.psi rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">75.11</PDBo:pdbx_validate_torsion.psi>
           </PDBo:pdbx_validate_torsion>
         </PDBo:has_pdbx_validate_torsion>
         <PDBo:has_pdbx_validate_torsion>
           <PDBo:pdbx_validate_torsion rdf:about="http://rdf.wwpdb.org/pdb/7LQS/pdbx_validate_torsion/40">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7LQS"/>
-            <PDBo:pdbx_validate_torsion.id rdf:datatype="xsd:int">40</PDBo:pdbx_validate_torsion.id>
-            <PDBo:pdbx_validate_torsion.PDB_model_num rdf:datatype="xsd:int">18</PDBo:pdbx_validate_torsion.PDB_model_num>
+            <PDBo:pdbx_validate_torsion.id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">40</PDBo:pdbx_validate_torsion.id>
+            <PDBo:pdbx_validate_torsion.PDB_model_num rdf:datatype="http://www.w3.org/2001/XMLSchema#int">18</PDBo:pdbx_validate_torsion.PDB_model_num>
             <PDBo:pdbx_validate_torsion.auth_asym_id>A</PDBo:pdbx_validate_torsion.auth_asym_id>
             <PDBo:pdbx_validate_torsion.auth_comp_id>SER</PDBo:pdbx_validate_torsion.auth_comp_id>
             <PDBo:pdbx_validate_torsion.auth_seq_id>12</PDBo:pdbx_validate_torsion.auth_seq_id>
-            <PDBo:pdbx_validate_torsion.phi rdf:datatype="xsd:decimal">-98.56</PDBo:pdbx_validate_torsion.phi>
-            <PDBo:pdbx_validate_torsion.psi rdf:datatype="xsd:decimal">37.40</PDBo:pdbx_validate_torsion.psi>
+            <PDBo:pdbx_validate_torsion.phi rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-98.56</PDBo:pdbx_validate_torsion.phi>
+            <PDBo:pdbx_validate_torsion.psi rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">37.40</PDBo:pdbx_validate_torsion.psi>
           </PDBo:pdbx_validate_torsion>
         </PDBo:has_pdbx_validate_torsion>
         <PDBo:has_pdbx_validate_torsion>
           <PDBo:pdbx_validate_torsion rdf:about="http://rdf.wwpdb.org/pdb/7LQS/pdbx_validate_torsion/41">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7LQS"/>
-            <PDBo:pdbx_validate_torsion.id rdf:datatype="xsd:int">41</PDBo:pdbx_validate_torsion.id>
-            <PDBo:pdbx_validate_torsion.PDB_model_num rdf:datatype="xsd:int">20</PDBo:pdbx_validate_torsion.PDB_model_num>
+            <PDBo:pdbx_validate_torsion.id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">41</PDBo:pdbx_validate_torsion.id>
+            <PDBo:pdbx_validate_torsion.PDB_model_num rdf:datatype="http://www.w3.org/2001/XMLSchema#int">20</PDBo:pdbx_validate_torsion.PDB_model_num>
             <PDBo:pdbx_validate_torsion.auth_asym_id>A</PDBo:pdbx_validate_torsion.auth_asym_id>
             <PDBo:pdbx_validate_torsion.auth_comp_id>CYS</PDBo:pdbx_validate_torsion.auth_comp_id>
             <PDBo:pdbx_validate_torsion.auth_seq_id>2</PDBo:pdbx_validate_torsion.auth_seq_id>
-            <PDBo:pdbx_validate_torsion.phi rdf:datatype="xsd:decimal">-126.66</PDBo:pdbx_validate_torsion.phi>
-            <PDBo:pdbx_validate_torsion.psi rdf:datatype="xsd:decimal">-64.06</PDBo:pdbx_validate_torsion.psi>
+            <PDBo:pdbx_validate_torsion.phi rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-126.66</PDBo:pdbx_validate_torsion.phi>
+            <PDBo:pdbx_validate_torsion.psi rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-64.06</PDBo:pdbx_validate_torsion.psi>
           </PDBo:pdbx_validate_torsion>
         </PDBo:has_pdbx_validate_torsion>
         <PDBo:has_pdbx_validate_torsion>
           <PDBo:pdbx_validate_torsion rdf:about="http://rdf.wwpdb.org/pdb/7LQS/pdbx_validate_torsion/42">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7LQS"/>
-            <PDBo:pdbx_validate_torsion.id rdf:datatype="xsd:int">42</PDBo:pdbx_validate_torsion.id>
-            <PDBo:pdbx_validate_torsion.PDB_model_num rdf:datatype="xsd:int">20</PDBo:pdbx_validate_torsion.PDB_model_num>
+            <PDBo:pdbx_validate_torsion.id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">42</PDBo:pdbx_validate_torsion.id>
+            <PDBo:pdbx_validate_torsion.PDB_model_num rdf:datatype="http://www.w3.org/2001/XMLSchema#int">20</PDBo:pdbx_validate_torsion.PDB_model_num>
             <PDBo:pdbx_validate_torsion.auth_asym_id>A</PDBo:pdbx_validate_torsion.auth_asym_id>
             <PDBo:pdbx_validate_torsion.auth_comp_id>SER</PDBo:pdbx_validate_torsion.auth_comp_id>
             <PDBo:pdbx_validate_torsion.auth_seq_id>3</PDBo:pdbx_validate_torsion.auth_seq_id>
-            <PDBo:pdbx_validate_torsion.phi rdf:datatype="xsd:decimal">-147.97</PDBo:pdbx_validate_torsion.phi>
-            <PDBo:pdbx_validate_torsion.psi rdf:datatype="xsd:decimal">56.65</PDBo:pdbx_validate_torsion.psi>
+            <PDBo:pdbx_validate_torsion.phi rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-147.97</PDBo:pdbx_validate_torsion.phi>
+            <PDBo:pdbx_validate_torsion.psi rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">56.65</PDBo:pdbx_validate_torsion.psi>
           </PDBo:pdbx_validate_torsion>
         </PDBo:has_pdbx_validate_torsion>
         <PDBo:has_pdbx_validate_torsion>
           <PDBo:pdbx_validate_torsion rdf:about="http://rdf.wwpdb.org/pdb/7LQS/pdbx_validate_torsion/43">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7LQS"/>
-            <PDBo:pdbx_validate_torsion.id rdf:datatype="xsd:int">43</PDBo:pdbx_validate_torsion.id>
-            <PDBo:pdbx_validate_torsion.PDB_model_num rdf:datatype="xsd:int">20</PDBo:pdbx_validate_torsion.PDB_model_num>
+            <PDBo:pdbx_validate_torsion.id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">43</PDBo:pdbx_validate_torsion.id>
+            <PDBo:pdbx_validate_torsion.PDB_model_num rdf:datatype="http://www.w3.org/2001/XMLSchema#int">20</PDBo:pdbx_validate_torsion.PDB_model_num>
             <PDBo:pdbx_validate_torsion.auth_asym_id>A</PDBo:pdbx_validate_torsion.auth_asym_id>
             <PDBo:pdbx_validate_torsion.auth_comp_id>ASP</PDBo:pdbx_validate_torsion.auth_comp_id>
             <PDBo:pdbx_validate_torsion.auth_seq_id>13</PDBo:pdbx_validate_torsion.auth_seq_id>
-            <PDBo:pdbx_validate_torsion.phi rdf:datatype="xsd:decimal">-117.92</PDBo:pdbx_validate_torsion.phi>
-            <PDBo:pdbx_validate_torsion.psi rdf:datatype="xsd:decimal">73.82</PDBo:pdbx_validate_torsion.psi>
+            <PDBo:pdbx_validate_torsion.phi rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-117.92</PDBo:pdbx_validate_torsion.phi>
+            <PDBo:pdbx_validate_torsion.psi rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">73.82</PDBo:pdbx_validate_torsion.psi>
           </PDBo:pdbx_validate_torsion>
         </PDBo:has_pdbx_validate_torsion>
         <PDBo:has_pdbx_validate_torsion>
           <PDBo:pdbx_validate_torsion rdf:about="http://rdf.wwpdb.org/pdb/7LQS/pdbx_validate_torsion/44">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/pdb/7LQS"/>
-            <PDBo:pdbx_validate_torsion.id rdf:datatype="xsd:int">44</PDBo:pdbx_validate_torsion.id>
-            <PDBo:pdbx_validate_torsion.PDB_model_num rdf:datatype="xsd:int">20</PDBo:pdbx_validate_torsion.PDB_model_num>
+            <PDBo:pdbx_validate_torsion.id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">44</PDBo:pdbx_validate_torsion.id>
+            <PDBo:pdbx_validate_torsion.PDB_model_num rdf:datatype="http://www.w3.org/2001/XMLSchema#int">20</PDBo:pdbx_validate_torsion.PDB_model_num>
             <PDBo:pdbx_validate_torsion.auth_asym_id>A</PDBo:pdbx_validate_torsion.auth_asym_id>
             <PDBo:pdbx_validate_torsion.auth_comp_id>LEU</PDBo:pdbx_validate_torsion.auth_comp_id>
             <PDBo:pdbx_validate_torsion.auth_seq_id>14</PDBo:pdbx_validate_torsion.auth_seq_id>
-            <PDBo:pdbx_validate_torsion.phi rdf:datatype="xsd:decimal">-121.47</PDBo:pdbx_validate_torsion.phi>
-            <PDBo:pdbx_validate_torsion.psi rdf:datatype="xsd:decimal">-65.40</PDBo:pdbx_validate_torsion.psi>
+            <PDBo:pdbx_validate_torsion.phi rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-121.47</PDBo:pdbx_validate_torsion.phi>
+            <PDBo:pdbx_validate_torsion.psi rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-65.40</PDBo:pdbx_validate_torsion.psi>
           </PDBo:pdbx_validate_torsion>
         </PDBo:has_pdbx_validate_torsion>
       </PDBo:pdbx_validate_torsionCategory>
@@ -2123,17 +2123,17 @@
             <PDBo:struct_conf.beg_auth_seq_id>4</PDBo:struct_conf.beg_auth_seq_id>
             <PDBo:struct_conf.beg_label_asym_id>A</PDBo:struct_conf.beg_label_asym_id>
             <PDBo:struct_conf.beg_label_comp_id>ASN</PDBo:struct_conf.beg_label_comp_id>
-            <PDBo:struct_conf.beg_label_seq_id rdf:datatype="xsd:int">4</PDBo:struct_conf.beg_label_seq_id>
+            <PDBo:struct_conf.beg_label_seq_id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</PDBo:struct_conf.beg_label_seq_id>
             <PDBo:struct_conf.conf_type_id>HELX_P</PDBo:struct_conf.conf_type_id>
             <PDBo:struct_conf.end_auth_asym_id>A</PDBo:struct_conf.end_auth_asym_id>
             <PDBo:struct_conf.end_auth_comp_id>GLN</PDBo:struct_conf.end_auth_comp_id>
             <PDBo:struct_conf.end_auth_seq_id>10</PDBo:struct_conf.end_auth_seq_id>
             <PDBo:struct_conf.end_label_asym_id>A</PDBo:struct_conf.end_label_asym_id>
             <PDBo:struct_conf.end_label_comp_id>GLN</PDBo:struct_conf.end_label_comp_id>
-            <PDBo:struct_conf.end_label_seq_id rdf:datatype="xsd:int">10</PDBo:struct_conf.end_label_seq_id>
+            <PDBo:struct_conf.end_label_seq_id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">10</PDBo:struct_conf.end_label_seq_id>
             <PDBo:struct_conf.pdbx_PDB_helix_class>1</PDBo:struct_conf.pdbx_PDB_helix_class>
             <PDBo:struct_conf.pdbx_PDB_helix_id>AA1</PDBo:struct_conf.pdbx_PDB_helix_id>
-            <PDBo:struct_conf.pdbx_PDB_helix_length rdf:datatype="xsd:int">7</PDBo:struct_conf.pdbx_PDB_helix_length>
+            <PDBo:struct_conf.pdbx_PDB_helix_length rdf:datatype="http://www.w3.org/2001/XMLSchema#int">7</PDBo:struct_conf.pdbx_PDB_helix_length>
           </PDBo:struct_conf>
         </PDBo:has_struct_conf>
       </PDBo:struct_confCategory>
@@ -2160,14 +2160,14 @@
             </PDBo:reference_to_struct_conn_type>
             <PDBo:struct_conn.id>disulf1</PDBo:struct_conn.id>
             <PDBo:struct_conn.conn_type_id>disulf</PDBo:struct_conn.conn_type_id>
-            <PDBo:struct_conn.pdbx_dist_value rdf:datatype="xsd:decimal">2.006</PDBo:struct_conn.pdbx_dist_value>
+            <PDBo:struct_conn.pdbx_dist_value rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.006</PDBo:struct_conn.pdbx_dist_value>
             <PDBo:struct_conn.ptnr1_auth_asym_id>A</PDBo:struct_conn.ptnr1_auth_asym_id>
             <PDBo:struct_conn.ptnr1_auth_comp_id>CYS</PDBo:struct_conn.ptnr1_auth_comp_id>
             <PDBo:struct_conn.ptnr1_auth_seq_id>1</PDBo:struct_conn.ptnr1_auth_seq_id>
             <PDBo:struct_conn.ptnr1_label_asym_id>A</PDBo:struct_conn.ptnr1_label_asym_id>
             <PDBo:struct_conn.ptnr1_label_atom_id>SG</PDBo:struct_conn.ptnr1_label_atom_id>
             <PDBo:struct_conn.ptnr1_label_comp_id>CYS</PDBo:struct_conn.ptnr1_label_comp_id>
-            <PDBo:struct_conn.ptnr1_label_seq_id rdf:datatype="xsd:int">1</PDBo:struct_conn.ptnr1_label_seq_id>
+            <PDBo:struct_conn.ptnr1_label_seq_id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:struct_conn.ptnr1_label_seq_id>
             <PDBo:struct_conn.ptnr1_symmetry>1_555</PDBo:struct_conn.ptnr1_symmetry>
             <PDBo:struct_conn.ptnr2_auth_asym_id>A</PDBo:struct_conn.ptnr2_auth_asym_id>
             <PDBo:struct_conn.ptnr2_auth_comp_id>CYS</PDBo:struct_conn.ptnr2_auth_comp_id>
@@ -2175,7 +2175,7 @@
             <PDBo:struct_conn.ptnr2_label_asym_id>A</PDBo:struct_conn.ptnr2_label_asym_id>
             <PDBo:struct_conn.ptnr2_label_atom_id>SG</PDBo:struct_conn.ptnr2_label_atom_id>
             <PDBo:struct_conn.ptnr2_label_comp_id>CYS</PDBo:struct_conn.ptnr2_label_comp_id>
-            <PDBo:struct_conn.ptnr2_label_seq_id rdf:datatype="xsd:int">7</PDBo:struct_conn.ptnr2_label_seq_id>
+            <PDBo:struct_conn.ptnr2_label_seq_id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">7</PDBo:struct_conn.ptnr2_label_seq_id>
             <PDBo:struct_conn.ptnr2_symmetry>1_555</PDBo:struct_conn.ptnr2_symmetry>
           </PDBo:struct_conn>
         </PDBo:has_struct_conn>
@@ -2189,14 +2189,14 @@
             </PDBo:reference_to_struct_conn_type>
             <PDBo:struct_conn.id>disulf2</PDBo:struct_conn.id>
             <PDBo:struct_conn.conn_type_id>disulf</PDBo:struct_conn.conn_type_id>
-            <PDBo:struct_conn.pdbx_dist_value rdf:datatype="xsd:decimal">2.030</PDBo:struct_conn.pdbx_dist_value>
+            <PDBo:struct_conn.pdbx_dist_value rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.030</PDBo:struct_conn.pdbx_dist_value>
             <PDBo:struct_conn.ptnr1_auth_asym_id>A</PDBo:struct_conn.ptnr1_auth_asym_id>
             <PDBo:struct_conn.ptnr1_auth_comp_id>CYS</PDBo:struct_conn.ptnr1_auth_comp_id>
             <PDBo:struct_conn.ptnr1_auth_seq_id>2</PDBo:struct_conn.ptnr1_auth_seq_id>
             <PDBo:struct_conn.ptnr1_label_asym_id>A</PDBo:struct_conn.ptnr1_label_asym_id>
             <PDBo:struct_conn.ptnr1_label_atom_id>SG</PDBo:struct_conn.ptnr1_label_atom_id>
             <PDBo:struct_conn.ptnr1_label_comp_id>CYS</PDBo:struct_conn.ptnr1_label_comp_id>
-            <PDBo:struct_conn.ptnr1_label_seq_id rdf:datatype="xsd:int">2</PDBo:struct_conn.ptnr1_label_seq_id>
+            <PDBo:struct_conn.ptnr1_label_seq_id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</PDBo:struct_conn.ptnr1_label_seq_id>
             <PDBo:struct_conn.ptnr1_symmetry>1_555</PDBo:struct_conn.ptnr1_symmetry>
             <PDBo:struct_conn.ptnr2_auth_asym_id>A</PDBo:struct_conn.ptnr2_auth_asym_id>
             <PDBo:struct_conn.ptnr2_auth_comp_id>CYS</PDBo:struct_conn.ptnr2_auth_comp_id>
@@ -2204,7 +2204,7 @@
             <PDBo:struct_conn.ptnr2_label_asym_id>A</PDBo:struct_conn.ptnr2_label_asym_id>
             <PDBo:struct_conn.ptnr2_label_atom_id>SG</PDBo:struct_conn.ptnr2_label_atom_id>
             <PDBo:struct_conn.ptnr2_label_comp_id>CYS</PDBo:struct_conn.ptnr2_label_comp_id>
-            <PDBo:struct_conn.ptnr2_label_seq_id rdf:datatype="xsd:int">15</PDBo:struct_conn.ptnr2_label_seq_id>
+            <PDBo:struct_conn.ptnr2_label_seq_id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">15</PDBo:struct_conn.ptnr2_label_seq_id>
             <PDBo:struct_conn.ptnr2_symmetry>1_555</PDBo:struct_conn.ptnr2_symmetry>
           </PDBo:struct_conn>
         </PDBo:has_struct_conn>
@@ -2268,16 +2268,16 @@
               </rdf:Description>
             </PDBo:reference_to_struct_ref>
             <PDBo:struct_ref_seq.align_id>1</PDBo:struct_ref_seq.align_id>
-            <PDBo:struct_ref_seq.db_align_beg rdf:datatype="xsd:int">1</PDBo:struct_ref_seq.db_align_beg>
-            <PDBo:struct_ref_seq.db_align_end rdf:datatype="xsd:int">15</PDBo:struct_ref_seq.db_align_end>
+            <PDBo:struct_ref_seq.db_align_beg rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:struct_ref_seq.db_align_beg>
+            <PDBo:struct_ref_seq.db_align_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">15</PDBo:struct_ref_seq.db_align_end>
             <PDBo:struct_ref_seq.pdbx_PDB_id_code>7LQS</PDBo:struct_ref_seq.pdbx_PDB_id_code>
             <PDBo:struct_ref_seq.pdbx_auth_seq_align_beg>1</PDBo:struct_ref_seq.pdbx_auth_seq_align_beg>
             <PDBo:struct_ref_seq.pdbx_auth_seq_align_end>15</PDBo:struct_ref_seq.pdbx_auth_seq_align_end>
             <PDBo:struct_ref_seq.pdbx_db_accession>7LQS</PDBo:struct_ref_seq.pdbx_db_accession>
             <PDBo:struct_ref_seq.pdbx_strand_id>A</PDBo:struct_ref_seq.pdbx_strand_id>
             <PDBo:struct_ref_seq.ref_id>1</PDBo:struct_ref_seq.ref_id>
-            <PDBo:struct_ref_seq.seq_align_beg rdf:datatype="xsd:int">1</PDBo:struct_ref_seq.seq_align_beg>
-            <PDBo:struct_ref_seq.seq_align_end rdf:datatype="xsd:int">15</PDBo:struct_ref_seq.seq_align_end>
+            <PDBo:struct_ref_seq.seq_align_beg rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:struct_ref_seq.seq_align_beg>
+            <PDBo:struct_ref_seq.seq_align_end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">15</PDBo:struct_ref_seq.seq_align_end>
           </PDBo:struct_ref_seq>
         </PDBo:has_struct_ref_seq>
       </PDBo:struct_ref_seqCategory>

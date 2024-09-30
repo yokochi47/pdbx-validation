@@ -16,7 +16,7 @@
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_family>
             <PDBo:pdbx_family_prd_audit.action_type>Create family</PDBo:pdbx_family_prd_audit.action_type>
-            <PDBo:pdbx_family_prd_audit.date rdf:datatype="xsd:date">2012-02-08</PDBo:pdbx_family_prd_audit.date>
+            <PDBo:pdbx_family_prd_audit.date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2012-02-08</PDBo:pdbx_family_prd_audit.date>
             <PDBo:pdbx_family_prd_audit.family_prd_id>FAM_000353</PDBo:pdbx_family_prd_audit.family_prd_id>
             <PDBo:pdbx_family_prd_audit.processing_site>RCSB</PDBo:pdbx_family_prd_audit.processing_site>
           </PDBo:pdbx_family_prd_audit>
@@ -30,7 +30,7 @@
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_family>
             <PDBo:pdbx_family_prd_audit.action_type>Initial release</PDBo:pdbx_family_prd_audit.action_type>
-            <PDBo:pdbx_family_prd_audit.date rdf:datatype="xsd:date">2013-10-16</PDBo:pdbx_family_prd_audit.date>
+            <PDBo:pdbx_family_prd_audit.date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-10-16</PDBo:pdbx_family_prd_audit.date>
             <PDBo:pdbx_family_prd_audit.family_prd_id>FAM_000353</PDBo:pdbx_family_prd_audit.family_prd_id>
             <PDBo:pdbx_family_prd_audit.processing_site>RCSB</PDBo:pdbx_family_prd_audit.processing_site>
           </PDBo:pdbx_family_prd_audit>
@@ -43,7 +43,7 @@
           <PDBo:pdbx_reference_molecule_annotation rdf:about="http://rdf.wwpdb.org/fam/FAM_000353/pdbx_reference_molecule_annotation/FAM_000353,1">
             <PDBo:of_datablock rdf:resource="http://rdf.wwpdb.org/fam/FAM_000353"/>
             <PDBo:pdbx_reference_molecule_annotation.family_prd_id>FAM_000353</PDBo:pdbx_reference_molecule_annotation.family_prd_id>
-            <PDBo:pdbx_reference_molecule_annotation.ordinal rdf:datatype="xsd:int">1</PDBo:pdbx_reference_molecule_annotation.ordinal>
+            <PDBo:pdbx_reference_molecule_annotation.ordinal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_reference_molecule_annotation.ordinal>
             <PDBo:pdbx_reference_molecule_annotation.prd_id>PRD_000793</PDBo:pdbx_reference_molecule_annotation.prd_id>
             <PDBo:pdbx_reference_molecule_annotation.source>PMID:22645124</PDBo:pdbx_reference_molecule_annotation.source>
             <PDBo:pdbx_reference_molecule_annotation.text>inhibitor of Streptopain, EC: 3.4.22.10</PDBo:pdbx_reference_molecule_annotation.text>
@@ -77,10 +77,10 @@
               </rdf:Description>
             </PDBo:reference_to_pdbx_reference_molecule_list>
             <PDBo:pdbx_reference_molecule_features.family_prd_id>FAM_000353</PDBo:pdbx_reference_molecule_features.family_prd_id>
-            <PDBo:pdbx_reference_molecule_features.ordinal rdf:datatype="xsd:int">1</PDBo:pdbx_reference_molecule_features.ordinal>
+            <PDBo:pdbx_reference_molecule_features.ordinal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_reference_molecule_features.ordinal>
             <PDBo:pdbx_reference_molecule_features.prd_id>PRD_000793</PDBo:pdbx_reference_molecule_features.prd_id>
             <PDBo:pdbx_reference_molecule_features.source>PubChem</PDBo:pdbx_reference_molecule_features.source>
-            <PDBo:pdbx_reference_molecule_features.source_ordinal rdf:datatype="xsd:int">1</PDBo:pdbx_reference_molecule_features.source_ordinal>
+            <PDBo:pdbx_reference_molecule_features.source_ordinal rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</PDBo:pdbx_reference_molecule_features.source_ordinal>
             <PDBo:pdbx_reference_molecule_features.type>External_Reference_ID</PDBo:pdbx_reference_molecule_features.type>
             <PDBo:pdbx_reference_molecule_features.value>70702291</PDBo:pdbx_reference_molecule_features.value>
             <PDBo:link_to_pubchem_substance rdf:resource="http://rdf.ncbi.nlm.nih.gov/pubchem/substance/SID70702291" rdfs:label="pubchem.substance:70702291"/>
