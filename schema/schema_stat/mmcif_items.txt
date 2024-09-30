@@ -2969,6 +2969,7 @@ pdbx_domain_range.end_label_alt_id
 pdbx_domain_range.end_label_asym_id
 pdbx_domain_range.end_label_comp_id
 pdbx_domain_range.end_label_seq_id
+pdbx_domain_range.id
 pdbx_drug_info.id
 pdbx_drug_info.name
 pdbx_drug_info.num_of_whole_molecule

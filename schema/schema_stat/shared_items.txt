@@ -901,6 +901,7 @@ pdbx_domain_range.end_label_alt_id
 pdbx_domain_range.end_label_asym_id
 pdbx_domain_range.end_label_comp_id
 pdbx_domain_range.end_label_seq_id
+pdbx_domain_range.id
 pdbx_entity_assembly.biol_id
 pdbx_entity_assembly.entity_id
 pdbx_entity_assembly.id

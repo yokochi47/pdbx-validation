@@ -21,7 +21,7 @@
 --  map xsd date type to: sql date type
 --
 -- Statistics of schema:
---  Generated 283 tables (3734 fields), 0 views (0 fields), 0 attr groups, 0 model groups in total
+--  Generated 283 tables (3735 fields), 0 views (0 fields), 0 attr groups, 0 model groups in total
 --   Unnecessary tables by inlining simple content as a primitive data type:
 --    schema location: pdbx-validation-v4.xsd
 --      improper_torsion_angle_rms_dev_error, mean_guiner_radius, angle_value, bond_angle_rms_dev, "B_iso", diff_density_max_esd, "L22", "B_calc", distance_rms_dev, "B_calc_au", pdbx_phase_calc_part_solvent, improper_torsion_angle_rms_dev, "S22_esd", atom_deviation, "S31", "A_meas", "pdbx_F_calc_part_solvent", upper_limit, psi, "L23", prot_cis, "L11", "L23_esd", "T23_esd", "F_meas_au", "sigmaI", omega, "S32", "Luzzati_sigma_a_free", "F_squared_calc", "L12", distance_rms_dev_medoid, pdbx_solvent_shrinkage_radii, current, chi1, pdbx_rotation_angle, chi2, chi3, chi4, chi5, "S21", "S33", scan_time_backgd, maximum_upper_distance_constraint_violation, pdbx_scan_angle, "L13", "A_calc", "T12_esd", "S12_esd", "Luzzati_d_res_low_free", value, "B_meas", "S22", value_esd, "Cartn_y_esd", pdbx_solvent_vdw_probe_radii, "S13_esd", "B_meas_au", origin_y, origin_z, origin_x, "Cartn_z_esd", peptide_planarity_rms_dev, "P", phi, pdbx_collection_time_total, dihedral_angle_value, "B_iso_Wilson_estimate", zeta, maximum_lower_distance_constraint_violation, energyfilter_lower, "S11", "S23", nu1, "F_meas_sigma", nu2, nu3, "L12_esd", "F_calc_au", diff_density_min, nu4, nu0, "T33", tilt_angle_min, phase_meas, nominal_defocus_min, "S32_esd", "S12", calibrated_defocus_min, rise_per_n_subunits, "aniso_B33", "Luzzati_d_res_low_obs", pdbx_solvent_ion_probe_radii, "Luzzati_coordinate_error_free", "T22", lower_limit, "Luzzati_coordinate_error_obs", "S13", "T11_esd", "L11_esd", "aniso_B22", "S23_esd", concentration_range, "T23", max_mean_cross_sectional_radii_gyration_esd, "T11", clash_magnitude, angle_target_value, dihedral_angles_rms_dev, min_mean_cross_sectional_radii_gyration_esd, "L22_esd", neighbor_ligand_distance, tau0, "S21_esd", tau1, "aniso_B11", "aniso_B23", average_distance_constraint_violation, "B_iso_esd", maximum_distance_constraint_violation, "T12", max_mean_cross_sectional_radii_gyration, "A_calc_au", "S33_esd", "pdbx_F_calc_with_solvent", phase_calc, bond_angle_rms_dev_error, nominal_defocus_max, "aniso_B12", "B_iso_max", bond_deviation, angle_phi, min_mean_cross_sectional_radii_gyration, "T13", delta, distance_rms_dev_error, "B_iso_mean", energyfilter_upper, covalent_bond_rms_dev, "F_squared_meas", epsilon, "aniso_B13", angle_theta, "F_meas_sigma_au", mean_guiner_radius_esd, angle_deviation, dihedral_angles_rms_dev_error, "T22_esd", peptide_planarity_rms_dev_error, "pdbx_res_netI_over_sigmaI_2", "Luzzati_sigma_a_obs", "Cartn_z", detector_distance, "S31_esd", beta, "L13_esd", "F_squared_sigma", voltage, angle_kappa, ambient_pressure_esd, "T13_esd", gamma, rotation_per_n_subunits, "Cartn_y", temp, covalent_bond_rms_dev_error, rmsd, "S11_esd", temperature, "A_meas_au", alpha, "Cartn_x_esd", "Cartn_x", "F_calc", power, diff_density_min_esd, ambient_temp_esd, neighbor_macromolecule_distance, "I", diff_density_max, angle_psi, "L33_esd", dihedral_angle_target_value, taum, angle_omega, pdbx_dist_value, scan_rate, "T33_esd", tau2, tau3, tau4, "B_iso_min", pdbx_phase_calc_with_solvent, tilt_angle_max, "F_meas", angle_chi, diff_density_rms_esd, average_torsion_angle_constraint_violation, maximum_torsion_angle_constraint_violation, "L33", diff_density_rms, dist, improper_torsion_angle, "pdbx_res_netI_over_av_sigmaI_2"
@@ -36,7 +36,7 @@
 --   User keys:
 --    235 document keys, 0 serial keys, 0 xpath keys
 --   Contents:
---    496 attributes (43 in-place document keys), 3003 elements (5 in-place document keys), 0 simple contents (0 in-place document keys, 0 as attribute, 0 as conditional attribute)
+--    488 attributes (43 in-place document keys), 3012 elements (5 in-place document keys), 0 simple contents (0 in-place document keys, 0 as attribute, 0 as conditional attribute)
 --   Wild cards:
 --    0 any elements, 0 any attributes
 --   Constraints:
@@ -44,8 +44,8 @@
 --
 
 --
--- VRPT PDBML Schema v4.396
--- VRPT PDBML Schema translated from wwPDB Validation Information Dictionary v4.396, which is backward compatible with the PDBx/mmCIF Dictionary v5.370: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
+-- VRPT PDBML Schema v4.397
+-- VRPT PDBML Schema translated from wwPDB Validation Information Dictionary v4.397, which is backward compatible with the PDBx/mmCIF Dictionary v5.370: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
 -- URI-reference = http://pdbml.pdb.org/schema/pdbx-validation-v4.xsd
 --
 
@@ -3614,7 +3614,7 @@ CREATE TABLE pdbx_distant_solvent_atoms (
 
 --
 -- (quoted from pdbx_domain_rangeType)
--- Data items in the PDBX_DOMAIN_RANGE category identify the beginning and ending points of polypeptide chain segments that form all or part of a domain. Example 1 - <VRPTx:pdbx_domain_rangeCategory> <VRPTx:pdbx_domain_range beg_label_alt_id="A" beg_label_asym_id="A" beg_label_comp_id="PRO" beg_label_seq_id="1" domain_id="d1" end_label_alt_id="A" end_label_asym_id="A" end_label_comp_id="GLY" end_label_seq_id="29"></VRPTx:pdbx_domain_range> <VRPTx:pdbx_domain_range beg_label_alt_id="A" beg_label_asym_id="B" beg_label_comp_id="PRO" beg_label_seq_id="31" domain_id="d1" end_label_alt_id="A" end_label_asym_id="B" end_label_comp_id="GLY" end_label_seq_id="59"></VRPTx:pdbx_domain_range> <VRPTx:pdbx_domain_range beg_label_alt_id="A" beg_label_asym_id="C" beg_label_comp_id="PRO" beg_label_seq_id="61" domain_id="d1" end_label_alt_id="A" end_label_asym_id="B" end_label_comp_id="GLY" end_label_seq_id="89"></VRPTx:pdbx_domain_range> <VRPTx:pdbx_domain_range beg_label_alt_id="A" beg_label_asym_id="D" beg_label_comp_id="PRO" beg_label_seq_id="91" domain_id="d2" end_label_alt_id="A" end_label_asym_id="D" end_label_comp_id="GLY" end_label_seq_id="119"></VRPTx:pdbx_domain_range> <VRPTx:pdbx_domain_range beg_label_alt_id="A" beg_label_asym_id="E" beg_label_comp_id="PRO" beg_label_seq_id="121" domain_id="d2" end_label_alt_id="A" end_label_asym_id="E" end_label_comp_id="GLY" end_label_seq_id="149"></VRPTx:pdbx_domain_range> <VRPTx:pdbx_domain_range beg_label_alt_id="A" beg_label_asym_id="F" beg_label_comp_id="PRO" beg_label_seq_id="151" domain_id="d2" end_label_alt_id="A" end_label_asym_id="F" end_label_comp_id="GLY" end_label_seq_id="179"></VRPTx:pdbx_domain_range> </VRPTx:pdbx_domain_rangeCategory>
+-- Data items in the PDBX_DOMAIN_RANGE category identify the beginning and ending points of polypeptide chain segments that form all or part of a domain. Example 1 - <VRPTx:pdbx_domain_rangeCategory> <VRPTx:pdbx_domain_range id="1"> <VRPTx:beg_label_alt_id>A</VRPTx:beg_label_alt_id> <VRPTx:beg_label_asym_id>A</VRPTx:beg_label_asym_id> <VRPTx:beg_label_comp_id>PRO</VRPTx:beg_label_comp_id> <VRPTx:beg_label_seq_id>1</VRPTx:beg_label_seq_id> <VRPTx:domain_id>d1</VRPTx:domain_id> <VRPTx:end_label_alt_id>A</VRPTx:end_label_alt_id> <VRPTx:end_label_asym_id>A</VRPTx:end_label_asym_id> <VRPTx:end_label_comp_id>GLY</VRPTx:end_label_comp_id> <VRPTx:end_label_seq_id>29</VRPTx:end_label_seq_id> </VRPTx:pdbx_domain_range> <VRPTx:pdbx_domain_range id="2"> <VRPTx:beg_label_alt_id>A</VRPTx:beg_label_alt_id> <VRPTx:beg_label_asym_id>B</VRPTx:beg_label_asym_id> <VRPTx:beg_label_comp_id>PRO</VRPTx:beg_label_comp_id> <VRPTx:beg_label_seq_id>31</VRPTx:beg_label_seq_id> <VRPTx:domain_id>d1</VRPTx:domain_id> <VRPTx:end_label_alt_id>A</VRPTx:end_label_alt_id> <VRPTx:end_label_asym_id>B</VRPTx:end_label_asym_id> <VRPTx:end_label_comp_id>GLY</VRPTx:end_label_comp_id> <VRPTx:end_label_seq_id>59</VRPTx:end_label_seq_id> </VRPTx:pdbx_domain_range> <VRPTx:pdbx_domain_range id="3"> <VRPTx:beg_label_alt_id>A</VRPTx:beg_label_alt_id> <VRPTx:beg_label_asym_id>C</VRPTx:beg_label_asym_id> <VRPTx:beg_label_comp_id>PRO</VRPTx:beg_label_comp_id> <VRPTx:beg_label_seq_id>61</VRPTx:beg_label_seq_id> <VRPTx:domain_id>d1</VRPTx:domain_id> <VRPTx:end_label_alt_id>A</VRPTx:end_label_alt_id> <VRPTx:end_label_asym_id>B</VRPTx:end_label_asym_id> <VRPTx:end_label_comp_id>GLY</VRPTx:end_label_comp_id> <VRPTx:end_label_seq_id>89</VRPTx:end_label_seq_id> </VRPTx:pdbx_domain_range> <VRPTx:pdbx_domain_range id="4"> <VRPTx:beg_label_alt_id>A</VRPTx:beg_label_alt_id> <VRPTx:beg_label_asym_id>D</VRPTx:beg_label_asym_id> <VRPTx:beg_label_comp_id>PRO</VRPTx:beg_label_comp_id> <VRPTx:beg_label_seq_id>91</VRPTx:beg_label_seq_id> <VRPTx:domain_id>d2</VRPTx:domain_id> <VRPTx:end_label_alt_id>A</VRPTx:end_label_alt_id> <VRPTx:end_label_asym_id>D</VRPTx:end_label_asym_id> <VRPTx:end_label_comp_id>GLY</VRPTx:end_label_comp_id> <VRPTx:end_label_seq_id>119</VRPTx:end_label_seq_id> </VRPTx:pdbx_domain_range> <VRPTx:pdbx_domain_range id="5"> <VRPTx:beg_label_alt_id>A</VRPTx:beg_label_alt_id> <VRPTx:beg_label_asym_id>E</VRPTx:beg_label_asym_id> <VRPTx:beg_label_comp_id>PRO</VRPTx:beg_label_comp_id> <VRPTx:beg_label_seq_id>121</VRPTx:beg_label_seq_id> <VRPTx:domain_id>d2</VRPTx:domain_id> <VRPTx:end_label_alt_id>A</VRPTx:end_label_alt_id> <VRPTx:end_label_asym_id>E</VRPTx:end_label_asym_id> <VRPTx:end_label_comp_id>GLY</VRPTx:end_label_comp_id> <VRPTx:end_label_seq_id>149</VRPTx:end_label_seq_id> </VRPTx:pdbx_domain_range> <VRPTx:pdbx_domain_range id="6"> <VRPTx:beg_label_alt_id>A</VRPTx:beg_label_alt_id> <VRPTx:beg_label_asym_id>F</VRPTx:beg_label_asym_id> <VRPTx:beg_label_comp_id>PRO</VRPTx:beg_label_comp_id> <VRPTx:beg_label_seq_id>151</VRPTx:beg_label_seq_id> <VRPTx:domain_id>d2</VRPTx:domain_id> <VRPTx:end_label_alt_id>A</VRPTx:end_label_alt_id> <VRPTx:end_label_asym_id>F</VRPTx:end_label_asym_id> <VRPTx:end_label_comp_id>GLY</VRPTx:end_label_comp_id> <VRPTx:end_label_seq_id>179</VRPTx:end_label_seq_id> </VRPTx:pdbx_domain_range> </VRPTx:pdbx_domain_rangeCategory>
 -- URI-reference = http://pdbml.pdb.org/dictionaries/mmcif_pdbx_v50.dic/Categories/pdbx_domain_range.html
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v4.xsd (VRPTx), schema location: pdbx-validation-v4.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
@@ -3625,27 +3625,20 @@ CREATE TABLE pdbx_domain_range (
 	beg_auth_asym_id TEXT ,
 	beg_auth_comp_id TEXT ,
 	beg_auth_seq_id TEXT ,
+	beg_label_alt_id TEXT ,
+	beg_label_asym_id TEXT ,
+	beg_label_comp_id TEXT ,
+	beg_label_seq_id INTEGER ,
+	domain_id TEXT ,
 	end_auth_asym_id TEXT ,
 	end_auth_comp_id TEXT ,
 	end_auth_seq_id TEXT ,
+	end_label_alt_id TEXT ,
+	end_label_asym_id TEXT ,
+	end_label_comp_id TEXT ,
+	end_label_seq_id INTEGER ,
 -- ATTRIBUTE
-	beg_label_alt_id TEXT NOT NULL ,
--- ATTRIBUTE
-	beg_label_asym_id TEXT NOT NULL ,
--- ATTRIBUTE
-	beg_label_comp_id TEXT NOT NULL ,
--- ATTRIBUTE
-	beg_label_seq_id INTEGER NOT NULL ,
--- ATTRIBUTE
-	domain_id TEXT NOT NULL ,
--- ATTRIBUTE
-	end_label_alt_id TEXT NOT NULL ,
--- ATTRIBUTE
-	end_label_asym_id TEXT NOT NULL ,
--- ATTRIBUTE
-	end_label_comp_id TEXT NOT NULL ,
--- ATTRIBUTE
-	end_label_seq_id INTEGER NOT NULL
+	id TEXT NOT NULL
 );
 
 --
@@ -9108,7 +9101,7 @@ CREATE TABLE symmetry_equiv (
 --ALTER TABLE pdbx_domain ADD CONSTRAINT UNQ_pdbx_domain UNIQUE ( entry_id, id );
 
 -- (derived from xsd:key[@name='pdbx_domain_rangeKey_0'])
---ALTER TABLE pdbx_domain_range ADD CONSTRAINT UNQ_pdbx_domain_range UNIQUE ( entry_id, beg_label_alt_id, beg_label_asym_id, beg_label_comp_id, beg_label_seq_id, domain_id, end_label_alt_id, end_label_asym_id, end_label_comp_id, end_label_seq_id );
+--ALTER TABLE pdbx_domain_range ADD CONSTRAINT UNQ_pdbx_domain_range UNIQUE ( entry_id, id );
 
 -- (derived from xsd:key[@name='pdbx_em_atom_inclusionKey_0'])
 --ALTER TABLE pdbx_em_atom_inclusion ADD CONSTRAINT UNQ_pdbx_em_atom_inclusion UNIQUE ( entry_id, id );

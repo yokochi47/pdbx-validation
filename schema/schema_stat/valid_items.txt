@@ -960,6 +960,7 @@ pdbx_domain_range.end_label_alt_id
 pdbx_domain_range.end_label_asym_id
 pdbx_domain_range.end_label_comp_id
 pdbx_domain_range.end_label_seq_id
+pdbx_domain_range.id
 pdbx_em_atom_inclusion.atom_inclusion_title
 pdbx_em_atom_inclusion.atom_type
 pdbx_em_atom_inclusion.contour_level_title
