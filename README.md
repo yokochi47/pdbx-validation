@@ -213,7 +213,7 @@ File path | Document
 	- Update wwPDB Validation Information Dictionary to 4.396.
 	- Add supports for '_pdbx_related_exp_data_set' categories including RDF links for DOI of experimental data.
 	- Avoid to use QNames in attribute values in RDF archives.
-	- Support for wwpdb_validation_v6.03.xsd (density-fitnes's EDIAm and OPIA scores).
+	- Support for wwpdb_validation_v6.03.xsd (density-fitness's EDIAm and OPIA scores).
 
 - **Sep 27, 2024**: Release v4.4.45
 	- Update wwPDB Validation Information Dictionary to 4.395.

@@ -1,7 +1,7 @@
 ###########################################################################
 #
 # File:  mmcif_pdbx_validation-v4.dic
-# Date:  Mon Sep 30 17:02:57 JST 2024
+# Date:  Mon Sep 30 17:13:07 JST 2024
 # Created from:
 #        mmcif_pdbx_v50.dic   - PDB Exchange Data Dictionary (V5.397)
 #        http://wwpdb.org/validation/schema/wwpdb_validation_v6.03.xsd
@@ -1351,7 +1351,7 @@ data_mmcif_pdbx_validation.dic
 >   + PTM extension enumeration list update # not mapped
     + Add support for _pdbx_related_exp_data_set category # not mapped -> mapped
     + Relax range of Q-score of _pdbx_em_validate_map_model.Q_score and _pdbx_em_validate_map_model_entity.average_Q_score
-    + Support wwPDB validation report XML Schema v6.03 (density-fitnes's EDIAm and OPIA scores)
+    + Support wwPDB validation report XML Schema v6.03 (density-fitness's EDIAm and OPIA scores)
 ;
   4.397   2024-09-30
 ;
