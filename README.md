@@ -21,7 +21,7 @@ File path | Document
 [schema/mmcif_ddl.dic](https://github.com/yokochi47/pdbx-validation/blob/master/schema/mmcif_ddl_v2.4.1.dic) | extended mmCIF DDL Core Dictionary (dubbed as v2.4.2)
 [resource/mmcif_pdbx_v50.dic](https://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic) | PDB Exchange Data Dictionary (v5.397)
 [resource/pdbx-v50.xsd](https://github.com/yokochi47/pdbx-validation/blob/master/resource/pdbx-v50.xsd) | PDBML Schema (v5.397)
-[resource/pdbx-v50.owl](https://github.com/yokochi47/pdbx-validation/blob/master/resource/pdbx-v50.owl) | PDBx ontology, ontology for PDB/RDF (v5.397)
+[resource/pdbx-v50.owl](https://github.com/yokochi47/pdbx-validation/blob/master/resource/pdbx-v50.owl) | PDB/OWL, ontology for PDB/RDF (v5.397)
 [resource/wwpdb_validation_v6.03.xsd](https://github.com/yokochi47/pdbx-validation/blob/master/resource/wwpdb_validation_v6.03.xsd) | XML Schema for wwPDB validation reports (v6.03, rev 2024-08-29)
 [scripts](https://github.com/yokochi47/pdbx-validation/blob/master/scripts) | a directory contains scripts invoked by the 'run_vrpt_all.sh' script
 [virtuoso_scripts](https://github.com/yokochi47/pdbx-validation/blob/master/virtuoso_scripts) | a directory contains scripts for uploading VRPT/RDF to local SPARQL endpoint
@@ -202,7 +202,7 @@ File path | Document
 - [**PDBML2CIF**](https://sw-tools.rcsb.org/apps/PDBML2CIF/index.html), optionally, used to generate mmCIF version of wwPDB validation reports.
 - [**Raptor RDF Syntax Library**](https://librdf.org/raptor/), optionally, used to validate RDF syntax.
 - [**libxml2**](http://xmlsoft.org/), optionally, used to post XML beutification (xmllint).
-- [**ROBOT is an OBO Tool (robot)**], used to merge PDB/OWL and VRPT/OWL.
+- [**ROBOT is an OBO Tool (robot)**](http://robot.obolibrary.org/), used to combine PDB/OWL and VRPT/OWL.
 - [**PostgreSQL**](https://www.postgresql.org), optionally used to import XML contents to relational database.
 - [**Virtuoso**](https://www.openlinksw.com/wiki/main/Main), oprionally used as SPARQL endpoint of VRPT/RDF.
 
@@ -211,11 +211,11 @@ File path | Document
 - **Oct 3, 2024**: Release v4.4.47
 	- Update wwPDB Validation Information Dictionary to 4.397.
 	- Create [a combined ontology for PDB core archive and wwPDB validation reports](https://github.com/yokochi47/pdbx-validation/blob/master/schema/pdbx-with-vrptx-v50.owl)
-	- Change namespace URI of the ontology.
+	- New namespace URI of the ontology.
 		- xmlns:PDBo="http://rdf.wwpdb.org/schema/pdbx-with-vrptx-v50.owl#"
 	- Replaced namespace URIs:
-		- xmlns:PDBo="http://rdf.wwpdb.org/schema/pdbx-v50.owl#"
-		- xmlns:VRPTo="http://rdf.wwpdb.org/schema/pdbx-validation-v4.owl#"
+		- xmlns:PDBo="http://rdf.wwpdb.org/schema/pdbx-v50.owl#", which acts as the master ontology for PDB Core Archive
+		- xmlns:VRPTo="http://rdf.wwpdb.org/schema/pdbx-validation-v4.owl#", which acts as the master ontology for wwPDB validation reports
 
 - **Sep 30, 2024**: Release v4.4.46
 	- Update wwPDB Validation Information Dictionary to 4.396.
@@ -749,7 +749,7 @@ File path | Document
 	- Add validate_all_gz.sh script to perform XML Schema validation of compressed VRPT PDBML.
 
 - **Feb 15, 2018**: Release v0.0.9
-	- Add ontology relationship between VRPT/OWL and PDBx ontology.
+	- Add ontology relationship between VRPT/OWL and PDB/OWL.
 	- Add ontology relationship between VRPT/OWL and BMRB/OWL.
 	- Update ontology mapping between PDBx/mmCIF and NMR-STAR data items.
 	- PDB mirror server is selectable from rsync.rcsb.org, ftp.pdbj.org, rsync.ebi.ac.uk based on network response.
