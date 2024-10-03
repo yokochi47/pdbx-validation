@@ -22,7 +22,9 @@ SAXON=Saxon-HE
 SAXON_VER=10.9
 
 XSD2PGSCHEMA=xsd2pgschema
-XSD2PGSCHEMA_VER=4.4.7
+XSD2PGSCHEMA_VER=5.3.9
+
+ROBOT_VER=1.9.6
 
 mkdir -p $EXTLIBS
 
@@ -49,3 +51,4 @@ mv target/$XSD2PGSCHEMA-$XSD2PGSCHEMA_VER-jar-with-dependencies.jar ../$XSD2PGSC
 
 rm -rf ../xsd2pgschema-code
 REMARK
+wget https://github.com/ontodev/robot/releases/download/v$ROBOT_VER/robot.jar

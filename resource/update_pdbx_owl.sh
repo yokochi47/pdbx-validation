@@ -13,6 +13,9 @@ PDBML_XSD=pdbx-v50.xsd
 PDBX2OWL_XSL=../stylesheet/pdbx2owl.xsl
 PDBX_OWL=pdbx-v50.owl
 
+PDBX2OWL_PREMERGE_XSL=../stylesheet/pdbx2owl_premerge.xsl
+PDBX_PREMERGE_OWL=pdbx-v50_premerge.owl
+
 PDBX2PDBML2RDF_XSL=../stylesheet/pdbx2pdbml2rdf.xsl
 PDBML2RDF_XSL=../stylesheet/pdbml2rdf.xsl
 
@@ -28,6 +31,10 @@ FAM2RDF_XSL=../stylesheet/fam2rdf.xsl
 java -jar $SAXON -s:$PDBML_XSD -xsl:$PDBX2OWL_XSL -o:$PDBX_OWL || ( echo aborted. && exit 1 )
 
 echo Generated: $PDBX_OWL
+
+java -jar $SAXON -s:$PDBML_XSD -xsl:$PDBX2OWL_PREMERGE_XSL -o:$PDBX_PREMERGE_OWL || ( echo aborted. && exit 1 )
+
+echo Generated: $PDBX_PREMERGE_OWL
 
 java -jar $SAXON -s:$PDBML_XSD -xsl:$PDBX2PDBML2RDF_XSL -o:$PDBML2RDF_XSL || ( echo $0 aborted. && exit 1 )
 

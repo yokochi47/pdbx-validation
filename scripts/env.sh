@@ -8,6 +8,7 @@ fi
 
 SAXON=extlibs/saxon-he.jar
 XSD2PGSCHEMA=extlibs/xsd2pgschema.jar
+ROBOT=extlibs/robot.jar
 
 PDBML_NOATOM=XML-noatom
 VALID_REPORT=validation_reports
@@ -28,12 +29,14 @@ MMCIF_VALID_ALT=mmcif-validation-alt
 
 PDBML_XSD=resource/pdbx-v50.xsd
 PDBML_SQL=resource/pdbx-v50.sql
+PDBML_OWL=resource/pdbx-v50.owl
 
 WWPDB_VALIDATION_XSD=resource/wwpdb_validation_v6.03.xsd
 WWPDB_VALIDATION_SQL=resource/wwpdb_validation_v6.03.sql
 
 PDBX_VALIDATION_XSD=schema/pdbx-validation-v4.xsd
 PDBX_VALIDATION_SQL=schema/pdbx-validation-v4.sql
+PDBX_VALIDATION_OWL=schema/pdbx-validation-v4.owl
 
 XSD2PRIMITIVE_TYPE_MAPPING_XSL=stylesheet/xsd2primitive_type_mapping.xsl
 PDBX_PRIMITIVE_TYPE_MAPPING_XML=stylesheet/pdbx_primitive_type_mapping.xml

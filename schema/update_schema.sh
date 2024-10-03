@@ -136,6 +136,8 @@ java -jar $SAXON -s:$DIC_PREFIX-v$DIC_MAJOR_VER.xsd -xsl:../$XSD2MERGE_PDBML_INF
 
 echo Generated: ../$MERGE_PDBML_INFO_XSL
 
+./merge_pdbx_vrptx_owl.sh
+
 ./calc_schema_stat.sh > schema_stat.txt
 
 cat schema_stat.txt

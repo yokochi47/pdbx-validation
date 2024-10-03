@@ -23,7 +23,7 @@
   xmlns:dc="http://purl.org/dc/elements/1.1/"
   xmlns:dcterms="http://purl.org/dc/terms/"
   xmlns:PDBx="http://pdbml.pdb.org/schema/pdbx-v50.xsd"
-  xmlns:PDBo="http://rdf.wwpdb.org/schema/pdbx-v50.owl#"
+  xmlns:PDBo="http://rdf.wwpdb.org/schema/pdbx-with-vrptx-v50.owl#"
   xmlns:ext="http://exslt.org/common" exclude-result-prefixes="PDBx ext"&gt;
 </xsl2:text>
     <xsl2:apply-templates/>
