@@ -32,23 +32,20 @@ mvn dependency:copy -Dartifact=net.sf.saxon:$SAXON:$SAXON_VER
 mv \$\{project.basedir\}/target/dependency/$SAXON-$SAXON_VER.jar $EXTLIBS/saxon-he.jar
 rm -rf \$\{project.basedir\}
 
-wget https://repo1.maven.org/maven2/net/sf/xsd2pgschema/$XSD2PGSCHEMA/$XSD2PGSCHEMA_VER/$XSD2PGSCHEMA-$XSD2PGSCHEMA_VER-jar-with-dependencies.jar -O $EXTLIBS/xsd2pgschema.jar
+#wget https://repo1.maven.org/maven2/net/sf/xsd2pgschema/$XSD2PGSCHEMA/$XSD2PGSCHEMA_VER/$XSD2PGSCHEMA-$XSD2PGSCHEMA_VER-jar-with-dependencies.jar -O $EXTLIBS/xsd2pgschema.jar
+
 <<REMARK
 mvn dependency:copy -Dartifact=net.sf.xsd2pgschema:$XSD2PGSCHEMA:$XSD2PGSCHEMA_VER
 mv \$\{project.basedir\}/target/dependency/$XSD2PGSCHEMA-$XSD2PGSCHEMA_VER.jar $EXTLIBS/xsd2pgschema.jar
 rm -rf \$\{project.basedir\}
-
-
-cd $EXTLIBS
-
-git clone git://git.code.sf.net/p/xsd2pgschema/code xsd2pgschema-code
-
-cd xsd2pgschema-code
-
-mvn package
-
-mv target/$XSD2PGSCHEMA-$XSD2PGSCHEMA_VER-jar-with-dependencies.jar ../$XSD2PGSCHEMA.jar
-
-rm -rf ../xsd2pgschema-code
 REMARK
+
+( cd $EXTLIBS
+  git clone git://git.code.sf.net/p/xsd2pgschema/code xsd2pgschema-code
+  cd xsd2pgschema-code
+  git checkout jdk14
+  mvn package
+  mv target/$XSD2PGSCHEMA-$XSD2PGSCHEMA_VER-jar-with-dependencies.jar ../$XSD2PGSCHEMA.jar
+  rm -rf ../xsd2pgschema-code )
+
 wget https://github.com/ontodev/robot/releases/download/v$ROBOT_VER/robot.jar

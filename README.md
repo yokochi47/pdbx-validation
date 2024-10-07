@@ -211,10 +211,10 @@ File path | Document
 - **Oct 3, 2024**: Release v4.4.47
 	- Update wwPDB Validation Information Dictionary to 4.397.
 	- Create [a combined ontology for PDB core archive and wwPDB validation reports](https://github.com/yokochi47/pdbx-validation/blob/master/schema/pdbx-with-vrptx-v50.owl)
-	- New namespace URI of the ontology.
+	- New namespace URI of the combined ontology for PDB/RDF, chem_comp/RDF, PRD/RDF, FAM/RDF, and VRPT/RDF.
 		- xmlns:PDBo="http://rdf.wwpdb.org/schema/pdbx-with-vrptx-v50.owl#"
 	- Replaced namespace URIs:
-		- xmlns:PDBo="http://rdf.wwpdb.org/schema/pdbx-v50.owl#", which acts as the master ontology for PDB Core Archive
+		- xmlns:PDBo="http://rdf.wwpdb.org/schema/pdbx-v50.owl#", which acts as the master ontology for PDB core archive
 		- xmlns:VRPTo="http://rdf.wwpdb.org/schema/pdbx-validation-v4.owl#", which acts as the master ontology for wwPDB validation reports
 
 - **Sep 30, 2024**: Release v4.4.46
