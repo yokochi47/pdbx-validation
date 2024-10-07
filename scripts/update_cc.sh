@@ -84,17 +84,19 @@ if [ $weekday -ge 1 ] && [ $weekday -le 4 ] ; then
    else
     rm -f $RDF_CC/${cc_id:0:1}/$cc_id.rdf.gz
    fi
+   rm -f $RDF_CC/${cc_id: -1}/$cc_id.rdf.gz
   done < $components_cif_del
  fi
 
  rm -f $components_cif_list
  while read cc_id
  do
-  if [ ${#cc_id} -gt 3 ] ; then
-   echo ftp://$SRC_DIR/${cc_id:2}/${cc_id}/${cc_id}.cif >> $components_cif_list
-  else
-   echo ftp://$SRC_DIR/${cc_id:0:1}/${cc_id}/${cc_id}.cif >> $components_cif_list
-  fi
+  #if [ ${#cc_id} -gt 3 ] ; then
+  # echo ftp://$SRC_DIR/${cc_id:2}/${cc_id}/${cc_id}.cif >> $components_cif_list
+  #else
+  # echo ftp://$SRC_DIR/${cc_id:0:1}/${cc_id}/${cc_id}.cif >> $components_cif_list
+  #fi
+  echo ftp://$SRC_DIR/${cc_id: -1}/${cc_id}/${cc_id}.cif >> $components_cif_list
  done < $components_cif_new
  if [ -e $components_cif_list ] ; then
   aria2c -i $components_cif_list -j $MAXPROCS -d $SRC_DIR --allow-overwrite=true --auto-file-renaming=false
@@ -160,6 +162,7 @@ if [ -d $RDF_CC ] ; then
   else
    rm -f $RDF_CC/${cc_id:0:1}/$cc_id.rdf.gz
   fi
+  rm -f $RDF_CC/${cc_id: -1}/$cc_id.rdf.gz
  done < $chk_sum_log
 fi
 
