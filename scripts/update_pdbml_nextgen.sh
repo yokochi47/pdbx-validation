@@ -117,7 +117,7 @@ fi
 
 if ( [ $weekday -ge 1 ] && [ $weekday -le 4 ] ) || [ ! -d $SRC_DIR ] ; then
 
- rsync -avz --delete $RSYNC_PORT $PDB_MIRROR::$RSYNC_BASE_DIR/ $SRC_DIR
+ rsync -av --delete $RSYNC_PORT $PDB_MIRROR::$RSYNC_BASE_DIR/ $SRC_DIR
 
  MD5_DIR=chk_sum_pdbml_noatom_nextgen
 
