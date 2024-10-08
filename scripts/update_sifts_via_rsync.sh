@@ -2,6 +2,8 @@
 
 source ./scripts/env.sh
 
+set -e
+
 MTIME=
 FULL=false
 
@@ -36,7 +38,7 @@ fi
 
 if ( [ $weekday -ge 1 ] && [ $weekday -le 4 ] ) || [ ! -d $SRC_DIR ] ; then
 
- rsync -av --delete $SIFTS_SPLIT_XML_URL/ $SRC_DIR || exit 1
+ rsync -av --delete $SIFTS_SPLIT_XML_URL/ $SRC_DIR || true
 
  MD5_DIR=chk_sum_xml_sifts
 

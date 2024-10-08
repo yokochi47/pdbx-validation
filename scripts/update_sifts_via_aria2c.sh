@@ -2,6 +2,8 @@
 
 source ./scripts/env.sh
 
+set -e
+
 if [ ! `which aria2c` ] ; then
 
  echo "aria2c: command not found..."
@@ -79,7 +81,7 @@ if [ $weekday -ge 1 ] && [ $weekday -le 4 ] ; then
  fi
 
  sed -e "s/^/ftp:\/\/$sifts_xml_url\//" $sifts_xml_new | sed -e "s/$/\.xml.gz/" > $sifts_xml_list
- aria2c -i $sifts_xml_list -j $((MAXPROCS > 16 ? 16 : MAXPROCS)) -d $SRC_DIR --allow-overwrite=true --auto-file-renaming=false
+ aria2c -i $sifts_xml_list -j $((MAXPROCS > 16 ? 16 : MAXPROCS)) -d $SRC_DIR --allow-overwrite=true --auto-file-renaming=false || true
 
  rm -f $pdb_chain_uniprot_tsv $sifts_xml_list $sifts_xml_all $sifts_xml_unz $sifts_xml_new $sifts_xml_del
 
