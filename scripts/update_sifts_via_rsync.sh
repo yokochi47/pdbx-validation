@@ -41,7 +41,7 @@ if ( [ $weekday -ge 1 ] && [ $weekday -le 4 ] ) || [ ! -d $SRC_DIR ] ; then
  if [ -d $PDBML_NOATOM ] || [ -e scripts/default_div_dirs ] ; then
 
   div_dirs=div_dirs
-  max_connection=$((MAXPROCS > 16 ? 16 : MAXPROCS))
+  max_connection=$((MAXPROCS > 24 ? 24 : MAXPROCS))
 
   find $PDBML_NOATOM -mindepth 1 -type d | cut -d '/' -f 2 > $div_dirs
 
@@ -61,7 +61,7 @@ if ( [ $weekday -ge 1 ] && [ $weekday -le 4 ] ) || [ ! -d $SRC_DIR ] ; then
 
  fi
 
- ( rsync -av --delete $SIFTS_SPLIT_XML_URL/ $SRC_DIR || rsync -av --delete $SIFTS_SPLIT_XML_URL/ $SRC_DIR || rsync -av --delete $SIFTS_SPLIT_XML_URL/ $SRC_DIR || true )
+ ( rsync -a --delete $SIFTS_SPLIT_XML_URL/ $SRC_DIR || rsync -a --delete $SIFTS_SPLIT_XML_URL/ $SRC_DIR || rsync -a --delete $SIFTS_SPLIT_XML_URL/ $SRC_DIR || true )
 
  MD5_DIR=chk_sum_xml_sifts
 
