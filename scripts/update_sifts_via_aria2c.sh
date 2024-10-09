@@ -80,8 +80,10 @@ if [ $weekday -ge 1 ] && [ $weekday -le 4 ] ; then
   done < $sifts_xml_del
  fi
 
+ max_connection=$((MAXPROCS > 16 ? 16 : MAXPROCS))
+
  sed -e "s/^/ftp:\/\/$sifts_xml_url\//" $sifts_xml_new | sed -e "s/$/\.xml.gz/" > $sifts_xml_list
- aria2c -i $sifts_xml_list -j $((MAXPROCS > 16 ? 16 : MAXPROCS)) -d $SRC_DIR --allow-overwrite=true --auto-file-renaming=false || aria2c -i $sifts_xml_list -j $((MAXPROCS > 16 ? 16 : MAXPROCS)) -d $SRC_DIR --allow-overwrite=true --auto-file-renaming=false || aria2c -i $sifts_xml_list -j $((MAXPROCS > 16 ? 16 : MAXPROCS)) -d $SRC_DIR --allow-overwrite=true --auto-file-renaming=false || true
+ aria2c -i $sifts_xml_list -j $max_connection -d $SRC_DIR --allow-overwrite=true --auto-file-renaming=false || aria2c -i $sifts_xml_list -j $max_connection -d $SRC_DIR --allow-overwrite=true --auto-file-renaming=false || aria2c -i $sifts_xml_list -j $max_connection -d $SRC_DIR --allow-overwrite=true --auto-file-renaming=false || true
 
  rm -f $pdb_chain_uniprot_tsv $sifts_xml_list $sifts_xml_all $sifts_xml_unz $sifts_xml_new $sifts_xml_del
 

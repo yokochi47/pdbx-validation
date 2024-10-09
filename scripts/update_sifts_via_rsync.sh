@@ -38,7 +38,30 @@ fi
 
 if ( [ $weekday -ge 1 ] && [ $weekday -le 4 ] ) || [ ! -d $SRC_DIR ] ; then
 
- rsync -av --delete $SIFTS_SPLIT_XML_URL/ $SRC_DIR || rsync -av --delete $SIFTS_SPLIT_XML_URL/ $SRC_DIR || rsync -av --delete $SIFTS_SPLIT_XML_URL/ $SRC_DIR || true
+ if [ -d $PDBML_NOATOM ] ; then
+
+  div_dir_list=div_dir_list
+  max_connection=$((MAXPROCS > 16 ? 16 : MAXPROCS))
+
+  find $PDBML_NOATOM -mindepth 1 -type d | cut -d '/' -f 2 > $div_dir_list
+
+  if [ -s $div_dir_list ] ; then
+
+   for proc_id in `seq 1 $max_connection` ; do
+
+    ./scripts/update_sifts_via_rsync_worker.sh -s $SIFTS_SPLIT_XML_URL -d $SRC_DIR -l $div_dir_list -n $proc_id"of"$max_connection &
+
+   done
+
+   wait
+
+  fi
+
+  rm -f $div_dir_list
+
+ fi
+
+ ( rsync -av --delete $SIFTS_SPLIT_XML_URL/ $SRC_DIR || rsync -av --delete $SIFTS_SPLIT_XML_URL/ $SRC_DIR || rsync -av --delete $SIFTS_SPLIT_XML_URL/ $SRC_DIR || true )
 
  MD5_DIR=chk_sum_xml_sifts
 
