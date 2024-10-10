@@ -42,7 +42,7 @@ java -jar $ROBOT merge --input $PDBX_PREMERGE_OWL --input $VRPTX_PREMERGE_OWL --
 
 echo Generated: $PDBX_VRPTX_OWL
 
-( cd ../resource; ln -s ../schema/$PDBX_VRPTX_OWL . )
+( cd ../resource; rm -f $PDBX_VRPTX_OWL; ln -s ../schema/$PDBX_VRPTX_OWL . )
 
 date
 

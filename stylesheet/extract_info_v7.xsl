@@ -557,7 +557,7 @@ Unmatched entry ID in both documents (<xsl:value-of select="$entry_id"/> and <xs
 	<xsl:sort select="number(@x)" data-type="number"/>
 	<VRPTx:pdbx_em_volume_estimate_marker plot_id="1" ordinal="{position()}">
 	  <VRPTx:contour_level><xsl:value-of select="number(@x)"/></VRPTx:contour_level>
-	  <VRPTx:enclosed_volume><xsl:value-of select="number(@y)"/></VRPTx:enclosed_volume>
+	  <VRPTx:enclosed_volume><xsl:value-of select="format-number(number(@y),'0.##########')"/></VRPTx:enclosed_volume>
 	</VRPTx:pdbx_em_volume_estimate_marker>
       </xsl:for-each>
     </VRPTx:pdbx_em_volume_estimate_markerCategory>
@@ -581,7 +581,7 @@ Unmatched entry ID in both documents (<xsl:value-of select="$entry_id"/> and <xs
 	<xsl:sort select="number(@x)" data-type="number"/>
 	<VRPTx:pdbx_em_raps_marker plot_id="1" ordinal="{position()}">
 	  <VRPTx:spatial_frequency><xsl:value-of select="number(@x)"/></VRPTx:spatial_frequency>
-	  <VRPTx:power><xsl:value-of select="number(@y)"/></VRPTx:power>
+	  <VRPTx:power><xsl:value-of select="format-number(number(@y),'0.##########')"/></VRPTx:power>
 	</VRPTx:pdbx_em_raps_marker>
       </xsl:for-each>
     </VRPTx:pdbx_em_raps_markerCategory>
@@ -605,7 +605,7 @@ Unmatched entry ID in both documents (<xsl:value-of select="$entry_id"/> and <xs
 	<xsl:sort select="number(@x)" data-type="number"/>
 	<VRPTx:pdbx_em_raw_raps_marker plot_id="1" ordinal="{position()}">
 	  <VRPTx:spatial_frequency><xsl:value-of select="number(@x)"/></VRPTx:spatial_frequency>
-	  <VRPTx:power><xsl:value-of select="number(@y)"/></VRPTx:power>
+	  <VRPTx:power><xsl:value-of select="format-number(number(@y),'0.##########')"/></VRPTx:power>
 	</VRPTx:pdbx_em_raw_raps_marker>
       </xsl:for-each>
     </VRPTx:pdbx_em_raw_raps_markerCategory>
@@ -694,7 +694,7 @@ Criteria for FSC resolution estimation, <xsl:value-of select="@type"/>, is not l
 	  <xsl:sort select="number(@x)" data-type="number"/>
 	  <VRPTx:pdbx_em_fsc_curve_marker plot_id="{$plot_id}" ordinal="{position()}">
 	    <VRPTx:spatial_frequency><xsl:value-of select="number(@x)"/></VRPTx:spatial_frequency>
-	    <VRPTx:correlation_coef><xsl:value-of select="number(@y)"/></VRPTx:correlation_coef>
+	    <VRPTx:correlation_coef><xsl:value-of select="format-number(number(@y),'0.##########')"/></VRPTx:correlation_coef>
 	  </VRPTx:pdbx_em_fsc_curve_marker>
 	</xsl:for-each>
       </xsl:for-each>
@@ -782,7 +782,7 @@ Criteria for FSC offset curve, <xsl:value-of select="@Title"/>, is not listed in
 	      <xsl:sort select="number(@x)" data-type="number"/>
 	      <VRPTx:pdbx_em_fsc_cutoff_curve_marker plot_id="{$plot_id}" ordinal="{position()}">
 		<VRPTx:spatial_frequency><xsl:value-of select="number(@x)"/></VRPTx:spatial_frequency>
-		<VRPTx:correlation_coef><xsl:value-of select="number(@y)"/></VRPTx:correlation_coef>
+		<VRPTx:correlation_coef><xsl:value-of select="format-number(number(@y),'0.##########')"/></VRPTx:correlation_coef>
 	      </VRPTx:pdbx_em_fsc_cutoff_curve_marker>
 	    </xsl:for-each>
 	  </xsl:when>
@@ -829,7 +829,7 @@ Atom type of atom inclusion plot, <xsl:value-of select="name()"/>, is not listed
 	  <xsl:sort select="number(@x)" data-type="number"/>
 	  <VRPTx:pdbx_em_atom_inclusion_marker plot_id="{$plot_id}" ordinal="{position()}">
 	    <VRPTx:contour_level><xsl:value-of select="number(@x)"/></VRPTx:contour_level>
-	    <VRPTx:atom_inclusion><xsl:value-of select="number(@y)"/></VRPTx:atom_inclusion>
+	    <VRPTx:atom_inclusion><xsl:value-of select="format-number(number(@y),'0.##########')"/></VRPTx:atom_inclusion>
 	  </VRPTx:pdbx_em_atom_inclusion_marker>
 	</xsl:for-each>
       </xsl:for-each>
@@ -2007,10 +2007,10 @@ Program name, <xsl:value-of select="@name"/>, is not listed in XSLT code.
       </xsl:variable>
 
       <xsl:variable name="last_densityfitness">
-        <xsl:choose>
-          <xsl:when test="../Entry/@density-fitnessVersion"><xsl:value-of select="$last_refmac+1"/></xsl:when>
-          <xsl:otherwise><xsl:value-of select="$last_refmac"/></xsl:otherwise>
-        </xsl:choose>
+	<xsl:choose>
+	  <xsl:when test="../Entry/@density-fitnessVersion"><xsl:value-of select="$last_refmac+1"/></xsl:when>
+	  <xsl:otherwise><xsl:value-of select="$last_refmac"/></xsl:otherwise>
+	</xsl:choose>
       </xsl:variable>
 
       <xsl:variable name="last_cyrange">
@@ -2076,12 +2076,12 @@ Program name, <xsl:value-of select="@name"/>, is not listed in XSLT code.
       </xsl:if>
 
       <xsl:if test="$last_densityfitness!=$last_refmac">
-        <VRPTx:pdbx_validation_software>
-          <xsl:attribute name="ordinal"><xsl:value-of select="$last_densityfitness"/></xsl:attribute>
-          <xsl:element name="VRPTx:name">density-fitness</xsl:element>
-          <xsl:element name="VRPTx:version"><xsl:value-of select="../Entry/@density-fitnessVersion"/></xsl:element>
-          <xsl:element name="VRPTx:classification">refinement</xsl:element>
-        </VRPTx:pdbx_validation_software>
+	<VRPTx:pdbx_validation_software>
+	  <xsl:attribute name="ordinal"><xsl:value-of select="$last_densityfitness"/></xsl:attribute>
+	  <xsl:element name="VRPTx:name">density-fitness</xsl:element>
+	  <xsl:element name="VRPTx:version"><xsl:value-of select="../Entry/@density-fitnessVersion"/></xsl:element>
+	  <xsl:element name="VRPTx:classification">refinement</xsl:element>
+	</VRPTx:pdbx_validation_software>
       </xsl:if>
 
       <xsl:if test="$last_cyrange!=$last_densityfitness">
@@ -3105,12 +3105,12 @@ Unmatched components exist in WilsonBaniso, <xsl:value-of select="position()"/>,
 	<xsl:if test="@rsrz">
 	  <xsl:element name="VRPTx:RSRZ"><xsl:value-of select="@rsrz"/></xsl:element>
 	</xsl:if>
-        <xsl:if test="@EDIAm">
-          <xsl:element name="VRPTx:EDIA_mean"><xsl:value-of select="@EDIAm"/></xsl:element>
-        </xsl:if>
-        <xsl:if test="@OPIA">
-          <xsl:element name="VRPTx:OPIA"><xsl:value-of select="@OPIA"/></xsl:element>
-        </xsl:if>
+	<xsl:if test="@EDIAm">
+	  <xsl:element name="VRPTx:EDIA_mean"><xsl:value-of select="@EDIAm"/></xsl:element>
+	</xsl:if>
+	<xsl:if test="@OPIA">
+	  <xsl:element name="VRPTx:OPIA"><xsl:value-of select="@OPIA"/></xsl:element>
+	</xsl:if>
 	<xsl:if test="@avgoccu">
 	  <xsl:element name="VRPTx:occupancy_mean"><xsl:value-of select="@avgoccu"/></xsl:element>
 	</xsl:if>
@@ -4070,17 +4070,20 @@ Unmatched components exist in residue_string, <xsl:value-of select="position()"/
     <xsl:param name="rest_id"/>
     <xsl:param name="cur_model"/>
     <xsl:param name="end_model"/>
+    <xsl:if test="$violated_distance_restraints and not($violated_distance_restraints)">
     <xsl:if test="$violated_distance_restraints/violated_distance_restraint[@rlist_id=$rlist_id and @rest_id=$rest_id and @model=$cur_model]">
       <xsl:value-of select="concat($cur_model,',')"/>
     </xsl:if>
-    <xsl:if test="$cur_model+1&lt;=$end_model">
-      <xsl:call-template name="concat_violated_distance_models">
-	<xsl:with-param name="violated_distance_restraints" select="$violated_distance_restraints"/>
-	<xsl:with-param name="rlist_id" select="$rlist_id"/>
-	<xsl:with-param name="rest_id" select="$rest_id"/>
-	<xsl:with-param name="cur_model" select="$cur_model+1"/>
-	<xsl:with-param name="end_model" select="$end_model"/>
-      </xsl:call-template>
+    <xsl:variable name="inc_model"><xsl:value-of select="string(floor($cur_model)+1)"/></xsl:variable>
+      <xsl:if test="floor($inc_model)&lt;=floor($end_model)">
+	<xsl:call-template name="concat_violated_distance_models">
+	  <xsl:with-param name="violated_distance_restraints" select="$violated_distance_restraints"/>
+	  <xsl:with-param name="rlist_id" select="$rlist_id"/>
+	  <xsl:with-param name="rest_id" select="$rest_id"/>
+	  <xsl:with-param name="cur_model" select="$inc_model"/>
+	  <xsl:with-param name="end_model" select="$end_model"/>
+	</xsl:call-template>
+      </xsl:if>
     </xsl:if>
   </xsl:template>
 

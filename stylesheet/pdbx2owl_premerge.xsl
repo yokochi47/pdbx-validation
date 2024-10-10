@@ -29,13 +29,13 @@
        xmlns:dcterms="http://purl.org/dc/terms/">
 
       <owl:Ontology rdf:about="http://rdf.wwpdb.org/schema/pdbx-with-vrptx-v50.owl">
-        <rdfs:label>PDB/OWL combined with VRPT/OWL</rdfs:label>
-        <rdfs:comment xml:lang="en">The combined ontology for PDB core archive and wwPDB validation reports.</rdfs:comment>
-        <rdfs:seeAlso rdf:resource="http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic"/>
-        <rdfs:seeAlso rdf:resource="http://mmcif.wwpdb.org/schema/pdbx-v50.xsd"/>
-        <rdfs:seeAlso rdf:resource="http://rdf.wwpdb.org/schema/pdbx-validation-v4.dic"/>
-        <rdfs:seeAlso rdf:resource="http://rdf.wwpdb.org/schema/pdbx-validation-v4.xsd"/>
-        <owl:versionIRI rdf:resource="http://rdf.wwpdb.org/schema/pdbx-with-vrptx-v50.owl/397"/>
+	<rdfs:label>PDB/OWL combined with VRPT/OWL</rdfs:label>
+	<rdfs:comment xml:lang="en">The combined ontology for PDB core archive and wwPDB validation reports.</rdfs:comment>
+	<rdfs:seeAlso rdf:resource="http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic"/>
+	<rdfs:seeAlso rdf:resource="http://mmcif.wwpdb.org/schema/pdbx-v50.xsd"/>
+	<rdfs:seeAlso rdf:resource="http://rdf.wwpdb.org/schema/pdbx-validation-v4.dic"/>
+	<rdfs:seeAlso rdf:resource="http://rdf.wwpdb.org/schema/pdbx-validation-v4.xsd"/>
+	<owl:versionIRI rdf:resource="http://rdf.wwpdb.org/schema/pdbx-with-vrptx-v50.owl/397"/>
       </owl:Ontology>
 
       <owl:Class rdf:ID="Category">

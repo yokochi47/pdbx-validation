@@ -164,6 +164,10 @@ for pdbml_file in $WORK_DIR/$PDBML/*.xml ; do
 
  pdb_id=`basename $pdbml_file -noatom.xml`
 
+ #if [ $pdb_id = "2xku" ] || [ $pdb_id = "5obm" ] ; then
+ # continue
+ #fi
+
  get_resource $pdb_id
 
  #exptl_method=`java -jar $SAXON -s:$pdbml_file -xsl:stylesheet/exptl_method.xsl`
@@ -219,8 +223,8 @@ for pdbml_file in $WORK_DIR/$PDBML/*.xml ; do
  info_alt_file=$WORK_DIR/$VALID_INFO_ALT/$pdb_id-validation-alt.xml
  pdbml_ext_file=../$pdbml_ext_file # add relative path (../) from directory contains target styleseet
 
- #xsltproc -o $info_alt_file --stringparam pdbml_ext_file $pdbml_ext_file $EXT_INFO_XSL $info_file || ( echo $0 aborted. ; exit 1 )
- java -jar $SAXON -s:$info_file -xsl:$EXT_INFO_XSL -o:$info_alt_file pdbml_ext_file=$pdbml_ext_file || ( echo $0 aborted. ; exit 1 )
+ # take over entries requiring ext:node-set() from xsltproc to saxon
+ xsltproc -o $info_alt_file --stringparam pdbml_ext_file $pdbml_ext_file $EXT_INFO_XSL $info_file 2> /dev/null || java -jar $SAXON -s:$info_file -xsl:$EXT_INFO_XSL -o:$info_alt_file pdbml_ext_file=$pdbml_ext_file || ( echo $0 aborted. ; exit 1 )
 
  xml_pretty $info_alt_file
 
