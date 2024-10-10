@@ -49,6 +49,9 @@ if ( [ $weekday -ge 1 ] && [ $weekday -le 4 ] ) || [ ! -d $SRC_DIR ] ; then
    cp scripts/default_div_dirs $div_dirs
   fi
 
+  rm -f $SRC_DIR/*/.*
+  cat $div_dirs | sort -R > $div_dirs~
+
   for proc_id in `seq 1 $max_connection` ; do
 
    ./scripts/update_sifts_via_rsync_worker.sh -s $SIFTS_SPLIT_XML_URL -d $SRC_DIR -l $div_dirs -n $proc_id"of"$max_connection &
@@ -57,7 +60,7 @@ if ( [ $weekday -ge 1 ] && [ $weekday -le 4 ] ) || [ ! -d $SRC_DIR ] ; then
 
   wait
 
-  rm -f $div_dirs
+  rm -f $SRC_DIR/*/.* $div_dirs $div_dirs~
 
  fi
 
