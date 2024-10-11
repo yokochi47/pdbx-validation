@@ -116,12 +116,12 @@ if [ $weekday -ge 1 ] && [ $weekday -le 4 ] ; then
  # done < $chk_sum_log
  #fi
 
- if [ -d $XML_VALID_ALT ] ; then
-  while read pdb_id ; do
-   [ -z "$pdb_id" ] || [[ "$pdb_id" =~ ^#.* ]] && continue
-   rm -f $XML_VALID_ALT/$pdb_id-validation-alt.xml
-  done < $chk_sum_log
- fi
+ #if [ -d $XML_VALID_ALT ] ; then
+ # while read pdb_id ; do
+ #  [ -z "$pdb_id" ] || [[ "$pdb_id" =~ ^#.* ]] && continue
+ #  rm -f $XML_VALID_ALT/$pdb_id-validation-alt.xml
+ # done < $chk_sum_log
+ #fi
 
  if [ -d $XML_VALID ] ; then
   while read pdb_id ; do
@@ -130,12 +130,12 @@ if [ $weekday -ge 1 ] && [ $weekday -le 4 ] ; then
   done < $chk_sum_log
  fi
 
- if [ -d $RDF_VALID_ALT ] ; then
-  while read pdb_id ; do
-   [ -z "$pdb_id" ] || [[ "$pdb_id" =~ ^#.* ]] && continue
-   rm -f $RDF_VALID_ALT/$pdb_id-validation-alt.rdf
-  done < $chk_sum_log
- fi
+ #if [ -d $RDF_VALID_ALT ] ; then
+ # while read pdb_id ; do
+ #  [ -z "$pdb_id" ] || [[ "$pdb_id" =~ ^#.* ]] && continue
+ #  rm -f $RDF_VALID_ALT/$pdb_id-validation-alt.rdf
+ # done < $chk_sum_log
+ #fi
 
  if [ -d $RDF_VALID ] ; then
   while read pdb_id ; do
@@ -151,12 +151,12 @@ if [ $weekday -ge 1 ] && [ $weekday -le 4 ] ; then
   done < $chk_sum_log
  fi
 
- if [ -d $MMCIF_VALID_ALT ] ; then
-  while read pdb_id ; do
-   [ -z "$pdb_id" ] || [[ "$pdb_id" =~ ^#.* ]] && continue
-   rm -f $MMCIF_VALID_ALT/$pdb_id-validation-alt.cif
-  done < $chk_sum_log
- fi
+ #if [ -d $MMCIF_VALID_ALT ] ; then
+ # while read pdb_id ; do
+ #  [ -z "$pdb_id" ] || [[ "$pdb_id" =~ ^#.* ]] && continue
+ #  rm -f $MMCIF_VALID_ALT/$pdb_id-validation-alt.cif
+ # done < $chk_sum_log
+ #fi
 
  if [ -d $MMCIF_VALID ] ; then
   while read pdb_id ; do
@@ -165,12 +165,12 @@ if [ $weekday -ge 1 ] && [ $weekday -le 4 ] ; then
   done < $chk_sum_log
  fi
 
- if [ -d $XML_VALID_ALT ] ; then
-  while read pdb_id ; do
-   [ -z "$pdb_id" ] || [[ "$pdb_id" =~ ^#.* ]] && continue
-   rm -f $XML_VALID_ALT/${pdb_id:1:2}/$pdb_id-validation-alt.xml.gz
-  done < $chk_sum_log
- fi
+ #if [ -d $XML_VALID_ALT ] ; then
+ # while read pdb_id ; do
+ #  [ -z "$pdb_id" ] || [[ "$pdb_id" =~ ^#.* ]] && continue
+ #  rm -f $XML_VALID_ALT/${pdb_id:1:2}/$pdb_id-validation-alt.xml.gz
+ # done < $chk_sum_log
+ #fi
 
  if [ -d $XML_VALID ] ; then
   while read pdb_id ; do
@@ -179,12 +179,12 @@ if [ $weekday -ge 1 ] && [ $weekday -le 4 ] ; then
   done < $chk_sum_log
  fi
 
- if [ -d $RDF_VALID_ALT ] ; then
-  while read pdb_id ; do
-   [ -z "$pdb_id" ] || [[ "$pdb_id" =~ ^#.* ]] && continue
-   rm -f $RDF_VALID_ALT/${pdb_id:1:2}/$pdb_id-validation-alt.rdf.gz
-  done < $chk_sum_log
- fi
+ #if [ -d $RDF_VALID_ALT ] ; then
+ # while read pdb_id ; do
+ #  [ -z "$pdb_id" ] || [[ "$pdb_id" =~ ^#.* ]] && continue
+ #  rm -f $RDF_VALID_ALT/${pdb_id:1:2}/$pdb_id-validation-alt.rdf.gz
+ # done < $chk_sum_log
+ #fi
 
  if [ -d $RDF_VALID ] ; then
   while read pdb_id ; do
@@ -200,12 +200,12 @@ if [ $weekday -ge 1 ] && [ $weekday -le 4 ] ; then
   done < $chk_sum_log
  fi
 
- if [ -d $MMCIF_VALID_ALT ] ; then
-  while read pdb_id ; do
-   [ -z "$pdb_id" ] || [[ "$pdb_id" =~ ^#.* ]] && continue
-   rm -f $MMCIF_VALID_ALT/${pdb_id:1:2}/$pdb_id-validation-alt.cif.gz
-  done < $chk_sum_log
- fi
+ #if [ -d $MMCIF_VALID_ALT ] ; then
+ # while read pdb_id ; do
+ #  [ -z "$pdb_id" ] || [[ "$pdb_id" =~ ^#.* ]] && continue
+ #  rm -f $MMCIF_VALID_ALT/${pdb_id:1:2}/$pdb_id-validation-alt.cif.gz
+ # done < $chk_sum_log
+ #fi
 
  if [ -d $MMCIF_VALID ] ; then
   while read pdb_id ; do
