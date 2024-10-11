@@ -109,12 +109,12 @@ if [ $weekday -ge 1 ] && [ $weekday -le 4 ] ; then
   done < $chk_sum_log
  fi
 
- if [ -d $VALID_INFO_ALT ] ; then
-  while read pdb_id ; do
-   [ -z "$pdb_id" ] || [[ "$pdb_id" =~ ^#.* ]] && continue
-   rm -f $VALID_INFO_ALT/$pdb_id-validation-alt.xml
-  done < $chk_sum_log
- fi
+ #if [ -d $VALID_INFO_ALT ] ; then
+ # while read pdb_id ; do
+ #  [ -z "$pdb_id" ] || [[ "$pdb_id" =~ ^#.* ]] && continue
+ #  rm -f $VALID_INFO_ALT/$pdb_id-validation-alt.xml
+ # done < $chk_sum_log
+ #fi
 
  if [ -d $XML_VALID_ALT ] ; then
   while read pdb_id ; do
