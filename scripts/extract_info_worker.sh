@@ -92,7 +92,7 @@ do
 
    percentilebins=`xsltproc $PERCENTILEBINS_XSL $info_file`
 
-   if [[ "$percentilebins" =~ ".*nmr.*" ]] ; then
+   if [[ "$percentilebins" =~ .*nmr.* ]] ; then
     java -jar $SAXON -s:$info_file -xsl:$EXT_INFO_XSL -o:$info_alt_file pdbml_ext_file=../$pdbml_ext_file 2> $err_file && rm -f $err_file $info_file $pdbml_ext_file || ( rm -f $info_file $info_alt_file $pdbml_ext_file ; cat $err_file ; exit 1 )
    else
     # take over entries requiring ext:node-set() from xsltproc to saxon
@@ -166,7 +166,7 @@ do
 
    percentilebins=`xsltproc $PERCENTILEBINS_XSL $info_file`
 
-   if [[ "$percentilebins" =~ ".*nmr.*" ]] ; then
+   if [[ "$percentilebins" =~ .*nmr.* ]] ; then
     java -jar $SAXON -s:$info_file -xsl:$EXT_INFO_XSL -o:$info_alt_file pdbml_ext_file=../$pdbml_ext_file 2> $err_file && rm -f $err_file $info_file $pdbml_ext_file || ( rm -f $info_file $info_alt_file $pdbml_ext_file ; cat $err_file ; exit 1 )
    else
     # take over entries requiring ext:node-set() from xsltproc to saxon

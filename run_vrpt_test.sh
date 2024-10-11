@@ -225,7 +225,7 @@ for pdbml_file in $WORK_DIR/$PDBML/*.xml ; do
 
  percentilebins=`xsltproc $PERCENTILEBINS_XSL $info_file`
 
- if [[ "$percentilebins" =~ ".*nmr.*" ]] ; then
+ if [[ "$percentilebins" =~ .*nmr.* ]] ; then
   java -jar $SAXON -s:$info_file -xsl:$EXT_INFO_XSL -o:$info_alt_file pdbml_ext_file=$pdbml_ext_file || ( echo $0 aborted. ; exit 1 )
  else
   # take over entries requiring ext:node-set() from xsltproc to saxon
