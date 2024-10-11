@@ -8,7 +8,7 @@
   <xsl:strip-space elements="*"/>
 
   <xsl:template match="/">
-    <xsl:value-of select="/wwPDB-validation-information/Entry/@percentilebins"/>
+   <xsl:value-of select="contains(/wwPDB-validation-information/Entry/@percentilebins,'nmr') or number(/wwPDB-validation-information/Entry/@absolute-percentile-clashscore)&lt;10.0"/>
   </xsl:template>
 
   <xsl:template match="*[@xsi:nil='true']"/>

@@ -112,7 +112,7 @@ VRPTML2RELEXPDATA_XSL=stylesheet/vrptml2relexpdata.xsl
 
 VALIDATION_CHECK_6_03_XSL=stylesheet/validation_check_6.03.xsl
 
-PERCENTILEBINS_XSL=stylesheet/percentilebins.xsl
+COMPLEX_VRPT_XSL=stylesheet/complex_vrpt.xsl
 
 RDF=RDF
 
