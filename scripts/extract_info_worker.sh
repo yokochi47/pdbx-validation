@@ -91,7 +91,7 @@ do
    gunzip -c $pdbml_ext_file.gz > $pdbml_ext_file || exit 1
 
    # take over entries requiring ext:node-set() from xsltproc to saxon
-   xsltproc -o $info_alt_file --stringparam pdbml_ext_file ../$pdbml_ext_file $EXT_INFO_XSL $info_file 2> $err_file && rm -f $err_file $info_file $pdbml_ext_file || java -jar $SAXON -s:$info_file -xsl:$EXT_INFO_XSL -o:$info_alt_file pdbml_ext_file=../$pdbml_ext_file 2> $err_file && rm -f $err_file $info_file $pdbml_ext_file || ( rm -f $info_file $info_alt_file $pdbml_ext_file ; cat $err_file ; exit 1 )
+   xsltproc -o $info_alt_file --stringparam pdbml_ext_file ../$pdbml_ext_file $EXT_INFO_XSL $info_file 2> /dev/null && rm -f $err_file $info_file $pdbml_ext_file || ( java -jar $SAXON -s:$info_file -xsl:$EXT_INFO_XSL -o:$info_alt_file pdbml_ext_file=../$pdbml_ext_file 2> $err_file && rm -f $err_file $info_file $pdbml_ext_file || ( rm -f $info_file $info_alt_file $pdbml_ext_file ; cat $err_file ; exit 1 ) )
 
    xml_pretty $info_alt_file
 
@@ -159,7 +159,7 @@ do
    gunzip -c $pdbml_ext_file.gz > $pdbml_ext_file || exit 1
 
    # take over entries requiring ext:node-set() from xsltproc to saxon
-   xsltproc -o $info_alt_file --stringparam pdbml_ext_file ../$pdbml_ext_file $EXT_INFO_XSL $info_file 2> $err_file && rm -f $err_file $info_file $pdbml_ext_file || java -jar $SAXON -s:$info_file -xsl:$EXT_INFO_XSL -o:$info_alt_file pdbml_ext_file=../$pdbml_ext_file 2> $err_file && rm -f $err_file $info_file $pdbml_ext_file || ( rm -f $info_file $info_alt_file $pdbml_ext_file ; cat $err_file ; exit 1 )
+   xsltproc -o $info_alt_file --stringparam pdbml_ext_file ../$pdbml_ext_file $EXT_INFO_XSL $info_file 2> /dev/null && rm -f $err_file $info_file $pdbml_ext_file || ( java -jar $SAXON -s:$info_file -xsl:$EXT_INFO_XSL -o:$info_alt_file pdbml_ext_file=../$pdbml_ext_file 2> $err_file && rm -f $err_file $info_file $pdbml_ext_file || ( rm -f $info_file $info_alt_file $pdbml_ext_file ; cat $err_file ; exit 1 ) )
 
    xml_pretty $info_alt_file
 
