@@ -1,9 +1,9 @@
 ###########################################################################
 #
 # File:  mmcif_pdbx_validation-v4.dic
-# Date:  Mon Sep 30 17:13:07 JST 2024
+# Date:  Fri Oct 25 10:11:27 JST 2024
 # Created from:
-#        mmcif_pdbx_v50.dic   - PDB Exchange Data Dictionary (V5.397)
+#        mmcif_pdbx_v50.dic   - PDB Exchange Data Dictionary (V5.398)
 #        http://wwpdb.org/validation/schema/wwpdb_validation_v6.03.xsd
 #         - a XML schema for wwPDB validation reports, v6.03, rev. 2024-08-29
 #
@@ -30,7 +30,7 @@ data_mmcif_pdbx_validation.dic
 
     _dictionary.title           mmcif_pdbx_validation.dic
     _dictionary.datablock_id    mmcif_pdbx_validation.dic
-    _dictionary.version         4.397
+    _dictionary.version         4.398
 #
     loop_
     _dictionary_history.version
@@ -1361,6 +1361,13 @@ data_mmcif_pdbx_validation.dic
 >     _pdbx_database_status.status_code_mr, _pdbx_database_status.status_code_cs,
 >     _pdbx_database_status.status_code_nmr_data, _pdbx_database_status.post_rel_status # merged
 >   + Change key for _pdbx_domain_range to newly created _pdbx_domain_range.id # merged
+;
+  4.398   2024-10-25
+;
+>   + Add _pdbx_depui_status_flags.assembly_inferred # not mapped
+>   + Add "Quantifoil R1/4" to _em_sample_support.grid_type enumeration # not mapped
+>   + Add "SILICON DIOXIDE" to _em_sample_support.film_material enumeration # not mapped
+>   + Update enumberations for _pdbx_nmr_constraint_file.constraint_type and _pdbx_nmr_constraint_file.constraint_subtype # not mapped
 ;
 
 
