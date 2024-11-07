@@ -15,13 +15,13 @@ The pdbx-validation is a generation tool of alternative [wwPDB validation report
 File path | Document
 --------- | --------
 [schema/pdbx-with-vrptx-v50.owl](https://github.com/yokochi47/pdbx-validation/blob/master/schema/pdbx-with-vrptx-v50.owl) | PDB/OWL combined with VRPT/OWL, combined ontology for PDB core archive and wwPDB validation reports. (v397)
-[schema/mmcif_pdbx_validation_v4.dic](https://github.com/yokochi47/pdbx-validation/blob/master/schema/mmcif_pdbx_validation_v4.398.dic) | wwPDB Validation Information Dictionary (v4.398)
-[schema/pdbx-validation-v4.xsd](https://github.com/yokochi47/pdbx-validation/blob/master/schema/pdbx-validation-v4.398.xsd) | VRPT PDBML Schema (v4.398)
-[schema/pdbx-validation-v4.owl](https://github.com/yokochi47/pdbx-validation/blob/master/schema/pdbx-validation-v4.398.owl) | VRPT/OWL (v4.398)
+[schema/mmcif_pdbx_validation_v4.dic](https://github.com/yokochi47/pdbx-validation/blob/master/schema/mmcif_pdbx_validation_v4.399.dic) | wwPDB Validation Information Dictionary (v4.399)
+[schema/pdbx-validation-v4.xsd](https://github.com/yokochi47/pdbx-validation/blob/master/schema/pdbx-validation-v4.399.xsd) | VRPT PDBML Schema (v4.399)
+[schema/pdbx-validation-v4.owl](https://github.com/yokochi47/pdbx-validation/blob/master/schema/pdbx-validation-v4.399.owl) | VRPT/OWL (v4.399)
 [schema/mmcif_ddl.dic](https://github.com/yokochi47/pdbx-validation/blob/master/schema/mmcif_ddl_v2.4.1.dic) | extended mmCIF DDL Core Dictionary (dubbed as v2.4.2)
-[resource/mmcif_pdbx_v50.dic](https://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic) | PDB Exchange Data Dictionary (v5.398)
-[resource/pdbx-v50.xsd](https://github.com/yokochi47/pdbx-validation/blob/master/resource/pdbx-v50.xsd) | PDBML Schema (v5.398)
-[resource/pdbx-v50.owl](https://github.com/yokochi47/pdbx-validation/blob/master/resource/pdbx-v50.owl) | PDB/OWL, ontology for PDB/RDF (v5.398)
+[resource/mmcif_pdbx_v50.dic](https://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic) | PDB Exchange Data Dictionary (v5.399)
+[resource/pdbx-v50.xsd](https://github.com/yokochi47/pdbx-validation/blob/master/resource/pdbx-v50.xsd) | PDBML Schema (v5.399)
+[resource/pdbx-v50.owl](https://github.com/yokochi47/pdbx-validation/blob/master/resource/pdbx-v50.owl) | PDB/OWL, ontology for PDB/RDF (v5.399)
 [resource/wwpdb_validation_v6.03.xsd](https://github.com/yokochi47/pdbx-validation/blob/master/resource/wwpdb_validation_v6.03.xsd) | XML Schema for wwPDB validation reports (v6.03, rev 2024-08-29)
 [scripts](https://github.com/yokochi47/pdbx-validation/blob/master/scripts) | a directory contains scripts invoked by the 'run_vrpt_all.sh' script
 [virtuoso_scripts](https://github.com/yokochi47/pdbx-validation/blob/master/virtuoso_scripts) | a directory contains scripts for uploading VRPT/RDF to local SPARQL endpoint
@@ -207,6 +207,9 @@ File path | Document
 - [**Virtuoso**](https://www.openlinksw.com/wiki/main/Main), oprionally used as SPARQL endpoint of VRPT/RDF.
 
 ## Release notes
+
+- **Nov 07, 2024**: Release v4.4.49
+	- Update wwPDB Validation Information Dictionary to 4.399.
 
 - **Oct 25, 2024**: Release v4.4.48
 	- Update wwPDB Validation Information Dictionary to 4.398.

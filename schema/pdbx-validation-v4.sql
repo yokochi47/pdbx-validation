@@ -36,7 +36,7 @@
 --   User keys:
 --    235 document keys, 0 serial keys, 0 xpath keys
 --   Contents:
---    488 attributes (43 in-place document keys), 3012 elements (5 in-place document keys), 0 simple contents (0 in-place document keys, 0 as attribute, 0 as conditional attribute)
+--    485 attributes (43 in-place document keys), 3015 elements (5 in-place document keys), 0 simple contents (0 in-place document keys, 0 as attribute, 0 as conditional attribute)
 --   Wild cards:
 --    0 any elements, 0 any attributes
 --   Constraints:
@@ -44,8 +44,8 @@
 --
 
 --
--- VRPT PDBML Schema v4.398
--- VRPT PDBML Schema translated from wwPDB Validation Information Dictionary v4.398, which is backward compatible with the PDBx/mmCIF Dictionary v5.370: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
+-- VRPT PDBML Schema v4.399
+-- VRPT PDBML Schema translated from wwPDB Validation Information Dictionary v4.399, which is backward compatible with the PDBx/mmCIF Dictionary v5.370: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
 -- URI-reference = http://pdbml.pdb.org/schema/pdbx-validation-v4.xsd
 --
 
@@ -387,6 +387,8 @@ CREATE TABLE entity (
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v4.xsd (VRPTx), schema location: pdbx-validation-v4.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
+DROP TYPE IF EXISTS ENUM_diffrn_pdbx_serial_crystal_experiment CASCADE;
+CREATE TYPE ENUM_diffrn_pdbx_serial_crystal_experiment AS ENUM ( 'Y', 'N' );
 CREATE TABLE diffrn (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	entry_id TEXT ,
@@ -413,7 +415,7 @@ CREATE TABLE diffrn (
 	crystal_support TEXT ,
 	crystal_treatment TEXT ,
 	details TEXT ,
-	pdbx_serial_crystal_experiment TEXT ,
+	pdbx_serial_crystal_experiment ENUM_diffrn_pdbx_serial_crystal_experiment ,
 -- ATTRIBUTE
 	id TEXT NOT NULL
 );
@@ -2146,7 +2148,7 @@ CREATE TABLE em_embedding (
 
 --
 -- (quoted from em_entity_assembly_molwtType)
--- Data items in this category record details about the molecular weight of an assembly component of the sample. Example 1 - based on PDB entry 1DYL and laboratory records for the structure corresponding to PDB entry 1DYL <VRPTx:em_entity_assembly_molwtCategory> <VRPTx:em_entity_assembly_molwt entity_assembly_id="1" id="1"> <VRPTx:units>MEGADALTONS</VRPTx:units> <VRPTx:value>30.5</VRPTx:value> </VRPTx:em_entity_assembly_molwt> </VRPTx:em_entity_assembly_molwtCategory>
+-- Data items in this category record details about the molecular weight of an assembly component of the sample. Example 1 - based on PDB entry 1DYL and laboratory records for the structure corresponding to PDB entry 1DYL <VRPTx:em_entity_assembly_molwtCategory> <VRPTx:em_entity_assembly_molwt id="1"> <VRPTx:entity_assembly_id>1</VRPTx:entity_assembly_id> <VRPTx:units>MEGADALTONS</VRPTx:units> <VRPTx:value>30.5</VRPTx:value> </VRPTx:em_entity_assembly_molwt> </VRPTx:em_entity_assembly_molwtCategory>
 -- URI-reference = http://pdbml.pdb.org/dictionaries/mmcif_pdbx_v50.dic/Categories/em_entity_assembly_molwt.html
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v4.xsd (VRPTx), schema location: pdbx-validation-v4.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
@@ -2158,19 +2160,18 @@ CREATE TYPE ENUM_em_entity_assembly_molwt_units AS ENUM ( 'MEGADALTONS', 'KILODA
 CREATE TABLE em_entity_assembly_molwt (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	entry_id TEXT ,
+	entity_assembly_id TEXT ,
 	experimental_flag ENUM_em_entity_assembly_molwt_experimental_flag ,
 	units ENUM_em_entity_assembly_molwt_units ,
 -- xsd:restriction/xsd:minInclusive="0.0"
 	value DECIMAL CHECK ( value >= 0.0 ) ,
--- ATTRIBUTE
-	entity_assembly_id TEXT NOT NULL ,
 -- ATTRIBUTE
 	id TEXT NOT NULL
 );
 
 --
 -- (quoted from em_entity_assembly_naturalsourceType)
--- Data items in this category record taxonomic details about the natural source for EM assemblies and assembly components. Example 1 - <VRPTx:em_entity_assembly_naturalsourceCategory> <VRPTx:em_entity_assembly_naturalsource entity_assembly_id="8333" id="1"> <VRPTx:cellular_location xsi:nil="true" /> <VRPTx:ncbi_tax_id>Escherichia coli</VRPTx:ncbi_tax_id> <VRPTx:organ xsi:nil="true" /> <VRPTx:organelle>cytoplasm</VRPTx:organelle> <VRPTx:organism>K12</VRPTx:organism> <VRPTx:strain xsi:nil="true" /> <VRPTx:tissue xsi:nil="true" /> </VRPTx:em_entity_assembly_naturalsource> </VRPTx:em_entity_assembly_naturalsourceCategory>
+-- Data items in this category record taxonomic details about the natural source for EM assemblies and assembly components. Example 1 - <VRPTx:em_entity_assembly_naturalsourceCategory> <VRPTx:em_entity_assembly_naturalsource id="1"> <VRPTx:cellular_location xsi:nil="true" /> <VRPTx:entity_assembly_id>8333</VRPTx:entity_assembly_id> <VRPTx:ncbi_tax_id>Escherichia coli</VRPTx:ncbi_tax_id> <VRPTx:organ xsi:nil="true" /> <VRPTx:organelle>cytoplasm</VRPTx:organelle> <VRPTx:organism>K12</VRPTx:organism> <VRPTx:strain xsi:nil="true" /> <VRPTx:tissue xsi:nil="true" /> </VRPTx:em_entity_assembly_naturalsource> </VRPTx:em_entity_assembly_naturalsourceCategory>
 -- URI-reference = http://pdbml.pdb.org/dictionaries/mmcif_pdbx_v50.dic/Categories/em_entity_assembly_naturalsource.html
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v4.xsd (VRPTx), schema location: pdbx-validation-v4.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
@@ -2181,6 +2182,7 @@ CREATE TABLE em_entity_assembly_naturalsource (
 	cell TEXT ,
 	cellular_location TEXT ,
 	details TEXT ,
+	entity_assembly_id TEXT ,
 	ncbi_tax_id TEXT ,
 	organ TEXT ,
 	organelle TEXT ,
@@ -2188,14 +2190,12 @@ CREATE TABLE em_entity_assembly_naturalsource (
 	strain TEXT ,
 	tissue TEXT ,
 -- ATTRIBUTE
-	entity_assembly_id TEXT NOT NULL ,
--- ATTRIBUTE
 	id TEXT NOT NULL
 );
 
 --
 -- (quoted from em_entity_assembly_recombinantType)
--- Data items in this category record details about recombinant expression of the assembly or assembly component. Example 1 - <VRPTx:em_entity_assembly_recombinantCategory> <VRPTx:em_entity_assembly_recombinant entity_assembly_id="1" id="1"> <VRPTx:organism>Escherichia coli</VRPTx:organism> <VRPTx:plasmid>pET17c</VRPTx:plasmid> </VRPTx:em_entity_assembly_recombinant> </VRPTx:em_entity_assembly_recombinantCategory>
+-- Data items in this category record details about recombinant expression of the assembly or assembly component. Example 1 - <VRPTx:em_entity_assembly_recombinantCategory> <VRPTx:em_entity_assembly_recombinant id="1"> <VRPTx:entity_assembly_id>1</VRPTx:entity_assembly_id> <VRPTx:organism>Escherichia coli</VRPTx:organism> <VRPTx:plasmid>pET17c</VRPTx:plasmid> </VRPTx:em_entity_assembly_recombinant> </VRPTx:em_entity_assembly_recombinantCategory>
 -- URI-reference = http://pdbml.pdb.org/dictionaries/mmcif_pdbx_v50.dic/Categories/em_entity_assembly_recombinant.html
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v4.xsd (VRPTx), schema location: pdbx-validation-v4.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
@@ -2204,12 +2204,11 @@ CREATE TABLE em_entity_assembly_recombinant (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	entry_id TEXT ,
 	cell TEXT ,
+	entity_assembly_id TEXT ,
 	ncbi_tax_id TEXT ,
 	organism TEXT ,
 	plasmid TEXT ,
 	strain TEXT ,
--- ATTRIBUTE
-	entity_assembly_id TEXT NOT NULL ,
 -- ATTRIBUTE
 	id TEXT NOT NULL
 );
@@ -8930,13 +8929,13 @@ CREATE TABLE symmetry_equiv (
 --ALTER TABLE em_entity_assembly ADD CONSTRAINT UNQ_em_entity_assembly UNIQUE ( entry_id, id );
 
 -- (derived from xsd:key[@name='em_entity_assembly_molwtKey_0'])
---ALTER TABLE em_entity_assembly_molwt ADD CONSTRAINT UNQ_em_entity_assembly_molwt UNIQUE ( entry_id, entity_assembly_id, id );
+--ALTER TABLE em_entity_assembly_molwt ADD CONSTRAINT UNQ_em_entity_assembly_molwt UNIQUE ( entry_id, id );
 
 -- (derived from xsd:key[@name='em_entity_assembly_naturalsourceKey_0'])
---ALTER TABLE em_entity_assembly_naturalsource ADD CONSTRAINT UNQ_em_entity_assembly_naturalsource UNIQUE ( entry_id, entity_assembly_id, id );
+--ALTER TABLE em_entity_assembly_naturalsource ADD CONSTRAINT UNQ_em_entity_assembly_naturalsource UNIQUE ( entry_id, id );
 
 -- (derived from xsd:key[@name='em_entity_assembly_recombinantKey_0'])
---ALTER TABLE em_entity_assembly_recombinant ADD CONSTRAINT UNQ_em_entity_assembly_recombinant UNIQUE ( entry_id, entity_assembly_id, id );
+--ALTER TABLE em_entity_assembly_recombinant ADD CONSTRAINT UNQ_em_entity_assembly_recombinant UNIQUE ( entry_id, id );
 
 -- (derived from xsd:key[@name='em_entity_assembly_syntheticKey_0'])
 --ALTER TABLE em_entity_assembly_synthetic ADD CONSTRAINT UNQ_em_entity_assembly_synthetic UNIQUE ( entry_id, entity_assembly_id, id );

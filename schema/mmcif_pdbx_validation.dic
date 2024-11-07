@@ -1,9 +1,9 @@
 ###########################################################################
 #
 # File:  mmcif_pdbx_validation-v4.dic
-# Date:  Fri Oct 25 10:11:27 JST 2024
+# Date:  Thu Nov  7 13:02:23 JST 2024
 # Created from:
-#        mmcif_pdbx_v50.dic   - PDB Exchange Data Dictionary (V5.398)
+#        mmcif_pdbx_v50.dic   - PDB Exchange Data Dictionary (V5.399)
 #        http://wwpdb.org/validation/schema/wwpdb_validation_v6.03.xsd
 #         - a XML schema for wwPDB validation reports, v6.03, rev. 2024-08-29
 #
@@ -30,7 +30,7 @@ data_mmcif_pdbx_validation.dic
 
     _dictionary.title           mmcif_pdbx_validation.dic
     _dictionary.datablock_id    mmcif_pdbx_validation.dic
-    _dictionary.version         4.398
+    _dictionary.version         4.399
 #
     loop_
     _dictionary_history.version
@@ -1368,6 +1368,16 @@ data_mmcif_pdbx_validation.dic
 >   + Add "Quantifoil R1/4" to _em_sample_support.grid_type enumeration # not mapped
 >   + Add "SILICON DIOXIDE" to _em_sample_support.film_material enumeration # not mapped
 >   + Update enumberations for _pdbx_nmr_constraint_file.constraint_type and _pdbx_nmr_constraint_file.constraint_subtype # not mapped
+;
+  4.399   2024-11-07
+;
+>   + Add enumeration for _diffrn.pdbx_serial_crystal_experiment # merged
+>   + Add ssbond to enumeration for _pdbx_data_processing_status.task_name # not mapped
+>   + Add DSA to enumberation for _pdbx_nmr_chem_shift_ref.mol_common_name # not mapped
+>   + Add "SILICON DIOXIDE" to em_support_film.material enumeration # not mapped
+>   + Change category key for _em_entity_assembly_molwt,
+>     _em_entity_assembly_naturalsource and _em_entity_assembly_recombinant to
+>     only include the id attribute # merged
 ;
 
 
@@ -53181,9 +53191,7 @@ save_em_entity_assembly_molwt
 ;
     _category.id                  em_entity_assembly_molwt
     _category.mandatory_code      no
-    loop_
-    _category_key.name          '_em_entity_assembly_molwt.entity_assembly_id'
-                                '_em_entity_assembly_molwt.id'
+    _category_key.name           '_em_entity_assembly_molwt.id'
     loop_
     _category_group.id           'inclusive_group'
                                  'em_group'
@@ -53284,9 +53292,7 @@ save_em_entity_assembly_naturalsource
 ;
     _category.id                  em_entity_assembly_naturalsource
     _category.mandatory_code      no
-    loop_
     _category_key.name          '_em_entity_assembly_naturalsource.id'
-                                '_em_entity_assembly_naturalsource.entity_assembly_id'
     loop_
     _category_group.id           'inclusive_group'
                                  'em_group'
@@ -53652,9 +53658,7 @@ save_em_entity_assembly_recombinant
 ;
     _category.id                  em_entity_assembly_recombinant
     _category.mandatory_code      no
-    loop_
     _category_key.name          '_em_entity_assembly_recombinant.id'
-                                '_em_entity_assembly_recombinant.entity_assembly_id'
     loop_
     _category_group.id           'inclusive_group'
                                  'em_group'
@@ -59684,6 +59688,11 @@ save__diffrn.pdbx_serial_crystal_experiment
     _item_type.code               text
     loop_
     _item_examples.case           Y   N
+    loop_
+    _item_enumeration.value
+    _item_enumeration.detail
+      Y  Yes
+      N  No
     loop_
     _pdbx_item_enumeration.name
     _pdbx_item_enumeration.value
@@ -75263,7 +75272,7 @@ save__pdbx_sifts_xref_db.entity_id
     _item.category_id             pdbx_sifts_xref_db
     _item.mandatory_code          yes
     _item_type.code               code
-    _item_linked.child_name	      '_pdbx_sifts_xref_db.entity_id'
+    _item_linked.child_name       '_pdbx_sifts_xref_db.entity_id'
     _item_linked.parent_name      '_entity.id'
 save_
 
@@ -75276,7 +75285,7 @@ save__pdbx_sifts_xref_db.asym_id
     _item.category_id             pdbx_sifts_xref_db
     _item.mandatory_code          yes
     _item_type.code               code
-    _item_linked.child_name	      '_pdbx_sifts_xref_db.asym_id'
+    _item_linked.child_name       '_pdbx_sifts_xref_db.asym_id'
     _item_linked.parent_name      '_struct_asym.id'
     loop_
     _item_examples.case           '1'
@@ -75287,7 +75296,7 @@ save_
 save__pdbx_sifts_xref_db.seq_id_ordinal
     _item_description.description
 ;    The value of pdbx_sifts_xref_db.seq_id_ordinal identifies a distinct residue specific cross-reference record
-	 in the _pdbx_sifts_xref_db category.
+     in the _pdbx_sifts_xref_db category.
 ;
     _item.name                 '_pdbx_sifts_xref_db.seq_id_ordinal'
     _item.category_id          pdbx_sifts_xref_db
@@ -75598,7 +75607,7 @@ save__pdbx_sifts_xref_db_segments.entity_id
     _item.category_id             pdbx_sifts_xref_db_segments
     _item.mandatory_code          yes
     _item_type.code               code
-    _item_linked.child_name	      '_pdbx_sifts_xref_db_segments.entity_id'
+    _item_linked.child_name       '_pdbx_sifts_xref_db_segments.entity_id'
     _item_linked.parent_name      '_entity.id'
 save_
 
@@ -75611,7 +75620,7 @@ save__pdbx_sifts_xref_db_segments.asym_id
     _item.category_id             pdbx_sifts_xref_db_segments
     _item.mandatory_code          yes
     _item_type.code               code
-    _item_linked.child_name	      '_pdbx_sifts_xref_db_segments.asym_id'
+    _item_linked.child_name       '_pdbx_sifts_xref_db_segments.asym_id'
     _item_linked.parent_name      '_struct_asym.id'
     loop_
     _item_examples.case           '1'
@@ -75684,7 +75693,7 @@ save__pdbx_sifts_xref_db_segments.seq_id_start
     _item.mandatory_code        yes
     _item_type.code             int
     _item_linked.child_name     '_pdbx_sifts_xref_db_segments.seq_id_start'
-    _item_linked.parent_name	'_entity_poly_seq.num'
+    _item_linked.parent_name    '_entity_poly_seq.num'
 save_
 
 save__pdbx_sifts_xref_db_segments.seq_id_end
@@ -75700,7 +75709,7 @@ save__pdbx_sifts_xref_db_segments.seq_id_end
     _item.mandatory_code        yes
     _item_type.code             int
     _item_linked.child_name     '_pdbx_sifts_xref_db_segments.seq_id_end'
-    _item_linked.parent_name	'_entity_poly_seq.num'
+    _item_linked.parent_name    '_entity_poly_seq.num'
 save_
 
 ###########################################
@@ -75760,7 +75769,7 @@ save__pdbx_sifts_unp_segments.entity_id
     _item.category_id             pdbx_sifts_unp_segments
     _item.mandatory_code          yes
     _item_type.code               code
-    _item_linked.child_name	  '_pdbx_sifts_unp_segments.entity_id'
+    _item_linked.child_name       '_pdbx_sifts_unp_segments.entity_id'
     _item_linked.parent_name      '_entity_poly_seq.entity_id'
 save_
 
@@ -75773,7 +75782,7 @@ save__pdbx_sifts_unp_segments.asym_id
     _item.category_id             pdbx_sifts_unp_segments
     _item.mandatory_code          yes
     _item_type.code               code
-    _item_linked.child_name	      '_pdbx_sifts_unp_segments.asym_id'
+    _item_linked.child_name       '_pdbx_sifts_unp_segments.asym_id'
     _item_linked.parent_name      '_struct_asym.id'
     loop_
     _item_examples.case           '1'
@@ -75843,7 +75852,7 @@ save__pdbx_sifts_unp_segments.seq_id_start
     _item.mandatory_code        yes
     _item_type.code             int
     _item_linked.child_name     '_pdbx_sifts_unp_segments.seq_id_start'
-    _item_linked.parent_name	'_entity_poly_seq.num'
+    _item_linked.parent_name    '_entity_poly_seq.num'
     save_
 
 save__pdbx_sifts_unp_segments.seq_id_end
@@ -75859,7 +75868,7 @@ save__pdbx_sifts_unp_segments.seq_id_end
     _item.mandatory_code        yes
     _item_type.code             int
     _item_linked.child_name     '_pdbx_sifts_unp_segments.seq_id_end'
-    _item_linked.parent_name	'_entity_poly_seq.num'
+    _item_linked.parent_name    '_entity_poly_seq.num'
     save_
 
 save__pdbx_sifts_unp_segments.best_mapping
