@@ -3,7 +3,7 @@
 # File:  mmcif_pdbx_validation-v4.dic
 # Date:  Fri Aug  1 15:26:46 JST 2025
 # Created from:
-#        mmcif_pdbx_v50.dic   - PDB Exchange Data Dictionary (V5.403)
+#        mmcif_pdbx_v50.dic   - PDB Exchange Data Dictionary (V5.404)
 #        http://wwpdb.org/validation/schema/wwpdb_validation_v6.05.xsd
 #         - a XML schema for wwPDB validation reports, v6.05, rev. 2025-05-06
 #
@@ -30,7 +30,7 @@ data_mmcif_pdbx_validation.dic
 
     _dictionary.title           mmcif_pdbx_validation.dic
     _dictionary.datablock_id    mmcif_pdbx_validation.dic
-    _dictionary.version         4.403
+    _dictionary.version         4.404
 #
     loop_
     _dictionary_history.version
@@ -1425,6 +1425,11 @@ data_mmcif_pdbx_validation.dic
 >   + Updated examples in _database_2.database_code # not mapped
 >   + Add gemmi to _software.name PDBx enumeration # not mapped
 >   + Add 'M' to _em_software.name enumeration. # merged
+;
+  4.404   2025-08-01
+;
+>   + Add DeepEMhancer to _em_software.name enumeration
+>   + Add HexAuFoil to _em_sample_support.grid_type enumeration # not mapped
 ;
 
 
@@ -55967,6 +55972,7 @@ save__em_software.name
         '_em_software.name'  CTFPHASEFLIP                       .
         '_em_software.name'  CTFTILT                            .
         '_em_software.name'  DE-IM                              .
+        '_em_software.name'  DeepEMhancer                       .
         '_em_software.name'  DIALS                              .
         '_em_software.name'  DigitalMicrograph                  .
         '_em_software.name'  DireX                              .
