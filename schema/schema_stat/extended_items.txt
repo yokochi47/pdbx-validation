@@ -15,6 +15,7 @@ pdbx_dcc_density.ls_percent_reflns_R_free
 pdbx_dcc_density.reflns_number_obs
 pdbx_dcc_density.reflns_outlier_acentric
 pdbx_dcc_density.reflns_outlier_centric
+pdbx_dcc_density.warning
 pdbx_dcc_geometry.all_atom_clashscore_nmr_well_formed
 pdbx_dcc_geometry.angle_overall_rmsz
 pdbx_dcc_geometry.bond_overall_rmsz

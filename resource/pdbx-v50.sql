@@ -21,7 +21,7 @@
 --  map xsd date type to: sql date type
 --
 -- Statistics of schema:
---  Generated 594 tables (7227 fields), 0 views (0 fields), 0 attr groups, 0 model groups in total
+--  Generated 594 tables (7235 fields), 0 views (0 fields), 0 attr groups, 0 model groups in total
 --   Unnecessary tables by inlining simple content as a primitive data type:
 --    schema location: pdbx-v50.xsd
 --      temperature, final_thickness, "B_calc", zeta, "L23", "L11", "pdbx_F_calc_with_solvent", radial_pitch, time, angle_increment, "model_Cartn_y_esd", diffr_phi, "B_iso_or_equiv", pdbx_solvent_vdw_probe_radii, maximum_torsion_angle_constraint_violation, "A_meas_au", lower_limit, "F_meas", "S31", "F_meas_au", "Cartn_x_esd", length_a_esd, "L22", "F_squared_calc", volume_three, mean_guiner_radius, reciprocal_angle_beta_esd, beta_tolerance, maximum_upper_distance_constraint_violation, bond_deviation, nominal_defocus_min, "B33", angle, "B_iso_min", "U_equiv_geom_mean_esd", crossfire_y, psi, crossfire_x, "U33_esd", bond_angle_rms_dev, "S33_esd", angle_gamma_esd, pdbx_crystal_direction_3, dihedral_angles_rms_dev, pdbx_crystal_direction_2, "angle_DHA_esd", epsilon, pdbx_crystal_direction_1, bond, "aniso_U22", induction_temperature, average_torsion_angle_constraint_violation, "L33", angle_phi, "aniso_B11_esd", pdbx_solvent_ion_probe_radii, "aniso_B33_esd", "dist_HA_esd", "B_calc_au", culture_temperature, "S23_esd", sample_volume, diffr_kappa, reciprocal_length_a_esd, peptide_planarity_rms_dev, "sigmaI", pdbx_solvent_shrinkage_radii, displacement, "aniso_U33", maximum_lower_distance_constraint_violation, culture_time, "aniso_U22_esd", column_volume, translation_width, tilt_angle_min, prot_cis, electron_dose, scan_time_backgd, "aniso_B23_esd", protein_yield, "B_equiv_geom_mean_esd", calibrated_defocus_min, underload, "F_squared_meas", "B22_esd", "aniso_U12", pdbx_dist_value, "U11_esd", induction_timepoint, "L12_esd", "T11_esd", "model_Cartn_y", energyfilter_lower, alpha, pressure, atom_deviation, "U13", improper_torsion_angle_rms_dev_error, "B12_esd", "T12_esd", "aniso_U13_esd", "pdbx_model_Cartn_y_ideal", "A_calc_au", pdbx_phase_calc_part_solvent, reciprocal_angle_gamma_esd, "aniso_U11", "aniso_U23", angle_value, "F_squared_sigma", buffer_volume, covalent_bond_rms_dev, reciprocal_angle_alpha_esd, "L13_esd", "model_Cartn_x", angle_range, "T13_esd", rotation_per_n_subunits, diff_density_min, "B_iso", "U12", angle_omega, energyfilter_upper, mean_guiner_radius_esd, crossfire_x_esd, "A_meas", "aniso_U23_esd", storage_temperature, reference_displacement, mol_wt_theo, tau1, distance_rms_dev, tau2, tau3, tau4, "U23", "I", flow_rate, dist, "A_calc", angle_deviation, temperature_decomposition_esd, nominal_defocus_max, "B_iso_mean", "U11", "aniso_U33_esd", dist_esd, "aniso_U13", value_esd, upper_limit, "B_meas", cleavage_time, "pdbx_res_netI_over_av_sigmaI_2", displacement_start, "model_Cartn_z", displacement_increment, density_meas_temp_esd, "T13", maximum_distance_constraint_violation, tau0, "B11_esd", angle_beta_esd, "L22_esd", "T22_esd", "U22", gamma_tolerance, temp, "U_tls22", phase_calc, angle_chi, "aniso_B22_esd", improper_torsion_angle_rms_dev, diff_density_max_esd, sample_concentration, rmsd, "pdbx_F_calc_part_solvent", cleavage_temperature, "pdbx_res_netI_over_sigmaI_2", "Luzzati_sigma_a_obs", "Luzzati_coordinate_error_free", temperature_sublimation_esd, "F_meas_sigma", "U33", "model_Cartn_z_esd", "T12", dihedral_angles_rms_dev_error, pdbx_scan_angle, "B_iso_or_equiv_esd", angle_target_value, "Cartn_y_esd", angle_psi, "U_tls11", bond_angle_rms_dev_error, "B23_esd", "U_iso_or_equiv_esd", volume_esd, "U_tls23", crossfire_y_esd, pdbx_phase_calc_with_solvent, taum, "S22_esd", diffr_chi, "T23", "B", pressure_esd, column_temperature, "T11", min_mean_cross_sectional_radii_gyration_esd, "Luzzati_d_res_low_free", chi2, chi1, "L23_esd", chi4, chi3, "aniso_B22", pdbx_collection_time_total, crossfire_xy_esd, chi5, angle_alpha_esd, scan_rate, neighbor_ligand_distance, length_b_esd, "T23_esd", pdbx_crystal_diffrn_lifetime, peptide_planarity_rms_dev_error, "S13", "Ro", "T22", voltage, "S32_esd", fract_displacement_increment, beta, average_distance_constraint_violation, "aniso_B33", energy_window, crossfire_xy, dev, "U_tls33", "S13_esd", "model_Cartn_x_esd", "L11_esd", volume_three_esd, protein_volume, value, "T33_esd", angle_kappa, rise_per_n_subunits, reciprocal_length_c_esd, "L33_esd", "S12", scat_length_neutron, "T33", "S11_esd", improper_torsion_angle, current, "aniso_B12", alpha_tolerance, "Luzzati_coordinate_error_obs", "P", gamma, diff_density_rms_esd, "B13_esd", displacement_range, phi, "aniso_U12_esd", neighbor_macromolecule_distance, "pre_Cartn_x", "B_iso_Wilson_estimate", "B12", ambient_temp_esd, "Cartn_z", "F_calc", "pdbx_model_Cartn_x_ideal", ambient_pressure_esd, pdbx_crystal_diffrn_limit, displacement_rstrt_incr, yield_pooled_fractions, "U12_esd", "S12_esd", phase_meas, "pdbx_model_Cartn_z_ideal", "S23", diff_density_max, "aniso_B13_esd", tilt_angle_max, "S11", origin_y, origin_x, nu4, nu3, nu2, nu1, "aniso_B11", nu0, "aniso_B23", max_mean_cross_sectional_radii_gyration, overload, angle_theta, covalent_bond_rms_dev_error, "Luzzati_d_res_low_obs", origin_z, power, "dist_DA_esd", "B13", min_mean_cross_sectional_radii_gyration, temp_esd, culture_volume, inducer_concentration, "S22", "B_meas_au", "U22_esd", omega, length_c_esd, pdbx_rotation_angle, diff_density_min_esd, "S31_esd", angle_rstrt_incr, "pre_Cartn_z", "U_tls12", volume_pooled_fractions, "B_iso_esd", "U13_esd", delta, detector_distance, "Cartn_x", "B22", "U23_esd", diffr_psi, distance_rms_dev_error, "S21", max_mean_cross_sectional_radii_gyration_esd, "S33", angular_pitch, "L12", "B_iso_max", reference_angle, "aniso_B13", reciprocal_length_b_esd, diff_density_rms, "Luzzati_sigma_a_free", "aniso_B12_esd", protein_concentration, mol_wt_exp, concentration_range, "pre_Cartn_y", "S21_esd", "F_calc_au", "U_tls13", "Cartn_z_esd", "B33_esd", "B23", "B11", angle_start, "Cartn_y", "aniso_U11_esd", density_meas_esd, "dist_DH_esd", multiplicity_of_infection, "L13", "F_meas_sigma_au", "S32"
@@ -36,7 +36,7 @@
 --   User keys:
 --    594 document keys, 0 serial keys, 0 xpath keys
 --   Contents:
---    1077 attributes (0 in-place document keys), 5556 elements (0 in-place document keys), 0 simple contents (0 in-place document keys, 0 as attribute, 0 as conditional attribute)
+--    1080 attributes (0 in-place document keys), 5561 elements (0 in-place document keys), 0 simple contents (0 in-place document keys, 0 as attribute, 0 as conditional attribute)
 --   Wild cards:
 --    0 any elements, 0 any attributes
 --   Constraints:
@@ -44,8 +44,8 @@
 --
 
 --
--- PDBML Schema v5.399
--- PDBML Schema translated from the PDBx/mmCIF Dictionary v5.399: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
+-- PDBML Schema v5.400
+-- PDBML Schema translated from the PDBx/mmCIF Dictionary v5.400: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
 -- URI-reference = http://pdbml.pdb.org/schema/pdbx-v50.xsd
 --
 
@@ -1284,19 +1284,21 @@ CREATE TABLE em_tomography_specimen (
 
 --
 -- (quoted from pdbx_audit_revision_historyType)
--- Data items in the PDBX_AUDIT_REVISION_HISTORY category record the revision history for a data entry. Example 1 <PDBx:pdbx_audit_revision_historyCategory> <PDBx:pdbx_audit_revision_history data_content_type="Structure model" ordinal="1"> <PDBx:internal_deposition_id>D_123456789</PDBx:internal_deposition_id> <PDBx:internal_version>4</PDBx:internal_version> <PDBx:major_revision>1</PDBx:major_revision> <PDBx:minor_revision>0</PDBx:minor_revision> <PDBx:revision_date>2017-03-01</PDBx:revision_date> </PDBx:pdbx_audit_revision_history> <PDBx:pdbx_audit_revision_history data_content_type="Structure model" ordinal="2"> <PDBx:internal_deposition_id>D_123456789</PDBx:internal_deposition_id> <PDBx:internal_version>6</PDBx:internal_version> <PDBx:major_revision>1</PDBx:major_revision> <PDBx:minor_revision>1</PDBx:minor_revision> <PDBx:revision_date>2017-03-08</PDBx:revision_date> </PDBx:pdbx_audit_revision_history> </PDBx:pdbx_audit_revision_historyCategory>
+-- Data items in the PDBX_AUDIT_REVISION_HISTORY category record the revision history for a data entry. Example 1 <PDBx:pdbx_audit_revision_historyCategory> <PDBx:pdbx_audit_revision_history data_content_type="Structure model" ordinal="1"> <PDBx:internal_deposition_id>D_123456789</PDBx:internal_deposition_id> <PDBx:internal_version>4</PDBx:internal_version> <PDBx:major_revision>1</PDBx:major_revision> <PDBx:minor_revision>0</PDBx:minor_revision> <PDBx:revision_date>2017-03-01</PDBx:revision_date> </PDBx:pdbx_audit_revision_history> <PDBx:pdbx_audit_revision_history data_content_type="Structure model" ordinal="2"> <PDBx:internal_deposition_id>D_123456789</PDBx:internal_deposition_id> <PDBx:internal_version>6</PDBx:internal_version> <PDBx:major_revision>1</PDBx:major_revision> <PDBx:minor_revision>1</PDBx:minor_revision> <PDBx:revision_date>2017-03-08</PDBx:revision_date> </PDBx:pdbx_audit_revision_history> <PDBx:pdbx_audit_revision_history data_content_type="Half map" ordinal="3"> <PDBx:internal_deposition_id>D_123456789</PDBx:internal_deposition_id> <PDBx:internal_part_number>1</PDBx:internal_part_number> <PDBx:internal_version>2</PDBx:internal_version> <PDBx:major_revision>1</PDBx:major_revision> <PDBx:minor_revision>0</PDBx:minor_revision> <PDBx:part_number>1</PDBx:part_number> <PDBx:revision_date>2017-03-01</PDBx:revision_date> </PDBx:pdbx_audit_revision_history> <PDBx:pdbx_audit_revision_history data_content_type="Half map" ordinal="4"> <PDBx:internal_deposition_id>D_123456789</PDBx:internal_deposition_id> <PDBx:internal_part_number>2</PDBx:internal_part_number> <PDBx:internal_version>2</PDBx:internal_version> <PDBx:major_revision>1</PDBx:major_revision> <PDBx:minor_revision>0</PDBx:minor_revision> <PDBx:part_number>2</PDBx:part_number> <PDBx:revision_date>2017-03-01</PDBx:revision_date> </PDBx:pdbx_audit_revision_history> </PDBx:pdbx_audit_revision_historyCategory>
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_audit_revision_history_data_content_type CASCADE;
-CREATE TYPE ENUM_pdbx_audit_revision_history_data_content_type AS ENUM ( 'Structure model', 'NMR restraints', 'NMR shifts', 'Structure factors', 'Chemical component' );
+CREATE TYPE ENUM_pdbx_audit_revision_history_data_content_type AS ENUM ( 'Structure model', 'NMR restraints', 'NMR shifts', 'Structure factors', 'Chemical component', 'Primary map', 'Image', 'Half map', 'Additional map', 'FSC', 'Mask', 'EM metadata' );
 CREATE TABLE pdbx_audit_revision_history (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
 	internal_deposition_id TEXT ,
+	internal_part_number INTEGER ,
 	internal_version INTEGER ,
 	major_revision INTEGER ,
 	minor_revision INTEGER ,
+	part_number INTEGER ,
 -- map XSD date (xsd:date) to SQL DATE
 	revision_date DATE ,
 -- ATTRIBUTE
@@ -3731,7 +3733,7 @@ CREATE TABLE database (
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_database_2_database_id CASCADE;
-CREATE TYPE ENUM_database_2_database_id AS ENUM ( 'AlphaFoldDB', 'CAS', 'CSD', 'EMDB', 'ICSD', 'ModelArchive', 'MDF', 'MODBASE', 'NDB', 'NBS', 'PDB', 'PDB-Dev', 'PDF', 'RCSB', 'SWISS-MODEL_REPOSITORY', 'EBI', 'PDBE', 'BMRB', 'WWPDB', 'PDB_ACC' );
+CREATE TYPE ENUM_database_2_database_id AS ENUM ( 'AlphaFoldDB', 'EMDB', 'ModelArchive', 'MODBASE', 'NDB', 'PDB', 'PDB-Dev', 'RCSB', 'SWISS-MODEL_REPOSITORY', 'EBI', 'PDBE', 'BMRB', 'WWPDB', 'PDB_ACC' );
 CREATE TABLE database_2 (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
@@ -5000,7 +5002,7 @@ CREATE TABLE em_embedding (
 
 --
 -- (quoted from em_entity_assembly_molwtType)
--- Data items in this category record details about the molecular weight of an assembly component of the sample. Example 1 - based on PDB entry 1DYL and laboratory records for the structure corresponding to PDB entry 1DYL <PDBx:em_entity_assembly_molwtCategory> <PDBx:em_entity_assembly_molwt id="1"> <PDBx:entity_assembly_id>1</PDBx:entity_assembly_id> <PDBx:units>MEGADALTONS</PDBx:units> <PDBx:value>30.5</PDBx:value> </PDBx:em_entity_assembly_molwt> </PDBx:em_entity_assembly_molwtCategory>
+-- Data items in this category record details about the molecular weight of an assembly component of the sample. Example 1 - based on PDB entry 1DYL and laboratory records for the structure corresponding to PDB entry 1DYL <PDBx:em_entity_assembly_molwtCategory> <PDBx:em_entity_assembly_molwt entity_assembly_id="1" id="1"> <PDBx:units>MEGADALTONS</PDBx:units> <PDBx:value>30.5</PDBx:value> </PDBx:em_entity_assembly_molwt> </PDBx:em_entity_assembly_molwtCategory>
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
@@ -5011,19 +5013,20 @@ CREATE TYPE ENUM_em_entity_assembly_molwt_units AS ENUM ( 'MEGADALTONS', 'KILODA
 CREATE TABLE em_entity_assembly_molwt (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
-	entity_assembly_id TEXT ,
 	experimental_flag ENUM_em_entity_assembly_molwt_experimental_flag ,
 	method TEXT ,
 	units ENUM_em_entity_assembly_molwt_units ,
 -- xsd:restriction/xsd:minInclusive="0.0"
 	value DECIMAL CHECK ( value >= 0.0 ) ,
 -- ATTRIBUTE
+	entity_assembly_id TEXT NOT NULL ,
+-- ATTRIBUTE
 	id TEXT NOT NULL
 );
 
 --
 -- (quoted from em_entity_assembly_naturalsourceType)
--- Data items in this category record taxonomic details about the natural source for EM assemblies and assembly components. Example 1 <PDBx:em_entity_assembly_naturalsourceCategory> <PDBx:em_entity_assembly_naturalsource id="1"> <PDBx:cellular_location xsi:nil="true" /> <PDBx:entity_assembly_id>8333</PDBx:entity_assembly_id> <PDBx:ncbi_tax_id>Escherichia coli</PDBx:ncbi_tax_id> <PDBx:organ xsi:nil="true" /> <PDBx:organelle>cytoplasm</PDBx:organelle> <PDBx:organism>K12</PDBx:organism> <PDBx:strain xsi:nil="true" /> <PDBx:tissue xsi:nil="true" /> </PDBx:em_entity_assembly_naturalsource> </PDBx:em_entity_assembly_naturalsourceCategory>
+-- Data items in this category record taxonomic details about the natural source for EM assemblies and assembly components. Example 1 <PDBx:em_entity_assembly_naturalsourceCategory> <PDBx:em_entity_assembly_naturalsource entity_assembly_id="8333" id="1"> <PDBx:cellular_location xsi:nil="true" /> <PDBx:ncbi_tax_id>Escherichia coli</PDBx:ncbi_tax_id> <PDBx:organ xsi:nil="true" /> <PDBx:organelle>cytoplasm</PDBx:organelle> <PDBx:organism>K12</PDBx:organism> <PDBx:strain xsi:nil="true" /> <PDBx:tissue xsi:nil="true" /> </PDBx:em_entity_assembly_naturalsource> </PDBx:em_entity_assembly_naturalsourceCategory>
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
@@ -5033,7 +5036,6 @@ CREATE TABLE em_entity_assembly_naturalsource (
 	cell TEXT ,
 	cellular_location TEXT ,
 	details TEXT ,
-	entity_assembly_id TEXT ,
 	ncbi_tax_id TEXT ,
 	organ TEXT ,
 	organelle TEXT ,
@@ -5041,12 +5043,14 @@ CREATE TABLE em_entity_assembly_naturalsource (
 	strain TEXT ,
 	tissue TEXT ,
 -- ATTRIBUTE
+	entity_assembly_id TEXT NOT NULL ,
+-- ATTRIBUTE
 	id TEXT NOT NULL
 );
 
 --
 -- (quoted from em_entity_assembly_recombinantType)
--- Data items in this category record details about recombinant expression of the assembly or assembly component. Example 1 <PDBx:em_entity_assembly_recombinantCategory> <PDBx:em_entity_assembly_recombinant id="1"> <PDBx:entity_assembly_id>1</PDBx:entity_assembly_id> <PDBx:organism>Escherichia coli</PDBx:organism> <PDBx:plasmid>pET17c</PDBx:plasmid> </PDBx:em_entity_assembly_recombinant> </PDBx:em_entity_assembly_recombinantCategory>
+-- Data items in this category record details about recombinant expression of the assembly or assembly component. Example 1 <PDBx:em_entity_assembly_recombinantCategory> <PDBx:em_entity_assembly_recombinant entity_assembly_id="1" id="1"> <PDBx:organism>Escherichia coli</PDBx:organism> <PDBx:plasmid>pET17c</PDBx:plasmid> </PDBx:em_entity_assembly_recombinant> </PDBx:em_entity_assembly_recombinantCategory>
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
@@ -5054,11 +5058,12 @@ CREATE TABLE em_entity_assembly_recombinant (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
 	cell TEXT ,
-	entity_assembly_id TEXT ,
 	ncbi_tax_id TEXT ,
 	organism TEXT ,
 	plasmid TEXT ,
 	strain TEXT ,
+-- ATTRIBUTE
+	entity_assembly_id TEXT NOT NULL ,
 -- ATTRIBUTE
 	id TEXT NOT NULL
 );
@@ -5390,7 +5395,7 @@ CREATE TYPE ENUM_em_imaging_cryogen AS ENUM ( 'NITROGEN', 'HELIUM' );
 DROP TYPE IF EXISTS ENUM_em_imaging_illumination_mode CASCADE;
 CREATE TYPE ENUM_em_imaging_illumination_mode AS ENUM ( 'FLOOD BEAM', 'SPOT SCAN', 'OTHER' );
 DROP TYPE IF EXISTS ENUM_em_imaging_microscope_model CASCADE;
-CREATE TYPE ENUM_em_imaging_microscope_model AS ENUM ( 'FEI MORGAGNI', 'FEI POLARA 300', 'FEI TALOS ARCTICA', 'FEI TECNAI 10', 'FEI TECNAI 12', 'FEI TECNAI 20', 'FEI TECNAI F20', 'FEI TECNAI F30', 'FEI TECNAI ARCTICA', 'FEI TECNAI SPHERA', 'FEI TECNAI SPIRIT', 'FEI TITAN', 'FEI TITAN KRIOS', 'FEI/PHILIPS CM10', 'FEI/PHILIPS CM12', 'FEI/PHILIPS CM120T', 'FEI/PHILIPS CM200FEG', 'FEI/PHILIPS CM200FEG/SOPHIE', 'FEI/PHILIPS CM200FEG/ST', 'FEI/PHILIPS CM200FEG/UT', 'FEI/PHILIPS CM200T', 'FEI/PHILIPS CM300FEG/HE', 'FEI/PHILIPS CM300FEG/ST', 'FEI/PHILIPS CM300FEG/T', 'FEI/PHILIPS EM400', 'FEI/PHILIPS EM420', 'HITACHI EF2000', 'HITACHI EF3000', 'HITACHI H7600', 'HITACHI HF2000', 'HITACHI HF3000', 'HITACHI H3000 UHVEM', 'HITACHI H-9500SD', 'JEOL 100B', 'JEOL 100CX', 'JEOL 1000EES', 'JEOL 1010', 'JEOL 1200', 'JEOL 1200EX', 'JEOL 1200EXII', 'JEOL 1230', 'JEOL 1400', 'JEOL 1400/HR + YPS FEG', 'JEOL 2000EX', 'JEOL 2000EXII', 'JEOL 2010', 'JEOL 2010F', 'JEOL 2010HT', 'JEOL 2010HC', 'JEOL 2010UHR', 'JEOL 2011', 'JEOL 2100', 'JEOL 2100F', 'JEOL 2200FS', 'JEOL 2200FSC', 'JEOL 3000SFF', 'JEOL 3100FEF', 'JEOL 3100FFC', 'JEOL 3200FS', 'JEOL 3200FSC', 'JEOL KYOTO-3000SFF', 'JEOL 4000', 'JEOL 4000EX', 'JEOL CRYO ARM 200', 'JEOL CRYO ARM 300', 'SIEMENS SULEIKA', 'TFS GLACIOS', 'TFS KRIOS', 'TFS TALOS', 'TFS TALOS F200C', 'TFS TALOS L120C', 'TFS TUNDRA', 'ZEISS LEO912', 'ZEISS LIBRA120PLUS' );
+CREATE TYPE ENUM_em_imaging_microscope_model AS ENUM ( 'FEI MORGAGNI', 'FEI POLARA 300', 'FEI TALOS ARCTICA', 'FEI TECNAI 10', 'FEI TECNAI 12', 'FEI TECNAI 20', 'FEI TECNAI F20', 'FEI TECNAI F30', 'FEI TECNAI ARCTICA', 'FEI TECNAI SPHERA', 'FEI TECNAI SPIRIT', 'FEI TITAN', 'FEI TITAN KRIOS', 'FEI/PHILIPS CM10', 'FEI/PHILIPS CM12', 'FEI/PHILIPS CM120T', 'FEI/PHILIPS CM200FEG', 'FEI/PHILIPS CM200FEG/SOPHIE', 'FEI/PHILIPS CM200FEG/ST', 'FEI/PHILIPS CM200FEG/UT', 'FEI/PHILIPS CM200T', 'FEI/PHILIPS CM300FEG/HE', 'FEI/PHILIPS CM300FEG/ST', 'FEI/PHILIPS CM300FEG/T', 'FEI/PHILIPS EM400', 'FEI/PHILIPS EM420', 'HITACHI EF2000', 'HITACHI EF3000', 'HITACHI H7600', 'HITACHI HF2000', 'HITACHI HF3000', 'HITACHI H3000 UHVEM', 'HITACHI H-9500SD', 'JEOL 100B', 'JEOL 100CX', 'JEOL 1000EES', 'JEOL 1010', 'JEOL 1200', 'JEOL 1200EX', 'JEOL 1200EXII', 'JEOL 1230', 'JEOL 1400', 'JEOL 1400/HR + YPS FEG', 'JEOL 2000EX', 'JEOL 2000EXII', 'JEOL 2010', 'JEOL 2010F', 'JEOL 2010HT', 'JEOL 2010HC', 'JEOL 2010UHR', 'JEOL 2011', 'JEOL 2100', 'JEOL 2100F', 'JEOL 2200FS', 'JEOL 2200FSC', 'JEOL 3000SFF', 'JEOL 3100FEF', 'JEOL 3100FFC', 'JEOL 3200FS', 'JEOL 3200FSC', 'JEOL KYOTO-3000SFF', 'JEOL 4000', 'JEOL 4000EX', 'JEOL CRYO ARM 200', 'JEOL CRYO ARM 300', 'SIEMENS SULEIKA', 'TFS GLACIOS', 'TFS KRIOS', 'TFS TALOS', 'TFS TALOS F200C', 'TFS TALOS L120C', 'TFS TITAN THEMIS', 'TFS TUNDRA', 'ZEISS LEO912', 'ZEISS LIBRA120PLUS' );
 DROP TYPE IF EXISTS ENUM_em_imaging_mode CASCADE;
 CREATE TYPE ENUM_em_imaging_mode AS ENUM ( '4D-STEM', 'BRIGHT FIELD', 'DARK FIELD', 'DIFFRACTION', 'OTHER' );
 DROP TYPE IF EXISTS ENUM_em_imaging_specimen_holder_model CASCADE;
@@ -7205,7 +7210,7 @@ CREATE TABLE pdbx_audit_conform_extension (
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_audit_revision_category_data_content_type CASCADE;
-CREATE TYPE ENUM_pdbx_audit_revision_category_data_content_type AS ENUM ( 'Structure model', 'NMR restraints', 'NMR shifts', 'Structure factors', 'Chemical component' );
+CREATE TYPE ENUM_pdbx_audit_revision_category_data_content_type AS ENUM ( 'Structure model', 'NMR restraints', 'NMR shifts', 'Structure factors', 'Chemical component', 'Primary map', 'Image', 'Half map', 'Additional map', 'FSC', 'Mask', 'EM metadata' );
 CREATE TABLE pdbx_audit_revision_category (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
@@ -7227,9 +7232,9 @@ CREATE TABLE pdbx_audit_revision_category (
 DROP TYPE IF EXISTS ENUM_pdbx_audit_revision_details_provider CASCADE;
 CREATE TYPE ENUM_pdbx_audit_revision_details_provider AS ENUM ( 'repository', 'author' );
 DROP TYPE IF EXISTS ENUM_pdbx_audit_revision_details_type CASCADE;
-CREATE TYPE ENUM_pdbx_audit_revision_details_type AS ENUM ( 'Initial release', 'Coordinate replacement', 'Obsolete', 'Remediation' );
+CREATE TYPE ENUM_pdbx_audit_revision_details_type AS ENUM ( 'Initial release', 'Coordinate replacement', 'Obsolete', 'Remediation', 'Data added', 'Data removed', 'Data updated' );
 DROP TYPE IF EXISTS ENUM_pdbx_audit_revision_details_data_content_type CASCADE;
-CREATE TYPE ENUM_pdbx_audit_revision_details_data_content_type AS ENUM ( 'Structure model', 'NMR restraints', 'NMR shifts', 'Structure factors', 'Chemical component' );
+CREATE TYPE ENUM_pdbx_audit_revision_details_data_content_type AS ENUM ( 'Structure model', 'NMR restraints', 'NMR shifts', 'Structure factors', 'Chemical component', 'Primary map', 'Image', 'Half map', 'Additional map', 'FSC', 'Mask', 'EM metadata' );
 CREATE TABLE pdbx_audit_revision_details (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
@@ -7252,9 +7257,9 @@ CREATE TABLE pdbx_audit_revision_details (
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_audit_revision_group_group CASCADE;
-CREATE TYPE ENUM_pdbx_audit_revision_group_group AS ENUM ( 'Advisory', 'Atomic model', 'Author supporting evidence', 'Data collection', 'Data processing', 'Database references', 'Derived calculations', 'Experimental data', 'Experimental preparation', 'Initial release', 'Non-polymer description', 'Other', 'Polymer sequence', 'Refinement description', 'Structure summary', 'Source and taxonomy', 'Version format compliance' );
+CREATE TYPE ENUM_pdbx_audit_revision_group_group AS ENUM ( 'Advisory', 'Atomic model', 'Author supporting evidence', 'Data collection', 'Data processing', 'Database references', 'Derived calculations', 'Experimental data', 'Experimental preparation', 'Non-polymer description', 'Other', 'Polymer sequence', 'Refinement description', 'Structure summary', 'Experimental summary', 'Source and taxonomy', 'Version format compliance' );
 DROP TYPE IF EXISTS ENUM_pdbx_audit_revision_group_data_content_type CASCADE;
-CREATE TYPE ENUM_pdbx_audit_revision_group_data_content_type AS ENUM ( 'Structure model', 'NMR restraints', 'NMR shifts', 'Structure factors', 'Chemical component' );
+CREATE TYPE ENUM_pdbx_audit_revision_group_data_content_type AS ENUM ( 'Structure model', 'NMR restraints', 'NMR shifts', 'Structure factors', 'Chemical component', 'Primary map', 'Image', 'Half map', 'Additional map', 'FSC', 'Mask', 'EM metadata' );
 CREATE TABLE pdbx_audit_revision_group (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
@@ -7274,7 +7279,7 @@ CREATE TABLE pdbx_audit_revision_group (
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_audit_revision_item_data_content_type CASCADE;
-CREATE TYPE ENUM_pdbx_audit_revision_item_data_content_type AS ENUM ( 'Structure model', 'NMR restraints', 'NMR shifts', 'Structure factors', 'Chemical component' );
+CREATE TYPE ENUM_pdbx_audit_revision_item_data_content_type AS ENUM ( 'Structure model', 'NMR restraints', 'NMR shifts', 'Structure factors', 'Chemical component', 'Primary map', 'Image', 'Half map', 'Additional map', 'FSC', 'Mask', 'EM metadata' );
 CREATE TABLE pdbx_audit_revision_item (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
@@ -7557,7 +7562,7 @@ CREATE TABLE pdbx_chem_comp_descriptor (
 
 --
 -- (quoted from pdbx_chem_comp_featureType)
--- Additional features associated with the chemical component. Example 1 - <PDBx:pdbx_chem_comp_featureCategory> <PDBx:pdbx_chem_comp_feature comp_id="00X" source="PDB" type="ENZYME INHIBITED" value="ASPARTIC PROTEINASE"></PDBx:pdbx_chem_comp_feature> <PDBx:pdbx_chem_comp_feature comp_id="00X" source="PDB" type="FUNCTION" value="Transistion-state analogue inhibitor"></PDBx:pdbx_chem_comp_feature> <PDBx:pdbx_chem_comp_feature comp_id="00X" source="IUCR" type="STRUCTURE IMAGE URL" value="http://journals.iucr.org/00X.jpg"></PDBx:pdbx_chem_comp_feature> </PDBx:pdbx_chem_comp_featureCategory>
+-- Additional features associated with the chemical component. Example 1 - <PDBx:pdbx_chem_comp_featureCategory> <PDBx:pdbx_chem_comp_feature comp_id="05L" source="PDB" type="CARBOHYDRATE ANOMER" value="beta"></PDBx:pdbx_chem_comp_feature> <PDBx:pdbx_chem_comp_feature comp_id="05L" source="PDB" type="CARBOHYDRATE ISOMER" value="D"></PDBx:pdbx_chem_comp_feature> <PDBx:pdbx_chem_comp_feature comp_id="07E" source="PDB" type="CARBOHYDRATE RING" value="pyranose"></PDBx:pdbx_chem_comp_feature> </PDBx:pdbx_chem_comp_featureCategory>
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-v50.xsd (PDBx), schema location: pdbx-v50.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
@@ -7776,7 +7781,7 @@ CREATE TYPE ENUM_pdbx_chem_comp_pcm_polypeptide_position AS ENUM ( 'C-terminal',
 DROP TYPE IF EXISTS ENUM_pdbx_chem_comp_pcm_position CASCADE;
 CREATE TYPE ENUM_pdbx_chem_comp_pcm_position AS ENUM ( 'Amino-acid side chain', 'Amino-acid backbone', 'Amino-acid side chain and backbone' );
 DROP TYPE IF EXISTS ENUM_pdbx_chem_comp_pcm_type CASCADE;
-CREATE TYPE ENUM_pdbx_chem_comp_pcm_type AS ENUM ( '12-Hydroxyfarnesylation', '12-Oxomyristoylation', '12R-Hydroxymyristoylation', '14-Hydroxy-10,13-dioxo-7-heptadecenoic acid', '(3-Aminopropyl)(5''-adenosyl)phosphono amidation', '2-Aminoadipylation', '2-Aminoethylphosphorylation', '2-Cholinephosphorylation', '2-Hydroxyisobutyrylation', '2-Oxo-5,5-dimethylhexanoylation', '2-Oxobutanoic acid', '2,3-Dicarboxypropylation', '3-Oxoalanine', '3-Phenyllactic acid', '(3R)-3-Hydroxybutyrylation', '4-Phosphopantetheine', 'ADP-ribosylation', 'ADP-riboxanation', 'AMPylation', 'Acetamidation', 'Acetamidomethylation', 'Acetylation', 'Alanylation', 'Allysine', 'Amination', 'Arachidoylation', 'Archaeol', 'Arginylation', 'Arsenylation', 'Asparaginylation', 'Aspartylation', 'Bacillithiolation', 'Benzoylation', 'Benzylation', 'Beta-amino acid', 'Beta-hydroxybutyrylation', 'Beta-lysylation', 'Beta-mercaptoethanol', 'Biotinylation', 'Bromination', 'Butyrylation', 'Carbamoylation', 'Carboxyethylation', 'Carboxylation', 'Carboxymethylation', 'cGMPylation', 'Chlorination', 'Cholesterylation', 'Citrullination', 'Crotonylation', 'Cyanation', 'Cysteinylation', 'C-Mannosylation', 'Deamidation', 'Decanoylation', 'Decarboxylation', 'Dehydroamino acid', 'Dehydrocoelenterazination', 'Dehydrogenation', 'Dehydroxylation', 'Deoxidation', 'Deoxyhypusine', 'Diacylglycerol', 'Dihydroxyacetonation', 'Dimethylamination', 'Diphosphorylation', 'Diphthamide', 'Dipyrromethane methylation', 'Dopaminylation', 'D-alanylation', 'D-arginylation', 'D-asparaginylation', 'D-aspartylation', 'D-cysteinylation', 'D-glutaminylation', 'D-glutamylation', 'D-histidinylation', 'D-isoleucylation', 'D-lactate', 'D-leucylation', 'D-lysylation', 'D-methionylation', 'D-phenylalanylation', 'D-prolylation', 'D-serylation', 'D-threoninylation', 'D-tryptophanylation', 'D-tyrosination', 'D-valylation', 'Ethylation', 'Ethylsulfanylation', 'Farnesylation', 'Fluorination', 'Formylation', 'GMPylation', 'Geranylgeranylation', 'Glutaminylation', 'Glutamylation', 'Glutarylation', 'Glutathionylation', 'Glycerophosphorylation', 'Glycerylphosphorylethanolamination', 'Glycylation', 'Heptanoylation', 'Hexanoylation', 'Histaminylation', 'Histidinylation', 'Hydrogenation', 'Hydroperoxylation', 'Hydroxyamination', 'Hydroxyethylation', 'Hydroxylation', 'Hydroxymethylation', 'Hydroxysulfanylation', 'Hypusine', 'Iodination', 'Isoleucylation', 'Lactoylation', 'Laurylation', 'Leucylation', 'Lipoylation', 'L-lactate', 'Lysylation', 'Malonylation', 'Methionylation', 'Methoxylation', 'Methylamination', 'Methylation', 'Methylsulfanylation', 'Methylsulfation', 'Myristoylation', 'N-pyruvic acid 2-iminylation', 'N-methylcarbamoylation', 'Nitration', 'Nitrosylation', 'None', 'Noradrenylation', 'Norleucine', 'Norvaline', 'N-Glycosylation', 'Octanoylation', 'Oleoylation', 'Ornithine', 'Oxidation', 'O-Glycosylation', 'Palmitoleoylation', 'Palmitoylation', 'Pentadecanoylation', 'Pentanoylation', 'Phenylalanylation', 'Phosphatidylethanolamine amidation', 'Phosphoenolpyruvate', 'Phosphorylation', 'Prolylation', 'Propionylation', 'Pyridoxal phosphate', 'Pyrrolidone carboxylic acid', 'Pyruvic acid', 'Retinoylation', 'Selanylation', 'Selenomethionine', 'Serotonylation', 'Serylation', 'Stearoylation', 'Stereoisomerisation', 'Succinamide ring', 'Succination', 'Succinylation', 'Sulfanylmethylation', 'Sulfation', 'Sulfhydration', 'S-Glycosylation', 'Tert-butylation', 'Tert-butyloxycarbonylation', 'Threoninylation', 'Thyroxine', 'Triiodothyronine', 'Triphosphorylation', 'Tryptophanylation', 'Tyrosination', 'UMPylation', 'Valylation' );
+CREATE TYPE ENUM_pdbx_chem_comp_pcm_type AS ENUM ( '12-Hydroxyfarnesylation', '12-Oxomyristoylation', '12R-Hydroxymyristoylation', '14-Hydroxy-10,13-dioxo-7-heptadecenoic acid', '(3-Aminopropyl)(5''-adenosyl)phosphono amidation', '2-Aminoadipylation', '2-Aminoethylphosphorylation', '2-Cholinephosphorylation', '2-Hydroxyisobutyrylation', '2-Oxo-5,5-dimethylhexanoylation', '2-Oxobutanoic acid', '2,3-Dicarboxypropylation', '3-Oxoalanine', '3-Phenyllactic acid', '(3R)-3-Hydroxybutyrylation', '4-Phosphopantetheine', 'ADP-ribosylation', 'ADP-riboxanation', 'AMPylation', 'Acetamidation', 'Acetamidomethylation', 'Acetylation', 'Alanylation', 'Allysine', 'Amination', 'Arachidoylation', 'Archaeol', 'Arginylation', 'Arsenylation', 'Asparaginylation', 'Aspartylation', 'Bacillithiolation', 'Benzoylation', 'Benzylation', 'Beta-amino acid', 'Beta-hydroxybutyrylation', 'Beta-lysylation', 'Beta-mercaptoethanol', 'Biotinylation', 'Bromination', 'Butyrylation', 'Carbamoylation', 'Carboxyethylation', 'Carboxylation', 'Carboxymethylation', 'cGMPylation', 'Chlorination', 'Cholesterylation', 'Citrullination', 'Crotonylation', 'Cyanation', 'Cysteinylation', 'C-Mannosylation', 'Deamidation', 'Decanoylation', 'Decarboxylation', 'Dehydroamino acid', 'Dehydrocoelenterazination', 'Dehydrogenation', 'Dehydroxylation', 'Deoxidation', 'Deoxyhypusine', 'Diacylglycerol', 'Dihydroxyacetonation', 'Dimethylamination', 'Diphosphorylation', 'Diphthamide', 'Dipyrromethane methylation', 'Dopaminylation', 'D-alanylation', 'D-arginylation', 'D-asparaginylation', 'D-aspartylation', 'D-cysteinylation', 'D-glutaminylation', 'D-glutamylation', 'D-histidinylation', 'D-isoleucylation', 'D-lactate', 'D-leucylation', 'D-lysylation', 'D-methionylation', 'D-phenylalanylation', 'D-prolylation', 'D-serylation', 'D-threoninylation', 'D-tryptophanylation', 'D-tyrosination', 'D-valylation', 'Ethylation', 'Ethylsulfanylation', 'Farnesylation', 'Fluorination', 'Formylation', 'GMPylation', 'Geranylgeranylation', 'Glutaminylation', 'Glutamylation', 'Glutarylation', 'Glutathionylation', 'Glycerophosphorylation', 'Glycerylphosphorylethanolamination', 'Glycylation', 'Heptanoylation', 'Hexanoylation', 'Histaminylation', 'Histidinylation', 'Hydrogenation', 'Hydroperoxylation', 'Hydroxyamination', 'Hydroxyethylation', 'Hydroxylation', 'Hydroxymethylation', 'Hydroxysulfanylation', 'Hypusine', 'Iodination', 'Isoleucylation', 'Lactoylation', 'Laurylation', 'Leucylation', 'Lipoylation', 'L-lactate', 'Lysylation', 'Malonylation', 'Methacrylation', 'Methionylation', 'Methoxylation', 'Methylamination', 'Methylation', 'Methylsulfanylation', 'Methylsulfation', 'Myristoylation', 'N-pyruvic acid 2-iminylation', 'N-methylcarbamoylation', 'Nitration', 'Nitrosylation', 'None', 'Noradrenylation', 'Norleucine', 'Norvaline', 'N-Glycosylation', 'Octanoylation', 'Oleoylation', 'Ornithine', 'Oxidation', 'O-Glycosylation', 'Palmitoleoylation', 'Palmitoylation', 'Pentadecanoylation', 'Pentanoylation', 'Phenylalanylation', 'Phosphatidylethanolamine amidation', 'Phosphoenolpyruvate', 'Phosphorylation', 'Prolylation', 'Propionylation', 'Pyridoxal phosphate', 'Pyrrolidone carboxylic acid', 'Pyruvic acid', 'Retinoylation', 'Selanylation', 'Selenomethionine', 'Serotonylation', 'Serylation', 'Stearoylation', 'Stereoisomerisation', 'Succinamide ring', 'Succination', 'Succinylation', 'Sulfanylmethylation', 'Sulfation', 'Sulfhydration', 'S-Glycosylation', 'Tert-butylation', 'Tert-butyloxycarbonylation', 'Threoninylation', 'Thyroxine', 'Triiodothyronine', 'Triphosphorylation', 'Tryptophanylation', 'Tyrosination', 'UMPylation', 'Valylation' );
 CREATE TABLE pdbx_chem_comp_pcm (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
@@ -10765,7 +10770,7 @@ CREATE TABLE pdbx_missing_residue_list (
 DROP TYPE IF EXISTS ENUM_pdbx_modification_feature_category CASCADE;
 CREATE TYPE ENUM_pdbx_modification_feature_category AS ENUM ( 'ADP-ribose', 'Amino acid', 'Biotin', 'Carbohydrate', 'Chromophore/chromophore-like', 'Covalent chemical modification', 'Crosslinker', 'Disulfide bridge', 'Flavin', 'Heme/heme-like', 'Isopeptide bond', 'Lipid/lipid-like', 'Named protein modification', 'Non-standard linkage', 'Non-standard residue', 'Nucleotide monophosphate', 'Terminal acetylation', 'Terminal amidation' );
 DROP TYPE IF EXISTS ENUM_pdbx_modification_feature_type CASCADE;
-CREATE TYPE ENUM_pdbx_modification_feature_type AS ENUM ( '12-Hydroxyfarnesylation', '12-Oxomyristoylation', '12R-Hydroxymyristoylation', '14-Hydroxy-10,13-dioxo-7-heptadecenoic acid', '(3-Aminopropyl)(5''-adenosyl)phosphono amidation', '2-Aminoadipylation', '2-Aminoethylphosphorylation', '2-Cholinephosphorylation', '2-Hydroxyisobutyrylation', '2-Oxo-5,5-dimethylhexanoylation', '2-Oxobutanoic acid', '2,3-Dicarboxypropylation', '3-Oxoalanine', '3-Phenyllactic acid', '(3R)-3-Hydroxybutyrylation', '4-Phosphopantetheine', 'ADP-ribosylation', 'ADP-riboxanation', 'AMPylation', 'Acetamidation', 'Acetamidomethylation', 'Acetylation', 'Alanylation', 'Allysine', 'Amination', 'Arachidoylation', 'Archaeol', 'Arginylation', 'Arsenylation', 'Asparaginylation', 'Aspartylation', 'Bacillithiolation', 'Benzoylation', 'Benzylation', 'Beta-amino acid', 'Beta-hydroxybutyrylation', 'Beta-lysylation', 'Beta-mercaptoethanol', 'Biotinylation', 'Bromination', 'Butyrylation', 'Carbamoylation', 'Carboxyethylation', 'Carboxylation', 'Carboxymethylation', 'cGMPylation', 'Chlorination', 'Cholesterylation', 'Citrullination', 'Crotonylation', 'Cyanation', 'Cysteinylation', 'C-Mannosylation', 'Deamidation', 'Decanoylation', 'Decarboxylation', 'Dehydroamino acid', 'Dehydrocoelenterazination', 'Dehydrogenation', 'Dehydroxylation', 'Deoxidation', 'Deoxyhypusine', 'Diacylglycerol', 'Dihydroxyacetonation', 'Dimethylamination', 'Diphosphorylation', 'Diphthamide', 'Dipyrromethane methylation', 'Dopaminylation', 'D-alanylation', 'D-arginylation', 'D-asparaginylation', 'D-aspartylation', 'D-cysteinylation', 'D-glutaminylation', 'D-glutamylation', 'D-histidinylation', 'D-isoleucylation', 'D-lactate', 'D-leucylation', 'D-lysylation', 'D-methionylation', 'D-phenylalanylation', 'D-prolylation', 'D-serylation', 'D-threoninylation', 'D-tryptophanylation', 'D-tyrosination', 'D-valylation', 'Ethylation', 'Ethylsulfanylation', 'Farnesylation', 'Fluorination', 'Formylation', 'GMPylation', 'Geranylgeranylation', 'Glutaminylation', 'Glutamylation', 'Glutarylation', 'Glutathionylation', 'Glycerophosphorylation', 'Glycerylphosphorylethanolamination', 'Glycylation', 'Heptanoylation', 'Hexanoylation', 'Histaminylation', 'Histidinylation', 'Hydrogenation', 'Hydroperoxylation', 'Hydroxyamination', 'Hydroxyethylation', 'Hydroxylation', 'Hydroxymethylation', 'Hydroxysulfanylation', 'Hypusine', 'Iodination', 'Isoleucylation', 'Lactoylation', 'Laurylation', 'Leucylation', 'Lipoylation', 'L-lactate', 'Lysylation', 'Malonylation', 'Methionylation', 'Methoxylation', 'Methylamination', 'Methylation', 'Methylsulfanylation', 'Methylsulfation', 'Myristoylation', 'N-pyruvic acid 2-iminylation', 'N-methylcarbamoylation', 'Nitration', 'Nitrosylation', 'None', 'Noradrenylation', 'Norleucine', 'Norvaline', 'N-Glycosylation', 'Octanoylation', 'Oleoylation', 'Ornithine', 'Oxidation', 'O-Glycosylation', 'Palmitoleoylation', 'Palmitoylation', 'Pentadecanoylation', 'Pentanoylation', 'Phenylalanylation', 'Phosphatidylethanolamine amidation', 'Phosphoenolpyruvate', 'Phosphorylation', 'Prolylation', 'Propionylation', 'Pyridoxal phosphate', 'Pyrrolidone carboxylic acid', 'Pyruvic acid', 'Retinoylation', 'Selanylation', 'Selenomethionine', 'Serotonylation', 'Serylation', 'Stearoylation', 'Stereoisomerisation', 'Succinamide ring', 'Succination', 'Succinylation', 'Sulfanylmethylation', 'Sulfation', 'Sulfhydration', 'S-Glycosylation', 'Tert-butylation', 'Tert-butyloxycarbonylation', 'Threoninylation', 'Thyroxine', 'Triiodothyronine', 'Triphosphorylation', 'Tryptophanylation', 'Tyrosination', 'UMPylation', 'Valylation' );
+CREATE TYPE ENUM_pdbx_modification_feature_type AS ENUM ( '12-Hydroxyfarnesylation', '12-Oxomyristoylation', '12R-Hydroxymyristoylation', '14-Hydroxy-10,13-dioxo-7-heptadecenoic acid', '(3-Aminopropyl)(5''-adenosyl)phosphono amidation', '2-Aminoadipylation', '2-Aminoethylphosphorylation', '2-Cholinephosphorylation', '2-Hydroxyisobutyrylation', '2-Oxo-5,5-dimethylhexanoylation', '2-Oxobutanoic acid', '2,3-Dicarboxypropylation', '3-Oxoalanine', '3-Phenyllactic acid', '(3R)-3-Hydroxybutyrylation', '4-Phosphopantetheine', 'ADP-ribosylation', 'ADP-riboxanation', 'AMPylation', 'Acetamidation', 'Acetamidomethylation', 'Acetylation', 'Alanylation', 'Allysine', 'Amination', 'Arachidoylation', 'Archaeol', 'Arginylation', 'Arsenylation', 'Asparaginylation', 'Aspartylation', 'Bacillithiolation', 'Benzoylation', 'Benzylation', 'Beta-amino acid', 'Beta-hydroxybutyrylation', 'Beta-lysylation', 'Beta-mercaptoethanol', 'Biotinylation', 'Bromination', 'Butyrylation', 'Carbamoylation', 'Carboxyethylation', 'Carboxylation', 'Carboxymethylation', 'cGMPylation', 'Chlorination', 'Cholesterylation', 'Citrullination', 'Crotonylation', 'Cyanation', 'Cysteinylation', 'C-Mannosylation', 'Deamidation', 'Decanoylation', 'Decarboxylation', 'Dehydroamino acid', 'Dehydrocoelenterazination', 'Dehydrogenation', 'Dehydroxylation', 'Deoxidation', 'Deoxyhypusine', 'Diacylglycerol', 'Dihydroxyacetonation', 'Dimethylamination', 'Diphosphorylation', 'Diphthamide', 'Dipyrromethane methylation', 'Dopaminylation', 'D-alanylation', 'D-arginylation', 'D-asparaginylation', 'D-aspartylation', 'D-cysteinylation', 'D-glutaminylation', 'D-glutamylation', 'D-histidinylation', 'D-isoleucylation', 'D-lactate', 'D-leucylation', 'D-lysylation', 'D-methionylation', 'D-phenylalanylation', 'D-prolylation', 'D-serylation', 'D-threoninylation', 'D-tryptophanylation', 'D-tyrosination', 'D-valylation', 'Ethylation', 'Ethylsulfanylation', 'Farnesylation', 'Fluorination', 'Formylation', 'GMPylation', 'Geranylgeranylation', 'Glutaminylation', 'Glutamylation', 'Glutarylation', 'Glutathionylation', 'Glycerophosphorylation', 'Glycerylphosphorylethanolamination', 'Glycylation', 'Heptanoylation', 'Hexanoylation', 'Histaminylation', 'Histidinylation', 'Hydrogenation', 'Hydroperoxylation', 'Hydroxyamination', 'Hydroxyethylation', 'Hydroxylation', 'Hydroxymethylation', 'Hydroxysulfanylation', 'Hypusine', 'Iodination', 'Isoleucylation', 'Lactoylation', 'Laurylation', 'Leucylation', 'Lipoylation', 'L-lactate', 'Lysylation', 'Malonylation', 'Methacrylation', 'Methionylation', 'Methoxylation', 'Methylamination', 'Methylation', 'Methylsulfanylation', 'Methylsulfation', 'Myristoylation', 'N-pyruvic acid 2-iminylation', 'N-methylcarbamoylation', 'Nitration', 'Nitrosylation', 'None', 'Noradrenylation', 'Norleucine', 'Norvaline', 'N-Glycosylation', 'Octanoylation', 'Oleoylation', 'Ornithine', 'Oxidation', 'O-Glycosylation', 'Palmitoleoylation', 'Palmitoylation', 'Pentadecanoylation', 'Pentanoylation', 'Phenylalanylation', 'Phosphatidylethanolamine amidation', 'Phosphoenolpyruvate', 'Phosphorylation', 'Prolylation', 'Propionylation', 'Pyridoxal phosphate', 'Pyrrolidone carboxylic acid', 'Pyruvic acid', 'Retinoylation', 'Selanylation', 'Selenomethionine', 'Serotonylation', 'Serylation', 'Stearoylation', 'Stereoisomerisation', 'Succinamide ring', 'Succination', 'Succinylation', 'Sulfanylmethylation', 'Sulfation', 'Sulfhydration', 'S-Glycosylation', 'Tert-butylation', 'Tert-butyloxycarbonylation', 'Threoninylation', 'Thyroxine', 'Triiodothyronine', 'Triphosphorylation', 'Tryptophanylation', 'Tyrosination', 'UMPylation', 'Valylation' );
 CREATE TABLE pdbx_modification_feature (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	document_id TEXT ,
@@ -15397,6 +15402,12 @@ CREATE TABLE refine (
 	"aniso_B33" DECIMAL ,
 	"correlation_coeff_Fo_to_Fc" DECIMAL ,
 	"correlation_coeff_Fo_to_Fc_free" DECIMAL ,
+-- xsd:restriction/xsd:maxInclusive="1.0"
+-- xsd:restriction/xsd:minInclusive="-1.0"
+	"correlation_coeff_I_to_Fcsqd_free" DECIMAL CHECK ( "correlation_coeff_I_to_Fcsqd_free" >= -1.0 AND "correlation_coeff_I_to_Fcsqd_free" <= 1.0 ) ,
+-- xsd:restriction/xsd:maxInclusive="1.0"
+-- xsd:restriction/xsd:minInclusive="-1.0"
+	"correlation_coeff_I_to_Fcsqd_work" DECIMAL CHECK ( "correlation_coeff_I_to_Fcsqd_work" >= -1.0 AND "correlation_coeff_I_to_Fcsqd_work" <= 1.0 ) ,
 	details TEXT ,
 -- omit an attribute having a fixed value: @units="electrons_per_angstroms_cubed"
 	diff_density_max DECIMAL ,
@@ -15829,6 +15840,14 @@ CREATE TABLE refine_ls_shell (
 	"R_factor_all" DECIMAL CHECK ( "R_factor_all" >= 0.0 ) ,
 -- xsd:restriction/xsd:minInclusive="0.0"
 	"R_factor_obs" DECIMAL CHECK ( "R_factor_obs" >= 0.0 ) ,
+	"correlation_coeff_Fo_to_Fc" DECIMAL ,
+	"correlation_coeff_Fo_to_Fc_free" DECIMAL ,
+-- xsd:restriction/xsd:maxInclusive="1.0"
+-- xsd:restriction/xsd:minInclusive="-1.0"
+	"correlation_coeff_I_to_Fcsqd_free" DECIMAL CHECK ( "correlation_coeff_I_to_Fcsqd_free" >= -1.0 AND "correlation_coeff_I_to_Fcsqd_free" <= 1.0 ) ,
+-- xsd:restriction/xsd:maxInclusive="1.0"
+-- xsd:restriction/xsd:minInclusive="-1.0"
+	"correlation_coeff_I_to_Fcsqd_work" DECIMAL CHECK ( "correlation_coeff_I_to_Fcsqd_work" >= -1.0 AND "correlation_coeff_I_to_Fcsqd_work" <= 1.0 ) ,
 -- xsd:restriction/xsd:minInclusive="0.0"
 	d_res_low DECIMAL CHECK ( d_res_low >= 0.0 ) ,
 -- xsd:restriction/xsd:minInclusive="0"
@@ -17517,13 +17536,13 @@ CREATE TABLE valence_ref (
 --ALTER TABLE em_entity_assembly ADD CONSTRAINT UNQ_em_entity_assembly UNIQUE ( document_id, id );
 
 -- (derived from xsd:key[@name='em_entity_assembly_molwtKey_0'])
---ALTER TABLE em_entity_assembly_molwt ADD CONSTRAINT UNQ_em_entity_assembly_molwt UNIQUE ( document_id, id );
+--ALTER TABLE em_entity_assembly_molwt ADD CONSTRAINT UNQ_em_entity_assembly_molwt UNIQUE ( document_id, entity_assembly_id, id );
 
 -- (derived from xsd:key[@name='em_entity_assembly_naturalsourceKey_0'])
---ALTER TABLE em_entity_assembly_naturalsource ADD CONSTRAINT UNQ_em_entity_assembly_naturalsource UNIQUE ( document_id, id );
+--ALTER TABLE em_entity_assembly_naturalsource ADD CONSTRAINT UNQ_em_entity_assembly_naturalsource UNIQUE ( document_id, entity_assembly_id, id );
 
 -- (derived from xsd:key[@name='em_entity_assembly_recombinantKey_0'])
---ALTER TABLE em_entity_assembly_recombinant ADD CONSTRAINT UNQ_em_entity_assembly_recombinant UNIQUE ( document_id, id );
+--ALTER TABLE em_entity_assembly_recombinant ADD CONSTRAINT UNQ_em_entity_assembly_recombinant UNIQUE ( document_id, entity_assembly_id, id );
 
 -- (derived from xsd:key[@name='em_entity_assembly_syntheticKey_0'])
 --ALTER TABLE em_entity_assembly_synthetic ADD CONSTRAINT UNQ_em_entity_assembly_synthetic UNIQUE ( document_id, entity_assembly_id, id );

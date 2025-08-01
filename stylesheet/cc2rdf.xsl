@@ -2326,15 +2326,17 @@
   </xsl:template>
 
   <xsl:template match="PDBx:datablock/PDBx:em_entity_assembly_molwtCategory/PDBx:em_entity_assembly_molwt">
+      <xsl:variable name="entity_assembly_id_truncated"><xsl:choose><xsl:when test="string-length(@entity_assembly_id)&lt;64"><xsl:value-of select="@entity_assembly_id"/></xsl:when><xsl:when test="contains(@entity_assembly_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@entity_assembly_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@entity_assembly_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
+      <xsl:variable name="entity_assembly_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($entity_assembly_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
       <xsl:variable name="id_truncated"><xsl:choose><xsl:when test="string-length(@id)&lt;64"><xsl:value-of select="@id"/></xsl:when><xsl:when test="contains(@id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
       <xsl:variable name="id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
       <PDBo:has_em_entity_assembly_molwt>
-      <PDBo:em_entity_assembly_molwt rdf:about="{$base}/em_entity_assembly_molwt/{$id_encoded}">
+      <PDBo:em_entity_assembly_molwt rdf:about="{$base}/em_entity_assembly_molwt/{$entity_assembly_id_encoded},{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
-      <xsl:if test="PDBx:entity_assembly_id!=''">
+      <xsl:if test="@entity_assembly_id!=''">
 	<PDBo:reference_to_em_entity_assembly>
-	  <rdf:Description rdf:about="{$base}/em_entity_assembly/{translate(PDBx:entity_assembly_id,' ^','__')}">
-	    <PDBo:referenced_by_em_entity_assembly_molwt rdf:resource="{$base}/em_entity_assembly_molwt/{$id_encoded}"/>
+	  <rdf:Description rdf:about="{$base}/em_entity_assembly/">
+	    <PDBo:referenced_by_em_entity_assembly_molwt rdf:resource="{$base}/em_entity_assembly_molwt/{$entity_assembly_id_encoded},{$id_encoded}"/>
 	  </rdf:Description>
 	</PDBo:reference_to_em_entity_assembly>
 	<!-- em_entity_assemblyKeyref_0_0_0_0 -->
@@ -2348,15 +2350,17 @@
   </xsl:template>
 
   <xsl:template match="PDBx:datablock/PDBx:em_entity_assembly_naturalsourceCategory/PDBx:em_entity_assembly_naturalsource">
+      <xsl:variable name="entity_assembly_id_truncated"><xsl:choose><xsl:when test="string-length(@entity_assembly_id)&lt;64"><xsl:value-of select="@entity_assembly_id"/></xsl:when><xsl:when test="contains(@entity_assembly_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@entity_assembly_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@entity_assembly_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
+      <xsl:variable name="entity_assembly_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($entity_assembly_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
       <xsl:variable name="id_truncated"><xsl:choose><xsl:when test="string-length(@id)&lt;64"><xsl:value-of select="@id"/></xsl:when><xsl:when test="contains(@id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
       <xsl:variable name="id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
       <PDBo:has_em_entity_assembly_naturalsource>
-      <PDBo:em_entity_assembly_naturalsource rdf:about="{$base}/em_entity_assembly_naturalsource/{$id_encoded}">
+      <PDBo:em_entity_assembly_naturalsource rdf:about="{$base}/em_entity_assembly_naturalsource/{$entity_assembly_id_encoded},{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
-      <xsl:if test="PDBx:entity_assembly_id!=''">
+      <xsl:if test="@entity_assembly_id!=''">
 	<PDBo:reference_to_em_entity_assembly>
-	  <rdf:Description rdf:about="{$base}/em_entity_assembly/{translate(PDBx:entity_assembly_id,' ^','__')}">
-	    <PDBo:referenced_by_em_entity_assembly_naturalsource rdf:resource="{$base}/em_entity_assembly_naturalsource/{$id_encoded}"/>
+	  <rdf:Description rdf:about="{$base}/em_entity_assembly/">
+	    <PDBo:referenced_by_em_entity_assembly_naturalsource rdf:resource="{$base}/em_entity_assembly_naturalsource/{$entity_assembly_id_encoded},{$id_encoded}"/>
 	  </rdf:Description>
 	</PDBo:reference_to_em_entity_assembly>
 	<!-- em_entity_assemblyKeyref_0_0_1_0 -->
@@ -2370,15 +2374,17 @@
   </xsl:template>
 
   <xsl:template match="PDBx:datablock/PDBx:em_entity_assembly_recombinantCategory/PDBx:em_entity_assembly_recombinant">
+      <xsl:variable name="entity_assembly_id_truncated"><xsl:choose><xsl:when test="string-length(@entity_assembly_id)&lt;64"><xsl:value-of select="@entity_assembly_id"/></xsl:when><xsl:when test="contains(@entity_assembly_id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@entity_assembly_id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@entity_assembly_id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
+      <xsl:variable name="entity_assembly_id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($entity_assembly_id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
       <xsl:variable name="id_truncated"><xsl:choose><xsl:when test="string-length(@id)&lt;64"><xsl:value-of select="@id"/></xsl:when><xsl:when test="contains(@id,',')"><xsl:call-template name="substring-before-last"><xsl:with-param name="str" select="substring(@id,1,64)"/><xsl:with-param name="substr">,</xsl:with-param></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="substring(@id,1,64)"/></xsl:otherwise></xsl:choose></xsl:variable>
       <xsl:variable name="id_encoded"><xsl:call-template name="url-encode"><xsl:with-param name="str" select="translate(normalize-space($id_truncated),' ^','__')"/></xsl:call-template></xsl:variable>
       <PDBo:has_em_entity_assembly_recombinant>
-      <PDBo:em_entity_assembly_recombinant rdf:about="{$base}/em_entity_assembly_recombinant/{$id_encoded}">
+      <PDBo:em_entity_assembly_recombinant rdf:about="{$base}/em_entity_assembly_recombinant/{$entity_assembly_id_encoded},{$id_encoded}">
       <PDBo:of_datablock rdf:resource="{$base}"/>
-      <xsl:if test="PDBx:entity_assembly_id!=''">
+      <xsl:if test="@entity_assembly_id!=''">
 	<PDBo:reference_to_em_entity_assembly>
-	  <rdf:Description rdf:about="{$base}/em_entity_assembly/{translate(PDBx:entity_assembly_id,' ^','__')}">
-	    <PDBo:referenced_by_em_entity_assembly_recombinant rdf:resource="{$base}/em_entity_assembly_recombinant/{$id_encoded}"/>
+	  <rdf:Description rdf:about="{$base}/em_entity_assembly/">
+	    <PDBo:referenced_by_em_entity_assembly_recombinant rdf:resource="{$base}/em_entity_assembly_recombinant/{$entity_assembly_id_encoded},{$id_encoded}"/>
 	  </rdf:Description>
 	</PDBo:reference_to_em_entity_assembly>
 	<!-- em_entity_assemblyKeyref_0_0_2_0 -->

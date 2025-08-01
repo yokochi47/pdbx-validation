@@ -2134,10 +2134,12 @@ pdbx_audit_revision_group.ordinal
 pdbx_audit_revision_group.revision_ordinal
 pdbx_audit_revision_history.data_content_type
 pdbx_audit_revision_history.internal_deposition_id
+pdbx_audit_revision_history.internal_part_number
 pdbx_audit_revision_history.internal_version
 pdbx_audit_revision_history.major_revision
 pdbx_audit_revision_history.minor_revision
 pdbx_audit_revision_history.ordinal
+pdbx_audit_revision_history.part_number
 pdbx_audit_revision_history.revision_date
 pdbx_audit_revision_item.data_content_type
 pdbx_audit_revision_item.item
@@ -5707,6 +5709,8 @@ refine_B_iso.treatment
 refine_B_iso.value
 refine.correlation_coeff_Fo_to_Fc
 refine.correlation_coeff_Fo_to_Fc_free
+refine.correlation_coeff_I_to_Fcsqd_free
+refine.correlation_coeff_I_to_Fcsqd_work
 refine.details
 refine.diff_density_max
 refine.diff_density_max_esd
@@ -5822,6 +5826,10 @@ refine.ls_R_factor_R_free_error_details
 refine.ls_R_factor_R_work
 refine.ls_R_Fsqd_factor_obs
 refine.ls_R_I_factor_obs
+refine_ls_shell.correlation_coeff_Fo_to_Fc
+refine_ls_shell.correlation_coeff_Fo_to_Fc_free
+refine_ls_shell.correlation_coeff_I_to_Fcsqd_free
+refine_ls_shell.correlation_coeff_I_to_Fcsqd_work
 refine_ls_shell.d_res_high
 refine_ls_shell.d_res_low
 refine_ls_shell.number_reflns_all

@@ -1,11 +1,11 @@
 ###########################################################################
 #
 # File:  mmcif_pdbx_validation-v4.dic
-# Date:  Thu Nov  7 13:02:23 JST 2024
+# Date:  Fri Aug  1 12:24:56 JST 2025
 # Created from:
-#        mmcif_pdbx_v50.dic   - PDB Exchange Data Dictionary (V5.399)
-#        http://wwpdb.org/validation/schema/wwpdb_validation_v6.03.xsd
-#         - a XML schema for wwPDB validation reports, v6.03, rev. 2024-08-29
+#        mmcif_pdbx_v50.dic   - PDB Exchange Data Dictionary (V5.400)
+#        http://wwpdb.org/validation/schema/wwpdb_validation_v6.04.xsd
+#         - a XML schema for wwPDB validation reports, v6.04, rev. 2024-11-19
 #
 ###########################################################################
 
@@ -30,7 +30,7 @@ data_mmcif_pdbx_validation.dic
 
     _dictionary.title           mmcif_pdbx_validation.dic
     _dictionary.datablock_id    mmcif_pdbx_validation.dic
-    _dictionary.version         4.399
+    _dictionary.version         4.400
 #
     loop_
     _dictionary_history.version
@@ -1367,17 +1367,37 @@ data_mmcif_pdbx_validation.dic
 >   + Add _pdbx_depui_status_flags.assembly_inferred # not mapped
 >   + Add "Quantifoil R1/4" to _em_sample_support.grid_type enumeration # not mapped
 >   + Add "SILICON DIOXIDE" to _em_sample_support.film_material enumeration # not mapped
->   + Update enumberations for _pdbx_nmr_constraint_file.constraint_type and _pdbx_nmr_constraint_file.constraint_subtype # not mapped
+>   + Update enumerations for _pdbx_nmr_constraint_file.constraint_type and _pdbx_nmr_constraint_file.constraint_subtype # not mapped
 ;
   4.399   2024-11-07
 ;
 >   + Add enumeration for _diffrn.pdbx_serial_crystal_experiment # merged
 >   + Add ssbond to enumeration for _pdbx_data_processing_status.task_name # not mapped
->   + Add DSA to enumberation for _pdbx_nmr_chem_shift_ref.mol_common_name # not mapped
+>   + Add DSA to enumeration for _pdbx_nmr_chem_shift_ref.mol_common_name # not mapped
 >   + Add "SILICON DIOXIDE" to em_support_film.material enumeration # not mapped
 >   + Change category key for _em_entity_assembly_molwt,
 >     _em_entity_assembly_naturalsource and _em_entity_assembly_recombinant to
 >     only include the id attribute # merged
+;
+  4.400   2024-12-18
+;
+>   + Add "MAX IV BEAMLINE MicroMAX" to _diffrn_source.type enumeration and MicroMAX to
+>     _diffrn_source.pdbx_synchrotron_beamline # merged
+>   + Update examples for _pdbx_chem_comp_feature # not mapped
+>   + Add refine_ls_shell.correlation_coeff_Fo_to_Fc, _refine_ls_shell.correlation_coeff_I_to_Fcsqd_free,
+>     _refine_ls_shell.correlation_coeff_I_to_Fcsqd_work, _refine.correlation_coeff_I_to_Fcsqd_free,
+>     _refine.correlation_coeff_I_to_Fcsqd_work # merged
+>   + Add "TFS TITAN THEMIS" to _em_imaging.microscope_mode enumeration # merged
+>   + Extend experimental data types enumerations to _pdbx_audit_revision_history.data_content_type,
+>     _pdbx_audit_revision_group.data_content_type, _pdbx_audit_revision_category.data_content_type,
+>     _pdbx_audit_revision_details.data_content_type, _pdbx_audit_revision_item.data_content_type # merged
+>   + Extend enumber of _pdbx_audit_revision_details.type to include data focused values # merged
+>   + added "Methacrylation" type to enumeration list for
+>     _pdbx_chem_comp_pcm.type
+>     _pdbx_modification_feature.type # not mapped
+    + Merge _pdbx_entry_details.has_protein_modification
+    + Support wwPDB validation report XML Schema v6.04 (eds_rfactor_warning)
+      + Add _pdbx_dcc_density.warning
 ;
 
 
@@ -4882,6 +4902,7 @@ save__diffrn_source.type
      "_diffrn_source.type"  "MAX II BEAMLINE I911-3"                         SYNCHROTRON
      "_diffrn_source.type"  "MAX II BEAMLINE I911-5"                         SYNCHROTRON
      "_diffrn_source.type"  "MAX IV BEAMLINE BioMAX"                         SYNCHROTRON
+     "_diffrn_source.type"  "MAX IV BEAMLINE MicroMAX"                       SYNCHROTRON
      "_diffrn_source.type"  "MPG/DESY, HAMBURG BEAMLINE BW6"                 SYNCHROTRON
      "_diffrn_source.type"  "NFPSS BEAMLINE BL17B"                           SYNCHROTRON
      "_diffrn_source.type"  "NFPSS BEAMLINE BL18U"                           SYNCHROTRON
@@ -11650,6 +11671,92 @@ save__refine.solvent_model_param_ksol
      #
 save_
 
+save__refine.correlation_coeff_I_to_Fcsqd_work
+   _item_description.description
+;              The Pearson correlation coefficient between the observed (merged)
+               intensities and the intensities calculated from a model for reflections
+               included in the refinement (work reflections).
+
+               The correlation coefficient is scale-independent and gives
+               an idea of the quality of the refined model.
+
+                                <Io Ic> - <Io> <Ic>
+           Corr = ----------------------------------------------
+                    SQRT{<Io^2^>-<Io>^2^} SQRT{<Ic^2^>-<Ic>^2^}
+
+             Io = observed intensities
+             Ic = |Fc|^2^ = calculated intensities
+             <> denotes the average value, where the average is taken over
+                the reflections included in the refinement (work reflections)
+;
+
+   #
+   _item.name            "_refine.correlation_coeff_I_to_Fcsqd_work"
+   _item.category_id     refine
+   _item.mandatory_code  no
+   #
+   _item_type.code  float
+   #
+   loop_
+   _item_range.maximum
+   _item_range.minimum
+      1.0   1.0
+      1.0  -1.0
+     -1.0  -1.0
+   #
+   loop_
+   _pdbx_item_range.name
+   _pdbx_item_range.minimum
+   _pdbx_item_range.maximum
+     "_refine.correlation_coeff_I_to_Fcsqd_work"  0.5  0.5
+     "_refine.correlation_coeff_I_to_Fcsqd_work"  0,5  1.0
+     "_refine.correlation_coeff_I_to_Fcsqd_work"  1.0  1.0
+   #
+save_
+#
+save__refine.correlation_coeff_I_to_Fcsqd_free
+   _item_description.description
+;              The Pearson correlation coefficient between the observed (merged)
+               intensities and the intensities calculated from a model for reflections
+               not included in the refinement (free reflections).
+
+               The correlation coefficient is scale-independent and gives
+               an idea of the quality of the refined model.
+
+                                <Io Ic> - <Io> <Ic>
+           Corr = ----------------------------------------------
+                    SQRT{<Io^2^>-<Io>^2^} SQRT{<Ic^2^>-<Ic>^2^}
+
+             Io = observed intensities
+             Ic = |Fc|^2^ = calculated intensities
+             <> denotes the average value, where the average is taken over
+                the reflections not included in the refinement (free reflections)
+;
+
+   #
+   _item.name            "_refine.correlation_coeff_I_to_Fcsqd_free"
+   _item.category_id     refine
+   _item.mandatory_code  no
+   #
+   _item_type.code  float
+   #
+   loop_
+   _item_range.maximum
+   _item_range.minimum
+      1.0   1.0
+      1.0  -1.0
+     -1.0  -1.0
+   #
+   loop_
+   _pdbx_item_range.name
+   _pdbx_item_range.minimum
+   _pdbx_item_range.maximum
+     "_refine.correlation_coeff_I_to_Fcsqd_free"  0.5  0.5
+     "_refine.correlation_coeff_I_to_Fcsqd_free"  0,5  1.0
+     "_refine.correlation_coeff_I_to_Fcsqd_free"  1.0  1.0
+   #
+save_
+
 ####################
 ## REFINE_ANALYZE ##
 ####################
@@ -13850,6 +13957,177 @@ save__refine_ls_shell.pdbx_R_complete
                                   0.0  1.0
                                   1.0  1.0
 #
+save_
+
+save__refine_ls_shell.correlation_coeff_Fo_to_Fc
+   _item_description.description
+;              The correlation coefficient between the observed and
+               calculated structure factors for reflections that satisfy the
+               resolution limits established by _refine_ls_shell.d_res_high
+               and _refine_ls_shell.d_res_low included in the refinement.
+
+               The correlation coefficient is scale-independent and gives
+               an idea of the quality of the refined model.
+
+                            sum~i~(Fo~i~ Fc~i~ - <Fo><Fc>)
+  R~corr~ = ------------------------------------------------------------
+            SQRT{sum~i~(Fo~i~)^2^-<Fo>^2^} SQRT{sum~i~(Fc~i~)^2^-<Fc>^2^}
+
+               Fo = observed structure factors
+               Fc = calculated structure factors
+               <>   denotes average value
+
+               summation is over reflections included in the refinement
+;
+
+   #
+   _item.name            "_refine_ls_shell.correlation_coeff_Fo_to_Fc"
+   _item.category_id     refine_ls_shell
+   _item.mandatory_code  no
+   #
+   _item_type.code  float
+   #
+   loop_
+   _pdbx_item_range.name
+   _pdbx_item_range.minimum
+   _pdbx_item_range.maximum
+     "_refine_ls_shell.correlation_coeff_Fo_to_Fc"  0.8  0.8
+     "_refine_ls_shell.correlation_coeff_Fo_to_Fc"  0.8    1
+     "_refine_ls_shell.correlation_coeff_Fo_to_Fc"    1    1
+     "_refine_ls_shell.correlation_coeff_Fo_to_Fc"    0    0
+     "_refine_ls_shell.correlation_coeff_Fo_to_Fc"    0    1
+     "_refine_ls_shell.correlation_coeff_Fo_to_Fc"    1    1
+   #
+save_
+
+save__refine_ls_shell.correlation_coeff_Fo_to_Fc_free
+   _item_description.description
+;              The correlation coefficient between the observed and
+               calculated structure factors for reflections
+               that satisfy the resolution limits established
+               by _refine_ls_shell.d_res_high and
+               _refine_ls_shell.d_res_low not included in the
+               refinement (free reflections).
+
+                The correlation coefficient is scale-independent and gives
+                an idea of the quality of the refined model.
+
+                            sum~i~(Fo~i~ Fc~i~ - <Fo><Fc>)
+  R~corr~ = ------------------------------------------------------------
+            SQRT{sum~i~(Fo~i~)^2^-<Fo>^2^} SQRT{sum~i~(Fc~i~)^2^-<Fc>^2^}
+
+                Fo  = observed structure factors
+                Fc  = calculated structure factors
+                <>    denotes average value
+
+                summation is over reflections not included
+                in the refinement (free reflections)
+;
+
+   #
+   _item.name            "_refine_ls_shell.correlation_coeff_Fo_to_Fc_free"
+   _item.category_id     refine_ls_shell
+   _item.mandatory_code  no
+   #
+   _item_type.code  float
+   #
+   loop_
+   _pdbx_item_range.name
+   _pdbx_item_range.minimum
+   _pdbx_item_range.maximum
+     "_refine_ls_shell.correlation_coeff_Fo_to_Fc_free"  0.8  0.8
+     "_refine_ls_shell.correlation_coeff_Fo_to_Fc_free"  0.8    1
+     "_refine_ls_shell.correlation_coeff_Fo_to_Fc_free"    1    1
+     "_refine_ls_shell.correlation_coeff_Fo_to_Fc_free"    0    0
+     "_refine_ls_shell.correlation_coeff_Fo_to_Fc_free"    0    1
+     "_refine_ls_shell.correlation_coeff_Fo_to_Fc_free"    1    1
+   #
+save_
+
+save__refine_ls_shell.correlation_coeff_I_to_Fcsqd_work
+   _item_description.description
+;              The Pearson correlation coefficient between the observed (merged)
+               intensities and the intensities calculated from a model for reflections
+               included in the refinement (work reflections).
+
+               The correlation coefficient is scale-independent and gives
+               an idea of the quality of the refined model.
+
+                                <Io Ic> - <Io> <Ic>
+           Corr = ----------------------------------------------
+                    SQRT{<Io^2^>-<Io>^2^} SQRT{<Ic^2^>-<Ic>^2^}
+
+             Io = observed intensities
+             Ic = |Fc|^2^ = calculated intensities
+             <> denotes the average value, where the average is taken over
+                the reflections included in the refinement (work reflections)
+;
+
+   #
+   _item.name            "_refine_ls_shell.correlation_coeff_I_to_Fcsqd_work"
+   _item.category_id     refine_ls_shell
+   _item.mandatory_code  no
+   #
+   _item_type.code  float
+   #
+   loop_
+   _item_range.maximum
+   _item_range.minimum
+      1.0   1.0
+      1.0  -1.0
+     -1.0  -1.0
+   #
+   loop_
+   _pdbx_item_range.name
+   _pdbx_item_range.minimum
+   _pdbx_item_range.maximum
+     "_refine_ls_shell.correlation_coeff_I_to_Fcsqd_work"  0.5  0.5
+     "_refine_ls_shell.correlation_coeff_I_to_Fcsqd_work"  0,5  1.0
+     "_refine_ls_shell.correlation_coeff_I_to_Fcsqd_work"  1.0  1.0
+   #
+save_
+
+save__refine_ls_shell.correlation_coeff_I_to_Fcsqd_free
+   _item_description.description
+;              The Pearson correlation coefficient between the observed (merged)
+               intensities and the intensities calculated from a model for reflections
+               not included in the refinement (free reflections).
+
+               The correlation coefficient is scale-independent and gives
+               an idea of the quality of the refined model.
+
+                                <Io Ic> - <Io> <Ic>
+           Corr = ----------------------------------------------
+                    SQRT{<Io^2^>-<Io>^2^} SQRT{<Ic^2^>-<Ic>^2^}
+
+             Io = observed intensities
+             Ic = |Fc|^2^ = calculated intensities
+             <> denotes the average value, where the average is taken over
+                the reflections not included in the refinement (free reflections)
+;
+
+   #
+   _item.name            "_refine_ls_shell.correlation_coeff_I_to_Fcsqd_free"
+   _item.category_id     refine_ls_shell
+   _item.mandatory_code  no
+   #
+   _item_type.code  float
+   #
+   loop_
+   _item_range.maximum
+   _item_range.minimum
+      1.0   1.0
+      1.0  -1.0
+     -1.0  -1.0
+   #
+   loop_
+   _pdbx_item_range.name
+   _pdbx_item_range.minimum
+   _pdbx_item_range.maximum
+     "_refine_ls_shell.correlation_coeff_I_to_Fcsqd_free"  0.5  0.5
+     "_refine_ls_shell.correlation_coeff_I_to_Fcsqd_free"  0,5  1.0
+     "_refine_ls_shell.correlation_coeff_I_to_Fcsqd_free"  1.0  1.0
+   #
 save_
 
 ######################
@@ -25877,6 +26155,7 @@ save__diffrn_source.pdbx_synchrotron_beamline
      "_diffrn_source.pdbx_synchrotron_beamline"  MASSIF-2        .
      "_diffrn_source.pdbx_synchrotron_beamline"  MASSIF-3        .
      "_diffrn_source.pdbx_synchrotron_beamline"  MFX             .
+     "_diffrn_source.pdbx_synchrotron_beamline"  MicroMAX        .
      "_diffrn_source.pdbx_synchrotron_beamline"  MX1             .
      "_diffrn_source.pdbx_synchrotron_beamline"  MX2             .
      "_diffrn_source.pdbx_synchrotron_beamline"  NCI             .
@@ -45498,7 +45777,22 @@ save__pdbx_entry_details.has_ligand_of_interest
     _item_examples.case           Y
 save_
 
-##
+save__pdbx_entry_details.has_protein_modification
+    _item_description.description
+;              A flag to indicate if the model contains any protein modifications.
+;
+    _item.name            "_pdbx_entry_details.has_protein_modification"
+    _item.category_id     pdbx_entry_details
+    _item.mandatory_code  no
+    _item_type.code  code
+    _item_examples.case  Y
+    loop_
+    _item_enumeration.value
+    _item_enumeration.detail
+     Y  "Protein modifications present"  
+     N  "No protein modifications present"  
+save_
+
 save_pdbx_struct_mod_residue
     _category.description
 ;              Data items in the PDBX_STRUCT_MOD_RESIDUE category list the
@@ -51231,6 +51525,7 @@ save__em_imaging.microscope_model
   '_em_imaging.microscope_model'  "TFS TALOS"             .
   '_em_imaging.microscope_model'  "TFS TALOS F200C"       .
   '_em_imaging.microscope_model'  "TFS TALOS L120C"       .
+  "_em_imaging.microscope_model"  "TFS TITAN THEMIS"      .
   '_em_imaging.microscope_model'  "TFS TUNDRA"            .
   '_em_imaging.microscope_model'  "ZEISS LEO912"    .
   '_em_imaging.microscope_model'  "ZEISS LIBRA120PLUS"    .
@@ -51309,6 +51604,7 @@ save__em_imaging.microscope_model
      "_em_imaging.microscope_model"  "TFS TALOS"                    .
      "_em_imaging.microscope_model"  "TFS TALOS F200C"              .
      "_em_imaging.microscope_model"  "TFS TALOS L120C"              .
+     "_em_imaging.microscope_model"  "TFS TITAN THEMIS"             .
      "_em_imaging.microscope_model"  "TFS TUNDRA"                   .
      "_em_imaging.microscope_model"  "ZEISS LEO912"                 .
      "_em_imaging.microscope_model"  "ZEISS LIBRA120PLUS"           .
@@ -53191,7 +53487,10 @@ save_em_entity_assembly_molwt
 ;
     _category.id                  em_entity_assembly_molwt
     _category.mandatory_code      no
-    _category_key.name           '_em_entity_assembly_molwt.id'
+    loop_
+    _category_key.name
+      '_em_entity_assembly_molwt.id'
+      '_em_entity_assembly_molwt.entity_assembly_id'
     loop_
     _category_group.id           'inclusive_group'
                                  'em_group'
@@ -53278,7 +53577,7 @@ save__em_entity_assembly_molwt.value
     _pdbx_item_range.name
     _pdbx_item_range.minimum
     _pdbx_item_range.maximum
-     "_em_entity_assembly_molwt.value"  0.1 10
+     '_em_entity_assembly_molwt.value'  0.1 10
 save_
 
 ######################################
@@ -53292,7 +53591,10 @@ save_em_entity_assembly_naturalsource
 ;
     _category.id                  em_entity_assembly_naturalsource
     _category.mandatory_code      no
-    _category_key.name          '_em_entity_assembly_naturalsource.id'
+    loop_
+    _category_key.name
+     '_em_entity_assembly_naturalsource.id'
+     '_em_entity_assembly_naturalsource.entity_assembly_id'
     loop_
     _category_group.id           'inclusive_group'
                                  'em_group'
@@ -53461,7 +53763,7 @@ save__em_entity_assembly_naturalsource.details
 ;              Additional details describing this natural source.
 ;
     #
-    _item.name            "_em_entity_assembly_naturalsource.details"
+    _item.name            '_em_entity_assembly_naturalsource.details'
     _item.category_id     em_entity_assembly_naturalsource
     _item.mandatory_code  no
     #
@@ -53658,7 +53960,10 @@ save_em_entity_assembly_recombinant
 ;
     _category.id                  em_entity_assembly_recombinant
     _category.mandatory_code      no
-    _category_key.name          '_em_entity_assembly_recombinant.id'
+    loop_
+    _category_key.name
+     '_em_entity_assembly_recombinant.id'
+     '_em_entity_assembly_recombinant.entity_assembly_id'
     loop_
     _category_group.id           'inclusive_group'
                                  'em_group'
@@ -55092,7 +55397,7 @@ save__em_image_recording.avg_electron_dose_per_image
     _pdbx_item_range.name
     _pdbx_item_range.minimum
     _pdbx_item_range.maximum
-     "_em_image_recording.avg_electron_dose_per_image"  1 1000
+     '_em_image_recording.avg_electron_dose_per_image'  1 1000
 save_
 
 save__em_image_recording.details
@@ -56986,7 +57291,7 @@ save_pdbx_dcc_density
     _category.description
 ;              Data items in the category record various overall metrics
                calculated by DCC and various wrapped programs (such as Xtriage,
-               pointless, REFMAC ...).
+               pointless, REFMAC, EDS ...).
 ;
     _category.id                  pdbx_dcc_density
     _category.mandatory_code      no
@@ -57834,7 +58139,7 @@ save_
 
 save__pdbx_dcc_density.error
     _item_description.description
-;              Details of any error or warning messages.
+;              Details of any error messages.
 ;
     _item.name                  '_pdbx_dcc_density.error'
     _item.category_id             pdbx_dcc_density
@@ -57844,6 +58149,20 @@ save__pdbx_dcc_density.error
     _pdbx_item_aliases.xpath     '/wwPDB-validation-information/Entry/@TransNCS'
     _pdbx_item_aliases.schema     wwpdb_validation_v6.01.xsd
     _pdbx_item_aliases.version    v6.01
+save_
+
+save__pdbx_dcc_density.warning
+    _item_description.description
+;              Details of any warning messages.
+;
+    _item.name                  '_pdbx_dcc_density.warning'
+    _item.category_id             pdbx_dcc_density
+    _item.mandatory_code          no
+    _item_type.code               text
+#
+    _pdbx_item_aliases.xpath     '/wwPDB-validation-information/Entry/@eds_rfactor_warning'
+    _pdbx_item_aliases.schema     wwpdb_validation_v6.04.xsd
+    _pdbx_item_aliases.version    v6.04
 save_
 
 ######### Category=pdbx_dcc_geometry #######
@@ -59129,8 +59448,10 @@ save_pdbx_audit_revision_history
     _pdbx_audit_revision_history.major_revision
     _pdbx_audit_revision_history.minor_revision
     _pdbx_audit_revision_history.revision_date
-     1 'Structure model' 1 0 2017-03-01
-     2 'Structure model' 1 1 2017-03-08
+    1 'Structure model' 1 0 2017-03-01
+    2 'Structure model' 1 1 2017-03-08
+    3 'Half map'        1 0 2017-03-01
+    4 'Half map'        1 0 2017-03-01
 ;
     _pdbx_category_context.type         CHEM_COMP_INT
     _pdbx_category_context.category_id  pdbx_audit_revision_history
@@ -59159,10 +59480,18 @@ save__pdbx_audit_revision_history.data_content_type
     loop_
     _item_enumeration.value
     _item_enumeration.detail
-    'Structure model'            'Coordinate model file'
-    'NMR restraints'             'NMR restraints file'
-    'NMR shifts'                 'NMR chemical shifts file'
-    'Structure factors'          'Diffraction structure factors file'
+     "Structure model"     "Coordinate model file"
+     "NMR restraints"      "NMR restraints file"
+     "NMR shifts"          "NMR chemical shifts file"
+     "Structure factors"   "Diffraction structure factors file"
+     "Chemical component"  "Chemical component definition file"
+     "Primary map"         "EM primary map"
+     Image                 "Image that represents primary map"
+     "Half map"            "EM half map"
+     "Additional map"      "EM map"
+     FSC                   "EM Fourier Shell Correlation data"
+     Mask                  "EM mask map"
+     "EM metadata"         "Data describing EM experimental data"
 save_
 
 save__pdbx_audit_revision_history.major_revision
@@ -59283,11 +59612,18 @@ save__pdbx_audit_revision_group.data_content_type
     loop_
     _item_enumeration.value
     _item_enumeration.detail
-    'Structure model'            'Coordinate model file'
-    'NMR restraints'             'NMR restraints file'
-    'NMR shifts'                 'NMR chemical shifts file'
-    'Structure factors'          'Diffraction structure factors file'
-    'Chemical component'         'Chemical component definition file'
+     "Structure model"     "Coordinate model file"
+     "NMR restraints"      "NMR restraints file"
+     "NMR shifts"          "NMR chemical shifts file"
+     "Structure factors"   "Diffraction structure factors file"
+     "Chemical component"  "Chemical component definition file"
+     "Primary map"         "EM primary map"
+     Image                 "Image that represents primary map"
+     "Half map"            "EM half map"
+     "Additional map"      "EM map"
+     FSC                   "EM Fourier Shell Correlation data"
+     Mask                  "EM mask map"
+     "EM metadata"         "Data describing EM experimental data"
     _item_linked.child_name     '_pdbx_audit_revision_group.data_content_type'
     _item_linked.parent_name    '_pdbx_audit_revision_history.data_content_type'
 save_
@@ -59313,12 +59649,12 @@ save__pdbx_audit_revision_group.group
     'Derived calculations'            'Categories describing secondary structurem linkages, binding sites and quaternary structure'
     'Experimental data'               'Method-specific experimental data'
     'Experimental preparation'        'Categories describing the experimental sample preparation'
-    'Initial release'                 'Reports the initial release of the data contents'
     'Non-polymer description'         'Categories describing non-polymer chemical description'
     'Other'                           'Unclassified categories (legacy)'
     'Polymer sequence'                'Categories describing the polymer sample sequences'
     'Refinement description'          'Categories pertaining to the refinement of the model'
     'Structure summary'               'Categories that describe the title, authorship and molecular description'
+    'Experimental summary'            'Categories that describe the title, authorship and molecular description'
     'Source and taxonomy'             'Categories describing the sample source'
     'Version format compliance'       'Categories to conform to the version of the mmCIF dictionary'
 save_
@@ -59401,11 +59737,18 @@ save__pdbx_audit_revision_category.data_content_type
     loop_
     _item_enumeration.value
     _item_enumeration.detail
-    'Structure model'            'Coordinate model file'
-    'NMR restraints'             'NMR restraints file'
-    'NMR shifts'                 'NMR chemical shifts file'
-    'Structure factors'          'Diffraction structure factors file'
-    'Chemical component'         'Chemical component definition file'
+     "Structure model"     "Coordinate model file"
+     "NMR restraints"      "NMR restraints file"
+     "NMR shifts"          "NMR chemical shifts file"
+     "Structure factors"   "Diffraction structure factors file"
+     "Chemical component"  "Chemical component definition file"
+     "Primary map"         "EM primary map"
+     Image                 "Image that represents primary map"
+     "Half map"            "EM half map"
+     "Additional map"      "EM map"
+     FSC                   "EM Fourier Shell Correlation data"
+     Mask                  "EM mask map"
+     "EM metadata"         "Data describing EM experimental data"
     _item_linked.child_name     '_pdbx_audit_revision_category.data_content_type'
     _item_linked.parent_name    '_pdbx_audit_revision_history.data_content_type'
 save_
@@ -59501,10 +59844,18 @@ save__pdbx_audit_revision_details.data_content_type
     loop_
     _item_enumeration.value
     _item_enumeration.detail
-    'Structure model'            'Coordinate model file'
-    'NMR restraints'             'NMR restraints file'
-    'NMR shifts'                 'NMR chemical shifts file'
-    'Structure factors'          'Diffraction structure factors file'
+     "Structure model"     "Coordinate model file"
+     "NMR restraints"      "NMR restraints file"
+     "NMR shifts"          "NMR chemical shifts file"
+     "Structure factors"   "Diffraction structure factors file"
+     "Chemical component"  "Chemical component definition file"
+     "Primary map"         "EM primary map"
+     Image                 "Image that represents primary map"
+     "Half map"            "EM half map"
+     "Additional map"      "EM map"
+     FSC                   "EM Fourier Shell Correlation data"
+     Mask                  "EM mask map"
+     "EM metadata"         "Data describing EM experimental data"
     _item_linked.child_name     '_pdbx_audit_revision_details.data_content_type'
     _item_linked.parent_name    '_pdbx_audit_revision_history.data_content_type'
 save_
@@ -59535,10 +59886,14 @@ save__pdbx_audit_revision_details.type
     _pdbx_item.mandatory_code     yes
     _item_type.code               line
     loop_
-    _item_enumeration.value      'Initial release'
-                                 'Coordinate replacement'
-                                 'Obsolete'
-                                 'Remediation'
+    _item_enumeration.value
+     "Initial release"
+     "Coordinate replacement"
+     Obsolete
+     Remediation
+     "Data added"
+     "Data removed"
+     "Data updated"
     loop_
     _item_examples.case          'Initial release'
 save_
@@ -59638,11 +59993,18 @@ save__pdbx_audit_revision_item.data_content_type
     loop_
     _item_enumeration.value
     _item_enumeration.detail
-    'Structure model'            'Coordinate model file'
-    'NMR restraints'             'NMR restraints file'
-    'NMR shifts'                 'NMR chemical shifts file'
-    'Structure factors'          'Diffraction structure factors file'
-    'Chemical component'         'Chemical component definition file'
+     "Structure model"     "Coordinate model file"
+     "NMR restraints"      "NMR restraints file"
+     "NMR shifts"          "NMR chemical shifts file"
+     "Structure factors"   "Diffraction structure factors file"
+     "Chemical component"  "Chemical component definition file"
+     "Primary map"         "EM primary map"
+     Image                 "Image that represents primary map"
+     "Half map"            "EM half map"
+     "Additional map"      "EM map"
+     FSC                   "EM Fourier Shell Correlation data"
+     Mask                  "EM mask map"
+     "EM metadata"         "Data describing EM experimental data"
     _item_linked.child_name     '_pdbx_audit_revision_item.data_content_type'
     _item_linked.parent_name    '_pdbx_audit_revision_history.data_content_type'
 save_

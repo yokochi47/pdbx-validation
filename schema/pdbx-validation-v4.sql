@@ -21,7 +21,7 @@
 --  map xsd date type to: sql date type
 --
 -- Statistics of schema:
---  Generated 283 tables (3735 fields), 0 views (0 fields), 0 attr groups, 0 model groups in total
+--  Generated 283 tables (3743 fields), 0 views (0 fields), 0 attr groups, 0 model groups in total
 --   Unnecessary tables by inlining simple content as a primitive data type:
 --    schema location: pdbx-validation-v4.xsd
 --      improper_torsion_angle_rms_dev_error, mean_guiner_radius, angle_value, bond_angle_rms_dev, "B_iso", diff_density_max_esd, "L22", "B_calc", distance_rms_dev, "B_calc_au", pdbx_phase_calc_part_solvent, improper_torsion_angle_rms_dev, "S22_esd", atom_deviation, "S31", "A_meas", "pdbx_F_calc_part_solvent", upper_limit, psi, "L23", prot_cis, "L11", "L23_esd", "T23_esd", "F_meas_au", "sigmaI", omega, "S32", "Luzzati_sigma_a_free", "F_squared_calc", "L12", distance_rms_dev_medoid, pdbx_solvent_shrinkage_radii, current, chi1, pdbx_rotation_angle, chi2, chi3, chi4, chi5, "S21", "S33", scan_time_backgd, maximum_upper_distance_constraint_violation, pdbx_scan_angle, "L13", "A_calc", "T12_esd", "S12_esd", "Luzzati_d_res_low_free", value, "B_meas", "S22", value_esd, "Cartn_y_esd", pdbx_solvent_vdw_probe_radii, "S13_esd", "B_meas_au", origin_y, origin_z, origin_x, "Cartn_z_esd", peptide_planarity_rms_dev, "P", phi, pdbx_collection_time_total, dihedral_angle_value, "B_iso_Wilson_estimate", zeta, maximum_lower_distance_constraint_violation, energyfilter_lower, "S11", "S23", nu1, "F_meas_sigma", nu2, nu3, "L12_esd", "F_calc_au", diff_density_min, nu4, nu0, "T33", tilt_angle_min, phase_meas, nominal_defocus_min, "S32_esd", "S12", calibrated_defocus_min, rise_per_n_subunits, "aniso_B33", "Luzzati_d_res_low_obs", pdbx_solvent_ion_probe_radii, "Luzzati_coordinate_error_free", "T22", lower_limit, "Luzzati_coordinate_error_obs", "S13", "T11_esd", "L11_esd", "aniso_B22", "S23_esd", concentration_range, "T23", max_mean_cross_sectional_radii_gyration_esd, "T11", clash_magnitude, angle_target_value, dihedral_angles_rms_dev, min_mean_cross_sectional_radii_gyration_esd, "L22_esd", neighbor_ligand_distance, tau0, "S21_esd", tau1, "aniso_B11", "aniso_B23", average_distance_constraint_violation, "B_iso_esd", maximum_distance_constraint_violation, "T12", max_mean_cross_sectional_radii_gyration, "A_calc_au", "S33_esd", "pdbx_F_calc_with_solvent", phase_calc, bond_angle_rms_dev_error, nominal_defocus_max, "aniso_B12", "B_iso_max", bond_deviation, angle_phi, min_mean_cross_sectional_radii_gyration, "T13", delta, distance_rms_dev_error, "B_iso_mean", energyfilter_upper, covalent_bond_rms_dev, "F_squared_meas", epsilon, "aniso_B13", angle_theta, "F_meas_sigma_au", mean_guiner_radius_esd, angle_deviation, dihedral_angles_rms_dev_error, "T22_esd", peptide_planarity_rms_dev_error, "pdbx_res_netI_over_sigmaI_2", "Luzzati_sigma_a_obs", "Cartn_z", detector_distance, "S31_esd", beta, "L13_esd", "F_squared_sigma", voltage, angle_kappa, ambient_pressure_esd, "T13_esd", gamma, rotation_per_n_subunits, "Cartn_y", temp, covalent_bond_rms_dev_error, rmsd, "S11_esd", temperature, "A_meas_au", alpha, "Cartn_x_esd", "Cartn_x", "F_calc", power, diff_density_min_esd, ambient_temp_esd, neighbor_macromolecule_distance, "I", diff_density_max, angle_psi, "L33_esd", dihedral_angle_target_value, taum, angle_omega, pdbx_dist_value, scan_rate, "T33_esd", tau2, tau3, tau4, "B_iso_min", pdbx_phase_calc_with_solvent, tilt_angle_max, "F_meas", angle_chi, diff_density_rms_esd, average_torsion_angle_constraint_violation, maximum_torsion_angle_constraint_violation, "L33", diff_density_rms, dist, improper_torsion_angle, "pdbx_res_netI_over_av_sigmaI_2"
@@ -36,7 +36,7 @@
 --   User keys:
 --    235 document keys, 0 serial keys, 0 xpath keys
 --   Contents:
---    485 attributes (43 in-place document keys), 3015 elements (5 in-place document keys), 0 simple contents (0 in-place document keys, 0 as attribute, 0 as conditional attribute)
+--    488 attributes (43 in-place document keys), 3020 elements (5 in-place document keys), 0 simple contents (0 in-place document keys, 0 as attribute, 0 as conditional attribute)
 --   Wild cards:
 --    0 any elements, 0 any attributes
 --   Constraints:
@@ -44,8 +44,8 @@
 --
 
 --
--- VRPT PDBML Schema v4.399
--- VRPT PDBML Schema translated from wwPDB Validation Information Dictionary v4.399, which is backward compatible with the PDBx/mmCIF Dictionary v5.370: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
+-- VRPT PDBML Schema v4.400
+-- VRPT PDBML Schema translated from wwPDB Validation Information Dictionary v4.400, which is backward compatible with the PDBx/mmCIF Dictionary v5.370: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
 -- URI-reference = http://pdbml.pdb.org/schema/pdbx-validation-v4.xsd
 --
 
@@ -549,13 +549,13 @@ CREATE TABLE struct_sheet (
 
 --
 -- (quoted from pdbx_audit_revision_historyType)
--- Data items in the PDBX_AUDIT_REVISION_HISTORY category record the revision history for a data entry. Example 1 - <VRPTx:pdbx_audit_revision_historyCategory> <VRPTx:pdbx_audit_revision_history data_content_type="Structure model" ordinal="1"> <VRPTx:major_revision>1</VRPTx:major_revision> <VRPTx:minor_revision>0</VRPTx:minor_revision> <VRPTx:revision_date>2017-03-01</VRPTx:revision_date> </VRPTx:pdbx_audit_revision_history> <VRPTx:pdbx_audit_revision_history data_content_type="Structure model" ordinal="2"> <VRPTx:major_revision>1</VRPTx:major_revision> <VRPTx:minor_revision>1</VRPTx:minor_revision> <VRPTx:revision_date>2017-03-08</VRPTx:revision_date> </VRPTx:pdbx_audit_revision_history> </VRPTx:pdbx_audit_revision_historyCategory>
+-- Data items in the PDBX_AUDIT_REVISION_HISTORY category record the revision history for a data entry. Example 1 - <VRPTx:pdbx_audit_revision_historyCategory> <VRPTx:pdbx_audit_revision_history data_content_type="Structure model" ordinal="1"> <VRPTx:major_revision>1</VRPTx:major_revision> <VRPTx:minor_revision>0</VRPTx:minor_revision> <VRPTx:revision_date>2017-03-01</VRPTx:revision_date> </VRPTx:pdbx_audit_revision_history> <VRPTx:pdbx_audit_revision_history data_content_type="Structure model" ordinal="2"> <VRPTx:major_revision>1</VRPTx:major_revision> <VRPTx:minor_revision>1</VRPTx:minor_revision> <VRPTx:revision_date>2017-03-08</VRPTx:revision_date> </VRPTx:pdbx_audit_revision_history> <VRPTx:pdbx_audit_revision_history data_content_type="Half map" ordinal="3"> <VRPTx:major_revision>1</VRPTx:major_revision> <VRPTx:minor_revision>0</VRPTx:minor_revision> <VRPTx:revision_date>2017-03-01</VRPTx:revision_date> </VRPTx:pdbx_audit_revision_history> <VRPTx:pdbx_audit_revision_history data_content_type="Half map" ordinal="4"> <VRPTx:major_revision>1</VRPTx:major_revision> <VRPTx:minor_revision>0</VRPTx:minor_revision> <VRPTx:revision_date>2017-03-01</VRPTx:revision_date> </VRPTx:pdbx_audit_revision_history> </VRPTx:pdbx_audit_revision_historyCategory>
 -- URI-reference = http://pdbml.pdb.org/dictionaries/mmcif_pdbx_v50.dic/Categories/pdbx_audit_revision_history.html
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v4.xsd (VRPTx), schema location: pdbx-validation-v4.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_audit_revision_history_data_content_type CASCADE;
-CREATE TYPE ENUM_pdbx_audit_revision_history_data_content_type AS ENUM ( 'Structure model', 'NMR restraints', 'NMR shifts', 'Structure factors' );
+CREATE TYPE ENUM_pdbx_audit_revision_history_data_content_type AS ENUM ( 'Structure model', 'NMR restraints', 'NMR shifts', 'Structure factors', 'Chemical component', 'Primary map', 'Image', 'Half map', 'Additional map', 'FSC', 'Mask', 'EM metadata' );
 CREATE TABLE pdbx_audit_revision_history (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	entry_id TEXT ,
@@ -2148,7 +2148,7 @@ CREATE TABLE em_embedding (
 
 --
 -- (quoted from em_entity_assembly_molwtType)
--- Data items in this category record details about the molecular weight of an assembly component of the sample. Example 1 - based on PDB entry 1DYL and laboratory records for the structure corresponding to PDB entry 1DYL <VRPTx:em_entity_assembly_molwtCategory> <VRPTx:em_entity_assembly_molwt id="1"> <VRPTx:entity_assembly_id>1</VRPTx:entity_assembly_id> <VRPTx:units>MEGADALTONS</VRPTx:units> <VRPTx:value>30.5</VRPTx:value> </VRPTx:em_entity_assembly_molwt> </VRPTx:em_entity_assembly_molwtCategory>
+-- Data items in this category record details about the molecular weight of an assembly component of the sample. Example 1 - based on PDB entry 1DYL and laboratory records for the structure corresponding to PDB entry 1DYL <VRPTx:em_entity_assembly_molwtCategory> <VRPTx:em_entity_assembly_molwt entity_assembly_id="1" id="1"> <VRPTx:units>MEGADALTONS</VRPTx:units> <VRPTx:value>30.5</VRPTx:value> </VRPTx:em_entity_assembly_molwt> </VRPTx:em_entity_assembly_molwtCategory>
 -- URI-reference = http://pdbml.pdb.org/dictionaries/mmcif_pdbx_v50.dic/Categories/em_entity_assembly_molwt.html
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v4.xsd (VRPTx), schema location: pdbx-validation-v4.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
@@ -2160,18 +2160,19 @@ CREATE TYPE ENUM_em_entity_assembly_molwt_units AS ENUM ( 'MEGADALTONS', 'KILODA
 CREATE TABLE em_entity_assembly_molwt (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	entry_id TEXT ,
-	entity_assembly_id TEXT ,
 	experimental_flag ENUM_em_entity_assembly_molwt_experimental_flag ,
 	units ENUM_em_entity_assembly_molwt_units ,
 -- xsd:restriction/xsd:minInclusive="0.0"
 	value DECIMAL CHECK ( value >= 0.0 ) ,
+-- ATTRIBUTE
+	entity_assembly_id TEXT NOT NULL ,
 -- ATTRIBUTE
 	id TEXT NOT NULL
 );
 
 --
 -- (quoted from em_entity_assembly_naturalsourceType)
--- Data items in this category record taxonomic details about the natural source for EM assemblies and assembly components. Example 1 - <VRPTx:em_entity_assembly_naturalsourceCategory> <VRPTx:em_entity_assembly_naturalsource id="1"> <VRPTx:cellular_location xsi:nil="true" /> <VRPTx:entity_assembly_id>8333</VRPTx:entity_assembly_id> <VRPTx:ncbi_tax_id>Escherichia coli</VRPTx:ncbi_tax_id> <VRPTx:organ xsi:nil="true" /> <VRPTx:organelle>cytoplasm</VRPTx:organelle> <VRPTx:organism>K12</VRPTx:organism> <VRPTx:strain xsi:nil="true" /> <VRPTx:tissue xsi:nil="true" /> </VRPTx:em_entity_assembly_naturalsource> </VRPTx:em_entity_assembly_naturalsourceCategory>
+-- Data items in this category record taxonomic details about the natural source for EM assemblies and assembly components. Example 1 - <VRPTx:em_entity_assembly_naturalsourceCategory> <VRPTx:em_entity_assembly_naturalsource entity_assembly_id="8333" id="1"> <VRPTx:cellular_location xsi:nil="true" /> <VRPTx:ncbi_tax_id>Escherichia coli</VRPTx:ncbi_tax_id> <VRPTx:organ xsi:nil="true" /> <VRPTx:organelle>cytoplasm</VRPTx:organelle> <VRPTx:organism>K12</VRPTx:organism> <VRPTx:strain xsi:nil="true" /> <VRPTx:tissue xsi:nil="true" /> </VRPTx:em_entity_assembly_naturalsource> </VRPTx:em_entity_assembly_naturalsourceCategory>
 -- URI-reference = http://pdbml.pdb.org/dictionaries/mmcif_pdbx_v50.dic/Categories/em_entity_assembly_naturalsource.html
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v4.xsd (VRPTx), schema location: pdbx-validation-v4.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
@@ -2182,7 +2183,6 @@ CREATE TABLE em_entity_assembly_naturalsource (
 	cell TEXT ,
 	cellular_location TEXT ,
 	details TEXT ,
-	entity_assembly_id TEXT ,
 	ncbi_tax_id TEXT ,
 	organ TEXT ,
 	organelle TEXT ,
@@ -2190,12 +2190,14 @@ CREATE TABLE em_entity_assembly_naturalsource (
 	strain TEXT ,
 	tissue TEXT ,
 -- ATTRIBUTE
+	entity_assembly_id TEXT NOT NULL ,
+-- ATTRIBUTE
 	id TEXT NOT NULL
 );
 
 --
 -- (quoted from em_entity_assembly_recombinantType)
--- Data items in this category record details about recombinant expression of the assembly or assembly component. Example 1 - <VRPTx:em_entity_assembly_recombinantCategory> <VRPTx:em_entity_assembly_recombinant id="1"> <VRPTx:entity_assembly_id>1</VRPTx:entity_assembly_id> <VRPTx:organism>Escherichia coli</VRPTx:organism> <VRPTx:plasmid>pET17c</VRPTx:plasmid> </VRPTx:em_entity_assembly_recombinant> </VRPTx:em_entity_assembly_recombinantCategory>
+-- Data items in this category record details about recombinant expression of the assembly or assembly component. Example 1 - <VRPTx:em_entity_assembly_recombinantCategory> <VRPTx:em_entity_assembly_recombinant entity_assembly_id="1" id="1"> <VRPTx:organism>Escherichia coli</VRPTx:organism> <VRPTx:plasmid>pET17c</VRPTx:plasmid> </VRPTx:em_entity_assembly_recombinant> </VRPTx:em_entity_assembly_recombinantCategory>
 -- URI-reference = http://pdbml.pdb.org/dictionaries/mmcif_pdbx_v50.dic/Categories/em_entity_assembly_recombinant.html
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v4.xsd (VRPTx), schema location: pdbx-validation-v4.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
@@ -2204,11 +2206,12 @@ CREATE TABLE em_entity_assembly_recombinant (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	entry_id TEXT ,
 	cell TEXT ,
-	entity_assembly_id TEXT ,
 	ncbi_tax_id TEXT ,
 	organism TEXT ,
 	plasmid TEXT ,
 	strain TEXT ,
+-- ATTRIBUTE
+	entity_assembly_id TEXT NOT NULL ,
 -- ATTRIBUTE
 	id TEXT NOT NULL
 );
@@ -2373,7 +2376,7 @@ CREATE TYPE ENUM_em_imaging_cryogen AS ENUM ( 'NITROGEN', 'HELIUM' );
 DROP TYPE IF EXISTS ENUM_em_imaging_illumination_mode CASCADE;
 CREATE TYPE ENUM_em_imaging_illumination_mode AS ENUM ( 'FLOOD BEAM', 'SPOT SCAN', 'OTHER' );
 DROP TYPE IF EXISTS ENUM_em_imaging_microscope_model CASCADE;
-CREATE TYPE ENUM_em_imaging_microscope_model AS ENUM ( 'FEI MORGAGNI', 'FEI POLARA 300', 'FEI TALOS ARCTICA', 'FEI TECNAI 10', 'FEI TECNAI 12', 'FEI TECNAI 20', 'FEI TECNAI F20', 'FEI TECNAI F30', 'FEI TECNAI ARCTICA', 'FEI TECNAI SPHERA', 'FEI TECNAI SPIRIT', 'FEI TITAN', 'FEI TITAN KRIOS', 'FEI/PHILIPS CM10', 'FEI/PHILIPS CM12', 'FEI/PHILIPS CM120T', 'FEI/PHILIPS CM200FEG', 'FEI/PHILIPS CM200FEG/SOPHIE', 'FEI/PHILIPS CM200FEG/ST', 'FEI/PHILIPS CM200FEG/UT', 'FEI/PHILIPS CM200T', 'FEI/PHILIPS CM300FEG/HE', 'FEI/PHILIPS CM300FEG/ST', 'FEI/PHILIPS CM300FEG/T', 'FEI/PHILIPS EM400', 'FEI/PHILIPS EM420', 'HITACHI EF2000', 'HITACHI EF3000', 'HITACHI H7600', 'HITACHI HF2000', 'HITACHI HF3000', 'HITACHI H3000 UHVEM', 'HITACHI H-9500SD', 'JEOL 100B', 'JEOL 100CX', 'JEOL 1010', 'JEOL 1000EES', 'JEOL 1200', 'JEOL 1200EX', 'JEOL 1200EXII', 'JEOL 1230', 'JEOL 1400', 'JEOL 1400/HR + YPS FEG', 'JEOL 2000EX', 'JEOL 2000EXII', 'JEOL 2010', 'JEOL 2010F', 'JEOL 2010HT', 'JEOL 2010HC', 'JEOL 2010UHR', 'JEOL 2011', 'JEOL 2100', 'JEOL 2100F', 'JEOL 2200FS', 'JEOL 2200FSC', 'JEOL 3000SFF', 'JEOL 3100FEF', 'JEOL 3100FFC', 'JEOL 3200FS', 'JEOL 3200FSC', 'JEOL KYOTO-3000SFF', 'JEOL 4000', 'JEOL 4000EX', 'JEOL CRYO ARM 200', 'JEOL CRYO ARM 300', 'SIEMENS SULEIKA', 'TFS GLACIOS', 'TFS KRIOS', 'TFS TALOS', 'TFS TALOS F200C', 'TFS TALOS L120C', 'TFS TUNDRA', 'ZEISS LEO912', 'ZEISS LIBRA120PLUS' );
+CREATE TYPE ENUM_em_imaging_microscope_model AS ENUM ( 'FEI MORGAGNI', 'FEI POLARA 300', 'FEI TALOS ARCTICA', 'FEI TECNAI 10', 'FEI TECNAI 12', 'FEI TECNAI 20', 'FEI TECNAI F20', 'FEI TECNAI F30', 'FEI TECNAI ARCTICA', 'FEI TECNAI SPHERA', 'FEI TECNAI SPIRIT', 'FEI TITAN', 'FEI TITAN KRIOS', 'FEI/PHILIPS CM10', 'FEI/PHILIPS CM12', 'FEI/PHILIPS CM120T', 'FEI/PHILIPS CM200FEG', 'FEI/PHILIPS CM200FEG/SOPHIE', 'FEI/PHILIPS CM200FEG/ST', 'FEI/PHILIPS CM200FEG/UT', 'FEI/PHILIPS CM200T', 'FEI/PHILIPS CM300FEG/HE', 'FEI/PHILIPS CM300FEG/ST', 'FEI/PHILIPS CM300FEG/T', 'FEI/PHILIPS EM400', 'FEI/PHILIPS EM420', 'HITACHI EF2000', 'HITACHI EF3000', 'HITACHI H7600', 'HITACHI HF2000', 'HITACHI HF3000', 'HITACHI H3000 UHVEM', 'HITACHI H-9500SD', 'JEOL 100B', 'JEOL 100CX', 'JEOL 1010', 'JEOL 1000EES', 'JEOL 1200', 'JEOL 1200EX', 'JEOL 1200EXII', 'JEOL 1230', 'JEOL 1400', 'JEOL 1400/HR + YPS FEG', 'JEOL 2000EX', 'JEOL 2000EXII', 'JEOL 2010', 'JEOL 2010F', 'JEOL 2010HT', 'JEOL 2010HC', 'JEOL 2010UHR', 'JEOL 2011', 'JEOL 2100', 'JEOL 2100F', 'JEOL 2200FS', 'JEOL 2200FSC', 'JEOL 3000SFF', 'JEOL 3100FEF', 'JEOL 3100FFC', 'JEOL 3200FS', 'JEOL 3200FSC', 'JEOL KYOTO-3000SFF', 'JEOL 4000', 'JEOL 4000EX', 'JEOL CRYO ARM 200', 'JEOL CRYO ARM 300', 'SIEMENS SULEIKA', 'TFS GLACIOS', 'TFS KRIOS', 'TFS TALOS', 'TFS TALOS F200C', 'TFS TALOS L120C', 'TFS TITAN THEMIS', 'TFS TUNDRA', 'ZEISS LEO912', 'ZEISS LIBRA120PLUS' );
 DROP TYPE IF EXISTS ENUM_em_imaging_mode CASCADE;
 CREATE TYPE ENUM_em_imaging_mode AS ENUM ( '4D-STEM', 'BRIGHT FIELD', 'DARK FIELD', 'DIFFRACTION', 'OTHER' );
 DROP TYPE IF EXISTS ENUM_em_imaging_specimen_holder_model CASCADE;
@@ -2960,7 +2963,7 @@ CREATE TABLE pdbx_audit_author (
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_audit_revision_category_data_content_type CASCADE;
-CREATE TYPE ENUM_pdbx_audit_revision_category_data_content_type AS ENUM ( 'Structure model', 'NMR restraints', 'NMR shifts', 'Structure factors', 'Chemical component' );
+CREATE TYPE ENUM_pdbx_audit_revision_category_data_content_type AS ENUM ( 'Structure model', 'NMR restraints', 'NMR shifts', 'Structure factors', 'Chemical component', 'Primary map', 'Image', 'Half map', 'Additional map', 'FSC', 'Mask', 'EM metadata' );
 CREATE TABLE pdbx_audit_revision_category (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	entry_id TEXT ,
@@ -2983,9 +2986,9 @@ CREATE TABLE pdbx_audit_revision_category (
 DROP TYPE IF EXISTS ENUM_pdbx_audit_revision_details_provider CASCADE;
 CREATE TYPE ENUM_pdbx_audit_revision_details_provider AS ENUM ( 'repository', 'author' );
 DROP TYPE IF EXISTS ENUM_pdbx_audit_revision_details_type CASCADE;
-CREATE TYPE ENUM_pdbx_audit_revision_details_type AS ENUM ( 'Initial release', 'Coordinate replacement', 'Obsolete', 'Remediation' );
+CREATE TYPE ENUM_pdbx_audit_revision_details_type AS ENUM ( 'Initial release', 'Coordinate replacement', 'Obsolete', 'Remediation', 'Data added', 'Data removed', 'Data updated' );
 DROP TYPE IF EXISTS ENUM_pdbx_audit_revision_details_data_content_type CASCADE;
-CREATE TYPE ENUM_pdbx_audit_revision_details_data_content_type AS ENUM ( 'Structure model', 'NMR restraints', 'NMR shifts', 'Structure factors' );
+CREATE TYPE ENUM_pdbx_audit_revision_details_data_content_type AS ENUM ( 'Structure model', 'NMR restraints', 'NMR shifts', 'Structure factors', 'Chemical component', 'Primary map', 'Image', 'Half map', 'Additional map', 'FSC', 'Mask', 'EM metadata' );
 CREATE TABLE pdbx_audit_revision_details (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	entry_id TEXT ,
@@ -3009,9 +3012,9 @@ CREATE TABLE pdbx_audit_revision_details (
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_audit_revision_group_group CASCADE;
-CREATE TYPE ENUM_pdbx_audit_revision_group_group AS ENUM ( 'Advisory', 'Atomic model', 'Author supporting evidence', 'Data collection', 'Data processing', 'Database references', 'Derived calculations', 'Experimental data', 'Experimental preparation', 'Initial release', 'Non-polymer description', 'Other', 'Polymer sequence', 'Refinement description', 'Structure summary', 'Source and taxonomy', 'Version format compliance' );
+CREATE TYPE ENUM_pdbx_audit_revision_group_group AS ENUM ( 'Advisory', 'Atomic model', 'Author supporting evidence', 'Data collection', 'Data processing', 'Database references', 'Derived calculations', 'Experimental data', 'Experimental preparation', 'Non-polymer description', 'Other', 'Polymer sequence', 'Refinement description', 'Structure summary', 'Experimental summary', 'Source and taxonomy', 'Version format compliance' );
 DROP TYPE IF EXISTS ENUM_pdbx_audit_revision_group_data_content_type CASCADE;
-CREATE TYPE ENUM_pdbx_audit_revision_group_data_content_type AS ENUM ( 'Structure model', 'NMR restraints', 'NMR shifts', 'Structure factors', 'Chemical component' );
+CREATE TYPE ENUM_pdbx_audit_revision_group_data_content_type AS ENUM ( 'Structure model', 'NMR restraints', 'NMR shifts', 'Structure factors', 'Chemical component', 'Primary map', 'Image', 'Half map', 'Additional map', 'FSC', 'Mask', 'EM metadata' );
 CREATE TABLE pdbx_audit_revision_group (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	entry_id TEXT ,
@@ -3032,7 +3035,7 @@ CREATE TABLE pdbx_audit_revision_group (
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
 --
 DROP TYPE IF EXISTS ENUM_pdbx_audit_revision_item_data_content_type CASCADE;
-CREATE TYPE ENUM_pdbx_audit_revision_item_data_content_type AS ENUM ( 'Structure model', 'NMR restraints', 'NMR shifts', 'Structure factors', 'Chemical component' );
+CREATE TYPE ENUM_pdbx_audit_revision_item_data_content_type AS ENUM ( 'Structure model', 'NMR restraints', 'NMR shifts', 'Structure factors', 'Chemical component', 'Primary map', 'Image', 'Half map', 'Additional map', 'FSC', 'Mask', 'EM metadata' );
 CREATE TABLE pdbx_audit_revision_item (
 -- DOCUMENT KEY is pointer to data source (aka. Entry ID)
 	entry_id TEXT ,
@@ -3184,7 +3187,7 @@ CREATE TABLE pdbx_database_status (
 
 --
 -- (quoted from pdbx_dcc_densityType)
--- Data items in the category record various overall metrics calculated by DCC and various wrapped programs (such as Xtriage, pointless, REFMAC ...).
+-- Data items in the category record various overall metrics calculated by DCC and various wrapped programs (such as Xtriage, pointless, REFMAC, EDS ...).
 -- URI-reference = http://pdbml.pdb.org/dictionaries/mmcif_pdbx_v50.dic/Categories/pdbx_dcc_density.html
 -- xmlns: http://pdbml.pdb.org/schema/pdbx-validation-v4.xsd (VRPTx), schema location: pdbx-validation-v4.xsd
 -- type: admin child, content: true, list: false, bridge: false, virtual: false
@@ -3282,6 +3285,7 @@ CREATE TABLE pdbx_dcc_density (
 	twin_operator_xtriage TEXT ,
 	twin_type TEXT ,
 	unit_cell TEXT ,
+	warning TEXT ,
 	wavelength DECIMAL ,
 	working_set_count INTEGER ,
 -- ATTRIBUTE, IN-PLACE DOCUMENT KEY
@@ -4047,9 +4051,12 @@ CREATE TABLE pdbx_entity_poly_comp_link_list (
 --
 DROP TYPE IF EXISTS ENUM_pdbx_entry_details_has_ligand_of_interest CASCADE;
 CREATE TYPE ENUM_pdbx_entry_details_has_ligand_of_interest AS ENUM ( 'Y', 'N' );
+DROP TYPE IF EXISTS ENUM_pdbx_entry_details_has_protein_modification CASCADE;
+CREATE TYPE ENUM_pdbx_entry_details_has_protein_modification AS ENUM ( 'Y', 'N' );
 CREATE TABLE pdbx_entry_details (
 	compound_details TEXT ,
 	has_ligand_of_interest ENUM_pdbx_entry_details_has_ligand_of_interest ,
+	has_protein_modification ENUM_pdbx_entry_details_has_protein_modification ,
 	nonpolymer_details TEXT ,
 	sequence_details TEXT ,
 	source_details TEXT ,
@@ -7166,6 +7173,12 @@ CREATE TABLE refine (
 	"aniso_B33" DECIMAL ,
 	"correlation_coeff_Fo_to_Fc" DECIMAL ,
 	"correlation_coeff_Fo_to_Fc_free" DECIMAL ,
+-- xsd:restriction/xsd:maxInclusive="1.0"
+-- xsd:restriction/xsd:minInclusive="-1.0"
+	"correlation_coeff_I_to_Fcsqd_free" DECIMAL CHECK ( "correlation_coeff_I_to_Fcsqd_free" >= -1.0 AND "correlation_coeff_I_to_Fcsqd_free" <= 1.0 ) ,
+-- xsd:restriction/xsd:maxInclusive="1.0"
+-- xsd:restriction/xsd:minInclusive="-1.0"
+	"correlation_coeff_I_to_Fcsqd_work" DECIMAL CHECK ( "correlation_coeff_I_to_Fcsqd_work" >= -1.0 AND "correlation_coeff_I_to_Fcsqd_work" <= 1.0 ) ,
 	details TEXT ,
 -- omit an attribute having a fixed value: @units="electrons_per_angstroms_cubed"
 	diff_density_max DECIMAL ,
@@ -7598,6 +7611,14 @@ CREATE TABLE refine_ls_shell (
 	"R_factor_all" DECIMAL CHECK ( "R_factor_all" >= 0.0 ) ,
 -- xsd:restriction/xsd:minInclusive="0.0"
 	"R_factor_obs" DECIMAL CHECK ( "R_factor_obs" >= 0.0 ) ,
+	"correlation_coeff_Fo_to_Fc" DECIMAL ,
+	"correlation_coeff_Fo_to_Fc_free" DECIMAL ,
+-- xsd:restriction/xsd:maxInclusive="1.0"
+-- xsd:restriction/xsd:minInclusive="-1.0"
+	"correlation_coeff_I_to_Fcsqd_free" DECIMAL CHECK ( "correlation_coeff_I_to_Fcsqd_free" >= -1.0 AND "correlation_coeff_I_to_Fcsqd_free" <= 1.0 ) ,
+-- xsd:restriction/xsd:maxInclusive="1.0"
+-- xsd:restriction/xsd:minInclusive="-1.0"
+	"correlation_coeff_I_to_Fcsqd_work" DECIMAL CHECK ( "correlation_coeff_I_to_Fcsqd_work" >= -1.0 AND "correlation_coeff_I_to_Fcsqd_work" <= 1.0 ) ,
 -- xsd:restriction/xsd:minInclusive="0.0"
 	d_res_low DECIMAL CHECK ( d_res_low >= 0.0 ) ,
 -- xsd:restriction/xsd:minInclusive="0"
@@ -8929,13 +8950,13 @@ CREATE TABLE symmetry_equiv (
 --ALTER TABLE em_entity_assembly ADD CONSTRAINT UNQ_em_entity_assembly UNIQUE ( entry_id, id );
 
 -- (derived from xsd:key[@name='em_entity_assembly_molwtKey_0'])
---ALTER TABLE em_entity_assembly_molwt ADD CONSTRAINT UNQ_em_entity_assembly_molwt UNIQUE ( entry_id, id );
+--ALTER TABLE em_entity_assembly_molwt ADD CONSTRAINT UNQ_em_entity_assembly_molwt UNIQUE ( entry_id, entity_assembly_id, id );
 
 -- (derived from xsd:key[@name='em_entity_assembly_naturalsourceKey_0'])
---ALTER TABLE em_entity_assembly_naturalsource ADD CONSTRAINT UNQ_em_entity_assembly_naturalsource UNIQUE ( entry_id, id );
+--ALTER TABLE em_entity_assembly_naturalsource ADD CONSTRAINT UNQ_em_entity_assembly_naturalsource UNIQUE ( entry_id, entity_assembly_id, id );
 
 -- (derived from xsd:key[@name='em_entity_assembly_recombinantKey_0'])
---ALTER TABLE em_entity_assembly_recombinant ADD CONSTRAINT UNQ_em_entity_assembly_recombinant UNIQUE ( entry_id, id );
+--ALTER TABLE em_entity_assembly_recombinant ADD CONSTRAINT UNQ_em_entity_assembly_recombinant UNIQUE ( entry_id, entity_assembly_id, id );
 
 -- (derived from xsd:key[@name='em_entity_assembly_syntheticKey_0'])
 --ALTER TABLE em_entity_assembly_synthetic ADD CONSTRAINT UNQ_em_entity_assembly_synthetic UNIQUE ( entry_id, entity_assembly_id, id );

@@ -621,6 +621,9 @@ Criteria for FSC resolution estimation, <xsl:value-of select="@type"/>, is not l
     <xsl:if test="VRPTx:error">
       <xsl:attribute name="TransNCS"><xsl:value-of select="VRPTx:error"/></xsl:attribute>
     </xsl:if>
+    <xsl:if test="VRPTx:warning">
+      <xsl:attribute name="eds_rfactor_warning"><xsl:value-of select="VRPTx:warning"/></xsl:attribute>
+    </xsl:if>
     <xsl:if test="VRPTx:Padilla-Yeates_L_mean">
       <xsl:attribute name="TwinL"><xsl:value-of select="VRPTx:Padilla-Yeates_L_mean"/></xsl:attribute>
     </xsl:if>

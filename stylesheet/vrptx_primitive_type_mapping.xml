@@ -2186,6 +2186,10 @@
                  type="http://www.w3.org/2001/XMLSchema#decimal"/>
       <data_item name="correlation_coeff_Fo_to_Fc_free"
                  type="http://www.w3.org/2001/XMLSchema#decimal"/>
+      <data_item name="correlation_coeff_I_to_Fcsqd_free"
+                 type="http://www.w3.org/2001/XMLSchema#decimal"/>
+      <data_item name="correlation_coeff_I_to_Fcsqd_work"
+                 type="http://www.w3.org/2001/XMLSchema#decimal"/>
       <data_item name="diff_density_max" type="http://www.w3.org/2001/XMLSchema#decimal"/>
       <data_item name="diff_density_max_esd"
                  type="http://www.w3.org/2001/XMLSchema#decimal"/>
@@ -2451,6 +2455,14 @@
       <data_item name="R_factor_R_work" type="http://www.w3.org/2001/XMLSchema#decimal"/>
       <data_item name="R_factor_all" type="http://www.w3.org/2001/XMLSchema#decimal"/>
       <data_item name="R_factor_obs" type="http://www.w3.org/2001/XMLSchema#decimal"/>
+      <data_item name="correlation_coeff_Fo_to_Fc"
+                 type="http://www.w3.org/2001/XMLSchema#decimal"/>
+      <data_item name="correlation_coeff_Fo_to_Fc_free"
+                 type="http://www.w3.org/2001/XMLSchema#decimal"/>
+      <data_item name="correlation_coeff_I_to_Fcsqd_free"
+                 type="http://www.w3.org/2001/XMLSchema#decimal"/>
+      <data_item name="correlation_coeff_I_to_Fcsqd_work"
+                 type="http://www.w3.org/2001/XMLSchema#decimal"/>
       <data_item name="d_res_low" type="http://www.w3.org/2001/XMLSchema#decimal"/>
       <data_item name="number_reflns_R_free" type="http://www.w3.org/2001/XMLSchema#int"/>
       <data_item name="number_reflns_R_work" type="http://www.w3.org/2001/XMLSchema#int"/>

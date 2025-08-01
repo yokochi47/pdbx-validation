@@ -778,6 +778,7 @@ pdbx_dcc_density.twin_operator_xtriage
 pdbx_dcc_density.twin_Rfactor
 pdbx_dcc_density.twin_type
 pdbx_dcc_density.unit_cell
+pdbx_dcc_density.warning
 pdbx_dcc_density.wavelength
 pdbx_dcc_density.working_set_count
 pdbx_dcc_density.Z-score
@@ -1111,6 +1112,7 @@ pdbx_entity_poly_comp_link_list.value_order
 pdbx_entry_details.compound_details
 pdbx_entry_details.entry_id
 pdbx_entry_details.has_ligand_of_interest
+pdbx_entry_details.has_protein_modification
 pdbx_entry_details.nonpolymer_details
 pdbx_entry_details.sequence_details
 pdbx_entry_details.source_details
@@ -2659,6 +2661,8 @@ refine_B_iso.treatment
 refine_B_iso.value
 refine.correlation_coeff_Fo_to_Fc
 refine.correlation_coeff_Fo_to_Fc_free
+refine.correlation_coeff_I_to_Fcsqd_free
+refine.correlation_coeff_I_to_Fcsqd_work
 refine.details
 refine.diff_density_max
 refine.diff_density_max_esd
@@ -2772,6 +2776,10 @@ refine.ls_R_factor_R_free_error_details
 refine.ls_R_factor_R_work
 refine.ls_R_Fsqd_factor_obs
 refine.ls_R_I_factor_obs
+refine_ls_shell.correlation_coeff_Fo_to_Fc
+refine_ls_shell.correlation_coeff_Fo_to_Fc_free
+refine_ls_shell.correlation_coeff_I_to_Fcsqd_free
+refine_ls_shell.correlation_coeff_I_to_Fcsqd_work
 refine_ls_shell.d_res_high
 refine_ls_shell.d_res_low
 refine_ls_shell.number_reflns_all
