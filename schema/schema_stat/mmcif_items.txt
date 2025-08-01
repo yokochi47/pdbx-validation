@@ -1436,6 +1436,7 @@ em_software.id
 em_software.image_processing_id
 em_software.imaging_id
 em_software.name
+em_software.reference_DOI
 em_software.version
 em_specimen.concentration
 em_specimen.details
@@ -5818,6 +5819,7 @@ refine_ls_restr_ncs.weight_position
 refine_ls_restr.number
 refine_ls_restr.pdbx_refine_id
 refine_ls_restr.pdbx_restraint_function
+refine_ls_restr.pdbx_Zscore
 refine_ls_restr.rejects
 refine_ls_restr.type
 refine_ls_restr_type.distance_cutoff_high
@@ -6187,6 +6189,7 @@ software.name
 software.os
 software.os_version
 software.pdbx_ordinal
+software.pdbx_reference_DOI
 software.type
 software.version
 space_group.crystal_system

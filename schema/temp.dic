@@ -1,0 +1,12 @@
+save__em_software.reference_DOI
+   _item_description.description  
+;              Document Object Identifier used by doi.org to uniquely
+               identify software being used.
+;
+
+   _item.name            '_em_software.reference_DOI'
+   _item.category_id     em_software
+   _item.mandatory_code  no
+   _item_type.code  code
+   _item_examples.case  10.2345/S1384107697000225
+save_
