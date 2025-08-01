@@ -1,9 +1,9 @@
 ###########################################################################
 #
 # File:  mmcif_pdbx_validation-v4.dic
-# Date:  Fri Aug  1 14:19:15 JST 2025
+# Date:  Fri Aug  1 15:11:27 JST 2025
 # Created from:
-#        mmcif_pdbx_v50.dic   - PDB Exchange Data Dictionary (V5.401)
+#        mmcif_pdbx_v50.dic   - PDB Exchange Data Dictionary (V5.402)
 #        http://wwpdb.org/validation/schema/wwpdb_validation_v6.05.xsd
 #         - a XML schema for wwPDB validation reports, v6.05, rev. 2025-05-06
 #
@@ -30,7 +30,7 @@ data_mmcif_pdbx_validation.dic
 
     _dictionary.title           mmcif_pdbx_validation.dic
     _dictionary.datablock_id    mmcif_pdbx_validation.dic
-    _dictionary.version         4.401
+    _dictionary.version         4.402
 #
     loop_
     _dictionary_history.version
@@ -1407,6 +1407,14 @@ data_mmcif_pdbx_validation.dic
 >     _pdbx_audit_revision_details, _pdbx_audit_revision_item
 >     categories. # not mapped
     + Support wwPDB validation report XML Schema v6.05 (extended_pdbid)
+;
+  4.402   2025-08-01
+;
+>   + Add _em_motion_correction category. # not mapped
+>   + Add _em_imaging.objective_aperture, _em_imaging.microscope_serial_number
+>     and _em_imaging.microscope_version # not mapped
+>   + Add "EMReady" and "PyTo" to em_software.name enumeration # merged
+>   + Remove "NAME" from _pdbx_nmr_software.name enumeration # merged
 ;
 
 
@@ -30840,7 +30848,6 @@ save__pdbx_nmr_software.name
    _pdbx_item_enumeration.name
    _pdbx_item_enumeration.value
    _pdbx_item_enumeration.detail
-     "_pdbx_nmr_software.name"  NAME                                         .
      "_pdbx_nmr_software.name"  3D-DART                                      .
      "_pdbx_nmr_software.name"  3DNA                                         .
      "_pdbx_nmr_software.name"  4D-CHAINS                                    .
@@ -45798,8 +45805,8 @@ save__pdbx_entry_details.has_protein_modification
     loop_
     _item_enumeration.value
     _item_enumeration.detail
-     Y  "Protein modifications present"  
-     N  "No protein modifications present"  
+     Y  "Protein modifications present"
+     N  "No protein modifications present"
 save_
 
 save_pdbx_struct_mod_residue
@@ -55953,6 +55960,7 @@ save__em_software.name
         '_em_software.name'  EMIRA                              .
         '_em_software.name'  EMPFT                              .
         '_em_software.name'  EMfit                              .
+        '_em_software.name'  EMReady                            .
         '_em_software.name'  EPU                                .
         '_em_software.name'  ERRASER                            .
         '_em_software.name'  eTasED                             .
@@ -56004,7 +56012,7 @@ save__em_software.name
         '_em_software.name'  novaSTA                            .
         '_em_software.name'  O                                  .
         '_em_software.name'  PACEtomo                           .
-        '_em_software.name'  'Panta Rhei'                      .
+        '_em_software.name'  'Panta Rhei'                       .
         '_em_software.name'  Pathwalking                        .
         '_em_software.name'  PEET                               .
         '_em_software.name'  PHENIX                             .
@@ -56014,6 +56022,7 @@ save__em_software.name
         '_em_software.name'  PRIME                              .
         '_em_software.name'  PROTOMO                            .
         '_em_software.name'  PyMOL                              .
+        '_em_software.name'  PyTo                               .
         '_em_software.name'  PyTom                              .
         '_em_software.name'  RAPTOR                             .
         '_em_software.name'  Refine_Fspace                      .

@@ -2,12 +2,12 @@ statistics of mmcif_pdbx_validation.dic:
  has 283 categories.
   55 new categories (see schema_stat/new_categories.txt for details).
   228 shared categories from mmcif_pdbx_v50.dic (CHEM_COMP_INT:1, CHEM_COMP_INT,EMDB_PUBLIC:4, EMDB_PUBLIC:37, WWPDB_LOCAL:8, see schema_stat/shared_categories.txt for details).
-  366 dropped categories from mmcif_pdbx_v50.dic (EMDB_PUBLIC:11, RCSB_LOCAL:1, WWPDB_DEPRECATED:2, WWPDB_LOCAL:129, WWPDB_LOCAL,EMDB_PUBLIC:21, see schema_stat/dropped_categories.txt for details).
+  367 dropped categories from mmcif_pdbx_v50.dic (EMDB_PUBLIC:12, RCSB_LOCAL:1, WWPDB_DEPRECATED:2, WWPDB_LOCAL:129, WWPDB_LOCAL,EMDB_PUBLIC:21, see schema_stat/dropped_categories.txt for details).
  has 3508 items.
   580 new items (see schema_stat/new_items.txt for details).
   64 extended items in shared categories (see schema_stat/extended_items.txt for details).
   2928 shared items from mmcif_pdbx_v50.dic (see schema_stat/shared_items.txt for details).
-  211 dropped items from mmcif_pdbx_v50.dic (see schema_stat/dropped_items.txt for details).
+  214 dropped items from mmcif_pdbx_v50.dic (see schema_stat/dropped_items.txt for details).
   713 items linked to wwpdb_validation_v6.05.xsd.
 
 statistics of pdbx-validation-v4.owl:

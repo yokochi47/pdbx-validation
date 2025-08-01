@@ -86,6 +86,7 @@ em_layer_lines_depositor_info WWPDB_LOCAL
 em_map WWPDB_LOCAL
 em_map_depositor_info WWPDB_LOCAL
 em_mask_depositor_info WWPDB_LOCAL
+em_motion_correction EMDB_PUBLIC
 em_obsolete WWPDB_LOCAL,EMDB_PUBLIC
 em_sample_preparation WWPDB_LOCAL
 em_sample_support EMDB_PUBLIC

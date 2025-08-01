@@ -1283,11 +1283,14 @@ em_imaging.id
 em_imaging.illumination_mode
 em_imaging.microscope_id
 em_imaging.microscope_model
+em_imaging.microscope_serial_number
+em_imaging.microscope_version
 em_imaging.mode
 em_imaging.nominal_cs
 em_imaging.nominal_defocus_max
 em_imaging.nominal_defocus_min
 em_imaging.nominal_magnification
+em_imaging.objective_aperture
 em_imaging_optics.chr_aberration_corrector
 em_imaging_optics.details
 em_imaging_optics.energyfilter_lower
@@ -1382,6 +1385,10 @@ em_mask_depositor_info.pixel_spacing_y
 em_mask_depositor_info.pixel_spacing_z
 em_mask_depositor_info.upload_file_name
 em_mask_depositor_info.upload_format
+em_motion_correction.details
+em_motion_correction.id
+em_motion_correction.image_processing_id
+em_motion_correction.type
 em_obsolete.date
 em_obsolete.details
 em_obsolete.entry

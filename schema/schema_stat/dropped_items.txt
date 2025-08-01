@@ -53,6 +53,9 @@ em_imaging.electron_dose
 em_imaging.energy_filter
 em_imaging.energy_window
 em_imaging.microscope_id
+em_imaging.microscope_serial_number
+em_imaging.microscope_version
+em_imaging.objective_aperture
 em_imaging.sample_support_id
 em_imaging.scans_id
 em_single_particle_entity.symmetry_type

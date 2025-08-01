@@ -99,6 +99,7 @@ em_map_depositor_info WWPDB_LOCAL
 em_mask_depositor_info WWPDB_LOCAL
 em_figure_depositor_info WWPDB_LOCAL
 em_layer_lines_depositor_info WWPDB_LOCAL
+em_motion_correction EMDB_PUBLIC
 em_structure_factors_depositor_info WWPDB_LOCAL
 pdbx_seq_map_depositor_info WWPDB_LOCAL
 pdbx_chem_comp_depositor_info WWPDB_LOCAL

@@ -127,6 +127,7 @@ em_layer_lines_depositor_info
 em_map
 em_map_depositor_info
 em_mask_depositor_info
+em_motion_correction
 em_obsolete
 em_particle_selection
 em_sample_preparation
