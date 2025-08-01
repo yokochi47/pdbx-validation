@@ -1012,9 +1012,15 @@
 "_reflns.pdbx_Rrim_I_all_anomalous" WWPDB_LOCAL
 "_reflns.pdbx_Rpim_I_all_anomalous" WWPDB_LOCAL
 "_reflns.pdbx_Rmerge_I_anomalous" WWPDB_LOCAL
+"_pdbx_audit_revision_history.ordinal" EMDB_PUBLIC
+"_pdbx_audit_revision_history.data_content_type" EMDB_PUBLIC
+"_pdbx_audit_revision_history.major_revision" EMDB_PUBLIC
+"_pdbx_audit_revision_history.minor_revision" EMDB_PUBLIC
+"_pdbx_audit_revision_history.revision_date" EMDB_PUBLIC
 "_pdbx_audit_revision_history.internal_version" WWPDB_LOCAL
 "_pdbx_audit_revision_history.internal_deposition_id" WWPDB_LOCAL
 "_pdbx_audit_revision_history.internal_part_number" WWPDB_LOCAL
+"_pdbx_audit_revision_history.part_number" EMDB_PUBLIC
 "_pdbx_audit_support.details" WWPDB_LOCAL
 "_chem_comp_atom.pdbx_stnd_atom_id" WWPDB_LOCAL
 "_em_3d_fitting.initial_refinement_model_id" WWPDB_DEPRECATED

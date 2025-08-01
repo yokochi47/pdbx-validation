@@ -164,9 +164,9 @@ for pdbml_file in $WORK_DIR/$PDBML/*.xml ; do
 
  pdb_id=`basename $pdbml_file -noatom.xml`
 
- #if [ $pdb_id = "2xku" ] || [ $pdb_id = "5obm" ] ; then
- # continue
- #fi
+ if [ $pdb_id = "2xku" ] || [ $pdb_id = "5obm" ] ; then
+  continue
+ fi
 
  get_resource $pdb_id
 

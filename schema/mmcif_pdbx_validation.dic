@@ -1,11 +1,11 @@
 ###########################################################################
 #
 # File:  mmcif_pdbx_validation-v4.dic
-# Date:  Fri Aug  1 12:24:56 JST 2025
+# Date:  Fri Aug  1 14:19:15 JST 2025
 # Created from:
-#        mmcif_pdbx_v50.dic   - PDB Exchange Data Dictionary (V5.400)
-#        http://wwpdb.org/validation/schema/wwpdb_validation_v6.04.xsd
-#         - a XML schema for wwPDB validation reports, v6.04, rev. 2024-11-19
+#        mmcif_pdbx_v50.dic   - PDB Exchange Data Dictionary (V5.401)
+#        http://wwpdb.org/validation/schema/wwpdb_validation_v6.05.xsd
+#         - a XML schema for wwPDB validation reports, v6.05, rev. 2025-05-06
 #
 ###########################################################################
 
@@ -30,7 +30,7 @@ data_mmcif_pdbx_validation.dic
 
     _dictionary.title           mmcif_pdbx_validation.dic
     _dictionary.datablock_id    mmcif_pdbx_validation.dic
-    _dictionary.version         4.400
+    _dictionary.version         4.401
 #
     loop_
     _dictionary_history.version
@@ -1398,6 +1398,15 @@ data_mmcif_pdbx_validation.dic
     + Merge _pdbx_entry_details.has_protein_modification
     + Support wwPDB validation report XML Schema v6.04 (eds_rfactor_warning)
       + Add _pdbx_dcc_density.warning
+;
+  4.401   2025-08-01
+;
+>   + Add "FAST_DP" to _software.name enumeration # not mapped
+>   + Change context to support EMDB for _pdbx_audit_revision_history,
+>     _pdbx_audit_revision_group, _pdbx_audit_revision_category,
+>     _pdbx_audit_revision_details, _pdbx_audit_revision_item
+>     categories. # not mapped
+    + Support wwPDB validation report XML Schema v6.05 (extended_pdbid)
 ;
 
 

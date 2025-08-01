@@ -153,6 +153,16 @@ Unmatched entry ID in both documents (<xsl:value-of select="$entry_id"/> and <xs
   <xsl:template name="Entry">
 
     <xsl:attribute name="pdbid"><xsl:value-of select="$entry_id"/></xsl:attribute>
+    <xsl:attribute name="extended_pdbid">
+       <xsl:choose>
+         <xsl:when test="string-length($entry_id)=4">
+           <xsl:value-of select="concat('pdb_0000', lower-case($entry_id))"/>
+         </xsl:when>
+         <xsl:otherwise>
+           <xsl:value-of select="lower-case($entry_id)"/>
+         </xsl:otherwise>
+       </xsl:choose>
+    </xsl:attribute>
 
     <xsl:apply-templates select="$noatom_datablock/PDBx:pdbx_database_statusCategory/*"/>
 
