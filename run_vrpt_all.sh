@@ -75,13 +75,19 @@ else
   ./scripts/merge_pdbml_nextgen.sh
  fi
 
- ./scripts/validate_all_xml_gz_wo_subdir.sh -d $PDBML_EXT -r
+ total=`find $PDBML_EXT -mindepth 0 -name '*.xml' | wc -l 2> /dev/null`
+ if [ $total -gt 0 ] ; then
+  ./scripts/validate_all_xml_gz_wo_subdir.sh -d $PDBML_EXT -r
+ fi
 
  ./scripts/extract_pdbml.sh
  ext_pdbml_exit_code=$?
 
  if [ ! -z $VALID_OPT ] ; then
-  ./scripts/validate_all_xml_gz_wo_subdir.sh -d $PDBML_EXT
+  total=`find $PDBML_EXT -mindepth 0 -name '*.xml' | wc -l 2> /dev/null`
+  if [ $total -gt 0 ] ; then
+   ./scripts/validate_all_xml_gz_wo_subdir.sh -d $PDBML_EXT
+  fi
  fi
 
 fi

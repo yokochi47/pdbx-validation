@@ -1,9 +1,9 @@
 ###########################################################################
 #
 # File:  mmcif_pdbx_validation-v4.dic
-# Date:  Fri Aug  1 15:26:46 JST 2025
+# Date:  Wed Oct 15 18:00:34 JST 2025
 # Created from:
-#        mmcif_pdbx_v50.dic   - PDB Exchange Data Dictionary (V5.404)
+#        mmcif_pdbx_v50.dic   - PDB Exchange Data Dictionary (V5.405)
 #        http://wwpdb.org/validation/schema/wwpdb_validation_v6.05.xsd
 #         - a XML schema for wwPDB validation reports, v6.05, rev. 2025-05-06
 #
@@ -30,7 +30,7 @@ data_mmcif_pdbx_validation.dic
 
     _dictionary.title           mmcif_pdbx_validation.dic
     _dictionary.datablock_id    mmcif_pdbx_validation.dic
-    _dictionary.version         4.404
+    _dictionary.version         4.405
 #
     loop_
     _dictionary_history.version
@@ -1428,8 +1428,23 @@ data_mmcif_pdbx_validation.dic
 ;
   4.404   2025-08-01
 ;
->   + Add DeepEMhancer to _em_software.name enumeration
->   + Add HexAuFoil to _em_sample_support.grid_type enumeration # not mapped
+>  + Add DeepEMhancer to _em_software.name enumeration # merged
+>  + Add HexAuFoil to _em_sample_support.grid_type enumeration # not mapped
+>  + Add "PSI JUNGFRAU 9M" and "PSI JUNGFRAU 10M" detectors to
+>    _diffrn_detector.type # merged
+>  + Add "N6-benzoyllysine", "N6-isonicotinyllysine",
+>    and "N6-methacryllysine" to enumeration list for
+>    _pdbx_chem_comp_pcm.type and _pdbx_modification_feature.type # not mapped
+;
+  4.405   2025-10-15
+;
+>   + Update enumeration for _chem_comp.pdbx_comp_type # not mapped
+>   + Add 'Modify metal description' to _pdbx_chem_comp_audit.action_type
+>     eumeration # not mapped
+>   + Add "EMS Formvar Carbon" to _em_sample_support.grid_type # not mapped
+>   + Add Velox, EPU-D, 'CrystFEL partialator', MemBrain-pick,
+>     TILTCTF, TOMOMAN to _em_software.name enumeration # merged
+>   + Add Laueprocess to _software.name enumeration # not mapped
 ;
 
 
@@ -2709,6 +2724,8 @@ save__diffrn_detector.type
       "_diffrn_detector.type"  "PSI JUNGFRAU 1M"                 PIXEL
       "_diffrn_detector.type"  "PSI JUNGFRAU 4M"                 PIXEL
       "_diffrn_detector.type"  "PSI JUNGFRAU 8M"                 PIXEL
+      "_diffrn_detector.type"  "PSI JUNGFRAU 9M"                 PIXEL
+      "_diffrn_detector.type"  "PSI JUNGFRAU 10M"                PIXEL
       "_diffrn_detector.type"  "PSI JUNGFRAU 16M"                PIXEL
       "_diffrn_detector.type"  "PSI PILATUS 6M"                  PIXEL
       "_diffrn_detector.type"  "RAYONIX MX-225"                  CCD
@@ -55967,6 +55984,7 @@ save__em_software.name
         '_em_software.name'  cryoDRGN                           .
         '_em_software.name'  cryoDRGN2                          .
         '_em_software.name'  cryoSPARC                          .
+        '_em_software.name'  'CrystFEL partialator'             .
         '_em_software.name'  CTFFIND                            .
         '_em_software.name'  ctfit                              .
         '_em_software.name'  CTFPHASEFLIP                       .
@@ -55990,6 +56008,7 @@ save__em_software.name
         '_em_software.name'  EMfit                              .
         '_em_software.name'  EMReady                            .
         '_em_software.name'  EPU                                .
+        '_em_software.name'  EPU-D                              .
         '_em_software.name'  ERRASER                            .
         '_em_software.name'  eTasED                             .
         '_em_software.name'  ETHAN                              .
@@ -56031,6 +56050,7 @@ save__em_software.name
         '_em_software.name'  M                                  .
         '_em_software.name'  MATLAB                             .
         '_em_software.name'  MDFF                               .
+        '_em_software.name'  MemBrain-pick                      .
         '_em_software.name'  MODELLER                           .
         '_em_software.name'  MOLREP                             .
         '_em_software.name'  MPSA                               .
@@ -56080,11 +56100,13 @@ save__em_software.name
         '_em_software.name'  SUPER                              .
         '_em_software.name'  'Super-sampling SART'              .
         '_em_software.name'  TEMPy                              .
+        '_em_software.name'  TILTCTF                            .
         '_em_software.name'  TOM                                .
         '_em_software.name'  'TOM Toolbox'                      .
         '_em_software.name'  TOMO3D                             .
         '_em_software.name'  TOMOCTF                            .
         '_em_software.name'  TomoAlign                          .
+        '_em_software.name'  TOMOMAN                            .
         '_em_software.name'  Topaz                              .
         '_em_software.name'  'UCSF Chimera'                     .
         '_em_software.name'  'UCSF ChimeraX'                    .
@@ -56092,6 +56114,7 @@ save__em_software.name
         '_em_software.name'  'UCSFImage'                        .
         '_em_software.name'  'UCSFImage4'                       .
         '_em_software.name'  URO                                .
+        '_em_software.name'  Velox                              .
         '_em_software.name'  VMD                                .
         '_em_software.name'  Warp                               .
         '_em_software.name'  X-PLOR                             .
