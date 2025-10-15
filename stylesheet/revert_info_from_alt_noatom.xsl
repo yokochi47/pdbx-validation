@@ -155,12 +155,12 @@ Unmatched entry ID in both documents (<xsl:value-of select="$entry_id"/> and <xs
     <xsl:attribute name="pdbid"><xsl:value-of select="$entry_id"/></xsl:attribute>
     <xsl:attribute name="extended_pdbid">
        <xsl:choose>
-         <xsl:when test="string-length($entry_id)=4">
-           <xsl:value-of select="concat('pdb_0000', lower-case($entry_id))"/>
-         </xsl:when>
-         <xsl:otherwise>
-           <xsl:value-of select="lower-case($entry_id)"/>
-         </xsl:otherwise>
+	 <xsl:when test="string-length($entry_id)=4">
+	   <xsl:value-of select="concat('pdb_0000', lower-case($entry_id))"/>
+	 </xsl:when>
+	 <xsl:otherwise>
+	   <xsl:value-of select="lower-case($entry_id)"/>
+	 </xsl:otherwise>
        </xsl:choose>
     </xsl:attribute>
 
@@ -791,20 +791,13 @@ Criteria for FSC resolution estimation, <xsl:value-of select="@type"/>, is not l
 
     <xsl:variable name="condition_res_high"><xsl:value-of select="$datablock/VRPTx:pdbx_percentile_conditionsCategory/VRPTx:pdbx_percentile_conditions[@id=$conditions_id]/VRPTx:ls_d_res_high"/></xsl:variable>
     <xsl:variable name="condition_res_low"><xsl:value-of select="$datablock/VRPTx:pdbx_percentile_conditionsCategory/VRPTx:pdbx_percentile_conditions[@id=$conditions_id]/VRPTx:ls_d_res_low"/></xsl:variable>
-
-    <xsl:variable name="absolute">
-      <xsl:choose>
-	<xsl:when test="$condition_res_high!=''">no</xsl:when>
-	<xsl:otherwise>yes</xsl:otherwise>
-      </xsl:choose>
-    </xsl:variable>
-
+    <xsl:variable name="conditions_label"><xsl:value-of select="$datablock/VRPTx:pdbx_percentile_conditionsCategory/VRPTx:pdbx_percentile_conditions[@id=$conditions_id]/VRPTx:conditions_label"/></xsl:variable>
     <xsl:variable name="number_of_entries"><xsl:value-of select="$datablock/VRPTx:pdbx_percentile_conditionsCategory/VRPTx:pdbx_percentile_conditions[@id=$conditions_id]/VRPTx:number_entries_total"/></xsl:variable>
 
     <xsl:choose>
       <xsl:when test="$type='RNA_suiteness_score'">
 	<xsl:choose>
-	  <xsl:when test="$absolute='no'">
+	  <xsl:when test="$conditions_label='relative'">
 	    <xsl:attribute name="relative-percentile-RNAsuiteness"><xsl:value-of select="$rank"/></xsl:attribute>
 	    <xsl:attribute name="numPDBids-relative-percentile-RNAsuiteness"><xsl:value-of select="$number_of_entries"/></xsl:attribute>
 	    <xsl:attribute name="low-resol-relative-percentile-RNAsuiteness"><xsl:value-of select="$condition_res_low"/></xsl:attribute>
@@ -818,7 +811,7 @@ Criteria for FSC resolution estimation, <xsl:value-of select="@type"/>, is not l
       </xsl:when>
       <xsl:when test="$type='all_atom_clashscore'">
 	<xsl:choose>
-	  <xsl:when test="$absolute='no'">
+	  <xsl:when test="$conditions_label='relative'">
 	    <xsl:attribute name="relative-percentile-clashscore"><xsl:value-of select="$rank"/></xsl:attribute>
 	    <xsl:attribute name="numPDBids-relative-percentile-clashscore"><xsl:value-of select="$number_of_entries"/></xsl:attribute>
 	    <xsl:attribute name="low-resol-relative-percentile-clashscore"><xsl:value-of select="$condition_res_low"/></xsl:attribute>
@@ -832,7 +825,7 @@ Criteria for FSC resolution estimation, <xsl:value-of select="@type"/>, is not l
       </xsl:when>
       <xsl:when test="$type='Ramachandran_outlier_percent'">
 	<xsl:choose>
-	  <xsl:when test="$absolute='no'">
+	  <xsl:when test="$conditions_label='relative'">
 	    <xsl:attribute name="relative-percentile-percent-rama-outliers"><xsl:value-of select="$rank"/></xsl:attribute>
 	    <xsl:attribute name="numPDBids-relative-percentile-percent-rama-outliers"><xsl:value-of select="$number_of_entries"/></xsl:attribute>
 	    <xsl:attribute name="low-resol-relative-percentile-percent-rama-outliers"><xsl:value-of select="$condition_res_low"/></xsl:attribute>
@@ -846,7 +839,7 @@ Criteria for FSC resolution estimation, <xsl:value-of select="@type"/>, is not l
       </xsl:when>
       <xsl:when test="$type='rotamer_outliers_percent'">
 	<xsl:choose>
-	  <xsl:when test="$absolute='no'">
+	  <xsl:when test="$conditions_label='relative'">
 	    <xsl:attribute name="relative-percentile-percent-rota-outliers"><xsl:value-of select="$rank"/></xsl:attribute>
 	    <xsl:attribute name="numPDBids-relative-percentile-percent-rota-outliers"><xsl:value-of select="$number_of_entries"/></xsl:attribute>
 	    <xsl:attribute name="low-resol-relative-percentile-percent-rota-outliers"><xsl:value-of select="$condition_res_low"/></xsl:attribute>
@@ -860,7 +853,7 @@ Criteria for FSC resolution estimation, <xsl:value-of select="@type"/>, is not l
       </xsl:when>
       <xsl:when test="$type='R_value_R_free'">
 	<xsl:choose>
-	  <xsl:when test="$absolute='no'">
+	  <xsl:when test="$conditions_label='relative'">
 	    <xsl:attribute name="relative-percentile-DCC_Rfree"><xsl:value-of select="$rank"/></xsl:attribute>
 	    <xsl:attribute name="numPDBids-relative-percentile-DCC_Rfree"><xsl:value-of select="$number_of_entries"/></xsl:attribute>
 	    <xsl:attribute name="low-resol-relative-percentile-DCC_Rfree"><xsl:value-of select="$condition_res_low"/></xsl:attribute>
@@ -874,7 +867,7 @@ Criteria for FSC resolution estimation, <xsl:value-of select="@type"/>, is not l
       </xsl:when>
       <xsl:when test="$type='RSRZ_outliers_percent'">
 	<xsl:choose>
-	  <xsl:when test="$absolute='no'">
+	  <xsl:when test="$conditions_label='relative'">
 	    <xsl:attribute name="relative-percentile-percent-RSRZ-outliers"><xsl:value-of select="$rank"/></xsl:attribute>
 	    <xsl:attribute name="numPDBids-relative-percentile-percent-RSRZ-outliers"><xsl:value-of select="$number_of_entries"/></xsl:attribute>
 	    <xsl:attribute name="low-resol-relative-percentile-percent-RSRZ-outliers"><xsl:value-of select="$condition_res_low"/></xsl:attribute>
@@ -883,6 +876,26 @@ Criteria for FSC resolution estimation, <xsl:value-of select="@type"/>, is not l
 	  <xsl:otherwise>
 	    <xsl:attribute name="absolute-percentile-percent-RSRZ-outliers"><xsl:value-of select="$rank"/></xsl:attribute>
 	    <xsl:attribute name="numPDBids-absolute-percentile-percent-RSRZ-outliers"><xsl:value-of select="$number_of_entries"/></xsl:attribute>
+	  </xsl:otherwise>
+	</xsl:choose>
+      </xsl:when>
+      <xsl:when test="$type='Q-score'">
+	<xsl:choose>
+	  <xsl:when test="$conditions_label='relative'">
+	    <xsl:attribute name="relative-percentile-qrelative"><xsl:value-of select="$rank"/></xsl:attribute>
+	    <xsl:attribute name="numEMDBids-relative-percentile-qrelative"><xsl:value-of select="$number_of_entries"/></xsl:attribute>
+	    <xsl:attribute name="low-resol-relative-percentile-qrelative"><xsl:value-of select="$condition_res_low"/></xsl:attribute>
+	    <xsl:attribute name="high-resol-relative-percentile-qrelative"><xsl:value-of select="$condition_res_high"/></xsl:attribute>
+	  </xsl:when>
+	  <xsl:otherwise>
+	    <xsl:attribute name="absolute-percentile-qrelative"><xsl:value-of select="$rank"/></xsl:attribute>
+	    <xsl:attribute name="numEMDBids-absolute-percentile-qrelative"><xsl:value-of select="$number_of_entries"/></xsl:attribute>
+	    <xsl:if test="$condition_res_low!=''">
+	      <xsl:attribute name="low-resol-absolute-percentile-qrelative"><xsl:value-of select="$condition_res_low"/></xsl:attribute>
+	    </xsl:if>
+	    <xsl:if test="$condition_res_high!=''">
+	    <xsl:attribute name="high-resol-absolute-percentile-qrelative"><xsl:value-of select="$condition_res_high"/></xsl:attribute>
+	    </xsl:if>
 	  </xsl:otherwise>
 	</xsl:choose>
       </xsl:when>

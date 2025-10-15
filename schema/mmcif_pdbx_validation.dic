@@ -1,11 +1,11 @@
 ###########################################################################
 #
 # File:  mmcif_pdbx_validation-v4.dic
-# Date:  Wed Oct 15 18:00:34 JST 2025
+# Date:  Wed Oct 15 18:36:25 JST 2025
 # Created from:
-#        mmcif_pdbx_v50.dic   - PDB Exchange Data Dictionary (V5.405)
-#        http://wwpdb.org/validation/schema/wwpdb_validation_v6.05.xsd
-#         - a XML schema for wwPDB validation reports, v6.05, rev. 2025-05-06
+#        mmcif_pdbx_v50.dic   - PDB Exchange Data Dictionary (V5.406)
+#        http://wwpdb.org/validation/schema/wwpdb_validation_v6.06.xsd
+#         - a XML schema for wwPDB validation reports, v6.06, rev. 2025-09-11
 #
 ###########################################################################
 
@@ -30,7 +30,7 @@ data_mmcif_pdbx_validation.dic
 
     _dictionary.title           mmcif_pdbx_validation.dic
     _dictionary.datablock_id    mmcif_pdbx_validation.dic
-    _dictionary.version         4.405
+    _dictionary.version         4.406
 #
     loop_
     _dictionary_history.version
@@ -1445,6 +1445,16 @@ data_mmcif_pdbx_validation.dic
 >   + Add Velox, EPU-D, 'CrystFEL partialator', MemBrain-pick,
 >     TILTCTF, TOMOMAN to _em_software.name enumeration # merged
 >   + Add Laueprocess to _software.name enumeration # not mapped
+;
+  4.406   2025-10-15
+;
+>   + Add MX3 and "BL09U MX-ES" to _diffrn_source.pdbx_synchrotron_beamline
+>     enumeration # merged
+>   + Add "AUSTRALIAN SYNCHROTRON BEAMLINE MX3" and
+>     "NanoTerasu BEAMLINE BL09U MX-ES" to
+>     _diffrn_source.type enumeration
+>   + Add NanoTerasu to _diffrn_source.pdbx_synchrotron_site
+    + Add support for Q-score percentile slider in wwPDB validation report XML Schema v6.06
 ;
 
 
@@ -4835,6 +4845,7 @@ save__diffrn_source.type
      "_diffrn_source.type"  "APS BEAMLINE 34-ID"                             SYNCHROTRON
      "_diffrn_source.type"  "AUSTRALIAN SYNCHROTRON BEAMLINE MX1"            SYNCHROTRON
      "_diffrn_source.type"  "AUSTRALIAN SYNCHROTRON BEAMLINE MX2"            SYNCHROTRON
+     "_diffrn_source.type"  "AUSTRALIAN SYNCHROTRON BEAMLINE MX3"            SYNCHROTRON
      "_diffrn_source.type"  "BESSY BEAMLINE 14.1"                            SYNCHROTRON
      "_diffrn_source.type"  "BESSY BEAMLINE 14.2"                            SYNCHROTRON
      "_diffrn_source.type"  "BESSY BEAMLINE 14.3"                            SYNCHROTRON
@@ -4953,6 +4964,7 @@ save__diffrn_source.type
      "_diffrn_source.type"  "MAX IV BEAMLINE BioMAX"                         SYNCHROTRON
      "_diffrn_source.type"  "MAX IV BEAMLINE MicroMAX"                       SYNCHROTRON
      "_diffrn_source.type"  "MPG/DESY, HAMBURG BEAMLINE BW6"                 SYNCHROTRON
+     "_diffrn_source.type"  "NanoTerasu BEAMLINE BL09U MX-ES"                SYNCHROTRON
      "_diffrn_source.type"  "NFPSS BEAMLINE BL17B"                           SYNCHROTRON
      "_diffrn_source.type"  "NFPSS BEAMLINE BL18U"                           SYNCHROTRON
      "_diffrn_source.type"  "NFPSS BEAMLINE BL19U1"                          SYNCHROTRON
@@ -26094,6 +26106,7 @@ save__diffrn_source.pdbx_synchrotron_beamline
      "_diffrn_source.pdbx_synchrotron_beamline"  BL03            .
      "_diffrn_source.pdbx_synchrotron_beamline"  BL03HB          .
      "_diffrn_source.pdbx_synchrotron_beamline"  BL07            .
+     "_diffrn_source.pdbx_synchrotron_beamline"  "BL09U MX-ES"   .
      "_diffrn_source.pdbx_synchrotron_beamline"  BL-03           .
      "_diffrn_source.pdbx_synchrotron_beamline"  BL10U2          .
      "_diffrn_source.pdbx_synchrotron_beamline"  BL11-1          .
@@ -26219,6 +26232,7 @@ save__diffrn_source.pdbx_synchrotron_beamline
      "_diffrn_source.pdbx_synchrotron_beamline"  MicroMAX        .
      "_diffrn_source.pdbx_synchrotron_beamline"  MX1             .
      "_diffrn_source.pdbx_synchrotron_beamline"  MX2             .
+     "_diffrn_source.pdbx_synchrotron_beamline"  MX3             .
      "_diffrn_source.pdbx_synchrotron_beamline"  NCI             .
      "_diffrn_source.pdbx_synchrotron_beamline"  P11             .
      "_diffrn_source.pdbx_synchrotron_beamline"  "P13 (MX1)"     .
@@ -26315,6 +26329,7 @@ save__diffrn_source.pdbx_synchrotron_site
       "_diffrn_source.pdbx_synchrotron_site"  "MAX II"                          .
       "_diffrn_source.pdbx_synchrotron_site"  "MAX IV"                          .
       "_diffrn_source.pdbx_synchrotron_site"  "MPG/DESY, HAMBURG"               .
+      "_diffrn_source.pdbx_synchrotron_site"  NanoTerasu                        .
       "_diffrn_source.pdbx_synchrotron_site"  NFPSS                             .
       "_diffrn_source.pdbx_synchrotron_site"  NSLS                              .
       "_diffrn_source.pdbx_synchrotron_site"  NSLS-II                           .
@@ -60823,6 +60838,7 @@ save__pdbx_percentile_view.type
     'RSRZ_outliers_percent'
     'Ramachandran_outlier_percent'
     'rotamer_outliers_percent'
+    'Q-score'
 save_
 
 save__pdbx_percentile_view.rank
@@ -60856,6 +60872,8 @@ save__pdbx_percentile_view.rank
     '/wwPDB-validation-information/Entry/@relative-percentile-percent-RSRZ-outliers'    wwpdb_validation_v6.01.xsd    v6.01
     '/wwPDB-validation-information/Entry/@relative-percentile-percent-rama-outliers'    wwpdb_validation_v6.01.xsd    v6.01
     '/wwPDB-validation-information/Entry/@relative-percentile-percent-rota-outliers'    wwpdb_validation_v6.01.xsd    v6.01
+    '/wwPDB-validation-information/Entry/@absolute-percentile-qrelative'                wwpdb_validation_v6.06.xsd    v6.06
+    '/wwPDB-validation-information/Entry/@relative-percentile-qrelative'                wwpdb_validation_v6.06.xsd    v6.06
 save_
 
 save__pdbx_percentile_view.conditions_id
@@ -61161,6 +61179,8 @@ save__pdbx_percentile_conditions.number_entries_total
     '/wwPDB-validation-information/Entry/@numPDBids-relative-percentile-percent-RSRZ-outliers'          wwpdb_validation_v6.01.xsd    v6.01
     '/wwPDB-validation-information/Entry/@numPDBids-relative-percentile-percent-rama-outliers'          wwpdb_validation_v6.01.xsd    v6.01
     '/wwPDB-validation-information/Entry/@numPDBids-relative-percentile-percent-rota-outliers'          wwpdb_validation_v6.01.xsd    v6.01
+    '/wwPDB-validation-information/Entry/@numEMDBids-absolute-percentile-qrelative'                     wwpdb_validation_v6.06.xsd    v6.06
+    '/wwPDB-validation-information/Entry/@numEMDBids-relative-percentile-qrelative'                     wwpdb_validation_v6.06.xsd    v6.06
 save_
 
 save__pdbx_percentile_conditions.ls_d_res_high
@@ -61186,6 +61206,7 @@ save__pdbx_percentile_conditions.ls_d_res_high
     '/wwPDB-validation-information/Entry/@high-resol-relative-percentile-percent-RSRZ-outliers'         wwpdb_validation_v6.01.xsd    v6.01
     '/wwPDB-validation-information/Entry/@high-resol-relative-percentile-percent-rama-outliers'         wwpdb_validation_v6.01.xsd    v6.01
     '/wwPDB-validation-information/Entry/@high-resol-relative-percentile-percent-rota-outliers'         wwpdb_validation_v6.01.xsd    v6.01
+    '/wwPDB-validation-information/Entry/@high-resol-absolute-percentile-qrelative'                     wwpdb_validation_v6.06.xsd    v6.06
 save_
 
 save__pdbx_percentile_conditions.ls_d_res_low
@@ -61211,6 +61232,7 @@ save__pdbx_percentile_conditions.ls_d_res_low
     '/wwPDB-validation-information/Entry/@low-resol-relative-percentile-percent-RSRZ-outliers'          wwpdb_validation_v6.01.xsd    v6.01
     '/wwPDB-validation-information/Entry/@low-resol-relative-percentile-percent-rama-outliers'          wwpdb_validation_v6.01.xsd    v6.01
     '/wwPDB-validation-information/Entry/@low-resol-relative-percentile-percent-rota-outliers'          wwpdb_validation_v6.01.xsd    v6.01
+    '/wwPDB-validation-information/Entry/@low-resol-absolute-percentile-qrelative'                      wwpdb_validation_v6.06.xsd    v6.06
 save_
 
 #

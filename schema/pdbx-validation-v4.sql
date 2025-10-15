@@ -44,8 +44,8 @@
 --
 
 --
--- VRPT PDBML Schema v4.405
--- VRPT PDBML Schema translated from wwPDB Validation Information Dictionary v4.405, which is backward compatible with the PDBx/mmCIF Dictionary v5.370: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
+-- VRPT PDBML Schema v4.406
+-- VRPT PDBML Schema translated from wwPDB Validation Information Dictionary v4.406, which is backward compatible with the PDBx/mmCIF Dictionary v5.370: http://mmcif.wwpdb.org/dictionaries/ascii/mmcif_pdbx_v50.dic
 -- URI-reference = http://pdbml.pdb.org/schema/pdbx-validation-v4.xsd
 --
 
@@ -5174,7 +5174,7 @@ CREATE TABLE pdbx_percentile_list (
 DROP TYPE IF EXISTS ENUM_pdbx_percentile_view_conditions_label CASCADE;
 CREATE TYPE ENUM_pdbx_percentile_view_conditions_label AS ENUM ( 'absolute', 'relative' );
 DROP TYPE IF EXISTS ENUM_pdbx_percentile_view_type CASCADE;
-CREATE TYPE ENUM_pdbx_percentile_view_type AS ENUM ( 'R_value_R_free', 'RNA_suiteness_score', 'all_atom_clashscore', 'RSRZ_outliers_percent', 'Ramachandran_outlier_percent', 'rotamer_outliers_percent' );
+CREATE TYPE ENUM_pdbx_percentile_view_type AS ENUM ( 'R_value_R_free', 'RNA_suiteness_score', 'all_atom_clashscore', 'RSRZ_outliers_percent', 'Ramachandran_outlier_percent', 'rotamer_outliers_percent', 'Q-score' );
 CREATE TABLE pdbx_percentile_view (
 	conditions_label ENUM_pdbx_percentile_view_conditions_label ,
 -- xsd:restriction/xsd:maxInclusive="100.0"
