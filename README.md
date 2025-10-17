@@ -14,7 +14,7 @@ The pdbx-validation is a generation tool of alternative [wwPDB validation report
 
 File path | Document
 --------- | --------
-[schema/pdbx-with-vrptx-v50.owl](https://github.com/yokochi47/pdbx-validation/blob/master/schema/pdbx-with-vrptx-v50.owl) | PDB/OWL combined with VRPT/OWL, combined ontology for PDB core archive and wwPDB validation reports. (v397)
+[schema/pdbx-with-vrptx-v50.owl](https://github.com/yokochi47/pdbx-validation/blob/master/schema/pdbx-with-vrptx-v50.owl) | PDB/OWL combined with VRPT/OWL, combined ontology for PDB core archive and wwPDB validation reports. (v406)
 [schema/mmcif_pdbx_validation_v4.dic](https://github.com/yokochi47/pdbx-validation/blob/master/schema/mmcif_pdbx_validation_v4.406.dic) | wwPDB Validation Information Dictionary (v4.406)
 [schema/pdbx-validation-v4.xsd](https://github.com/yokochi47/pdbx-validation/blob/master/schema/pdbx-validation-v4.406.xsd) | VRPT PDBML Schema (v4.406)
 [schema/pdbx-validation-v4.owl](https://github.com/yokochi47/pdbx-validation/blob/master/schema/pdbx-validation-v4.406.owl) | VRPT/OWL (v4.406)
